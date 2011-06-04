@@ -118,8 +118,64 @@ public class JapannakaHtmlReader {
 	private static List<PolishTranslate> createPolishTranslateList(String polishTranslates) {
 		List<PolishTranslate> polishTranslateList = new ArrayList<PolishTranslate>();
 		
-		System.out.println("BEFORE: " + polishTranslates);
+		StringBuffer polishTranslatesStringBuffer = new StringBuffer(polishTranslates);
 		
+		boolean inBracket = false;
+		
+		for (int idx = 0; idx < polishTranslatesStringBuffer.length(); ++idx) {
+			if (polishTranslatesStringBuffer.charAt(idx) == '(') {
+				inBracket = true;
+			} else if (polishTranslatesStringBuffer.charAt(idx) == ')') {
+				inBracket = false;
+			}
+			
+			if (inBracket == true && polishTranslatesStringBuffer.charAt(idx) == ',') {
+				polishTranslatesStringBuffer.replace(idx, idx + 1, ";");
+			}
+		}
+		
+		String newPolishTranslates = polishTranslatesStringBuffer.toString();
+		
+		String[] newPolishTranslatesSplited = newPolishTranslates.split(",");
+		
+		Pattern pattern = Pattern.compile("(.*?) \\((.*?)\\)");
+		
+		for (int idx = 0; idx < newPolishTranslatesSplited.length; ++idx) {
+			String currentPolishTranslate = newPolishTranslatesSplited[idx].trim();
+			
+			Matcher matcher = pattern.matcher(currentPolishTranslate);
+			
+			if (matcher.matches()) {
+				
+				PolishTranslate polishTranslate = new PolishTranslate();
+				
+				String word = matcher.group(1).trim();
+				String infos = matcher.group(2).trim();
+
+				polishTranslate.setWord(word);
+
+				String[] splitedInfos = infos.split(";");
+				
+				List<String> infosList = new ArrayList<String>();
+				
+				for (String currentInfo : splitedInfos) {
+					infosList.add(currentInfo.trim());
+				}
+				
+				polishTranslate.setInfo(infosList);
+				
+				polishTranslateList.add(polishTranslate);
+			} else {
+				
+				PolishTranslate polishTranslate = new PolishTranslate();
+				
+				polishTranslate.setWord(currentPolishTranslate);
+				
+				polishTranslateList.add(polishTranslate);
+			}
+		}
+		
+		/*
 		List<String> splitedPolishTranslatesWord = new ArrayList<String>();
 		
 		String[] splitedPolishTranslates = polishTranslates.split("\\),");
@@ -141,6 +197,7 @@ public class JapannakaHtmlReader {
 			
 			
 		}
+		*/
 		
 		/*
 		
@@ -266,16 +323,37 @@ public class JapannakaHtmlReader {
 		System.out.println(japanesePolishDictionary.size()); */
 		
 		//String polishTranslates = "abc, cbd, efg";
+
 		String polishTranslates = "mierzyć kota (wysokość kota, wzrost kota), xxx (yyy, yyy2, zzz), bbb (ccc), www, uuu, ee (e), jj, f (ff, ff2), jk, po";
 		//String polishTranslates = "bbb (ccc)";
 		
+		/*
+		String[] splited = polishTranslates.split(".*? \\(.*?\\)");
+		
+		for (String string : splited) {
+			System.out.println(string);
+		}
+		*/
+		/*
+		Pattern pattern = Pattern.compile("(.*?),");
+		
+		
+		
+		Matcher matcher = pattern.matcher(polishTranslates);
+		
+		if (matcher.matches()) {
+			System.out.println(matcher.group(1));
+			
+		}
+		*/
+
 		List<PolishTranslate> polishTranslateList = createPolishTranslateList(polishTranslates);
 		
 		for (PolishTranslate polishTranslate2 : polishTranslateList) {
 			System.out.println(polishTranslate2.getWord());
 			System.out.println(polishTranslate2.getInfo());	
 		}
-		
+
 		
 		/*
 		String[] polishTranslatesSplited = polishTranslates.split(",");
@@ -296,6 +374,7 @@ public class JapannakaHtmlReader {
 		//PolishTranslate pt = new PolishTranslate();
 		
 		//fillPolishTranslateEntry(pt, "mierzyć (wysokość, wzrost)");
+		
 		
 		
 	}
