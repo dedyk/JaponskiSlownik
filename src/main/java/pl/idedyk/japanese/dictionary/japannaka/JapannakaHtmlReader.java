@@ -7,6 +7,7 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
@@ -117,7 +118,32 @@ public class JapannakaHtmlReader {
 	private static List<PolishTranslate> createPolishTranslateList(String polishTranslates) {
 		List<PolishTranslate> polishTranslateList = new ArrayList<PolishTranslate>();
 		
-		StringTokenizer st = new StringTokenizer(polishTranslates);
+		System.out.println("BEFORE: " + polishTranslates);
+		
+		List<String> splitedPolishTranslatesWord = new ArrayList<String>();
+		
+		String[] splitedPolishTranslates = polishTranslates.split("\\),");
+		
+		int state = 0;
+		
+		StringBuffer sb = new StringBuffer();
+		
+		for (String currentSplitedPolishTranslate : splitedPolishTranslates) {
+			String currentSplitedPolishTranslate2 = currentSplitedPolishTranslate.trim();
+			
+			if (currentSplitedPolishTranslate2.indexOf("(") != -1) {
+				currentSplitedPolishTranslate2 = currentSplitedPolishTranslate2 + ")";
+			}
+			
+			
+			
+			System.out.println(currentSplitedPolishTranslate2);
+			
+			
+		}
+		
+		/*
+		
 		
 		int parseState = 0;
 		
@@ -190,8 +216,10 @@ public class JapannakaHtmlReader {
 				parseState = 0;
 			} else if (parseState == 2) {
 				polishTranslate.getInfo().add(nextElement.substring(0, nextElement.length()));
-			}								
+			}
+										
 		}
+		*/
 		
 		return polishTranslateList;
 	}
@@ -238,7 +266,7 @@ public class JapannakaHtmlReader {
 		System.out.println(japanesePolishDictionary.size()); */
 		
 		//String polishTranslates = "abc, cbd, efg";
-		String polishTranslates = "mierzyć kota (wysokość kota, wzrost kota), xxx (yyy, yyy2, zzz), bbb (ccc), www, uuu, ee (e), jj, f (ff, ff2)";
+		String polishTranslates = "mierzyć kota (wysokość kota, wzrost kota), xxx (yyy, yyy2, zzz), bbb (ccc), www, uuu, ee (e), jj, f (ff, ff2), jk, po";
 		//String polishTranslates = "bbb (ccc)";
 		
 		List<PolishTranslate> polishTranslateList = createPolishTranslateList(polishTranslates);
