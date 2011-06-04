@@ -77,6 +77,8 @@ public class JapannakaJavaCsvGenerator {
 		text = text.replaceAll("Ń", "N");
 		text = text.replaceAll("ń", "n");
 		
+		text = text.replaceAll("â", "a-");
+		text = text.replaceAll("ā", "a-");
 		text = text.replaceAll("ō", "o-");
 		text = text.replaceAll("ū", "u-");
 		

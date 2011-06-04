@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -83,29 +84,17 @@ public class JapannakaHtmlReader {
 							polishJapaneseEntry.setRomaji(romaji);
 							polishJapaneseEntry.setJapanese(japanese);
 							
-							List<PolishTranslate> polishTranslateList = new ArrayList<PolishTranslate>();
-							
-							String[] polishTranslatesSplited = polishTranslates.split(",");
-							
-							for (String currentPolishTranslate : polishTranslatesSplited) {
-								
-								currentPolishTranslate = trim(currentPolishTranslate);
-								
-								PolishTranslate polishTranslateEntry = new PolishTranslate();
-								
-								fillPolishTranslateEntry(polishTranslateEntry, currentPolishTranslate);
-								
-								polishTranslateList.add(polishTranslateEntry);
-							}
+							List<PolishTranslate> polishTranslateList = createPolishTranslateList(polishTranslates);
 							
 							polishJapaneseEntry.setPolishTranslates(polishTranslateList);
 							
 							result.add(polishJapaneseEntry);
+							
+							romaji = null;
+							japanese = null;
+							polishTranslates = null;
 						}
 					}
-					
-					
-					
 				} else {
 					throw new JapannakaException("Bad number of table html element");
 				}
@@ -125,6 +114,88 @@ public class JapannakaHtmlReader {
 		return result;
 	}
 	
+	private static List<PolishTranslate> createPolishTranslateList(String polishTranslates) {
+		List<PolishTranslate> polishTranslateList = new ArrayList<PolishTranslate>();
+		
+		StringTokenizer st = new StringTokenizer(polishTranslates);
+		
+		int parseState = 0;
+		
+		PolishTranslate polishTranslate = null;
+		
+		while(true) {
+			
+			boolean hasMoreElements = st.hasMoreElements();
+			
+			if (hasMoreElements == false && polishTranslate != null) {
+				polishTranslateList.add(polishTranslate);
+				
+				polishTranslate = null;
+				
+				break;
+			} else if (hasMoreElements == false) {
+				break;
+			}
+			
+			String nextElement = (String)st.nextElement();
+			
+			if (nextElement.endsWith(",") == true) {
+				nextElement = nextElement.substring(0, nextElement.length() - 1);
+			}
+			
+			if (parseState == 0) {
+				polishTranslate = new PolishTranslate();
+				
+				polishTranslate.setWord(nextElement.trim());
+				
+				parseState = 1;
+			} else if (parseState == 1 && nextElement.startsWith("(") == false) {
+				polishTranslateList.add(polishTranslate);
+				
+				polishTranslate = null;
+				
+				polishTranslate = new PolishTranslate();
+				
+				polishTranslate.setWord(nextElement.trim());
+				
+				parseState = 1;
+			} else if (parseState == 1 && nextElement.startsWith("(") == true && nextElement.endsWith(")") == true) {
+				List<String> polishTranslateInfos = new ArrayList<String>();
+				
+				polishTranslateInfos.add(nextElement.substring(1, nextElement.length() - 1));
+				
+				polishTranslate.setInfo(polishTranslateInfos);
+				
+				polishTranslateList.add(polishTranslate);
+				
+				polishTranslate = null;
+				
+				parseState = 0;
+			} else if (parseState == 1 && nextElement.startsWith("(") == true) {
+				List<String> polishTranslateInfos = new ArrayList<String>();
+				
+				polishTranslateInfos.add(nextElement.substring(1));
+				
+				polishTranslate.setInfo(polishTranslateInfos);
+				
+				parseState = 2;			
+			} else if (parseState == 2 && nextElement.endsWith(")") == true) {
+				
+				polishTranslate.getInfo().add(nextElement.substring(0, nextElement.length() - 1));
+				
+				polishTranslateList.add(polishTranslate);
+				
+				polishTranslate = null;
+				
+				parseState = 0;
+			} else if (parseState == 2) {
+				polishTranslate.getInfo().add(nextElement.substring(0, nextElement.length()));
+			}								
+		}
+		
+		return polishTranslateList;
+	}
+	
 	private static String trim(String text) {
 		if (text == null) {
 			return text;
@@ -139,31 +210,10 @@ public class JapannakaHtmlReader {
 		return text;
 	}
 	
-	private static void fillPolishTranslateEntry(PolishTranslate polishTranslateEntry, String polishTranslate) {
-		
-		String regex = "\\((.*?)\\)";
-		
-		Pattern compiledRegex = Pattern.compile(regex);
-		
-		Matcher matcher = compiledRegex.matcher(polishTranslate);
-		
-		List<String> infos = new ArrayList<String>();;
-		
-		while (matcher.find()) {
-			
-			infos.add(matcher.group().substring(1, matcher.group().length() - 1));
-		}
-		
-		String word = polishTranslate.replaceAll(regex, "").trim();
-		
-		polishTranslateEntry.setWord(word);
-		polishTranslateEntry.setInfo(infos);
-	}
-
 	public static void main(String[] args) throws Exception {
 		
 		// test
-	
+/*	
 		List<PolishJapaneseEntry> japanesePolishDictionary = 
 			readJapannakaHtmlDir("websites/www.japannaka.republika.pl");
 		
@@ -185,6 +235,40 @@ public class JapannakaHtmlReader {
 			System.out.println("-----------");
 		}
 		
-		System.out.println(japanesePolishDictionary.size());
+		System.out.println(japanesePolishDictionary.size()); */
+		
+		//String polishTranslates = "abc, cbd, efg";
+		String polishTranslates = "mierzyć kota (wysokość kota, wzrost kota), xxx (yyy, yyy2, zzz), bbb (ccc), www, uuu, ee (e), jj, f (ff, ff2)";
+		//String polishTranslates = "bbb (ccc)";
+		
+		List<PolishTranslate> polishTranslateList = createPolishTranslateList(polishTranslates);
+		
+		for (PolishTranslate polishTranslate2 : polishTranslateList) {
+			System.out.println(polishTranslate2.getWord());
+			System.out.println(polishTranslate2.getInfo());	
+		}
+		
+		
+		/*
+		String[] polishTranslatesSplited = polishTranslates.split(",");
+		
+		for (String currentPolishTranslate : polishTranslatesSplited) {
+			
+			currentPolishTranslate = trim(currentPolishTranslate);
+			
+			PolishTranslate polishTranslateEntry = new PolishTranslate();
+			
+			fillPolishTranslateEntry(polishTranslateEntry, currentPolishTranslate);
+			
+			System.out.println(polishTranslateEntry.getWord());
+			System.out.println(polishTranslateEntry.getInfo());	
+		}
+		*/
+		
+		//PolishTranslate pt = new PolishTranslate();
+		
+		//fillPolishTranslateEntry(pt, "mierzyć (wysokość, wzrost)");
+		
+		
 	}
 }
