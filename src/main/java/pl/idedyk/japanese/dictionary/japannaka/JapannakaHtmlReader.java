@@ -7,9 +7,7 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -175,108 +173,6 @@ public class JapannakaHtmlReader {
 			}
 		}
 		
-		/*
-		List<String> splitedPolishTranslatesWord = new ArrayList<String>();
-		
-		String[] splitedPolishTranslates = polishTranslates.split("\\),");
-		
-		int state = 0;
-		
-		StringBuffer sb = new StringBuffer();
-		
-		for (String currentSplitedPolishTranslate : splitedPolishTranslates) {
-			String currentSplitedPolishTranslate2 = currentSplitedPolishTranslate.trim();
-			
-			if (currentSplitedPolishTranslate2.indexOf("(") != -1) {
-				currentSplitedPolishTranslate2 = currentSplitedPolishTranslate2 + ")";
-			}
-			
-			
-			
-			System.out.println(currentSplitedPolishTranslate2);
-			
-			
-		}
-		*/
-		
-		/*
-		
-		
-		int parseState = 0;
-		
-		PolishTranslate polishTranslate = null;
-		
-		while(true) {
-			
-			boolean hasMoreElements = st.hasMoreElements();
-			
-			if (hasMoreElements == false && polishTranslate != null) {
-				polishTranslateList.add(polishTranslate);
-				
-				polishTranslate = null;
-				
-				break;
-			} else if (hasMoreElements == false) {
-				break;
-			}
-			
-			String nextElement = (String)st.nextElement();
-			
-			if (nextElement.endsWith(",") == true) {
-				nextElement = nextElement.substring(0, nextElement.length() - 1);
-			}
-			
-			if (parseState == 0) {
-				polishTranslate = new PolishTranslate();
-				
-				polishTranslate.setWord(nextElement.trim());
-				
-				parseState = 1;
-			} else if (parseState == 1 && nextElement.startsWith("(") == false) {
-				polishTranslateList.add(polishTranslate);
-				
-				polishTranslate = null;
-				
-				polishTranslate = new PolishTranslate();
-				
-				polishTranslate.setWord(nextElement.trim());
-				
-				parseState = 1;
-			} else if (parseState == 1 && nextElement.startsWith("(") == true && nextElement.endsWith(")") == true) {
-				List<String> polishTranslateInfos = new ArrayList<String>();
-				
-				polishTranslateInfos.add(nextElement.substring(1, nextElement.length() - 1));
-				
-				polishTranslate.setInfo(polishTranslateInfos);
-				
-				polishTranslateList.add(polishTranslate);
-				
-				polishTranslate = null;
-				
-				parseState = 0;
-			} else if (parseState == 1 && nextElement.startsWith("(") == true) {
-				List<String> polishTranslateInfos = new ArrayList<String>();
-				
-				polishTranslateInfos.add(nextElement.substring(1));
-				
-				polishTranslate.setInfo(polishTranslateInfos);
-				
-				parseState = 2;			
-			} else if (parseState == 2 && nextElement.endsWith(")") == true) {
-				
-				polishTranslate.getInfo().add(nextElement.substring(0, nextElement.length() - 1));
-				
-				polishTranslateList.add(polishTranslate);
-				
-				polishTranslate = null;
-				
-				parseState = 0;
-			} else if (parseState == 2) {
-				polishTranslate.getInfo().add(nextElement.substring(0, nextElement.length()));
-			}
-										
-		}
-		*/
 		
 		return polishTranslateList;
 	}
@@ -298,7 +194,7 @@ public class JapannakaHtmlReader {
 	public static void main(String[] args) throws Exception {
 		
 		// test
-/*	
+	
 		List<PolishJapaneseEntry> japanesePolishDictionary = 
 			readJapannakaHtmlDir("websites/www.japannaka.republika.pl");
 		
@@ -320,62 +216,6 @@ public class JapannakaHtmlReader {
 			System.out.println("-----------");
 		}
 		
-		System.out.println(japanesePolishDictionary.size()); */
-		
-		//String polishTranslates = "abc, cbd, efg";
-
-		String polishTranslates = "mierzyć kota (wysokość kota, wzrost kota), xxx (yyy, yyy2, zzz), bbb (ccc), www, uuu, ee (e), jj, f (ff, ff2), jk, po";
-		//String polishTranslates = "bbb (ccc)";
-		
-		/*
-		String[] splited = polishTranslates.split(".*? \\(.*?\\)");
-		
-		for (String string : splited) {
-			System.out.println(string);
-		}
-		*/
-		/*
-		Pattern pattern = Pattern.compile("(.*?),");
-		
-		
-		
-		Matcher matcher = pattern.matcher(polishTranslates);
-		
-		if (matcher.matches()) {
-			System.out.println(matcher.group(1));
-			
-		}
-		*/
-
-		List<PolishTranslate> polishTranslateList = createPolishTranslateList(polishTranslates);
-		
-		for (PolishTranslate polishTranslate2 : polishTranslateList) {
-			System.out.println(polishTranslate2.getWord());
-			System.out.println(polishTranslate2.getInfo());	
-		}
-
-		
-		/*
-		String[] polishTranslatesSplited = polishTranslates.split(",");
-		
-		for (String currentPolishTranslate : polishTranslatesSplited) {
-			
-			currentPolishTranslate = trim(currentPolishTranslate);
-			
-			PolishTranslate polishTranslateEntry = new PolishTranslate();
-			
-			fillPolishTranslateEntry(polishTranslateEntry, currentPolishTranslate);
-			
-			System.out.println(polishTranslateEntry.getWord());
-			System.out.println(polishTranslateEntry.getInfo());	
-		}
-		*/
-		
-		//PolishTranslate pt = new PolishTranslate();
-		
-		//fillPolishTranslateEntry(pt, "mierzyć (wysokość, wzrost)");
-		
-		
-		
+		System.out.println(japanesePolishDictionary.size());
 	}
 }
