@@ -50,6 +50,7 @@ public class JapannakaJavaCsvGenerator {
 	
 	private static String replaceChars(String text) {
 		
+		/*
 		text = text.replaceAll("Ę", "E");
 		text = text.replaceAll("ę", "e");
 		
@@ -76,6 +77,7 @@ public class JapannakaJavaCsvGenerator {
 		
 		text = text.replaceAll("Ń", "N");
 		text = text.replaceAll("ń", "n");
+		*/
 		
 		text = text.replaceAll("â", "a-");
 		text = text.replaceAll("ā", "a-");
