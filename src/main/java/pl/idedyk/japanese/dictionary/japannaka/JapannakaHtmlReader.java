@@ -37,6 +37,8 @@ public class JapannakaHtmlReader {
 		
 		InputStream is = null;
 		
+		int id = 1;
+		
 		try {
 			for (File currentHtmlDictionaryFile : htmlDictionaryFileList) {
 				
@@ -80,6 +82,7 @@ public class JapannakaHtmlReader {
 							
 							PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
 							
+							polishJapaneseEntry.setId(id);
 							polishJapaneseEntry.setRomaji(romaji);
 							polishJapaneseEntry.setJapanese(japanese);
 							
@@ -88,6 +91,8 @@ public class JapannakaHtmlReader {
 							polishJapaneseEntry.setPolishTranslates(polishTranslateList);
 							
 							result.add(polishJapaneseEntry);
+							
+							id++;
 							
 							romaji = null;
 							japanese = null;

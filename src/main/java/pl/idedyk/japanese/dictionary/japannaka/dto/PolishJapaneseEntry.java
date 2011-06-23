@@ -4,6 +4,8 @@ import java.util.List;
 
 public class PolishJapaneseEntry {
 	
+	private int id;
+	
 	private String romaji;
 	
 	private String japanese;
@@ -32,5 +34,13 @@ public class PolishJapaneseEntry {
 
 	public void setPolishTranslates(List<PolishTranslate> polishTranslates) {
 		this.polishTranslates = polishTranslates;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 }
