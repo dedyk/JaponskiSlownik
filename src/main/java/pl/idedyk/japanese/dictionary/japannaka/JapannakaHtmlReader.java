@@ -14,8 +14,8 @@ import java.util.regex.Pattern;
 import net.htmlparser.jericho.Element;
 import net.htmlparser.jericho.Source;
 
-import pl.idedyk.japanese.dictionary.japannaka.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.japannaka.dto.PolishTranslate;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.PolishTranslate;
 import pl.idedyk.japanese.dictionary.japannaka.exception.JapannakaException;
 
 public class JapannakaHtmlReader {

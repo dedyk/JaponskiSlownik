@@ -1,4 +1,4 @@
-package pl.idedyk.japanese.dictionary.japannaka.dto;
+package pl.idedyk.japanese.dictionary.dto;
 
 import java.util.List;
 

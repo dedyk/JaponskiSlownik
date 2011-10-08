@@ -12,7 +12,7 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
-import pl.idedyk.japanese.dictionary.japannaka.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.japannaka.exception.JapannakaException;
 import pl.idedyk.japanese.dictionary.japannaka.utils.Utils;
 
