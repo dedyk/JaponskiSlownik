@@ -42,8 +42,8 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("Itadakimasu", "Smacznego", "Przed jedzeniem");
 		addPolishJapaneseEntry("Gochisoosama", "Smacznego", "Po jedzeniu");
 		addPolishJapaneseEntry("Hajimemashite", "Przywitanie", "Pierwsze spotkanie");
-		addPolishJapaneseEntry("Doozo yoroshiku", "Miło spotkać Cię", null);
-		addPolishJapaneseEntry("Doozo yoroshiku onegai shimasu", "Miło spotkać Cię", "grzecznie");
+		addPolishJapaneseEntry("Doozo yoroshiku", "Miło Cię spotkać", null);
+		addPolishJapaneseEntry("Doozo yoroshiku onegai shimasu", "Miło Cię spotkać", "Kierowane do osoby wyżej postawionej");
 		
 		addPolishJapaneseEntry("Ima", "teraz", null);
 		addPolishJapaneseEntry("han", "połowa", null);
@@ -55,10 +55,10 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("kookoo", "liceum", null);
 		addPolishJapaneseEntry("gogo", "P.M.", null);
 		addPolishJapaneseEntry("gozen", "A.M.", null);
-		addPolishJapaneseEntry("... sai", "... lat", null);
-		addPolishJapaneseEntry("... san", "... Pan/Pani", null);
-		addPolishJapaneseEntry("... ji", "... godzina", null);
-		addPolishJapaneseEntry("... jin", "... człowiek", null);
+		addPolishJapaneseEntry("sai", "lat", null);
+		addPolishJapaneseEntry("san", "Pan/Pani", null);
+		addPolishJapaneseEntry("ji", "godzina", null);
+		addPolishJapaneseEntry("jin", "człowiek", null);
 		addPolishJapaneseEntry("sensei", "nauczyciel", null);
 		addPolishJapaneseEntry("senmon", "specjalizacja", null);
 		addPolishJapaneseEntry("Soo desu", "To prawda", null);
@@ -68,7 +68,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("namae", "imię", null);
 		addPolishJapaneseEntry("nan/nani", "co", null);
 		addPolishJapaneseEntry("Nihon", "Japonia", null);
-		addPolishJapaneseEntry("... nensei", "... studen roku", null);
+		addPolishJapaneseEntry("nensei", "student roku", null);
 		addPolishJapaneseEntry("hai", "tak", null);
 		addPolishJapaneseEntry("bangoo", "numer", null);
 		addPolishJapaneseEntry("ryuugakusei", "student międzynarodowy", null);
@@ -76,7 +76,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("Amerika", "Ameryka", null);
 		addPolishJapaneseEntry("Igirisu", "Wielka Brytania", null);
 		addPolishJapaneseEntry("Oosutoraria", "Australia", null);
-		addPolishJapaneseEntry("Korea", "Kangaku", null);
+		addPolishJapaneseEntry("Kankoku", "Korea", null);
 		addPolishJapaneseEntry("Sueeden", "Szwecja", null);
 		addPolishJapaneseEntry("Chuugoku", "Chiny", null);
 		
@@ -90,6 +90,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("bijinesu", "biznes", null);
 		addPolishJapaneseEntry("bungaku", "literatura", null);
 		addPolishJapaneseEntry("rekishi", "historia", null);
+		
 		addPolishJapaneseEntry("shigoto", "praca", null);
 		addPolishJapaneseEntry("isha", "lekarz", null);
 		addPolishJapaneseEntry("kaishain", "pracownik biurowy", null);
@@ -98,6 +99,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("daigakuinsei", "absolwent", "studia");
 		addPolishJapaneseEntry("daigakusei", "student", null);
 		addPolishJapaneseEntry("bengoshi", "prawnik", null);
+		
 		addPolishJapaneseEntry("okaasan", "matka", null);
 		addPolishJapaneseEntry("otoosan", "ojciec", null);
 		addPolishJapaneseEntry("oneesan", "siostra", "starsza");
@@ -128,7 +130,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("yoji", "4", "godzina");
 		addPolishJapaneseEntry("goji", "5", "godzina");
 		addPolishJapaneseEntry("rokuji", "6", "godzina");
-		addPolishJapaneseEntry("shijiich", "7", "godzina");
+		addPolishJapaneseEntry("shichiji", "7", "godzina");
 		addPolishJapaneseEntry("hachiji", "8", "godzina");
 		addPolishJapaneseEntry("kuji", "9", "godzina");
 		addPolishJapaneseEntry("juuji", "10", "godzina");
