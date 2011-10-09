@@ -51,7 +51,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("eigo", "język angielski", null);
 		addPolishJapaneseEntry("ee", "tak", "e...");
 		addPolishJapaneseEntry("gakusei", "uczeń", null);
-		addPolishJapaneseEntry("... go", "... język", null);
+		addPolishJapaneseEntry("go", "język", null);
 		addPolishJapaneseEntry("kookoo", "liceum", null);
 		addPolishJapaneseEntry("gogo", "P.M.", null);
 		addPolishJapaneseEntry("gozen", "A.M.", null);
