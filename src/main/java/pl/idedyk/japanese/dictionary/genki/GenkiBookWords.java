@@ -94,7 +94,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("shigoto", "praca", null);
 		addPolishJapaneseEntry("isha", "lekarz", null);
 		addPolishJapaneseEntry("kaishain", "pracownik biurowy", null);
-		addPolishJapaneseEntry("kookosei", "licealista", null);
+		addPolishJapaneseEntry("kookoosei", "licealista", null);
 		addPolishJapaneseEntry("shufu", "Pani domu", null);
 		addPolishJapaneseEntry("daigakuinsei", "absolwent", "studia");
 		addPolishJapaneseEntry("daigakusei", "student", null);
