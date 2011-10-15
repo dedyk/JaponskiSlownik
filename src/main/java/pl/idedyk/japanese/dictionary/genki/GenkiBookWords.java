@@ -49,16 +49,16 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("han", "połowa", null);
 		addPolishJapaneseEntry("ano", "um", null);
 		addPolishJapaneseEntry("eigo", "język angielski", null);
-		addPolishJapaneseEntry("ee", "tak", "e...");
+		addPolishJapaneseEntry("ee", "tak", "mniej oficjalnie");
 		addPolishJapaneseEntry("gakusei", "uczeń", null);
-		addPolishJapaneseEntry("go", "język", null);
+		addPolishJapaneseEntry("... go", "... język", null);
 		addPolishJapaneseEntry("kookoo", "liceum", null);
 		addPolishJapaneseEntry("gogo", "P.M.", null);
 		addPolishJapaneseEntry("gozen", "A.M.", null);
-		addPolishJapaneseEntry("sai", "lat", null);
-		addPolishJapaneseEntry("san", "Pan/Pani", null);
-		addPolishJapaneseEntry("ji", "godzina", null);
-		addPolishJapaneseEntry("jin", "człowiek", null);
+		addPolishJapaneseEntry("... sai", "... lat", null);
+		addPolishJapaneseEntry("... san", "... Pan/Pani", null);
+		addPolishJapaneseEntry("... ji", "... godzina", null);
+		addPolishJapaneseEntry("... jin", "... człowiek", null);
 		addPolishJapaneseEntry("sensei", "nauczyciel", null);
 		addPolishJapaneseEntry("senmon", "specjalizacja", null);
 		addPolishJapaneseEntry("Soo desu", "To prawda", null);
@@ -68,8 +68,8 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("namae", "imię", null);
 		addPolishJapaneseEntry("nan/nani", "co", null);
 		addPolishJapaneseEntry("Nihon", "Japonia", null);
-		addPolishJapaneseEntry("nensei", "student roku", null);
-		addPolishJapaneseEntry("hai", "tak", null);
+		addPolishJapaneseEntry("... nensei", "... student roku", null);
+		addPolishJapaneseEntry("hai", "tak", "oficjalnie");
 		addPolishJapaneseEntry("bangoo", "numer", null);
 		addPolishJapaneseEntry("ryuugakusei", "student międzynarodowy", null);
 		addPolishJapaneseEntry("watashi", "ja", null);
@@ -96,7 +96,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("kaishain", "pracownik biurowy", null);
 		addPolishJapaneseEntry("kookoosei", "licealista", null);
 		addPolishJapaneseEntry("shufu", "Pani domu", null);
-		addPolishJapaneseEntry("daigakuinsei", "absolwent", "studia");
+		addPolishJapaneseEntry("daigakuinsei", "student", "studia magisterskie");
 		addPolishJapaneseEntry("daigakusei", "student", null);
 		addPolishJapaneseEntry("bengoshi", "prawnik", null);
 		
@@ -162,6 +162,101 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("jussai", "10", "lata");
 		addPolishJapaneseEntry("juissai", "11", "lata");
 		addPolishJapaneseEntry("hatachi", "20", "lata");
+		
+		addPolishJapaneseEntry("kore", "ten", "blisko mówcy");
+		addPolishJapaneseEntry("sore", "ten", "blisko osoby docelowej");
+		addPolishJapaneseEntry("are", "tam", "daleko od mówcy i osoby docelowej");
+		addPolishJapaneseEntry("dore", "który", null);
+		addPolishJapaneseEntry("kono", "ten ...", "z rzeczownikiem");
+		addPolishJapaneseEntry("sono", "ten ...", "z rzeczownikiem");
+		addPolishJapaneseEntry("ano", "tam ...", "z rzeczownikiem");
+		addPolishJapaneseEntry("dono", "który ...", "z rzeczownikiem");
+		addPolishJapaneseEntry("asoko", "tam", null);
+		addPolishJapaneseEntry("doko", "gdzie", null);
+		addPolishJapaneseEntry("dare", "kto", null);
+
+		addPolishJapaneseEntry("oishii", "smaczne", null);
+		addPolishJapaneseEntry("sakana", "ryba", null);
+		addPolishJapaneseEntry("tonkatsu", "wieprzowy kotlet", null);
+		addPolishJapaneseEntry("niku", "mięso", null);
+		addPolishJapaneseEntry("menyuu", "menu", null);
+		addPolishJapaneseEntry("yasai", "warzywa", null);
+		
+		addPolishJapaneseEntry("enpitsu", "ołówek", null);
+		addPolishJapaneseEntry("kasa", "parasolka", null);
+		addPolishJapaneseEntry("kaban", "torba", null);
+		addPolishJapaneseEntry("kutsu", "buty", null);
+		addPolishJapaneseEntry("saifu", "potfel", null);
+		addPolishJapaneseEntry("jiinzu", "jeansy", null);
+		addPolishJapaneseEntry("jisho", "słownik", null);
+		addPolishJapaneseEntry("jitensha", "rower", null);
+		addPolishJapaneseEntry("shinbun", "gazeta", null);
+		addPolishJapaneseEntry("teepe", "kaseta", null);
+		addPolishJapaneseEntry("tokee", "zegarek", null);
+		addPolishJapaneseEntry("toreenaa", "koszula", null);
+		addPolishJapaneseEntry("nooto", "zeszyt", null);
+		addPolishJapaneseEntry("pen", "długopis", null);
+		addPolishJapaneseEntry("booshi", "kapelusz", null);
+		addPolishJapaneseEntry("hon", "książka", null);
+
+		addPolishJapaneseEntry("otearai", "toaleta", null);
+		addPolishJapaneseEntry("kissaten", "kawiarnia", null);
+		addPolishJapaneseEntry("ginkoo", "bank", null);
+		addPolishJapaneseEntry("toshokan", "biblioteka", null);
+		addPolishJapaneseEntry("yuubinkyoku", "poczta", null);
+
+		addPolishJapaneseEntry("ikura", "ile", "koszty");
+		addPolishJapaneseEntry("... en", "... yen", null);
+		addPolishJapaneseEntry("takai", "drogo", "pieniądze");
+		addPolishJapaneseEntry("takai", "wysoki", "wzrost");
+		
+		addPolishJapaneseEntry("irasshaimase", "Witamy", "przy wchodzeniu do sklepu");
+		addPolishJapaneseEntry("... o onegashimasu", "... proszę", null);
+		addPolishJapaneseEntry("... o kudasai", "Proszę dać mi ...", null);
+		addPolishJapaneseEntry("jaa", "wtedy", null);
+		addPolishJapaneseEntry("... o doozo", "proszę", "przy podawaniu komuś czegoś");
+		addPolishJapaneseEntry("doomo", "dziękuję", "przy otrzymywaniu czegoś");
+		
+		addPolishJapaneseEntry("desu", "jest", "oficjalnie");
+		addPolishJapaneseEntry("dewa arimasen", "nie jest", "oficjalnie");
+		addPolishJapaneseEntry("ja arimasen", "nie jest", "mniej oficjalnie");
+
+		addPolishJapaneseEntry("sanbyaku", "300", null);
+		addPolishJapaneseEntry("roppyaku", "600", null);
+		addPolishJapaneseEntry("happyaku", "800", null);
+		addPolishJapaneseEntry("sen", "1000", null);
+		addPolishJapaneseEntry("sanzen", "3000", null);
+		addPolishJapaneseEntry("hassen", "8000", null);
+		addPolishJapaneseEntry("ichiman", "10000", null);
+		
+		addPolishJapaneseEntry("Wakarimashita", "zrozumiałem", null);
+		addPolishJapaneseEntry("Wakarimasen", "nie rozumiem", null);
+		addPolishJapaneseEntry("Yukkuri itte kudasai", "Proszę mówić wolno", null);
+		addPolishJapaneseEntry("Moo ichido itte kudasai", "Proszę powtórzyć", null);
+		addPolishJapaneseEntry("Chotto matte kudasai", "Proszę poczekać", null);
+		
+		addPolishJapaneseEntry("akai", "czerwony", null);
+		addPolishJapaneseEntry("aoi", "niebieski", null);
+		addPolishJapaneseEntry("sushi", "sushi", null);
+		addPolishJapaneseEntry("kagu", "meble", null);
+		addPolishJapaneseEntry("kao", "twarz", null);
+		addPolishJapaneseEntry("ai", "miłość", null);
+		addPolishJapaneseEntry("kiku", "słuchać", null);
+		addPolishJapaneseEntry("sake", "sake", null);
+		addPolishJapaneseEntry("ushi", "krowa", null);
+		
+		addPolishJapaneseEntry("keutai denwa", "telefon komórkowy", null);
+		addPolishJapaneseEntry("maakaa", "marker", null);
+		addPolishJapaneseEntry("haha", "matka", "h...");
+		addPolishJapaneseEntry("chichi", "ojciec", "ch...");
+		addPolishJapaneseEntry("ha", "ząb", null);
+		addPolishJapaneseEntry("hi", "słońce", "s...");
+		addPolishJapaneseEntry("hi", "ogień", "o...");
+		addPolishJapaneseEntry("mimo", "ucho", null);
+		addPolishJapaneseEntry("me", "oko", null);
+		addPolishJapaneseEntry("momo", "brzoskwinia", null);
+		
+		addPolishJapaneseEntry("yasui", "tani", null);
 
 		return result;
 	}
