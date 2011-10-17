@@ -167,17 +167,17 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("sore", "ten", "blisko osoby docelowej");
 		addPolishJapaneseEntry("are", "tam", "daleko od mówcy i osoby docelowej");
 		addPolishJapaneseEntry("dore", "który", null);
-		addPolishJapaneseEntry("kono", "ten ...", "z rzeczownikiem");
-		addPolishJapaneseEntry("sono", "ten ...", "z rzeczownikiem");
-		addPolishJapaneseEntry("ano", "tam ...", "z rzeczownikiem");
-		addPolishJapaneseEntry("dono", "który ...", "z rzeczownikiem");
+		addPolishJapaneseEntry("kono", "ten", "blisko mówcy (z rzeczownikiem)");
+		addPolishJapaneseEntry("sono", "ten", "blisko osoby docelowej (z rzeczownikiem)");
+		addPolishJapaneseEntry("ano", "tam", "daleko od mówcy i osoby docelowej (z rzeczownikiem)");
+		addPolishJapaneseEntry("dono", "który", "z rzeczownikiem");
 		addPolishJapaneseEntry("asoko", "tam", null);
 		addPolishJapaneseEntry("doko", "gdzie", null);
 		addPolishJapaneseEntry("dare", "kto", null);
 
 		addPolishJapaneseEntry("oishii", "smaczne", null);
 		addPolishJapaneseEntry("sakana", "ryba", null);
-		addPolishJapaneseEntry("tonkatsu", "wieprzowy kotlet", null);
+		addPolishJapaneseEntry("tonkatsu", "kotlet wieprzowy", null);
 		addPolishJapaneseEntry("niku", "mięso", null);
 		addPolishJapaneseEntry("menyuu", "menu", null);
 		addPolishJapaneseEntry("yasai", "warzywa", null);
@@ -191,9 +191,9 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("jisho", "słownik", null);
 		addPolishJapaneseEntry("jitensha", "rower", null);
 		addPolishJapaneseEntry("shinbun", "gazeta", null);
-		addPolishJapaneseEntry("teepe", "kaseta", null);
-		addPolishJapaneseEntry("tokee", "zegarek", null);
-		addPolishJapaneseEntry("toreenaa", "koszula", null);
+		addPolishJapaneseEntry("teepu", "kaseta", null);
+		addPolishJapaneseEntry("tokei", "zegarek", null);
+		addPolishJapaneseEntry("toreenaa", "podkoszulek", null);
 		addPolishJapaneseEntry("nooto", "zeszyt", null);
 		addPolishJapaneseEntry("pen", "długopis", null);
 		addPolishJapaneseEntry("booshi", "kapelusz", null);
@@ -211,7 +211,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("takai", "wysoki", "wzrost");
 		
 		addPolishJapaneseEntry("irasshaimase", "Witamy", "przy wchodzeniu do sklepu");
-		addPolishJapaneseEntry("... o onegashimasu", "... proszę", null);
+		addPolishJapaneseEntry("... o onegai shimasu", "... proszę", null);
 		addPolishJapaneseEntry("... o kudasai", "Proszę dać mi ...", null);
 		addPolishJapaneseEntry("jaa", "wtedy", null);
 		addPolishJapaneseEntry("... o doozo", "proszę", "przy podawaniu komuś czegoś");
@@ -245,7 +245,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry("sake", "sake", null);
 		addPolishJapaneseEntry("ushi", "krowa", null);
 		
-		addPolishJapaneseEntry("keutai denwa", "telefon komórkowy", null);
+		addPolishJapaneseEntry("keitai denwa", "telefon komórkowy", null);
 		addPolishJapaneseEntry("maakaa", "marker", null);
 		addPolishJapaneseEntry("haha", "matka", "h...");
 		addPolishJapaneseEntry("chichi", "ojciec", "ch...");
