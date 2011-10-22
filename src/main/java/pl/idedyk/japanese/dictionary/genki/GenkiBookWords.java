@@ -2,6 +2,8 @@ package pl.idedyk.japanese.dictionary.genki;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishTranslate;
@@ -9,9 +11,10 @@ import pl.idedyk.japanese.dictionary.tools.CsvGenerator;
 
 public class GenkiBookWords {
 
-	private static List<PolishJapaneseEntry> polishJapaneseEntries = new ArrayList<PolishJapaneseEntry>();
+	private static Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries = new HashMap<DictionaryEntryType, List<PolishJapaneseEntry>>();
 	
 	public static void main(String[] args) {
+		
 		generateWords();
 		
 		String csvResult = CsvGenerator.generateCsv(polishJapaneseEntries);
@@ -261,7 +264,7 @@ public class GenkiBookWords {
 		return result;
 	}
 	
-	private static void addPolishJapaneseEntry(String romaji, String polishTranslateString, String info) {
+	private static void addPolishJapaneseEntry(DictionaryType dictionaryType, String romaji, String polishTranslateString, String info) {
 		
 		PolishJapaneseEntry entry = new PolishJapaneseEntry();
 		

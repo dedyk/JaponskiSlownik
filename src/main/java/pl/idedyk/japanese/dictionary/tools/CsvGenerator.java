@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary.tools;
 
 import java.util.List;
+import java.util.Map;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishTranslate;
@@ -8,10 +9,10 @@ import pl.idedyk.japanese.dictionary.japannaka.utils.Utils;
 
 public class CsvGenerator {
 	
-	public static String generateCsv(List<PolishJapaneseEntry> japanesePolishDictionary) {
+	public static String generateCsv(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries) {
 		StringBuffer sb = new StringBuffer();
 		
-		for (PolishJapaneseEntry polishJapaneseEntry : japanesePolishDictionary) {
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			sb.append(Utils.replaceChars(polishJapaneseEntry.getRomaji())).append(";");
 			//sb.append(polishJapaneseEntry.getJapanese()).append(";");
