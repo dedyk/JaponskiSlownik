@@ -49,7 +49,7 @@ public class JapannakaKanjiImageWriter {
 		
 		Graphics2D graphics = (Graphics2D)bufferedImage.getGraphics();
 		
-		Font font = new Font("Arial Unicode MS", Font.PLAIN, 15);
+		Font font = new Font("Arial Unicode MS", Font.PLAIN, 30);
 		
 		graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
 		        RenderingHints.VALUE_ANTIALIAS_ON);

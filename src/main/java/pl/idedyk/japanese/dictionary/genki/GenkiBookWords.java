@@ -318,16 +318,16 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "ii", "dobry", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "hayai", "wczesny", null);
 		
-		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "amari", "nie wiele", null);
+		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "amari", "niewiele", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "zenzen", "nie ma za co", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "taitei", "zwykle", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "chotto", "trochę", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "tokidoki", "czasami", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "yoku", "często, wiele", null);
 		
-		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "Soo desu ne", "To prawda, Pozwól mi zobaczyć", null);
+		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "Soo desu ne", "To prawda", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "demo", "ale", null);
-		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "Doo desu ka", "co ty na, jak jest", null);
+		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "Doo desu ka", "co ty na to", null);
 		
 		return result;
 	}
