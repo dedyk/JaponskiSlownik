@@ -10,6 +10,8 @@ public class PolishJapaneseEntry {
 	
 	private String japanese;
 	
+	private String japaneseImagePath;
+	
 	private List<PolishTranslate> polishTranslates;
 
 	public String getRomaji() {
@@ -43,4 +45,12 @@ public class PolishJapaneseEntry {
 	public void setId(int id) {
 		this.id = id;
 	}
+
+	public String getJapaneseImagePath() {
+		return japaneseImagePath;
+	}
+
+	public void setJapaneseImagePath(String japaneseImagePath) {
+		this.japaneseImagePath = japaneseImagePath;
+	}		
 }

@@ -2,25 +2,27 @@ package pl.idedyk.japanese.dictionary.genki;
 
 public enum DictionaryEntryType {
 	
-	GREETINGS("Powitania.properties"),
+	WORD_GREETINGS("Powitania.properties"),
 	
-	GENKI1_1("Genki1_1.properties"),
+	WORD_GENKI1_1("Genki1_1.properties"),
 	
-	GENKI1_2("Genki1_2.properties"),
+	WORD_GENKI1_2("Genki1_2.properties"),
 	
-	GENKI1_2_ADDITIONAL("Genki1_2+.properties"),
+	WORD_GENKI1_2_ADDITIONAL("Genki1_2+.properties"),
 	
-	GENKI1_3("Genki1_3.properties"),
+	WORD_GENKI1_3("Genki1_3.properties"),
 	
-	NUMBERS("Liczby.properties"),
+	WORD_NUMBERS("Liczby.properties"),
 	
-	HOURS("Godziny.properties"),
+	WORD_HOURS("Godziny.properties"),
 	
-	MINUTES("Minuty.properties"),
+	WORD_MINUTES("Minuty.properties"),
 	
-	YEARS("Lata.properties"),
+	WORD_YEARS("Lata.properties"),
 	
-	ALL("All.properties");
+	ALL("All.properties"),
+	
+	KANJI_TEST1("test1.properties");
 	
 	private String fileName;
 	

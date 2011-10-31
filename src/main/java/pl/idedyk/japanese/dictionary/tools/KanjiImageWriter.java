@@ -1,4 +1,4 @@
-package pl.idedyk.japanese.dictionary.japannaka;
+package pl.idedyk.japanese.dictionary.tools;
 
 import java.awt.Font;
 import java.awt.FontMetrics;
@@ -13,10 +13,11 @@ import java.util.List;
 import javax.imageio.ImageIO;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.japannaka.JapannakaHtmlReader;
 import pl.idedyk.japanese.dictionary.japannaka.exception.JapannakaException;
 import pl.idedyk.japanese.dictionary.japannaka.utils.Utils;
 
-public class JapannakaKanjiImageWriter {
+public class KanjiImageWriter {
 
 	public static void main(String[] args) throws Exception {
 		
@@ -33,17 +34,20 @@ public class JapannakaKanjiImageWriter {
 		}
 	}
 	
-	private static void createKanjiImage(String imageDir, PolishJapaneseEntry polishJapaneseEntry) 
+	public static void createKanjiImage(String imageDir, PolishJapaneseEntry polishJapaneseEntry) 
 			throws JapannakaException {
 		
 		final String fileFormat = "png";
 		
 		String kanji = polishJapaneseEntry.getJapanese();
 		
-		String fileName = imageDir + File.separator + 
-			Utils.replaceChars(polishJapaneseEntry.getRomaji()) + "-" + polishJapaneseEntry.getId() + "." + fileFormat;
+		String fileName = Utils.replaceChars(polishJapaneseEntry.getRomaji()) + "-" + polishJapaneseEntry.getId() + "." + fileFormat;
 		
-		File file = new File(fileName);
+		polishJapaneseEntry.setJapaneseImagePath(fileName);
+		
+		String fileFullName = imageDir + File.separator + fileName;
+		
+		File file = new File(fileFullName);
 				
 		BufferedImage bufferedImage = new BufferedImage(640, 480, BufferedImage.TYPE_BYTE_GRAY);
 		
