@@ -26,7 +26,62 @@ public class GenkiBookWords {
 	private static List<PolishJapaneseEntry> generateWords() {
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
-		// Lekcja 1
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "zero", "0", "liczba: z...");
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "rei", "0", "liczba: r...");
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "ichi", "1", null);
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "ni", "2", null);
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "san", "3", null);
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "yon", "4", "liczba: y...");
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "shi", "4", "liczba: sh...");
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "yo", "4", "liczba: yo...");
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "go", "5", null);
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "roku", "6", null);
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "nana", "7", "liczba: n...");
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "shichi", "7", "liczba: s...");
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "hachi", "8", null);
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "kyuu", "9", "liczba: ky...");
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "ku", "9", "liczba: ku...");
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "juu", "10", null);
+		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "hyaku", "100", null);
+		
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "ichiji", "1", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "niji", "2", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "sanji", "3", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "yoji", "4", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "goji", "5", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "rokuji", "6", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "shichiji", "7", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "hachiji", "8", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "kuji", "9", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "juuji", "10", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "juuichiji", "11", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "juuniji", "12", "godzina");
+		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "ichiji han", "1:30", "godzina");
+		
+		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "ippun", "1", "minuta");
+		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "nifun", "2", "minuta");
+		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "sanpun", "3", "minuta");
+		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "yonpun", "4", "minuta");
+		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "gofun", "5", "minuta");
+		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "roppun", "6", "minuta");
+		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "nanafun", "7", "minuta");
+		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "happun", "8", "minuta: hap...");
+		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "hachifun", "8", "minuta: hach...");
+		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "kyuufun", "9", "minuta");
+		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "juppun", "10", "minuta");
+
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "issai", "1", "lata");
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "nisai", "2", "lata");
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "sansai", "3", "lata");
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "yonsai", "4", "lata");
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "gosai", "5", "lata");
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "rokusai", "6", "lata");
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "nanasai", "7", "lata");
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "hassai", "8", "lata");
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "kyuusai", "9", "lata");
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "jussai", "10", "lata");
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "juissai", "11", "lata");
+		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "hatachi", "20", "lata");
 		
 		addPolishJapaneseEntry(DictionaryEntryType.GREETINGS, "Ohayoo gozaimasu", "Dzien dobry", "rano (grzecznie)");
 		addPolishJapaneseEntry(DictionaryEntryType.GREETINGS, "Konnichiwa", "Dzień dobry", "po południu");
@@ -108,64 +163,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_1, "oniisan", "brat", "starszy");
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_1, "imooto", "siostra", "młodsza");
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_1, "otooto", "brat", "młodszy");
-		
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "zero", "0", "liczba: z...");
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "rei", "0", "liczba: r...");
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "ichi", "1", null);
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "ni", "2", null);
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "san", "3", null);
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "yon", "4", "liczba: y...");
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "shi", "4", "liczba: sh...");
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "yo", "4", "liczba: yo...");
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "go", "5", null);
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "roku", "6", null);
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "nana", "7", "liczba: n...");
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "shichi", "7", "liczba: s...");
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "hachi", "8", null);
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "kyuu", "9", "liczba: ky...");
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "ku", "9", "liczba: ku...");
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "juu", "10", null);
-		addPolishJapaneseEntry(DictionaryEntryType.NUMBERS, "hyaku", "100", null);
-		
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "ichiji", "1", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "niji", "2", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "sanji", "3", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "yoji", "4", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "goji", "5", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "rokuji", "6", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "shichiji", "7", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "hachiji", "8", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "kuji", "9", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "juuji", "10", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "juuichiji", "11", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "juuniji", "12", "godzina");
-		addPolishJapaneseEntry(DictionaryEntryType.HOURS, "ichiji han", "1:30", "godzina");
-		
-		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "ippun", "1", "minuta");
-		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "nifun", "2", "minuta");
-		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "sanpun", "3", "minuta");
-		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "yonpun", "4", "minuta");
-		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "gofun", "5", "minuta");
-		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "roppun", "6", "minuta");
-		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "nanafun", "7", "minuta");
-		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "happun", "8", "minuta: hap...");
-		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "hachifun", "8", "minuta: hach...");
-		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "kyuufun", "9", "minuta");
-		addPolishJapaneseEntry(DictionaryEntryType.MINUTES, "juppun", "10", "minuta");
-
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "issai", "1", "lata");
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "nisai", "2", "lata");
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "sansai", "3", "lata");
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "yonsai", "4", "lata");
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "gosai", "5", "lata");
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "rokusai", "6", "lata");
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "nanasai", "7", "lata");
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "hassai", "8", "lata");
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "kyuusai", "9", "lata");
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "jussai", "10", "lata");
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "juissai", "11", "lata");
-		addPolishJapaneseEntry(DictionaryEntryType.YEARS, "hatachi", "20", "lata");
-		
+				
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_2, "kore", "ten", "blisko mówcy");
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_2, "sore", "ten", "blisko osoby docelowej");
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_2, "are", "tam", "daleko od mówcy i osoby docelowej");
