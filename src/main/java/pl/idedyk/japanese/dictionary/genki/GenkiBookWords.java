@@ -258,7 +258,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_2_ADDITIONAL, "ha", "ząb", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_2_ADDITIONAL, "hi", "słońce", "s...");
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_2_ADDITIONAL, "hi", "ogień", "o...");
-		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_2_ADDITIONAL, "mimo", "ucho", null);
+		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_2_ADDITIONAL, "mimi", "ucho", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_2_ADDITIONAL, "me", "oko", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_2_ADDITIONAL, "momo", "brzoskwinia", null);
 		
@@ -319,7 +319,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "hayai", "wczesny", null);
 		
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "amari", "niewiele", null);
-		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "zenzen", "nie ma za co", null);
+		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "zenzen", "wcale", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "taitei", "zwykle", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "chotto", "trochę", null);
 		addPolishJapaneseEntry(DictionaryEntryType.GENKI1_3, "tokidoki", "czasami", null);
