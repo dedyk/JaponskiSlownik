@@ -12,6 +12,10 @@ public enum DictionaryEntryType {
 	
 	WORD_GENKI1_3("Genki1_3.properties"),
 	
+	WORD_GENKI1_3_ADDITIONAL("Genki1_3+.properties"),
+	
+	WORD_GENKI1_4("Genki1_4.properties"),
+	
 	WORD_NUMBERS("Liczby.properties"),
 	
 	WORD_HOURS("Godziny.properties"),
