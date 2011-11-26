@@ -26,7 +26,7 @@ public enum DictionaryEntryType {
 	
 	ALL("All.properties"),
 	
-	KANJI_TEST1("test1.properties");
+	WORD_GENKI1_3_KANJI("Genki1_3k.properties");
 	
 	private String fileName;
 	

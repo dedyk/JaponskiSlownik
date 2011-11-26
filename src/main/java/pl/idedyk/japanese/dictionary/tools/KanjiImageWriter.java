@@ -8,9 +8,13 @@ import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.imageio.ImageIO;
+
+import org.apache.commons.codec.binary.Base64;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.japannaka.JapannakaHtmlReader;
@@ -26,22 +30,34 @@ public class KanjiImageWriter {
 		List<PolishJapaneseEntry> japanesePolishDictionary = 
 			JapannakaHtmlReader.readJapannakaHtmlDir("websites/www.japannaka.republika.pl");
 		
+		Map<String, String> kanjiCache = new HashMap<String, String>();
+		
 		for (PolishJapaneseEntry polishJapaneseEntry : japanesePolishDictionary) {
 			
 			System.out.println("Creating image for: " + polishJapaneseEntry.getJapanese() + " - " + polishJapaneseEntry.getRomaji());
 			
-			createKanjiImage(imageDir, polishJapaneseEntry);
+			createKanjiImage(kanjiCache, imageDir, polishJapaneseEntry);
 		}
 	}
 	
-	public static void createKanjiImage(String imageDir, PolishJapaneseEntry polishJapaneseEntry) 
+	public static void createKanjiImage(Map<String, String> kanjiCache, String imageDir, PolishJapaneseEntry polishJapaneseEntry) 
 			throws JapannakaException {
 		
 		final String fileFormat = "png";
 		
 		String kanji = polishJapaneseEntry.getJapanese();
 		
-		String fileName = Utils.replaceChars(polishJapaneseEntry.getRomaji()) + "-" + polishJapaneseEntry.getId() + "." + fileFormat;
+		if (kanjiCache.containsKey(kanji)) {
+			System.out.println(kanji + " = " + kanjiCache.get(kanji));
+			
+			polishJapaneseEntry.setJapaneseImagePath(kanjiCache.get(kanji));
+			
+			return;
+		}
+		
+		String fileName = Utils.replaceChars(new String(Base64.encodeBase64(kanji.getBytes()))) + "." + fileFormat;
+		
+		System.out.println(kanji + " = " + fileName);
 		
 		polishJapaneseEntry.setJapaneseImagePath(fileName);
 		
@@ -80,5 +96,7 @@ public class KanjiImageWriter {
 		} catch (IOException e) {
 			throw new JapannakaException("Can't create image file: " + e.getMessage());
 		}
+		
+		kanjiCache.put(kanji, fileFullName);
 	}
 }

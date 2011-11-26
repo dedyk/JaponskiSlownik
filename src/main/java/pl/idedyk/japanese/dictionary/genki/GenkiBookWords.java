@@ -30,9 +30,9 @@ public class GenkiBookWords {
 		String kanjiOutputDir = "kanji_output";
 		
 		generateKanjiWords(polishJapaneseKanjiEntries);
-		//generateKanjiImages(polishJapaneseKanjiEntries, kanjiOutputDir);
+		generateKanjiImages(polishJapaneseKanjiEntries, kanjiOutputDir);
 		
-		//CsvGenerator.generateCsv(kanjiOutputDir, polishJapaneseKanjiEntries);
+		CsvGenerator.generateCsv(kanjiOutputDir, polishJapaneseKanjiEntries);
 		
 		System.out.println("Done");
 	}
@@ -446,7 +446,6 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "tonari", "obok", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "aida", "pomiędzy", null);
 
-		
 		return result;
 	}
 	
@@ -454,31 +453,68 @@ public class GenkiBookWords {
 		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "日本", "Nihon", "Japonia", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "私", "Watashi", "Ja", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "一", "ichi", "jeden", "czytanie chińskie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "一", "i tsu", "jeden", "czytanie chińskie nr. 2");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "一", "hito", "jeden", "czytanie japońskie");
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "一", "ichi", "jeden", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "一時", "ichiji", "godzina pierwsza", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "一年生", "ichinensei", "student pierwszego roku", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "一分", "ippun", "jedna minuta", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "一つ", "hitotsu", "jeden", "liczenie");
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "二", "ni", "dwa", "czytanie chińskie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "二", "futa", "dwa", "czytanie japońskie");
 
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "日本1", "Nihon1", "Japonia", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "私1", "Watashi1", "Ja", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "二", "ni", "dwa", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "二時", "niji", "godzina druga", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "二年生", "ninensei", "student drugiego roku", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "二つ", "futatsu", "dwa", "liczenie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "二つ日間", "futsukakan", "dwa dni", null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "三", "san", "trzy", "czytanie chińskie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "三", "mi tsu", "trzy", "czytanie japońskie");
 
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "日本2", "Nihon2", "Japonia", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "私2", "Watashi2", "Ja", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "三", "san", "trzy", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "三時", "sanji", "godzina trzecia", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "三年生", "sannensei", "student trzeciego roku", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "三つ", "mittsu", "trzy", "liczenie");
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "四", "yon", "cztery", "czytanie japońskie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "四", "yo", "cztery", "czytanie japońskie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "四", "yo tsu", "cztery", "czytanie japońskie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "四", "shi", "cztery", "czytanie chińskie");
 
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "日本3", "Nihon3", "Japonia", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "私3", "Watashi3", "Ja", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "四", "yon", "cztery", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "四時", "yoji", "godzina czwarta", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "四年生", "yonensei", "student czwartego roku", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "四つ", "yottsu", "cztery", "liczenie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "四月", "shigatsu", "kwiecień", null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "五", "go", "pięć", "czytanie chińskie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "五", "itsu", "pięć", "czytanie japońskie");
 
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "日本4", "Nihon4", "Japonia", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "私4", "Watashi4", "Ja", null);
-
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "日本5", "Nihon5", "Japonia", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "私5", "Watashi5", "Ja", null);
-
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "日本6", "Nihon6", "Japonia", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.KANJI_TEST1, "私6", "Watashi6", "Ja", null);
-
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "五", "go", "pięć", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "五時", "goji", "godzina piąta", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "五つ", "itsutsu", "pięć", "liczenie");
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "六", "roku", "sześć", "czytanie chińskie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "六", "roku tsu", "sześć", "czytanie chińskie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "六", "mu tsu", "sześć", "czytanie japońskie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "六", "roku", "sześć", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "六時", "rokuji", "godzina szósta", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "六百", "robbyaku", "600", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "六分", "roppun", "sześć minut", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "六つ", "rottsu", "sześć", null);
+		
+		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "kanji", "czytanie", "tlumaczenie", null);
+		
 		return result;
 	}
 	
 	private static void generateKanjiImages(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries, String imageDir) throws JapannakaException {
+		
+		Map<String, String> kanjiCache = new HashMap<String, String>();
 		
 		DictionaryEntryType[] dictionaryTypes = new DictionaryEntryType[polishJapaneseEntries.size()];
 		
@@ -488,7 +524,7 @@ public class GenkiBookWords {
 			
 			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries.get(dictionaryEntryType)) {
 
-				KanjiImageWriter.createKanjiImage(imageDir, polishJapaneseEntry);
+				KanjiImageWriter.createKanjiImage(kanjiCache, imageDir, polishJapaneseEntry);
 				
 				
 			}
