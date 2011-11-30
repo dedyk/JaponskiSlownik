@@ -61,9 +61,9 @@ public class KanjiImageWriter {
 		
 		polishJapaneseEntry.setJapaneseImagePath(fileName);
 		
-		String fileFullName = imageDir + File.separator + fileName;
+		String fileFullPath = imageDir + File.separator + fileName;
 		
-		File file = new File(fileFullName);
+		File file = new File(fileFullPath);
 				
 		BufferedImage bufferedImage = new BufferedImage(640, 480, BufferedImage.TYPE_BYTE_GRAY);
 		
@@ -97,6 +97,6 @@ public class KanjiImageWriter {
 			throw new JapannakaException("Can't create image file: " + e.getMessage());
 		}
 		
-		kanjiCache.put(kanji, fileFullName);
+		kanjiCache.put(kanji, fileName);
 	}
 }
