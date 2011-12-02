@@ -34,7 +34,7 @@ public class KanjiImageWriter {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : japanesePolishDictionary) {
 			
-			System.out.println("Creating image for: " + polishJapaneseEntry.getJapanese() + " - " + polishJapaneseEntry.getRomaji());
+			System.out.println("Creating image for: " + polishJapaneseEntry.getJapanese() + " - " + polishJapaneseEntry.getRomajiList());
 			
 			createKanjiImage(kanjiCache, imageDir, polishJapaneseEntry);
 		}

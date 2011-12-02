@@ -20,13 +20,20 @@ public class GenkiKanjiInputHelper {
 				break;
 			}
 			
-			System.out.print("Romaji: ");
+			List<String> romajiList = new ArrayList<String>();
 			
-			String romaji = stdinReadline();
-			
-			if (romaji == null || romaji.equals("") == true) {
-				break;
+			while(true) {
+				System.out.print("Romaji: ");
+				
+				String romaji = stdinReadline();
+				
+				if (romaji == null || romaji.equals("") == true) {
+					break;
+				}
+				
+				romajiList.add(romaji);
 			}
+			
 			
 			System.out.print("Polish translate: ");
 			
@@ -47,7 +54,7 @@ public class GenkiKanjiInputHelper {
 			KanjiEntry kanjiEntry = new KanjiEntry();
 			
 			kanjiEntry.setKanji(kanji);
-			kanjiEntry.setRomaji(romaji);
+			kanjiEntry.setRomajiList(romajiList);
 			kanjiEntry.setPolishTranslateString(polishTranslateString);
 			kanjiEntry.setInfo(info);
 			
@@ -58,8 +65,20 @@ public class GenkiKanjiInputHelper {
 		
 		for (KanjiEntry kanjiEntry : kanjiList) {
 			
-			System.out.println("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, \"" + 
-					kanjiEntry.getKanji() + "\", \"" + kanjiEntry.getRomaji() + "\", \"" + 
+			System.out.print("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, \"" + 
+					kanjiEntry.getKanji() + "\", new String[] { ");
+			
+			for (int romIdx = 0; romIdx < kanjiEntry.getRomajiList().size(); ++romIdx) {
+				String romaji = kanjiEntry.getRomajiList().get(romIdx);
+				
+				System.out.print("\"" + romaji + "\"");
+				
+				if (romIdx != kanjiEntry.getRomajiList().size() - 1) {
+					System.out.print(", ");
+				}
+			}
+			
+			System.out.println(" }, \"" + 
 					kanjiEntry.getPolishTranslateString() + "\", " + 
 					(kanjiEntry.getInfo() == null ? "null" : "\"" + kanjiEntry.getInfo() + "\"") + ");");
 		}
@@ -77,7 +96,7 @@ public class GenkiKanjiInputHelper {
 		
 		private String kanji;
 		
-		private String romaji;
+		private List<String> romajiList;
 		
 		private String polishTranslateString;
 		
@@ -87,8 +106,8 @@ public class GenkiKanjiInputHelper {
 			return kanji;
 		}
 
-		public String getRomaji() {
-			return romaji;
+		public List<String> getRomajiList() {
+			return romajiList;
 		}
 
 		public String getPolishTranslateString() {
@@ -103,8 +122,8 @@ public class GenkiKanjiInputHelper {
 			this.kanji = kanji;
 		}
 
-		public void setRomaji(String romaji) {
-			this.romaji = romaji;
+		public void setRomajiList(List<String> romajiList) {
+			this.romajiList = romajiList;
 		}
 
 		public void setPolishTranslateString(String polishTranslateString) {

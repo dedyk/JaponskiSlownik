@@ -25,8 +25,16 @@ public class CsvGenerator {
 			
 			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries.get(dictionaryEntryType)) {
 				
-				sb.append(Utils.replaceChars(polishJapaneseEntry.getRomaji())).append(";");
+				List<String> romajiList = polishJapaneseEntry.getRomajiList();
 				
+				for (int romIdx = 0; romIdx < romajiList.size(); ++romIdx) {
+					sb.append(Utils.replaceChars(romajiList.get(romIdx)));
+					
+					if (romIdx != romajiList.size() - 1) {
+						sb.append(",");
+					}					
+				}
+				sb.append(";");				
 				
 				if (polishJapaneseEntry.getJapanese() != null) {
 					sb.append(polishJapaneseEntry.getJapanese()).append(";");

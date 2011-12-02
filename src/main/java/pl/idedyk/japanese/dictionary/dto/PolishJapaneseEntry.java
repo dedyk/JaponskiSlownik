@@ -6,7 +6,7 @@ public class PolishJapaneseEntry {
 	
 	private int id;
 	
-	private String romaji;
+	private List<String> romajiList;
 	
 	private String japanese;
 	
@@ -14,8 +14,8 @@ public class PolishJapaneseEntry {
 	
 	private List<PolishTranslate> polishTranslates;
 
-	public String getRomaji() {
-		return romaji;
+	public List<String> getRomajiList() {
+		return romajiList;
 	}
 
 	public String getJapanese() {
@@ -26,8 +26,8 @@ public class PolishJapaneseEntry {
 		return polishTranslates;
 	}
 
-	public void setRomaji(String romaji) {
-		this.romaji = romaji;
+	public void setRomajiList(List<String> romajiList) {
+		this.romajiList = romajiList;
 	}
 
 	public void setJapanese(String japanese) {

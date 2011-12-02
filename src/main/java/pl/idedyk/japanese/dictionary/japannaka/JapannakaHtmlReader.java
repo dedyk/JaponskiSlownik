@@ -83,7 +83,11 @@ public class JapannakaHtmlReader {
 							PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
 							
 							polishJapaneseEntry.setId(id);
-							polishJapaneseEntry.setRomaji(romaji);
+							
+							List<String> romajiList = new ArrayList<String>();
+							romajiList.add(romaji);
+							
+							polishJapaneseEntry.setRomajiList(romajiList);
 							polishJapaneseEntry.setJapanese(japanese);
 							
 							List<PolishTranslate> polishTranslateList = createPolishTranslateList(polishTranslates);
@@ -205,7 +209,7 @@ public class JapannakaHtmlReader {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : japanesePolishDictionary) {
 			
-			System.out.println("Romaji: " + polishJapaneseEntry.getRomaji());
+			System.out.println("Romaji: " + polishJapaneseEntry.getRomajiList());
 			System.out.println("Japanese: " + polishJapaneseEntry.getJapanese());
 			
 			List<PolishTranslate> polishTranslates = polishJapaneseEntry.getPolishTranslates();
