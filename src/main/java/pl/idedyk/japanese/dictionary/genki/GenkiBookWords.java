@@ -552,7 +552,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "日記", new String[] { "nikki" },  new String[] { "pamiętnik" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "三日", new String[] { "mikka" },  new String[] { "3 dni" }, null);
 
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "本", new String[] { "hon", "moto" },  new String[] { "książka, prosto" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "本", new String[] { "hon", "moto" },  new String[] { "książka", "prosto" }, "czytanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "本", new String[] { "hon" },  new String[] { "książka" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "日本", new String[] { "nihon" },  new String[] { "Japonia" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "日本語", new String[] { "nihongo" },  new String[] { "język japoński" }, null);
