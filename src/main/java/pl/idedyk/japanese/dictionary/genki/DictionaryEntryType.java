@@ -24,9 +24,7 @@ public enum DictionaryEntryType {
 	
 	WORD_YEARS("Lata.properties"),
 	
-	ALL("All.properties"),
-	
-	WORD_GENKI1_3_KANJI("Genki1_3k.properties");
+	ALL("All.properties");
 	
 	private String fileName;
 	
