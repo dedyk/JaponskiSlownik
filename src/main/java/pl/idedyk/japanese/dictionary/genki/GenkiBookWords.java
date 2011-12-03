@@ -507,8 +507,6 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "... mai", "do liczenia", "płaskich przedmiotów");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "... made", "do", "miejsce, czasu");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "... kara", "od", "czasu");
-
-		
 		
 		return result;
 	}
