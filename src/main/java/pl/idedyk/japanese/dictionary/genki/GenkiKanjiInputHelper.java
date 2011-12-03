@@ -34,13 +34,18 @@ public class GenkiKanjiInputHelper {
 				romajiList.add(romaji);
 			}
 			
+			List<String> polishTranslateList = new ArrayList<String>();
 			
-			System.out.print("Polish translate: ");
+			while(true) {
+				System.out.print("Polish translate: ");
 			
-			String polishTranslateString = stdinReadline();
+				String polishTranslateString = stdinReadline();
 			
-			if (polishTranslateString == null || polishTranslateString.equals("") == true) {
-				break;
+				if (polishTranslateString == null || polishTranslateString.equals("") == true) {
+					break;
+				}
+				
+				polishTranslateList.add(polishTranslateString);
 			}
 			
 			System.out.print("Info: ");
@@ -55,7 +60,7 @@ public class GenkiKanjiInputHelper {
 			
 			kanjiEntry.setKanji(kanji);
 			kanjiEntry.setRomajiList(romajiList);
-			kanjiEntry.setPolishTranslateString(polishTranslateString);
+			kanjiEntry.setPolishTranslateString(polishTranslateList);
 			kanjiEntry.setInfo(info);
 			
 			kanjiList.add(kanjiEntry);
@@ -78,8 +83,19 @@ public class GenkiKanjiInputHelper {
 				}
 			}
 			
-			System.out.println(" }, \"" + 
-					kanjiEntry.getPolishTranslateString() + "\", " + 
+			System.out.print(" }, \", new String[] { ");
+			
+			for (int polIdx = 0; polIdx < kanjiEntry.getPolishTranslateString().size(); ++polIdx) {
+				String polishTranslate = kanjiEntry.getPolishTranslateString().get(polIdx);
+				
+				System.out.print("\"" + polishTranslate + "\"");
+				
+				if (polIdx != kanjiEntry.getPolishTranslateString().size() - 1) {
+					System.out.print(", ");
+				}
+			}
+			
+			System.out.print(" }, " + 
 					(kanjiEntry.getInfo() == null ? "null" : "\"" + kanjiEntry.getInfo() + "\"") + ");");
 		}
 		
@@ -98,7 +114,7 @@ public class GenkiKanjiInputHelper {
 		
 		private List<String> romajiList;
 		
-		private String polishTranslateString;
+		private List<String> polishTranslateList;
 		
 		private String info;
 
@@ -110,8 +126,8 @@ public class GenkiKanjiInputHelper {
 			return romajiList;
 		}
 
-		public String getPolishTranslateString() {
-			return polishTranslateString;
+		public List<String> getPolishTranslateString() {
+			return polishTranslateList;
 		}
 
 		public String getInfo() {
@@ -126,8 +142,8 @@ public class GenkiKanjiInputHelper {
 			this.romajiList = romajiList;
 		}
 
-		public void setPolishTranslateString(String polishTranslateString) {
-			this.polishTranslateString = polishTranslateString;
+		public void setPolishTranslateString(List<String> polishTranslateList) {
+			this.polishTranslateList = polishTranslateList;
 		}
 
 		public void setInfo(String info) {
