@@ -312,21 +312,21 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "mainichi", "każdego dnia", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "maiban", "każdej nocy", null);
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "iku", "iść", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "kaeru", "wracać", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "kiku", "słuchać", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "nomu", "pić", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "hanasu", "mówić", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "yomu", "czytać", "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "iku", "iść", "cel ni/e, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "kaeru", "wracać", "cel ni/e, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "kiku", "słuchać", "~ o, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "nomu", "pić", "~ o, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "hanasu", "mówić", "język o / de, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "yomu", "czytać", "~ o, u-czasownik");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "okiru", "wstawać", "ru-czasowniki");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "taberu", "jeść", "ru-czasowniki");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "taberu", "jeść", "~ o, ru-czasowniki");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "neru", "spać", "ru-czasowniki");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "miru", "patrzeć", "ru-czasowniki");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "miru", "patrzeć", "~ o, ru-czasowniki");
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "kuru", "przybyć", "czasowniki nieregularne");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "suru", "robić", "czasowniki nieregularne");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "benkyoo suru", "studiować", "czasowniki nieregularne");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "kuru", "przybyć", "cel ni/e, czasowniki nieregularne");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "suru", "robić", "~ o, czasowniki nieregularne");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "benkyoo suru", "studiować", "~ o, czasowniki nieregularne");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "ii", "dobry", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "hayai", "wczesny", null);
@@ -415,15 +415,15 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "doyoobi", "sobota", "ziemia");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "nichiyoobi", "niedziela", "słońce");
 
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "au", "spotykać / widzieć osobę", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "aru", "być", "do rzeczy martwych, u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "kau", "kupować", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "kaku", "pisać", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "toru", "robić", "zdjęcie, u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "matsu", "czekać", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "wakaru", "rozumieć", "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "au", new String[] { "spotykać", "widzieć osobę" }, "osoba ni/to, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "aru", "być", "~ ga, do rzeczy martwych, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "kau", "kupować", "~ o, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "kaku", "pisać", "osoba ni rzecz o, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "toru", "robić", "~ o, zdjęcie, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "matsu", "czekać", "~ o, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "wakaru", "rozumieć", "~ ga, u-czasownik");
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "iru", "być", "do rzeczy żywych, ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "iru", "być", "miejsce ni, do rzeczy żywych, ru-czasownik");
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "gurai", "około", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "gomen nasai", "przepraszam", null);
@@ -445,7 +445,71 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "soba", "w pobliżu", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "tonari", "obok", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "aida", "pomiędzy", null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "otonarisan", "sąsiad", null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "umi", "morze", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "kitte", "znaczek pocztowy", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "kippu", "bilet", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "saafin", "surfing", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "shukudai", "praca domowa", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "tabemono", "jedzenie", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "tanjoobi", "urodziny", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "tesuto", "test", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "tenki", "pogoda", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "nomimono", "picie", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "hagaki", "pocztówka", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "basu", "autobus", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "hikooki", "samolot", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "heya", "pokój", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "boku", "ja", "używane przez mężczyzn");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "yasumi", new String[] { "wakacje", "odpoczynek" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "ryokoo", "podróż", null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "atarashii", "nowy", "i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "atsui", "gorąco", "pogoda, i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "atsui", "gorąco", "przedmioty, i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "isogashii", "zajęty", "człowiek / dzień, i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "ookii", "duży", "i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "omoshiroi", "interesujący", "i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "kowai", "straszny", "i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "samui", "zimno", "pogoda, i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "tanoshii", "zabawny", "i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "chisai", "mały", "i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "tsumaranai", "nudny", "i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "furui", "stary", "do przedmiotów, i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "muzukashii", "trudny", "i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "yasashii", new String[] { "łatwy, miły" }, "problem / człowiek, i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "yasui", "tani", "i-przymiotnik");
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "kirai", "nie lubić", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "kirei", new String [] { "ładne", "czyste" }, "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "genki", "zdrowy", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "shizuka", "cichy", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "suki", "lubić", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "daikirai", "nienawidzić", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "daisuki", "kochać", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "nigiyaka", "żywy", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "hansamu", "przystojny", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "hima", "nie zajęty", "na-przymiotnik");
 
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "oyogu", "pływać", "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "kiku", "pytać", "osobę ni, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "noru", new String[] { "robić", "jechać" }, "~ ni, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "yaru", "wykonywać", "~ o, u-czasownik");
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "dekakeru", "wychodzić", "ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "isshoni", "razem", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "sorekara", "i wtedy", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "daijoobu", "w porządku", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "totemo", "bardzo", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "donna", "jakiego rodzaju", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "... mai", "do liczenia", "płaskich przedmiotów");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "... made", "do", "miejsce, czasu");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "... kara", "od", "czasu");
+
+		
+		
 		return result;
 	}
 	
@@ -635,13 +699,18 @@ public class GenkiBookWords {
 			}
 			
 		}
-		
 	}
 	
 	private static void addPolishJapaneseEntry(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries, 
 			DictionaryEntryType dictionaryEntryType, String romaji, String polishTranslateString, String info) {
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, dictionaryEntryType, null, new String[] { romaji }, new String[] { polishTranslateString }, info);
+	}
+
+	private static void addPolishJapaneseEntry(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries, 
+			DictionaryEntryType dictionaryEntryType, String romaji, String[] polishTranslateString, String info) {
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, dictionaryEntryType, null, new String[] { romaji }, polishTranslateString, info);
 	}
 	
 	private static void addPolishJapaneseEntry(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries, 
