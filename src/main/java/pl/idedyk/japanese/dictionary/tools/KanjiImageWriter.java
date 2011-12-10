@@ -57,6 +57,8 @@ public class KanjiImageWriter {
 		
 		String fileName = Utils.replaceChars(new String(Base64.encodeBase64(kanji.getBytes()))) + "." + fileFormat;
 		
+		fileName = fileName.replaceAll("/", "_");
+		
 		System.out.println(kanji + " = " + fileName);
 		
 		polishJapaneseEntry.setJapaneseImagePath(fileName);
