@@ -70,7 +70,7 @@ public class GenkiKanjiInputHelper {
 		
 		for (KanjiEntry kanjiEntry : kanjiList) {
 			
-			System.out.print("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, \"" + 
+			System.out.print("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, \"" + 
 					kanjiEntry.getKanji() + "\", new String[] { ");
 			
 			for (int romIdx = 0; romIdx < kanjiEntry.getRomajiList().size(); ++romIdx) {
@@ -83,7 +83,7 @@ public class GenkiKanjiInputHelper {
 				}
 			}
 			
-			System.out.print(" }, \", new String[] { ");
+			System.out.print(" }, new String[] { ");
 			
 			for (int polIdx = 0; polIdx < kanjiEntry.getPolishTranslateString().size(); ++polIdx) {
 				String polishTranslate = kanjiEntry.getPolishTranslateString().get(polIdx);
@@ -95,7 +95,7 @@ public class GenkiKanjiInputHelper {
 				}
 			}
 			
-			System.out.print(" }, " + 
+			System.out.println(" }, " + 
 					(kanjiEntry.getInfo() == null ? "null" : "\"" + kanjiEntry.getInfo() + "\"") + ");");
 		}
 		
