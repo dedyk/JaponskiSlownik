@@ -567,7 +567,8 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o kariru", "pozyczać", "osoba ni rzecz");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o shimeru", "zamykać", "ru-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o tsukeru", "włączać", "ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o tsukeru", new String[] { "włączać", "zapalać" }, "ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o kesu", new String[] { "wyłącać", "gasić" }, "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "denwa o kakeru", "dzwonić", "ru-czasownik, osoba ni");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o wasureru", "zapomnieć", "ru-czasownik");
 
@@ -583,6 +584,14 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "hontou desu ka", "naprawdę", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "yakkuri", new String[] { "powoli", "wolno", "bez pośpiechu" }, null);
 
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "osoi", "późny", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "osoku", "późno", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "warui", "zły", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "kotoba", new String[] { "słowo", "język", "mowa" }, null);
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "michi", "droga", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "gomi", "śmieci", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o suteru", "wyrzucać", "ru-czasownik");
 
 		return result;
 	}
