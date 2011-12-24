@@ -34,7 +34,7 @@ public class KanjiImageWriter {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : japanesePolishDictionary) {
 			
-			System.out.println("Creating image for: " + polishJapaneseEntry.getJapanese() + " - " + polishJapaneseEntry.getRomajiList());
+			//System.out.println("Creating image for: " + polishJapaneseEntry.getJapanese() + " - " + polishJapaneseEntry.getRomajiList());
 			
 			createKanjiImage(kanjiCache, imageDir, polishJapaneseEntry);
 		}
@@ -48,7 +48,7 @@ public class KanjiImageWriter {
 		String kanji = polishJapaneseEntry.getJapanese();
 		
 		if (kanjiCache.containsKey(kanji)) {
-			System.out.println(kanji + " = " + kanjiCache.get(kanji));
+			//System.out.println(kanji + " = " + kanjiCache.get(kanji));
 			
 			polishJapaneseEntry.setJapaneseImagePath(kanjiCache.get(kanji));
 			
@@ -59,7 +59,7 @@ public class KanjiImageWriter {
 		
 		fileName = fileName.replaceAll("/", "_");
 		
-		System.out.println(kanji + " = " + fileName);
+		//System.out.println(kanji + " = " + fileName);
 		
 		polishJapaneseEntry.setJapaneseImagePath(fileName);
 		

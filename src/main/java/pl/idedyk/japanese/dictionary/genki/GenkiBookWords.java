@@ -563,7 +563,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, new String[] { "yasumu" }, new String[] { "odpoczywać" }, "u-czasownik");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o akeru", "otwierać", "ru-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o oshieru", "uczyć", "ru-czasownik, osoba ni rzecz o");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o oshieru", "uczyć", "ru-czasownik, osoba ni rzecz");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o oriru", "zdejmować", "ru-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o kariru", "pozyczać", "osoba ni rzecz");
 		
@@ -598,6 +598,8 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "ojiisan", "dziadek", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "obasan", "ciocia", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "ojisan", "wujek", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "atama ga ii", "mądry", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "atama ga warui", "głupi", null);
 		
 		return result;
 	}
@@ -957,8 +959,11 @@ public class GenkiBookWords {
 		
 		List<PolishTranslate> polishTranslateList2 = new ArrayList<PolishTranslate>();
 		
-		for (String currentPolishTranslate : polishTranslateList) {
-			polishTranslateList2.add(createPolishTranslate(currentPolishTranslate, info));
+		for (int idx = 0; idx < polishTranslateList.length; ++idx) {
+			String currentPolishTranslate = polishTranslateList[idx];
+			
+			polishTranslateList2.add(createPolishTranslate(currentPolishTranslate, 
+					(idx != polishTranslateList.length - 1 ? null : info)));
 		}
 		
 		entry.setJapanese(japanese);

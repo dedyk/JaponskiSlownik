@@ -52,7 +52,7 @@ public class CsvGenerator {
 						sb.append(Utils.replaceChars(currentPolishTranslate.getWord())).append("|");
 						
 						if (currentPolishTranslate.getInfo() != null && currentPolishTranslate.getInfo().size() > 0) {
-							for (int infoIdx = 0; infoIdx < currentPolishTranslate.getInfo().size(); ++infoIdx) {
+							for (int infoIdx = 0; infoIdx < currentPolishTranslate.getInfo().size(); ++infoIdx) {								
 								sb.append(Utils.replaceChars(currentPolishTranslate.getInfo().get(infoIdx)));
 								
 								if (infoIdx != currentPolishTranslate.getInfo().size() - 1) {
