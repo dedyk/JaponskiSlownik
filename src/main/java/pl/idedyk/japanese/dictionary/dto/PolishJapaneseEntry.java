@@ -6,6 +6,8 @@ public class PolishJapaneseEntry {
 	
 	private int id;
 	
+	private String groupName;
+	
 	private List<String> romajiList;
 	
 	private String japanese;
@@ -52,5 +54,13 @@ public class PolishJapaneseEntry {
 
 	public void setJapaneseImagePath(String japaneseImagePath) {
 		this.japaneseImagePath = japaneseImagePath;
-	}		
+	}
+
+	public String getGroupName() {
+		return groupName;
+	}
+
+	public void setGroupName(String groupName) {
+		this.groupName = groupName;
+	}
 }

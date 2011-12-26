@@ -17,27 +17,27 @@ public class GenkiBookWords {
 	public static void main(String[] args) throws IOException, JapannakaException {
 		
 		// Słowniczek
-		Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries = new HashMap<DictionaryEntryType, List<PolishJapaneseEntry>>();
+		List<PolishJapaneseEntry> polishJapaneseEntries = new ArrayList<PolishJapaneseEntry>();
 		
 		generateWords(polishJapaneseEntries);
 		
-		CsvGenerator.generateCsv("output", polishJapaneseEntries);
+		CsvGenerator.generateCsv("output/japanese_polish_dictionary.properties", polishJapaneseEntries);
 		
 		polishJapaneseEntries = null;
 		
 		// Słowniczek kanji
-		Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseKanjiEntries = new HashMap<DictionaryEntryType, List<PolishJapaneseEntry>>();
+		List<PolishJapaneseEntry> polishJapaneseKanjiEntries = new ArrayList<PolishJapaneseEntry>();
 		String kanjiOutputDir = "kanji_output";
 		
 		generateKanjiWords(polishJapaneseKanjiEntries);
 		generateKanjiImages(polishJapaneseKanjiEntries, kanjiOutputDir);
 		
-		CsvGenerator.generateCsv(kanjiOutputDir, polishJapaneseKanjiEntries);
+		CsvGenerator.generateCsv(kanjiOutputDir + "/kanji_dictionary.properties", polishJapaneseKanjiEntries);
 		
 		System.out.println("Done");
 	}
 
-	private static List<PolishJapaneseEntry> generateWords(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries) {
+	private static List<PolishJapaneseEntry> generateWords(List<PolishJapaneseEntry> polishJapaneseEntries) {
 		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
@@ -254,28 +254,28 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "Mou ichido itte kudasai", "Proszę powtórzyć", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "Chotto matte kudasai", "Proszę poczekać", null);
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "akai", "czerwony", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "aoi", "niebieski", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "sushi", "sushi", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "kagu", "meble", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "kao", "twarz", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "ai", "miłość", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "kiku", "słuchać", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "sake", "sake", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "ushi", "krowa", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "akai", "czerwony", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "aoi", "niebieski", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "sushi", "sushi", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "kagu", "meble", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "kao", "twarz", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "ai", "miłość", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "kiku", "słuchać", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "sake", "sake", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "ushi", "krowa", null);
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "keitai denwa", "telefon komórkowy", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "maakaa", "marker", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "haha", "matka", "h...");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "chichi", "ojciec", "ch...");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "ha", "ząb", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "hi", "słońce", "s...");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "hi", "ogień", "o...");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "mimi", "ucho", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "me", "oko", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "momo", "brzoskwinia", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "keitai denwa", "telefon komórkowy", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "maakaa", "marker", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "haha", "matka", "h...");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "chichi", "ojciec", "ch...");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "ha", "ząb", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "hi", "słońce", "s...");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "hi", "ogień", "o...");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "mimi", "ucho", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "me", "oko", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "momo", "brzoskwinia", null);
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2_ADDITIONAL, "yasui", "tani", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "yasui", "tani", null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "eiga", "film", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "ongaku", "muzyka", null);
@@ -342,16 +342,16 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "demo", "ale", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "Dou desu ka", "co ty na to", null);
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3_ADDITIONAL, "shuu", "tydzień", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3_ADDITIONAL, "matsu", "koniec", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "shuu", "tydzień", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "matsu", "koniec", null);
 
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3_ADDITIONAL, "mai", "każdy", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3_ADDITIONAL, "ohashii", "pałeczki", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3_ADDITIONAL, "ofuro", "wanna", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3_ADDITIONAL, "mise", "sklep", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3_ADDITIONAL, "oshousan", "mnich", "buddyjski");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3_ADDITIONAL, "kozousan", "uczniowie", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3_ADDITIONAL, "kanuki", "jenot", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "mai", "każdy", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "ohashii", "pałeczki", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "ofuro", "wanna", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "mise", "sklep", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "oshousan", "mnich", "buddyjski");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "kozousan", "uczniowie", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "kanuki", "jenot", null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "arubaito", "praca w niepełnym wymiarze godzin", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "kaimono", "zakupy", null);
@@ -549,7 +549,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "asobu", new String[] { "grać", "miło spędzać czas" }, "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "isogu", "spieszyć się", "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "ofuro ni hairu", "brać kąpiel", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o kaesu", "wzrócić", "u-czasownik, osoba ni rzecz");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o kaesu", "zwrócić", "u-czasownik, osoba ni rzecz");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o kesu", new String[] { "wyłączyć", "skasować" }, "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "shinu", "umierać", "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "ni suwaru", "siadać", "u-czasownik, siedzenie");
@@ -569,7 +569,7 @@ public class GenkiBookWords {
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o shimeru", "zamykać", "ru-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o tsukeru", new String[] { "włączać", "zapalać" }, "ru-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o kesu", new String[] { "wyłącać", "gasić" }, "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o kesu", new String[] { "wyłączać", "gasić" }, "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "denwa o kakeru", "dzwonić", "ru-czasownik, osoba ni");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o wasureru", "zapomnieć", "ru-czasownik");
 
@@ -604,7 +604,7 @@ public class GenkiBookWords {
 		return result;
 	}
 	
-	private static List<PolishJapaneseEntry> generateKanjiWords(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries) {
+	private static List<PolishJapaneseEntry> generateKanjiWords(List<PolishJapaneseEntry> polishJapaneseEntries) {
 		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
@@ -905,57 +905,46 @@ public class GenkiBookWords {
 		return result;
 	}
 	
-	private static void generateKanjiImages(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries, String imageDir) throws JapannakaException {
-		
-		Map<String, String> kanjiCache = new HashMap<String, String>();
-		
-		DictionaryEntryType[] dictionaryTypes = new DictionaryEntryType[polishJapaneseEntries.size()];
-		
-		polishJapaneseEntries.keySet().toArray(dictionaryTypes);
-		
-		for (DictionaryEntryType dictionaryEntryType : dictionaryTypes) {
-			
-			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries.get(dictionaryEntryType)) {
+	private static void generateKanjiImages(List<PolishJapaneseEntry> polishJapaneseEntries, String imageDir) throws JapannakaException {
 
-				KanjiImageWriter.createKanjiImage(kanjiCache, imageDir, polishJapaneseEntry);
-				
-				
-			}
-			
+		Map<String, String> kanjiCache = new HashMap<String, String>();
+
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+
+			KanjiImageWriter.createKanjiImage(kanjiCache, imageDir, polishJapaneseEntry);
 		}
 	}
 	
-	private static void addPolishJapaneseEntry(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries, 
+	private static void addPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries, 
 			DictionaryEntryType dictionaryEntryType, String romaji, String polishTranslateString, String info) {
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, dictionaryEntryType, null, new String[] { romaji }, new String[] { polishTranslateString }, info);
 	}
 
-	private static void addPolishJapaneseEntry(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries, 
+	private static void addPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries, 
 			DictionaryEntryType dictionaryEntryType, String romaji, String[] polishTranslateString, String info) {
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, dictionaryEntryType, null, new String[] { romaji }, polishTranslateString, info);
 	}
 
-	private static void addPolishJapaneseEntry(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries, 
+	private static void addPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries, 
 			DictionaryEntryType dictionaryEntryType, String[] romaji, String polishTranslateString, String info) {
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, dictionaryEntryType, null, romaji, new String[] { polishTranslateString }, info);
 	}
 	
-	private static void addPolishJapaneseEntry(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries, 
+	private static void addPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries, 
 			DictionaryEntryType dictionaryEntryType, String[] romaji, String[] polishTranslateString, String info) {
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, dictionaryEntryType, null, romaji, polishTranslateString, info);
 	}
 	
-	private static void addPolishJapaneseEntry(Map<DictionaryEntryType, List<PolishJapaneseEntry>> polishJapaneseEntries, 
+	private static void addPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries, 
 			DictionaryEntryType dictionaryEntryType, String japanese, String[] romajiArray, String[] polishTranslateList, String info) {
-		
-		// temporary
-		dictionaryEntryType = DictionaryEntryType.ALL;
-		
+				
 		PolishJapaneseEntry entry = new PolishJapaneseEntry();
+		
+		entry.setGroupName(dictionaryEntryType.getName());
 		
 		List<PolishTranslate> polishTranslateList2 = new ArrayList<PolishTranslate>();
 		
@@ -976,15 +965,7 @@ public class GenkiBookWords {
 		entry.setRomajiList(romajiList);
 		entry.setPolishTranslates(polishTranslateList2);
 		
-		List<PolishJapaneseEntry> dictionaryEntryWordList = polishJapaneseEntries.get(dictionaryEntryType);
-		
-		if (dictionaryEntryWordList == null) {
-			dictionaryEntryWordList = new ArrayList<PolishJapaneseEntry>();
-		}
-		
-		polishJapaneseEntries.put(dictionaryEntryType, dictionaryEntryWordList);
-		
-		dictionaryEntryWordList.add(entry);
+		polishJapaneseEntries.add(entry);
 	}
 	
 	private static PolishTranslate createPolishTranslate(String word, String info) {
