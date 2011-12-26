@@ -834,22 +834,25 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "飲酒運転", new String[] { "inshuunten" }, new String[] { "pijany kierowca" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "東", new String[] { "higashi" }, new String[] { "wschód" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "東口", new String[] { "higashiguchi" }, new String[] { "wyjście wschodnie" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "東口", new String[] { "higashiguchi" }, new String[] { "wschodnie wyjście" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "東京", new String[] { "toukyou" }, new String[] { "Tokio" }, null);
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "西", new String[] { "nishi" }, new String[] { "wschód" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "西口", new String[] { "nishiguchi" }, new String[] { "wyjście zachodnie" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "北西", new String[] { "hokusei" }, new String[] { "północny zachód" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "西", new String[] { "nishi" }, new String[] { "zachód" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "西口", new String[] { "nishiguchi" }, new String[] { "zachodnie wyjście" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "関西", new String[] { "kansai" }, new String[] { "Kansai" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "南", new String[] { "minami" }, new String[] { "południe" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "南口", new String[] { "minamiguchi", "południowe wyjście" }, new String[] { "południowe wyjście" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "南東", new String[] { "nantou" }, new String[] { "południowy wschód" }, null);
-
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "南口", new String[] { "minamiguchi" }, new String[] { "południowe wyjście" }, null);
+		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "北", new String[] { "kita" }, new String[] { "północ" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "北口", new String[] { "kitaguchi" }, new String[] { "północne wyjście" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "東北", new String[] { "tohoku" }, new String[] { "Tohoku" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "北海道", new String[] { "hokkaidou" }, new String[] { "Hokkaido" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "北東", new String[] { "hokutou" }, new String[] { "północny wschód" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "南東", new String[] { "nantou" }, new String[] { "południowy wschód" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "南西", new String[] { "nansei" }, new String[] { "południowy zachód" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "北西", new String[] { "hokusei" }, new String[] { "północny zachód" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "北口", new String[] { "kitaguchi" }, new String[] { "północne wyjście" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "口", new String[] { "kuchi" }, new String[] { "usta" }, null);
