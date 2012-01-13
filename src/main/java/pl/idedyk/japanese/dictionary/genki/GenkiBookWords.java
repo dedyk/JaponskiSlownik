@@ -213,7 +213,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "shimbun", "gazeta", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "teepu", "kaseta", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "tokei", "zegarek", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "toreenaa", "podkoszulek", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "toreenaa", "bluza", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "nooto", "zeszyt", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "pen", "długopis", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "boushi", "kapelusz", null);
@@ -580,8 +580,8 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "konshuu", "aktualny tydzień", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "shiminbyouin", "szpital miejski", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "tsugi", "następny", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "terebi geemu", "gra video", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "denki", "elektryczność", "światło");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "terebi geemu", "gra telewizyjna", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "denki", "prąd", "światło");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "densha", "pociąg", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "nimotsu", "bagaż", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "peeji", "strona", null);
@@ -611,11 +611,10 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o akeru", "otwierać", "ru-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o oshieru", "uczyć", "ru-czasownik, osoba ni rzecz");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o oriru", "zdejmować", "ru-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o kariru", "pozyczać", "osoba ni rzecz");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o kariru", "pożyczać", "osoba ni rzecz");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o shimeru", "zamykać", "ru-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o tsukeru", new String[] { "włączać", "zapalać" }, "ru-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o kesu", new String[] { "wyłączać", "gasić" }, "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o tsukeru", new String[] { "włączać" }, "ru-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "denwa o kakeru", "dzwonić", "ru-czasownik, osoba ni");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "o wasureru", "zapomnieć", "ru-czasownik");
 
@@ -790,7 +789,28 @@ public class GenkiBookWords {
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "osara", "talerz", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "o watasu", "dawać", "u-czasownik");
-
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "furosato", "miasto rodzinne", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "kaeru", "nosić", "coś na głowie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "futotte imasu", "być grubym", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "yasete imasu", "być chudym", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "se ga takai", "wysoki wzrost", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "se ga hikuri", "niski wzrost", null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "shiroi", "biały", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "kuroi", "czarny", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "akai", "czerwony", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "aoi", "niebieski", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "kiiroi", "żółty", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "iro", "kolor", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "pinku iro no", "różowy", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "ocha iro no", "kolor herbaciany", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "midori iro no", "zielony", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "sukaato", "spódnica", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "zubon", "spodnie", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "shatsu", "koszula", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "seetaa", "sweter", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "toreenaa", "bluza", null);
 		
 		return result;
 	}
@@ -862,6 +882,21 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "学", new String[] { "gaku", "ga tsu", "mana" }, new String[] { "uczyć" }, "czytanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "外", new String[] { "gai", "soto" }, new String[] { "na zewnątrzn" }, "czytanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "国", new String[] { "koku", "goku", "kuni" }, new String[] { "kraj" }, "czytanie");
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "京", new String[] { "kyou" }, new String[] { "stolica" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "子", new String[] { "ko", "shi" }, new String[] { "dziecko" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "小", new String[] { "chii", "shou" }, new String[] { "mały" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "会", new String[] { "a", "kai" }, new String[] { "spotykać" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "社", new String[] { "sha", "ja" }, new String[] { "firma" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "父", new String[] { "chichi", "tou", "fu" }, new String[] { "ojciec" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "母", new String[] { "haha", "kaa", "bo" }, new String[] { "matka" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "高", new String[] { "taka", "kou" }, new String[] { "wysoki" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "校", new String[] { "kou" }, new String[] { "szkoła" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "毎", new String[] { "mai" }, new String[] { "w każdy" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "語", new String[] { "go" }, new String[] { "słowo" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "文", new String[] { "bun" }, new String[] { "zdanie" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "帰", new String[] { "kae", "hi" }, new String[] { "wracać" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "入", new String[] { "hai", "iri", "i", "nyuu" }, new String[] { "wchodzić" }, "czytanie");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "一時", new String[] { "ichiji" }, new String[] { "1" }, "godzina");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "一年生", new String[] { "ichinensei" }, new String[] { "student pierwszego roku" }, null);
@@ -981,7 +1016,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "山", new String[] { "yama" }, new String[] { "góra" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "富士山", new String[] { "Fuji san" }, new String[] { "Góra Fuji" }, null);
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "川", new String[] { "yawa" }, new String[] { "rzeka" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "川", new String[] { "kawa" }, new String[] { "rzeka" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "小川さん", new String[] { "Ogawa san" }, new String[] { "Pan Ogawa" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "元気な", new String[] { "genkina" }, new String[] { "zdrowy", "energiczny" }, null);
@@ -1090,6 +1125,60 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "中国", new String[] { "chuugoku" }, new String[] { "Chiny" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "国", new String[] { "kuni" }, new String[] { "kraj" }, null);		
 		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "東京", new String[] { "toukyou" }, new String[] { "Tokio" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "京子", new String[] { "kyouko" }, new String[] { "kyoko" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "京都", new String[] { "kyouto" }, new String[] { "Kyoto" }, null);
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "子ども", new String[] { "kodomo" }, new String[] { "dziecko" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "京子", new String[] { "kyouko" }, new String[] { "Kyoko" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "女の子", new String[] { "onna no ko" }, new String[] { "dziewczynka" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "男の子", new String[] { "otoko no ko" }, new String[] { "chłopczyk" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "電子メール", new String[] { "denshi meeru" }, new String[] { "email" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "小さい", new String[] { "chiisai" }, new String[] { "mały" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "小学校", new String[] { "shougakkou" }, new String[] { "szkoła podstawowa" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "小学生", new String[] { "shougakusei" }, new String[] { "uczeń szkoły podstawowej" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "会う", new String[] { "au" }, new String[] { "spotykać" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "会社", new String[] { "kaisha" }, new String[] { "firma" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "会社員", new String[] { "kaishain" }, new String[] { "pracownik firmy" }, null);
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "会社", new String[] { "kaisha" }, new String[] { "firma" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "神社", new String[] { "jinja" }, new String[] { "świątynia" }, "shintoistyczna");
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "父", new String[] { "chichi" }, new String[] { "ojciec" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "お父さん", new String[] { "otousan" }, new String[] { "ojciec" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "父母", new String[] { "fubo" }, new String[] { "ojciec i matka" }, null);
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "母", new String[] { "haha" }, new String[] { "matka" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "お母さん", new String[] { "okaasan" }, new String[] { "matka" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "母語", new String[] { "bogo" }, new String[] { "język ojczysty" }, null);
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "高い", new String[] { "takai" }, new String[] { "drogi", "wysoki" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "高校", new String[] { "koukou" }, new String[] { "liceum" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "高校生", new String[] { "koukousei" }, new String[] { "licealista" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "学校", new String[] { "gakkou" }, new String[] { "szkoła" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "高校", new String[] { "koukou" }, new String[] { "liceum" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "高校生", new String[] { "koukousei" }, new String[] { "licealista" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "中学校", new String[] { "chuugakkou" }, new String[] { "gimnazjum" }, null);
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "毎日", new String[] { "mainichi" }, new String[] { "każdego dnia" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "毎週", new String[] { "maishuu" }, new String[] { "każdego tygodnia" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "毎晩", new String[] { "maiban" }, new String[] { "każdej nocy" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "日本語", new String[] { "nihongo" }, new String[] { "język japoński" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "英語", new String[] { "eigo" }, new String[] { "język angielski" }, null);
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "文学", new String[] { "bungaku" }, new String[] { "literatura" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "作文", new String[] { "sakubun" }, new String[] { "wypracowanie" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "文字", new String[] { "moji" }, new String[] { "list" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "入る", new String[] { "hairu" }, new String[] { "wchodzić" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "入口", new String[] { "iriguchi" }, new String[] { "wejście" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "入れる", new String[] { "ireru" }, new String[] { "wkładać" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "輸入", new String[] { "yunyuu" }, new String[] { "import" }, null);
+
 		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "kanji", "czytanie", "tlumaczenie", null);
 		
 		return result;
