@@ -656,6 +656,41 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "michi no hadari kawa", "lewo strona ulicy", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "michi no migi kawa", "prawa strona ulicy", null);
 		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "okiru", "okite", "forma te, ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "taberu", "tabete", "forma te, ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "neru", "nete", "forma te, ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "miru", "mite", "forma te, ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "iru", "ite", "forma te, ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "dekakeru", "dekakete", "forma te, ru-czasownik");
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "au", "atte", "forma te, u, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "kau", "katte", "forma te, u, u-czasownik");
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "kiku", "kiite", "forma te, ku, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "kaku", "kaite", "forma te, ku, u-czasownik");
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "iku", "itte", "forma te, ku (nieregularny), u-czasownik");
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "oyogu", "ooyoide", "forma te, gu, u-czasownik");
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "hanasu", "hanashite", "forma te, su, u-czasownik");
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "matsu", "matte", "forma te, tsu, u-czasownik");
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "nomu", "nonde", "forma te, mu, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "yomu", "yonde", "forma te, mu, u-czasownik");
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "kaeru", "kaette", "forma te, ru, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "aru", "atte", "forma te, ru, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "toru", "totte", "forma te, ru, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "wakaru", "wakatte", "forma te, ru, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "noru", "notte", "forma te, ru, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "yaru", "yatte", "forma te, ru, u-czasownik");
+
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "kuru", "kite", "forma te, nieregularny");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "suru", "shite", "forma te, nieregularny");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "benkyou suru", "benkyou shite", "forma te, nieregularny");
+		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "hitori", "jedzen człowiek", "*");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "futari", "dwoje ludzi", "*");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "sannin", "troje ludzi", null);
@@ -1119,7 +1154,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "学ぶ", new String[] { "manabu" }, new String[] { "uczyć" }, "kogoś");
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "外国", new String[] { "gaikoku" }, new String[] { "zagraniczny kraj" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "大国人", new String[] { "gaikokujin" }, new String[] { "obcokrajowiec" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "外国人", new String[] { "gaikokujin" }, new String[] { "obcokrajowiec" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "外", new String[] { "soto" }, new String[] { "na zewnątrzn" }, null);
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, "中国", new String[] { "chuugoku" }, new String[] { "Chiny" }, null);
