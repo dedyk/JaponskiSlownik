@@ -930,7 +930,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "毎", new String[] { "mai" }, new String[] { "w każdy" }, "czytanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "語", new String[] { "go" }, new String[] { "słowo" }, "czytanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "文", new String[] { "bun" }, new String[] { "zdanie" }, "czytanie");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "帰", new String[] { "kae", "hi" }, new String[] { "wracać" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "帰", new String[] { "kae", "ki" }, new String[] { "wracać" }, "czytanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "入", new String[] { "hai", "iri", "i", "nyuu" }, new String[] { "wchodzić" }, "czytanie");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "一時", new String[] { "ichiji" }, new String[] { "1" }, "godzina");
@@ -1208,6 +1208,9 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "文学", new String[] { "bungaku" }, new String[] { "literatura" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "作文", new String[] { "sakubun" }, new String[] { "wypracowanie" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "文字", new String[] { "moji" }, new String[] { "list" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "帰る", new String[] { "kaeru" }, new String[] { "wracać" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "帰国", new String[] { "kikoku" }, new String[] { "wracać do kraju" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "入る", new String[] { "hairu" }, new String[] { "wchodzić" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "入口", new String[] { "iriguchi" }, new String[] { "wejście" }, null);
