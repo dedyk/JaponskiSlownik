@@ -1179,6 +1179,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "会社員", new String[] { "kaishain" }, new String[] { "pracownik firmy" }, null);
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "会社", new String[] { "kaisha" }, new String[] { "firma" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "社会", new String[] { "shakai" }, new String[] { "społeczeństwo" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "神社", new String[] { "jinja" }, new String[] { "świątynia" }, "shintoistyczna");
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "父", new String[] { "chichi" }, new String[] { "ojciec" }, null);
