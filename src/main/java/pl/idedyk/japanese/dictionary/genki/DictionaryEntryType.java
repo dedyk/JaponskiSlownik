@@ -18,6 +18,8 @@ public enum DictionaryEntryType {
 	
 	WORD_GENKI1_7("Genki 1_7"),
 	
+	WORD_GENKI1_8("Genki 1_8"),
+	
 	WORD_NUMBERS("Liczby"),
 	
 	WORD_HOURS("Godziny"),
