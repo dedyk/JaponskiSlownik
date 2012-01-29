@@ -43,30 +43,63 @@ public class KanjiImageWriter {
 	public static void createKanjiImage(Map<String, String> kanjiCache, String imageDir, PolishJapaneseEntry polishJapaneseEntry) 
 			throws JapannakaException {
 		
-		final String fileFormat = "png";
-		
 		String kanji = polishJapaneseEntry.getJapanese();
 		
-		if (kanjiCache.containsKey(kanji)) {
-			//System.out.println(kanji + " = " + kanjiCache.get(kanji));
-			
+		if (kanjiCache.containsKey(kanji)) {			
 			polishJapaneseEntry.setJapaneseImagePath(kanjiCache.get(kanji));
 			
 			return;
 		}
 		
-		String fileName = Utils.replaceChars(new String(Base64.encodeBase64(kanji.getBytes()))) + "." + fileFormat;
-		
-		fileName = fileName.replaceAll("/", "_");
-		
-		//System.out.println(kanji + " = " + fileName);
-		
+		String fileName = createUniqueFileName(kanji);
+				
 		polishJapaneseEntry.setJapaneseImagePath(fileName);
 		
 		String fileFullPath = imageDir + File.separator + fileName;
-		
 		File file = new File(fileFullPath);
+		
+		createImage(file, kanji);				
+		
+		kanjiCache.put(kanji, fileName);
+	}
+	
+	public static void createNewKanjiImage(Map<String, String> cache, String imageDir, PolishJapaneseEntry polishJapaneseEntry) throws JapannakaException {
+		
+		String japaneseImagePath = "";
+		
+		String kanji = polishJapaneseEntry.getJapanese();
+		
+		for (int idx = 0; idx < kanji.length(); ++idx) {
+			
+			String currentChar = String.valueOf(kanji.charAt(idx));
+			
+			String currentCharInCache = cache.get(currentChar);
+			
+			if (currentCharInCache == null) {
+				String fileName = createUniqueFileName(currentChar);
 				
+				String fileFullPath = imageDir + File.separator + fileName;
+				File file = new File(fileFullPath);
+				
+				createImage(file, currentChar);	
+				
+				cache.put(currentChar, fileName);
+				
+				currentCharInCache = fileName;
+			}
+			
+			japaneseImagePath += currentCharInCache;
+			
+			if (idx != kanji.length() - 1) {
+				japaneseImagePath += ",";
+			}
+		}
+		
+		polishJapaneseEntry.setJapaneseImagePath(japaneseImagePath);
+	}
+	
+	private static void createImage(File imageFile, String word) throws JapannakaException {
+		
 		BufferedImage bufferedImage = new BufferedImage(640, 480, BufferedImage.TYPE_BYTE_GRAY);
 		
 		Graphics2D graphics = (Graphics2D)bufferedImage.getGraphics();
@@ -83,9 +116,9 @@ public class KanjiImageWriter {
 		int stringXPos = 50;
 		int stringYPos = 50;
 		
-		graphics.drawString(kanji, stringXPos, stringYPos);
+		graphics.drawString(word, stringXPos, stringYPos);
 
-		Rectangle2D stringBoundsRectangle = fontMetrics.getStringBounds(kanji, graphics);
+		Rectangle2D stringBoundsRectangle = fontMetrics.getStringBounds(word, graphics);
 		
 		BufferedImage bufferedImageNew = bufferedImage.getSubimage(
 				stringXPos + (int)stringBoundsRectangle.getMinX(),
@@ -94,11 +127,21 @@ public class KanjiImageWriter {
 				(int)stringBoundsRectangle.getHeight());
 		
 		try {
-			ImageIO.write(bufferedImageNew, fileFormat, file);
+			ImageIO.write(bufferedImageNew, getImageFileFormat(), imageFile);
 		} catch (IOException e) {
 			throw new JapannakaException("Can't create image file: " + e.getMessage());
 		}
+	}
+	
+	private static String getImageFileFormat() {
+		return "png";
+	}
+	
+	private static String createUniqueFileName(String word) {
+		String fileName = Utils.replaceChars(new String(Base64.encodeBase64(word.getBytes()))) + "." + getImageFileFormat();
 		
-		kanjiCache.put(kanji, fileName);
+		fileName = fileName.replaceAll("/", "_");
+		
+		return fileName;
 	}
 }

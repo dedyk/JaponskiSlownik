@@ -1277,7 +1277,7 @@ public class GenkiBookWords {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
-			KanjiImageWriter.createKanjiImage(kanjiCache, imageDir, polishJapaneseEntry);
+			KanjiImageWriter.createNewKanjiImage(kanjiCache, imageDir, polishJapaneseEntry);
 		}
 	}
 	
