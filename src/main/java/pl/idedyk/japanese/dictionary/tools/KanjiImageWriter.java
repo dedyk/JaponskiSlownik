@@ -51,7 +51,7 @@ public class KanjiImageWriter {
 			return;
 		}
 		
-		String fileName = createUniqueFileName(kanji);
+		String fileName = createUniqueFileName(kanjiCache, kanji);
 				
 		polishJapaneseEntry.setJapaneseImagePath(fileName);
 		
@@ -76,7 +76,7 @@ public class KanjiImageWriter {
 			String currentCharInCache = cache.get(currentChar);
 			
 			if (currentCharInCache == null) {
-				String fileName = createUniqueFileName(currentChar);
+				String fileName = createUniqueFileName(cache, currentChar);
 				
 				String fileFullPath = imageDir + File.separator + fileName;
 				File file = new File(fileFullPath);
@@ -137,8 +137,25 @@ public class KanjiImageWriter {
 		return "png";
 	}
 	
-	private static String createUniqueFileName(String word) {
-		String fileName = Utils.replaceChars(new String(Base64.encodeBase64(word.getBytes()))) + "." + getImageFileFormat();
+	private static String createUniqueFileName(Map<String, String> cache, String word) {
+		
+		String postFix = "";
+		
+		String fileName = null;
+		
+		while(true) {
+			fileName = Utils.replaceChars(new String(Base64.encodeBase64(word.getBytes()))) + postFix + "." + getImageFileFormat();
+			
+			String cacheKey = "File:" + fileName.toLowerCase();
+			
+			if (cache.get(cacheKey) == null) {
+				cache.put(cacheKey, fileName);
+				
+				break;
+			} else {
+				postFix += "_";
+			}
+		}
 		
 		fileName = fileName.replaceAll("/", "_");
 		
