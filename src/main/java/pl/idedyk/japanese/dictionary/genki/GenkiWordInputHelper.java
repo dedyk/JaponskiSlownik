@@ -49,7 +49,7 @@ public class GenkiWordInputHelper {
 		
 		for (WordEntry wordEntry : wordList) {
 			
-			System.out.println("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, \"" + 
+			System.out.println("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, \"" + 
 					wordEntry.getRomaji() + "\", \"" + 
 					wordEntry.getPolishTranslateString() + "\", " + 
 					(wordEntry.getInfo() == null ? "null" : "\"" + wordEntry.getInfo() + "\"") + ");");
