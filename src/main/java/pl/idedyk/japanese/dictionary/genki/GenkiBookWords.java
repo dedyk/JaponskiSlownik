@@ -952,7 +952,16 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "minna", "wszyscy", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "mou", "już", null);
 		
-		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "hitotsu", "jeden", "liczby, liczenie małych przedmiotów");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "futatsu", "dwa", "liczby, liczenie małych przedmiotów");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "mittsu", "trzy", "liczby, liczenie małych przedmiotów");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "yottsu", "cztery", "liczby, liczenie małych przedmiotów");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "itsutsu", "pięć", "liczby, liczenie małych przedmiotów");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "muttsu", "sześć", "liczby, liczenie małych przedmiotów");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "nanatsu", "siedem", "liczby, liczenie małych przedmiotów");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "yattsu", "osiem", "liczby, liczenie małych przedmiotów");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "kokonotsu", "dziewięć", "liczby, liczenie małych przedmiotów");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "too", "dziesięć", "liczby, liczenie małych przedmiotów");
 		
 		return result;
 	}
@@ -1390,18 +1399,6 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "何", new String[] { "nani" }, new String[] { "co" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "何時", new String[] { "nanji", "która godzina" }, new String[] { "która godzina" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "何人", new String[] { "nan nin" }, new String[] { "ile ludzi" }, null);
-		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "hitotsu", "jeden", "liczby, liczenie małych przedmiotów");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "futatsu", "dwa", "liczby, liczenie małych przedmiotów");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "mittsu", "trzy", "liczby, liczenie małych przedmiotów");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "yottsu", "cztery", "liczby, liczenie małych przedmiotów");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "itsutsu", "pięć", "liczby, liczenie małych przedmiotów");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "muttsu", "sześć", "liczby, liczenie małych przedmiotów");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "nanatsu", "siedem", "liczby, liczenie małych przedmiotów");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "yattsu", "osiem", "liczby, liczenie małych przedmiotów");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "kokonotsu", "dziewięć", "liczby, liczenie małych przedmiotów");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, "too", "dziesięć", "liczby, liczenie małych przedmiotów");
-
 		
 		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "kanji", "czytanie", "tlumaczenie", null);
 		
