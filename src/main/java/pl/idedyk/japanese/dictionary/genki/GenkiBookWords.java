@@ -40,7 +40,7 @@ public class GenkiBookWords {
 		
 		CsvGenerator.generateKanaEntriesCsv(kanjiOutputDir + "/hiragana.properties", hiraganaEntries);
 		
-		//generateKanjiImages(polishJapaneseKanjiEntries, kanjiCache, kanjiOutputDir);
+		generateKanjiImages(polishJapaneseKanjiEntries, kanjiCache, kanjiOutputDir);
 		
 		CsvGenerator.generateCsv(kanjiOutputDir + "/kanji_dictionary.properties", polishJapaneseKanjiEntries);
 		
