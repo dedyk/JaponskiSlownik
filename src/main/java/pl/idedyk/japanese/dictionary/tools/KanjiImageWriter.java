@@ -111,7 +111,7 @@ public class KanjiImageWriter {
 		
 		Graphics2D graphics = (Graphics2D)bufferedImage.getGraphics();
 		
-		Font font = new Font("Arial Unicode MS", Font.PLAIN, 30);
+		Font font = new Font("Monispace", Font.PLAIN, 20);
 		
 		graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
 		        RenderingHints.VALUE_ANTIALIAS_ON);
