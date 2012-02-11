@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishTranslate;
 import pl.idedyk.japanese.dictionary.japannaka.utils.Utils;
@@ -69,6 +70,25 @@ public class CsvGenerator {
 			sb.append("\n");
 		}	
 
+		System.out.println(outputFile);
+
+		PrintWriter pw = new PrintWriter(outputFile);
+
+		pw.write(sb.toString());
+
+		pw.close();
+	}
+
+	public static void generateKanaEntriesCsv(String outputFile, List<KanaEntry> kanaEntries) throws IOException {
+		
+		StringBuffer sb = new StringBuffer();
+		
+		for (KanaEntry kanaEntry : kanaEntries) {
+			sb.append(kanaEntry.getKana()).append(";");
+			sb.append(kanaEntry.getKanaJapanese()).append(";");
+			sb.append(kanaEntry.getImage()).append("\n");
+		}
+		
 		System.out.println(outputFile);
 
 		PrintWriter pw = new PrintWriter(outputFile);

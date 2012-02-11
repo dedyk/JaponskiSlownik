@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 
+import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishTranslate;
 import pl.idedyk.japanese.dictionary.japannaka.exception.JapannakaException;
@@ -30,11 +31,162 @@ public class GenkiBookWords {
 		String kanjiOutputDir = "kanji_output";
 		
 		generateKanjiWords(polishJapaneseKanjiEntries);
-		generateKanjiImages(polishJapaneseKanjiEntries, kanjiOutputDir);
+		
+		Map<String, String> kanjiCache = new HashMap<String, String>();
+		
+		List<KanaEntry> hiraganaEntries = new ArrayList<KanaEntry>();
+		
+		generateHiraganaImages(hiraganaEntries, kanjiCache, kanjiOutputDir);		
+		
+		CsvGenerator.generateKanaEntriesCsv(kanjiOutputDir + "/hiragana.properties", hiraganaEntries);
+		
+		//generateKanjiImages(polishJapaneseKanjiEntries, kanjiCache, kanjiOutputDir);
 		
 		CsvGenerator.generateCsv(kanjiOutputDir + "/kanji_dictionary.properties", polishJapaneseKanjiEntries);
 		
 		System.out.println("Done");
+	}
+
+	private static void generateHiraganaImages(List<KanaEntry> hiraganaEntries, Map<String, String> kanjiCache, String kanjiOutputDir) throws JapannakaException {
+		
+		hiraganaEntries.add(new KanaEntry("あ", "a"));
+		hiraganaEntries.add(new KanaEntry("い", "i"));
+		hiraganaEntries.add(new KanaEntry("う", "u"));
+		hiraganaEntries.add(new KanaEntry("え", "e"));
+		hiraganaEntries.add(new KanaEntry("お", "o"));
+		
+		hiraganaEntries.add(new KanaEntry("か", "ka"));
+		hiraganaEntries.add(new KanaEntry("き", "ki"));
+		hiraganaEntries.add(new KanaEntry("く", "ku"));
+		hiraganaEntries.add(new KanaEntry("け", "ke"));
+		hiraganaEntries.add(new KanaEntry("こ", "ko"));
+		
+		hiraganaEntries.add(new KanaEntry("さ", "sa"));
+		hiraganaEntries.add(new KanaEntry("し", "shi"));
+		hiraganaEntries.add(new KanaEntry("す", "su"));
+		hiraganaEntries.add(new KanaEntry("せ", "se"));
+		hiraganaEntries.add(new KanaEntry("そ", "so"));
+		
+		hiraganaEntries.add(new KanaEntry("た", "ta"));
+		hiraganaEntries.add(new KanaEntry("ち", "chi"));
+		hiraganaEntries.add(new KanaEntry("つ", "tsu"));
+		hiraganaEntries.add(new KanaEntry("て", "te"));
+		hiraganaEntries.add(new KanaEntry("と", "to"));
+		
+		hiraganaEntries.add(new KanaEntry("な", "na"));
+		hiraganaEntries.add(new KanaEntry("に", "ni"));
+		hiraganaEntries.add(new KanaEntry("ぬ", "nu"));
+		hiraganaEntries.add(new KanaEntry("ね", "ne"));
+		hiraganaEntries.add(new KanaEntry("の", "no"));
+		
+		hiraganaEntries.add(new KanaEntry("は", "ha"));
+		hiraganaEntries.add(new KanaEntry("ひ", "hi"));
+		hiraganaEntries.add(new KanaEntry("ふ", "fu"));
+		hiraganaEntries.add(new KanaEntry("へ", "he"));
+		hiraganaEntries.add(new KanaEntry("ほ", "ho"));
+		
+		hiraganaEntries.add(new KanaEntry("ま", "ma"));
+		hiraganaEntries.add(new KanaEntry("み", "mi"));
+		hiraganaEntries.add(new KanaEntry("む", "mu"));
+		hiraganaEntries.add(new KanaEntry("め", "me"));
+		hiraganaEntries.add(new KanaEntry("も", "mo"));
+		
+		hiraganaEntries.add(new KanaEntry("や", "ya"));
+		hiraganaEntries.add(new KanaEntry("ゆ", "yu"));
+		hiraganaEntries.add(new KanaEntry("よ", "yo"));
+		
+		hiraganaEntries.add(new KanaEntry("ら", "ra"));
+		hiraganaEntries.add(new KanaEntry("り", "ri"));
+		hiraganaEntries.add(new KanaEntry("る", "ru"));
+		hiraganaEntries.add(new KanaEntry("れ", "re"));
+		hiraganaEntries.add(new KanaEntry("ろ", "ro"));
+		
+		hiraganaEntries.add(new KanaEntry("わ", "wa"));
+		hiraganaEntries.add(new KanaEntry("を", "wo"));
+		
+		hiraganaEntries.add(new KanaEntry("ん", "n"));
+		
+		hiraganaEntries.add(new KanaEntry("が", "ga"));
+		hiraganaEntries.add(new KanaEntry("ぎ", "gi"));
+		hiraganaEntries.add(new KanaEntry("ぐ", "gu"));
+		hiraganaEntries.add(new KanaEntry("げ", "ge"));
+		hiraganaEntries.add(new KanaEntry("ご", "go"));
+		
+		hiraganaEntries.add(new KanaEntry("ざ", "za"));
+		hiraganaEntries.add(new KanaEntry("じ", "ji"));
+		hiraganaEntries.add(new KanaEntry("ず", "zu"));
+		hiraganaEntries.add(new KanaEntry("ぜ", "ze"));
+		hiraganaEntries.add(new KanaEntry("ぞ", "zo"));
+		
+		hiraganaEntries.add(new KanaEntry("だ", "da"));
+		hiraganaEntries.add(new KanaEntry("ぢ", "di"));
+		hiraganaEntries.add(new KanaEntry("づ", "du"));
+		hiraganaEntries.add(new KanaEntry("で", "de"));
+		hiraganaEntries.add(new KanaEntry("ど", "do"));
+		
+		hiraganaEntries.add(new KanaEntry("ば", "ba"));
+		hiraganaEntries.add(new KanaEntry("び", "bi"));
+		hiraganaEntries.add(new KanaEntry("ぶ", "bu"));
+		hiraganaEntries.add(new KanaEntry("べ", "be"));
+		hiraganaEntries.add(new KanaEntry("ぼ", "bo"));
+		
+		hiraganaEntries.add(new KanaEntry("ぱ", "pa"));
+		hiraganaEntries.add(new KanaEntry("ぴ", "pi"));
+		hiraganaEntries.add(new KanaEntry("ぷ", "pu"));
+		hiraganaEntries.add(new KanaEntry("ぺ", "pe"));
+		hiraganaEntries.add(new KanaEntry("ぽ", "po"));
+		
+		hiraganaEntries.add(new KanaEntry("きゃ", "kya"));
+		hiraganaEntries.add(new KanaEntry("きゅ", "kyu"));
+		hiraganaEntries.add(new KanaEntry("きょ", "kyo"));
+		
+		hiraganaEntries.add(new KanaEntry("しゃ", "sha"));
+		hiraganaEntries.add(new KanaEntry("しゅ", "shu"));		
+		hiraganaEntries.add(new KanaEntry("しょ", "sho"));
+		
+		hiraganaEntries.add(new KanaEntry("ちゃ", "cha"));
+		hiraganaEntries.add(new KanaEntry("ちゅ", "chu"));
+		hiraganaEntries.add(new KanaEntry("ちょ", "cho"));
+		
+		hiraganaEntries.add(new KanaEntry("にゃ", "nya"));
+		hiraganaEntries.add(new KanaEntry("にゅ", "nyu"));
+		hiraganaEntries.add(new KanaEntry("にょ", "nyo"));
+		
+		hiraganaEntries.add(new KanaEntry("ひゃ", "hya"));
+		hiraganaEntries.add(new KanaEntry("ひゅ", "hyu"));
+		hiraganaEntries.add(new KanaEntry("ひょ", "hyo"));
+		
+		hiraganaEntries.add(new KanaEntry("みゃ", "mya"));
+		hiraganaEntries.add(new KanaEntry("みゅ", "myu"));
+		hiraganaEntries.add(new KanaEntry("みょ", "myo"));
+		
+		hiraganaEntries.add(new KanaEntry("りゃ", "rya"));
+		hiraganaEntries.add(new KanaEntry("りゅ", "ryu"));
+		hiraganaEntries.add(new KanaEntry("りょ", "ryo"));
+		
+		hiraganaEntries.add(new KanaEntry("ぎゃ", "gya"));
+		hiraganaEntries.add(new KanaEntry("ぎゅ", "gyu"));
+		hiraganaEntries.add(new KanaEntry("ぎょ", "gyo"));
+		
+		hiraganaEntries.add(new KanaEntry("じゃ", "ja"));		
+		hiraganaEntries.add(new KanaEntry("じゅ", "ju"));
+		hiraganaEntries.add(new KanaEntry("じょ", "jo"));
+		
+		hiraganaEntries.add(new KanaEntry("びゃ", "bya"));
+		hiraganaEntries.add(new KanaEntry("びゅ", "byu"));
+		hiraganaEntries.add(new KanaEntry("びょ", "byo"));
+		
+		hiraganaEntries.add(new KanaEntry("ぴゃ", "pya"));
+		hiraganaEntries.add(new KanaEntry("ぴゅ", "pyu"));
+		hiraganaEntries.add(new KanaEntry("ぴょ", "pyo"));	
+		
+		hiraganaEntries.add(new KanaEntry("っ", "ttsu"));
+		
+		for (KanaEntry kanaEntry : hiraganaEntries) {
+			String image = KanjiImageWriter.createNewKanjiImage(kanjiCache, kanjiOutputDir, kanaEntry.getKanaJapanese());
+			
+			kanaEntry.setImage(image);
+		}
 	}
 
 	private static List<PolishJapaneseEntry> generateWords(List<PolishJapaneseEntry> polishJapaneseEntries) {
@@ -1405,9 +1557,7 @@ public class GenkiBookWords {
 		return result;
 	}
 	
-	private static void generateKanjiImages(List<PolishJapaneseEntry> polishJapaneseEntries, String imageDir) throws JapannakaException {
-
-		Map<String, String> kanjiCache = new HashMap<String, String>();
+	private static void generateKanjiImages(List<PolishJapaneseEntry> polishJapaneseEntries, Map<String, String> kanjiCache, String imageDir) throws JapannakaException {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 

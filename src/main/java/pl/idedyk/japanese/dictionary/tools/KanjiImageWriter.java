@@ -73,20 +73,7 @@ public class KanjiImageWriter {
 			
 			String currentChar = String.valueOf(kanji.charAt(idx));
 			
-			String currentCharInCache = cache.get(currentChar);
-			
-			if (currentCharInCache == null) {
-				String fileName = createUniqueFileName(cache, currentChar);
-				
-				String fileFullPath = imageDir + File.separator + fileName;
-				File file = new File(fileFullPath);
-				
-				createImage(file, currentChar);	
-				
-				cache.put(currentChar, fileName);
-				
-				currentCharInCache = fileName;
-			}
+			String currentCharInCache = createNewKanjiImage(cache, imageDir, currentChar);
 			
 			japaneseImagePath += currentCharInCache;
 			
@@ -96,6 +83,26 @@ public class KanjiImageWriter {
 		}
 		
 		polishJapaneseEntry.setJapaneseImagePath(japaneseImagePath);
+	}
+	
+	public static String createNewKanjiImage(Map<String, String> cache, String imageDir, String word) throws JapannakaException {
+		
+		String currentWordFileNameInCache = cache.get(word);
+		
+		if (currentWordFileNameInCache == null) {
+			String fileName = createUniqueFileName(cache, word);
+			
+			String fileFullPath = imageDir + File.separator + fileName;
+			File file = new File(fileFullPath);
+			
+			createImage(file, word);	
+			
+			cache.put(word, fileName);
+			
+			currentWordFileNameInCache = fileName;
+		}
+
+		return currentWordFileNameInCache;
 	}
 	
 	private static void createImage(File imageFile, String word) throws JapannakaException {
