@@ -1502,7 +1502,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "輸入", new String[] { "yunyuu" }, new String[] { "import" }, null);
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "会社員", new String[] { "kaishain" }, new String[] { "pracownik biurowy" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "店員", new String[] { "tenin" }, new String[] { "sprzedawca" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "店員", new String[] { "ten'in" }, new String[] { "sprzedawca" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "新しい", new String[] { "atarashii" }, new String[] { "nowy" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "新聞", new String[] { "shimbun" }, new String[] { "gazeta" }, null);
@@ -1513,7 +1513,7 @@ public class GenkiBookWords {
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "作る", new String[] { "tsukuru" }, new String[] { "tworzyć" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "作文", new String[] { "sakubun" }, new String[] { "wypracowanie" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "作品", new String[] { "sakuhin" }, new String[] { "kawałem artystyczny" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "作品", new String[] { "sakuhin" }, new String[] { "utwór artystyczny" }, null);
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "仕事", new String[] { "shigoto" }, new String[] { "praca" }, null);
 
