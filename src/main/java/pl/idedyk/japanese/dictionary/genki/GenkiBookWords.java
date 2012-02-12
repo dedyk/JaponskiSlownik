@@ -16,32 +16,29 @@ import pl.idedyk.japanese.dictionary.tools.KanjiImageWriter;
 public class GenkiBookWords {
 
 	public static void main(String[] args) throws IOException, JapannakaException {
+
+		String kanjiOutputDir = "kanji_output";
+		Map<String, String> charsCache = new HashMap<String, String>();
+		
+		// hiragana
+		List<KanaEntry> hiraganaEntries = new ArrayList<KanaEntry>();
+		generateHiraganaImages(hiraganaEntries, charsCache, kanjiOutputDir);
 		
 		// Słowniczek
 		List<PolishJapaneseEntry> polishJapaneseEntries = new ArrayList<PolishJapaneseEntry>();
 		
+		// dictionary
 		generateWords(polishJapaneseEntries);
+		//validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries);  // odkomentować po wprowadzeniu katakany	
+		
+		// kanji dictionary
+		List<PolishJapaneseEntry> polishJapaneseKanjiEntries = new ArrayList<PolishJapaneseEntry>();
+		generateKanjiWords(polishJapaneseKanjiEntries);
+		generateKanjiImages(polishJapaneseKanjiEntries, charsCache, kanjiOutputDir);
+		validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries);
 		
 		CsvGenerator.generateCsv("output/japanese_polish_dictionary.properties", polishJapaneseEntries);
-		
-		polishJapaneseEntries = null;
-		
-		// Słowniczek kanji
-		List<PolishJapaneseEntry> polishJapaneseKanjiEntries = new ArrayList<PolishJapaneseEntry>();
-		String kanjiOutputDir = "kanji_output";
-		
-		generateKanjiWords(polishJapaneseKanjiEntries);
-		
-		Map<String, String> kanjiCache = new HashMap<String, String>();
-		
-		List<KanaEntry> hiraganaEntries = new ArrayList<KanaEntry>();
-		
-		generateHiraganaImages(hiraganaEntries, kanjiCache, kanjiOutputDir);		
-		
 		CsvGenerator.generateKanaEntriesCsv(kanjiOutputDir + "/hiragana.properties", hiraganaEntries);
-		
-		generateKanjiImages(polishJapaneseKanjiEntries, kanjiCache, kanjiOutputDir);
-		
 		CsvGenerator.generateCsv(kanjiOutputDir + "/kanji_dictionary.properties", polishJapaneseKanjiEntries);
 		
 		System.out.println("Done");
@@ -362,7 +359,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "jiinzu", "jeansy", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "jisho", "słownik", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "jitensha", "rower", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "shimbun", "gazeta", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "shinbun", "gazeta", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "teepu", "kaseta", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "tokei", "zegarek", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, "toreenaa", "bluza", null);
@@ -465,7 +462,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "itsu", "kiedy", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "kyou", "dziś", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "goro", "około", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "komban", "wieczorem", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "konban", "wieczorem", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "shuumatsu", "weekend", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "doyoubi", "sobota", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "nichiyoubi", "niedziela", null);
@@ -720,7 +717,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "kitanai", "brudny", null);
 		
 		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "madoguchi", "okienko pocztowe", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "kodzutsumi", "paczka", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "kodutsumi", "paczka", null);
 		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "koukuubin", "poczta lotnicza", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "hoken", "ubezpieczenie", null);
 		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "kakitome", "list polecony", null);
@@ -930,7 +927,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "kazoku", "rodzina", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "kuni", "kraj", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "kuruma", "samochód", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "kombini", "kombini", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "konbini", "kombini", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "shukudou", "stołówka", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "Tshetsu", "T-shirt", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, "megane", "okulary", null);
@@ -1132,7 +1129,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "六", new String[] { "roku", "ro tsu", "mu tsu" }, new String[] { "sześć" }, "czytanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "七", new String[] { "shichi", "nana" }, new String[] { "siedem" }, "czytanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "八", new String[] { "hachi",  "ha tsu", "ya tsu" }, new String[] { "osiem" }, "czytanie");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "九", new String[] { "kjuu", "ku", "kokono"}, new String[] { "dziewięć" }, "czytanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "九", new String[] { "kyuu", "ku", "kokono"}, new String[] { "dziewięć" }, "czytanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "十", new String[] { "juu", "juu tsu", "too" }, new String[] { "dziesięć" }, "czytanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "百", new String[] { "hyaku", "byaku", "pyaku" }, new String[] { "sto" }, "czytanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "千", new String[] { "sen", "zen" }, new String[] { "tysiąc" }, "czytanie");
@@ -1252,7 +1249,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "八つ", new String[] { "yattsu" }, new String[] { "8" }, "liczenie");
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "九時", new String[] { "kuji" }, new String[] { "9" }, "godzina");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "九歳", new String[] { "kjuusai" }, new String[] { "9" }, "wiek");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "九歳", new String[] { "kyuusai" }, new String[] { "9" }, "wiek");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "九つ", new String[] { "kokonotsu" }, new String[] { "9" }, "liczenie");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, "十時", new String[] { "juuji" }, new String[] { "10" }, "godzina");
@@ -1351,11 +1348,11 @@ public class GenkiBookWords {
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "今", new String[] { "ima" }, new String[] { "teraz" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "今日", new String[] { "kyou" }, new String[] { "dzisiaj" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "今晩", new String[] { "komban" }, new String[] { "dziś wieczorem" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "今晩", new String[] { "konban" }, new String[] { "dziś wieczorem" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "田中さん", new String[] { "Tanaka san" }, new String[] { "Pan Tanaka" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "山田さん", new String[] { "Yamada san" }, new String[] { "Pan Yamada" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "田んぼ", new String[] { "tambo" }, new String[] { "pole ryżowe" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "田んぼ", new String[] { "tanbo" }, new String[] { "pole ryżowe" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "女の人", new String[] { "onna no hito" }, new String[] { "kobieta" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, "女性", new String[] { "josei" }, new String[] { "kobieta" }, "oficjalnie");
@@ -1505,11 +1502,11 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "店員", new String[] { "ten'in" }, new String[] { "sprzedawca" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "新しい", new String[] { "atarashii" }, new String[] { "nowy" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "新聞", new String[] { "shimbun" }, new String[] { "gazeta" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "新聞", new String[] { "shinbun" }, new String[] { "gazeta" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "新幹線", new String[] { "shinkansen" }, new String[] { "shinkansen" }, null);
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "聞く", new String[] { "kiku" }, new String[] { "słuchać" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "新聞", new String[] { "shimbun" }, new String[] { "gazeta" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "新聞", new String[] { "shinbun" }, new String[] { "gazeta" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "作る", new String[] { "tsukuru" }, new String[] { "tworzyć" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "作文", new String[] { "sakubun" }, new String[] { "wypracowanie" }, null);
@@ -1549,7 +1546,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "次女", new String[] { "jijo" }, new String[] { "następna córka" }, null);
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "何", new String[] { "nani" }, new String[] { "co" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "何時", new String[] { "nanji", "która godzina" }, new String[] { "która godzina" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "何時", new String[] { "nanji" }, new String[] { "która godzina" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, "何人", new String[] { "nan nin" }, new String[] { "ile ludzi" }, null);
 		
 		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, "kanji", "czytanie", "tlumaczenie", null);
@@ -1632,5 +1629,351 @@ public class GenkiBookWords {
 		}
 		
 		return polishTranslate;
+	}
+	
+	private static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, List<KanaEntry> hiraganaEntries) throws JapannakaException {
+		
+		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
+		
+		for (KanaEntry kanaEntry : hiraganaEntries) {
+			hiraganaCache.put(kanaEntry.getKana(), kanaEntry);
+		}
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+			List<String> romajiList = polishJapaneseEntry.getRomajiList();
+			
+			for (String currentRomaji : romajiList) {
+				validateJapaneseWord(hiraganaCache, currentRomaji);
+			}
+		}
+	}
+	
+	private static void validateJapaneseWord(Map<String, KanaEntry> hiraganaCache, String word) throws JapannakaException {
+		String remaingRestChars = null;
+		
+		String currentRestChars = "";
+		
+		for (int idx = 0; idx < word.length(); ++idx) {
+			String currentChar = String.valueOf(word.charAt(idx));
+			
+			if (currentChar.equals(" ") == true) {
+				continue;
+			}
+			
+			currentRestChars += currentChar.toLowerCase();
+			
+			if (currentRestChars.length() == 2 && currentRestChars.charAt(0) == currentRestChars.charAt(1) &&
+					currentRestChars.charAt(0) != 'n') {
+				
+				KanaEntry kanaEntry = hiraganaCache.get("ttsu");
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "" + currentRestChars.charAt(1);
+				
+				continue;				
+			}
+			
+			if (currentRestChars.equals("a") == true ||
+					currentRestChars.equals("i") == true ||
+					currentRestChars.equals("u") == true ||
+					currentRestChars.equals("e") == true ||
+					currentRestChars.equals("o") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";
+			} else if (currentRestChars.equals("ka") == true ||
+					currentRestChars.equals("ki") == true ||
+					currentRestChars.equals("ku") == true ||
+					currentRestChars.equals("ke") == true ||
+					currentRestChars.equals("ko") == true ||
+					currentRestChars.equals("kya") == true ||
+					currentRestChars.equals("kyu") == true ||
+					currentRestChars.equals("kyo") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("sa") == true ||
+					currentRestChars.equals("shi") == true ||
+					currentRestChars.equals("sha") == true ||
+					currentRestChars.equals("shu") == true ||
+					currentRestChars.equals("sho") == true ||
+					currentRestChars.equals("su") == true ||
+					currentRestChars.equals("se") == true ||
+					currentRestChars.equals("so") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("ta") == true ||
+					currentRestChars.equals("tsu") == true ||
+					currentRestChars.equals("te") == true ||
+					currentRestChars.equals("to") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("chi") == true ||
+					currentRestChars.equals("cha") == true ||
+					currentRestChars.equals("chu") == true ||
+					currentRestChars.equals("cho") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.startsWith("n") == true || currentRestChars.equals("n'") == true) {
+				
+				boolean nProcessed = false;
+				
+				if (currentRestChars.equals("n'") == true) {
+					KanaEntry kanaEntry = hiraganaCache.get("n");
+					
+					if (kanaEntry == null) {
+						throw new JapannakaException("Can't find kanaEntry!");
+					}
+					
+					currentRestChars = "";
+					
+					nProcessed = true;					
+				}
+				
+				if (nProcessed == false && (currentRestChars.equals("na") == true ||
+						currentRestChars.equals("ni") == true ||
+						currentRestChars.equals("nu") == true ||
+						currentRestChars.equals("ne") == true ||
+						currentRestChars.equals("no") == true ||
+						currentRestChars.equals("nya") == true ||
+						currentRestChars.equals("nyu") == true ||
+						currentRestChars.equals("nyo") == true)) {
+
+					KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+					
+					if (kanaEntry == null) {
+						throw new JapannakaException("Can't find kanaEntry!");
+					}
+					
+					currentRestChars = "";
+					
+					nProcessed = true;
+				} else if (nProcessed == false && currentRestChars.length() > 1) {
+					
+					if (currentRestChars.startsWith("ny") == false) {
+						KanaEntry kanaEntry = hiraganaCache.get("n");
+						
+						if (kanaEntry == null) {
+							throw new JapannakaException("Can't find kanaEntry!");
+						}
+						
+						currentRestChars = currentRestChars.substring(1);
+						
+						nProcessed = true;
+					}						
+				}
+				
+				if (nProcessed == false && currentRestChars.length() == 1 && idx == word.length() - 1) {
+					KanaEntry kanaEntry = hiraganaCache.get("n");
+					
+					if (kanaEntry == null) {
+						throw new JapannakaException("Can't find kanaEntry!");
+					}
+					
+					currentRestChars = "";
+					
+					nProcessed = true;
+				}
+			} else if (currentRestChars.equals("ha") == true ||
+					currentRestChars.equals("hi") == true ||
+					currentRestChars.equals("he") == true ||
+					currentRestChars.equals("ho") == true ||
+					currentRestChars.equals("hya") == true ||
+					currentRestChars.equals("hyu") == true ||
+					currentRestChars.equals("hyo") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("fu") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("ma") == true ||
+					currentRestChars.equals("mi") == true ||
+					currentRestChars.equals("mu") == true ||
+					currentRestChars.equals("me") == true ||
+					currentRestChars.equals("mo") == true ||
+					currentRestChars.equals("mya") == true ||
+					currentRestChars.equals("myu") == true ||
+					currentRestChars.equals("myo") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("ya") == true ||
+					currentRestChars.equals("yu") == true ||
+					currentRestChars.equals("yo") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("ra") == true ||
+					currentRestChars.equals("ri") == true ||
+					currentRestChars.equals("ru") == true ||
+					currentRestChars.equals("re") == true ||
+					currentRestChars.equals("ro") == true ||
+					currentRestChars.equals("rya") == true ||
+					currentRestChars.equals("ryu") == true ||
+					currentRestChars.equals("ryo") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("wa") == true ||
+					currentRestChars.equals("wo") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("ga") == true ||
+					currentRestChars.equals("gi") == true ||
+					currentRestChars.equals("gu") == true ||
+					currentRestChars.equals("ge") == true ||
+					currentRestChars.equals("go") == true ||
+					currentRestChars.equals("gya") == true ||
+					currentRestChars.equals("gyu") == true ||
+					currentRestChars.equals("gyo") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("za") == true ||
+					currentRestChars.equals("zu") == true ||
+					currentRestChars.equals("ze") == true ||
+					currentRestChars.equals("zo") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("ji") == true ||
+					currentRestChars.equals("ja") == true ||
+					currentRestChars.equals("ju") == true ||
+					currentRestChars.equals("jo") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("da") == true ||
+					currentRestChars.equals("di") == true ||
+					currentRestChars.equals("du") == true ||
+					currentRestChars.equals("de") == true ||
+					currentRestChars.equals("do") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("ba") == true ||
+					currentRestChars.equals("bi") == true ||
+					currentRestChars.equals("bu") == true ||
+					currentRestChars.equals("be") == true ||
+					currentRestChars.equals("bo") == true ||
+					currentRestChars.equals("bya") == true ||
+					currentRestChars.equals("byu") == true ||
+					currentRestChars.equals("byo") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("pa") == true ||
+					currentRestChars.equals("pi") == true ||
+					currentRestChars.equals("pu") == true ||
+					currentRestChars.equals("pe") == true ||
+					currentRestChars.equals("po") == true ||
+					currentRestChars.equals("pya") == true ||
+					currentRestChars.equals("pyu") == true ||
+					currentRestChars.equals("pyo") == true) {
+				
+				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapannakaException("Can't find kanaEntry!");
+				}
+				
+				currentRestChars = "";					
+			}
+			
+			remaingRestChars = currentRestChars;
+		}
+		
+		if (remaingRestChars.equals("") == false) {
+			throw new JapannakaException("Validate error for word: " + word + ", remaing: " + remaingRestChars);
+		}		
 	}
 }
