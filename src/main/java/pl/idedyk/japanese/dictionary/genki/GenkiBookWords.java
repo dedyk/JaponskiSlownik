@@ -34,7 +34,7 @@ public class GenkiBookWords {
 		
 		// dictionary
 		generateWords(polishJapaneseEntries);
-		validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries);  // odkomentować po wprowadzeniu katakany	
+		validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries);	
 		
 		// kanji dictionary
 		List<PolishJapaneseEntry> polishJapaneseKanjiEntries = new ArrayList<PolishJapaneseEntry>();
