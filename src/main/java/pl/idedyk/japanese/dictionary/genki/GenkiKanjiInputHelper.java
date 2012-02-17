@@ -70,7 +70,7 @@ public class GenkiKanjiInputHelper {
 		
 		for (KanjiEntry kanjiEntry : kanjiList) {
 			
-			System.out.print("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, \"" + 
+			System.out.print("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, \"" + 
 					kanjiEntry.getKanji() + "\", new String[] { ");
 			
 			for (int romIdx = 0; romIdx < kanjiEntry.getRomajiList().size(); ++romIdx) {
