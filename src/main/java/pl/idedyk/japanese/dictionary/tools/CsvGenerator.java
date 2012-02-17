@@ -7,6 +7,7 @@ import java.util.List;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishTranslate;
+import pl.idedyk.japanese.dictionary.dto.RomajiEntry;
 import pl.idedyk.japanese.dictionary.japannaka.utils.Utils;
 
 public class CsvGenerator {
@@ -27,10 +28,12 @@ public class CsvGenerator {
 				lastGroupName = polishJapaneseEntryGroupName;
 			}
 
-			List<String> romajiList = polishJapaneseEntry.getRomajiList();
+			List<RomajiEntry> romajiList = polishJapaneseEntry.getRomajiList();
 
 			for (int romIdx = 0; romIdx < romajiList.size(); ++romIdx) {
-				sb.append(Utils.replaceChars(romajiList.get(romIdx)));
+				RomajiEntry currentRomajiEntry = romajiList.get(romIdx);
+								
+				sb.append(currentRomajiEntry.getWordType().getPrintable() + ":" + Utils.replaceChars(currentRomajiEntry.getRomaji()));
 
 				if (romIdx != romajiList.size() - 1) {
 					sb.append(",");

@@ -16,6 +16,8 @@ import net.htmlparser.jericho.Source;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishTranslate;
+import pl.idedyk.japanese.dictionary.dto.RomajiEntry;
+import pl.idedyk.japanese.dictionary.genki.WordType;
 import pl.idedyk.japanese.dictionary.japannaka.exception.JapannakaException;
 
 public class JapannakaHtmlReader {
@@ -84,8 +86,14 @@ public class JapannakaHtmlReader {
 							
 							polishJapaneseEntry.setId(id);
 							
-							List<String> romajiList = new ArrayList<String>();
-							romajiList.add(romaji);
+							List<RomajiEntry> romajiList = new ArrayList<RomajiEntry>();
+							
+							RomajiEntry romajiEntry = new RomajiEntry();
+							
+							romajiEntry.setRomaji(romaji);
+							romajiEntry.setWordType(WordType.HIRAGANA);
+							
+							romajiList.add(romajiEntry);
 							
 							polishJapaneseEntry.setRomajiList(romajiList);
 							polishJapaneseEntry.setJapanese(japanese);

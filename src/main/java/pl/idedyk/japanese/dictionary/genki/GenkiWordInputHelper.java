@@ -20,6 +20,14 @@ public class GenkiWordInputHelper {
 				break;
 			}
 			
+			System.out.print("Hiragana / Katakana: ");
+			
+			String hiraganaKatakana = stdinReadline();
+			
+			if (hiraganaKatakana == null || hiraganaKatakana.equals("") == true || (hiraganaKatakana.equals("h") == false && hiraganaKatakana.equals("k") == false)) {
+				break;
+			}			
+			
 			System.out.print("Polish translate: ");
 			
 			String polishTranslateString = stdinReadline();
@@ -39,6 +47,7 @@ public class GenkiWordInputHelper {
 			WordEntry wordEntry = new WordEntry();
 			
 			wordEntry.setRomaji(romaji);
+			wordEntry.setHiraganaKatakana(hiraganaKatakana);
 			wordEntry.setPolishTranslateString(polishTranslateString);
 			wordEntry.setInfo(info);
 			
@@ -49,7 +58,9 @@ public class GenkiWordInputHelper {
 		
 		for (WordEntry wordEntry : wordList) {
 			
-			System.out.println("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, \"" + 
+			System.out.println("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, " + 
+					(wordEntry.getHiraganaKatakana().equals("h") == true ? "WordType.HIRAGANA" : "WordType.KATAKANA") + ", " +
+					"\"" + 
 					wordEntry.getRomaji() + "\", \"" + 
 					wordEntry.getPolishTranslateString() + "\", " + 
 					(wordEntry.getInfo() == null ? "null" : "\"" + wordEntry.getInfo() + "\"") + ");");
@@ -67,6 +78,8 @@ public class GenkiWordInputHelper {
 	private static class WordEntry {
 				
 		private String romaji;
+		
+		private String hiraganaKatakana;
 		
 		private String polishTranslate;
 		
@@ -94,6 +107,14 @@ public class GenkiWordInputHelper {
 
 		public void setInfo(String info) {
 			this.info = info;
+		}
+
+		public String getHiraganaKatakana() {
+			return hiraganaKatakana;
+		}
+
+		public void setHiraganaKatakana(String hiraganaKatakana) {
+			this.hiraganaKatakana = hiraganaKatakana;
 		}
 	}
 }

@@ -8,7 +8,7 @@ public class PolishJapaneseEntry {
 	
 	private String groupName;
 	
-	private List<String> romajiList;
+	private List<RomajiEntry> romajiList;
 	
 	private String japanese;
 	
@@ -16,7 +16,7 @@ public class PolishJapaneseEntry {
 	
 	private List<PolishTranslate> polishTranslates;
 
-	public List<String> getRomajiList() {
+	public List<RomajiEntry> getRomajiList() {
 		return romajiList;
 	}
 
@@ -28,7 +28,7 @@ public class PolishJapaneseEntry {
 		return polishTranslates;
 	}
 
-	public void setRomajiList(List<String> romajiList) {
+	public void setRomajiList(List<RomajiEntry> romajiList) {
 		this.romajiList = romajiList;
 	}
 
