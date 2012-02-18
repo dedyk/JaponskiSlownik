@@ -545,10 +545,10 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "takai", "wysoki", "wzrost");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "irasshaimase", "Witamy", "przy wchodzeniu do sklepu");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "o onegai shimasu", "... proszę", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "o kudasai", "Proszę dać mi ...", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "wo onegai shimasu", "... proszę", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "wo kudasai", "Proszę dać mi ...", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "jaa", "wtedy", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "o douzo", "proszę", "przy podawaniu komuś czegoś");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "wo douzo", "proszę", "przy podawaniu komuś czegoś");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "doumo", "dziękuję", "przy otrzymywaniu czegoś");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "desu", "jest", "oficjalnie");
@@ -636,19 +636,19 @@ public class GenkiBookWords {
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, new String[] { "ni iku", "e iku" }, "iść", "cel, u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, new String[] { "ni kaeru", "e kaeru" }, "wracać", "cel, u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "o kiku", "słuchać", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "o nomu", "pić", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, new String[] { "o hanasu", "de hanasu" }, "mówić", "język, u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "o yomu", "czytać", "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "wo kiku", "słuchać", "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "wo nomu", "pić", "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, new String[] { "wo hanasu", "de hanasu" }, "mówić", "język, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "wo yomu", "czytać", "u-czasownik");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "okiru", "wstawać", "ru-czasowniki");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "o taberu", "jeść", "ru-czasowniki");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "wo taberu", "jeść", "ru-czasowniki");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "neru", "spać", "ru-czasowniki");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "o miru", "patrzeć", "ru-czasowniki");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "wo miru", "patrzeć", "ru-czasowniki");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, new String[] { "ni kuru", "e kuru" }, "przybyć", "cel, czasowniki nieregularne");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "o suru", "robić", "czasowniki nieregularne");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "o benkyou suru", "studiować", "czasowniki nieregularne");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "wo suru", "robić", "czasowniki nieregularne");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "wo benkyou suru", "studiować", "czasowniki nieregularne");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "ii", "dobry", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_3, WordType.HIRAGANA, "hayai", "wczesny", null);
@@ -784,10 +784,10 @@ public class GenkiBookWords {
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, new String[] { "ni au", "to au" }, new String[] { "spotykać", "widzieć osobę" }, "osoba, u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "ga aru", "być", "do rzeczy martwych, u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "o kau", "kupować", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "o kaku", "pisać", "osoba ni rzecz, u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "o toru", "robić", "zdjęcie, u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "o matsu", "czekać", "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "wo kau", "kupować", "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "wo kaku", "pisać", "osoba ni rzecz, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "wo toru", "robić", "zdjęcie, u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "wo matsu", "czekać", "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "ga wakaru", "rozumieć", "u-czasownik");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "ga iru", "być", "miejsce ni, do rzeczy żywych, ru-czasownik");
@@ -863,7 +863,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "oyogu", "pływać", "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "ni kiku", "pytać", "osobę, u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "ni noru", new String[] { "podróżować", "wsiadać" }, "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "o yaru", "wykonywać", "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "wo yaru", "wykonywać", "u-czasownik");
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "dekakeru", "wychodzić", "ru-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "isshoni", "razem", null);
@@ -877,8 +877,8 @@ public class GenkiBookWords {
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "densha", "pociąg", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "byouki", "chory", "na-przymiotnik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "toshi o totta", "stary", "o człowieku");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "wakai", "młody", "o człowieku");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "toshi o totta", "stary", "wo człowieku");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "wakai", "młody", "wo człowieku");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "kitanai", "brudny", null);
 		
 		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "madoguchi", "okienko pocztowe", null);
@@ -916,31 +916,31 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "asobu", new String[] { "grać", "miło spędzać czas" }, "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "isogu", "spieszyć się", "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "ofuro ni hairu", "brać kąpiel", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o kaesu", "zwrócić", "u-czasownik, osoba ni rzecz");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o kesu", new String[] { "wyłączyć", "skasować" }, "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo kaesu", "zwrócić", "u-czasownik, osoba ni rzecz");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo kesu", new String[] { "wyłączyć", "skasować" }, "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "shinu", "umierać", "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "ni suwaru", "siadać", "u-czasownik, siedzenie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "tatsu", "wstawać", "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "tabako o suu", "palić", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o tsukau", "używać", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o tetsudau", "pomagać", "u-czasownik, osoba/zadanie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo tsukau", "używać", "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo tetsudau", "pomagać", "u-czasownik, osoba/zadanie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "ni hairu", "wchodzić", "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o motsu", new String[] { "nosić", "trzymać" }, "u-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, new String[] { "o yasumu" }, new String[] { "być nieobecnym"}, "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo motsu", new String[] { "nosić", "trzymać" }, "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, new String[] { "wo yasumu" }, new String[] { "być nieobecnym"}, "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, new String[] { "yasumu" }, new String[] { "odpoczywać" }, "u-czasownik");
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o akeru", "otwierać", "ru-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o oshieru", "uczyć", "ru-czasownik, osoba ni rzecz");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o oriru", "zdejmować", "ru-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o kariru", "pożyczać", "osoba ni rzecz");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo akeru", "otwierać", "ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo oshieru", "uczyć", "ru-czasownik, osoba ni rzecz");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo oriru", "zdejmować", "ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo kariru", "pożyczać", "osoba ni rzecz");
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o shimeru", "zamykać", "ru-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o tsukeru", new String[] { "włączać" }, "ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo shimeru", "zamykać", "ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo tsukeru", new String[] { "włączać" }, "ru-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "denwa o kakeru", "dzwonić", "ru-czasownik, osoba ni");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o wasureru", "zapomnieć", "ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo wasureru", "zapomnieć", "ru-czasownik");
 
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o tsurete kuru", "przyprowadzać", "czasownik nieregularny");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o motte kuru", "przynosić", "czasownik nieregularny");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo tsurete kuru", "przyprowadzać", "czasownik nieregularny");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo motte kuru", "przynosić", "czasownik nieregularny");
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "atode", "później", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "osoku", "zrobić coś później", null);
@@ -958,7 +958,7 @@ public class GenkiBookWords {
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "michi", "droga", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "gomi", "śmieci", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "o suteru", "wyrzucać", "ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "wo suteru", "wyrzucać", "ru-czasownik");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "obaasan", "babcia", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "ojiisan", "dziadek", null);
@@ -1128,7 +1128,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "yaseru", "tracić na wadze", "ru-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "yasete imasu", "być chudym", "ru-czasownik, forma te");
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "o kekkon suru", "żenić się", "czasownik nieregularny");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "wo kekkon suru", "żenić się", "czasownik nieregularny");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "ga", "ale", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "nanimo", "nie ... cokolwiek", "+ forma negatywna");
@@ -1143,7 +1143,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "oku", "kłaść", "u-czasownik");
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "osara", "talerz", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "o watasu", "dawać", "u-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "wo watasu", "dawać", "u-czasownik");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "furosato", "miasto rodzinne", null);
 		
@@ -1201,10 +1201,10 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "tsukuru", "tworzyć", "u-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "motteiku", "brać", "coś, u-czasownik");
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "o jirojiromiru", "spojrzeć", "ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "wo jirojiromiru", "spojrzeć", "ru-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "hajimeru", "zaczynać", "ru-czasownik");
 
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "o unten suru", "prowadzić", "czasowniki nieregularne");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "wo unten suru", "prowadzić", "czasowniki nieregularne");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "sentaku suru", "robić pranie", "czasownik nieregularny");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "souji suru", "czyścić", "czasownik nieregularny");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "ryouri suru", "gotować", "czasownik nieregularny");
@@ -1225,7 +1225,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "doremo", "żaden", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "dokomo", "nigdzie", null);
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "nitsuite", "o czymś", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "nitsuite", "wo czymś", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "tsukarete iru", "być zmęczony", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "mazu", "pierwszy", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "kotaeru", "odpowiadać", null);
@@ -1267,11 +1267,11 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "hiku", "grać", "u-czasownik, instrument klawiszowy");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "tataku", "grać", "u-czasownik, na bębnie");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "fuku", "grać", "u-czasownik, instrument dmuchany");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "o morau", "dostać", "u-czasownik, coś, osoba ni rzecz");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "wo morau", "dostać", "u-czasownik, coś, osoba ni rzecz");
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "oboeru", "zapamiętać", "ru-czasownik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "ni deru", "pojawić się", "ru-czasownik");
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "o deru", "wychodzić", "ru-czasownik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "wo deru", "wychodzić", "ru-czasownik");
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "undou suru", "ćwiczenia", "czasownik nieregularny, fizyczne");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "sanpo suru", "spacerować", "czasownik nieregularny");
