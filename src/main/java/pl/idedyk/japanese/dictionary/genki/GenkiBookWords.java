@@ -1781,7 +1781,35 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "親友", new String[] { "shin'yuu" }, new String[] { "najlepszy przyjaciel" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "友人", new String[] { "yuujin" }, new String[] { "przyjaciel" }, "bardziej oficjalnie");
 		
-		// sprawdzić błąd
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "時間", new String[] { "jikan" }, new String[] { "czas" }, "okres");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "二時間", new String[] { "nijikan" }, new String[] { "dwie godziny" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "間", new String[] { "aida" }, new String[] { "pomiędzy" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "人間", new String[] { "ningen" }, new String[] { "człowiek" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "一週間", new String[] { "ishuukan" }, new String[] { "jeden tydzień" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "家", new String[] { "ie" }, new String[] { "dom" }, "bardziej oficjalnie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "家族", new String[] { "kazoku" }, new String[] { "rodzina" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "家", new String[] { "uchi" }, new String[] { "dom" }, "moje miejsce");
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "話す", new String[] { "hanasu" }, new String[] { "rozmawiać" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "話", new String[] { "hanashi" }, new String[] { "rozmowa" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "電話", new String[] { "denwa" }, new String[] { "telefon" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "会話", new String[] { "kaiwa" }, new String[] { "rozmowa" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "少し", new String[] { "sukoshi" }, new String[] { "mało" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "少ない", new String[] { "sukunai" }, new String[] { "trochę" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "少々", new String[] { "shoushou" }, new String[] { "trochę" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "古い", new String[] { "furui" }, new String[] { "stary" }, "do przedmiotów");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "中古", new String[] { "chuuko" }, new String[] { "używany" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "知る", new String[] { "shiru" }, new String[] { "wiedzieć" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "知人", new String[] { "chijin" }, new String[] { "znajomy" }, null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "来る", new String[] { "kuru" }, new String[] { "wracać" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "来ます", new String[] { "kimasu" }, new String[] { "wracać" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "来ない", new String[] { "konai" }, new String[] { "nie wracać" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "来週", new String[] { "raishuu" }, new String[] { "następny tydzień" }, null);
 		
 		
 		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "kanji", "czytanie", "tlumaczenie", null);
