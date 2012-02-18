@@ -325,7 +325,7 @@ public class GenkiBookWords {
 		katakanaEntries.add(new KanaEntry("ピュ", "pyu"));
 		katakanaEntries.add(new KanaEntry("ピョ", "pyo"));	
 		
-		katakanaEntries.add(new KanaEntry("ウぃ", "wi"));
+		katakanaEntries.add(new KanaEntry("ウィ", "wi"));
 		katakanaEntries.add(new KanaEntry("ウェ", "we"));
 		
 		katakanaEntries.add(new KanaEntry("シェ", "she"));
@@ -2617,7 +2617,7 @@ public class GenkiBookWords {
 	}
 	
 	private static boolean isVowel(char char_) {
-		if (char_ == 'e' || char_ == 'u' || char_ == 'i' || char_ == 'o' || char_ == 'a') {
+		if (char_ == 'e' || char_ == 'i' || char_ == 'o' || char_ == 'a') {
 			return true;
 		} else {
 			return false;
