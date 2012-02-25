@@ -1802,7 +1802,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "親友", new String[] { "shin'yuu" }, new String[] { "najlepszy przyjaciel" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "友人", new String[] { "yuujin" }, new String[] { "przyjaciel" }, "bardziej oficjalnie");
 		
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "時間", new String[] { "jikan" }, new String[] { "czas" }, "okres");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "時間", new String[] { "jikan" }, new String[] { "godzina" }, "okres");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "二時間", new String[] { "nijikan" }, new String[] { "dwie godziny" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "間", new String[] { "aida" }, new String[] { "pomiędzy" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "人間", new String[] { "ningen" }, new String[] { "człowiek" }, null);
