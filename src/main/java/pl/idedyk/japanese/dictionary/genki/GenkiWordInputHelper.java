@@ -58,7 +58,7 @@ public class GenkiWordInputHelper {
 		
 		for (WordEntry wordEntry : wordList) {
 			
-			System.out.println("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, " + 
+			System.out.println("addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_10, " + 
 					(wordEntry.getHiraganaKatakana().equals("h") == true ? "WordType.HIRAGANA" : "WordType.KATAKANA") + ", " +
 					"\"" + 
 					wordEntry.getRomaji() + "\", \"" + 

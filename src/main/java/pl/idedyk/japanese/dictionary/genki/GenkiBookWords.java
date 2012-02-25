@@ -536,7 +536,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "otearai", "toaleta", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "kissaten", "kawiarnia", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "ginkou", "bank", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "toshokan", "biblioteka", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "toshokan", "biblioteka", "w budynku");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "yuubinkyoku", "poczta", null);
 
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_2, WordType.HIRAGANA, "ikura", "ile", "koszty");
@@ -1155,7 +1155,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "iro", "kolor", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "pinku iro no", "różowy", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "ocha iro no", "kolor herbaciany", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "midori iro no", "zielony", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "midori", "zielony", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.KATAKANA, "sukaato", "spódnica", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "zubon", "spodnie", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_7, WordType.HIRAGANA, "shatsu", "koszula", null);
@@ -1296,6 +1296,27 @@ public class GenkiBookWords {
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "soshite", "następnie", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "sorekara", "no i", null);
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "toshokan", "biblioteka", "w budynku");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "toshoshitsu", "biblioteka", "w sali");
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "kiiroi", "żółty", "i-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "chairoi", "brązowy", "i-przymiotnik");
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "midori", "zielony", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "haiiro", "szary", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.KATAKANA, "pinku", "różowy", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "gin'iro", "srebny", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "murasaki", "fioletowy", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "mizuiro", "jasno niebieski", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "kin'iro", "złoty", "na-przymiotnik");
+		
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "nikki", "pamiętnik", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "gozenchuu", "przed południem", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.KATAKANA, "hosutofamirii", "rodzina goszczaca", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "gochisou", "dobre jedzenie", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "iroiro", "różne", "na-przymiotnik");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_9, WordType.HIRAGANA, "hanashi wo suru", "rozmawiać", null);		
 		
 		return result;
 	}
