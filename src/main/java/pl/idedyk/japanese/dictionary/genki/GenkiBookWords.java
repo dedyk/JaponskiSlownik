@@ -1172,7 +1172,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "kongetsu", "aktualny miesiąc", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "shigoto", "praca", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "daigakusei", "student", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "disuko", "disco", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.KATAKANA, "disuko", "disco", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "tenkiyohou", "prognoza pogody", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "tokoro", "miejsce", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.KATAKANA, "tomato", "pomidor", null);
@@ -1185,7 +1185,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.KATAKANA, "hoomesutei", new String[] { "pozostać w domu", "żyć ze swoją lokalną rodziną" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "maishuu", "w każdym tygodniu", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "raigetsu", "w następnym tygodniu", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "raigetsu", "następny miesiąć", null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "ga jouzu", "dobry w", "na-przymiotnik");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "ga heta", "słaby w", "na-przymiotnik");
