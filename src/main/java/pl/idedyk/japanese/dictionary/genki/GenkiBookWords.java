@@ -1181,7 +1181,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.KATAKANA, "paatii", "party", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.KATAKANA, "baabekyuu", "grill", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "hashi", "pałeczki", null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "fuya", "zima", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "fuyu", "zima", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.KATAKANA, "hoomesutei", new String[] { "pozostać w domu", "żyć ze swoją lokalną rodziną" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_8, WordType.HIRAGANA, "maishuu", "w każdym tygodniu", null);
