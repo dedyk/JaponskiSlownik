@@ -1961,7 +1961,7 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_10, WordType.HIRAGANA, "朝食", new String[] { "choushoku" }, new String[] { "śniadanie" }, null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_10, WordType.HIRAGANA, "持つ", new String[] { "motsu" }, new String[] { "mieć" }, null);
-		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_10, WordType.HIRAGANA, "持っている", new String[] { "motte iru" }, new String[] { "przynosić" }, null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_10, WordType.HIRAGANA, "持っている", new String[] { "motte kuru" }, new String[] { "przynosić" }, null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_10, WordType.HIRAGANA, "所持品", new String[] { "shojihin" }, new String[] { "dobytek" }, null);
 		
 		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_4, WordType.HIRAGANA, "kanji", "czytanie", "tlumaczenie", null);
