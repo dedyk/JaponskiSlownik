@@ -48,6 +48,7 @@ public class GenkiBookWords {
 		CsvGenerator.generateDictionaryApplicationResult(kanjiOutputDir + "/kanji_dictionary.properties", polishJapaneseKanjiEntries);
 		
 		CsvGenerator.generateCsv("input/word.csv", polishJapaneseEntries);
+		CsvGenerator.generateCsv("input/kanji_word.csv", polishJapaneseKanjiEntries);
 		
 		System.out.println("Done");
 	}

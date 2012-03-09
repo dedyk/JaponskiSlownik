@@ -88,6 +88,9 @@ public class CsvGenerator {
 			csvWriter.write(polishJapaneseEntry.getGroupName().toString());
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
 			csvWriter.write(polishJapaneseEntry.getJapanese());
+			csvWriter.write(convertRomajiEntryListToString(polishJapaneseEntry.getRomajiList()));
+			csvWriter.write(convertPolishTranslateListToString(polishJapaneseEntry.getPolishTranslates()));
+			csvWriter.write(polishJapaneseEntry.getInfo());
 			
 			csvWriter.endRecord();
 		}
@@ -95,8 +98,34 @@ public class CsvGenerator {
 		csvWriter.close();
 	}
 	
-	//private static String convertArrayToString(String)
+	private static String convertPolishTranslateListToString(List<PolishTranslate> list) {
+		StringBuffer sb = new StringBuffer();
+		
+		for (int idx = 0; idx < list.size(); ++idx) {
+			sb.append(list.get(idx).getWord());
+			
+			if (idx != list.size() - 1) {
+				sb.append("\n");
+			}
+		}
+		
+		return sb.toString();
+	}
 
+	private static String convertRomajiEntryListToString(List<RomajiEntry> list) {
+		StringBuffer sb = new StringBuffer();
+		
+		for (int idx = 0; idx < list.size(); ++idx) {
+			sb.append(list.get(idx).getRomaji());
+			
+			if (idx != list.size() - 1) {
+				sb.append("\n");
+			}
+		}
+		
+		return sb.toString();
+	}
+	
 	public static void generateKanaEntriesCsv(String outputFile, List<KanaEntry> kanaEntries) throws IOException {
 		
 		StringBuffer sb = new StringBuffer();

@@ -1,0 +1,915 @@
+WORD_NUMBERS,HIRAGANA,,zero,0,liczba: z...
+WORD_NUMBERS,HIRAGANA,,rei,0,liczba: r...
+WORD_NUMBERS,HIRAGANA,,ichi,1,
+WORD_NUMBERS,HIRAGANA,,ni,2,
+WORD_NUMBERS,HIRAGANA,,san,3,
+WORD_NUMBERS,HIRAGANA,,yon,4,liczba: y**...
+WORD_NUMBERS,HIRAGANA,,shi,4,liczba: sh...
+WORD_NUMBERS,HIRAGANA,,yo,4,liczba: y*...
+WORD_NUMBERS,HIRAGANA,,go,5,
+WORD_NUMBERS,HIRAGANA,,roku,6,
+WORD_NUMBERS,HIRAGANA,,nana,7,liczba: n...
+WORD_NUMBERS,HIRAGANA,,shichi,7,liczba: s...
+WORD_NUMBERS,HIRAGANA,,hachi,8,
+WORD_NUMBERS,HIRAGANA,,kyuu,9,liczba: ky...
+WORD_NUMBERS,HIRAGANA,,ku,9,liczba: ku...
+WORD_NUMBERS,HIRAGANA,,juu,10,
+WORD_NUMBERS,HIRAGANA,,hyaku,100,
+WORD_HOURS,HIRAGANA,,ichiji,1,godzina
+WORD_HOURS,HIRAGANA,,niji,2,godzina
+WORD_HOURS,HIRAGANA,,sanji,3,godzina
+WORD_HOURS,HIRAGANA,,yoji,4,godzina
+WORD_HOURS,HIRAGANA,,goji,5,godzina
+WORD_HOURS,HIRAGANA,,rokuji,6,godzina
+WORD_HOURS,HIRAGANA,,shichiji,7,godzina
+WORD_HOURS,HIRAGANA,,hachiji,8,godzina
+WORD_HOURS,HIRAGANA,,kuji,9,godzina
+WORD_HOURS,HIRAGANA,,juuji,10,godzina
+WORD_HOURS,HIRAGANA,,juuichiji,11,godzina
+WORD_HOURS,HIRAGANA,,juuniji,12,godzina
+WORD_HOURS,HIRAGANA,,ichiji han,1:30,godzina
+WORD_MINUTES,HIRAGANA,,ippun,1,minuta
+WORD_MINUTES,HIRAGANA,,nifun,2,minuta
+WORD_MINUTES,HIRAGANA,,sanpun,3,minuta
+WORD_MINUTES,HIRAGANA,,yonpun,4,minuta
+WORD_MINUTES,HIRAGANA,,gofun,5,minuta
+WORD_MINUTES,HIRAGANA,,roppun,6,minuta
+WORD_MINUTES,HIRAGANA,,nanafun,7,minuta
+WORD_MINUTES,HIRAGANA,,happun,8,minuta: hap...
+WORD_MINUTES,HIRAGANA,,hachifun,8,minuta: hach...
+WORD_MINUTES,HIRAGANA,,kyuufun,9,minuta
+WORD_MINUTES,HIRAGANA,,juppun,10,minuta
+WORD_YEARS,HIRAGANA,,issai,1,lata
+WORD_YEARS,HIRAGANA,,nisai,2,lata
+WORD_YEARS,HIRAGANA,,sansai,3,lata
+WORD_YEARS,HIRAGANA,,yonsai,4,lata
+WORD_YEARS,HIRAGANA,,gosai,5,lata
+WORD_YEARS,HIRAGANA,,rokusai,6,lata
+WORD_YEARS,HIRAGANA,,nanasai,7,lata
+WORD_YEARS,HIRAGANA,,hassai,8,lata
+WORD_YEARS,HIRAGANA,,kyuusai,9,lata
+WORD_YEARS,HIRAGANA,,jussai,10,lata
+WORD_YEARS,HIRAGANA,,juissai,11,lata
+WORD_YEARS,HIRAGANA,,hatachi,20,lata
+WORD_GREETINGS,HIRAGANA,,Ohayou gozaimasu,Dzien dobry,rano (grzecznie)
+WORD_GREETINGS,HIRAGANA,,Konnichiwa,Dzień dobry,po południu
+WORD_GREETINGS,HIRAGANA,,Konbanwa,Dobry wieczór,
+WORD_GREETINGS,HIRAGANA,,Sayounara,Do widzenia,
+WORD_GREETINGS,HIRAGANA,,Oyasuminasai,Dobranoc,
+WORD_GREETINGS,HIRAGANA,,Arigatou,Dziękuję,
+WORD_GREETINGS,HIRAGANA,,Arigatou gozaimasu,Dziękuję,grzecznie
+WORD_GREETINGS,HIRAGANA,,Sumimasen,Przepraszam,
+WORD_GREETINGS,HIRAGANA,,Iie,nie,
+WORD_GREETINGS,HIRAGANA,,Ittekimasu,Wychodzę,Idę i wrócę
+WORD_GREETINGS,HIRAGANA,,Itterasshai,Wróć,Idź i wróć
+WORD_GREETINGS,HIRAGANA,,Tadaima,Już jestem,Po przybyciu do domu
+WORD_GREETINGS,HIRAGANA,,Okaerinasai,Już jesteś,Będać w domu
+WORD_GREETINGS,HIRAGANA,,Itadakimasu,Smacznego,Przed jedzeniem
+WORD_GREETINGS,HIRAGANA,,Gochisousama,Smacznego,Po jedzeniu
+WORD_GREETINGS,HIRAGANA,,Hajimemashite,Przywitanie,Pierwsze spotkanie
+WORD_GREETINGS,HIRAGANA,,Douzo yoroshiku,Miło Cię spotkać,
+WORD_GREETINGS,HIRAGANA,,Douzo yoroshiku onegai shimasu,Miło Cię spotkać,Kierowane do osoby wyżej postawionej
+WORD_GENKI1_1,HIRAGANA,,Ima,teraz,
+WORD_GENKI1_1,HIRAGANA,,han,połowa,
+WORD_GENKI1_1,HIRAGANA,,ano,um,
+WORD_GENKI1_1,HIRAGANA,,eigo,język angielski,
+WORD_GENKI1_1,HIRAGANA,,ee,tak,mniej oficjalnie
+WORD_GENKI1_1,HIRAGANA,,gakusei,uczeń,
+WORD_GENKI1_1,HIRAGANA,,go,... język,
+WORD_GENKI1_1,HIRAGANA,,koukou,liceum,
+WORD_GENKI1_1,HIRAGANA,,gogo,P.M.,
+WORD_GENKI1_1,HIRAGANA,,gozen,A.M.,
+WORD_GENKI1_1,HIRAGANA,,sai,... lat,
+WORD_GENKI1_1,HIRAGANA,,san,... Pan,
+WORD_GENKI1_1,HIRAGANA,,ji,... godzina,
+WORD_GENKI1_1,HIRAGANA,,jin,... człowiek,
+WORD_GENKI1_1,HIRAGANA,,sensei,nauczyciel,
+WORD_GENKI1_1,HIRAGANA,,senmon,specjalizacja,
+WORD_GENKI1_1,HIRAGANA,,Sou desu ne,To prawda,
+WORD_GENKI1_1,HIRAGANA,,daigaku,uczelnia,
+WORD_GENKI1_1,HIRAGANA,,denwa,telefon,
+WORD_GENKI1_1,HIRAGANA,,tomodachi,przyjaciel,
+WORD_GENKI1_1,HIRAGANA,,namae,imię,
+WORD_GENKI1_1,HIRAGANA,,nan,co,***
+WORD_GENKI1_1,HIRAGANA,,nani,co,****
+WORD_GENKI1_1,HIRAGANA,,Nihon,Japonia,
+WORD_GENKI1_1,HIRAGANA,,nensei,... student roku,
+WORD_GENKI1_1,HIRAGANA,,hai,tak,oficjalnie
+WORD_GENKI1_1,HIRAGANA,,bangou,numer,
+WORD_GENKI1_1,HIRAGANA,,ryuugakusei,uczeń międzynarodowy,
+WORD_GENKI1_1,HIRAGANA,,watashi,ja,
+WORD_GENKI1_1,KATAKANA,,Amerika,Ameryka,
+WORD_GENKI1_1,KATAKANA,,Igirisu,Wielka Brytania,
+WORD_GENKI1_1,KATAKANA,,Oosutoraria,Australia,
+WORD_GENKI1_1,HIRAGANA,,Kankoku,Korea,
+WORD_GENKI1_1,KATAKANA,,Sueeden,Szwecja,
+WORD_GENKI1_1,HIRAGANA,,Chuugoku,Chiny,
+WORD_GENKI1_1,HIRAGANA,,kagaku,nauka,
+WORD_GENKI1_1,HIRAGANA,,ajiakenkyuu,orientarystyka,
+WORD_GENKI1_1,HIRAGANA,,keizai,ekonomia,
+WORD_GENKI1_1,HIRAGANA,,kokusaikankei,stosunki międzynarodowe,
+WORD_GENKI1_1,KATAKANA,,konpyuutaa,komputer,
+WORD_GENKI1_1,HIRAGANA,,jinruigaku,antropotologia,
+WORD_GENKI1_1,HIRAGANA,,seiji,polityka,
+WORD_GENKI1_1,KATAKANA,,bijinesu,biznes,
+WORD_GENKI1_1,HIRAGANA,,bungaku,literatura,
+WORD_GENKI1_1,HIRAGANA,,rekishi,historia,
+WORD_GENKI1_1,HIRAGANA,,shigoto,praca,
+WORD_GENKI1_1,HIRAGANA,,isha,lekarz,
+WORD_GENKI1_1,HIRAGANA,,kaishain,pracownik biurowy,
+WORD_GENKI1_1,HIRAGANA,,koukousei,licealista,
+WORD_GENKI1_1,HIRAGANA,,shufu,Pani domu,
+WORD_GENKI1_1,HIRAGANA,,daigakuinsei,student,studia magisterskie
+WORD_GENKI1_1,HIRAGANA,,daigakusei,student,
+WORD_GENKI1_1,HIRAGANA,,bengoshi,prawnik,
+WORD_GENKI1_1,HIRAGANA,,okaasan,matka,
+WORD_GENKI1_1,HIRAGANA,,otousan,ojciec,
+WORD_GENKI1_1,HIRAGANA,,oneesan,siostra,starsza
+WORD_GENKI1_1,HIRAGANA,,oniisan,brat,starszy
+WORD_GENKI1_1,HIRAGANA,,imouto,siostra,młodsza
+WORD_GENKI1_1,HIRAGANA,,otouto,brat,młodszy
+WORD_GENKI1_2,HIRAGANA,,kore,ten,blisko mówcy
+WORD_GENKI1_2,HIRAGANA,,sore,ten,blisko osoby docelowej
+WORD_GENKI1_2,HIRAGANA,,are,tam,daleko od mówcy i osoby docelowej
+WORD_GENKI1_2,HIRAGANA,,dore,który,
+WORD_GENKI1_2,HIRAGANA,,kono,ten,blisko mówcy (z rzeczownikiem)
+WORD_GENKI1_2,HIRAGANA,,sono,ten,blisko osoby docelowej (z rzeczownikiem)
+WORD_GENKI1_2,HIRAGANA,,ano,tam,daleko od mówcy i osoby docelowej (z rzeczownikiem)
+WORD_GENKI1_2,HIRAGANA,,dono,który,z rzeczownikiem
+WORD_GENKI1_2,HIRAGANA,,koko,tam,"miejsce, blisko mówcy"
+WORD_GENKI1_2,HIRAGANA,,soko,tam,"miejsce, blisko osoby docelowej"
+WORD_GENKI1_2,HIRAGANA,,asoko,tam,"miejsce, daleko od mówcy i osoby docelowej"
+WORD_GENKI1_2,HIRAGANA,,doko,gdzie,miejsce
+WORD_GENKI1_2,HIRAGANA,,dare,kto,
+WORD_GENKI1_2,HIRAGANA,,oishii,smaczne,
+WORD_GENKI1_2,HIRAGANA,,sakana,ryba,
+WORD_GENKI1_2,HIRAGANA,,tonkatsu,kotlet wieprzowy,
+WORD_GENKI1_2,HIRAGANA,,niku,mięso,
+WORD_GENKI1_2,KATAKANA,,menyuu,menu,
+WORD_GENKI1_2,HIRAGANA,,yasai,warzywa,
+WORD_GENKI1_2,HIRAGANA,,enpitsu,ołówek,
+WORD_GENKI1_2,HIRAGANA,,kasa,parasolka,
+WORD_GENKI1_2,HIRAGANA,,kaban,torba,
+WORD_GENKI1_2,HIRAGANA,,kutsu,buty,
+WORD_GENKI1_2,HIRAGANA,,saifu,potfel,
+WORD_GENKI1_2,KATAKANA,,jiinzu,jeansy,
+WORD_GENKI1_2,HIRAGANA,,jisho,słownik,
+WORD_GENKI1_2,HIRAGANA,,jitensha,rower,
+WORD_GENKI1_2,HIRAGANA,,shinbun,gazeta,
+WORD_GENKI1_2,KATAKANA,,teepu,kaseta,
+WORD_GENKI1_2,HIRAGANA,,tokei,zegarek,
+WORD_GENKI1_2,HIRAGANA,,toreenaa,bluza,
+WORD_GENKI1_2,KATAKANA,,nooto,zeszyt,
+WORD_GENKI1_2,KATAKANA,,pen,długopis,
+WORD_GENKI1_2,HIRAGANA,,boushi,kapelusz,
+WORD_GENKI1_2,HIRAGANA,,hon,książka,
+WORD_GENKI1_2,HIRAGANA,,otearai,toaleta,
+WORD_GENKI1_2,HIRAGANA,,kissaten,kawiarnia,
+WORD_GENKI1_2,HIRAGANA,,ginkou,bank,
+WORD_GENKI1_2,HIRAGANA,,toshokan,biblioteka,w budynku
+WORD_GENKI1_2,HIRAGANA,,yuubinkyoku,poczta,
+WORD_GENKI1_2,HIRAGANA,,ikura,ile,koszty
+WORD_GENKI1_2,HIRAGANA,,en,... yen,
+WORD_GENKI1_2,HIRAGANA,,takai,drogo,pieniądze
+WORD_GENKI1_2,HIRAGANA,,takai,wysoki,wzrost
+WORD_GENKI1_2,HIRAGANA,,irasshaimase,Witamy,przy wchodzeniu do sklepu
+WORD_GENKI1_2,HIRAGANA,,wo onegai shimasu,... proszę,
+WORD_GENKI1_2,HIRAGANA,,wo kudasai,Proszę dać mi ...,
+WORD_GENKI1_2,HIRAGANA,,jaa,wtedy,
+WORD_GENKI1_2,HIRAGANA,,wo douzo,proszę,przy podawaniu komuś czegoś
+WORD_GENKI1_2,HIRAGANA,,doumo,dziękuję,przy otrzymywaniu czegoś
+WORD_GENKI1_2,HIRAGANA,,desu,jest,oficjalnie
+WORD_GENKI1_2,HIRAGANA,,dewa arimasen,nie jest,oficjalnie
+WORD_GENKI1_2,HIRAGANA,,ja arimasen,nie jest,mniej oficjalnie
+WORD_NUMBERS,HIRAGANA,,sanbyaku,300,
+WORD_NUMBERS,HIRAGANA,,roppyaku,600,
+WORD_NUMBERS,HIRAGANA,,happyaku,800,
+WORD_NUMBERS,HIRAGANA,,sen,1000,
+WORD_NUMBERS,HIRAGANA,,sanzen,3000,
+WORD_NUMBERS,HIRAGANA,,hassen,8000,
+WORD_NUMBERS,HIRAGANA,,ichiman,10000,
+WORD_GENKI1_2,HIRAGANA,,kokuban,tablica,
+WORD_GENKI1_2,KATAKANA,,bideo,video,
+WORD_GENKI1_2,HIRAGANA,,kaaten,zasłonka,
+WORD_GENKI1_2,KATAKANA,,doa,dzwi,
+WORD_GENKI1_2,HIRAGANA,,keshigomu,gumka,
+WORD_GENKI1_2,HIRAGANA,,isu,krzesło,
+WORD_GENKI1_2,HIRAGANA,,Wakarimashita,zrozumiałem,
+WORD_GENKI1_2,HIRAGANA,,Wakarimasen,nie rozumiem,
+WORD_GENKI1_2,HIRAGANA,,Yukkuri itte kudasai,Proszę mówić wolno,
+WORD_GENKI1_2,HIRAGANA,,Mou ichido itte kudasai,Proszę powtórzyć,
+WORD_GENKI1_2,HIRAGANA,,Chotto matte kudasai,Proszę poczekać,
+WORD_GENKI1_2,HIRAGANA,,akai,czerwony,
+WORD_GENKI1_2,HIRAGANA,,aoi,niebieski,
+WORD_GENKI1_2,HIRAGANA,,sushi,sushi,
+WORD_GENKI1_2,HIRAGANA,,kagu,meble,
+WORD_GENKI1_2,HIRAGANA,,kao,twarz,
+WORD_GENKI1_2,HIRAGANA,,ai,miłość,
+WORD_GENKI1_2,HIRAGANA,,kiku,słuchać,
+WORD_GENKI1_2,HIRAGANA,,sake,sake,
+WORD_GENKI1_2,HIRAGANA,,ushi,krowa,
+WORD_GENKI1_2,HIRAGANA,,keitai denwa,telefon komórkowy,
+WORD_GENKI1_2,KATAKANA,,maakaa,marker,
+WORD_GENKI1_2,HIRAGANA,,haha,matka,h...
+WORD_GENKI1_2,HIRAGANA,,chichi,ojciec,ch...
+WORD_GENKI1_2,HIRAGANA,,ha,ząb,
+WORD_GENKI1_2,HIRAGANA,,hi,słońce,s...
+WORD_GENKI1_2,HIRAGANA,,hi,ogień,o...
+WORD_GENKI1_2,HIRAGANA,,mimi,ucho,
+WORD_GENKI1_2,HIRAGANA,,me,oko,
+WORD_GENKI1_2,HIRAGANA,,momo,brzoskwinia,
+WORD_GENKI1_2,HIRAGANA,,yasui,tani,
+WORD_GENKI1_3,HIRAGANA,,eiga,film,
+WORD_GENKI1_3,HIRAGANA,,ongaku,muzyka,
+WORD_GENKI1_3,HIRAGANA,,zasshi,magazyn,
+WORD_GENKI1_3,KATAKANA,,supootsu,sport,
+WORD_GENKI1_3,KATAKANA,,deeto,randka,
+WORD_GENKI1_3,KATAKANA,,tenisu,tenis,
+WORD_GENKI1_3,KATAKANA,,terebi,telewizja,
+WORD_GENKI1_3,KATAKANA,,bideo,kaseta video,
+WORD_GENKI1_3,HIRAGANA,,asagohan,śniadanie,
+WORD_GENKI1_3,HIRAGANA,,osake,alkohol,
+WORD_GENKI1_3,HIRAGANA,,ocha,zielona herbata,
+WORD_GENKI1_3,KATAKANA,,koohii,kawa,
+WORD_GENKI1_3,HIRAGANA,,bangohan,kolacja,
+WORD_GENKI1_3,KATAKANA,,hanbaagaa,hamburger,
+WORD_GENKI1_3,HIRAGANA,,hirugohan,obiad,
+WORD_GENKI1_3,HIRAGANA,,mizu,woda,
+WORD_GENKI1_3,HIRAGANA,,ie,dom,
+WORD_GENKI1_3,HIRAGANA,,uchi,dom,moje miejsce
+WORD_GENKI1_3,HIRAGANA,,erueru,laboratorium językowe,ll
+WORD_GENKI1_3,HIRAGANA,,gakkou,szkoła,
+WORD_GENKI1_3,HIRAGANA,,asa,rano,
+WORD_GENKI1_3,HIRAGANA,,ashita,jutro,
+WORD_GENKI1_3,HIRAGANA,,itsu,kiedy,
+WORD_GENKI1_3,HIRAGANA,,kyou,dziś,
+WORD_GENKI1_3,HIRAGANA,,goro,około,
+WORD_GENKI1_3,HIRAGANA,,konban,wieczorem,
+WORD_GENKI1_3,HIRAGANA,,shuumatsu,weekend,
+WORD_GENKI1_3,HIRAGANA,,doyoubi,sobota,
+WORD_GENKI1_3,HIRAGANA,,nichiyoubi,niedziela,
+WORD_GENKI1_3,HIRAGANA,,mainichi,każdego dnia,
+WORD_GENKI1_3,HIRAGANA,,maiban,każdej nocy,
+WORD_GENKI1_3,HIRAGANA,,"ni iku
+e iku",iść,"cel, u-czasownik"
+WORD_GENKI1_3,HIRAGANA,,"ni kaeru
+e kaeru",wracać,"cel, u-czasownik"
+WORD_GENKI1_3,HIRAGANA,,wo kiku,słuchać,u-czasownik
+WORD_GENKI1_3,HIRAGANA,,wo nomu,pić,u-czasownik
+WORD_GENKI1_3,HIRAGANA,,"wo hanasu
+de hanasu",mówić,"język, u-czasownik"
+WORD_GENKI1_3,HIRAGANA,,wo yomu,czytać,u-czasownik
+WORD_GENKI1_3,HIRAGANA,,okiru,wstawać,ru-czasowniki
+WORD_GENKI1_3,HIRAGANA,,wo taberu,jeść,ru-czasowniki
+WORD_GENKI1_3,HIRAGANA,,neru,spać,ru-czasowniki
+WORD_GENKI1_3,HIRAGANA,,wo miru,patrzeć,ru-czasowniki
+WORD_GENKI1_3,HIRAGANA,,"ni kuru
+e kuru",przybyć,"cel, czasowniki nieregularne"
+WORD_GENKI1_3,HIRAGANA,,wo suru,robić,czasowniki nieregularne
+WORD_GENKI1_3,HIRAGANA,,wo benkyou suru,studiować,czasowniki nieregularne
+WORD_GENKI1_3,HIRAGANA,,ii,dobry,
+WORD_GENKI1_3,HIRAGANA,,hayai,wczesny,
+WORD_GENKI1_3,HIRAGANA,,amari,niewiele,+ forma negatywna
+WORD_GENKI1_3,HIRAGANA,,zenzen,wcale,+ forma negatywna
+WORD_GENKI1_3,HIRAGANA,,taitei,zwykle,
+WORD_GENKI1_3,HIRAGANA,,chotto,trochę,
+WORD_GENKI1_3,HIRAGANA,,tokidoki,czasami,
+WORD_GENKI1_3,HIRAGANA,,yoku,"często
+wiele",
+WORD_GENKI1_3,HIRAGANA,,Sou desu ne,To prawda,
+WORD_GENKI1_3,HIRAGANA,,demo,ale,
+WORD_GENKI1_3,HIRAGANA,,Dou desu ka,co ty na to,
+WORD_GENKI1_3,HIRAGANA,,shuu,tydzień,
+WORD_GENKI1_3,HIRAGANA,,matsu,koniec,
+WORD_GENKI1_3,HIRAGANA,,mai,każdy,
+WORD_GENKI1_3,HIRAGANA,,ohashii,pałeczki,
+WORD_GENKI1_3,HIRAGANA,,ofuro,wanna,
+WORD_GENKI1_3,HIRAGANA,,mise,sklep,
+WORD_GENKI1_3,HIRAGANA,,oshousan,mnich,buddyjski
+WORD_GENKI1_3,HIRAGANA,,kozousan,uczniowie,
+WORD_GENKI1_3,HIRAGANA,,kanuki,jenot,
+WORD_GENKI1_4,HIRAGANA,,arubaito,praca w niepełnym wymiarze godzin,
+WORD_GENKI1_4,HIRAGANA,,kaimono,zakupy,
+WORD_GENKI1_4,KATAKANA,,kurasu,klasa,
+WORD_GENKI1_4,HIRAGANA,,anata,ty,
+WORD_GENKI1_4,HIRAGANA,,inu,pies,
+WORD_GENKI1_4,HIRAGANA,,omiyage,piamiątka,
+WORD_GENKI1_4,HIRAGANA,,kodomo,dziecko,
+WORD_GENKI1_4,HIRAGANA,,gohan,jedzenie,j...
+WORD_GENKI1_4,HIRAGANA,,gohan,ryż gotowany,r...
+WORD_GENKI1_4,HIRAGANA,,shashin,rysunek,r...
+WORD_GENKI1_4,HIRAGANA,,shashin,zdjęcie,zd...
+WORD_GENKI1_4,HIRAGANA,,tsukue,stół,
+WORD_GENKI1_4,HIRAGANA,,tegami,list,
+WORD_GENKI1_4,HIRAGANA,,neko,kot,
+WORD_GENKI1_4,KATAKANA,,pan,chleb,
+WORD_GENKI1_4,HIRAGANA,,hito,osoba,
+WORD_GENKI1_4,HIRAGANA,,otera,świątynia,buddyjska
+WORD_GENKI1_4,HIRAGANA,,jinja,świątynia,shintoistyczna
+WORD_GENKI1_4,HIRAGANA,,kouen,park,publiczny
+WORD_GENKI1_4,KATAKANA,,suupaa,supermarket,
+WORD_GENKI1_4,KATAKANA,,depaato,dom handlowy,
+WORD_GENKI1_4,HIRAGANA,,basutei,przystanek autobusowy,
+WORD_GENKI1_4,HIRAGANA,,byouin,szpital,
+WORD_GENKI1_4,KATAKANA,,hoteru,hotel,
+WORD_GENKI1_4,HIRAGANA,,honya,księgarnia,
+WORD_GENKI1_4,HIRAGANA,,machi,miasteczko,
+WORD_GENKI1_4,KATAKANA,,resutoran,restauracja,
+WORD_GENKI1_4,HIRAGANA,,tsuitachi,1,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,futsuka,2,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,mikka,3,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,yokka,4,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,itsuka,5,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,muika,6,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,nanoka,7,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,youka,8,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,kokonoka,9,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,touka,10,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,juuichinichi,11,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,juuninichi,12,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,juusannichi,13,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,juuyokka,14,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,juugonichi,15,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,juurokunichi,16,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,juushichinichi,17,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,juuhachinichi,18,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,juukunichi,19,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,hatsuka,20,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,nijuuichinichi,21,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,nijuuninichi,22,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,nijuusannichi,23,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,nijuuyokka,24,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,nijuugonichi,25,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,nijuurokunichi,26,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,nijuushichinichi,27,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,nijuuhachinichi,28,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,nijuukunichi,29,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,sanjuunichi,30,dzień miesiąca
+WORD_GENKI1_4,HIRAGANA,,sanjuuichinichi,31,dzień miesiąca
+WORD_GENKI1_6,HIRAGANA,,ichigatsu,styczeń,
+WORD_GENKI1_6,HIRAGANA,,nigatsu,luty,
+WORD_GENKI1_6,HIRAGANA,,sangatsu,marzec,
+WORD_GENKI1_6,HIRAGANA,,shigatsu,kwiecień,
+WORD_GENKI1_6,HIRAGANA,,gogatsu,maj,
+WORD_GENKI1_6,HIRAGANA,,rokugatsu,czerwiec,
+WORD_GENKI1_6,HIRAGANA,,shichigatsu,lipiec,
+WORD_GENKI1_6,HIRAGANA,,hachigatsu,sierpień,
+WORD_GENKI1_6,HIRAGANA,,kugatsu,wrzesień,
+WORD_GENKI1_6,HIRAGANA,,juugatsu,październik,
+WORD_GENKI1_6,HIRAGANA,,juuichigatsu,listopad,
+WORD_GENKI1_6,HIRAGANA,,juunigatsu,grudzień,
+WORD_GENKI1_4,HIRAGANA,,ototoi,przedwczoraj,
+WORD_GENKI1_4,HIRAGANA,,kinou,wczoraj,
+WORD_GENKI1_4,HIRAGANA,,kyou,dziś,
+WORD_GENKI1_4,HIRAGANA,,ashita,jutro,
+WORD_GENKI1_4,HIRAGANA,,asatte,pojutrze,
+WORD_GENKI1_4,HIRAGANA,,sensenshuu,tydzień przed zeszłym tygodniem,
+WORD_GENKI1_4,HIRAGANA,,senshuu,zeszły tydzień,
+WORD_GENKI1_4,HIRAGANA,,konshuu,obecny tydzień,
+WORD_GENKI1_4,HIRAGANA,,raishuu,przyszły tydzień,
+WORD_GENKI1_4,HIRAGANA,,saraishuu,tydzień po przyszłym tygodniu,
+WORD_GENKI1_4,HIRAGANA,,ototoshi,rok przed poprzedni rokiem,
+WORD_GENKI1_4,HIRAGANA,,kyonen,poprzedni rok,
+WORD_GENKI1_4,HIRAGANA,,kotoshi,aktualny rok,
+WORD_GENKI1_4,HIRAGANA,,rainen,przyszły rok,
+WORD_GENKI1_4,HIRAGANA,,sarainen,rok po przyszłym roku,
+WORD_GENKI1_4,HIRAGANA,,sakki,przed chwilą,
+WORD_GENKI1_4,HIRAGANA,,jikan,godzina,czas
+WORD_GENKI1_4,HIRAGANA,,ichijikan,jedna godzina,
+WORD_GENKI1_4,HIRAGANA,,toki,kiedy,wskazanie jakiegoś momentu w czasie
+WORD_GENKI1_4,HIRAGANA,,getsuyoubi,poniedziałek,księżyc
+WORD_GENKI1_4,HIRAGANA,,kayoubi,wtorek,ogień
+WORD_GENKI1_4,HIRAGANA,,suiyoubi,środa,woda
+WORD_GENKI1_4,HIRAGANA,,mokuyoubi,czwartek,drzewo
+WORD_GENKI1_4,HIRAGANA,,kinyoubi,piątek,"pieniądze, złoto, n'y"
+WORD_GENKI1_4,HIRAGANA,,doyoubi,sobota,ziemia
+WORD_GENKI1_4,HIRAGANA,,nichiyoubi,niedziela,słońce
+WORD_GENKI1_4,HIRAGANA,,"ni au
+to au","spotykać
+widzieć osobę","osoba, u-czasownik"
+WORD_GENKI1_4,HIRAGANA,,ga aru,być,"do rzeczy martwych, u-czasownik"
+WORD_GENKI1_4,HIRAGANA,,wo kau,kupować,u-czasownik
+WORD_GENKI1_4,HIRAGANA,,wo kaku,pisać,"osoba ni rzecz, u-czasownik"
+WORD_GENKI1_4,HIRAGANA,,wo toru,robić,"zdjęcie, u-czasownik"
+WORD_GENKI1_4,HIRAGANA,,wo matsu,czekać,u-czasownik
+WORD_GENKI1_4,HIRAGANA,,ga wakaru,rozumieć,u-czasownik
+WORD_GENKI1_4,HIRAGANA,,ga iru,być,"miejsce ni, do rzeczy żywych, ru-czasownik"
+WORD_GENKI1_4,HIRAGANA,,gurai,około,ogólne
+WORD_GENKI1_4,HIRAGANA,,gomen nasai,przepraszam,
+WORD_GENKI1_4,HIRAGANA,,dakara,ponieważ,
+WORD_GENKI1_4,HIRAGANA,,takusan,dużo,
+WORD_GENKI1_4,HIRAGANA,,sukoshi,mało,
+WORD_GENKI1_4,HIRAGANA,,to,do łączenia,
+WORD_GENKI1_4,HIRAGANA,,doushite,dlaczego,
+WORD_GENKI1_4,HIRAGANA,,hitoride,sam,
+WORD_GENKI1_4,HIRAGANA,,moshimoshi,hallo,używane przy odbieraniu telefonu
+WORD_GENKI1_4,HIRAGANA,,migi,na prawo,
+WORD_GENKI1_4,HIRAGANA,,hidari,na lewo,
+WORD_GENKI1_4,HIRAGANA,,mae,przed,
+WORD_GENKI1_4,HIRAGANA,,ushiro,za,
+WORD_GENKI1_4,HIRAGANA,,naka,w środku,
+WORD_GENKI1_4,HIRAGANA,,ue,na,
+WORD_GENKI1_4,HIRAGANA,,shita,pod,
+WORD_GENKI1_4,HIRAGANA,,soba,w pobliżu,
+WORD_GENKI1_4,HIRAGANA,,tonari,obok,
+WORD_GENKI1_4,HIRAGANA,,aida,pomiędzy,
+WORD_GENKI1_4,HIRAGANA,,otonarisan,sąsiad,
+WORD_GENKI1_5,HIRAGANA,,umi,morze,
+WORD_GENKI1_5,HIRAGANA,,kitte,znaczek pocztowy,
+WORD_GENKI1_5,HIRAGANA,,kippu,bilet,
+WORD_GENKI1_5,KATAKANA,,saafin,surfing,
+WORD_GENKI1_5,HIRAGANA,,shukudai,praca domowa,
+WORD_GENKI1_5,HIRAGANA,,tabemono,jedzenie,
+WORD_GENKI1_5,HIRAGANA,,tanjoubi,urodziny,
+WORD_GENKI1_5,KATAKANA,,tesuto,test,
+WORD_GENKI1_5,HIRAGANA,,tenki,pogoda,
+WORD_GENKI1_5,HIRAGANA,,nomimono,picie,
+WORD_GENKI1_5,HIRAGANA,,hagaki,pocztówka,
+WORD_GENKI1_5,KATAKANA,,basu,autobus,
+WORD_GENKI1_5,HIRAGANA,,hikouki,samolot,
+WORD_GENKI1_5,HIRAGANA,,heya,pokój,
+WORD_GENKI1_5,HIRAGANA,,boku,ja,używane przez mężczyzn
+WORD_GENKI1_5,HIRAGANA,,yasumi,"wakacje
+odpoczynek",
+WORD_GENKI1_5,HIRAGANA,,ryokou,podróż,
+WORD_GENKI1_5,HIRAGANA,,atarashii,nowy,i-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,atsui,gorąco,"pogoda, i-przymiotnik"
+WORD_GENKI1_5,HIRAGANA,,atsui,gorąco,"przedmioty, i-przymiotnik"
+WORD_GENKI1_5,HIRAGANA,,isogashii,zajęty,"człowiek / dzień, i-przymiotnik"
+WORD_GENKI1_5,HIRAGANA,,ookii,duży,i-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,omoshiroi,interesujący,i-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,kowai,straszny,i-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,samui,zimno,"pogoda, i-przymiotnik"
+WORD_GENKI1_5,HIRAGANA,,tanoshii,zabawny,i-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,chiisai,mały,i-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,tsumaranai,nudny,i-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,furui,stary,"do przedmiotów, i-przymiotnik"
+WORD_GENKI1_5,HIRAGANA,,muzukashii,trudny,i-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,yasashii,"łatwy
+miły","problem / człowiek, i-przymiotnik"
+WORD_GENKI1_5,HIRAGANA,,yasui,tani,i-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,kirai,nie lubić,na-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,kirei,"ładne
+czyste",na-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,genki,zdrowy,na-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,shizuka,cichy,na-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,suki,lubić,na-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,daikirai,nienawidzić,na-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,daisuki,kochać,na-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,nigiyaka,żywy,na-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,hansamu,przystojny,na-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,hima,nie zajęty,na-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,oyogu,pływać,u-czasownik
+WORD_GENKI1_5,HIRAGANA,,ni kiku,pytać,"osobę, u-czasownik"
+WORD_GENKI1_5,HIRAGANA,,ni noru,"podróżować
+wsiadać",u-czasownik
+WORD_GENKI1_5,HIRAGANA,,wo yaru,wykonywać,u-czasownik
+WORD_GENKI1_5,HIRAGANA,,dekakeru,wychodzić,ru-czasownik
+WORD_GENKI1_5,HIRAGANA,,isshoni,razem,
+WORD_GENKI1_5,HIRAGANA,,sorekara,i wtedy,
+WORD_GENKI1_5,HIRAGANA,,daijoubu,w porządku,
+WORD_GENKI1_5,HIRAGANA,,totemo,bardzo,
+WORD_GENKI1_5,HIRAGANA,,donna,jakiego rodzaju,
+WORD_GENKI1_5,HIRAGANA,,mai,do liczenia,płaskich przedmiotów
+WORD_GENKI1_5,HIRAGANA,,made,do,"miejsce, czasu"
+WORD_GENKI1_5,HIRAGANA,,kara,od,czasu
+WORD_GENKI1_5,HIRAGANA,,densha,pociąg,
+WORD_GENKI1_5,HIRAGANA,,byouki,chory,na-przymiotnik
+WORD_GENKI1_5,HIRAGANA,,toshi wo totta,stary,wo człowieku
+WORD_GENKI1_5,HIRAGANA,,wakai,młody,wo człowieku
+WORD_GENKI1_5,HIRAGANA,,kitanai,brudny,
+WORD_GENKI1_5,HIRAGANA,,madoguchi,okienko pocztowe,
+WORD_GENKI1_5,HIRAGANA,,kodutsumi,paczka,
+WORD_GENKI1_5,HIRAGANA,,koukuubin,poczta lotnicza,
+WORD_GENKI1_5,HIRAGANA,,hoken,ubezpieczenie,
+WORD_GENKI1_5,HIRAGANA,,kakitome,list polecony,
+WORD_GENKI1_5,HIRAGANA,,earoguramu,poczta lotnicza,
+WORD_GENKI1_5,HIRAGANA,,fuusho,list,bardzo oficjalnie
+WORD_GENKI1_5,HIRAGANA,,funabin,poczta lotnicza,
+WORD_GENKI1_5,HIRAGANA,,sokunatsu,spejcjalna dostawa,
+WORD_GENKI1_5,HIRAGANA,,denchi,bateria,
+WORD_GENKI1_6,HIRAGANA,,okane,pieniądze,
+WORD_GENKI1_6,HIRAGANA,,obaasan,"babcia
+starsza kobieta",
+WORD_GENKI1_6,HIRAGANA,,ofuro,kąpiel,
+WORD_GENKI1_6,HIRAGANA,,kanji,kanji,
+WORD_GENKI1_6,HIRAGANA,,kyoukasho,podręcznik,
+WORD_GENKI1_6,HIRAGANA,,konshuu,aktualny tydzień,
+WORD_GENKI1_6,HIRAGANA,,shiminbyouin,szpital miejski,
+WORD_GENKI1_6,HIRAGANA,,tsugi,następny,
+WORD_GENKI1_6,HIRAGANA,,terebi geemu,gra telewizyjna,
+WORD_GENKI1_6,HIRAGANA,,denki,prąd,światło
+WORD_GENKI1_6,HIRAGANA,,densha,pociąg,
+WORD_GENKI1_6,HIRAGANA,,nimotsu,bagaż,
+WORD_GENKI1_6,KATAKANA,,peeji,strona,
+WORD_GENKI1_6,HIRAGANA,,mado,okno,
+WORD_GENKI1_6,HIRAGANA,,yoru,noc,
+WORD_GENKI1_6,HIRAGANA,,raishuu,następny tydzień,
+WORD_GENKI1_6,HIRAGANA,,rainen,następny rok,
+WORD_GENKI1_6,HIRAGANA,,taihen,ciężka,sytuacja
+WORD_GENKI1_6,HIRAGANA,,asobu,"grać
+miło spędzać czas",u-czasownik
+WORD_GENKI1_6,HIRAGANA,,isogu,spieszyć się,u-czasownik
+WORD_GENKI1_6,HIRAGANA,,ofuro ni hairu,brać kąpiel,u-czasownik
+WORD_GENKI1_6,HIRAGANA,,wo kaesu,zwrócić,"u-czasownik, osoba ni rzecz"
+WORD_GENKI1_6,HIRAGANA,,wo kesu,"wyłączyć
+skasować",u-czasownik
+WORD_GENKI1_6,HIRAGANA,,shinu,umierać,u-czasownik
+WORD_GENKI1_6,HIRAGANA,,ni suwaru,siadać,"u-czasownik, siedzenie"
+WORD_GENKI1_6,HIRAGANA,,tatsu,wstawać,u-czasownik
+WORD_GENKI1_6,HIRAGANA,,tabako wo suu,palić,u-czasownik
+WORD_GENKI1_6,HIRAGANA,,wo tsukau,używać,u-czasownik
+WORD_GENKI1_6,HIRAGANA,,wo tetsudau,pomagać,"u-czasownik, osoba/zadanie"
+WORD_GENKI1_6,HIRAGANA,,ni hairu,wchodzić,u-czasownik
+WORD_GENKI1_6,HIRAGANA,,wo motsu,"nosić
+trzymać",u-czasownik
+WORD_GENKI1_6,HIRAGANA,,wo yasumu,być nieobecnym,u-czasownik
+WORD_GENKI1_6,HIRAGANA,,yasumu,odpoczywać,u-czasownik
+WORD_GENKI1_6,HIRAGANA,,wo akeru,otwierać,ru-czasownik
+WORD_GENKI1_6,HIRAGANA,,wo oshieru,uczyć,"ru-czasownik, osoba ni rzecz"
+WORD_GENKI1_6,HIRAGANA,,wo oriru,zdejmować,ru-czasownik
+WORD_GENKI1_6,HIRAGANA,,wo kariru,pożyczać,osoba ni rzecz
+WORD_GENKI1_6,HIRAGANA,,wo shimeru,zamykać,ru-czasownik
+WORD_GENKI1_6,HIRAGANA,,wo tsukeru,włączać,ru-czasownik
+WORD_GENKI1_6,HIRAGANA,,denwa wo kakeru,dzwonić,"ru-czasownik, osoba ni"
+WORD_GENKI1_6,HIRAGANA,,wo wasureru,zapomnieć,ru-czasownik
+WORD_GENKI1_6,HIRAGANA,,wo tsurete kuru,przyprowadzać,czasownik nieregularny
+WORD_GENKI1_6,HIRAGANA,,wo motte kuru,przynosić,czasownik nieregularny
+WORD_GENKI1_6,HIRAGANA,,atode,później,
+WORD_GENKI1_6,HIRAGANA,,osoku,zrobić coś później,
+WORD_GENKI1_6,HIRAGANA,,kara,ponieważ,
+WORD_GENKI1_6,HIRAGANA,,kekkou desu,"To jest w porządku
+To nie będzie potrzebne",
+WORD_GENKI1_6,HIRAGANA,,sugu,w tej chwili,
+WORD_GENKI1_6,HIRAGANA,,hontou,naprawdę,
+WORD_GENKI1_6,HIRAGANA,,yukkuri,"powoli
+wolno
+bez pośpiechu",
+WORD_GENKI1_6,HIRAGANA,,osoi,późny,
+WORD_GENKI1_6,HIRAGANA,,osoku,późno,
+WORD_GENKI1_6,HIRAGANA,,warui,zły,
+WORD_GENKI1_6,HIRAGANA,,kotoba,"słowo
+język
+mowa",
+WORD_GENKI1_6,HIRAGANA,,michi,droga,
+WORD_GENKI1_6,HIRAGANA,,gomi,śmieci,
+WORD_GENKI1_6,HIRAGANA,,wo suteru,wyrzucać,ru-czasownik
+WORD_GENKI1_6,HIRAGANA,,obaasan,babcia,
+WORD_GENKI1_6,HIRAGANA,,ojiisan,dziadek,
+WORD_GENKI1_6,HIRAGANA,,obasan,ciocia,
+WORD_GENKI1_6,HIRAGANA,,ojisan,wujek,
+WORD_GENKI1_6,HIRAGANA,,atama ga ii,mądry,
+WORD_GENKI1_6,HIRAGANA,,atama ga warui,głupi,
+WORD_GENKI1_6,HIRAGANA,,massugu iku,iść prosto,
+WORD_GENKI1_6,HIRAGANA,,migi ni magaru,skręcić w prawo,
+WORD_GENKI1_6,HIRAGANA,,hidari ni magaru,skręcić w lewo,
+WORD_GENKI1_6,HIRAGANA,,hitotsu me no shingou wo migi ni magaru,skręcić w prawo na pierwszych światłach,
+WORD_GENKI1_6,HIRAGANA,,futatsu me no kadou wo hidari ni magaru,skręcić w lewo na drugim skrzyżowaniu,
+WORD_GENKI1_6,HIRAGANA,,michi wo wataru,przez ulicę,
+WORD_GENKI1_6,HIRAGANA,,michi no hidari kawa,lewo strona ulicy,
+WORD_GENKI1_6,HIRAGANA,,michi no migi kawa,prawa strona ulicy,
+WORD_GENKI1_6,HIRAGANA,,okiru,okite,"forma te, ru-czasownik"
+WORD_GENKI1_6,HIRAGANA,,taberu,tabete,"forma te, ru-czasownik"
+WORD_GENKI1_6,HIRAGANA,,neru,nete,"forma te, ru-czasownik"
+WORD_GENKI1_6,HIRAGANA,,miru,mite,"forma te, ru-czasownik"
+WORD_GENKI1_6,HIRAGANA,,iru,ite,"forma te, ru-czasownik"
+WORD_GENKI1_6,HIRAGANA,,dekakeru,dekakete,"forma te, ru-czasownik"
+WORD_GENKI1_6,HIRAGANA,,au,atte,"forma te, u, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,kau,katte,"forma te, u, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,kiku,kiite,"forma te, ku, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,kaku,kaite,"forma te, ku, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,iku,itte,"forma te, ku (nieregularny), u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,oyogu,oyoide,"forma te, gu, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,hanasu,hanashite,"forma te, su, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,matsu,matte,"forma te, tsu, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,nomu,nonde,"forma te, mu, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,yomu,yonde,"forma te, mu, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,kaeru,kaette,"forma te, ru, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,aru,atte,"forma te, ru, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,toru,totte,"forma te, ru, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,wakaru,wakatte,"forma te, ru, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,noru,notte,"forma te, ru, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,yaru,yatte,"forma te, ru, u-czasownik"
+WORD_GENKI1_6,HIRAGANA,,kuru,kite,"forma te, nieregularny"
+WORD_GENKI1_6,HIRAGANA,,suru,shite,"forma te, nieregularny"
+WORD_GENKI1_6,HIRAGANA,,benkyou suru,benkyou shite,"forma te, nieregularny"
+WORD_GENKI1_7,HIRAGANA,,hitori,jedzen człowiek,*
+WORD_GENKI1_7,HIRAGANA,,futari,dwoje ludzi,*
+WORD_GENKI1_7,HIRAGANA,,sannin,troje ludzi,
+WORD_GENKI1_7,HIRAGANA,,yonin,czworo ludzi,*
+WORD_GENKI1_7,HIRAGANA,,gonin,pięcioro ludzi,
+WORD_GENKI1_7,HIRAGANA,,rokunin,sześcioro ludzi,
+WORD_GENKI1_7,HIRAGANA,,shichinin,siedmioro ludzi,s...
+WORD_GENKI1_7,HIRAGANA,,nananin,siedmioro ludzi,n...
+WORD_GENKI1_7,HIRAGANA,,hachinin,ośmioro ludzi,
+WORD_GENKI1_7,HIRAGANA,,kyuunin,dziewięcioro ludzi,
+WORD_GENKI1_7,HIRAGANA,,juunin,dziesięcioro ludzi,
+WORD_GENKI1_7,HIRAGANA,,kami,włosy,
+WORD_GENKI1_7,HIRAGANA,,mimi,ucho,
+WORD_GENKI1_7,HIRAGANA,,me,oko,
+WORD_GENKI1_7,HIRAGANA,,hana,nos,
+WORD_GENKI1_7,HIRAGANA,,kuchi,usta,
+WORD_GENKI1_7,HIRAGANA,,ha,ząb,
+WORD_GENKI1_7,HIRAGANA,,yubi,palce,
+WORD_GENKI1_7,HIRAGANA,,kubi,szyja,
+WORD_GENKI1_7,HIRAGANA,,te,dłoń,
+WORD_GENKI1_7,HIRAGANA,,atama,głowa,
+WORD_GENKI1_7,HIRAGANA,,senaka,plecy,
+WORD_GENKI1_7,HIRAGANA,,oshiri,pośladek,
+WORD_GENKI1_7,HIRAGANA,,kao,twarz,
+WORD_GENKI1_7,HIRAGANA,,kata,ramię,
+WORD_GENKI1_7,HIRAGANA,,mune,klatka piersiowa,
+WORD_GENKI1_7,HIRAGANA,,onaka,brzuch,
+WORD_GENKI1_7,HIRAGANA,,ashi,noga,
+WORD_GENKI1_7,HIRAGANA,,otousan,ojciec,spoza swojej rodziny
+WORD_GENKI1_7,HIRAGANA,,okaasan,matka,spoza swojej rodziny
+WORD_GENKI1_7,HIRAGANA,,oniisan,starszy brat,spoza swojej rodziny
+WORD_GENKI1_7,HIRAGANA,,oneesan,starsza siostra,spoza swojej rodziny
+WORD_GENKI1_7,HIRAGANA,,otoutosan,młodszy brat,spoza swojej rodziny
+WORD_GENKI1_7,HIRAGANA,,imootosan,młodsza siostra,spoza swojej rodziny
+WORD_GENKI1_7,HIRAGANA,,goshujin,mąż,spoza swojej rodziny
+WORD_GENKI1_7,HIRAGANA,,okusan,żona,spoza swojej rodziny
+WORD_GENKI1_7,HIRAGANA,,ojiisan,dziadek,spoza swojej rodziny
+WORD_GENKI1_7,HIRAGANA,,obaasan,babcia,spoza swojej rodziny
+WORD_GENKI1_7,HIRAGANA,,okosan,dziecko,spoza swojej rodziny
+WORD_GENKI1_7,HIRAGANA,,otousan,ojciec,"własna rodzina, nieformalnie"
+WORD_GENKI1_7,HIRAGANA,,okaasan,matka,"własna rodzina, nieformalnie"
+WORD_GENKI1_7,HIRAGANA,,oniisan,starszy brat,"własna rodzina, nieformalnie"
+WORD_GENKI1_7,HIRAGANA,,oneesan,starsza siostra,"własna rodzina, nieformalnie"
+WORD_GENKI1_7,HIRAGANA,,chichi,ojciec,"własna rodzina, formalnie"
+WORD_GENKI1_7,HIRAGANA,,haha,matka,"własna rodzina, formalnie"
+WORD_GENKI1_7,HIRAGANA,,ani,starszy brat,"własna rodzina, formalnie"
+WORD_GENKI1_7,HIRAGANA,,ane,starsza siostra,"własna rodzina, formalnie"
+WORD_GENKI1_7,HIRAGANA,,otouto,młodszy brat,własna rodzina
+WORD_GENKI1_7,HIRAGANA,,imouto,młodsza siostra,własna rodzina
+WORD_GENKI1_7,HIRAGANA,,shujin,mąż,"własna rodzina, formalnie, s..."
+WORD_GENKI1_7,HIRAGANA,,otto,mąż,"własna rodzina, formalnie, o..."
+WORD_GENKI1_7,HIRAGANA,,kanai,żona,"własna rodzina, formalnie, k..."
+WORD_GENKI1_7,HIRAGANA,,tsuma,żona,"własna rodzina, formalnie, t..."
+WORD_GENKI1_7,HIRAGANA,,sofu,dziadek,"własna rodzina, formalnie"
+WORD_GENKI1_7,HIRAGANA,,sobo,babcia,"własna rodzina, formalnie"
+WORD_GENKI1_7,HIRAGANA,,ojiisan,dziadek,"własna rodzina, nieformalnie"
+WORD_GENKI1_7,HIRAGANA,,obaasan,babcia,"własna rodzina, nieformalnie"
+WORD_GENKI1_7,HIRAGANA,,uchi no ko,dziecko,własna rodzina
+WORD_GENKI1_7,HIRAGANA,,ginkouin,pracownik banku,
+WORD_GENKI1_7,HIRAGANA,,in,... jakaś organizacja,
+WORD_GENKI1_7,HIRAGANA,,shoukyou,sytuacja,
+WORD_GENKI1_7,HIRAGANA,,kyoudai,rodzeństwo,
+WORD_GENKI1_7,KATAKANA,,apaato,mieszkanie,
+WORD_GENKI1_7,HIRAGANA,,uta,piosenka,
+WORD_GENKI1_7,HIRAGANA,,otoko no hito,mężczyzna,
+WORD_GENKI1_7,HIRAGANA,,onna no hito,kobieta,
+WORD_GENKI1_7,HIRAGANA,,kaisha,firma,
+WORD_GENKI1_7,HIRAGANA,,kazoku,rodzina,
+WORD_GENKI1_7,HIRAGANA,,kuni,kraj,
+WORD_GENKI1_7,HIRAGANA,,kuruma,samochód,
+WORD_GENKI1_7,HIRAGANA,,konbini,kombini,
+WORD_GENKI1_7,HIRAGANA,,shukudou,stołówka,
+WORD_GENKI1_7,KATAKANA,,Tishetsu,T-shirt,
+WORD_GENKI1_7,HIRAGANA,,megane,okulary,
+WORD_GENKI1_7,HIRAGANA,,atama ga ii,mądry,i-przymiotnik
+WORD_GENKI1_7,HIRAGANA,,kakko ii,dobrze wyglądający,i-przymiotnik
+WORD_GENKI1_7,HIRAGANA,,kawaii,milutki,i-przymiotnik
+WORD_GENKI1_7,HIRAGANA,,se,wzrost,
+WORD_GENKI1_7,HIRAGANA,,se ga takai,wysoki,i-przymiotnik
+WORD_GENKI1_7,HIRAGANA,,se ga hikui,niski,i-przymiotnik
+WORD_GENKI1_7,HIRAGANA,,nagai,długi,i-przymiotnik
+WORD_GENKI1_7,HIRAGANA,,hayai,szybki,i-przymiotnik
+WORD_GENKI1_7,HIRAGANA,,mijikai,krótki,i-przymiotnik
+WORD_GENKI1_7,HIRAGANA,,shinsetsu,miły,na-przymiotnik
+WORD_GENKI1_7,HIRAGANA,,benri,przydatny,na-przymiotnik
+WORD_GENKI1_7,HIRAGANA,,utau,śpiewać,u-czasownik
+WORD_GENKI1_7,HIRAGANA,,kaburu,zakładać,"u-czasownik, na głowę"
+WORD_GENKI1_7,HIRAGANA,,shiru,wiedzieć,u-czasownik
+WORD_GENKI1_7,HIRAGANA,,shitte imasu,wiem,"u-czasownik, forma te"
+WORD_GENKI1_7,HIRAGANA,,shirimasen,nie wiedzieć,"u-czasownik, ~masen"
+WORD_GENKI1_7,HIRAGANA,,ni sumu,mieszkać,u-czasownik
+WORD_GENKI1_7,HIRAGANA,,ni sunde imasu,mieszkać,"u-czasownik, forma te"
+WORD_GENKI1_7,HIRAGANA,,haku,zakładać,"u-czasownik, poniżej paska"
+WORD_GENKI1_7,HIRAGANA,,futoru,zyskiwać na wadze,u-czasownik
+WORD_GENKI1_7,HIRAGANA,,futotte imasu,być grubym,"u-czasownik, forma te"
+WORD_GENKI1_7,HIRAGANA,,megane wo kakeru,zakładać okulary,ru-czasownik
+WORD_GENKI1_7,HIRAGANA,,kiru,zakładać,"ru-czasownik, powyżej paska"
+WORD_GENKI1_7,HIRAGANA,,ni tsutomeru,pracować dla,ru-czasownik
+WORD_GENKI1_7,HIRAGANA,,ni tsutomete imasu,pracować dla,forma te
+WORD_GENKI1_7,HIRAGANA,,yaseru,tracić na wadze,ru-czasownik
+WORD_GENKI1_7,HIRAGANA,,yasete imasu,być chudym,forma te
+WORD_GENKI1_7,HIRAGANA,,wo kekkon suru,żenić się,czasownik nieregularny
+WORD_GENKI1_7,HIRAGANA,,ga,ale,
+WORD_GENKI1_7,HIRAGANA,,nanimo,nic,+ forma negatywna
+WORD_GENKI1_7,HIRAGANA,,nin,ludzi,liczenie
+WORD_GENKI1_7,HIRAGANA,,betsuni,nieszczególnie,+ forma negatywna
+WORD_GENKI1_7,HIRAGANA,,mochiron,oczywiście,
+WORD_GENKI1_7,HIRAGANA,,yokattara,jeśli chcesz,
+WORD_GENKI1_7,HIRAGANA,,iu,mówić,u-czasownik
+WORD_GENKI1_7,HIRAGANA,,iu,wołać,"u-czasownik, z imieniem"
+WORD_GENKI1_7,HIRAGANA,,hashioki,miejsce na pałeczki,
+WORD_GENKI1_7,HIRAGANA,,oku,kłaść,u-czasownik
+WORD_GENKI1_7,HIRAGANA,,osara,talerz,
+WORD_GENKI1_7,HIRAGANA,,wo watasu,dawać,u-czasownik
+WORD_GENKI1_7,HIRAGANA,,furosato,miasto rodzinne,
+WORD_GENKI1_7,HIRAGANA,,shiroi,biały,
+WORD_GENKI1_7,HIRAGANA,,kuroi,czarny,
+WORD_GENKI1_7,HIRAGANA,,akai,czerwony,
+WORD_GENKI1_7,HIRAGANA,,aoi,niebieski,
+WORD_GENKI1_7,HIRAGANA,,kiiroi,żółty,
+WORD_GENKI1_7,HIRAGANA,,iro,kolor,
+WORD_GENKI1_7,HIRAGANA,,pinku iro no,różowy,
+WORD_GENKI1_7,HIRAGANA,,ocha iro no,kolor herbaciany,
+WORD_GENKI1_7,HIRAGANA,,midori,zielony,
+WORD_GENKI1_7,KATAKANA,,sukaato,spódnica,
+WORD_GENKI1_7,HIRAGANA,,zubon,spodnie,
+WORD_GENKI1_7,KATAKANA,,shatsu,koszula,
+WORD_GENKI1_7,KATAKANA,,seetaa,sweter,
+WORD_GENKI1_7,KATAKANA,,toreenaa,bluza,
+WORD_GENKI1_8,HIRAGANA,,asatte,po jutrze,
+WORD_GENKI1_8,HIRAGANA,,ame,deszcz,
+WORD_GENKI1_8,HIRAGANA,,kaishain,pracownik biurowy,
+WORD_GENKI1_8,KATAKANA,,kamera,kamera,
+WORD_GENKI1_8,KATAKANA,,karaoke,karaoke,
+WORD_GENKI1_8,HIRAGANA,,kuuki,powietrze,
+WORD_GENKI1_8,HIRAGANA,,kesa,dzisiejszy poranek,
+WORD_GENKI1_8,HIRAGANA,,kongetsu,aktualny miesiąc,
+WORD_GENKI1_8,HIRAGANA,,shigoto,praca,
+WORD_GENKI1_8,HIRAGANA,,daigakusei,student,
+WORD_GENKI1_8,KATAKANA,,disuko,disco,
+WORD_GENKI1_8,HIRAGANA,,tenkiyohou,prognoza pogody,
+WORD_GENKI1_8,HIRAGANA,,tokoro,miejsce,
+WORD_GENKI1_8,KATAKANA,,tomato,pomidor,
+WORD_GENKI1_8,HIRAGANA,,natsu,lato,
+WORD_GENKI1_8,HIRAGANA,,nanika,coś,
+WORD_GENKI1_8,KATAKANA,,paatii,party,
+WORD_GENKI1_8,KATAKANA,,baabekyuu,grill,
+WORD_GENKI1_8,HIRAGANA,,hashi,pałeczki,
+WORD_GENKI1_8,HIRAGANA,,fuyu,zima,
+WORD_GENKI1_8,KATAKANA,,hoomesutei,"pozostać w domu
+żyć ze swoją lokalną rodziną",
+WORD_GENKI1_8,HIRAGANA,,maishuu,w każdym tygodniu,
+WORD_GENKI1_8,HIRAGANA,,raigetsu,następny miesiąć,
+WORD_GENKI1_8,HIRAGANA,,ga jouzu,dobry w,na-przymiotnik
+WORD_GENKI1_8,HIRAGANA,,ga heta,słaby w,na-przymiotnik
+WORD_GENKI1_8,HIRAGANA,,yuumei,sławny,na-przymiotnik
+WORD_GENKI1_8,HIRAGANA,,ame ga furu,pada deszcz,u-czasownik
+WORD_GENKI1_8,HIRAGANA,,arau,myć,u-czasownik
+WORD_GENKI1_8,HIRAGANA,,iu,mówić,u-czasownik
+WORD_GENKI1_8,HIRAGANA,,ga iru,potrzebować,u-czasownik
+WORD_GENKI1_8,HIRAGANA,,ni osokunaru,być spóźniony,"na, u-czasownik"
+WORD_GENKI1_8,HIRAGANA,,omou,myśleć,u-czasownik
+WORD_GENKI1_8,HIRAGANA,,kiru,ciąć,u-czasownik
+WORD_GENKI1_8,HIRAGANA,,tsukuru,tworzyć,u-czasownik
+WORD_GENKI1_8,HIRAGANA,,motte iku,brać,"coś, u-czasownik"
+WORD_GENKI1_8,HIRAGANA,,wo jirojiro miru,spojrzeć,ru-czasownik
+WORD_GENKI1_8,HIRAGANA,,hajimeru,zaczynać,ru-czasownik
+WORD_GENKI1_8,HIRAGANA,,wo unten suru,prowadzić,czasowniki nieregularne
+WORD_GENKI1_8,HIRAGANA,,sentaku suru,robić pranie,czasownik nieregularny
+WORD_GENKI1_8,HIRAGANA,,souji suru,czyścić,czasownik nieregularny
+WORD_GENKI1_8,HIRAGANA,,ryouri suru,gotować,czasownik nieregularny
+WORD_GENKI1_8,HIRAGANA,,uun,nie,u...
+WORD_GENKI1_8,HIRAGANA,,un,tak,u...
+WORD_GENKI1_8,HIRAGANA,,kanpai,na zdrowie,toast
+WORD_GENKI1_8,HIRAGANA,,zannen,trudno,... desu ne
+WORD_GENKI1_8,HIRAGANA,,mada,jeszcze nie,+ forma negatywna
+WORD_GENKI1_8,HIRAGANA,,minna,wszyscy,
+WORD_GENKI1_8,HIRAGANA,,nanika,coś,
+WORD_GENKI1_8,HIRAGANA,,dareka,ktoś,
+WORD_GENKI1_8,HIRAGANA,,doreka,któryjś,
+WORD_GENKI1_8,HIRAGANA,,dokoka,gdzieś,
+WORD_GENKI1_8,HIRAGANA,,nanimo,nic,
+WORD_GENKI1_8,HIRAGANA,,daremo,nikt,
+WORD_GENKI1_8,HIRAGANA,,doremo,żaden,
+WORD_GENKI1_8,HIRAGANA,,dokomo,nigdzie,
+WORD_GENKI1_8,HIRAGANA,,nitsuite,o czymś,
+WORD_GENKI1_8,HIRAGANA,,tsukarete iru,być zmęczony,
+WORD_GENKI1_8,HIRAGANA,,mazu,pierwszy,
+WORD_GENKI1_8,HIRAGANA,,kotaeru,odpowiadać,
+WORD_GENKI1_8,HIRAGANA,,tsugini,drugi,
+WORD_GENKI1_8,HIRAGANA,,saigoni,ostatni,
+WORD_GENKI1_9,HIRAGANA,,iiko,dobre dziecko,
+WORD_GENKI1_9,HIRAGANA,,iro,kolor,
+WORD_GENKI1_9,HIRAGANA,,obentou,pudełko na jedzenie,
+WORD_GENKI1_9,HIRAGANA,,onsen,gorące źródło,
+WORD_GENKI1_9,HIRAGANA,,kabuki,Kabuki,tradycyjny Japoński teatr
+WORD_GENKI1_9,KATAKANA,,gitaa,gitara,
+WORD_GENKI1_9,HIRAGANA,,kusuri,lekarstwo,
+WORD_GENKI1_9,HIRAGANA,,kusuri wo nomu,brać lekarstwo,
+WORD_GENKI1_9,KATAKANA,,konseeto,koncert,
+WORD_GENKI1_9,HIRAGANA,,kondo,następnym razem,
+WORD_GENKI1_9,HIRAGANA,,sakubun,wypracowanie,
+WORD_GENKI1_9,HIRAGANA,,shiken,egzamin,
+WORD_GENKI1_9,HIRAGANA,,shinkansen,Shinkansen,szybka kolej
+WORD_GENKI1_9,KATAKANA,,sukii,narty,
+WORD_GENKI1_9,HIRAGANA,,sengetsu,poprzedni miesiąc,
+WORD_GENKI1_9,HIRAGANA,,tango,słownictwo,
+WORD_GENKI1_9,KATAKANA,,piano,pianino,
+WORD_GENKI1_9,HIRAGANA,,byouki,choroba,
+WORD_GENKI1_9,HIRAGANA,,aoi,niebeski,i-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,akai,czerwony,i-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,kuroi,czarny,i-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,sabishii,samotny,i-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,shiroi,biały,i-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,wakai,młody,i-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,ijiwaru,złośliwy,na-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,odoru,tańczyć,u-czasownik
+WORD_GENKI1_9,HIRAGANA,,ga owaru,kończyć,"u-czasownik, coś"
+WORD_GENKI1_9,HIRAGANA,,ninki ga aru,być popularny,u-czasownik
+WORD_GENKI1_9,HIRAGANA,,ga hajimaru,rozpoczynać,"u-czasownik, coś"
+WORD_GENKI1_9,HIRAGANA,,hiku,grać,"u-czasownik, instrument klawiszowy"
+WORD_GENKI1_9,HIRAGANA,,tataku,grać,"u-czasownik, na bębnie"
+WORD_GENKI1_9,HIRAGANA,,fuku,grać,"u-czasownik, instrument dmuchany"
+WORD_GENKI1_9,HIRAGANA,,wo morau,dostać,"u-czasownik, coś, osoba ni rzecz"
+WORD_GENKI1_9,HIRAGANA,,oboeru,zapamiętać,ru-czasownik
+WORD_GENKI1_9,HIRAGANA,,ni deru,pojawić się,ru-czasownik
+WORD_GENKI1_9,HIRAGANA,,wo deru,wychodzić,ru-czasownik
+WORD_GENKI1_9,HIRAGANA,,undou suru,ćwiczenia,"czasownik nieregularny, fizyczne"
+WORD_GENKI1_9,HIRAGANA,,sanpo suru,spacerować,czasownik nieregularny
+WORD_GENKI1_9,HIRAGANA,,kara,od,
+WORD_GENKI1_9,HIRAGANA,,zehi,koniecznie,
+WORD_GENKI1_9,HIRAGANA,,tokorode,przy okazji,
+WORD_GENKI1_9,HIRAGANA,,minna,wszyscy,
+WORD_GENKI1_9,HIRAGANA,,mou,już,
+WORD_GENKI1_9,HIRAGANA,,mada,jeszcze,
+WORD_GENKI1_9,HIRAGANA,,hitotsu,jeden,"liczby, liczenie małych przedmiotów"
+WORD_GENKI1_9,HIRAGANA,,futatsu,dwa,"liczby, liczenie małych przedmiotów"
+WORD_GENKI1_9,HIRAGANA,,mittsu,trzy,"liczby, liczenie małych przedmiotów"
+WORD_GENKI1_9,HIRAGANA,,yottsu,cztery,"liczby, liczenie małych przedmiotów"
+WORD_GENKI1_9,HIRAGANA,,itsutsu,pięć,"liczby, liczenie małych przedmiotów"
+WORD_GENKI1_9,HIRAGANA,,muttsu,sześć,"liczby, liczenie małych przedmiotów"
+WORD_GENKI1_9,HIRAGANA,,nanatsu,siedem,"liczby, liczenie małych przedmiotów"
+WORD_GENKI1_9,HIRAGANA,,yattsu,osiem,"liczby, liczenie małych przedmiotów"
+WORD_GENKI1_9,HIRAGANA,,kokonotsu,dziewięć,"liczby, liczenie małych przedmiotów"
+WORD_GENKI1_9,HIRAGANA,,too,dziesięć,"liczby, liczenie małych przedmiotów"
+WORD_GENKI1_9,HIRAGANA,,soshite,następnie,
+WORD_GENKI1_9,HIRAGANA,,sorekara,no i,
+WORD_GENKI1_9,HIRAGANA,,toshokan,biblioteka,w budynku
+WORD_GENKI1_9,HIRAGANA,,toshoshitsu,biblioteka,w sali
+WORD_GENKI1_9,HIRAGANA,,kiiroi,żółty,i-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,chairoi,brązowy,i-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,midori,zielony,na-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,haiiro,szary,na-przymiotnik
+WORD_GENKI1_9,KATAKANA,,pinku,różowy,na-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,gin'iro,srebny,na-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,murasaki,fioletowy,na-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,mizuiro,jasno niebieski,na-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,kin'iro,złoty,na-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,nikki,pamiętnik,
+WORD_GENKI1_9,HIRAGANA,,gozenchuu,przed południem,
+WORD_GENKI1_9,KATAKANA,,hosutofamirii,rodzina goszczaca,
+WORD_GENKI1_9,HIRAGANA,,gochisou,dobre jedzenie,
+WORD_GENKI1_9,HIRAGANA,,iroiro,różne,na-przymiotnik
+WORD_GENKI1_9,HIRAGANA,,hanashi wo suru,rozmawiać,
+WORD_GENKI1_10,HIRAGANA,,aki,jesień,
+WORD_GENKI1_10,HIRAGANA,,isha,lekarz,
+WORD_GENKI1_10,HIRAGANA,,eki,stacja,
+WORD_GENKI1_10,HIRAGANA,,okanemochi,bogady człowiek,
+WORD_GENKI1_10,HIRAGANA,,kao,twarz,
+WORD_GENKI1_10,HIRAGANA,,kisetsu,sezon,
+WORD_GENKI1_10,KATAKANA,,kurejitto kaado,karta kredytowa,
+WORD_GENKI1_10,HIRAGANA,,kotoshi,aktualny rok,
+WORD_GENKI1_10,KATAKANA,,sakkaa,piłka nożna,
+WORD_GENKI1_10,KATAKANA,,shatsu,koszula,
+WORD_GENKI1_10,HIRAGANA,,seikatsu,życie,
+WORD_GENKI1_10,HIRAGANA,,sekai,świat,
+WORD_GENKI1_10,HIRAGANA,,chikatetsu,metro,
+WORD_GENKI1_10,HIRAGANA,,tebukuro,rękawiczki,
+WORD_GENKI1_10,HIRAGANA,,tokoya,fryzura,męska
+WORD_GENKI1_10,HIRAGANA,,haru,wiosna,
+WORD_GENKI1_10,KATAKANA,,pantsu,majtki,
+WORD_GENKI1_10,HIRAGANA,,biyouin,fryzura,damska
+WORD_GENKI1_10,HIRAGANA,,bin,lot,
+WORD_GENKI1_10,HIRAGANA,,fune,statek,
+WORD_GENKI1_10,HIRAGANA,,yakyuu,baseball,
+WORD_GENKI1_10,HIRAGANA,,yuumeijin,celebryta,
+WORD_GENKI1_10,HIRAGANA,,yoyaku,rezerwacja,
+WORD_GENKI1_10,HIRAGANA,,raigakki,następny semestr,
+WORD_GENKI1_10,HIRAGANA,,ringo,jabłko,
+WORD_GENKI1_10,HIRAGANA,,atatakai,ciepło,i-przymiotnik
+WORD_GENKI1_10,HIRAGANA,,osoi,"powoli
+spóźniony",i-przymiotnik
+WORD_GENKI1_10,HIRAGANA,,suzushii,zimny,"tylko do pogody, i-przymiotnik"
+WORD_GENKI1_10,HIRAGANA,,tsumetai,zimny,"do ludzi/rzeczy, i-przymiotnik"
+WORD_GENKI1_10,HIRAGANA,,nemui,śpiący,i-przymiotnik
+WORD_GENKI1_10,HIRAGANA,,kantan,łatwy,na-przymiotnik
+WORD_GENKI1_10,HIRAGANA,,kakaru,zajmować,"czas/pieniądze, bez partykułu, u-czasownik"
+WORD_GENKI1_10,HIRAGANA,,ni tomaru,zostać,"w hotelu i etc, u-czasownik"
+WORD_GENKI1_10,HIRAGANA,,naru,stawać się,u-czasownik
+WORD_GENKI1_10,HIRAGANA,,harau,płacić,u-czasownik
+WORD_GENKI1_10,HIRAGANA,,kimeru,decydować,ru-czasownik
+WORD_GENKI1_10,HIRAGANA,,renshuu suru,ćwiczyć,"praktykować, czasownik nieregularny"
+WORD_GENKI1_10,HIRAGANA,,aruite,piechotą,
+WORD_GENKI1_10,HIRAGANA,,ichiban,najlepszy,
+WORD_GENKI1_10,HIRAGANA,,ka,albo,"~ x ~, wyrażenie"
+WORD_GENKI1_10,HIRAGANA,,kagetsu,przez ... miesięcy,
+WORD_GENKI1_10,HIRAGANA,,go,"w ... czasie, po ...",
+WORD_GENKI1_10,HIRAGANA,,konogoro,te dni,
+WORD_GENKI1_10,HIRAGANA,,shuukan,tygodnie,przedział czasu
+WORD_GENKI1_10,HIRAGANA,,de,czym,"partykuła, metoda trasportu, czym"
+WORD_GENKI1_10,HIRAGANA,,douyatte,jak,
+WORD_GENKI1_10,HIRAGANA,,dochira,które,bardziej uprzejme
+WORD_GENKI1_10,HIRAGANA,,docchi,które,mniej uprzejme
+WORD_GENKI1_10,HIRAGANA,,donogurai,"jak wiele
+jak długo",
+WORD_GENKI1_10,HIRAGANA,,nen,lata,
+WORD_GENKI1_10,HIRAGANA,,hayaku,"wcześnie
+szybko",zrobić coś
+WORD_GENKI1_10,HIRAGANA,,tsumori desu,mam zamiar,+ czasownik w formie prostej
+WORD_GENKI1_10,HIRAGANA,,aruite iku,iść na piechotę,
