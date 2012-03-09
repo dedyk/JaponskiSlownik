@@ -2005,7 +2005,53 @@ public class GenkiBookWords {
 	
 	private static void addPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries, 
 			DictionaryEntryType dictionaryEntryType, WordType wordType, String japanese, String[] romajiArray, String[] polishTranslateList, String info) {
-				
+		
+		System.out.print("addPolishJapaneseEntry(polishJapaneseEntries, dictionaryEntryType, wordType, ");
+		
+		if (japanese == null) {
+			System.out.print("null");
+		} else {
+			System.out.print("\"" + japanese + "\"");
+		}
+		
+		System.out.print(", new String[] { ");
+		
+		for (int idx = 0; idx < romajiArray.length; ++idx) {
+			String currentRomaji = romajiArray[idx];
+			
+			System.out.print("\"" + currentRomaji + "\"");
+			
+			if (idx != romajiArray.length - 1) {
+				System.out.print(", ");
+			}
+		}
+		
+		System.out.print(" }, new String[] { ");
+		
+		for (int idx = 0; idx < polishTranslateList.length; ++idx) {
+			String currentPolishTranslate = polishTranslateList[idx];
+			
+			System.out.print("\"" + currentPolishTranslate + "\"");
+			
+			if (idx != polishTranslateList.length - 1) {
+				System.out.print(", ");
+			}
+		}
+		
+		System.out.print(" }, ");
+		
+		if (info == null) {
+			System.out.print("null");
+		} else {
+			System.out.print("\"" + info + "\"");
+		}
+		
+		System.out.println(");");
+		
+		if (1 == 1) {
+			return;
+		}
+		
 		PolishJapaneseEntry entry = new PolishJapaneseEntry();
 		
 		entry.setGroupName(dictionaryEntryType.getName());
