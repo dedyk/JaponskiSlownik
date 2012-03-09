@@ -54,10 +54,14 @@ public class CsvGenerator {
 			List<PolishTranslate> polishTranslates = polishJapaneseEntry.getPolishTranslates();
 
 			if (polishTranslates != null) {
-				for (PolishTranslate currentPolishTranslate : polishTranslates) {
-
+				for (int idxPolishTranslates = 0; idxPolishTranslates < polishTranslates.size(); ++idxPolishTranslates) {
+					PolishTranslate currentPolishTranslate = polishTranslates.get(idxPolishTranslates);
+					
 					sb.append(currentPolishTranslate.getWord()).append("|");
-					sb.append(polishJapaneseEntry.getInfo());
+					
+					if (idxPolishTranslates == polishTranslates.size() - 1) {
+						sb.append(polishJapaneseEntry.getInfo() != null ? polishJapaneseEntry.getInfo() : "");
+					}
 
 					sb.append(";");
 				}
