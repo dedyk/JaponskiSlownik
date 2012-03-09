@@ -86,12 +86,13 @@ public class JapannakaHtmlReader {
 							
 							polishJapaneseEntry.setId(id);
 							
+							polishJapaneseEntry.setWordType(WordType.HIRAGANA);
+							
 							List<RomajiEntry> romajiList = new ArrayList<RomajiEntry>();
 							
 							RomajiEntry romajiEntry = new RomajiEntry();
 							
 							romajiEntry.setRomaji(romaji);
-							romajiEntry.setWordType(WordType.HIRAGANA);
 							
 							romajiList.add(romajiEntry);
 							

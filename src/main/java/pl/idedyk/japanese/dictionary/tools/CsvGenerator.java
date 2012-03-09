@@ -12,7 +12,7 @@ import pl.idedyk.japanese.dictionary.japannaka.utils.Utils;
 
 public class CsvGenerator {
 
-	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
+	public static void generateDictionaryApplicationResult(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
 		
 		String lastGroupName = null;
 		
@@ -33,7 +33,7 @@ public class CsvGenerator {
 			for (int romIdx = 0; romIdx < romajiList.size(); ++romIdx) {
 				RomajiEntry currentRomajiEntry = romajiList.get(romIdx);
 								
-				sb.append(currentRomajiEntry.getWordType().getPrintable() + ":" + Utils.replaceChars(currentRomajiEntry.getRomaji()));
+				sb.append(polishJapaneseEntry.getWordType().getPrintable() + ":" + Utils.replaceChars(currentRomajiEntry.getRomaji()));
 
 				if (romIdx != romajiList.size() - 1) {
 					sb.append(",");

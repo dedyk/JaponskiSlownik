@@ -2,11 +2,15 @@ package pl.idedyk.japanese.dictionary.dto;
 
 import java.util.List;
 
+import pl.idedyk.japanese.dictionary.genki.WordType;
+
 public class PolishJapaneseEntry {
 	
 	private int id;
 	
 	private String groupName;
+	
+	private WordType wordType;
 	
 	private List<RomajiEntry> romajiList;
 	
@@ -62,5 +66,13 @@ public class PolishJapaneseEntry {
 
 	public void setGroupName(String groupName) {
 		this.groupName = groupName;
+	}
+
+	public WordType getWordType() {
+		return wordType;
+	}
+
+	public void setWordType(WordType wordType) {
+		this.wordType = wordType;
 	}
 }

@@ -42,10 +42,10 @@ public class GenkiBookWords {
 		generateKanjiImages(polishJapaneseKanjiEntries, charsCache, kanjiOutputDir);
 		validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries, katakanaEntries);
 		
-		CsvGenerator.generateCsv("output/japanese_polish_dictionary.properties", polishJapaneseEntries);
+		CsvGenerator.generateDictionaryApplicationResult("output/japanese_polish_dictionary.properties", polishJapaneseEntries);
 		CsvGenerator.generateKanaEntriesCsv(kanjiOutputDir + "/hiragana.properties", hiraganaEntries);
 		CsvGenerator.generateKanaEntriesCsv(kanjiOutputDir + "/katakana.properties", katakanaEntries);
-		CsvGenerator.generateCsv(kanjiOutputDir + "/kanji_dictionary.properties", polishJapaneseKanjiEntries);
+		CsvGenerator.generateDictionaryApplicationResult(kanjiOutputDir + "/kanji_dictionary.properties", polishJapaneseKanjiEntries);
 		
 		System.out.println("Done");
 	}
@@ -2021,12 +2021,13 @@ public class GenkiBookWords {
 		
 		entry.setJapanese(japanese);
 		
+		entry.setWordType(wordType);
+		
 		List<RomajiEntry> romajiList = new ArrayList<RomajiEntry>();
 		for (String romaji : romajiArray) {
 			RomajiEntry romajiEntry = new RomajiEntry();
 			
 			romajiEntry.setRomaji(romaji);
-			romajiEntry.setWordType(wordType);
 			
 			romajiList.add(romajiEntry);
 		}
@@ -2072,9 +2073,9 @@ public class GenkiBookWords {
 			List<RomajiEntry> romajiList = polishJapaneseEntry.getRomajiList();
 			
 			for (RomajiEntry currentRomaji : romajiList) {
-				if (currentRomaji.getWordType() == WordType.HIRAGANA) { 
+				if (polishJapaneseEntry.getWordType() == WordType.HIRAGANA) { 
 					validateJapaneseHiraganaWord(hiraganaCache, currentRomaji.getRomaji());
-				} else if (currentRomaji.getWordType() == WordType.KATAKANA) { 
+				} else if (polishJapaneseEntry.getWordType() == WordType.KATAKANA) { 
 					validateJapaneseKitakanaWord(kitakanaCache, currentRomaji.getRomaji());
 				} else {
 					throw new RuntimeException("Bard word type");
