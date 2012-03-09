@@ -2,13 +2,14 @@ package pl.idedyk.japanese.dictionary.dto;
 
 import java.util.List;
 
+import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.genki.WordType;
 
 public class PolishJapaneseEntry {
 	
 	private int id;
 	
-	private String groupName;
+	private DictionaryEntryType groupName;
 	
 	private WordType wordType;
 	
@@ -19,6 +20,8 @@ public class PolishJapaneseEntry {
 	private String japaneseImagePath;
 	
 	private List<PolishTranslate> polishTranslates;
+	
+	private String info;
 
 	public List<RomajiEntry> getRomajiList() {
 		return romajiList;
@@ -60,11 +63,11 @@ public class PolishJapaneseEntry {
 		this.japaneseImagePath = japaneseImagePath;
 	}
 
-	public String getGroupName() {
+	public DictionaryEntryType getGroupName() {
 		return groupName;
 	}
 
-	public void setGroupName(String groupName) {
+	public void setGroupName(DictionaryEntryType groupName) {
 		this.groupName = groupName;
 	}
 
@@ -74,5 +77,13 @@ public class PolishJapaneseEntry {
 
 	public void setWordType(WordType wordType) {
 		this.wordType = wordType;
+	}
+
+	public String getInfo() {
+		return info;
+	}
+
+	public void setInfo(String info) {
+		this.info = info;
 	}
 }

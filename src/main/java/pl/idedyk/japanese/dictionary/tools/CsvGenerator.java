@@ -1,14 +1,16 @@
 package pl.idedyk.japanese.dictionary.tools;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
+
+import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishTranslate;
 import pl.idedyk.japanese.dictionary.dto.RomajiEntry;
-import pl.idedyk.japanese.dictionary.japannaka.utils.Utils;
 
 public class CsvGenerator {
 
@@ -20,7 +22,7 @@ public class CsvGenerator {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
-			String polishJapaneseEntryGroupName = polishJapaneseEntry.getGroupName();
+			String polishJapaneseEntryGroupName = polishJapaneseEntry.getGroupName().getName();
 			
 			if (lastGroupName == null || lastGroupName.equals(polishJapaneseEntryGroupName) == false) {
 				sb.append("---" + polishJapaneseEntryGroupName + "---\n");
@@ -33,7 +35,7 @@ public class CsvGenerator {
 			for (int romIdx = 0; romIdx < romajiList.size(); ++romIdx) {
 				RomajiEntry currentRomajiEntry = romajiList.get(romIdx);
 								
-				sb.append(polishJapaneseEntry.getWordType().getPrintable() + ":" + Utils.replaceChars(currentRomajiEntry.getRomaji()));
+				sb.append(polishJapaneseEntry.getWordType().getPrintable() + ":" + currentRomajiEntry.getRomaji());
 
 				if (romIdx != romajiList.size() - 1) {
 					sb.append(",");
@@ -54,17 +56,8 @@ public class CsvGenerator {
 			if (polishTranslates != null) {
 				for (PolishTranslate currentPolishTranslate : polishTranslates) {
 
-					sb.append(Utils.replaceChars(currentPolishTranslate.getWord())).append("|");
-
-					if (currentPolishTranslate.getInfo() != null && currentPolishTranslate.getInfo().size() > 0) {
-						for (int infoIdx = 0; infoIdx < currentPolishTranslate.getInfo().size(); ++infoIdx) {								
-							sb.append(Utils.replaceChars(currentPolishTranslate.getInfo().get(infoIdx)));
-
-							if (infoIdx != currentPolishTranslate.getInfo().size() - 1) {
-								sb.append(",");
-							}
-						}
-					}
+					sb.append(currentPolishTranslate.getWord()).append("|");
+					sb.append(polishJapaneseEntry.getInfo());
 
 					sb.append(";");
 				}
@@ -81,6 +74,24 @@ public class CsvGenerator {
 
 		pw.close();
 	}
+	
+	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
+		
+		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			csvWriter.write(polishJapaneseEntry.getGroupName().toString());
+			csvWriter.write(polishJapaneseEntry.getWordType().toString());
+			csvWriter.write(polishJapaneseEntry.getJapanese());
+			
+			csvWriter.endRecord();
+		}
+		
+		csvWriter.close();
+	}
+	
+	//private static String convertArrayToString(String)
 
 	public static void generateKanaEntriesCsv(String outputFile, List<KanaEntry> kanaEntries) throws IOException {
 		

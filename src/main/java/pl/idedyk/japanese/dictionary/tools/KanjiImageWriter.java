@@ -8,8 +8,6 @@ import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import javax.imageio.ImageIO;
@@ -17,14 +15,13 @@ import javax.imageio.ImageIO;
 import org.apache.commons.codec.binary.Base64;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.japannaka.JapannakaHtmlReader;
-import pl.idedyk.japanese.dictionary.japannaka.exception.JapannakaException;
-import pl.idedyk.japanese.dictionary.japannaka.utils.Utils;
+import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
 public class KanjiImageWriter {
 
 	public static void main(String[] args) throws Exception {
 		
+		/*
 		String imageDir = "images_output";
 		
 		List<PolishJapaneseEntry> japanesePolishDictionary = 
@@ -38,10 +35,11 @@ public class KanjiImageWriter {
 			
 			createKanjiImage(kanjiCache, imageDir, polishJapaneseEntry);
 		}
+		*/
 	}
 	
 	public static void createKanjiImage(Map<String, String> kanjiCache, String imageDir, PolishJapaneseEntry polishJapaneseEntry) 
-			throws JapannakaException {
+			throws JapaneseDictionaryException {
 		
 		String kanji = polishJapaneseEntry.getJapanese();
 		
@@ -63,7 +61,7 @@ public class KanjiImageWriter {
 		kanjiCache.put(kanji, fileName);
 	}
 	
-	public static void createNewKanjiImage(Map<String, String> cache, String imageDir, PolishJapaneseEntry polishJapaneseEntry) throws JapannakaException {
+	public static void createNewKanjiImage(Map<String, String> cache, String imageDir, PolishJapaneseEntry polishJapaneseEntry) throws JapaneseDictionaryException {
 		
 		String japaneseImagePath = "";
 		
@@ -85,7 +83,7 @@ public class KanjiImageWriter {
 		polishJapaneseEntry.setJapaneseImagePath(japaneseImagePath);
 	}
 	
-	public static String createNewKanjiImage(Map<String, String> cache, String imageDir, String word) throws JapannakaException {
+	public static String createNewKanjiImage(Map<String, String> cache, String imageDir, String word) throws JapaneseDictionaryException {
 		
 		String currentWordFileNameInCache = cache.get(word);
 		
@@ -105,7 +103,7 @@ public class KanjiImageWriter {
 		return currentWordFileNameInCache;
 	}
 	
-	private static void createImage(File imageFile, String word) throws JapannakaException {
+	private static void createImage(File imageFile, String word) throws JapaneseDictionaryException {
 		
 		BufferedImage bufferedImage = new BufferedImage(640, 480, BufferedImage.TYPE_BYTE_GRAY);
 		
@@ -136,7 +134,7 @@ public class KanjiImageWriter {
 		try {
 			ImageIO.write(bufferedImageNew, getImageFileFormat(), imageFile);
 		} catch (IOException e) {
-			throw new JapannakaException("Can't create image file: " + e.getMessage());
+			throw new JapaneseDictionaryException("Can't create image file: " + e.getMessage());
 		}
 	}
 	
@@ -151,7 +149,7 @@ public class KanjiImageWriter {
 		String fileName = null;
 		
 		while(true) {
-			fileName = Utils.replaceChars(new String(Base64.encodeBase64(word.getBytes()))) + postFix + "." + getImageFileFormat();
+			fileName = new String(Base64.encodeBase64(word.getBytes())) + postFix + "." + getImageFileFormat();
 			
 			String cacheKey = "File:" + fileName.toLowerCase();
 			

@@ -10,13 +10,13 @@ import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishTranslate;
 import pl.idedyk.japanese.dictionary.dto.RomajiEntry;
-import pl.idedyk.japanese.dictionary.japannaka.exception.JapannakaException;
+import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.CsvGenerator;
 import pl.idedyk.japanese.dictionary.tools.KanjiImageWriter;
 
 public class GenkiBookWords {
 
-	public static void main(String[] args) throws IOException, JapannakaException {
+	public static void main(String[] args) throws IOException, JapaneseDictionaryException {
 
 		String kanjiOutputDir = "kanji_output";
 		Map<String, String> charsCache = new HashMap<String, String>();
@@ -47,10 +47,12 @@ public class GenkiBookWords {
 		CsvGenerator.generateKanaEntriesCsv(kanjiOutputDir + "/katakana.properties", katakanaEntries);
 		CsvGenerator.generateDictionaryApplicationResult(kanjiOutputDir + "/kanji_dictionary.properties", polishJapaneseKanjiEntries);
 		
+		CsvGenerator.generateCsv("input/word.csv", polishJapaneseEntries);
+		
 		System.out.println("Done");
 	}
 
-	private static void generateHiraganaImages(List<KanaEntry> hiraganaEntries, Map<String, String> kanjiCache, String kanjiOutputDir) throws JapannakaException {
+	private static void generateHiraganaImages(List<KanaEntry> hiraganaEntries, Map<String, String> kanjiCache, String kanjiOutputDir) throws JapaneseDictionaryException {
 		
 		hiraganaEntries.add(new KanaEntry("あ", "a"));
 		hiraganaEntries.add(new KanaEntry("い", "i"));
@@ -192,7 +194,7 @@ public class GenkiBookWords {
 		}
 	}
 
-	private static void generateKatakanaImages(List<KanaEntry> katakanaEntries, Map<String, String> kanjiCache, String kanjiOutputDir) throws JapannakaException {
+	private static void generateKatakanaImages(List<KanaEntry> katakanaEntries, Map<String, String> kanjiCache, String kanjiOutputDir) throws JapaneseDictionaryException {
 		
 		katakanaEntries.add(new KanaEntry("ア", "a"));
 		katakanaEntries.add(new KanaEntry("イ", "i"));
@@ -1971,7 +1973,7 @@ public class GenkiBookWords {
 		return result;
 	}
 	
-	private static void generateKanjiImages(List<PolishJapaneseEntry> polishJapaneseEntries, Map<String, String> kanjiCache, String imageDir) throws JapannakaException {
+	private static void generateKanjiImages(List<PolishJapaneseEntry> polishJapaneseEntries, Map<String, String> kanjiCache, String imageDir) throws JapaneseDictionaryException {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
@@ -2008,15 +2010,14 @@ public class GenkiBookWords {
 				
 		PolishJapaneseEntry entry = new PolishJapaneseEntry();
 		
-		entry.setGroupName(dictionaryEntryType.getName());
+		entry.setGroupName(dictionaryEntryType);
 		
 		List<PolishTranslate> polishTranslateList2 = new ArrayList<PolishTranslate>();
 		
 		for (int idx = 0; idx < polishTranslateList.length; ++idx) {
 			String currentPolishTranslate = polishTranslateList[idx];
 			
-			polishTranslateList2.add(createPolishTranslate(currentPolishTranslate, 
-					(idx != polishTranslateList.length - 1 ? null : info)));
+			polishTranslateList2.add(createPolishTranslate(currentPolishTranslate));
 		}
 		
 		entry.setJapanese(japanese);
@@ -2034,28 +2035,21 @@ public class GenkiBookWords {
 		
 		entry.setRomajiList(romajiList);
 		entry.setPolishTranslates(polishTranslateList2);
+		entry.setInfo(info);
 		
 		polishJapaneseEntries.add(entry);
 	}
 	
-	private static PolishTranslate createPolishTranslate(String word, String info) {
+	private static PolishTranslate createPolishTranslate(String word) {
 		PolishTranslate polishTranslate = new PolishTranslate();
 		
 		polishTranslate.setWord(word);
-		
-		if (info != null) {
-			List<String> infoList = new ArrayList<String>();
-		
-			infoList.add(info);
-			
-			polishTranslate.setInfo(infoList);
-		}
-		
+				
 		return polishTranslate;
 	}
 	
 	private static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, List<KanaEntry> hiraganaEntries,
-			List<KanaEntry> kitakanaEntries) throws JapannakaException {
+			List<KanaEntry> kitakanaEntries) throws JapaneseDictionaryException {
 		
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
 		
@@ -2084,7 +2078,7 @@ public class GenkiBookWords {
 		}
 	}
 	
-	private static void validateJapaneseHiraganaWord(Map<String, KanaEntry> hiraganaCache, String word) throws JapannakaException {
+	private static void validateJapaneseHiraganaWord(Map<String, KanaEntry> hiraganaCache, String word) throws JapaneseDictionaryException {
 		String remaingRestChars = null;
 		
 		String currentRestChars = "";
@@ -2104,7 +2098,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get("ttsu");
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "" + currentRestChars.charAt(1);
@@ -2121,7 +2115,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";
@@ -2137,7 +2131,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2153,7 +2147,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2165,7 +2159,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2177,7 +2171,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2189,7 +2183,7 @@ public class GenkiBookWords {
 					KanaEntry kanaEntry = hiraganaCache.get("n");
 					
 					if (kanaEntry == null) {
-						throw new JapannakaException("Can't find kanaEntry!");
+						throw new JapaneseDictionaryException("Can't find kanaEntry!");
 					}
 					
 					currentRestChars = "";
@@ -2209,7 +2203,7 @@ public class GenkiBookWords {
 					KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 					
 					if (kanaEntry == null) {
-						throw new JapannakaException("Can't find kanaEntry!");
+						throw new JapaneseDictionaryException("Can't find kanaEntry!");
 					}
 					
 					currentRestChars = "";
@@ -2221,7 +2215,7 @@ public class GenkiBookWords {
 						KanaEntry kanaEntry = hiraganaCache.get("n");
 						
 						if (kanaEntry == null) {
-							throw new JapannakaException("Can't find kanaEntry!");
+							throw new JapaneseDictionaryException("Can't find kanaEntry!");
 						}
 						
 						currentRestChars = currentRestChars.substring(1);
@@ -2234,7 +2228,7 @@ public class GenkiBookWords {
 					KanaEntry kanaEntry = hiraganaCache.get("n");
 					
 					if (kanaEntry == null) {
-						throw new JapannakaException("Can't find kanaEntry!");
+						throw new JapaneseDictionaryException("Can't find kanaEntry!");
 					}
 					
 					currentRestChars = "";
@@ -2252,7 +2246,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2261,7 +2255,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2277,7 +2271,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2288,7 +2282,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2304,7 +2298,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2314,7 +2308,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2330,7 +2324,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2342,7 +2336,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2354,7 +2348,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2367,7 +2361,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2383,7 +2377,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2399,7 +2393,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = hiraganaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2409,11 +2403,11 @@ public class GenkiBookWords {
 		}
 		
 		if (remaingRestChars.equals("") == false) {
-			throw new JapannakaException("Validate error for word: " + word + ", remaing: " + remaingRestChars);
+			throw new JapaneseDictionaryException("Validate error for word: " + word + ", remaing: " + remaingRestChars);
 		}		
 	}
 
-	private static void validateJapaneseKitakanaWord(Map<String, KanaEntry> kitakanaCache, String word) throws JapannakaException {
+	private static void validateJapaneseKitakanaWord(Map<String, KanaEntry> kitakanaCache, String word) throws JapaneseDictionaryException {
 		String remaingRestChars = null;
 		
 		String currentRestChars = "";
@@ -2435,7 +2429,7 @@ public class GenkiBookWords {
 					KanaEntry kanaEntry = kitakanaCache.get("ttsu2");
 					
 					if (kanaEntry == null) {
-						throw new JapannakaException("Can't find kanaEntry!");
+						throw new JapaneseDictionaryException("Can't find kanaEntry!");
 					}
 
 					currentRestChars = "";
@@ -2450,7 +2444,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get("ttsu");
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "" + currentRestChars.charAt(1);
@@ -2467,7 +2461,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";
@@ -2483,7 +2477,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2500,7 +2494,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2513,7 +2507,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2526,7 +2520,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2538,7 +2532,7 @@ public class GenkiBookWords {
 					KanaEntry kanaEntry = kitakanaCache.get("n");
 					
 					if (kanaEntry == null) {
-						throw new JapannakaException("Can't find kanaEntry!");
+						throw new JapaneseDictionaryException("Can't find kanaEntry!");
 					}
 					
 					currentRestChars = "";
@@ -2558,7 +2552,7 @@ public class GenkiBookWords {
 					KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 					
 					if (kanaEntry == null) {
-						throw new JapannakaException("Can't find kanaEntry!");
+						throw new JapaneseDictionaryException("Can't find kanaEntry!");
 					}
 					
 					currentRestChars = "";
@@ -2570,7 +2564,7 @@ public class GenkiBookWords {
 						KanaEntry kanaEntry = kitakanaCache.get("n");
 						
 						if (kanaEntry == null) {
-							throw new JapannakaException("Can't find kanaEntry!");
+							throw new JapaneseDictionaryException("Can't find kanaEntry!");
 						}
 						
 						currentRestChars = currentRestChars.substring(1);
@@ -2583,7 +2577,7 @@ public class GenkiBookWords {
 					KanaEntry kanaEntry = kitakanaCache.get("n");
 					
 					if (kanaEntry == null) {
-						throw new JapannakaException("Can't find kanaEntry!");
+						throw new JapaneseDictionaryException("Can't find kanaEntry!");
 					}
 					
 					currentRestChars = "";
@@ -2601,7 +2595,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2614,7 +2608,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2630,7 +2624,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2641,7 +2635,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2657,7 +2651,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2669,7 +2663,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2685,7 +2679,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2697,7 +2691,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2710,7 +2704,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2725,7 +2719,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2741,7 +2735,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2757,7 +2751,7 @@ public class GenkiBookWords {
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
 				if (kanaEntry == null) {
-					throw new JapannakaException("Can't find kanaEntry!");
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
 				}
 				
 				currentRestChars = "";					
@@ -2767,7 +2761,7 @@ public class GenkiBookWords {
 		}
 		
 		if (remaingRestChars.equals("") == false) {
-			throw new JapannakaException("Validate error for word: " + word + ", remaing: " + remaingRestChars);
+			throw new JapaneseDictionaryException("Validate error for word: " + word + ", remaing: " + remaingRestChars);
 		}		
 	}
 	
