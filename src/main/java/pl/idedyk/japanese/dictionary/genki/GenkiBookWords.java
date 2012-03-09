@@ -881,15 +881,15 @@ public class GenkiBookWords {
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "wakai", "młody", "wo człowieku");
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "kitanai", "brudny", null);
 		
-		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "madoguchi", "okienko pocztowe", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "madoguchi", "okienko pocztowe", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "kodutsumi", "paczka", null);
-		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "koukuubin", "poczta lotnicza", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "koukuubin", "poczta lotnicza", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "hoken", "ubezpieczenie", null);
-		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "kakitome", "list polecony", null);
-		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "earoguramu", "poczta lotnicza", null);
-		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "fuusho", "list", "bardzo oficjalnie");
-		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "funabin", "poczta lotnicza", null);
-		//addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "sokunatsu", "spejcjalna dostawa", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "kakitome", "list polecony", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "earoguramu", "poczta lotnicza", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "fuusho", "list", "bardzo oficjalnie");
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "funabin", "poczta lotnicza", null);
+		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "sokunatsu", "spejcjalna dostawa", null);
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_5, WordType.HIRAGANA, "denchi", "bateria", null);
 		
 		addPolishJapaneseEntry(polishJapaneseEntries, DictionaryEntryType.WORD_GENKI1_6, WordType.HIRAGANA, "okane", "pieniądze", null);
