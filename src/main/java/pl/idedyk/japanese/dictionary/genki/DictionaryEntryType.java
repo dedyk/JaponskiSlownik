@@ -38,6 +38,8 @@ public enum DictionaryEntryType {
 	
 	WORD_VERB_RU("ru-czasownik"),
 	
+	WORD_VERB_TE("te-czasownik"),
+	
 	WORD_VERB_IRREGULAR("czasownik nieregularny"),
 	
 	WORD_ADJECTIVE_I("i-przymiotnik"),

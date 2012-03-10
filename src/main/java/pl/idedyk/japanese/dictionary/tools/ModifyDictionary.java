@@ -41,6 +41,13 @@ public class ModifyDictionary {
 					checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
 					
 					newDictionaryEntry = DictionaryEntryType.WORD_VERB_IRREGULAR;
+				} else if (polishJapaneseInfo.indexOf("forma te") != -1) {
+					polishJapaneseInfo = polishJapaneseInfo.replaceAll("forma te", "");
+					
+					polishJapaneseInfo = fixInfo(polishJapaneseInfo);
+					checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
+					
+					newDictionaryEntry = DictionaryEntryType.WORD_VERB_TE;
 				} else if (polishJapaneseInfo.indexOf("i-przymiotnik") != -1) {
 					polishJapaneseInfo = polishJapaneseInfo.replaceAll("i-przymiotnik", "");
 					

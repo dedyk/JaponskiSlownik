@@ -568,31 +568,31 @@ UNKNOWN,HIRAGANA,,futatsu me no kadou wo hidari ni magaru,skręcić w lewo na dr
 UNKNOWN,HIRAGANA,,michi wo wataru,przez ulicę,
 UNKNOWN,HIRAGANA,,michi no hidari kawa,lewo strona ulicy,
 UNKNOWN,HIRAGANA,,michi no migi kawa,prawa strona ulicy,
-WORD_VERB_RU,HIRAGANA,,okiru,okite,forma te
-WORD_VERB_RU,HIRAGANA,,taberu,tabete,forma te
-WORD_VERB_RU,HIRAGANA,,neru,nete,forma te
-WORD_VERB_RU,HIRAGANA,,miru,mite,forma te
-WORD_VERB_RU,HIRAGANA,,iru,ite,forma te
-WORD_VERB_RU,HIRAGANA,,dekakeru,dekakete,forma te
-WORD_VERB_U,HIRAGANA,,au,atte,"forma te, u"
-WORD_VERB_U,HIRAGANA,,kau,katte,"forma te, u"
-WORD_VERB_U,HIRAGANA,,kiku,kiite,"forma te, ku"
-WORD_VERB_U,HIRAGANA,,kaku,kaite,"forma te, ku"
-WORD_VERB_U,HIRAGANA,,iku,itte,"forma te, ku (nieregularny)"
-WORD_VERB_U,HIRAGANA,,oyogu,oyoide,"forma te, gu"
-WORD_VERB_U,HIRAGANA,,hanasu,hanashite,"forma te, su"
-WORD_VERB_U,HIRAGANA,,matsu,matte,"forma te, tsu"
-WORD_VERB_U,HIRAGANA,,nomu,nonde,"forma te, mu"
-WORD_VERB_U,HIRAGANA,,yomu,yonde,"forma te, mu"
-WORD_VERB_U,HIRAGANA,,kaeru,kaette,"forma te, ru"
-WORD_VERB_U,HIRAGANA,,aru,atte,"forma te, ru"
-WORD_VERB_U,HIRAGANA,,toru,totte,"forma te, ru"
-WORD_VERB_U,HIRAGANA,,wakaru,wakatte,"forma te, ru"
-WORD_VERB_U,HIRAGANA,,noru,notte,"forma te, ru"
-WORD_VERB_U,HIRAGANA,,yaru,yatte,"forma te, ru"
-UNKNOWN,HIRAGANA,,kuru,kite,"forma te, nieregularny"
-UNKNOWN,HIRAGANA,,suru,shite,"forma te, nieregularny"
-UNKNOWN,HIRAGANA,,benkyou suru,benkyou shite,"forma te, nieregularny"
+WORD_VERB_TE,HIRAGANA,,okiru,okite,
+WORD_VERB_TE,HIRAGANA,,taberu,tabete,
+WORD_VERB_TE,HIRAGANA,,neru,nete,
+WORD_VERB_TE,HIRAGANA,,miru,mite,
+WORD_VERB_TE,HIRAGANA,,iru,ite,
+WORD_VERB_TE,HIRAGANA,,dekakeru,dekakete,
+WORD_VERB_TE,HIRAGANA,,au,atte,u
+WORD_VERB_TE,HIRAGANA,,kau,katte,u
+WORD_VERB_TE,HIRAGANA,,kiku,kiite,ku
+WORD_VERB_TE,HIRAGANA,,kaku,kaite,ku
+WORD_VERB_TE,HIRAGANA,,iku,itte,ku (nieregularny)
+WORD_VERB_TE,HIRAGANA,,oyogu,oyoide,gu
+WORD_VERB_TE,HIRAGANA,,hanasu,hanashite,su
+WORD_VERB_TE,HIRAGANA,,matsu,matte,tsu
+WORD_VERB_TE,HIRAGANA,,nomu,nonde,mu
+WORD_VERB_TE,HIRAGANA,,yomu,yonde,mu
+WORD_VERB_TE,HIRAGANA,,kaeru,kaette,ru
+WORD_VERB_TE,HIRAGANA,,aru,atte,ru
+WORD_VERB_TE,HIRAGANA,,toru,totte,ru
+WORD_VERB_TE,HIRAGANA,,wakaru,wakatte,ru
+WORD_VERB_TE,HIRAGANA,,noru,notte,ru
+WORD_VERB_TE,HIRAGANA,,yaru,yatte,ru
+WORD_VERB_TE,HIRAGANA,,kuru,kite,nieregularny
+WORD_VERB_TE,HIRAGANA,,suru,shite,nieregularny
+WORD_VERB_TE,HIRAGANA,,benkyou suru,benkyou shite,nieregularny
 UNKNOWN,HIRAGANA,,hitori,jedzen człowiek,*
 UNKNOWN,HIRAGANA,,futari,dwoje ludzi,*
 UNKNOWN,HIRAGANA,,sannin,troje ludzi,
@@ -681,19 +681,19 @@ WORD_ADJECTIVE_NA,HIRAGANA,,benri,przydatny,
 WORD_VERB_U,HIRAGANA,,utau,śpiewać,
 WORD_VERB_U,HIRAGANA,,kaburu,zakładać,na głowę
 WORD_VERB_U,HIRAGANA,,shiru,wiedzieć,
-WORD_VERB_U,HIRAGANA,,shitte imasu,wiem,forma te
+WORD_VERB_TE,HIRAGANA,,shitte imasu,wiem,
 WORD_VERB_U,HIRAGANA,,shirimasen,nie wiedzieć,~masen
 WORD_VERB_U,HIRAGANA,,ni sumu,mieszkać,
-WORD_VERB_U,HIRAGANA,,ni sunde imasu,mieszkać,forma te
+WORD_VERB_TE,HIRAGANA,,ni sunde imasu,mieszkać,
 WORD_VERB_U,HIRAGANA,,haku,zakładać,poniżej paska
 WORD_VERB_U,HIRAGANA,,futoru,zyskiwać na wadze,
-WORD_VERB_U,HIRAGANA,,futotte imasu,być grubym,forma te
+WORD_VERB_TE,HIRAGANA,,futotte imasu,być grubym,
 WORD_VERB_RU,HIRAGANA,,megane wo kakeru,zakładać okulary,
 WORD_VERB_RU,HIRAGANA,,kiru,zakładać,powyżej paska
 WORD_VERB_RU,HIRAGANA,,ni tsutomeru,pracować dla,
-UNKNOWN,HIRAGANA,,ni tsutomete imasu,pracować dla,forma te
+WORD_VERB_TE,HIRAGANA,,ni tsutomete imasu,pracować dla,
 WORD_VERB_RU,HIRAGANA,,yaseru,tracić na wadze,
-UNKNOWN,HIRAGANA,,yasete imasu,być chudym,forma te
+WORD_VERB_TE,HIRAGANA,,yasete imasu,być chudym,
 WORD_VERB_IRREGULAR,HIRAGANA,,wo kekkon suru,żenić się,
 UNKNOWN,HIRAGANA,,ga,ale,
 UNKNOWN,HIRAGANA,,nanimo,nic,+ forma negatywna
