@@ -24,21 +24,21 @@ public class ModifyDictionary {
 					polishJapaneseInfo = polishJapaneseInfo.replaceAll("ru-czasownik", "");
 					
 					polishJapaneseInfo = fixInfo(polishJapaneseInfo);
-					//checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
+					checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
 					
 					newDictionaryEntry = DictionaryEntryType.WORD_VERB_RU;
 				} else if (polishJapaneseInfo.indexOf("u-czasownik") != -1) {
 					polishJapaneseInfo = polishJapaneseInfo.replaceAll("u-czasownik", "");
 				
 					polishJapaneseInfo = fixInfo(polishJapaneseInfo);
-					//checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
+					checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
 					
 					newDictionaryEntry = DictionaryEntryType.WORD_VERB_U;
 				} else if (polishJapaneseInfo.indexOf("i-przymiotnik") != -1) {
 					polishJapaneseInfo = polishJapaneseInfo.replaceAll("i-przymiotnik", "");
 					
 					polishJapaneseInfo = fixInfo(polishJapaneseInfo);
-					//checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
+					checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
 					
 					newDictionaryEntry = DictionaryEntryType.WORD_ADJECTIVE_I;
 				} else if (polishJapaneseInfo.indexOf("na-przymiotnik") != -1) {
