@@ -27,7 +27,7 @@ public class CsvReaderWriter {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
-			String polishJapaneseEntryGroupName = polishJapaneseEntry.getGroupName().getName();
+			String polishJapaneseEntryGroupName = polishJapaneseEntry.getDictionaryEntryType().getName();
 			
 			if (lastGroupName == null || lastGroupName.equals(polishJapaneseEntryGroupName) == false) {
 				sb.append("---" + polishJapaneseEntryGroupName + "---\n");
@@ -90,7 +90,7 @@ public class CsvReaderWriter {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
-			csvWriter.write(polishJapaneseEntry.getGroupName().toString());
+			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
 			csvWriter.write(polishJapaneseEntry.getJapanese());
 			csvWriter.write(convertRomajiEntryListToString(polishJapaneseEntry.getRomajiList()));
@@ -120,7 +120,7 @@ public class CsvReaderWriter {
 			
 			PolishJapaneseEntry entry = new PolishJapaneseEntry();
 			
-			entry.setGroupName(DictionaryEntryType.valueOf(groupNameString));
+			entry.setDictionaryEntryType(DictionaryEntryType.valueOf(groupNameString));
 			entry.setWordType(WordType.valueOf(wordTypeString));
 			entry.setJapanese(japaneseString);
 			entry.setRomajiList(parsePolishRomajiString(romajiListString));

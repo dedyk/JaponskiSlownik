@@ -32,7 +32,11 @@ public enum DictionaryEntryType {
 	
 	WORD_MINUTES("Minuty"),
 	
-	WORD_YEARS("Lata");
+	WORD_YEARS("Lata"),
+	
+	WORD_VERB_U("u czasownik"),
+	
+	WORD_VERB_RU("ru czasownik");
 	
 	private String name;
 	

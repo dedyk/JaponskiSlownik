@@ -9,7 +9,7 @@ public class PolishJapaneseEntry {
 	
 	private int id;
 	
-	private DictionaryEntryType groupName;
+	private DictionaryEntryType dictionaryEntryType;
 	
 	private WordType wordType;
 	
@@ -63,14 +63,6 @@ public class PolishJapaneseEntry {
 		this.japaneseImagePath = japaneseImagePath;
 	}
 
-	public DictionaryEntryType getGroupName() {
-		return groupName;
-	}
-
-	public void setGroupName(DictionaryEntryType groupName) {
-		this.groupName = groupName;
-	}
-
 	public WordType getWordType() {
 		return wordType;
 	}
@@ -85,5 +77,13 @@ public class PolishJapaneseEntry {
 
 	public void setInfo(String info) {
 		this.info = info;
+	}
+
+	public DictionaryEntryType getDictionaryEntryType() {
+		return dictionaryEntryType;
+	}
+
+	public void setDictionaryEntryType(DictionaryEntryType dictionaryEntryType) {
+		this.dictionaryEntryType = dictionaryEntryType;
 	}
 }
