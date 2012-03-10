@@ -21,19 +21,9 @@ public class CsvReaderWriter {
 
 	public static void generateDictionaryApplicationResult(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
 		
-		String lastGroupName = null;
-		
 		StringBuffer sb = new StringBuffer();
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-			
-			String polishJapaneseEntryGroupName = polishJapaneseEntry.getDictionaryEntryType().getName();
-			
-			if (lastGroupName == null || lastGroupName.equals(polishJapaneseEntryGroupName) == false) {
-				sb.append("---" + polishJapaneseEntryGroupName + "---\n");
-				
-				lastGroupName = polishJapaneseEntryGroupName;
-			}
 
 			List<RomajiEntry> romajiList = polishJapaneseEntry.getRomajiList();
 
@@ -65,7 +55,17 @@ public class CsvReaderWriter {
 					sb.append(currentPolishTranslate.getWord()).append("|");
 					
 					if (idxPolishTranslates == polishTranslates.size() - 1) {
-						sb.append(polishJapaneseEntry.getInfo() != null ? polishJapaneseEntry.getInfo() : "");
+						String info = polishJapaneseEntry.getInfo() != null ? polishJapaneseEntry.getInfo() : ""; 
+						
+						if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_VERB_RU) {
+							if (info.length() > 0) {
+								info = info + ", ";
+							}
+							
+							info += "ru-czasownik";
+						}
+						
+						sb.append(info);
 					}
 
 					sb.append(";");

@@ -29,7 +29,7 @@ public class GenkiBookWords {
 		generateKatakanaImages(katakanaEntries, charsCache, kanjiOutputDir);
 		
 		// Słowniczek
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word-temp.csv");
 		validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries);	
 		
 		// kanji dictionary
