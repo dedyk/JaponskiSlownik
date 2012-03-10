@@ -34,6 +34,13 @@ public class ModifyDictionary {
 					checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
 					
 					newDictionaryEntry = DictionaryEntryType.WORD_VERB_U;
+				} else if (polishJapaneseInfo.indexOf("czasownik nieregularny") != -1) {
+					polishJapaneseInfo = polishJapaneseInfo.replaceAll("czasownik nieregularny", "");
+					
+					polishJapaneseInfo = fixInfo(polishJapaneseInfo);
+					checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
+					
+					newDictionaryEntry = DictionaryEntryType.WORD_VERB_IRREGULAR;
 				} else if (polishJapaneseInfo.indexOf("i-przymiotnik") != -1) {
 					polishJapaneseInfo = polishJapaneseInfo.replaceAll("i-przymiotnik", "");
 					
@@ -53,14 +60,16 @@ public class ModifyDictionary {
 				polishJapaneseEntry.setInfo(polishJapaneseInfo);
 			}
 			
-			if (newDictionaryEntry == null) {
-				newDictionaryEntry = DictionaryEntryType.UNKNOWN;
-			}
+//			if (newDictionaryEntry == null) {
+//				newDictionaryEntry = DictionaryEntryType.UNKNOWN;
+//			}
 			
-			polishJapaneseEntry.setDictionaryEntryType(newDictionaryEntry);
+			if (newDictionaryEntry != null) {
+				polishJapaneseEntry.setDictionaryEntryType(newDictionaryEntry);
+			}
 		}
 		
-		CsvReaderWriter.generateCsv("input/word.csv", polishJapaneseEntries);
+		CsvReaderWriter.generateCsv("input/word-temp.csv", polishJapaneseEntries);
 	}
 
 	private static String fixInfo(String polishJapaneseInfo) {

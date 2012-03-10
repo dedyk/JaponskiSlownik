@@ -38,11 +38,13 @@ public enum DictionaryEntryType {
 	
 	WORD_VERB_RU("ru-czasownik"),
 	
+	WORD_VERB_IRREGULAR("czasownik nieregularny"),
+	
 	WORD_ADJECTIVE_I("i-przymiotnik"),
 	
 	WORD_ADJECTIVE_NA("na-przymiotnik"),
 	
-	UNKNOWN("unknown");
+	UNKNOWN("unknown");	
 	
 	private String name;
 	

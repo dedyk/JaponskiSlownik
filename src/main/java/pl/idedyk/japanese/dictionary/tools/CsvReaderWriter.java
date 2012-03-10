@@ -69,6 +69,12 @@ public class CsvReaderWriter {
 							}
 							
 							info += "u-czasownik";
+						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_VERB_IRREGULAR) {
+							if (info.length() > 0) {
+								info = info + ", ";
+							}
+							
+							info += "czasownik nieregularny";
 						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_ADJECTIVE_I) {
 							if (info.length() > 0) {
 								info = info + ", ";

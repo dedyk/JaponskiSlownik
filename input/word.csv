@@ -533,8 +533,8 @@ WORD_VERB_RU,HIRAGANA,,wo shimeru,zamykać,
 WORD_VERB_RU,HIRAGANA,,wo tsukeru,włączać,
 WORD_VERB_RU,HIRAGANA,,denwa wo kakeru,dzwonić,osoba ni
 WORD_VERB_RU,HIRAGANA,,wo wasureru,zapomnieć,
-UNKNOWN,HIRAGANA,,wo tsurete kuru,przyprowadzać,czasownik nieregularny
-UNKNOWN,HIRAGANA,,wo motte kuru,przynosić,czasownik nieregularny
+WORD_VERB_IRREGULAR,HIRAGANA,,wo tsurete kuru,przyprowadzać,
+WORD_VERB_IRREGULAR,HIRAGANA,,wo motte kuru,przynosić,
 UNKNOWN,HIRAGANA,,atode,później,
 UNKNOWN,HIRAGANA,,osoku,zrobić coś później,
 UNKNOWN,HIRAGANA,,kara,ponieważ,
@@ -694,7 +694,7 @@ WORD_VERB_RU,HIRAGANA,,ni tsutomeru,pracować dla,
 UNKNOWN,HIRAGANA,,ni tsutomete imasu,pracować dla,forma te
 WORD_VERB_RU,HIRAGANA,,yaseru,tracić na wadze,
 UNKNOWN,HIRAGANA,,yasete imasu,być chudym,forma te
-UNKNOWN,HIRAGANA,,wo kekkon suru,żenić się,czasownik nieregularny
+WORD_VERB_IRREGULAR,HIRAGANA,,wo kekkon suru,żenić się,
 UNKNOWN,HIRAGANA,,ga,ale,
 UNKNOWN,HIRAGANA,,nanimo,nic,+ forma negatywna
 UNKNOWN,HIRAGANA,,nin,ludzi,liczenie
@@ -760,10 +760,10 @@ WORD_VERB_U,HIRAGANA,,tsukuru,tworzyć,
 WORD_VERB_U,HIRAGANA,,motte iku,brać,coś
 WORD_VERB_RU,HIRAGANA,,wo jirojiro miru,spojrzeć,
 WORD_VERB_RU,HIRAGANA,,hajimeru,zaczynać,
-UNKNOWN,HIRAGANA,,wo unten suru,prowadzić,czasowniki nieregularne
-UNKNOWN,HIRAGANA,,sentaku suru,robić pranie,czasownik nieregularny
-UNKNOWN,HIRAGANA,,souji suru,czyścić,czasownik nieregularny
-UNKNOWN,HIRAGANA,,ryouri suru,gotować,czasownik nieregularny
+WORD_VERB_IRREGULAR,HIRAGANA,,wo unten suru,prowadzić,
+WORD_VERB_IRREGULAR,HIRAGANA,,sentaku suru,robić pranie,
+WORD_VERB_IRREGULAR,HIRAGANA,,souji suru,czyścić,
+WORD_VERB_IRREGULAR,HIRAGANA,,ryouri suru,gotować,
 UNKNOWN,HIRAGANA,,uun,nie,u...
 UNKNOWN,HIRAGANA,,un,tak,u...
 UNKNOWN,HIRAGANA,,kanpai,na zdrowie,toast
@@ -820,8 +820,8 @@ WORD_VERB_U,HIRAGANA,,wo morau,dostać,"coś, osoba ni rzecz"
 WORD_VERB_RU,HIRAGANA,,oboeru,zapamiętać,
 WORD_VERB_RU,HIRAGANA,,ni deru,pojawić się,
 WORD_VERB_RU,HIRAGANA,,wo deru,wychodzić,
-UNKNOWN,HIRAGANA,,undou suru,ćwiczenia,"czasownik nieregularny, fizyczne"
-UNKNOWN,HIRAGANA,,sanpo suru,spacerować,czasownik nieregularny
+WORD_VERB_IRREGULAR,HIRAGANA,,undou suru,ćwiczenia,fizyczne
+WORD_VERB_IRREGULAR,HIRAGANA,,sanpo suru,spacerować,
 UNKNOWN,HIRAGANA,,kara,od,
 UNKNOWN,HIRAGANA,,zehi,koniecznie,
 UNKNOWN,HIRAGANA,,tokorode,przy okazji,
@@ -894,7 +894,7 @@ WORD_VERB_U,HIRAGANA,,ni tomaru,zostać,w hotelu i etc
 WORD_VERB_U,HIRAGANA,,naru,stawać się,
 WORD_VERB_U,HIRAGANA,,harau,płacić,
 WORD_VERB_RU,HIRAGANA,,kimeru,decydować,
-UNKNOWN,HIRAGANA,,renshuu suru,ćwiczyć,"praktykować, czasownik nieregularny"
+WORD_VERB_IRREGULAR,HIRAGANA,,renshuu suru,ćwiczyć,praktykować
 UNKNOWN,HIRAGANA,,aruite,piechotą,
 UNKNOWN,HIRAGANA,,ichiban,najlepszy,
 UNKNOWN,HIRAGANA,,ka,albo,"~ x ~, wyrażenie"
@@ -902,7 +902,7 @@ UNKNOWN,HIRAGANA,,kagetsu,przez ... miesięcy,
 UNKNOWN,HIRAGANA,,go,"w ... czasie, po ...",
 UNKNOWN,HIRAGANA,,konogoro,te dni,
 UNKNOWN,HIRAGANA,,shuukan,tygodnie,przedział czasu
-UNKNOWN,HIRAGANA,,de,czym,"partykuła, metoda transportu, czym"
+UNKNOWN,HIRAGANA,,de,czym,"partykuła, metoda tran4sportu, czym"
 UNKNOWN,HIRAGANA,,douyatte,jak,
 UNKNOWN,HIRAGANA,,dochira,które,bardziej uprzejme
 UNKNOWN,HIRAGANA,,docchi,które,mniej uprzejme
@@ -955,11 +955,11 @@ WORD_VERB_U,HIRAGANA,,ni noboru,wspinać się,
 WORD_VERB_U,HIRAGANA,,hatarau,pracować,
 WORD_VERB_RU,HIRAGANA,,tsukareru,być zmęczony,
 WORD_VERB_RU,HIRAGANA,,yameru,rezygnować,
-UNKNOWN,HIRAGANA,,kenka suru,latać,czasownik nieregularny
-UNKNOWN,KATAKANA,,wo shoukai suru,wprowadzać,"kogoś ni kto ~, czasownik nieregularny, hiragana i katakana"
-UNKNOWN,HIRAGANA,,daietto suru,być na diecie,czasownik nieregularny
-UNKNOWN,HIRAGANA,,chikoku suru,być spóźniony,czasownik nieregularny
-UNKNOWN,HIRAGANA,,ni ryuugaku suru,studiować za granicą,czasownik nieregularny
+WORD_VERB_IRREGULAR,HIRAGANA,,kenka suru,latać,
+WORD_VERB_IRREGULAR,KATAKANA,,wo shoukai suru,wprowadzać,"kogoś ni kto ~, , hiragana i katakana"
+WORD_VERB_IRREGULAR,HIRAGANA,,daietto suru,być na diecie,
+WORD_VERB_IRREGULAR,HIRAGANA,,chikoku suru,być spóźniony,
+WORD_VERB_IRREGULAR,HIRAGANA,,ni ryuugaku suru,studiować za granicą,
 UNKNOWN,HIRAGANA,,ato,po,zdarzenie no
 UNKNOWN,HIRAGANA,,shusshin,pochodzi z,miejsce no
 UNKNOWN,HIRAGANA,,sugoku,bardzo,
