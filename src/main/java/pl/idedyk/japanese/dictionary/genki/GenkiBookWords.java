@@ -17,7 +17,7 @@ public class GenkiBookWords {
 
 	public static void main(String[] args) throws IOException, JapaneseDictionaryException {
 
-		String kanjiOutputDir = "kanji_output";
+		String kanjiOutputDir = "output";
 		Map<String, String> charsCache = new HashMap<String, String>();
 		
 		// hiragana
@@ -29,7 +29,7 @@ public class GenkiBookWords {
 		generateKatakanaImages(katakanaEntries, charsCache, kanjiOutputDir);
 		
 		// Słowniczek
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word-temp.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 		validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries);	
 		
 		// kanji dictionary

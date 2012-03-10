@@ -34,9 +34,15 @@ public enum DictionaryEntryType {
 	
 	WORD_YEARS("Lata"),
 	
-	WORD_VERB_U("u czasownik"),
+	WORD_VERB_U("u-czasownik"),
 	
-	WORD_VERB_RU("ru czasownik");
+	WORD_VERB_RU("ru-czasownik"),
+	
+	WORD_ADJECTIVE_I("i-przymiotnik"),
+	
+	WORD_ADJECTIVE_NA("na-przymiotnik"),
+	
+	UNKNOWN("unknown");
 	
 	private String name;
 	

@@ -63,6 +63,24 @@ public class CsvReaderWriter {
 							}
 							
 							info += "ru-czasownik";
+						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_VERB_U) {
+							if (info.length() > 0) {
+								info = info + ", ";
+							}
+							
+							info += "u-czasownik";
+						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_ADJECTIVE_I) {
+							if (info.length() > 0) {
+								info = info + ", ";
+							}
+							
+							info += "i-przymiotnik";
+						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_ADJECTIVE_NA) {
+							if (info.length() > 0) {
+								info = info + ", ";
+							}
+							
+							info += "na-przymiotnik";
 						}
 						
 						sb.append(info);

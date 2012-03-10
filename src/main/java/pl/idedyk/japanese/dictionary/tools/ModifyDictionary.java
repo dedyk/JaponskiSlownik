@@ -15,33 +15,52 @@ public class ModifyDictionary {
 			
 			String polishJapaneseInfo = polishJapaneseEntry.getInfo();
 			
+			DictionaryEntryType newDictionaryEntry = null;
+			
 			if (polishJapaneseInfo != null && polishJapaneseInfo.equals("") == false) {
 				
-				DictionaryEntryType newDictionaryEntry = null;
 				
-				if (polishJapaneseInfo.indexOf("ru-czasownik") != -1) {
-					//System.out.println(polishJapaneseInfo);
-					
+				if (polishJapaneseInfo.indexOf("ru-czasownik") != -1) {					
 					polishJapaneseInfo = polishJapaneseInfo.replaceAll("ru-czasownik", "");
 					
 					polishJapaneseInfo = fixInfo(polishJapaneseInfo);
-					checkInfo(polishJapaneseInfo);
+					//checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
 					
 					newDictionaryEntry = DictionaryEntryType.WORD_VERB_RU;
+				} else if (polishJapaneseInfo.indexOf("u-czasownik") != -1) {
+					polishJapaneseInfo = polishJapaneseInfo.replaceAll("u-czasownik", "");
+				
+					polishJapaneseInfo = fixInfo(polishJapaneseInfo);
+					//checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
+					
+					newDictionaryEntry = DictionaryEntryType.WORD_VERB_U;
+				} else if (polishJapaneseInfo.indexOf("i-przymiotnik") != -1) {
+					polishJapaneseInfo = polishJapaneseInfo.replaceAll("i-przymiotnik", "");
+					
+					polishJapaneseInfo = fixInfo(polishJapaneseInfo);
+					//checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
+					
+					newDictionaryEntry = DictionaryEntryType.WORD_ADJECTIVE_I;
+				} else if (polishJapaneseInfo.indexOf("na-przymiotnik") != -1) {
+					polishJapaneseInfo = polishJapaneseInfo.replaceAll("na-przymiotnik", "");
+					
+					polishJapaneseInfo = fixInfo(polishJapaneseInfo);
+					checkInfo(polishJapaneseInfo); // !!!!!!!!!!!!!!!
+					
+					newDictionaryEntry = DictionaryEntryType.WORD_ADJECTIVE_NA;
 				}
-				
-				
-				
 				
 				polishJapaneseEntry.setInfo(polishJapaneseInfo);
-				
-				if (newDictionaryEntry != null) {
-					polishJapaneseEntry.setDictionaryEntryType(newDictionaryEntry);
-				}
 			}
+			
+			if (newDictionaryEntry == null) {
+				newDictionaryEntry = DictionaryEntryType.UNKNOWN;
+			}
+			
+			polishJapaneseEntry.setDictionaryEntryType(newDictionaryEntry);
 		}
 		
-		CsvReaderWriter.generateCsv("input/word-temp.csv", polishJapaneseEntries);
+		CsvReaderWriter.generateCsv("input/word.csv", polishJapaneseEntries);
 	}
 
 	private static String fixInfo(String polishJapaneseInfo) {
