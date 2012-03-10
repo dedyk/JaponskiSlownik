@@ -75,6 +75,12 @@ public class CsvReaderWriter {
 							}
 							
 							info += "czasownik nieregularny";
+						}  else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_VERB_TE) {
+							if (info.length() > 0) {
+								info = info + ", ";
+							}
+							
+							info += "forma te";
 						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_ADJECTIVE_I) {
 							if (info.length() > 0) {
 								info = info + ", ";
