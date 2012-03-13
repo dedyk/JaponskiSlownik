@@ -265,8 +265,8 @@ WORD_VERB_RU,HIRAGANA,,neru,spać,
 WORD_VERB_RU,HIRAGANA,,wo miru,patrzeć,
 UNKNOWN,HIRAGANA,,"ni kuru
 e kuru",przybyć,"cel, czasowniki nieregularne"
-UNKNOWN,HIRAGANA,,wo suru,robić,czasowniki nieregularne
-UNKNOWN,HIRAGANA,,wo benkyou suru,studiować,"czasowniki nieregularne, nauka z książek"
+WORD_VERB_IRREGULAR,HIRAGANA,,wo suru,robić,
+WORD_VERB_IRREGULAR,HIRAGANA,,wo benkyou suru,studiować,nauka z książek
 UNKNOWN,HIRAGANA,,ii,dobry,
 UNKNOWN,HIRAGANA,,hayai,wczesny,
 UNKNOWN,HIRAGANA,,amari,niewiele,+ forma negatywna
@@ -912,16 +912,29 @@ UNKNOWN,HIRAGANA,,nen,lata,
 UNKNOWN,HIRAGANA,,hayaku,"wcześnie
 szybko",zrobić coś
 UNKNOWN,HIRAGANA,,tsumori desu,mam zamiar,+ czasownik w formie prostej
-UNKNOWN,HIRAGANA,,aruite iku,iść na piechotę,
+WORD_VERB_U,HIRAGANA,,aruite iku,iść na piechotę,
 UNKNOWN,HIRAGANA,,kouban,posterunek policji,
 UNKNOWN,HIRAGANA,,omawari,policjant,
-UNKNOWN,HIRAGANA,,wo agaru,iść pod górę,
+WORD_VERB_U,HIRAGANA,,wo agaru,iść pod górę,
 UNKNOWN,HIRAGANA,,kaidan,schody,
-UNKNOWN,HIRAGANA,,wo oriru,schodzić,
+WORD_VERB_U,HIRAGANA,,wo oriru,schodzić,
 UNKNOWN,HIRAGANA,,chuushajou,parking,
-UNKNOWN,HIRAGANA,,tomaru,zatrzymywać się,np. w hotelu
-UNKNOWN,HIRAGANA,,manabu,uczyć się,ogólnie
-UNKNOWN,HIRAGANA,,narau,uczyć się,czegoś praktycznego
+WORD_VERB_U,HIRAGANA,,tomaru,zatrzymywać się,np. w hotelu
+WORD_VERB_U,HIRAGANA,,manabu,uczyć się,ogólnie
+WORD_VERB_U,HIRAGANA,,narau,uczyć się,czegoś praktycznego
+UNKNOWN,HIRAGANA,,mukashimukashi,"dawno, dawno temu",
+UNKNOWN,HIRAGANA,,kaki,bambusowy kapelusz,
+UNKNOWN,HIRAGANA,,omochi,ciastko ryżowe,
+WORD_ADJECTIVE_I,HIRAGANA,,kanashii,smutny,
+UNKNOWN,HIRAGANA,,yamamichi,górska droga,
+UNKNOWN,HIRAGANA,,jizou,"opiekun
+bóstwo dzieci",
+WORD_VERB_U,HIRAGANA,,toru,zdejmować,
+UNKNOWN,HIRAGANA,,iikoto,dobry uczen,
+UNKNOWN,HIRAGANA,,koe,głos,
+UNKNOWN,HIRAGANA,,to,dzwi,
+WORD_VERB_IRREGULAR,HIRAGANA,,bikkuri suru,być zaskoczony,
+WORD_ADJECTIVE_NA,HIRAGANA,,shiawase,szczęśliwy,
 UNKNOWN,KATAKANA,,oosutoraria,Australia,
 UNKNOWN,HIRAGANA,,okashi,przekąski,
 UNKNOWN,HIRAGANA,,oshougatsu,Nowy Rok,
