@@ -7,83 +7,83 @@ import pl.idedyk.japanese.dictionary.genki.WordType;
 
 public class PolishJapaneseEntry {
 	
-	private int id;
-	
 	private DictionaryEntryType dictionaryEntryType;
 	
 	private WordType wordType;
 	
-	private List<RomajiEntry> romajiList;
+	private String kanji;
 	
-	private String japanese;
+	private String kanjiImagePath;
 	
-	private String japaneseImagePath;
+	private List<String> kana;
 	
-	private List<PolishTranslate> polishTranslates;
+	private List<String> romajiList;
+		
+	private List<String> polishTranslates;
 	
 	private String info;
 
-	public List<RomajiEntry> getRomajiList() {
-		return romajiList;
-	}
-
-	public String getJapanese() {
-		return japanese;
-	}
-
-	public List<PolishTranslate> getPolishTranslates() {
-		return polishTranslates;
-	}
-
-	public void setRomajiList(List<RomajiEntry> romajiList) {
-		this.romajiList = romajiList;
-	}
-
-	public void setJapanese(String japanese) {
-		this.japanese = japanese;
-	}
-
-	public void setPolishTranslates(List<PolishTranslate> polishTranslates) {
-		this.polishTranslates = polishTranslates;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getJapaneseImagePath() {
-		return japaneseImagePath;
-	}
-
-	public void setJapaneseImagePath(String japaneseImagePath) {
-		this.japaneseImagePath = japaneseImagePath;
+	public DictionaryEntryType getDictionaryEntryType() {
+		return dictionaryEntryType;
 	}
 
 	public WordType getWordType() {
 		return wordType;
 	}
 
-	public void setWordType(WordType wordType) {
-		this.wordType = wordType;
+	public String getKanji() {
+		return kanji;
+	}
+
+	public String getKanjiImagePath() {
+		return kanjiImagePath;
+	}
+
+	public List<String> getKana() {
+		return kana;
+	}
+
+	public List<String> getRomajiList() {
+		return romajiList;
+	}
+
+	public List<String> getPolishTranslates() {
+		return polishTranslates;
 	}
 
 	public String getInfo() {
 		return info;
 	}
 
-	public void setInfo(String info) {
-		this.info = info;
-	}
-
-	public DictionaryEntryType getDictionaryEntryType() {
-		return dictionaryEntryType;
-	}
-
 	public void setDictionaryEntryType(DictionaryEntryType dictionaryEntryType) {
 		this.dictionaryEntryType = dictionaryEntryType;
+	}
+
+	public void setWordType(WordType wordType) {
+		this.wordType = wordType;
+	}
+
+	public void setKanji(String kanji) {
+		this.kanji = kanji;
+	}
+
+	public void setKanjiImagePath(String kanjiImagePath) {
+		this.kanjiImagePath = kanjiImagePath;
+	}
+
+	public void setKana(List<String> kana) {
+		this.kana = kana;
+	}
+
+	public void setRomajiList(List<String> romajiList) {
+		this.romajiList = romajiList;
+	}
+
+	public void setPolishTranslates(List<String> polishTranslates) {
+		this.polishTranslates = polishTranslates;
+	}
+
+	public void setInfo(String info) {
+		this.info = info;
 	}
 }

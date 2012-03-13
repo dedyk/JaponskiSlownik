@@ -12,8 +12,6 @@ import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.dto.PolishTranslate;
-import pl.idedyk.japanese.dictionary.dto.RomajiEntry;
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.genki.WordType;
 
@@ -25,12 +23,12 @@ public class CsvReaderWriter {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
-			List<RomajiEntry> romajiList = polishJapaneseEntry.getRomajiList();
+			List<String> romajiList = polishJapaneseEntry.getRomajiList();
 
 			for (int romIdx = 0; romIdx < romajiList.size(); ++romIdx) {
-				RomajiEntry currentRomajiEntry = romajiList.get(romIdx);
+				String currentRomajiEntry = romajiList.get(romIdx);
 								
-				sb.append(polishJapaneseEntry.getWordType().getPrintable() + ":" + currentRomajiEntry.getRomaji());
+				sb.append(polishJapaneseEntry.getWordType().getPrintable() + ":" + currentRomajiEntry);
 
 				if (romIdx != romajiList.size() - 1) {
 					sb.append(",");
@@ -38,21 +36,21 @@ public class CsvReaderWriter {
 			}
 			sb.append(";");				
 
-			if (polishJapaneseEntry.getJapanese() != null && polishJapaneseEntry.getJapanese().equals("") == false) {
-				sb.append(polishJapaneseEntry.getJapanese()).append(";");
+			if (polishJapaneseEntry.getKanji() != null && polishJapaneseEntry.getKanji().equals("") == false) {
+				sb.append(polishJapaneseEntry.getKanji()).append(";");
 			}
 
-			if (polishJapaneseEntry.getJapaneseImagePath() != null) {
-				sb.append(polishJapaneseEntry.getJapaneseImagePath()).append(";");
+			if (polishJapaneseEntry.getKanjiImagePath() != null) {
+				sb.append(polishJapaneseEntry.getKanjiImagePath()).append(";");
 			}
 
-			List<PolishTranslate> polishTranslates = polishJapaneseEntry.getPolishTranslates();
+			List<String> polishTranslates = polishJapaneseEntry.getPolishTranslates();
 
 			if (polishTranslates != null) {
 				for (int idxPolishTranslates = 0; idxPolishTranslates < polishTranslates.size(); ++idxPolishTranslates) {
-					PolishTranslate currentPolishTranslate = polishTranslates.get(idxPolishTranslates);
+					String currentPolishTranslate = polishTranslates.get(idxPolishTranslates);
 					
-					sb.append(currentPolishTranslate.getWord()).append("|");
+					sb.append(currentPolishTranslate).append("|");
 					
 					if (idxPolishTranslates == polishTranslates.size() - 1) {
 						String info = polishJapaneseEntry.getInfo() != null ? polishJapaneseEntry.getInfo() : ""; 
@@ -122,7 +120,7 @@ public class CsvReaderWriter {
 			
 			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
-			csvWriter.write(polishJapaneseEntry.getJapanese());
+			csvWriter.write(polishJapaneseEntry.getKanji());
 			csvWriter.write(convertRomajiEntryListToString(polishJapaneseEntry.getRomajiList()));
 			csvWriter.write(convertPolishTranslateListToString(polishJapaneseEntry.getPolishTranslates()));
 			csvWriter.write(polishJapaneseEntry.getInfo());
@@ -143,7 +141,7 @@ public class CsvReaderWriter {
 			
 			String groupNameString = csvReader.get(0);
 			String wordTypeString = csvReader.get(1);
-			String japaneseString = csvReader.get(2);
+			String kanjiString = csvReader.get(2);
 			String romajiListString = csvReader.get(3);
 			String polishTranslateListString = csvReader.get(4);
 			String infoString = csvReader.get(5);
@@ -152,7 +150,7 @@ public class CsvReaderWriter {
 			
 			entry.setDictionaryEntryType(DictionaryEntryType.valueOf(groupNameString));
 			entry.setWordType(WordType.valueOf(wordTypeString));
-			entry.setJapanese(japaneseString);
+			entry.setKanji(kanjiString);
 			entry.setRomajiList(parsePolishRomajiString(romajiListString));
 			entry.setPolishTranslates(parsePolishTranslateString(polishTranslateListString));
 			
@@ -166,11 +164,11 @@ public class CsvReaderWriter {
 		return result;
 	}
 	
-	private static String convertPolishTranslateListToString(List<PolishTranslate> list) {
+	private static String convertPolishTranslateListToString(List<String> list) {
 		StringBuffer sb = new StringBuffer();
 		
 		for (int idx = 0; idx < list.size(); ++idx) {
-			sb.append(list.get(idx).getWord());
+			sb.append(list.get(idx));
 			
 			if (idx != list.size() - 1) {
 				sb.append("\n");
@@ -180,28 +178,24 @@ public class CsvReaderWriter {
 		return sb.toString();
 	}
 	
-	private static List<PolishTranslate> parsePolishTranslateString(String polishTranslateString) {
+	private static List<String> parsePolishTranslateString(String polishTranslateString) {
 		
-		List<PolishTranslate> result = new ArrayList<PolishTranslate>();
+		List<String> result = new ArrayList<String>();
 		
 		String[] splitedPolishTranslateString = polishTranslateString.split("\n");
 		
-		for (String currentpolishTranslateString : splitedPolishTranslateString) {
-			PolishTranslate polishTranslate = new PolishTranslate();
-			
-			polishTranslate.setWord(currentpolishTranslateString);
-			
-			result.add(polishTranslate);
+		for (String currentPolishTranslateString : splitedPolishTranslateString) {			
+			result.add(currentPolishTranslateString);
 		}
 		
 		return result;		
 	}
 	
-	private static String convertRomajiEntryListToString(List<RomajiEntry> list) {
+	private static String convertRomajiEntryListToString(List<String> list) {
 		StringBuffer sb = new StringBuffer();
 		
 		for (int idx = 0; idx < list.size(); ++idx) {
-			sb.append(list.get(idx).getRomaji());
+			sb.append(list.get(idx));
 			
 			if (idx != list.size() - 1) {
 				sb.append("\n");
@@ -211,18 +205,14 @@ public class CsvReaderWriter {
 		return sb.toString();
 	}
 	
-	private static List<RomajiEntry> parsePolishRomajiString(String romajiString) {
+	private static List<String> parsePolishRomajiString(String romajiString) {
 		
-		List<RomajiEntry> result = new ArrayList<RomajiEntry>();
+		List<String> result = new ArrayList<String>();
 		
 		String[] splitedRomajiListString = romajiString.split("\n");
 		
-		for (String currentRomajiString : splitedRomajiListString) {
-			RomajiEntry romajiEntry = new RomajiEntry();
-			
-			romajiEntry.setRomaji(currentRomajiString);
-			
-			result.add(romajiEntry);
+		for (String currentRomajiString : splitedRomajiListString) {			
+			result.add(currentRomajiString);
 		}
 		
 		return result;		

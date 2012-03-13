@@ -41,17 +41,17 @@ public class KanjiImageWriter {
 	public static void createKanjiImage(Map<String, String> kanjiCache, String imageDir, PolishJapaneseEntry polishJapaneseEntry) 
 			throws JapaneseDictionaryException {
 		
-		String kanji = polishJapaneseEntry.getJapanese();
+		String kanji = polishJapaneseEntry.getKanji();
 		
 		if (kanjiCache.containsKey(kanji)) {			
-			polishJapaneseEntry.setJapaneseImagePath(kanjiCache.get(kanji));
+			polishJapaneseEntry.setKanjiImagePath(kanjiCache.get(kanji));
 			
 			return;
 		}
 		
 		String fileName = createUniqueFileName(kanjiCache, kanji);
 				
-		polishJapaneseEntry.setJapaneseImagePath(fileName);
+		polishJapaneseEntry.setKanjiImagePath(fileName);
 		
 		String fileFullPath = imageDir + File.separator + fileName;
 		File file = new File(fileFullPath);
@@ -65,7 +65,7 @@ public class KanjiImageWriter {
 		
 		String japaneseImagePath = "";
 		
-		String kanji = polishJapaneseEntry.getJapanese();
+		String kanji = polishJapaneseEntry.getKanji();
 		
 		for (int idx = 0; idx < kanji.length(); ++idx) {
 			
@@ -80,7 +80,7 @@ public class KanjiImageWriter {
 			}
 		}
 		
-		polishJapaneseEntry.setJapaneseImagePath(japaneseImagePath);
+		polishJapaneseEntry.setKanjiImagePath(japaneseImagePath);
 	}
 	
 	public static String createNewKanjiImage(Map<String, String> cache, String imageDir, String word) throws JapaneseDictionaryException {
