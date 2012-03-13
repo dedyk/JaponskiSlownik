@@ -40,7 +40,7 @@ public class CsvReaderWriter {
 				sb.append(polishJapaneseEntry.getKanji()).append(";");
 			}
 
-			if (polishJapaneseEntry.getKanjiImagePath() != null) {
+			if (polishJapaneseEntry.getKanjiImagePath() != null && polishJapaneseEntry.getKanjiImagePath().equals("") == false) {
 				sb.append(polishJapaneseEntry.getKanjiImagePath()).append(";");
 			}
 
