@@ -695,7 +695,7 @@ WORD_VERB_U,HIRAGANA,,,ふとる,futoru,zyskiwać na wadze,
 WORD_VERB_TE,HIRAGANA,,,ふとっています,futotte imasu,być grubym,
 WORD_VERB_RU,HIRAGANA,,,めがねをかける,megane wo kakeru,zakładać okulary,
 WORD_VERB_RU,HIRAGANA,,,きる,kiru,zakładać,powyżej paska
-WORD_VERB_RU,HIRAGANA,,,につとめる,ni tsutomeru,pracować dla,
+WORD_VERB_RU,HIRAGANA,,,につとめる,ni tsutomeru,pracować dla,niefizycznie
 WORD_VERB_TE,HIRAGANA,,,につとめています,ni tsutomete imasu,pracować dla,
 WORD_VERB_RU,HIRAGANA,,,やせる,yaseru,tracić na wadze,
 WORD_VERB_TE,HIRAGANA,,,やせています,yasete imasu,być chudym,
@@ -949,12 +949,13 @@ UNKNOWN,HIRAGANA,,,おんなのこ,onna no ko,dziewczynka,
 UNKNOWN,HIRAGANA,,,がいこく,gaikoku,zagraniczny kraj,
 UNKNOWN,HIRAGANA,,,かしゅ,kashu,piosenkarka,
 UNKNOWN,KATAKANA,,,キャンプ,kyanpu,obóz,
-UNKNOWN,HIRAGANA,,,こちら,kochira,ta osoba,grzecznie
+UNKNOWN,HIRAGANA,,,こちら,kochira,ta osoba,uprzejmie
 UNKNOWN,HIRAGANA,,,こんがっき,kongakki,aktualny semestr,
 UNKNOWN,HIRAGANA,,,しゃちょう,shachou,prezes,firmy
-UNKNOWN,HIRAGANA,,,じゅぎょう,jugyou,klasa,
+UNKNOWN,HIRAGANA,,,じゅぎょう,jugyou,"wykład
+zajęcia",
 UNKNOWN,HIRAGANA,,,しょうらい,shourai,przyszłość,
-UNKNOWN,KATAKANA,,,ドライブ,doraibu,przejaźdżka,
+UNKNOWN,KATAKANA,,,ドライブ,doraibu,przejażdżka,
 UNKNOWN,KATAKANA,,,ビール,biiru,piwo,
 UNKNOWN,HIRAGANA,,,びじゅつかん,bijutsukan,muzeum,artystyczne
 UNKNOWN,KATAKANA,,,ホーメステイ,hoomesutei,"pozostać w domu
@@ -970,10 +971,12 @@ WORD_VERB_U,KATAKANA,,,サボル,saboru,opuszczać zajęcia,hiragana i katakana
 WORD_VERB_U,HIRAGANA,,,とる,toru,zdać do następnej klasy,
 WORD_VERB_U,HIRAGANA,,,ならう,narau,uczyć się,czegoś praktycznego
 WORD_VERB_U,HIRAGANA,,,にのぼる,ni noboru,wspinać się,
-WORD_VERB_U,HIRAGANA,,,はたらう,hatarau,pracować,
+WORD_VERB_U,HIRAGANA,,,はたらく,hataraku,pracować,h...
+WORD_VERB_IRREGULAR,HIRAGANA,,,しごとをする,shigoto wo suru,pracować,s...
+WORD_VERB_RU,HIRAGANA,,,につとめる,ni tsutomeru,pracować dla,
 WORD_VERB_RU,HIRAGANA,,,つかれる,tsukareru,być zmęczony,
 WORD_VERB_RU,HIRAGANA,,,やめる,yameru,rezygnować,
-WORD_VERB_IRREGULAR,HIRAGANA,,,けんかする,kenka suru,latać,
+WORD_VERB_IRREGULAR,HIRAGANA,,,けんかする,kenka suru,pokłucić się,
 WORD_VERB_IRREGULAR,KATAKANA,,,ヲショウカイスル,wo shoukai suru,wprowadzać,"kogoś ni kto ~, hiragana i katakana"
 WORD_VERB_IRREGULAR,HIRAGANA,,,だいえっとする,daietto suru,być na diecie,
 WORD_VERB_IRREGULAR,HIRAGANA,,,ちこくする,chikoku suru,być spóźniony,
@@ -986,8 +989,9 @@ UNKNOWN,HIRAGANA,,,だけ,dake,"właśnie
 tylko",~
 UNKNOWN,HIRAGANA,,,てん,ten,punkty,~
 UNKNOWN,HIRAGANA,,,ひさしぶり,hisashiburi,to był długi czas,
-UNKNOWN,HIRAGANA,,,まあまあ,maamaa,ok,
-UNKNOWN,HIRAGANA,,,もっと,motto,więcej,
+UNKNOWN,HIRAGANA,,,まあまあ,maamaa,tak sobie,
+UNKNOWN,HIRAGANA,,,もっと,motto,"więcej
+bardziej",
 UNKNOWN,HIRAGANA,,,さっか,sakka,pisarz,
 UNKNOWN,HIRAGANA,,,けいさつかん,keisatsukan,policjant,
 UNKNOWN,HIRAGANA,,,はいゆう,haiyuu,aktor,
