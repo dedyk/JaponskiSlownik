@@ -121,8 +121,10 @@ public class CsvReaderWriter {
 			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
 			csvWriter.write(polishJapaneseEntry.getKanji());
-			csvWriter.write(convertRomajiEntryListToString(polishJapaneseEntry.getRomajiList()));
-			csvWriter.write(convertPolishTranslateListToString(polishJapaneseEntry.getPolishTranslates()));
+			csvWriter.write(polishJapaneseEntry.getKanjiImagePath());
+			csvWriter.write(convertListToString(polishJapaneseEntry.getKanaList()));
+			csvWriter.write(convertListToString(polishJapaneseEntry.getRomajiList()));
+			csvWriter.write(convertListToString(polishJapaneseEntry.getPolishTranslates()));
 			csvWriter.write(polishJapaneseEntry.getInfo());
 			
 			csvWriter.endRecord();
@@ -139,20 +141,24 @@ public class CsvReaderWriter {
 		
 		while(csvReader.readRecord()) {
 			
-			String groupNameString = csvReader.get(0);
+			String dictionaryEntryType = csvReader.get(0);
 			String wordTypeString = csvReader.get(1);
 			String kanjiString = csvReader.get(2);
-			String romajiListString = csvReader.get(3);
-			String polishTranslateListString = csvReader.get(4);
-			String infoString = csvReader.get(5);
+			String kanjiImagePathString = csvReader.get(3);
+			String kanaListString = csvReader.get(4);
+			String romajiListString = csvReader.get(5);
+			String polishTranslateListString = csvReader.get(6);
+			String infoString = csvReader.get(7);
 			
 			PolishJapaneseEntry entry = new PolishJapaneseEntry();
 			
-			entry.setDictionaryEntryType(DictionaryEntryType.valueOf(groupNameString));
+			entry.setDictionaryEntryType(DictionaryEntryType.valueOf(dictionaryEntryType));
 			entry.setWordType(WordType.valueOf(wordTypeString));
 			entry.setKanji(kanjiString);
-			entry.setRomajiList(parsePolishRomajiString(romajiListString));
-			entry.setPolishTranslates(parsePolishTranslateString(polishTranslateListString));
+			entry.setKanjiImagePath(kanjiImagePathString);
+			entry.setKanaList(parseStringIntoList(kanaListString));
+			entry.setRomajiList(parseStringIntoList(romajiListString));
+			entry.setPolishTranslates(parseStringIntoList(polishTranslateListString));
 			
 			entry.setInfo(infoString);
 			
@@ -164,7 +170,7 @@ public class CsvReaderWriter {
 		return result;
 	}
 	
-	private static String convertPolishTranslateListToString(List<String> list) {
+	private static String convertListToString(List<String> list) {
 		StringBuffer sb = new StringBuffer();
 		
 		for (int idx = 0; idx < list.size(); ++idx) {
@@ -178,7 +184,7 @@ public class CsvReaderWriter {
 		return sb.toString();
 	}
 	
-	private static List<String> parsePolishTranslateString(String polishTranslateString) {
+	private static List<String> parseStringIntoList(String polishTranslateString) {
 		
 		List<String> result = new ArrayList<String>();
 		
@@ -190,34 +196,6 @@ public class CsvReaderWriter {
 		
 		return result;		
 	}
-	
-	private static String convertRomajiEntryListToString(List<String> list) {
-		StringBuffer sb = new StringBuffer();
-		
-		for (int idx = 0; idx < list.size(); ++idx) {
-			sb.append(list.get(idx));
-			
-			if (idx != list.size() - 1) {
-				sb.append("\n");
-			}
-		}
-		
-		return sb.toString();
-	}
-	
-	private static List<String> parsePolishRomajiString(String romajiString) {
-		
-		List<String> result = new ArrayList<String>();
-		
-		String[] splitedRomajiListString = romajiString.split("\n");
-		
-		for (String currentRomajiString : splitedRomajiListString) {			
-			result.add(currentRomajiString);
-		}
-		
-		return result;		
-	}
-
 	
 	public static void generateKanaEntriesCsv(String outputFile, List<KanaEntry> kanaEntries) throws IOException {
 		

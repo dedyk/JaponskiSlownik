@@ -15,7 +15,7 @@ public class PolishJapaneseEntry {
 	
 	private String kanjiImagePath;
 	
-	private List<String> kana;
+	private List<String> kanaList;
 	
 	private List<String> romajiList;
 		
@@ -39,8 +39,8 @@ public class PolishJapaneseEntry {
 		return kanjiImagePath;
 	}
 
-	public List<String> getKana() {
-		return kana;
+	public List<String> getKanaList() {
+		return kanaList;
 	}
 
 	public List<String> getRomajiList() {
@@ -71,8 +71,8 @@ public class PolishJapaneseEntry {
 		this.kanjiImagePath = kanjiImagePath;
 	}
 
-	public void setKana(List<String> kana) {
-		this.kana = kana;
+	public void setKanaList(List<String> kanaList) {
+		this.kanaList = kanaList;
 	}
 
 	public void setRomajiList(List<String> romajiList) {

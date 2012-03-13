@@ -1,595 +1,728 @@
-WORD_GENKI1_3,HIRAGANA,一,"ichi
+WORD_GENKI1_3,HIRAGANA,一,,"いち
+いつ
+ひと","ichi
 i tsu
 hito",jeden,czytanie
-WORD_GENKI1_3,HIRAGANA,二,"ni
+WORD_GENKI1_3,HIRAGANA,二,,"に
+ふた","ni
 futa",dwa,czytanie
-WORD_GENKI1_3,HIRAGANA,三,"san
+WORD_GENKI1_3,HIRAGANA,三,,"さん
+みつ","san
 mi tsu",trzy,czytanie
-WORD_GENKI1_3,HIRAGANA,四,"yon
+WORD_GENKI1_3,HIRAGANA,四,,"よん
+よ
+よつ
+し","yon
 yo
 yo tsu
 shi",cztery,czytanie
-WORD_GENKI1_3,HIRAGANA,五,"go
+WORD_GENKI1_3,HIRAGANA,五,,"ご
+いつ","go
 itsu",pięć,czytanie
-WORD_GENKI1_3,HIRAGANA,六,"roku
+WORD_GENKI1_3,HIRAGANA,六,,"ろく
+ろつ
+むつ","roku
 ro tsu
 mu tsu",sześć,czytanie
-WORD_GENKI1_3,HIRAGANA,七,"shichi
+WORD_GENKI1_3,HIRAGANA,七,,"しち
+なな","shichi
 nana",siedem,czytanie
-WORD_GENKI1_3,HIRAGANA,八,"hachi
+WORD_GENKI1_3,HIRAGANA,八,,"はち
+はつ
+やつ","hachi
 ha tsu
 ya tsu",osiem,czytanie
-WORD_GENKI1_3,HIRAGANA,九,"kyuu
+WORD_GENKI1_3,HIRAGANA,九,,"きゅう
+く
+ここの","kyuu
 ku
 kokono",dziewięć,czytanie
-WORD_GENKI1_3,HIRAGANA,十,"juu
+WORD_GENKI1_3,HIRAGANA,十,,"じゅう
+じゅうつ
+とお","juu
 juu tsu
 too",dziesięć,czytanie
-WORD_GENKI1_3,HIRAGANA,百,"hyaku
+WORD_GENKI1_3,HIRAGANA,百,,"ひゃく
+びゃく
+ぴゃく","hyaku
 byaku
 pyaku",sto,czytanie
-WORD_GENKI1_3,HIRAGANA,千,"sen
+WORD_GENKI1_3,HIRAGANA,千,,"せん
+ぜん","sen
 zen",tysiąc,czytanie
-WORD_GENKI1_3,HIRAGANA,万,man,dziesięć tysięcy,czytanie
-WORD_GENKI1_3,HIRAGANA,円,en,"yen
+WORD_GENKI1_3,HIRAGANA,万,,まん,man,dziesięć tysięcy,czytanie
+WORD_GENKI1_3,HIRAGANA,円,,えん,en,"yen
 koło",czytanie
-WORD_GENKI1_3,HIRAGANA,時,ji,"godzina
+WORD_GENKI1_3,HIRAGANA,時,,じ,ji,"godzina
 czas",czytanie
-WORD_GENKI1_4,HIRAGANA,日,"ni
+WORD_GENKI1_4,HIRAGANA,日,,"に
+にち
+び
+ひ
+につ","ni
 nichi
 bi
 hi
 ni tsu","dzień
 słońce",czytanie
-WORD_GENKI1_4,HIRAGANA,本,"hon
+WORD_GENKI1_4,HIRAGANA,本,,"ほん
+もと","hon
 moto","książka
 prosto",czytanie
-WORD_GENKI1_4,HIRAGANA,人,"jin
+WORD_GENKI1_4,HIRAGANA,人,,"じん
+ひと
+にん","jin
 hito
 nin",człowiek,czytanie
-WORD_GENKI1_4,HIRAGANA,月,"getsu
+WORD_GENKI1_4,HIRAGANA,月,,"げつ
+がつ
+つき","getsu
 gatsu
 tsuki","księżyc
 miesiąc",czytanie
-WORD_GENKI1_4,HIRAGANA,火,"ka
+WORD_GENKI1_4,HIRAGANA,火,,"か
+ひ","ka
 hi",ogień,czytanie
-WORD_GENKI1_4,HIRAGANA,水,"sui
+WORD_GENKI1_4,HIRAGANA,水,,"すい
+みず","sui
 mizu",woda,czytanie
-WORD_GENKI1_4,HIRAGANA,木,"moku
+WORD_GENKI1_4,HIRAGANA,木,,"もく
+き","moku
 ki",drzewo,czytanie
-WORD_GENKI1_4,HIRAGANA,金,"kin
+WORD_GENKI1_4,HIRAGANA,金,,"きん
+かね","kin
 kane","złoto
 pieniądze",czytanie
-WORD_GENKI1_4,HIRAGANA,土,"do
+WORD_GENKI1_4,HIRAGANA,土,,"ど
+つち","do
 tsuchi",ziemia,czytanie
-WORD_GENKI1_4,HIRAGANA,曜,you,dzień powszechni,czytanie
-WORD_GENKI1_4,HIRAGANA,上,"ue
+WORD_GENKI1_4,HIRAGANA,曜,,よう,you,dzień powszechni,czytanie
+WORD_GENKI1_4,HIRAGANA,上,,"うえ
+じょう","ue
 jou",na górze,czytanie
-WORD_GENKI1_4,HIRAGANA,下,"shita
+WORD_GENKI1_4,HIRAGANA,下,,"した
+か","shita
 ka",na dole,czytanie
-WORD_GENKI1_4,HIRAGANA,中,"naka
+WORD_GENKI1_4,HIRAGANA,中,,"なか
+ちゅう
+じゅう","naka
 chuu
 juu",środek,czytanie
-WORD_GENKI1_4,HIRAGANA,半,han,połowa,czytanie
-WORD_GENKI1_5,HIRAGANA,山,"yama
+WORD_GENKI1_4,HIRAGANA,半,,はん,han,połowa,czytanie
+WORD_GENKI1_5,HIRAGANA,山,,"やま
+さん","yama
 san",góra,czytanie
-WORD_GENKI1_5,HIRAGANA,川,"kawa
+WORD_GENKI1_5,HIRAGANA,川,,"かわ
+がわ","kawa
 gawa",rzeka,czytanie
-WORD_GENKI1_5,HIRAGANA,元,gen,położenie,czytanie
-WORD_GENKI1_5,HIRAGANA,気,ki,duch,czytanie
-WORD_GENKI1_5,HIRAGANA,天,ten,niebo,czytanie
-WORD_GENKI1_5,HIRAGANA,私,"watashi
+WORD_GENKI1_5,HIRAGANA,元,,げん,gen,położenie,czytanie
+WORD_GENKI1_5,HIRAGANA,気,,き,ki,duch,czytanie
+WORD_GENKI1_5,HIRAGANA,天,,てん,ten,niebo,czytanie
+WORD_GENKI1_5,HIRAGANA,私,,"わたし
+し","watashi
 shi","ja
 prywatne",czytanie
-WORD_GENKI1_5,HIRAGANA,今,"ima
+WORD_GENKI1_5,HIRAGANA,今,,"いま
+こん","ima
 kon",teraz,czytanie
-WORD_GENKI1_5,HIRAGANA,田,"ta
+WORD_GENKI1_5,HIRAGANA,田,,"た
+だ","ta
 da",pole ryżowe,czytanie
-WORD_GENKI1_5,HIRAGANA,女,"onna
+WORD_GENKI1_5,HIRAGANA,女,,"おんな
+じょ","onna
 jo",kobieta,czytanie
-WORD_GENKI1_5,HIRAGANA,男,"otoko
+WORD_GENKI1_5,HIRAGANA,男,,"おとこ
+だん","otoko
 dan",mężczyzna,czytanie
-WORD_GENKI1_5,HIRAGANA,見,"mi
+WORD_GENKI1_5,HIRAGANA,見,,"み
+けん","mi
 ken",widzieć,czytanie
-WORD_GENKI1_5,HIRAGANA,行,"i
+WORD_GENKI1_5,HIRAGANA,行,,"い
+こう
+ぎょう","i
 kou
 gyou",iść,czytanie
-WORD_GENKI1_5,HIRAGANA,食,"ta
+WORD_GENKI1_5,HIRAGANA,食,,"た
+しょく","ta
 shoku",jeść,czytanie
-WORD_GENKI1_5,HIRAGANA,飲,"no
+WORD_GENKI1_5,HIRAGANA,飲,,"の
+いん","no
 in",pić,czytanie
-WORD_GENKI1_6,HIRAGANA,東,"higashi
+WORD_GENKI1_6,HIRAGANA,東,,"ひがし
+とう","higashi
 tou",wschód,czytanie
-WORD_GENKI1_6,HIRAGANA,西,"nishi
+WORD_GENKI1_6,HIRAGANA,西,,"にし
+せい
+さい","nishi
 sei
 sai",zachód,czytanie
-WORD_GENKI1_6,HIRAGANA,南,"minami
+WORD_GENKI1_6,HIRAGANA,南,,"みなみ
+なん","minami
 nan",południe,czytanie
-WORD_GENKI1_6,HIRAGANA,北,"kita
+WORD_GENKI1_6,HIRAGANA,北,,"きた
+ほく
+ほつ","kita
 hoku
 ho tsu",północ,czytanie
-WORD_GENKI1_6,HIRAGANA,口,"guchi
+WORD_GENKI1_6,HIRAGANA,口,,"ぐち
+くち
+こう","guchi
 kuchi
 kou",usta,czytanie
-WORD_GENKI1_6,HIRAGANA,出,"de
+WORD_GENKI1_6,HIRAGANA,出,,"で
+だ
+しゅつ
+しゅつ","de
 da
 shu tsu
 shutsu",wychodzić,czytanie
-WORD_GENKI1_6,HIRAGANA,右,"migi
+WORD_GENKI1_6,HIRAGANA,右,,"みぎ
+う
+ゆう","migi
 u
 yuu",prawo,czytanie
-WORD_GENKI1_6,HIRAGANA,左,"hidari
+WORD_GENKI1_6,HIRAGANA,左,,"ひだり
+さ","hidari
 sa",lewo,czytanie
-WORD_GENKI1_6,HIRAGANA,分,"fun
+WORD_GENKI1_6,HIRAGANA,分,,"ふん
+ぷん
+ぶん","fun
 pun
 bun","minuta
 dzielić",czytanie
-WORD_GENKI1_6,HIRAGANA,先,"sen
+WORD_GENKI1_6,HIRAGANA,先,,"せん
+さき","sen
 saki",na przód,czytanie
-WORD_GENKI1_6,HIRAGANA,生,"sei
+WORD_GENKI1_6,HIRAGANA,生,,"せい
+う
+しょう","sei
 u
 shou",urodziny,czytanie
-WORD_GENKI1_6,HIRAGANA,大,"dai
+WORD_GENKI1_6,HIRAGANA,大,,"だい
+おお
+たい","dai
 oo
 tai",duży,czytanie
-WORD_GENKI1_6,HIRAGANA,学,"gaku
+WORD_GENKI1_6,HIRAGANA,学,,"がく
+がつ
+まな","gaku
 ga tsu
 mana",uczyć,czytanie
-WORD_GENKI1_6,HIRAGANA,外,"gai
+WORD_GENKI1_6,HIRAGANA,外,,"がい
+そと","gai
 soto",na zewnątrzn,czytanie
-WORD_GENKI1_6,HIRAGANA,国,"koku
+WORD_GENKI1_6,HIRAGANA,国,,"こく
+ごく
+くに","koku
 goku
 kuni",kraj,czytanie
-WORD_GENKI1_7,HIRAGANA,京,kyou,stolica,czytanie
-WORD_GENKI1_7,HIRAGANA,子,"ko
+WORD_GENKI1_7,HIRAGANA,京,,きょう,kyou,stolica,czytanie
+WORD_GENKI1_7,HIRAGANA,子,,"こ
+し","ko
 shi",dziecko,czytanie
-WORD_GENKI1_7,HIRAGANA,小,"chii
+WORD_GENKI1_7,HIRAGANA,小,,"ちい
+しょう","chii
 shou",mały,czytanie
-WORD_GENKI1_7,HIRAGANA,会,"a
+WORD_GENKI1_7,HIRAGANA,会,,"あ
+かい","a
 kai",spotykać,czytanie
-WORD_GENKI1_7,HIRAGANA,社,"sha
+WORD_GENKI1_7,HIRAGANA,社,,"しゃ
+じゃ","sha
 ja",firma,czytanie
-WORD_GENKI1_7,HIRAGANA,父,"chichi
+WORD_GENKI1_7,HIRAGANA,父,,"ちち
+とう
+ふ","chichi
 tou
 fu",ojciec,czytanie
-WORD_GENKI1_7,HIRAGANA,母,"haha
+WORD_GENKI1_7,HIRAGANA,母,,"はは
+かあ
+ぼ","haha
 kaa
 bo",matka,czytanie
-WORD_GENKI1_7,HIRAGANA,高,"taka
+WORD_GENKI1_7,HIRAGANA,高,,"たか
+こう","taka
 kou",wysoki,czytanie
-WORD_GENKI1_7,HIRAGANA,校,kou,szkoła,czytanie
-WORD_GENKI1_7,HIRAGANA,毎,mai,w każdy,czytanie
-WORD_GENKI1_7,HIRAGANA,語,go,słowo,czytanie
-WORD_GENKI1_7,HIRAGANA,文,bun,zdanie,czytanie
-WORD_GENKI1_7,HIRAGANA,帰,"kae
+WORD_GENKI1_7,HIRAGANA,校,,こう,kou,szkoła,czytanie
+WORD_GENKI1_7,HIRAGANA,毎,,まい,mai,w każdy,czytanie
+WORD_GENKI1_7,HIRAGANA,語,,ご,go,słowo,czytanie
+WORD_GENKI1_7,HIRAGANA,文,,ぶん,bun,zdanie,czytanie
+WORD_GENKI1_7,HIRAGANA,帰,,"かえ
+き","kae
 ki",wracać,czytanie
-WORD_GENKI1_7,HIRAGANA,入,"hai
+WORD_GENKI1_7,HIRAGANA,入,,"はい
+いり
+い
+にゅう","hai
 iri
 i
 nyuu",wchodzić,czytanie
-WORD_GENKI1_8,HIRAGANA,員,in,członek,czytanie
-WORD_GENKI1_8,HIRAGANA,新,"atara
+WORD_GENKI1_8,HIRAGANA,員,,いん,in,członek,czytanie
+WORD_GENKI1_8,HIRAGANA,新,,"あたら
+しん","atara
 shin",nowy,czytanie
-WORD_GENKI1_8,HIRAGANA,聞,"ki
+WORD_GENKI1_8,HIRAGANA,聞,,"き
+ぶん","ki
 bun",słuczać,czytanie
-WORD_GENKI1_8,HIRAGANA,作,"tsuku
+WORD_GENKI1_8,HIRAGANA,作,,"つく
+さく","tsuku
 saku","tworzyć
 robić",czytanie
-WORD_GENKI1_8,HIRAGANA,仕,shi,służyć,czytanie
-WORD_GENKI1_8,HIRAGANA,事,"goto
+WORD_GENKI1_8,HIRAGANA,仕,,し,shi,służyć,czytanie
+WORD_GENKI1_8,HIRAGANA,事,,"ごと
+こと
+じ","goto
 koto
 ji",rzecz,czytanie
-WORD_GENKI1_8,HIRAGANA,電,den,elektryczność,czytanie
-WORD_GENKI1_8,HIRAGANA,車,"kuruma
+WORD_GENKI1_8,HIRAGANA,電,,でん,den,elektryczność,czytanie
+WORD_GENKI1_8,HIRAGANA,車,,"くるま
+しゃ","kuruma
 sha",samochód,czytanie
-WORD_GENKI1_8,HIRAGANA,休,"yasu
+WORD_GENKI1_8,HIRAGANA,休,,"やす
+きゅう","yasu
 kyuu",odpoczywać,czytanie
-WORD_GENKI1_8,HIRAGANA,言,"i
+WORD_GENKI1_8,HIRAGANA,言,,"い
+げん","i
 gen",mówić,czytanie
-WORD_GENKI1_8,HIRAGANA,読,"yo
+WORD_GENKI1_8,HIRAGANA,読,,"よ
+どく","yo
 doku",czytać,czytanie
-WORD_GENKI1_8,HIRAGANA,思,"omo
+WORD_GENKI1_8,HIRAGANA,思,,"おも
+し","omo
 shi",myśleć,czytanie
-WORD_GENKI1_8,HIRAGANA,次,"tsugi
+WORD_GENKI1_8,HIRAGANA,次,,"つぎ
+じ","tsugi
 ji",następny,czytanie
-WORD_GENKI1_8,HIRAGANA,何,"nani
+WORD_GENKI1_8,HIRAGANA,何,,"なに
+なん","nani
 nan",co,czytanie
-WORD_GENKI1_9,HIRAGANA,午,go,południe,"czytanie, czas"
-WORD_GENKI1_9,HIRAGANA,後,"go
+WORD_GENKI1_9,HIRAGANA,午,,ご,go,południe,"czytanie, czas"
+WORD_GENKI1_9,HIRAGANA,後,,"ご
+あと
+うし","go
 ato
 ushi",za,czytanie
-WORD_GENKI1_9,HIRAGANA,前,"mae
+WORD_GENKI1_9,HIRAGANA,前,,"まえ
+ぜん","mae
 zen",przed,czytanie
-WORD_GENKI1_9,HIRAGANA,名,"na
+WORD_GENKI1_9,HIRAGANA,名,,"な
+めい","na
 mei",imię,czytanie
-WORD_GENKI1_9,HIRAGANA,白,"shiro
+WORD_GENKI1_9,HIRAGANA,白,,"しろ
+はく","shiro
 haku",biały,czytanie
-WORD_GENKI1_9,HIRAGANA,雨,"ame
+WORD_GENKI1_9,HIRAGANA,雨,,"あめ
+う","ame
 u",deszcz,czytanie
-WORD_GENKI1_9,HIRAGANA,書,"ka
+WORD_GENKI1_9,HIRAGANA,書,,"か
+しょ","ka
 sho",pisać,czytanie
-WORD_GENKI1_9,HIRAGANA,友,"tomo
+WORD_GENKI1_9,HIRAGANA,友,,"とも
+ゆう","tomo
 yuu",przyjaciel,czytanie
-WORD_GENKI1_9,HIRAGANA,間,"kan
+WORD_GENKI1_9,HIRAGANA,間,,"かん
+あいだ","kan
 aida",pomiędzy,czytanie
-WORD_GENKI1_9,HIRAGANA,家,"ie
+WORD_GENKI1_9,HIRAGANA,家,,"いえ
+か","ie
 ka",dom,czytanie
-WORD_GENKI1_9,HIRAGANA,話,"hana
+WORD_GENKI1_9,HIRAGANA,話,,"はな
+はなし
+わ","hana
 hanashi
 wa",rozmawiać,czytanie
-WORD_GENKI1_9,HIRAGANA,少,"suko
+WORD_GENKI1_9,HIRAGANA,少,,"すこ
+すく
+しょう","suko
 suku
 shou",trochę,czytanie
-WORD_GENKI1_9,HIRAGANA,古,"furu
+WORD_GENKI1_9,HIRAGANA,古,,"ふる
+こ","furu
 ko",stary,czytanie
-WORD_GENKI1_9,HIRAGANA,知,"shi
+WORD_GENKI1_9,HIRAGANA,知,,"し
+ち","shi
 chi",wiedzieć,czytanie
-WORD_GENKI1_9,HIRAGANA,来,"ku
+WORD_GENKI1_9,HIRAGANA,来,,"く
+き
+こ
+らい","ku
 ki
 ko
 rai",wiedzieć,czytanie
-WORD_GENKI1_10,HIRAGANA,住,"su
+WORD_GENKI1_10,HIRAGANA,住,,"す
+じゅう","su
 juu",mieszkać,czytanie
-WORD_GENKI1_10,HIRAGANA,正,"shou
+WORD_GENKI1_10,HIRAGANA,正,,"しょう
+ただ","shou
 tada",właściwy,czytanie
-WORD_GENKI1_10,HIRAGANA,年,"nen
+WORD_GENKI1_10,HIRAGANA,年,,"ねん
+とし","nen
 toshi",rok,czytanie
-WORD_GENKI1_10,HIRAGANA,売,"u
+WORD_GENKI1_10,HIRAGANA,売,,"う
+ばい","u
 bai",sprzedawać,czytanie
-WORD_GENKI1_10,HIRAGANA,買,ka,kupować,czytanie
-WORD_GENKI1_10,HIRAGANA,町,"machi
+WORD_GENKI1_10,HIRAGANA,買,,か,ka,kupować,czytanie
+WORD_GENKI1_10,HIRAGANA,町,,"まち
+ちょう","machi
 chou",miasto,czytanie
-WORD_GENKI1_10,HIRAGANA,長,"naga
+WORD_GENKI1_10,HIRAGANA,長,,"なが
+ちょう","naga
 chou",długi,czytanie
-WORD_GENKI1_10,HIRAGANA,道,"michi
+WORD_GENKI1_10,HIRAGANA,道,,"みち
+どう","michi
 dou",droga,czytanie
-WORD_GENKI1_10,HIRAGANA,雪,"yuki
+WORD_GENKI1_10,HIRAGANA,雪,,"ゆき
+せつ","yuki
 setsu",śnieg,czytanie
-WORD_GENKI1_10,HIRAGANA,立,"ta
+WORD_GENKI1_10,HIRAGANA,立,,"た
+りつ","ta
 ritsu",stać,czytanie
-WORD_GENKI1_10,HIRAGANA,自,ji,siebie,czytanie
-WORD_GENKI1_10,HIRAGANA,夜,"yoru
+WORD_GENKI1_10,HIRAGANA,自,,じ,ji,siebie,czytanie
+WORD_GENKI1_10,HIRAGANA,夜,,"よる
+よ
+や","yoru
 yo
 ya",noc,czytanie
-WORD_GENKI1_10,HIRAGANA,朝,"asa
+WORD_GENKI1_10,HIRAGANA,朝,,"あさ
+ちょう","asa
 chou",ranek,czytanie
-WORD_GENKI1_10,HIRAGANA,持,"mo
+WORD_GENKI1_10,HIRAGANA,持,,"も
+じ","mo
 ji",mieć,czytanie
-WORD_GENKI1_3,HIRAGANA,一時,ichiji,1,godzina
-WORD_GENKI1_3,HIRAGANA,一年生,ichinensei,student pierwszego roku,
-WORD_GENKI1_3,HIRAGANA,一分,ippun,jedna minuta,
-WORD_GENKI1_3,HIRAGANA,一つ,hitotsu,1,liczenie
-WORD_GENKI1_3,HIRAGANA,二時,niji,2,godzina
-WORD_GENKI1_3,HIRAGANA,二年生,ninensei,student drugiego roku,
-WORD_GENKI1_3,HIRAGANA,二つ,futatsu,2,liczenie
-WORD_GENKI1_3,HIRAGANA,二つ日間,futsukakan,dwa dni,
-WORD_GENKI1_3,HIRAGANA,三時,sanji,3,godzina
-WORD_GENKI1_3,HIRAGANA,三年生,sannensei,student trzeciego roku,
-WORD_GENKI1_3,HIRAGANA,三つ,mittsu,3,liczenie
-WORD_GENKI1_3,HIRAGANA,四時,yoji,4,godzina
-WORD_GENKI1_3,HIRAGANA,四年生,yonensei,student czwartego roku,
-WORD_GENKI1_3,HIRAGANA,四つ,yottsu,4,liczenie
-WORD_GENKI1_3,HIRAGANA,四月,shigatsu,kwiecień,
-WORD_GENKI1_3,HIRAGANA,五時,goji,5,godzina
-WORD_GENKI1_3,HIRAGANA,五つ,itsutsu,5,liczenie
-WORD_GENKI1_3,HIRAGANA,六時,rokuji,6,godzina
-WORD_GENKI1_3,HIRAGANA,六百,roppyaku,600,
-WORD_GENKI1_3,HIRAGANA,六分,roppun,6,minut
-WORD_GENKI1_3,HIRAGANA,六つ,muttsu,6,
-WORD_GENKI1_3,HIRAGANA,七時,shichiji,7,godzina
-WORD_GENKI1_3,HIRAGANA,七つ,nanatsu,7,liczenie
-WORD_GENKI1_3,HIRAGANA,八時,hachiji,8,godzina
-WORD_GENKI1_3,HIRAGANA,八百,happyaku,800,
-WORD_GENKI1_3,HIRAGANA,八歳,hassai,8,wiek
-WORD_GENKI1_3,HIRAGANA,八つ,yattsu,8,liczenie
-WORD_GENKI1_3,HIRAGANA,九時,kuji,9,godzina
-WORD_GENKI1_3,HIRAGANA,九歳,kyuusai,9,wiek
-WORD_GENKI1_3,HIRAGANA,九つ,kokonotsu,9,liczenie
-WORD_GENKI1_3,HIRAGANA,十時,juuji,10,godzina
-WORD_GENKI1_3,HIRAGANA,十歳,jussai,10,wiek
-WORD_GENKI1_3,HIRAGANA,十,too,10,liczenie
-WORD_GENKI1_3,HIRAGANA,三百,sanbyaku,300,
-WORD_GENKI1_3,HIRAGANA,六百,roppyaku,600,
-WORD_GENKI1_3,HIRAGANA,八百,happyaku,800,
-WORD_GENKI1_3,HIRAGANA,三千,sanzen,3000,
-WORD_GENKI1_3,HIRAGANA,八千,hassen,8000,
-WORD_GENKI1_3,HIRAGANA,一万,ichiman,10000,
-WORD_GENKI1_3,HIRAGANA,十万,juuman,100000,
-WORD_GENKI1_3,HIRAGANA,百万,hyakuman,1000000,
-WORD_GENKI1_3,HIRAGANA,百円,hyakuen,100,
-WORD_GENKI1_3,HIRAGANA,一時,ichiji,1,godzina
-WORD_GENKI1_3,HIRAGANA,子供の時,kodomo no toki,w czasach dziecinstwa,
-WORD_GENKI1_3,HIRAGANA,時々,tokidoki,czasami,
-WORD_GENKI1_3,HIRAGANA,時計,tokei,zegarek,
-WORD_GENKI1_4,HIRAGANA,日本,nihon,Japonia,
-WORD_GENKI1_4,HIRAGANA,日曜日,nichiyoubi,niedziela,
-WORD_GENKI1_4,HIRAGANA,毎日,mainichi,każdego dnia,
-WORD_GENKI1_4,HIRAGANA,母の日,haha no hi,dzień matki,
-WORD_GENKI1_4,HIRAGANA,日記,nikki,pamiętnik,
-WORD_GENKI1_4,HIRAGANA,三日,mikka,3 dni,
-WORD_GENKI1_4,HIRAGANA,本,hon,książka,
-WORD_GENKI1_4,HIRAGANA,日本,nihon,Japonia,
-WORD_GENKI1_4,HIRAGANA,日本語,nihongo,język japoński,
-WORD_GENKI1_4,HIRAGANA,山本さん,Yamamoto san,Pan Yamamoto,
-WORD_GENKI1_4,HIRAGANA,日本人,nihonjin,Japonczyk,
-WORD_GENKI1_4,HIRAGANA,一人で,hitoride,samotny,
-WORD_GENKI1_4,HIRAGANA,この人,kono hito,ten człowiek,
-WORD_GENKI1_4,HIRAGANA,三人,sannin,3 osoby,
-WORD_GENKI1_4,HIRAGANA,月曜日,getsuyoubi,poniedziałek,
-WORD_GENKI1_4,HIRAGANA,一月,ichigatsu,styczeń,
-WORD_GENKI1_4,HIRAGANA,月,tsuki,księżyc,
-WORD_GENKI1_4,HIRAGANA,火曜日,kayoubi,wtorek,
-WORD_GENKI1_4,HIRAGANA,火,hi,ogień,
-WORD_GENKI1_4,HIRAGANA,水曜日,suiyoubi,środa,
-WORD_GENKI1_4,HIRAGANA,水,mizu,woda,
-WORD_GENKI1_4,HIRAGANA,木曜日,mokuyoubi,czwartek,
-WORD_GENKI1_4,HIRAGANA,木,ki,drzewo,
-WORD_GENKI1_4,HIRAGANA,金曜日,kinyoubi,piątek,'
-WORD_GENKI1_4,HIRAGANA,お金,okane,pieniądze,
-WORD_GENKI1_4,HIRAGANA,土曜日,doyoubi,sobota,
-WORD_GENKI1_4,HIRAGANA,土,tsuchi,ziemia,
-WORD_GENKI1_4,HIRAGANA,日曜日,nichiyoubi,niedziela,
-WORD_GENKI1_4,HIRAGANA,上,ue,na górze,
-WORD_GENKI1_4,HIRAGANA,上手な,jouzuna,dobry w,
-WORD_GENKI1_4,HIRAGANA,屋上,okujou,sufit,
-WORD_GENKI1_4,HIRAGANA,下,shita,pod,
-WORD_GENKI1_4,HIRAGANA,地下鉄,chikatetsu,metro,
-WORD_GENKI1_4,HIRAGANA,下手な,hetana,słaby,
-WORD_GENKI1_4,HIRAGANA,中,naka,środek,
-WORD_GENKI1_4,HIRAGANA,中国,chuugoku,Chiny,
-WORD_GENKI1_4,HIRAGANA,中学,chuugaku,gimnazjum,
-WORD_GENKI1_4,HIRAGANA,一年中,ichinenjuu,cały rok,
-WORD_GENKI1_4,HIRAGANA,三時半,sanji han,3:30,
-WORD_GENKI1_4,HIRAGANA,半分,hanbun,połowa,
-WORD_GENKI1_5,HIRAGANA,山,yama,góra,
-WORD_GENKI1_5,HIRAGANA,富士山,Fuji san,Góra Fuji,
-WORD_GENKI1_5,HIRAGANA,川,kawa,rzeka,
-WORD_GENKI1_5,HIRAGANA,小川さん,Ogawa san,Pan Ogawa,
-WORD_GENKI1_5,HIRAGANA,元気な,genkina,"zdrowy
+WORD_GENKI1_3,HIRAGANA,一時,,いちじ,ichiji,1,godzina
+WORD_GENKI1_3,HIRAGANA,一年生,,いちねんせい,ichinensei,student pierwszego roku,
+WORD_GENKI1_3,HIRAGANA,一分,,いっぷん,ippun,jedna minuta,
+WORD_GENKI1_3,HIRAGANA,一つ,,ひとつ,hitotsu,1,liczenie
+WORD_GENKI1_3,HIRAGANA,二時,,にじ,niji,2,godzina
+WORD_GENKI1_3,HIRAGANA,二年生,,にねんせい,ninensei,student drugiego roku,
+WORD_GENKI1_3,HIRAGANA,二つ,,ふたつ,futatsu,2,liczenie
+WORD_GENKI1_3,HIRAGANA,二つ日間,,ふつかかん,futsukakan,dwa dni,
+WORD_GENKI1_3,HIRAGANA,三時,,さんじ,sanji,3,godzina
+WORD_GENKI1_3,HIRAGANA,三年生,,さんねんせい,sannensei,student trzeciego roku,
+WORD_GENKI1_3,HIRAGANA,三つ,,みっつ,mittsu,3,liczenie
+WORD_GENKI1_3,HIRAGANA,四時,,よじ,yoji,4,godzina
+WORD_GENKI1_3,HIRAGANA,四年生,,よねんせい,yonensei,student czwartego roku,
+WORD_GENKI1_3,HIRAGANA,四つ,,よっつ,yottsu,4,liczenie
+WORD_GENKI1_3,HIRAGANA,四月,,しがつ,shigatsu,kwiecień,
+WORD_GENKI1_3,HIRAGANA,五時,,ごじ,goji,5,godzina
+WORD_GENKI1_3,HIRAGANA,五つ,,いつつ,itsutsu,5,liczenie
+WORD_GENKI1_3,HIRAGANA,六時,,ろくじ,rokuji,6,godzina
+WORD_GENKI1_3,HIRAGANA,六百,,ろっぴゃく,roppyaku,600,
+WORD_GENKI1_3,HIRAGANA,六分,,ろっぷん,roppun,6,minut
+WORD_GENKI1_3,HIRAGANA,六つ,,むっつ,muttsu,6,
+WORD_GENKI1_3,HIRAGANA,七時,,しちじ,shichiji,7,godzina
+WORD_GENKI1_3,HIRAGANA,七つ,,ななつ,nanatsu,7,liczenie
+WORD_GENKI1_3,HIRAGANA,八時,,はちじ,hachiji,8,godzina
+WORD_GENKI1_3,HIRAGANA,八百,,はっぴゃく,happyaku,800,
+WORD_GENKI1_3,HIRAGANA,八歳,,はっさい,hassai,8,wiek
+WORD_GENKI1_3,HIRAGANA,八つ,,やっつ,yattsu,8,liczenie
+WORD_GENKI1_3,HIRAGANA,九時,,くじ,kuji,9,godzina
+WORD_GENKI1_3,HIRAGANA,九歳,,きゅうさい,kyuusai,9,wiek
+WORD_GENKI1_3,HIRAGANA,九つ,,ここのつ,kokonotsu,9,liczenie
+WORD_GENKI1_3,HIRAGANA,十時,,じゅうじ,juuji,10,godzina
+WORD_GENKI1_3,HIRAGANA,十歳,,じゅっさい,jussai,10,wiek
+WORD_GENKI1_3,HIRAGANA,十,,とお,too,10,liczenie
+WORD_GENKI1_3,HIRAGANA,三百,,さんびゃく,sanbyaku,300,
+WORD_GENKI1_3,HIRAGANA,六百,,ろっぴゃく,roppyaku,600,
+WORD_GENKI1_3,HIRAGANA,八百,,はっぴゃく,happyaku,800,
+WORD_GENKI1_3,HIRAGANA,三千,,さんぜん,sanzen,3000,
+WORD_GENKI1_3,HIRAGANA,八千,,はっせん,hassen,8000,
+WORD_GENKI1_3,HIRAGANA,一万,,いちまん,ichiman,10000,
+WORD_GENKI1_3,HIRAGANA,十万,,じゅうまん,juuman,100000,
+WORD_GENKI1_3,HIRAGANA,百万,,ひゃくまん,hyakuman,1000000,
+WORD_GENKI1_3,HIRAGANA,百円,,ひゃくえん,hyakuen,100,
+WORD_GENKI1_3,HIRAGANA,一時,,いちじ,ichiji,1,godzina
+WORD_GENKI1_3,HIRAGANA,子供の時,,こどものとき,kodomo no toki,w czasach dziecinstwa,
+WORD_GENKI1_3,HIRAGANA,時々,,ときどき,tokidoki,czasami,
+WORD_GENKI1_3,HIRAGANA,時計,,とけい,tokei,zegarek,
+WORD_GENKI1_4,HIRAGANA,日本,,にほん,nihon,Japonia,
+WORD_GENKI1_4,HIRAGANA,日曜日,,にちようび,nichiyoubi,niedziela,
+WORD_GENKI1_4,HIRAGANA,毎日,,まいにち,mainichi,każdego dnia,
+WORD_GENKI1_4,HIRAGANA,母の日,,ははのひ,haha no hi,dzień matki,
+WORD_GENKI1_4,HIRAGANA,日記,,にっき,nikki,pamiętnik,
+WORD_GENKI1_4,HIRAGANA,三日,,みっか,mikka,3 dni,
+WORD_GENKI1_4,HIRAGANA,本,,ほん,hon,książka,
+WORD_GENKI1_4,HIRAGANA,日本,,にほん,nihon,Japonia,
+WORD_GENKI1_4,HIRAGANA,日本語,,にほんご,nihongo,język japoński,
+WORD_GENKI1_4,HIRAGANA,山本さん,,やまもとさん,Yamamoto san,Pan Yamamoto,
+WORD_GENKI1_4,HIRAGANA,日本人,,にほんじん,nihonjin,Japonczyk,
+WORD_GENKI1_4,HIRAGANA,一人で,,ひとりで,hitoride,samotny,
+WORD_GENKI1_4,HIRAGANA,この人,,このひと,kono hito,ten człowiek,
+WORD_GENKI1_4,HIRAGANA,三人,,さんにん,sannin,3 osoby,
+WORD_GENKI1_4,HIRAGANA,月曜日,,げつようび,getsuyoubi,poniedziałek,
+WORD_GENKI1_4,HIRAGANA,一月,,いちがつ,ichigatsu,styczeń,
+WORD_GENKI1_4,HIRAGANA,月,,つき,tsuki,księżyc,
+WORD_GENKI1_4,HIRAGANA,火曜日,,かようび,kayoubi,wtorek,
+WORD_GENKI1_4,HIRAGANA,火,,ひ,hi,ogień,
+WORD_GENKI1_4,HIRAGANA,水曜日,,すいようび,suiyoubi,środa,
+WORD_GENKI1_4,HIRAGANA,水,,みず,mizu,woda,
+WORD_GENKI1_4,HIRAGANA,木曜日,,もくようび,mokuyoubi,czwartek,
+WORD_GENKI1_4,HIRAGANA,木,,き,ki,drzewo,
+WORD_GENKI1_4,HIRAGANA,金曜日,,きにょうび,kinyoubi,piątek,'
+WORD_GENKI1_4,HIRAGANA,お金,,おかね,okane,pieniądze,
+WORD_GENKI1_4,HIRAGANA,土曜日,,どようび,doyoubi,sobota,
+WORD_GENKI1_4,HIRAGANA,土,,つち,tsuchi,ziemia,
+WORD_GENKI1_4,HIRAGANA,日曜日,,にちようび,nichiyoubi,niedziela,
+WORD_GENKI1_4,HIRAGANA,上,,うえ,ue,na górze,
+WORD_GENKI1_4,HIRAGANA,上手な,,じょうずな,jouzuna,dobry w,
+WORD_GENKI1_4,HIRAGANA,屋上,,おくじょう,okujou,sufit,
+WORD_GENKI1_4,HIRAGANA,下,,した,shita,pod,
+WORD_GENKI1_4,HIRAGANA,地下鉄,,ちかてつ,chikatetsu,metro,
+WORD_GENKI1_4,HIRAGANA,下手な,,へたな,hetana,słaby,
+WORD_GENKI1_4,HIRAGANA,中,,なか,naka,środek,
+WORD_GENKI1_4,HIRAGANA,中国,,ちゅうごく,chuugoku,Chiny,
+WORD_GENKI1_4,HIRAGANA,中学,,ちゅうがく,chuugaku,gimnazjum,
+WORD_GENKI1_4,HIRAGANA,一年中,,いちねんじゅう,ichinenjuu,cały rok,
+WORD_GENKI1_4,HIRAGANA,三時半,,さんじはん,sanji han,3:30,
+WORD_GENKI1_4,HIRAGANA,半分,,はんぶん,hanbun,połowa,
+WORD_GENKI1_5,HIRAGANA,山,,やま,yama,góra,
+WORD_GENKI1_5,HIRAGANA,富士山,,ふじさん,Fuji san,Góra Fuji,
+WORD_GENKI1_5,HIRAGANA,川,,かわ,kawa,rzeka,
+WORD_GENKI1_5,HIRAGANA,小川さん,,おがわさん,Ogawa san,Pan Ogawa,
+WORD_GENKI1_5,HIRAGANA,元気な,,げんきな,genkina,"zdrowy
 energiczny",
-WORD_GENKI1_5,HIRAGANA,元気,genki,"zdrowy
+WORD_GENKI1_5,HIRAGANA,元気,,げんき,genki,"zdrowy
 energiczny",
-WORD_GENKI1_5,HIRAGANA,天気,tenki,pogoda,
-WORD_GENKI1_5,HIRAGANA,電気,denki,elektryczność,
-WORD_GENKI1_5,HIRAGANA,天気,tenki,pogoda,
-WORD_GENKI1_5,HIRAGANA,天国,tengoku,niebo,
-WORD_GENKI1_5,HIRAGANA,私,watashi,ja,
-WORD_GENKI1_5,HIRAGANA,市立大学,shiritsudaigaku,prywatny uniwersytet,
-WORD_GENKI1_5,HIRAGANA,今,ima,teraz,
-WORD_GENKI1_5,HIRAGANA,今日,kyou,dzisiaj,
-WORD_GENKI1_5,HIRAGANA,今晩,konban,dziś wieczorem,
-WORD_GENKI1_5,HIRAGANA,田中さん,Tanaka san,Pan Tanaka,
-WORD_GENKI1_5,HIRAGANA,山田さん,Yamada san,Pan Yamada,
-WORD_GENKI1_5,HIRAGANA,田んぼ,tanbo,pole ryżowe,
-WORD_GENKI1_5,HIRAGANA,女の人,onna no hito,kobieta,
-WORD_GENKI1_5,HIRAGANA,女性,josei,kobieta,oficjalnie
-WORD_GENKI1_5,HIRAGANA,男の人,otoko no hito,mężczyzna,
-WORD_GENKI1_5,HIRAGANA,男性,dansei,mężczyzna,oficjalnie
-WORD_GENKI1_5,HIRAGANA,見る,miru,patrzeć,
-WORD_GENKI1_5,HIRAGANA,見物,kenbutsu,zwiedzanie,
-WORD_GENKI1_5,HIRAGANA,行く,iku,iść,
-WORD_GENKI1_5,HIRAGANA,銀行,ginkou,bank,
-WORD_GENKI1_5,HIRAGANA,一行目,ichigyoume,pierwsza linia,
-WORD_GENKI1_5,HIRAGANA,食べる,taberu,jeść,
-WORD_GENKI1_5,HIRAGANA,食べ物,tabemono,jedzenie,
-WORD_GENKI1_5,HIRAGANA,食堂,shokudou,stołówka,
-WORD_GENKI1_5,HIRAGANA,飲む,nomu,pić,
-WORD_GENKI1_5,HIRAGANA,飲み物,nomimono,picie,
-WORD_GENKI1_5,HIRAGANA,飲酒運転,inshuunten,pijany kierowca,
-WORD_GENKI1_6,HIRAGANA,東,higashi,wschód,
-WORD_GENKI1_6,HIRAGANA,東口,higashiguchi,wschodnie wyjście,
-WORD_GENKI1_6,HIRAGANA,東京,toukyou,Tokio,
-WORD_GENKI1_6,HIRAGANA,西,nishi,zachód,
-WORD_GENKI1_6,HIRAGANA,西口,nishiguchi,zachodnie wyjście,
-WORD_GENKI1_6,HIRAGANA,関西,kansai,Kansai,
-WORD_GENKI1_6,HIRAGANA,南,minami,południe,
-WORD_GENKI1_6,HIRAGANA,南口,minamiguchi,południowe wyjście,
-WORD_GENKI1_6,HIRAGANA,北,kita,północ,
-WORD_GENKI1_6,HIRAGANA,北口,kitaguchi,północne wyjście,
-WORD_GENKI1_6,HIRAGANA,東北,tohoku,Tohoku,
-WORD_GENKI1_6,HIRAGANA,北海道,hokkaidou,Hokkaido,
-WORD_GENKI1_6,HIRAGANA,北東,hokutou,północny wschód,
-WORD_GENKI1_6,HIRAGANA,南東,nantou,południowy wschód,
-WORD_GENKI1_6,HIRAGANA,南西,nansei,południowy zachód,
-WORD_GENKI1_6,HIRAGANA,北西,hokusei,północny zachód,
-WORD_GENKI1_6,HIRAGANA,口,kuchi,usta,
-WORD_GENKI1_6,HIRAGANA,人口,jinkou,populacja,
-WORD_GENKI1_6,HIRAGANA,出る,deru,wychodzić,
-WORD_GENKI1_6,HIRAGANA,出口,deguchi,wyjście,
-WORD_GENKI1_6,HIRAGANA,出す,dasu,wziąć coś,
-WORD_GENKI1_6,HIRAGANA,出席,shusseki,nadzór,
-WORD_GENKI1_6,HIRAGANA,輸出,yushutsu,eksport,
-WORD_GENKI1_6,HIRAGANA,右,migi,prawo,
-WORD_GENKI1_6,HIRAGANA,右折,usetsu,skręcić w prawo,
-WORD_GENKI1_6,HIRAGANA,左右,sayuu,prawo i lewo,
-WORD_GENKI1_6,HIRAGANA,左,hidari,lewo,
-WORD_GENKI1_6,HIRAGANA,左折,sasetsu,skręcić w lewo,
-WORD_GENKI1_6,HIRAGANA,五分,gofun,pięć minut,
-WORD_GENKI1_6,HIRAGANA,十分,juppun,dziesięć minut,
-WORD_GENKI1_6,HIRAGANA,自分,jibun,siebie,
-WORD_GENKI1_6,HIRAGANA,半分,hanbun,połowa,
-WORD_GENKI1_6,HIRAGANA,先生,sensei,nauczyciel,
-WORD_GENKI1_6,HIRAGANA,先週,senshuu,zeszły tydzień,
-WORD_GENKI1_6,HIRAGANA,先に,sakini,na przód,
-WORD_GENKI1_6,HIRAGANA,学生,gakusei,uczeń,
-WORD_GENKI1_6,HIRAGANA,生まれる,umareru,rodzić się,
-WORD_GENKI1_6,HIRAGANA,一層に一度,issou ni ichido,raz w życiu,
-WORD_GENKI1_6,HIRAGANA,大学生,daigakusei,student,
-WORD_GENKI1_6,HIRAGANA,大きい,ookii,duży,
-WORD_GENKI1_6,HIRAGANA,大変,taihen,trudna sytuacja,
-WORD_GENKI1_6,HIRAGANA,大人,otona,dorosły,
-WORD_GENKI1_6,HIRAGANA,大学,daigaku,uniwersytet,
-WORD_GENKI1_6,HIRAGANA,学校,gakkou,szkoła,
-WORD_GENKI1_6,HIRAGANA,学ぶ,manabu,uczyć,kogoś
-WORD_GENKI1_6,HIRAGANA,外国,gaikoku,zagraniczny kraj,
-WORD_GENKI1_6,HIRAGANA,外国人,gaikokujin,obcokrajowiec,
-WORD_GENKI1_6,HIRAGANA,外,soto,na zewnątrzn,
-WORD_GENKI1_6,HIRAGANA,中国,chuugoku,Chiny,
-WORD_GENKI1_6,HIRAGANA,国,kuni,kraj,
-WORD_GENKI1_7,HIRAGANA,東京,toukyou,Tokio,
-WORD_GENKI1_7,HIRAGANA,京子,kyouko,kyoko,
-WORD_GENKI1_7,HIRAGANA,京都,kyouto,Kyoto,
-WORD_GENKI1_7,HIRAGANA,子ども,kodomo,dziecko,
-WORD_GENKI1_7,HIRAGANA,京子,kyouko,Kyoko,
-WORD_GENKI1_7,HIRAGANA,女の子,onna no ko,dziewczynka,
-WORD_GENKI1_7,HIRAGANA,男の子,otoko no ko,chłopczyk,
-WORD_GENKI1_7,HIRAGANA,電子メール,denshi meeru,email,
-WORD_GENKI1_7,HIRAGANA,小さい,chiisai,mały,
-WORD_GENKI1_7,HIRAGANA,小学校,shougakkou,szkoła podstawowa,
-WORD_GENKI1_7,HIRAGANA,小学生,shougakusei,uczeń szkoły podstawowej,
-WORD_GENKI1_7,HIRAGANA,会う,au,spotykać,
-WORD_GENKI1_7,HIRAGANA,会社,kaisha,firma,
-WORD_GENKI1_7,HIRAGANA,会社員,kaishain,pracownik firmy,
-WORD_GENKI1_7,HIRAGANA,会社,kaisha,firma,
-WORD_GENKI1_7,HIRAGANA,社会,shakai,społeczeństwo,
-WORD_GENKI1_7,HIRAGANA,神社,jinja,świątynia,shintoistyczna
-WORD_GENKI1_7,HIRAGANA,父,chichi,ojciec,
-WORD_GENKI1_7,HIRAGANA,お父さん,otousan,ojciec,
-WORD_GENKI1_7,HIRAGANA,父母,fubo,ojciec i matka,
-WORD_GENKI1_7,HIRAGANA,母,haha,matka,
-WORD_GENKI1_7,HIRAGANA,お母さん,okaasan,matka,
-WORD_GENKI1_7,HIRAGANA,母語,bogo,język ojczysty,
-WORD_GENKI1_7,HIRAGANA,高い,takai,"drogi
+WORD_GENKI1_5,HIRAGANA,天気,,てんき,tenki,pogoda,
+WORD_GENKI1_5,HIRAGANA,電気,,でんき,denki,elektryczność,
+WORD_GENKI1_5,HIRAGANA,天気,,てんき,tenki,pogoda,
+WORD_GENKI1_5,HIRAGANA,天国,,てんごく,tengoku,niebo,
+WORD_GENKI1_5,HIRAGANA,私,,わたし,watashi,ja,
+WORD_GENKI1_5,HIRAGANA,市立大学,,しりつだいがく,shiritsudaigaku,prywatny uniwersytet,
+WORD_GENKI1_5,HIRAGANA,今,,いま,ima,teraz,
+WORD_GENKI1_5,HIRAGANA,今日,,きょう,kyou,dzisiaj,
+WORD_GENKI1_5,HIRAGANA,今晩,,こんばん,konban,dziś wieczorem,
+WORD_GENKI1_5,HIRAGANA,田中さん,,たなかさん,Tanaka san,Pan Tanaka,
+WORD_GENKI1_5,HIRAGANA,山田さん,,やまださん,Yamada san,Pan Yamada,
+WORD_GENKI1_5,HIRAGANA,田んぼ,,たんぼ,tanbo,pole ryżowe,
+WORD_GENKI1_5,HIRAGANA,女の人,,おんなのひと,onna no hito,kobieta,
+WORD_GENKI1_5,HIRAGANA,女性,,じょせい,josei,kobieta,oficjalnie
+WORD_GENKI1_5,HIRAGANA,男の人,,おとこのひと,otoko no hito,mężczyzna,
+WORD_GENKI1_5,HIRAGANA,男性,,だんせい,dansei,mężczyzna,oficjalnie
+WORD_GENKI1_5,HIRAGANA,見る,,みる,miru,patrzeć,
+WORD_GENKI1_5,HIRAGANA,見物,,けんぶつ,kenbutsu,zwiedzanie,
+WORD_GENKI1_5,HIRAGANA,行く,,いく,iku,iść,
+WORD_GENKI1_5,HIRAGANA,銀行,,ぎんこう,ginkou,bank,
+WORD_GENKI1_5,HIRAGANA,一行目,,いちぎょうめ,ichigyoume,pierwsza linia,
+WORD_GENKI1_5,HIRAGANA,食べる,,たべる,taberu,jeść,
+WORD_GENKI1_5,HIRAGANA,食べ物,,たべもの,tabemono,jedzenie,
+WORD_GENKI1_5,HIRAGANA,食堂,,しょくどう,shokudou,stołówka,
+WORD_GENKI1_5,HIRAGANA,飲む,,のむ,nomu,pić,
+WORD_GENKI1_5,HIRAGANA,飲み物,,のみもの,nomimono,picie,
+WORD_GENKI1_5,HIRAGANA,飲酒運転,,いんしゅうんてん,inshuunten,pijany kierowca,
+WORD_GENKI1_6,HIRAGANA,東,,ひがし,higashi,wschód,
+WORD_GENKI1_6,HIRAGANA,東口,,ひがしぐち,higashiguchi,wschodnie wyjście,
+WORD_GENKI1_6,HIRAGANA,東京,,とうきょう,toukyou,Tokio,
+WORD_GENKI1_6,HIRAGANA,西,,にし,nishi,zachód,
+WORD_GENKI1_6,HIRAGANA,西口,,にしぐち,nishiguchi,zachodnie wyjście,
+WORD_GENKI1_6,HIRAGANA,関西,,かんさい,kansai,Kansai,
+WORD_GENKI1_6,HIRAGANA,南,,みなみ,minami,południe,
+WORD_GENKI1_6,HIRAGANA,南口,,みなみぐち,minamiguchi,południowe wyjście,
+WORD_GENKI1_6,HIRAGANA,北,,きた,kita,północ,
+WORD_GENKI1_6,HIRAGANA,北口,,きたぐち,kitaguchi,północne wyjście,
+WORD_GENKI1_6,HIRAGANA,東北,,とほく,tohoku,Tohoku,
+WORD_GENKI1_6,HIRAGANA,北海道,,ほっかいどう,hokkaidou,Hokkaido,
+WORD_GENKI1_6,HIRAGANA,北東,,ほくとう,hokutou,północny wschód,
+WORD_GENKI1_6,HIRAGANA,南東,,なんとう,nantou,południowy wschód,
+WORD_GENKI1_6,HIRAGANA,南西,,なんせい,nansei,południowy zachód,
+WORD_GENKI1_6,HIRAGANA,北西,,ほくせい,hokusei,północny zachód,
+WORD_GENKI1_6,HIRAGANA,口,,くち,kuchi,usta,
+WORD_GENKI1_6,HIRAGANA,人口,,じんこう,jinkou,populacja,
+WORD_GENKI1_6,HIRAGANA,出る,,でる,deru,wychodzić,
+WORD_GENKI1_6,HIRAGANA,出口,,でぐち,deguchi,wyjście,
+WORD_GENKI1_6,HIRAGANA,出す,,だす,dasu,wziąć coś,
+WORD_GENKI1_6,HIRAGANA,出席,,しゅっせき,shusseki,nadzór,
+WORD_GENKI1_6,HIRAGANA,輸出,,ゆしゅつ,yushutsu,eksport,
+WORD_GENKI1_6,HIRAGANA,右,,みぎ,migi,prawo,
+WORD_GENKI1_6,HIRAGANA,右折,,うせつ,usetsu,skręcić w prawo,
+WORD_GENKI1_6,HIRAGANA,左右,,さゆう,sayuu,prawo i lewo,
+WORD_GENKI1_6,HIRAGANA,左,,ひだり,hidari,lewo,
+WORD_GENKI1_6,HIRAGANA,左折,,させつ,sasetsu,skręcić w lewo,
+WORD_GENKI1_6,HIRAGANA,五分,,ごふん,gofun,pięć minut,
+WORD_GENKI1_6,HIRAGANA,十分,,じゅっぷん,juppun,dziesięć minut,
+WORD_GENKI1_6,HIRAGANA,自分,,じぶん,jibun,siebie,
+WORD_GENKI1_6,HIRAGANA,半分,,はんぶん,hanbun,połowa,
+WORD_GENKI1_6,HIRAGANA,先生,,せんせい,sensei,nauczyciel,
+WORD_GENKI1_6,HIRAGANA,先週,,せんしゅう,senshuu,zeszły tydzień,
+WORD_GENKI1_6,HIRAGANA,先に,,さきに,sakini,na przód,
+WORD_GENKI1_6,HIRAGANA,学生,,がくせい,gakusei,uczeń,
+WORD_GENKI1_6,HIRAGANA,生まれる,,うまれる,umareru,rodzić się,
+WORD_GENKI1_6,HIRAGANA,一層に一度,,いっそうにいちど,issou ni ichido,raz w życiu,
+WORD_GENKI1_6,HIRAGANA,大学生,,だいがくせい,daigakusei,student,
+WORD_GENKI1_6,HIRAGANA,大きい,,おおきい,ookii,duży,
+WORD_GENKI1_6,HIRAGANA,大変,,たいへん,taihen,trudna sytuacja,
+WORD_GENKI1_6,HIRAGANA,大人,,おとな,otona,dorosły,
+WORD_GENKI1_6,HIRAGANA,大学,,だいがく,daigaku,uniwersytet,
+WORD_GENKI1_6,HIRAGANA,学校,,がっこう,gakkou,szkoła,
+WORD_GENKI1_6,HIRAGANA,学ぶ,,まなぶ,manabu,uczyć,kogoś
+WORD_GENKI1_6,HIRAGANA,外国,,がいこく,gaikoku,zagraniczny kraj,
+WORD_GENKI1_6,HIRAGANA,外国人,,がいこくじん,gaikokujin,obcokrajowiec,
+WORD_GENKI1_6,HIRAGANA,外,,そと,soto,na zewnątrzn,
+WORD_GENKI1_6,HIRAGANA,中国,,ちゅうごく,chuugoku,Chiny,
+WORD_GENKI1_6,HIRAGANA,国,,くに,kuni,kraj,
+WORD_GENKI1_7,HIRAGANA,東京,,とうきょう,toukyou,Tokio,
+WORD_GENKI1_7,HIRAGANA,京子,,きょうこ,kyouko,kyoko,
+WORD_GENKI1_7,HIRAGANA,京都,,きょうと,kyouto,Kyoto,
+WORD_GENKI1_7,HIRAGANA,子ども,,こども,kodomo,dziecko,
+WORD_GENKI1_7,HIRAGANA,京子,,きょうこ,kyouko,Kyoko,
+WORD_GENKI1_7,HIRAGANA,女の子,,おんなのこ,onna no ko,dziewczynka,
+WORD_GENKI1_7,HIRAGANA,男の子,,おとこのこ,otoko no ko,chłopczyk,
+WORD_GENKI1_7,HIRAGANA,電子メール,,でんしめえる,denshi meeru,email,
+WORD_GENKI1_7,HIRAGANA,小さい,,ちいさい,chiisai,mały,
+WORD_GENKI1_7,HIRAGANA,小学校,,しょうがっこう,shougakkou,szkoła podstawowa,
+WORD_GENKI1_7,HIRAGANA,小学生,,しょうがくせい,shougakusei,uczeń szkoły podstawowej,
+WORD_GENKI1_7,HIRAGANA,会う,,あう,au,spotykać,
+WORD_GENKI1_7,HIRAGANA,会社,,かいしゃ,kaisha,firma,
+WORD_GENKI1_7,HIRAGANA,会社員,,かいしゃいん,kaishain,pracownik firmy,
+WORD_GENKI1_7,HIRAGANA,会社,,かいしゃ,kaisha,firma,
+WORD_GENKI1_7,HIRAGANA,社会,,しゃかい,shakai,społeczeństwo,
+WORD_GENKI1_7,HIRAGANA,神社,,じんじゃ,jinja,świątynia,shintoistyczna
+WORD_GENKI1_7,HIRAGANA,父,,ちち,chichi,ojciec,
+WORD_GENKI1_7,HIRAGANA,お父さん,,おとうさん,otousan,ojciec,
+WORD_GENKI1_7,HIRAGANA,父母,,ふぼ,fubo,ojciec i matka,
+WORD_GENKI1_7,HIRAGANA,母,,はは,haha,matka,
+WORD_GENKI1_7,HIRAGANA,お母さん,,おかあさん,okaasan,matka,
+WORD_GENKI1_7,HIRAGANA,母語,,ぼご,bogo,język ojczysty,
+WORD_GENKI1_7,HIRAGANA,高い,,たかい,takai,"drogi
 wysoki",
-WORD_GENKI1_7,HIRAGANA,高校,koukou,liceum,
-WORD_GENKI1_7,HIRAGANA,高校生,koukousei,licealista,
-WORD_GENKI1_7,HIRAGANA,学校,gakkou,szkoła,
-WORD_GENKI1_7,HIRAGANA,高校,koukou,liceum,
-WORD_GENKI1_7,HIRAGANA,高校生,koukousei,licealista,
-WORD_GENKI1_7,HIRAGANA,中学校,chuugakkou,gimnazjum,
-WORD_GENKI1_7,HIRAGANA,毎日,mainichi,każdego dnia,
-WORD_GENKI1_7,HIRAGANA,毎週,maishuu,każdego tygodnia,
-WORD_GENKI1_7,HIRAGANA,毎晩,maiban,każdej nocy,
-WORD_GENKI1_7,HIRAGANA,日本語,nihongo,język japoński,
-WORD_GENKI1_7,HIRAGANA,英語,eigo,język angielski,
-WORD_GENKI1_7,HIRAGANA,文学,bungaku,literatura,
-WORD_GENKI1_7,HIRAGANA,作文,sakubun,wypracowanie,
-WORD_GENKI1_7,HIRAGANA,文字,moji,list,
-WORD_GENKI1_7,HIRAGANA,帰る,kaeru,wracać,
-WORD_GENKI1_7,HIRAGANA,帰国,kikoku,wracać do kraju,
-WORD_GENKI1_7,HIRAGANA,入る,hairu,wchodzić,
-WORD_GENKI1_7,HIRAGANA,入口,iriguchi,wejście,
-WORD_GENKI1_7,HIRAGANA,入れる,ireru,wkładać,
-WORD_GENKI1_7,HIRAGANA,輸入,yunyuu,import,
-WORD_GENKI1_8,HIRAGANA,会社員,kaishain,pracownik biurowy,
-WORD_GENKI1_8,HIRAGANA,店員,ten'in,sprzedawca,
-WORD_GENKI1_8,HIRAGANA,新しい,atarashii,nowy,
-WORD_GENKI1_8,HIRAGANA,新聞,shinbun,gazeta,
-WORD_GENKI1_8,HIRAGANA,新幹線,shinkansen,shinkansen,
-WORD_GENKI1_8,HIRAGANA,聞く,kiku,słuchać,
-WORD_GENKI1_8,HIRAGANA,新聞,shinbun,gazeta,
-WORD_GENKI1_8,HIRAGANA,作る,tsukuru,tworzyć,
-WORD_GENKI1_8,HIRAGANA,作文,sakubun,wypracowanie,
-WORD_GENKI1_8,HIRAGANA,作品,sakuhin,utwór artystyczny,
-WORD_GENKI1_8,HIRAGANA,仕事,shigoto,praca,
-WORD_GENKI1_8,HIRAGANA,仕事,shigoto,praca,
-WORD_GENKI1_8,HIRAGANA,仕事,shigoto,praca,
-WORD_GENKI1_8,HIRAGANA,事,koto,rzecz,
-WORD_GENKI1_8,HIRAGANA,火事,kaji,ogień,
-WORD_GENKI1_8,HIRAGANA,食事,shokuji,posiłek,
-WORD_GENKI1_8,HIRAGANA,電車,densha,pociąg,
-WORD_GENKI1_8,HIRAGANA,電気,denki,elektryczność,
-WORD_GENKI1_8,HIRAGANA,電話,denwa,telefon,
-WORD_GENKI1_8,HIRAGANA,車,kuruma,samochód,
-WORD_GENKI1_8,HIRAGANA,電車,densha,pociąg,
-WORD_GENKI1_8,HIRAGANA,自転車,jitensha,rower,
-WORD_GENKI1_8,HIRAGANA,休む,yasumu,"być nieobecny
+WORD_GENKI1_7,HIRAGANA,高校,,こうこう,koukou,liceum,
+WORD_GENKI1_7,HIRAGANA,高校生,,こうこうせい,koukousei,licealista,
+WORD_GENKI1_7,HIRAGANA,学校,,がっこう,gakkou,szkoła,
+WORD_GENKI1_7,HIRAGANA,高校,,こうこう,koukou,liceum,
+WORD_GENKI1_7,HIRAGANA,高校生,,こうこうせい,koukousei,licealista,
+WORD_GENKI1_7,HIRAGANA,中学校,,ちゅうがっこう,chuugakkou,gimnazjum,
+WORD_GENKI1_7,HIRAGANA,毎日,,まいにち,mainichi,każdego dnia,
+WORD_GENKI1_7,HIRAGANA,毎週,,まいしゅう,maishuu,każdego tygodnia,
+WORD_GENKI1_7,HIRAGANA,毎晩,,まいばん,maiban,każdej nocy,
+WORD_GENKI1_7,HIRAGANA,日本語,,にほんご,nihongo,język japoński,
+WORD_GENKI1_7,HIRAGANA,英語,,えいご,eigo,język angielski,
+WORD_GENKI1_7,HIRAGANA,文学,,ぶんがく,bungaku,literatura,
+WORD_GENKI1_7,HIRAGANA,作文,,さくぶん,sakubun,wypracowanie,
+WORD_GENKI1_7,HIRAGANA,文字,,もじ,moji,list,
+WORD_GENKI1_7,HIRAGANA,帰る,,かえる,kaeru,wracać,
+WORD_GENKI1_7,HIRAGANA,帰国,,きこく,kikoku,wracać do kraju,
+WORD_GENKI1_7,HIRAGANA,入る,,はいる,hairu,wchodzić,
+WORD_GENKI1_7,HIRAGANA,入口,,いりぐち,iriguchi,wejście,
+WORD_GENKI1_7,HIRAGANA,入れる,,いれる,ireru,wkładać,
+WORD_GENKI1_7,HIRAGANA,輸入,,ゆにゅう,yunyuu,import,
+WORD_GENKI1_8,HIRAGANA,会社員,,かいしゃいん,kaishain,pracownik biurowy,
+WORD_GENKI1_8,HIRAGANA,店員,,てんいん,ten'in,sprzedawca,
+WORD_GENKI1_8,HIRAGANA,新しい,,あたらしい,atarashii,nowy,
+WORD_GENKI1_8,HIRAGANA,新聞,,しんぶん,shinbun,gazeta,
+WORD_GENKI1_8,HIRAGANA,新幹線,,しんかんせん,shinkansen,shinkansen,
+WORD_GENKI1_8,HIRAGANA,聞く,,きく,kiku,słuchać,
+WORD_GENKI1_8,HIRAGANA,新聞,,しんぶん,shinbun,gazeta,
+WORD_GENKI1_8,HIRAGANA,作る,,つくる,tsukuru,tworzyć,
+WORD_GENKI1_8,HIRAGANA,作文,,さくぶん,sakubun,wypracowanie,
+WORD_GENKI1_8,HIRAGANA,作品,,さくひん,sakuhin,utwór artystyczny,
+WORD_GENKI1_8,HIRAGANA,仕事,,しごと,shigoto,praca,
+WORD_GENKI1_8,HIRAGANA,仕事,,しごと,shigoto,praca,
+WORD_GENKI1_8,HIRAGANA,仕事,,しごと,shigoto,praca,
+WORD_GENKI1_8,HIRAGANA,事,,こと,koto,rzecz,
+WORD_GENKI1_8,HIRAGANA,火事,,かじ,kaji,ogień,
+WORD_GENKI1_8,HIRAGANA,食事,,しょくじ,shokuji,posiłek,
+WORD_GENKI1_8,HIRAGANA,電車,,でんしゃ,densha,pociąg,
+WORD_GENKI1_8,HIRAGANA,電気,,でんき,denki,elektryczność,
+WORD_GENKI1_8,HIRAGANA,電話,,でんわ,denwa,telefon,
+WORD_GENKI1_8,HIRAGANA,車,,くるま,kuruma,samochód,
+WORD_GENKI1_8,HIRAGANA,電車,,でんしゃ,densha,pociąg,
+WORD_GENKI1_8,HIRAGANA,自転車,,じてんしゃ,jitensha,rower,
+WORD_GENKI1_8,HIRAGANA,休む,,やすむ,yasumu,"być nieobecny
 odpoczywać",
-WORD_GENKI1_8,HIRAGANA,休み,yasumi,"wakacje
+WORD_GENKI1_8,HIRAGANA,休み,,やすみ,yasumi,"wakacje
 nieobecny",
-WORD_GENKI1_8,HIRAGANA,休日,kyuujitsu,wakacje,
-WORD_GENKI1_8,HIRAGANA,言う,iu,mówić,
-WORD_GENKI1_8,HIRAGANA,言語学,gengogaku,lingwistyka,
-WORD_GENKI1_8,HIRAGANA,読む,yomu,czytać,
-WORD_GENKI1_8,HIRAGANA,読書,dokusho,czytać książki,
-WORD_GENKI1_8,HIRAGANA,思う,omou,myśleć,
-WORD_GENKI1_8,HIRAGANA,不思議な,fushigina,tajemniczy,
-WORD_GENKI1_8,HIRAGANA,次,tsugi,następny,
-WORD_GENKI1_8,HIRAGANA,次女,jijo,następna córka,
-WORD_GENKI1_8,HIRAGANA,何,nani,co,
-WORD_GENKI1_8,HIRAGANA,何時,nanji,która godzina,
-WORD_GENKI1_8,HIRAGANA,何人,nan nin,ile ludzi,
-WORD_GENKI1_9,HIRAGANA,午前,gozen,am,czas
-WORD_GENKI1_9,HIRAGANA,午後,gogo,pm,czas
-WORD_GENKI1_9,HIRAGANA,午前中,gozenchuu,przed południem,
-WORD_GENKI1_9,HIRAGANA,午後,gogo,pm,czas
-WORD_GENKI1_9,HIRAGANA,の後,no ato,po,...
-WORD_GENKI1_9,HIRAGANA,後で,atode,później,
-WORD_GENKI1_9,HIRAGANA,後ろ,ushiro,za,
-WORD_GENKI1_9,HIRAGANA,最後に,saigoni,ostatni,
-WORD_GENKI1_9,HIRAGANA,前,mae,przed,
-WORD_GENKI1_9,HIRAGANA,午前,gozen,am,czas
-WORD_GENKI1_9,HIRAGANA,名前,namae,imię,
-WORD_GENKI1_9,HIRAGANA,名前,namae,imię,
-WORD_GENKI1_9,HIRAGANA,有名な,yuumeina,sławny,
-WORD_GENKI1_9,HIRAGANA,名刺,meishi,wizytówka,
-WORD_GENKI1_9,HIRAGANA,白い,shiroi,biały,
-WORD_GENKI1_9,HIRAGANA,白紙,hakushi,biała kartka,
-WORD_GENKI1_9,HIRAGANA,雨,ame,deszcz,
-WORD_GENKI1_9,HIRAGANA,雨期,uki,deszczowe dni,
-WORD_GENKI1_9,HIRAGANA,書く,kaku,pisać,
-WORD_GENKI1_9,HIRAGANA,辞書,jisho,słownik,
-WORD_GENKI1_9,HIRAGANA,友だち,tomodachi,przyjaciel,
-WORD_GENKI1_9,HIRAGANA,親友,shin'yuu,najlepszy przyjaciel,
-WORD_GENKI1_9,HIRAGANA,友人,yuujin,przyjaciel,bardziej oficjalnie
-WORD_GENKI1_9,HIRAGANA,時間,jikan,godzina,okres
-WORD_GENKI1_9,HIRAGANA,二時間,nijikan,dwie godziny,
-WORD_GENKI1_9,HIRAGANA,間,aida,pomiędzy,
-WORD_GENKI1_9,HIRAGANA,人間,ningen,człowiek,
-WORD_GENKI1_9,HIRAGANA,一週間,ishuukan,jeden tydzień,
-WORD_GENKI1_9,HIRAGANA,家,ie,dom,bardziej oficjalnie
-WORD_GENKI1_9,HIRAGANA,家族,kazoku,rodzina,
-WORD_GENKI1_9,HIRAGANA,家,uchi,dom,moje miejsce
-WORD_GENKI1_9,HIRAGANA,話す,hanasu,rozmawiać,
-WORD_GENKI1_9,HIRAGANA,話,hanashi,rozmowa,
-WORD_GENKI1_9,HIRAGANA,電話,denwa,telefon,
-WORD_GENKI1_9,HIRAGANA,会話,kaiwa,rozmowa,
-WORD_GENKI1_9,HIRAGANA,少し,sukoshi,mało,
-WORD_GENKI1_9,HIRAGANA,少ない,sukunai,trochę,
-WORD_GENKI1_9,HIRAGANA,少々,shoushou,trochę,
-WORD_GENKI1_9,HIRAGANA,古い,furui,stary,do przedmiotów
-WORD_GENKI1_9,HIRAGANA,中古,chuuko,używany,
-WORD_GENKI1_9,HIRAGANA,知る,shiru,wiedzieć,
-WORD_GENKI1_9,HIRAGANA,知人,chijin,znajomy,
-WORD_GENKI1_9,HIRAGANA,来る,kuru,wracać,
-WORD_GENKI1_9,HIRAGANA,来ます,kimasu,wracać,
-WORD_GENKI1_9,HIRAGANA,来ない,konai,nie wracać,
-WORD_GENKI1_9,HIRAGANA,来週,raishuu,następny tydzień,
-WORD_GENKI1_10,HIRAGANA,住む,sumu,żyć,
-WORD_GENKI1_10,HIRAGANA,住所,juusho,adres,
-WORD_GENKI1_10,HIRAGANA,お正月,oshougatsu,Nowy Rok,dosł: właściwy miesiąc
-WORD_GENKI1_10,HIRAGANA,正しい,tadashii,właściwy,
-WORD_GENKI1_10,HIRAGANA,三年生,sannensei,student trzeciego roku,
-WORD_GENKI1_10,HIRAGANA,来年,rainen,następny rok,
-WORD_GENKI1_10,HIRAGANA,今年,kotoshi,aktualny rok,
-WORD_GENKI1_10,HIRAGANA,年,toshi,rok,
-WORD_GENKI1_10,HIRAGANA,売る,uru,sprzedawać,
-WORD_GENKI1_10,HIRAGANA,売店,baiten,stoisko,
-WORD_GENKI1_10,HIRAGANA,買う,kau,kupować,
-WORD_GENKI1_10,HIRAGANA,買い物,kaimono,zakupy,
-WORD_GENKI1_10,HIRAGANA,町,machi,miasto,
-WORD_GENKI1_10,HIRAGANA,北山町,kitayama chou,Kitayama,miasto
-WORD_GENKI1_10,HIRAGANA,町長,chouchou,burmistrz,
-WORD_GENKI1_10,HIRAGANA,長い,nagai,długi,
-WORD_GENKI1_10,HIRAGANA,長男,chounan,pierwszy syn,
-WORD_GENKI1_10,HIRAGANA,道,michi,droga,
-WORD_GENKI1_10,HIRAGANA,書道,shodou,kaligrafia,
-WORD_GENKI1_10,HIRAGANA,柔道,juudou,judo,
-WORD_GENKI1_10,HIRAGANA,北海道,hokkaidou,Hokkaido,
-WORD_GENKI1_10,HIRAGANA,雪,yuki,śnieg,
-WORD_GENKI1_10,HIRAGANA,新雪,shinsetsu,nowy śnieg,
-WORD_GENKI1_10,HIRAGANA,立つ,tatsu,stać,
-WORD_GENKI1_10,HIRAGANA,国立大学,kokuritsudaigaku,uniwersytet narodowy,
-WORD_GENKI1_10,HIRAGANA,私立高校,shiritsukoukou,prywatne liceum,
-WORD_GENKI1_10,HIRAGANA,自分,jibun,ja sam,
-WORD_GENKI1_10,HIRAGANA,自動車,jidousha,automobil,
-WORD_GENKI1_10,HIRAGANA,自転車,jitensha,rower,
-WORD_GENKI1_10,HIRAGANA,夜,yoru,noc,
-WORD_GENKI1_10,HIRAGANA,夜中,yonaka,północ,
-WORD_GENKI1_10,HIRAGANA,今夜,kon'ya,dziś wieczorem,
-WORD_GENKI1_10,HIRAGANA,朝,asa,rano,
-WORD_GENKI1_10,HIRAGANA,今朝,kesa,przed południem,
-WORD_GENKI1_10,HIRAGANA,朝食,choushoku,śniadanie,
-WORD_GENKI1_10,HIRAGANA,持つ,motsu,mieć,
-WORD_GENKI1_10,HIRAGANA,持ってくる,motte kuru,przynosić,
-WORD_GENKI1_10,HIRAGANA,所持品,shojihin,dobytek,
+WORD_GENKI1_8,HIRAGANA,休日,,きゅうじつ,kyuujitsu,wakacje,
+WORD_GENKI1_8,HIRAGANA,言う,,いう,iu,mówić,
+WORD_GENKI1_8,HIRAGANA,言語学,,げんごがく,gengogaku,lingwistyka,
+WORD_GENKI1_8,HIRAGANA,読む,,よむ,yomu,czytać,
+WORD_GENKI1_8,HIRAGANA,読書,,どくしょ,dokusho,czytać książki,
+WORD_GENKI1_8,HIRAGANA,思う,,おもう,omou,myśleć,
+WORD_GENKI1_8,HIRAGANA,不思議な,,ふしぎな,fushigina,tajemniczy,
+WORD_GENKI1_8,HIRAGANA,次,,つぎ,tsugi,następny,
+WORD_GENKI1_8,HIRAGANA,次女,,じじょ,jijo,następna córka,
+WORD_GENKI1_8,HIRAGANA,何,,なに,nani,co,
+WORD_GENKI1_8,HIRAGANA,何時,,なんじ,nanji,która godzina,
+WORD_GENKI1_8,HIRAGANA,何人,,なんにん,nan nin,ile ludzi,
+WORD_GENKI1_9,HIRAGANA,午前,,ごぜん,gozen,am,czas
+WORD_GENKI1_9,HIRAGANA,午後,,ごご,gogo,pm,czas
+WORD_GENKI1_9,HIRAGANA,午前中,,ごぜんちゅう,gozenchuu,przed południem,
+WORD_GENKI1_9,HIRAGANA,午後,,ごご,gogo,pm,czas
+WORD_GENKI1_9,HIRAGANA,の後,,のあと,no ato,po,...
+WORD_GENKI1_9,HIRAGANA,後で,,あとで,atode,później,
+WORD_GENKI1_9,HIRAGANA,後ろ,,うしろ,ushiro,za,
+WORD_GENKI1_9,HIRAGANA,最後に,,さいごに,saigoni,ostatni,
+WORD_GENKI1_9,HIRAGANA,前,,まえ,mae,przed,
+WORD_GENKI1_9,HIRAGANA,午前,,ごぜん,gozen,am,czas
+WORD_GENKI1_9,HIRAGANA,名前,,なまえ,namae,imię,
+WORD_GENKI1_9,HIRAGANA,名前,,なまえ,namae,imię,
+WORD_GENKI1_9,HIRAGANA,有名な,,ゆうめいな,yuumeina,sławny,
+WORD_GENKI1_9,HIRAGANA,名刺,,めいし,meishi,wizytówka,
+WORD_GENKI1_9,HIRAGANA,白い,,しろい,shiroi,biały,
+WORD_GENKI1_9,HIRAGANA,白紙,,はくし,hakushi,biała kartka,
+WORD_GENKI1_9,HIRAGANA,雨,,あめ,ame,deszcz,
+WORD_GENKI1_9,HIRAGANA,雨期,,うき,uki,deszczowe dni,
+WORD_GENKI1_9,HIRAGANA,書く,,かく,kaku,pisać,
+WORD_GENKI1_9,HIRAGANA,辞書,,じしょ,jisho,słownik,
+WORD_GENKI1_9,HIRAGANA,友だち,,ともだち,tomodachi,przyjaciel,
+WORD_GENKI1_9,HIRAGANA,親友,,しんゆう,shin'yuu,najlepszy przyjaciel,
+WORD_GENKI1_9,HIRAGANA,友人,,ゆうじん,yuujin,przyjaciel,bardziej oficjalnie
+WORD_GENKI1_9,HIRAGANA,時間,,じかん,jikan,godzina,okres
+WORD_GENKI1_9,HIRAGANA,二時間,,にじかん,nijikan,dwie godziny,
+WORD_GENKI1_9,HIRAGANA,間,,あいだ,aida,pomiędzy,
+WORD_GENKI1_9,HIRAGANA,人間,,にんげん,ningen,człowiek,
+WORD_GENKI1_9,HIRAGANA,一週間,,いしゅうかん,ishuukan,jeden tydzień,
+WORD_GENKI1_9,HIRAGANA,家,,いえ,ie,dom,bardziej oficjalnie
+WORD_GENKI1_9,HIRAGANA,家族,,かぞく,kazoku,rodzina,
+WORD_GENKI1_9,HIRAGANA,家,,うち,uchi,dom,moje miejsce
+WORD_GENKI1_9,HIRAGANA,話す,,はなす,hanasu,rozmawiać,
+WORD_GENKI1_9,HIRAGANA,話,,はなし,hanashi,rozmowa,
+WORD_GENKI1_9,HIRAGANA,電話,,でんわ,denwa,telefon,
+WORD_GENKI1_9,HIRAGANA,会話,,かいわ,kaiwa,rozmowa,
+WORD_GENKI1_9,HIRAGANA,少し,,すこし,sukoshi,mało,
+WORD_GENKI1_9,HIRAGANA,少ない,,すくない,sukunai,trochę,
+WORD_GENKI1_9,HIRAGANA,少々,,しょうしょう,shoushou,trochę,
+WORD_GENKI1_9,HIRAGANA,古い,,ふるい,furui,stary,do przedmiotów
+WORD_GENKI1_9,HIRAGANA,中古,,ちゅうこ,chuuko,używany,
+WORD_GENKI1_9,HIRAGANA,知る,,しる,shiru,wiedzieć,
+WORD_GENKI1_9,HIRAGANA,知人,,ちじん,chijin,znajomy,
+WORD_GENKI1_9,HIRAGANA,来る,,くる,kuru,wracać,
+WORD_GENKI1_9,HIRAGANA,来ます,,きます,kimasu,wracać,
+WORD_GENKI1_9,HIRAGANA,来ない,,こない,konai,nie wracać,
+WORD_GENKI1_9,HIRAGANA,来週,,らいしゅう,raishuu,następny tydzień,
+WORD_GENKI1_10,HIRAGANA,住む,,すむ,sumu,żyć,
+WORD_GENKI1_10,HIRAGANA,住所,,じゅうしょ,juusho,adres,
+WORD_GENKI1_10,HIRAGANA,お正月,,おしょうがつ,oshougatsu,Nowy Rok,dosł: właściwy miesiąc
+WORD_GENKI1_10,HIRAGANA,正しい,,ただしい,tadashii,właściwy,
+WORD_GENKI1_10,HIRAGANA,三年生,,さんねんせい,sannensei,student trzeciego roku,
+WORD_GENKI1_10,HIRAGANA,来年,,らいねん,rainen,następny rok,
+WORD_GENKI1_10,HIRAGANA,今年,,ことし,kotoshi,aktualny rok,
+WORD_GENKI1_10,HIRAGANA,年,,とし,toshi,rok,
+WORD_GENKI1_10,HIRAGANA,売る,,うる,uru,sprzedawać,
+WORD_GENKI1_10,HIRAGANA,売店,,ばいてん,baiten,stoisko,
+WORD_GENKI1_10,HIRAGANA,買う,,かう,kau,kupować,
+WORD_GENKI1_10,HIRAGANA,買い物,,かいもの,kaimono,zakupy,
+WORD_GENKI1_10,HIRAGANA,町,,まち,machi,miasto,
+WORD_GENKI1_10,HIRAGANA,北山町,,きたやまちょう,kitayama chou,Kitayama,miasto
+WORD_GENKI1_10,HIRAGANA,町長,,ちょうちょう,chouchou,burmistrz,
+WORD_GENKI1_10,HIRAGANA,長い,,ながい,nagai,długi,
+WORD_GENKI1_10,HIRAGANA,長男,,ちょうなん,chounan,pierwszy syn,
+WORD_GENKI1_10,HIRAGANA,道,,みち,michi,droga,
+WORD_GENKI1_10,HIRAGANA,書道,,しょどう,shodou,kaligrafia,
+WORD_GENKI1_10,HIRAGANA,柔道,,じゅうどう,juudou,judo,
+WORD_GENKI1_10,HIRAGANA,北海道,,ほっかいどう,hokkaidou,Hokkaido,
+WORD_GENKI1_10,HIRAGANA,雪,,ゆき,yuki,śnieg,
+WORD_GENKI1_10,HIRAGANA,新雪,,しんせつ,shinsetsu,nowy śnieg,
+WORD_GENKI1_10,HIRAGANA,立つ,,たつ,tatsu,stać,
+WORD_GENKI1_10,HIRAGANA,国立大学,,こくりつだいがく,kokuritsudaigaku,uniwersytet narodowy,
+WORD_GENKI1_10,HIRAGANA,私立高校,,しりつこうこう,shiritsukoukou,prywatne liceum,
+WORD_GENKI1_10,HIRAGANA,自分,,じぶん,jibun,ja sam,
+WORD_GENKI1_10,HIRAGANA,自動車,,じどうしゃ,jidousha,automobil,
+WORD_GENKI1_10,HIRAGANA,自転車,,じてんしゃ,jitensha,rower,
+WORD_GENKI1_10,HIRAGANA,夜,,よる,yoru,noc,
+WORD_GENKI1_10,HIRAGANA,夜中,,よなか,yonaka,północ,
+WORD_GENKI1_10,HIRAGANA,今夜,,こんや,kon'ya,dziś wieczorem,
+WORD_GENKI1_10,HIRAGANA,朝,,あさ,asa,rano,
+WORD_GENKI1_10,HIRAGANA,今朝,,けさ,kesa,przed południem,
+WORD_GENKI1_10,HIRAGANA,朝食,,ちょうしょく,choushoku,śniadanie,
+WORD_GENKI1_10,HIRAGANA,持つ,,もつ,motsu,mieć,
+WORD_GENKI1_10,HIRAGANA,持ってくる,,もってくる,motte kuru,przynosić,
+WORD_GENKI1_10,HIRAGANA,所持品,,しょじひん,shojihin,dobytek,

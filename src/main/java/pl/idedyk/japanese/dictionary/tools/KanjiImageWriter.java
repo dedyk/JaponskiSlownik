@@ -18,25 +18,6 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
 public class KanjiImageWriter {
-
-	public static void main(String[] args) throws Exception {
-		
-		/*
-		String imageDir = "images_output";
-		
-		List<PolishJapaneseEntry> japanesePolishDictionary = 
-			JapannakaHtmlReader.readJapannakaHtmlDir("websites/www.japannaka.republika.pl");
-		
-		Map<String, String> kanjiCache = new HashMap<String, String>();
-		
-		for (PolishJapaneseEntry polishJapaneseEntry : japanesePolishDictionary) {
-			
-			//System.out.println("Creating image for: " + polishJapaneseEntry.getJapanese() + " - " + polishJapaneseEntry.getRomajiList());
-			
-			createKanjiImage(kanjiCache, imageDir, polishJapaneseEntry);
-		}
-		*/
-	}
 	
 	public static void createKanjiImage(Map<String, String> kanjiCache, String imageDir, PolishJapaneseEntry polishJapaneseEntry) 
 			throws JapaneseDictionaryException {
