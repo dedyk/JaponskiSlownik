@@ -1,55 +1,33 @@
 package pl.idedyk.japanese.dictionary.tools;
 
+import java.util.List;
+
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+
 public class ModifyDictionary {
 
 	public static void main(String[] args) throws Exception {
-				
-		//convertPolishJapaneseEntries("input/word.csv", "input/kanji_word.csv", "input/word-temp.csv");
+		
+		checkPolishJapaneseEntries("input/word.csv");
 	}
 	
-	/*
-	private static void convertPolishJapaneseEntries(String wordFileName, String kanjiFileName, String destinationFileName) throws Exception {
+	private static void checkPolishJapaneseEntries(String sourceFileName) throws Exception {
 		
-		List<PolishJapaneseEntry> wordPolishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(wordFileName);
-		List<PolishJapaneseEntry> kanjiPolishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(kanjiFileName);
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName);
 		
-		for (PolishJapaneseEntry currentWordPolishJapaneseEntry : wordPolishJapaneseEntries) {
+		int counter = 0;
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
-			List<String> kanaList = currentWordPolishJapaneseEntry.getKanaList();
+			String kanji = polishJapaneseEntry.getKanji();
 			
-			if (kanaList.size() == 1) {
-				
-				List<PolishJapaneseEntry> foundKanjiPolishJapaneseEntry = findPolishJapaneseEntry(kanjiPolishJapaneseEntries, kanaList.get(0));
-				
-				if (foundKanjiPolishJapaneseEntry.size() > 0) {
-					System.out.println(foundKanjiPolishJapaneseEntry);
-				}
-				
-				
-			}
+			if (kanji.equals("") == true) {
+				counter++;
+			}			
 		}
 		
-		CsvReaderWriter.generateCsv(destinationFileName, wordPolishJapaneseEntries);
+		System.out.println(counter);
+		
+		CsvReaderWriter.generateCsv("input/word-temp.csv", polishJapaneseEntries);
 	}
-	
-	private static List<PolishJapaneseEntry> findPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapanaeseEntries, String kanaString) {
-		
-		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
-		
-		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapanaeseEntries) {
-			
-			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
-			
-			if (kanaList.size() == 1) {
-				if (kanaList.get(0).equals(kanaString) == true) {
-					result.add(currentPolishJapaneseEntry);
-				}
-			}
-			
-			
-		}
-		
-		return result;
-	}
-	*/
 }

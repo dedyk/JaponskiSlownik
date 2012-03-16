@@ -120,7 +120,14 @@ public class CsvReaderWriter {
 			
 			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
-			csvWriter.write(polishJapaneseEntry.getKanji());
+			
+			String kanji = polishJapaneseEntry.getKanji();
+			
+			if (kanji.equals("") == true) {
+				kanji = "-";
+			}
+			
+			csvWriter.write(kanji);
 			csvWriter.write(polishJapaneseEntry.getKanjiImagePath());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getKanaList()));
 			csvWriter.write(convertListToString(polishJapaneseEntry.getRomajiList()));
@@ -154,7 +161,7 @@ public class CsvReaderWriter {
 			
 			entry.setDictionaryEntryType(DictionaryEntryType.valueOf(dictionaryEntryType));
 			entry.setWordType(WordType.valueOf(wordTypeString));
-			entry.setKanji(kanjiString);
+			entry.setKanji(kanjiString.equals("-") == false ? kanjiString : "");
 			entry.setKanjiImagePath(kanjiImagePathString);
 			entry.setKanaList(parseStringIntoList(kanaListString));
 			entry.setRomajiList(parseStringIntoList(romajiListString));
