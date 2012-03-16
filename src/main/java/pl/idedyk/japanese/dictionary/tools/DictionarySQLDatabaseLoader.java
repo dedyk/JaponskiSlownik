@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
 /*
 
@@ -27,7 +28,7 @@ create table words (
 
 public class DictionarySQLDatabaseLoader {
 	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, JapaneseDictionaryException {
 		
 		final String mysqlAddress = "jdbc:mysql://localhost/japdb?characterEncoding=utf8&user=japdbuser&password=japdbpasswd";
 		
@@ -36,7 +37,7 @@ public class DictionarySQLDatabaseLoader {
 		
 	}
 
-	private static void loadDictionaryIntoDB(String mysqlAddress, String tableName, String inputFileName, String outputFileName) throws IOException {
+	private static void loadDictionaryIntoDB(String mysqlAddress, String tableName, String inputFileName, String outputFileName) throws IOException, JapaneseDictionaryException {
 		
 		final String insertStatementSql = "insert into " + tableName + " values(default, ?, ?, ?, ?, ?, ?, ?)";
 		
