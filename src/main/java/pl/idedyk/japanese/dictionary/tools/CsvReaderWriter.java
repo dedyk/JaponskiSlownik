@@ -12,6 +12,7 @@ import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.genki.WordType;
 
@@ -119,15 +120,8 @@ public class CsvReaderWriter {
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
-			csvWriter.write(polishJapaneseEntry.getWordType().toString());
-			
-			String kanji = polishJapaneseEntry.getKanji();
-			
-			if (kanji.equals("") == true) {
-				kanji = "-";
-			}
-			
-			csvWriter.write(kanji);
+			csvWriter.write(polishJapaneseEntry.getWordType().toString());						
+			csvWriter.write(polishJapaneseEntry.getKanji());
 			csvWriter.write(polishJapaneseEntry.getKanjiImagePath());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getKanaList()));
 			csvWriter.write(convertListToString(polishJapaneseEntry.getRomajiList()));
@@ -140,7 +134,7 @@ public class CsvReaderWriter {
 		csvWriter.close();
 	}
 	
-	public static List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv(String fileName) throws IOException {
+	public static List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv(String fileName) throws IOException, JapaneseDictionaryException {
 		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
@@ -151,6 +145,11 @@ public class CsvReaderWriter {
 			String dictionaryEntryType = csvReader.get(0);
 			String wordTypeString = csvReader.get(1);
 			String kanjiString = csvReader.get(2);
+			
+			if (kanjiString.equals("") == true) {
+				throw new JapaneseDictionaryException("Empty kanji!");
+			}
+			
 			String kanjiImagePathString = csvReader.get(3);
 			String kanaListString = csvReader.get(4);
 			String romajiListString = csvReader.get(5);
@@ -161,7 +160,7 @@ public class CsvReaderWriter {
 			
 			entry.setDictionaryEntryType(DictionaryEntryType.valueOf(dictionaryEntryType));
 			entry.setWordType(WordType.valueOf(wordTypeString));
-			entry.setKanji(kanjiString.equals("-") == false ? kanjiString : "");
+			entry.setKanji(kanjiString);
 			entry.setKanjiImagePath(kanjiImagePathString);
 			entry.setKanaList(parseStringIntoList(kanaListString));
 			entry.setRomajiList(parseStringIntoList(romajiListString));
