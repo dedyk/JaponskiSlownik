@@ -86,4 +86,14 @@ public class PolishJapaneseEntry {
 	public void setInfo(String info) {
 		this.info = info;
 	}
+
+	@Override
+	public String toString() {
+		return "PolishJapaneseEntry [dictionaryEntryType="
+				+ dictionaryEntryType + ", wordType=" + wordType + ", kanji="
+				+ kanji + ", kanjiImagePath=" + kanjiImagePath + ", kanaList="
+				+ kanaList + ", romajiList=" + romajiList
+				+ ", polishTranslates=" + polishTranslates + ", info=" + info
+				+ "]";
+	}
 }
