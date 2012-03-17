@@ -51,7 +51,7 @@ UNKNOWN,HIRAGANA,九歳,,きゅうさい,kyuusai,9,lata
 UNKNOWN,HIRAGANA,十歳,,じゅっさい,jussai,10,lata
 UNKNOWN,HIRAGANA,十一歳,,じゅういっさい,juuissai,11,lata
 UNKNOWN,HIRAGANA,二十歳,,はたち,hatachi,20,lata
-UNKNOWN,HIRAGANA,お早う御座います,,おはようございます,Ohayou gozaimasu,Dzien dobry,rano (grzecznie)
+UNKNOWN,HIRAGANA,お早う御座います,,おはようございます,Ohayou gozaimasu,Dzień dobry,rano (grzecznie)
 UNKNOWN,HIRAGANA,-,,こんにちわ,Konnichiwa,Dzień dobry,po południu
 UNKNOWN,HIRAGANA,-,,こんばんわ,Konbanwa,Dobry wieczór,
 UNKNOWN,HIRAGANA,-,,さようなら,Sayounara,Do widzenia,
@@ -105,11 +105,11 @@ UNKNOWN,HIRAGANA,韓国,,かんこく,Kankoku,Korea,
 UNKNOWN,KATAKANA,-,,スエーデン,Sueeden,Szwecja,
 UNKNOWN,HIRAGANA,中国,,ちゅうごく,Chuugoku,Chiny,
 UNKNOWN,HIRAGANA,科学,,かがく,kagaku,nauka,
-UNKNOWN,HIRAGANA,アジア研究,,アジアけんきゅう,ajiakenkyuu,orientarystyka,
+UNKNOWN,HIRAGANA,アジア研究,,アジアけんきゅう,ajiakenkyuu,orientalistyka,
 UNKNOWN,HIRAGANA,経済,,けいざい,keizai,ekonomia,
 UNKNOWN,HIRAGANA,国際関係,,こくさいかんけい,kokusaikankei,stosunki międzynarodowe,
 UNKNOWN,KATAKANA,-,,コンピュウター,konpyuutaa,komputer,
-UNKNOWN,HIRAGANA,人類学,,じんるいがく,jinruigaku,antropotologia,
+UNKNOWN,HIRAGANA,人類学,,じんるいがく,jinruigaku,antropologia,
 UNKNOWN,HIRAGANA,政治,,せいじ,seiji,polityka,
 UNKNOWN,KATAKANA,-,,ビジネス,bijinesu,biznes,
 UNKNOWN,HIRAGANA,文学,,ぶんがく,bungaku,literatura,
@@ -250,29 +250,21 @@ UNKNOWN,HIRAGANA,土曜日,,どようび,doyoubi,sobota,
 UNKNOWN,HIRAGANA,日曜日,,にちようび,nichiyoubi,niedziela,
 UNKNOWN,HIRAGANA,毎日,,まいにち,mainichi,każdego dnia,
 UNKNOWN,HIRAGANA,毎晩,,まいばん,maiban,każdej nocy,
-WORD_VERB_U,HIRAGANA,"に行く
-へ行く",,"にいく
-えいく","ni iku
-e iku",iść,cel
-WORD_VERB_U,HIRAGANA,"に帰る
-へ帰る",,"にかえる
-えかえる","ni kaeru
-e kaeru",wracać,cel
+WORD_VERB_U,HIRAGANA,に行く,,にいく,ni iku,iść,"cel, ni ~"
+WORD_VERB_U,HIRAGANA,へ行く,,へいく,e iku,iść,"cel, e ~"
+WORD_VERB_U,HIRAGANA,に帰る,,にかえる,ni kaeru,wracać,"cel, ni ~"
+WORD_VERB_U,HIRAGANA,へ帰る,,へかえる,e kaeru,wracać,"cel, e ~"
 WORD_VERB_U,HIRAGANA,を聞く,,をきく,wo kiku,słuchać,
 WORD_VERB_U,HIRAGANA,を飲む,,をのむ,wo nomu,pić,
-WORD_VERB_U,HIRAGANA,"を話す
-で話す",,"をはなす
-ではなす","wo hanasu
-de hanasu",mówić,język
+WORD_VERB_U,HIRAGANA,を話す,,をはなす,wo hanasu,mówić,"język, wo ~"
+WORD_VERB_U,HIRAGANA,で話す,,ではなす,de hanasu,mówić,"język, de ~"
 WORD_VERB_U,HIRAGANA,を読む,,をよむ,wo yomu,czytać,
 WORD_VERB_RU,HIRAGANA,起きる,,おきる,okiru,wstawać,
 WORD_VERB_RU,HIRAGANA,を食べる,,をたべる,wo taberu,jeść,
 WORD_VERB_RU,HIRAGANA,寝る,,ねる,neru,spać,
 WORD_VERB_RU,HIRAGANA,を見る,,をみる,wo miru,patrzeć,czasownik nieprzechodni
-UNKNOWN,HIRAGANA,"に来る
-へ来る",,"にくる
-えくる","ni kuru
-e kuru",przybyć,"cel, czasowniki nieregularne"
+WORD_VERB_IRREGULAR,HIRAGANA,に来る,,にくる,ni kuru,przybyć,"cel, ni ~"
+WORD_VERB_IRREGULAR,HIRAGANA,へ来る,,へくる,e kuru,przybyć,"cel, ni ~"
 WORD_VERB_IRREGULAR,HIRAGANA,-,,をする,wo suru,robić,
 WORD_VERB_IRREGULAR,HIRAGANA,を勉強する,,をべんきょうする,wo benkyou suru,studiować,nauka z książek
 UNKNOWN,HIRAGANA,-,,いい,ii,dobry,
@@ -301,7 +293,7 @@ UNKNOWN,HIRAGANA,買い物,,かいもの,kaimono,zakupy,
 UNKNOWN,KATAKANA,-,,クラス,kurasu,klasa,
 UNKNOWN,HIRAGANA,-,,あなた,anata,ty,
 UNKNOWN,HIRAGANA,犬,,いぬ,inu,pies,
-UNKNOWN,HIRAGANA,お土産,,おみやげ,omiyage,piamiątka,
+UNKNOWN,HIRAGANA,お土産,,おみやげ,omiyage,pamiątka,
 UNKNOWN,HIRAGANA,子供,,こども,kodomo,dziecko,
 UNKNOWN,HIRAGANA,御飯,,ごはん,gohan,jedzenie,j...
 UNKNOWN,HIRAGANA,御飯,,ごはん,gohan,ryż gotowany,r...
@@ -392,11 +384,10 @@ UNKNOWN,HIRAGANA,木曜日,,もくようび,mokuyoubi,czwartek,drzewo
 UNKNOWN,HIRAGANA,金曜日,,きにょうび,kinyoubi,piątek,"pieniądze, złoto, n'y"
 UNKNOWN,HIRAGANA,土曜日,,どようび,doyoubi,sobota,ziemia
 UNKNOWN,HIRAGANA,日曜日,,にちようび,nichiyoubi,niedziela,słońce
-WORD_VERB_U,HIRAGANA,"に会う
-と会う",,"にあう
-とあう","ni au
-to au","spotykać
-widzieć osobę",osoba
+WORD_VERB_U,HIRAGANA,に会う,,にあう,ni au,"spotykać
+widzieć osobę","osoba, ni"
+WORD_VERB_U,HIRAGANA,と会う,,とあう,to au,"spotykać
+widzieć osobę","osoba, ni"
 WORD_VERB_U,HIRAGANA,-,,がある,ga aru,być,do rzeczy martwych
 WORD_VERB_U,HIRAGANA,を買う,,をかう,wo kau,kupować,
 WORD_VERB_U,HIRAGANA,を書く,,をかく,wo kaku,pisać,osoba ni rzecz
@@ -578,7 +569,7 @@ UNKNOWN,HIRAGANA,二つ目の角を左に曲がる,,ふたつめのかどをひ�
 UNKNOWN,HIRAGANA,道を渡る,,みちをわたる,michi wo wataru,przez ulicę,
 UNKNOWN,HIRAGANA,道の左側,,みちのひだりかわ,michi no hidari kawa,lewo strona ulicy,
 UNKNOWN,HIRAGANA,道の右側,,みちのみぎかわ,michi no migi kawa,prawa strona ulicy,
-WORD_VERB_TE,HIRAGANA,起きる,,おきる,okiru,okite,
+WORD_VERB_TE,HIRAGANA,起きる,,おきる,okiru,okute,
 WORD_VERB_TE,HIRAGANA,食べる,,たべる,taberu,tabete,
 WORD_VERB_TE,HIRAGANA,寝る,,ねる,neru,nete,
 WORD_VERB_TE,HIRAGANA,見る,,みる,miru,mite,
@@ -603,7 +594,7 @@ WORD_VERB_TE,HIRAGANA,-,,やる,yaru,yatte,ru
 WORD_VERB_TE,HIRAGANA,来る,,くる,kuru,kite,nieregularny
 WORD_VERB_TE,HIRAGANA,-,,する,suru,shite,nieregularny
 WORD_VERB_TE,HIRAGANA,勉強する,,べんきょうする,benkyou suru,benkyou shite,nieregularny
-UNKNOWN,HIRAGANA,一人,,ひとり,hitori,jedzen człowiek,*
+UNKNOWN,HIRAGANA,一人,,ひとり,hitori,jeden człowiek,*
 UNKNOWN,HIRAGANA,二人,,ふたり,futari,dwoje ludzi,*
 UNKNOWN,HIRAGANA,三人,,さんにん,sannin,troje ludzi,
 UNKNOWN,HIRAGANA,四人,,よにん,yonin,czworo ludzi,*
@@ -757,7 +748,7 @@ UNKNOWN,HIRAGANA,冬,,ふゆ,fuyu,zima,
 UNKNOWN,KATAKANA,-,,ホーメステイ,hoomesutei,"pozostać w domu
 żyć ze swoją lokalną rodziną",
 UNKNOWN,HIRAGANA,毎週,,まいしゅう,maishuu,w każdym tygodniu,
-UNKNOWN,HIRAGANA,来月,,らいげつ,raigetsu,następny miesiąć,
+UNKNOWN,HIRAGANA,来月,,らいげつ,raigetsu,następny miesiąc,
 WORD_ADJECTIVE_NA,HIRAGANA,が上手,,がじょうず,ga jouzu,dobry w,
 WORD_ADJECTIVE_NA,HIRAGANA,が下手,,がへた,ga heta,słaby w,
 WORD_ADJECTIVE_NA,HIRAGANA,有名,,ゆうめい,yuumei,sławny,
@@ -785,7 +776,7 @@ UNKNOWN,HIRAGANA,-,,まだ,mada,jeszcze nie,+ forma negatywna
 UNKNOWN,HIRAGANA,-,,みんな,minna,wszyscy,
 UNKNOWN,HIRAGANA,何か,,なにか,nanika,coś,
 UNKNOWN,HIRAGANA,-,,だれか,dareka,ktoś,
-UNKNOWN,HIRAGANA,-,,どれか,doreka,któryjś,
+UNKNOWN,HIRAGANA,-,,どれか,doreka,któryś,
 UNKNOWN,HIRAGANA,-,,どこか,dokoka,gdzieś,
 UNKNOWN,HIRAGANA,何も,,なにも,nanimo,nic,
 UNKNOWN,HIRAGANA,-,,だれも,daremo,nikt,
@@ -815,7 +806,7 @@ UNKNOWN,HIRAGANA,先月,,せんげつ,sengetsu,poprzedni miesiąc,
 UNKNOWN,HIRAGANA,単語,,たんご,tango,słownictwo,
 UNKNOWN,KATAKANA,-,,ピアノ,piano,pianino,
 UNKNOWN,HIRAGANA,病気,,びょうき,byouki,choroba,
-WORD_ADJECTIVE_I,HIRAGANA,青い,,あおい,aoi,niebeski,
+WORD_ADJECTIVE_I,HIRAGANA,青い,,あおい,aoi,niebieski,
 WORD_ADJECTIVE_I,HIRAGANA,赤い,,あかい,akai,czerwony,
 WORD_ADJECTIVE_I,HIRAGANA,黒い,,くろい,kuroi,czarny,
 WORD_ADJECTIVE_I,HIRAGANA,寂しい,,さびしい,sabishii,samotny,
@@ -860,7 +851,7 @@ WORD_ADJECTIVE_I,HIRAGANA,茶色い,,ちゃいろい,chairoi,brązowy,
 WORD_ADJECTIVE_NA,HIRAGANA,緑,,みどり,midori,zielony,
 WORD_ADJECTIVE_NA,HIRAGANA,灰色,,はいいろ,haiiro,szary,
 WORD_ADJECTIVE_NA,KATAKANA,-,,ピンク,pinku,różowy,
-WORD_ADJECTIVE_NA,HIRAGANA,銀色,,ぎんいろ,gin'iro,srebny,
+WORD_ADJECTIVE_NA,HIRAGANA,銀色,,ぎんいろ,gin'iro,srebrny,
 WORD_ADJECTIVE_NA,HIRAGANA,紫,,むらさき,murasaki,fioletowy,
 WORD_ADJECTIVE_NA,HIRAGANA,水色,,みずいろ,mizuiro,jasno niebieski,
 WORD_ADJECTIVE_NA,HIRAGANA,金色,,きんいろ,kin'iro,złoty,

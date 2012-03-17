@@ -50,7 +50,9 @@ public class KanjiImageWriter {
 		
 		for (int idx = 0; idx < kanji.length(); ++idx) {
 			
+			System.out.println("\"" + kanji + "\"");
 			String currentChar = String.valueOf(kanji.charAt(idx));
+			System.out.println("\"" + kanji + "\" = " + "\"" + currentChar + "\"");
 			
 			String currentCharInCache = createNewKanjiImage(cache, imageDir, currentChar);
 			

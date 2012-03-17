@@ -18,7 +18,7 @@ import pl.idedyk.japanese.dictionary.genki.WordType;
 
 public class CsvReaderWriter {
 
-	public static void generateDictionaryApplicationResult(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
+	public static void generateDictionaryApplicationResult(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries, boolean addKanji) throws IOException {
 		
 		StringBuffer sb = new StringBuffer();
 
@@ -37,7 +37,7 @@ public class CsvReaderWriter {
 			}
 			sb.append(";");				
 
-			if (polishJapaneseEntry.getKanji() != null && polishJapaneseEntry.getKanji().equals("") == false) {
+			if (addKanji == true && polishJapaneseEntry.getKanji() != null && polishJapaneseEntry.getKanji().equals("") == false) {
 				sb.append(polishJapaneseEntry.getKanji()).append(";");
 			}
 
