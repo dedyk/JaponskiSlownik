@@ -46,7 +46,9 @@ public enum DictionaryEntryType {
 	
 	WORD_ADJECTIVE_NA("na-przymiotnik"),
 	
-	UNKNOWN("unknown");	
+	WORD_KANJI_READING("kanji czytanie"),
+	
+	UNKNOWN("unknown");
 	
 	private String name;
 	

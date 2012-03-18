@@ -95,5 +95,5 @@ public class PolishJapaneseEntry {
 				+ kanaList + ", romajiList=" + romajiList
 				+ ", polishTranslates=" + polishTranslates + ", info=" + info
 				+ "]";
-	}
+	}	
 }

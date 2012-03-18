@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary.genki;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
@@ -39,6 +40,7 @@ public class GenkiBookWords {
 		generateKanjiImages(polishJapaneseKanjiEntries, charsCache, kanjiOutputDir);
 		
 		// validate dictionary and kanji dictionary
+		validateDictionaryAndKanjiDictionary(polishJapaneseEntries, polishJapaneseKanjiEntries);
 		
 		CsvReaderWriter.generateDictionaryApplicationResult("output/japanese_polish_dictionary.properties", polishJapaneseEntries, true);
 		CsvReaderWriter.generateKanaEntriesCsv(kanjiOutputDir + "/hiragana.properties", hiraganaEntries);
@@ -47,7 +49,6 @@ public class GenkiBookWords {
 				
 		System.out.println("Done");
 	}
-
 	private static void generateHiraganaImages(List<KanaEntry> hiraganaEntries, Map<String, String> kanjiCache, String kanjiOutputDir) throws JapaneseDictionaryException {
 		
 		
@@ -109,4 +110,86 @@ public class GenkiBookWords {
 			}
 		}
 	}
+	
+	private static void validateDictionaryAndKanjiDictionary(List<PolishJapaneseEntry> polishJapaneseEntries,
+			List<PolishJapaneseEntry> polishJapaneseKanjiEntries) {
+		
+		for (PolishJapaneseEntry currentDictionaryPolishJapaneseEntry : polishJapaneseEntries) {
+			
+			List<PolishJapaneseEntry> foundPolishJapaneseEntries = 
+					findPolishJapaneseKanjiEntry(polishJapaneseKanjiEntries, currentDictionaryPolishJapaneseEntry.getKanji());
+			
+			if (foundPolishJapaneseEntries.size() > 0) {
+				
+				for (PolishJapaneseEntry currentFoundPolishJapaneseEntries : foundPolishJapaneseEntries) {
+					
+					comparePolishJapaneseEntries(currentFoundPolishJapaneseEntries, currentDictionaryPolishJapaneseEntry);
+						
+						
+						
+						
+					
+					
+				}
+				
+			}
+			
+			
+		}
+		
+		
+		// gdy gotowe, rzucanie błędem
+	}
+	
+	private static void comparePolishJapaneseEntries(PolishJapaneseEntry entry1, PolishJapaneseEntry entry2) {
+		
+		boolean wasError = false;
+		
+		if (entry1.getDictionaryEntryType().equals(entry2.getDictionaryEntryType()) == false) {
+			wasError = true;
+			System.out.println(entry1.getKanji() + ": " + entry1.getDictionaryEntryType() + " != " + entry2.getDictionaryEntryType());
+		}
+		
+		if (entry1.getWordType().equals(entry2.getWordType()) == false) {
+			wasError = true;
+			System.out.println(entry1.getKanji() + ": " + entry1.getWordType() + " != " + entry2.getWordType());
+		}
+
+		if (entry1.getKanaList().equals(entry2.getKanaList()) == false) {
+			wasError = true;
+			System.out.println(entry1.getKanji() + ": " + entry1.getKanaList() + " != " + entry2.getKanaList());
+		}
+
+		if (entry1.getRomajiList().equals(entry2.getRomajiList()) == false) {
+			wasError = true;
+			System.out.println(entry1.getKanji() + ": " + entry1.getRomajiList() + " != " + entry2.getRomajiList());
+		}
+
+		if (entry1.getPolishTranslates().equals(entry2.getPolishTranslates()) == false) {
+			wasError = true;
+			System.out.println(entry1.getKanji() + ": " + entry1.getPolishTranslates() + " != " + entry2.getPolishTranslates());
+		}
+		
+		if (wasError == true) {
+			System.out.println();
+		}
+	}
+	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, String kanji) {
+		
+		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_KANJI_READING) {
+				continue;
+			}
+			
+			if (polishJapaneseEntry.getKanji().equals(kanji)) {
+				result.add(polishJapaneseEntry);
+			}
+		}
+		
+		return result;
+	}
+
 }

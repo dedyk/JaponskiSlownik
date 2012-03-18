@@ -92,6 +92,12 @@ public class CsvReaderWriter {
 							}
 							
 							info += "na-przymiotnik";
+						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_KANJI_READING) {
+							if (info.length() > 0) {
+								info = info + ", ";
+							}
+							
+							info += "czytanie";
 						}
 						
 						sb.append(info);
