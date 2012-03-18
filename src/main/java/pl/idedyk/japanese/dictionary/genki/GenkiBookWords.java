@@ -38,6 +38,8 @@ public class GenkiBookWords {
 		validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries, katakanaEntries);
 		generateKanjiImages(polishJapaneseKanjiEntries, charsCache, kanjiOutputDir);
 		
+		// validate dictionary and kanji dictionary
+		
 		CsvReaderWriter.generateDictionaryApplicationResult("output/japanese_polish_dictionary.properties", polishJapaneseEntries, true);
 		CsvReaderWriter.generateKanaEntriesCsv(kanjiOutputDir + "/hiragana.properties", hiraganaEntries);
 		CsvReaderWriter.generateKanaEntriesCsv(kanjiOutputDir + "/katakana.properties", katakanaEntries);
