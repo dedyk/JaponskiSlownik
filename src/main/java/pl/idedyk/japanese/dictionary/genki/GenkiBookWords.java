@@ -1,7 +1,6 @@
 package pl.idedyk.japanese.dictionary.genki;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
@@ -40,7 +39,7 @@ public class GenkiBookWords {
 		generateKanjiImages(polishJapaneseKanjiEntries, charsCache, kanjiOutputDir);
 		
 		// validate dictionary and kanji dictionary
-		validateDictionaryAndKanjiDictionary(polishJapaneseEntries, polishJapaneseKanjiEntries);
+		// validateDictionaryAndKanjiDictionary(polishJapaneseEntries, polishJapaneseKanjiEntries);
 		
 		CsvReaderWriter.generateDictionaryApplicationResult("output/japanese_polish_dictionary.properties", polishJapaneseEntries, true);
 		CsvReaderWriter.generateKanaEntriesCsv(kanjiOutputDir + "/hiragana.properties", hiraganaEntries);
@@ -111,10 +110,15 @@ public class GenkiBookWords {
 		}
 	}
 	
+	/*
 	private static void validateDictionaryAndKanjiDictionary(List<PolishJapaneseEntry> polishJapaneseEntries,
 			List<PolishJapaneseEntry> polishJapaneseKanjiEntries) {
 		
 		for (PolishJapaneseEntry currentDictionaryPolishJapaneseEntry : polishJapaneseEntries) {
+			
+			if (currentDictionaryPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_VERB_TE) {
+				continue;
+			}
 			
 			List<PolishJapaneseEntry> foundPolishJapaneseEntries = 
 					findPolishJapaneseKanjiEntry(polishJapaneseKanjiEntries, currentDictionaryPolishJapaneseEntry.getKanji());
@@ -123,22 +127,11 @@ public class GenkiBookWords {
 				
 				for (PolishJapaneseEntry currentFoundPolishJapaneseEntries : foundPolishJapaneseEntries) {
 					
-					comparePolishJapaneseEntries(currentFoundPolishJapaneseEntries, currentDictionaryPolishJapaneseEntry);
-						
-						
-						
-						
-					
-					
+					comparePolishJapaneseEntries(currentDictionaryPolishJapaneseEntry, currentFoundPolishJapaneseEntries);
 				}
 				
 			}
-			
-			
 		}
-		
-		
-		// gdy gotowe, rzucanie błędem
 	}
 	
 	private static void comparePolishJapaneseEntries(PolishJapaneseEntry entry1, PolishJapaneseEntry entry2) {
@@ -169,6 +162,12 @@ public class GenkiBookWords {
 			wasError = true;
 			System.out.println(entry1.getKanji() + ": " + entry1.getPolishTranslates() + " != " + entry2.getPolishTranslates());
 		}
+
+		if (entry1.getInfo().equals(entry2.getInfo()) == false) {
+			wasError = true;
+			System.out.println(entry1.getKanji() + ": " + entry1.getInfo() + " != " + entry2.getInfo());
+		}
+
 		
 		if (wasError == true) {
 			System.out.println();
@@ -191,5 +190,5 @@ public class GenkiBookWords {
 		
 		return result;
 	}
-
+	*/
 }
