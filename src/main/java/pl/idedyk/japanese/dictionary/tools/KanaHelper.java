@@ -1114,7 +1114,7 @@ public class KanaHelper {
 	}
 
 	private static boolean isVowel(char char_) {
-		if (char_ == 'e' || char_ == 'i' || char_ == 'o' || char_ == 'a') {
+		if (char_ == 'e' || char_ == 'u' || char_ == 'i' || char_ == 'o' || char_ == 'a') {
 			return true;
 		} else {
 			return false;
