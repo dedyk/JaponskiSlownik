@@ -11,6 +11,8 @@ public class PolishJapaneseEntry {
 	
 	private WordType wordType;
 	
+	private String prefix;
+	
 	private String kanji;
 	
 	private String kanjiImagePath;
@@ -87,13 +89,21 @@ public class PolishJapaneseEntry {
 		this.info = info;
 	}
 
+	public String getPrefix() {
+		return prefix;
+	}
+
+	public void setPrefix(String prefix) {
+		this.prefix = prefix;
+	}
+
 	@Override
 	public String toString() {
 		return "PolishJapaneseEntry [dictionaryEntryType="
-				+ dictionaryEntryType + ", wordType=" + wordType + ", kanji="
-				+ kanji + ", kanjiImagePath=" + kanjiImagePath + ", kanaList="
-				+ kanaList + ", romajiList=" + romajiList
-				+ ", polishTranslates=" + polishTranslates + ", info=" + info
-				+ "]";
+				+ dictionaryEntryType + ", wordType=" + wordType + ", prefix="
+				+ prefix + ", kanji=" + kanji + ", kanjiImagePath="
+				+ kanjiImagePath + ", kanaList=" + kanaList + ", romajiList="
+				+ romajiList + ", polishTranslates=" + polishTranslates
+				+ ", info=" + info + "]";
 	}	
 }
