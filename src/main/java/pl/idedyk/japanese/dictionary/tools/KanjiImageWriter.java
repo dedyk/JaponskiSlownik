@@ -46,17 +46,18 @@ public class KanjiImageWriter {
 		
 		String japaneseImagePath = "";
 		
-		String kanji = polishJapaneseEntry.getKanji();
+		String word = polishJapaneseEntry.getKanji().equals("-") == false ? 
+				polishJapaneseEntry.getPrefix() + polishJapaneseEntry.getKanji() : polishJapaneseEntry.getKanji();
 		
-		for (int idx = 0; idx < kanji.length(); ++idx) {
+		for (int idx = 0; idx < word.length(); ++idx) {
 			
-			String currentChar = String.valueOf(kanji.charAt(idx));
+			String currentChar = String.valueOf(word.charAt(idx));
 			
 			String currentCharInCache = createNewKanjiImage(cache, imageDir, currentChar);
 			
 			japaneseImagePath += currentCharInCache;
 			
-			if (idx != kanji.length() - 1) {
+			if (idx != word.length() - 1) {
 				japaneseImagePath += ",";
 			}
 		}

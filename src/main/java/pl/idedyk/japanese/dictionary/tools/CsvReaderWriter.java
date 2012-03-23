@@ -35,10 +35,13 @@ public class CsvReaderWriter {
 					sb.append(",");
 				}					
 			}
-			sb.append(";");				
+			sb.append(";");
+			
+			String prefix = polishJapaneseEntry.getPrefix();
+			String kanji = polishJapaneseEntry.getKanji();
 
 			if (addKanji == true && polishJapaneseEntry.getKanji() != null && polishJapaneseEntry.getKanji().equals("") == false) {
-				sb.append(polishJapaneseEntry.getKanji()).append(";");
+				sb.append(kanji.equals("-") == false ? prefix + kanji : kanji).append(";");
 			}
 
 			if (polishJapaneseEntry.getKanjiImagePath() != null && polishJapaneseEntry.getKanjiImagePath().equals("") == false) {
