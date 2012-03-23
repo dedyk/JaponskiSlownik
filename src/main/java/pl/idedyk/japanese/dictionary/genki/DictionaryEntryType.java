@@ -12,6 +12,8 @@ public enum DictionaryEntryType {
 	
 	WORD_YEARS("Lata"),
 	
+	WORD_NOUN("rzeczownik"),
+	
 	WORD_VERB_U("u-czasownik"),
 	
 	WORD_VERB_RU("ru-czasownik"),
