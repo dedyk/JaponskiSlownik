@@ -96,6 +96,10 @@ public class PolishJapaneseEntry {
 	public void setPrefix(String prefix) {
 		this.prefix = prefix;
 	}
+	
+	public String getFullKanji() {
+		return kanji.equals("-") == false ? prefix + kanji : kanji;
+	}
 
 	@Override
 	public String toString() {

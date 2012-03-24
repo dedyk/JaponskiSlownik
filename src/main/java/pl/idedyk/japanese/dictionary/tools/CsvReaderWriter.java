@@ -37,11 +37,8 @@ public class CsvReaderWriter {
 			}
 			sb.append(";");
 			
-			String prefix = polishJapaneseEntry.getPrefix();
-			String kanji = polishJapaneseEntry.getKanji();
-
 			if (addKanji == true && polishJapaneseEntry.getKanji() != null && polishJapaneseEntry.getKanji().equals("") == false) {
-				sb.append(kanji.equals("-") == false ? prefix + kanji : kanji).append(";");
+				sb.append(polishJapaneseEntry.getFullKanji()).append(";");
 			}
 
 			if (polishJapaneseEntry.getKanjiImagePath() != null && polishJapaneseEntry.getKanjiImagePath().equals("") == false) {

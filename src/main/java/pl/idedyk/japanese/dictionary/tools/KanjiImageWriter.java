@@ -46,8 +46,7 @@ public class KanjiImageWriter {
 		
 		String japaneseImagePath = "";
 		
-		String word = polishJapaneseEntry.getKanji().equals("-") == false ? 
-				polishJapaneseEntry.getPrefix() + polishJapaneseEntry.getKanji() : polishJapaneseEntry.getKanji();
+		String word = polishJapaneseEntry.getFullKanji();
 		
 		for (int idx = 0; idx < word.length(); ++idx) {
 			
