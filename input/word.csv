@@ -574,7 +574,7 @@ UNKNOWN,HIRAGANA,,二つ目の角を左に曲がる,,ふたつめのかどをひ
 UNKNOWN,HIRAGANA,,道を渡る,,みちをわたる,michi wo wataru,przez ulicę,
 UNKNOWN,HIRAGANA,,道の左側,,みちのひだりかわ,michi no hidari kawa,lewo strona ulicy,
 UNKNOWN,HIRAGANA,,道の右側,,みちのみぎかわ,michi no migi kawa,prawa strona ulicy,
-WORD_VERB_TE,HIRAGANA,,起きる,,おきる,okiru,okute,
+WORD_VERB_TE,HIRAGANA,,起きる,,おきる,okiru,okite,
 WORD_VERB_TE,HIRAGANA,,食べる,,たべる,taberu,tabete,
 WORD_VERB_TE,HIRAGANA,,寝る,,ねる,neru,nete,
 WORD_VERB_TE,HIRAGANA,,見る,,みる,miru,mite,
@@ -760,7 +760,7 @@ WORD_VERB_U,HIRAGANA,,雨が降る,,あめがふる,ame ga furu,pada deszcz,
 WORD_VERB_U,HIRAGANA,,洗う,,あらう,arau,myć,
 WORD_VERB_U,HIRAGANA,,言う,,いう,iu,mówić,
 WORD_VERB_U,HIRAGANA,,-,,がいる,ga iru,potrzebować,
-WORD_VERB_U,HIRAGANA,に,遅くなる,,おそくなる,ni osokunaru,być spóźniony,na
+WORD_VERB_U,HIRAGANA,に,遅くなる,,おそくなる,ni osoku naru,być spóźniony,na
 WORD_VERB_U,HIRAGANA,,思う,,おもう,omou,myśleć,
 WORD_VERB_U,HIRAGANA,,切る,,きる,kiru,ciąć,
 WORD_VERB_U,HIRAGANA,,作る,,つくる,tsukuru,tworzyć,
@@ -1063,8 +1063,8 @@ WORD_NOUN,HIRAGANA,,物,,もの,mono,rzecz,konkretny obiekt
 WORD_NOUN,HIRAGANA,,雪,,ゆき,yuki,śnieg,
 WORD_NOUN,HIRAGANA,,用事,,ようじ,youji,rzeczy do wykonania,
 WORD_ADJECTIVE_I,HIRAGANA,,甘い,,あまい,amai,słodki,
-WORD_ADJECTIVE_I,HIRAGANA,,痛い,,いたい,itai,"ranny
-bolesny",
+WORD_ADJECTIVE_I,HIRAGANA,,痛い,,いたい,itai,"bolesny
+ranny",
 WORD_ADJECTIVE_I,HIRAGANA,,多い,,おおい,ooi,dużo,
 WORD_ADJECTIVE_I,HIRAGANA,,狭い,,せまい,semai,"wąski
 nie przestronny",
@@ -1073,7 +1073,7 @@ WORD_ADJECTIVE_I,HIRAGANA,,都合が悪い,,つごうがわるい,tsugou ga waru
 WORD_ADJECTIVE_I,HIRAGANA,,悪い,,わるい,warui,zły,
 WORD_ADJECTIVE_NA,HIRAGANA,,素敵,,すてき,suteki,fantastyczny,
 WORD_VERB_U,HIRAGANA,,風邪をひく,,かぜをひく,kaze wo hiku,złapać przeziębienie,
-WORD_VERB_U,HIRAGANA,に,興味がある,,きょうみがある,kyoumi ga aru,być zainteresowany,tematem ~
+WORD_VERB_U,HIRAGANA,に,興味がある,,きょうみがある,ni kyoumi ga aru,być zainteresowany,tematem ~
 WORD_VERB_U,HIRAGANA,,-,,なくす,nakusu,tracić,
 WORD_VERB_U,HIRAGANA,,熱がある,,ねつがある,netsu ga aru,mieć gorączkę,
 WORD_VERB_U,HIRAGANA,,のどが渇く,,のどがかわく,nodo ga kawaku,"być spragniony
@@ -1081,7 +1081,7 @@ mieć sucho w gardle",
 WORD_VERB_U,HIRAGANA,,渇く,,かわく,kawaku,wyschnąć,
 WORD_VERB_U,HIRAGANA,,渇かす,,かわかる,kawakasu,suszyć,
 WORD_VERB_RU,HIRAGANA,,せきが出る,,せきがでる,seki ga deru,kasłać,
-WORD_VERB_RU,HIRAGANA,と,別れる,,わかれる,wakareru,izolować,osobę ~
+WORD_VERB_RU,HIRAGANA,と,別れる,,わかれる,to wakareru,izolować,osobę ~
 WORD_VERB_IRREGULAR,HIRAGANA,,緊張する,,きんちょうする,kinchou suru,"spinać się
 być zdenerwowany",
 WORD_VERB_IRREGULAR,HIRAGANA,,心配する,,しんぱいする,shinpai suru,martwić się,
@@ -1091,8 +1091,7 @@ trzymaj się",
 UNKNOWN,HIRAGANA,,元気がない,,げんきがない,genki ga nai,słabo wyglądać,
 UNKNOWN,HIRAGANA,,多分,,たぶん,tabun,być może,
 UNKNOWN,HIRAGANA,,-,,できるだけ,dekirudake,w miarę możliwości,
-UNKNOWN,HIRAGANA,,-,,でしょう,deshou,"prawdopodobnie
-prawda?",~
+UNKNOWN,HIRAGANA,,-,,でしょう,deshou,prawdopodobnie,"~, pewność 60%, używane m.in do prognozy pogody"
 UNKNOWN,HIRAGANA,,度,,ど,do,stopnie,temperatura
 UNKNOWN,HIRAGANA,,二三日,,にさんにち,ni san nichi,"2,3 dni",
 UNKNOWN,HIRAGANA,,-,,ので,node,ponieważ,~
@@ -1114,3 +1113,15 @@ UNKNOWN,HIRAGANA,,神社,,じんじゃ,jinja,świątynia,shintoistyczna
 UNKNOWN,HIRAGANA,,祭り,,まつり,matsuri,festiwal,
 UNKNOWN,HIRAGANA,お,返事,,へんじ,ohenji,odpowiedź,
 UNKNOWN,HIRAGANA,,方,,ほう,hou,kierunek,
+WORD_VERB_RU,HIRAGANA,,晴れる,,はれる,hareru,słoneczna pogoda,czasownik
+UNKNOWN,HIRAGANA,,雲,,くも,kumo,chmura,
+WORD_VERB_U,HIRAGANA,,曇る,,くもる,kumoru,chmurzyć się,
+UNKNOWN,HIRAGANA,,風,,かぜ,kaze,wiatr,
+WORD_VERB_U,HIRAGANA,,風が吹く,,かぜがふく,kaze ga fuku,wiatr wieje,
+WORD_ADJECTIVE_NA,HIRAGANA,,大事,,だいじ,daiji,ważny,
+UNKNOWN,HIRAGANA,,書類,,しょるい,shorui,dokument,
+UNKNOWN,HIRAGANA,,会談,,かいだん,kaidan,konferencja,
+WORD_ADJECTIVE_I,HIRAGANA,,重い,,おもい,omoi,"ciężki
+masywny",
+UNKNOWN,HIRAGANA,,桜,,さくら,sakura,kwiat wiśni,
+UNKNOWN,HIRAGANA,,花見,,はなみ,hanami,oglądanie kwiatów,
