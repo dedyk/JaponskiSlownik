@@ -322,7 +322,7 @@ public class KanaHelper {
 		
 		List<KanaEntry> kanaEntries = new ArrayList<KanaEntry>();
 		
-		String remaingRestChars = null;
+		String remaingRestChars = "";
 		
 		String currentRestChars = "";
 		
@@ -701,7 +701,7 @@ public class KanaHelper {
 		
 		List<KanaEntry> kanaEntries = new ArrayList<KanaEntry>();
 		
-		String remaingRestChars = null;
+		String remaingRestChars = "";
 		
 		String currentRestChars = "";
 		
