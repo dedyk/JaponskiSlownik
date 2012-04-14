@@ -195,8 +195,8 @@ UNKNOWN,KATAKANA,,-,,カーテン,kaaten,zasłonka,
 UNKNOWN,KATAKANA,,-,,ドア,doa,drzwi,
 UNKNOWN,HIRAGANA,,消しゴム,,けしごむ,keshigomu,gumka,
 UNKNOWN,HIRAGANA,,椅子,,いす,isu,krzesło,
-UNKNOWN,HIRAGANA,,分かりました,,わかりました,Wakarimashita,zrozumiałem,
-UNKNOWN,HIRAGANA,,分かりません,,わかりません,Wakarimasen,nie rozumiem,
+UNKNOWN,HIRAGANA,,-,,わかりました,Wakarimashita,zrozumiałem,
+UNKNOWN,HIRAGANA,,-,,わかりません,Wakarimasen,nie rozumiem,
 UNKNOWN,HIRAGANA,,ゆっくり行ってください,,ゆっくりいってください,Yukkuri itte kudasai,Proszę mówić wolno,
 UNKNOWN,HIRAGANA,,もういちど行ってください,,もういちどいってください,Mou ichido itte kudasai,Proszę powtórzyć,
 UNKNOWN,HIRAGANA,,ちょっと待ってください,,ちょっとまってください,Chotto matte kudasai,Proszę poczekać,
@@ -252,9 +252,9 @@ UNKNOWN,HIRAGANA,,日曜日,,にちようび,nichiyoubi,niedziela,słońce
 UNKNOWN,HIRAGANA,,毎日,,まいにち,mainichi,każdego dnia,
 UNKNOWN,HIRAGANA,,毎晩,,まいばん,maiban,każdej nocy,
 WORD_VERB_U,HIRAGANA,に,行く,,いく,ni iku,iść,"cel, ni ~"
-WORD_VERB_U,HIRAGANA,へ,行く,,いく,e iku,iść,"cel, e ~"
+WORD_VERB_U,HIRAGANA,へ,行く,,いく,he iku,iść,"cel, e ~"
 WORD_VERB_U,HIRAGANA,に,帰る,,かえる,ni kaeru,wracać,"cel, ni ~"
-WORD_VERB_U,HIRAGANA,へ,帰る,,かえる,e kaeru,wracać,"cel, e ~"
+WORD_VERB_U,HIRAGANA,へ,帰る,,かえる,he kaeru,wracać,"cel, e ~"
 WORD_VERB_U,HIRAGANA,を,聞く,,きく,wo kiku,słuchać,
 WORD_VERB_U,HIRAGANA,を,飲む,,のむ,wo nomu,pić,
 WORD_VERB_U,HIRAGANA,を,話す,,はなす,wo hanasu,mówić,"język, wo ~"
@@ -265,7 +265,7 @@ WORD_VERB_RU,HIRAGANA,を,食べる,,たべる,wo taberu,jeść,
 WORD_VERB_RU,HIRAGANA,,寝る,,ねる,neru,spać,
 WORD_VERB_RU,HIRAGANA,を,見る,,みる,wo miru,patrzeć,czasownik nieprzechodni
 WORD_VERB_IRREGULAR,HIRAGANA,に,来る,,くる,ni kuru,przybyć,"cel, ni ~"
-WORD_VERB_IRREGULAR,HIRAGANA,へ,来る,,くる,e kuru,przybyć,"cel, ni ~"
+WORD_VERB_IRREGULAR,HIRAGANA,へ,来る,,くる,he kuru,przybyć,"cel, ni ~"
 WORD_VERB_IRREGULAR,HIRAGANA,を,-,,する,wo suru,robić,
 WORD_VERB_IRREGULAR,HIRAGANA,を,勉強する,,べんきょうする,wo benkyou suru,studiować,nauka z książek
 UNKNOWN,HIRAGANA,,-,,いい,ii,dobry,
@@ -286,7 +286,7 @@ UNKNOWN,HIRAGANA,,毎,,まい,mai,każdy,
 UNKNOWN,HIRAGANA,お,箸,,はし,ohashi,pałeczki,
 UNKNOWN,HIRAGANA,お,風呂,,ふろ,ofuro,wanna,
 UNKNOWN,HIRAGANA,,店,,みせ,mise,sklep,
-UNKNOWN,HIRAGANA,,和尚三,,おしょうさん,oshousan,mnich,buddyjski
+UNKNOWN,HIRAGANA,,-,,おしょうさん,oshousan,mnich,buddyjski
 UNKNOWN,HIRAGANA,,-,,こぞうさん,kozousan,uczniowie,
 UNKNOWN,KATAKANA,,-,,タヌキ,kanuki,jenot,
 UNKNOWN,KATAKANA,,-,,アルバイト,arubaito,praca w niepełnym wymiarze godzin,
@@ -968,8 +968,8 @@ UNKNOWN,HIRAGANA,,山,,やま,yama,góra,
 UNKNOWN,HIRAGANA,,夢,,ゆめ,yume,marzenie,
 UNKNOWN,KATAKANA,,-,,ルー厶メート,ruumumeeto,współlokator,
 WORD_VERB_U,HIRAGANA,,-,,うそをつく,uso wo tsuku,kłamać,
-WORD_VERB_U,HIRAGANA,,-,,おなかがすく,onakagasuku,być głodnym,
-WORD_VERB_U,HIRAGANA,,飼う,,かう,kau,posiadać,zwierzaka
+WORD_VERB_U,HIRAGANA,,-,,おなかがすく,onaka ga suku,być głodnym,
+WORD_VERB_U,HIRAGANA,,飼う,,かう,kau,hodować,zwierzaka
 WORD_VERB_U,KATAKANA,,-,,サボる,saboru,opuszczać zajęcia,
 WORD_VERB_U,HIRAGANA,,取る,,とる,toru,zdać do następnej klasy,
 WORD_VERB_U,HIRAGANA,,習う,,ならう,narau,uczyć się,czegoś praktycznego
@@ -1125,3 +1125,26 @@ WORD_ADJECTIVE_I,HIRAGANA,,重い,,おもい,omoi,"ciężki
 masywny",
 UNKNOWN,HIRAGANA,,桜,,さくら,sakura,kwiat wiśni,
 UNKNOWN,HIRAGANA,,花見,,はなみ,hanami,oglądanie kwiatów,
+UNKNOWN,HIRAGANA,,神さま,,かみさま,kamisama,Bóg,
+UNKNOWN,HIRAGANA,,娘,,むすめ,musume,córka,
+WORD_ADJECTIVE_NA,HIRAGANA,,-,,まじめ,majime,poważny,
+WORD_VERB_U,HIRAGANA,,はたを織る,,はたをおる,hata wo oru,tkać,
+UNKNOWN,HIRAGANA,,-,,ある,aru,jeden,~
+UNKNOWN,HIRAGANA,,ある日,,あるにち,aru nichi,jeden dzień,
+UNKNOWN,HIRAGANA,,大人,,おとな,otona,dorosły,
+WORD_VERB_RU,HIRAGANA,,見つける,,みつける,mitsukeru,szukać,
+UNKNOWN,HIRAGANA,,天の川,,あまのがわ,amanogawa,Droga Mleczna,
+UNKNOWN,HIRAGANA,,向こう,,むこう,mukou,druga strona,
+UNKNOWN,HIRAGANA,,畑,,はたけ,hatake,gospodarstwo,
+WORD_VERB_U,HIRAGANA,,怒る,,おこる,okoru,być zły,
+WORD_VERB_RU,HIRAGANA,,連れて帰る,,つれてかえる,tsurete kaeru,wracać do domu,
+WORD_VERB_U,HIRAGANA,,泣く,,なく,naku,płakać,
+WORD_ADJECTIVE_NA,HIRAGANA,,-,,かわいそう,kawai sou,żałosny,
+UNKNOWN,HIRAGANA,,一年に一度,,いちねんにいちど,ichinen ni ichido,raz do roku,
+UNKNOWN,HIRAGANA,,-,,までに,madeni,przez,~
+UNKNOWN,HIRAGANA,,願い,,ねがい,negai,życzenie,
+WORD_VERB_U,HIRAGANA,,-,,かなう,kanau,być zrealizowany,
+UNKNOWN,HIRAGANA,,私たち,,わたしたち,watashi tachi,my,
+UNKNOWN,HIRAGANA,,-,,など,nado,do tego,
+UNKNOWN,HIRAGANA,,-,,たんざく,tanzaku,???,
+UNKNOWN,HIRAGANA,,人々,,ひとびと,hitobito,ludzie,
