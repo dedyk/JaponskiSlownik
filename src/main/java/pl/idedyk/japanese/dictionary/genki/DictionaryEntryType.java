@@ -26,6 +26,8 @@ public enum DictionaryEntryType {
 	
 	WORD_ADJECTIVE_NA("na-przymiotnik"),
 	
+	WORD_ADJECTIVE_NOUN("rzeczownik"),
+	
 	WORD_KANJI_READING("kanji czytanie"),
 	
 	UNKNOWN("unknown");

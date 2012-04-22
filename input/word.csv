@@ -943,7 +943,7 @@ UNKNOWN,HIRAGANA,,-,,いいこと,iikoto,dobry uczynek,
 UNKNOWN,HIRAGANA,,声,,こえ,koe,głos,
 UNKNOWN,HIRAGANA,,戸,,と,to,drzwi,
 WORD_VERB_IRREGULAR,HIRAGANA,,-,,びっくりする,bikkuri suru,być zaskoczony,
-WORD_ADJECTIVE_NA,HIRAGANA,,-,,しあわせ,shiawase,szczęśliwy,
+WORD_ADJECTIVE_NA,HIRAGANA,,幸せ,,しあわせ,shiawase,szczęśliwy,
 UNKNOWN,KATAKANA,,-,,オーストラリア,oosutoraria,Australia,
 UNKNOWN,HIRAGANA,お,菓子,,かし,okashi,przekąski,
 UNKNOWN,HIRAGANA,お,正月,,しょうがつ,oshougatsu,Nowy Rok,dosł: właściwy miesiąc
@@ -1018,7 +1018,7 @@ WORD_VERB_RU,HIRAGANA,,終える,,おえる,oeru,kończyć się,czasownik przech
 UNKNOWN,HIRAGANA,,-,,しめきり,shimekiri,ostateczny termin,
 UNKNOWN,HIRAGANA,,意味,,いみ,imi,znaczenie,
 UNKNOWN,HIRAGANA,,発音,,はつおん,hatsuon,wymowa,
-UNKNOWN,HIRAGANA,,文房,,ぶんぼう,bunbou,gramatyka,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,文法,,ぶんぽう,bunpou,gramatyka,
 UNKNOWN,HIRAGANA,,質問,,しつもん,shitsumon,pytanie,
 UNKNOWN,HIRAGANA,,答,,こたえ,kotae,odpowiedź,
 UNKNOWN,HIRAGANA,,例,,れい,rei,przykład,
@@ -1148,3 +1148,72 @@ UNKNOWN,HIRAGANA,,私たち,,わたしたち,watashi tachi,my,
 UNKNOWN,HIRAGANA,,-,,など,nado,i tak dalej,
 UNKNOWN,HIRAGANA,,-,,たんざく,tanzaku,kawałek ładnego papieru,
 UNKNOWN,HIRAGANA,,人々,,ひとびと,hitobito,ludzie,
+UNKNOWN,HIRAGANA,,値段,,ねだん,nedan,cena,
+WORD_ADJECTIVE_NOUN,KATAKANA,,-,,ウエイター,ueitaa,kelner,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,-,,おじいさん,ojiisan,"dziadek
+starszy mężczyzna",
+WORD_ADJECTIVE_NOUN,HIRAGANA,,お宅,,おたく,otaku,twój,dom
+WORD_ADJECTIVE_NOUN,HIRAGANA,,大人,,おとな,otona,dorosły,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,外国語,,がいこくご,gaikokugo,język obcy,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,楽器,,がっき,gakki,instrument muzyczny,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,空手,,からて,karate,karate,
+WORD_ADJECTIVE_NOUN,KATAKANA,,-,,カレー,karee,curry,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,着物,,きもの,kimono,kimono,
+WORD_ADJECTIVE_NOUN,KATAKANA,,-,,ケーキ,keeki,ciastko,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,広告,,こうこく,koukoku,reklama,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,紅茶,,こうちゃ,koucha,herbata,czarna
+WORD_ADJECTIVE_NOUN,HIRAGANA,,言葉,,ことば,kotoba,język,mowa
+WORD_ADJECTIVE_NOUN,KATAKANA,,-,,ゴルフ,gorufu,golf,
+WORD_ADJECTIVE_NOUN,KATAKANA,,-,,セーター,seetaa,sweter,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,象,,ぞう,zou,słoń,
+WORD_ADJECTIVE_NOUN,KATAKANA,,-,,バイオリン,baiorin,skrzypce,
+WORD_ADJECTIVE_NOUN,KATAKANA,,-,,バイク,baiku,motor,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,物価,,ぶっか,bukka,ceny,"ogólnie, nie konkretna cena"
+WORD_ADJECTIVE_NOUN,HIRAGANA,,文法,,ぶんぽう,bunpou,gramatyka,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,弁護士,,べんごし,bengoshi,prawnik,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,募集,,ぼしゅう,boshuu,rekrutacja,"~, szukanie ..."
+WORD_ADJECTIVE_NOUN,HIRAGANA,,店,,みせ,mise,sklep,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,-,,やくざ,yakuza,yakuza,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,約束,,やくそく,yakusoku,"obietnica
+termin",
+WORD_ADJECTIVE_NOUN,KATAKANA,,-,,レポート,repooto,papier,
+WORD_ADJECTIVE_NOUN,HIRAGANA,,私,,わたくし,watakushi,ja,formalnie
+WORD_ADJECTIVE_I,HIRAGANA,,-,,うれしい,ureshii,zadowolony,
+WORD_ADJECTIVE_I,HIRAGANA,,悲しい,,かなしい,kanashii,smutny,
+WORD_ADJECTIVE_I,HIRAGANA,,辛い,,からい,karai,"gorący i pikantny
+słony",
+WORD_ADJECTIVE_I,HIRAGANA,,厳しい,,きびしい,kibishii,"surowy
+rygorystyczny",
+WORD_ADJECTIVE_I,HIRAGANA,,近い,,ちかい,chikai,bliski,
+WORD_ADJECTIVE_NA,HIRAGANA,,-,,いろいろ,iroiro,różne,
+WORD_ADJECTIVE_NA,HIRAGANA,,幸せ,,しあわせ,shiawase,szczęśliwy,
+WORD_ADJECTIVE_NA,HIRAGANA,,-,,だめ,dame,"beznadziejny
+niedobry",
+WORD_VERB_U,HIRAGANA,,編む,,あむ,amu,robić na drutach,
+WORD_VERB_U,HIRAGANA,,貸す,,かす,kasu,"pożyczać
+wynajmować",rzecz wo osoba ni
+WORD_VERB_U,HIRAGANA,,頑張る,,がんばる,ganbaru,starać się,
+WORD_VERB_U,HIRAGANA,,泣く,,なく,naku,płakać,
+WORD_VERB_U,HIRAGANA,,磨く,,みがく,migaku,"myć zęby
+polerować",
+WORD_VERB_U,HIRAGANA,,約束を守る,,やくそくをまもる,yakusoku wo mamoru,dotrzymać tajemnicy,
+WORD_VERB_IRREGULAR,HIRAGANA,,感動する,,かんどうする,kandou suru,"być poruszony
+być dotknięty",przez ~ ni
+UNKNOWN,HIRAGANA,,-,,いらっしゃいます,irasshaimasu,czy ktoś jest obecny / w domu,uprzejmie
+UNKNOWN,HIRAGANA,,回,,かい,kai,razy,~
+UNKNOWN,HIRAGANA,,-,,キロ,kiro,kilo,"~ , np. kilometry, kilogramy"
+UNKNOWN,HIRAGANA,,実は,,じつは,jitsuha,"w istocie
+faktycznie",
+UNKNOWN,HIRAGANA,,全部,,ぜんぶ,zenbu,wszystko,
+UNKNOWN,HIRAGANA,,と申します,,ともうします,to moushimasu,nazywam się,
+UNKNOWN,HIRAGANA,,よろしくお願いします,,よろしくおねがいします,yoroshiku onegai shimasu,Z góry dziękuję,
+UNKNOWN,HIRAGANA,,一日,,いちにち,ichinichi,jeden dzień,
+UNKNOWN,HIRAGANA,,二日,,ふつか,futsuka,dwa dni,
+UNKNOWN,HIRAGANA,,三日,,みっか,mikka,trzy dni,
+UNKNOWN,HIRAGANA,,四日,,よっか,yokka,cztery dni,
+UNKNOWN,HIRAGANA,,五日,,いつか,itsuka,pięć dni,
+UNKNOWN,HIRAGANA,,六日,,むいか,muika,sześć dni,
+UNKNOWN,HIRAGANA,,七日,,なのか,nanoka,siedem dni,
+UNKNOWN,HIRAGANA,,八日,,ようか,youka,osiem dni,
+UNKNOWN,HIRAGANA,,九日,,ここのか,kokonoka,dziewięć dni,
+UNKNOWN,HIRAGANA,,十日,,とうか,touka,dziesięć dni,
