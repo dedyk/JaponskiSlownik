@@ -2,15 +2,13 @@ package pl.idedyk.japanese.dictionary.genki;
 
 public enum DictionaryEntryType {
 	
-	WORD_GREETINGS("Powitania"),
+	WORD_GREETING("Powitanie"),
 		
-	WORD_NUMBERS("Liczby"),
+	WORD_NUMBER("Liczba"),
 	
-	WORD_HOURS("Godziny"),
+	WORD_TIME("Godzina"),
 	
-	WORD_MINUTES("Minuty"),
-	
-	WORD_YEARS("Lata"),
+	WORD_AGE("Wiek"),
 	
 	WORD_NOUN("rzeczownik"),
 	
@@ -26,9 +24,23 @@ public enum DictionaryEntryType {
 	
 	WORD_ADJECTIVE_NA("na-przymiotnik"),
 	
-	WORD_ADJECTIVE_NOUN("rzeczownik"),
-	
 	WORD_KANJI_READING("kanji czytanie"),
+	
+	WORD_EXPRESSION("Wyrażenia"),
+	
+	WORD_THAT_POINT("Wskazywanie punktu"),
+	
+	WORD_ASK("Słówka pytające"),
+	
+	WORD_ADVERB("Przysłówek"),
+	
+	WORD_DAY_NUMBER("Numer dnia"),
+	
+	WORD_LOCATION("Lokalizacja"),
+	
+	WORD_PEOPLE_NUMBER("Liczenie ludzi"),
+	
+	WORD_COUNT_DAY_NUMBER("Liczenie dni"),
 	
 	UNKNOWN("unknown");
 	
