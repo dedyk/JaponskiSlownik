@@ -90,7 +90,7 @@ WORD_NOUN,HIRAGANA,,大学,,だいがく,daigaku,uniwersytet,
 WORD_NOUN,HIRAGANA,,電話,,でんわ,denwa,telefon,
 WORD_NOUN,HIRAGANA,,友だち,,ともだち,tomodachi,przyjaciel,
 WORD_NOUN,HIRAGANA,,名前,,なまえ,namae,imię,
-UNKNOWN,HIRAGANA,,何,,"なん
+WORD_ASK,HIRAGANA,,何,,"なん
 なに","nan
 nani",co,
 WORD_NOUN,HIRAGANA,,日本,,にほん,nihon,Japonia,
@@ -402,7 +402,7 @@ UNKNOWN,HIRAGANA,,-,,だから,dakara,ponieważ,
 UNKNOWN,HIRAGANA,,-,,たくさん,takusan,dużo,
 UNKNOWN,HIRAGANA,,-,,すこし,sukoshi,mało,
 UNKNOWN,HIRAGANA,,-,,と,to,do łączenia,
-UNKNOWN,HIRAGANA,,-,,どうして,doushite,dlaczego,
+WORD_ASK,HIRAGANA,,-,,どうして,doushite,dlaczego,
 UNKNOWN,HIRAGANA,,一人で,,ひとりで,hitoride,sam,
 UNKNOWN,HIRAGANA,,-,,もしもし,moshimoshi,hallo,używane przy odbieraniu telefonu
 WORD_LOCATION,HIRAGANA,,右,,みぎ,migi,prawo,kierunek
@@ -544,7 +544,7 @@ WORD_VERB_IRREGULAR,HIRAGANA,を,持ってくる,,もってくる,wo motte kuru,
 UNKNOWN,HIRAGANA,,後で,,あとで,atode,później,
 UNKNOWN,HIRAGANA,,遅く,,おそく,osoku,zrobić coś później,
 UNKNOWN,HIRAGANA,,-,,から,kara,ponieważ,
-UNKNOWN,HIRAGANA,,結構です,,けっこうです,kekkou desu,"To jest w porządku
+WORD_EXPRESSION,HIRAGANA,,結構です,,けっこうです,kekkou desu,"To jest w porządku
 To nie będzie potrzebne",
 UNKNOWN,HIRAGANA,,-,,すぐ,sugu,w tej chwili,
 UNKNOWN,HIRAGANA,,本当,,ほんとう,hontou,naprawdę,
@@ -773,7 +773,7 @@ WORD_VERB_IRREGULAR,HIRAGANA,,掃除する,,そうじする,souji suru,czyścić
 WORD_VERB_IRREGULAR,HIRAGANA,,料理する,,りょうりする,ryouri suru,gotować,
 UNKNOWN,HIRAGANA,,-,,ううん,uun,nie,u...
 UNKNOWN,HIRAGANA,,-,,うん,un,tak,u...
-UNKNOWN,HIRAGANA,,乾杯,,かんぱい,kanpai,na zdrowie,toast
+WORD_EXPRESSION,HIRAGANA,,乾杯,,かんぱい,kanpai,na zdrowie,toast
 UNKNOWN,HIRAGANA,,残念,,ざんねん,zannen,"trudno
 szkoda",... desu ne
 UNKNOWN,HIRAGANA,,-,,まだ,mada,jeszcze nie,+ forma negatywna
@@ -788,7 +788,7 @@ WORD_ASK,HIRAGANA,,-,,どれも,doremo,żaden,który
 WORD_ASK,HIRAGANA,,-,,どこも,dokomo,nigdzie,miejsce
 UNKNOWN,HIRAGANA,,-,,について,nitsuite,o czymś,
 UNKNOWN,HIRAGANA,,-,,いつか,itsuka,któregoś dnia,czas
-UNKNOWN,HIRAGANA,,疲れている,,つかれている,tsukarete iru,być zmęczony,
+WORD_VERB_U,HIRAGANA,,疲れている,,つかれている,tsukarete iru,być zmęczony,
 UNKNOWN,HIRAGANA,,-,,まず,mazu,pierwszy,
 WORD_VERB_RU,HIRAGANA,,答える,,こたえる,kotaeru,odpowiadać,
 UNKNOWN,HIRAGANA,,次に,,つぎに,tsugini,drugi,
@@ -849,8 +849,8 @@ WORD_NUMBER,HIRAGANA,,九つ,,ここのつ,kokonotsu,dziewięć,"liczby, liczeni
 WORD_NUMBER,HIRAGANA,,十,,とお,too,dziesięć,"liczby, liczenie małych przedmiotów"
 UNKNOWN,HIRAGANA,,-,,そして,soshite,następnie,
 UNKNOWN,HIRAGANA,,-,,それから,sorekara,no i,
-UNKNOWN,HIRAGANA,,図書館,,としょかん,toshokan,biblioteka,w budynku
-UNKNOWN,HIRAGANA,,図書室,,としょしつ,toshoshitsu,biblioteka,w sali
+WORD_NOUN,HIRAGANA,,図書館,,としょかん,toshokan,biblioteka,w budynku
+WORD_NOUN,HIRAGANA,,図書室,,としょしつ,toshoshitsu,biblioteka,w sali
 WORD_ADJECTIVE_I,HIRAGANA,,黄色い,,きいろい,kiiroi,żółty,
 WORD_ADJECTIVE_I,HIRAGANA,,茶色い,,ちゃいろい,chairoi,brązowy,
 WORD_ADJECTIVE_NA,HIRAGANA,,緑,,みどり,midori,zielony,
@@ -912,10 +912,10 @@ UNKNOWN,HIRAGANA,,後,,ご,go,"w ... czasie, po ...",
 UNKNOWN,HIRAGANA,,-,,このごろ,konogoro,te dni,
 UNKNOWN,HIRAGANA,,週間,,しゅうかん,shuukan,tygodnie,przedział czasu
 UNKNOWN,HIRAGANA,,-,,で,de,czym,"partykuła, metoda transportu, czym"
-UNKNOWN,HIRAGANA,,-,,どうやって,douyatte,jak,
-UNKNOWN,HIRAGANA,,-,,どちら,dochira,które,bardziej uprzejme
-UNKNOWN,HIRAGANA,,-,,どっち,docchi,które,mniej uprzejme
-UNKNOWN,HIRAGANA,,-,,どのぐらい,donogurai,"jak wiele
+WORD_ASK,HIRAGANA,,-,,どうやって,douyatte,jak,
+WORD_ASK,HIRAGANA,,-,,どちら,dochira,które,bardziej uprzejme
+WORD_ASK,HIRAGANA,,-,,どっち,docchi,które,mniej uprzejme
+WORD_ASK,HIRAGANA,,-,,どのぐらい,donogurai,"jak wiele
 jak długo",
 UNKNOWN,HIRAGANA,,年,,ねん,nen,lata,
 WORD_ADVERB,HIRAGANA,,早く,,はやく,hayaku,"wcześnie
@@ -1099,41 +1099,41 @@ UNKNOWN,HIRAGANA,,始めて,,はじめて,hajimete,pierwszy raz,
 UNKNOWN,HIRAGANA,,-,,もうすぐ,mousugu,"bardzo szybko
 za parę chwil/dni",
 WORD_VERB_U,HIRAGANA,,転ぶ,,ころぶ,korobu,przewracać się,
-UNKNOWN,HIRAGANA,,灰,,はい,hai,popiół,
+WORD_NOUN,HIRAGANA,,灰,,はい,hai,popiół,
 UNKNOWN,HIRAGANA,,欲張り,,よくばり,yokubari,chciwość,
 WORD_VERB_RU,HIRAGANA,,枯れる,,かれる,kareru,uschnąć,
 UNKNOWN,HIRAGANA,,募集,,ぼしゅう,boshuu,rekrutacja,"~, szukanie ..."
 UNKNOWN,KATAKANA,,-,,アウトドア,autodoa,zajęcia na wolnym powietrzu,outdoor activities
 UNKNOWN,HIRAGANA,,彼女,,かのじょ,kanojo,narzeczona,
-UNKNOWN,HIRAGANA,,趣味,,しゅみ,shumi,hobby,
-UNKNOWN,KATAKANA,,-,,バンド,bando,zespół,muzyczny
-UNKNOWN,HIRAGANA,,文化,,ぶんか,bunka,kultura,
-UNKNOWN,HIRAGANA,,-,,つり,tsuri,wędkarstwo,
-UNKNOWN,HIRAGANA,,神社,,じんじゃ,jinja,świątynia,shintoistyczna
-UNKNOWN,HIRAGANA,,祭り,,まつり,matsuri,festiwal,
+WORD_NOUN,HIRAGANA,,趣味,,しゅみ,shumi,hobby,
+WORD_NOUN,KATAKANA,,-,,バンド,bando,zespół,muzyczny
+WORD_NOUN,HIRAGANA,,文化,,ぶんか,bunka,kultura,
+WORD_NOUN,HIRAGANA,,-,,つり,tsuri,wędkarstwo,
+WORD_NOUN,HIRAGANA,,神社,,じんじゃ,jinja,świątynia,shintoistyczna
+WORD_NOUN,HIRAGANA,,祭り,,まつり,matsuri,festiwal,
 UNKNOWN,HIRAGANA,お,返事,,へんじ,ohenji,odpowiedź,
 UNKNOWN,HIRAGANA,,方,,ほう,hou,kierunek,
 WORD_VERB_RU,HIRAGANA,,晴れる,,はれる,hareru,słoneczna pogoda,czasownik
-UNKNOWN,HIRAGANA,,雲,,くも,kumo,chmura,
+WORD_NOUN,HIRAGANA,,雲,,くも,kumo,chmura,
 WORD_VERB_U,HIRAGANA,,曇る,,くもる,kumoru,chmurzyć się,
-UNKNOWN,HIRAGANA,,風,,かぜ,kaze,wiatr,
+WORD_NOUN,HIRAGANA,,風,,かぜ,kaze,wiatr,
 WORD_VERB_U,HIRAGANA,,風が吹く,,かぜがふく,kaze ga fuku,wiatr wieje,
 WORD_ADJECTIVE_NA,HIRAGANA,,大事,,だいじ,daiji,ważny,
-UNKNOWN,HIRAGANA,,書類,,しょるい,shorui,dokument,
-UNKNOWN,HIRAGANA,,会談,,かいだん,kaidan,konferencja,
+WORD_NOUN,HIRAGANA,,書類,,しょるい,shorui,dokument,
+WORD_NOUN,HIRAGANA,,会談,,かいだん,kaidan,konferencja,
 WORD_ADJECTIVE_I,HIRAGANA,,重い,,おもい,omoi,"ciężki
 masywny",
-UNKNOWN,HIRAGANA,,桜,,さくら,sakura,kwiat wiśni,
+WORD_NOUN,HIRAGANA,,桜,,さくら,sakura,kwiat wiśni,
 UNKNOWN,HIRAGANA,,花見,,はなみ,hanami,oglądanie kwiatów,
-UNKNOWN,HIRAGANA,,神さま,,かみさま,kamisama,Bóg,
-UNKNOWN,HIRAGANA,,娘,,むすめ,musume,córka,
+WORD_NOUN,HIRAGANA,,神さま,,かみさま,kamisama,Bóg,
+WORD_NOUN,HIRAGANA,,娘,,むすめ,musume,córka,
 WORD_ADJECTIVE_NA,HIRAGANA,,-,,まじめ,majime,poważny,
 WORD_VERB_U,HIRAGANA,,はたを織る,,はたをおる,hata wo oru,tkać,
 UNKNOWN,HIRAGANA,,-,,ある,aru,pewnego,~
 UNKNOWN,HIRAGANA,,ある日,,あるにち,aru nichi,pewnego dnia,
-UNKNOWN,HIRAGANA,,大人,,おとな,otona,dorosły,
+WORD_NOUN,HIRAGANA,,大人,,おとな,otona,osoba dorosła,
 WORD_VERB_RU,HIRAGANA,,見つける,,みつける,mitsukeru,szukać,
-UNKNOWN,HIRAGANA,,天の川,,あまのがわ,ama no gawa,Droga Mleczna,
+WORD_NOUN,HIRAGANA,,天の川,,あまのがわ,ama no gawa,Droga Mleczna,
 UNKNOWN,HIRAGANA,,向こう,,むこう,mukou,po tamtej stronie,
 WORD_NOUN,HIRAGANA,,畑,,はたけ,hatake,pole,nieryżowe
 WORD_VERB_U,HIRAGANA,,怒る,,おこる,okoru,zezłościć się,
@@ -1146,8 +1146,8 @@ UNKNOWN,HIRAGANA,,願い,,ねがい,negai,życzenie,
 WORD_VERB_U,HIRAGANA,,-,,かなう,kanau,być zrealizowany,
 UNKNOWN,HIRAGANA,,私たち,,わたしたち,watashi tachi,my,
 UNKNOWN,HIRAGANA,,-,,など,nado,i tak dalej,
-UNKNOWN,HIRAGANA,,-,,たんざく,tanzaku,kawałek ładnego papieru,
-UNKNOWN,HIRAGANA,,人々,,ひとびと,hitobito,ludzie,
+WORD_NOUN,HIRAGANA,,-,,たんざく,tanzaku,kawałek ładnego papieru,
+WORD_NOUN,HIRAGANA,,人々,,ひとびと,hitobito,ludzie,
 UNKNOWN,HIRAGANA,,値段,,ねだん,nedan,cena,
 WORD_NOUN,KATAKANA,,-,,ウエイター,ueitaa,kelner,
 WORD_NOUN,HIRAGANA,,-,,おじいさん,ojiisan,"dziadek
@@ -1220,3 +1220,6 @@ WORD_NOUN,HIRAGANA,,睫毛,,まつげ,matsuge,rzęsy,
 WORD_NOUN,HIRAGANA,,眉毛,,まゆげ,mayuge,brwi,
 WORD_VERB_U,HIRAGANA,,試す,,ためす,tamesu,próbować,
 WORD_NOUN,KATAKANA,,-,,ズロチ,zurochi,zł,
+WORD_VERB_U,HIRAGANA,,咲く,,さく,saku,kwitnąć,
+WORD_VERB_U,HIRAGANA,,散る,,ちる,chiru,opadać,kwiaty
+WORD_NOUN,HIRAGANA,,-,,つぼみ,tsubomi,kwiaty jeszcze nie otwarte,
