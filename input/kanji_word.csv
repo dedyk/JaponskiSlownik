@@ -485,6 +485,60 @@ WORD_KANJI_READING,HIRAGANA,,色,,"いろ
 しょく","iro
 shiki
 shoku",kolor,
+WORD_KANJI_READING,HIRAGANA,,物,,"もの
+ぶつ","mono
+butsu",rzecz,
+WORD_KANJI_READING,HIRAGANA,,鳥,,"とり
+ちょう","tori
+chou",ptak,
+WORD_KANJI_READING,HIRAGANA,,料,,りょう,ryou,"element
+opłata",
+WORD_KANJI_READING,HIRAGANA,,理,,り,ri,powód,
+WORD_KANJI_READING,HIRAGANA,,特,,"とく
+とっ","toku
+to tsu",specjalnie,
+WORD_KANJI_READING,HIRAGANA,,安,,"やす
+あん","yasu
+an","tani
+spokój",
+WORD_KANJI_READING,HIRAGANA,,飯,,はん,han,"jedzenie
+kulka ryżowa",
+WORD_KANJI_READING,HIRAGANA,,肉,,にく,niku,mięso,
+WORD_KANJI_READING,HIRAGANA,,悪,,"わる
+あく","waru
+aku","źle
+zły",
+WORD_KANJI_READING,HIRAGANA,,体,,"からだ
+たん","karada
+tan",ciało,
+WORD_KANJI_READING,HIRAGANA,,空,,"くう
+そら
+あ
+から","kuu
+sora
+a
+kara","niebo
+pusty",
+WORD_KANJI_READING,HIRAGANA,,港,,"こう
+みなと","kou
+minato","port
+zatoka",
+WORD_KANJI_READING,HIRAGANA,,着,,"つ
+き
+ちゃく","tsu
+ki
+chaku","osiągnąć
+nosić",
+WORD_KANJI_READING,HIRAGANA,,同,,"おな
+どう","ona
+dou",taki sam,
+WORD_KANJI_READING,HIRAGANA,,海,,"うみ
+かい","umi
+kai",morze,
+WORD_KANJI_READING,HIRAGANA,,昼,,"ひる
+ちゅう","hiru
+chuu","południe
+za dnia",
 UNKNOWN,HIRAGANA,,一時,,いちじ,ichiji,1,godzina
 UNKNOWN,HIRAGANA,,一年生,,いちねんせい,ichinensei,student pierwszego roku,
 UNKNOWN,HIRAGANA,,一分,,いっぷん,ippun,jedna minuta,
@@ -906,7 +960,7 @@ WORD_VERB_U,HIRAGANA,,起こす,,おこす,okosu,obudzić,kogoś
 WORD_VERB_IRREGULAR,HIRAGANA,,起立する,,きりつする,kiritsu suru,stać się,
 UNKNOWN,HIRAGANA,,牛,,うし,ushi,krowa,
 UNKNOWN,HIRAGANA,,牛乳,,ぎゅうにゅう,gyuunyuu,mleko,
-UNKNOWN,HIRAGANA,,牛肉,,ぎゅうにく,gyuuniku,wołowina,
+WORD_NOUN,HIRAGANA,,牛肉,,ぎゅうにく,gyuuniku,wołowina,
 WORD_VERB_U,HIRAGANA,,使う,,つかう,tsukau,używać,
 UNKNOWN,HIRAGANA,,大使,,たいし,taishi,ambasador,
 UNKNOWN,HIRAGANA,,使用中,,しようちゅう,shiyouchuu,zajęte,korzystanie z czegoś
@@ -916,7 +970,7 @@ UNKNOWN,HIRAGANA,,労働,,ろうどう,roudou,praca,
 WORD_VERB_RU,HIRAGANA,,連れて帰る,,つれてかえる,tsurete kaeru,wracać do domu,
 UNKNOWN,HIRAGANA,,国連,,こくれん,kokuren,ONZ,
 UNKNOWN,HIRAGANA,,連休,,れんきゅう,renkyuu,powiązane święta,święta jedno po drugim
-WORD_VERB_RU,HIRAGANA,,別れる,,わかれる,wakareru,rozwód,
+WORD_VERB_RU,HIRAGANA,,別れる,,わかれる,wakareru,rozdzielać,
 UNKNOWN,HIRAGANA,,別に,,べつに,betsuni,nieszczególnie,
 WORD_ADJECTIVE_NA,HIRAGANA,,特別,,とくべつ,tokubetsu,specjalne,
 UNKNOWN,HIRAGANA,,差別,,さべつ,sabetsu,dyskryminacja,
@@ -938,3 +992,57 @@ UNKNOWN,HIRAGANA,,色,,いろ,iro,kolor,
 WORD_ADJECTIVE_NA,HIRAGANA,,色々,,いろいろ,iroiro,różne,
 UNKNOWN,HIRAGANA,,景色,,けしき,keshiki,sceneria,
 UNKNOWN,HIRAGANA,,特色,,とくしょく,tokushoku,charakterystyka,
+WORD_NOUN,HIRAGANA,,食べ物,,たべもの,tabemono,jedzenie,
+WORD_NOUN,HIRAGANA,,物,,もの,mono,rzecz,
+WORD_NOUN,HIRAGANA,,買い物,,かいもの,kaimono,zakupy,
+WORD_NOUN,HIRAGANA,,動物,,どうぶつ,toubutsu,zwierze,
+WORD_NOUN,HIRAGANA,,鳥,,とり,tori,ptak,
+WORD_NOUN,HIRAGANA,,焼き鳥,,やきとり,yakitori,grillowany kurczak,japońska potrawa
+WORD_NOUN,HIRAGANA,,白鳥,,はくちょう,hakuchou,łabędź,
+WORD_NOUN,HIRAGANA,,料理,,りょうり,ryouri,potrawa,
+WORD_NOUN,HIRAGANA,,料金,,りょうきん,ryoukin,opłata,
+WORD_NOUN,HIRAGANA,,授業料,,じゅぎょうりょう,jugyouryou,czesne,
+WORD_NOUN,HIRAGANA,,給料,,きゅうりょう,kyuuryou,pensja,
+WORD_NOUN,HIRAGANA,,料理,,りょうり,ryouri,potrawa,
+WORD_NOUN,HIRAGANA,,理由,,りゆう,riyuu,powód,
+UNKNOWN,HIRAGANA,,特に,,とくに,tokuni,szczególnie,
+WORD_ADJECTIVE_NA,HIRAGANA,,特別,,とくべつ,tokubetsu,specjalne,
+WORD_NOUN,HIRAGANA,,特急電車,,とっきゅうでんしゃ,tokkyuu densha,super express,pociąg
+WORD_ADJECTIVE_I,HIRAGANA,,安い,,やすい,yasui,tani,
+UNKNOWN,HIRAGANA,,安心,,あんしん,anshin,"spokój
+ukojenie",
+WORD_ADJECTIVE_NA,HIRAGANA,,不安,,ふあん,fuan,niespokojny,
+WORD_ADJECTIVE_NA,HIRAGANA,,安全,,あんぜん,anzen,bezpieczny,
+WORD_NOUN,HIRAGANA,,ご飯,,ごはん,gohan,jedzenie,
+WORD_NOUN,HIRAGANA,,朝ご飯,,あさごはん,asagohan,śniadanie,
+WORD_NOUN,HIRAGANA,,肉,,にく,niku,mięso,
+WORD_NOUN,HIRAGANA,,牛肉,,ぎゅうにく,gyuuniku,wołowina,
+WORD_NOUN,HIRAGANA,,肉屋,,にくや,nikuya,sklep mięsny,
+WORD_ADJECTIVE_I,HIRAGANA,,悪い,,わるい,warui,zły,
+UNKNOWN,HIRAGANA,,気分が悪い,,きぷんがわるい,kipun ga warui,czuć się źle,
+UNKNOWN,HIRAGANA,,最悪,,さいあく,saiaku,najgorszy,
+WORD_NOUN,HIRAGANA,,悪魔,,あくま,akuma,diabeł,
+WORD_NOUN,HIRAGANA,,体,,からだ,karada,ciało,
+UNKNOWN,HIRAGANA,,体重,,たいじゅう,taijuu,ciężar ciała,
+UNKNOWN,HIRAGANA,,体操,,たいそう,taisou,gimnastyka,
+WORD_NOUN,HIRAGANA,,空港,,くうこう,kuukou,lotnisko,
+WORD_NOUN,HIRAGANA,,空気,,くうき,kuuki,powietrze,
+WORD_NOUN,HIRAGANA,,空,,そら,sora,niebo,
+WORD_VERB_U,HIRAGANA,,空く,,あく,aku,być na wakacjach,
+WORD_NOUN,HIRAGANA,,空手,,からて,karate,karate,
+WORD_NOUN,HIRAGANA,,空港,,くうこう,kuukou,lotnisko,
+WORD_NOUN,HIRAGANA,,神戸港,,こうべこう,koube kou,Port w Kobe,
+WORD_NOUN,HIRAGANA,,港,,みなと,minato,port,
+WORD_VERB_U,HIRAGANA,,着く,,つく,tsuku,przybyć,
+WORD_VERB_U,HIRAGANA,,着る,,きる,kiru,nosić,powyżej paska
+WORD_NOUN,HIRAGANA,,着物,,きもの,kimono,kimono,
+UNKNOWN,HIRAGANA,,大阪着,,おおさかちゃく,oosaka chaku,przybyć do Osaki,
+UNKNOWN,HIRAGANA,,同じ,,おなじ,onaji,taki sam,
+UNKNOWN,HIRAGANA,,同時,,どうじ,douji,w tym samym czasie,
+WORD_NOUN,HIRAGANA,,海,,うみ,umi,morze,
+WORD_NOUN,HIRAGANA,,日本海,,にほんかい,nihon kai,Morze Japońskie,
+WORD_NOUN,HIRAGANA,,海外,,かいがい,kaigai,za oceanem,
+UNKNOWN,HIRAGANA,,昼,,ひる,hiru,"południe
+cały dzień",
+WORD_NOUN,HIRAGANA,,昼ご飯,,ひるごはん,hirugohan,obiad,
+WORD_NOUN,HIRAGANA,,昼食,,ちゅうしょく,chuushoku,obiad,w domu
