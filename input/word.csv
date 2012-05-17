@@ -375,7 +375,7 @@ WORD_NOUN,HIRAGANA,,今年,,ことし,kotoshi,aktualny rok,
 WORD_NOUN,HIRAGANA,,来年,,らいねん,rainen,przyszły rok,
 WORD_NOUN,HIRAGANA,,再来年,,さらいねん,sarainen,rok po przyszłym roku,
 WORD_NOUN,HIRAGANA,,-,,さっき,sakki,przed chwilą,
-WORD_NOUN,HIRAGANA,,時間,,じかん,jikan,godzina,okres
+UNKNOWN,HIRAGANA,,時間,,じかん,jikan,czas,
 WORD_NOUN,HIRAGANA,,一時間,,いちじかん,ichijikan,jedna godzina,
 WORD_NOUN,HIRAGANA,,時,,とき,toki,kiedy,wskazanie jakiegoś momentu w czasie
 WORD_NOUN,HIRAGANA,,月曜日,,げつようび,getsuyoubi,poniedziałek,księżyc
@@ -562,8 +562,10 @@ WORD_NOUN,KATAKANA,,-,,ゴミ,gomi,śmieci,
 WORD_VERB_RU,HIRAGANA,を,捨てる,,すてる,wo suteru,wyrzucać,
 WORD_NOUN,HIRAGANA,,-,,おばあさん,obaasan,babcia,
 WORD_NOUN,HIRAGANA,,-,,おじいさん,ojiisan,dziadek,
-WORD_NOUN,HIRAGANA,,-,,おばさん,obasan,ciocia,
-WORD_NOUN,HIRAGANA,,-,,おじさん,ojisan,wujek,
+WORD_NOUN,HIRAGANA,,-,,おばさん,obasan,"ciocia
+kobieta w średnim wieku",
+WORD_NOUN,HIRAGANA,,-,,おじさん,ojisan,"wujek
+mężczyzna w średnim wieku",
 WORD_ADJECTIVE_I,HIRAGANA,,頭がいい,,あたまがいい,atama ga ii,mądry,
 WORD_ADJECTIVE_I,HIRAGANA,,頭が悪い,,あたまがわるい,atama ga warui,głupi,
 WORD_EXPRESSION,HIRAGANA,,まっすぐ行く,,まっすぐいく,massugu iku,iść prosto,
@@ -1252,3 +1254,35 @@ UNKNOWN,HIRAGANA,,同じ,,おなじ,onaji,taki sam,
 WORD_VERB_RU,HIRAGANA,,考える,,かんがえる,kangaeru,myśleć o czymś,
 UNKNOWN,HIRAGANA,,昼,,ひる,hiru,"południe
 cały dzień",
+WORD_NOUN,HIRAGANA,,兄,,あに,ani,starszy brat,własna
+WORD_NOUN,HIRAGANA,,大家さん,,おおやさん,ooyasan,"gospodarz
+właściciel domu",
+WORD_NOUN,HIRAGANA,,お返し,,おかえし,okaeshi,„oddany” prezent,
+WORD_NOUN,HIRAGANA,,奥さん,,おくさん,okusan,żona,czyjajś
+WORD_NOUN,HIRAGANA,,-,,おじさん,ojisan,"wujek
+mężczyzna w średnim wieku",
+WORD_NOUN,HIRAGANA,,-,,おばさん,obasan,"ciocia
+kobieta w średnim wieku",
+WORD_NOUN,KATAKANA,,-,,クラブ,kurabu,klub,
+WORD_NOUN,KATAKANA,,-,,クリスマス,kurisumasu,święta bożego narodzenia,
+WORD_NOUN,HIRAGANA,,ご主人,,ごしゅじん,goshujin,mąż,spoza swojej rodziny
+WORD_NOUN,KATAKANA,,-,,コップ,koppu,kubek,
+WORD_NOUN,HIRAGANA,,皿,,さら,sara,talerz,
+UNKNOWN,HIRAGANA,,時間,,じかん,jikan,czas,
+WORD_NOUN,KATAKANA,,-,,チョコレート,chokoreeto,czekolada,
+WORD_NOUN,KATAKANA,,-,,メール,meeru,e-mail,
+WORD_NOUN,HIRAGANA,,-,,めいぐるみ,meigurumi,wypchany zwierze,np. pluszowy miś
+WORD_NOUN,KATAKANA,,-,,ネクタイ,nekutai,krawat,
+WORD_NOUN,HIRAGANA,,母,,はは,haha,matka,h...
+WORD_NOUN,KATAKANA,,-,,バレンタインデー,barentai dee,walentynki,
+WORD_NOUN,KATAKANA,,-,,ビデオカメラ,bideo kamera,kamera,
+WORD_NOUN,HIRAGANA,,夫婦,,ふうふ,fuufu,małżeństwo,
+WORD_NOUN,KATAKANA,,-,,ホワイトデー,howaito dee,biały dzień,miesiąc po walentynkach
+WORD_NOUN,KATAKANA,,-,,マフラー,mafuraa,szalik,zimowy
+WORD_NOUN,HIRAGANA,,漫画,,まんが,manga,komiks,
+WORD_NOUN,KATAKANA,,-,,マンション,manshon,blok,wielorodzinne mieszkania
+WORD_NOUN,HIRAGANA,,-,,みかん,mikan,mandarynka,
+WORD_NOUN,HIRAGANA,,指輪,,ゆびわ,yubiwa,pierścionek,
+WORD_NOUN,KATAKANA,,-,,ラジオ,rajio,radio,
+WORD_NOUN,HIRAGANA,,両親,,りょうしん,ryoushin,rodzice,
+WORD_NOUN,HIRAGANA,,履歴書,,りれきしょ,rirekisho,curriculum vitae,
