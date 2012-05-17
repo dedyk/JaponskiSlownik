@@ -241,11 +241,11 @@ WORD_NOUN,HIRAGANA,,家,,うち,uchi,dom,moje miejsce
 WORD_NOUN,HIRAGANA,,-,,えるえる,erueru,laboratorium językowe,ll
 WORD_NOUN,HIRAGANA,,学校,,がっこう,gakkou,szkoła,
 WORD_NOUN,HIRAGANA,,朝,,あさ,asa,rano,
-WORD_NOUN,HIRAGANA,,明日,,あした,ashita,jutro,
-WORD_NOUN,HIRAGANA,,-,,いつ,itsu,kiedy,
-WORD_NOUN,HIRAGANA,,今日,,きょう,kyou,dziś,
-WORD_NOUN,HIRAGANA,,-,,ごろ,goro,około,
-WORD_NOUN,HIRAGANA,,今晩,,こんばん,konban,dziś wieczorem,
+UNKNOWN,HIRAGANA,,明日,,あした,ashita,jutro,
+UNKNOWN,HIRAGANA,,-,,いつ,itsu,kiedy,
+UNKNOWN,HIRAGANA,,今日,,きょう,kyou,dziś,
+UNKNOWN,HIRAGANA,,-,,ごろ,goro,około,
+UNKNOWN,HIRAGANA,,今晩,,こんばん,konban,dziś wieczorem,
 WORD_NOUN,HIRAGANA,,週末,,しゅうまつ,shuumatsu,weekend,
 WORD_NOUN,HIRAGANA,,土曜日,,どようび,doyoubi,sobota,ziemia
 WORD_NOUN,HIRAGANA,,日曜日,,にちようび,nichiyoubi,niedziela,słońce
@@ -1130,7 +1130,7 @@ WORD_NOUN,HIRAGANA,,娘,,むすめ,musume,córka,
 WORD_ADJECTIVE_NA,HIRAGANA,,-,,まじめ,majime,poważny,
 WORD_VERB_U,HIRAGANA,,はたを織る,,はたをおる,hata wo oru,tkać,
 UNKNOWN,HIRAGANA,,-,,ある,aru,pewnego,~
-UNKNOWN,HIRAGANA,,ある日,,あるにち,aru nichi,pewnego dnia,
+UNKNOWN,HIRAGANA,,ある日,,あるひ,aru hi,pewnego dnia,
 WORD_NOUN,HIRAGANA,,大人,,おとな,otona,osoba dorosła,
 WORD_VERB_RU,HIRAGANA,,見つける,,みつける,mitsukeru,szukać,
 WORD_NOUN,HIRAGANA,,天の川,,あまのがわ,ama no gawa,Droga Mleczna,
@@ -1176,7 +1176,7 @@ WORD_NOUN,HIRAGANA,,店,,みせ,mise,sklep,
 WORD_NOUN,HIRAGANA,,-,,やくざ,yakuza,yakuza,
 WORD_NOUN,HIRAGANA,,約束,,やくそく,yakusoku,"obietnica
 termin",
-WORD_NOUN,KATAKANA,,-,,レポート,repooto,papier,
+WORD_NOUN,KATAKANA,,-,,レポート,repooto,praca semestralna,
 WORD_NOUN,HIRAGANA,,私,,わたくし,watakushi,ja,formalnie
 WORD_ADJECTIVE_I,HIRAGANA,,-,,うれしい,ureshii,zadowolony,
 WORD_ADJECTIVE_I,HIRAGANA,,悲しい,,かなしい,kanashii,smutny,
@@ -1223,3 +1223,8 @@ WORD_NOUN,KATAKANA,,-,,ズロチ,zurochi,zł,
 WORD_VERB_U,HIRAGANA,,咲く,,さく,saku,kwitnąć,
 WORD_VERB_U,HIRAGANA,,散る,,ちる,chiru,opadać,kwiaty
 WORD_NOUN,HIRAGANA,,-,,つぼみ,tsubomi,kwiaty jeszcze nie otwarte,
+UNKNOWN,HIRAGANA,,夕方,,ゆうがた,yuugata,wieczorem,
+WORD_VERB_U,HIRAGANA,,降りる,,おりる,oriru,wysiadać,
+WORD_VERB_RU,HIRAGANA,,倒れる,,たおれる,taoreru,spadać,
+WORD_NOUN,HIRAGANA,,像,,ぞう,zou,pomnik,
+WORD_NOUN,HIRAGANA,,数学,,すうがく,suugaku,matematyka,
