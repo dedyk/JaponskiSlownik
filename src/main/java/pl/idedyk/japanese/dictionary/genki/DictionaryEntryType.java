@@ -42,6 +42,8 @@ public enum DictionaryEntryType {
 	
 	WORD_COUNT_DAY_NUMBER("Liczenie dni"),
 	
+	WORD_COUNTERS("Klasyfikatory"),
+	
 	UNKNOWN("unknown");
 	
 	private String name;
