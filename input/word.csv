@@ -1234,14 +1234,14 @@ WORD_NOUN,HIRAGANA,,経験,,けいけん,keiken,doświadczenie,
 UNKNOWN,HIRAGANA,,特に,,とくに,tokuni,szczególnie,
 WORD_ADJECTIVE_I,HIRAGANA,,-,,めずらしい,mezurashii,rzadko,
 UNKNOWN,HIRAGANA,,-,,なんでも,nandemo,wszystko,
-WORD_VERB_IRREGULAR,HIRAGANA,,-,,ニヤニヤする,niyaniya suru,szczerzyć się,
+WORD_VERB_IRREGULAR,KATAKANA,,-,,ニヤニヤする,niyaniya suru,szczerzyć się,
 WORD_ADJECTIVE_NA,HIRAGANA,,不安,,ふあん,fuan,niespokojny,
-UNKNOWN,HIRAGANA,,気分が悪い,,ぷんがわるい,kipun ga warui,czuć się źle,
+UNKNOWN,HIRAGANA,,気分が悪い,,きぷんがわるい,kipun ga warui,czuć się źle,
 WORD_NOUN,HIRAGANA,,体,,からだ,karada,ciało,
 UNKNOWN,HIRAGANA,,体にいい,,からだにいい,karada ni ii,"zdrowe
 dobre dla ciała",
 UNKNOWN,HIRAGANA,,一生に一度,,一生に一度,isshou ni ichido,raz w życiu,
-UNKNOWN,HIRAGANA,,-,,やっぽり,yappori,ostatecznie,
+UNKNOWN,HIRAGANA,,-,,やっぱり,yappari,ostatecznie,
 UNKNOWN,HIRAGANA,,満員電車,,まんいんでんしゃ,man'in densha,pociąg pełen ludzi,
 UNKNOWN,HIRAGANA,,第一印象,,だいいちいんしょう,dai ichinshou,pierwsze wrażenie,
 WORD_VERB_U,HIRAGANA,,込む,,こむ,komu,jest tłok,
@@ -1271,7 +1271,7 @@ WORD_NOUN,HIRAGANA,,皿,,さら,sara,talerz,
 UNKNOWN,HIRAGANA,,時間,,じかん,jikan,czas,
 WORD_NOUN,KATAKANA,,-,,チョコレート,chokoreeto,czekolada,
 WORD_NOUN,KATAKANA,,-,,メール,meeru,e-mail,
-WORD_NOUN,HIRAGANA,,-,,めいぐるみ,meigurumi,wypchany zwierze,np. pluszowy miś
+WORD_NOUN,HIRAGANA,,-,,めいぐるみ,meigurumi,wypchane zwierze,np. pluszowy miś
 WORD_NOUN,KATAKANA,,-,,ネクタイ,nekutai,krawat,
 WORD_NOUN,HIRAGANA,,母,,はは,haha,matka,h...
 WORD_NOUN,KATAKANA,,-,,バレンタインデー,barentai dee,walentynki,
@@ -1286,3 +1286,28 @@ WORD_NOUN,HIRAGANA,,指輪,,ゆびわ,yubiwa,pierścionek,
 WORD_NOUN,KATAKANA,,-,,ラジオ,rajio,radio,
 WORD_NOUN,HIRAGANA,,両親,,りょうしん,ryoushin,rodzice,
 WORD_NOUN,HIRAGANA,,履歴書,,りれきしょ,rirekisho,curriculum vitae,
+WORD_ADJECTIVE_I,HIRAGANA,,欲しい,,ほしい,hoshii,chcieć,rzecz ga
+WORD_ADJECTIVE_NA,HIRAGANA,,-,,けち,kechi,skąpy,
+WORD_VERB_U,HIRAGANA,,送る,,おくる,okuru,wysyłać,
+WORD_VERB_U,HIRAGANA,,似合う,,にあう,niau,pasować,rzecz ga
+WORD_VERB_U,HIRAGANA,,-,,もらう,morau,otrzymać,
+WORD_VERB_RU,HIRAGANA,,-,,あきらめる,akirameru,poddać się,
+WORD_VERB_RU,HIRAGANA,,-,,あげる,ageru,dać,"komuś, rzecz wo osoba ni"
+WORD_VERB_RU,HIRAGANA,,-,,くれる,kureru,dać,"mnie, rzecz wo osoba ni"
+WORD_VERB_RU,HIRAGANA,が,-,,できる,ga dekiru,przyjmować,kogoś
+WORD_VERB_IRREGULAR,HIRAGANA,,相談する,,そうだんする,soudan suru,konsultować,osoba ni
+WORD_VERB_IRREGULAR,KATAKANA,,-,,プロポーズする,puropoozu suru,oświadczyć się,
+UNKNOWN,HIRAGANA,,同じ,,おなじ,onaji,taki sam,
+WORD_NOUN,HIRAGANA,,去年,,きょねん,kyonen,poprzedni rok,
+WORD_EXPRESSION,HIRAGANA,,-,,くん,kun,pan / pani,"~, w luźnej rozmowie"
+WORD_EXPRESSION,HIRAGANA,,-,,こんな,konna,"jak tak
+takiego rodzaju",
+WORD_EXPRESSION,HIRAGANA,,-,,たち,tachi,[tworzenie liczby mnogiej],
+WORD_EXPRESSION,HIRAGANA,,私たち,,わたしたち,watashitachi,my,
+WORD_EXPRESSION,HIRAGANA,,-,,ちょうど,choudo,dokładnie,
+WORD_EXPRESSION,HIRAGANA,,-,,よく,yoku,dobrze,
+WORD_COUNTERS,HIRAGANA,,個,,こ,ko,[liczenie małych przedmiotów],~
+WORD_COUNTERS,HIRAGANA,,冊,,さつ,satsu,[liczenie wolumenów],~
+WORD_COUNTERS,HIRAGANA,,台,,だい,dai,[liczenie urządzeń],~
+WORD_COUNTERS,HIRAGANA,,匹,,ひき,hiki,[liczenie małych zwierząt],~
+WORD_COUNTERS,HIRAGANA,,本,,ほん,hon,[liczenie długich przedmiotów],~
