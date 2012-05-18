@@ -539,6 +539,71 @@ WORD_KANJI_READING,HIRAGANA,,昼,,"ひる
 ちゅう","hiru
 chuu","południe
 za dnia",
+WORD_KANJI_READING,HIRAGANA,,彼,,"かれ
+かの","kare
+kano",on,
+WORD_KANJI_READING,HIRAGANA,,代,,"だい
+か","dai
+ka","wiek
+wymieniać",
+WORD_KANJI_READING,HIRAGANA,,留,,"りゅう
+る
+と","ryuu
+ru
+to","ryuu
+ru
+to",
+WORD_KANJI_READING,HIRAGANA,,族,,ぞく,zoku,"rodzina
+klan",
+WORD_KANJI_READING,HIRAGANA,,親,,"おや
+しん
+した","oya
+shin
+shita","rodzice
+poufałość",
+WORD_KANJI_READING,HIRAGANA,,切,,"せつ
+き
+きっ","setsu
+ki
+ki tsu",ciąć,
+WORD_KANJI_READING,HIRAGANA,,英,,えい,ei,"Anglia
+doskonały",
+WORD_KANJI_READING,HIRAGANA,,店,,"みせ
+てん","mise
+ten",sklep,
+WORD_KANJI_READING,HIRAGANA,,去,,"きょ
+こ
+さ","kyo
+ko
+sa","przyszłość
+odchodzić",
+WORD_KANJI_READING,HIRAGANA,,急,,"きゅう
+いそ","kyuu
+iso","spieszyć się
+krytyczny",
+WORD_KANJI_READING,HIRAGANA,,乗,,"の
+じょう","no
+jou",jeździć,
+WORD_KANJI_READING,HIRAGANA,,当,,"とう
+あ","tou
+a",uderzać,
+WORD_KANJI_READING,HIRAGANA,,音,,"おん
+おと
+ね","on
+oto
+ne",dźwięk,
+WORD_KANJI_READING,HIRAGANA,,楽,,"がく
+たの
+がっ
+らく","gaku
+tano
+ga tsu
+raku","cieszyć się
+przyjemność",
+WORD_KANJI_READING,HIRAGANA,,医,,い,i,doktor,
+WORD_KANJI_READING,HIRAGANA,,者,,"しゃ
+もの","sha
+mono",osoba,
 UNKNOWN,HIRAGANA,,一時,,いちじ,ichiji,1,godzina
 UNKNOWN,HIRAGANA,,一年生,,いちねんせい,ichinensei,student pierwszego roku,
 UNKNOWN,HIRAGANA,,一分,,いっぷん,ippun,jedna minuta,
@@ -758,7 +823,7 @@ UNKNOWN,HIRAGANA,,入口,,いりぐち,iriguchi,wejście,
 UNKNOWN,HIRAGANA,,入れる,,いれる,ireru,wkładać,
 UNKNOWN,HIRAGANA,,輸入,,ゆにゅう,yunyuu,import,
 UNKNOWN,HIRAGANA,,会社員,,かいしゃいん,kaishain,pracownik biurowy,
-UNKNOWN,HIRAGANA,,店員,,てんいん,ten'in,sprzedawca,
+WORD_NOUN,HIRAGANA,,店員,,てんいん,ten'in,sprzedawca,
 WORD_ADJECTIVE_I,HIRAGANA,,新しい,,あたらしい,atarashii,nowy,
 UNKNOWN,HIRAGANA,,新聞,,しんぶん,shinbun,gazeta,
 UNKNOWN,HIRAGANA,,新幹線,,しんかんせん,shinkansen,shinkansen,szybka kolej
@@ -1046,3 +1111,68 @@ UNKNOWN,HIRAGANA,,昼,,ひる,hiru,"południe
 cały dzień",
 WORD_NOUN,HIRAGANA,,昼ご飯,,ひるごはん,hirugohan,obiad,
 WORD_NOUN,HIRAGANA,,昼食,,ちゅうしょく,chuushoku,obiad,w domu
+WORD_NOUN,HIRAGANA,,彼,,かれ,kare,"on
+narzeczony",
+WORD_NOUN,HIRAGANA,,彼女,,かのじょ,kanojo,"ona
+narzeczona",
+WORD_NOUN,HIRAGANA,,時代,,じだい,jidai,"wiek
+era",
+WORD_NOUN,HIRAGANA,,電気代,,でんきだい,denki dai,opłata za prąd,
+UNKNOWN,HIRAGANA,,六十年代,,ろくじゅうねんだい,rokujuunen dai,lata 60,
+UNKNOWN,HIRAGANA,,十代,,じゅうだい,juu dai,mieć naście lat,
+UNKNOWN,HIRAGANA,,代わりに,,かわりに,kawarini,zamiast,
+WORD_NOUN,HIRAGANA,,留学生,,りゅうがくせい,ryuugakusei,uczeń międzynarodowy,
+UNKNOWN,HIRAGANA,,留守,,るす,rusu,nieobecny w domu,
+WORD_NOUN,HIRAGANA,,書き留め,,かきとめ,kakitome,list polecony,
+WORD_NOUN,HIRAGANA,,家族,,かぞく,kazoku,rodzina,
+WORD_NOUN,HIRAGANA,,王族,,おうぞく,ouzoku,członek rodziny królewskiej,
+UNKNOWN,HIRAGANA,,民族,,みんぞく,minzoku,genealogia,
+WORD_NOUN,HIRAGANA,,父親,,ちちおや,chichioya,ojciec,
+WORD_ADJECTIVE_NA,HIRAGANA,,親切,,しんせつ,shinsetsu,miły,
+WORD_NOUN,HIRAGANA,,親友,,しんゆう,shin'yuu,najlepszy przyjaciel,
+WORD_NOUN,HIRAGANA,,両親,,りょうしん,ryoushin,rodzice,
+WORD_ADJECTIVE_I,HIRAGANA,,親しい,,したしい,shitashii,poufały,
+WORD_ADJECTIVE_NA,HIRAGANA,,親切,,しんせつ,shinsetsu,miły,
+WORD_VERB_U,HIRAGANA,,切る,,きる,kiru,ciąć,
+WORD_ADJECTIVE_NA,HIRAGANA,,大切な,,たいせつ,taisetsu,ważny,
+WORD_NOUN,HIRAGANA,,切手,,きって,kitte,znaczek,
+WORD_NOUN,HIRAGANA,,英語,,えいご,eigo,język angielski,
+WORD_NOUN,HIRAGANA,,英国,,えいこく,eikoku,Anglia,
+UNKNOWN,HIRAGANA,,英会話,,えいかいわ,eikaiwa,angielska rozmowa,
+WORD_NOUN,HIRAGANA,,英雄,,えいゆう,eiyuu,bohater,
+WORD_NOUN,HIRAGANA,,店,,みせ,mise,sklep,
+WORD_NOUN,HIRAGANA,,店員,,てんいん,ten'in,sprzedawca,
+WORD_NOUN,HIRAGANA,,売店,,ばいてん,baiten,kiosk,
+WORD_NOUN,HIRAGANA,,書店,,しょてん,shoten,księgarnia,
+WORD_NOUN,HIRAGANA,,去年,,きょねん,kyonen,zeszły rok,
+UNKNOWN,HIRAGANA,,過去,,かこ,kako,przeszłość,
+UNKNOWN,HIRAGANA,,未来,,みらい,mirai,przyszłość,
+WORD_VERB_U,HIRAGANA,,去る,,さる,saru,odchodzić,
+UNKNOWN,HIRAGANA,,急に,,きゅうに,kyuuni,nagle,
+WORD_VERB_U,HIRAGANA,,急ぐ,,いそぐ,isogu,spieszyć się,
+WORD_NOUN,HIRAGANA,,急行,,きゅうこう,kyuukou,pociąg ekspresowy,
+WORD_NOUN,HIRAGANA,,特急,,とっきゅう,tokkyuu,super express,pociąg
+WORD_VERB_U,HIRAGANA,,乗る,,のる,noru,jechać,czymś
+WORD_NOUN,HIRAGANA,,乗り物,,のりもの,norimono,pojazd,
+UNKNOWN,HIRAGANA,,乗車,,じょうしゃ,jousha,podróżować samochodem,
+UNKNOWN,HIRAGANA,,乗馬,,じょうば,jouba,jeździć konno,
+UNKNOWN,HIRAGANA,,本当に,,ほんとうに,hontou ni,na prawdę,
+UNKNOWN,HIRAGANA,,当時,,とうじ,touji,w tym czasie,
+WORD_VERB_U,HIRAGANA,,当たる,,あたる,ataru,trafić,
+WORD_VERB_U,HIRAGANA,,当っている,,とうっている,toutte iru,dobrze idzie,
+WORD_NOUN,HIRAGANA,,音楽,,おんがく,ongaku,muzyka,
+UNKNOWN,HIRAGANA,,発音,,はつおん,hatsuon,wymowa,
+WORD_NOUN,HIRAGANA,,音,,おと,oto,dźwięk,
+UNKNOWN,HIRAGANA,,本音,,ほんね,honne,"prawdziwe myślenie
+emocje",
+WORD_NOUN,HIRAGANA,,音楽,,おんがく,ongaku,muzyka,
+WORD_ADJECTIVE_I,HIRAGANA,,楽しい,,たのしい,tanoshii,zabawny,
+WORD_NOUN,HIRAGANA,,楽器,,がっき,gakki,instrument muzyczny,
+WORD_ADJECTIVE_NA,HIRAGANA,,楽な,,らく,raku,komfortowy,
+WORD_NOUN,HIRAGANA,,医者,,いしゃ,isha,lekarz,
+UNKNOWN,HIRAGANA,,医学,,いがく,igaku,medycyna,
+WORD_NOUN,HIRAGANA,,医院,,いいん,iin,klinika,
+WORD_NOUN,HIRAGANA,,医者,,いしゃ,isha,lekarz,
+WORD_NOUN,HIRAGANA,,学者,,がくしゃ,gakusha,naukowiec,
+WORD_NOUN,HIRAGANA,,読者,,どくしゃ,dokusha,czytelnik,
+WORD_NOUN,HIRAGANA,,若者,,わかもの,wakamono,młody człowiek,
