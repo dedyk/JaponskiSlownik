@@ -38,6 +38,8 @@ public enum DictionaryEntryType {
 	
 	WORD_DAY_WEEK("Dzień tygodnia"),
 	
+	WORD_MONTH("Miesiąc"),
+	
 	WORD_LOCATION("Lokalizacja"),
 	
 	WORD_PEOPLE_NUMBER("Liczenie ludzi"),
