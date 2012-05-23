@@ -604,80 +604,80 @@ WORD_KANJI_READING,HIRAGANA,,医,,い,i,doktor,
 WORD_KANJI_READING,HIRAGANA,,者,,"しゃ
 もの","sha
 mono",osoba,
-UNKNOWN,HIRAGANA,,一時,,いちじ,ichiji,1,godzina
+WORD_TIME,HIRAGANA,,一時,,いちじ,ichiji,jeden,godzina
 UNKNOWN,HIRAGANA,,一年生,,いちねんせい,ichinensei,student pierwszego roku,
-UNKNOWN,HIRAGANA,,一分,,いっぷん,ippun,jedna minuta,
+WORD_TIME,HIRAGANA,,一分,,いっぷん,ippun,jedna minuta,
 UNKNOWN,HIRAGANA,,一つ,,ひとつ,hitotsu,jeden,"liczby, liczenie małych przedmiotów"
-UNKNOWN,HIRAGANA,,二時,,にじ,niji,2,godzina
+WORD_TIME,HIRAGANA,,二時,,にじ,niji,dwa,godzina
 UNKNOWN,HIRAGANA,,二年生,,にねんせい,ninensei,student drugiego roku,
 UNKNOWN,HIRAGANA,,二つ,,ふたつ,futatsu,dwa,"liczby, liczenie małych przedmiotów"
 UNKNOWN,HIRAGANA,,二つ日間,,ふつかかん,futsukakan,dwa dni,
-UNKNOWN,HIRAGANA,,三時,,さんじ,sanji,3,godzina
+WORD_TIME,HIRAGANA,,三時,,さんじ,sanji,trzy,godzina
 UNKNOWN,HIRAGANA,,三年生,,さんねんせい,sannensei,student trzeciego roku,
 UNKNOWN,HIRAGANA,,三つ,,みっつ,mittsu,trzy,"liczby, liczenie małych przedmiotów"
-UNKNOWN,HIRAGANA,,四時,,よじ,yoji,4,godzina
+WORD_TIME,HIRAGANA,,四時,,よじ,yoji,cztery,godzina
 UNKNOWN,HIRAGANA,,四年生,,よねんせい,yonensei,student czwartego roku,
 UNKNOWN,HIRAGANA,,四つ,,よっつ,yottsu,cztery,"liczby, liczenie małych przedmiotów"
 UNKNOWN,HIRAGANA,,四月,,しがつ,shigatsu,kwiecień,
-UNKNOWN,HIRAGANA,,五時,,ごじ,goji,5,godzina
+WORD_TIME,HIRAGANA,,五時,,ごじ,goji,pięć,godzina
 UNKNOWN,HIRAGANA,,五つ,,いつつ,itsutsu,pięć,"liczby, liczenie małych przedmiotów"
-UNKNOWN,HIRAGANA,,六時,,ろくじ,rokuji,6,godzina
-UNKNOWN,HIRAGANA,,六百,,ろっぴゃく,roppyaku,600,
-UNKNOWN,HIRAGANA,,六分,,ろっぷん,roppun,sześć minut,
+WORD_TIME,HIRAGANA,,六時,,ろくじ,rokuji,sześć,godzina
+WORD_NUMBER,HIRAGANA,,六百,,ろっぴゃく,roppyaku,sześćset,
+WORD_TIME,HIRAGANA,,六分,,ろっぷん,roppun,sześć minut,
 UNKNOWN,HIRAGANA,,六つ,,むっつ,muttsu,sześć,"liczby, liczenie małych przedmiotów"
-UNKNOWN,HIRAGANA,,七時,,しちじ,shichiji,7,godzina
+WORD_TIME,HIRAGANA,,七時,,しちじ,shichiji,siedem,godzina
 UNKNOWN,HIRAGANA,,七つ,,ななつ,nanatsu,siedem,"liczby, liczenie małych przedmiotów"
-UNKNOWN,HIRAGANA,,八時,,はちじ,hachiji,8,godzina
-UNKNOWN,HIRAGANA,,八百,,はっぴゃく,happyaku,800,
-UNKNOWN,HIRAGANA,,八歳,,はっさい,hassai,8,wiek
+WORD_TIME,HIRAGANA,,八時,,はちじ,hachiji,osiem,godzina
+WORD_NUMBER,HIRAGANA,,八百,,はっぴゃく,happyaku,osiemset,
+WORD_AGE,HIRAGANA,,八歳,,はっさい,hassai,osiem,wiek
 UNKNOWN,HIRAGANA,,八つ,,やっつ,yattsu,osiem,"liczby, liczenie małych przedmiotów"
-UNKNOWN,HIRAGANA,,九時,,くじ,kuji,9,godzina
-UNKNOWN,HIRAGANA,,九歳,,きゅうさい,kyuusai,9,wiek
+WORD_TIME,HIRAGANA,,九時,,くじ,kuji,dziewięć,godzina
+WORD_AGE,HIRAGANA,,九歳,,きゅうさい,kyuusai,dziewięć,wiek
 UNKNOWN,HIRAGANA,,九つ,,ここのつ,kokonotsu,dziewięć,"liczby, liczenie małych przedmiotów"
-UNKNOWN,HIRAGANA,,十時,,じゅうじ,juuji,10,godzina
-UNKNOWN,HIRAGANA,,十歳,,じゅっさい,jussai,10,wiek
+WORD_TIME,HIRAGANA,,十時,,じゅうじ,juuji,dziesięć,godzina
+WORD_AGE,HIRAGANA,,十歳,,じゅっさい,jussai,dziesięć,wiek
 UNKNOWN,HIRAGANA,,十,,とお,too,dziesięć,"liczby, liczenie małych przedmiotów"
-UNKNOWN,HIRAGANA,,三百,,さんびゃく,sanbyaku,300,
-UNKNOWN,HIRAGANA,,六百,,ろっぴゃく,roppyaku,600,
-UNKNOWN,HIRAGANA,,八百,,はっぴゃく,happyaku,800,
-UNKNOWN,HIRAGANA,,三千,,さんぜん,sanzen,3000,
-UNKNOWN,HIRAGANA,,八千,,はっせん,hassen,8000,
-UNKNOWN,HIRAGANA,,一万,,いちまん,ichiman,10000,
-UNKNOWN,HIRAGANA,,十万,,じゅうまん,juuman,100000,
-UNKNOWN,HIRAGANA,,百万,,ひゃくまん,hyakuman,1000000,
-UNKNOWN,HIRAGANA,,百円,,ひゃくえん,hyakuen,100,
-UNKNOWN,HIRAGANA,,一時,,いちじ,ichiji,1,godzina
+WORD_NUMBER,HIRAGANA,,三百,,さんびゃく,sanbyaku,trzysta,
+WORD_NUMBER,HIRAGANA,,六百,,ろっぴゃく,roppyaku,sześćset,
+WORD_NUMBER,HIRAGANA,,八百,,はっぴゃく,happyaku,osiemset,
+WORD_NUMBER,HIRAGANA,,三千,,さんぜん,sanzen,trzy tysiące,
+WORD_NUMBER,HIRAGANA,,八千,,はっせん,hassen,osiem tysięcy,
+WORD_NUMBER,HIRAGANA,,一万,,いちまん,ichiman,dziesięć tysięcy,
+WORD_NUMBER,HIRAGANA,,十万,,じゅうまん,juuman,sto tysięcy,
+WORD_NUMBER,HIRAGANA,,百万,,ひゃくまん,hyakuman,milion,
+WORD_NUMBER,HIRAGANA,,百円,,ひゃくえん,hyakuen,sto,
+WORD_TIME,HIRAGANA,,一時,,いちじ,ichiji,pierwsza,godzina
 UNKNOWN,HIRAGANA,,子供の時,,こどものとき,kodomo no toki,w czasach dziecinstwa,
 UNKNOWN,HIRAGANA,,時々,,ときどき,tokidoki,czasami,
-UNKNOWN,HIRAGANA,,時計,,とけい,tokei,zegarek,
-UNKNOWN,HIRAGANA,,日本,,にほん,nihon,Japonia,
-UNKNOWN,HIRAGANA,,日曜日,,にちようび,nichiyoubi,niedziela,słońce
+WORD_NOUN,HIRAGANA,,時計,,とけい,tokei,zegarek,
+WORD_NOUN,HIRAGANA,,日本,,にほん,nihon,Japonia,
+WORD_NOUN,HIRAGANA,,日曜日,,にちようび,nichiyoubi,niedziela,słońce
 UNKNOWN,HIRAGANA,,毎日,,まいにち,mainichi,każdego dnia,
 UNKNOWN,HIRAGANA,,母の日,,ははのひ,haha no hi,dzień matki,
 UNKNOWN,HIRAGANA,,日記,,にっき,nikki,pamiętnik,
-UNKNOWN,HIRAGANA,,三日,,みっか,mikka,3,dzień miesiąca
-UNKNOWN,HIRAGANA,,本,,ほん,hon,książka,
-UNKNOWN,HIRAGANA,,日本,,にほん,nihon,Japonia,
+UNKNOWN,HIRAGANA,,三日,,みっか,mikka,trzeci,dzień miesiąca
+WORD_NOUN,HIRAGANA,,本,,ほん,hon,książka,
+WORD_NOUN,HIRAGANA,,日本,,にほん,nihon,Japonia,
 UNKNOWN,HIRAGANA,,日本語,,にほんご,nihongo,język japoński,
 UNKNOWN,HIRAGANA,,山本さん,,やまもとさん,Yamamoto san,Pan Yamamoto,
-UNKNOWN,HIRAGANA,,日本人,,にほんじん,nihonjin,Japonczyk,
+WORD_NOUN,HIRAGANA,,日本人,,にほんじん,nihonjin,Japonczyk,
 UNKNOWN,HIRAGANA,,一人で,,ひとりで,hitoride,sam,
 UNKNOWN,HIRAGANA,,この人,,このひと,kono hito,ten człowiek,
 UNKNOWN,HIRAGANA,,三人,,さんにん,sannin,troje ludzi,
-UNKNOWN,HIRAGANA,,月曜日,,げつようび,getsuyoubi,poniedziałek,księżyc
+WORD_DAY_WEEK,HIRAGANA,,月曜日,,げつようび,getsuyoubi,poniedziałek,księżyc
 UNKNOWN,HIRAGANA,,一月,,いちがつ,ichigatsu,styczeń,
 UNKNOWN,HIRAGANA,,月,,つき,tsuki,księżyc,
-UNKNOWN,HIRAGANA,,火曜日,,かようび,kayoubi,wtorek,ogień
+WORD_DAY_WEEK,HIRAGANA,,火曜日,,かようび,kayoubi,wtorek,ogień
 UNKNOWN,HIRAGANA,,火,,ひ,hi,ogień,
-UNKNOWN,HIRAGANA,,水曜日,,すいようび,suiyoubi,środa,woda
+WORD_DAY_WEEK,HIRAGANA,,水曜日,,すいようび,suiyoubi,środa,woda
 UNKNOWN,HIRAGANA,,水,,みず,mizu,woda,
-UNKNOWN,HIRAGANA,,木曜日,,もくようび,mokuyoubi,czwartek,drzewo
+WORD_DAY_WEEK,HIRAGANA,,木曜日,,もくようび,mokuyoubi,czwartek,drzewo
 UNKNOWN,HIRAGANA,,木,,き,ki,drzewo,
-UNKNOWN,HIRAGANA,,金曜日,,きにょうび,kinyoubi,piątek,"pieniądze, złoto"
+WORD_DAY_WEEK,HIRAGANA,,金曜日,,きにょうび,kinyoubi,piątek,"pieniądze, złoto"
 UNKNOWN,HIRAGANA,,お金,,おかね,okane,pieniądze,
-UNKNOWN,HIRAGANA,,土曜日,,どようび,doyoubi,sobota,ziemia
+WORD_DAY_WEEK,HIRAGANA,,土曜日,,どようび,doyoubi,sobota,ziemia
 UNKNOWN,HIRAGANA,,土,,つち,tsuchi,ziemia,
-UNKNOWN,HIRAGANA,,日曜日,,にちようび,nichiyoubi,niedziela,słońce
+WORD_DAY_WEEK,HIRAGANA,,日曜日,,にちようび,nichiyoubi,niedziela,słońce
 UNKNOWN,HIRAGANA,,上,,うえ,ue,na,
 UNKNOWN,HIRAGANA,,上手な,,じょうずな,jouzuna,dobry w,
 UNKNOWN,HIRAGANA,,屋上,,おくじょう,okujou,sufit,
@@ -685,7 +685,7 @@ UNKNOWN,HIRAGANA,,下,,した,shita,pod,
 UNKNOWN,HIRAGANA,,地下鉄,,ちかてつ,chikatetsu,metro,
 UNKNOWN,HIRAGANA,,下手な,,へたな,hetana,słaby,
 UNKNOWN,HIRAGANA,,中,,なか,naka,środek,
-UNKNOWN,HIRAGANA,,中国,,ちゅうごく,chuugoku,Chiny,
+WORD_NOUN,HIRAGANA,,中国,,ちゅうごく,chuugoku,Chiny,
 UNKNOWN,HIRAGANA,,中学,,ちゅうがく,chuugaku,gimnazjum,
 UNKNOWN,HIRAGANA,,一年中,,いちねんじゅう,ichinenjuu,cały rok,
 UNKNOWN,HIRAGANA,,三時半,,さんじはん,sanji han,3:30,
@@ -704,7 +704,7 @@ prąd
 światło",
 UNKNOWN,HIRAGANA,,天気,,てんき,tenki,pogoda,
 UNKNOWN,HIRAGANA,,天国,,てんごく,tengoku,niebo,
-UNKNOWN,HIRAGANA,,私,,わたし,watashi,ja,
+WORD_PRONOUN,HIRAGANA,,私,,わたし,watashi,ja,
 UNKNOWN,HIRAGANA,,市立大学,,しりつだいがく,shiritsudaigaku,prywatny uniwersytet,
 UNKNOWN,HIRAGANA,,今,,いま,ima,teraz,
 UNKNOWN,HIRAGANA,,今日,,きょう,kyou,dziś,
@@ -716,10 +716,10 @@ UNKNOWN,HIRAGANA,,女の人,,おんなのひと,onna no hito,kobieta,
 UNKNOWN,HIRAGANA,,女性,,じょせい,josei,kobieta,oficjalnie
 UNKNOWN,HIRAGANA,,男の人,,おとこのひと,otoko no hito,mężczyzna,
 UNKNOWN,HIRAGANA,,男性,,だんせい,dansei,mężczyzna,oficjalnie
-UNKNOWN,HIRAGANA,,見る,,みる,miru,patrzeć,
+WORD_VERB_RU,HIRAGANA,,見る,,みる,miru,patrzeć,
 UNKNOWN,HIRAGANA,,見物,,けんぶつ,kenbutsu,zwiedzanie,
-UNKNOWN,HIRAGANA,,行く,,いく,iku,iść,
-UNKNOWN,HIRAGANA,,銀行,,ぎんこう,ginkou,bank,
+WORD_VERB_U,HIRAGANA,,行く,,いく,iku,iść,
+WORD_NOUN,HIRAGANA,,銀行,,ぎんこう,ginkou,bank,
 UNKNOWN,HIRAGANA,,一行目,,いちぎょうめ,ichigyoume,pierwsza linia,
 UNKNOWN,HIRAGANA,,食べる,,たべる,taberu,jeść,
 UNKNOWN,HIRAGANA,,食べ物,,たべもの,tabemono,jedzenie,
@@ -755,27 +755,27 @@ UNKNOWN,HIRAGANA,,右折,,うせつ,usetsu,skręcić w prawo,
 UNKNOWN,HIRAGANA,,左右,,さゆう,sayuu,prawo i lewo,
 UNKNOWN,HIRAGANA,,左,,ひだり,hidari,lewo,kierunek
 UNKNOWN,HIRAGANA,,左折,,させつ,sasetsu,skręcić w lewo,
-UNKNOWN,HIRAGANA,,五分,,ごふん,gofun,pięć minut,
-UNKNOWN,HIRAGANA,,十分,,じゅっぷん,juppun,dziesięć minut,
+WORD_TIME,HIRAGANA,,五分,,ごふん,gofun,pięć minut,
+WORD_TIME,HIRAGANA,,十分,,じゅっぷん,juppun,dziesięć minut,
 UNKNOWN,HIRAGANA,,自分,,じぶん,jibun,siebie,
 UNKNOWN,HIRAGANA,,半分,,はんぶん,hanbun,połowa,
-UNKNOWN,HIRAGANA,,先生,,せんせい,sensei,nauczyciel,
+WORD_NOUN,HIRAGANA,,先生,,せんせい,sensei,nauczyciel,
 UNKNOWN,HIRAGANA,,先週,,せんしゅう,senshuu,zeszły tydzień,
 UNKNOWN,HIRAGANA,,先に,,さきに,sakini,na przód,
-UNKNOWN,HIRAGANA,,学生,,がくせい,gakusei,uczeń,
+WORD_NOUN,HIRAGANA,,学生,,がくせい,gakusei,uczeń,
 UNKNOWN,HIRAGANA,,生まれる,,うまれる,umareru,rodzić się,
 UNKNOWN,HIRAGANA,,一生に一度,,一生に一度,isshou ni ichido,raz w życiu,
-UNKNOWN,HIRAGANA,,大学生,,だいがくせい,daigakusei,student,
+WORD_NOUN,HIRAGANA,,大学生,,だいがくせい,daigakusei,student,
 WORD_ADJECTIVE_I,HIRAGANA,,大きい,,おおきい,ookii,duży,
 UNKNOWN,HIRAGANA,,大変,,たいへん,taihen,ciężka,sytuacja
 UNKNOWN,HIRAGANA,,大人,,おとな,otona,dorosły,
-UNKNOWN,HIRAGANA,,大学,,だいがく,daigaku,uniwersytet,
+WORD_NOUN,HIRAGANA,,大学,,だいがく,daigaku,uniwersytet,
 UNKNOWN,HIRAGANA,,学校,,がっこう,gakkou,szkoła,
 WORD_VERB_U,HIRAGANA,,学ぶ,,まなぶ,manabu,uczyć się,ogólnie
 UNKNOWN,HIRAGANA,,外国,,がいこく,gaikoku,zagraniczny kraj,
 UNKNOWN,HIRAGANA,,外国人,,がいこくじん,gaikokujin,obcokrajowiec,
 UNKNOWN,HIRAGANA,,外,,そと,soto,na zewnątrzn,
-UNKNOWN,HIRAGANA,,中国,,ちゅうごく,chuugoku,Chiny,
+WORD_NOUN,HIRAGANA,,中国,,ちゅうごく,chuugoku,Chiny,
 UNKNOWN,HIRAGANA,,国,,くに,kuni,kraj,
 UNKNOWN,HIRAGANA,,東京,,とうきょう,toukyou,Tokio,
 UNKNOWN,HIRAGANA,,京子,,きょうこ,kyouko,kyoko,
@@ -789,31 +789,31 @@ WORD_ADJECTIVE_I,HIRAGANA,,小さい,,ちいさい,chiisai,mały,
 UNKNOWN,HIRAGANA,,小学校,,しょうがっこう,shougakkou,szkoła podstawowa,
 UNKNOWN,HIRAGANA,,小学生,,しょうがくせい,shougakusei,uczeń szkoły podstawowej,
 UNKNOWN,HIRAGANA,,会う,,あう,au,spotykać,
-UNKNOWN,HIRAGANA,,会社,,かいしゃ,kaisha,firma,
-UNKNOWN,HIRAGANA,,会社員,,かいしゃいん,kaishain,pracownik biurowy,
-UNKNOWN,HIRAGANA,,会社,,かいしゃ,kaisha,firma,
+WORD_NOUN,HIRAGANA,,会社,,かいしゃ,kaisha,firma,
+WORD_NOUN,HIRAGANA,,会社員,,かいしゃいん,kaishain,pracownik biurowy,
+WORD_NOUN,HIRAGANA,,会社,,かいしゃ,kaisha,firma,
 UNKNOWN,HIRAGANA,,社会,,しゃかい,shakai,społeczeństwo,
-UNKNOWN,HIRAGANA,,神社,,じんじゃ,jinja,świątynia,shintoistyczna
-UNKNOWN,HIRAGANA,,父,,ちち,chichi,ojciec,
-UNKNOWN,HIRAGANA,,お父さん,,おとうさん,otousan,ojciec,
-UNKNOWN,HIRAGANA,,父母,,ふぼ,fubo,ojciec i matka,
-UNKNOWN,HIRAGANA,,母,,はは,haha,matka,
-UNKNOWN,HIRAGANA,,お母さん,,おかあさん,okaasan,matka,
+WORD_NOUN,HIRAGANA,,神社,,じんじゃ,jinja,świątynia,shintoistyczna
+WORD_NOUN,HIRAGANA,,父,,ちち,chichi,ojciec,
+WORD_NOUN,HIRAGANA,,お父さん,,おとうさん,otousan,ojciec,
+WORD_NOUN,HIRAGANA,,父母,,ふぼ,fubo,ojciec i matka,
+WORD_NOUN,HIRAGANA,,母,,はは,haha,matka,
+WORD_NOUN,HIRAGANA,,お母さん,,おかあさん,okaasan,matka,
 UNKNOWN,HIRAGANA,,母語,,ぼご,bogo,język ojczysty,
-UNKNOWN,HIRAGANA,,高い,,たかい,takai,"drogi
+WORD_ADJECTIVE_I,HIRAGANA,,高い,,たかい,takai,"drogi
 wysoki","pieniądze, wzrost"
-UNKNOWN,HIRAGANA,,高校,,こうこう,koukou,liceum,
-UNKNOWN,HIRAGANA,,高校生,,こうこうせい,koukousei,licealista,
-UNKNOWN,HIRAGANA,,学校,,がっこう,gakkou,szkoła,
-UNKNOWN,HIRAGANA,,高校,,こうこう,koukou,liceum,
-UNKNOWN,HIRAGANA,,高校生,,こうこうせい,koukousei,licealista,
-UNKNOWN,HIRAGANA,,中学校,,ちゅうがっこう,chuugakkou,gimnazjum,
+WORD_NOUN,HIRAGANA,,高校,,こうこう,koukou,liceum,
+WORD_NOUN,HIRAGANA,,高校生,,こうこうせい,koukousei,licealista,
+WORD_NOUN,HIRAGANA,,学校,,がっこう,gakkou,szkoła,
+WORD_NOUN,HIRAGANA,,高校,,こうこう,koukou,liceum,
+WORD_NOUN,HIRAGANA,,高校生,,こうこうせい,koukousei,licealista,
+WORD_NOUN,HIRAGANA,,中学校,,ちゅうがっこう,chuugakkou,gimnazjum,
 UNKNOWN,HIRAGANA,,毎日,,まいにち,mainichi,każdego dnia,
 UNKNOWN,HIRAGANA,,毎週,,まいしゅう,maishuu,w każdym tygodniu,
 UNKNOWN,HIRAGANA,,毎晩,,まいばん,maiban,każdej nocy,
 UNKNOWN,HIRAGANA,,日本語,,にほんご,nihongo,język japoński,
-UNKNOWN,HIRAGANA,,英語,,えいご,eigo,język angielski,
-UNKNOWN,HIRAGANA,,文学,,ぶんがく,bungaku,literatura,
+WORD_NOUN,HIRAGANA,,英語,,えいご,eigo,język angielski,
+WORD_NOUN,HIRAGANA,,文学,,ぶんがく,bungaku,literatura,
 UNKNOWN,HIRAGANA,,作文,,さくぶん,sakubun,wypracowanie,
 UNKNOWN,HIRAGANA,,文字,,もじ,moji,list,
 UNKNOWN,HIRAGANA,,帰る,,かえる,kaeru,wracać,
@@ -822,19 +822,19 @@ UNKNOWN,HIRAGANA,,入る,,はいる,hairu,wchodzić,
 UNKNOWN,HIRAGANA,,入口,,いりぐち,iriguchi,wejście,
 UNKNOWN,HIRAGANA,,入れる,,いれる,ireru,wkładać,
 UNKNOWN,HIRAGANA,,輸入,,ゆにゅう,yunyuu,import,
-UNKNOWN,HIRAGANA,,会社員,,かいしゃいん,kaishain,pracownik biurowy,
+WORD_NOUN,HIRAGANA,,会社員,,かいしゃいん,kaishain,pracownik biurowy,
 WORD_NOUN,HIRAGANA,,店員,,てんいん,ten'in,sprzedawca,
 WORD_ADJECTIVE_I,HIRAGANA,,新しい,,あたらしい,atarashii,nowy,
-UNKNOWN,HIRAGANA,,新聞,,しんぶん,shinbun,gazeta,
+WORD_NOUN,HIRAGANA,,新聞,,しんぶん,shinbun,gazeta,
 UNKNOWN,HIRAGANA,,新幹線,,しんかんせん,shinkansen,shinkansen,szybka kolej
-UNKNOWN,HIRAGANA,,聞く,,きく,kiku,słuchać,
-UNKNOWN,HIRAGANA,,新聞,,しんぶん,shinbun,gazeta,
+WORD_VERB_U,HIRAGANA,,聞く,,きく,kiku,słuchać,
+WORD_NOUN,HIRAGANA,,新聞,,しんぶん,shinbun,gazeta,
 WORD_VERB_U,HIRAGANA,,作る,,つくる,tsukuru,tworzyć,
 UNKNOWN,HIRAGANA,,作文,,さくぶん,sakubun,wypracowanie,
 UNKNOWN,HIRAGANA,,作品,,さくひん,sakuhin,utwór artystyczny,
-UNKNOWN,HIRAGANA,,仕事,,しごと,shigoto,praca,
-UNKNOWN,HIRAGANA,,仕事,,しごと,shigoto,praca,
-UNKNOWN,HIRAGANA,,仕事,,しごと,shigoto,praca,
+WORD_NOUN,HIRAGANA,,仕事,,しごと,shigoto,praca,
+WORD_NOUN,HIRAGANA,,仕事,,しごと,shigoto,praca,
+WORD_NOUN,HIRAGANA,,仕事,,しごと,shigoto,praca,
 UNKNOWN,HIRAGANA,,事,,こと,koto,rzecz,
 UNKNOWN,HIRAGANA,,火事,,かじ,kaji,ogień,
 UNKNOWN,HIRAGANA,,食事,,しょくじ,shokuji,posiłek,
@@ -842,10 +842,10 @@ UNKNOWN,HIRAGANA,,電車,,でんしゃ,densha,pociąg,
 UNKNOWN,HIRAGANA,,電気,,でんき,denki,"elektryczność
 prąd
 światło",
-UNKNOWN,HIRAGANA,,電話,,でんわ,denwa,telefon,
+WORD_NOUN,HIRAGANA,,電話,,でんわ,denwa,telefon,
 UNKNOWN,HIRAGANA,,車,,くるま,kuruma,samochód,
 UNKNOWN,HIRAGANA,,電車,,でんしゃ,densha,pociąg,
-UNKNOWN,HIRAGANA,,自転車,,じてんしゃ,jitensha,rower,
+WORD_NOUN,HIRAGANA,,自転車,,じてんしゃ,jitensha,rower,
 WORD_VERB_U,HIRAGANA,,休む,,やすむ,yasumu,"być nieobecny
 odpoczywać",
 UNKNOWN,HIRAGANA,,休み,,やすみ,yasumi,"wakacje
@@ -860,11 +860,11 @@ WORD_VERB_U,HIRAGANA,,思う,,おもう,omou,myśleć,
 UNKNOWN,HIRAGANA,,不思議な,,ふしぎな,fushigina,tajemniczy,
 UNKNOWN,HIRAGANA,,次,,つぎ,tsugi,następny,
 UNKNOWN,HIRAGANA,,次女,,じじょ,jijo,następna córka,
-UNKNOWN,HIRAGANA,,何,,"なん
+WORD_ASK,HIRAGANA,,何,,"なん
 なに","nan
 nani",co,
-UNKNOWN,HIRAGANA,,何時,,なんじ,nanji,która godzina,
-UNKNOWN,HIRAGANA,,何人,,なんにん,nan nin,ile ludzi,
+WORD_ASK,HIRAGANA,,何時,,なんじ,nanji,która godzina,
+WORD_ASK,HIRAGANA,,何人,,なんにん,nan nin,ile ludzi,
 UNKNOWN,HIRAGANA,,午前,,ごぜん,gozen,am,czas
 UNKNOWN,HIRAGANA,,午後,,ごご,gogo,pm,czas
 UNKNOWN,HIRAGANA,,午前中,,ごぜんちゅう,gozenchuu,przed południem,
@@ -875,8 +875,8 @@ UNKNOWN,HIRAGANA,,後ろ,,うしろ,ushiro,za,
 UNKNOWN,HIRAGANA,,最後に,,さいごに,saigoni,ostatni,
 UNKNOWN,HIRAGANA,,前,,まえ,mae,przed,
 UNKNOWN,HIRAGANA,,午前,,ごぜん,gozen,am,czas
-UNKNOWN,HIRAGANA,,名前,,なまえ,namae,imię,
-UNKNOWN,HIRAGANA,,名前,,なまえ,namae,imię,
+WORD_NOUN,HIRAGANA,,名前,,なまえ,namae,imię,
+WORD_NOUN,HIRAGANA,,名前,,なまえ,namae,imię,
 WORD_ADJECTIVE_NA,HIRAGANA,,有名,,ゆうめい,yuumei,sławny,
 UNKNOWN,HIRAGANA,,名刺,,めいし,meishi,wizytówka,
 WORD_ADJECTIVE_I,HIRAGANA,,白い,,しろい,shiroi,biały,
@@ -884,8 +884,8 @@ UNKNOWN,HIRAGANA,,白紙,,はくし,hakushi,biała kartka,
 UNKNOWN,HIRAGANA,,雨,,あめ,ame,deszcz,
 UNKNOWN,HIRAGANA,,雨期,,うき,uki,deszczowe dni,
 UNKNOWN,HIRAGANA,,書く,,かく,kaku,pisać,
-UNKNOWN,HIRAGANA,,辞書,,じしょ,jisho,słownik,
-UNKNOWN,HIRAGANA,,友だち,,ともだち,tomodachi,przyjaciel,
+WORD_NOUN,HIRAGANA,,辞書,,じしょ,jisho,słownik,
+WORD_NOUN,HIRAGANA,,友だち,,ともだち,tomodachi,przyjaciel,
 UNKNOWN,HIRAGANA,,親友,,しんゆう,shin'yuu,najlepszy przyjaciel,
 UNKNOWN,HIRAGANA,,友人,,ゆうじん,yuujin,przyjaciel,bardziej oficjalnie
 UNKNOWN,HIRAGANA,,時間,,じかん,jikan,godzina,okres
@@ -893,12 +893,12 @@ UNKNOWN,HIRAGANA,,二時間,,にじかん,nijikan,dwie godziny,
 UNKNOWN,HIRAGANA,,間,,あいだ,aida,pomiędzy,
 UNKNOWN,HIRAGANA,,人間,,にんげん,ningen,człowiek,
 UNKNOWN,HIRAGANA,,一週間,,いしゅうかん,ishuukan,jeden tydzień,
-UNKNOWN,HIRAGANA,,家,,いえ,ie,dom,bardziej oficjalnie
-UNKNOWN,HIRAGANA,,家族,,かぞく,kazoku,rodzina,
-UNKNOWN,HIRAGANA,,家,,うち,uchi,dom,moje miejsce
-UNKNOWN,HIRAGANA,,話す,,はなす,hanasu,rozmawiać,
+WORD_NOUN,HIRAGANA,,家,,いえ,ie,dom,bardziej oficjalnie
+WORD_NOUN,HIRAGANA,,家族,,かぞく,kazoku,rodzina,
+WORD_NOUN,HIRAGANA,,家,,うち,uchi,dom,moje miejsce
+WORD_VERB_U,HIRAGANA,,話す,,はなす,hanasu,rozmawiać,
 UNKNOWN,HIRAGANA,,話,,はなし,hanashi,rozmowa,
-UNKNOWN,HIRAGANA,,電話,,でんわ,denwa,telefon,
+WORD_NOUN,HIRAGANA,,電話,,でんわ,denwa,telefon,
 UNKNOWN,HIRAGANA,,会話,,かいわ,kaiwa,rozmowa,
 UNKNOWN,HIRAGANA,,少し,,すこし,sukoshi,mało,
 UNKNOWN,HIRAGANA,,少ない,,すくない,sukunai,trochę,
@@ -939,7 +939,7 @@ UNKNOWN,HIRAGANA,,国立大学,,こくりつだいがく,kokuritsudaigaku,uniwer
 UNKNOWN,HIRAGANA,,私立高校,,しりつこうこう,shiritsukoukou,prywatne liceum,
 UNKNOWN,HIRAGANA,,自分,,じぶん,jibun,ja sam,
 UNKNOWN,HIRAGANA,,自動車,,じどうしゃ,jidousha,automobil,
-UNKNOWN,HIRAGANA,,自転車,,じてんしゃ,jitensha,rower,
+WORD_NOUN,HIRAGANA,,自転車,,じてんしゃ,jitensha,rower,
 UNKNOWN,HIRAGANA,,夜,,よる,yoru,noc,
 UNKNOWN,HIRAGANA,,夜中,,よなか,yonaka,północ,
 UNKNOWN,HIRAGANA,,今夜,,こんや,kon'ya,dziś wieczorem,
@@ -970,17 +970,17 @@ UNKNOWN,HIRAGANA,,明るい,,あかるい,akarui,"pogodny
 jasny",
 UNKNOWN,HIRAGANA,,明日,,あした,ashita,jutro,
 UNKNOWN,HIRAGANA,,説明,,せつめい,setsumei,wyjaśnienie,
-UNKNOWN,HIRAGANA,,病院,,びょういん,byouin,szpital,
+WORD_NOUN,HIRAGANA,,病院,,びょういん,byouin,szpital,
 UNKNOWN,HIRAGANA,,病気,,びょうき,byouki,choroba,
 UNKNOWN,HIRAGANA,,重病,,じゅうびょう,juubyou,poważnie chory,j...
 UNKNOWN,HIRAGANA,,急病,,きゅうびょう,kyuubyou,poważnie chory,k...
-UNKNOWN,HIRAGANA,,病院,,びょういん,byouin,szpital,
+WORD_NOUN,HIRAGANA,,病院,,びょういん,byouin,szpital,
 UNKNOWN,HIRAGANA,,大学院,,だいがくいん,daigakuin,studia magisterskie,
 UNKNOWN,HIRAGANA,,美容院,,びよういん,biyouin,fryzjer,damski
-UNKNOWN,HIRAGANA,,映画,,えいが,eiga,film,
+WORD_NOUN,HIRAGANA,,映画,,えいが,eiga,film,
 UNKNOWN,HIRAGANA,,映画館,,えいがかん,eigakan,kino,
 UNKNOWN,HIRAGANA,,映る,,うつる,utsuru,odbijać się,
-UNKNOWN,HIRAGANA,,映画,,えいが,eiga,film,
+WORD_NOUN,HIRAGANA,,映画,,えいが,eiga,film,
 UNKNOWN,HIRAGANA,,画家,,がか,gaka,malarz,
 UNKNOWN,HIRAGANA,,計画,,けいかく,keikaku,plan,
 WORD_VERB_U,HIRAGANA,,歌う,,うたう,utau,śpiewać,
@@ -1015,7 +1015,7 @@ UNKNOWN,HIRAGANA,,人々,,ひとびと,hitobito,ludzie,
 UNKNOWN,HIRAGANA,,時々,,ときどき,tokidoki,czasami,
 WORD_ADJECTIVE_NA,HIRAGANA,,色々,,いろいろ,iroiro,różne,
 UNKNOWN,HIRAGANA,,神さま,,かみさま,kamisama,bóg,
-UNKNOWN,HIRAGANA,,神社,,じんじゃ,jinja,świątynia,shintoistyczna
+WORD_NOUN,HIRAGANA,,神社,,じんじゃ,jinja,świątynia,shintoistyczna
 UNKNOWN,HIRAGANA,,神道,,しんとう,shintou,shinto,
 WORD_ADJECTIVE_I,HIRAGANA,,早い,,はやい,hayai,wczesny,
 WORD_VERB_IRREGULAR,HIRAGANA,,早起きする,,はやおきする,hayaoki suru,wcześnie wstawać,

@@ -98,7 +98,7 @@ UNKNOWN,HIRAGANA,,年生,,ねんせい,nensei,... student roku,
 WORD_GREETING,HIRAGANA,,-,,はい,hai,tak,oficjalnie
 WORD_NOUN,HIRAGANA,,番号,,ばんごう,bangou,numer,
 WORD_NOUN,HIRAGANA,,留学生,,りゅうがくせい,ryuugakusei,uczeń międzynarodowy,
-WORD_NOUN,HIRAGANA,,私,,わたし,watashi,ja,
+WORD_PRONOUN,HIRAGANA,,私,,わたし,watashi,ja,
 WORD_NOUN,KATAKANA,,-,,アメリカ,Amerika,Ameryka,
 WORD_NOUN,KATAKANA,,-,,イギリス,Igirisu,Wielka Brytania,
 WORD_NOUN,KATAKANA,,-,,オオストラリア,Oosutoraria,Australia,
@@ -247,10 +247,10 @@ UNKNOWN,HIRAGANA,,今日,,きょう,kyou,dziś,
 UNKNOWN,HIRAGANA,,-,,ごろ,goro,około,
 UNKNOWN,HIRAGANA,,今晩,,こんばん,konban,dziś wieczorem,
 WORD_NOUN,HIRAGANA,,週末,,しゅうまつ,shuumatsu,weekend,
-WORD_NOUN,HIRAGANA,,土曜日,,どようび,doyoubi,sobota,ziemia
-WORD_NOUN,HIRAGANA,,日曜日,,にちようび,nichiyoubi,niedziela,słońce
-WORD_NOUN,HIRAGANA,,毎日,,まいにち,mainichi,każdego dnia,
-WORD_NOUN,HIRAGANA,,毎晩,,まいばん,maiban,każdej nocy,
+WORD_DAY_WEEK,HIRAGANA,,土曜日,,どようび,doyoubi,sobota,ziemia
+WORD_DAY_WEEK,HIRAGANA,,日曜日,,にちようび,nichiyoubi,niedziela,słońce
+UNKNOWN,HIRAGANA,,毎日,,まいにち,mainichi,każdego dnia,
+UNKNOWN,HIRAGANA,,毎晩,,まいばん,maiban,każdej nocy,
 WORD_VERB_U,HIRAGANA,に,行く,,いく,ni iku,iść,"cel, ni ~"
 WORD_VERB_U,HIRAGANA,へ,行く,,いく,he iku,iść,"cel, e ~"
 WORD_VERB_U,HIRAGANA,に,帰る,,かえる,ni kaeru,wracać,"cel, ni ~"
@@ -292,7 +292,7 @@ WORD_NOUN,KATAKANA,,-,,タヌキ,kanuki,jenot,
 WORD_NOUN,KATAKANA,,-,,アルバイト,arubaito,praca w niepełnym wymiarze godzin,
 WORD_NOUN,HIRAGANA,,買い物,,かいもの,kaimono,zakupy,
 WORD_NOUN,KATAKANA,,-,,クラス,kurasu,klasa,
-WORD_NOUN,HIRAGANA,,-,,あなた,anata,ty,
+WORD_PRONOUN,HIRAGANA,,-,,あなた,anata,ty,
 WORD_NOUN,HIRAGANA,,犬,,いぬ,inu,pies,
 WORD_NOUN,HIRAGANA,お,土産,,みやげ,omiyage,pamiątka,
 WORD_NOUN,HIRAGANA,,子供,,こども,kodomo,dziecko,
@@ -378,13 +378,13 @@ WORD_NOUN,HIRAGANA,,-,,さっき,sakki,przed chwilą,
 UNKNOWN,HIRAGANA,,時間,,じかん,jikan,czas,
 WORD_NOUN,HIRAGANA,,一時間,,いちじかん,ichijikan,jedna godzina,
 WORD_NOUN,HIRAGANA,,時,,とき,toki,kiedy,wskazanie jakiegoś momentu w czasie
-WORD_NOUN,HIRAGANA,,月曜日,,げつようび,getsuyoubi,poniedziałek,księżyc
-WORD_NOUN,HIRAGANA,,火曜日,,かようび,kayoubi,wtorek,ogień
-WORD_NOUN,HIRAGANA,,水曜日,,すいようび,suiyoubi,środa,woda
-WORD_NOUN,HIRAGANA,,木曜日,,もくようび,mokuyoubi,czwartek,drzewo
-WORD_NOUN,HIRAGANA,,金曜日,,きにょうび,kinyoubi,piątek,"pieniądze, złoto"
-WORD_NOUN,HIRAGANA,,土曜日,,どようび,doyoubi,sobota,ziemia
-WORD_NOUN,HIRAGANA,,日曜日,,にちようび,nichiyoubi,niedziela,słońce
+WORD_DAY_WEEK,HIRAGANA,,月曜日,,げつようび,getsuyoubi,poniedziałek,księżyc
+WORD_DAY_WEEK,HIRAGANA,,火曜日,,かようび,kayoubi,wtorek,ogień
+WORD_DAY_WEEK,HIRAGANA,,水曜日,,すいようび,suiyoubi,środa,woda
+WORD_DAY_WEEK,HIRAGANA,,木曜日,,もくようび,mokuyoubi,czwartek,drzewo
+WORD_DAY_WEEK,HIRAGANA,,金曜日,,きにょうび,kinyoubi,piątek,"pieniądze, złoto"
+WORD_DAY_WEEK,HIRAGANA,,土曜日,,どようび,doyoubi,sobota,ziemia
+WORD_DAY_WEEK,HIRAGANA,,日曜日,,にちようび,nichiyoubi,niedziela,słońce
 WORD_VERB_U,HIRAGANA,に,会う,,あう,ni au,"spotykać
 widzieć osobę","osoba, ni"
 WORD_VERB_U,HIRAGANA,と,会う,,あう,to au,"spotykać
