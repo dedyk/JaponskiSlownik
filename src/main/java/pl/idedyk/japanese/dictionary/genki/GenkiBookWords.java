@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary.genki;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
@@ -39,7 +40,7 @@ public class GenkiBookWords {
 		generateKanjiImages(polishJapaneseKanjiEntries, charsCache, kanjiOutputDir);
 		
 		// validate dictionary and kanji dictionary
-		// validateDictionaryAndKanjiDictionary(polishJapaneseEntries, polishJapaneseKanjiEntries);
+		//validateDictionaryAndKanjiDictionary(polishJapaneseEntries, polishJapaneseKanjiEntries);
 		
 		CsvReaderWriter.generateDictionaryApplicationResult("output/japanese_polish_dictionary.properties", polishJapaneseEntries, true);
 		CsvReaderWriter.generateKanaEntriesCsv(kanjiOutputDir + "/hiragana.properties", hiraganaEntries);
@@ -110,9 +111,11 @@ public class GenkiBookWords {
 		}
 	}
 	
-	/*
 	private static void validateDictionaryAndKanjiDictionary(List<PolishJapaneseEntry> polishJapaneseEntries,
 			List<PolishJapaneseEntry> polishJapaneseKanjiEntries) {
+		
+		
+		int counter = 0;
 		
 		for (PolishJapaneseEntry currentDictionaryPolishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -127,14 +130,22 @@ public class GenkiBookWords {
 				
 				for (PolishJapaneseEntry currentFoundPolishJapaneseEntries : foundPolishJapaneseEntries) {
 					
-					comparePolishJapaneseEntries(currentDictionaryPolishJapaneseEntry, currentFoundPolishJapaneseEntries);
+					boolean wasError = comparePolishJapaneseEntries(currentDictionaryPolishJapaneseEntry, currentFoundPolishJapaneseEntries);
+					
+					if (wasError == true) {
+						counter++;
+					}
 				}
 				
+			}
+			
+			if (counter > 8) {
+				break;
 			}
 		}
 	}
 	
-	private static void comparePolishJapaneseEntries(PolishJapaneseEntry entry1, PolishJapaneseEntry entry2) {
+	private static boolean comparePolishJapaneseEntries(PolishJapaneseEntry entry1, PolishJapaneseEntry entry2) {
 		
 		boolean wasError = false;
 		
@@ -147,7 +158,7 @@ public class GenkiBookWords {
 			wasError = true;
 			System.out.println(entry1.getKanji() + ": " + entry1.getWordType() + " != " + entry2.getWordType());
 		}
-
+/*
 		if (entry1.getKanaList().equals(entry2.getKanaList()) == false) {
 			wasError = true;
 			System.out.println(entry1.getKanji() + ": " + entry1.getKanaList() + " != " + entry2.getKanaList());
@@ -167,11 +178,13 @@ public class GenkiBookWords {
 			wasError = true;
 			System.out.println(entry1.getKanji() + ": " + entry1.getInfo() + " != " + entry2.getInfo());
 		}
-
+*/
 		
 		if (wasError == true) {
 			System.out.println();
 		}
+		
+		return wasError;
 	}
 	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, String kanji) {
 		
@@ -190,5 +203,5 @@ public class GenkiBookWords {
 		
 		return result;
 	}
-	*/
+	
 }

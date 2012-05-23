@@ -36,6 +36,8 @@ public enum DictionaryEntryType {
 	
 	WORD_DAY_NUMBER("Numer dnia"),
 	
+	WORD_DAY_WEEK("Dzień tygodnia"),
+	
 	WORD_LOCATION("Lokalizacja"),
 	
 	WORD_PEOPLE_NUMBER("Liczenie ludzi"),
@@ -43,6 +45,8 @@ public enum DictionaryEntryType {
 	WORD_COUNT_DAY_NUMBER("Liczenie dni"),
 	
 	WORD_COUNTERS("Klasyfikatory"),
+	
+	WORD_PRONOUN("Zaimki"),
 	
 	UNKNOWN("unknown");
 	
