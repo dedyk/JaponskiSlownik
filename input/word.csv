@@ -576,31 +576,6 @@ WORD_EXPRESSION,HIRAGANA,,二つ目の角を左に曲がる,,ふたつめのか�
 WORD_EXPRESSION,HIRAGANA,,道を渡る,,みちをわたる,michi wo wataru,przez ulicę,
 WORD_EXPRESSION,HIRAGANA,,道の左側,,みちのひだりかわ,michi no hidari kawa,lewo strona ulicy,
 WORD_EXPRESSION,HIRAGANA,,道の右側,,みちのみぎかわ,michi no migi kawa,prawa strona ulicy,
-WORD_VERB_TE,HIRAGANA,,起きる,,おきる,okiru,okite,
-WORD_VERB_TE,HIRAGANA,,食べる,,たべる,taberu,tabete,
-WORD_VERB_TE,HIRAGANA,,寝る,,ねる,neru,nete,
-WORD_VERB_TE,HIRAGANA,,見る,,みる,miru,mite,
-WORD_VERB_TE,HIRAGANA,,-,,いる,iru,ite,
-WORD_VERB_TE,HIRAGANA,,出かける,,でかける,dekakeru,dekakete,
-WORD_VERB_TE,HIRAGANA,,会う,,あう,au,atte,u
-WORD_VERB_TE,HIRAGANA,,買う,,かう,kau,katte,u
-WORD_VERB_TE,HIRAGANA,,聞く,,きく,kiku,kiite,ku
-WORD_VERB_TE,HIRAGANA,,書く,,かく,kaku,kaite,ku
-WORD_VERB_TE,HIRAGANA,,行く,,いく,iku,itte,ku (nieregularny)
-WORD_VERB_TE,HIRAGANA,,泳ぐ,,およぐ,oyogu,oyoide,gu
-WORD_VERB_TE,HIRAGANA,,話す,,はなす,hanasu,hanashite,su
-WORD_VERB_TE,HIRAGANA,,待つ,,まつ,matsu,matte,tsu
-WORD_VERB_TE,HIRAGANA,,飲む,,のむ,nomu,nonde,mu
-WORD_VERB_TE,HIRAGANA,,読む,,よむ,yomu,yonde,mu
-WORD_VERB_TE,HIRAGANA,,帰る,,かえる,kaeru,kaette,ru
-WORD_VERB_TE,HIRAGANA,,-,,ある,aru,atte,ru
-WORD_VERB_TE,HIRAGANA,,-,,とる,toru,totte,ru
-WORD_VERB_TE,HIRAGANA,,-,,わかる,wakaru,wakatte,ru
-WORD_VERB_TE,HIRAGANA,,乗る,,のる,noru,notte,ru
-WORD_VERB_TE,HIRAGANA,,-,,やる,yaru,yatte,ru
-WORD_VERB_TE,HIRAGANA,,来る,,くる,kuru,kite,nieregularny
-WORD_VERB_TE,HIRAGANA,,-,,する,suru,shite,nieregularny
-WORD_VERB_TE,HIRAGANA,,勉強する,,べんきょうする,benkyou suru,benkyou shite,nieregularny
 WORD_PEOPLE_NUMBER,HIRAGANA,,一人,,ひとり,hitori,jeden człowiek,*
 WORD_PEOPLE_NUMBER,HIRAGANA,,二人,,ふたり,futari,dwoje ludzi,*
 WORD_PEOPLE_NUMBER,HIRAGANA,,三人,,さんにん,sannin,troje ludzi,
@@ -691,19 +666,19 @@ WORD_ADJECTIVE_NA,HIRAGANA,,便利,,べんり,benri,przydatny,
 WORD_VERB_U,HIRAGANA,,歌う,,うたう,utau,śpiewać,
 WORD_VERB_U,HIRAGANA,,-,,かぶる,kaburu,zakładać,na głowę
 WORD_VERB_U,HIRAGANA,,知る,,しる,shiru,wiedzieć,
-WORD_VERB_TE,HIRAGANA,,知っています,,しっています,shitte imasu,wiem,
+WORD_VERB_RU,HIRAGANA,,知っています,,しっています,shitte imasu,wiem,
 WORD_VERB_U,HIRAGANA,,知りません,,しりません,shirimasen,nie wiedzieć,~masen
 WORD_VERB_U,HIRAGANA,に,住む,,すむ,ni sumu,mieszkać,
-WORD_VERB_TE,HIRAGANA,に,住んでいます,,すんでいます,ni sunde imasu,mieszkać,
+WORD_VERB_RU,HIRAGANA,に,住んでいます,,すんでいます,ni sunde imasu,mieszkać,
 WORD_VERB_U,HIRAGANA,,-,,はく,haku,zakładać,poniżej paska
 WORD_VERB_U,HIRAGANA,,太る,,ふとる,futoru,zyskiwać na wadze,
-WORD_VERB_TE,HIRAGANA,,太っています,,ふとっています,futotte imasu,być grubym,
+WORD_VERB_RU,HIRAGANA,,太っています,,ふとっています,futotte imasu,być grubym,
 WORD_VERB_RU,HIRAGANA,,-,,めがねをかける,megane wo kakeru,zakładać okulary,
 WORD_VERB_RU,HIRAGANA,,着る,,きる,kiru,zakładać,powyżej paska
 WORD_VERB_RU,HIRAGANA,に,勤める,,つとめる,ni tsutomeru,pracować dla,niefizycznie
-WORD_VERB_TE,HIRAGANA,に,勤めています,,つとめています,ni tsutomete imasu,pracować dla,
+WORD_VERB_RU,HIRAGANA,に,勤めています,,つとめています,ni tsutomete imasu,pracować dla,
 WORD_VERB_RU,HIRAGANA,,-,,やせる,yaseru,tracić na wadze,
-WORD_VERB_TE,HIRAGANA,,-,,やせています,yasete imasu,być chudym,
+WORD_VERB_RU,HIRAGANA,,-,,やせています,yasete imasu,być chudym,
 WORD_VERB_IRREGULAR,HIRAGANA,を,結婚する,,けっこんする,wo kekkon suru,żenić się,
 UNKNOWN,HIRAGANA,,-,,が,ga,ale,używane w tym samym zdaniu
 UNKNOWN,HIRAGANA,,何も,,なにも,nanimo,nic,+ forma negatywna
@@ -1245,7 +1220,7 @@ UNKNOWN,HIRAGANA,,-,,やっぱり,yappari,ostatecznie,
 UNKNOWN,HIRAGANA,,満員電車,,まんいんでんしゃ,man'in densha,pociąg pełen ludzi,
 UNKNOWN,HIRAGANA,,第一印象,,だいいちいんしょう,dai ichinshou,pierwsze wrażenie,
 WORD_VERB_U,HIRAGANA,,込む,,こむ,komu,jest tłok,
-WORD_VERB_TE,HIRAGANA,,込んでいる,,こんでいる,konde iru,być tłocznie,
+WORD_VERB_RU,HIRAGANA,,込んでいる,,こんでいる,konde iru,być tłocznie,
 WORD_NOUN,HIRAGANA,,空港,,くうこう,kuukou,lotnisko,
 WORD_VERB_U,HIRAGANA,,着く,,つく,tsuku,przybyć,
 WORD_NOUN,KATAKANA,,-,,ラッシュ,rasshu,godziny szczytu,
