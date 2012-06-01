@@ -814,16 +814,16 @@ UNKNOWN,HIRAGANA,,-,,ところで,tokorode,przy okazji,
 UNKNOWN,HIRAGANA,,-,,みんな,minna,wszyscy,
 UNKNOWN,HIRAGANA,,-,,もう,mou,już,
 UNKNOWN,HIRAGANA,,-,,まだ,mada,jeszcze,
-WORD_NUMBER,HIRAGANA,,一つ,,ひとつ,hitotsu,jeden,"liczby, liczenie małych przedmiotów"
-WORD_NUMBER,HIRAGANA,,二つ,,ふたつ,futatsu,dwa,"liczby, liczenie małych przedmiotów"
-WORD_NUMBER,HIRAGANA,,三つ,,みっつ,mittsu,trzy,"liczby, liczenie małych przedmiotów"
-WORD_NUMBER,HIRAGANA,,四つ,,よっつ,yottsu,cztery,"liczby, liczenie małych przedmiotów"
-WORD_NUMBER,HIRAGANA,,五つ,,いつつ,itsutsu,pięć,"liczby, liczenie małych przedmiotów"
-WORD_NUMBER,HIRAGANA,,六つ,,むっつ,muttsu,sześć,"liczby, liczenie małych przedmiotów"
-WORD_NUMBER,HIRAGANA,,七つ,,ななつ,nanatsu,siedem,"liczby, liczenie małych przedmiotów"
-WORD_NUMBER,HIRAGANA,,八つ,,やっつ,yattsu,osiem,"liczby, liczenie małych przedmiotów"
-WORD_NUMBER,HIRAGANA,,九つ,,ここのつ,kokonotsu,dziewięć,"liczby, liczenie małych przedmiotów"
-WORD_NUMBER,HIRAGANA,,十,,とお,too,dziesięć,"liczby, liczenie małych przedmiotów"
+WORD_COUNTERS,HIRAGANA,,一つ,,ひとつ,hitotsu,jeden,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,二つ,,ふたつ,futatsu,dwa,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,三つ,,みっつ,mittsu,trzy,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,四つ,,よっつ,yottsu,cztery,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,五つ,,いつつ,itsutsu,pięć,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,六つ,,むっつ,muttsu,sześć,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,七つ,,ななつ,nanatsu,siedem,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,八つ,,やっつ,yattsu,osiem,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,九つ,,ここのつ,kokonotsu,dziewięć,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,十,,とお,too,dziesięć,klasyfikator ogólny
 UNKNOWN,HIRAGANA,,-,,そして,soshite,następnie,
 UNKNOWN,HIRAGANA,,-,,それから,sorekara,no i,
 WORD_NOUN,HIRAGANA,,図書館,,としょかん,toshokan,biblioteka,w budynku
@@ -1056,7 +1056,7 @@ WORD_VERB_U,HIRAGANA,,熱がある,,ねつがある,netsu ga aru,mieć gorączk�
 WORD_VERB_U,HIRAGANA,,のどが渇く,,のどがかわく,nodo ga kawaku,"być spragniony
 mieć sucho w gardle",
 WORD_VERB_U,HIRAGANA,,渇く,,かわく,kawaku,wyschnąć,
-WORD_VERB_U,HIRAGANA,,渇かす,,かわかる,kawakasu,suszyć,
+WORD_VERB_U,HIRAGANA,,渇かす,,かわかす,kawakasu,suszyć,
 WORD_VERB_RU,HIRAGANA,,せきが出る,,せきがでる,seki ga deru,kasłać,
 WORD_VERB_RU,HIRAGANA,と,別れる,,わかれる,to wakareru,izolować,osobę ~
 WORD_VERB_IRREGULAR,HIRAGANA,,緊張する,,きんちょうする,kinchou suru,"spinać się
@@ -1215,7 +1215,7 @@ UNKNOWN,HIRAGANA,,気分が悪い,,きぷんがわるい,kipun ga warui,czuć si
 WORD_NOUN,HIRAGANA,,体,,からだ,karada,ciało,
 UNKNOWN,HIRAGANA,,体にいい,,からだにいい,karada ni ii,"zdrowe
 dobre dla ciała",
-UNKNOWN,HIRAGANA,,一生に一度,,一生に一度,isshou ni ichido,raz w życiu,
+UNKNOWN,HIRAGANA,,一生に一度,,いっしょうにいちど,isshou ni ichido,raz w życiu,
 UNKNOWN,HIRAGANA,,-,,やっぱり,yappari,ostatecznie,
 UNKNOWN,HIRAGANA,,満員電車,,まんいんでんしゃ,man'in densha,pociąg pełen ludzi,
 UNKNOWN,HIRAGANA,,第一印象,,だいいちいんしょう,dai ichinshou,pierwsze wrażenie,
@@ -1250,7 +1250,7 @@ WORD_NOUN,HIRAGANA,,-,,めいぐるみ,meigurumi,wypchane zwierze,np. pluszowy m
 WORD_NOUN,KATAKANA,,-,,ネクタイ,nekutai,krawat,
 WORD_NOUN,HIRAGANA,,母,,はは,haha,matka,h...
 WORD_NOUN,KATAKANA,,-,,バレンタインデー,barentai dee,walentynki,
-WORD_NOUN,KATAKANA,,-,,ビデオカメラ,bideo kamera,kamera,
+WORD_NOUN,KATAKANA,,-,,ビデオカメラ,bideo kamera,kamera video,
 WORD_NOUN,HIRAGANA,,夫婦,,ふうふ,fuufu,małżeństwo,
 WORD_NOUN,KATAKANA,,-,,ホワイトデー,howaito dee,biały dzień,miesiąc po walentynkach
 WORD_NOUN,KATAKANA,,-,,マフラー,mafuraa,szalik,zimowy
@@ -1286,6 +1286,85 @@ WORD_COUNTERS,HIRAGANA,,冊,,さつ,satsu,[liczenie wolumenów],~
 WORD_COUNTERS,HIRAGANA,,台,,だい,dai,[liczenie urządzeń],~
 WORD_COUNTERS,HIRAGANA,,匹,,ひき,hiki,[liczenie małych zwierząt],~
 WORD_COUNTERS,HIRAGANA,,本,,ほん,hon,[liczenie długich przedmiotów],~
+WORD_COUNTERS,HIRAGANA,,枚,,まい,mai,[liczenie płaskich przedmiotów],~
+WORD_COUNTERS,HIRAGANA,,つ,,つ,tsu,[ogólny klasyfikator],~
+WORD_COUNTERS,HIRAGANA,,一個,,いっこ,ikko,jeden,małe przedmioty
+WORD_COUNTERS,HIRAGANA,,二個,,にこ,niko,dwa,małe przedmioty
+WORD_COUNTERS,HIRAGANA,,三個,,さんこ,sanko,trzy,małe przedmioty
+WORD_COUNTERS,HIRAGANA,,四個,,よんこ,yonko,cztery,małe przedmioty
+WORD_COUNTERS,HIRAGANA,,五個,,ごこ,goko,pięć,małe przedmioty
+WORD_COUNTERS,HIRAGANA,,六個,,ろっこ,rokko,sześć,małe przedmioty
+WORD_COUNTERS,HIRAGANA,,七個,,ななこ,nanako,siedem,małe przedmioty
+WORD_COUNTERS,HIRAGANA,,八個,,はっこ,hakko,osiem,małe przedmioty
+WORD_COUNTERS,HIRAGANA,,九個,,きゅうこ,kyuuko,dziewięć,małe przedmioty
+WORD_COUNTERS,HIRAGANA,,十個,,じゅっこ,juuko,dziesięć,małe przedmioty
+WORD_COUNTERS,HIRAGANA,,何個,,なんこ,nanko,jak wiele,"małe przedmioty, n..."
+WORD_COUNTERS,HIRAGANA,,-,,いくつ,ikutsu,jak wiele,"małe przedmioty, i..."
+WORD_COUNTERS,HIRAGANA,,一冊,,いっさつ,issatsu,jeden,wolumeny
+WORD_COUNTERS,HIRAGANA,,二冊,,にさつ,nisatsu,dwa,wolumeny
+WORD_COUNTERS,HIRAGANA,,三冊,,さんさつ,sansatsu,trzy,wolumeny
+WORD_COUNTERS,HIRAGANA,,四冊,,よんさつ,yonsatsu,cztery,wolumeny
+WORD_COUNTERS,HIRAGANA,,五冊,,ごさつ,gosatsu,pięć,wolumeny
+WORD_COUNTERS,HIRAGANA,,六冊,,ろくさつ,rokusatsu,sześć,wolumeny
+WORD_COUNTERS,HIRAGANA,,七冊,,ななさつ,nanasatsu,siedem,wolumeny
+WORD_COUNTERS,HIRAGANA,,八冊,,はっさつ,hassatsu,osiem,wolumeny
+WORD_COUNTERS,HIRAGANA,,九冊,,きゅうさつ,kyuusatsu,dziewięć,wolumeny
+WORD_COUNTERS,HIRAGANA,,十冊,,じゅうさつ,juusatsu,dziesięć,wolumeny
+WORD_COUNTERS,HIRAGANA,,何冊,,なんさつ,nansatsu,jak wiele,wolumeny
+WORD_COUNTERS,HIRAGANA,,一匹,,いっぴき,ippiki,jeden,małe zwierzęta
+WORD_COUNTERS,HIRAGANA,,二匹,,にひき,nihiki,dwa,małe zwierzęta
+WORD_COUNTERS,HIRAGANA,,三匹,,さんびき,sanbiki,trzy,małe zwierzęta
+WORD_COUNTERS,HIRAGANA,,四匹,,よんひき,yonhiki,cztery,małe zwierzęta
+WORD_COUNTERS,HIRAGANA,,五匹,,ごひき,gohiki,pięć,małe zwierzęta
+WORD_COUNTERS,HIRAGANA,,六匹,,ろっぴき,roppiki,sześć,małe zwierzęta
+WORD_COUNTERS,HIRAGANA,,七匹,,ななひき,nanahiki,siedem,małe zwierzęta
+WORD_COUNTERS,HIRAGANA,,八匹,,はっぴき,happiki,osiem,małe zwierzęta
+WORD_COUNTERS,HIRAGANA,,九匹,,きゅうひき,kyuuhiki,dziewięć,małe zwierzęta
+WORD_COUNTERS,HIRAGANA,,十匹,,じゅうぴき,juupiki,dziesięć,małe zwierzęta
+WORD_COUNTERS,HIRAGANA,,何匹,,なんびき,nanbiki,jak wiele,małe zwierzęta
+WORD_COUNTERS,HIRAGANA,,一本,,いっぽん,ippon,jeden,długie przedmioty
+WORD_COUNTERS,HIRAGANA,,二本,,にほん,nihon,dwa,długie przedmioty
+WORD_COUNTERS,HIRAGANA,,三本,,さんぼん,sanbon,trzy,długie przedmioty
+WORD_COUNTERS,HIRAGANA,,四本,,よんほん,yonhon,cztery,długie przedmioty
+WORD_COUNTERS,HIRAGANA,,五本,,ごほん,gohon,pięć,długie przedmioty
+WORD_COUNTERS,HIRAGANA,,六本,,ろっぽん,roppon,sześć,długie przedmioty
+WORD_COUNTERS,HIRAGANA,,七本,,ななほん,nanahon,siedem,długie przedmioty
+WORD_COUNTERS,HIRAGANA,,八本,,はっぽん,happon,osiem,długie przedmioty
+WORD_COUNTERS,HIRAGANA,,九本,,きゅうほん,kyuuhon,dziewięć,długie przedmioty
+WORD_COUNTERS,HIRAGANA,,十本,,じゅうぽん,juubon,dziesięć,długie przedmioty
+WORD_COUNTERS,HIRAGANA,,何本,,なんぼん,nanbon,jak wiele,długie przedmioty
+WORD_COUNTERS,HIRAGANA,,一台,,いちだい,ichidai,jeden,urządzenia
+WORD_COUNTERS,HIRAGANA,,二台,,にだい,nidai,dwa,urządzenia
+WORD_COUNTERS,HIRAGANA,,三台,,さんだい,sandai,trzy,urządzenia
+WORD_COUNTERS,HIRAGANA,,四台,,よんだい,yondai,cztery,urządzenia
+WORD_COUNTERS,HIRAGANA,,五台,,ごだい,godai,pięć,urządzenia
+WORD_COUNTERS,HIRAGANA,,六台,,ろくだい,rokudai,sześć,urządzenia
+WORD_COUNTERS,HIRAGANA,,七台,,ななだい,nanadai,siedem,urządzenia
+WORD_COUNTERS,HIRAGANA,,八台,,はちだい,hachidai,osiem,urządzenia
+WORD_COUNTERS,HIRAGANA,,九台,,きゅうだい,kyuudai,dziewięć,urządzenia
+WORD_COUNTERS,HIRAGANA,,十台,,じゅうだい,juudai,dziesięć,urządzenia
+WORD_COUNTERS,HIRAGANA,,何台,,なんだい,nandai,jak wiele,urządzenia
+WORD_COUNTERS,HIRAGANA,,一枚,,いちまい,ichimai,jeden,płaskie przedmioty
+WORD_COUNTERS,HIRAGANA,,二枚,,にまい,nimai,dwa,płaskie przedmioty
+WORD_COUNTERS,HIRAGANA,,三枚,,さんまい,sanmai,trzy,płaskie przedmioty
+WORD_COUNTERS,HIRAGANA,,四枚,,よんまい,yonmai,cztery,płaskie przedmioty
+WORD_COUNTERS,HIRAGANA,,五枚,,ごまい,gomai,pięć,płaskie przedmioty
+WORD_COUNTERS,HIRAGANA,,六枚,,ろくまい,rokumai,sześć,płaskie przedmioty
+WORD_COUNTERS,HIRAGANA,,七枚,,ななまい,nanamai,siedem,płaskie przedmioty
+WORD_COUNTERS,HIRAGANA,,八枚,,はちまい,hachimai,osiem,płaskie przedmioty
+WORD_COUNTERS,HIRAGANA,,九枚,,きゅうまい,kyuumai,dziewięć,płaskie przedmioty
+WORD_COUNTERS,HIRAGANA,,十枚,,じゅうまい,juumai,dziesięć,płaskie przedmioty
+WORD_COUNTERS,HIRAGANA,,何枚,,なんまい,nanmai,jak wiele,płaskie przedmioty
+WORD_COUNTERS,HIRAGANA,,一つ,,ひとつ,hitotsu,jeden,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,二つ,,ふたつ,futatsu,dwa,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,三つ,,みっつ,mittsu,trzy,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,四つ,,よっつ,yottsu,cztery,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,五つ,,いつつ,itsutsu,pięć,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,六つ,,むっつ,muttsu,sześć,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,七つ,,ななつ,nanatsu,siedem,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,八つ,,やっつ,yattsu,osiem,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,九つ,,ここのつ,kokonotsu,dziewięć,klasyfikator ogólny
+WORD_COUNTERS,HIRAGANA,,十,,とお,too,dziesięć,klasyfikator ogólny
 WORD_NOUN,HIRAGANA,,悩み,,なやみ,nayami,zmartwienie,
 WORD_NOUN,KATAKANA,,-,,アドバイス,adobaisu,rada,
 UNKNOWN,HIRAGANA,,年上,,としうえ,toshiue,stać się starszy,
