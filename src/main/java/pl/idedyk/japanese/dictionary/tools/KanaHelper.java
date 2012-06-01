@@ -179,17 +179,17 @@ public class KanaHelper {
 		katakanaEntries.add(new KanaEntry("サ", "sa"));
 		katakanaEntries.add(new KanaEntry("シ", "shi"));
 		katakanaEntries.add(new KanaEntry("ス", "su"));
-		katakanaEntries.add(new KanaEntry("せ", "se"));
+		katakanaEntries.add(new KanaEntry("セ", "se"));
 		katakanaEntries.add(new KanaEntry("ソ", "so"));
 		
 		katakanaEntries.add(new KanaEntry("タ", "ta"));
-		katakanaEntries.add(new KanaEntry("千", "chi"));
+		katakanaEntries.add(new KanaEntry("チ", "chi"));
 		katakanaEntries.add(new KanaEntry("ツ", "tsu"));
 		katakanaEntries.add(new KanaEntry("テ", "te"));
 		katakanaEntries.add(new KanaEntry("ト", "to"));
 		
 		katakanaEntries.add(new KanaEntry("ナ", "na"));
-		katakanaEntries.add(new KanaEntry("二", "ni"));
+		katakanaEntries.add(new KanaEntry("ニ", "ni"));
 		katakanaEntries.add(new KanaEntry("ヌ", "nu"));
 		katakanaEntries.add(new KanaEntry("ネ", "ne"));
 		katakanaEntries.add(new KanaEntry("ノ", "no"));

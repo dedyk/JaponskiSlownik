@@ -94,9 +94,15 @@ public class GenkiBookWords {
 		}
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
-			List<String> romajiList = polishJapaneseEntry.getRomajiList();
 			
-			for (String currentRomaji : romajiList) {
+			List<String> kanaList = polishJapaneseEntry.getKanaList();
+			List<String> romajiList = polishJapaneseEntry.getRomajiList();
+			String prefix = polishJapaneseEntry.getPrefix();
+			
+			for (int idx = 0; idx < romajiList.size(); ++idx) {
+				
+				String currentRomaji = romajiList.get(idx);
+				String currentKana = kanaList.get(idx);
 				
 				KanaWord kanaWord = null;
 				
@@ -110,6 +116,22 @@ public class GenkiBookWords {
 				
 				if (kanaWord.remaingRestChars.equals("") == false) {
 					throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ", remaing: " + kanaWord.remaingRestChars);
+				}
+				
+				if (currentRomaji.equals("ajiakenkyuu") == true ||
+						currentRomaji.equals("pinku iro no") == true ||
+						currentRomaji.equals("saboru") == true ||
+						currentRomaji.equals("daietto suru") == true ||
+						currentRomaji.equals("niyaniya suru") == true ||
+						currentRomaji.equals("puropoozu suru") == true ||
+						currentRomaji.equals("to tsu") == true ||
+						currentRomaji.equals("ki tsu") == true ||
+						currentRomaji.equals("ga tsu") == true) {
+					continue;
+				}
+				
+				if ((prefix + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
+					throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ": " + currentKana + " - " + KanaHelper.createKanaString(kanaWord));
 				}
 			}
 		}
