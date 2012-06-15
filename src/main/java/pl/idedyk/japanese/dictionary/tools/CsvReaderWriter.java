@@ -14,7 +14,6 @@ import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.genki.WordType;
 
 public class CsvReaderWriter {
 
@@ -24,14 +23,14 @@ public class CsvReaderWriter {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
-			List<String> romajiList = polishJapaneseEntry.getRomajiList();
+			List<String> kanaList = polishJapaneseEntry.getKanaList();
 
-			for (int romIdx = 0; romIdx < romajiList.size(); ++romIdx) {
-				String currentRomajiEntry = romajiList.get(romIdx);
+			for (int kanaIdx = 0; kanaIdx < kanaList.size(); ++kanaIdx) {
+				String currentKanaEntry = kanaList.get(kanaIdx);
 								
-				sb.append(polishJapaneseEntry.getWordType().getPrintable() + ":" + currentRomajiEntry);
+				sb.append(currentKanaEntry);
 
-				if (romIdx != romajiList.size() - 1) {
+				if (kanaIdx != kanaList.size() - 1) {
 					sb.append(",");
 				}					
 			}
@@ -125,13 +124,10 @@ public class CsvReaderWriter {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
-			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
-			csvWriter.write(polishJapaneseEntry.getWordType().toString());						
+			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());					
 			csvWriter.write(polishJapaneseEntry.getPrefix());
 			csvWriter.write(polishJapaneseEntry.getKanji());
-			csvWriter.write(polishJapaneseEntry.getKanjiImagePath());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getKanaList()));
-			csvWriter.write(convertListToString(polishJapaneseEntry.getRomajiList()));
 			csvWriter.write(convertListToString(polishJapaneseEntry.getPolishTranslates()));
 			csvWriter.write(polishJapaneseEntry.getInfo());
 			
@@ -150,29 +146,23 @@ public class CsvReaderWriter {
 		while(csvReader.readRecord()) {
 			
 			String dictionaryEntryType = csvReader.get(0);
-			String wordTypeString = csvReader.get(1);
-			String prefixString = csvReader.get(2);
-			String kanjiString = csvReader.get(3);
+			String prefixString = csvReader.get(1);
+			String kanjiString = csvReader.get(2);
 			
 			if (kanjiString.equals("") == true) {
 				throw new JapaneseDictionaryException("Empty kanji!");
 			}
 			
-			String kanjiImagePathString = csvReader.get(4);
-			String kanaListString = csvReader.get(5);
-			String romajiListString = csvReader.get(6);
-			String polishTranslateListString = csvReader.get(7);
-			String infoString = csvReader.get(8);
+			String kanaListString = csvReader.get(3);
+			String polishTranslateListString = csvReader.get(4);
+			String infoString = csvReader.get(5);
 			
 			PolishJapaneseEntry entry = new PolishJapaneseEntry();
 			
 			entry.setDictionaryEntryType(DictionaryEntryType.valueOf(dictionaryEntryType));
-			entry.setWordType(WordType.valueOf(wordTypeString));
 			entry.setPrefix(prefixString);
 			entry.setKanji(kanjiString);
-			entry.setKanjiImagePath(kanjiImagePathString);
 			entry.setKanaList(parseStringIntoList(kanaListString));
-			entry.setRomajiList(parseStringIntoList(romajiListString));
 			entry.setPolishTranslates(parseStringIntoList(polishTranslateListString));
 			
 			entry.setInfo(infoString);
