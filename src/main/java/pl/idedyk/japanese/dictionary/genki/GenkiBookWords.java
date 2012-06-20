@@ -79,7 +79,7 @@ public class GenkiBookWords {
 	}
 		
 	private static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, List<KanaEntry> hiraganaEntries,
-			List<KanaEntry> kitakanaEntries) throws JapaneseDictionaryException {
+			List<KanaEntry> katakanaEntries) throws JapaneseDictionaryException {
 		
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
 		
@@ -89,7 +89,7 @@ public class GenkiBookWords {
 
 		Map<String, KanaEntry> katakanaCache = new HashMap<String, KanaEntry>();
 		
-		for (KanaEntry kanaEntry : kitakanaEntries) {
+		for (KanaEntry kanaEntry : katakanaEntries) {
 			katakanaCache.put(kanaEntry.getKana(), kanaEntry);
 		}
 		
@@ -105,6 +105,9 @@ public class GenkiBookWords {
 				String currentKana = kanaList.get(idx);
 				
 				KanaWord kanaWord = null;
+				KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord(currentKana, hiraganaEntries, katakanaEntries);
+				
+				String currentKanaAsRomaji = KanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
 				
 				if (polishJapaneseEntry.getWordType() == WordType.HIRAGANA) { 
 					kanaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, currentRomaji);
@@ -130,8 +133,34 @@ public class GenkiBookWords {
 					continue;
 				}
 				
+				if (currentKanaAsRomaji.equals("ajiakenkyuu") == true ||
+						currentKanaAsRomaji.equals("pinkuirono") == true ||
+						currentKanaAsRomaji.equals("saboru") == true ||
+						currentKanaAsRomaji.equals("daiettosuru") == true ||
+						currentKanaAsRomaji.equals("niyaniyasuru") == true ||
+						currentKanaAsRomaji.equals("puropoozusuru") == true ||
+						currentKana.equals("とっ") == true ||
+						currentKana.equals("きっ") == true ||
+						currentKana.equals("がっ") == true) {
+					continue;
+				}
+								
 				if ((prefix + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
 					throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ": " + currentKana + " - " + KanaHelper.createKanaString(kanaWord));
+				}
+				
+				// is hiragana word
+				KanaWord currentKanaAsRomajiAsHiraganaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, currentKanaAsRomaji);
+				String currentKanaAsRomajiAsHiraganaWordAsAgainKana = KanaHelper.createKanaString(currentKanaAsRomajiAsHiraganaWord);
+
+				// is katakana word
+				KanaWord currentKanaAsRomajiAsKatakanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, currentKanaAsRomaji);
+				String currentKanaAsRomajiAsKatakanaWordAsAgainKana = KanaHelper.createKanaString(currentKanaAsRomajiAsKatakanaWord);
+
+				if (currentKana.equals(currentKanaAsRomajiAsHiraganaWordAsAgainKana) == false &&
+						currentKana.equals(currentKanaAsRomajiAsKatakanaWordAsAgainKana) == false) {
+
+					throw new JapaneseDictionaryException("Validate error for word: " + currentKana + " (" + currentKanaAsRomaji + ") vs " + currentKanaAsRomajiAsHiraganaWordAsAgainKana + " or " + currentKanaAsRomajiAsKatakanaWordAsAgainKana);					
 				}
 			}
 		}
