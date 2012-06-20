@@ -17,7 +17,7 @@ import pl.idedyk.japanese.dictionary.tools.KanjiImageWriter;
 public class GenkiBookWords {
 
 	public static void main(String[] args) throws IOException, JapaneseDictionaryException {
-		
+
 		String kanjiOutputDir = "output";
 		Map<String, String> charsCache = new HashMap<String, String>();
 		
@@ -77,7 +77,7 @@ public class GenkiBookWords {
 			KanjiImageWriter.createNewKanjiImage(kanjiCache, imageDir, polishJapaneseEntry);
 		}
 	}
-	
+		
 	private static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, List<KanaEntry> hiraganaEntries,
 			List<KanaEntry> kitakanaEntries) throws JapaneseDictionaryException {
 		
@@ -96,53 +96,16 @@ public class GenkiBookWords {
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 			
 			List<String> kanaList = polishJapaneseEntry.getKanaList();
+			List<String> romajiList = polishJapaneseEntry.getRomajiList();
+			String prefix = polishJapaneseEntry.getPrefix();
 			
-			for (int idx = 0; idx < kanaList.size(); ++idx) {
+			for (int idx = 0; idx < romajiList.size(); ++idx) {
 				
+				String currentRomaji = romajiList.get(idx);
 				String currentKana = kanaList.get(idx);
 				
-				KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord(currentKana, hiraganaEntries, kitakanaEntries);
-				
-				String currentKanaAsRomaji = KanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
-				
-				if (currentKanaAsRomaji.equals("ajiakenkyuu") == true ||
-						currentKanaAsRomaji.equals("pinkuirono") == true ||
-						currentKanaAsRomaji.equals("saboru") == true ||
-						currentKanaAsRomaji.equals("daiettosuru") == true ||
-						currentKanaAsRomaji.equals("niyaniyasuru") == true ||
-						currentKanaAsRomaji.equals("puropoozusuru") == true ||
-						currentKana.equals("とっ") == true ||
-						currentKana.equals("きっ") == true ||
-						currentKana.equals("がっ") == true) {
-					continue;
-				}
-				
-				// is hiragana word
-				KanaWord currentKanaAsRomajiAsHiraganaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, currentKanaAsRomaji);
-				String currentKanaAsRomajiAsHiraganaWordAsAgainKana = KanaHelper.createKanaString(currentKanaAsRomajiAsHiraganaWord);
-				
-				// is katakana word
-				KanaWord currentKanaAsRomajiAsKatakanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, currentKanaAsRomaji);
-				String currentKanaAsRomajiAsKatakanaWordAsAgainKana = KanaHelper.createKanaString(currentKanaAsRomajiAsKatakanaWord);
-				
-				if (currentKana.equals(currentKanaAsRomajiAsHiraganaWordAsAgainKana) == false &&
-						currentKana.equals(currentKanaAsRomajiAsKatakanaWordAsAgainKana) == false) {
-					
-					throw new JapaneseDictionaryException("Validate error for word: " + currentKana + " (" + currentKanaAsRomaji + ") vs " + currentKanaAsRomajiAsHiraganaWordAsAgainKana + " or " + currentKanaAsRomajiAsKatakanaWordAsAgainKana);					
-				}
-				
-				/*
-				String currentKanaAfterConvert = KanaHelper.createKanaString(currentKanaAsKanaAsKanaWord);
-				
-				if (currentKana.equals(currentKanaAfterConvert) == false) {
-					throw new JapaneseDictionaryException("Validate error for word: " + currentKana);
-				}
-				*/
-				
-				
-				/*
 				KanaWord kanaWord = null;
-								
+				
 				if (polishJapaneseEntry.getWordType() == WordType.HIRAGANA) { 
 					kanaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, currentRomaji);
 				} else if (polishJapaneseEntry.getWordType() == WordType.KATAKANA) { 
@@ -170,8 +133,6 @@ public class GenkiBookWords {
 				if ((prefix + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
 					throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ": " + currentKana + " - " + KanaHelper.createKanaString(kanaWord));
 				}
-				*/
-				
 			}
 		}
 	}

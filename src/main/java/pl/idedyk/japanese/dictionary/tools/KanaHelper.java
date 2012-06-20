@@ -1,7 +1,6 @@
 package pl.idedyk.japanese.dictionary.tools;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -20,53 +19,7 @@ public class KanaHelper {
 		
 		return sb.toString();
 	}
-
-	public static String createRomajiString(KanaWord kanaWord) {
-		
-		StringBuffer sb = new StringBuffer();
-		
-		boolean repeat = false;
-		boolean lastN = false;
-		
-		for (KanaEntry kanaEntry : kanaWord.kanaEntries) {
-			String kana = kanaEntry.getKana();
-			
-			if (lastN == true && (kana.startsWith("y") == true || kana.equals("i") == true)) {				
-				sb.append("'");
-				
-				lastN = true;	
-			} else {
-				lastN = false;
-			}
-			
-			if (kana.equals("ttsu") == true) {
-				repeat = true;
-				
-				continue;
-			}
-			
-			if (kana.equals("ttsu2") == true) {
-				sb.append(sb.charAt(sb.length() - 1));
-				
-				continue;				
-			}
-			
-			if (repeat == true) {
-				repeat = false;
-				
-				sb.append(kana.charAt(0));
-			}
-			
-			sb.append(kana);
-			
-			if (kana.equals("n") == true) {
-				lastN = true; 
-			}
-		}
-		
-		return sb.toString();
-	}
-
+	
 	public static List<KanaEntry> getAllHiraganaKanaEntries() {
 		
 		List<KanaEntry> hiraganaEntries = new ArrayList<KanaEntry>();
@@ -1167,80 +1120,4 @@ public class KanaHelper {
 			return false;
 		}
 	}
-	
-	public static KanaWord convertKanaStringIntoKanaWord(String kana, List<KanaEntry> hiraganaEntries, List<KanaEntry> kitakanaEntries) {
-		
-		Map<String, KanaEntry> kanaCache = new HashMap<String, KanaEntry>();
-		
-		for (KanaEntry kanaEntry : hiraganaEntries) {
-			kanaCache.put(kanaEntry.getKanaJapanese(), kanaEntry);
-		}
-		
-		for (KanaEntry kanaEntry : kitakanaEntries) {
-			kanaCache.put(kanaEntry.getKanaJapanese(), kanaEntry);
-		}
-				
-		List<KanaEntry> kanaResultEntries = new ArrayList<KanaEntry>();
-		
-		int pos = 0;
-		
-		while(true) {
-			if (pos >= kana.length()) {
-				break;
-			}
-			
-			String nextDoubleKanaPart = getNextDoubleKanaPart(kana, pos);
-			
-			if (nextDoubleKanaPart != null) {
-				KanaEntry nextDoubleKanaPartKanaEntry = kanaCache.get(nextDoubleKanaPart);
-				
-				if (nextDoubleKanaPartKanaEntry != null) {
-					kanaResultEntries.add(nextDoubleKanaPartKanaEntry);
-					
-					pos += 2;
-					
-					continue;
-				}
-			}
-			
-			String nextSingleKanaPart = getNextSingleKanaPart(kana, pos);
-			
-			if (nextSingleKanaPart != null) {
-				KanaEntry nextSingleKanaPartKanaEntry = kanaCache.get(nextSingleKanaPart);
-				
-				if (nextSingleKanaPartKanaEntry != null) {
-					kanaResultEntries.add(nextSingleKanaPartKanaEntry);
-					
-					pos += 1;
-					
-					continue;
-				} else {
-					throw new RuntimeException(kana);
-				}
-			}
-		}
-		
-		KanaWord result = new KanaWord();
-		
-		result.kanaEntries = kanaResultEntries;
-		
-		return result;
-	}
-	
-	private static String getNextDoubleKanaPart(String kana, int startPos) {
-		if (kana.length() < startPos + 2) {
-			return null;
-		}
-		
-		return kana.substring(startPos, startPos + 2);
-	}
-
-	private static String getNextSingleKanaPart(String kana, int startPos) {
-		if (kana.length() < startPos) {
-			return null;
-		}
-		
-		return kana.substring(startPos, startPos + 1);
-	}
-
 }
