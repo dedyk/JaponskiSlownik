@@ -763,7 +763,8 @@ UNKNOWN,HIRAGANA,,何も,,なにも,nanimo,nic,co
 UNKNOWN,HIRAGANA,,-,,だれも,daremo,nikt,do osób
 UNKNOWN,HIRAGANA,,-,,どれも,doremo,żaden,który
 UNKNOWN,HIRAGANA,,-,,どこも,dokomo,nigdzie,miejsce
-UNKNOWN,HIRAGANA,,-,,について,nitsuite,o czymś,
+UNKNOWN,HIRAGANA,,-,,について,nitsuite,"o czymś
+o czymś",...
 UNKNOWN,HIRAGANA,,-,,いつか,itsuka,któregoś dnia,czas
 WORD_VERB_U,HIRAGANA,,疲れている,,つかれている,tsukarete iru,być zmęczony,
 UNKNOWN,HIRAGANA,,-,,まず,mazu,pierwszy,
@@ -945,7 +946,7 @@ WORD_NOUN,HIRAGANA,,山,,やま,yama,góra,
 WORD_NOUN,HIRAGANA,,夢,,ゆめ,yume,marzenie,
 WORD_NOUN,KATAKANA,,-,,ルー厶メート,ruumumeeto,współlokator,
 WORD_VERB_U,HIRAGANA,,-,,うそをつく,uso wo tsuku,kłamać,
-WORD_VERB_U,HIRAGANA,,-,,おなかがすく,onaka ga suku,być głodnym,
+WORD_VERB_U,HIRAGANA,,-,,おなかがすく,onaka ga suku,być głodny,
 WORD_VERB_U,HIRAGANA,,飼う,,かう,kau,hodować,zwierzaka
 WORD_VERB_U,KATAKANA,,-,,サボる,saboru,opuszczać zajęcia,
 WORD_VERB_U,HIRAGANA,,取る,,とる,toru,zdać do następnej klasy,
@@ -1016,7 +1017,7 @@ UNKNOWN,HIRAGANA,,二人ずつ,,ふたりずつ,futarizutsu,dla każdych dwóch 
 WORD_NOUN,HIRAGANA,,足,,あし,ashi,"noga
 stopa",
 WORD_NOUN,HIRAGANA,,意味,,いみ,imi,znaczenie,
-WORD_NOUN,HIRAGANA,,-,,おなか,onaka,brzuch,
+WORD_NOUN,HIRAGANA,お,腹,,なか,onaka,brzuch,
 WORD_NOUN,HIRAGANA,,風邪,,かぜ,kaze,przeziębienie,
 WORD_NOUN,HIRAGANA,,彼女,,かのじょ,kanojo,narzeczona,
 WORD_NOUN,HIRAGANA,,彼,,かれ,kare,narzeczony,
@@ -1478,3 +1479,36 @@ WORD_VERB_U,HIRAGANA,,見下ろす,,みおろす,mi orosu,patrzeć w dół,
 WORD_EXPRESSION,HIRAGANA,,そびえ立つ,,そびえたつ,sobie tatsu,górować nad czymś,
 WORD_NOUN,HIRAGANA,,青空,,あおぞら,aozora,niebo,
 WORD_NOUN,HIRAGANA,,霞み,,かすみ,kasumi,mgła,
+WORD_NOUN,HIRAGANA,,前髪,,まえがみ,maegami,grzywka,
+WORD_EXPRESSION,HIRAGANA,,-,,まま,mama,"stan taki, jaki jest",~ no
+WORD_EXPRESSION,HIRAGANA,,今のまま,,いまのまま,ima no mama,"stan taki, jaki jest dzisiaj",
+WORD_VERB_U,HIRAGANA,,励ます,,はげます,hagemasu,"zachęcać kogoś
+podnosić na duchu",
+WORD_VERB_U,HIRAGANA,,気に入る,,きにはいる,ki ni hairu,spodobać się,
+WORD_EXPRESSION,HIRAGANA,,-,,やすい,yasui,łatwość robienia czegoś,+ czasownik bez masu
+WORD_EXPRESSION,HIRAGANA,,食べやすい,,たべやすい,tabe yasui,łatwość jedzenia,
+UNKNOWN,HIRAGANA,,本物,,ほんもの,honmono,prawdziwy,
+UNKNOWN,HIRAGANA,,贅沢,,ぜいたく,zeitaku,luksus,
+WORD_VERB_U,HIRAGANA,,-,,おなかがすく,onaka ga suku,być głodnym,
+WORD_VERB_U,HIRAGANA,,-,,おなかがすいた,onaka ga suita,jestem głodny,
+WORD_VERB_U,HIRAGANA,,腹減る,,はらへる,hara heru,być głodnym,
+WORD_EXPRESSION,HIRAGANA,,腹減った,,はらへった,hara hetta,jestem głodny,
+WORD_EXPRESSION,HIRAGANA,,小腹,,こばら,kobara,mały głodek,
+WORD_EXPRESSION,HIRAGANA,,小腹がすいた,,こばらがすいた,kobara ga suita,jestem troszeczkę głodny,
+WORD_ADJECTIVE_NA,HIRAGANA,,立派,,りっぱ,rippa,"wspaniały
+dojrzały",
+WORD_NOUN,KATAKANA,,-,,ランドセル,randoseru,tornister,
+WORD_VERB_U,HIRAGANA,,選ぶ,,えらぶ,erabu,wybierać,
+WORD_EXPRESSION,HIRAGANA,,一言,,ひとこと,hitokoto,prosić o wypowiedź,
+WORD_EXPRESSION,KATAKANA,,-,,ポイント,pointo,na co zwracać uwagę,
+WORD_EXPRESSION,HIRAGANA,,楽々,,らくらく,raku raku,łatwe,troszeczkę kombinowane
+WORD_EXPRESSION,HIRAGANA,,-,,おすすめ,osusume,polecane,
+WORD_EXPRESSION,HIRAGANA,,認定,,にんてい,nintei,"zatwierdzenie
+potwierdzenie",
+WORD_EXPRESSION,HIRAGANA,,-,,でかい,dekai,"ogromny
+gigantyczny",
+WORD_NOUN,HIRAGANA,,御萩,,おはぎ,ohagi,ciastko,rodzaj ciastka
+WORD_NOUN,HIRAGANA,,旧市街,,きゅうしがい,kyuushigai,stare miasto,
+UNKNOWN,HIRAGANA,,織物,,おりもの,orimono,tkactwo,
+WORD_NOUN,HIRAGANA,,工場,,こうじょう,koujou,fabryka,
+WORD_NOUN,HIRAGANA,,針,,はり,hari,igła,
