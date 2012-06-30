@@ -50,6 +50,10 @@ public enum DictionaryEntryType {
 	
 	WORD_PRONOUN("Zaimki"),
 	
+	WORD_HIRAGANA("Hiragana"),
+	
+	WORD_KATAKANA("Katakana"),
+	
 	UNKNOWN("unknown");
 	
 	private String name;
