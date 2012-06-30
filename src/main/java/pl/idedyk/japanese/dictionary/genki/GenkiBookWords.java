@@ -141,8 +141,7 @@ public class GenkiBookWords {
 						currentKanaAsRomaji.equals("puropoozusuru") == true ||
 						currentKana.equals("とっ") == true ||
 						currentKana.equals("きっ") == true ||
-						currentKana.equals("がっ") == true ||
-						currentKana.equals("ヂ") == true) {
+						currentKana.equals("がっ") == true) {
 					continue;
 				}
 								
