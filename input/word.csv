@@ -177,7 +177,7 @@ WORD_EXPRESSION,HIRAGANA,,-,,いらっしゃいませ,irasshaimase,Witamy,przy w
 WORD_EXPRESSION,HIRAGANA,を,お願いします,,おねがいします,wo onegai shimasu,... proszę,
 WORD_EXPRESSION,HIRAGANA,を,-,,ください,wo kudasai,Proszę dać mi ...,
 UNKNOWN,HIRAGANA,,-,,じゃあ,jaa,wtedy,
-UNKNOWN,HIRAGANA,を,-,,どうぞ,wo douzo,proszę,przy podawaniu komuś czegoś
+UNKNOWN,HIRAGANA,,-,,どうぞ,douzo,proszę,przy podawaniu komuś czegoś
 WORD_GREETING,HIRAGANA,,-,,どうも,doumo,dziękuję,przy otrzymywaniu czegoś
 WORD_EXPRESSION,HIRAGANA,,-,,です,desu,jest,oficjalnie
 WORD_EXPRESSION,HIRAGANA,,-,,でわありません,dewa arimasen,nie jest,oficjalnie
@@ -189,7 +189,7 @@ WORD_NUMBER,HIRAGANA,,千,,せん,sen,1000,
 WORD_NUMBER,HIRAGANA,,三千,,さんぜん,sanzen,3000,
 WORD_NUMBER,HIRAGANA,,八千,,はっせん,hassen,8000,
 WORD_NUMBER,HIRAGANA,,一万,,いちまん,ichiman,10000,
-WORD_NOUN,HIRAGANA,,黒板,,こくばん,kokuban,tablica,
+WORD_NOUN,HIRAGANA,,黒板,,こくばん,kokuban,tablica,czarna
 WORD_NOUN,KATAKANA,,-,,ビデオ,bideo,video,
 WORD_NOUN,KATAKANA,,-,,カーテン,kaaten,zasłonka,
 WORD_NOUN,KATAKANA,,-,,ドア,doa,drzwi,
@@ -197,8 +197,8 @@ WORD_NOUN,HIRAGANA,,消しゴム,,けしごむ,keshigomu,gumka,
 WORD_NOUN,HIRAGANA,,椅子,,いす,isu,krzesło,
 WORD_EXPRESSION,HIRAGANA,,-,,わかりました,Wakarimashita,zrozumiałem,
 WORD_EXPRESSION,HIRAGANA,,-,,わかりません,Wakarimasen,nie rozumiem,
-WORD_EXPRESSION,HIRAGANA,,ゆっくり行ってください,,ゆっくりいってください,Yukkuri itte kudasai,Proszę mówić wolno,
-WORD_EXPRESSION,HIRAGANA,,もういちど行ってください,,もういちどいってください,Mou ichido itte kudasai,Proszę powtórzyć,
+WORD_EXPRESSION,HIRAGANA,,ゆっくり言ってください,,ゆっくりいってください,Yukkuri itte kudasai,Proszę mówić wolno,
+WORD_EXPRESSION,HIRAGANA,,もういちど言ってください,,もういちどいってください,Mou ichido itte kudasai,Proszę powtórzyć,
 WORD_EXPRESSION,HIRAGANA,,ちょっと待ってください,,ちょっとまってください,Chotto matte kudasai,Proszę poczekać,
 WORD_ADJECTIVE_I,HIRAGANA,,赤い,,あかい,akai,czerwony,
 WORD_ADJECTIVE_I,HIRAGANA,,青い,,あおい,aoi,niebieski,
@@ -1516,3 +1516,4 @@ WORD_NOUN,HIRAGANA,,鍵,,かぎ,kagi,klucz,
 WORD_VERB_RU,HIRAGANA,,鍵をかける,,かぎをかける,kagi wo kakeru,zabezpieczyć,
 WORD_NOUN,HIRAGANA,,泥棒,,どろぼう,dorobou,złodziej,
 UNKNOWN,HIRAGANA,に,注意,,ちゅうい,ni chuui,ostrzeżenie przed,
+WORD_NOUN,KATAKANA,,-,,ホワイトボード,howaito boodo,tablica,biała
