@@ -1,18 +1,18 @@
-WORD_NUMBER,HIRAGANA,,零,,ぜろ,zero,zero,liczba: z...
-WORD_NUMBER,HIRAGANA,,零,,れい,rei,zero,liczba: r...
+WORD_NUMBER,HIRAGANA,,零,,ぜろ,zero,zero,z...
+WORD_NUMBER,HIRAGANA,,零,,れい,rei,zero,r...
 WORD_NUMBER,HIRAGANA,,一,,いち,ichi,jeden,
 WORD_NUMBER,HIRAGANA,,二,,に,ni,dwa,
 WORD_NUMBER,HIRAGANA,,三,,さん,san,trzy,
-WORD_NUMBER,HIRAGANA,,四,,よん,yon,cztery,liczba: y**...
-WORD_NUMBER,HIRAGANA,,四,,し,shi,cztery,liczba: sh...
-WORD_NUMBER,HIRAGANA,,四,,よ,yo,cztery,liczba: y*...
+WORD_NUMBER,HIRAGANA,,四,,よん,yon,cztery,y**...
+WORD_NUMBER,HIRAGANA,,四,,し,shi,cztery,sh...
+WORD_NUMBER,HIRAGANA,,四,,よ,yo,cztery,y*...
 WORD_NUMBER,HIRAGANA,,五,,ご,go,pięć,
 WORD_NUMBER,HIRAGANA,,六,,ろく,roku,sześć,
-WORD_NUMBER,HIRAGANA,,七,,なな,nana,siedem,liczba: n...
-WORD_NUMBER,HIRAGANA,,七,,しち,shichi,siedem,liczba: s...
+WORD_NUMBER,HIRAGANA,,七,,なな,nana,siedem,n...
+WORD_NUMBER,HIRAGANA,,七,,しち,shichi,siedem,s...
 WORD_NUMBER,HIRAGANA,,八,,はち,hachi,osiem,
-WORD_NUMBER,HIRAGANA,,九,,きゅう,kyuu,dziewięć,liczba: ky...
-WORD_NUMBER,HIRAGANA,,九,,く,ku,dziewięć,liczba: ku...
+WORD_NUMBER,HIRAGANA,,九,,きゅう,kyuu,dziewięć,ky...
+WORD_NUMBER,HIRAGANA,,九,,く,ku,dziewięć,ku...
 WORD_NUMBER,HIRAGANA,,十,,じゅう,juu,dziesięć,
 WORD_NUMBER,HIRAGANA,,百,,ひゃく,hyaku,sto,
 WORD_TIME,HIRAGANA,,一時,,いちじ,ichiji,1,godzina
@@ -63,7 +63,7 @@ WORD_GREETING,HIRAGANA,,-,,いいえ,Iie,nie,
 WORD_GREETING,HIRAGANA,,行ってきます,,いってきます,Ittekimasu,Wychodzę,Idę i wrócę
 WORD_GREETING,HIRAGANA,,行ってらっしゃい,,いってらっしゃい,Itterasshai,Wróć,Idź i wróć
 WORD_GREETING,HIRAGANA,,-,,ただいま,Tadaima,Już jestem,Po przybyciu do domu
-WORD_GREETING,HIRAGANA,,-,,おかえりなさい,Okaerinasai,Już jesteś,Będać w domu
+WORD_GREETING,HIRAGANA,,-,,おかえりなさい,Okaerinasai,Już jesteś,Będąc w domu
 WORD_GREETING,HIRAGANA,,-,,いただきます,Itadakimasu,Smacznego,Przed jedzeniem
 WORD_GREETING,HIRAGANA,,-,,ごちそうさま,Gochisousama,Smacznego,Po jedzeniu
 WORD_GREETING,HIRAGANA,,始めまして,,はじめまして,Hajimemashite,Przywitanie,Pierwsze spotkanie
@@ -123,8 +123,8 @@ WORD_NOUN,HIRAGANA,,主婦,,しゅふ,shufu,Pani domu,
 WORD_NOUN,HIRAGANA,,大学院生,,だいがくいんせい,daigakuinsei,student,studia magisterskie
 WORD_NOUN,HIRAGANA,,大学生,,だいがくせい,daigakusei,student,
 WORD_NOUN,HIRAGANA,,弁護士,,べんごし,bengoshi,prawnik,
-WORD_NOUN,HIRAGANA,,お母さん,,おかあさん,okaasan,matka,
-WORD_NOUN,HIRAGANA,,お父さん,,おとうさん,otousan,ojciec,
+WORD_NOUN,HIRAGANA,,お母さん,,おかあさん,okaasan,matka,spoza swojej rodziny lub własna rodzina - nieformalnie
+WORD_NOUN,HIRAGANA,,お父さん,,おとうさん,otousan,ojciec,spoza swojej rodziny lub własna rodzina - nieformalnie
 WORD_NOUN,HIRAGANA,,お姉さん,,おねえさん,oneesan,siostra,starsza
 WORD_NOUN,HIRAGANA,,お兄さん,,おにいさん,oniisan,brat,starszy
 WORD_NOUN,HIRAGANA,,妹,,いもうと,imouto,siostra,młodsza
@@ -211,11 +211,11 @@ WORD_NOUN,HIRAGANA,,酒,,さけ,sake,sake,
 WORD_NOUN,HIRAGANA,,牛,,うし,ushi,krowa,
 WORD_NOUN,HIRAGANA,,携帯電話,,けいたいでんわ,keitai denwa,telefon komórkowy,
 WORD_NOUN,KATAKANA,,-,,マーカー,maakaa,marker,
-WORD_NOUN,HIRAGANA,,母,,はは,haha,matka,h...
-WORD_NOUN,HIRAGANA,,父,,ちち,chichi,ojciec,ch...
+WORD_NOUN,HIRAGANA,,母,,はは,haha,matka,"własna rodzina, formalnie"
+WORD_NOUN,HIRAGANA,,父,,ちち,chichi,ojciec,"własna rodzina, formalnie"
 WORD_NOUN,HIRAGANA,,歯,,は,ha,ząb,
-WORD_NOUN,HIRAGANA,,日,,ひ,hi,słońce,s...
-WORD_NOUN,HIRAGANA,,日,,ひ,hi,ogień,o...
+WORD_NOUN,HIRAGANA,,日,,ひ,hi,słońce,
+WORD_NOUN,HIRAGANA,,日,,ひ,hi,ogień,
 WORD_NOUN,HIRAGANA,,耳,,みみ,mimi,ucho,
 WORD_NOUN,HIRAGANA,,目,,め,me,oko,
 WORD_NOUN,HIRAGANA,,桃,,もも,momo,brzoskwinia,
@@ -238,7 +238,7 @@ WORD_NOUN,HIRAGANA,,昼御飯,,ひるごはん,hirugohan,obiad,
 WORD_NOUN,HIRAGANA,,水,,みず,mizu,woda,
 WORD_NOUN,HIRAGANA,,家,,いえ,ie,dom,bardziej oficjalnie
 WORD_NOUN,HIRAGANA,,家,,うち,uchi,dom,moje miejsce
-WORD_NOUN,HIRAGANA,,-,,えるえる,erueru,laboratorium językowe,ll
+WORD_NOUN,KATAKANA,,-,,エルエル,erueru,laboratorium językowe,
 WORD_NOUN,HIRAGANA,,学校,,がっこう,gakkou,szkoła,
 UNKNOWN,HIRAGANA,,朝,,あさ,asa,rano,
 UNKNOWN,HIRAGANA,,明日,,あした,ashita,jutro,
@@ -296,10 +296,10 @@ WORD_PRONOUN,HIRAGANA,,-,,あなた,anata,ty,
 WORD_NOUN,HIRAGANA,,犬,,いぬ,inu,pies,
 WORD_NOUN,HIRAGANA,お,土産,,みやげ,omiyage,pamiątka,
 WORD_NOUN,HIRAGANA,,子供,,こども,kodomo,dziecko,
-WORD_NOUN,HIRAGANA,,御飯,,ごはん,gohan,jedzenie,j...
-WORD_NOUN,HIRAGANA,,御飯,,ごはん,gohan,ryż gotowany,r...
-WORD_NOUN,HIRAGANA,,写真,,しゃしん,shashin,rysunek,r...
-WORD_NOUN,HIRAGANA,,写真,,しゃしん,shashin,zdjęcie,zd...
+WORD_NOUN,HIRAGANA,,御飯,,ごはん,gohan,jedzenie,
+WORD_NOUN,HIRAGANA,,御飯,,ごはん,gohan,ryż gotowany,
+WORD_NOUN,HIRAGANA,,写真,,しゃしん,shashin,rysunek,
+WORD_NOUN,HIRAGANA,,写真,,しゃしん,shashin,zdjęcie,
 WORD_NOUN,HIRAGANA,,-,,つくえ,tsukue,stół,
 WORD_NOUN,HIRAGANA,,手紙,,てがみ,tegami,list,
 WORD_NOUN,HIRAGANA,,猫,,ねこ,neko,kot,
@@ -748,8 +748,8 @@ WORD_VERB_IRREGULAR,HIRAGANA,を,運転する,,うんてんする,wo unten suru,
 WORD_VERB_IRREGULAR,HIRAGANA,,洗濯する,,せんたくする,sentaku suru,robić pranie,
 WORD_VERB_IRREGULAR,HIRAGANA,,掃除する,,そうじする,souji suru,czyścić,
 WORD_VERB_IRREGULAR,HIRAGANA,,料理する,,りょうりする,ryouri suru,gotować,
-UNKNOWN,HIRAGANA,,-,,ううん,uun,nie,u...
-UNKNOWN,HIRAGANA,,-,,うん,un,tak,u...
+UNKNOWN,HIRAGANA,,-,,ううん,uun,nie,potocznie
+UNKNOWN,HIRAGANA,,-,,うん,un,tak,potocznie
 WORD_EXPRESSION,HIRAGANA,,乾杯,,かんぱい,kanpai,na zdrowie,toast
 UNKNOWN,HIRAGANA,,残念,,ざんねん,zannen,"trudno
 szkoda",... desu ne
@@ -1249,7 +1249,7 @@ WORD_NOUN,KATAKANA,,-,,チョコレート,chokoreeto,czekolada,
 WORD_NOUN,KATAKANA,,-,,メール,meeru,e-mail,
 WORD_NOUN,HIRAGANA,,-,,めいぐるみ,meigurumi,wypchane zwierze,np. pluszowy miś
 WORD_NOUN,KATAKANA,,-,,ネクタイ,nekutai,krawat,
-WORD_NOUN,HIRAGANA,,母,,はは,haha,matka,h...
+WORD_NOUN,HIRAGANA,,母,,はは,haha,matka,"własna rodzina, formalnie"
 WORD_NOUN,KATAKANA,,-,,バレンタインデー,barentain dee,walentynki,
 WORD_NOUN,KATAKANA,,-,,ビデオカメラ,bideo kamera,kamera video,
 WORD_NOUN,HIRAGANA,,夫婦,,ふうふ,fuufu,małżeństwo,
