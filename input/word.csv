@@ -1,18 +1,23 @@
-WORD_NUMBER,HIRAGANA,,零,,ぜろ,zero,zero,z...
-WORD_NUMBER,HIRAGANA,,零,,れい,rei,zero,r...
+WORD_NUMBER,HIRAGANA,,零,,"ぜろ
+れい","zero
+rei",zero,
 WORD_NUMBER,HIRAGANA,,一,,いち,ichi,jeden,
 WORD_NUMBER,HIRAGANA,,二,,に,ni,dwa,
 WORD_NUMBER,HIRAGANA,,三,,さん,san,trzy,
-WORD_NUMBER,HIRAGANA,,四,,よん,yon,cztery,y**...
-WORD_NUMBER,HIRAGANA,,四,,し,shi,cztery,sh...
-WORD_NUMBER,HIRAGANA,,四,,よ,yo,cztery,y*...
+WORD_NUMBER,HIRAGANA,,四,,"し
+よん
+よ","shi
+yon
+yo",cztery,
 WORD_NUMBER,HIRAGANA,,五,,ご,go,pięć,
 WORD_NUMBER,HIRAGANA,,六,,ろく,roku,sześć,
-WORD_NUMBER,HIRAGANA,,七,,なな,nana,siedem,n...
-WORD_NUMBER,HIRAGANA,,七,,しち,shichi,siedem,s...
+WORD_NUMBER,HIRAGANA,,七,,"なな
+しち","nana
+shichi",siedem,
 WORD_NUMBER,HIRAGANA,,八,,はち,hachi,osiem,
-WORD_NUMBER,HIRAGANA,,九,,きゅう,kyuu,dziewięć,ky...
-WORD_NUMBER,HIRAGANA,,九,,く,ku,dziewięć,ku...
+WORD_NUMBER,HIRAGANA,,九,,"きゅう
+く","kyuu
+ku",dziewięć,
 WORD_NUMBER,HIRAGANA,,十,,じゅう,juu,dziesięć,
 WORD_NUMBER,HIRAGANA,,百,,ひゃく,hyaku,sto,
 WORD_TIME,HIRAGANA,,一時,,いちじ,ichiji,1,godzina
@@ -35,8 +40,9 @@ WORD_TIME,HIRAGANA,,四分,,よんぷん,yonpun,cztery minuty,
 WORD_TIME,HIRAGANA,,五分,,ごふん,gofun,pięć minut,
 WORD_TIME,HIRAGANA,,六分,,ろっぷん,roppun,sześć minut,
 WORD_TIME,HIRAGANA,,七分,,ななふん,nanafun,siedem minut,
-WORD_TIME,HIRAGANA,,八分,,はっぷん,happun,osiem minut,hap...
-WORD_TIME,HIRAGANA,,八分,,はちふん,hachifun,osiem minut,hach...
+WORD_TIME,HIRAGANA,,八分,,"はっぷん
+はちふん","happun
+hachifun",osiem minut,
 WORD_TIME,HIRAGANA,,九分,,きゅうふん,kyuufun,dziewięć minut,
 WORD_TIME,HIRAGANA,,十分,,じゅっぷん,juppun,dziesięć minut,
 WORD_AGE,HIRAGANA,,一歳,,いっさい,issai,1,wiek
@@ -582,8 +588,9 @@ WORD_PEOPLE_NUMBER,HIRAGANA,,三人,,さんにん,sannin,troje ludzi,
 WORD_PEOPLE_NUMBER,HIRAGANA,,四人,,よにん,yonin,czworo ludzi,*
 WORD_PEOPLE_NUMBER,HIRAGANA,,五人,,ごにん,gonin,pięcioro ludzi,
 WORD_PEOPLE_NUMBER,HIRAGANA,,六人,,ろくにん,rokunin,sześcioro ludzi,
-WORD_PEOPLE_NUMBER,HIRAGANA,,七人,,しちにん,shichinin,siedmioro ludzi,s...
-WORD_PEOPLE_NUMBER,HIRAGANA,,七人,,ななにん,nananin,siedmioro ludzi,n...
+WORD_PEOPLE_NUMBER,HIRAGANA,,七人,,"しちにん
+ななにん","shichinin
+nananin",siedmioro ludzi,
 WORD_PEOPLE_NUMBER,HIRAGANA,,八人,,はちにん,hachinin,ośmioro ludzi,
 WORD_PEOPLE_NUMBER,HIRAGANA,,九人,,きゅうにん,kyuunin,dziewięcioro ludzi,
 WORD_PEOPLE_NUMBER,HIRAGANA,,十人,,じゅうにん,juunin,dziesięcioro ludzi,
@@ -627,10 +634,12 @@ WORD_NOUN,HIRAGANA,,兄,,あに,ani,starszy brat,"własna rodzina, formalnie"
 WORD_NOUN,HIRAGANA,,姉,,あね,ane,starsza siostra,"własna rodzina, formalnie"
 WORD_NOUN,HIRAGANA,,弟,,おとうと,otouto,młodszy brat,własna rodzina
 WORD_NOUN,HIRAGANA,,妹,,いもうと,imouto,młodsza siostra,własna rodzina
-WORD_NOUN,HIRAGANA,,主人,,しゅじん,shujin,mąż,"własna rodzina, formalnie, s..."
-WORD_NOUN,HIRAGANA,,夫,,おっと,otto,mąż,"własna rodzina, formalnie, o..."
-WORD_NOUN,HIRAGANA,,家内,,かない,kanai,żona,"własna rodzina, formalnie, k..."
-WORD_NOUN,HIRAGANA,,妻,,つま,tsuma,żona,"własna rodzina, formalnie, t..."
+WORD_NOUN,HIRAGANA,,主人,,"しゅじん
+おっと","shujin
+otto",mąż,"własna rodzina, formalnie"
+WORD_NOUN,HIRAGANA,,家内,,"かない
+つま","kanai
+tsuma",żona,"własna rodzina, formalnie"
 WORD_NOUN,HIRAGANA,,祖父,,そふ,sofu,dziadek,"własna rodzina, formalnie"
 WORD_NOUN,HIRAGANA,,祖母,,そぼ,sobo,babcia,"własna rodzina, formalnie"
 WORD_NOUN,HIRAGANA,,-,,おじいさん,ojiisan,dziadek,"własna rodzina, nieformalnie"
@@ -952,8 +961,8 @@ WORD_VERB_U,KATAKANA,,-,,サボる,saboru,opuszczać zajęcia,
 WORD_VERB_U,HIRAGANA,,取る,,とる,toru,zdać do następnej klasy,
 WORD_VERB_U,HIRAGANA,,習う,,ならう,narau,uczyć się,czegoś praktycznego
 WORD_VERB_U,HIRAGANA,に,登る,,のぼる,ni noboru,wspinać się,
-WORD_VERB_U,HIRAGANA,,働く,,はたらく,hataraku,pracować,h...
-WORD_VERB_IRREGULAR,HIRAGANA,,仕事をする,,しごとをする,shigoto wo suru,pracować,s...
+WORD_VERB_U,HIRAGANA,,働く,,はたらく,hataraku,pracować,
+WORD_VERB_IRREGULAR,HIRAGANA,,仕事をする,,しごとをする,shigoto wo suru,pracować,
 WORD_VERB_RU,HIRAGANA,に,勤める,,つとめる,ni tsutomeru,pracować dla,
 WORD_VERB_RU,HIRAGANA,,疲れる,,つかれる,tsukareru,być zmęczony,
 WORD_VERB_RU,HIRAGANA,,-,,やめる,yameru,rezygnować,
@@ -1299,8 +1308,8 @@ WORD_COUNTERS,HIRAGANA,,七個,,ななこ,nanako,siedem,małe przedmioty
 WORD_COUNTERS,HIRAGANA,,八個,,はっこ,hakko,osiem,małe przedmioty
 WORD_COUNTERS,HIRAGANA,,九個,,きゅうこ,kyuuko,dziewięć,małe przedmioty
 WORD_COUNTERS,HIRAGANA,,十個,,じゅっこ,jukko,dziesięć,małe przedmioty
-WORD_COUNTERS,HIRAGANA,,何個,,なんこ,nanko,jak wiele,"małe przedmioty, n..."
-WORD_COUNTERS,HIRAGANA,,-,,いくつ,ikutsu,jak wiele,"małe przedmioty, i..."
+WORD_COUNTERS,HIRAGANA,,何個,,なんこ,nanko,jak wiele,małe przedmioty
+WORD_COUNTERS,HIRAGANA,,-,,いくつ,ikutsu,jak wiele,małe przedmioty
 WORD_COUNTERS,HIRAGANA,,一冊,,いっさつ,issatsu,jeden,wolumeny
 WORD_COUNTERS,HIRAGANA,,二冊,,にさつ,nisatsu,dwa,wolumeny
 WORD_COUNTERS,HIRAGANA,,三冊,,さんさつ,sansatsu,trzy,wolumeny
