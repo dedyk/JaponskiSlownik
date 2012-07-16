@@ -8,11 +8,11 @@ public class ModifyDictionary {
 
 	public static void main(String[] args) throws Exception {
 		
-		checkPolishJapaneseEntries("input/word.csv", "input/word-temp.csv");
-		checkPolishJapaneseEntries("input/kanji_word.csv", "input/kanji_word-temp.csv");
+		checkPolishJapaneseEntries("input/word.csv", "input/word-temp.csv", "WORD");
+		checkPolishJapaneseEntries("input/word.csv", "input/kanji_word-temp.csv", "KANJI");
 	}
 	
-	private static void checkPolishJapaneseEntries(String sourceFileName, String destinationFileName) throws Exception {
+	private static void checkPolishJapaneseEntries(String sourceFileName, String destinationFileName, String filter) throws Exception {
 		
 		//List<KanaEntry> allKanaEntries = KanaHelper.getAllHiraganaKanaEntries();
 		//allKanaEntries.addAll(KanaHelper.getAllKatakanaKanaEntries());
@@ -25,7 +25,7 @@ public class ModifyDictionary {
 		}
 		*/
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName);
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName, filter);
 		
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 			
@@ -63,6 +63,6 @@ public class ModifyDictionary {
 			*/		
 		}
 		
-		CsvReaderWriter.generateCsv(destinationFileName, polishJapaneseEntries);
+		CsvReaderWriter.generateCsv(destinationFileName, polishJapaneseEntries, filter);
 	}
 }

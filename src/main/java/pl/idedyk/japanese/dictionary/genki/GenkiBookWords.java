@@ -30,12 +30,12 @@ public class GenkiBookWords {
 		generateKatakanaImages(katakanaEntries, charsCache, kanjiOutputDir);
 		
 		// Słowniczek
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", "WORD");
 		validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries);	
 		generateKanjiImages(polishJapaneseEntries, charsCache, kanjiOutputDir);
 		
 		// kanji dictionary
-		List<PolishJapaneseEntry> polishJapaneseKanjiEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/kanji_word.csv");
+		List<PolishJapaneseEntry> polishJapaneseKanjiEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", "KANJI");
 		validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries, katakanaEntries);
 		generateKanjiImages(polishJapaneseKanjiEntries, charsCache, kanjiOutputDir);
 		

@@ -1,13 +1,13 @@
 package pl.idedyk.japanese.dictionary.tools;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.List;
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//import java.sql.PreparedStatement;
+//import java.sql.SQLException;
+//import java.util.List;
 
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+//import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
 /*
@@ -30,13 +30,14 @@ public class DictionarySQLDatabaseLoader {
 	
 	public static void main(String[] args) throws IOException, JapaneseDictionaryException {
 		
+		/*
 		final String mysqlAddress = "jdbc:mysql://localhost/japdb?characterEncoding=utf8&user=japdbuser&password=japdbpasswd";
 		
 		loadDictionaryIntoDB(mysqlAddress, "words", "input/word.csv", "out/word.sql");
-		
+		*/
 		
 	}
-
+/*
 	private static void loadDictionaryIntoDB(String mysqlAddress, String tableName, String inputFileName, String outputFileName) throws IOException, JapaneseDictionaryException {
 		
 		final String insertStatementSql = "insert into " + tableName + " values(default, ?, ?, ?, ?, ?, ?, ?)";
@@ -101,4 +102,5 @@ public class DictionarySQLDatabaseLoader {
 		
 		return sb.toString();
 	}
+*/
 }
