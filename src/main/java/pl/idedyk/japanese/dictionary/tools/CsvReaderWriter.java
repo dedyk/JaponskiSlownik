@@ -125,6 +125,7 @@ public class CsvReaderWriter {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
+			csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
 			csvWriter.write(filterName);
 			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());						
@@ -150,29 +151,32 @@ public class CsvReaderWriter {
 		
 		while(csvReader.readRecord()) {
 			
-			String dictionaryType = csvReader.get(0);
+			int id = Integer.parseInt(csvReader.get(0));
+			
+			String dictionaryType = csvReader.get(1);
 			
 			if (dictionaryType.equals(filterName) == false) {
 				continue;
 			}
 			
-			String dictionaryEntryType = csvReader.get(1);
-			String wordTypeString = csvReader.get(2);
-			String prefixString = csvReader.get(3);
-			String kanjiString = csvReader.get(4);
+			String dictionaryEntryType = csvReader.get(2);
+			String wordTypeString = csvReader.get(3);
+			String prefixString = csvReader.get(4);
+			String kanjiString = csvReader.get(5);
 			
 			if (kanjiString.equals("") == true) {
 				throw new JapaneseDictionaryException("Empty kanji!");
 			}
 			
-			String kanjiImagePathString = csvReader.get(5);
-			String kanaListString = csvReader.get(6);
-			String romajiListString = csvReader.get(7);
-			String polishTranslateListString = csvReader.get(8);
-			String infoString = csvReader.get(9);
+			String kanjiImagePathString = csvReader.get(6);
+			String kanaListString = csvReader.get(7);
+			String romajiListString = csvReader.get(8);
+			String polishTranslateListString = csvReader.get(9);
+			String infoString = csvReader.get(10);
 			
 			PolishJapaneseEntry entry = new PolishJapaneseEntry();
 			
+			entry.setId(id);
 			entry.setDictionaryEntryType(DictionaryEntryType.valueOf(dictionaryEntryType));
 			entry.setWordType(WordType.valueOf(wordTypeString));
 			entry.setPrefix(prefixString);

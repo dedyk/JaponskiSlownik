@@ -7,6 +7,8 @@ import pl.idedyk.japanese.dictionary.genki.WordType;
 
 public class PolishJapaneseEntry {
 	
+	private int id;
+	
 	private DictionaryEntryType dictionaryEntryType;
 	
 	private WordType wordType;
@@ -103,11 +105,19 @@ public class PolishJapaneseEntry {
 
 	@Override
 	public String toString() {
-		return "PolishJapaneseEntry [dictionaryEntryType="
+		return "PolishJapaneseEntry [id=" + id + ", dictionaryEntryType="
 				+ dictionaryEntryType + ", wordType=" + wordType + ", prefix="
 				+ prefix + ", kanji=" + kanji + ", kanjiImagePath="
 				+ kanjiImagePath + ", kanaList=" + kanaList + ", romajiList="
 				+ romajiList + ", polishTranslates=" + polishTranslates
 				+ ", info=" + info + "]";
-	}	
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 }
