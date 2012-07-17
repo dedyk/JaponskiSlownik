@@ -14,6 +14,7 @@ import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.genki.DictionaryType;
 import pl.idedyk.japanese.dictionary.genki.WordType;
 
 public class CsvReaderWriter {
@@ -119,14 +120,14 @@ public class CsvReaderWriter {
 		pw.close();
 	}
 	
-	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries, String filterName) throws IOException {
+	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
 		
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
-			csvWriter.write(filterName);
+			csvWriter.write(polishJapaneseEntry.getDictionaryType().getName());
 			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());						
 			csvWriter.write(polishJapaneseEntry.getPrefix());
@@ -136,6 +137,7 @@ public class CsvReaderWriter {
 			csvWriter.write(convertListToString(polishJapaneseEntry.getRomajiList()));
 			csvWriter.write(convertListToString(polishJapaneseEntry.getPolishTranslates()));
 			csvWriter.write(polishJapaneseEntry.getInfo());
+			csvWriter.write(polishJapaneseEntry.isUseEntry() == false ? "NO" : "");
 			
 			csvWriter.endRecord();
 		}
@@ -155,7 +157,7 @@ public class CsvReaderWriter {
 			
 			String dictionaryType = csvReader.get(1);
 			
-			if (dictionaryType.equals(filterName) == false) {
+			if (filterName != null && dictionaryType.equals(filterName) == false) {
 				continue;
 			}
 			
@@ -173,10 +175,22 @@ public class CsvReaderWriter {
 			String romajiListString = csvReader.get(8);
 			String polishTranslateListString = csvReader.get(9);
 			String infoString = csvReader.get(10);
+			String useEntryString = csvReader.get(11);
+			
+			boolean useEntry = true;
+			
+			if (useEntryString != null) {
+				if (useEntryString.equals("NO")) {
+					useEntry = false;
+				} else if (useEntryString.equals("") == false) {
+					throw new JapaneseDictionaryException("Bad use entry string: " + useEntryString);
+				}
+			}
 			
 			PolishJapaneseEntry entry = new PolishJapaneseEntry();
 			
 			entry.setId(id);
+			entry.setDictionaryType(DictionaryType.valueOf(dictionaryType));
 			entry.setDictionaryEntryType(DictionaryEntryType.valueOf(dictionaryEntryType));
 			entry.setWordType(WordType.valueOf(wordTypeString));
 			entry.setPrefix(prefixString);
@@ -185,6 +199,7 @@ public class CsvReaderWriter {
 			entry.setKanaList(parseStringIntoList(kanaListString));
 			entry.setRomajiList(parseStringIntoList(romajiListString));
 			entry.setPolishTranslates(parseStringIntoList(polishTranslateListString));
+			entry.setUseEntry(useEntry);
 			
 			entry.setInfo(infoString);
 			

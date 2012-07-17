@@ -3,11 +3,14 @@ package pl.idedyk.japanese.dictionary.dto;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.genki.DictionaryType;
 import pl.idedyk.japanese.dictionary.genki.WordType;
 
 public class PolishJapaneseEntry {
 	
 	private int id;
+	
+	private DictionaryType dictionaryType;
 	
 	private DictionaryEntryType dictionaryEntryType;
 	
@@ -26,6 +29,8 @@ public class PolishJapaneseEntry {
 	private List<String> polishTranslates;
 	
 	private String info;
+	
+	private boolean useEntry;
 
 	public DictionaryEntryType getDictionaryEntryType() {
 		return dictionaryEntryType;
@@ -119,5 +124,21 @@ public class PolishJapaneseEntry {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public DictionaryType getDictionaryType() {
+		return dictionaryType;
+	}
+
+	public void setDictionaryType(DictionaryType dictionaryType) {
+		this.dictionaryType = dictionaryType;
+	}
+
+	public boolean isUseEntry() {
+		return useEntry;
+	}
+
+	public void setUseEntry(boolean useEntry) {
+		this.useEntry = useEntry;
 	}
 }

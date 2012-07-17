@@ -1,26 +1,30 @@
 package pl.idedyk.japanese.dictionary.tools;
 
 import java.io.IOException;
-//import java.sql.Connection;
-//import java.sql.DriverManager;
-//import java.sql.PreparedStatement;
-//import java.sql.SQLException;
-//import java.util.List;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.List;
 
-//import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
 /*
 
 create table words (
 	id int not null auto_increment, primary key(id),
-	dictionary_entry_type varchar(20) not null, index(dictionary_entry_type),
+	dictionary_type varchar(20) not null, index(dictionary_type),
+	dictionary_entry_type varchar(30) not null, index(dictionary_entry_type),
 	word_type varchar(20) not null, index(word_type),
+	prefix varchar(10) null,
 	kanji varchar(30) null, index(kanji),
 	kana_list varchar(100) not null,
 	romaji_list varchar(100) not null,
 	polish_translate_list varchar(100) not null,
-	info varchar(60) null,
+	info varchar(100) null,
+	use_entry varchar(10) null,
 	fulltext(kanji, kana_list, romaji_list, polish_translate_list)
 ) default character set = utf8 collate = utf8_polish_ci;
 
@@ -30,19 +34,19 @@ public class DictionarySQLDatabaseLoader {
 	
 	public static void main(String[] args) throws IOException, JapaneseDictionaryException {
 		
-		/*
+		
 		final String mysqlAddress = "jdbc:mysql://localhost/japdb?characterEncoding=utf8&user=japdbuser&password=japdbpasswd";
 		
-		loadDictionaryIntoDB(mysqlAddress, "words", "input/word.csv", "out/word.sql");
-		*/
+		loadDictionaryIntoDB(mysqlAddress, "words", "input/word.csv");
+		
 		
 	}
-/*
-	private static void loadDictionaryIntoDB(String mysqlAddress, String tableName, String inputFileName, String outputFileName) throws IOException, JapaneseDictionaryException {
+
+	private static void loadDictionaryIntoDB(String mysqlAddress, String tableName, String inputFileName) throws IOException, JapaneseDictionaryException {
 		
-		final String insertStatementSql = "insert into " + tableName + " values(default, ?, ?, ?, ?, ?, ?, ?)";
+		final String insertStatementSql = "insert into " + tableName + " values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(inputFileName);
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(inputFileName, null);
 		
 		Connection dbConnection = null;
 		PreparedStatement insertStatement = null;
@@ -55,13 +59,17 @@ public class DictionarySQLDatabaseLoader {
 				
 				insertStatement = dbConnection.prepareStatement(insertStatementSql);
 				
-				insertStatement.setString(1, polishJapaneseEntry.getDictionaryEntryType().toString());
-				insertStatement.setString(2, polishJapaneseEntry.getWordType().toString());
-				insertStatement.setString(3, polishJapaneseEntry.getKanji());
-				insertStatement.setString(4, convertListToString(polishJapaneseEntry.getKanaList()));
-				insertStatement.setString(5, convertListToString(polishJapaneseEntry.getRomajiList()));
-				insertStatement.setString(6, convertListToString(polishJapaneseEntry.getPolishTranslates()));
-				insertStatement.setString(7, polishJapaneseEntry.getInfo());
+				insertStatement.setInt(1, polishJapaneseEntry.getId());
+				insertStatement.setString(2, polishJapaneseEntry.getDictionaryType().getName());
+				insertStatement.setString(3, polishJapaneseEntry.getDictionaryEntryType().toString());
+				insertStatement.setString(4, polishJapaneseEntry.getWordType().toString());
+				insertStatement.setString(5, polishJapaneseEntry.getPrefix());
+				insertStatement.setString(6, polishJapaneseEntry.getKanji());
+				insertStatement.setString(7, convertListToString(polishJapaneseEntry.getKanaList()));
+				insertStatement.setString(8, convertListToString(polishJapaneseEntry.getRomajiList()));
+				insertStatement.setString(9, convertListToString(polishJapaneseEntry.getPolishTranslates()));
+				insertStatement.setString(10, polishJapaneseEntry.getInfo());
+				insertStatement.setString(11, polishJapaneseEntry.isUseEntry() == true ? "" : "NO");
 				
 				insertStatement.execute();
 				
@@ -102,5 +110,4 @@ public class DictionarySQLDatabaseLoader {
 		
 		return sb.toString();
 	}
-*/
 }

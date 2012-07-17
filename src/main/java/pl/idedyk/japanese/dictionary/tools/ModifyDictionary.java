@@ -8,8 +8,7 @@ public class ModifyDictionary {
 
 	public static void main(String[] args) throws Exception {
 		
-		checkPolishJapaneseEntries("input/word.csv", "input/word-temp.csv", "WORD");
-		checkPolishJapaneseEntries("input/word.csv", "input/kanji_word-temp.csv", "KANJI");
+		checkPolishJapaneseEntries("input/word.csv", "input/word-temp.csv", null);
 	}
 	
 	private static void checkPolishJapaneseEntries(String sourceFileName, String destinationFileName, String filter) throws Exception {
@@ -63,6 +62,6 @@ public class ModifyDictionary {
 			*/		
 		}
 		
-		CsvReaderWriter.generateCsv(destinationFileName, polishJapaneseEntries, filter);
+		CsvReaderWriter.generateCsv(destinationFileName, polishJapaneseEntries);
 	}
 }

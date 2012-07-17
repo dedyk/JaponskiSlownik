@@ -266,7 +266,8 @@ wysoki","pieniądze, wzrost",
 198,WORD,WORD_NOUN,HIRAGANA,,顔,,かお,kao,twarz,,
 199,WORD,WORD_NOUN,HIRAGANA,,愛,,あい,ai,miłość,,
 200,WORD,WORD_VERB_U,HIRAGANA,を,聞く,,きく,wo kiku,słuchać,,
-201,WORD,WORD_NOUN,HIRAGANA,,酒,,さけ,sake,sake,,
+201,WORD,WORD_NOUN,HIRAGANA,お,酒,,さけ,osake,"sake
+alkohol",również forma sake,NO
 202,WORD,WORD_NOUN,HIRAGANA,,牛,,うし,ushi,krowa,,
 203,WORD,WORD_NOUN,HIRAGANA,,携帯電話,,けいたいでんわ,keitai denwa,telefon komórkowy,,
 204,WORD,WORD_NOUN,KATAKANA,,-,,マーカー,maakaa,marker,,
@@ -288,7 +289,8 @@ wysoki","pieniądze, wzrost",
 220,WORD,WORD_NOUN,KATAKANA,,-,,テレビ,terebi,telewizja,,
 221,WORD,WORD_NOUN,KATAKANA,,-,,ビデオ,bideo,video,,NO
 222,WORD,WORD_NOUN,HIRAGANA,,朝御飯,,あさごはん,asagohan,śniadanie,,
-223,WORD,WORD_NOUN,HIRAGANA,お,酒,,さけ,osake,alkohol,,
+223,WORD,WORD_NOUN,HIRAGANA,お,酒,,さけ,osake,"sake
+alkohol",również forma sake,
 224,WORD,WORD_NOUN,HIRAGANA,お,茶,,ちゃ,ocha,zielona herbata,,
 225,WORD,WORD_NOUN,KATAKANA,,-,,コー匕ー,koohii,kawa,,
 226,WORD,WORD_NOUN,HIRAGANA,,晩御飯,,ばんごはん,bangohan,kolacja,,
@@ -1204,7 +1206,8 @@ za parę chwil/dni",,
 1029,WORD,WORD_VERB_RU,HIRAGANA,,枯れる,,かれる,kareru,uschnąć,,
 1030,WORD,UNKNOWN,HIRAGANA,,募集,,ぼしゅう,boshuu,rekrutacja,"~, szukanie ...",
 1031,WORD,UNKNOWN,KATAKANA,,-,,アウトドア,autodoa,zajęcia na wolnym powietrzu,outdoor activities,
-1032,WORD,WORD_NOUN,HIRAGANA,,彼女,,かのじょ,kanojo,narzeczona,,NO
+1032,WORD,WORD_NOUN,HIRAGANA,,彼女,,かのじょ,kanojo,"ona
+narzeczona",,NO
 1033,WORD,WORD_NOUN,HIRAGANA,,趣味,,しゅみ,shumi,hobby,,
 1034,WORD,WORD_NOUN,KATAKANA,,-,,バンド,bando,zespół,muzyczny,
 1035,WORD,WORD_NOUN,HIRAGANA,,文化,,ぶんか,bunka,kultura,,
@@ -2420,7 +2423,7 @@ mono",osoba,,
 1668,KANJI,WORD_NOUN,HIRAGANA,,日本語,,にほんご,nihongo,język japoński,,
 1669,KANJI,WORD_NOUN,HIRAGANA,,山本さん,,やまもとさん,Yamamoto san,Pan Yamamoto,,
 1670,KANJI,WORD_NOUN,HIRAGANA,,日本人,,にほんじん,nihonjin,Japończyk,,
-1671,KANJI,UNKNOWN,HIRAGANA,,一人で,,ひとりで,hitoride,sam,,
+1671,KANJI,UNKNOWN,HIRAGANA,,一人で,,ひとりで,hitoride,sam,,NO
 1672,KANJI,UNKNOWN,HIRAGANA,,この人,,このひと,kono hito,ten człowiek,,
 1673,KANJI,WORD_PEOPLE_NUMBER,HIRAGANA,,三人,,さんにん,sannin,"troje ludzi
 3",liczenie ludzi,
@@ -2519,7 +2522,8 @@ prąd
 5",minuta,NO
 1762,KANJI,WORD_TIME,HIRAGANA,,十分,,じゅっぷん,juppun,"dziesięć
 10",minuta,NO
-1763,KANJI,UNKNOWN,HIRAGANA,,自分,,じぶん,jibun,siebie,,
+1763,KANJI,UNKNOWN,HIRAGANA,,自分,,じぶん,jibun,"ja sam
+siebie",,
 1764,KANJI,UNKNOWN,HIRAGANA,,半分,,はんぶん,hanbun,połowa,,NO
 1765,KANJI,WORD_NOUN,HIRAGANA,,先生,,せんせい,sensei,nauczyciel,,NO
 1766,KANJI,UNKNOWN,HIRAGANA,,先週,,せんしゅう,senshuu,zeszły tydzień,,NO
@@ -2547,7 +2551,7 @@ prąd
 1788,KANJI,WORD_NOUN,HIRAGANA,,女の子,,おんなのこ,onna no ko,dziewczynka,,NO
 1789,KANJI,WORD_NOUN,HIRAGANA,,男の子,,おとこのこ,otoko no ko,chłopczyk,,NO
 1790,KANJI,WORD_NOUN,HIRAGANA,,電子メール,,でんしめえる,denshi meeru,email,,
-1791,KANJI,WORD_ADJECTIVE_I,HIRAGANA,,小さい,,ちいさい,chiisai,mały,,
+1791,KANJI,WORD_ADJECTIVE_I,HIRAGANA,,小さい,,ちいさい,chiisai,mały,,NO
 1792,KANJI,WORD_NOUN,HIRAGANA,,小学校,,しょうがっこう,shougakkou,szkoła podstawowa,,
 1793,KANJI,WORD_NOUN,HIRAGANA,,小学生,,しょうがくせい,shougakusei,uczeń szkoły podstawowej,,
 1794,KANJI,WORD_VERB_U,HIRAGANA,に,会う,,あう,ni au,spotykać,osoba ni,
@@ -2700,7 +2704,8 @@ nani",co,,NO
 1932,KANJI,WORD_VERB_U,HIRAGANA,,立つ,,たつ,tatsu,stać,,NO
 1933,KANJI,WORD_NOUN,HIRAGANA,,国立大学,,こくりつだいがく,kokuritsudaigaku,uniwersytet narodowy,,
 1934,KANJI,WORD_NOUN,HIRAGANA,,私立高校,,しりつこうこう,shiritsukoukou,prywatne liceum,,
-1935,KANJI,UNKNOWN,HIRAGANA,,自分,,じぶん,jibun,ja sam,,
+1935,KANJI,UNKNOWN,HIRAGANA,,自分,,じぶん,jibun,"ja sam
+siebie",,NO
 1936,KANJI,WORD_NOUN,HIRAGANA,,自動車,,じどうしゃ,jidousha,automobil,,
 1937,KANJI,WORD_NOUN,HIRAGANA,,自転車,,じてんしゃ,jitensha,rower,,NO
 1938,KANJI,WORD_NOUN,HIRAGANA,,夜,,よる,yoru,noc,,NO
@@ -2711,7 +2716,7 @@ nani",co,,NO
 1943,KANJI,WORD_NOUN,HIRAGANA,,朝食,,ちょうしょく,choushoku,śniadanie,,
 1944,KANJI,WORD_VERB_U,HIRAGANA,を,持つ,,もつ,wo motsu,"nosić
 trzymać
-mieć",,
+mieć",,NO
 1945,KANJI,WORD_VERB_IRREGULAR,HIRAGANA,を,持ってくる,,もってくる,wo motte kuru,przynosić,,
 1946,KANJI,WORD_NOUN,HIRAGANA,,所持品,,しょじひん,shojihin,dobytek,,
 1947,KANJI,WORD_NOUN,HIRAGANA,,手紙,,てがみ,tegami,list,,NO
