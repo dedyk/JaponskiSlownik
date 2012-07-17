@@ -540,7 +540,7 @@ nieobecny",,
 436,WORD,WORD_ADJECTIVE_I,HIRAGANA,,難しい,,むずかしい,muzukashii,trudny,,
 437,WORD,WORD_ADJECTIVE_I,HIRAGANA,,-,,やさしい,yasashii,"łatwy
 miły",problem / człowiek,
-438,WORD,WORD_ADJECTIVE_I,HIRAGANA,,安い,,やすい,yasui,tani,NO,
+438,WORD,WORD_ADJECTIVE_I,HIRAGANA,,安い,,やすい,yasui,tani,,NO
 439,WORD,WORD_ADJECTIVE_NA,HIRAGANA,,嫌い,,きらい,kirai,nie lubić,,
 440,WORD,WORD_ADJECTIVE_NA,HIRAGANA,,-,,きれい,kirei,"ładne
 czyste",,
@@ -965,7 +965,7 @@ no i",,NO
 808,WORD,WORD_ADJECTIVE_NA,HIRAGANA,,-,,いろいろ,iroiro,różne,,
 809,WORD,WORD_VERB_IRREGULAR,HIRAGANA,,話をする,,はなしをする,hanashi wo suru,rozmawiać,,
 810,WORD,WORD_NOUN,HIRAGANA,,秋,,あき,aki,jesień,,
-811,WORD,WORD_NOUN,HIRAGANA,,医者,,いしゃ,isha,lekarz,NO,
+811,WORD,WORD_NOUN,HIRAGANA,,医者,,いしゃ,isha,lekarz,,NO
 812,WORD,WORD_NOUN,HIRAGANA,,駅,,えき,eki,stacja,,
 813,WORD,WORD_NOUN,HIRAGANA,お,金持ち,,かねもち,okanemochi,bogaty człowiek,,
 814,WORD,WORD_NOUN,HIRAGANA,,顔,,かお,kao,twarz,,NO
@@ -1137,7 +1137,7 @@ zgadza się",,
 971,WORD,UNKNOWN,HIRAGANA,,二人ずつ,,ふたりずつ,futarizutsu,dla każdych dwóch osób,,
 972,WORD,WORD_NOUN,HIRAGANA,,足,,あし,ashi,"noga
 stopa",,NO
-973,WORD,UNKNOWN,HIRAGANA,,意味,,いみ,imi,znaczenie,NO,
+973,WORD,UNKNOWN,HIRAGANA,,意味,,いみ,imi,znaczenie,,NO
 974,WORD,WORD_NOUN,HIRAGANA,お,腹,,なか,onaka,brzuch,,
 975,WORD,WORD_NOUN,HIRAGANA,,風邪,,かぜ,kaze,przeziębienie,,
 976,WORD,WORD_NOUN,HIRAGANA,,彼女,,かのじょ,kanojo,narzeczona,,
@@ -1170,7 +1170,7 @@ ranny",,
 nie przestronny",,
 1000,WORD,WORD_NOUN,HIRAGANA,,都合,,つごう,tsugou,okoliczność,,
 1001,WORD,WORD_ADJECTIVE_I,HIRAGANA,,都合が悪い,,つごうがわるい,tsugou ga warui,coś mi nie pasuje,w grafiku,
-1002,WORD,WORD_ADJECTIVE_I,HIRAGANA,,悪い,,わるい,warui,zły,NO,
+1002,WORD,WORD_ADJECTIVE_I,HIRAGANA,,悪い,,わるい,warui,zły,,NO
 1003,WORD,WORD_ADJECTIVE_NA,HIRAGANA,,素敵,,すてき,suteki,fantastyczny,,
 1004,WORD,WORD_VERB_U,HIRAGANA,,風邪をひく,,かぜをひく,kaze wo hiku,złapać przeziębienie,,
 1005,WORD,WORD_VERB_U,HIRAGANA,に,興味がある,,きょうみがある,ni kyoumi ga aru,być zainteresowany,tematem ~,
@@ -2838,7 +2838,7 @@ młody pan",,
 2063,KANJI,UNKNOWN,HIRAGANA,,特に,,とくに,tokuni,szczególnie,,NO
 2064,KANJI,WORD_ADJECTIVE_NA,HIRAGANA,,特別,,とくべつ,tokubetsu,specjalne,,NO
 2065,KANJI,WORD_NOUN,HIRAGANA,,特急電車,,とっきゅうでんしゃ,tokkyuu densha,super express,pociąg,
-2066,KANJI,WORD_ADJECTIVE_I,HIRAGANA,,安い,,やすい,yasui,tani,NO,
+2066,KANJI,WORD_ADJECTIVE_I,HIRAGANA,,安い,,やすい,yasui,tani,,NO
 2067,KANJI,UNKNOWN,HIRAGANA,,安心,,あんしん,anshin,"spokój
 ukojenie",,
 2068,KANJI,WORD_ADJECTIVE_NA,HIRAGANA,,不安,,ふあん,fuan,niespokojny,,NO
@@ -2848,7 +2848,7 @@ ukojenie",,
 2072,KANJI,WORD_NOUN,HIRAGANA,,肉,,にく,niku,mięso,,NO
 2073,KANJI,WORD_NOUN,HIRAGANA,,牛肉,,ぎゅうにく,gyuuniku,wołowina,,NO
 2074,KANJI,WORD_NOUN,HIRAGANA,,肉屋,,にくや,nikuya,sklep mięsny,,
-2075,KANJI,WORD_ADJECTIVE_I,HIRAGANA,,悪い,,わるい,warui,zły,NO,
+2075,KANJI,WORD_ADJECTIVE_I,HIRAGANA,,悪い,,わるい,warui,zły,,NO
 2076,KANJI,UNKNOWN,HIRAGANA,,気分が悪い,,きぷんがわるい,kipun ga warui,czuć się źle,,NO
 2077,KANJI,UNKNOWN,HIRAGANA,,最悪,,さいあく,saiaku,najgorszy,,
 2078,KANJI,WORD_NOUN,HIRAGANA,,悪魔,,あくま,akuma,diabeł,,
@@ -2937,10 +2937,10 @@ emocje",,
 2153,KANJI,WORD_ADJECTIVE_I,HIRAGANA,,楽しい,,たのしい,tanoshii,zabawny,,NO
 2154,KANJI,WORD_NOUN,HIRAGANA,,楽器,,がっき,gakki,instrument muzyczny,,NO
 2155,KANJI,WORD_ADJECTIVE_NA,HIRAGANA,,楽,,らく,raku,komfortowy,,
-2156,KANJI,WORD_NOUN,HIRAGANA,,医者,,いしゃ,isha,lekarz,NO,
+2156,KANJI,WORD_NOUN,HIRAGANA,,医者,,いしゃ,isha,lekarz,,NO
 2157,KANJI,WORD_NOUN,HIRAGANA,,医学,,いがく,igaku,medycyna,,
 2158,KANJI,WORD_NOUN,HIRAGANA,,医院,,いいん,iin,klinika,,
-2159,KANJI,WORD_NOUN,HIRAGANA,,医者,,いしゃ,isha,lekarz,NO,
+2159,KANJI,WORD_NOUN,HIRAGANA,,医者,,いしゃ,isha,lekarz,,NO
 2160,KANJI,WORD_NOUN,HIRAGANA,,学者,,がくしゃ,gakusha,naukowiec,,
 2161,KANJI,WORD_NOUN,HIRAGANA,,読者,,どくしゃ,dokusha,czytelnik,,
 2162,KANJI,WORD_NOUN,HIRAGANA,,若者,,わかもの,wakamono,młody człowiek,,
