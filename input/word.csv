@@ -776,21 +776,21 @@ stopa",,
 632,WORD,WORD_VERB_U,HIRAGANA,,歌う,,うたう,utau,śpiewać,,
 633,WORD,WORD_VERB_U,HIRAGANA,,-,,かぶる,kaburu,zakładać,na głowę,
 634,WORD,WORD_VERB_U,HIRAGANA,,知る,,しる,shiru,wiedzieć,,
-635,WORD,WORD_VERB_RU,HIRAGANA,,知っています,,しっています,shitte imasu,wiem,,
-636,WORD,WORD_VERB_U,HIRAGANA,,知りません,,しりません,shirimasen,nie wiedzieć,~masen,
+635,WORD,WORD_EXPRESSION,HIRAGANA,,知っています,,しっています,shitte imasu,wiem,,
+636,WORD,WORD_EXPRESSION,HIRAGANA,,知りません,,しりません,shirimasen,nie wiedzieć,~masen,
 637,WORD,WORD_VERB_U,HIRAGANA,に,住む,,すむ,ni sumu,"mieszkać
 żyć",,
-638,WORD,WORD_VERB_RU,HIRAGANA,に,住んでいます,,すんでいます,ni sunde imasu,mieszkać,,
+638,WORD,WORD_EXPRESSION,HIRAGANA,に,住んでいます,,すんでいます,ni sunde imasu,mieszkać,,
 639,WORD,WORD_VERB_U,HIRAGANA,,-,,はく,haku,zakładać,poniżej paska,
 640,WORD,WORD_VERB_U,HIRAGANA,,太る,,ふとる,futoru,zyskiwać na wadze,,
-641,WORD,WORD_VERB_RU,HIRAGANA,,太っています,,ふとっています,futotte imasu,być grubym,,
+641,WORD,WORD_EXPRESSION,HIRAGANA,,太っています,,ふとっています,futotte imasu,być grubym,,
 642,WORD,WORD_VERB_RU,HIRAGANA,,-,,めがねをかける,megane wo kakeru,zakładać okulary,,
 643,WORD,WORD_VERB_RU,HIRAGANA,,着る,,きる,kiru,"zakładać
 nosić",powyżej paska,
 644,WORD,WORD_VERB_RU,HIRAGANA,に,勤める,,つとめる,ni tsutomeru,pracować dla,niefizycznie,
-645,WORD,WORD_VERB_RU,HIRAGANA,に,勤めています,,つとめています,ni tsutomete imasu,pracować dla,,NO
+645,WORD,WORD_EXPRESSION,HIRAGANA,に,勤めています,,つとめています,ni tsutomete imasu,pracować dla,,NO
 646,WORD,WORD_VERB_RU,HIRAGANA,,-,,やせる,yaseru,tracić na wadze,,
-647,WORD,WORD_VERB_RU,HIRAGANA,,-,,やせています,yasete imasu,być chudym,,
+647,WORD,WORD_EXPRESSION,HIRAGANA,,-,,やせています,yasete imasu,być chudym,,
 648,WORD,WORD_VERB_IRREGULAR,HIRAGANA,を,結婚する,,けっこんする,wo kekkon suru,żenić się,,
 649,WORD,UNKNOWN,HIRAGANA,,-,,が,ga,ale,używane w tym samym zdaniu,
 650,WORD,UNKNOWN,HIRAGANA,,何も,,なにも,nanimo,nic,+ czasownik w formie negatywnej,
@@ -2676,7 +2676,7 @@ nani",co,,NO
 1903,KANJI,WORD_VERB_U,HIRAGANA,,知る,,しる,shiru,wiedzieć,,NO
 1904,KANJI,UNKNOWN,HIRAGANA,,知人,,ちじん,chijin,znajomy,,
 1905,KANJI,WORD_VERB_IRREGULAR,HIRAGANA,に,来る,,くる,ni kuru,przybyć,"cel, ni ~",NO
-1906,KANJI,UNKNOWN,HIRAGANA,,来ます,,きます,kimasu,wracać,,
+1906,KANJI,WORD_EXPRESSION,HIRAGANA,,来ます,,きます,kimasu,wracać,,
 1907,KANJI,UNKNOWN,HIRAGANA,,来ない,,こない,konai,nie wracać,,
 1908,KANJI,UNKNOWN,HIRAGANA,,来週,,らいしゅう,raishuu,przyszły tydzień,,NO
 1909,KANJI,WORD_VERB_U,HIRAGANA,に,住む,,すむ,ni sumu,"mieszkać
