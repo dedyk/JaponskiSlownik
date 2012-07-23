@@ -305,7 +305,7 @@ alkohol",również forma sake,
 235,WORD,UNKNOWN,HIRAGANA,,明日,,あした,ashita,jutro,,
 236,WORD,WORD_ASK,HIRAGANA,,-,,いつ,itsu,kiedy,,
 237,WORD,UNKNOWN,HIRAGANA,,今日,,きょう,kyou,dziś,,
-238,WORD,UNKNOWN,HIRAGANA,,-,,ごろ,goro,około,,
+238,WORD,UNKNOWN,HIRAGANA,,-,,ごろ,goro,około,do czasu,
 239,WORD,UNKNOWN,HIRAGANA,,今晩,,こんばん,konban,dziś wieczorem,,
 240,WORD,WORD_NOUN,HIRAGANA,,週末,,しゅうまつ,shuumatsu,weekend,,
 241,WORD,WORD_DAY_WEEK,HIRAGANA,,土曜日,,どようび,doyoubi,sobota,ziemia,
@@ -480,16 +480,18 @@ młody mnich",,
 376,WORD,WORD_DAY_WEEK,HIRAGANA,,土曜日,,どようび,doyoubi,sobota,ziemia,NO
 377,WORD,WORD_DAY_WEEK,HIRAGANA,,日曜日,,にちようび,nichiyoubi,niedziela,słońce,NO
 378,WORD,WORD_VERB_U,HIRAGANA,に,会う,,あう,ni au,"spotykać
-widzieć osobę",osoba ni,NO
+widzieć osobę","osoba ni, spotkanie przypadkowe",NO
 379,WORD,WORD_VERB_U,HIRAGANA,と,会う,,あう,to au,"spotykać
-widzieć osobę",osoba to,
-380,WORD,WORD_VERB_U,HIRAGANA,が,-,,ある,ga aru,być,do rzeczy martwych,
+widzieć osobę","osoba to, spotkanie zaplanowane",
+380,WORD,WORD_VERB_U,HIRAGANA,が,有る,,ある,ga aru,"być
+istnieć",do rzeczy martwych,
 381,WORD,WORD_VERB_U,HIRAGANA,を,買う,,かう,wo kau,kupować,,
 382,WORD,WORD_VERB_U,HIRAGANA,を,書く,,かく,wo kaku,pisać,osoba ni rzecz,NO
 383,WORD,WORD_VERB_U,HIRAGANA,を,撮る,,とる,wo toru,robić zdjęcie,,
 384,WORD,WORD_VERB_U,HIRAGANA,を,待つ,,まつ,wo matsu,czekać,,
 385,WORD,WORD_VERB_U,HIRAGANA,,-,,がわかる,ga wakaru,rozumieć,,
-386,WORD,WORD_VERB_RU,HIRAGANA,,-,,がいる,ga iru,być,"miejsce ni, do rzeczy żywych",
+386,WORD,WORD_VERB_RU,HIRAGANA,が,-,,いる,ga iru,"być
+istnieć","miejsce ni, do rzeczy żywych",
 387,WORD,UNKNOWN,HIRAGANA,,-,,ぐらい,gurai,około,ogólne,
 388,WORD,WORD_EXPRESSION,HIRAGANA,,-,,ごめんなさい,gomen nasai,przepraszam,,
 389,WORD,UNKNOWN,HIRAGANA,,-,,だから,dakara,ponieważ,,
@@ -849,7 +851,7 @@ nosić",powyżej paska,
 701,WORD,WORD_VERB_U,HIRAGANA,,雨が降る,,あめがふる,ame ga furu,pada deszcz,,
 702,WORD,WORD_VERB_U,HIRAGANA,,洗う,,あらう,arau,myć,,
 703,WORD,WORD_VERB_U,HIRAGANA,,言う,,いう,iu,mówić,,NO
-704,WORD,WORD_VERB_U,HIRAGANA,,-,,がいる,ga iru,potrzebować,,
+704,WORD,WORD_VERB_U,HIRAGANA,が,-,,いる,ga iru,potrzebować,,
 705,WORD,WORD_VERB_U,HIRAGANA,に,遅くなる,,おそくなる,ni osoku naru,być spóźniony,na,
 706,WORD,WORD_VERB_U,HIRAGANA,,思う,,おもう,omou,myśleć,,
 707,WORD,WORD_VERB_U,HIRAGANA,,切る,,きる,kiru,ciąć,,
@@ -1701,11 +1703,11 @@ podnosić na duchu",,
 1410,WORD,UNKNOWN,HIRAGANA,,本物,,ほんもの,honmono,prawdziwy,,
 1411,WORD,UNKNOWN,HIRAGANA,,贅沢,,ぜいたく,zeitaku,luksus,,
 1412,WORD,WORD_VERB_U,HIRAGANA,,-,,おなかがすく,onaka ga suku,być głodnym,,NO
-1413,WORD,WORD_EXPRESSION,HIRAGANA,,-,,おなかがすいた,onaka ga suita,jestem głodny,,
+1413,WORD,WORD_EXPRESSION,HIRAGANA,,-,,おなかがすいた,onaka ga suita,być głodnym,,
 1414,WORD,WORD_VERB_U,HIRAGANA,,腹減る,,はらへる,hara heru,być głodnym,,
-1415,WORD,WORD_EXPRESSION,HIRAGANA,,腹減った,,はらへった,hara hetta,jestem głodny,,
+1415,WORD,WORD_EXPRESSION,HIRAGANA,,腹減った,,はらへった,hara hetta,być głodnym,,
 1416,WORD,WORD_EXPRESSION,HIRAGANA,,小腹,,こばら,kobara,mały głodek,,
-1417,WORD,WORD_EXPRESSION,HIRAGANA,,小腹がすいた,,こばらがすいた,kobara ga suita,jestem troszeczkę głodny,,
+1417,WORD,WORD_EXPRESSION,HIRAGANA,,小腹がすいた,,こばらがすいた,kobara ga suita,być troszeczkę głodny,,
 1418,WORD,WORD_ADJECTIVE_NA,HIRAGANA,,立派,,りっぱ,rippa,"wspaniały
 dojrzały",,
 1419,WORD,WORD_NOUN,KATAKANA,,-,,ランドセル,randoseru,tornister,,
@@ -2557,7 +2559,8 @@ siebie",,
 1791,KANJI,WORD_ADJECTIVE_I,HIRAGANA,,小さい,,ちいさい,chiisai,mały,,NO
 1792,KANJI,WORD_NOUN,HIRAGANA,,小学校,,しょうがっこう,shougakkou,szkoła podstawowa,,
 1793,KANJI,WORD_NOUN,HIRAGANA,,小学生,,しょうがくせい,shougakusei,uczeń szkoły podstawowej,,
-1794,KANJI,WORD_VERB_U,HIRAGANA,に,会う,,あう,ni au,spotykać,osoba ni,
+1794,KANJI,WORD_VERB_U,HIRAGANA,に,会う,,あう,ni au,"spotykać
+widzieć osobę","osoba ni, spotkanie przypadkowe",
 1795,KANJI,WORD_NOUN,HIRAGANA,,会社,,かいしゃ,kaisha,firma,,NO
 1796,KANJI,WORD_NOUN,HIRAGANA,,会社員,,かいしゃいん,kaishain,pracownik biurowy,,NO
 1797,KANJI,WORD_NOUN,HIRAGANA,,会社,,かいしゃ,kaisha,firma,,NO
@@ -2777,7 +2780,8 @@ jasny",,
 uparty",,
 1996,KANJI,WORD_ADJECTIVE_NA,HIRAGANA,,有名,,ゆうめい,yuumei,sławny,,NO
 1997,KANJI,UNKNOWN,HIRAGANA,,有料,,ゆうりょう,yuuryou,opłata,,
-1998,KANJI,UNKNOWN,HIRAGANA,,有る,,ある,aru,istnieć,,
+1998,KANJI,WORD_VERB_U,HIRAGANA,が,有る,,ある,ga aru,"być
+istnieć",,NO
 1999,KANJI,WORD_NOUN,HIRAGANA,,旅行,,りょこう,ryokou,podróż,,NO
 2000,KANJI,WORD_NOUN,HIRAGANA,,旅館,,りょかん,ryokan,zajazd,w stylu japońskim,NO
 2001,KANJI,UNKNOWN,HIRAGANA,,一人旅,,ひとりたび,hitoritabi,podróżować samotnie,,
