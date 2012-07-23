@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
 
 public class AndroidDictionaryGenerator {
 
@@ -14,12 +15,16 @@ public class AndroidDictionaryGenerator {
 	
 	private static void checkPolishJapaneseEntries(String sourceFileName, String destinationFileName) throws Exception {
 		
-		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName, null);
 		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
+			
+			if (polishJapaneseEntries.get(idx).getDictionaryEntryType() == DictionaryEntryType.WORD_KANJI_READING) {
+				continue;
+			}
+			
 			if (polishJapaneseEntries.get(idx).isUseEntry() == true) {
 				result.add(polishJapaneseEntries.get(idx));
 			}
