@@ -161,7 +161,7 @@ public class CsvReaderWriter {
 				continue;
 			}
 			
-			String dictionaryEntryType = csvReader.get(2);
+			String dictionaryEntryTypeString = csvReader.get(2);
 			String wordTypeString = csvReader.get(3);
 			String prefixString = csvReader.get(4);
 			String kanjiString = csvReader.get(5);
@@ -187,11 +187,17 @@ public class CsvReaderWriter {
 				}
 			}
 			
+			DictionaryEntryType dictionaryEntryType = DictionaryEntryType.valueOf(dictionaryEntryTypeString);
+			
+			if (dictionaryEntryType == DictionaryEntryType.WORD_KANJI_READING) {
+				continue;
+			}
+			
 			PolishJapaneseEntry entry = new PolishJapaneseEntry();
 			
 			entry.setId(id);
 			entry.setDictionaryType(DictionaryType.valueOf(dictionaryType));
-			entry.setDictionaryEntryType(DictionaryEntryType.valueOf(dictionaryEntryType));
+			entry.setDictionaryEntryType(dictionaryEntryType);
 			entry.setWordType(WordType.valueOf(wordTypeString));
 			entry.setPrefix(prefixString);
 			entry.setKanji(kanjiString);
