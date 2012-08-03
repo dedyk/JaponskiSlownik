@@ -95,6 +95,20 @@ public class GenkiBookWords {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 			
+			/*
+			String kanji = polishJapaneseEntry.getKanji();
+			
+			for (int idxKanji = 0; idxKanji < kanji.length(); ++idxKanji) {
+				String kanjiChar = String.valueOf(kanji.charAt(idxKanji));
+				
+				if (containsCharInKanaJapaneseiKanaEntryList(katakanaEntries, kanjiChar) == true) {
+					System.out.println("Kanji with katakana: " + kanji);
+					
+					break;
+				}
+			}
+			*/
+			
 			List<String> kanaList = polishJapaneseEntry.getKanaList();
 			List<String> romajiList = polishJapaneseEntry.getRomajiList();
 			String prefix = polishJapaneseEntry.getPrefix();
@@ -104,24 +118,7 @@ public class GenkiBookWords {
 				String currentRomaji = romajiList.get(idx);
 				String currentKana = kanaList.get(idx);
 				
-				KanaWord kanaWord = null;
-				KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord(currentKana, hiraganaEntries, katakanaEntries);
-				
-				String currentKanaAsRomaji = KanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
-				
-				if (polishJapaneseEntry.getWordType() == WordType.HIRAGANA) { 
-					kanaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, currentRomaji);
-				} else if (polishJapaneseEntry.getWordType() == WordType.KATAKANA) { 
-					kanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, currentRomaji);
-				} else {
-					throw new RuntimeException("Bard word type");
-				}
-				
-				if (kanaWord.remaingRestChars.equals("") == false) {
-					throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ", remaing: " + kanaWord.remaingRestChars);
-				}
-				
-				if (currentRomaji.equals("ajiakenkyuu") == true ||
+				if (	currentRomaji.equals("ajiakenkyuu") == true ||
 						currentRomaji.equals("pinku iro no") == true ||
 						currentRomaji.equals("saboru") == true ||
 						currentRomaji.equals("daietto suru") == true ||
@@ -129,9 +126,19 @@ public class GenkiBookWords {
 						currentRomaji.equals("puropoozu suru") == true ||
 						currentRomaji.equals("to tsu") == true ||
 						currentRomaji.equals("ki tsu") == true ||
-						currentRomaji.equals("ga tsu") == true) {
+						currentRomaji.equals("ga tsu") == true ||
+						currentRomaji.equals("tonkatsu") == true ||
+						currentRomaji.equals("basutei") == true ||
+						currentRomaji.equals("keshigomu") == true ||
+						currentRomaji.equals("anzen pin") == true ||
+						currentRomaji.equals("denshi meeru") == true) {
 					continue;
 				}
+								
+				KanaWord kanaWord = null;
+				KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord(currentKana, hiraganaEntries, katakanaEntries);
+				
+				String currentKanaAsRomaji = KanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
 				
 				if (currentKanaAsRomaji.equals("ajiakenkyuu") == true ||
 						currentKanaAsRomaji.equals("pinkuirono") == true ||
@@ -144,7 +151,19 @@ public class GenkiBookWords {
 						currentKana.equals("がっ") == true) {
 					continue;
 				}
-								
+				
+				if (polishJapaneseEntry.getWordType() == WordType.HIRAGANA) { 
+					kanaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, currentRomaji);
+				} else if (polishJapaneseEntry.getWordType() == WordType.KATAKANA) { 
+					kanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, currentRomaji);
+				} else {
+					throw new RuntimeException("Bard word type");
+				}
+				
+				if (kanaWord.remaingRestChars.equals("") == false) {
+					throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ", remaing: " + kanaWord.remaingRestChars);
+				}
+												
 				if ((prefix + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
 					throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ": " + currentKana + " - " + KanaHelper.createKanaString(kanaWord));
 				}
@@ -165,6 +184,22 @@ public class GenkiBookWords {
 			}
 		}
 	}
+	
+	/*
+	private static boolean containsCharInKanaJapaneseiKanaEntryList(List<KanaEntry> kanaEntryList, String kanaChar) {
+		
+		for (KanaEntry kanaEntry : kanaEntryList) {
+			
+			String kanaJapanese = kanaEntry.getKanaJapanese();
+			
+			if (kanaJapanese.equals(kanaChar) == true) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	*/
 	
 	/*
 	private static void validateDictionaryAndKanjiDictionary(List<PolishJapaneseEntry> japaneseEntries) {
