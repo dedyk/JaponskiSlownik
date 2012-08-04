@@ -3,6 +3,8 @@ package pl.idedyk.japanese.dictionary.tools;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
@@ -120,9 +122,25 @@ public class CsvReaderWriter {
 		pw.close();
 	}
 	
+	public static void generateCsv(OutputStream out, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
+		
+		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
+		
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries);
+		
+		csvWriter.close();		
+	}
+	
 	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
 		
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
+		
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries);
+		
+		csvWriter.close();
+	}
+	
+	private static void writePolishJapaneseEntries(CsvWriter csvWriter, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -141,8 +159,7 @@ public class CsvReaderWriter {
 			
 			csvWriter.endRecord();
 		}
-		
-		csvWriter.close();
+
 	}
 	
 	public static List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv(String fileName, String filterName) throws IOException, JapaneseDictionaryException {

@@ -1,7 +1,13 @@
 package pl.idedyk.japanese.dictionary.tools;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.zip.GZIPOutputStream;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
@@ -31,6 +37,25 @@ public class AndroidDictionaryGenerator {
 	
 		}
 		
-		CsvReaderWriter.generateCsv(destinationFileName, result);
+		GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new XorOutputStream(new File(destinationFileName), 23));
+		
+		CsvReaderWriter.generateCsv(gzipOutputStream, result);
+	}
+	
+	private static class XorOutputStream extends OutputStream {
+
+		private FileOutputStream fos;
+		
+		private int xor;
+		
+		public XorOutputStream(File file, int xor) throws FileNotFoundException {
+			fos = new FileOutputStream(file);
+			
+			this.xor = xor;
+		}
+
+		public void write(int b) throws IOException {
+			fos.write(b ^ xor);
+		}
 	}
 }
