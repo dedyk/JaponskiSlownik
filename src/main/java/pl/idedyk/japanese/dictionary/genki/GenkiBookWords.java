@@ -111,11 +111,12 @@ public class GenkiBookWords {
 			
 			List<String> kanaList = polishJapaneseEntry.getKanaList();
 			List<String> romajiList = polishJapaneseEntry.getRomajiList();
-			String prefix = polishJapaneseEntry.getPrefix();
+			String prefixKana = polishJapaneseEntry.getPrefixKana();
+			String prefixRomaji = polishJapaneseEntry.getPrefixRomaji();
 			
 			for (int idx = 0; idx < romajiList.size(); ++idx) {
 				
-				String currentRomaji = romajiList.get(idx);
+				String currentRomaji = prefixRomaji + romajiList.get(idx);
 				String currentKana = kanaList.get(idx);
 				
 				if (	currentRomaji.equals("ajiakenkyuu") == true ||
@@ -164,7 +165,7 @@ public class GenkiBookWords {
 					throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ", remaing: " + kanaWord.remaingRestChars);
 				}
 												
-				if ((prefix + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
+				if ((prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
 					throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ": " + currentKana + " - " + KanaHelper.createKanaString(kanaWord));
 				}
 				

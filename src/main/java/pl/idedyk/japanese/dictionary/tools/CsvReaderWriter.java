@@ -27,10 +27,11 @@ public class CsvReaderWriter {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
+			String prefixRomaji = polishJapaneseEntry.getPrefixRomaji();
 			List<String> romajiList = polishJapaneseEntry.getRomajiList();
 
 			for (int romIdx = 0; romIdx < romajiList.size(); ++romIdx) {
-				String currentRomajiEntry = romajiList.get(romIdx);
+				String currentRomajiEntry = prefixRomaji + romajiList.get(romIdx);
 								
 				sb.append(polishJapaneseEntry.getWordType().getPrintable() + ":" + currentRomajiEntry);
 
@@ -148,10 +149,10 @@ public class CsvReaderWriter {
 			csvWriter.write(polishJapaneseEntry.getDictionaryType().getName());
 			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());						
-			csvWriter.write(polishJapaneseEntry.getPrefix());
+			csvWriter.write(polishJapaneseEntry.getPrefixKana());
 			csvWriter.write(polishJapaneseEntry.getKanji());
-			csvWriter.write(polishJapaneseEntry.getKanjiImagePath());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getKanaList()));
+			csvWriter.write(polishJapaneseEntry.getPrefixRomaji());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getRomajiList()));
 			csvWriter.write(convertListToString(polishJapaneseEntry.getPolishTranslates()));
 			csvWriter.write(polishJapaneseEntry.getInfo());
@@ -180,15 +181,15 @@ public class CsvReaderWriter {
 			
 			String dictionaryEntryTypeString = csvReader.get(2);
 			String wordTypeString = csvReader.get(3);
-			String prefixString = csvReader.get(4);
+			String prefixKanaString = csvReader.get(4);
 			String kanjiString = csvReader.get(5);
 			
 			if (kanjiString.equals("") == true) {
 				throw new JapaneseDictionaryException("Empty kanji!");
 			}
 			
-			String kanjiImagePathString = csvReader.get(6);
-			String kanaListString = csvReader.get(7);
+			String kanaListString = csvReader.get(6);
+			String prefixRomajiString = csvReader.get(7);
 			String romajiListString = csvReader.get(8);
 			String polishTranslateListString = csvReader.get(9);
 			String infoString = csvReader.get(10);
@@ -216,10 +217,10 @@ public class CsvReaderWriter {
 			entry.setDictionaryType(DictionaryType.valueOf(dictionaryType));
 			entry.setDictionaryEntryType(dictionaryEntryType);
 			entry.setWordType(WordType.valueOf(wordTypeString));
-			entry.setPrefix(prefixString);
+			entry.setPrefixKana(prefixKanaString);
 			entry.setKanji(kanjiString);
-			entry.setKanjiImagePath(kanjiImagePathString);
 			entry.setKanaList(parseStringIntoList(kanaListString));
+			entry.setPrefixRomaji(prefixRomajiString);
 			entry.setRomajiList(parseStringIntoList(romajiListString));
 			entry.setPolishTranslates(parseStringIntoList(polishTranslateListString));
 			entry.setUseEntry(useEntry);

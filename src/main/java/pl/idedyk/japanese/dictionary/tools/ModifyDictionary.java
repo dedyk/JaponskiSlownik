@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary.tools;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -28,7 +29,7 @@ public class ModifyDictionary {
 		
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 			
-			//PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
+			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
 			
 			/*
 			List<String> romajiList = currentPolishJapaneseEntry.getRomajiList();
@@ -59,7 +60,50 @@ public class ModifyDictionary {
 			if (kanaSet.contains(firstKanjiChar) == true) {
 				System.out.println((idx + 1) + " - " + kanji);
 			}
-			*/		
+			*/
+			
+			String prefixKana = currentPolishJapaneseEntry.getPrefixKana();
+			String prefixRomaji = null;
+			
+			if (prefixKana == null || prefixKana.equals("") == true) {
+				continue;
+			}
+			
+			if (prefixKana.equals("を") == true) {
+				prefixRomaji = "wo";
+			} else if (prefixKana.equals("お") == true) {
+				prefixRomaji = "o";
+			} else if (prefixKana.equals("に") == true) {
+				prefixRomaji = "ni";
+			} else if (prefixKana.equals("へ") == true) {
+				prefixRomaji = "he";
+			} else if (prefixKana.equals("で") == true) {
+				prefixRomaji = "de";
+			} else if (prefixKana.equals("と") == true) {
+				prefixRomaji = "to";
+			} else if (prefixKana.equals("が") == true) {
+				prefixRomaji = "ga";
+			} else {
+				throw new RuntimeException(prefixKana);
+			}
+			
+			currentPolishJapaneseEntry.setPrefixRomaji(prefixRomaji);
+			
+			List<String> romajiList = currentPolishJapaneseEntry.getRomajiList();
+			List<String> romajiListResult = new ArrayList<String>();
+			
+			for (String currentRomaji : romajiList) {
+				
+				if (currentRomaji.startsWith(prefixRomaji) == false) {
+					throw new RuntimeException(currentRomaji);
+				}
+				
+				currentRomaji = currentRomaji.substring(prefixRomaji.length()).trim();
+				
+				romajiListResult.add(currentRomaji);
+			}
+			
+			currentPolishJapaneseEntry.setRomajiList(romajiListResult);
 		}
 		
 		CsvReaderWriter.generateCsv(destinationFileName, polishJapaneseEntries);

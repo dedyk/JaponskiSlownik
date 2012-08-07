@@ -16,13 +16,15 @@ public class PolishJapaneseEntry {
 	
 	private WordType wordType;
 	
-	private String prefix;
+	private String prefixKana;
 	
 	private String kanji;
 	
 	private String kanjiImagePath;
 	
 	private List<String> kanaList;
+	
+	private String prefixRomaji;
 	
 	private List<String> romajiList;
 		
@@ -96,23 +98,23 @@ public class PolishJapaneseEntry {
 		this.info = info;
 	}
 
-	public String getPrefix() {
-		return prefix;
+	public String getPrefixKana() {
+		return prefixKana;
 	}
 
-	public void setPrefix(String prefix) {
-		this.prefix = prefix;
+	public void setPrefixKana(String prefixKana) {
+		this.prefixKana = prefixKana;
 	}
 	
 	public String getFullKanji() {
-		return kanji.equals("-") == false ? prefix + kanji : kanji;
+		return kanji.equals("-") == false ? prefixKana + kanji : kanji;
 	}
 
 	@Override
 	public String toString() {
 		return "PolishJapaneseEntry [id=" + id + ", dictionaryEntryType="
-				+ dictionaryEntryType + ", wordType=" + wordType + ", prefix="
-				+ prefix + ", kanji=" + kanji + ", kanjiImagePath="
+				+ dictionaryEntryType + ", wordType=" + wordType + ", prefixKana="
+				+ prefixKana + ", kanji=" + kanji + ", kanjiImagePath="
 				+ kanjiImagePath + ", kanaList=" + kanaList + ", romajiList="
 				+ romajiList + ", polishTranslates=" + polishTranslates
 				+ ", info=" + info + "]";
@@ -140,5 +142,13 @@ public class PolishJapaneseEntry {
 
 	public void setUseEntry(boolean useEntry) {
 		this.useEntry = useEntry;
+	}
+
+	public String getPrefixRomaji() {
+		return prefixRomaji;
+	}
+
+	public void setPrefixRomaji(String prefixRomaji) {
+		this.prefixRomaji = prefixRomaji;
 	}
 }
