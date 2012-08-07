@@ -44,7 +44,7 @@ public class DictionarySQLDatabaseLoader {
 
 	private static void loadDictionaryIntoDB(String mysqlAddress, String tableName, String inputFileName) throws IOException, JapaneseDictionaryException {
 		
-		final String insertStatementSql = "insert into " + tableName + " values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		final String insertStatementSql = "insert into " + tableName + " values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(inputFileName, null);
 		
@@ -63,13 +63,14 @@ public class DictionarySQLDatabaseLoader {
 				insertStatement.setString(2, polishJapaneseEntry.getDictionaryType().getName());
 				insertStatement.setString(3, polishJapaneseEntry.getDictionaryEntryType().toString());
 				insertStatement.setString(4, polishJapaneseEntry.getWordType().toString());
-				insertStatement.setString(5, polishJapaneseEntry.getPrefix());
+				insertStatement.setString(5, polishJapaneseEntry.getPrefixKana());
 				insertStatement.setString(6, polishJapaneseEntry.getKanji());
 				insertStatement.setString(7, convertListToString(polishJapaneseEntry.getKanaList()));
-				insertStatement.setString(8, convertListToString(polishJapaneseEntry.getRomajiList()));
-				insertStatement.setString(9, convertListToString(polishJapaneseEntry.getPolishTranslates()));
-				insertStatement.setString(10, polishJapaneseEntry.getInfo());
-				insertStatement.setString(11, polishJapaneseEntry.isUseEntry() == true ? "" : "NO");
+				insertStatement.setString(8, polishJapaneseEntry.getPrefixRomaji());
+				insertStatement.setString(9, convertListToString(polishJapaneseEntry.getRomajiList()));
+				insertStatement.setString(10, convertListToString(polishJapaneseEntry.getPolishTranslates()));
+				insertStatement.setString(11, polishJapaneseEntry.getInfo());
+				insertStatement.setString(12, polishJapaneseEntry.isUseEntry() == true ? "" : "NO");
 				
 				insertStatement.execute();
 				
