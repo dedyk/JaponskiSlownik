@@ -242,7 +242,7 @@ public class KanaHelper {
 		katakanaEntries.add(new KanaEntry("ノ", "no"));
 		
 		katakanaEntries.add(new KanaEntry("ハ", "ha"));
-		katakanaEntries.add(new KanaEntry("匕", "hi"));
+		katakanaEntries.add(new KanaEntry("ヒ", "hi"));
 		katakanaEntries.add(new KanaEntry("フ", "fu"));
 		katakanaEntries.add(new KanaEntry("ヘ", "he"));
 		katakanaEntries.add(new KanaEntry("ホ", "ho"));
