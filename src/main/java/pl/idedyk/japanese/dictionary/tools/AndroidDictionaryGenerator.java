@@ -21,8 +21,8 @@ public class AndroidDictionaryGenerator {
 		
 		checkAndSavePolishJapaneseEntries("input/word.csv", "output/word.csv");
 		
-		generateKanjiEntries("input/kanji.csv", "../JapaneseDictionary_additional/kanjidic2-modified.xml", 
-				"../JapaneseDictionary_additional/kradfile-utf8",				
+		generateKanjiEntries("input/kanji.csv", "../JapaneseDictionary_additional/kanjidic2.xml", 
+				"../JapaneseDictionary_additional/kradfile",				
 				"output/kanji.csv");
 	}
 
@@ -78,6 +78,7 @@ public class AndroidDictionaryGenerator {
 		
 		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2);
 		
+		//OutputStream outputStream = new FileOutputStream(destinationFileName + "-normal");
 		OutputStream outputStream = new GZIPOutputStream(new XorOutputStream(new File(destinationFileName), 23));
 		
 		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries);
