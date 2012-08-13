@@ -8,11 +8,14 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
@@ -280,4 +283,142 @@ public class CsvReaderWriter {
 
 		pw.close();
 	}
+	
+	public static List<KanjiEntry> parseKanjiEntriesFromCsv(String fileName, Map<String, KanjiDic2Entry> readKanjiDic2) throws IOException, JapaneseDictionaryException {
+		
+		List<KanjiEntry> result = new ArrayList<KanjiEntry>();
+		
+		CsvReader csvReader = new CsvReader(new FileReader(fileName), ',');
+		
+		while(csvReader.readRecord()) {
+			
+			int id = Integer.parseInt(csvReader.get(0));
+					
+			String kanjiString = csvReader.get(1);
+			
+			if (kanjiString.equals("") == true) {
+				throw new JapaneseDictionaryException("Empty kanji!");
+			}
+			
+			String polishTranslateListString = csvReader.get(2);
+			String infoString = csvReader.get(3);
+			
+			KanjiEntry entry = new KanjiEntry();
+			
+			entry.setId(id);
+			entry.setKanji(kanjiString);
+			entry.setPolishTranslates(parseStringIntoList(polishTranslateListString));
+			entry.setInfo(infoString);
+			
+			KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(kanjiString);
+			
+			entry.setKanjiDic2Entry(kanjiDic2Entry);
+			
+			result.add(entry);
+		}
+		
+		csvReader.close();
+		
+		return result;
+	}
+	
+	public static void generateKanjiCsv(OutputStream out, List<KanjiEntry> kanjiEntries) throws IOException {
+		
+		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
+		
+		writeKanjiEntries(csvWriter, kanjiEntries);
+		
+		csvWriter.close();		
+	}
+	
+	private static void writeKanjiEntries(CsvWriter csvWriter, List<KanjiEntry> kanjiEntries) throws IOException {
+		
+		for (KanjiEntry kanjiEntry : kanjiEntries) {
+			
+			csvWriter.write(String.valueOf(kanjiEntry.getId()));
+			csvWriter.write(kanjiEntry.getKanji());
+			
+			KanjiDic2Entry kanjiDic2Entry = kanjiEntry.getKanjiDic2Entry();
+			
+			if (kanjiDic2Entry != null) {
+				csvWriter.write(String.valueOf(kanjiDic2Entry.getStrokeCount()));
+				csvWriter.write(convertListToString(kanjiDic2Entry.getRadicals()));
+				csvWriter.write(convertListToString(kanjiDic2Entry.getOnReading()));
+				csvWriter.write(convertListToString(kanjiDic2Entry.getKunReading()));				
+			} else {
+				csvWriter.write(String.valueOf(""));
+				csvWriter.write(convertListToString(new ArrayList<String>()));
+				csvWriter.write(convertListToString(new ArrayList<String>()));
+				csvWriter.write(convertListToString(new ArrayList<String>()));								
+			}			
+			
+			csvWriter.write(convertListToString(kanjiEntry.getPolishTranslates()));
+			csvWriter.write(kanjiEntry.getInfo());
+			
+			csvWriter.endRecord();
+		}
+	}
+
+	public static List<KanjiEntry> parseKanjiEntriesFromCsv(String fileName) throws IOException, JapaneseDictionaryException {
+		
+		List<KanjiEntry> result = new ArrayList<KanjiEntry>();
+		
+		CsvReader csvReader = new CsvReader(new FileReader(fileName), ',');
+		
+		while(csvReader.readRecord()) {
+			
+			int id = Integer.parseInt(csvReader.get(0));
+					
+			String kanjiString = csvReader.get(1);
+			
+			if (kanjiString.equals("") == true) {
+				throw new JapaneseDictionaryException("Empty kanji!");
+			}
+			
+			String strokeCountString = csvReader.get(2);
+			
+			KanjiDic2Entry kanjiDic2Entry = null;
+			
+			if (strokeCountString.equals("") == false) {
+				
+				kanjiDic2Entry = new KanjiDic2Entry();
+				
+				int strokeCount = Integer.parseInt(strokeCountString);
+			
+				String radicalsString = csvReader.get(3);
+				List<String> radicals = parseStringIntoList(radicalsString);
+			
+				String onReadingString = csvReader.get(4);
+				List<String> onReading = parseStringIntoList(onReadingString);
+			
+				String kunReadingString = csvReader.get(5);
+				List<String> kunReading = parseStringIntoList(kunReadingString);
+				
+				kanjiDic2Entry.setKanji(kanjiString);
+				kanjiDic2Entry.setStrokeCount(strokeCount);
+				kanjiDic2Entry.setRadicals(radicals);
+				kanjiDic2Entry.setKunReading(kunReading);
+				kanjiDic2Entry.setOnReading(onReading);			
+			}
+			
+			String polishTranslateListString = csvReader.get(6);
+			String infoString = csvReader.get(7);
+			
+			KanjiEntry entry = new KanjiEntry();
+			
+			entry.setId(id);
+			entry.setKanji(kanjiString);
+			entry.setPolishTranslates(parseStringIntoList(polishTranslateListString));
+			entry.setInfo(infoString);
+						
+			entry.setKanjiDic2Entry(kanjiDic2Entry);
+			
+			result.add(entry);
+		}
+		
+		csvReader.close();
+		
+		return result;
+	}
 }
+

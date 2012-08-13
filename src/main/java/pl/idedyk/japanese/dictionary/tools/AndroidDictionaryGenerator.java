@@ -7,8 +7,11 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.zip.GZIPOutputStream;
 
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
 
@@ -16,10 +19,14 @@ public class AndroidDictionaryGenerator {
 
 	public static void main(String[] args) throws Exception {
 		
-		checkPolishJapaneseEntries("input/word.csv", "output/word.csv");
+		checkAndSavePolishJapaneseEntries("input/word.csv", "output/word.csv");
+		
+		generateKanjiEntries("input/kanji.csv", "../JapaneseDictionary_additional/kanjidic2-modified.xml", 
+				"../JapaneseDictionary_additional/kradfile-utf8",				
+				"output/kanji.csv");
 	}
-	
-	private static void checkPolishJapaneseEntries(String sourceFileName, String destinationFileName) throws Exception {
+
+	private static void checkAndSavePolishJapaneseEntries(String sourceFileName, String destinationFileName) throws Exception {
 		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName, null);
 		
@@ -57,5 +64,30 @@ public class AndroidDictionaryGenerator {
 		public void write(int b) throws IOException {
 			fos.write(b ^ xor);
 		}
+	}
+	
+	private static void generateKanjiEntries(
+			String sourceKanjiName,
+			String sourceKanjiDic2FileName,
+			String sourceKradFileName,			
+			String destinationFileName) throws Exception {
+		
+		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(sourceKradFileName);
+		
+		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName, kradFileMap);
+		
+		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2);
+		
+		OutputStream outputStream = new GZIPOutputStream(new XorOutputStream(new File(destinationFileName), 23));
+		
+		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries);
+		
+		// test
+		//List<KanjiEntry> fullKanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(destinationFileName);
+		
+		//OutputStream outputStream2 = new FileOutputStream(destinationFileName + "-test");
+		
+		//CsvReaderWriter.generateKanjiCsv(outputStream2, fullKanjiEntries);
+		
 	}
 }
