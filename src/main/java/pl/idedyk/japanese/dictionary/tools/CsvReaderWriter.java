@@ -34,7 +34,14 @@ public class CsvReaderWriter {
 			List<String> romajiList = polishJapaneseEntry.getRomajiList();
 
 			for (int romIdx = 0; romIdx < romajiList.size(); ++romIdx) {
-				String currentRomajiEntry = prefixRomaji + romajiList.get(romIdx);
+				
+				String currentRomajiEntry = "";
+				
+				if (prefixRomaji != null && prefixRomaji.equals("") == false) {
+					currentRomajiEntry = prefixRomaji + " ";	
+				}
+				
+				currentRomajiEntry += romajiList.get(romIdx);
 								
 				sb.append(polishJapaneseEntry.getWordType().getPrintable() + ":" + currentRomajiEntry);
 
