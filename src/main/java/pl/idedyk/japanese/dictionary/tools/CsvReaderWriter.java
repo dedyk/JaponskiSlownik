@@ -17,6 +17,7 @@ import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.RadiacalInfo;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.genki.DictionaryType;
@@ -419,6 +420,61 @@ public class CsvReaderWriter {
 			entry.setInfo(infoString);
 						
 			entry.setKanjiDic2Entry(kanjiDic2Entry);
+			
+			result.add(entry);
+		}
+		
+		csvReader.close();
+		
+		return result;
+	}
+
+	public static void generateKanjiRadiacalCsv(OutputStream out, List<RadiacalInfo> radiacalList) throws IOException {
+		
+		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
+		
+		writeKanjiRadiacalEntries(csvWriter, radiacalList);
+		
+		csvWriter.close();		
+	}
+
+	private static void writeKanjiRadiacalEntries(CsvWriter csvWriter, List<RadiacalInfo> radiacalList) throws IOException {
+		
+		for (RadiacalInfo currentRadiacalInfo : radiacalList) {
+			
+			csvWriter.write(String.valueOf(currentRadiacalInfo.getId()));
+			csvWriter.write(currentRadiacalInfo.getRadiacal());
+			csvWriter.write(String.valueOf(currentRadiacalInfo.getStrokeCount()));
+			
+			csvWriter.endRecord();
+		}		
+	}
+	
+	public static List<RadiacalInfo> parseRadiacalEntriesFromCsv(String fileName) throws IOException, JapaneseDictionaryException {
+		
+		List<RadiacalInfo> result = new ArrayList<RadiacalInfo>();
+		
+		CsvReader csvReader = new CsvReader(new FileReader(fileName), ',');
+		
+		while(csvReader.readRecord()) {
+			
+			int id = Integer.parseInt(csvReader.get(0));
+					
+			String radiacal = csvReader.get(1);
+			
+			if (radiacal.equals("") == true) {
+				throw new JapaneseDictionaryException("Empty radiacal!");
+			}
+			
+			String strokeCountString = csvReader.get(2);
+			
+			int strokeCount = Integer.parseInt(strokeCountString);
+			
+			RadiacalInfo entry = new RadiacalInfo();
+			
+			entry.setId(id);
+			entry.setRadiacal(radiacal);
+			entry.setStrokeCount(strokeCount);
 			
 			result.add(entry);
 		}

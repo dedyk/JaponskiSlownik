@@ -15,6 +15,7 @@ import java.util.zip.GZIPOutputStream;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.RadiacalInfo;
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
 
 public class AndroidDictionaryGenerator {
@@ -22,6 +23,8 @@ public class AndroidDictionaryGenerator {
 	public static void main(String[] args) throws Exception {
 		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", "output/word.csv");
+		
+		generateKanjiRadiacal("../JapaneseDictionary_additional/radkfile", "output/radiacal.csv");
 		
 		generateKanjiEntries(dictionary, "input/kanji.csv", "../JapaneseDictionary_additional/kanjidic2.xml", 
 				"../JapaneseDictionary_additional/kradfile",				
@@ -87,15 +90,7 @@ public class AndroidDictionaryGenerator {
 		//OutputStream outputStream = new FileOutputStream(destinationFileName + "-normal.csv");
 		OutputStream outputStream = new GZIPOutputStream(new XorOutputStream(new File(destinationFileName), 23));
 		
-		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries);
-		
-		// test
-		//List<KanjiEntry> fullKanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(destinationFileName);
-		
-		//OutputStream outputStream2 = new FileOutputStream(destinationFileName + "-test");
-		
-		//CsvReaderWriter.generateKanjiCsv(outputStream2, fullKanjiEntries);
-		
+		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries);		
 	}
 
 	private static void generateAdditionalKanjiEntries(List<PolishJapaneseEntry> dictionary,
@@ -142,5 +137,15 @@ public class AndroidDictionaryGenerator {
 				}
 			}
 		}
+	}
+	
+	private static void generateKanjiRadiacal(String radfile, String radiacalDestination) throws Exception {
+		
+		List<RadiacalInfo> radiacalList = KanjiDic2Reader.readRadkfile(radfile);
+		
+		//OutputStream outputStream = new FileOutputStream(radiacalDestination + "-normal.csv");
+		OutputStream outputStream = new GZIPOutputStream(new XorOutputStream(new File(radiacalDestination), 23));
+
+		CsvReaderWriter.generateKanjiRadiacalCsv(outputStream, radiacalList);	
 	}
 }

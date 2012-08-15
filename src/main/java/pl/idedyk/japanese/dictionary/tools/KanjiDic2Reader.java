@@ -3,6 +3,7 @@ package pl.idedyk.japanese.dictionary.tools;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -14,6 +15,7 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.dto.RadiacalInfo;
 
 public class KanjiDic2Reader {
 	
@@ -108,6 +110,49 @@ public class KanjiDic2Reader {
 			
 			result.add(currentReadingTypeAsElement.getText());			
 		}
+		
+		return result;
+	}
+	
+	public static List<RadiacalInfo> readRadkfile(String radkFile) throws IOException {
+		
+		List<RadiacalInfo> result = new ArrayList<RadiacalInfo>();
+		
+		BufferedReader reader = new BufferedReader(new FileReader(radkFile));
+		
+		int id = 1;
+		
+		while(true) {
+			String line = reader.readLine();
+			
+			if (line == null) {
+				break;
+			}
+			
+			if (line.startsWith("#") == true) {
+				continue;
+			}
+			
+			if (line.startsWith("$") == true) {
+				
+				String[] lineSplited = line.split(" ");
+				
+				String radiacal = lineSplited[1];
+				String strokeCountString = lineSplited[2];
+				
+				RadiacalInfo newRadiacalInfo = new RadiacalInfo();
+				
+				newRadiacalInfo.setId(id);
+				newRadiacalInfo.setRadiacal(radiacal);
+				newRadiacalInfo.setStrokeCount(Integer.parseInt(strokeCountString));
+				
+				result.add(newRadiacalInfo);
+				
+				id++;
+			}
+		}
+		
+		reader.close();
 		
 		return result;
 	}
