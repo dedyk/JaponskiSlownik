@@ -6,8 +6,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.zip.GZIPOutputStream;
 
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
@@ -19,14 +21,14 @@ public class AndroidDictionaryGenerator {
 
 	public static void main(String[] args) throws Exception {
 		
-		checkAndSavePolishJapaneseEntries("input/word.csv", "output/word.csv");
+		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", "output/word.csv");
 		
-		generateKanjiEntries("input/kanji.csv", "../JapaneseDictionary_additional/kanjidic2.xml", 
+		generateKanjiEntries(dictionary, "input/kanji.csv", "../JapaneseDictionary_additional/kanjidic2.xml", 
 				"../JapaneseDictionary_additional/kradfile",				
 				"output/kanji.csv");
 	}
 
-	private static void checkAndSavePolishJapaneseEntries(String sourceFileName, String destinationFileName) throws Exception {
+	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, String destinationFileName) throws Exception {
 		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName, null);
 		
@@ -47,6 +49,8 @@ public class AndroidDictionaryGenerator {
 		GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new XorOutputStream(new File(destinationFileName), 23));
 		
 		CsvReaderWriter.generateCsv(gzipOutputStream, result);
+		
+		return result;
 	}
 	
 	private static class XorOutputStream extends OutputStream {
@@ -67,7 +71,7 @@ public class AndroidDictionaryGenerator {
 	}
 	
 	private static void generateKanjiEntries(
-			String sourceKanjiName,
+			List<PolishJapaneseEntry> dictionary, String sourceKanjiName,
 			String sourceKanjiDic2FileName,
 			String sourceKradFileName,			
 			String destinationFileName) throws Exception {
@@ -78,7 +82,9 @@ public class AndroidDictionaryGenerator {
 		
 		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2);
 		
-		//OutputStream outputStream = new FileOutputStream(destinationFileName + "-normal");
+		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2);
+		
+		//OutputStream outputStream = new FileOutputStream(destinationFileName + "-normal.csv");
 		OutputStream outputStream = new GZIPOutputStream(new XorOutputStream(new File(destinationFileName), 23));
 		
 		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries);
@@ -90,5 +96,51 @@ public class AndroidDictionaryGenerator {
 		
 		//CsvReaderWriter.generateKanjiCsv(outputStream2, fullKanjiEntries);
 		
+	}
+
+	private static void generateAdditionalKanjiEntries(List<PolishJapaneseEntry> dictionary,
+			List<KanjiEntry> kanjiEntries, Map<String, KanjiDic2Entry> readKanjiDic2) {
+		
+		Set<String> alreadySetKanji = new HashSet<String>();
+		
+		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+			
+			alreadySetKanji.add(currentKanjiEntry.getKanji());	
+		}
+		
+		for (PolishJapaneseEntry currentPolishJapaneseEntry : dictionary) {
+			
+			String kanji = currentPolishJapaneseEntry.getKanji();
+			
+			for (int kanjiCharIdx = 0; kanjiCharIdx < kanji.length(); ++kanjiCharIdx) {
+				
+				String currentKanjiChar = String.valueOf(kanji.charAt(kanjiCharIdx));
+				
+				if (alreadySetKanji.contains(currentKanjiChar)) {
+					continue;
+				}
+				
+				KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(currentKanjiChar);
+				
+				if (kanjiDic2Entry != null) {
+					alreadySetKanji.add(kanji);
+					
+					KanjiEntry newKanjiEntry = new KanjiEntry();
+					
+					newKanjiEntry.setId(kanjiEntries.get(kanjiEntries.size() - 1).getId() + 1);
+					newKanjiEntry.setKanji(currentKanjiChar);
+					newKanjiEntry.setKanjiDic2Entry(kanjiDic2Entry);
+					
+					List<String> polishTranslates = new ArrayList<String>();
+					
+					polishTranslates.add("nieznane znaczenie; możesz pomóc, jeśli znasz znaczenie");
+					
+					newKanjiEntry.setPolishTranslates(polishTranslates);
+					newKanjiEntry.setInfo("");
+					
+					kanjiEntries.add(newKanjiEntry);
+				}
+			}
+		}
 	}
 }
