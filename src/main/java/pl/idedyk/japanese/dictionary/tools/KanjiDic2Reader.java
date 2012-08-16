@@ -15,7 +15,7 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
-import pl.idedyk.japanese.dictionary.dto.RadiacalInfo;
+import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 
 public class KanjiDic2Reader {
 	
@@ -114,9 +114,9 @@ public class KanjiDic2Reader {
 		return result;
 	}
 	
-	public static List<RadiacalInfo> readRadkfile(String radkFile) throws IOException {
+	public static List<RadicalInfo> readRadkfile(String radkFile) throws IOException {
 		
-		List<RadiacalInfo> result = new ArrayList<RadiacalInfo>();
+		List<RadicalInfo> result = new ArrayList<RadicalInfo>();
 		
 		BufferedReader reader = new BufferedReader(new FileReader(radkFile));
 		
@@ -137,16 +137,16 @@ public class KanjiDic2Reader {
 				
 				String[] lineSplited = line.split(" ");
 				
-				String radiacal = lineSplited[1];
+				String radical = lineSplited[1];
 				String strokeCountString = lineSplited[2];
 				
-				RadiacalInfo newRadiacalInfo = new RadiacalInfo();
+				RadicalInfo newRadicalInfo = new RadicalInfo();
 				
-				newRadiacalInfo.setId(id);
-				newRadiacalInfo.setRadiacal(radiacal);
-				newRadiacalInfo.setStrokeCount(Integer.parseInt(strokeCountString));
+				newRadicalInfo.setId(id);
+				newRadicalInfo.setRadical(radical);
+				newRadicalInfo.setStrokeCount(Integer.parseInt(strokeCountString));
 				
-				result.add(newRadiacalInfo);
+				result.add(newRadicalInfo);
 				
 				id++;
 			}

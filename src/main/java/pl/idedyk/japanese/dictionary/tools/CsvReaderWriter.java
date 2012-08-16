@@ -17,7 +17,7 @@ import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.dto.RadiacalInfo;
+import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.genki.DictionaryType;
@@ -429,30 +429,30 @@ public class CsvReaderWriter {
 		return result;
 	}
 
-	public static void generateKanjiRadiacalCsv(OutputStream out, List<RadiacalInfo> radiacalList) throws IOException {
+	public static void generateKanjiRadicalCsv(OutputStream out, List<RadicalInfo> radicalList) throws IOException {
 		
 		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
 		
-		writeKanjiRadiacalEntries(csvWriter, radiacalList);
+		writeKanjiRadicalEntries(csvWriter, radicalList);
 		
 		csvWriter.close();		
 	}
 
-	private static void writeKanjiRadiacalEntries(CsvWriter csvWriter, List<RadiacalInfo> radiacalList) throws IOException {
+	private static void writeKanjiRadicalEntries(CsvWriter csvWriter, List<RadicalInfo> radicalList) throws IOException {
 		
-		for (RadiacalInfo currentRadiacalInfo : radiacalList) {
+		for (RadicalInfo currentRadicalInfo : radicalList) {
 			
-			csvWriter.write(String.valueOf(currentRadiacalInfo.getId()));
-			csvWriter.write(currentRadiacalInfo.getRadiacal());
-			csvWriter.write(String.valueOf(currentRadiacalInfo.getStrokeCount()));
+			csvWriter.write(String.valueOf(currentRadicalInfo.getId()));
+			csvWriter.write(currentRadicalInfo.getRadical());
+			csvWriter.write(String.valueOf(currentRadicalInfo.getStrokeCount()));
 			
 			csvWriter.endRecord();
 		}		
 	}
 	
-	public static List<RadiacalInfo> parseRadiacalEntriesFromCsv(String fileName) throws IOException, JapaneseDictionaryException {
+	public static List<RadicalInfo> parseRadicalEntriesFromCsv(String fileName) throws IOException, JapaneseDictionaryException {
 		
-		List<RadiacalInfo> result = new ArrayList<RadiacalInfo>();
+		List<RadicalInfo> result = new ArrayList<RadicalInfo>();
 		
 		CsvReader csvReader = new CsvReader(new FileReader(fileName), ',');
 		
@@ -460,20 +460,20 @@ public class CsvReaderWriter {
 			
 			int id = Integer.parseInt(csvReader.get(0));
 					
-			String radiacal = csvReader.get(1);
+			String radical = csvReader.get(1);
 			
-			if (radiacal.equals("") == true) {
-				throw new JapaneseDictionaryException("Empty radiacal!");
+			if (radical.equals("") == true) {
+				throw new JapaneseDictionaryException("Empty radical!");
 			}
 			
 			String strokeCountString = csvReader.get(2);
 			
 			int strokeCount = Integer.parseInt(strokeCountString);
 			
-			RadiacalInfo entry = new RadiacalInfo();
+			RadicalInfo entry = new RadicalInfo();
 			
 			entry.setId(id);
-			entry.setRadiacal(radiacal);
+			entry.setRadical(radical);
 			entry.setStrokeCount(strokeCount);
 			
 			result.add(entry);

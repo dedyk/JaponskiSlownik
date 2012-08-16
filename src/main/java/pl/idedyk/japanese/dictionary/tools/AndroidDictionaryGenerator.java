@@ -15,7 +15,7 @@ import java.util.zip.GZIPOutputStream;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.dto.RadiacalInfo;
+import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
 
 public class AndroidDictionaryGenerator {
@@ -24,7 +24,7 @@ public class AndroidDictionaryGenerator {
 		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", "output/word.csv");
 		
-		generateKanjiRadiacal("../JapaneseDictionary_additional/radkfile", "output/radiacal.csv");
+		generateKanjiRadical("../JapaneseDictionary_additional/radkfile", "output/radical.csv");
 		
 		generateKanjiEntries(dictionary, "input/kanji.csv", "../JapaneseDictionary_additional/kanjidic2.xml", 
 				"../JapaneseDictionary_additional/kradfile",				
@@ -139,13 +139,13 @@ public class AndroidDictionaryGenerator {
 		}
 	}
 	
-	private static void generateKanjiRadiacal(String radfile, String radiacalDestination) throws Exception {
+	private static void generateKanjiRadical(String radfile, String radicalDestination) throws Exception {
 		
-		List<RadiacalInfo> radiacalList = KanjiDic2Reader.readRadkfile(radfile);
+		List<RadicalInfo> radicalList = KanjiDic2Reader.readRadkfile(radfile);
 		
-		//OutputStream outputStream = new FileOutputStream(radiacalDestination + "-normal.csv");
-		OutputStream outputStream = new GZIPOutputStream(new XorOutputStream(new File(radiacalDestination), 23));
+		//OutputStream outputStream = new FileOutputStream(radicalDestination + "-normal.csv");
+		OutputStream outputStream = new GZIPOutputStream(new XorOutputStream(new File(radicalDestination), 23));
 
-		CsvReaderWriter.generateKanjiRadiacalCsv(outputStream, radiacalList);	
+		CsvReaderWriter.generateKanjiRadicalCsv(outputStream, radicalList);	
 	}
 }

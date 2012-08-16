@@ -1,10 +1,10 @@
 package pl.idedyk.japanese.dictionary.dto;
 
-public class RadiacalInfo {
+public class RadicalInfo {
 	
 	private int id;
 	
-	private String radiacal;
+	private String radical;
 	
 	private int strokeCount;
 
@@ -12,8 +12,8 @@ public class RadiacalInfo {
 		return id;
 	}
 
-	public String getRadiacal() {
-		return radiacal;
+	public String getRadical() {
+		return radical;
 	}
 
 	public int getStrokeCount() {
@@ -24,8 +24,8 @@ public class RadiacalInfo {
 		this.id = id;
 	}
 
-	public void setRadiacal(String radiacal) {
-		this.radiacal = radiacal;
+	public void setRadical(String radical) {
+		this.radical = radical;
 	}
 
 	public void setStrokeCount(int strokeCount) {
