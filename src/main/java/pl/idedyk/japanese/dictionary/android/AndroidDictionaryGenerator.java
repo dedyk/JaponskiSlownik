@@ -1,4 +1,4 @@
-package pl.idedyk.japanese.dictionary.tools;
+package pl.idedyk.japanese.dictionary.android;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,11 +12,16 @@ import java.util.Map;
 import java.util.Set;
 import java.util.zip.GZIPOutputStream;
 
+import pl.idedyk.japanese.dictionary.common.Validator;
+import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
-import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
 public class AndroidDictionaryGenerator {
 
@@ -32,8 +37,16 @@ public class AndroidDictionaryGenerator {
 	}
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, String destinationFileName) throws Exception {
+				
+		// hiragana
+		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
+		
+		// katakana
+		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
 		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName, null);
+		
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries);
 		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		

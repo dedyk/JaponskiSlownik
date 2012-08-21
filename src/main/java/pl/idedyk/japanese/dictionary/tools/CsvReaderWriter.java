@@ -13,15 +13,15 @@ import java.util.Map;
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
+import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.dto.DictionaryType;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
+import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
-import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.genki.DictionaryType;
-import pl.idedyk.japanese.dictionary.genki.WordType;
 
 public class CsvReaderWriter {
 

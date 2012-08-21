@@ -2,9 +2,6 @@ package pl.idedyk.japanese.dictionary.dto;
 
 import java.util.List;
 
-import pl.idedyk.japanese.dictionary.genki.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.genki.DictionaryType;
-import pl.idedyk.japanese.dictionary.genki.WordType;
 
 public class PolishJapaneseEntry {
 	

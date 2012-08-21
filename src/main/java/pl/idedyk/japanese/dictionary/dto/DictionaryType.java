@@ -1,4 +1,4 @@
-package pl.idedyk.japanese.dictionary.genki;
+package pl.idedyk.japanese.dictionary.dto;
 
 public enum DictionaryType {
 	WORD("WORD"),
