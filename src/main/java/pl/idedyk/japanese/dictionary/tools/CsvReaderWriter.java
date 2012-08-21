@@ -18,6 +18,7 @@ import pl.idedyk.japanese.dictionary.dto.DictionaryType;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
+import pl.idedyk.japanese.dictionary.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.dto.WordType;
@@ -358,7 +359,15 @@ public class CsvReaderWriter {
 				csvWriter.write(convertListToString(new ArrayList<String>()));
 				csvWriter.write(convertListToString(new ArrayList<String>()));
 				csvWriter.write(convertListToString(new ArrayList<String>()));								
-			}			
+			}
+			
+			KanjivgEntry kanjivgEntry = kanjiEntry.getKanjivgEntry();
+			
+			if (kanjivgEntry != null) {
+				csvWriter.write(convertListToString(kanjivgEntry.getStrokePaths()));
+			} else {
+				csvWriter.write(convertListToString(new ArrayList<String>()));
+			}
 			
 			csvWriter.write(convertListToString(kanjiEntry.getPolishTranslates()));
 			csvWriter.write(kanjiEntry.getInfo());

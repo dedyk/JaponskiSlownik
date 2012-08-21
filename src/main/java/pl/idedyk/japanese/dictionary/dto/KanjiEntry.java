@@ -13,6 +13,8 @@ public class KanjiEntry {
 	private String info;
 	
 	private KanjiDic2Entry kanjiDic2Entry;
+	
+	private KanjivgEntry kanjivgEntry;
 
 	public int getId() {
 		return id;
@@ -52,5 +54,13 @@ public class KanjiEntry {
 
 	public void setKanjiDic2Entry(KanjiDic2Entry kanjiDic2Entry) {
 		this.kanjiDic2Entry = kanjiDic2Entry;
+	}
+
+	public KanjivgEntry getKanjivgEntry() {
+		return kanjivgEntry;
+	}
+
+	public void setKanjivgEntry(KanjivgEntry kanjivgEntry) {
+		this.kanjivgEntry = kanjivgEntry;
 	}
 }

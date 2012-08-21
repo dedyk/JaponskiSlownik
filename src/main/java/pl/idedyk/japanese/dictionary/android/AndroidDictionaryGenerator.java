@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -17,11 +18,13 @@ import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
+import pl.idedyk.japanese.dictionary.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
+import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
 
 public class AndroidDictionaryGenerator {
 
@@ -32,7 +35,7 @@ public class AndroidDictionaryGenerator {
 		generateKanjiRadical("../JapaneseDictionary_additional/radkfile", "output/radical.csv");
 		
 		generateKanjiEntries(dictionary, "input/kanji.csv", "../JapaneseDictionary_additional/kanjidic2.xml", 
-				"../JapaneseDictionary_additional/kradfile",				
+				"../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjivg",		
 				"output/kanji.csv");
 	}
 
@@ -89,7 +92,8 @@ public class AndroidDictionaryGenerator {
 	private static void generateKanjiEntries(
 			List<PolishJapaneseEntry> dictionary, String sourceKanjiName,
 			String sourceKanjiDic2FileName,
-			String sourceKradFileName,			
+			String sourceKradFileName,
+			String kanjivgDir,
 			String destinationFileName) throws Exception {
 		
 		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(sourceKradFileName);
@@ -99,6 +103,17 @@ public class AndroidDictionaryGenerator {
 		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2);
 		
 		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2);
+		
+		Map<String, KanjivgEntry> kanjivgEntryMap = readKanjivgDir(kanjivgDir);
+		
+		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+			
+			String kanji = currentKanjiEntry.getKanji();
+			
+			KanjivgEntry kanjivgEntry = kanjivgEntryMap.get(kanji);
+			
+			currentKanjiEntry.setKanjivgEntry(kanjivgEntry);			
+		}
 		
 		//OutputStream outputStream = new FileOutputStream(destinationFileName + "-normal.csv");
 		OutputStream outputStream = new GZIPOutputStream(new XorOutputStream(new File(destinationFileName), 23));
@@ -160,5 +175,23 @@ public class AndroidDictionaryGenerator {
 		OutputStream outputStream = new GZIPOutputStream(new XorOutputStream(new File(radicalDestination), 23));
 
 		CsvReaderWriter.generateKanjiRadicalCsv(outputStream, radicalList);	
+	}
+	
+	private static Map<String, KanjivgEntry> readKanjivgDir(String kanjivgDir) throws Exception {
+		
+		Map<String, KanjivgEntry> kanjivgEntryMap = new HashMap<String, KanjivgEntry>();
+		
+		File[] kanjivgDirFileList = new File(kanjivgDir).listFiles();
+		
+		for (File currentKanjivgDirFileList : kanjivgDirFileList) {
+						
+			KanjivgEntry kanjivgEntry = KanjivgReader.readKanjivgFile(currentKanjivgDirFileList);
+			
+			if (kanjivgEntry != null) {
+				kanjivgEntryMap.put(kanjivgEntry.getKanji(), kanjivgEntry);
+			}
+		}
+		
+		return kanjivgEntryMap;
 	}
 }
