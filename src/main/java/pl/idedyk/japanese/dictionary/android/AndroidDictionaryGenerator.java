@@ -1,9 +1,7 @@
 package pl.idedyk.japanese.dictionary.android;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -65,30 +63,13 @@ public class AndroidDictionaryGenerator {
 	
 		}
 		
-		GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new XorOutputStream(new File(destinationFileName), 23));
+		GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new FileOutputStream(new File(destinationFileName)));
 		
 		CsvReaderWriter.generateCsv(gzipOutputStream, result);
 		
 		return result;
 	}
-	
-	private static class XorOutputStream extends OutputStream {
-
-		private FileOutputStream fos;
 		
-		private int xor;
-		
-		public XorOutputStream(File file, int xor) throws FileNotFoundException {
-			fos = new FileOutputStream(file);
-			
-			this.xor = xor;
-		}
-
-		public void write(int b) throws IOException {
-			fos.write(b ^ xor);
-		}
-	}
-	
 	private static void generateKanjiEntries(
 			List<PolishJapaneseEntry> dictionary, String sourceKanjiName,
 			String sourceKanjiDic2FileName,
@@ -116,7 +97,7 @@ public class AndroidDictionaryGenerator {
 		}
 		
 		//OutputStream outputStream = new FileOutputStream(destinationFileName + "-normal.csv");
-		OutputStream outputStream = new GZIPOutputStream(new XorOutputStream(new File(destinationFileName), 23));
+		OutputStream outputStream = new GZIPOutputStream(new FileOutputStream(new File(destinationFileName)));
 		
 		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries);		
 	}
@@ -172,7 +153,7 @@ public class AndroidDictionaryGenerator {
 		List<RadicalInfo> radicalList = KanjiDic2Reader.readRadkfile(radfile);
 		
 		//OutputStream outputStream = new FileOutputStream(radicalDestination + "-normal.csv");
-		OutputStream outputStream = new GZIPOutputStream(new XorOutputStream(new File(radicalDestination), 23));
+		OutputStream outputStream = new GZIPOutputStream(new FileOutputStream(new File(radicalDestination)));
 
 		CsvReaderWriter.generateKanjiRadicalCsv(outputStream, radicalList);	
 	}

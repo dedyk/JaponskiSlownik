@@ -25,7 +25,7 @@ public class KanjivgReader {
 		String feature = "http://apache.org/xml/features/nonvalidating/load-external-dtd";
 
 		SAXReader reader = new SAXReader();		
-		reader.setFeature(feature, false );
+		reader.setFeature(feature, false);
 
 		Document document = reader.read(file);
 
