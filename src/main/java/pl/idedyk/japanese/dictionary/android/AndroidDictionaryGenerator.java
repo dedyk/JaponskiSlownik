@@ -30,10 +30,10 @@ public class AndroidDictionaryGenerator {
 		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", "output/word.csv");
 		
-		generateKanjiRadical("../JapaneseDictionary_additional/radkfile", "output/radical.csv");
+		generateKanjiRadical("../JaponskiSlownik_dodatki/radkfile", "output/radical.csv");
 		
-		generateKanjiEntries(dictionary, "input/kanji.csv", "../JapaneseDictionary_additional/kanjidic2.xml", 
-				"../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjivg",		
+		generateKanjiEntries(dictionary, "input/kanji.csv", "../JaponskiSlownik_dodatki/kanjidic2.xml", 
+				"../JaponskiSlownik_dodatki/kradfile", "../JaponskiSlownik_dodatki/kanjivg",		
 				"output/kanji.csv");
 	}
 
