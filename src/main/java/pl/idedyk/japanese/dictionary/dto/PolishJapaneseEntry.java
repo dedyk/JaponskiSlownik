@@ -23,7 +23,11 @@ public class PolishJapaneseEntry {
 	
 	private String prefixRomaji;
 	
+	private String realPrefixRomaji;
+	
 	private List<String> romajiList;
+	
+	private List<String> realRomajiList;
 		
 	private List<String> polishTranslates;
 	
@@ -147,5 +151,21 @@ public class PolishJapaneseEntry {
 
 	public void setPrefixRomaji(String prefixRomaji) {
 		this.prefixRomaji = prefixRomaji;
+	}
+
+	public String getRealPrefixRomaji() {
+		return realPrefixRomaji;
+	}
+
+	public void setRealPrefixRomaji(String realPrefixRomaji) {
+		this.realPrefixRomaji = realPrefixRomaji;
+	}
+
+	public List<String> getRealRomajiList() {
+		return realRomajiList;
+	}
+
+	public void setRealRomajiList(List<String> realRomajiList) {
+		this.realRomajiList = realRomajiList;
 	}
 }

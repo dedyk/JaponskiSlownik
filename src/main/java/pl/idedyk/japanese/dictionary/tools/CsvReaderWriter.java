@@ -32,8 +32,18 @@ public class CsvReaderWriter {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
+			String prefixKana = polishJapaneseEntry.getPrefixKana();
+			
 			String prefixRomaji = polishJapaneseEntry.getPrefixRomaji();
 			List<String> romajiList = polishJapaneseEntry.getRomajiList();
+			
+			if (prefixKana.equals("を") == true && prefixRomaji.equals("o") == true) {
+				prefixRomaji = "wo";
+			}
+			
+			if (polishJapaneseEntry.getRealRomajiList() != null) {
+				romajiList = polishJapaneseEntry.getRealRomajiList();
+			}
 
 			for (int romIdx = 0; romIdx < romajiList.size(); ++romIdx) {
 				
