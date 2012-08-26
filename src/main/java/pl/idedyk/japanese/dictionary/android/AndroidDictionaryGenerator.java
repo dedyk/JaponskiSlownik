@@ -108,7 +108,6 @@ public class AndroidDictionaryGenerator {
 		Set<String> alreadySetKanji = new HashSet<String>();
 		
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
-			
 			alreadySetKanji.add(currentKanjiEntry.getKanji());	
 		}
 		
@@ -122,12 +121,12 @@ public class AndroidDictionaryGenerator {
 				
 				if (alreadySetKanji.contains(currentKanjiChar)) {
 					continue;
-				}
+				}				
 				
 				KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(currentKanjiChar);
 				
 				if (kanjiDic2Entry != null) {
-					alreadySetKanji.add(kanji);
+					alreadySetKanji.add(currentKanjiChar);
 					
 					KanjiEntry newKanjiEntry = new KanjiEntry();
 					
