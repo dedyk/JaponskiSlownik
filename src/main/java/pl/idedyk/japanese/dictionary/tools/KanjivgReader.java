@@ -1,6 +1,8 @@
 package pl.idedyk.japanese.dictionary.tools;
 
 import java.io.File;
+import java.nio.ByteBuffer;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -93,5 +95,46 @@ public class KanjivgReader {
 		QName qname = new QName(name, namespace);
 				
 		return qname;
+	}
+	
+	public static String getKanjivgId(String kanji) {
+		Charset unicodeCharset = Charset.forName("UNICODE");
+		
+		ByteBuffer unicodeByteBuffer = unicodeCharset.encode(kanji);
+		
+		byte[] unicodeByteBufferArray = unicodeByteBuffer.array();
+		
+		if (unicodeByteBufferArray.length != 5) {
+			throw new RuntimeException();
+		}
+		
+		int[] unicodeIntBufferArray = new int[unicodeByteBufferArray.length];
+		
+		for (int idx = 0; idx < unicodeByteBufferArray.length; ++idx) {
+			
+			unicodeIntBufferArray[idx] = (int)unicodeByteBufferArray[idx];
+			
+			if (unicodeIntBufferArray[idx] < 0) {
+				unicodeIntBufferArray[idx] = 256 + unicodeByteBufferArray[idx];
+			}
+		}
+		
+		StringBuffer result = new StringBuffer("0");
+		
+		String u1 = Integer.toHexString(unicodeIntBufferArray[2]);
+		
+		if (u1.length() == 1) {
+			u1 = "0" + u1;
+		}
+		result.append(u1);
+		
+		String u2 = Integer.toHexString(unicodeIntBufferArray[3]); 
+
+		if (u2.length() == 1) {
+			u2 = "0" + u2;
+		}
+		result.append(u2);
+		
+		return result.toString();
 	}
 }

@@ -84,13 +84,15 @@ public class AndroidDictionaryGenerator {
 		
 		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2);
 		
-		Map<String, KanjivgEntry> kanjivgEntryMap = readKanjivgDir(kanjivgDir);
+		//Map<String, KanjivgEntry> kanjivgEntryMap = readKanjivgDir(kanjivgDir);
 		
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
 			
 			String kanji = currentKanjiEntry.getKanji();
 			
-			KanjivgEntry kanjivgEntry = kanjivgEntryMap.get(kanji);
+			String kanjivgId = KanjivgReader.getKanjivgId(kanji);
+			
+			KanjivgEntry kanjivgEntry = KanjivgReader.readKanjivgFile(new File(kanjivgDir, kanjivgId + ".svg"));
 			
 			currentKanjiEntry.setKanjivgEntry(kanjivgEntry);			
 		}
@@ -154,6 +156,7 @@ public class AndroidDictionaryGenerator {
 		CsvReaderWriter.generateKanjiRadicalCsv(outputStream, radicalList);	
 	}
 	
+	/*
 	private static Map<String, KanjivgEntry> readKanjivgDir(String kanjivgDir) throws Exception {
 		
 		Map<String, KanjivgEntry> kanjivgEntryMap = new HashMap<String, KanjivgEntry>();
@@ -171,4 +174,5 @@ public class AndroidDictionaryGenerator {
 		
 		return kanjivgEntryMap;
 	}
+	*/
 }
