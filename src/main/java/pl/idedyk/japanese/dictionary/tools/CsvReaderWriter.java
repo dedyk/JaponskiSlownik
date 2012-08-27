@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary.tools;
 
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -301,6 +302,30 @@ public class CsvReaderWriter {
 		pw.write(sb.toString());
 
 		pw.close();
+	}
+	
+	public static void generateKanaEntriesCsvWithStrokePaths(FileOutputStream outputStream, List<KanaEntry> kanaEntries) throws IOException {
+		
+		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(outputStream), ',');
+		
+		int counter = 1;
+		
+		for (KanaEntry kanaEntry : kanaEntries) {
+			csvWriter.write(String.valueOf(counter));
+			csvWriter.write(kanaEntry.getKanaJapanese());
+			
+			List<KanjivgEntry> strokePaths = kanaEntry.getStrokePaths();
+			
+			for (KanjivgEntry currentKanjivgEntry : strokePaths) {
+				csvWriter.write(convertListToString(currentKanjivgEntry.getStrokePaths()));
+			}
+			
+			csvWriter.endRecord();
+			
+			counter++;
+		}
+		
+		csvWriter.close();
 	}
 	
 	public static List<KanjiEntry> parseKanjiEntriesFromCsv(String fileName, Map<String, KanjiDic2Entry> readKanjiDic2) throws IOException, JapaneseDictionaryException {

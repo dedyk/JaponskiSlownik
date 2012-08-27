@@ -10,8 +10,6 @@ import java.util.Map;
 
 import org.dom4j.Document;
 import org.dom4j.Element;
-import org.dom4j.Namespace;
-import org.dom4j.QName;
 import org.dom4j.XPath;
 import org.dom4j.io.SAXReader;
 
@@ -30,27 +28,20 @@ public class KanjivgReader {
 		reader.setFeature(feature, false);
 
 		Document document = reader.read(file);
-
-		XPath kvgElementXPath = createXPath(document, "/svg:svg/svg:g/*[@kvg:element]");
-		
-		Element gElement = (Element)kvgElementXPath.selectSingleNode(document);
-		
-		if (gElement == null) {
-			return null;
-		}
-		
-		String kanji = gElement.attributeValue(createQNameKvg("element"));
-		
-		if (kanji == null) {
-			throw new RuntimeException("kanji == null");
-		}
 		
 		XPath pathXPath = createXPath(document, "/svg:svg/svg:g/*[@kvg:element]//svg:path");
 		
 		List<?> pathNodes = pathXPath.selectNodes(document);
 		
 		if (pathNodes.size() == 0) {
-			throw new RuntimeException("pathNodes.size() == 0");
+			
+			pathXPath = createXPath(document, "/svg:svg/svg:g/*/svg:path");
+			
+			pathNodes = pathXPath.selectNodes(document);
+			
+			if (pathNodes.size() == 0) {
+				throw new RuntimeException("pathNodes.size() == 0");
+			}
 		}
 		
 		List<String> strokePaths = new ArrayList<String>();
@@ -69,7 +60,6 @@ public class KanjivgReader {
 		
 		KanjivgEntry kanjivgEntry = new KanjivgEntry();
 
-		kanjivgEntry.setKanji(kanji);
 		kanjivgEntry.setStrokePaths(strokePaths);
 		
 		return kanjivgEntry;
@@ -88,6 +78,7 @@ public class KanjivgReader {
 		return result;
 	}
 	
+	/*
 	private static QName createQNameKvg(String name) {
 		
 		Namespace namespace = new Namespace("kvg", kvgNamespace);
@@ -96,6 +87,7 @@ public class KanjivgReader {
 				
 		return qname;
 	}
+	*/
 	
 	public static String getKanjivgId(String kanji) {
 		Charset unicodeCharset = Charset.forName("UNICODE");

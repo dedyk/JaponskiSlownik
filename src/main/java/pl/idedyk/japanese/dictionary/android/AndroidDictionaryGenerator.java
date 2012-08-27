@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -27,6 +28,8 @@ public class AndroidDictionaryGenerator {
 	public static void main(String[] args) throws Exception {
 		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", "output/word.csv");
+		
+		generateKanaEntries("../JaponskiSlownik_dodatki/kanjivg", "output/kana.csv");
 		
 		generateKanjiRadical("../JaponskiSlownik_dodatki/radkfile", "output/radical.csv");
 		
@@ -66,6 +69,57 @@ public class AndroidDictionaryGenerator {
 		CsvReaderWriter.generateCsv(outputStream, result);
 		
 		return result;
+	}
+	
+	private static void generateKanaEntries(String kanjivgDir, String destinationFileName) throws Exception {
+		
+		// hiragana
+		List<KanaEntry> kanaEntries = KanaHelper.getAllHiraganaKanaEntries();
+		
+		// katakana
+		kanaEntries.addAll(KanaHelper.getAllKatakanaKanaEntries());
+		
+		Map<String, KanjivgEntry> kanaJapaneseKanjiEntryCache = new HashMap<String, KanjivgEntry>();
+
+		for (KanaEntry currentKanaEntry : kanaEntries) {
+			
+			List<KanjivgEntry> kanaStrokePaths = new ArrayList<KanjivgEntry>();
+			
+			String kanaJapanese = currentKanaEntry.getKanaJapanese();
+			
+			for (int kanaJapaneseCharIdx = 0; kanaJapaneseCharIdx < kanaJapanese.length(); ++kanaJapaneseCharIdx) {
+				
+				String currentKanaJapaneseChar = String.valueOf(kanaJapanese.charAt(kanaJapaneseCharIdx));
+				
+				KanjivgEntry kanjivgEntryInCache = kanaJapaneseKanjiEntryCache.get(currentKanaJapaneseChar);
+				
+				if (kanjivgEntryInCache == null) {
+					
+					String kanjivgId = KanjivgReader.getKanjivgId(currentKanaJapaneseChar);
+					
+					kanjivgEntryInCache = KanjivgReader.readKanjivgFile(new File(kanjivgDir, kanjivgId + ".svg"));
+					
+					if (kanjivgEntryInCache == null) {
+						throw new RuntimeException("kanjivgEntryInCache == null");
+					}
+					
+					kanaJapaneseKanjiEntryCache.put(currentKanaJapaneseChar, kanjivgEntryInCache);
+				} 
+				
+				kanaStrokePaths.add(kanjivgEntryInCache);
+			}
+			
+			if (kanaStrokePaths == null || kanaStrokePaths.size() <= 0 || kanaStrokePaths.size() > 2) {
+				throw new RuntimeException("kanaStrokePaths == null || kanaStrokePaths.size() <= 0 || kanaStrokePaths.size() > 2");
+			}
+			
+			currentKanaEntry.setStrokePaths(kanaStrokePaths);
+		}
+		
+		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
+		
+		CsvReaderWriter.generateKanaEntriesCsvWithStrokePaths(outputStream, kanaEntries);		
+
 	}
 		
 	private static void generateKanjiEntries(
