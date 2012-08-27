@@ -9,7 +9,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.zip.GZIPOutputStream;
 
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
@@ -63,9 +62,9 @@ public class AndroidDictionaryGenerator {
 	
 		}
 		
-		GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new FileOutputStream(new File(destinationFileName)));
+		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 		
-		CsvReaderWriter.generateCsv(gzipOutputStream, result);
+		CsvReaderWriter.generateCsv(outputStream, result);
 		
 		return result;
 	}
@@ -96,8 +95,7 @@ public class AndroidDictionaryGenerator {
 			currentKanjiEntry.setKanjivgEntry(kanjivgEntry);			
 		}
 		
-		//OutputStream outputStream = new FileOutputStream(destinationFileName + "-normal.csv");
-		OutputStream outputStream = new GZIPOutputStream(new FileOutputStream(new File(destinationFileName)));
+		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 		
 		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries);		
 	}
@@ -151,8 +149,7 @@ public class AndroidDictionaryGenerator {
 		
 		List<RadicalInfo> radicalList = KanjiDic2Reader.readRadkfile(radfile);
 		
-		//OutputStream outputStream = new FileOutputStream(radicalDestination + "-normal.csv");
-		OutputStream outputStream = new GZIPOutputStream(new FileOutputStream(new File(radicalDestination)));
+		OutputStream outputStream = new FileOutputStream(new File(radicalDestination));
 
 		CsvReaderWriter.generateKanjiRadicalCsv(outputStream, radicalList);	
 	}
