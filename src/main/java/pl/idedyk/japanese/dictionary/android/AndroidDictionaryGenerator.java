@@ -79,6 +79,9 @@ public class AndroidDictionaryGenerator {
 		// katakana
 		kanaEntries.addAll(KanaHelper.getAllKatakanaKanaEntries());
 		
+		// additional
+		kanaEntries.addAll(KanaHelper.getAdditionalKanaEntries());
+		
 		Map<String, KanjivgEntry> kanaJapaneseKanjiEntryCache = new HashMap<String, KanjivgEntry>();
 
 		for (KanaEntry currentKanaEntry : kanaEntries) {

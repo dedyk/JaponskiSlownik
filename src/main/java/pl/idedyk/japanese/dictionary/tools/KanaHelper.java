@@ -365,6 +365,25 @@ public class KanaHelper {
 		
 	}
 	
+	public static List<KanaEntry> getAdditionalKanaEntries() {
+		
+		List<KanaEntry> additionalEntries = new ArrayList<KanaEntry>();
+		
+		additionalEntries.add(new KanaEntry("ゃ", "ya"));
+		additionalEntries.add(new KanaEntry("ゅ", "yu"));
+		additionalEntries.add(new KanaEntry("ょ", "yo"));
+		
+		additionalEntries.add(new KanaEntry("ァ", "a"));
+		additionalEntries.add(new KanaEntry("ィ", "i"));
+		additionalEntries.add(new KanaEntry("ェ", "e"));
+		
+		additionalEntries.add(new KanaEntry("ャ", "ya"));
+		additionalEntries.add(new KanaEntry("ュ", "yu"));
+		additionalEntries.add(new KanaEntry("ョ", "yo"));
+		
+		return additionalEntries;
+	}
+	
 	public static KanaWord convertRomajiIntoHiraganaWord(Map<String, KanaEntry> hiraganaCache, String word) throws JapaneseDictionaryException {
 		
 		word = word.toLowerCase();
