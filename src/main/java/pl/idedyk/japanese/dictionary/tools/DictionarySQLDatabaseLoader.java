@@ -21,11 +21,11 @@ create table words (
 	prefix varchar(10) null,
 	kanji varchar(30) null, index(kanji),
 	kana_list varchar(100) not null,
+	prefix_romaji varchar(10) null,
 	romaji_list varchar(100) not null,
 	polish_translate_list varchar(100) not null,
 	info varchar(100) null,
-	use_entry varchar(10) null,
-	fulltext(kanji, kana_list, romaji_list, polish_translate_list)
+	use_entry varchar(10) null
 ) default character set = utf8 collate = utf8_polish_ci;
 
  */
@@ -37,9 +37,8 @@ public class DictionarySQLDatabaseLoader {
 		
 		final String mysqlAddress = "jdbc:mysql://localhost/japdb?characterEncoding=utf8&user=japdbuser&password=japdbpasswd";
 		
-		loadDictionaryIntoDB(mysqlAddress, "words", "input/word.csv");
-		
-		
+		//loadDictionaryIntoDB(mysqlAddress, "words", "input/word.csv");
+		loadDictionaryIntoDB(mysqlAddress, "words", "output/word.csv");
 	}
 
 	private static void loadDictionaryIntoDB(String mysqlAddress, String tableName, String inputFileName) throws IOException, JapaneseDictionaryException {

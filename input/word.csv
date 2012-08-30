@@ -275,7 +275,7 @@ alkohol",również forma sake,NO
 206,WORD,WORD_NOUN,HIRAGANA,,父,ちち,,chichi,ojciec,"własna rodzina, formalnie",
 207,WORD,WORD_NOUN,HIRAGANA,,歯,は,,ha,ząb,,
 208,WORD,WORD_NOUN,HIRAGANA,,日,ひ,,hi,słońce,,
-209,WORD,WORD_NOUN,HIRAGANA,,日,ひ,,hi,ogień,,
+209,WORD,WORD_NOUN,HIRAGANA,,日,ひ,,hi,dzień,,
 210,WORD,WORD_NOUN,HIRAGANA,,耳,みみ,,mimi,ucho,,
 211,WORD,WORD_NOUN,HIRAGANA,,目,め,,me,oko,,
 212,WORD,WORD_NOUN,HIRAGANA,,桃,もも,,momo,brzoskwinia,,
@@ -841,7 +841,7 @@ nosić",powyżej paska,
 690,WORD,UNKNOWN,HIRAGANA,,何か,なにか,,nanika,coś,,
 691,WORD,WORD_NOUN,KATAKANA,,-,パーティー,,paatii,party,,
 692,WORD,WORD_NOUN,KATAKANA,,-,バーベキュー,,baabekyuu,grill,,
-693,WORD,WORD_NOUN,HIRAGANA,,-,はし,,hashi,pałeczki,,
+693,WORD,WORD_NOUN,HIRAGANA,お,-,はし,o,hashi,pałeczki,,
 694,WORD,WORD_NOUN,HIRAGANA,,冬,ふゆ,,fuyu,zima,,
 695,WORD,UNKNOWN,KATAKANA,,-,ホーメステイ,,hoomesutei,"pozostać w domu
 żyć ze swoją lokalną rodziną",,
@@ -1038,7 +1038,7 @@ szybko",zrobić coś,
 868,WORD,WORD_NOUN,HIRAGANA,,駐車場,ちゅうしゃじょう,,chuushajou,parking,,
 869,WORD,WORD_VERB_U,HIRAGANA,,学ぶ,まなぶ,,manabu,uczyć się,ogólnie,
 870,WORD,WORD_VERB_U,HIRAGANA,,習う,ならう,,narau,uczyć się,czegoś praktycznego,
-871,WORD,UNKNOWN,HIRAGANA,,-,むかしむかし,,mukashimukashi,"dawno, dawno temu",,
+871,WORD,UNKNOWN,HIRAGANA,,昔々,むかしむかし,,mukashi mukashi,"dawno, dawno temu",,
 872,WORD,WORD_NOUN,HIRAGANA,,-,かき,,kaki,bambusowy kapelusz,,
 873,WORD,WORD_NOUN,HIRAGANA,,-,おもち,,omochi,ciastko ryżowe,,
 874,WORD,WORD_ADJECTIVE_I,HIRAGANA,,悲しい,かなしい,,kanashii,smutny,,
@@ -1140,9 +1140,9 @@ zgadza się",,
 965,WORD,UNKNOWN,HIRAGANA,,標準語,ひょうじゅんご,,hyoujungo,standardowy Japoński,,
 966,WORD,UNKNOWN,HIRAGANA,,-,たとえば,,tatoeba,na przykład,,
 967,WORD,UNKNOWN,HIRAGANA,,-,ほかに,,hokani,coś innego,,
-968,WORD,UNKNOWN,HIRAGANA,,〜番,ばん,,ban,numer,,
+968,WORD,UNKNOWN,HIRAGANA,,番,ばん,,ban,numer,~,
 969,WORD,WORD_NOUN,KATAKANA,,-,ページ,,peeji,strona,~,NO
-970,WORD,UNKNOWN,HIRAGANA,,〜行目,ぎょうめ,,gyoume,numer linii,~,
+970,WORD,UNKNOWN,HIRAGANA,,行目,ぎょうめ,,gyoume,numer linii,~,
 971,WORD,UNKNOWN,HIRAGANA,,二人ずつ,ふたりずつ,,futarizutsu,dla każdych dwóch osób,,
 972,WORD,WORD_NOUN,HIRAGANA,,足,あし,,ashi,"noga
 stopa",,NO
@@ -1191,7 +1191,9 @@ mieć sucho w gardle",,
 1009,WORD,WORD_VERB_U,HIRAGANA,,渇く,かわく,,kawaku,wyschnąć,,
 1010,WORD,WORD_VERB_U,HIRAGANA,,渇かす,かわかす,,kawakasu,suszyć,,
 1011,WORD,WORD_VERB_RU,HIRAGANA,,せきが出る,せきがでる,,seki ga deru,kasłać,,
-1012,WORD,WORD_VERB_RU,HIRAGANA,と,別れる,わかれる,to,wakareru,izolować,osobę ~,
+1012,WORD,WORD_VERB_RU,HIRAGANA,と,別れる,わかれる,to,wakareru,"rozdzielać
+rozwodzić się
+zerwać",osobę ~,
 1013,WORD,WORD_VERB_IRREGULAR,HIRAGANA,,緊張する,きんちょうする,,kinchou suru,"spinać się
 być zdenerwowany",,
 1014,WORD,WORD_VERB_IRREGULAR,HIRAGANA,,心配する,しんぱいする,,shinpai suru,martwić się,,
@@ -1648,7 +1650,7 @@ malować",,
 1357,WORD,UNKNOWN,HIRAGANA,,最近,さいきん,,saikin,ostatnio,,
 1358,WORD,UNKNOWN,HIRAGANA,,-,について,,nitsuite,"o ...
 odnośnie ...",czegoś,NO
-1359,WORD,WORD_EXPRESSION,HIRAGANA,,番,ばん,,ban,numer,,
+1359,WORD,WORD_EXPRESSION,HIRAGANA,,番,ばん,,ban,numer,~,NO
 1360,WORD,WORD_EXPRESSION,HIRAGANA,,目,め,,me,[tworzenie liczebników porządkowych],"np. pierwszy, drugi",
 1361,WORD,WORD_EXPRESSION,HIRAGANA,,もう一度,もういちど,,mou ichi do,jeszcze raz,,
 1362,WORD,WORD_VERB_U,HIRAGANA,,降りる,おりる,,oriru,wysiadać,,NO
@@ -1681,7 +1683,7 @@ jasny kolor","np. materiał, np. pastelowy",
 1386,WORD,WORD_NOUN,KATAKANA,,-,ヒール,,hiiru,wysokie obcasy,,
 1387,WORD,UNKNOWN,HIRAGANA,,健康,けんこう,,kenkou,zdrowie,,
 1388,WORD,UNKNOWN,HIRAGANA,,-,だけ,,dake,"właśnie
-tylko",,
+tylko",~,NO
 1389,WORD,WORD_EXPRESSION,HIRAGANA,,手に入れる,てにいれる,,teni ireru,zdobyć,,
 1390,WORD,WORD_NOUN,HIRAGANA,,楽しさ,たのしさ,,tanoshisa,zabawna rzecz,,
 1391,WORD,UNKNOWN,HIRAGANA,,梅雨,つゆ,,tsuyu,pora deszczowa,,
@@ -1789,7 +1791,7 @@ gigantyczny",,
 1643,KANJI,WORD_NUMBER,HIRAGANA,,九つ,ここのつ,,kokonotsu,"dziewięć
 9","liczby, liczenie małych przedmiotów",
 1644,KANJI,WORD_TIME,HIRAGANA,,十時,じゅうじ,,juuji,"dziesiąta
-10",godzina,
+10",godzina,NO
 1645,KANJI,WORD_AGE,HIRAGANA,,十歳,じゅっさい,,jussai,"dziesięć
 10",wiek,NO
 1646,KANJI,WORD_NUMBER,HIRAGANA,,十,とお,,too,"dziesięć
@@ -1822,7 +1824,7 @@ gigantyczny",,
 1663,KANJI,WORD_NOUN,HIRAGANA,,母の日,ははのひ,,haha no hi,dzień matki,,
 1664,KANJI,WORD_NOUN,HIRAGANA,,日記,にっき,,nikki,pamiętnik,,NO
 1665,KANJI,WORD_DAY_NUMBER,HIRAGANA,,三日,みっか,,mikka,3,dzień miesiąca,NO
-1666,KANJI,WORD_NOUN,HIRAGANA,,本,ほん,,hon,książka,,
+1666,KANJI,WORD_NOUN,HIRAGANA,,本,ほん,,hon,książka,,NO
 1667,KANJI,WORD_NOUN,HIRAGANA,,日本,にほん,,nihon,Japonia,,NO
 1668,KANJI,WORD_NOUN,HIRAGANA,,日本語,にほんご,,nihongo,język japoński,,
 1669,KANJI,WORD_NOUN,HIRAGANA,,山本さん,やまもとさん,,Yamamoto san,Pan Yamamoto,,
@@ -1830,7 +1832,7 @@ gigantyczny",,
 1671,KANJI,UNKNOWN,HIRAGANA,,一人で,ひとりで,,hitoride,sam,,NO
 1672,KANJI,UNKNOWN,HIRAGANA,,この人,このひと,,kono hito,ten człowiek,,
 1673,KANJI,WORD_PEOPLE_NUMBER,HIRAGANA,,三人,さんにん,,sannin,"troje ludzi
-3",liczenie ludzi,
+3",liczenie ludzi,NO
 1674,KANJI,WORD_DAY_WEEK,HIRAGANA,,月曜日,げつようび,,getsuyoubi,poniedziałek,księżyc,NO
 1675,KANJI,WORD_MONTH,HIRAGANA,,一月,いちがつ,,ichigatsu,styczeń,,NO
 1676,KANJI,WORD_NOUN,HIRAGANA,,月,つき,,tsuki,księżyc,,
@@ -2188,7 +2190,7 @@ istnieć",,NO
 2001,KANJI,UNKNOWN,HIRAGANA,,一人旅,ひとりたび,,hitoritabi,podróżować samotnie,,
 2002,KANJI,UNKNOWN,HIRAGANA,,昔,むかし,,mukashi,dawno temu,,
 2003,KANJI,UNKNOWN,HIRAGANA,,昔話,むかしばなし,,mukashi banashi,bajka,,
-2004,KANJI,UNKNOWN,HIRAGANA,,昔々,むかしむかし,,mukashi mukashi,dawno dawno temu,,
+2004,KANJI,UNKNOWN,HIRAGANA,,昔々,むかしむかし,,mukashi mukashi,"dawno, dawno temu",,NO
 2005,KANJI,WORD_NOUN,HIRAGANA,,人々,ひとびと,,hitobito,ludzie,,NO
 2006,KANJI,WORD_ADVERB,HIRAGANA,,時々,ときどき,,tokidoki,czasami,,NO
 2007,KANJI,WORD_ADJECTIVE_NA,HIRAGANA,,色々,いろいろ,,iroiro,różne,,NO
@@ -2213,7 +2215,9 @@ istnieć",,NO
 2026,KANJI,WORD_VERB_U,HIRAGANA,,連れて帰る,つれてかえる,,tsurete kaeru,wracać do domu,,NO
 2027,KANJI,WORD_NOUN,HIRAGANA,,国連,こくれん,,kokuren,ONZ,,
 2028,KANJI,UNKNOWN,HIRAGANA,,連休,れんきゅう,,renkyuu,powiązane święta,święta jedno po drugim,
-2029,KANJI,WORD_VERB_U,HIRAGANA,,別れる,わかれる,,wakareru,rozdzielać,,
+2029,KANJI,WORD_VERB_RU,HIRAGANA,と,別れる,わかれる,to,wakareru,"rozdzielać
+rozwodzić się
+zerwać",osobę ~,NO
 2030,KANJI,UNKNOWN,HIRAGANA,,別に,べつに,,betsuni,nieszczególnie,+ czasownik w formie negatywnej,NO
 2031,KANJI,WORD_ADJECTIVE_NA,HIRAGANA,,特別,とくべつ,,tokubetsu,specjalne,,
 2032,KANJI,UNKNOWN,HIRAGANA,,差別,さべつ,,sabetsu,dyskryminacja,,
