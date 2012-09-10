@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
@@ -23,10 +22,14 @@ import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
+import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
+import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke;
+import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
+import pl.idedyk.japanese.dictionary.tools.TomoeReader;
 
 public class AndroidDictionaryGenerator {
 
@@ -38,19 +41,17 @@ public class AndroidDictionaryGenerator {
 		
 		generateKanjiRadical("../JaponskiSlownik_dodatki/radkfile", "output/radical.csv");
 		
-		final String zinniaTomoeSlimFile = "output/kanji_handwriting-ja.slim.model.txt";
 		final String zinniaTomoeSlimBinaryFile = "output/kanji_recognizer.model.db";
 		
-		generateKanjiEntries(dictionary, "input/kanji.csv", "../JaponskiSlownik_dodatki/kanjidic2.xml", 
+		List<KanjiEntry> kanjiEntries = generateKanjiEntries(dictionary, "input/kanji.csv", "../JaponskiSlownik_dodatki/kanjidic2.xml", 
 				"../JaponskiSlownik_dodatki/kradfile", "../JaponskiSlownik_dodatki/kanjivg",
-				"../JaponskiSlownik_dodatki/zinnia-tomoe-0.6.0-20080911/handwriting-ja.model.txt",
-				zinniaTomoeSlimFile,
 				"output/kanji.csv");
 		
-		generateZinniaTomoeSlimBinaryFile("../JaponskiSlownik_dodatki/zinnia-0.06-app/bin/zinnia_convert",
-				zinniaTomoeSlimFile, zinniaTomoeSlimBinaryFile);
-		
-		new File(zinniaTomoeSlimFile).delete();
+		generateZinniaTomoeSlimBinaryFile(kanjiEntries, "../JaponskiSlownik_dodatki/tegaki-zinnia-japanese-0.3/handwriting-ja.xml",
+				"../JaponskiSlownik_dodatki/zinnia-0.06-app/bin/zinnia_learn",
+				"output/kanji_recognizer_handwriting-ja-slim.s",
+				zinniaTomoeSlimBinaryFile
+				);
 	}
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, String destinationFileName) throws Exception {
@@ -140,12 +141,11 @@ public class AndroidDictionaryGenerator {
 
 	}
 		
-	private static void generateKanjiEntries(
+	private static List<KanjiEntry> generateKanjiEntries(
 			List<PolishJapaneseEntry> dictionary, String sourceKanjiName,
 			String sourceKanjiDic2FileName,
 			String sourceKradFileName,
 			String kanjivgDir,
-			String zinniaTomoeFile, String zinniaTomoeSlimFile,
 			String destinationFileName) throws Exception {
 		
 		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(sourceKradFileName);
@@ -156,13 +156,9 @@ public class AndroidDictionaryGenerator {
 		
 		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2);
 		
-		Set<String> kanjiSet = new HashSet<String>();
-		
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
 			
 			String kanji = currentKanjiEntry.getKanji();
-			
-			kanjiSet.add(kanji);
 			
 			String kanjivgId = KanjivgReader.getKanjivgId(kanji);
 			
@@ -175,26 +171,7 @@ public class AndroidDictionaryGenerator {
 		
 		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries);
 		
-		// kanji for zinnia
-		BufferedReader zinniaTomoeFileReader = new BufferedReader(new FileReader(zinniaTomoeFile));
-		BufferedWriter zinniaTomoeSlimFileWriter = new BufferedWriter(new FileWriter(zinniaTomoeSlimFile));
-		
-		while(true) {
-			String currentZinniaTomoeLine = zinniaTomoeFileReader.readLine();
-			
-			if (currentZinniaTomoeLine == null) {
-				break;
-			}
-			
-			String currentzinniaTomoeKanji = String.valueOf(currentZinniaTomoeLine.charAt(0));
-			
-			if (kanjiSet.contains(currentzinniaTomoeKanji) == true) {
-				zinniaTomoeSlimFileWriter.write(currentZinniaTomoeLine + "\n");
-			}
-		}
-		
-		zinniaTomoeFileReader.close();
-		zinniaTomoeSlimFileWriter.close();
+		return kanjiEntries;
 	}
 
 	private static void generateAdditionalKanjiEntries(List<PolishJapaneseEntry> dictionary,
@@ -271,14 +248,66 @@ public class AndroidDictionaryGenerator {
 	}
 	*/
 	
-	private static void generateZinniaTomoeSlimBinaryFile(String zinniaConvertExecPath,
-			String zinniaTomoeSlimFile,
-			String zinniaTomoeSlimBinaryFile) throws Exception {
+	private static void generateZinniaTomoeSlimBinaryFile(List<KanjiEntry> kanjiEntries,
+			String tomoeFile, String zinniaLearnPath, String zinniaTomoeLearnSlimFile, String zinniaTomoeSlimBinaryFile) throws Exception {
+				
+		List<TomoeEntry> tomoeEntries = TomoeReader.readTomoeXmlHandwritingDatabase(tomoeFile);
+		
+		Set<String> kanjiSet = new HashSet<String>();
+		
+		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+			
+			String kanji = currentKanjiEntry.getKanji();
+			
+			kanjiSet.add(kanji);
+		}
+		
+		BufferedWriter zinniaTomoeSlimFileWriter = new BufferedWriter(new FileWriter(zinniaTomoeLearnSlimFile));
+		
+		for (TomoeEntry currentTomoeEntry : tomoeEntries) {
+			
+			String kanji = currentTomoeEntry.getKanji();
+			
+			if (kanjiSet.contains(kanji) == false) {
+				continue;
+			}
+			
+			StringBuffer sb = new StringBuffer();
+			
+			sb.append("(character (value ");
+			
+			sb.append(kanji);
+			
+			sb.append(")(width 1000)(height 1000)(strokes ");
+			
+			List<Stroke> strokeList = currentTomoeEntry.getStrokeList();
+			
+			for (Stroke currentStroke : strokeList) {
+				
+				sb.append("(");
+				
+				List<Point> pointList = currentStroke.getPointList();
+				
+				for (Point currentPoint : pointList) {
+					
+					sb.append("(").append(currentPoint.getX()).append(" ").append(currentPoint.getY()).append(")");
+				}
+				
+				sb.append(")");				
+			}
+			
+			sb.append(")");
+			
+			sb.append(")\n");
+			
+			zinniaTomoeSlimFileWriter.write(sb.toString());
+		}
+		
+		zinniaTomoeSlimFileWriter.close();
 		
 		Runtime runtime = Runtime.getRuntime();
 		
-        Process process = runtime.exec(new String[] { zinniaConvertExecPath, zinniaTomoeSlimFile, zinniaTomoeSlimBinaryFile });
-		//Process process = runtime.exec(zinniaConvertExecPath);
+        Process process = runtime.exec( new String[] { zinniaLearnPath, zinniaTomoeLearnSlimFile, zinniaTomoeSlimBinaryFile });
         
         BufferedReader stream = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
@@ -299,5 +328,8 @@ public class AndroidDictionaryGenerator {
         int exitVal = process.waitFor();
         
         System.out.println("Generate zinnia tomoe db exited with error code: " + exitVal);
+        
+        new File(zinniaTomoeLearnSlimFile).delete();
+        new File(zinniaTomoeSlimBinaryFile + ".txt").delete();
 	}
 }
