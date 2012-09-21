@@ -5,9 +5,12 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.imageio.ImageIO;
 
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
@@ -18,16 +21,30 @@ public class TomoeKanjiImageGenerator {
 		
 		String tomoeFile = "../JaponskiSlownik_dodatki/tegaki-zinnia-japanese-0.3/handwriting-ja.xml";
 		
-		List<TomoeEntry> tomoeEntries = TomoeReader.readTomoeXmlHandwritingDatabase(tomoeFile);
+		String sourceKanjiName = "input/kanji.csv";
 		
-		String neededKanji = "間";
+		String sourceKanjiDic2FileName = "../JaponskiSlownik_dodatki/kanjidic2.xml";
+		
+		String sourceKradFileName = "../JaponskiSlownik_dodatki/kradfile";
+		
+		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(sourceKradFileName);
+		
+		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName, kradFileMap);
+		
+		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2);
+		
+		List<TomoeEntry> tomoeEntries = TomoeReader.readTomoeXmlHandwritingDatabase(tomoeFile);
 		
 		List<TomoeEntry> neededTomoeEntries = new ArrayList<TomoeEntry>();
 		
-		for (TomoeEntry tomoeEntry : tomoeEntries) {
-			if (tomoeEntry.getKanji().equals(neededKanji) == true) {
-				neededTomoeEntries.add(tomoeEntry);
+		for (int kanjiEntriesIdx = 0; kanjiEntriesIdx < 177; ++kanjiEntriesIdx) {
+			
+			for (TomoeEntry tomoeEntry : tomoeEntries) {
+				if (tomoeEntry.getKanji().equals(kanjiEntries.get(kanjiEntriesIdx).getKanji()) == true) {
+					neededTomoeEntries.add(tomoeEntry);
+				}
 			}
+			
 		}
 		
 		for (int idx = 0; idx < neededTomoeEntries.size(); ++idx) {
