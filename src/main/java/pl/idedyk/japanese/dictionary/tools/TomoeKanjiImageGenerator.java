@@ -4,8 +4,10 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import javax.imageio.ImageIO;
 
@@ -37,10 +39,28 @@ public class TomoeKanjiImageGenerator {
 		
 		List<TomoeEntry> neededTomoeEntries = new ArrayList<TomoeEntry>();
 		
+		Set<String> neededKanjis = new HashSet<String>();
+		
+		//neededKanjis.add("上");
+		//neededKanjis.add("出");
+		//neededKanjis.add("社");
+		//neededKanjis.add("聞");
+		//neededKanjis.add("年");
+		//neededKanjis.add("近");
+		//neededKanjis.add("歌");
+		//neededKanjis.add("神");
+		neededKanjis.add("連");
+		
 		for (int kanjiEntriesIdx = 0; kanjiEntriesIdx < 177; ++kanjiEntriesIdx) {
 			
+			String currentKanji = kanjiEntries.get(kanjiEntriesIdx).getKanji();
+			
+			if (neededKanjis.contains(currentKanji) == false) {
+				continue;
+			}
+			
 			for (TomoeEntry tomoeEntry : tomoeEntries) {
-				if (tomoeEntry.getKanji().equals(kanjiEntries.get(kanjiEntriesIdx).getKanji()) == true) {
+				if (tomoeEntry.getKanji().equals(currentKanji) == true) {
 					neededTomoeEntries.add(tomoeEntry);
 				}
 			}
@@ -82,7 +102,7 @@ public class TomoeKanjiImageGenerator {
 			}
 		}
 		
-		ImageIO.write(bufferedImage, "png", new File(outputDir + File.separator + kanji + "-" + idx + ".png"));
+		ImageIO.write(bufferedImage, "png", new File(outputDir + File.separator + (idx + 1) + "_" + kanji + "-" + ".png"));
 		
 	}
 }
