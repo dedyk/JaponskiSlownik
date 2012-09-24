@@ -46,8 +46,8 @@ public class AndroidDictionaryGenerator {
 		List<KanjiEntry> kanjiEntries = generateKanjiEntries(dictionary, "input/kanji.csv", "../JaponskiSlownik_dodatki/kanjidic2.xml", 
 				"../JaponskiSlownik_dodatki/kradfile", "../JaponskiSlownik_dodatki/kanjivg",
 				"output/kanji.csv");
-		
-		generateZinniaTomoeSlimBinaryFile(kanjiEntries, "../JaponskiSlownik_dodatki/tegaki-zinnia-japanese-0.3/handwriting-ja.xml",
+				
+		generateZinniaTomoeSlimBinaryFile(kanjiEntries, "output/kanjivgTomoeFile.txt", "output/kanjivgTomoeFile.xml",
 				"../JaponskiSlownik_dodatki/zinnia-0.06-app/bin/zinnia_learn",
 				"output/kanji_recognizer_handwriting-ja-slim.s",
 				zinniaTomoeSlimBinaryFile
@@ -248,10 +248,8 @@ public class AndroidDictionaryGenerator {
 	}
 	*/
 	
-	private static void generateZinniaTomoeSlimBinaryFile(List<KanjiEntry> kanjiEntries,
-			String tomoeFile, String zinniaLearnPath, String zinniaTomoeLearnSlimFile, String zinniaTomoeSlimBinaryFile) throws Exception {
-				
-		List<TomoeEntry> tomoeEntries = TomoeReader.readTomoeXmlHandwritingDatabase(tomoeFile);
+	private static void generateZinniaTomoeSlimBinaryFile(List<KanjiEntry> kanjiEntries, 
+			String kvgToolFileFromKanjivg, String tomoeFileFromKanjivg, String zinniaLearnPath, String zinniaTomoeLearnSlimFile, String zinniaTomoeSlimBinaryFile) throws Exception {
 		
 		Set<String> kanjiSet = new HashSet<String>();
 		
@@ -261,6 +259,54 @@ public class AndroidDictionaryGenerator {
 			
 			kanjiSet.add(kanji);
 		}
+				
+		File kvgToolFileFromKanjivgFile = new File(kvgToolFileFromKanjivg);
+		File tomoeFileFromKanjivgFile = new File(tomoeFileFromKanjivg);
+		
+		BufferedWriter tomoeFileFromKanjivgWriter = new BufferedWriter(new FileWriter(kvgToolFileFromKanjivgFile));
+		
+		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+			
+			tomoeFileFromKanjivgWriter.write(currentKanjiEntry.getKanji());
+			tomoeFileFromKanjivgWriter.write(" ");
+			
+			List<String> strokePaths = currentKanjiEntry.getKanjivgEntry().getStrokePaths();
+			
+			for (String currentStrokePath : strokePaths) {
+				tomoeFileFromKanjivgWriter.write(currentStrokePath);
+				tomoeFileFromKanjivgWriter.write(";");
+			}
+			
+			tomoeFileFromKanjivgWriter.write("\n");			
+		}
+		
+		tomoeFileFromKanjivgWriter.close();
+		
+		Runtime runtime = Runtime.getRuntime();
+		
+        Process process = runtime.exec(new String[] { "ruby", "xml_all_kanji.rb", kvgToolFileFromKanjivgFile.getAbsolutePath(), tomoeFileFromKanjivgFile.getAbsolutePath() }, null, new File("../KVG-Tools/" ));
+        
+        BufferedReader stream = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+        String line = null;
+
+        while((line = stream.readLine()) != null) {
+            System.out.println(line);
+        }
+
+        stream = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+
+        line = null;
+
+        while((line = stream.readLine()) != null) {
+            System.out.println(line);
+        }
+        
+        int exitVal = process.waitFor();
+        
+        System.out.println("Generate kvg tool exited with error code: " + exitVal);
+		
+		List<TomoeEntry> tomoeEntries = TomoeReader.readTomoeXmlHandwritingDatabase(tomoeFileFromKanjivgFile.getAbsolutePath());
 		
 		BufferedWriter zinniaTomoeSlimFileWriter = new BufferedWriter(new FileWriter(zinniaTomoeLearnSlimFile));
 		
@@ -305,13 +351,13 @@ public class AndroidDictionaryGenerator {
 		
 		zinniaTomoeSlimFileWriter.close();
 		
-		Runtime runtime = Runtime.getRuntime();
+		runtime = Runtime.getRuntime();
 		
-        Process process = runtime.exec( new String[] { zinniaLearnPath, zinniaTomoeLearnSlimFile, zinniaTomoeSlimBinaryFile });
+        process = runtime.exec( new String[] { zinniaLearnPath, zinniaTomoeLearnSlimFile, zinniaTomoeSlimBinaryFile });
         
-        BufferedReader stream = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        stream = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
-        String line = null;
+        line = null;
 
         while((line = stream.readLine()) != null) {
             System.out.println(line);
@@ -325,10 +371,12 @@ public class AndroidDictionaryGenerator {
             System.out.println(line);
         }
         
-        int exitVal = process.waitFor();
+        exitVal = process.waitFor();
         
         System.out.println("Generate zinnia tomoe db exited with error code: " + exitVal);
         
+		kvgToolFileFromKanjivgFile.delete();
+		tomoeFileFromKanjivgFile.delete();
         new File(zinniaTomoeLearnSlimFile).delete();
         new File(zinniaTomoeSlimBinaryFile + ".txt").delete();
 	}

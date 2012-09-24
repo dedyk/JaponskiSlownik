@@ -21,7 +21,8 @@ public class TomoeKanjiImageGenerator {
 
 	public static void main(String[] args) throws Exception {
 		
-		String tomoeFile = "../JaponskiSlownik_dodatki/tegaki-zinnia-japanese-0.3/handwriting-ja.xml";
+		//String tomoeFile = "../JaponskiSlownik_dodatki/tegaki-zinnia-japanese-0.3/handwriting-ja.xml";
+		String tomoeFile = "/home/fmazurek/java/JapaneseDictionary/output/kanjivgTomoeFile.xml";
 		
 		String sourceKanjiName = "input/kanji.csv";
 		
@@ -49,13 +50,16 @@ public class TomoeKanjiImageGenerator {
 		//neededKanjis.add("近");
 		//neededKanjis.add("歌");
 		//neededKanjis.add("神");
-		neededKanjis.add("連");
+		//neededKanjis.add("連");
 		
-		for (int kanjiEntriesIdx = 0; kanjiEntriesIdx < 177; ++kanjiEntriesIdx) {
+		neededKanjis = null;
+		
+		//for (int kanjiEntriesIdx = 0; kanjiEntriesIdx < 177; ++kanjiEntriesIdx) {
+		for (int kanjiEntriesIdx = 0; kanjiEntriesIdx < kanjiEntries.size(); ++kanjiEntriesIdx) {
 			
 			String currentKanji = kanjiEntries.get(kanjiEntriesIdx).getKanji();
 			
-			if (neededKanjis.contains(currentKanji) == false) {
+			if (neededKanjis != null && neededKanjis.contains(currentKanji) == false) {
 				continue;
 			}
 			
@@ -64,12 +68,19 @@ public class TomoeKanjiImageGenerator {
 					neededTomoeEntries.add(tomoeEntry);
 				}
 			}
-			
 		}
 		
 		for (int idx = 0; idx < neededTomoeEntries.size(); ++idx) {
 			drawKanji(neededTomoeEntries.get(idx), idx, "output");
 		}
+		
+		/*
+		List<TomoeEntry> tomoeEntries = TomoeReader.readTomoeXmlHandwritingDatabase("/home/fmazurek/java/JapaneseDictionary/output/kanjivgTomoeFile.xml");
+		
+		for (int idx = 0; idx < tomoeEntries.size(); ++idx) {
+			drawKanji(tomoeEntries.get(idx), idx, "output");
+		}
+		*/
 	}
 	
 	private static void drawKanji(TomoeEntry tomoeEntry, int idx, String outputDir) throws Exception {
@@ -103,6 +114,5 @@ public class TomoeKanjiImageGenerator {
 		}
 		
 		ImageIO.write(bufferedImage, "png", new File(outputDir + File.separator + (idx + 1) + "_" + kanji + "-" + ".png"));
-		
 	}
 }

@@ -44,9 +44,28 @@ public class TomoeReader {
         			
         			Element currentPointAsElement = (Element)currentPointAsObject;
         			
+        			String xValueString = currentPointAsElement.attributeValue("x");
+        			String yValueString = currentPointAsElement.attributeValue("y");
+        			
+        			int xValueStringDotIdx = xValueString.indexOf("."); 
+        			
+        			if (xValueStringDotIdx != -1) {
+        				xValueString = xValueString.substring(0, xValueStringDotIdx);
+        			}
+
+        			int yValueStringDotIdx = yValueString.indexOf("."); 
+        			
+        			if (yValueStringDotIdx != -1) {
+        				yValueString = yValueString.substring(0, yValueStringDotIdx);
+        			}
+
+        			
+        			int xValueInt = Integer.parseInt(xValueString);
+        			int yValueInt = Integer.parseInt(yValueString);
+        			
+        			
         			tomoeEntryStroke.getPointList().add(
-        					new TomoeEntry.Stroke.Point(Integer.parseInt(currentPointAsElement.attributeValue("x")),
-        							Integer.parseInt(currentPointAsElement.attributeValue("y"))));
+        					new TomoeEntry.Stroke.Point(xValueInt, yValueInt));
 				}
         		
         		tomoeEntry.getStrokeList().add(tomoeEntryStroke);
