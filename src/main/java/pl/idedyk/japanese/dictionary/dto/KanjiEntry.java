@@ -15,7 +15,9 @@ public class KanjiEntry {
 	private KanjiDic2Entry kanjiDic2Entry;
 	
 	private KanjivgEntry kanjivgEntry;
-
+	
+	private boolean generated = false;
+	
 	public int getId() {
 		return id;
 	}
@@ -62,5 +64,13 @@ public class KanjiEntry {
 
 	public void setKanjivgEntry(KanjivgEntry kanjivgEntry) {
 		this.kanjivgEntry = kanjivgEntry;
+	}
+
+	public boolean isGenerated() {
+		return generated;
+	}
+
+	public void setGenerated(boolean generated) {
+		this.generated = generated;
 	}
 }

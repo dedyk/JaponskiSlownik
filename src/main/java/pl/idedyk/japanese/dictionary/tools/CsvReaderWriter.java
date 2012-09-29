@@ -354,6 +354,8 @@ public class CsvReaderWriter {
 			entry.setPolishTranslates(parseStringIntoList(polishTranslateListString));
 			entry.setInfo(infoString);
 			
+			entry.setGenerated(false);
+			
 			KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(kanjiString);
 			
 			entry.setKanjiDic2Entry(kanjiDic2Entry);
@@ -406,6 +408,7 @@ public class CsvReaderWriter {
 			
 			csvWriter.write(convertListToString(kanjiEntry.getPolishTranslates()));
 			csvWriter.write(kanjiEntry.getInfo());
+			csvWriter.write(String.valueOf(kanjiEntry.isGenerated()));
 			
 			csvWriter.endRecord();
 		}
@@ -456,12 +459,16 @@ public class CsvReaderWriter {
 			String polishTranslateListString = csvReader.get(6);
 			String infoString = csvReader.get(7);
 			
+			String generatedString = csvReader.get(8);
+			
 			KanjiEntry entry = new KanjiEntry();
 			
 			entry.setId(id);
 			entry.setKanji(kanjiString);
 			entry.setPolishTranslates(parseStringIntoList(polishTranslateListString));
 			entry.setInfo(infoString);
+			
+			entry.setGenerated(Boolean.parseBoolean(generatedString));
 						
 			entry.setKanjiDic2Entry(kanjiDic2Entry);
 			

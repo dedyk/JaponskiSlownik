@@ -208,10 +208,12 @@ public class AndroidDictionaryGenerator {
 					
 					List<String> polishTranslates = new ArrayList<String>();
 					
-					polishTranslates.add("nieznane znaczenie; możesz pomóc, jeśli znasz znaczenie");
+					polishTranslates.add("nieznane znaczenie");
 					
 					newKanjiEntry.setPolishTranslates(polishTranslates);
 					newKanjiEntry.setInfo("");
+					
+					newKanjiEntry.setGenerated(true);
 					
 					kanjiEntries.add(newKanjiEntry);
 				}
