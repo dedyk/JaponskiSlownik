@@ -215,6 +215,18 @@ public class AndroidDictionaryGenerator {
 					
 					newKanjiEntry.setGenerated(true);
 					
+					List<String> groupsList = new ArrayList<String>();
+					
+					if (kanjiDic2Entry != null) {
+						Integer jlpt = kanjiDic2Entry.getJlpt();
+						
+						if (jlpt != null) {
+							groupsList.add("JLPT " + jlpt);
+						}
+					}
+					
+					newKanjiEntry.setGroups(groupsList);
+					
 					kanjiEntries.add(newKanjiEntry);
 				}
 			}

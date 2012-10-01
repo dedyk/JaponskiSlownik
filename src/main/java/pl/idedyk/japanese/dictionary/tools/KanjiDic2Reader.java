@@ -77,6 +77,14 @@ public class KanjiDic2Reader {
         	
         	int strokeCount = Integer.parseInt(currentCharacterAsElement.selectSingleNode("misc/stroke_count").getText());
         	
+        	Element jlptElement = (Element)currentCharacterAsElement.selectSingleNode("misc/jlpt");
+        	
+        	Integer jlpt = null;
+        	
+        	if (jlptElement != null) {
+        		jlpt = Integer.parseInt(jlptElement.getText());
+        	}
+        	
         	KanjiDic2Entry kanjiDic2Entry = new KanjiDic2Entry();
         	
         	kanjiDic2Entry.setKanji(kanji);
@@ -92,6 +100,8 @@ public class KanjiDic2Reader {
         	}
         	
         	kanjiDic2Entry.setRadicals(radicals);
+        	
+        	kanjiDic2Entry.setJlpt(jlpt);
         	
         	result.put(kanji, kanjiDic2Entry);
 		}

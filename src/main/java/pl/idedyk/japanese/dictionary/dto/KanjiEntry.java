@@ -16,6 +16,8 @@ public class KanjiEntry {
 	
 	private KanjivgEntry kanjivgEntry;
 	
+	private List<String> groups;
+	
 	private boolean generated = false;
 	
 	public int getId() {
@@ -72,5 +74,13 @@ public class KanjiEntry {
 
 	public void setGenerated(boolean generated) {
 		this.generated = generated;
+	}
+
+	public List<String> getGroups() {
+		return groups;
+	}
+
+	public void setGroups(List<String> groups) {
+		this.groups = groups;
 	}
 }

@@ -13,6 +13,8 @@ public class KanjiDic2Entry {
 	private List<String> kunReading;
 	
 	private List<String> radicals;
+	
+	private Integer jlpt;
 
 	public String getKanji() {
 		return kanji;
@@ -52,5 +54,13 @@ public class KanjiDic2Entry {
 
 	public void setRadicals(List<String> radicals) {
 		this.radicals = radicals;
+	}
+
+	public Integer getJlpt() {
+		return jlpt;
+	}
+
+	public void setJlpt(Integer jlpt) {
+		this.jlpt = jlpt;
 	}
 }
