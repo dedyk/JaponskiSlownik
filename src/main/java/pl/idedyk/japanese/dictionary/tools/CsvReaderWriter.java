@@ -364,6 +364,13 @@ public class CsvReaderWriter {
 			
 			entry.setKanjiDic2Entry(kanjiDic2Entry);
 			
+			String jlpt = KanjiUtils.getJlpt(kanjiString);
+			
+			if (jlpt != null) {
+				groupsList.add(jlpt);
+			}
+			
+			/*
 			if (kanjiDic2Entry != null) {
 				Integer jlpt = kanjiDic2Entry.getJlpt();
 				
@@ -371,6 +378,7 @@ public class CsvReaderWriter {
 					groupsList.add("JLPT " + jlpt);
 				}
 			}
+			*/
 			
 			entry.setGroups(groupsList);
 			

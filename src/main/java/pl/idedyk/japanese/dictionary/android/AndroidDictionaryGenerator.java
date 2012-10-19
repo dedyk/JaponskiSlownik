@@ -28,6 +28,7 @@ import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
+import pl.idedyk.japanese.dictionary.tools.KanjiUtils;
 import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
 import pl.idedyk.japanese.dictionary.tools.TomoeReader;
 
@@ -217,6 +218,13 @@ public class AndroidDictionaryGenerator {
 					
 					List<String> groupsList = new ArrayList<String>();
 					
+					String jlpt = KanjiUtils.getJlpt(currentKanjiChar);
+					
+					if (jlpt != null) {
+						groupsList.add(jlpt);
+					}
+					
+					/*
 					if (kanjiDic2Entry != null) {
 						Integer jlpt = kanjiDic2Entry.getJlpt();
 						
@@ -224,6 +232,7 @@ public class AndroidDictionaryGenerator {
 							groupsList.add("JLPT " + jlpt);
 						}
 					}
+					*/
 					
 					newKanjiEntry.setGroups(groupsList);
 					
