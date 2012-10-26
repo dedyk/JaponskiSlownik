@@ -8,8 +8,10 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
@@ -217,6 +219,7 @@ public class CsvReaderWriter {
 			String polishTranslateListString = csvReader.get(9);
 			String infoString = csvReader.get(10);
 			String useEntryString = csvReader.get(11);
+			String knownDuplicatedListString = csvReader.get(12);
 			
 			boolean useEntry = true;
 			
@@ -248,6 +251,11 @@ public class CsvReaderWriter {
 			entry.setPolishTranslates(parseStringIntoList(polishTranslateListString));
 			entry.setUseEntry(useEntry);
 			
+			Set<String> knownDuplicatedHashMap = new HashSet<String>();
+			
+			knownDuplicatedHashMap.addAll(parseStringIntoList(knownDuplicatedListString));
+			entry.setKnownDuplicatedId(knownDuplicatedHashMap);
+						
 			entry.setInfo(infoString);
 			
 			result.add(entry);

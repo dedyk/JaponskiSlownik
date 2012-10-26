@@ -2,8 +2,11 @@ package pl.idedyk.japanese.dictionary.common;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -312,22 +315,99 @@ public class Validator {
 		return wasError;
 	}
 	
-	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, String kanji) {
+	*/
+	
+	public static void detectDuplicatePolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries) {
+		
+		StringBuffer report = new StringBuffer();
+		
+		TreeMap<String, TreeSet<PolishJapaneseEntry>> duplicatedKanji = new TreeMap<String, TreeSet<PolishJapaneseEntry>>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			if (polishJapaneseEntry.isUseEntry() == false) {
+				continue;
+			}
+			
+			int id = polishJapaneseEntry.getId();
+			String kanji = polishJapaneseEntry.getKanji();
+			
+			if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
+				continue;
+			}
+			
+			List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntry(polishJapaneseKanjiEntries, id, true, kanji);
+			
+			if (findPolishJapaneseKanjiEntry.size() > 0) {
+				
+				findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntry(polishJapaneseKanjiEntries, id, false, kanji);
+				
+				TreeSet<PolishJapaneseEntry> polishJapaneseEntryKanjiTreeSet = duplicatedKanji.get(kanji);
+				
+				if (polishJapaneseEntryKanjiTreeSet == null) {
+					polishJapaneseEntryKanjiTreeSet = new TreeSet<PolishJapaneseEntry>();
+				}
+				
+				polishJapaneseEntryKanjiTreeSet.addAll(findPolishJapaneseKanjiEntry);
+				
+				duplicatedKanji.put(kanji, polishJapaneseEntryKanjiTreeSet);
+			}
+		}
+		
+		Iterator<String> duplicatedKanjiIterator = duplicatedKanji.keySet().iterator();
+		
+		while(duplicatedKanjiIterator.hasNext()) {
+			
+			String key = duplicatedKanjiIterator.next();
+			
+			TreeSet<PolishJapaneseEntry> treeSetForKanji = duplicatedKanji.get(key);
+			
+			report.append("Kanji: " + key).append(": ");
+			
+			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : treeSetForKanji) {
+				report.append(currentPolishJapaneseEntryInTreeSetForKanji.getId()).append(" ");
+			}
+			
+			report.append("\n");
+
+			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : treeSetForKanji) {
+				report.append("\t" + currentPolishJapaneseEntryInTreeSetForKanji).append("\n");
+			}
+
+			report.append("---\n\n");
+		}
+		
+		if (report.length() > 0) {
+			
+			System.out.println(report.toString());
+			
+			System.exit(1);
+		}
+	}
+	
+	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, 
+			boolean checkKnownDuplicated, String kanji) {
 		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 			
-			if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_KANJI_READING) {
+			if (polishJapaneseEntry.isUseEntry() == false) {
 				continue;
 			}
 			
-			if (polishJapaneseEntry.getKanji().equals(kanji)) {
+			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(String.valueOf(id)) == true) {
+				continue;
+			}
+			
+			if (polishJapaneseEntry.getId() != id && polishJapaneseEntry.getKanji().equals(kanji)) {
+				result.add(polishJapaneseEntry);				
+			} else if (checkKnownDuplicated == false && polishJapaneseEntry.getKanji().equals(kanji)) {
 				result.add(polishJapaneseEntry);
 			}
 		}
 		
 		return result;
 	}
-	*/	
+
 }

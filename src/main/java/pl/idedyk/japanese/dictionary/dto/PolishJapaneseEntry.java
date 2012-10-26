@@ -1,9 +1,9 @@
 package pl.idedyk.japanese.dictionary.dto;
 
 import java.util.List;
+import java.util.Set;
 
-
-public class PolishJapaneseEntry {
+public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 	
 	private int id;
 	
@@ -34,6 +34,8 @@ public class PolishJapaneseEntry {
 	private String info;
 	
 	private boolean useEntry;
+	
+	private Set<String> knownDuplicatedId;
 
 	public DictionaryEntryType getDictionaryEntryType() {
 		return dictionaryEntryType;
@@ -111,14 +113,23 @@ public class PolishJapaneseEntry {
 		return kanji.equals("-") == false ? prefixKana + kanji : kanji;
 	}
 
+	public Set<String> getKnownDuplicatedId() {
+		return knownDuplicatedId;
+	}
+
+	public void setKnownDuplicatedId(Set<String> knownDuplicatedId) {
+		this.knownDuplicatedId = knownDuplicatedId;
+	}
+
 	@Override
 	public String toString() {
-		return "PolishJapaneseEntry [id=" + id + ", dictionaryEntryType="
-				+ dictionaryEntryType + ", wordType=" + wordType + ", prefixKana="
-				+ prefixKana + ", kanji=" + kanji + ", kanjiImagePath="
-				+ kanjiImagePath + ", kanaList=" + kanaList + ", romajiList="
-				+ romajiList + ", polishTranslates=" + polishTranslates
-				+ ", info=" + info + "]";
+		return "id=" + id + ", dictionaryType="
+				+ dictionaryType + ", dictionaryEntryType="
+				+ dictionaryEntryType + ", wordType=" + wordType
+				+ ", prefixKana=" + prefixKana + ", kanji=" + kanji
+				+ ", kanaList=" + kanaList + ", prefixRomaji=" + prefixRomaji
+				+ ", romajiList=" + romajiList + ", polishTranslates="
+				+ polishTranslates + ", info=" + info + "]";
 	}
 
 	public int getId() {
@@ -167,5 +178,45 @@ public class PolishJapaneseEntry {
 
 	public void setRealRomajiList(List<String> realRomajiList) {
 		this.realRomajiList = realRomajiList;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		
+		if (obj == null)
+			return false;
+		
+		if (getClass() != obj.getClass())
+			return false;
+		
+		PolishJapaneseEntry other = (PolishJapaneseEntry) obj;
+		
+		if (id != other.id)
+			return false;
+		
+		return true;
+	}
+
+	@Override
+	public int compareTo(PolishJapaneseEntry entry) {
+		
+		if (id < entry.id) { 
+			return -1;
+		} else if (id > entry.id) {
+			return 1;
+		} else {
+			return 0;
+		}
 	}
 }
