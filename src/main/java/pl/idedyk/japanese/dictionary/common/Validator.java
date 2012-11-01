@@ -496,4 +496,65 @@ public class Validator {
 		
 		return result;
 	}
+
+	public static void validateUseNoEntryPolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseEntries) {
+		
+		StringBuffer report = new StringBuffer();
+		
+		// kanji
+		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
+			
+			if (currentPolishJapaneseEntry.isUseEntry() == true) {
+				continue;
+			}
+			
+			int id = currentPolishJapaneseEntry.getId();
+			String kanji = currentPolishJapaneseEntry.getKanji();
+			
+			if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
+				continue;
+			}
+			
+			List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanji(polishJapaneseEntries, id, false, kanji);
+			
+			if (findPolishJapaneseKanjiEntry.size() == 0) {
+				report.append("Kanji: " + kanji).append(": ");
+				
+				report.append(currentPolishJapaneseEntry).append("\n");
+			}
+		}
+		
+		if (report.length() > 0) {
+			report.append("\n");
+		}
+		
+		// kana
+		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
+			
+			if (currentPolishJapaneseEntry.isUseEntry() == true) {
+				continue;
+			}
+			
+			int id = currentPolishJapaneseEntry.getId();
+			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
+			
+			for (String currentKana : kanaList) {
+				
+				List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKana(polishJapaneseEntries, id, false, currentKana);
+				
+				if (findPolishJapaneseKanjiEntry.size() == 0) {
+					report.append("Kana: " + currentKana).append(": ");
+				
+					report.append(currentPolishJapaneseEntry).append("\n");
+				}
+			}
+		}		
+		
+		if (report.length() > 0) {
+			
+			System.out.println(report.toString());
+			
+			System.exit(1);
+		}
+	}
 }

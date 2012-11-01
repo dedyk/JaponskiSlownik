@@ -69,6 +69,8 @@ public class AndroidDictionaryGenerator {
 		
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);
 		
+		Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);
+		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
