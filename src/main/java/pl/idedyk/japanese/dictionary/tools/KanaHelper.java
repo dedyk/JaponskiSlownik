@@ -358,11 +358,12 @@ public class KanaHelper {
 		katakanaEntries.add(new KanaEntry("ディ", "di"));
 		katakanaEntries.add(new KanaEntry("ヂュ", "dyu"));
 		
+		katakanaEntries.add(new KanaEntry("ヴ", "vu"));
+		
 		katakanaEntries.add(new KanaEntry("ッ", "ttsu"));
 		katakanaEntries.add(new KanaEntry("ー", "ttsu2"));
 		
 		return katakanaEntries;
-		
 	}
 	
 	public static List<KanaEntry> getAdditionalKanaEntries() {
@@ -1054,6 +1055,17 @@ public class KanaHelper {
 					currentRestChars.equals("wo") == true || 
 					currentRestChars.equals("wi") == true ||
 					currentRestChars.equals("we") == true) {
+				
+				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
+				
+				if (kanaEntry == null) {
+					throw new JapaneseDictionaryException("Can't find kanaEntry!");
+				}
+				
+				kanaEntries.add(kanaEntry);
+				
+				currentRestChars = "";					
+			} else if (currentRestChars.equals("vu") == true) {
 				
 				KanaEntry kanaEntry = kitakanaCache.get(currentRestChars);
 				
