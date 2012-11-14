@@ -1666,7 +1666,8 @@ rysunek",,,
 1323,WORD,WORD_NOUN,KATAKANA,,-,ジャケット,,jaketto,kurtka,,,
 1324,WORD,WORD_NOUN,HIRAGANA,,習慣,しゅうかん,,shuukan,"zwyczaj
 obyczaj",,,853
-1325,WORD,WORD_NOUN,HIRAGANA,,税金,ぜいきん,,zeikin,podatek,,,
+1325,WORD,WORD_NOUN,HIRAGANA,,税金,ぜいきん,,zeikin,"podatek
+podatki",,,
 1326,WORD,WORD_NOUN,HIRAGANA,,卒業式,そつぎょうしき,,sotsugyou shiki,ceremonia ukończenia szkoły,,,
 1327,WORD,WORD_NOUN,HIRAGANA,,-,そば,,soba,japoński makaron gryczany,,,403
 1328,WORD,WORD_NOUN,HIRAGANA,,地図,ちず,,chizu,mapa,,,
@@ -1684,7 +1685,7 @@ rozkład",,,
 szeroki",,,
 1339,WORD,WORD_VERB_U,HIRAGANA,,売る,うる,,uru,sprzedawać,,,
 1340,WORD,WORD_VERB_U,HIRAGANA,,下ろす,おろす,,orosu,podjąć,pieniądze,,1398
-1341,WORD,WORD_VERB_U,HIRAGANA,,-,かく,,kaku,"rysować
+1341,WORD,WORD_VERB_U,HIRAGANA,,描く,かく,,kaku,"rysować
 malować",,,1704
 1342,WORD,WORD_VERB_U,HIRAGANA,,探す,さがす,,sagasu,szukać,,,
 1343,WORD,WORD_VERB_U,HIRAGANA,,誘う,さそう,,sasou,zapraszać,,,
@@ -1696,9 +1697,9 @@ iść na randkę",narzeczeństwo,,1345
 1348,WORD,WORD_VERB_RU,HIRAGANA,に,気をつける,きをつける,ni,ki o tsukeru,uważać,,,
 1349,WORD,WORD_VERB_RU,HIRAGANA,を,調べる,しらべる,o,shiraberu,sprawdzać,~ coś,,
 1350,WORD,WORD_VERB_RU,HIRAGANA,を,捨てる,すてる,o,suteru,wyrzucać,,,
-1351,WORD,WORD_VERB_RU,HIRAGANA,,見える,みえる,,mieru,być widoczny,,,949
-1352,WORD,WORD_VERB_IRREGULAR,HIRAGANA,に,-,する,ni,suru,decydować się,"na rzecz, uwaga: to nie to suru!",,260
-1353,WORD,WORD_VERB_IRREGULAR,HIRAGANA,を,卒業する,そつぎょうする,o,sotsugyou suru,skończyć studia,szkołę,,
+1351,WORD,WORD_VERB_RU,HIRAGANA,が,見える,みえる,ga,mieru,być widoczny,,,949
+1352,WORD,WORD_VERB_IRREGULAR,HIRAGANA,に,-,する,ni,suru,decydować się,na rzecz,,260
+1353,WORD,WORD_VERB_IRREGULAR,HIRAGANA,を,卒業する,そつぎょうする,o,sotsugyou suru,ukończyć szkołę,szkołę,,
 1354,WORD,WORD_VERB_IRREGULAR,HIRAGANA,,予約する,よやくする,,yoyaku suru,rezerwować,,,
 1355,WORD,WORD_EXPRESSION,HIRAGANA,,一日中,いちにちじゅう,,ichinichi juu,cały dzień,,,
 1356,WORD,WORD_EXPRESSION,HIRAGANA,,-,けど,,kedo,"..., ale
@@ -2952,6 +2953,14 @@ podanie sobie ręki",,,
 2380,WORD,WORD_NOUN,KATAKANA,,-,ウインク,,uinku,mrugnięcie,,,
 2381,WORD,WORD_VERB_IRREGULAR,KATAKANA,,-,ウインクをする,,uinku o suru,mrugać,,,
 2382,WORD,WORD_NOUN,HIRAGANA,,本体,ほんたい,,hontai,korpus,urządzenia,,
-2384,WORD,WORD_VERB_U,HIRAGANA,,飛ぶ,とぶ,,tobu,"latać
+2383,WORD,WORD_VERB_U,HIRAGANA,,飛ぶ,とぶ,,tobu,"latać
 lecieć
 wznieść się",,,
+2384,WORD,WORD_NOUN,HIRAGANA,,観光客,かんこうきゃく,,kankoukyaku,turysta,,,
+2385,WORD,WORD_VERB_IRREGULAR,HIRAGANA,,観光する,かんこうする,,kankou suru,zwiedzać,,,
+2386,WORD,WORD_NOUN,HIRAGANA,,見学,けんがく,,kengaku,"inspekcja
+zwiedzanie i uczenie się",~ czegoś,,
+2387,WORD,WORD_NOUN,HIRAGANA,,割引,わりびき,,waribiki,"zniżka
+rabat",,,
+2388,WORD,WORD_NOUN,HIRAGANA,,券,けん,,ken,"bilet
+kupon",,,
