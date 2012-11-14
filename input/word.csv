@@ -13,7 +13,7 @@ rei","zero
 よ",,"shi
 yon
 yo","cztery
-4",,,
+4",,,2390
 6,WORD,WORD_NUMBER,HIRAGANA,,五,ご,,go,"pięć
 5",,,"72
 851"
@@ -646,7 +646,7 @@ miło spędzać czas",,,
 skasować",,,
 500,WORD,WORD_VERB_U,HIRAGANA,,死ぬ,しぬ,,shinu,umierać,,,
 501,WORD,WORD_VERB_U,HIRAGANA,に,座る,すわる,ni,suwaru,siadać,siedzenie,,
-502,WORD,WORD_VERB_U,HIRAGANA,,立つ,たつ,,tatsu,stać,,,
+502,WORD,WORD_VERB_U,HIRAGANA,,立つ,たつ,,tatsu,stać,,,2433
 503,WORD,WORD_VERB_U,HIRAGANA,,たばこを吸う,たばこをすう,,tabako o suu,palić,,,
 504,WORD,WORD_VERB_U,HIRAGANA,を,使う,つかう,o,tsukau,używać,,,
 505,WORD,WORD_VERB_U,HIRAGANA,を,手伝う,てつだう,o,tetsudau,pomagać,osoba/zadanie,,
@@ -1070,7 +1070,7 @@ szybko",zrobić coś,,
 865,WORD,WORD_VERB_U,HIRAGANA,を,上がる,あがる,o,agaru,iść pod górę,,,
 866,WORD,WORD_NOUN,HIRAGANA,,階段,かいだん,,kaidan,schody,,,1048
 867,WORD,WORD_VERB_U,HIRAGANA,を,下りる,おりる,o,oriru,schodzić,,,512
-868,WORD,WORD_NOUN,HIRAGANA,,駐車場,ちゅうしゃじょう,,chuushajou,parking,,,
+868,WORD,WORD_NOUN,HIRAGANA,,駐車場,ちゅうしゃじょう,,chuushajou,miejsce parkingowe,,,
 869,WORD,WORD_VERB_U,HIRAGANA,,学ぶ,まなぶ,,manabu,uczyć się,ogólnie,,
 870,WORD,WORD_VERB_U,HIRAGANA,,習う,ならう,,narau,uczyć się,czegoś praktycznego,,
 871,WORD,UNKNOWN,HIRAGANA,,昔々,むかしむかし,,mukashi mukashi,"dawno, dawno temu",,,
@@ -1166,7 +1166,7 @@ zgadza się",,,
 949,WORD,WORD_VERB_RU,HIRAGANA,が,見える,みえる,ga,mieru,oglądać się,czasownik przechodni,,1351
 950,WORD,WORD_VERB_RU,HIRAGANA,,終える,おえる,,oeru,kończyć się,czasownik przechodni,,
 951,WORD,UNKNOWN,HIRAGANA,,締め切り,しめきり,,shimekiri,ostateczny termin,,,
-952,WORD,UNKNOWN,HIRAGANA,,意味,いみ,,imi,znaczenie,,,
+952,WORD,WORD_NOUN,HIRAGANA,,意味,いみ,,imi,znaczenie,,,
 953,WORD,UNKNOWN,HIRAGANA,,発音,はつおん,,hatsuon,wymowa,,,
 954,WORD,WORD_NOUN,HIRAGANA,,文法,ぶんぽう,,bunpou,gramatyka,,,
 955,WORD,UNKNOWN,HIRAGANA,,質問,しつもん,,shitsumon,pytanie,,,
@@ -1252,7 +1252,8 @@ trzymaj się",,,
 1024,WORD,UNKNOWN,HIRAGANA,,始めて,はじめて,,hajimete,pierwszy raz,,,
 1025,WORD,UNKNOWN,HIRAGANA,,-,もうすぐ,,mousugu,"bardzo szybko
 za parę chwil/dni",,,
-1026,WORD,WORD_VERB_U,HIRAGANA,,転ぶ,ころぶ,,korobu,przewracać się,,,
+1026,WORD,WORD_VERB_U,HIRAGANA,,転ぶ,ころぶ,,korobu,"upaść
+przewrócić się",,,
 1027,WORD,WORD_NOUN,HIRAGANA,,灰,はい,,hai,popiół,,,90
 1028,WORD,UNKNOWN,HIRAGANA,,欲張り,よくばり,,yokubari,chciwość,,,
 1029,WORD,WORD_VERB_RU,HIRAGANA,,枯れる,かれる,,kareru,uschnąć,,,
@@ -1315,7 +1316,9 @@ starszy mężczyzna",,,535
 1083,WORD,WORD_NOUN,KATAKANA,,-,カレー,,karee,curry,,,
 1084,WORD,WORD_NOUN,HIRAGANA,,着物,きもの,,kimono,kimono,,,
 1085,WORD,WORD_NOUN,KATAKANA,,-,ケーキ,,keeki,ciastko,,,
-1086,WORD,WORD_NOUN,HIRAGANA,,広告,こうこく,,koukoku,ogłoszenie,,,
+1086,WORD,WORD_NOUN,HIRAGANA,,広告,こうこく,,koukoku,"ogłoszenie
+reklama","w czasopismach
+na plakatach",,
 1087,WORD,WORD_NOUN,HIRAGANA,,紅茶,こうちゃ,,koucha,herbata,czarna,,
 1088,WORD,WORD_NOUN,HIRAGANA,,言葉,ことば,,kotoba,"słowo
 język
@@ -1732,7 +1735,7 @@ całe miejsce",czas/miejsce + ~,,"400
 1375,WORD,WORD_NOUN,KATAKANA,,-,エレベーター,,erebeetaa,winda,,,
 1376,WORD,WORD_NOUN,KATAKANA,,-,エスカレーター,,esukareetaa,ruchome schody,,,
 1377,WORD,WORD_VERB_U,HIRAGANA,を,渡る,わたる,o,wataru,przechodzić przez,,,
-1378,WORD,WORD_VERB_U,HIRAGANA,,走る,はしる,,hashiru,biec,,,
+1378,WORD,WORD_VERB_U,HIRAGANA,,走る,はしる,,hashiru,biegać,,,
 1379,WORD,WORD_EXPRESSION,HIRAGANA,,車を走る,くるまをはしる,,kuruma o hashiru,samochody jeżdżą,dosł. biegają,,
 1380,WORD,WORD_ADJECTIVE_I,HIRAGANA,,細い,ほそい,,hosoi,wąski,,,
 1381,WORD,WORD_ADJECTIVE_I,HIRAGANA,,薄い,うすい,,usui,"cienki
@@ -1798,7 +1801,8 @@ gigantyczny",,,
 1432,WORD,WORD_NOUN,HIRAGANA,,鍵,かぎ,,kagi,klucz,,,
 1433,WORD,WORD_VERB_RU,HIRAGANA,,鍵をかける,かぎをかける,,kagi o kakeru,zabezpieczyć,,,
 1434,WORD,WORD_NOUN,HIRAGANA,,泥棒,どろぼう,,dorobou,złodziej,,,
-1435,WORD,UNKNOWN,HIRAGANA,に,注意,ちゅうい,ni,chuui,ostrzeżenie przed,,,
+1435,WORD,WORD_NOUN,HIRAGANA,に,注意,ちゅうい,ni,chuui,"uwaga o
+ostrzeżenie przed",,,
 1436,WORD,WORD_NOUN,KATAKANA,,-,ホワイトボード,,howaito boodo,tablica,biała,,
 1437,KANJI,WORD_TIME,HIRAGANA,,一時,いちじ,,ichiji,"pierwsza
 1",godzina,NO,
@@ -2410,7 +2414,7 @@ jechać",czymś,NO,
 1965,KANJI,UNKNOWN,HIRAGANA,,乗車,じょうしゃ,,jousha,podróżować samochodem,,,
 1966,KANJI,UNKNOWN,HIRAGANA,,乗馬,じょうば,,jouba,jeździć konno,,,
 1967,KANJI,UNKNOWN,HIRAGANA,,本当に,ほんとうに,,hontou ni,na prawdę,,NO,
-1968,KANJI,UNKNOWN,HIRAGANA,,当時,とうじ,,touji,w tym czasie,,,
+1968,KANJI,UNKNOWN,HIRAGANA,,当時,とうじ,,touji,w tym czasie,,,2416
 1969,KANJI,WORD_VERB_U,HIRAGANA,,当たる,あたる,,ataru,trafić,,,
 1970,KANJI,WORD_VERB_U,HIRAGANA,,当っている,とうっている,,toutte iru,dobrze idzie,,,
 1971,KANJI,WORD_NOUN,HIRAGANA,,音楽,おんがく,,ongaku,muzyka,,NO,
@@ -2666,7 +2670,8 @@ tenis stołowy",,,
 2180,WORD,WORD_NOUN,KATAKANA,,-,マーキュリー ,,maakyurii,Merkury,planeta,,
 2181,WORD,WORD_NOUN,HIRAGANA,,金星,きんせい,,kinsei,Wenus,planeta,,
 2182,WORD,WORD_NOUN,KATAKANA,,-,ビーナス,,biinasu,Wenus,planeta,,
-2183,WORD,WORD_NOUN,HIRAGANA,,地球,ちきゅう,,chikyuu,Ziemia,planeta,,
+2183,WORD,WORD_NOUN,HIRAGANA,,地球,ちきゅう,,chikyuu,"Ziemia
+kula ziemska",planeta,,
 2184,WORD,WORD_NOUN,HIRAGANA,,火星,かせい,,kasei,Mars,planeta,,
 2185,WORD,WORD_NOUN,KATAKANA,,-,"マールス
 マルス",,"maarusu
@@ -2827,7 +2832,9 @@ niezdolny",,,
 wylot",samolotu,,
 2292,WORD,WORD_VERB_IRREGULAR,HIRAGANA,,離陸する,りりくする,,ririku suru,"startowanie
 wylot",samolotu,,
-2293,WORD,WORD_NOUN,HIRAGANA,,広場,ひろば,,hiroba,plac,,,
+2293,WORD,WORD_NOUN,HIRAGANA,,広場,ひろば,,hiroba,"kwadrat
+open space
+przestrzenne miejsce",,,
 2294,WORD,WORD_NOUN,HIRAGANA,,墓地,ぼち,,bochi,cmentarz,,,
 2295,WORD,WORD_NOUN,HIRAGANA,,教会,きょうかい,,kyoukai,kościół,,,
 2296,WORD,WORD_NOUN,HIRAGANA,,橋,はし,,hashi,most,,,276
@@ -2964,3 +2971,84 @@ zwiedzanie i uczenie się",~ czegoś,,
 rabat",,,
 2388,WORD,WORD_NOUN,HIRAGANA,,券,けん,,ken,"bilet
 kupon",,,
+2389,KANJI,WORD_VERB_U,HIRAGANA,,死ぬ,しぬ,,shinu,umierać,,NO,
+2390,KANJI,WORD_NOUN,HIRAGANA,,死,し,,shi,śmierć,,,5
+2391,KANJI,WORD_NOUN,HIRAGANA,,安楽死,あんらくし,,anrakushi,eutanazja,,,
+2392,KANJI,WORD_NOUN,HIRAGANA,,意味,いみ,,imi,znaczenie,,NO,
+2393,KANJI,WORD_VERB_IRREGULAR,HIRAGANA,に,注意する,ちゅういする,ni,chuui suru,ostrzegać,kogoś,,
+2394,KANJI,WORD_NOUN,HIRAGANA,に,注意,ちゅうい,ni,chuui,"uwaga o
+ostrzeżenie przed",,NO,
+2395,KANJI,WORD_NOUN,HIRAGANA,,意見,いけん,,iken,opinia,,,
+2396,KANJI,WORD_VERB_IRREGULAR,HIRAGANA,,用意する,よういする,,youi suru,przygotować,,,
+2397,KANJI,WORD_NOUN,HIRAGANA,,用意,ようい,,youi,przygotowanie,,,
+2398,KANJI,WORD_NOUN,HIRAGANA,,意味,いみ,,imi,znaczenie,,NO,
+2399,KANJI,WORD_NOUN,HIRAGANA,,趣味,しゅみ,,shumi,hobby,,NO,
+2400,KANJI,WORD_NOUN,HIRAGANA,,興味,きょうみ,,kyoumi,zainteresowanie,,,
+2401,KANJI,WORD_NOUN,HIRAGANA,,味噌,みそ,,miso,pasta sojowa,,,
+2402,KANJI,WORD_NOUN,HIRAGANA,,味,あじ,,aji,smak,,,
+2403,KANJI,WORD_VERB_IRREGULAR,HIRAGANA,,注意する,ちゅういする,,chuui suru,ostrzegać,kogoś,NO,
+2404,KANJI,WORD_VERB_IRREGULAR,HIRAGANA,,注文する,ちゅうもんする,,chuumon suru,zamawiać,,,
+2405,KANJI,WORD_NOUN,HIRAGANA,,注文,ちゅうもん,,chuumon,zamówienie,,,
+2406,KANJI,WORD_VERB_U,HIRAGANA,,注ぐ,そそぐ,,sosogu,"wlewać
+nalewać",,,
+2407,KANJI,WORD_NOUN,HIRAGANA,,夏,なつ,,natsu,lato,,NO,
+2408,KANJI,WORD_NOUN,HIRAGANA,,夏休み,なつやすみ,,natsu yasumi,letnie wakacje,,,
+2409,KANJI,WORD_NOUN,HIRAGANA,,初夏,しょか,,shoka,wczesne lato,,,
+2410,KANJI,WORD_NOUN,HIRAGANA,,魚,さかな,,sakana,ryba,,NO,
+2411,KANJI,WORD_NOUN,HIRAGANA,,魚市場,うおいちば,,uoichiba,targ rybny,,,
+2412,KANJI,WORD_NOUN,HIRAGANA,,金魚,きんぎょ,,kingyo,złota rybka,,NO,
+2413,KANJI,WORD_NOUN,HIRAGANA,,人魚,にんぎょ,,ningyo,syrena,,,
+2414,WORD,WORD_NOUN,HIRAGANA,,人形,にんぎょう,,ningyou,lalka,,,
+2415,KANJI,WORD_NOUN,HIRAGANA,お,寺,てら,o,tera,świątynia,buddyjska,NO,
+2416,KANJI,WORD_NOUN,HIRAGANA,,東寺,とうじ,,touji,Toji,nazwa świątyni w Kioto,,1968
+2417,KANJI,WORD_ADJECTIVE_I,HIRAGANA,,広い,ひろい,,hiroi,"przestronny
+szeroki",,NO,
+2418,KANJI,WORD_NOUN,HIRAGANA,,広場,ひろば,,hiroba,"kwadrat
+open space
+przestrzenne miejsce",,NO,
+2419,KANJI,WORD_NOUN,HIRAGANA,,広島,ひろしま,,hiroshima,Hiroszima,miasto w Japonii,,
+2420,KANJI,WORD_NOUN,HIRAGANA,,広告,こうこく,,koukoku,"ogłoszenie
+reklama","w czasopismach
+na plakatach",NO,
+2421,KANJI,WORD_NOUN,HIRAGANA,,自転車,じてんしゃ,,jitensha,rower,,NO,
+2422,KANJI,WORD_VERB_IRREGULAR,HIRAGANA,を,運転する,うんてんする,o,unten suru,prowadzić,pojazd,NO,
+2423,KANJI,WORD_NOUN,HIRAGANA,,回転寿司,かいてんずし,,kaitenzushi,“sushi na taśmie”,,,
+2424,KANJI,WORD_VERB_U,HIRAGANA,,転ぶ,ころぶ,,korobu,"upaść
+przewrócić się",,NO,
+2425,KANJI,WORD_VERB_U,HIRAGANA,を,借りる,かりる,o,kariru,pożyczać,"od kogoś, osoba ni rzecz",NO,
+2426,KANJI,WORD_NOUN,HIRAGANA,,借地,しゃくち,,shakuchi,dzierżawa,,,
+2427,KANJI,WORD_NOUN,HIRAGANA,,借金,しゃっきん,,shakkin,dług,,,
+2428,KANJI,WORD_VERB_U,HIRAGANA,,走る,はしる,,hashiru,biegać,,NO,
+2429,KANJI,WORD_NOUN,HIRAGANA,,走り書き,はしりがき,,hashirigaki,bazgroły,pismo,,
+2430,KANJI,WORD_NOUN,HIRAGANA,,脱走,だっそう,,dassou,ucieczka,z więzienia,,
+2431,KANJI,WORD_NOUN,HIRAGANA,,建物,たてもの,,tatemono,budynek,,NO,
+2432,KANJI,WORD_VERB_RU,HIRAGANA,,建てる,たてる,,tateru,budować,,,
+2433,KANJI,UNKNOWN,HIRAGANA,,建つ,たつ,,tatsu,być zbudowany,,,502
+2434,KANJI,UNKNOWN,HIRAGANA,,建国,けんこく,,kenkoku,"ugruntowanie narodu
+fundamenty narodu",,,
+2435,KANJI,WORD_NOUN,HIRAGANA,,地下,ちか,,chika,pod ziemią,,,
+2436,KANJI,WORD_NOUN,HIRAGANA,,地下鉄,ちかてつ,,chikatetsu,metro,,NO,
+2437,KANJI,WORD_NOUN,HIRAGANA,,地図,ちず,,chizu,mapa,,NO,
+2438,KANJI,WORD_NOUN,HIRAGANA,,地球,ちきゅう,,chikyuu,"Ziemia
+kula ziemska",planeta,NO,
+2439,KANJI,WORD_NOUN,HIRAGANA,,地震,じしん,,jishin,trzęsienie ziemi,,NO,
+2440,KANJI,WORD_NOUN,HIRAGANA,,広場,ひろば,,hiroba,"kwadrat
+open space
+przestrzenne miejsce",,NO,
+2441,KANJI,WORD_NOUN,HIRAGANA,,場所,ばしょ,,basho,miejsce,,,
+2442,KANJI,WORD_NOUN,HIRAGANA,,駐車場,ちゅうしゃじょう,,chuushajou,miejsce parkingowe,,NO,
+2443,KANJI,WORD_NOUN,HIRAGANA,,道場,どうば,,douba,miejsce,gdzie odbywają się sztuki walki,,
+2444,WORD,UNKNOWN,HIRAGANA,,場,ば,,ba,[miejsce ~ ba],"miejsce, gdzie ma miejsce jakaś akcja",,
+2445,KANJI,WORD_NOUN,HIRAGANA,,足,あし,,ashi,"noga
+stopa",,NO,
+2446,KANJI,WORD_VERB_RU,HIRAGANA,,足りる,たりる,,tariru,wystarczyć,,,
+2447,KANJI,UNKNOWN,HIRAGANA,,一足,いっそく,,issoku,jedna para,np. butów,,
+2448,KANJI,UNKNOWN,HIRAGANA,,水不足,みずぶそく,,mizu bu soku,brakowanie wody,,,
+2449,KANJI,WORD_VERB_U,HIRAGANA,,通る,とおる,,tooru,"przejechać
+przechodzić",,,
+2450,KANJI,WORD_VERB_U,HIRAGANA,,通う,かよう,,kayou,"uczęszczać
+chodzić","do szkoły, na kurs i etc",,
+2451,KANJI,UNKNOWN,HIRAGANA,,通学,つうがく,,tsuugaku,"uczęszczać do szkoły
+iść do szkoły",,,
+2452,KANJI,UNKNOWN,HIRAGANA,,通勤,つうきん,,tsuukin,"uczęszczać do szkoły
+iść do pracy",,,
