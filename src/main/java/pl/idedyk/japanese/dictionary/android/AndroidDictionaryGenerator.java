@@ -72,7 +72,7 @@ public class AndroidDictionaryGenerator {
 		Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);
 		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
-		
+				
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 			
 			if (polishJapaneseEntries.get(idx).getDictionaryEntryType() == DictionaryEntryType.WORD_KANJI_READING) {
@@ -80,9 +80,10 @@ public class AndroidDictionaryGenerator {
 			}
 			
 			if (polishJapaneseEntries.get(idx).isUseEntry() == true) {
+				polishJapaneseEntries.get(idx).setId(result.size() + 1);
+				
 				result.add(polishJapaneseEntries.get(idx));
 			}
-	
 		}
 		
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
