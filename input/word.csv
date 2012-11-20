@@ -1,111 +1,65 @@
 1,WORD,WORD_NUMBER,HIRAGANA,,零,"ぜろ
 れい",,"zero
-rei","zero
-0",,,957
-2,WORD,WORD_NUMBER,HIRAGANA,,一,いち,,ichi,"jeden
-1",,,
-3,WORD,WORD_NUMBER,HIRAGANA,,二,に,,ni,"dwa
-2",,,
-4,WORD,WORD_NUMBER,HIRAGANA,,三,さん,,san,"trzy
-3",,,77
+rei",zero,,,957
+2,WORD,WORD_NUMBER,HIRAGANA,,一,いち,,ichi,jeden,,,
+3,WORD,WORD_NUMBER,HIRAGANA,,二,に,,ni,dwa,,,
+4,WORD,WORD_NUMBER,HIRAGANA,,三,さん,,san,trzy,,,77
 5,WORD,WORD_NUMBER,HIRAGANA,,四,"し
 よん
 よ",,"shi
 yon
-yo","cztery
-4",,,2390
-6,WORD,WORD_NUMBER,HIRAGANA,,五,ご,,go,"pięć
-5",,,"72
+yo",cztery,,,2390
+6,WORD,WORD_NUMBER,HIRAGANA,,五,ご,,go,pięć,,,"72
 851"
-7,WORD,WORD_NUMBER,HIRAGANA,,六,ろく,,roku,"sześć
-6",,,
+7,WORD,WORD_NUMBER,HIRAGANA,,六,ろく,,roku,sześć,,,
 8,WORD,WORD_NUMBER,HIRAGANA,,七,"なな
 しち",,"nana
-shichi","siedem
-7",,,
-9,WORD,WORD_NUMBER,HIRAGANA,,八,はち,,hachi,"osiem
-8",,,
+shichi",siedem,,,
+9,WORD,WORD_NUMBER,HIRAGANA,,八,はち,,hachi,osiem,,,
 10,WORD,WORD_NUMBER,HIRAGANA,,九,"きゅう
 く",,"kyuu
-ku","dziewięć
-9",,,
-11,WORD,WORD_NUMBER,HIRAGANA,,十,じゅう,,juu,"dziesięć
-10",,,"790
+ku",dziewięć,,,
+11,WORD,WORD_NUMBER,HIRAGANA,,十,じゅう,,juu,dziesięć,,,"790
 1469
 1368"
-12,WORD,WORD_NUMBER,HIRAGANA,,百,ひゃく,,hyaku,"sto
-100",,,
-13,WORD,WORD_TIME,HIRAGANA,,一時,いちじ,,ichiji,"pierwsza
-1",godzina,,
-14,WORD,WORD_TIME,HIRAGANA,,二時,にじ,,niji,"druga
-2",godzina,,1988
-15,WORD,WORD_TIME,HIRAGANA,,三時,さんじ,,sanji,"trzecia
-3",godzina,,
-16,WORD,WORD_TIME,HIRAGANA,,四時,よじ,,yoji,"czwarta
-4",godzina,,
-17,WORD,WORD_TIME,HIRAGANA,,五時,ごじ,,goji,"piąta
-5",godzina,,
-18,WORD,WORD_TIME,HIRAGANA,,六時,ろくじ,,rokuji,"szósta
-6",godzina,,
-19,WORD,WORD_TIME,HIRAGANA,,七時,しちじ,,shichiji,"siódma
-7",godzina,,
-20,WORD,WORD_TIME,HIRAGANA,,八時,はちじ,,hachiji,"ósma
-8",godzina,,
-21,WORD,WORD_TIME,HIRAGANA,,九時,くじ,,kuji,"dziewiąta
-9",godzina,,
-22,WORD,WORD_TIME,HIRAGANA,,十時,じゅうじ,,juuji,"dziesiąta
-10",godzina,,
-23,WORD,WORD_TIME,HIRAGANA,,十一時,じゅういちじ,,juuichiji,"jedenasta
-11",godzina,,
-24,WORD,WORD_TIME,HIRAGANA,,十二時,じゅうにじ,,juuniji,"dwunasta
-12",godzina,,
-25,WORD,WORD_TIME,HIRAGANA,,一時半,いちじはん,,ichiji han,1:30,godzina,,
-26,WORD,WORD_TIME,HIRAGANA,,一分,いっぷん,,ippun,"jedna
-1",minuta,,
-27,WORD,WORD_TIME,HIRAGANA,,二分,にふん,,nifun,"dwie
-2",minuta,,
-28,WORD,WORD_TIME,HIRAGANA,,三分,さんぷん,,sanpun,"trzy
-3",minuta,,
-29,WORD,WORD_TIME,HIRAGANA,,四分,よんぷん,,yonpun,"cztery
-4",minuta,,
-30,WORD,WORD_TIME,HIRAGANA,,五分,ごふん,,gofun,"pięć
-5",minuta,,
-31,WORD,WORD_TIME,HIRAGANA,,六分,ろっぷん,,roppun,"sześć
-6",minuta,,
-32,WORD,WORD_TIME,HIRAGANA,,七分,ななふん,,nanafun,"siedem
-7",minuta,,
+12,WORD,WORD_NUMBER,HIRAGANA,,百,ひゃく,,hyaku,sto,,,
+13,WORD,WORD_TIME,HIRAGANA,,一時,いちじ,,ichiji,pierwsza godzina,,,
+14,WORD,WORD_TIME,HIRAGANA,,二時,にじ,,niji,druga godzina,,,1988
+15,WORD,WORD_TIME,HIRAGANA,,三時,さんじ,,sanji,trzecia godzina,,,
+16,WORD,WORD_TIME,HIRAGANA,,四時,よじ,,yoji,czwarta godzina,,,
+17,WORD,WORD_TIME,HIRAGANA,,五時,ごじ,,goji,piąta godzina,,,
+18,WORD,WORD_TIME,HIRAGANA,,六時,ろくじ,,rokuji,szósta godzina,,,
+19,WORD,WORD_TIME,HIRAGANA,,七時,しちじ,,shichiji,siódma godzina,,,
+20,WORD,WORD_TIME,HIRAGANA,,八時,はちじ,,hachiji,ósma godzina,,,
+21,WORD,WORD_TIME,HIRAGANA,,九時,くじ,,kuji,dziewiąta godzina,,,
+22,WORD,WORD_TIME,HIRAGANA,,十時,じゅうじ,,juuji,dziesiąta godzina,,,
+23,WORD,WORD_TIME,HIRAGANA,,十一時,じゅういちじ,,juuichiji,jedenasta godzina,,,
+24,WORD,WORD_TIME,HIRAGANA,,十二時,じゅうにじ,,juuniji,dwunasta godzina,,,
+25,WORD,WORD_TIME,HIRAGANA,,一時半,いちじはん,,ichiji han,godzina 1:30,,,
+26,WORD,WORD_TIME,HIRAGANA,,一分,いっぷん,,ippun,jedna minuta,,,
+27,WORD,WORD_TIME,HIRAGANA,,二分,にふん,,nifun,dwie minuty,,,
+28,WORD,WORD_TIME,HIRAGANA,,三分,さんぷん,,sanpun,trzy minuty,,,
+29,WORD,WORD_TIME,HIRAGANA,,四分,よんぷん,,yonpun,cztery minuty,,,
+30,WORD,WORD_TIME,HIRAGANA,,五分,ごふん,,gofun,pięć minut,,,
+31,WORD,WORD_TIME,HIRAGANA,,六分,ろっぷん,,roppun,sześć minut,,,
+32,WORD,WORD_TIME,HIRAGANA,,七分,ななふん,,nanafun,siedem minut,,,
 33,WORD,WORD_TIME,HIRAGANA,,八分,"はっぷん
 はちふん",,"happun
-hachifun","osiem
-8",minuta,,
-34,WORD,WORD_TIME,HIRAGANA,,九分,きゅうふん,,kyuufun,"dziewięć
-9",minuta,,
-35,WORD,WORD_TIME,HIRAGANA,,十分,じゅっぷん,,juppun,"dziesięć
-10",minuta,,
-36,WORD,WORD_AGE,HIRAGANA,,一歳,いっさい,,issai,"jeden rok
-1",wiek,,
-37,WORD,WORD_AGE,HIRAGANA,,二歳,にさい,,nisai,"dwa lata
-2",wiek,,
-38,WORD,WORD_AGE,HIRAGANA,,三歳,さんさい,,sansai,"trzy lata
-3",wiek,,
-39,WORD,WORD_AGE,HIRAGANA,,四歳,よんさい,,yonsai,"cztery lata
-4",wiek,,
-40,WORD,WORD_AGE,HIRAGANA,,五歳,ごさい,,gosai,"pięć lat
-5",wiek,,
-41,WORD,WORD_AGE,HIRAGANA,,六歳,ろくさい,,rokusai,"sześć lat
-6",wiek,,
-42,WORD,WORD_AGE,HIRAGANA,,七歳,ななさい,,nanasai,"siedem lat
-7",wiek,,
-43,WORD,WORD_AGE,HIRAGANA,,八歳,はっさい,,hassai,"osiem lat
-8",wiek,,
-44,WORD,WORD_AGE,HIRAGANA,,九歳,きゅうさい,,kyuusai,"dziewięć lat
-9",wiek,,
-45,WORD,WORD_AGE,HIRAGANA,,十歳,じゅっさい,,jussai,"dziesięć lat
-10",wiek,,
-46,WORD,WORD_AGE,HIRAGANA,,十一歳,じゅういっさい,,juuissai,"jedenaście lat
-11",wiek,,
-47,WORD,WORD_AGE,HIRAGANA,,二十歳,はたち,,hatachi,"dwadzieścia lat
-20",wiek,,
+hachifun",osiem minut,,,
+34,WORD,WORD_TIME,HIRAGANA,,九分,きゅうふん,,kyuufun,dziewięć minut,,,
+35,WORD,WORD_TIME,HIRAGANA,,十分,じゅっぷん,,juppun,dziesięć minut,,,
+36,WORD,WORD_AGE,HIRAGANA,,一歳,いっさい,,issai,jeden rok,wiek,,
+37,WORD,WORD_AGE,HIRAGANA,,二歳,にさい,,nisai,dwa lata,wiek,,
+38,WORD,WORD_AGE,HIRAGANA,,三歳,さんさい,,sansai,trzy lata,wiek,,
+39,WORD,WORD_AGE,HIRAGANA,,四歳,よんさい,,yonsai,cztery lata,wiek,,
+40,WORD,WORD_AGE,HIRAGANA,,五歳,ごさい,,gosai,pięć lat,wiek,,
+41,WORD,WORD_AGE,HIRAGANA,,六歳,ろくさい,,rokusai,sześć lat,wiek,,
+42,WORD,WORD_AGE,HIRAGANA,,七歳,ななさい,,nanasai,siedem lat,wiek,,
+43,WORD,WORD_AGE,HIRAGANA,,八歳,はっさい,,hassai,osiem lat,wiek,,
+44,WORD,WORD_AGE,HIRAGANA,,九歳,きゅうさい,,kyuusai,dziewięć lat,wiek,,
+45,WORD,WORD_AGE,HIRAGANA,,十歳,じゅっさい,,jussai,dziesięć lat,wiek,,
+46,WORD,WORD_AGE,HIRAGANA,,十一歳,じゅういっさい,,juuissai,jedenaście lat,wiek,,
+47,WORD,WORD_AGE,HIRAGANA,,二十歳,はたち,,hatachi,dwadzieścia lat,wiek,,
 48,WORD,WORD_GREETING,HIRAGANA,,お早う御座います,おはようございます,,Ohayou gozaimasu,Dzień dobry,rano (grzecznie),,
 49,WORD,WORD_GREETING,HIRAGANA,,-,こんにちわ,,Konnichiwa,Dzień dobry,po południu,,
 50,WORD,WORD_GREETING,HIRAGANA,,-,こんばんわ,,Konbanwa,Dobry wieczór,,,
@@ -240,20 +194,13 @@ wysoki","pieniądze, wzrost",,
 173,WORD,WORD_EXPRESSION,HIRAGANA,,-,です,,desu,jest,oficjalnie,,
 174,WORD,WORD_EXPRESSION,HIRAGANA,,-,でわありません,,dewa arimasen,nie jest,oficjalnie,,
 175,WORD,WORD_EXPRESSION,HIRAGANA,,-,じゃありません,,ja arimasen,nie jest,mniej oficjalnie,,
-176,WORD,WORD_NUMBER,HIRAGANA,,三百,さんびゃく,,sanbyaku,"trzysta
-300",,,
-177,WORD,WORD_NUMBER,HIRAGANA,,六百,ろっぴゃく,,roppyaku,"sześćset
-600",,,
-178,WORD,WORD_NUMBER,HIRAGANA,,八百,はっぴゃく,,happyaku,"osiemset
-800",,,
-179,WORD,WORD_NUMBER,HIRAGANA,,千,せん,,sen,"tysiąc
-1000",,,
-180,WORD,WORD_NUMBER,HIRAGANA,,三千,さんぜん,,sanzen,"trzy tysiące
-3000",,,
-181,WORD,WORD_NUMBER,HIRAGANA,,八千,はっせん,,hassen,"osiem tysięcy
-8000",,,
-182,WORD,WORD_NUMBER,HIRAGANA,,一万,いちまん,,ichiman,"dziesięć tysięcy
-10000",,,
+176,WORD,WORD_NUMBER,HIRAGANA,,三百,さんびゃく,,sanbyaku,trzysta,,,
+177,WORD,WORD_NUMBER,HIRAGANA,,六百,ろっぴゃく,,roppyaku,sześćset,,,
+178,WORD,WORD_NUMBER,HIRAGANA,,八百,はっぴゃく,,happyaku,osiemset,,,
+179,WORD,WORD_NUMBER,HIRAGANA,,千,せん,,sen,tysiąc,,,
+180,WORD,WORD_NUMBER,HIRAGANA,,三千,さんぜん,,sanzen,trzy tysiące,,,
+181,WORD,WORD_NUMBER,HIRAGANA,,八千,はっせん,,hassen,osiem tysięcy,,,
+182,WORD,WORD_NUMBER,HIRAGANA,,一万,いちまん,,ichiman,dziesięć tysięcy,,,
 183,WORD,WORD_NOUN,HIRAGANA,,黒板,こくばん,,kokuban,tablica,czarna,,
 184,WORD,WORD_NOUN,KATAKANA,,-,ビデオ,,bideo,video,,,
 185,WORD,WORD_NOUN,KATAKANA,,-,カーテン,,kaaten,zasłonka,,,
@@ -396,69 +343,38 @@ zdjęcie",,NO,
 306,WORD,WORD_NOUN,HIRAGANA,,本や,ほんや,,hon'ya,księgarnia,,,
 307,WORD,WORD_NOUN,HIRAGANA,,町,まち,,machi,miasteczko,,,
 308,WORD,WORD_NOUN,KATAKANA,,-,レストラン,,resutoran,restauracja,,,
-309,WORD,WORD_DAY_NUMBER,HIRAGANA,,一日,ついたち,,tsuitachi,"pierwszy
-1",dzień miesiąca,,1125
-310,WORD,WORD_DAY_NUMBER,HIRAGANA,,二日,ふつか,,futsuka,"drugi
-2",dzień miesiąca,,1126
-311,WORD,WORD_DAY_NUMBER,HIRAGANA,,三日,みっか,,mikka,"trzeci
-3",dzień miesiąca,,1127
-312,WORD,WORD_DAY_NUMBER,HIRAGANA,,四日,よっか,,yokka,"czwarty
-4",dzień miesiąca,,1128
-313,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,五日,いつか,,itsuka,"piąty
-5",dzień miesiąca,,"1129
+309,WORD,WORD_DAY_NUMBER,HIRAGANA,,一日,ついたち,,tsuitachi,pierwszy,dzień miesiąca,,1125
+310,WORD,WORD_DAY_NUMBER,HIRAGANA,,二日,ふつか,,futsuka,drugi,dzień miesiąca,,1126
+311,WORD,WORD_DAY_NUMBER,HIRAGANA,,三日,みっか,,mikka,trzeci,dzień miesiąca,,1127
+312,WORD,WORD_DAY_NUMBER,HIRAGANA,,四日,よっか,,yokka,czwarty,dzień miesiąca,,1128
+313,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,五日,いつか,,itsuka,piąty,dzień miesiąca,,"1129
 731"
-314,WORD,WORD_DAY_NUMBER,HIRAGANA,,六日,むいか,,muika,"szósty
-6",dzień miesiąca,,1130
-315,WORD,WORD_DAY_NUMBER,HIRAGANA,,七日,なのか,,nanoka,"siódmy
-7",dzień miesiąca,,1131
-316,WORD,WORD_DAY_NUMBER,HIRAGANA,,八日,ようか,,youka,"ósmy
-8",dzień miesiąca,,1132
-317,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,九日,ここのか,,kokonoka,"dziewiąty
-9",dzień miesiąca,,1133
-318,WORD,WORD_DAY_NUMBER,HIRAGANA,,十日,とおか,,tooka,"dziesiąty
-10",dzień miesiąca,,1134
-319,WORD,WORD_DAY_NUMBER,HIRAGANA,,十一日,じゅういちにち,,juuichinichi,"jedenasty
-11",dzień miesiąca,,
-320,WORD,WORD_DAY_NUMBER,HIRAGANA,,十二日,じゅうににち,,juuninichi,"dwunasty
-12",dzień miesiąca,,
-321,WORD,WORD_DAY_NUMBER,HIRAGANA,,十三日,じゅうさんにち,,juusannichi,"trzynasty
-13",dzień miesiąca,,
-322,WORD,WORD_DAY_NUMBER,HIRAGANA,,十四日,じゅうよっか,,juuyokka,"czternasty
-14",dzień miesiąca,,
-323,WORD,WORD_DAY_NUMBER,HIRAGANA,,十五日,じゅうごにち,,juugonichi,"piętnasty
-15",dzień miesiąca,,
-324,WORD,WORD_DAY_NUMBER,HIRAGANA,,十六日,じゅうろくにち,,juurokunichi,"szesnasty
-16",dzień miesiąca,,
-325,WORD,WORD_DAY_NUMBER,HIRAGANA,,十七日,じゅうしちにち,,juushichinichi,"siedemnasty
-17",dzień miesiąca,,
-326,WORD,WORD_DAY_NUMBER,HIRAGANA,,十八日,じゅうはちにち,,juuhachinichi,"osiemnasty
-18",dzień miesiąca,,
-327,WORD,WORD_DAY_NUMBER,HIRAGANA,,十九日,じゅうくにち,,juukunichi,"dziewiętnasty
-19",dzień miesiąca,,
-328,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十日,はつか,,hatsuka,"dwudziesty
-20",dzień miesiąca,,
-329,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十一日,にじゅういちにち,,nijuuichinichi,"dwudziesty pierwszy
-21",dzień miesiąca,,
-330,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十二日,にじゅうににち,,nijuuninichi,"dwudziesty drugi
-22",dzień miesiąca,,
-331,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十三日,にじゅうさんにち,,nijuusannichi,"dwudziesty trzeci
-23",dzień miesiąca,,
-332,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十四日,にじゅうよっか,,nijuuyokka,"dwudziesty czwarty
-24",dzień miesiąca,,
-333,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十五日,にじゅうごにち,,nijuugonichi,"dwudziesty piąty
-25",dzień miesiąca,,
-334,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十六日,にじゅうろくにち,,nijuurokunichi,"dwudziesty szósty
-26",dzień miesiąca,,
-335,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十七日,にじゅうしちにち,,nijuushichinichi,"dwudziesty siódmy
-27",dzień miesiąca,,
-336,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十八日,にじゅうはちにち,,nijuuhachinichi,"dwudziesty ósmy
-28",dzień miesiąca,,
-337,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十九日,にじゅうくにち,,nijuukunichi,"dwudziesty dziewiąty
-29",dzień miesiąca,,
-338,WORD,WORD_DAY_NUMBER,HIRAGANA,,三十日,さんじゅうにち,,sanjuunichi,"trzydziesty
-30",dzień miesiąca,,
-339,WORD,WORD_DAY_NUMBER,HIRAGANA,,三十一日,さんじゅういちにち,,sanjuuichinichi,"trzydziesty pierwszy
-31",dzień miesiąca,,
+314,WORD,WORD_DAY_NUMBER,HIRAGANA,,六日,むいか,,muika,szósty,dzień miesiąca,,1130
+315,WORD,WORD_DAY_NUMBER,HIRAGANA,,七日,なのか,,nanoka,siódmy,dzień miesiąca,,1131
+316,WORD,WORD_DAY_NUMBER,HIRAGANA,,八日,ようか,,youka,ósmy,dzień miesiąca,,1132
+317,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,九日,ここのか,,kokonoka,dziewiąty,dzień miesiąca,,1133
+318,WORD,WORD_DAY_NUMBER,HIRAGANA,,十日,とおか,,tooka,dziesiąty,dzień miesiąca,,1134
+319,WORD,WORD_DAY_NUMBER,HIRAGANA,,十一日,じゅういちにち,,juuichinichi,jedenasty,dzień miesiąca,,
+320,WORD,WORD_DAY_NUMBER,HIRAGANA,,十二日,じゅうににち,,juuninichi,dwunasty,dzień miesiąca,,
+321,WORD,WORD_DAY_NUMBER,HIRAGANA,,十三日,じゅうさんにち,,juusannichi,trzynasty,dzień miesiąca,,
+322,WORD,WORD_DAY_NUMBER,HIRAGANA,,十四日,じゅうよっか,,juuyokka,czternasty,dzień miesiąca,,
+323,WORD,WORD_DAY_NUMBER,HIRAGANA,,十五日,じゅうごにち,,juugonichi,piętnasty,dzień miesiąca,,
+324,WORD,WORD_DAY_NUMBER,HIRAGANA,,十六日,じゅうろくにち,,juurokunichi,szesnasty,dzień miesiąca,,
+325,WORD,WORD_DAY_NUMBER,HIRAGANA,,十七日,じゅうしちにち,,juushichinichi,siedemnasty,dzień miesiąca,,
+326,WORD,WORD_DAY_NUMBER,HIRAGANA,,十八日,じゅうはちにち,,juuhachinichi,osiemnasty,dzień miesiąca,,
+327,WORD,WORD_DAY_NUMBER,HIRAGANA,,十九日,じゅうくにち,,juukunichi,dziewiętnasty,dzień miesiąca,,
+328,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十日,はつか,,hatsuka,dwudziesty,dzień miesiąca,,
+329,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十一日,にじゅういちにち,,nijuuichinichi,dwudziesty pierwszy,dzień miesiąca,,
+330,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十二日,にじゅうににち,,nijuuninichi,dwudziesty drugi,dzień miesiąca,,
+331,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十三日,にじゅうさんにち,,nijuusannichi,dwudziesty trzeci,dzień miesiąca,,
+332,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十四日,にじゅうよっか,,nijuuyokka,dwudziesty czwarty,dzień miesiąca,,
+333,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十五日,にじゅうごにち,,nijuugonichi,dwudziesty piąty,dzień miesiąca,,
+334,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十六日,にじゅうろくにち,,nijuurokunichi,dwudziesty szósty,dzień miesiąca,,
+335,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十七日,にじゅうしちにち,,nijuushichinichi,dwudziesty siódmy,dzień miesiąca,,
+336,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十八日,にじゅうはちにち,,nijuuhachinichi,dwudziesty ósmy,dzień miesiąca,,
+337,WORD,WORD_DAY_NUMBER,HIRAGANA,,二十九日,にじゅうくにち,,nijuukunichi,dwudziesty dziewiąty,dzień miesiąca,,
+338,WORD,WORD_DAY_NUMBER,HIRAGANA,,三十日,さんじゅうにち,,sanjuunichi,trzydziesty,dzień miesiąca,,
+339,WORD,WORD_DAY_NUMBER,HIRAGANA,,三十一日,さんじゅういちにち,,sanjuuichinichi,trzydziesty pierwszy,dzień miesiąca,,
 340,WORD,WORD_MONTH,HIRAGANA,,一月,いちがつ,,ichigatsu,styczeń,,,
 341,WORD,WORD_MONTH,HIRAGANA,,二月,にがつ,,nigatsu,luty,,,
 342,WORD,WORD_MONTH,HIRAGANA,,三月,さんがつ,,sangatsu,marzec,,,
@@ -508,7 +424,7 @@ istnieć",do rzeczy martwych,,1056
 383,WORD,WORD_VERB_U,HIRAGANA,を,撮る,とる,o,toru,robić zdjęcie,,,"878
 910"
 384,WORD,WORD_VERB_U,HIRAGANA,を,待つ,まつ,o,matsu,czekać,,,274
-385,WORD,WORD_VERB_U,HIRAGANA,,-,がわかる,,ga wakaru,rozumieć,,,
+385,WORD,WORD_VERB_U,HIRAGANA,が,-,わかる,ga,wakaru,rozumieć,,,
 386,WORD,WORD_VERB_RU,HIRAGANA,が,-,いる,ga,iru,"być
 istnieć","miejsce ni, do rzeczy żywych",,704
 387,WORD,UNKNOWN,HIRAGANA,,-,ぐらい,,gurai,około,ogólne,,
@@ -706,28 +622,18 @@ mężczyzna w średnim wieku",,,
 545,WORD,WORD_EXPRESSION,HIRAGANA,,道を渡る,みちをわたる,,michi o wataru,przez ulicę,,,
 546,WORD,WORD_EXPRESSION,HIRAGANA,,道の左側,みちのひだりかわ,,michi no hidari kawa,lewo strona ulicy,,,
 547,WORD,WORD_EXPRESSION,HIRAGANA,,道の右側,みちのみぎかわ,,michi no migi kawa,prawa strona ulicy,,,
-548,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,一人,ひとり,,hitori,"jeden człowiek
-1","*, liczenie ludzi",,
-549,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,二人,ふたり,,futari,"dwoje ludzi
-2","*, liczenie ludzi",,
-550,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,三人,さんにん,,sannin,"troje ludzi
-3",liczenie ludzi,,
-551,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,四人,よにん,,yonin,"czworo ludzi
-4","*, liczenie ludzi",,
-552,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,五人,ごにん,,gonin,"pięcioro ludzi
-5",liczenie ludzi,,
-553,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,六人,ろくにん,,rokunin,"sześcioro ludzi
-6",liczenie ludzi,,
+548,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,一人,ひとり,,hitori,jeden człowiek,liczenie ludzi,,
+549,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,二人,ふたり,,futari,dwoje ludzi,liczenie ludzi,,
+550,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,三人,さんにん,,sannin,troje ludzi,liczenie ludzi,,
+551,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,四人,よにん,,yonin,czworo ludzi,liczenie ludzi,,
+552,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,五人,ごにん,,gonin,pięcioro ludzi,liczenie ludzi,,
+553,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,六人,ろくにん,,rokunin,sześcioro ludzi,liczenie ludzi,,
 554,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,七人,"しちにん
 ななにん",,"shichinin
-nananin","siedmioro ludzi
-7",liczenie ludzi,,
-555,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,八人,はちにん,,hachinin,"ośmioro ludzi
-8",liczenie ludzi,,
-556,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,九人,きゅうにん,,kyuunin,"dziewięcioro ludzi
-9",liczenie ludzi,,
-557,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,十人,じゅうにん,,juunin,"dziesięcioro ludzi
-10",liczenie ludzi,,
+nananin",siedmioro ludzi,liczenie ludzi,,
+555,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,八人,はちにん,,hachinin,ośmioro ludzi,liczenie ludzi,,
+556,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,九人,きゅうにん,,kyuunin,dziewięcioro ludzi,liczenie ludzi,,
+557,WORD,WORD_PEOPLE_NUMBER,HIRAGANA,,十人,じゅうにん,,juunin,dziesięcioro ludzi,liczenie ludzi,,
 558,WORD,WORD_NOUN,HIRAGANA,,髪,かみ,,kami,włosy,,,1776
 559,WORD,WORD_NOUN,HIRAGANA,,耳,みみ,,mimi,ucho,,NO,
 560,WORD,WORD_NOUN,HIRAGANA,,目,め,,me,oko,,NO,
@@ -964,26 +870,16 @@ otrzymać","coś, osoba ni rzecz",,
 778,WORD,UNKNOWN,HIRAGANA,,-,みんな,,minna,wszyscy,,NO,
 779,WORD,UNKNOWN,HIRAGANA,,-,もう,,mou,już,,,
 780,WORD,UNKNOWN,HIRAGANA,,-,まだ,,mada,jeszcze nie,+ czasownik w formie negatywnej,NO,
-781,WORD,WORD_COUNTERS,HIRAGANA,,一つ,ひとつ,,hitotsu,"jeden
-1",klasyfikator ogólny,,
-782,WORD,WORD_COUNTERS,HIRAGANA,,二つ,ふたつ,,futatsu,"dwa
-2",klasyfikator ogólny,,
-783,WORD,WORD_COUNTERS,HIRAGANA,,三つ,みっつ,,mittsu,"trzy
-3",klasyfikator ogólny,,
-784,WORD,WORD_COUNTERS,HIRAGANA,,四つ,よっつ,,yottsu,"cztery
-4",klasyfikator ogólny,,
-785,WORD,WORD_COUNTERS,HIRAGANA,,五つ,いつつ,,itsutsu,"pięć
-5",klasyfikator ogólny,,
-786,WORD,WORD_COUNTERS,HIRAGANA,,六つ,むっつ,,muttsu,"sześć
-6",klasyfikator ogólny,,
-787,WORD,WORD_COUNTERS,HIRAGANA,,七つ,ななつ,,nanatsu,"siedem
-7",klasyfikator ogólny,,
-788,WORD,WORD_COUNTERS,HIRAGANA,,八つ,やっつ,,yattsu,"osiem
-8",klasyfikator ogólny,,
-789,WORD,WORD_COUNTERS,HIRAGANA,,九つ,ここのつ,,kokonotsu,"dziewięć
-9",klasyfikator ogólny,,1466
-790,WORD,WORD_COUNTERS,HIRAGANA,,十,とお,,too,"dziesięć
-10",klasyfikator ogólny,,"11
+781,WORD,WORD_COUNTERS,HIRAGANA,,一つ,ひとつ,,hitotsu,jeden,klasyfikator ogólny,,
+782,WORD,WORD_COUNTERS,HIRAGANA,,二つ,ふたつ,,futatsu,dwa,klasyfikator ogólny,,
+783,WORD,WORD_COUNTERS,HIRAGANA,,三つ,みっつ,,mittsu,trzy,klasyfikator ogólny,,
+784,WORD,WORD_COUNTERS,HIRAGANA,,四つ,よっつ,,yottsu,cztery,klasyfikator ogólny,,
+785,WORD,WORD_COUNTERS,HIRAGANA,,五つ,いつつ,,itsutsu,pięć,klasyfikator ogólny,,
+786,WORD,WORD_COUNTERS,HIRAGANA,,六つ,むっつ,,muttsu,sześć,klasyfikator ogólny,,
+787,WORD,WORD_COUNTERS,HIRAGANA,,七つ,ななつ,,nanatsu,siedem,klasyfikator ogólny,,
+788,WORD,WORD_COUNTERS,HIRAGANA,,八つ,やっつ,,yattsu,osiem,klasyfikator ogólny,,
+789,WORD,WORD_COUNTERS,HIRAGANA,,九つ,ここのつ,,kokonotsu,dziewięć,klasyfikator ogólny,,1466
+790,WORD,WORD_COUNTERS,HIRAGANA,,十,とお,,too,dziesięć,klasyfikator ogólny,,"11
 1469"
 791,WORD,UNKNOWN,HIRAGANA,,-,そして,,soshite,następnie,,,
 792,WORD,UNKNOWN,HIRAGANA,,-,それから,,sorekara,"i wtedy
@@ -1368,27 +1264,17 @@ faktycznie",,,
 1122,WORD,WORD_EXPRESSION,HIRAGANA,,全部,ぜんぶ,,zenbu,wszystko,,,
 1123,WORD,WORD_EXPRESSION,HIRAGANA,,と申します,ともうします,,to moushimasu,nazywam się,,,
 1124,WORD,WORD_EXPRESSION,HIRAGANA,,よろしくお願いします,よろしくおねがいします,,yoroshiku onegai shimasu,Z góry dziękuję,,,
-1125,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,一日,いちにち,,ichinichi,"jeden
-1",liczenie dni,,309
-1126,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,二日,ふつか,,futsuka,"dwa
-2",liczenie dni,,310
-1127,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,三日,みっか,,mikka,"trzy
-3",liczenie dni,,311
-1128,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,四日,よっか,,yokka,"cztery
-4",liczenie dni,,312
-1129,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,五日,いつか,,itsuka,"pięć
-5",liczenie dni,,"313
+1125,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,一日,いちにち,,ichinichi,jeden dzień,liczenie dni,,309
+1126,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,二日,ふつか,,futsuka,dwa dni,liczenie dni,,310
+1127,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,三日,みっか,,mikka,trzy dni,liczenie dni,,311
+1128,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,四日,よっか,,yokka,cztery dni,liczenie dni,,312
+1129,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,五日,いつか,,itsuka,pięć dni,liczenie dni,,"313
 731"
-1130,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,六日,むいか,,muika,"sześć
-6",liczenie dni,,314
-1131,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,七日,なのか,,nanoka,"siedem
-7",liczenie dni,,315
-1132,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,八日,ようか,,youka,"osiem
-8",liczenie dni,,316
-1133,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,九日,ここのか,,kokonoka,"dziewięć
-9",liczenie dni,,317
-1134,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,十日,とおか,,tooka,"dziesięć
-10",liczenie dni,,318
+1130,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,六日,むいか,,muika,sześć dni,liczenie dni,,314
+1131,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,七日,なのか,,nanoka,siedem dni,liczenie dni,,315
+1132,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,八日,ようか,,youka,osiem dni,liczenie dni,,316
+1133,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,九日,ここのか,,kokonoka,dziewięć dni,liczenie dni,,317
+1134,WORD,WORD_COUNT_DAY_NUMBER,HIRAGANA,,十日,とおか,,tooka,dziesięć dni,liczenie dni,,318
 1135,WORD,WORD_NOUN,HIRAGANA,,睫毛,まつげ,,matsuge,rzęsy,,,
 1136,WORD,WORD_NOUN,HIRAGANA,,眉毛,まゆげ,,mayuge,brwi,,,
 1137,WORD,WORD_VERB_U,HIRAGANA,,試す,ためす,,tamesu,próbować,,,
@@ -1492,153 +1378,83 @@ takiego rodzaju",blisko mówcy,,
 1221,WORD,WORD_COUNTERS,HIRAGANA,,本,ほん,,hon,[liczenie długich przedmiotów],~,,158
 1222,WORD,WORD_COUNTERS,HIRAGANA,,枚,まい,,mai,[liczenie płaskich przedmiotów],~,,275
 1223,WORD,WORD_COUNTERS,HIRAGANA,,つ,つ,,tsu,[ogólny klasyfikator],~,,
-1224,WORD,WORD_COUNTERS,HIRAGANA,,一個,いっこ,,ikko,"jeden
-1",małe przedmioty,,
-1225,WORD,WORD_COUNTERS,HIRAGANA,,二個,にこ,,niko,"dwa
-2",małe przedmioty,,
-1226,WORD,WORD_COUNTERS,HIRAGANA,,三個,さんこ,,sanko,"trzy
-3",małe przedmioty,,
-1227,WORD,WORD_COUNTERS,HIRAGANA,,四個,よんこ,,yonko,"cztery
-4",małe przedmioty,,
-1228,WORD,WORD_COUNTERS,HIRAGANA,,五個,ごこ,,goko,"pięć
-5",małe przedmioty,,
-1229,WORD,WORD_COUNTERS,HIRAGANA,,六個,ろっこ,,rokko,"sześć
-6",małe przedmioty,,
-1230,WORD,WORD_COUNTERS,HIRAGANA,,七個,ななこ,,nanako,"siedem
-7",małe przedmioty,,
-1231,WORD,WORD_COUNTERS,HIRAGANA,,八個,はっこ,,hakko,"osiem
-8",małe przedmioty,,
-1232,WORD,WORD_COUNTERS,HIRAGANA,,九個,きゅうこ,,kyuuko,"dziewięć
-9",małe przedmioty,,
-1233,WORD,WORD_COUNTERS,HIRAGANA,,十個,じゅっこ,,jukko,"dziesięć
-10",małe przedmioty,,
+1224,WORD,WORD_COUNTERS,HIRAGANA,,一個,いっこ,,ikko,jeden,małe przedmioty,,
+1225,WORD,WORD_COUNTERS,HIRAGANA,,二個,にこ,,niko,dwa,małe przedmioty,,
+1226,WORD,WORD_COUNTERS,HIRAGANA,,三個,さんこ,,sanko,trzy,małe przedmioty,,
+1227,WORD,WORD_COUNTERS,HIRAGANA,,四個,よんこ,,yonko,cztery,małe przedmioty,,
+1228,WORD,WORD_COUNTERS,HIRAGANA,,五個,ごこ,,goko,pięć,małe przedmioty,,
+1229,WORD,WORD_COUNTERS,HIRAGANA,,六個,ろっこ,,rokko,sześć,małe przedmioty,,
+1230,WORD,WORD_COUNTERS,HIRAGANA,,七個,ななこ,,nanako,siedem,małe przedmioty,,
+1231,WORD,WORD_COUNTERS,HIRAGANA,,八個,はっこ,,hakko,osiem,małe przedmioty,,
+1232,WORD,WORD_COUNTERS,HIRAGANA,,九個,きゅうこ,,kyuuko,dziewięć,małe przedmioty,,
+1233,WORD,WORD_COUNTERS,HIRAGANA,,十個,じゅっこ,,jukko,dziesięć,małe przedmioty,,
 1234,WORD,WORD_COUNTERS,HIRAGANA,,何個,なんこ,,nanko,jak wiele,małe przedmioty,,
 1235,WORD,WORD_COUNTERS,HIRAGANA,,-,いくつ,,ikutsu,jak wiele,małe przedmioty,,
-1236,WORD,WORD_COUNTERS,HIRAGANA,,一冊,いっさつ,,issatsu,"jeden
-1",wolumeny,,
-1237,WORD,WORD_COUNTERS,HIRAGANA,,二冊,にさつ,,nisatsu,"dwa
-2",wolumeny,,
-1238,WORD,WORD_COUNTERS,HIRAGANA,,三冊,さんさつ,,sansatsu,"trzy
-3",wolumeny,,
-1239,WORD,WORD_COUNTERS,HIRAGANA,,四冊,よんさつ,,yonsatsu,"cztery
-4",wolumeny,,
-1240,WORD,WORD_COUNTERS,HIRAGANA,,五冊,ごさつ,,gosatsu,"pięć
-5",wolumeny,,
-1241,WORD,WORD_COUNTERS,HIRAGANA,,六冊,ろくさつ,,rokusatsu,"sześć
-6",wolumeny,,
-1242,WORD,WORD_COUNTERS,HIRAGANA,,七冊,ななさつ,,nanasatsu,"siedem
-7",wolumeny,,
-1243,WORD,WORD_COUNTERS,HIRAGANA,,八冊,はっさつ,,hassatsu,"osiem
-8",wolumeny,,
-1244,WORD,WORD_COUNTERS,HIRAGANA,,九冊,きゅうさつ,,kyuusatsu,"dziewięć
-9",wolumeny,,
-1245,WORD,WORD_COUNTERS,HIRAGANA,,十冊,じゅっさつ,,jussatsu,"dziesięć
-10",wolumeny,,
+1236,WORD,WORD_COUNTERS,HIRAGANA,,一冊,いっさつ,,issatsu,jeden,wolumeny,,
+1237,WORD,WORD_COUNTERS,HIRAGANA,,二冊,にさつ,,nisatsu,dwa,wolumeny,,
+1238,WORD,WORD_COUNTERS,HIRAGANA,,三冊,さんさつ,,sansatsu,trzy,wolumeny,,
+1239,WORD,WORD_COUNTERS,HIRAGANA,,四冊,よんさつ,,yonsatsu,cztery,wolumeny,,
+1240,WORD,WORD_COUNTERS,HIRAGANA,,五冊,ごさつ,,gosatsu,pięć,wolumeny,,
+1241,WORD,WORD_COUNTERS,HIRAGANA,,六冊,ろくさつ,,rokusatsu,sześć,wolumeny,,
+1242,WORD,WORD_COUNTERS,HIRAGANA,,七冊,ななさつ,,nanasatsu,siedem,wolumeny,,
+1243,WORD,WORD_COUNTERS,HIRAGANA,,八冊,はっさつ,,hassatsu,osiem,wolumeny,,
+1244,WORD,WORD_COUNTERS,HIRAGANA,,九冊,きゅうさつ,,kyuusatsu,dziewięć,wolumeny,,
+1245,WORD,WORD_COUNTERS,HIRAGANA,,十冊,じゅっさつ,,jussatsu,dziesięć,wolumeny,,
 1246,WORD,WORD_COUNTERS,HIRAGANA,,何冊,なんさつ,,nansatsu,jak wiele,wolumeny,,
-1247,WORD,WORD_COUNTERS,HIRAGANA,,一匹,いっぴき,,ippiki,"jeden
-1",małe zwierzęta,,
-1248,WORD,WORD_COUNTERS,HIRAGANA,,二匹,にひき,,nihiki,"dwa
-2",małe zwierzęta,,
-1249,WORD,WORD_COUNTERS,HIRAGANA,,三匹,さんびき,,sanbiki,"trzy
-3",małe zwierzęta,,
-1250,WORD,WORD_COUNTERS,HIRAGANA,,四匹,よんひき,,yonhiki,"cztery
-4",małe zwierzęta,,
-1251,WORD,WORD_COUNTERS,HIRAGANA,,五匹,ごひき,,gohiki,"pięć
-5",małe zwierzęta,,
-1252,WORD,WORD_COUNTERS,HIRAGANA,,六匹,ろっぴき,,roppiki,"sześć
-6",małe zwierzęta,,
-1253,WORD,WORD_COUNTERS,HIRAGANA,,七匹,ななひき,,nanahiki,"siedem
-7",małe zwierzęta,,
-1254,WORD,WORD_COUNTERS,HIRAGANA,,八匹,はっぴき,,happiki,"osiem
-8",małe zwierzęta,,
-1255,WORD,WORD_COUNTERS,HIRAGANA,,九匹,きゅうひき,,kyuuhiki,"dziewięć
-9",małe zwierzęta,,
-1256,WORD,WORD_COUNTERS,HIRAGANA,,十匹,じゅっぴき,,juppiki,"dziesięć
-10",małe zwierzęta,,
+1247,WORD,WORD_COUNTERS,HIRAGANA,,一匹,いっぴき,,ippiki,jeden,małe zwierzęta,,
+1248,WORD,WORD_COUNTERS,HIRAGANA,,二匹,にひき,,nihiki,dwa,małe zwierzęta,,
+1249,WORD,WORD_COUNTERS,HIRAGANA,,三匹,さんびき,,sanbiki,trzy,małe zwierzęta,,
+1250,WORD,WORD_COUNTERS,HIRAGANA,,四匹,よんひき,,yonhiki,cztery,małe zwierzęta,,
+1251,WORD,WORD_COUNTERS,HIRAGANA,,五匹,ごひき,,gohiki,pięć,małe zwierzęta,,
+1252,WORD,WORD_COUNTERS,HIRAGANA,,六匹,ろっぴき,,roppiki,sześć,małe zwierzęta,,
+1253,WORD,WORD_COUNTERS,HIRAGANA,,七匹,ななひき,,nanahiki,siedem,małe zwierzęta,,
+1254,WORD,WORD_COUNTERS,HIRAGANA,,八匹,はっぴき,,happiki,osiem,małe zwierzęta,,
+1255,WORD,WORD_COUNTERS,HIRAGANA,,九匹,きゅうひき,,kyuuhiki,dziewięć,małe zwierzęta,,
+1256,WORD,WORD_COUNTERS,HIRAGANA,,十匹,じゅっぴき,,juppiki,dziesięć,małe zwierzęta,,
 1257,WORD,WORD_COUNTERS,HIRAGANA,,何匹,なんびき,,nanbiki,jak wiele,małe zwierzęta,,
-1258,WORD,WORD_COUNTERS,HIRAGANA,,一本,いっぽん,,ippon,"jeden
-1",długie przedmioty,,
-1259,WORD,WORD_COUNTERS,HIRAGANA,,二本,にほん,,nihon,"dwa
-2",długie przedmioty,,88
-1260,WORD,WORD_COUNTERS,HIRAGANA,,三本,さんぼん,,sanbon,"trzy
-3",długie przedmioty,,
-1261,WORD,WORD_COUNTERS,HIRAGANA,,四本,よんほん,,yonhon,"cztery
-4",długie przedmioty,,
-1262,WORD,WORD_COUNTERS,HIRAGANA,,五本,ごほん,,gohon,"pięć
-5",długie przedmioty,,
-1263,WORD,WORD_COUNTERS,HIRAGANA,,六本,ろっぽん,,roppon,"sześć
-6",długie przedmioty,,
-1264,WORD,WORD_COUNTERS,HIRAGANA,,七本,ななほん,,nanahon,"siedem
-7",długie przedmioty,,
-1265,WORD,WORD_COUNTERS,HIRAGANA,,八本,はっぽん,,happon,"osiem
-8",długie przedmioty,,
-1266,WORD,WORD_COUNTERS,HIRAGANA,,九本,きゅうほん,,kyuuhon,"dziewięć
-9",długie przedmioty,,
-1267,WORD,WORD_COUNTERS,HIRAGANA,,十本,じゅっぽん,,juppon,"dziesięć
-10",długie przedmioty,,
+1258,WORD,WORD_COUNTERS,HIRAGANA,,一本,いっぽん,,ippon,jeden,długie przedmioty,,
+1259,WORD,WORD_COUNTERS,HIRAGANA,,二本,にほん,,nihon,dwa,długie przedmioty,,88
+1260,WORD,WORD_COUNTERS,HIRAGANA,,三本,さんぼん,,sanbon,trzy,długie przedmioty,,
+1261,WORD,WORD_COUNTERS,HIRAGANA,,四本,よんほん,,yonhon,cztery,długie przedmioty,,
+1262,WORD,WORD_COUNTERS,HIRAGANA,,五本,ごほん,,gohon,pięć,długie przedmioty,,
+1263,WORD,WORD_COUNTERS,HIRAGANA,,六本,ろっぽん,,roppon,sześć,długie przedmioty,,
+1264,WORD,WORD_COUNTERS,HIRAGANA,,七本,ななほん,,nanahon,siedem,długie przedmioty,,
+1265,WORD,WORD_COUNTERS,HIRAGANA,,八本,はっぽん,,happon,osiem,długie przedmioty,,
+1266,WORD,WORD_COUNTERS,HIRAGANA,,九本,きゅうほん,,kyuuhon,dziewięć,długie przedmioty,,
+1267,WORD,WORD_COUNTERS,HIRAGANA,,十本,じゅっぽん,,juppon,dziesięć,długie przedmioty,,
 1268,WORD,WORD_COUNTERS,HIRAGANA,,何本,なんぼん,,nanbon,jak wiele,długie przedmioty,,
-1269,WORD,WORD_COUNTERS,HIRAGANA,,一台,いちだい,,ichidai,"jeden
-1",urządzenia,,
-1270,WORD,WORD_COUNTERS,HIRAGANA,,二台,にだい,,nidai,"dwa
-2",urządzenia,,
-1271,WORD,WORD_COUNTERS,HIRAGANA,,三台,さんだい,,sandai,"trzy
-3",urządzenia,,
-1272,WORD,WORD_COUNTERS,HIRAGANA,,四台,よんだい,,yondai,"cztery
-4",urządzenia,,
-1273,WORD,WORD_COUNTERS,HIRAGANA,,五台,ごだい,,godai,"pięć
-5",urządzenia,,
-1274,WORD,WORD_COUNTERS,HIRAGANA,,六台,ろくだい,,rokudai,"sześć
-6",urządzenia,,
-1275,WORD,WORD_COUNTERS,HIRAGANA,,七台,ななだい,,nanadai,"siedem
-7",urządzenia,,
-1276,WORD,WORD_COUNTERS,HIRAGANA,,八台,はちだい,,hachidai,"osiem
-8",urządzenia,,
-1277,WORD,WORD_COUNTERS,HIRAGANA,,九台,きゅうだい,,kyuudai,"dziewięć
-9",urządzenia,,
-1278,WORD,WORD_COUNTERS,HIRAGANA,,十台,じゅうだい,,juudai,"dziesięć
-10",urządzenia,,1930
+1269,WORD,WORD_COUNTERS,HIRAGANA,,一台,いちだい,,ichidai,jeden,urządzenia,,
+1270,WORD,WORD_COUNTERS,HIRAGANA,,二台,にだい,,nidai,dwa,urządzenia,,
+1271,WORD,WORD_COUNTERS,HIRAGANA,,三台,さんだい,,sandai,trzy,urządzenia,,
+1272,WORD,WORD_COUNTERS,HIRAGANA,,四台,よんだい,,yondai,cztery,urządzenia,,
+1273,WORD,WORD_COUNTERS,HIRAGANA,,五台,ごだい,,godai,pięć,urządzenia,,
+1274,WORD,WORD_COUNTERS,HIRAGANA,,六台,ろくだい,,rokudai,sześć,urządzenia,,
+1275,WORD,WORD_COUNTERS,HIRAGANA,,七台,ななだい,,nanadai,siedem,urządzenia,,
+1276,WORD,WORD_COUNTERS,HIRAGANA,,八台,はちだい,,hachidai,osiem,urządzenia,,
+1277,WORD,WORD_COUNTERS,HIRAGANA,,九台,きゅうだい,,kyuudai,dziewięć,urządzenia,,
+1278,WORD,WORD_COUNTERS,HIRAGANA,,十台,じゅうだい,,juudai,dziesięć,urządzenia,,1930
 1279,WORD,WORD_COUNTERS,HIRAGANA,,何台,なんだい,,nandai,jak wiele,urządzenia,,
-1280,WORD,WORD_COUNTERS,HIRAGANA,,一枚,いちまい,,ichimai,"jeden
-1",płaskie przedmioty,,
-1281,WORD,WORD_COUNTERS,HIRAGANA,,二枚,にまい,,nimai,"dwa
-2",płaskie przedmioty,,
-1282,WORD,WORD_COUNTERS,HIRAGANA,,三枚,さんまい,,sanmai,"trzy
-3",płaskie przedmioty,,
-1283,WORD,WORD_COUNTERS,HIRAGANA,,四枚,よんまい,,yonmai,"cztery
-4",płaskie przedmioty,,
-1284,WORD,WORD_COUNTERS,HIRAGANA,,五枚,ごまい,,gomai,"pięć
-5",płaskie przedmioty,,
-1285,WORD,WORD_COUNTERS,HIRAGANA,,六枚,ろくまい,,rokumai,"sześć
-6",płaskie przedmioty,,
-1286,WORD,WORD_COUNTERS,HIRAGANA,,七枚,ななまい,,nanamai,"siedem
-7",płaskie przedmioty,,
-1287,WORD,WORD_COUNTERS,HIRAGANA,,八枚,はちまい,,hachimai,"osiem
-8",płaskie przedmioty,,
-1288,WORD,WORD_COUNTERS,HIRAGANA,,九枚,きゅうまい,,kyuumai,"dziewięć
-9",płaskie przedmioty,,
-1289,WORD,WORD_COUNTERS,HIRAGANA,,十枚,じゅうまい,,juumai,"dziesięć
-10",płaskie przedmioty,,
+1280,WORD,WORD_COUNTERS,HIRAGANA,,一枚,いちまい,,ichimai,jeden,płaskie przedmioty,,
+1281,WORD,WORD_COUNTERS,HIRAGANA,,二枚,にまい,,nimai,dwa,płaskie przedmioty,,
+1282,WORD,WORD_COUNTERS,HIRAGANA,,三枚,さんまい,,sanmai,trzy,płaskie przedmioty,,
+1283,WORD,WORD_COUNTERS,HIRAGANA,,四枚,よんまい,,yonmai,cztery,płaskie przedmioty,,
+1284,WORD,WORD_COUNTERS,HIRAGANA,,五枚,ごまい,,gomai,pięć,płaskie przedmioty,,
+1285,WORD,WORD_COUNTERS,HIRAGANA,,六枚,ろくまい,,rokumai,sześć,płaskie przedmioty,,
+1286,WORD,WORD_COUNTERS,HIRAGANA,,七枚,ななまい,,nanamai,siedem,płaskie przedmioty,,
+1287,WORD,WORD_COUNTERS,HIRAGANA,,八枚,はちまい,,hachimai,osiem,płaskie przedmioty,,
+1288,WORD,WORD_COUNTERS,HIRAGANA,,九枚,きゅうまい,,kyuumai,dziewięć,płaskie przedmioty,,
+1289,WORD,WORD_COUNTERS,HIRAGANA,,十枚,じゅうまい,,juumai,dziesięć,płaskie przedmioty,,
 1290,WORD,WORD_COUNTERS,HIRAGANA,,何枚,なんまい,,nanmai,jak wiele,płaskie przedmioty,,
-1291,WORD,WORD_COUNTERS,HIRAGANA,,一つ,ひとつ,,hitotsu,"jeden
-1",klasyfikator ogólny,NO,
-1292,WORD,WORD_COUNTERS,HIRAGANA,,二つ,ふたつ,,futatsu,"dwa
-2",klasyfikator ogólny,NO,
-1293,WORD,WORD_COUNTERS,HIRAGANA,,三つ,みっつ,,mittsu,"trzy
-3",klasyfikator ogólny,NO,
-1294,WORD,WORD_COUNTERS,HIRAGANA,,四つ,よっつ,,yottsu,"cztery
-4",klasyfikator ogólny,NO,
-1295,WORD,WORD_COUNTERS,HIRAGANA,,五つ,いつつ,,itsutsu,"pięć
-5",klasyfikator ogólny,NO,
-1296,WORD,WORD_COUNTERS,HIRAGANA,,六つ,むっつ,,muttsu,"sześć
-6",klasyfikator ogólny,NO,
-1297,WORD,WORD_COUNTERS,HIRAGANA,,七つ,ななつ,,nanatsu,"siedem
-7",klasyfikator ogólny,NO,
-1298,WORD,WORD_COUNTERS,HIRAGANA,,八つ,やっつ,,yattsu,"osiem
-8",klasyfikator ogólny,NO,
-1299,WORD,WORD_COUNTERS,HIRAGANA,,九つ,ここのつ,,kokonotsu,"dziewięć
-9",klasyfikator ogólny,NO,
-1300,WORD,WORD_COUNTERS,HIRAGANA,,十,とお,,too,"dziesięć
-10",klasyfikator ogólny,NO,
+1291,WORD,WORD_COUNTERS,HIRAGANA,,一つ,ひとつ,,hitotsu,jeden,klasyfikator ogólny,NO,
+1292,WORD,WORD_COUNTERS,HIRAGANA,,二つ,ふたつ,,futatsu,dwa,klasyfikator ogólny,NO,
+1293,WORD,WORD_COUNTERS,HIRAGANA,,三つ,みっつ,,mittsu,trzy,klasyfikator ogólny,NO,
+1294,WORD,WORD_COUNTERS,HIRAGANA,,四つ,よっつ,,yottsu,cztery,klasyfikator ogólny,NO,
+1295,WORD,WORD_COUNTERS,HIRAGANA,,五つ,いつつ,,itsutsu,pięć,klasyfikator ogólny,NO,
+1296,WORD,WORD_COUNTERS,HIRAGANA,,六つ,むっつ,,muttsu,sześć,klasyfikator ogólny,NO,
+1297,WORD,WORD_COUNTERS,HIRAGANA,,七つ,ななつ,,nanatsu,siedem,klasyfikator ogólny,NO,
+1298,WORD,WORD_COUNTERS,HIRAGANA,,八つ,やっつ,,yattsu,osiem,klasyfikator ogólny,NO,
+1299,WORD,WORD_COUNTERS,HIRAGANA,,九つ,ここのつ,,kokonotsu,dziewięć,klasyfikator ogólny,NO,
+1300,WORD,WORD_COUNTERS,HIRAGANA,,十,とお,,too,dziesięć,klasyfikator ogólny,NO,
 1301,WORD,WORD_NOUN,HIRAGANA,,悩み,なやみ,,nayami,zmartwienie,,,
 1302,WORD,WORD_NOUN,KATAKANA,,-,アドバイス,,adobaisu,rada,,,
 1303,WORD,UNKNOWN,HIRAGANA,,年上,としうえ,,toshi ue,"starszy wiekiem
@@ -1806,86 +1622,50 @@ gigantyczny",,,
 1435,WORD,WORD_NOUN,HIRAGANA,に,注意,ちゅうい,ni,chuui,"uwaga o
 ostrzeżenie przed",,,
 1436,WORD,WORD_NOUN,KATAKANA,,-,ホワイトボード,,howaito boodo,tablica,biała,,
-1437,KANJI,WORD_TIME,HIRAGANA,,一時,いちじ,,ichiji,"pierwsza
-1",godzina,NO,
+1437,KANJI,WORD_TIME,HIRAGANA,,一時,いちじ,,ichiji,pierwsza godzina,,NO,
 1438,KANJI,UNKNOWN,HIRAGANA,,一年生,いちねんせい,,ichinensei,student pierwszego roku,,,
-1439,KANJI,WORD_TIME,HIRAGANA,,一分,いっぷん,,ippun,"jedna
-1",minuta,NO,
-1440,KANJI,WORD_NUMBER,HIRAGANA,,一つ,ひとつ,,hitotsu,"jeden
-1",klasyfikator ogólny,NO,
-1441,KANJI,WORD_TIME,HIRAGANA,,二時,にじ,,niji,"druga
-2",godzina,NO,
+1439,KANJI,WORD_TIME,HIRAGANA,,一分,いっぷん,,ippun,jedna minuta,,NO,
+1440,KANJI,WORD_NUMBER,HIRAGANA,,一つ,ひとつ,,hitotsu,jeden,klasyfikator ogólny,NO,
+1441,KANJI,WORD_TIME,HIRAGANA,,二時,にじ,,niji,druga godzina,,NO,
 1442,KANJI,UNKNOWN,HIRAGANA,,二年生,にねんせい,,ninensei,student drugiego roku,,,
-1443,KANJI,WORD_NUMBER,HIRAGANA,,二つ,ふたつ,,futatsu,"dwa
-2",klasyfikator ogólny,NO,
+1443,KANJI,WORD_NUMBER,HIRAGANA,,二つ,ふたつ,,futatsu,dwa,klasyfikator ogólny,NO,
 1444,KANJI,UNKNOWN,HIRAGANA,,二つ日間,ふつかかん,,futsukakan,dwa dni,,,
-1445,KANJI,WORD_TIME,HIRAGANA,,三時,さんじ,,sanji,"trzecia
-3",godzina,NO,
+1445,KANJI,WORD_TIME,HIRAGANA,,三時,さんじ,,sanji,trzecia godzina,,NO,
 1446,KANJI,UNKNOWN,HIRAGANA,,三年生,さんねんせい,,sannensei,student trzeciego roku,,,
-1447,KANJI,WORD_NUMBER,HIRAGANA,,三つ,みっつ,,mittsu,"trzy
-3",klasyfikator ogólny,NO,
-1448,KANJI,WORD_TIME,HIRAGANA,,四時,よじ,,yoji,"czwarta
-4",godzina,NO,
+1447,KANJI,WORD_NUMBER,HIRAGANA,,三つ,みっつ,,mittsu,trzy,klasyfikator ogólny,NO,
+1448,KANJI,WORD_TIME,HIRAGANA,,四時,よじ,,yoji,czwarta godzina,,NO,
 1449,KANJI,UNKNOWN,HIRAGANA,,四年生,よねんせい,,yonensei,student czwartego roku,,,
-1450,KANJI,WORD_NUMBER,HIRAGANA,,四つ,よっつ,,yottsu,"cztery
-4",klasyfikator ogólny,NO,
+1450,KANJI,WORD_NUMBER,HIRAGANA,,四つ,よっつ,,yottsu,cztery,klasyfikator ogólny,NO,
 1451,KANJI,WORD_MONTH,HIRAGANA,,四月,しがつ,,shigatsu,kwiecień,,NO,
-1452,KANJI,WORD_TIME,HIRAGANA,,五時,ごじ,,goji,"piąta
-5",godzina,NO,
-1453,KANJI,WORD_NUMBER,HIRAGANA,,五つ,いつつ,,itsutsu,"pięć
-5",klasyfikator ogólny,NO,
-1454,KANJI,WORD_TIME,HIRAGANA,,六時,ろくじ,,rokuji,"szósta
-6",godzina,NO,
-1455,KANJI,WORD_NUMBER,HIRAGANA,,六百,ろっぴゃく,,roppyaku,"sześćset
-600",,NO,
-1456,KANJI,WORD_TIME,HIRAGANA,,六分,ろっぷん,,roppun,"sześć
-6",minuta,NO,
-1457,KANJI,WORD_NUMBER,HIRAGANA,,六つ,むっつ,,muttsu,"sześć
-6",klasyfikator ogólny,NO,
-1458,KANJI,WORD_TIME,HIRAGANA,,七時,しちじ,,shichiji,"siódma
-7",godzina,NO,
-1459,KANJI,WORD_NUMBER,HIRAGANA,,七つ,ななつ,,nanatsu,"siedem
-7",klasyfikator ogólny,NO,
-1460,KANJI,WORD_TIME,HIRAGANA,,八時,はちじ,,hachiji,"ósma
-8",godzina,NO,
-1461,KANJI,WORD_NUMBER,HIRAGANA,,八百,はっぴゃく,,happyaku,"osiemset
-800",,NO,
-1462,KANJI,WORD_AGE,HIRAGANA,,八歳,はっさい,,hassai,"osiem lat
-8",wiek,NO,
-1463,KANJI,WORD_NUMBER,HIRAGANA,,八つ,やっつ,,yattsu,"osiem
-8",klasyfikator ogólny,NO,
-1464,KANJI,WORD_TIME,HIRAGANA,,九時,くじ,,kuji,"dziewiąta
-9",godzina,NO,
-1465,KANJI,WORD_AGE,HIRAGANA,,九歳,きゅうさい,,kyuusai,"dziewięć lat
-9",wiek,NO,
-1466,KANJI,WORD_NUMBER,HIRAGANA,,九つ,ここのつ,,kokonotsu,"dziewięć
-9",klasyfikator ogólny,NO,789
-1467,KANJI,WORD_TIME,HIRAGANA,,十時,じゅうじ,,juuji,"dziesiąta
-10",godzina,NO,
-1468,KANJI,WORD_AGE,HIRAGANA,,十歳,じゅっさい,,jussai,"dziesięć lat
-10",wiek,NO,
-1469,KANJI,WORD_NUMBER,HIRAGANA,,十,とお,,too,"dziesięć
-10",klasyfikator ogólny,NO,"11
+1452,KANJI,WORD_TIME,HIRAGANA,,五時,ごじ,,goji,piąta godzina,,NO,
+1453,KANJI,WORD_NUMBER,HIRAGANA,,五つ,いつつ,,itsutsu,pięć,klasyfikator ogólny,NO,
+1454,KANJI,WORD_TIME,HIRAGANA,,六時,ろくじ,,rokuji,szósta godzina,,NO,
+1455,KANJI,WORD_NUMBER,HIRAGANA,,六百,ろっぴゃく,,roppyaku,sześćset,,NO,
+1456,KANJI,WORD_TIME,HIRAGANA,,六分,ろっぷん,,roppun,sześć minut,,NO,
+1457,KANJI,WORD_NUMBER,HIRAGANA,,六つ,むっつ,,muttsu,sześć,klasyfikator ogólny,NO,
+1458,KANJI,WORD_TIME,HIRAGANA,,七時,しちじ,,shichiji,siódma godzina,,NO,
+1459,KANJI,WORD_NUMBER,HIRAGANA,,七つ,ななつ,,nanatsu,siedem,klasyfikator ogólny,NO,
+1460,KANJI,WORD_TIME,HIRAGANA,,八時,はちじ,,hachiji,ósma godzina,,NO,
+1461,KANJI,WORD_NUMBER,HIRAGANA,,八百,はっぴゃく,,happyaku,osiemset,,NO,
+1462,KANJI,WORD_AGE,HIRAGANA,,八歳,はっさい,,hassai,osiem lat,wiek,NO,
+1463,KANJI,WORD_NUMBER,HIRAGANA,,八つ,やっつ,,yattsu,osiem,klasyfikator ogólny,NO,
+1464,KANJI,WORD_TIME,HIRAGANA,,九時,くじ,,kuji,dziewiąta godzina,,NO,
+1465,KANJI,WORD_AGE,HIRAGANA,,九歳,きゅうさい,,kyuusai,dziewięć lat,wiek,NO,
+1466,KANJI,WORD_NUMBER,HIRAGANA,,九つ,ここのつ,,kokonotsu,dziewięć,klasyfikator ogólny,NO,789
+1467,KANJI,WORD_TIME,HIRAGANA,,十時,じゅうじ,,juuji,dziesiąta godzina,,NO,
+1468,KANJI,WORD_AGE,HIRAGANA,,十歳,じゅっさい,,jussai,dziesięć lat,wiek,NO,
+1469,KANJI,WORD_NUMBER,HIRAGANA,,十,とお,,too,dziesięć,klasyfikator ogólny,NO,"11
 790"
-1470,KANJI,WORD_NUMBER,HIRAGANA,,三百,さんびゃく,,sanbyaku,"trzysta
-300",,NO,
-1471,KANJI,WORD_NUMBER,HIRAGANA,,六百,ろっぴゃく,,roppyaku,"sześćset
-600",,NO,
-1472,KANJI,WORD_NUMBER,HIRAGANA,,八百,はっぴゃく,,happyaku,"osiemset
-800",,NO,
-1473,KANJI,WORD_NUMBER,HIRAGANA,,三千,さんぜん,,sanzen,"trzy tysiące
-3000",,NO,
-1474,KANJI,WORD_NUMBER,HIRAGANA,,八千,はっせん,,hassen,"osiem tysięcy
-8000",,NO,
-1475,KANJI,WORD_NUMBER,HIRAGANA,,一万,いちまん,,ichiman,"dziesięć tysięcy
-10000",,NO,
-1476,KANJI,WORD_NUMBER,HIRAGANA,,十万,じゅうまん,,juuman,"sto tysięcy
-100 000",,,
-1477,KANJI,WORD_NUMBER,HIRAGANA,,百万,ひゃくまん,,hyakuman,"milion
-1 000 000",,,
-1478,KANJI,WORD_NUMBER,HIRAGANA,,百円,ひゃくえん,,hyakuen,"sto jenów
-100",,,
-1479,KANJI,WORD_TIME,HIRAGANA,,一時,いちじ,,ichiji,pierwsza,godzina,NO,
+1470,KANJI,WORD_NUMBER,HIRAGANA,,三百,さんびゃく,,sanbyaku,trzysta,,NO,
+1471,KANJI,WORD_NUMBER,HIRAGANA,,六百,ろっぴゃく,,roppyaku,sześćset,,NO,
+1472,KANJI,WORD_NUMBER,HIRAGANA,,八百,はっぴゃく,,happyaku,osiemset,,NO,
+1473,KANJI,WORD_NUMBER,HIRAGANA,,三千,さんぜん,,sanzen,trzy tysiące,,NO,
+1474,KANJI,WORD_NUMBER,HIRAGANA,,八千,はっせん,,hassen,osiem tysięcy,,NO,
+1475,KANJI,WORD_NUMBER,HIRAGANA,,一万,いちまん,,ichiman,dziesięć tysięcy,,NO,
+1476,KANJI,WORD_NUMBER,HIRAGANA,,十万,じゅうまん,,juuman,sto tysięcy,,,
+1477,KANJI,WORD_NUMBER,HIRAGANA,,百万,ひゃくまん,,hyakuman,milion,,,
+1478,KANJI,WORD_NUMBER,HIRAGANA,,百円,ひゃくえん,,hyakuen,sto jenów,,,
+1479,KANJI,WORD_TIME,HIRAGANA,,一時,いちじ,,ichiji,pierwsza godzina,,NO,
 1480,KANJI,WORD_EXPRESSION,HIRAGANA,,子供の時,こどものとき,,kodomo no toki,w czasach dzieciństwa,,,
 1481,KANJI,WORD_ADVERB,HIRAGANA,,時々,ときどき,,tokidoki,czasami,,NO,
 1482,KANJI,WORD_NOUN,HIRAGANA,,時計,とけい,,tokei,zegarek,,NO,
@@ -1894,7 +1674,7 @@ ostrzeżenie przed",,,
 1485,KANJI,UNKNOWN,HIRAGANA,,毎日,まいにち,,mainichi,każdego dnia,,NO,
 1486,KANJI,WORD_NOUN,HIRAGANA,,母の日,ははのひ,,haha no hi,dzień matki,druga niedziela maja,,
 1487,KANJI,WORD_NOUN,HIRAGANA,,日記,にっき,,nikki,pamiętnik,,NO,
-1488,KANJI,WORD_DAY_NUMBER,HIRAGANA,,三日,みっか,,mikka,3,dzień miesiąca,NO,
+1488,KANJI,WORD_DAY_NUMBER,HIRAGANA,,三日,みっか,,mikka,trzeci,dzień miesiąca,NO,
 1489,KANJI,WORD_NOUN,HIRAGANA,,本,ほん,,hon,książka,,NO,
 1490,KANJI,WORD_NOUN,HIRAGANA,,日本,にほん,,nihon,Japonia,,NO,
 1491,KANJI,WORD_NOUN,HIRAGANA,,日本語,にほんご,,nihongo,język japoński,,,
@@ -1902,8 +1682,7 @@ ostrzeżenie przed",,,
 1493,KANJI,WORD_NOUN,HIRAGANA,,日本人,にほんじん,,nihonjin,Japończyk,,,
 1494,KANJI,UNKNOWN,HIRAGANA,,一人で,ひとりで,,hitoride,sam,,NO,
 1495,KANJI,UNKNOWN,HIRAGANA,,この人,このひと,,kono hito,ten człowiek,,,
-1496,KANJI,WORD_PEOPLE_NUMBER,HIRAGANA,,三人,さんにん,,sannin,"troje ludzi
-3",liczenie ludzi,NO,
+1496,KANJI,WORD_PEOPLE_NUMBER,HIRAGANA,,三人,さんにん,,sannin,troje ludzi,liczenie ludzi,NO,
 1497,KANJI,WORD_DAY_WEEK,HIRAGANA,,月曜日,げつようび,,getsuyoubi,poniedziałek,księżyc,NO,
 1498,KANJI,WORD_MONTH,HIRAGANA,,一月,いちがつ,,ichigatsu,styczeń,,NO,
 1499,KANJI,WORD_NOUN,HIRAGANA,,月,つき,,tsuki,księżyc,,,
@@ -1995,10 +1774,8 @@ prąd
 1581,KANJI,UNKNOWN,HIRAGANA,,左右,さゆう,,sayuu,prawo i lewo,,,
 1582,KANJI,WORD_LOCATION,HIRAGANA,,左,ひだり,,hidari,lewo,kierunek,NO,
 1583,KANJI,UNKNOWN,HIRAGANA,,左折,させつ,,sasetsu,skręcić w lewo,,,
-1584,KANJI,WORD_TIME,HIRAGANA,,五分,ごふん,,gofun,"pięć
-5",minuta,NO,
-1585,KANJI,WORD_TIME,HIRAGANA,,十分,じゅっぷん,,juppun,"dziesięć
-10",minuta,NO,
+1584,KANJI,WORD_TIME,HIRAGANA,,五分,ごふん,,gofun,pięć minut,,NO,
+1585,KANJI,WORD_TIME,HIRAGANA,,十分,じゅっぷん,,juppun,dziesięć minut,,NO,
 1586,KANJI,UNKNOWN,HIRAGANA,,自分,じぶん,,jibun,"ja sam
 siebie",,,
 1587,KANJI,UNKNOWN,HIRAGANA,,半分,はんぶん,,hanbun,połowa,,NO,
@@ -2877,7 +2654,7 @@ ginekolog",,,
 2322,WORD,WORD_NOUN,HIRAGANA,,整形外科,せいけいげか,,seikeigeka,zabieg ortopedyczny,,,
 2323,WORD,WORD_NOUN,HIRAGANA,,眼科,がんか,,ganka,okulistyka,,,
 2324,WORD,WORD_NOUN,HIRAGANA,,眼科医,がんかい,,gankai,okulista,,,
-2325,WORD,WORD_NOUN,HIRAGANA,,歯科,しか,,shika,stomatologia,,,
+2325,WORD,WORD_NOUN,HIRAGANA,,歯科,しか,,shika,stomatologia,,,2498
 2326,WORD,WORD_NOUN,HIRAGANA,,歯科医,しかい,,shikai,dentysta,,,
 2327,WORD,WORD_NOUN,HIRAGANA,,耳鼻科,じびか,,jibika,otolaryngologia,,,
 2328,WORD,WORD_NOUN,HIRAGANA,,抗生物質,こうせいぶっしつ,,kouseibusshitsu,antybiotyk,,,
@@ -3108,3 +2885,14 @@ nowy","~ rzeczownik, coś pierwszego",,
 2492,WORD,WORD_NOUN,HIRAGANA,,初恋,はつこい,,hatsu koi,pierwsza miłość,,,
 2493,WORD,WORD_NOUN,HIRAGANA,,読み物,よみもの,,yomimono,"lektura
 materiał do czytania",,,
+2494,WORD,WORD_NOUN,KATAKANA,,-,ポルシェ,,porushe,Porsche,,,
+2495,WORD,WORD_VERB_U,HIRAGANA,,落とす,おとす,,otosu,"upuszczać
+spuszczać
+zgubić
+stracić
+zniżać",,,
+2496,WORD,WORD_EXPRESSION,HIRAGANA,,落とされました,おとされました,,otosaremashita,została zrzucona,,,
+2497,WORD,WORD_EXPRESSION,HIRAGANA,,平和記念資料館,へいわきねんしりょうかん,,heiwakinenshiryoukan,Muzeum Pamięci i Pokoju,,,
+2498,WORD,WORD_NOUN,HIRAGANA,,鹿,しか,,shika,jeleń,,,2325
+2499,WORD,WORD_NOUN,HIRAGANA,,鯨,くじら,,kujira,wieloryb,,,
+2500,WORD,WORD_NOUN,HIRAGANA,,トロッコ列車,トロッコれっしゃ,,torokko ressha,mały pociąg,zwykle dla turystów,,
