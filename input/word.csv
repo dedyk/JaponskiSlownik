@@ -219,7 +219,7 @@ wysoki","pieniądze, wzrost",,
 198,WORD,WORD_NOUN,HIRAGANA,,顔,かお,,kao,twarz,,,
 199,WORD,WORD_NOUN,HIRAGANA,,愛,あい,,ai,miłość,,,
 200,WORD,WORD_VERB_U,HIRAGANA,を,聞く,きく,o,kiku,słuchać,,,450
-201,WORD,WORD_NOUN,HIRAGANA,お,酒,さけ,o,sake,"sake
+201,WORD,WORD_NOUN,HIRAGANA,,お酒,おさけ,,osake,"sake
 alkohol",również forma sake,NO,
 202,WORD,WORD_NOUN,HIRAGANA,,牛,うし,,ushi,krowa,,,
 203,WORD,WORD_NOUN,HIRAGANA,,携帯電話,けいたいでんわ,,keitai denwa,telefon komórkowy,,,
@@ -244,9 +244,9 @@ dzień",,NO,
 220,WORD,WORD_NOUN,KATAKANA,,-,テレビ,,terebi,telewizja,,,
 221,WORD,WORD_NOUN,KATAKANA,,-,ビデオ,,bideo,video,,NO,
 222,WORD,WORD_NOUN,HIRAGANA,,朝御飯,あさごはん,,asagohan,śniadanie,,,1894
-223,WORD,WORD_NOUN,HIRAGANA,お,酒,さけ,o,sake,"sake
-alkohol",również forma sake,,
-224,WORD,WORD_NOUN,HIRAGANA,お,茶,ちゃ,o,cha,zielona herbata,,,
+223,WORD,WORD_NOUN,HIRAGANA,,お酒,おさけ,,osake,"sake
+alkohol",,,
+224,WORD,WORD_NOUN,HIRAGANA,,お茶,おちゃ,,ocha,zielona herbata,,,
 225,WORD,WORD_NOUN,KATAKANA,,-,コーヒー,,koohii,kawa,,,
 226,WORD,WORD_NOUN,HIRAGANA,,晩御飯,ばんごはん,,bangohan,kolacja,,,
 227,WORD,WORD_NOUN,KATAKANA,,-,ハンバーガー,,hanbaagaa,hamburger,,,
@@ -303,8 +303,8 @@ wiele",,,1216
 273,WORD,WORD_NOUN,HIRAGANA,,週,しゅう,,shuu,tydzień,,,
 274,WORD,UNKNOWN,HIRAGANA,,末,まつ,,matsu,koniec,,,384
 275,WORD,UNKNOWN,HIRAGANA,,毎,まい,,mai,każdy,,,1222
-276,WORD,WORD_NOUN,HIRAGANA,お,箸,はし,o,hashi,pałeczki,,,2296
-277,WORD,WORD_NOUN,HIRAGANA,お,風呂,ふろ,o,furo,"wanna
+276,WORD,WORD_NOUN,HIRAGANA,,お箸,おはし,,ohashi,pałeczki,,,2296
+277,WORD,WORD_NOUN,HIRAGANA,,お風呂,おふろ,,ofuro,"wanna
 kąpiel",,,
 278,WORD,WORD_NOUN,HIRAGANA,,店,みせ,,mise,sklep,,,
 279,WORD,WORD_NOUN,HIRAGANA,,-,おしょうさん,,oshousan,mnich,buddyjski,,
@@ -316,7 +316,7 @@ młody mnich",,,
 284,WORD,WORD_NOUN,KATAKANA,,-,クラス,,kurasu,klasa,,,
 285,WORD,WORD_PRONOUN,HIRAGANA,,-,あなた,,anata,ty,,,
 286,WORD,WORD_NOUN,HIRAGANA,,犬,いぬ,,inu,pies,,,
-287,WORD,WORD_NOUN,HIRAGANA,お,土産,みやげ,o,miyage,pamiątka,,,
+287,WORD,WORD_NOUN,HIRAGANA,,お土産,おみやげ,,omiyage,pamiątka,,,
 288,WORD,WORD_NOUN,HIRAGANA,,子供,こども,,kodomo,dziecko,,NO,
 289,WORD,WORD_NOUN,HIRAGANA,,御飯,ごはん,,gohan,"jedzenie
 gotowany ryż",,,1893
@@ -332,7 +332,7 @@ zdjęcie",,NO,
 296,WORD,WORD_NOUN,KATAKANA,,-,パン,,pan,chleb,,,
 297,WORD,WORD_NOUN,HIRAGANA,,人,ひと,,hito,osoba,,,"79
 651"
-298,WORD,WORD_NOUN,HIRAGANA,お,寺,てら,o,tera,świątynia,buddyjska,,
+298,WORD,WORD_NOUN,HIRAGANA,,お寺,おてら,,otera,świątynia,buddyjska,,
 299,WORD,WORD_NOUN,HIRAGANA,,神社,じんじゃ,,jinja,świątynia,shintoistyczna,,
 300,WORD,WORD_NOUN,HIRAGANA,,公園,こうえん,,kouen,park,publiczny,,
 301,WORD,WORD_NOUN,KATAKANA,,-,スーパー,,suupaa,supermarket,,,
@@ -448,7 +448,7 @@ istnieć","miejsce ni, do rzeczy żywych",,704
 403,WORD,WORD_LOCATION,HIRAGANA,,-,そば,,soba,w pobliżu,,,1327
 404,WORD,WORD_LOCATION,HIRAGANA,,隣,となり,,tonari,obok,,,
 405,WORD,WORD_LOCATION,HIRAGANA,,間,あいだ,,aida,pomiędzy,,,
-406,WORD,WORD_NOUN,HIRAGANA,お,隣さん,となりさん,o,tonarisan,sąsiad,mniej oficjalnie,,
+406,WORD,WORD_NOUN,HIRAGANA,,お隣さん,おとなりさん,,otonarisan,sąsiad,mniej oficjalnie,,
 407,WORD,WORD_NOUN,HIRAGANA,,海,うみ,,umi,morze,,,
 408,WORD,WORD_NOUN,HIRAGANA,,切手,きって,,kitte,znaczek pocztowy,,,
 409,WORD,WORD_NOUN,HIRAGANA,,切符,きっぷ,,kippu,bilet,,,
@@ -531,10 +531,10 @@ choroba",,,
 474,WORD,WORD_NOUN,HIRAGANA,,船便,ふなびん,,funabin,poczta lotnicza,,,
 475,WORD,UNKNOWN,HIRAGANA,,速達,そくたつ,,sokutatsu,specjalna dostawa,,,
 476,WORD,WORD_NOUN,HIRAGANA,,電池,でんち,,denchi,bateria,,,
-477,WORD,WORD_NOUN,HIRAGANA,お,金,かね,o,kane,pieniądze,,,
+477,WORD,WORD_NOUN,HIRAGANA,,お金,おかね,,okane,pieniądze,,,
 478,WORD,WORD_NOUN,HIRAGANA,,-,おばあさん,,obaasan,"babcia
 starsza kobieta",,,584
-479,WORD,WORD_NOUN,HIRAGANA,お,風呂,ふろ,o,furo,"wanna
+479,WORD,WORD_NOUN,HIRAGANA,,お風呂,おふろ,,ofuro,"wanna
 kąpiel",,NO,
 480,WORD,WORD_NOUN,HIRAGANA,,漢字,かんじ,,kanji,kanji,,,2355
 481,WORD,WORD_NOUN,HIRAGANA,,教科書,きょうかしょ,,kyoukasho,podręcznik,,,
@@ -556,7 +556,7 @@ prąd
 495,WORD,WORD_VERB_U,HIRAGANA,,遊ぶ,あそぶ,,asobu,"grać
 miło spędzać czas",,,
 496,WORD,WORD_VERB_U,HIRAGANA,,急ぐ,いそぐ,,isogu,spieszyć się,,,
-497,WORD,WORD_VERB_U,HIRAGANA,お,風呂に入る,ふろにはいる,o,furo ni hairu,brać kąpiel,,,
+497,WORD,WORD_VERB_U,HIRAGANA,,お風呂に入る,おふろにはいる,,ofuro ni hairu,brać kąpiel,,,
 498,WORD,WORD_VERB_U,HIRAGANA,を,返す,かえす,o,kaesu,zwrócić,osoba ni rzecz,,
 499,WORD,WORD_VERB_U,HIRAGANA,を,消す,けす,o,kesu,"wyłączyć
 skasować",,,
@@ -650,7 +650,7 @@ ręka",,,
 570,WORD,WORD_NOUN,HIRAGANA,,顔,かお,,kao,twarz,,NO,
 571,WORD,WORD_NOUN,HIRAGANA,,肩,かた,,kata,ramię,,,
 572,WORD,WORD_NOUN,HIRAGANA,,胸,むね,,mune,klatka piersiowa,,,
-573,WORD,WORD_NOUN,HIRAGANA,,-,おなか,,onaka,brzuch,,,
+573,WORD,WORD_NOUN,HIRAGANA,,お腹,おなか,,onaka,brzuch,,,
 574,WORD,WORD_NOUN,HIRAGANA,,足,あし,,ashi,"noga
 stopa",,,
 575,WORD,WORD_NOUN,HIRAGANA,,お父さん,おとうさん,,otousan,ojciec,spoza swojej rodziny lub własna rodzina - nieformalnie,NO,
@@ -741,7 +741,7 @@ nosić","ubranie, powyżej pasa",,707
 655,WORD,WORD_VERB_U,HIRAGANA,,言う,いう,,iu,mówić,,,
 656,WORD,WORD_NOUN,HIRAGANA,,箸置,はしおき,,hashioki,miejsce na pałeczki,,,
 657,WORD,WORD_VERB_U,HIRAGANA,,置く,おく,,oku,kłaść,,,
-658,WORD,WORD_NOUN,HIRAGANA,お,皿,さら,o,sara,talerz,,,
+658,WORD,WORD_NOUN,HIRAGANA,,お皿,おさら,,osara,talerz,,,
 659,WORD,WORD_VERB_U,HIRAGANA,を,渡す,わたす,o,watasu,dawać,,,
 660,WORD,WORD_NOUN,HIRAGANA,,-,ふろさと,,furosato,miasto rodzinne,,,
 661,WORD,WORD_ADJECTIVE_I,HIRAGANA,,白い,しろい,,shiroi,biały,,,
@@ -751,7 +751,7 @@ nosić","ubranie, powyżej pasa",,707
 665,WORD,WORD_ADJECTIVE_I,HIRAGANA,,黄色い,きいろい,,kiiroi,żółty,,,
 666,WORD,WORD_NOUN,HIRAGANA,,色,いろ,,iro,kolor,,,
 667,WORD,UNKNOWN,HIRAGANA,,ピンク色の,ピンクいろの,,pinku iro no,różowy,,,
-668,WORD,UNKNOWN,HIRAGANA,お,茶色の,ちゃいろの,o,cha iro no,kolor herbaciany,,,
+668,WORD,UNKNOWN,HIRAGANA,,お茶色の,おちゃいろの,,ocha iro no,kolor herbaciany,,,
 669,WORD,WORD_ADJECTIVE_NA,HIRAGANA,,緑,みどり,,midori,zielony,,,
 670,WORD,WORD_NOUN,KATAKANA,,-,スカート,,sukaato,spódnica,,,
 671,WORD,WORD_NOUN,KATAKANA,,-,ズボン,,zubon,spodnie,,,
@@ -776,7 +776,7 @@ nosić","ubranie, powyżej pasa",,707
 690,WORD,UNKNOWN,HIRAGANA,,何か,なにか,,nanika,coś,nanika [partykuła],,
 691,WORD,WORD_NOUN,KATAKANA,,-,パーティー,,paatii,party,,,
 692,WORD,WORD_NOUN,KATAKANA,,-,バーベキュー,,baabekyuu,grill,,,
-693,WORD,WORD_NOUN,HIRAGANA,お,箸,はし,o,hashi,pałeczki,,NO,
+693,WORD,WORD_NOUN,HIRAGANA,,お箸,おはし,,ohashi,pałeczki,,NO,
 694,WORD,WORD_NOUN,HIRAGANA,,冬,ふゆ,,fuyu,zima,,,
 695,WORD,UNKNOWN,KATAKANA,,-,ホームステイ,,hoomusutei,"pozostać w domu
 żyć ze swoją lokalną rodziną",,,
@@ -826,7 +826,7 @@ odnośnie ...",czegoś,,
 736,WORD,UNKNOWN,HIRAGANA,,最後に,さいごに,,saigoni,ostatni,,,
 737,WORD,WORD_NOUN,HIRAGANA,,いい子,いいこ,,iiko,dobre dziecko,,,
 738,WORD,WORD_NOUN,HIRAGANA,,色,いろ,,iro,kolor,,NO,
-739,WORD,WORD_NOUN,HIRAGANA,お,弁当,べんとう,o,bentou,pudełko na jedzenie,,,
+739,WORD,WORD_NOUN,HIRAGANA,,お弁当,おべんとう,,obentou,pudełko na jedzenie,,,
 740,WORD,WORD_NOUN,HIRAGANA,,温泉,おんせん,,onsen,gorące źródło,,,
 741,WORD,WORD_NOUN,HIRAGANA,,-,かぶき,,kabuki,Kabuki,tradycyjny Japoński teatr,,
 742,WORD,WORD_NOUN,KATAKANA,,-,ギター,,gitaa,gitara,,,
@@ -904,7 +904,7 @@ no i",,NO,
 810,WORD,WORD_NOUN,HIRAGANA,,秋,あき,,aki,jesień,,,
 811,WORD,WORD_NOUN,HIRAGANA,,医者,いしゃ,,isha,lekarz,,NO,
 812,WORD,WORD_NOUN,HIRAGANA,,駅,えき,,eki,stacja,,,
-813,WORD,WORD_NOUN,HIRAGANA,お,金持ち,かねもち,o,kanemochi,bogaty człowiek,,,
+813,WORD,WORD_NOUN,HIRAGANA,,お金持ち,おかねもち,,okanemochi,bogaty człowiek,,,
 814,WORD,WORD_NOUN,HIRAGANA,,顔,かお,,kao,twarz,,NO,
 815,WORD,WORD_NOUN,HIRAGANA,,季節,きせつ,,kisetsu,sezon,,,
 816,WORD,WORD_NOUN,KATAKANA,,-,クレジットカード,,kurejitto kaado,karta kredytowa,,,
@@ -962,7 +962,7 @@ szybko",zrobić coś,,
 861,WORD,UNKNOWN,HIRAGANA,,-,つもりです,,tsumori desu,mam zamiar,+ czasownik w formie prostej,,
 862,WORD,WORD_VERB_U,HIRAGANA,,歩いて行く,あるいていく,,aruite iku,iść na piechotę,,,
 863,WORD,WORD_NOUN,HIRAGANA,,交番,こうばん,,kouban,posterunek policji,,,
-864,WORD,WORD_NOUN,HIRAGANA,お,巡り,まわり,o,mawari,policjant,patrolujący ulice,,
+864,WORD,WORD_NOUN,HIRAGANA,,お巡り,おまわり,,omawari,policjant,patrolujący ulice,,
 865,WORD,WORD_VERB_U,HIRAGANA,を,上がる,あがる,o,agaru,iść pod górę,,,
 866,WORD,WORD_NOUN,HIRAGANA,,階段,かいだん,,kaidan,schody,,,1048
 867,WORD,WORD_VERB_U,HIRAGANA,を,下りる,おりる,o,oriru,schodzić,,,512
@@ -1009,7 +1009,7 @@ zajęcia",,,
 904,WORD,WORD_NOUN,HIRAGANA,,夢,ゆめ,,yume,marzenie,,,
 905,WORD,WORD_NOUN,KATAKANA,,-,ルームメート,,ruumumeeto,współlokator,,,
 906,WORD,WORD_VERB_U,HIRAGANA,,-,うそをつく,,uso o tsuku,kłamać,,,
-907,WORD,WORD_VERB_U,HIRAGANA,,-,おなかがすく,,onaka ga suku,być głodnym,,,
+907,WORD,WORD_VERB_U,HIRAGANA,,お腹がすく,おなかがすく,,onaka ga suku,być głodnym,,,
 908,WORD,WORD_VERB_U,HIRAGANA,,飼う,かう,,kau,hodować,zwierzaka,,381
 909,WORD,WORD_VERB_U,KATAKANA,,-,サボる,,saboru,opuszczać zajęcia,,,
 910,WORD,WORD_VERB_U,HIRAGANA,,取る,とる,,toru,"uczestniczyć w zajęciach
@@ -1085,7 +1085,7 @@ zgadza się",,,
 972,WORD,WORD_NOUN,HIRAGANA,,足,あし,,ashi,"noga
 stopa",,NO,
 973,WORD,UNKNOWN,HIRAGANA,,意味,いみ,,imi,znaczenie,,NO,
-974,WORD,WORD_NOUN,HIRAGANA,お,腹,なか,o,naka,brzuch,,,400
+974,WORD,WORD_NOUN,HIRAGANA,,お腹,おなか,,onaka,brzuch,,NO,
 975,WORD,WORD_NOUN,HIRAGANA,,風邪,かぜ,,kaze,przeziębienie,,,1044
 976,WORD,WORD_NOUN,HIRAGANA,,彼女,かのじょ,,kanojo,"ona
 narzeczona",,NO,
@@ -1163,7 +1163,7 @@ narzeczona",,NO,
 1036,WORD,WORD_NOUN,HIRAGANA,,-,つり,,tsuri,wędkarstwo,,,
 1037,WORD,WORD_NOUN,HIRAGANA,,神社,じんじゃ,,jinja,świątynia,shintoistyczna,NO,
 1038,WORD,WORD_NOUN,HIRAGANA,,祭り,まつり,,matsuri,festiwal,,,
-1039,WORD,UNKNOWN,HIRAGANA,お,返事,へんじ,o,henji,odpowiedź,,,
+1039,WORD,UNKNOWN,HIRAGANA,,お返事,おへんじ,,ohenji,odpowiedź,,,
 1040,WORD,UNKNOWN,HIRAGANA,,方,ほう,,hou,kierunek,,,
 1041,WORD,WORD_VERB_RU,HIRAGANA,,晴れる,はれる,,hareru,słoneczna pogoda,czasownik,,
 1042,WORD,WORD_NOUN,HIRAGANA,,雲,くも,,kumo,chmura,,,
@@ -1329,7 +1329,7 @@ kobieta w średnim wieku",,NO,
 1177,WORD,WORD_NOUN,HIRAGANA,,ご主人,ごしゅじん,,goshujin,mąż,spoza swojej rodziny,NO,
 1178,WORD,WORD_NOUN,KATAKANA,,-,コップ,,koppu,"kubek
 szklanka",,,
-1179,WORD,WORD_NOUN,HIRAGANA,お,皿,さら,o,sara,talerz,,NO,
+1179,WORD,WORD_NOUN,HIRAGANA,,お皿,おさら,,osara,talerz,,NO,
 1180,WORD,UNKNOWN,HIRAGANA,,時間,じかん,,jikan,czas,,NO,
 1181,WORD,WORD_NOUN,KATAKANA,,-,チョコレート,,chokoreeto,czekolada,,,
 1182,WORD,WORD_NOUN,KATAKANA,,-,メール,,meeru,e-mail,,,
@@ -1595,8 +1595,8 @@ podnosić na duchu",,,
 1409,WORD,WORD_EXPRESSION,HIRAGANA,,食べやすい,たべやすい,,tabe yasui,łatwość jedzenia,,,
 1410,WORD,UNKNOWN,HIRAGANA,,本物,ほんもの,,honmono,prawdziwy,,,
 1411,WORD,UNKNOWN,HIRAGANA,,贅沢,ぜいたく,,zeitaku,luksus,,,
-1412,WORD,WORD_VERB_U,HIRAGANA,,-,おなかがすく,,onaka ga suku,być głodnym,,NO,
-1413,WORD,WORD_EXPRESSION,HIRAGANA,,-,おなかがすいた,,onaka ga suita,być głodnym,,,
+1412,WORD,WORD_VERB_U,HIRAGANA,,お腹がすく,おなかがすく,,onaka ga suku,być głodnym,,NO,
+1413,WORD,WORD_EXPRESSION,HIRAGANA,,お腹がすいた,おなかがすいた,,onaka ga suita,być głodnym,,,
 1414,WORD,WORD_VERB_U,HIRAGANA,,腹減る,はらへる,,hara heru,być głodnym,,,
 1415,WORD,WORD_EXPRESSION,HIRAGANA,,腹減った,はらへった,,hara hetta,być głodnym,,,
 1416,WORD,WORD_EXPRESSION,HIRAGANA,,小腹,こばら,,kobara,mały głodek,,,
@@ -1695,7 +1695,7 @@ ostrzeżenie przed",,,
 1504,KANJI,WORD_DAY_WEEK,HIRAGANA,,木曜日,もくようび,,mokuyoubi,czwartek,drzewo,NO,
 1505,KANJI,WORD_NOUN,HIRAGANA,,木,き,,ki,drzewo,,,
 1506,KANJI,WORD_DAY_WEEK,HIRAGANA,,金曜日,きんようび,,kin'youbi,piątek,"pieniądze, złoto",NO,
-1507,KANJI,WORD_NOUN,HIRAGANA,,お金,おかね,,okane,pieniądze,,,
+1507,KANJI,WORD_NOUN,HIRAGANA,,お金,おかね,,okane,pieniądze,,NO,
 1508,KANJI,WORD_DAY_WEEK,HIRAGANA,,土曜日,どようび,,doyoubi,sobota,ziemia,NO,
 1509,KANJI,WORD_NOUN,HIRAGANA,,土,つち,,tsuchi,ziemia,,,
 1510,KANJI,WORD_DAY_WEEK,HIRAGANA,,日曜日,にちようび,,nichiyoubi,niedziela,słońce,NO,
@@ -2247,7 +2247,7 @@ propozycja",,,
 2007,WORD,WORD_NOUN,HIRAGANA,,光,ひかり,,hikari,"światło
 blask",,,
 2008,WORD,WORD_NOUN,HIRAGANA,,馬,うま,,uma,koń,,,
-2009,WORD,WORD_EXPRESSION,HIRAGANA,お,誕生日おめでとうございます,たんじょうびおめでとうございます,o,tanjoubi omedetou gozaimasu,wszystkiego najlepszego,z okazji urodzin,,
+2009,WORD,WORD_EXPRESSION,HIRAGANA,,お誕生日おめでとうございます,おたんじょうびおめでとうございます,,otanjoubi omedetou gozaimasu,wszystkiego najlepszego,z okazji urodzin,,
 2010,WORD,WORD_NOUN,KATAKANA,,-,バレーボール,,bareebooru,siatkówka,,,
 2011,WORD,WORD_NOUN,HIRAGANA,,金魚,きんぎょ,,kingyo,złota rybka,,,
 2012,WORD,UNKNOWN,HIRAGANA,,金魚掬い,きんぎょすくい,,kingyo sukui,tradycyjna japońska gra,polega na złapaniu przy pomocy papierowej tacki złotej rybki,,
@@ -2569,7 +2569,7 @@ operator kamery",,,
 żeń-szeń",,,
 2262,WORD,WORD_NOUN,HIRAGANA,,島,しま,,shima,wyspa,,,
 2263,WORD,UNKNOWN,HIRAGANA,,年下,としした,,toshi shita,młodszy wiekiem,,,
-2264,WORD,WORD_NOUN,HIRAGANA,お,墓,はか,o,haka,"grób
+2264,WORD,WORD_NOUN,HIRAGANA,,お墓,おはか,,ohaka,"grób
 grobowiec",,,
 2265,WORD,UNKNOWN,HIRAGANA,,その他,そのた,,sonota,inny,,,
 2266,WORD,WORD_NOUN,KATAKANA,,-,タンポポ,,tanpopo,"mlecz
@@ -2781,7 +2781,7 @@ nalewać",,,
 2412,KANJI,WORD_NOUN,HIRAGANA,,金魚,きんぎょ,,kingyo,złota rybka,,NO,
 2413,KANJI,WORD_NOUN,HIRAGANA,,人魚,にんぎょ,,ningyo,syrena,,,
 2414,WORD,WORD_NOUN,HIRAGANA,,人形,にんぎょう,,ningyou,lalka,,,
-2415,KANJI,WORD_NOUN,HIRAGANA,お,寺,てら,o,tera,świątynia,buddyjska,NO,
+2415,KANJI,WORD_NOUN,HIRAGANA,,お寺,おてら,,otera,świątynia,buddyjska,NO,
 2416,KANJI,WORD_NOUN,HIRAGANA,,東寺,とうじ,,touji,Toji,nazwa świątyni w Kioto,,1968
 2417,KANJI,WORD_ADJECTIVE_I,HIRAGANA,,広い,ひろい,,hiroi,"przestronny
 szeroki

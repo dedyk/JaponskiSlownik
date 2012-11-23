@@ -1,18 +1,15 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import pl.idedyk.japanese.dictionary.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper.KanaWord;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 
 public class Test {
 	
-	public static void main(String[] args) throws JapaneseDictionaryException {
+	public static void main(String[] args) throws Exception {
 		
+		/*
 		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
 		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
 		
@@ -31,5 +28,17 @@ public class Test {
 		KanaWord kanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, "Oosutoraria");
 		
 		System.out.println(KanaHelper.createKanaString(kanaWord));
+		*/
+		
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);
+		
+		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
+			
+			String prefixKana = currentPolishJapaneseEntry.getPrefixKana();
+			
+			if (prefixKana != null && prefixKana.equals("お") == true) {
+				System.out.println(currentPolishJapaneseEntry.getId());
+			}
+		}
 	}
 }
