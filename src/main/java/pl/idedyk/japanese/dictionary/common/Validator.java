@@ -83,7 +83,8 @@ public class Validator {
 					currentRomajiWithPrefix.equals("hatsu kisu") == true ||
 					currentRomajiWithPrefix.equals("torokko ressha") == true ||
 					currentRomajiWithPrefix.equals("genbaku doomu") == true ||
-					currentRomajiWithPrefix.equals("daibingu suru") == true) {
+					currentRomajiWithPrefix.equals("daibingu suru") == true ||
+					currentRomajiWithPrefix.equals("airon o kakeru") == true) {
 					continue;
 				}
 				
