@@ -1060,7 +1060,8 @@ bardziej
 942,WORD,WORD_NOUN,HIRAGANA,,消防士,しょうぼうし,,shouboushi,strażak,,,
 943,WORD,UNKNOWN,HIRAGANA,,-,なるほど,,naruhodo,"racja
 zgadza się",,,
-944,WORD,WORD_VERB_RU,HIRAGANA,,助ける,たすける,,tasukeru,pomagać,,,
+944,WORD,WORD_VERB_RU,HIRAGANA,,助ける,たすける,,tasukeru,"pomagać
+ratować",,,
 945,WORD,WORD_EXPRESSION,HIRAGANA,,助けて,たすけて,,tasukete,pomocy,,,
 946,WORD,WORD_VERB_RU,HIRAGANA,,見せる,みせる,,miseru,pokazywać,,,
 947,WORD,WORD_EXPRESSION,HIRAGANA,,-,けど,,kedo,"..., ale
@@ -1083,7 +1084,8 @@ zgadza się",,,
 963,WORD,UNKNOWN,HIRAGANA,,ていねいな言い方,ていねいないいかた,,teinei na ii kata,zwrot grzecznościowy,,,
 964,WORD,UNKNOWN,HIRAGANA,,方言,ほうげん,,hougen,dialekt,,,
 965,WORD,UNKNOWN,HIRAGANA,,標準語,ひょうじゅんご,,hyoujungo,standardowy Japoński,,,
-966,WORD,UNKNOWN,HIRAGANA,,-,たとえば,,tatoeba,na przykład,,,
+966,WORD,WORD_ADVERB,HIRAGANA,,例えば,たとえば,,tatoeba,"na przykład
+np.",,,
 967,WORD,UNKNOWN,HIRAGANA,,-,ほかに,,hokani,coś innego,,,
 968,WORD,UNKNOWN,HIRAGANA,,番,ばん,,ban,numer,~,,
 969,WORD,WORD_NOUN,KATAKANA,,-,ページ,,peeji,strona,~,NO,
@@ -1867,7 +1869,7 @@ wysoki","pieniądze, wzrost",NO,
 1660,KANJI,WORD_NOUN,HIRAGANA,,仕事,しごと,,shigoto,praca,,NO,
 1661,KANJI,WORD_NOUN,HIRAGANA,,仕事,しごと,,shigoto,praca,,NO,
 1662,KANJI,WORD_NOUN,HIRAGANA,,仕事,しごと,,shigoto,praca,,NO,
-1663,KANJI,WORD_NOUN,HIRAGANA,,事,こと,,koto,rzecz,,,
+1663,KANJI,WORD_NOUN,HIRAGANA,,事,こと,,koto,rzecz,,,2677
 1664,KANJI,WORD_NOUN,HIRAGANA,,火事,かじ,,kaji,ogień,,,
 1665,KANJI,WORD_NOUN,HIRAGANA,,食事,しょくじ,,shokuji,posiłek,,,
 1666,KANJI,WORD_NOUN,HIRAGANA,,電車,でんしゃ,,densha,pociąg,,NO,
@@ -3129,3 +3131,48 @@ nie stać",,,
 2653,KANJI,WORD_NOUN,HIRAGANA,,研究室,けんきゅうしつ,,kenkyuushitsu,gabinet profesora,,,
 2654,KANJI,WORD_NOUN,HIRAGANA,,地下室,ちかしつ,,chikashitsu,piwnica,,,
 2655,KANJI,WORD_NOUN,HIRAGANA,,待合室,まちあいしつ,,machi aishitsu,poczekalnia,,,
+2656,WORD,WORD_NOUN,HIRAGANA,,空,そら,,sora,niebo,,NO,
+2657,WORD,WORD_VERB_U,HIRAGANA,,飛ぶ,とぶ,,tobu,"latać
+lecieć
+wznieść się",,NO,
+2658,WORD,WORD_VERB_U,HIRAGANA,,違う,ちがう,,chigau,"różnić się
+mieć odrębne zdanie",,,
+2659,WORD,WORD_EXPRESSION,HIRAGANA,,-,そんな,,sonna,"jak tak
+taki
+takiego rodzaju",blisko osoby docelowej,NO,
+2660,WORD,UNKNOWN,HIRAGANA,,未来,みらい,,mirai,przyszłość,"ogólnie przyszłość, raczej dalsza",NO,
+2661,WORD,WORD_NOUN,KATAKANA,,-,ロボット,,robotto,robot,,,
+2662,WORD,WORD_NOUN,HIRAGANA,,道具,どうぐ,,dougu,narzędzie,,,
+2663,WORD,WORD_NOUN,KATAKANA,,-,ポケット,,poketto,kieszeń,,,
+2664,WORD,WORD_NOUN,HIRAGANA,,小学生,しょうがくせい,,shougakusei,uczeń szkoły podstawowej,,NO,
+2665,WORD,WORD_VERB_RU,HIRAGANA,,助ける,たすける,,tasukeru,"pomagać
+ratować",,NO,
+2666,WORD,WORD_ADVERB,HIRAGANA,,喜んで,よろこんで,,yorokonde,"z przyjemnością
+z radością",,,
+2667,WORD,WORD_VERB_U,HIRAGANA,,続く,つづく,,tsuduku,"kontynuować
+wznawiać",,,
+2668,WORD,UNKNOWN,HIRAGANA,,以上,いじょう,,ijou,"powyżej
+więcej niż",,NO,
+2669,WORD,WORD_VERB_RU,HIRAGANA,,売れる,うれる,,ureru,być sprzedany,,,
+2670,WORD,WORD_ADVERB,HIRAGANA,,例えば,たとえば,,tatoeba,"na przykład
+np.",,NO,
+2671,WORD,UNKNOWN,HIRAGANA,,-,どこでも,,dokodemo,gdziekolwiek,,NO,
+2672,WORD,UNKNOWN,HIRAGANA,,-,すると,,suruto,"... wtedy, ...",,,
+2673,WORD,WORD_NOUN,HIRAGANA,,場所,ばしょ,,basho,miejsce,,NO,
+2674,WORD,UNKNOWN,HIRAGANA,,-,また,,mata,"znów
+znowu",,,
+2675,WORD,WORD_ADJECTIVE_I,HIRAGANA,,弱い,よわい,,yowai,"słaby
+niezdolny",,NO,
+2676,WORD,WORD_NOUN,HIRAGANA,,味方,みかた,,mikata,"obrońca
+przyjaciel
+sojusznik
+sprzymierzeniec",,NO,
+2677,WORD,UNKNOWN,HIRAGANA,,-,こと,,koto,"rzecz
+sprawa
+zagadnienie
+problem",,,1663
+2678,WORD,WORD_VERB_U,HIRAGANA,,戻る,もどる,,modoru,"wracać
+być zwróconym",,,
+2679,WORD,WORD_NOUN,HIRAGANA,,教室,きょうしつ,,kyoushitsu,sala,szkolna,NO,
+2680,WORD,UNKNOWN,HIRAGANA,,海外,かいがい,,kaigai,"za morzem
+za oceanem",,NO,
