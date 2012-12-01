@@ -55,6 +55,8 @@ public class Validator {
 			
 			List<String> realRomajiList = new ArrayList<String>();
 			
+			boolean ignoreError = false;
+			
 			for (int idx = 0; idx < romajiList.size(); ++idx) {
 				
 				String currentRomaji = romajiList.get(idx);
@@ -89,7 +91,8 @@ public class Validator {
 					currentRomajiWithPrefix.equals("bijinesu kai") == true ||
 					currentRomajiWithPrefix.equals("tenisu bu") == true ||
 					currentRomajiWithPrefix.equals("kirisuto kyou") == true) {
-					continue;
+					
+					ignoreError = true;
 				}
 				
 				KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord(currentKana, hiraganaEntries, katakanaEntries);
@@ -105,7 +108,8 @@ public class Validator {
 						currentKana.equals("とっ") == true ||
 						currentKana.equals("きっ") == true ||
 						currentKana.equals("がっ") == true) {
-					continue;
+					
+					ignoreError = true;
 				}
 				
 				KanaWord kanaWord = createKanaWord(currentRomajiWithPrefix, polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
@@ -132,7 +136,7 @@ public class Validator {
 						
 						kanaWord = createKanaWord(polishJapaneseEntry.getRealPrefixRomaji() + currentRomaji, polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
 						
-						if ((prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
+						if (ignoreError == false && (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
 							throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ": " + (prefixKana + currentKana) + " - " + KanaHelper.createKanaString(kanaWord));
 						}						
 					}
@@ -146,7 +150,7 @@ public class Validator {
 				KanaWord currentKanaAsRomajiAsKatakanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, currentKanaAsRomaji);
 				String currentKanaAsRomajiAsKatakanaWordAsAgainKana = KanaHelper.createKanaString(currentKanaAsRomajiAsKatakanaWord);
 
-				if (currentKana.equals(currentKanaAsRomajiAsHiraganaWordAsAgainKana) == false &&
+				if (ignoreError == false && currentKana.equals(currentKanaAsRomajiAsHiraganaWordAsAgainKana) == false &&
 						currentKana.equals(currentKanaAsRomajiAsKatakanaWordAsAgainKana) == false) {
 
 					throw new JapaneseDictionaryException("Validate error for word: " + currentKana + " (" + currentKanaAsRomaji + ") vs " + currentKanaAsRomajiAsHiraganaWordAsAgainKana + " or " + currentKanaAsRomajiAsKatakanaWordAsAgainKana);					
