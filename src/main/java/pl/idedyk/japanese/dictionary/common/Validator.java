@@ -90,7 +90,9 @@ public class Validator {
 					currentRomajiWithPrefix.equals("kuma no puu san") == true ||
 					currentRomajiWithPrefix.equals("bijinesu kai") == true ||
 					currentRomajiWithPrefix.equals("tenisu bu") == true ||
-					currentRomajiWithPrefix.equals("kirisuto kyou") == true) {
+					currentRomajiWithPrefix.equals("kirisuto kyou") == true ||
+					currentRomajiWithPrefix.equals("okunai supootsu") == true ||
+					currentRomajiWithPrefix.equals("okugai supootsu") == true) {
 					
 					ignoreError = true;
 				}
