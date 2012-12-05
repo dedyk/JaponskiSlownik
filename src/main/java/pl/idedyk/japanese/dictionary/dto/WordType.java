@@ -3,7 +3,11 @@ package pl.idedyk.japanese.dictionary.dto;
 public enum WordType {
 	HIRAGANA("H"),
 	
-	KATAKANA("K");
+	KATAKANA("K"),
+	
+	HIRAGANA_KATAKANA("H"),
+	
+	KATAKANA_HIRAGANA("K");
 	
 	private String printable;
 

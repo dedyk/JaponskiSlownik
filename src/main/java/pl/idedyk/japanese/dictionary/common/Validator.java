@@ -65,58 +65,17 @@ public class Validator {
 				
 				String currentKana = kanaList.get(idx);
 				
-				if (currentRomajiWithPrefix.equals("ajiakenkyuu") == true ||
-					currentRomajiWithPrefix.equals("pinku iro no") == true ||
-					currentRomajiWithPrefix.equals("saboru") == true ||
-					currentRomajiWithPrefix.equals("daietto suru") == true ||
-					currentRomajiWithPrefix.equals("niyaniya suru") == true ||
-					currentRomajiWithPrefix.equals("puropoozu suru") == true ||
-					currentRomajiWithPrefix.equals("to tsu") == true ||
-					currentRomajiWithPrefix.equals("ki tsu") == true ||
-					currentRomajiWithPrefix.equals("ga tsu") == true ||
-					currentRomajiWithPrefix.equals("tonkatsu") == true ||
-					currentRomajiWithPrefix.equals("basutei") == true ||
-					currentRomajiWithPrefix.equals("keshigomu") == true ||
-					currentRomajiWithPrefix.equals("anzen pin") == true ||
-					currentRomajiWithPrefix.equals("denshi meeru") == true ||
-					currentRomajiWithPrefix.equals("basu dai") == true ||
-					currentRomajiWithPrefix.equals("uinku o suru") == true ||
-					currentRomajiWithPrefix.equals("hatsu deeto") == true ||
-					currentRomajiWithPrefix.equals("hatsu kisu") == true ||
-					currentRomajiWithPrefix.equals("torokko ressha") == true ||
-					currentRomajiWithPrefix.equals("genbaku doomu") == true ||
-					currentRomajiWithPrefix.equals("daibingu suru") == true ||
-					currentRomajiWithPrefix.equals("airon o kakeru") == true ||
-					currentRomajiWithPrefix.equals("kuma no puu san") == true ||
-					currentRomajiWithPrefix.equals("bijinesu kai") == true ||
-					currentRomajiWithPrefix.equals("tenisu bu") == true ||
-					currentRomajiWithPrefix.equals("kirisuto kyou") == true ||
-					currentRomajiWithPrefix.equals("okunai supootsu") == true ||
-					currentRomajiWithPrefix.equals("okugai supootsu") == true) {
-					
-					ignoreError = true;
-				}
-				
 				KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord(currentKana, hiraganaEntries, katakanaEntries);
 				
 				String currentKanaAsRomaji = KanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
 				
-				if (currentKanaAsRomaji.equals("ajiakenkyuu") == true ||
-						currentKanaAsRomaji.equals("pinkuirono") == true ||
-						currentKanaAsRomaji.equals("saboru") == true ||
-						currentKanaAsRomaji.equals("daiettosuru") == true ||
-						currentKanaAsRomaji.equals("niyaniyasuru") == true ||
-						currentKanaAsRomaji.equals("puropoozusuru") == true ||
-						currentKana.equals("とっ") == true ||
-						currentKana.equals("きっ") == true ||
-						currentKana.equals("がっ") == true) {
-					
+				KanaWord kanaWord = createKanaWord(currentRomajiWithPrefix, polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
+				
+				if (kanaWord == null) {
 					ignoreError = true;
 				}
 				
-				KanaWord kanaWord = createKanaWord(currentRomajiWithPrefix, polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
-																
-				if ((prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
+				if (ignoreError == true || (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
 					
 					if (prefixKana.equals("を") == true && prefixRomaji.equals("o") == true) {												
 						polishJapaneseEntry.setRealPrefixRomaji("wo");
@@ -130,7 +89,7 @@ public class Validator {
 					
 					kanaWord = createKanaWord(polishJapaneseEntry.getRealPrefixRomaji() + currentRomaji, polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
 					
-					if ((prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
+					if (ignoreError == true || (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
 						
 						currentRomaji = currentRomaji.replaceAll(" o ", " wo ");
 						
@@ -177,8 +136,12 @@ public class Validator {
 			kanaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, romaji);
 		} else if (wordType == WordType.KATAKANA) { 
 			kanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, romaji);
+		} else if (wordType == WordType.HIRAGANA_KATAKANA) {
+			return null;
+		} else if (wordType == WordType.KATAKANA_HIRAGANA) {
+			return null;
 		} else {
-			throw new RuntimeException("Bard word type");
+			throw new RuntimeException("Bad word type");
 		}
 
 		if (kanaWord.remaingRestChars.equals("") == false) {
