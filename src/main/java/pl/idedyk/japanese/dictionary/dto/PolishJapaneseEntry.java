@@ -15,6 +15,8 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 	
 	private String prefixKana;
 	
+	private List<String> groups;
+	
 	private String kanji;
 	
 	private String kanjiImagePath;
@@ -180,6 +182,14 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 		this.realRomajiList = realRomajiList;
 	}
 
+	public List<String> getGroups() {
+		return groups;
+	}
+
+	public void setGroups(List<String> groups) {
+		this.groups = groups;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -218,5 +228,9 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 		} else {
 			return 0;
 		}
+	}
+	
+	public String getEntryPrefixKanaKanjiKanaKey() {
+		return prefixKana + "." + kanji + "." + kanaList.toString();
 	}
 }

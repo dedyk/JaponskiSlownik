@@ -173,7 +173,8 @@ public class CsvReaderWriter {
 			csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
 			csvWriter.write(polishJapaneseEntry.getDictionaryType().getName());
 			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
-			csvWriter.write(polishJapaneseEntry.getWordType().toString());						
+			csvWriter.write(polishJapaneseEntry.getWordType().toString());
+			csvWriter.write(convertListToString(polishJapaneseEntry.getGroups()));			
 			csvWriter.write(polishJapaneseEntry.getPrefixKana());
 			csvWriter.write(polishJapaneseEntry.getKanji());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getKanaList()));
@@ -185,7 +186,6 @@ public class CsvReaderWriter {
 			
 			csvWriter.endRecord();
 		}
-
 	}
 	
 	public static List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv(String fileName, String filterName) throws IOException, JapaneseDictionaryException {
@@ -206,20 +206,21 @@ public class CsvReaderWriter {
 			
 			String dictionaryEntryTypeString = csvReader.get(2);
 			String wordTypeString = csvReader.get(3);
-			String prefixKanaString = csvReader.get(4);
-			String kanjiString = csvReader.get(5);
+			String groupString = csvReader.get(4);
+			String prefixKanaString = csvReader.get(5);
+			String kanjiString = csvReader.get(6);
 			
 			if (kanjiString.equals("") == true) {
 				throw new JapaneseDictionaryException("Empty kanji!");
 			}
 			
-			String kanaListString = csvReader.get(6);
-			String prefixRomajiString = csvReader.get(7);
-			String romajiListString = csvReader.get(8);
-			String polishTranslateListString = csvReader.get(9);
-			String infoString = csvReader.get(10);
-			String useEntryString = csvReader.get(11);
-			String knownDuplicatedListString = csvReader.get(12);
+			String kanaListString = csvReader.get(7);
+			String prefixRomajiString = csvReader.get(8);
+			String romajiListString = csvReader.get(9);
+			String polishTranslateListString = csvReader.get(10);
+			String infoString = csvReader.get(11);
+			String useEntryString = csvReader.get(12);
+			String knownDuplicatedListString = csvReader.get(13);
 			
 			boolean useEntry = true;
 			
@@ -243,6 +244,7 @@ public class CsvReaderWriter {
 			entry.setDictionaryType(DictionaryType.valueOf(dictionaryType));
 			entry.setDictionaryEntryType(dictionaryEntryType);
 			entry.setWordType(WordType.valueOf(wordTypeString));
+			entry.setGroups(parseStringIntoList(groupString));
 			entry.setPrefixKana(prefixKanaString);
 			entry.setKanji(kanjiString);
 			entry.setKanaList(parseStringIntoList(kanaListString));
@@ -286,7 +288,12 @@ public class CsvReaderWriter {
 		
 		String[] splitedPolishTranslateString = polishTranslateString.split("\n");
 		
-		for (String currentPolishTranslateString : splitedPolishTranslateString) {			
+		for (String currentPolishTranslateString : splitedPolishTranslateString) {
+			
+			if (currentPolishTranslateString.equals("") == true) {
+				continue;
+			}
+			
 			result.add(currentPolishTranslateString);
 		}
 		

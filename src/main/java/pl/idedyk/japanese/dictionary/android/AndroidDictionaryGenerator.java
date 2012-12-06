@@ -71,6 +71,61 @@ public class AndroidDictionaryGenerator {
 		
 		Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);
 		
+		// generate groups
+		
+		Map<String, List<String>> polishJapaneseEntriesAndGroups = new HashMap<String, List<String>>();
+		
+		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
+			
+			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
+			
+			if (currentPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_KANJI_READING) {
+				continue;
+			}
+			
+			List<String> currentPolishJapaneseEntryGroups = currentPolishJapaneseEntry.getGroups();
+
+			if (currentPolishJapaneseEntryGroups == null || currentPolishJapaneseEntryGroups.size() == 0) {
+				continue;
+			}
+						
+			String entryPrefixKanaKanjiKanaKey = currentPolishJapaneseEntry.getEntryPrefixKanaKanjiKanaKey();
+			
+			List<String> groupsForCurrentPolishJapaneseEntry = polishJapaneseEntriesAndGroups.get(entryPrefixKanaKanjiKanaKey);
+			
+			if (groupsForCurrentPolishJapaneseEntry == null) {
+				groupsForCurrentPolishJapaneseEntry = new ArrayList<String>();
+			}
+			
+			for (String currentEntryOfCurrentPolishJapaneseEntryGroups : currentPolishJapaneseEntryGroups) {
+				
+				if (groupsForCurrentPolishJapaneseEntry.contains(currentEntryOfCurrentPolishJapaneseEntryGroups) == false) {
+					groupsForCurrentPolishJapaneseEntry.add(currentEntryOfCurrentPolishJapaneseEntryGroups);
+				}
+			}
+			
+			polishJapaneseEntriesAndGroups.put(entryPrefixKanaKanjiKanaKey, groupsForCurrentPolishJapaneseEntry);			
+		}
+		
+		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
+			
+			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
+			
+			if (currentPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_KANJI_READING) {
+				continue;
+			}
+			
+			String entryPrefixKanaKanjiKanaKey = currentPolishJapaneseEntry.getEntryPrefixKanaKanjiKanaKey();
+			
+			List<String> groupsForCurrentPolishJapaneseEntry = polishJapaneseEntriesAndGroups.get(entryPrefixKanaKanjiKanaKey);
+			
+			if (groupsForCurrentPolishJapaneseEntry == null) {
+				continue;
+			}
+			
+			currentPolishJapaneseEntry.setGroups(groupsForCurrentPolishJapaneseEntry);
+		}		
+		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 				
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
