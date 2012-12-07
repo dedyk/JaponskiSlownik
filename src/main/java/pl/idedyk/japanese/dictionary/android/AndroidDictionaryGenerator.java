@@ -120,7 +120,9 @@ public class AndroidDictionaryGenerator {
 			List<String> groupsForCurrentPolishJapaneseEntry = polishJapaneseEntriesAndGroups.get(entryPrefixKanaKanjiKanaKey);
 			
 			if (groupsForCurrentPolishJapaneseEntry == null) {
-				continue;
+				groupsForCurrentPolishJapaneseEntry = new ArrayList<String>();
+				
+				groupsForCurrentPolishJapaneseEntry.add("Pozostałe");
 			}
 			
 			currentPolishJapaneseEntry.setGroups(groupsForCurrentPolishJapaneseEntry);
