@@ -122,7 +122,7 @@ public class AndroidDictionaryGenerator {
 			if (groupsForCurrentPolishJapaneseEntry == null) {
 				groupsForCurrentPolishJapaneseEntry = new ArrayList<String>();
 				
-				groupsForCurrentPolishJapaneseEntry.add("Pozostałe");
+				groupsForCurrentPolishJapaneseEntry.add("Inne");
 			}
 			
 			currentPolishJapaneseEntry.setGroups(groupsForCurrentPolishJapaneseEntry);
