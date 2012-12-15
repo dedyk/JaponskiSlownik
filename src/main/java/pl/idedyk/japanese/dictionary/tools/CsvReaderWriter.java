@@ -149,6 +149,10 @@ public class CsvReaderWriter {
 					sb.append(";");
 				}
 			}
+			
+			boolean useEntry = polishJapaneseEntry.isUseEntry();
+			
+			sb.append(String.valueOf(useEntry)).append(";");			
 
 			sb.append("\n");
 		}	
