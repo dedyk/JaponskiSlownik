@@ -66,6 +66,20 @@ public class CsvReaderWriter {
 			}
 			sb.append(";");
 			
+			List<String> groups = polishJapaneseEntry.getGroups();
+			
+			for (int groupsIdx = 0; groupsIdx < groups.size(); ++groupsIdx) {
+				
+				String currentGroup = groups.get(groupsIdx);
+								
+				sb.append(currentGroup);
+
+				if (groupsIdx != groups.size() - 1) {
+					sb.append(",");
+				}					
+			}
+			sb.append(";");
+			
 			if (addKanji == true && polishJapaneseEntry.getKanji() != null && polishJapaneseEntry.getKanji().equals("") == false) {
 				sb.append(polishJapaneseEntry.getFullKanji()).append(";");
 			}

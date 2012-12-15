@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -32,6 +33,8 @@ public class J2MEDictionaryGenerator {
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", "WORD");
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries);	
 		generateKanjiImages(polishJapaneseEntries, charsCache, kanjiOutputDir);
+		
+		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, false);
 		
 		// kanji dictionary
 		List<PolishJapaneseEntry> polishJapaneseKanjiEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", "KANJI");
