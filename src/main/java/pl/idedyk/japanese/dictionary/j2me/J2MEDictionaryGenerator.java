@@ -38,9 +38,9 @@ public class J2MEDictionaryGenerator {
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, false);
 		
 		// kanji dictionary
-		List<PolishJapaneseEntry> polishJapaneseKanjiEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);
-		Validator.validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries, katakanaEntries);
-		generateKanjiImages(polishJapaneseKanjiEntries, charsCache, kanjiOutputDir);
+		//List<PolishJapaneseEntry> polishJapaneseKanjiEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);
+		//Validator.validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries, katakanaEntries);
+		//generateKanjiImages(polishJapaneseKanjiEntries, charsCache, kanjiOutputDir);
 		
 		// validate dictionary and kanji dictionary
 		/*
@@ -54,7 +54,7 @@ public class J2MEDictionaryGenerator {
 		CsvReaderWriter.generateDictionaryApplicationResult("output/japanese_polish_dictionary.properties", polishJapaneseEntries, DictionaryType.WORD, true);
 		CsvReaderWriter.generateKanaEntriesCsv(kanjiOutputDir + "/hiragana.properties", hiraganaEntries);
 		CsvReaderWriter.generateKanaEntriesCsv(kanjiOutputDir + "/katakana.properties", katakanaEntries);
-		CsvReaderWriter.generateDictionaryApplicationResult(kanjiOutputDir + "/kanji_dictionary.properties", polishJapaneseKanjiEntries, DictionaryType.KANJI, true);
+		CsvReaderWriter.generateDictionaryApplicationResult(kanjiOutputDir + "/kanji_dictionary.properties", polishJapaneseEntries, DictionaryType.KANJI, true);
 				
 		System.out.println("Done");
 	}
