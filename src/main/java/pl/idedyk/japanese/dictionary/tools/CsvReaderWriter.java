@@ -80,6 +80,10 @@ public class CsvReaderWriter {
 			}
 			sb.append(";");
 			
+			boolean useEntry = polishJapaneseEntry.isUseEntry();
+			
+			sb.append(String.valueOf(useEntry)).append(";");
+			
 			if (addKanji == true && polishJapaneseEntry.getKanji() != null && polishJapaneseEntry.getKanji().equals("") == false) {
 				sb.append(polishJapaneseEntry.getFullKanji()).append(";");
 			}
@@ -150,10 +154,6 @@ public class CsvReaderWriter {
 				}
 			}
 			
-			boolean useEntry = polishJapaneseEntry.isUseEntry();
-			
-			sb.append(String.valueOf(useEntry)).append(";");			
-
 			sb.append("\n");
 		}	
 
