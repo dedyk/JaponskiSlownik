@@ -29,11 +29,15 @@ import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
 public class CsvReaderWriter {
 
-	public static void generateDictionaryApplicationResult(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries, boolean addKanji) throws IOException {
+	public static void generateDictionaryApplicationResult(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries, DictionaryType dictionaryType, boolean addKanji) throws IOException {
 		
 		StringBuffer sb = new StringBuffer();
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			if (polishJapaneseEntry.getDictionaryType() != dictionaryType) {
+				continue;
+			}
 
 			String prefixKana = polishJapaneseEntry.getPrefixKana();
 			
