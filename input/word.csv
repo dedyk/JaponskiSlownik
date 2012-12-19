@@ -576,8 +576,7 @@ mieć",,,
 509,WORD,WORD_VERB_U,HIRAGANA,Genki 1-6,,休む,やすむ,,yasumu,odpoczywać,,,508
 510,WORD,WORD_VERB_RU,HIRAGANA,Genki 1-6,を,開ける,あける,o,akeru,otwierać,,,
 511,WORD,WORD_VERB_RU,HIRAGANA,Genki 1-6,を,教える,おしえる,o,oshieru,uczyć,"kogoś, osoba ni rzecz",,
-512,WORD,WORD_VERB_RU,HIRAGANA,Genki 1-6,を,降りる,おりる,o,oriru,"zdejmować
-wysiadać",,,867
+512,WORD,WORD_VERB_RU,HIRAGANA,Genki 1-6,を,降りる,おりる,o,oriru,wysiadać,,,867
 513,WORD,WORD_VERB_RU,HIRAGANA,Genki 1-6,を,借りる,かりる,o,kariru,pożyczać,"od kogoś, osoba ni rzecz",,
 514,WORD,WORD_VERB_RU,HIRAGANA,Genki 1-6,を,閉める,しめる,o,shimeru,zamykać,,,
 515,WORD,WORD_VERB_RU,HIRAGANA,Genki 1-6,を,-,つける,o,tsukeru,włączać,,,
@@ -974,7 +973,7 @@ szybko",zrobić coś,,
 864,WORD,WORD_NOUN,HIRAGANA,,,お巡り,おまわり,,omawari,policjant,patrolujący ulice,,
 865,WORD,WORD_VERB_U,HIRAGANA,,を,上がる,あがる,o,agaru,iść pod górę,,,
 866,WORD,WORD_NOUN,HIRAGANA,,,階段,かいだん,,kaidan,schody,,,1048
-867,WORD,WORD_VERB_U,HIRAGANA,,を,下りる,おりる,o,oriru,schodzić,,,512
+867,WORD,WORD_VERB_RU,HIRAGANA,,を,下りる,おりる,o,oriru,schodzić,,,512
 868,WORD,WORD_NOUN,HIRAGANA,,,駐車場,ちゅうしゃじょう,,chuushajou,miejsce parkingowe,,,
 869,WORD,WORD_VERB_U,HIRAGANA,,,学ぶ,まなぶ,,manabu,uczyć się,ogólnie,,
 870,WORD,WORD_VERB_U,HIRAGANA,,,習う,ならう,,narau,uczyć się,czegoś praktycznego,,
@@ -1296,8 +1295,7 @@ faktycznie",,,
 1141,WORD,UNKNOWN,HIRAGANA,,,-,つぼみ,,tsubomi,kwiaty jeszcze nie otwarte,,,
 1142,WORD,WORD_NOUN,HIRAGANA,,,夕方,ゆうがた,,yuugata,"wieczór
 wieczorem",,,
-1143,WORD,WORD_VERB_RU,HIRAGANA,,を,降りる,おりる,o,oriru,"zdejmować
-wysiadać",,NO,
+1143,WORD,WORD_VERB_RU,HIRAGANA,,を,降りる,おりる,o,oriru,wysiadać,,NO,
 1144,WORD,WORD_VERB_RU,HIRAGANA,,,倒れる,たおれる,,taoreru,spadać,,,
 1145,WORD,WORD_NOUN,HIRAGANA,,,像,ぞう,,zou,pomnik,,,1091
 1146,WORD,WORD_NOUN,HIRAGANA,,,数学,すうがく,,suugaku,matematyka,,,
@@ -1550,8 +1548,7 @@ odnośnie ...",czegoś,NO,
 1359,WORD,WORD_EXPRESSION,HIRAGANA,Genki 2-15,,番,ばん,,ban,numer,~,NO,
 1360,WORD,WORD_EXPRESSION,HIRAGANA,Genki 2-15,,目,め,,me,[tworzenie liczebników porządkowych],"np. pierwszy, drugi, trzeci, czwarty",,211
 1361,WORD,WORD_EXPRESSION,HIRAGANA,Genki 2-15,,もう一度,もういちど,,mou ichi do,jeszcze raz,,,
-1362,WORD,WORD_VERB_RU,HIRAGANA,,を,降りる,おりる,o,oriru,"zdejmować
-wysiadać",,NO,
+1362,WORD,WORD_VERB_RU,HIRAGANA,,を,降りる,おりる,o,oriru,wysiadać,,NO,
 1363,WORD,WORD_VERB_U,HIRAGANA,,,車を降りる,くるまをおりる,,kuruma o oriru,wysiadać z samochodu,,,
 1364,WORD,WORD_VERB_IRREGULAR,HIRAGANA,,,準備する,じゅんびする,,junbi suru,przygotowywać,,,
 1365,WORD,WORD_VERB_IRREGULAR,HIRAGANA,,,荷物を準備する,にもつをじゅんびする,,nimotsu o junbi suru,pakować bagaż,dosł. przygotowywać,,
@@ -2627,7 +2624,7 @@ wstrętny",,,
 2283,WORD,WORD_ADJECTIVE_I,HIRAGANA,,,深い,ふかい,,fukai,głęboki,,,
 2284,WORD,WORD_ADJECTIVE_I,HIRAGANA,,,柔らかい,やわらかい,,yawarakai,"miękki
 łagodny
-delikatny",,,
+delikatny",,,2792
 2285,WORD,WORD_ADJECTIVE_I,HIRAGANA,,,浅い,あさい,,asai,płytki,,,
 2286,WORD,WORD_ADJECTIVE_I,HIRAGANA,,,弱い,よわい,,yowai,"słaby
 niezdolny",,,
@@ -3355,3 +3352,10 @@ np.",,NO,
 2788,WORD,UNKNOWN,HIRAGANA,Genki 2-17,,前,まえ,,mae,przed,,NO,
 2789,WORD,UNKNOWN,HIRAGANA,Genki 2-17,,-,やっぱり,,yappari,"mimo wszystko
 mimo to",,NO,
+2790,WORD,WORD_NOUN,KATAKANA,,,-,コアラ,,koara,miś koala,,,
+2791,WORD,WORD_ADJECTIVE_I,HIRAGANA,,,女々しい,めめしい,,memeshii,zniewieściały,,,
+2792,WORD,WORD_ADJECTIVE_I,HIRAGANA,,,軟らかい,やわらかい,,yawarakai,"miękki
+łagodny
+delikatny",,,2284
+2793,WORD,WORD_VERB_RU,HIRAGANA,,,溶ける,とける,,tokeru,"topić się
+rozpuszczać się",,,
