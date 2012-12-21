@@ -105,7 +105,7 @@ public class CsvReaderWriter {
 					sb.append(currentPolishTranslate).append("|");
 					
 					if (idxPolishTranslates == polishTranslates.size() - 1) {
-						String info = polishJapaneseEntry.getInfo() != null ? polishJapaneseEntry.getInfo() : ""; 
+						String info = polishJapaneseEntry.getInfo() != null ? polishJapaneseEntry.getInfo().replaceAll("\n", ", ") : ""; 
 						
 						if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_VERB_RU) {
 							if (info.length() > 0) {
