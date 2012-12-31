@@ -1644,7 +1644,9 @@ gigantyczny",,,
 1428,WORD,WORD_NOUN,HIRAGANA,,,旧市街,きゅうしがい,,kyuushigai,stare miasto,,,
 1429,WORD,UNKNOWN,HIRAGANA,,,織物,おりもの,,orimono,tkactwo,,,
 1430,WORD,WORD_NOUN,HIRAGANA,,,工場,こうじょう,,koujou,fabryka,,,
-1431,WORD,WORD_NOUN,HIRAGANA,,,針,はり,,hari,igła,,,
+1431,WORD,WORD_NOUN,HIRAGANA,,,針,はり,,hari,"igła
+pinezka
+haczyk",,,
 1432,WORD,WORD_NOUN,HIRAGANA,,,鍵,かぎ,,kagi,"klucz
 zamknięcie",,,
 1433,WORD,WORD_VERB_RU,HIRAGANA,,に,鍵をかける,かぎをかける,ni,kagi o kakeru,"zamykać
@@ -2363,7 +2365,7 @@ zaprosić",,,
 2065,WORD,WORD_NOUN,KATAKANA,,,-,サンドイッチ,,sandoicchi,kanapka,,,
 2066,WORD,WORD_NOUN,HIRAGANA,,,西瓜,すいか,,suika,arbuz,,,
 2067,WORD,WORD_NOUN,HIRAGANA,,,体育,たいいく,,taiiku,wychowanie fizyczne,,,
-2068,WORD,WORD_NOUN,HIRAGANA,,,体育の日,たいいくのひ,,taiiku no hi,Dzień Zdrowia i Sportu,Japońskie święto państwowe,,
+2068,WORD,WORD_NOUN,HIRAGANA,,,体育の日,たいいくのひ,,taiiku no hi,Dzień Zdrowia i Sportu,"Japońskie święto narodowe, obchodzone w drugi poniedziałek października",,
 2069,WORD,WORD_NOUN,HIRAGANA,,,祭日,さいじつ,,saijitsu,święto narodowe,,,
 2070,WORD,WORD_NOUN,KATAKANA,,,-,アフリカ,,afurika,Afryka,,,
 2071,WORD,WORD_NOUN,KATAKANA,,,-,タイ,,tai,Tajlandia,,,
@@ -2546,7 +2548,7 @@ system liczenia",,,
 2222,WORD,WORD_EXPRESSION,HIRAGANA,,,５月の２番目の日曜日,ごがつのにばんめのにちようび,,gogatsu no nibanme no nichiyoubi,druga niedziela maja,dzień matki,,
 2223,WORD,WORD_EXPRESSION,HIRAGANA,,,６月の３番目の日曜日,ろくがつのさんばんめのにちようび,,rokugatsu no sanbanme no nichiyoubi,trzecia niedziela czerwca,dzień ojca,,
 2224,WORD,WORD_NOUN,HIRAGANA,,,父の日,ちちのひ,,chichi no hi,dzień ojca,trzecia niedziela czerwca,,
-2225,WORD,WORD_NOUN,HIRAGANA,,,子供の日,こどものひ,,kodomo no hi,dzień dziecka,piątego maja,,
+2225,WORD,WORD_NOUN,HIRAGANA,,,子供の日,こどものひ,,kodomo no hi,dzień dziecka,"Japońskie święto narodowe, obchodzone 5 maja",,
 2226,WORD,WORD_NOUN,HIRAGANA,,,鯉,こい,,koi,karp,,,1393
 2227,WORD,WORD_NOUN,HIRAGANA,,,鯉幟,こいのぼり,,koi nobori,flaga w kształcie karpia,symbol japońskiego dnia dziecka,,
 2228,WORD,WORD_NOUN,HIRAGANA,,,節分,せつぶん,,setsubun,pierwszy dzień wiosny,,,
@@ -3646,7 +3648,7 @@ drugorzędny",,,"14
 1709"
 2957,WORD,WORD_NOUN,HIRAGANA,,,地元,じもと,,jimoto,"lokalny
 miejscowy",,,
-2958,WORD,WORD_NOUN,HIRAGANA,,,元日,がんじつ,,ganjitsu,pierwszy dzień nowego roku,,,
+2958,WORD,WORD_NOUN,HIRAGANA,,,元日,がんじつ,,ganjitsu,pierwszy dzień nowego roku,Japońskie święto narodowe,,
 2959,WORD,WORD_NOUN,HIRAGANA,,,元金,がんきん,,gankin,podstawowa kwota,,,
 2960,WORD,WORD_NOUN,HIRAGANA,,,元本,がんぽん,,ganpon,kapitał,,,
 2961,WORD,WORD_NOUN,HIRAGANA,,,謎,なぞ,,nazo,"zagadka
@@ -3798,3 +3800,43 @@ pozwolenie",,,
 3048,WORD,WORD_NOUN,HIRAGANA,,,認知,にんち,,ninchi,"rozpoznanie
 uznanie",,,
 3049,WORD,WORD_NOUN,HIRAGANA,,,葉巻,はまき,,hamaki,cygaro,,,
+3050,WORD,WORD_NOUN,HIRAGANA,,,成人の日,せいじんのひ,,seijin no hi,Święto Wejścia w Dorosłość,"Japońskie święto narodowe, obchodzone w drugi poniedziałek stycznia",,
+3051,WORD,WORD_NOUN,HIRAGANA,,,建国記念日,けんこくきねんび,,kenkoku kinenbi,Rocznica Ustanowienia Państwa,"Japońskie święto narodowe, obchodzone 11 lutego",,
+3052,WORD,WORD_NOUN,HIRAGANA,,,春分の日,しゅんぶんのひ,,shunbun no hi,Równonoc Wiosenna,"Japońskie święto narodowe, obchodzone ok. 21 marca",,
+3053,WORD,WORD_NOUN,HIRAGANA,,,昭和の日,しょうわのひ,,shouwa no hi,Rocznica Urodzin Cesarza Shōwa,"Japońskie święto narodowe, obchodzone 29 kwietnia",,
+3054,WORD,WORD_NOUN,HIRAGANA,,,憲法記念日,けんぽうきねんび,,kenpou kinenbi,Rocznica Wprowadzenia Konstytucji,"Japońskie święto narodowe, obchodzone 3 maja",,
+3055,WORD,WORD_NOUN,HIRAGANA,,,緑の日,みどりのひ,,midori no hi,Dzień Zieleni,"Japońskie święto narodowe, obchodzone 4 maja",,
+3056,WORD,WORD_NOUN,HIRAGANA,,,海の日,うみのひ,,umi no hi,Święto Morza,"Japońskie święto narodowe, obchodzone w trzeci poniedziałek lipca",,
+3057,WORD,WORD_NOUN,HIRAGANA,,,敬老の日,けいろうのひ,,keirou no hi,Święto Szacunku dla Ludzi Starych,"Japońskie święto narodowe, obchodzone w trzeci poniedziałek września",,
+3058,WORD,WORD_NOUN,HIRAGANA,,,秋分の日,しゅうぶんのひ,,shuubun no hi,Równonoc Jesienna,"Japońskie święto narodowe, obchodzone ok. 21 września",,
+3059,WORD,WORD_NOUN,HIRAGANA,,,文化の日,ぶんかのひ,,bunka no hi,Dzień Kultury,"Japońskie święto narodowe, obchodzone 3 listopada",,
+3060,WORD,WORD_NOUN,HIRAGANA,,,勤労感謝の日,きんろうかんしゃのひ,,kinrou kansha no hi,Święto Dziękczynienia za Pracę,"Japońskie święto narodowe, obchodzone 23 listopada",,
+3061,WORD,WORD_NOUN,HIRAGANA,,,天皇誕生日,てんのうたんじょうび,,tennou tanjoubi,Urodziny Cesarza,"Japońskie święto narodowe, obchodzone 23 grudnia",,
+3062,WORD,WORD_VERB_U,HIRAGANA,,,縫う,ぬう,,nuu,szyć,,,
+3063,WORD,WORD_NOUN,HIRAGANA,,,縫物,ぬいもの,,nuimono,"szycie
+robótki ręczne
+haft",,,
+3064,WORD,WORD_VERB_IRREGULAR,HIRAGANA,,,縫物をする,ぬいものをする,,nuimono o suru,szyć,,,
+3065,WORD,WORD_NOUN,KATAKANA,,,-,ミシン,,mishin,maszyna do szycia,,,
+3066,WORD,WORD_VERB_RU,KATAKANA_HIRAGANA,,,-,ミシンをかける,,mishin o kakeru,szyć,na maszynie do szycia,,
+3067,WORD,WORD_VERB_U,HIRAGANA,,,刺す,さす,,sasu,"wbić
+ukłuć
+przeszyć
+użądlić
+przebić",,,
+3068,WORD,WORD_NOUN,HIRAGANA,,,刺,とげ,,toge,kolec,,,
+3069,WORD,WORD_VERB_U,HIRAGANA,,,刺さる,ささる,,sasaru,"utkwić
+ugrząźć
+utknąć",,,
+3070,WORD,WORD_NOUN,HIRAGANA,,,糸,いと,,ito,"nić
+nitka",,,
+3071,WORD,WORD_NOUN,HIRAGANA,,,生糸,きいと,,kiito,surowy jedwab,,,
+3072,WORD,WORD_NOUN,HIRAGANA,,,糸口,いとぐち,,itoguchi,"koniec nitki
+początek
+ślad
+trop",,,
+3073,WORD,WORD_NOUN,HIRAGANA,,,糸目,いとめ,,itome,"nitki
+sznurki",,,
+3074,WORD,WORD_NOUN,HIRAGANA,,,糸車,いとぐるま,,itoguruma,koło zamachowe,,,
+3075,WORD,WORD_NOUN,HIRAGANA,,,糸巻き,いとまき,,itomaki,szpulka,,,
+3076,WORD,WORD_NOUN,HIRAGANA,,,鋏,はさみ,,hasami,nożyczki,,,
