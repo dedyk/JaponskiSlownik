@@ -344,6 +344,7 @@ public class KanaHelper {
 		
 		katakanaEntries.add(new KanaEntry("ウィ", "wi"));
 		katakanaEntries.add(new KanaEntry("ウェ", "we"));
+		katakanaEntries.add(new KanaEntry("ウォ", "wo"));
 		
 		katakanaEntries.add(new KanaEntry("シェ", "she"));
 		katakanaEntries.add(new KanaEntry("ジェ", "je"));
