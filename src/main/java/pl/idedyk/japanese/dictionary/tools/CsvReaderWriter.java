@@ -219,7 +219,7 @@ public class CsvReaderWriter {
 		while(csvReader.readRecord()) {
 			
 			int id = Integer.parseInt(csvReader.get(0));
-			
+						
 			String dictionaryType = csvReader.get(1);
 			
 			if (filterName != null && dictionaryType.equals(filterName) == false) {
