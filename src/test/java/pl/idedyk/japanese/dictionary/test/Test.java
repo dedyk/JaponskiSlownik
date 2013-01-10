@@ -2,6 +2,7 @@ package pl.idedyk.japanese.dictionary.test;
 
 import java.util.List;
 
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 
@@ -31,6 +32,8 @@ public class Test {
 		*/
 		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);
+		
+		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true);
 		
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
 			
