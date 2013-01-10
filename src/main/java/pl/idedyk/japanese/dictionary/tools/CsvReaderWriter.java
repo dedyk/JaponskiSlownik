@@ -227,22 +227,22 @@ public class CsvReaderWriter {
 			}
 			
 			String dictionaryEntryTypeString = csvReader.get(2);
-			String wordTypeString = csvReader.get(3);
-			String groupString = csvReader.get(4);
-			String prefixKanaString = csvReader.get(5);
-			String kanjiString = csvReader.get(6);
+			String wordTypeString = csvReader.get(4);
+			String groupString = csvReader.get(5);
+			String prefixKanaString = csvReader.get(6);
+			String kanjiString = csvReader.get(7);
 			
 			if (kanjiString.equals("") == true) {
 				throw new JapaneseDictionaryException("Empty kanji!");
 			}
 			
-			String kanaListString = csvReader.get(7);
-			String prefixRomajiString = csvReader.get(8);
-			String romajiListString = csvReader.get(9);
-			String polishTranslateListString = csvReader.get(10);
-			String infoString = csvReader.get(11);
-			String useEntryString = csvReader.get(12);
-			String knownDuplicatedListString = csvReader.get(13);
+			String kanaListString = csvReader.get(8);
+			String prefixRomajiString = csvReader.get(9);
+			String romajiListString = csvReader.get(10);
+			String polishTranslateListString = csvReader.get(11);
+			String infoString = csvReader.get(12);
+			String useEntryString = csvReader.get(13);
+			String knownDuplicatedListString = csvReader.get(14);
 			
 			boolean useEntry = true;
 			
