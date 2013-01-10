@@ -8,14 +8,15 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
+import pl.idedyk.japanese.dictionary.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.DictionaryType;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
@@ -195,6 +196,7 @@ public class CsvReaderWriter {
 			csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
 			csvWriter.write(polishJapaneseEntry.getDictionaryType().getName());
 			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
+			csvWriter.write(convertAttributeListToString(polishJapaneseEntry.getAttributeTypeList()));
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getGroups()));			
 			csvWriter.write(polishJapaneseEntry.getPrefixKana());
@@ -205,6 +207,7 @@ public class CsvReaderWriter {
 			csvWriter.write(convertListToString(polishJapaneseEntry.getPolishTranslates()));
 			csvWriter.write(polishJapaneseEntry.getInfo());
 			csvWriter.write(polishJapaneseEntry.isUseEntry() == false ? "NO" : "");
+			csvWriter.write(convertListToString(new ArrayList<Integer>(polishJapaneseEntry.getKnownDuplicatedId())));
 			
 			csvWriter.endRecord();
 		}
@@ -227,6 +230,7 @@ public class CsvReaderWriter {
 			}
 			
 			String dictionaryEntryTypeString = csvReader.get(2);
+			String attributesString = csvReader.get(3);
 			String wordTypeString = csvReader.get(4);
 			String groupString = csvReader.get(5);
 			String prefixKanaString = csvReader.get(6);
@@ -265,6 +269,7 @@ public class CsvReaderWriter {
 			entry.setId(id);
 			entry.setDictionaryType(DictionaryType.valueOf(dictionaryType));
 			entry.setDictionaryEntryType(dictionaryEntryType);
+			entry.setAttributeTypeList(parseAttributesStringList(attributesString));
 			entry.setWordType(WordType.valueOf(wordTypeString));
 			entry.setGroups(parseStringIntoList(groupString));
 			entry.setPrefixKana(prefixKanaString);
@@ -275,9 +280,9 @@ public class CsvReaderWriter {
 			entry.setPolishTranslates(parseStringIntoList(polishTranslateListString));
 			entry.setUseEntry(useEntry);
 			
-			Set<String> knownDuplicatedHashMap = new HashSet<String>();
+			Set<Integer> knownDuplicatedHashMap = new TreeSet<Integer>();
 			
-			knownDuplicatedHashMap.addAll(parseStringIntoList(knownDuplicatedListString));
+			knownDuplicatedHashMap.addAll(parseStringIntoIntegerList(knownDuplicatedListString));
 			entry.setKnownDuplicatedId(knownDuplicatedHashMap);
 						
 			entry.setInfo(infoString);
@@ -290,11 +295,38 @@ public class CsvReaderWriter {
 		return result;
 	}
 	
-	private static String convertListToString(List<String> list) {
+	private static List<AttributeType> parseAttributesStringList(String attributesString) {
+		
+		List<String> attributeStringList = parseStringIntoList(attributesString);
+		
+		List<AttributeType> result = new ArrayList<AttributeType>();
+		
+		for (String currentAttributeTypeString : attributeStringList) {
+			result.add(AttributeType.valueOf(currentAttributeTypeString));
+		}
+		
+		return result;
+	}
+	
+	private static String convertListToString(List<?> list) {
 		StringBuffer sb = new StringBuffer();
 		
 		for (int idx = 0; idx < list.size(); ++idx) {
 			sb.append(list.get(idx));
+			
+			if (idx != list.size() - 1) {
+				sb.append("\n");
+			}
+		}
+		
+		return sb.toString();
+	}
+
+	private static String convertAttributeListToString(List<AttributeType> list) {
+		StringBuffer sb = new StringBuffer();
+		
+		for (int idx = 0; idx < list.size(); ++idx) {
+			sb.append(list.get(idx).toString());
 			
 			if (idx != list.size() - 1) {
 				sb.append("\n");
@@ -317,6 +349,24 @@ public class CsvReaderWriter {
 			}
 			
 			result.add(currentPolishTranslateString);
+		}
+		
+		return result;		
+	}
+
+	private static List<Integer> parseStringIntoIntegerList(String polishTranslateString) {
+		
+		List<Integer> result = new ArrayList<Integer>();
+		
+		String[] splitedPolishTranslateString = polishTranslateString.split("\n");
+		
+		for (String currentPolishTranslateString : splitedPolishTranslateString) {
+			
+			if (currentPolishTranslateString.equals("") == true) {
+				continue;
+			}
+			
+			result.add(Integer.parseInt(currentPolishTranslateString));
 		}
 		
 		return result;		

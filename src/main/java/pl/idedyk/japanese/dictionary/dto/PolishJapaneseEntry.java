@@ -11,6 +11,8 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 	
 	private DictionaryEntryType dictionaryEntryType;
 	
+	private List<AttributeType> attributeTypeList;
+	
 	private WordType wordType;
 	
 	private String prefixKana;
@@ -37,7 +39,7 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 	
 	private boolean useEntry;
 	
-	private Set<String> knownDuplicatedId;
+	private Set<Integer> knownDuplicatedId;
 
 	public DictionaryEntryType getDictionaryEntryType() {
 		return dictionaryEntryType;
@@ -115,11 +117,11 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 		return kanji.equals("-") == false ? prefixKana + kanji : kanji;
 	}
 
-	public Set<String> getKnownDuplicatedId() {
+	public Set<Integer> getKnownDuplicatedId() {
 		return knownDuplicatedId;
 	}
 
-	public void setKnownDuplicatedId(Set<String> knownDuplicatedId) {
+	public void setKnownDuplicatedId(Set<Integer> knownDuplicatedId) {
 		this.knownDuplicatedId = knownDuplicatedId;
 	}
 
@@ -188,6 +190,14 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 
 	public void setGroups(List<String> groups) {
 		this.groups = groups;
+	}
+
+	public List<AttributeType> getAttributeTypeList() {
+		return attributeTypeList;
+	}
+
+	public void setAttributeTypeList(List<AttributeType> attributeTypeList) {
+		this.attributeTypeList = attributeTypeList;
 	}
 
 	@Override

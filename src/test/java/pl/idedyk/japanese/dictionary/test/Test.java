@@ -40,5 +40,7 @@ public class Test {
 				System.out.println(currentPolishJapaneseEntry.getId());
 			}
 		}
+		
+		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries);
 	}
 }

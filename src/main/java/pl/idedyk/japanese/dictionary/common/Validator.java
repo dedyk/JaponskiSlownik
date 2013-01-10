@@ -438,7 +438,7 @@ public class Validator {
 				continue;
 			}
 			
-			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(String.valueOf(id)) == true) {
+			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
 				continue;
 			}
 			
@@ -463,7 +463,7 @@ public class Validator {
 				continue;
 			}
 			
-			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(String.valueOf(id)) == true) {
+			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
 				continue;
 			}
 			
