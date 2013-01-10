@@ -75,7 +75,7 @@ public class AndroidDictionaryGenerator {
 				
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 		
-		CsvReaderWriter.generateCsv(outputStream, result);
+		CsvReaderWriter.generateCsv(outputStream, result, false);
 		
 		return result;
 	}

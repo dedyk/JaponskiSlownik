@@ -171,25 +171,25 @@ public class CsvReaderWriter {
 		pw.close();
 	}
 	
-	public static void generateCsv(OutputStream out, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
+	public static void generateCsv(OutputStream out, List<PolishJapaneseEntry> polishJapaneseEntries, boolean addKnownDupplicatedId) throws IOException {
 		
 		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
 		
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries);
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId);
 		
 		csvWriter.close();		
 	}
 	
-	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
+	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries, boolean addKnownDupplicatedId) throws IOException {
 		
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
 		
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries);
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId);
 		
 		csvWriter.close();
 	}
 	
-	private static void writePolishJapaneseEntries(CsvWriter csvWriter, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
+	private static void writePolishJapaneseEntries(CsvWriter csvWriter, List<PolishJapaneseEntry> polishJapaneseEntries, boolean addKnownDupplicatedId) throws IOException {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -207,7 +207,10 @@ public class CsvReaderWriter {
 			csvWriter.write(convertListToString(polishJapaneseEntry.getPolishTranslates()));
 			csvWriter.write(polishJapaneseEntry.getInfo());
 			csvWriter.write(polishJapaneseEntry.isUseEntry() == false ? "NO" : "");
-			csvWriter.write(convertListToString(new ArrayList<Integer>(polishJapaneseEntry.getKnownDuplicatedId())));
+			
+			if (addKnownDupplicatedId == true) {
+				csvWriter.write(convertListToString(new ArrayList<Integer>(polishJapaneseEntry.getKnownDuplicatedId())));	
+			}			
 			
 			csvWriter.endRecord();
 		}

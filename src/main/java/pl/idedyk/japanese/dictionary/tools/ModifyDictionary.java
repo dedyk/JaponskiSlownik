@@ -106,6 +106,6 @@ public class ModifyDictionary {
 			currentPolishJapaneseEntry.setRomajiList(romajiListResult);
 		}
 		
-		CsvReaderWriter.generateCsv(destinationFileName, polishJapaneseEntries);
+		CsvReaderWriter.generateCsv(destinationFileName, polishJapaneseEntries, true);
 	}
 }

@@ -44,6 +44,6 @@ public class Test {
 			}
 		}
 		
-		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries);
+		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries, true);
 	}
 }
