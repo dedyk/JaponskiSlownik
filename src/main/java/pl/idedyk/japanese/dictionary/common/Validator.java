@@ -424,7 +424,7 @@ public class Validator {
 			System.out.println(report.toString());
 			
 			System.exit(1);
-		}
+		}		
 	}
 
 	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntryInKanji(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, 
@@ -528,7 +528,55 @@ public class Validator {
 					report.append(currentPolishJapaneseEntry).append("\n");
 				}
 			}
-		}		
+		}	
+		
+		// summary
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			if (polishJapaneseEntry.isUseEntry() == true) {
+				//continue;
+			}
+			
+			int summaryPolishJapaneseEntryHashCode = getSummaryPolishJapaneseEntryHashCode(polishJapaneseEntry);
+
+			List<PolishJapaneseEntry> polishJapaneseEntryListBySummaryHashCodeResult = 
+					findPolishJapaneseEntryListBySummaryHashCode(polishJapaneseEntries, polishJapaneseEntry.getId(), summaryPolishJapaneseEntryHashCode);
+			
+			if (polishJapaneseEntryListBySummaryHashCodeResult.size() == 0) {				
+				throw new RuntimeException("Summary: " + polishJapaneseEntry);
+			}
+			
+			if (polishJapaneseEntryListBySummaryHashCodeResult.size() == 1) {
+				continue;
+			}
+			
+			boolean added = false;
+			int summary2PolishJapaneseEntryHashCode = getSummary2PolishJapaneseEntryHashCode(polishJapaneseEntryListBySummaryHashCodeResult.get(0));
+			
+			boolean wasError = false;
+			
+			for (PolishJapaneseEntry currentPolishJapaneseEntryListBySummaryHashCodeResultItem : polishJapaneseEntryListBySummaryHashCodeResult) {
+				
+				if (getSummary2PolishJapaneseEntryHashCode(currentPolishJapaneseEntryListBySummaryHashCodeResultItem) != summary2PolishJapaneseEntryHashCode &&
+						polishJapaneseEntry.getId() != currentPolishJapaneseEntryListBySummaryHashCodeResultItem.getId() &&
+						polishJapaneseEntry.getKnownDuplicatedId().contains(currentPolishJapaneseEntryListBySummaryHashCodeResultItem.getId()) == false) {
+					
+					if (added == false) {
+						report.append("*Summary*: " + polishJapaneseEntry).append("\n\n");
+						
+						added = true;
+					}
+					
+					report.append(" Summary : " + currentPolishJapaneseEntryListBySummaryHashCodeResultItem).append("\n");
+					
+					wasError = true;
+				}
+			}
+			
+			if (wasError == true) {
+				report.append("\n---\n\n");
+			}
+		}
 		
 		if (report.length() > 0) {
 			
@@ -536,5 +584,48 @@ public class Validator {
 			
 			System.exit(1);
 		}
+	}
+	
+	private static int getSummaryPolishJapaneseEntryHashCode(PolishJapaneseEntry polishJapaneseEntry) {
+		
+		int prime = 31;
+		
+		int result = 1;
+		
+		result = prime * result + polishJapaneseEntry.getKanji().hashCode();
+		result = prime * result + polishJapaneseEntry.getKanaList().hashCode();
+		result = prime * result + polishJapaneseEntry.getPrefixKana().hashCode();
+		
+		return result;
+	}
+
+	private static int getSummary2PolishJapaneseEntryHashCode(PolishJapaneseEntry polishJapaneseEntry) {
+		
+		int prime = 31;
+		
+		int result = 1;
+		
+		result = prime * result + polishJapaneseEntry.getDictionaryEntryType().hashCode();
+		result = prime * result + polishJapaneseEntry.getAttributeTypeList().hashCode();
+		result = prime * result + polishJapaneseEntry.getPolishTranslates().hashCode();
+		result = prime * result + polishJapaneseEntry.getInfo().hashCode();
+		
+		return result;
+	}
+	
+	private static List<PolishJapaneseEntry> findPolishJapaneseEntryListBySummaryHashCode(List<PolishJapaneseEntry> polishJapaneseEntries, int id, int summaryPolishJapaneseEntryHashCode) {
+		
+		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+						
+			int summaryPolishJapaneseEntryHashCode2 = getSummaryPolishJapaneseEntryHashCode(polishJapaneseEntry);
+
+			if (summaryPolishJapaneseEntryHashCode == summaryPolishJapaneseEntryHashCode2) {
+				result.add(polishJapaneseEntry);
+			}
+		}
+				
+		return result;
 	}
 }

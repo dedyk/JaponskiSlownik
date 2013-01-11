@@ -127,13 +127,16 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 
 	@Override
 	public String toString() {
-		return "id=" + id + ", dictionaryType="
+		return "PolishJapaneseEntry [id=" + id + ", dictionaryType="
 				+ dictionaryType + ", dictionaryEntryType="
-				+ dictionaryEntryType + ", wordType=" + wordType
-				+ ", prefixKana=" + prefixKana + ", kanji=" + kanji
-				+ ", kanaList=" + kanaList + ", prefixRomaji=" + prefixRomaji
-				+ ", romajiList=" + romajiList + ", polishTranslates="
-				+ polishTranslates + ", info=" + info + "]";
+				+ dictionaryEntryType + ", attributeTypeList="
+				+ attributeTypeList + ", wordType=" + wordType
+				+ ", prefixKana=" + prefixKana + ", groups=" + groups
+				+ ", kanji=" + kanji + ", kanaList=" + kanaList
+				+ ", prefixRomaji=" + prefixRomaji + ", romajiList="
+				+ romajiList + ", polishTranslates=" + polishTranslates
+				+ ", info=" + info + ", useEntry=" + useEntry
+				+ ", knownDuplicatedId=" + knownDuplicatedId + "]";
 	}
 
 	public int getId() {

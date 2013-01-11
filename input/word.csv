@@ -248,7 +248,7 @@ dzień",,NO,
 221,WORD,WORD_NOUN,,KATAKANA,Genki 1-3,,-,ビデオ,,bideo,video,,NO,
 222,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,朝御飯,あさごはん,,asagohan,śniadanie,,,1894
 223,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,お酒,おさけ,,osake,"sake
-alkohol",,,
+alkohol",również forma sake,,
 224,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,お茶,おちゃ,,ocha,zielona herbata,,,
 225,WORD,WORD_NOUN,,KATAKANA,Genki 1-3,,-,コーヒー,,koohii,kawa,,,
 226,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,晩御飯,ばんごはん,,bangohan,kolacja,,,
@@ -408,7 +408,8 @@ biurko",,,
 365,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,来年,らいねん,,rainen,przyszły rok,,,
 366,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,再来年,さらいねん,,sarainen,rok po przyszłym roku,,,
 367,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,-,さっき,,sakki,przed chwilą,,,
-368,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,時間,じかん,,jikan,czas,,,"1709
+368,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,時間,じかん,,jikan,"czas
+godzina",okres,,"1709
 2956"
 369,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,一時間,いちじかん,,ichijikan,jedna godzina,,,
 370,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,時,とき,,toki,kiedy,"wskazanie jakiegoś momentu w czasie, ~ no ...",,78
@@ -520,9 +521,9 @@ no i",,,
 jakiego rodzaju",,,
 459,WORD,WORD_COUNTERS,,HIRAGANA,Genki 1-5,,枚,まい,,mai,[liczenie płaskich przedmiotów],~,NO,
 460,WORD,UNKNOWN,,HIRAGANA,Genki 1-5,,-,まで,,made,do,"miejsce, czasu",,
-461,WORD,UNKNOWN,,HIRAGANA,Genki 1-5,,-,から,,kara,od,czasu,,522
+461,WORD,UNKNOWN,,HIRAGANA,Genki 1-5,,-,から,,kara,od,"miejsce, czasu",,522
 462,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,電車,でんしゃ,,densha,pociąg,,,
-463,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,病気,びょうき,,byouki,"chory
+463,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,病気,びょうき,,byouki,"chory
 choroba",,,
 464,WORD,UNKNOWN,,HIRAGANA,Genki 1-5,,年をとった,としをとった,,toshi o totta,stary,o człowieku,,
 465,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,若い,わかい,,wakai,młody,o człowieku,,
@@ -539,7 +540,7 @@ choroba",,,
 476,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,電池,でんち,,denchi,bateria,,,
 477,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,お金,おかね,,okane,pieniądze,,,
 478,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,-,おばあさん,,obaasan,"babcia
-starsza kobieta",,,584
+starsza kobieta","spoza swojej rodziny lub własna rodzina, nieformalnie",,
 479,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,お風呂,おふろ,,ofuro,"wanna
 kąpiel",,NO,
 480,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,漢字,かんじ,,kanji,kanji,,,"2355
@@ -623,8 +624,10 @@ kierunek
 wskazówka",,,
 532,WORD,WORD_NOUN,,HIRAGANA,,,-,ごみ,,gomi,śmieci,,,
 533,WORD,WORD_VERB_RU,,HIRAGANA,,を,捨てる,すてる,o,suteru,wyrzucać,,NO,
-534,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,-,おばあさん,,obaasan,babcia,,NO,
-535,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,-,おじいさん,,ojiisan,dziadek,"spoza swojej rodziny lub własna rodzina, nieformalnie",,1077
+534,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,-,おばあさん,,obaasan,"babcia
+starsza kobieta","spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
+535,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,-,おじいさん,,ojiisan,"dziadek
+starszy mężczyzna","spoza swojej rodziny lub własna rodzina, nieformalnie",,
 536,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,-,おばさん,,obasan,"ciocia
 kobieta w średnim wieku",,,
 537,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,-,おじさん,,ojisan,"wujek
@@ -653,7 +656,8 @@ nananin",siedmioro ludzi,liczenie ludzi,,
 557,WORD,WORD_PEOPLE_NUMBER,,HIRAGANA,Genki 1-7,,十人,じゅうにん,,juunin,dziesięcioro ludzi,liczenie ludzi,,
 558,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,髪,かみ,,kami,włosy,,,1776
 559,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,耳,みみ,,mimi,ucho,,NO,
-560,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,目,め,,me,oko,,NO,
+560,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,目,め,,me,oko,,NO,"211
+1360"
 561,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,鼻,はな,,hana,nos,,,987
 562,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,口,くち,,kuchi,usta,,,
 563,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,歯,は,,ha,ząb,,NO,
@@ -678,8 +682,10 @@ stopa",,,
 580,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,妹さん,いもうとさん,,imoutosan,siostra,spoza swojej rodziny,,
 581,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,ご主人,ごしゅじん,,goshujin,mąż,spoza swojej rodziny,,
 582,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,奥さん,おくさん,,okusan,żona,spoza swojej rodziny,,
-583,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,-,おじいさん,,ojiisan,dziadek,"spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
-584,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,-,おばあさん,,obaasan,babcia,"spoza swojej rodziny lub własna rodzina, nieformalnie",,478
+583,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,-,おじいさん,,ojiisan,"dziadek
+starszy mężczyzna","spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
+584,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,-,おばあさん,,obaasan,"babcia
+starsza kobieta","spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
 585,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,お子さん,おこさん,,okosan,dziecko,spoza swojej rodziny,,
 586,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,お父さん,おとうさん,,otousan,ojciec,spoza swojej rodziny lub własna rodzina - nieformalnie,NO,
 587,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,お母さん,おかあさん,,okaasan,matka,spoza swojej rodziny lub własna rodzina - nieformalnie,NO,
@@ -698,8 +704,10 @@ właściciel","własna rodzina, formalnie",,
 599,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,妻,つま,,tsuma,żona,"własna rodzina, formalnie",,
 600,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,祖父,そふ,,sofu,dziadek,"własna rodzina, formalnie",,
 601,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,祖母,そぼ,,sobo,babcia,"własna rodzina, formalnie",,
-602,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,-,おじいさん,,ojiisan,dziadek,"spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
-603,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,-,おばあさん,,obaasan,babcia,"spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
+602,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,-,おじいさん,,ojiisan,"dziadek
+starszy mężczyzna","spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
+603,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,-,おばあさん,,obaasan,"babcia
+starsza kobieta","spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
 604,WORD,WORD_NOUN,,HIRAGANA,,,うちの子,うちのこ,,uchi no ko,dziecko,własna rodzina,,
 605,WORD,WORD_NOUN,,HIRAGANA,,,銀行員,ぎんこういん,,ginkouin,pracownik banku,,,
 606,WORD,UNKNOWN,,HIRAGANA,,,員,いん,,in,... jakaś organizacja,,,
@@ -885,12 +893,12 @@ Genki 2-18",に,出る,でる,ni,deru,pojawić się,,,772
 Genki 2-18",を,出る,でる,o,deru,wychodzić,,,771
 773,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-9,,運動する,うんどうする,,undou suru,ćwiczyć,fizyczne,,
 774,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-9,を,散歩する,さんぽする,o,sanpo suru,spacerować,~ o miejsce,,
-775,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,から,,kara,od,,NO,
+775,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,から,,kara,od,"miejsce, czasu",NO,522
 776,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,是非,ぜひ,,zehi,koniecznie,,,
 777,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,ところで,,tokorode,przy okazji,,,
 778,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,みんな,,minna,wszyscy,,NO,
 779,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,もう,,mou,już,,,
-780,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,まだ,,mada,jeszcze nie,+ czasownik w formie negatywnej,NO,
+780,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,まだ,,mada,jeszcze nie,+ czasownik w formie te negatywnej,NO,
 781,WORD,WORD_COUNTERS,,HIRAGANA,Genki 1-9,,一つ,ひとつ,,hitotsu,jeden,klasyfikator ogólny,,
 782,WORD,WORD_COUNTERS,,HIRAGANA,Genki 1-9,,二つ,ふたつ,,futatsu,dwa,klasyfikator ogólny,,
 783,WORD,WORD_COUNTERS,,HIRAGANA,Genki 1-9,,三つ,みっつ,,mittsu,trzy,klasyfikator ogólny,,
@@ -1042,7 +1050,7 @@ zdać do następnej klasy",,,"383
 912,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-11,に,登る,のぼる,ni,noboru,wspinać się,na górę,,2271
 913,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-11,,働く,はたらく,,hataraku,pracować,,,
 914,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,,仕事をする,しごとをする,,shigoto o suru,pracować,,,
-915,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-11,に,勤める,つとめる,ni,tsutomeru,pracować dla,,NO,
+915,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-11,に,勤める,つとめる,ni,tsutomeru,pracować dla,niefizycznie,NO,
 916,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,疲れる,つかれる,,tsukareru,"być zmęczony
 zmęczyć się",,,
 917,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,-,やめる,,yameru,rezygnować,,,
@@ -1104,13 +1112,13 @@ ratować",,,
 966,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-11,,例えば,たとえば,,tatoeba,"na przykład
 np.",,,
 967,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,-,ほかに,,hokani,coś innego,,,
-968,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,番,ばん,,ban,numer,~,,
-969,WORD,WORD_NOUN,,KATAKANA,Genki 1-11,,-,ページ,,peeji,strona,~,NO,
+968,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-11,,番,ばん,,ban,numer,~,,
+969,WORD,WORD_NOUN,,KATAKANA,Genki 1-11,,-,ページ,,peeji,strona,,NO,
 970,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,行目,ぎょうめ,,gyoume,numer linii,~,,
 971,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,二人ずつ,ふたりずつ,,futarizutsu,dla każdych dwóch osób,,,
 972,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,足,あし,,ashi,"noga
 stopa",,NO,
-973,WORD,UNKNOWN,,HIRAGANA,Genki 1-12,,意味,いみ,,imi,znaczenie,,NO,
+973,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,意味,いみ,,imi,znaczenie,,NO,
 974,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,お腹,おなか,,onaka,brzuch,,NO,
 975,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,風邪,かぜ,,kaze,przeziębienie,,,1044
 976,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,彼女,かのじょ,,kanojo,"ona
@@ -1124,7 +1132,7 @@ gra",,,
 981,WORD,WORD_NOUN,,KATAKANA,Genki 1-12,,-,ジュース,,juusu,sok,,,
 982,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,政治,せいじ,,seiji,polityka,,NO,
 983,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,成績,せいせき,,seiseki,ocena,na teście i etc,,
-984,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,-,せき,,seki,kaszel,,,
+984,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,-,せき,,seki,kaszel,,,2777
 985,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,-,のど,,nodo,gardło,,,
 986,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,歯,は,,ha,ząb,,NO,
 987,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,花,はな,,hana,kwiatek,,,561
@@ -1221,7 +1229,7 @@ denerwować się",,,
 1066,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 1-12,,-,かわいそう,,kawai sou,żałosny,,,
 1067,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,一年に一度,いちねんにいちど,,ichinen ni ichido,raz do roku,,,
 1068,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,-,までに,,made ni,"do kiedy
-nie później niż",~,,
+nie później niż",,,
 1069,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,願い,ねがい,,negai,"życzenie
 prośba",,,
 1070,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 1-12,,-,かなう,,kanau,"zrealizować
@@ -1233,7 +1241,7 @@ spełnić",,,
 1075,WORD,UNKNOWN,,HIRAGANA,,,値段,ねだん,,nedan,cena,,,
 1076,WORD,WORD_NOUN,,KATAKANA,Genki 2-13,,-,ウエイター,,ueitaa,kelner,,,
 1077,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,-,おじいさん,,ojiisan,"dziadek
-starszy mężczyzna",,,535
+starszy mężczyzna","spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
 1078,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,お宅,おたく,,otaku,twój,dom,,
 1079,WORD,UNKNOWN,,HIRAGANA,Genki 2-13,,大人,おとな,,otona,dorosły,,NO,
 1080,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,外国語,がいこくご,,gaikokugo,język obcy,,,
@@ -1364,7 +1372,8 @@ kobieta w średnim wieku",,NO,
 1178,WORD,WORD_NOUN,,KATAKANA,Genki 2-14,,-,コップ,,koppu,"kubek
 szklanka",,,
 1179,WORD,WORD_NOUN,,HIRAGANA,Genki 2-14,,お皿,おさら,,osara,talerz,,NO,
-1180,WORD,UNKNOWN,,HIRAGANA,Genki 2-14,,時間,じかん,,jikan,czas,,NO,
+1180,WORD,UNKNOWN,,HIRAGANA,Genki 2-14,,時間,じかん,,jikan,"czas
+godzina",okres,NO,
 1181,WORD,WORD_NOUN,,KATAKANA,Genki 2-14,,-,チョコレート,,chokoreeto,czekolada,,,
 1182,WORD,WORD_NOUN,,KATAKANA,Genki 2-14,,-,メール,,meeru,e-mail,,,
 1183,WORD,WORD_NOUN,,HIRAGANA,Genki 2-14,,-,めいぐるみ,,meigurumi,wypchane zwierze,np. pluszowy miś,,
@@ -1665,7 +1674,7 @@ haczyk",,,
 1432,WORD,WORD_NOUN,,HIRAGANA,,,鍵,かぎ,,kagi,"klucz
 zamknięcie",,,
 1433,WORD,WORD_VERB_RU,,HIRAGANA,,に,鍵をかける,かぎをかける,ni,kagi o kakeru,"zamykać
-zabezpieczyć",,,
+zabezpieczać",,,
 1434,WORD,WORD_NOUN,,HIRAGANA,,,泥棒,どろぼう,,dorobou,złodziej,,,
 1435,WORD,WORD_NOUN,,HIRAGANA,,に,注意,ちゅうい,ni,chuui,"uwaga o
 ostrzeżenie przed",,,
@@ -1673,36 +1682,36 @@ ostrzeżenie przed",,,
 1437,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,一時,いちじ,,ichiji,pierwsza godzina,,NO,
 1438,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-3,,一年生,いちねんせい,,ichinensei,student pierwszego roku,,,
 1439,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,一分,いっぷん,,ippun,jedna minuta,,NO,
-1440,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,一つ,ひとつ,,hitotsu,jeden,klasyfikator ogólny,NO,
+1440,KANJI,WORD_COUNTERS,,HIRAGANA,Genki kanji 1-3,,一つ,ひとつ,,hitotsu,jeden,klasyfikator ogólny,NO,
 1441,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,二時,にじ,,niji,druga godzina,,NO,
 1442,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-3,,二年生,にねんせい,,ninensei,student drugiego roku,,,
-1443,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,二つ,ふたつ,,futatsu,dwa,klasyfikator ogólny,NO,
+1443,KANJI,WORD_COUNTERS,,HIRAGANA,Genki kanji 1-3,,二つ,ふたつ,,futatsu,dwa,klasyfikator ogólny,NO,
 1444,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-3,,二つ日間,ふつかかん,,futsukakan,dwa dni,,,
 1445,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,三時,さんじ,,sanji,trzecia godzina,,NO,
 1446,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-3,,三年生,さんねんせい,,sannensei,student trzeciego roku,,,
-1447,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,三つ,みっつ,,mittsu,trzy,klasyfikator ogólny,NO,
+1447,KANJI,WORD_COUNTERS,,HIRAGANA,Genki kanji 1-3,,三つ,みっつ,,mittsu,trzy,klasyfikator ogólny,NO,
 1448,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,四時,よじ,,yoji,czwarta godzina,,NO,
 1449,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-3,,四年生,よねんせい,,yonensei,student czwartego roku,,,
-1450,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,四つ,よっつ,,yottsu,cztery,klasyfikator ogólny,NO,
+1450,KANJI,WORD_COUNTERS,,HIRAGANA,Genki kanji 1-3,,四つ,よっつ,,yottsu,cztery,klasyfikator ogólny,NO,
 1451,KANJI,WORD_MONTH,,HIRAGANA,Genki kanji 1-3,,四月,しがつ,,shigatsu,kwiecień,,NO,
 1452,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,五時,ごじ,,goji,piąta godzina,,NO,
-1453,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,五つ,いつつ,,itsutsu,pięć,klasyfikator ogólny,NO,
+1453,KANJI,WORD_COUNTERS,,HIRAGANA,Genki kanji 1-3,,五つ,いつつ,,itsutsu,pięć,klasyfikator ogólny,NO,
 1454,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,六時,ろくじ,,rokuji,szósta godzina,,NO,
 1455,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,六百,ろっぴゃく,,roppyaku,sześćset,,NO,
 1456,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,六分,ろっぷん,,roppun,sześć minut,,NO,
-1457,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,六つ,むっつ,,muttsu,sześć,klasyfikator ogólny,NO,
+1457,KANJI,WORD_COUNTERS,,HIRAGANA,Genki kanji 1-3,,六つ,むっつ,,muttsu,sześć,klasyfikator ogólny,NO,
 1458,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,七時,しちじ,,shichiji,siódma godzina,,NO,
-1459,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,七つ,ななつ,,nanatsu,siedem,klasyfikator ogólny,NO,
+1459,KANJI,WORD_COUNTERS,,HIRAGANA,Genki kanji 1-3,,七つ,ななつ,,nanatsu,siedem,klasyfikator ogólny,NO,
 1460,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,八時,はちじ,,hachiji,ósma godzina,,NO,
 1461,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,八百,はっぴゃく,,happyaku,osiemset,,NO,
 1462,KANJI,WORD_AGE,,HIRAGANA,Genki kanji 1-3,,八歳,はっさい,,hassai,osiem lat,wiek,NO,
-1463,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,八つ,やっつ,,yattsu,osiem,klasyfikator ogólny,NO,
+1463,KANJI,WORD_COUNTERS,,HIRAGANA,Genki kanji 1-3,,八つ,やっつ,,yattsu,osiem,klasyfikator ogólny,NO,
 1464,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,九時,くじ,,kuji,dziewiąta godzina,,NO,
 1465,KANJI,WORD_AGE,,HIRAGANA,Genki kanji 1-3,,九歳,きゅうさい,,kyuusai,dziewięć lat,wiek,NO,
-1466,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,九つ,ここのつ,,kokonotsu,dziewięć,klasyfikator ogólny,NO,789
+1466,KANJI,WORD_COUNTERS,,HIRAGANA,Genki kanji 1-3,,九つ,ここのつ,,kokonotsu,dziewięć,klasyfikator ogólny,NO,789
 1467,KANJI,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,十時,じゅうじ,,juuji,dziesiąta godzina,,NO,
 1468,KANJI,WORD_AGE,,HIRAGANA,Genki kanji 1-3,,十歳,じゅっさい,,jussai,dziesięć lat,wiek,NO,
-1469,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,十,とお,,too,dziesięć,klasyfikator ogólny,NO,"11
+1469,KANJI,WORD_COUNTERS,,HIRAGANA,Genki kanji 1-3,,十,とお,,too,dziesięć,klasyfikator ogólny,NO,"11
 790"
 1470,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,三百,さんびゃく,,sanbyaku,trzysta,,NO,
 1471,KANJI,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,六百,ろっぴゃく,,roppyaku,sześćset,,NO,
@@ -1723,8 +1732,8 @@ ostrzeżenie przed",,,
 1486,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,母の日,ははのひ,,haha no hi,dzień matki,druga niedziela maja,,
 1487,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,日記,にっき,,nikki,"pamiętnik
 dziennik",,NO,
-1488,KANJI,WORD_DAY_NUMBER,,HIRAGANA,Genki kanji 1-4,,三日,みっか,,mikka,trzeci,dzień miesiąca,NO,
-1489,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,本,ほん,,hon,książka,,NO,
+1488,KANJI,WORD_DAY_NUMBER,,HIRAGANA,Genki kanji 1-4,,三日,みっか,,mikka,trzeci,dzień miesiąca,NO,1127
+1489,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,本,ほん,,hon,książka,,NO,1221
 1490,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,日本,にほん,,nihon,Japonia,,NO,
 1491,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,日本語,にほんご,,nihongo,język japoński,,,
 1492,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,山本さん,やまもとさん,,Yamamoto san,Pan Yamamoto,,,
@@ -1753,7 +1762,7 @@ dziennik",,NO,
 1515,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,地下鉄,ちかてつ,,chikatetsu,metro,,NO,
 1516,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-4,が,下手,へた,ga,heta,słaby w,,NO,
 1517,KANJI,WORD_LOCATION,,HIRAGANA,Genki kanji 1-4,,中,なか,,naka,środek,,NO,
-1518,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,中国,ちゅうごく,,chuugoku,Chiny,,NO,
+1518,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,中国,ちゅうごく,,chuugoku,Chiny,,NO,2064
 1519,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,中学,ちゅうがく,,chuugaku,gimnazjum,,,
 1520,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-4,,一年中,いちねんじゅう,,ichinenjuu,cały rok,,,
 1521,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-4,,三時半,さんじはん,,sanji han,3:30,,,
@@ -1846,13 +1855,13 @@ siebie",,,
 1601,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,外国,がいこく,,gaikoku,zagraniczny kraj,,NO,
 1602,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,外国人,がいこくじん,,gaikokujin,obcokrajowiec,,NO,
 1603,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,外,そと,,soto,na zewnątrz,,,
-1604,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,中国,ちゅうごく,,chuugoku,Chiny,,NO,
+1604,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,中国,ちゅうごく,,chuugoku,Chiny,,NO,2064
 1605,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,国,くに,,kuni,kraj,,NO,
 1606,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,東京,とうきょう,,toukyou,Tokio,miasto w Japonii,NO,
 1607,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,京子,きょうこ,,kyouko,Kioko,,,
 1608,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,京都市,きょうとし,,kyouto shi,Kioto,miasto w Japonii,,
 1609,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,子供,こども,,kodomo,dziecko,,,
-1610,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,京子,きょうこ,,kyouko,Kyoko,,NO,
+1610,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,京子,きょうこ,,kyouko,Kioko,,NO,
 1611,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,女の子,おんなのこ,,onna no ko,dziewczynka,,NO,
 1612,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,男の子,おとこのこ,,otoko no ko,chłopczyk,,NO,
 1613,KANJI,WORD_NOUN,,HIRAGANA_KATAKANA,Genki kanji 1-7,,電子メール,でんしメール,,denshi meeru,email,,,
@@ -1922,8 +1931,7 @@ prąd
 1669,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,車,くるま,,kuruma,samochód,,NO,
 1670,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,電車,でんしゃ,,densha,pociąg,,NO,
 1671,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,自転車,じてんしゃ,,jitensha,rower,,NO,
-1672,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-8,,休む,やすむ,,yasumu,"być nieobecny
-odpoczywać",,NO,
+1672,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-8,,休む,やすむ,,yasumu,odpoczywać,,NO,
 1673,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,休み,やすみ,,yasumi,"wakacje
 odpoczynek
 nieobecny",,NO,
@@ -1966,7 +1974,8 @@ pora deszczowa",,,
 1706,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,友だち,ともだち,,tomodachi,przyjaciel,,NO,
 1707,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,親友,しんゆう,,shin'yuu,najlepszy przyjaciel,,,
 1708,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,友人,ゆうじん,,yuujin,przyjaciel,bardziej oficjalnie,,
-1709,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,時間,じかん,,jikan,godzina,okres,,"368
+1709,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,時間,じかん,,jikan,"czas
+godzina",okres,,"368
 2956"
 1710,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,二時間,にじかん,,nijikan,dwie godziny,,,
 1711,KANJI,WORD_LOCATION,,HIRAGANA,Genki kanji 1-9,,間,あいだ,,aida,pomiędzy,,NO,
@@ -2011,7 +2020,9 @@ słuszny",,,
 1746,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,町長,ちょうちょう,,chouchou,burmistrz,małego miasta,,
 1747,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 1-10,,長い,ながい,,nagai,długi,,NO,
 1748,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,長男,ちょうなん,,chounan,pierwszy syn,,,
-1749,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,道,みち,,michi,droga,,NO,
+1749,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,道,みち,,michi,"droga
+kierunek
+wskazówka",,NO,
 1750,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,書道,しょどう,,shodou,kaligrafia,,,
 1751,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,柔道,じゅうどう,,juudou,judo,,,
 1752,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,北海道,ほっかいどう,,hokkaidou,Hokkaido,Jedna z japońskich wysp,NO,
@@ -2057,7 +2068,8 @@ jasny",,,
 1786,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,明日,あした,,ashita,jutro,,NO,
 1787,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,説明,せつめい,,setsumei,wyjaśnienie,,,
 1788,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,病院,びょういん,,byouin,szpital,,NO,
-1789,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,病気,びょうき,,byouki,choroba,,NO,
+1789,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,病気,びょうき,,byouki,"chory
+choroba",,NO,
 1790,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,重病,じゅうびょう,,juubyou,poważnie chory,,,
 1791,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,急病,きゅうびょう,,kyuubyou,nagła choroba,,,
 1792,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,病院,びょういん,,byouin,szpital,,NO,
@@ -2092,7 +2104,7 @@ uparty",,,
 1819,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-11,,有名,ゆうめい,,yuumei,sławny,,NO,
 1820,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,有料,ゆうりょう,,yuuryou,opłata,,,
 1821,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-11,が,有る,ある,ga,aru,"być
-istnieć",,NO,
+istnieć",do rzeczy martwych,NO,
 1822,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,旅行,りょこう,,ryokou,podróż,,NO,
 1823,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,旅館,りょかん,,ryokan,zajazd,w stylu japońskim,NO,
 1824,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,一人旅,ひとりたび,,hitoritabi,podróżować samotnie,,,
@@ -2168,7 +2180,8 @@ zwłaszcza",,NO,
 1889,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,安い,やすい,,yasui,tani,,NO,
 1890,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,安心,あんしん,,anshin,"spokój
 ukojenie",,,
-1891,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,不安,ふあん,,fuan,niespokojny,,NO,
+1891,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,不安,ふあん,,fuan,"niespokojny
+zaniepokojony",,NO,
 1892,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,安全,あんぜん,,anzen,"bezpieczny
 bezpieczeństwo",,,
 1893,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,ご飯,ごはん,,gohan,"jedzenie
@@ -2211,7 +2224,7 @@ cały dzień",,NO,
 narzeczony",,NO,
 1926,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,彼女,かのじょ,,kanojo,"ona
 narzeczona",,,
-1927,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,時代,じだい,,jidai,"wiek
+1927,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,時代,じだい,,jidai,"wiek
 era",,NO,
 1928,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,電気代,でんきだい,,denki dai,opłata za prąd,,,
 1929,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,六十年代,ろくじゅうねんだい,,rokujuunen dai,"lata 60
@@ -2228,7 +2241,7 @@ naród",,,
 1938,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,父親,ちちおや,,chichioya,ojciec,formalnie,NO,
 1939,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-14,,親切,しんせつ,,shinsetsu,miły,,NO,
 1940,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,親友,しんゆう,,shin'yuu,najlepszy przyjaciel,,NO,
-1941,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,両親,りょうしん,,ryoushin,rodzice,,NO,
+1941,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,両親,りょうしん,,ryoushin,rodzice,bardziej grzecznie,NO,
 1942,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-14,,親しい,したしい,,shitashii,poufały,,,
 1943,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-14,,親切,しんせつ,,shinsetsu,miły,,NO,
 1944,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-14,,切る,きる,,kiru,ciąć,,NO,
@@ -2839,7 +2852,7 @@ ostrzeżenie przed",,NO,
 2400,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,興味,きょうみ,,kyoumi,zainteresowanie,,,
 2401,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,味噌,みそ,,miso,pasta sojowa,,,
 2402,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,味,あじ,,aji,smak,,,
-2403,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-15,,注意する,ちゅういする,,chuui suru,ostrzegać,kogoś,NO,
+2403,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-15,に,注意する,ちゅういする,ni,chuui suru,ostrzegać,kogoś,NO,
 2404,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-15,,注文する,ちゅうもんする,,chuumon suru,"zamawiać
 złożyć zamówienie",,,
 2405,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,注文,ちゅうもん,,chuumon,zamówienie,,,
@@ -3161,7 +3174,9 @@ Genki 2-18",を,開ける,あける,o,akeru,otwierać,,NO,
 2627,KANJI,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki kanji 2-16,が,開く,あく,ga,aku,otwiera się,,,"1908
 2017
 3235"
-2628,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-16,,開く,ひらく,,hiraku,"otworzyć, poszerzać","np. konto w banku, pączek kwiatu lub parasolkę; odstęp, dystans, szerokość",NO,
+2628,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-16,,開く,ひらく,,hiraku,"otworzyć
+poszerzać
+urządzać (np. przyjęcie)","np. konto w banku, pączek kwiatu lub parasolkę; odstęp, dystans, szerokość",NO,
 2629,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,開店,かいてん,,kaiten,otwierać sklep,,,
 2630,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,部屋,へや,,heya,pokój,,NO,
 2631,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,本屋,ほんや,,hon'ya,księgarnia,,NO,
@@ -3257,7 +3272,7 @@ niezdolny",,NO,
 2684,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,味方,みかた,,mikata,"obrońca
 przyjaciel
 sojusznik
-sprzymierzeniec",,NO,
+sprzymierzeniec","znajdujący się w tej samej grupie, co ja",NO,
 2685,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,-,こと,,koto,"rzecz
 sprawa
 zagadnienie
@@ -3414,7 +3429,7 @@ poza tym",,,
 np.",,NO,
 2785,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-17,に,比べて,くらべて,ni,kurabete,w porównaniu z,~,,
 2786,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-17,に,依ると,よると,ni,yoruto,według,,,
-2787,WORD,UNKNOWN,,HIRAGANA,Genki 2-17,,前,まえ,,mae,przed,,NO,
+2787,WORD,WORD_LOCATION,,HIRAGANA,Genki 2-17,,前,まえ,,mae,przed,,NO,
 2788,WORD,UNKNOWN,,HIRAGANA,Genki 2-17,,-,やっぱり,,yappari,"mimo wszystko
 mimo to",,NO,
 2789,WORD,WORD_NOUN,,KATAKANA,,,-,コアラ,,koara,miś koala,,,
