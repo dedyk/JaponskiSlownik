@@ -833,7 +833,7 @@ lokalizacja",,,
 719,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,残念,ざんねん,,zannen,"trudno
 szkoda",... desu ne,,
 720,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,-,まだ,,mada,jeszcze nie,+ czasownik w formie te negatywnej,,
-721,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,-,みんな,,minna,wszyscy,,,
+721,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,皆,みんな,,minna,wszyscy,,,
 722,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,何か,なにか,,nanika,coś,nanika [partykuła],NO,
 723,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,-,だれか,,dareka,ktoś,"dareka [partykuła], do osób",,
 724,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,-,どれか,,doreka,któryś,"doreka [partykuła], który",,
@@ -896,7 +896,7 @@ Genki 2-18",を,出る,でる,o,deru,wychodzić,,,771
 775,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,から,,kara,od,"miejsce, czasu",NO,522
 776,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,是非,ぜひ,,zehi,koniecznie,,,
 777,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,ところで,,tokorode,przy okazji,,,
-778,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,みんな,,minna,wszyscy,,NO,
+778,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,皆,みんな,,minna,wszyscy,,NO,
 779,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,もう,,mou,już,,,
 780,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,まだ,,mada,jeszcze nie,+ czasownik w formie te negatywnej,NO,
 781,WORD,WORD_COUNTERS,,HIRAGANA,Genki 1-9,,一つ,ひとつ,,hitotsu,jeden,klasyfikator ogólny,,
@@ -1039,7 +1039,8 @@ zajęcia",,,
 903,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,山,やま,,yama,góra,,,
 904,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,夢,ゆめ,,yume,marzenie,,,
 905,WORD,WORD_NOUN,,KATAKANA,Genki 1-11,,-,ルームメート,,ruumumeeto,współlokator,,,
-906,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-11,,-,うそをつく,,uso o tsuku,kłamać,,,
+906,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-11,,嘘をつく,うそをつく,,uso o tsuku,"kłamać
+oszukiwać",,,
 907,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-11,,お腹がすく,おなかがすく,,onaka ga suku,być głodnym,,,
 908,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-11,,飼う,かう,,kau,hodować,zwierzaka,,381
 909,WORD,WORD_VERB_U,,KATAKANA_HIRAGANA,Genki 1-11,,-,サボる,,saboru,opuszczać zajęcia,,,
@@ -2211,7 +2212,7 @@ nosić","ubranie, powyżej pasa",NO,
 1915,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,着物,きもの,,kimono,kimono,,NO,
 1916,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-13,,大阪着,おおさかちゃく,,oosaka chaku,przybyć do Osaki,,,
 1917,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-13,,同じ,おなじ,,onaji,taki sam,,NO,
-1918,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-13,,同時,どうじ,,douji,w tym samym czasie,,,
+1918,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-13,,同時,どうじ,,douji,w tym samym czasie,,,3308
 1919,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,海,うみ,,umi,morze,,NO,
 1920,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,日本海,にほんかい,,nihon kai,Morze Japońskie,,,
 1921,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-13,,海外,かいがい,,kaigai,"za morzem
@@ -2723,6 +2724,7 @@ hałaśliwy",,,
 hałasować
 przeszkadzać",,,
 2314,WORD,WORD_VERB_U,,HIRAGANA,,,触る,さわる,,sawaru,"dotykać
+dotknąć
 ruszać",,,
 2315,WORD,WORD_NOUN,,HIRAGANA,,,内科,ないか,,naika,lekarz,internista,,
 2316,WORD,WORD_NOUN,,HIRAGANA,,,皮膚科,ひふか,,hifuka,dermatologia,,,
@@ -4269,3 +4271,49 @@ ruiny",,,3212
 3292,WORD,WORD_NOUN,,HIRAGANA,,,涯,はて,,hate,horyzont,,,2886
 3293,WORD,WORD_VERB_U,,HIRAGANA,,,挿す,さす,,sasu,"wciskać
 wkładać do",,,3067
+3294,WORD,WORD_NOUN,,HIRAGANA,,,天文学者,てんもんがくしゃ,,tenmon gakusha,astronom,,,
+3295,WORD,WORD_NOUN,,KATAKANA,,,-,トルン,,torun,Toruń,,,
+3296,WORD,WORD_NOUN,,HIRAGANA,,,法学,ほうがく,,hougaku,prawo,nauka,,
+3297,WORD,WORD_NOUN,,HIRAGANA,,,博士,はかせ,,hakase,doktor,tytuł naukowy,,
+3298,WORD,WORD_NOUN,,KATAKANA,,,-,オルシュティン,,orushutin,Olsztyn,,,
+3299,WORD,UNKNOWN,,HIRAGANA,,,-,たった,,tatta,dopiero,,,
+3300,WORD,WORD_NOUN,,KATAKANA,,,-,ニュルンベルク,,nyurunberuku,Norymberga,,,
+3301,WORD,WORD_NOUN,,HIRAGANA,,,記述,きじゅつ,,kijutsu,opis,,,
+3302,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,記述する,きじゅつする,,kijutsu suru,opisywać,,,
+3303,WORD,WORD_NOUN,,HIRAGANA,,,地動説,ちどうせつ,,chidousetsu,heliocentryzm,,,
+3304,WORD,WORD_NOUN,,KATAKANA,,,-,モデル ,,moderu,model,,,
+3305,WORD,WORD_NOUN,,HIRAGANA,,,嘘,うそ,,uso,"kłamstwo
+oszustwo
+fałsz",,,
+3306,WORD,WORD_VERB_RU,,HIRAGANA,,,虐げる,しいたげる,,shiitageru,"uciskać
+tyranizować",,,
+3307,WORD,UNKNOWN,,HIRAGANA,,,天体の回転について,てんたいかいてんについて,,tentai kaiten nitsuite,O obrotach sfer niebieskich,Dzieło Mikołaja Kopernika,,
+3308,WORD,WORD_NOUN,,HIRAGANA,,,童子,どうじ,,douji,"dziecko
+chłopczyk",,,1918
+3309,WORD,WORD_NOUN,,HIRAGANA,,,童顔,どうがん,,dougan,twarz chłopięca,,,
+3310,WORD,WORD_NOUN,,HIRAGANA,,,童謡,どうよう,,douyou,"piosenki dla dzieci
+dziecięce piosenki",,,
+3311,WORD,WORD_NOUN,,HIRAGANA,,,童話,どうわ,,douwa,"opowiadania
+bajki dla dzieci",,,
+3312,WORD,WORD_NOUN,,HIRAGANA,,,童貞,どうてい,,doutei,"czystość
+niewinność
+cnota
+dziewictwo (płci męskiej)
+prawiczek",,,
+3313,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,費やす,ついやす,,tsuiyasu,"wydawać
+używać
+tracić",,,
+3314,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,費える,ついえる,,tsuieru,"pomniejszać się
+być marnowanym
+być zużytym",,,
+3315,WORD,WORD_NOUN,,HIRAGANA,,,費用,ひよう,,hiyou,"koszt
+wydatek",,,
+3316,WORD,WORD_NOUN,,HIRAGANA,,,旅費,りょひ,,ryohi,koszty podróży,,,
+3317,WORD,WORD_NOUN,,HIRAGANA,,,生活費,せいかつひ,,seikatsuhi,"koszty utrzymania
+koszty życia",,,
+3318,WORD,WORD_NOUN,,HIRAGANA,,,消費,しょうひ,,shouhi,"konsumpcja
+zużycie",,,
+3319,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,消費する,しょうひする,,shouhi suru,"konsumować
+zużywać",,,
+3320,WORD,WORD_NOUN,,HIRAGANA,,,経費,けいひ,,keihi,"koszt
+wydatek",,,
