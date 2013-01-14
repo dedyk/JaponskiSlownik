@@ -9,6 +9,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
@@ -627,5 +628,23 @@ public class Validator {
 		}
 				
 		return result;
+	}
+
+	public static void validateDuplicateKanjiEntriesList(List<KanjiEntry> kanjiEntries) throws JapaneseDictionaryException {
+		
+		Map<String, KanjiEntry> alreadyKanjiEntryMap = new HashMap<String, KanjiEntry>();
+		
+		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+			
+			KanjiEntry kanjiEntryInMap = alreadyKanjiEntryMap.get(currentKanjiEntry.getKanji());
+			
+			if (kanjiEntryInMap == null) {
+				
+				alreadyKanjiEntryMap.put(currentKanjiEntry.getKanji(), currentKanjiEntry);
+				
+			} else {
+				throw new JapaneseDictionaryException("Duplicate kanji entry: \n\t" + kanjiEntryInMap + "\n\t" + currentKanjiEntry + "\n"); 
+			}
+		}
 	}
 }

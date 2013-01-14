@@ -83,4 +83,11 @@ public class KanjiEntry {
 	public void setGroups(List<String> groups) {
 		this.groups = groups;
 	}
+
+	@Override
+	public String toString() {
+		return "KanjiEntry [id=" + id + ", kanji=" + kanji
+				+ ", polishTranslates=" + polishTranslates + ", info=" + info
+				+ ", groups=" + groups + ", generated=" + generated + "]";
+	}
 }

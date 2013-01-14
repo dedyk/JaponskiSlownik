@@ -147,6 +147,8 @@ public class AndroidDictionaryGenerator {
 		
 		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2);
 		
+		Validator.validateDuplicateKanjiEntriesList(kanjiEntries);
+		
 		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2);
 		
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
