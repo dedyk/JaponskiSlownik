@@ -263,7 +263,8 @@ alkohol",,,
 235,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,明日,あした,,ashita,jutro,,,
 236,WORD,WORD_ASK,,HIRAGANA,Genki 1-3,,-,いつ,,itsu,kiedy,,,
 237,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,今日,きょう,,kyou,dziś,,,
-238,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,-,ごろ,,goro,około,do czasu,,
+238,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,頃,ごろ,,goro,"czas
+około",to samo co toki,,
 239,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,今晩,こんばん,,konban,dziś wieczorem,,,
 240,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,週末,しゅうまつ,,shuumatsu,weekend,,,
 241,WORD,WORD_DAY_WEEK,,HIRAGANA,Genki 1-3,,土曜日,どようび,,doyoubi,sobota,ziemia,,
@@ -1339,7 +1340,8 @@ zwłaszcza",,,
 1151,WORD,WORD_VERB_IRREGULAR,,KATAKANA_HIRAGANA,Genki dodatkowe 2-13,,-,ニヤニヤする,,niyaniya suru,szczerzyć się,,,
 1152,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 2-13,,不安,ふあん,,fuan,"niespokojny
 zaniepokojony",,,
-1153,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-13,,気分が悪い,きぷんがわるい,,kipun ga warui,czuć się źle,,,
+1153,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-13,,気分が悪い,きぷんがわるい,,kipun ga warui,"czuć się źle
+być w złym nastroju",,,
 1154,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,体,からだ,,karada,ciało,,,
 1155,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-13,,体にいい,からだにいい,,karada ni ii,"zdrowe
 dobre dla ciała",,,
@@ -2197,7 +2199,8 @@ gotowany ryż",,,289
 1896,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,牛肉,ぎゅうにく,,gyuuniku,wołowina,,NO,
 1897,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,肉屋,にくや,,nikuya,sklep mięsny,,,
 1898,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,悪い,わるい,,warui,zły,,NO,
-1899,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,気分が悪い,きぷんがわるい,,kipun ga warui,czuć się źle,,NO,
+1899,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,気分が悪い,きぷんがわるい,,kipun ga warui,"czuć się źle
+być w złym nastroju",,NO,
 1900,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-13,,最悪,さいあく,,saiaku,najgorszy,,,
 1901,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,悪魔,あくま,,akuma,diabeł,,,
 1902,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,体,からだ,,karada,ciało,,NO,
@@ -2912,7 +2915,8 @@ kula ziemska",planeta,NO,
 2439,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,地震,じしん,,jishin,trzęsienie ziemi,,NO,
 2440,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,広場,ひろば,,hiroba,"open space
 przestrzenne miejsce",,NO,
-2441,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,場所,ばしょ,,basho,miejsce,fizyczne,,
+2441,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,場所,ばしょ,,basho,"miejsce
+miejsce w świecie (do osób)",fizyczne,,
 2442,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,駐車場,ちゅうしゃじょう,,chuushajou,miejsce parkingowe,,NO,
 2443,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,道場,どうば,,douba,miejsce,gdzie odbywają się sztuki walki,,
 2444,WORD,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,場,ば,,ba,[miejsce ~ ba],"miejsce, gdzie ma miejsce jakaś akcja",,
@@ -3272,7 +3276,8 @@ więcej niż",,NO,
 np.",,NO,
 2679,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,-,どこでも,,dokodemo,gdziekolwiek,,NO,
 2680,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,-,すると,,suruto,"... wtedy, ...",,,
-2681,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,場所,ばしょ,,basho,miejsce,fizyczne,NO,
+2681,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,場所,ばしょ,,basho,"miejsce
+miejsce w świecie (do osób)",fizyczne,NO,
 2682,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,-,また,,mata,"znów
 znowu
 dodatkowo",,,
@@ -4165,7 +4170,8 @@ osoba pełniąca dyżur",,,
 3231,WORD,WORD_NOUN,,HIRAGANA,,,冷凍庫,れいとうこ,,reitouko,zamrażarka,,,
 3232,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-18,,明るい,あかるい,,akarui,"pogodny
 jasny",,NO,
-3233,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-18,,気分が悪い,きぷんがわるい,,kipun ga warui,czuć się źle,,NO,
+3233,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-18,,気分が悪い,きぷんがわるい,,kipun ga warui,"czuć się źle
+być w złym nastroju",,NO,
 3234,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-18,,恥ずかしい,はずかしい ,,hazukashii,"nieśmiały
 bojaźliwy
 zakłopotany
@@ -4195,8 +4201,9 @@ prosić",,
 3249,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-18,を,考える,かんがえる,o,kangaeru,"myśleć o
 zastanawiać się
 przypuszczać","~ czymś, „myśleć w głowie”, bardziej analityczne, rozwiązywać, analizować",NO,
-3250,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,,消える,きえる,,kieru,"upuszczać
-znikać",,,
+3250,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,,消える,きえる,,kieru,"znikać
+przepadać
+rozpływać się",,,
 3251,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,壊れる,こわれる,ga,kowareru,"uszkodzić się
 zepsuć się",,NO,
 3252,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,汚れる,よごれる,ga,yogoreru,pobrudziło się,,,
@@ -4354,3 +4361,36 @@ wyznawca
 wierzący",,,
 3335,WORD,WORD_NOUN,,HIRAGANA,,,労働者,ろうどうしゃ,,roudousha,robotnik,,,
 3336,WORD,WORD_NOUN,,HIRAGANA,,,反対者,はんたいしゃ,,hantaisha,przeciwnik,,,
+3337,WORD,WORD_NOUN,,HIRAGANA,,,鴨,かも,,kamo,kaczka,dzika,,
+3338,WORD,WORD_NOUN,,HIRAGANA,,,鶩,あひる,,ahiru,kaczka,domowa,,3339
+3339,WORD,WORD_NOUN,,HIRAGANA,,,家鴨,あひる,,ahiru,kaczka,domowa,,3338
+3340,WORD,WORD_NOUN,,HIRAGANA,,,頃,ごろ,,goro,"czas
+około",to samo co toki,NO,
+3341,WORD,UNKNOWN,,HIRAGANA,,,-,なぜだか,,naze daka,z jakiegoś powodu,,,
+3342,WORD,WORD_VERB_U,,HIRAGANA,,,暮らす,くらす,,kurasu,żyć,,,
+3343,WORD,WORD_NOUN,,HIRAGANA,,,実家,じっか,,jikka,dom rodzinny,,,
+3344,WORD,WORD_NOUN,,HIRAGANA,,,五目並べ,ごもくならべ,,gomoku narabe,gomoku,japońska gra planszowa,,
+3345,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,苦手,にがて,,nigate,"słaby punkt
+słaby
+niedobry",,,
+3346,WORD,WORD_NOUN,,KATAKANA,,,-,ピカピカ,,pika pika,"błysk
+pomysł
+lśnienie",,,
+3347,WORD,WORD_NOUN,,HIRAGANA,,,鴨南蛮,かもなんばん ,,kamo nanban,pieczona kaczka,japońska potrawa,,
+3348,WORD,WORD_VERB_RU,,HIRAGANA,,,損ねる,そこねる,,sokoneru,"zaszkodzić
+zranić
+wyrządzić krzywdę
+przegapić",,,
+3349,WORD,WORD_VERB_RU,,HIRAGANA,,,責める,せめる,,semeru,"ganić
+krytykować
+oskarżać
+obwiniać",,,3350
+3350,WORD,WORD_VERB_RU,,HIRAGANA,,,攻める,せめる,,semeru,"atakować
+napadać",,,3349
+3351,WORD,WORD_VERB_U,,HIRAGANA,,,打つかる,ぶつかる,,butsukaru,"zderzać się
+kolidować się
+mieć inne zdanie",,,
+3352,WORD,WORD_NOUN,,HIRAGANA,,,物理学,ぶつりがく,,butsurigaku,fizyka,,,
+3353,WORD,WORD_NOUN,,HIRAGANA,,,物理学者,ぶつりがくしゃ ,,butsurigakusha,fizyk,,,
+3354,WORD,WORD_NOUN,,HIRAGANA,,,上京,じょうきょう,,joukyou,przyjazd do stolicy,do Tokio,,
+3355,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,上京する,じょうきょうする,,joukyou suru,przyjeżdżać do stolicy,,,
