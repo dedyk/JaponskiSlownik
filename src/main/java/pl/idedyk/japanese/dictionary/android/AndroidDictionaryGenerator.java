@@ -8,6 +8,8 @@ import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -173,10 +175,14 @@ public class AndroidDictionaryGenerator {
 			List<KanjiEntry> kanjiEntries, Map<String, KanjiDic2Entry> readKanjiDic2) {
 		
 		Set<String> alreadySetKanji = new HashSet<String>();
+		Set<String> alreadySetKanjiSource = new HashSet<String>();
 		
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
-			alreadySetKanji.add(currentKanjiEntry.getKanji());	
+			alreadySetKanji.add(currentKanjiEntry.getKanji());
+			alreadySetKanjiSource.add(currentKanjiEntry.getKanji());
 		}
+		
+		final Map<String, Integer> kanjiCountMap = new HashMap<String, Integer>();
 		
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : dictionary) {
 			
@@ -186,13 +192,30 @@ public class AndroidDictionaryGenerator {
 				
 				String currentKanjiChar = String.valueOf(kanji.charAt(kanjiCharIdx));
 				
-				if (alreadySetKanji.contains(currentKanjiChar)) {
-					continue;
-				}				
-				
 				KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(currentKanjiChar);
 				
 				if (kanjiDic2Entry != null) {
+					
+					if (alreadySetKanjiSource.contains(currentKanjiChar) == false) {
+						
+						Integer kanjiCountMapInteger = kanjiCountMap.get(currentKanjiChar);
+						
+						if (kanjiCountMapInteger == null) {
+							kanjiCountMapInteger = new Integer(0);
+						}
+						
+						kanjiCountMapInteger = kanjiCountMapInteger.intValue() + 1;
+						
+						kanjiCountMap.put(currentKanjiChar, kanjiCountMapInteger);
+					}
+				}
+				
+				if (alreadySetKanji.contains(currentKanjiChar)) {
+					continue;
+				}
+				
+				if (kanjiDic2Entry != null) {
+										
 					alreadySetKanji.add(currentKanjiChar);
 					
 					KanjiEntry newKanjiEntry = new KanjiEntry();
@@ -234,6 +257,28 @@ public class AndroidDictionaryGenerator {
 				}
 			}
 		}
+		
+		String[] kanjiArray = new String[kanjiCountMap.size()];
+		
+		kanjiCountMap.keySet().toArray(kanjiArray);
+		
+		Arrays.sort(kanjiArray, new Comparator<String>() {
+
+			@Override
+			public int compare(String kanji1, String kanji2) {
+				return kanjiCountMap.get(kanji2).compareTo(kanjiCountMap.get(kanji1));
+			}
+			
+		});
+		
+		for (int kanjiArrayIdx = 0; kanjiArrayIdx < kanjiArray.length && kanjiArrayIdx < 5; ++kanjiArrayIdx) {
+			
+			String currentKanji = kanjiArray[kanjiArrayIdx];
+			
+			System.out.println(currentKanji + " - " + kanjiCountMap.get(currentKanji));			
+		}
+				
+		System.out.println("\n---\n");
 	}
 	
 	private static void generateKanjiRadical(String radfile, String radicalDestination) throws Exception {
