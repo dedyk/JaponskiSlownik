@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -324,6 +325,16 @@ public class AndroidDictionaryGenerator {
 				
 		File kvgToolFileFromKanjivgFile = new File(kvgToolFileFromKanjivg);
 		File tomoeFileFromKanjivgFile = new File(tomoeFileFromKanjivg);
+		
+		kanjiEntries = new ArrayList<KanjiEntry>(kanjiEntries);
+		
+		Collections.sort(kanjiEntries, new Comparator<KanjiEntry>() {
+
+			@Override
+			public int compare(KanjiEntry o1, KanjiEntry o2) {
+				return o1.getKanji().compareTo(o2.getKanji());
+			}
+		});
 		
 		BufferedWriter tomoeFileFromKanjivgWriter = new BufferedWriter(new FileWriter(kvgToolFileFromKanjivgFile));
 		
