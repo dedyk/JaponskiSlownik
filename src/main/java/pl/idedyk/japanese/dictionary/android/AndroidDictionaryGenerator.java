@@ -278,6 +278,8 @@ public class AndroidDictionaryGenerator {
 			
 			System.out.println(currentKanji + " - " + kanjiCountMap.get(currentKanji));			
 		}
+		
+		System.out.println("\nKanji: " + kanjiArray.length);
 				
 		System.out.println("\n---\n");
 	}
