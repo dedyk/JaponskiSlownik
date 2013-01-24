@@ -152,6 +152,26 @@ public class CsvReaderWriter {
 							info += "czytanie";
 						}
 						
+						List<AttributeType> attributeTypeList = polishJapaneseEntry.getAttributeTypeList();
+						
+						if (attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY)) {
+							
+							if (info.length() > 0) {
+								info = info + ", ";
+							}
+							
+							info += "czasownik przechodni";
+						} else if (attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY)) {
+							
+							if (info.length() > 0) {
+								info = info + ", ";
+							}
+							
+							info += "czasownik nieprzechodni";
+						}
+						
+						System.out.println(info);
+						
 						sb.append(info);
 					}
 
