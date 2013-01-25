@@ -256,7 +256,8 @@ alkohol",,,
 228,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,昼御飯,ひるごはん,,hirugohan,obiad,,,1923
 229,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,水,みず,,mizu,woda,,,
 230,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,家,いえ,,ie,dom,bardziej oficjalnie,,231
-231,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,家,うち,,uchi,dom,moje miejsce,,230
+231,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,家,うち,,uchi,dom,moje miejsce,,"230
+3444"
 232,WORD,WORD_NOUN,,KATAKANA,Genki 1-3,,-,エルエル,,erueru,laboratorium językowe,,,
 233,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,学校,がっこう,,gakkou,szkoła,,,
 234,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,朝,あさ,,asa,rano,,,
@@ -739,7 +740,10 @@ starsza kobieta","spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
 628,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,速い,はやい,,hayai,szybki,,,263
 629,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,短い,みじかい,,mijikai,krótki,,,
 630,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-7,,親切,しんせつ,,shinsetsu,miły,,,1754
-631,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-7,,便利,べんり,,benri,przydatny,,,
+631,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-7,,便利,べんり,,benri,"przydatny
+wygodny
+pożyteczny
+łatwy",,,
 632,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-7,,歌う,うたう,,utau,śpiewać,,,
 633,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-7,,-,かぶる,,kaburu,"zakładać
 nosić","ubranie, na głowę, na głowie",,
@@ -953,7 +957,11 @@ dziennik",,,
 825,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,春,はる,,haru,wiosna,,,
 826,WORD,WORD_NOUN,,KATAKANA,Genki 1-10,,-,パンツ,,pantsu,majtki,,,
 827,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,美容院,びよういん,,biyouin,fryzjer,damski,,
-828,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,便,びん,,bin,lot,,,2205
+828,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,便,びん,,bin,"lot
+szansa
+przesyłka
+list",,,"2205
+3433"
 829,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,船,ふね,,fune,statek,,,
 830,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,野球,やきゅう,,yakyuu,baseball,,,
 831,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,有名人,ゆうめいじん,,yuumeijin,celebryta,,,
@@ -2033,7 +2041,7 @@ słuszny",,,
 1743,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,買い物,かいもの,,kaimono,zakupy,,NO,
 1744,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,町,まち,,machi,miasteczko,,NO,
 1745,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,北山町,きたやまちょう,,kitayama chou,Kitayama,miasto w Japonii,,
-1746,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,町長,ちょうちょう,,chouchou,burmistrz,małego miasta,,
+1746,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,町長,ちょうちょう,,chouchou,burmistrz,małego miasta,,3441
 1747,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 1-10,,長い,ながい,,nagai,długi,,NO,
 1748,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,長男,ちょうなん,,chounan,pierwszy syn,,,
 1749,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,道,みち,,michi,"droga
@@ -2745,7 +2753,9 @@ przeszkadzać",,,
 2314,WORD,WORD_VERB_U,,HIRAGANA,,,触る,さわる,,sawaru,"dotykać
 dotknąć
 ruszać",,,
-2315,WORD,WORD_NOUN,,HIRAGANA,,,内科,ないか,,naika,lekarz,internista,,
+2315,WORD,WORD_NOUN,,HIRAGANA,,,内科,ないか,,naika,"lekarz
+internista
+choroby wewnętrzne",,,
 2316,WORD,WORD_NOUN,,HIRAGANA,,,皮膚科,ひふか,,hifuka,dermatologia,,,
 2317,WORD,WORD_NOUN,,HIRAGANA,,,皮膚科医,ひふかい,,hifukai,dermatolog,,,
 2318,WORD,WORD_NOUN,,HIRAGANA,,,外科,げか,,geka,chirurgia,,,
@@ -3763,9 +3773,9 @@ złość",,,
 2976,WORD,WORD_NOUN,,KATAKANA,,,-,オーケストラ,,ookesutora,orkiestra,,,
 2977,WORD,WORD_NOUN,,HIRAGANA,,,拳銃,けんじゅう,,kenjuu,"pistolet
 rewolwer",,,
-2978,WORD,WORD_VERB_RU,,HIRAGANA,,,挙げる,あげる,,ageru,"podnosić
+2978,WORD,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,,挙げる,あげる,,ageru,"podnosić
 wznosić",,,1204
-2979,WORD,WORD_VERB_U,,HIRAGANA,,,挙がる,あがる,,agaru,"wznosić się
+2979,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,,挙がる,あがる,,agaru,"wznosić się
 podnosić się",,,865
 2980,WORD,WORD_NOUN,,HIRAGANA,,,選挙,せんきょ,,senkyo,wybory,,,
 2981,WORD,WORD_NOUN,,HIRAGANA,,,検挙,けんきょ,,kenkyo,"areszt
@@ -4545,3 +4555,40 @@ poświęcenie się
 oddanie się",sprawie,,
 3431,WORD,WORD_VERB_U,,HIRAGANA,,,凍る,こおる,,kooru,"zamarzać
 kostnieć",,,3015
+3432,WORD,WORD_NOUN,,HIRAGANA,,,価,あたい,,atai,"wartość
+cena",,,
+3433,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,便,べん,,ben,"wygoda
+łatwość",,,828
+3434,WORD,WORD_NOUN,,HIRAGANA,,,便り,たより,,tayori,"wieść
+wiadomość
+list
+korespondencja",,,
+3435,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,便りをする,たよりをする,,tayori o suru,"napisać list
+wysyłać wiadomość
+korespondować",,,
+3436,WORD,WORD_NOUN,,HIRAGANA,,,便所,べんじょ,,benjo,toaleta,,,
+3437,WORD,WORD_NOUN,,HIRAGANA,,,郵便,ゆうびん,,yuubin,"listy
+przesyłki pocztowe
+usługi pocztowe",,,
+3438,WORD,WORD_NOUN,,HIRAGANA,,,便覧,べんらん,,benran,"podręcznik
+manuał",,,
+3439,WORD,WORD_NOUN,,HIRAGANA,,,便法,べんぽう,,benpou,"użyteczna metoda
+skrót",,,
+3440,WORD,WORD_NOUN,,KATAKANA,,,-,バタフライ,,batafurai,motyl,,,
+3441,WORD,WORD_NOUN,,HIRAGANA,,,蝶々,ちょうちょう,,chouchou,motyl,,,1746
+3442,WORD,WORD_NOUN,,KATAKANA,,,-,サボテン,,saboten,kaktus,,,
+3443,WORD,WORD_NOUN,,KATAKANA,,,-,カクタス ,,kakutasu,kaktus,,,
+3444,WORD,WORD_NOUN,,HIRAGANA,,,内,うち,,uchi,"wewnątrz
+między
+ja
+mój
+moje",,,231
+3445,WORD,WORD_NOUN,,HIRAGANA,,,内側,うちがわ,,uchigawa,wewnętrzna strona,,,
+3446,WORD,WORD_NOUN,,HIRAGANA,,,内容,ないよう,,naiyou,"treść
+zawartość",,,
+3447,WORD,WORD_NOUN,,HIRAGANA,,,内務大臣,ないむだいじん,,naimudaijin,minister spraw wewnętrznych,,,
+3448,WORD,WORD_NOUN,,HIRAGANA,,,国内,こくない,,kokunai,krajowy,,,
+3449,WORD,WORD_NOUN,,HIRAGANA,,,学生同士,がくせいどうし,,gakusei doushi,między uczniami,,,
+3450,WORD,WORD_NOUN,,HIRAGANA,,,代議士,だいぎし,,daigishi,"członek parlamentu
+parlamentarzysta",,,
+3451,WORD,WORD_NOUN,,HIRAGANA,,,学士号,がくしごう,,gakushigou,stopień naukowy,uzyskany po ukończeniu wyższych studiów humanistycznych,,
