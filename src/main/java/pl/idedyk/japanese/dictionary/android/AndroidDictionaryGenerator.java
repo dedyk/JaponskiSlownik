@@ -272,7 +272,7 @@ public class AndroidDictionaryGenerator {
 			
 		});
 		
-		for (int kanjiArrayIdx = 0; kanjiArrayIdx < kanjiArray.length && kanjiArrayIdx < 3; ++kanjiArrayIdx) {
+		for (int kanjiArrayIdx = 0; kanjiArrayIdx < kanjiArray.length && kanjiArrayIdx < 10; ++kanjiArrayIdx) {
 			
 			String currentKanji = kanjiArray[kanjiArrayIdx];
 			

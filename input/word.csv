@@ -469,7 +469,8 @@ istnieć","miejsce ni, do rzeczy żywych",,704
 414,WORD,WORD_NOUN,,KATAKANA,Genki 1-5,,-,テスト,,tesuto,test,,,
 415,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,天気,てんき,,tenki,pogoda,,,
 416,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,飲み物,のみもの,,nomimono,picie,,,
-417,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,葉書,はがき,,hagaki,pocztówka,,,
+417,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,葉書,はがき,,hagaki,"pocztówka
+kartka pocztowa",,,
 418,WORD,WORD_NOUN,,KATAKANA,Genki 1-5,,-,バス,,basu,autobus,,,
 419,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,飛行機,ひこうき,,hikouki,samolot,,,
 420,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,部屋,へや,,heya,pokój,,,
@@ -1795,7 +1796,7 @@ dziennik",,NO,
 1522,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-4,,半分,はんぶん,,hanbun,połowa,,,
 1523,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,山,やま,,yama,góra,,NO,
 1524,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,富士山,ふじさん,,Fuji san,Góra Fuji,,,
-1525,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,川,かわ,,kawa,rzeka,,,
+1525,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,川,かわ,,kawa,rzeka,,,3495
 1526,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,小川さん,おがわさん,,Ogawa san,Pan Ogawa,,,
 1527,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-5,,元気,げんき,,genki,"zdrowy
 energiczny",,NO,
@@ -3052,7 +3053,7 @@ kucharz",,,
 2518,WORD,WORD_NOUN,,KATAKANA,,,-,タクシー,,takushii,taxi,,,
 2519,WORD,WORD_NOUN,,HIRAGANA,,,烏賊,いか,,ika,kalmar,,,2619
 2520,WORD,WORD_NOUN,,HIRAGANA,,,蛸,たこ,,tako,ośmiornica,,,
-2521,WORD,WORD_NOUN,,HIRAGANA,,,側,がわ,,gawa,strona,czegoś,,
+2521,WORD,WORD_NOUN,,HIRAGANA,,,側,がわ,,gawa,strona,czegoś,,3495
 2522,WORD,WORD_NOUN,,HIRAGANA,,,右側,みぎがわ,,migi gawa,prawa strona,,,
 2523,WORD,WORD_NOUN,,HIRAGANA,,,左側,ひだりがわ,,hidari gawa,lewa strona,,,
 2524,WORD,WORD_NOUN,,HIRAGANA,,,布団,ふとん,,futon,futon,"tradycyjne składane łóżko, chowane na dzień",,
@@ -3680,10 +3681,11 @@ jastrząb",,,
 2919,WORD,WORD_NOUN,,HIRAGANA,,,処女,しょじょ,,shojo,"panienka
 dziewczynka
 dziewica",,,
-2920,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,処する,しょする,,sho suru,"radzić sobie
+2920,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,処する,しょする,,shosuru,"radzić sobie
 zajmować się (czymś)
 skazywać
-potępiać",,,
+potępiać
+zachowywać się",,,
 2921,WORD,WORD_NOUN,,HIRAGANA,,,対処,たいしょ,,taisho,"stawiać czoła
 borykać się",,,
 2922,WORD,WORD_NOUN,,HIRAGANA,,,処刑,しょけい,,shokei,"kara
@@ -4641,3 +4643,33 @@ tekst",,,
 3479,WORD,WORD_NOUN,,HIRAGANA,,,人数,にんずう,,ninzuu,ilość osób,,,
 3480,WORD,WORD_NOUN,,HIRAGANA,,,無数,むすう,,musuu,"niezliczona liczba
 niezliczona ilość",,,
+3481,WORD,WORD_VERB_U,,HIRAGANA,,,回る,まわる,,mawaru,"kręcić się
+chodzić dookoła
+przechodzić
+być przekazywanym",,,
+3482,WORD,WORD_VERB_U,,HIRAGANA,,,回す,まわす,,mawasu,"okręcać
+nakręcać
+podawać
+przekazywać",,,
+3483,WORD,UNKNOWN,,HIRAGANA,,,一回,いっかい,,ikkai,jeden raz,,,
+3484,WORD,WORD_NOUN,,HIRAGANA,,,回数,かいすう,,kaisuu,"częstotliwość
+ilość razy",,,
+3485,WORD,WORD_NOUN,,HIRAGANA,,,回心,かいしん,,kaishin,nawrócenie,,,
+3486,WORD,WORD_NOUN,,HIRAGANA,,,回復,かいふく,,kaifuku,powrót do zdrowia,,,
+3487,WORD,WORD_NOUN,,HIRAGANA,,,回教,かいきょう,,kaikyou,"islam
+mahometanizm",,,
+3488,WORD,WORD_NOUN,,HIRAGANA,,,王国,おうこく,,oukoku,królestwo,,,
+3489,WORD,WORD_NOUN,,HIRAGANA,,,女王,じょおう,,joou,królowa,,,
+3490,WORD,WORD_NOUN,,HIRAGANA,,,王室,おうしつ,,oushitsu,"królewska rodzina
+rodzina królewska",,,
+3491,WORD,WORD_NOUN,,HIRAGANA,,,王政,おうせい,,ousei,"królewskie rządy
+monarchia",,,
+3492,WORD,WORD_NOUN,,HIRAGANA,,,王宮,おうきゅう,,oukyuu,pałac królewski,,,
+3493,WORD,WORD_NOUN,,HIRAGANA,,,葉末,はずえ,,hazue,koniuszek liścia,,,
+3494,WORD,WORD_NOUN,,HIRAGANA,,,葉緑素,ようりょくそ,,youryokuso,chlorofil,,,
+3495,WORD,WORD_NOUN,,HIRAGANA,,,側,かわ,,kawa,strona,,,"1525
+2521"
+3496,WORD,WORD_NOUN,,HIRAGANA,,,側面,そくめん,,sokumen,"strona
+bok",,,
+3497,WORD,WORD_NOUN,,HIRAGANA,,,反対側,はんたいがわ,,hantai gawa,przeciwna strona,,,
+3498,WORD,WORD_NOUN,,HIRAGANA,,,側壁,そくへき,,sokuheki,boczna ściana,,,
