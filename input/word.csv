@@ -118,7 +118,7 @@ nani",co,,,
 97,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,韓国,かんこく,,Kankoku,Korea,,,
 98,WORD,WORD_NOUN,,KATAKANA,Genki 1-1,,-,スエーデン,,Sueeden,Szwecja,,,
 99,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,中国,ちゅうごく,,chuugoku,Chiny,,,2064
-100,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,科学,かがく,,kagaku,nauka,,,
+100,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,科学,かがく,,kagaku,nauka,,,3513
 101,WORD,WORD_NOUN,,HIRAGANA_KATAKANA,Genki 1-1,,アジア研究,アジアけんきゅう,,ajiakenkyuu,orientalistyka,,,
 102,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,経済,けいざい,,keizai,ekonomia,,,
 103,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,国際関係,こくさいかんけい,,kokusaikankei,stosunki międzynarodowe,,,
@@ -1101,7 +1101,7 @@ adwokat",,NO,
 942,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,消防士,しょうぼうし,,shouboushi,strażak,,,
 943,WORD,UNKNOWN,,HIRAGANA,,,-,なるほど,,naruhodo,"racja
 zgadza się",,,
-944,WORD,WORD_VERB_RU,,HIRAGANA,,,助ける,たすける,,tasukeru,"pomagać
+944,WORD,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,,助ける,たすける,,tasukeru,"pomagać
 ratować",,,
 945,WORD,WORD_EXPRESSION,,HIRAGANA,,,助けて,たすけて,,tasukete,pomocy,,,
 946,WORD,WORD_VERB_RU,,HIRAGANA,,,見せる,みせる,,miseru,pokazywać,,,
@@ -2785,7 +2785,8 @@ ginekolog",,,
 2334,WORD,WORD_NOUN,,HIRAGANA,,,小児科,しょうにか,,shounika,pediatra,,,
 2335,WORD,WORD_NOUN,,HIRAGANA,,,小児科医,しょうにかい,,shounikai,pediatra,,,
 2336,WORD,WORD_NOUN,,HIRAGANA,,,看護婦,かんごふ,,kangofu,pielęgniarka,,,
-2337,WORD,WORD_NOUN,,HIRAGANA,,,助産婦,じょさんぷ,,josanpu,położna,,,
+2337,WORD,WORD_NOUN,,HIRAGANA,,,助産婦,じょさんぷ,,josanpu,"położna
+akuszerka",,,
 2338,WORD,WORD_NOUN,,HIRAGANA,,,精神科,せいしんか,,seishinka,psychiatria,,,
 2339,WORD,WORD_NOUN,,HIRAGANA,,,精神科医,せいしんかい,,seishinkai,psychiatra,,,
 2340,WORD,WORD_NOUN,,HIRAGANA,,,看護人,かんごにん,,kangonin,sanitariusz,,,
@@ -3290,7 +3291,7 @@ takiego rodzaju",blisko osoby docelowej,NO,
 2670,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,道具,どうぐ,,dougu,narzędzie,,,
 2671,WORD,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-16,,-,ポケット,,poketto,kieszeń,,,
 2672,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,小学生,しょうがくせい,,shougakusei,uczeń szkoły podstawowej,,NO,
-2673,WORD,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 2-16,,助ける,たすける,,tasukeru,"pomagać
+2673,WORD,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,Genki dodatkowe 2-16,,助ける,たすける,,tasukeru,"pomagać
 ratować",,NO,
 2674,WORD,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-16,,喜んで,よろこんで,,yorokonde,"z przyjemnością
 z radością
@@ -4222,7 +4223,9 @@ przewrócić się",,NO,
 3241,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-18,を,壊す,こわす,o,kowasu,zepsuć,,,
 3242,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,咲く,さく,,saku,kwitnąć,,NO,
 3243,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,閉まる,しまる,ga,shimaru,zamykać się,,,
-3244,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,助かる,たすかる,,tasukaru,być uratowany,,,
+3244,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,,助かる,たすかる,,tasukaru,"przetrwać
+uzyskać pomoc
+być uratowany",,,
 3245,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,頼む,たのむ,,tanomu,"prosić o przysługę
 prosić","prosić o przysługę
 prosić",,
@@ -4604,7 +4607,7 @@ parlamentarzysta",,,
 intuicja",,,
 3453,WORD,WORD_NOUN,,HIRAGANA,,,感想,かんそう,,kansou,"wrażenie
 przeżycie
-myśl",,,
+myśl",,,3523
 3454,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,感情的,かんじょうてき,,kanjouteki,"emocjonalny
 impulsywny
 sentymentalny",,,
@@ -4695,3 +4698,25 @@ odbiór radiowy",,,
 3508,WORD,WORD_NOUN,,HIRAGANA,,,受難,じゅなん,,junan,"cierpienie
 kłopoty
 pasja",,,
+3509,WORD,WORD_VERB_RU,,HIRAGANA,,,化ける,ばける,,bakeru,zmieniać się,w coś,,
+3510,WORD,WORD_VERB_U,,HIRAGANA,,,化かす,ばかす,,bakasu,"zaczarować
+oczarować",,,
+3511,WORD,WORD_NOUN,,HIRAGANA,,,変化,へんか,,henka,zmiana,,,3512
+3512,WORD,WORD_NOUN,,HIRAGANA,,,変化,へんげ,,henge,chochlik,,,3511
+3513,WORD,WORD_NOUN,,HIRAGANA,,,化学,かがく,,kagaku,chemia,,,100
+3514,WORD,WORD_NOUN,,HIRAGANA,,,化け物,ばけもの,,bakemono,straszydło,,,
+3515,WORD,WORD_NOUN,,HIRAGANA,,,化粧品,けしょうひん,,keshouhin,artykuły kosmetyczne,,,
+3516,WORD,WORD_NOUN,,HIRAGANA,,,援助,えんじょ,,enjo,"pomoc
+asysta
+wsparcie",,,
+3517,WORD,WORD_NOUN,,HIRAGANA,,,助言,じょげん,,jogen,"rada
+sugestia",,,
+3518,WORD,WORD_NOUN,,HIRAGANA,,,助教授,じょきょうじゅ,,jokyouju,"asystent profesora
+adiunkt",,,
+3519,WORD,WORD_NOUN,,HIRAGANA,,,助祭,じょさい,,josai,diakon,,,
+3520,WORD,WORD_NOUN,,HIRAGANA,,,観光船,かんこうせん,,kankousen,statek turystyczny,,,
+3521,WORD,WORD_NOUN,,HIRAGANA,,,観念主義,かんねんしゅぎ,,kannenshugi,idealizm,,,
+3522,WORD,WORD_NOUN,,HIRAGANA,,,観点,かんてん,,kanten,"punkt widzenia
+opinia",,,
+3523,WORD,WORD_NOUN,,HIRAGANA,,,観相,かんそう,,kansou,"fizjonomia
+wygląd",,,3453
