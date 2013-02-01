@@ -1,7 +1,7 @@
 1,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,零,"ぜろ
 れい",,"zero
 rei",zero,,,957
-2,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,一,いち,,ichi,jeden,,,
+2,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,一,いち,,ichi,jeden,,,3533
 3,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,二,に,,ni,dwa,,,
 4,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,三,さん,,san,trzy,,,77
 5,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,四,"し
@@ -775,7 +775,9 @@ nosić","ubranie, powyżej pasa",,707
 654,WORD,UNKNOWN,,HIRAGANA,Genki 1-7,,-,よかったら,,yokattara,jeśli chcesz,,,
 655,WORD,WORD_VERB_U,,HIRAGANA,,,言う,いう,,iu,mówić,,,
 656,WORD,WORD_NOUN,,HIRAGANA,,,箸置,はしおき,,hashioki,miejsce na pałeczki,,,
-657,WORD,WORD_VERB_U,,HIRAGANA,,,置く,おく,,oku,kłaść,,,
+657,WORD,WORD_VERB_U,,HIRAGANA,,,置く,おく,,oku,"kłaść
+umieszczać
+zostawiać",,,
 658,WORD,WORD_NOUN,,HIRAGANA,,,お皿,おさら,,osara,talerz,,,
 659,WORD,WORD_VERB_U,,HIRAGANA,,を,渡す,わたす,o,watasu,dawać,,,
 660,WORD,WORD_NOUN,,HIRAGANA,,,故郷,ふるさと,,furusato,miasto rodzinne,,,
@@ -957,7 +959,8 @@ dziennik",,,
 824,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,床や,とこや,,tokoya,fryzjer,męski,,
 825,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,春,はる,,haru,wiosna,,,
 826,WORD,WORD_NOUN,,KATAKANA,Genki 1-10,,-,パンツ,,pantsu,majtki,,,
-827,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,美容院,びよういん,,biyouin,fryzjer,damski,,
+827,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,美容院,びよういん,,biyouin,"fryzjer
+salon piękności",damski,,
 828,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,便,びん,,bin,"lot
 szansa
 przesyłka
@@ -2103,7 +2106,8 @@ choroba",,NO,
 1792,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,病院,びょういん,,byouin,szpital,,NO,
 1793,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,大学院,だいがくいん,,daigakuin,"studia magisterskie
 studia podyplomowe",,,
-1794,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,美容院,びよういん,,biyouin,fryzjer,damski,NO,
+1794,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,美容院,びよういん,,biyouin,"fryzjer
+salon piękności",damski,NO,
 1795,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,映画,えいが,,eiga,film,,NO,
 1796,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,映画館,えいがかん,,eigakan,kino,,NO,
 1797,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-11,,映る,うつる,,utsuru,odbijać się,,,
@@ -3645,7 +3649,7 @@ film",,,
 2895,WORD,WORD_NOUN,,HIRAGANA,,,冬物,ふゆもの,,fuyu mono,zimowe ubranie,,,
 2896,WORD,UNKNOWN,,HIRAGANA,,,冬季,とうき,,touki,sezon zimowy,,,
 2897,WORD,WORD_NOUN,,HIRAGANA,,,冬眠,とうみん,,toumin,"hibernacja
-zimowy sen",,,
+zimowy sen",,,3539
 2898,WORD,WORD_VERB_U,,HIRAGANA,,,至る,いたる,,itaru,"przybyć
 zdobyć
 osiągnąć
@@ -4630,7 +4634,8 @@ notować",,,
 3467,WORD,WORD_NOUN,,HIRAGANA,,,記者,きしゃ,,kisha,dziennikarz,,,
 3468,WORD,WORD_NOUN,,HIRAGANA,,,記者会見,きしゃかいけん,,kisha kaiken,konferencja prasowa,,,
 3469,WORD,WORD_NOUN,,HIRAGANA,,,記事,きじ,,kiji,artykuł,,,
-3470,WORD,WORD_NOUN,,HIRAGANA,,,記念,きねん,,kinen,rocznica,,,
+3470,WORD,WORD_NOUN,,HIRAGANA,,,記念,きねん,,kinen,"rocznica
+pamiątka",,,
 3471,WORD,WORD_VERB_RU,,HIRAGANA,,,試みる,こころみる,,kokoromiru,"próbować
 wypróbowywać
 sprawdzać",,,
@@ -4720,3 +4725,32 @@ adiunkt",,,
 opinia",,,
 3523,WORD,WORD_NOUN,,HIRAGANA,,,観相,かんそう,,kansou,"fizjonomia
 wygląd",,,3453
+3524,WORD,WORD_VERB_RU,,HIRAGANA,,,念じる,ねんじる,,nenjiru,"w ciszy
+mieć na myśli",,,
+3525,WORD,WORD_NOUN,,HIRAGANA,,,結婚記念日,けっこんきねんび,,kekkon kinen bi,rocznica ślubu,,,
+3526,WORD,WORD_NOUN,,HIRAGANA,,,念仏,ねんぶつ,,nenbutsu,formuła buddyjskiej modlitwy,,,
+3527,WORD,WORD_NOUN,,HIRAGANA,,,信念,しんねん,,shinnen,"wiara
+przekonanie",,,
+3528,WORD,WORD_NOUN,,HIRAGANA,,,理念,りねん,,rinen,"idea
+ideologia
+doktryna",,,
+3529,WORD,WORD_VERB_RU,,HIRAGANA,,,置ける,おける,,okeru,"pozostawiać (bez zmian)
+być nieruszonym",,,
+3530,WORD,UNKNOWN,,HIRAGANA,,,一日置き,いちにちおき,,ichi nichi oki,co drugi dzień,,,
+3531,WORD,WORD_NOUN,,HIRAGANA,,,置き場,おきば,,okiba,"schowek
+miejsce na",np. świecie,,
+3532,WORD,WORD_NOUN,,HIRAGANA,,,物置,ものおき,,monooki,schowek,,,
+3533,WORD,WORD_NOUN,,HIRAGANA,,,位置,いち,,ichi,"pozycja
+lokalizacja",,,2
+3534,WORD,WORD_VERB_RU,,HIRAGANA,,,遅れる,おくれる,,okureru,"być spóźniony
+zostawić z tyłu",,,
+3535,WORD,WORD_VERB_U,,HIRAGANA,,,遅らす,おくらす,,okurasu,"opóźniać
+odwlekać
+odkładać (na później)",,,
+3536,WORD,WORD_NOUN,,HIRAGANA,,,美人,びじん,,bijin,"ładna kobieta
+piękna kobieta",,,
+3537,WORD,WORD_NOUN,,HIRAGANA,,,美術,びじゅつ,,bijutsu,sztuka piękna,,,
+3538,WORD,WORD_NOUN,,HIRAGANA,,,美化,びか,,bika,upiększenie,,,
+3539,WORD,WORD_NOUN,,HIRAGANA,,,島民,とうみん,,toumin,ludność wyspiarska,,,2897
+3540,WORD,WORD_NOUN,,HIRAGANA,,,無人島,むじんとう,,mujintou,bezludna wyspa,,,
+3541,WORD,WORD_NOUN,,HIRAGANA,,,島国,しまぐに,,shimaguni,państwo wyspiarskie,,,
