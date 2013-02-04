@@ -395,7 +395,7 @@ biurko",,,
 350,WORD,WORD_MONTH,,HIRAGANA,Genki 1-4,,十一月,じゅういちがつ,,juuichigatsu,listopad,,,
 351,WORD,WORD_MONTH,,HIRAGANA,Genki 1-4,,十二月,じゅうにがつ,,juunigatsu,grudzień,,,
 352,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,一昨日,おととい,,ototoi,przedwczoraj,,,
-353,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,昨日,きのう,,kinou,wczoraj,,,
+353,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,昨日,きのう,,kinou,wczoraj,,,3593
 354,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,今日,きょう,,kyou,dziś,,NO,
 355,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,明日,あした,,ashita,jutro,,NO,
 356,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,-,あさって,,asatte,pojutrze,,,
@@ -972,7 +972,7 @@ list",,,"2205
 832,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,予約,よやく,,yoyaku,rezerwacja,,,
 833,WORD,UNKNOWN,,HIRAGANA,Genki 1-10,,来学期,らいがっき,,raigakki,następny semestr,,,
 834,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,-,りんご,,ringo,jabłko,,,
-835,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,暖かい,あたたかい,,atatakai,ciepło,,,
+835,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,暖かい,あたたかい,,atatakai,ciepły,,,
 836,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,遅い,おそい,,osoi,"późny
 powoli
 spóźniony",,NO,
@@ -1270,7 +1270,7 @@ starszy mężczyzna","spoza swojej rodziny lub własna rodzina, nieformalnie",NO
 1078,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,お宅,おたく,,otaku,twój,dom,,
 1079,WORD,UNKNOWN,,HIRAGANA,Genki 2-13,,大人,おとな,,otona,dorosły,,NO,
 1080,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,外国語,がいこくご,,gaikokugo,język obcy,,,
-1081,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,楽器,がっき,,gakki,instrument muzyczny,,,
+1081,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,楽器,がっき,,gakki,instrument muzyczny,,,3591
 1082,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,空手,からて,,karate,karate,,,
 1083,WORD,WORD_NOUN,,KATAKANA,Genki 2-13,,-,カレー,,karee,curry,,,
 1084,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,着物,きもの,,kimono,kimono,,,
@@ -2359,7 +2359,8 @@ rada
 propozycja",,,
 2006,WORD,WORD_NOUN,,HIRAGANA,,,情報,じょうほう,,jouhou,informacja,,,
 2007,WORD,WORD_NOUN,,HIRAGANA,,,光,ひかり,,hikari,"światło
-blask",,,
+blask
+promień",,,
 2008,WORD,WORD_NOUN,,HIRAGANA,,,馬,うま,,uma,koń,,,
 2009,WORD,WORD_EXPRESSION,,HIRAGANA,,,お誕生日おめでとうございます,おたんじょうびおめでとうございます,,otanjoubi omedetou gozaimasu,wszystkiego najlepszego,z okazji urodzin,,
 2010,WORD,WORD_NOUN,,KATAKANA,,,-,バレーボール,,bareebooru,siatkówka,,,
@@ -4860,3 +4861,51 @@ pełnoletni",,,
 3588,WORD,WORD_NOUN,,HIRAGANA,,,成就,じょうじゅ,,jouju,"wypełnienie (np. obietnicy)
 zrealizować
 zakończenie",,,
+3589,WORD,WORD_NOUN,,HIRAGANA,,,期間,きかん,,kikan,okres czasu,,,
+3590,WORD,WORD_NOUN,,HIRAGANA,,,定期,ていき,,teiki,określony (ograniczony) czas,,,
+3591,WORD,WORD_NOUN,,HIRAGANA,,,学期,がっき,,gakki,semestr,,,1081
+3592,WORD,WORD_NOUN,,HIRAGANA,,,期末,きまつ,,kimatsu,zakończenie okresu,,,
+3593,WORD,WORD_NOUN,,HIRAGANA,,,機能,きのう,,kinou,"funkcja
+operacja",,,353
+3594,WORD,WORD_NOUN,,HIRAGANA,,,機会,きかい,,kikai,okazja,,,
+3595,WORD,WORD_NOUN,,HIRAGANA,,,機関室,きかんしつ,,kikanshitsu,maszynownia,,,
+3596,WORD,WORD_NOUN,,HIRAGANA,,,機嫌,きげん,,kigen,"zdrowie
+stan ducha
+samopoczucie",,,
+3597,WORD,WORD_VERB_U,,HIRAGANA,,,光る,ひかる,,hikaru,"świecić
+błyszczeć",,,
+3598,WORD,WORD_NOUN,,HIRAGANA,,,栄光,えいこう,,eikou,chwała,,,
+3599,WORD,WORD_NOUN,,HIRAGANA,,,光年,こうねん,,kounen,rok świetlny,,,
+3600,WORD,WORD_NOUN,,HIRAGANA,,,光源,こうげん,,kougen,źródło światła,,,
+3601,WORD,WORD_NOUN,,HIRAGANA,,,月光,げっこう,,gekkou,światło księżyca,,,
+3602,WORD,WORD_NOUN,,HIRAGANA,,,光景,こうけい,,koukei,"widok
+krajobraz",,,
+3603,WORD,WORD_VERB_U,,HIRAGANA,,,力む,りきむ,,rikimu,"wysilać się
+wytężać siły",,,
+3604,WORD,WORD_NOUN,,HIRAGANA,,,努力,どりょく,,doryoku,wysiłek,,,
+3605,WORD,WORD_NOUN,,HIRAGANA,,,協力,きょうりょく,,kyouryoku,współpraca,,,
+3606,WORD,UNKNOWN,,HIRAGANA,,,力一杯,ちからいっぱい,,chikaraippai,"ze wszystkich sił
+z całej mocy",,,
+3607,WORD,WORD_NOUN,,HIRAGANA,,,自力,じりき,,jiriki,własna siła,,,
+3608,WORD,WORD_NOUN,,HIRAGANA,,,力持ち,ちからもち,,chikaramochi,"siłacz
+silny człowiek",,,
+3609,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,,曲がる,まがる,,magaru,"skręcać się
+zginać się",,,
+3610,WORD,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,,曲げる,まげる,,mageru,"zakręcać
+zginać",,,
+3611,WORD,WORD_NOUN,,HIRAGANA,,,作曲,さっきょく,,sakkyoku,"utwór muzyczny
+kompozycja",,,
+3612,WORD,WORD_NOUN,,HIRAGANA,,,名曲,めいきょく,,meikyoku,"sławna melodia
+popularna melodia",,,
+3613,WORD,WORD_NOUN,,HIRAGANA,,,曲芸,きょくげい,,kyokugei,"trik
+sztuczka akrobatyczna",,,
+3614,WORD,WORD_NOUN,,HIRAGANA,,,曲線,きょくせん,,kyokusen,zakręt,,,
+3615,WORD,WORD_NOUN,,HIRAGANA,,,曲がり道,まがりみち,,magari michi,kręta droga,,,
+3616,WORD,WORD_VERB_RU,,HIRAGANA,,,温める,あたためる,,atatameru,"ogrzewać
+podgrzewać",,,
+3617,WORD,WORD_NOUN,,HIRAGANA,,,温室,おんしつ,,onshitsu,cieplarnia,,,
+3618,WORD,WORD_NOUN,,HIRAGANA,,,温色,おんしょく,,onshoku,ciepłe kolory,,,
+3619,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,温暖,おんだん,,ondan,ciepły,,,
+3620,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,温厚,おんこう,,onkou,"łagodny
+spokojny
+ciepły",,,
