@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary.common;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -478,8 +479,8 @@ public class Validator {
 		return result;
 	}
 
-	public static void validateUseNoEntryPolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseEntries) {
-		
+	public static void validateUseNoEntryPolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseEntries) {	
+				
 		StringBuffer report = new StringBuffer();
 		
 		// kanji
@@ -588,14 +589,19 @@ public class Validator {
 	}
 	
 	private static int getSummaryPolishJapaneseEntryHashCode(PolishJapaneseEntry polishJapaneseEntry) {
-		
+				
 		int prime = 31;
 		
 		int result = 1;
 		
 		result = prime * result + polishJapaneseEntry.getKanji().hashCode();
+		result = prime * result + Arrays.hashCode(polishJapaneseEntry.getKanji().getBytes());
+		
 		result = prime * result + polishJapaneseEntry.getKanaList().hashCode();
+		result = prime * result + Arrays.hashCode(polishJapaneseEntry.getKanaList().toString().getBytes());
+				
 		result = prime * result + polishJapaneseEntry.getPrefixKana().hashCode();
+		result = prime * result + Arrays.hashCode(polishJapaneseEntry.getPrefixKana().getBytes());
 		
 		return result;
 	}
@@ -608,7 +614,10 @@ public class Validator {
 		
 		result = prime * result + polishJapaneseEntry.getDictionaryEntryType().hashCode();
 		result = prime * result + polishJapaneseEntry.getAttributeTypeList().hashCode();
+		
 		result = prime * result + polishJapaneseEntry.getPolishTranslates().hashCode();
+		result = prime * result + Arrays.hashCode(polishJapaneseEntry.getPolishTranslates().toString().getBytes());
+		
 		result = prime * result + polishJapaneseEntry.getInfo().hashCode();
 		
 		return result;
