@@ -235,7 +235,8 @@ dzień",,,1501
 209,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,日,ひ,,hi,"słońce
 dzień",,NO,
 210,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,耳,みみ,,mimi,ucho,,,
-211,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,目,め,,me,oko,,,1360
+211,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,目,め,,me,oko,,,"1360
+3671"
 212,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,桃,もも,,momo,brzoskwinia,,,
 213,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-2,,安い,やすい,,yasui,tani,,,1408
 214,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,映画,えいが,,eiga,film,,,
@@ -1181,7 +1182,9 @@ ranny",,,
 998,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,多い,おおい,,ooi,dużo,,,
 999,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,狭い,せまい,,semai,"wąski
 nieprzestronny",,,
-1000,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,都合,つごう,,tsugou,okoliczność,,,
+1000,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,都合,つごう,,tsugou,"okoliczność
+warunki
+okazja",,,
 1001,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,都合が悪い,つごうがわるい,,tsugou ga warui,coś mi nie pasuje,w grafiku,,
 1002,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,悪い,わるい,,warui,zły,,NO,
 1003,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-12,,素敵,すてき,,suteki,fantastyczny,,,
@@ -1619,7 +1622,8 @@ iść na randkę",narzeczeństwo,,1345
 1358,WORD,UNKNOWN,,HIRAGANA,Genki 2-15,,-,について,,nitsuite,"o ...
 odnośnie ...",czegoś,NO,
 1359,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-15,,番,ばん,,ban,numer,~,NO,
-1360,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-15,,目,め,,me,[tworzenie liczebników porządkowych],"np. pierwszy, drugi, trzeci, czwarty",,211
+1360,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-15,,目,め,,me,[tworzenie liczebników porządkowych],"np. pierwszy, drugi, trzeci, czwarty",,"211
+3671"
 1361,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-15,,もう一度,もういちど,,mou ichi do,jeszcze raz,,,
 1362,WORD,WORD_VERB_RU,,HIRAGANA,,を,降りる,おりる,o,oriru,wysiadać,,NO,
 1363,WORD,WORD_VERB_U,,HIRAGANA,,,車を降りる,くるまをおりる,,kuruma o oriru,wysiadać z samochodu,,,
@@ -2052,7 +2056,8 @@ słuszny",,,
 1736,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,三年生,さんねんせい,,sannensei,student trzeciego roku,,NO,
 1737,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,来年,らいねん,,rainen,przyszły rok,,NO,
 1738,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,今年,ことし,,kotoshi,aktualny rok,,NO,
-1739,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,年,とし,,toshi,rok,,,859
+1739,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,年,とし,,toshi,rok,,,"859
+3677"
 1740,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-10,,売る,うる,,uru,sprzedawać,,NO,
 1741,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,売店,ばいてん,,baiten,kiosk,,,
 1742,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-10,を,買う,かう,o,kau,kupować,,NO,
@@ -2794,7 +2799,7 @@ ginekologia",,,
 ginekolog",,,
 2322,WORD,WORD_NOUN,,HIRAGANA,,,整形外科,せいけいげか,,seikeigeka,zabieg ortopedyczny,,,
 2323,WORD,WORD_NOUN,,HIRAGANA,,,眼科,がんか,,ganka,okulistyka,,,
-2324,WORD,WORD_NOUN,,HIRAGANA,,,眼科医,がんかい,,gankai,okulista,,,
+2324,WORD,WORD_NOUN,,HIRAGANA,,,眼科医,がんかい,,gankai,okulista,,,3674
 2325,WORD,WORD_NOUN,,HIRAGANA,,,歯科,しか,,shika,stomatologia,,,2498
 2326,WORD,WORD_NOUN,,HIRAGANA,,,歯科医,しかい,,shikai,dentysta,,,2598
 2327,WORD,WORD_NOUN,,HIRAGANA,,,耳鼻科,じびか,,jibika,otolaryngologia,,,
@@ -3029,8 +3034,10 @@ przechodzić",,NO,
 2481,WORD,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-15,,-,ホームレス,,hoomuresu,bezdomny,,,
 2482,WORD,WORD_NOUN,,KATAKANA,,,-,アルプス,,arupusu,Alpy,,,
 2483,WORD,WORD_NOUN,,HIRAGANA,,,お礼,おれい,,orei,podziękowanie,,,
-2484,WORD,WORD_VERB_RU,,HIRAGANA,,,折れる,おれる,,oreru,"łamać
-zginać się",,,
+2484,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,折れる,おれる,,oreru,"łamać się
+zginać się
+poddawać się
+ulegać",,,
 2485,WORD,WORD_NOUN,,HIRAGANA,,,山脈,さんみゃく,,sanmyaku,pasmo górskie,,,
 2486,WORD,WORD_NOUN,,HIRAGANA,,,火山,かざん,,kazan,wulkan,,,
 2487,WORD,WORD_NOUN,,HIRAGANA,,,猿,さる,,saru,małpa,,,1958
@@ -4263,7 +4270,9 @@ prosić",,
 3249,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-18,を,考える,かんがえる,o,kangaeru,"myśleć o
 zastanawiać się
 przypuszczać","~ czymś, „myśleć w głowie”, bardziej analityczne, rozwiązywać, analizować",NO,
-3250,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,消える,きえる,ga,kieru,"znikać
+3250,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,消える,きえる,ga,kieru,"wyłączyć się
+gasnąć
+znikać
 przepadać
 rozpływać się",,,
 3251,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,壊れる,こわれる,ga,kowareru,"uszkodzić się
@@ -4999,3 +5008,26 @@ zatwierdzony przez prawo",,,
 metoda",,,
 3662,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,が,出る,でる,ga,deru,wychodzić,,,"771
 772"
+3663,WORD,WORD_NOUN,,HIRAGANA,,,招待状,しょうたいじょう,,shoutaijou,zaproszenie,pisemne,,
+3664,WORD,WORD_NOUN,,HIRAGANA,,,招請,しょうせい,,shousei,"zaproszenie
+wezwanie",,,
+3665,WORD,WORD_NOUN,,HIRAGANA,,,招集,しょうしゅう,,shoushuu,zaproszenie dla grupy ludzi,,,
+3666,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,折る,おる,,oru,"łamać
+zginać
+skręcać",,,
+3667,WORD,WORD_NOUN,,HIRAGANA,,,骨折,こっせつ,,kossetsu,złamanie kości,,,
+3668,WORD,WORD_NOUN,,HIRAGANA,,,折半,せっぱん,,seppan,dzielić na połowy,,,
+3669,WORD,WORD_NOUN,,HIRAGANA,,,曲折,きょくせつ,,kyokusetsu,komplikacje,,,
+3670,WORD,WORD_NOUN,,HIRAGANA,,,眼,まなこ,,manako,oko,,,3671
+3671,WORD,WORD_NOUN,,HIRAGANA,,,眼,め,,me,oko,,,"211
+1360
+3670"
+3672,WORD,WORD_NOUN,,HIRAGANA,,,近眼,きんがん,,kingan,krótkowzroczność,,,
+3673,WORD,WORD_NOUN,,HIRAGANA,,,眼識,がんしき,,ganshiki,"wnikliwość
+krytyczne spojrzenie",,,
+3674,WORD,WORD_NOUN,,HIRAGANA,,,眼界,がんかい,,gankai,pole widzenia,,,2324
+3675,WORD,WORD_NOUN,,HIRAGANA,,,都,みやこ,,miyako,"stolica
+metropolia",,,
+3676,WORD,WORD_NOUN,,HIRAGANA,,,首都,しゅと,,shuto,stolica,,,
+3677,WORD,WORD_NOUN,,HIRAGANA,,,都市,とし,,toshi,miasto,,,1739
+3678,WORD,WORD_NOUN,,HIRAGANA,,,都会,とかい,,tokai,miasto,duże,,

@@ -170,7 +170,7 @@ public class CsvReaderWriter {
 							info += "czasownik nieprzechodni";
 						}
 						
-						System.out.println(info);
+						//System.out.println(info);
 						
 						sb.append(info);
 					}
