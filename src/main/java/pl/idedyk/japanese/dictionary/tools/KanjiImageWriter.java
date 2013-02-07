@@ -89,8 +89,8 @@ public class KanjiImageWriter {
 		BufferedImage bufferedImage = new BufferedImage(640, 480, BufferedImage.TYPE_BYTE_GRAY);
 		
 		Graphics2D graphics = (Graphics2D)bufferedImage.getGraphics();
-				
-		Font font = new Font("Arial Unicode MS", Font.PLAIN, 22);
+		
+		Font font = new Font("UmePlus P Gothic", Font.PLAIN, 22);
 			
 		graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
 		        RenderingHints.VALUE_ANTIALIAS_ON);
