@@ -1175,7 +1175,7 @@ stopnie",na teście i etc,,
 994,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,雪,ゆき,,yuki,śnieg,,,
 995,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,用事,ようじ,,youji,"interes
 sprawa
-rzeczy do wykonania",,,
+rzeczy do wykonania",,,3684
 996,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,甘い,あまい,,amai,słodki,,,
 997,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,痛い,いたい,,itai,"bolesny
 ranny",,,
@@ -1234,7 +1234,8 @@ narzeczona",,NO,
 1038,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,祭り,まつり,,matsuri,festiwal,,,
 1039,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-11,,お返事,おへんじ,,ohenji,odpowiedź,,,
 1040,WORD,UNKNOWN,,HIRAGANA,Genki 1-12,,方,ほう,,hou,kierunek,,,
-1041,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-12,,晴れる,はれる,,hareru,słoneczna pogoda,czasownik,,
+1041,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 1-12,,晴れる,はれる,,hareru,"słoneczna pogoda
+rozpogadzać się",czasownik,,
 1042,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,雲,くも,,kumo,chmura,,,2572
 1043,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,曇る,くもる,,kumoru,chmurzyć się,,,
 1044,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,風,かぜ,,kaze,wiatr,,,975
@@ -2672,7 +2673,9 @@ dobrze poszło",,,
 w czasie dnia",,,
 2240,WORD,WORD_NOUN,,KATAKANA,,,-,ベッド,,beddo,łóżko,,,
 2241,WORD,WORD_NOUN,,HIRAGANA,,,馬鹿,ばか,,baka,"głupek
-idiota",,,
+idiota
+dureń
+osioł",,,
 2242,WORD,WORD_VERB_U,,HIRAGANA,,,恥ずかしがる,はずかしがる,,hazukashigaru,"być nieśmiały
 być wstydliwy",,,
 2243,WORD,WORD_EXPRESSION,,HIRAGANA,,,恥ずかしがりの,はずかしがりの,,hazukashigari no,nieśmiały,,,
@@ -4132,7 +4135,8 @@ gimnazjum",,
 3164,WORD,WORD_NOUN,,HIRAGANA,,,女性生徒,じょせいせいと,,josei seito,uczennica,,,
 3165,WORD,WORD_NOUN,,HIRAGANA,,,中学生,ちゅうがくせい,,chuugakusei,gimnazjalista,,,
 3166,WORD,WORD_NOUN,,HIRAGANA,,,児童,じどう,,jidou,"dziecko
-wyrostek",,,2729
+wyrostek
+maluch",,,2729
 3167,WORD,WORD_NOUN,,HIRAGANA,,,油,あぶら,,abura,"olej
 tłuszcz",,,
 3168,WORD,WORD_NOUN,,HIRAGANA,,,石油,せきゆ,,sekiyu,ropa naftowa,,,
@@ -5031,3 +5035,35 @@ metropolia",,,
 3676,WORD,WORD_NOUN,,HIRAGANA,,,首都,しゅと,,shuto,stolica,,,
 3677,WORD,WORD_NOUN,,HIRAGANA,,,都市,とし,,toshi,miasto,,,1739
 3678,WORD,WORD_NOUN,,HIRAGANA,,,都会,とかい,,tokai,miasto,duże,,
+3679,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,晴らす,はらす,,harasu,"oczyszczać
+odświeżać",,,
+3680,WORD,WORD_NOUN,,HIRAGANA,,,晴天,せいてん,,seiten,"ładna pogoda
+pogodne niebo",,,
+3681,WORD,WORD_NOUN,,HIRAGANA,,,晴雨計,せいうけい,,seiukei,barometr,,,
+3682,WORD,WORD_NOUN,,HIRAGANA,,,晴れ着,はれぎ,,haregi,świąteczne ubranie,,,
+3683,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,晴朗,せいろう,,seirou,"przejrzysty
+pogodny",,,
+3684,WORD,WORD_NOUN,,HIRAGANA,,,幼児,ようじ,,youji,"niemowlę
+małe dziecko",,,995
+3685,WORD,WORD_NOUN,,HIRAGANA,,,乳児,にゅうじ,,nyuuji,niemowlę,,,
+3686,WORD,WORD_NOUN,,HIRAGANA,,,産児制限,さんじせいげん,,sanjiseigen,kontrola narodzin,,,
+3687,WORD,WORD_NOUN,,HIRAGANA,,,的,まと,,mato,"cel
+znak
+punkt",,,
+3688,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,一般的,いっぱんてき,,ippanteki,ogólny,,,
+3689,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,古典的,こてんてき,,kotenteki,klasyczny,,,
+3690,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,論理的,ろんりてき,,ronriteki,logiczny,,,
+3691,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,社会的,しゃかいてき,,shakaiteki,społeczny,,,
+3692,WORD,WORD_NOUN,,HIRAGANA,,,馬力,ばりき,,bariki,moc silnika,w koniach mechanicznych,,
+3693,WORD,WORD_NOUN,,HIRAGANA,,,馬車,ばしゃ,,basha,"furmanka
+bryczka",,,
+3694,WORD,WORD_NOUN,,HIRAGANA,,,競馬,けいば,,keiba,wyścigi konne,,,
+3695,WORD,WORD_NOUN,,HIRAGANA,,,競馬騎手,けいばきしゅ,,keiba kishu,dżokej,,,
+3696,WORD,WORD_VERB_U,,HIRAGANA,,,計る,はかる,,hakaru,"mierzyć
+kalkulować",,,
+3697,WORD,WORD_VERB_U,,HIRAGANA,,,計らう,はからう,,hakarau,"organizować
+dopilnowywać",,,
+3698,WORD,WORD_NOUN,,HIRAGANA,,,計算,けいさん,,keisan,liczenie,,,
+3699,WORD,WORD_NOUN,,HIRAGANA,,,会計,かいけい,,kaikei,"księgowanie
+płacenie rachunku",,,
+3700,WORD,WORD_NOUN,,HIRAGANA,,,合計,ごうけい,,goukei,końcowa suma,razem,,
