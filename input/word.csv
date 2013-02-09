@@ -268,7 +268,8 @@ alkohol",,,
 238,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,頃,ごろ,,goro,"czas
 około",to samo co toki,,
 239,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,今晩,こんばん,,konban,dziś wieczorem,,,
-240,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,週末,しゅうまつ,,shuumatsu,weekend,,,
+240,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,週末,しゅうまつ,,shuumatsu,"weekend
+koniec tygodnia",,,
 241,WORD,WORD_DAY_WEEK,,HIRAGANA,Genki 1-3,,土曜日,どようび,,doyoubi,sobota,ziemia,,
 242,WORD,WORD_DAY_WEEK,,HIRAGANA,Genki 1-3,,日曜日,にちようび,,nichiyoubi,niedziela,słońce,,
 243,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,毎日,まいにち,,mainichi,każdego dnia,,,
@@ -308,7 +309,8 @@ wiele",,,1216
 271,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,でも,,demo,ale,"używane jest po kropce, w nowym zdaniu",,
 272,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,どうですか,,dou desu ka,co ty na to,,,
 273,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,週,しゅう,,shuu,tydzień,,,
-274,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,末,まつ,,matsu,koniec,,,384
+274,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,末,まつ,,matsu,koniec,,,"384
+3714"
 275,WORD,UNKNOWN,,HIRAGANA,,,毎,まい,,mai,każdy,,,1222
 276,WORD,WORD_NOUN,,HIRAGANA,,,お箸,おはし,,ohashi,pałeczki,,,2296
 277,WORD,WORD_NOUN,,HIRAGANA,,,お風呂,おふろ,,ofuro,"wanna
@@ -434,7 +436,8 @@ istnieć",do rzeczy martwych,,1056
 382,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,書く,かく,o,kaku,pisać,osoba ni rzecz,NO,
 383,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,撮る,とる,o,toru,robić zdjęcie,,,"878
 910"
-384,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,待つ,まつ,o,matsu,czekać,,,274
+384,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,待つ,まつ,o,matsu,czekać,,,"274
+3714"
 385,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-4,が,-,わかる,ga,wakaru,rozumieć,,,
 386,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-4,が,-,いる,ga,iru,"być
 istnieć","miejsce ni, do rzeczy żywych",,704
@@ -758,7 +761,7 @@ nosić","ubranie, na głowę, na głowie",,
 żyć",,,
 638,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,に,住んでいます,すんでいます,ni,sunde imasu,mieszkać,,,
 639,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-7,,-,はく,,haku,"zakładać
-nosić","ubranie, poniżej pasa",,
+nosić","ubranie, poniżej pasa",,3705
 640,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-7,,太る,ふとる,,futoru,zyskiwać na wadze,,,
 641,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,,太っています,ふとっています,,futotte imasu,być grubym,,,
 642,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-7,,-,めがねをかける,,megane o kakeru,zakładać okulary,,,
@@ -1712,7 +1715,9 @@ identyfikacja",,,
 gigantyczny",,,
 1427,WORD,WORD_NOUN,,HIRAGANA,,,御萩,おはぎ,,ohagi,ciastko,rodzaj ciastka,,
 1428,WORD,WORD_NOUN,,HIRAGANA,,,旧市街,きゅうしがい,,kyuushigai,stare miasto,,,
-1429,WORD,UNKNOWN,,HIRAGANA,,,織物,おりもの,,orimono,tkactwo,,,
+1429,WORD,WORD_NOUN,,HIRAGANA,,,織物,おりもの,,orimono,"zwój
+materiał
+tekstylia",,,
 1430,WORD,WORD_NOUN,,HIRAGANA,,,工場,こうじょう,,koujou,fabryka,,,
 1431,WORD,WORD_NOUN,,HIRAGANA,,,針,はり,,hari,"igła
 pinezka
@@ -3055,10 +3060,9 @@ nowy","~ rzeczownik, coś pierwszego",,
 materiał do czytania",,,
 2494,WORD,WORD_NOUN,,KATAKANA,Genki 2-15,,-,ポルシェ,,porushe,Porsche,,,
 2495,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,を,落とす,おとす,o,otosu,"upuszczać
+opuszczać
 spuszczać
-zgubić
-stracić
-zniżać",,,
+zrzucać",,,
 2496,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-15,,落とされました,おとされました,,otosaremashita,została zrzucona,,,
 2497,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-15,,平和記念資料館,へいわきねんしりょうかん,,heiwakinenshiryoukan,Muzeum Pamięci i Pokoju,,,
 2498,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-15,,鹿,しか,,shika,jeleń,,,2325
@@ -3124,7 +3128,9 @@ wskazówka",,NO,
 2544,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-16,を,奢る,おごる,o,ogoru,stawiać,"kogoś/komuś, osoba ni posiłek/napój o",,
 2545,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-16,,落ち込む,おちこむ,,ochikomu,"mieć depresję
 mieć dołek
-być przygnębiony",,,
+być przygnębiony
+wpadać (w dołek)
+zapadać się",,,
 2546,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-16,,困る,こまる,,komaru,"mieć kłopot
 być w kłopocie
 mieć trudności",,,
@@ -3228,7 +3234,8 @@ faktycznie",,,
 2614,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-16,,毎週,まいしゅう,,maishuu,w każdym tygodniu,,NO,
 2615,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-16,,先週,せんしゅう,,senshuu,zeszły tydzień,,NO,
 2616,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-16,,二週目,にしゅうめ,,nishuume,drugi tydzień,,,
-2617,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,週末,しゅうまつ,,shuumatsu,weekend,,NO,
+2617,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,週末,しゅうまつ,,shuumatsu,"weekend
+koniec tygodnia",,NO,
 2618,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-16,,以上,いじょう,,ijou,"powyżej
 więcej niż",,,2946
 2619,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-16,,以下,いか,,ika,"poniżej
@@ -4012,7 +4019,7 @@ opuścić cenę",,,
 3093,WORD,WORD_NOUN,,KATAKANA,,,-,ダンス,,dansu,taniec,,,
 3094,WORD,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ダンスを習う,ダンスをならう,,dansu o narau,nauka tańca,,,
 3095,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,主,おも,,omo,główny,,,
-3096,WORD,WORD_NOUN,,HIRAGANA,,,述語,じゅつご,,jutsugo,orzeczenie,,,
+3096,WORD,WORD_NOUN,,HIRAGANA,,,述語,じゅつご,,jutsugo,orzeczenie,,,3717
 3097,WORD,WORD_NOUN,,HIRAGANA,,,助詞,じょし,,joshi,partykuła,,,
 3098,WORD,WORD_NOUN,,HIRAGANA,,,品詞,ひんし,,hinshi,część mowy,,,
 3099,WORD,WORD_NOUN,,HIRAGANA,,,名詞,めいし,,meishi,rzeczownik,,,1699
@@ -4250,10 +4257,9 @@ zawstydzony",,NO,
 3236,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,謝る,あやまる,,ayamaru,przepraszać,,,
 3237,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,押す,おす,,osu,naciskać,,,
 3238,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-18,を,落とす,おとす,o,otosu,"upuszczać
+opuszczać
 spuszczać
-zgubić
-stracić
-zniżać",,NO,
+zrzucać",,NO,
 3239,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,,お湯が沸く,おゆがわく,,oyu ga waku,woda gotuje się,,,
 3240,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,転ぶ,ころぶ,,korobu,"upaść
 upadać
@@ -4270,7 +4276,8 @@ prosić",,
 3246,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,-,つく,ga,tsuku,włączyć się,,,"1346
 3563"
 3247,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-18,を,汚す,よごす,o,yogosu,pobrudzić się,,,
-3248,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,落ちる,おちる,ga,ochiru,spadać,,,
+3248,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,落ちる,おちる,ga,ochiru,"spadać
+opadać",,,
 3249,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-18,を,考える,かんがえる,o,kangaeru,"myśleć o
 zastanawiać się
 przypuszczać","~ czymś, „myśleć w głowie”, bardziej analityczne, rozwiązywać, analizować",NO,
@@ -4290,7 +4297,7 @@ natychmiast",,,
 3255,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-18,,-,おかげで,,okagede,podziękowania dla,~ no,,
 3256,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-18,,お先に失礼します,おさきにしつれいします,,osaki ni shitsurei shimasu,do zobaczenia,,,
 3257,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-18,,お疲れ様,おつかれさま,,otsukaresama,musisz być zmęczony pracując tak ciężko,,,
-3258,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-18,,お疲れ様でした,おつかれさまでした,,otsukaresama deshita,musisz być zmęczony pracując tak ciężko,,,
+3258,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-18,,お疲れ様でした,おつかれさまでした,,otsukaresama deshita,musisz być zmęczony pracując tak ciężko,forma deshita,,
 3259,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-18,,-,だろう,,darou,forma prosta deshou,,,
 3260,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-18,,-,どうしよう,,doushiyou,co zrobić,,,
 3261,WORD,UNKNOWN,,HIRAGANA,Genki 2-18,,本当に,ほんとうに,,hontou ni,na prawdę,,NO,
@@ -5067,3 +5074,28 @@ dopilnowywać",,,
 3699,WORD,WORD_NOUN,,HIRAGANA,,,会計,かいけい,,kaikei,"księgowanie
 płacenie rachunku",,,
 3700,WORD,WORD_NOUN,,HIRAGANA,,,合計,ごうけい,,goukei,końcowa suma,razem,,
+3701,WORD,WORD_EXPRESSION,,HIRAGANA,,,-,いいね,,iine,"dobre
+lubię to",,,
+3702,WORD,WORD_EXPRESSION,,HIRAGANA,,,-,いいなあ,,iinaa,"dobre
+lubię to",mówione z lekką dozą zazdrości,,
+3703,WORD,WORD_NOUN,,HIRAGANA,,,毛織物,けおりもの,,keorimono,wełniany materiał,,,
+3704,WORD,WORD_NOUN,,HIRAGANA,,,織機,しょっき,,shokki,warsztat tkacki,,,
+3705,WORD,WORD_VERB_U,,HIRAGANA,,,掃く,はく,,haku,"zamiatać
+szczotkować",,,639
+3706,WORD,WORD_NOUN,,HIRAGANA,,,落下,らっか,,rakka,spadanie,,,
+3707,WORD,WORD_NOUN,,HIRAGANA,,,落日,らくじつ,,rakujitsu,zachodzące słońce,,,
+3708,WORD,WORD_VERB_U,,HIRAGANA,,,落ち着く,おちつく,,ochitsuku,"opanowywać się
+uspokajać się",,,
+3709,WORD,WORD_NOUN,,HIRAGANA,,,落とし物,おとしもの,,otoshimono,zgubiony przedmiot,,,
+3710,WORD,UNKNOWN,,HIRAGANA,,,月末,げつまつ,,getsumatsu,koniec miesiąca,,,
+3711,WORD,WORD_NOUN,,HIRAGANA,,,末尾,まつび,,matsubi,"koniec
+zamknięcie","np. raportu, dokumentu, rozdziału",,
+3712,WORD,WORD_NOUN,,HIRAGANA,,,末期,まっき,,makki,"ostatnia faza
+ostatni okres",,,
+3713,WORD,WORD_NOUN,,HIRAGANA,,,末日,まつじつ,,matsujitsu,ostatni dzień,miesiąca,,
+3714,WORD,WORD_NOUN,,HIRAGANA,,,松,まつ,,matsu,sosna,,,"274
+384"
+3715,WORD,WORD_NOUN,,HIRAGANA,,,手術,しゅじゅつ,,shujutsu,"operacja
+zabieg chirurgiczny",,,
+3716,WORD,WORD_NOUN,,HIRAGANA,,,魔術,まじゅつ,,majutsu,magia,,,
+3717,WORD,WORD_NOUN,,HIRAGANA,,,術語,じゅつご,,jutsugo,termin techniczny,,,3096
