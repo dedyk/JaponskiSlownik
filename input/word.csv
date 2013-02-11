@@ -762,7 +762,8 @@ nosić","ubranie, na głowę, na głowie",,
 638,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,に,住んでいます,すんでいます,ni,sunde imasu,mieszkać,,,
 639,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-7,,-,はく,,haku,"zakładać
 nosić","ubranie, poniżej pasa",,3705
-640,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-7,,太る,ふとる,,futoru,zyskiwać na wadze,,,
+640,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-7,,太る,ふとる,,futoru,"zyskiwać na wadze
+grubieć",,,
 641,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,,太っています,ふとっています,,futotte imasu,być grubym,,,
 642,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-7,,-,めがねをかける,,megane o kakeru,zakładać okulary,,,
 643,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-7,,着る,きる,,kiru,"zakładać
@@ -2186,7 +2187,7 @@ istnieć",do rzeczy martwych,NO,
 1843,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-12,を,使う,つかう,o,tsukau,"używać
 korzystać
 wydawać (pieniądze)",,NO,
-1844,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,大使,たいし,,taishi,ambasador,,,
+1844,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,大使,たいし,,taishi,ambasador,,,3746
 1845,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,使用中,しようちゅう,,shiyouchuu,zajęte,korzystanie z czegoś,,
 1846,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-12,,働く,はたらく,,hataraku,pracować,,NO,
 1847,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,共働き,ともばたらき,,tomobataraki,oboje pracują,mąż i żona,,
@@ -4047,7 +4048,10 @@ wulgaryzm",,,
 3110,WORD,WORD_NOUN,,HIRAGANA,,,お品書き,おしながき,,oshinagaki,"spis produktów
 katalog
 menu",,,
-3111,WORD,WORD_NOUN,,HIRAGANA,,,黒字,くろじ,,kuroji,nadwyżka,przeciwieństwo deficytu,,
+3111,WORD,WORD_NOUN,,HIRAGANA,,,黒字,くろじ,,kuroji,"nadwyżka
+zysk
+dochód
+czarne litery",przeciwieństwo deficytu,,
 3112,WORD,WORD_NOUN,,HIRAGANA,,,人生,じんせい,,jinsei,życie,ludzkie,,
 3113,WORD,WORD_NOUN,,HIRAGANA,,,生命,せいめい,,seimei,"życie
 istnienie",,,
@@ -4424,7 +4428,8 @@ wydatek",,,
 3321,WORD,WORD_NOUN,,KATAKANA,,,-,モスク,,mosuku,meczet,,,
 3322,WORD,WORD_NOUN,,KATAKANA,,,-,モスクワ ,,mosukuwa,Moskwa,,,
 3323,WORD,WORD_NOUN,,HIRAGANA,,,様式,ようしき,,youshiki,"styl
-forma",,,
+forma
+tryb",,,
 3324,WORD,WORD_NOUN,,HIRAGANA,,,様子,ようす,,yousu,"sytuacja
 aspekt",,,
 3325,WORD,WORD_NOUN,,HIRAGANA,,,同様,どうよう,,douyou,"identyczny
@@ -5138,3 +5143,29 @@ poważny",,,"1278
 1930"
 3737,WORD,WORD_NOUN,,HIRAGANA,,,重力,じゅうりょく,,juuryoku,"siła ciężkości
 grawitacja",,,
+3738,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,後悔する,こうかいする,,koukai suru,żałować,,,
+3739,WORD,WORD_NOUN,,KATAKANA,,,-,ランプ,,ranpu,światełko,,,
+3740,WORD,WORD_NOUN,,KATAKANA,,,-,スクリーン,,sukuriin,ekran,,,
+3741,WORD,WORD_NOUN,,KATAKANA,,,-,ユーザー,,yuuzaa,użytkownik,,,
+3742,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,太い,ふとい,,futoi,"gruby
+duży",,,
+3743,WORD,WORD_NOUN,,HIRAGANA,,,太鼓,たいこ,,taiko,bęben,,,
+3744,WORD,WORD_NOUN,,HIRAGANA,,,太陽,たいよう,,taiyou,słońce,,,
+3745,WORD,WORD_NOUN,,HIRAGANA,,,太平洋,たいへいよう,,taiheiyou,"Ocena Spokojny
+Pacyfik",,,
+3746,WORD,WORD_NOUN,,HIRAGANA,,,太子,たいし,,taishi,koronowany książę,,,1844
+3747,WORD,WORD_NOUN,,HIRAGANA,,,黒人,こくじん,,kokujin,"Murzyn
+czarny człowiek",,,
+3748,WORD,WORD_NOUN,,HIRAGANA,,,黒表,こくひょう,,kokuhyou,czarna lista,,,
+3749,WORD,WORD_NOUN,,HIRAGANA,,,黒白,くろしろ,,kuroshiro,czarno-biały,,,
+3750,WORD,WORD_NOUN,,HIRAGANA,,,粉,こな,,kona,mąka,,,
+3751,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,正式,せいしき,,seishiki,"formalny
+oficjalny",,,
+3752,WORD,WORD_NOUN,,HIRAGANA,,,公式,こうしき,,koushiki,"formuła (matematyczna)
+oficjalnie
+formalnie",,,
+3753,WORD,WORD_NOUN,,HIRAGANA,,,方式,ほうしき,,houshiki,"formuła
+tryb
+sposób
+metoda
+system",,,
