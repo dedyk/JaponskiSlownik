@@ -344,7 +344,8 @@ biurko",,,
 651"
 298,WORD,WORD_NOUN,,HIRAGANA,Genki 1-4,,お寺,おてら,,otera,świątynia,buddyjska,,
 299,WORD,WORD_NOUN,,HIRAGANA,Genki 1-4,,神社,じんじゃ,,jinja,świątynia,shintoistyczna,,
-300,WORD,WORD_NOUN,,HIRAGANA,Genki 1-4,,公園,こうえん,,kouen,park,publiczny,,
+300,WORD,WORD_NOUN,,HIRAGANA,Genki 1-4,,公園,こうえん,,kouen,"park
+ogród",publiczny,,
 301,WORD,WORD_NOUN,,KATAKANA,Genki 1-4,,-,スーパー,,suupaa,supermarket,,,
 302,WORD,WORD_NOUN,,KATAKANA,Genki 1-4,,-,デパート,,depaato,dom handlowy,,,
 303,WORD,WORD_NOUN,,HIRAGANA_KATAKANA,Genki 1-4,,バス停,バスてい,,basutei,przystanek autobusowy,,,
@@ -1084,7 +1085,8 @@ zdać do następnej klasy",,,"383
 915,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-11,に,勤める,つとめる,ni,tsutomeru,"pracować dla
 być zatrudnionym",niefizycznie,NO,
 916,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,疲れる,つかれる,,tsukareru,"być zmęczony
-zmęczyć się",,,
+zmęczyć się
+znużyć się",,,
 917,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,-,やめる,,yameru,rezygnować,,,
 918,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,,-,けんかする,,kenka suru,pokłócić się,,,
 919,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,を,紹介する,しょうかいする,o,shoukai suru,przedstawiać,"kogoś ni kto ~, hiragana i katakana",,
@@ -3979,13 +3981,14 @@ haft",,,
 ukłuć
 przeszyć
 użądlić
-przebić",,,3293
+przebić",,,"3293
+3758"
 3068,WORD,WORD_NOUN,,HIRAGANA,,,刺,とげ,,toge,kolec,,,
 3069,WORD,WORD_VERB_U,,HIRAGANA,,,刺さる,ささる,,sasaru,"utkwić
 ugrząźć
 utknąć",,,
 3070,WORD,WORD_NOUN,,HIRAGANA,,,糸,いと,,ito,"nić
-nitka",,,
+nitka",,,3769
 3071,WORD,WORD_NOUN,,HIRAGANA,,,生糸,きいと,,kiito,surowy jedwab,,,
 3072,WORD,WORD_NOUN,,HIRAGANA,,,糸口,いとぐち,,itoguchi,"koniec nitki
 początek
@@ -4378,7 +4381,8 @@ ruiny",,,3212
 3291,WORD,WORD_NOUN,,HIRAGANA,,,地平線,ちへいせん ,,chiheisen,horyzont,,,
 3292,WORD,WORD_NOUN,,HIRAGANA,,,涯,はて,,hate,horyzont,,,2886
 3293,WORD,WORD_VERB_U,,HIRAGANA,,,挿す,さす,,sasu,"wciskać
-wkładać do",,,3067
+wkładać do",,,"3067
+3758"
 3294,WORD,WORD_NOUN,,HIRAGANA,,,天文学者,てんもんがくしゃ,,tenmon gakusha,astronom,,,
 3295,WORD,WORD_NOUN,,KATAKANA,,,-,トルン,,torun,Toruń,,,
 3296,WORD,WORD_NOUN,,HIRAGANA,,,法学,ほうがく,,hougaku,prawo,nauka,,
@@ -5079,7 +5083,7 @@ bryczka",,,
 3694,WORD,WORD_NOUN,,HIRAGANA,,,競馬,けいば,,keiba,wyścigi konne,,,
 3695,WORD,WORD_NOUN,,HIRAGANA,,,競馬騎手,けいばきしゅ,,keiba kishu,dżokej,,,
 3696,WORD,WORD_VERB_U,,HIRAGANA,,,計る,はかる,,hakaru,"mierzyć
-kalkulować",,,
+kalkulować",,,3766
 3697,WORD,WORD_VERB_U,,HIRAGANA,,,計らう,はからう,,hakarau,"organizować
 dopilnowywać",,,
 3698,WORD,WORD_NOUN,,HIRAGANA,,,計算,けいさん,,keisan,liczenie,,,
@@ -5169,3 +5173,36 @@ tryb
 sposób
 metoda
 system",,,
+3754,WORD,WORD_NOUN,,HIRAGANA,,,公,おおやけ,,ooyake,"publiczny
+oficjalny",,,
+3755,WORD,WORD_NOUN,,HIRAGANA,,,公衆,こうしゅう,,koushuu,publiczny,np. telefon,,
+3756,WORD,WORD_NOUN,,HIRAGANA,,,公海,こうかい,,koukai,wody międzynarodowe,,,
+3757,WORD,WORD_NOUN,,HIRAGANA,,,公会議,こうかいぎ,,koukaigi,sobór,,,
+3758,WORD,WORD_VERB_U,,HIRAGANA,,,指す,さす,,sasu,wskazywać,,,"3067
+3293"
+3759,WORD,WORD_NOUN,,HIRAGANA,,,指導,しどう,,shidou,"przewodnictwo
+kierownictwo
+instruktaż",,,
+3760,WORD,WORD_NOUN,,HIRAGANA,,,指導者,しどうしゃ,,shidousha,"przywódca
+lider
+wódz
+instruktor",,,
+3761,WORD,WORD_NOUN,,HIRAGANA,,,指名,しめい,,shimei,"wyznaczyć
+nominować",,,
+3762,WORD,WORD_NOUN,,HIRAGANA,,,指定席,していせき,,shiteiseki,miejsce zarezerwowane,,,
+3763,WORD,WORD_NOUN,,HIRAGANA,,,指図,さしず,,sashizu,"wskazówki
+podawanie kierunku",,,
+3764,WORD,WORD_VERB_U,,HIRAGANA,,,疲らす,つからす,,tsukarasu,"męczyć się
+nużyć się",,,
+3765,WORD,WORD_NOUN,,HIRAGANA,,,図,ず,,zu,"rysunek
+plan
+diagram
+ilustracja",,,
+3766,WORD,WORD_VERB_U,,HIRAGANA,,,図る,はかる,,hakaru,mierzyć,,,3696
+3767,WORD,WORD_NOUN,,HIRAGANA,,,合図,あいず,,aizu,"sygnał
+znak
+gest",,,
+3768,WORD,WORD_NOUN,,HIRAGANA,,,図式,ずしき,,zushiki,"diagram
+wykres",,,
+3769,WORD,WORD_NOUN,,HIRAGANA,,,意図,いと,,ito,"intencja
+motywacja",,,3070
