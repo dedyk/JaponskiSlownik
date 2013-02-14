@@ -1002,7 +1002,9 @@ spóźniony",,NO,
 nocować",w hotelu i etc,,2210
 843,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,成る,なる,,naru,stawać się,,,
 844,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,払う,はらう,,harau,płacić,,,
-845,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-10,,決める,きめる,,kimeru,decydować,,,
+845,WORD,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,Genki 1-10,,決める,きめる,,kimeru,"postanawiać
+decydować
+zdecydować",,,
 846,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-10,,練習する,れんしゅうする,,renshuu suru,ćwiczyć,praktykować,,
 847,WORD,UNKNOWN,,HIRAGANA,Genki 1-10,,歩いて,あるいて,,aruite,piechotą,,,
 848,WORD,UNKNOWN,,HIRAGANA,Genki 1-10,,一番,いちばん,,ichiban,"najlepszy
@@ -1243,7 +1245,9 @@ narzeczona",,NO,
 1035,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,文化,ぶんか,,bunka,kultura,,,
 1036,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,-,つり,,tsuri,wędkarstwo,,,
 1037,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,神社,じんじゃ,,jinja,świątynia,shintoistyczna,NO,
-1038,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,祭り,まつり,,matsuri,festiwal,,,
+1038,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,祭り,まつり,,matsuri,"festiwal
+uroczystość
+święto",,,
 1039,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-11,,お返事,おへんじ,,ohenji,odpowiedź,,,
 1040,WORD,UNKNOWN,,HIRAGANA,Genki 1-12,,方,ほう,,hou,kierunek,,,
 1041,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 1-12,,晴れる,はれる,,hareru,"słoneczna pogoda
@@ -2492,7 +2496,8 @@ zaprosić",,,
 2066,WORD,WORD_NOUN,,HIRAGANA,,,西瓜,すいか,,suika,arbuz,,,
 2067,WORD,WORD_NOUN,,HIRAGANA,,,体育,たいいく,,taiiku,wychowanie fizyczne,,,
 2068,WORD,WORD_NOUN,,HIRAGANA,,,体育の日,たいいくのひ,,taiiku no hi,Dzień Zdrowia i Sportu,"Japońskie święto narodowe, obchodzone w drugi poniedziałek października",,
-2069,WORD,WORD_NOUN,,HIRAGANA,,,祭日,さいじつ,,saijitsu,święto narodowe,,,
+2069,WORD,WORD_NOUN,,HIRAGANA,,,祭日,さいじつ,,saijitsu,"święto narodowe
+dzień świąteczny",,,
 2070,WORD,WORD_NOUN,,KATAKANA,,,-,アフリカ,,afurika,Afryka,,,
 2071,WORD,WORD_NOUN,,KATAKANA,,,-,タイ,,tai,Tajlandia,,,
 2072,WORD,WORD_NOUN,,KATAKANA,,,-,ブラジル,,burajiru,Brazylia,,,
@@ -5256,3 +5261,36 @@ konstrukcja",,,
 3786,WORD,WORD_NOUN,,HIRAGANA,,,労働組合,ろうどうくみあい,,roudou kumiai,związki zawodowe,,,
 3787,WORD,WORD_NOUN,,HIRAGANA,,,組閣,そかく,,sokaku,"tworzenie gabinetu (rządu)
 formowanie gabinetu (rządu)",,,
+3788,WORD,WORD_VERB_U,,HIRAGANA,,,労る,いたわる,,itawaru,współczuć,,,
+3789,WORD,WORD_VERB_U,,HIRAGANA,,,労う,ねぎらう,,negirau,"dziękować za
+wynagradzać za",,,
+3790,WORD,WORD_NOUN,,HIRAGANA,,,労苦,ろうく,,rouku,"trud
+znój
+harówka",,,
+3791,WORD,WORD_NOUN,,HIRAGANA,,,労務,ろうむ,,roumu,"praca
+usługa",,,
+3792,WORD,WORD_NOUN,,HIRAGANA,,,労働大臣,ろうどうだいじん,,roudou daijin,minister pracy,,,
+3793,WORD,WORD_NOUN,,HIRAGANA,,,労働市場,ろうどうしじょう,,roudou shijou,rynek pracy,,,
+3794,WORD,WORD_NOUN,,HIRAGANA,,,労賃,ろうちん,,rouchin,"pensja
+wynagrodzenie
+zapłata za pracę",,,
+3795,WORD,WORD_NOUN,,HIRAGANA,,,送り主,おくりぬし,,okurinushi,nadawca,,,
+3796,WORD,WORD_NOUN,,HIRAGANA,,,送り先,おくりさき,,okurisaki,adres,,,
+3797,WORD,WORD_NOUN,,HIRAGANA,,,送金,そうきん,,soukin,"przekaz
+przelew",pieniędzy,,
+3798,WORD,WORD_NOUN,,HIRAGANA,,,送別会,そうべつかい,,soubetsukai,pożegnalne przyjęcie,,,
+3799,WORD,WORD_NOUN,,HIRAGANA,,,見送り,みおくり,,miokuri,"odprowadzanie (np. na stację)
+pożegnanie",,,
+3800,WORD,WORD_VERB_U,,HIRAGANA,,,祭る,まつる,,matsuru,"czcić
+oddawać hołd
+sprawować obrzędy",,,
+3801,WORD,WORD_NOUN,,HIRAGANA,,,祭司,さいし,,saishi,kapłan,,,
+3802,WORD,WORD_NOUN,,HIRAGANA,,,司祭,しさい,,shisai,"kapłan
+ksiądz",,,
+3803,WORD,WORD_NOUN,,HIRAGANA,,,祭儀,さいぎ,,saigi,"ceremonia
+obrzęd",,,
+3804,WORD,WORD_NOUN,,HIRAGANA,,,祭壇,さいだん,,saidan,ołtarz,,,
+3805,WORD,WORD_NOUN,,HIRAGANA,,,竹刀,しない,,shinai,miecz bambusowy,używany do kendo,,
+3806,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,,決まる,きまる,,kimaru,"być postanowionym
+zostały zdecydowane
+zostały ustalone",,,
