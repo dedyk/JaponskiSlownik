@@ -4,5 +4,7 @@ public enum AttributeType {
 	
 	VERB_TRANSITIVITY,
 	
-	VERB_INTRANSITIVITY;
+	VERB_INTRANSITIVITY,
+	
+	VERB_KEIGO_HIGH;
 }
