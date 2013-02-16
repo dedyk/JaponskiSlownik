@@ -775,7 +775,8 @@ grubieć",,,
 643,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-7,,着る,きる,,kiru,"zakładać
 nosić","ubranie, powyżej pasa",,707
 644,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-7,に,勤める,つとめる,ni,tsutomeru,"pracować dla
-być zatrudnionym",niefizycznie,,1814
+być zatrudnionym",niefizycznie,,"1814
+3863"
 645,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,に,勤めています,つとめています,ni,tsutomete imasu,pracować dla,,,
 646,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-7,,-,やせる,,yaseru,tracić na wadze,,,
 647,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,,-,やせています,,yasete imasu,być chudym,,,
@@ -908,7 +909,7 @@ choroba",,NO,
 763,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-9,が,終わる,おわる,ga,owaru,kończyć,coś,,
 764,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-9,,人気がある,にんきがある,,ninki ga aru,być popularny,,,
 765,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 1-9,が,始まる,はじまる,ga,hajimaru,zaczynać się,coś,,
-766,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-9,,弾く,ひく,,hiku,grać,"np. instrument klawiszowy, gitara, skrzypce i etc",,
+766,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-9,,弾く,ひく,,hiku,grać,"np. instrument klawiszowy, gitara, skrzypce i etc",,3875
 767,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-9,,敲く,たたく,,tataku,grać,na bębnie,,2375
 768,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-9,,吹く,ふく,,fuku,grać,instrument dmuchany,,989
 769,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-9,を,-,もらう,o,morau,"dostać
@@ -2171,7 +2172,8 @@ salon piękności",damski,NO,
 1811,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,台所,だいどころ,,daidokoro,kuchnia,,,
 1812,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,住所,じゅうしょ,,juusho,adres,,NO,
 1813,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 1-11,を,勉強する,べんきょうする,o,benkyou suru,uczyć się,nauka z książek,NO,
-1814,KANJI,WORD_VERB_RU,,HIRAGANA,Genki kanji 1-11,,勉める,つとめる,,tsutomeru,starać się,,,644
+1814,KANJI,WORD_VERB_RU,,HIRAGANA,Genki kanji 1-11,,勉める,つとめる,,tsutomeru,starać się,,,"644
+3863"
 1815,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-11,,勤勉,きんべん,,kinben,pilny,,,
 1816,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 1-11,を,勉強する,べんきょうする,o,benkyou suru,uczyć się,nauka z książek,NO,
 1817,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 1-11,,強い,つよい,,tsuyoi,silny,,,
@@ -5380,3 +5382,42 @@ faktycznie",,,
 3857,WORD,UNKNOWN,,HIRAGANA,Genki 2-19,,名様,めいさま,,meisama,grupa ~ ludzi,,,
 3858,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-19,,-,ようこそ,,youkoso,witamy,,,
 3859,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-19,に,よろしくお伝え下さい,よろしくおつたえください,ni,yoroshiku otsutae kudasai,z wyrazami szacunku dla,,,
+3860,WORD,WORD_NOUN,,HIRAGANA,,,恥,はじ,,haji,"wstyd
+nieśmiałość
+hańba",,,
+3861,WORD,WORD_VERB_U,,HIRAGANA,,,恥じらう,はじらう,,hajirau,"wstydzić się
+być nieśmiałym",,,
+3862,WORD,WORD_VERB_RU,,HIRAGANA,,,恥じる,はじる,,hajiru,"wstydzić się
+czuć się zawstydzonym
+czuć się zhańbionym",,,
+3863,WORD,WORD_VERB_RU,,HIRAGANA,,,務める,つとめる,,tsutomeru,"pracować
+służyć",,,"644
+1814"
+3864,WORD,WORD_NOUN,,HIRAGANA,,,義務,ぎむ,,gimu,"obowiązek
+powinność",,,
+3865,WORD,WORD_NOUN,,HIRAGANA,,,事務所,じむしょ,,jimusho,biuro,,,
+3866,WORD,WORD_NOUN,,HIRAGANA,,,外務省,がいむしょう,,gaimushou,ministerstwo spraw zagranicznych,,,
+3867,WORD,WORD_NOUN,,HIRAGANA,,,義理,ぎり,,giri,"obowiązek
+dług wdzięczności",,,
+3868,WORD,WORD_NOUN,,HIRAGANA,,,義父,ぎふ,,gifu,teść,,,
+3869,WORD,WORD_NOUN,,HIRAGANA,,,同義語,どうぎご,,dougigo,synonim,,,
+3870,WORD,WORD_NOUN,,HIRAGANA,,,官立,かんりつ,,kanritsu,"państwowy
+prowadzony przez rząd",,,
+3871,WORD,WORD_NOUN,,HIRAGANA,,,外交官,がいこうかん,,gaikoukan,dyplomata,,,
+3872,WORD,WORD_NOUN,,HIRAGANA,,,官僚,かんりょう,,kanryou,biurokracja,,,
+3873,WORD,WORD_NOUN,,HIRAGANA,,,官庁,かんちょう,,kanchou,biuro rządowe,,,
+3874,WORD,WORD_NOUN,,HIRAGANA,,,国務長官,こくむちょうかん,,kokumuchoukan,sekretariat stanu,,,
+3875,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,引く,ひく,,hiku,ciągnąć,,,766
+3876,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,引ける,ひける,,hikeru,ciągnąć,,,
+3877,WORD,WORD_NOUN,,HIRAGANA,,,引っ越し,ひっこし,,hikkoshi,przeprowadzka,,,
+3878,WORD,WORD_NOUN,,HIRAGANA,,,引用,いんよう,,in'you,cytat,,,
+3879,WORD,WORD_NOUN,,HIRAGANA,,,引責,いんせき,,inseki,branie odpowiedzialności,,,
+3880,WORD,WORD_NOUN,,HIRAGANA,,,引力,いんりょく,,inryoku,"przyciąganie
+grawitacja
+magnetyzm",,,
+3881,WORD,WORD_NOUN,,HIRAGANA,,,司会者,しかいしゃ,,shikaisha,"mistrz ceremonii
+prowadzący spotkanie",,,
+3882,WORD,WORD_NOUN,,HIRAGANA,,,司法大臣,しほうだいじん ,,shihoudaijin,minister sprawiedliwości,,,
+3883,WORD,WORD_NOUN,,HIRAGANA,,,司書,ししょ,,shisho,"bibliotekarz
+bibliotekarka",,,
+3884,WORD,WORD_NOUN,,HIRAGANA,,,上司,じょうし,,joushi,przełożony,,,
