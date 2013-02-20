@@ -1490,7 +1490,8 @@ takiego rodzaju",blisko mówcy,,
 3896"
 1217,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,個,こ,,ko,[liczenie małych przedmiotów],~,,
 1218,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,冊,さつ,,satsu,[liczenie wolumenów],"~, przedmioty nie mające określonego kształtu",,
-1219,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,台,だい,,dai,[liczenie urządzeń],~,,3974
+1219,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,台,だい,,dai,[liczenie urządzeń],~,,"3974
+4021"
 1220,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,匹,ひき,,hiki,[liczenie małych zwierząt],~,,
 1221,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,本,ほん,,hon,[liczenie długich przedmiotów],~,,158
 1222,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,枚,まい,,mai,[liczenie płaskich przedmiotów],~,,275
@@ -2023,7 +2024,9 @@ nieobecny",,NO,
 1677,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-8,を,読む,よむ,o,yomu,czytać,,NO,
 1678,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-8,,読書,どくしょ,,dokusho,czytać książki,,,
 1679,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-8,,思う,おもう,,omou,myśleć,"„myśleć w sercu”, mieć coś na myśli",NO,
-1680,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-8,,不思議,ふしぎ,,fushigi,tajemniczy,,,
+1680,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-8,,不思議,ふしぎ,,fushigi,"tajemniczy
+niezwykły
+dziwny",,,
 1681,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-8,,次,つぎ,,tsugi,następny,,NO,
 1682,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-8,,次女,じじょ,,jijo,następna córka,,,
 1683,KANJI,WORD_ASK,,HIRAGANA,Genki kanji 1-8,,何,"なん
@@ -2339,7 +2342,10 @@ grupa etniczna",,,
 1939,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-14,,親切,しんせつ,,shinsetsu,miły,,NO,
 1940,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,親友,しんゆう,,shin'yuu,najlepszy przyjaciel,,NO,
 1941,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,両親,りょうしん,,ryoushin,rodzice,bardziej grzecznie,NO,
-1942,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-14,,親しい,したしい,,shitashii,poufały,,,
+1942,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-14,,親しい,したしい,,shitashii,"zaprzyjaźniony
+przyjazny
+bliski
+poufały",,,
 1943,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-14,,親切,しんせつ,,shinsetsu,miły,,NO,
 1944,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-14,,切る,きる,,kiru,ciąć,,NO,
 1945,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-14,,大切,たいせつ,,taisetsu,ważny,,,
@@ -4068,7 +4074,7 @@ opuścić cenę",,,
 3094,WORD,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ダンスを習う,ダンスをならう,,dansu o narau,nauka tańca,,,
 3095,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,主,おも,,omo,główny,,,
 3096,WORD,WORD_NOUN,,HIRAGANA,,,述語,じゅつご,,jutsugo,orzeczenie,,,3717
-3097,WORD,WORD_NOUN,,HIRAGANA,,,助詞,じょし,,joshi,partykuła,,,
+3097,WORD,WORD_NOUN,,HIRAGANA,,,助詞,じょし,,joshi,partykuła,,,4002
 3098,WORD,WORD_NOUN,,HIRAGANA,,,品詞,ひんし,,hinshi,część mowy,,,
 3099,WORD,WORD_NOUN,,HIRAGANA,,,名詞,めいし,,meishi,rzeczownik,,,1699
 3100,WORD,WORD_NOUN,,HIRAGANA,,,動詞,どうし,,doushi,czasownik,,,
@@ -5575,7 +5581,8 @@ motel",,,
 3973,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,話題,わだい,,wadai,"temat rozmowy
 przedmiot rozmowy",,,
 3974,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,題,だい,,dai,"temat
-tytuł",,,1219
+tytuł",,,"1219
+4021"
 3975,WORD,WORD_NOUN,,HIRAGANA,,,西洋,せいよう,,seiyou,"zachód
 zachodnie kraje",,,
 3976,WORD,WORD_NOUN,,HIRAGANA,,,洋式,ようしき,,youshiki,w stylu zachodnim,,,3323
@@ -5617,3 +5624,54 @@ los
 fatum",,,
 3999,WORD,WORD_NOUN,,HIRAGANA,,,題目,だいもく,,daimoku,tytuł,,,
 4000,WORD,WORD_NOUN,,HIRAGANA,,,議題,ぎだい,,gidai,przedmiot dyskusji,,,
+4001,WORD,WORD_NOUN,,HIRAGANA,,,彼氏,かれし,,kareshi,narzeczony,,,
+4002,WORD,WORD_NOUN,,HIRAGANA,,,女子,じょし,,joshi,"dziewczyna
+kobieta",,,3097
+4003,WORD,WORD_NOUN,,HIRAGANA,,,男子,だんし,,danshi,"chłopiec
+mężczyzna",,,
+4004,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 2-18,,楽しみ,たのしみ,,tanoshimi,"przyjemność
+zabawa
+radość
+rozrywka
+zamiłowanie
+szczęście",,,
+4005,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,目的,もくてき,,mokuteki,cel,do którego się zmierza,NO,
+4006,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,女子学生,じょしがくせい,,joshi gakusei,studentka,,,
+4007,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,男子学生,だんしがくせい,,danshi gakusei,student,,,
+4008,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,家庭教師,かていきょうし,,katei kyoushi,"nauczyciel udzielający lekcji w prywatnym domu
+korepetytor",,,
+4009,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,力仕事,ちからしごと,,chikara shigoto,praca fizyczna,,NO,
+4010,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,洋服,ようふく,,youfuku,ubranie,w zachodnim stylu,NO,
+4011,WORD,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-18,,-,サークル,,saakuru,klub,,,
+4012,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,生活費,せいかつひ,,seikatsuhi,"koszty utrzymania
+koszty życia",,NO,
+4013,WORD,WORD_NOUN,,KATAKANA,,,-,チラシ,,chirashi,ulotka,,,
+4014,WORD,WORD_VERB_U,,HIRAGANA,,,配る,くばる,,kubaru,"dystrybuować
+dostarczać
+roznosić",,,
+4015,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,種類,しゅるい,,shurui,"rodzaj
+gatunek",,NO,
+4016,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,事務,じむ,,jimu,praca biurowa,,,
+4017,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-18,,生活のゆとり,せいかつのゆとり,,seikatsu no yutori,dodatkowe pieniądze zaoszczędzone na kosztach życia,,,
+4018,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,貯金,ちょきん,,chokin,oszczędności,,,
+4019,WORD,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-18,,-,ワンルームマンション,,wanruumu manshon,jednopokojowe mieszkanie,,,
+4020,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,食費,しょくひ,,shokuhi,koszty jedzenia,,,
+4021,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-18,,代,だい,,dai,"koszt
+opłata",~ za,,"1219
+3974"
+4022,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-18,,電気代,でんきだい,,denki dai,opłata za prąd,,NO,
+4023,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-18,,毎月,まいつき,,maitsuki,"w każdym miesiącu
+każdego miesiąca",,,
+4024,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,引っ越し,ひっこし,,hikkoshi,przeprowadzka,,NO,
+4025,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-18,,始めは,はじめは,,hajimeha,na początku,,,
+4026,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-18,,親しい,したしい,,shitashii,"zaprzyjaźniony
+przyjazny
+bliski
+poufały",,NO,
+4027,WORD,WORD_NOUN,,HIRAGANA,,,会議,かいぎ,,kaigi,"konferencja
+spotkanie",,,
+4028,WORD,WORD_NOUN,,HIRAGANA,,,協議,きょうぎ,,kyougi,"rada
+konferencja",,,
+4029,WORD,WORD_NOUN,,HIRAGANA,,,議会,ぎかい,,gikai,"parlament
+sejm",,,
+4030,WORD,WORD_NOUN,,HIRAGANA,,,議員,ぎいん,,giin,członek parlamentu,,,
