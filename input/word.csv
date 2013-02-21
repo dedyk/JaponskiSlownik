@@ -3051,7 +3051,9 @@ dojazd do pracy",,,
 2454,WORD,WORD_NOUN,,HIRAGANA,,,航空母艦,こうくうぼかん,,koukuubokan,lotniskowiec,,,
 2455,WORD,WORD_NOUN,,HIRAGANA,,,鰐,わに,,wani,krokodyl,,,
 2456,WORD,WORD_NOUN,,HIRAGANA,,,貝殻,かいがら,,kaigara,muszla,,,
-2457,WORD,WORD_NOUN,,HIRAGANA,,,案内所,あんないじょ,,annaijo,punkt informacyjny,,,
+2457,WORD,WORD_NOUN,,HIRAGANA,,,案内所,あんないじょ,,annaijo,"punkt informacyjny
+informacja
+biuro informacyjne",,,
 2458,WORD,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 2-15,,生まれる,うまれる,,umareru,rodzić się,,NO,
 2459,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-15,,原爆,げんばく,,genbaku,bomba atomowa,,,
 2460,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-15,,残す,のこす,,nokosu,"zostawiać
@@ -3332,9 +3334,8 @@ nieprzyjaciel
 przeciwnik
 rywal
 oponent",znajdujący się w tej innej grupie niż ja,,3920
-2641,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,読み方,よみかた,,yomikata,"kierunek czytania
-sposób czytania
-czytanie",,,
+2641,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,読み方,よみかた,,yomikata,"sposób czytania
+kierunek czytania",,,
 2642,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,食べ方,たべかた,,tabekata,sposób jedzenia,,,
 2643,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,書き方,かきかた,,kakikata,"sposób pisania
 styl pisania",,,
@@ -3356,6 +3357,7 @@ przenosić
 transportować",,,
 2651,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運動,うんどう,,undou,ćwiczenia,fizyczne,NO,
 2652,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-16,,動く,うごく,,ugoku,"ruszać się
+przesuwać się
 posuwać się
 nie stać",,,
 2653,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,自動車,じどうしゃ,,jidousha,automobil,,NO,
@@ -3627,7 +3629,7 @@ ogłoszenie (czegoś)",,NO,
 2824,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,表紙,ひょうし,,hyoushi,"strona tytułowa
 okładka",,,
 2825,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-17,,表す,あらわす,,arawasu,"wyrażać
-wypowiadać",np. opinię,,
+wypowiadać",np. opinię,,4031
 2826,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,作品,さくひん,,sakuhin,"utwór artystyczny
 dzieło
 rękodzieło",,NO,
@@ -3952,7 +3954,7 @@ grad",,,
 słup lodowy",,,3019
 3019,WORD,WORD_NOUN,,HIRAGANA,,,氷柱,つらら,,tsurara,"sopel lodu
 słup lodowy",,,3018
-3020,WORD,WORD_NOUN,,HIRAGANA,,,氷原,ひょうげん,,hyougen,pole lodowe,,,
+3020,WORD,WORD_NOUN,,HIRAGANA,,,氷原,ひょうげん,,hyougen,pole lodowe,,,4036
 3021,WORD,WORD_NOUN,,HIRAGANA,,,氷解,ひょうかい,,hyoukai,topnienie lodu,,,3022
 3022,WORD,WORD_NOUN,,HIRAGANA,,,氷海,ひょうかい,,hyoukai,zamarznięte morze,,,3021
 3023,WORD,WORD_NOUN,,HIRAGANA,,,脳,のう,,nou,"mózg
@@ -4624,7 +4626,8 @@ balonik",,,
 3403,WORD,WORD_NOUN,,HIRAGANA,,,心柄,こころがら,,kokorogara,"stan ducha
 stan umysłu",,,
 3404,WORD,WORD_NOUN,,HIRAGANA,,,心配,しんぱい,,shinpai,"niepokój
-troska",,,
+troska
+obawa",,,
 3405,WORD,WORD_NOUN,,HIRAGANA,,,真心,まごころ,,magokoro,"szczerość
 otwartość",,,
 3406,WORD,WORD_NOUN,,HIRAGANA,,,体験,たいけん,,taiken,"doświadczenie
@@ -5648,7 +5651,8 @@ koszty życia",,NO,
 4013,WORD,WORD_NOUN,,KATAKANA,,,-,チラシ,,chirashi,ulotka,,,
 4014,WORD,WORD_VERB_U,,HIRAGANA,,,配る,くばる,,kubaru,"dystrybuować
 dostarczać
-roznosić",,,
+roznosić
+rozdawać",,,
 4015,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,種類,しゅるい,,shurui,"rodzaj
 gatunek",,NO,
 4016,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,事務,じむ,,jimu,praca biurowa,,,
@@ -5675,3 +5679,47 @@ konferencja",,,
 4029,WORD,WORD_NOUN,,HIRAGANA,,,議会,ぎかい,,gikai,"parlament
 sejm",,,
 4030,WORD,WORD_NOUN,,HIRAGANA,,,議員,ぎいん,,giin,członek parlamentu,,,
+4031,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,現す,あらわす,,arawasu,pokazywać,,,2825
+4032,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,現れる,あらわれる,,arawareru,ukazywać się,,,
+4033,WORD,WORD_NOUN,,HIRAGANA,,,現代,げんだい,,gendai,"teraźniejszość
+współczesność
+czasy nowożytne",,,
+4034,WORD,WORD_NOUN,,HIRAGANA,,,実現,じつげん,,jitsugen,"realizować
+osiągnąć
+wypełnić",,,
+4035,WORD,WORD_NOUN,,HIRAGANA,,,現金,げんきん,,genkin,"pieniądze
+gotówka",,,
+4036,WORD,WORD_NOUN,,HIRAGANA,,,表現,ひょうげん,,hyougen,"wyrażenie
+określenie",,,3020
+4037,WORD,WORD_NOUN,,HIRAGANA,,,支配,しはい,,shihai,"panowanie
+rządzenie",,,
+4038,WORD,WORD_NOUN,,HIRAGANA,,,配達,はいたつ,,haitatsu,"dystrybucja
+dostawa",,,
+4039,WORD,WORD_NOUN,,HIRAGANA,,,配電,はいでん,,haiden,przesyłanie energii elektrycznej,,,
+4040,WORD,WORD_NOUN,,HIRAGANA,,,配膳,はいぜん,,haizen,nakrywanie do stołu,,,
+4041,WORD,WORD_NOUN,,HIRAGANA,,,案内,あんない,,annai,"oprowadzanie
+przewodzenie
+ogłoszenie
+zaproszenie",,,
+4042,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,案外,あんがい,,angai,"niespodziewany
+zaskakujący
+nieoczekiwany",,,
+4043,WORD,WORD_NOUN,,HIRAGANA,,,案出,あんしゅつ,,anshutsu,"pomysł
+wynalazek
+opracowanie (czegoś)",,,
+4044,WORD,WORD_NOUN,,HIRAGANA,,,案件,あんけん,,anken,"artykuł
+sprawa
+przedmiot
+wniosek",,,
+4045,WORD,WORD_NOUN,,HIRAGANA,,,礼儀,れいぎ,,reigi,"zachowanie
+maniery
+etykieta",,,
+4046,WORD,WORD_NOUN,,HIRAGANA,,,礼拝,れいはい,,reihai,"oddawanie czci
+rytuał
+adoracja
+nabożeństwo",,,
+4047,WORD,WORD_NOUN,,HIRAGANA,,,礼典,れいてん,,reiten,"ceremonia
+rytuał",,,
+4048,WORD,WORD_NOUN,,HIRAGANA,,,典礼,てんれい,,tenrei,"liturgia
+obrzędy",,,
+4049,WORD,WORD_NOUN,,HIRAGANA,,,洗礼,せんれい,,senrei,chrzest,,,
