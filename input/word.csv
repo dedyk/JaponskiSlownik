@@ -15,7 +15,7 @@ yo",cztery,,,"2390
 7,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,六,ろく,,roku,sześć,,,
 8,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,七,"なな
 しち",,"nana
-shichi",siedem,,,
+shichi",siedem,,,4097
 9,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,八,はち,,hachi,osiem,,,
 10,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,九,"きゅう
 く",,"kyuu
@@ -286,8 +286,10 @@ koniec tygodnia",,,
 3778"
 249,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-3,を,聞く,きく,o,kiku,słuchać,,NO,
 250,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-3,を,飲む,のむ,o,nomu,pić,,NO,
-251,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-3,を,話す,はなす,o,hanasu,rozmawiać,,,252
-252,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-3,で,話す,はなす,de,hanasu,mówić,"język, de ~",,251
+251,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-3,を,話す,はなす,o,hanasu,rozmawiać,,,"252
+4104"
+252,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-3,で,話す,はなす,de,hanasu,mówić,"język, de ~",,"251
+4104"
 253,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-3,を,読む,よむ,o,yomu,czytać,,,
 254,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-3,,起きる,おきる,,okiru,wstawać,,,
 255,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-3,を,食べる,たべる,o,taberu,jeść,,NO,
@@ -1483,7 +1485,7 @@ być zrobiony",,,
 1212,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-14,,-,こんな,,konna,"jak tak
 taki
 takiego rodzaju",blisko mówcy,,
-1213,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-14,,-,たち,,tachi,[tworzenie liczby mnogiej do zaimków osobowych],"np. my, wy",,
+1213,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-14,,達,たち,,tachi,[tworzenie liczby mnogiej do zaimków osobowych],"np. my, wy",,
 1214,WORD,WORD_PRONOUN,,HIRAGANA,Genki 2-14,,私たち,わたしたち,,watashi tachi,my,,NO,
 1215,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-14,,-,ちょうど,,choudo,dokładnie,,,
 1216,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-14,,-,よく,,yoku,dobrze,,,"269
@@ -3352,15 +3354,12 @@ kierowanie",pojazdem,,
 2648,KANJI,WORD_EXPRESSION,,HIRAGANA,Genki kanji 2-16,,運がいい,うんがいい,,un ga ii,szczęśliwy,"w znaczeniu zrządzenia losu, trafu",,
 2649,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運命,うんめい,,unmei,"los
 przeznaczenie",,,
-2650,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-16,,運ぶ,はこぶ,,hakobu,"nosić
-wozić
-przenosić
-transportować",,,
+2650,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-16,,運ぶ,はこぶ,,hakobu,"transportować
+przewozić
+nosić",,,
 2651,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運動,うんどう,,undou,ćwiczenia,fizyczne,NO,
-2652,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-16,,動く,うごく,,ugoku,"ruszać się
-przesuwać się
-posuwać się
-nie stać",,,
+2652,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-16,,動く,うごく,,ugoku,"poruszać się
+ruszać się",,,
 2653,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,自動車,じどうしゃ,,jidousha,automobil,,NO,
 2654,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,動物,どうぶつ,,doubutsu,zwierze,,NO,
 2655,KANJI,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-16,を,教える,おしえる,o,oshieru,uczyć,"kogoś, osoba ni rzecz",NO,
@@ -5784,3 +5783,42 @@ wykluczać",,,
 4089,WORD,WORD_NOUN,,HIRAGANA,,,特典,とくてん,,tokuten,przywilej,,,
 4090,WORD,WORD_NOUN,,HIRAGANA,,,典型,てんけい,,tenkei,"typ
 wzór",,,
+4091,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,達する,たっする,,tassuru,"przybywać
+osiągnąć",,,
+4092,WORD,WORD_NOUN,,HIRAGANA,,,発達,はったつ,,hattatsu,rozwój,,,
+4093,WORD,WORD_NOUN,,HIRAGANA,,,上達,じょうたつ,,joutatsu,"postęp
+biegłość",,,
+4094,WORD,WORD_NOUN,,HIRAGANA,,,達成,たっせい,,tassei,osiągnięcie,,,
+4095,WORD,WORD_NOUN,,HIRAGANA,,,達磨,だるま,,daruma,Dharma,"indyjski kapłan, założyciel buddyjskiej sekty Zen",,
+4096,WORD,WORD_NOUN,,HIRAGANA,,,達人,たつじん,,tatsujin,"ekspert
+specjalista
+mistrz",,,
+4097,WORD,WORD_NOUN,,HIRAGANA,,,質,しち,,shichi,"zakładnik
+zestaw",,,8
+4098,WORD,WORD_VERB_U,,HIRAGANA,,,質す,ただす,,tadasu,"pytać
+żądać
+prosić
+dochodzić
+potwierdzać",,,
+4099,WORD,WORD_NOUN,,HIRAGANA,,,本質,ほんしつ,,honshitsu,"istota
+prawdziwa natura",,,
+4100,WORD,WORD_NOUN,,HIRAGANA,,,物質,ぶっしつ,,busshitsu,"materia
+rzecz materialna",,,
+4101,WORD,WORD_NOUN,,HIRAGANA,,,質屋,しちや,,shichiya,lombard,,,
+4102,WORD,WORD_NOUN,,HIRAGANA,,,人質,ひとじち,,hitojichi,"zakładnik
+więzień",,,
+4103,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,離れる,はなれる,,hanareru,"separować się
+odłączać się
+odchodzić",,,
+4104,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,離す,はなす,,hanasu,"rozdzielać
+separować
+trzymać oddzielnie",,,"251
+252"
+4105,WORD,WORD_NOUN,,HIRAGANA,,,客,きゃく,,kyaku,"gość
+klient",,,
+4106,WORD,WORD_NOUN,,HIRAGANA,,,旅客,りょきゃく,,ryokyaku,"podróżny
+pasażer",,,
+4107,WORD,WORD_NOUN,,HIRAGANA,,,客船,きゃくせん,,kyakusen,statek pasażerski,,,
+4108,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,客観的,きゃっかんてき,,kyakkanteki,obiektywny,,,
+4109,WORD,WORD_NOUN,,HIRAGANA,,,客車,きゃくしゃ,,kyakusha,"pociąg pasażerski
+wagon osobowy",,,
