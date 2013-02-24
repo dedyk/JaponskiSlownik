@@ -2156,7 +2156,8 @@ hobby",,,
 1785,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 1-11,,明るい,あかるい,,akarui,"pogodny
 jasny",,,
 1786,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,明日,あした,,ashita,jutro,,NO,
-1787,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,説明,せつめい,,setsumei,wyjaśnienie,,,
+1787,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,説明,せつめい,,setsumei,"wyjaśnienie
+wytłumaczenie",,,
 1788,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,病院,びょういん,,byouin,szpital,,NO,
 1789,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,病気,びょうき,,byouki,"chory
 choroba",,NO,
@@ -2743,6 +2744,7 @@ zawstydzony",,,
 skromność
 bojaźliwość",,,
 2247,WORD,WORD_NOUN,,HIRAGANA,,,感謝,かんしゃ,,kansha,"podziękowanie
+dziękczynienie
 wdzięczność",,,
 2248,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,感謝する,かんしゃする,,kansha suru,dziękować,,,
 2249,WORD,WORD_NOUN,,HIRAGANA,,,組織,そしき,,soshiki,"organizacja
@@ -3601,7 +3603,7 @@ obyczaj",,NO,
 2804,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,ご主人,ごしゅじん,,goshujin,mąż,spoza swojej rodziny,NO,
 2805,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,主婦,しゅふ,,shufu,Pani domu,,NO,
 2806,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,主語,しゅご,,shugo,"temat zdania
-podmiot",,,
+podmiot",,,4120
 2807,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,持ち主,もちぬし,,mochinushi,właściciel,,,
 2808,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-17,を,結婚する,けっこんする,o,kekkon suru,żenić się,,NO,
 2809,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-17,,結果,けっか,,kekka,"wynik
@@ -5828,3 +5830,45 @@ pasażer",,,
 wagon osobowy",,,
 4110,WORD,WORD_NOUN,,HIRAGANA,,,忍者,にんじゃ,,ninja,Ninja,"rodzaj japońskich wojowników specjalizujących się w szpiegowaniu, zamachach i sztukach walki",,
 4111,WORD,WORD_NOUN,,HIRAGANA,,,絆創膏,ばんそうこう,,bansoukou,plaster,,,
+4112,WORD,WORD_NOUN,,HIRAGANA,,,謝礼,しゃれい,,sharei,"podziękowanie
+wynagrodzenie",,,
+4113,WORD,WORD_NOUN,,HIRAGANA,,,謝恩,しゃおん,,shaon,"spłacanie długu wdzięczności
+odpłata za dobroć",,,
+4114,WORD,WORD_NOUN,,HIRAGANA,,,謝意,しゃい,,shai,poczucie wdzięczności,,,
+4115,WORD,WORD_NOUN,,HIRAGANA,,,謝絶,しゃぜつ,,shazetsu,odmowa,,,
+4116,WORD,WORD_VERB_U,,HIRAGANA,,,護る,まもる,,mamoru,"bronić
+chronić",,,4131
+4117,WORD,WORD_NOUN,,HIRAGANA,,,護身,ごしん,,goshin,samoobrona,,,
+4118,WORD,WORD_NOUN,,HIRAGANA,,,護国,ごこく,,gokoku,obrona kraju,,,
+4119,WORD,WORD_NOUN,,HIRAGANA,,,護送,ごそう,,gosou,"konwój
+eskorta",,,
+4120,WORD,WORD_NOUN,,HIRAGANA,,,守護,しゅご,,shugo,"patron
+obrońca
+stróż",,,2806
+4121,WORD,WORD_NOUN,,HIRAGANA,,,保護,ほご,,hogo,"obrona
+protekcja
+ochrona",,,
+4122,WORD,WORD_VERB_U,,HIRAGANA,,,説く,とく,,toku,tłumaczyć,,,
+4123,WORD,WORD_NOUN,,HIRAGANA,,,説教,せっきょう,,sekkyou,"kazanie
+homilia",,,
+4124,WORD,WORD_NOUN,,HIRAGANA,,,説得,せっとく,,settoku,przekonywanie,,,
+4125,WORD,WORD_NOUN,,HIRAGANA,,,小説,しょうせつ,,shousetsu,"nowela
+krótkie opowiadanie",,,
+4126,WORD,WORD_NOUN,,HIRAGANA,,,演説,えんぜつ,,enzetsu,przemówienie,,,
+4127,WORD,WORD_VERB_U,,HIRAGANA,,,保つ,たもつ,,tamotsu,"zachowywać
+utrzymywać
+przetrzymywać",,,
+4128,WORD,WORD_NOUN,,HIRAGANA,,,保証,ほしょう,,hoshou,"zapewnienie
+gwarancja",,,
+4129,WORD,WORD_NOUN,,HIRAGANA,,,保守主義,ほしゅしゅぎ,,hoshushugi,konserwatyzm,,,
+4130,WORD,WORD_NOUN,,HIRAGANA,,,保育所,ほいくじょ,,hoikujo,żłobek,,,
+4131,WORD,WORD_VERB_U,,HIRAGANA,,,守る,まもる,,mamoru,"bronić
+ochraniać
+przestrzegać",,,4116
+4132,WORD,WORD_NOUN,,HIRAGANA,,,守勢,しゅせい,,shusei,"obrona
+postawa obronna
+postawa pasywna",,,
+4133,WORD,WORD_NOUN,,HIRAGANA,,,守衛,しゅえい,,shuei,strażnik,,,
+4134,WORD,WORD_NOUN,,HIRAGANA,,,守備隊,しゅびたい,,shubitai,garnizon,,,
+4135,WORD,WORD_NOUN,,HIRAGANA,,,保守派,ほしゅは,,hoshuha,ugrupowanie konserwatywne,,,
+4136,WORD,WORD_NOUN,,HIRAGANA,,,守護天使,しゅごてんし,,shugotenshi,anioł stróż,,,
