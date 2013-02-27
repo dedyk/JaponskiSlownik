@@ -1151,7 +1151,7 @@ ratować",,,
 952,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,意味,いみ,,imi,znaczenie,,,
 953,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,発音,はつおん,,hatsuon,wymowa,,,
 954,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,文法,ぶんぽう,,bunpou,gramatyka,,,
-955,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,質問,しつもん,,shitsumon,pytanie,,,
+955,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,質問,しつもん,,shitsumon,pytanie,,,
 956,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,答,こたえ,,kotae,odpowiedź,,,
 957,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,例,れい,,rei,przykład,,,1
 958,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,-,かっこ,,kakko,nawias,,,
@@ -1192,7 +1192,7 @@ stopnie",na teście i etc,,
 3638"
 985,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,-,のど,,nodo,gardło,,,
 986,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,歯,は,,ha,ząb,,NO,
-987,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,花,はな,,hana,kwiatek,,,561
+987,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,花,はな,,hana,kwiat,,,561
 988,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,晴れ,はれ,,hare,słoneczna pogoda,,,
 989,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,服,ふく,,fuku,ubranie,,,768
 990,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,二日酔い,ふつかよい,,futsukayoi,kac,,,
@@ -1275,7 +1275,8 @@ rozpogadzać się",czasownik,,
 1049,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,重い,おもい,,omoi,"ciężki
 masywny",,,
 1050,WORD,WORD_NOUN,,HIRAGANA,,,桜,さくら,,sakura,kwiat wiśni,,,
-1051,WORD,UNKNOWN,,HIRAGANA,,,花見,はなみ,,hanami,oglądanie kwiatów,,,
+1051,WORD,WORD_NOUN,,HIRAGANA,,,花見,はなみ,,hanami,"oglądanie kwiatów
+festiwal wiosny",,,
 1052,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-12,,神様,かみさま,,kamisama,bóg,,,
 1053,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-12,,娘,むすめ,,musume,córka,,,
 1054,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 1-12,,-,まじめ,,majime,poważny,,,
@@ -1388,7 +1389,8 @@ poddać próbie",,,
 1138,WORD,WORD_NOUN,,KATAKANA,,,-,ズロチ,,zurochi,zł,,,
 1139,WORD,WORD_VERB_U,,HIRAGANA,,,咲く,さく,,saku,kwitnąć,,,
 1140,WORD,WORD_VERB_U,,HIRAGANA,,,散る,ちる,,chiru,opadać,kwiaty,,
-1141,WORD,UNKNOWN,,HIRAGANA,,,-,つぼみ,,tsubomi,kwiaty jeszcze nie otwarte,,,
+1141,WORD,WORD_NOUN,,HIRAGANA,,,蕾,つぼみ,,tsubomi,"pąk kwiatu
+kwiaty jeszcze nie otwarte",,,
 1142,WORD,WORD_NOUN,,HIRAGANA,,,夕方,ゆうがた,,yuugata,"wieczór
 wieczorem",,,
 1143,WORD,WORD_VERB_RU,,HIRAGANA,,を,降りる,おりる,o,oriru,wysiadać,,NO,
@@ -2402,7 +2404,8 @@ emocje",,,
 uczony",,,
 1984,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,読者,どくしゃ,,dokusha,czytelnik,,,
 1985,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,若者,わかもの,,wakamono,młody człowiek,,,
-1986,WORD,WORD_NOUN,,HIRAGANA,,,花火,はなび,,hanabi,sztuczne ognie,,,
+1986,WORD,WORD_NOUN,,HIRAGANA,,,花火,はなび,,hanabi,"sztuczne ognie
+fajerwerki",,,
 1987,WORD,WORD_NOUN,,KATAKANA,,,-,キス,,kisu,pocałunek,,,
 1988,WORD,WORD_NOUN,,HIRAGANA,,,虹,にじ,,niji,tęcza,,,"14
 2954"
@@ -3470,8 +3473,8 @@ poważny",,,
 grzyby",,,
 2713,WORD,WORD_NOUN,,HIRAGANA,,,茸雲,きのこぐも ,,kinoko gumo,grzyb atomowy,,,
 2714,WORD,WORD_NOUN,,HIRAGANA,,,学名,がくめい,,gakumei,naukowa (międzynarodowa) nazwa,,,
-2715,WORD,UNKNOWN,,HIRAGANA,,,様,さま,,sama,"pan
-pani",przyrostek honoryfikatywny,,
+2715,WORD,UNKNOWN,,HIRAGANA,,,様,さま,,sama,"szanowny pan
+szanowna pani",przyrostek honoryfikatywny,,
 2716,WORD,WORD_NOUN,,HIRAGANA,,,矢,や,,ya,strzała,,,
 2717,WORD,WORD_NOUN,,HIRAGANA,,,宇宙,うちゅう,,uchuu,"wszechświat
 kosmos",,,
@@ -3592,7 +3595,7 @@ rozpuszczać się",,,
 2794,WORD,WORD_NOUN,,HIRAGANA,,,煙突掃除夫,えんとつそうじふ ,,entotsu soujifu,kominiarz,,,
 2795,KANJI,WORD_AGE,,HIRAGANA,Genki kanji 2-17,,二十五歳,にじゅうごさい,,ni juu go sai,dwadzieścia pięć lat,wiek,,
 2796,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,お歳暮,おせいぼ,,oseibo,prezent na zakończenie roku,,,
-2797,WORD,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,お中元,おちゅうげん,,ochuugen,prezent dawany podczas festiwalu o-bon,,,
+2797,WORD,WORD_NOUN,,HIRAGANA,,,お中元,おちゅうげん,,ochuugen,prezent dawany podczas festiwalu o-bon,,,
 2798,KANJI,WORD_AGE,,HIRAGANA,Genki kanji 2-17,,二十歳,はたち,,hatachi,dwadzieścia lat,wiek,NO,
 2799,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-17,,習う,ならう,,narau,uczyć się,czegoś praktycznego,NO,
 2800,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,習字,しゅうじ,,shuuji,kaligrafia,,,
@@ -3747,7 +3750,8 @@ video
 film",,,
 2893,WORD,WORD_NOUN,,HIRAGANA,,,冬至,とうじ,,touji,zimowe przesilenie,,,"1968
 2416"
-2894,WORD,WORD_NOUN,,HIRAGANA,,,冬休み,ふゆやすみ,,fuyu yasumi,zimowe wakacje,,,
+2894,WORD,WORD_NOUN,,HIRAGANA,,,冬休み,ふゆやすみ,,fuyu yasumi,"ferie
+zimowe wakacje",,,
 2895,WORD,WORD_NOUN,,HIRAGANA,,,冬物,ふゆもの,,fuyu mono,zimowe ubranie,,,
 2896,WORD,UNKNOWN,,HIRAGANA,,,冬季,とうき,,touki,sezon zimowy,,,
 2897,WORD,WORD_NOUN,,HIRAGANA,,,冬眠,とうみん,,toumin,"hibernacja
@@ -4489,7 +4493,8 @@ wydatek",,,
 forma
 tryb",,,3976
 3324,WORD,WORD_NOUN,,HIRAGANA,,,様子,ようす,,yousu,"sytuacja
-aspekt",,,
+aspekt
+stan",,,
 3325,WORD,WORD_NOUN,,HIRAGANA,,,同様,どうよう,,douyou,"identyczny
 taki sam
 podobny",,,3310
@@ -4668,7 +4673,7 @@ businessman",,,
 3421,WORD,WORD_NOUN,,HIRAGANA,,,作業,さぎょう,,sagyou,praca,,,
 3422,WORD,WORD_NOUN,,HIRAGANA,,,婦人,ふじん,,fujin,"kobieta
 pani",,,3394
-3423,WORD,WORD_NOUN,,HIRAGANA,,,婦警,ふけい,,fukei,policjantka,,,
+3423,WORD,WORD_NOUN,,HIRAGANA,,,婦警,ふけい,,fukei,policjantka,,,4204
 3424,WORD,WORD_NOUN,,HIRAGANA,,,初心者,しょしんしゃ,,shoshinsha,"początkujący
 niedoświadczony",,,
 3425,WORD,WORD_NOUN,,HIRAGANA,,,初代,しょだい,,shodai,"pierwsza generacja
@@ -5938,3 +5943,81 @@ kroplówka",,,
 kontrola
 badanie
 sprawdzanie",,,
+4175,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,春,はる,,haru,wiosna,,NO,
+4176,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,春巻,はるまき,,harumaki,harumaki,japońskie wiosenne naleśniki,,
+4177,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,春分,しゅんぶん,,shunbun,"pierwszy dzień wiosny
+przesilenie wiosenne
+równonoc wiosenna",,,
+4178,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,青春,せいしゅん,,seishun,młodość,,,
+4179,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,秋,あき,,aki,jesień,,NO,
+4180,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,秋学期,あきがっき,,aki gakki,jesienny semestr,,,
+4181,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,秋分,しゅうぶん,,shuubun,"pierwszy dzień jesieni
+przesilenie jesienne
+równonoc jesienna",,,
+4182,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,冬,ふゆ,,fuyu,zima,,NO,
+4183,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,冬休み,ふゆやすみ,,fuyu yasumi,"ferie
+zimowe wakacje",,NO,
+4184,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,暖冬,だんとう,,dantou,ciepła zima,,,
+4185,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,春夏秋冬,しゅんかしゅうとう,,shunkashuutou,cztery pory roku,,,
+4186,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,花,はな,,hana,kwiat,,NO,
+4187,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,花見,はなみ,,hanami,"oglądanie kwiatów
+festiwal wiosny",,NO,
+4188,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,花火,はなび,,hanabi,"sztuczne ognie
+fajerwerki",,NO,
+4189,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,花粉症,かふんしょう,,kafunshou,alergia na pyłki kwiatowe,,,
+4190,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,様,さま,,sama,"szanowny pan
+szanowna pani",przyrostek honoryfikatywny,NO,
+4191,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,お客様,おきゃくさま,,okyakusama,szanowny klient,,,
+4192,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,皆様,みなさま,,minasama,"wszyscy
+szanowni państwo",,,
+4193,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,様子,ようす,,yousu,"sytuacja
+aspekt
+stan",,NO,
+4194,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-19,,不安,ふあん,,fuan,"niespokojny
+zaniepokojony
+obawa
+lęk
+niepokój",,NO,
+4195,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-19,,不景気,ふけいき,,fukeiki,recesja,,,
+4196,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-19,,不便,ふべん,,fuben,niewygodny,,,
+4197,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,水不足,みずぶそく,,mizu bu soku,brakowanie wody,,NO,
+4198,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,姉,あね,,ane,starsza siostra,"własna rodzina, formalnie",NO,
+4199,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,お姉さん,おねえさん,,oneesan,siostra,"spoza swojej rodziny lub własna rodzina, nieformalnie, starsza",NO,
+4200,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,姉妹,しまい,,shimai,siostry,,,
+4201,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,兄,あに,,ani,starszy brat,"własna rodzina, formalnie",NO,
+4202,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,お兄さん,おにいさん,,oniisan,brat,"spoza swojej rodziny lub własna rodzina, nieformalnie, starszy",NO,
+4203,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,兄妹,きょうだい,,kyoudai,rodzeństwo,,NO,
+4204,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,父兄,ふけい,,fukei,opiekunowie,,,3423
+4205,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,漢字,かんじ,,kanji,kanji,,NO,
+4206,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,漢方薬,かんぽうやく,,kanpouyaku,chińskie ziołowe lekarstwa,,,
+4207,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,漢和辞典,かんわじてん,,kanwajiten,słownik kanji,,,
+4208,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-19,を,卒業する,そつぎょうする,o,sotsugyou suru,ukończyć szkołę,szkołę,NO,
+4209,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,卒業式,そつぎょうしき,,sotsugyou shiki,ceremonia ukończenia szkoły,,NO,
+4210,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,工学,こうがく,,kougaku,inżynieria,,,
+4211,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,工事,こうじ,,kouji,"budownictwo
+budynek
+konstrukcja
+prace budowlane",,NO,
+4212,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,工場,こうじょう,,koujou,fabryka,,NO,
+4213,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,大工,だいく,,daiku,"cieśla
+stolarz",,,
+4214,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,研究,けんきゅう,,kenkyuu,badania,,,
+4215,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,研修,けんしゅう,,kenshuu,trening,,,
+4216,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-19,,研ぐ,とぐ,,togu,ostrzyć,,,
+4217,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,探究,たんきゅう,,tankyuu,poszukiwanie,,,
+4218,KANJI,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-19,,究める,きわめる,,kiwameru,"badać
+studiować coś dogłębnie",,,
+4219,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,質問,しつもん,,shitsumon,pytanie,,NO,
+4220,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-19,,質がいい,しつがいい,,shitsu ga ii,dobra jakość,,,
+4221,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,質屋,しちや,,shichiya,lombard,,NO,
+4222,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,問題,もんだい,,mondai,"pytanie
+problem
+zadanie",,NO,
+4223,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,訪問,ほうもん,,houmon,wizyta,,,
+4224,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-19,,問う,とう,,tou,pytać,bardziej oficjalnie,,
+4225,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-19,,多い,おおい,,ooi,dużo,,NO,
+4226,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,の多く,のおおく,,no ooku,większość,~ ...,,
+4227,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,多数決,たすうけつ,,tasuuketsu,decyzja większością głosów,,,
+4228,WORD,WORD_NOUN,,HIRAGANA,,,蕾,つぼみ,,tsubomi,"pąk kwiatu
+kwiaty jeszcze nie otwarte",,NO,
+4229,WORD,WORD_NOUN,,HIRAGANA,,,穴,あな,,ana,dziura,,,
