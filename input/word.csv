@@ -997,7 +997,9 @@ list",,,"2205
 829,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,船,ふね,,fune,statek,,,
 830,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,野球,やきゅう,,yakyuu,baseball,,,
 831,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,有名人,ゆうめいじん,,yuumeijin,celebryta,,,
-832,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,予約,よやく,,yoyaku,rezerwacja,,,
+832,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,予約,よやく,,yoyaku,"rezerwacja
+kontrakt
+prenumerata",,,
 833,WORD,UNKNOWN,,HIRAGANA,Genki 1-10,,来学期,らいがっき,,raigakki,następny semestr,,,
 834,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,-,りんご,,ringo,jabłko,,,
 835,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,暖かい,あたたかい,,atatakai,ciepły,,,
@@ -1009,7 +1011,7 @@ spóźniony",,NO,
 839,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,眠い,ねむい,,nemui,śpiący,,,
 840,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-10,,簡単,かんたん,,kantan,łatwy,,,
 841,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,-,かかる,,kakaru,zajmować,"czas/pieniądze, bez partykuły",,
-842,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 1-10,に,泊まる,とまる,ni,tomaru,"zatrzymywać się
+842,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 1-10,に,泊まる,とまる,ni,tomaru,"zatrzymywać się
 nocować",w hotelu i etc,,2210
 843,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,成る,なる,,naru,stawać się,,,
 844,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,払う,はらう,,harau,płacić,,,
@@ -1628,7 +1630,8 @@ kanał telewizyjny",,,
 1334,WORD,WORD_NOUN,,KATAKANA,Genki 2-15,,-,ペット,,petto,zwierzak,,,
 1335,WORD,WORD_NOUN,,HIRAGANA,Genki 2-15,,予定,よてい,,yotei,"plan
 harmonogram
-rozkład jazdy",,,
+rozkład jazdy
+program",,,
 1336,WORD,WORD_NOUN,,HIRAGANA,Genki 2-15,,旅館,りょかん,,ryokan,zajazd,w stylu japońskim,,
 1337,WORD,WORD_NOUN,,HIRAGANA,Genki 2-15,,割引券,わりびきけん,,waribikiken,bilet ulgowy,,,
 1338,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-15,,広い,ひろい,,hiroi,"przestronny
@@ -3998,7 +4001,9 @@ czas",,,
 3042,WORD,WORD_NOUN,,HIRAGANA,,,星占い,ほしうらない,,hoshiuranai,"astrologia
 horoskop",,,
 3043,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,嫌,いや,,iya,"niemiły
-nieprzyjemny",,,
+nieprzyjemny
+niechęć
+niezadowolenie",,,
 3044,WORD,WORD_VERB_RU,,HIRAGANA,,,認める,みとめる,,mitomeru,"dostrzec
 zauważyć
 rozpoznać
@@ -5446,7 +5451,8 @@ prowadzony przez rząd",,,
 3872,WORD,WORD_NOUN,,HIRAGANA,,,官僚,かんりょう,,kanryou,biurokracja,,,
 3873,WORD,WORD_NOUN,,HIRAGANA,,,官庁,かんちょう,,kanchou,biuro rządowe,,,
 3874,WORD,WORD_NOUN,,HIRAGANA,,,国務長官,こくむちょうかん,,kokumuchoukan,sekretariat stanu,,,
-3875,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,引く,ひく,,hiku,ciągnąć,,,766
+3875,WORD,WORD_VERB_U,"VERB_INTRANSITIVITY
+VERB_TRANSITIVITY",HIRAGANA,,,引く,ひく,,hiku,ciągnąć,,,766
 3876,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,引ける,ひける,,hikeru,ciągnąć,,,
 3877,WORD,WORD_NOUN,,HIRAGANA,,,引っ越し,ひっこし,,hikkoshi,przeprowadzka,,,
 3878,WORD,WORD_NOUN,,HIRAGANA,,,引用,いんよう,,in'you,cytat,,,
@@ -5498,7 +5504,7 @@ aspiracje",,,
 prywatny interes",,,
 3902,WORD,WORD_NOUN,,HIRAGANA,,,神宮,じんぐう,,jinguu,sintoistyczna świątynia,,,
 3903,WORD,WORD_NOUN,,HIRAGANA,,,宮参り,みやまいり,,miyamairi,nawiedzenie świątyni,,,
-3904,WORD,WORD_NOUN,,HIRAGANA,,,宮城,きゅうじょう,,kyuujou,pałac cesarski,,,
+3904,WORD,WORD_NOUN,,HIRAGANA,,,宮城,きゅうじょう,,kyuujou,pałac cesarski,,,4240
 3905,WORD,WORD_NOUN,,HIRAGANA,,,子宮,しきゅう,,shikyuu,łono,,,2901
 3906,WORD,WORD_NOUN,,HIRAGANA,,,宮殿,きゅうでん,,kyuuden,pałac,,,
 3907,WORD,WORD_NOUN,,HIRAGANA,,,状況,じょうきょう,,joukyou,"okoliczność
@@ -6037,3 +6043,22 @@ dochodzenie",,,
 autoryzacja",,,
 4237,WORD,WORD_NOUN,,HIRAGANA,,,検証,けんしょう,,kenshou,"sprawdzanie
 inspekcja",,,
+4238,WORD,WORD_NOUN,,HIRAGANA,,,電球,でんきゅう,,denkyuu,żarówka,,,
+4239,WORD,WORD_NOUN,,HIRAGANA,,,軽気球,けいききゅう,,keikikyuu,balon,na gorące powietrze lub hel,,
+4240,WORD,WORD_NOUN,,HIRAGANA,,,球場,きゅうじょう,,kyuujou,stadion baseball'owy,,,3904
+4241,WORD,UNKNOWN,,HIRAGANA,,,愛徳,あいとく,,aitoku,cnota miłości,,,
+4242,WORD,WORD_NOUN,,HIRAGANA,,,愛国,あいこく,,aikoku,patriotyzm,,,
+4243,WORD,WORD_NOUN,,HIRAGANA,,,愛情,あいじょう,,aijou,"miłość
+uczucie",,,
+4244,WORD,WORD_NOUN,,HIRAGANA,,,愛書家,あいしょか,,aishoka,"miłośnik książek
+bibliofil",,,
+4245,WORD,WORD_NOUN,,HIRAGANA,,,愛犬,あいけん,,aiken,ulubiony pies,,,
+4246,WORD,UNKNOWN,,HIRAGANA,,,予め,あらかじめ,,arakajime,"przedtem
+uprzednio
+najpierw",,,
+4247,WORD,WORD_NOUN,,HIRAGANA,,,予防,よぼう,,yobou,"zapobieganie
+zabezpieczenie",,,
+4248,WORD,WORD_NOUN,,HIRAGANA,,,予備,よび,,yobi,"przygotowanie
+wstępne",np. rozmowy,,
+4249,WORD,WORD_NOUN,,HIRAGANA,,,予想,よそう,,yosou,"przypuszczenie
+prognoza",,,

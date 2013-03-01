@@ -31,7 +31,7 @@ import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.JMEdictReader;
+import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 import pl.idedyk.japanese.dictionary.tools.KanjiUtils;
@@ -42,7 +42,7 @@ public class AndroidDictionaryGenerator {
 
 	public static void main(String[] args) throws Exception {
 		
-		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", "../JaponskiSlownik_dodatki/JMdict_e", "output/word.csv");
+		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", "../JaponskiSlownik_dodatki/edict-utf8", "output/word.csv");
 		
 		generateKanaEntries("../JaponskiSlownik_dodatki/kanjivg", "output/kana.csv");
 		
@@ -82,7 +82,7 @@ public class AndroidDictionaryGenerator {
 		List<PolishJapaneseEntry> result = Helper.generateGroups(polishJapaneseEntries, true);
 		
 		// read edict
-		TreeMap<String, EDictEntry> jmedict = JMEdictReader.readJMEdict(edictFileName);
+		TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict(edictFileName);
 		
 		// generate additional data from edict
 		Helper.generateAdditionalInfoFromEdict(jmedict, result);

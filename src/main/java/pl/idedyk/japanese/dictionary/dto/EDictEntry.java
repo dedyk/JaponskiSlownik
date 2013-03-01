@@ -1,26 +1,37 @@
 package pl.idedyk.japanese.dictionary.dto;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class EDictEntry {
 	
-	private List<String> kanji = new ArrayList<String>();
+	private String kanji;
 	
-	private List<String> kana = new ArrayList<String>();
+	private String kana;
 	
-	private List<String> pos = new ArrayList<String>();
+	private List<String> pos;
 
-	public List<String> getKanji() {
+	public String getKanji() {
 		return kanji;
 	}
 
-	public List<String> getKana() {
+	public void setKanji(String kanji) {
+		this.kanji = kanji;
+	}
+
+	public String getKana() {
 		return kana;
+	}
+
+	public void setKana(String kana) {
+		this.kana = kana;
 	}
 
 	public List<String> getPos() {
 		return pos;
+	}
+
+	public void setPos(List<String> pos) {
+		this.pos = pos;
 	}
 
 	@Override

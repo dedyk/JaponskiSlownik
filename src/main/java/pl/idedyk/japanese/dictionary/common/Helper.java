@@ -10,7 +10,7 @@ import pl.idedyk.japanese.dictionary.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.JMEdictReader;
+import pl.idedyk.japanese.dictionary.tools.EdictReader;
 
 public class Helper {
 
@@ -99,12 +99,17 @@ public class Helper {
 
 			String kanji = currentPolishJapaneseEntry.getKanji();
 			
+			if (kanji != null && kanji.equals("-") == true) {
+				kanji = null;
+			}
+			
 			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
 			
 			EDictEntry foundEdict = null;
 			
 			for (String currentKana : kanaList) {
-				foundEdict = jmedict.get(JMEdictReader.getMapKey(kanji, currentKana));
+				
+				foundEdict = jmedict.get(EdictReader.getMapKey(kanji, currentKana));
 				
 				if (foundEdict != null) {
 					break;
@@ -125,7 +130,42 @@ public class Helper {
 												
 						attributeTypeList.add(AttributeType.SURU_VERB);						
 					}					
-				}				
+				}
+				
+				if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U || dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU ||
+						dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
+					
+					if (	attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == true &&
+							attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == false &&
+							foundEdict.getPos().contains("vi") == true) {
+						
+						System.err.println(currentPolishJapaneseEntry);
+						System.err.println(foundEdict);
+						
+						throw new RuntimeException("Different verb transitivity for: " + currentPolishJapaneseEntry);
+					}
+
+					if (	attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == true && 
+							attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == false &&							
+							foundEdict.getPos().contains("vt") == true) {
+						
+						System.err.println(currentPolishJapaneseEntry);
+						System.err.println(foundEdict);
+						
+						throw new RuntimeException("Different verb intransitivity for: " + currentPolishJapaneseEntry);
+					}
+					
+					if (	attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == false &&
+							attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == false) {
+						
+						if (foundEdict.getPos().contains("vt") == true) {
+							attributeTypeList.add(AttributeType.VERB_TRANSITIVITY);
+							
+						} else if (foundEdict.getPos().contains("vi") == true) {
+							attributeTypeList.add(AttributeType.VERB_INTRANSITIVITY);
+						}						
+					}						
+				}
 			}			
 		}
 	}

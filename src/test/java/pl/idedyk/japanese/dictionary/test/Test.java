@@ -3,7 +3,7 @@ package pl.idedyk.japanese.dictionary.test;
 import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
-import pl.idedyk.japanese.dictionary.tools.JMEdictReader;
+import pl.idedyk.japanese.dictionary.tools.EdictReader;
 
 public class Test {
 	
@@ -47,9 +47,10 @@ public class Test {
 		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries, true);
 		*/
 		
-		TreeMap<String, EDictEntry> jmedict = JMEdictReader.readJMEdict("JMdict_e");
+		TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict("../JaponskiSlownik_dodatki/edict-utf8");
 		
-		System.out.println(jmedict.get(JMEdictReader.getMapKey("食べる", "たべる")));
-		System.out.println(jmedict.get(JMEdictReader.getMapKey("集中", "しゅうちゅう")));
+		System.out.println(jmedict.get(EdictReader.getMapKey("食べる", "たべる")));
+		System.out.println(jmedict.get(EdictReader.getMapKey("集中", "しゅうちゅう")));
+		System.out.println(jmedict.get(EdictReader.getMapKey(null, "デート")));
 	}
 }

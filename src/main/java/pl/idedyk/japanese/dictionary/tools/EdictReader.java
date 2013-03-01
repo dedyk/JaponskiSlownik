@@ -1,0 +1,117 @@
+package pl.idedyk.japanese.dictionary.tools;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.TreeMap;
+
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
+
+public class EdictReader {
+	
+	public static TreeMap<String, EDictEntry> readEdict(String fileName) throws Exception {
+		
+		final TreeMap<String, EDictEntry> treeMap = new TreeMap<String, EDictEntry>();
+		
+		BufferedReader bufferedReader = null;
+		
+		try {
+			bufferedReader = new BufferedReader(new FileReader(fileName));
+			
+			boolean firstLine = true;
+			
+			while(true) {				
+				String line = bufferedReader.readLine();
+				
+				if (line == null) {
+					break;
+				}
+				
+				if (firstLine == true) {
+					firstLine = false;
+					
+					continue;
+				}
+				
+				EDictEntry edictEntry = parseEdict(line);
+				
+				addEdictEntry(treeMap, edictEntry);			
+			}
+			
+		} finally {
+			
+			if (bufferedReader != null) {
+				bufferedReader.close();
+			}
+		}
+		
+		return treeMap;
+	}
+	
+	private static EDictEntry parseEdict(String text) {
+		
+		String kanji = null;
+		String kana = null;
+		List<String> pos = new ArrayList<String>();
+		
+		String[] splited = text.split(" ");
+		
+		if (splited[1].startsWith("[") == true) {
+			kanji = splited[0];
+			
+			kana = splited[1].substring(1, splited[1].length() - 1);
+			
+			if (splited[2].startsWith("/(") == false || splited[2].endsWith(")") == false) {
+				throw new RuntimeException(splited[2]);
+			}
+			
+			String posString = splited[2].substring(2, splited[2].length() - 1);
+			
+			String[] posStringSplited = posString.split(",");
+			
+			for (String currentPos : posStringSplited) {
+				pos.add(currentPos);
+			}
+			
+		} else {
+			
+			kana = splited[0];
+			
+			if (splited[1].startsWith("/(") == false || splited[1].endsWith(")") == false) {
+				throw new RuntimeException(splited[1]);
+			}
+			
+			String posString = splited[1].substring(2, splited[1].length() - 1);
+			
+			String[] posStringSplited = posString.split(",");
+			
+			for (String currentPos : posStringSplited) {
+				pos.add(currentPos);
+			}
+		}		
+		
+		EDictEntry edictEntry = new EDictEntry();
+		
+		edictEntry.setKanji(kanji);
+		edictEntry.setKana(kana);
+		edictEntry.setPos(pos);
+		
+		return edictEntry;		
+	}
+
+	
+	private static void addEdictEntry(TreeMap<String, EDictEntry> treeMap, EDictEntry edictEntry) {
+		
+		String kanji = edictEntry.getKanji();
+		String kana = edictEntry.getKana();
+		
+		String mapKey = getMapKey(kanji, kana);
+		
+		treeMap.put(mapKey, edictEntry);
+	}
+	
+	public static String getMapKey(String kanji, String kana) {
+		return kanji + ".-." + kana;		
+	}	
+}
