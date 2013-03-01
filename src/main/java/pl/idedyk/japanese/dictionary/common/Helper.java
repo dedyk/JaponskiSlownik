@@ -4,9 +4,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.JMEdictReader;
 
 public class Helper {
 
@@ -85,5 +89,44 @@ public class Helper {
 		}	
 		
 		return result;
+	}
+	
+	public static void generateAdditionalInfoFromEdict(TreeMap<String, EDictEntry> jmedict, List<PolishJapaneseEntry> polishJapaneseEntries) {
+		
+		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
+			
+			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
+
+			String kanji = currentPolishJapaneseEntry.getKanji();
+			
+			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
+			
+			EDictEntry foundEdict = null;
+			
+			for (String currentKana : kanaList) {
+				foundEdict = jmedict.get(JMEdictReader.getMapKey(kanji, currentKana));
+				
+				if (foundEdict != null) {
+					break;
+				}
+			}
+			
+			if (foundEdict != null) {
+				
+				DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
+				
+				List<AttributeType> attributeTypeList = currentPolishJapaneseEntry.getAttributeTypeList();
+				
+				if (dictionaryEntryType == DictionaryEntryType.WORD_NOUN) {
+					
+					if (	foundEdict.getPos().contains("n") == true && 
+							foundEdict.getPos().contains("vs") == true &&
+							attributeTypeList.contains(AttributeType.SURU_VERB) == false) {
+												
+						attributeTypeList.add(AttributeType.SURU_VERB);						
+					}					
+				}				
+			}			
+		}
 	}
 }

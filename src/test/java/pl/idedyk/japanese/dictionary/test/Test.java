@@ -1,10 +1,9 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.List;
+import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.common.Helper;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
+import pl.idedyk.japanese.dictionary.tools.JMEdictReader;
 
 public class Test {
 	
@@ -31,6 +30,7 @@ public class Test {
 		System.out.println(KanaHelper.createKanaString(kanaWord));
 		*/
 		
+		/*
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);
 		
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true);
@@ -45,5 +45,11 @@ public class Test {
 		}
 		
 		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries, true);
+		*/
+		
+		TreeMap<String, EDictEntry> jmedict = JMEdictReader.readJMEdict("JMdict_e");
+		
+		System.out.println(jmedict.get(JMEdictReader.getMapKey("食べる", "たべる")));
+		System.out.println(jmedict.get(JMEdictReader.getMapKey("集中", "しゅうちゅう")));
 	}
 }

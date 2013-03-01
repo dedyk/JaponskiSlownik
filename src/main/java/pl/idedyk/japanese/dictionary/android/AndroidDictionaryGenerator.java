@@ -16,9 +16,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
@@ -29,6 +31,7 @@ import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.JMEdictReader;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 import pl.idedyk.japanese.dictionary.tools.KanjiUtils;
@@ -39,7 +42,7 @@ public class AndroidDictionaryGenerator {
 
 	public static void main(String[] args) throws Exception {
 		
-		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", "output/word.csv");
+		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", "../JaponskiSlownik_dodatki/JMdict_e", "output/word.csv");
 		
 		generateKanaEntries("../JaponskiSlownik_dodatki/kanjivg", "output/kana.csv");
 		
@@ -58,7 +61,8 @@ public class AndroidDictionaryGenerator {
 				);
 	}
 
-	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, String destinationFileName) throws Exception {
+	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, 
+			String edictFileName, String destinationFileName) throws Exception {
 				
 		// hiragana
 		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
@@ -66,16 +70,23 @@ public class AndroidDictionaryGenerator {
 		// katakana
 		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
 		
+		// parse csv
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName, null);
 		
+		// validate
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries);
-		
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);
-		
 		Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);
 		
+		// generate groups
 		List<PolishJapaneseEntry> result = Helper.generateGroups(polishJapaneseEntries, true);
-				
+		
+		// read edict
+		TreeMap<String, EDictEntry> jmedict = JMEdictReader.readJMEdict(edictFileName);
+		
+		// generate additional data from edict
+		Helper.generateAdditionalInfoFromEdict(jmedict, result);
+		
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 		
 		CsvReaderWriter.generateCsv(outputStream, result, false);
