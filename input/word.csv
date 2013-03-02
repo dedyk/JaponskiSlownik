@@ -1007,7 +1007,8 @@ prenumerata",,,
 powoli
 spóźniony",,NO,
 837,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,涼しい,すずしい,,suzushii,zimny,tylko do pogody,,
-838,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,冷たい,つめたい,,tsumetai,zimny,do ludzi/rzeczy,,
+838,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,冷たい,つめたい,,tsumetai,"zimny
+chłodny",do ludzi/rzeczy,,
 839,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,眠い,ねむい,,nemui,śpiący,,,
 840,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-10,,簡単,かんたん,,kantan,łatwy,,,
 841,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,-,かかる,,kakaru,zajmować,"czas/pieniądze, bez partykuły",,
@@ -3265,7 +3266,7 @@ osobowość",,,
 2586,WORD,WORD_NOUN,,HIRAGANA,,,お見合い,おみあい,,omiai,spotkanie,w celu zawarcia aranżowanego małżeństwa,,
 2587,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,子供,こども,,kodomo,dziecko,,NO,
 2588,KANJI,WORD_ADVERB,,HIRAGANA,Genki kanji 2-16,,供に,ともに,,tomoni,razem,bardziej oficjalnie,,4076
-2589,KANJI,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-16,,供える,そなえる,,sonaeru,ofiarować,np. coś bogom,,
+2589,KANJI,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-16,,供える,そなえる,,sonaeru,ofiarować,np. coś bogom,,4251
 2590,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,提供,ていきょう,,teikyou,oferta,,,
 2591,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,世界,せかい,,sekai,świat,,NO,
 2592,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,世話,せわ,,sewa,opieka,,,
@@ -6062,3 +6063,48 @@ zabezpieczenie",,,
 wstępne",np. rozmowy,,
 4249,WORD,WORD_NOUN,,HIRAGANA,,,予想,よそう,,yosou,"przypuszczenie
 prognoza",,,
+4250,WORD,WORD_VERB_U,,HIRAGANA,,,備わる,そなわる,,sonawaru,"być zaopatrywanym w
+posiadać",,,
+4251,WORD,WORD_VERB_RU,,HIRAGANA,,,備える,そなえる,,sonaeru,"zaopatrywać
+wyposażać
+instalować",,,2589
+4252,WORD,WORD_NOUN,,HIRAGANA,,,準備,じゅんび,,junbi,przygotowanie,,,
+4253,WORD,WORD_NOUN,,HIRAGANA,,,備考,びこう,,bikou,"uwaga
+obserwacja
+spostrzeżenie
+notatka
+komentarz",,,
+4254,WORD,WORD_NOUN,,HIRAGANA,,,備品,びひん,,bihin,"wyposażenie
+sprzęt
+umeblowanie",,,
+4255,WORD,WORD_NOUN,,HIRAGANA,,,設備,せつび,,setsubi,"wyposażenie
+sprzęt
+instalacja",,,
+4256,WORD,WORD_NOUN,,HIRAGANA,,,備蓄,びちく,,bichiku,"rezerwa
+zapasy",,,
+4257,WORD,WORD_VERB_RU,,HIRAGANA,,,冷える,ひえる,,hieru,"oziębiać się
+czuć ziąb",,,
+4258,WORD,WORD_VERB_U,,HIRAGANA,,,冷やす,ひやす,,hiyasu,"oziębiać
+ochładzać",,,
+4259,WORD,WORD_NOUN,,HIRAGANA,,,冷凍,れいとう,,reitou,zamrażanie,,,
+4260,WORD,WORD_NOUN,,HIRAGANA,,,冷房,れいぼう,,reibou,klimatyzacja,,,
+4261,WORD,WORD_NOUN,,HIRAGANA,,,冷戦,れいせん,,reisen,zimna wojna,,,
+4262,WORD,WORD_NOUN,,HIRAGANA,,,冷気,れいき,,reiki,"zimno
+chłód
+zimne powietrze",,,
+4263,WORD,WORD_VERB_U,,HIRAGANA,,,失う,うしなう,,ushinau,"gubić
+tracić",,,
+4264,WORD,WORD_NOUN,,HIRAGANA,,,失業者,しつぎょうしゃ,,shitsugyousha,bezrobotny,,,
+4265,WORD,WORD_NOUN,,HIRAGANA,,,失神,しっしん,,shisshin,"omdlenie
+zemdlenie
+zachwyt
+ekstaza
+trans",,,
+4266,WORD,WORD_NOUN,,HIRAGANA,,,失望,しつぼう,,shitsubou,"rozczarowanie
+zawód
+rozpacz",,,
+4267,WORD,WORD_NOUN,,HIRAGANA,,,失意,しつい,,shitsui,"rozczarowanie
+zawód
+rozpacz",,,
+4268,WORD,WORD_NOUN,,HIRAGANA,,,失恋,しつれん,,shitsuren,"zawiedziona miłość
+złamane serce",,,
