@@ -577,7 +577,10 @@ prąd
 3842"
 492,WORD,UNKNOWN,,HIRAGANA,Genki 1-6,,来週,らいしゅう,,raishuu,przyszły tydzień,,NO,
 493,WORD,UNKNOWN,,HIRAGANA,Genki 1-6,,来年,らいねん,,rainen,przyszły rok,,NO,
-494,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-6,,大変,たいへん,,taihen,ciężka,sytuacja,,
+494,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-6,,大変,たいへん,,taihen,"ciężka (sytuacja)
+bardzo
+wielce
+ogromnie",,,
 495,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,,遊ぶ,あそぶ,,asobu,"grać
 miło spędzać czas",,,
 496,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,,急ぐ,いそぐ,,isogu,spieszyć się,,,
@@ -590,7 +593,8 @@ Genki 2-18",を,消す,けす,o,kesu,"wyłączyć
 skasować",,,
 500,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,,死ぬ,しぬ,,shinu,umierać,,,
 501,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,に,座る,すわる,ni,suwaru,siadać,siedzenie,,
-502,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,,立つ,たつ,,tatsu,stać,,,2433
+502,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,,立つ,たつ,,tatsu,stać,,,"2433
+4290"
 503,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,,たばこを吸う,たばこをすう,,tabako o suu,palić,,,
 504,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,を,使う,つかう,o,tsukau,"używać
 korzystać
@@ -1942,7 +1946,10 @@ siebie",,,
 1593,KANJI,WORD_EXPRESSION,,HIRAGANA,Genki kanji 1-6,,一生に一度,いっしょうにいちど,,isshou ni ichido,raz w życiu,,NO,
 1594,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,大学生,だいがくせい,,daigakusei,student,uniwersytetu,NO,
 1595,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 1-6,,大きい,おおきい,,ookii,duży,,NO,
-1596,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-6,,大変,たいへん,,taihen,ciężka,sytuacja,NO,
+1596,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-6,,大変,たいへん,,taihen,"ciężka (sytuacja)
+bardzo
+wielce
+ogromnie",,NO,
 1597,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-6,,大人,おとな,,otona,dorosły,,NO,
 1598,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,大学,だいがく,,daigaku,uniwersytet,,NO,
 1599,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,学校,がっこう,,gakkou,szkoła,,NO,
@@ -3033,7 +3040,8 @@ przewrócić się",,NO,
 2431,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,建物,たてもの,,tatemono,budynek,,NO,
 2432,KANJI,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-15,,建てる,たてる,,tateru,budować,,,
 2433,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,建つ,たつ,,tatsu,"być zbudowanym
-stać",,,502
+stać",,,"502
+4290"
 2434,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,建国,けんこく,,kenkoku,"ugruntowanie narodu
 fundamenty narodu",,,
 2435,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,地下,ちか,,chika,pod ziemią,,,
@@ -3409,7 +3417,8 @@ ratować",,NO,
 z radością
 szczęśliwy",,,
 2675,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-16,,続く,つづく,,tsuduku,"kontynuować
-wznawiać",,,
+wznawiać
+ciągnąć się (np. dni)",,,
 2676,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,以上,いじょう,,ijou,"powyżej
 więcej niż",,NO,
 2677,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,売れる,うれる,,ureru,sprzedawać,forma potencjalna,,
@@ -6143,3 +6152,27 @@ nie rozstrzygnięty
 toczący się (proces)",,,
 4285,WORD,WORD_NOUN,,HIRAGANA,,,手鏡,てかがみ,,tekagami,ręczne lusterko,,,
 4286,WORD,WORD_NOUN,,HIRAGANA,,,鏡台,きょうだい,,kyoudai,toaletka,,,608
+4287,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,思い出す,おもいだす,,omoidasu,przypominać,,,
+4288,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-19,,思い出,おもいで,,omoide,wspomnienie,,,
+4289,WORD,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-19,,如何,いかが,,ikaga,jak,uprzejma forma od どう,,
+4290,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,経つ,たつ,,tatsu,czas mija,,,"502
+2433"
+4291,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,中,ちゅう,,chuu,w trakcie czegoś,czas + ~,NO,
+4292,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 2-19,,大変,たいへん,,taihen,"ciężka (sytuacja)
+bardzo
+wielce
+ogromnie",,NO,
+4293,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,に,お世話になる,おせわになる,ni,osewa ni naru,podziękowanie za opiekę,kimś,,
+4294,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-19,,懐かしい,なつかしい,,natsukashii,"tęsknić za kimś
+utęsknienie
+przywołujący wspomnienia",,,
+4295,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,-,それでは,,sore de ha,no więc,tylko na początku zdania,,
+4296,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-19,,皆様,みなさま,,minasama,"wszyscy
+szanowni państwo",,NO,
+4297,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,続く,つづく,,tsuduku,"kontynuować
+wznawiać
+ciągnąć się (np. dni)",,NO,
+4298,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-19,,将棋,しょうぎ,,shougi,japońskie szachy,,,
+4299,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,今も,いまも,,ima mo,nawet teraz,,,
+4300,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,楽しみになる,たのしみになる,,tanoshimi ni naru,cieszyć się na,,,
+4301,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,ことを思い出す,ことをおもいだす,,koto o omoidasu,~ wspominać,jakąś czynność,,
