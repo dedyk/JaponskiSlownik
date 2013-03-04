@@ -264,7 +264,7 @@ alkohol",,,
 234,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,朝,あさ,,asa,rano,,,
 235,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,明日,あした,,ashita,jutro,,,
 236,WORD,WORD_ASK,,HIRAGANA,Genki 1-3,,-,いつ,,itsu,kiedy,,,
-237,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,今日,きょう,,kyou,dziś,,,
+237,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,今日,きょう,,kyou,dziś,,,4302
 238,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,頃,ごろ,,goro,"czas
 około",to samo co toki,,
 239,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,今晩,こんばん,,konban,dziś wieczorem,,,
@@ -803,7 +803,10 @@ być zatrudnionym",niefizycznie,,"1814
 umieszczać
 zostawiać",,,
 658,WORD,WORD_NOUN,,HIRAGANA,,,お皿,おさら,,osara,talerz,,,
-659,WORD,WORD_VERB_U,,HIRAGANA,,を,渡す,わたす,o,watasu,dawać,,,
+659,WORD,WORD_VERB_U,,HIRAGANA,,を,渡す,わたす,o,watasu,"dawać
+wręczać
+przekazywać
+przenosić przez",,,
 660,WORD,WORD_NOUN,,HIRAGANA,,,故郷,ふるさと,,furusato,miasto rodzinne,,,
 661,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-9,,白い,しろい,,shiroi,biały,,,
 662,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-9,,黒い,くろい,,kuroi,czarny,,,
@@ -927,7 +930,8 @@ rozpoczynać się",coś,,
 768,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-9,,吹く,ふく,,fuku,grać,instrument dmuchany,,989
 769,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-9,を,-,もらう,o,morau,"dostać
 otrzymać","coś, osoba ni rzecz",,
-770,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-9,,覚える,おぼえる,,oboeru,zapamiętać,,,
+770,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-9,,覚える,おぼえる,,oboeru,"zapamiętać
+uczyć się",,,
 771,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,"Genki 1-9
 Genki 2-18",に,出る,でる,ni,deru,pojawić się,,,"772
 3662"
@@ -1695,7 +1699,10 @@ całe miejsce",czas/miejsce + ~,,"11
 1374,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,階,かい,,kai,numer piętra,liczba +,,1119
 1375,WORD,WORD_NOUN,,KATAKANA,,,-,エレベーター,,erebeetaa,winda,,,
 1376,WORD,WORD_NOUN,,KATAKANA,,,-,エスカレーター,,esukareetaa,ruchome schody,,,
-1377,WORD,WORD_VERB_U,,HIRAGANA,,を,渡る,わたる,o,wataru,przechodzić przez,,,
+1377,WORD,WORD_VERB_U,,HIRAGANA,,を,渡る,わたる,o,wataru,"przechodzić przez
+przekraczać
+migrować
+być importowanym",,,
 1378,WORD,WORD_VERB_U,,HIRAGANA,,,走る,はしる,,hashiru,biegać,,,
 1379,WORD,WORD_EXPRESSION,,HIRAGANA,,,車を走る,くるまをはしる,,kuruma o hashiru,samochody jeżdżą,dosł. biegają,,
 1380,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,細い,ほそい,,hosoi,wąski,,,
@@ -6155,7 +6162,8 @@ toczący się (proces)",,,
 4287,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,思い出す,おもいだす,,omoidasu,przypominać,,,
 4288,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-19,,思い出,おもいで,,omoide,wspomnienie,,,
 4289,WORD,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-19,,如何,いかが,,ikaga,jak,uprzejma forma od どう,,
-4290,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,経つ,たつ,,tatsu,czas mija,,,"502
+4290,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,経つ,たつ,,tatsu,"mijać
+przechodzić",np. czas,,"502
 2433"
 4291,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,中,ちゅう,,chuu,w trakcie czegoś,czas + ~,NO,
 4292,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 2-19,,大変,たいへん,,taihen,"ciężka (sytuacja)
@@ -6176,3 +6184,31 @@ ciągnąć się (np. dni)",,NO,
 4299,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,今も,いまも,,ima mo,nawet teraz,,,
 4300,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,楽しみになる,たのしみになる,,tanoshimi ni naru,cieszyć się na,,,
 4301,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,ことを思い出す,ことをおもいだす,,koto o omoidasu,~ wspominać,jakąś czynność,,
+4302,WORD,WORD_NOUN,,HIRAGANA,,,経,きょう ,,kyou,sutra,,,237
+4303,WORD,WORD_VERB_RU,,HIRAGANA,,,経る,へる,,heru,"przechodzić przez
+doświadczenie",,,
+4304,WORD,WORD_NOUN,,HIRAGANA,,,経理,けいり,,keiri,"zarządzanie
+rachunkowość",,,
+4305,WORD,WORD_NOUN,,HIRAGANA,,,経営,けいえい,,keiei,"konstrukcja
+zarządzanie
+operacja
+projekt",,,
+4306,WORD,WORD_NOUN,,HIRAGANA,,,経歴,けいれき,,keireki,życiorys,,,
+4307,WORD,WORD_VERB_U,,HIRAGANA,,,覚ます,さます,,samasu,"budzić
+trzeźwieć",,,
+4308,WORD,WORD_VERB_RU,,HIRAGANA,,,覚める,さめる,,sameru,"budzić się
+trzeźwieć",,,
+4309,WORD,WORD_VERB_U,,HIRAGANA,,,覚る,さとる,,satoru,"zrozumieć
+pojąć",,,
+4310,WORD,WORD_NOUN,,HIRAGANA,,,覚書,おぼえがき,,oboegaki,"notatki
+protokół
+memorandum",,,
+4311,WORD,WORD_NOUN,,HIRAGANA,,,覚悟,かくご,,kakugo,"gotowość
+stanowczość
+oczekiwanie
+rezygnacja
+pojęcie",,,
+4312,WORD,WORD_NOUN,,HIRAGANA,,,覚醒,かくせい,,kakusei,"przebudzenie
+otrzeźwienie
+pozbywanie się iluzji",,,
+4313,WORD,WORD_NOUN,,HIRAGANA,,,渡り,わたり,,watari,przejście,,,
