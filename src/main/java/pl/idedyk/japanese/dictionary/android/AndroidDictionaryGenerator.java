@@ -73,16 +73,16 @@ public class AndroidDictionaryGenerator {
 		// parse csv
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName, null);
 		
+		// read edict
+		TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict(edictFileName);
+		
 		// validate
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries);
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict);
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);
 		Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);
 		
 		// generate groups
 		List<PolishJapaneseEntry> result = Helper.generateGroups(polishJapaneseEntries, true);
-		
-		// read edict
-		TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict(edictFileName);
 		
 		// generate additional data from edict
 		Helper.generateAdditionalInfoFromEdict(jmedict, result);

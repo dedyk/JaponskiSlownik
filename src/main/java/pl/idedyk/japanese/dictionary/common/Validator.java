@@ -9,18 +9,21 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
+import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper.KanaWord;
 
 public class Validator {
 
 	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, List<KanaEntry> hiraganaEntries,
-			List<KanaEntry> katakanaEntries) throws JapaneseDictionaryException {
+			List<KanaEntry> katakanaEntries, TreeMap<String, EDictEntry> jmedict) throws JapaneseDictionaryException {
 		
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
 		
@@ -128,6 +131,81 @@ public class Validator {
 				polishJapaneseEntry.setRealRomajiList(realRomajiList);
 			}
 		}
+		
+		// validate verb
+		final Map<String, DictionaryEntryType> mapEdictTypeToDictionaryEntryType = new HashMap<String, DictionaryEntryType>();
+		
+		mapEdictTypeToDictionaryEntryType.put("v1", DictionaryEntryType.WORD_VERB_RU);
+		mapEdictTypeToDictionaryEntryType.put("v5k", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("v5k-s", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("v5r", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("v5m", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("v5s", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("vk", DictionaryEntryType.WORD_VERB_IRREGULAR);
+		mapEdictTypeToDictionaryEntryType.put("v5u", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("v5r-i", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("v5t", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("v5g", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("v5b", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("v5n", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("vs-i", DictionaryEntryType.WORD_VERB_IRREGULAR);
+		mapEdictTypeToDictionaryEntryType.put("ateji", DictionaryEntryType.WORD_VERB_U); // ???
+		mapEdictTypeToDictionaryEntryType.put("vs-s", DictionaryEntryType.WORD_VERB_IRREGULAR);
+		mapEdictTypeToDictionaryEntryType.put("v5aru", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("v5u-s", DictionaryEntryType.WORD_VERB_U);
+		
+		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			String kanji = currentPolishJapaneseEntry.getKanji();
+			
+			if (kanji != null && kanji.equals("-") == true) {
+				kanji = null;
+			}
+			
+			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
+			
+			EDictEntry foundEdict = null;
+			
+			for (String currentKana : kanaList) {
+				
+				foundEdict = jmedict.get(EdictReader.getMapKey(kanji, currentKana));
+				
+				if (foundEdict != null) {
+					break;
+				}
+			}
+			
+			if (foundEdict != null) {
+				
+				DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
+				
+				if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U || dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU ||
+						dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
+					
+					DictionaryEntryType dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(mapEdictTypeToDictionaryEntryType, foundEdict.getPos());
+					
+					if (dictionaryEntryType != dictionaryEntryTypeFromEdictPos) {
+						System.out.println("Dictionary entry type edict different: " + currentPolishJapaneseEntry);
+						
+						System.exit(1);
+					}					
+				}			
+			}
+		}
+	}
+	
+	private static DictionaryEntryType getDictionaryEntryTypeFromEdictPos(Map<String, DictionaryEntryType> mapEdictTypeToDictionaryEntryType, List<String> pos) {
+		
+		for (String currentPos : pos) {
+			
+			DictionaryEntryType dictionaryEntryType = mapEdictTypeToDictionaryEntryType.get(currentPos);
+			
+			if (dictionaryEntryType != null) {
+				return dictionaryEntryType;
+			}
+		}
+		
+		throw new RuntimeException("Can't find dictionary entry type for: " + pos);		
 	}
 	
 	private static KanaWord createKanaWord(String romaji, WordType wordType, Map<String, KanaEntry> hiraganaCache, Map<String, KanaEntry> katakanaCache) throws JapaneseDictionaryException {

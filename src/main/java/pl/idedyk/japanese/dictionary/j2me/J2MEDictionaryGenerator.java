@@ -4,20 +4,23 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.DictionaryType;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.KanjiImageWriter;
 
 public class J2MEDictionaryGenerator {
 
-	public static void main(String[] args) throws IOException, JapaneseDictionaryException {
+	public static void main(String[] args) throws IOException, JapaneseDictionaryException, Exception {
 
 		String kanjiOutputDir = "output";
 		Map<String, String> charsCache = new HashMap<String, String>();
@@ -30,9 +33,12 @@ public class J2MEDictionaryGenerator {
 		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
 		generateKatakanaImages(katakanaEntries, charsCache, kanjiOutputDir);
 		
+		// read edict
+		TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict("../JaponskiSlownik_dodatki/edict-utf8");
+		
 		// Słowniczek
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries);	
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict);	
 		generateKanjiImages(polishJapaneseEntries, charsCache, kanjiOutputDir);
 		
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, false);
