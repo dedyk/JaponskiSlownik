@@ -307,7 +307,8 @@ koniec tygodnia",,,
 262,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-3,,-,いい,,ii,dobry,,,
 263,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-3,,早い,はやい,,hayai,wcześnie,,,628
 264,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-3,,-,あまり,,amari,niewiele,+ czasownik w formie negatywnej,,
-265,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-3,,全然,ぜんぜん,,zenzen,wcale,+ czasownik w formie negatywnej,,
+265,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-3,,全然,ぜんぜん,,zenzen,"wcale
+w ogóle (nie)",+ czasownik w formie negatywnej,,
 266,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-3,,大抵,たいてい,,taitei,zwykle,,,
 267,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-3,,-,ちょっと,,chotto,trochę,,,
 268,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-3,,時々,ときどき,,tokidoki,czasami,,,
@@ -1434,7 +1435,9 @@ dobre dla ciała",,,
 mimo to",,,
 1158,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-13,,満員電車,まんいんでんしゃ,,man'in densha,pociąg pełen ludzi,,,
 1159,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-13,,第一印象,だいいちんしょう,,dai ichinshou,pierwsze wrażenie,,,
-1160,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-13,,込む,こむ,,komu,być zatłoczony,,,
+1160,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-13,,込む,こむ,,komu,"być zatłoczony
+być tłocznym
+być pełnym",,,
 1161,WORD,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 2-13,,込んでいる,こんでいる,,konde iru,być tłocznie,,,
 1162,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,空港,くうこう,,kuukou,lotnisko,,,
 1163,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-13,に,着く,つく,ni,tsuku,przybyć,~ do miejsca,NO,
@@ -1484,7 +1487,8 @@ para małżeńska",,,
 1195,WORD,WORD_NOUN,,KATAKANA,Genki 2-14,,-,ラジオ,,rajio,radio,,,
 1196,WORD,WORD_NOUN,,HIRAGANA,Genki 2-14,,両親,りょうしん,,ryoushin,rodzice,bardziej grzecznie,,
 1197,WORD,WORD_NOUN,,HIRAGANA,Genki 2-14,,履歴書,りれきしょ,,rirekisho,"curriculum vitae
-cv",,,
+cv
+życiorys",,,
 1198,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-14,,欲しい,ほしい,,hoshii,"chcieć
 pragnąć",rzecz ga,,
 1199,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-14,,-,けち,,kechi,skąpy,,,
@@ -3577,7 +3581,9 @@ akademik",,,
 2764,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-17,,選ぶ,えらぶ,,erabu,wybierać,,NO,
 2765,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-17,,お湯を沸かす,おゆをわかす,,oyu o wakasu,zagotować wodę,,,
 2766,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-17,,髪をとかす,かみをとかす,,kami o tokasu,czesać,włosy,,
-2767,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-17,,込む,こむ,,komu,być zatłoczony,,NO,
+2767,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-17,,込む,こむ,,komu,"być zatłoczony
+być tłocznym
+być pełnym",,NO,
 2768,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-17,,宝くじに当たる,たからくじにあたる,,takarakuji ni ataru,wygrać na loterii,,,
 2769,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-17,,脱ぐ,ぬぐ,,nugu,"zdejmować
 rozbierać
@@ -6284,3 +6290,53 @@ błogosławieństwo",,,
 4352,WORD,WORD_VERB_U,,HIRAGANA,,,恵む,めぐむ,,megumu,"błogosławić
 okazywać łaskawość
 udzielać łaski",,,
+4353,WORD,WORD_VERB_RU,,HIRAGANA,,,込める,こめる,,komeru,"ładować
+pakować
+wkładać
+skupiać
+napełniać",,,
+4354,WORD,WORD_VERB_U,,HIRAGANA,,,申す,もうす,,mousu,"mówić
+mieć zaszczyt",,,
+4355,WORD,WORD_NOUN,,HIRAGANA,,,申込,もうしこみ,,moushikomi,"podanie
+wniosek",,,"4356
+4357"
+4356,WORD,WORD_NOUN,,HIRAGANA,,,申込み,もうしこみ,,moushikomi,"podanie
+wniosek",,,"4355
+4357"
+4357,WORD,WORD_NOUN,,HIRAGANA,,,申し込み,もうしこみ,,moushikomi,"podanie
+wniosek",,,"4355
+4356"
+4358,WORD,WORD_NOUN,,HIRAGANA,,,申請書,しんせいしょ,,shinseisho,pisemne podanie,,,
+4359,WORD,WORD_NOUN,,HIRAGANA,,,申告,しんこく,,shinkoku,"raport
+sprawozdanie
+zawiadomienie",,,
+4360,WORD,WORD_NOUN,,HIRAGANA,,,申命記,しんめいき,,shinmeiki,Księga Powtórzonego Prawa,,,
+4361,WORD,WORD_NOUN,,HIRAGANA,,,申し訳,もうしわけ,,moushiwake,"wytłumaczenie
+przeprosiny",,,
+4362,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,当然,とうぜん,,touzen,"naturalny
+oczywisty",,,
+4363,WORD,WORD_NOUN,,HIRAGANA,,,必然,ひつぜん,,hitsuzen,"konieczny
+niezbędny",,,
+4364,WORD,UNKNOWN,,HIRAGANA,,,歴然,れきぜん,,rekizen,oczywisty,fakt,,
+4365,WORD,WORD_NOUN,,HIRAGANA,,,訳,わけ,,wake,"przyczyna
+znaczenie
+sens
+okoliczność",,,4366
+4366,WORD,WORD_NOUN,,HIRAGANA,,,訳,やく,,yaku,tłumaczenie,,,4365
+4367,WORD,WORD_NOUN,,HIRAGANA,,,通訳,つうやく,,tsuuyaku,tłumaczenie,ustne,,
+4368,WORD,WORD_NOUN,,HIRAGANA,,,翻訳,ほんやく,,hon'yaku,"przekład
+tłumaczenie",pisemne,,
+4369,WORD,WORD_NOUN,,HIRAGANA,,,訳者,やくしゃ,,yakusha,tłumacz,,,
+4370,WORD,WORD_NOUN,,HIRAGANA,,,英訳,えいやく,,eiyaku,angielskie tłumaczenie,,,
+4371,WORD,WORD_NOUN,,HIRAGANA,,,言い訳,いいわけ,,iiwake,"tłumaczenie się
+przeprosiny
+wymówka",,,
+4372,WORD,WORD_NOUN,,HIRAGANA,,,歴代,れきだい,,rekidai,"sukcesywni
+kolejni",królewie,,
+4373,WORD,WORD_NOUN,,HIRAGANA,,,歴任,れきにん,,rekinin,kolejne obejmowanie różnych stanowisk,,,
+4374,WORD,WORD_VERB_RU,,HIRAGANA,,,命じる,めいじる,,meijiru,rozkazywać,,,
+4375,WORD,WORD_NOUN,,HIRAGANA,,,命,いのち,,inochi,życie,,,
+4376,WORD,WORD_NOUN,,HIRAGANA,,,命令,めいれい,,meirei,rozkaz,,,
+4377,WORD,WORD_NOUN,,HIRAGANA,,,命日,めいにち,,meinichi,dzień rocznicy śmierci,,,
+4378,WORD,WORD_NOUN,,HIRAGANA,,,命題,めいだい,,meidai,"teza
+propozycja",,,
