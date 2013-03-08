@@ -323,8 +323,7 @@ wiele",,,"1216
 3714"
 275,WORD,UNKNOWN,,HIRAGANA,,,毎,まい,,mai,każdy,,,1222
 276,WORD,WORD_NOUN,,HIRAGANA,,,お箸,おはし,,ohashi,pałeczki,,,2296
-277,WORD,WORD_NOUN,,HIRAGANA,,,お風呂,おふろ,,ofuro,"wanna
-kąpiel",,,
+277,WORD,WORD_NOUN,,HIRAGANA,,,お風呂,おふろ,,ofuro,kąpiel,,,
 278,WORD,WORD_NOUN,,HIRAGANA,,,店,みせ,,mise,sklep,,,
 279,WORD,WORD_NOUN,,HIRAGANA,,,-,おしょうさん,,oshousan,mnich,buddyjski,,
 280,WORD,WORD_NOUN,,HIRAGANA,,,小僧さん,こぞうさん,,kozousan,"uczeń buddyzmu
@@ -562,8 +561,7 @@ choroba",,,
 477,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,お金,おかね,,okane,pieniądze,,,
 478,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,-,おばあさん,,obaasan,"babcia
 starsza kobieta","spoza swojej rodziny lub własna rodzina, nieformalnie",,
-479,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,お風呂,おふろ,,ofuro,"wanna
-kąpiel",,NO,
+479,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,お風呂,おふろ,,ofuro,kąpiel,,NO,
 480,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,漢字,かんじ,,kanji,kanji,,,"2355
 3005"
 481,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,教科書,きょうかしょ,,kyoukasho,podręcznik,,,
@@ -806,7 +804,7 @@ być zatrudnionym",niefizycznie,,"1814
 656,WORD,WORD_NOUN,,HIRAGANA,,,箸置,はしおき,,hashioki,miejsce na pałeczki,,,
 657,WORD,WORD_VERB_U,,HIRAGANA,,,置く,おく,,oku,"kłaść
 umieszczać
-zostawiać",,,
+zostawiać",,,4379
 658,WORD,WORD_NOUN,,HIRAGANA,,,お皿,おさら,,osara,talerz,,,
 659,WORD,WORD_VERB_U,,HIRAGANA,,を,渡す,わたす,o,watasu,"dawać
 wręczać
@@ -1238,7 +1236,9 @@ okazja",,,
 1007,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,熱がある,ねつがある,,netsu ga aru,mieć gorączkę,,,
 1008,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,のどが渇く,のどがかわく,,nodo ga kawaku,"być spragniony
 mieć sucho w gardle",,,
-1009,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,渇く,かわく,,kawaku,wyschnąć,,,
+1009,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,渇く,かわく,,kawaku,"wyschnąć
+schnąć
+być spragnionym",,,
 1010,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,渇かす,かわかす,,kawakasu,suszyć,,,
 1011,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-12,,せきが出る,せきがでる,,seki ga deru,kasłać,,,
 1012,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-12,と,別れる,わかれる,to,wakareru,"rozdzielać
@@ -2412,7 +2412,8 @@ jechać",czymś,NO,
 1966,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,乗馬,じょうば,,jouba,jeździć konno,,,
 1967,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,本当に,ほんとうに,,hontou ni,na prawdę,,NO,
 1968,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,当時,とうじ,,touji,w tym czasie,,,"2416
-2893"
+2893
+4385"
 1969,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-14,,当たる,あたる,,ataru,trafić,,,
 1970,KANJI,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-14,,当っている,とうっている,,toutte iru,dobrze idzie,,,
 1971,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,音楽,おんがく,,ongaku,muzyka,,NO,
@@ -3033,7 +3034,8 @@ nalewać",,,
 2414,WORD,WORD_NOUN,,HIRAGANA,,,人形,にんぎょう,,ningyou,lalka,,,
 2415,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,お寺,おてら,,otera,świątynia,buddyjska,NO,
 2416,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,東寺,とうじ,,touji,Toji,nazwa świątyni w Kioto,,"1968
-2893"
+2893
+4385"
 2417,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-15,,広い,ひろい,,hiroi,"przestronny
 szeroki
 rozległy",,NO,
@@ -3785,7 +3787,8 @@ rysunek",,,
 video
 film",,,
 2893,WORD,WORD_NOUN,,HIRAGANA,,,冬至,とうじ,,touji,zimowe przesilenie,,,"1968
-2416"
+2416
+4385"
 2894,WORD,WORD_NOUN,,HIRAGANA,,,冬休み,ふゆやすみ,,fuyu yasumi,"ferie
 zimowe wakacje",,,
 2895,WORD,WORD_NOUN,,HIRAGANA,,,冬物,ふゆもの,,fuyu mono,zimowe ubranie,,,
@@ -6340,3 +6343,16 @@ kolejni",królowie,,
 4377,WORD,WORD_NOUN,,HIRAGANA,,,命日,めいにち,,meinichi,dzień rocznicy śmierci,,,
 4378,WORD,WORD_NOUN,,HIRAGANA,,,命題,めいだい,,meidai,"teza
 propozycja",,,
+4379,WORD,WORD_NOUN,,HIRAGANA,,,奥,おく,,oku,"serce
+wnętrze",,,657
+4380,WORD,WORD_NOUN,,HIRAGANA,,,湯,ゆ,,yu,"gorąca woda
+gorąca kąpiel
+gorące źródło",,,
+4381,WORD,WORD_NOUN,,HIRAGANA,,,茶の湯,ちゃのゆ,,chanoyu,ceremonia picia herbaty,,,
+4382,WORD,WORD_NOUN,,HIRAGANA,,,湯船,ゆぶね,,yubune,wanna,,,
+4383,WORD,WORD_NOUN,,HIRAGANA,,,湯上がり,ゆあがり,,yuagari,"zaraz po kąpieli
+szlafrok",,,
+4384,WORD,WORD_NOUN,,HIRAGANA,,,湯浴み,ゆあみ,,yuami,kąpiel,,,
+4385,WORD,WORD_NOUN,,HIRAGANA,,,湯治,とうじ,,touji,zdrowotna kąpiel,,,"1968
+2416
+2893"
