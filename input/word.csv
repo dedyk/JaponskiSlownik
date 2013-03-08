@@ -318,7 +318,7 @@ wiele",,,"1216
 270,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,そうですね,,sou desu ne,to prawda,,NO,
 271,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,でも,,demo,ale,"używane jest po kropce, w nowym zdaniu",,
 272,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,どうですか,,dou desu ka,co ty na to,,,
-273,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,週,しゅう,,shuu,tydzień,,,
+273,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,週,しゅう,,shuu,tydzień,,,4395
 274,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,末,まつ,,matsu,koniec,,,"384
 3714"
 275,WORD,UNKNOWN,,HIRAGANA,,,毎,まい,,mai,każdy,,,1222
@@ -413,7 +413,7 @@ ogród",publiczny,,
 355,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,明日,あした,,ashita,jutro,,NO,
 356,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,-,あさって,,asatte,pojutrze,,,
 357,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,先々週,せんせんしゅう,,sensenshuu,tydzień przed zeszłym tygodniem,,,
-358,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,先週,せんしゅう,,senshuu,zeszły tydzień,,,
+358,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,先週,せんしゅう,,senshuu,zeszły tydzień,,,4388
 359,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,今週,こんしゅう,,konshuu,obecny tydzień,,,
 360,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,来週,らいしゅう,,raishuu,przyszły tydzień,,,
 361,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,再来週,さらいしゅう,,saraishuu,tydzień po przyszłym tygodniu,,,
@@ -1180,7 +1180,7 @@ ratować",,,
 966,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-11,,例えば,たとえば,,tatoeba,"na przykład
 np.",,,
 967,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,-,ほかに,,hokani,coś innego,,,
-968,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-11,,番,ばん,,ban,numer,~,,
+968,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-11,,番,ばん,,ban,numer,~,,4399
 969,WORD,WORD_NOUN,,KATAKANA,Genki 1-11,,-,ページ,,peeji,strona,,NO,
 970,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,行目,ぎょうめ,,gyoume,numer linii,~,,
 971,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,二人ずつ,ふたりずつ,,futarizutsu,dla każdych dwóch osób,,,
@@ -1764,7 +1764,8 @@ podnosić na duchu",,,
 1418,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,立派,りっぱ,,rippa,"wspaniały
 dojrzały",,,
 1419,WORD,WORD_NOUN,,KATAKANA,,,-,ランドセル,,randoseru,tornister,,,
-1420,WORD,WORD_VERB_U,,HIRAGANA,,,選ぶ,えらぶ,,erabu,wybierać,,,
+1420,WORD,WORD_VERB_U,,HIRAGANA,,,選ぶ,えらぶ,,erabu,"wybierać
+selekcjonować",,,
 1421,WORD,WORD_EXPRESSION,,HIRAGANA,,,一言,ひとこと,,hitokoto,prosić o wypowiedź,,,
 1422,WORD,WORD_EXPRESSION,,KATAKANA,,,-,ポイント,,pointo,na co zwracać uwagę,,,
 1423,WORD,WORD_EXPRESSION,,HIRAGANA,,,楽々,らくらく,,raku raku,łatwe,troszeczkę kombinowane,,
@@ -3580,7 +3581,8 @@ akademik",,,
 2761,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-17,,-,うらやましい,,urayamashii,zazdrosny,,,
 2762,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-17,,少ない,すくない,,sukunai,trochę,,NO,
 2763,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-17,,強い,つよい,,tsuyoi,silny,,NO,
-2764,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-17,,選ぶ,えらぶ,,erabu,wybierać,,NO,
+2764,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-17,,選ぶ,えらぶ,,erabu,"wybierać
+selekcjonować",,NO,
 2765,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-17,,お湯を沸かす,おゆをわかす,,oyu o wakasu,zagotować wodę,,,
 2766,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-17,,髪をとかす,かみをとかす,,kami o tokasu,czesać,włosy,,
 2767,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-17,,込む,こむ,,komu,"być zatłoczony
@@ -6356,3 +6358,27 @@ szlafrok",,,
 4385,WORD,WORD_NOUN,,HIRAGANA,,,湯治,とうじ,,touji,zdrowotna kąpiel,,,"1968
 2416
 2893"
+4386,WORD,WORD_NOUN,,HIRAGANA,,,選択,せんたく,,sentaku,"wybór
+alternatywa",,,
+4387,WORD,WORD_NOUN,,HIRAGANA,,,選手,せんしゅ,,senshu,"atleta
+zawodnik",,,
+4388,WORD,WORD_NOUN,,HIRAGANA,,,選集,せんしゅう,,senshuu,"selekcja
+antologia",,,358
+4389,WORD,WORD_NOUN,,HIRAGANA,,,選民,せんみん,,senmin,naród wybrany,,,
+4390,WORD,WORD_NOUN,,HIRAGANA,,,崎,さき,,saki,"przylądek
+cypel",,,
+4391,WORD,WORD_VERB_RU,,HIRAGANA,,,凍える,こごえる,,kogoeru,zamarzać,,,
+4392,WORD,WORD_VERB_U,,HIRAGANA,,,凍らす,こおらす,,koorasu,zamrażać,,,
+4393,WORD,WORD_VERB_U,,HIRAGANA,,,巻く,まく,,maku,zwijać,,,
+4394,WORD,WORD_NOUN,,HIRAGANA,,,巻,まき,,maki,zwój,,,
+4395,WORD,WORD_NOUN,,HIRAGANA,,,州,しゅう,,shuu,"prowincja
+stan
+kontynent",,,"273
+4396"
+4396,WORD,WORD_NOUN,,HIRAGANA,,,州,す,,su,"mielizna
+ławica",,,4395
+4397,WORD,WORD_NOUN,,HIRAGANA,,,アラスカ州,あらすかしゅう,,arasukashuu,stan Alaska,w USA,,
+4398,WORD,WORD_NOUN,,HIRAGANA,,,三角州,さんかくす,,sankakusu,delta,,,
+4399,WORD,UNKNOWN,,HIRAGANA,,,晩,ばん,,ban,"wieczór
+noc
+późno",,,968
