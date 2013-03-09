@@ -407,7 +407,7 @@ ogród",publiczny,,
 349,WORD,WORD_MONTH,,HIRAGANA,Genki 1-4,,十月,じゅうがつ,,juugatsu,październik,,,
 350,WORD,WORD_MONTH,,HIRAGANA,Genki 1-4,,十一月,じゅういちがつ,,juuichigatsu,listopad,,,
 351,WORD,WORD_MONTH,,HIRAGANA,Genki 1-4,,十二月,じゅうにがつ,,juunigatsu,grudzień,,,
-352,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,一昨日,おととい,,ototoi,przedwczoraj,,,
+352,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,一昨日,おととい,,ototoi,przedwczoraj,,,4403
 353,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,昨日,きのう,,kinou,wczoraj,,,3593
 354,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,今日,きょう,,kyou,dziś,,NO,
 355,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,明日,あした,,ashita,jutro,,NO,
@@ -986,7 +986,8 @@ dziennik",,,
 812,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,駅,えき,,eki,stacja,kolejowa,,
 813,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,お金持ち,おかねもち,,okanemochi,bogaty człowiek,,,
 814,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,顔,かお,,kao,twarz,,NO,
-815,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,季節,きせつ,,kisetsu,sezon,,,
+815,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,季節,きせつ,,kisetsu,"sezon
+pora roku",,,
 816,WORD,WORD_NOUN,,KATAKANA,Genki 1-10,,-,クレジットカード,,kurejitto kaado,karta kredytowa,,,
 817,WORD,UNKNOWN,,HIRAGANA,Genki 1-10,,今年,ことし,,kotoshi,aktualny rok,,NO,
 818,WORD,WORD_NOUN,,KATAKANA,Genki 1-10,,-,サッカー,,sakkaa,piłka nożna,,,
@@ -3423,7 +3424,7 @@ ruszać się",,,
 lecieć
 wznieść się",,NO,
 2666,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-16,,違う,ちがう,,chigau,"różnić się
-mieć odrębne zdanie",,,
+mieć odrębne zdanie",,,4401
 2667,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-16,,-,そんな,,sonna,"jak tak
 taki
 takiego rodzaju",blisko osoby docelowej,NO,
@@ -3567,7 +3568,8 @@ najgorszy",,,
 2753,WORD,WORD_NOUN,,KATAKANA,Genki 2-17,,-,ストーブ,,sutoobu,"ogrzewanie
 kuchenka",,NO,
 2754,WORD,WORD_NOUN,,HIRAGANA,Genki 2-17,,宝くじ,たからくじ,,takarakuji,loteria,,,
-2755,WORD,WORD_NOUN,,HIRAGANA,Genki 2-17,,違い,ちがい,,chigai,różnica,,,
+2755,WORD,WORD_NOUN,,HIRAGANA,Genki 2-17,,違い,ちがい,,chigai,"różnica
+pomyłka",,,
 2756,WORD,WORD_NOUN,,KATAKANA,Genki 2-17,,-,ニュース,,nyuusu,"news
 wiadomość",,,
 2757,WORD,WORD_NOUN,,HIRAGANA,Genki 2-17,,髭,ひげ,,hige,"zarost
@@ -5417,7 +5419,8 @@ zaniedbywać",,NO,
 3824,WORD,WORD_NOUN,,HIRAGANA,,,課長,かちょう,,kachou,kierownik,,,
 3825,WORD,WORD_NOUN,,HIRAGANA,,,社長,しゃちょう,,shachou,prezes,firmy,NO,
 3826,WORD,WORD_NOUN,,HIRAGANA,Genki 2-19,,文化,ぶんか,,bunka,kultura,,NO,
-3827,WORD,WORD_NOUN,,HIRAGANA,Genki 2-19,,間違い,まちがい,,machigai,pomyłka,,,
+3827,WORD,WORD_NOUN,,HIRAGANA,Genki 2-19,,間違い,まちがい,,machigai,"pomyłka
+błąd",,,
 3828,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-19,,仲がいい,なかがいい,,naka ga ii,"lubić się
 mieć z kimś dobry kontakt",,,
 3829,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-19,,-,まじめ,,majime,poważny,,NO,
@@ -6382,3 +6385,31 @@ kontynent",,,"273
 4399,WORD,UNKNOWN,,HIRAGANA,,,晩,ばん,,ban,"wieczór
 noc
 późno",,,968
+4400,WORD,WORD_VERB_RU,,HIRAGANA,,,違える,ちがえる,,chigaeru,zmieniać,,,4402
+4401,WORD,WORD_VERB_U,,HIRAGANA,,,違う,たがう,,tagau,"różnić się
+mieć odrębne zdanie",,,2666
+4402,WORD,WORD_VERB_RU,,HIRAGANA,,,違える,たがえる,,tagaeru,"zmieniać
+mylić",,,4400
+4403,WORD,UNKNOWN,,HIRAGANA,,,一昨日,いっさくじつ,,issakujitsu,przedwczoraj,,,352
+4404,WORD,UNKNOWN,,HIRAGANA,,,昨年,さくねん,,sakunen,ubiegły rok,,,
+4405,WORD,UNKNOWN,,HIRAGANA,,,一昨年,いっさくねん,,issakunen,dwa lata temu,,,
+4406,WORD,UNKNOWN,,HIRAGANA,,,昨今,さっこん,,sakkon,"niedawno
+w tych dniach",,,
+4407,WORD,WORD_NOUN,,HIRAGANA,,,節,せつ,,setsu,"pora
+okres",,,"4408
+4409"
+4408,WORD,WORD_NOUN,,HIRAGANA,,,節,せち,,sechi,"wers
+paragraf",,,"4407
+4409"
+4409,WORD,WORD_NOUN,,HIRAGANA,,,節,ふし,,fushi,"złącze
+węzeł
+połączenie",,,"4407
+4408"
+4410,WORD,WORD_NOUN,,HIRAGANA,,,節約,せつやく,,setsuyaku,"oszczędność
+umiarkowanie
+ekonomiczność
+gospodarność",,,
+4411,WORD,WORD_NOUN,,HIRAGANA,,,節操,せっそう,,sessou,"stałość
+uczciwość
+honor",,,
+4412,WORD,WORD_NOUN,,HIRAGANA,,,節電,せつでん,,setsuden,oszczędność prądu,,,
