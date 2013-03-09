@@ -8,5 +8,7 @@ public enum AttributeType {
 	
 	VERB_INTRANSITIVITY,
 	
-	VERB_KEIGO_HIGH;
+	VERB_KEIGO_HIGH,
+	
+	COMMON_WORD;
 }

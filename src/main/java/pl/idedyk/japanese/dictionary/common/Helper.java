@@ -91,37 +91,31 @@ public class Helper {
 		return result;
 	}
 	
-	public static void generateAdditionalInfoFromEdict(TreeMap<String, EDictEntry> jmedict, List<PolishJapaneseEntry> polishJapaneseEntries) {
+	public static void generateAdditionalInfoFromEdict(TreeMap<String, EDictEntry> jmedict, TreeMap<String, EDictEntry> jmedictCommon, 
+			List<PolishJapaneseEntry> polishJapaneseEntries) {
 		
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 			
 			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
-
-			String kanji = currentPolishJapaneseEntry.getKanji();
 			
-			if (kanji != null && kanji.equals("-") == true) {
-				kanji = null;
-			}
+			EDictEntry foundEdict = findEdictEntry(jmedict, currentPolishJapaneseEntry);			
+			EDictEntry foundEdictCommon = findEdictEntry(jmedictCommon, currentPolishJapaneseEntry);
 			
-			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
-			
-			EDictEntry foundEdict = null;
-			
-			for (String currentKana : kanaList) {
-				
-				foundEdict = jmedict.get(EdictReader.getMapKey(kanji, currentKana));
-				
-				if (foundEdict != null) {
-					break;
-				}
-			}
+			List<AttributeType> attributeTypeList = currentPolishJapaneseEntry.getAttributeTypeList();
 			
 			if (foundEdict != null) {
 				
+				// common word
+				if (foundEdictCommon != null) {
+					
+					if (attributeTypeList.contains(AttributeType.COMMON_WORD) == false) {
+						
+						attributeTypeList.add(0, AttributeType.COMMON_WORD);						
+					}					
+				}				
+				
 				// suru verb
 				DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
-				
-				List<AttributeType> attributeTypeList = currentPolishJapaneseEntry.getAttributeTypeList();
 				
 				if (dictionaryEntryType == DictionaryEntryType.WORD_NOUN) {
 					
@@ -170,5 +164,29 @@ public class Helper {
 				}
 			}			
 		}
+	}
+	
+	private static EDictEntry findEdictEntry(TreeMap<String, EDictEntry> jmedict, PolishJapaneseEntry polishJapaneseEntry) {
+		
+		String kanji = polishJapaneseEntry.getKanji();
+		
+		if (kanji != null && kanji.equals("-") == true) {
+			kanji = null;
+		}
+		
+		List<String> kanaList = polishJapaneseEntry.getKanaList();
+		
+		EDictEntry foundEdict = null;
+		
+		for (String currentKana : kanaList) {
+			
+			foundEdict = jmedict.get(EdictReader.getMapKey(kanji, currentKana));
+			
+			if (foundEdict != null) {
+				break;
+			}
+		}
+		
+		return foundEdict;
 	}
 }
