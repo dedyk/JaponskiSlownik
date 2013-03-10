@@ -43,7 +43,9 @@ public class AndroidDictionaryGenerator {
 	public static void main(String[] args) throws Exception {
 		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", "../JaponskiSlownik_dodatki/edict-utf8", 
-				"../JaponskiSlownik_dodatki/edict_sub-utf8", "output/word.csv");
+				"../JaponskiSlownik_dodatki/edict_sub-utf8", 
+				"../JaponskiSlownik_dodatki/enamdict-utf8",
+				"output/word.csv");
 		
 		generateKanaEntries("../JaponskiSlownik_dodatki/kanjivg", "output/kana.csv");
 		
@@ -63,7 +65,8 @@ public class AndroidDictionaryGenerator {
 	}
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, 
-			String edictFileName, String edictCommonFileName, String destinationFileName) throws Exception {
+			String edictFileName, String edictCommonFileName, 
+			String edictNameFileName, String destinationFileName) throws Exception {
 				
 		// hiragana
 		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
@@ -79,7 +82,7 @@ public class AndroidDictionaryGenerator {
 		
 		// read edict common
 		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict(edictCommonFileName);
-		
+				
 		// validate
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict);
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);
@@ -90,6 +93,14 @@ public class AndroidDictionaryGenerator {
 		
 		// generate additional data from edict
 		Helper.generateAdditionalInfoFromEdict(jmedict, jmedictCommon, result);
+		
+		// test !
+		
+		// read edict name
+		// TreeMap<String, EDictEntry> jmedictName = EdictReader.readEdict(edictNameFileName);
+		
+		// generate names
+		// Helper.generateNames(jmedictName, result);		
 		
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 		

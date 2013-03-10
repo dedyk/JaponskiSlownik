@@ -8,6 +8,8 @@ public class EDictEntry {
 	
 	private String kana;
 	
+	private String name;
+	
 	private List<String> pos;
 
 	public String getKanji() {
@@ -34,8 +36,16 @@ public class EDictEntry {
 		this.pos = pos;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	@Override
 	public String toString() {
-		return kanji + " - " + kana + " - " + pos;
+		return kanji + " - " + kana + " - " + name + " - " + pos;
 	}	
 }

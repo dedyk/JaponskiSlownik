@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.Iterator;
 import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
@@ -47,10 +48,22 @@ public class Test {
 		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries, true);
 		*/
 		
-		TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict("../JaponskiSlownik_dodatki/edict-utf8");
-		
+		// TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict("../JaponskiSlownik_dodatki/edict-utf8");
+		/*
 		System.out.println(jmedict.get(EdictReader.getMapKey("食べる", "たべる")));
 		System.out.println(jmedict.get(EdictReader.getMapKey("集中", "しゅうちゅう")));
 		System.out.println(jmedict.get(EdictReader.getMapKey(null, "デート")));
+		
+		System.out.println();
+		*/
+		TreeMap<String, EDictEntry> jmenamdict = EdictReader.readEdict("../JaponskiSlownik_dodatki/enamdict-utf8");
+		
+		Iterator<EDictEntry> iterator = jmenamdict.values().iterator();
+		
+		while(iterator.hasNext()) {
+			EDictEntry edictEntry = iterator.next();
+			
+			System.out.println(edictEntry);			
+		}
 	}
 }

@@ -2,15 +2,20 @@ package pl.idedyk.japanese.dictionary.common;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.dto.DictionaryType;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
+import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
+import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 
 public class Helper {
 
@@ -188,5 +193,89 @@ public class Helper {
 		}
 		
 		return foundEdict;
+	}
+	
+	public static void generateNames(TreeMap<String, EDictEntry> jmedictName, List<PolishJapaneseEntry> polishJapaneseEntries) {
+		
+		Iterator<EDictEntry> iterator = jmedictName.values().iterator();
+		
+		int counter = 1000000;
+				
+		// [Thailand, former, Dalai, SNK, Niigata, Sony, st, f, g, uk, d, c, or, n, o, abbr, ik, m, Nintendo, h, Sega, Republic, u, co, 1, NEC, s, Bandai, deity, p, pr]
+		
+		// surname -> s
+		// masc -> m
+		// fem -> f
+		// given -> g
+		
+		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
+		List<KanaEntry> kitakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
+		
+		while(iterator.hasNext()) {
+			EDictEntry edictNameEntry = iterator.next();
+			
+			String kanji = edictNameEntry.getKanji();
+			String kana = edictNameEntry.getKana();
+			String name = edictNameEntry.getName();			
+			List<String> pos = edictNameEntry.getPos();
+			
+			if (name == null) {
+				continue;
+			}
+			
+			PolishJapaneseEntry newPolishJapaneseEntry = new PolishJapaneseEntry();
+			
+			newPolishJapaneseEntry.setId(counter);
+			newPolishJapaneseEntry.setDictionaryType(DictionaryType.WORD);
+			
+			if (pos.contains("f") == true) {
+				newPolishJapaneseEntry.setDictionaryEntryType(DictionaryEntryType.WORD_FEMALE_NAME);
+				
+			} else if (pos.contains("m") == true) {
+				newPolishJapaneseEntry.setDictionaryEntryType(DictionaryEntryType.WORD_MALE_NAME);
+				
+			} else if (pos.contains("g") == true) {
+				newPolishJapaneseEntry.setDictionaryEntryType(DictionaryEntryType.WORD_NAME);
+				
+			} else if (pos.contains("s") == true) {
+				newPolishJapaneseEntry.setDictionaryEntryType(DictionaryEntryType.WORD_SURNAME_NAME);
+				
+			} else {
+				continue;
+			}
+			
+			newPolishJapaneseEntry.setWordType(WordType.HIRAGANA_KATAKANA);
+			
+			newPolishJapaneseEntry.setAttributeTypeList(new ArrayList<AttributeType>());
+			newPolishJapaneseEntry.setGroups(new ArrayList<String>());
+			
+			newPolishJapaneseEntry.setKanji(kanji != null ? kanji : "-");
+			
+			List<String> kanaList = new ArrayList<String>();
+			kanaList.add(kana);
+			
+			newPolishJapaneseEntry.setKanaList(kanaList);
+			
+			try {
+				List<String> romajiList = new ArrayList<String>();
+				romajiList.add(KanaHelper.createRomajiString(KanaHelper.convertKanaStringIntoKanaWord(kana, hiraganaEntries, kitakanaEntries)));
+				
+				newPolishJapaneseEntry.setRomajiList(romajiList);
+				
+			} catch (RuntimeException e) {
+				continue;
+			}
+			
+			List<String> polishTranslateList = new ArrayList<String>();
+			polishTranslateList.add(name);
+			
+			newPolishJapaneseEntry.setPolishTranslates(polishTranslateList);
+			
+			newPolishJapaneseEntry.setUseEntry(true);
+			
+			polishJapaneseEntries.add(newPolishJapaneseEntry);
+			
+			counter++;
+		}	
 	}
 }
