@@ -1123,7 +1123,8 @@ być zatrudnionym",niefizycznie,NO,
 916,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,疲れる,つかれる,,tsukareru,"być zmęczony
 zmęczyć się
 znużyć się",,,
-917,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,-,やめる,,yameru,rezygnować,,,
+917,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,辞める,やめる,,yameru,"rezygnować
+przestawać",,,
 918,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,,-,けんかする,,kenka suru,pokłócić się,,,
 919,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,を,紹介する,しょうかいする,o,shoukai suru,przedstawiać,"kogoś ni kto ~, hiragana i katakana",,
 920,WORD,WORD_VERB_IRREGULAR,,HIRAGANA_KATAKANA,Genki 1-11,,-,ダイエットする,,daietto suru,być na diecie,,,
@@ -3661,7 +3662,8 @@ podmiot",,,4120
 rezultat
 konsekwencja
 owoc (czegoś)",,,
-2810,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,結論,けつろん,,ketsuron,konkluzja,,,
+2810,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,結論,けつろん,,ketsuron,"konkluzja
+wniosek",,,
 2811,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-17,,結ぶ,むすぶ,,musubu,"wiązać
 łączyć",,,
 2812,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-17,を,結婚する,けっこんする,o,kekkon suru,żenić się,,NO,
@@ -5611,7 +5613,8 @@ wykładowca",,NO,
 3942,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-18,,授かる,さずかる,,sazukaru,"być obdarowanym
 otrzymywać
 przyjmować",,NO,
-3943,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,職業,しょくぎょう,,shokugyou,zawód,,,
+3943,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,職業,しょくぎょう,,shokugyou,"zawód
+zatrudnienie",,,
 3944,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,産業,さんぎょう,,sangyou,przemysł,,NO,
 3945,KANJI,WORD_NOUN,,KATAKANA_HIRAGANA,Genki kanji 2-18,,サービズ業,サービズぎょう,,saabizu gyou,przemysł usługowy,,,
 3946,KANJI,WORD_NOUN,,HIRAGANA,,,農業,のうぎょう,,nougyou,przemysł rolniczy,,,
@@ -6485,3 +6488,41 @@ przekładnia",,,
 4450,WORD,WORD_NOUN,,HIRAGANA,,,愛犬者,あいけんしゃ,,aikensha,miłośnik psów,,,
 4451,WORD,WORD_NOUN,,HIRAGANA,,,犬歯,けんし,,kenshi,kieł,,,
 4452,WORD,WORD_NOUN,,HIRAGANA,,,野犬,やけん,,yaken,dziki pies,,,
+4453,WORD,WORD_NOUN,,HIRAGANA,,,順位,じゅんい,,jun'i,"miejsce
+ranking
+pozycja",w rankingu,,
+4454,WORD,WORD_NOUN,,HIRAGANA,,,計,けい,,kei,suma,,,
+4455,WORD,WORD_NOUN,,HIRAGANA,,,膝,ひざ,,hiza,kolano,,,
+4456,WORD,WORD_ADVERB,,HIRAGANA,,,-,ずっと,,zutto,cały czas,,,
+4457,WORD,WORD_NOUN,,HIRAGANA,,,卒業論文,そつぎょうろんぶん,,sotsugyou ronbun,praca dyplomowa,,,
+4458,WORD,WORD_NOUN,,HIRAGANA,,,論争,ろんそう,,ronsou,dyskusja,,,
+4459,WORD,WORD_NOUN,,HIRAGANA,,,論文,ろんぶん,,ronbun,"rozprawa
+praca",,,
+4460,WORD,WORD_NOUN,,HIRAGANA,,,論理,ろんり,,ronri,logika,,,
+4461,WORD,WORD_NOUN,,HIRAGANA,,,理論,りろん,,riron,teoria,,,
+4462,WORD,WORD_NOUN,,HIRAGANA,,,弟子,でし,,deshi,"uczeń
+zwolennik",,,4463
+4463,WORD,WORD_NOUN,,HIRAGANA,,,弟子,でし,,deshi,"uczeń
+terminator",,,4462
+4464,WORD,WORD_NOUN,,HIRAGANA,,,辞典,じてん,,jiten,słownik,,,
+4465,WORD,WORD_NOUN,,HIRAGANA,,,辞任,じにん,,jinin,"ustąpienie
+rezygnacja",ze stanowiska,,
+4466,WORD,WORD_NOUN,,HIRAGANA,,,辞職,じしょく,,jishoku,"rezygnacja
+zwolnienie się",z pracy,,
+4467,WORD,WORD_NOUN,,HIRAGANA,,,お世辞,おせじ,,oseji,"komplement
+pochlebstwo",,,
+4468,WORD,WORD_NOUN,,HIRAGANA,,,職,しょく,,shoku,"zatrudnienie
+praca",,,
+4469,WORD,WORD_NOUN,,HIRAGANA,,,職場,しょくば,,shokuba,miejsce pracy,,,
+4470,WORD,WORD_NOUN,,HIRAGANA,,,職人,しょくにん,,shokunin,pracownik,,,
+4471,WORD,WORD_NOUN,,HIRAGANA,,,職員,しょくいん,,shokuin,"personel
+obsługa",,,
+4472,WORD,WORD_NOUN,,HIRAGANA,,,職務,しょくむ,,shokumu,"obowiązki
+praca
+stanowisko",,,
+4473,WORD,WORD_NOUN,,HIRAGANA,,,政,まつりごと,,matsurigoto,"władza
+rząd",,,
+4474,WORD,WORD_NOUN,,HIRAGANA,,,政府,せいふ,,seifu,rząd,,,
+4475,WORD,WORD_NOUN,,HIRAGANA,,,政治家,せいじか,,seijika,polityk,,,
+4476,WORD,WORD_NOUN,,HIRAGANA,,,政党,せいとう,,seitou,partia polityczna,,,
+4477,WORD,WORD_NOUN,,HIRAGANA,,,政策,せいさく,,seisaku,program polityczny,,,
