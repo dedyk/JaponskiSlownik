@@ -211,6 +211,8 @@ public class AndroidDictionaryGenerator {
 		
 		final Map<String, Integer> kanjiCountMap = new HashMap<String, Integer>();
 		
+		final Map<String, Integer> additionalKanjiIds = new HashMap<String, Integer>();
+		
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : dictionary) {
 			
 			String kanji = currentPolishJapaneseEntry.getKanji();
@@ -281,6 +283,8 @@ public class AndroidDictionaryGenerator {
 					newKanjiEntry.setGroups(groupsList);
 					
 					kanjiEntries.add(newKanjiEntry);
+					
+					additionalKanjiIds.put(currentKanjiChar, newKanjiEntry.getId());
 				}
 			}
 		}
@@ -293,9 +297,18 @@ public class AndroidDictionaryGenerator {
 
 			@Override
 			public int compare(String kanji1, String kanji2) {
-				return kanjiCountMap.get(kanji2).compareTo(kanjiCountMap.get(kanji1));
+				
+				Integer kanji2Count = kanjiCountMap.get(kanji2);
+				Integer kanji1Count = kanjiCountMap.get(kanji1);
+				
+				int compareResult = kanji2Count.compareTo(kanji1Count);
+				
+				if (compareResult != 0) {
+					return compareResult;
+				} else {					
+					return additionalKanjiIds.get(kanji1).compareTo(additionalKanjiIds.get(kanji2));
+				}
 			}
-			
 		});
 		
 		for (int kanjiArrayIdx = 0; kanjiArrayIdx < kanjiArray.length && kanjiArrayIdx < 10; ++kanjiArrayIdx) {
