@@ -1,15 +1,17 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.Iterator;
-import java.util.TreeMap;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-import pl.idedyk.japanese.dictionary.dto.EDictEntry;
-import pl.idedyk.japanese.dictionary.tools.EdictReader;
+import pl.idedyk.japanese.dictionary.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.tools.KanaHelper.KanaWord;
 
 public class Test {
-	
+
 	public static void main(String[] args) throws Exception {
-		
+
 		/*
 		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
 		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
@@ -30,7 +32,7 @@ public class Test {
 		
 		System.out.println(KanaHelper.createKanaString(kanaWord));
 		*/
-		
+
 		/*
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);
 		
@@ -47,7 +49,7 @@ public class Test {
 		
 		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries, true);
 		*/
-		
+
 		// TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict("../JaponskiSlownik_dodatki/edict-utf8");
 		/*
 		System.out.println(jmedict.get(EdictReader.getMapKey("食べる", "たべる")));
@@ -56,6 +58,7 @@ public class Test {
 		
 		System.out.println();
 		*/
+		/*
 		TreeMap<String, EDictEntry> jmenamdict = EdictReader.readEdict("../JaponskiSlownik_dodatki/enamdict-utf8");
 		
 		Iterator<EDictEntry> iterator = jmenamdict.values().iterator();
@@ -65,5 +68,36 @@ public class Test {
 			
 			System.out.println(edictEntry);			
 		}
+		*/
+		
+		// hiragana
+		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
+		
+		// katakana
+		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
+
+		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
+
+		for (KanaEntry kanaEntry : hiraganaEntries) {
+			hiraganaCache.put(kanaEntry.getKana(), kanaEntry);
+		}
+
+		Map<String, KanaEntry> katakanaCache = new HashMap<String, KanaEntry>();
+
+		for (KanaEntry kanaEntry : katakanaEntries) {
+			katakanaCache.put(kanaEntry.getKana(), kanaEntry);
+		}
+		
+		KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord("けんあく", hiraganaEntries, katakanaEntries);
+		
+		String currentKanaAsRomaji = KanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
+
+		/*
+		KanaWord kanaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, "ken'aku");
+		String kanaString = KanaHelper.createKanaString(kanaWord);
+		*/
+		
+		System.out.println(currentKanaAsRomaji);
+
 	}
 }
