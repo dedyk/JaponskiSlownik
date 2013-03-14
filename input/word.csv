@@ -140,7 +140,8 @@ nani",co,,,
 115,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,大学院生,だいがくいんせい,,daigakuinsei,student,"studia podyplomowe, magisterskie",,
 116,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,大学生,だいがくせい,,daigakusei,student,uniwersytetu,,
 117,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,弁護士,べんごし,,bengoshi,"prawnik
-adwokat",,,
+adwokat
+obrońca",,,
 118,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,お母さん,おかあさん,,okaasan,matka,spoza swojej rodziny lub własna rodzina - nieformalnie,,
 119,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,お父さん,おとうさん,,otousan,ojciec,spoza swojej rodziny lub własna rodzina - nieformalnie,,
 120,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,お姉さん,おねえさん,,oneesan,siostra,"spoza swojej rodziny lub własna rodzina, nieformalnie, starsza",,
@@ -1036,7 +1037,7 @@ spóźniony",,NO,
 chłodny",do ludzi/rzeczy,,
 839,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,眠い,ねむい,,nemui,śpiący,,,
 840,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-10,,簡単,かんたん,,kantan,łatwy,,,
-841,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,-,かかる,,kakaru,zajmować,"czas/pieniądze, bez partykuły",,
+841,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,-,かかる,,kakaru,zajmować,"czas/pieniądze, bez partykuły",,4551
 842,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 1-10,に,泊まる,とまる,ni,tomaru,"zatrzymywać się
 nocować",w hotelu i etc,,2210
 843,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,成る,なる,,naru,stawać się,,,
@@ -1158,7 +1159,8 @@ bardziej
 934,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,俳優,はいゆう,,haiyuu,aktor,,,
 935,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,看護師,かんごし,,kangoshi,pielęgniarka,w szpitalu,,
 936,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,弁護士,べんごし,,bengoshi,"prawnik
-adwokat",,NO,
+adwokat
+obrońca",,NO,
 937,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,野球選手,やきゅうせんしゅ,,yakyuusenshu,gracz baseball'a,,,
 938,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,大統領,だいとうりょう,,daitouryou,prezydent,,,
 939,WORD,WORD_NOUN,,KATAKANA,Genki 1-11,,-,ジャーナリスト,,jaanarisuto,dziennikarz,,,
@@ -1366,7 +1368,8 @@ mowa",,NO,
 1094,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,物価,ぶっか,,bukka,ceny,"ogólnie, nie konkretna cena",,
 1095,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,文法,ぶんぽう,,bunpou,gramatyka,,NO,
 1096,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,弁護士,べんごし,,bengoshi,"prawnik
-adwokat",,NO,
+adwokat
+obrońca",,NO,
 1097,WORD,UNKNOWN,,HIRAGANA,Genki 2-13,,募集,ぼしゅう,,boshuu,rekrutacja,"~, szukanie ...",NO,
 1098,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,店,みせ,,mise,sklep,,NO,
 1099,WORD,WORD_NOUN,,HIRAGANA,Genki 2-13,,-,やくざ,,yakuza,yakuza,,,
@@ -6675,3 +6678,27 @@ relacje
 stosunki (osobowe)",,,
 4549,WORD,WORD_NOUN,,HIRAGANA,,,水際,みずぎわ,,mizugiwa,"linia wodna
 brzeg",,,
+4550,WORD,WORD_VERB_U,,HIRAGANA,,,係わる,かかわる,,kakawaru,"dotyczyć
+być zaangażowanym",,,
+4551,WORD,WORD_VERB_U,,HIRAGANA,,,係る,かかる,,kakaru,"oddziaływać
+mieć wpływ",,,841
+4552,WORD,WORD_NOUN,,HIRAGANA,,,係,かかり,,kakari,"funkcja
+obowiązek
+człowiek odpowiedzialny",,,
+4553,WORD,WORD_NOUN,,HIRAGANA,,,連係,れんけい,,renkei,"połączenie
+związek",,,
+4554,WORD,WORD_NOUN,,HIRAGANA,,,係員,かかりいん,,kakariin,członek obsługi,,,
+4555,WORD,WORD_NOUN,,HIRAGANA,,,係争,けいそう,,keisou,"dyskusja
+sprzeczka",,,
+4556,WORD,WORD_NOUN,,HIRAGANA,,,係属,けいぞく,,keizoku,"związek
+relacja",,,
+4557,WORD,WORD_NOUN,,HIRAGANA,,,史実,しじつ,,shijitsu,fakt historyczny,,,
+4558,WORD,WORD_NOUN,,HIRAGANA,,,近代史,きんだいし,,kindaishi,historia nowożytna,,,
+4559,WORD,WORD_NOUN,,HIRAGANA,,,文学史,ぶんがくし,,bungakushi,historia literatury,,,
+4560,WORD,WORD_NOUN,,HIRAGANA_KATAKANA,,,ポーランド史,ポーランドどし,,poorando doshi,historia Polski,,,
+4561,WORD,WORD_NOUN,,HIRAGANA,,,弁別,べんべつ,,benbetsu,dyskryminacja,,,
+4562,WORD,WORD_NOUN,,HIRAGANA,,,弁償,べんしょう,,benshou,"kompensata
+wyrównanie",,,
+4563,WORD,WORD_NOUN,,HIRAGANA,,,弁解,べんかい,,benkai,"wyjaśnianie
+usprawiedliwianie
+obrona",,,
