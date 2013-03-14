@@ -298,6 +298,7 @@ public class AndroidDictionaryGenerator {
 			@Override
 			public int compare(String kanji1, String kanji2) {
 				
+				/*
 				Integer kanji2Count = kanjiCountMap.get(kanji2);
 				Integer kanji1Count = kanjiCountMap.get(kanji1);
 				
@@ -308,6 +309,9 @@ public class AndroidDictionaryGenerator {
 				} else {					
 					return additionalKanjiIds.get(kanji1).compareTo(additionalKanjiIds.get(kanji2));
 				}
+				*/
+				
+				return additionalKanjiIds.get(kanji1).compareTo(additionalKanjiIds.get(kanji2));
 			}
 		});
 		
