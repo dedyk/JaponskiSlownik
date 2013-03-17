@@ -247,7 +247,8 @@ dzień",,NO,
 213,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-2,,安い,やすい,,yasui,tani,,,1408
 214,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,映画,えいが,,eiga,film,,,
 215,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,音楽,おんがく,,ongaku,muzyka,,,
-216,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,雑誌,ざっし,,zasshi,magazyn,,,
+216,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,雑誌,ざっし,,zasshi,"magazyn
+czasopismo",,,
 217,WORD,WORD_NOUN,,KATAKANA,Genki 1-3,,-,スポーツ,,supootsu,sport,,,
 218,WORD,WORD_NOUN,,KATAKANA,Genki 1-3,,-,デート,,deeto,randka,,,
 219,WORD,WORD_NOUN,,KATAKANA,Genki 1-3,,-,テニス,,tenisu,tenis,,,
@@ -2711,7 +2712,7 @@ tenis stołowy",,,
 2176,WORD,WORD_NOUN,,KATAKANA,,,-,イグルー,,iguruu,iglo,,,
 2177,WORD,WORD_NOUN,,HIRAGANA,,,三角,さんかく,,sankaku,trójkąt,,,
 2178,WORD,WORD_NOUN,,HIRAGANA,,,振り仮名,ふりがな,,furigana,furigana,małe pomocnicze czytanie umieszczane tuż obok znaku kanji,,
-2179,WORD,WORD_NOUN,,HIRAGANA,,,水星,すいせい,,suisei,Merkury,planeta,,
+2179,WORD,WORD_NOUN,,HIRAGANA,,,水星,すいせい,,suisei,Merkury,planeta,,4602
 2180,WORD,WORD_NOUN,,KATAKANA,,,-,マーキュリー ,,maakyurii,Merkury,planeta,,
 2181,WORD,WORD_NOUN,,HIRAGANA,,,金星,きんせい,,kinsei,Wenus,planeta,,
 2182,WORD,WORD_NOUN,,KATAKANA,,,-,ビーナス,,biinasu,Wenus,planeta,,
@@ -2929,7 +2930,8 @@ ginekolog",,,
 2324,WORD,WORD_NOUN,,HIRAGANA,,,眼科医,がんかい,,gankai,okulista,,,3674
 2325,WORD,WORD_NOUN,,HIRAGANA,,,歯科,しか,,shika,stomatologia,,,2498
 2326,WORD,WORD_NOUN,,HIRAGANA,,,歯科医,しかい,,shikai,dentysta,,,2598
-2327,WORD,WORD_NOUN,,HIRAGANA,,,耳鼻科,じびか,,jibika,otolaryngologia,,,
+2327,WORD,WORD_NOUN,,HIRAGANA,,,耳鼻科,じびか,,jibika,"otolaryngologia
+laryngologia",,,
 2328,WORD,WORD_NOUN,,HIRAGANA,,,抗生物質,こうせいぶっしつ,,kouseibusshitsu,antybiotyk,,,
 2329,WORD,WORD_NOUN,,KATAKANA,,,-,レントゲン,,rentogen,rentgen,,,
 2330,WORD,WORD_NOUN,,HIRAGANA,,,注射,ちゅうしゃ,,chuusha,infekcja,,,
@@ -4067,8 +4069,10 @@ konstelacja",,,
 3038,WORD,WORD_NOUN,,HIRAGANA,,,星霜,せいそう,,seisou,"lata
 czas",,,
 3039,WORD,WORD_NOUN,,HIRAGANA,,,星図,せいず,,seizu,mapa gwiezdna,,,
-3040,WORD,WORD_NOUN,,HIRAGANA,,,流星,りゅうせい,,ryuusei,kometa,,,
-3041,WORD,WORD_NOUN,,HIRAGANA,,,流れ星,ながれぼし,,nagareboshi,kometa,,,
+3040,WORD,WORD_NOUN,,HIRAGANA,,,流星,りゅうせい,,ryuusei,"meteor
+spadająca gwiazda",,,
+3041,WORD,WORD_NOUN,,HIRAGANA,,,流れ星,ながれぼし,,nagareboshi,"meteor
+spadająca gwiazda",,,
 3042,WORD,WORD_NOUN,,HIRAGANA,,,星占い,ほしうらない,,hoshiuranai,"astrologia
 horoskop",,,
 3043,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,嫌,いや,,iya,"niemiły
@@ -6772,3 +6776,41 @@ przyprowadzać (kogoś)
 towarzyszyć",,,
 4600,WORD,WORD_VERB_U,,HIRAGANA,,,携わる,たずさわる,,tazusawaru,"uczestniczyć
 być zaangażowanym",,,
+4601,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-18,,沸かす,わかす,,wakasu,zagotować wodę,,,
+4602,WORD,WORD_NOUN,,HIRAGANA,,,彗星,すいせい,,suisei,kometa,,,2179
+4603,WORD,WORD_VERB_RU,,HIRAGANA,,,帯びる,おびる,,obiru,"nosić
+przyczepiać (do pasa)
+obejmować
+ogarniać
+przyjmować","np. miecz, dekoracje, ozdoby",,
+4604,WORD,WORD_NOUN,,HIRAGANA,,,地帯,ちたい,,chitai,"obszar
+region
+pas",,,
+4605,WORD,WORD_NOUN,,HIRAGANA,,,熱帯,ねったい,,nettai,strefa tropikalna,,,
+4606,WORD,WORD_NOUN,,HIRAGANA,,,包帯,ほうたい,,houtai,"bandaż
+opaska",,,
+4607,WORD,WORD_NOUN,,HIRAGANA,,,所帯,しょたい,,shotai,domostwo,,,
+4608,WORD,WORD_NOUN,,HIRAGANA,,,中耳,ちゅうじ,,chuuji,ucho wewnętrzne,,,
+4609,WORD,WORD_NOUN,,HIRAGANA,,,耳目,じもく,,jimoku,"ucho i oko
+uwaga",,,
+4610,WORD,WORD_NOUN,,HIRAGANA,,,耳漏,じろう,,jirou,wydzieliny z ucha,,,
+4611,WORD,WORD_NOUN,,HIRAGANA,,,耳輪,みみわ,,mimiwa,kolczyki,,,4612
+4612,WORD,WORD_NOUN,,HIRAGANA,,,耳環,みみわ,,mimiwa,kolczyki,,,4611
+4613,WORD,UNKNOWN,,HIRAGANA,,,雑,ざつ,,zatsu,"zbieranina
+mieszanina
+zbiór",,,
+4614,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,複雑,ふくざつ,,fukuzatsu,skomplikowany,,,
+4615,WORD,WORD_NOUN,,HIRAGANA,,,雑草,ざっそう,,zassou,"chwast
+zielsko",,,
+4616,WORD,WORD_NOUN,,HIRAGANA,,,雑音,ざつおん,,zatsuon,"hałas
+zagłuszenie",,,
+4617,WORD,WORD_NOUN,,HIRAGANA,,,雑感,ざっかん,,zakkan,"rozmaite myśli
+rozmaite wrażenia
+rozmaite uczucia",,,
+4618,WORD,WORD_NOUN,,HIRAGANA,,,日本酒,にほんしゅ,,nihonshu,sake,,,
+4619,WORD,WORD_NOUN,,HIRAGANA,,,酒屋,さかや,,sakaya,sklep monopolowy,,,
+4620,WORD,WORD_NOUN,,HIRAGANA,,,酒飲み,さけのみ,,sakenomi,pijak,,,
+4621,WORD,WORD_NOUN,,HIRAGANA,,,葡萄酒,ぶどうしゅ,,budoushu,wino,,,
+4622,WORD,WORD_NOUN,,HIRAGANA,,,酒造場,しゅぞうじょう,,shuzoujou,"browar
+destylarnia
+gorzelnia",,,
