@@ -184,7 +184,7 @@ obrońca",,,
 157,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,帽子,ぼうし,,boushi,"kapelusz
 czapka",,,
 158,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,本,ほん,,hon,książka,,,1221
-159,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,御手洗,おてあらい,,otearai,toaleta,,,
+159,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,御手洗,おてあらい,,otearai,toaleta,"dosł: miejsce, gdzie myje się ręce",,
 160,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,喫茶店,きっさてん,,kissaten,kawiarnia,,,
 161,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,銀行,ぎんこう,,ginkou,bank,,,
 162,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,図書館,としょかん,,toshokan,biblioteka,w budynku,,
@@ -476,7 +476,9 @@ istnieć","miejsce ni, do rzeczy żywych",,704
 401,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,上,うえ,,ue,na,,,
 402,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,下,した,,shita,pod,,,
 403,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,-,そば,,soba,w pobliżu,,,1327
-404,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,隣,となり,,tonari,obok,,,
+404,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,隣,となり,,tonari,"obok
+po sąsiedzku
+przyległy",,,
 405,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,間,あいだ,,aida,pomiędzy,,,
 406,WORD,WORD_NOUN,,HIRAGANA,Genki 1-4,,お隣さん,おとなりさん,,otonarisan,sąsiad,mniej oficjalnie,,
 407,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,海,うみ,,umi,morze,,,
@@ -1522,7 +1524,8 @@ pragnąć",rzecz ga,,
 1199,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-14,,-,けち,,kechi,skąpy,,,
 1200,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-14,,送る,おくる,,okuru,"wysyłać
 podwieźć (kogoś)
-odprowadzać (kogoś)",,,
+odprowadzać (kogoś)
+podrzucać (kogoś)",,,
 1201,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-14,,似合う,にあう,,niau,pasować,rzecz ga,,
 1202,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-14,を,-,もらう,o,morau,"dostać
 otrzymać","coś, osoba ni rzecz",NO,
@@ -5144,7 +5147,7 @@ być ustalonym",,,
 ustalać
 zakładać",,,
 3634,WORD,WORD_NOUN,,HIRAGANA,,,定義,ていぎ,,teigi,definicja,,,
-3635,WORD,WORD_NOUN,,HIRAGANA,,,定年,ていねん,,teinen,wiek emerytalny,,,
+3635,WORD,WORD_NOUN,,HIRAGANA,,,定年,ていねん,,teinen,wiek emerytalny,,,4628
 3636,WORD,WORD_NOUN,,HIRAGANA,,,定休,ていきゅう,,teikyuu,"regularne wakacje
 ustalona przerwa",,,
 3637,WORD,WORD_NOUN,,HIRAGANA,,,定住地,ていじゅうち,,teijuuchi,miejsce stałego zamieszkania,,,
@@ -5652,7 +5655,7 @@ przyjmować",,NO,
 3943,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,職業,しょくぎょう,,shokugyou,"zawód
 zatrudnienie",,,
 3944,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,産業,さんぎょう,,sangyou,przemysł,,NO,
-3945,KANJI,WORD_NOUN,,KATAKANA_HIRAGANA,Genki kanji 2-18,,サービズ業,サービズぎょう,,saabizu gyou,przemysł usługowy,,,
+3945,KANJI,WORD_NOUN,,KATAKANA_HIRAGANA,Genki kanji 2-18,,サービス業,サービスぎょう,,saabisu gyou,przemysł usługowy,,,
 3946,KANJI,WORD_NOUN,,HIRAGANA,,,農業,のうぎょう,,nougyou,przemysł rolniczy,,,
 3947,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,試験,しけん,,shiken,egzamin,,NO,
 3948,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,試合,しあい,,shiai,"mecz
@@ -6821,3 +6824,13 @@ gorzelnia",,,
 usypiać",,,
 4624,WORD,WORD_NOUN,,HIRAGANA,,,眠り,ねむり,,nemuri,sen,,,
 4625,WORD,WORD_NOUN,,HIRAGANA,,,睡眠,すいみん,,suimin,sen,,,
+4626,WORD,WORD_NOUN,,HIRAGANA,,,僧,そう,,sou,"mnich
+kapłan (buddyjski)",,,
+4627,WORD,WORD_NOUN,,HIRAGANA,,,停止,ていし,,teishi,"odwołanie
+zawieszenie",,,
+4628,WORD,WORD_NOUN,,HIRAGANA,,,停年,ていねん,,teinen,wiek emerytalny,,,3635
+4629,WORD,WORD_NOUN,,HIRAGANA,,,停職,ていしょく,,teishoku,zwolnienie z pracy,,,
+4630,WORD,WORD_NOUN,,HIRAGANA,,,停電,ていでん,,teiden,przerwa w dopływie prądu,,,
+4631,WORD,WORD_VERB_U,,HIRAGANA,,,撮む,つまむ,,tsumamu,"szczypać
+zrywać",,,
+4632,WORD,WORD_VERB_U,,HIRAGANA,,,隣る,となる,,tonaru,sąsiadować,,,
