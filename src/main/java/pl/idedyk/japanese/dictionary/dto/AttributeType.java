@@ -10,5 +10,7 @@ public enum AttributeType {
 	
 	VERB_KEIGO_HIGH,
 	
+	VERB_KEIGO_LOW,
+	
 	COMMON_WORD;
 }

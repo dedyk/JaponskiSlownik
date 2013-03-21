@@ -97,7 +97,8 @@ bardzo miło mi",kierowane do osoby wyżej postawionej,,
 75,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,午前,ごぜん,,gozen,am,czas,,
 76,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,歳,さい,,sai,... lat,,,2706
 77,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,-,さん,,san,... Pan,,,4
-78,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,時,じ,,ji,... godzina,,,370
+78,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,時,じ,,ji,... godzina,,,"370
+4659"
 79,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,人,じん,,jin,... człowiek,,,"297
 651"
 80,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,先生,せんせい,,sensei,nauczyciel,,,
@@ -1314,7 +1315,8 @@ rozpogadzać się",czasownik,,
 1047,WORD,WORD_NOUN,,HIRAGANA,,,書類,しょるい,,shorui,dokument,,,
 1048,WORD,WORD_NOUN,,HIRAGANA,,,会談,かいだん,,kaidan,konferencja,,,866
 1049,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,重い,おもい,,omoi,"ciężki
-masywny",,,
+masywny
+poważny",,,
 1050,WORD,WORD_NOUN,,HIRAGANA,,,桜,さくら,,sakura,kwiat wiśni,,,
 1051,WORD,WORD_NOUN,,HIRAGANA,,,花見,はなみ,,hanami,"oglądanie kwiatów
 festiwal wiosny",,,
@@ -2151,7 +2153,7 @@ godzina",okres,,"368
 dialog",,,
 1721,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,少し,すこし,,sukoshi,mało,,,
 1722,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 1-9,,少ない,すくない,,sukunai,trochę,,,
-1723,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,少々,しょうしょう,,shoushou,trochę,,,
+1723,KANJI,WORD_EXPRESSION,,HIRAGANA,Genki kanji 1-9,,少々,しょうしょう,,shoushou,trochę,grzecznie,,
 1724,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 1-9,,古い,ふるい,,furui,stary,do przedmiotów,NO,
 1725,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,中古,ちゅうこ,,chuuko,używany,,,
 1726,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-9,,知る,しる,,shiru,wiedzieć,,NO,
@@ -3247,7 +3249,7 @@ w czasie",,,
 2527,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-15,,平和公園,へいわこうえん,,heiwa kouen,Park Pokoju,w Hiroszimie,,
 2528,WORD,WORD_NOUN,,KATAKANA,,,-,シカゴ,,shikago,Chicago,,,
 2529,WORD,WORD_NOUN,,HIRAGANA,Genki 2-16,,駅員,えきいん,,ekiin,pracownik stacji,kolejowej,,
-2530,WORD,WORD_NOUN,,HIRAGANA,Genki 2-16,,親,おや,,oya,rodzice,mniej formalnie,,
+2530,WORD,WORD_NOUN,,HIRAGANA,Genki 2-16,,親,おや,,oya,rodzice,mniej formalnie,,4692
 2531,WORD,WORD_NOUN,,HIRAGANA,Genki 2-16,,-,ごみ,,gomi,śmieci,,NO,
 2532,WORD,WORD_NOUN,,HIRAGANA,Genki 2-16,,砂糖,さとう,,satou,cukier,,NO,
 2533,WORD,WORD_NOUN,,HIRAGANA,Genki 2-16,,奨学金,しょうがくきん,,shougakukin,stypendium,,,
@@ -3309,8 +3311,8 @@ poprzednim razem
 poprzednio",,,
 2565,WORD,UNKNOWN,,HIRAGANA,Genki 2-16,,-,このぐらい,,kono gurai,mniej więcej tyle,,,
 2566,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-16,,-,ごめん,,gomen,przepraszam,mowa potoczna,,
-2567,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-16,,失礼します,しつれいします,,shitsurei shimasu,"przepraszam
-przepraszam, że przerywam","używa się do tego, co robimy, np. wchodzenie do pokoju",,
+2567,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-16,,失礼します,しつれいします,,shitsurei shimasu,"przepraszam, że przeszkadzam
+przepraszam, że przerywam","używa się do tego, co robimy, np. podczas wchodzenia do pokoju",,
 2568,WORD,UNKNOWN,,HIRAGANA,Genki 2-16,,自分で,じぶんで,,jibun de,"sam
 samodzielnie",robić coś,,
 2569,WORD,UNKNOWN,,HIRAGANA,Genki 2-16,,授業中に,じゅぎょうちゅうに,,jugyou chuu ni,"w klasie
@@ -3494,7 +3496,7 @@ np.",,NO,
 2680,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,-,すると,,suruto,"... wtedy, ...",,,
 2681,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,場所,ばしょ,,basho,"miejsce
 miejsce w świecie (do osób)",fizyczne,NO,
-2682,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,-,また,,mata,"znów
+2682,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-16,,-,また,,mata,"znów
 znowu
 dodatkowo",,,
 2683,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-16,,弱い,よわい,,yowai,"słaby
@@ -3557,10 +3559,11 @@ grzyby",,,
 2714,WORD,WORD_NOUN,,HIRAGANA,,,学名,がくめい,,gakumei,naukowa (międzynarodowa) nazwa,,,
 2715,WORD,UNKNOWN,,HIRAGANA,,,様,さま,,sama,"szanowny pan
 szanowna pani",przyrostek honoryfikatywny,,
-2716,WORD,WORD_NOUN,,HIRAGANA,,,矢,や,,ya,strzała,,,
+2716,WORD,WORD_NOUN,,HIRAGANA,,,矢,や,,ya,strzała,,,4670
 2717,WORD,WORD_NOUN,,HIRAGANA,,,宇宙,うちゅう,,uchuu,"wszechświat
 kosmos",,,
-2718,WORD,WORD_NOUN,,HIRAGANA,,,宇宙人,うちゅうじん,,uchuu jin,kosmita,,,
+2718,WORD,WORD_NOUN,,HIRAGANA,,,宇宙人,うちゅうじん,,uchuu jin,"kosmita
+obcy",,,
 2719,WORD,WORD_NOUN,,KATAKANA,,,-,ヘッドフォン,,heddo fon,słuchawki,,,
 2720,WORD,WORD_NOUN,,KATAKANA,,,-,トラクター ,,torakutaa,"traktor
 ciągnik rolniczy",,,
@@ -4978,6 +4981,7 @@ wiara
 poleganie na",,,
 3544,WORD,WORD_NOUN,,HIRAGANA,,,信号,しんごう,,shingou,"semafor
 sygnalizacja świetlna
+światła drogowe
 sygnał",,,
 3545,WORD,WORD_VERB_U,,HIRAGANA,,,背く,そむく,,somuku,"przeciwstawiać się
 być przeciwko
@@ -5102,7 +5106,7 @@ z całej mocy",,,
 3608,WORD,WORD_NOUN,,HIRAGANA,,,力持ち,ちからもち,,chikaramochi,"siłacz
 silny człowiek",,,
 3609,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,が,曲がる,まがる,ga,magaru,"skręcać się
-zginać się",,,
+zginać się",róg o kierunek ni,,
 3610,WORD,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,を,曲げる,まげる,o,mageru,"zakręcać
 zginać",,,
 3611,WORD,WORD_NOUN,,HIRAGANA,,,作曲,さっきょく,,sakkyoku,"utwór muzyczny
@@ -5201,7 +5205,7 @@ wezwanie",,,
 3665,WORD,WORD_NOUN,,HIRAGANA,,,招集,しょうしゅう,,shoushuu,zaproszenie dla grupy ludzi,,,
 3666,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,折る,おる,,oru,"łamać
 zginać
-skręcać",,,
+skręcać",,,4677
 3667,WORD,WORD_NOUN,,HIRAGANA,,,骨折,こっせつ,,kossetsu,złamanie kości,,,
 3668,WORD,WORD_NOUN,,HIRAGANA,,,折半,せっぱん,,seppan,dzielić na połowy,,,
 3669,WORD,WORD_NOUN,,HIRAGANA,,,曲折,きょくせつ,,kyokusetsu,komplikacje,,,
@@ -5965,7 +5969,8 @@ ochrona",,,
 homilia",,,
 4124,WORD,WORD_NOUN,,HIRAGANA,,,説得,せっとく,,settoku,przekonywanie,,,
 4125,WORD,WORD_NOUN,,HIRAGANA,,,小説,しょうせつ,,shousetsu,"nowela
-krótkie opowiadanie",,,
+krótkie opowiadanie
+powieść",,,
 4126,WORD,WORD_NOUN,,HIRAGANA,,,演説,えんぜつ,,enzetsu,przemówienie,,,
 4127,WORD,WORD_VERB_U,,HIRAGANA,,,保つ,たもつ,,tamotsu,"zachowywać
 utrzymywać
@@ -6332,7 +6337,8 @@ przystępować do egzaminu",,NO,
 4336,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,に,申し込む,もうしこむ,ni,moushikomu,aplikować,,,
 4337,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-19,,-,もしたら,,moshi tara,jeżeli,moshi ~ tara,,
 4338,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-19,,質問,しつもん,,shitsumon,pytanie,,NO,
-4339,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,申し訳ありません,もうしわけありません,,moushiwake arimasen,bardzo przepraszam,,,
+4339,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,申し訳ありません,もうしわけありません,,moushiwake arimasen,"bardzo przepraszam
+nic mnie nie tłumaczy",grzecznie,,
 4340,WORD,WORD_GREETING,,HIRAGANA,Genki dodatkowe 2-19,,どうぞよろしくお願いします,どうぞよろしくおねがいします,,douzo yoroshiku onegai shimasu,"miło Cię spotkać
 bardzo miło mi",kierowane do osoby wyżej postawionej,NO,
 4341,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,明けましておめでとうございます,あけましておめでとうございます,,akemashite omedetou gozaimasu,Szczęśliwego Nowego Roku,dosł. gratulację za rozpoczęcie nowego (jasnego) roku,,
@@ -6355,8 +6361,7 @@ pakować
 wkładać
 skupiać
 napełniać",,,
-4354,WORD,WORD_VERB_U,,HIRAGANA,,,申す,もうす,,mousu,"mówić
-mieć zaszczyt",,,
+4354,WORD,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,,,申す,もうす,,mousu,[modestywna forma od iu],,,
 4355,WORD,WORD_NOUN,,HIRAGANA,,,申込,もうしこみ,,moushikomi,"podanie
 wniosek",,,"4356
 4357"
@@ -6873,3 +6878,76 @@ zimna pogoda",,,4648
 chłód",,,
 4651,WORD,WORD_NOUN,,HIRAGANA,,,寒風,かんぷう,,kanpuu,"zimny wiatr
 mroźny wiatr",,,
+4652,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,-,あちら,,achira,tam,"uprzejmie, grzecznie",,
+4653,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,宇宙人,うちゅうじん,,uchuujin,"kosmita
+obcy",,NO,
+4654,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,音,おと,,oto,dźwięk,,NO,
+4655,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,係の者,かかりのもの,,kakari no mono,osoba odpowiedzialna,,,
+4656,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,角,かど,,kado,róg,,NO,
+4657,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,神様,かみさま,,kamisama,bóg,,NO,
+4658,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,空港,くうこう,,kuukou,lotnisko,,NO,
+4659,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,字,じ,,ji,"litera
+znak",,,78
+4660,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,支店,してん,,shiten,oddział,,,
+4661,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,趣味,しゅみ,,shumi,hobby,,NO,
+4662,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,小説,しょうせつ,,shousetsu,"nowela
+krótkie opowiadanie
+powieść",,NO,
+4663,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,信号,しんごう,,shingou,"semafor
+sygnalizacja świetlna
+światła drogowe
+sygnał",,NO,
+4664,WORD,WORD_NOUN,,KATAKANA,Genki 2-20,,-,スニーカー,,suniikaa,tenisówki,,,
+4665,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,扇子,せんす,,sensu,wachlarz,składany,,
+4666,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,団扇,うちわ,,uchiwa,wachlarz,w kształcie liścia,,
+4667,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,扇風機,せんぷうき,,senpuuki,wentylator,,,
+4668,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,月,つき,,tsuki,księżyc,,NO,
+4669,WORD,WORD_NOUN,,KATAKANA,Genki 2-20,,-,ハイヒール,,haihiiru,buty na wysokich obcasach,,,
+4670,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,屋,や,,ya,sklep,"~, postfiks",,2716
+4671,WORD,WORD_NOUN,,HIRAGANA,Genki 2-20,,-,ゆうべ,,yuube,wczoraj wieczorem,,,
+4672,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-20,,重い,おもい,,omoi,"ciężki
+masywny
+poważny",,NO,
+4673,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-20,,歩く,あるく,,aruku,chodzić,,NO,
+4674,WORD,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,致す,いたす,,itasu,[modestywna forma od suru],,,
+4675,WORD,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,頂く,いただく,,itadaku,"[modestywna forma od taberu, nomu, morau]",,,
+4676,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-20,,伺う,うかがう,,ukagau,"odwiedzać
+pytać","kogoś, grzecznie",,
+4677,WORD,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,-,おる,,oru,[modestywna forma od iru],,,3666
+4678,WORD,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,-,ござる,,gozaru,[modestywna forma od aru],,,
+4679,WORD,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,-,ておる,,te oru,[modestywna forma od te iru],,,
+4680,WORD,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,-,でござる,,de gozaru,[modestywna forma od desu],,,
+4681,WORD,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,参る,まいる,,mairu,"[modestywna forma od iku, kuru]",,,
+4682,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-20,,曲がる,まがる,,magaru,"skręcać się
+zginać się",róg o kierunek ni,NO,
+4683,WORD,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,申す,もうす,,mousu,[modestywna forma od iu],,NO,
+4684,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-20,,戻る,もどる,,modoru,"wracać
+być zawróconym",,NO,
+4685,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-20,が,聞こえる,きこえる,ga,kikoeru,być słyszalnym,,,
+4686,WORD,WORD_VERB_RU,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,差し上げる,さしあげる,,sashiageru,[modestywna forma od ageru],,,
+4687,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-20,,伝える,つたえる,,tsutaeru,przekazywać,wiadomość,,
+4688,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-20,,待たせる,またせる,,mataseru,kazać komuś czekać,,,
+4689,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-20,,交換する,こうかんする,,koukan suru,wymieniać się,"o czym, to z kimś",,
+4690,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-20,,生活する,せいかつする,,seikatsu suru,żyć,,,
+4691,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-20,,返品する,へんぴんする,,henpin suru,zwracać,,,
+4692,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,おや,,oya,O!,,,2530
+4693,WORD,WORD_COUNTERS,,HIRAGANA,Genki 2-20,,階,かい,,kai,numer piętra,liczba +,NO,
+4694,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,かしこまりました,,kashikomarimashita,rozumiem,,,
+4695,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,さあ,,saa,nie jestem pewny,,,
+4696,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,失礼します,しつれいします,,shitsurei shimasu,"przepraszam, że przeszkadzam
+przepraszam, że przerywam","używa się do tego, co robimy, np. podczas wchodzenia do pokoju",NO,
+4697,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,失礼しました,しつれいしました,,shitsurei shimashita,"przepraszam, że przeszkadzałem
+przepraszam, że przerwałem","używa się do tego, co robimy, np. podczas wychodzenia z pokoju",,
+4698,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,少々,しょうしょう,,shoushou,trochę,grzecznie,NO,
+4699,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,それでわ,,soredewa,"jeśli tak
+w takim razie",,,
+4700,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,できれば,,dekireba,"w miarę możliwości
+jeśli jest możliwe",,,
+4701,WORD,WORD_ADVERB,,HIRAGANA,Genki 2-20,,誠に,まことに,,makotoni,na prawdę,grzecznie,,
+4702,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,また,,mata,"znów
+znowu
+dodatkowo",,NO,
+4703,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,みたいな,,mitai na,"wygląda jak, ...",... X,,
+4704,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,申し訳ありません,もうしわけありません,,moushiwake arimasen,"bardzo przepraszam
+nic mnie nie tłumaczy",grzecznie,NO,
+4705,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,よろしかったら,,yoroshikattara,proszę o dobre traktowanie,grzecznie,,
