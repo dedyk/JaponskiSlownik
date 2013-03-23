@@ -287,7 +287,7 @@ public class KanaHelper {
 		
 		katakanaEntries.add(new KanaEntry("ダ", "da"));
 		katakanaEntries.add(new KanaEntry("ヂ", "di"));
-		katakanaEntries.add(new KanaEntry("づ", "du"));
+		katakanaEntries.add(new KanaEntry("ヅ", "du")); 
 		katakanaEntries.add(new KanaEntry("デ", "de"));
 		katakanaEntries.add(new KanaEntry("ド", "do"));
 		
