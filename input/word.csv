@@ -588,7 +588,7 @@ starsza kobieta","spoza swojej rodziny lub własna rodzina, nieformalnie",,
 485,WORD,WORD_NOUN,,KATAKANA,Genki 1-6,,-,テレビゲーム,,terebi geemu,gra telewizyjna,,,
 486,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,電気,でんき,,denki,"elektryczność
 prąd
-światło",,,
+światło",,,4753
 487,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,電車,でんしゃ,,densha,pociąg,,NO,
 488,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,荷物,にもつ,,nimotsu,bagaż,,,
 489,WORD,WORD_NOUN,,KATAKANA,Genki 1-6,,-,ページ,,peeji,strona,,,
@@ -640,7 +640,8 @@ Genki 2-18",を,閉める,しめる,o,shimeru,zamykać,,,
 515,WORD,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,"Genki 1-6
 Genki 2-18",を,-,つける,o,tsukeru,włączać,,,3562
 516,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-6,,電話をかける,でんわをかける,,denwa o kakeru,dzwonić,osoba ni,,
-517,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-6,を,忘れる,わすれる,o,wasureru,zapomnieć,,,
+517,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-6,を,忘れる,わすれる,o,wasureru,"zapomnieć
+zapominać",,,
 518,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-6,を,連れてくる,つれてくる,o,tsurete kuru,przyprowadzać,,,
 519,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-6,を,持ってくる,もってくる,o,motte kuru,przynosić,,NO,
 520,WORD,UNKNOWN,,HIRAGANA,Genki 1-6,,後で,あとで,,atode,później,,,
@@ -718,7 +719,9 @@ ręka",,,
 569,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,-,おしり,,oshiri,pośladek,,,
 570,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,顔,かお,,kao,twarz,,NO,
 571,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,肩,かた,,kata,ramię,,,
-572,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,胸,むね,,mune,klatka piersiowa,,,
+572,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,胸,むね,,mune,"klatka piersiowa
+piersi
+serce",,,
 573,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,お腹,おなか,,onaka,brzuch,,,
 574,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,足,あし,,ashi,"noga
 stopa",,,
@@ -6931,7 +6934,9 @@ zginać się",róg o kierunek ni,NO,
 być zawróconym",,NO,
 4685,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-20,が,聞こえる,きこえる,ga,kikoeru,być słyszalnym,,,
 4686,WORD,WORD_VERB_RU,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,差し上げる,さしあげる,,sashiageru,[modestywna forma od ageru],,,
-4687,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-20,,伝える,つたえる,,tsutaeru,przekazywać,wiadomość,,
+4687,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-20,,伝える,つたえる,,tsutaeru,"przekazywać
+składać raport
+składać sprawozdanie",wiadomość,,
 4688,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-20,,待たせる,またせる,,mataseru,kazać komuś czekać,,,
 4689,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-20,,交換する,こうかんする,,koukan suru,wymieniać się,"o czym, to z kimś",,
 4690,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-20,,生活する,せいかつする,,seikatsu suru,żyć,,,
@@ -7031,3 +7036,49 @@ wesołe miasteczko",,,
 4747,WORD,WORD_NOUN,,HIRAGANA,,,遊興,ゆうきょう,,yuukyou,"szukanie przyjemności
 rozrywka",,,
 4748,WORD,WORD_NOUN,,HIRAGANA,,,遊星,ゆうせい,,yuusei,planeta,,,
+4749,WORD,WORD_VERB_U,,HIRAGANA,,,吸う,すう,,suu,"wdychać
+ssać
+popijać (małymi łykami)",,,
+4750,WORD,WORD_VERB_U,,HIRAGANA,,,伝う,つたう,,tsutau,iść za,,,
+4751,WORD,WORD_NOUN,,HIRAGANA,,,伝統,でんとう,,dentou,"tradycja
+zwyczaj",,,
+4752,WORD,WORD_NOUN,,HIRAGANA,,,伝説,でんせつ,,densetsu,"legenda
+podanie",,,
+4753,WORD,WORD_NOUN,,HIRAGANA,,,伝記,でんき,,denki,biografia,,,486
+4754,WORD,WORD_NOUN,,HIRAGANA,,,伝送,でんそう,,densou,"obieg
+propaganda
+przekazywanie
+komunikacja
+dostawa",,,
+4755,WORD,WORD_NOUN,,HIRAGANA,,,伝染病,でんせんびょう,,densenbyou,choroba zakaźna,,,
+4756,WORD,WORD_VERB_RU,,HIRAGANA,,を,閉じる,とじる,o,tojiru,zamykać,,,
+4757,WORD,WORD_VERB_U,,HIRAGANA,,を,閉ざす,とざす,o,tozasu,zamykać,,,
+,,WORD_VERB_RU,,HIRAGANA,,,構える,かまえる,,kamaeru,"budować
+konstruować
+przyjmować pozycję
+przyjmować postawę",,,
+,,WORD_VERB_U,,HIRAGANA,,,構う,かまう,,kamau,"troszczyć się
+przejmować się
+wtrącać się",,,
+,,WORD_NOUN,,HIRAGANA,,,構成,こうせい,,kousei,"kompozycja
+struktura
+skład",,,
+,,WORD_NOUN,,HIRAGANA,,,機構,きこう,,kikou,"mechanizm
+struktura
+organizacja
+organ",np. władzy,,
+,,WORD_NOUN,,HIRAGANA,,,心構え,こころがまえ,,kokoro ga mae,"nastawienie psychiczne
+gotowość",,,
+,,WORD_NOUN,,HIRAGANA,,,構造,こうぞう,,kouzou,"konstrukcja
+struktura
+organizacja",,,
+,,WORD_NOUN,,HIRAGANA,,,構図,こうず,,kouzu,"plan
+projekt
+kompozycja",,,
+,,WORD_NOUN,,HIRAGANA,,,鼻水,はなみず,,hanamizu,"smark
+gil",,,
+,,WORD_NOUN,,HIRAGANA,,,鼻先,はなさき,,hanasaki,czubek nosa,,,
+,,WORD_ADJECTIVE_I,,HIRAGANA,,,鼻が高い,はながたかい,,hana ga takai,"bycie dumnym
+bycie pysznym",,,
+,,WORD_NOUN,,HIRAGANA,,,後妻,ごさい,,gosai,druga żona,,,
+,,WORD_NOUN,,HIRAGANA,,,妻帯者,さいたいしゃ,,saitaisha,żonaty,,,
