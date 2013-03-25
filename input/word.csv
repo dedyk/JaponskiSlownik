@@ -63,8 +63,8 @@ hachifun",osiem minut,,,
 46,WORD,WORD_AGE,,HIRAGANA,Genki 1-1,,十一歳,じゅういっさい,,juuissai,jedenaście lat,wiek,,
 47,WORD,WORD_AGE,,HIRAGANA,Genki 1-1,,二十歳,はたち,,hatachi,dwadzieścia lat,wiek,,
 48,WORD,WORD_GREETING,,HIRAGANA,Genki 1-1,,お早う御座います,おはようございます,,ohayou gozaimasu,dzień dobry,rano (grzecznie),,
-49,WORD,WORD_GREETING,,HIRAGANA,Genki 1-1,,-,こんにちわ,,konnichiwa,dzień dobry,po południu,,
-50,WORD,WORD_GREETING,,HIRAGANA,Genki 1-1,,-,こんばんわ,,konbanwa,dobry wieczór,,,
+49,WORD,WORD_GREETING,,HIRAGANA_EXCEPTION,Genki 1-1,,-,こんにちは,,konnichiwa,dzień dobry,po południu,,
+50,WORD,WORD_GREETING,,HIRAGANA_EXCEPTION,Genki 1-1,,-,こんばんは,,konbanwa,dobry wieczór,,,
 51,WORD,WORD_GREETING,,HIRAGANA,Genki 1-1,,-,さようなら,,sayounara,do widzenia,,,
 52,WORD,WORD_GREETING,,HIRAGANA,Genki 1-1,,お休みなさい,おやすみなさい,,oyasuminasai,dobranoc,,,
 53,WORD,WORD_GREETING,,HIRAGANA,Genki 1-1,,有難う,ありがとう,,arigatou,dziękuję,,,
@@ -475,8 +475,12 @@ istnieć","miejsce ni, do rzeczy żywych",,704
 400,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,中,なか,,naka,środek,,,"974
 1368
 1369"
-401,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,上,うえ,,ue,na,,,
-402,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,下,した,,shita,pod,,,
+401,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,上,うえ,,ue,"na
+góra
+górna część",,,
+402,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,下,した,,shita,"pod
+dół
+dolna część",,,
 403,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,-,そば,,soba,w pobliżu,,,1327
 404,WORD,WORD_LOCATION,,HIRAGANA,Genki 1-4,,隣,となり,,tonari,"obok
 po sąsiedzku
@@ -774,7 +778,7 @@ starsza kobieta","spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
 614,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,家族,かぞく,,kazoku,rodzina,,,
 615,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,国,くに,,kuni,kraj,,,
 616,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,車,くるま,,kuruma,samochód,,,
-617,WORD,WORD_NOUN,,KATAKANA,Genki 1-7,,-,コンビニ,,konbini,kombini,,,
+617,WORD,WORD_NOUN,,KATAKANA,Genki 1-7,,-,コンビニ,,konbini,kombini,Rodzaj japońskich sklepów całodobowych,,
 618,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,食堂,しょくどう,,shokudou,"stołówka
 jadalnia",,,
 619,WORD,WORD_NOUN,,KATAKANA,Genki 1-7,,-,ティシェツ,,tishetsu,t-shirt,,,
@@ -1923,10 +1927,14 @@ dziennik",,NO,
 1508,KANJI,WORD_DAY_WEEK,,HIRAGANA,Genki kanji 1-4,,土曜日,どようび,,doyoubi,sobota,ziemia,NO,
 1509,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,土,つち,,tsuchi,ziemia,,,
 1510,KANJI,WORD_DAY_WEEK,,HIRAGANA,Genki kanji 1-4,,日曜日,にちようび,,nichiyoubi,niedziela,słońce,NO,
-1511,KANJI,WORD_LOCATION,,HIRAGANA,Genki kanji 1-4,,上,うえ,,ue,na,,NO,
+1511,KANJI,WORD_LOCATION,,HIRAGANA,Genki kanji 1-4,,上,うえ,,ue,"na
+góra
+górna część",,NO,
 1512,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-4,が,上手,じょうず,ga,jouzu,dobry w,,NO,
 1513,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,屋上,おくじょう,,okujou,dach,,,
-1514,KANJI,WORD_LOCATION,,HIRAGANA,Genki kanji 1-4,,下,した,,shita,pod,,NO,
+1514,KANJI,WORD_LOCATION,,HIRAGANA,Genki kanji 1-4,,下,した,,shita,"pod
+dół
+dolna część",,NO,
 1515,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,地下鉄,ちかてつ,,chikatetsu,metro,,NO,
 1516,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-4,が,下手,へた,ga,heta,słaby w,,NO,
 1517,KANJI,WORD_LOCATION,,HIRAGANA,Genki kanji 1-4,,中,なか,,naka,środek,,NO,
@@ -7123,3 +7131,4 @@ dochód",,,
 wykorzystywać",,,
 4789,WORD,WORD_NOUN,,HIRAGANA,,,利息,りそく,,risoku,"odsetki
 procent",,,
+4790,WORD,WORD_NOUN,,HIRAGANA,,,帰省,きせい,,kisei,wracać do domu,,,

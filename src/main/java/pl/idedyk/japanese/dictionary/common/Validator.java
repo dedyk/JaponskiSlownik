@@ -220,6 +220,8 @@ public class Validator {
 			return null;
 		} else if (wordType == WordType.KATAKANA_HIRAGANA) {
 			return null;
+		} else if (wordType == WordType.HIRAGANA_EXCEPTION) { 
+			return null;
 		} else {
 			throw new RuntimeException("Bad word type");
 		}
