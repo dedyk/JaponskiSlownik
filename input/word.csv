@@ -113,7 +113,8 @@ bardzo miło mi",kierowane do osoby wyżej postawionej,,
 nani",co,,,
 88,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,日本,にほん,,nihon,Japonia,,,1259
 89,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,年生,ねんせい,,nensei,... student roku,,,
-90,WORD,WORD_GREETING,,HIRAGANA,Genki 1-1,,-,はい,,hai,tak,oficjalnie,,1027
+90,WORD,WORD_GREETING,,HIRAGANA,Genki 1-1,,-,はい,,hai,tak,oficjalnie,,"1027
+4817"
 91,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,番号,ばんごう,,bangou,numer,,,
 92,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,留学生,りゅうがくせい,,ryuugakusei,student międzynarodowy,,,
 93,WORD,WORD_PRONOUN,,HIRAGANA,Genki 1-1,,私,わたし,,watashi,ja,,,1102
@@ -916,7 +917,8 @@ niestety
 trudno
 szkoda",... desu ne,,
 720,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,-,まだ,,mada,jeszcze nie,+ czasownik w formie te negatywnej,,
-721,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,皆,みんな,,minna,wszyscy,,,
+721,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-8,,皆,みんな,,minna,"wszyscy
+wszystko",,,4819
 722,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,何か,なにか,,nanika,coś,nanika [partykuła],NO,
 723,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,-,だれか,,dareka,ktoś,"dareka [partykuła], do osób",,
 724,WORD,UNKNOWN,,HIRAGANA,Genki 1-8,,-,どれか,,doreka,któryś,"doreka [partykuła], który",,
@@ -985,7 +987,8 @@ Genki 2-18",を,出る,でる,o,deru,wychodzić z,,,"771
 775,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,から,,kara,od,"miejsce, czasu",NO,522
 776,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,是非,ぜひ,,zehi,koniecznie,,,
 777,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,ところで,,tokorode,przy okazji,,,
-778,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,皆,みんな,,minna,wszyscy,,NO,
+778,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-9,,皆,みんな,,minna,"wszyscy
+wszystko",,NO,
 779,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,もう,,mou,już,,,
 780,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,まだ,,mada,jeszcze nie,+ czasownik w formie te negatywnej,NO,
 781,WORD,WORD_COUNTERS,,HIRAGANA,Genki 1-9,,一つ,ひとつ,,hitotsu,jeden,klasyfikator ogólny,,
@@ -1280,8 +1283,9 @@ okazja",,,
 mieć sucho w gardle",,,
 1009,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,渇く,かわく,,kawaku,"wyschnąć
 schnąć
-być spragnionym",,,
-1010,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,渇かす,かわかす,,kawakasu,suszyć,,,
+być spragnionym
+czuć pragnienie",,,4815
+1010,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,乾かす,かわかす,,kawakasu,suszyć,,,
 1011,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-12,,せきが出る,せきがでる,,seki ga deru,kasłać,,,
 1012,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-12,と,別れる,わかれる,to,wakareru,"rozdzielać
 rozwodzić się
@@ -1305,7 +1309,8 @@ za parę chwil/dni",,,
 1026,WORD,WORD_VERB_U,,HIRAGANA,,,転ぶ,ころぶ,,korobu,"upaść
 upadać
 przewrócić się",,,
-1027,WORD,WORD_NOUN,,HIRAGANA,,,灰,はい,,hai,popiół,,,90
+1027,WORD,WORD_NOUN,,HIRAGANA,,,灰,はい,,hai,popiół,,,"90
+4817"
 1028,WORD,UNKNOWN,,HIRAGANA,,,欲張り,よくばり,,yokubari,chciwość,,,
 1029,WORD,WORD_VERB_RU,,HIRAGANA,,,枯れる,かれる,,kareru,uschnąć,,,
 1030,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-11,,募集,ぼしゅう,,boshuu,rekrutacja,"~, szukanie ...",,
@@ -1321,7 +1326,8 @@ narzeczona",,NO,
 uroczystość
 święto",,,
 1039,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-11,,お返事,おへんじ,,ohenji,odpowiedź,,,
-1040,WORD,UNKNOWN,,HIRAGANA,Genki 1-12,,方,ほう,,hou,kierunek,,,4734
+1040,WORD,UNKNOWN,,HIRAGANA,Genki 1-12,,方,ほう,,hou,kierunek,,,"4734
+4806"
 1041,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 1-12,,晴れる,はれる,,hareru,"słoneczna pogoda
 rozpogadzać się",czasownik,,
 1042,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,雲,くも,,kumo,chmura,,,2572
@@ -2527,7 +2533,8 @@ potwór",,,
 2005,WORD,WORD_NOUN,,HIRAGANA,,,提案,ていあん,,teian,"sugestia
 rada
 propozycja",,,
-2006,WORD,WORD_NOUN,,HIRAGANA,,,情報,じょうほう,,jouhou,informacja,,,
+2006,WORD,WORD_NOUN,,HIRAGANA,,,情報,じょうほう,,jouhou,"informacja
+wiadomość",,,
 2007,WORD,WORD_NOUN,,HIRAGANA,,,光,ひかり,,hikari,"światło
 blask
 promień",,,
@@ -2628,7 +2635,9 @@ dzień świąteczny",,,
 2072,WORD,WORD_NOUN,,KATAKANA,,,-,ブラジル,,burajiru,Brazylia,,,
 2073,WORD,WORD_NOUN,,KATAKANA,,,-,ニュージーランド,,nyuujiirando,Nowa Zelandia,,,
 2074,WORD,WORD_NOUN,,KATAKANA,,,-,チベット,,chibetto,Tybet,,,
-2075,WORD,WORD_VERB_U,,HIRAGANA,,,干す,ほす,,hosu,suszyć,,,
+2075,WORD,WORD_VERB_U,,HIRAGANA,,,干す,ほす,,hosu,"suszyć
+wykręcać
+wypijać",,,4814
 2076,WORD,WORD_NOUN,,HIRAGANA,,,梅干し,うめぼし,,umeboshi,suszona śliwka,japońska potrawa,,
 2077,WORD,WORD_VERB_RU,,HIRAGANA,,,換える,かえる,,kaeru,"wymieniać
 zamieniać
@@ -7037,7 +7046,8 @@ kurs",,,
 4732,WORD,WORD_NOUN,,HIRAGANA,,,航空券,こうくうけん,,koukuuken,bilet lotniczy,,,
 4733,WORD,WORD_NOUN,,HIRAGANA,,,封,ふう,,fuu,pieczęć,,,4734
 4734,WORD,WORD_NOUN,,HIRAGANA,,,封,ほう,,hou,lenno,,,"1040
-4733"
+4733
+4806"
 4735,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,速やか,すみやか,,sumiyaka,"szybki
 prędki",,,
 4736,WORD,WORD_NOUN,,HIRAGANA,,,速度,そくど,,sokudo,prędkość,,,
@@ -7175,3 +7185,37 @@ pora czerwieni
 żółte (jesienne) liście",,,2469
 4805,WORD,WORD_NOUN,,HIRAGANA,,,黄海,こうかい,,koukai,Morze Żółte,,,"3756
 4729"
+4806,WORD,WORD_NOUN,,HIRAGANA,,,報,ほう,,hou,"wiadomość
+sprawozdanie
+nagroda",,,"1040
+4734"
+4807,WORD,WORD_VERB_RU,,HIRAGANA,,,報じる,ほうじる,,houjiru,"odpłacać
+informować",,,
+4808,WORD,WORD_VERB_RU,,HIRAGANA,,,報いる,むくいる,,mukuiru,"wynagradzać
+rekompensować",,,
+4809,WORD,WORD_NOUN,,HIRAGANA,,,報い,むくい,,mukui,nagroda,,,
+4810,WORD,WORD_NOUN,,HIRAGANA,,,報告,ほうこく,,houkoku,"raport
+informacja",,,
+4811,WORD,WORD_NOUN,,HIRAGANA,,,報恩,ほうおん,,houon,"wdzięczność
+odpłata",,,
+4812,WORD,WORD_NOUN,,HIRAGANA,,,報復,ほうふく,,houfuku,"odpłata
+rewanż",,,
+4813,WORD,WORD_NOUN,,HIRAGANA,,,報償,ほうしょう,,houshou,"wynagrodzenie
+odszkodowanie
+kompensata",,,
+4814,WORD,WORD_VERB_U,,HIRAGANA,,,乾す,ほす,,hosu,"suszyć
+wykręcać
+wypijać",,,2075
+4815,WORD,WORD_VERB_U,,HIRAGANA,,,乾く,かわく,,kawaku,"być suchym
+schnąć",,,1009
+4816,WORD,WORD_NOUN,,HIRAGANA,,,乾き,かわき,,kawaki,"suszenie
+suchość",,,
+4817,WORD,WORD_NOUN,,HIRAGANA,,,杯,はい ,,hai,"szklanka
+filiżanka
+toast",,,"90
+1027
+4818"
+4818,WORD,WORD_NOUN,,HIRAGANA,,,杯,さかずき,,sakazuki,"kielich
+kieliszek do wina",,,4817
+4819,WORD,WORD_ADVERB,,HIRAGANA,,,皆,みな,,mina,"wszyscy
+wszystko",,,721
