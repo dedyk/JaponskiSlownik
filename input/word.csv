@@ -840,7 +840,7 @@ być zatrudnionym",niefizycznie,,"1814
 657,WORD,WORD_VERB_U,,HIRAGANA,,,置く,おく,,oku,"kłaść
 umieszczać
 zostawiać",,,4379
-658,WORD,WORD_NOUN,,HIRAGANA,,,お皿,おさら,,osara,"talerz
+658,WORD,WORD_NOUN,,HIRAGANA,,,皿,さら,,sara,"talerz
 naczynie",,,
 659,WORD,WORD_VERB_U,,HIRAGANA,,を,渡す,わたす,o,watasu,"dawać
 wręczać
@@ -1521,7 +1521,7 @@ kobieta w średnim wieku",,NO,
 1177,WORD,WORD_NOUN,,HIRAGANA,Genki 2-14,,ご主人,ごしゅじん,,goshujin,mąż,spoza swojej rodziny,NO,
 1178,WORD,WORD_NOUN,,KATAKANA,Genki 2-14,,-,コップ,,koppu,"kubek
 szklanka",,,
-1179,WORD,WORD_NOUN,,HIRAGANA,Genki 2-14,,お皿,おさら,,osara,"talerz
+1179,WORD,WORD_NOUN,,HIRAGANA,Genki 2-14,,皿,さら,,sara,"talerz
 naczynie",,NO,
 1180,WORD,UNKNOWN,,HIRAGANA,Genki 2-14,,時間,じかん,,jikan,"czas
 godzina",okres,NO,
@@ -2394,7 +2394,7 @@ gotowany ryż",,,289
 1898,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,悪い,わるい,,warui,zły,,NO,
 1899,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,気分が悪い,きぷんがわるい,,kipun ga warui,"czuć się źle
 być w złym nastroju",,NO,
-1900,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-13,,最悪,さいあく,,saiaku,najgorszy,,,
+1900,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,最悪,さいあく,,saiaku,najgorszy,,,
 1901,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,悪魔,あくま,,akuma,diabeł,,,
 1902,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,体,からだ,,karada,ciało,,NO,
 1903,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-13,,体重,たいじゅう,,taijuu,"ciężar ciała
@@ -6902,7 +6902,8 @@ udar słoneczny",,,
 gorący okres",,,
 4640,WORD,WORD_NOUN,,HIRAGANA,,,暑熱,しょねつ,,shonetsu,letni upał,,,
 4641,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,熱心,ねっしん,,nesshin,"entuzjazm
-zapał",,,
+zapał
+entuzjastyczny",,,
 4642,WORD,WORD_NOUN,,HIRAGANA,,,熱意,ねつい,,netsui,"zapał
 entuzjazm",,,
 4643,WORD,WORD_NOUN,,HIRAGANA,,,熱湯,ねっとう,,nettou,wrzątek,,,
@@ -7219,3 +7220,85 @@ toast",,,"90
 kieliszek do wina",,,4817
 4819,WORD,WORD_ADVERB,,HIRAGANA,,,皆,みな,,mina,"wszyscy
 wszystko",,,721
+4820,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,皿,さら,,sara,"talerz
+naczynie",,NO,
+4821,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,灰皿,はいざら,,haizara,popielniczka,,,
+4822,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,声,こえ,,koe,głos,,NO,
+4823,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,音声学,おんせいがく,,onseigaku,fonetyka,,,
+4824,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,無声映画,むせいえいが,,musei eiga,niemy film,,,
+4825,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,お茶,おちゃ,,ocha,zielona herbata,,NO,
+4826,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,茶店,ちゃみせ,,chamise,herbaciarnia,,,
+4827,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,紅茶,こうちゃ,,koucha,herbata,czarna,NO,
+4828,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,茶色,ちゃいろ,,chairo,brązowy,,,
+4829,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,喫茶店,きっさてん,,kissaten,kawiarnia,,NO,
+4830,KANJI,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki kanji 2-20,が,止まる,とまる,ga,tomaru,zatrzymać się,,NO,
+4831,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,中止する,ちゅうしする,,chuushi suru,"zatrzymywać
+wstrzymywać",,,
+4832,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,禁止する,きんしする,,kinshi suru,"zakazywać
+zabraniać",,,
+4833,KANJI,WORD_COUNTERS,,HIRAGANA,Genki kanji 2-20,,一枚,いちまい,,ichimai,jeden,płaskie przedmioty,NO,
+4834,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,枚数,まいすう,,maisuu,liczba płaskich przedmiotów,np. kartek papieru,,
+4835,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,三両,さんりょう,,san ryou,trzy ryoo,dawna jednostka monetarna,,
+4836,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,両親,りょうしん,,ryoushin,rodzice,bardziej grzecznie,NO,
+4837,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,両手,りょうて,,ryou te,obie ręce,liczba mnoga,,
+4838,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,両足,りょうあし,,ryou ashi,"obie nogi
+obie stopy",liczba mnoga,,
+4839,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,両替,りょうがえ,,ryougae,wymieniać,,,
+4840,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,両方,りょうほう,,ryouhou,"obydwaj
+oba
+obie
+obie strony",,NO,
+4841,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-20,,無理,むり,,muri,niemożliwy,,,
+4842,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-20,,無駄,むだ,,muda,"bezużyteczny
+daremny",,,
+4843,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,無料,むりょう,,muryou,"za darmo
+bez opłaty",,,
+4844,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-20,,無礼,ぶれい,,burei,"nieuprzejmy
+niegrzeczny",,,
+4845,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-20,,無い,ない,,nai,"nie być
+nie istnieć",forma przecząca czasownika aru,,
+4846,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-20,,払う,はらう,,harau,płacić,,NO,
+4847,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,払い戻し,はらいもどし,,haraimodoshi,zwrot,,,
+4848,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,分割払い,ぶんかつばらい,,bunkatsubarai,opłata w ratach,,,
+4849,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,心,こころ,,kokoro,"serce
+dusza
+duch",,NO,
+4850,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,心配する,しんぱいする,,shinpai suru,martwić się,,NO,
+4851,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-20,,熱心,ねっしん,,nesshin,"entuzjazm
+zapał
+entuzjastyczny",,NO,
+4852,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-20,,安心,あんしん,,anshin,"spokój
+ukojenie",,NO,
+4853,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,好奇心,こうきしん,,koukishin,ciekawość,,,
+4854,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-20,,笑う,わらう,,warau,śmiać się,,NO,
+4855,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-20,,微笑む,ほほえむ,,hohoemu,uśmiechać się,,,
+4856,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,爆笑する,ばくしょうする,,bakushou suru,wybuchnąć śmiechem,,,
+4857,KANJI,WORD_ADVERB,,HIRAGANA,Genki kanji 2-20,,絶対に,ぜったいに,,zettaini,"absolutnie
+na pewno",,,
+4858,KANJI,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-20,,絶える,たえる,,taeru,"wyginać
+wymierać",o gatunkach zwierząt,,
+4859,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,気絶する,きぜつする,,kizetsu suru,"mdleć
+tracić przytomność",,,
+4860,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,絶望,ぜつぼう,,zetsubou,tracić nadzieję,,,
+4861,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,反対する,はんたいする,,hantai suru,przeciwstawić się,,,
+4862,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-20,,日本対中国,にほんたいちゅうごく,,nihon tai chuugoku,Japonia kontra Chiny,,,
+4863,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,一対,いっつい,,ittsui,para,,,
+4864,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-20,,痛い,いたい,,itai,"bolesny
+ranny",,NO,
+4865,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,頭痛,ずつう,,zutsuu,ból głowy,,NO,
+4866,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,鎮痛剤,ちんつうざい,,chintsuuzai,środek przeciwbólowy,,,
+4867,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-20,,最悪,さいあく,,saiaku,najgorszy,,NO,
+4868,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-20,,最近,さいきん,,saikin,ostatnio,,NO,
+4869,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-20,,最高,さいこう,,saikou,"najwyższy
+najwspanialszy
+największy
+najlepszy
+maksymalny",,NO,
+4870,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-20,,最後に,さいごに,,saigoni,ostatni,,NO,
+4871,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-20,,最も,もっとも,,mottomo,"najbardziej
+[III poziom stopniowania przymiotników]",,NO,
+4872,KANJI,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-20,,続ける,つづける,,tsudukeru,kontynuować,,,
+4873,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,手続き,てつづき,,tetsuduki,procedura,,,
+4874,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,相続する,そうぞくする,,souzoku suru,dziedziczyć,,,
+4875,KANJI,WORD_NOUN,,HIRAGANA_KATAKANA,Genki kanji 2-20,,連続ドラマ,れんぞくドラマ,,renzoku dorama,serial telewizyjny,,,
+4876,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,無人島,むじんとう,,mujintou,bezludna wyspa,,NO,
