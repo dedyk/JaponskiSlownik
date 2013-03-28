@@ -1020,7 +1020,8 @@ no i",,NO,
 798,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,灰色,はいいろ,,haiiro,szary,,,
 799,WORD,WORD_ADJECTIVE_NA,,KATAKANA,Genki 1-9,,-,ピンク,,pinku,różowy,,,
 800,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,銀色,ぎんいろ,,gin'iro,srebrny,,,
-801,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,紫,むらさき,,murasaki,fioletowy,,,
+801,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,紫,むらさき,,murasaki,"fioletowy
+purpurowy",,,
 802,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,水色,みずいろ,,mizu iro,jasno niebieski,,,
 803,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,金色,きんいろ,,kin'iro,złoty,,,
 804,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-9,,日記,にっき,,nikki,"pamiętnik
@@ -1032,7 +1033,8 @@ dziennik",,,
 809,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 1-9,,話をする,はなしをする,,hanashi o suru,rozmawiać,,,
 810,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,秋,あき,,aki,jesień,,,
 811,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,医者,いしゃ,,isha,lekarz,,NO,
-812,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,駅,えき,,eki,stacja,kolejowa,,
+812,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,駅,えき,,eki,"stacja kolejowa
+dworzec kolejowy",,,
 813,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,お金持ち,おかねもち,,okanemochi,bogaty człowiek,,,
 814,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,顔,かお,,kao,twarz,,NO,
 815,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,季節,きせつ,,kisetsu,"sezon
@@ -1068,10 +1070,14 @@ prenumerata",,,
 836,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,遅い,おそい,,osoi,"późny
 powoli
 spóźniony",,NO,
-837,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,涼しい,すずしい,,suzushii,zimny,tylko do pogody,,
+837,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,涼しい,すずしい,,suzushii,"zimny
+chłodny
+orzeźwiający",tylko do pogody,,
 838,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,冷たい,つめたい,,tsumetai,"zimny
 chłodny",do ludzi/rzeczy,,
-839,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,眠い,ねむい,,nemui,śpiący,,,
+839,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,眠い,ねむい,,nemui,"śpiący
+senny
+zmęczony",,,
 840,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-10,,簡単,かんたん,,kantan,"łatwy
 prosty",,,
 841,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,-,かかる,,kakaru,zajmować,"czas/pieniądze, bez partykuły",,4551
@@ -3292,7 +3298,8 @@ kołdra","tradycyjne składane łóżko, chowane na dzień",,
 w czasie",,,
 2527,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-15,,平和公園,へいわこうえん,,heiwa kouen,Park Pokoju,w Hiroszimie,,
 2528,WORD,WORD_NOUN,,KATAKANA,,,-,シカゴ,,shikago,Chicago,,,
-2529,WORD,WORD_NOUN,,HIRAGANA,Genki 2-16,,駅員,えきいん,,ekiin,pracownik stacji,kolejowej,,
+2529,WORD,WORD_NOUN,,HIRAGANA,Genki 2-16,,駅員,えきいん,,ekiin,"pracownik stacji kolejowej
+kolejarz",,,
 2530,WORD,WORD_NOUN,,HIRAGANA,Genki 2-16,,親,おや,,oya,rodzice,mniej formalnie,,4692
 2531,WORD,WORD_NOUN,,HIRAGANA,Genki 2-16,,-,ごみ,,gomi,śmieci,,NO,
 2532,WORD,WORD_NOUN,,HIRAGANA,Genki 2-16,,砂糖,さとう,,satou,cukier,,NO,
@@ -4387,7 +4394,7 @@ konsultacja",,,
 3181,WORD,WORD_NOUN,,HIRAGANA,,,用,よう,,you,"sprawa
 zlecenie
 zadanie
-rzecz do wykonania",,,
+rzecz do wykonania",,,4936
 3182,WORD,WORD_NOUN,,HIRAGANA,,,薫製,くんせい,,kunsei,wędzenie,,,
 3183,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,純情,じゅんじょう,,junjou,czyste serce,,,
 3184,WORD,WORD_NOUN,,HIRAGANA,,,木琴,もっきん,,mokkin,cymbałki,,,
@@ -7391,3 +7398,41 @@ anty-",,,"208
 4914,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,非人間的,ひにんげんてき,,hiningenteki,nieludzki,,,
 4915,WORD,WORD_NOUN,,HIRAGANA,,,非常識,ひじょうしき,,hijoushiki,sprzeczny ze zdrowym rozsądkiem,,,
 4916,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,非道徳的,ひどうとくてき,,hidoutokuteki,niemoralny,,,
+4917,WORD,WORD_NOUN,,HIRAGANA,,,駅長,えきちょう,,ekichou,naczelnik stacji,,,
+4918,WORD,WORD_NOUN,,HIRAGANA,,,駅前,えきまえ,,ekimae,przed dworcem kolejowym,,,
+4919,WORD,UNKNOWN,,HIRAGANA,,,東京駅,とうきょうえき,,toukyou eki,stacja Tokio,,,
+4920,WORD,WORD_NOUN,,HIRAGANA,,,駅弁,えきべん,,ekiben,obiad sprzedawany na stacji,kolejowe obentou,,
+4921,WORD,WORD_NOUN,,HIRAGANA,,,四季,しき,,shiki,cztery pory roku,,,
+4922,WORD,WORD_NOUN,,HIRAGANA,,,季節外れ,きせつはずれ,,kisetsu hazure,"nie w porę
+nie na czasie",,,
+4923,WORD,WORD_NOUN,,HIRAGANA,,,季刊誌,きかんし,,kikanshi,kwartalnik,,,
+4924,WORD,WORD_NOUN,,HIRAGANA,,,季題,きだい,,kidai,temat związany z daną porą roku,"w poezji, w haiku",,
+4925,WORD,WORD_NOUN,,HIRAGANA,,,鉄,てつ,,tetsu,"żelazo
+stal",,,4926
+4926,WORD,WORD_NOUN,,HIRAGANA,,,鉄,くろがね,,kurogane,żelazo,,,4925
+4927,WORD,WORD_NOUN,,HIRAGANA,,,鉄道,てつどう,,tetsudou,"tory
+szyny",,,
+4928,WORD,WORD_NOUN,,HIRAGANA,,,鉄骨,てっこつ,,tekkotsu,konstrukcja stalowa,,,
+4929,WORD,WORD_NOUN,,HIRAGANA,,,鉄鉱,てっこう,,tekkou,ruda żelaza,,,
+4930,WORD,WORD_NOUN,,HIRAGANA,,,鉄棒,てつぼう,,tetsubou,pręt metalowy,,,4931
+4931,WORD,WORD_NOUN,,HIRAGANA,,,鉄棒,かなぼう,,kanabou,pręt metalowy,,,4930
+4932,WORD,WORD_NOUN,,HIRAGANA,,,鉄砲,てっぽう,,teppou,"pistolet
+broń palna",,,
+4933,WORD,WORD_NOUN,,HIRAGANA,,,袋,ふくろ,,fukuro,worek,,,
+4934,WORD,WORD_NOUN,,HIRAGANA,,,床,とこ,,toko,łóżko,,,4935
+4935,WORD,WORD_NOUN,,HIRAGANA,,,床,ゆか,,yuka,podłoga,,,4934
+4936,WORD,WORD_NOUN,,HIRAGANA,,,容,よう,,you,"forma
+wygląd
+zawartość",,,3181
+4937,WORD,WORD_NOUN,,HIRAGANA,,,容認,ようにん,,younin,"tolerancja
+uznanie",,,
+4938,WORD,WORD_NOUN,,HIRAGANA,,,容疑,ようぎ,,yougi,podejrzenie,,,
+4939,WORD,WORD_NOUN,,HIRAGANA,,,容積,ようせき,,youseki,"pojemność
+miara
+zawartość",,,
+4940,WORD,WORD_NOUN,,HIRAGANA,,,容器,ようき,,youki,pojemnik,,,
+4941,WORD,WORD_VERB_U,,HIRAGANA,,,涼む,すずむ,,suzumu,chłodzić,,,
+4942,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,眠たい,ねむたい,,nemutai,"śpiący
+senny
+zmęczony",,,
+4943,WORD,WORD_VERB_U,,HIRAGANA,,,眠る,ねむる,,nemuru,spać,,,
