@@ -1139,7 +1139,9 @@ zdać do następnej klasy",,,383
 880,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-10,,声,こえ,,koe,głos,,,
 881,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-10,,戸,と,,to,drzwi,,,392
 882,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 1-10,,-,びっくりする,,bikkuri suru,być zaskoczony,,,
-883,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 1-10,,幸せ,しあわせ,,shiawase,szczęśliwy,,,
+883,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 1-10,,幸せ,しあわせ,,shiawase,"szczęśliwy
+szczęście
+powodzenie",,,
 884,WORD,WORD_NOUN,,KATAKANA,Genki 1-11,,-,オーストラリア,,oosutoraria,Australia,,NO,
 885,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,お菓子,おかし,,okashi,"słodycze
 przekąski",,,
@@ -1444,7 +1446,9 @@ słony",,,
 rygorystyczny",,,
 1107,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-13,,近い,ちかい,,chikai,bliski,,,
 1108,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-13,,色々,いろいろ,,iroiro,różne,,NO,
-1109,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-13,,幸せ,しあわせ,,shiawase,szczęśliwy,,NO,
+1109,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-13,,幸せ,しあわせ,,shiawase,"szczęśliwy
+szczęście
+powodzenie",,NO,
 1110,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-13,,-,だめ,,dame,"beznadziejny
 niedobry",,,
 1111,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-13,,編む,あむ,,amu,robić na drutach,,,
@@ -4824,7 +4828,8 @@ przeżycie",osobiste,,
 3409,WORD,WORD_NOUN,,HIRAGANA,,,性,せい,,sei,"płeć
 seks
 natura",,,3410
-3410,WORD,WORD_NOUN,,HIRAGANA,,,性,しょう,,shou,temperament,,,3409
+3410,WORD,WORD_NOUN,,HIRAGANA,,,性,しょう,,shou,temperament,,,"3409
+4986"
 3411,WORD,WORD_NOUN,,HIRAGANA,,,性教育,せいきょういく,,seikyouiku,wychowanie seksualne,,,
 3412,WORD,WORD_NOUN,,HIRAGANA,,,性欲,せいよく,,seiyoku,"pożądanie seksualne
 popęd seksualny",,,
@@ -5654,7 +5659,7 @@ porównanie",,,
 3890,WORD,WORD_NOUN,,HIRAGANA,,,情,じょう,,jou,"uczucie
 emocja
 pasja
-sympatia",,,
+sympatia",,,4977
 3891,WORD,WORD_NOUN,,HIRAGANA,,,情け,なさけ,,nasake,"współczucie
 sympatia",,,
 3892,WORD,WORD_NOUN,,HIRAGANA,,,情状,じょうじょう,,joujou,"warunki
@@ -7514,3 +7519,25 @@ interes",,,
 zmieniać",,,
 4975,WORD,WORD_VERB_U,,HIRAGANA,,,切り取る,きりとる,,kiritoru,wycinać,,,
 4976,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,取って来る,とってくる,,totte kuru,przynosić,,,
+4977,WORD,WORD_COUNTERS,,HIRAGANA,,,畳,じょう ,,jou,"zwijać
+przyrostek stosowany do liczenia mat",,,"3890
+4978"
+4978,WORD,WORD_NOUN,,HIRAGANA,,,畳,たたみ,,tatami,mata,słomiana,,4977
+4979,WORD,WORD_VERB_U,,HIRAGANA,,,畳む,たたむ,,tatamu,"zwijać
+zamykać",,,
+4980,WORD,WORD_NOUN,,HIRAGANA,,,幸,さち,,sachi,"szczęście
+powodzenie",,,
+4981,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,幸い,さいわい,,saiwai,"szczęście
+powodzenie",,,
+4982,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,不幸,ふこう,,fukou,nieszczęście,,,
+4983,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,幸運,こううん,,kouun,"powodzenie
+szczęśliwa wróżba",,,
+4984,WORD,WORD_NOUN,,HIRAGANA,,,幸先,さいさき,,saisaki,dobry znak,,,
+4985,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,幸甚,こうじん,,koujin,wielkie szczęście,,,
+4986,WORD,WORD_NOUN,,HIRAGANA,,,将,しょう,,shou,"dowódca
+generał
+admirał",,,3410
+4987,WORD,WORD_NOUN,,HIRAGANA,,,琵琶湖,びわこ,,biwako,Jezioro Biła (Biwa),,,
+4988,WORD,WORD_NOUN,,HIRAGANA,,,湖水,こすい,,kosui,jezioro,,,
+4989,WORD,WORD_NOUN,,HIRAGANA,,,湖面,こめん,,komen,powierzchnia jeziora,,,
+4990,WORD,WORD_NOUN,,HIRAGANA,,,湖畔,こはん,,kohan,brzeg jeziora,,,
