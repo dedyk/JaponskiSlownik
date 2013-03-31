@@ -184,7 +184,7 @@ obrońca",,,
 155,WORD,WORD_NOUN,,KATAKANA,Genki 1-2,,-,ノート,,nooto,zeszyt,,,
 156,WORD,WORD_NOUN,,KATAKANA,Genki 1-2,,-,ペン,,pen,długopis,,,
 157,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,帽子,ぼうし,,boushi,"kapelusz
-czapka",,,
+czapka",,,5032
 158,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,本,ほん,,hon,książka,,,1221
 159,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,御手洗,おてあらい,,otearai,toaleta,"dosł: miejsce, gdzie myje się ręce",,
 160,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,喫茶店,きっさてん,,kissaten,kawiarnia,,,
@@ -529,8 +529,8 @@ przerażający",,,
 436,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,難しい,むずかしい,,muzukashii,"trudny
 problematyczny
 kłopotliwy",,,
-437,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,-,やさしい,,yasashii,"łatwy
-miły",problem / człowiek,,
+437,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,易しい,やさしい,,yasashii,"łatwy
+prosty",problem / człowiek,,5014
 438,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,安い,やすい,,yasui,tani,,NO,
 439,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,嫌い,きらい,,kirai,nie lubić,,,
 440,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,-,きれい,,kirei,"ładne
@@ -1035,7 +1035,7 @@ dziennik",,,
 810,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,秋,あき,,aki,jesień,,,
 811,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,医者,いしゃ,,isha,lekarz,,NO,
 812,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,駅,えき,,eki,"stacja kolejowa
-dworzec kolejowy",,,
+dworzec kolejowy",,,5015
 813,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,お金持ち,おかねもち,,okanemochi,bogaty człowiek,,,
 814,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,顔,かお,,kao,twarz,,NO,
 815,WORD,WORD_NOUN,,HIRAGANA,Genki 1-10,,季節,きせつ,,kisetsu,"sezon
@@ -3133,7 +3133,7 @@ dawać ostrzeżenie",kogoś,,
 ostrzeżenie przed",,NO,
 2395,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,意見,いけん,,iken,opinia,,,
 2396,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-15,,用意する,よういする,,youi suru,przygotować,,,
-2397,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,用意,ようい,,youi,przygotowanie,,,
+2397,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,用意,ようい,,youi,przygotowanie,,,5018
 2398,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,意味,いみ,,imi,znaczenie,,NO,
 2399,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,趣味,しゅみ,,shumi,hobby,,NO,
 2400,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,興味,きょうみ,,kyoumi,zainteresowanie,,,
@@ -7588,3 +7588,47 @@ wieczność",,,
 5009,WORD,WORD_NOUN,,HIRAGANA,,,久遠,くおん,,kuon,wieczność,,,
 5010,WORD,WORD_VERB_RU,,HIRAGANA,,,警める,いましめる,,imashimeru,"ostrzegać
 zwracać uwagę",,,
+5011,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,優,ゆう,,yuu,"wyższość
+łagodność
+aktor (rzeczownik)",,,
+5012,WORD,WORD_VERB_RU,,HIRAGANA,,,優れる,すぐれる,,sugureru,"być lepszym
+przewyższać",,,
+5013,WORD,WORD_VERB_U,,HIRAGANA,,,優る,まさる,,masaru,"być lepszym
+przewyższać",,,
+5014,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,優しい,やさしい,,yasashii,"łagodny
+życzliwy
+miły",,,437
+5015,WORD,WORD_NOUN,,HIRAGANA,,,易,えき,,eki,wróżenie,,,812
+5016,WORD,WORD_NOUN,,HIRAGANA,,,貿易,ぼうえき,,boueki,handel,zagraniczny,,
+5017,WORD,WORD_NOUN,,HIRAGANA,,,易者,えきしゃ,,ekisha,"wróżbiarz
+wróżbita",,,
+5018,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,容易,ようい,,youi,łatwy,,,2397
+5019,WORD,WORD_VERB_RU,,HIRAGANA,,,統べる,すべる,,suberu,"kontrolować
+nadzorować
+doglądać",,,
+5020,WORD,WORD_NOUN,,HIRAGANA,,,統一,とういつ,,touitsu,"jedność
+zjednoczenie
+konsolidacja",,,
+5021,WORD,WORD_NOUN,,HIRAGANA,,,統制,とうせい,,tousei,"kontrola
+regulowanie",,,
+5022,WORD,WORD_NOUN,,HIRAGANA,,,統計,とうけい,,toukei,statystyka,,,
+5023,WORD,WORD_NOUN,,HIRAGANA,,,統括,とうかつ,,toukatsu,"uogólnienie
+podsumowanie",,,
+5024,WORD,WORD_NOUN,,HIRAGANA,,,領土,りょうど,,ryoudo,posiadłość ziemska,,,
+5025,WORD,WORD_NOUN,,HIRAGANA,,,領域,りょういき,,ryouiki,"terytorium
+strefa
+posiadłość",,,
+5026,WORD,WORD_NOUN,,HIRAGANA,,,領海,りょうかい,,ryoukai,wody terytorialne,,,
+5027,WORD,WORD_NOUN,,HIRAGANA,,,領事,りょうじ,,ryouji,konsul,,,
+5028,WORD,WORD_NOUN,,HIRAGANA,,,領収書,りょうしゅうしょ,,ryoushuusho,"kwit
+rachunek",formalnie,,
+5029,WORD,WORD_VERB_U,,HIRAGANA,,,防ぐ,ふせぐ,,fusegu,"bronić
+ochraniać
+strzec",,,
+5030,WORD,WORD_NOUN,,HIRAGANA,,,自己防衛,じこぼうえい,,jikobouei,samoobrona,,,
+5031,WORD,WORD_NOUN,,HIRAGANA,,,防御,ぼうぎょ,,bougyo,"ochrona
+obrona",,,
+5032,WORD,WORD_NOUN,,HIRAGANA,,,防止,ぼうし,,boushi,"zapobieganie
+ochrona",,,157
+5033,WORD,WORD_NOUN,,HIRAGANA,,,防水,ぼうすい,,bousui,wodoszczelny,,,
+5034,WORD,WORD_NOUN,,HIRAGANA,,,防臭剤,ぼうしゅうざい,,boushuuzai,dezodorant,,,
