@@ -646,7 +646,7 @@ schodzić
 zstępować",,,867
 513,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-6,を,借りる,かりる,o,kariru,pożyczać,"od kogoś, osoba ni rzecz",,
 514,WORD,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,"Genki 1-6
-Genki 2-18",を,閉める,しめる,o,shimeru,zamykać,,,
+Genki 2-18",を,閉める,しめる,o,shimeru,zamykać,,,5040
 515,WORD,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,"Genki 1-6
 Genki 2-18",を,-,つける,o,tsukeru,włączać,,,3562
 516,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-6,,電話をかける,でんわをかける,,denwa o kakeru,dzwonić,osoba ni,,
@@ -1236,7 +1236,8 @@ ratować",,,
 946,WORD,WORD_VERB_RU,,HIRAGANA,,,見せる,みせる,,miseru,pokazywać,,,
 947,WORD,WORD_EXPRESSION,,HIRAGANA,,,-,けど,,kedo,"..., ale
 ..., więc",~,,
-948,WORD,UNKNOWN,,HIRAGANA,,,犯人,はんにん,,hannin,przestępca,,,
+948,WORD,UNKNOWN,,HIRAGANA,,,犯人,はんにん,,hannin,"przestępca
+kryminalista",,,
 949,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,が,見える,みえる,ga,mieru,oglądać się,,,1351
 950,WORD,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,を,終える,おえる,o,oeru,kończyć,coś,,
 951,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,締め切り,しめきり,,shimekiri,ostateczny termin,,,
@@ -1271,7 +1272,8 @@ narzeczona",,NO,
 977,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,彼,かれ,,kare,"on
 narzeczony",,,
 978,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,気温,きおん,,kion,temperatura,tylko do pogody,,
-979,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,曇り,くもり,,kumori,pochmurna pogoda,,,
+979,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,曇り,くもり,,kumori,"pochmurna pogoda
+zachmurzenie",,,
 980,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,試合,しあい,,shiai,"mecz
 gra
 zawody",,,
@@ -1300,7 +1302,9 @@ rzeczy do wykonania",,,3684
 ranny",,,
 998,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,多い,おおい,,ooi,dużo,,,
 999,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,狭い,せまい,,semai,"wąski
-nieprzestronny",,,
+nieprzestronny
+mały
+ciasny",,,
 1000,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,都合,つごう,,tsugou,"okoliczność
 warunki
 okazja",,,
@@ -1363,7 +1367,8 @@ uroczystość
 1041,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 1-12,,晴れる,はれる,,hareru,"słoneczna pogoda
 rozpogadzać się",czasownik,,
 1042,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,雲,くも,,kumo,chmura,,,2572
-1043,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,曇る,くもる,,kumoru,chmurzyć się,,,
+1043,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,曇る,くもる,,kumoru,"chmurzyć się
+mglić się",,,
 1044,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,風,かぜ,,kaze,wiatr,,,975
 1045,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-12,,風が吹く,かぜがふく,,kaze ga fuku,wiatr wieje,,,
 1046,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,大事,だいじ,,daiji,ważny,,,
@@ -4424,7 +4429,8 @@ konsultacja",,,
 3181,WORD,WORD_NOUN,,HIRAGANA,,,用,よう,,you,"sprawa
 zlecenie
 zadanie
-rzecz do wykonania",,,4936
+rzecz do wykonania",,,"4936
+5051"
 3182,WORD,WORD_NOUN,,HIRAGANA,,,薫製,くんせい,,kunsei,wędzenie,,,
 3183,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,純情,じゅんじょう,,junjou,czyste serce,,,
 3184,WORD,WORD_NOUN,,HIRAGANA,,,木琴,もっきん,,mokkin,cymbałki,,,
@@ -4519,7 +4525,7 @@ upadać
 przewrócić się",,NO,
 3241,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-18,を,壊す,こわす,o,kowasu,zepsuć,,,
 3242,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,咲く,さく,,saku,kwitnąć,,NO,
-3243,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,閉まる,しまる,ga,shimaru,zamykać się,,,
+3243,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,閉まる,しまる,ga,shimaru,zamykać się,,,5041
 3244,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,助かる,たすかる,ga,tasukaru,"przetrwać
 uzyskać pomoc
 być uratowany",,,
@@ -7457,7 +7463,8 @@ broń palna",,,
 4935,WORD,WORD_NOUN,,HIRAGANA,,,床,ゆか,,yuka,podłoga,,,4934
 4936,WORD,WORD_NOUN,,HIRAGANA,,,容,よう,,you,"forma
 wygląd
-zawartość",,,3181
+zawartość",,,"3181
+5051"
 4937,WORD,WORD_NOUN,,HIRAGANA,,,容認,ようにん,,younin,"tolerancja
 uznanie",,,
 4938,WORD,WORD_NOUN,,HIRAGANA,,,容疑,ようぎ,,yougi,podejrzenie,,,
@@ -7632,3 +7639,68 @@ obrona",,,
 ochrona",,,157
 5033,WORD,WORD_NOUN,,HIRAGANA,,,防水,ぼうすい,,bousui,wodoszczelny,,,
 5034,WORD,WORD_NOUN,,HIRAGANA,,,防臭剤,ぼうしゅうざい,,boushuuzai,dezodorant,,,
+5035,WORD,WORD_VERB_U,,HIRAGANA,,,犯す,おかす,,okasu,"popełniać (przestępstwo)
+łamać (prawo)
+gwałcić
+napadać
+przeciwstawiać się
+lekceważ",,,
+5036,WORD,WORD_NOUN,,HIRAGANA,,,犯行,はんこう,,hankou,"przestępstwo
+wykroczenie",,,
+5037,WORD,WORD_NOUN,,HIRAGANA,,,犯罪,はんざい,,hanzai,"przestępstwo
+wykroczenie",,,
+5038,WORD,WORD_NOUN,,HIRAGANA,,,防犯,ぼうはん,,bouhan,"walka z przestępczością
+zapobieganie przestępczości",,,
+5039,WORD,WORD_NOUN,,HIRAGANA,,,共犯,きょうはん,,kyouhan,współudział w przestępstwie,,,
+5040,WORD,WORD_VERB_RU,,HIRAGANA,,,締める,しめる,,shimeru,"związywać
+zaciskać
+zamykać
+dodawać
+sumować",,,514
+5041,WORD,WORD_VERB_U,,HIRAGANA,,,締まる,しまる,,shimaru,"być zamkniętym
+być zawiązanym
+być zaciśniętym
+być stałym
+trzeźwieć",,,3243
+5042,WORD,WORD_NOUN,,HIRAGANA,,,標,しるし,,shirushi,znak,,,
+5043,WORD,WORD_NOUN,,HIRAGANA,,,目標,もくひょう,,mokuhyou,cel,,,
+5044,WORD,WORD_NOUN,,HIRAGANA,,,標準,ひょうじゅん,,hyoujun,"norma
+standard
+kryterium
+poziom",,,
+5045,WORD,WORD_NOUN,,HIRAGANA,,,標識,ひょうしき,,hyoushiki,"znak
+tablica",np. drogowy,,
+5046,WORD,WORD_NOUN,,HIRAGANA,,,標語,ひょうご,,hyougo,"slogan
+motto",,,
+5047,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,邪,よこしま,,yokoshima,"niesprawiedliwość
+nieuczciwość
+zło",,,
+5048,WORD,WORD_NOUN,,HIRAGANA,,,成績表,せいせきひょう,,seisekihyou,"świadectwo
+wykaz ocen
+wykaz wyników
+wykaz rezultatów",,,
+5049,WORD,WORD_NOUN,,HIRAGANA,,,業績,ぎょうせき,,gyouseki,"praca
+osiągnięcie",,,
+5050,WORD,WORD_NOUN,,HIRAGANA,,,実績,じっせき,,jisseki,"rzeczywiste wyniki
+zapis osiągnięć",,,
+5051,WORD,WORD_VERB_U,,HIRAGANA,,,酔う,よう,,you,"upijać się
+mieć zawroty głowy
+być zatrutym",,,"3181
+4936"
+5052,WORD,WORD_VERB_U,,HIRAGANA,,,甘やかす,あまやかす,,amayakasu,"rozpieszczać
+pobłażać
+folgować",,,
+5053,WORD,WORD_VERB_RU,,HIRAGANA,,,甘える,あまえる,,amaeru,"zachowywać się jak rozpieszczone dziecko
+wykorzystywać",,,
+5054,WORD,WORD_VERB_RU,,HIRAGANA,,,狭める,せばめる,,sebameru,"zwężać
+zmniejszać",,,
+5055,WORD,WORD_VERB_U,,HIRAGANA,,,狭まる,せばまる,,sebamaru,"zwężać się
+zmniejszać się",,,
+5056,WORD,WORD_NOUN,,HIRAGANA,,,敵意,てきい,,tekii,"wrogość
+złość",,,
+5057,WORD,WORD_NOUN,,HIRAGANA,,,敵対,てきたい,,tekitai,"wrogość
+niechęć
+sprzeciw",,,
+5058,WORD,WORD_NOUN,,HIRAGANA,,,敵軍,てきぐん,,tekigun,wroga armia,,,
+5059,WORD,WORD_NOUN,,HIRAGANA,,,敵側,てきがわ,,tekigawa,strona wroga,,,
+5060,WORD,WORD_NOUN,,HIRAGANA,,,強敵,きょうてき,,kyouteki,silny przeciwnik,,,
