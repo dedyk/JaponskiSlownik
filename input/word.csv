@@ -1394,12 +1394,19 @@ dziewczyna",,,
 1058,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,大人,おとな,,otona,dorosły,,,
 1059,WORD,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 1-12,,見つける,みつける,,mitsukeru,szukać,,,
 1060,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-12,,天の川,あまのがわ,,ama no gawa,Droga Mleczna,,,
-1061,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,向こう,むこう,,mukou,po tamtej stronie,,,
-1062,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-12,,畑,はたけ,,hatake,pole,nieryżowe,,
+1061,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,向こう,むこう,,mukou,"po tamtej stronie
+po drugiej stronie
+z przeciwnej strony",,,
+1062,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-12,,畑,はたけ,,hatake,"pole
+plantacja
+ogród",nieryżowe,,5089
 1063,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 1-12,,怒る,おこる,,okoru,"zezłościć się
-denerwować się",,,5062
+denerwować się",,,"5062
+5092"
 1064,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 1-12,,連れて帰る,つれてかえる,,tsurete kaeru,wracać do domu,,,
-1065,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 1-12,,泣く,なく,,naku,płakać,,,
+1065,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 1-12,,泣く,なく,,naku,"płakać
+opłakiwać
+lamentować",,,
 1066,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 1-12,,可哀相,かわいそう,,kawai sou,"żałosny
 biedak
 godny politowania
@@ -1472,7 +1479,9 @@ niedobry",,,
 1112,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-13,,貸す,かす,,kasu,"pożyczać
 wynajmować","komuś, rzecz o osoba ni",,
 1113,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-13,,頑張る,がんばる,,ganbaru,starać się,,,
-1114,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-13,,泣く,なく,,naku,płakać,,NO,
+1114,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-13,,泣く,なく,,naku,"płakać
+opłakiwać
+lamentować",,NO,
 1115,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-13,,磨く,みがく,,migaku,"myć zęby
 polerować",,,
 1116,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-13,,約束を守る,やくそくをまもる,,yakusoku o mamoru,dotrzymać tajemnicy,,,
@@ -1893,7 +1902,7 @@ gigantyczny",,,
 1429,WORD,WORD_NOUN,,HIRAGANA,,,織物,おりもの,,orimono,"zwój
 materiał
 tekstylia",,,
-1430,WORD,WORD_NOUN,,HIRAGANA,,,工場,こうじょう,,koujou,fabryka,,,
+1430,WORD,WORD_NOUN,,HIRAGANA,,,工場,こうじょう,,koujou,fabryka,,,5087
 1431,WORD,WORD_NOUN,,HIRAGANA,,,針,はり,,hari,"igła
 pinezka
 haczyk",,,
@@ -4811,7 +4820,7 @@ wsparcie",,,
 wspierać",,,
 3390,WORD,WORD_NOUN,,HIRAGANA,,,積集合,せきしゅうごう,,sekishuugou,"część wspólna zbiorów
 przecięcie zbiorów",,,
-3391,WORD,WORD_NOUN,,HIRAGANA,,,旗,はた,,hata,flaga,,,
+3391,WORD,WORD_NOUN,,HIRAGANA,,,旗,はた,,hata,flaga,,,5089
 3392,WORD,WORD_NOUN,,HIRAGANA,,,夫妻,ふさい,,fusai,"mąż i żona
 para małżeńska",,,
 3393,WORD,WORD_NOUN,,HIRAGANA,,,夫婦生活,ふうふせいかつ,,fuufuseikatsu,życie małżeńskie,,,
@@ -6208,7 +6217,7 @@ zła sytuacja ekonomiczna",,,
 4207,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,漢和辞典,かんわじてん,,kanwajiten,słownik kanji,,,
 4208,KANJI,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-19,を,卒業する,そつぎょうする,o,sotsugyou suru,ukończyć szkołę,szkołę,NO,
 4209,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,卒業式,そつぎょうしき,,sotsugyou shiki,ceremonia ukończenia szkoły,,NO,
-4210,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,工学,こうがく,,kougaku,inżynieria,,,
+4210,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,工学,こうがく,,kougaku,inżynieria,,,5088
 4211,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,工事,こうじ,,kouji,"budownictwo
 budynek
 konstrukcja
@@ -7752,9 +7761,27 @@ elegancja",,,
 5074,WORD,WORD_NOUN,,HIRAGANA,,,雲母,うんも,,unmo,"mika
 łyszczyk (minerał)",,,
 5075,WORD,WORD_EXPRESSION,,HIRAGANA,,,雲泥の差,うんでいのさ,,undei no sa,olbrzymia różnica,,,
-,,WORD_NOUN,,HIRAGANA,,,談話,だんわ,,danwa,rozmowa,,,
-,,WORD_NOUN,,HIRAGANA,,,談笑,だんしょう,,danshou,przyjacielska pogawędka,,,
-,,WORD_NOUN,,HIRAGANA,,,談判,だんぱん,,danpan,"negocjacje
+5076,WORD,WORD_NOUN,,HIRAGANA,,,談話,だんわ,,danwa,rozmowa,,,
+5077,WORD,WORD_NOUN,,HIRAGANA,,,談笑,だんしょう,,danshou,przyjacielska pogawędka,,,
+5078,WORD,WORD_NOUN,,HIRAGANA,,,談判,だんぱん,,danpan,"negocjacje
 konferencja",,,
-,,WORD_NOUN,,HIRAGANA,,,談義,だんぎ,,dangi,konsultacja,,,
-,,WORD_NOUN,,KATAKANA,,,-,レモン,,remon,cytryna,,,
+5079,WORD,WORD_NOUN,,HIRAGANA,,,談義,だんぎ,,dangi,konsultacja,,,
+5080,WORD,WORD_NOUN,,KATAKANA,,,-,レモン,,remon,cytryna,,,
+5081,WORD,WORD_VERB_U,,HIRAGANA,,,向く,むく,,muku,skręcać,,,
+5082,WORD,WORD_VERB_RU,,HIRAGANA,,,向ける,むける,,mukeru,skręcać,,,
+5083,WORD,WORD_VERB_U,,HIRAGANA,,,向かう,むかう,,mukau,być zwróconym,,,
+5084,WORD,WORD_NOUN,,HIRAGANA,,,方向,ほうこう,,houkou,kierunek,,,
+5085,WORD,WORD_NOUN,,HIRAGANA,,,意向,いこう,,ikou,"intencja
+zamiar",,,
+5086,WORD,WORD_EXPRESSION,,HIRAGANA,,,子供向け,こどもむけ,,kodomo muke,"dla dzieci
+z myślą o dzieciach",,,
+5087,WORD,WORD_NOUN,,HIRAGANA,,,向上,こうじょう,,koujou,podwyższenie,,,1430
+5088,WORD,WORD_NOUN,,HIRAGANA,,,向学,こうがく,,kougaku,chęć do nauki,,,4210
+5089,WORD,WORD_NOUN,,HIRAGANA,,,畑,はた,,hata,"pole
+plantacja
+ogród",nieryżowe,,"1062
+3391"
+5090,WORD,WORD_NOUN,,HIRAGANA,,,田畑,たはた,,tahata,pole,,,
+5091,WORD,WORD_NOUN,,HIRAGANA,,,畑作,はたさく,,hatasaku,uprawa pól,,,
+5092,WORD,WORD_VERB_U,,HIRAGANA,,,怒る,いかる,,ikaru,"zezłościć się
+denerwować się",,,1063
