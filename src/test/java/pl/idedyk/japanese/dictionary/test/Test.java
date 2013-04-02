@@ -88,7 +88,7 @@ public class Test {
 			katakanaCache.put(kanaEntry.getKana(), kanaEntry);
 		}
 		
-		KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord("もんえい", hiraganaEntries, katakanaEntries);
+		KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord("きんようび", hiraganaEntries, katakanaEntries);
 		
 		String currentKanaAsRomaji = KanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
 
