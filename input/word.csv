@@ -684,7 +684,8 @@ mowa",,,
 kierunek
 wskazówka",,,
 532,WORD,WORD_NOUN,,HIRAGANA,,,-,ごみ,,gomi,śmieci,,,
-533,WORD,WORD_VERB_RU,,HIRAGANA,,を,捨てる,すてる,o,suteru,wyrzucać,,NO,
+533,WORD,WORD_VERB_RU,,HIRAGANA,,を,捨てる,すてる,o,suteru,"wyrzucać
+porzucać",,NO,
 534,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,-,おばあさん,,obaasan,"babcia
 starsza kobieta","spoza swojej rodziny lub własna rodzina, nieformalnie",NO,
 535,WORD,WORD_NOUN,,HIRAGANA,Genki 1-6,,-,おじいさん,,ojiisan,"dziadek
@@ -1797,10 +1798,14 @@ rozległy",,,
 4503"
 1341,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-15,,描く,かく,,kaku,"rysować
 malować",,,"1704
-3081"
+3081
+5205"
 1342,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-15,,探す,さがす,,sagasu,szukać,,,
 1343,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-15,,誘う,さそう,,sasou,"zapraszać
-zaprosić",,,
+zaprosić
+kusić
+wabić
+pociągać",,,5207
 1344,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-15,と,付き合う,つきあう,to,tsukiau,"chodzić z kimś
 iść na randkę",narzeczeństwo,,1345
 1345,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-15,に,付き合う,つきあう,ni,tsukiau,dotrzymać towarzystwa,~ w celu,,1344
@@ -1808,8 +1813,10 @@ iść na randkę",narzeczeństwo,,1345
 3563"
 1347,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-15,,保険に入る,ほけんにはいる,,hoken ni hairu,ubezpieczyć się,,,
 1348,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-15,に,気をつける,きをつける,ni,ki o tsukeru,uważać,,,
-1349,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-15,を,調べる,しらべる,o,shiraberu,sprawdzać,~ coś,,
-1350,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-15,を,捨てる,すてる,o,suteru,wyrzucać,,,
+1349,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-15,を,調べる,しらべる,o,shiraberu,"sprawdzać
+dochodzić",~ coś,,
+1350,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-15,を,捨てる,すてる,o,suteru,"wyrzucać
+porzucać",,,
 1351,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-15,が,見える,みえる,ga,mieru,być widoczny,,,949
 1352,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-15,に,-,する,ni,suru,decydować się,na rzecz,,"260
 2777
@@ -1855,7 +1862,9 @@ migrować
 być importowanym",,,
 1378,WORD,WORD_VERB_U,,HIRAGANA,,,走る,はしる,,hashiru,biegać,,,
 1379,WORD,WORD_EXPRESSION,,HIRAGANA,,,車を走る,くるまをはしる,,kuruma o hashiru,samochody jeżdżą,dosł. biegają,,
-1380,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,細い,ほそい,,hosoi,wąski,,,
+1380,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,細い,ほそい,,hosoi,"wąski
+cienki
+szczupły",,,
 1381,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,薄い,うすい,,usui,"cienki
 jasny kolor","np. materiał, np. pastelowy",,
 1382,WORD,WORD_VERB_RU,,HIRAGANA,,,掛ける,かける,,kakeru,powiesić coś na czymś,,,3844
@@ -4268,7 +4277,8 @@ ukłuć
 przeszyć
 użądlić
 przebić",,,"3293
-3758"
+3758
+5214"
 3068,WORD,WORD_NOUN,,HIRAGANA,,,刺,とげ,,toge,kolec,,,
 3069,WORD,WORD_VERB_U,,HIRAGANA,,,刺さる,ささる,,sasaru,"utkwić
 ugrząźć
@@ -4672,7 +4682,8 @@ ruiny",,,3212
 3292,WORD,WORD_NOUN,,HIRAGANA,,,涯,はて,,hate,horyzont,,,2886
 3293,WORD,WORD_VERB_U,,HIRAGANA,,,挿す,さす,,sasu,"wciskać
 wkładać do",,,"3067
-3758"
+3758
+5214"
 3294,WORD,WORD_NOUN,,HIRAGANA,,,天文学者,てんもんがくしゃ,,tenmon gakusha,astronom,,,
 3295,WORD,WORD_NOUN,,KATAKANA,,,-,トルン,,torun,Toruń,,,
 3296,WORD,WORD_NOUN,,HIRAGANA,,,法学,ほうがく,,hougaku,prawo,nauka,,
@@ -4977,7 +4988,8 @@ sentymentalny",,,
 3455,WORD,WORD_VERB_U,,HIRAGANA,,,和らぐ,やわらぐ,,yawaragu,"mięknąć
 godzić się",,,
 3456,WORD,WORD_NOUN,,HIRAGANA,,,和平,わへい,,wahei,pokój,brak konfliktów,,
-3457,WORD,WORD_NOUN,,HIRAGANA,,,調和,ちょうわ,,chouwa,harmonia,,,
+3457,WORD,WORD_NOUN,,HIRAGANA,,,調和,ちょうわ,,chouwa,"harmonia
+zgoda",,,
 3458,WORD,WORD_NOUN,,HIRAGANA,,,和英辞典,わえいじてん,,waeijiten,słownik japońsko-angielski,,,
 3459,WORD,WORD_NOUN,,HIRAGANA,,,消火,しょうか,,shouka,gaszenie pożaru,,,3461
 3460,WORD,WORD_NOUN,,HIRAGANA,,,消防署,しょうぼうしょ,,shoubousho,straż pożarna,,,
@@ -5488,7 +5500,8 @@ oficjalny",,,
 4805"
 3757,WORD,WORD_NOUN,,HIRAGANA,,,公会議,こうかいぎ,,koukaigi,sobór,,,
 3758,WORD,WORD_VERB_U,,HIRAGANA,,,指す,さす,,sasu,wskazywać,,,"3067
-3293"
+3293
+5214"
 3759,WORD,WORD_NOUN,,HIRAGANA,,,指導,しどう,,shidou,"przewodnictwo
 kierownictwo
 instruktaż",,,
@@ -8025,3 +8038,69 @@ dzielić",,,1139
 5202,WORD,WORD_NOUN,,HIRAGANA,,,旅券,りょけん,,ryoken,paszport,,,
 5203,WORD,WORD_NOUN,,HIRAGANA,,,旅券査証,りょけんさしょう,,ryoken sashou,wiza,,,
 5204,WORD,WORD_NOUN,,HIRAGANA,,,有価証券,ゆうかしょうけん,,yuukashou ken,papiery wartościowe,,,
+5205,WORD,WORD_VERB_U,,HIRAGANA,,,描く,えがく,,egaku,"rysować
+szkicować
+malować
+opisywać",,,1341
+5206,WORD,WORD_VERB_U,,HIRAGANA,,,探る,さぐる,,saguru,"szukać
+szpiegować",,,
+5207,WORD,WORD_VERB_U,,HIRAGANA,,,誘う,いざなう,,izanau,"zapraszać
+prowadzić
+wabić",,,1343
+5208,WORD,WORD_VERB_RU,,HIRAGANA,,,調える,ととのえる,,totonoeru,"przygotowywać
+załatwiać
+organizować
+porządkować",,,
+5209,WORD,WORD_VERB_U,,HIRAGANA,,,調う,ととのう,,totonou,przygotowywać się,,,
+5210,WORD,WORD_NOUN,,HIRAGANA,,,調査,ちょうさ,,chousa,dochodzenie,,,
+5211,WORD,WORD_NOUN,,HIRAGANA,,,調子,ちょうし,,choushi,"stan
+kondycja
+ton
+nuta
+czas
+rytm
+styl",,,
+5212,WORD,WORD_NOUN,,HIRAGANA,,,調教,ちょうきょう,,choukyou,"oswajanie
+tresura",zwierząt,,
+5213,WORD,WORD_NOUN,,HIRAGANA,,,調整,ちょうせい,,chousei,"regulacja
+zarządzanie
+kontrola
+strojenie",,,
+5214,WORD,WORD_VERB_U,,HIRAGANA,,,差す,さす,,sasu,"trzymać (parasol)
+nosić (miecz)
+proponować (kieliszek sake)
+wręczać",,,"3067
+3293
+3758"
+5215,WORD,WORD_NOUN,,HIRAGANA,,,時差,じさ,,jisa,różnica czasu,,,
+5216,WORD,WORD_NOUN,,HIRAGANA,,,差し支え,さしつかえ,,sashitsukae,"przeszkoda
+sprzeciw",,,
+5217,WORD,WORD_VERB_U,,HIRAGANA,,,差し込む,さしこむ,,sashikomu,"wręczać
+wsadzać
+nadziewać",,,
+5218,WORD,WORD_NOUN,,HIRAGANA,,,森林,しんりん,,shinrin,las,,,
+5219,WORD,WORD_NOUN,,HIRAGANA,,,大森,おおもり,,oomori,duży las,,,
+5220,WORD,WORD_NOUN,,HIRAGANA,,,森閑,しんかん,,shinkan,cisza,,,
+5221,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,森厳,しんげん,,shingen,"poważny
+wzbudzający trwogę
+wzbudzający grozę",,,
+5222,WORD,WORD_NOUN,,HIRAGANA,,,林学,りんがく,,ringaku,leśnictwo,nauka,,
+5223,WORD,WORD_NOUN,,HIRAGANA,,,林業,りんぎょう,,ringyou,"leśnictwo
+prace leśne",,,
+5224,WORD,WORD_NOUN,,HIRAGANA,,,林道,りんどう,,rindou,droga leśna,,,
+5225,WORD,WORD_NOUN,,HIRAGANA,,,林産,りんさん,,rinsan,produkty leśne,,,
+5226,WORD,WORD_NOUN,,HIRAGANA,,,林野局,りんやきょく,,rin'yakyoku,Biuro Zarządzania Lasem,,,
+5227,WORD,WORD_VERB_U,,HIRAGANA,,,細る,ほそる,,hosoru,zeszczupleć,,,
+5228,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,細か,こまか,,komaka,"mały
+szczegółowy",,,
+5229,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,細かい,こまかい,,komakai,"mały
+szczegółowy",,,
+5230,WORD,WORD_NOUN,,HIRAGANA,,,細説,さいせつ,,saisetsu,szczegółowe wyjaśnienie,,,
+5231,WORD,WORD_NOUN,,HIRAGANA,,,委細,いさい,,isai,"szczegóły
+detale",,,
+5232,WORD,WORD_NOUN,,HIRAGANA,,,細工,さいく,,saiku,"praca
+robota
+sztuka
+umiejętność",,,
+5233,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,細心,さいしん,,saishin,ostrożność,,,
+5234,WORD,WORD_NOUN,,HIRAGANA,,,細則,さいそく,,saisoku,szczegółowy regulamin,,,
