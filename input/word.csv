@@ -580,7 +580,7 @@ zanieczyszczony",,,
 468,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,小包,こづつみ,,kodutsumi,paczka,,,
 469,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,航空便,こうくうびん,,koukuubin,"poczta lotnicza
 przesyłka lotnicza",,,
-470,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,保険,ほけん,,hoken,ubezpieczenie,,,
+470,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,保険,ほけん,,hoken,ubezpieczenie,,,5243
 471,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,書留,かきとめ,,kakitome,list polecony,,,1934
 472,WORD,WORD_NOUN,,KATAKANA,Genki 1-5,,-,エアログラム,,earoguramu,poczta lotnicza,,,
 473,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,封書,ふうしょ,,fuusho,list,bardzo oficjalnie,,
@@ -1084,7 +1084,8 @@ senny
 zmęczony",,,
 840,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-10,,簡単,かんたん,,kantan,"łatwy
 prosty",,,
-841,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,-,かかる,,kakaru,zajmować,"czas/pieniądze, bez partykuły",,4551
+841,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-10,,-,かかる,,kakaru,zajmować,"czas/pieniądze, bez partykuły",,"4551
+5238"
 842,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 1-10,に,泊まる,とまる,ni,tomaru,"zatrzymywać się
 nocować
 kotwiczyć",w hotelu i etc,,2210
@@ -1866,8 +1867,11 @@ być importowanym",,,
 cienki
 szczupły",,,
 1381,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,薄い,うすい,,usui,"cienki
+słaby
 jasny kolor","np. materiał, np. pastelowy",,
-1382,WORD,WORD_VERB_RU,,HIRAGANA,,,掛ける,かける,,kakeru,powiesić coś na czymś,,,3844
+1382,WORD,WORD_VERB_RU,,HIRAGANA,,,掛ける,かける,,kakeru,"wieszać
+powiesić coś na czymś
+mnożyć",,,3844
 1383,WORD,WORD_NOUN,,HIRAGANA,,,角,かど,,kado,róg,,,4532
 1384,WORD,WORD_VERB_U,,HIRAGANA,,,に気がつく,にきがつく,,niki ga tsuku,zauważyć,,,
 1385,WORD,UNKNOWN,,HIRAGANA,,,美,び,,bi,piękno,,,
@@ -1896,12 +1900,15 @@ wyciągać",,,
 1402,WORD,WORD_NOUN,,HIRAGANA,,,霞み,かすみ,,kasumi,"mgła
 zamglenie
 zamazany
+nieprzejrzysty
 zamglony (np. obraz)",,,
 1403,WORD,WORD_NOUN,,HIRAGANA,,,前髪,まえがみ,,maegami,grzywka,,,
 1404,WORD,WORD_EXPRESSION,,HIRAGANA,,,-,まま,,mama,"stan taki, jaki jest",~ no,,
 1405,WORD,WORD_EXPRESSION,,HIRAGANA,,,今のまま,いまのまま,,ima no mama,"stan taki, jaki jest dzisiaj",,,
 1406,WORD,WORD_VERB_U,,HIRAGANA,,,励ます,はげます,,hagemasu,"zachęcać kogoś
-podnosić na duchu",,,
+podnosić na duchu
+dodawać otuchy
+pobudzać",,,
 1407,WORD,WORD_VERB_U,,HIRAGANA,,,気に入る,きにはいる,,ki ni hairu,spodobać się,,,
 1408,WORD,WORD_EXPRESSION,,HIRAGANA,,,-,やすい,,yasui,łatwość robienia czegoś,+ czasownik bez masu,,213
 1409,WORD,WORD_EXPRESSION,,HIRAGANA,,,食べやすい,たべやすい,,tabe yasui,łatwość jedzenia,,,
@@ -1909,8 +1916,8 @@ podnosić na duchu",,,
 1411,WORD,UNKNOWN,,HIRAGANA,,,贅沢,ぜいたく,,zeitaku,luksus,,,
 1412,WORD,WORD_VERB_U,,HIRAGANA,,,お腹がすく,おなかがすく,,onaka ga suku,być głodnym,,NO,
 1413,WORD,WORD_EXPRESSION,,HIRAGANA,,,お腹がすいた,おなかがすいた,,onaka ga suita,być głodnym,,,
-1414,WORD,WORD_VERB_U,,HIRAGANA,,,腹減る,はらへる,,hara heru,być głodnym,,,
-1415,WORD,WORD_EXPRESSION,,HIRAGANA,,,腹減った,はらへった,,hara hetta,być głodnym,,,
+1414,WORD,WORD_VERB_U,,HIRAGANA,,,腹減る,はらへる,,haraheru,być głodnym,,,
+1415,WORD,WORD_EXPRESSION,,HIRAGANA,,,腹減った,はらへった,,harahetta,być głodnym,,,
 1416,WORD,WORD_EXPRESSION,,HIRAGANA,,,小腹,こばら,,kobara,mały głodek,,,
 1417,WORD,WORD_EXPRESSION,,HIRAGANA,,,小腹がすいた,こばらがすいた,,kobara ga suita,być troszeczkę głodny,,,
 1418,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,立派,りっぱ,,rippa,"wspaniały
@@ -6302,7 +6309,7 @@ dochodzenie",,,
 4236,WORD,WORD_NOUN,,HIRAGANA,,,検定,けんてい,,kentei,"oficjalne potwierdzenie
 autoryzacja",,,
 4237,WORD,WORD_NOUN,,HIRAGANA,,,検証,けんしょう,,kenshou,"sprawdzanie
-inspekcja",,,
+inspekcja",,,5241
 4238,WORD,WORD_NOUN,,HIRAGANA,,,電球,でんきゅう,,denkyuu,żarówka,,,
 4239,WORD,WORD_NOUN,,HIRAGANA,,,軽気球,けいききゅう,,keikikyuu,balon,na gorące powietrze lub hel,,
 4240,WORD,WORD_NOUN,,HIRAGANA,,,球場,きゅうじょう,,kyuujou,stadion baseball'owy,,,3904
@@ -6432,7 +6439,7 @@ ciągnąć się (np. dni)",,NO,
 4798
 5061"
 4303,WORD,WORD_VERB_RU,,HIRAGANA,,,経る,へる,,heru,"przechodzić przez
-doświadczenie",,,
+doświadczenie",,,5250
 4304,WORD,WORD_NOUN,,HIRAGANA,,,経理,けいり,,keiri,"zarządzanie
 rachunkowość",,,
 4305,WORD,WORD_NOUN,,HIRAGANA,,,経営,けいえい,,keiei,"konstrukcja
@@ -6868,10 +6875,11 @@ brzeg",,,
 4550,WORD,WORD_VERB_U,,HIRAGANA,,,係わる,かかわる,,kakawaru,"dotyczyć
 być zaangażowanym",,,
 4551,WORD,WORD_VERB_U,,HIRAGANA,,,係る,かかる,,kakaru,"oddziaływać
-mieć wpływ",,,841
+mieć wpływ",,,"841
+5238"
 4552,WORD,WORD_NOUN,,HIRAGANA,,,係,かかり,,kakari,"funkcja
 obowiązek
-człowiek odpowiedzialny",,,
+człowiek odpowiedzialny",,,5239
 4553,WORD,WORD_NOUN,,HIRAGANA,,,連係,れんけい,,renkei,"połączenie
 związek",,,
 4554,WORD,WORD_NOUN,,HIRAGANA,,,係員,かかりいん,,kakariin,członek obsługi,,,
@@ -7873,7 +7881,7 @@ symbolizować",,,
 5106,WORD,WORD_NOUN,,HIRAGANA,,,印象,いんしょう,,inshou,wrażenie,,,
 5107,WORD,WORD_NOUN,,HIRAGANA,,,象徴,しょうちょう,,shouchou,symbol,,,
 5108,WORD,WORD_NOUN,,HIRAGANA,,,現象,げんしょう,,genshou,"zjawisko
-fenomen",,,
+fenomen",,,5252
 5109,WORD,WORD_NOUN,,HIRAGANA,,,象牙,ぞうげ,,zouge,kość słoniowa,,,
 5110,WORD,WORD_NOUN,,HIRAGANA,,,象形,しょうけい,,shoukei,"hieroglif
 podobizna",,,
@@ -8104,3 +8112,48 @@ sztuka
 umiejętność",,,
 5233,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,細心,さいしん,,saishin,ostrożność,,,
 5234,WORD,WORD_NOUN,,HIRAGANA,,,細則,さいそく,,saisoku,szczegółowy regulamin,,,
+5235,WORD,WORD_VERB_U,,HIRAGANA,,,薄まる,うすまる,,usumaru,"stawać się cienkim
+stawać się słabym",,,
+5236,WORD,WORD_VERB_RU,,HIRAGANA,,,薄める,うすめる,,usumeru,"robić cienkim
+rozcieńczać",,,
+5237,WORD,WORD_VERB_U,,HIRAGANA,,,薄らぐ,うすらぐ,,usuragu,"chudnąć
+blednąć",,,
+5238,WORD,WORD_VERB_U,,HIRAGANA,,,掛かる,かかる,,kakaru,"wisieć
+być zawieszonym
+kosztować
+wymagać",,,"841
+4551"
+5239,WORD,WORD_NOUN,,HIRAGANA,,,掛かり,かかり,,kakari,"koszt
+obowiązek
+interes
+podatek
+zależność",,,4552
+5240,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,健やか,すこやか,,sukoyaka,zdrowy,,,
+5241,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,健勝,けんしょう,,kenshou,zdrowy,,,4237
+5242,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,健在,けんざい,,kenzai,zdrowy,,,
+5243,WORD,WORD_NOUN,,HIRAGANA,,,保健,ほけん,,hoken,"higiena
+troska o zdrowie",,,470
+5244,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,強健,きょうけん,,kyouken,"w bardzo dobrym stanie zdrowia
+w dobrej kondycji",,,
+5245,WORD,WORD_NOUN,,HIRAGANA,,,小康,しょうこう,,shoukou,"chwilowa cisza
+zastój",,,
+5246,WORD,WORD_NOUN,,HIRAGANA,,,梅,うめ,,ume,śliwa,,,
+5247,WORD,WORD_VERB_U,,HIRAGANA,,,励む,はげむ,,hagemu,"przykładać się
+być pilnym",,,
+5248,WORD,WORD_NOUN,,HIRAGANA,,,励み,はげみ,,hagemi,"stymulacja
+zachęta
+poparcie",,,
+5249,WORD,WORD_NOUN,,HIRAGANA,,,沢,さわ,,sawa,"bagno
+moczary",,,
+5250,WORD,WORD_VERB_U,,HIRAGANA,,,減る,へる,,heru,"zmniejszać się
+maleć",,,4303
+5251,WORD,WORD_VERB_U,,HIRAGANA,,,減らす,へらす,,herasu,"zmniejszać
+ograniczać",,,
+5252,WORD,WORD_NOUN,,HIRAGANA,,,減少,げんしょう,,genshou,"redukcja
+ograniczanie
+zmniejszanie",,,5108
+5253,WORD,WORD_NOUN,,HIRAGANA,,,半減,はんげん,,hangen,zmniejszać o połowę,,,
+5254,WORD,WORD_NOUN,,HIRAGANA,,,減法,げんぽう,,genpou,odejmowanie,,,
+5255,WORD,WORD_NOUN,,HIRAGANA,,,減刑,げんけい,,genkei,redukowanie kary,,,
+5256,WORD,WORD_NOUN,,HIRAGANA,,,減価,げんか,,genka,"obniżka cen
+przecena",,,
