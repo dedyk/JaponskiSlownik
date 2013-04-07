@@ -19,7 +19,7 @@ shichi",siedem,,,4097
 9,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,八,はち,,hachi,osiem,,,
 10,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,九,"きゅう
 く",,"kyuu
-ku",dziewięć,,,
+ku",dziewięć,,,5257
 11,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,十,じゅう,,juu,dziesięć,,,"790
 1368
 1469"
@@ -238,7 +238,7 @@ alkohol",,NO,
 204,WORD,WORD_NOUN,,KATAKANA,Genki 1-2,,-,マーカー,,maakaa,marker,,,
 205,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,母,はは,,haha,matka,"własna rodzina, formalnie",,
 206,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,父,ちち,,chichi,ojciec,"własna rodzina, formalnie",,
-207,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,歯,は,,ha,ząb,,,
+207,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,歯,は,,ha,ząb,,,5264
 208,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,日,ひ,,hi,"słońce
 dzień",,,"1501
 4912"
@@ -2047,7 +2047,7 @@ dolna część",,NO,
 1521,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-4,,三時半,さんじはん,,sanji han,3:30,,,
 1522,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-4,,半分,はんぶん,,hanbun,połowa,,,
 1523,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,山,やま,,yama,góra,,NO,
-1524,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,富士山,ふじさん,,Fuji san,Góra Fuji,,,
+1524,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,富士山,ふじさん,,Fuji san,góra Fuji,,,
 1525,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,川,かわ,,kawa,rzeka,,,3495
 1526,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,小川さん,おがわさん,,Ogawa san,Pan Ogawa,,,
 1527,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-5,,元気,げんき,,genki,"zdrowy
@@ -2107,7 +2107,9 @@ jadalnia",,NO,
 1576,KANJI,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki kanji 1-6,を,出す,だす,o,dasu,"wyjmować
 wyjąć
 wyciągać",,NO,
-1577,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-6,,出席,しゅっせき,,shusseki,nadzór,,,
+1577,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-6,,出席,しゅっせき,,shusseki,"nadzór
+dozór
+obecność",,,
 1578,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-6,,輸出,ゆしゅつ,,yushutsu,eksport,,,
 1579,KANJI,WORD_LOCATION,,HIRAGANA,Genki kanji 1-6,,右,みぎ,,migi,prawo,kierunek,NO,
 1580,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-6,,右折,うせつ,,usetsu,skręcić w prawo,,,
@@ -5320,8 +5322,11 @@ ustalona przerwa",,,"4777
 5194"
 3637,WORD,WORD_NOUN,,HIRAGANA,,,定住地,ていじゅうち,,teijuuchi,miejsce stałego zamieszkania,,,
 3638,WORD,WORD_NOUN,,HIRAGANA,,,席,せき,,seki,"miejsce
-miejsce siedzące","np. w pociągu, w teatrze",,"984
-3627"
+miejsce siedzące
+siedzenie
+mata","np. w pociągu, w teatrze",,"984
+3627
+5279"
 3639,WORD,UNKNOWN,,HIRAGANA,,,難い,かたい,,katai,"trudny
 ciężki",,,2019
 3640,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,困難,こんなん,,konnan,"trudność
@@ -6030,7 +6035,7 @@ dochodzenie",,,
 4061,WORD,WORD_NOUN,,HIRAGANA,,,視察,しさつ,,shisatsu,"inspekcja
 obserwacja",,,
 4062,WORD,WORD_NOUN,,HIRAGANA,,,観察,かんさつ,,kansatsu,obserwacja,,,
-4063,WORD,WORD_NOUN,,HIRAGANA,,,進級,しんきゅう,,shinkyuu,promocja,"np. w wojsku, w szkole",,
+4063,WORD,WORD_NOUN,,HIRAGANA,,,進級,しんきゅう,,shinkyuu,promocja,"np. w wojsku, w szkole",,5259
 4064,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,高級,こうきゅう,,koukyuu,"wysoka klasa
 wysoka ranga
 de luxe",,,
@@ -6935,9 +6940,9 @@ polityka finansowa",,,
 serwetka",,,
 4584,WORD,WORD_NOUN,,HIRAGANA,,,布告,ふこく,,fukoku,"proklamacja
 deklaracja
-zawiadomienie",,,
+zawiadomienie",,,5275
 4585,WORD,WORD_NOUN,,HIRAGANA,,,布教,ふきょう,,fukyou,"propaganda (religii)
-praca misyjna",,,
+praca misyjna",,,5276
 4586,WORD,WORD_NOUN,,HIRAGANA,,,布石,ふせき,,fuseki,"wstęp
 rozpoczęcie
 przygotowanie",,,
@@ -7955,7 +7960,8 @@ wypełniać się
 realizować się",,,
 5145,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,満足,まんぞく,,manzoku,"zaspokojenie
 satysfakcja",,,
-5146,WORD,WORD_NOUN,,HIRAGANA,,,満席,まんせき,,manseki,wszystkie miejsca zajęte,,,
+5146,WORD,WORD_NOUN,,HIRAGANA,,,満席,まんせき,,manseki,"wszystkie miejsca zajęte
+brak wolnych miejsc",,,
 5147,WORD,WORD_NOUN,,HIRAGANA,,,満月,まんげつ,,mangetsu,pełnia księżyca,,,
 5148,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,満腹,まんぷく,,manpuku,"być najedzonym
 mieć pełny brzuch",,,
@@ -8157,3 +8163,52 @@ zmniejszanie",,,5108
 5255,WORD,WORD_NOUN,,HIRAGANA,,,減刑,げんけい,,genkei,redukowanie kary,,,
 5256,WORD,WORD_NOUN,,HIRAGANA,,,減価,げんか,,genka,"obniżka cen
 przecena",,,
+5257,WORD,WORD_NOUN,,HIRAGANA,,,旧,きゅう,,kyuu,"stary
+poprzedni",prefiks do określania starych rzeczy,,10
+5258,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,旧式,きゅうしき,,kyuushiki,"stary typ
+staromodny",,,
+5259,WORD,WORD_NOUN,,HIRAGANA,,,新旧,しんきゅう,,shinkyuu,nowy i stary,,,4063
+5260,WORD,WORD_NOUN,,HIRAGANA,,,復旧,ふっきゅう,,fukkyuu,"naprawa
+przywracanie do pierwotnego stanu",,,
+5261,WORD,WORD_NOUN,,HIRAGANA,,,旧悪,きゅうあく,,kyuuaku,"przeszłe przekroczenie
+poprzednie przekroczenie",,,
+5262,WORD,WORD_NOUN,,HIRAGANA,,,旧約聖書,きゅうやくせいしょ,,kyuuyakuseisho,Stary Testament,,,
+5263,WORD,WORD_NOUN,,HIRAGANA,,,街,がい,,gai,"ulica
+centrum (miasta)",,,
+5264,WORD,WORD_NOUN,,HIRAGANA,,,派,は,,ha,"grupa
+partia
+klika
+sekta
+szkoła",,,207
+5265,WORD,WORD_NOUN,,HIRAGANA,,,派遣,はけん,,haken,"wysyłka
+wysłanie
+ekspediowanie",,,
+5266,WORD,WORD_NOUN,,HIRAGANA,,,派別,はべつ,,habetsu,podział,"na sekty, szkoły itp.",,
+5267,WORD,WORD_NOUN,,HIRAGANA,,,宗派,しゅうは,,shuuha,sekta religijna,,,
+5268,WORD,WORD_NOUN,,HIRAGANA,,,派生,はせい,,hasei,podział,rozmnażanie przez podział,,
+5269,WORD,WORD_NOUN,,HIRAGANA,,,派出所,はしゅつじょ,,hashutsujo,"oddział
+budka policyjna",,,
+5270,WORD,WORD_NOUN,,HIRAGANA,,,萩,はぎ,,hagi,lespedeza,rodzaj kwiatu,,
+5271,WORD,WORD_NOUN,,HIRAGANA,,,泥,どろ,,doro,"błoto
+bagno
+muł",,,
+5272,WORD,WORD_NOUN,,HIRAGANA,,,棒,ぼう,,bou,"drążek
+kij
+laska
+palik
+tyczka
+słupek",,,
+5273,WORD,WORD_NOUN,,HIRAGANA,,,富,とみ,,tomi,bogactwo,,,
+5274,WORD,WORD_VERB_U,,HIRAGANA,,,富む,とむ,,tomu,"być bogatym
+obfitować",,,
+5275,WORD,WORD_NOUN,,HIRAGANA,,,富国,ふこく,,fukoku,bogate państwo,,,4584
+5276,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,富強,ふきょう,,fukyou,bogactwo i siła,,,4585
+5277,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,富裕,ふゆう,,fuyuu,"bogactwo
+obfitość",,,
+5278,WORD,WORD_NOUN,,HIRAGANA,,,富豪,ふごう,,fugou,"bogaty człowiek
+milioner",,,
+5279,WORD,WORD_NOUN,,HIRAGANA,,,席,むしろ,,mushiro,słomiana mata,,,3638
+5280,WORD,WORD_NOUN,,HIRAGANA,,,席次,せきじ,,sekiji,"kolejność miejsc
+kolejność siedzeń
+pierwszeństwo",,,
+5281,WORD,WORD_NOUN,,HIRAGANA,,,欠席,けっせき,,kesseki,nieobecność,,,
