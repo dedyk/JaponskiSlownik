@@ -207,7 +207,8 @@ wysoki","pieniądze, wzrost",,
 176,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-2,,三百,さんびゃく,,sanbyaku,trzysta,,,
 177,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-2,,六百,ろっぴゃく,,roppyaku,sześćset,,,
 178,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-2,,八百,はっぴゃく,,happyaku,osiemset,,,
-179,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-2,,千,せん,,sen,tysiąc,,,4890
+179,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-2,,千,せん,,sen,tysiąc,,,"4890
+5432"
 180,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-2,,三千,さんぜん,,sanzen,trzy tysiące,,,
 181,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-2,,八千,はっせん,,hassen,osiem tysięcy,,,
 182,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-2,,一万,いちまん,,ichiman,dziesięć tysięcy,,,
@@ -735,7 +736,8 @@ ręka",,,
 568,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,背中,せなか,,senaka,plecy,,,
 569,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,-,おしり,,oshiri,pośladek,,,
 570,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,顔,かお,,kao,twarz,,NO,
-571,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,肩,かた,,kata,ramię,,,5372
+571,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,肩,かた,,kata,ramię,,,"5372
+5433"
 572,WORD,WORD_NOUN,,HIRAGANA,Genki 1-7,,胸,むね,,mune,"klatka piersiowa
 piersi
 serce",,,
@@ -1656,7 +1658,7 @@ takiego rodzaju",blisko mówcy,,
 1216,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-14,,-,よく,,yoku,dobrze,,,"269
 3896"
 1217,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,個,こ,,ko,[liczenie małych przedmiotów],~,,4791
-1218,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,冊,さつ,,satsu,[liczenie wolumenów],"~, przedmioty nie mające określonego kształtu",,
+1218,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,冊,さつ,,satsu,[liczenie wolumenów],"~, przedmioty nie mające określonego kształtu",,5430
 1219,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,台,だい,,dai,[liczenie urządzeń],~,,"3974
 4021"
 1220,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,匹,ひき,,hiki,[liczenie małych zwierząt],~,,
@@ -7511,7 +7513,8 @@ linia kolejowa",,,
 4890,WORD,WORD_NOUN,,HIRAGANA,,,線,せん,,sen,"linia
 szlak
 tor
-drut",,,179
+drut",,,"179
+5432"
 4891,WORD,WORD_NOUN,,HIRAGANA,,,線路,せんろ,,senro,linia kolejowa,,,
 4892,WORD,WORD_NOUN,,HIRAGANA,,,電線,でんせん,,densen,przewód elektryczny,,,
 4893,WORD,WORD_NOUN,,HIRAGANA,,,無線,むせん,,musen,krótkofalówka,,,
@@ -8452,7 +8455,8 @@ ciecz",,,
 skraplanie",,,
 5372,WORD,WORD_NOUN,,HIRAGANA,,,型,かた,,kata,"typ
 model
-forma",,,571
+forma",,,"571
+5433"
 5373,WORD,WORD_NOUN,,HIRAGANA_KATAKANA,,,大型トラック,おおがたトラック,,oogata torakku,duża ciężarówka,,,
 5374,WORD,WORD_NOUN,,HIRAGANA,,,原型,げんけい,,genkei,"prototyp
 model",,,5255
@@ -8550,3 +8554,32 @@ przypominać (sobie)",,,
 5422,WORD,WORD_NOUN,,HIRAGANA,,,芋,いも,,imo,"ziemniak
 kartofel
 bulwa",,,
+5423,WORD,WORD_NOUN,,HIRAGANA,,,横,よこ,,yoko,"strona
+bok
+poziomo",,,
+5424,WORD,WORD_NOUN,,HIRAGANA,,,横道,よこみち,,yokomichi,"boczna uliczka
+dygresja",,,
+5425,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,横着,おうちゃく,,ouchaku,"nieuczciwość
+oszukiwanie
+lenistwo",,,
+5426,WORD,WORD_NOUN,,HIRAGANA,,,横断,おうだん,,oudan,skrzyżowanie,,,
+5427,WORD,WORD_NOUN,,HIRAGANA,,,横断歩道,おうだんほどう,,oudan hodou,przejście dla pieszych,,,
+5428,WORD,WORD_NOUN,,HIRAGANA,,,横顔,よこがお,,yokogao,profil twarzy,,,
+5429,WORD,WORD_NOUN,,HIRAGANA,,,浜,はま,,hama,"plaża
+wybrzeże",,,
+5430,WORD,WORD_NOUN,,HIRAGANA,,,札,さつ,,satsu,banknot,,,"
+1218
+5431"
+5431,WORD,WORD_NOUN,,HIRAGANA,,,札,ぶだ,,buda,"etykietka
+tabliczka
+kartka
+plakietka",,,5430
+5432,WORD,WORD_NOUN,,HIRAGANA,,,仙,せん,,sen,"pustelnik
+czarownik
+guślarz",,,"179
+4890"
+5433,WORD,WORD_NOUN,,HIRAGANA,,,潟,かた,,kata,"laguna
+zalew
+mała zatoka
+plaża",,,"571
+5372"
