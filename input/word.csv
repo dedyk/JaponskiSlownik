@@ -84,7 +84,7 @@ dziękuję",,,
 bardzo miło mi",,,
 65,WORD,WORD_GREETING,,HIRAGANA,Genki 1-1,,どうぞよろしくお願いします,どうぞよろしくおねがいします,,douzo yoroshiku onegai shimasu,"miło Cię spotkać
 bardzo miło mi",kierowane do osoby wyżej postawionej,,
-66,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,今,いま,,ima,teraz,,,
+66,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,今,いま,,ima,teraz,,,5478
 67,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,半,はん,,han,połowa,,,
 68,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,-,あの,,ano,um,,,130
 69,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,英語,えいご,,eigo,język angielski,,,
@@ -467,7 +467,7 @@ istnieć",do rzeczy martwych,,1056
 384,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,待つ,まつ,o,matsu,czekać,,,"274
 3714"
 385,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-4,が,-,わかる,ga,wakaru,rozumieć,,,
-386,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-4,が,-,いる,ga,iru,"być
+386,WORD,WORD_VERB_RU,,HIRAGANA,Genki 1-4,が,居る,いる,ga,iru,"być
 istnieć","miejsce ni, do rzeczy żywych",,704
 387,WORD,UNKNOWN,,HIRAGANA,Genki 1-4,,-,ぐらい,,gurai,około,ogólne,,
 388,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-4,,-,ごめんなさい,,gomen nasai,przepraszam,,,
@@ -805,7 +805,7 @@ uroczy",,,
 624,WORD,UNKNOWN,,HIRAGANA,Genki 1-7,,背,せ,,se,wzrost,,,
 625,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,背が高い,せがたかい,,se ga takai,wysoki,,,
 626,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,背が低い,せがひくい,,se ga hikui,niski,,,
-627,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,長い,ながい,,nagai,długi,,,
+627,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,長い,ながい,,nagai,długi,,,5479
 628,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,速い,はやい,,hayai,"szybki
 prędki",,,263
 629,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,短い,みじかい,,mijikai,krótki,,,
@@ -2059,7 +2059,8 @@ dolna część",,NO,
 1522,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-4,,半分,はんぶん,,hanbun,połowa,,,
 1523,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,山,やま,,yama,góra,,NO,
 1524,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,富士山,ふじさん,,Fuji san,góra Fuji,,,
-1525,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,川,かわ,,kawa,rzeka,,,3495
+1525,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,川,かわ,,kawa,rzeka,,,"3495
+5464"
 1526,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,小川さん,おがわさん,,Ogawa san,Pan Ogawa,,,
 1527,KANJI,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-5,,元気,げんき,,genki,"zdrowy
 energiczny",,NO,
@@ -2873,7 +2874,8 @@ tenis stołowy",,,
 2173,WORD,WORD_NOUN,,KATAKANA,,,-,イタリア,,itaria,Włochy,,,
 2174,WORD,WORD_NOUN,,KATAKANA,,,-,アルゼンチン,,aruzenchin,Argentyna,,,
 2175,WORD,WORD_NOUN,,HIRAGANA,,,涙,なみだ,,namida,"łza
-łzy",,,
+łzy
+współczucie",,,
 2176,WORD,WORD_NOUN,,KATAKANA,,,-,イグルー,,iguruu,iglo,,,
 2177,WORD,WORD_NOUN,,HIRAGANA,,,三角,さんかく,,sankaku,trójkąt,,,
 2178,WORD,WORD_NOUN,,HIRAGANA,,,振り仮名,ふりがな,,furigana,furigana,małe pomocnicze czytanie umieszczane tuż obok znaku kanji,,
@@ -2906,7 +2908,8 @@ marusu",Mars,planeta,,
 2202,WORD,WORD_NOUN,,HIRAGANA,,,刺繍の絵,ししゅうのえ,,shishuu no e,haftowany obraz,,,
 2203,WORD,WORD_NOUN,,KATAKANA,,,-,ネックレース,,nekkureesu,naszyjnik,,,
 2204,WORD,WORD_EXPRESSION,,HIRAGANA,,,十人十色,じゅうにんといろ,,juu nin to iro,"wiele ludzi, wiele opinii","dosł. 10 osób, 10 kolorów",,
-2205,WORD,WORD_NOUN,,HIRAGANA,,,瓶,びん,,bin,butelka,,,828
+2205,WORD,WORD_NOUN,,HIRAGANA,,,瓶,びん,,bin,"butelka
+słoik",,,828
 2206,WORD,WORD_EXPRESSION,,HIRAGANA,,,-,そんな,,sonna,"jak tak
 taki
 takiego rodzaju",blisko osoby docelowej,,
@@ -3406,7 +3409,8 @@ kucharz",,,
 2518,WORD,WORD_NOUN,,KATAKANA,,,-,タクシー,,takushii,taxi,,,
 2519,WORD,WORD_NOUN,,HIRAGANA,,,烏賊,いか,,ika,kalmar,,,2619
 2520,WORD,WORD_NOUN,,HIRAGANA,,,蛸,たこ,,tako,ośmiornica,,,
-2521,WORD,WORD_NOUN,,HIRAGANA,,,側,がわ,,gawa,strona,czegoś,,3495
+2521,WORD,WORD_NOUN,,HIRAGANA,,,側,がわ,,gawa,strona,czegoś,,"3495
+5464"
 2522,WORD,WORD_NOUN,,HIRAGANA,,,右側,みぎがわ,,migi gawa,prawa strona,,,
 2523,WORD,WORD_NOUN,,HIRAGANA,,,左側,ひだりがわ,,hidari gawa,lewa strona,,,
 2524,WORD,WORD_NOUN,,HIRAGANA,,,布団,ふとん,,futon,"futon
@@ -5062,7 +5066,7 @@ próbować jedzenia",,,
 eksperymentalna produkcja
 uprawa",,,
 3475,WORD,WORD_NOUN,,HIRAGANA,,,歌詞,かし,,kashi,"słowa piosenki
-tekst",,,
+tekst",,,5467
 3476,WORD,WORD_NOUN,,HIRAGANA,,,数,かず,,kazu,liczba,,,
 3477,WORD,WORD_NOUN,,HIRAGANA,,,数字,すうじ,,suuji,cyfra,,,
 3478,WORD,UNKNOWN,,HIRAGANA,,,数回,すうかい,,suukai,kilka razy,,,
@@ -5094,7 +5098,8 @@ monarchia",,,
 3493,WORD,WORD_NOUN,,HIRAGANA,,,葉末,はずえ,,hazue,koniuszek liścia,,,
 3494,WORD,WORD_NOUN,,HIRAGANA,,,葉緑素,ようりょくそ,,youryokuso,chlorofil,,,
 3495,WORD,WORD_NOUN,,HIRAGANA,,,側,かわ,,kawa,strona,,,"1525
-2521"
+2521
+5464"
 3496,WORD,WORD_NOUN,,HIRAGANA,,,側面,そくめん,,sokumen,"strona
 bok",,,
 3497,WORD,WORD_NOUN,,HIRAGANA,,,反対側,はんたいがわ,,hantai gawa,przeciwna strona,,,
@@ -8062,7 +8067,7 @@ rysunek",,,
 5180,WORD,WORD_NOUN,,HIRAGANA,,,絵葉書,えはがき,,ehagaki,widokówka,,,
 5181,WORD,WORD_VERB_U,,HIRAGANA,,,震る,ふるう,,furuu,"trząść się
 dygotać
-wibrować",,,
+wibrować",,,5470
 5182,WORD,WORD_VERB_RU,,HIRAGANA,,,震える,ふるえる,,furueru,"trząść się
 dygotać
 wibrować",,,
@@ -8078,7 +8083,7 @@ inercja",,,
 5188,WORD,WORD_NOUN,,HIRAGANA,,,所得税,しょとくぜい,,shotokuzei,podatek dochodowy,,,
 5189,WORD,WORD_NOUN,,HIRAGANA,,,無税,むぜい,,muzei,"wolny od podatku
 wolny od cła",,,
-5190,WORD,WORD_NOUN,,HIRAGANA,,,家庭,かてい,,katei,rodzina,,,
+5190,WORD,WORD_NOUN,,HIRAGANA,,,家庭,かてい,,katei,rodzina,,,5477
 5191,WORD,WORD_NOUN,,HIRAGANA,,,庭園,ていえん,,teien,"ogród
 park",,,
 5192,WORD,WORD_NOUN,,HIRAGANA,,,中庭,なかにわ,,naka niwa,ogród wewnętrzny,,,
@@ -8629,3 +8634,38 @@ bogactwo",,,
 korpulentny
 tęgi",,,
 5463,WORD,WORD_SURNAME_NAME,,HIRAGANA,,,豊田,とよた,,toyota,Toyota,,,
+5464,WORD,WORD_NOUN,,HIRAGANA,,,河,かわ,,kawa,rzeka,,,"1525
+3495"
+5465,WORD,WORD_NOUN,,HIRAGANA,,,河川,かせん,,kasen,rzeki,,,
+5466,WORD,WORD_NOUN,,HIRAGANA,,,銀河,ぎんが,,ginga,Droga Mleczna,,,
+5467,WORD,WORD_NOUN,,HIRAGANA,,,河岸,かし,,kashi,brzeg rzeki,,,3475
+5468,WORD,WORD_NOUN,,HIRAGANA,,,卓,たく,,taku,"stół
+biurko",,,
+5469,WORD,WORD_VERB_U,,HIRAGANA,,,振る,ふる,,furu,"trząść się
+falować
+skręcać się
+porzucać
+odrzucać",,,
+5470,WORD,WORD_VERB_U,,HIRAGANA,,,振う,ふるう,,furuu,"wykonywać
+przedstawiać
+pokazywać",,,5181
+5471,WORD,WORD_NOUN,,HIRAGANA,,,振り,ふり,,furi,"wygląd
+pozór
+gest",,,
+5472,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,仮,かり,,kari,"tymczasowy
+przejściowy",,,
+5473,WORD,WORD_NOUN,,HIRAGANA,,,仮説,かせつ,,kasetsu,"hipoteza
+przypuszczenie",,,
+5474,WORD,WORD_NOUN,,HIRAGANA,,,仮病,けびょう,,kebyou,symulowana choroba,,,
+5475,WORD,WORD_NOUN,,HIRAGANA,,,仮想,かそう,,kasou,"wyobrażenie
+przypuszczenie",,,
+5476,WORD,WORD_NOUN,,HIRAGANA,,,仮住まい,かりずまい,,karizumai,"miejsce tymczasowego zamieszkania
+miejsce tymczasowego pobytu",,,
+5477,WORD,WORD_NOUN,,HIRAGANA,,,仮定,かてい,,katei,"przypuszczenie
+hipoteza",,,5190
+5478,WORD,WORD_NOUN,,HIRAGANA,,,居間,いま,,ima,pokój,w stylu zachodnim,,66
+5479,WORD,WORD_NOUN,,HIRAGANA,,,長居,ながい,,nagai,długi pobyt,,,627
+5480,WORD,WORD_NOUN,,HIRAGANA,,,住居,じゅうきょ,,juukyo,"mieszkanie
+miejsce pobytu",,,
+5481,WORD,WORD_NOUN,,HIRAGANA,,,居住地,きょじゅうち,,kyojuuchi,miejsce zamieszkania,,,
+5482,WORD,WORD_NOUN,,HIRAGANA,,,居眠り,いねむり,,inemuri,drzemka,,,
