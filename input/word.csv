@@ -3,7 +3,8 @@
 rei",zero,,,957
 2,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,一,いち,,ichi,jeden,,,3533
 3,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,二,に,,ni,dwa,,,
-4,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,三,さん,,san,trzy,,,77
+4,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,三,さん,,san,trzy,,,"77
+5510"
 5,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,四,"し
 よん
 よ",,"shi
@@ -96,7 +97,8 @@ bardzo miło mi",kierowane do osoby wyżej postawionej,,
 74,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,午後,ごご,,gogo,pm,czas,,
 75,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,午前,ごぜん,,gozen,am,czas,,
 76,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,歳,さい,,sai,... lat,,,2706
-77,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,-,さん,,san,... Pan,,,4
+77,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,-,さん,,san,... Pan,,,"4
+5510"
 78,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,時,じ,,ji,... godzina,,,"370
 4659"
 79,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,人,じん,,jin,... człowiek,,,"297
@@ -3017,7 +3019,7 @@ operator kamery",,,
 żeń-szeń",,,
 2262,WORD,WORD_NOUN,,HIRAGANA,,,島,しま,,shima,wyspa,,,
 2263,WORD,UNKNOWN,,HIRAGANA,,,年下,としした,,toshi shita,młodszy wiekiem,,,
-2264,WORD,WORD_NOUN,,HIRAGANA,,,お墓,おはか,,ohaka,"grób
+2264,WORD,WORD_NOUN,,HIRAGANA,,,墓,はか,,haka,"grób
 grobowiec",,,
 2265,WORD,UNKNOWN,,HIRAGANA,,,その他,そのた,,sonota,inny,,,
 2266,WORD,WORD_NOUN,,KATAKANA,,,-,タンポポ,,tanpopo,"mlecz
@@ -3025,7 +3027,8 @@ mniszek lekarski
 mniszek pospolity",,,
 2267,WORD,WORD_VERB_RU,,HIRAGANA,,,溜める,ためる,,tameru,"gromadzić
 zbierać",,,2268
-2268,WORD,WORD_VERB_RU,,HIRAGANA,,,貯める,ためる,,tameru,oszczędzać,np. w banku,,2267
+2268,WORD,WORD_VERB_RU,,HIRAGANA,,,貯める,ためる,,tameru,"oszczędzać
+gromadzić",np. w banku,,2267
 2269,WORD,UNKNOWN,,KATAKANA,,,-,マーケティングコミュニケーション,,maaketingu komyunikeeshon,komunikacja marketingowa,,,
 2270,WORD,UNKNOWN,,KATAKANA,,,-,ベジタリアン,,bejitarian,wegetarianin,,,
 2271,WORD,WORD_VERB_U,,HIRAGANA,,を,登る,のぼる,o,noboru,"wspinać się po górach
@@ -5996,7 +5999,8 @@ rozdawać",,,
 gatunek",,NO,
 4016,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,事務,じむ,,jimu,praca biurowa,,,
 4017,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-18,,生活のゆとり,せいかつのゆとり,,seikatsu no yutori,dodatkowe pieniądze zaoszczędzone na kosztach życia,,,
-4018,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,貯金,ちょきん,,chokin,oszczędności,,,
+4018,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,貯金,ちょきん,,chokin,"oszczędności
+wkład",,,
 4019,WORD,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-18,,-,ワンルームマンション,,wanruumu manshon,jednopokojowe mieszkanie,,,
 4020,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,食費,しょくひ,,shokuhi,koszty jedzenia,,,
 4021,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-18,,代,だい,,dai,"koszt
@@ -7657,7 +7661,9 @@ komórka
 schowek",,,5445
 4967,WORD,WORD_NOUN,,HIRAGANA,,,蔵書,ぞうしょ,,zousho,"księgozbiór
 prywatna biblioteka",,,
-4968,WORD,WORD_NOUN,,HIRAGANA,,,貯蔵,ちょぞう,,chozou,"magazynowanie
+4968,WORD,WORD_NOUN,,HIRAGANA,,,貯蔵,ちょぞう,,chozou,"skład
+rezerwa
+magazynowanie
 przechowywanie",,,
 4969,WORD,WORD_NOUN,,HIRAGANA,,,大蔵省,おおくらしょう,,ookurashou,ministerstwo finansów,forma przestarzała,,
 4970,WORD,WORD_NOUN,,HIRAGANA,,,財務省,ざいむしょう,,zaimushou,ministerstwo finansów,,,
@@ -8729,3 +8735,55 @@ szkolenie
 5508,WORD,WORD_ADJECTIVE_I,,HIRAGANA,,,劇しい,はげしい,,hageshii,"gwałtowny
 wściekły
 niepohamowany",,,
+5509,WORD,WORD_NOUN,,HIRAGANA,,,砂,すな,,suna,piasek,,,
+5510,WORD,WORD_NUMBER,,HIRAGANA,,,参,さん,,san,trzy,w dokumentach,,"4
+77"
+5511,WORD,WORD_NOUN,,HIRAGANA,,,参加,さんか,,sanka,uczestnictwo,,,
+5512,WORD,WORD_NOUN,,HIRAGANA,,,参与,さんよ,,san'yo,"uczestnictwo
+radca",w sprawach publicznych,,
+5513,WORD,WORD_NOUN,,HIRAGANA,,,参列,さんれつ,,sanretsu,"udział
+obecność",,,
+5514,WORD,WORD_NOUN,,HIRAGANA,,,参考書,さんこうしょ,,sankousho,książka informacyjna,,,
+5515,WORD,WORD_NOUN,,HIRAGANA,,,参議院,さんぎいん,,sangiin,Izba Radców,japońska,,
+5516,WORD,WORD_NOUN,,HIRAGANA,,,墓場,はかば,,hakaba,cmentarz,,,
+5517,WORD,WORD_NOUN,,HIRAGANA,,,墓穴,ぼけつ,,boketsu,dół grobowy,,,
+5518,WORD,WORD_NOUN,,HIRAGANA,,,墓石,ぼせき,,boseki,"nagrobek
+kamień nagrobny",,,
+5519,WORD,WORD_NOUN,,HIRAGANA,,,墓参り,はかまいり,,hakamairi,odwiedzanie grobu,,,
+5520,WORD,UNKNOWN,,HIRAGANA,,,他,ほか,,hoka,"inny
+pozostały",,,
+5521,WORD,WORD_NOUN,,HIRAGANA,,,他人,たにん,,tanin,inny człowiek,,,
+5522,WORD,WORD_NOUN,,HIRAGANA,,,他方,たほう,,tahou,z innej (drugiej) strony,,,
+5523,WORD,WORD_NOUN,,HIRAGANA,,,他国,たこく,,takoku,obce państwo,,,
+5524,WORD,WORD_NOUN,,HIRAGANA,,,他力,たりき,,tariki,"pomoc z zewnątrz
+zewnętrzna siła",,,
+5525,WORD,WORD_NOUN,,HIRAGANA,,,他殺,たさつ,,tasatsu,"morderstwo
+zabójstwo",,,
+5526,WORD,WORD_VERB_RU,,HIRAGANA,,,貯える,たくわえる,,takuwaeru,"oszczędzać
+gromadzić",,,
+5527,WORD,WORD_NOUN,,HIRAGANA,,,貯金通帳,ちょきんつうちょう,,chokin tsuuchou,książeczka oszczędnościowa,,,
+5528,WORD,WORD_NOUN,,HIRAGANA,,,貯金箱,ちょきんばこ,,chokin bako,skarbonka,,,
+5529,WORD,WORD_NOUN,,HIRAGANA,,,貯水塔,ちょすいとう,,chosuitou,wieża ciśnień,,,
+5530,WORD,WORD_VERB_RU,,HIRAGANA,,,預ける,あずける,,azukeru,"powierzać
+umieszczać
+deponować",,,
+5531,WORD,WORD_VERB_U,,HIRAGANA,,,預かる,あずかる,,azukaru,"przyjmować
+brać pod opiekę",,,
+5532,WORD,WORD_NOUN,,HIRAGANA,,,預金,よきん,,yokin,"depozyt
+konto bankowe",,,
+5533,WORD,WORD_NOUN,,HIRAGANA,,,預貯金,よちょきん,,yochokin,"depozyt
+konto bankowe",,,
+5534,WORD,WORD_NOUN,,HIRAGANA,,,預言,よげん,,yogen,"proroctwo
+przepowiednia",,,
+5535,WORD,WORD_NOUN,,HIRAGANA,,,預言者,よげんしゃ,,yogensha,prorok,,,
+5536,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,軽やか,かろやか,,karoyaka,lekki,,,
+5537,WORD,WORD_NOUN,,HIRAGANA,,,軽工業,けいこうぎょう,,keikougyou,przemysł lekki,,,
+5538,WORD,WORD_NOUN,,HIRAGANA,,,軽食,けいしょく,,keishoku,"przekąska
+lekkie jedzenie",,,
+5539,WORD,WORD_NOUN,,HIRAGANA,,,軽音楽,けいおんがく,,kei ongaku,muzyka lekka,,,
+5540,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,気軽,きがる,,kigaru,"czuć się lekko
+czuć się radośnie
+czuć się swobodnie",,,
+5541,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,手軽,てがる,,tegaru,"łatwy
+prosty
+tani",,,
