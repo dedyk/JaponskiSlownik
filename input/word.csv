@@ -830,7 +830,8 @@ nosić","ubranie, na głowę, na głowie",,
 żyć",,,4541
 638,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,に,住んでいます,すんでいます,ni,sunde imasu,mieszkać,,,
 639,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-7,,履く,はく,,haku,"zakładać
-nosić","ubranie, poniżej pasa, np. obuwie, skarpetki, spodnie, spódnicę",,3705
+nosić","ubranie, poniżej pasa, np. obuwie, skarpetki, spodnie, spódnicę",,"3705
+5622"
 640,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-7,,太る,ふとる,,futoru,"zyskiwać na wadze
 grubieć
 tyć",,,
@@ -2897,7 +2898,7 @@ kula ziemska",planeta,,
 2185,WORD,WORD_NOUN,,KATAKANA,,,-,"マールス
 マルス",,"maarusu
 marusu",Mars,planeta,,
-2186,WORD,WORD_NOUN,,HIRAGANA,,,木星,もくせい,,mokusei,Jowisz,planeta,,
+2186,WORD,WORD_NOUN,,HIRAGANA,,,木星,もくせい,,mokusei,Jowisz,planeta,,5616
 2187,WORD,WORD_NOUN,,KATAKANA,,,-,ジュピター ,,jupitaa,Jowisz,planeta,,
 2188,WORD,WORD_NOUN,,HIRAGANA,,,土星,どせい,,dosei,Saturn,planeta,,
 2189,WORD,WORD_NOUN,,KATAKANA,,,-,サターン ,,sataan,Saturn,planeta,,
@@ -3210,7 +3211,9 @@ dać klapsa",,,767
 2376,WORD,WORD_NOUN,,HIRAGANA,Genki 2-15,,態度,たいど,,taido,"postawa
 poza
 stanowisko
-zachowanie",,,
+zachowanie
+ustosunkowanie
+nastawienie",,,
 2377,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-15,,示す,しめす,,shimesu,"pokazywać
 wykazywać
 wskazywać",,,
@@ -4966,7 +4969,8 @@ przeżycie",osobiste,,
 3409,WORD,WORD_NOUN,,HIRAGANA,,,性,せい,,sei,"płeć
 seks
 natura",,,"3410
-5599"
+5599
+5613"
 3410,WORD,WORD_NOUN,,HIRAGANA,,,性,しょう,,shou,temperament,,,"3409
 4986
 5104"
@@ -5493,7 +5497,8 @@ lubię to",mówione z lekką dozą zazdrości,,
 3703,WORD,WORD_NOUN,,HIRAGANA,,,毛織物,けおりもの,,keorimono,wełniany materiał,,,
 3704,WORD,WORD_NOUN,,HIRAGANA,,,織機,しょっき,,shokki,warsztat tkacki,,,5099
 3705,WORD,WORD_VERB_U,,HIRAGANA,,,掃く,はく,,haku,"zamiatać
-szczotkować",,,639
+szczotkować",,,"639
+5622"
 3706,WORD,WORD_NOUN,,HIRAGANA,,,落下,らっか,,rakka,spadanie,,,
 3707,WORD,WORD_NOUN,,HIRAGANA,,,落日,らくじつ,,rakujitsu,zachodzące słońce,,,
 3708,WORD,WORD_VERB_U,,HIRAGANA,,,落ち着く,おちつく,,ochitsuku,"opanowywać się
@@ -5852,7 +5857,8 @@ warunki
 sytuacja
 stan",,,3354
 3908,WORD,WORD_NOUN,,HIRAGANA,,,状態,じょうたい,,joutai,"sytuacja
-stan",,,
+stan
+warunki",,,
 3909,WORD,WORD_NOUN,,HIRAGANA,,,現状,げんじょう,,genjou,obecna sytuacja,,,
 3910,WORD,WORD_NOUN,,HIRAGANA,,,礼状,れいじょう,,reijou,dziękczynny list,,,
 3911,WORD,WORD_NOUN,,HIRAGANA,,,賞状,しょうじょう,,shoujou,dyplom,nagroda,,
@@ -6830,7 +6836,7 @@ rząd",,,
 4474,WORD,WORD_NOUN,,HIRAGANA,,,政府,せいふ,,seifu,rząd,,,
 4475,WORD,WORD_NOUN,,HIRAGANA,,,政治家,せいじか,,seijika,polityk,,,
 4476,WORD,WORD_NOUN,,HIRAGANA,,,政党,せいとう,,seitou,partia polityczna,,,
-4477,WORD,WORD_NOUN,,HIRAGANA,,,政策,せいさく,,seisaku,program polityczny,,,
+4477,WORD,WORD_NOUN,,HIRAGANA,,,政策,せいさく,,seisaku,program polityczny,,,5614
 4478,WORD,WORD_VERB_RU,,HIRAGANA,,,治める,おさめる,,osameru,"rządzić
 tłumić",,,
 4479,WORD,WORD_VERB_U,,HIRAGANA,,,治まる,おさまる,,osamaru,uspokajać się,,,
@@ -7094,7 +7100,7 @@ usypiać",,,
 4624,WORD,WORD_NOUN,,HIRAGANA,,,眠り,ねむり,,nemuri,sen,,,
 4625,WORD,WORD_NOUN,,HIRAGANA,,,睡眠,すいみん,,suimin,sen,,,
 4626,WORD,WORD_NOUN,,HIRAGANA,,,僧,そう,,sou,"mnich
-kapłan (buddyjski)",,,
+kapłan (buddyjski)",,,5612
 4627,WORD,WORD_NOUN,,HIRAGANA,,,停止,ていし,,teishi,"odwołanie
 zawieszenie",,,
 4628,WORD,WORD_NOUN,,HIRAGANA,,,停年,ていねん,,teinen,wiek emerytalny,,,3635
@@ -8942,7 +8948,8 @@ anty-",prefiks,,
 5599,WORD,WORD_NOUN,,HIRAGANA,,,精,せい,,sei,"duch
 energia
 żywotność
-czystość",,,3409
+czystość",,,"3409
+5613"
 5600,WORD,WORD_NOUN,,HIRAGANA,,,精神,せいしん,,seishin,"psychika
 duch
 serce
@@ -8971,3 +8978,49 @@ internat",,,
 obsługa",,,
 5610,WORD,WORD_VERB_U,,HIRAGANA,,,立ち寄る,たちよる,,tachiyoru,"wpaść (na moment)
 zatrzymywać się",,,
+5611,WORD,WORD_VERB_RU,,HIRAGANA,,,添える,そえる,,soeru,"dodawać
+doczepiać
+uzupełniać
+towarzyszyć
+naśladować
+mieć pod ręką",,,
+5612,WORD,WORD_VERB_U,,HIRAGANA,,,添う,そう,,sou,"dodawać
+uczestniczyć
+poślubić (kogoś)",,,4626
+5613,WORD,WORD_NOUN,,HIRAGANA,,,製,せい,,sei,"produkować
+robić
+wyprodukowane w
+wykonane z",,,"3409
+5599"
+5614,WORD,WORD_NOUN,,HIRAGANA,,,製作,せいさく,,seisaku,produkcja,,,4477
+5615,WORD,WORD_NOUN,,HIRAGANA,,,日本製,にほんせい,,nihonsei,"produkt japoński
+wyprodukowane w Japonii",,,
+5616,WORD,WORD_NOUN,,HIRAGANA,,,木製,もくせい,,mokusei,"produkt drzewny
+zrobione z drzewa",,,2186
+5617,WORD,WORD_NOUN,,HIRAGANA,,,製紙工場,せいしこうじょう,,seishikoujou,fabryka papieru,,,
+5618,WORD,WORD_NOUN,,HIRAGANA,,,製本屋,せいほんや,,seihon'ya,introligator,,,
+5619,WORD,WORD_VERB_U,,HIRAGANA,,,剃る,そる,,soru,golić się,,,
+5620,WORD,WORD_NOUN,,HIRAGANA,,,獣,けだもの,,kedamono,"bestia
+zwierzę",,,5621
+5621,WORD,WORD_NOUN,,HIRAGANA,,,獣,けもの,,kemono,"bestia
+zwierzę",,,5620
+5622,WORD,UNKNOWN,,HIRAGANA,,,博,はく,,haku,"rozległy
+szeroki
+dużo
+doktor (sufiks, stopień naukowy)",,,"639
+3705"
+5623,WORD,WORD_NOUN,,HIRAGANA,,,博覧会,はくらんかい,,hakurankai,"wystawa
+ekspozycja",,,
+5624,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,博学,はくがく,,hakugaku,"szeroka wiedza
+rozległa wiedza",,,
+5625,WORD,WORD_NOUN,,HIRAGANA,,,博愛,はくあい,,hakuai,filantropia,,,
+5626,WORD,WORD_NOUN,,HIRAGANA,,,態,たい,,tai,"sytuacja
+wygląd",,,
+5627,WORD,WORD_NOUN,,HIRAGANA,,,事態,じたい,,jitai,"sytuacja
+stan",,,
+5628,WORD,WORD_NOUN,,HIRAGANA,,,実態,じったい,,jittai,rzeczywista sytuacja,,,
+5629,WORD,WORD_NOUN,,HIRAGANA,,,生態,せいたい,,seitai,"tryb życia
+ekologia",,,
+5630,WORD,WORD_VERB_U,,HIRAGANA,,,握る,にぎる,,nigiru,"trzymać
+łapać
+ściskać w dłoni",,,
