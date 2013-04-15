@@ -576,7 +576,8 @@ no i",,,
 jakiego rodzaju",,,
 459,WORD,WORD_COUNTERS,,HIRAGANA,Genki 1-5,,枚,まい,,mai,[liczenie płaskich przedmiotów],~,NO,
 460,WORD,UNKNOWN,,HIRAGANA,Genki 1-5,,-,まで,,made,do,"miejsce, czasu",,
-461,WORD,UNKNOWN,,HIRAGANA,Genki 1-5,,-,から,,kara,od,"miejsce, czasu",,522
+461,WORD,UNKNOWN,,HIRAGANA,Genki 1-5,,-,から,,kara,od,"miejsce, czasu",,"522
+5636"
 462,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,電車,でんしゃ,,densha,pociąg,,,
 463,WORD,WORD_NOUN,,HIRAGANA,Genki 1-5,,病気,びょうき,,byouki,"chory
 choroba",,,
@@ -669,7 +670,8 @@ zapominać",,,
 520,WORD,UNKNOWN,,HIRAGANA,Genki 1-6,,後で,あとで,,atode,później,,,
 521,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-6,,遅く,おそく,,osoku,"zrobić coś później
 późno",,,
-522,WORD,UNKNOWN,,HIRAGANA,Genki 1-6,,-,から,,kara,ponieważ,,,461
+522,WORD,UNKNOWN,,HIRAGANA,Genki 1-6,,-,から,,kara,ponieważ,,,"461
+5636"
 523,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-6,,結構,けっこう,,kekkou,"wspaniały
 przyjemny
 miły
@@ -1516,7 +1518,8 @@ czyścić (zęby)",,,
 1116,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-13,,約束を守る,やくそくをまもる,,yakusoku o mamoru,dotrzymać tajemnicy,,,
 1117,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-13,,感動する,かんどうする,,kandou suru,wzruszać się,przez ~ ni,,
 1118,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-13,,-,いらっしゃいます,,irasshaimasu,czy ktoś jest obecny / w domu,uprzejmie,,
-1119,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-13,,回,かい,,kai,razy,~,,1374
+1119,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-13,,回,かい,,kai,razy,~,,"1374
+5631"
 1120,WORD,WORD_EXPRESSION,,KATAKANA,Genki 2-13,,-,キロ,,kiro,kilo,"~ , np. kilometry, kilogramy",,
 1121,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-13,,実は,じつは,,jitsuha,"w istocie
 faktycznie",,,
@@ -1818,7 +1821,8 @@ rozległy",,,
 1341,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-15,,描く,かく,,kaku,"rysować
 malować",,,"1704
 3081
-5205"
+5205
+5635"
 1342,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-15,,探す,さがす,,sagasu,szukać,,,
 1343,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-15,,誘う,さそう,,sasou,"zapraszać
 zaprosić
@@ -1873,7 +1877,8 @@ całe miejsce",czas/miejsce + ~,,"11
 1371,WORD,WORD_NOUN,,HIRAGANA,,,森,もり,,mori,las,,,
 1372,WORD,WORD_NOUN,,HIRAGANA,,,林,はやし,,hayashi,lasek,,,
 1373,WORD,WORD_NOUN,,HIRAGANA,,,薬局,やっきょく,,yakkyoku,apteka,,,
-1374,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,階,かい,,kai,numer piętra,liczba +,,1119
+1374,WORD,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,階,かい,,kai,numer piętra,liczba +,,"1119
+5631"
 1375,WORD,WORD_NOUN,,KATAKANA,,,-,エレベーター,,erebeetaa,winda,,,
 1376,WORD,WORD_NOUN,,KATAKANA,,,-,エスカレーター,,esukareetaa,ruchome schody,,,
 1377,WORD,WORD_VERB_U,,HIRAGANA,,を,渡る,わたる,o,wataru,"przechodzić przez
@@ -2278,7 +2283,8 @@ nani",co,,NO,
 1703,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,雨期,うき,,uki,"deszczowe dni
 pora deszczowa",,,
 1704,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 1-9,を,書く,かく,o,kaku,pisać,osoba ni rzecz,,"1341
-3081"
+3081
+5635"
 1705,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,辞書,じしょ,,jisho,słownik,,NO,
 1706,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,友だち,ともだち,,tomodachi,przyjaciel,,NO,
 1707,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,親友,しんゆう,,shin'yuu,najlepszy przyjaciel,,,
@@ -3329,10 +3335,13 @@ iść do szkoły",,,
 iść do pracy
 dojazd do szkoły
 dojazd do pracy",,,
-2453,WORD,WORD_NOUN,,HIRAGANA,,,蛇,へび,,hebi,wąż,,,
+2453,WORD,WORD_NOUN,,HIRAGANA,,,蛇,へび,,hebi,"wąż
+żmija",,,
 2454,WORD,WORD_NOUN,,HIRAGANA,,,航空母艦,こうくうぼかん,,koukuubokan,lotniskowiec,,,
-2455,WORD,WORD_NOUN,,HIRAGANA,,,鰐,わに,,wani,krokodyl,,,
-2456,WORD,WORD_NOUN,,HIRAGANA,,,貝殻,かいがら,,kaigara,muszla,,,
+2455,WORD,WORD_NOUN,,HIRAGANA,,,鰐,わに,,wani,"krokodyl
+aligator",,,
+2456,WORD,WORD_NOUN,,HIRAGANA,,,貝殻,かいがら,,kaigara,"muszla
+muszelka",morska,,
 2457,WORD,WORD_NOUN,,HIRAGANA,,,案内所,あんないじょ,,annaijo,"punkt informacyjny
 informacja
 biuro informacyjne",,,
@@ -4371,7 +4380,8 @@ sznurki",,,
 3080,WORD,WORD_NOUN,,HIRAGANA,,,梯子,はしご,,hashigo,drabina,,,
 3081,WORD,WORD_VERB_U,,HIRAGANA,,,掻く,かく,,kaku,"trzeć
 drapać się",,,"1341
-1704"
+1704
+5635"
 3082,WORD,WORD_NOUN,,HIRAGANA,,,誤用,ごよう,,goyou,"nadużycie
 niewłaściwe zachowanie
 niewłaściwe użycie",,,
@@ -9024,3 +9034,44 @@ ekologia",,,
 5630,WORD,WORD_VERB_U,,HIRAGANA,,,握る,にぎる,,nigiru,"trzymać
 łapać
 ściskać w dłoni",,,
+5631,WORD,WORD_NOUN,,HIRAGANA,,,貝,かい,,kai,"muszla
+skorupiak",,,"1119
+1374"
+5632,WORD,WORD_NOUN,,HIRAGANA,,,貝類,かいるい,,kairui,"skorupiaki
+mięczaki",,,
+5633,WORD,WORD_NOUN,,HIRAGANA,,,貝塚,かいづか,,kaiduka,stos muszelek,,,
+5634,WORD,WORD_NOUN,,HIRAGANA,,,貝細工,かいざいく,,kaizaiku,ozdoby z muszelek,,,
+5635,WORD,WORD_NOUN,,HIRAGANA,,,殻,かく,,kaku,muszla,,,"1341
+1704
+3081
+5636"
+5636,WORD,WORD_NOUN,,HIRAGANA,,,殻,から,,kara,"muszla
+skorupa
+wylina
+łuska",,,"461
+522
+5635"
+5637,WORD,WORD_NOUN,,HIRAGANA,,,竹材,ちくざい,,chikuzai,bambus,,,
+5638,WORD,WORD_NOUN,,HIRAGANA,,,竹林,ちくりん,,chikurin,las bambusowy,,,
+5639,WORD,WORD_NOUN,,HIRAGANA,,,竹屋,たけや,,takeya,handlarz bambusem,,,
+5640,WORD,WORD_NOUN,,HIRAGANA,,,竹製,たけせい,,takesei,produkt bambusowy,,,
+5641,WORD,WORD_VERB_U,,HIRAGANA,,,争う,あらそう,,arasou,"walczyć
+kłócić się",,,
+5642,WORD,WORD_NOUN,,HIRAGANA,,,争乱,そうらん,,souran,"zamieszki
+rozruchy",,,
+5643,WORD,WORD_NOUN,,HIRAGANA,,,争論,そうろん,,souron,"dyskusja
+kłótnia
+kontrowersja",,,
+5644,WORD,WORD_NOUN,,HIRAGANA,,,争議,そうぎ,,sougi,"dyskusja
+konflikt",,,
+5645,WORD,WORD_NOUN,,HIRAGANA,,,争点,そうてん,,souten,"problem
+przedmiot dyskusji
+temat dyskusji",,,
+5646,WORD,WORD_NOUN,,HIRAGANA,,,脈,みゃく,,myaku,"żyła
+krew
+puls",,,
+5647,WORD,WORD_VERB_U,,HIRAGANA,,,脈打つ,みゃくうつ,,myakuutsu,"puls
+bicie serca",,,
+5648,WORD,WORD_NOUN,,HIRAGANA,,,動脈,どうみゃく,,doumyaku,"arteria
+tętnica",,,
+5649,WORD,WORD_NOUN,,HIRAGANA,,,文脈,ぶんみゃく,,bunmyaku,kontekst,,,
