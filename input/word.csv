@@ -195,7 +195,7 @@ czapka",,,5032
 162,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,図書館,としょかん,,toshokan,biblioteka,w budynku,,
 163,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,郵便局,ゆうびんきょく,,yuubinkyoku,poczta,,,
 164,WORD,WORD_ASK,,HIRAGANA,Genki 1-2,,-,いくら,,ikura,ile,koszty,,
-165,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,円,えん,,en,... yen,,,
+165,WORD,WORD_NOUN,,HIRAGANA,Genki 1-2,,円,えん,,en,... yen,,,5806
 166,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-2,,高い,たかい,,takai,"drogi
 wysoki","pieniądze, wzrost",,
 167,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-2,,-,いらっしゃいませ,,irasshaimase,Witamy,przy wchodzeniu do sklepu,,
@@ -4113,20 +4113,29 @@ niemożliwe do wykonania",,,
 2905,WORD,WORD_NOUN,,HIRAGANA,,,裁判官,さいばんかん,,saibankan,sędzia,,,
 2906,WORD,UNKNOWN,,KATAKANA,,,-,メリークリスマス,,merii kurisumasu,Wesołych Świąt,Bożego Narodzenia,,
 2907,WORD,WORD_NOUN,,HIRAGANA,,,裸,はだか,,hadaka,"nagość
+nagie ciało
 nagi
-goły",,,
+goły
+nudyzm",,,
 2908,WORD,WORD_NOUN,,HIRAGANA,,,裸婦,らふ,,rafu,naga kobieta,,,
 2909,WORD,WORD_NOUN,,HIRAGANA,,,裸足,はだし,,hadashi,"boso
 goła stopa",,,
 2910,WORD,WORD_VERB_RU,,HIRAGANA,,,怠ける,なまける,,namakeru,"lenić się
+być leniwym
 próżnować
-zaniedbywać",,,
+zaniedbywać
+być niedbałym",,,
 2911,WORD,WORD_NOUN,,KATAKANA,,,-,サンタクロース ,,santa kuroosu,Święty Mikołaj,,,
 2912,WORD,WORD_NOUN,,HIRAGANA,,,雪だるま,ゆきだるま,,yuki daruma,bałwan,śniegowy,,
 2913,WORD,UNKNOWN,,HIRAGANA,,,君,きみ,,kimi,"ty
 władca",używane przez dobrze znających się mężczyzn,,4802
 2914,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,が,壊れる,こわれる,ga,kowareru,"uszkodzić się
-zepsuć się",,,
+zepsuć się
+psuć się
+być popsutym
+łamać się
+tłuc się
+rozpadać się",,,
 2915,WORD,WORD_NOUN,,KATAKANA,,,-,パジャマ,,pajama,piżama,,,
 2916,WORD,WORD_NOUN,,HIRAGANA,,,刑務所,けいむしょ,,keimusho,więzienie,,,
 2917,WORD,WORD_NOUN,,HIRAGANA,,,鷲,わし,,washi,orzeł,,,1777
@@ -4184,7 +4193,8 @@ lanca",,,
 2944,WORD,WORD_NOUN,,HIRAGANA,,,異次元,いじげん,,ijigen,"inny wymiar
 alternatywny wymiar",,,
 2945,WORD,WORD_VERB_U,,HIRAGANA,,,異なる,ことなる,,kotonaru,różnić się,,,
-2946,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,異常,いじょう,,ijou,niezwykły,,,2618
+2946,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,異常,いじょう,,ijou,"niezwykły
+nienormalny",,,2618
 2947,WORD,WORD_NOUN,,HIRAGANA,,,異国,いこく,,ikoku,obcy kraj,,,
 2948,WORD,WORD_NOUN,,HIRAGANA,,,異邦人,いほうじん,,ihoujin,"obcokrajowiec
 poganin",,,
@@ -4538,8 +4548,10 @@ znak",,NO,
 3151,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-17,,活動,かつどう,,katsudou,"aktywność
 działalność",,NO,
 3152,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-17,,裸,はだか,,hadaka,"nagość
+nagie ciało
 nagi
-goły",,NO,
+goły
+nudyzm",,NO,
 3153,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-17,,正しい,ただしい,,tadashii,"właściwy
 prawidłowy
 słuszny",,NO,
@@ -4690,7 +4702,9 @@ zrzucać",,NO,
 3240,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,転ぶ,ころぶ,,korobu,"upaść
 upadać
 przewrócić się",,NO,
-3241,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-18,を,壊す,こわす,o,kowasu,zepsuć,,,
+3241,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-18,を,壊す,こわす,o,kowasu,"zepsuć
+psuć
+łamać",,,
 3242,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,咲く,さく,,saku,kwitnąć,,NO,
 3243,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,閉まる,しまる,ga,shimaru,zamykać się,,,5041
 3244,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,助かる,たすかる,ga,tasukaru,"przetrwać
@@ -4720,7 +4734,12 @@ znikać
 przepadać
 rozpływać się",,,
 3251,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,壊れる,こわれる,ga,kowareru,"uszkodzić się
-zepsuć się",,NO,
+zepsuć się
+psuć się
+być popsutym
+łamać się
+tłuc się
+rozpadać się",,NO,
 3252,WORD,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,汚れる,よごれる,ga,yogoreru,brudzić się,,,4491
 3253,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-18,,注文する,ちゅうもんする,,chuumon suru,"zamawiać
 złożyć zamówienie",,NO,
@@ -5131,7 +5150,7 @@ notować",,,
 3468,WORD,WORD_NOUN,,HIRAGANA,,,記者会見,きしゃかいけん,,kisha kaiken,konferencja prasowa,,,
 3469,WORD,WORD_NOUN,,HIRAGANA,,,記事,きじ,,kiji,artykuł,,,
 3470,WORD,WORD_NOUN,,HIRAGANA,,,記念,きねん,,kinen,"rocznica
-pamiątka",,,
+pamiątka",np. dnia świątecznego,,
 3471,WORD,WORD_VERB_RU,,HIRAGANA,,,試みる,こころみる,,kokoromiru,"próbować
 wypróbowywać
 sprawdzać",,,
@@ -5755,8 +5774,10 @@ osobowość",,NO,
 gdzie",bardziej uprzejmie,NO,
 3818,WORD,WORD_NOUN,,HIRAGANA,Genki 2-19,,怠け者,なまけもの,,namakemono,leń,,,
 3819,WORD,WORD_VERB_RU,,HIRAGANA,Genki 2-19,,怠ける,なまける,,namakeru,"lenić się
+być leniwym
 próżnować
-zaniedbywać",,NO,
+zaniedbywać
+być niedbałym",,NO,
 3820,WORD,WORD_NOUN,,HIRAGANA,Genki 2-19,,悩み,なやみ,,nayami,"zmartwienie
 problem
 kłopot
@@ -9488,3 +9509,39 @@ wniosek",,,
 osąd",,,
 5799,WORD,WORD_NOUN,,HIRAGANA,,,判じ物,はんじもの,,hanjimono,zagadka,,,
 5800,WORD,WORD_NOUN,,HIRAGANA,,,公判,こうはん,,kouhan,sąd publiczny,,,4596
+5801,WORD,WORD_NOUN,,HIRAGANA,,,憲法,けんぽう,,kenpou,konstytucja,,,
+5802,WORD,WORD_NOUN,,HIRAGANA,,,怪物,かいぶつ,,kaibutsu,potwór,,,
+5803,WORD,WORD_NOUN,,HIRAGANA,,,怪獣,かいじゅう,,kaijuu,potwór,,,
+5804,WORD,WORD_NOUN,,KATAKANA,,,-,モンスター ,,monsutaa,potwór,,,
+5805,WORD,WORD_VERB_U,,HIRAGANA,,,怠る,おこたる,,okotaru,"zaniedbywać
+nie czuwać
+nie być na straży
+czuć się lepiej",,,
+5806,WORD,WORD_NOUN,,HIRAGANA,,,宴,えん,,en,"uczta
+przyjęcie",,,"165
+5807"
+5807,WORD,WORD_NOUN,,HIRAGANA,,,宴,うたげ,,utage,"uczta
+przyjęcie",,,5806
+5808,WORD,WORD_NOUN,,HIRAGANA,,,常,つね,,tsune,"normalne warunki
+zwykły przebieg wydarzeń",,,
+5809,WORD,WORD_ADVERB,,HIRAGANA,,,常に,つねに,,tsune ni,zawsze,,,
+5810,WORD,WORD_NOUN,,HIRAGANA,,,常識,じょうしき,,joushiki,zdrowy rozsądek,,,
+5811,WORD,WORD_NOUN,,HIRAGANA,,,常用,じょうよう,,jouyou,"powszedni użytek
+zwykły użytek",,,
+5812,WORD,WORD_NOUN,,HIRAGANA,,,非常,ひじょう,,hijou,"niezwykły
+wyjątkowy",,,
+5813,WORD,WORD_NOUN,,HIRAGANA,,,常習,じょうしゅう,,joushuu,"przyzwyczajenie
+zwyczaj",,,
+5814,WORD,WORD_NOUN,,HIRAGANA,,,種,たね,,tane,nasienie,,,5815
+5815,WORD,WORD_NOUN,,HIRAGANA,,,種,しゅ,,shu,"rodzaj
+klasa
+nasienie
+gatunek",,,5814
+5816,WORD,WORD_NOUN,,HIRAGANA,,,種族,しゅぞく,,shuzoku,"rasa
+szczep
+kasta",,,
+5817,WORD,WORD_NOUN,,HIRAGANA,,,種別,しゅべつ,,shubetsu,klasyfikacja,,,
+5819,WORD,WORD_NOUN,,HIRAGANA,,,種蒔き,たねまき,,tanemaki,"sianie nasion
+siew
+zasiew",,,
+5820,WORD,WORD_NOUN,,HIRAGANA,,,種無し,たねなし,,tanenashi,bez nasion,,,
