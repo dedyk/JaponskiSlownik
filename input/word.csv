@@ -87,7 +87,7 @@ bardzo miło mi",,,
 65,WORD,WORD_GREETING,,HIRAGANA,Genki 1-1,,どうぞよろしくお願いします,どうぞよろしくおねがいします,,douzo yoroshiku onegai shimasu,"miło Cię spotkać
 bardzo miło mi",kierowane do osoby wyżej postawionej,,
 66,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,今,いま,,ima,teraz,,,5478
-67,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,半,はん,,han,połowa,,,
+67,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,半,はん,,han,połowa,,,5794
 68,WORD,UNKNOWN,,HIRAGANA,Genki 1-1,,-,あの,,ano,um,,,130
 69,WORD,WORD_NOUN,,HIRAGANA,Genki 1-1,,英語,えいご,,eigo,język angielski,,,
 70,WORD,WORD_GREETING,,HIRAGANA,Genki 1-1,,-,ええ,,ee,tak,mniej oficjalnie,,
@@ -640,7 +640,8 @@ skasować",,,
 501,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,に,座る,すわる,ni,suwaru,siadać,siedzenie,,
 502,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,,立つ,たつ,,tatsu,stać,,,"2433
 4290
-5487"
+5487
+5792"
 503,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,,たばこを吸う,たばこをすう,,tabako o suu,palić,,,
 504,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-6,を,使う,つかう,o,tsukau,"używać
 korzystać
@@ -1284,7 +1285,8 @@ kryminalista",,,
 np.",,,
 967,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,-,ほかに,,hokani,coś innego,,,
 968,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-11,,番,ばん,,ban,numer,~,,"4399
-5416"
+5416
+5795"
 969,WORD,WORD_NOUN,,KATAKANA,Genki 1-11,,-,ページ,,peeji,strona,,NO,
 970,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,行目,ぎょうめ,,gyoume,numer linii,~,,
 971,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,二人ずつ,ふたりずつ,,futarizutsu,dla każdych dwóch osób,,,
@@ -3316,7 +3318,8 @@ przewrócić się",,NO,
 2433,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,建つ,たつ,,tatsu,"być zbudowanym
 stać",,,"502
 4290
-5487"
+5487
+5792"
 2434,KANJI,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,建国,けんこく,,kenkoku,"ugruntowanie narodu
 fundamenty narodu",,,
 2435,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,地下,ちか,,chika,pod ziemią,,,
@@ -6538,7 +6541,9 @@ tęsknota za domem, rodziną, ojczyzną",,,
 determinacja",,,
 4281,WORD,WORD_NOUN,,HIRAGANA,,,決意,けつい,,ketsui,"postanowienie
 determinacja",,,
-4282,WORD,WORD_NOUN,,HIRAGANA,,,決断,けつだん,,ketsudan,rozstrzygnięcie,,,
+4282,WORD,WORD_NOUN,,HIRAGANA,,,決断,けつだん,,ketsudan,"rozstrzygnięcie
+decyzja
+postanowienie",,,
 4283,WORD,WORD_NOUN,,HIRAGANA,,,決定,けってい,,kettei,decyzja,,,
 4284,WORD,WORD_NOUN,,HIRAGANA,,,未決,みけつ,,miketsu,"niezdecydowany
 nie rozstrzygnięty
@@ -6551,7 +6556,8 @@ toczący się (proces)",,,
 4290,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,経つ,たつ,,tatsu,"mijać
 przechodzić",np. czas,,"502
 2433
-5487"
+5487
+5792"
 4291,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,中,ちゅう,,chuu,w trakcie czegoś,czas + ~,NO,
 4292,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 2-19,,大変,たいへん,,taihen,"ciężka (sytuacja)
 bardzo
@@ -6755,7 +6761,8 @@ kontynent",,,"273
 4399,WORD,UNKNOWN,,HIRAGANA,,,晩,ばん,,ban,"wieczór
 noc
 późno",,,"968
-5416"
+5416
+5795"
 4400,WORD,WORD_VERB_RU,,HIRAGANA,,,違える,ちがえる,,chigaeru,zmieniać,,,4402
 4401,WORD,WORD_VERB_U,,HIRAGANA,,,違う,たがう,,tagau,"różnić się
 mieć odrębne zdanie",,,2666
@@ -7101,7 +7108,8 @@ tablica",,,
 szyld",,,
 4594,WORD,WORD_NOUN,,HIRAGANA,,,床板,ゆかいた,,yukaita,podłoga z desek,,,
 4595,WORD,WORD_NOUN,,HIRAGANA,,,甲板,かんぱん,,kanpan,pokład,statku,,4596
-4596,WORD,WORD_NOUN,,HIRAGANA,,,甲板,こうはん,,kouhan,pokład,statku,,4595
+4596,WORD,WORD_NOUN,,HIRAGANA,,,甲板,こうはん,,kouhan,pokład,statku,,"4595
+5800"
 4597,WORD,WORD_NOUN,,HIRAGANA,,,合板,ごうはん,,gouhan,sklejka,,,
 4598,WORD,WORD_NOUN,,HIRAGANA,,,寿,ことぶき,,kotobuki,"długie życie
 gratulacje",,,
@@ -8652,7 +8660,8 @@ tabliczka
 taca
 dysk
 tablica",,,"968
-4399"
+4399
+5795"
 5417,WORD,WORD_NOUN,,HIRAGANA,,,沖,おき,,oki,"pełne morze
 otwarte morze",,,
 5418,WORD,WORD_NOUN,,HIRAGANA,,,縄,なわ,,nawa,"lina
@@ -8791,7 +8800,8 @@ ogromny",,,
 5487,WORD,WORD_NOUN,,HIRAGANA,,,竜,たつ,,tatsu,smok,chiński,,"502
 2433
 2347
-4290"
+4290
+5792"
 5488,WORD,WORD_NOUN,,HIRAGANA,,,壁,へき,,heki,"ściana
 płot
 ogrodzenie",,,2219
@@ -9438,3 +9448,43 @@ nasienie",,,"1341
 5784,WORD,WORD_NOUN,,HIRAGANA,,,樹,き,,ki,"drzewo
 drewno",,,"1505
 4801"
+5785,WORD,WORD_NOUN,,HIRAGANA,,,断,だん,,dan,"decyzja
+sąd
+odmowa",,,
+5786,WORD,WORD_VERB_U,,HIRAGANA,,,断る,ことわる,,kotowaru,"odmawiać
+zaprzeczać
+zabraniać",,,
+5787,WORD,WORD_NOUN,,HIRAGANA,,,断食,だんじき,,danjiki,"post
+poszczenie
+głodzenie",,,
+5788,WORD,WORD_NOUN,,HIRAGANA,,,断罪,だんざい,,danzai,"wyrok
+potępienie",,,
+5789,WORD,WORD_NOUN,,HIRAGANA,,,断種,だんしゅ,,danshu,"kastracja
+sterylizacja",,,
+5790,WORD,WORD_NOUN,,HIRAGANA,,,断線,だんせん,,dansen,"zerwanie połączenia
+rozłączenie",,,
+5791,WORD,WORD_VERB_U,,HIRAGANA,,,裁く,さばく,,sabaku,sądzić,,,
+5792,WORD,WORD_VERB_U,,HIRAGANA,,,裁つ,たつ,,tatsu,ucinać,tkaninę,,"502
+2433
+4290
+5487"
+5793,WORD,WORD_NOUN,,HIRAGANA,,,裁き,さばき,,sabaki,"sąd
+osąd
+opinia",,,
+5794,WORD,WORD_NOUN,,HIRAGANA,,,判,はん,,han,"pieczątka
+pieczęć
+podpis
+osąd",,,"67
+5795"
+5795,WORD,WORD_NOUN,,HIRAGANA,,,判,ばん,,ban,wielkość,papieru lub książki,,"968
+4399
+5416
+5794"
+5796,WORD,WORD_NOUN,,HIRAGANA,,,裁判,さいばん,,saiban,sąd,,,
+5797,WORD,WORD_NOUN,,HIRAGANA,,,判断,はんだん,,handan,"osąd
+decyzja
+wniosek",,,
+5798,WORD,WORD_NOUN,,HIRAGANA,,,判決,はんけつ,,hanketsu,"decyzja
+osąd",,,
+5799,WORD,WORD_NOUN,,HIRAGANA,,,判じ物,はんじもの,,hanjimono,zagadka,,,
+5800,WORD,WORD_NOUN,,HIRAGANA,,,公判,こうはん,,kouhan,sąd publiczny,,,4596
