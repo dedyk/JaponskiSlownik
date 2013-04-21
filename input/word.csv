@@ -465,7 +465,8 @@ widzieć osobę","osoba ni, spotkanie przypadkowe",NO,
 widzieć osobę","osoba to, spotkanie zaplanowane",,"1617
 3371"
 380,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-4,が,有る,ある,ga,aru,"być
-istnieć",do rzeczy martwych,,1056
+istnieć",do rzeczy martwych,,"1056
+6095"
 381,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,買う,かう,o,kau,kupować,,,"908
 4950"
 382,WORD,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,書く,かく,o,kaku,pisać,osoba ni rzecz,NO,
@@ -1026,8 +1027,8 @@ za wszelką cenę",,,
 777,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,ところで,,tokorode,przy okazji,,,
 778,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-9,,皆,みんな,,minna,"wszyscy
 wszystko",,NO,
-779,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,もう,,mou,już,,,
-780,WORD,UNKNOWN,,HIRAGANA,Genki 1-9,,-,まだ,,mada,jeszcze nie,+ czasownik w formie te negatywnej,NO,
+779,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-9,,-,もう,,mou,już,,,6100
+780,WORD,WORD_ADVERB,,HIRAGANA,Genki 1-9,,-,まだ,,mada,jeszcze nie,+ czasownik w formie te negatywnej,NO,
 781,WORD,WORD_COUNTERS,,HIRAGANA,Genki 1-9,,一つ,ひとつ,,hitotsu,jeden,klasyfikator ogólny,,
 782,WORD,WORD_COUNTERS,,HIRAGANA,Genki 1-9,,二つ,ふたつ,,futatsu,dwa,klasyfikator ogólny,,
 783,WORD,WORD_COUNTERS,,HIRAGANA,Genki 1-9,,三つ,みっつ,,mittsu,trzy,klasyfikator ogólny,,
@@ -1321,7 +1322,8 @@ wyniki
 stopnie",na teście i etc,,
 984,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,-,せき,,seki,kaszel,,,"3627
 3638
-5901"
+5901
+6101"
 985,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,-,のど,,nodo,gardło,,,
 986,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,歯,は,,ha,ząb,,NO,
 987,WORD,WORD_NOUN,,HIRAGANA,Genki 1-12,,花,はな,,hana,kwiat,,,561
@@ -1426,7 +1428,8 @@ panienka
 dziewczyna",,,
 1054,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 1-12,,-,まじめ,,majime,poważny,,,
 1055,WORD,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 1-12,,はたを織る,はたをおる,,hata o oru,tkać,,,
-1056,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,-,ある,,aru,pewnego,~,,380
+1056,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,-,ある,,aru,pewnego,~,,"380
+6095"
 1057,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,ある日,あるひ,,aru hi,pewnego dnia,,,
 1058,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,大人,おとな,,otona,dorosły,,,
 1059,WORD,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 1-12,,見つける,みつける,,mitsukeru,szukać,,,
@@ -1510,7 +1513,7 @@ wymagający
 ostry
 rygorystyczny
 intensywny",,,
-1107,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-13,,近い,ちかい,,chikai,bliski,,,
+1107,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-13,,近い,ちかい,,chikai,bliski,,,6084
 1108,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-13,,色々,いろいろ,,iroiro,różne,,NO,
 1109,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-13,,幸せ,しあわせ,,shiawase,"szczęśliwy
 szczęście
@@ -4733,7 +4736,8 @@ zakłopotany
 zawstydzony",,NO,
 3235,WORD,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,開く,あく,ga,aku,otwiera się,,NO,
 3236,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,謝る,あやまる,,ayamaru,przepraszać,,,5959
-3237,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,押す,おす,,osu,naciskać,,,"5323
+3237,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-18,,押す,おす,,osu,"pchać
+naciskać",,,"5323
 5683"
 3238,WORD,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-18,を,落とす,おとす,o,otosu,"upuszczać
 opuszczać
@@ -4802,7 +4806,9 @@ nie później niż",,NO,
 być świadomym
 myśleć
 wierzyć",,,
-3265,WORD,WORD_NOUN,,HIRAGANA,,,存在,そんざい,,sonzai,byt,,,
+3265,WORD,WORD_NOUN,,HIRAGANA,,,存在,そんざい,,sonzai,"byt
+istnienie
+egzystencja",,,
 3266,WORD,WORD_NOUN,,HIRAGANA,,,存立,そんりつ,,sonritsu,"istnienie
 egzystencja",,,5987
 3267,WORD,WORD_NOUN,,HIRAGANA,,,存続,そんぞく,,sonzoku,"kontynuacja
@@ -5490,7 +5496,8 @@ mieć związek z",,,
 3627,WORD,WORD_NOUN,,HIRAGANA,,,関,せき,,seki,"bariera
 punkt kontrolny",,,"984
 3638
-5901"
+5901
+6101"
 3628,WORD,WORD_NOUN,,HIRAGANA,,,関心,かんしん,,kanshin,"troska
 zainteresowanie",,,
 3629,WORD,WORD_NOUN,,HIRAGANA,,,関連,かんれん,,kanren,"powiązanie
@@ -5516,7 +5523,8 @@ siedzenie
 mata","np. w pociągu, w teatrze",,"984
 3627
 5279
-5901"
+5901
+6101"
 3639,WORD,UNKNOWN,,HIRAGANA,,,難い,かたい,,katai,"trudny
 ciężki",,,2019
 3640,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,困難,こんなん,,konnan,"trudność
@@ -5891,7 +5899,7 @@ dawać ostrzeżenie",kogoś,NO,
 początkowo
 faktycznie",,,
 3855,WORD,UNKNOWN,,HIRAGANA,Genki 2-19,,毎朝,まいあさ,,maiasa,każdego poranka,,,
-3856,WORD,UNKNOWN,,HIRAGANA,Genki 2-19,,-,まだ,,mada,jeszcze nie,+ czasownik w formie te negatywnej,NO,
+3856,WORD,WORD_ADVERB,,HIRAGANA,Genki 2-19,,-,まだ,,mada,jeszcze nie,+ czasownik w formie te negatywnej,NO,
 3857,WORD,UNKNOWN,,HIRAGANA,Genki 2-19,,名様,めいさま,,meisama,grupa ~ ludzi,,,
 3858,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-19,,-,ようこそ,,youkoso,witamy,,,
 3859,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-19,に,よろしくお伝え下さい,よろしくおつたえください,ni,yoroshiku otsutae kudasai,z wyrazami szacunku dla,,,
@@ -7147,7 +7155,7 @@ kopia",,,
 rachowanie",,,
 4576,WORD,WORD_NOUN,,HIRAGANA,,,財,ざい,,zai,"bogactwo
 pieniądze
-własność",,,
+własność",,,6094
 4577,WORD,WORD_NOUN,,HIRAGANA,,,財産,ざいさん,,zaisan,"własność
 posiadłość
 mienie",,,
@@ -9808,7 +9816,8 @@ zapis
 pismo
 książki",,,"984
 3627
-3638"
+3638
+6101"
 5902,WORD,WORD_NOUN,,HIRAGANA,,,注,ちゅう,,chuu,"pilar
 cylinder",,,"1369
 5734"
@@ -10135,3 +10144,60 @@ ochotnik
 zwolennik",,,
 6082,WORD,WORD_NOUN,,HIRAGANA,,,志望,しぼう,,shibou,"pragnienie
 ambicja",,,
+6083,WORD,WORD_VERB_U,,HIRAGANA,,,誓う,ちかう,,chikau,"przysięgać
+przyrzekać
+ślubować",,,
+6084,WORD,WORD_NOUN,,HIRAGANA,,,誓い,ちかい,,chikai,"przysięga
+przyrzeczenie
+ślub",,,1107
+6085,WORD,WORD_NOUN,,HIRAGANA,,,賃金,ちんぎん,,chingin,wypłata,,,
+6086,WORD,WORD_NOUN,,HIRAGANA,,,賃借,ちんしゃく,,chinshaku,"wypożyczanie
+wynajmowanie",,,
+6087,WORD,WORD_NOUN,,HIRAGANA,,,賃貸,ちんたい,,chintai,"dzierżawa
+wynajem",,,
+6088,WORD,WORD_NOUN,,HIRAGANA,,,運賃,うんちん,,unchin,"koszt przejazdu
+koszt transportu",,,
+6089,WORD,WORD_NOUN,,HIRAGANA,,,賃上げ,ちんあげ,,chin'age,podwyżka płac,,,
+6090,WORD,WORD_NOUN,,HIRAGANA,,,車庫,しゃこ,,shako,garaż,,,
+6091,WORD,WORD_NOUN,,HIRAGANA,,,金庫,きんこ,,kinko,"sejf
+skarbiec",,,
+6092,WORD,WORD_NOUN,,HIRAGANA,,,国庫,こっこ,,kokko,Skarb Państwa,,,
+6093,WORD,WORD_VERB_RU,,HIRAGANA,,,押さえる,おさえる,,osaeru,"naciskać
+powstrzymywać
+tłumić",,,
+6094,WORD,WORD_NOUN,,HIRAGANA,,,在,ざい,,zai,"przedmieście
+wioska
+być usytuowanym",,,4576
+6095,WORD,WORD_VERB_U,,HIRAGANA,,,在る,ある,,aru,"być
+istnieć",,,"380
+1056"
+6096,WORD,WORD_NOUN,,HIRAGANA,,,不在,ふざい,,fuzai,nieobecność,,,
+6097,WORD,WORD_NOUN,,HIRAGANA,,,在外,ざいがい,,zaigai,"zagraniczny
+zamorski",,,
+6098,WORD,WORD_NOUN,,HIRAGANA,,,在日,ざいにち,,zainichi,w Japonii,usytuowany,,
+6099,WORD,WORD_NOUN,,HIRAGANA,,,在住者,ざいじゅうしゃ,,zaijuusha,"rezydent
+mieszkaniec",,,
+6100,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,猛,もう,,mou,"dziki
+gwałtowny
+wściekły
+silny",,,779
+6101,WORD,WORD_NOUN,,HIRAGANA,,,積,せき,,seki,"wynik
+rezultat
+zawartość
+miara
+powierzchnia",w matematyce,,"984
+3627
+3638
+5901"
+6102,WORD,WORD_VERB_U,,HIRAGANA,,,積む,つむ,,tsumu,"ładować
+nakładać
+zbierać
+gromadzić","na ciężarówkę, statek i etc",,
+6103,WORD,WORD_VERB_U,,HIRAGANA,,,積もる,つもる,,tsumoru,zbierać się,,,
+6104,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,積極的,せっきょくてき,,sekkyokuteki,pozytywny,,,
+6105,WORD,WORD_NOUN,,HIRAGANA,,,積載,せきさい,,sekisai,"ładowanie
+przewożenie
+transportowanie",,,
+6106,WORD,WORD_NOUN,,HIRAGANA,,,積載量,せきさいりょう,,sekisairyou,ładowność,,,
+6107,WORD,WORD_VERB_U,,HIRAGANA,,,積み重なる,つみかさなる,,tsumikasanaru,"zbierać się
+gromadzić się",,,
