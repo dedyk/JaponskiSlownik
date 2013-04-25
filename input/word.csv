@@ -3766,7 +3766,7 @@ np.",,NO,
 2680,WORD,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,-,すると,,suruto,"... wtedy, ...",,,
 2681,WORD,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,場所,ばしょ,,basho,"miejsce
 miejsce w świecie (do osób)",fizyczne,NO,
-2682,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-16,,-,また,,mata,"znów
+2682,WORD,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-16,,復,また,,mata,"znów
 znowu
 dodatkowo",,,
 2683,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-16,,弱い,よわい,,yowai,"słaby
@@ -4187,11 +4187,11 @@ jastrząb",,,
 2919,WORD,WORD_NOUN,,HIRAGANA,,,処女,しょじょ,,shojo,"panienka
 dziewczynka
 dziewica",,,
-2920,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,処する,しょする,,shosuru,"radzić sobie
+2920,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,処する,しょする,,sho suru,"radzić sobie
 zajmować się (czymś)
 skazywać
 potępiać
-zachowywać się",,,
+zachowywać się",,,6212
 2921,WORD,WORD_NOUN,,HIRAGANA,,,対処,たいしょ,,taisho,"stawiać czoła
 borykać się",,,
 2922,WORD,WORD_NOUN,,HIRAGANA,,,処刑,しょけい,,shokei,"kara
@@ -5098,7 +5098,8 @@ przeżycie",osobiste,,
 seks
 natura",,,"3410
 5599
-5613"
+5613
+6202"
 3410,WORD,WORD_NOUN,,HIRAGANA,,,性,しょう,,shou,temperament,,,"3409
 4986
 5104
@@ -5244,7 +5245,9 @@ przekazywać",,,
 3484,WORD,WORD_NOUN,,HIRAGANA,,,回数,かいすう,,kaisuu,"częstotliwość
 ilość razy",,,
 3485,WORD,WORD_NOUN,,HIRAGANA,,,回心,かいしん,,kaishin,nawrócenie,,,
-3486,WORD,WORD_NOUN,,HIRAGANA,,,回復,かいふく,,kaifuku,powrót do zdrowia,,,
+3486,WORD,WORD_NOUN,,HIRAGANA,,,回復,かいふく,,kaifuku,"powrót do zdrowia
+powrót do sił
+wyzdrowienie",,,
 3487,WORD,WORD_NOUN,,HIRAGANA,,,回教,かいきょう,,kaikyou,"islam
 mahometanizm",,,
 3488,WORD,WORD_NOUN,,HIRAGANA,,,王国,おうこく,,oukoku,królestwo,,,
@@ -5325,7 +5328,10 @@ być nieruszonym",,,
 miejsce na",np. świecie,,
 3532,WORD,WORD_NOUN,,HIRAGANA,,,物置,ものおき,,monooki,schowek,,,
 3533,WORD,WORD_NOUN,,HIRAGANA,,,位置,いち,,ichi,"pozycja
-lokalizacja",,,2
+lokalizacja
+sytuacja
+lokacja
+miejsce",,,2
 3534,WORD,WORD_VERB_RU,,HIRAGANA,,,遅れる,おくれる,,okureru,być spóźniony,,,
 3535,WORD,WORD_VERB_U,,HIRAGANA,,,遅らす,おくらす,,okurasu,"opóźniać
 odwlekać
@@ -5437,7 +5443,7 @@ obojętność",,,
 wykonywać",,,
 3585,WORD,WORD_NOUN,,HIRAGANA,,,成長,せいちょう,,seichou,wzrost,,,
 3586,WORD,WORD_NOUN,,HIRAGANA,,,成人,せいじん,,seijin,"dorosły
-pełnoletni",,,
+pełnoletni",,,6204
 3587,WORD,WORD_NOUN,,HIRAGANA,,,成熟,せいじゅく,,seijuku,dojrzałość,,,
 3588,WORD,WORD_NOUN,,HIRAGANA,,,成就,じょうじゅ,,jouju,"wypełnienie
 spełnienie
@@ -6050,7 +6056,8 @@ publiczna sala",np. miejsca kulturalne,,
 3938,KANJI,WORD_NOUN,,HIRAGANA,,,聖堂,せいどう,,seidou,"miejsce kultu
 duża świątynia
 kaplica",,,
-3939,KANJI,WORD_NOUN,,HIRAGANA,,,聖書,せいしょ,,seisho,Biblia,,,
+3939,KANJI,WORD_NOUN,,HIRAGANA,,,聖書,せいしょ,,seisho,"Biblia
+Pismo Święte",,,
 3940,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,授業,じゅぎょう,,jugyou,"wykład
 zajęcia
 lekcja",,NO,
@@ -6523,7 +6530,7 @@ stolarz",,,
 4216,KANJI,WORD_VERB_U,,HIRAGANA,Genki kanji 2-19,,研ぐ,とぐ,,togu,ostrzyć,,,
 4217,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,探究,たんきゅう,,tankyuu,poszukiwanie,,,
 4218,KANJI,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-19,,究める,きわめる,,kiwameru,"badać
-studiować coś dogłębnie",,,
+studiować coś dogłębnie",,,6214
 4219,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,質問,しつもん,,shitsumon,pytanie,,NO,
 4220,KANJI,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-19,,質がいい,しつがいい,,shitsu ga ii,dobra jakość,,,
 4221,KANJI,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,質屋,しちや,,shichiya,lombard,,NO,
@@ -7265,7 +7272,8 @@ usypiać",,,
 4624,WORD,WORD_NOUN,,HIRAGANA,,,眠り,ねむり,,nemuri,sen,,,
 4625,WORD,WORD_NOUN,,HIRAGANA,,,睡眠,すいみん,,suimin,sen,,,
 4626,WORD,WORD_NOUN,,HIRAGANA,,,僧,そう,,sou,"mnich
-kapłan (buddyjski)",,,5612
+kapłan (buddyjski)",,,"5612
+6206"
 4627,WORD,WORD_NOUN,,HIRAGANA,,,停止,ていし,,teishi,"odwołanie
 zawieszenie",,,
 4628,WORD,WORD_NOUN,,HIRAGANA,,,停年,ていねん,,teinen,wiek emerytalny,,,3635
@@ -7377,7 +7385,7 @@ w takim razie",tylko na początku zdania,NO,
 4700,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,できれば,,dekireba,"w miarę możliwości
 jeśli jest możliwe",,,
 4701,WORD,WORD_ADVERB,,HIRAGANA,Genki 2-20,,誠に,まことに,,makotoni,na prawdę,grzecznie,,
-4702,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,また,,mata,"znów
+4702,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,復,また,,mata,"znów
 znowu
 dodatkowo",,NO,
 4703,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,みたいな,,mitai na,"wygląda jak, ...",... X,,
@@ -8219,7 +8227,8 @@ przewracać
 pokonywać",,,
 5137,WORD,WORD_NOUN,,HIRAGANA,,,自画像,じがぞう,,jigazou,autoportret,,,
 5138,WORD,WORD_NOUN,,HIRAGANA,,,現像,げんぞう,,genzou,wywoływanie,filmu,,
-5139,WORD,WORD_NOUN,,HIRAGANA,,,想像,そうぞう,,souzou,wyobrażenie,,,
+5139,WORD,WORD_NOUN,,HIRAGANA,,,想像,そうぞう,,souzou,"wyobrażenie
+przypuszczenie",,,
 5140,WORD,WORD_NOUN,,HIRAGANA,,,想像力,そうぞうりょく,,souzou ryoku,wyobraźnia,,,
 5141,WORD,WORD_NOUN,,HIRAGANA,,,偶像,ぐうぞう,,guuzou,bożek,,,
 5142,WORD,WORD_NOUN,,HIRAGANA,,,満,まん,,man,"pełnia
@@ -9063,7 +9072,7 @@ narzekanie
 sprzeciw
 słowa
 wyrażenie",,,
-5569,WORD,WORD_NOUN,,HIRAGANA,,,語句,ごく,,goku,słowa i wyrażenia,,,
+5569,WORD,WORD_NOUN,,HIRAGANA,,,語句,ごく,,goku,słowa i wyrażenia,,,6213
 5570,WORD,WORD_NOUN,,HIRAGANA,,,引用句,いんようく,,in'youku,cytat,,,
 5571,WORD,WORD_NOUN,,HIRAGANA,,,句読点,くとうてん,,kutouten,znak interpunkcyjny,,,
 5572,WORD,WORD_NOUN,,HIRAGANA,,,句点,くてん,,kuten,kropka,,,
@@ -9142,7 +9151,8 @@ anty-",prefiks,,
 energia
 żywotność
 czystość",,,"3409
-5613"
+5613
+6202"
 5600,WORD,WORD_NOUN,,HIRAGANA,,,精神,せいしん,,seishin,"psychika
 duch
 serce
@@ -9179,12 +9189,14 @@ naśladować
 mieć pod ręką",,,
 5612,WORD,WORD_VERB_U,,HIRAGANA,,,添う,そう,,sou,"dodawać
 uczestniczyć
-poślubić (kogoś)",,,4626
+poślubić (kogoś)",,,"4626
+6206"
 5613,WORD,WORD_NOUN,,HIRAGANA,,,製,せい,,sei,"produkować
 robić
 wyprodukowane w
 wykonane z",,,"3409
-5599"
+5599
+6202"
 5614,WORD,WORD_NOUN,,HIRAGANA,,,製作,せいさく,,seisaku,produkcja,,,4477
 5615,WORD,WORD_NOUN,,HIRAGANA,,,日本製,にほんせい,,nihonsei,"produkt japoński
 wyprodukowane w Japonii",,,
@@ -9572,7 +9584,7 @@ drewno",,,"1505
 4801"
 5785,WORD,WORD_NOUN,,HIRAGANA,,,断,だん,,dan,"decyzja
 sąd
-odmowa",,,
+odmowa",,,6223
 5786,WORD,WORD_VERB_U,,HIRAGANA,,,断る,ことわる,,kotowaru,"odmawiać
 zaprzeczać
 zabraniać",,,
@@ -10053,7 +10065,8 @@ ewolucja",,,
 6019,WORD,WORD_NOUN,,HIRAGANA,,,展覧,てんらん,,tenran,"wystawa
 ekspozycja",,,
 6020,WORD,WORD_NOUN,,HIRAGANA,,,潜望鏡,せんぼうきょう,,senboukyou,peryskop,,,
-6021,WORD,WORD_NOUN,,HIRAGANA,,,井,い,,i,studnia,,,6109
+6021,WORD,WORD_NOUN,,HIRAGANA,,,井,い,,i,studnia,,,"6109
+6236"
 6022,WORD,WORD_NOUN,,HIRAGANA,,,虫,むし,,mushi,"owad
 nerwowość",,,
 6023,WORD,WORD_NOUN,,HIRAGANA,,,虫歯,むしば,,mushiba,spróchniały ząb,,,
@@ -10238,7 +10251,8 @@ gromadzić się",,,
 6108,WORD,WORD_VERB_U,,HIRAGANA,,,掘る,ほる,,horu,kopać,dół,,
 6109,WORD,WORD_NOUN,,HIRAGANA,,,威,い,,i,"godność
 powaga
-autorytet",,,6021
+autorytet",,,"6021
+6236"
 6110,WORD,WORD_NOUN,,HIRAGANA,,,条,じょう,,jou,"gałąź
 rozumowanie
 logika
@@ -10420,3 +10434,80 @@ wzór",,,
 6199,WORD,WORD_VERB_U,,HIRAGANA,,,契る,ちぎる,,chigiru,"przysięgać
 ślubować
 obiecywać",,,
+6200,WORD,WORD_VERB_U,,HIRAGANA,,,祈る,いのる,,inoru,"modlić się
+życzyć sobie",,,
+6201,WORD,WORD_EXPRESSION,,HIRAGANA,,,いつもと同じ,いつもとおなじ,,itsumo to onaji,tak jak zwykle,,,
+6202,WORD,WORD_NOUN,,HIRAGANA,,,聖,せい,,sei,"świętość
+święty",,,"3409
+5599
+5613"
+6203,WORD,WORD_NOUN,,HIRAGANA,,,聖霊,せいれい,,seirei,Duch Święty,,,
+6204,WORD,WORD_NOUN,,HIRAGANA,,,聖人,せいじん,,seijin,święty,,,3586
+6205,WORD,WORD_NOUN,,HIRAGANA,,,聖水,せいすい,,seisui,woda święcona,,,
+6206,WORD,WORD_NOUN,,HIRAGANA,,,想,そう,,sou,"koncepcja
+pomysł
+myśl",,,"4626
+5612"
+6207,WORD,WORD_NOUN,,HIRAGANA,,,思想,しそう,,shisou,"pogląd
+myśl
+koncepcja",,,
+6208,WORD,WORD_NOUN,,HIRAGANA,,,想定,そうてい,,soutei,"hipoteza
+teoria",,,
+6209,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,理想的,りそうてき,,risouteki,idealny,,,
+6210,WORD,WORD_NOUN,,HIRAGANA,,,黙想,もくそう,,mokusou,"rozmyślanie
+medytacja",,,
+6211,WORD,WORD_NOUN,,HIRAGANA,,,署,しょ,,sho,"biuro rządowe
+komisariat (policji)",skrót,,
+6212,WORD,WORD_VERB_IRREGULAR,,HIRAGANA,,,署する,しょする,,sho suru,"podpisywać się
+składać podpis",,,2920
+6213,WORD,WORD_ADVERB,,HIRAGANA,,,極,ごく,,goku,"bardzo
+wyjątkowo",,,5569
+6214,WORD,WORD_VERB_RU,,HIRAGANA,,,極める,きわめる,,kiwameru,"nosić
+prowadzić do",,,4218
+6215,WORD,WORD_VERB_U,,HIRAGANA,,,極まる,きわまる,,kiwamaru,osiągać swój koniec,,,
+6216,WORD,WORD_NOUN,,HIRAGANA,,,極み,きわみ,,kiwami,koniec,,,
+6217,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,極端,きょくたん,,kyokutan,"kraniec
+ekstremum",,,
+6218,WORD,WORD_NOUN,,HIRAGANA,,,北極,ほっきょく,,hokkyoku,biegun północny,,,
+6219,WORD,WORD_NOUN,,HIRAGANA,,,南極,なんきょく,,nankyoku,biegun południowy,,,
+6220,WORD,WORD_NOUN,,HIRAGANA,,,極東,きょくとう,,kyokutou,Daleki Wschód,,,
+6221,WORD,WORD_VERB_RU,,HIRAGANA,,,見極める,みきわめる,,mikiwameru,"patrzeć przez
+spoglądać wnikliwie",,,
+6222,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,極上,ごくじょう,,gokujou,najwyższa jakość,,,
+6223,WORD,WORD_NOUN,,HIRAGANA,,,壇,だん,,dan,"ołtarz
+scena
+platforma",,,5785
+6224,WORD,WORD_NOUN,,HIRAGANA,,,反復,はんぷく,,hanpuku,powtórka,,,
+6225,WORD,WORD_NOUN,,HIRAGANA,,,復習,ふくしゅう,,fukushuu,"ćwiczenie
+powtarzanie",,,
+6226,WORD,WORD_NOUN,,HIRAGANA,,,復活,ふっかつ,,fukkatsu,zmartwychwstanie,,,
+6227,WORD,WORD_NOUN,,HIRAGANA,,,復興,ふっこう,,fukkou,"rekonstrukcja
+rehabilitacja
+ponowienie",,,
+6228,WORD,WORD_NOUN,,HIRAGANA,,,仏,ぶつ,,butsu,Budda,,,"6229
+6230"
+6229,WORD,WORD_NOUN,,HIRAGANA,,,仏,ふつ,,futsu,Francja,skrót,,"6228
+6230"
+6230,WORD,WORD_NOUN,,HIRAGANA,,,仏,ほとけ,,hotoke,"Budda
+zmarły",,,"6228
+6229"
+6231,WORD,WORD_NOUN,,HIRAGANA,,,仏教,ぶっきょう,,bukkyou,buddyzm,,,
+6232,WORD,WORD_NOUN,,HIRAGANA,,,仏像,ぶつぞう,,butsuzou,"status Buddy
+posąg Buddy",,,
+6233,WORD,WORD_NOUN,,HIRAGANA,,,仏壇,ぶつだん,,butsudan,domowy ołtarzyk buddyjski,,,
+6234,WORD,WORD_NOUN,,HIRAGANA,,,仏僧,ぶっそう,,bussou,buddyjski kapłan,,,
+6235,WORD,WORD_NOUN,,HIRAGANA,,,仏文,ふつぶん,,futsubun,literatura francuska,,,
+6236,WORD,WORD_COUNTERS,,HIRAGANA,,,位,い,,i,"ranga
+pozycja",,,"6021
+6109"
+6237,WORD,WORD_NOUN,,HIRAGANA,,,地位,ちい,,chii,pozycja,,,
+6238,WORD,WORD_NOUN,,HIRAGANA,,,学位,がくい,,gakui,wykształcenie,,,
+6239,WORD,WORD_NOUN,,HIRAGANA,,,位相,いそう,,isou,faza,w nauce,,
+6240,WORD,WORD_NOUN,,HIRAGANA,,,三位,さんい,,san'i,"trzecie miejsce
+trzecia pozycja",,,
+6241,WORD,WORD_VERB_U,,HIRAGANA,,,仰ぐ,あおぐ,,aogu,"patrzeć
+oglądać
+prosić o
+polegać na
+szukać",,,
+6242,WORD,WORD_VERB_RU,,HIRAGANA,,,仰せられる,おおせられる,,ooserareru,mówić,czasownik honoryfikatywny,,
