@@ -5291,7 +5291,7 @@ pierwotny człowiek",,,
 akceptować
 zdobywać
 zdawać egzamin
-przystępować do egzaminu",,,
+przystępować do egzaminu",,,6359
 3506,WORD,WORD_NOUN,,HIRAGANA,,,受け身,うけみ,,ukemi,pasywność,,,
 3507,WORD,WORD_NOUN,,HIRAGANA,,,受信,じゅしん,,jushin,"odbiór wiadomości
 odbiór informacji
@@ -9182,7 +9182,7 @@ banknot",,,
 5597,WORD,UNKNOWN,,HIRAGANA,,,抗,こう,,kou,"opór
 sprzeciw
 antagonizm
-anty-",prefiks,,
+anty-",prefiks,,6358
 5598,WORD,WORD_VERB_RU,,HIRAGANA,,,射る,いる,,iru,strzelać,,,"386
 704"
 5599,WORD,WORD_NOUN,,HIRAGANA,,,精,せい,,sei,"duch
@@ -9317,7 +9317,9 @@ tętnica",,,
 5652,WORD,UNKNOWN,,KATAKANA,,,-,ポチ,,pochi,pochi,najpopularniejsze imię dla psa w Japonii,,
 5653,WORD,WORD_NOUN,,HIRAGANA,,,文化科学宮殿,ぶんかかがくきゅうでん,,bunka kagaku kyuuden,Pałac Kultury i Nauki,,,
 5654,WORD,WORD_NOUN,,HIRAGANA,,,骨,ほね,,hone,"kość
-ość (u ryby)",,,
+ość (u ryby)
+szkielet
+kręgosłup",,,6360
 5655,WORD,WORD_NOUN,,HIRAGANA,,,資本,しほん,,shihon,kapitał,,,
 5656,WORD,WORD_NOUN,,HIRAGANA,,,資金,しきん,,shikin,fundusze,,,
 5657,WORD,WORD_NOUN,,HIRAGANA,,,資源,しげん,,shigen,"środki
@@ -10763,3 +10765,15 @@ oszczędzać",,,
 6356,WORD,WORD_NOUN,,HIRAGANA,,,内省,ないせい,,naisei,introspekcja,,,
 6357,WORD,WORD_NOUN,,HIRAGANA,,,反省,はんせい,,hansei,"refleksja
 samoocena",,,
+6358,WORD,WORD_VERB_U,,HIRAGANA,,,請う,こう,,kou,"prosić
+życzyć sobie
+zapraszać",,,5597
+6359,WORD,WORD_VERB_RU,,HIRAGANA,,,請ける,うける,,ukeru,"prosić
+życzyć sobie
+zapraszać",,,3505
+6360,WORD,WORD_NOUN,,HIRAGANA,,,骨,こつ,,kotsu,"kości
+popiół
+pozostałości",,,5654
+6361,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,朗らか,ほがらか,,hogaraka,"jasny
+czysty
+pogodny",,,
