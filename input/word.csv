@@ -1,6 +1,7 @@
 1,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,零,"ぜろ
 れい",,"zero
-rei",zero,,,957
+rei",zero,,,"957
+6423"
 2,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,一,いち,,ichi,jeden,,,3533
 3,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,二,に,,ni,dwa,,,
 4,WORD,WORD_NUMBER,,HIRAGANA,Genki 1-1,,三,さん,,san,trzy,,,"77
@@ -343,7 +344,8 @@ wiele",,,"1216
 270,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,そうですね,,sou desu ne,to prawda,,NO,
 271,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,でも,,demo,ale,"używane jest po kropce, w nowym zdaniu",,
 272,WORD,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,どうですか,,dou desu ka,co ty na to,,,
-273,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,週,しゅう,,shuu,tydzień,,,4395
+273,WORD,WORD_NOUN,,HIRAGANA,Genki 1-3,,週,しゅう,,shuu,tydzień,,,"4395
+6412"
 274,WORD,UNKNOWN,,HIRAGANA,Genki 1-3,,末,まつ,,matsu,koniec,,,"384
 3714"
 275,WORD,UNKNOWN,,HIRAGANA,,,毎,まい,,mai,każdy,,,1222
@@ -1289,7 +1291,8 @@ kryminalista",,,
 954,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,文法,ぶんぽう,,bunpou,gramatyka,,,
 955,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,質問,しつもん,,shitsumon,pytanie,,,
 956,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,答,こたえ,,kotae,odpowiedź,,,
-957,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,例,れい,,rei,przykład,,,1
+957,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,例,れい,,rei,przykład,,,"1
+6423"
 958,WORD,WORD_NOUN,,HIRAGANA,Genki 1-11,,-,かっこ,,kakko,nawias,,,
 959,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,◯,まる,,maru,prawidłowo,,,
 960,WORD,UNKNOWN,,HIRAGANA,Genki 1-11,,X,ばつ,,batsu,źle,,,3130
@@ -3920,7 +3923,8 @@ broda",,NO,
 2759,WORD,WORD_NOUN,,HIRAGANA,Genki 2-17,,寮,りょう,,ryou,"internat
 dormitorium
 dom studencki
-akademik",,,5748
+akademik",,,"5748
+6424"
 2760,WORD,WORD_NOUN,,HIRAGANA,Genki 2-17,,旅行会社,りょこうがいしゃ,,ryokou gaisha,biuro podróży,,,
 2761,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-17,,-,うらやましい,,urayamashii,zazdrosny,,,
 2762,WORD,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-17,,少ない,すくない,,sukunai,trochę,,NO,
@@ -5005,7 +5009,7 @@ mieć inne zdanie",,,
 dział
 sekcja",,,"849
 5821"
-3357,WORD,WORD_NOUN,,HIRAGANA,,,科目,かもく,,kamoku,przedmiot,w szkole,,
+3357,WORD,WORD_NOUN,,HIRAGANA,,,科目,かもく,,kamoku,przedmiot,szkolny,,6436
 3358,WORD,WORD_NOUN,,HIRAGANA,,,科料,かりょう,,karyou,"grzywna
 kara pieniężna",,,
 3359,WORD,WORD_NOUN,,HIRAGANA,,,足台,あしだい ,,ashidai,podnóżek,,,
@@ -5756,9 +5760,11 @@ oficjalny",,,
 3759,WORD,WORD_NOUN,,HIRAGANA,,,指導,しどう,,shidou,"przewodnictwo
 kierownictwo
 instruktaż",,,
-3760,WORD,WORD_NOUN,,HIRAGANA,,,指導者,しどうしゃ,,shidousha,"przywódca
+3760,WORD,WORD_NOUN,,HIRAGANA,,,指導者,しどうしゃ,,shidousha,"przewodnik
+przywódca
 lider
 wódz
+opiekun
 instruktor",,,
 3761,WORD,WORD_NOUN,,HIRAGANA,,,指名,しめい,,shimei,"wyznaczyć
 nominować",,,
@@ -5887,7 +5893,8 @@ udręka",,NO,
 3821,WORD,WORD_NOUN,,HIRAGANA,Genki 2-19,,恥ずかしがり屋,はずかしがりや,,hazukashigariya,nieśmiała osoba,,,
 3822,WORD,WORD_NOUN,,HIRAGANA,Genki 2-19,,話,はなし,,hanashi,rozmowa,,NO,
 3823,WORD,WORD_NOUN,,HIRAGANA,Genki 2-19,,部長,ぶちょう,,buchou,kierownik działu,,NO,
-3824,WORD,WORD_NOUN,,HIRAGANA,,,課長,かちょう,,kachou,kierownik,,,
+3824,WORD,WORD_NOUN,,HIRAGANA,,,課長,かちょう,,kachou,"kierownik
+szef sekcji",,,
 3825,WORD,WORD_NOUN,,HIRAGANA,,,社長,しゃちょう,,shachou,prezes,firmy,NO,
 3826,WORD,WORD_NOUN,,HIRAGANA,Genki 2-19,,文化,ぶんか,,bunka,kultura,,NO,
 3827,WORD,WORD_NOUN,,HIRAGANA,Genki 2-19,,間違い,まちがい,,machigai,"pomyłka
@@ -5912,7 +5919,11 @@ poznawać się",,,
 3839,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-19,に,引っ越す,ひっこす,ni,hikkosu,przeprowadzać się,,,
 3840,WORD,WORD_VERB_U,VERB_KEIGO_HIGH,HIRAGANA,Genki 2-19,,召し上がる,めしあがる,,meshiagaru,"[honoryfikatywna forma od taberu, nomu]",,,
 3841,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-19,,呼ぶ,よぶ,,yobu,"wołać
-zapraszać",kogoś,,
+wzywać
+zapraszać
+przyciągać
+nazywać
+przezywać",kogoś,,
 3842,WORD,WORD_VERB_U,,HIRAGANA,Genki 2-19,,寄る,よる,,yoru,"wstępować
 zajść
 wpadać (do sąsiada, sklepu i etc)
@@ -6893,7 +6904,8 @@ cypel",,,
 4395,WORD,WORD_NOUN,,HIRAGANA,,,州,しゅう,,shuu,"prowincja
 stan
 kontynent",,,"273
-4396"
+4396
+6412"
 4396,WORD,WORD_NOUN,,HIRAGANA,,,州,す,,su,"mielizna
 ławica",,,4395
 4397,WORD,WORD_NOUN,,HIRAGANA,,,アラスカ州,あらすかしゅう,,arasukashuu,stan Alaska,w USA,,
@@ -8358,7 +8370,8 @@ inercja",,,"6011
 5188,WORD,WORD_NOUN,,HIRAGANA,,,所得税,しょとくぜい,,shotokuzei,podatek dochodowy,,,
 5189,WORD,WORD_NOUN,,HIRAGANA,,,無税,むぜい,,muzei,"wolny od podatku
 wolny od cła",,,
-5190,WORD,WORD_NOUN,,HIRAGANA,,,家庭,かてい,,katei,rodzina,,,5477
+5190,WORD,WORD_NOUN,,HIRAGANA,,,家庭,かてい,,katei,rodzina,,,"5477
+6437"
 5191,WORD,WORD_NOUN,,HIRAGANA,,,庭園,ていえん,,teien,"ogród
 park",,,
 5192,WORD,WORD_NOUN,,HIRAGANA,,,中庭,なかにわ,,naka niwa,ogród wewnętrzny,,,
@@ -8950,7 +8963,8 @@ przypuszczenie",,,
 5476,WORD,WORD_NOUN,,HIRAGANA,,,仮住まい,かりずまい,,karizumai,"miejsce tymczasowego zamieszkania
 miejsce tymczasowego pobytu",,,
 5477,WORD,WORD_NOUN,,HIRAGANA,,,仮定,かてい,,katei,"przypuszczenie
-hipoteza",,,5190
+hipoteza",,,"5190
+6437"
 5478,WORD,WORD_NOUN,,HIRAGANA,,,居間,いま,,ima,pokój,w stylu zachodnim,,66
 5479,WORD,WORD_NOUN,,HIRAGANA,,,長居,ながい,,nagai,długi pobyt,,,627
 5480,WORD,WORD_NOUN,,HIRAGANA,,,住居,じゅうきょ,,juukyo,"mieszkanie
@@ -9703,7 +9717,8 @@ zwyczaj",,,
 5815,WORD,WORD_NOUN,,HIRAGANA,,,種,しゅ,,shu,"rodzaj
 klasa
 nasienie
-gatunek",,,5814
+gatunek",,,"5814
+6411"
 5816,WORD,WORD_NOUN,,HIRAGANA,,,種族,しゅぞく,,shuzoku,"rasa
 szczep
 kasta",,,
@@ -10499,7 +10514,7 @@ obiecywać",,,
 5599
 5613
 6363"
-6203,WORD,WORD_NOUN,,HIRAGANA,,,聖霊,せいれい,,seirei,Duch Święty,,,
+6203,WORD,WORD_NOUN,,HIRAGANA,,,聖霊,せいれい,,seirei,Duch Święty,,,6426
 6204,WORD,WORD_NOUN,,HIRAGANA,,,聖人,せいじん,,seijin,święty,,,3586
 6205,WORD,WORD_NOUN,,HIRAGANA,,,聖水,せいすい,,seisui,woda święcona,,,
 6206,WORD,WORD_NOUN,,HIRAGANA,,,想,そう,,sou,"koncepcja
@@ -10895,3 +10910,71 @@ mielenie",,,
 6409,WORD,UNKNOWN,,HIRAGANA,,,粉骨,ふんこつ,,funkotsu,"szczerość
 pilność",,,
 6410,WORD,WORD_NOUN,,HIRAGANA,,,粉薬,こなぐすり,,konagusuri,lekarstwo w proszku,,,
+6411,WORD,WORD_NOUN,,HIRAGANA,,,衆,しゅ,,shu,"ludność
+ogrom
+duża liczba",,,"5815
+6412"
+6412,WORD,WORD_NOUN,,HIRAGANA,,,衆,しゅう,,shuu,"ludność
+ogrom
+duża liczba",,,"273
+4395
+6411"
+6413,WORD,WORD_NOUN,,HIRAGANA,,,群衆,ぐんしゅう,,gunshuu,tłum,,,
+6414,WORD,WORD_NOUN,,HIRAGANA,,,民衆,みんしゅう,,minshuu,"ludzie
+masy",,,
+6415,WORD,WORD_NOUN,,HIRAGANA,,,会衆,かいしゅう,,kaishuu,"lud
+zgromadzenie",,,
+6416,WORD,WORD_NOUN,,HIRAGANA,,,衆議院,しゅうぎいん,,shuugiin,niższa izba,parlamentu,,
+6417,WORD,WORD_VERB_U,,HIRAGANA,,,導く,みちびく,,michibiku,"przewodzić
+prowadzić
+oprowadzać",,,
+6418,WORD,WORD_NOUN,,HIRAGANA,,,主導,しゅどう,,shudou,"oprowadzanie
+przewodzenie",,,
+6419,WORD,WORD_NOUN,,HIRAGANA,,,導入,どうにゅう,,dounyuu,"wprowadzenie
+wstęp",,,
+6420,WORD,WORD_NOUN,,HIRAGANA,,,導電,どうでん,,douden,przewodnik elektryczny,,,
+6421,WORD,WORD_NOUN,,HIRAGANA,,,導電体,どうでんたい,,doudentai,przewodnik elektryczny,,,
+6422,WORD,WORD_NOUN,,HIRAGANA,,,半導体,はんどうたい,,handoutai,półprzewodnik,,,
+6423,WORD,WORD_NOUN,,HIRAGANA,,,令,れい,,rei,"rozkaz
+prawo",,,"1
+957
+6424"
+6424,WORD,WORD_NOUN,,HIRAGANA,,,令,りょう,,ryou,starożytne prawa,,,"2759
+6423"
+6425,WORD,WORD_NOUN,,HIRAGANA,,,発令,はつれい,,hatsurei,oficjalne ogłoszenie,,,
+6426,WORD,WORD_NOUN,,HIRAGANA,,,政令,せいれい,,seirei,rządowe zarządzenie,,,6203
+6427,WORD,WORD_NOUN,,HIRAGANA,,,訓令,くんれい,,kunrei,"instrukcje
+nakazy",,,
+6428,WORD,WORD_NOUN,,HIRAGANA,,,刀,かたな,,katana,"miecz
+ostrze",,,
+6429,WORD,WORD_NOUN,,HIRAGANA,,,刀剣,とうけん,,touken,miecz,,,
+6430,WORD,WORD_NOUN,,HIRAGANA,,,日本刀,にほんとう,,nihontou,japoński miecz,,,
+6431,WORD,WORD_NOUN,,HIRAGANA,,,刀身,とうしん,,toushin,ostrze miecza,,,
+6432,WORD,WORD_NOUN,,HIRAGANA,,,大刀,だいとう,,daitou,długi miecz,,,
+6433,WORD,WORD_NOUN,,HIRAGANA,,,小刀,しょうとう,,shoutou,krótki miecz,,,6434
+6434,WORD,WORD_NOUN,,HIRAGANA,,,小刀,こがたな,,kogatana,scyzoryk,,,6433
+6435,WORD,WORD_NOUN,,HIRAGANA,,,人事課,じんじか,,jinjika,"wydział osobowy
+kadry",,,
+6436,WORD,WORD_NOUN,,HIRAGANA,,,課目,かもく,,kamoku,przedmiot,szkolny,,3357
+6437,WORD,WORD_NOUN,,HIRAGANA,,,課程,かてい,,katei,kurs,,,"5190
+5477"
+6438,WORD,WORD_NOUN,,HIRAGANA,,,課題,かだい,,kadai,"temat
+problem
+ćwiczenie
+zadanie",,,
+6439,WORD,WORD_VERB_RU,,HIRAGANA,,,越える,こえる,,koeru,"przekraczać
+prześcigać",,,
+6440,WORD,WORD_VERB_U,,HIRAGANA,,,越す,こす,,kosu,"przebierać miarę
+dopuszczać się ekscesów",,,
+6441,WORD,WORD_VERB_U,,HIRAGANA,,,召す,めす,,mesu,"wołać
+zapraszać
+nosić
+zakładać",,,
+6442,WORD,WORD_NOUN,,HIRAGANA,,,召し,めし,,meshi,wezwanie,,,
+6443,WORD,WORD_NOUN,,HIRAGANA,,,遠足,えんそく,,ensoku,wycieczka,,,
+6444,WORD,WORD_NOUN,,HIRAGANA,,,遠回り,とおまわり,,toomawari,okrężna droga,,,
+6445,WORD,WORD_NOUN,,HIRAGANA,,,遠視,えんし,,enshi,dalekowzroczność,wada wzroku,,
+6446,WORD,WORD_ADJECTIVE_NA,,HIRAGANA,,,遠慮,えんりょ,,enryo,"rezerwa
+skromność
+wahanie",,,
+6447,WORD,WORD_NOUN,,HIRAGANA,,,遠征,えんせい,,ensei,ekspedycja,,,
