@@ -1,12 +1,11 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
+import java.util.Set;
 
-import pl.idedyk.japanese.dictionary.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper.KanaWord;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 
 public class Test {
 
@@ -33,23 +32,6 @@ public class Test {
 		System.out.println(KanaHelper.createKanaString(kanaWord));
 		*/
 
-		/*
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);
-		
-		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true);
-		
-		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
-			
-			String prefixKana = currentPolishJapaneseEntry.getPrefixKana();
-			
-			if (prefixKana != null && prefixKana.equals("お") == true) {
-				System.out.println(currentPolishJapaneseEntry.getId());
-			}
-		}
-		
-		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries, true);
-		*/
-
 		// TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict("../JaponskiSlownik_dodatki/edict-utf8");
 		/*
 		System.out.println(jmedict.get(EdictReader.getMapKey("食べる", "たべる")));
@@ -70,6 +52,7 @@ public class Test {
 		}
 		*/
 		
+		/*
 		// hiragana
 		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
 		
@@ -92,12 +75,81 @@ public class Test {
 		
 		String currentKanaAsRomaji = KanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
 
-		/*
+		/ *
 		KanaWord kanaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, "ken'aku");
 		String kanaString = KanaHelper.createKanaString(kanaWord);
-		*/
+		* /
 		
 		System.out.println(currentKanaAsRomaji);
+		*/
+		
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);
+				
+		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
+			
+			if (currentPolishJapaneseEntry.isUseEntry() == false) {
+				continue;
+			}
+			
+			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
+			
+			Set<Integer> knownDuplicatedIds = generateKnownDuplicatedIdForKanji(polishJapaneseEntries, currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji());
+			
+			for (String currentKana : kanaList) {
+				
+				generateKnownDuplicatedIdFormKanjiAndKana(knownDuplicatedIds, polishJapaneseEntries, currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji(),
+						currentKana);
+			}
+			
+			currentPolishJapaneseEntry.setKnownDuplicatedId(knownDuplicatedIds);
+		}
+		
+		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries, true);
+	}
+	
+	private static Set<Integer> generateKnownDuplicatedIdForKanji(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, String kanji) {
+		
+		Set<Integer> result = new HashSet<Integer>();
+		
+		if (kanji.equals("-") == true) {
+			return result;
+		}
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			if (polishJapaneseEntry.isUseEntry() == false) {
+				continue;
+			}
+			
+			if (polishJapaneseEntry.getId() != id && polishJapaneseEntry.getKanji().equals(kanji)) {
+				result.add(polishJapaneseEntry.getId());				
+			}
+		}
+		
+		return result;
+	}
+	
+	private static void generateKnownDuplicatedIdFormKanjiAndKana(Set<Integer> result, List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, String kanji, String kana) {
+				
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			if (polishJapaneseEntry.isUseEntry() == false) {
+				continue;
+			}
+									
+			boolean differentKanji = ! kanji.equals(polishJapaneseEntry.getKanji());
+			
+			if (kanji.equals("-") == true && polishJapaneseEntry.getKanji().equals("-") == false) {
+				differentKanji = false;
+			}
 
+			if (kanji.equals("-") == false && polishJapaneseEntry.getKanji().equals("-") == true) {
+				differentKanji = false;
+			}
+			
+			if (polishJapaneseEntry.getId() != id && differentKanji == false && polishJapaneseEntry.getKanaList().contains(kana) == true) {
+				result.add(polishJapaneseEntry.getId());				
+			}
+		}
 	}
 }

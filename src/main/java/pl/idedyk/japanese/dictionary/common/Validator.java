@@ -441,7 +441,7 @@ public class Validator {
 			report.append("---\n\n");
 		}
 		
-		// kana
+		// kanji && kana
 		
 		TreeMap<String, TreeSet<PolishJapaneseEntry>> duplicatedKana = new TreeMap<String, TreeSet<PolishJapaneseEntry>>();
 		
@@ -452,6 +452,7 @@ public class Validator {
 			}
 			
 			int id = polishJapaneseEntry.getId();
+			String kanji = polishJapaneseEntry.getKanji();
 			List<String> kanaList = polishJapaneseEntry.getKanaList();
 
 			if (kanaList == null || kanaList.size() == 0) {
@@ -460,11 +461,11 @@ public class Validator {
 			
 			for (String currentKana : kanaList) {
 				
-				List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKana(polishJapaneseKanjiEntries, id, true, currentKana);
+				List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanjiAndKana(polishJapaneseKanjiEntries, id, true, kanji, currentKana);
 				
 				if (findPolishJapaneseKanjiEntry.size() > 0) {
 					
-					findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKana(polishJapaneseKanjiEntries, id, false, currentKana);
+					findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanjiAndKana(polishJapaneseKanjiEntries, id, false, kanji, currentKana);
 				
 					TreeSet<PolishJapaneseEntry> polishJapaneseEntryKanaTreeSet = duplicatedKana.get(currentKana);
 					
@@ -531,6 +532,41 @@ public class Validator {
 				result.add(polishJapaneseEntry);
 			}
 		}
+		
+		return result;
+	}
+	
+	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntryInKanjiAndKana(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id,
+			boolean checkKnownDuplicated, String kanji, String kana) {
+		
+		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			if (polishJapaneseEntry.isUseEntry() == false) {
+				continue;
+			}
+			
+			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
+				continue;
+			}
+						
+			boolean differentKanji = ! kanji.equals(polishJapaneseEntry.getKanji());
+			
+			if (kanji.equals("-") == true && polishJapaneseEntry.getKanji().equals("-") == false) {
+				differentKanji = false;
+			}
+
+			if (kanji.equals("-") == false && polishJapaneseEntry.getKanji().equals("-") == true) {
+				differentKanji = false;
+			}
+			
+			if (polishJapaneseEntry.getId() != id && differentKanji == false && polishJapaneseEntry.getKanaList().contains(kana) == true) {
+				result.add(polishJapaneseEntry);				
+			} else if (checkKnownDuplicated == false && differentKanji == false && polishJapaneseEntry.getKanaList().contains(kana) == true) {
+				result.add(polishJapaneseEntry);
+			}
+		}		
 		
 		return result;
 	}
