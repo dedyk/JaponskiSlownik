@@ -151,6 +151,7 @@ public class Validator {
 		mapEdictTypeToDictionaryEntryType.put("vs-i", DictionaryEntryType.WORD_VERB_IRREGULAR);
 		mapEdictTypeToDictionaryEntryType.put("ateji", DictionaryEntryType.WORD_VERB_U); // ???
 		mapEdictTypeToDictionaryEntryType.put("io", DictionaryEntryType.WORD_VERB_U); // ???
+		mapEdictTypeToDictionaryEntryType.put("oK", DictionaryEntryType.WORD_VERB_RU); // ???
 		mapEdictTypeToDictionaryEntryType.put("vs-s", DictionaryEntryType.WORD_VERB_IRREGULAR);
 		mapEdictTypeToDictionaryEntryType.put("v5aru", DictionaryEntryType.WORD_VERB_U);
 		mapEdictTypeToDictionaryEntryType.put("v5u-s", DictionaryEntryType.WORD_VERB_U);
@@ -182,7 +183,7 @@ public class Validator {
 				
 				if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U || dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU ||
 						dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
-					
+										
 					DictionaryEntryType dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(mapEdictTypeToDictionaryEntryType, foundEdict.getPos());
 					
 					if (dictionaryEntryType != dictionaryEntryTypeFromEdictPos) {
