@@ -15,7 +15,6 @@ import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
 create table words (
 	id int not null auto_increment, primary key(id),
-	dictionary_type varchar(20) not null, index(dictionary_type),
 	dictionary_entry_type varchar(30) not null, index(dictionary_entry_type),
 	word_type varchar(20) not null, index(word_type),
 	prefix varchar(10) null,
@@ -43,9 +42,9 @@ public class DictionarySQLDatabaseLoader {
 
 	private static void loadDictionaryIntoDB(String mysqlAddress, String tableName, String inputFileName) throws IOException, JapaneseDictionaryException {
 		
-		final String insertStatementSql = "insert into " + tableName + " values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		final String insertStatementSql = "insert into " + tableName + " values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(inputFileName, null);
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(inputFileName);
 		
 		Connection dbConnection = null;
 		PreparedStatement insertStatement = null;
@@ -59,7 +58,6 @@ public class DictionarySQLDatabaseLoader {
 				insertStatement = dbConnection.prepareStatement(insertStatementSql);
 				
 				insertStatement.setInt(1, polishJapaneseEntry.getId());
-				insertStatement.setString(2, polishJapaneseEntry.getDictionaryType().getName());
 				insertStatement.setString(3, polishJapaneseEntry.getDictionaryEntryType().toString());
 				insertStatement.setString(4, polishJapaneseEntry.getWordType().toString());
 				insertStatement.setString(5, polishJapaneseEntry.getPrefixKana());

@@ -9,7 +9,6 @@ import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.dto.DictionaryType;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -226,7 +225,6 @@ public class Helper {
 			PolishJapaneseEntry newPolishJapaneseEntry = new PolishJapaneseEntry();
 			
 			newPolishJapaneseEntry.setId(counter);
-			newPolishJapaneseEntry.setDictionaryType(DictionaryType.WORD);
 			
 			if (pos.contains("f") == true) {
 				newPolishJapaneseEntry.setDictionaryEntryType(DictionaryEntryType.WORD_FEMALE_NAME);

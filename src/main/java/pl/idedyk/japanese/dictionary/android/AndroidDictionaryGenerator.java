@@ -75,7 +75,7 @@ public class AndroidDictionaryGenerator {
 		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
 		
 		// parse csv
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName, null);
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName);
 		
 		// read edict
 		TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict(edictFileName);

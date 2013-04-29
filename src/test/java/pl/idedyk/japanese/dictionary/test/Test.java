@@ -83,7 +83,7 @@ public class Test {
 		System.out.println(currentKanaAsRomaji);
 		*/
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 				
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
 			

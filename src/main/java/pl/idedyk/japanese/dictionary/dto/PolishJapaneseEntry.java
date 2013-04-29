@@ -7,8 +7,6 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 	
 	private int id;
 	
-	private DictionaryType dictionaryType;
-	
 	private DictionaryEntryType dictionaryEntryType;
 	
 	private List<AttributeType> attributeTypeList;
@@ -127,8 +125,7 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 
 	@Override
 	public String toString() {
-		return "PolishJapaneseEntry [id=" + id + ", dictionaryType="
-				+ dictionaryType + ", dictionaryEntryType="
+		return "PolishJapaneseEntry [id=" + id + ", dictionaryEntryType="
 				+ dictionaryEntryType + ", attributeTypeList="
 				+ attributeTypeList + ", wordType=" + wordType
 				+ ", prefixKana=" + prefixKana + ", groups=" + groups
@@ -145,14 +142,6 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public DictionaryType getDictionaryType() {
-		return dictionaryType;
-	}
-
-	public void setDictionaryType(DictionaryType dictionaryType) {
-		this.dictionaryType = dictionaryType;
 	}
 
 	public boolean isUseEntry() {
