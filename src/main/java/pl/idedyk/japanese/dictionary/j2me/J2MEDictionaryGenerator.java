@@ -8,7 +8,6 @@ import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
-import pl.idedyk.japanese.dictionary.dto.DictionaryType;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -57,10 +56,9 @@ public class J2MEDictionaryGenerator {
 		Validator.validateDictionaryAndKanjiDictionary(joinedDictionary);
 		*/
 		
-		CsvReaderWriter.generateDictionaryApplicationResult("output/japanese_polish_dictionary.properties", polishJapaneseEntries, DictionaryType.WORD, true);
+		CsvReaderWriter.generateDictionaryApplicationResult("output/japanese_polish_dictionary.properties", polishJapaneseEntries);
 		CsvReaderWriter.generateKanaEntriesCsv(kanjiOutputDir + "/hiragana.properties", hiraganaEntries);
 		CsvReaderWriter.generateKanaEntriesCsv(kanjiOutputDir + "/katakana.properties", katakanaEntries);
-		CsvReaderWriter.generateDictionaryApplicationResult(kanjiOutputDir + "/kanji_dictionary.properties", polishJapaneseEntries, DictionaryType.KANJI, true);
 				
 		System.out.println("Done");
 	}

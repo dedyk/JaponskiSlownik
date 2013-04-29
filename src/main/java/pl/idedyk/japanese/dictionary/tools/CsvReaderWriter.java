@@ -30,16 +30,20 @@ import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
 public class CsvReaderWriter {
 
-	public static void generateDictionaryApplicationResult(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries, DictionaryType dictionaryType, boolean addKanji) throws IOException {
+	public static void generateDictionaryApplicationResult(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
 		
 		StringBuffer sb = new StringBuffer();
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
-			if (polishJapaneseEntry.getDictionaryType() != dictionaryType) {
+			if (polishJapaneseEntry.isUseEntry() == false) {
 				continue;
 			}
-
+			
+			if (polishJapaneseEntry.getGroups().size() == 1 && polishJapaneseEntry.getGroups().get(0).equals("Inne") == true) {
+				continue;
+			}
+			
 			String prefixKana = polishJapaneseEntry.getPrefixKana();
 			
 			String prefixRomaji = polishJapaneseEntry.getPrefixRomaji();
@@ -89,7 +93,7 @@ public class CsvReaderWriter {
 			
 			sb.append(String.valueOf(useEntry)).append(";");
 			
-			if (addKanji == true && polishJapaneseEntry.getKanji() != null && polishJapaneseEntry.getKanji().equals("") == false) {
+			if (polishJapaneseEntry.getKanji() != null && polishJapaneseEntry.getKanji().equals("") == false) {
 				sb.append(polishJapaneseEntry.getFullKanji()).append(";");
 			}
 
