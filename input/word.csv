@@ -551,7 +551,9 @@ jakiego rodzaju",,,
 460,UNKNOWN,,HIRAGANA,Genki 1-5,,-,まで,,made,do,"miejsce, czasu",,
 461,UNKNOWN,,HIRAGANA,Genki 1-5,,-,から,,kara,od,"miejsce, czasu",,"5636
 522"
-462,WORD_NOUN,,HIRAGANA,Genki 1-5,,電車,でんしゃ,,densha,pociąg,,,
+462,WORD_NOUN,,HIRAGANA,Genki 1-5,,電車,でんしゃ,,densha,"pociąg
+kolejka elektryczna
+tramwaj",,,
 463,WORD_NOUN,,HIRAGANA,Genki 1-5,,病気,びょうき,,byouki,"chory
 choroba",,,
 464,UNKNOWN,,HIRAGANA,Genki 1-5,,年をとった,としをとった,,toshi o totta,stary,o człowieku,,
@@ -582,7 +584,9 @@ starsza kobieta","spoza swojej rodziny lub własna rodzina, nieformalnie",,
 486,WORD_NOUN,,HIRAGANA,Genki 1-6,,電気,でんき,,denki,"elektryczność
 prąd
 światło",,,
-487,WORD_NOUN,,HIRAGANA,Genki 1-6,,電車,でんしゃ,,densha,pociąg,,NO,
+487,WORD_NOUN,,HIRAGANA,Genki 1-6,,電車,でんしゃ,,densha,"pociąg
+kolejka elektryczna
+tramwaj",,NO,
 488,WORD_NOUN,,HIRAGANA,Genki 1-6,,荷物,にもつ,,nimotsu,bagaż,,,
 489,WORD_NOUN,,KATAKANA,Genki 1-6,,-,ページ,,peeji,strona,,,
 490,WORD_NOUN,,HIRAGANA,Genki 1-6,,窓,まど,,mado,okno,,,
@@ -1528,7 +1532,7 @@ zaniepokojony
 obawa
 lęk
 niepokój",,,
-1153,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-13,,気分が悪い,きぷんがわるい,,kipun ga warui,"czuć się źle
+1153,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-13,,気分が悪い,きぶんがわるい,,kibun ga warui,"czuć się źle
 być w złym nastroju",,,
 1154,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,体,からだ,,karada,ciało,,,
 1155,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-13,,体にいい,からだにいい,,karada ni ii,"zdrowe
@@ -2174,13 +2178,17 @@ rękodzieło",,,
 1663,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,事,こと,,koto,rzecz,,,2685
 1664,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,火事,かじ,,kaji,ogień,,,
 1665,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,食事,しょくじ,,shokuji,posiłek,,,
-1666,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,電車,でんしゃ,,densha,pociąg,,NO,
+1666,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,電車,でんしゃ,,densha,"pociąg
+kolejka elektryczna
+tramwaj",,NO,
 1667,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,電気,でんき,,denki,"elektryczność
 prąd
 światło",,NO,
 1668,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,電話,でんわ,,denwa,telefon,,NO,
 1669,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,車,くるま,,kuruma,samochód,,NO,
-1670,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,電車,でんしゃ,,densha,pociąg,,NO,
+1670,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,電車,でんしゃ,,densha,"pociąg
+kolejka elektryczna
+tramwaj",,NO,
 1671,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,自転車,じてんしゃ,,jitensha,rower,,NO,
 1672,WORD_VERB_U,,HIRAGANA,Genki kanji 1-8,,休む,やすむ,,yasumu,odpoczywać,,NO,
 1673,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,休み,やすみ,,yasumi,"wakacje
@@ -2264,14 +2272,17 @@ słuszny",,,
 1738,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,今年,ことし,,kotoshi,aktualny rok,,NO,
 1739,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,年,とし,,toshi,rok,,,859
 1740,WORD_VERB_U,,HIRAGANA,Genki kanji 1-10,,売る,うる,,uru,sprzedawać,,NO,
-1741,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,売店,ばいてん,,baiten,kiosk,,,
+1741,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,売店,ばいてん,,baiten,"kiosk
+sklepik
+stragan",,,
 1742,WORD_VERB_U,,HIRAGANA,Genki kanji 1-10,を,買う,かう,o,kau,kupować,,NO,
 1743,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,買い物,かいもの,,kaimono,zakupy,,NO,
 1744,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,町,まち,,machi,miasteczko,,NO,
 1745,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,北山町,きたやまちょう,,kitayama chou,Kitayama,miasto w Japonii,,
 1746,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,町長,ちょうちょう,,chouchou,burmistrz,małego miasta,,
 1747,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 1-10,,長い,ながい,,nagai,długi,,NO,
-1748,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,長男,ちょうなん,,chounan,pierwszy syn,,,
+1748,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,長男,ちょうなん,,chounan,"pierwszy syn
+najstarszy syn",,,
 1749,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,道,みち,,michi,"droga
 kierunek
 wskazówka",,NO,
@@ -2285,7 +2296,8 @@ wskazówka",,NO,
 1757,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,私立高校,しりつこうこう,,shiritsukoukou,prywatne liceum,,,
 1758,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,自分,じぶん,,jibun,"ja sam
 siebie",,NO,
-1759,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,自動車,じどうしゃ,,jidousha,automobil,,,
+1759,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,自動車,じどうしゃ,,jidousha,"automobil
+samochód",,,
 1760,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,自転車,じてんしゃ,,jitensha,rower,,NO,
 1761,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,夜,よる,,yoru,noc,,NO,
 1762,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,夜中,よなか,,yonaka,północ,,,
@@ -2459,7 +2471,7 @@ gotowany ryż",,,
 1896,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,牛肉,ぎゅうにく,,gyuuniku,wołowina,,NO,
 1897,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,肉屋,にくや,,nikuya,sklep mięsny,,,
 1898,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,悪い,わるい,,warui,zły,,NO,
-1899,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,気分が悪い,きぷんがわるい,,kipun ga warui,"czuć się źle
+1899,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,気分が悪い,きぶんがわるい,,kibun ga warui,"czuć się źle
 być w złym nastroju",,NO,
 1900,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,最悪,さいあく,,saiaku,najgorszy,,,
 1901,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,悪魔,あくま,,akuma,diabeł,,,
@@ -2532,7 +2544,9 @@ wartościowy",,,
 1950,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,英雄,えいゆう,,eiyuu,bohater,,,
 1951,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,店,みせ,,mise,sklep,,NO,
 1952,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,店員,てんいん,,ten'in,sprzedawca,,NO,
-1953,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,売店,ばいてん,,baiten,kiosk,,NO,
+1953,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,売店,ばいてん,,baiten,"kiosk
+sklepik
+stragan",,NO,
 1954,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,書店,しょてん,,shoten,księgarnia,,,
 1955,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,去年,きょねん,,kyonen,"zeszły rok
 ubiegły rok",,NO,
@@ -2779,7 +2793,9 @@ Kitakyushu",miasto w Japonii,,
 2128,WORD_NOUN,,HIRAGANA,,,蟻,あり,,ari,mrówka,,,
 2129,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,店長,てんちょう,,tenchou,"kierownik sklepu
 zarządca sklepu",,,
-2130,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,気分,きぷん,,kipun,nastrój,,,
+2130,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,気分,きぶん,,kibun,"nastrój
+samopoczucie
+stan (zdrowia)",,,
 2131,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-13,,一生,いっしょう,,isshou,życie,,,
 2132,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,海苔,のり,,nori,nori,japońska potrawa,,
 2133,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,すき焼き,すきやき,,sukiyaki,sukiyaki,japońska potrawa,,
@@ -3457,7 +3473,8 @@ poprzednio",,,
 2567,WORD_EXPRESSION,,HIRAGANA,Genki 2-16,,失礼します,しつれいします,,shitsurei shimasu,"przepraszam, że przeszkadzam
 przepraszam, że przerywam","używa się do tego, co robimy, np. podczas wchodzenia do pokoju",,
 2568,UNKNOWN,,HIRAGANA,Genki 2-16,,自分で,じぶんで,,jibun de,"sam
-samodzielnie",robić coś,,
+samodzielnie
+osobiście",robić coś,,
 2569,UNKNOWN,,HIRAGANA,Genki 2-16,,授業中に,じゅぎょうちゅうに,,jugyou chuu ni,"w klasie
 w trakcie zajęć",,,
 2570,UNKNOWN,,HIRAGANA,Genki 2-16,,外の,ほかの,,hoka no,inny,,,
@@ -3532,7 +3549,8 @@ rozpoczynać",,NO,
 2617,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,週末,しゅうまつ,,shuumatsu,"weekend
 koniec tygodnia",,NO,
 2618,UNKNOWN,,HIRAGANA,Genki kanji 2-16,,以上,いじょう,,ijou,"powyżej
-więcej niż",,,
+więcej niż
+ponad",,,
 2619,UNKNOWN,,HIRAGANA,Genki kanji 2-16,,以下,いか,,ika,"poniżej
 mniej niż",,,
 2620,UNKNOWN,,HIRAGANA,Genki kanji 2-16,,以前,いぜん,,izen,"poprzednio
@@ -3600,7 +3618,8 @@ nosić",,,
 2651,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運動,うんどう,,undou,ćwiczenia,fizyczne,NO,
 2652,WORD_VERB_U,,HIRAGANA,Genki kanji 2-16,,動く,うごく,,ugoku,"poruszać się
 ruszać się",,,
-2653,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,自動車,じどうしゃ,,jidousha,automobil,,NO,
+2653,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,自動車,じどうしゃ,,jidousha,"automobil
+samochód",,NO,
 2654,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,動物,どうぶつ,,doubutsu,zwierze,,NO,
 2655,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-16,を,教える,おしえる,o,oshieru,uczyć,"kogoś, osoba ni rzecz",NO,
 2656,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,教室,きょうしつ,,kyoushitsu,sala,szkolna,,
@@ -3635,7 +3654,8 @@ szczęśliwy",,,
 wznawiać
 ciągnąć się (np. dni)",,,
 2676,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,以上,いじょう,,ijou,"powyżej
-więcej niż",,NO,
+więcej niż
+ponad",,NO,
 2677,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,売れる,うれる,,ureru,sprzedawać,forma potencjalna,,
 2678,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-16,,例えば,たとえば,,tatoeba,"na przykład
 np.",,NO,
@@ -4595,7 +4615,7 @@ osoba pełniąca dyżur",,,
 3231,WORD_NOUN,,HIRAGANA,,,冷凍庫,れいとうこ,,reitouko,zamrażarka,,,
 3232,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-18,,明るい,あかるい,,akarui,"pogodny
 jasny",,NO,
-3233,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-18,,気分が悪い,きぷんがわるい,,kipun ga warui,"czuć się źle
+3233,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-18,,気分が悪い,きぶんがわるい,,kibun ga warui,"czuć się źle
 być w złym nastroju",,NO,
 3234,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-18,,恥ずかしい,はずかしい,,hazukashii,"nieśmiały
 bojaźliwy
@@ -5994,6 +6014,7 @@ fatum",,,
 4002,WORD_NOUN,,HIRAGANA,,,女子,じょし,,joshi,"dziewczyna
 kobieta",,,
 4003,WORD_NOUN,,HIRAGANA,,,男子,だんし,,danshi,"chłopiec
+chłopak
 mężczyzna",,,
 4004,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 2-18,,楽しみ,たのしみ,,tanoshimi,"przyjemność
 zabawa
@@ -6358,9 +6379,14 @@ prace budowlane",,NO,
 4212,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,工場,こうじょう,,koujou,fabryka,,NO,
 4213,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,大工,だいく,,daiku,"cieśla
 stolarz",,,
-4214,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,研究,けんきゅう,,kenkyuu,badania,,,
-4215,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,研修,けんしゅう,,kenshuu,trening,,,
-4216,WORD_VERB_U,,HIRAGANA,Genki kanji 2-19,,研ぐ,とぐ,,togu,ostrzyć,,,
+4214,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,研究,けんきゅう,,kenkyuu,"badania naukowe
+studia",,,
+4215,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,研修,けんしゅう,,kenshuu,"trening
+studiowanie
+ćwiczenie
+szkolenie",,,
+4216,WORD_VERB_U,,HIRAGANA,Genki kanji 2-19,,研ぐ,とぐ,,togu,"polerować
+ostrzyć",,,
 4217,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,探究,たんきゅう,,tankyuu,poszukiwanie,,,
 4218,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-19,,究める,きわめる,,kiwameru,"badać
 studiować coś dogłębnie",,,
@@ -12254,3 +12280,58 @@ towarzysze",,,7314
 7324,WORD_NOUN,,HIRAGANA,,,遺言書,ゆいごんしょ,,yuigonsho,testament,,,
 7325,WORD_NOUN,,HIRAGANA,,,遺骨,いこつ,,ikotsu,"zwłoki
 prochy",po zmarłym,,
+7326,WORD_NOUN,,HIRAGANA,,,発電所,はつでんじょ,,hatsudenjo,elektrownia,,,
+7327,WORD_VERB_U,,HIRAGANA,,,照る,てる,,teru,"świecić
+błyszczeć",,,
+7328,WORD_VERB_U,,HIRAGANA,,,照らす,てらす,,terasu,oświecać,,,
+7329,WORD_VERB_RU,,HIRAGANA,,,照れる,てれる,,tereru,"być zażenowanym
+być zawstydzonym",,,
+7330,WORD_NOUN,,HIRAGANA,,,照会,しょうかい,,shoukai,"dochodzenie
+badanie
+informowanie się",,,
+7331,UNKNOWN,,HIRAGANA,,,照会中,しょうかいちゅう,,shoukai chuu,być w kontakcie z,,,
+7332,WORD_NOUN,,HIRAGANA,,,照明,しょうめい,,shoumei,"oświetlenie
+iluminacja",,,
+7333,WORD_NOUN,,HIRAGANA,,,照準,しょうじゅん,,shoujun,"cel
+widok",,,
+7334,WORD_NOUN,,HIRAGANA,,,照合,しょうごう,,shougou,"porównanie
+skonfrontowanie
+zestawienie
+kontrola",,,
+7335,UNKNOWN,,HIRAGANA,,,自ら,みずから,,mizukara,"sam
+osobiście",,,
+7336,WORD_NOUN,,HIRAGANA,,,自由市場,じゆうしじょう,,jiyuushijou,wolny rynek,,,
+7337,WORD_NOUN,,HIRAGANA,,,圧,あつ,,atsu,ciśnienie,,,
+7338,WORD_NOUN,,HIRAGANA,,,圧力,あつりょく,,atsuryoku,ciśnienie,,,
+7339,WORD_NOUN,,HIRAGANA,,,圧迫,あっぱく,,appaku,opresja,,,
+7340,WORD_NOUN,,HIRAGANA,,,圧倒,あっとう,,attou,"pokonywać
+opanowywać
+zgniatać",,,
+7341,WORD_NOUN,,HIRAGANA,,,気圧,きあつ,,kiatsu,ciśnienie atmosferyczne,,,
+7342,WORD_NOUN,,HIRAGANA,,,血圧,けつあつ,,ketsuatsu,ciśnienie krwi,,,
+7343,WORD_NOUN,,HIRAGANA,,,人気,にんき,,ninki,popularność,,,
+7344,WORD_NOUN,,HIRAGANA,,,気体,きたい,,kitai,"gaz
+substancja gazowa
+substancja lotna",,,
+7345,WORD_NOUN,,HIRAGANA,,,気持ち,きもち,,kimochi,uczucie,,,
+7346,WORD_ADJECTIVE_NA,,HIRAGANA,,,本気,ほんき,,honki,"prawdziwe uczucie
+powaga",,,
+7347,WORD_NOUN,,HIRAGANA,,,研究者,けんきゅうしゃ,,kenkyuusha,"naukowiec
+badacz naukowy",,,
+7348,WORD_NOUN,,HIRAGANA,,,研究所,けんきゅうじょ,,kenkyuujo,instytut naukowy,,,7349
+7349,WORD_NOUN,,HIRAGANA,,,研究所,けんきゅうしょ,,kenkyuusho,instytut naukowy,,,7348
+7350,WORD_NOUN,,HIRAGANA,,,研磨紙,けんまし,,kenmashi,papier ścierny,,,
+7351,WORD_NOUN,,HIRAGANA,,,男女共学,だんじょきょうがく,,danjokyougaku,koedukacja,,,
+7352,WORD_NOUN,,HIRAGANA,,,売り手,うりて,,urite,sprzedawca,,,
+7353,WORD_NOUN,,HIRAGANA,,,売価,ばいか,,baika,cena sprzedaży,,,
+7354,WORD_NOUN,,HIRAGANA,,,売買,ばいばい,,baibai,"handel
+sprzedaż i kupno",,,
+7355,WORD_NOUN,,HIRAGANA,,,売春,ばいしゅん,,baishun,prostytucja,,,
+7356,UNKNOWN,,HIRAGANA,,,以って,もって,,motte,"ponieważ
+ze względu na
+z
+przez
+poprzez",,,
+7357,UNKNOWN,,HIRAGANA,,,以内,いない,,inai,w granicach,wewnątrz,,
+7358,UNKNOWN,,HIRAGANA,,,以降,いこう,,ikou,"od pewnego czasu
+od pewnego wydarzenia",,,
