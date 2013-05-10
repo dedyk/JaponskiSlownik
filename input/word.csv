@@ -205,7 +205,7 @@ wysoki","pieniądze, wzrost",,
 176,WORD_NUMBER,,HIRAGANA,Genki 1-2,,三百,さんびゃく,,sanbyaku,trzysta,,,
 177,WORD_NUMBER,,HIRAGANA,Genki 1-2,,六百,ろっぴゃく,,roppyaku,sześćset,,,
 178,WORD_NUMBER,,HIRAGANA,Genki 1-2,,八百,はっぴゃく,,happyaku,osiemset,,,
-179,WORD_NUMBER,,HIRAGANA,Genki 1-2,,千,せん,,sen,tysiąc,,,
+179,WORD_NUMBER,,HIRAGANA,Genki 1-2,,千,せん,,sen,tysiąc,,,7368
 180,WORD_NUMBER,,HIRAGANA,Genki 1-2,,三千,さんぜん,,sanzen,trzy tysiące,,,
 181,WORD_NUMBER,,HIRAGANA,Genki 1-2,,八千,はっせん,,hassen,osiem tysięcy,,,
 182,WORD_NUMBER,,HIRAGANA,Genki 1-2,,一万,いちまん,,ichiman,dziesięć tysięcy,,,
@@ -2410,7 +2410,8 @@ wydawać (pieniądze)",,NO,
 rozwodzić się
 zerwać",osobę ~,NO,
 1853,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,別に,べつに,,betsuni,nieszczególnie,+ czasownik w formie negatywnej,NO,
-1854,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-12,,特別,とくべつ,,tokubetsu,specjalne,,,
+1854,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-12,,特別,とくべつ,,tokubetsu,"specjalny
+wyjątkowy",,,
 1855,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,差別,さべつ,,sabetsu,dyskryminacja,,,
 1856,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,別々に,べつべつに,,betsu betsu ni,oddzielnie,,,
 1857,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,一度,いちど,,ichido,raz,,,
@@ -2452,7 +2453,8 @@ wypłata",,,
 przyczyna",,,
 1886,UNKNOWN,,HIRAGANA,Genki kanji 2-13,,特に,とくに,,tokuni,"szczególnie
 zwłaszcza",,NO,
-1887,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,特別,とくべつ,,tokubetsu,specjalne,,NO,
+1887,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,特別,とくべつ,,tokubetsu,"specjalny
+wyjątkowy",,NO,
 1888,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,特急電車,とっきゅうでんしゃ,,tokkyuu densha,super express,pociąg,,
 1889,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,安い,やすい,,yasui,tani,,NO,
 1890,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,安心,あんしん,,anshin,"spokój
@@ -10361,7 +10363,8 @@ uprawnienie",,,
 uprawnienie
 kompetencja",,,
 6342,WORD_NOUN,,HIRAGANA,,,人権,じんけん,,jinken,prawa człowieka,,,
-6343,WORD_NOUN,,HIRAGANA,,,特権,とっけん,,tokken,specjalne uprawnienie,,,
+6343,WORD_NOUN,,HIRAGANA,,,特権,とっけん,,tokken,"przywilej
+specjalne uprawnienie",,,
 6344,WORD_NOUN,,HIRAGANA,,,主権,しゅけん,,shuken,suwerenność,,,
 6345,WORD_NOUN,,HIRAGANA,,,律,りつ,,ritsu,"prawo
 regulamin
@@ -10760,6 +10763,7 @@ przebaczać",,,
 pozwolenie",,,
 6550,WORD_NOUN,,HIRAGANA,,,運転免許,うんてんめんきょ,,unten menkyo,prawo jazdy,,,
 6551,WORD_NOUN,,HIRAGANA,,,特許,とっきょ,,tokkyo,"specjalne pozwolenie
+licencja
 patent",,,
 6552,WORD_NOUN,,HIRAGANA,,,特許法,とっきょほう,,tokkyohou,prawo patentowe,,,
 6553,WORD_NOUN,,HIRAGANA,,,宗,しゅう,,shuu,"religia
@@ -12335,3 +12339,29 @@ poprzez",,,
 7357,UNKNOWN,,HIRAGANA,,,以内,いない,,inai,w granicach,wewnątrz,,
 7358,UNKNOWN,,HIRAGANA,,,以降,いこう,,ikou,"od pewnego czasu
 od pewnego wydarzenia",,,
+7359,WORD_NOUN,,HIRAGANA,,,体力,たいりょく,,tairyoku,siła fizyczna,,,
+7360,WORD_ADJECTIVE_NA,,HIRAGANA,,,肉体的,にくたいてき,,nikutaiteki,fizyczny,"np. pracownik, wysiłek",,
+7361,WORD_NOUN,,HIRAGANA,,,品,しな,,shina,"towar
+przedmiot
+artykuł
+rodzaj
+jakość
+osobowość",,,
+7362,WORD_NOUN,,HIRAGANA,,,品目,ひんもく,,hinmoku,spis artykułów,,,
+7363,WORD_NOUN,,HIRAGANA,,,品行,ひんこう,,hinkou,zachowanie,,,
+7364,WORD_NOUN,,HIRAGANA,,,品格,ひんかく,,hinkaku,"godność
+szlachetność",,,
+7365,WORD_NOUN,,HIRAGANA,,,品質,ひんしつ,,hinshitsu,jakość,,,
+7366,WORD_ADJECTIVE_NA,,HIRAGANA,,,特殊,とくしゅ,,tokushu,"specjalny
+typowy
+charakterystyczny
+unikalny",,,
+7367,WORD_NOUN,,HIRAGANA,,,特長,とくちょう,,tokuchou,"cecha charakterystyczna
+mocny punkt
+zaleta",,,
+7368,UNKNOWN,,HIRAGANA,,,千,ち,,chi,tysiąc,,,179
+7369,WORD_NOUN,,HIRAGANA,,,千年,せんねん,,sennen,"milenium
+tysiąc lat",,,
+7370,WORD_NOUN,,HIRAGANA,,,千円札,せんえんさつ,,sen'ensatsu,banknot tysiąc jenowy,,,
+7371,WORD_NOUN,,HIRAGANA,,,千鳥,ちどり,,chidori,siewka,ptak,,
+7372,WORD_NOUN,,HIRAGANA,,,千金,せんきん,,senkin,dużo pieniędzy,,,
