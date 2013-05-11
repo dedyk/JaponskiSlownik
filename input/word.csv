@@ -102,7 +102,7 @@ bardzo miło mi",kierowane do osoby wyżej postawionej,,
 82,WORD_EXPRESSION,,HIRAGANA,Genki 1-1,,-,そうですね,,sou desu ne,to prawda,,,
 83,WORD_NOUN,,HIRAGANA,Genki 1-1,,大学,だいがく,,daigaku,uniwersytet,,,
 84,WORD_NOUN,,HIRAGANA,Genki 1-1,,電話,でんわ,,denwa,telefon,,,
-85,WORD_NOUN,,HIRAGANA,Genki 1-1,,友だち,ともだち,,tomodachi,przyjaciel,,,
+85,WORD_NOUN,,HIRAGANA,Genki 1-1,,友達,ともだち,,tomodachi,przyjaciel,,,
 86,WORD_NOUN,,HIRAGANA,Genki 1-1,,名前,なまえ,,namae,imię,,,
 87,WORD_ASK,,HIRAGANA,Genki 1-1,,何,"なん
 なに",,"nan
@@ -2231,7 +2231,7 @@ nani",co,,NO,
 pora deszczowa",,,
 1704,WORD_VERB_U,,HIRAGANA,Genki kanji 1-9,を,書く,かく,o,kaku,pisać,osoba ni rzecz,,
 1705,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,辞書,じしょ,,jisho,słownik,,NO,
-1706,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,友だち,ともだち,,tomodachi,przyjaciel,,NO,
+1706,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,友達,ともだち,,tomodachi,przyjaciel,,NO,
 1707,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,親友,しんゆう,,shin'yuu,najlepszy przyjaciel,,,
 1708,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,友人,ゆうじん,,yuujin,przyjaciel,bardziej oficjalnie,,
 1709,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,時間,じかん,,jikan,"czas
@@ -2425,7 +2425,7 @@ wyjątkowy",,,
 1865,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,赤十字,せきじゅうじ,,sekijuuji,Czerwony Krzyż,,,
 1866,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,青,あお,,ao,kolor niebieski,,,
 1867,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 1-12,,青い,あおい,,aoi,niebieski,,NO,
-1868,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,青年,せいねん,,seinen,"on
+1868,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,青年,せいねん,,seinen,"młodzież
 młody pan",,,
 1869,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,色,いろ,,iro,kolor,,NO,
 1870,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-12,,色々,いろいろ,,iroiro,różne,,NO,
@@ -10226,7 +10226,7 @@ cenne",,,
 6265,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,Genki kanji 2-21,,初めは,はじめは,,hajime wa,"na początku
 początkowo
 pierwszy",,,
-6266,WORD_ADVERB,,HIRAGANA,Genki kanji 2-21,,始めて,はじめて,,hajimete,pierwszy raz,,NO,
+6266,WORD_ADVERB,,HIRAGANA,Genki kanji 2-21,,初めて,はじめて,,hajimete,pierwszy raz,,,
 6267,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,最初,さいしょ,,saisho,"początek
 rozpoczęcie
 pierwszy
@@ -12365,3 +12365,74 @@ tysiąc lat",,,
 7370,WORD_NOUN,,HIRAGANA,,,千円札,せんえんさつ,,sen'ensatsu,banknot tysiąc jenowy,,,
 7371,WORD_NOUN,,HIRAGANA,,,千鳥,ちどり,,chidori,siewka,ptak,,
 7372,WORD_NOUN,,HIRAGANA,,,千金,せんきん,,senkin,dużo pieniędzy,,,
+7373,WORD_NOUN,,HIRAGANA,,,腸,ちょう,,chou,"jelito
+kiszka",,,7374
+7374,WORD_NOUN,,HIRAGANA,,,腸,はらわた,,harawata,"jelito
+kiszka",,,7373
+7375,WORD_NOUN,,HIRAGANA,,,腸炎,ちょうえん,,chouen,zapalenie jelit,,,
+7376,WORD_NOUN,,HIRAGANA,,,腸詰め,ちょうづめ,,choudume,kiełbasa,,,
+7377,WORD_NOUN,,HIRAGANA,,,大腸,だいちょう,,daichou,jelito grube,,,
+7378,WORD_NOUN,,HIRAGANA,,,小腸,しょうちょう,,shouchou,jelito cienkie,,,
+7379,WORD_NOUN,,HIRAGANA,,,盲腸,もうちょう,,mouchou,ślepa kiszka,,,
+7380,WORD_NOUN,,HIRAGANA,,,聞き手,ききて,,kikite,słuchacz,,,
+7381,WORD_VERB_U,,HIRAGANA,,,聞き取る,ききとる,,kikitoru,rozumieć,,,
+7382,WORD_VERB_U,,HIRAGANA,,,聞き流す,ききながす,,kikinagasu,"nie uważać
+słuchać nieuważnie",,,
+7383,WORD_VERB_U,,HIRAGANA,,,聞き従う,ききしたがう,,kikishitagau,być posłusznym,,,
+7384,WORD_NOUN,,HIRAGANA,,,友,とも,,tomo,"przyjaciel
+towarzysz
+kolega",,,
+7385,WORD_NOUN,,HIRAGANA,,,友情,ゆうじょう,,yuujou,przyjaźń,,,
+7386,WORD_NOUN,,HIRAGANA,,,友好条約,ゆうこうじょうやく,,yuukoujouyaku,układ o wzajemnej przyjaźni,,,
+7387,WORD_NOUN,,HIRAGANA,,,友軍,ゆうぐん,,yuugun,przyjacielska armia,,,
+7388,WORD_NOUN,,HIRAGANA,,,青信号,あおしんごう,,aoshingou,zielone światło,sygnalizacyjne,,
+7389,WORD_NOUN,,HIRAGANA,,,青銅,せいどう,,seidou,brąz,,,
+7390,WORD_NOUN,,HIRAGANA,,,青色,せいしょく,,seishoku,niebieski kolor,,,7391
+7391,WORD_NOUN,,HIRAGANA,,,青色,あおいろ,,aoiro,niebieski kolor,,,7390
+7392,WORD_ADJECTIVE_NA,,HIRAGANA,,,青春期,せいしゅんき,,seishunki,okres dorastania,,,
+7393,WORD_VERB_U,,HIRAGANA,,,採る,とる,,toru,"brać
+przyjmować
+zatrudniać
+zbierać",,,
+7394,WORD_NOUN,,HIRAGANA,,,採用,さいよう,,saiyou,"adopcja
+zatrudnianie",,,
+7395,WORD_NOUN,,HIRAGANA,,,採血,さいけつ,,saiketsu,pobieranie krwi,,,
+7396,WORD_NOUN,,HIRAGANA,,,採掘,さいくつ,,saikutsu,"kopalnictwo
+górnictwo",,,
+7397,WORD_NOUN,,HIRAGANA,,,採算,さいさん,,saisan,dochód,,,
+7398,WORD_NOUN,,HIRAGANA,,,採決,さいけつ,,saiketsu,głosowanie,,,
+7399,WORD_ADJECTIVE_I,,HIRAGANA,,,酸い,すい,,sui,"kwas
+kwaśny",,,
+7400,WORD_NOUN,,HIRAGANA,,,酸素,さんそ,,sanso,tlen,,,
+7401,WORD_NOUN,,HIRAGANA,,,酸化,さんか,,sanka,utlenianie,,,
+7402,WORD_NOUN,,HIRAGANA,,,酸性,さんせい,,sansei,kwaśność,,,
+7403,WORD_NOUN,,HIRAGANA,,,酸味,さんみ,,sanmi,"kwaśność
+kwaśny smak",,,
+7404,WORD_ADVERB,,HIRAGANA,,,殊に,ことに,,kotoni,"specjalnie
+wyjątkowo
+przede wszystkim",,,
+7405,UNKNOWN,,HIRAGANA,,,炎,えん,,en,zapalenie,sufiks,,7406
+7406,WORD_NOUN,,HIRAGANA,,,炎,ほのお,,honoo,płomień,,,7405
+7407,WORD_VERB_U,,HIRAGANA,,,詰む,つむ,,tsumu,"być załadowanym
+być ściśniętym",,,
+7408,WORD_VERB_U,,HIRAGANA,,,詰まる,つまる,,tsumaru,"być załadowanym
+być ściśniętym",,,
+7409,WORD_VERB_RU,,HIRAGANA,,,詰める,つめる,,tsumeru,"ładować
+wypychać
+pakować",,,
+7410,WORD_VERB_U,,HIRAGANA,,,詰る,なじる,,najiru,"oskarżać
+ganić",,,
+7411,WORD_NOUN,,HIRAGANA,,,銅,どう,,dou,miedź,,,
+7412,WORD_NOUN,,HIRAGANA,,,銅山,どうざん,,douzan,kopalnia miedzi,,,
+7413,WORD_NOUN,,HIRAGANA,,,銅貨,どうか,,douka,"miedziak
+moneta z miedzi",,,
+7414,WORD_NOUN,,HIRAGANA,,,銅板,どうばん,,douban,blacha miedziana,,,
+7415,WORD_NOUN,,HIRAGANA,,,銅像,どうぞう,,douzou,posąg z brązu,,,
+7416,WORD_NOUN,,HIRAGANA,,,銅線,どうせん,,dousen,drut miedziany,,,
+7417,WORD_NOUN,,HIRAGANA,,,貨物,かもつ,,kamotsu,"towar
+ładunek",,,
+7418,WORD_NOUN,,HIRAGANA,,,貨車,かしゃ,,kasha,"ciężarówka
+samochód transportowy",,,
+7419,WORD_NOUN,,HIRAGANA,,,通貨,つうか,,tsuuka,waluta,,,
+7420,WORD_NOUN,,HIRAGANA,,,銀貨,ぎんか,,ginka,srebrna moneta,,,
+7421,WORD_NOUN,,HIRAGANA,,,百貨店,ひゃっかてん,,hyakkaten,dom towarowy,,,
