@@ -20,7 +20,7 @@ shichi",siedem,,,
 く",,"kyuu
 ku",dziewięć,,,
 11,WORD_NUMBER,,HIRAGANA,Genki 1-1,,十,じゅう,,juu,dziesięć,,,790
-12,WORD_NUMBER,,HIRAGANA,Genki 1-1,,百,ひゃく,,hyaku,sto,,,
+12,WORD_NUMBER,,HIRAGANA,Genki 1-1,,百,ひゃく,,hyaku,sto,,,7462
 13,WORD_TIME,,HIRAGANA,Genki 1-1,,一時,いちじ,,ichiji,pierwsza godzina,,,
 14,WORD_TIME,,HIRAGANA,Genki 1-1,,二時,にじ,,niji,druga godzina,,,
 15,WORD_TIME,,HIRAGANA,Genki 1-1,,三時,さんじ,,sanji,trzecia godzina,,,
@@ -436,7 +436,8 @@ widzieć osobę","osoba ni, spotkanie przypadkowe",NO,
 379,WORD_VERB_U,,HIRAGANA,Genki 1-4,と,会う,あう,to,au,"spotykać
 widzieć osobę","osoba to, spotkanie zaplanowane",,1617
 380,WORD_VERB_U,,HIRAGANA,Genki 1-4,が,有る,ある,ga,aru,"być
-istnieć",do rzeczy martwych,,1056
+istnieć
+mieć",do rzeczy martwych,,1056
 381,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,買う,かう,o,kau,kupować,,,
 382,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,書く,かく,o,kaku,pisać,osoba ni rzecz,NO,
 383,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,撮る,とる,o,toru,robić zdjęcie,,,
@@ -665,6 +666,8 @@ późno",,NO,
 język
 mowa",,,
 531,WORD_NOUN,,HIRAGANA,,,道,みち,,michi,"droga
+ścieżka
+ulica
 kierunek
 wskazówka",,,
 532,WORD_NOUN,,HIRAGANA,,,-,ごみ,,gomi,śmieci,,,
@@ -1289,7 +1292,9 @@ rzeczy do wykonania",,,
 996,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,甘い,あまい,,amai,słodki,,,
 997,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,痛い,いたい,,itai,"bolesny
 ranny",,,
-998,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,多い,おおい,,ooi,dużo,,,
+998,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,多い,おおい,,ooi,"dużo
+wiele
+często",,,
 999,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,狭い,せまい,,semai,"wąski
 nieprzestronny
 mały
@@ -1322,7 +1327,9 @@ być zdenerwowany",,,
 1016,UNKNOWN,,HIRAGANA,Genki 1-12,,お大事に,おだいじに,,odaijini,"będzie dobrze
 trzymaj się",,,
 1017,UNKNOWN,,HIRAGANA,Genki 1-12,,元気がない,げんきがない,,genki ga nai,słabo wyglądać,,,
-1018,UNKNOWN,,HIRAGANA,Genki 1-12,,多分,たぶん,,tabun,być może,,,
+1018,UNKNOWN,,HIRAGANA,Genki 1-12,,多分,たぶん,,tabun,"być może
+chyba
+prawdopodobnie",,,
 1019,UNKNOWN,,HIRAGANA,Genki 1-12,,-,できるだけ,,dekirudake,w miarę możliwości,,,
 1020,UNKNOWN,,HIRAGANA,Genki 1-12,,-,でしょう,,deshou,prawdopodobnie,"~, pewność 60%, używane m.in do prognozy pogody",,
 1021,UNKNOWN,,HIRAGANA,Genki 1-12,,度,ど,,do,stopnie,temperatura,,
@@ -2065,7 +2072,7 @@ jadalnia",,NO,
 1561,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,関西,かんさい,,kansai,Kansai,"Region wyspy Honsiu, zwany też Kinki",,
 1562,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,南,みなみ,,minami,południe,,,
 1563,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,南口,みなみぐち,,minamiguchi,południowe wyjście,,,
-1564,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,北,きた,,kita,północ,,,
+1564,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,北,きた,,kita,północ,kierunek geograficzny,,
 1565,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,北口,きたぐち,,kitaguchi,północne wyjście,,,
 1566,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,東北,とうほく,,touhoku,Tohoku,Region wyspy Honsiu,,
 1567,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,北海道,ほっかいどう,,hokkaidou,Hokkaido,Jedna z japońskich wysp,,
@@ -2288,6 +2295,8 @@ stragan",,,
 1748,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,長男,ちょうなん,,chounan,"pierwszy syn
 najstarszy syn",,,
 1749,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,道,みち,,michi,"droga
+ścieżka
+ulica
 kierunek
 wskazówka",,NO,
 1750,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,書道,しょどう,,shodou,kaligrafia,,,
@@ -2372,9 +2381,11 @@ salon piękności",damski,NO,
 1818,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-11,,強情,ごうじょう,,goujou,"konserwatywny
 uparty",,,
 1819,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-11,,有名,ゆうめい,,yuumei,sławny,,NO,
-1820,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,有料,ゆうりょう,,yuuryou,opłata,,,
+1820,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,有料,ゆうりょう,,yuuryou,"opłata
+płatny",,,
 1821,WORD_VERB_U,,HIRAGANA,Genki kanji 1-11,が,有る,ある,ga,aru,"być
-istnieć",do rzeczy martwych,NO,
+istnieć
+mieć",do rzeczy martwych,NO,
 1822,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,旅行,りょこう,,ryokou,podróż,,NO,
 1823,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,旅館,りょかん,,ryokan,zajazd,w stylu japońskim,NO,
 1824,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,一人旅,ひとりたび,,hitoritabi,podróżować samotnie,,,
@@ -3214,7 +3225,8 @@ ostrzeżenie przed",,NO,
 2399,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,趣味,しゅみ,,shumi,hobby,,NO,
 2400,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,興味,きょうみ,,kyoumi,zainteresowanie,,,
 2401,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,味噌,みそ,,miso,pasta sojowa,,,
-2402,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,味,あじ,,aji,smak,,,
+2402,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,味,あじ,,aji,"smak
+zabarwienie",,,
 2403,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-15,に,注意する,ちゅういする,ni,chuui suru,"ostrzegać
 dawać ostrzeżenie",kogoś,NO,
 2404,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-15,,注文する,ちゅうもんする,,chuumon suru,"zamawiać
@@ -3426,6 +3438,8 @@ dzień",,NO,
 2539,WORD_NOUN,,KATAKANA,Genki 2-16,,-,ファイル,,fairu,"plik
 teczka",np. plastikowa,,
 2540,WORD_NOUN,,HIRAGANA,Genki 2-16,,道,みち,,michi,"droga
+ścieżka
+ulica
 kierunek
 wskazówka",,NO,
 2541,WORD_NOUN,,HIRAGANA,Genki 2-16,,目覚まし時計,めざましどけい,,mezamashi dokei,budzik,,,
@@ -3648,7 +3662,8 @@ taki
 takiego rodzaju",blisko osoby docelowej,NO,
 2668,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,未来,みらい,,mirai,przyszłość,"ogólnie przyszłość, raczej dalsza",NO,
 2669,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-16,,-,ロボット,,robotto,robot,,,
-2670,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,道具,どうぐ,,dougu,narzędzie,,,
+2670,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,道具,どうぐ,,dougu,"narzędzie
+przyrząd",,,
 2671,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-16,,-,ポケット,,poketto,kieszeń,,,
 2672,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,小学生,しょうがくせい,,shougakusei,uczeń szkoły podstawowej,,NO,
 2673,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,Genki dodatkowe 2-16,,助ける,たすける,,tasukeru,"pomagać
@@ -3944,7 +3959,8 @@ działalność",,,
 2835,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,生活,せいかつ,,seikatsu,życie,codzienne,NO,
 2836,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-17,,活発,かっぱつ,,kappatsu,"żywy
 ożywiony
-energiczny",,,
+energiczny
+aktywny",,,
 2837,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,写真,しゃしん,,shashin,"rysunek
 zdjęcie",,NO,
 2838,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,写生,しゃせい,,shasei,szkic,,,
@@ -6405,7 +6421,9 @@ zadanie
 pytanie",,NO,
 4223,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,訪問,ほうもん,,houmon,wizyta,,,
 4224,WORD_VERB_U,,HIRAGANA,Genki kanji 2-19,,問う,とう,,tou,pytać,bardziej oficjalnie,,
-4225,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-19,,多い,おおい,,ooi,dużo,,NO,
+4225,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-19,,多い,おおい,,ooi,"dużo
+wiele
+często",,NO,
 4226,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,の多く,のおおく,,no ooku,większość,~ ...,,
 4227,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,多数決,たすうけつ,,tasuuketsu,decyzja większością głosów,,,
 4228,WORD_NOUN,,HIRAGANA,,,蕾,つぼみ,,tsubomi,"pąk kwiatu
@@ -11115,8 +11133,10 @@ przyśpieszać",,,
 6722,WORD_NOUN,,HIRAGANA,,,効果,こうか,,kouka,"skutek
 wynik
 rezultat",,,
-6723,WORD_ADJECTIVE_NA,,HIRAGANA,,,有効,ゆうこう,,yuukou,"ważne
-skuteczne",,,
+6723,WORD_ADJECTIVE_NA,,HIRAGANA,,,有効,ゆうこう,,yuukou,"ważny
+legalny
+działający
+skuteczny",,,
 6724,WORD_ADJECTIVE_NA,,HIRAGANA,,,無効,むこう,,mukou,"nieważne
 nieskuteczne",,,
 6725,WORD_NOUN,,HIRAGANA,,,効力,こうりょく,,kouryoku,"ważność
@@ -12497,3 +12517,53 @@ każdy rodzaj",,,
 7458,WORD_NOUN,,HIRAGANA,,,毒舌,どくぜつ,,dokuzetsu,jadowity język,,,
 7459,WORD_NOUN,,HIRAGANA,,,舌戦,ぜっせん,,zessen,wojna na słowa,,,
 7460,WORD_NOUN,,HIRAGANA,,,舌の先,したのさき,,shita no saki,koniec języka,,,
+7461,WORD_NOUN,,HIRAGANA,,,火炎,かえん,,kaen,płomień,,,
+7462,WORD_NUMBER,,HIRAGANA,,,百,もも,,momo,sto,,,12
+7463,WORD_NOUN,,HIRAGANA,,,百合,ゆり,,yuri,lilia,,,
+7464,WORD_NOUN,,HIRAGANA,,,百点,ひゃくてん,,hyakuten,"doskonały rezultat
+najwyższa ocena",,,
+7465,WORD_NOUN,,HIRAGANA,,,年月日,ねんがっぴ,,nengappi,data,,,
+7466,UNKNOWN,,HIRAGANA,,,新年,しんねん,,shinnen,Nowy Rok,,,
+7467,UNKNOWN,,HIRAGANA,,,毎年,まいとし,,maitoshi,"co rok
+w każdym roku",,,7468
+7468,UNKNOWN,,HIRAGANA,,,毎年,まいねん,,mainen,"co rok
+w każdym roku",,,7467
+7469,WORD_NOUN,,HIRAGANA,,,年齢,ねんれい,,nenrei,wiek,ilość lat,,
+7470,WORD_NOUN,,HIRAGANA,,,年寄り,としより,,toshiyori,"starsza osoba
+starszy",,,
+7471,WORD_NOUN,,HIRAGANA,,,北極星,ほっきょくせい,,hokkyokusei,Gwiazda Polarna,,,
+7472,WORD_NOUN,,HIRAGANA,,,多元論,たげんろん,,tagenron,pluralizm,,,
+7473,WORD_NOUN,,HIRAGANA,,,多神論,たしんろん,,tashinron,"politeizm
+wielobóstwo",,,
+7474,WORD_NOUN,,HIRAGANA,,,多数,たすう,,tasuu,duża liczba,,,
+7475,WORD_NOUN,,HIRAGANA,,,多様性,たようせい,,tayousei,różnorodność,,,
+7476,WORD_NOUN,,HIRAGANA,,,道標,みちしるべ,,michishirube,"znak drogowy
+drogowskaz",,,7477
+7477,WORD_NOUN,,HIRAGANA,,,道標,どうひょう,,douhyou,"znak drogowy
+drogowskaz",,,7476
+7478,WORD_NOUN,,HIRAGANA,,,画,かく,,kaku,kreska,w znaku kanji,,
+7479,WORD_NOUN,,HIRAGANA,,,画面,がめん,,gamen,ekran,,,
+7480,WORD_NOUN,,HIRAGANA,,,画数,かくすう,,kakusuu,liczba kresek w znaku kanji,,,
+7481,WORD_ADJECTIVE_NA,,HIRAGANA,,,画一的,かくいつてき,,kakuitsuteki,standardowy,,,
+7482,WORD_VERB_RU,,HIRAGANA,,,活きる,いきる,,ikiru,żyć,,,
+7483,WORD_VERB_RU,,HIRAGANA,,,活ける,いける,,ikeru,żyć,,,
+7484,WORD_VERB_U,,HIRAGANA,,,活かす,いかす,,ikasu,"ożywiać
+uaktywniać",,,
+7485,WORD_NOUN,,HIRAGANA,,,活力,かつりょく,,katsuryoku,żywotność,,,
+7486,WORD_NOUN,,HIRAGANA,,,活気,かっき,,kakki,wigor,,,
+7487,WORD_VERB_U,,HIRAGANA,,,味わう,あじわう,,ajiwau,"smakować
+doceniać
+uznawać wartość (czegoś)
+doświadczać
+cieszyć się (czymś)",,,
+7488,WORD_NOUN,,HIRAGANA,,,味覚,みかく,,mikaku,poczucie smaku,,,
+7489,WORD_NOUN,,HIRAGANA,,,味噌汁,みそしる,,miso shiru,zupa miso,,,
+7490,WORD_NOUN,,HIRAGANA,,,味付け,あじつけ,,ajitsuke,przyprawianie,,,
+7491,WORD_NOUN,,HIRAGANA,,,有,ゆう,,yuu,posiadanie,,,7492
+7492,WORD_NOUN,,HIRAGANA,,,有,う,,u,"byt
+egzystencja",,,7491
+7493,WORD_NOUN,,HIRAGANA,,,齢,よわい,,yowai,"wiek
+lata",,,
+7494,WORD_NOUN,,HIRAGANA,,,汁,しる,,shiru,"zupa
+sok
+wyciąg",,,
