@@ -288,7 +288,8 @@ koniec tygodnia",,,
 251,WORD_VERB_U,,HIRAGANA,Genki 1-3,を,話す,はなす,o,hanasu,rozmawiać,,,252
 252,WORD_VERB_U,,HIRAGANA,Genki 1-3,で,話す,はなす,de,hanasu,mówić,"język, de ~",,251
 253,WORD_VERB_U,,HIRAGANA,Genki 1-3,を,読む,よむ,o,yomu,czytać,,,
-254,WORD_VERB_RU,,HIRAGANA,Genki 1-3,,起きる,おきる,,okiru,wstawać,,,
+254,WORD_VERB_RU,,HIRAGANA,Genki 1-3,,起きる,おきる,,okiru,"wstawać
+budzić się",,,
 255,WORD_VERB_RU,,HIRAGANA,Genki 1-3,を,食べる,たべる,o,taberu,jeść,,NO,
 256,WORD_VERB_RU,,HIRAGANA,Genki 1-3,,寝る,ねる,,neru,"spać
 leżeć",,,
@@ -301,7 +302,7 @@ leżeć",,,
 5127
 6846"
 261,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-3,を,勉強する,べんきょうする,o,benkyou suru,uczyć się,nauka z książek,,
-262,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-3,,-,いい,,ii,dobry,,,
+262,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-3,,良い,いい,,ii,dobry,zwykle pisane przy pomocy kany,,7524
 263,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-3,,早い,はやい,,hayai,wcześnie,,,
 264,WORD_ADVERB,,HIRAGANA,Genki 1-3,,-,あまり,,amari,niewiele,+ czasownik w formie negatywnej,,
 265,WORD_ADVERB,,HIRAGANA,Genki 1-3,,全然,ぜんぜん,,zenzen,"wcale
@@ -2404,8 +2405,11 @@ legenda",,,
 1834,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 1-12,,早い,はやい,,hayai,wcześnie,,NO,
 1835,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 1-12,,早起きする,はやおきする,,hayaoki suru,wcześnie wstawać,,,
 1836,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,早朝,そうちょう,,souchou,wcześnie rano,,,
-1837,WORD_VERB_RU,,HIRAGANA,Genki kanji 1-12,,起きる,おきる,,okiru,wstawać,,NO,
-1838,WORD_VERB_U,,HIRAGANA,Genki kanji 1-12,,起こす,おこす,,okosu,budzić,kogoś,,
+1837,WORD_VERB_RU,,HIRAGANA,Genki kanji 1-12,,起きる,おきる,,okiru,"wstawać
+budzić się",,NO,
+1838,WORD_VERB_U,,HIRAGANA,Genki kanji 1-12,,起こす,おこす,,okosu,"budzić
+wzbudzać
+pobudzać",kogoś,,
 1839,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 1-12,,起立する,きりつする,,kiritsu suru,stać się,,,
 1840,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,牛,うし,,ushi,krowa,,NO,
 1841,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,牛乳,ぎゅうにゅう,,gyuunyuu,mleko,,,
@@ -3418,7 +3422,8 @@ materac
 kołdra","tradycyjne składane łóżko, chowane na dzień",,
 2525,WORD_NOUN,,HIRAGANA,,,本棚,ほんだな,,hondana,półka na książki,,,
 2526,WORD_NOUN,,HIRAGANA,,,昼間,ひるま,,hiruma,"za dnia
-w czasie",,,
+w czasie
+dzień",od świty do zmroku,,
 2527,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-15,,平和公園,へいわこうえん,,heiwa kouen,Park Pokoju,w Hiroszimie,,
 2528,WORD_NOUN,,KATAKANA,,,-,シカゴ,,shikago,Chicago,,,
 2529,WORD_NOUN,,HIRAGANA,Genki 2-16,,駅員,えきいん,,ekiin,"pracownik stacji kolejowej
@@ -3445,7 +3450,9 @@ wskazówka",,NO,
 2541,WORD_NOUN,,HIRAGANA,Genki 2-16,,目覚まし時計,めざましどけい,,mezamashi dokei,budzik,,,
 2542,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-16,,汚い,きたない,,kitanai,"brudny
 zanieczyszczony",,NO,
-2543,WORD_VERB_U,,HIRAGANA,Genki 2-16,,起こす,おこす,,okosu,budzić,kogoś,NO,
+2543,WORD_VERB_U,,HIRAGANA,Genki 2-16,,起こす,おこす,,okosu,"budzić
+wzbudzać
+pobudzać",kogoś,NO,
 2544,WORD_VERB_U,,HIRAGANA,Genki 2-16,を,奢る,おごる,o,ogoru,stawiać,"kogoś/komuś, osoba ni posiłek/napój o",,
 2545,WORD_VERB_U,,HIRAGANA,Genki 2-16,,落ち込む,おちこむ,,ochikomu,"mieć depresję
 mieć dołek
@@ -3981,7 +3988,7 @@ pole",,,
 2849,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,長野,ながの,,nagano,Nagano,"miasto, prefektura w Japonii",,
 2850,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,野球,やきゅう,,yakyuu,baseball,,NO,
 2851,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,野菜,やさい,,yasai,warzywa,,NO,
-2852,UNKNOWN,,HIRAGANA,,,生,なま,,nama,surowe,"np. mięso, jajko i etc.",,
+2852,UNKNOWN,,HIRAGANA,,,生,なま,,nama,surowe,"np. mięso, jajko i etc.",,7495
 2853,WORD_NOUN,,HIRAGANA,,,生肉,なまにく,,nama niku,surowe mięso,,,
 2854,WORD_NOUN,,HIRAGANA,,,生卵,なまたまご,,nama tamago,surowe jajko,,,
 2855,WORD_NOUN,,HIRAGANA,,,現実,げんじつ,,genjitsu,rzeczywistość,,,
@@ -7533,12 +7540,16 @@ ukojenie",,NO,
 4855,WORD_VERB_U,,HIRAGANA,Genki kanji 2-20,,微笑む,ほほえむ,,hohoemu,uśmiechać się,,,
 4856,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,爆笑する,ばくしょうする,,bakushou suru,wybuchnąć śmiechem,,,
 4857,WORD_ADVERB,,HIRAGANA,Genki kanji 2-20,,絶対に,ぜったいに,,zettaini,"absolutnie
-na pewno",,,
+na pewno
+kategorycznie",,,
 4858,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-20,,絶える,たえる,,taeru,"wyginąć
-wymierać",o gatunkach zwierząt,,
+wymierać
+kończyć się",o gatunkach zwierząt,,
 4859,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,気絶する,きぜつする,,kizetsu suru,"mdleć
 tracić przytomność",,,
-4860,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,絶望,ぜつぼう,,zetsubou,tracić nadzieję,,,
+4860,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,絶望,ぜつぼう,,zetsubou,"tracić nadzieję
+rozpacz
+beznadziejny stan",,,
 4861,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,反対する,はんたいする,,hantai suru,przeciwstawić się,,,
 4862,UNKNOWN,,HIRAGANA,Genki kanji 2-20,,日本対中国,にほんたいちゅうごく,,nihon tai chuugoku,Japonia kontra Chiny,,,
 4863,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,一対,いっつい,,ittsui,para,,,
@@ -8568,7 +8579,8 @@ duch",,NO,
 ileś razy
 wiele razy",,,
 5405,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-20,,絶対に,ぜったいに,,zettaini,"absolutnie
-na pewno",,NO,
+na pewno
+kategorycznie",,NO,
 5406,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-20,を,渡す,わたす,o,watasu,"dawać
 wręczać
 przekazywać
@@ -12221,7 +12233,9 @@ worek na ryż",,,
 7275,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-21,,迷信,めいしん,,meishin,"przesąd
 zabobon",,NO,
 7276,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-21,,起こる,おこる,,okoru,"zdarzyć się
-mieć miejsce",,,
+mieć miejsce
+stawać się
+wydarzać się",,,
 7277,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-21,,多くの,おおくの,,ookuno,wiele,,,
 7278,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 2-21,を,信じる,しんじる,o,shinjiru,"wierzyć
 ufać",,NO,
@@ -12567,3 +12581,112 @@ lata",,,
 7494,WORD_NOUN,,HIRAGANA,,,汁,しる,,shiru,"zupa
 sok
 wyciąg",,,
+7495,WORD_NOUN,,HIRAGANA,,,生,せい,,sei,"życie
+istnienie
+narodziny",,,2852
+7496,WORD_VERB_U,,HIRAGANA,,,生やす,はやす,,hayasu,"uprawiać
+zapuszczać (włosy)
+nosić brodę",,,
+7497,WORD_VERB_RU,,HIRAGANA,,,生える,はえる,,haeru,rosnąć,,,
+7498,WORD_VERB_RU,,HIRAGANA,,,生きる,いきる,,ikiru,"żyć
+istnieć",,,
+7499,WORD_VERB_U,,HIRAGANA,,,生かす,いかす,,ikasu,"ożywiać
+wykorzystywać (zdolności)",,,
+7500,WORD_VERB_U,,HIRAGANA,,,生む,うむ,,umu,rodzić,,,
+7501,WORD_VERB_RU,,HIRAGANA,,,生じる,しょうじる,,shoujiru,"produkować
+wydać (plon)
+wydarzać się",,,
+7502,UNKNOWN,,HIRAGANA,,,生ずる,しょうずる,,shouzuru,"produkować
+wydać (plon)
+wydarzać się",,,
+7503,WORD_NOUN,,HIRAGANA,,,生年月日,せいねんがっぴ,,seinengappi,data urodzenia,,,
+7504,WORD_NOUN,,HIRAGANA,,,昼飯,ひるめし,,hirumeshi,obiad,,,
+7505,WORD_NOUN,,HIRAGANA,,,昼休み,ひるやすみ,,hiruyasumi,"popołudniowy odpoczynek
+popołudniowa przerwa",,,
+7506,WORD_NOUN,,HIRAGANA,,,昼寝,ひるね,,hirune,"sjesta
+popołudniowa drzemka",,,
+7507,WORD_VERB_RU,,HIRAGANA,,,投げる,なげる,,nageru,rzucać,,,
+7508,WORD_NOUN,,HIRAGANA,,,投書,とうしょ,,tousho,"korespondencja
+kontrybucja",,,
+7509,WORD_NOUN,,HIRAGANA,,,投票,とうひょう,,touhyou,głosowanie,,,
+7510,WORD_VERB_RU,,HIRAGANA,,,投げ捨てる,なげすてる,,nagesuteru,wyrzucać,,,
+7511,WORD_VERB_U,,HIRAGANA,,,投げ落とす,なげおとす,,nageotosu,zrzucać,,,
+7512,WORD_NOUN,,HIRAGANA,,,投降,とうこう,,toukou,"poddawanie się
+kapitulacja",,,
+7513,WORD_NOUN,,HIRAGANA,,,起源,きげん,,kigen,początek,,,
+7514,WORD_NOUN,,HIRAGANA,,,起点,きてん,,kiten,punkt startu,,,
+7515,WORD_NOUN,,HIRAGANA,,,起重機,きじゅうき,,kijuuki,dźwig,,,
+7516,WORD_NOUN,,HIRAGANA,,,起床,きしょう,,kishou,"pobudka
+wstawanie",,,
+7517,WORD_NOUN,,HIRAGANA,,,早起き,はやおき,,hayaoki,wczesne wstawanie,,,
+7518,WORD_VERB_IRREGULAR,,HIRAGANA,,,卒っする,そっする,,sossuru,"kończyć
+umierać
+promować",,,
+7519,WORD_NOUN,,HIRAGANA,,,卒業,そつぎょう,,sotsugyou,"ukończenie szkoły
+promocja",,,
+7520,WORD_NOUN,,HIRAGANA,,,卒業生,そつぎょうせい,,sotsugyousei,absolwent,,,
+7521,WORD_NOUN,,HIRAGANA,,,卒中,そっちゅう,,socchuu,"apopleksja
+udar",,,
+7522,WORD_NOUN,,HIRAGANA,,,卒倒,そっとう,,sottou,zemdlenie,,,
+7523,WORD_NOUN,,HIRAGANA,,,卒塔婆,そとば,,sotoba,drewniany słupek nagrobkowy,,,
+7524,WORD_ADJECTIVE_I,,HIRAGANA,,,良い,よい,,yoi,dobry,zwykle pisane przy pomocy kany,,262
+7525,WORD_NOUN,,HIRAGANA,,,良い人,よいひと,,yoi hito,dobry człowiek,,,7526
+7526,WORD_NOUN,,HIRAGANA,,,良い人,いいひと,,ii hito,dobry człowiek,,,7525
+7527,WORD_NOUN,,HIRAGANA,,,良心,りょうしん,,ryoushin,sumienie,,,
+7528,WORD_ADJECTIVE_NA,,HIRAGANA,,,最良,さいりょう,,sairyou,najlepszy,,,
+7529,WORD_ADJECTIVE_NA,,HIRAGANA,,,良質,りょうしつ,,ryoushitsu,dobra jakość,,,
+7530,WORD_ADJECTIVE_NA,,HIRAGANA,,,不良,ふりょう,,furyou,niedobry,,,
+7531,WORD_NOUN,,HIRAGANA,,,胃,い,,i,żołądek,,,
+7532,WORD_NOUN,,HIRAGANA,,,胃袋,いぶくろ,,ibukuro,żołądek,,,
+7533,WORD_NOUN,,HIRAGANA,,,胃薬,いぐすり,,igusuri,lekarstwo żołądkowe,,,
+7534,WORD_NOUN,,HIRAGANA,,,胃病,いびょう,,ibyou,choroba żołądka,,,
+7535,WORD_NOUN,,HIRAGANA,,,胃痛,いつう,,itsuu,ból żołądka,,,
+7536,WORD_NOUN,,HIRAGANA,,,胃酸,いさん,,isan,kwas żołądkowy,,,
+7537,WORD_VERB_RU,,HIRAGANA,,,肥える,こえる,,koeru,"tyć
+grubieć
+być użyźnianym",,,
+7538,WORD_VERB_U,,HIRAGANA,,,肥やす,こやす,,koyasu,"tuczyć
+wzbogacać
+użyźniać",,,
+7539,WORD_VERB_U,,HIRAGANA,,,肥る,ふとる,,futoru,"tyć
+grubieć",,,
+7540,WORD_NOUN,,HIRAGANA,,,肥料,ひりょう,,hiryou,"kompost
+nawóz",,,
+7541,WORD_NOUN,,HIRAGANA,,,肥え土,こえつち,,koetsuchi,żyzna ziemia,,,
+7542,WORD_NOUN,,HIRAGANA,,,肥土,こえつち,,koetsuchi,żyzna ziemia,,,
+7543,WORD_ADJECTIVE_NA,,HIRAGANA,,,肥沃,ひよく,,hiyoku,żyzność,,,
+7544,WORD_NOUN,,HIRAGANA,,,肥満,ひまん,,himan,otyłość,,,
+7545,WORD_NOUN,,HIRAGANA,,,株,かぶ,,kabu,"udział
+akcja
+obligacja",,,
+7546,WORD_NOUN,,HIRAGANA,,,株式市場,かぶしきしじょう,,kabushikishijou,rynek papierów wartościowych,,,
+7547,WORD_NOUN,,HIRAGANA,,,株式会社,かぶしきがいしゃ,,kabushikigaisha,spółka akcyjna,,,
+7548,WORD_NOUN,,HIRAGANA,,,株主,かぶぬし,,kabunushi,"posiadacz (właściciel) udziału
+akcjonariusz",,,
+7549,WORD_NOUN,,HIRAGANA,,,株主総会,かぶぬしそうかい,,kabunushi soukai,generalne spotkanie akcjonariuszy,,,
+7550,WORD_NOUN,,HIRAGANA,,,株券,かぶけん,,kabuken,dokument akcyjny,,,
+7551,WORD_VERB_U,,HIRAGANA,,,絶つ,たつ,,tatsu,"przerywać
+odcinać
+wyrywać",,,
+7552,WORD_VERB_U,,HIRAGANA,,,絶やす,たやす,,tayasu,"niszczyć
+wykorzeniać",,,
+7553,WORD_ADVERB,,HIRAGANA,,,絶えず,たえず,,taezu,"zawsze
+ciągle",,,
+7554,WORD_NOUN,,HIRAGANA,,,絶頂,ぜっちょう,,zecchou,"szczyt
+wierzchołek",,,
+7555,WORD_ADJECTIVE_NA,,HIRAGANA,,,絶大,ぜつだい,,zetsudai,"wielki
+wspaniały",,,
+7556,WORD_NOUN,,HIRAGANA,,,妊娠中絶,にんしんちゅうぜつ,,ninshinchuuzetsu,"przerywanie ciąży
+aborcja",,,
+7557,WORD_NOUN,,HIRAGANA,,,票,ひょう,,hyou,"znak
+etykietka
+tabliczka",,,
+7558,WORD_NOUN,,HIRAGANA,,,票決,ひょうけつ,,hyouketsu,głosowanie,,,
+7559,WORD_NOUN,,HIRAGANA,,,一票,いっぴょう,,ippyou,jeden głos,,,
+7560,WORD_NOUN,,HIRAGANA,,,得票,とくひょう,,tokuhyou,uzyskane głosy,,,
+7561,WORD_NOUN,,HIRAGANA,,,開票,かいひょう,,kaihyou,liczenie głosów,,,
+7562,WORD_NOUN,,HIRAGANA,,,伝票,でんぴょう,,denpyou,"kartka
+świstek (papieru)
+zaświadczenie
+rachunek",,,
+7563,WORD_NOUN,,HIRAGANA,,,婆,ばば,,baba,starsza kobieta,,,
