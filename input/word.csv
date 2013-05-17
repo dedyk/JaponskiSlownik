@@ -311,7 +311,8 @@ leżeć",,,
 w ogóle (nie)",+ czasownik w formie negatywnej,,
 266,WORD_ADVERB,,HIRAGANA,Genki 1-3,,大抵,たいてい,,taitei,zwykle,,,
 267,WORD_ADVERB,,HIRAGANA,Genki 1-3,,-,ちょっと,,chotto,trochę,,,
-268,WORD_ADVERB,,HIRAGANA,Genki 1-3,,時々,ときどき,,tokidoki,czasami,,,
+268,WORD_ADVERB,,HIRAGANA,Genki 1-3,,時々,ときどき,,tokidoki,"czasami
+od czasu do czasu",,,
 269,WORD_ADVERB,,HIRAGANA,Genki 1-3,,-,よく,,yoku,"często
 wiele",,,"3896
 1216"
@@ -426,7 +427,8 @@ ubiegły rok",,,
 368,UNKNOWN,,HIRAGANA,Genki 1-4,,時間,じかん,,jikan,"czas
 godzina",okres,,1709
 369,UNKNOWN,,HIRAGANA,Genki 1-4,,一時間,いちじかん,,ichijikan,jedna godzina,,,
-370,UNKNOWN,,HIRAGANA,Genki 1-4,,時,とき,,toki,kiedy,"wskazanie jakiegoś momentu w czasie, ~ no ...",,78
+370,UNKNOWN,,HIRAGANA,Genki 1-4,,時,とき,,toki,"kiedy
+czas","wskazanie jakiegoś momentu w czasie, ~ no ...",,78
 371,WORD_DAY_WEEK,,HIRAGANA,Genki 1-4,,月曜日,げつようび,,getsuyoubi,poniedziałek,księżyc,,
 372,WORD_DAY_WEEK,,HIRAGANA,Genki 1-4,,火曜日,かようび,,kayoubi,wtorek,ogień,,
 373,WORD_DAY_WEEK,,HIRAGANA,Genki 1-4,,水曜日,すいようび,,suiyoubi,środa,woda,,
@@ -955,7 +957,9 @@ chemikalia
 proch",,,
 744,WORD_VERB_U,,HIRAGANA,Genki 1-9,,薬を飲む,くすりをのむ,,kusuri o nomu,brać lekarstwo,,,
 745,WORD_NOUN,,KATAKANA,Genki 1-9,,-,コンセート,,konseeto,koncert,,,
-746,UNKNOWN,,HIRAGANA,Genki 1-9,,今度,こんど,,kondo,następnym razem,,,
+746,UNKNOWN,,HIRAGANA,Genki 1-9,,今度,こんど,,kondo,"następnym razem
+tym razem
+niedługo",,,
 747,WORD_NOUN,,HIRAGANA,Genki 1-9,,作文,さくぶん,,sakubun,"wypracowanie
 esej",,,
 748,WORD_NOUN,,HIRAGANA,Genki 1-9,,試験,しけん,,shiken,egzamin,,,
@@ -1349,7 +1353,10 @@ chyba
 prawdopodobnie",,,
 1019,UNKNOWN,,HIRAGANA,Genki 1-12,,-,できるだけ,,dekirudake,w miarę możliwości,,,
 1020,UNKNOWN,,HIRAGANA,Genki 1-12,,-,でしょう,,deshou,prawdopodobnie,"~, pewność 60%, używane m.in do prognozy pogody",,
-1021,UNKNOWN,,HIRAGANA,Genki 1-12,,度,ど,,do,stopnie,temperatura,,
+1021,UNKNOWN,,HIRAGANA,Genki 1-12,,度,ど,,do,"stopień
+limit
+miara
+skala",np. temperatura,,7738
 1022,UNKNOWN,,HIRAGANA,Genki 1-12,,二三日,にさんにち,,ni san nichi,"2,3 dni",,,
 1023,UNKNOWN,,HIRAGANA,Genki 1-12,,-,ので,,node,ponieważ,~,,
 1024,WORD_ADVERB,,HIRAGANA,Genki 1-12,,始めて,はじめて,,hajimete,pierwszy raz,,,
@@ -1558,6 +1565,8 @@ zwłaszcza",,,
 zaniepokojony
 obawa
 lęk
+niepokój
+niepewność
 niepokój",,,
 1153,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-13,,気分が悪い,きぶんがわるい,,kibun ga warui,"czuć się źle
 być w złym nastroju",,,
@@ -1746,7 +1755,9 @@ udręka",,,
 1303,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-14,,年上,としうえ,,toshi ue,"starszy wiekiem
 senior",,,
 1304,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-14,,時代,じだい,,jidai,"wiek
-era",,,
+era
+epoka
+czas",,,
 1305,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-14,,先輩,せんぱい,,senpai,starszy (wiekiem lub stażem) członek grupy,,,
 1306,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-14,,年間,ねんかん,,nenkan,przez ... lat,~,,
 1307,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-14,と,付き合う,つきあう,to,tsukiau,"chodzić z kimś
@@ -1998,7 +2009,8 @@ ostrzeżenie przed",,,
 1478,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,百円,ひゃくえん,,hyakuen,sto jenów,,,
 1479,WORD_TIME,,HIRAGANA,Genki kanji 1-3,,一時,いちじ,,ichiji,pierwsza godzina,,NO,
 1480,WORD_EXPRESSION,,HIRAGANA,Genki kanji 1-3,,子供の時,こどものとき,,kodomo no toki,w czasach dzieciństwa,,,
-1481,WORD_ADVERB,,HIRAGANA,Genki kanji 1-3,,時々,ときどき,,tokidoki,czasami,,NO,
+1481,WORD_ADVERB,,HIRAGANA,Genki kanji 1-3,,時々,ときどき,,tokidoki,"czasami
+od czasu do czasu",,NO,
 1482,WORD_NOUN,,HIRAGANA,Genki kanji 1-3,,時計,とけい,,tokei,zegarek,,NO,
 1483,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,日本,にほん,,nihon,Japonia,,NO,
 1484,WORD_DAY_WEEK,,HIRAGANA,Genki kanji 1-4,,日曜日,にちようび,,nichiyoubi,niedziela,słońce,NO,
@@ -2433,7 +2445,8 @@ przeszłość",,,
 legenda",,,
 1827,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,昔々,むかしむかし,,mukashi mukashi,"dawno, dawno temu",,NO,
 1828,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,人々,ひとびと,,hitobito,ludzie,,NO,
-1829,WORD_ADVERB,,HIRAGANA,Genki kanji 1-12,,時々,ときどき,,tokidoki,czasami,,NO,
+1829,WORD_ADVERB,,HIRAGANA,Genki kanji 1-12,,時々,ときどき,,tokidoki,"czasami
+od czasu do czasu",,NO,
 1830,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-12,,色々,いろいろ,,iroiro,"różny
 rozmaity",,NO,
 1831,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,神様,かみさま,,kamisama,bóg,,NO,
@@ -2472,7 +2485,9 @@ wyjątkowy",,,
 1855,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,差別,さべつ,,sabetsu,dyskryminacja,,,
 1856,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,別々に,べつべつに,,betsu betsu ni,oddzielnie,,,
 1857,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,一度,いちど,,ichido,raz,,,
-1858,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,今度,こんど,,kondo,następnym razem,,NO,
+1858,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,今度,こんど,,kondo,"następnym razem
+tym razem
+niedługo",,NO,
 1859,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,温度,おんど,,ondo,temperatura,,,
 1860,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,三十度,さんじゅうど,,sanjuu do,trzydzieści stopni,,,
 1861,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,赤,あか,,aka,kolor czerwony,,,
@@ -2517,11 +2532,15 @@ wyjątkowy",,NO,
 1888,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,特急電車,とっきゅうでんしゃ,,tokkyuu densha,super express,pociąg,,
 1889,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,安い,やすい,,yasui,tani,,NO,
 1890,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,安心,あんしん,,anshin,"spokój
-ukojenie",,,
+ukojenie
+uczucie spokoju
+uczucie bezpieczeństwa",,,
 1891,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,不安,ふあん,,fuan,"niespokojny
 zaniepokojony
 obawa
 lęk
+niepokój
+niepewność
 niepokój",,NO,
 1892,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-13,,安全,あんぜん,,anzen,"bezpieczny
 bezpieczeństwo",,,
@@ -2568,7 +2587,9 @@ narzeczony",,NO,
 1926,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,彼女,かのじょ,,kanojo,"ona
 narzeczona",,,
 1927,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,時代,じだい,,jidai,"wiek
-era",,NO,
+era
+epoka
+czas",,NO,
 1928,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,電気代,でんきだい,,denki dai,opłata za prąd,,,
 1929,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,六十年代,ろくじゅうねんだい,,rokujuunen dai,"lata 60
 lata sześćdziesiąte",,,
@@ -3339,7 +3360,7 @@ miejsce w świecie (do osób)",fizyczne,,
 stopa",,NO,
 2446,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-15,,足りる,たりる,,tariru,wystarczać,,,
 2447,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,一足,いっそく,,issoku,jedna para,np. butów,,
-2448,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,水不足,みずぶそく,,mizu bu soku,brakowanie wody,,,
+2448,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,水不足,みずぶそく,,mizu bu soku,brak wody,,,
 2449,WORD_VERB_U,,HIRAGANA,Genki kanji 2-15,,通る,とおる,,tooru,"przejechać
 przechodzić",,,
 2450,WORD_VERB_U,,HIRAGANA,Genki kanji 2-15,,通う,かよう,,kayou,"uczęszczać
@@ -3604,6 +3625,7 @@ bezpieczeństwo",,NO,
 2605,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,全国,ぜんこく,,zen koku,"na całym świecie
 cały świat",,,
 2606,WORD_ADVERB,,HIRAGANA,Genki kanji 2-16,,全く,まったく,,mattaku,"zupełnie
+całkowicie
 kompletnie
 absolutnie
 faktycznie",,,
@@ -6450,11 +6472,13 @@ stan",,NO,
 zaniepokojony
 obawa
 lęk
+niepokój
+niepewność
 niepokój",,NO,
 4195,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-19,,不景気,ふけいき,,fukeiki,"recesja
 zła sytuacja ekonomiczna",,,
 4196,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-19,,不便,ふべん,,fuben,niewygodny,,,
-4197,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,水不足,みずぶそく,,mizu bu soku,brakowanie wody,,NO,
+4197,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,水不足,みずぶそく,,mizu bu soku,brak wody,,NO,
 4198,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,姉,あね,,ane,starsza siostra,"własna rodzina, formalnie",NO,
 4199,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,お姉さん,おねえさん,,oneesan,siostra,"spoza swojej rodziny lub własna rodzina, nieformalnie, starsza",NO,
 4200,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,姉妹,しまい,,shimai,siostry,,,
@@ -7601,7 +7625,9 @@ duch",,NO,
 zapał
 entuzjastyczny",,NO,
 4852,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-20,,安心,あんしん,,anshin,"spokój
-ukojenie",,NO,
+ukojenie
+uczucie spokoju
+uczucie bezpieczeństwa",,NO,
 4853,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,好奇心,こうきしん,,koukishin,ciekawość,,,
 4854,WORD_VERB_U,,HIRAGANA,Genki kanji 2-20,,笑う,わらう,,warau,śmiać się,,NO,
 4855,WORD_VERB_U,,HIRAGANA,Genki kanji 2-20,,微笑む,ほほえむ,,hohoemu,uśmiechać się,,,
@@ -9867,7 +9893,9 @@ wybór wierszy",,,
 koniec",,,
 6011,WORD_NOUN,,HIRAGANA,,,完成,かんせい,,kansei,"zakończenie
 wykończenie",,,
-6012,WORD_ADJECTIVE_NA,,HIRAGANA,,,完全,かんぜん,,kanzen,doskonały,,,
+6012,WORD_ADJECTIVE_NA,,HIRAGANA,,,完全,かんぜん,,kanzen,"doskonałość
+całkowitość
+kompletność",,,
 6013,WORD_ADJECTIVE_NA,,HIRAGANA,,,完璧,かんぺき,,kanpeki,"doskonały
 bez zarzutu",,,
 6014,WORD_NOUN,,HIRAGANA,,,完敗,かんぱい,,kanpai,całkowita porażka,,,
@@ -10358,7 +10386,7 @@ podrzucać (kogoś)",,NO,
 przelew",pieniędzy,NO,
 6274,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,放送,ほうそう,,housou,"transmisja
 nadawanie","programu radiowego, telewizyjnego",NO,
-6275,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,回送電車,かいそうでんしゃ,,kaisou densha,uszkodzony pociąg,,,
+6275,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,回送電車,かいそうでんしゃ,,kaisou densha,techniczny przejazd pociągu,,,
 6276,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-21,,幸せ,しあわせ,,shiawase,"szczęśliwy
 szczęście
 powodzenie",,NO,
@@ -13072,3 +13100,69 @@ panienka",,,
 podnieść",,,
 7723,WORD_VERB_RU,,HIRAGANA,,,拾い集める,ひろいあつめる,,hiroi atsumeru,zbierać,,,
 7724,WORD_NOUN,,HIRAGANA,,,収拾,しゅうしゅう,,shuushuu,kontrola,,,
+7725,WORD_VERB_U,,HIRAGANA,,,足る,たる,,taru,wystarczać,,,
+7726,WORD_NOUN,,HIRAGANA,,,足跡,あしあと,,ashi ato,"ślad
+odcisk buta
+odcisk stopy",,,
+7727,WORD_ADJECTIVE_NA,,HIRAGANA,,,不足,ふそく,,fusoku,"nie wystarczać
+brakować
+brak",,,
+7728,WORD_ADJECTIVE_NA,,HIRAGANA,,,寝不足,ねぶそく,,nebusoku,"być niewyspanym
+brak snu",,,
+7729,WORD_NOUN,,HIRAGANA,,,足音,あしおと,,ashi oto,kroki,dźwięk,,
+7730,WORD_NOUN,,HIRAGANA,,,思考,しこう,,shikou,"myśl
+myślenie",,,
+7731,WORD_NOUN,,HIRAGANA,,,考え方,かんがえかた,,kangaekata,sposób myślenia,,,
+7732,WORD_NOUN,,HIRAGANA,,,考証,こうしょう,,koushou,badania historyczne,,,
+7733,WORD_NOUN,,HIRAGANA,,,考案,こうあん,,kouan,pomysł,,,
+7734,WORD_ADJECTIVE_NA,,HIRAGANA,,,全能,ぜんのう,,zennou,"wszechmocny
+wszechmoc",,,
+7735,WORD_NOUN,,HIRAGANA,,,全世界,ぜんせかい,,zensekai,cały świat,,,
+7736,WORD_NOUN,,HIRAGANA,,,全体主義,ぜんたいしゅぎ,,zentaishugi,totalitaryzm,,,
+7737,WORD_ADJECTIVE_NA,,HIRAGANA,,,安価,あんか,,anka,niska cena,,,
+7738,WORD_NOUN,,HIRAGANA,,,度,たび,,tabi,"czas
+okazja
+powtórka",,,1021
+7739,WORD_NOUN,,HIRAGANA,,,年度,ねんど,,nendo,rok,"np. finansowy, szkolny",,
+7740,WORD_ADVERB,,HIRAGANA,,,度々,たびたび,,tabitabi,od czasu do czasu,,,
+7741,WORD_NOUN,,HIRAGANA,,,孫,まご,,mago,"wnuk
+wnuczka",,,
+7742,WORD_NOUN,,HIRAGANA,,,子孫,しそん,,shison,potomek,,,
+7743,WORD_NOUN,,HIRAGANA,,,孫引き,まごびき,,magobiki,odwoływanie się do drugorzędnych źródeł,,,
+7744,WORD_NOUN,,HIRAGANA,,,俗,ぞく,,zoku,"zwyczaje
+maniery
+świat
+światowość
+wulgarność",,,
+7745,WORD_NOUN,,HIRAGANA,,,俗語,ぞくご,,zokugo,język kolokwialny,,,
+7746,WORD_NOUN,,HIRAGANA,,,世俗化,せぞくか,,sezokuka,"sekularyzacja
+zeświecczenie
+laicyzacja",,,
+7747,WORD_ADJECTIVE_NA,,HIRAGANA,,,俗悪,ぞくあく,,zokuaku,"wulgarność
+trywialność",,,
+7748,WORD_NOUN,,HIRAGANA,,,民俗,みんぞく,,minzoku,"lud
+naród",,,
+7749,WORD_NOUN,,HIRAGANA,,,通俗文学,つうぞくぶんがく,,tsuuzoku bungaku,literatura popularna,,,
+7750,WORD_NOUN,,HIRAGANA,,,歓,かん,,kan,"radość
+przyjemność",,,
+7751,WORD_NOUN,,HIRAGANA,,,歓迎会,かんげいかい,,kangeikai,przyjęcie powitalne,,,
+7752,WORD_NOUN,,HIRAGANA,,,歓送会,かんそうかい,,kansoukai,przyjęcie pożegnalne,,,
+7753,WORD_NOUN,,HIRAGANA,,,歓声,かんせい,,kansei,"okrzyk radości
+okrzyk pochwały
+owacja",,,
+7754,WORD_NOUN,,HIRAGANA,,,歓喜,かんき,,kanki,"radość
+zadowolenie",,,
+7755,WORD_NOUN,,HIRAGANA,,,歓楽,かんらく,,kanraku,"przyjemność
+rozrywka",,,
+7756,UNKNOWN,,HIRAGANA,,,諸,しょ,,sho,"wiele
+dużo
+kilka
+różne
+rozmaite
+wszystkie",prefiks,,
+7757,WORD_NOUN,,HIRAGANA,,,諸国,しょこく,,shokoku,"różne kraje
+wszystkie kraje",,,
+7758,WORD_NOUN,,HIRAGANA,,,諸君,しょくん,,shokun,"Panie i Panowie!
+Koledzy!",,,
+7759,WORD_NOUN,,HIRAGANA,,,諸派,しょは,,shoha,mniejszościowe partie w parlamencie,,,
+7760,WORD_NOUN,,HIRAGANA,,,諸事,しょじ,,shoji,różne sprawy,,,
