@@ -815,7 +815,8 @@ uroczy",,,
 628,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,速い,はやい,,hayai,"szybki
 prędki",,,
 629,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,短い,みじかい,,mijikai,krótki,,,
-630,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-7,,親切,しんせつ,,shinsetsu,miły,,,
+630,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-7,,親切,しんせつ,,shinsetsu,"miły
+serdeczny",,,
 631,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-7,,便利,べんり,,benri,"przydatny
 wygodny
 pożyteczny
@@ -934,7 +935,7 @@ rozpoczynać",,,
 714,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-8,,掃除する,そうじする,,souji suru,czyścić,,,
 715,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-8,,料理する,りょうりする,,ryouri suru,gotować,,,
 716,UNKNOWN,,HIRAGANA,Genki 1-8,,-,ううん,,uun,nie,potocznie,,
-717,UNKNOWN,,HIRAGANA,Genki 1-8,,-,うん,,un,tak,potocznie,,
+717,UNKNOWN,,HIRAGANA,Genki 1-8,,-,うん,,un,tak,potocznie,,7849
 718,WORD_EXPRESSION,,HIRAGANA,Genki 1-8,,乾杯,かんぱい,,kanpai,na zdrowie,"toast, dosł. osuszanie szklanki",,
 719,UNKNOWN,,HIRAGANA,Genki 1-8,,残念,ざんねん,,zannen,"żałosny
 niestety
@@ -2466,8 +2467,10 @@ sąsiad",bardziej oficjalnie,NO,
 1811,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,台所,だいどころ,,daidokoro,kuchnia,,,
 1812,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,住所,じゅうしょ,,juusho,adres,,NO,
 1813,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 1-11,を,勉強する,べんきょうする,o,benkyou suru,uczyć się,nauka z książek,NO,
-1814,WORD_VERB_RU,,HIRAGANA,Genki kanji 1-11,,勉める,つとめる,,tsutomeru,starać się,,,
-1815,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-11,,勤勉,きんべん,,kinben,pilny,,,
+1814,WORD_VERB_RU,,HIRAGANA,Genki kanji 1-11,,勉める,つとめる,,tsutomeru,"starać się
+wysilać się",,,
+1815,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-11,,勤勉,きんべん,,kinben,"pilny
+pracowity",,,
 1816,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 1-11,を,勉強する,べんきょうする,o,benkyou suru,uczyć się,nauka z książek,NO,
 1817,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 1-11,,強い,つよい,,tsuyoi,silny,,,
 1818,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-11,,強情,ごうじょう,,goujou,"konserwatywny
@@ -2658,14 +2661,17 @@ plemię
 szczep
 grupa etniczna",,,
 1938,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,父親,ちちおや,,chichioya,ojciec,formalnie,NO,
-1939,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-14,,親切,しんせつ,,shinsetsu,miły,,NO,
+1939,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-14,,親切,しんせつ,,shinsetsu,"miły
+serdeczny",,NO,
 1940,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,親友,しんゆう,,shin'yuu,najlepszy przyjaciel,,NO,
 1941,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,両親,りょうしん,,ryoushin,rodzice,bardziej grzecznie,NO,
 1942,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-14,,親しい,したしい,,shitashii,"zaprzyjaźniony
 przyjazny
 bliski
-poufały",,,
-1943,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-14,,親切,しんせつ,,shinsetsu,miły,,NO,
+poufały
+intymny",,,
+1943,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-14,,親切,しんせつ,,shinsetsu,"miły
+serdeczny",,NO,
 1944,WORD_VERB_U,,HIRAGANA,Genki kanji 2-14,,切る,きる,,kiru,ciąć,,NO,
 1945,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-14,,大切,たいせつ,,taisetsu,"ważny
 cenny
@@ -3196,7 +3202,8 @@ gruszka",,,
 2309,WORD_NOUN,,HIRAGANA,,,俳句,はいく,,haiku,haiku,japońska forma literacka,,
 2310,WORD_NOUN,,KATAKANA,,,-,ストーブ,,sutoobu,"ogrzewanie
 kuchenka",,,
-2311,WORD_NOUN,,HIRAGANA,,,運動,うんどう,,undou,ćwiczenia,fizyczne,,
+2311,WORD_NOUN,,HIRAGANA,,,運動,うんどう,,undou,"ćwiczenia
+ruch",fizyczne/y,,
 2312,WORD_ADJECTIVE_I,,HIRAGANA,,,騒がしい,さわがしい,,sawagashii,"głośny
 hałaśliwy",,,
 2313,WORD_VERB_U,,HIRAGANA,,,騒ぐ,さわぐ,,sawagu,"zachowywać się głośno
@@ -3549,7 +3556,8 @@ dzień",od świty do zmroku,,
 2528,WORD_NOUN,,KATAKANA,,,-,シカゴ,,shikago,Chicago,,,
 2529,WORD_NOUN,,HIRAGANA,Genki 2-16,,駅員,えきいん,,ekiin,"pracownik stacji kolejowej
 kolejarz",,,
-2530,WORD_NOUN,,HIRAGANA,Genki 2-16,,親,おや,,oya,rodzice,mniej formalnie,,4692
+2530,WORD_NOUN,,HIRAGANA,Genki 2-16,,親,おや,,oya,rodzice,mniej formalnie,,"4692
+7845"
 2531,WORD_NOUN,,HIRAGANA,Genki 2-16,,-,ごみ,,gomi,śmieci,,NO,
 2532,WORD_NOUN,,HIRAGANA,Genki 2-16,,砂糖,さとう,,satou,cukier,,NO,
 2533,WORD_NOUN,,HIRAGANA,Genki 2-16,,奨学金,しょうがくきん,,shougakukin,stypendium,,,
@@ -3756,16 +3764,19 @@ wieczorem",,NO,
 oba
 obie
 obie strony",,,
-2646,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運動,うんどう,,undou,ćwiczenia,fizyczne,NO,
+2646,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運動,うんどう,,undou,"ćwiczenia
+ruch",fizyczne/y,NO,
 2647,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運転,うんてん,,unten,"jazda
-kierowanie",pojazdem,,
+kierowanie
+prowadzenie",pojazdem,,
 2648,WORD_EXPRESSION,,HIRAGANA,Genki kanji 2-16,,運がいい,うんがいい,,un ga ii,szczęśliwy,"w znaczeniu zrządzenia losu, trafu",,
 2649,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運命,うんめい,,unmei,"los
 przeznaczenie",,,
 2650,WORD_VERB_U,,HIRAGANA,Genki kanji 2-16,,運ぶ,はこぶ,,hakobu,"transportować
 przewozić
 nosić",coś cięższego,,
-2651,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運動,うんどう,,undou,ćwiczenia,fizyczne,NO,
+2651,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運動,うんどう,,undou,"ćwiczenia
+ruch",fizyczne/y,NO,
 2652,WORD_VERB_U,,HIRAGANA,Genki kanji 2-16,,動く,うごく,,ugoku,"poruszać się
 ruszać się",,,
 2653,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,自動車,じどうしゃ,,jidousha,"automobil
@@ -6236,7 +6247,8 @@ pierwszy",,,
 4026,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-18,,親しい,したしい,,shitashii,"zaprzyjaźniony
 przyjazny
 bliski
-poufały",,NO,
+poufały
+intymny",,NO,
 4027,WORD_NOUN,,HIRAGANA,,,会議,かいぎ,,kaigi,"konferencja
 spotkanie biznesowe",,,
 4028,WORD_NOUN,,HIRAGANA,,,協議,きょうぎ,,kyougi,"rada
@@ -13370,3 +13382,34 @@ precyzyjny",,,
 typowy
 przeciętny
 wspólny",,,
+7839,WORD_NOUN,,HIRAGANA,,,運転者,うんてんしゃ,,untensha,kierowca,,,
+7840,WORD_NOUN,,HIRAGANA,,,手作り,てづくり,,tedukuri,"produkt wykonany ręcznie
+ręcznie wykonane",,,
+7841,WORD_NOUN,,HIRAGANA,,,手荷物,てにもつ,,tenimotsu,ręczny bagaż,,,
+7842,WORD_NOUN,,HIRAGANA,,,勉強,べんきょう,,benkyou,"uczenie się
+studiowanie",,,
+7843,WORD_NOUN,,HIRAGANA,,,勉学,べんがく,,bengaku,"studia
+nauka",,,
+7844,WORD_NOUN,,HIRAGANA,,,勉励,べんれい,,benrei,"pilność
+pracowitość",,,
+7845,WORD_NOUN,,HIRAGANA,,,親,しん,,shin,"intymność
+bliskie relacje",,,2530
+7846,WORD_VERB_U,,HIRAGANA,,,親しむ,したしむ,,shitashimu,"utrzymywać bliskie stosunki
+utrzymywać przyjacielskie stosunki",,,
+7847,WORD_NOUN,,HIRAGANA,,,親指,おやゆび,,oyayubi,kciuk,,,
+7848,WORD_ADJECTIVE_NA,,HIRAGANA,,,親密,しんみつ,,shinmitsu,"intymność
+bliska przyjaźń",,,
+7849,WORD_NOUN,,HIRAGANA,,,運,うん,,un,"przeznaczenie
+szczęście",,,717
+7850,WORD_NOUN,,HIRAGANA,,,運送,うんそう,,unsou,transport,,,
+7851,WORD_ADJECTIVE_NA,,HIRAGANA,,,不運,ふうん,,fuun,"nieszczęście
+zły los",,,
+7852,WORD_NOUN,,HIRAGANA,,,講座,こうざ,,kouza,kurs,,,
+7853,WORD_NOUN,,HIRAGANA,,,講義,こうぎ,,kougi,wykład,,,
+7854,WORD_NOUN,,HIRAGANA,,,講演,こうえん,,kouen,"wykład
+odczyt",,,
+7855,WORD_NOUN,,HIRAGANA,,,講師,こうし,,koushi,"wykładowca
+instruktor",,,
+7856,WORD_NOUN,,HIRAGANA,,,講堂,こうどう,,koudou,"sala wykładowa
+audytorium",,,
+7857,WORD_NOUN,,HIRAGANA,,,実習,じっしゅう,,jisshuu,praktyka,,,
