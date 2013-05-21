@@ -158,14 +158,16 @@ obrońca",,,
 130,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,あの,,ano,tam,daleko od mówcy i osoby docelowej (z rzeczownikiem),,68
 131,WORD_ASK,,HIRAGANA,Genki 1-2,,-,どの,,dono,który,z rzeczownikiem,,6470
 132,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,ここ,,koko,tam,"miejsce, blisko mówcy",,
-133,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,そこ,,soko,tam,"miejsce, blisko osoby docelowej",,
+133,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,そこ,,soko,tam,"miejsce, blisko osoby docelowej",,7876
 134,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,あそこ,,asoko,tam,"miejsce, daleko od mówcy i osoby docelowej",,
 135,WORD_ASK,,HIRAGANA,Genki 1-2,,-,どこ,,doko,gdzie,miejsce,,
 136,WORD_ASK,,HIRAGANA,Genki 1-2,,-,だれ,,dare,kto,,,
 137,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-2,,美味しい,おいしい,,oishii,smaczne,,,
 138,WORD_NOUN,,HIRAGANA,Genki 1-2,,魚,さかな,,sakana,ryba,,,
 139,WORD_NOUN,,HIRAGANA_KATAKANA,Genki 1-2,,豚カツ,とんカツ,,tonkatsu,kotlet wieprzowy,,,
-140,WORD_NOUN,,HIRAGANA,Genki 1-2,,肉,にく,,niku,mięso,,,
+140,WORD_NOUN,,HIRAGANA,Genki 1-2,,肉,にく,,niku,"mięso
+muskuły
+ciało",,,
 141,WORD_NOUN,,KATAKANA,Genki 1-2,,-,メニュー,,menyuu,menu,,,
 142,WORD_NOUN,,HIRAGANA,Genki 1-2,,野菜,やさい,,yasai,warzywa,,,
 143,WORD_NOUN,,HIRAGANA,Genki 1-2,,鉛筆,えんぴつ,,enpitsu,ołówek,,,
@@ -458,7 +460,9 @@ mieć",do rzeczy martwych,,1056
 382,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,書く,かく,o,kaku,pisać,osoba ni rzecz,NO,
 383,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,撮る,とる,o,toru,robić zdjęcie,,,
 384,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,待つ,まつ,o,matsu,czekać,,,
-385,WORD_VERB_U,,HIRAGANA,Genki 1-4,が,-,わかる,ga,wakaru,rozumieć,,,
+385,WORD_VERB_U,,HIRAGANA,Genki 1-4,が,判る,わかる,ga,wakaru,"rozumieć
+znać
+poznać",,,
 386,WORD_VERB_RU,,HIRAGANA,Genki 1-4,が,-,いる,ga,iru,"być
 istnieć","miejsce ni, do rzeczy żywych",,"5598
 704"
@@ -1151,7 +1155,9 @@ szybko",zrobić coś,,
 866,WORD_NOUN,,HIRAGANA,,,階段,かいだん,,kaidan,"schody
 klatka schodowa",,,
 867,WORD_VERB_RU,,HIRAGANA,,を,下りる,おりる,o,oriru,schodzić,,,
-868,WORD_NOUN,,HIRAGANA,,,駐車場,ちゅうしゃじょう,,chuushajou,miejsce parkingowe,,,
+868,WORD_NOUN,,HIRAGANA,,,駐車場,ちゅうしゃじょう,,chuushajou,"miejsce parkingowe
+parking
+postój",,,
 869,WORD_VERB_U,,HIRAGANA,,,学ぶ,まなぶ,,manabu,uczyć się,ogólnie,,
 870,WORD_VERB_U,,HIRAGANA,,,習う,ならう,,narau,uczyć się,czegoś praktycznego,,
 871,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-10,,昔々,むかしむかし,,mukashi mukashi,"dawno, dawno temu",,,
@@ -1320,7 +1326,8 @@ stopnie",na teście i etc,,
 984,WORD_NOUN,,HIRAGANA,Genki 1-12,,-,せき,,seki,kaszel,,,"5901
 3627
 6101
-3638"
+3638
+7921"
 985,WORD_NOUN,,HIRAGANA,Genki 1-12,,-,のど,,nodo,gardło,,,
 986,WORD_NOUN,,HIRAGANA,Genki 1-12,,歯,は,,ha,ząb,,NO,
 987,WORD_NOUN,,HIRAGANA,Genki 1-12,,花,はな,,hana,kwiat,,,
@@ -2206,7 +2213,8 @@ widzieć osobę","osoba ni, spotkanie przypadkowe",,379
 1622,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,神社,じんじゃ,,jinja,świątynia,shintoistyczna,NO,
 1623,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,父,ちち,,chichi,ojciec,"własna rodzina, formalnie",NO,
 1624,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,お父さん,おとうさん,,otousan,ojciec,spoza swojej rodziny lub własna rodzina - nieformalnie,NO,
-1625,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,父母,ふぼ,,fubo,ojciec i matka,,,
+1625,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,父母,ふぼ,,fubo,"ojciec i matka
+rodzice",,,
 1626,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,母,はは,,haha,matka,"własna rodzina, formalnie",NO,
 1627,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,お母さん,おかあさん,,okaasan,matka,spoza swojej rodziny lub własna rodzina - nieformalnie,NO,
 1628,UNKNOWN,,HIRAGANA,Genki kanji 1-7,,母語,ぼご,,bogo,język ojczysty,,,
@@ -2598,7 +2606,9 @@ bezpieczeństwo",,,
 1893,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,ご飯,ごはん,,gohan,"jedzenie
 gotowany ryż",,,
 1894,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,朝ご飯,あさごはん,,asagohan,śniadanie,,,
-1895,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,肉,にく,,niku,mięso,,NO,
+1895,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,肉,にく,,niku,"mięso
+muskuły
+ciało",,NO,
 1896,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,牛肉,ぎゅうにく,,gyuuniku,wołowina,,NO,
 1897,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,肉屋,にくや,,nikuya,sklep mięsny,,,
 1898,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-13,,悪い,わるい,,warui,zły,,NO,
@@ -3396,11 +3406,14 @@ biec",,NO,
 2429,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,走り書き,はしりがき,,hashirigaki,bazgroły,pismo,,
 2430,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,脱走,だっそう,,dassou,ucieczka,z więzienia,,
 2431,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,建物,たてもの,,tatemono,budynek,,NO,
-2432,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-15,,建てる,たてる,,tateru,budować,,,
+2432,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-15,,建てる,たてる,,tateru,"budować
+podnosić
+wznosić",,,
 2433,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,建つ,たつ,,tatsu,"być zbudowanym
 stać",,,
 2434,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,建国,けんこく,,kenkoku,"ugruntowanie narodu
-fundamenty narodu",,,
+fundamenty narodu
+założenia państwa",,,
 2435,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,地下,ちか,,chika,pod ziemią,,,
 2436,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,地下鉄,ちかてつ,,chikatetsu,metro,,NO,
 2437,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,地図,ちず,,chizu,mapa,,NO,
@@ -3411,9 +3424,13 @@ kula ziemska",planeta,NO,
 przestrzenne miejsce",,NO,
 2441,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,場所,ばしょ,,basho,"miejsce
 miejsce w świecie (do osób)",fizyczne,,
-2442,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,駐車場,ちゅうしゃじょう,,chuushajou,miejsce parkingowe,,NO,
+2442,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,駐車場,ちゅうしゃじょう,,chuushajou,"miejsce parkingowe
+parking
+postój",,NO,
 2443,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,道場,どうば,,douba,miejsce,gdzie odbywają się sztuki walki,,
-2444,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,場,ば,,ba,[miejsce ~ ba],"miejsce, gdzie ma miejsce jakaś akcja",,
+2444,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,場,ば,,ba,"[miejsce ~ ba]
+plac
+przestrzeń","miejsce, gdzie ma miejsce jakaś akcja",,
 2445,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,足,あし,,ashi,"noga
 stopa",,NO,
 2446,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-15,,足りる,たりる,,tariru,wystarczać,,,
@@ -3783,11 +3800,13 @@ ruszać się",,,
 samochód",,NO,
 2654,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,動物,どうぶつ,,doubutsu,zwierze,,NO,
 2655,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-16,を,教える,おしえる,o,oshieru,uczyć,"kogoś, osoba ni rzecz",NO,
-2656,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,教室,きょうしつ,,kyoushitsu,sala,szkolna,,
+2656,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,教室,きょうしつ,,kyoushitsu,"sala
+klasa","szkolna, wykładowa",,
 2657,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,教会,きょうかい,,kyoukai,kościół,,NO,
 2658,WORD_NOUN,,HIRAGANA_KATAKANA,Genki kanji 2-16,,キリスト教,キリストきょう,,kirisuto kyou,chrześcijaństwo,,,
 2659,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,教科書,きょうかしょ,,kyoukasho,podręcznik,,NO,
-2660,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,教室,きょうしつ,,kyoushitsu,sala,szkolna,NO,
+2660,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,教室,きょうしつ,,kyoushitsu,"sala
+klasa","szkolna, wykładowa",NO,
 2661,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,研究室,けんきゅうしつ,,kenkyuushitsu,gabinet profesora,,,
 2662,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,地下室,ちかしつ,,chikashitsu,piwnica,,,
 2663,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,待合室,まちあいしつ,,machi aishitsu,poczekalnia,,,
@@ -3842,7 +3861,8 @@ problem",,,"6054
 2686,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-16,,戻る,もどる,,modoru,"wracać
 powracać
 być zawróconym",,,
-2687,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,教室,きょうしつ,,kyoushitsu,sala,szkolna,NO,
+2687,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,教室,きょうしつ,,kyoushitsu,"sala
+klasa","szkolna, wykładowa",NO,
 2688,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,海外,かいがい,,kaigai,"za morzem
 za oceanem",,NO,
 2689,WORD_ADJECTIVE_NA,,KATAKANA,,,-,パーフェクト,,paafekuto,"idealny
@@ -6451,7 +6471,8 @@ postawa pasywna",,,
 4138,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,,育てる,そだてる,,sodateru,"wychowywać
 hodować
 uprawiać","np. roślinę, zwięrzęta",,
-4139,WORD_NOUN,,HIRAGANA,,,教育,きょういく,,kyouiku,edukacja,,,
+4139,WORD_NOUN,,HIRAGANA,,,教育,きょういく,,kyouiku,"edukacja
+wychowanie",,,
 4140,WORD_NOUN,,HIRAGANA,,,体育館,たいいくかん,,taiikukan,sala gimnastyczna,,,
 4141,WORD_NOUN,,HIRAGANA,,,育成,いくせい,,ikusei,"wychowanie
 trening",,,
@@ -7362,7 +7383,7 @@ obcy",,NO,
 4657,WORD_NOUN,,HIRAGANA,Genki 2-20,,神様,かみさま,,kamisama,Bóg,,NO,
 4658,WORD_NOUN,,HIRAGANA,Genki 2-20,,空港,くうこう,,kuukou,lotnisko,,NO,
 4659,WORD_NOUN,,HIRAGANA,Genki 2-20,,字,じ,,ji,"litera
-znak",,,
+znak",,,7858
 4660,WORD_NOUN,,HIRAGANA,Genki 2-20,,支店,してん,,shiten,"oddział
 agencja
 filia (sklepu)",,,
@@ -13413,3 +13434,107 @@ instruktor",,,
 7856,WORD_NOUN,,HIRAGANA,,,講堂,こうどう,,koudou,"sala wykładowa
 audytorium",,,
 7857,WORD_NOUN,,HIRAGANA,,,実習,じっしゅう,,jisshuu,praktyka,,,
+7858,WORD_NOUN,,HIRAGANA,,,字,あざ,,aza,dzielnica,miasteczka,,4659
+7859,WORD_NOUN,,HIRAGANA,,,字幕,じまく,,jimaku,napisy,w filmie obcojęzycznym,,
+7860,WORD_NOUN,,HIRAGANA,,,字引,じびき,,jibiki,słownik,,,
+7861,WORD_NOUN,,HIRAGANA,,,字句,じく,,jiku,"terminy
+określenia
+wyrażenia",,,
+7862,WORD_NOUN,,HIRAGANA,,,字体,じたい,,jitai,"forma znaku chińskiego
+styl znaku chińskiego",,,
+7863,WORD_NOUN,,HIRAGANA,,,父権,ふけん,,fuken,"prawo ojcowskie
+ojcostwo",,,
+7864,WORD_NOUN,,HIRAGANA,,,神父,しんぷ,,shinpu,"ksiądz
+ojciec (duchowny)",,,
+7865,WORD_NOUN,,KATAKANA,,,-,ジェスチャー,,jesuchaa,"gest
+gesty",,,
+7866,WORD_NOUN,,HIRAGANA,,,入場,にゅうじょう,,nyuujou,wejście,"do teatru, kina, itp.",,
+7867,WORD_NOUN,,HIRAGANA,,,劇場,げきじょう,,gekijou,teatr,,,
+7868,WORD_VERB_U,,HIRAGANA,,,教わる,おそわる,,osowaru,pobierać naukę,,,
+7869,WORD_NOUN,,HIRAGANA,,,死者,ししゃ,,shisha,zmarły,,,
+7870,WORD_NOUN,,HIRAGANA,,,死体,したい,,shitai,"zwłoki
+ciało zmarłego",,,
+7871,WORD_NOUN,,HIRAGANA,,,水死,すいし,,suishi,utonięcie,,,
+7872,WORD_NOUN,,HIRAGANA,,,死亡,しぼう,,shibou,śmierć,,,
+7873,WORD_NOUN,,HIRAGANA,,,死刑,しけい,,shikei,kara śmierci,,,
+7874,WORD_NOUN,,HIRAGANA,,,物語,ものがたり,,monogatari,opowiadanie,,,
+7875,WORD_NOUN,,HIRAGANA,,,底,てい,,tei,"dno
+podstawa
+rodzaj",,,7876
+7876,WORD_NOUN,,HIRAGANA,,,底,そこ,,soko,"dno
+głębokość",,,"133
+7875"
+7877,WORD_NOUN,,HIRAGANA,,,底本,ていほん,,teihon,oryginalny tekst,,,
+7878,WORD_NOUN,,HIRAGANA,,,底無し,そこなし,,sokonashi,"bez dna
+bezdenny",,,
+7879,WORD_NOUN,,HIRAGANA,,,底辺,ていへん,,teihen,podstawa,w geometrii,,
+7880,WORD_NOUN,,HIRAGANA,,,底値,そこね,,sokone,najniższa cena,,,
+7881,WORD_NOUN,,HIRAGANA,,,底力,そこぢから,,sokodikara,ukryta energia,,,
+7882,WORD_NOUN,,HIRAGANA,,,建築学,けんちくがく,,kenchikugaku,architektura,nauka,,
+7883,WORD_NOUN,,HIRAGANA,,,建材,けんざい,,kenzai,materiały budowlane,,,
+7884,WORD_NOUN,,HIRAGANA,,,建設工事,けんせつこうじ,,kensetsukouji,roboty budowlane,,,
+7885,WORD_VERB_U,,HIRAGANA,,,築く,きずく,,kizuku,"budować
+konstruować
+wznosić",,,
+7886,WORD_NOUN,,HIRAGANA,,,建築,けんちく,,kenchiku,"architektura
+konstrukcja",,,
+7887,WORD_NOUN,,HIRAGANA,,,建築家,けんちくか,,kenchikuka,architekt,,,
+7888,WORD_NOUN,,HIRAGANA,,,改築,かいちく,,kaichiku,rekonstrukcja,,,
+7889,WORD_NOUN,,HIRAGANA,,,築城,ちくじょう,,chikujou,"budowa zamku
+fortyfikacja
+umocnienie",,,
+7890,WORD_NOUN,,HIRAGANA,,,築山,つきやま,,tsukiyama,sztuczny pagórek,,,
+7891,WORD_NOUN,,HIRAGANA,,,飯,めし,,meshi,"pożywienie
+jedzenie
+gotowany ryż",,,
+7892,WORD_NOUN,,HIRAGANA,,,夕飯,ゆうめし,,yuumeshi,kolacja,,,7893
+7893,WORD_NOUN,,HIRAGANA,,,夕飯,ゆうはん,,yuuhan,kolacja,,,7892
+7894,WORD_NOUN,,HIRAGANA,,,飯台,はんだい,,handai,stół,,,
+7895,WORD_NOUN,,HIRAGANA,,,赤飯,せきはん,,sekihan,gotowany ryż z czerwoną fasolą,potrawa świąteczna,,
+7896,WORD_NUMBER,,HIRAGANA,,,京,けい,,kei,dziesięć kwadrylionów,,,
+7897,WORD_NOUN,,HIRAGANA,,,京阪,けいはん,,keihan,Kioto i Osaka,,,
+7898,WORD_NOUN,,HIRAGANA,,,京浜,けいひん,,keihin,Tokio i Yokohama,,,
+7899,WORD_NOUN,,HIRAGANA,,,分,ふん,,fun,minuta,,,7900
+7900,WORD_NOUN,,HIRAGANA,,,分,ぶ,,bu,"część
+procent",,,7899
+7901,WORD_VERB_U,,HIRAGANA,,,分かる,わかる,,wakaru,"rozumieć
+znać
+poznać",,,
+7902,WORD_VERB_RU,,HIRAGANA,,,分ける,わける,,wakeru,"dzielić
+odłączać",,,
+7903,WORD_NOUN,,HIRAGANA,,,分割,ぶんかつ,,bunkatsu,"podział
+rozbiór",,,
+7904,WORD_NOUN,,HIRAGANA,,,分析,ぶんせき,,bunseki,analiza,,,
+7905,WORD_NOUN,,HIRAGANA,,,分解,ぶんかい,,bunkai,"analiza
+rozbijać
+rozbierać
+rozdrabniać
+rozwiązywać",,,
+7906,WORD_NOUN,,HIRAGANA,,,三分の一,さんぶんのいち,,sanbun no ichi,jedna trzecia,,,
+7907,WORD_VERB_U,,HIRAGANA,,,分かち合う,わかちあう,,wakachi au,dzielić się,"np. jedzeniem, wrażeniami",,
+7908,WORD_ADVERB,,HIRAGANA,,,毎に,ごとに,,goto ni,za każdym razem,,,
+7909,WORD_ADVERB,,HIRAGANA,,,毎回,まいかい,,maikai,za każdym razem,,,
+7910,WORD_ADVERB,,HIRAGANA,,,毎度,まいど,,maido,"za każdym razem
+często
+zawsze",,,
+7911,WORD_NOUN,,HIRAGANA,,,肉体,にくたい,,nikutai,ciało,,,
+7912,WORD_NOUN,,HIRAGANA,,,筋肉,きんにく,,kinniku,muskuły,,,
+7913,WORD_NOUN,,HIRAGANA,,,肉親,にくしん,,nikushin,krewni,,,
+7914,WORD_NOUN,,HIRAGANA,,,肉欲,にくよく,,nikuyoku,cielesne pożądanie,,,
+7915,WORD_NUMBER,,HIRAGANA,,,億,おく,,oku,sto milionów,,,
+7916,WORD_NUMBER,,HIRAGANA,,,一億,いちおく,,ichi oku,sto milionów,,,
+7917,WORD_NOUN,,HIRAGANA,,,億万長者,おくまんちょうじゃ,,okumanchouja,multimilioner,,,
+7918,WORD_ADJECTIVE_NA,,HIRAGANA,,,億劫,おっくう,,okkuu,kłopotliwy,,,
+7919,WORD_NOUN,,HIRAGANA,,,幕,まく,,maku,"kurtyna
+akt",,,7920
+7920,WORD_NOUN,,HIRAGANA,,,幕,ばく,,baku,japoński rząd feudalny,,,7919
+7921,UNKNOWN,,HIRAGANA,,,析,せき,,seki,"dzielić
+drzeć
+analizować",,,984
+7922,WORD_NOUN,,HIRAGANA,,,筋,きん ,,kin,"mięsień
+ścięgno",,,7923
+7923,WORD_NOUN,,HIRAGANA,,,筋,すじ,,suji,"mięsień
+ścięgno
+żyła
+linia
+kreska",,,7922
