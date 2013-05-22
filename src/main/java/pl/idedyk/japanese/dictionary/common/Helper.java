@@ -18,7 +18,7 @@ import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 
 public class Helper {
 
-	public static List<PolishJapaneseEntry> generateGroups(List<PolishJapaneseEntry> polishJapaneseEntries, boolean checkUseEntry) {
+	public static List<PolishJapaneseEntry> generateGroups(List<PolishJapaneseEntry> polishJapaneseEntries, boolean checkUseEntry, boolean addOtherGroup) {
 		
 		// generate groups
 		
@@ -71,7 +71,10 @@ public class Helper {
 			if (groupsForCurrentPolishJapaneseEntry == null) {
 				groupsForCurrentPolishJapaneseEntry = new ArrayList<String>();
 				
-				groupsForCurrentPolishJapaneseEntry.add("Inne");
+				if (addOtherGroup == true) {
+					groupsForCurrentPolishJapaneseEntry.add("Inne");
+				}
+				
 			}
 			
 			currentPolishJapaneseEntry.setGroups(groupsForCurrentPolishJapaneseEntry);

@@ -40,7 +40,7 @@ public class J2MEDictionaryGenerator {
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict);	
 		generateKanjiImages(polishJapaneseEntries, charsCache, kanjiOutputDir);
 		
-		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, false);
+		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, false, true);
 		
 		// kanji dictionary
 		//List<PolishJapaneseEntry> polishJapaneseKanjiEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);

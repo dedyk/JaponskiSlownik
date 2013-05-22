@@ -89,7 +89,7 @@ public class AndroidDictionaryGenerator {
 		Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);
 		
 		// generate groups
-		List<PolishJapaneseEntry> result = Helper.generateGroups(polishJapaneseEntries, true);
+		List<PolishJapaneseEntry> result = Helper.generateGroups(polishJapaneseEntries, true, true);
 		
 		// generate additional data from edict
 		Helper.generateAdditionalInfoFromEdict(jmedict, jmedictCommon, result);

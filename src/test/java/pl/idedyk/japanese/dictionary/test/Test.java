@@ -1,9 +1,11 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 
@@ -84,8 +86,27 @@ public class Test {
 		*/
 		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
-				
+		
+		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true, false);
+		
+		List<PolishJapaneseEntry> resultPolishJapaneseEntries = new ArrayList<PolishJapaneseEntry>();
+		
+		int id = 1;
+		
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
+			
+			if (currentPolishJapaneseEntry.isUseEntry() == false) {
+				continue;
+			}
+			
+			currentPolishJapaneseEntry.setId(id);
+			
+			resultPolishJapaneseEntries.add(currentPolishJapaneseEntry);
+			
+			id++;
+		}
+		
+		for (PolishJapaneseEntry currentPolishJapaneseEntry : resultPolishJapaneseEntries) {
 			
 			if (currentPolishJapaneseEntry.isUseEntry() == false) {
 				continue;
@@ -104,12 +125,12 @@ public class Test {
 			currentPolishJapaneseEntry.setKnownDuplicatedId(knownDuplicatedIds);
 		}
 		
-		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries, true);
+		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true);
 	}
 	
 	private static Set<Integer> generateKnownDuplicatedIdForKanji(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, String kanji) {
 		
-		Set<Integer> result = new HashSet<Integer>();
+		Set<Integer> result = new TreeSet<Integer>();
 		
 		if (kanji.equals("-") == true) {
 			return result;
