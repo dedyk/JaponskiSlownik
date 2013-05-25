@@ -67,6 +67,8 @@ public class AndroidDictionaryGenerator {
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, 
 			String edictFileName, String edictCommonFileName, 
 			String edictNameFileName, String destinationFileName) throws Exception {
+		
+		System.out.println("checkAndSavePolishJapaneseEntries");
 				
 		// hiragana
 		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
@@ -74,22 +76,38 @@ public class AndroidDictionaryGenerator {
 		// katakana
 		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
 		
+		System.out.println("checkAndSavePolishJapaneseEntries: parsePolishJapaneseEntriesFromCsv");
+		
 		// parse csv
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName);
 		
+		System.out.println("checkAndSavePolishJapaneseEntries: readEdict");
+		
 		// read edict
 		TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict(edictFileName);
+		
+		System.out.println("checkAndSavePolishJapaneseEntries: readEdictCommon");
 		
 		// read edict common
 		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict(edictCommonFileName);
 				
 		// validate
+		
+		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");		
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict);
+		
+		System.out.println("checkAndSavePolishJapaneseEntries: detectDuplicatePolishJapaneseKanjiEntries");
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);
+		
+		System.out.println("checkAndSavePolishJapaneseEntries: validateUseNoEntryPolishJapaneseKanjiEntries");
 		Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);
 		
 		// generate groups
+		System.out.println("checkAndSavePolishJapaneseEntries: generateGroups");
+		
 		List<PolishJapaneseEntry> result = Helper.generateGroups(polishJapaneseEntries, true, true);
+		
+		System.out.println("checkAndSavePolishJapaneseEntries: generateAdditionalInfoFromEdict");
 		
 		// generate additional data from edict
 		Helper.generateAdditionalInfoFromEdict(jmedict, jmedictCommon, result);
@@ -102,6 +120,8 @@ public class AndroidDictionaryGenerator {
 		// generate names
 		// Helper.generateNames(jmedictName, result);		
 		
+		System.out.println("checkAndSavePolishJapaneseEntries: generateCsv");
+		
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 		
 		CsvReaderWriter.generateCsv(outputStream, result, false);
@@ -110,6 +130,8 @@ public class AndroidDictionaryGenerator {
 	}
 	
 	private static void generateKanaEntries(String kanjivgDir, String destinationFileName) throws Exception {
+		
+		System.out.println("generateKanaEntries");
 		
 		// hiragana
 		List<KanaEntry> kanaEntries = KanaHelper.getAllHiraganaKanaEntries();
@@ -170,14 +192,21 @@ public class AndroidDictionaryGenerator {
 			String kanjivgDir,
 			String destinationFileName) throws Exception {
 		
+		System.out.println("generateKanjiEntries");
+		
+		System.out.println("generateKanjiEntries: readKradFile");
 		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(sourceKradFileName);
 		
+		System.out.println("generateKanjiEntries: readKanjiDic2");
 		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName, kradFileMap);
 		
+		System.out.println("generateKanjiEntries: parseKanjiEntriesFromCsv");
 		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2);
 		
+		System.out.println("generateKanjiEntries: validateDuplicateKanjiEntriesList");
 		Validator.validateDuplicateKanjiEntriesList(kanjiEntries);
 		
+		System.out.println("generateKanjiEntries: generateAdditionalKanjiEntries");
 		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2);
 		
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
@@ -190,6 +219,8 @@ public class AndroidDictionaryGenerator {
 			
 			currentKanjiEntry.setKanjivgEntry(kanjivgEntry);			
 		}
+		
+		System.out.println("generateKanjiEntries: generateKanjiCsv");
 		
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 		
@@ -315,6 +346,8 @@ public class AndroidDictionaryGenerator {
 			}
 		});
 		
+		System.out.println("\n---\n");
+		
 		for (int kanjiArrayIdx = 0; kanjiArrayIdx < kanjiArray.length && kanjiArrayIdx < 10; ++kanjiArrayIdx) {
 			
 			String currentKanji = kanjiArray[kanjiArrayIdx];
@@ -328,6 +361,8 @@ public class AndroidDictionaryGenerator {
 	}
 	
 	private static void generateKanjiRadical(String radfile, String radicalDestination) throws Exception {
+		
+		System.out.println("generateKanjiRadical");
 		
 		List<RadicalInfo> radicalList = KanjiDic2Reader.readRadkfile(radfile);
 		
@@ -358,6 +393,8 @@ public class AndroidDictionaryGenerator {
 	
 	private static void generateZinniaTomoeSlimBinaryFile(List<KanjiEntry> kanjiEntries, 
 			String kvgToolFileFromKanjivg, String tomoeFileFromKanjivg, String zinniaLearnPath, String zinniaTomoeLearnSlimFile, String zinniaTomoeSlimBinaryFile) throws Exception {
+		
+		System.out.println("generateZinniaTomoeSlimBinaryFile");
 		
 		Set<String> kanjiSet = new HashSet<String>();
 		

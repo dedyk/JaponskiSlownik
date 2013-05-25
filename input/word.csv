@@ -757,7 +757,9 @@ prosty",problem / człowiek,,
 czyste",,,
 422,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki 1-5
 Genki kanji 1-5",,元気,げんき,,genki,"zdrowy
-energiczny",,,
+energiczny
+pełny sił
+dobre samopoczucie",,,
 423,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,静か,しずか,,shizuka,"cisza
 cichy
 spokój
@@ -957,7 +959,7 @@ mężczyzna w średnim wieku",,,
 509,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-6
 Genki 1-7",,頭がいい,あたまがいい,,atama ga ii,mądry,,,
 510,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-6,,頭が悪い,あたまがわるい,,atama ga warui,głupi,,,
-511,WORD_EXPRESSION,,HIRAGANA,Genki 1-6,,まっすぐ行く,まっすぐいく,,massugu iku,iść prosto,,,
+511,WORD_EXPRESSION,,HIRAGANA,Genki 1-6,,真っ直ぐ行く,まっすぐいく,,massugu iku,iść prosto,,,
 512,WORD_EXPRESSION,,HIRAGANA,Genki 1-6,,右に曲がる,みぎにまがる,,migi ni magaru,skręcić w prawo,,,
 513,WORD_EXPRESSION,,HIRAGANA,Genki 1-6,,左に曲がる,ひだりにまがる,,hidari ni magaru,skręcić w lewo,,,
 514,WORD_EXPRESSION,,HIRAGANA,Genki 1-6,,一つ目の信号を右に曲がる,ひとつめのしんごうをみぎにまがる,,hitotsu me no shingou o migi ni magaru,skręcić w prawo na pierwszych światłach,,,
@@ -1300,7 +1302,11 @@ otrzymać","coś, osoba ni rzecz",,
 702,WORD_VERB_RU,,HIRAGANA,Genki 1-9,,覚える,おぼえる,,oboeru,"zapamiętać
 uczyć się",,,
 703,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,"Genki 1-9
-Genki 2-18",に,出る,でる,ni,deru,pojawić się,,,"704
+Genki 2-18",に,出る,でる,ni,deru,"pojawić się
+wychodzić
+brać udział
+uczestniczyć
+występować",,,"704
 3054"
 704,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,"Genki 1-9
 Genki 2-18
@@ -1778,7 +1784,7 @@ Genki 2-20",,神様,かみさま,,kamisama,Bóg,,,
 panienka
 dziewczyna",,,
 954,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki dodatkowe 1-12
-Genki 2-19",,-,まじめ,,majime,poważny,,,
+Genki 2-19",,真面目,まじめ,,majime,poważny,,,
 955,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 1-12,,はたを織る,はたをおる,,hata o oru,tkać,,,
 956,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,-,ある,,aru,pewnego,~,,"364
 5306"
@@ -2197,7 +2203,9 @@ Genki kanji 2-18",,旅館,りょかん,,ryokan,zajazd,w stylu japońskim,,
 1197,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 2-15
 Genki kanji 2-15",,広い,ひろい,,hiroi,"przestronny
 szeroki
-rozległy",,,
+rozległy
+obszerny
+przestrzenny",,,
 1198,WORD_VERB_U,,HIRAGANA,"Genki 2-15
 Genki kanji 1-10",,売る,うる,,uru,sprzedawać,,,
 1199,WORD_VERB_U,,HIRAGANA,Genki 2-15,,下ろす,おろす,,orosu,podjąć,pieniądze,,1252
@@ -2294,7 +2302,11 @@ zakochanie",,,
 Genki 2-16
 Genki 2-18",を,出す,だす,o,dasu,"wyjmować
 wyjąć
-wyciągać",,,
+wyciągać
+wydawać
+wystawiać
+publikować
+produkować",,,
 1249,WORD_EXPRESSION,,HIRAGANA,,,世界中,せかいじゅう,,sekai juu,na całym świecie,,,
 1250,WORD_EXPRESSION,,HIRAGANA,,,利用中,りようちゅう,,riyou chuu,już używają,,,
 1251,WORD_EXPRESSION,,HIRAGANA,,,四方,しほう,,shihou,cztery kierunki,,,
@@ -2498,7 +2510,8 @@ Genki dodatkowe 2-21",,食事,しょくじ,,shokuji,posiłek,,,
 dzień wolny od pracy
 dzień wolny od zajęć szkolnych",,,
 1378,UNKNOWN,,HIRAGANA,Genki kanji 1-8,,言語学,げんごがく,,gengogaku,lingwistyka,,,
-1379,UNKNOWN,,HIRAGANA,Genki kanji 1-8,,読書,どくしょ,,dokusho,czytać książki,,,
+1379,UNKNOWN,,HIRAGANA,Genki kanji 1-8,,読書,どくしょ,,dokusho,"czytać książki
+czytanie",,,
 1380,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-8,,不思議,ふしぎ,,fushigi,"tajemniczy
 niezwykły
 dziwny",,,
@@ -2600,9 +2613,11 @@ studia podyplomowe",,,
 1439,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,国歌,こっか,,kokka,"hymn narodowy
 hymn państwowy",,,
 1440,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,川口市,かわぐちし,,kawaguchi shi,Kawaguchi,miasto w Japonii,,
-1441,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,市役所,しやくしょ,,shiyakusho,ratusz,,,
+1441,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,市役所,しやくしょ,,shiyakusho,"ratusz
+urząd miejski",,,
 1442,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,市長,しちょう,,shichou,burmistrz,miasta,,
-1443,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,市場,いちば,,ichiba,rynek,,,
+1443,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,市場,いちば,,ichiba,"rynek
+targ",,,7198
 1444,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,色々な所,いろいろなところ,,iroiro na tokoro,różne miejsca,,,
 1445,WORD_NOUN,,HIRAGANA,"Genki kanji 1-11
 Genki kanji 2-21",,台所,だいどころ,,daidokoro,kuchnia,,,
@@ -2644,7 +2659,9 @@ Genki kanji 2-13",,牛肉,ぎゅうにく,,gyuuniku,wołowina,,,
 1464,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,労働,ろうどう,,roudou,praca fizyczna,,,
 1465,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,国連,こくれん,,kokuren,"Organizacja Narodów Zjednoczonych
 ONZ",,,
-1466,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,連休,れんきゅう,,renkyuu,powiązane święta,święta jedno po drugim,,
+1466,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,連休,れんきゅう,,renkyuu,"powiązane święta
+następujące po sobie święta
+następujące po sobie wolne dni",święta jedno po drugim,,
 1467,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki kanji 1-12
 Genki kanji 2-13",,特別,とくべつ,,tokubetsu,"specjalny
 wyjątkowy",,,
@@ -3434,7 +3451,8 @@ nalewać",,,
 1961,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,人魚,にんぎょ,,ningyo,syrena,,,
 1962,WORD_NOUN,,HIRAGANA,,,人形,にんぎょう,,ningyou,lalka,,,
 1963,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,東寺,とうじ,,touji,Toji,nazwa świątyni w Kioto,,
-1964,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,広島,ひろしま,,hiroshima,Hiroszima,miasto w Japonii,,
+1964,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,広島,ひろしま,,hiroshima,"Hiroszima
+Hiroshima",miasto w Japonii,,
 1965,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,回転寿司,かいてんずし,,kaitenzushi,“sushi na taśmie”,,,
 1966,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,借地,しゃくち,,shakuchi,dzierżawa,,,
 1967,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,借金,しゃっきん,,shakkin,dług,,,
@@ -3983,7 +4001,9 @@ skupiać się",na czymś,,
 Genki dodatkowe 2-17",,発表する,はっぴょうする,,happyou suru,"prezentować
 ogłoszenie (czegoś)",,,
 2260,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,出発,しゅっぱつ,,shuppatsu,"wyjazd
-wylot",,,
+wylot
+odjazd
+start",,,
 2261,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,表紙,ひょうし,,hyoushi,"strona tytułowa
 okładka",,,
 2262,WORD_VERB_U,,HIRAGANA,Genki kanji 2-17,,表す,あらわす,,arawasu,"wyrażać
@@ -4029,7 +4049,9 @@ pole",,,
 2282,WORD_NOUN,,HIRAGANA,,,生卵,なまたまご,,nama tamago,surowe jajko,,,
 2283,WORD_NOUN,,HIRAGANA,,,現実,げんじつ,,genjitsu,rzeczywistość,,,
 2284,UNKNOWN,,HIRAGANA,,,事実,じじつ,,jijitsu,fakt,,,
-2285,WORD_ADJECTIVE_NA,,HIRAGANA,,,真実,しんじつ,,shinjitsu,prawda,,,
+2285,WORD_ADJECTIVE_NA,,HIRAGANA,,,真実,しんじつ,,shinjitsu,"prawda
+fakt
+rzeczywistość",,,
 2286,WORD_NOUN,,HIRAGANA,,,実験室,じっけんしつ,,jikkenshitsu,laboratorium,,,
 2287,WORD_NOUN,,HIRAGANA,,,実力,じつりょく,,jitsuryoku,"rzeczywista siła
 możliwości",,,
@@ -13056,3 +13078,122 @@ echo",,,
 rezonować
 wibrować
 dźwięczeć",,,
+7186,WORD_NOUN,,HIRAGANA,,,出身地,しゅっしんち,,shusshinchi,miejsce pochodzenia,,,
+7187,WORD_NOUN,,HIRAGANA,,,出版,しゅっぱん,,shuppan,publikacja,,,
+7188,WORD_NOUN,,HIRAGANA,,,元,もと,,moto,"podstawa
+fundament
+pochodzenie",,,
+7189,WORD_NOUN,,HIRAGANA,,,読点,とうてん,,touten,przecinek,,,
+7190,WORD_VERB_U,,HIRAGANA,,,読み取る,よみとる,,yomitoru,"rozumieć
+pojmować",czyjeś intencje,,
+7191,WORD_NOUN,,HIRAGANA,,,世,よ,,yo,"świat
+społeczeństwo
+życie
+wiek
+era",,,
+7192,WORD_NOUN,,HIRAGANA,,,世紀,せいき,,seiki,wiek,,,
+7193,WORD_NOUN,,HIRAGANA,,,世俗,せぞく,,sezoku,"światowy
+świecki",,,
+7194,WORD_NOUN,,HIRAGANA,,,世間,せけん,,seken,"świat
+społeczeństwo",,,
+7195,WORD_NOUN,,HIRAGANA,,,市,いち,,ichi,"rynek
+targ
+jarmark
+bazar",,,
+7196,WORD_NOUN,,HIRAGANA,,,市民,しみん,,shimin,obywatel,,,
+7197,WORD_NOUN,,HIRAGANA,,,市立,しりつ,,shiritsu,miejski,,,
+7198,WORD_NOUN,,HIRAGANA,,,市場,しじょう,,shijou,rynek,,,1443
+7199,WORD_VERB_U,,HIRAGANA,,,広がる,ひろがる,,hirogaru,"rozszerzać się
+sięgać do",,,
+7200,WORD_VERB_RU,,HIRAGANA,,,広げる,ひろげる,,hirogeru,"rozszerzać
+powiększać",,,
+7201,WORD_NOUN,,HIRAGANA,,,広報,こうほう,,kouhou,"reklama
+propaganda
+rozgłos
+public relations",,,
+7202,WORD_NOUN,,HIRAGANA,,,広間,ひろま,,hiroma,"sala
+salon",,,
+7203,WORD_NOUN,,HIRAGANA,,,虎,とら,,tora,tygrys,,,
+7204,WORD_ADJECTIVE_NA,,HIRAGANA,,,真,しん,,shin,"prawda
+rzeczywistość
+autentyczność",,,7205
+7205,WORD_NOUN,,HIRAGANA,,,真,ま,,ma,"uczciwy
+prawidłowy
+czysty
+rzeczywisty",,,7204
+7206,WORD_NOUN,,HIRAGANA,,,真理,しんり,,shinri,prawda,,,
+7207,WORD_ADJECTIVE_NA,,HIRAGANA,,,真っ直ぐ,まっすぐ,,massugu,prosto,,,
+7208,WORD_NOUN,,HIRAGANA,,,真珠,しんじゅ,,shinju,perła,,,
+7209,WORD_VERB_RU,,HIRAGANA,,,転じる,てんじる,,tenjiru,"kręcić
+zmieniać",,,
+7210,WORD_VERB_U,,HIRAGANA,,,転ばす,ころばす,,korobasu,"kręcić
+przewracać",,,
+7211,WORD_VERB_RU,,HIRAGANA,,,転げる,ころげる,,korogeru,"kręcić się
+upadać",,,
+7212,WORD_VERB_U,,HIRAGANA,,,転がる,ころがる,,korogaru,"kręcić się
+upadać",,,
+7213,WORD_VERB_U,,HIRAGANA,,,転がす,ころがす,,korogasu,"kręcić
+toczyć",,,
+7214,WORD_NOUN,,HIRAGANA,,,転出,てんしゅつ,,tenshutsu,"wyprowadzać się
+wychodzić
+przenosić się z",,,
+7215,WORD_NOUN,,HIRAGANA,,,転入,てんにゅう,,tennyuu,"wprowadzać się
+wchodzić
+przenosić się do",,,
+7216,WORD_NOUN,,HIRAGANA,,,転職,てんしょく,,tenshoku,"zmiana zawodu
+zmiana pracy",,,
+7217,WORD_NOUN,,HIRAGANA,,,連,れん,,ren,"zestaw
+rysa
+grupa
+towarzystwo
+gang",,,
+7218,WORD_VERB_U,,HIRAGANA,,,連なる,つらなる,,tsuranaru,"być połączonym z
+łączyć się
+stać w rzędzie",,,
+7219,WORD_VERB_RU,,HIRAGANA,,,連れる,つれる,,tsureru,zabierać kogoś,ze sobą,,
+7220,WORD_NOUN,,HIRAGANA,,,連続,れんぞく,,renzoku,"ciąg
+seria
+kontynuacja",,,
+7221,WORD_NOUN,,HIRAGANA,,,連邦,れんぽう,,renpou,"federacja
+związek",,,
+7222,WORD_NOUN,,HIRAGANA,,,連山,れんざん,,renzan,łańcuch górski,,,
+7223,WORD_NOUN,,HIRAGANA,,,連中,れんちゅう,,renchuu,"grupa
+klika
+towarzystwo",,,
+7224,WORD_VERB_RU,,HIRAGANA,,,拡げる,ひろげる,,hirogeru,rozciągać,,,
+7225,WORD_NOUN,,HIRAGANA,,,拡声器,かくせいき,,kakuseiki,głośnik,,,
+7226,WORD_NOUN,,HIRAGANA,,,拡大,かくだい,,kakudai,powiększanie,,,
+7227,WORD_NOUN,,HIRAGANA,,,拡充,かくじゅう,,kakujuu,"ekspansja
+uogólnienie
+rozszerzanie",,,
+7228,WORD_NOUN,,HIRAGANA,,,拡張,かくちょう,,kakuchou,ekspansja,,,
+7229,WORD_NOUN,,HIRAGANA,,,拡散,かくさん,,kakusan,"rozpraszanie
+rozrzucanie",,,
+7230,WORD_NOUN,,HIRAGANA,,,突撃,とつげき,,totsugeki,"atak
+natarcie",,,
+7231,WORD_NOUN,,HIRAGANA,,,展開,てんかい,,tenkai,"rozbudowa
+rozwój
+ekspansja",,,
+7232,WORD_NOUN,,HIRAGANA,,,雷撃,らいげき,,raigeki,atak torpedowy,,,
+7233,WORD_NOUN,,HIRAGANA,,,版,はん,,han,"matryca
+drukowanie
+wydawanie
+drukowanie
+etykietka",,,
+7234,WORD_NOUN,,HIRAGANA,,,出版社,しゅっぱんしゃ,,shuppansha,wydawnictwo,,,
+7235,WORD_NOUN,,HIRAGANA,,,初版,しょはん,,shohan,pierwsze wydanie,,,
+7236,WORD_NOUN,,HIRAGANA,,,改訂版,かいていばん,,kaiteiban,wydanie poprawione,,,
+7237,WORD_NOUN,,HIRAGANA,,,版権,はんけん,,hanken,prawo autorskie,,,
+7238,WORD_NOUN,,HIRAGANA,,,版画,はんが,,hanga,"druk
+odbitka",z drewnianej matrycy,,
+7239,WORD_NOUN,,HIRAGANA,,,紀元,きげん,,kigen,"era
+epoka",,,
+7240,WORD_NOUN,,HIRAGANA,,,風紀,ふうき,,fuuki,"dyscyplina
+moralność publiczna",,,
+7241,WORD_NOUN,,HIRAGANA,,,紀行,きこう,,kikou,"notatki
+wspomnienia z podróży",,,
+7242,WORD_NOUN,,HIRAGANA,,,紀要,きよう,,kiyou,biuletyn,,,
+7243,WORD_NOUN,,HIRAGANA,,,珠,たま,,tama,"perła
+paciorek",,,
+7244,WORD_NOUN,,HIRAGANA,,,雷,かみなり,,kaminari,piorun,,,7245
+7245,WORD_NOUN,,HIRAGANA,,,雷,いかずち,,ikazuchi,piorun,,,7244
