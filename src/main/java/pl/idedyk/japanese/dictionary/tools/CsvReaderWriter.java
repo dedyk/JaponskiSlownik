@@ -60,10 +60,6 @@ public class CsvReaderWriter {
 				
 				String currentRomajiEntry = "";
 				
-				if (prefixRomaji != null && prefixRomaji.equals("") == false) {
-					currentRomajiEntry = prefixRomaji + " ";	
-				}
-				
 				currentRomajiEntry += romajiList.get(romIdx);
 								
 				sb.append(polishJapaneseEntry.getWordType().getPrintable() + ":" + currentRomajiEntry);
@@ -72,6 +68,12 @@ public class CsvReaderWriter {
 					sb.append(",");
 				}					
 			}
+			sb.append(";");
+			
+			if (prefixRomaji != null && prefixRomaji.equals("") == false) {	
+				sb.append(prefixRomaji);
+			}
+			
 			sb.append(";");
 			
 			List<String> groups = polishJapaneseEntry.getGroups();
