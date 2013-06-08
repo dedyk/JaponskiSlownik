@@ -115,9 +115,11 @@ Genki kanji 1-6",,学生,がくせい,,gakusei,student,,,
 73,WORD_NOUN,,HIRAGANA,"Genki 1-1
 Genki kanji 1-7",,高校,こうこう,,koukou,liceum,,,
 74,UNKNOWN,,HIRAGANA,"Genki 1-1
-Genki kanji 1-9",,午後,ごご,,gogo,pm,czas,,
+Genki kanji 1-9",,午後,ごご,,gogo,"po południu
+pm",czas,,
 75,UNKNOWN,,HIRAGANA,"Genki 1-1
-Genki kanji 1-9",,午前,ごぜん,,gozen,am,czas,,
+Genki kanji 1-9",,午前,ごぜん,,gozen,"przed południem
+am",czas,,
 76,UNKNOWN,,HIRAGANA,Genki 1-1,,歳,さい,,sai,... lat,,,
 77,UNKNOWN,,HIRAGANA,Genki 1-1,,-,さん,,san,... Pan,,,"4
 4754
@@ -432,8 +434,10 @@ Genki kanji 1-7",,毎日,まいにち,,mainichi,każdego dnia,,,
 241,UNKNOWN,,HIRAGANA,"Genki 1-3
 Genki kanji 1-7",,毎晩,まいばん,,maiban,każdej nocy,,,
 242,WORD_VERB_U,,HIRAGANA,"Genki 1-3
-Genki kanji 1-5",に,行く,いく,ni,iku,iść,"cel, ni ~",,243
-243,WORD_VERB_U,,HIRAGANA,Genki 1-3,へ,行く,いく,he,iku,iść,"cel, e ~",,242
+Genki kanji 1-5",に,行く,いく,ni,iku,iść,"cel, ni ~",,"243
+7664"
+243,WORD_VERB_U,,HIRAGANA,Genki 1-3,へ,行く,いく,he,iku,iść,"cel, e ~",,"242
+7664"
 244,WORD_VERB_U,,HIRAGANA,"Genki 1-3
 Genki kanji 1-7",に,帰る,かえる,ni,kaeru,wracać,"cel, ni ~",,245
 245,WORD_VERB_U,,HIRAGANA,Genki 1-3,へ,帰る,かえる,he,kaeru,wracać,"cel, e ~",,244
@@ -755,7 +759,8 @@ wesoły
 przyjemny
 śmieszny",,,
 415,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-5
-Genki kanji 1-7",,小さい,ちいさい,,chiisai,mały,,,
+Genki kanji 1-7",,小さい,ちいさい,,chiisai,"mały
+drobny",,,
 416,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,-,つまらない,,tsumaranai,nudny,,,
 417,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-5
 Genki kanji 1-9",,古い,ふるい,,furui,stary,używane do przedmiotów,,
@@ -1228,7 +1233,9 @@ sondować",,,
 645,WORD_VERB_U,,HIRAGANA,Genki 1-8,が,要る,いる,ga,iru,potrzebować,,,369
 646,WORD_VERB_U,,HIRAGANA,Genki 1-8,に,遅くなる,おそくなる,ni,osoku naru,być spóźniony,na,,
 647,WORD_VERB_U,,HIRAGANA,"Genki 1-8
-Genki kanji 1-8",,思う,おもう,,omou,myśleć,"„myśleć w sercu”, mieć coś na myśli",,
+Genki kanji 1-8",,思う,おもう,,omou,"myśleć
+przypuszczać
+wydawać się","„myśleć w sercu”, mieć coś na myśli",,
 648,WORD_VERB_U,,HIRAGANA,"Genki 1-8
 Genki kanji 2-14",,切る,きる,,kiru,"ciąć
 piłować
@@ -1399,7 +1406,9 @@ Genki 2-18
 Genki kanji 2-22",,日記,にっき,,nikki,"pamiętnik
 dziennik",,,
 730,UNKNOWN,,HIRAGANA,"Genki dodatkowe 1-9
-Genki kanji 1-9",,午前中,ごぜんちゅう,,gozenchuu,przed południem,,,
+Genki kanji 1-9",,午前中,ごぜんちゅう,,gozenchuu,"przed południem
+przedpołudnie
+do południa",,,
 731,UNKNOWN,,KATAKANA,"Genki dodatkowe 1-9
 Genki 1-11",,-,ホストファミリー,,hosutofamirii,rodzina goszcząca,,,
 732,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-9,,-,ごちそう,,gochisou,dobre jedzenie,,,
@@ -1597,7 +1606,9 @@ wnosić się
 piąć się
 podnosić się",na górę,,1828
 828,WORD_VERB_U,,HIRAGANA,"Genki 1-11
-Genki kanji 1-12",,働く,はたらく,,hataraku,pracować,,,
+Genki kanji 1-12",,働く,はたらく,,hataraku,"pracować
+robić
+ćwiczyć",,,
 829,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,,仕事をする,しごとをする,,shigoto o suru,pracować,,,
 830,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,疲れる,つかれる,,tsukareru,"być zmęczony
 zmęczyć się
@@ -2488,7 +2499,7 @@ Genki kanji 1-5",を,見る,みる,o,miru,"patrzeć
 widzieć
 oglądać",,,
 1324,UNKNOWN,,HIRAGANA,Genki kanji 1-5,,見物,けんぶつ,,kenbutsu,zwiedzanie,,,
-1325,UNKNOWN,,HIRAGANA,Genki kanji 1-5,,一行目,いちぎょうめ,,ichigyoume,pierwsza linia,,,
+1325,UNKNOWN,,HIRAGANA,Genki kanji 1-5,,一行目,いちぎょうめ,,ichigyoume,pierwsza linia,w tekście,,
 1326,WORD_VERB_RU,,HIRAGANA,"Genki 1-3
 Genki kanji 1-5",を,食べる,たべる,o,taberu,jeść,,,
 1327,WORD_VERB_U,,HIRAGANA,"Genki 1-3
@@ -2502,7 +2513,7 @@ Genki kanji 1-7",,東京,とうきょう,,toukyou,Tokio,miasto w Japonii,,
 1333,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,西口,にしぐち,,nishiguchi,zachodnie wyjście,,,
 1334,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,関西,かんさい,,kansai,Kansai,"Region wyspy Honsiu, zwany też Kinki",,
 1335,WORD_NOUN,,HIRAGANA,"Genki kanji 1-6
-Genki dodatkowe 2-15",,南,みなみ,,minami,południe,,,
+Genki dodatkowe 2-15",,南,みなみ,,minami,południe,kierunek geograficzny,,
 1336,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,南口,みなみぐち,,minamiguchi,południowe wyjście,,,
 1337,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,北,きた,,kita,północ,kierunek geograficzny,,
 1338,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,北口,きたぐち,,kitaguchi,północne wyjście,,,
@@ -2511,7 +2522,7 @@ Genki dodatkowe 2-15",,南,みなみ,,minami,południe,,,
 Genki kanji 1-10",,北海道,ほっかいどう,,hokkaidou,Hokkaido,Jedna z japońskich wysp,,
 1341,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,北東,ほくとう,,hokutou,północny wschód,,,
 1342,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,南東,なんとう,,nantou,południowy wschód,,,
-1343,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,南西,なんせい,,nansei,południowy zachód,,,
+1343,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,南西,なんせい,,nansei,południowy zachód,,,7683
 1344,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,北西,ほくせい,,hokusei,północny zachód,,,
 1345,UNKNOWN,,HIRAGANA,Genki kanji 1-6,,人口,じんこう,,jinkou,populacja,,,
 1346,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,出口,でぐち,,deguchi,wyjście,,,
@@ -2776,8 +2787,11 @@ kura",,,
 smażony kurczak
 pieczony kurczak",japońska potrawa,,
 1484,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,白鳥,はくちょう,,hakuchou,łabędź,,,
-1485,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,料理,りょうり,,ryouri,potrawa,,,
-1486,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,料金,りょうきん,,ryoukin,opłata,,,
+1485,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,料理,りょうり,,ryouri,"potrawa
+gotowanie
+kucharzenie",,,
+1486,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,料金,りょうきん,,ryoukin,"opłata
+koszt",,,
 1487,WORD_NOUN,,HIRAGANA,"Genki kanji 2-13
 Genki 2-23",,授業料,じゅぎょうりょう,,jugyouryou,czesne,,,
 1488,WORD_NOUN,,HIRAGANA,"Genki kanji 2-13
@@ -3686,7 +3700,7 @@ kucharz",,,
 2037,WORD_NOUN,,HIRAGANA,,,蛸,たこ,,tako,ośmiornica,,,
 2038,WORD_NOUN,,HIRAGANA,,,側,がわ,,gawa,strona,czegoś,,2887
 2039,WORD_NOUN,,HIRAGANA,,,右側,みぎがわ,,migi gawa,prawa strona,,,
-2040,WORD_NOUN,,HIRAGANA,,,左側,ひだりがわ,,hidari gawa,lewa strona,,,
+2040,WORD_NOUN,,HIRAGANA,,,左側,ひだりがわ,,hidari gawa,lewa strona,,,7659
 2041,WORD_NOUN,,HIRAGANA,,,布団,ふとん,,futon,"futon
 materac
 kołdra","tradycyjne składane łóżko, chowane na dzień",,
@@ -6539,7 +6553,7 @@ nie rozstrzygnięty
 toczący się (proces)",,,
 3592,WORD_NOUN,,HIRAGANA,,,手鏡,てかがみ,,tekagami,ręczne lusterko,,,
 3593,WORD_NOUN,,HIRAGANA,,,鏡台,きょうだい,,kyoudai,toaletka,,,
-3594,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,思い出す,おもいだす,,omoidasu,przypominać,,,
+3594,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,思い出す,おもいだす,,omoidasu,przypominać sobie,,,
 3595,WORD_NOUN,,HIRAGANA,"Genki dodatkowe 2-19
 Genki 2-23",,思い出,おもいで,,omoide,"wspomnienie
 pamięć",,,
@@ -9993,7 +10007,8 @@ pomysł
 myśl",,,
 5418,WORD_NOUN,,HIRAGANA,,,思想,しそう,,shisou,"pogląd
 myśl
-koncepcja",,,
+koncepcja
+idea",,,
 5419,WORD_NOUN,,HIRAGANA,,,想定,そうてい,,soutei,"hipoteza
 teoria",,,
 5420,WORD_ADJECTIVE_NA,,HIRAGANA,,,理想的,りそうてき,,risouteki,idealny,,,
@@ -14080,3 +14095,64 @@ uroczysty
 poważny",sufiks,,7650
 7652,WORD_NOUN,,HIRAGANA,,,盆,ぼん,,bon,"buddyjskie święto zmarłych
 taca",,,
+7653,WORD_NOUN,,HIRAGANA,,,小人,しょうにん,,shounin,dziecko,,,
+7654,WORD_NOUN,,HIRAGANA,,,小用,しょうよう,,shouyou,drobna sprawa,,,
+7655,UNKNOWN,,HIRAGANA,,,午後三時,ごごさんじ,,gogo sanji,trzecia po południu,,,
+7656,WORD_NOUN,,HIRAGANA,,,午睡,ごすい,,gosui,"drzemka
+sjesta",,,
+7657,WORD_NOUN,,HIRAGANA,,,魚肉,ぎょにく,,gyoniku,rybie mięso,,,
+7658,WORD_NOUN,,HIRAGANA,,,魚油,ぎょゆ,,gyoyu,tran,,,
+7659,WORD_NOUN,,HIRAGANA,,,左側,さそく,,sasoku,lewa strona,,,2040
+7660,WORD_NOUN,,HIRAGANA,,,左手,ひだりて,,hidarite,lewa ręka,,,
+7661,WORD_NOUN,,HIRAGANA,,,左利き,ひだりきき,,hidarikiki,leworęczność,,,
+7662,WORD_NOUN,,HIRAGANA,,,左派,さは,,saha,"ugrupowanie lewicowe
+lewica",,,
+7663,WORD_NOUN,,HIRAGANA,,,左党,さとう,,satou,"opozycja
+lewicowa partia",,,
+7664,WORD_VERB_U,,HIRAGANA,,,行く,ゆく,,yuku,iść,,,"242
+243"
+7665,WORD_NOUN,,HIRAGANA,,,行,ぎょう,,gyou,linia,w tekście,,
+7666,WORD_VERB_U,,HIRAGANA,,,行う,おこなう,,okonau,"robić
+czynić
+wykonywać",,,
+7667,WORD_NOUN,,HIRAGANA,,,行為,こうい,,koui,"czyn
+akt",,,
+7668,WORD_NOUN,,HIRAGANA,,,行き先,いきさき,,ikisaki,kierunek,,,7669
+7669,WORD_NOUN,,HIRAGANA,,,行き先,ゆきさき,,yukisaki,kierunek,,,7668
+7670,WORD_NOUN,,HIRAGANA,,,一行,いっこう,,ikkou,grupa,,,
+7671,WORD_NOUN,,HIRAGANA,,,料,りょう,,ryou,"opłata
+materiał
+mierzenie",prefiks,,
+7672,WORD_NOUN,,HIRAGANA,,,和風料理,わふうりょうり,,wafuu ryouri,kuchnia japońska,,,
+7673,WORD_NOUN,,HIRAGANA,,,白色,しろいろ,,shiro iro,biały kolor,,,
+7674,WORD_NOUN,,HIRAGANA,,,白人,はくじん,,hakujin,biały człowiek,,,
+7675,WORD_NOUN,,HIRAGANA,,,白血病,はっけつびょう,,hakketsubyou,białaczka,,,
+7676,WORD_NOUN,,HIRAGANA,,,白銅,はくどう,,hakudou,nikiel,,,
+7677,WORD_NOUN,,HIRAGANA,,,思索家,しさくか,,shisakuka,"myśliciel
+filozof",,,
+7678,WORD_NOUN,,HIRAGANA,,,働き手,はたらきて,,hatarakite,"pracownik
+robotnik",,,
+7679,WORD_NOUN,,HIRAGANA,,,働き者,はたらきもの,,hatarakimono,ciężko pracujący człowiek,,,
+7680,WORD_NOUN,,HIRAGANA,,,働き口,はたらきぐち,,hatarakiguchi,"praca
+pozycja
+stanowisko",,,
+7681,WORD_NOUN,,HIRAGANA,,,南氷洋,なんぴょうよう,,nanpyouyou,Ocean Antarktyczny,,,
+7682,WORD_NOUN,,HIRAGANA,,,南方,なんぽう,,nanpou,kierunek południowy,,,
+7683,WORD_NOUN,,HIRAGANA,,,南西,みなみにし ,,minami nishi,południowy zachód,,,1343
+7684,WORD_NOUN,,HIRAGANA,,,母親,ははおや,,hahaoya,matka,,,
+7685,WORD_NOUN,,HIRAGANA,,,母音,ぼいん,,boin,samogłoska,,,
+7686,WORD_NOUN,,HIRAGANA,,,母国,ぼこく,,bokoku,"kraj ojczysty
+macierz",,,
+7687,WORD_NOUN,,HIRAGANA,,,聖母,せいぼ,,seibo,Matka Boska,,,
+7688,WORD_NOUN,,HIRAGANA,,,穀類,こくるい,,kokurui,zboża,,,
+7689,WORD_NOUN,,HIRAGANA,,,穀物,こくもつ,,kokumotsu,zboże,,,
+7690,WORD_NOUN,,HIRAGANA,,,穀倉,こくそう,,kokusou,elewator zbożowy,,,
+7691,WORD_NOUN,,HIRAGANA,,,脱穀機,だっこくき,,dakkokuki,maszyna do młocenia,,,
+7692,WORD_VERB_U,,HIRAGANA,,,為す,なす,,nasu,robić,,,
+7693,WORD_NOUN,,HIRAGANA,,,為,ため,,tame,"pożyteczny
+dobry
+dla
+w celu",,,
+7694,WORD_NOUN,,HIRAGANA,,,索,さく,,saku,"lina
+sznurek",,,
+7695,WORD_VERB_RU,,HIRAGANA,,,索める,もとめる,,motomeru,poszukiwać,,,
