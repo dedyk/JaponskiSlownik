@@ -111,9 +111,11 @@ Genki kanji 2-14",,英語,えいご,,eigo,język angielski,,,
 70,WORD_GREETING,,HIRAGANA,Genki 1-1,,-,ええ,,ee,tak,mniej oficjalnie,,
 71,WORD_NOUN,,HIRAGANA,"Genki 1-1
 Genki kanji 1-6",,学生,がくせい,,gakusei,student,,,
-72,UNKNOWN,,HIRAGANA,Genki 1-1,,語,ご,,go,... język,,,
+72,WORD_NOUN,,HIRAGANA,Genki 1-1,,語,ご,,go,"język
+słowo",,,
 73,WORD_NOUN,,HIRAGANA,"Genki 1-1
-Genki kanji 1-7",,高校,こうこう,,koukou,liceum,,,
+Genki kanji 1-7",,高校,こうこう,,koukou,"liceum
+szkoła średnia",,,
 74,UNKNOWN,,HIRAGANA,"Genki 1-1
 Genki kanji 1-9",,午後,ごご,,gogo,"po południu
 pm",czas,,
@@ -179,7 +181,8 @@ Genki kanji 2-21",,経済,けいざい,,keizai,ekonomia,,,
 Genki 1-12",,政治,せいじ,,seiji,polityka,,,
 107,WORD_NOUN,,KATAKANA,Genki 1-1,,-,ビジネス,,bijinesu,biznes,,,
 108,WORD_NOUN,,HIRAGANA,"Genki 1-1
-Genki kanji 1-7",,文学,ぶんがく,,bungaku,literatura,,,
+Genki kanji 1-7",,文学,ぶんがく,,bungaku,"literatura
+nauki humanistyczne",,,
 109,WORD_NOUN,,HIRAGANA,Genki 1-1,,歴史,れきし,,rekishi,historia,,,
 110,WORD_NOUN,,HIRAGANA,"Genki 1-1
 Genki 1-8
@@ -2487,7 +2490,8 @@ Genki kanji 1-6",,半分,はんぶん,,hanbun,połowa,,,
 1314,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,川,かわ,,kawa,"rzeka
 strumyk",,,
 1315,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,小川さん,おがわさん,,Ogawa san,Pan Ogawa,,,
-1316,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,天国,てんごく,,tengoku,niebo,,,
+1316,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,天国,てんごく,,tengoku,"niebo
+raj",,,
 1317,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,市立大学,しりつだいがく,,shiritsudaigaku,prywatny uniwersytet,,,
 1318,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,田中さん,たなかさん,,Tanaka san,Pan Tanaka,,,
 1319,WORD_NOUN,,HIRAGANA,Genki kanji 1-5,,山田さん,やまださん,,Yamada san,Pan Yamada,,,
@@ -2592,7 +2596,8 @@ Genki dodatkowe 2-21",,食事,しょくじ,,shokuji,posiłek,,,
 1377,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,休日,きゅうじつ,,kyuujitsu,"wakacje
 dzień wolny od pracy
 dzień wolny od zajęć szkolnych",,,
-1378,UNKNOWN,,HIRAGANA,Genki kanji 1-8,,言語学,げんごがく,,gengogaku,lingwistyka,,,
+1378,UNKNOWN,,HIRAGANA,Genki kanji 1-8,,言語学,げんごがく,,gengogaku,"lingwistyka
+językoznawstwo",,,
 1379,UNKNOWN,,HIRAGANA,Genki kanji 1-8,,読書,どくしょ,,dokusho,"czytać książki
 czytanie",,,
 1380,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-8,,不思議,ふしぎ,,fushigi,"tajemniczy
@@ -2990,7 +2995,10 @@ wykładowca",,,
 1589,WORD_NOUN,,HIRAGANA,,,自殺,じさつ,,jisatsu,samobójstwo,,,
 1590,WORD_ADJECTIVE_I,,HIRAGANA,,,美しい,うつくしい,,utsukushii,"piękny
 śliczny",,,
-1591,WORD_NOUN,,HIRAGANA,,,文,ぶん,,bun,zdanie,gramatyka,,
+1591,WORD_NOUN,,HIRAGANA,,,文,ぶん,,bun,"zdanie
+tekst literacki
+wypracowanie",gramatyka,,"7714
+7715"
 1592,WORD_NOUN,,KATAKANA,,,-,カタツムリ,,katatsumuri,ślimak,,,
 1593,WORD_NOUN,,HIRAGANA,,,血液,けつえき,,ketsueki,krew,,,
 1594,WORD_NOUN,,HIRAGANA,,,血液型,けつえきがた,,ketsueki gata,grupa krwi,,,
@@ -4032,7 +4040,8 @@ eksperymentować",,,
 2207,WORD_VERB_RU,,HIRAGANA,,,妊娠している,にんしんしている,,ninshin shite iru,być w ciąży,,,
 2208,WORD_NOUN,,HIRAGANA,Genki 2-17,,男,おとこ,,otoko,mężczyzna,,,
 2209,WORD_NOUN,,HIRAGANA,Genki 2-17,,お湯,おゆ,,oyu,gorąca woda,,,
-2210,WORD_NOUN,,HIRAGANA,Genki 2-17,,女,おんな,,onna,kobieta,,,
+2210,WORD_NOUN,,HIRAGANA,Genki 2-17,,女,おんな,,onna,"kobieta
+dziewczyna",,,
 2211,WORD_NOUN,,KATAKANA,Genki 2-17,,-,コンタクト,,kontakuto,soczewka kontaktowa,,,
 2212,WORD_NOUN,,HIRAGANA,Genki 2-17,,最低,さいてい,,saitei,"najniższy
 najgorszy
@@ -6670,8 +6679,8 @@ deklaracja",,,
 3658,WORD_NOUN,,HIRAGANA,,,申命記,しんめいき,,shinmeiki,Księga Powtórzonego Prawa,,,
 3659,WORD_NOUN,,HIRAGANA,,,申し訳,もうしわけ,,moushiwake,"wytłumaczenie
 przeprosiny",,,
-3660,WORD_ADJECTIVE_NA,,HIRAGANA,,,当然,とうぜん,,touzen,"naturalny
-oczywisty",,,
+3660,WORD_ADJECTIVE_NA,,HIRAGANA,,,当然,とうぜん,,touzen,"naturalnie
+oczywiście",,,
 3661,WORD_NOUN,,HIRAGANA,,,必然,ひつぜん,,hitsuzen,"konieczny
 konieczność
 niezbędny",,,
@@ -6839,7 +6848,8 @@ przez cały czas",,,
 3755,WORD_NOUN,,HIRAGANA,,,卒業論文,そつぎょうろんぶん,,sotsugyou ronbun,praca dyplomowa,,,
 3756,WORD_NOUN,,HIRAGANA,,,論争,ろんそう,,ronsou,dyskusja,,,
 3757,WORD_NOUN,,HIRAGANA,,,論文,ろんぶん,,ronbun,"rozprawa
-praca",,,
+praca (np. magisterska)
+traktat",,,
 3758,WORD_NOUN,,HIRAGANA,,,論理,ろんり,,ronri,logika,,,
 3759,WORD_NOUN,,HIRAGANA,,,理論,りろん,,riron,teoria,,,
 3760,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,弟子,でし,,deshi,"uczeń
@@ -10089,7 +10099,8 @@ słyszeć",,,
 5468,UNKNOWN,,HIRAGANA,,,属,ぞく,,zoku,należeć do,,,
 5469,WORD_NOUN,,HIRAGANA,,,属性,ぞくせい,,zokusei,"cecha
 atrybut",,,
-5470,WORD_NOUN,,HIRAGANA,,,所属,しょぞく,,shozoku,przynależność,,,
+5470,WORD_NOUN,,HIRAGANA,,,所属,しょぞく,,shozoku,"przynależność
+pozycja",,,
 5471,WORD_NOUN,,HIRAGANA,,,従属,じゅうぞく,,juuzoku,"zależność
 subordynacja",,,
 5472,WORD_NOUN,,HIRAGANA,,,金属,きんぞく,,kinzoku,metal,,,
@@ -13222,7 +13233,9 @@ senior",,,
 7168,WORD_NOUN,,HIRAGANA,,,長靴,ながぐつ,,nagagutsu,"kalosze
 kozaki",,,
 7169,WORD_NOUN,,HIRAGANA,,,長所,ちょうしょ,,chousho,"zaleta
-mocny punkt",,,
+przewaga
+mocny punkt
+silny punkt",,,
 7170,WORD_NOUN,,HIRAGANA,,,音声,おんせい,,onsei,głos,,,
 7171,WORD_NOUN,,HIRAGANA,,,音響,おんきょう,,onkyou,dźwięk,,,
 7172,WORD_NOUN,,HIRAGANA,,,音節,おんせつ,,onsetsu,sylaba,,,
@@ -14156,3 +14169,53 @@ w celu",,,
 7694,WORD_NOUN,,HIRAGANA,,,索,さく,,saku,"lina
 sznurek",,,
 7695,WORD_VERB_RU,,HIRAGANA,,,索める,もとめる,,motomeru,poszukiwać,,,
+7696,WORD_NOUN,,HIRAGANA,,,高,たか,,taka,ilość,sufiks,,
+7697,WORD_VERB_U,,HIRAGANA,,,高まる,たかまる,,takamaru,wznosić się,,,
+7698,WORD_VERB_RU,,HIRAGANA,,,高める,たかめる,,takameru,podwyższać,,,
+7699,WORD_NOUN,,HIRAGANA,,,高山,こうざん,,kouzan,wysokie góry,,,
+7700,WORD_ADJECTIVE_I,,HIRAGANA,,,名高い,ながかい,,nagakai,sławny,,,
+7701,WORD_NOUN,,HIRAGANA,,,高圧,こうあつ,,kouatsu,"wysokie napięcie
+wysokie ciśnienie",,,
+7702,WORD_NOUN,,HIRAGANA,,,所有,しょゆう,,shoyuu,posiadanie,,,
+7703,WORD_NOUN,,HIRAGANA,,,医,い,,i,"medycyna
+leczenie",,,
+7704,WORD_NOUN,,HIRAGANA,,,医務室,いむしつ,,imushitsu,"infirmeria
+gabinet przyjęć
+izba chorych",,,
+7705,WORD_NOUN,,HIRAGANA,,,医療,いりょう,,iryou,opieka medyczna,,,
+7706,WORD_NOUN,,HIRAGANA,,,医薬品,いやくひん,,iyakuhin,artykuł medyczny,,,
+7707,WORD_NOUN,,HIRAGANA,,,天,てん,,ten,"niebo
+nieboskłon
+firmament niebieski",,,7708
+7708,WORD_NOUN,,HIRAGANA,,,天,あめ,,ame,niebo,,,7707
+7709,WORD_NOUN,,HIRAGANA,,,天主,てんしゅ,,tenshu,"Pan Niebios
+Bóg",,,
+7710,WORD_EXPRESSION,,HIRAGANA,,,天皇陛下,てんのうへいか,,tennou heika,Jego Cesarska Mość,,,
+7711,WORD_NOUN,,HIRAGANA,,,女児,じょじ,,joji,niemowlę dziewczynka,,,
+7712,WORD_NOUN,,HIRAGANA,,,女神,めがみ,,megami,bogini,,,7713
+7713,WORD_NOUN,,HIRAGANA,,,女神,じょしん,,joshin,bogini,,,7712
+7714,WORD_NOUN,,HIRAGANA,,,文,あや,,aya,"wzór
+plan
+metafora",,,"1591
+7715"
+7715,WORD_NOUN,,HIRAGANA,,,文,ふみ,,fumi,"list
+notatka",,,"1591
+7714"
+7716,WORD_NOUN,,HIRAGANA,,,文書,ぶんしょ,,bunsho,zdanie,,,
+7717,WORD_NOUN,,HIRAGANA,,,文明,ぶんめい,,bunmei,cywilizacja,,,
+7718,UNKNOWN,,HIRAGANA,,,本当,ほんとう,,hontou,prawda,,,
+7719,WORD_ADJECTIVE_NA,,HIRAGANA,,,当たり前,あたりまえ,,atarimae,"odpowiedni
+normalny
+oczywisty",,,
+7720,WORD_VERB_U,,HIRAGANA,,,語る,かたる,,kataru,mówić,,,
+7721,WORD_VERB_U,,HIRAGANA,,,語らう,かたらう,,katarau,rozmawiać,,,
+7722,WORD_NOUN,,HIRAGANA_KATAKANA,,,ポーランド語,ポーランドご,,poorando go,język polski,,,
+7723,WORD_NOUN,,HIRAGANA,,,語り手,かたりて,,katarite,narrator,,,
+7724,WORD_NOUN,,HIRAGANA,,,蚕,かいこ,,kaiko,jedwabnik,,,
+7725,WORD_NOUN,,HIRAGANA,,,蚕糸,さんし,,sanshi,nitka jedwabna,,,
+7726,WORD_NOUN,,HIRAGANA,,,養蚕,ようさん,,yousan,hodowla jedwabników,,,
+7727,WORD_NOUN,,HIRAGANA,,,蚕食,さんしょく,,sanshoku,"wkroczenie
+wtargnięcie",,,
+7728,WORD_EXPRESSION,,HIRAGANA,,,陛下,へいか,,heika,"Jego Wysokość
+Jej Wysokość",,,
+7729,WORD_EXPRESSION,,HIRAGANA,,,国王陛下,こくおうへいか,,kokuou heika,Jego Królewska Mość,,,
