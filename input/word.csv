@@ -675,12 +675,15 @@ Genki kanji 1-6",,右,みぎ,,migi,prawo,kierunek,,
 Genki kanji 1-6",,左,ひだり,,hidari,lewo,kierunek,,
 380,WORD_LOCATION,,HIRAGANA,"Genki 1-4
 Genki kanji 1-9
-Genki 2-17",,前,まえ,,mae,przed,,,
+Genki 2-17",,前,まえ,,mae,"przed
+przód
+poprzednio",,,7748
 381,WORD_LOCATION,,HIRAGANA,"Genki 1-4
 Genki kanji 1-9",,後ろ,うしろ,,ushiro,"za
 z tyłu",,,
 382,WORD_LOCATION,,HIRAGANA,"Genki 1-4
-Genki kanji 1-4",,中,なか,,naka,środek,,,"1223
+Genki kanji 1-4",,中,なか,,naka,"wewnątrz
+środek",,,"1223
 1224"
 383,WORD_LOCATION,,HIRAGANA,"Genki 1-4
 Genki kanji 1-4",,上,うえ,,ue,"na
@@ -1287,8 +1290,11 @@ odnośnie ...",czegoś,,
 670,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-8,,-,いつか,,itsuka,któregoś dnia,czas,,"302
 1017"
 671,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 1-8,,疲れている,つかれている,,tsukarete iru,być zmęczony,,,
-672,UNKNOWN,,HIRAGANA,"Genki dodatkowe 1-8
-Genki 2-18",,-,まず,,mazu,pierwszy,,,
+672,WORD_ADVERB,,HIRAGANA,"Genki dodatkowe 1-8
+Genki 2-18",,先ず,まず,,mazu,"najpierw
+pierwszy
+przed
+wcześniej",,,
 673,WORD_VERB_RU,,HIRAGANA,"Genki dodatkowe 1-8
 Genki kanji 2-23",,答える,こたえる,,kotaeru,"odpowiadać
 reagować",,,
@@ -1320,7 +1326,8 @@ Genki kanji 2-18",,試験,しけん,,shiken,egzamin,,,
 687,WORD_NOUN,,HIRAGANA,"Genki 1-9
 Genki kanji 1-8",,新幹線,しんかんせん,,shinkansen,shinkansen,szybka kolej,,
 688,WORD_NOUN,,KATAKANA,Genki 1-9,,-,スキー,,sukii,narty,,,
-689,WORD_NOUN,,HIRAGANA,Genki 1-9,,先月,せんげつ,,sengetsu,zeszły miesiąc,,,
+689,WORD_NOUN,,HIRAGANA,Genki 1-9,,先月,せんげつ,,sengetsu,"zeszły miesiąc
+ubiegły miesiąc",,,
 690,WORD_NOUN,,HIRAGANA,Genki 1-9,,単語,たんご,,tango,słownictwo,,,
 691,WORD_NOUN,,KATAKANA,Genki 1-9,,-,ピアノ,,piano,pianino,,,
 692,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-9,,寂しい,さびしい,,sabishii,samotny,,,4152
@@ -2646,7 +2653,8 @@ niewystarczająco
 rzadko",,,
 1399,WORD_EXPRESSION,,HIRAGANA,"Genki kanji 1-9
 Genki 2-20",,少々,しょうしょう,,shoushou,trochę,grzecznie,,
-1400,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,中古,ちゅうこ,,chuuko,używany,,,
+1400,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,中古,ちゅうこ,,chuuko,"używany
+z drugiej ręki",,,
 1401,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,知人,ちじん,,chijin,znajomy,,,
 1402,WORD_EXPRESSION,,HIRAGANA,Genki kanji 1-9,,来ます,きます,,kimasu,przybyć,,,
 1403,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,来ない,こない,,konai,nie przybyć,,,
@@ -3603,10 +3611,12 @@ Genki 2-17",,足りる,たりる,,tariru,wystarczać,,,
 Genki kanji 2-19",,水不足,みずぶそく,,mizu bu soku,brak wody,,,
 1980,WORD_VERB_U,,HIRAGANA,"Genki kanji 2-15
 Genki dodatkowe 2-15",,通る,とおる,,tooru,"przejechać
-przechodzić",,,
+przechodzić
+mijać",,,
 1981,WORD_VERB_U,,HIRAGANA,"Genki kanji 2-15
 Genki dodatkowe 2-21",,通う,かよう,,kayou,"uczęszczać
-chodzić","do szkoły, na kurs i etc",,
+chodzić
+dojeżdżać","do szkoły, na kurs i etc",,
 1982,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,通学,つうがく,,tsuugaku,"uczęszczać do szkoły
 iść do szkoły",,,
 1983,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,通勤,つうきん,,tsuukin,"uczęszczać do szkoły
@@ -3707,7 +3717,7 @@ kucharz",,,
 2036,WORD_NOUN,,HIRAGANA,,,烏賊,いか,,ika,kalmar,,,
 2037,WORD_NOUN,,HIRAGANA,,,蛸,たこ,,tako,ośmiornica,,,
 2038,WORD_NOUN,,HIRAGANA,,,側,がわ,,gawa,strona,czegoś,,2887
-2039,WORD_NOUN,,HIRAGANA,,,右側,みぎがわ,,migi gawa,prawa strona,,,
+2039,WORD_NOUN,,HIRAGANA,,,右側,みぎがわ,,migi gawa,prawa strona,,,7735
 2040,WORD_NOUN,,HIRAGANA,,,左側,ひだりがわ,,hidari gawa,lewa strona,,,7659
 2041,WORD_NOUN,,HIRAGANA,,,布団,ふとん,,futon,"futon
 materac
@@ -12798,6 +12808,8 @@ spóźniać się
 zostawać z tyłu",,,
 6911,UNKNOWN,,HIRAGANA,,,明後日,みょうごにち,,myougonichi,pojutrze,,,343
 6912,WORD_NOUN,,HIRAGANA,,,前後,ぜんご,,zengo,"w przybliżeniu
+mniej więcej
+około
 przód i tył
 przed i po
 kontekst",,,
@@ -14219,3 +14231,57 @@ wtargnięcie",,,
 7728,WORD_EXPRESSION,,HIRAGANA,,,陛下,へいか,,heika,"Jego Wysokość
 Jej Wysokość",,,
 7729,WORD_EXPRESSION,,HIRAGANA,,,国王陛下,こくおうへいか,,kokuou heika,Jego Królewska Mość,,,
+7730,WORD_NOUN,,HIRAGANA,,,雪玉,ゆきだま,,yuki dama,kulka śnieżna,,,
+7731,WORD_NOUN,,HIRAGANA,,,雪降り,ゆきふり,,yuki furi,opad śniegu,,,
+7732,WORD_NOUN,,HIRAGANA,,,吹雪,ふぶき,,fubuki,zawieja śnieżna,,,
+7733,WORD_NOUN,,HIRAGANA,,,雪渓,せっけい,,sekkei,dolina z wiecznym śniegiem,,,
+7734,WORD_NOUN,,HIRAGANA,,,右腕,みぎうで,,migi ude,prawa ręka,,,
+7735,WORD_NOUN,,HIRAGANA,,,右側,うそく,,usoku,prawa strona,,,2039
+7736,WORD_NOUN,,HIRAGANA,,,右派,うは,,uha,"ugrupowanie prawicowe
+prawica",,,
+7737,WORD_NOUN,,HIRAGANA,,,右党,うとう,,utou,partia prawicowa,,,
+7738,WORD_NOUN,,HIRAGANA,,,右翼,うよく,,uyoku,"prawe skrzydło
+prawica",,,
+7739,WORD_NOUN,,HIRAGANA,,,絹,きぬ,,kinu,jedwab,,,
+7740,WORD_NOUN,,HIRAGANA,,,絹糸,きぬいと,,kinuito,jedwabna nitka,,,7741
+7741,WORD_NOUN,,HIRAGANA,,,絹糸,けんし,,kenshi,jedwabna nitka,,,7740
+7742,WORD_NOUN,,HIRAGANA,,,絹織物,きぬおりもの,,kinu orimono,jedwabny materiał,,,
+7743,WORD_NOUN,,HIRAGANA,,,絹布,けんぷ,,kenpu,jedwabny materiał,,,
+7744,WORD_NOUN,,HIRAGANA,,,人絹,じんけん,,jinken,sztuczny jedwab,,,
+7745,WORD_NOUN,,HIRAGANA,,,中立主義,ちゅうりつしゅぎ,,chuuritsu shugi,neutralność,,,
+7746,WORD_NOUN,,HIRAGANA,,,中世紀,ちゅうせいき,,chuuseiki,średniowiecze,,,
+7747,WORD_NOUN,,HIRAGANA,,,会議中,かいぎちゅう,,kaigi chuu,podczas konferencji,,,
+7748,UNKNOWN,,HIRAGANA,,,前,ぜん,,zen,przedtem,prefiks,,380
+7749,UNKNOWN,,HIRAGANA,,,前回,ぜんかい,,zenkai,"poprzedni raz
+ostatnim razem",,,
+7750,WORD_NOUN,,HIRAGANA,,,前提,ぜんてい,,zentei,"założenie
+pewnik",,,
+7751,WORD_NOUN,,HIRAGANA,,,前書き,まえがき,,maegaki,"wstęp
+słowo wstępne",,,
+7752,WORD_NOUN,,HIRAGANA,,,通,つう,,tsuu,"przechodzić
+ekspert",,,
+7753,UNKNOWN,,HIRAGANA,,,通ずる,つうずる,,tsuuzuru,"przechodzić przez
+rozumieć",,,
+7754,WORD_VERB_RU,,HIRAGANA,,,通じる,つうじる,,tsuujiru,"przechodzić przez
+rozumieć",,,
+7755,WORD_NOUN,,HIRAGANA,,,通信,つうしん,,tsuushin,"komunikacja
+przekaz
+transmisja
+sygnał",,,
+7756,WORD_NOUN,,HIRAGANA,,,通用,つうよう,,tsuuyou,"powszechny użytek
+obieg
+waluta",,,
+7757,UNKNOWN,,HIRAGANA,,,先,せん,,sen,"przyszłość
+pierwszeństwo
+poprzedzanie",,,7758
+7758,WORD_NOUN,,HIRAGANA,,,先,さき,,saki,"najpierw
+pierwszy
+przed
+wcześniej",,,7757
+7759,UNKNOWN,,HIRAGANA,,,先日,せんじつ,,senjitsu,poprzedni dzień,,,
+7760,WORD_NOUN,,HIRAGANA,,,先史学,せんしがく,,senshigaku,prehistoria,,,
+7761,WORD_NOUN,,HIRAGANA,,,学,がく,,gaku,"nauka
+studia",,,
+7762,WORD_NOUN,,HIRAGANA,,,兄弟,きょうだい,,kyoudai,rodzeństwo,,,
+7763,WORD_NOUN,,HIRAGANA,,,義兄,ぎけい,,gikei,starszy szwagier,,,
+7764,WORD_NOUN,,HIRAGANA,,,実兄,じっけい,,jikkei,rodzony brat,,,
