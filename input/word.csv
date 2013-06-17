@@ -487,7 +487,8 @@ od czasu do czasu",,,
 Genki 2-14",,-,よく,,yoku,"często
 wiele",,,"1090
 3265
-7768"
+7768
+7869"
 263,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,でも,,demo,ale,"używane jest po kropce, w nowym zdaniu",,
 264,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,どうですか,,dou desu ka,co ty na to,,,
 265,WORD_NOUN,,HIRAGANA,Genki 1-3,,週,しゅう,,shuu,tydzień,,,
@@ -792,7 +793,9 @@ cichy
 spokój
 bierność",,,
 424,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki 1-5
-Genki kanji 1-11",,好き,すき,,suki,lubić,,,
+Genki kanji 1-11",,好き,すき,,suki,"lubić
+ulubiony
+ukochany",,,
 425,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,大嫌い,だいきらい,,daikirai,nienawidzić,,,
 426,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,大好き,だいすき,,daisuki,"kochać
 bardzo lubić",,,
@@ -2135,7 +2138,8 @@ w sam raz",,,
 1090,WORD_EXPRESSION,,HIRAGANA,"Genki 1-3
 Genki 2-14",,-,よく,,yoku,dobrze,,,"262
 3265
-7768"
+7768
+7869"
 1091,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,個,こ,,ko,[liczenie małych przedmiotów],~,,
 1092,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,冊,さつ,,satsu,[liczenie wolumenów],"~, przedmioty nie mające określonego kształtu",,
 1093,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,台,だい,,dai,[liczenie urządzeń],~,,
@@ -2710,8 +2714,9 @@ Genki kanji 1-10",を,持ってくる,もってくる,o,motte kuru,przynosić,,,
 Genki 2-17",,紙,かみ,,kami,papier,,,
 1425,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,和紙,わし,,washi,japoński papier,,,
 1426,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,好意,こうい,,koui,dobra wola,,,
-1427,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,好み,このみ,,konomi,"upodobanie
-hobby",,,
+1427,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,好み,このみ,,konomi,"upodobanie
+hobby
+smak",,,
 1428,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,近く,ちかく,,chikaku,pobliski,,,
 1429,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,近所,きんじょ,,kinjo,"bliska okolica
 sąsiedztwo
@@ -4720,7 +4725,7 @@ pułap
 szczyt (cen)",,,
 2571,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-17,,-,のための,,no tame no,dla,~ ... X,,
 2572,UNKNOWN,,HIRAGANA_KATAKANA,Genki dodatkowe 2-17,,大ヒット,だいひっと,,dai hitto,wielki hit,"np. film, muzyka i etc",,
-2573,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-17,,-,しかし,,shikashi,"jednak
+2573,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-17,,併し,しかし,,shikashi,"jednak
 jednakże
 ale
 lecz",,,
@@ -14533,3 +14538,57 @@ cypel
 punkt",,,
 7867,WORD_NOUN,,HIRAGANA,,,俊,しゅん,,shun,"doskonałość
 genialność",,,
+7868,WORD_VERB_U,,HIRAGANA,,,噴く,ふく,,fuku,"wydzielać
+wydalać
+chlustać
+spłukiwać",,,
+7869,UNKNOWN,,HIRAGANA,,,翌,よく,,yoku,następny,,,"262
+1090"
+7870,UNKNOWN,,HIRAGANA,,,即,そく,,soku,"natychmiast
+od razu
+obejmować (urząd)
+wstępować (na tron)
+czyli
+innymi słowami",,,
+7871,WORD_ADVERB,,HIRAGANA,,,即ち,すなわち,,sunawachi,"czyli
+innymi słowami
+od razu",,,
+7872,WORD_NOUN,,HIRAGANA,,,茎,くき,,kuki,"łodyga
+gałąź",,,
+7873,WORD_VERB_U,,HIRAGANA,,,好む,このむ,,konomu,"lubić
+mieć upodobanie w",,,
+7874,WORD_VERB_U,,HIRAGANA,,,好く,すく,,suku,"lubić
+mieć upodobanie w",,,
+7875,WORD_VERB_U,,HIRAGANA,,,摘む,つむ,,tsumu,"wyrywać
+wyciągać
+zbierać",,,
+7876,WORD_NOUN,,HIRAGANA,,,胆,きも,,kimo,wątroba,,,
+7877,WORD_VERB_U,,HIRAGANA,,,躍る,おどる,,odoru,"podskakiwać
+skakać",,,
+7878,WORD_NOUN,,HIRAGANA,,,唇,くちびる,,kuchibiru,"usta
+wargi",,,
+7879,WORD_VERB_RU,,HIRAGANA,,,併せる,あわせる,,awaseru,"zbierać
+gromadzić",,,
+7880,WORD_EXPRESSION,,HIRAGANA,,,併せて,あわせて,,awasete,"razem
+grupowo
+ponadto
+dodatkowo
+w tym samym czasie",,,
+7881,WORD_VERB_RU,,HIRAGANA,,,控える,ひかえる,,hikaeru,"zapisywać
+notować
+powstrzymywać się
+czekać",,,
+7882,WORD_NOUN,,HIRAGANA,,,控え,ひかえ,,hikae,"zapis
+notatka
+czekanie
+powstrzymywanie się",,,
+7883,WORD_VERB_U,,HIRAGANA,,,疎む,うとむ,,utomu,"zaniedbywać
+unikać
+odstręczać",,,
+7884,WORD_ADJECTIVE_I,,HIRAGANA,,,疎い,うとい,,utoi,"mało znany
+odległy
+wyobcowany",,,
+7885,WORD_ADJECTIVE_NA,,HIRAGANA,,,疎か,おろそか,,orosoka,"niedbały
+nieuważny",,,
+7886,WORD_NOUN,,HIRAGANA,,,泡,あわ,,awa,"piana
+bańka (mydlana, powietrzna)",,,
