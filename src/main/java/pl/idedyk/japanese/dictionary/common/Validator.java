@@ -10,20 +10,20 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.dto.EDictEntry;
+import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
-import pl.idedyk.japanese.dictionary.tools.EdictReader;
+import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper.KanaWord;
 
 public class Validator {
 
 	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, List<KanaEntry> hiraganaEntries,
-			List<KanaEntry> katakanaEntries, TreeMap<String, EDictEntry> jmedict) throws JapaneseDictionaryException {
+			List<KanaEntry> katakanaEntries, TreeMap<String, JMEDictEntry> jmedict) throws JapaneseDictionaryException {
 		
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
 		
@@ -167,25 +167,25 @@ public class Validator {
 			
 			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
 			
-			EDictEntry foundEdict = null;
+			JMEDictEntry foundJMEDict = null;
 			
 			for (String currentKana : kanaList) {
 				
-				foundEdict = jmedict.get(EdictReader.getMapKey(kanji, currentKana));
+				foundJMEDict = jmedict.get(JMEDictReader.getMapKey(kanji, currentKana));
 				
-				if (foundEdict != null) {
+				if (foundJMEDict != null) {
 					break;
 				}
 			}
 			
-			if (foundEdict != null) {
+			if (foundJMEDict != null) {
 				
 				DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
 				
 				if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U || dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU ||
 						dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
 										
-					DictionaryEntryType dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(mapEdictTypeToDictionaryEntryType, foundEdict.getPos());
+					DictionaryEntryType dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(mapEdictTypeToDictionaryEntryType, foundJMEDict.getPos());
 					
 					if (dictionaryEntryType != dictionaryEntryTypeFromEdictPos) {
 						System.out.println("Dictionary entry type edict different: " + currentPolishJapaneseEntry);

@@ -1,13 +1,9 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.common.Helper;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
+import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 
 public class Test {
 
@@ -85,6 +81,7 @@ public class Test {
 		System.out.println(currentKanaAsRomaji);
 		*/
 		
+		/*
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 		
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true, false);
@@ -126,8 +123,16 @@ public class Test {
 		}
 		
 		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true);
+		*/
+		
+		TreeMap<String, JMEDictEntry> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
+		
+		System.out.println(jmedict.get(JMEDictReader.getMapKey("食べる", "たべる")));
+		System.out.println(jmedict.get(JMEDictReader.getMapKey("集中", "しゅうちゅう")));
+		System.out.println(jmedict.get(JMEDictReader.getMapKey(null, "ぺらぺら")));
 	}
 	
+	/*
 	private static Set<Integer> generateKnownDuplicatedIdForKanji(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, String kanji) {
 		
 		Set<Integer> result = new TreeSet<Integer>();
@@ -173,4 +178,5 @@ public class Test {
 			}
 		}
 	}
+	*/
 }
