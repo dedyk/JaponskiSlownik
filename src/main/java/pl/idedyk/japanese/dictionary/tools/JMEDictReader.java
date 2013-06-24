@@ -1,16 +1,14 @@
 package pl.idedyk.japanese.dictionary.tools;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Stack;
 import java.util.TreeMap;
 
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-
-import org.xml.sax.Attributes;
-import org.xml.sax.SAXException;
-import org.xml.sax.helpers.DefaultHandler;
+import org.dom4j.Element;
+import org.dom4j.ElementHandler;
+import org.dom4j.ElementPath;
+import org.dom4j.io.SAXReader;
 
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 
@@ -22,16 +20,87 @@ public class JMEDictReader {
 		
 		System.setProperty("entityExpansionLimit", "1000000");
 		
-		SAXParserFactory factory = SAXParserFactory.newInstance();
-		SAXParser saxParser = factory.newSAXParser();
-
-		final Stack<String> stack = new Stack<String>();
-		
 		final EntityMapper entityMapper = new EntityMapper();
 
+		SAXReader reader = new SAXReader();
+
+		reader.addHandler("/JMdict/entry", new ElementHandler() {
+			
+			public void onStart(ElementPath path) {
+
+			}
+			
+			public void onEnd(ElementPath path) {
+				
+				JMEDictEntry jmeDictEntry = new JMEDictEntry();
+				
+				Element row = path.getCurrent();
+				
+				// String entSeq = row.selectSingleNode("ent_seq").getText();
+				
+				// kanji
+				List<?> kEleList = row.selectNodes("k_ele");
+				
+				for (Object kEleListObject : kEleList) {
+					
+					Element kEle = (Element)kEleListObject;
+					
+					List<?> kEleKebList = kEle.selectNodes("keb");
+					
+					for (Object object : kEleKebList) {
+						
+						Element element = (Element)object;
+						
+						jmeDictEntry.getKanji().add(element.getText());
+					}					
+				}
+				
+				// kana
+				List<?> rEleList = row.selectNodes("r_ele");
+				
+				for (Object rEleListObject : rEleList) {
+					
+					Element rEle = (Element)rEleListObject;
+					
+					List<?> rEleRebList = rEle.selectNodes("reb");
+					
+					for (Object object : rEleRebList) {
+						
+						Element element = (Element)object;
+						
+						jmeDictEntry.getKana().add(element.getText());
+					}					
+				}
+				
+				// pos
+				List<?> senseList = row.selectNodes("sense");
+				
+				for (Object senseListObject : senseList) {
+					
+					Element sense = (Element)senseListObject;
+					
+					List<?> sensePosList = sense.selectNodes("pos");
+					
+					for (Object object : sensePosList) {
+						
+						Element element = (Element)object;
+						
+						jmeDictEntry.getPos().add(entityMapper.getEntity(element.getText()));
+					}					
+				}
+				
+				addEdictEntry(treeMap, jmeDictEntry);
+				
+				row.detach();
+			}
+		});
+
+		reader.read(new File(fileName));
+
+		/*
 		DefaultHandler handler = new DefaultHandler() {
 			
-			private JMEDictEntry jmeDictEntry = null;
+			private  = null;
 
 			@Override
 			public void characters(char[] ch, int start, int length) throws SAXException {
@@ -42,7 +111,7 @@ public class JMEDictReader {
 					
 					String kanji = new String(ch, start, length);
 					
-					jmeDictEntry.getKanji().add(kanji);
+					kanji);
 				}
 				
 				if (currentStack.equals("JMdict entry r_ele reb") == true) {
@@ -68,7 +137,7 @@ public class JMEDictReader {
 				if (currentStack.equals("JMdict entry") == true) {
 					// System.out.println(edictEntry.getKanji() + " - " + edictEntry.getKana() + " - " + edictEntry.getPos());
 					
-					addEdictEntry(treeMap, jmeDictEntry);
+					
 				}
 				
 				stack.pop();
@@ -107,6 +176,7 @@ public class JMEDictReader {
 		};
 
 		saxParser.parse(fileName, handler);	
+		*/
 				
 		return treeMap;
 	}

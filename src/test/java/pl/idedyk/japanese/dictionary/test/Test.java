@@ -1,13 +1,6 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.io.File;
 import java.util.TreeMap;
-
-import org.dom4j.Document;
-import org.dom4j.Element;
-import org.dom4j.ElementHandler;
-import org.dom4j.ElementPath;
-import org.dom4j.io.SAXReader;
 
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
@@ -132,14 +125,16 @@ public class Test {
 		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true);
 		 */
 
-		/*
+		
 		TreeMap<String, JMEDictEntry> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
 
 		System.out.println(jmedict.get(JMEDictReader.getMapKey("食べる", "たべる")));
 		System.out.println(jmedict.get(JMEDictReader.getMapKey("集中", "しゅうちゅう")));
 		System.out.println(jmedict.get(JMEDictReader.getMapKey(null, "ぺらぺら")));
-		 */
-
+		System.out.println(jmedict.get(JMEDictReader.getMapKey("開ける","あける")));
+		
+		
+		/*
 		SAXReader reader = new SAXReader();
 
 		reader.addHandler("/JMdict/entry", new ElementHandler() {
@@ -163,7 +158,7 @@ public class Test {
 		});
 
 		reader.read(new File("../JaponskiSlownik_dodatki/JMdict_e"));
-
+		*/
 		/*
 		List<?> selectNodes = document.selectNodes("/JMdict/entry/k_ele/keb");
 
