@@ -75,7 +75,13 @@ public class JMEDictReader {
 				// pos
 				List<?> senseList = row.selectNodes("sense");
 				
+				boolean wasPos = false;
+				
 				for (Object senseListObject : senseList) {
+				
+					if (wasPos == true) {
+						break;
+					}
 					
 					Element sense = (Element)senseListObject;
 					
@@ -83,10 +89,12 @@ public class JMEDictReader {
 					
 					for (Object object : sensePosList) {
 						
+						wasPos = true;
+						
 						Element element = (Element)object;
 						
 						jmeDictEntry.getPos().add(entityMapper.getEntity(element.getText()));
-					}					
+					}
 				}
 				
 				addEdictEntry(treeMap, jmeDictEntry);
@@ -96,88 +104,7 @@ public class JMEDictReader {
 		});
 
 		reader.read(new File(fileName));
-
-		/*
-		DefaultHandler handler = new DefaultHandler() {
-			
-			private  = null;
-
-			@Override
-			public void characters(char[] ch, int start, int length) throws SAXException {
-
-				String currentStack = createCurrentStack();
-				
-				if (currentStack.equals("JMdict entry k_ele keb") == true) {
-					
-					String kanji = new String(ch, start, length);
-					
-					kanji);
-				}
-				
-				if (currentStack.equals("JMdict entry r_ele reb") == true) {
-					
-					String kana = new String(ch, start, length);
-					
-					jmeDictEntry.getKana().add(kana);
-				}
-				
-				if (currentStack.equals("JMdict entry sense pos") == true) {
-					
-					String pos = new String(ch, start, length);
-					
-					jmeDictEntry.getPos().add(entityMapper.getEntity(pos));
-				}
-			}
-
-			@Override
-			public void endElement(String uri, String localName, String qName) throws SAXException {
-
-				String currentStack = createCurrentStack();
-				
-				if (currentStack.equals("JMdict entry") == true) {
-					// System.out.println(edictEntry.getKanji() + " - " + edictEntry.getKana() + " - " + edictEntry.getPos());
-					
-					
-				}
-				
-				stack.pop();
-			}
-
-			@Override
-			public void startElement(String uri, String localName, String qName, Attributes attributes)
-					throws SAXException {
-
-				stack.push(qName);
-				
-				String currentStack = createCurrentStack();
-				
-				if (currentStack.equals("JMdict entry") == true) {
-					jmeDictEntry = new JMEDictEntry();
-				}
-				
-				//System.out.println(currentStack);
-			}
-			
-			private String createCurrentStack() {
-				
-				StringBuffer result = new StringBuffer();
-				
-				for (int idx = 0; idx < stack.size(); ++idx) {
-					
-					result.append(stack.get(idx));
-					
-					if (idx != stack.size() - 1) {
-						result.append(" ");
-					}
-				}
-				
-				return result.toString();
-			}
-		};
-
-		saxParser.parse(fileName, handler);	
-		*/
-				
+		
 		return treeMap;
 	}
 	

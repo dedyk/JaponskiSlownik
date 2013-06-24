@@ -124,13 +124,14 @@ public class Test {
 
 		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true);
 		 */
-
 		
 		TreeMap<String, JMEDictEntry> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
 
+		/*
 		System.out.println(jmedict.get(JMEDictReader.getMapKey("食べる", "たべる")));
 		System.out.println(jmedict.get(JMEDictReader.getMapKey("集中", "しゅうちゅう")));
 		System.out.println(jmedict.get(JMEDictReader.getMapKey(null, "ぺらぺら")));
+		*/
 		System.out.println(jmedict.get(JMEDictReader.getMapKey("開ける","あける")));
 		
 		
