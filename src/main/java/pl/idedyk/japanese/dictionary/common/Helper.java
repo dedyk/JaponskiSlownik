@@ -100,80 +100,80 @@ public class Helper {
 		return result;
 	}
 	
-	public static void generateAdditionalInfoFromEdict(TreeMap<String, JMEDictEntry> jmedict, TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) {
+	public static void generateAdditionalInfoFromEdict(TreeMap<String, List<JMEDictEntry>> jmedict, TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) {
 		
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 			
-			if (polishJapaneseEntries.get(idx).getId() == 222) {
-				int a = 0;
-				a++;
-			}
-			
 			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
 			
-			JMEDictEntry foundJMEDict = findJMEdictEntry(jmedict, currentPolishJapaneseEntry);
+			List<JMEDictEntry> foundJMEDictList = findJMEdictEntry(jmedict, currentPolishJapaneseEntry);
 			EDictEntry foundEdictCommon = findEdictEntry(jmedictCommon, currentPolishJapaneseEntry); 
 			
 			List<AttributeType> attributeTypeList = currentPolishJapaneseEntry.getAttributeTypeList();
 			
-			if (foundJMEDict != null) {
+			if (foundJMEDictList != null) {
 				
-				// common word
-				if (foundEdictCommon != null) {
+				for (JMEDictEntry foundJMEDict : foundJMEDictList) {
 					
-					if (attributeTypeList.contains(AttributeType.COMMON_WORD) == false) {						
-						attributeTypeList.add(0, AttributeType.COMMON_WORD);						
-					}					
-				}			
-				
-				// suru verb
-				DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
-				
-				if (dictionaryEntryType == DictionaryEntryType.WORD_NOUN) {
+					// common word
+					if (foundEdictCommon != null) {
+						
+						if (attributeTypeList.contains(AttributeType.COMMON_WORD) == false) {						
+							attributeTypeList.add(0, AttributeType.COMMON_WORD);						
+						}					
+					}			
 					
-					if (	foundJMEDict.getPos().contains("n") == true && 
-							foundJMEDict.getPos().contains("vs") == true &&
-							attributeTypeList.contains(AttributeType.SURU_VERB) == false) {
-												
-						attributeTypeList.add(AttributeType.SURU_VERB);						
-					}					
-				}
-				
-				// transitivity, intransitivity
-				if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U || dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU ||
-						dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
+					// suru verb
+					DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
 					
-					if (	attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == true &&
-							attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == false &&
-							foundJMEDict.getPos().contains("vi") == true) {
+					if (dictionaryEntryType == DictionaryEntryType.WORD_NOUN) {
 						
-						System.err.println(currentPolishJapaneseEntry);
-						System.err.println(foundJMEDict);
-						
-						throw new RuntimeException("Different verb transitivity for: " + currentPolishJapaneseEntry);
-					}
-
-					if (	attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == true && 
-							attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == false &&							
-							foundJMEDict.getPos().contains("vt") == true) {
-						
-						System.err.println(currentPolishJapaneseEntry);
-						System.err.println(foundJMEDict);
-						
-						throw new RuntimeException("Different verb intransitivity for: " + currentPolishJapaneseEntry);
+						if (	foundJMEDict.getPos().contains("n") == true && 
+								foundJMEDict.getPos().contains("vs") == true &&
+								attributeTypeList.contains(AttributeType.SURU_VERB) == false) {
+													
+							attributeTypeList.add(AttributeType.SURU_VERB);						
+						}					
 					}
 					
-					if (	attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == false &&
-							attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == false) {
+					// transitivity, intransitivity
+					if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U || dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU ||
+							dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
 						
-						if (foundJMEDict.getPos().contains("vt") == true) {
-							attributeTypeList.add(AttributeType.VERB_TRANSITIVITY);
+						/*
+						if (	attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == true &&
+								attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == false &&
+								foundJMEDict.getPos().contains("vi") == true) {
 							
-						} else if (foundJMEDict.getPos().contains("vi") == true) {
-							attributeTypeList.add(AttributeType.VERB_INTRANSITIVITY);
+							System.err.println(currentPolishJapaneseEntry);
+							System.err.println(foundJMEDict);
+							
+							throw new RuntimeException("Different verb transitivity for: " + currentPolishJapaneseEntry);
+						}
+
+						if (	attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == true && 
+								attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == false &&							
+								foundJMEDict.getPos().contains("vt") == true) {
+							
+							System.err.println(currentPolishJapaneseEntry);
+							System.err.println(foundJMEDict);
+							
+							throw new RuntimeException("Different verb intransitivity for: " + currentPolishJapaneseEntry);
+						}
+						*/
+						
+						if (	attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == false &&
+								attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == false) {
+							
+							if (foundJMEDict.getPos().contains("vt") == true) {
+								attributeTypeList.add(AttributeType.VERB_TRANSITIVITY);
+								
+							} else if (foundJMEDict.getPos().contains("vi") == true) {
+								attributeTypeList.add(AttributeType.VERB_INTRANSITIVITY);
+							}						
 						}						
-					}						
-				}
+					}					
+				}				
 			}			
 		}
 	}
@@ -202,7 +202,7 @@ public class Helper {
 		return foundEdict;
 	}
 	
-	private static JMEDictEntry findJMEdictEntry(TreeMap<String, JMEDictEntry> jmedict, PolishJapaneseEntry polishJapaneseEntry) {
+	private static List<JMEDictEntry> findJMEdictEntry(TreeMap<String, List<JMEDictEntry>> jmedict, PolishJapaneseEntry polishJapaneseEntry) {
 		
 		String kanji = polishJapaneseEntry.getKanji();
 		
@@ -212,7 +212,7 @@ public class Helper {
 		
 		List<String> kanaList = polishJapaneseEntry.getKanaList();
 		
-		JMEDictEntry foundEdict = null;
+		List<JMEDictEntry> foundEdict = null;
 		
 		for (String currentKana : kanaList) {
 			

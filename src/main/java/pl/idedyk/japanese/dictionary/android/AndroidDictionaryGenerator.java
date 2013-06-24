@@ -86,7 +86,7 @@ public class AndroidDictionaryGenerator {
 		System.out.println("checkAndSavePolishJapaneseEntries: readEdict");
 		
 		// read edict
-		TreeMap<String, JMEDictEntry> jmedict = JMEDictReader.readJMEdict(jmedictFileName);
+		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMEdict(jmedictFileName);
 		
 		System.out.println("checkAndSavePolishJapaneseEntries: readEdictCommon");
 		    

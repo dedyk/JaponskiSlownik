@@ -23,7 +23,7 @@ import pl.idedyk.japanese.dictionary.tools.KanaHelper.KanaWord;
 public class Validator {
 
 	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, List<KanaEntry> hiraganaEntries,
-			List<KanaEntry> katakanaEntries, TreeMap<String, JMEDictEntry> jmedict) throws JapaneseDictionaryException {
+			List<KanaEntry> katakanaEntries, TreeMap<String, List<JMEDictEntry>> jmedict) throws JapaneseDictionaryException {
 		
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
 		
@@ -167,7 +167,7 @@ public class Validator {
 			
 			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
 			
-			JMEDictEntry foundJMEDict = null;
+			List<JMEDictEntry> foundJMEDict = null;
 			
 			for (String currentKana : kanaList) {
 				
@@ -184,13 +184,34 @@ public class Validator {
 				
 				if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U || dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU ||
 						dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
-										
-					DictionaryEntryType dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(mapEdictTypeToDictionaryEntryType, foundJMEDict.getPos());
 					
-					if (dictionaryEntryType != dictionaryEntryTypeFromEdictPos) {
-						System.out.println("Dictionary entry type edict different: " + currentPolishJapaneseEntry);
+					boolean noFound = true;
+					List<String> noFoundPosType = null;
+					
+					for (JMEDictEntry currentFoundJMEDict : foundJMEDict) {
 						
-						System.exit(1);
+						DictionaryEntryType dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(mapEdictTypeToDictionaryEntryType, currentFoundJMEDict.getPos());
+						
+						if (dictionaryEntryTypeFromEdictPos == null) {
+							noFoundPosType = currentFoundJMEDict.getPos();
+						}
+						
+						if (dictionaryEntryType == dictionaryEntryTypeFromEdictPos) {
+							noFound = false;
+						}						
+					}
+										
+					if (noFound == true) {
+						
+						if (noFoundPosType == null)  {
+							
+							System.out.println("Dictionary entry type edict different: " + currentPolishJapaneseEntry);
+							
+							System.exit(1);
+							
+						} else {
+							System.out.println("Can't find dictionary entry type for: " + currentPolishJapaneseEntry);
+						}
 					}					
 				}			
 			}
@@ -208,7 +229,7 @@ public class Validator {
 			}
 		}
 		
-		throw new RuntimeException("Can't find dictionary entry type for: " + pos);		
+		return null;		
 	}
 	
 	private static KanaWord createKanaWord(String romaji, WordType wordType, Map<String, KanaEntry> hiraganaCache, Map<String, KanaEntry> katakanaCache) throws JapaneseDictionaryException {

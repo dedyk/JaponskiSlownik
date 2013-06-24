@@ -33,7 +33,7 @@ public class J2MEDictionaryGenerator {
 		generateKatakanaImages(katakanaEntries, charsCache, kanjiOutputDir);
 		
 		// read edict
-		TreeMap<String, JMEDictEntry> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
+		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
 		
 		// Słowniczek
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");

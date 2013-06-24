@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary.tools;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.TreeMap;
@@ -14,9 +15,9 @@ import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 
 public class JMEDictReader {
 	
-	public static TreeMap<String, JMEDictEntry> readJMEdict(String fileName) throws Exception {
+	public static TreeMap<String, List<JMEDictEntry>> readJMEdict(String fileName) throws Exception {
 		
-		final TreeMap<String, JMEDictEntry> treeMap = new TreeMap<String, JMEDictEntry>();
+		final TreeMap<String, List<JMEDictEntry>> treeMap = new TreeMap<String, List<JMEDictEntry>>();
 		
 		System.setProperty("entityExpansionLimit", "1000000");
 		
@@ -35,6 +36,8 @@ public class JMEDictReader {
 				JMEDictEntry jmeDictEntry = new JMEDictEntry();
 				
 				Element row = path.getCurrent();
+				
+				boolean addNoKanji = false;
 				
 				// String entSeq = row.selectSingleNode("ent_seq").getText();
 				
@@ -74,7 +77,7 @@ public class JMEDictReader {
 					Element reNokanjiElement = (Element)rEle.selectSingleNode("re_nokanji");
 					
 					if (reNokanjiElement != null) {
-						jmeDictEntry.getKanji().clear();						
+						addNoKanji = true;						
 					}
 				}
 				
@@ -101,9 +104,22 @@ public class JMEDictReader {
 						
 						jmeDictEntry.getPos().add(entityMapper.getEntity(element.getText()));
 					}
+					
+					List<?> miscList = sense.selectNodes("misc");
+					
+					for (Object object : miscList) {
+						
+						Element misc = (Element)object;
+						
+						String miscText = misc.getText();
+						
+						if (miscText.equals("word usually written using kana alone") == true) {
+							addNoKanji = true;
+						}
+					}
 				}
 				
-				addEdictEntry(treeMap, jmeDictEntry);
+				addEdictEntry(treeMap, jmeDictEntry, addNoKanji);
 				
 				row.detach();
 			}
@@ -114,10 +130,21 @@ public class JMEDictReader {
 		return treeMap;
 	}
 	
-	private static void addEdictEntry(TreeMap<String, JMEDictEntry> treeMap, JMEDictEntry edictEntry) {
+	private static void addEdictEntry(TreeMap<String, List<JMEDictEntry>> treeMap, JMEDictEntry jmedictEntry, boolean addNoKanji) {
 		
-		List<String> kanji = edictEntry.getKanji();
-		List<String> kana = edictEntry.getKana();
+		List<String> kanji = jmedictEntry.getKanji();
+		List<String> kana = jmedictEntry.getKana();
+		
+		if (addNoKanji == true) {
+
+			String kanjiKey = null;
+			
+			for (String currentKana : kana) {				
+				String mapKey = getMapKey(kanjiKey, currentKana);
+				
+				putEdictEntry(treeMap, mapKey, jmedictEntry);				
+			}
+		}
 		
 		if (kanji.size() == 0) {			
 			String kanjiKey = null;
@@ -125,7 +152,7 @@ public class JMEDictReader {
 			for (String currentKana : kana) {				
 				String mapKey = getMapKey(kanjiKey, currentKana);
 				
-				treeMap.put(mapKey, edictEntry);				
+				putEdictEntry(treeMap, mapKey, jmedictEntry);			
 			}
 			
 		} else {
@@ -135,10 +162,23 @@ public class JMEDictReader {
 					
 					String mapKey = getMapKey(currentKanji, currentKana);
 					
-					treeMap.put(mapKey, edictEntry);					
+					putEdictEntry(treeMap, mapKey, jmedictEntry);				
 				}				
 			}			
 		}
+	}
+	
+	private static void putEdictEntry(TreeMap<String, List<JMEDictEntry>> treeMap, String mapKey, JMEDictEntry jmedictEntry) {
+		
+		List<JMEDictEntry> list = treeMap.get(mapKey);
+		
+		if (list == null) {
+			list = new ArrayList<JMEDictEntry>();
+		}
+		
+		list.add(jmedictEntry);
+		
+		treeMap.put(mapKey, list);
 	}
 	
 	public static String getMapKey(String kanji, String kana) {
