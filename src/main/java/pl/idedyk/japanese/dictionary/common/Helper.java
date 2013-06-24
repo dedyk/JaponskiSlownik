@@ -14,6 +14,7 @@ import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.WordType;
+import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 
@@ -99,28 +100,31 @@ public class Helper {
 		return result;
 	}
 	
-	public static void generateAdditionalInfoFromEdict(TreeMap<String, JMEDictEntry> jmedict, List<PolishJapaneseEntry> polishJapaneseEntries) {
+	public static void generateAdditionalInfoFromEdict(TreeMap<String, JMEDictEntry> jmedict, TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) {
 		
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 			
+			if (polishJapaneseEntries.get(idx).getId() == 222) {
+				int a = 0;
+				a++;
+			}
+			
 			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
 			
-			JMEDictEntry foundJMEDict = findEdictEntry(jmedict, currentPolishJapaneseEntry);			
+			JMEDictEntry foundJMEDict = findJMEdictEntry(jmedict, currentPolishJapaneseEntry);
+			EDictEntry foundEdictCommon = findEdictEntry(jmedictCommon, currentPolishJapaneseEntry); 
 			
 			List<AttributeType> attributeTypeList = currentPolishJapaneseEntry.getAttributeTypeList();
 			
 			if (foundJMEDict != null) {
 				
 				// common word
-				/*
 				if (foundEdictCommon != null) {
 					
-					if (attributeTypeList.contains(AttributeType.COMMON_WORD) == false) {
-						
+					if (attributeTypeList.contains(AttributeType.COMMON_WORD) == false) {						
 						attributeTypeList.add(0, AttributeType.COMMON_WORD);						
 					}					
-				}
-				*/				
+				}			
 				
 				// suru verb
 				DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
@@ -174,7 +178,31 @@ public class Helper {
 		}
 	}
 	
-	private static JMEDictEntry findEdictEntry(TreeMap<String, JMEDictEntry> jmedict, PolishJapaneseEntry polishJapaneseEntry) {
+	private static EDictEntry findEdictEntry(TreeMap<String, EDictEntry> jmedict, PolishJapaneseEntry polishJapaneseEntry) {
+
+		String kanji = polishJapaneseEntry.getKanji();
+
+		if (kanji != null && kanji.equals("-") == true) {
+			kanji = null;
+		}
+
+		List<String> kanaList = polishJapaneseEntry.getKanaList();
+
+		EDictEntry foundEdict = null;
+
+		for (String currentKana : kanaList) {
+
+			foundEdict = jmedict.get(EdictReader.getMapKey(kanji, currentKana));
+
+			if (foundEdict != null) {
+				break;
+			}
+		}
+
+		return foundEdict;
+	}
+	
+	private static JMEDictEntry findJMEdictEntry(TreeMap<String, JMEDictEntry> jmedict, PolishJapaneseEntry polishJapaneseEntry) {
 		
 		String kanji = polishJapaneseEntry.getKanji();
 		

@@ -69,7 +69,13 @@ public class JMEDictReader {
 						Element element = (Element)object;
 						
 						jmeDictEntry.getKana().add(element.getText());
-					}					
+					}
+					
+					Element reNokanjiElement = (Element)rEle.selectSingleNode("re_nokanji");
+					
+					if (reNokanjiElement != null) {
+						jmeDictEntry.getKanji().clear();						
+					}
 				}
 				
 				// pos

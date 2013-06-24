@@ -20,6 +20,7 @@ import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
@@ -31,6 +32,7 @@ import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
@@ -43,7 +45,8 @@ public class AndroidDictionaryGenerator {
 	public static void main(String[] args) throws Exception {
 		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", 
-				"../JaponskiSlownik_dodatki/JMdict_e", 
+				"../JaponskiSlownik_dodatki/JMdict_e",
+				"../JaponskiSlownik_dodatki/edict_sub-utf8",
 				"../JaponskiSlownik_dodatki/enamdict-utf8",
 				"output/word.csv");
 		
@@ -65,7 +68,7 @@ public class AndroidDictionaryGenerator {
 	}
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, 
-			String jmedictFileName, String edictNameFileName, String destinationFileName) throws Exception {
+			String jmedictFileName, String edictCommonFileName, String edictNameFileName, String destinationFileName) throws Exception {
 		
 		System.out.println("checkAndSavePolishJapaneseEntries");
 				
@@ -86,6 +89,9 @@ public class AndroidDictionaryGenerator {
 		TreeMap<String, JMEDictEntry> jmedict = JMEDictReader.readJMEdict(jmedictFileName);
 		
 		System.out.println("checkAndSavePolishJapaneseEntries: readEdictCommon");
+		    
+		// read edict common
+		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict(edictCommonFileName);     
 						
 		// validate
 		
@@ -106,7 +112,7 @@ public class AndroidDictionaryGenerator {
 		System.out.println("checkAndSavePolishJapaneseEntries: generateAdditionalInfoFromEdict");
 		
 		// generate additional data from edict
-		Helper.generateAdditionalInfoFromEdict(jmedict, result);
+		Helper.generateAdditionalInfoFromEdict(jmedict, jmedictCommon, result);
 		
 		// test !
 		

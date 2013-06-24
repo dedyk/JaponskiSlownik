@@ -2,7 +2,9 @@ package pl.idedyk.japanese.dictionary.test;
 
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
+import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 
 public class Test {
@@ -126,13 +128,20 @@ public class Test {
 		 */
 		
 		TreeMap<String, JMEDictEntry> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
-
+		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JaponskiSlownik_dodatki/edict_sub-utf8");
+		
 		/*
 		System.out.println(jmedict.get(JMEDictReader.getMapKey("食べる", "たべる")));
 		System.out.println(jmedict.get(JMEDictReader.getMapKey("集中", "しゅうちゅう")));
 		System.out.println(jmedict.get(JMEDictReader.getMapKey(null, "ぺらぺら")));
 		*/
-		System.out.println(jmedict.get(JMEDictReader.getMapKey("開ける","あける")));
+		//System.out.println(jmedict.get(JMEDictReader.getMapKey("開ける","あける")));
+		
+		System.out.println(jmedict.get(JMEDictReader.getMapKey(null, "コーヒー")));
+		System.out.println(jmedictCommon.get(EdictReader.getMapKey(null, "コーヒー")));
+		
+		
+		
 		
 		
 		/*
