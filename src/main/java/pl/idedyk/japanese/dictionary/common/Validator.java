@@ -205,7 +205,7 @@ public class Validator {
 						
 						if (noFoundPosType == null)  {
 							
-							System.out.println("Dictionary entry type edict different: " + currentPolishJapaneseEntry);
+							System.err.println("Dictionary entry type edict different for: " + currentPolishJapaneseEntry);
 							
 							System.exit(1);
 							

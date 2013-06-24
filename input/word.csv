@@ -468,7 +468,8 @@ nadchodzić","cel, e ~",,251
 4381
 4644
 6015
-6730"
+6730
+7998"
 254,WORD_VERB_IRREGULAR,,HIRAGANA,"Genki 1-3
 Genki kanji 1-11",を,勉強する,べんきょうする,o,benkyou suru,uczyć się,nauka z książek,,
 255,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-3,,良い,いい,,ii,dobry,zwykle pisane przy pomocy kany,,6686
@@ -2335,7 +2336,8 @@ porzucać",,,
 4381
 4644
 6015
-6730"
+6730
+7998"
 1212,WORD_VERB_IRREGULAR,,HIRAGANA,"Genki 2-15
 Genki kanji 2-19",を,卒業する,そつぎょうする,o,sotsugyou suru,ukończyć szkołę,szkołę,,
 1213,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-15,,予約する,よやくする,,yoyaku suru,rezerwować,,,
@@ -2426,7 +2428,8 @@ podnosić na duchu
 dodawać otuchy
 pobudzać",,,
 1261,WORD_VERB_U,,HIRAGANA,,,気に入る,きにはいる,,ki ni hairu,spodobać się,,,
-1262,WORD_EXPRESSION,,HIRAGANA,,,-,やすい,,yasui,łatwość robienia czegoś,+ czasownik bez masu,,211
+1262,WORD_EXPRESSION,,HIRAGANA,,,-,やすい,,yasui,łatwość robienia czegoś,+ czasownik bez masu,,"211
+7990"
 1263,WORD_EXPRESSION,,HIRAGANA,,,食べやすい,たべやすい,,tabe yasui,łatwość jedzenia,,,
 1264,UNKNOWN,,HIRAGANA,,,本物,ほんもの,,honmono,"prawdziwa rzecz (nie falsyfikat)
 oryginał",,,
@@ -4116,7 +4119,8 @@ Genki dodatkowe 2-20",,-,する,,suru,nosić małe przedmioty,"np. krawaty, zega
 4381
 4644
 6015
-6730"
+6730
+7998"
 2230,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-17,,離婚する,りこんする,,rikon suru,rozwodzić się,,,
 2231,WORD_EXPRESSION,,HIRAGANA,Genki 2-17,,-,おめでとうございます,,omedetou gozaimasu,gratulacje,,,
 2232,WORD_EXPRESSION,,HIRAGANA,Genki 2-17,,-,"かな
@@ -8544,7 +8548,8 @@ Genki dodatkowe 2-20",,-,する,,suru,kosztować,,,"253
 2229
 4381
 6015
-6730"
+6730
+7998"
 4645,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-20,,屹度,きっと,,kitto,z pewnością,,,
 4646,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-20,,-,あんなに,,annani,taki,,,
 4647,WORD_VERB_U,,HIRAGANA,"Genki dodatkowe 2-20
@@ -14825,3 +14830,69 @@ parów
 wąwóz
 jar",,,
 7987,WORD_NOUN,,HIRAGANA,,,斎,とき,,toki,posiłek,spożywany podczas nabożeństw buddyjskich,,
+7988,WORD_VERB_U,,HIRAGANA,,,倣う,ならう,,narau,"naśladować
+iść za",,,
+7989,WORD_ADJECTIVE_NA,,HIRAGANA,,,廉,れん,,ren,"czystość
+uczciwość
+niska cena",,,7991
+7990,WORD_ADJECTIVE_I,,HIRAGANA,,,廉い,やすい,,yasui,tani,,,1262
+7991,WORD_NOUN,,HIRAGANA,,,廉,かど,,kado,"oskarżenie
+podejrzenie",,,7989
+7992,WORD_VERB_U,,HIRAGANA,,,拒む,こばむ,,kobamu,"odmawiać
+zaprzeczać
+wyrzekać się
+sprzeciwiać się
+oponować",,,
+7993,WORD_VERB_U,,HIRAGANA,,,拒ぐ,ふせぐ,,fusegu,bronić,,,
+7994,WORD_VERB_RU,,HIRAGANA,,,擬える,なぞらえる,,nazoraeru,"naśladować
+upodabniać się
+porównywać",,,
+7995,WORD_NOUN,,HIRAGANA,,,恨み,うらみ,,urami,"niechęć
+nienawiść
+złość",,,
+7996,WORD_VERB_U,,HIRAGANA,,,恨む,うらむ,,uramu,"żywić urazę
+żywić niechęć
+żałować",,,
+7997,WORD_VERB_U,,HIRAGANA,,,擦る,こする,,kosuru,"trzeć
+drapać
+skrobać",,,7998
+7998,WORD_VERB_U,,HIRAGANA,,,擦る,する,,suru,"trzeć
+drapać
+skrobać",,,"253
+1211
+2229
+4644
+7997"
+7999,WORD_VERB_RU,,HIRAGANA,,,擦れる,すれる,,sureru,"wycierać się
+szeleścić
+docierać się
+stawać się bystrym",,,
+8000,UNKNOWN,,HIRAGANA,,,片,へん,,hen,"część
+fragment
+okruch
+skrawek",,,8001
+8001,UNKNOWN,,HIRAGANA,,,片,かた,,kata,"jeden (z dwóch)
+jedna strona
+pojedynczy",,,8000
+8002,WORD_VERB_RU,,HIRAGANA,,,堪える,たえる,,taeru,"wytrzymywać
+przetrzymywać
+popierać
+opierać się",,,
+8003,WORD_NOUN,,HIRAGANA,,,碑,いしぶみ,,ishibumi,"nagrobek
+kamienny pomnik",,,
+8004,UNKNOWN,,HIRAGANA,,,該,がい,,gai,"ten (o którym mowa)
+odnosić się
+korespondować",,,
+8005,WORD_VERB_U,,HIRAGANA,,,褒めちぎる,ほめちぎる,,homechigiru,"pochwalać
+komplementować
+chwalić
+podziwiać
+mówić miłe rzeczy",,,
+8006,WORD_NOUN,,HIRAGANA,,,没,ぼつ,,botsu,"tonąć
+ginąć
+umierać",,,
+8007,WORD_VERB_U,,HIRAGANA,,,逐う,おう,,ou,"rozpędzać
+wyganiać
+ścigać
+tropić
+iść śladem",,,
