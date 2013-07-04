@@ -15,6 +15,8 @@ public class KanjiDic2Entry {
 	private List<String> radicals;
 	
 	private Integer jlpt;
+	
+	private Integer freq;
 
 	public String getKanji() {
 		return kanji;
@@ -62,5 +64,13 @@ public class KanjiDic2Entry {
 
 	public void setJlpt(Integer jlpt) {
 		this.jlpt = jlpt;
+	}
+
+	public Integer getFreq() {
+		return freq;
+	}
+
+	public void setFreq(Integer freq) {
+		this.freq = freq;
 	}
 }

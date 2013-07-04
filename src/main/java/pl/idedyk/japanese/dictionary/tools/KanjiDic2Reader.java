@@ -84,6 +84,14 @@ public class KanjiDic2Reader {
         	if (jlptElement != null) {
         		jlpt = Integer.parseInt(jlptElement.getText());
         	}
+
+        	Element freqElement = (Element)currentCharacterAsElement.selectSingleNode("misc/freq");
+        	
+        	Integer freq = null;
+        	
+        	if (freqElement != null) {
+        		freq = Integer.parseInt(freqElement.getText());
+        	}
         	
         	KanjiDic2Entry kanjiDic2Entry = new KanjiDic2Entry();
         	
@@ -102,6 +110,7 @@ public class KanjiDic2Reader {
         	kanjiDic2Entry.setRadicals(radicals);
         	
         	kanjiDic2Entry.setJlpt(jlpt);
+        	kanjiDic2Entry.setFreq(freq);
         	
         	result.put(kanji, kanjiDic2Entry);
 		}
