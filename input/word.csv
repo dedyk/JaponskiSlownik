@@ -291,7 +291,8 @@ Genki kanji 2-22",,銀行,ぎんこう,,ginkou,bank,,,
 162,WORD_NOUN,,HIRAGANA,"Genki 1-2
 Genki kanji 2-18",,図書館,としょかん,,toshokan,biblioteka,w budynku,,
 163,WORD_NOUN,,HIRAGANA,Genki 1-2,,郵便局,ゆうびんきょく,,yuubinkyoku,poczta,,,
-164,WORD_ASK,,HIRAGANA,Genki 1-2,,-,いくら,,ikura,ile,koszty,,
+164,WORD_ASK,,HIRAGANA,Genki 1-2,,幾ら,いくら,,ikura,"ile
+jak dużo",koszty,,
 165,WORD_NOUN,,HIRAGANA,Genki 1-2,,円,えん,,en,... yen,,,
 166,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-2
 Genki kanji 1-7",,高い,たかい,,takai,"drogi
@@ -2172,7 +2173,9 @@ Klasyfikatory",,枚,まい,,mai,[liczenie płaskich przedmiotów],~,,
 1106,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,九個,きゅうこ,,kyuuko,dziewięć,małe przedmioty,,
 1107,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,十個,じゅっこ,,jukko,dziesięć,małe przedmioty,,
 1108,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,何個,なんこ,,nanko,jak wiele,małe przedmioty,,
-1109,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,-,いくつ,,ikutsu,jak wiele,małe przedmioty,,
+1109,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,幾つ,いくつ,,ikutsu,"ile
+jak dużo
+jak wiele",małe przedmioty,,
 1110,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,一冊,いっさつ,,issatsu,jeden,wolumeny,,
 1111,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,二冊,にさつ,,nisatsu,dwa,wolumeny,,
 1112,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,三冊,さんさつ,,sansatsu,trzy,wolumeny,,
@@ -5939,7 +5942,8 @@ spotykać się",,,2168
 3218,WORD_VERB_RU,,HIRAGANA,Genki 2-19,,-,かける,,kakeru,siadać,,,"1237
 6036
 6393
-6457"
+6457
+8266"
 3219,WORD_VERB_RU,,HIRAGANA,Genki 2-19,,-,もてる,,moteru,"podobać się (osobie)
 być zainteresowany (osobą)","cel romantyczny, osoba ni",,
 3220,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-19,,遠慮する,えんりょする,,enryo suru,"zachować rezerwę
@@ -15533,3 +15537,56 @@ stać się rzadkim",,,
 8253,WORD_VERB_U,,HIRAGANA,,,透かす,すかす,,sukasu,"robić przezroczystym
 patrzeć przez",,,
 8254,WORD_VERB_RU,,HIRAGANA,,,透ける,すける,,sukeru,być przezroczystym,,,
+8255,WORD_ADJECTIVE_I,,HIRAGANA,,,堅い,かたい,,katai,"twardy
+mocny
+stały",,,
+8256,WORD_VERB_RU,,HIRAGANA,,,妨げる,さまたげる,,samatageru,"niepokoić
+przeszkadzać
+zapobiegać
+krępować",,,
+8257,WORD_ADVERB,,HIRAGANA,,,既に,すでに,,sudeni,"już
+poprzednio",,,
+8258,WORD_VERB_U,,HIRAGANA,,,慕う,したう,,shitau,"pragnąć
+tęsknić
+uwielbiać
+podziwiać
+iść (za kimś)
+podążać (za kimś)",,,
+8259,WORD_ADJECTIVE_I,,HIRAGANA,,,慕わしい,したわしい,,shitawashii,"drogi
+kochany",,,
+8260,WORD_NOUN,,HIRAGANA,,,藩,はん,,han,"feudalny klan
+posiadłość ziemska",,,
+8261,WORD_VERB_U,,HIRAGANA,,,詠む,よむ,,yomu,"recytować
+tworzyć (poezję)",,,
+8262,WORD_NOUN,,HIRAGANA,,,途,みち,,michi,"droga
+ścieżka",,,
+8263,WORD_VERB_U,,HIRAGANA,,,阻む,はばむ,,habamu,"zapobiegać
+blokować
+przeszkadzać
+wstrzymywać
+utrudniać",,,
+8264,WORD_VERB_RU,,HIRAGANA,,,餓える,うえる,,ueru,głodować,,,8265
+8265,WORD_VERB_RU,,HIRAGANA,,,餓える,かつえる,,katsueru,głodować,,,8264
+8266,WORD_VERB_RU,,HIRAGANA,,,駆ける,かける,,kakeru,"biec
+galopować",,,3218
+8267,WORD_VERB_U,,HIRAGANA,,,駆る,かる,,karu,"przynaglać
+skłaniać
+pobudzać",,,
+8268,WORD_NOUN,,HIRAGANA,,,浦,うら,,ura,"zatoka
+wybrzeże",,,
+8269,WORD_VERB_U,,HIRAGANA,,,浮く,うく,,uku,płynąć,,,
+8270,WORD_VERB_U,,HIRAGANA,,,浮かぶ,うかぶ,,ukabu,"płynąć
+unosić się
+myśleć
+pojawiać się",,,
+8271,WORD_VERB_RU,,HIRAGANA,,,浮かべる,うかべる,,ukaberu,"spławiać
+pokazywać
+odkrywać",,,
+8272,WORD_VERB_RU,,HIRAGANA,,,浮かれる,うかれる,,ukareru,być w dobrym humorze,,,
+8273,WORD_ADJECTIVE_I,,HIRAGANA,,,麗しい,うるわしい,,uruwashii,"piękny
+ładny
+śliczny
+miły",,,
+8274,WORD_ADJECTIVE_NA,,HIRAGANA,,,麗らか,うららか,,uraraka,"piękny
+przejrzysty
+jasny (o klimacie, pogodzie)",,,
