@@ -317,6 +317,14 @@ public class AndroidDictionaryGenerator {
 			kanjiEntries.add(newKanjiEntry);
 			
 			additionalKanjiIds.put(readKanjiDic2KeySetIteratorCurrentKanji, newKanjiEntry.getId());
+			
+			Integer kanjiCountMapInteger = kanjiCountMap.get(readKanjiDic2KeySetIteratorCurrentKanji);
+			
+			if (kanjiCountMapInteger == null) {
+				kanjiCountMapInteger = new Integer(0);
+			}
+			
+			kanjiCountMap.put(readKanjiDic2KeySetIteratorCurrentKanji, kanjiCountMapInteger);
 		}
 		
 		// end
