@@ -13,6 +13,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -277,43 +278,10 @@ public class AndroidDictionaryGenerator {
 				}
 				
 				if (kanjiDic2Entry != null) {
-										
+					
 					alreadySetKanji.add(currentKanjiChar);
 					
-					KanjiEntry newKanjiEntry = new KanjiEntry();
-					
-					newKanjiEntry.setId(kanjiEntries.get(kanjiEntries.size() - 1).getId() + 1);
-					newKanjiEntry.setKanji(currentKanjiChar);
-					newKanjiEntry.setKanjiDic2Entry(kanjiDic2Entry);
-					
-					List<String> polishTranslates = new ArrayList<String>();
-					
-					polishTranslates.add("nieznane znaczenie");
-					
-					newKanjiEntry.setPolishTranslates(polishTranslates);
-					newKanjiEntry.setInfo("");
-					
-					newKanjiEntry.setGenerated(true);
-					
-					List<String> groupsList = new ArrayList<String>();
-					
-					String jlpt = KanjiUtils.getJlpt(currentKanjiChar);
-					
-					if (jlpt != null) {
-						groupsList.add(jlpt);
-					}
-					
-					/*
-					if (kanjiDic2Entry != null) {
-						Integer jlpt = kanjiDic2Entry.getJlpt();
-						
-						if (jlpt != null) {
-							groupsList.add("JLPT " + jlpt);
-						}
-					}
-					*/
-					
-					newKanjiEntry.setGroups(groupsList);
+					KanjiEntry newKanjiEntry = generateKanjiEntry(currentKanjiChar, kanjiDic2Entry, kanjiEntries.get(kanjiEntries.size() - 1).getId() + 1);					
 					
 					kanjiEntries.add(newKanjiEntry);
 					
@@ -321,6 +289,37 @@ public class AndroidDictionaryGenerator {
 				}
 			}
 		}
+		
+		// generate additional top 2500 kanji
+		
+		Iterator<String> readKanjiDic2KeySetIterator = readKanjiDic2.keySet().iterator();		
+				
+		while(readKanjiDic2KeySetIterator.hasNext()) {
+			
+			String readKanjiDic2KeySetIteratorCurrentKanji = readKanjiDic2KeySetIterator.next();
+						
+			KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(readKanjiDic2KeySetIteratorCurrentKanji);
+			
+			Integer freq = kanjiDic2Entry.getFreq();
+			
+			if (freq == null) {
+				continue;
+			}
+			
+			if (alreadySetKanji.contains(readKanjiDic2KeySetIteratorCurrentKanji)) {
+				continue;
+			}
+			
+			alreadySetKanji.add(readKanjiDic2KeySetIteratorCurrentKanji);
+			
+			KanjiEntry newKanjiEntry = generateKanjiEntry(readKanjiDic2KeySetIteratorCurrentKanji, kanjiDic2Entry, kanjiEntries.get(kanjiEntries.size() - 1).getId() + 1);					
+			
+			kanjiEntries.add(newKanjiEntry);
+			
+			additionalKanjiIds.put(readKanjiDic2KeySetIteratorCurrentKanji, newKanjiEntry.getId());
+		}
+		
+		// end
 		
 		String[] kanjiArray = new String[kanjiCountMap.size()];
 		
@@ -360,6 +359,46 @@ public class AndroidDictionaryGenerator {
 		System.out.println("\nKanji: " + kanjiArray.length);
 				
 		System.out.println("\n---\n");
+	}
+	
+	private static KanjiEntry generateKanjiEntry(String kanji, KanjiDic2Entry kanjiDic2Entry, int id) {
+		
+		KanjiEntry newKanjiEntry = new KanjiEntry();
+		
+		newKanjiEntry.setId(id);
+		newKanjiEntry.setKanji(kanji);
+		newKanjiEntry.setKanjiDic2Entry(kanjiDic2Entry);
+		
+		List<String> polishTranslates = new ArrayList<String>();
+		
+		polishTranslates.add("nieznane znaczenie");
+		
+		newKanjiEntry.setPolishTranslates(polishTranslates);
+		newKanjiEntry.setInfo("");
+		
+		newKanjiEntry.setGenerated(true);
+		
+		List<String> groupsList = new ArrayList<String>();
+		
+		String jlpt = KanjiUtils.getJlpt(kanji);
+		
+		if (jlpt != null) {
+			groupsList.add(jlpt);
+		}
+		
+		/*
+		if (kanjiDic2Entry != null) {
+			Integer jlpt = kanjiDic2Entry.getJlpt();
+			
+			if (jlpt != null) {
+				groupsList.add("JLPT " + jlpt);
+			}
+		}
+		*/
+		
+		newKanjiEntry.setGroups(groupsList);	
+		
+		return newKanjiEntry;
 	}
 	
 	private static void generateKanjiRadical(String radfile, String radicalDestination) throws Exception {
