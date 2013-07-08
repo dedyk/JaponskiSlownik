@@ -1506,7 +1506,10 @@ nocować
 kotwiczyć",w hotelu i etc,,
 763,WORD_VERB_U,,HIRAGANA,Genki 1-10,,成る,なる,,naru,stawać się,,,
 764,WORD_VERB_U,,HIRAGANA,"Genki 1-10
-Genki kanji 2-20",,払う,はらう,,harau,płacić,,,
+Genki kanji 2-20",,払う,はらう,,harau,"płacić
+wymiatać
+wypędzać
+poświęcać (uwagę)",,,
 765,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,Genki 1-10,,決める,きめる,,kimeru,"postanawiać
 decydować
 zdecydować",,,
@@ -1836,7 +1839,8 @@ Genki 2-20",,趣味,しゅみ,,shumi,hobby,,,
 936,WORD_NOUN,,HIRAGANA,"Genki dodatkowe 1-11
 Genki 2-19
 Genki kanji 2-23",,文化,ぶんか,,bunka,kultura,,,
-937,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,-,つり,,tsuri,wędkarstwo,,,
+937,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,釣り,つり,,tsuri,"wędkarstwo
+reszta (pieniędzy)",,,
 938,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,祭り,まつり,,matsuri,"festiwal
 uroczystość
 święto",,,
@@ -2038,7 +2042,9 @@ Genki kanji 2-21",,経験,けいけん,,keiken,doświadczenie,,,
 1035,UNKNOWN,,HIRAGANA,"Genki dodatkowe 2-13
 Genki kanji 2-13",,特に,とくに,,tokuni,"szczególnie
 zwłaszcza",,,
-1036,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-13,,-,めずらしい,,mezurashii,rzadko,,,
+1036,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-13,,珍しい ,めずらしい,,mezurashii,"rzadki
+ciekawy
+dziwny",,,
 1037,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-13,,-,なんでも,,nandemo,cokolwiek,,,
 1038,WORD_VERB_IRREGULAR,,KATAKANA_HIRAGANA,Genki dodatkowe 2-13,,-,ニヤニヤする,,niyaniya suru,szczerzyć się,,,
 1039,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki dodatkowe 2-13
@@ -12525,7 +12531,8 @@ tabliczka",,,
 świstek (papieru)
 zaświadczenie
 rachunek",,,
-6725,WORD_NOUN,,HIRAGANA,,,婆,ばば,,baba,starsza kobieta,,,
+6725,WORD_NOUN,,HIRAGANA,,,婆,ばば,,baba,"starsza kobieta
+baba",,,
 6726,WORD_NOUN,,KATAKANA,,,-,ボタン,,botan,guzik,,,
 6727,WORD_NOUN,,HIRAGANA,,,服飾,ふくしょく,,fukushoku,część garderoby,,,
 6728,WORD_NOUN,,HIRAGANA,,,飾り,かざり,,kazari,"dekoracja
@@ -15655,3 +15662,45 @@ wynajmować",,,
 8301,WORD_NOUN,,HIRAGANA,,,雇い,やとい,,yatoi,pracownik,,,
 8302,WORD_VERB_RU,,HIRAGANA,,,獲る,える,,eru,"pojmać
 zawładnąć",,,
+8303,WORD_VERB_U,,HIRAGANA,,,慈しむ,いつくしむ,,itsukushimu,"kochać
+litować się",,,
+8304,WORD_NOUN,,HIRAGANA,,,慈しみ,いつくしみ,,itsukushimi,"afekt
+uczucie
+miłość",,,
+8305,WORD_NOUN,,HIRAGANA,,,双,そう,,sou,"para
+komplet",,,8306
+8306,WORD_COUNTERS,,HIRAGANA,,,双,そう,,sou,przyrostek używany do liczenia par,,,8305
+8307,WORD_VERB_U,,HIRAGANA,,,奪う,うばう,,ubau,"zabierać
+brać przemocą
+wykradać
+pozyskiwać",,,
+8308,WORD_NOUN,,HIRAGANA,,,払い,はらい,,harai,zapłata,,,
+8309,WORD_NOUN,,HIRAGANA,,,譜,ふ,,fu,"nuty
+partytura
+nuta",,,
+8310,WORD_NOUN,,HIRAGANA,,,禅,ぜん,,zen,"siedzenie w milczeniu (ćwiczenie duchowe)
+Zen (sekta buddyjska)",,,
+8311,WORD_ADJECTIVE_I,,HIRAGANA,,,佳い,よい,,yoi,dobry,,,
+8312,WORD_NOUN,,HIRAGANA,,,圏,けん,,ken,"sfera
+orbita
+okrąg
+promień
+zasięg",,,
+8313,WORD_NOUN,,HIRAGANA,,,寸,すん,,sun,sun,"jednostka miary ok 3,03 cm",,
+8314,WORD_VERB_U,,HIRAGANA,,,騰がる,あがる,,agaru,wznosić się,,,
+8315,WORD_VERB_U,,HIRAGANA,,,遷す,うつす,,utsusu,"przenosić
+przesuwać",,,
+8316,WORD_VERB_U,,HIRAGANA,,,遷る,うつる,,utsuru,"przenosić się
+przesuwać się",,,
+8317,WORD_NOUN,,HIRAGANA,,,偏,へん,,hen,lewy klucz chińskiego znaku,,,
+8318,WORD_VERB_U,,HIRAGANA,,,偏る,かたよる,,katayoru,"nachylać się
+skłaniać się",,,
+8319,WORD_NOUN,,HIRAGANA,,,偏り,かたより,,katayori,"skłonność
+nachylenie",,,
+8320,WORD_NOUN,,HIRAGANA,,,升,しょう ,,shou,"sho (jednostka pojemności ok 1,8 litra)",,,8321
+8321,WORD_NOUN,,HIRAGANA,,,升,ます,,masu,pudełko miernicze,,,8320
+8322,UNKNOWN,,HIRAGANA,,,彼の,かの,,kano,"tamten
+tamta
+tamto",,,
+8323,WORD_VERB_U,,HIRAGANA,,,釣る,つる,,tsuru,"łowić ryby
+uprawiać wędkarstwo",,,
