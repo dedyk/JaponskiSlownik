@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
@@ -18,6 +19,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+
+import com.csvreader.CsvReader;
 
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
@@ -210,7 +213,7 @@ public class AndroidDictionaryGenerator {
 		Validator.validateDuplicateKanjiEntriesList(kanjiEntries);
 		
 		System.out.println("generateKanjiEntries: generateAdditionalKanjiEntries");
-		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2);
+		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2, "input/osjp.csv");
 		
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
 			
@@ -233,7 +236,7 @@ public class AndroidDictionaryGenerator {
 	}
 
 	private static void generateAdditionalKanjiEntries(List<PolishJapaneseEntry> dictionary,
-			List<KanjiEntry> kanjiEntries, Map<String, KanjiDic2Entry> readKanjiDic2) {
+			List<KanjiEntry> kanjiEntries, Map<String, KanjiDic2Entry> readKanjiDic2, String osjpFile) throws Exception {
 		
 		Set<String> alreadySetKanji = new HashSet<String>();
 		Set<String> alreadySetKanjiSource = new HashSet<String>();
@@ -327,7 +330,47 @@ public class AndroidDictionaryGenerator {
 			kanjiCountMap.put(readKanjiDic2KeySetIteratorCurrentKanji, kanjiCountMapInteger);
 		}
 		
-		// end
+		// top 2500 end
+		
+		// osjp additional kanji - zakomentowac/usunac, az wszystko bedzie wpisane
+		// DELETE ME - FIXME!!!
+		
+		CsvReader csvReader = new CsvReader(new FileReader(osjpFile), ',');
+				
+		while(csvReader.readRecord()) {
+			
+			String kanji = csvReader.get(2);
+						
+			for (int kanjiCharIdx = 0; kanjiCharIdx < kanji.length(); ++kanjiCharIdx) {
+				
+				String currentKanjiChar = String.valueOf(kanji.charAt(kanjiCharIdx));
+
+				KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(currentKanjiChar);
+				
+				if (alreadySetKanji.contains(currentKanjiChar) == false && kanjiDic2Entry != null) {
+					
+					alreadySetKanji.add(currentKanjiChar);
+					
+					KanjiEntry newKanjiEntry = generateKanjiEntry(currentKanjiChar, kanjiDic2Entry, kanjiEntries.get(kanjiEntries.size() - 1).getId() + 1);					
+					
+					kanjiEntries.add(newKanjiEntry);
+					
+					additionalKanjiIds.put(currentKanjiChar, newKanjiEntry.getId());
+					
+					Integer kanjiCountMapInteger = kanjiCountMap.get(currentKanjiChar);
+					
+					if (kanjiCountMapInteger == null) {
+						kanjiCountMapInteger = new Integer(0);
+					}
+					
+					kanjiCountMap.put(currentKanjiChar, kanjiCountMapInteger);
+				}
+			}
+		}
+		
+		csvReader.close();
+		
+		// osjp end
 		
 		String[] kanjiArray = new String[kanjiCountMap.size()];
 		
