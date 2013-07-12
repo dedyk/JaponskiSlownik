@@ -887,7 +887,8 @@ prąd
 Genki 1-11",,-,ページ,,peeji,strona,,,
 467,WORD_NOUN,,HIRAGANA,Genki 1-6,,窓,まど,,mado,okno,,,
 468,WORD_NOUN,,HIRAGANA,"Genki 1-6
-Genki kanji 1-10",,夜,よる,,yoru,noc,,,2168
+Genki kanji 1-10",,夜,よる,,yoru,"noc
+wieczór",,,2168
 469,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki 1-6
 Genki kanji 1-6
 Genki dodatkowe 2-19
@@ -7228,7 +7229,8 @@ sypiać",,,
 3923,WORD_NOUN,,HIRAGANA,,,僧,そう,,sou,"mnich
 kapłan (buddyjski)",,,
 3924,WORD_NOUN,,HIRAGANA,,,停止,ていし,,teishi,"odwołanie
-zawieszenie",,,
+zawieszenie
+przerwanie",,,
 3925,WORD_NOUN,,HIRAGANA,,,停年,ていねん,,teinen,wiek emerytalny,,,
 3926,WORD_NOUN,,HIRAGANA,,,停職,ていしょく,,teishoku,zwolnienie z pracy,,,
 3927,WORD_NOUN,,HIRAGANA,,,停電,ていでん,,teiden,przerwa w dopływie prądu,,,
@@ -7935,7 +7937,9 @@ zmniejszać się",,,
 złość",,,
 4311,WORD_NOUN,,HIRAGANA,,,敵対,てきたい,,tekitai,"wrogość
 niechęć
-sprzeciw",,,
+sprzeciw
+antagonizm
+przeciwieństwo",,,
 4312,WORD_NOUN,,HIRAGANA,,,敵軍,てきぐん,,tekigun,wroga armia,,,
 4313,WORD_NOUN,,HIRAGANA,,,敵側,てきがわ,,tekigawa,strona wroga,,,
 4314,WORD_NOUN,,HIRAGANA,,,強敵,きょうてき,,kyouteki,silny przeciwnik,,,
@@ -8182,7 +8186,10 @@ wolny od cła",,,
 4444,WORD_NOUN,,HIRAGANA,,,家庭,かてい,,katei,rodzina,,,
 4445,WORD_NOUN,,HIRAGANA,,,庭園,ていえん,,teien,"ogród
 park",,,
-4446,WORD_NOUN,,HIRAGANA,,,中庭,なかにわ,,naka niwa,ogród wewnętrzny,,,
+4446,WORD_NOUN,,HIRAGANA,,,中庭,なかにわ,,naka niwa,"dwór
+dziedziniec
+podwórze
+ogród wewnętrzny",,,
 4447,WORD_NOUN,,HIRAGANA,,,校庭,こうてい,,koutei,plac szkolny,,,
 4448,WORD_NOUN,,HIRAGANA,,,庭球,ていきゅう,,teikyuu,tenis,,,
 4449,WORD_VERB_U,,HIRAGANA,,,割る,わる,,waru,"dzielić
@@ -12088,7 +12095,8 @@ pomagać",,,
 6424,WORD_NOUN,,HIRAGANA,,,救済,きゅうさい,,kyuusai,"pomoc
 ratunek
 zbawienie
-odkupienie",,,
+odkupienie
+wybawienie",,,
 6425,WORD_NOUN,,HIRAGANA,,,救い主,すくいぬし,,sukuinushi,"Zbawiciel
 ratownik",,,
 6426,WORD_NOUN,,HIRAGANA,,,救助,きゅうじょ,,kyuujo,"ratunek
@@ -13375,6 +13383,7 @@ przejęcie",,,
 7183,WORD_NOUN,,HIRAGANA,,,皇后,こうごう,,kougou,cesarzowa,,,
 7184,WORD_NOUN,,HIRAGANA,,,響き,ひびき,,hibiki,"dźwięk
 odgłos
+oddźwięk
 echo",,,
 7185,WORD_VERB_U,,HIRAGANA,,,響く,ひびく,,hibiku,"odbijać się
 rezonować
@@ -16086,3 +16095,43 @@ zachowanie",,,
 8482,WORD_NOUN,,HIRAGANA,,,振るまい,ふるまい,,furumai,"postępowanie
 prowadzenie
 zachowanie",,,
+8483,WORD_NOUN,,HIRAGANA,,,蜜蜂,みつばち,,mitsubachi,pszczoła,,,
+8484,WORD_ADJECTIVE_I,,HIRAGANA,,,愛らしい,あいらしい ,,airashii,"śliczny
+uroczy",,,
+8485,WORD_NOUN,,HIRAGANA,,,乗手,のりて ,,norite,"pasażer
+jeździec",,,
+8486,WORD_NOUN,,HIRAGANA,,,亀裂,きれつ ,,kiretsu,"pęknięcie
+rozpadlina
+szpara",,,
+8487,WORD_NOUN,,HIRAGANA,,,予測,よそく ,,yosoku,przewidywanie,,,
+8488,WORD_NOUN,,HIRAGANA,,,人達,ひとたち ,,hitotachi,ludzie,,,
+8489,WORD_NOUN,,HIRAGANA,,,対数,たいすう ,,taisuu,logarytm,,,
+8490,WORD_NOUN,,HIRAGANA,,,砂岩,さがん ,,sagan,piaskowiec,,,8491
+8491,WORD_NOUN,,HIRAGANA,,,砂岩,しゃがん ,,shagan,piaskowiec,,,8490
+8492,WORD_NOUN,,HIRAGANA,,,短銃,たんじゅう,,tanjuu,"rewolwer
+pistolet",,,
+8493,WORD_NOUN,,HIRAGANA,,,胆汁,たんじゅう ,,tanjuu,żółć,,,
+8494,WORD_NOUN,,HIRAGANA,,,胸部,きょうぶ ,,kyoubu,"biust
+pierś",,,
+8495,WORD_NOUN,,HIRAGANA,,,苦痛,くつう ,,kutsuu,"agonia
+ból
+cierpienie
+kaźń
+męczarnia
+męka
+udręka",,,
+8496,WORD_VERB_RU,,HIRAGANA,,,弁じる,べんじる ,,benjiru,"rozmawiać
+mówić
+odezwać
+przemawiać
+gadać",,,
+8497,WORD_NOUN,,HIRAGANA,,,駝鳥,だちょう,,dachou,struś,,,
+8498,WORD_NOUN,,HIRAGANA,,,草食動物,そうしょくどうぶつ ,,soushoku doubutsu,"roślinożerca
+wegetarianin
+wegetarianka
+weganin",,,
+8499,WORD_NOUN,,HIRAGANA,,,段取り,だんどり,,dandori,"program
+projekt
+zamysł
+plan",,,
+8500,WORD_NOUN,,HIRAGANA,,,蝶蝶,ちょうちょう,,chouchou,motyl,,,
