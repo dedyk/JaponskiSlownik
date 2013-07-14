@@ -51,6 +51,7 @@ public class AndroidDictionaryGenerator {
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", 
 				"../JaponskiSlownik_dodatki/JMdict_e",
 				"../JaponskiSlownik_dodatki/edict_sub-utf8",
+				"../JaponskiSlownik_dodatki/JMnedict.xml",
 				"output/word.csv");
 		
 		generateKanaEntries("../JaponskiSlownik_dodatki/kanjivg", "output/kana.csv");
@@ -71,7 +72,7 @@ public class AndroidDictionaryGenerator {
 	}
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, 
-			String jmedictFileName, String edictCommonFileName, String destinationFileName) throws Exception {
+			String jmedictFileName, String edictCommonFileName, String edictNameFileName, String destinationFileName) throws Exception {
 		
 		System.out.println("checkAndSavePolishJapaneseEntries");
 				
@@ -95,11 +96,15 @@ public class AndroidDictionaryGenerator {
 		    
 		// read edict common
 		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict(edictCommonFileName);     
-						
+		
+		// read jmedict name
+		System.out.println("checkAndSavePolishJapaneseEntries: jmedictName");
+		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict(edictNameFileName);
+		
 		// validate
 		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");		
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict);
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict, jmedictName);
 		
 		System.out.println("checkAndSavePolishJapaneseEntries: detectDuplicatePolishJapaneseKanjiEntries");
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);
@@ -116,12 +121,7 @@ public class AndroidDictionaryGenerator {
 		
 		// generate additional data from edict
 		Helper.generateAdditionalInfoFromEdict(jmedict, jmedictCommon, result);
-		
-		// test !
-		
-		// read edict name
-		// TreeMap<String, EDictEntry> jmedictName = EdictReader.readEdict(edictNameFileName);
-		
+				
 		// generate names
 		// Helper.generateNames(jmedictName, result);		
 		

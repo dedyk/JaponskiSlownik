@@ -10,6 +10,8 @@ public class JMEDictEntry {
 	private List<String> kana = new ArrayList<String>();
 	
 	private List<String> pos = new ArrayList<String>();
+	
+	private List<String> trans = new ArrayList<String>();
 
 	public List<String> getKanji() {
 		return kanji;
@@ -23,8 +25,12 @@ public class JMEDictEntry {
 		return pos;
 	}
 
+	public List<String> getTrans() {
+		return trans;
+	}
+
 	@Override
 	public String toString() {
-		return kanji + " - " + kana + " - " + pos;
+		return kanji + " - " + kana + " - " + pos + " - " + trans;
 	}	
 }

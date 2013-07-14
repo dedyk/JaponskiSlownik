@@ -31,7 +31,7 @@ public class NameGenerator {
 		List<NameItem> nameItemList = new ArrayList<NameItem>();
 		
 		try {
-			bufferedReader = new BufferedReader(new FileReader("../JapaneseDictionary_additional/names/female_japanese_names.txt"));
+			bufferedReader = new BufferedReader(new FileReader("../JapaneseDictionary_additional/names/male_japanese_names.txt"));
 						
 			while(true) {				
 				String line = bufferedReader.readLine();

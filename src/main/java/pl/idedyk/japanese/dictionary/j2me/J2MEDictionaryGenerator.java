@@ -35,9 +35,11 @@ public class J2MEDictionaryGenerator {
 		// read edict
 		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
 		
+		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JaponskiSlownik_dodatki/JMnedict.xml");
+		
 		// Słowniczek
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict);	
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict, jmedictName);	
 		generateKanjiImages(polishJapaneseEntries, charsCache, kanjiOutputDir);
 		
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, false, true);

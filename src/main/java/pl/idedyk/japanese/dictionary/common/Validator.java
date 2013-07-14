@@ -23,7 +23,8 @@ import pl.idedyk.japanese.dictionary.tools.KanaHelper.KanaWord;
 public class Validator {
 
 	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, List<KanaEntry> hiraganaEntries,
-			List<KanaEntry> katakanaEntries, TreeMap<String, List<JMEDictEntry>> jmedict) throws JapaneseDictionaryException {
+			List<KanaEntry> katakanaEntries, TreeMap<String, List<JMEDictEntry>> jmedict, 
+			TreeMap<String, List<JMEDictEntry>> jmedictName) throws JapaneseDictionaryException {
 		
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
 		
@@ -216,6 +217,55 @@ public class Validator {
 				}			
 			}
 		}
+		
+		// validate names
+		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
+			
+			if (	dictionaryEntryType != DictionaryEntryType.WORD_NAME &&
+					dictionaryEntryType != DictionaryEntryType.WORD_MALE_NAME &&
+					dictionaryEntryType != DictionaryEntryType.WORD_FEMALE_NAME) {
+				
+				continue;
+			}
+			
+			String kanji = currentPolishJapaneseEntry.getKanji();
+			
+			if (kanji.equals("-") == true) {
+				kanji = null;
+			}
+			
+			if (currentPolishJapaneseEntry.getKanaList().size() > 1) {
+				throw new JapaneseDictionaryException("currentPolishJapaneseEntry.getKanaList().size() > 1");
+			}
+			
+			String kana = currentPolishJapaneseEntry.getKanaList().get(0); // nie powinno byc wiecej kany
+			
+			List<JMEDictEntry> jmedictEntryList = jmedictName.get(JMEDictReader.getMapKey(kanji, kana));
+			
+			if (jmedictEntryList == null || jmedictEntryList.size() == 0) {
+				System.out.println("Warning jmedict not found or size != 1 for: " + currentPolishJapaneseEntry + "\n");
+				
+			} else {
+				
+				JMEDictEntry jmeDictEntry = jmedictEntryList.get(0); // mam nadzieje, ze to dobrze
+				
+				List<String> trans = jmeDictEntry.getTrans();
+				
+				if (dictionaryEntryType == DictionaryEntryType.WORD_NAME && (trans.contains("given") == false && trans.contains("masc") == false && trans.contains("fem") == false)) {
+					System.out.println("Warning jmedict name type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
+				}
+
+				if (dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME && (trans.contains("given") == false && trans.contains("masc") == false)) {
+					System.out.println("Warning jmedict name male type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
+				}
+
+				if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME && (trans.contains("given") == false && trans.contains("fem") == false)) {
+					System.out.println("Warning jmedict name female type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
+				}
+			}
+		}		
 	}
 	
 	private static DictionaryEntryType getDictionaryEntryTypeFromEdictPos(Map<String, DictionaryEntryType> mapEdictTypeToDictionaryEntryType, List<String> pos) {

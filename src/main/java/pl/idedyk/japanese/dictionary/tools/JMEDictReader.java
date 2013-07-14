@@ -9,6 +9,7 @@ import java.util.TreeMap;
 import org.dom4j.Element;
 import org.dom4j.ElementHandler;
 import org.dom4j.ElementPath;
+import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
@@ -16,6 +17,14 @@ import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 public class JMEDictReader {
 	
 	public static TreeMap<String, List<JMEDictEntry>> readJMEdict(String fileName) throws Exception {
+		return readJMEdict(fileName, "JMdict");
+	}
+
+	public static TreeMap<String, List<JMEDictEntry>> readJMnedict(String fileName) throws Exception {
+		return readJMEdict(fileName, "JMnedict");
+	}
+	
+	private static TreeMap<String, List<JMEDictEntry>> readJMEdict(String fileName, String rootName) throws Exception {
 		
 		final TreeMap<String, List<JMEDictEntry>> treeMap = new TreeMap<String, List<JMEDictEntry>>();
 		
@@ -25,7 +34,7 @@ public class JMEDictReader {
 
 		SAXReader reader = new SAXReader();
 
-		reader.addHandler("/JMdict/entry", new ElementHandler() {
+		reader.addHandler("/" + rootName + "/entry", new ElementHandler() {
 			
 			public void onStart(ElementPath path) {
 
@@ -116,6 +125,21 @@ public class JMEDictReader {
 						if (miscText.equals("word usually written using kana alone") == true) {
 							addNoKanji = true;
 						}
+					}
+				}
+				
+				// trans
+				List<?> transList = row.selectNodes("trans");
+				
+				for (Object transListObject : transList) {
+					
+					Element trans = (Element)transListObject;
+					
+					Node nameType = trans.selectSingleNode("name_type");
+					
+					if (nameType != null) {
+						
+						jmeDictEntry.getTrans().add(entityMapper.getEntity(nameType.getText()));
 					}
 				}
 				
@@ -368,7 +392,20 @@ public class JMEDictReader {
 			addMap("sumo", "sumo term");
 			addMap("zool", "zoology term");
 			addMap("joc", "jocular, humorous term");
-			addMap("anat", "anatomical term");			
+			addMap("anat", "anatomical term");	
+			
+			addMap("surname", "family or surname");
+			addMap("place", "place name");
+			addMap("unclass", "unclassified name");
+			addMap("company", "company name");
+			addMap("product", "product name");
+			addMap("masc", "male given name or forename");
+			addMap("fem", "female given name or forename");
+			addMap("person", "full name of a particular person");
+			addMap("given", "given name or forename, gender not specified");
+			addMap("station", "railway station");
+			addMap("organization", "organization name");
+			addMap("oik", "old or irregular kana form");
 		}
 		
 		private void addMap(String entity, String desc) {
