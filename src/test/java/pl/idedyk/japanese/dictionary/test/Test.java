@@ -1,13 +1,13 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.Collection;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.TreeMap;
+import java.util.Set;
+import java.util.TreeSet;
 
-import pl.idedyk.japanese.dictionary.dto.EDictEntry;
-import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
-import pl.idedyk.japanese.dictionary.tools.EdictReader;
-import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
+import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 
 public class Test {
 
@@ -85,7 +85,6 @@ public class Test {
 		System.out.println(currentKanaAsRomaji);
 		 */
 
-		/*
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true, false);
@@ -127,7 +126,7 @@ public class Test {
 		}
 
 		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true);
-		 */
+		
 		
 		//TreeMap<String, JMEDictEntry> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
 		
@@ -184,7 +183,7 @@ public class Test {
 		}
 		 */
 		
-		TreeMap<String, EDictEntry> jmedictName = EdictReader.readEdict("../JaponskiSlownik_dodatki/enamdict-utf8");
+		//TreeMap<String, EDictEntry> jmedictName = EdictReader.readEdict("../JaponskiSlownik_dodatki/enamdict-utf8");
 		
 		/*
 		Collection<EDictEntry> values = jmedictName.values();
@@ -195,12 +194,9 @@ public class Test {
 		}
 		*/
 		
-		
-		
-		System.out.println(jmedictName.get(EdictReader.getMapKey("誠", "まこと")));
+		//System.out.println(jmedictName.get(EdictReader.getMapKey("誠", "まこと")));
 	}
 
-	/*
 	private static Set<Integer> generateKnownDuplicatedIdForKanji(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, String kanji) {
 
 		Set<Integer> result = new TreeSet<Integer>();
@@ -246,5 +242,4 @@ public class Test {
 			}
 		}
 	}
-	 */
 }
