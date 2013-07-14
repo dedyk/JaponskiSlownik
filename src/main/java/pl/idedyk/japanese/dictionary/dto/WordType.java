@@ -9,7 +9,9 @@ public enum WordType {
 	
 	KATAKANA_HIRAGANA("K"),
 	
-	HIRAGANA_EXCEPTION("H");
+	HIRAGANA_EXCEPTION("H"),
+	
+	EXCEPTION("E");
 	
 	private String printable;
 

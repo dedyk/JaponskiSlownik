@@ -51,7 +51,6 @@ public class AndroidDictionaryGenerator {
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", 
 				"../JaponskiSlownik_dodatki/JMdict_e",
 				"../JaponskiSlownik_dodatki/edict_sub-utf8",
-				"../JaponskiSlownik_dodatki/enamdict-utf8",
 				"output/word.csv");
 		
 		generateKanaEntries("../JaponskiSlownik_dodatki/kanjivg", "output/kana.csv");
@@ -72,7 +71,7 @@ public class AndroidDictionaryGenerator {
 	}
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, 
-			String jmedictFileName, String edictCommonFileName, String edictNameFileName, String destinationFileName) throws Exception {
+			String jmedictFileName, String edictCommonFileName, String destinationFileName) throws Exception {
 		
 		System.out.println("checkAndSavePolishJapaneseEntries");
 				

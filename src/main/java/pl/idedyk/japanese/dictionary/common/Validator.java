@@ -64,6 +64,10 @@ public class Validator {
 			
 			for (int idx = 0; idx < romajiList.size(); ++idx) {
 				
+				if (polishJapaneseEntry.getWordType() == WordType.EXCEPTION) {
+					continue;
+				}
+				
 				String currentRomaji = romajiList.get(idx);
 				
 				String currentRomajiWithPrefix = prefixRomaji + currentRomaji;
