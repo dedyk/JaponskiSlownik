@@ -245,24 +245,58 @@ public class Validator {
 			List<JMEDictEntry> jmedictEntryList = jmedictName.get(JMEDictReader.getMapKey(kanji, kana));
 			
 			if (jmedictEntryList == null || jmedictEntryList.size() == 0) {
-				System.out.println("Warning jmedict not found or size != 1 for: " + currentPolishJapaneseEntry + "\n");
+				System.out.println("Warning jmedict not found for: " + currentPolishJapaneseEntry + "\n");
 				
 			} else {
 				
-				JMEDictEntry jmeDictEntry = jmedictEntryList.get(0); // mam nadzieje, ze to dobrze
-				
-				List<String> trans = jmeDictEntry.getTrans();
-				
-				if (dictionaryEntryType == DictionaryEntryType.WORD_NAME && (trans.contains("given") == false && trans.contains("masc") == false && trans.contains("fem") == false)) {
-					System.out.println("Warning jmedict name type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
-				}
+				if (jmedictEntryList.size() == 1) {
+					
+					JMEDictEntry jmeDictEntry = jmedictEntryList.get(0);
+					
+					List<String> trans = jmeDictEntry.getTrans();
+					
+					if (dictionaryEntryType == DictionaryEntryType.WORD_NAME && (trans.contains("given") == false && trans.contains("masc") == false && trans.contains("fem") == false)) {
+						System.out.println("Warning jmedict name type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
+					}
 
-				if (dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME && (trans.contains("given") == false && trans.contains("masc") == false)) {
-					System.out.println("Warning jmedict name male type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
-				}
+					if (dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME && (trans.contains("given") == false && trans.contains("masc") == false)) {
+						System.out.println("Warning jmedict name male type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
+					}
 
-				if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME && (trans.contains("given") == false && trans.contains("fem") == false)) {
-					System.out.println("Warning jmedict name female type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
+					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME && (trans.contains("given") == false && trans.contains("fem") == false)) {
+						System.out.println("Warning jmedict name female type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
+					}
+					
+				} else {
+					
+					boolean wasOk = false;
+					
+					for (JMEDictEntry jmeDictEntry : jmedictEntryList) {
+												
+						List<String> trans = jmeDictEntry.getTrans();
+						
+						if (dictionaryEntryType == DictionaryEntryType.WORD_NAME && (trans.contains("given") == true || trans.contains("masc") == true || trans.contains("fem") == true)) {
+							wasOk = true; 
+							
+							break;
+						}
+
+						if (dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME && (trans.contains("given") == true || trans.contains("masc") == true)) {
+							wasOk = true;
+							
+							break;
+						}
+
+						if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME && (trans.contains("given") == true || trans.contains("fem") == true)) {
+							wasOk = true;
+							
+							break;
+						}
+					}	
+					
+					if (wasOk == false) {
+						System.out.println("Warning jmedict name type error for: " + currentPolishJapaneseEntry + "\n");
+					}
 				}
 			}
 		}		
