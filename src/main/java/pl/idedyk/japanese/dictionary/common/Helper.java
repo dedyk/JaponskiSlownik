@@ -172,7 +172,19 @@ public class Helper {
 								attributeTypeList.add(AttributeType.VERB_INTRANSITIVITY);
 							}						
 						}						
-					}					
+					}
+					
+					// kanji/kana alone
+					/*				
+					FIXME: misc	
+					if (attributeTypeList.contains(AttributeType.KANJI_ALONE) == false && foundJMEDict.getPos().contains("uK") == true) {
+						attributeTypeList.add(AttributeType.KANJI_ALONE);
+					}
+					
+					if (attributeTypeList.contains(AttributeType.KANA_ALONE) == false && foundJMEDict.getPos().contains("uk") == true) {
+						attributeTypeList.add(AttributeType.KANA_ALONE);
+					}
+					*/					
 				}				
 			}			
 		}

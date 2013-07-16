@@ -12,5 +12,9 @@ public enum AttributeType {
 	
 	VERB_KEIGO_LOW,
 	
-	COMMON_WORD;
+	COMMON_WORD,
+	
+	KANJI_ALONE,
+	
+	KANA_ALONE;
 }
