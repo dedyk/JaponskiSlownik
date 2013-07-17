@@ -122,6 +122,8 @@ public class JMEDictReader {
 						
 						String miscText = misc.getText();
 						
+						jmeDictEntry.getMisc().add(entityMapper.getEntity(miscText));
+						
 						if (miscText.equals("word usually written using kana alone") == true) {
 							addNoKanji = true;
 						}

@@ -11,6 +11,8 @@ public class JMEDictEntry {
 	
 	private List<String> pos = new ArrayList<String>();
 	
+	private List<String> misc = new ArrayList<String>();
+	
 	private List<String> trans = new ArrayList<String>();
 
 	public List<String> getKanji() {
@@ -25,12 +27,16 @@ public class JMEDictEntry {
 		return pos;
 	}
 
+	public List<String> getMisc() {
+		return misc;
+	}
+
 	public List<String> getTrans() {
 		return trans;
 	}
 
 	@Override
 	public String toString() {
-		return kanji + " - " + kana + " - " + pos + " - " + trans;
+		return kanji + " - " + kana + " - " + pos + " - " + misc + " - " + trans;
 	}	
 }

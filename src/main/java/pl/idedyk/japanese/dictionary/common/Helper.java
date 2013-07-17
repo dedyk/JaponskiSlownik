@@ -175,16 +175,13 @@ public class Helper {
 					}
 					
 					// kanji/kana alone
-					/*				
-					FIXME: misc	
-					if (attributeTypeList.contains(AttributeType.KANJI_ALONE) == false && foundJMEDict.getPos().contains("uK") == true) {
+					if (attributeTypeList.contains(AttributeType.KANJI_ALONE) == false && foundJMEDict.getMisc().contains("uK") == true) {
 						attributeTypeList.add(AttributeType.KANJI_ALONE);
 					}
 					
-					if (attributeTypeList.contains(AttributeType.KANA_ALONE) == false && foundJMEDict.getPos().contains("uk") == true) {
+					if (attributeTypeList.contains(AttributeType.KANA_ALONE) == false && foundJMEDict.getMisc().contains("uk") == true) {
 						attributeTypeList.add(AttributeType.KANA_ALONE);
 					}
-					*/					
 				}				
 			}			
 		}
