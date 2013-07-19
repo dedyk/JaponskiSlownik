@@ -1977,6 +1977,7 @@ słony",,,4369
 wymagający
 ostry
 rygorystyczny
+ścisły
 intensywny",,,
 998,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-13,,近い,ちかい,,chikai,bliski,,,
 999,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-13,,-,だめ,,dame,"beznadziejny
@@ -2763,6 +2764,7 @@ Genki 2-18",,明るい,あかるい,,akarui,"pogodny
 jasny
 radosny",,,
 1432,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,説明,せつめい,,setsumei,"wyjaśnienie
+objaśnienie
 wytłumaczenie",,,
 1433,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,重病,じゅうびょう,,juubyou,poważnie chory,,,
 1434,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,急病,きゅうびょう,,kyuubyou,nagła choroba,,,
@@ -4790,7 +4792,8 @@ wyrostek
 maluch",,,
 2582,WORD_NOUN,,HIRAGANA,,,油,あぶら,,abura,"olej
 tłuszcz",,,
-2583,WORD_NOUN,,HIRAGANA,,,石油,せきゆ,,sekiyu,ropa naftowa,,,
+2583,WORD_NOUN,,HIRAGANA,,,石油,せきゆ,,sekiyu,"ropa naftowa
+nafta",,,
 2584,WORD_NOUN,,HIRAGANA,,,原油,げんゆ,,gen'yu,nie rafinowana ropa,,,
 2585,WORD_NOUN,,HIRAGANA,,,油田,ゆでん,,yuden,pole naftowe,,,
 2586,WORD_NOUN,,HIRAGANA,,,油絵,あぶらえ,,aburae,olejny obraz,,,
@@ -4991,7 +4994,8 @@ rządzenie",,,
 odbicie
 pozostałości
 ruiny",,,
-2684,WORD_NOUN,,HIRAGANA,,,地平線,ちへいせん,,chiheisen,horyzont,,,
+2684,WORD_NOUN,,HIRAGANA,,,地平線,ちへいせん,,chiheisen,"horyzont
+widnokrąg",,,
 2685,WORD_NOUN,,HIRAGANA,,,涯,はて,,hate,horyzont,,,
 2686,WORD_VERB_U,,HIRAGANA,,,挿す,さす,,sasu,"wciskać
 wkładać do",,,
@@ -8899,7 +8903,8 @@ powierzchowność",,,
 brunet",,,
 4797,WORD_VERB_U,,HIRAGANA,,,弱る,よわる,,yowaru,słabnąć,,,
 4798,WORD_NOUN,,HIRAGANA,,,弱点,じゃくてん,,jakuten,"słaby punkt
-słabość",,,
+słabość
+osłabienie",,,
 4799,WORD_NOUN,,HIRAGANA,,,弱視,じゃくし,,jakushi,słaby wzrok,,,
 4800,WORD_NOUN,,HIRAGANA,,,弱肉強食,じゃくにくきょうしょく,,jakuni kukyoushoku,przetrwanie najbardziej dostosowanych,,,
 4801,WORD_ADJECTIVE_NA,,HIRAGANA,,,弱体,じゃくたい,,jakutai,słaby,fizycznie,,
@@ -9621,7 +9626,8 @@ przepowiadanie",,,
 5133,WORD_NOUN,,HIRAGANA,,,識,しき,,shiki,"znać
 odróżniać",,,
 5134,WORD_NOUN,,HIRAGANA,,,知識,ちしき,,chishiki,wiedza,,,
-5135,WORD_NOUN,,HIRAGANA,,,意識,いしき,,ishiki,świadomość,,,
+5135,WORD_NOUN,,HIRAGANA,,,意識,いしき,,ishiki,"świadomość
+przytomność",,,
 5136,WORD_NOUN,,HIRAGANA,,,無意識,むいしき,,muishiki,"podświadomość
 nieświadomość",,,
 5137,WORD_NOUN,,HIRAGANA,,,識別,しきべつ,,shikibetsu,rozpoznawanie,,,
@@ -16305,7 +16311,8 @@ Genki kanji 2-19",,春,はる,,Haru,Haru,,,746
 8594,WORD_FEMALE_NAME,,HIRAGANA,,,順子,じゅんこ,,Junko,Junko,,,
 8595,WORD_FEMALE_NAME,,HIRAGANA,,,純子,じゅんこ,,Junko,Junko,,,
 8596,WORD_FEMALE_NAME,,HIRAGANA,,,-,かえで,,Kaede,Kaede,,,
-8597,WORD_FEMALE_NAME,,HIRAGANA,,,-,かめ,,Kame,Kame,,,1693
+8597,WORD_FEMALE_NAME,,HIRAGANA,,,-,かめ,,Kame,Kame,,,"1693
+8990"
 8598,WORD_FEMALE_NAME,,HIRAGANA,,,亀子,かめこ,,Kameko,Kameko,,,
 8599,WORD_FEMALE_NAME,,HIRAGANA,,,瓶子,かめこ,,Kameko,Kameko,,,
 8600,WORD_FEMALE_NAME,,HIRAGANA,,,亀世,かめよ,,Kameyo,Kameyo,,,
@@ -16763,7 +16770,7 @@ waleczny
 dzielny
 mężny",,,
 8981,WORD_NOUN,,HIRAGANA,,,息吹き,いぶき ,,ibuki,oddech,,,
-8982,WORD_NOUN,,HIRAGANA,,,地球物理学,ちきゅうぶつりがく,,chikyuubutsugaku,geofizyka,,,
+8982,WORD_NOUN,,HIRAGANA,,,地球物理学,ちきゅうぶつりがく,,chikyuubutsurigaku,geofizyka,,,
 8983,WORD_NOUN,,HIRAGANA,,,討論会,とうろんかい ,,touronkai,"debata
 panel dyskusyjny
 forum",,,
@@ -16777,6 +16784,44 @@ dodawanie",,,
 8989,WORD_NOUN,,HIRAGANA,,,傷跡,きずあと ,,kizuato,"blizna
 szrama",,,
 8990,WORD_NOUN,,HIRAGANA,,,甕,かめ ,,kame,"dzban
-dzbanek",,,
+dzbanek",,,8597
 8991,WORD_NOUN,,HIRAGANA,,,令聞,れいぶん ,,reibun,"renoma
 sława",,,
+8992,WORD_NOUN,,HIRAGANA,,,伯爵,はくしゃく ,,hakushaku,hrabia,,,
+8993,WORD_NOUN,,HIRAGANA,,,改変,かいへん ,,kaihen,"inwencja
+wymysł
+wynalazek
+wynalezienie",,,
+8994,WORD_NOUN,,HIRAGANA,,,芳香,ほうこう ,,houkou,"perfumy
+woń
+zapach",,,
+8995,WORD_NOUN,,HIRAGANA,,,講和,こうわ ,,kouwa,"pojednanie
+pogodzenie się
+zgoda
+pokój
+spokój",,,
+8996,WORD_NOUN,,HIRAGANA,,,阻害,そがい ,,sogai,"przeszkoda
+trudność
+zawada",,,
+8997,WORD_NOUN,,HIRAGANA,,,陰謀,いんぼう ,,inbou,"konspiracja
+spisek
+sprzysiężenie
+zmowa",,,
+8998,WORD_NOUN,,HIRAGANA,,,司令官,しれいかん ,,shireikan,"dowódca
+komendant
+wódz",,,
+8999,WORD_ADJECTIVE_I,,HIRAGANA,,,酷しい,きびしい ,,kibishii,"surowy
+wymagający
+ostry
+rygorystyczny
+ścisły
+intensywny",,,
+9000,WORD_NOUN,,HIRAGANA,,,仕組み,しくみ ,,shikumi,"organizacja
+urządzenie",,,
+9001,WORD_NOUN,,HIRAGANA,,,不一致,ふいっち ,,fuicchi,"niezgoda
+niezgodność",,,
+9002,WORD_NOUN,,HIRAGANA,,,平行四辺形,へいこうしへんけい ,,heikoushihenkei,równoległobok,,,
+9003,WORD_NOUN,,HIRAGANA,,,磐,いわ ,,iwa,"głaz
+skała",,,
+9004,WORD_NOUN,,HIRAGANA,,,私設,しせつ ,,shisetsu,prywatny,,,
+9005,WORD_NOUN,,HIRAGANA,,,病理学,びょうりがく ,,byourigaku,patologia,,,
