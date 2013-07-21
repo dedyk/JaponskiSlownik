@@ -1496,7 +1496,9 @@ kontrakt
 prenumerata",,,
 754,UNKNOWN,,HIRAGANA,Genki 1-10,,来学期,らいがっき,,raigakki,następny semestr,,,
 755,WORD_NOUN,,HIRAGANA,Genki 1-10,,-,りんご,,ringo,jabłko,,,
-756,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,暖かい,あたたかい,,atatakai,ciepły,,,3628
+756,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,暖かい,あたたかい,,atatakai,"ciepły
+miły
+przyjazny",,,3628
 757,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,涼しい,すずしい,,suzushii,"zimny
 chłodny
 orzeźwiający",tylko do pogody,,
@@ -4102,7 +4104,8 @@ pytanie",,,
 2193,WORD_NOUN,,HIRAGANA,,,機械翻訳,きかいほんやく,,kikaihon'yaku,tłumaczenie automatyczne,,,
 2194,WORD_NOUN,,HIRAGANA,,,自動翻訳,じどうほんやく,,jidouhon'yaku,tłumaczenie automatyczne,,,
 2195,WORD_NOUN,,HIRAGANA,,,自動,じどう,,jidou,automatyczne,,,
-2196,WORD_NOUN,,HIRAGANA,,,仲間,なかま,,nakama,"towarzystwo
+2196,WORD_NOUN,,HIRAGANA,,,仲間,なかま,,nakama,"wspólnik
+towarzystwo
 koledzy
 kompania
 grupa
@@ -4648,7 +4651,9 @@ przebić",,,
 ugrząźć
 utknąć",,,
 2498,WORD_NOUN,,HIRAGANA,,,糸,いと,,ito,"nić
-nitka",,,
+nitka
+przędza
+wątek",,,
 2499,WORD_NOUN,,HIRAGANA,,,生糸,きいと,,kiito,surowy jedwab,,,
 2500,WORD_NOUN,,HIRAGANA,,,糸口,いとぐち,,itoguchi,"koniec nitki
 początek
@@ -5578,7 +5583,10 @@ określony (ograniczony) czas",,,
 2984,WORD_NOUN,,HIRAGANA,,,期末,きまつ,,kimatsu,zakończenie okresu,,,
 2985,WORD_NOUN,,HIRAGANA,,,機能,きのう,,kinou,"funkcja
 operacja",,,
-2986,WORD_NOUN,,HIRAGANA,,,機会,きかい,,kikai,okazja,,,
+2986,WORD_NOUN,,HIRAGANA,,,機会,きかい,,kikai,"okazja
+sposobność
+możliwość
+możność",,,
 2987,WORD_NOUN,,HIRAGANA,,,機関室,きかんしつ,,kikanshitsu,maszynownia,,,
 2988,WORD_NOUN,,HIRAGANA,,,機嫌,きげん,,kigen,"zdrowie
 stan ducha
@@ -7089,6 +7097,7 @@ strażnik",,,
 3835,WORD_NOUN,,HIRAGANA,,,残り物,のこりもの,,nokorimono,"resztki
 pozostałości",,,
 3836,WORD_VERB_U,,HIRAGANA,,,生き残る,いきのこる,,ikinokoru,"ocaleć
+przetrwać
 pozostać przy życiu",,,
 3837,WORD_ADJECTIVE_NA,,HIRAGANA,,,残酷,ざんこく,,zankoku,"brutalność
 okrucieństwo",,,
@@ -8180,6 +8189,8 @@ obręcz",,,
 4422,WORD_NOUN,,HIRAGANA,,,競輪,けいりん,,keirin,wyścigi kolarskie,,,
 4423,WORD_VERB_RU,,HIRAGANA,,,似せる,にせる,,niseru,"naśladować
 kopiować
+powielać
+przepisywać
 robić na wzór",,,
 4424,WORD_NOUN,,HIRAGANA,,,似顔,にがお,,nigao,podobieństwo twarzy,,,
 4425,WORD_NOUN,,HIRAGANA,,,似顔絵,にがおえ,,nigaoe,portret,,,
@@ -9130,7 +9141,8 @@ tętnica",,,
 ość (u ryby)
 szkielet
 kręgosłup",,,5529
-4899,WORD_NOUN,,HIRAGANA,,,資本,しほん,,shihon,kapitał,,,
+4899,WORD_NOUN,,HIRAGANA,,,資本,しほん,,shihon,"kapitał
+fundusze",,,
 4900,WORD_NOUN,,HIRAGANA,,,資金,しきん,,shikin,fundusze,,,
 4901,WORD_NOUN,,HIRAGANA,,,資源,しげん,,shigen,"środki
 zasoby",,,
@@ -12638,7 +12650,10 @@ górka",,,
 6732,WORD_NOUN,,HIRAGANA,,,山頂,さんちょう,,sanchou,szczyt góry,,,
 6733,WORD_NOUN,,HIRAGANA,,,山水,さんすい,,sansui,"widok
 krajobraz",,,
-6734,WORD_NOUN,,HIRAGANA,,,国家,こっか,,kokka,państwo,,,
+6734,WORD_NOUN,,HIRAGANA,,,国家,こっか,,kokka,"państwo
+nacja
+prowincja
+stan",,,
 6735,WORD_NOUN,,HIRAGANA,,,英知,えいち,,eichi,"mądrość
 inteligencja",,,
 6736,WORD_NOUN,,HIRAGANA,,,英気,えいき,,eiki,entuzjazm,,,
@@ -15066,9 +15081,11 @@ wyrzucać
 odsuwać
 anty-",,,
 8022,WORD_NOUN,,HIRAGANA,,,舟,ふね,,fune,"łódź
-statek",,,8023
+statek
+okręt",,,8023
 8023,WORD_NOUN,,HIRAGANA,,,舟,ふな,,funa,"łódź
-statek",,,8022
+statek
+okręt",,,8022
 8024,WORD_VERB_U,,HIRAGANA,,,驚く,おどろく,,odoroku,"dziwić się
 być zaskoczonym",,,
 8025,WORD_VERB_U,,HIRAGANA,,,驚かす,おどろかす,,odorokasu,"zadziwiać
@@ -16016,6 +16033,9 @@ trzymać pomiędzy
 uszczypnąć
 ścisnąć",,,
 8409,WORD_VERB_RU,,HIRAGANA,,,埋める,うずめる,,uzumeru,"grzebać
+pochować
+zakopać
+zakopywać
 napełniać
 nalewać",,,8410
 8410,WORD_VERB_RU,,HIRAGANA,,,埋める,うめる,,umeru,"grzebać
@@ -16893,3 +16913,46 @@ fascynacja",,,
 9034,WORD_NOUN,,HIRAGANA,,,開拓者,かいたくしゃ ,,kaitakusha,pionier,,,
 9035,WORD_NOUN,,HIRAGANA,,,胴回り,どうまわり ,,doumawari,talia,,,
 9036,WORD_NOUN,,HIRAGANA,,,修道院長,しゅうどういんちょう ,,shuudouinchou,opat,,,
+9037,WORD_NOUN,,HIRAGANA,,,電子工学,でんしこうがく ,,denshikougaku,elektronika,,,
+9038,WORD_NOUN,,HIRAGANA,,,傾斜,けいしゃ ,,keisha,"nachylenie
+pochylenie
+skłonność",,,
+9039,WORD_ADJECTIVE_NA,,HIRAGANA,,,明朗,めいろう ,,meirou,"jasny
+klarowny
+pogodny
+radosny
+wesoły
+wyraźny",,,
+9040,WORD_NOUN,,HIRAGANA,,,気風,きっぷ ,,kippu,"charakter
+cechy charakteru
+nastrój",,,9041
+9041,WORD_NOUN,,HIRAGANA,,,気風,きふう ,,kifuu,"charakter
+cechy charakteru
+nastrój",,,9040
+9042,WORD_NOUN,,HIRAGANA,,,番卒,ばんそつ ,,bansotsu,"wartownik
+strażnik
+ochroniarz",,,
+9043,WORD_NOUN,,HIRAGANA,,,豌豆,えんどう,,endou,groch,,,
+9044,WORD_NOUN,,HIRAGANA,,,痘瘡,とうそう ,,tousou,ospa,,,
+9045,WORD_NOUN,,HIRAGANA,,,瞑想,めいそう ,,meisou,"medytacja
+rozmyślanie",,,
+9046,WORD_NOUN,,HIRAGANA,,,荷車,にぐるま ,,niguruma,"fura
+furmanka
+wóz
+wózek",,,
+9047,WORD_NOUN,,HIRAGANA,,,霊柩,れいきゅう ,,reikyuu,trumna,,,
+9048,WORD_VERB_U,,HIRAGANA,,,著わす,あらわす ,,arawasu,"pisać
+napisać
+wypisywać
+publikować",,,
+9049,WORD_VERB_RU,,HIRAGANA,,,仕訳ける,しわける ,,shiwakeru,"klasyfikować
+segregować
+sklasyfikować
+sortować
+zliczać",,,
+9050,WORD_NOUN,,KATAKANA,,,-,ハムスター,,hamusutaa,chomik,,,
+9051,UNKNOWN,,HIRAGANA,,,見知らぬ,みしらぬ ,,mishiranu,"dziwny
+obcy
+nieznajomy",,,
+9052,WORD_NOUN,,HIRAGANA,,,微笑み,ほおえみ ,,hooemi,uśmiech,,,9053
+9053,WORD_NOUN,,HIRAGANA,,,微笑み,ほほえみ ,,hohoemi,uśmiech,,,9052
