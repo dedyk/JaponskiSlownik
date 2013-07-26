@@ -9,7 +9,7 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 	
 	private DictionaryEntryType dictionaryEntryType;
 	
-	private List<AttributeType> attributeTypeList;
+	private AttributeList attributeList;
 	
 	private WordType wordType;
 	
@@ -126,8 +126,8 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 	@Override
 	public String toString() {
 		return "PolishJapaneseEntry [id=" + id + ", dictionaryEntryType="
-				+ dictionaryEntryType + ", attributeTypeList="
-				+ attributeTypeList + ", wordType=" + wordType
+				+ dictionaryEntryType + ", attributeList="
+				+ attributeList + ", wordType=" + wordType
 				+ ", prefixKana=" + prefixKana + ", groups=" + groups
 				+ ", kanji=" + kanji + ", kanaList=" + kanaList
 				+ ", prefixRomaji=" + prefixRomaji + ", romajiList="
@@ -184,12 +184,12 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 		this.groups = groups;
 	}
 
-	public List<AttributeType> getAttributeTypeList() {
-		return attributeTypeList;
+	public AttributeList getAttributeList() {
+		return attributeList;
 	}
 
-	public void setAttributeTypeList(List<AttributeType> attributeTypeList) {
-		this.attributeTypeList = attributeTypeList;
+	public void setAttributeList(AttributeList attributeList) {
+		this.attributeList = attributeList;
 	}
 
 	@Override

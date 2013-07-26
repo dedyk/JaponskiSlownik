@@ -48,7 +48,8 @@ public class AndroidDictionaryGenerator {
 
 	public static void main(String[] args) throws Exception {
 		
-		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv", 
+		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv",
+				"input/transitive_intransitive_pairs.csv",
 				"../JaponskiSlownik_dodatki/JMdict_e",
 				"../JaponskiSlownik_dodatki/edict_sub-utf8",
 				"../JaponskiSlownik_dodatki/JMnedict.xml",
@@ -71,7 +72,7 @@ public class AndroidDictionaryGenerator {
 				);
 	}
 
-	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, 
+	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, String transitiveIntransitivePairsFileName,
 			String jmedictFileName, String edictCommonFileName, String edictNameFileName, String destinationFileName) throws Exception {
 		
 		System.out.println("checkAndSavePolishJapaneseEntries");
@@ -121,6 +122,9 @@ public class AndroidDictionaryGenerator {
 		
 		// generate additional data from edict
 		Helper.generateAdditionalInfoFromEdict(jmedict, jmedictCommon, result);
+		
+		// generate transitive intransitive pairs
+		Helper.generateTransitiveIntransitivePairs(result, transitiveIntransitivePairsFileName);
 				
 		// generate names
 		// Helper.generateNames(jmedictName, result);		

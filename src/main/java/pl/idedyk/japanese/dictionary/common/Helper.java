@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary.common;
 
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -7,6 +8,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import com.csvreader.CsvReader;
+
+import pl.idedyk.japanese.dictionary.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
@@ -109,7 +113,7 @@ public class Helper {
 			List<JMEDictEntry> foundJMEDictList = findJMEdictEntry(jmedict, currentPolishJapaneseEntry);
 			EDictEntry foundEdictCommon = findEdictEntry(jmedictCommon, currentPolishJapaneseEntry); 
 			
-			List<AttributeType> attributeTypeList = currentPolishJapaneseEntry.getAttributeTypeList();
+			AttributeList attributeList = currentPolishJapaneseEntry.getAttributeList();
 			
 			if (foundJMEDictList != null) {
 				
@@ -118,8 +122,8 @@ public class Helper {
 					// common word
 					if (foundEdictCommon != null) {
 						
-						if (attributeTypeList.contains(AttributeType.COMMON_WORD) == false) {						
-							attributeTypeList.add(0, AttributeType.COMMON_WORD);						
+						if (attributeList.contains(AttributeType.COMMON_WORD) == false) {						
+							attributeList.add(0, AttributeType.COMMON_WORD);						
 						}					
 					}			
 					
@@ -130,9 +134,9 @@ public class Helper {
 						
 						if (	foundJMEDict.getPos().contains("n") == true && 
 								foundJMEDict.getPos().contains("vs") == true &&
-								attributeTypeList.contains(AttributeType.SURU_VERB) == false) {
+								attributeList.contains(AttributeType.SURU_VERB) == false) {
 													
-							attributeTypeList.add(AttributeType.SURU_VERB);						
+							attributeList.add(AttributeType.SURU_VERB);						
 						}					
 					}
 					
@@ -162,25 +166,25 @@ public class Helper {
 						}
 						*/
 						
-						if (	attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == false &&
-								attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == false) {
+						if (	attributeList.contains(AttributeType.VERB_TRANSITIVITY) == false &&
+								attributeList.contains(AttributeType.VERB_INTRANSITIVITY) == false) {
 							
 							if (foundJMEDict.getPos().contains("vt") == true) {
-								attributeTypeList.add(AttributeType.VERB_TRANSITIVITY);
+								attributeList.add(AttributeType.VERB_TRANSITIVITY);
 								
 							} else if (foundJMEDict.getPos().contains("vi") == true) {
-								attributeTypeList.add(AttributeType.VERB_INTRANSITIVITY);
+								attributeList.add(AttributeType.VERB_INTRANSITIVITY);
 							}						
 						}						
 					}
 					
 					// kanji/kana alone
-					if (attributeTypeList.contains(AttributeType.KANJI_ALONE) == false && foundJMEDict.getMisc().contains("uK") == true) {
-						attributeTypeList.add(AttributeType.KANJI_ALONE);
+					if (attributeList.contains(AttributeType.KANJI_ALONE) == false && foundJMEDict.getMisc().contains("uK") == true) {
+						attributeList.add(AttributeType.KANJI_ALONE);
 					}
 					
-					if (attributeTypeList.contains(AttributeType.KANA_ALONE) == false && foundJMEDict.getMisc().contains("uk") == true) {
-						attributeTypeList.add(AttributeType.KANA_ALONE);
+					if (attributeList.contains(AttributeType.KANA_ALONE) == false && foundJMEDict.getMisc().contains("uk") == true) {
+						attributeList.add(AttributeType.KANA_ALONE);
 					}
 				}				
 			}			
@@ -285,7 +289,7 @@ public class Helper {
 			
 			newPolishJapaneseEntry.setWordType(WordType.HIRAGANA_KATAKANA);
 			
-			newPolishJapaneseEntry.setAttributeTypeList(new ArrayList<AttributeType>());
+			newPolishJapaneseEntry.setAttributeList(new AttributeList());
 			newPolishJapaneseEntry.setGroups(new ArrayList<String>());
 			
 			newPolishJapaneseEntry.setKanji(kanji != null ? kanji : "-");
@@ -316,5 +320,173 @@ public class Helper {
 			
 			counter++;
 		}	
+	}
+	
+	private static class TransitiveIntransitivePair {
+		
+		String transitiveKanji;
+		String transitiveKana;
+		
+		String intransitiveKanji;
+		String intransitiveKana;
+	}
+
+	public static void generateTransitiveIntransitivePairs(List<PolishJapaneseEntry> polishJapaneseEntryList, String transitiveIntransitivePairsFileName) throws Exception {
+		
+		CsvReader csvReader = new CsvReader(new FileReader(transitiveIntransitivePairsFileName), ',');
+		
+		List<TransitiveIntransitivePair> transitiveIntransitivePairList = new ArrayList<TransitiveIntransitivePair>();
+		
+		while(csvReader.readRecord()) {
+			
+			// transitive
+			String transitiveKanji = csvReader.get(0);
+			String transitiveKana = csvReader.get(1);
+			
+			// intransitive
+			String intransitiveKanji = csvReader.get(5);
+			String intransitiveKana = csvReader.get(6);
+			
+			TransitiveIntransitivePair transitiveIntransitivePair = new TransitiveIntransitivePair();
+			
+			transitiveIntransitivePair.transitiveKanji = transitiveKanji;
+			transitiveIntransitivePair.transitiveKana = transitiveKana;
+			
+			transitiveIntransitivePair.intransitiveKanji = intransitiveKanji;
+			transitiveIntransitivePair.intransitiveKana = intransitiveKana;
+			
+			transitiveIntransitivePairList.add(transitiveIntransitivePair);
+		}
+		
+		csvReader.close();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+			
+			String kanji = polishJapaneseEntry.getKanji();
+			List<String> kanaList = polishJapaneseEntry.getKanaList();
+			
+			AttributeList attributeList = polishJapaneseEntry.getAttributeList();
+			
+			if (attributeList.contains(AttributeType.VERB_TRANSITIVITY) == true) {
+				
+				TransitiveIntransitivePair transitiveIntransitivePair = null;
+				
+				for (String currentKana : kanaList) {
+					
+					transitiveIntransitivePair = findTransitiveIntransitivePairFromTransitiveVerb(transitiveIntransitivePairList, kanji, currentKana);
+					
+					if (transitiveIntransitivePair != null) {
+						break;
+					}
+				}
+				
+				if (transitiveIntransitivePair != null) {
+					
+					PolishJapaneseEntry intransitivePolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntryList, transitiveIntransitivePair.intransitiveKanji, transitiveIntransitivePair.intransitiveKana);
+					
+					if (intransitivePolishJapaneseEntry != null) {
+						
+						attributeList.addAttributeValue(AttributeType.VERB_INTRANSITIVITY_PAIR, String.valueOf(intransitivePolishJapaneseEntry.getId()));
+					}
+				}
+				
+			} else 	if (attributeList.contains(AttributeType.VERB_INTRANSITIVITY) == true) {
+
+				TransitiveIntransitivePair transitiveIntransitivePair = null;
+				
+				for (String currentKana : kanaList) {
+					
+					transitiveIntransitivePair = findTransitiveIntransitivePairFromIntransitiveVerb(transitiveIntransitivePairList, kanji, currentKana);
+					
+					if (transitiveIntransitivePair != null) {
+						break;
+					}
+				}
+				
+				if (transitiveIntransitivePair != null) {
+					
+					PolishJapaneseEntry transitivePolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntryList, transitiveIntransitivePair.transitiveKanji, transitiveIntransitivePair.transitiveKana);
+					
+					if (transitivePolishJapaneseEntry != null) {
+						
+						attributeList.addAttributeValue(AttributeType.VERB_TRANSITIVITY_PAIR, String.valueOf(transitivePolishJapaneseEntry.getId()));
+					}
+				}				
+			}
+		}
+	}
+	
+	private static TransitiveIntransitivePair findTransitiveIntransitivePairFromTransitiveVerb(List<TransitiveIntransitivePair> transitiveIntransitivePairList, 
+			String transitiveKanjiToFound, String transitiveKanaToFound) {
+				
+		for (TransitiveIntransitivePair transitiveIntransitivePair : transitiveIntransitivePairList) {
+			
+			String transitiveKanji = transitiveIntransitivePair.transitiveKanji;
+			String transitiveKana = transitiveIntransitivePair.transitiveKana;
+			
+			if (transitiveKanji.equals("") == true) {
+				transitiveKanji = "-";
+			}
+			
+			if (transitiveKanji.equals(transitiveKanjiToFound) == true && transitiveKana.equals(transitiveKanaToFound) == true) {
+				
+				return transitiveIntransitivePair;
+			}
+		}
+		
+		return null;
+	}
+	
+	private static TransitiveIntransitivePair findTransitiveIntransitivePairFromIntransitiveVerb(List<TransitiveIntransitivePair> transitiveIntransitivePairList, 
+			String intransitiveKanjiToFound, String intransitiveKanaToFound) {
+				
+		for (TransitiveIntransitivePair transitiveIntransitivePair : transitiveIntransitivePairList) {
+			
+			String intransitiveKanji = transitiveIntransitivePair.intransitiveKanji;
+			String intransitiveKana = transitiveIntransitivePair.intransitiveKana;
+			
+			if (intransitiveKanji.equals("") == true) {
+				intransitiveKanji = "-";
+			}
+			
+			if (intransitiveKanji.equals(intransitiveKanjiToFound) == true && intransitiveKana.equals(intransitiveKanaToFound) == true) {
+				
+				return transitiveIntransitivePair;
+			}
+		}
+		
+		return null;
+	}
+	
+	private static PolishJapaneseEntry findPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries, 
+			String kanji, String kana) {
+		
+		if (kanji.equals("") == true) {
+			kanji = "-";
+		}
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			String polishJapaneseEntryKanji = polishJapaneseEntry.getKanji();
+			
+			if (polishJapaneseEntryKanji.equals("") == true || polishJapaneseEntryKanji.equals("-") == true) {
+				polishJapaneseEntryKanji = "-";
+			}
+			
+			if (kanji.equals(polishJapaneseEntryKanji) == true) {
+				
+				List<String> polishJapaneseEntryKanaList = polishJapaneseEntry.getKanaList();
+				
+				for (String currentPolishJapaneseEntryKana : polishJapaneseEntryKanaList) {
+					
+					if (kana.equals(currentPolishJapaneseEntryKana) == true) {
+						return polishJapaneseEntry;
+					}
+				}
+				
+			}
+		}
+		
+		return null;
 	}
 }

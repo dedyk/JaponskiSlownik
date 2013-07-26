@@ -16,6 +16,8 @@ import java.util.TreeSet;
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
+import pl.idedyk.japanese.dictionary.dto.Attribute;
+import pl.idedyk.japanese.dictionary.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
@@ -157,16 +159,16 @@ public class CsvReaderWriter {
 							info += "czytanie";
 						}
 						
-						List<AttributeType> attributeTypeList = polishJapaneseEntry.getAttributeTypeList();
+						AttributeList attributeList = polishJapaneseEntry.getAttributeList();
 						
-						if (attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY)) {
+						if (attributeList.contains(AttributeType.VERB_TRANSITIVITY)) {
 							
 							if (info.length() > 0) {
 								info = info + ", ";
 							}
 							
 							info += "czasownik przechodni";
-						} else if (attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY)) {
+						} else if (attributeList.contains(AttributeType.VERB_INTRANSITIVITY)) {
 							
 							if (info.length() > 0) {
 								info = info + ", ";
@@ -220,7 +222,7 @@ public class CsvReaderWriter {
 			
 			csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
 			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
-			csvWriter.write(convertAttributeListToString(polishJapaneseEntry.getAttributeTypeList()));
+			csvWriter.write(convertAttributeListToString(polishJapaneseEntry.getAttributeList()));
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getGroups()));			
 			csvWriter.write(polishJapaneseEntry.getPrefixKana());
@@ -289,7 +291,7 @@ public class CsvReaderWriter {
 			
 			entry.setId(id);
 			entry.setDictionaryEntryType(dictionaryEntryType);
-			entry.setAttributeTypeList(parseAttributesStringList(attributesString));
+			entry.setAttributeList(parseAttributesStringList(attributesString));
 			entry.setWordType(WordType.valueOf(wordTypeString));
 			entry.setGroups(parseStringIntoList(groupString));
 			entry.setPrefixKana(prefixKanaString);
@@ -315,14 +317,32 @@ public class CsvReaderWriter {
 		return result;
 	}
 	
-	private static List<AttributeType> parseAttributesStringList(String attributesString) {
+	private static AttributeList parseAttributesStringList(String attributesString) {
 		
 		List<String> attributeStringList = parseStringIntoList(attributesString);
 		
-		List<AttributeType> result = new ArrayList<AttributeType>();
+		AttributeList result = new AttributeList();
 		
-		for (String currentAttributeTypeString : attributeStringList) {
-			result.add(AttributeType.valueOf(currentAttributeTypeString));
+		for (String currentAttributeString : attributeStringList) {
+			
+			String[] currentAttributeStringSplited = currentAttributeString.split(" ");
+			
+			AttributeType attributeType = AttributeType.valueOf(currentAttributeStringSplited[0]);
+			
+			List<String> attributeValueList = null;
+			
+			if (currentAttributeStringSplited.length > 1) {
+				
+				attributeValueList = new ArrayList<String>();
+				
+				for (int currentAttributeStringSplitedIdx = 1; currentAttributeStringSplitedIdx < currentAttributeStringSplited.length;
+						currentAttributeStringSplitedIdx++) {
+					
+					attributeValueList.add(currentAttributeStringSplited[currentAttributeStringSplitedIdx]);
+				}
+			}
+			
+			result.addAttributeValue(attributeType, attributeValueList);
 		}
 		
 		return result;
@@ -342,13 +362,28 @@ public class CsvReaderWriter {
 		return sb.toString();
 	}
 
-	private static String convertAttributeListToString(List<AttributeType> list) {
+	private static String convertAttributeListToString(AttributeList attributeList) {
+		
 		StringBuffer sb = new StringBuffer();
 		
-		for (int idx = 0; idx < list.size(); ++idx) {
-			sb.append(list.get(idx).toString());
+		List<Attribute> attributeListList = attributeList.getAttributeList();
+		
+		for (int idx = 0; idx < attributeListList.size(); ++idx) {
 			
-			if (idx != list.size() - 1) {
+			Attribute currentAttribute = attributeListList.get(idx);
+		
+			sb.append(currentAttribute.getAttributeType().toString());
+			
+			List<String> attributeValue = currentAttribute.getAttributeValue();
+		
+			if (attributeValue != null && attributeValue.size() > 0) {
+				
+				for (String currentSingleAttributeValue : attributeValue) {
+					sb.append(" ").append(currentSingleAttributeValue);
+				}
+			}
+			
+			if (idx != attributeListList.size() - 1) {
 				sb.append("\n");
 			}
 		}

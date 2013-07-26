@@ -837,7 +837,7 @@ public class Validator {
 		int result = 1;
 		
 		result = prime * result + polishJapaneseEntry.getDictionaryEntryType().hashCode();
-		result = prime * result + polishJapaneseEntry.getAttributeTypeList().hashCode();
+		result = prime * result + polishJapaneseEntry.getAttributeList().hashCode();
 		
 		result = prime * result + polishJapaneseEntry.getPolishTranslates().hashCode();
 		result = prime * result + Arrays.hashCode(polishJapaneseEntry.getPolishTranslates().toString().getBytes());
