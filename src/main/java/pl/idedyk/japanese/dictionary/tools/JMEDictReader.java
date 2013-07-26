@@ -17,14 +17,18 @@ import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 public class JMEDictReader {
 	
 	public static TreeMap<String, List<JMEDictEntry>> readJMEdict(String fileName) throws Exception {
-		return readJMEdict(fileName, "JMdict");
+		return readJMEdict(fileName, "JMdict", false);
 	}
 
-	public static TreeMap<String, List<JMEDictEntry>> readJMnedict(String fileName) throws Exception {
-		return readJMEdict(fileName, "JMnedict");
+	public static TreeMap<String, List<JMEDictEntry>> readJMEdict(String fileName, boolean kanjiKeyNull) throws Exception {
+		return readJMEdict(fileName, "JMdict", kanjiKeyNull);
 	}
 	
-	private static TreeMap<String, List<JMEDictEntry>> readJMEdict(String fileName, String rootName) throws Exception {
+	public static TreeMap<String, List<JMEDictEntry>> readJMnedict(String fileName) throws Exception {
+		return readJMEdict(fileName, "JMnedict", false);
+	}
+	
+	private static TreeMap<String, List<JMEDictEntry>> readJMEdict(String fileName, String rootName, final boolean kanjiKeyNull) throws Exception {
 		
 		final TreeMap<String, List<JMEDictEntry>> treeMap = new TreeMap<String, List<JMEDictEntry>>();
 		
@@ -145,7 +149,7 @@ public class JMEDictReader {
 					}
 				}
 				
-				addEdictEntry(treeMap, jmeDictEntry, addNoKanji);
+				addEdictEntry(treeMap, jmeDictEntry, addNoKanji || kanjiKeyNull == true);
 				
 				row.detach();
 			}
