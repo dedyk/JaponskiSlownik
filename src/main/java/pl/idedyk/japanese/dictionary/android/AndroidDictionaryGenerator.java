@@ -35,6 +35,7 @@ import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
+import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
@@ -53,7 +54,8 @@ public class AndroidDictionaryGenerator {
 				"../JaponskiSlownik_dodatki/JMdict_e",
 				"../JaponskiSlownik_dodatki/edict_sub-utf8",
 				"../JaponskiSlownik_dodatki/JMnedict.xml",
-				"output/word.csv");
+				"output/word.csv",
+				"output/transitive_intransitive_pairs.csv");
 		
 		generateKanaEntries("../JaponskiSlownik_dodatki/kanjivg", "output/kana.csv");
 		
@@ -73,7 +75,7 @@ public class AndroidDictionaryGenerator {
 	}
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, String transitiveIntransitivePairsFileName,
-			String jmedictFileName, String edictCommonFileName, String edictNameFileName, String destinationFileName) throws Exception {
+			String jmedictFileName, String edictCommonFileName, String edictNameFileName, String destinationFileName, String transitiveIntransitivePairsOutputFile) throws Exception {
 		
 		System.out.println("checkAndSavePolishJapaneseEntries");
 				
@@ -120,11 +122,13 @@ public class AndroidDictionaryGenerator {
 		
 		System.out.println("checkAndSavePolishJapaneseEntries: generateAdditionalInfoFromEdict");
 		
+		List<TransitiveIntransitivePair> readTransitiveIntransitivePair = readTransitiveIntransitivePair(transitiveIntransitivePairsFileName);
+		
 		// generate additional data from edict
 		Helper.generateAdditionalInfoFromEdict(jmedict, jmedictCommon, result);
 		
 		// generate transitive intransitive pairs
-		Helper.generateTransitiveIntransitivePairs(result, transitiveIntransitivePairsFileName);
+		Helper.generateTransitiveIntransitivePairs(readTransitiveIntransitivePair, result, transitiveIntransitivePairsOutputFile);
 				
 		// generate names
 		// Helper.generateNames(jmedictName, result);		
@@ -627,5 +631,39 @@ public class AndroidDictionaryGenerator {
 		tomoeFileFromKanjivgFile.delete();
         new File(zinniaTomoeLearnSlimFile).delete();
         new File(zinniaTomoeSlimBinaryFile + ".txt").delete();
+	}
+	
+	private static List<TransitiveIntransitivePair> readTransitiveIntransitivePair(String transitiveIntransitivePairsFileName) throws Exception {
+		
+		System.out.println("readTransitiveIntransitivePair");
+		
+		CsvReader csvReader = new CsvReader(new FileReader(transitiveIntransitivePairsFileName), ',');
+		
+		List<TransitiveIntransitivePair> transitiveIntransitivePairList = new ArrayList<TransitiveIntransitivePair>();
+		
+		while(csvReader.readRecord()) {
+			
+			// transitive
+			String transitiveKanji = csvReader.get(0);
+			String transitiveKana = csvReader.get(1);
+			
+			// intransitive
+			String intransitiveKanji = csvReader.get(5);
+			String intransitiveKana = csvReader.get(6);
+			
+			TransitiveIntransitivePair transitiveIntransitivePair = new TransitiveIntransitivePair();
+			
+			transitiveIntransitivePair.setTransitiveKanji(transitiveKanji);
+			transitiveIntransitivePair.setTransitiveKana(transitiveKana);
+			
+			transitiveIntransitivePair.setIntransitiveKanji(intransitiveKanji);
+			transitiveIntransitivePair.setIntransitiveKana(intransitiveKana);
+			
+			transitiveIntransitivePairList.add(transitiveIntransitivePair);
+		}
+		
+		csvReader.close();
+		
+		return transitiveIntransitivePairList;
 	}
 }

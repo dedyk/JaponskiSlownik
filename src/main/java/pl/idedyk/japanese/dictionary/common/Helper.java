@@ -1,6 +1,6 @@
 package pl.idedyk.japanese.dictionary.common;
 
-import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import com.csvreader.CsvReader;
+import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.dto.AttributeType;
@@ -17,6 +17,7 @@ import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
@@ -321,44 +322,9 @@ public class Helper {
 			counter++;
 		}	
 	}
-	
-	private static class TransitiveIntransitivePair {
-		
-		String transitiveKanji;
-		String transitiveKana;
-		
-		String intransitiveKanji;
-		String intransitiveKana;
-	}
 
-	public static void generateTransitiveIntransitivePairs(List<PolishJapaneseEntry> polishJapaneseEntryList, String transitiveIntransitivePairsFileName) throws Exception {
-		
-		CsvReader csvReader = new CsvReader(new FileReader(transitiveIntransitivePairsFileName), ',');
-		
-		List<TransitiveIntransitivePair> transitiveIntransitivePairList = new ArrayList<TransitiveIntransitivePair>();
-		
-		while(csvReader.readRecord()) {
-			
-			// transitive
-			String transitiveKanji = csvReader.get(0);
-			String transitiveKana = csvReader.get(1);
-			
-			// intransitive
-			String intransitiveKanji = csvReader.get(5);
-			String intransitiveKana = csvReader.get(6);
-			
-			TransitiveIntransitivePair transitiveIntransitivePair = new TransitiveIntransitivePair();
-			
-			transitiveIntransitivePair.transitiveKanji = transitiveKanji;
-			transitiveIntransitivePair.transitiveKana = transitiveKana;
-			
-			transitiveIntransitivePair.intransitiveKanji = intransitiveKanji;
-			transitiveIntransitivePair.intransitiveKana = intransitiveKana;
-			
-			transitiveIntransitivePairList.add(transitiveIntransitivePair);
-		}
-		
-		csvReader.close();
+	public static void generateTransitiveIntransitivePairs(List<TransitiveIntransitivePair> transitiveIntransitivePairList, 
+			List<PolishJapaneseEntry> polishJapaneseEntryList, String transitiveIntransitivePairsOutputFile) throws Exception {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
 			
@@ -382,7 +348,7 @@ public class Helper {
 				
 				if (transitiveIntransitivePair != null) {
 					
-					PolishJapaneseEntry intransitivePolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntryList, transitiveIntransitivePair.intransitiveKanji, transitiveIntransitivePair.intransitiveKana);
+					PolishJapaneseEntry intransitivePolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntryList, transitiveIntransitivePair.getIntransitiveKanji(), transitiveIntransitivePair.getIntransitiveKana());
 					
 					if (intransitivePolishJapaneseEntry != null) {
 						
@@ -405,7 +371,7 @@ public class Helper {
 				
 				if (transitiveIntransitivePair != null) {
 					
-					PolishJapaneseEntry transitivePolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntryList, transitiveIntransitivePair.transitiveKanji, transitiveIntransitivePair.transitiveKana);
+					PolishJapaneseEntry transitivePolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntryList, transitiveIntransitivePair.getTransitiveKanji(), transitiveIntransitivePair.getTransitiveKana());
 					
 					if (transitivePolishJapaneseEntry != null) {
 						
@@ -414,6 +380,30 @@ public class Helper {
 				}				
 			}
 		}
+		
+		CsvWriter csvWriter = new CsvWriter(new FileWriter(transitiveIntransitivePairsOutputFile), ',');
+		
+		for (TransitiveIntransitivePair currentTransitiveIntransitivePair : transitiveIntransitivePairList) {
+			
+			PolishJapaneseEntry transitivePolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntryList, currentTransitiveIntransitivePair.getTransitiveKanji(), currentTransitiveIntransitivePair.getTransitiveKana());
+			
+			if (transitivePolishJapaneseEntry == null) {
+				continue;
+			}
+			
+			PolishJapaneseEntry intransitivePolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntryList, currentTransitiveIntransitivePair.getIntransitiveKanji(), currentTransitiveIntransitivePair.getIntransitiveKana());
+			
+			if (intransitivePolishJapaneseEntry == null) {
+				continue;
+			}
+			
+			csvWriter.write(String.valueOf(transitivePolishJapaneseEntry.getId()));
+			csvWriter.write(String.valueOf(intransitivePolishJapaneseEntry.getId()));
+			
+			csvWriter.endRecord();
+		}
+		
+		csvWriter.close();		
 	}
 	
 	private static TransitiveIntransitivePair findTransitiveIntransitivePairFromTransitiveVerb(List<TransitiveIntransitivePair> transitiveIntransitivePairList, 
@@ -421,8 +411,8 @@ public class Helper {
 				
 		for (TransitiveIntransitivePair transitiveIntransitivePair : transitiveIntransitivePairList) {
 			
-			String transitiveKanji = transitiveIntransitivePair.transitiveKanji;
-			String transitiveKana = transitiveIntransitivePair.transitiveKana;
+			String transitiveKanji = transitiveIntransitivePair.getTransitiveKanji();
+			String transitiveKana = transitiveIntransitivePair.getTransitiveKana();
 			
 			if (transitiveKanji.equals("") == true) {
 				transitiveKanji = "-";
@@ -442,8 +432,8 @@ public class Helper {
 				
 		for (TransitiveIntransitivePair transitiveIntransitivePair : transitiveIntransitivePairList) {
 			
-			String intransitiveKanji = transitiveIntransitivePair.intransitiveKanji;
-			String intransitiveKana = transitiveIntransitivePair.intransitiveKana;
+			String intransitiveKanji = transitiveIntransitivePair.getIntransitiveKanji();
+			String intransitiveKana = transitiveIntransitivePair.getIntransitiveKana();
 			
 			if (intransitiveKanji.equals("") == true) {
 				intransitiveKanji = "-";
