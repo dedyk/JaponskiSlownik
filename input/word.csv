@@ -1663,7 +1663,9 @@ funkcjonować",,,
 zmęczyć się
 znużyć się",,,
 831,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,辞める,やめる,,yameru,"rezygnować
-przestawać",,,
+przestawać
+porzucić
+zaniechać",,,
 832,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,,-,けんかする,,kenka suru,pokłócić się,,,
 833,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,を,紹介する,しょうかいする,o,shoukai suru,przedstawiać,"kogoś ni kto ~, hiragana i katakana",,
 834,WORD_VERB_IRREGULAR,,HIRAGANA_KATAKANA,Genki 1-11,,-,ダイエットする,,daietto suru,być na diecie,,,
@@ -1909,7 +1911,8 @@ Genki 2-19",,真面目,まじめ,,majime,poważny,,,
 Genki 2-13
 Genki kanji 1-6",,大人,おとな,,otona,osoba dorosła,,,
 959,WORD_VERB_RU,,HIRAGANA,"Genki dodatkowe 1-12
-Genki 2-21",,見つける,みつける,,mitsukeru,znaleźć,,,
+Genki 2-21",,見つける,みつける,,mitsukeru,"znajdować
+odkrywać",,,
 960,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-12,,天の川,あまのがわ,,ama no gawa,Droga Mleczna,,,
 961,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,向こう,むこう,,mukou,"po tamtej stronie
 po drugiej stronie
@@ -3317,7 +3320,7 @@ hamować
 nocować
 gościć
 dawać schronienie
-przenocowywać",,,
+przenocowywać",,,9178
 1767,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,"Genki kanji 2-20
 Genki dodatkowe 2-20",が,止まる,とまる,ga,tomaru,"zatrzymać się
 nocować
@@ -9295,7 +9298,9 @@ ostateczny termin",,,
 4966,WORD_NOUN,,HIRAGANA,,,無限,むげん,,mugen,"nieograniczony
 bezgraniczny",,,
 4967,WORD_VERB_U,,HIRAGANA,,,喜ぶ,よろこぶ,,yorokobu,"cieszyć się
-być uradowanym",,,
+radować
+być uradowanym
+być zadowolonym",,,
 4968,WORD_ADJECTIVE_NA,,HIRAGANA,,,大喜び,おおよろこび,,ooyorokobi,duża radość,,,
 4969,WORD_NOUN,,HIRAGANA,,,喜劇,きげき,,kigeki,komedia,,,
 4970,WORD_NOUN,,HIRAGANA,,,喜色,きしょく,,kishoku,"radosne oblicze
@@ -9631,7 +9636,7 @@ zwalniać",,,5122
 rozpuszczać",,,
 5121,WORD_VERB_RU,,HIRAGANA,,,解ける,とける,,tokeru,"topnieć
 luzować się
-rozwiązywać się",,,
+rozwiązywać się",,,9166
 5122,WORD_VERB_U,,HIRAGANA,,,解く,ほどく,,hodoku,odwiązywać,,,5119
 5123,WORD_NOUN,,HIRAGANA,,,解決,かいけつ,,kaiketsu,rozwiązanie,problemu,,
 5124,WORD_NOUN,,HIRAGANA,,,解釈,かいしゃく,,kaishaku,"interpretacja
@@ -11428,7 +11433,8 @@ zużywać",,,
 6051,WORD_VERB_U,,HIRAGANA,,,破る,やぶる,,yaburu,"drzeć
 rwać
 gnieść
-niszczyć",,,
+niszczyć
+poszarpać",,,
 6052,WORD_VERB_RU,,HIRAGANA,,,破れる,やぶれる,,yabureru,"drzeć się
 rwać się
 niszczyć się",,,
@@ -17211,3 +17217,64 @@ powiększać się
 nadmuchiwać",,,
 9165,WORD_VERB_RU,,HIRAGANA,,,-,ぶつける,,butsukeru,"uderzać
 trafiać",,,
+9166,WORD_VERB_RU,,HIRAGANA,,,解ける,ほどける,,hodokeru,"rozpadać się
+rozwiązać się",,,5121
+9167,WORD_VERB_U,,HIRAGANA,,,亡ぼす,ほろぼす,,horobosu,"niszczyć
+obalać
+rozbijać
+niszczyć
+rujnować",,,
+9168,WORD_VERB_RU,,HIRAGANA,,,亡びる,ほろびる,,horobiru,"być zniszczony
+być obalony
+być zrujnowany",,,
+9169,WORD_VERB_U,,HIRAGANA,,,負かす,まかす,,makasu,"pokonać
+pobić
+zwalczyć
+zwyciężać",,,
+9170,WORD_VERB_U,,HIRAGANA,,,間違う,まちがう,,machigau,"być pomylonym
+być w błędzie
+pomylić",,,
+9171,WORD_VERB_U,,HIRAGANA,,,纏まる,まとまる,,matomaru,"zbierać się
+dojść do porozumienia
+być uporządkowanym",,,
+9172,WORD_VERB_U,,HIRAGANA,,,迷わす,まよわす,,mayowasu,"wprowadzać w zakłopotanie
+wywołać u kogoś konsternację
+wprowadzać w zakłopotanie",,,
+9173,WORD_VERB_RU,,HIRAGANA,,,見付ける,みつける,,mitsukeru,"znajdować
+odkrywać",,,
+9174,WORD_VERB_U,,HIRAGANA,,,見つかる,みつかる,,mitsukaru,"być znalezionym
+znaleźć się",,,
+9175,WORD_VERB_U,,HIRAGANA,,,見付かる,みつかる,,mitsukaru,"być znalezionym
+znaleźć się",,,
+9176,WORD_VERB_RU,,HIRAGANA,,,休める,やすめる,,yasumeru,"odpoczywać
+zawieszać
+wstrzymywać",,,
+9177,WORD_VERB_U,,HIRAGANA,,,敗る,やぶる,,yaburu,"podrzeć
+poszarpać
+złamać
+zniszczyć
+przerwać
+nie dotrzymać
+pokonać
+pobić",,,
+9178,WORD_VERB_RU,,HIRAGANA,,,止める,やめる,,yameru,"skończyć
+ustąpić
+zaniechać
+zrezygnować",,,1766
+9179,WORD_VERB_U,,HIRAGANA,,,止む,やむ,,yamu,"ustać
+przestać",,,
+9180,WORD_VERB_U,,HIRAGANA,,,喜ばす,よろこばす,,yorokobasu,"cieszyć
+zachwycać",,,
+9181,WORD_VERB_RU,,HIRAGANA,,,弱める,よわめる,,yowameru,"osłabiać
+słabnąć
+tracić siły",,,
+9182,WORD_VERB_U,,HIRAGANA,,,弱まる,よわまる,,yowamaru,być osłabionym,,,
+9183,WORD_VERB_RU,,HIRAGANA,,,分かれる,わかれる,,wakareru,"być rozdzielonym
+być podzielonym
+podzielić się",,,
+9184,WORD_VERB_U,,HIRAGANA,,,湧かす,わかす,,wakasu,tryskać,,,
+9185,WORD_VERB_U,,HIRAGANA,,,湧く,わく,,waku,tryskać się,,,
+9186,WORD_VERB_U,,HIRAGANA,,,渉す,わたす,,watasu,"przechodzić
+przeprawiać
+przekraczać",,,
+9187,WORD_VERB_U,,HIRAGANA,,,燻る,いぶる,,iburu,palić,,,
