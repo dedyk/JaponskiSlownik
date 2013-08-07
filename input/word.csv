@@ -121,6 +121,8 @@ Genki kanji 1-9",,午後,ごご,,gogo,"po południu
 pm",czas,,
 75,UNKNOWN,,HIRAGANA,"Genki 1-1
 Genki kanji 1-9",,午前,ごぜん,,gozen,"przed południem
+poranek
+ranek
 am",czas,,
 76,UNKNOWN,,HIRAGANA,Genki 1-1,,歳,さい,,sai,... lat,,,
 77,UNKNOWN,,HIRAGANA,Genki 1-1,,-,さん,,san,... Pan,,,"4
@@ -690,7 +692,9 @@ Genki kanji 1-6",,左,ひだり,,hidari,lewo,kierunek,,
 Genki kanji 1-9
 Genki 2-17",,前,まえ,,mae,"przed
 przód
-poprzednio",,,7748
+poprzednio
+przedtem
+zanim",,,7748
 381,WORD_LOCATION,,HIRAGANA,"Genki 1-4
 Genki kanji 1-9",,後ろ,うしろ,,ushiro,"za
 z tyłu",,,
@@ -1767,7 +1771,8 @@ stopnie",na teście i etc,,
 5312
 7053
 8214"
-889,WORD_NOUN,,HIRAGANA,Genki 1-12,,-,のど,,nodo,gardło,,,
+889,WORD_NOUN,,HIRAGANA,Genki 1-12,,喉,のど,,nodo,"gardło
+gardziel",,,
 890,WORD_NOUN,,HIRAGANA,"Genki 1-12
 Genki kanji 2-19",,花,はな,,hana,kwiat,,,
 891,WORD_NOUN,,HIRAGANA,Genki 1-12,,晴れ,はれ,,hare,słoneczna pogoda,,,
@@ -4837,7 +4842,8 @@ być tolerancyjny",,,
 2591,WORD_NOUN,,HIRAGANA,,,組,くみ,,kumi,"grupa
 zespół
 klasa
-zestaw",,,
+zestaw
+gromada",,,
 2592,WORD_NOUN,,HIRAGANA,,,相互,そうご,,sougo,"wzajemny
 obustronny",,,
 2593,WORD_ADJECTIVE_I,,HIRAGANA,,,相応しい,ふさわしい,,fusawashii,"odpowiedni
@@ -5574,7 +5580,8 @@ przyjmowanie (gości)
 obsługa (hotelowa)",,,
 2966,WORD_NOUN,,HIRAGANA,,,船長,せんちょう,,senchou,kapitan statku,,,
 2967,WORD_NOUN,,HIRAGANA,,,船員,せんいん,,sen'in,"załoga
-marynarz",statku,,
+marynarz
+żeglarz",statku,,
 2968,WORD_NOUN,,HIRAGANA,,,汽船,きせん,,kisen,"statek parowy
 parowiec",,,
 2969,WORD_NOUN,,HIRAGANA,,,船団,せんだん,,sendan,flota,,,
@@ -17601,28 +17608,40 @@ humanizm",,,
 9327,WORD_NOUN,,HIRAGANA,,,偽善,ぎぜん ,,gizen,"hipokryzja
 obłuda
 zakłamanie",,,
-9328,WORD_NOUN,,HIRAGANA,,,喉,のど ,,nodo,"gardło
-gardziel",,,
-9329,WORD_ADJECTIVE_NA,,HIRAGANA,,,叮嚀,ていねい ,,teinei,"opiekuńczy
+9328,WORD_ADJECTIVE_NA,,HIRAGANA,,,叮嚀,ていねい ,,teinei,"opiekuńczy
 troskliwy
 uprzejmy
 grzeczny",,,
-9330,WORD_ADJECTIVE_NA,,HIRAGANA,,,情熱,じょうねつ ,,jounetsu,"oddany
+9329,WORD_ADJECTIVE_NA,,HIRAGANA,,,情熱,じょうねつ ,,jounetsu,"oddany
 poświęcenie
 pasja
 entuzjastyczny",,,
-9331,WORD_NOUN,,HIRAGANA,,,所得,しょとく ,,shotoku,"dochód
+9330,WORD_NOUN,,HIRAGANA,,,所得,しょとく ,,shotoku,"dochód
 przychód",,,
-9332,WORD_NOUN,,HIRAGANA,,,昼餉,ひるげ ,,hiruge,obiad,,,
-9333,WORD_NOUN,,HIRAGANA,,,申入,もうしいれ ,,moushiire,"propozycja
+9331,WORD_NOUN,,HIRAGANA,,,昼餉,ひるげ ,,hiruge,obiad,,,
+9332,WORD_NOUN,,HIRAGANA,,,申入,もうしいれ ,,moushiire,"propozycja
 sugestia",,,
-9334,WORD_NOUN,,HIRAGANA,,,漏斗,ろうと ,,routo,"lej
-lejek",,,9335
-9335,WORD_NOUN,,HIRAGANA,,,漏斗,じょうご ,,jougo,"lej
+9333,WORD_NOUN,,HIRAGANA,,,漏斗,ろうと ,,routo,"lej
 lejek",,,9334
-9336,WORD_NOUN,,HIRAGANA,,,紛争,ふんそう ,,funsou,"spór
+9334,WORD_NOUN,,HIRAGANA,,,漏斗,じょうご ,,jougo,"lej
+lejek",,,9333
+9335,WORD_NOUN,,HIRAGANA,,,紛争,ふんそう ,,funsou,"spór
 konflikt",,,
-9337,WORD_NOUN,,HIRAGANA,,,罪科,ざいか ,,zaika,występek,,,
-9338,WORD_NOUN,,HIRAGANA,,,補償,ほしょう ,,hoshou,"kompensacja
+9336,WORD_NOUN,,HIRAGANA,,,罪科,ざいか ,,zaika,występek,,,
+9337,WORD_NOUN,,HIRAGANA,,,補償,ほしょう ,,hoshou,"kompensacja
 odszkodowanie",,,
-9339,WORD_NOUN,,HIRAGANA,,,誘い,さそい ,,sasoi,zaproszenie,,,
+9338,WORD_NOUN,,HIRAGANA,,,誘い,さそい ,,sasoi,zaproszenie,,,
+9339,WORD_NOUN,,HIRAGANA,,,鷓鴣,しゃこ ,,shako,kuropatwa,,,
+9340,WORD_NOUN,,KATAKANA,,,-,クロウタドリ,,kuroutadori,kos,ptak,,
+9341,WORD_NOUN,,HIRAGANA,,,魔術師,まじゅつし ,,majutsushi,"czarownik
+magik",,,
+9342,WORD_NOUN,,HIRAGANA,,,威名,いめい ,,imei,"sława
+prestiż",,,
+9343,WORD_NOUN,,HIRAGANA,,,鉤針,かぎばり ,,kagibari,hak,,,
+9344,WORD_NOUN,,HIRAGANA,,,降誕,こうたん ,,koutan,"narodzenie
+narodziny
+poród
+urodzenie","królewski, monarszy",,
+9345,WORD_NOUN,,HIRAGANA,,,降誕祭,こうたんさい ,,koutansai,Boże Narodzenie,,,
+9346,WORD_NOUN,,KATAKANA,,,-,カワウソ,,kawauso,"wydra
+lutra",,,
