@@ -667,7 +667,8 @@ mieć",do rzeczy martwych,,956
 Genki kanji 1-10",を,買う,かう,o,kau,kupować,,,
 366,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,撮る,とる,o,toru,robić zdjęcie,,,
 367,WORD_VERB_U,,HIRAGANA,"Genki 1-4
-Genki kanji 2-22",を,待つ,まつ,o,matsu,czekać,,,
+Genki kanji 2-22",を,待つ,まつ,o,matsu,"czekać
+oczekiwać",,,
 368,WORD_VERB_U,,HIRAGANA,Genki 1-4,が,判る,わかる,ga,wakaru,"rozumieć
 znać
 poznać",,,
@@ -1043,7 +1044,7 @@ nananin",siedmioro ludzi,liczenie ludzi,,
 526,WORD_PEOPLE_NUMBER,,HIRAGANA,Genki 1-7,,八人,はちにん,,hachinin,ośmioro ludzi,liczenie ludzi,,
 527,WORD_PEOPLE_NUMBER,,HIRAGANA,Genki 1-7,,九人,きゅうにん,,kyuunin,dziewięcioro ludzi,liczenie ludzi,,
 528,WORD_PEOPLE_NUMBER,,HIRAGANA,Genki 1-7,,十人,じゅうにん,,juunin,dziesięcioro ludzi,liczenie ludzi,,
-529,WORD_NOUN,,HIRAGANA,Genki 1-7,,髪,かみ,,kami,włosy,,,
+529,WORD_NOUN,,HIRAGANA,Genki 1-7,,髪,かみ,,kami,włosy,na głowie,,
 530,WORD_NOUN,,HIRAGANA,Genki 1-7,,鼻,はな,,hana,nos,,,
 531,WORD_NOUN,,HIRAGANA,"Genki 1-7
 Genki kanji 1-6
@@ -3051,7 +3052,8 @@ potwór",,,
 1561,WORD_NOUN,,HIRAGANA,,,蠅,はえ,,hae,mucha,,,
 1562,WORD_NOUN,,HIRAGANA,Genki kanji 2-22,,提案,ていあん,,teian,"sugestia
 rada
-propozycja",,,
+propozycja
+namowa",,,
 1563,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,情報,じょうほう,,jouhou,"informacja
 wiadomość",,,
 1564,WORD_NOUN,,HIRAGANA,,,光,ひかり,,hikari,"światło
@@ -3850,7 +3852,8 @@ kolejarz",,,
 2050,WORD_NOUN,,HIRAGANA,Genki 2-16,,推薦状,すいせんじょう,,suisenjou,"list polecający
 referencje",,,
 2051,WORD_NOUN,,HIRAGANA,"Genki 2-16
-Genki kanji 2-21",,台風,たいふう,,taifuu,tajfun,,,
+Genki kanji 2-21",,台風,たいふう,,taifuu,"tajfun
+huragan",,,
 2052,WORD_NOUN,,KATAKANA,Genki 2-16,,-,ファイル,,fairu,"plik
 teczka",np. plastikowa,,
 2053,WORD_NOUN,,HIRAGANA,Genki 2-16,,目覚まし時計,めざましどけい,,mezamashi dokei,budzik,,,
@@ -6438,7 +6441,9 @@ biegłość",,,
 3428,WORD_NOUN,,HIRAGANA,,,達磨,だるま,,daruma,Dharma,"indyjski kapłan, założyciel buddyjskiej sekty Zen",,
 3429,WORD_NOUN,,HIRAGANA,,,達人,たつじん,,tatsujin,"ekspert
 specjalista
-mistrz",,,
+biegły
+mistrz
+majster",,,
 3430,WORD_NOUN,,HIRAGANA,,,質,しち,,shichi,"zakładnik
 zestaw",,,
 3431,WORD_VERB_U,,HIRAGANA,,,質す,ただす,,tadasu,"pytać
@@ -9390,7 +9395,8 @@ zdolności",,,
 4978,WORD_NOUN,,HIRAGANA,,,宙,ちゅう,,chuu,"przestrzeń
 powietrze
 niebo",,,
-4979,WORD_NOUN,,HIRAGANA,,,機械,きかい,,kikai,maszyna,,,
+4979,WORD_NOUN,,HIRAGANA,,,機械,きかい,,kikai,"maszyna
+machina",,,
 4980,WORD_NOUN,,HIRAGANA,,,機械文明,きかいぶんめい,,kikai bunmei,"kultura techniczna
 cywilizacja techniczna",,,
 4981,WORD_NOUN,,HIRAGANA,,,機械化,きかいか,,kikaika,mechanizacja,,,
@@ -11017,7 +11023,8 @@ letnie kimono",,,
 katastrofa",,,
 5820,WORD_NOUN,,HIRAGANA,,,天災,てんさい,,tensai,klęska żywiołowa,,,
 5821,WORD_NOUN,,HIRAGANA,,,災害,さいがい,,saigai,"katastrofa
-wypadek",,,
+wypadek
+klęska",,,
 5822,WORD_NOUN,,HIRAGANA,,,災難,さいなん,,sainan,"wypadek
 klęska
 katastrofa
@@ -11387,7 +11394,8 @@ podejmować się",,,
 6000,WORD_NOUN,,HIRAGANA,,,奮然,ふんぜん,,funzen,"energicznie
 odważnie
 zdecydowanie",,,
-6001,WORD_ADJECTIVE_I,,HIRAGANA,,,暗い,くらい,,kurai,ciemny,,,
+6001,WORD_ADJECTIVE_I,,HIRAGANA,,,暗い,くらい,,kurai,"ciemny
+mroczny",,,
 6002,WORD_NOUN,,HIRAGANA,,,暗号,あんごう,,angou,"hasło
 szyfr",,,
 6003,WORD_NOUN,,HIRAGANA,,,暗室,あんしつ,,anshitsu,ciemnia,,,
@@ -18249,3 +18257,47 @@ konflikt",,,
 wytwórca",,,
 9607,WORD_ADJECTIVE_I,,HIRAGANA,,,物悲しい,ものがなしい ,,monoganashii,"smutny
 żałosny",,,
+9608,WORD_NOUN,,HIRAGANA,,,気象学,きしょうがく ,,kishougaku,meteorologia,,,
+9609,WORD_NOUN,,HIRAGANA,,,言い回し,いいまわし ,,iimawashi,"zwrot
+wyrażenie
+frazeologia",,,
+9610,WORD_VERB_U,,HIRAGANA,,,飲み込む,のみこむ ,,nomikomu,"połykać
+pochłaniać
+łapczywie pić
+rozumieć",,,
+9611,WORD_NOUN,,HIRAGANA,,,自由主義,じゆうしゅぎ ,,jiyuushugi,liberalizm,,,
+9612,WORD_ADJECTIVE_NA,,HIRAGANA,,,自発的,じはつてき ,,jihatsuteki,"dobrowolny
+ochotniczy
+spontaniczny",,,
+9613,WORD_NOUN,,HIRAGANA,,,吸収,きゅうしゅう ,,kyuushuu,"absorpcja
+pochłanianie
+wchłanianie
+zasysanie",,,
+9614,WORD_NOUN,,HIRAGANA,,,国籍,こくせき ,,kokuseki,"narodowość
+obywatelstwo",,,
+9615,WORD_NOUN,,HIRAGANA,,,審理,しんり ,,shinri,"wypróbowanie
+próba",,,
+9616,WORD_NOUN,,HIRAGANA,,,小川,おがわ ,,ogawa,"potok
+strumień
+strumyk",,,
+9617,WORD_NOUN,,HIRAGANA,,,施設,しせつ ,,shisetsu,"instytucja
+zakład
+przedsiębiorstwo",,,
+9618,WORD_NOUN,,HIRAGANA,,,相関,そうかん ,,soukan,"korelacja
+zależność
+związek",między dwoma rzeczami,,
+9619,WORD_NOUN,,HIRAGANA,,,貧困,ひんこん ,,hinkon,"bieda
+ubóstwo",,,9620
+9620,WORD_ADJECTIVE_NA,,HIRAGANA,,,貧困,ひんこん ,,hinkon,"biedny
+ubogi",,,9619
+9621,WORD_NOUN,,HIRAGANA,,,貧困者,ひんこんしゃ ,,hinkonsha,biedak,,,
+9622,WORD_NOUN,,HIRAGANA,,,輔佐,ほさ ,,hosa,"pomoc
+wsparcie
+asysta",,,
+9623,WORD_NOUN,,HIRAGANA,,,颱風,たいふう ,,taifuu,"tajfun
+huragan",,,
+9624,WORD_NOUN,,HIRAGANA,,,鬼才,きさい ,,kisai,"geniusz
+czarodziej",,,
+9625,WORD_NOUN,,HIRAGANA,,,弁護人,べんごにん ,,bengonin,"obrońca
+adwokat",,,
+9626,WORD_NOUN,,HIRAGANA,,,加水分解,かすいぶんかい ,,kasuibunkai,hydroliza,,,
