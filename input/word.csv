@@ -128,7 +128,8 @@ am",czas,,
 77,UNKNOWN,,HIRAGANA,Genki 1-1,,-,さん,,san,... Pan,,,"4
 4754
 6341
-8019"
+8019
+9631"
 78,UNKNOWN,,HIRAGANA,Genki 1-1,,時,じ,,ji,... godzina,,,357
 79,UNKNOWN,,HIRAGANA,Genki 1-1,,人,じん,,jin,... człowiek,,,"286
 601"
@@ -3380,7 +3381,8 @@ system liczenia",,,
 1784,WORD_NOUN,,HIRAGANA,,,鯉幟,こいのぼり,,koi nobori,flaga w kształcie karpia,symbol japońskiego dnia dziecka,,
 1785,WORD_NOUN,,HIRAGANA,,,節分,せつぶん,,setsubun,pierwszy dzień wiosny,,,
 1786,WORD_NOUN,,KATAKANA,,,-,パスポート,,pasupooto,paszport,,,
-1787,WORD_NOUN,,HIRAGANA,,,鏡,かがみ,,kagami,lustro,,,
+1787,WORD_NOUN,,HIRAGANA,,,鏡,かがみ,,kagami,"lustro
+zwierciadło",,,
 1788,WORD_NOUN,,HIRAGANA,,,鳥居,とりい,,torii,brama Torii,dosł. miejsce dla ptaków,,
 1789,WORD_NOUN,,KATAKANA,,,-,キットカット,,kitto katto,Kit Kat,wafel oblany czekoladą,,
 1790,WORD_NOUN,,HIRAGANA,,,建設,けんせつ,,kensetsu,"budynek
@@ -7227,6 +7229,7 @@ wyrównanie",,,
 usprawiedliwianie
 obrona",,,
 3861,WORD_NOUN,,HIRAGANA,,,豚,ぶた,,buta,"świnia
+prosiak
 wieprz
 maciora",,,
 3862,WORD_NOUN,,HIRAGANA,,,菜,な,,na,"warzywo
@@ -10948,7 +10951,9 @@ tak jakby",,,5778
 być podobnym",archaizm,,5777
 5779,WORD_VERB_U,,HIRAGANA,,,懐く,なつく,,natsuku,przywiązywać się,,,
 5780,WORD_VERB_RU,,HIRAGANA,,,懐ける,なつける,,natsukeru,oswajać,,,
-5781,WORD_NOUN,,HIRAGANA,,,懐,ふところ,,futokoro,"łono
+5781,WORD_NOUN,,HIRAGANA,,,懐,ふところ,,futokoro,"biust
+pierś
+łono
 serce
 sakwa",,,
 5782,WORD_VERB_U,,HIRAGANA,,,営む,いとなむ,,itonamu,"zarządzać
@@ -12398,7 +12403,9 @@ kontrola",,,
 osobiście",,,
 6498,WORD_NOUN,,HIRAGANA,,,自由市場,じゆうしじょう,,jiyuushijou,wolny rynek,,,
 6499,WORD_NOUN,,HIRAGANA,,,圧,あつ,,atsu,ciśnienie,,,
-6500,WORD_NOUN,,HIRAGANA,,,圧力,あつりょく,,atsuryoku,ciśnienie,,,
+6500,WORD_NOUN,,HIRAGANA,,,圧力,あつりょく,,atsuryoku,"ciśnienie
+napór
+presja",,,
 6501,WORD_NOUN,,HIRAGANA,,,圧迫,あっぱく,,appaku,opresja,,,
 6502,WORD_NOUN,,HIRAGANA,,,圧倒,あっとう,,attou,"pokonywać
 opanowywać
@@ -14323,6 +14330,7 @@ sława
 reputacja",,,7583
 7585,WORD_NOUN,,HIRAGANA,,,名札,なふだ,,nafuda,tabliczka z nazwiskiem,,,
 7586,WORD_NOUN,,HIRAGANA,,,表,ひょう,,hyou,"tablica
+wykaz
 diagram
 harmonogram
 lista",,,7587
@@ -18301,3 +18309,42 @@ czarodziej",,,
 9625,WORD_NOUN,,HIRAGANA,,,弁護人,べんごにん ,,bengonin,"obrońca
 adwokat",,,
 9626,WORD_NOUN,,HIRAGANA,,,加水分解,かすいぶんかい ,,kasuibunkai,hydroliza,,,
+9627,WORD_VERB_U,,HIRAGANA,,,救い出す,すくいだす ,,sukuidasu,"ratować
+uwolnić",,,
+9628,WORD_NOUN,,HIRAGANA,,,お玉,おたま ,,otama,"jajo
+jajko",,,
+9629,WORD_NOUN,,KATAKANA,,,-,キジ,,kiji,"bażant zielony
+bażant japoński",,,
+9630,WORD_NOUN,,HIRAGANA,,,酸,す,,su,ocet,,,9631
+9631,WORD_NOUN,,HIRAGANA,,,酸,さん ,,san,kwas,,,"77
+9630"
+9632,WORD_NOUN,,HIRAGANA,,,一派,いっぱ ,,ippa,"partia
+stronnictwo",,,
+9633,WORD_ADJECTIVE_NA,,HIRAGANA,,,不定,ふじょう ,,fujou,"niepewny
+wątpliwy",,,9634
+9634,WORD_ADJECTIVE_NA,,HIRAGANA,,,不定,ふてい ,,futei,"niepewny
+wątpliwy",,,9633
+9635,WORD_NOUN,,HIRAGANA,,,恐喝,きょうかつ ,,kyoukatsu,"szantaż
+wymuszenie",,,
+9636,WORD_NOUN,,HIRAGANA,,,戦隊,せんたい ,,sentai,eskadra,,,
+9637,WORD_NOUN,,HIRAGANA,,,牢屋,ろうや ,,rouya,więzienie,,,
+9638,WORD_NOUN,,HIRAGANA,,,玄冬,けんとう ,,kentou,zima,,,9639
+9639,WORD_NOUN,,HIRAGANA,,,玄冬,げんとう ,,gentou,zima,,,9638
+9640,WORD_NOUN,,HIRAGANA,,,王女,おうじょ ,,oujo,"księżniczka
+królewna",,,
+9641,WORD_NOUN,,HIRAGANA,,,約款,やっかん ,,yakkan,"klauzula
+warunek
+umowa",,,
+9642,WORD_NOUN,,HIRAGANA,,,闘技,とうぎ ,,tougi,"konkurs
+zawody",,,
+9643,WORD_NOUN,,HIRAGANA,,,陽春,ようしゅん ,,youshun,wiosna,,,
+9644,WORD_NOUN,,HIRAGANA,,,香水,こうすい ,,kousui,perfumy,,,
+9645,WORD_NOUN,,KATAKANA,,,-,オリーブ,,oriibu,oliwka,,,
+9646,WORD_NOUN,,HIRAGANA,,,航空機,こうくうき ,,koukuuki,samolot,,,
+9647,WORD_NOUN,,HIRAGANA,,,金欠病,きんけつびょう ,,kinketsubyou,"bieda
+ubóstwo
+nędza",,,
+9648,WORD_NOUN,,HIRAGANA,,,頂戴物,ちょうだいもの ,,choudaimono,"prezent
+podarunek
+dar
+upominek",,,
