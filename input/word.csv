@@ -665,7 +665,9 @@ Genki kanji 1-11",が,有る,ある,ga,aru,"być
 istnieć
 mieć",do rzeczy martwych,,956
 365,WORD_VERB_U,,HIRAGANA,"Genki 1-4
-Genki kanji 1-10",を,買う,かう,o,kau,kupować,,,
+Genki kanji 1-10",を,買う,かう,o,kau,"kupować
+nabyć
+nabywać",,,
 366,WORD_VERB_U,,HIRAGANA,Genki 1-4,を,撮る,とる,o,toru,robić zdjęcie,,,
 367,WORD_VERB_U,,HIRAGANA,"Genki 1-4
 Genki kanji 2-22",を,待つ,まつ,o,matsu,"czekać
@@ -5834,7 +5836,9 @@ dopilnowywać",,,
 kalkulacja
 obliczanie",,,
 3090,WORD_NOUN,,HIRAGANA,,,会計,かいけい,,kaikei,"księgowanie
-płacenie rachunku",,,
+płacenie rachunku
+faktura
+rachunek",,,
 3091,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,合計,ごうけい,,goukei,"końcowa suma
 suma",razem,,
 3092,WORD_EXPRESSION,,HIRAGANA,,,-,いいね,,iine,"dobre
@@ -6934,7 +6938,8 @@ antologia",,,
 cypel",,,
 3689,WORD_VERB_RU,,HIRAGANA,,,凍える,こごえる,,kogoeru,zamarzać,,,
 3690,WORD_VERB_U,,HIRAGANA,,,凍らす,こおらす,,koorasu,zamrażać,,,
-3691,WORD_VERB_U,,HIRAGANA,,,巻く,まく,,maku,zwijać,,,
+3691,WORD_VERB_U,,HIRAGANA,,,巻く,まく,,maku,"zwijać
+nawijać",,,
 3692,WORD_NOUN,,HIRAGANA,,,巻,まき,,maki,zwój,,,
 3693,WORD_NOUN,,HIRAGANA,,,州,しゅう,,shuu,"prowincja
 stan
@@ -7446,7 +7451,10 @@ przepraszam, że przerwałem","używa się do tego, co robimy, np. podczas wycho
 jeśli jest możliwe",,,
 3980,WORD_ADVERB,,HIRAGANA,Genki 2-20,,誠に,まことに,,makotoni,"naprawdę
 prawdziwie
-szczerze",grzecznie,,
+szczerze
+faktycznie
+istotnie
+rzeczywiście",grzecznie,,
 3981,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,みたいな,,mitai na,"wygląda jak, ...",... X,,
 3982,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,よろしかったら,,yoroshikattara,proszę o dobre traktowanie,grzecznie,,
 3983,WORD_NOUN,,HIRAGANA,,,静けさ,しずけさ,,shizukesa,"cisza
@@ -8118,7 +8126,8 @@ elegancja",,,
 4328,WORD_NOUN,,HIRAGANA,,,雲母,うんも,,unmo,"mika
 łyszczyk (minerał)",,,
 4329,WORD_EXPRESSION,,HIRAGANA,,,雲泥の差,うんでいのさ,,undei no sa,olbrzymia różnica,,,
-4330,WORD_NOUN,,HIRAGANA,,,談話,だんわ,,danwa,rozmowa,,,
+4330,WORD_NOUN,,HIRAGANA,,,談話,だんわ,,danwa,"rozmowa
+konwersacja",,,
 4331,WORD_NOUN,,HIRAGANA,,,談笑,だんしょう,,danshou,przyjacielska pogawędka,,,
 4332,WORD_NOUN,,HIRAGANA,,,談判,だんぱん,,danpan,"negocjacje
 konferencja",,,
@@ -8897,7 +8906,8 @@ zamieszkiwanie",,,
 4727,WORD_VERB_RU,,HIRAGANA,,,恐れる,おそれる,,osoreru,"bać się
 lękać się",,,
 4728,WORD_ADVERB,,HIRAGANA,,,恐らく,おそらく,,osoraku,"chyba
-prawdopodobnie",,,
+prawdopodobnie
+może",,,
 4729,WORD_NOUN,,HIRAGANA,,,恐れ,おそれ,,osore,"strach
 lęk",,,
 4730,WORD_ADJECTIVE_I,,HIRAGANA,,,恐ろしい,おそろしい,,osoroshii,"straszliwy
@@ -13287,7 +13297,9 @@ ciało zmarłego",,,
 7003,WORD_NOUN,,HIRAGANA,,,水死,すいし,,suishi,utonięcie,,,
 7004,WORD_NOUN,,HIRAGANA,,,死亡,しぼう,,shibou,śmierć,,,
 7005,WORD_NOUN,,HIRAGANA,,,死刑,しけい,,shikei,kara śmierci,,,
-7006,WORD_NOUN,,HIRAGANA,,,物語,ものがたり,,monogatari,opowiadanie,,,
+7006,WORD_NOUN,,HIRAGANA,,,物語,ものがたり,,monogatari,"opowiadanie
+opowieść
+powiastka",,,
 7007,WORD_NOUN,,HIRAGANA,,,底,てい,,tei,"dno
 podstawa
 rodzaj",,,7008
@@ -18490,3 +18502,47 @@ wybrzeże",,,
 9703,WORD_NOUN,,HIRAGANA,,,飛泉,ひせん ,,hisen,wodospad,,,
 9704,WORD_NOUN,,HIRAGANA,,,洗礼式,せんれいしき ,,senreishiki,chrzest,,,
 9705,WORD_NOUN,,HIRAGANA,,,饂飩粉,うどんこ ,,udonko,mączniak,,,
+9706,WORD_NOUN,,HIRAGANA,,,解剖学,かいぼうがく,,kaibougaku,anatomia,,,
+9707,WORD_VERB_U,,HIRAGANA,,,放り出す,ほうりだす ,,houridasu,"odpalać
+strzelać
+wyrzucać
+zwalniać
+poddawać się
+zaniedbywać",,,
+9708,WORD_NOUN,,HIRAGANA,,,卒業証書,そつぎょうしょうしょ ,,sotsugyou shousho,dyplom,ukończenia szkoły,,
+9709,WORD_NOUN,,HIRAGANA,,,樺,かば ,,kaba,brzoza,,,"9710
+9711"
+9710,WORD_NOUN,,HIRAGANA,,,樺,かにわ ,,kaniwa,brzoza,,,"9709
+9711"
+9711,WORD_NOUN,,HIRAGANA,,,樺,かんば ,,kanba,brzoza,,,"9709
+9710"
+9712,WORD_NOUN,,HIRAGANA,,,毛,け ,,ke,włosy,,,
+9713,WORD_NOUN,,HIRAGANA,,,割り,わり ,,wari,"wskaźnik
+stosunek
+proporcja
+relacja
+procent
+odsetek",,,
+9714,WORD_NOUN,,HIRAGANA,,,球体,きゅうたい ,,kyuutai,"glob
+kula
+sfera",,,
+9715,WORD_NOUN,,HIRAGANA,,,沼沢,しょうたく ,,shoutaku,"bagno
+moczary",,,
+9716,WORD_NOUN,,HIRAGANA,,,泥沼,どろぬま ,,doronuma,"bagno
+moczary",,,
+9717,WORD_NOUN,,HIRAGANA,,,活栓,かっせん ,,kassen,"klapa
+wentyl
+zastawka
+zawór",,,
+9718,WORD_NOUN,,HIRAGANA,,,笑声,しょうせい ,,shousei,śmiech,,,
+9719,WORD_NOUN,,HIRAGANA,,,絵図,えず ,,ezu,ilustracja,,,
+9720,WORD_NOUN,,HIRAGANA,,,棒切れ,ぼうきれ ,,boukire,"kij
+kijek
+laska
+pałka",,,9721
+9721,WORD_NOUN,,HIRAGANA,,,棒切れ,ぼうぎれ ,,bougire,"kij
+kijek
+laska
+pałka",,,9720
+9722,WORD_NOUN,,HIRAGANA,,,社会学,しゃかいがく ,,shakaigaku,socjologia,,,
+9723,WORD_NOUN,,HIRAGANA,,,社会学者,しゃかいがくしゃ ,,shakaigakusha,socjolog,,,
