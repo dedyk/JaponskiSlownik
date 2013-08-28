@@ -248,7 +248,8 @@ Genki 1-2",,-,あの,,ano,tam,daleko od mówcy i osoby docelowej (z rzeczownikie
 133,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,そこ,,soko,tam,"miejsce, blisko osoby docelowej",,7008
 134,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,あそこ,,asoko,tam,"miejsce, daleko od mówcy i osoby docelowej",,
 135,WORD_ASK,,HIRAGANA,Genki 1-2,,-,どこ,,doko,gdzie,miejsce,,
-136,WORD_ASK,,HIRAGANA,Genki 1-2,,-,だれ,,dare,kto,,,
+136,WORD_ASK,,HIRAGANA,Genki 1-2,,誰,だれ,,dare,"kto
+który",,,
 137,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-2,,美味しい,おいしい,,oishii,smaczne,,,
 138,WORD_NOUN,,HIRAGANA,"Genki 1-2
 Genki kanji 2-15",,魚,さかな,,sakana,ryba,,,
@@ -1063,7 +1064,8 @@ ręka",,,
 535,WORD_NOUN,,HIRAGANA,Genki 1-7,,頭,あたま,,atama,głowa,,,3712
 536,WORD_NOUN,,HIRAGANA,Genki 1-7,,背中,せなか,,senaka,plecy,,,
 537,WORD_NOUN,,HIRAGANA,Genki 1-7,,-,おしり,,oshiri,pośladek,,,
-538,WORD_NOUN,,HIRAGANA,Genki 1-7,,肩,かた,,kata,ramię,,,
+538,WORD_NOUN,,HIRAGANA,Genki 1-7,,肩,かた,,kata,"ramię
+bark",,,
 539,WORD_NOUN,,HIRAGANA,Genki 1-7,,胸,むね,,mune,"klatka piersiowa
 piersi
 serce",,,
@@ -5528,7 +5530,9 @@ być nieruszonym",,,
 2923,WORD_NOUN,,HIRAGANA,,,置き場,おきば,,okiba,"schowek
 miejsce na",np. świecie,,
 2924,WORD_NOUN,,HIRAGANA,,,物置,ものおき,,monooki,schowek,,,
-2925,WORD_NOUN,,HIRAGANA,,,位置,いち,,ichi,"pozycja
+2925,WORD_NOUN,,HIRAGANA,,,位置,いち,,ichi,"posada
+stanowisko
+pozycja
 lokalizacja
 sytuacja
 lokacja
@@ -11391,8 +11395,10 @@ być zadowolonym
 być zakończonym",,,
 5982,WORD_NOUN,,HIRAGANA,,,収入,しゅうにゅう,,shuunyuu,"dochód
 zarobek",,,
-5983,WORD_NOUN,,HIRAGANA,,,収益,しゅうえき,,shuueki,"zarobki
-dochody",,,
+5983,WORD_NOUN,,HIRAGANA,,,収益,しゅうえき,,shuueki,"zarobek
+dochód
+korzyść
+zysk",,,
 5984,WORD_NOUN,,HIRAGANA,,,収容,しゅうよう,,shuuyou,"zakwaterowanie
 przyjęcie",,,
 5985,WORD_NOUN,,HIRAGANA,,,買収,ばいしゅう,,baishuu,"nabycie
@@ -11843,6 +11849,8 @@ badanie",,,
 dwa razy
 ilość razy",,,
 6185,UNKNOWN,,HIRAGANA,,,二倍,にばい,,nibai,"dwa razy tyle
+podwójny
+dwukrotny
 podwójny",,,
 6186,UNKNOWN,,HIRAGANA,,,三倍,さんばい,,sanbai,"trzy razy tyle
 potrójny",,,
@@ -14667,7 +14675,9 @@ zdolności",,,7767
 prosto",,,
 7773,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-23,,此の様に,このように,,kono you ni,w ten sposób,,,
 7774,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-23,,-,によって,,ni yotte,zależnie od,~,,
-7775,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-23,,殆ど,ほとんど,,hotondo,prawie,,,
+7775,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-23,,殆ど,ほとんど,,hotondo,"prawie
+niemal
+nieomal",,,
 7776,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 2-23,,同じよう,おなじよう,,onaji you,podobny,,,
 7777,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-23,,全員,ぜんいん,,zen'in,wszyscy członkowie,,,
 7778,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-23,,軽蔑,けいべつ,,keibetsu,"pogarda
@@ -14900,6 +14910,7 @@ wargi",,,
 gromadzić",,,
 7880,WORD_EXPRESSION,,HIRAGANA,,,併せて,あわせて,,awasete,"razem
 grupowo
+wspólnie
 ponadto
 dodatkowo
 w tym samym czasie",,,
@@ -18600,3 +18611,31 @@ lubić",,,
 rytualne samobójstwo",,,
 9746,WORD_NOUN,,HIRAGANA,,,腹切り,はらきり ,,harakiri,"harakiri
 rytualne samobójstwo",,,
+9747,WORD_NOUN,,HIRAGANA,,,螺子回し,ねじまわし ,,nejimawashi,śrubokręt,,,
+9748,WORD_NOUN,,HIRAGANA,,,腱,けん ,,ken,ścięgno,,,
+9749,WORD_NOUN,,HIRAGANA,,,凶漢,きょうかん ,,kyoukan,"przestępca
+łajdak
+łotr
+złoczyńca",,,
+9750,WORD_NOUN,,HIRAGANA,,,子音,しいん ,,shiin,spółgłoska,,,
+9751,WORD_NOUN,,HIRAGANA,,,暖炉,だんろ ,,danro,"kominek
+ognisko domowe",,,
+9752,WORD_NOUN,,HIRAGANA,,,干草,ほしくさ ,,hoshikusa,siano,,,9753
+9753,WORD_NOUN,,HIRAGANA,,,干草,ほしぐさ ,,hoshigusa,siano,,,9752
+9754,WORD_NOUN,,HIRAGANA,,,牡羊,おひつじ ,,ohitsuji,"baran
+taran",,,
+9755,WORD_NOUN,,HIRAGANA,,,気性,きしょう ,,kishou,"charakter
+usposobienie (osoby)
+temperament",,,
+9756,WORD_NOUN,,HIRAGANA,,,生存,せいぞん ,,seizon,"byt
+egzystencja
+istnienie",,,
+9757,WORD_VERB_U,,HIRAGANA,,,浮ぶ,うかぶ ,,ukabu,"unosić się
+płynąć
+pływać",,,
+9758,WORD_NOUN,,HIRAGANA,,,浸食,しんしょく ,,shinshoku,"erozja
+korozja",,,
+9759,WORD_NOUN,,HIRAGANA,,,譲歩,じょうほ ,,jouho,"ustępstwo
+pojednanie
+kompromis",,,
+9760,WORD_NOUN,,HIRAGANA,,,葡萄畑,ぶどうばたけ ,,budoubatake,winnica,,,
