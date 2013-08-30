@@ -1318,7 +1318,7 @@ Genki kanji 2-15",を,運転する,うんてんする,o,unten suru,prowadzić,po
 657,UNKNOWN,,HIRAGANA,Genki 1-8,,-,ううん,,uun,nie,potocznie,,
 658,UNKNOWN,,HIRAGANA,Genki 1-8,,-,うん,,un,tak,potocznie,,6981
 659,WORD_EXPRESSION,,HIRAGANA,Genki 1-8,,乾杯,かんぱい,,kanpai,na zdrowie,"toast, dosł. osuszanie szklanki",,
-660,UNKNOWN,,HIRAGANA,"Genki 1-8
+660,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki 1-8
 Genki kanji 2-22",,残念,ざんねん,,zannen,"żałosny
 niestety
 trudno
@@ -1450,7 +1450,7 @@ Genki kanji 1-3",,九つ,ここのつ,,kokonotsu,dziewięć,klasyfikator ogólny
 719,WORD_COUNTERS,,HIRAGANA,"Genki 1-9
 Klasyfikatory
 Genki kanji 1-3",,十,とお,,too,dziesięć,klasyfikator ogólny,,11
-720,UNKNOWN,,HIRAGANA,Genki 1-11,,-,そして,,soshite,następnie,,,
+720,UNKNOWN,,HIRAGANA,Genki 1-11,,然して,そして,,soshite,następnie,,,
 721,WORD_NOUN,,HIRAGANA,,,図書室,としょしつ,,toshoshitsu,biblioteka,w sali,,
 722,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-9,,茶色い,ちゃいろい,,chairoi,brązowy,,,
 723,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,灰色,はいいろ,,haiiro,szary,,,
@@ -6177,7 +6177,8 @@ chcieć",,,
 apetyt
 żądza",,,
 3269,WORD_NOUN,,HIRAGANA,,,欲求,よっきゅう,,yokkyuu,"pragnienie
-aspiracje",,,
+aspiracje
+chęci",,,
 3270,WORD_NOUN,,HIRAGANA,,,欲得,よくとく,,yokutoku,"egoizm
 prywatny interes",,,
 3271,WORD_NOUN,,HIRAGANA,,,神宮,じんぐう,,jinguu,sintoistyczna świątynia,,,
@@ -7852,7 +7853,8 @@ szyny",,,
 4185,WORD_NOUN,,HIRAGANA,,,鉄棒,かなぼう,,kanabou,pręt metalowy,,,4184
 4186,WORD_NOUN,,HIRAGANA,,,鉄砲,てっぽう,,teppou,"pistolet
 broń palna",,,
-4187,WORD_NOUN,,HIRAGANA,,,袋,ふくろ,,fukuro,worek,,,
+4187,WORD_NOUN,,HIRAGANA,,,袋,ふくろ,,fukuro,"torba
+worek",,,
 4188,WORD_NOUN,,HIRAGANA,,,床,とこ,,toko,łóżko,,,4189
 4189,WORD_NOUN,,HIRAGANA,,,床,ゆか,,yuka,podłoga,,,4188
 4190,WORD_NOUN,,HIRAGANA,,,容,よう,,you,"forma
@@ -8686,6 +8688,7 @@ emisja
 emanacja",,,
 4609,WORD_NOUN,,HIRAGANA,,,放棄,ほうき,,houki,"porzucenie
 rezygnacja
+zrzeczenie
 wyrzeczenie się",,,
 4610,UNKNOWN,,HIRAGANA,,,放題,ほうだい,,houdai,"do woli
 bez ograniczenia
@@ -10536,7 +10539,9 @@ uzasadnienie",,,
 5547,WORD_ADJECTIVE_NA,,HIRAGANA,,,根本的,こんぽんてき,,konponteki,"fundamentalny
 radykalny",,,
 5548,WORD_NOUN,,HIRAGANA,,,根源,こんげん,,kongen,"pochodzenie
-źródło",,,
+źródło
+geneza
+rodowód",,,
 5549,WORD_NOUN,,HIRAGANA,,,根幹,こんかん,,konkan,"podstawa
 korzeń
 jądro",,,
@@ -18731,3 +18736,49 @@ bruzda
 szczelina
 przerwa",,,
 9802,WORD_NOUN,,KATAKANA,,,-,ゴムパッキン,,gomu pakkin,uszczelka gumowa,,,
+9803,WORD_NOUN,,HIRAGANA,,,混合物,こんごうぶつ ,,kongoubutsu,"mieszanina
+mieszanka",,,
+9804,WORD_NOUN,,HIRAGANA,,,自治権,じちけん ,,jichiken,"autonomia
+samorząd",,,
+9805,WORD_NOUN,,HIRAGANA,,,鶉,うずら ,,uzura,przepiórka,,,
+9806,WORD_NOUN,,HIRAGANA,,,乞い,こい ,,koi,"błaganie
+proszenie",,,
+9807,WORD_NOUN,,HIRAGANA,,,密度,みつど ,,mitsudo,"gęstość
+zwartość",,,
+9808,WORD_ADJECTIVE_NA,,HIRAGANA,,,架空,かくう ,,kakuu,"fikcyjny
+urojony
+wymyślony",,,
+9809,WORD_NOUN,,HIRAGANA,,,男親,おとこおや ,,otokooya,ojciec,,,
+9810,WORD_NOUN,,HIRAGANA,,,自白,じはく ,,jihaku,"spowiedź
+wyznanie
+zeznanie",,,
+9811,WORD_NOUN,,HIRAGANA,,,衝突,しょうとつ ,,shoutotsu,"kolizja
+zderzenie
+konflikt",,,
+9812,WORD_NOUN,,HIRAGANA,,,襤褸,ぼろ ,,boro,"szmata
+skrawek materiału
+postrzępione ubranie",,,9813
+9813,WORD_NOUN,,HIRAGANA,,,襤褸,らんる ,,ranru,"szmata
+skrawek materiału
+postrzępione ubranie",,,9812
+9814,WORD_NOUN,,HIRAGANA,,,震駭,しんがい ,,shingai,"terror
+zgroza
+przerażenie
+strach",,,
+9815,WORD_NOUN,,HIRAGANA,,,鳥人,ちょうじん ,,choujin,"lotnik
+ornitolog",,,
+9816,WORD_ADJECTIVE_NA,,HIRAGANA,,,化学的,かがくてき ,,kagakuteki,chemiczny,,,
+9817,WORD_ADJECTIVE_NA,,HIRAGANA,,,入り用,いりよう ,,iriyou,"kosztowny
+drogi
+potrzebny",,,
+9818,WORD_ADJECTIVE_NA,,HIRAGANA,,,庶民的,しょみんてき ,,shominteki,"popularny
+powszechny
+ludowy",,,
+9819,WORD_NOUN,,HIRAGANA,,,形而上学,けいじじょうがく ,,keijijougaku,metafizyka,,,
+9820,WORD_NOUN,,HIRAGANA,,,焦熱地獄,しょうねつじごく ,,shounetsujigoku,piekło,,,
+9821,WORD_NOUN,,HIRAGANA,,,日誌,にっし ,,nisshi,"dziennik
+pamiętnik",,,
+9822,WORD_ADJECTIVE_I,,HIRAGANA,,,毒毒しい,どくどくしい ,,dokudokushii,"jadowity
+toksyczny
+trujący",,,
+9823,WORD_NOUN,,HIRAGANA,,,聖歌隊,せいかたい ,,seikatai,chór,,,
