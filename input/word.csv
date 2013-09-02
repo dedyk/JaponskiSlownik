@@ -5120,7 +5120,8 @@ wydatek",,,
 2710,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,生活費,せいかつひ,,seikatsuhi,"koszty utrzymania
 koszty życia",,,
 2711,WORD_NOUN,,HIRAGANA,,,消費,しょうひ,,shouhi,"konsumpcja
-zużycie",,,
+zużycie
+spożycie",,,
 2712,WORD_VERB_IRREGULAR,,HIRAGANA,,,消費する,しょうひする,,shouhi suru,"konsumować
 zużywać",,,
 2713,WORD_NOUN,,HIRAGANA,,,経費,けいひ,,keihi,"koszt
@@ -9847,7 +9848,9 @@ rebelia",,,
 5177,WORD_VERB_RU,,HIRAGANA,,,乱れる,みだれる,,midareru,"być w nieporządku
 być zmieszanym
 być zdezorganizowanym",,,
-5178,WORD_VERB_U,,HIRAGANA,,,乱す,みだす,,midasu,"wprowadzać nieporządek
+5178,WORD_VERB_U,,HIRAGANA,,,乱す,みだす,,midasu,"przeszkadzać
+zakłócać
+wprowadzać nieporządek
 wprowadzać bałagan",,,
 5179,WORD_NOUN,,HIRAGANA,,,負,ふ,,fu,"negatywny
 minus",,,
@@ -12329,7 +12332,8 @@ pomoc",,,
 6427,WORD_NOUN,,HIRAGANA_KATAKANA,,,救命ボート,きゅうめいボート,,kyuumei bouto,łódź ratunkowa,,,
 6428,WORD_NOUN,,HIRAGANA,,,入院,にゅういん,,nyuuin,"hospitalizacja
 pójście do szpitala",,,
-6429,WORD_NOUN,,HIRAGANA,,,洪水,こうずい,,kouzui,powódź,,,
+6429,WORD_NOUN,,HIRAGANA,,,洪水,こうずい,,kouzui,"powódź
+zalanie",,,
 6430,WORD_VERB_U,,HIRAGANA,,,届く,とどく,,todoku,"przybywać
 docierać",,,
 6431,WORD_VERB_RU,,HIRAGANA,,,届ける,とどける,,todokeru,"zgłaszać
@@ -14029,6 +14033,9 @@ oddawać",osoba ni rzecz,,
 7389,WORD_NOUN,,HIRAGANA,,,言,こと,,koto,słowo,,,2153
 7390,WORD_NOUN,,HIRAGANA,,,宣言,せんげん,,sengen,"orzeczenie
 deklaracja
+obwieszczenie
+ogłoszenie
+zawiadomienie
 proklamacja",,,
 7391,WORD_ADJECTIVE_NA,,HIRAGANA,,,適当,てきとう,,tekitou,"odpowiedni
 stosowny",,,
@@ -18871,3 +18878,53 @@ wieśniak",,,
 9863,WORD_NOUN,,KATAKANA,,,-,ココナッツミルク ,,kokonattsu miruku,mleko kokosowe,,,
 9864,WORD_NOUN,,HIRAGANA,,,甲虫類,かぶとむしるい,,kabutomushi rui,chrząszcz,,,
 9865,WORD_ADJECTIVE_NA,,HIRAGANA,,,政治的,せいじてき ,,seijiteki,polityczny,,,
+9866,WORD_NOUN,,HIRAGANA,,,奴隷制度,どれいせいど ,,doreiseido,"niewola
+niewolnictwo",,,
+9867,WORD_NOUN,,HIRAGANA,,,再発,さいはつ ,,saihatsu,"powrót
+nawrót",,,
+9868,WORD_NOUN,,HIRAGANA,,,気保養,きほよう ,,kihoyou,"odpoczynek
+rozrywka",,,
+9869,WORD_NOUN,,HIRAGANA,,,弁,べん ,,ben,"mowa
+dialekt",,,
+9870,WORD_NOUN,,HIRAGANA,,,利得,りとく ,,ritoku,zyskiwanie,,,
+9871,WORD_NOUN,,HIRAGANA,,,原稿,げんこう ,,genkou,"manuskrypt
+rękopis",,,
+9872,WORD_NOUN,,HIRAGANA,,,和合,わごう ,,wagou,"harmonia
+zgoda
+zgodność",,,
+9873,WORD_NOUN,,HIRAGANA,,,事典,じてん ,,jiten,encyklopedia,,,9874
+9874,WORD_NOUN,,HIRAGANA,,,事典,ことてん ,,kototen,encyklopedia,,,9873
+9875,WORD_NOUN,,HIRAGANA,,,瓦斯,がす ,,gasu,gaz,,,
+9876,WORD_NOUN,,HIRAGANA,,,演算,えんざん ,,enzan,"działanie
+obliczanie
+liczenie",,,
+9877,WORD_NOUN,,HIRAGANA,,,臥所,ふしど ,,fushido,"łóżko
+posłanie",,,
+9878,WORD_NOUN,,HIRAGANA,,,蒸気,じょうき ,,jouki,para,,,
+9879,WORD_NOUN,,HIRAGANA,,,繊維,せんい ,,sen'i,włókno,,,
+9880,WORD_NOUN,,HIRAGANA,,,論陣,ろんじん ,,ronjin,"dowód
+wywód
+argument",,,
+9881,WORD_NOUN,,HIRAGANA,,,隕石,いんせき ,,inseki,meteoryt,,,
+9882,WORD_NOUN,,HIRAGANA,,,隕石孔,いんせきこう ,,insekikou,krater meteorytowy,,,
+9883,WORD_NOUN,,HIRAGANA,,,陸将,りくしょう ,,rikushou,generał,,,
+9884,WORD_NOUN,,HIRAGANA,,,繰り返し,くりかえし ,,kurikaeshi,"powtórka
+powtórzenie",,,
+9885,WORD_NOUN,,HIRAGANA,,,守銭奴,しゅせんど ,,shusendo,"skąpiec
+sknera",,,
+9886,WORD_NOUN,,HIRAGANA,,,鉤十字,かぎじゅうじ ,,kagijuuji,swastyka,,,
+9887,WORD_VERB_U,,HIRAGANA,,,呼び起こす,よびおこす ,,yobiokosu,"wywoływać
+wzywać
+budzić",kogoś,,
+9888,WORD_NOUN,,HIRAGANA,,,審判員,しんばんいん ,,shinban'in,"sędzia
+arbiter
+rozjemca",,,9889
+9889,WORD_NOUN,,HIRAGANA,,,審判員,しんぱんいん ,,shinpan'in,"sędzia
+arbiter
+rozjemca",,,9888
+9890,WORD_VERB_IRREGULAR,,HIRAGANA,,,制する,せいする ,,seisuru,"powstrzymywać emocje
+brać górę
+kierować
+panować",,,
+9891,WORD_NOUN,,HIRAGANA,,,蛋白質,たんぱくしつ ,,tanpakushitsu,"białko
+proteiny",,,
