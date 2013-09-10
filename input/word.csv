@@ -2070,6 +2070,7 @@ Genki 2-13",,十日,とおか,,tooka,dziesięć dni,liczenie dni,,307
 1024,WORD_NOUN,,HIRAGANA,,,眉毛,まゆげ,,mayuge,brwi,,,
 1025,WORD_VERB_U,,HIRAGANA,Genki kanji 2-18,,試す,ためす,,tamesu,"spróbować
 wypróbować
+doświadczać
 poddać próbie",,,
 1026,WORD_NOUN,,KATAKANA,,,-,ズロチ,,zurochi,zł,,,
 1027,WORD_VERB_U,,HIRAGANA,Genki 2-18,,咲く,さく,,saku,kwitnąć,,,
@@ -4208,7 +4209,8 @@ Genki kanji 2-22",,残業,ざんぎょう,,zangyou,praca po godzinach,,,
 pomyłka",,,
 2217,WORD_NOUN,,KATAKANA,Genki 2-17,,-,ニュース,,nyuusu,"news
 wiadomość",,,
-2218,WORD_NOUN,,HIRAGANA,Genki 2-17,,秘密,ひみつ,,himitsu,tajemnica,,,
+2218,WORD_NOUN,,HIRAGANA,Genki 2-17,,秘密,ひみつ,,himitsu,"tajemnica
+sekret",,,
 2219,WORD_NOUN,,HIRAGANA,Genki 2-17,,寮,りょう,,ryou,"internat
 dormitorium
 dom studencki
@@ -6727,6 +6729,7 @@ sprzęt
 umeblowanie",,,
 3562,WORD_NOUN,,HIRAGANA,,,設備,せつび,,setsubi,"wyposażenie
 sprzęt
+ekwipunek
 instalacja",,,
 3563,WORD_NOUN,,HIRAGANA,,,備蓄,びちく,,bichiku,"rezerwa
 zapasy",,,
@@ -9610,9 +9613,12 @@ osąd",,,
 5043,WORD_NOUN,,HIRAGANA,,,判じ物,はんじもの,,hanjimono,zagadka,,,
 5044,WORD_NOUN,,HIRAGANA,,,公判,こうはん,,kouhan,sąd publiczny,,,
 5045,WORD_NOUN,,HIRAGANA,,,憲法,けんぽう,,kenpou,konstytucja,,,
-5046,WORD_NOUN,,HIRAGANA,,,怪物,かいぶつ,,kaibutsu,potwór,,,
-5047,WORD_NOUN,,HIRAGANA,,,怪獣,かいじゅう,,kaijuu,potwór,,,
-5048,WORD_NOUN,,KATAKANA,,,-,モンスター,,monsutaa,potwór,,,
+5046,WORD_NOUN,,HIRAGANA,,,怪物,かいぶつ,,kaibutsu,"potwór
+monstrum",,,
+5047,WORD_NOUN,,HIRAGANA,,,怪獣,かいじゅう,,kaijuu,"potwór
+monstrum",,,
+5048,WORD_NOUN,,KATAKANA,,,-,モンスター,,monsutaa,"potwór
+monstrum",,,
 5049,WORD_VERB_U,,HIRAGANA,,,怠る,おこたる,,okotaru,"zaniedbywać
 nie czuwać
 nie być na straży
@@ -12640,7 +12646,9 @@ okręg wiejski",,,
 6598,WORD_NOUN,,HIRAGANA,,,川魚,かわざかな,,kawazakana,ryba rzeczna,,,6599
 6599,WORD_NOUN,,HIRAGANA,,,川魚,かわうお,,kawauo,ryba rzeczna,,,6598
 6600,WORD_NOUN,,HIRAGANA,,,大川,おおかわ,,ookawa,duży rzeka,,,
-6601,WORD_NOUN,,HIRAGANA,,,出来事,できごと,,dekigoto,wydarzenie,,,
+6601,WORD_NOUN,,HIRAGANA,,,出来事,できごと,,dekigoto,"wydarzenie
+zdarzenie
+wypadek",,,
 6602,WORD_NOUN,,HIRAGANA,,,曜日,ようび,,youbi,dzień tygodnia,,,
 6603,WORD_NOUN,,HIRAGANA,,,社員,しゃいん,,shain,pracownik firmy,,,
 6604,UNKNOWN,,HIRAGANA,,,余,よ,,yo,"nadwyżka
@@ -12800,6 +12808,7 @@ użyźniać",,,
 6701,WORD_VERB_U,,HIRAGANA,,,肥る,ふとる,,futoru,"tyć
 grubieć",,,
 6702,WORD_NOUN,,HIRAGANA,,,肥料,ひりょう,,hiryou,"kompost
+gnój
 nawóz",,,
 6703,WORD_NOUN,,HIRAGANA,,,肥え土,こえつち,,koetsuchi,żyzna ziemia,,,
 6704,WORD_NOUN,,HIRAGANA,,,肥土,こえつち,,koetsuchi,żyzna ziemia,,,
@@ -19217,3 +19226,41 @@ strategia",,,
 węglowodan",,,
 10032,UNKNOWN,,HIRAGANA,,,広漠たる,こうばくたる,,koubakutaru,"ogromny
 olbrzymi",,,
+10033,WORD_NOUN,,HIRAGANA,,,物質代謝,ぶっしつたいしゃ ,,busshitsutaisha,metabolizm,,,
+10034,WORD_NOUN,,HIRAGANA,,,齧歯類,げっしるい ,,gesshirui,gryzoń,,,
+10035,WORD_NOUN,,HIRAGANA,,,碗,わん,,wan,"miska
+miseczka",,,
+10036,WORD_NOUN,,HIRAGANA,,,義,ぎ ,,gi,"moralność
+prawość
+sprawiedliwość",,,
+10037,WORD_NOUN,,HIRAGANA,,,単車,たんしゃ ,,tansha,motocykl,,,
+10038,WORD_NOUN,,HIRAGANA,,,懐胎,かいたい ,,kaitai,"ciąża
+koncepcja",,,
+10039,WORD_NOUN,,HIRAGANA,,,抄本,しょうほん ,,shouhon,"wyciąg
+fragment
+urywek
+skrót",,,
+10040,WORD_NOUN,,HIRAGANA,,,生姜,しょうが ,,shouga,imbir,,,
+10041,WORD_NOUN,,HIRAGANA,,,生姜湯,しょうがゆ ,,shougayu,herbata imbirowa,,,
+10042,WORD_NOUN,,HIRAGANA,,,算術,さんじゅつ ,,sanjutsu,arytmetyka,,,
+10043,UNKNOWN,,HIRAGANA,,,総て,すべて ,,subete,"całkiem
+całkowicie
+całość
+cały
+każdy
+wszystko",,,
+10044,WORD_NOUN,,HIRAGANA,,,霊殿,れいでん ,,reiden,"świątynia
+sanktuarium
+mauzoleum",,,
+10045,WORD_NOUN,,KATAKANA,,,-,スズメバチ,,suzumebachi,szerszeń,,,
+10046,WORD_NOUN,,KATAKANA,,,-,ナイチンゲール,,naichingeeru,słowik,,,
+10047,WORD_NOUN,,HIRAGANA,,,貴族政治,きぞくせいじ ,,kizokuseiji,"arystokracja
+szlachectwo
+szlachta",,,
+10048,WORD_NOUN,,HIRAGANA,,,組織学,そしきがく ,,soshikigaku,histologia,,,
+10049,WORD_NOUN,,KATAKANA,,,-,チーター,,chiitaa,gepard,,,
+10050,WORD_NOUN,,HIRAGANA,,,魁,さきがけ ,,sakigake,"pionier
+prekursor",,,
+10051,WORD_NOUN,,HIRAGANA,,,魁偉,かいい ,,kaii,"umięśniony
+muskularny
+imponujący",człowiek,,
