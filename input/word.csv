@@ -134,7 +134,8 @@ am",czas,,
 79,UNKNOWN,,HIRAGANA,Genki 1-1,,人,じん,,jin,... człowiek,,,"286
 601"
 80,WORD_NOUN,,HIRAGANA,"Genki 1-1
-Genki kanji 1-6",,先生,せんせい,,sensei,nauczyciel,,,
+Genki kanji 1-6",,先生,せんせい,,sensei,"nauczyciel
+doktor",,,
 81,WORD_NOUN,,HIRAGANA,Genki 1-1,,専門,せんもん,,senmon,specjalizacja,,,
 82,WORD_EXPRESSION,,HIRAGANA,"Genki 1-1
 Genki 1-3",,-,そうですね,,sou desu ne,to prawda,,,
@@ -8368,7 +8369,8 @@ tradycja",,,
 popularny
 normalny",,,
 4440,WORD_NOUN,,HIRAGANA,,,慣行,かんこう,,kankou,rutyna,,,
-4441,WORD_NOUN,,HIRAGANA,,,慣性,かんせい,,kansei,"bezwładność
+4441,WORD_NOUN,,HIRAGANA,,,慣性,かんせい,,kansei,"bezwład
+bezwładność
 inercja",,,
 4442,WORD_NOUN,,HIRAGANA,,,所得税,しょとくぜい,,shotokuzei,podatek dochodowy,,,
 4443,WORD_NOUN,,HIRAGANA,,,無税,むぜい,,muzei,"wolny od podatku
@@ -9297,7 +9299,8 @@ szkielet
 kręgosłup",,,5529
 4899,WORD_NOUN,,HIRAGANA,,,資本,しほん,,shihon,"kapitał
 fundusze",,,
-4900,WORD_NOUN,,HIRAGANA,,,資金,しきん,,shikin,fundusze,,,
+4900,WORD_NOUN,,HIRAGANA,,,資金,しきん,,shikin,"kapitał
+fundusze",,,
 4901,WORD_NOUN,,HIRAGANA,,,資源,しげん,,shigen,"środki
 zasoby",,,
 4902,WORD_NOUN,,HIRAGANA,,,物資,ぶっし,,busshi,"towar
@@ -11896,8 +11899,7 @@ badanie",,,
 6182,WORD_NOUN,,HIRAGANA,,,観測,かんそく,,kansoku,obserwacja,,,
 6183,WORD_NOUN,,HIRAGANA,,,測候所,そっこうじょ,,sokkoujo,stacja meteorologiczna,,,
 6184,UNKNOWN,,HIRAGANA,,,倍,ばい,,bai,"podwójny
-dwa razy
-ilość razy",,,
+dwa razy",,,
 6185,UNKNOWN,,HIRAGANA,,,二倍,にばい,,nibai,"dwa razy tyle
 podwójny
 dwukrotny
@@ -12314,6 +12316,7 @@ półka",,,769
 6401,WORD_NOUN,,HIRAGANA,,,雨量,うりょう,,uryou,opad deszczu,ilość,,
 6402,WORD_NOUN,,HIRAGANA,,,雨漏り,あまもり,,amamori,przeciek,w dachu,,
 6403,WORD_NOUN,,HIRAGANA,,,対話,たいわ,,taiwa,"dialog
+rozmowa
 konwersacja",,,
 6404,WORD_NOUN,,HIRAGANA,,,出会い,であい,,deai,spotkanie,,,
 6405,WORD_NOUN,,HIRAGANA,,,会場,かいじょう,,kaijou,miejsce spotkania,"przyjęcia, koncertu itd.",,
@@ -19264,3 +19267,41 @@ prekursor",,,
 10051,WORD_NOUN,,HIRAGANA,,,魁偉,かいい ,,kaii,"umięśniony
 muskularny
 imponujący",człowiek,,
+10052,WORD_NOUN,,HIRAGANA,,,青少年,せいしょうねん ,,seishounen,"młodzieniec
+młodzież
+młody człowiek",,,
+10053,WORD_NOUN,,HIRAGANA,,,除草剤,じょそうざい ,,josouzai,herbicyd,,,
+10054,WORD_ADJECTIVE_I,,HIRAGANA,,,恙無い,つつがない ,,tsutsuganai,"bezpieczny
+pewny
+pełny zdrowia",,,
+10055,WORD_NOUN,,HIRAGANA,,,一貫性,いっかんせい ,,ikkansei,"konsystencja
+spójność",,,
+10056,WORD_ADJECTIVE_NA,,HIRAGANA,,,卑怯,ひきょう ,,hikyou,tchórzostwo,,,
+10057,WORD_NOUN,,HIRAGANA,,,書生,しょせい ,,shosei,uczeń,"wykonujący zadania domowe w zamian za jedzenie, bądź zakwaterowanie",,
+10058,WORD_NOUN,,HIRAGANA,,,気色,けしき,,keshiki,"znak
+symbol
+objaw",,,10059
+10059,WORD_NOUN,,HIRAGANA,,,気色,きしょく ,,kishoku,"nastrój
+humor
+usposobienie",,,10058
+10060,WORD_NOUN,,HIRAGANA,,,蓄積,ちくせき,,chikuseki,"akumulacja
+kumulacja
+nagromadzenie",,,
+10061,WORD_NOUN,,HIRAGANA,,,結晶,けっしょう ,,kesshou,kryształ,,,
+10062,WORD_NOUN,,HIRAGANA,,,退位,たいい ,,taii,"abdykacja
+zrzeczenie",,,
+10063,WORD_NOUN,,HIRAGANA,,,誕辰,たんしん ,,tanshin,urodziny,,,
+10064,WORD_NOUN,,HIRAGANA,,,電解,でんかい ,,denkai,elektroliza,,,
+10065,WORD_VERB_RU,,HIRAGANA,,,申し上げる,もうしあげる ,,moushiageru,mówić,grzecznie,,
+10066,WORD_VERB_RU,,HIRAGANA,,,傷付ける,きずつける ,,kizutsukeru,"kaleczyć
+ranić
+zranić",,,
+10067,WORD_NOUN,,KATAKANA,,,-,パセリ,,paseri,pietruszka,,,
+10068,WORD_NOUN,,HIRAGANA,,,視聴者,しちょうしゃ ,,shichousha,"telewidz
+widz",,,
+10069,WORD_NOUN,,HIRAGANA,,,栗,くり ,,kuri,kasztan,,,
+10070,WORD_NOUN,,HIRAGANA,,,採鉱,さいこう ,,saikou,górnictwo,,,
+10071,WORD_NOUN,,HIRAGANA,,,竜巻,たつまき ,,tatsumaki,"tornado
+trąba powietrzna",,,
+10072,WORD_NOUN,,HIRAGANA,,,竜巻き,たつまき ,,tatsumaki,"tornado
+trąba powietrzna",,,
