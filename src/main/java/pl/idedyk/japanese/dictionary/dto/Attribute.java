@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Attribute {
-	
+
 	private AttributeType attributeType;
-	
+
 	private List<String> attributeValueList;
 
 	public AttributeType getAttributeType() {
@@ -26,9 +26,14 @@ public class Attribute {
 	}
 
 	public void setSingleAttributeValue(String attributeValue) {
-		
+
 		attributeValueList = new ArrayList<String>();
-		
+
 		attributeValueList.add(attributeValue);
-	}	
+	}
+
+	@Override
+	public String toString() {
+		return "Attribute [attributeType=" + attributeType + ", attributeValueList=" + attributeValueList + "]";
+	}
 }
