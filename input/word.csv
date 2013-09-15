@@ -1017,7 +1017,8 @@ Genki 2-16",,道,みち,,michi,"droga
 ulica
 kierunek
 wskazówka",,,8667
-505,WORD_NOUN,,HIRAGANA,Genki 2-16,,-,ごみ,,gomi,śmieci,,,
+505,WORD_NOUN,,HIRAGANA,Genki 2-16,,塵,ごみ,,gomi,"śmieci
+odpadki",,,
 506,WORD_NOUN,,HIRAGANA,"Genki 1-6
 Genki 1-7
 Genki 2-13",,-,おじいさん,,ojiisan,"dziadek
@@ -5166,7 +5167,8 @@ twórca",,,
 2727,WORD_NOUN,,HIRAGANA,,,信者,しんじゃ,,shinja,"wierny
 wyznawca
 wierzący",,,
-2728,WORD_NOUN,,HIRAGANA,,,労働者,ろうどうしゃ,,roudousha,robotnik,,,
+2728,WORD_NOUN,,HIRAGANA,,,労働者,ろうどうしゃ,,roudousha,"robotnik
+pracownik fizyczny",,,
 2729,WORD_NOUN,,HIRAGANA,,,反対者,はんたいしゃ,,hantaisha,"adwersarz
 oponent
 przeciwnik
@@ -10327,6 +10329,7 @@ rękojeść",,,
 5409,WORD_NOUN,,HIRAGANA,,,紋,もん,,mon,"herb
 wzór",,,
 5410,WORD_VERB_U,,HIRAGANA,,,契る,ちぎる,,chigiru,"przysięgać
+przyrzekać
 ślubować
 obiecywać",,,
 5411,WORD_VERB_U,,HIRAGANA,,,祈る,いのる,,inoru,"modlić się
@@ -13992,7 +13995,8 @@ głos ptaków",,,
 dmuchać (w gwizdek)
 uderzać (w bęben)",,,
 7334,WORD_VERB_U,,HIRAGANA,,,鳴る,なる,,naru,"dźwięczeć
-dzwonić",,,
+dzwonić
+brzmieć",,,
 7335,WORD_NOUN,,HIRAGANA,,,鳴き声,なきごえ,,nakigoe,głos zwierzęcy,,,
 7336,WORD_NOUN,,HIRAGANA,,,悲鳴,ひめい,,himei,"wrzask
 pisk",,,
@@ -14665,7 +14669,8 @@ metafora",,,"1591
 notatka",,,"1591
 7714"
 7716,WORD_NOUN,,HIRAGANA,,,文書,ぶんしょ,,bunsho,zdanie,,,
-7717,WORD_NOUN,,HIRAGANA,,,文明,ぶんめい,,bunmei,cywilizacja,,,
+7717,WORD_NOUN,,HIRAGANA,,,文明,ぶんめい,,bunmei,"cywilizacja
+kultura",,,
 7718,UNKNOWN,,HIRAGANA,,,本当,ほんとう,,hontou,prawda,,,
 7719,WORD_ADJECTIVE_NA,,HIRAGANA,,,当たり前,あたりまえ,,atarimae,"odpowiedni
 normalny
@@ -14924,6 +14929,7 @@ korygować
 prostować",,,
 7854,WORD_NOUN,,HIRAGANA,,,璽,じ,,ji,pieczęć cesarska,,,
 7855,WORD_NOUN,,HIRAGANA,,,盾,たて,,tate,"tarcza
+osłona
 ochrona
 pretekst",,,
 7856,WORD_NOUN,,HIRAGANA,,,侯,こう,,kou,"markiz
@@ -19539,3 +19545,53 @@ nienawiść",,,
 10152,WORD_NOUN,,HIRAGANA,,,復讐,ふくしゅう ,,fukushuu,"zemsta
 odwet
 wendetta",,,
+10153,WORD_NOUN,,HIRAGANA,,,温度計,おんどけい ,,ondokei,termometr,,,
+10154,WORD_NOUN,,HIRAGANA,,,重水素,じゅうすいそ ,,juusuiso,"deuter
+ciężki wodór",,,
+10155,WORD_VERB_U,,HIRAGANA,,,訝しむ,いぶかしむ ,,ibukashimu,wątpić,,,
+10156,WORD_NOUN,,KATAKANA,,,-,イタチ,,itachi,łasica,,,
+10157,WORD_NOUN,,KATAKANA,,,-,カリフラワー,,karifurawaa,kalafior,,,
+10158,WORD_NOUN,,HIRAGANA,,,芥,ごみ,,gomi,"śmieci
+odpadki",,,
+10159,WORD_NOUN,,HIRAGANA,,,暑さ,あつさ ,,atsusa,"ciepło
+gorąco
+skwar
+upał
+żar",,,
+10160,WORD_NOUN,,HIRAGANA,,,権能,けんのう ,,kennou,"autorytet
+władza",,,
+10161,WORD_NOUN,,HIRAGANA,,,疫病,えきびょう ,,ekibyou,"choroba zakaźna
+plaga
+zaraz
+epidemia",,,10162
+10162,WORD_NOUN,,HIRAGANA,,,疫病,やくびょう ,,yakubyou,"choroba zakaźna
+plaga
+zaraz
+epidemia",,,10161
+10163,WORD_NOUN,,HIRAGANA,,,滴下,てきか ,,tekika,"kapanie
+skapywanie
+obciekanie",,,
+10164,WORD_NOUN,,HIRAGANA,,,漿液,しょうえき ,,shoueki,płyn surowiczy,,,
+10165,WORD_NOUN,,HIRAGANA,,,空白,くうはく ,,kuuhaku,"próżnia
+pustak",,,
+10166,WORD_NOUN,,HIRAGANA,,,統御,とうぎょ ,,tougyo,"kontrola
+kontrolowanie
+sprawdzanie
+monitorowanie
+nadzorowanie",,,
+10167,WORD_NOUN,,HIRAGANA,,,針金,はりがね ,,harigane,drut,,,
+10168,WORD_NOUN,,HIRAGANA,,,販路,はんろ ,,hanro,"rynek
+market",,,
+10169,WORD_NOUN,,HIRAGANA,,,支払い,しはらい ,,shiharai,"płatność
+zapłata
+opłata",,,
+10170,WORD_NOUN,,HIRAGANA,,,化学者,かがくしゃ ,,kagakusha,chemik,,,
+10171,WORD_NOUN,,HIRAGANA,,,製造所,せいぞうしょ ,,seizousho,"fabryka
+wytwórnia",,,10172
+10172,WORD_NOUN,,HIRAGANA,,,製造所,せいぞうじょ ,,seizoujo,"fabryka
+wytwórnia",,,10171
+10173,WORD_NOUN,,KATAKANA,,,-,ハイエナ,,haiena,hiena,,,
+10174,WORD_NOUN,,HIRAGANA,,,荒稼ぎ,あらかせぎ ,,arakasegi,"zbijać kasę
+robić łatwe pieniądze
+robić fortunę
+rabunek",,,
