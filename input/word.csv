@@ -678,7 +678,7 @@ oczekiwać",,,
 368,WORD_VERB_U,,HIRAGANA,Genki 1-4,が,判る,わかる,ga,wakaru,"rozumieć
 znać
 poznać",,,
-369,WORD_VERB_RU,,HIRAGANA,Genki 1-4,が,-,いる,ga,iru,"być
+369,WORD_VERB_RU,,HIRAGANA,Genki 1-4,が,居る,いる,ga,iru,"być
 istnieć","miejsce ni, do rzeczy żywych",,"645
 4842
 7252
@@ -1719,7 +1719,8 @@ bardziej
 844,WORD_NOUN,,HIRAGANA,Genki 1-11,,作家,さっか,,sakka,pisarz,,,
 845,WORD_NOUN,,HIRAGANA,Genki 1-11,,警察官,けいさつかん,,keisatsukan,policjant,,,
 846,WORD_NOUN,,HIRAGANA,Genki 1-11,,俳優,はいゆう,,haiyuu,aktor,,,
-847,WORD_NOUN,,HIRAGANA,Genki 1-11,,看護師,かんごし,,kangoshi,pielęgniarka,w szpitalu,,
+847,WORD_NOUN,,HIRAGANA,Genki 1-11,,看護師,かんごし,,kangoshi,"pielęgniarka
+pielęgniarz",w szpitalu,,
 848,WORD_NOUN,,HIRAGANA,Genki 1-11,,野球選手,やきゅうせんしゅ,,yakyuusenshu,gracz baseball'a,,,
 849,WORD_NOUN,,HIRAGANA,Genki 1-11,,大統領,だいとうりょう,,daitouryou,prezydent,,,
 850,WORD_NOUN,,KATAKANA,Genki 1-11,,-,ジャーナリスト,,jaanarisuto,dziennikarz,,,
@@ -5209,7 +5210,8 @@ krytykować
 oskarżać
 obwiniać",,,
 2742,WORD_VERB_RU,,HIRAGANA,,,攻める,せめる,,semeru,"atakować
-napadać",,,
+napadać
+nacierać",,,
 2743,WORD_VERB_U,,HIRAGANA,,,打つかる,ぶつかる,,butsukaru,"zderzać się
 kolidować się
 wpadać na
@@ -6509,7 +6511,9 @@ potwierdzać",,,
 esencja
 prawdziwa natura",,,
 3433,WORD_NOUN,,HIRAGANA,,,物質,ぶっしつ,,busshitsu,"materia
-rzecz materialna",,,
+rzecz materialna
+substancja
+tworzywo",,,
 3434,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,質屋,しちや,,shichiya,lombard,,,
 3435,WORD_NOUN,,HIRAGANA,,,人質,ひとじち,,hitojichi,"zakładnik
 więzień",,,
@@ -14546,7 +14550,8 @@ rozwijać",,,
 7619,WORD_NOUN,,HIRAGANA,,,延長,えんちょう,,enchou,przedłużenie,,,
 7620,WORD_NOUN,,HIRAGANA,,,延期,えんき,,enki,zmiana terminu,na późniejszy,,
 7621,WORD_NOUN,,HIRAGANA,,,延着,えんちゃく,,enchaku,opóźnione przybycie,,,
-7622,WORD_NOUN,,HIRAGANA,,,遅延,ちえん,,chien,opóźnienie,,,
+7622,WORD_NOUN,,HIRAGANA,,,遅延,ちえん,,chien,"opóźnienie
+zwlekanie",,,
 7623,WORD_NOUN,,HIRAGANA,,,延焼,えんしょう,,enshou,"rozprzestrzenianie się ognia
 rozprzestrzenianie się pożaru",,,
 7624,WORD_NOUN,,HIRAGANA,Genki 2-23,,海外旅行,かいがいりょこう,,kaigai ryokou,podróż do zagranicznego kraju,,,
@@ -19798,3 +19803,55 @@ skraplacz",,,
 10254,WORD_NOUN,,HIRAGANA,,,悲しみ,かなしみ ,,kanashimi,"smutek
 żal
 zgryzota",,,
+10255,WORD_NOUN,,HIRAGANA,,,水菓子,みずがし ,,mizugashi,galaretka owocowa,,,
+10256,WORD_NOUN,,KATAKANA,,,-,キャベツ,,kyabetsu,kapusta,,,
+10257,WORD_NOUN,,HIRAGANA,,,記念品,きねんひん,,kinenhin,pamiątka,,,
+10258,WORD_NOUN,,HIRAGANA,,,縁組み,えんぐみ ,,engumi,"zaręczyny
+ceremonia ślubna
+ślub
+małżeństwo",,,
+10259,WORD_NOUN,,HIRAGANA,,,裁ち方,たちかた ,,tachikata,"sposób cięcia
+cięcie",,,
+10260,WORD_NOUN,,HIRAGANA,,,肘,ひじ ,,hiji,"ramię
+łokieć",,,
+10261,WORD_NOUN,,HIRAGANA,,,和解,わかい ,,wakai,"pogodzenie
+pojednanie
+zgoda",,,10262
+10262,WORD_NOUN,,HIRAGANA,,,和解,わげ ,,wage,"pogodzenie
+pojednanie
+zgoda",,,10261
+10263,WORD_NOUN,,HIRAGANA,,,情景,じょうけい ,,joukei,widok,,,
+10264,WORD_NOUN,,HIRAGANA,,,感知,かんち,,kanchi,"percepcja
+postrzeganie",,,
+10265,WORD_NOUN,,HIRAGANA,,,控除,こうじょ ,,koujo,"potrącenie
+odliczenie",,,
+10266,WORD_NOUN,,HIRAGANA,,,少数,しょうすう ,,shousuu,mniejszość,,,
+10267,WORD_NOUN,,HIRAGANA,,,山猫,やまねこ ,,yamaneko,"żbik
+ryś",,,
+10268,WORD_NOUN,,HIRAGANA,,,敷居,しきい ,,shikii,próg,,,
+10269,WORD_NOUN,,HIRAGANA,,,沈黙,ちんもく ,,chinmoku,"cisza
+uciszanie",,,
+10270,WORD_NOUN,,HIRAGANA,,,真直,まなお ,,manao,"szczerość
+prostota",,,10271
+10271,WORD_NOUN,,HIRAGANA,,,真直,しんちょく ,,shinchoku,"szczerość
+prostota",,,10270
+10272,WORD_NOUN,,HIRAGANA,,,精度,せいど ,,seido,"dokładność
+precyzja",,,
+10273,WORD_NOUN,,HIRAGANA,,,糸枠,いとわく ,,itowaku,"szpula
+szpulka",,,
+10274,WORD_NOUN,,HIRAGANA,,,軌範,きはん ,,kihan,"model
+standard
+norma",,,
+10275,UNKNOWN,,HIRAGANA,,,黙黙,もくもく ,,mokumoku,"cichy
+milczący",,,
+10276,WORD_NOUN,,HIRAGANA,,,無頼漢,ぶらいかん ,,buraikan,"zbój
+łotr
+łajdak
+nikczemnik
+rozbójnik",,,
+10277,WORD_NOUN,,HIRAGANA,,,色合い,いろあい ,,iroai,"barwa
+odcień
+zabarwienie",,,10278
+10278,WORD_NOUN,,HIRAGANA,,,色合い,いろあわい ,,iroawai,"barwa
+odcień
+zabarwienie",,,10277

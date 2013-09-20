@@ -187,6 +187,21 @@ public class Helper {
 					if (attributeList.contains(AttributeType.KANA_ALONE) == false && foundJMEDict.getMisc().contains("uk") == true) {
 						attributeList.add(AttributeType.KANA_ALONE);
 					}
+					
+					// archaism
+					if (attributeList.contains(AttributeType.ARCHAISM) == false && foundJMEDict.getMisc().contains("arch") == true) {
+						attributeList.add(AttributeType.ARCHAISM);
+					}
+					
+					// obsolute
+					if (attributeList.contains(AttributeType.OBSOLUTE) == false && (foundJMEDict.getMisc().contains("obs") == true || foundJMEDict.getMisc().contains("ok") == true)) {
+						attributeList.add(AttributeType.OBSOLUTE);
+					}
+					
+					// obsure
+					if (attributeList.contains(AttributeType.OBSCURE) == false && foundJMEDict.getMisc().contains("obsc") == true) {
+						attributeList.add(AttributeType.OBSCURE);
+					}
 				}				
 			}			
 		}
