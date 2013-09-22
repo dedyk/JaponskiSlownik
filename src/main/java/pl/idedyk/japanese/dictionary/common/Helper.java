@@ -193,9 +193,9 @@ public class Helper {
 						attributeList.add(AttributeType.ARCHAISM);
 					}
 					
-					// obsolute
-					if (attributeList.contains(AttributeType.OBSOLUTE) == false && (foundJMEDict.getMisc().contains("obs") == true || foundJMEDict.getMisc().contains("ok") == true)) {
-						attributeList.add(AttributeType.OBSOLUTE);
+					// obsolete
+					if (attributeList.contains(AttributeType.OBSOLETE) == false && (foundJMEDict.getMisc().contains("obs") == true || foundJMEDict.getMisc().contains("ok") == true)) {
+						attributeList.add(AttributeType.OBSOLETE);
 					}
 					
 					// obsure

@@ -20,7 +20,7 @@ public enum AttributeType {
 
 	ARCHAISM,
 
-	OBSOLUTE,
+	OBSOLETE,
 	
 	OBSCURE;
 }
