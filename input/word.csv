@@ -898,7 +898,7 @@ Genki kanji 2-19",,漢字,かんじ,,kanji,kanji,,,
 460,WORD_NOUN,,HIRAGANA,"Genki 1-6
 Genki kanji 2-16",,教科書,きょうかしょ,,kyoukasho,podręcznik,,,
 461,WORD_NOUN,,HIRAGANA,Genki 1-6,,市民病院,しみんびょういん,,shiminbyouin,szpital miejski,,,
-462,UNKNOWN,,HIRAGANA,"Genki 1-6
+462,WORD_NOUN,,HIRAGANA,"Genki 1-6
 Genki kanji 1-8",,次,つぎ,,tsugi,następny,,,
 463,WORD_NOUN,,KATAKANA,Genki 1-6,,-,テレビゲーム,,terebi geemu,gra telewizyjna,,,
 464,WORD_NOUN,,HIRAGANA,"Genki 1-6
@@ -2897,7 +2897,9 @@ osobno",,,
 1472,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,三十度,さんじゅうど,,sanjuu do,trzydzieści stopni,,,
 1473,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,赤,あか,,aka,kolor czerwony,,,
 1474,WORD_NOUN,,HIRAGANA,"Genki kanji 1-12
-Genki 2-21",,赤ちゃん,あかちゃん,,akachan,niemowlę,,,
+Genki 2-21",,赤ちゃん,あかちゃん,,akachan,"niemowlę
+bobas
+dziecko",,,
 1475,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,赤道,せきどう,,sekidou,równik,,,
 1476,WORD_NOUN,,HIRAGANA,Genki kanji 1-12,,赤十字,せきじゅうじ,,sekijuuji,Czerwony Krzyż,,,
 1477,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,青,あお,,ao,kolor niebieski,,,
@@ -6283,7 +6285,10 @@ dostanie pracy",,,
 pensjonat",,,
 3312,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,宿泊,しゅくはく,,shukuhaku,nocleg,,,
 3313,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,宿,やど,,yado,"zajazd
-motel",,,
+motel
+gospoda
+karczma
+oberża",,,
 3314,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,話題,わだい,,wadai,"temat rozmowy
 przedmiot rozmowy",,,
 3315,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,題,だい,,dai,"temat
@@ -9142,6 +9147,7 @@ wyrażenie",,,
 4815,WORD_NOUN,,HIRAGANA,,,句読点,くとうてん,,kutouten,znak interpunkcyjny,,,
 4816,WORD_NOUN,,HIRAGANA,,,句点,くてん,,kuten,kropka,,,
 4817,WORD_ADJECTIVE_I,,HIRAGANA,,,賢い,かしこい,,kashikoi,"mądry
+rozumny
 sprytny
 bystry
 inteligentny",,,
@@ -9550,6 +9556,7 @@ rozpoczęcie pracy",,,
 4997,WORD_NOUN,,HIRAGANA,,,就学,しゅうがく,,shuugaku,"rozpoczęcie nauki w szkole
 chodzenie do szkoły",,,
 4998,WORD_NOUN,,HIRAGANA,,,比,ひ,,hi,"proporcja
+stosunek
 porównanie
 równy",,,
 4999,WORD_VERB_RU,,HIRAGANA,"Genki kanji 2-23
@@ -10401,7 +10408,8 @@ spoglądać wnikliwie",,,
 5433,WORD_ADJECTIVE_NA,,HIRAGANA,,,極上,ごくじょう,,gokujou,najwyższa jakość,,,
 5434,WORD_NOUN,,HIRAGANA,,,壇,だん,,dan,"ołtarz
 scena
-platforma",,,
+platforma
+ambona",,,
 5435,WORD_NOUN,,HIRAGANA,,,反復,はんぷく,,hanpuku,powtórka,,,
 5436,WORD_NOUN,,HIRAGANA,Genki 2-22,,復習,ふくしゅう,,fukushuu,"ćwiczenie
 powtarzanie",,,
@@ -20056,3 +20064,40 @@ załoga",,,
 10356,WORD_NOUN,,HIRAGANA,,,鰻,うなぎ,,unagi,węgorz,,,
 10357,WORD_NOUN,,HIRAGANA,,,葉,は,,ha,liść,,,
 10358,WORD_NOUN,,KATAKANA,,,-,ゴリラ,,gorira,goryl,,,
+10359,WORD_NOUN,,HIRAGANA,,,配偶者,はいぐうしゃ ,,haiguusha,małżonkowie,,,
+10360,WORD_NOUN,,HIRAGANA,,,経済学,けいざいがく ,,keizaigaku,"ekonomika
+ekonomia",,,
+10361,WORD_NOUN,,HIRAGANA,,,経済学者,けいざいがくしゃ,,keizaigakusha,ekonomista,,,
+10362,WORD_NOUN,,HIRAGANA,,,経済学部,けいざいがくぶ ,,keizaigakubu,"szkoła ekonomiczna
+wydział ekonomii",,,
+10363,WORD_NOUN,,HIRAGANA,,,倫理,りんり ,,rinri,"etyka
+moralność",,,
+10364,WORD_NOUN,,HIRAGANA,,,天ぷら,てんぷら ,,tenpura,tempura,japońska potrawa,,
+10365,WORD_NOUN,,HIRAGANA,,,寄贈,きぞう ,,kizou,"dotacja
+darowizna
+datek",,,
+10366,WORD_NOUN,,HIRAGANA,,,灯籠,とうろう,,tourou,tradycyjna japońska latarnia,,,
+10367,WORD_NOUN,,HIRAGANA,,,皇帝,こうてい ,,koutei,cesarz,,,
+10368,WORD_ADJECTIVE_NA,,HIRAGANA,,,肉的,にくてき ,,nikuteki,"fizyczny
+cielesny",,,
+10369,WORD_NOUN,,HIRAGANA,,,肝臓,かんぞう ,,kanzou,wątroba,,,
+10370,WORD_NOUN,,HIRAGANA,,,腎臓,じんぞう ,,jinzou,nerka,,,
+10371,WORD_NOUN,,HIRAGANA,,,芝生,しばふ,,shibafu,trawnik,,,
+10372,WORD_NOUN,,HIRAGANA,,,約諾,やくだく ,,yakudaku,"obietnica
+przyrzeczenie",,,
+10373,WORD_NOUN,,HIRAGANA,,,索引,さくいん ,,sakuin,indeks,,,
+10374,WORD_NOUN,,HIRAGANA,,,羨望,せんぼう ,,senbou,"zawiść
+zazdrość",,,
+10375,WORD_NOUN,,HIRAGANA,,,錠剤,じょうざい ,,jouzai,"pastylka
+pigułka
+tabletka",,,
+10376,WORD_NOUN,,HIRAGANA,,,高原,こうげん ,,kougen,płaskowyż,,,
+10377,WORD_ADJECTIVE_I,,HIRAGANA,,,手痛い,ていたい ,,teitai,"surowy
+ciężki
+dotkliwy
+twardy",,,
+10378,WORD_ADJECTIVE_NA,,HIRAGANA,,,国際的,こくさいてき ,,kokusaiteki,"międzynarodowy
+międzypaństwowy",,,
+10379,WORD_NOUN,,HIRAGANA,,,同音異義語,どうおんいぎご,,douon'igigo,homonim,,,
+10380,WORD_NOUN,,HIRAGANA,,,言辞,げんじ ,,genji,"język
+mowa",,,
