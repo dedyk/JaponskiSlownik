@@ -202,6 +202,26 @@ public class Helper {
 					if (attributeList.contains(AttributeType.OBSCURE) == false && foundJMEDict.getMisc().contains("obsc") == true) {
 						attributeList.add(AttributeType.OBSCURE);
 					}
+					
+					// suffix
+					if (attributeList.contains(AttributeType.SUFFIX) == false && foundJMEDict.getPos().contains("suf") == true) {
+						attributeList.add(AttributeType.SUFFIX);
+					}
+					
+					// noun suffix
+					if (attributeList.contains(AttributeType.NOUN_SUFFIX) == false && foundJMEDict.getPos().contains("n-suf") == true) {
+						attributeList.add(AttributeType.NOUN_SUFFIX);
+					}
+
+					// prefix
+					if (attributeList.contains(AttributeType.PREFIX) == false && foundJMEDict.getPos().contains("pref") == true) {
+						attributeList.add(AttributeType.PREFIX);
+					}
+					
+					// noun prefix
+					if (attributeList.contains(AttributeType.NOUN_PREFIX) == false && foundJMEDict.getPos().contains("n-pref") == true) {
+						attributeList.add(AttributeType.NOUN_PREFIX);
+					}					
 				}				
 			}			
 		}

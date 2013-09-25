@@ -3810,7 +3810,8 @@ ulegać",,,
 2003,WORD_NOUN,,HIRAGANA,,,火山,かざん,,kazan,wulkan,,,
 2004,WORD_NOUN,,HIRAGANA,Genki 2-22,,猿,さる,,saru,małpa,,,
 2005,WORD_NOUN,,HIRAGANA,,,枝,えだ,,eda,"gałąź
-gałązka",,,
+gałązka
+konar",,,
 2006,UNKNOWN,,HIRAGANA,,,初,はつ,,hatsu,"pierwszy
 nowy","~ rzeczownik, coś pierwszego",,
 2007,WORD_NOUN,,HIRAGANA_KATAKANA,,,初デート,はつデート,,hatsu deeto,pierwsza randka,,,
@@ -8109,7 +8110,8 @@ lekceważyć",,,
 4290,WORD_NOUN,,HIRAGANA,,,犯行,はんこう,,hankou,"przestępstwo
 wykroczenie",,,
 4291,WORD_NOUN,,HIRAGANA,Genki 2-21,,犯罪,はんざい,,hanzai,"przestępstwo
-wykroczenie",,,
+wykroczenie
+zbrodnia",,,
 4292,WORD_NOUN,,HIRAGANA,,,防犯,ぼうはん,,bouhan,"walka z przestępczością
 zapobieganie przestępczości",,,
 4293,WORD_NOUN,,HIRAGANA,,,共犯,きょうはん,,kyouhan,współudział w przestępstwie,,,
@@ -11502,7 +11504,9 @@ przekupstwo
 łapówka",,,
 5986,WORD_NOUN,,HIRAGANA,,,収穫,しゅうかく,,shuukaku,"żniwa
 zbieranie plonów",,,
-5987,WORD_NOUN,,HIRAGANA,,,臭い,におい,,nioi,zapach,,,5988
+5987,WORD_NOUN,,HIRAGANA,,,臭い,におい,,nioi,"smród
+odór
+nieprzyjemny zapach",,,5988
 5988,WORD_ADJECTIVE_I,,HIRAGANA,,,臭い,くさい,,kusai,"śmierdzący
 cuchnący",,,5987
 5989,WORD_NOUN,,HIRAGANA,,,罪,つみ,,tsumi,"grzech
@@ -13582,7 +13586,11 @@ wbiec",,,
 7104,WORD_VERB_U,,HIRAGANA,,,強まる,つよまる,,tsuyomaru,"wzmacniać się
 stawać się silnym",,,
 7105,WORD_VERB_RU,,HIRAGANA,,,強める,つよめる,,tsuyomeru,"wzmacniać
-umacniać",,,
+umacniać
+podkreślać
+akcentować
+uwydatniać
+zaznaczać",,,
 7106,WORD_VERB_RU,,HIRAGANA,,,強いる,しいる,,shiiru,forsować,,,
 7107,WORD_ADJECTIVE_NA,,HIRAGANA,,,強力,きょうりょく,,kyouryoku,"siła
 moc",,,
@@ -14157,7 +14165,9 @@ dostosowanie się",,,
 7396,WORD_NOUN,,HIRAGANA,,,孝心,こうしん,,koushin,synowskie oddanie,,,
 7397,WORD_ADJECTIVE_NA,,HIRAGANA,,,親孝行,おやこうこう,,oyakoukou,posłuszeństwo wobec rodziców,,,
 7398,WORD_ADJECTIVE_NA,,HIRAGANA,,,親不孝,おやふこう,,oyafukou,niewypełnianie obowiązków wobec rodziców,,,
-7399,WORD_NOUN,,HIRAGANA,,,需用,じゅよう,,juyou,używanie,rzeczy,,
+7399,WORD_NOUN,,HIRAGANA,,,需用,じゅよう,,juyou,"konsumpcja
+spożycie
+użycie",rzeczy,,
 7400,WORD_NOUN,,HIRAGANA,,,需要,じゅよう,,juyou,"zapotrzebowanie
 żądanie",,,
 7401,WORD_NOUN,,HIRAGANA,,,必需品,ひつじゅひん,,hitsujuhin,niezbędne rzeczy,,,
@@ -15704,7 +15714,8 @@ elegancja",,,"233
 8141,WORD_VERB_U,,HIRAGANA,,,偽る,いつわる,,itsuwaru,"oszukiwać
 kłamać
 podrabiać
-udawać",,,
+udawać
+fałszować",,,
 8142,WORD_NOUN,,HIRAGANA,,,偽,にせ,,nise,"sztuczny
 podrobiony
 falsyfikat",,,
@@ -20101,3 +20112,35 @@ międzypaństwowy",,,
 10379,WORD_NOUN,,HIRAGANA,,,同音異義語,どうおんいぎご,,douon'igigo,homonim,,,
 10380,WORD_NOUN,,HIRAGANA,,,言辞,げんじ ,,genji,"język
 mowa",,,
+10381,WORD_NOUN,,HIRAGANA,,,保釈金,ほしゃくきん ,,hoshakukin,"poręczenie
+kaucja",,,
+10382,WORD_NOUN,,KATAKANA,,,-,ノミ,,nomi,pchła,,,
+10383,WORD_NOUN,,HIRAGANA,,,合戦,かっせん ,,kassen,"bitwa
+walka",,,
+10384,WORD_NOUN,,HIRAGANA,,,不可,ふか ,,fuka,"zły
+niepoprawny
+nieprawidłowy
+niewłaściwy",,,
+10385,WORD_NOUN,,HIRAGANA,,,不況,ふきょう ,,fukyou,recesja,,,
+10386,WORD_NOUN,,HIRAGANA,,,旋盤,せんばん ,,senban,tokarka,,,
+10387,UNKNOWN,,HIRAGANA,,,瞬間,しゅんかん ,,shunkan,"chwila
+moment",,,
+10388,WORD_NOUN,,HIRAGANA,,,診断,しんだん ,,shindan,"diagnostyka
+diagnoza
+rozpoznanie",,,
+10389,WORD_NOUN,,HIRAGANA,,,足場,あしば ,,ashiba,"rusztowanie
+szafot",,,
+10390,WORD_NOUN,,HIRAGANA,,,需用家,じゅようか ,,juyouka,"konsument
+klient",,,
+10391,WORD_NOUN,,HIRAGANA,,,鳴り,なり,,nari,"brzmienie
+dźwięk",,,
+10392,WORD_ADJECTIVE_I,,HIRAGANA,,,気まずい,きまずい ,,kimazui,"niemiły
+nieprzyjemny
+przykry",,,
+10393,WORD_ADJECTIVE_I,,HIRAGANA,,,人懐っこい,ひとなつっこい ,,hitonatsukkoi,"miły
+przyjacielski
+uprzejmy
+grzeczny",,,
+10394,WORD_NOUN,,HIRAGANA,,,蠍,さそり,,sasori,skorpion,,,
+10395,WORD_NOUN,,KATAKANA,,,-,ペンギン,,pengin,pingwin,,,
+10396,WORD_NOUN,,HIRAGANA,,,通訳者,つうやくしゃ ,,tsuuyakusha,tłumacz,ustny,,
