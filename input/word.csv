@@ -966,7 +966,10 @@ Genki kanji 1-8",,休む,やすむ,,yasumu,odpoczywać,,,483
 Genki 2-18
 Genki kanji 2-16",を,開ける,あける,o,akeru,otwierać,,,7810
 486,WORD_VERB_RU,,HIRAGANA,"Genki 1-6
-Genki kanji 2-16",を,教える,おしえる,o,oshieru,uczyć,"kogoś, osoba ni rzecz",,
+Genki kanji 2-16",を,教える,おしえる,o,oshieru,"uczyć
+nauczać
+instruować
+kształcić","kogoś, osoba ni rzecz",,
 487,WORD_VERB_RU,,HIRAGANA,Genki 1-6,を,降りる,おりる,o,oriru,"wysiadać
 schodzić
 zstępować",,,
@@ -1934,7 +1937,8 @@ wiśnia",,,8728
 festiwal wiosny",,,
 952,WORD_NOUN,,HIRAGANA,"Genki dodatkowe 1-12
 Genki kanji 1-12
-Genki 2-20",,神様,かみさま,,kamisama,Bóg,,,
+Genki 2-20",,神様,かみさま,,kamisama,"bóg
+bóstwo",,,
 953,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-12,,娘,むすめ,,musume,"córka
 panienka
 dziewczyna",,,
@@ -4347,7 +4351,9 @@ centrum",,,
 2274,UNKNOWN,,HIRAGANA,Genki kanji 2-17,,真夜中,まよなか,,mayonaka,północ,środek nocy,,
 2275,WORD_VERB_U,,HIRAGANA,"Genki kanji 2-17
 Genki 2-20",,歩く,あるく,,aruku,chodzić,,,
-2276,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,歩道,ほどう,,hodou,chodnik,,,
+2276,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,歩道,ほどう,,hodou,"chodnik
+ścieżka
+przejście",,,
 2277,WORD_NOUN,,HIRAGANA,"Genki kanji 2-17
 Genki dodatkowe 2-17",,分野,ぶんや,,bun'ya,"dziedzina
 dział
@@ -15818,7 +15824,7 @@ marnować się",,,
 niewolnik
 barbarzyńca",,,
 8173,WORD_ADJECTIVE_NA,,HIRAGANA,,,凡,ぼん,,bon,przeciętność,,,
-8174,WORD_ADVERB,,HIRAGANA,,,凡そ,およそ,,oyoso,"jako zasada
+8174,WORD_ADVERB,,HIRAGANA,,,凡そ,およそ,,oyoso,"około
 w przybliżeniu",,,
 8175,UNKNOWN,,HIRAGANA,,,凡て,すべて,,subete,"wszystko
 całość
@@ -20271,3 +20277,71 @@ zwiedzanie
 przybycie
 przyjazd
 przylot",,,
+10444,WORD_NOUN,,HIRAGANA,,,顔付き,かおつき ,,kaotsuki,"wygląd zewnętrzny
+cechy
+wyraz twarzy
+rysy twarzy
+oblicze",,,
+10445,WORD_NOUN,,HIRAGANA,,,荷,に,,ni,"ładunek
+towar
+bagaż
+ciężar",,,
+10446,WORD_NOUN,,HIRAGANA,,,術,すべ ,,sube,"sposób
+metoda",,,10447
+10447,WORD_NOUN,,HIRAGANA,,,術,じゅつ ,,jutsu,"sztuka
+sposób
+metoda",,,10446
+10448,WORD_NOUN,,HIRAGANA,,,前兆,ぜんちょう ,,zenchou,"wróżba
+przeczucie
+zwiastun
+znak",,,
+10449,WORD_NOUN,,HIRAGANA,,,労力,ろうりょく ,,rouryoku,"ciężka praca
+wysiłek
+harówka
+trud",fizyczna,,
+10450,WORD_NOUN,,HIRAGANA,,,怠惰,たいだ ,,taida,"lenistwo
+nieróbstwo
+próżniactwo
+próżnowanie",,,
+10451,WORD_NOUN,,HIRAGANA,,,慰め,なぐさめ ,,nagusame,"pociecha
+osłoda
+ukojenie
+pocieszenie",,,
+10452,WORD_NOUN,,HIRAGANA,,,屍体,したい ,,shitai,"zwłoki
+trup",,,
+10453,WORD_NOUN,,HIRAGANA,,,瓦礫,がれき ,,gareki,"gruz
+rumowisko",,,10454
+10454,WORD_NOUN,,HIRAGANA,,,瓦礫,がりゃく ,,garyaku,"gruz
+rumowisko",,,10453
+10455,WORD_NOUN,,HIRAGANA,,,運搬,うんぱん ,,unpan,"transport
+przewóz",,,
+10456,WORD_NOUN,,HIRAGANA,,,地質学,ちしつがく ,,chishitsugaku,geologia,,,
+10457,WORD_NOUN,,HIRAGANA,,,黒金,くろがね ,,kurogane,żelazo,,,
+10458,WORD_NOUN,,HIRAGANA,,,交響曲,こうきょうきょく ,,koukyoukyoku,symfonia,,,
+10459,WORD_NOUN,,HIRAGANA,,,話合い,はなしあい ,,hanashiai,"konferencja
+zjazd
+dyskusja
+rozmowa",,,
+10460,WORD_VERB_U,,HIRAGANA,,,消え入る,きえいる ,,kieiru,"znikać
+niknąć
+rozpływać
+wyparować",,,
+10461,WORD_NOUN,,HIRAGANA,,,大聖堂,たいせいどう ,,taiseidou,katedra,,,10462
+10462,WORD_NOUN,,HIRAGANA,,,大聖堂,だいせいどう ,,daiseidou,katedra,,,10461
+10463,WORD_ADJECTIVE_I,,HIRAGANA,,,捗捗しい,はかばかしい ,,hakabakashii,"szybki
+prędki
+błyskawiczny",,,
+10464,WORD_VERB_U,,HIRAGANA,,,仕込む,しこむ ,,shikomu,"kształcić
+uczyć
+edukować
+rozwijać",kogoś,,
+10465,WORD_VERB_RU,,HIRAGANA,,,見忘れる,みわすれる ,,miwasureru,zapomnieć i nie rozpoznać,kogoś,,
+10466,WORD_NOUN,,HIRAGANA,,,化物,ばけもの ,,bakemono,"duch
+upiór
+widmo
+zjawa",,,10467
+10467,WORD_NOUN,,HIRAGANA,,,化物,ばけもん ,,bakemon,"duch
+upiór
+widmo
+zjawa",,,10466
+10468,WORD_NOUN,,HIRAGANA,,,溶媒,ようばい ,,youbai,rozpuszczalnik,,,
