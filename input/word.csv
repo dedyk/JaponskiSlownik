@@ -2752,7 +2752,8 @@ godzina",okres,,355
 1392,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,二時間,にじかん,,nijikan,dwie godziny,,,
 1393,UNKNOWN,,HIRAGANA,"Genki kanji 1-9
 Genki dodatkowe 2-23",,人間,にんげん,,ningen,"człowiek
-istota ludzka",,,
+istota ludzka
+śmiertelnik",,,
 1394,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,一週間,いしゅうかん,,ishuukan,jeden tydzień,,,
 1395,WORD_NOUN,,HIRAGANA,"Genki kanji 1-9
 Genki 2-19",,話,はなし,,hanashi,rozmowa,,,
@@ -6283,7 +6284,8 @@ publiczna sala",np. miejsca kulturalne,,
 3298,UNKNOWN,,HIRAGANA,Genki kanji 2-18,,堂々とした,どうどうとした,,doudoutoshita,dostojny,,,
 3299,WORD_NOUN,,HIRAGANA,,,聖堂,せいどう,,seidou,"miejsce kultu
 duża świątynia
-kaplica",,,
+kaplica
+kościół",,,
 3300,WORD_NOUN,,HIRAGANA,,,聖書,せいしょ,,seisho,"Biblia
 Pismo Święte",,,
 3301,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,職業,しょくぎょう,,shokugyou,"zawód
@@ -6636,6 +6638,7 @@ Ewangelia",,,
 3485,WORD_NOUN,,HIRAGANA,,,毒,どく,,doku,trucizna,,,
 3486,WORD_NOUN,,HIRAGANA,,,毒茸,どくきのこ,,dokukinoko,trujący grzyb,,,
 3487,WORD_NOUN,,HIRAGANA,,,許可,きょか,,kyoka,"pozwolenie
+zezwolenie
 licencja",,,
 3488,WORD_NOUN,,HIRAGANA,,,電卓,でんたく,,dentaku,kalkulator,,,
 3489,UNKNOWN,,HIRAGANA,,,本日,ほんじつ,,honjitsu,"dziś
@@ -6821,7 +6824,10 @@ miara",,,
 przystosowanie
 autorytet
 norma",,,
-3579,WORD_NOUN,,HIRAGANA,,,水準,すいじゅん,,suijun,poziom wody,,,
+3579,WORD_NOUN,,HIRAGANA,,,水準,すいじゅん,,suijun,"poziom
+stopień
+szczebel
+poziom wody",,,
 3580,WORD_VERB_U,,HIRAGANA,,,望む,のぞむ,,nozomu,"pragnąć
 oczekiwać
 mieć nadzieję
@@ -8019,7 +8025,9 @@ interes",,,
 4228,WORD_VERB_RU,,HIRAGANA,,,取り替える,とりかえる,,tori kaeru,"wymieniać
 zmieniać",,,
 4229,WORD_VERB_U,,HIRAGANA,,,切り取る,きりとる,,kiritoru,wycinać,,,
-4230,WORD_VERB_IRREGULAR,,HIRAGANA,,,取って来る,とってくる,,totte kuru,przynosić,,,
+4230,WORD_VERB_IRREGULAR,,HIRAGANA,,,取って来る,とってくる,,totte kuru,"przynosić
+przywieść
+sprowadzić",,,
 4231,WORD_COUNTERS,,HIRAGANA,,,畳,じょう,,jou,"zwijać
 przyrostek stosowany do liczenia mat",,,4232
 4232,WORD_NOUN,,HIRAGANA,,,畳,たたみ,,tatami,mata,słomiana,,4231
@@ -9713,7 +9721,8 @@ zwykły użytek",,,
 wyjątkowy",,,
 5057,WORD_NOUN,,HIRAGANA,,,常習,じょうしゅう,,joushuu,"przyzwyczajenie
 zwyczaj",,,
-5058,WORD_NOUN,,HIRAGANA,,,種,たね,,tane,nasienie,,,5059
+5058,WORD_NOUN,,HIRAGANA,,,種,たね,,tane,"nasienie
+ziarno",,,5059
 5059,WORD_NOUN,,HIRAGANA,,,種,しゅ,,shu,"rodzaj
 klasa
 nasienie
@@ -10323,7 +10332,9 @@ patrzeć wilkiem",,,
 5363,WORD_NOUN,,HIRAGANA,,,苦労,くろう,,kurou,"kłopoty
 trudności",,,
 5364,WORD_NOUN,,HIRAGANA,,,苦悩,くのう,,kunou,"zmartwienia
-cierpienia",,,
+cierpienia
+ból
+udręka",,,
 5365,WORD_NOUN,,HIRAGANA,,,苦難,くなん,,kunan,"cierpienia
 zmartwienia",,,
 5366,WORD_NOUN,,HIRAGANA,,,苦心,くしん,,kushin,"bóle
@@ -11217,7 +11228,9 @@ nabrać otuchy",,,
 5831,WORD_NOUN,,HIRAGANA,,,勇者,ゆうしゃ,,yuusha,"odważny człowiek
 bohater",,,
 5832,WORD_ADJECTIVE_NA,,HIRAGANA,,,勇壮,ゆうそう,,yuusou,"odważny
-heroiczny",,,
+heroiczny
+dzielny
+waleczny",,,
 5833,WORD_NOUN,,HIRAGANA,,,順,じゅん,,jun,"kolejność
 zmiana
 posłuszeństwo
@@ -11246,7 +11259,9 @@ prefektura",,,
 5847,WORD_NOUN,,HIRAGANA,,,民社党,みんしゃとう,,minshatou,Partia Socjaldemokratyczna,,,
 5848,WORD_NOUN,,HIRAGANA,,,策,さく,,saku,"plan
 środki
-program",,,
+program
+polityka
+zasada postępowania",,,
 5849,WORD_NOUN,,HIRAGANA,,,対策,たいさく,,taisaku,"środki
 kroki zaradcze",,,
 5850,WORD_NOUN,,HIRAGANA,,,策略,さくりゃく,,sakuryaku,"strategia
@@ -13222,7 +13237,9 @@ odcisk buta
 odcisk stopy",,,
 6859,WORD_ADJECTIVE_NA,,HIRAGANA,,,不足,ふそく,,fusoku,"nie wystarczać
 brakować
-brak",,,
+brak
+niedobór
+niedostatek",,,
 6860,WORD_ADJECTIVE_NA,,HIRAGANA,,,寝不足,ねぶそく,,nebusoku,"być niewyspanym
 brak snu",,,
 6861,WORD_NOUN,,HIRAGANA,,,足音,あしおと,,ashi oto,kroki,dźwięk,,
@@ -20738,3 +20755,48 @@ na zawsze",,,
 10615,WORD_ADJECTIVE_NA,,HIRAGANA,,,軽易,けいい ,,keii,"łatwy
 prosty
 zwyczajny",,,
+10616,WORD_ADJECTIVE_NA,,HIRAGANA,,,不安心,ふあんしん,,fuanshin,"niepewny
+lękliwy
+bojaźliwy",,,
+10617,WORD_NOUN,,HIRAGANA,,,野蛮人,やばんじん,,yabanjin,"barbarzyńca
+brutal
+dzikus",,,
+10618,WORD_ADJECTIVE_I,,HIRAGANA,,,荒荒しい,あらあらしい ,,araarashii,"szorstki
+chropowaty",,,
+10619,WORD_NOUN,,HIRAGANA,,,蝋,ろう,,rou,wosk,,,
+10620,WORD_NOUN,,HIRAGANA,,,埋葬,まいそう ,,maisou,"pogrzeb
+pochówek",,,
+10621,WORD_NOUN,,HIRAGANA,,,夜食,やしょく ,,yashoku,"kolacja
+wieczorna przekąska",,,
+10622,WORD_NOUN,,HIRAGANA,,,推力,すいりょく ,,suiryoku,"siła napędowa
+pchnięcie
+napęd",,,
+10623,WORD_NOUN,,HIRAGANA,,,家来,けらい ,,kerai,"służący
+sługa",,,
+10624,WORD_NOUN,,HIRAGANA,,,石灰石,せっかいせき ,,sekkaiseki,wapień,,,
+10625,WORD_NOUN,,HIRAGANA,,,灌漑,かんがい ,,kangai,"irygacja
+nawadnianie
+nawodnienie",,,
+10626,WORD_ADJECTIVE_NA,,HIRAGANA,,,無難,ぶなん ,,bunan,bezpieczny,,,
+10627,WORD_NOUN,,HIRAGANA,,,痛み,いたみ ,,itami,"ból
+otarcie
+bolesność",,,
+10628,WORD_NOUN,,HIRAGANA,,,相役,あいやく ,,aiyaku,kolega,,,
+10629,WORD_NOUN,,HIRAGANA,,,配布,はいふ ,,haifu,"dystrybucja
+kolportaż",,,
+10630,WORD_NOUN,,HIRAGANA,,,誘惑,ゆうわく ,,yuuwaku,"kuszenie
+pokusa
+wabienie",,,
+10631,WORD_NOUN,,HIRAGANA,,,追録,ついろく ,,tsuiroku,"dopisek
+post scriptum
+dodatek
+uzupełnienie",,,
+10632,WORD_NOUN,,HIRAGANA,,,首領,しゅりょう ,,shuryou,"szef
+boss
+lider
+przywódca
+wódź",,,
+10633,WORD_NOUN,,HIRAGANA,,,驚き,おどろき ,,adoroki,"zdziwienie
+zdumienie
+zaskoczenie",,,
+10634,WORD_NOUN,,HIRAGANA,,,流通,りゅうつう ,,ryuutsuu,dystrybucja,,,
