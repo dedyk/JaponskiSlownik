@@ -946,7 +946,9 @@ powstawać",,,
 Genki kanji 1-12",を,使う,つかう,o,tsukau,"używać
 korzystać
 wydawać (pieniądze)",,,
-480,WORD_VERB_U,,HIRAGANA,Genki 1-6,を,手伝う,てつだう,o,tetsudau,pomagać,osoba/zadanie,,
+480,WORD_VERB_U,,HIRAGANA,Genki 1-6,を,手伝う,てつだう,o,tetsudau,"pomagać
+asystować
+wspierać",osoba/zadanie,,
 481,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,"Genki 1-6
 Genki 2-18
 Genki kanji 1-7",に,入る,はいる,ni,hairu,"wchodzić
@@ -1653,7 +1655,8 @@ Genki kanji 1-7",,女の子,おんなのこ,,onna no ko,dziewczynka,,,
 Genki kanji 1-6",,外国,がいこく,,gaikoku,zagraniczny kraj,,,
 809,WORD_NOUN,,HIRAGANA,"Genki 1-11
 Genki kanji 1-11",,歌手,かしゅ,,kashu,"piosenkarz
-śpiewak",,,
+śpiewak
+pieśniarz",,,
 810,WORD_NOUN,,KATAKANA,Genki 1-11,,-,キャンプ,,kyanpu,obóz,,,
 811,WORD_NOUN,,HIRAGANA,"Genki 1-11
 Genki 2-19",,-,こちら,,kochira,"ta osoba
@@ -11488,7 +11491,9 @@ nagrywanie",sufiks,,
 5962,WORD_NOUN,,HIRAGANA,,,録画,ろくが,,rokuga,nagrywanie,obrazu,,
 5963,WORD_NOUN,,HIRAGANA,,,記録,きろく,,kiroku,"protokół
 zapis
-kronika",,,
+kronika
+rekord
+dokument",,,
 5964,WORD_NOUN,,HIRAGANA,,,目録,もくろく,,mokuroku,"katalog
 lista
 spis",,,
@@ -20669,20 +20674,20 @@ spokojny
 milczący",,,
 10591,WORD_ADJECTIVE_NA,,HIRAGANA,,,驕傲,きょうごう ,,kyougou,"dumny
 arogancki",,,
-,WORD_NOUN,,HIRAGANA,,,候補者,こうほしゃ ,,kouhosha,kandydat,,,
-,WORD_NOUN,,HIRAGANA,,,一致,いっち,,icchi,"współpraca
+10592,WORD_NOUN,,HIRAGANA,,,候補者,こうほしゃ ,,kouhosha,kandydat,,,
+10593,WORD_NOUN,,HIRAGANA,,,一致,いっち,,icchi,"współpraca
 współdziałanie
 spójność
 związek
 połączenie
 zgodność
 podobieństwo",,,
-,WORD_ADJECTIVE_I,,HIRAGANA,,,蒸し暑い,むしあつい,,mushiatsui,"wilgotny
+10594,WORD_ADJECTIVE_I,,HIRAGANA,,,蒸し暑い,むしあつい,,mushiatsui,"wilgotny
 parny
 duszny",,,
-,WORD_NOUN,,HIRAGANA,,,居住者,きょじゅうしゃ ,,kyojuusha,"mieszkaniec
+10595,WORD_NOUN,,HIRAGANA,,,居住者,きょじゅうしゃ ,,kyojuusha,"mieszkaniec
 rezydent",,,
-,WORD_VERB_U,,HIRAGANA,,,言い出す,いいだす ,,iidasu,"zagadać
+10596,WORD_VERB_U,,HIRAGANA,,,言い出す,いいだす ,,iidasu,"zagadać
 zagadywać
 zacząć mówić
 mówić
@@ -20690,9 +20695,30 @@ rozmawiać
 proponować
 sugerować
 radzić",,,
-,WORD_NOUN,,HIRAGANA,,,三部作,さんぶさく ,,sanbusaku,trylogia,,,
-,WORD_NOUN,,HIRAGANA,,,平野,へいや ,,heiya,równina,,,
-,WORD_VERB_U,,HIRAGANA,,,射落とす,いおとす ,,iotosu,"uzyskać
+10597,WORD_NOUN,,HIRAGANA,,,三部作,さんぶさく ,,sanbusaku,trylogia,,,
+10598,WORD_NOUN,,HIRAGANA,,,平野,へいや ,,heiya,równina,,,
+10599,WORD_VERB_U,,HIRAGANA,,,射落とす,いおとす ,,iotosu,"uzyskać
 zyskać
 zdobyć
 zastrzelić",,,
+10600,WORD_NOUN,,HIRAGANA,,,一杯,いっぱい ,,ippai,"napój
+filiżanka (czegoś)",,,10601
+10601,WORD_ADVERB,,HIRAGANA,,,一杯,いっぱい ,,ippai,"w pełni
+całkowicie",,,10600
+10602,WORD_NOUN,,HIRAGANA,,,見聞き,みきき ,,mikiki,"doświadczenie
+przeżywać
+doznawać
+obserwacja
+spostrzeżenie
+informacja",,,
+10603,WORD_NOUN,,HIRAGANA,,,乳糖,にゅうとう ,,nyuutou,"laktoza
+cukier mlekowy",,,
+10604,WORD_NOUN,,HIRAGANA,,,囚人,めしうど ,,meshiudo,więzień,,,"10605
+10606"
+10605,WORD_NOUN,,HIRAGANA,,,囚人,しゅうじん,,shuujin,więzień,,,"10604
+10606"
+10606,WORD_NOUN,,HIRAGANA,,,囚人,めしゅうど,,meshuudo,więzień,,,"10604
+10605"
+10607,WORD_ADJECTIVE_I,,HIRAGANA,,,生生しい,なまなましい,,namanamashii,"nowy
+świeży
+żywy",,,
