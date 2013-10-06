@@ -10,6 +10,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -48,12 +49,24 @@ import pl.idedyk.japanese.dictionary.tools.TomoeReader;
 public class AndroidDictionaryGenerator {
 
 	public static void main(String[] args) throws Exception {
+
+		System.out.println("readEdict");
 		
-		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries("input/word.csv",
+		// read edict
+		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
+		
+		System.out.println("readEdictCommon");
+		    
+		// read edict common
+		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JaponskiSlownik_dodatki/edict_sub-utf8");     
+		
+		// read jmedict name
+		System.out.println("jmedictName");
+		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JaponskiSlownik_dodatki/JMnedict.xml");
+		
+		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedict, jmedictCommon, jmedictName, 
+				"input/word.csv",
 				"input/transitive_intransitive_pairs.csv",
-				"../JaponskiSlownik_dodatki/JMdict_e",
-				"../JaponskiSlownik_dodatki/edict_sub-utf8",
-				"../JaponskiSlownik_dodatki/JMnedict.xml",
 				"output/word.csv",
 				"output/transitive_intransitive_pairs.csv");
 		
@@ -63,7 +76,7 @@ public class AndroidDictionaryGenerator {
 		
 		final String zinniaTomoeSlimBinaryFile = "output/kanji_recognizer.model.db";
 		
-		List<KanjiEntry> kanjiEntries = generateKanjiEntries(dictionary, "input/kanji.csv", "../JaponskiSlownik_dodatki/kanjidic2.xml", 
+		List<KanjiEntry> kanjiEntries = generateKanjiEntries(dictionary, jmedictCommon, "input/kanji.csv", "../JaponskiSlownik_dodatki/kanjidic2.xml", 
 				"../JaponskiSlownik_dodatki/kradfile", "../JaponskiSlownik_dodatki/kanjivg",
 				"output/kanji.csv");
 				
@@ -74,8 +87,8 @@ public class AndroidDictionaryGenerator {
 				);
 	}
 
-	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(String sourceFileName, String transitiveIntransitivePairsFileName,
-			String jmedictFileName, String edictCommonFileName, String edictNameFileName, String destinationFileName, String transitiveIntransitivePairsOutputFile) throws Exception {
+	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(TreeMap<String, List<JMEDictEntry>> jmedict, TreeMap<String, EDictEntry> jmedictCommon, TreeMap<String, List<JMEDictEntry>> jmedictName, String sourceFileName, String transitiveIntransitivePairsFileName,
+			String destinationFileName, String transitiveIntransitivePairsOutputFile) throws Exception {
 		
 		System.out.println("checkAndSavePolishJapaneseEntries");
 				
@@ -89,21 +102,7 @@ public class AndroidDictionaryGenerator {
 		
 		// parse csv
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName);
-		
-		System.out.println("checkAndSavePolishJapaneseEntries: readEdict");
-		
-		// read edict
-		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMEdict(jmedictFileName);
-		
-		System.out.println("checkAndSavePolishJapaneseEntries: readEdictCommon");
-		    
-		// read edict common
-		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict(edictCommonFileName);     
-		
-		// read jmedict name
-		System.out.println("checkAndSavePolishJapaneseEntries: jmedictName");
-		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict(edictNameFileName);
-		
+				
 		// validate
 		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");		
@@ -199,7 +198,8 @@ public class AndroidDictionaryGenerator {
 	}
 		
 	private static List<KanjiEntry> generateKanjiEntries(
-			List<PolishJapaneseEntry> dictionary, String sourceKanjiName,
+			List<PolishJapaneseEntry> dictionary, TreeMap<String, EDictEntry> jmedictCommon, 
+			String sourceKanjiName,
 			String sourceKanjiDic2FileName,
 			String sourceKradFileName,
 			String kanjivgDir,
@@ -220,7 +220,7 @@ public class AndroidDictionaryGenerator {
 		Validator.validateDuplicateKanjiEntriesList(kanjiEntries);
 		
 		System.out.println("generateKanjiEntries: generateAdditionalKanjiEntries");
-		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2, "input/osjp.csv");
+		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2, "input/osjp.csv", jmedictCommon);
 		
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
 			
@@ -243,7 +243,8 @@ public class AndroidDictionaryGenerator {
 	}
 
 	private static void generateAdditionalKanjiEntries(List<PolishJapaneseEntry> dictionary,
-			List<KanjiEntry> kanjiEntries, Map<String, KanjiDic2Entry> readKanjiDic2, String osjpFile) throws Exception {
+			List<KanjiEntry> kanjiEntries, Map<String, KanjiDic2Entry> readKanjiDic2, String osjpFile, 
+			TreeMap<String, EDictEntry> jmedictCommon) throws Exception {
 		
 		Set<String> alreadySetKanji = new HashSet<String>();
 		Set<String> alreadySetKanjiSource = new HashSet<String>();
@@ -301,7 +302,6 @@ public class AndroidDictionaryGenerator {
 		}
 		
 		// generate additional top 2500 kanji
-		
 		Iterator<String> readKanjiDic2KeySetIterator = readKanjiDic2.keySet().iterator();		
 				
 		while(readKanjiDic2KeySetIterator.hasNext()) {
@@ -378,6 +378,59 @@ public class AndroidDictionaryGenerator {
 		csvReader.close();
 		
 		// osjp end
+		
+		// generate common word additional kanji
+		Collection<EDictEntry> jmedictCommonValues = jmedictCommon.values();
+		Iterator<EDictEntry> jmedictCommonValuesIterator = jmedictCommonValues.iterator();
+		
+		while (jmedictCommonValuesIterator.hasNext()) {
+			
+			String kanji = jmedictCommonValuesIterator.next().getKanji();
+						
+			if (kanji == null) {
+				continue;
+			}
+						
+			for (int kanjiCharIdx = 0; kanjiCharIdx < kanji.length(); ++kanjiCharIdx) {
+				
+				String currentKanjiChar = String.valueOf(kanji.charAt(kanjiCharIdx));
+				
+				KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(currentKanjiChar);
+				
+				if (kanjiDic2Entry != null) {
+					
+					if (alreadySetKanjiSource.contains(currentKanjiChar) == false) {
+						
+						Integer kanjiCountMapInteger = kanjiCountMap.get(currentKanjiChar);
+						
+						if (kanjiCountMapInteger == null) {
+							kanjiCountMapInteger = new Integer(0);
+						}
+						
+						kanjiCountMapInteger = kanjiCountMapInteger.intValue() + 1;
+						
+						kanjiCountMap.put(currentKanjiChar, kanjiCountMapInteger);
+					}
+				}
+				
+				if (alreadySetKanji.contains(currentKanjiChar)) {
+					continue;
+				}
+				
+				if (kanjiDic2Entry != null) {
+					
+					alreadySetKanji.add(currentKanjiChar);
+					
+					KanjiEntry newKanjiEntry = generateKanjiEntry(currentKanjiChar, kanjiDic2Entry, kanjiEntries.get(kanjiEntries.size() - 1).getId() + 1);					
+					
+					kanjiEntries.add(newKanjiEntry);
+					
+					additionalKanjiIds.put(currentKanjiChar, newKanjiEntry.getId());
+				}
+			}
+		}
+		
+		// generate common word additional kanji end
 		
 		String[] kanjiArray = new String[kanjiCountMap.size()];
 		
