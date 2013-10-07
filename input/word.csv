@@ -939,7 +939,7 @@ Genki 2-18",を,消す,けす,o,kesu,"wyłączyć
 skasować",,,
 475,WORD_VERB_U,,HIRAGANA,"Genki 1-6
 Genki kanji 2-15",,死ぬ,しぬ,,shinu,umierać,,,
-476,WORD_VERB_U,,HIRAGANA,Genki 1-6,に,座る,すわる,ni,suwaru,siadać,siedzenie,,
+476,WORD_VERB_U,,HIRAGANA,Genki 1-6,に,座る,すわる,ni,suwaru,siadać,na miejsce,,
 477,WORD_VERB_U,,HIRAGANA,"Genki 1-6
 Genki kanji 1-10",,立つ,たつ,,tatsu,"stać
 powstawać",,,
@@ -5387,7 +5387,8 @@ robota",,,
 pani",,,
 2815,WORD_NOUN,,HIRAGANA,,,婦警,ふけい,,fukei,policjantka,,,
 2816,WORD_NOUN,,HIRAGANA,,,初心者,しょしんしゃ,,shoshinsha,"początkujący
-niedoświadczony",,,
+niedoświadczony
+nowicjusz",,,
 2817,WORD_NOUN,,HIRAGANA,,,初代,しょだい,,shodai,"pierwsza generacja
 założyciel",,,
 2818,WORD_NOUN,,HIRAGANA,,,衣紋,えもん,,emon,"sukienka
@@ -10990,9 +10991,12 @@ dzieło",,,
 5699,WORD_NOUN,,HIRAGANA,,,膏,あぶら,,abura,"tłuszcz
 słonina
 smalec",,,
-5700,WORD_NOUN,,HIRAGANA,,,恩,おん,,on,łaska,,,
-5701,WORD_NOUN,,HIRAGANA,,,恩恵,おんけい,,onkei,łaska,,,
-5702,WORD_NOUN,,HIRAGANA,,,恩寵,おんちょう,,onchou,łaska,,,
+5700,WORD_NOUN,,HIRAGANA,,,恩,おん,,on,"łaska
+życzliwość",,,
+5701,WORD_NOUN,,HIRAGANA,,,恩恵,おんけい,,onkei,"łaska
+życzliwość",,,
+5702,WORD_NOUN,,HIRAGANA,,,恩寵,おんちょう,,onchou,"łaska
+życzliwość",,,
 5703,WORD_NOUN,,HIRAGANA,,,恩人,おんじん,,onjin,"dobrodziej
 opiekun
 patron",,,
@@ -11055,6 +11059,7 @@ opanowywać
 naprawiać",,,
 5739,WORD_NOUN,,HIRAGANA,,,修士,しゅうし,,shuushi,magister,,,
 5740,WORD_NOUN,,HIRAGANA,,,修正,しゅうせい,,shuusei,"poprawa
+sprostowanie
 modyfikacja
 zmiana
 dodatek",,,
@@ -14070,7 +14075,10 @@ dlatego",,,
 sposób
 środek",,,
 7300,WORD_VERB_RU,,HIRAGANA,,,仕上げる,しあげる,,shiageru,"ukończyć
-wykonać",,,
+wykonać
+kończyć
+skończyć
+dokończyć",,,
 7301,WORD_NOUN,,HIRAGANA,,,奉仕,ほうし,,houshi,"służba
 obsługa",,,
 7302,WORD_NOUN,,HIRAGANA,,,仕業,しわざ,,shiwaza,"czyn
@@ -14512,7 +14520,9 @@ trawersować",,,
 7532,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,比喩,ひゆ,,hiyu,"metafora
 podobne do
 przypominać coś",,,
-7533,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,同化,どうか,,douka,asymilacja,,,
+7533,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,同化,どうか,,douka,"asymilacja
+absorpcja
+przyswajanie",,,
 7534,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,お化け,おばけ,,obake,"goblin
 duch
 potwór",,,
@@ -20938,3 +20948,52 @@ czar
 urok
 gracja",,,
 10685,WORD_NOUN,,HIRAGANA_KATAKANA,,,エンドウ豆,エンドウまめ ,,endou mame,zielony groszek,,,
+10686,WORD_NOUN,,HIRAGANA,,,除外例,じょがいれい ,,jogairei,wyjątek,,,
+10687,WORD_VERB_RU,,HIRAGANA,,,打ちまける,ぶちまける ,,buchimakeru,"być pokornym
+mówić otwarcie
+mówić szczerze",,,
+10688,WORD_VERB_RU,,HIRAGANA,,,打ち負ける,ぶちまける ,,buchimakeru,"być pokornym
+mówić otwarcie
+mówić szczerze",,,
+10689,WORD_NOUN,,HIRAGANA,,,腐植土,ふしょくど ,,fushokudo,próchnica,,,
+10690,WORD_NOUN,,HIRAGANA,,,式,しき ,,shiki,"równanie
+wzór
+formuła
+wyrażenie
+ceremonia
+uroczystość",,,
+10691,WORD_NOUN,,HIRAGANA,,,櫛,くし ,,kushi,czesanie,,,
+10692,WORD_NOUN,,HIRAGANA,,,竿,さお,,sao,"wędka
+pręt
+drąg
+tyczka",,,
+10693,WORD_NOUN,,HIRAGANA,,,叱責,しっせき ,,shisseki,"nagana
+reprymenda
+upomnienie",,,
+10694,UNKNOWN,,HIRAGANA,,,暮方,くれがた ,,kuregata,"wieczór
+zmierzch
+zachód słońca",,,
+10695,WORD_NOUN,,HIRAGANA,,,役職,やくしょく ,,yakushoku,"pozycja
+stanowisko
+kierownictwo",,,
+10696,WORD_NOUN,,HIRAGANA,,,退廃,たいはい ,,taihai,"dekadencja
+degeneracja
+zwyrodnienie",,,
+10697,WORD_ADJECTIVE_NA,,HIRAGANA,,,退廃的,たいはいてき,,taihaiteki,"dekadencki
+zdegenerowany",,,
+10698,WORD_NOUN,,HIRAGANA,,,語法,ごほう ,,gohou,"gramatyka
+użycie
+wyrażenie",,,
+10699,WORD_NOUN,,HIRAGANA,,,車軸,しゃじく ,,shajiku,oś,,,
+10700,WORD_NOUN,,HIRAGANA,,,羊皮紙,ようひし ,,youhishi,pergamin,,,
+10701,WORD_NOUN,,HIRAGANA,,,粘着剤,ねんちゃくざい ,,nenchakuzai,"klej
+środek klejący
+spoiwo",,,
+10702,WORD_NOUN,,HIRAGANA,,,放射線,ほうしゃせん ,,houshasen,"promieniowanie
+radiacja",,,
+10703,WORD_NOUN,,KATAKANA,,,-,ラクダ,,rakuda,wielbłąd,,,
+10704,WORD_NOUN,,HIRAGANA,,,歯科学,しかがく,,shikagaku,stomatologia,,,
+10705,WORD_NOUN,,HIRAGANA,,,相続人,そうぞくにん ,,souzokunin,"dziedzic
+spadkobierca",,,
+10706,WORD_NOUN,,HIRAGANA,,,遺伝学,いでんがく ,,idengaku,genetyka,,,
+10707,WORD_NOUN,,HIRAGANA,,,遺伝学者,いでんがくしゃ ,,idengakusha,genetyk,,,
