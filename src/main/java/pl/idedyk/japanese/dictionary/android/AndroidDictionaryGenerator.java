@@ -406,9 +406,7 @@ public class AndroidDictionaryGenerator {
 						if (kanjiCountMapInteger == null) {
 							kanjiCountMapInteger = new Integer(0);
 						}
-						
-						kanjiCountMapInteger = kanjiCountMapInteger.intValue() + 1;
-						
+												
 						kanjiCountMap.put(currentKanjiChar, kanjiCountMapInteger);
 					}
 				}
