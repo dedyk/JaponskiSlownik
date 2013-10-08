@@ -2657,7 +2657,9 @@ Genki kanji 1-10",,北海道,ほっかいどう,,hokkaidou,Hokkaido,Jedna z japo
 1343,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,南西,なんせい,,nansei,południowy zachód,,,7683
 1344,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,北西,ほくせい,,hokusei,północny zachód,,,
 1345,UNKNOWN,,HIRAGANA,Genki kanji 1-6,,人口,じんこう,,jinkou,populacja,,,
-1346,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,出口,でぐち,,deguchi,wyjście,,,
+1346,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,出口,でぐち,,deguchi,"wyjście
+wylot
+ujście",,,
 1347,UNKNOWN,,HIRAGANA,Genki kanji 1-6,,出席,しゅっせき,,shusseki,"nadzór
 dozór
 obecność",,,
@@ -5902,7 +5904,8 @@ socjalny",,,
 3084,WORD_NOUN,,HIRAGANA,,,馬車,ばしゃ,,basha,"furmanka
 bryczka",,,
 3085,WORD_NOUN,,HIRAGANA,,,競馬,けいば,,keiba,wyścigi konne,,,
-3086,WORD_NOUN,,HIRAGANA,,,競馬騎手,けいばきしゅ,,keiba kishu,dżokej,,,
+3086,WORD_NOUN,,HIRAGANA,,,競馬騎手,けいばきしゅ,,keiba kishu,"dżokej
+jeździec",,,
 3087,WORD_VERB_U,,HIRAGANA,Genki kanji 2-21,,計る,はかる,,hakaru,"mierzyć
 kalkulować",,,
 3088,WORD_VERB_U,,HIRAGANA,,,計らう,はからう,,hakarau,"organizować
@@ -8373,7 +8376,8 @@ Genki 2-23",,夕食,ゆうしょく,,yuushoku,kolacja,,,
 4389,WORD_NOUN,,HIRAGANA,,,夕日,ゆうひ,,yuuhi,zachodzące słońce,,,
 4390,WORD_VERB_U,,HIRAGANA,,,倒す,たおす,,taosu,"powalać
 przewracać
-pokonywać",,,
+pokonywać
+zwyciężać",,,
 4391,WORD_NOUN,,HIRAGANA,,,自画像,じがぞう,,jigazou,autoportret,,,
 4392,WORD_NOUN,,HIRAGANA,,,現像,げんぞう,,genzou,wywoływanie,filmu,,
 4393,WORD_NOUN,,HIRAGANA,,,想像,そうぞう,,souzou,"wyobrażenie
@@ -9654,8 +9658,12 @@ PS (postscriptum)",,,
 żałoba",,,
 5012,WORD_VERB_U,,HIRAGANA,,,追い出す,おいだす,,oidasu,"wyrzucać
 zwalniać",,,
-5013,WORD_NOUN,,HIRAGANA,,,追跡,ついせき,,tsuiseki,gonienie,,,
-5014,WORD_VERB_IRREGULAR,,HIRAGANA,,,追跡する,ついせきする,,tsuiseki suru,gonić,,,
+5013,WORD_NOUN,,HIRAGANA,,,追跡,ついせき,,tsuiseki,"pościg
+pogoń
+gonitwa
+gonienie",,,
+5014,WORD_VERB_IRREGULAR,,HIRAGANA,,,追跡する,ついせきする,,tsuiseki suru,"gonić
+ścigać",,,
 5015,WORD_ADJECTIVE_NA,,HIRAGANA,,,軟らか,やわらか,,yawaraka,"miękki
 łagodny
 delikatny",,,
@@ -11238,6 +11246,8 @@ katastrofa
 kataklizm
 nieszczęście",,,
 5823,WORD_NOUN,,HIRAGANA,,,火災,かさい,,kasai,"klęska ognia
+wielki ogień
+pożoga
 pożar",,,
 5824,WORD_NOUN,,HIRAGANA,,,震災,しんさい,,shinsai,klęska trzęsienia ziemi,,,
 5825,WORD_VERB_U,,HIRAGANA,,,闘う,たたかう,,tatakau,walczyć,,,
@@ -12622,7 +12632,9 @@ prochy",po zmarłym,,
 6488,WORD_NOUN,,HIRAGANA,,,発電所,はつでんじょ,,hatsudenjo,elektrownia,,,
 6489,WORD_VERB_U,,HIRAGANA,,,照る,てる,,teru,"świecić
 błyszczeć",,,
-6490,WORD_VERB_U,,HIRAGANA,,,照らす,てらす,,terasu,oświecać,,,
+6490,WORD_VERB_U,,HIRAGANA,,,照らす,てらす,,terasu,"oświecać
+podświetlić
+rozjaśniać",,,
 6491,WORD_VERB_RU,,HIRAGANA,,,照れる,てれる,,tereru,"być zażenowanym
 być zawstydzonym",,,
 6492,WORD_NOUN,,HIRAGANA,,,照会,しょうかい,,shoukai,"dochodzenie
@@ -16317,6 +16329,7 @@ misterium
 inteligencja",,,8326
 8328,WORD_VERB_U,,HIRAGANA,,,輝く,かがやく,,kagayaku,"błyszczeć
 świecić
+lśnić
 iskrzyć się",,,
 8329,WORD_VERB_U,,HIRAGANA,,,輝かす,かがやかす,,kagayakasu,oświecać,,,
 8330,WORD_NOUN,,HIRAGANA,,,尋,ひろ,,hiro,"mierzenie
@@ -21037,3 +21050,57 @@ wymówienie",,,
 10719,WORD_NOUN,,HIRAGANA,,,音楽隊,おんがくたい ,,ongakutai,"orkiestra
 zespół muzyczny",,,
 10720,WORD_NOUN,,HIRAGANA,,,管財人,かんざいにん ,,kanzainin,syndyk,,,
+10721,WORD_NOUN,,HIRAGANA,,,資本主義,しほんしゅぎ,,shihonshugi,kapitalizm,,,
+10722,WORD_NOUN,,HIRAGANA,,,資本主義者,しほんしゅぎしゃ ,,shihonshugisha,kapitalista,,,
+10723,WORD_NOUN,,HIRAGANA,,,正当化,せいとうか,,seitouka,uzasadnienie,,,
+10724,WORD_NOUN,,HIRAGANA,,,締切り,しめきり ,,shimekiri,ostateczny termin,,,
+10725,WORD_NOUN,,HIRAGANA,,,分類,ぶんるい ,,bunrui,"klasyfikacja
+kategoryzacja",,,
+10726,WORD_NOUN,,HIRAGANA,,,含意,がんい ,,gan'i,"implikacja
+wnioskowanie",,,
+10727,WORD_NOUN,,HIRAGANA,,,土地,とち ,,tochi,"ląd
+działka
+ziemia",,,
+10728,WORD_NOUN,,HIRAGANA,,,崩壊,ほうかい ,,houkai,"zawalenie
+upadek
+zapaść
+rozpad",,,
+10729,WORD_NOUN,,HIRAGANA,,,歪み,いがみ ,,igami,"zniekształcenie
+wyginięcie
+skrzywienie",,,"10730
+10731"
+10730,WORD_NOUN,,HIRAGANA,,,歪み,ひずみ ,,hizumi,"zniekształcenie
+wyginięcie
+skrzywienie",,,"10729
+10731"
+10731,WORD_NOUN,,HIRAGANA,,,歪み,ゆがみ ,,yugami,"zniekształcenie
+wyginięcie
+skrzywienie",,,"10729
+10730"
+10732,WORD_NOUN,,HIRAGANA,,,用器,ようき ,,youki,"narzędzie
+przyrząd",,,
+10733,WORD_NOUN,,HIRAGANA,,,病魔,びょうま ,,byouma,"demon choroby
+choroba",,,
+10734,WORD_NOUN,,HIRAGANA,,,脅迫,きょうはく ,,kyouhaku,"zagrożenie
+groźba
+zagrożenie
+niebezpieczeństwo",,,
+10735,WORD_NOUN,,HIRAGANA,,,結核,けっかく ,,kekkaku,gruźlica,,,
+10736,WORD_NOUN,,HIRAGANA,,,統合,とうごう ,,tougou,"integracja
+unifikacja
+ujednolicenie
+synteza",,,
+10737,WORD_NOUN,,HIRAGANA,,,音響効果,おんきょうこうか ,,onkyoukouka,"efekty dźwiękowe
+akustyka",,,
+10738,WORD_NOUN,,HIRAGANA,,,谷地,やち,,yachi,"bagno
+moczary
+podmokły teren",,,
+10739,WORD_NOUN,,HIRAGANA,,,騎手,きしゅ ,,kishu,"dżokej
+jeździec",,,
+10740,WORD_NOUN,,HIRAGANA,,,放物線,ほうぶつせん ,,houbutsusen,parabola,,,
+10741,WORD_NOUN,,HIRAGANA,,,売春婦,ばいしゅんふ,,baishunfu,prostytutka,,,10742
+10742,WORD_NOUN,,HIRAGANA,,,売春婦,ばいしゅんぷ,,baishunpu,prostytutka,,,10741
+10743,WORD_ADJECTIVE_I,,HIRAGANA,,,耳新しい,みみあたらしい,,mimiatarashii,"nowy
+niebywały
+niesłychany
+niepojęty",,,
