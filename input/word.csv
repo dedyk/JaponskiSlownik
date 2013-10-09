@@ -9670,8 +9670,11 @@ gonienie",,,
 łagodny
 delikatny",,,
 5016,WORD_VERB_U,,HIRAGANA,,,溶かす,とかす,,tokasu,rozpuszczać,np. farbę,,
-5017,WORD_NOUN,,HIRAGANA,,,煙,けむり,,kemuri,dym,,,
-5018,WORD_VERB_U,,HIRAGANA,,,煙る,けむる,,kemuru,dymić się,,,
+5017,WORD_NOUN,,HIRAGANA,,,煙,けむり,,kemuri,"dym
+spaliny
+wyziewy",,,
+5018,WORD_VERB_U,,HIRAGANA,,,煙る,けむる,,kemuru,"dymić się
+kopcić się",,,
 5019,WORD_ADJECTIVE_I,,HIRAGANA,,,煙い,けむい,,kemui,zadymiony,,,
 5020,WORD_VERB_U,,HIRAGANA,,,煙たがる,けむたがる,,kemutagaru,"czuły na dym
 czuć się niezręcznie",,,
@@ -10859,7 +10862,9 @@ chcieć
 wymagać",,,
 5625,WORD_NOUN,,HIRAGANA,,,求職,きゅうしょく,,kyuushoku,poszukiwanie pracy,,,
 5626,WORD_NOUN,,HIRAGANA,,,求人,きゅうじん,,kyuujin,oferta pracy,„potrzebna pomoc”,,
-5627,WORD_NOUN,,HIRAGANA,,,要求,ようきゅう,,youkyuu,żądanie,,,
+5627,WORD_NOUN,,HIRAGANA,,,要求,ようきゅう,,youkyuu,"żądanie
+prośba
+życzenie",,,
 5628,WORD_NOUN,,HIRAGANA,,,探求,たんきゅう,,tankyuu,"poszukiwanie
 dochodzenie",,,
 5629,WORD_NOUN,,HIRAGANA,,,求償,きゅうしょう,,kyuushou,żądanie odszkodowania,,,
@@ -11516,7 +11521,8 @@ prześladować",,,
 wydanie",,,
 5943,WORD_NOUN,,HIRAGANA,,,未刊,みかん,,mikan,nie opublikowany,materiał,,
 5944,WORD_NOUN,,HIRAGANA,,,鉱石,こうせき,,kouseki,"ruda
-minerał",,,
+minerał
+kryształ",,,
 5945,WORD_NOUN,,HIRAGANA,,,鉱物,こうぶつ,,koubutsu,minerał,,,
 5946,WORD_NOUN,,HIRAGANA,,,鉱山,こうざん,,kouzan,kopalnia,,,
 5947,WORD_NOUN,,HIRAGANA,,,鉱水,こうすい,,kousui,woda mineralna,,,
@@ -13543,6 +13549,7 @@ ciało zmarłego",,,
 opowieść
 powiastka",,,
 7007,WORD_NOUN,,HIRAGANA,,,底,てい,,tei,"dno
+spód
 podstawa
 rodzaj",,,7008
 7008,WORD_NOUN,,HIRAGANA,,,底,そこ,,soko,"dno
@@ -13955,7 +13962,8 @@ klika
 towarzystwo",,,
 7224,WORD_VERB_RU,,HIRAGANA,,,拡げる,ひろげる,,hirogeru,rozciągać,,,
 7225,WORD_NOUN,,HIRAGANA,,,拡声器,かくせいき,,kakuseiki,głośnik,,,
-7226,WORD_NOUN,,HIRAGANA,,,拡大,かくだい,,kakudai,powiększanie,,,
+7226,WORD_NOUN,,HIRAGANA,,,拡大,かくだい,,kakudai,"powiększanie
+rozszerzenie",,,
 7227,WORD_NOUN,,HIRAGANA,,,拡充,かくじゅう,,kakujuu,"ekspansja
 uogólnienie
 rozszerzanie",,,
@@ -21121,7 +21129,7 @@ reagować",,,
 10747,WORD_NOUN,,HIRAGANA,,,見込み,みこみ ,,mikomi,"nadzieja
 prognoza
 przewidywanie",,,
-10748,WORD_VERB_U,,HIRAGANA,,,遇する,ぐうする ,,guusuru,"przyjmować
+10748,WORD_VERB_IRREGULAR,,HIRAGANA,,,遇する,ぐうする ,,guu suru,"przyjmować
 poczęstować
 zabawiać
 bawić",kogoś,,
@@ -21146,3 +21154,62 @@ nauka o chorobach zakaźnych",,,
 10757,WORD_NOUN,,HIRAGANA,,,観客,かんきゃく ,,kankyaku,"publiczność
 widownia",,,
 10758,WORD_NOUN,,HIRAGANA,,,生物学,せいぶつがく ,,seibutsugaku,biologia,,,
+10759,WORD_ADJECTIVE_NA,,HIRAGANA,,,不注意,ふちゅうい ,,fuchuui,"niedbalstwo
+beztroska
+bezmyślność
+nonszalancja
+niefrasobliwość",,,
+10760,WORD_NOUN,,HIRAGANA,,,馬鹿げた,ばかげた ,,bakageta,absurd,,,
+10761,WORD_NOUN,,HIRAGANA,,,優性,ゆうせい ,,yuusei,dominacja,,,
+10762,WORD_ADJECTIVE_I,,HIRAGANA,,,凄い,すごい ,,sugoi,"świetny
+wspaniały
+cudowny
+fantastyczny",,,
+10763,WORD_NOUN,,HIRAGANA,,,剛毛,ごうもう ,,goumou,"sierść
+włosie
+jeżenie
+najeżanie",,,
+10764,WORD_NOUN,,HIRAGANA,,,動作,どうさ,,dousa,"zachowanie
+akcja
+czynność",,,
+10765,WORD_NOUN,,HIRAGANA,,,口論,こうろん ,,kouron,"kwestionowanie
+podawanie w wątpliwość
+kłótnia
+spór
+sprzeczka
+waśń",,,
+10766,WORD_NOUN,,HIRAGANA,,,怒気,どき ,,doki,"złość
+gniew
+oburzenie",,,
+10767,WORD_NOUN,,HIRAGANA,,,洞窟,どうくつ ,,doukutsu,"grota
+jaskinia
+pieczara",,,
+10768,WORD_NOUN,,HIRAGANA,,,渓谷,けいこく ,,keikoku,"dolina
+wąwóz
+kanion",,,
+10769,WORD_NOUN,,HIRAGANA,,,荷担,かたん ,,katan,"udział
+uczestnictwo
+wsparcie
+oparcie",,,
+10770,WORD_NOUN,,HIRAGANA,,,薬舗,やくほ ,,yakuho,apteka,,,
+10771,WORD_NOUN,,HIRAGANA,,,衛星,えいせい ,,eisei,satelita,,,
+10772,WORD_NOUN,,HIRAGANA,,,解析,かいせき ,,kaiseki,analiza,,,
+10773,WORD_NOUN,,KATAKANA,,,-,ツチブタ,,tsuchibuta,"mrównik
+prosie ziemne",,,
+10774,WORD_NOUN,,KATAKANA,,,-,シロアリ,,shiroari,termit,,,
+10775,WORD_NOUN,,HIRAGANA,,,冶金,やきん ,,yakin,metalurgia,,,
+10776,WORD_NOUN,,HIRAGANA,,,冶金学,やきんがく,,yakingaku,metalurgia,dziedzina nauki,,
+10777,WORD_NOUN,,HIRAGANA,,,冶金学者,やきんがくしゃ ,,yakingakusha,metalurg,,,
+10778,WORD_NOUN,,HIRAGANA,,,蝌蚪,おたまじゃくし,,otamajakushi,kijanka,,,"10779
+10780"
+10779,WORD_NOUN,,HIRAGANA,,,お玉杓子,おたまじゃくし,,otamajakushi,kijanka,,,"10778
+10780"
+10780,WORD_NOUN,,HIRAGANA,,,御玉杓子,おたまじゃくし,,otamajakushi,kijanka,,,"10778
+10779"
+10781,WORD_NOUN,,HIRAGANA,,,再現,さいげん,,saigen,"reprodukcja
+kopia",,,
+10782,WORD_NOUN,,HIRAGANA,,,危害,きがい ,,kigai,"krzywda
+szkoda
+uraz",,,
+10783,WORD_NOUN,,HIRAGANA,,,空中,くうちゅう ,,kuuchuu,"niebo
+powietrze",,,
