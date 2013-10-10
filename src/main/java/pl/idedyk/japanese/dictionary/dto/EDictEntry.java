@@ -3,14 +3,16 @@ package pl.idedyk.japanese.dictionary.dto;
 import java.util.List;
 
 public class EDictEntry {
-	
+
 	private String kanji;
-	
+
 	private String kana;
-	
+
 	private String name;
-	
+
 	private List<String> pos;
+
+	private String rawLine;
 
 	public String getKanji() {
 		return kanji;
@@ -44,8 +46,16 @@ public class EDictEntry {
 		this.name = name;
 	}
 
+	public String getRawLine() {
+		return rawLine;
+	}
+
+	public void setRawLine(String rawLine) {
+		this.rawLine = rawLine;
+	}
+
 	@Override
 	public String toString() {
-		return kanji + " - " + kana + " - " + name + " - " + pos;
-	}	
+		return kanji + " - " + kana + " - " + name + " - " + pos + " - " + rawLine;
+	}
 }

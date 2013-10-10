@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary.misc;
 
+import java.io.FileWriter;
 import java.util.Iterator;
 import java.util.List;
 import java.util.TreeMap;
@@ -8,6 +9,8 @@ import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
+
+import com.csvreader.CsvWriter;
 
 public class ShowMissingCommonWords {
 
@@ -25,6 +28,11 @@ public class ShowMissingCommonWords {
 		// jmedict common iterator
 		Iterator<EDictEntry> jmedictCommonIterator = jmedictCommon.values().iterator();
 
+		// common word writer
+		CsvWriter csvWriter = new CsvWriter(new FileWriter("input/common_word.csv"), ',');
+
+		int csvId = 1;
+
 		while (jmedictCommonIterator.hasNext()) {
 
 			EDictEntry currentEdictEntry = jmedictCommonIterator.next();
@@ -34,9 +42,21 @@ public class ShowMissingCommonWords {
 
 			if (findPolishJapaneseEntryResult == null) {
 				System.out.println(currentEdictEntry);
-			}
 
+				csvWriter.write(String.valueOf(csvId));
+				csvWriter.write("");
+				csvWriter.write(currentEdictEntry.getKanji());
+				csvWriter.write(currentEdictEntry.getKana());
+				csvWriter.write(currentEdictEntry.getPos().toString());
+				csvWriter.write(currentEdictEntry.getRawLine());
+
+				csvWriter.endRecord();
+
+				csvId++;
+			}
 		}
+
+		csvWriter.close();
 	}
 
 	private static PolishJapaneseEntry findPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries,
