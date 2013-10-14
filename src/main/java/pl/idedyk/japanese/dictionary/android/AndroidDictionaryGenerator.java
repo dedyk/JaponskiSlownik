@@ -53,34 +53,36 @@ public class AndroidDictionaryGenerator {
 		System.out.println("readEdict");
 
 		// read edict
-		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
+		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader
+				.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 
 		System.out.println("readEdictCommon");
 
 		// read edict common
-		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JaponskiSlownik_dodatki/edict_sub-utf8");
+		TreeMap<String, EDictEntry> jmedictCommon = EdictReader
+				.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
 
 		// read jmedict name
 		System.out.println("jmedictName");
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader
-				.readJMnedict("../JaponskiSlownik_dodatki/JMnedict.xml");
+				.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedict, jmedictCommon, jmedictName,
 				"input/word.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv",
 				"output/transitive_intransitive_pairs.csv");
 
-		generateKanaEntries("../JaponskiSlownik_dodatki/kanjivg", "output/kana.csv");
+		generateKanaEntries("../JapaneseDictionary_additional/kanjivg", "output/kana.csv");
 
-		generateKanjiRadical("../JaponskiSlownik_dodatki/radkfile", "output/radical.csv");
+		generateKanjiRadical("../JapaneseDictionary_additional/radkfile", "output/radical.csv");
 
 		final String zinniaTomoeSlimBinaryFile = "output/kanji_recognizer.model.db";
 
 		List<KanjiEntry> kanjiEntries = generateKanjiEntries(dictionary, jmedictCommon, "input/kanji.csv",
-				"../JaponskiSlownik_dodatki/kanjidic2.xml", "../JaponskiSlownik_dodatki/kradfile",
-				"../JaponskiSlownik_dodatki/kanjivg", "output/kanji.csv");
+				"../JapaneseDictionary_additional/kanjidic2.xml", "../JapaneseDictionary_additional/kradfile",
+				"../JapaneseDictionary_additional/kanjivg", "output/kanji.csv");
 
 		generateZinniaTomoeSlimBinaryFile(kanjiEntries, "output/kanjivgTomoeFile.txt", "output/kanjivgTomoeFile.xml",
-				"../JaponskiSlownik_dodatki/zinnia-0.06-app/bin/zinnia_learn",
+				"../JapaneseDictionary_additional/zinnia-0.06-app/bin/zinnia_learn",
 				"output/kanji_recognizer_handwriting-ja-slim.s", zinniaTomoeSlimBinaryFile);
 	}
 
