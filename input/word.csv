@@ -338,7 +338,8 @@ Genki 1-3",,-,ビデオ,,bideo,video,,,
 Genki 2-18",,-,カーテン,,kaaten,zasłonka,,,
 186,WORD_NOUN,,KATAKANA,Genki 1-2,,-,ドア,,doa,drzwi,,,
 187,WORD_NOUN,,HIRAGANA_KATAKANA,Genki 1-2,,消しゴム,けしゴム,,keshigomu,gumka,,,
-188,WORD_NOUN,,HIRAGANA,Genki 1-2,,椅子,いす,,isu,krzesło,,,
+188,WORD_NOUN,,HIRAGANA,Genki 1-2,,椅子,いす,,isu,"krzesło
+fotel",,,
 189,WORD_EXPRESSION,,HIRAGANA,Genki 1-2,,-,わかりました,,Wakarimashita,zrozumiałem,,,
 190,WORD_EXPRESSION,,HIRAGANA,Genki 1-2,,-,わかりません,,Wakarimasen,nie rozumiem,,,
 191,WORD_EXPRESSION,,HIRAGANA,Genki 1-2,,ゆっくり言ってください,ゆっくりいってください,,Yukkuri itte kudasai,Proszę mówić wolno,,,
@@ -1118,7 +1119,7 @@ Genki 1-12",,お腹,おなか,,onaka,brzuch,,,
 541,WORD_NOUN,,HIRAGANA,"Genki 1-7
 Genki 1-12
 Genki kanji 2-15",,足,あし,,ashi,"noga
-stopa",,,
+stopa",,,10892
 542,WORD_NOUN,,HIRAGANA,Genki 1-7,,弟さん,おとうとさん,,otoutosan,brat,spoza swojej rodziny,,
 543,WORD_NOUN,,HIRAGANA,Genki 1-7,,妹さん,いもうとさん,,imoutosan,siostra,spoza swojej rodziny,,
 544,WORD_NOUN,,HIRAGANA,"Genki 1-7
@@ -2072,6 +2073,7 @@ Genki kanji 2-13",,着物,きもの,,kimono,kimono,,,
 983,WORD_NOUN,,KATAKANA,Genki 2-13,,-,ケーキ,,keeki,ciastko,,,
 984,WORD_NOUN,,HIRAGANA,"Genki 2-13
 Genki kanji 2-15",,広告,こうこく,,koukoku,"ogłoszenie
+zawiadomienie
 reklama","w czasopismach
 na plakatach",,
 985,WORD_NOUN,,HIRAGANA,"Genki 2-13
@@ -2633,7 +2635,7 @@ materiał
 tekstylia",,,
 1283,WORD_NOUN,,HIRAGANA,"Genki kanji 2-19
 Genki 2-21",,工場,こうじょう,,koujou,"fabryka
-zakład",,,
+zakład",,,10877
 1284,WORD_NOUN,,HIRAGANA,,,針,はり,,hari,"igła
 pinezka
 haczyk",,,
@@ -3376,7 +3378,8 @@ zarządca sklepu",,,
 1687,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,気分,きぶん,,kibun,"nastrój
 samopoczucie
 stan (zdrowia)",,,
-1688,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-13,,一生,いっしょう,,isshou,życie,,,
+1688,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-13,,一生,いっしょう,,isshou,"życie
+żywot",,,
 1689,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,海苔,のり,,nori,nori,japońska potrawa,,8705
 1690,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,すき焼き,すきやき,,sukiyaki,sukiyaki,japońska potrawa,,
 1691,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,-,なべ,,nabe,garnek,,,
@@ -4357,7 +4360,9 @@ akademik",,,"4992
 rozbierać
 usuwać",ubranie,,
 2226,WORD_VERB_RU,,HIRAGANA,Genki 2-17,,-,いれる,,ireru,robić,"herbatę, kawę",,1370
-2227,WORD_VERB_RU,,HIRAGANA,Genki 2-17,に,慣れる,なれる,ni,nareru,przyzwyczaić się,,,
+2227,WORD_VERB_RU,,HIRAGANA,Genki 2-17,に,慣れる,なれる,ni,nareru,"przyzwyczaić się
+stać się
+być oswojonym",,,
 2228,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-17,,就職する,しゅうしょくする,,shuushoku suru,"znaleźć pracę
 dostać pracę
 zostać zatrudnionym",w pełnym wymiarze godzin,,
@@ -6449,7 +6454,8 @@ oberża",,,
 3314,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,話題,わだい,,wadai,"temat rozmowy
 przedmiot rozmowy",,,
 3315,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,題,だい,,dai,"temat
-tytuł",,,
+tytuł
+przedmiot",,,
 3316,WORD_NOUN,,HIRAGANA,,,西洋,せいよう,,seiyou,"zachód
 zachodnie kraje",,,
 3317,WORD_NOUN,,HIRAGANA,,,洋式,ようしき,,youshiki,w stylu zachodnim,,,
@@ -7269,7 +7275,7 @@ wyraz twarzy",,,
 3738,WORD_NOUN,,HIRAGANA,,,顔料,がんりょう,,ganryou,kosmetyki,,,
 3739,WORD_VERB_U,,HIRAGANA,,,翻す,ひるがえす,,hirugaesu,"odwracać
 zmieniać nagle (opinię, przekonanie)
-powiewać",,,
+powiewać",,,10879
 3740,WORD_VERB_U,,HIRAGANA,,,翻る,ひるがえる,,hirugaeru,"okręcać się
 zmieniać się
 falować",,,
@@ -7325,7 +7331,9 @@ rząd",,,8658
 3771,WORD_NOUN,,HIRAGANA,Genki 2-21,,政府,せいふ,,seifu,rząd,,,
 3772,WORD_NOUN,,HIRAGANA,,,政治家,せいじか,,seijika,polityk,,,
 3773,WORD_NOUN,,HIRAGANA,,,政党,せいとう,,seitou,partia polityczna,,,
-3774,WORD_NOUN,,HIRAGANA,,,政策,せいさく,,seisaku,program polityczny,,,
+3774,WORD_NOUN,,HIRAGANA,,,政策,せいさく,,seisaku,"program polityczny
+polityka
+dyplomacja",,,
 3775,WORD_VERB_RU,,HIRAGANA,,,治める,おさめる,,osameru,"rządzić
 panować
 tłumić",,,
@@ -7408,7 +7416,9 @@ dokumenty",,,
 3819,WORD_NOUN,,KATAKANA,,,-,セントラルヒーティング,,sentoraru hiitingu,centralne ogrzewanie,,,
 3820,WORD_NOUN,,HIRAGANA,,,天使,てんし,,tenshi,anioł,,,
 3821,WORD_NOUN,,HIRAGANA,,,お使い,おつかい,,otsukai,posłaniec,,,
-3822,WORD_VERB_U,,HIRAGANA,,,零す,こぼす,,kobosu,rozlewać,na podłogę,,
+3822,WORD_VERB_U,,HIRAGANA,,,零す,こぼす,,kobosu,"rozlewać
+lać
+rozsypywać",na podłogę,,
 3823,WORD_VERB_RU,,HIRAGANA,,,零れる,こぼれる,,koboreru,rozlewać się,,,
 3824,WORD_ADVERB,,HIRAGANA,,,専ら,もっぱら,,moppara,"głównie
 jedynie
@@ -7537,6 +7547,7 @@ kierownik biura
 naczelnik poczty",,,
 3888,WORD_NOUN,,HIRAGANA,,,局面,きょくめん,,kyokumen,aspekt,,,
 3889,WORD_NOUN,,HIRAGANA,,,板,いた,,ita,"deska
+płyta
 tablica",,,
 3890,WORD_NOUN,,HIRAGANA,,,看板,かんばん,,kanban,"tablica ogłoszeń
 szyld
@@ -7673,7 +7684,8 @@ słuchać
 wysłuchać
 odwiedzić
 przyjść z wizytą","kogoś, grzecznie, modestywny odpowiednik słów: kiku, tazuneru, houmon suru",,
-3963,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,-,おる,,oru,[modestywna forma od iru],,,3058
+3963,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,-,おる,,oru,[modestywna forma od iru],,,"3058
+10882"
 3964,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,-,ござる,,gozaru,[modestywna forma od aru],,,
 3965,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,-,ておる,,te oru,[modestywna forma od te iru],,,
 3966,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,-,でござる,,de gozaru,[modestywna forma od desu],,,
@@ -8391,7 +8403,10 @@ konwersacja",,,
 konferencja",,,
 4333,WORD_NOUN,,HIRAGANA,,,談義,だんぎ,,dangi,konsultacja,,,
 4334,WORD_NOUN,,KATAKANA,,,-,レモン,,remon,cytryna,,,
-4335,WORD_VERB_U,,HIRAGANA,,,向く,むく,,muku,skręcać,,,
+4335,WORD_VERB_U,,HIRAGANA,,,向く,むく,,muku,"zwracać się
+obracać się
+nadawać się
+pasować",,,
 4336,WORD_VERB_RU,,HIRAGANA,,,向ける,むける,,mukeru,skręcać,,,
 4337,WORD_VERB_U,,HIRAGANA,,,向かう,むかう,,mukau,być zwróconym,,,
 4338,WORD_NOUN,,HIRAGANA,,,方向,ほうこう,,houkou,kierunek,,,
@@ -9027,7 +9042,8 @@ Genki dodatkowe 2-20",,-,する,,suru,kosztować,,,"253
 6015
 6730
 7998"
-4645,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-20,,屹度,きっと,,kitto,z pewnością,,,
+4645,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-20,,屹度,きっと,,kitto,"z pewnością
+na pewno",,,
 4646,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-20,,-,あんなに,,annani,taki,,,
 4647,WORD_VERB_U,,HIRAGANA,"Genki dodatkowe 2-20
 Genki 2-21",,騙す,だます,,damasu,oszukiwać,,,
@@ -9122,7 +9138,8 @@ przechowalnia
 komórka
 schowek",,,
 4690,WORD_NOUN,,HIRAGANA,,,倉庫,そうこ,,souko,"magazyn
-składnica",,,
+składnica
+skład",,,
 4691,WORD_NOUN,,HIRAGANA,,,倉荷,くらに,,kurani,magazynowane materiały,,,
 4692,WORD_NOUN,,HIRAGANA,,,倉敷料,くらしきりょう,,kurashikiryou,opłata za magazynowanie,,,
 4693,WORD_ADJECTIVE_NA,,HIRAGANA,,,倉皇,そうこう,,soukou,pośpiech,,,
@@ -9231,7 +9248,8 @@ gościna",,,
 wykonywać (utwór muzyczny)
 grać (na scenie)",,,
 4747,WORD_NOUN,,HIRAGANA,,,演劇,えんげき,,engeki,przedstawienie,,,
-4748,WORD_NOUN,,HIRAGANA,,,演奏,えんそう,,ensou,występ,np. muzyczny,,
+4748,WORD_NOUN,,HIRAGANA,,,演奏,えんそう,,ensou,"występ
+recital",np. muzyczny,,
 4749,WORD_NOUN,,HIRAGANA,,,演出,えんしゅつ,,enshutsu,inscenizacja,,,
 4750,WORD_NOUN,,HIRAGANA,,,演芸,えんげい,,engei,"przedstawienie
 widowisko
@@ -9388,8 +9406,10 @@ organizować się
 dostosowywać się",,,
 4832,WORD_NOUN,,HIRAGANA,,,整理,せいり,,seiri,"regulacja
 porządkowanie
+uporządkowanie
+uregulowanie
 reorganizacja
-likwidacja",,,
+nastawienie",,,
 4833,WORD_NOUN,,HIRAGANA,,,整合,せいごう,,seigou,"dostosowanie
 dopasowanie
 integracja",,,
@@ -10372,8 +10392,10 @@ koszt transportu",,,
 skarbiec",,,
 5303,WORD_NOUN,,HIRAGANA,,,国庫,こっこ,,kokko,Skarb Państwa,,,
 5304,WORD_VERB_RU,,HIRAGANA,,,押さえる,おさえる,,osaeru,"naciskać
+przyciskać
 powstrzymywać
-tłumić",,,
+tłumić
+łapać",,,
 5305,WORD_NOUN,,HIRAGANA,,,在,ざい,,zai,"przedmieście
 wioska
 być usytuowanym",,,
@@ -10973,7 +10995,9 @@ zakładać",,,
 5613,WORD_NOUN,,HIRAGANA,,,遠回り,とおまわり,,toomawari,okrężna droga,,,
 5614,WORD_NOUN,,HIRAGANA,,,遠視,えんし,,enshi,dalekowzroczność,wada wzroku,,
 5615,WORD_ADJECTIVE_NA,,HIRAGANA,,,遠慮,えんりょ,,enryo,"rezerwa
+skrępowanie
 skromność
+nieśmiałość
 wahanie",,,
 5616,WORD_NOUN,,HIRAGANA,,,遠征,えんせい,,ensei,ekspedycja,,,
 5617,WORD_VERB_U,,HIRAGANA,,,慮る,おもんぱかる,,omonpakaru,"myśleć
@@ -11003,7 +11027,10 @@ predominacja",,,
 5624,WORD_VERB_RU,,HIRAGANA,,,求める,もとめる,,motomeru,"pragnąć
 chcieć
 żądać
-wymagać",,,
+wymagać
+szukać
+nabywać
+kupować",,,
 5625,WORD_NOUN,,HIRAGANA,,,求職,きゅうしょく,,kyuushoku,poszukiwanie pracy,,,
 5626,WORD_NOUN,,HIRAGANA,,,求人,きゅうじん,,kyuujin,oferta pracy,„potrzebna pomoc”,,
 5627,WORD_NOUN,,HIRAGANA,,,要求,ようきゅう,,youkyuu,"żądanie
@@ -12736,7 +12763,9 @@ wydarzać się",,,
 6447,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 2-21,,入院する,にゅういんする,,nyuuin suru,być hospitalizowany,,,
 6448,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 2-21,,気にする,きにする,,ki ni suru,martwić się,,,
 6449,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-21,,長い間,ながいあいだ,,nagai aida,długi czas,,,
-6450,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 2-21,,一生懸命,いっしょうけんめい,,isshoukenmei,bardzo trudno,,,
+6450,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 2-21,,一生懸命,いっしょうけんめい,,isshoukenmei,"bardzo trudno
+ze wszystkich sił
+usilnie",,,
 6451,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 2-21,,贅沢をする,ぜいたくをする,,zeitaku o suru,zaspokajać zachcianki,,,
 6452,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-21,,滅多に,めったに,,metta ni,rzadko,,,
 6453,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-21,,滅多にない,めったにない,,mettaninai,"rzadki
@@ -13823,7 +13852,8 @@ Pani Kuroki",nazwisko,,
 7065,WORD_NOUN,,HIRAGANA,Genki kanji 2-22,,末,すえ,,sue,koniec,,,266
 7066,WORD_NOUN,,HIRAGANA,Genki kanji 2-22,,末子,すえこ,,sueko,"ostatnie dziecko
 najmłodsze dziecko w rodzinie",,,
-7067,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-22,,期待する,きたいする,,kitai suru,spodziewać się,,,
+7067,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-22,,期待する,きたいする,,kitai suru,"spodziewać się
+oczekiwać",,,
 7068,WORD_NOUN,,HIRAGANA,Genki kanji 2-22,,心残り,こころのこり,,kokoronokori,żałować,,,
 7069,WORD_NOUN,,HIRAGANA,Genki kanji 2-22,,小説家,しょうせつか,,shousetsuka,powieściopisarz,,,
 7070,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-22,,説教する,せっきょうする,,sekkyou suru,kazać,kazanie wygłaszane w kościele,,
@@ -14059,7 +14089,10 @@ dźwięczeć",,,
 7187,WORD_NOUN,,HIRAGANA,,,出版,しゅっぱん,,shuppan,publikacja,,,
 7188,WORD_NOUN,,HIRAGANA,,,元,もと,,moto,"podstawa
 fundament
-pochodzenie",,,8797
+pochodzenie
+były
+poprzedni
+pierwotny",,,8797
 7189,WORD_NOUN,,HIRAGANA,,,読点,とうてん,,touten,przecinek,,,
 7190,WORD_VERB_U,,HIRAGANA,,,読み取る,よみとる,,yomitoru,"rozumieć
 pojmować",czyjeś intencje,,
@@ -14920,7 +14953,10 @@ przeciągać się",,,
 przedłużać
 rozwijać",,,
 7619,WORD_NOUN,,HIRAGANA,,,延長,えんちょう,,enchou,przedłużenie,,,
-7620,WORD_NOUN,,HIRAGANA,,,延期,えんき,,enki,zmiana terminu,na późniejszy,,
+7620,WORD_NOUN,,HIRAGANA,,,延期,えんき,,enki,"odłożenie
+odroczenie
+przełożenie
+zmiana terminu",na późniejszy,,
 7621,WORD_NOUN,,HIRAGANA,,,延着,えんちゃく,,enchaku,opóźnione przybycie,,,
 7622,WORD_NOUN,,HIRAGANA,,,遅延,ちえん,,chien,"opóźnienie
 zwlekanie",,,
@@ -15819,7 +15855,10 @@ być niechętnym (rozstaniu się z czymś)
 cenić
 żałować",,,
 8048,WORD_ADJECTIVE_I,,HIRAGANA,,,惜しい,おしい,,oshii,"jaka szkoda
-niestety",,,
+niestety
+szkoda
+żal
+żałować",,,
 8049,WORD_NOUN,,HIRAGANA,,,拍,はく,,haku,"uderzanie
 klaskanie",,,
 8050,WORD_NOUN,,HIRAGANA,,,斜,しゃ,,sha,"pochyły
@@ -21676,3 +21715,34 @@ wnet",,,
 prędko
 wkrótce
 wnet",,,
+10876,WORD_ADVERB,,HIRAGANA,,,一層,いっそう,,issou,"bardziej
+jeszcze bardziej",,,
+10877,WORD_NOUN,,HIRAGANA,,,工場,こうばん,,kouban,"fabryka
+zakład",,,1283
+10878,WORD_VERB_U,,HIRAGANA,,,溢す,こぼす,,kobosu,"rozlewać
+lać
+rozsypywać",na podłogę,,
+10879,WORD_VERB_U,,HIRAGANA,,,翻す,こぼす,,kobosu,"rozlewać
+lać
+rozsypywać",na podłogę,,3739
+10880,WORD_VERB_RU,,HIRAGANA,,に,狎れる,なれる,ni,nareru,"przyzwyczaić się
+stać się
+być oswojonym",,,
+10881,WORD_VERB_RU,,HIRAGANA,,に,馴れる,なれる,ni,nareru,"przyzwyczaić się
+stać się
+być oswojonym",,,
+10882,WORD_VERB_U,,HIRAGANA,,,織る,おる,,oru,tkać,,,3963
+10883,UNKNOWN,PREFIX,HIRAGANA,,,大,だい,,dai,"duży
+wielki
+bardzo",,,
+10884,WORD_VERB_IRREGULAR,,HIRAGANA,,,広告する,こうこくする,,koukoku suru,reklamować,w prasie,,
+10885,WORD_VERB_U,,HIRAGANA,,,剥く,むく,,muku,obierać,ze skórki,,
+10886,WORD_VERB_IRREGULAR,,HIRAGANA,,,援助する,えんじょする,,enjo suru,wspierać,,,
+10887,WORD_VERB_IRREGULAR,,HIRAGANA,,,延期する,えんきする,,enki suru,przełożyć,,,
+10888,WORD_VERB_IRREGULAR,,HIRAGANA,,,演奏する,えんそうする,,ensou suru,"występować
+grać",na scenie,,
+10889,WORD_VERB_IRREGULAR,,HIRAGANA,,,整理する,せいりする,,seiri suru,porządkować,,,
+10890,WORD_VERB_IRREGULAR,,HIRAGANA,,,生産する,せいさんする,,seisan suru,produkować,,,
+10891,UNKNOWN,,HIRAGANA,,,-,とって,,totte,"dla
+wobec",zawsze używany w wyrażeniu ni totte,,
+10892,UNKNOWN,,HIRAGANA,,,足,そく,,soku,"[klasyfikator do liczenia butów, skarpetek, nóg, stóp]",,,541
