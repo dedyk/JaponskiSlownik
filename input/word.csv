@@ -845,7 +845,8 @@ pokojowy",,,
 Genki kanji 1-11",,好き,すき,,suki,"lubić
 ulubiony
 ukochany",,,
-425,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,大嫌い,だいきらい,,daikirai,nienawidzić,,,
+425,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,大嫌い,だいきらい,,daikirai,"nienawidzić
+bardzo nie lubić",,,
 426,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,大好き,だいすき,,daisuki,"kochać
 bardzo lubić",,,
 427,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,-,にぎやか,,nigiyaka,żywy,,,
@@ -1255,7 +1256,8 @@ Genki 1-8",,何も,なにも,,nanimo,nic,nani [partykuła] mo + czasownik w form
 601,UNKNOWN,,HIRAGANA,Genki 1-7,,人,にん,,nin,ludzi,liczenie,,"79
 286"
 602,UNKNOWN,,HIRAGANA,"Genki 1-7
-Genki kanji 1-12",,別に,べつに,,betsuni,nieszczególnie,+ czasownik w formie negatywnej,,
+Genki kanji 1-12",,別に,べつに,,betsu ni,"nieszczególnie
+niespecjalnie",+ czasownik w formie negatywnej,,
 603,UNKNOWN,,HIRAGANA,Genki 1-7,,-,もちろん,,mochiron,oczywiście,,,
 604,UNKNOWN,,HIRAGANA,Genki 1-7,,-,よかったら,,yokattara,jeśli chcesz,,,
 605,WORD_VERB_U,,HIRAGANA,"Genki 1-8
@@ -1360,8 +1362,12 @@ odcinać",,,
 649,WORD_VERB_U,,HIRAGANA,"Genki 1-8
 Genki kanji 1-8",,作る,つくる,,tsukuru,"tworzyć
 produkować
+sporządzić
 robić
-budować",,,
+budować
+skomponować
+hodować
+pielęgnować",,,
 650,WORD_VERB_U,,HIRAGANA,Genki 1-8,,持っていく,もっていく,,motte iku,"brać
 zanieść
 zanosić",coś,,
@@ -1695,7 +1701,9 @@ alarm
 śpiew (ptaka)",,,
 801,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-10,,戸,と,,to,drzwi,,,374
 802,WORD_VERB_IRREGULAR,,HIRAGANA,"Genki dodatkowe 1-10
-Genki 2-21",,-,びっくりする,,bikkuri suru,być zaskoczony,,,
+Genki 2-21",,-,びっくりする,,bikkuri suru,"być zaskoczony
+zdziwić się
+przestraszyć się",,,
 803,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki dodatkowe 1-10
 Genki 2-13
 Genki kanji 2-21",,幸せ,しあわせ,,shiawase,"szczęśliwy
@@ -1945,7 +1953,8 @@ myślę, że ...","~, pewność 60%, używane m.in do prognozy pogody",,
 stopień
 limit
 miara
-skala",np. temperatura,,6870
+skala
+[klasyfikator do liczenia stopni temperatury]",np. temperatura,,6870
 924,UNKNOWN,,HIRAGANA,Genki 1-12,,二三日,にさんにち,,ni san nichi,"2,3 dni",,,
 925,UNKNOWN,,HIRAGANA,Genki 1-12,,-,ので,,node,ponieważ,~,,
 926,WORD_ADVERB,,HIRAGANA,Genki 1-12,,始めて,はじめて,,hajimete,pierwszy raz,,,
@@ -2773,8 +2782,14 @@ ideogram",,,
 1369,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,入口,いりぐち,,iriguchi,wejście,,,
 1370,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,"Genki kanji 1-7
 Genki 2-18
-Genki 2-16",を,入れる,いれる,o,ireru,"wkładać
-wpuszczać",,,2226
+Genki 2-16",を,入れる,いれる,o,ireru,"wkładać (coś do czegoś)
+wpuszczać
+dodawać
+wysyłać
+posłać (do szkoły, szpitala, etc)
+włączać
+wliczać
+przyrządzać (napoje)",,,2226
 1371,UNKNOWN,,HIRAGANA,Genki kanji 1-7,,輸入,ゆにゅう,,yunyuu,"import
 przywóz
 wwóz",,,
@@ -4343,7 +4358,8 @@ Genki kanji 2-22",,残業,ざんぎょう,,zangyou,praca po godzinach,,,
 2216,WORD_NOUN,,HIRAGANA,Genki 2-17,,違い,ちがい,,chigai,"różnica
 pomyłka",,,
 2217,WORD_NOUN,,KATAKANA,Genki 2-17,,-,ニュース,,nyuusu,"news
-wiadomość",,,
+wiadomość
+dziennik (radiowy, telewizyjny)",,,
 2218,WORD_NOUN,,HIRAGANA,Genki 2-17,,秘密,ひみつ,,himitsu,"tajemnica
 sekret",,,
 2219,WORD_NOUN,,HIRAGANA,Genki 2-17,,寮,りょう,,ryou,"internat
@@ -5285,7 +5301,8 @@ być zużytym",,,
 wydatek",,,
 2709,WORD_NOUN,,HIRAGANA,,,旅費,りょひ,,ryohi,koszty podróży,,,
 2710,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,生活費,せいかつひ,,seikatsuhi,"koszty utrzymania
-koszty życia",,,
+koszty życia
+wydatki na życie",,,
 2711,WORD_NOUN,,HIRAGANA,,,消費,しょうひ,,shouhi,"konsumpcja
 zużycie
 spożycie",,,
@@ -5735,6 +5752,9 @@ piękna kobieta",,,
 2933,WORD_NOUN,,HIRAGANA,,,島国,しまぐに,,shimaguni,państwo wyspiarskie,,,
 2934,WORD_NOUN,,HIRAGANA,,,信仰,しんこう,,shinkou,wiara,religijna,,
 2935,WORD_NOUN,,HIRAGANA,,,信用,しんよう,,shin'you,"ufność
+zaufanie
+kredyt zaufania
+dobra wiara
 wiara
 poleganie na",,,
 2936,WORD_NOUN,,HIRAGANA,"Genki 2-20
@@ -5885,6 +5905,7 @@ zginać",,,
 3003,WORD_NOUN,,HIRAGANA,,,作曲,さっきょく,,sakkyoku,"utwór muzyczny
 kompozycja muzyczna",,,
 3004,WORD_NOUN,,HIRAGANA,,,名曲,めいきょく,,meikyoku,"sławny utwór muzyczny
+słynny utwór
 sławna melodia
 popularna melodia",,,
 3005,WORD_NOUN,,HIRAGANA,,,曲芸,きょくげい,,kyokugei,"trik
@@ -6577,7 +6598,8 @@ ogłoszenie
 zaproszenie",,,
 3375,WORD_ADJECTIVE_NA,,HIRAGANA,,,案外,あんがい,,angai,"niespodziewany
 zaskakujący
-nieoczekiwany",,,
+nieoczekiwany
+wbrew oczekiwaniom",,,
 3376,WORD_NOUN,,HIRAGANA,,,案出,あんしゅつ,,anshutsu,"pomysł
 wynalazek
 opracowanie (czegoś)",,,
@@ -7149,7 +7171,8 @@ kolejni",królowie,,
 3671,WORD_NOUN,,HIRAGANA,,,歴任,れきにん,,rekinin,kolejne obejmowanie różnych stanowisk,,,
 3672,WORD_VERB_RU,,HIRAGANA,,,命じる,めいじる,,meijiru,rozkazywać,,,
 3673,WORD_NOUN,,HIRAGANA,,,命,いのち,,inochi,życie,,,
-3674,WORD_NOUN,,HIRAGANA,,,命令,めいれい,,meirei,rozkaz,,,
+3674,WORD_NOUN,,HIRAGANA,,,命令,めいれい,,meirei,"rozkaz
+polecenie",,,
 3675,WORD_NOUN,,HIRAGANA,,,命日,めいにち,,meinichi,dzień rocznicy śmierci,,,
 3676,WORD_NOUN,,HIRAGANA,,,命題,めいだい,,meidai,"teza
 propozycja",,,
@@ -9510,7 +9533,8 @@ ekologia",,,
 łapać
 ściskać w dłoni",,,
 4875,WORD_NOUN,,HIRAGANA,,,貝,かい,,kai,"muszla
-skorupiak",,,
+skorupiak
+małż",,,
 4876,WORD_NOUN,,HIRAGANA,,,貝類,かいるい,,kairui,"skorupiaki
 mięczaki",,,
 4877,WORD_NOUN,,HIRAGANA,,,貝塚,かいづか,,kaiduka,stos muszelek,,,
@@ -11143,6 +11167,8 @@ interes",,,
 uwielbienie
 kult",,,90
 5679,WORD_VERB_U,,HIRAGANA,,,拝む,おがむ,,ogamu,"wielbić
+modlić się
+błagać
 czcić
 ubóstwiać",,,
 5680,WORD_VERB_IRREGULAR,,HIRAGANA,,,拝見する,はいけんする,,haiken suru,"patrzeć
@@ -12148,8 +12174,11 @@ pisać wstęp",,,
 być pokonanym",,,
 6130,WORD_NOUN,,HIRAGANA,,,失敗,しっぱい,,shippai,"gafa
 pomyłka
+fiasko
+błąd
 niepowodzenie
-klęska",,,
+klęska
+pomyłka",,,
 6131,WORD_NOUN,,HIRAGANA,,,敗退,はいたい,,haitai,"porażka
 przegrana",,,
 6132,WORD_NOUN,,HIRAGANA,,,敗訴,はいそ,,haiso,przegrana sprawa,,,
@@ -12729,7 +12758,8 @@ ratownik",,,
 pomoc",,,
 6427,WORD_NOUN,,HIRAGANA_KATAKANA,,,救命ボート,きゅうめいボート,,kyuumei bouto,łódź ratunkowa,,,
 6428,WORD_NOUN,,HIRAGANA,,,入院,にゅういん,,nyuuin,"hospitalizacja
-pójście do szpitala",,,
+pójście do szpitala
+przyjęcie do szpitala",,,
 6429,WORD_NOUN,,HIRAGANA,,,洪水,こうずい,,kouzui,"powódź
 zalanie",,,
 6430,WORD_VERB_U,,HIRAGANA,,,届く,とどく,,todoku,"przybywać
@@ -12760,7 +12790,8 @@ stawać się
 wydarzać się",,,
 6445,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-21,,多くの,おおくの,,ookuno,wiele,,,
 6446,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-21,,-,ただの,,tadano,nie więcej niż ...,,,
-6447,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 2-21,,入院する,にゅういんする,,nyuuin suru,być hospitalizowany,,,
+6447,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 2-21,,入院する,にゅういんする,,nyuuin suru,"być hospitalizowany
+pójść do szpitala",,,
 6448,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 2-21,,気にする,きにする,,ki ni suru,martwić się,,,
 6449,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-21,,長い間,ながいあいだ,,nagai aida,długi czas,,,
 6450,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 2-21,,一生懸命,いっしょうけんめい,,isshoukenmei,"bardzo trudno
@@ -13456,7 +13487,8 @@ wyjść po kogoś",,,
 6837,WORD_VERB_RU,,HIRAGANA,Genki 2-22,,計画を立てる,けいかくをたてる,,keikaku o tateru,planować,,,
 6838,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-22,,お願いする,おねがいする,,onegai suru,prosić o pomoc,,,
 6839,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-22,に,賛成する,さんせいする,ni,sansei suru,zgodzić się,,,
-6840,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-22,,失敗する,しっぱいする,,shippai suru,ponieść porażkę,,,
+6840,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-22,,失敗する,しっぱいする,,shippai suru,"ponieść porażkę
+doznać niepowodzenia",,,
 6841,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-22,,徹夜する,てつやする,,tetsuya suru,nie spać całą noc,coś robiąc,,
 6842,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-22,,翻訳する,ほんやくする,,hon'yaku suru,"przekładać
 tłumaczyć",pisemne,,
@@ -13605,7 +13637,9 @@ grupa muzyczna
 orkiestra",,,
 6921,WORD_NOUN,,HIRAGANA,,,楽園,らくえん,,rakuen,raj,,,
 6922,WORD_NOUN,,HIRAGANA,,,近代,きんだい,,kindai,"nowożytne czasy
-nowoczesne czasy",,,
+nowoczesne czasy
+nowożytność
+nowoczesność",,,
 6923,WORD_NOUN,,HIRAGANA,,,付近,ふきん,,fukin,okolica,,,
 6924,WORD_NOUN,,HIRAGANA,,,近道,ちかみち,,chikamichi,skrót,,,
 6925,WORD_VERB_U,,HIRAGANA,,,写る,うつる,,utsuru,"być fotografowanym
@@ -13613,7 +13647,8 @@ być wyświetlanym",,,
 6926,WORD_NOUN,,HIRAGANA,,,写真屋,しゃしんや,,shashin'ya,fotograf,,,
 6927,WORD_NOUN,,HIRAGANA,,,写実主義,しゃじつしゅぎ,,shajitsushugi,realizm,,,
 6928,WORD_NOUN,,HIRAGANA,,,写本,しゃほん,,shahon,manuskrypt,,,
-6929,WORD_NOUN,,HIRAGANA,,,往復,おうふく,,oufuku,podróż w obie strony,,,
+6929,WORD_NOUN,,HIRAGANA,,,往復,おうふく,,oufuku,"podróż w obie strony
+droga w obie strony",,,
 6930,WORD_NOUN,,HIRAGANA,,,往年,おうねん,,ounen,"przeszłość
 minione lata",,,
 6931,WORD_NOUN,,HIRAGANA,,,往生,おうじょう,,oujou,"śmierć
@@ -14232,7 +14267,8 @@ wpływać",,,"369
 7253,WORD_NOUN,,HIRAGANA,,,入学,にゅうがく,,nyuugaku,"rozpoczęcie szkoły
 wstąpienie na uniwersytet",,,
 7254,WORD_NOUN,,HIRAGANA,,,入会,にゅうかい,,nyuukai,wstąpienie,"np. do klubu, zrzeszenia",,
-7255,WORD_NOUN,,HIRAGANA,,,入国,にゅうこく,,nyuukoku,wjazd,"do kraju, obcego państwa",,
+7255,WORD_NOUN,,HIRAGANA,,,入国,にゅうこく,,nyuukoku,"wjazd
+przyjazd","do kraju, obcego państwa",,
 7256,WORD_NOUN,,HIRAGANA,,,地,ち,,chi,"ziemia
 obszar
 region
@@ -14865,13 +14901,17 @@ brać do niewoli",,,
 7582,WORD_NOUN,,HIRAGANA,,,検討,けんとう,,kentou,"egzamin
 dochodzenie
 studiowanie",,,
-7583,UNKNOWN,,HIRAGANA,,,名,めい,,mei,"imię
-wyjątkowy
+7583,UNKNOWN,PREFIX,HIRAGANA,,,名,めい,,mei,"wyjątkowy
 wyróżniający się
-mądry",,,7584
+mądry
+wybitny
+sławny
+głośny",,,"7584
+10899"
 7584,WORD_NOUN,,HIRAGANA,,,名,な,,na,"imię
 sława
-reputacja",,,7583
+reputacja",,,"7583
+10899"
 7585,WORD_NOUN,,HIRAGANA,,,名札,なふだ,,nafuda,tabliczka z nazwiskiem,,,
 7586,WORD_NOUN,,HIRAGANA,,,表,ひょう,,hyou,"tablica
 wykaz
@@ -21540,7 +21580,9 @@ przypadkowy
 bezpodstawny
 bezsensowna (odpowiedź)",,,
 10801,WORD_ADVERB,,HIRAGANA,,,-,どう,,dou,"jak
-jaki",,,"6573
+jaki
+co z
+jak z",,,"6573
 7599
 8133"
 10802,WORD_NOUN,,HIRAGANA,,,博士,はくし,,hakushi,doktor,tytuł naukowy,,2690
@@ -21746,3 +21788,63 @@ grać",na scenie,,
 10891,UNKNOWN,,HIRAGANA,,,-,とって,,totte,"dla
 wobec",zawsze używany w wyrażeniu ni totte,,
 10892,UNKNOWN,,HIRAGANA,,,足,そく,,soku,"[klasyfikator do liczenia butów, skarpetek, nóg, stóp]",,,541
+10893,WORD_NOUN,,KATAKANA,,,-,アイスクリーム,,aisukuriimu,lody,,,
+10894,WORD_VERB_IRREGULAR,,HIRAGANA,,,合図する,あいずする,,aizu suru,sygnalizować,,,
+10895,WORD_NOUN,,HIRAGANA,,,名人,めいじん,,meijin,mistrz,,,
+10896,WORD_NOUN,,HIRAGANA,,,名演奏家,めいえんそうか,,meiensouka,"wirtuoz
+słynny muzyk",,,
+10897,WORD_NOUN,,HIRAGANA,,,名画,めいが,,meiga,słynny obraz,,,
+10898,WORD_NOUN,,HIRAGANA,,,名案,めいあん ,,meian,wspaniały pomysł,projektu,,
+10899,UNKNOWN,SUFFIX,HIRAGANA,,,名,めい,,mei,"nazwa
+[klasyfikator do liczenia osób]",,,"7583
+7584"
+10900,WORD_NOUN,,HIRAGANA,,,学校名,がっこうめい,,gakkoumei,nazwa szkoły,,,
+10901,WORD_NOUN,,HIRAGANA,,,会社名,かいしゃめい,,kaishamei,nazwa firmy,,,
+10902,WORD_NOUN,,HIRAGANA,,,名簿,めいぼ,,meibo,"lista (osób)
+rejestr",,,
+10903,WORD_NOUN,,HIRAGANA,,,明治,めいじ ,,meiji,Meiji,"nazwa ery w historii Japonia, 1868 - 1912",,
+10904,WORD_VERB_IRREGULAR,,HIRAGANA,,,命令する,めいれいする,,meirei suru,wydać rozkaz,,,
+10905,WORD_VERB_IRREGULAR,,HIRAGANA,,,往復する,おうふくする,,oufuku suru,jechać tam i z powrotem,,,
+10906,WORD_NOUN,,HIRAGANA,,,往復切符,おうふくきっぷ ,,oufuku kippu,bilet powrotny,w obie strony,,
+10907,WORD_NOUN,,HIRAGANA,,,往復葉書,おうふくはがき ,,oufuku hagaki,zwrotna karta pocztowa,odsyłana bezpłatnie do nadawcy,,
+10908,WORD_NOUN,,HIRAGANA,,,電報,でんぽう ,,denpou,"telegram
+depesza",,,
+10909,WORD_NOUN,,HIRAGANA,,,伝染,でんせん,,densen,"infekcja
+zaraza
+epidemia",,,
+10910,WORD_VERB_IRREGULAR,,HIRAGANA,,,伝染する,でんせんする,,densen suru,"być zaraźliwym
+szerzyć się",,,
+10911,UNKNOWN,SUFFIX,HIRAGANA,,,費,ひ ,,hi,"koszty
+wydatki",,,
+10912,WORD_NOUN,,HIRAGANA,,,交通費,こうつうひ ,,koutsuuhi,wydatki na komunikację,,,
+10913,WORD_NOUN,,HIRAGANA,,,会費,かいひ,,kaihi,składki,członkowskie,,
+10914,WORD_NOUN,,HIRAGANA,,,大会社,だいがいしゃ,,daigaisha,wielka firma,,,
+10915,WORD_NOUN,,HIRAGANA,,,大企業,だいきぎょう ,,daikigyou,wielkie przedsiębiorstwo,,,
+10916,WORD_NOUN,,HIRAGANA,,,大事件,だいじけん ,,daijiken,poważny wypadek,,,
+10917,WORD_NOUN,,HIRAGANA,,,大劇場,だいげきじょう,,daigekijou,teatr wielki,,,
+10918,WORD_NOUN,,HIRAGANA,,,大音楽家,だいおんがっか,,daiongakka,wielki muzyk,,,
+10919,WORD_NOUN,,HIRAGANA,,,大学者,だいがくしゃ,,daigakusha,wielki uczony,,,
+10920,WORD_NOUN,,HIRAGANA,,,大人物,だいじんぶつ,,daijinbutsu,"wielki człowiek
+wybitna postać",,,
+10921,WORD_NOUN,,HIRAGANA,,,大成功,だいせいこう,,daiseikou,wielki sukces,,,
+10922,WORD_NOUN,,HIRAGANA,,,大賛成,だいさんせい,,daisansei,"w pełni popierać
+całkowicie się zgadzać",,,
+10923,WORD_NOUN,,HIRAGANA,,,篭,かご,,kago,"koszyk
+klatka",,,
+10924,WORD_NOUN,,HIRAGANA,,,籠,かご,,kago,"koszyk
+klatka",,,
+10925,WORD_NOUN,,HIRAGANA,,,二階建ての家,にかいだてのいえ,,nikaidate no ie,piętrowy dom,,,
+10926,WORD_VERB_IRREGULAR,,HIRAGANA,,,信用する,しんようする,,shin'you suru,"ufać
+mieć zaufanie",,,
+10927,WORD_VERB_IRREGULAR,,HIRAGANA,,,禁煙する,きんえんする,,kin'en suru,"przestać palić
+powstrzymywać się od palenia",,,
+10928,WORD_VERB_IRREGULAR,,HIRAGANA,,,記念する,きねんする,,kinen suru,uczcić pamięć,,,
+10929,WORD_NOUN,,HIRAGANA,,,奇数,きすう,,kisuu,liczba nieparzysta,,,
+10930,UNKNOWN,SUFFIX,HIRAGANA,,,入,にゅう,,nyuu,oznacza wchodzenie,,,
+10931,WORD_NOUN,,HIRAGANA,,,入港,にゅうこう,,nyuukou,wpłynięcie do portu,,,
+10932,WORD_VERB_IRREGULAR,,HIRAGANA,,,入学する,にゅうがくする,,nyuugaku suru,"wstępować na uczelnię
+wstępować do szkoły",,,
+10933,WORD_NOUN,,HIRAGANA,,,入学式,にゅうがくしき ,,nyuugaku shiki,"uroczystość przyjęcia nowych uczniów
+uroczystość przyjęcia nowych studentów",,,
+10934,WORD_NOUN,,HIRAGANA,,,入学願書,にゅうがくがんしょ ,,nyuugaku gansho,"podanie o przyjęcie na uczelnie
+podanie o przyjęcie do szkoły",,,
