@@ -99,7 +99,10 @@ bardzo miło mi",,,
 Genki dodatkowe 2-19",,どうぞよろしくお願いします,どうぞよろしくおねがいします,,douzo yoroshiku onegai shimasu,"miło Cię spotkać
 bardzo miło mi",kierowane do osoby wyżej postawionej,,
 66,UNKNOWN,,HIRAGANA,"Genki 1-1
-Genki kanji 1-5",,今,いま,,ima,teraz,,,
+Genki kanji 1-5",,今,いま,,ima,"teraz
+obecnie
+zaraz
+dopiero co",,,
 67,UNKNOWN,,HIRAGANA,Genki 1-1,,半,はん,,han,"połowa
 pół
 nieparzysty numer",,,
@@ -998,7 +1001,9 @@ instruować
 kształcić","kogoś, osoba ni rzecz",,
 487,WORD_VERB_RU,,HIRAGANA,Genki 1-6,を,降りる,おりる,o,oriru,"wysiadać
 schodzić
-zstępować",,,
+zstępować
+zsiadać
+opuszczać",,,
 488,WORD_VERB_RU,,HIRAGANA,"Genki 1-6
 Genki kanji 2-15",を,借りる,かりる,o,kariru,pożyczać,"od kogoś, osoba ni rzecz",,
 489,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,"Genki 1-6
@@ -1848,7 +1853,9 @@ pełny (księżyc)",,,
 Genki dodatkowe 2-16
 Genki 2-17",,例えば,たとえば,,tatoeba,"na przykład
 np.",,,
-877,UNKNOWN,,HIRAGANA,Genki 1-11,,外に,ほかに,,hokani,coś innego,,,
+877,UNKNOWN,,HIRAGANA,Genki 1-11,,外に,ほかに,,hoka ni,"inny
+z wyjątkiem
+oprócz",,,
 878,WORD_EXPRESSION,,HIRAGANA,"Genki 1-11
 Genki 2-15",,番,ばん,,ban,numer,~,,
 879,UNKNOWN,,HIRAGANA,Genki 1-11,,行目,ぎょうめ,,gyoume,numer linii,~,,
@@ -2135,7 +2142,7 @@ Genki kanji 2-23",,感動する,かんどうする,,kandou suru,"wzruszać się
 być poruszony",przez ~ ni,,
 1006,WORD_EXPRESSION,,HIRAGANA,Genki 2-13,,-,いらっしゃいます,,irasshaimasu,czy ktoś jest obecny / w domu,uprzejmie,,
 1007,WORD_EXPRESSION,SUFFIX,HIRAGANA,Genki 2-13,,回,かい,,kai,razy,~,,
-1008,WORD_EXPRESSION,,KATAKANA,Genki 2-13,,-,キロ,,kiro,kilo,"~ , np. kilometry, kilogramy",,
+1008,WORD_EXPRESSION,SUFFIX,KATAKANA,Genki 2-13,,-,キロ,,kiro,kilo,"~ , np. kilometry, kilogramy",,
 1009,WORD_EXPRESSION,,HIRAGANA,Genki 2-13,,実は,じつは,,jitsuha,"w istocie
 faktycznie",,,
 1010,WORD_EXPRESSION,,HIRAGANA,"Genki 2-13
@@ -2237,7 +2244,9 @@ port lotniczy",,,
 1051,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-13,,-,スーツケース,,suutsu keesu,bagaż,,,
 1052,UNKNOWN,,HIRAGANA,"Genki dodatkowe 2-13
 Genki 2-14
-Genki kanji 2-13",,同じ,おなじ,,onaji,taki sam,,,
+Genki kanji 2-13",,同じ,おなじ,,onaji,"taki sam
+identyczny
+jednakowy",,,
 1053,WORD_VERB_RU,,HIRAGANA,"Genki dodatkowe 2-13
 Genki kanji 2-16
 Genki 2-18",を,考える,かんがえる,o,kangaeru,"myśleć o
@@ -2334,7 +2343,8 @@ Klasyfikatory",,枚,まい,,mai,[liczenie płaskich przedmiotów],~,,
 1108,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,何個,なんこ,,nanko,jak wiele,małe przedmioty,,
 1109,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,幾つ,いくつ,,ikutsu,"ile
 jak dużo
-jak wiele",małe przedmioty,,
+jak wiele
+ile (lat)",małe przedmioty i wiek,,
 1110,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,一冊,いっさつ,,issatsu,jeden,wolumeny,,
 1111,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,二冊,にさつ,,nisatsu,dwa,wolumeny,,
 1112,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,三冊,さんさつ,,sansatsu,trzy,wolumeny,,
@@ -2479,7 +2489,8 @@ obszerny
 przestrzenny",,,
 1198,WORD_VERB_U,,HIRAGANA,"Genki 2-15
 Genki kanji 1-10",,売る,うる,,uru,sprzedawać,,,
-1199,WORD_VERB_U,,HIRAGANA,Genki 2-15,,下ろす,おろす,,orosu,podjąć,pieniądze,,1252
+1199,WORD_VERB_U,,HIRAGANA,Genki 2-15,,下ろす,おろす,,orosu,"podjąć
+podejmować","pieniądze, oszczędności",,1252
 1200,WORD_VERB_U,,HIRAGANA,Genki 2-15,,描く,かく,,kaku,"rysować
 malować",,,4459
 1201,WORD_VERB_U,,HIRAGANA,Genki 2-15,,探す,さがす,,sagasu,szukać,,,
@@ -3176,7 +3187,8 @@ fajerwerki",,,
 1545,WORD_NOUN,,HIRAGANA,,,虹,にじ,,niji,tęcza,,,
 1546,UNKNOWN,,HIRAGANA,,,虹色,にじいろ,,niji iro,kolor tęczowy,,,
 1547,WORD_NOUN,,KATAKANA,,,-,ポーランド,,poorando,Polska,,,5908
-1548,WORD_NOUN,,HIRAGANA,,,卵,たまご,,tamago,jajko,,,
+1548,WORD_NOUN,,HIRAGANA,,,卵,たまご,,tamago,"jajko
+jajo",,,
 1549,WORD_NOUN,,HIRAGANA,Genki 2-22,,後輩,こうはい,,kouhai,młodszy wiekiem lub stażem członek grupy,,,
 1550,WORD_NOUN,,HIRAGANA,,,同輩,どうはい,,douhai,równy wiekiem lub stażem członek grupy,,,
 1551,WORD_NOUN,,KATAKANA,,,-,コンテスト,,kontesuto,konkurs,,,
@@ -4199,7 +4211,8 @@ działać",,,
 2139,WORD_NOUN,,HIRAGANA,"Genki kanji 2-16
 Genki dodatkowe 2-16",,教室,きょうしつ,,kyoushitsu,"sala
 klasa","szkolna, wykładowa",,
-2140,WORD_NOUN,,HIRAGANA_KATAKANA,Genki kanji 2-16,,キリスト教,キリストきょう,,kirisuto kyou,chrześcijaństwo,,,
+2140,WORD_NOUN,,HIRAGANA_KATAKANA,Genki kanji 2-16,,キリスト教,キリストきょう,,kirisuto kyou,"chrześcijaństwo
+religia chrześcijańska",,,
 2141,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,研究室,けんきゅうしつ,,kenkyuushitsu,"gabinet profesora
 laboratorium
 pracownia",,,
@@ -5080,7 +5093,8 @@ rzecz do wykonania",,,
 ksylofon",,,
 2600,WORD_NOUN,,KATAKANA,,,-,インストラクション,,insutorakushon,instrukcja,,,
 2601,WORD_NOUN,,KATAKANA,,,-,ベトナム,,betonamu,Wietnam,,,
-2602,WORD_NOUN,,KATAKANA,,,-,レコード,,rekoodo,"rekord
+2602,WORD_NOUN,,KATAKANA,,,-,レコード,,rekoodo,"płyta gramofonowa
+rekord
 nagranie",,,
 2603,WORD_NOUN,,KATAKANA,,,-,スキャンダル,,sukyandaru,skandal,,,
 2604,WORD_NOUN,,KATAKANA,,,-,メンバー,,menbaa,członek,,,
@@ -6004,7 +6018,8 @@ wezwanie",,,
 3057,WORD_NOUN,,HIRAGANA,,,招集,しょうしゅう,,shoushuu,zaproszenie dla grupy ludzi,,,
 3058,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,折る,おる,,oru,"łamać
 zginać
-skręcać",,,3963
+skręcać
+składać",,,3963
 3059,WORD_NOUN,,HIRAGANA,,,骨折,こっせつ,,kossetsu,złamanie kości,,,
 3060,WORD_NOUN,,HIRAGANA,,,折半,せっぱん,,seppan,dzielić na połowy,,,
 3061,WORD_NOUN,,HIRAGANA,,,曲折,きょくせつ,,kyokusetsu,komplikacje,,,
@@ -6464,7 +6479,9 @@ dostanie pracy",,,
 3309,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,終わり,おわり,,owari,koniec,,,
 3310,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,最終,さいしゅう,,saishuu,ostatni ~ ...,"np. pociąg, autobus i etc",,
 3311,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,下宿,げしゅく,,geshuku,"stancja
-pensjonat",,,
+pensjonat
+pokój
+mieszkanie",do wynajęcia,,
 3312,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,宿泊,しゅくはく,,shukuhaku,nocleg,,,
 3313,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,宿,やど,,yado,"kwatera
 zajazd
@@ -7400,8 +7417,8 @@ trud",,,
 prawdopodobieństwo",,,
 3799,WORD_NOUN,,HIRAGANA,,,不可分,ふかぶん,,fukabun,niepodzielny,,,
 3800,WORD_VERB_U,,HIRAGANA,,,降ろす,おろす,,orosu,"zdejmować
-obniżać
-spuszczać",,,
+wysadzać
+wyładować",,,
 3801,WORD_NOUN,,HIRAGANA,,,首,こうべ,,koube,głowa,,,533
 3802,WORD_NOUN,,HIRAGANA,,,首輪,くびわ,,kubiwa,"naszyjnik
 kołnierzyk
@@ -7760,7 +7777,9 @@ lina
 kabel",,,
 3997,WORD_NOUN,,HIRAGANA,,,丈,たけ,,take,"wzrost
 miara
-długość",,,
+długość
+wysokość
+kaliber",,,
 3998,WORD_ADVERB,,HIRAGANA,,,若し,もし,,moshi,"jeśli
 w przypadku",,,
 3999,UNKNOWN,,HIRAGANA,,,若しくは,もしくは,,moshikuha,"lub
@@ -8071,7 +8090,8 @@ dojrzały
 elegancja
 wdzięk",,,4151
 4154,WORD_NOUN,,HIRAGANA,,,弾,たま,,tama,"piłka
-kula",,,
+kula
+pocisk",,,
 4155,WORD_VERB_U,,HIRAGANA,,,弾む,はずむ,,hazumu,"sprężynować
 odbijać się",,,
 4156,WORD_VERB_U,,HIRAGANA,,,散らかす,ちらかす,,chirakasu,"rozrzucać
@@ -8172,7 +8192,7 @@ wymiana (kulturowa)",,,
 krążyć
 cyrkulować",,,
 4213,WORD_NOUN,,HIRAGANA,,,段階,だんかい,,dankai,faza,,,
-4214,UNKNOWN,,HIRAGANA,,,七階,ななかい,,nanakai,siódme piętro,,,
+4214,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,七階,ななかい,,nanakai,siedem,numer piętra,,
 4215,WORD_NOUN,,HIRAGANA,,,階級,かいきゅう,,kaikyuu,"klasa
 ranga
 stopień",,,
@@ -8207,8 +8227,8 @@ zamieniać",,,
 4230,WORD_VERB_IRREGULAR,,HIRAGANA,,,取って来る,とってくる,,totte kuru,"przynosić
 przywieść
 sprowadzić",,,
-4231,WORD_COUNTERS,,HIRAGANA,,,畳,じょう,,jou,"zwijać
-przyrostek stosowany do liczenia mat",,,4232
+4231,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,畳,じょう,,jou,"zwijać
+klasyfikator stosowany do liczenia mat",,,4232
 4232,WORD_NOUN,,HIRAGANA,,,畳,たたみ,,tatami,mata,słomiana,,4231
 4233,WORD_VERB_U,,HIRAGANA,,,畳む,たたむ,,tatamu,"zwijać
 zamykać",,,
@@ -8775,7 +8795,7 @@ ubywać",liczebnie,,
 ograniczać",,,
 4506,WORD_NOUN,,HIRAGANA,,,減少,げんしょう,,genshou,"redukcja
 ograniczanie
-zmniejszanie",,,
+zmniejszanie się",,,
 4507,WORD_NOUN,,HIRAGANA,,,半減,はんげん,,hangen,zmniejszać o połowę,,,
 4508,WORD_NOUN,,HIRAGANA,,,減法,げんぽう,,genpou,odejmowanie,,,
 4509,WORD_NOUN,,HIRAGANA,,,減刑,げんけい,,genkei,redukowanie kary,,,
@@ -10612,7 +10632,8 @@ soczewka
 kropla
 klejnot
 biżuteria",,,
-5394,WORD_NOUN,,HIRAGANA,,,玉子,たまご,,tamago,jajko,,,
+5394,WORD_NOUN,,HIRAGANA,,,玉子,たまご,,tamago,"jajko
+jajo",,,
 5395,WORD_NOUN,,HIRAGANA,,,玉石,ぎょくせき,,gyokuseki,dobry i zły,,,
 5396,WORD_NOUN,,HIRAGANA,,,水玉,みずたま,,mizutama,kropelka wody,,,
 5397,WORD_NOUN,,HIRAGANA,,,百円玉,ひゃくえんだま,,hyakuendama,moneta stujenowa,,,
@@ -10705,7 +10726,7 @@ posąg Buddy",,,
 5444,WORD_NOUN,,HIRAGANA,,,仏壇,ぶつだん,,butsudan,domowy ołtarzyk buddyjski,,,
 5445,WORD_NOUN,,HIRAGANA,,,仏僧,ぶっそう,,bussou,buddyjski kapłan,,,
 5446,WORD_NOUN,,HIRAGANA,,,仏文,ふつぶん,,futsubun,literatura francuska,,,
-5447,WORD_COUNTERS,,HIRAGANA,,,位,い,,i,"ranga
+5447,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,位,い,,i,"ranga
 pozycja",,,
 5448,WORD_NOUN,,HIRAGANA,,,地位,ちい,,chii,pozycja,,,
 5449,WORD_NOUN,,HIRAGANA,,,学位,がくい,,gakui,wykształcenie,,,
@@ -11761,7 +11782,7 @@ nagrywanie",sufiks,,
 5963,WORD_NOUN,,HIRAGANA,,,記録,きろく,,kiroku,"protokół
 zapis
 kronika
-rekord
+rekord (sportowy)
 dokument",,,
 5964,WORD_NOUN,,HIRAGANA,,,目録,もくろく,,mokuroku,"katalog
 lista
@@ -12763,9 +12784,14 @@ przyjęcie do szpitala",,,
 6429,WORD_NOUN,,HIRAGANA,,,洪水,こうずい,,kouzui,"powódź
 zalanie",,,
 6430,WORD_VERB_U,,HIRAGANA,,,届く,とどく,,todoku,"przybywać
-docierać",,,
-6431,WORD_VERB_RU,,HIRAGANA,,,届ける,とどける,,todokeru,"zgłaszać
+docierać
+dosięgnąć",,,
+6431,WORD_VERB_RU,,HIRAGANA,,,届ける,とどける,,todokeru,"dostarczać
+wręczać
+zgłaszać
 powiadamiać
+posłać
+przesłać
 przesyłać
 przekazywać",,,
 6432,WORD_NOUN,,HIRAGANA,,,届け先,とどけさき,,todokesaki,"adres
@@ -15815,8 +15841,10 @@ poczęcie",,,
 zakończyć
 zrealizować
 skutek",,,
-8014,WORD_ADVERB,,HIRAGANA,,,遂に,ついに,,tsuini,"ostatecznie
-w końcu",,,
+8014,WORD_ADVERB,,HIRAGANA,,,遂に,ついに,,tsuini,"w końcu
+ostatecznie
+wreszcie
+na końcu",,,
 8015,WORD_VERB_RU,,HIRAGANA,,,傾ける,かたむける,,katamukeru,"skłaniać
 naginać",,,
 8016,WORD_VERB_U,,HIRAGANA,,,傾く,かたむく,,katamuku,"skłaniać się
@@ -16581,7 +16609,7 @@ uczucie
 miłość",,,
 8305,WORD_NOUN,,HIRAGANA,,,双,そう,,sou,"para
 komplet",,,8306
-8306,WORD_COUNTERS,,HIRAGANA,,,双,そう,,sou,przyrostek używany do liczenia par,,,8305
+8306,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,双,そう,,sou,przyrostek używany do liczenia par,,,8305
 8307,WORD_VERB_U,,HIRAGANA,,,奪う,うばう,,ubau,"zabierać
 brać przemocą
 wykradać
@@ -16865,7 +16893,8 @@ woń",,,
 8428,WORD_NOUN,,HIRAGANA,,,吏,り,,ri,urzędnik,,,
 8429,WORD_NOUN,,KATAKANA,,,-,ジャッカル,,jakkaru,szakal,,,
 8430,WORD_NOUN,,HIRAGANA,,,副詞,ふくし,,fukushi,przysłówek,,,
-8431,WORD_NOUN,,HIRAGANA,,,呼吸,こきゅう,,kokyuu,oddychanie,,,
+8431,WORD_NOUN,,HIRAGANA,,,呼吸,こきゅう,,kokyuu,"oddech
+oddychanie",,,
 8432,WORD_ADJECTIVE_NA,,HIRAGANA,,,烈烈,れつれつ,,retsuretsu,"dziki
 okrutny",,,
 8433,WORD_NOUN,,HIRAGANA,,,漏れ,もれ,,more,"przeciekać
@@ -17903,7 +17932,7 @@ być skaleczonym
 skończyć się
 wygasać
 upływać
-tracić ważność",,,
+tracić ważność",,,10947
 9134,WORD_VERB_U,,HIRAGANA,,,究まる,きわまる,,kiwamaru,być opanowanym,,,
 9135,WORD_VERB_U,,HIRAGANA,,,降す,くだす ,,kudasu,obniżać,,,
 9136,WORD_VERB_U,,HIRAGANA,,,降る,くだる ,,kudaru,"schodzić
@@ -18164,6 +18193,7 @@ pokrycie
 czapka
 nakrywka
 pokrywka
+pokrywa
 wieczko
 wieko",,,9239
 9239,WORD_NOUN,,HIRAGANA,,,蓋,がい ,,gai,"okrycie
@@ -21388,7 +21418,10 @@ kategoryzacja",,,
 wnioskowanie",,,
 10727,WORD_NOUN,,HIRAGANA,,,土地,とち ,,tochi,"ląd
 działka
-ziemia",,,
+ziemia
+kawałek ziemi
+grunt
+teren",,,
 10728,WORD_NOUN,,HIRAGANA,,,崩壊,ほうかい ,,houkai,"zawalenie
 upadek
 zapaść
@@ -21674,16 +21707,16 @@ stół
 platforma",,,1093
 10839,WORD_NOUN,,HIRAGANA,,,大部分,だいぶぶん,,daibubun,"większość
 większa część",,,
-10840,WORD_COUNTERS,,HIRAGANA,,,一段,いちだん ,,ichidan,jeden,"klasyfikator do liczenia stopni, rang i poziomów",,
-10841,WORD_COUNTERS,,HIRAGANA,,,二段,にだん,,nidan,dwa,"klasyfikator do liczenia stopni, rang i poziomów",,
-10842,WORD_COUNTERS,,HIRAGANA,,,三段,さんだん,,sandan,trzy,"klasyfikator do liczenia stopni, rang i poziomów",,
-10843,WORD_COUNTERS,,HIRAGANA,,,四段,よだん,,yodan,cztery,"klasyfikator do liczenia stopni, rang i poziomów",,
-10844,WORD_COUNTERS,,HIRAGANA,,,五段,ごだん,,godan,pięć,"klasyfikator do liczenia stopni, rang i poziomów",,
-10845,WORD_COUNTERS,,HIRAGANA,,,六段,ろくだん,,rokudan,sześć,"klasyfikator do liczenia stopni, rang i poziomów",,
-10846,WORD_COUNTERS,,HIRAGANA,,,七段,しちだん,,shichidan,siedem,"klasyfikator do liczenia stopni, rang i poziomów",,
-10847,WORD_COUNTERS,,HIRAGANA,,,八段,はったん,,hattan,osiem,"klasyfikator do liczenia stopni, rang i poziomów",,
-10848,WORD_COUNTERS,,HIRAGANA,,,九段,くだん ,,kudan,dziewięć,"klasyfikator do liczenia stopni, rang i poziomów",,
-10849,WORD_COUNTERS,,HIRAGANA,,,十段,じゅうだん,,juudan,dziesięć,"klasyfikator do liczenia stopni, rang i poziomów",,
+10840,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,一段,いちだん ,,ichidan,jeden,"klasyfikator do liczenia stopni, rang i poziomów",,
+10841,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,二段,にだん,,nidan,dwa,"klasyfikator do liczenia stopni, rang i poziomów",,
+10842,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,三段,さんだん,,sandan,trzy,"klasyfikator do liczenia stopni, rang i poziomów",,
+10843,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,四段,よだん,,yodan,cztery,"klasyfikator do liczenia stopni, rang i poziomów",,
+10844,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,五段,ごだん,,godan,pięć,"klasyfikator do liczenia stopni, rang i poziomów",,
+10845,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,六段,ろくだん,,rokudan,sześć,"klasyfikator do liczenia stopni, rang i poziomów",,
+10846,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,七段,しちだん,,shichidan,siedem,"klasyfikator do liczenia stopni, rang i poziomów",,
+10847,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,八段,はったん,,hattan,osiem,"klasyfikator do liczenia stopni, rang i poziomów",,
+10848,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,九段,くだん ,,kudan,dziewięć,"klasyfikator do liczenia stopni, rang i poziomów",,
+10849,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,十段,じゅうだん,,juudan,dziesięć,"klasyfikator do liczenia stopni, rang i poziomów",,
 10850,WORD_NOUN,,HIRAGANA,,,為替,かわせ,,kawase,"przekaz (pieniędzy)
 kurs
 wymiana (waluty)",,,
@@ -21848,3 +21881,87 @@ wstępować do szkoły",,,
 uroczystość przyjęcia nowych studentów",,,
 10934,WORD_NOUN,,HIRAGANA,,,入学願書,にゅうがくがんしょ ,,nyuugaku gansho,"podanie o przyjęcie na uczelnie
 podanie o przyjęcie do szkoły",,,
+10935,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,一階,いっかい,,ikkai,jeden,numer piętra,,
+10936,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,二階,にかい,,nikai,dwa,numer piętra,,
+10937,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,三階,さんかい,,sankai,trzy,numer piętra,,10938
+10938,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,三階,さんがい,,sangai,trzy,numer piętra,,10937
+10939,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,四階,よんかい,,yonkai,cztery,numer piętra,,
+10940,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,五階,ごかい,,gokai,pięć,numer piętra,,
+10941,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,六階,ろっかい,,rokkai,sześć,numer piętra,,
+10942,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,八階,はちかい,,hachikai,osiem,numer piętra,,
+10943,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,九階,きゅうかい,,kyuukai,dziewięć,numer piętra,,
+10944,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,十階,じゅっかい,,jukkai,dziesięć,numer piętra,,
+10945,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,何階,なんかい,,nankai,który,numer piętra,,
+10946,WORD_VERB_IRREGULAR,,HIRAGANA,,,不足する,ふそくする,,fusoku suru,"nie starczać
+brakować",,,
+10947,WORD_VERB_RU,SUFFIX,HIRAGANA,,,-,きれる ,,kireru,"znosić (coś do końca)
+móc wytrzymać
+dawać radę","kireru oznacza niemożliwość, jeśli czasownik występuje w formie przeczącej",,9133
+10948,WORD_VERB_IRREGULAR,,HIRAGANA,,,記録する,きろくする,,kiroku suru,zapisać,,,
+10949,WORD_NOUN,,HIRAGANA,,,国立,こくりつ,,kokuritsu,"narodowy
+państwowy",,,
+10950,WORD_VERB_IRREGULAR,,HIRAGANA,,,呼吸する,こきゅうする,,kokyuu suru,oddychać,,,
+10951,WORD_NOUN,,HIRAGANA,,,恋愛,れんあい,,ren'ai,miłość,,,
+10952,WORD_VERB_IRREGULAR,,HIRAGANA,,,恋愛する,れんあいする,,ren'ai suru,kochać,,,
+10953,WORD_VERB_U,,HIRAGANA,,,注す,さす,,sasu,"napełnić
+wypełnić
+umieścić
+rozpiąć (parasol)
+rozłożyć (parasol)",,,
+10954,WORD_ADVERB,,HIRAGANA,,,流石,さすが,,sasuga,"ostatecznie
+przecież
+mimo wszystko
+jak można się było spodziewać","~ ni, ~ no",,
+10955,WORD_NOUN,,HIRAGANA,,,高さ,たかさ,,takasa,"wysokość
+wzrost
+drożyzna
+wysokie ceny",,,
+10956,WORD_NOUN,,HIRAGANA,,,筍,たけのこ,,takenoko,"pędy bambusowe
+kiełki bambusowe",,,
+10957,WORD_NOUN,,HIRAGANA,,,竹の子,たけのこ,,takenoko,"pędy bambusowe
+kiełki bambusowe",,,
+10958,WORD_NOUN,,HIRAGANA,,,竹薮,たけやぶ,,takeyabu,zarośla bambusowe,,,
+10959,WORD_NOUN,,HIRAGANA,,,竹藪,たけやぶ,,takeyabu,zarośla bambusowe,,,
+10960,WORD_NOUN,,HIRAGANA,,,竹やぶ,たけやぶ,,takeyabu,zarośla bambusowe,,,
+10961,WORD_NOUN,,HIRAGANA,,,竹細工,たけざいく,,takezaiku,wyroby z bambusu,,,
+10962,WORD_NOUN,,HIRAGANA,,,竹籠,たけかご,,takekago,koszyk zrobiony z bambusu,,,
+10963,WORD_NOUN,,HIRAGANA,,,竹かご,たけかご,,takekago,koszyk zrobiony z bambusu,,,
+10964,WORD_NOUN,,HIRAGANA,,,竹で編んだざる,たけであんだざる,,take de anda zaru,sitko uplecione z bambusa,,,
+10965,WORD_NOUN,,HIRAGANA,,,卵焼き,たまごやき ,,tama goyaki,omlet,,,
+10966,WORD_NOUN,,HIRAGANA,,,ゆで卵,ゆでたまご,,yude tamago,jajko gotowane,,,
+10967,WORD_NOUN,,HIRAGANA,,,茹で卵,ゆでたまご,,yude tamago,jajko gotowane,,,
+10968,WORD_NOUN,,HIRAGANA,,,半熟卵,はんじゅくたまご,,hanjuku tamago,jajko na miękko,,,
+10969,WORD_VERB_U,,HIRAGANA,,,卵を産む,たまごをうむ,,tamago o umu,"złożyć jajko
+znieść jajko",,,
+10970,WORD_VERB_U,,HIRAGANA,,,卵がかえる,たまごがかえる,,tamago ga kaeru,pisklęta wylęgają się z jajek,,,
+10971,WORD_ADVERB,,HIRAGANA,,,-,たまに,,tama ni,"rzadko
+od czasu do czasu",,,
+10972,WORD_ADVERB,,HIRAGANA,,,序でに,ついでに,,tsuide ni,"przy okazji
+po drodze
+kiedy
+wtedy
+gdy",,,
+10973,WORD_ADVERB,,HIRAGANA,,,序に,ついでに,,tsuide ni,"przy okazji
+po drodze
+kiedy
+wtedy
+gdy",,,
+10974,WORD_ADVERB,,HIRAGANA,,,竟に,ついに,,tsuini,"w końcu
+ostatecznie
+wreszcie
+na końcu",,,
+10975,WORD_ADVERB,,HIRAGANA,,,終に,ついに,,tsuini,"w końcu
+ostatecznie
+wreszcie
+na końcu",,,
+10976,WORD_NOUN,,HIRAGANA,,,原料,げんりょう ,,genryou,"surowce
+materiały",,,
+10977,WORD_VERB_IRREGULAR,,HIRAGANA,,,減少する,げんしょうする,,genshou suru,"zmniejszyć się
+maleć",,,
+10978,WORD_NOUN,,HIRAGANA,,,現在,げんざい ,,genzai,"teraźniejszość
+obecnie
+współcześnie",,,
+10979,WORD_NOUN,,HIRAGANA,,,途中,とちゅう,,tochuu,"po drodze
+w środku drogi
+podczas drogi
+w pół drogi",,,
