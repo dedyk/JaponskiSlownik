@@ -155,7 +155,8 @@ Genki kanji 1-9",,名前,なまえ,,namae,imię,,,
 Genki kanji 1-8",,何,"なん
 なに",,"nan
 nani","co
-ile",,,
+ile
+jak wiele",,,
 88,WORD_NOUN,,HIRAGANA,"Genki 1-1
 Genki kanji 1-4",,日本,にほん,,nihon,Japonia,,,
 89,UNKNOWN,,HIRAGANA,Genki 1-1,,年生,ねんせい,,nensei,... student roku,,,
@@ -770,8 +771,11 @@ po sąsiedzku
 przyległy",,,
 387,WORD_LOCATION,,HIRAGANA,"Genki 1-4
 Genki kanji 1-9",,間,あいだ,,aida,"pomiędzy
+między
 przerwa
-przestrzeń",,,6753
+przestrzeń
+odstęp
+związki","fizyczna, określony przedział czasu, stosunki, związki",,6753
 388,WORD_NOUN,,HIRAGANA,Genki 1-4,,お隣さん,おとなりさん,,otonarisan,sąsiad,mniej oficjalnie,,
 389,WORD_NOUN,,HIRAGANA,"Genki 1-5
 Genki kanji 2-13",,海,うみ,,umi,morze,,,
@@ -1196,7 +1200,9 @@ Genki kanji 2-14",,家族,かぞく,,kazoku,"rodzina
 familia",,,
 566,WORD_NOUN,,HIRAGANA,"Genki 1-7
 Genki kanji 1-6",,国,くに,,kuni,"kraj
-państwo",,,
+państwo
+rodzinne miasto
+rodzinne strony",,,
 567,WORD_NOUN,,HIRAGANA,"Genki 1-7
 Genki kanji 1-8",,車,くるま,,kuruma,"samochód
 pojazd
@@ -1469,7 +1475,8 @@ w najbliższej przyszłości",,,
 685,WORD_NOUN,,HIRAGANA,"Genki 1-9
 Genki kanji 1-7
 Genki kanji 1-8",,作文,さくぶん,,sakubun,"wypracowanie
-esej",,,
+esej
+rozprawka",,,
 686,WORD_NOUN,,HIRAGANA,"Genki 1-9
 Genki kanji 2-18",,試験,しけん,,shiken,egzamin,,,
 687,WORD_NOUN,,HIRAGANA,"Genki 1-9
@@ -1806,8 +1813,11 @@ znużyć się",,,
 przestawać
 porzucić
 zaniechać",,,
-832,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,,-,けんかする,,kenka suru,pokłócić się,,,
-833,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,を,紹介する,しょうかいする,o,shoukai suru,przedstawiać,"kogoś ni kto ~, hiragana i katakana",,
+832,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,,喧嘩する,けんかする,,kenka suru,"kłócić się
+pokłócić się",,,
+833,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,を,紹介する,しょうかいする,o,shoukai suru,"przedstawiać
+wprowadzać
+zaznajamiać","kogoś ni kto ~, hiragana i katakana",,
 834,WORD_VERB_IRREGULAR,,HIRAGANA_KATAKANA,Genki 1-11,,-,ダイエットする,,daietto suru,być na diecie,,,
 835,WORD_VERB_IRREGULAR,,HIRAGANA,"Genki 1-11
 Genki kanji 2-21",,遅刻する,ちこくする,,chikoku suru,być spóźniony,,,
@@ -2032,6 +2042,7 @@ rozpogadzać się",czasownik,,
 Genki dodatkowe 2-17",,雲,くも,,kumo,"chmura
 obłok",,,
 943,WORD_VERB_U,,HIRAGANA,Genki 1-12,,曇る,くもる,,kumoru,"chmurzyć się
+być pochmurnym
 mglić się",,,
 944,WORD_NOUN,,HIRAGANA,"Genki 1-12
 Genki kanji 2-21
@@ -2166,7 +2177,9 @@ robić na drutach",,,
 Genki kanji 2-18",,貸す,かす,,kasu,"pożyczać
 użyczać
 wynajmować","komuś, rzecz o osoba ni",,
-1002,WORD_VERB_U,,HIRAGANA,Genki 2-13,,頑張る,がんばる,,ganbaru,starać się,,,
+1002,WORD_VERB_U,,HIRAGANA,Genki 2-13,,頑張る,がんばる,,ganbaru,"starać się (usilnie)
+pracować (ze wszystkich sił)
+trzymać się",,,
 1003,WORD_VERB_U,,HIRAGANA,Genki 2-13,,磨く,みがく,,migaku,"myć zęby
 szczotkować
 polerować
@@ -2213,7 +2226,8 @@ wypróbować
 doświadczać
 poddać próbie",,,
 1026,WORD_NOUN,,KATAKANA,,,-,ズロチ,,zurochi,zł,,,
-1027,WORD_VERB_U,,HIRAGANA,Genki 2-18,,咲く,さく,,saku,kwitnąć,,,
+1027,WORD_VERB_U,,HIRAGANA,Genki 2-18,,咲く,さく,,saku,"kwitnąć
+rozkwitać",,,
 1028,WORD_VERB_U,,HIRAGANA,,,散る,ちる,,chiru,"opadać
 rozrzucać",kwiaty,,
 1029,WORD_NOUN,,HIRAGANA,,,蕾,つぼみ,,tsubomi,"pąk kwiatu
@@ -2620,7 +2634,7 @@ mnożyć",,,3218
 piękność
 uroda",,,
 1241,WORD_NOUN,,KATAKANA,,,-,ヒール,,hiiru,wysokie obcasy,,,
-1242,UNKNOWN,,HIRAGANA,,,健康,けんこう,,kenkou,zdrowie,,,
+1242,WORD_NOUN,,HIRAGANA,,,健康,けんこう,,kenkou,zdrowie,,,
 1243,WORD_EXPRESSION,,HIRAGANA,,,手に入れる,てにいれる,,teni ireru,zdobyć,,,
 1244,WORD_NOUN,,HIRAGANA,,,楽しさ,たのしさ,,tanoshisa,zabawna rzecz,,,
 1245,UNKNOWN,,HIRAGANA,,,梅雨,つゆ,,tsuyu,pora deszczowa,,,
@@ -3869,7 +3883,8 @@ skakać",,,
 1941,WORD_NOUN,,HIRAGANA,Genki 2-15,,観光客,かんこうきゃく,,kankoukyaku,turysta,,,
 1942,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-15,,観光する,かんこうする,,kankou suru,zwiedzać,,,
 1943,WORD_NOUN,,HIRAGANA,Genki 2-15,,見学,けんがく,,kengaku,"inspekcja
-zwiedzanie i uczenie się",~ czegoś,,
+zwiedzanie (w celach naukowych)
+oględziny",~ czegoś,,
 1944,WORD_NOUN,,HIRAGANA,Genki 2-15,,割引,わりびき,,waribiki,"zniżka
 rabat",,,
 1945,WORD_NOUN,,HIRAGANA,Genki 2-15,,券,けん,,ken,"bilet
@@ -4268,7 +4283,7 @@ klasa","szkolna, wykładowa",,
 religia chrześcijańska",,,
 2141,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,研究室,けんきゅうしつ,,kenkyuushitsu,"gabinet profesora
 laboratorium
-pracownia",,,
+pracownia naukowa",,,
 2142,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,地下室,ちかしつ,,chikashitsu,piwnica,,,
 2143,WORD_NOUN,,HIRAGANA,"Genki kanji 2-16
 Genki kanji 2-22",,待合室,まちあいしつ,,machi aishitsu,poczekalnia,,,
@@ -5064,7 +5079,8 @@ wieś",,,
 2552,WORD_NOUN,,HIRAGANA,,,車室,しゃしつ,,shashitsu,"przedział (pociągu)
 wnętrze (samochodu)",,,
 2553,WORD_NOUN,,HIRAGANA,,,商品,しょうひん,,shouhin,"produkty
-towar",,,
+towar
+dobra",rzeczy przeznaczone do handlu,,
 2554,WORD_NOUN,,HIRAGANA,,,賞与,しょうよ,,shouyo,"nagroda
 premia",,,
 2555,WORD_NOUN,,HIRAGANA,,,賞金,しょうきん,,shoukin,nagroda pieniężna,,,
@@ -6286,9 +6302,12 @@ odpis",,,
 wykop
 spłata",,,
 3173,WORD_NOUN,,HIRAGANA,,,返送,へんそう,,hensou,zwrot,,,
-3174,WORD_VERB_U,,HIRAGANA,,,組む,くむ,,kumu,"splatać
+3174,WORD_VERB_U,,HIRAGANA,,,組む,くむ,,kumu,"krzyżować
+splatać
+zakładać (nogę na nogę)
 składać
-konstruować",,,
+połączyć siły
+tworzyć grupę",,,
 3175,WORD_NOUN,,HIRAGANA,,,組み立て,くみたて,,kumitate,"konstrukcja
 montaż
 składanie",,,
@@ -6362,6 +6381,7 @@ poznawać się",,,
 3215,WORD_VERB_U,VERB_KEIGO_HIGH,HIRAGANA,Genki 2-19,,召し上がる,めしあがる,,meshiagaru,"[honoryfikatywna forma od taberu, nomu]",,,
 3216,WORD_VERB_U,,HIRAGANA,Genki 2-19,,呼ぶ,よぶ,,yobu,"wołać
 wzywać
+przywoływać
 zapraszać
 przyciągać
 nazywać
@@ -7024,7 +7044,8 @@ bibliofil",,,
 uprzednio
 najpierw",,,
 3554,WORD_NOUN,,HIRAGANA,,,予防,よぼう,,yobou,"zapobieganie
-zabezpieczenie",,,
+zabezpieczenie
+prewencja",,,
 3555,WORD_NOUN,,HIRAGANA,,,予備,よび,,yobi,"przygotowanie
 wstępne",np. rozmowy,,
 3556,WORD_NOUN,,HIRAGANA,,,予想,よそう,,yosou,"przypuszczenie
@@ -7198,7 +7219,8 @@ niespodziewanie
 nieoczekiwanie",,,
 3633,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-19,,国際,こくさい,,kokusai,międzynarodowy,,,
 3634,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-19,,電気工学,でんきこうがく,,denki kougaku,elektrotechnika,,,
-3635,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 2-19,,研究する,けんきゅうする,,kenkyuu suru,badać,,,
+3635,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 2-19,,研究する,けんきゅうする,,kenkyuu suru,"badać
+studiować",,,
 3636,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,-,のために,,no tame ni,dla,"~ kogoś, czegoś",,
 3637,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,に,申し込む,もうしこむ,ni,moushikomu,aplikować,,,
 3638,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-19,,-,もしたら,,moshi tara,jeżeli,moshi ~ tara,,
@@ -9793,7 +9815,8 @@ bezpośrednio po",,,
 4938,WORD_NOUN,,HIRAGANA,,,直面する,ちょくめんする,,chokumen suru,"stanąć twarzą w twarz
 stanąć przed obliczem",,,
 4939,WORD_ADJECTIVE_NA,,HIRAGANA,,,正直,しょうじき,,shoujiki,"szczerość
-prawdomówność",,,
+prawdomówność
+uczciwość",,,
 4940,WORD_VERB_U,,HIRAGANA,,,迷う,まよう,,mayou,"gubić się
 mylić drogę
 wahać się",,,
@@ -9822,7 +9845,12 @@ zostawiać
 opuszczać",,,
 4951,WORD_VERB_U,,HIRAGANA,,,抜かる,ぬかる,,nukaru,"być nieuważnym
 mylić się",,,
-4952,WORD_VERB_RU,,HIRAGANA,,,抜ける,ぬける,,nukeru,"odpadać
+4952,WORD_VERB_RU,,HIRAGANA,,,抜ける,ぬける,,nukeru,"wypadać
+odpadać
+być ominiętym
+przeoczonym
+wychodzić
+uchodzić
 uciekać",,,
 4953,WORD_NOUN,,HIRAGANA,,,格,かく,,kaku,"statut
 ranga
@@ -10240,7 +10268,9 @@ nieświadomość",,,
 5137,WORD_NOUN,,HIRAGANA,,,識別,しきべつ,,shikibetsu,rozpoznawanie,,,
 5138,WORD_NOUN,,HIRAGANA,,,証,あかし,,akashi,"świadectwo
 dowód",,,
-5139,WORD_NOUN,,HIRAGANA,,,証拠,しょうこ,,shouko,dowód,,,
+5139,WORD_NOUN,,HIRAGANA,,,証拠,しょうこ,,shouko,"dowód
+świadectwo
+oznaka",,,
 5140,WORD_NOUN,,HIRAGANA,,,証明書,しょうめいしょ,,shoumeisho,świadectwo,,,
 5141,WORD_NOUN,,HIRAGANA,,,証人,しょうにん,,shounin,świadek,,,
 5142,WORD_NOUN,,HIRAGANA,,,証券会社,しょうけんがいしゃ,,shouken gaisha,firma maklerska,,,
@@ -10357,7 +10387,8 @@ handlować",,,
 5205,WORD_NOUN,,HIRAGANA,,,商売,しょうばい,,shoubai,"handel
 interes",,,
 5206,WORD_NOUN,,HIRAGANA,,,商業,しょうぎょう,,shougyou,"interes
-handel",,,
+handel
+biznes",,,
 5207,WORD_NOUN,,HIRAGANA,,,商社,しょうしゃ,,shousha,firma handlowa,,,
 5208,WORD_NOUN,,HIRAGANA,,,商店,しょうてん,,shouten,"sklep
 magazyn",,,
@@ -14626,6 +14657,7 @@ trwać",,,7348
 7350,WORD_NOUN,,HIRAGANA,,,習性,しゅうせい,,shuusei,"przyzwyczajenie
 druga natura",,,
 7351,WORD_NOUN,,HIRAGANA,,,学習,がくしゅう,,gakushuu,"uczenie się
+studia
 studiowanie",,,
 7352,WORD_NOUN,,HIRAGANA,,,習熟,しゅうじゅく,,shuujuku,"opanowanie
 biegłość",np. przedmiotu,,
@@ -16382,8 +16414,11 @@ pustoszyć
 niszczyć
 marnować",,,
 8171,WORD_VERB_RU,,HIRAGANA,,,荒れる,あれる,,areru,"stawać się brutalnym
+burzyć się
 dziczeć
-marnować się",,,
+marnować się
+być zaniedbanym
+popadać w ruinę",,,
 8172,WORD_NOUN,,HIRAGANA,,,虜,とりこ,,toriko,"więzień
 niewolnik
 barbarzyńca",,,
@@ -22284,3 +22319,38 @@ uprawiać wspinaczkę",,,
 11058,WORD_NOUN,,HIRAGANA,,,見舞い,みまい,,mimai,odwiedziny,u chorego,,
 11059,WORD_ADJECTIVE_NA,,HIRAGANA,,,見事,みごと,,migoto,"wspaniały
 cudowny",,,
+11060,WORD_VERB_IRREGULAR,,HIRAGANA,,,愛する,あいする,,ai suru,kochać,,,
+11061,WORD_VERB_IRREGULAR,,HIRAGANA,,,学習する,がくしゅうする,,gakushuu suru,"studiować
+uczyć się",,,
+11062,WORD_VERB_IRREGULAR,,HIRAGANA,,,見学する,けんがくする,,kengaku suru,zwiedzać,,,
+11063,WORD_NOUN,,HIRAGANA,,,喧嘩,けんか,,kenka,"kłótnia
+bójka",,,
+11064,WORD_NOUN,,HIRAGANA,,,諠譁,けんか,,kenka,"kłótnia
+bójka",,,
+11065,WORD_VERB_IRREGULAR,,HIRAGANA,,,諠譁する,けんかする,,kenka suru,"kłócić się
+pokłócić się",,,
+11066,WORD_NOUN,,HIRAGANA,,,健康診断,けんこうしんだん ,,kenkou shindan,badanie stanu zdrowia,,,
+11067,WORD_NOUN,,HIRAGANA,,,健康状態,けんこうじょうたい ,,kenkou joutai,stan zdrowia,,,
+11068,WORD_NOUN,,HIRAGANA,,,健康保険,けんこうほけん ,,kenkou hoken,ubezpieczenie na wypadek choroby,dosł: na zdrowie,,
+11069,WORD_VERB_IRREGULAR,,HIRAGANA,,,健康を害する,けんこうをがいする,,kenkou wo gaisuru,szkodzić zdrowiu,,,
+11070,WORD_NOUN,,HIRAGANA,,,研究会,けんきゅうかい,,kenkyuukai,"stowarzyszenie naukowe
+konferencja naukowa",,,
+11071,WORD_NOUN,,HIRAGANA,,,研究費,けんきゅうひ,,kenkyuuhi,"fundusz na badania
+wydatki na badania",,,
+11072,WORD_NOUN,,HIRAGANA,,,研究活動,けんきゅうかつどう ,,kenkyuu katsudou,"działalność naukowa
+działalność badawcza",,,
+11073,WORD_VERB_U,,HIRAGANA,,,汲む,くむ,,kumu,"czerpać
+nabierać",,,
+11074,UNKNOWN,PREFIX,HIRAGANA,,,昨,さく,,saku,"ostatni
+poprzedni
+ubiegły",,,
+11075,WORD_NOUN,,HIRAGANA,,,文学作品,ぶんがくさくひん ,,bungaku sakuhin,dzieło literackie,,,
+11076,WORD_NOUN,,HIRAGANA,,,芸術作品,げいじゅつさくひん ,,geijutsu sakuhin,dzieło sztuki,,,
+11077,WORD_NOUN,,HIRAGANA,,,商業学校,しょうぎょうがっこう ,,shougyou gakkou,szkoła handlowa,,,
+11078,WORD_NOUN,,HIRAGANA,,,商品見本,しょうひんみほん,,shouhin mihon,"towar próbny
+próbka towaru",,,
+11079,WORD_NOUN,,HIRAGANA,,,紹介,しょうかい,,shoukai,"przedstawienie (kogoś)
+wprowadzenie (kogoś)
+zaznajomienie (kogoś z kimś)",,,
+11080,WORD_VERB_IRREGULAR,,HIRAGANA,,,予防する,よぼうする,,yobou suru,"zapobiegać
+uchronić",,,
