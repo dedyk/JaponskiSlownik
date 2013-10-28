@@ -554,7 +554,8 @@ młody mnich",,,
 275,WORD_NOUN,,HIRAGANA,"Genki 1-4
 Genki kanji 1-10
 Genki kanji 2-13",,買い物,かいもの,,kaimono,zakupy,,,
-276,WORD_NOUN,,KATAKANA,Genki 1-4,,-,クラス,,kurasu,klasa,,,
+276,WORD_NOUN,,KATAKANA,Genki 1-4,,-,クラス,,kurasu,"klasa
+grupa",,,
 277,WORD_PRONOUN,,HIRAGANA,Genki 1-4,,-,あなた,,anata,ty,,,
 278,WORD_NOUN,,HIRAGANA,"Genki 1-4
 Genki kanji 2-21",,犬,いぬ,,inu,pies,,,
@@ -675,7 +676,9 @@ ubiegły rok",,,
 351,UNKNOWN,,HIRAGANA,"Genki 1-4
 Genki 1-10
 Genki kanji 1-10",,今年,ことし,,kotoshi,"aktualny rok
-bieżący rok",,,
+bieżący rok
+ten rok
+obecny rok",,,
 352,UNKNOWN,,HIRAGANA,"Genki 1-4
 Genki 1-6
 Genki kanji 1-10",,来年,らいねん,,rainen,przyszły rok,,,
@@ -1006,7 +1009,9 @@ skasować",,,
 Genki kanji 2-15",,死ぬ,しぬ,,shinu,"umierać
 zginąć
 stracić życie",,,
-476,WORD_VERB_U,,HIRAGANA,Genki 1-6,に,座る,すわる,ni,suwaru,siadać,na miejsce,,
+476,WORD_VERB_U,,HIRAGANA,Genki 1-6,に,座る,すわる,ni,suwaru,"siadać
+siedzieć
+zajmować miejsce",na miejsce,,
 477,WORD_VERB_U,,HIRAGANA,"Genki 1-6
 Genki kanji 1-10",,立つ,たつ,,tatsu,"stać
 powstawać",,,
@@ -1913,7 +1918,8 @@ Genki 2-13",,文法,ぶんぽう,,bunpou,gramatyka,,,
 Genki kanji 2-19
 Genki dodatkowe 2-19",,質問,しつもん,,shitsumon,pytanie,,,
 866,WORD_NOUN,,HIRAGANA,"Genki 1-11
-Genki kanji 2-23",,答,こたえ,,kotae,odpowiedź,,,
+Genki kanji 2-23",,答,こたえ,,kotae,"odpowiedź
+odzew",,,
 867,WORD_NOUN,,HIRAGANA,Genki 1-11,,例,れい,,rei,"przykład
 zwyczaj
 nawyk
@@ -3801,7 +3807,7 @@ przestrzenne miejsce",,,
 1853,WORD_NOUN,,HIRAGANA,,,橋,はし,,hashi,most,,,
 1854,WORD_NOUN,,KATAKANA,,,-,ケチャップ,,kechappu,"ketchup
 keczup",,,
-1855,WORD_NOUN,,HIRAGANA,,,-,こしょう,,koshou,pieprz,,,
+1855,WORD_NOUN,,HIRAGANA,,,胡椒,こしょう,,koshou,pieprz,,,
 1856,WORD_NOUN,,HIRAGANA,,,塩,しお,,shio,sól,,,
 1857,WORD_NOUN,,KATAKANA,,,-,マスタード,,masutaado,musztarda,,,
 1858,WORD_NOUN,,KATAKANA,,,-,マヨネーズ,,mayoneezu,majonez,,,
@@ -4020,7 +4026,8 @@ położenie",fizyczne,,
 1975,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,道場,どうば,,douba,miejsce,gdzie odbywają się sztuki walki,,
 1976,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,場,ば,,ba,"[miejsce ~ ba]
 plac
-przestrzeń","miejsce, gdzie ma miejsce jakaś akcja",,
+przestrzeń
+okazja","miejsce, gdzie ma miejsce jakaś akcja",,11234
 1977,WORD_VERB_RU,,HIRAGANA,"Genki kanji 2-15
 Genki 2-17",,足りる,たりる,,tariru,wystarczać,,,
 1978,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,一足,いっそく,,issoku,jedna para,np. butów,,
@@ -5532,6 +5539,7 @@ przeciwny",,,
 2732,WORD_NOUN,,HIRAGANA,,,家鴨,あひる,,ahiru,kaczka,domowa,,
 2733,UNKNOWN,,HIRAGANA,,,-,なぜだか,,naze daka,z jakiegoś powodu,,,
 2734,WORD_VERB_U,,HIRAGANA,,,暮らす,くらす,,kurasu,"żyć
+pędzić życie
 mieszkać",,,
 2735,WORD_NOUN,,HIRAGANA,,,実家,じっか,,jikka,dom rodzinny,,,
 2736,WORD_NOUN,,HIRAGANA,,,五目並べ,ごもくならべ,,gomoku narabe,gomoku,japońska gra planszowa,,
@@ -8054,6 +8062,8 @@ rozrywka",,,
 4025,WORD_NOUN,,HIRAGANA,,,遊星,ゆうせい,,yuusei,planeta,,,
 4026,WORD_VERB_U,,HIRAGANA,,,吸う,すう,,suu,"wdychać
 ssać
+wysysać
+wchłaniać
 popijać (małymi łykami)",,,
 4027,WORD_VERB_U,,HIRAGANA,,,伝う,つたう,,tsutau,iść za,,,
 4028,WORD_NOUN,,HIRAGANA,,,伝統,でんとう,,dentou,"tradycja
@@ -8788,7 +8798,12 @@ Genki 2-23",,夕食,ゆうしょく,,yuushoku,kolacja,,,
 4388,WORD_NOUN,,HIRAGANA,,,夕陽,ゆうひ,,yuuhi,zachodzące słońce,,,4387
 4389,WORD_NOUN,,HIRAGANA,,,夕日,ゆうひ,,yuuhi,zachodzące słońce,,,
 4390,WORD_VERB_U,,HIRAGANA,,,倒す,たおす,,taosu,"powalać
+powalić
+zwalić
 przewracać
+przewrócić
+wywrócić
+obalić
 pokonywać
 zwyciężać",,,
 4391,WORD_NOUN,,HIRAGANA,,,自画像,じがぞう,,jigazou,autoportret,,,
@@ -10142,7 +10157,9 @@ przebijać
 uderzać
 atakować",,,2645
 5022,WORD_VERB_RU,,HIRAGANA,,,暮れる,くれる,,kureru,"ciemnieć
-kończyć się (o dniu, roku)",,,
+ściemniać się
+zachodzić (o słońcu)
+kończyć się (o dniu, roku, sezonie itp)",,,
 5023,WORD_NOUN,,HIRAGANA,,,暮れ,くれ,,kure,"zmrok
 koniec roku",,,
 5024,WORD_NOUN,,HIRAGANA,,,暮らし,くらし,,kurashi,życie,codzienne,,
@@ -10160,9 +10177,10 @@ drewno",,,
 5029,WORD_NOUN,,HIRAGANA,,,断,だん,,dan,"decyzja
 sąd
 odmowa",,,
-5030,WORD_VERB_U,,HIRAGANA,,,断る,ことわる,,kotowaru,"odmawiać
-zaprzeczać
-zabraniać",,,
+5030,WORD_VERB_U,,HIRAGANA,,,断る,ことわる,,kotowaru,"odmawiać (komuś)
+nie przyjmować czyjejś prośby
+uprzedzać
+prosić o zgodę",,,
 5031,WORD_NOUN,,HIRAGANA,,,断食,だんじき,,danjiki,"post
 poszczenie
 głodzenie",,,
@@ -11983,7 +12001,8 @@ nierentowny",,,
 5917,WORD_NOUN,,HIRAGANA,,,益虫,えきちゅう,,ekichuu,pożyteczne owady,,,
 5918,WORD_ADVERB,,HIRAGANA,,,益々,ますます,,masumasu,"coraz więcej
 coraz (bardziej)","np. grubszy, piękniejszy",,
-5919,WORD_NOUN,,HIRAGANA,,,息,いき,,iki,oddech,,,
+5919,WORD_NOUN,,HIRAGANA,,,息,いき,,iki,"oddech
+oddychanie",,,
 5920,WORD_NOUN,,HIRAGANA,,,息子,むすこ,,musuko,"syn
 chłopiec",,,
 5921,WORD_NOUN,,HIRAGANA,,,息女,そくじょ,,sokujo,córka,,,
@@ -15191,7 +15210,8 @@ uczucie
 sentyment",,,
 7540,WORD_NOUN,,HIRAGANA,"Genki 1-11
 Genki kanji 2-23
-Genki dodatkowe 2-23",,答え,こたえ,,kotae,odpowiedź,,,
+Genki dodatkowe 2-23",,答え,こたえ,,kotae,"odpowiedź
+odzew",,,
 7541,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,回答,かいとう,,kaitou,odpowiedź,z testu wyboru,,
 7542,WORD_NOUN,,HIRAGANA,,,綱,つな,,tsuna,"lina
 cuma
@@ -15353,9 +15373,10 @@ wschód słońca",,,
 7617,WORD_VERB_RU,,HIRAGANA,,,延びる,のびる,,nobiru,"rozciągać się
 przedłużać się
 przeciągać się",,,
-7618,WORD_VERB_U,,HIRAGANA,,,延ばす,のばす,,nobasu,"rozciągać
+7618,WORD_VERB_U,,HIRAGANA,,,延ばす,のばす,,nobasu,"przekładać
 przedłużać
-rozwijać",,,
+odroczyć
+przesunąć",,,
 7619,WORD_NOUN,,HIRAGANA,,,延長,えんちょう,,enchou,przedłużenie,,,
 7620,WORD_NOUN,,HIRAGANA,,,延期,えんき,,enki,"odłożenie
 odroczenie
@@ -16014,7 +16035,8 @@ rozszerzać się
 wydłużać się",,,
 7949,WORD_VERB_U,,HIRAGANA,,,伸ばす,のばす,,nobasu,"wydłużać
 przedłużać
-rozciągać",,,
+rozciągać
+rozwijać",,,
 7950,WORD_NOUN,,HIRAGANA,,,匿,とく,,toku,"schronienie
 schowek
 tarcza",,,
@@ -18786,10 +18808,10 @@ urodzenie","królewski, monarszy",,
 9345,WORD_NOUN,,HIRAGANA,,,降誕祭,こうたんさい ,,koutansai,Boże Narodzenie,,,
 9346,WORD_NOUN,,KATAKANA,,,-,カワウソ,,kawauso,"wydra
 lutra",,,
-9347,WORD_VERB_U,,HIRAGANA,,,断わる,ことわる ,,kotowaru,"odmawiać
-odrzucać
-odrzucić
-wzbraniać",,,
+9347,WORD_VERB_U,,HIRAGANA,,,断わる,ことわる ,,kotowaru,"odmawiać (komuś)
+nie przyjmować czyjejś prośby
+uprzedzać
+prosić o zgodę",,,
 9348,WORD_VERB_U,,HIRAGANA,,,受取る,うけとる ,,uketoru,"akceptować
 honorować
 przyjąć
@@ -21655,9 +21677,9 @@ niepewny",,,
 10665,WORD_NOUN,,HIRAGANA,,,遊覧客,ゆうらんきゃく ,,yuurankyaku,"turysta
 wczasowicz",,,
 10666,WORD_NOUN,,HIRAGANA,,,鱈,たら,,tara,"dorsz
-wątłusz",,,
+wątłusz",,,11242
 10667,WORD_NOUN,,HIRAGANA,,,大口魚,たら,,tara,"dorsz
-wątłusz",,,
+wątłusz",,,11242
 10668,WORD_NOUN,,HIRAGANA,,,説,せつ,,setsu,teoria,,,
 10669,WORD_NOUN,,HIRAGANA,,,利点,りてん ,,riten,"zaleta
 korzyść",,,
@@ -22855,3 +22877,44 @@ urządzenia elektryczne",,,
 11224,WORD_NOUN,,HIRAGANA,,,電気洗濯機,でんきせんたくき ,,denki sentakuki,elektryczna pralka,,,
 11225,WORD_NOUN,,HIRAGANA,,,電気冷蔵庫,でんきれいぞうこ,,denki reizouko,elektryczna lodówka,,,
 11226,WORD_NOUN,,HIRAGANA_KATAKANA,,,電気スタンド,でんきスタンド,,denki sutando,lampa na biurko,,,
+11227,WORD_VERB_RU,,HIRAGANA,,,腰掛ける,こしかける,,koshikakeru,siadać,,,
+11228,WORD_NOUN,,HIRAGANA,,,故障,こしょう,,koshou,"uszkodzenie
+awaria",,,
+11229,WORD_VERB_IRREGULAR,,HIRAGANA,,,故障する,こしょうする,,koshou suru,zepsuć się,,,
+11230,WORD_NOUN,,HIRAGANA,,,交渉,こうしょう,,koushou,"negocjacje
+rokowania",,,
+11231,WORD_VERB_IRREGULAR,,HIRAGANA,,,交渉する,こうしょうする,,koushou suru,negocjować,,,
+11232,WORD_NOUN,,HIRAGANA,,,高等学校,こうとうがっこう,,koutougakkou,"liceum
+wyższa szkoła średnia",,,
+11233,WORD_NOUN,,HIRAGANA,,,交通信号,こうつうしんごう,,koutsuu shingou,"światła na przejściu
+sygnalizacja świetlna",,,
+11234,WORD_PARTICULE,,HIRAGANA,,,-,ば,,ba,"jeśli
+kiedy",,,1976
+11235,WORD_EXPRESSION,,HIRAGANA,,,行けない,いけない,,ikenai,"nie wolno
+niewłaściwy",,,
+11236,WORD_NOUN,,HIRAGANA,,,行き,いき,,iki,"pójście
+kierunek
+idący do
+w jedną stronę",,,
+11237,WORD_VERB_U,,HIRAGANA,,,了う,しまう,,shimau,"włożyć
+schować
+odłożyć (na miejsce)
+uporządkować",,,
+11238,WORD_VERB_U,,HIRAGANA,,,終う,しまう,,shimau,"włożyć
+schować
+odłożyć (na miejsce)
+uporządkować",,,
+11239,WORD_VERB_U,,HIRAGANA,,,蔵う,しまう,,shimau,"włożyć
+schować
+odłożyć (na miejsce)
+uporządkować",,,
+11240,WORD_VERB_U,,HIRAGANA,,,仕舞う,しまう,,shimau,"włożyć
+schować
+odłożyć (na miejsce)
+uporządkować",,,
+11241,WORD_NOUN,,HIRAGANA_KATAKANA,,,湯上がりタオル,ゆあがりタオル,,yuagari taoru,ręcznik kąpielowy,,,
+11242,UNKNOWN,,HIRAGANA,,,-,たら,,tara,"kiedy
+jeśli",końcówka czasownika oznaczająca warunek,,"10666
+10667"
+11243,WORD_NOUN,,HIRAGANA,,,椒,はじかみ ,,hajikami,"papryka
+imbir (archaizm)",,,
