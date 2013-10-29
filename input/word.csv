@@ -462,9 +462,13 @@ Genki 1-4
 Genki kanji 1-4",,日曜日,にちようび,,nichiyoubi,niedziela,słońce,,
 240,UNKNOWN,,HIRAGANA,"Genki 1-3
 Genki kanji 1-4
-Genki kanji 1-7",,毎日,まいにち,,mainichi,każdego dnia,,,
+Genki kanji 1-7",,毎日,まいにち,,mainichi,"każdego dnia
+codziennie",,,
 241,UNKNOWN,,HIRAGANA,"Genki 1-3
-Genki kanji 1-7",,毎晩,まいばん,,maiban,każdej nocy,,,
+Genki kanji 1-7",,毎晩,まいばん,,maiban,"każdej nocy
+codziennie wieczorem
+każdego wieczoru
+co wieczór",,,
 242,WORD_VERB_U,,HIRAGANA,"Genki 1-3
 Genki kanji 1-5",に,行く,いく,ni,iku,"iść
 zmierzać ku
@@ -2121,7 +2125,8 @@ bóstwo",,,
 panienka
 dziewczyna",,,
 954,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki dodatkowe 1-12
-Genki 2-19",,真面目,まじめ,,majime,poważny,,,
+Genki 2-19",,真面目,まじめ,,majime,"poważny
+pilny",,,
 955,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 1-12,,はたを織る,はたをおる,,hata o oru,tkać,,,
 956,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,-,ある,,aru,pewnego,~,,"364
 5306"
@@ -2161,8 +2166,11 @@ nieszczęśnik",,,
 968,UNKNOWN,,HIRAGANA,"Genki dodatkowe 1-12
 Genki 2-18",,-,までに,,made ni,"do kiedy
 nie później niż",,,
-969,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,願い,ねがい,,negai,"życzenie
-prośba",,,
+969,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,願い,ねがい,,negai,"pragnienie
+marzenie
+nadzieja
+prośba
+życzenie",,,
 970,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 1-12,,-,かなう,,kanau,"zrealizować
 spełnić",,,
 971,WORD_PRONOUN,,HIRAGANA,"Genki dodatkowe 1-12
@@ -2617,7 +2625,10 @@ iść na randkę",narzeczeństwo,,1204
 Genki 2-15
 Genki kanji 2-13",に,着く,つく,ni,tsuku,"przybyć
 przybywać
-docierać",~ do miejsca,,2645
+docierać
+dotrzeć
+zająć miejsce
+zająć pozycję",~ do miejsca,,2645
 1206,WORD_VERB_U,,HIRAGANA,Genki 2-15,,保険に入る,ほけんにはいる,,hoken ni hairu,ubezpieczyć się,,,
 1207,WORD_VERB_RU,,HIRAGANA,Genki 2-15,に,気をつける,きをつける,ni,ki o tsukeru,uważać,,,
 1208,WORD_VERB_RU,,HIRAGANA,"Genki 2-15
@@ -2802,7 +2813,8 @@ Genki kanji 1-7",,日本語,にほんご,,nihongo,język japoński,,,
 1302,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,日本人,にほんじん,,nihonjin,Japończyk,,,
 1303,UNKNOWN,,HIRAGANA,Genki kanji 1-4,,この人,このひと,,kono hito,ten człowiek,,,
 1304,WORD_NOUN,,HIRAGANA,"Genki kanji 1-4
-Genki 2-20",,月,つき,,tsuki,księżyc,,,
+Genki 2-20",,月,つき,,tsuki,"księżyc
+miesiąc",,,
 1305,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,火,ひ,,hi,ogień,,,
 1306,WORD_NOUN,,HIRAGANA,"Genki kanji 1-4
 Genki 2-22",,木,き,,ki,drzewo,,,
@@ -4153,7 +4165,8 @@ kucharz",,,
 2040,WORD_NOUN,,HIRAGANA,,,左側,ひだりがわ,,hidari gawa,lewa strona,,,7659
 2041,WORD_NOUN,,HIRAGANA,,,布団,ふとん,,futon,"futon
 materac
-kołdra","tradycyjne składane łóżko, chowane na dzień",,
+kołdra
+posłanie","tradycyjne składane łóżko, chowane na dzień",,
 2042,WORD_NOUN,,HIRAGANA,,,本棚,ほんだな,,hondana,półka na książki,,,
 2043,WORD_NOUN,,HIRAGANA,,,昼間,ひるま,,hiruma,"za dnia
 w czasie
@@ -4439,8 +4452,14 @@ robić make up",,,
 2167,WORD_VERB_RU,,HIRAGANA,,,似る,にる,,niru,"przypominać
 być podobnym do
 być jak",,,
-2168,WORD_VERB_U,,HIRAGANA,,に,-,よる,ni,yoru,"opierać się
-wynikać (z czegoś)",,,"468
+2168,WORD_VERB_U,,HIRAGANA,,に,依る,よる,ni,yoru,"opierać się o
+wynikać (z czegoś)
+w zależności od
+przez
+poprzez
+stosownie do
+z powodu (czegoś)
+wskutek (czegoś)",,,"468
 3217
 4568
 5336
@@ -5976,7 +5995,8 @@ przyczepić","np. plakat, znaczek",,
 naprężenie
 siła napięcia",,,
 2943,WORD_VERB_U,,HIRAGANA,,,引っ張る,ひっぱる,,hipparu,"ciągnąć
-pociągnąć",,,
+pociągnąć
+holować",,,
 2944,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,を,産む,うむ,o,umu,"rodzić
 urodzić
 wytworzyć
@@ -6003,7 +6023,14 @@ przyklejać
 dodawać
 śledzić",,,490
 2955,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,が,付く,つく,ga,tsuku,"łączyć się
-przyczepiać się",,,2645
+przyczepiać się
+przylgnąć
+towarzyszyć
+być razem
+zostać założonym
+zostać ustalonym
+być odczuwanym
+być zauważonym",,,2645
 2956,WORD_NOUN,,HIRAGANA,,,付記,ふき,,fuki,"dodatkowa notatka
 dopisek",,,
 2957,WORD_NOUN,,HIRAGANA,,,付帯,ふたい,,futai,"drugorzędny
@@ -6320,7 +6347,8 @@ grawitacja",,,
 3131,WORD_NOUN,,KATAKANA,,,-,スクリーン,,sukuriin,ekran,,,
 3132,WORD_NOUN,,KATAKANA,,,-,ユーザー,,yuuzaa,użytkownik,,,
 3133,WORD_ADJECTIVE_I,,HIRAGANA,,,太い,ふとい,,futoi,"gruby
-duży",,,
+duży
+masywny",,,
 3134,WORD_NOUN,,HIRAGANA,,,太鼓,たいこ,,taiko,bęben,,,
 3135,WORD_NOUN,,HIRAGANA,,,太陽,たいよう,,taiyou,słońce,,,
 3136,WORD_NOUN,,HIRAGANA,,,太平洋,たいへいよう,,taiheiyou,"Ocena Spokojny
@@ -6489,12 +6517,13 @@ zapraszać
 przyciągać
 nazywać
 przezywać",kogoś,,
-3217,WORD_VERB_U,,HIRAGANA,Genki 2-19,,寄る,よる,,yoru,"wstępować
-zajść
-wpadać (do sąsiada, sklepu i etc)
+3217,WORD_VERB_U,,HIRAGANA,Genki 2-19,に,寄る,よる,ni,yoru,"przybliżyć się
 zbliżać się
-zbierać się
-spotykać się",,,2168
+podejść
+wstąpić po drodze
+wstępować
+wpaść (do sąsiada, sklepu i etc)
+zajść",,,2168
 3218,WORD_VERB_RU,,HIRAGANA,Genki 2-19,,-,かける,,kakeru,siadać,,,"1237
 6036
 6393
@@ -6546,7 +6575,16 @@ prowadzony przez rząd",,,
 3242,WORD_NOUN,,HIRAGANA,,,官庁,かんちょう,,kanchou,biuro rządowe,,,
 3243,WORD_NOUN,,HIRAGANA,,,国務長官,こくむちょうかん,,kokumuchoukan,sekretariat stanu,,,
 3244,WORD_VERB_U,"VERB_INTRANSITIVITY
-VERB_TRANSITIVITY",HIRAGANA,,,引く,ひく,,hiku,ciągnąć,,,
+VERB_TRANSITIVITY",HIRAGANA,,,引く,ひく,,hiku,"ciągnąć
+przyciągać
+prowadzić
+oprowadzić
+odejmować
+przeziębić się
+sprawdzać (w słowniku)
+wyszukiwać
+zakładać (wodę, gaz, telefon i itp)
+doprowadzać (wodę, gaz i itp)",,,
 3245,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,引ける,ひける,,hikeru,ciągnąć,,,
 3246,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,引っ越し,ひっこし,,hikkoshi,przeprowadzka,,,
 3247,WORD_NOUN,,HIRAGANA,,,引用,いんよう,,in'you,cytat,,,
@@ -8939,6 +8977,8 @@ organizować się
 dostosowywać się",,,
 4464,WORD_NOUN,,HIRAGANA,"Genki kanji 2-23
 Genki dodatkowe 2-23",,調査,ちょうさ,,chousa,"badanie
+kontrola
+śledztwo
 dochodzenie
 przesłuchanie
 obserwacja",np. ankietowe,,
@@ -9168,7 +9208,7 @@ fundusz",,,
 4566,WORD_NOUN,,HIRAGANA,,,供給,きょうきゅう,,kyoukyuu,"dostawa
 zaopatrzenie",,,
 4567,WORD_NOUN,,HIRAGANA,,,給水,きゅうすい,,kyuusui,zaopatrzenie w wodę,,,
-4568,WORD_VERB_U,,HIRAGANA,,,由る,よる,,yoru,zależeć od,,,2168
+4568,WORD_VERB_U,,HIRAGANA,,に,由る,よる,ni,yoru,zależeć od,,,2168
 4569,WORD_NOUN,,HIRAGANA,,,由,よし,,yoshi,"przyczyna
 środek
 sposób",,,8764
@@ -9542,7 +9582,8 @@ spotykać się",,,
 sklejać
 cementować",,,
 4741,WORD_ADJECTIVE_NA,,HIRAGANA,,,直接,ちょくせつ,,chokusetsu,"bezpośredni
-bezpośrednio",,,
+bezpośrednio
+prosty",,,
 4742,WORD_NOUN,,HIRAGANA,,,間接,かんせつ,,kansetsu,"pośredni
 pośrednio",,,
 4743,WORD_NOUN,,HIRAGANA,,,接骨,せっこつ,,sekkotsu,składanie kości,,,
@@ -10089,7 +10130,8 @@ zagęszczenie
 tłok
 dobry",,,8587
 4992,WORD_NOUN,,HIRAGANA,,,寮,つかさ,,tsukasa,biuro,archaizm,,2219
-4993,WORD_VERB_U,,HIRAGANA,,,沸く,わく,,waku,gotować się,,,
+4993,WORD_VERB_U,,HIRAGANA,,,沸く,わく,,waku,"gotować się
+wrzeć","nie mówi się nigdy: mizu ga waku, zawsze należy mówić oyu ga waku",,
 4994,WORD_VERB_U,,HIRAGANA,,,就く,つく,,tsuku,"usadawiać się
 przybierać (pozycję)",,,2645
 4995,WORD_NOUN,,HIRAGANA,,,就任,しゅうにん,,shuunin,przyjęcie stanowiska,,,
@@ -10804,7 +10846,14 @@ krytyczny (np. stan)",,,
 stałość
 prawość",,,
 5335,WORD_NOUN,,HIRAGANA,,,因,いん,,in,przyczyna,,,
-5336,WORD_VERB_U,,HIRAGANA,,,因る,よる,,yoru,zależeć od,,,2168
+5336,WORD_VERB_U,,HIRAGANA,,に,因る,よる,ni,yoru,"opierać się o
+wynikać (z czegoś)
+w zależności od
+przez
+poprzez
+stosownie do
+z powodu (czegoś)
+wskutek (czegoś)",,,2168
 5337,WORD_NOUN,,HIRAGANA,,,原因,げんいん,,gen'in,przyczyna,,,
 5338,WORD_NOUN,,HIRAGANA,,,因果,いんが,,inga,przyczyna i skutek,,,
 5339,WORD_NOUN,,HIRAGANA,,,因縁,いんねん,,innen,przyczyna i skutek,,,
@@ -11665,8 +11714,14 @@ fundament",,,
 5771,WORD_NOUN,,HIRAGANA,,,基金,ききん,,kikin,"fundusz
 kasa
 posag",,,
-5772,WORD_VERB_U,,HIRAGANA,,,拠る,よる,,yoru,"zależeć (od czegoś)
-opierać się (na czymś)",,,2168
+5772,WORD_VERB_U,,HIRAGANA,,に,拠る,よる,ni,yoru,"opierać się o
+wynikać (z czegoś)
+w zależności od
+przez
+poprzez
+stosownie do
+z powodu (czegoś)
+wskutek (czegoś)",,,2168
 5773,WORD_NOUN,,HIRAGANA,,,希望者,きぼうしゃ,,kibousha,"kandydat
 aplikant
 ochotnik",,,
@@ -17073,7 +17128,8 @@ cierpieć (z jakiegoś powodu)",,,
 8342,WORD_VERB_U,,HIRAGANA,,,煩わす,わずらわす,,wazurawasu,niepokoić,,,
 8343,WORD_NOUN,,HIRAGANA,,,穂,ほ,,ho,"ucho
 grot",,,
-8344,WORD_NOUN,,HIRAGANA,,,笑い,わらい,,warai,śmiech,,,
+8344,WORD_NOUN,,HIRAGANA,,,笑い,わらい,,warai,"śmiech
+uśmiech",,,
 8345,WORD_VERB_U,,HIRAGANA,,,笑む,えむ,,emu,"wychodzić na zewnątrz
 kwitnąć
 otwierać się
@@ -22918,3 +22974,47 @@ jeśli",końcówka czasownika oznaczająca warunek,,"10666
 10667"
 11243,WORD_NOUN,,HIRAGANA,,,椒,はじかみ ,,hajikami,"papryka
 imbir (archaizm)",,,
+11244,WORD_NOUN,,HIRAGANA,,,平仮名,ひらがな,,hiragana,hiragana,jeden z dwóch japońskich alfabetów sylabicznych,,
+11245,WORD_NOUN,,HIRAGANA,,,脇,わき,,waki,"pacha
+pod pachą
+obok
+z boku
+bardzo blisko",,,
+11246,WORD_NOUN,,HIRAGANA,,,掖,わき,,waki,"pacha
+pod pachą
+obok
+z boku
+bardzo blisko",,,
+11247,WORD_NOUN,,HIRAGANA,,,腋,わき,,waki,"pacha
+pod pachą
+obok
+z boku
+bardzo blisko",,,
+11248,WORD_VERB_IRREGULAR,,HIRAGANA,,,貯金する,ちょきんする,,chokin suru,oszczędzać,,,
+11249,WORD_NOUN,,KATAKANA,,,-,チョーク,,chooku,kreda,,,
+11250,WORD_NOUN,,HIRAGANA,,,直線,ちょくせつ,,chokusetsu,linia prosta,,,
+11251,WORD_VERB_IRREGULAR,,HIRAGANA,,,調査する,ちょうさする,,chousa suru,"badać
+kontrolować
+śledzić",,,
+11252,WORD_ADVERB,,HIRAGANA,,,不図,ふと,,futo,"nagle
+niespodziewanie
+przypadkiem",,,
+11253,WORD_ADVERB,,HIRAGANA,,,不圖,ふと,,futo,"nagle
+niespodziewanie
+przypadkiem",,,
+11254,WORD_ADVERB,,HIRAGANA,,,不斗,ふと,,futo,"nagle
+niespodziewanie
+przypadkiem",,,
+11255,WORD_NOUN,,HIRAGANA,,,掛け布団,かけぶとん,,kakebuton,kołdra,,,
+11256,WORD_NOUN,,HIRAGANA,,,敷布団,しきぶとん,,shikibuton,materac,,,
+11257,WORD_NOUN,,HIRAGANA,,,座布団,ざぶとん,,zabuton,poduszka do siedzenia,,,
+11258,WORD_VERB_U,,HIRAGANA,,,布団を敷く,ふとんをしく,,futon o shiku,rozścielać posłanie (materac),,,
+11259,UNKNOWN,PREFIX,HIRAGANA,,,幾,いく,,iku,"ile
+ileś",przedrostek iku- jest nieco bardziej oficjalny niż nan- i bywa używany jedynie z niektórymi słowami,,
+11260,WORD_ASK,,HIRAGANA,,,幾度,いくど,,ikudo,ile razy,,,
+11261,WORD_ASK,,HIRAGANA,,,幾日,いくにち,,ikunichi,ile dni,,,
+11262,WORD_ASK,,HIRAGANA,,,幾人,いくにん,,ikunin,ilu ludzi,,,
+11263,WORD_VERB_U,,HIRAGANA,,,話がつく,はなしがつく,,hanashi ga tsuku,dojść do porozumienia,,,
+11264,WORD_VERB_U,,HIRAGANA,,,解決がつく,かいけつがつく,,kaiketsu ga tsuku,"dojść do rozwiązania
+dojść do rozstrzygnięcia
+osiągnąć rozwiązanie",,,
