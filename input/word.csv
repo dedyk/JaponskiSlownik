@@ -2089,7 +2089,8 @@ festyn",,,
 940,UNKNOWN,,HIRAGANA,Genki 1-12,,方,ほう,,hou,"kierunek
 droga
 strona
-część",,,7140
+część
+kategoria",,,7140
 941,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,"Genki 1-12
 Genki 2-19",,晴れる,はれる,,hareru,"słoneczna pogoda
 rozpogadzać się",czasownik,,
@@ -2260,7 +2261,9 @@ być poruszony",przez ~ ni,,
 1009,WORD_EXPRESSION,,HIRAGANA,Genki 2-13,,実は,じつは,,jitsuha,"w istocie
 faktycznie",,,
 1010,WORD_EXPRESSION,,HIRAGANA,"Genki 2-13
-Genki kanji 2-16",,全部,ぜんぶ,,zenbu,wszystko,,,
+Genki kanji 2-16",,全部,ぜんぶ,,zenbu,"wszystko
+razem
+ogółem",,,
 1011,WORD_EXPRESSION,,HIRAGANA,Genki 2-13,,と申します,ともうします,,to moushimasu,nazywam się,,,
 1012,WORD_EXPRESSION,,HIRAGANA,Genki 2-13,,よろしくお願いします,よろしくおねがいします,,yoroshiku onegai shimasu,Z góry dziękuję,,,
 1013,WORD_COUNT_DAY_NUMBER,,HIRAGANA,Genki 2-13,,一日,いちにち,,ichinichi,jeden dzień,liczenie dni,,298
@@ -5163,7 +5166,9 @@ czarne litery",przeciwieństwo deficytu,,
 istnienie
 egzystencja",,,
 2542,WORD_VERB_U,,HIRAGANA,,,移す,うつす,,utsusu,"przenosić
-ruszać",,,
+przenieść
+ruszać
+przemieścić",,,
 2543,WORD_NOUN,,HIRAGANA,,,歩行者,ほこうしゃ,,hokousha,"pieszy
 piechur",,,
 2544,WORD_ADJECTIVE_NA,,HIRAGANA,,,真白,まっしろ,,masshiro,"prawdziwie biały
@@ -5613,7 +5618,8 @@ wózek",,,
 2754,WORD_NOUN,,HIRAGANA,,,台湾,たいわん,,taiwan,Taiwan,,,
 2755,WORD_NOUN,,HIRAGANA,,,目玉,めだま,,medama,gałka oczna,,,
 2756,WORD_NOUN,,HIRAGANA,"Genki kanji 2-18
-Genki dodatkowe 2-18",,目的,もくてき,,mokuteki,cel,do którego się zmierza,,
+Genki dodatkowe 2-18",,目的,もくてき,,mokuteki,"cel
+zamiar",do którego się zmierza,,
 2757,UNKNOWN,,HIRAGANA,,,二番目,にばんめ,,ni ban me,drugi,,,
 2758,WORD_NOUN,,HIRAGANA,,,個人,こじん,,kojin,"jednostka
 indywidualny człowiek",,,
@@ -7733,7 +7739,8 @@ absolutyzm",,,
 3829,WORD_NOUN,,HIRAGANA,,,門,かど,,kado,"brama
 wrota
 furtka
-drzwi",,,
+drzwi
+wejście",,,
 3830,WORD_NOUN,,HIRAGANA,,,門限,もんげん,,mongen,"godzina zamykania drzwi
 godzina zamykania bramy",,,
 3831,WORD_NOUN,,HIRAGANA,,,門扉,もんぴ,,monpi,skrzydło,bramy,,
@@ -15877,8 +15884,8 @@ zgadywać",,,
 uczyć się",,,
 7862,WORD_VERB_RU,,HIRAGANA,,,映える,はえる,,haeru,"błyszczeć
 wyglądać atrakcyjnie",,,
-7863,WORD_VERB_U,,HIRAGANA,,,映す,うつす,,utsusu,"robić zdjęcia
-kopiować",,,
+7863,WORD_VERB_U,,HIRAGANA,,,映す,うつす,,utsusu,"odbić
+wyświetlić",,,
 7864,WORD_VERB_U,,HIRAGANA,,,謀る,はかる,,hakaru,"planować
 zmawiać się
 obmyślać
@@ -23018,3 +23025,45 @@ ileś",przedrostek iku- jest nieco bardziej oficjalny niż nan- i bywa używany 
 11264,WORD_VERB_U,,HIRAGANA,,,解決がつく,かいけつがつく,,kaiketsu ga tsuku,"dojść do rozwiązania
 dojść do rozstrzygnięcia
 osiągnąć rozwiązanie",,,
+11265,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,歩,ほ,,ho,[klasyfikator do liczenia kroków],,,
+11266,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,一歩,いっぽ,,ippo,jeden,kroki,,
+11267,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,二歩,にほ,,niho,dwa,kroki,,
+11268,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,三歩,さんぽ,,sanpo,trzy,kroki,,
+11269,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,四歩,よんほ,,yonho,cztery,kroki,,
+11270,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,五歩,ごほ,,goho,pięć,kroki,,
+11271,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,六歩,ろっぽ,,roppo,sześć,kroki,,
+11272,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,七歩,ななほ,,nanaho,siedem,kroki,,
+11273,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,八歩,はっぽ,,happo,osiem,kroki,,
+11274,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,九歩,きゅうほ,,kyuuho,dziewięć,kroki,,
+11275,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,十歩,じっぽ ,,jippo,dziesięć,kroki,,
+11276,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,何歩,なんぽ,,nanpo,jak wiele,kroki,,
+11277,WORD_NOUN,,HIRAGANA,,,意思,いし,,ishi,"intencja
+myśli
+cel",,,
+11278,WORD_NOUN,,HIRAGANA,,,木綿,もめん,,momen,"bawełna
+tkanina
+tkanina bawełniana",,,
+11279,WORD_NOUN,,HIRAGANA,,,木綿糸,もめんいと,,momen' ito,"nić bawełniana
+przędza bawełniana",,,
+11280,WORD_NOUN,,HIRAGANA,,,門,もん,,mon,"brama
+wrota
+furtka
+drzwi
+wejście",,,
+11281,WORD_NOUN,,HIRAGANA,,,表門,おもてもん,,omotemon,"brama
+wejście od frontu",,,
+11282,WORD_NOUN,,HIRAGANA,,,裏門,うらもん,,uramon,tylne wejście,,,
+11283,WORD_NOUN,,HIRAGANA,,,全国,ぜんこく,,zenkoku,"cały kraj
+cały naród
+całe państwo",,,
+11284,WORD_NOUN,,HIRAGANA,,,全体,ぜんたい,,zentai,"całkowity
+pełny
+całość",,,
+11285,WORD_NOUN,,HIRAGANA,,,上着,うわぎ,,uwagi,"marynarka
+okrycie
+ubranie wierzchnie",,,
+11286,WORD_NOUN,,HIRAGANA,,,噂,うわさ,,uwasa,"plotka
+pogłoska
+słuchy",,,
+11287,WORD_VERB_IRREGULAR,,HIRAGANA,,,噂する,うわさする,,uwasa suru,"plotkować
+obgadywać",,,
