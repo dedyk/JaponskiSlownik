@@ -185,7 +185,9 @@ Genki kanji 1-6",,中国,ちゅうごく,,chuugoku,Chiny,,,1621
 wiedza",,,
 101,WORD_NOUN,,HIRAGANA_KATAKANA,Genki 1-1,,アジア研究,アジアけんきゅう,,ajiakenkyuu,orientalistyka,,,
 102,WORD_NOUN,,HIRAGANA,"Genki 1-1
-Genki kanji 2-21",,経済,けいざい,,keizai,ekonomia,,,
+Genki kanji 2-21",,経済,けいざい,,keizai,"ekonomia
+finanse
+gospodarowanie",,,
 103,WORD_NOUN,,HIRAGANA,Genki 1-1,,国際関係,こくさいかんけい,,kokusaikankei,stosunki międzynarodowe,,,
 104,WORD_NOUN,,KATAKANA,Genki 1-1,,-,コンピューター,,konpyuutaa,komputer,,,
 105,WORD_NOUN,,HIRAGANA,Genki 1-1,,人類学,じんるいがく,,jinruigaku,antropologia,,,
@@ -289,7 +291,9 @@ Genki kanji 1-8",,新聞,しんぶん,,shinbun,gazeta,,,
 Genki kanji 1-3
 Genki kanji 2-21",,時計,とけい,,tokei,zegarek,,,
 154,WORD_NOUN,,KATAKANA,Genki 1-2,,-,トレーナー,,toreenaa,bluza,,,
-155,WORD_NOUN,,KATAKANA,Genki 1-2,,-,ノート,,nooto,zeszyt,,,
+155,WORD_NOUN,,KATAKANA,Genki 1-2,,-,ノート,,nooto,"notes
+zeszyt
+notatki",,,
 156,WORD_NOUN,,KATAKANA,Genki 1-2,,-,ペン,,pen,długopis,,,
 157,WORD_NOUN,,HIRAGANA,Genki 1-2,,帽子,ぼうし,,boushi,"kapelusz
 czapka",,,
@@ -1258,7 +1262,11 @@ pełen wdzięku
 uroczy
 słodki
 czarującu",,,
-574,UNKNOWN,,HIRAGANA,Genki 1-7,,背,せ,,se,wzrost,,,
+574,UNKNOWN,,HIRAGANA,Genki 1-7,,背,"せ
+せい",,"se
+sei","wzrost
+postawa
+plecy",,,
 575,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,背が高い,せがたかい,,se ga takai,wysoki,,,
 576,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-7,,背が低い,せがひくい,,se ga hikui,niski,,,
 577,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-7
@@ -3789,7 +3797,9 @@ uprowadzenie",,,
 uprowadzać",,,
 1836,WORD_VERB_RU,,HIRAGANA,,,振られる,ふられる,,furareru,zostać porzucony,"np. przez dziewczynę, chłopaka",,
 1837,UNKNOWN,,HIRAGANA,,,失業,しつぎょう,,shitsugyou,bezrobocie,,,
-1838,WORD_ADJECTIVE_I,,HIRAGANA,,,軽い,かるい,,karui,lekki,nieciężki,,
+1838,WORD_ADJECTIVE_I,,HIRAGANA,,,軽い,かるい,,karui,"lekki (nieciężki)
+lekki
+niepoważny",nieciężki,,
 1839,WORD_ADJECTIVE_I,,HIRAGANA,,,醜い,みにくい,,minikui,"brzydki
 okropny
 wstrętny",,,
@@ -5223,6 +5233,7 @@ rachować",,,
 2566,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 2-17,,名前をつける,なまえをつける,,namae o tsukeru,nazywać,,,
 2567,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 2-17,,完成する,かんせいする,,kansei suru,"wykonywać
 wykończyć
+ukończyć
 udoskonalić
 ulepszyć",,,
 2568,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-17,,-,このような,,konoyouna,"jak tak
@@ -6352,7 +6363,8 @@ powtarzać
 kłaść (jedno na drugie)",,,
 3125,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,,重なる,かさなる,,kasanaru,"nakładać się
 powtarzać się
-leżeć (jedno na drugie)",,,
+leżeć (jedno na drugie)
+nagromadzić się",,,
 3126,WORD_ADJECTIVE_I,,HIRAGANA,,,重たい,おもたい,,omotai,ciężki,,,
 3127,WORD_ADJECTIVE_NA,,HIRAGANA,,,重大,じゅうだい,,juudai,"ważny
 poważny",,,
@@ -6946,7 +6958,9 @@ dyskusji",,
 3409,WORD_ADVERB,,HIRAGANA,,,共に,ともに,,tomoni,razem,bardziej oficjalnie,,
 3410,WORD_VERB_U,,HIRAGANA,,,除く,のぞく,,nozoku,"pomijać
 pozbywać się
-wykluczać",,,
+wykluczać
+usuwać
+wyłączać",,,
 3411,WORD_NOUN,,HIRAGANA,,,除外,じょがい,,jogai,wykluczenie,,,
 3412,WORD_NOUN,,HIRAGANA,,,除名,じょめい,,jomei,"skreślenie imienia
 wyrzucenie",,,
@@ -7234,7 +7248,11 @@ ekwipunek
 instalacja",,,
 3563,WORD_NOUN,,HIRAGANA,,,備蓄,びちく,,bichiku,"rezerwa
 zapasy",,,
-3564,WORD_VERB_RU,,HIRAGANA,,,冷える,ひえる,,hieru,"oziębiać się
+3564,WORD_VERB_RU,,HIRAGANA,,,冷える,ひえる,,hieru,"ochładzać się
+oziębiać się
+oziębić się
+stygnąć
+chłodzić się
 czuć ziąb",,,
 3565,WORD_VERB_U,,HIRAGANA,,,冷やす,ひやす,,hiyasu,"oziębiać
 ochładzać
@@ -8194,7 +8212,7 @@ działać",,,
 triumf",,,
 4063,WORD_NOUN,,HIRAGANA,,,利己主義,りこしゅぎ,,rikoshugi,egoizm,,,
 4064,WORD_NOUN,,HIRAGANA,,,利益,りえき,,rieki,"zysk
-przewaga
+korzyść
 dochód",,,
 4065,WORD_NOUN,,HIRAGANA,,,利用,りよう,,riyou,"używać
 wykorzystywać
@@ -8962,8 +8980,10 @@ ogród wewnętrzny",,,
 4447,WORD_NOUN,,HIRAGANA,,,校庭,こうてい,,koutei,plac szkolny,,,
 4448,WORD_NOUN,,HIRAGANA,,,庭球,ていきゅう,,teikyuu,tenis,,,
 4449,WORD_VERB_U,,HIRAGANA,,,割る,わる,,waru,"dzielić
+przedzielać
 ciąć
-łamać",,,
+łamać
+rozbić",,,
 4450,WORD_VERB_RU,,HIRAGANA,,,割れる,われる,,wareru,"łamać się
 pękać",,,
 4451,WORD_VERB_U,,HIRAGANA,,,割く,さく,,saku,"łamać
@@ -10312,7 +10332,8 @@ siew
 zasiew",,,
 5063,WORD_NOUN,,HIRAGANA,,,種無し,たねなし,,tanenashi,bez nasion,,,
 5064,WORD_NOUN,,HIRAGANA,Genki 2-21,,蚊,か,,ka,komar,,,769
-5065,WORD_NOUN,,HIRAGANA,Genki 2-21,,環境,かんきょう,,kankyou,środowisko,,,
+5065,WORD_NOUN,,HIRAGANA,Genki 2-21,,環境,かんきょう,,kankyou,"środowisko
+otoczenie",,,
 5066,WORD_NOUN,,HIRAGANA,Genki 2-21,,終電,しゅうでん,,shuuden,ostatni pociąg,,,
 5067,WORD_NOUN,,KATAKANA,Genki 2-21,,-,スピーチ,,supiichi,"przemówienie
 mowa
@@ -10621,7 +10642,8 @@ wybór wierszy",,,
 5221,WORD_NOUN,,HIRAGANA,,,完,かん,,kan,"wykończenie
 koniec",,,
 5222,WORD_NOUN,,HIRAGANA,,,完成,かんせい,,kansei,"zakończenie
-wykończenie",,,
+wykończenie
+ukończenie",,,
 5223,WORD_ADJECTIVE_NA,,HIRAGANA,,,完全,かんぜん,,kanzen,"dokonany
 perfekcyjny
 całkowity
@@ -12627,10 +12649,13 @@ stylowy",,,6149
 być umieszczonym
 być zamieszczonym
 być wspomnianym",,,
-6152,WORD_VERB_RU,,HIRAGANA,,,載せる,のせる,,noseru,"wsadzać
+6152,WORD_VERB_RU,,HIRAGANA,,,載せる,のせる,,noseru,"umieszczać (na czymś)
+położyć
+wsadzać
 ładować
 przewozić
-wozić",,,
+wozić
+zamieszczać (w gazecie, książce)",,,
 6153,WORD_NOUN,,HIRAGANA,,,量,りょう,,ryou,"ilość
 liczba
 mierzenie
@@ -15346,7 +15371,8 @@ prawda",,,"7570
 7570,WORD_NOUN,,HIRAGANA,,,理,ことわり,,kotowari,przyczyna,,,"7569
 8860"
 7571,WORD_NOUN,,HIRAGANA,,,理性,りせい,,risei,intelekt,,,
-7572,WORD_NOUN,,HIRAGANA,,,理解,りかい,,rikai,"zrozumienie
+7572,WORD_NOUN,,HIRAGANA,,,理解,りかい,,rikai,"rozumienie
+zrozumienie
 wyrozumiałość",,,
 7573,WORD_NOUN,,HIRAGANA,Genki 2-23,,理想,りそう,,risou,ideał,,,
 7574,WORD_NUMBER,,HIRAGANA,,,弐,に,,ni,"dwa
@@ -23127,3 +23153,77 @@ nowa twarz",,,
 i ... oraz
 czasami ..., a czasami
 to ..., to ...",,,
+11314,WORD_NOUN,,HIRAGANA,,,皮膚病,ひふびょう,,hifubyou,choroba skóry,,,
+11315,WORD_NOUN,,HIRAGANA,,,被害地,ひがいち,,higaichi,poszkodowany rejon,,,
+11316,WORD_NOUN,,HIRAGANA,,,東側,ひがしがわ,,higashi gawa,wschodnia strona,,,
+11317,WORD_NOUN,,HIRAGANA,,,東風,ひがしかぜ,,higashi kaze,wschodni wiatr,,,
+11318,WORD_NOUN,,HIRAGANA,,,社会環境,しゃかいかんきょう,,shakai kankyou,środowisko społeczne,,,
+11319,WORD_NOUN,,HIRAGANA,,,家庭環境,かていかんきょう,,katei kankyou,środowisko domowe,,,
+11320,WORD_NOUN,,HIRAGANA,,,環境衛生,かんきょうえいせい ,,kankyou eisei,dbanie o czystość środowiska,,,
+11321,WORD_NOUN,,HIRAGANA,,,可能,かのう,,kanou,"możliwość
+możliwy",,,
+11322,WORD_VERB_IRREGULAR,,HIRAGANA,,,観察する,かんさつする,,kansatsu suru,obserwować,,,
+11323,WORD_NOUN,,HIRAGANA,,,雨傘,あまがさ ,,amagasa,parasol od deszczu,,,
+11324,WORD_NOUN,,HIRAGANA,,,日傘,ひがさ,,higasa,parasol od słońca,,,
+11325,WORD_NOUN,,HIRAGANA,,,毛糸,けいと ,,keito,"wełna
+przędza wełniana
+włóczka",,,
+11326,WORD_VERB_IRREGULAR,,HIRAGANA,,,契約する,けいやくする,,keiyaku suru,zawierać umowę,,,
+11327,WORD_NOUN,,HIRAGANA,,,契約書,けいやくしょ,,keiyakusho,"kontrakt na piśmie
+umowa na piśmie",,,
+11328,WORD_VERB_U,,HIRAGANA,,,契約を結ぶ,けいやくをむすぶ,,keiyaku o musubu,zawierać umowę,,,
+11329,WORD_VERB_U,,HIRAGANA,,,契約を守る,けいやくをまもる,,keiyaku o mamoru,dotrzymywać umowy,,,
+11330,WORD_VERB_U,,HIRAGANA,,,契約を破る,けいやくをやぶる,,keiyaku o yaburu,zrywać umowę,,,
+11331,WORD_VERB_U,,HIRAGANA,,,覗く,のぞく,,nozoku,"podglądać
+zaglądać
+spoglądać
+zerkać",,,
+11332,WORD_VERB_U,,HIRAGANA,,,窺く,のぞく,,nozoku,"podglądać
+zaglądać
+spoglądać
+zerkać",,,
+11333,WORD_VERB_U,,HIRAGANA,,,臨く,のぞく,,nozoku,"podglądać
+zaglądać
+spoglądać
+zerkać",,,
+11334,WORD_VERB_U,,HIRAGANA,,,覘く,のぞく,,nozoku,"podglądać
+zaglądać
+spoglądać
+zerkać",,,
+11335,WORD_VERB_IRREGULAR,,HIRAGANA,,,理解する,りかいする,,rikai suru,rozumieć,,,
+11336,WORD_ADJECTIVE_NA,,HIRAGANA,,,利口,りこう,,rikou,"mądry
+bystry
+inteligentny
+roztropny
+rozsądny",,,
+11337,WORD_ADJECTIVE_NA,,HIRAGANA,,,俐巧,りこう,,rikou,"mądry
+bystry
+inteligentny
+roztropny
+rozsądny",,,
+11338,WORD_ADJECTIVE_NA,,HIRAGANA,,,利巧,りこう,,rikou,"mądry
+bystry
+inteligentny
+roztropny
+rozsądny",,,
+11339,WORD_ADJECTIVE_NA,,HIRAGANA,,,悧巧,りこう,,rikou,"mądry
+bystry
+inteligentny
+roztropny
+rozsądny",,,
+11340,WORD_NOUN,,HIRAGANA,,,作用,さよう,,sayou,"działanie
+funkcjonowanie
+praca
+robota",,,
+11341,WORD_VERB_IRREGULAR,,HIRAGANA,,,作用する,さようする,,sayou suru,działać,,,
+11342,WORD_NOUN,,HIRAGANA,,,電気の作用,でんきのさよう,,denki no sayou,działanie prądu elektrycznego,,,
+11343,WORD_ADVERB,,HIRAGANA,,,割に,わりに,,wari ni,"raczej
+stosunkowo
+w stosunku do
+względnie
+odnośnie do",,,
+11344,WORD_ADVERB,,HIRAGANA,,,割りに,わりに,,wari ni,"raczej
+stosunkowo
+w stosunku do
+względnie
+odnośnie do",,,
