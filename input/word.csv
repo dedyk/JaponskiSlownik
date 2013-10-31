@@ -1886,7 +1886,8 @@ po długim okresie czasu",,,
 bardziej
 [II poziom stopniowania przymiotników]",,,
 844,WORD_NOUN,,HIRAGANA,Genki 1-11,,作家,さっか,,sakka,pisarz,,,
-845,WORD_NOUN,,HIRAGANA,Genki 1-11,,警察官,けいさつかん,,keisatsukan,policjant,,,
+845,WORD_NOUN,,HIRAGANA,Genki 1-11,,警察官,けいさつかん,,keisatsukan,"policjant
+funkcjonariusz policji",,,
 846,WORD_NOUN,,HIRAGANA,Genki 1-11,,俳優,はいゆう,,haiyuu,aktor,,,
 847,WORD_NOUN,,HIRAGANA,Genki 1-11,,看護師,かんごし,,kangoshi,"pielęgniarka
 pielęgniarz",w szpitalu,,
@@ -3962,7 +3963,10 @@ ustosunkowanie
 nastawienie",,,
 1934,WORD_VERB_U,,HIRAGANA,Genki 2-15,,示す,しめす,,shimesu,"pokazywać
 wykazywać
-wskazywać",,,
+wskazywać
+wypunktować
+zwrócić uwagę
+wyrazić",,,
 1935,WORD_NOUN,,HIRAGANA,Genki 2-15,,握手,あくしゅ,,akushu,uścisk ręki,,,
 1936,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-15,,握手をする,あくしゅをする,,akushu o suru,"uścisnąć rękę
 podanie sobie ręki",,,
@@ -4044,7 +4048,9 @@ plac
 przestrzeń
 okazja","miejsce, gdzie ma miejsce jakaś akcja",,11234
 1977,WORD_VERB_RU,,HIRAGANA,"Genki kanji 2-15
-Genki 2-17",,足りる,たりる,,tariru,wystarczać,,,
+Genki 2-17",,足りる,たりる,,tariru,"wystarczać
+być wystarczającym
+mieć dosyć",,,
 1978,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,一足,いっそく,,issoku,jedna para,np. butów,,
 1979,UNKNOWN,,HIRAGANA,"Genki kanji 2-15
 Genki kanji 2-19",,水不足,みずぶそく,,mizu bu soku,brak wody,,,
@@ -6283,7 +6289,8 @@ jeździec",,,
 kalkulować",,,
 3088,WORD_VERB_U,,HIRAGANA,,,計らう,はからう,,hakarau,"organizować
 dopilnowywać",,,
-3089,WORD_NOUN,,HIRAGANA,,,計算,けいさん,,keisan,"liczenie
+3089,WORD_NOUN,,HIRAGANA,,,計算,けいさん,,keisan,"rachunek
+liczenie
 kalkulacja
 obliczanie",,,
 3090,WORD_NOUN,,HIRAGANA,,,会計,かいけい,,kaikei,"księgowanie
@@ -9219,9 +9226,11 @@ zaopatrzenie",,,
 4569,WORD_NOUN,,HIRAGANA,,,由,よし,,yoshi,"przyczyna
 środek
 sposób",,,8764
-4570,WORD_NOUN,,HIRAGANA,Genki 2-22,,自由,じゆう,,jiyuu,"wolność
+4570,WORD_NOUN,,HIRAGANA,Genki 2-22,,自由,じゆう,,jiyuu,"wolność (bez ograniczeń)
 swoboda
-niezależność",,,
+niezależność
+swobodnie
+bez skrępowania",,,
 4571,WORD_NOUN,,HIRAGANA,,,由来,ゆらい,,yurai,"pochodzenie
 historia
 źródło",,,
@@ -9390,7 +9399,9 @@ Genki dodatkowe 2-20",,-,する,,suru,kosztować,,,"253
 7998"
 4645,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-20,,屹度,きっと,,kitto,"z pewnością
 na pewno",,,
-4646,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-20,,-,あんなに,,annani,taki,,,
+4646,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-20,,-,あんなに,,annani,"tak
+w ten sposób
+do tego stopnia",,,
 4647,WORD_VERB_U,,HIRAGANA,"Genki dodatkowe 2-20
 Genki 2-21",,騙す,だます,,damasu,oszukiwać,,,
 4648,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-20,,抱く,だく,,daku,"obejmować
@@ -10838,9 +10849,12 @@ stawać twarzą w twarz
 pomagać
 obsługiwać",,,
 5328,UNKNOWN,,HIRAGANA,,,臨床,りんしょう,,rinshou,kliniczny,,,
-5329,WORD_NOUN,,HIRAGANA,,,臨時,りんじ,,rinji,"tymczasowy
+5329,WORD_NOUN,,HIRAGANA,,,臨時,りんじ,,rinji,"specjalny
+nadzwyczajny
 specjalny
-wyjątkowy",,,
+wyjątkowy
+tymczasowy
+w zastępstwie",,,
 5330,WORD_NOUN,,HIRAGANA,,,臨終,りんじゅう,,rinjuu,"godzina śmierci
 ostatnia chwila",,,
 5331,WORD_NOUN,,HIRAGANA,,,臨席,りんせき,,rinseki,"obecność
@@ -11228,6 +11242,7 @@ organizacja
 prawa
 regulacje",,,
 5533,WORD_NOUN,,HIRAGANA,,,制度,せいど,,seido,"system
+ustrój
 instytucja",,,
 5534,WORD_NOUN,,HIRAGANA,,,制作,せいさく,,seisaku,dzieło,"np. malarskie, literackie",,
 5535,WORD_NOUN,,HIRAGANA,,,制御,せいぎょ,,seigyo,"kontrola
@@ -18738,8 +18753,8 @@ wygodny",,,
 9280,WORD_NOUN,,HIRAGANA,,,家屋,かおく,,kaoku,dom,,,
 9281,WORD_NOUN,,HIRAGANA,,,形式,けいしき ,,keishiki,"formalność
 forma
+kształt
 metoda
-system
 styl",,,
 9282,WORD_NOUN,,HIRAGANA,,,梁木,りょうぼく ,,ryouboku,"belka
 dźwigar
@@ -23067,3 +23082,51 @@ pogłoska
 słuchy",,,
 11287,WORD_VERB_IRREGULAR,,HIRAGANA,,,噂する,うわさする,,uwasa suru,"plotkować
 obgadywać",,,
+11288,WORD_NOUN,,HIRAGANA,,,自由時間,じゆうじかん,,jiyuu jikan,wolny czas,,,
+11289,WORD_NOUN,,HIRAGANA,,,自由行動,じゆうこうどう,,jiyuu koudou,czas wolny,np. podczas wycieczki,,
+11290,WORD_NOUN,,HIRAGANA,,,自由経済,じゆうけいざい,,jiyuu keizai,gospodarka wolnorynkowa,,,
+11291,WORD_NOUN,,HIRAGANA,,,出版の自由,しゅっぱんのじゆう,,shuppan no jiyuu,wolność publikacji,,,
+11292,WORD_NOUN,,HIRAGANA,,,表現の自由,ひょうげんのじゆう,,hyougen no jiyuu,wolność wypowiedzi,,,
+11293,WORD_NOUN,,HIRAGANA,,,蛍光灯,けいこうとう,,keikoutou,"jarzeniówka
+świetlówka",,,
+11294,WORD_VERB_IRREGULAR,,HIRAGANA,,,計算する,けいさんする,,keisan suru,obliczać,,,
+11295,WORD_VERB_U,,HIRAGANA,,,計算が合う,けいさんがあう,,keisan ga au,rachunek się zgadza,,,
+11296,WORD_VERB_RU,,HIRAGANA,,,計算を間違える,けいさんをまちがえる,,keisan wo machigaeru,pomylić się w rachunku,,,
+11297,WORD_EXPRESSION,,HIRAGANA,,,計算が早い,計算が早い,,keisan ga hayai,"szybko liczyć
+szybko obliczać",,,
+11298,WORD_NOUN,,HIRAGANA,,,警察署,けいさつしょ,,keisatsusho,komisariat,,,
+11299,WORD_NOUN,,HIRAGANA,,,警察犬,けいさつけん,,keisatsuken,pies policyjny,,,
+11300,WORD_NOUN,,HIRAGANA,,,陸,りく ,,riku,"ląd
+brzeg",,,
+11301,WORD_NOUN,,HIRAGANA,,,陸,おか ,,oka,"ląd
+brzeg",,,
+11302,WORD_NOUN,,HIRAGANA,,,理屈,りくつ ,,rikutsu,"racjonalność
+logika
+wykręt
+wymówka",,,
+11303,WORD_NOUN,,HIRAGANA,,,生物,せいぶつ,,seibutsu,istota żywa,,,
+11304,WORD_NOUN,,HIRAGANA,,,生長,せいちょう,,seichou,"wzrost
+rozwój",,,
+11305,WORD_VERB_IRREGULAR,,HIRAGANA,,,生長する,せいちょうする,,seichou suru,rozwijać się,,,
+11306,WORD_NOUN,,HIRAGANA,,,成長,せいちょう,,seichou,"rozwój
+dorastanie",,,
+11307,WORD_VERB_IRREGULAR,,HIRAGANA,,,成長する,せいちょうする,,seichou suru,"wyrastać
+dorastać",,,
+11308,WORD_NOUN,,HIRAGANA,,,教育制度,きょういくせいど ,,kyouiku seido,system oświaty,,,
+11309,WORD_NOUN,,HIRAGANA,,,選挙制度,せんきょせいど ,,senkyo seido,system wyborczy,,,
+11310,WORD_NOUN,,HIRAGANA,,,日本政府,にほんせいふ,,nihon seifu,rząd japoński,,,
+11311,WORD_VERB_IRREGULAR,,HIRAGANA,,,制限する,せいげんする,,seigen suru,ograniczać,,,
+11312,UNKNOWN,PREFIX,HIRAGANA,,,新,しん,,shin,"nowy
+nowoczesny
+najnowszy",,,
+11313,WORD_NOUN,,HIRAGANA,,,新製品,しんせいひん,,shinseihin,"nowość rynkowa
+nowy produkt",,,
+11314,WORD_NOUN,,HIRAGANA,,,新婚,しんこん,,shinkon,"nowożeńcy
+młoda para",,,
+11315,WORD_NOUN,,HIRAGANA,,,新人,しんじん,,shinjin,"nowy człowiek
+nowa twarz",,,
+11316,WORD_NOUN,,HIRAGANA,,,新学期,しんがっき,,shingakki,nowy semestr,,,
+11317,WORD_PARTICULE,,HIRAGANA,,,-,たり,,tari,"i ..., i ...
+i ... oraz
+czasami ..., a czasami
+to ..., to ...",,,
