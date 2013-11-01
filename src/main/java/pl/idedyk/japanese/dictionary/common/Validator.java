@@ -22,24 +22,25 @@ import pl.idedyk.japanese.dictionary.tools.KanaHelper.KanaWord;
 
 public class Validator {
 
-	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, List<KanaEntry> hiraganaEntries,
-			List<KanaEntry> katakanaEntries, TreeMap<String, List<JMEDictEntry>> jmedict, 
-			TreeMap<String, List<JMEDictEntry>> jmedictName) throws JapaneseDictionaryException {
-		
+	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries,
+			List<KanaEntry> hiraganaEntries, List<KanaEntry> katakanaEntries,
+			TreeMap<String, List<JMEDictEntry>> jmedict, TreeMap<String, List<JMEDictEntry>> jmedictName)
+			throws JapaneseDictionaryException {
+
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
-		
+
 		for (KanaEntry kanaEntry : hiraganaEntries) {
 			hiraganaCache.put(kanaEntry.getKana(), kanaEntry);
 		}
 
 		Map<String, KanaEntry> katakanaCache = new HashMap<String, KanaEntry>();
-		
+
 		for (KanaEntry kanaEntry : katakanaEntries) {
 			katakanaCache.put(kanaEntry.getKana(), kanaEntry);
 		}
-		
+
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
-			
+
 			/*
 			String kanji = polishJapaneseEntry.getKanji();
 			
@@ -53,89 +54,105 @@ public class Validator {
 				}
 			}
 			*/
-			
+
 			List<String> kanaList = polishJapaneseEntry.getKanaList();
 			List<String> romajiList = polishJapaneseEntry.getRomajiList();
 			String prefixKana = polishJapaneseEntry.getPrefixKana();
 			String prefixRomaji = polishJapaneseEntry.getPrefixRomaji();
-			
+
 			List<String> realRomajiList = new ArrayList<String>();
-			
+
 			boolean ignoreError = false;
-			
+
 			for (int idx = 0; idx < romajiList.size(); ++idx) {
-								
+
 				String currentRomaji = romajiList.get(idx);
-				
+
 				String currentRomajiWithPrefix = prefixRomaji + currentRomaji;
-				
+
 				String currentKana = kanaList.get(idx);
-				
-				KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord(currentKana, hiraganaEntries, katakanaEntries);
-				
+
+				KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord(currentKana,
+						hiraganaEntries, katakanaEntries);
+
 				String currentKanaAsRomaji = KanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
-				
-				KanaWord kanaWord = createKanaWord(currentRomajiWithPrefix, polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
-				
+
+				KanaWord kanaWord = createKanaWord(currentRomajiWithPrefix, polishJapaneseEntry.getWordType(),
+						hiraganaCache, katakanaCache);
+
 				if (kanaWord == null) {
 					ignoreError = true;
 				}
-				
-				if (ignoreError == true || (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
-					
-					if (prefixKana.equals("を") == true && prefixRomaji.equals("o") == true) {												
+
+				if (ignoreError == true
+						|| (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
+
+					if (prefixKana.equals("を") == true && prefixRomaji.equals("o") == true) {
 						polishJapaneseEntry.setRealPrefixRomaji("wo");
 					} else if (prefixRomaji != null) {
 						polishJapaneseEntry.setRealPrefixRomaji(prefixRomaji);
 					}
-					
+
 					if (polishJapaneseEntry.getRealPrefixRomaji() == null) {
 						polishJapaneseEntry.setRealPrefixRomaji("");
 					}
-					
-					kanaWord = createKanaWord(polishJapaneseEntry.getRealPrefixRomaji() + currentRomaji, polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
-					
-					if (ignoreError == true || (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
-						
+
+					kanaWord = createKanaWord(polishJapaneseEntry.getRealPrefixRomaji() + currentRomaji,
+							polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
+
+					if (ignoreError == true
+							|| (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
+
 						currentRomaji = currentRomaji.replaceAll(" o ", " wo ");
-						
+						currentRomaji = currentRomaji.replaceAll(" e ", " he ");
+
 						realRomajiList.add(currentRomaji);
-						
-						kanaWord = createKanaWord(polishJapaneseEntry.getRealPrefixRomaji() + currentRomaji, polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
-						
-						if (ignoreError == false && (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
-							throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ": " + (prefixKana + currentKana) + " - " + KanaHelper.createKanaString(kanaWord));
-						}						
+
+						kanaWord = createKanaWord(polishJapaneseEntry.getRealPrefixRomaji() + currentRomaji,
+								polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
+
+						if (ignoreError == false
+								&& (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
+							throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ": "
+									+ (prefixKana + currentKana) + " - " + KanaHelper.createKanaString(kanaWord));
+						}
 					}
 				}
-				
+
 				// is hiragana word
-				KanaWord currentKanaAsRomajiAsHiraganaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, currentKanaAsRomaji);
-				String currentKanaAsRomajiAsHiraganaWordAsAgainKana = KanaHelper.createKanaString(currentKanaAsRomajiAsHiraganaWord);
+				KanaWord currentKanaAsRomajiAsHiraganaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache,
+						currentKanaAsRomaji);
+				String currentKanaAsRomajiAsHiraganaWordAsAgainKana = KanaHelper
+						.createKanaString(currentKanaAsRomajiAsHiraganaWord);
 
 				// is katakana word
-				KanaWord currentKanaAsRomajiAsKatakanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, currentKanaAsRomaji);
-				String currentKanaAsRomajiAsKatakanaWordAsAgainKana = KanaHelper.createKanaString(currentKanaAsRomajiAsKatakanaWord);
+				KanaWord currentKanaAsRomajiAsKatakanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache,
+						currentKanaAsRomaji);
+				String currentKanaAsRomajiAsKatakanaWordAsAgainKana = KanaHelper
+						.createKanaString(currentKanaAsRomajiAsKatakanaWord);
 
-				if (ignoreError == false && currentKana.equals(currentKanaAsRomajiAsHiraganaWordAsAgainKana) == false &&
-						currentKana.equals(currentKanaAsRomajiAsKatakanaWordAsAgainKana) == false) {
+				if (ignoreError == false && currentKana.equals(currentKanaAsRomajiAsHiraganaWordAsAgainKana) == false
+						&& currentKana.equals(currentKanaAsRomajiAsKatakanaWordAsAgainKana) == false) {
 
-					throw new JapaneseDictionaryException("Validate error for word: " + currentKana + " (" + currentKanaAsRomaji + ") vs " + currentKanaAsRomajiAsHiraganaWordAsAgainKana + " or " + currentKanaAsRomajiAsKatakanaWordAsAgainKana);					
+					throw new JapaneseDictionaryException("Validate error for word: " + currentKana + " ("
+							+ currentKanaAsRomaji + ") vs " + currentKanaAsRomajiAsHiraganaWordAsAgainKana + " or "
+							+ currentKanaAsRomajiAsKatakanaWordAsAgainKana);
 				}
 			}
-			
+
 			if (realRomajiList.size() > 0 && romajiList.size() != realRomajiList.size()) {
-				throw new JapaneseDictionaryException("realRomajiList.size() > 0 && romajiList.size() != realRomajiList.size()");
+				throw new JapaneseDictionaryException(
+						"realRomajiList.size() > 0 && romajiList.size() != realRomajiList.size()");
 			}
-			
+
 			if (realRomajiList.size() > 0) {
 				polishJapaneseEntry.setRealRomajiList(realRomajiList);
 			}
 		}
-		
+
 		// validate verb
 		final Map<String, DictionaryEntryType> mapEdictTypeToDictionaryEntryType = new HashMap<String, DictionaryEntryType>();
-		
+
 		mapEdictTypeToDictionaryEntryType.put("v1", DictionaryEntryType.WORD_VERB_RU);
 		mapEdictTypeToDictionaryEntryType.put("v5k", DictionaryEntryType.WORD_VERB_U);
 		mapEdictTypeToDictionaryEntryType.put("v5k-s", DictionaryEntryType.WORD_VERB_U);
@@ -157,190 +174,207 @@ public class Validator {
 		mapEdictTypeToDictionaryEntryType.put("vs-s", DictionaryEntryType.WORD_VERB_IRREGULAR);
 		mapEdictTypeToDictionaryEntryType.put("v5aru", DictionaryEntryType.WORD_VERB_U);
 		mapEdictTypeToDictionaryEntryType.put("v5u-s", DictionaryEntryType.WORD_VERB_U);
-		
+
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
-			
+
 			String kanji = currentPolishJapaneseEntry.getKanji();
-			
+
 			if (kanji != null && kanji.equals("-") == true) {
 				kanji = null;
 			}
-			
+
 			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
-			
+
 			List<JMEDictEntry> foundJMEDict = null;
-			
+
 			for (String currentKana : kanaList) {
-				
+
 				foundJMEDict = jmedict.get(JMEDictReader.getMapKey(kanji, currentKana));
-				
+
 				if (foundJMEDict != null) {
 					break;
 				}
 			}
-			
+
 			if (foundJMEDict != null) {
-				
+
 				DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
-				
-				if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U || dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU ||
-						dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
-					
+
+				if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U
+						|| dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU
+						|| dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
+
 					boolean noFound = true;
 					List<String> noFoundPosType = null;
-					
+
 					for (JMEDictEntry currentFoundJMEDict : foundJMEDict) {
-						
-						DictionaryEntryType dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(mapEdictTypeToDictionaryEntryType, currentFoundJMEDict.getPos());
-						
+
+						DictionaryEntryType dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(
+								mapEdictTypeToDictionaryEntryType, currentFoundJMEDict.getPos());
+
 						if (dictionaryEntryTypeFromEdictPos == null) {
 							noFoundPosType = currentFoundJMEDict.getPos();
 						}
-						
+
 						if (dictionaryEntryType == dictionaryEntryTypeFromEdictPos) {
 							noFound = false;
-						}						
+						}
 					}
-										
+
 					if (noFound == true) {
-						
-						if (noFoundPosType == null)  {
-							
-							System.err.println("Dictionary entry type edict different for: " + currentPolishJapaneseEntry);
-							
+
+						if (noFoundPosType == null) {
+
+							System.err.println("Dictionary entry type edict different for: "
+									+ currentPolishJapaneseEntry);
+
 							System.exit(1);
-							
+
 						} else {
 							System.out.println("Can't find dictionary entry type for: " + currentPolishJapaneseEntry);
 						}
-					}					
-				}			
+					}
+				}
 			}
 		}
-		
+
 		// validate names
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
-			
+
 			DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
-			
-			if (	dictionaryEntryType != DictionaryEntryType.WORD_NAME &&
-					dictionaryEntryType != DictionaryEntryType.WORD_MALE_NAME &&
-					dictionaryEntryType != DictionaryEntryType.WORD_FEMALE_NAME) {
-				
+
+			if (dictionaryEntryType != DictionaryEntryType.WORD_NAME
+					&& dictionaryEntryType != DictionaryEntryType.WORD_MALE_NAME
+					&& dictionaryEntryType != DictionaryEntryType.WORD_FEMALE_NAME) {
+
 				continue;
 			}
-			
+
 			String kanji = currentPolishJapaneseEntry.getKanji();
-			
+
 			if (kanji.equals("-") == true) {
 				kanji = null;
 			}
-			
+
 			if (currentPolishJapaneseEntry.getKanaList().size() > 1) {
 				throw new JapaneseDictionaryException("currentPolishJapaneseEntry.getKanaList().size() > 1");
 			}
-			
+
 			String kana = currentPolishJapaneseEntry.getKanaList().get(0); // nie powinno byc wiecej kany
-			
+
 			List<JMEDictEntry> jmedictEntryList = jmedictName.get(JMEDictReader.getMapKey(kanji, kana));
-			
+
 			if (jmedictEntryList == null || jmedictEntryList.size() == 0) {
 				System.out.println("Warning jmedict not found for: " + currentPolishJapaneseEntry + "\n");
-				
+
 			} else {
-				
+
 				if (jmedictEntryList.size() == 1) {
-					
+
 					JMEDictEntry jmeDictEntry = jmedictEntryList.get(0);
-					
+
 					List<String> trans = jmeDictEntry.getTrans();
-					
-					if (dictionaryEntryType == DictionaryEntryType.WORD_NAME && (trans.contains("given") == false && trans.contains("masc") == false && trans.contains("fem") == false)) {
-						System.out.println("Warning jmedict name type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
+
+					if (dictionaryEntryType == DictionaryEntryType.WORD_NAME
+							&& (trans.contains("given") == false && trans.contains("masc") == false && trans
+									.contains("fem") == false)) {
+						System.out.println("Warning jmedict name type not found for: " + currentPolishJapaneseEntry
+								+ " - " + trans + "\n");
 					}
 
-					if (dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME && (trans.contains("given") == false && trans.contains("masc") == false)) {
-						System.out.println("Warning jmedict name male type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
+					if (dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME
+							&& (trans.contains("given") == false && trans.contains("masc") == false)) {
+						System.out.println("Warning jmedict name male type not found for: "
+								+ currentPolishJapaneseEntry + " - " + trans + "\n");
 					}
 
-					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME && (trans.contains("given") == false && trans.contains("fem") == false)) {
-						System.out.println("Warning jmedict name female type not found for: " + currentPolishJapaneseEntry + " - " + trans + "\n");
+					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME
+							&& (trans.contains("given") == false && trans.contains("fem") == false)) {
+						System.out.println("Warning jmedict name female type not found for: "
+								+ currentPolishJapaneseEntry + " - " + trans + "\n");
 					}
-					
+
 				} else {
-					
+
 					boolean wasOk = false;
-					
+
 					for (JMEDictEntry jmeDictEntry : jmedictEntryList) {
-												
+
 						List<String> trans = jmeDictEntry.getTrans();
-						
-						if (dictionaryEntryType == DictionaryEntryType.WORD_NAME && (trans.contains("given") == true || trans.contains("masc") == true || trans.contains("fem") == true)) {
-							wasOk = true; 
-							
+
+						if (dictionaryEntryType == DictionaryEntryType.WORD_NAME
+								&& (trans.contains("given") == true || trans.contains("masc") == true || trans
+										.contains("fem") == true)) {
+							wasOk = true;
+
 							break;
 						}
 
-						if (dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME && (trans.contains("given") == true || trans.contains("masc") == true)) {
+						if (dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME
+								&& (trans.contains("given") == true || trans.contains("masc") == true)) {
 							wasOk = true;
-							
+
 							break;
 						}
 
-						if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME && (trans.contains("given") == true || trans.contains("fem") == true)) {
+						if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME
+								&& (trans.contains("given") == true || trans.contains("fem") == true)) {
 							wasOk = true;
-							
+
 							break;
 						}
-					}	
-					
+					}
+
 					if (wasOk == false) {
 						System.out.println("Warning jmedict name type error for: " + currentPolishJapaneseEntry + "\n");
 					}
 				}
 			}
-		}		
+		}
 	}
-	
-	private static DictionaryEntryType getDictionaryEntryTypeFromEdictPos(Map<String, DictionaryEntryType> mapEdictTypeToDictionaryEntryType, List<String> pos) {
-		
+
+	private static DictionaryEntryType getDictionaryEntryTypeFromEdictPos(
+			Map<String, DictionaryEntryType> mapEdictTypeToDictionaryEntryType, List<String> pos) {
+
 		for (String currentPos : pos) {
-			
+
 			DictionaryEntryType dictionaryEntryType = mapEdictTypeToDictionaryEntryType.get(currentPos);
-			
+
 			if (dictionaryEntryType != null) {
 				return dictionaryEntryType;
 			}
 		}
-		
-		return null;		
+
+		return null;
 	}
-	
-	private static KanaWord createKanaWord(String romaji, WordType wordType, Map<String, KanaEntry> hiraganaCache, Map<String, KanaEntry> katakanaCache) throws JapaneseDictionaryException {
-		
+
+	private static KanaWord createKanaWord(String romaji, WordType wordType, Map<String, KanaEntry> hiraganaCache,
+			Map<String, KanaEntry> katakanaCache) throws JapaneseDictionaryException {
+
 		KanaWord kanaWord = null;
-		
-		if (wordType == WordType.HIRAGANA) { 
+
+		if (wordType == WordType.HIRAGANA) {
 			kanaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, romaji);
-		} else if (wordType == WordType.KATAKANA) { 
+		} else if (wordType == WordType.KATAKANA) {
 			kanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, romaji);
 		} else if (wordType == WordType.HIRAGANA_KATAKANA) {
 			return null;
 		} else if (wordType == WordType.KATAKANA_HIRAGANA) {
 			return null;
-		} else if (wordType == WordType.HIRAGANA_EXCEPTION) { 
+		} else if (wordType == WordType.HIRAGANA_EXCEPTION) {
 			return null;
 		} else {
 			throw new RuntimeException("Bad word type");
 		}
 
 		if (kanaWord.remaingRestChars.equals("") == false) {
-			throw new JapaneseDictionaryException("Validate error for word: " + romaji + ", remaing: " + kanaWord.remaingRestChars);
+			throw new JapaneseDictionaryException("Validate error for word: " + romaji + ", remaing: "
+					+ kanaWord.remaingRestChars);
 		}
-		
+
 		return kanaWord;
 	}
-	
+
 	/*
 	private static boolean containsCharInKanaJapaneseiKanaEntryList(List<KanaEntry> kanaEntryList, String kanaChar) {
 		
@@ -356,7 +390,7 @@ public class Validator {
 		return false;
 	}
 	*/
-	
+
 	/*
 	private static void validateDictionaryAndKanjiDictionary(List<PolishJapaneseEntry> japaneseEntries) {
 		
@@ -456,7 +490,7 @@ public class Validator {
 			wasError = true;
 			System.out.println(entry1.getKanji() + ": " + entry1.getWordType() + " != " + entry2.getWordType());
 		}
-/*
+	/*
 		if (entry1.getKanaList().equals(entry2.getKanaList()) == false) {
 			wasError = true;
 			System.out.println(entry1.getKanji() + ": " + entry1.getKanaList() + " != " + entry2.getKanaList());
@@ -476,7 +510,7 @@ public class Validator {
 			wasError = true;
 			System.out.println(entry1.getKanji() + ": " + entry1.getInfo() + " != " + entry2.getInfo());
 		}
-* /
+	* /
 		
 		if (wasError == true) {
 			System.out.println();
@@ -486,59 +520,61 @@ public class Validator {
 	}
 	
 	*/
-	
+
 	public static void detectDuplicatePolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries) {
-		
+
 		StringBuffer report = new StringBuffer();
-		
+
 		// kanji
 		TreeMap<String, TreeSet<PolishJapaneseEntry>> duplicatedKanji = new TreeMap<String, TreeSet<PolishJapaneseEntry>>();
-		
+
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
-			
+
 			if (polishJapaneseEntry.isUseEntry() == false) {
 				continue;
 			}
-			
+
 			int id = polishJapaneseEntry.getId();
 			String kanji = polishJapaneseEntry.getKanji();
-			
+
 			if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
 				continue;
 			}
-			
-			List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanji(polishJapaneseKanjiEntries, id, true, kanji);
-			
+
+			List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanji(
+					polishJapaneseKanjiEntries, id, true, kanji);
+
 			if (findPolishJapaneseKanjiEntry.size() > 0) {
-				
-				findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanji(polishJapaneseKanjiEntries, id, false, kanji);
-				
+
+				findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanji(polishJapaneseKanjiEntries, id,
+						false, kanji);
+
 				TreeSet<PolishJapaneseEntry> polishJapaneseEntryKanjiTreeSet = duplicatedKanji.get(kanji);
-				
+
 				if (polishJapaneseEntryKanjiTreeSet == null) {
 					polishJapaneseEntryKanjiTreeSet = new TreeSet<PolishJapaneseEntry>();
 				}
-				
+
 				polishJapaneseEntryKanjiTreeSet.addAll(findPolishJapaneseKanjiEntry);
-				
+
 				duplicatedKanji.put(kanji, polishJapaneseEntryKanjiTreeSet);
 			}
 		}
-		
+
 		Iterator<String> duplicatedKanjiIterator = duplicatedKanji.keySet().iterator();
-		
-		while(duplicatedKanjiIterator.hasNext()) {
-			
+
+		while (duplicatedKanjiIterator.hasNext()) {
+
 			String key = duplicatedKanjiIterator.next();
-			
+
 			TreeSet<PolishJapaneseEntry> treeSetForKanji = duplicatedKanji.get(key);
-			
+
 			report.append("Kanji: " + key).append(": ");
-			
+
 			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : treeSetForKanji) {
 				report.append(currentPolishJapaneseEntryInTreeSetForKanji.getId()).append(" ");
 			}
-			
+
 			report.append("\n");
 
 			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : treeSetForKanji) {
@@ -547,17 +583,17 @@ public class Validator {
 
 			report.append("---\n\n");
 		}
-		
+
 		// kanji && kana
-		
+
 		TreeMap<String, TreeSet<PolishJapaneseEntry>> duplicatedKana = new TreeMap<String, TreeSet<PolishJapaneseEntry>>();
-		
+
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
-			
+
 			if (polishJapaneseEntry.isUseEntry() == false) {
 				continue;
 			}
-			
+
 			int id = polishJapaneseEntry.getId();
 			String kanji = polishJapaneseEntry.getKanji();
 			List<String> kanaList = polishJapaneseEntry.getKanaList();
@@ -565,42 +601,44 @@ public class Validator {
 			if (kanaList == null || kanaList.size() == 0) {
 				continue;
 			}
-			
+
 			for (String currentKana : kanaList) {
-				
-				List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanjiAndKana(polishJapaneseKanjiEntries, id, true, kanji, currentKana);
-				
+
+				List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanjiAndKana(
+						polishJapaneseKanjiEntries, id, true, kanji, currentKana);
+
 				if (findPolishJapaneseKanjiEntry.size() > 0) {
-					
-					findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanjiAndKana(polishJapaneseKanjiEntries, id, false, kanji, currentKana);
-				
+
+					findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanjiAndKana(
+							polishJapaneseKanjiEntries, id, false, kanji, currentKana);
+
 					TreeSet<PolishJapaneseEntry> polishJapaneseEntryKanaTreeSet = duplicatedKana.get(currentKana);
-					
+
 					if (polishJapaneseEntryKanaTreeSet == null) {
 						polishJapaneseEntryKanaTreeSet = new TreeSet<PolishJapaneseEntry>();
 					}
-					
+
 					polishJapaneseEntryKanaTreeSet.addAll(findPolishJapaneseKanjiEntry);
-					
+
 					duplicatedKana.put(currentKana, polishJapaneseEntryKanaTreeSet);
-				}				
+				}
 			}
 		}
-		
+
 		Iterator<String> duplicatedKanaIterator = duplicatedKana.keySet().iterator();
-		
-		while(duplicatedKanaIterator.hasNext()) {
-			
+
+		while (duplicatedKanaIterator.hasNext()) {
+
 			String key = duplicatedKanaIterator.next();
-			
+
 			TreeSet<PolishJapaneseEntry> treeSetForKana = duplicatedKana.get(key);
-			
+
 			report.append("Kana: " + key).append(": ");
-			
+
 			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKana : treeSetForKana) {
 				report.append(currentPolishJapaneseEntryInTreeSetForKana.getId()).append(" ");
 			}
-			
+
 			report.append("\n");
 
 			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKana : treeSetForKana) {
@@ -608,58 +646,59 @@ public class Validator {
 			}
 
 			report.append("---\n\n");
-		}		
-		
+		}
+
 		if (report.length() > 0) {
-			
+
 			System.out.println(report.toString());
-			
+
 			System.exit(1);
-		}		
+		}
 	}
 
-	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntryInKanji(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, 
-			boolean checkKnownDuplicated, String kanji) {
-		
+	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntryInKanji(
+			List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, boolean checkKnownDuplicated, String kanji) {
+
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
-		
+
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
-			
+
 			if (polishJapaneseEntry.isUseEntry() == false) {
 				continue;
 			}
-			
+
 			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
 				continue;
 			}
-			
+
 			if (polishJapaneseEntry.getId() != id && polishJapaneseEntry.getKanji().equals(kanji)) {
-				result.add(polishJapaneseEntry);				
+				result.add(polishJapaneseEntry);
 			} else if (checkKnownDuplicated == false && polishJapaneseEntry.getKanji().equals(kanji)) {
 				result.add(polishJapaneseEntry);
 			}
 		}
-		
+
 		return result;
 	}
-	
-	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntryInKanjiAndKana(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id,
-			boolean checkKnownDuplicated, String kanji, String kana) {
-		
+
+	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntryInKanjiAndKana(
+			List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, boolean checkKnownDuplicated, String kanji,
+			String kana) {
+
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
-		
+
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
-			
+
 			if (polishJapaneseEntry.isUseEntry() == false) {
 				continue;
 			}
-			
+
 			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
 				continue;
 			}
-						
-			boolean differentKanji = ! kanji.equals(polishJapaneseEntry.getKanji());
-			
+
+			boolean differentKanji = !kanji.equals(polishJapaneseEntry.getKanji());
+
 			if (kanji.equals("-") == true && polishJapaneseEntry.getKanji().equals("-") == false) {
 				differentKanji = false;
 			}
@@ -667,216 +706,227 @@ public class Validator {
 			if (kanji.equals("-") == false && polishJapaneseEntry.getKanji().equals("-") == true) {
 				differentKanji = false;
 			}
-			
-			if (polishJapaneseEntry.getId() != id && differentKanji == false && polishJapaneseEntry.getKanaList().contains(kana) == true) {
-				result.add(polishJapaneseEntry);				
-			} else if (checkKnownDuplicated == false && differentKanji == false && polishJapaneseEntry.getKanaList().contains(kana) == true) {
+
+			if (polishJapaneseEntry.getId() != id && differentKanji == false
+					&& polishJapaneseEntry.getKanaList().contains(kana) == true) {
+				result.add(polishJapaneseEntry);
+			} else if (checkKnownDuplicated == false && differentKanji == false
+					&& polishJapaneseEntry.getKanaList().contains(kana) == true) {
 				result.add(polishJapaneseEntry);
 			}
-		}		
-		
+		}
+
 		return result;
 	}
-	
-	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntryInKana(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id,
-			boolean checkKnownDuplicated, String kana) {
-		
+
+	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntryInKana(
+			List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, boolean checkKnownDuplicated, String kana) {
+
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
-		
+
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
-			
+
 			if (polishJapaneseEntry.isUseEntry() == false) {
 				continue;
 			}
-			
+
 			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
 				continue;
 			}
-			
+
 			if (polishJapaneseEntry.getId() != id && polishJapaneseEntry.getKanaList().contains(kana) == true) {
-				result.add(polishJapaneseEntry);				
+				result.add(polishJapaneseEntry);
 			} else if (checkKnownDuplicated == false && polishJapaneseEntry.getKanaList().contains(kana) == true) {
 				result.add(polishJapaneseEntry);
 			}
-		}		
-		
+		}
+
 		return result;
 	}
 
-	public static void validateUseNoEntryPolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseEntries) {	
-				
+	public static void validateUseNoEntryPolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseEntries) {
+
 		StringBuffer report = new StringBuffer();
-		
+
 		// kanji
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
-			
+
 			if (currentPolishJapaneseEntry.isUseEntry() == true) {
 				continue;
 			}
-			
+
 			int id = currentPolishJapaneseEntry.getId();
 			String kanji = currentPolishJapaneseEntry.getKanji();
-			
+
 			if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
 				continue;
 			}
-			
-			List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanji(polishJapaneseEntries, id, false, kanji);
-			
+
+			List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanji(
+					polishJapaneseEntries, id, false, kanji);
+
 			if (findPolishJapaneseKanjiEntry.size() == 0) {
 				report.append("Kanji: " + kanji).append(": ");
-				
+
 				report.append(currentPolishJapaneseEntry).append("\n");
 			}
 		}
-		
+
 		if (report.length() > 0) {
 			report.append("\n");
 		}
-		
+
 		// kana
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
-			
+
 			if (currentPolishJapaneseEntry.isUseEntry() == true) {
 				continue;
 			}
-			
+
 			int id = currentPolishJapaneseEntry.getId();
 			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
-			
+
 			for (String currentKana : kanaList) {
-				
-				List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKana(polishJapaneseEntries, id, false, currentKana);
-				
+
+				List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKana(
+						polishJapaneseEntries, id, false, currentKana);
+
 				if (findPolishJapaneseKanjiEntry.size() == 0) {
 					report.append("Kana: " + currentKana).append(": ");
-				
+
 					report.append(currentPolishJapaneseEntry).append("\n");
 				}
 			}
-		}	
-		
+		}
+
 		// summary
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-			
+
 			if (polishJapaneseEntry.isUseEntry() == true) {
 				//continue;
 			}
-			
+
 			int summaryPolishJapaneseEntryHashCode = getSummaryPolishJapaneseEntryHashCode(polishJapaneseEntry);
 
-			List<PolishJapaneseEntry> polishJapaneseEntryListBySummaryHashCodeResult = 
-					findPolishJapaneseEntryListBySummaryHashCode(polishJapaneseEntries, polishJapaneseEntry.getId(), summaryPolishJapaneseEntryHashCode);
-			
-			if (polishJapaneseEntryListBySummaryHashCodeResult.size() == 0) {				
+			List<PolishJapaneseEntry> polishJapaneseEntryListBySummaryHashCodeResult = findPolishJapaneseEntryListBySummaryHashCode(
+					polishJapaneseEntries, polishJapaneseEntry.getId(), summaryPolishJapaneseEntryHashCode);
+
+			if (polishJapaneseEntryListBySummaryHashCodeResult.size() == 0) {
 				throw new RuntimeException("Summary: " + polishJapaneseEntry);
 			}
-			
+
 			if (polishJapaneseEntryListBySummaryHashCodeResult.size() == 1) {
 				continue;
 			}
-			
+
 			boolean added = false;
-			int summary2PolishJapaneseEntryHashCode = getSummary2PolishJapaneseEntryHashCode(polishJapaneseEntryListBySummaryHashCodeResult.get(0));
-			
+			int summary2PolishJapaneseEntryHashCode = getSummary2PolishJapaneseEntryHashCode(polishJapaneseEntryListBySummaryHashCodeResult
+					.get(0));
+
 			boolean wasError = false;
-			
+
 			for (PolishJapaneseEntry currentPolishJapaneseEntryListBySummaryHashCodeResultItem : polishJapaneseEntryListBySummaryHashCodeResult) {
-				
-				if (getSummary2PolishJapaneseEntryHashCode(currentPolishJapaneseEntryListBySummaryHashCodeResultItem) != summary2PolishJapaneseEntryHashCode &&
-						polishJapaneseEntry.getId() != currentPolishJapaneseEntryListBySummaryHashCodeResultItem.getId() &&
-						polishJapaneseEntry.getKnownDuplicatedId().contains(currentPolishJapaneseEntryListBySummaryHashCodeResultItem.getId()) == false) {
-					
+
+				if (getSummary2PolishJapaneseEntryHashCode(currentPolishJapaneseEntryListBySummaryHashCodeResultItem) != summary2PolishJapaneseEntryHashCode
+						&& polishJapaneseEntry.getId() != currentPolishJapaneseEntryListBySummaryHashCodeResultItem
+								.getId()
+						&& polishJapaneseEntry.getKnownDuplicatedId().contains(
+								currentPolishJapaneseEntryListBySummaryHashCodeResultItem.getId()) == false) {
+
 					if (added == false) {
 						report.append("*Summary*: " + polishJapaneseEntry).append("\n\n");
-						
+
 						added = true;
 					}
-					
-					report.append(" Summary : " + currentPolishJapaneseEntryListBySummaryHashCodeResultItem).append("\n");
-					
+
+					report.append(" Summary : " + currentPolishJapaneseEntryListBySummaryHashCodeResultItem).append(
+							"\n");
+
 					wasError = true;
 				}
 			}
-			
+
 			if (wasError == true) {
 				report.append("\n---\n\n");
 			}
 		}
-		
+
 		if (report.length() > 0) {
-			
+
 			System.out.println(report.toString());
-			
+
 			System.exit(1);
 		}
 	}
-	
+
 	private static int getSummaryPolishJapaneseEntryHashCode(PolishJapaneseEntry polishJapaneseEntry) {
-				
+
 		int prime = 31;
-		
+
 		int result = 1;
-		
+
 		result = prime * result + polishJapaneseEntry.getKanji().hashCode();
 		result = prime * result + Arrays.hashCode(polishJapaneseEntry.getKanji().getBytes());
-		
+
 		result = prime * result + polishJapaneseEntry.getKanaList().hashCode();
 		result = prime * result + Arrays.hashCode(polishJapaneseEntry.getKanaList().toString().getBytes());
-				
+
 		result = prime * result + polishJapaneseEntry.getPrefixKana().hashCode();
 		result = prime * result + Arrays.hashCode(polishJapaneseEntry.getPrefixKana().getBytes());
-		
+
 		return result;
 	}
 
 	private static int getSummary2PolishJapaneseEntryHashCode(PolishJapaneseEntry polishJapaneseEntry) {
-		
+
 		int prime = 31;
-		
+
 		int result = 1;
-		
+
 		result = prime * result + polishJapaneseEntry.getDictionaryEntryType().hashCode();
 		result = prime * result + polishJapaneseEntry.getAttributeList().hashCode();
-		
+
 		result = prime * result + polishJapaneseEntry.getPolishTranslates().hashCode();
 		result = prime * result + Arrays.hashCode(polishJapaneseEntry.getPolishTranslates().toString().getBytes());
-		
+
 		result = prime * result + polishJapaneseEntry.getInfo().hashCode();
-		
+
 		return result;
 	}
-	
-	private static List<PolishJapaneseEntry> findPolishJapaneseEntryListBySummaryHashCode(List<PolishJapaneseEntry> polishJapaneseEntries, int id, int summaryPolishJapaneseEntryHashCode) {
-		
+
+	private static List<PolishJapaneseEntry> findPolishJapaneseEntryListBySummaryHashCode(
+			List<PolishJapaneseEntry> polishJapaneseEntries, int id, int summaryPolishJapaneseEntryHashCode) {
+
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
-		
+
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-						
+
 			int summaryPolishJapaneseEntryHashCode2 = getSummaryPolishJapaneseEntryHashCode(polishJapaneseEntry);
 
 			if (summaryPolishJapaneseEntryHashCode == summaryPolishJapaneseEntryHashCode2) {
 				result.add(polishJapaneseEntry);
 			}
 		}
-				
+
 		return result;
 	}
 
-	public static void validateDuplicateKanjiEntriesList(List<KanjiEntry> kanjiEntries) throws JapaneseDictionaryException {
-		
+	public static void validateDuplicateKanjiEntriesList(List<KanjiEntry> kanjiEntries)
+			throws JapaneseDictionaryException {
+
 		Map<String, KanjiEntry> alreadyKanjiEntryMap = new HashMap<String, KanjiEntry>();
-		
+
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
-			
+
 			KanjiEntry kanjiEntryInMap = alreadyKanjiEntryMap.get(currentKanjiEntry.getKanji());
-			
+
 			if (kanjiEntryInMap == null) {
-				
+
 				alreadyKanjiEntryMap.put(currentKanjiEntry.getKanji(), currentKanjiEntry);
-				
+
 			} else {
-				throw new JapaneseDictionaryException("Duplicate kanji entry: \n\t" + kanjiEntryInMap + "\n\t" + currentKanjiEntry + "\n"); 
+				throw new JapaneseDictionaryException("Duplicate kanji entry: \n\t" + kanjiEntryInMap + "\n\t"
+						+ currentKanjiEntry + "\n");
 			}
 		}
 	}
