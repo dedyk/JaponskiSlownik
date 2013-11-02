@@ -676,7 +676,8 @@ Genki 1-6",,今週,こんしゅう,,konshuu,obecny tydzień,,,
 Genki 1-6
 Genki kanji 1-9",,来週,らいしゅう,,raishuu,przyszły tydzień,,,
 348,UNKNOWN,,HIRAGANA,Genki 1-4,,再来週,さらいしゅう,,saraishuu,tydzień po przyszłym tygodniu,,,
-349,UNKNOWN,,HIRAGANA,Genki 1-4,,-,おととし,,ototoshi,rok przed zeszłym rokiem,,,
+349,UNKNOWN,,HIRAGANA,Genki 1-4,,一昨年,おととし,,ototoshi,"rok przed zeszłym rokiem
+dwa lata temu",,,3703
 350,UNKNOWN,,HIRAGANA,"Genki 1-4
 Genki 2-14
 Genki kanji 2-14",,去年,きょねん,,kyonen,"zeszły rok
@@ -1705,14 +1706,22 @@ nieskomplikowany
 łatwo zrozumiały",,,
 761,WORD_VERB_U,,HIRAGANA,Genki 1-10,,-,かかる,,kakaru,zajmować,"czas/pieniądze, bez partykuły",,"3848
 4492
-6458"
-762,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 1-10,に,泊まる,とまる,ni,tomaru,"zatrzymywać się
+6458
+11393"
+762,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 1-10,に,泊まる,とまる,ni,tomaru,"zatrzymywać się na noc
+przenocować
 nocować
-kotwiczyć",w hotelu i etc,,
+znaleźć nocleg
+kotwiczyć
+zarzucić kotwicę",w hotelu i etc,,
 763,WORD_VERB_U,,HIRAGANA,Genki 1-10,,成る,なる,,naru,stawać się,,,
 764,WORD_VERB_U,,HIRAGANA,"Genki 1-10
 Genki kanji 2-20",,払う,はらう,,harau,"płacić
+pokrywać należność
 wymiatać
+czyścić
+zmiatać
+strzepywać
 wypędzać
 poświęcać (uwagę)",,,
 765,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,Genki 1-10,,決める,きめる,,kimeru,"postanawiać
@@ -2606,8 +2615,10 @@ Genki kanji 2-15
 Genki kanji 2-18",,地図,ちず,,chizu,mapa,,,
 1189,WORD_NOUN,,HIRAGANA,Genki 2-15,,庭,にわ,,niwa,"ogród
 dziedziniec",,,
-1190,WORD_NOUN,,HIRAGANA,Genki 2-15,,発表,はっぴょう,,happyou,"prezentacja
-sprawozdanie",,,
+1190,WORD_NOUN,,HIRAGANA,Genki 2-15,,発表,はっぴょう,,happyou,"ogłoszenie
+prezentacja
+sprawozdanie
+podawanie do wiadomości",,,
 1191,WORD_NOUN,,HIRAGANA,"Genki 2-15
 Genki kanji 2-22",,番組,ばんぐみ,,bangumi,"program telewizyjny
 kanał telewizyjny",,,
@@ -3897,7 +3908,7 @@ operacja plastyczna",,,
 laryngologia",,,
 1885,WORD_NOUN,,HIRAGANA,,,抗生物質,こうせいぶっしつ,,kouseibusshitsu,antybiotyk,,,
 1886,WORD_NOUN,,KATAKANA,,,-,レントゲン,,rentogen,rentgen,,,
-1887,WORD_NOUN,,HIRAGANA,,,注射,ちゅうしゃ,,chuusha,infekcja,,,
+1887,WORD_NOUN,,HIRAGANA,,,注射,ちゅうしゃ,,chuusha,zastrzyk,,,
 1888,WORD_NOUN,,HIRAGANA,,,体温計,たいおんけい,,taionkei,termometr,lekarski,,
 1889,WORD_NOUN,,HIRAGANA,,,心臓外科,しんぞうげか,,shinzougeka,kardiochirurgia,,,
 1890,WORD_NOUN,,HIRAGANA,,,心臓外科医,しんぞうげかい,,shinzougekai,kardiochirurg,,,
@@ -4669,7 +4680,8 @@ zaręczona",,,
 skupiać się",na czymś,,
 2259,WORD_VERB_IRREGULAR,,HIRAGANA,"Genki kanji 2-17
 Genki dodatkowe 2-17",,発表する,はっぴょうする,,happyou suru,"prezentować
-ogłoszenie (czegoś)",,,
+ogłoszenie (czegoś)
+ogłosić",,,
 2260,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,出発,しゅっぱつ,,shuppatsu,"wyjazd
 wylot
 odjazd
@@ -7546,7 +7558,7 @@ mieć odrębne zdanie",,,2144
 mylić",,,3698
 3701,UNKNOWN,,HIRAGANA,,,一昨日,いっさくじつ,,issakujitsu,przedwczoraj,,,341
 3702,UNKNOWN,,HIRAGANA,,,昨年,さくねん,,sakunen,ubiegły rok,,,
-3703,UNKNOWN,,HIRAGANA,,,一昨年,いっさくねん,,issakunen,dwa lata temu,,,
+3703,UNKNOWN,,HIRAGANA,,,一昨年,いっさくねん,,issakunen,dwa lata temu,,,349
 3704,UNKNOWN,,HIRAGANA,,,昨今,さっこん,,sakkon,"niedawno
 w tych dniach",,,
 3705,WORD_NOUN,,HIRAGANA,,,節,せつ,,setsu,"pora
@@ -7790,7 +7802,9 @@ godzina zamykania bramy",,,
 brama",,,
 3833,WORD_NOUN,,HIRAGANA,,,門衛,もんえい,,mon'ei,"wartownik
 strażnik",,,
-3834,WORD_VERB_U,,HIRAGANA,,,残る,のこる,,nokoru,zostawać,,,
+3834,WORD_VERB_U,,HIRAGANA,,,残る,のこる,,nokoru,"zostawać
+pozostawać
+być zostawionym",,,
 3835,WORD_NOUN,,HIRAGANA,,,残り物,のこりもの,,nokorimono,"resztki
 pozostałości",,,
 3836,WORD_VERB_U,,HIRAGANA,,,生き残る,いきのこる,,ikinokoru,"ocaleć
@@ -8195,7 +8209,8 @@ gil",,,
 bycie pysznym",,,
 4045,WORD_NOUN,,HIRAGANA,,,後妻,ごさい,,gosai,druga żona,,,
 4046,WORD_NOUN,,HIRAGANA,,,妻帯者,さいたいしゃ,,saitaisha,żonaty,,,
-4047,WORD_NOUN,,HIRAGANA,,,祖先,そせん,,sosen,przodek,,,
+4047,WORD_NOUN,,HIRAGANA,,,祖先,そせん,,sosen,"przodek
+antenat",,,
 4048,WORD_NOUN,,HIRAGANA,,,祖先崇拝,そせんすうはい,,sosen suuhai,"oddawanie czci przodkom
 kult przodków",,,
 4049,WORD_NOUN,,HIRAGANA,,,祖国,そこく,,sokoku,ojczyzna,,,
@@ -8302,7 +8317,8 @@ wszystko",,,662
 4100,WORD_NOUN,,HIRAGANA,"Genki kanji 2-20
 Genki dodatkowe 2-20",,茶店,ちゃみせ,,chamise,herbaciarnia,,,
 4101,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,茶色,ちゃいろ,,chairo,brązowy,,,
-4102,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,中止する,ちゅうしする,,chuushi suru,"zatrzymywać
+4102,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,中止する,ちゅうしする,,chuushi suru,"odwołać
+zatrzymywać
 wstrzymywać",,,
 4103,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,禁止する,きんしする,,kinshi suru,"zakazywać
 zabraniać",,,
@@ -9889,7 +9905,7 @@ zrobione z drzewa
 wykonane z drzewa",,,
 4861,WORD_NOUN,,HIRAGANA,,,製紙工場,せいしこうじょう,,seishikoujou,fabryka papieru,,,
 4862,WORD_NOUN,,HIRAGANA,,,製本屋,せいほんや,,seihon'ya,introligator,,,
-4863,WORD_VERB_U,,HIRAGANA,,,剃る,そる,,soru,golić się,,,
+4863,WORD_VERB_U,,HIRAGANA,,,剃る,そる,,soru,golić,zarost,,
 4864,WORD_NOUN,,HIRAGANA,,,獣,けだもの,,kedamono,"bestia
 zwierzę",,,4865
 4865,WORD_NOUN,,HIRAGANA,,,獣,けもの,,kemono,"bestia
@@ -10225,7 +10241,9 @@ chmurzyć się",,,
 ścigać
 wyganiać
 odciągać
-prowadzić",,,
+odganiać
+prowadzić
+być poganianym",,,
 5009,WORD_NOUN,,HIRAGANA,,,追記,ついき,,tsuiki,"dopisek
 PS (postscriptum)",,,
 5010,WORD_NOUN,,HIRAGANA,,,追究,ついきゅう,,tsuikyuu,dochodzenie,,,
@@ -12377,9 +12395,8 @@ marnować",,,
 6034,UNKNOWN,,HIRAGANA,,,豪,ごう,,gou,"olbrzymi
 potężny",,,
 6035,WORD_NOUN,,HIRAGANA,,,欠,けつ,,ketsu,brak,,,
-6036,WORD_VERB_RU,,HIRAGANA,,,欠ける,かける,,kakeru,"brakować
-gubić się
-łamać się
+6036,WORD_VERB_RU,,HIRAGANA,,,欠ける,かける,,kakeru,"być uszkodzonym
+brakować
 łuszczyć się
 odpryskiwać",,,3218
 6037,WORD_VERB_U,,HIRAGANA,,,欠く,かく,,kaku,"łamać
@@ -13292,7 +13309,9 @@ chybiać",,,
 chybiać
 być przeciwnym do",,,
 6465,UNKNOWN,,HIRAGANA,,,以外,いがい,,igai,"poza
-z wyjątkiem",,,
+z wyjątkiem
+oprócz
+tylko",,,
 6466,WORD_NOUN,,HIRAGANA,,,部分,ぶぶん,,bubun,część,,,
 6467,WORD_NOUN,,HIRAGANA,,,部品,ぶひん,,buhin,części zamienne,,,
 6468,WORD_NOUN,,HIRAGANA,,,部隊,ぶたい,,butai,"korpus
@@ -14539,7 +14558,12 @@ podstawa",,,"384
 7149,WORD_VERB_U,,HIRAGANA,,,下す,くだす,,kudasu,"zniżać
 obniżać",,,
 7150,WORD_VERB_U,,HIRAGANA,,,下がる,さがる,,sagaru,"zwisać
-spadać",,,
+wisieć
+spadać
+opadać
+zniżać się
+cofać się
+wycofywać się",,,
 7151,WORD_VERB_U,,HIRAGANA,,,下る,くだる,,kudaru,zejść na dół,,,
 7152,WORD_NOUN,,HIRAGANA,,,下水,げすい,,gesui,kanały ściekowe,,,
 7153,WORD_ADJECTIVE_NA,,HIRAGANA,,,下手,しもて,,shimote,"słaby w
@@ -23316,3 +23340,33 @@ publikować",,,
 11382,WORD_VERB_IRREGULAR,,HIRAGANA,,,修理する,しゅうりする,,shuuri suru,naprawiać,,,
 11383,WORD_NOUN,,HIRAGANA,,,年賀葉書,ねんがはがき,,nenga hagaki,karta noworoczna,,,
 11384,WORD_NOUN,,HIRAGANA,,,郵便はがき,ゆうびんはがき ,,yuubin hagaki,karta pocztowa,,,
+11385,WORD_NOUN,,HIRAGANA,,,腹,はら,,hara,"brzuch
+nastrój
+uczucia",uprzejma forma to onaka,,
+11386,WORD_EXPRESSION,,HIRAGANA,,,腹が痛い,はらがいたい,,hara ga itai,brzuch boli,,,
+11387,WORD_VERB_U,,HIRAGANA,,,腹が減る,はらがへる,,hara ga heru,być głodnym,,,
+11388,WORD_VERB_U,,HIRAGANA,,,腹がすく,はらがすく,,hara ga suku,być głodnym,,,
+11389,WORD_VERB_U,,HIRAGANA,,,腹が壊す,はらがこわす,,hara ga kowasu,"zepsuć sobie żołądek
+zachorować na żołądek",,,
+11390,WORD_ADJECTIVE_NA,,HIRAGANA,,,意外,いがい ,,igai,"niespodziewany
+zaskakujący",,,
+11391,WORD_EXPRESSION,,HIRAGANA,,,意外な事件,いがいなじけん,,igai na jiken,niespodziewany wypadek,,,
+11392,WORD_EXPRESSION,,HIRAGANA,,,意外な結果,いがいなけっか,,igai na kekka,zaskakujący wynik,,,
+11393,WORD_VERB_U,,HIRAGANA,,,架かる,かかる,,kakaru,"być wybudowanym
+przerzuconym",,,761
+11394,WORD_ADVERB,,HIRAGANA,,,到頭,とうとう,,toutou,"w końcu
+wreszcie",,,
+11395,WORD_VERB_IRREGULAR,,HIRAGANA,,,注射する,ちゅうしゃする,,chuusha suru,"robić zastrzyk
+wstrzykiwać",,,
+11396,WORD_NOUN,,HIRAGANA,,,予防注射,よぼうちゅうしゃ ,,yobou chuusha,szczepienia ochronne,,,
+11397,WORD_VERB_U,,HIRAGANA,,,注射を打つ,ちゅうしゃをうつ,,chuusha o utsu,robić zastrzyk,,,
+11398,WORD_NOUN,,HIRAGANA,,,駐車,ちゅうしゃ,,chuusha,parkowanie,,,
+11399,WORD_VERB_IRREGULAR,,HIRAGANA,,,駐車する,ちゅうしゃする,,chuusha suru,parkować,,,
+11400,WORD_NOUN,,HIRAGANA,,,駐車禁止,ちゅうしゃきんし,,chuusha kinshi,zakaz parkowania,,,
+11401,WORD_NOUN,,HIRAGANA,,,中止,ちゅうし,,chuushi,"przerwanie
+zawieszenie",,,
+11402,WORD_NOUN,,HIRAGANA,,,中心,ちゅうしん,,chuushin,"środek
+centrum
+ośrodek
+jądro
+sedno",,,
