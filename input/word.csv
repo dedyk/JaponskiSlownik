@@ -998,11 +998,15 @@ wieczór",,,2168
 Genki kanji 1-6
 Genki dodatkowe 2-19
 Genki kanji 2-23",,大変,たいへん,,taihen,"ciężka (sytuacja)
+trudny
+straszny
 bardzo
 wielce
 ogromnie
+poważny
 niezliczony
-olbrzymi",,,
+olbrzymi
+doniosły",,,
 470,WORD_VERB_U,,HIRAGANA,Genki 1-6,,遊ぶ,あそぶ,,asobu,"bawić się
 grać
 miło spędzać czas",,,
@@ -2454,7 +2458,10 @@ odprowadzać (kogoś)
 podrzucać (kogoś)",,,
 1079,WORD_VERB_U,,HIRAGANA,Genki 2-14,,似合う,にあう,,niau,"pasować
 być do twarzy",rzecz ga,,
-1080,WORD_VERB_RU,,HIRAGANA,Genki 2-14,,諦める,あきらめる,,akirameru,poddać się,,,
+1080,WORD_VERB_RU,,HIRAGANA,Genki 2-14,,諦める,あきらめる,,akirameru,"poddać się
+zrezygnować
+zaniechać
+pogodzić się z",,,
 1081,WORD_VERB_RU,,HIRAGANA,Genki 2-14,,-,あげる,,ageru,dawać,"komuś, rzecz o osoba ni",,"2406
 7498
 8035"
@@ -3243,7 +3250,8 @@ Genki 2-23",,授業料,じゅぎょうりょう,,jugyouryou,czesne,,,
 1488,WORD_NOUN,,HIRAGANA,"Genki kanji 2-13
 Genki 2-17",,給料,きゅうりょう,,kyuuryou,"pensja
 zapłata
-wypłata",,,
+wypłata
+wynagrodzenie",,,
 1489,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,理由,りゆう,,riyuu,"powód
 przyczyna",,,
 1490,WORD_NOUN,,HIRAGANA,"Genki kanji 2-13
@@ -3344,7 +3352,8 @@ odchodzić
 przechodzić
 mijać
 upływać",,,
-1528,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,急行,きゅうこう,,kyuukou,pociąg ekspresowy,,,
+1528,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,急行,きゅうこう,,kyuukou,"pośpiech
+szybki marsz",,,
 1529,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,乗り物,のりもの,,norimono,pojazd,,,
 1530,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,乗車,じょうしゃ,,jousha,"podróżować samochodem
 podróżować pociągiem
@@ -3718,7 +3727,7 @@ zatrzymywać (np. samochód)",,,6770
 1770,WORD_NOUN,,KATAKANA,,,-,ジッパ,,jippa,zamek błyskawiczny,,,
 1771,WORD_NOUN,,HIRAGANA,,,王様,おうさま,,ousama,król,,,
 1772,WORD_VERB_U,,HIRAGANA,,,代わる,かわる,,kawaru,"zastępować
-wymieniać",,,
+wymieniać","używane, gdy inna osoba lub rzecz kogoś lub coś zastępuje, zaczyna pełnić funkcję lub rolę poprzedniej",,
 1773,UNKNOWN,,HIRAGANA_KATAKANA,,,バス代,バスだい,,basu dai,opłata za autobus,,,
 1774,UNKNOWN,,HIRAGANA,,,三十代の人,さんじゅうだいのひと,,sanjuu dai no hito,30-latkowie,,,
 1775,WORD_NOUN,,HIRAGANA,,,恐竜,きょうりゅう,,kyouryuu,dinozaur,,,
@@ -7434,8 +7443,12 @@ grzać się",,,
 3625,WORD_VERB_U,,HIRAGANA,,,温まる,あたたまる,,atatamaru,"ogrzewać się
 podgrzewać się
 grzać się",,,
-3626,WORD_ADJECTIVE_I,,HIRAGANA,,,温かい,あたたかい,,atatakai,ciepły,,,3627
-3627,WORD_ADJECTIVE_I,,HIRAGANA,,,温かい,あったかい,,attakai,ciepły,,,3626
+3626,WORD_ADJECTIVE_I,,HIRAGANA,,,温かい,あたたかい,,atatakai,"ciepły
+serdeczny
+życzliwy",,,3627
+3627,WORD_ADJECTIVE_I,,HIRAGANA,,,温かい,あったかい,,attakai,"ciepły
+serdeczny
+życzliwy",,,3626
 3628,WORD_ADJECTIVE_I,,HIRAGANA,,,暖かい,あったかい,,attakai,ciepły,,,756
 3629,WORD_NOUN,,HIRAGANA,,,石炭,せきたん,,sekitan,węgiel kamienny,,,
 3630,WORD_NOUN,,HIRAGANA,,,宝石,ほうせき,,houseki,"kamień drogocenny
@@ -10116,7 +10129,8 @@ zabobon",,,
 gubić drogę",,,
 4945,WORD_NOUN,,HIRAGANA,,,迷子,まいご,,maigo,zagubione dziecko,,,
 4946,WORD_VERB_RU,,HIRAGANA,,,迎える,むかえる,,mukaeru,"witać
-wychodzić na spotkanie",,,
+wychodzić na spotkanie
+oczekiwać",,,
 4947,WORD_NOUN,,HIRAGANA,,,迎え,むかえ,,mukae,"spotkanie
 przywitanie",,,
 4948,WORD_NOUN,,HIRAGANA,,,匠,しょう,,shou,"rzemieślnik
@@ -10762,8 +10776,10 @@ bez grosza",,,
 5248,WORD_NOUN,,HIRAGANA,,,自我,じが,,jiga,"ja
 ego",,,
 5249,WORD_ADJECTIVE_NA,,HIRAGANA,,,我儘,わがまま,,wagamama,"egoizm
-samolubstwo
-nieposłuszeństwo",,,
+samolubny
+nieposłuszny
+egocentryk
+kapryśny",,,
 5250,WORD_PRONOUN,,HIRAGANA,,,我々,われわれ,,wareware,my,,,
 5251,WORD_NOUN,,HIRAGANA,,,我が国,わがくに,,wagakuni,nasz kraj,,,
 5252,WORD_NOUN,,HIRAGANA,,,互い,たがい,,tagai,"wzajemnie
@@ -12196,9 +12212,13 @@ zastąpić
 wymieniać",,,
 5932,WORD_VERB_U,,HIRAGANA,,,替わる,かわる,,kawaru,"zajmować czyjeś miejsce
 zastępować
-być zastępowanym",,,
+być zastępowanym
+zmieniać się","używane, gdy osoba zajmująca pewne stanowisko lub pełniąca jakąś rolę zostaje zastąpione przez inną",,
 5933,WORD_NOUN,,HIRAGANA,,,替わり,かわり,,kawari,"zmiana
-zamiana",,,
+zamiana
+dokładka
+dolewka
+druga porcja",,,
 5934,WORD_ADJECTIVE_NA,,HIRAGANA,,,奇,き,,ki,"dziwny
 ciekawy",,,
 5935,WORD_ADJECTIVE_NA,,HIRAGANA,,,微か,かすか,,kasuka,"słaby
@@ -13244,6 +13264,7 @@ epoka",sufiks,,231
 nagły",,,
 6418,WORD_NOUN,,HIRAGANA,,,救急車,きゅうきゅうしゃ,,kyuukyuusha,karetka pogotowia,,,
 6419,WORD_NOUN,,HIRAGANA,,,急用,きゅうよう,,kyuuyou,"nagła sprawa
+pilna sprawa
 niespodziewana sprawa
 nagły interes",,,
 6420,WORD_NOUN,,HIRAGANA,,,急性,きゅうせい,,kyuusei,"ostry
@@ -15543,7 +15564,8 @@ zaczynać",sufiks,,
 przemowa",,,
 7606,WORD_NOUN,,HIRAGANA,,,明,めい,,mei,"jasność
 przejrzystość",,,"8519
-8524"
+8524
+11445"
 7607,WORD_VERB_RU,,HIRAGANA,,,明ける,あける,,akeru,"otwierać
 opróżniać
 zwalniać (miejsce)
@@ -16635,8 +16657,9 @@ pozycja (armii)",,,
 być zmęczonym czymś",,,
 8099,WORD_VERB_U,,HIRAGANA,,,飽かす,あかす,,akasu,"męczyć
 zanudzać",,,
-8100,WORD_VERB_RU,,HIRAGANA,,,飽きる,あきる,,akiru,"mieć dosyć
-pozbywać się",,,
+8100,WORD_VERB_RU,,HIRAGANA,,,飽きる,あきる,,akiru,"znudzić się
+stracić zainteresowanie
+uprzykrzyć sobie",,,
 8101,WORD_VERB_U,,HIRAGANA,,,顕す,あらわす,,arawasu,"objawiać
 rozjaśniać",,,
 8102,WORD_VERB_RU,,HIRAGANA,,,顕れる,あらわれる,,arawareru,"ukazywać się
@@ -17232,7 +17255,8 @@ dłubać
 grawerować",,,
 8325,WORD_NOUN,,HIRAGANA,,,翁,おきな,,okina,stary człowiek,,,
 8326,WORD_ADJECTIVE_NA,,HIRAGANA,,,妙,みょう,,myou,"dziwny
-cudaczny",,,8327
+cudaczny
+podejrzany",,,8327
 8327,WORD_NOUN,,HIRAGANA,,,妙,みょう,,myou,"cud
 tajemnica
 misterium
@@ -17658,13 +17682,15 @@ wąsy",,,
 8518,WORD_FEMALE_NAME,,HIRAGANA,"Genki 1-10
 Genki kanji 2-19",,秋,あき,,Aki,Aki,,,735
 8519,WORD_FEMALE_NAME,,HIRAGANA,,,明,あき,,Aki,Aki,,,"7606
-8524"
+8524
+11445"
 8520,WORD_FEMALE_NAME,,HIRAGANA,,,晶,あき,,Aki,Aki,,,
 8521,WORD_FEMALE_NAME,,HIRAGANA,,,秋子,あきこ,,Akiko,Akiko,,,
 8522,WORD_FEMALE_NAME,,HIRAGANA,,,明子,あきこ,,Akiko,Akiko,,,
 8523,WORD_FEMALE_NAME,,HIRAGANA,,,晶子,あきこ,,Akiko,Akiko,,,
 8524,WORD_FEMALE_NAME,,HIRAGANA,,,明,あきら,,Akira,Akira,,,"7606
-8519"
+8519
+11445"
 8525,WORD_FEMALE_NAME,,HIRAGANA,,,亮,あきら,,Akira,Akira,,,8719
 8526,WORD_FEMALE_NAME,,HIRAGANA,,,天照,あまてらす,,Amaterasu,Amaterasu,,,
 8527,WORD_FEMALE_NAME,,HIRAGANA,,,-,あまや,,Amaya,Amaya,,,
@@ -23468,3 +23494,46 @@ zadanie",,,
 11436,WORD_VERB_U,,HIRAGANA,,,役立つ,やくだつ,,yakudatsu,"być pożytecznym
 być użytecznym
 być przydatnym",,,
+11437,WORD_VERB_RU,,HIRAGANA,,,仕事に飽きる,しごとにあきる,,shigoto ni akiru,"mieć dość pracy
+znudzić się pracą",,,
+11438,WORD_ADJECTIVE_NA,,HIRAGANA,,,暖か,あたたか,,atataka,ciepły,,,
+11439,WORD_ADJECTIVE_NA,,HIRAGANA,,,温か,あたたか,,atataka,"ciepły
+serdeczny
+życzliwy",,,
+11440,WORD_VERB_IRREGULAR,,HIRAGANA,,,決定する,けっていする,,kettei suru,"decydować
+zdecydować",,,
+11441,WORD_NOUN,,HIRAGANA,,,休憩,きゅうけい,,kyuukei,przerwa,,,
+11442,WORD_VERB_IRREGULAR,,HIRAGANA,,,休憩する,きゅうけいする,,kyuukei suru,robić przerwę,,,
+11443,WORD_NOUN,,HIRAGANA,,,急行券,きゅうこうけん,,kyuukouken,bilet na pociąg pośpieszny,,,
+11444,WORD_NOUN,,HIRAGANA,,,無断,むだん,,mudan,"bez pozwolenia
+bez wiedzy",,,
+11445,UNKNOWN,PREFIX,HIRAGANA,,,明,みょう,,myou,"jutro
+następny",,,"7606
+8519
+8524"
+11446,UNKNOWN,,HIRAGANA,,,明朝,みょうちょう,,myouchou,jutro rano,,,
+11447,UNKNOWN,,HIRAGANA,,,明晩,みょうばん,,myouban,jutro wieczorem,,,
+11448,WORD_ADJECTIVE_NA,,HIRAGANA,,,我侭,わがまま,,wagamama,"egoizm
+samolubny
+nieposłuszny
+egocentryk
+kapryśny",,,
+11449,WORD_ADJECTIVE_NA,,HIRAGANA,,,我が儘,わがまま,,wagamama,"egoizm
+samolubny
+nieposłuszny
+egocentryk
+kapryśny",,,
+11450,WORD_ADJECTIVE_NA,,HIRAGANA,,,我が侭,わがまま,,wagamama,"egoizm
+samolubny
+nieposłuszny
+egocentryk
+kapryśny",,,
+11451,WORD_ADJECTIVE_NA,,HIRAGANA,,,我がまま,わがまま,,wagamama,"egoizm
+samolubny
+nieposłuszny
+egocentryk
+kapryśny",,,
+11452,WORD_ADJECTIVE_I,,HIRAGANA,,,有難い,ありがたい,,arigatai,"wdzięczny
+dobroczynny",,,
+11453,WORD_ADJECTIVE_I,,HIRAGANA,,,有り難い,ありがたい,,arigatai,"wdzięczny
+dobroczynny",,,
