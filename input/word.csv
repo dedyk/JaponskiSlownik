@@ -981,7 +981,8 @@ Genki kanji 2-19",,漢字,かんじ,,kanji,kanji,,,
 Genki kanji 2-16",,教科書,きょうかしょ,,kyoukasho,podręcznik,,,
 461,WORD_NOUN,,HIRAGANA,Genki 1-6,,市民病院,しみんびょういん,,shiminbyouin,szpital miejski,,,
 462,WORD_NOUN,,HIRAGANA,"Genki 1-6
-Genki kanji 1-8",,次,つぎ,,tsugi,następny,,,
+Genki kanji 1-8",,次,つぎ,,tsugi,następny,,,"11480
+11483"
 463,WORD_NOUN,,KATAKANA,Genki 1-6,,-,テレビゲーム,,terebi geemu,gra telewizyjna,,,
 464,WORD_NOUN,,HIRAGANA,"Genki 1-6
 Genki kanji 1-5
@@ -1048,6 +1049,7 @@ wstępować
 zawierać",,,7252
 482,WORD_VERB_U,,HIRAGANA,"Genki 1-6
 Genki kanji 1-10",を,持つ,もつ,o,motsu,"nosić
+brać
 trzymać
 mieć
 posiadać",,,
@@ -2370,7 +2372,9 @@ Genki kanji 2-18
 Genki kanji 2-21",,経験,けいけん,,keiken,doświadczenie,,,
 1035,UNKNOWN,,HIRAGANA,"Genki dodatkowe 2-13
 Genki kanji 2-13",,特に,とくに,,tokuni,"szczególnie
-zwłaszcza",,,
+specjalnie
+zwłaszcza
+w szczególności",,,
 1036,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-13,,珍しい,めずらしい,,mezurashii,"rzadki
 ciekawy
 dziwny",,,
@@ -2788,7 +2792,8 @@ produkować",,,10823
 1252,WORD_VERB_U,,HIRAGANA,Genki 2-15,,下ろす,おろす,,orosu,robić coś w dół,,,1199
 1253,WORD_VERB_U,,HIRAGANA,,,見下ろす,みおろす,,mi orosu,patrzeć w dół,,,
 1254,WORD_EXPRESSION,,HIRAGANA,,,そびえ立つ,そびえたつ,,sobie tatsu,górować nad czymś,,,
-1255,WORD_NOUN,,HIRAGANA,,,青空,あおぞら,,aozora,niebieskie niebo,,,
+1255,WORD_NOUN,,HIRAGANA,,,青空,あおぞら,,aozora,"niebieskie niebo
+błękitne niebo",,,
 1256,WORD_NOUN,,HIRAGANA,,,霞み,かすみ,,kasumi,"mgła
 zamglenie
 zamazany
@@ -3296,7 +3301,9 @@ Genki kanji 2-21",,体重,たいじゅう,,taijuu,"ciężar ciała
 waga (ciała)",,,
 1499,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,体操,たいそう,,taisou,gimnastyka,,,
 1500,WORD_NOUN,,HIRAGANA,"Genki kanji 2-13
-Genki dodatkowe 2-16",,空,そら,,sora,niebo,,,"7791
+Genki dodatkowe 2-16",,空,そら,,sora,"niebo
+niebiosa
+nieboskłon",,,"7791
 7792
 8738"
 1501,WORD_VERB_U,,HIRAGANA,Genki kanji 2-13,,空く,あく,,aku,"być wolnym
@@ -3731,7 +3738,9 @@ przenocować",,,9178
 1767,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,"Genki kanji 2-20
 Genki dodatkowe 2-20",が,止まる,とまる,ga,tomaru,"zatrzymać się
 nocować
-kotwiczyć",,,
+kotwiczyć
+usadowić się (o ptaku)
+usiąść",,,
 1768,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,,泊める,とめる,,tomeru,"zatrzymać
 nocować
 gościć
@@ -4645,6 +4654,7 @@ rozbierać
 usuwać",ubranie,,
 2226,WORD_VERB_RU,,HIRAGANA,Genki 2-17,,-,いれる,,ireru,robić,"herbatę, kawę",,1370
 2227,WORD_VERB_RU,,HIRAGANA,Genki 2-17,に,慣れる,なれる,ni,nareru,"przyzwyczaić się
+nabrać doświadczenia
 stać się
 być oswojonym",,,
 2228,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-17,,就職する,しゅうしょくする,,shuushoku suru,"znaleźć pracę
@@ -6196,6 +6206,7 @@ możność",,,
 2987,WORD_NOUN,,HIRAGANA,,,機関室,きかんしつ,,kikanshitsu,maszynownia,,,
 2988,WORD_NOUN,,HIRAGANA,,,機嫌,きげん,,kigen,"zdrowie
 stan ducha
+nastrój
 samopoczucie",,,
 2989,WORD_VERB_U,,HIRAGANA,,,光る,ひかる,,hikaru,"świecić
 błyszczeć",,,"8576
@@ -6594,7 +6605,9 @@ gatunek",,,
 3204,WORD_NOUN,,HIRAGANA,,,課長,かちょう,,kachou,"kierownik działu
 szef sekcji",,,
 3205,WORD_NOUN,,HIRAGANA,Genki 2-19,,間違い,まちがい,,machigai,"pomyłka
-błąd",,,
+błąd
+wypadek
+incydent",,,
 3206,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-19,,仲がいい,なかがいい,,naka ga ii,"lubić się
 mieć z kimś dobry kontakt",,,
 3207,WORD_VERB_U,VERB_KEIGO_HIGH,HIRAGANA,Genki 2-19,,-,いらっしゃる,,irassharu,"[honoryfikatywna forma od iku, kuru, iru]",,,
@@ -8085,7 +8098,7 @@ mroźny wiatr",,,
 3949,WORD_NOUN,,HIRAGANA,Genki 2-20,,-,あちら,,achira,"tam
 tamten","uprzejmie, grzecznie, daleko od mówcy i osoby docelowej",,
 3950,WORD_NOUN,,HIRAGANA,Genki 2-20,,係の者,かかりのもの,,kakari no mono,osoba odpowiedzialna,,,
-3951,WORD_NOUN,,HIRAGANA,Genki 2-20,,字,じ,,ji,"litera
+3951,WORD_NOUN,SUFFIX,HIRAGANA,Genki 2-20,,字,じ,,ji,"litera
 znak",,,6990
 3952,WORD_NOUN,,HIRAGANA,Genki 2-20,,支店,してん,,shiten,"oddział
 agencja
@@ -8993,7 +9006,8 @@ mieć pełny brzuch",,,
 4405,UNKNOWN,,HIRAGANA,,,第一種,だいいっしゅ,,dai isshu,pierwsza klasa,,,
 4406,WORD_NOUN,,HIRAGANA,,,第三者,だいさんしゃ,,dai san sha,trzecia osoba,,,
 4407,WORD_NOUN,,HIRAGANA,,,第六感,だいろっかん,,dai rokkan,sześć zmysłów,,,
-4408,WORD_NOUN,,HIRAGANA,,,第二次世界大戦,だいにじせかいたいせん,,dai niji sekai taisen,druga wojna światowa,,,
+4408,WORD_NOUN,,HIRAGANA,,,第二次世界大戦,だいにじせかいたいせん,,dai niji sekai taisen,"II wojna światowa
+druga wojna światowa",,,
 4409,WORD_NOUN,,HIRAGANA,,,印,いん,,in,pieczęć,,,4410
 4410,WORD_NOUN,,HIRAGANA,,,印,しるし,,shirushi,znak,,,4409
 4411,WORD_NOUN,,HIRAGANA,,,印刷,いんさつ,,insatsu,"druk
@@ -10200,7 +10214,9 @@ wyznaczać granice",,,
 restrykcja
 limit",,,
 4964,WORD_NOUN,,HIRAGANA,,,限度,げんど,,gendo,granica,np. wytrzymałości,,
-4965,WORD_NOUN,,HIRAGANA,,,期限,きげん,,kigen,"okres
+4965,WORD_NOUN,,HIRAGANA,,,期限,きげん,,kigen,"termin
+limit czasu
+okres
 ograniczenie czasowe
 ostateczny termin",,,
 4966,WORD_NOUN,,HIRAGANA,,,無限,むげん,,mugen,"nieograniczony
@@ -10458,7 +10474,12 @@ odległy
 oddalony",,,
 5074,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-21,,酷い,ひどい,,hidoi,"obrzydliwy
 okropny
-straszny",,,
+straszny
+intensywny
+bezlitosny
+bezwzględny
+surowy
+gwałtowny",,,
 5075,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-21,,目茶苦茶,めちゃくちゃ,,mechakucha,"źle zorganizowany
 bałaganiarski
 niechlujny
@@ -10492,6 +10513,7 @@ podziwiać
 mówić miłe rzeczy",,,
 5086,WORD_VERB_RU,,HIRAGANA,"Genki 2-21
 Genki kanji 2-23",,間違える,まちがえる,,machigaeru,"mylić się
+pomylić się
 popełnić błąd",,,
 5087,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-21,を,馬鹿にする,ばかにする,o,baka ni suru,"obrażać
 wyśmiewać się z
@@ -11594,10 +11616,11 @@ satysfakcja",,,
 ocena
 rezultat",,,
 5635,WORD_NOUN,,HIRAGANA,,,得意,とくい,,tokui,"silny punkt
-ulubiony (np. sport)
-tryumf
+mocna strona
+umiejętność
 duma
-klient",,,
+próżność
+chwalenie się",,,
 5636,WORD_NOUN,,HIRAGANA,,,得体,えたい,,etai,"natura
 charakter",,,
 5637,WORD_ADJECTIVE_I,,HIRAGANA,,,得難い,えがたい,,egatai,trudny do zdobycia,,,
@@ -13520,8 +13543,10 @@ typowy
 charakterystyczny
 unikalny",,,
 6529,WORD_NOUN,,HIRAGANA,,,特長,とくちょう,,tokuchou,"cecha charakterystyczna
+cecha szczególna
 mocny punkt
-zaleta",,,
+zaleta
+rys",,,
 6530,UNKNOWN,,HIRAGANA,,,千,ち,,chi,tysiąc,,,179
 6531,WORD_NOUN,,HIRAGANA,,,千年,せんねん,,sennen,"milenium
 tysiąc lat",,,
@@ -14726,10 +14751,10 @@ przejęcie",,,
 odgłos
 oddźwięk
 echo",,,
-7185,WORD_VERB_U,,HIRAGANA,,,響く,ひびく,,hibiku,"odbijać się
+7185,WORD_VERB_U,,HIRAGANA,,,響く,ひびく,,hibiku,"odbijać się (echem)
+dźwięczeć
 rezonować
-wibrować
-dźwięczeć",,,
+wibrować",,,
 7186,WORD_NOUN,,HIRAGANA,,,出身地,しゅっしんち,,shusshinchi,miejsce pochodzenia,,,
 7187,WORD_NOUN,,HIRAGANA,,,出版,しゅっぱん,,shuppan,"wydawnictwo
 publikacja
@@ -17504,9 +17529,13 @@ być zakopywanym",,,8411
 bić
 tłuc",,,
 8414,WORD_VERB_U,,HIRAGANA,,,隠す,かくす,,kakusu,"chować
-ukrywać",,,
+ukrywać (przed ludzkim wzrokiem)
+trzymać w tajemnicy",,,
 8415,WORD_VERB_RU,,HIRAGANA,,,隠れる,かくれる,,kakureru,"znikać
 chować się
+być niewidocznym
+być zasłoniętym
+ukryć się (przed ludzkim wzrokiem)
 wycofywać się",,,
 8416,WORD_VERB_RU,,HIRAGANA,,,融ける,とける,,tokeru,"topnieć
 rozwiązywać się",,,
@@ -20113,11 +20142,14 @@ umowa",,,
 uwaga
 skupienie uwagi",,,
 9836,UNKNOWN,,HIRAGANA,,,護謨,ごむ,,gomu,guma,,,
-9837,WORD_ADJECTIVE_I,,HIRAGANA,,,非道い,ひどい ,,hidoi,"okrutny
-srogi
+9837,WORD_ADJECTIVE_I,,HIRAGANA,,,非道い,ひどい ,,hidoi,"obrzydliwy
+okropny
 straszny
-obrzydliwy
-zły",,,
+intensywny
+bezlitosny
+bezwzględny
+surowy
+gwałtowny",,,
 9838,WORD_NOUN,,HIRAGANA,,,迷路,めいろ ,,meiro,labirynt,,,
 9839,WORD_NOUN,,HIRAGANA,,,山荒らし,やまあらし ,,yamaarashi,jeżozwierz,,,
 9840,WORD_NOUN,,KATAKANA,,,-,ハリネズミ,,harinezumi,jeż,,,
@@ -23617,3 +23649,30 @@ w czasie",,,2836
 11474,WORD_NOUN,,HIRAGANA,,,お巡りさん,おまわりさん,,omawari san,policjant,,,
 11475,WORD_VERB_IRREGULAR,,HIRAGANA,,,手術する,しゅじゅつする,,shujutsu suru,operować,,,
 11476,WORD_VERB_IRREGULAR,,HIRAGANA,,,収穫する,しゅうかくする,,shuukaku suru,zbierać plony,,,
+11477,WORD_NOUN,,HIRAGANA,,,左足,ひだりあし,,hidari ashi,lewa noga,,,
+11478,WORD_NOUN,,HIRAGANA,,,邪魔,じゃま,,jama,przeszkoda,,,
+11479,WORD_VERB_IRREGULAR,,HIRAGANA,,,邪魔する,じゃまする,,jama suru,przeszkadzać,,,
+11480,UNKNOWN,PREFIX,HIRAGANA,,,次,じ,,ji,"następny
+przyszły",,,"462
+11483"
+11481,UNKNOWN,,HIRAGANA,,,次週,じしゅう,,jishuu,"przyszły tydzień
+następny tydzień",,,
+11482,WORD_NOUN,,HIRAGANA_KATAKANA,,,ローマ字,ローマじ,,roumaji,litery łacińskie,,,
+11483,UNKNOWN,SUFFIX,HIRAGANA,,,次,じ,,ji,[końcówka liczebników porządkowych],,,"462
+11480"
+11484,WORD_NOUN,,HIRAGANA,,,第一世界大戦,だいいちじせかいたいせん,,dai ichiji sekai taisen,"I wojna światowa
+pierwsza wojna światowa",,,
+11485,WORD_NOUN,,HIRAGANA,,,二次試験,にじしけん,,niji shiken,"egzamin drugiego stopnia
+drugi egzamin",,,
+11486,WORD_NOUN,,HIRAGANA,,,間接税,かんせつぜい,,kansetsuzei,podatek pośredni,,,
+11487,WORD_NOUN,,HIRAGANA,,,間接話法,かんせつわほう ,,kansetsu wahou,mowa zależna,,,
+11488,WORD_ADJECTIVE_NA,,HIRAGANA,,,間接的,かんせつてき,,kansetsuteki,pośredni,,,
+11489,WORD_NOUN,,HIRAGANA,,,間接的な影響,かんせつてきなえいきょう,,kansetsuteki na eikyou,pośredni wpływ,,,
+11490,WORD_NOUN,,HIRAGANA,,,感心,かんしん,,kanshin,"podziw
+godny podziwu",,,
+11491,WORD_VERB_IRREGULAR,,HIRAGANA,,,感心する,かんしんする,,kanshin suru,podziwiać,,,
+11492,WORD_NOUN,,HIRAGANA,,,企業,きぎょう,,kigyou,przedsiębiorstwo,,,
+11493,WORD_NOUN,,HIRAGANA,,,中小企業,ちゅうしょうきぎょう ,,chuushou kigyou,średnie i małe przedsiębiorstwo,,,
+11494,WORD_VERB_RU,,HIRAGANA,,,待ち合わせる,まちあわせる,,machiawaseru,"umówić się
+czekać",na spotkanie,,
+11495,WORD_VERB_IRREGULAR,,HIRAGANA,,,存在する,そんざいする,,sonzai suru,istnieć,,,
