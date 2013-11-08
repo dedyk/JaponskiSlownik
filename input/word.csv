@@ -294,7 +294,8 @@ Genki kanji 2-21",,時計,とけい,,tokei,zegarek,,,
 155,WORD_NOUN,,KATAKANA,Genki 1-2,,-,ノート,,nooto,"notes
 zeszyt
 notatki",,,
-156,WORD_NOUN,,KATAKANA,Genki 1-2,,-,ペン,,pen,długopis,,,
+156,WORD_NOUN,,KATAKANA,Genki 1-2,,-,ペン,,pen,"długopis
+pióro",,,
 157,WORD_NOUN,,HIRAGANA,Genki 1-2,,帽子,ぼうし,,boushi,"kapelusz
 czapka",,,
 158,WORD_NOUN,,HIRAGANA,"Genki 1-2
@@ -410,7 +411,9 @@ Genki kanji 1-11",,映画,えいが,,eiga,film,,,
 213,WORD_NOUN,,HIRAGANA,"Genki 1-3
 Genki kanji 2-14",,音楽,おんがく,,ongaku,muzyka,,,
 214,WORD_NOUN,,HIRAGANA,Genki 1-3,,雑誌,ざっし,,zasshi,"magazyn
-czasopismo",,,
+czasopismo
+tygodnik
+miesięcznik",,,
 215,WORD_NOUN,,KATAKANA,Genki 1-3,,-,スポーツ,,supootsu,sport,,,
 216,WORD_NOUN,,KATAKANA,Genki 1-3,,-,デート,,deeto,randka,,,
 217,WORD_NOUN,,KATAKANA,Genki 1-3,,-,テニス,,tenisu,tenis,,,
@@ -990,7 +993,7 @@ Genki kanji 1-8",,電気,でんき,,denki,"elektryczność
 prąd
 światło",,,
 465,WORD_NOUN,,HIRAGANA,Genki 1-6,,荷物,にもつ,,nimotsu,bagaż,,,
-466,WORD_NOUN,,KATAKANA,"Genki 1-6
+466,WORD_NOUN,SUFFIX,KATAKANA,"Genki 1-6
 Genki 1-11",,-,ページ,,peeji,strona,,,
 467,WORD_NOUN,,HIRAGANA,Genki 1-6,,窓,まど,,mado,"okno
 witryna",,,
@@ -1109,13 +1112,20 @@ miły
 dobry
 znakomity
 doskonały",,,
-498,UNKNOWN,,HIRAGANA,Genki 1-6,,-,すぐ,,sugu,w tej chwili,,,
-499,UNKNOWN,,HIRAGANA,"Genki 1-6
+498,WORD_ADVERB,,HIRAGANA,Genki 1-6,,-,すぐ,,sugu,"w tej chwili
+natychmiast
+zaraz
+niezwłocznie
+łatwo
+bez trudu
+dokładnie
+tuż",,,
+499,WORD_ADVERB,,HIRAGANA,"Genki 1-6
 Genki dodatkowe 2-14
 Genki kanji 2-14
 Genki 2-18",,本当に,ほんとうに,,hontou ni,"naprawdę
 doprawdy",,,
-500,UNKNOWN,,HIRAGANA,Genki 1-6,,-,ゆっくり,,yukkuri,"powoli
+500,WORD_ADVERB,,HIRAGANA,Genki 1-6,,-,ゆっくり,,yukkuri,"powoli
 wolno
 bez pośpiechu",,,
 501,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-10
@@ -1561,7 +1571,8 @@ Genki kanji 1-8",,新幹線,しんかんせん,,shinkansen,shinkansen,szybka kol
 689,WORD_NOUN,,HIRAGANA,Genki 1-9,,先月,せんげつ,,sengetsu,"zeszły miesiąc
 ubiegły miesiąc",,,
 690,WORD_NOUN,,HIRAGANA,Genki 1-9,,単語,たんご,,tango,słownictwo,,,
-691,WORD_NOUN,,KATAKANA,Genki 1-9,,-,ピアノ,,piano,pianino,,,
+691,WORD_NOUN,,KATAKANA,Genki 1-9,,-,ピアノ,,piano,"pianino
+fortepian",,,
 692,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-9,,寂しい,さびしい,,sabishii,samotny,,,4152
 693,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,意地悪,いじわる,,ijiwaru,złośliwy,,,
 694,WORD_VERB_U,,HIRAGANA,Genki 1-9,,踊る,おどる,,odoru,"tańczyć
@@ -1758,7 +1769,8 @@ pierwszy
 5064
 6392
 8425
-11190"
+11190
+11504"
 770,UNKNOWN,,HIRAGANA,Genki 1-10,,花月,かげつ,,kagetsu,przez ... miesięcy,,,
 771,UNKNOWN,,HIRAGANA,Genki 1-10,,後,ご,,go,"w ... czasie
 po ...
@@ -2134,7 +2146,7 @@ reszta (pieniędzy)",,,
 uroczystość
 święto
 festyn",,,
-939,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-11,,お返事,おへんじ,,ohenji,odpowiedź,,,
+939,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,返事,へんじ,,henji,odpowiedź,,,
 940,UNKNOWN,,HIRAGANA,Genki 1-12,,方,ほう,,hou,"kierunek
 droga
 strona
@@ -2761,9 +2773,13 @@ słaby
 jasny kolor
 blady
 mdły","np. materiał, np. pastelowy",,
-1237,WORD_VERB_RU,,HIRAGANA,,,掛ける,かける,,kakeru,"wieszać
+1237,WORD_VERB_RU,,HIRAGANA,,,掛ける,かける,,kakeru,"usiąść
+wieszać
+zawiesić
 powiesić coś na czymś
-mnożyć",,,3218
+mnożyć
+włączyć
+posypać",,,3218
 1238,WORD_NOUN,,HIRAGANA,Genki 2-20,,角,かど,,kado,róg,,,
 1239,WORD_VERB_U,,HIRAGANA,,,に気がつく,にきがつく,,niki ga tsuku,zauważyć,,,
 1240,UNKNOWN,,HIRAGANA,,,美,び,,bi,"piękno
@@ -3308,7 +3324,7 @@ nieboskłon",,,"7791
 8738"
 1501,WORD_VERB_U,,HIRAGANA,Genki kanji 2-13,,空く,あく,,aku,"być wolnym
 mieć czas
-być na wakacjach",,,
+być na wakacjach",,,11515
 1502,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,神戸港,こうべこう,,koube kou,port w Kobe,,,
 1503,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,港,みなと,,minato,port,,,
 1504,UNKNOWN,,HIRAGANA,Genki kanji 2-13,,大阪着,おおさかちゃく,,oosaka chaku,przybyć do Osaki,,,
@@ -5696,7 +5712,8 @@ departament
 oddział
 kurs
 kierunek
-specjalność",,,769
+specjalność",,,"769
+11504"
 2749,WORD_NOUN,,HIRAGANA,,,科目,かもく,,kamoku,przedmiot,szkolny,,
 2750,WORD_NOUN,,HIRAGANA,,,科料,かりょう,,karyou,"grzywna
 kara pieniężna",,,
@@ -6011,6 +6028,7 @@ pasja",,,
 2902,WORD_VERB_U,,HIRAGANA,,,化かす,ばかす,,bakasu,"zaczarować
 oczarować",,,
 2903,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,変化,へんか,,henka,"zmiana
+odmiana
 modyfikacja
 urozmaicenie",,,2904
 2904,WORD_NOUN,,HIRAGANA,,,変化,へんげ,,henge,chochlik,,,2903
@@ -6672,7 +6690,8 @@ powinność
 obowiązek
 powinność
 zobowiązanie",,,
-3234,WORD_NOUN,,HIRAGANA,,,事務所,じむしょ,,jimusho,biuro,,,
+3234,WORD_NOUN,,HIRAGANA,,,事務所,じむしょ,,jimusho,"biuro
+urząd",,,
 3235,WORD_NOUN,,HIRAGANA,,,外務省,がいむしょう,,gaimushou,ministerstwo spraw zagranicznych,,,
 3236,WORD_NOUN,,HIRAGANA,,,義理,ぎり,,giri,"obowiązek
 dług wdzięczności",,,
@@ -6907,7 +6926,8 @@ korepetytor",,,
 dostarczać
 roznosić
 rozdawać",,,
-3352,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,事務,じむ,,jimu,praca biurowa,,,
+3352,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,事務,じむ,,jimu,"praca biurowa
+sprawy urzędowe",,,
 3353,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-18,,生活のゆとり,せいかつのゆとり,,seikatsu no yutori,dodatkowe pieniądze zaoszczędzone na kosztach życia,,,
 3354,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,貯金,ちょきん,,chokin,"oszczędności
 wkład",,,
@@ -7063,7 +7083,9 @@ armia",,,
 3423,WORD_NOUN,,HIRAGANA,,,典型,てんけい,,tenkei,"typ
 wzór",,,
 3424,WORD_VERB_IRREGULAR,,HIRAGANA,,,達する,たっする,,tassuru,"przybywać
-osiągnąć",,,
+osiągnąć
+dotrzeć
+dosięgnąć",,,
 3425,WORD_NOUN,,HIRAGANA,,,発達,はったつ,,hattatsu,"rozwój
 postęp",,,
 3426,WORD_NOUN,,HIRAGANA,,,上達,じょうたつ,,joutatsu,"postęp
@@ -10450,7 +10472,8 @@ kasta",,,
 siew
 zasiew",,,
 5063,WORD_NOUN,,HIRAGANA,,,種無し,たねなし,,tanenashi,bez nasion,,,
-5064,WORD_NOUN,,HIRAGANA,Genki 2-21,,蚊,か,,ka,komar,,,769
+5064,WORD_NOUN,,HIRAGANA,Genki 2-21,,蚊,か,,ka,komar,,,"769
+11504"
 5065,WORD_NOUN,,HIRAGANA,Genki 2-21,,環境,かんきょう,,kankyou,"środowisko
 otoczenie",,,
 5066,WORD_NOUN,,HIRAGANA,Genki 2-21,,終電,しゅうでん,,shuuden,ostatni pociąg,,,
@@ -11077,7 +11100,11 @@ rywalizować",,,
 również",,,
 5358,WORD_VERB_U,,HIRAGANA,,,苦しむ,くるしむ,,kurushimu,cierpieć,,,
 5359,WORD_VERB_RU,,HIRAGANA,,,苦しめる,くるしめる,,kurushimeru,dręczyć,,,
-5360,WORD_ADJECTIVE_I,,HIRAGANA,,,苦しい,くるしい,,kurushii,sprawiający ból,,,
+5360,WORD_ADJECTIVE_I,,HIRAGANA,,,苦しい,くるしい,,kurushii,"sprawiający ból
+bolesny
+dokuczliwy
+męczący
+cierpiący",,,
 5361,WORD_ADJECTIVE_I,,HIRAGANA,,,苦い,にがい,,nigai,gorzki,,,
 5362,WORD_VERB_U,,HIRAGANA,,,苦る,にがる,,nigaru,"mieć nachmurzoną minę
 patrzeć wilkiem",,,
@@ -13280,7 +13307,8 @@ zaczął płonąć",,,
 6391,WORD_NOUN,,HIRAGANA,,,十字架,じゅうじか,,juujika,krzyż,,,
 6392,WORD_NOUN,,HIRAGANA,,,架,か,,ka,"rama
 podstawa
-półka",,,769
+półka",,,"769
+11504"
 6393,WORD_VERB_RU,,HIRAGANA,,,架ける,かける,,kakeru,wieszać,,,3218
 6394,WORD_NOUN,,HIRAGANA,,,両面,りょうめん,,ryoumen,obie strony,,,
 6395,WORD_NOUN,,HIRAGANA,,,両者,りょうしゃ,,ryousha,obie osoby,,,
@@ -13879,10 +13907,17 @@ stan",,,
 inteligencja",,,
 6736,WORD_NOUN,,HIRAGANA,,,英気,えいき,,eiki,entuzjazm,,,
 6737,UNKNOWN,,HIRAGANA,,,確か,たしか,,tashika,"pewny
+dokładny
+ścisły
 niezawodny
-wiarygodny",,,
-6738,WORD_VERB_RU,,HIRAGANA,,,確かめる,たしかめる,,tashikameru,"potwierdzać
-upewniać się",,,
+wiarygodny
+przypuszczalnie
+myślę, że
+na pewno",,,
+6738,WORD_VERB_RU,,HIRAGANA,,,確かめる,たしかめる,,tashikameru,"upewnić się
+sprawdzić
+zweryfikować
+potwierdzać",,,
 6739,WORD_NOUN,,HIRAGANA,,,確認,かくにん,,kakunin,potwierdzenie,,,
 6740,WORD_ADJECTIVE_NA,,HIRAGANA,,,明確,めいかく,,meikaku,"pewny
 jasny",,,
@@ -13969,8 +14004,6 @@ zamykać",,,
 6774,WORD_NOUN,,HIRAGANA,,,留置場,りゅうちじょう,,ryuuchijou,"cela
 areszt",,,
 6775,WORD_NOUN,,HIRAGANA,,,辺,へん,,hen,"okolica
-granica
-plaża
 region",,,
 6776,WORD_NOUN,,HIRAGANA,,,辺り,あたり,,atari,okolica,,,
 6777,WORD_NOUN,,HIRAGANA,,,近辺,きんぺん,,kinpen,sąsiedztwo,,,
@@ -14083,7 +14116,8 @@ wkurzający
 zamknij się",,,
 6830,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 2-22,,-,ぺらぺら,,perapera,być biegłym w języku,język ga,,
 6831,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki 2-22
-Genki kanji 2-23",,変,へん,,hen,dziwny,,,
+Genki kanji 2-23",,変,へん,,hen,"dziwny
+dziwaczny",,,
 6832,WORD_VERB_U,,HIRAGANA_KATAKANA,Genki 2-22,,コピーを取る,コピーをとる,,kopii o toru,kopiować,,,
 6833,WORD_VERB_U,,HIRAGANA,Genki 2-22,,拾う,ひろう,,hirou,"podnieść (coś)
 zbierać
@@ -15324,7 +15358,8 @@ mieszkanie
 pomieszczenie",sufiks,,
 7461,WORD_NOUN,,HIRAGANA,,,室内,しつない,,shitsunai,wewnątrz,,,
 7462,WORD_NOUN,,HIRAGANA,,,室外,しつがい,,shitsugai,na zewnątrz,,,
-7463,WORD_NOUN,,HIRAGANA,,,事務室,じむしつ,,jimushitsu,biuro,,,
+7463,WORD_NOUN,,HIRAGANA,,,事務室,じむしつ,,jimushitsu,"biuro
+sekretariat",,,
 7464,WORD_NOUN,,HIRAGANA,,,注目,ちゅうもく,,chuumoku,"uwaga
 obserwacja",,,
 7465,WORD_NOUN,,HIRAGANA,,,注解,ちゅうかい,,chuukai,"komentarz
@@ -16132,7 +16167,10 @@ gałąź",,,
 7873,WORD_VERB_U,,HIRAGANA,,,好む,このむ,,konomu,"lubić
 mieć upodobanie w",,,
 7874,WORD_VERB_U,,HIRAGANA,,,好く,すく,,suku,"lubić
-mieć upodobanie w",,,
+kochać
+mieć zamiłowanie
+mieć upodobanie w
+gustować",częściej używany w formie sukareru,,
 7875,WORD_VERB_U,,HIRAGANA,,,摘む,つむ,,tsumu,"wyrywać
 wyciągać
 zbierać",,,
@@ -16140,6 +16178,7 @@ zbierać",,,
 7877,WORD_VERB_U,,HIRAGANA,,,躍る,おどる,,odoru,"podskakiwać
 skakać",,,
 7878,WORD_NOUN,,HIRAGANA,,,唇,くちびる,,kuchibiru,"usta
+warga
 wargi",,,
 7879,WORD_VERB_RU,,HIRAGANA,,,併せる,あわせる,,awaseru,"zbierać
 gromadzić",,,
@@ -17563,7 +17602,8 @@ zapach",,,"8425
 11466"
 8425,WORD_NOUN,,HIRAGANA,,,香,か,,ka,"zapach (przyjemny)
 woń",,,"769
-8424"
+8424
+11504"
 8426,WORD_NOUN,,HIRAGANA,,,香り,かおり,,kaori,"zapach (przyjemny)
 woń",,,
 8427,WORD_VERB_U,,HIRAGANA,,,香る,かおる,,kaoru,pachnieć,,,
@@ -19481,6 +19521,7 @@ zapisywać w testamencie",,,
 9533,WORD_NOUN,,HIRAGANA,,,遺失,いしつ ,,ishitsu,"strata
 utrata",,,
 9534,WORD_NOUN,,HIRAGANA,,,郊外,こうがい ,,kougai,"przedmieście
+okolice
 peryferia (miasta)",,,
 9535,WORD_ADJECTIVE_NA,,HIRAGANA,,,無秩序,むちつじょ ,,muchitsujo,"bałagan
 pomieszanie
@@ -22211,7 +22252,11 @@ niefrasobliwość",,,
 10762,WORD_ADJECTIVE_I,,HIRAGANA,,,凄い,すごい ,,sugoi,"świetny
 wspaniały
 cudowny
-fantastyczny",,,
+fantastyczny
+zdumiewający
+straszny
+okropny
+przerażający",,,
 10763,WORD_NOUN,,HIRAGANA,,,剛毛,ごうもう ,,goumou,"sierść
 włosie
 jeżenie
@@ -23076,7 +23121,8 @@ zakwalifikować się",,,
 11190,WORD_NOUN,SUFFIX,HIRAGANA,,,課,か,,ka,"sekcja
 wydział
 rozdział
-lekcja",,,769
+lekcja",,,"769
+11504"
 11191,WORD_NOUN,,HIRAGANA,,,学生課,がくせいか,,gakuseika,dział spraw studenckich,,,
 11192,WORD_NOUN,,HIRAGANA,,,学科,がっか,,gakka,kierunek,na uczelni,,
 11193,WORD_NOUN,,HIRAGANA,,,文科,ぶんか,,bunka,kierunek humanistyczny,,,
@@ -23676,3 +23722,58 @@ godny podziwu",,,
 11494,WORD_VERB_RU,,HIRAGANA,,,待ち合わせる,まちあわせる,,machiawaseru,"umówić się
 czekać",na spotkanie,,
 11495,WORD_VERB_IRREGULAR,,HIRAGANA,,,存在する,そんざいする,,sonzai suru,istnieć,,,
+11496,WORD_VERB_IRREGULAR,,HIRAGANA,,,返事する,へんじする,,henji suru,odpowiadać,,,
+11497,WORD_VERB_IRREGULAR,,HIRAGANA,,,変化する,へんかする,,henka suru,"zmieniać się
+odmieniać się",,,
+11498,WORD_VERB_IRREGULAR,,HIRAGANA,,,変更する,へんこうする,,henkou suru,"zmieniać
+modyfikować",,,
+11499,WORD_NOUN,,HIRAGANA,,,自慢,じまん,,jiman,"chełpienie się
+duma",,,
+11500,WORD_VERB_IRREGULAR,,HIRAGANA,,,自慢する,じまんする,,jiman suru,"być dumnym
+pysznić się",,,
+11501,WORD_ADJECTIVE_NA,,HIRAGANA,,,地味,じみ,,jimi,"spokojny
+poważny
+stonowany",,,
+11502,WORD_NOUN,,HIRAGANA,,,事務員,じむいん,,jimuin,urzędnik,,,
+11503,WORD_NOUN,,HIRAGANA,,,外人,がいじん,,gaijin,"cudzoziemiec
+obcy",,,
+11504,WORD_PARTICULE,,HIRAGANA,,,-,か,,ka,[partykuła pytania na końcu zdania],,,"769
+2748
+5064
+6392
+8425
+11190"
+11505,WORD_VERB_IRREGULAR,,HIRAGANA,,,興奮する,こうふんする,,koufun suru,być podnieconym,,,
+11506,WORD_NOUN,,HIRAGANA,,,公害,こうがい,,kougai,zanieczyszczenie środowiska,,,
+11507,WORD_VERB_IRREGULAR,,HIRAGANA,,,区別する,くべつする,,kubetsu suru,"rozróżnić
+różnicować
+klasyfikować",,,
+11508,WORD_NOUN,,HIRAGANA,,,下り,くだり,,kudari,"schodzenie w dół
+droga w dół
+pociąg (jadący z miasta na prowincję)",,,
+11509,WORD_NOUN,,KATAKANA,,,-,ペンキ,,penki,farba,do ścian i itp,,
+11510,WORD_NOUN,,KATAKANA,,,-,ピンポン,,pinpon,"ping pong
+tenis stołowy",,,
+11511,WORD_ADVERB,,HIRAGANA,,,-,ぴったり,,pittari,"ściśle
+akurat
+dokładnie",,,
+11512,WORD_VERB_IRREGULAR,,HIRAGANA,,,-,ぴったりする,,pittari suru,"pasować
+przylegać",,,
+11513,WORD_NOUN,,KATAKANA,,,-,ポスト,,posuto,skrzynka pocztowa,,,
+11514,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,プレゼントする,,purezento suru,robić komuś prezent,,,
+11515,WORD_VERB_U,,HIRAGANA,,,空く,すく,,suku,"stać się pustym
+stać się próżnym
+stać się opóźnionym
+stać się nie zatłoczonym",,,1501
+11516,WORD_NOUN,,HIRAGANA,,,座敷,ざしき,,zashiki,"pokój
+pomieszczenie
+salon","zwykle w stylu japońskim, wyłożony matami",,
+11517,UNKNOWN,PREFIX,HIRAGANA,,,全,ぜん,,zen,"wszystko
+całkowicie
+każdy
+kompletnie
+pełny",,,
+11518,WORD_NOUN,,HIRAGANA,,,全財産,ぜんざいさん,,zen zaisan,cały majątek,,,
+11519,WORD_NOUN,,HIRAGANA,,,全国民,ぜんこくみん,,zen kokumin,"cały naród
+wszyscy ludzie",,,
+11520,WORD_NOUN,,HIRAGANA,,,全校,ぜんこう,,zen kou,cała szkoła,,,
