@@ -150,7 +150,8 @@ Genki kanji 1-6",,大学,だいがく,,daigaku,uniwersytet,,,
 Genki kanji 1-8
 Genki kanji 1-9",,電話,でんわ,,denwa,telefon,,,
 85,WORD_NOUN,,HIRAGANA,"Genki 1-1
-Genki kanji 1-9",,友達,ともだち,,tomodachi,przyjaciel,,,
+Genki kanji 1-9",,友達,ともだち,,tomodachi,"przyjaciel
+kolega",,,
 86,WORD_NOUN,,HIRAGANA,"Genki 1-1
 Genki kanji 1-9",,名前,なまえ,,namae,imię,,,
 87,WORD_ASK,,HIRAGANA,"Genki 1-1
@@ -1732,7 +1733,7 @@ celebryta",,,
 kontrakt
 prenumerata",,,
 754,UNKNOWN,,HIRAGANA,Genki 1-10,,来学期,らいがっき,,raigakki,następny semestr,,,
-755,WORD_NOUN,,HIRAGANA,Genki 1-10,,-,りんご,,ringo,jabłko,,,
+755,WORD_NOUN,,HIRAGANA,Genki 1-10,,林檎,りんご,,ringo,jabłko,,,
 756,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-10,,暖かい,あたたかい,,atatakai,"ciepły
 miły
 przyjazny",,,3628
@@ -1973,7 +1974,11 @@ pielęgniarz",w szpitalu,,
 zgadza się",,,
 854,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,"Genki dodatkowe 2-16
 Genki 2-22",,助ける,たすける,,tasukeru,"pomagać
-ratować",,,
+ratować
+ocalić
+przynieść ulgę
+pomóc
+przyjść z pomocą",,,
 855,WORD_EXPRESSION,,HIRAGANA,,,助けて,たすけて,,tasukete,pomocy,,,
 856,WORD_VERB_RU,,HIRAGANA,Genki 2-16,,見せる,みせる,,miseru,pokazywać,,,
 857,WORD_EXPRESSION,,HIRAGANA,Genki 2-15,,-,けど,,kedo,"..., ale
@@ -2998,7 +3003,8 @@ siebie
 się",,,
 1353,UNKNOWN,,HIRAGANA,Genki kanji 1-6,,先に,さきに,,sakini,na przód,,,
 1354,WORD_VERB_RU,,HIRAGANA,"Genki kanji 1-6
-Genki dodatkowe 2-15",,生まれる,うまれる,,umareru,rodzić się,,,
+Genki dodatkowe 2-15",,生まれる,うまれる,,umareru,"rodzić się
+przyjść na świat",,,
 1355,WORD_NOUN,,HIRAGANA,"Genki kanji 1-6
 Genki 2-18",,外,そと,,soto,na zewnątrz,,,6462
 1356,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,京子,きょうこ,,kyouko,Kioko,,,
@@ -3015,7 +3021,8 @@ Genki dodatkowe 2-16",,小学生,しょうがくせい,,shougakusei,uczeń szko�
 Genki kanji 1-7",に,会う,あう,ni,au,"spotykać
 widzieć osobę","osoba ni, spotkanie przypadkowe",,363
 1363,UNKNOWN,,HIRAGANA,"Genki kanji 1-7
-Genki dodatkowe 2-23",,社会,しゃかい,,shakai,społeczeństwo,,,
+Genki dodatkowe 2-23",,社会,しゃかい,,shakai,"społeczeństwo
+społeczność",,,
 1364,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,父母,ふぼ,,fubo,"ojciec i matka
 rodzice",,,
 1365,UNKNOWN,,HIRAGANA,Genki kanji 1-7,,母語,ぼご,,bogo,język ojczysty,,,
@@ -11178,7 +11185,9 @@ rana
 strata",,,
 5376,WORD_VERB_U,,HIRAGANA,,,書き損なう,かきそこなう,,kakisokonau,"źle napisać
 pomylić się w pisaniu",,,
-5377,WORD_NOUN,,HIRAGANA,,,責任,せきにん,,sekinin,odpowiedzialność,,,
+5377,WORD_NOUN,,HIRAGANA,,,責任,せきにん,,sekinin,"odpowiedzialność
+obowiązek
+zobowiązanie",,,
 5378,WORD_NOUN,,HIRAGANA,,,責務,せきむ,,sekimu,obowiązek,,,
 5379,WORD_NOUN,,HIRAGANA,,,責苦,せめく,,semeku,tortury,,,
 5380,WORD_NOUN,,HIRAGANA,,,責め道具,せめどうぐ,,semedougu,narzędzia tortur,,,
@@ -12100,10 +12109,10 @@ posłuszeństwo
 okazja",,,8593
 5834,WORD_NOUN,,HIRAGANA,,,順番,じゅんばん,,junban,kolejność,,,
 5835,WORD_NOUN,,HIRAGANA,,,順行,じゅんこう,,junkou,posuwać się w kolejności,,,
-5836,WORD_NOUN,,HIRAGANA,,,順序,じゅんじょ,,junjo,"system
-porządek
-procedura
-kolejność",,,
+5836,WORD_NOUN,,HIRAGANA,,,順序,じゅんじょ,,junjo,"porządek
+kolejność
+system
+procedura",,,
 5837,WORD_ADJECTIVE_NA,,HIRAGANA,,,順調,じゅんちょう,,junchou,"sprzyjające warunki
 sprawne funkcjonowanie",,,
 5838,WORD_NOUN,,HIRAGANA,,,府,ふ,,fu,"biuro rządowe
@@ -13734,8 +13743,13 @@ pozostałości",,,
 dygresja",,,
 6611,UNKNOWN,,HIRAGANA,,,各,かく,,kaku,"poszczególny
 każdy",prefiks,,
-6612,UNKNOWN,,HIRAGANA,,,各々,おのおの,,onoono,"poszczególny
-każdy",,,
+6612,WORD_ADVERB,,HIRAGANA,,,各々,おのおの,,onoono,"każdy
+poszczególny
+pojedynczy
+oddzielny
+indywidualny
+odrębny
+różny",,,11601
 6613,WORD_NOUN,,HIRAGANA,,,各位,かくい,,kakui,"każdy (z was)
 pan (w listach)
 pani (w listach)",,,
@@ -13771,7 +13785,9 @@ starszy",,,
 6634,WORD_NOUN,,HIRAGANA,,,多元論,たげんろん,,tagenron,pluralizm,,,
 6635,WORD_NOUN,,HIRAGANA,,,多神論,たしんろん,,tashinron,"politeizm
 wielobóstwo",,,
-6636,WORD_NOUN,,HIRAGANA,,,多数,たすう,,tasuu,duża liczba,,,
+6636,WORD_NOUN,,HIRAGANA,,,多数,たすう,,tasuu,"duża liczba
+duża ilość
+większość",,,
 6637,WORD_NOUN,,HIRAGANA,,,多様性,たようせい,,tayousei,różnorodność,,,
 6638,WORD_NOUN,,HIRAGANA,,,道標,みちしるべ,,michishirube,"znak drogowy
 drogowskaz",,,6639
@@ -14117,7 +14133,8 @@ cokolwiek",,,
 6811,UNKNOWN,,HIRAGANA,,,何回,なんかい,,nankai,ile razy,,,
 6812,UNKNOWN,,HIRAGANA,,,何度,なんど,,nando,"ile stopni
 ile razy",,,
-6813,WORD_NOUN,,HIRAGANA,,,住宅,じゅうたく,,juutaku,mieszkanie,budynek,,
+6813,WORD_NOUN,,HIRAGANA,,,住宅,じゅうたく,,juutaku,"mieszkanie
+dom",budynek,,
 6814,WORD_NOUN,,HIRAGANA,,,住民,じゅうみん,,juumin,"mieszkańcy
 ludność",,,
 6815,WORD_NOUN,,HIRAGANA,,,住人,じゅうにん,,juunin,mieszkaniec,,,
@@ -15187,8 +15204,8 @@ wzmacniać",,,
 krzepnąć",,,
 7344,WORD_ADJECTIVE_NA,,HIRAGANA,,,固有,こゆう,,koyuu,"charakterystyczny
 szczególny",,,
-7345,WORD_NOUN,,HIRAGANA,,,固体,こたい,,kotai,"twardy
-stały",,,
+7345,WORD_NOUN,,HIRAGANA,,,固体,こたい,,kotai,"ciało stałe
+stały stan skupienia",,,
 7346,WORD_ADJECTIVE_NA,,HIRAGANA,,,強固,きょうこ,,kyouko,"twardy
 mocny",,,
 7347,WORD_NOUN,,HIRAGANA,,,固定,こてい,,kotei,"ustalony
@@ -15781,7 +15798,12 @@ litowanie się z",,,
 7644,UNKNOWN,,HIRAGANA,Genki 2-23,,-,いや,,iya,nie,,,2471
 7645,WORD_EXPRESSION,,HIRAGANA,Genki 2-23,,元気でね,げんきでね,,genki de ne,dbaj o siebie,,,
 7646,WORD_EXPRESSION,,HIRAGANA,Genki 2-23,,-,そうそう,,sousou,masz rację,,,
-7647,WORD_EXPRESSION,,HIRAGANA,Genki 2-23,,-,そろそろ,,sorosoro,???,,,
+7647,WORD_ADVERB,,HIRAGANA,Genki 2-23,,-,そろそろ,,sorosoro,"niebawem
+wkrótce
+wnet
+wolniej
+bez pośpiechu
+spokojnie",,,
 7648,WORD_ADVERB,,HIRAGANA,Genki 2-23,,-,ものすごく,,monosugoku,"nadzwyczajnie
 ekstremalnie",,,
 7649,WORD_NOUN,,HIRAGANA,,,但,ただ,,tada,"tylko
@@ -17601,7 +17623,10 @@ zakopać
 zakopywać
 napełniać
 nalewać",,,8410
-8410,WORD_VERB_RU,,HIRAGANA,,,埋める,うめる,,umeru,"grzebać
+8410,WORD_VERB_RU,,HIRAGANA,,,埋める,うめる,,umeru,"pogrzebać
+zakopać
+zasypać
+grzebać
 napełniać
 nalewać",,,8409
 8411,WORD_VERB_U,,HIRAGANA,,,埋まる,うずまる,,uzumaru,"być napełnianym
@@ -23929,3 +23954,123 @@ zaniedbanie",,,
 być nieostrożnym
 zaniedbywać",,,
 11572,WORD_NOUN,,HIRAGANA,,,狸,たぬき,,tanuki,szop,,,
+11573,WORD_EXPRESSION,,HIRAGANA,,,-,どうしても,,doushitemo,"w żaden sposób
+za nic
+koniecznie
+za wszelką cenę",,,
+11574,WORD_ADJECTIVE_NA,,HIRAGANA,,,普通,ふつう ,,futsuu,"zwykły
+pospolity",,,
+11575,WORD_NOUN,,HIRAGANA,,,普通列車,ふつうれっしゃ,,futsuu ressha,pociąg osobowy,,,
+11576,WORD_NOUN,,HIRAGANA_KATAKANA,,,苺ジュース,いちごジュース,,ichigo juusu,sok truskawkowy,,,
+11577,WORD_NOUN,,HIRAGANA_KATAKANA,,,蜜柑ジュース,みかんジュース,,mikan juusu,sok z mandarynki,,,
+11578,WORD_NOUN,,HIRAGANA,,,苹果,りんご,,ringo,jabłko,,,
+11579,WORD_NOUN,,HIRAGANA_KATAKANA,,,林檎ジュース,りんごジュース,,ringo juusu,sok jabłkowy,,,
+11580,WORD_NOUN,,HIRAGANA_KATAKANA,,,野菜ジュース,やさいジュース,,yasai juusu,sok z warzyw,,,
+11581,WORD_NOUN,,HIRAGANA,,,住宅地,じゅうたくち,,juutakuchi,dzielnica mieszkaniowa,,,
+11582,WORD_NOUN,,HIRAGANA,,,住宅街,じゅうたくがい,,juutakugai,dzielnica mieszkaniowa,,,
+11583,WORD_NOUN,,HIRAGANA,,,住宅問題,じゅうたくもんだい,,juutaku mondai,problemy mieszkaniowe,,,
+11584,WORD_NOUN,,HIRAGANA,,,住宅難,じゅうたくなん,,juutaku nan,"trudności mieszkaniowe
+niedostatek mieszkań",,,
+11585,WORD_NOUN,,HIRAGANA,,,重要書類,じゅうようしょるい,,juuyou shorui,ważne dokumenty,,,
+11586,WORD_NOUN,,HIRAGANA,,,交替,こうたい,,koutai,"wymiana
+zmiana
+wachta",,,
+11587,WORD_VERB_IRREGULAR,,HIRAGANA,,,交替する,こうたいする,,koutai suru,zmieniać się,,,
+11588,WORD_NOUN,,HIRAGANA,,,肯定,こうてい,,koutei,"forma twierdząca
+potwierdzenie",,,
+11589,WORD_VERB_IRREGULAR,,HIRAGANA,,,肯定する,こうていする,,koutei suru,potwierdzać,,,
+11590,WORD_NOUN,,HIRAGANA,,,責任者,せきにんしゃ,,sekininsha,"osoba odpowiedzialna
+kierownik",,,
+11591,WORD_VERB_U,,HIRAGANA,,,責任を果たす,せきにんをはたす,,sekinin o hatasu,"spełniać obowiązek
+wypełniać zobowiązanie",,,
+11592,WORD_VERB_U,,HIRAGANA,,,責任を取る,せきにんをとる,,sekinin o toru,wziąć na siebie odpowiedzialność,,,
+11593,WORD_NOUN,,HIRAGANA,,,石炭産業,せきたんさんぎょう,,sekitan sangyou,przemysł węglowy,,,
+11594,WORD_NOUN,,HIRAGANA_KATAKANA,,,石油ストーブ,せきゆストーブ,,sekiyu sutoobu,"piec na naftę
+grzejnik na naftę",,,
+11595,WORD_ADVERB,,HIRAGANA,,,折角,せっかく,,sekkaku,"specjalnie
+celowo
+z wielkim wysiłkiem
+cenny
+wartościowy
+dobry
+życzliwy
+łaskawy",,,
+11596,WORD_NOUN,,HIRAGANA,,,社会生活,しゃかいせいかつ,,shakai seikatsu,"życie społeczne
+życie społeczeństwa",,,
+11597,WORD_NOUN,,HIRAGANA,,,社会問題,しゃかいもんだい,,shakai mondai,problemy społeczne,,,
+11598,WORD_NOUN,,HIRAGANA,,,写真機,しゃしんき,,shashinki,aparat fotograficzny,,,
+11599,WORD_VERB_U,,HIRAGANA,,,写真を写す,しゃしんをうつす,,shashin o utsusu,zrobić zdjęcie,,,
+11600,WORD_VERB_U,,HIRAGANA,,,写真を撮る,しゃしんをとる,,shashin o toru,"zrobić zdjęcie
+sfotografować",,,
+11601,WORD_ADVERB,,HIRAGANA,,,各々,それぞれ,,sorezore,"każdy
+poszczególny
+pojedynczy
+oddzielny
+indywidualny
+odrębny
+różny",,,6612
+11602,WORD_ADVERB,,HIRAGANA,,,各各,それぞれ,,sorezore,"każdy
+pojedynczy
+oddzielny
+indywidualny
+odrębny
+różny",,,
+11603,WORD_ADVERB,,HIRAGANA,,,其々,それぞれ,,sorezore,"każdy
+pojedynczy
+oddzielny
+indywidualny
+odrębny
+różny",,,
+11604,WORD_ADVERB,,HIRAGANA,,,其其,それぞれ,,sorezore,"każdy
+pojedynczy
+oddzielny
+indywidualny
+odrębny
+różny",,,
+11605,WORD_ADVERB,,HIRAGANA,,,夫々,それぞれ,,sorezore,"każdy
+pojedynczy
+oddzielny
+indywidualny
+odrębny
+różny",,,
+11606,WORD_ADVERB,,HIRAGANA,,,夫夫,それぞれ,,sorezore,"każdy
+pojedynczy
+oddzielny
+indywidualny
+odrębny
+różny",,,
+11607,WORD_ADVERB,,HIRAGANA,,,夫れ夫れ,それぞれ,,sorezore,"każdy
+pojedynczy
+oddzielny
+indywidualny
+odrębny
+różny",,,
+11608,WORD_ADVERB,,HIRAGANA,,,其れ其れ,それぞれ,,sorezore,"każdy
+pojedynczy
+oddzielny
+indywidualny
+odrębny
+różny",,,
+11609,WORD_VERB_U,,HIRAGANA,,,足す,たす,,tasu,dodać,,,
+11610,WORD_VERB_U,,HIRAGANA,,,友達になる,ともだちになる,,tomodachi ni naru,zostać przyjacielem,,,
+11611,WORD_ADVERB,,HIRAGANA,,,兎も角,ともかく,,tomokaku,"poza
+oprócz
+niezależnie
+pominąwszy
+w każdym razie
+bądź co bądź
+tak czy inaczej
+przynajmniej
+cokolwiek ma być",,,
+11612,WORD_ADVERB,,HIRAGANA,,,兎も角も,ともかくも ,,tomokaku mo,"poza
+oprócz
+niezależnie
+pominąwszy
+w każdym razie
+bądź co bądź
+tak czy inaczej
+przynajmniej
+cokolwiek ma być",,,
+11613,WORD_NOUN,,HIRAGANA,,,生まれ,うまれ,,umare,"urodzenie
+narodziny
+miejsce urodzenia",,,
