@@ -371,9 +371,9 @@ public class KanaHelper {
 		katakanaEntries.add(new KanaEntry("ティ", "ti"));
 		katakanaEntries.add(new KanaEntry("ディ", "di"));
 
-		katakanaEntries.add(new KanaEntry("ヂュ", "dya"));
+		katakanaEntries.add(new KanaEntry("ヂャ", "dya"));
 		katakanaEntries.add(new KanaEntry("ヂュ", "dyu"));
-		katakanaEntries.add(new KanaEntry("ヂュ", "dyo"));
+		katakanaEntries.add(new KanaEntry("ヂョ", "dyo"));
 
 		katakanaEntries.add(new KanaEntry("ヴ", "vu"));
 
