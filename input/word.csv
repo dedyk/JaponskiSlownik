@@ -920,7 +920,8 @@ bardzo lubić",,,
 429,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,暇,ひま,,hima,"niezajęty
 wolny",,,
 430,WORD_VERB_U,,HIRAGANA,Genki 1-5,,泳ぐ,およぐ,,oyogu,pływać,,,
-431,WORD_VERB_U,,HIRAGANA,Genki 1-5,に,聞く,きく,ni,kiku,pytać,osobę,,200
+431,WORD_VERB_U,,HIRAGANA,Genki 1-5,に,聞く,きく,ni,kiku,"pytać
+dowiadywać się",osobę,,200
 432,WORD_VERB_U,,HIRAGANA,"Genki 1-5
 Genki kanji 2-14",に,乗る,のる,ni,noru,"podróżować
 wsiadać (do pojazdu)
@@ -1400,7 +1401,8 @@ półmisek",,,
 609,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-20,を,渡す,わたす,o,watasu,"dawać
 wręczać
 przekazywać
-przenosić przez",,,
+przenosić przez
+przeprowadzić przez",,,
 610,WORD_NOUN,,HIRAGANA,,,故郷,ふるさと,,furusato,miasto rodzinne,,,
 611,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-9
 Genki kanji 1-9",,白い,しろい,,shiroi,biały,,,
@@ -1778,7 +1780,8 @@ zdecydować",,,
 Genki kanji 2-22",,一番,いちばん,,ichiban,"najlepszy
 pierwszy
 [III poziom stopniowania przymiotników]",,,
-769,UNKNOWN,,HIRAGANA,Genki 1-10,,-,か,,ka,albo,"~ x ~, wyrażenie",,"2748
+769,WORD_PARTICULE,,HIRAGANA,Genki 1-10,,-,か,,ka,"albo
+czy ..., czy ...","~ x ~, wyrażenie",,"2748
 5064
 6392
 8425
@@ -1953,7 +1956,8 @@ wzgląd
 punktacja
 wynik",~,,
 841,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-11,,久しぶり,ひさしぶり,,hisashiburi,"długi okres czasu
-po długim okresie czasu",,,
+po długim okresie czasu
+po długim czasie",,,
 842,UNKNOWN,,HIRAGANA,Genki 1-11,,-,まあまあ,,maamaa,tak sobie,,,
 843,UNKNOWN,,HIRAGANA,Genki 1-11,,-,もっと,,motto,"więcej
 bardziej
@@ -2384,7 +2388,8 @@ poddać próbie",,,
 1027,WORD_VERB_U,,HIRAGANA,Genki 2-18,,咲く,さく,,saku,"kwitnąć
 rozkwitać",,,
 1028,WORD_VERB_U,,HIRAGANA,,,散る,ちる,,chiru,"opadać
-rozrzucać",kwiaty,,
+spadać
+rozrzucać","płatki, liście, kwiaty",,
 1029,WORD_NOUN,,HIRAGANA,,,蕾,つぼみ,,tsubomi,"pąk kwiatu
 kwiat jeszcze nie otwarty",,,
 1030,WORD_NOUN,,HIRAGANA,"Genki kanji 2-16
@@ -3215,7 +3220,10 @@ hymn państwowy",,,
 urząd miejski",,,
 1442,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,市長,しちょう,,shichou,burmistrz,miasta,,
 1443,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,市場,いちば,,ichiba,"rynek
-targ",,,7198
+targ
+hala targowa
+targowisko
+bazar",,,7198
 1444,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,色々な所,いろいろなところ,,iroiro na tokoro,różne miejsca,,,
 1445,WORD_NOUN,,HIRAGANA,"Genki kanji 1-11
 Genki kanji 2-21",,台所,だいどころ,,daidokoro,kuchnia,,,
@@ -3926,7 +3934,12 @@ delikatny
 czuły",,,
 1842,WORD_ADJECTIVE_I,,HIRAGANA,,,浅い,あさい,,asai,płytki,,,
 1843,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-16,,弱い,よわい,,yowai,"słaby
-niezdolny",,,
+wątły
+kruchy
+lekki
+niezdolny
+niewyraźny
+nieodporny",,,
 1844,WORD_ADJECTIVE_I,,HIRAGANA,,,鈍い,にぶい,,nibui,"tępy
 matowy
 ciemny
@@ -4543,9 +4556,11 @@ z radością
 szczęśliwy",,,
 2149,WORD_VERB_U,,HIRAGANA,"Genki dodatkowe 2-16
 Genki dodatkowe 2-19",,続く,つづく,,tsuduku,"kontynuować
+być kontynuować
 wznawiać
 trwać
-ciągnąć się (np. dni)",,,
+ciągnąć się (np. dni)
+przeciągać się",,,
 2150,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-16,,売れる,うれる,,ureru,sprzedawać,forma potencjalna,,
 2151,WORD_CONJUNCTION,,HIRAGANA,Genki dodatkowe 2-16,,-,すると,,suruto,"skutkiem czego
 przeto
@@ -4665,7 +4680,8 @@ paczka",,,
 2201,WORD_NOUN,,HIRAGANA,,,時期,じき,,jiki,"czas
 pora
 sezon",,,
-2202,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,実験,じっけん,,jikken,eksperyment,,,
+2202,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,実験,じっけん,,jikken,"eksperyment
+doświadczenie",,,
 2203,WORD_VERB_IRREGULAR,,HIRAGANA,,,実験する,じっけんする,,jikken suru,"robić doświadczenie
 eksperymentować",,,
 2204,WORD_NOUN,,HIRAGANA,,,坊ちゃん,ぼっちゃん,,bocchan,mały chłopiec,,,
@@ -6104,6 +6120,7 @@ miejsce na",np. świecie,,
 2925,WORD_NOUN,,HIRAGANA,,,位置,いち,,ichi,"posada
 stanowisko
 pozycja
+położenie
 lokalizacja
 sytuacja
 lokacja
@@ -7205,7 +7222,8 @@ poręczenie",,,
 3463,WORD_NOUN,,HIRAGANA,,,保育所,ほいくじょ,,hoikujo,żłobek,,,
 3464,WORD_VERB_U,,HIRAGANA,,,守る,まもる,,mamoru,"bronić
 ochraniać
-przestrzegać",,,
+przestrzegać
+dotrzymywać",,,
 3465,WORD_NOUN,,HIRAGANA,,,守勢,しゅせい,,shusei,"obrona
 postawa obronna
 postawa pasywna",,,
@@ -8446,7 +8464,7 @@ wszystko",,,662
 4099,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,無声映画,むせいえいが,,musei eiga,niemy film,,,
 4100,WORD_NOUN,,HIRAGANA,"Genki kanji 2-20
 Genki dodatkowe 2-20",,茶店,ちゃみせ,,chamise,herbaciarnia,,,
-4101,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,茶色,ちゃいろ,,chairo,brązowy,,,
+4101,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,茶色,ちゃいろ,,chairo,brązowy,kolor,,
 4102,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-20,,中止する,ちゅうしする,,chuushi suru,"odwołać
 zatrzymywać
 wstrzymywać",,,
@@ -10683,7 +10701,8 @@ przepowiadać",,,
 przepowiadanie",,,
 5133,WORD_NOUN,,HIRAGANA,,,識,しき,,shiki,"znać
 odróżniać",,,
-5134,WORD_NOUN,,HIRAGANA,,,知識,ちしき,,chishiki,wiedza,,,
+5134,WORD_NOUN,,HIRAGANA,,,知識,ちしき,,chishiki,"wiedza
+znajomość",czegoś,,
 5135,WORD_NOUN,,HIRAGANA,,,意識,いしき,,ishiki,"świadomość
 przytomność",,,
 5136,WORD_NOUN,,HIRAGANA,,,無意識,むいしき,,muishiki,"podświadomość
@@ -14011,7 +14030,7 @@ harmonia",,,387
 mieścić się w czasie
 wystarczać",,,
 6755,WORD_ADVERB,,HIRAGANA,,,間も無く,まもなく,,mamonaku,"wkrótce
-w tej chwili",,,
+niedługo",,,
 6756,WORD_VERB_RU,,HIRAGANA,,,代える,かえる,,kaeru,"zmieniać
 zastąpić
 przestawiać
@@ -15025,7 +15044,7 @@ grunt",,,"7256
 7259,WORD_NOUN,,HIRAGANA,,,地階,ちかい,,chikai,piwnica,,,
 7260,WORD_ADJECTIVE_NA,,HIRAGANA,,,地方的,ちほうてき,,chihouteki,"lokalny
 prowincjonalny",,,
-7261,WORD_NOUN,,HIRAGANA,,,地理学,ちりがく,,chirigaku,geografia,,,
+7261,WORD_NOUN,,HIRAGANA,,,地理学,ちりがく,,chirigaku,geografia,nauka,,
 7262,WORD_NOUN,,HIRAGANA,,,車内,しゃない,,shanai,"w samochodzie
 wewnątrz samochodu",,,
 7263,WORD_ADJECTIVE_NA,,HIRAGANA,,,同一,どういつ,,douitsu,"identyczność
@@ -15406,7 +15425,7 @@ wnęka",,,
 7452,WORD_NOUN,,HIRAGANA,,,鳥瞰図,ちょうかんず,,choukanzu,widok z lotu ptaka,,,
 7453,WORD_NOUN,,HIRAGANA,,,鳥類学,ちょうるいがく,,chouruigaku,ornitologia,,,
 7454,WORD_ADVERB,,HIRAGANA,,,万,ばん,,ban,"bardzo dużo
-wszystko",prefiks,,
+wszystko",prefiks,,11622
 7455,WORD_NOUN,,HIRAGANA,,,一万円札,いちまんえんさつ,,ichiman' ensatsu,"banknot dziesięciotysięczny
 banknot o nominale 10 000 jenów",,,
 7456,WORD_NOUN,,HIRAGANA,,,万物,ばんぶつ,,banbutsu,całe stworzenie,,,
@@ -21205,7 +21224,8 @@ złodziejstwo",,,
 10280,WORD_NOUN,,HIRAGANA,,,言い分,いいぶん ,,iibun,???,,,
 10281,WORD_NOUN,,HIRAGANA,,,前史,ぜんし ,,zenshi,prehistoria,,,
 10282,WORD_NOUN,,HIRAGANA,,,厚さ,あつさ ,,atsusa,grubość,,,
-10283,WORD_NOUN,,HIRAGANA,,,地理,ちり ,,chiri,geografia,,,
+10283,WORD_NOUN,,HIRAGANA,,,地理,ちり ,,chiri,"geografia
+topografia",,,
 10284,WORD_NOUN,,HIRAGANA,,,修飾,しゅうしょく ,,shuushoku,"ozdoba
 zdobienie
 przystrojenie
@@ -24074,3 +24094,51 @@ cokolwiek ma być",,,
 11613,WORD_NOUN,,HIRAGANA,,,生まれ,うまれ,,umare,"urodzenie
 narodziny
 miejsce urodzenia",,,
+11614,WORD_ADVERB,,HIRAGANA,,,-,ちゃんと,,chanto,"porządnie
+dokładnie
+doskonale
+należycie
+przepisowo",,,
+11615,WORD_VERB_IRREGULAR,,HIRAGANA,,,-,ちゃんとする,,chanto suru,"zachowywać się przyzwoicie
+mieć właściwą postawę",,,
+11616,WORD_VERB_RU,,HIRAGANA,,,気が散る,きがちる,,ki ga chiru,"być roztargnionym
+być niespokojnym",,,
+11617,WORD_NOUN,,HIRAGANA,,,胃腸,いちょう,,ichou,żołądek i jelita,,,
+11618,WORD_VERB_IRREGULAR,,HIRAGANA,,,位置する,いちする,,ichi suru,"znajdować się
+mieścić się",,,
+11619,WORD_NOUN,,HIRAGANA,,,一部,いちぶ,,ichibu,"część
+jedna część",,,
+11620,WORD_VERB_IRREGULAR,,HIRAGANA,,,実験に成功する,じっけんにせいこうする,,jikken ni seikou suru,eksperyment się udaje,,,
+11621,WORD_NOUN,,HIRAGANA,,,決まり,きまり,,kimari,"zasada
+reguła
+przepis
+rozstrzygnięcie (występuje w wyrażeniu kimari ga tsuku lub kimari o tsukeru)
+konkluzja (występuje w wyrażeniu kimari ga tsuku lub kimari o tsukeru)",,,
+11622,WORD_NOUN,,HIRAGANA,,,万,まん,,man,dziesięć tysięcy,,,7454
+11623,WORD_NUMBER,,HIRAGANA,,,千万,せんまん,,senman,dziesięć milionów,,,
+11624,WORD_NOUN,,HIRAGANA,,,真似,まね,,mane,naśladownictwo,,,
+11625,WORD_VERB_IRREGULAR,,HIRAGANA,,,真似する,まねする,,mane suru,naśladować,kogoś,,
+11626,WORD_ADVERB,,HIRAGANA,,,態々,わざわざ,,wazawaza,"specjalnie
+zadać sobie trud
+pofatygować się",,,
+11627,WORD_ADVERB,,HIRAGANA,,,態態,わざわざ,,wazawaza,"specjalnie
+zrobić coś bez potrzeby
+zadać sobie trud
+pofatygować się",,,
+11628,WORD_ADVERB,,HIRAGANA,,,随分,ずいぶん,,zuibun,"bardzo
+dużo
+sporo
+dosyć",,,
+11629,WORD_ADVERB,,HIRAGANA,,,隨分,ずいぶん,,zuibun,"bardzo
+dużo
+sporo
+dosyć",,,
+11630,UNKNOWN,SUFFIX,HIRAGANA,,,詰め,づめ,,dume,"[przyrostek oznaczający, że coś jest w czymś opakowane lub wypełnione]",,,
+11631,WORD_NOUN,,HIRAGANA,,,瓶詰め,びんづめ,,bindume,przetwory w słoikach,,,
+11632,WORD_NOUN,,HIRAGANA,,,四百字詰めの原稿用紙,よんひゃくじづめのげんこうようし,,yonhyakujidume no genkouyoushi,papier do pisania ręcznego (po japońsku) na czterysta znaków,,,
+11633,WORD_PARTICULE,,HIRAGANA,,,-,ずつ,,zutsu,"każdemu
+odpowiednio
+po ...",,,
+11634,WORD_NOUN,,HIRAGANA,,,否定する,ひていする,,hitei suru,"zaprzeczyć
+zdementować",,,
+11635,WORD_NOUN,,HIRAGANA,,,否定的な意見,ひていてきないけん,,hiteiteki na iken,negatywna opinia,,,
