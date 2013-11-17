@@ -103,7 +103,7 @@ Genki kanji 1-5",,今,いま,,ima,"teraz
 obecnie
 zaraz
 dopiero co",,,
-67,UNKNOWN,,HIRAGANA,Genki 1-1,,半,はん,,han,"połowa
+67,UNKNOWN,SUFFIX,HIRAGANA,Genki 1-1,,半,はん,,han,"połowa
 pół
 nieparzysty numer",,,
 68,UNKNOWN,,HIRAGANA,"Genki 1-1
@@ -412,7 +412,12 @@ słuch",,,
 209,WORD_NOUN,,HIRAGANA,"Genki 1-2
 Genki 1-7
 Genki 2-15
-Genki kanji 2-18",,目,め,,me,oko,,,1216
+Genki kanji 2-18",,目,め,,me,"oko
+wzrok
+spojrzenie
+doświadczenie (zawsze w wyrażeniu ~me ni au)
+spotykać się (zawsze w wyrażeniu: o me ni kakaru, modestywny odpowiednik czasownika au)
+widzieć się z (zawsze w wyrażeniu: o me ni kakaru, modestywny odpowiednik czasownika au)",,,1216
 210,WORD_NOUN,,HIRAGANA,Genki 1-2,,桃,もも,,momo,brzoskwinia,,,8691
 211,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-2
 Genki 1-5
@@ -539,7 +544,7 @@ Genki kanji 1-11",を,勉強する,べんきょうする,o,benkyou suru,uczyć s
 prawidłowy",zwykle pisane przy pomocy kany,,6686
 256,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-3
 Genki kanji 1-12",,早い,はやい,,hayai,"wczesny
-szybki",,,
+przedwczesny",,,
 257,WORD_ADVERB,,HIRAGANA,Genki 1-3,,-,あまり,,amari,niewiele,+ czasownik w formie negatywnej,,
 258,WORD_ADVERB,,HIRAGANA,Genki 1-3,,全然,ぜんぜん,,zenzen,"wcale
 w ogóle (nie)",+ czasownik w formie negatywnej,,
@@ -1368,7 +1373,11 @@ wkładać na głowę
 przykrywać (głowę, twarz)",ubranie,,6264
 584,WORD_VERB_U,,HIRAGANA,"Genki 1-7
 Genki kanji 1-9",,知る,しる,,shiru,"wiedzieć
-znać",,,
+znać
+być czyimś znajomym
+znać kogoś
+zauważyć
+dostrzec",,,
 585,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,,知っています,しっています,,shitte imasu,wiem,,,
 586,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,,知りません,しりません,,shirimasen,nie wiedzieć,~masen,,
 587,WORD_VERB_U,,HIRAGANA,"Genki 1-7
@@ -1900,7 +1909,7 @@ Genki 2-13
 Genki kanji 2-21",,幸せ,しあわせ,,shiawase,"szczęśliwy
 szczęście
 powodzenie",,,
-804,WORD_NOUN,,HIRAGANA,Genki 1-11,,お菓子,おかし,,okashi,"słodycze
+804,WORD_NOUN,,HIRAGANA,Genki 1-11,,菓子,かし,,kashi,"słodycze
 przekąski",,,
 805,WORD_NOUN,,HIRAGANA,"Genki 1-11
 Genki kanji 1-7",,男の子,おとこのこ,,otoko no ko,chłopczyk,,,
@@ -2119,7 +2128,9 @@ często",,,
 902,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,狭い,せまい,,semai,"wąski
 nieprzestronny
 mały
-ciasny",,,
+ciasny
+stłoczony
+ścieśniony",,,
 903,WORD_NOUN,,HIRAGANA,Genki 1-12,,都合,つごう,,tsugou,"dogodność
 wygoda
 odpowiedni moment
@@ -3484,7 +3495,10 @@ podróżować pociągiem
 wsiadać do samochodu
 wsiadać do pociągu",,,
 1531,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,乗馬,じょうば,,jouba,jeździć konno,,,
-1532,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,当時,とうじ,,touji,w tym czasie,,,
+1532,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,当時,とうじ,,touji,"w tym czasie
+w owym czasie
+wtedy
+wówczas",,,
 1533,WORD_VERB_U,,HIRAGANA,Genki kanji 2-14,,当たる,あたる,,ataru,"trafić
 uderzać
 dotknąć
@@ -3565,7 +3579,8 @@ urządzać (np. przyjęcie)","np. konto w banku, pączek kwiatu lub parasolkę; 
 solidny
 mocny
 trwały",,,
-1577,WORD_NOUN,,KATAKANA,,,-,トイレ,,toire,toaleta,,,
+1577,WORD_NOUN,,KATAKANA,,,-,トイレ,,toire,"toaleta
+łazienka",,,
 1578,WORD_NOUN,,HIRAGANA,,,専攻,せんこう,,senkou,specjalizacja,,,
 1579,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,放送,ほうそう,,housou,"transmisja
 nadawanie","programu radiowego, telewizyjnego",,
@@ -4180,6 +4195,7 @@ oględziny",~ czegoś,,
 rabat",,,
 1945,WORD_NOUN,,HIRAGANA,Genki 2-15,,券,けん,,ken,"bilet
 kupon
+karta
 zaświadczenie",,,
 1946,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,死,し,,shi,"śmierć
 zgon",,,10785
@@ -8299,7 +8315,7 @@ składać sprawozdanie",wiadomość,,
 3973,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-20,,生活する,せいかつする,,seikatsu suru,żyć,życie codzienne,,
 3974,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-20,,返品する,へんぴんする,,henpin suru,zwracać,,,
 3975,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,おや,,oya,O!,,,2047
-3976,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,畏まりました,かしこまりました,,kashikomarimashita,rozumiem,,,
+3976,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,畏まりました,かしこまりました,,kashiko marimashita,rozumiem,"wyrażenie złożone wyrażające zrozumienie, zgodę, używane zwykle przez sprzedawcę wobec klienta",,
 3977,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,さあ,,saa,nie jestem pewny,,,
 3978,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,失礼しました,しつれいしました,,shitsurei shimashita,"przepraszam, że przeszkadzałem
 przepraszam, że przerwałem","używa się do tego, co robimy, np. podczas wychodzenia z pokoju",,
@@ -8640,11 +8656,13 @@ przywódcy",,,
 4142,WORD_NOUN,,HIRAGANA,,,幹線,かんせん,,kansen,"główna linia
 linia kolejowa",,,
 4143,WORD_NOUN,,HIRAGANA,,,幹,みき,,miki,pień (drzewa),,,
-4144,WORD_NOUN,,HIRAGANA,,,線,せん,,sen,"linia
+4144,WORD_NOUN,SUFFIX,HIRAGANA,,,線,せん,,sen,"linia
 szlak
 tor
-drut",,,
-4145,WORD_NOUN,,HIRAGANA,,,線路,せんろ,,senro,linia kolejowa,,,
+drut
+przewód",,,
+4145,WORD_NOUN,,HIRAGANA,,,線路,せんろ,,senro,"linia kolejowa
+tor kolejowy",,,
 4146,WORD_NOUN,,HIRAGANA,,,電線,でんせん,,densen,przewód elektryczny,,,
 4147,WORD_NOUN,,HIRAGANA,,,無線,むせん,,musen,"krótkofalówka
 radio",,,
@@ -8883,7 +8901,8 @@ nadzorować
 doglądać",,,
 4274,WORD_NOUN,,HIRAGANA,,,統一,とういつ,,touitsu,"jedność
 zjednoczenie
-konsolidacja",,,
+konsolidacja
+połączenie",,,
 4275,WORD_NOUN,,HIRAGANA,,,統制,とうせい,,tousei,"kontrola
 regulowanie",,,
 4276,WORD_NOUN,,HIRAGANA,,,統計,とうけい,,toukei,statystyka,,,
@@ -8935,7 +8954,9 @@ być zawiązanym
 być zaciśniętym
 być stałym
 trzeźwieć",,,
-4296,WORD_NOUN,,HIRAGANA,,,標,しるし,,shirushi,znak,,,
+4296,WORD_NOUN,,HIRAGANA,,,標,しるし,,shirushi,"znak
+marka
+piętro",,,
 4297,WORD_NOUN,,HIRAGANA,,,目標,もくひょう,,mokuhyou,"cel
 zamiar
 znak",,,
@@ -9028,7 +9049,13 @@ obracać się
 nadawać się
 pasować",,,
 4336,WORD_VERB_RU,,HIRAGANA,,,向ける,むける,,mukeru,skręcać,,,
-4337,WORD_VERB_U,,HIRAGANA,,,向かう,むかう,,mukau,być zwróconym,,,
+4337,WORD_VERB_U,,HIRAGANA,,,向かう,むかう,,mukau,"być zwróconym ku
+zwracać się
+stać twarzą do
+kierować się ku (zwykle występuje w wyrażeniu: ~ni mukau)
+stać twarzą do
+naprzeciw (zwykle występuje w wyrażeniu: mukatte migi, mukatte hidari)
+posuwać się (w kierunku) (zwykle występuje w wyrażeniu: ~e mukau, ~ni mukau)",,,
 4338,WORD_NOUN,,HIRAGANA,,,方向,ほうこう,,houkou,"kierunek
 zamiary
 zamierzenie
@@ -9261,8 +9288,10 @@ pękać",,,
 dzielić",,,
 4452,WORD_NOUN,,HIRAGANA,,,割,わり,,wari,"dziesięć procent
 10%",,,
-4453,WORD_NOUN,,HIRAGANA,,,入場券,にゅうじょうけん,,nyuujou ken,bilet wstępu,,,
-4454,WORD_NOUN,,HIRAGANA,,,定期券,ていきけん,,teiki ken,bilet okresowy,np. miesięczny autobusowy/kolejowy,,
+4453,WORD_NOUN,,HIRAGANA,,,入場券,にゅうじょうけん,,nyuujou ken,"bilet wstępu
+wejściówka",,,
+4454,WORD_NOUN,,HIRAGANA,,,定期券,ていきけん,,teiki ken,"bilet okresowy
+bilet miesięczny",np. miesięczny autobusowy/kolejowy,,
 4455,WORD_NOUN,,HIRAGANA,,,回数券,かいすうけん,,kaisuu ken,bilet na określoną ilość przejazdów,np. autobusem,,
 4456,WORD_NOUN,,HIRAGANA,,,旅券,りょけん,,ryoken,paszport,,,
 4457,WORD_NOUN,,HIRAGANA,,,旅券査証,りょけんさしょう,,ryoken sashou,wiza,,,
@@ -10164,9 +10193,11 @@ wykonane z drzewa",,,
 4862,WORD_NOUN,,HIRAGANA,,,製本屋,せいほんや,,seihon'ya,introligator,,,
 4863,WORD_VERB_U,,HIRAGANA,,,剃る,そる,,soru,golić,zarost,,
 4864,WORD_NOUN,,HIRAGANA,,,獣,けだもの,,kedamono,"bestia
-zwierzę",,,4865
+zwierzę
+dzikie zwierze",,,4865
 4865,WORD_NOUN,,HIRAGANA,,,獣,けもの,,kemono,"bestia
-zwierzę",,,4864
+zwierzę
+dzikie zwierze",,,4864
 4866,UNKNOWN,,HIRAGANA,,,博,はく,,haku,"rozległy
 szeroki
 dużo
@@ -10578,8 +10609,9 @@ osąd
 opinia",,,
 5038,WORD_NOUN,,HIRAGANA,,,判,はん,,han,"pieczątka
 pieczęć
+stempel
 podpis
-osąd",,,5039
+osąd",wariant: hanko,,5039
 5039,WORD_NOUN,,HIRAGANA,,,判,ばん,,ban,wielkość,papieru lub książki,,5038
 5040,WORD_NOUN,,HIRAGANA,,,裁判,さいばん,,saiban,"sąd
 rozprawa sądowa",,,
@@ -10931,7 +10963,10 @@ biznes",,,
 5208,WORD_NOUN,,HIRAGANA,,,商店,しょうてん,,shouten,"sklep
 magazyn",,,
 5209,WORD_VERB_RU,,HIRAGANA,,,与える,あたえる,,ataeru,"dawać
-nagradzać",,,
+przydzielać
+nagradzać
+zadawać (ból)
+wyrządzać (szkody)",,,
 5210,WORD_VERB_U,,HIRAGANA,,,与る,あずかる,,azukaru,uczestniczyć w,,,
 5211,WORD_VERB_IRREGULAR,,HIRAGANA,,,与する,くみする,,kumisuru,"brać udział
 sympatyzować
@@ -10962,7 +10997,8 @@ bez zarzutu",,,
 5226,WORD_NOUN,,HIRAGANA,,,完勝,かんしょう,,kanshou,"całkowite zwycięstwo
 bezdyskusyjne zwycięstwo",,,
 5227,WORD_NOUN,,HIRAGANA,,,発展,はってん,,hatten,"rozwój
-ekspansja",,,
+ekspansja
+wzrost",,,
 5228,WORD_NOUN,,HIRAGANA,,,進展,しんてん,,shinten,"rozwój
 ewolucja",,,
 5229,WORD_NOUN,,HIRAGANA,,,展示会,てんじかい,,tenjikai,wystawa,,,
@@ -11149,7 +11185,11 @@ nakładać
 zbierać
 gromadzić","na ciężarówkę, statek i etc",,
 5314,WORD_VERB_U,,HIRAGANA,,,積もる,つもる,,tsumoru,zbierać się,,,
-5315,WORD_ADJECTIVE_NA,,HIRAGANA,,,積極的,せっきょくてき,,sekkyokuteki,pozytywny,,,
+5315,WORD_ADJECTIVE_NA,,HIRAGANA,,,積極的,せっきょくてき,,sekkyokuteki,"pozytywny
+stanowczy
+asertywny
+aktywny
+żywy",,,
 5316,WORD_NOUN,,HIRAGANA,,,積載,せきさい,,sekisai,"ładowanie
 przewożenie
 transportowanie",,,
@@ -14052,7 +14092,8 @@ obligacja",,,
 akcjonariusz
 udziałowiec",,,
 6711,WORD_NOUN,,HIRAGANA,,,株主総会,かぶぬしそうかい,,kabunushi soukai,generalne spotkanie akcjonariuszy,,,
-6712,WORD_NOUN,,HIRAGANA,,,株券,かぶけん,,kabuken,dokument akcyjny,,,
+6712,WORD_NOUN,,HIRAGANA,,,株券,かぶけん,,kabuken,"dokument akcyjny
+akcje",,,
 6713,WORD_VERB_U,,HIRAGANA,,,絶つ,たつ,,tatsu,"przerywać
 odcinać
 wyrywać",,,
@@ -15378,7 +15419,8 @@ studiowanie",,,
 biegłość",np. przedmiotu,,
 7353,WORD_NOUN,,HIRAGANA,,,芽,め,,me,"kiełek
 nowy pęd
-pąk",,,
+pąk
+pączek",,,
 7354,WORD_NOUN,,HIRAGANA,,,麦芽,ばくが,,bakuga,słód,,,
 7355,WORD_NOUN,,HIRAGANA,,,新芽,しんめ,,shinme,nowy kiełek,,,
 7356,WORD_NOUN,,HIRAGANA,,,芽生え,めばえ,,mebae,"pączek
@@ -24521,3 +24563,58 @@ step",,,
 rośliny kwitnące",,,
 11762,WORD_ADJECTIVE_I,,HIRAGANA,,,汗臭い,あせくさい,,ase kusai,śmierdzący potem,,,
 11763,WORD_ADJECTIVE_I,,HIRAGANA,,,酒臭い,さけくさい,,sake kusai,śmierdzący sake (wódką),,,
+11764,WORD_VERB_RU,,HIRAGANA,,,嵌める,はめる,,hameru,"wkładać
+nosić (rękawiczki, pierścionek itp)",,,
+11765,WORD_VERB_RU,,HIRAGANA,,,填める,はめる,,hameru,"wkładać
+nosić (rękawiczki, pierścionek itp)",,,
+11766,WORD_VERB_RU,,HIRAGANA,,,篏める,はめる,,hameru,"wkładać
+nosić (rękawiczki, pierścionek itp)",,,
+11767,WORD_VERB_RU,,HIRAGANA,,,指輪を嵌める,ゆびわをはめる,,yubiwa o hameru,wkładać pierścionek,,,
+11768,WORD_NOUN,,HIRAGANA,,,洟,はな,,hana,wydzielina z nosa,,,
+11769,WORD_VERB_IRREGULAR,,HIRAGANA,,,発展する,はってんする,,hatten suru,rozwijać się,,,
+11770,WORD_NOUN,,HIRAGANA,,,菓子屋,かしや,,kashiya,"sklep ze słodyczami
+cukiernia",,,
+11771,WORD_VERB_U,,HIRAGANA,,,肩がこる,かたがこる,,kata ga koru,mieć zdrętwiałe (obolałe) ramię,,,
+11772,WORD_VERB_U,,HIRAGANA,,,肩に担ぐ,かたにかつぐ,,kata ni katsugu,nieść na ramionach,,,
+11773,WORD_ADVERB,,HIRAGANA,,,結局,けっきょく,,kekkyoku,"ostatecznie
+w końcu",,,
+11774,WORD_NOUN,,HIRAGANA,,,乗車券,じょうしゃけん ,,joushaken,bilet,upoważniający do korzystania ze środków komunikacji,,
+11775,WORD_NOUN,,HIRAGANA,,,前売り券,まえうりけん,,maeuriken,bilet z przedsprzedaży,,,
+11776,WORD_NOUN,,HIRAGANA,,,診察券,しんさつけん,,shinsatsuken,karta pacjenta,np. w szpitalu,,
+11777,WORD_NOUN,,HIRAGANA,,,招待券,しょうたいけん,,shoutaiken,zaproszenie,"na wystawę, przedstawienie",,
+11778,WORD_NOUN,,HIRAGANA,,,食券,しょっけん,,shokken,kupon stołówkowy,,,
+11779,WORD_VERB_RU,,HIRAGANA,,,目を開ける,めをあける,,me o akeru,otwierać oczy,,,
+11780,WORD_VERB_RU,,HIRAGANA,,,目を閉じる,めをとじる,,me o tojiru,zamykać oczy,,,
+11781,WORD_EXPRESSION,,HIRAGANA,,,悲しい目にあう,かなしいめにあう,,kanashii me ni au,przeżyć smutne chwile,,,
+11782,WORD_EXPRESSION,,HIRAGANA,,,辛い目にあう,つらいめにあう,,tsurai me ni au,przeżyć ciężkie doświadczenie,,,
+11783,WORD_EXPRESSION,,HIRAGANA,,,嫌な目にあう,いやなめにあう,,iya na me ni au,mieć przykre doświadczenie,,,
+11784,WORD_VERB_U,,HIRAGANA,,,鏡に向かう,かがみにむかう,,kagami ni mukau,zwrócić się twarzą do lustra,,,
+11785,WORD_VERB_U,,HIRAGANA,,,壁に向かう,かべにむかう,,kabe ni mukau,odwrócić się do ściany,,,
+11786,WORD_NOUN,,KATAKANA,,,-,セメント,,semento,cement,,,
+11787,UNKNOWN,,HIRAGANA,,,千円,せんえん,,sen'en,tysiąc jenów,,,
+11788,UNKNOWN,,HIRAGANA,,,千人,せんにん,,sen nin,tysiąc osób,,,
+11789,UNKNOWN,,HIRAGANA_KATAKANA,,,数千キロ,すうせんきろ,,suu sen kiro,kilka tysięcy kilometrów,,,
+11790,UNKNOWN,,HIRAGANA,,,山の手線,やまのてせん,,yamanote sen,linia Yamanote,,,
+11791,UNKNOWN,,HIRAGANA,,,中央線,ちゅうおうせん,,chuuou sen,linia Chuuou,,,
+11792,WORD_NOUN,,HIRAGANA,,,国際線,こくさいせん,,kokusaisen,"linie zagraniczne
+połączenia międzynarodowe",,,
+11793,WORD_NOUN,,HIRAGANA,,,国内線,こくないせん,,kokunaisen,"linie krajowe
+połączenia krajowe",np. lotnicze,,
+11794,WORD_NOUN,,HIRAGANA,,,白,しろ,,shiro,"biel
+biały",,,
+11795,WORD_NOUN,,HIRAGANA_KATAKANA,,,白黒フィルム,しろくろフィルム,,shirokuro firumu,film czarno-biały,,,
+11796,UNKNOWN,,HIRAGANA,,,◯印,まるじるし,,marujirushi,kółko ( ◯ ),"znak wskazujący, że dany wariant jest prawidłowy",,
+11797,UNKNOWN,,HIRAGANA_KATAKANA,,,バツ印,バツじるし,,batsu jirushi,"krzyżyk
+iks
+x","znak wskazujący, że dany wariant jest błędny",,
+11798,WORD_NOUN,,HIRAGANA,,,目印,めじるし,,mejirushi,"znak
+punkt orientacyjny",,,
+11799,WORD_NOUN,,HIRAGANA,,,研究資料,けんきゅうしりょう,,kenkyuu shiryou,materiał badawczy,,,
+11800,WORD_VERB_RU,,HIRAGANA,,,資料を集める,しりょうをあつめる,,shiryou o atsumeru,"zgromadzić dane
+zebrać materiały",,,
+11801,WORD_NOUN,,HIRAGANA,,,豆腐,とうふ,,toufu,"tofu
+twaróg sojowy",,,
+11802,WORD_VERB_U,,HIRAGANA,,,問いを出す,といをだす,,toi o dasu,zadać pytanie,,,
+11803,WORD_VERB_IRREGULAR,,HIRAGANA,,,統一する,とういつする,,touitsu suru,"zjednoczyć
+ujednolicić",,,
+11804,WORD_VERB_IRREGULAR,,HIRAGANA,,,国を統一する,くにをとういつする,,kuni o touitsu suru,zjednoczyć kraj,,,
