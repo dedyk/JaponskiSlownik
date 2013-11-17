@@ -402,7 +402,8 @@ Genki 1-7
 Genki kanji 1-7",,父,ちち,,chichi,ojciec,"własna rodzina, formalnie",,
 206,WORD_NOUN,,HIRAGANA,"Genki 1-2
 Genki 1-7
-Genki 1-12",,歯,は,,ha,ząb,,,
+Genki 1-12",,歯,は,,ha,"ząb
+zęby",,,
 207,WORD_NOUN,,HIRAGANA,"Genki 1-2
 Genki 2-16",,日,ひ,,hi,"słońce
 dzień",,,
@@ -877,6 +878,7 @@ Genki kanji 1-8",,新しい,あたらしい,,atarashii,"nowy
 zapracowany",człowiek / dzień,,
 410,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-5
 Genki kanji 1-6",,大きい,おおきい,,ookii,"duży
+wielki
 potężny
 olbrzymi",,,
 411,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,面白い,おもしろい,,omoshiroi,interesujący,,,
@@ -2124,7 +2126,9 @@ ranny",,,
 901,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-12
 Genki kanji 2-19",,多い,おおい,,ooi,"dużo
 wiele
-często",,,
+często
+liczny
+obfity",,,
 902,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-12,,狭い,せまい,,semai,"wąski
 nieprzestronny
 mały
@@ -2373,7 +2377,9 @@ nieużyteczny
 do niczego
 nie wolno",,,
 1000,WORD_VERB_U,,HIRAGANA,Genki 2-13,,編む,あむ,,amu,"prząść
-robić na drutach",,,
+robić na drutach
+tkać
+wyplatać",,,
 1001,WORD_VERB_U,,HIRAGANA,"Genki 2-13
 Genki kanji 2-18",,貸す,かす,,kasu,"pożyczać
 użyczać
@@ -2705,7 +2711,8 @@ Genki kanji 2-18",,映画館,えいがかん,,eigakan,kino,,,
 1179,WORD_NOUN,,HIRAGANA,"Genki 2-15
 Genki kanji 1-6",,外国人,がいこくじん,,gaikokujin,"obcokrajowiec
 cudzoziemiec",,,
-1180,WORD_NOUN,,HIRAGANA,Genki 2-15,,観光,かんこう,,kankou,zwiedzanie,,,
+1180,WORD_NOUN,,HIRAGANA,Genki 2-15,,観光,かんこう,,kankou,"zwiedzanie
+turystyka",,,
 1181,WORD_NOUN,,HIRAGANA,Genki 2-15,,結婚式,けっこんしき,,kekkon shiki,"ślub
 małżeństwo",,,
 1182,WORD_NOUN,,HIRAGANA,"Genki 2-15
@@ -3194,7 +3201,8 @@ kolega",,,
 1404,WORD_NOUN,,HIRAGANA,"Genki kanji 1-10
 Genki kanji 1-11",,住所,じゅうしょ,,juusho,adres,,,
 1405,WORD_NOUN,,HIRAGANA,"Genki 1-11
-Genki kanji 1-10",,お正月,おしょうがつ,,oshougatsu,Nowy Rok,dosł: właściwy miesiąc,,
+Genki kanji 1-10",,正月,しょうがつ,,shougatsu,"Nowy Rok
+styczeń","dosł: właściwy miesiąc, w zasadzie shougatsu znaczy styczeń, ale najczęściej używa się tego słowa o odniesieniu do okresu od 1 do 7 stycznia",,
 1406,WORD_ADJECTIVE_I,,HIRAGANA,"Genki kanji 1-10
 Genki dodatkowe 2-17",,正しい,ただしい,,tadashii,"właściwy
 prawidłowy
@@ -4239,7 +4247,8 @@ Hiroshima",miasto w Japonii,,
 1969,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,脱走,だっそう,,dassou,ucieczka,z więzienia,,
 1970,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-15,,建てる,たてる,,tateru,"budować
 podnosić
-wznosić",,,
+wznosić
+konstruować",,,
 1971,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,建つ,たつ,,tatsu,"być zbudowanym
 stać",,,
 1972,UNKNOWN,,HIRAGANA,Genki kanji 2-15,,建国,けんこく,,kenkoku,"ugruntowanie narodu
@@ -4920,7 +4929,7 @@ dział
 pole",,,
 2278,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,小野さん,おのさん,,ono san,Pan/Pani Ono,,,
 2279,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,長野,ながの,,nagano,Nagano,"miasto, prefektura w Japonii",,
-2280,UNKNOWN,,HIRAGANA,,,生,なま,,nama,surowe,"np. mięso, jajko i etc.",,6657
+2280,WORD_NOUN,,HIRAGANA,,,生,なま,,nama,surowy,"np. mięso, jajko i etc.",,6657
 2281,WORD_NOUN,,HIRAGANA,,,生肉,なまにく,,nama niku,surowe mięso,,,
 2282,WORD_NOUN,,HIRAGANA,,,生卵,なまたまご,,nama tamago,surowe jajko,,,
 2283,WORD_NOUN,,HIRAGANA,,,現実,げんじつ,,genjitsu,rzeczywistość,,,
@@ -5028,7 +5037,9 @@ niemożliwe do wykonania",,,
 nagie ciało
 nagi
 goły
-nudyzm",,,
+nudyzm
+odkryty
+odsłonięty",,,
 2336,WORD_NOUN,,HIRAGANA,,,裸婦,らふ,,rafu,naga kobieta,,,
 2337,WORD_NOUN,,HIRAGANA,,,裸足,はだし,,hadashi,"boso
 bosy
@@ -7269,7 +7280,10 @@ opuszczać","kogoś, coś",,
 separować
 trzymać oddzielnie",,,
 3438,WORD_NOUN,,HIRAGANA,,,客,きゃく,,kyaku,"gość
-klient",,,
+odwiedzający
+zwiedzający
+klient
+pasażer",,,
 3439,WORD_NOUN,,HIRAGANA,,,旅客,りょきゃく,,ryokyaku,"podróżny
 pasażer",,,
 3440,WORD_NOUN,,HIRAGANA,,,客船,きゃくせん,,kyakusen,statek pasażerski,,,
@@ -7450,7 +7464,10 @@ wpadać w krańcowość",,,
 szukać odpowiedzi",bardziej oficjalnie,,
 3534,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,の多く,のおおく,,no ooku,większość,~ ...,,
 3535,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,多数決,たすうけつ,,tasuuketsu,decyzja większością głosów,,,
-3536,WORD_NOUN,,HIRAGANA,,,穴,あな,,ana,dziura,,,
+3536,WORD_NOUN,,HIRAGANA,,,穴,あな,,ana,"dziura
+dołek
+zagłębienie
+otwór (na wylot)",,,
 3537,WORD_NOUN,,HIRAGANA,,,弟妹,ていまい,,teimai,młodsi bracia i siostry,,,
 3538,WORD_NOUN,,HIRAGANA,,,義妹,ぎまい,,gimai,młodsza bratowa,,,
 3539,WORD_NOUN,,HIRAGANA,,,景勝地,けいしょうち,,keishouchi,miejsce ze wspaniałymi widokami,,,
@@ -7883,7 +7900,7 @@ powiewać",,,10879
 zmieniać się
 falować",,,
 3741,WORD_NOUN,,HIRAGANA,,,歯医者,はいしゃ,,haisha,dentysta,,,
-3742,WORD_NOUN,,HIRAGANA,,,歯磨き,はみがき,,hamigaki,szczoteczka do zębów,,,
+3742,WORD_NOUN,,HIRAGANA,,,歯磨き,はみがき,,hamigaki,mycie zębów,,,
 3743,WORD_NOUN,,HIRAGANA,,,入れ歯,いれば,,ireba,proteza,,,
 3744,WORD_NOUN,,HIRAGANA,,,義歯,ぎし,,gishi,sztuczne zęby,,,
 3745,WORD_NOUN,,HIRAGANA,,,歯車,はぐるま,,haguruma,"koło zębate (zębatka)
@@ -9432,10 +9449,13 @@ zmniejszanie się",,,
 4509,WORD_NOUN,,HIRAGANA,,,減刑,げんけい,,genkei,redukowanie kary,,,
 4510,WORD_NOUN,,HIRAGANA,,,減価,げんか,,genka,"obniżka cen
 przecena",,,
-4511,WORD_NOUN,,HIRAGANA,,,旧,きゅう,,kyuu,"stary
+4511,WORD_NOUN,SUFFIX,HIRAGANA,,,旧,きゅう,,kyuu,"stary
+były
+eks-
 poprzedni",prefiks do określania starych rzeczy,,
 4512,WORD_ADJECTIVE_NA,,HIRAGANA,,,旧式,きゅうしき,,kyuushiki,"stary typ
-staromodny",,,
+staromodny
+staroświecki",,,
 4513,WORD_NOUN,,HIRAGANA,,,新旧,しんきゅう,,shinkyuu,nowy i stary,,,
 4514,WORD_NOUN,,HIRAGANA,,,復旧,ふっきゅう,,fukkyuu,"naprawa
 przywracanie do pierwotnego stanu",,,
@@ -11008,7 +11028,8 @@ ekspozycja",,,
 5232,WORD_NOUN,,HIRAGANA,,,井,い,,i,studnia,,,
 5233,WORD_NOUN,,HIRAGANA,,,虫,むし,,mushi,"owad
 nerwowość",,,
-5234,WORD_NOUN,,HIRAGANA,,,虫歯,むしば,,mushiba,spróchniały ząb,,,
+5234,WORD_NOUN,,HIRAGANA,,,虫歯,むしば,,mushiba,"spróchniały ząb
+dziurawy ząb",,,
 5235,WORD_NOUN,,HIRAGANA,,,虫害,ちゅうがい,,chuugai,szkody wyrządzone przez owady,,,
 5236,WORD_NOUN,,HIRAGANA,,,虫薬,むしぐすり,,mushigusuri,środki owadobójcze,,,
 5237,WORD_NOUN,,HIRAGANA,,,弱虫,よわむし,,yowamushi,"słabeusz
@@ -11600,7 +11621,8 @@ dyscyplina",,,
 5518,WORD_NOUN,,HIRAGANA,,,律法,りっぽう,,rippou,prawo,w Starym Testamencie,,
 5519,WORD_NOUN,,HIRAGANA,,,省,しょう,,shou,"ministerstwo
 departament",,,
-5520,WORD_VERB_U,,HIRAGANA,,,省く,はぶく,,habuku,"pomijać
+5520,WORD_VERB_U,,HIRAGANA,,,省く,はぶく,,habuku,"opuszczać
+pomijać
 eliminować
 oszczędzać",,,
 5521,WORD_VERB_RU,,HIRAGANA,,,省みる,かえりみる,,kaerimiru,reflektować,,,
@@ -13568,7 +13590,11 @@ epoka",sufiks,,231
 6415,WORD_NOUN,,HIRAGANA,,,朝廷,ちょうてい,,choutei,dwór królewski,,,
 6416,WORD_NOUN,,HIRAGANA,,,朝日,あさひ,,asahi,poranne słońce,,,
 6417,WORD_ADJECTIVE_NA,,HIRAGANA,,,急,きゅう,,kyuu,"pilny
-nagły",,,
+nagły
+gwałtowny
+stromy
+pośpieszny
+szybki",,,
 6418,WORD_NOUN,,HIRAGANA,,,救急車,きゅうきゅうしゃ,,kyuukyuusha,karetka pogotowia,,,
 6419,WORD_NOUN,,HIRAGANA,,,急用,きゅうよう,,kyuuyou,"nagła sprawa
 pilna sprawa
@@ -15023,10 +15049,11 @@ być poinformowanym",,,
 7177,WORD_NOUN,,HIRAGANA,,,伝承,でんしょう,,denshou,"przekaz (ustny)
 tradycja
 legenda",,,
-7178,WORD_NOUN,,HIRAGANA,,,承知,しょうち,,shouchi,"zgoda
-przyjęcie
+7178,WORD_NOUN,,HIRAGANA,,,承知,しょうち,,shouchi,"świadomość (czegoś)
 akceptacja
-porozumienie",,,
+zgodzić się
+zaakceptować
+uwzględnić (czyjejś zdanie, żądanie, życzenie)",,,
 7179,WORD_NOUN,,HIRAGANA,,,承認,しょうにん,,shounin,"akceptacja
 aprobata
 zatwierdzenie",,,
@@ -16565,7 +16592,11 @@ nansować",,,
 przyprowadzać",,,
 7919,WORD_VERB_U,,HIRAGANA,,,崩す,くずす,,kuzusu,"demolować
 niszczyć
-kruszyć",,,
+kruszyć
+burzyć
+niwelować
+upraszczać (np. pisownię znaku kanji)
+rozmieniać pieniądze",,,
 7920,WORD_VERB_RU,,HIRAGANA,,,崩れる,くずれる,,kuzureru,"rozpadać się
 upadać
 pogarszać się",,,
@@ -22852,7 +22883,7 @@ być oswojonym",,,
 10882,WORD_VERB_U,,HIRAGANA,,,織る,おる,,oru,tkać,,,3963
 10883,UNKNOWN,PREFIX,HIRAGANA,,,大,だい,,dai,"duży
 wielki
-bardzo",,,
+bardzo",,,11832
 10884,WORD_VERB_IRREGULAR,,HIRAGANA,,,広告する,こうこくする,,koukoku suru,reklamować,w prasie,,
 10885,WORD_VERB_U,,HIRAGANA,,,剥く,むく,,muku,obierać,ze skórki,,
 10886,WORD_VERB_IRREGULAR,,HIRAGANA,,,援助する,えんじょする,,enjo suru,wspierać,,,
@@ -24161,7 +24192,7 @@ nieoczekiwanie",,,
 nawet jeśli
 chociażby
 przypuśćmy, że
-zakładając, że",,,
+zakładając, że",,,11842
 11564,WORD_ADVERB,,HIRAGANA,,,縦令,たとい,,tatoi,"jeśli
 nawet jeśli
 chociażby
@@ -24618,3 +24649,73 @@ twaróg sojowy",,,
 11803,WORD_VERB_IRREGULAR,,HIRAGANA,,,統一する,とういつする,,touitsu suru,"zjednoczyć
 ujednolicić",,,
 11804,WORD_VERB_IRREGULAR,,HIRAGANA,,,国を統一する,くにをとういつする,,kuni o touitsu suru,zjednoczyć kraj,,,
+11805,WORD_NOUN,,HIRAGANA_KATAKANA,,,歯ブラシ,はブラシ,,ha burashi,szczoteczka do zębów,,,
+11806,WORD_NOUN,,HIRAGANA,,,練り歯磨き,ねりはみがき ,,neri ha migaki,pasta do zębów,,,
+11807,WORD_VERB_RU,,HIRAGANA,,,歯が生える,はがはえる,,ha ga haeru,wyrastają zęby,,,
+11808,WORD_VERB_RU,,HIRAGANA,,,歯が抜ける,はがぬける,,ha ga nukeru,ząb wypada,,,
+11809,WORD_NOUN,,HIRAGANA,,,裸馬,はだかうま ,,hadaka uma,nie osiodłany koń,,,
+11810,WORD_VERB_IRREGULAR,,HIRAGANA,,,関係する,かんけいする,,kankei suru,mieć związek,,,
+11811,WORD_NOUN,,HIRAGANA,,,観光地,かんこうち,,kankouchi,"atrakcyjna miejscowość
+atrakcyjny region",dla turystów,,
+11812,WORD_NOUN,,HIRAGANA_KATAKANA,,,観光バス,かんこうバス,,kankou basu,autobus wycieczkowy,,,
+11813,WORD_NOUN,,HIRAGANA,,,観光旅行,かんこうりょこう,,kankou ryokou,"wycieczka krajoznawcza
+podróż krajoznawcza",,,
+11814,WORD_VERB_U,,HIRAGANA,,,お客を呼ぶ,おきゃくをよぶ,,okyaku o yobu,zapraszać gości,,,
+11815,WORD_NOUN,,HIRAGANA,,,旧暦,きゅうれき,,kyuureki,kalendarz księżycowy,dosł. stary kalendarz,,
+11816,WORD_NOUN,,HIRAGANA,,,旧正月,きゅうしょうがつ,,kyuushougatsu,Nowy Rok,"według kalendarz księżycowego, dosł. dawny Nowy Rok",,
+11817,WORD_NOUN,,HIRAGANA,,,旧市内,きゅうしない,,kyuushinai,"na terenie starego miasta
+na terenie dawnego miasta",,,
+11818,WORD_NOUN,,HIRAGANA,,,旧漢字,きゅうかんじ,,kyuukanji,stara postać znaku kanji,,,
+11819,WORD_NOUN,,HIRAGANA,,,急病人,きゅうびょうにん,,kyuubyounin,nagły przypadek choroby,,,
+11820,WORD_NOUN,,HIRAGANA,,,休業,きゅうぎょう ,,kyuugyou,"zawieszenie działalności
+zamknięte (np. o sklepie)",,,
+11821,WORD_VERB_IRREGULAR,,HIRAGANA,,,休業する,きゅうぎょうする,,kyuugyou suru,zawiesić działalność,,,
+11822,WORD_NOUN,,HIRAGANA,,,臨時休業,りんじきゅうぎょう ,,rinji kyuugyou,wyjątkowo nieczynne,,,
+11823,WORD_NOUN,,HIRAGANA,,,夏期休業,かききゅうぎょう,,kaki kyuugyou,przerwa letnia,,,
+11824,WORD_NOUN,,HIRAGANA,,,生魚,なまざかな,,namazakana,surowa ryba,,,
+11825,WORD_NOUN,,HIRAGANA,,,生野菜,なまやさい,,namayasai,surowe jarzyny,,,
+11826,WORD_ADJECTIVE_I,,HIRAGANA,,,波が高い,なみがたかい,,nami ga takai,fala jest wysoka,,,
+11827,WORD_ADJECTIVE_I,,HIRAGANA,,,波が荒い,なみがあらい,,nami ga arai,fale są wzburzone,,,
+11828,WORD_VERB_U,,HIRAGANA,,,涙を流す,なみだをながす,,namida o nagasu,lać łzy,,,
+11829,WORD_VERB_U,,HIRAGANA,,,涙をこぼす,なみだをこぼす,,namida o kobosu,ronić łzy,,,
+11830,WORD_VERB_RU,,HIRAGANA,,,涙が出る,なみだがでる,,namida ga deru,łzy płyną,,,
+11831,WORD_PARTICULE,,HIRAGANA_EXCEPTION,,,-,を,,o,"[partykuła dopełnienia bliższego, odpowiednik biernika w języku polskim]",,,
+11832,UNKNOWN,PREFIX,HIRAGANA,,,大,おお,,oo,"duży
+wielki",,,10883
+11833,WORD_NOUN,,HIRAGANA,,,大雨,おおあめ,,ooame,"ulewa
+wielki deszcz",,,
+11834,WORD_NOUN,,HIRAGANA,,,大通り,おおどおり,,oodoori,"aleja
+szosa
+szeroka ulica",,,
+11835,WORD_NOUN,,HIRAGANA,,,大急ぎ,おおいそぎ,,ooisogi,wielki pośpiech,,,
+11836,WORD_NOUN,,HIRAGANA,,,大騒ぎ,おおさわぎ,,oosawagi,"wielki zgiełk
+wielkie zamieszanie",,,
+11837,WORD_VERB_IRREGULAR,,HIRAGANA,,,承知する,しょうちする,,shouchi suru,"przyjąć do wiadomości
+zgodzić się
+akceptować",,,
+11838,WORD_EXPRESSION,,HIRAGANA,,,仕様がない,しょうがない,,shou ga nai,"nic nie poradzisz
+nic nie pomoże
+nie ma wyjścia
+to nieuniknione
+to nieuchronne",,,
+11839,WORD_EXPRESSION,,HIRAGANA,,,仕様が無い,しょうがない,,shou ga nai,"nic nie poradzisz
+nic nie pomoże
+nie ma wyjścia
+to nieuniknione
+to nieuchronne",,,
+11840,WORD_EXPRESSION,,HIRAGANA,,,しょうが無い,しょうがない,,shou ga nai,"nic nie poradzisz
+nic nie pomoże
+nie ma wyjścia
+to nieuniknione
+to nieuchronne",,,
+11841,WORD_NOUN,,HIRAGANA,,,例え,たとえ,,tatoe,"porównanie
+metafora
+opowieść
+przypowieść
+przysłowie
+przykład",,,
+11842,WORD_ADVERB,,HIRAGANA,,,仮令,たとえ,,tatoe,"jeśli
+nawet jeśli
+chociażby
+przypuśćmy, że
+zakładając, że","zazwyczaj używa się w wyrażeniu: tatoe te mo, używa się także formy: tatoi",,11563
