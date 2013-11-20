@@ -475,8 +475,9 @@ Genki 1-4
 Genki kanji 1-5",,今日,きょう,,kyou,"dziś
 dzisiaj
 obecne czasy",,,6943
-235,WORD_NOUN,,HIRAGANA,Genki 1-3,,頃,ごろ,,goro,"czas
-około",to samo co toki,,
+235,UNKNOWN,SUFFIX,HIRAGANA,Genki 1-3,,頃,ごろ,,goro,"czas
+około
+mniej więcej",to samo co toki,,
 236,UNKNOWN,,HIRAGANA,"Genki 1-3
 Genki kanji 1-5",,今晩,こんばん,,konban,"dziś wieczorem
 dzisiejszy wieczór",,,
@@ -1485,7 +1486,10 @@ dziś rano",,,
 628,WORD_NOUN,,KATAKANA,Genki 1-8,,-,ディスコ,,disuko,disco,,,
 629,WORD_NOUN,,HIRAGANA,Genki 1-8,,天気予報,てんきよほう,,tenkiyohou,prognoza pogody,,,
 630,WORD_NOUN,,HIRAGANA,Genki 1-8,,所,ところ,,tokoro,"miejsce
-lokalizacja",,,
+punkt
+miejscowość
+lokalizacja
+adres",,,
 631,WORD_NOUN,,KATAKANA,Genki 1-8,,-,トマト,,tomato,pomidor,,,
 632,WORD_NOUN,,HIRAGANA,"Genki 1-8
 Genki kanji 2-15",,夏,なつ,,natsu,lato,,,
@@ -1916,7 +1920,8 @@ Genki kanji 2-20",,声,こえ,,koe,"głos
 ton
 alarm
 śpiew (ptaka)",,,
-801,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-10,,戸,と,,to,drzwi,,,374
+801,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-10,,戸,と,,to,"drzwi
+okiennica",,,374
 802,WORD_VERB_IRREGULAR,,HIRAGANA,"Genki dodatkowe 1-10
 Genki 2-21",,-,びっくりする,,bikkuri suru,"być zaskoczony
 zdziwić się
@@ -2600,7 +2605,8 @@ pogodzić się z",,,
 1082,WORD_VERB_RU,,HIRAGANA,Genki 2-14,,呉れる,くれる,,kureru,dawać,"mnie, rzecz o osoba ni",,
 1083,WORD_VERB_RU,,HIRAGANA,Genki 2-14,が,-,できる,ga,dekiru,"zaistnieć
 być zrobiony",,,
-1084,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-14,,相談する,そうだんする,,soudan suru,konsultować,osoba ni,,
+1084,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-14,,相談する,そうだんする,,soudan suru,"konsultować
+radzić się",osoba ni,,
 1085,WORD_VERB_IRREGULAR,,KATAKANA_HIRAGANA,Genki 2-14,,-,プロポーズする,,puropoozu suru,oświadczyć się,,,
 1086,WORD_EXPRESSION,,HIRAGANA,Genki 2-14,,-,くん,,kun,pan / pani,"~, używane do młodszych chłopców, bądź do kobiet i mężczyzn w pracy",,5955
 1087,WORD_EXPRESSION,,HIRAGANA,Genki 2-14,,-,こんな,,konna,"jak tak
@@ -2608,6 +2614,8 @@ taki
 takiego rodzaju",blisko mówcy,,
 1088,WORD_EXPRESSION,,HIRAGANA,Genki 2-14,,達,たち,,tachi,[tworzenie liczby mnogiej do zaimków osobowych],"np. my, wy",,
 1089,WORD_EXPRESSION,,HIRAGANA,Genki 2-14,,丁度,ちょうど,,choudo,"dokładnie
+precyzyjnie
+akurat
 w sam raz",,,
 1090,WORD_EXPRESSION,,HIRAGANA,"Genki 1-3
 Genki 2-14",,-,よく,,yoku,dobrze,,,"262
@@ -2758,7 +2766,8 @@ Genki kanji 2-19",,卒業式,そつぎょうしき,,sotsugyou shiki,ceremonia uk
 Genki 2-15",,蕎麦,そば,,soba,japoński makaron gryczany,,,385
 1188,WORD_NOUN,,HIRAGANA,"Genki 2-15
 Genki kanji 2-15
-Genki kanji 2-18",,地図,ちず,,chizu,mapa,,,
+Genki kanji 2-18",,地図,ちず,,chizu,"mapa
+plan",,,
 1189,WORD_NOUN,,HIRAGANA,Genki 2-15,,庭,にわ,,niwa,"ogród
 dziedziniec",,,
 1190,WORD_NOUN,,HIRAGANA,Genki 2-15,,発表,はっぴょう,,happyou,"ogłoszenie
@@ -2892,7 +2901,11 @@ powiesić coś na czymś
 mnożyć
 włączyć
 posypać",,,3218
-1238,WORD_NOUN,,HIRAGANA,Genki 2-20,,角,かど,,kado,róg,,,
+1238,WORD_NOUN,,HIRAGANA,Genki 2-20,,角,かど,,kado,"róg
+ostry koniec
+krawędź
+róg (ulicy)
+zakręt",,,
 1239,WORD_VERB_U,,HIRAGANA,,,に気がつく,にきがつく,,niki ga tsuku,zauważyć,,,
 1240,UNKNOWN,,HIRAGANA,,,美,び,,bi,"piękno
 piękność
@@ -3671,7 +3684,10 @@ kochanek",,,
 1604,WORD_NOUN,,HIRAGANA,Genki 2-22,,受付,うけつけ,,uketsuke,"recepcja
 punkt informacyjny
 portiernia
-przyjmowanie",,,
+przyjmowanie
+biuro przyjęć
+przyjęcie
+odbiór",,,
 1605,WORD_NOUN,,HIRAGANA,,,艦,かん,,kan,okręt wojenny,,,
 1606,WORD_NOUN,,HIRAGANA,,,沖縄,おきなわ,,okinawa,Okinawa,Jedna z japońskich wysp,,
 1607,WORD_NOUN,,KATAKANA,,,-,ラブレター,,rabu retaa,list miłosny,,,
@@ -5556,8 +5572,11 @@ obustronny",,,
 stosowny",,,
 2594,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,首相,しゅしょう,,shushou,"prezes rady ministrów
 premier",,,
-2595,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,相談,そうだん,,soudan,"porada
-konsultacja",,,
+2595,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,相談,そうだん,,soudan,"rada
+porada
+konsultacja
+konferencja
+narada",,,
 2596,WORD_NOUN,,HIRAGANA,,,用,よう,,you,"sprawa
 zlecenie
 zadanie
@@ -7382,8 +7401,13 @@ postawa pasywna",,,
 3467,WORD_NOUN,,HIRAGANA,,,守備隊,しゅびたい,,shubitai,garnizon,,,
 3468,WORD_NOUN,,HIRAGANA,,,保守派,ほしゅは,,hoshuha,ugrupowanie konserwatywne,,,
 3469,WORD_NOUN,,HIRAGANA,,,守護天使,しゅごてんし,,shugotenshi,anioł stróż,,,
-3470,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,,育つ,そだつ,,sodatsu,wychowywać się,,,
+3470,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,,育つ,そだつ,,sodatsu,"wychowywać się
+wychować się
+być wychowywanym
+rosnąć
+być hodowanym",,,
 3471,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,Genki 2-22,,育てる,そだてる,,sodateru,"wychowywać
+opiekować się
 hodować
 uprawiać","np. roślinę, zwięrzęta",,
 3472,WORD_NOUN,,HIRAGANA,,,教育,きょういく,,kyouiku,"edukacja
@@ -10347,7 +10371,9 @@ kula",,,
 4898,WORD_NOUN,,HIRAGANA,,,骨,ほね,,hone,"kość
 ość (u ryby)
 szkielet
-kręgosłup",,,5529
+wysiłek
+starania
+trudy",,,5529
 4899,WORD_NOUN,,HIRAGANA,,,資本,しほん,,shihon,"kapitał
 fundusz
 środki
@@ -13861,7 +13887,7 @@ badacz naukowy",,,
 6510,WORD_NOUN,,HIRAGANA,,,研究所,けんきゅうじょ,,kenkyuujo,instytut naukowy,,,6511
 6511,WORD_NOUN,,HIRAGANA,,,研究所,けんきゅうしょ,,kenkyuusho,instytut naukowy,,,6510
 6512,WORD_NOUN,,HIRAGANA,,,研磨紙,けんまし,,kenmashi,papier ścierny,,,
-6513,WORD_NOUN,,HIRAGANA,,,男女共学,だんじょきょうがく,,danjokyougaku,koedukacja,,,
+6513,WORD_NOUN,,HIRAGANA,,,男女共学,だんじょきょうがく,,danjo kyougaku,koedukacja,,,
 6514,WORD_NOUN,,HIRAGANA,,,売り手,うりて,,urite,sprzedawca,,,
 6515,WORD_NOUN,,HIRAGANA,,,売価,ばいか,,baika,cena sprzedaży,,,
 6516,WORD_NOUN,,HIRAGANA,,,売買,ばいばい,,baibai,"handel
@@ -14700,7 +14726,8 @@ rozróżniać",,,
 odwrotny
 antonim
 równy
-przeciw",,,
+przeciw
+kontra",,,
 6962,WORD_NOUN,,HIRAGANA,,,対照,たいしょう,,taishou,kontrast,,,
 6963,WORD_NOUN,,HIRAGANA,,,綿,わた,,wata,bawełna,,,6964
 6964,WORD_NOUN,,HIRAGANA,,,綿,めん,,men,bawełna,,,6963
@@ -15098,9 +15125,13 @@ zakładać (organizację)
 wysuwać (kandydaturę)",,,
 7162,WORD_NOUN,,HIRAGANA,,,立候補,りっこうほ,,rikkouho,zgłoszenie własnej kandydatury,,,
 7163,WORD_NOUN,,HIRAGANA,,,立憲政治,りっけんせいじ,,rikkenseiji,rząd konstytucyjny,,,
-7164,WORD_NOUN,,HIRAGANA,,,長,ちょう,,chou,"lider
+7164,WORD_NOUN,SUFFIX,HIRAGANA,,,長,ちょう,,chou,"lider
+przywódca
+naczelnik
+dyrektor
 szef
-przywódca",,,
+kierownik
+prezes",,,
 7165,WORD_VERB_RU,,HIRAGANA,,,長ける,たける,,takeru,"doskonalić się
 starzeć się",,,
 7166,WORD_NOUN,,HIRAGANA,,,学長,がくちょう,,gakuchou,rektor,uniwersytetu,,
@@ -16230,7 +16261,8 @@ notatka",,,"1591
 7716,WORD_NOUN,,HIRAGANA,,,文書,ぶんしょ,,bunsho,zdanie,,,
 7717,WORD_NOUN,,HIRAGANA,,,文明,ぶんめい,,bunmei,"cywilizacja
 kultura",,,
-7718,UNKNOWN,,HIRAGANA,,,本当,ほんとう,,hontou,prawda,,,
+7718,UNKNOWN,,HIRAGANA,,,本当,ほんとう,,hontou,"prawda
+prawdziwy",,,
 7719,WORD_ADJECTIVE_NA,,HIRAGANA,,,当たり前,あたりまえ,,atarimae,"odpowiedni
 należyty
 właściwy
@@ -19553,11 +19585,9 @@ lutra",,,
 nie przyjmować czyjejś prośby
 uprzedzać
 prosić o zgodę",,,
-9348,WORD_VERB_U,,HIRAGANA,,,受取る,うけとる ,,uketoru,"akceptować
-honorować
-przyjąć
-przyjmować
-zaakceptować",,,
+9348,WORD_VERB_U,,HIRAGANA,,,受取る,うけとる ,,uketoru,"otrzymywać
+dostać
+odebrać",,,
 9349,WORD_NOUN,,HIRAGANA,,,熟練した,じゅくれんした ,,jukurenshita,"biegły
 ekspert
 znawca",,,
@@ -19798,7 +19828,8 @@ zmoknięty",,,
 9466,WORD_ADJECTIVE_I,,HIRAGANA,,,膠も無い,にべもない ,,nibemonai,"zwięzły
 lakoniczny
 krótki",,,
-9467,WORD_NOUN,,HIRAGANA,,,袖,そで ,,sode,rękaw,,,
+9467,WORD_NOUN,,HIRAGANA,,,袖,そで ,,sode,"rękaw
+rękawy",,,
 9468,WORD_NOUN,,HIRAGANA,,,袴,はかま ,,hakama,"tradycyjne japońskie spodnie
 hakama",,,
 9469,WORD_NOUN,,HIRAGANA,,,犯罪学,はんざいがく ,,hanzaigaku,kryminologia,,,
@@ -24875,3 +24906,58 @@ być zaproszonym",,,
 11880,WORD_NOUN,,HIRAGANA,,,歴史小説,れきししょうせつ,,rekishi shousetsu,powieść historyczna,,,
 11881,WORD_NOUN,,HIRAGANA,,,推理小説,すいりしょうせつ,,suiri shousetsu,"kryminał
 powieść kryminalna",,,
+11882,WORD_NOUN,,HIRAGANA,,,日本地図,にほんちず,,nihon chizu,mapa Japonii,,,
+11883,WORD_NOUN,,HIRAGANA,,,世界地図,せかいちず,,sekai chizu,mapa świata,,,
+11884,WORD_NOUN,,HIRAGANA,,,会長,かいちょう,,kaichou,przewodniczący,,,
+11885,WORD_NOUN,,HIRAGANA,,,議長,ぎちょう,,gichou,przewodniczący,zgromadzenia reprezentantów,,
+11886,UNKNOWN,SUFFIX,HIRAGANA,,,団,だん,,dan,"grupa
+organizacja
+zgromadzenie",,,
+11887,WORD_NOUN,,HIRAGANA,,,選手団,せんしゅだん,,senshudan,drużyna sportowa,,,
+11888,WORD_NOUN,,HIRAGANA,,,暖房,だんぼう,,danbou,ogrzewanie,,,
+11889,WORD_VERB_IRREGULAR,,HIRAGANA,,,暖房する,だんぼうする,,danbou suru,ogrzewać,,,
+11890,WORD_NOUN,,HIRAGANA,,,暖房のある部屋,だんぼうのあるへや,,danbou no aru heya,pokój z ogrzewaniem,,,
+11891,WORD_EXPRESSION,,HIRAGANA,,,暖房がきく,だんぼうがきく,,danbou ga kiku,ogrzewanie dobrze działa,,,
+11892,WORD_VERB_RU,,HIRAGANA,,,暖房をつける,だんぼうをつける,,danbou o tsukeru,włączyć ogrzewanie,,,
+11893,WORD_ADVERB,,HIRAGANA,,,段々,だんだん,,dandan,"stopniowo
+coraz bardziej",,,
+11894,WORD_ADVERB,,HIRAGANA,,,段段,だんだん,,dandan,"stopniowo
+coraz bardziej",,,
+11895,WORD_NOUN,,HIRAGANA,,,男女,だんじょ,,danjo,"mężczyzna i kobieta
+męski i żeński",,,
+11896,WORD_NOUN,,HIRAGANA,,,男女平等,だんじょびょうどう,,danjo byoudou,równouprawnienie kobiet i mężczyzn,,,
+11897,WORD_NOUN,,HIRAGANA,,,男女同権,だんじょどうけん,,danjo douken,równe prawa dla mężczyzn i kobiet,,,
+11898,WORD_NOUN,,KATAKANA,,,-,ゴム,,gomu,"guma
+gumka",,,
+11899,WORD_NOUN,,HIRAGANA_KATAKANA,,,ゴム紐,ゴムひも,,gomu himo,elastyczny gumowy sznurek,,,
+11900,WORD_NOUN,,HIRAGANA_KATAKANA,,,輪ゴム,わゴム,,wa gomu,gumka aptekarska,,,
+11901,UNKNOWN,SUFFIX,HIRAGANA,,,-,ごと,,goto,"za każdym ...
+co ...",,,
+11902,WORD_EXPRESSION,,HIRAGANA,,,御座います,ございます,,gozaimasu,"być
+znajdować się
+mieć","wyrażenie honoryfikatywne, honoryfikatywny odpowiednik czasownika aru",,
+11903,WORD_EXPRESSION,,HIRAGANA,,,価値がある,かちがある,,kachi ga aru,wartościowy,,,
+11904,WORD_EXPRESSION,,HIRAGANA,,,価値がない,かちがない,,kachi ga nai,bezwartościowy,,,
+11905,WORD_EXPRESSION,,HIRAGANA,,,価値が高い,かちがたかい,,kachi ga takai,cenny,,,
+11906,WORD_EXPRESSION,,HIRAGANA,,,価値が低い,かちがひくい,,kachi ga hikui,"mało wart
+niewiele wart",,,
+11907,WORD_NOUN,,HIRAGANA,,,角の店,かどのみせ,,kado no mise,narożny sklep,,,
+11908,WORD_NOUN,,HIRAGANA,,,特急,とっきゅう,,tokkyuu,pociąg ekspresowy,,,
+11909,WORD_NOUN,,HIRAGANA,,,受取,うけとり,,uketori,"pokwitowanie
+kwit
+potwierdzenie",,,
+11910,WORD_NOUN,,HIRAGANA,,,受け取,うけとり,,uketori,"pokwitowanie
+kwit
+potwierdzenie",,,
+11911,WORD_NOUN,,HIRAGANA,,,受取り,うけとり,,uketori,"pokwitowanie
+kwit
+potwierdzenie",,,
+11912,WORD_NOUN,,HIRAGANA,,,受け取り,うけとり,,uketori,"pokwitowanie
+kwit
+potwierdzenie",,,
+11913,WORD_NOUN,,HIRAGANA,,,受取人,うけとりにん ,,uketorinin,odbiorca,,,
+11914,WORD_VERB_U,,HIRAGANA,,,受け取る,うけとる,,uketoru,"otrzymywać
+dostać
+odebrać",,,
+11915,WORD_NOUN,,HIRAGANA,,,半袖,はんそで,,han sode,krótkie rękawy,,,
+11916,WORD_NOUN,,HIRAGANA,,,長袖,ながそで,,naga sode,długie rękawy,,,
