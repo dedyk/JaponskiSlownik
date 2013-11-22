@@ -248,13 +248,14 @@ Genki kanji 2-21",,弟,おとうと,,otouto,brat,"własna rodzina, młodszy",,
 124,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,これ,,kore,ten,blisko mówcy,,
 125,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,それ,,sore,ten,blisko osoby docelowej,,
 126,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,あれ,,are,tam,daleko od mówcy i osoby docelowej,,
-127,WORD_ASK,,HIRAGANA,Genki 1-2,,-,どれ,,dore,który,,,
+127,WORD_ASK,,HIRAGANA,Genki 1-2,,-,どれ,,dore,który,,,11943
 128,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,この,,kono,ten,blisko mówcy (z rzeczownikiem),,
 129,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,その,,sono,ten,blisko osoby docelowej (z rzeczownikiem),,3477
 130,WORD_THAT_POINT,,HIRAGANA,"Genki 1-1
 Genki 1-2",,-,あの,,ano,"tam
 tamten",daleko od mówcy i osoby docelowej (z rzeczownikiem),,68
-131,WORD_ASK,,HIRAGANA,Genki 1-2,,-,どの,,dono,który,z rzeczownikiem,,5639
+131,WORD_ASK,,HIRAGANA,Genki 1-2,,-,どの,,dono,"który
+jaki",z rzeczownikiem,,5639
 132,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,ここ,,koko,tam,"miejsce, blisko mówcy",,
 133,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,そこ,,soko,tam,"miejsce, blisko osoby docelowej",,7008
 134,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,あそこ,,asoko,tam,"miejsce, daleko od mówcy i osoby docelowej",,
@@ -781,7 +782,9 @@ wystarczająco",,,
 374,UNKNOWN,,HIRAGANA,Genki 1-4,,-,と,,to,partykuła do łączenia rzeczowników,,,"801
 5240
 7909"
-375,WORD_ASK,,HIRAGANA,Genki 1-4,,-,どうして,,doushite,dlaczego,,,
+375,WORD_ASK,,HIRAGANA,Genki 1-4,,-,どうして,,doushite,"dlaczego
+jak
+w jaki sposób",,,
 376,UNKNOWN,,HIRAGANA,"Genki 1-4
 Genki kanji 1-4",,一人で,ひとりで,,hitoride,sam,,,
 377,UNKNOWN,,HIRAGANA,Genki 1-4,,-,もしもし,,moshimoshi,hallo,używane przy odbieraniu telefonu,,
@@ -1525,7 +1528,10 @@ niesprawny
 nie umieć",,,7153
 642,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki 1-8
 Genki kanji 1-9
-Genki kanji 1-11",,有名,ゆうめい,,yuumei,sławny,,,
+Genki kanji 1-11",,有名,ゆうめい,,yuumei,"sławny
+słynny
+dobrze znany
+uznany",,,
 643,WORD_VERB_U,,HIRAGANA,Genki 1-8,,雨が降る,あめがふる,,ame ga furu,pada deszcz,,,
 644,WORD_VERB_U,,HIRAGANA,Genki 1-8,,洗う,あらう,,arau,"myć
 prać
@@ -1651,7 +1657,10 @@ słówko
 zasób słów",,,
 691,WORD_NOUN,,KATAKANA,Genki 1-9,,-,ピアノ,,piano,"pianino
 fortepian",,,
-692,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-9,,寂しい,さびしい,,sabishii,samotny,,,4152
+692,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-9,,寂しい,さびしい,,sabishii,"samotny
+smutny
+opustoszały
+opuszczony",,,4152
 693,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,意地悪,いじわる,,ijiwaru,złośliwy,,,
 694,WORD_VERB_U,,HIRAGANA,Genki 1-9,,踊る,おどる,,odoru,"tańczyć
 podskakiwać",,,
@@ -2740,7 +2749,12 @@ Genki 2-19",,出張,しゅっちょう,,shucchou,"wyjazd biznesowy
 podróż służbowa
 delegacja",,,
 1176,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-14,,場合,ばあい,,baai,"powód
-sprawa",,,
+sprawa
+przypadek
+wypadek
+okazja
+sytuacja
+okoliczność",,,
 1177,WORD_NOUN,,HIRAGANA,Genki 2-15,,絵,え,,e,"obraz
 rysunek
 ilustracja",,,
@@ -5573,7 +5587,7 @@ tolerancja",,,
 ścierpieć
 być cierpliwy
 być tolerancyjny",,,
-2591,WORD_NOUN,,HIRAGANA,,,組,くみ,,kumi,"grupa
+2591,WORD_NOUN,SUFFIX,HIRAGANA,,,組,くみ,,kumi,"grupa
 zespół
 klasa
 zestaw
@@ -6104,10 +6118,18 @@ skrót",,,
 2834,WORD_NOUN,,KATAKANA,,,-,サボテン,,saboten,kaktus,,,
 2835,WORD_NOUN,,KATAKANA,,,-,カクタス,,kakutasu,kaktus,,,
 2836,WORD_NOUN,,HIRAGANA,,,内,うち,,uchi,"wewnątrz
-między
-ja
+w środku
+dom (czyjś)
+rodzina (czyjaś)
+firma
 mój
-moje",,,11469
+nasz
+wtedy
+w tym czasie
+w ciągu
+wśród
+miedzy
+pośród",,,11469
 2837,WORD_NOUN,,HIRAGANA,,,内側,うちがわ,,uchigawa,wewnętrzna strona,,,
 2838,WORD_NOUN,,HIRAGANA,,,内容,ないよう,,naiyou,"treść
 zawartość",,,
@@ -6460,6 +6482,7 @@ krajobraz",,,
 wytężać siły",,,
 2996,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,努力,どりょく,,doryoku,"wysiłek
 trud
+usiłowanie
 praca",,,
 2997,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,協力,きょうりょく,,kyouryoku,"współpraca
 współdziałanie
@@ -11009,7 +11032,10 @@ szanować
 honorować",,,
 5161,WORD_NOUN,,HIRAGANA,,,尊敬,そんけい,,sonkei,"respekt
 szacunek
-powaga",,,
+powaga
+poważanie
+estyma
+część",,,
 5162,WORD_NOUN,,HIRAGANA,,,敬意,けいい,,keii,respekt,,,
 5163,WORD_NOUN,,HIRAGANA,,,敬老,けいろう,,keirou,poważanie starszych,,,
 5164,WORD_NOUN,,HIRAGANA,,,敬遠,けいえん,,keien,trzymanie odpowiedniego dystansu,wyrażającego respekt,,
@@ -11461,6 +11487,8 @@ cierpienie spowodowane chorobą",,,
 5368,WORD_NOUN,,HIRAGANA,,,蛮人,ばんじん,,banjin,barbarzyńca,,,
 5369,WORD_NOUN,,HIRAGANA,,,損,そん,,son,"strata
 kalectwo
+ubytek
+uszczerbek
 niekorzyść",,,
 5370,WORD_VERB_U,,HIRAGANA,,,損なう,そこなう,,sokonau,"uszkadzać
 ranić",,,5371
@@ -11694,7 +11722,7 @@ awans",,,
 5496,WORD_NOUN,,HIRAGANA,,,栄転,えいてん,,eiten,promocja,,,
 5497,WORD_VERB_RU,,HIRAGANA,,,努める,つとめる,,tsutomeru,"wysilać się
 starać się ze wszystkich sił",,,
-5498,WORD_NOUN,,HIRAGANA,,,努力家,どりょくか,,doryokuka,ciężko pracujący,,,
+5498,WORD_NOUN,,HIRAGANA,,,努力家,どりょくか,,doryokuka,człowiek ciężko pracujący,,,
 5499,WORD_NOUN,,HIRAGANA,,,協力者,きょうりょくしゃ,,kyouryokusha,współpracownik,,,
 5500,WORD_NOUN,,HIRAGANA,,,協同,きょうどう,,kyoudou,"partnerstwo
 współpraca
@@ -12529,7 +12557,9 @@ obejmować
 trzymać w ustach
 mieć na myśli",,,
 5883,WORD_VERB_RU,,HIRAGANA,,,含める,ふくめる,,fukumeru,"zawierać
-dawać wskazówki",,,
+dawać wskazówki
+włączać
+łącznie",,,
 5884,WORD_VERB_U,,HIRAGANA,,,囲む,かこむ,,kakomu,"okrążać
 obejmować",,,
 5885,WORD_VERB_U,,HIRAGANA,,,囲う,かこう,,kakou,"okrążać
@@ -12569,8 +12599,8 @@ wał",między polami ryżowymi,,5897
 5897,WORD_NOUN,,HIRAGANA,,,畔,くろ,,kuro,"miedza
 wał",między polami ryżowymi,,5896
 5898,WORD_VERB_RU,,HIRAGANA,,,染める,そめる,,someru,"farbować
-utleniać
-malować",,,
+malować
+barwić",,,
 5899,WORD_VERB_U,,HIRAGANA,,,染まる,そまる,,somaru,"pomalowany
 utleniony
 ufarbowany",,,
@@ -16069,7 +16099,9 @@ wprawiać w ruch
 operować
 wpływać na",,,
 7601,WORD_NOUN,,HIRAGANA,,,行動,こうどう,,koudou,"zachowanie
-czyn",,,
+czyn
+działanie
+ruch",,,
 7602,WORD_NOUN,,HIRAGANA,,,動機,どうき,,douki,"motyw
 motywacja",,,
 7603,WORD_ADJECTIVE_NA,,HIRAGANA,,,動的,どうてき,,douteki,"dynamiczny
@@ -22731,8 +22763,10 @@ włosie
 jeżenie
 najeżanie",,,
 10764,WORD_NOUN,,HIRAGANA,,,動作,どうさ,,dousa,"zachowanie
+ruch
 akcja
-czynność",,,
+czynność
+gest",,,
 10765,WORD_NOUN,,HIRAGANA,,,口論,こうろん ,,kouron,"kwestionowanie
 podawanie w wątpliwość
 kłótnia
@@ -25019,3 +25053,39 @@ bycie nieuprzejmym
 bycie grubiańskim
 przepraszam",,,
 11940,WORD_VERB_IRREGULAR,,HIRAGANA,,,失礼する,しつれいする,,shitsurei suru,źle się zachować,,,
+11941,UNKNOWN,,HIRAGANA,,,どの人,どのひと,,dono hito,który człowiek,,,
+11942,UNKNOWN,,HIRAGANA,,,どの方,どのかた,,dono kata,która osoba,,,
+11943,WORD_INTERJECTION,,HIRAGANA,,,-,どれ,,dore,"a cóż to?
+(pokaż) no!","używane, kiedy mówiący chce coś zobaczyć",,127
+11944,WORD_NOUN,,HIRAGANA,,,広い道路,ひろいどうろ,,hiroi douro,szeroka droga,,,
+11945,WORD_NOUN,,HIRAGANA,,,狭い道路,せまいどうろ,,semai douro,"wąska droga
+wąska ulica",,,
+11946,WORD_VERB_IRREGULAR,,HIRAGANA,,,努力する,どりょくする,,doryoku suru,"starać się
+czynić starania",,,
+11947,WORD_NOUN,,KATAKANA,,,-,ハーモニカ,,haamonika,"harmonijka
+organki",,,
+11948,WORD_NOUN,,KATAKANA,,,-,トランペット,,toranpetto,trąbka,,,
+11949,WORD_VERB_U,,HIRAGANA,,,拭く,ふく,,fuku,"wycierać
+ścierać",,,
+11950,WORD_VERB_IRREGULAR,,HIRAGANA,,,行動する,こうどうする,,koudou suru,działać,,,
+11951,WORD_NOUN,,HIRAGANA,,,組合,くみあい,,kumiai,związek,,,
+11952,WORD_NOUN,,HIRAGANA,,,協同組合,きょうどうくみあい,,kyoudou kumiai,spółdzielnia,,,
+11953,WORD_VERB_RU,,HIRAGANA,,,組み立てる,くみたてる,,kumitateru,"składać
+montować
+zestawiać (razem)",,,
+11954,WORD_NOUN,,HIRAGANA,,,錆,さび,,sabi,rdza,,,
+11955,WORD_VERB_RU,,HIRAGANA,,,錆びる,さびる,,sabiru,rdzewieć,,,
+11956,WORD_NOUN,,KATAKANA,,,-,サービス,,saabisu,"obsługa
+serwis
+zniżka
+gratis (w sklepie)
+premia
+“prezent od firmy”",,,
+11957,WORD_NOUN,,KATAKANA,,,-,セルフサービス,,serufusaabisu,samoobsługa,,,
+11958,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,サービスが悪い,サービスがわるい,,saabisu ga warui,obsługa jest zła,,,
+11959,WORD_PARTICULE,,HIRAGANA,,,-,さえ,,sae,"nawet
+jeśli tylko",,,
+11960,WORD_VERB_IRREGULAR,,HIRAGANA,,,損する,そんする,,son suru,stracić,,,
+11961,WORD_VERB_IRREGULAR,,HIRAGANA,,,尊敬する,そんけいする,,sonkei suru,szanować,,,
+11962,WORD_VERB_IRREGULAR,,HIRAGANA,,,輸入する,ゆにゅうする,,yunyuu suru,importować,,,
+11963,WORD_NOUN,,HIRAGANA,,,輸入品,ゆにゅうひん,,yunyuuhin,towary importowane,,,
