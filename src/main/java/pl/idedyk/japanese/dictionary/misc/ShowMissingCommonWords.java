@@ -16,7 +16,7 @@ public class ShowMissingCommonWords {
 
 	public static void main(String[] args) throws Exception {
 
-		String edictCommonFileName = "../JaponskiSlownik_dodatki/edict_sub-utf8";
+		String edictCommonFileName = "../JapaneseDictionary_additional/edict_sub-utf8";
 
 		// read edict common
 		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict(edictCommonFileName);
