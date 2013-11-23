@@ -553,7 +553,10 @@ Genki kanji 1-12",,早い,はやい,,hayai,"wczesny
 przedwczesny",,,
 257,WORD_ADVERB,,HIRAGANA,Genki 1-3,,-,あまり,,amari,niewiele,+ czasownik w formie negatywnej,,
 258,WORD_ADVERB,,HIRAGANA,Genki 1-3,,全然,ぜんぜん,,zenzen,"wcale
-w ogóle (nie)",+ czasownik w formie negatywnej,,
+w ogóle (nie)
+całkowicie
+zupełnie
+nic a nic",+ czasownik w formie negatywnej,,
 259,WORD_ADVERB,,HIRAGANA,Genki 1-3,,大抵,たいてい,,taitei,zwykle,,,
 260,WORD_ADVERB,,HIRAGANA,Genki 1-3,,-,ちょっと,,chotto,trochę,,,
 261,WORD_ADVERB,,HIRAGANA,"Genki 1-3
@@ -1878,10 +1881,12 @@ gdzie",bardziej uprzejmie,,
 777,WORD_ASK,,HIRAGANA,Genki 1-10,,-,どっち,,docchi,które,mniej uprzejme,,
 778,WORD_ASK,,HIRAGANA,Genki 1-10,,-,どのぐらい,,donogurai,"jak wiele
 jak długo",,,
-779,UNKNOWN,,HIRAGANA,Genki 1-10,,年,ねん,,nen,lata,,,1407
+779,UNKNOWN,SUFFIX,HIRAGANA,Genki 1-10,,年,ねん,,nen,"lata
+rok
+rocznik",,,1407
 780,WORD_ADVERB,,HIRAGANA,Genki 1-10,,早く,はやく,,hayaku,"wcześnie
 szybko",zrobić coś,,
-781,UNKNOWN,,HIRAGANA,,,-,つもりです,,tsumori desu,mam zamiar,+ czasownik w formie prostej,,
+781,UNKNOWN,,HIRAGANA,,,積もりです,つもりです,,tsumori desu,mam zamiar,+ czasownik w formie prostej,,
 782,WORD_VERB_U,,HIRAGANA,,,歩いて行く,あるいていく,,aruite iku,iść na piechotę,,,
 783,WORD_NOUN,,HIRAGANA,,,交番,こうばん,,kouban,posterunek policji,,,
 784,WORD_NOUN,,HIRAGANA,,,お巡り,おまわり,,omawari,policjant,patrolujący ulice,,
@@ -4906,7 +4911,12 @@ kanaa",zastanawiać się nad,"~, mowa potoczna",,"7082
 2233,WORD_EXPRESSION,,HIRAGANA,Genki 2-17,,-,そうか,,souka,rozumiem,mowa potoczna,,
 2234,WORD_EXPRESSION,,HIRAGANA,Genki 2-17,,其れに,それに,,soreni,"ponadto
 poza
-poza tym",,,
+poza tym
+do tego jeszcze
+na dodatek
+co więcej
+na domiar złego
+co gorsza","używa się wtedy, gdy do jednych okoliczności wymienionych w rozmowie dodajemy inne, podobne",,
 2235,WORD_EXPRESSION,,HIRAGANA,Genki 2-17,に,比べて,くらべて,ni,kurabete,w porównaniu z,~,,
 2236,WORD_EXPRESSION,,HIRAGANA,Genki 2-17,に,依ると,よると,ni,yoruto,"według
 zależeć od",,,
@@ -9205,16 +9215,18 @@ współczucie",,,
 koszt
 wartość",,,
 4350,WORD_VERB_IRREGULAR,,HIRAGANA,,,値する,あたいする,,atai suru,cenić,,,
-4351,WORD_NOUN,,HIRAGANA,,,器,うつわ,,utsuwa,"pojemnik
+4351,WORD_NOUN,SUFFIX,HIRAGANA,,,器,うつわ,,utsuwa,"pojemnik
 naczynie
 pojemność
-zdolność",,,
+zdolność
+część ciała",,,
 4352,WORD_NOUN,,HIRAGANA,,,器具,きぐ,,kigu,"sprzęt
 naczynie
 narzędzie
 instalacje
 urządzenia",,,
-4353,WORD_NOUN,,HIRAGANA,,,食器,しょっき,,shokki,sztućce,,,
+4353,WORD_NOUN,,HIRAGANA,,,食器,しょっき,,shokki,"sztućce
+naczynie stołowe",,,
 4354,WORD_NOUN,,HIRAGANA,,,器材,きざい,,kizai,części do maszyn,,,
 4355,WORD_NOUN,,HIRAGANA,,,器官,きかん,,kikan,"organ
 narząd","np. wzroku, słuchu, itd.",,
@@ -9304,7 +9316,9 @@ zwyciężać",,,
 4391,WORD_NOUN,,HIRAGANA,,,自画像,じがぞう,,jigazou,autoportret,,,
 4392,WORD_NOUN,,HIRAGANA,,,現像,げんぞう,,genzou,wywoływanie,filmu,,
 4393,WORD_NOUN,,HIRAGANA,,,想像,そうぞう,,souzou,"wyobrażenie
-przypuszczenie",,,
+przypuszczenie
+domysł
+domniemanie",,,
 4394,WORD_NOUN,,HIRAGANA,,,想像力,そうぞうりょく,,souzou ryoku,wyobraźnia,,,
 4395,WORD_NOUN,,HIRAGANA,,,偶像,ぐうぞう,,guuzou,bożek,,,
 4396,WORD_NOUN,,HIRAGANA,,,満,まん,,man,"pełnia
@@ -12793,7 +12807,9 @@ zbiory
 plony
 wyniki
 płody",,,
-5987,WORD_NOUN,,HIRAGANA,,,臭い,におい,,nioi,"smród
+5987,WORD_NOUN,,HIRAGANA,,,臭い,におい,,nioi,"zapach
+aromat
+smród
 odór
 nieprzyjemny zapach",,,5988
 5988,WORD_ADJECTIVE_I,,HIRAGANA,,,臭い,くさい,,kusai,"śmierdzący
@@ -12801,7 +12817,9 @@ cuchnący
 brzydko pachnący",,,5987
 5989,WORD_NOUN,,HIRAGANA,,,罪,つみ,,tsumi,"grzech
 wina
-przestępstwo",,,
+przestępstwo
+zbrodnia
+występek",,,
 5990,WORD_NOUN,,HIRAGANA,,,有罪,ゆうざい,,yuuzai,winny,,,
 5991,WORD_NOUN,,HIRAGANA,,,罪人,ざいにん,,zainin,przestępca,,,5992
 5992,WORD_NOUN,,HIRAGANA,,,罪人,つみびと,,tsumibito,grzesznik,,,5991
@@ -13922,7 +13940,8 @@ opanowywać
 zgniatać",,,
 6503,WORD_NOUN,,HIRAGANA,,,気圧,きあつ,,kiatsu,ciśnienie atmosferyczne,,,
 6504,WORD_NOUN,,HIRAGANA,,,血圧,けつあつ,,ketsuatsu,ciśnienie krwi,,,
-6505,WORD_NOUN,,HIRAGANA,,,人気,にんき,,ninki,popularność,,,
+6505,WORD_NOUN,,HIRAGANA,,,人気,にんき,,ninki,"popularność
+powodzenie",,,
 6506,WORD_NOUN,,HIRAGANA,,,気体,きたい,,kitai,"gaz
 substancja gazowa
 substancja lotna",,,
@@ -14034,11 +14053,18 @@ przede wszystkim",,,
 6568,WORD_NOUN,,HIRAGANA,,,炎,ほのお,,honoo,płomień,,,6567
 6569,WORD_VERB_U,,HIRAGANA,,,詰む,つむ,,tsumu,"być załadowanym
 być ściśniętym",,,
-6570,WORD_VERB_U,,HIRAGANA,,,詰まる,つまる,,tsumaru,"być załadowanym
-być ściśniętym",,,
+6570,WORD_VERB_U,,HIRAGANA,,,詰まる,つまる,,tsumaru,"być pełnym
+być przepełnionym
+być załadowanym
+być ściśniętym
+być zapchanym",,,
 6571,WORD_VERB_RU,,HIRAGANA,,,詰める,つめる,,tsumeru,"ładować
+wypełniać
 wypychać
-pakować",,,
+napełniać
+pakować
+ładować
+nagromadzić",,,
 6572,WORD_VERB_U,,HIRAGANA,,,詰る,なじる,,najiru,"oskarżać
 ganić",,,
 6573,WORD_NOUN,,HIRAGANA,,,銅,どう,,dou,miedź,,,10801
@@ -14131,6 +14157,7 @@ w każdym roku",,,6630
 6630,UNKNOWN,,HIRAGANA,,,毎年,まいねん,,mainen,"co rok
 w każdym roku",,,6629
 6631,WORD_NOUN,,HIRAGANA,,,年齢,ねんれい,,nenrei,"wiek
+lata (życia)
 epoka",ilość lat,,
 6632,WORD_NOUN,,HIRAGANA,,,年寄り,としより,,toshiyori,"starsza osoba
 starszy",,,
@@ -14422,7 +14449,9 @@ zamykać",,,
 areszt",,,
 6775,WORD_NOUN,,HIRAGANA,,,辺,へん,,hen,"okolica
 region",,,
-6776,WORD_NOUN,,HIRAGANA,,,辺り,あたり,,atari,okolica,,,
+6776,WORD_NOUN,,HIRAGANA,,,辺り,あたり,,atari,"okolica
+pobliże
+sąsiedztwo",zawsze używane w wyrażeniu rzeczownik + no + atari lub kono/sono/ano/dono atari,,11964
 6777,WORD_NOUN,,HIRAGANA,,,近辺,きんぺん,,kinpen,sąsiedztwo,,,
 6778,WORD_NOUN,,HIRAGANA,,,辺地,へんち,,henchi,ustronne miejsce,,,
 6779,WORD_NOUN,,HIRAGANA,,,辺境,へんきょう,,henkyou,"granica posuwania się osadników
@@ -14605,7 +14634,7 @@ za każdym razem
 przy okazji
 ilekroć
 zawsze",,,923
-6871,WORD_NOUN,,HIRAGANA,,,年度,ねんど,,nendo,rok,"np. finansowy, szkolny",,
+6871,WORD_NOUN,,HIRAGANA,,,年度,ねんど,,nendo,rok,"np. finansowy, szkolny, akademicki",,
 6872,WORD_ADVERB,,HIRAGANA,,,度々,たびたび,,tabitabi,"od czasu do czasu
 często",,,
 6873,WORD_NOUN,,HIRAGANA,,,孫,まご,,mago,"wnuk
@@ -16738,9 +16767,10 @@ gong",,,
 7909,WORD_NOUN,,HIRAGANA,,,斗,と,,to,"to (jednostka pojemności ok 18 litrów)
 chochla
 czerpak",,,374
-7910,WORD_VERB_U,,HIRAGANA,,,沿う,そう,,sou,"leżeć
-biec wzdłuż
-leżeć równolegle",,,11042
+7910,WORD_VERB_U,,HIRAGANA,,,沿う,そう,,sou,"biec wzdłuż
+biec równolegle
+rozciągać się (wzdłuż)
+leżeć równolegle",zwykle używane w formie ~ni sotte,,11042
 7911,WORD_NOUN,,HIRAGANA,,,栓,せん,,sen,"korek
 czop
 zatyczka",,,
@@ -18008,7 +18038,13 @@ omijać",,,
 niejasny",,,
 8394,WORD_ADVERB,,HIRAGANA,,,且つ,かつ,,katsu,"także
 ponadto",,,
-8395,WORD_NOUN,,HIRAGANA,,,巣,す,,su,gniazdo,,,
+8395,WORD_NOUN,,HIRAGANA,,,巣,す,,su,"gniazdo
+nora
+ul
+jaskinia
+mrowisko
+pajęczyna
+legowisko",,,
 8396,WORD_VERB_U,,HIRAGANA,,,巣くう,すくう,,sukuu,budować (gniazdo),,,
 8397,WORD_NOUN,,HIRAGANA,,,漆,うるし,,urushi,"lakier
 werniks",,,
@@ -19929,7 +19965,9 @@ owad",,,
 krótki miecz",,,
 9491,WORD_NOUN,,HIRAGANA,,,自決,じけつ ,,jiketsu,samobójstwo,,,
 9492,WORD_ADVERB,,HIRAGANA,,,絶対,ぜったい ,,zettai,"absolutnie
-bezwzględnie",,,
+bezwzględnie
+bezwarunkowo
+zdecydowanie",,,
 9493,WORD_NOUN,,HIRAGANA,,,装置,そうち,,souchi,"sprzęt
 urządzenie
 wyposażenie
@@ -20553,7 +20591,7 @@ opinia
 sława
 popularność
 w taki sposób
-podobnie jak",,,
+podobnie jak",,,11988
 9779,WORD_NOUN,,HIRAGANA,,,驚愕,きょうがく ,,kyougaku,"niespodzianka
 przerażenie
 przestraszenie
@@ -25089,3 +25127,71 @@ jeśli tylko",,,
 11961,WORD_VERB_IRREGULAR,,HIRAGANA,,,尊敬する,そんけいする,,sonkei suru,szanować,,,
 11962,WORD_VERB_IRREGULAR,,HIRAGANA,,,輸入する,ゆにゅうする,,yunyuu suru,importować,,,
 11963,WORD_NOUN,,HIRAGANA,,,輸入品,ゆにゅうひん,,yunyuuhin,towary importowane,,,
+11964,UNKNOWN,SUFFIX,HIRAGANA,,,-,あたり,,atari,"około
+mniej więcej
+za ... (sztukę, kilogram itp)
+od ... (łączenie z liczbami, jednostkami miary itp)",,,6776
+11965,WORD_NOUN,,HIRAGANA,,,洗面器,せんめんき,,senmenki,umywalka,,,
+11966,WORD_NOUN,,HIRAGANA,,,電熱器,でんねつき,,dennetsuki,kuchenka elektryczna,,,
+11967,WORD_NOUN,,HIRAGANA,,,消火器,しょうかき,,shoukaki,gaśnica,,,
+11968,WORD_NOUN,,HIRAGANA,,,受話器,じゅわき,,juwaki,słuchawka telefoniczna,,,
+11969,WORD_NOUN,,HIRAGANA,,,消化器,しょうかき,,shoukaki,narządy trawienne,,,
+11970,WORD_NOUN,,HIRAGANA,,,呼吸器,こきゅうき,,kokyuuki,narządy oddechowe,,,
+11971,WORD_PARTICULE,,HIRAGANA,,,乍ら,ながら,,nagara,"-ąc (odpowiednik imiesłowowi przysłówkowego współczesnemu)
+podczas
+jednocześnie",,,
+11972,UNKNOWN,,HIRAGANA,,,昨年度,さくねんど,,sakunendo,"zeszły rok
+poprzednik rok",finansowy,,
+11973,UNKNOWN,,HIRAGANA,,,来年度,らいねんど,,rainendo,"przyszły rok
+następny rok",finansowy,,
+11974,UNKNOWN,,HIRAGANA,,,新年度,しんねんど,,shinnendo,nowy rok,"finansowy, szkolny",,
+11975,UNKNOWN,,HIRAGANA,,,年度末,ねんどまつ,,nendomatsu,koniec roku,"finansowego, szkolnego",,
+11976,WORD_NOUN,,HIRAGANA,,,匂い,におい,,nioi,"zapach
+aromat
+smród
+odór
+nieprzyjemny zapach",,,
+11977,WORD_NOUN,,HIRAGANA,,,いい臭い,いいにおい,,ii nioi,ładny zapach,,,
+11978,WORD_NOUN,,HIRAGANA,,,嫌な臭い,いやなにおい,,iya na nioi,niemiły zapach,,,
+11979,WORD_NOUN,,HIRAGANA,,,臭い臭い,くさいにおい,,kusai nioi,"smród
+nieprzyjemny zapach",,,
+11980,WORD_VERB_U,,HIRAGANA,,,臭いをかぐ,においをかぐ,,nioi o kagu,wąchać zapach,,,
+11981,WORD_CONJUNCTION,,HIRAGANA,,,其れ共,それとも,,soretomo,"lub
+albo
+lub jeszcze","używa się, gdy dokonujemy wyboru między rzeczą (czynnością) wymienioną wcześniej, a wymienioną później. Zazwyczaj używa się w zdaniu w następującej formule: ~ka? Soretomo, ~ka?",,
+11982,WORD_ADVERB,,HIRAGANA,,,-,そっと,,sotto,"spokojnie
+cicho
+delikatnie
+potajemnie
+ukradkiem
+skrycie
+sekretnie
+bez zmian
+tak jak jest
+bez zmian (pozostawienie coś)",,,
+11983,WORD_VERB_IRREGULAR,,HIRAGANA,,,-,そっとする,,sotto suru,cicho się zachowywać,,,
+11984,WORD_VERB_IRREGULAR,,HIRAGANA,,,想像する,そうぞうする,,souzou suru,"wyobrażać (sobie)
+przypuszczać",,,
+11985,WORD_NOUN,,HIRAGANA,,,鼠の巣,ねずみのす,,nezumi no su,mysia nora,,,
+11986,WORD_NOUN,,HIRAGANA,,,蜘蛛の巣,くものす,,kumo no su,pajęczyna,,,
+11987,WORD_VERB_U,,HIRAGANA,,,巣を作る,すをつくる,,su o tsukuru,"zbudować gniazdo
+założyć gniazdo",,,
+11988,UNKNOWN,SUFFIX,HIRAGANA,,,-,とおり,,toori,"rodzaj
+gatunek
+klasa
+typ
+w przybliżeniu
+z grubsza
+mniej więcej",,,9778
+11989,UNKNOWN,SUFFIX,HIRAGANA,,,-,どおり,,doori,"w ten sposób
+tak, jak
+zgodnie z",,,
+11990,UNKNOWN,,HIRAGANA,,,予想通り,よそうどおり,,yosou doori,"tak, jak się spodziewano",,,
+11991,WORD_NOUN,,HIRAGANA,,,積もり,つもり,,tsumori,"zamiar
+zamysł
+cel",,,
+11992,WORD_NOUN,,HIRAGANA,,,積り,つもり,,tsumori,"zamiar
+zamysł
+cel",,,
+11993,WORD_VERB_IRREGULAR,,HIRAGANA,,,増加する,ぞうかする,,zouka suru,"powiększyć
+pomnożyć",,,
