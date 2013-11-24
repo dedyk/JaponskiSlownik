@@ -731,7 +731,7 @@ Genki kanji 1-10",,来年,らいねん,,rainen,przyszły rok,,,
 354,UNKNOWN,,HIRAGANA,Genki 1-4,,-,さっき,,sakki,"przed chwilą
 przed momentem
 dopiero co",w stylu podniosłym lub urzędowym zamiast sakki należy używać słowa sakihodo,,
-355,UNKNOWN,,HIRAGANA,"Genki 1-4
+355,WORD_NOUN,SUFFIX,HIRAGANA,"Genki 1-4
 Genki 2-14
 Genki kanji 1-9",,時間,じかん,,jikan,"czas
 godzina",okres,,1391
@@ -917,7 +917,8 @@ przyjemny
 415,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-5
 Genki kanji 1-7",,小さい,ちいさい,,chiisai,"mały
 drobny
-niewielki",,,
+niewielki
+młody",,,
 416,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,-,つまらない,,tsumaranai,nudny,,,
 417,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-5
 Genki kanji 1-9",,古い,ふるい,,furui,"stary
@@ -1472,6 +1473,7 @@ ciemny",,,
 613,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-9,,黄色い,きいろい,,kiiroi,żółty kolor,,,
 614,WORD_NOUN,,HIRAGANA,"Genki 1-9
 Genki kanji 1-12",,色,いろ,,iro,"kolor
+barwa
 zmysłowa przyjemność",,,
 615,UNKNOWN,,HIRAGANA_KATAKANA,Genki 1-9,,ピンク色の,ピンクいろの,,pinku iro no,różowy,,,
 616,UNKNOWN,,HIRAGANA,Genki 1-9,,お茶色の,おちゃいろの,,ocha iro no,kolor herbaciany,,,
@@ -2116,8 +2118,12 @@ tak jak",,,
 877,UNKNOWN,,HIRAGANA,Genki 1-11,,外に,ほかに,,hoka ni,"inny
 z wyjątkiem
 oprócz",,,
-878,WORD_EXPRESSION,,HIRAGANA,"Genki 1-11
-Genki 2-15",,番,ばん,,ban,numer,~,,
+878,WORD_NOUN,SUFFIX,HIRAGANA,"Genki 1-11
+Genki 2-15",,番,ばん,,ban,"numer
+straż
+pilnowanie
+kolej
+kolejka",~,,
 879,UNKNOWN,,HIRAGANA,Genki 1-11,,行目,ぎょうめ,,gyoume,numer linii,~,,
 880,UNKNOWN,,HIRAGANA,Genki 1-11,,二人ずつ,ふたりずつ,,futarizutsu,dla każdych dwóch osób,,,
 881,WORD_NOUN,,HIRAGANA,Genki 1-12,,風邪,かぜ,,kaze,przeziębienie,,,
@@ -3220,7 +3226,7 @@ Genki kanji 2-14
 Genki dodatkowe 2-22",,親友,しんゆう,,shin'yuu,najlepszy przyjaciel,,,
 1390,WORD_NOUN,,HIRAGANA,"Genki kanji 1-9
 Genki dodatkowe 2-19",,友人,ゆうじん,,yuujin,przyjaciel,bardziej oficjalnie,,
-1391,UNKNOWN,,HIRAGANA,"Genki 1-4
+1391,WORD_NOUN,SUFFIX,HIRAGANA,"Genki 1-4
 Genki 2-14
 Genki kanji 1-9",,時間,じかん,,jikan,"czas
 godzina",okres,,355
@@ -4879,7 +4885,10 @@ dom studencki
 akademik",,,"4992
 8866"
 2220,WORD_NOUN,,HIRAGANA,Genki 2-17,,旅行会社,りょこうがいしゃ,,ryokou gaisha,biuro podróży,,,
-2221,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-17,,羨ましい,うらやましい,,urayamashii,zazdrosny,,,
+2221,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-17,,羨ましい,うらやましい,,urayamashii,"zazdrosny
+być zazdrosnym
+być zawistnym
+zazdrościć",,,
 2222,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,Genki 2-17,,お湯を沸かす,おゆをわかす,,oyu o wakasu,zagotować wodę,,,
 2223,WORD_VERB_U,,HIRAGANA,Genki 2-17,,髪をとかす,かみをとかす,,kami o tokasu,czesać włosy,,,
 2224,WORD_VERB_U,,HIRAGANA,Genki 2-17,,宝くじに当たる,たからくじにあたる,,takarakuji ni ataru,wygrać na loterii,,,
@@ -5018,7 +5027,8 @@ pole",,,
 2281,WORD_NOUN,,HIRAGANA,,,生肉,なまにく,,nama niku,surowe mięso,,,
 2282,WORD_NOUN,,HIRAGANA,,,生卵,なまたまご,,nama tamago,surowe jajko,,,
 2283,WORD_NOUN,,HIRAGANA,,,現実,げんじつ,,genjitsu,rzeczywistość,,,
-2284,UNKNOWN,,HIRAGANA,,,事実,じじつ,,jijitsu,fakt,,,
+2284,UNKNOWN,,HIRAGANA,,,事実,じじつ,,jijitsu,"fakt
+prawda",,,
 2285,WORD_ADJECTIVE_NA,,HIRAGANA,,,真実,しんじつ,,shinjitsu,"prawda
 fakt
 rzeczywistość",,,
@@ -5054,7 +5064,9 @@ zsuwać się",ubranie,,
 2299,WORD_VERB_IRREGULAR,,HIRAGANA,,,脱衣する,だついする,,datsui suru,rozbierać się,,,
 2300,WORD_NOUN,,HIRAGANA,,,脱衣所,だついじょ,,datsuijo,przebieralnia,,,
 2301,WORD_VERB_RU,,HIRAGANA,,,膨れる,ふくれる,,fukureru,"puchnąć
+spuchnąć
 rozszerzać się
+nadąć się
 tyć",,,
 2302,WORD_VERB_RU,,HIRAGANA,,,脹れる,ふくれる,,fukureru,"puchnąć
 rozszerzać się
@@ -5513,7 +5525,9 @@ głęboka czerwień",,,
 bardzo czarny
 głęboka czerń",,,
 2547,UNKNOWN,,HIRAGANA,,,真青,まっさお,,massao,"prawdziwie niebieski
-bardzo niebieski",,,
+intensywnie niebieski
+bardzo niebieski
+bardzo blady (o twarzy)",,,
 2548,WORD_NOUN,,HIRAGANA,,,真青顔,まっさおかお,,massao kao,"blada twarz
 twarz, która zbladła",,,
 2549,WORD_NOUN,,HIRAGANA,,,村,むら,,mura,"wioska
@@ -6007,7 +6021,8 @@ instrument",,,
 2774,WORD_NOUN,,HIRAGANA,,,番人,ばんにん,,bannin,"stróż
 ochroniarz
 strażnik",,,
-2775,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,番犬,ばんけん,,banken,pies stróżujący,,,
+2775,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,番犬,ばんけん,,banken,"pies stróżujący
+pies podwórzowy",,,
 2776,WORD_VERB_U,,HIRAGANA,,に,受かる,うかる,ni,ukaru,"zdać
 zaliczyć",egzamin,,
 2777,WORD_VERB_U,,HIRAGANA,,,試験にうかる,しけんにうかる,,shiken ni ukaru,"zdać egzamin
@@ -8865,7 +8880,8 @@ pociąg",,,
 4185,WORD_NOUN,,HIRAGANA,,,鉄棒,かなぼう,,kanabou,pręt metalowy,,,4184
 4186,WORD_NOUN,,HIRAGANA,,,鉄砲,てっぽう,,teppou,"pistolet
 broń palna",,,
-4187,WORD_NOUN,,HIRAGANA,,,袋,ふくろ,,fukuro,"torba
+4187,WORD_NOUN,SUFFIX,HIRAGANA,,,袋,ふくろ,,fukuro,"torba
+torebka
 worek",,,
 4188,WORD_NOUN,,HIRAGANA,,,床,とこ,,toko,łóżko,,,4189
 4189,WORD_NOUN,,HIRAGANA,,,床,ゆか,,yuka,"podłoga
@@ -10742,6 +10758,7 @@ koniec roku",,,
 gwizdek
 piszczałka organowa",,,
 5026,WORD_VERB_U,,HIRAGANA,,,膨らむ,ふくらむ,,fukuramu,"puchnąć
+nadymać się
 rozszerzać się
 tyć",,,
 5027,WORD_NOUN,,HIRAGANA,,,核,かく,,kaku,"jądro
@@ -11629,7 +11646,7 @@ platforma
 ambona",,,
 5435,WORD_NOUN,,HIRAGANA,,,反復,はんぷく,,hanpuku,powtórka,,,
 5436,WORD_NOUN,,HIRAGANA,Genki 2-22,,復習,ふくしゅう,,fukushuu,"ćwiczenie
-powtarzanie",,,
+powtarzanie",lekcji,,
 5437,WORD_NOUN,,HIRAGANA,,,復活,ふっかつ,,fukkatsu,zmartwychwstanie,,,
 5438,WORD_NOUN,,HIRAGANA,,,復興,ふっこう,,fukkou,"rekonstrukcja
 rehabilitacja
@@ -11825,6 +11842,7 @@ współzawodniczyć",,,
 5537,WORD_VERB_U,,HIRAGANA,,,競る,せる,,seru,"konkurować
 współzawodniczyć",,,
 5538,WORD_NOUN,,HIRAGANA,,,競争,きょうそう,,kyousou,"współzawodnictwo
+rywalizacja
 konkurencja",,,
 5539,WORD_NOUN,,HIRAGANA,,,競技,きょうぎ,,kyougi,"zawody sportowe
 turniej
@@ -11839,7 +11857,8 @@ wytrwałość",,,5544
 5544,WORD_NOUN,,HIRAGANA,,,根,ね,,ne,"korzeń
 podstawa
 geneza
-źródło",,,5543
+źródło",,,"5543
+12041"
 5545,WORD_NOUN,,HIRAGANA,,,根気,こんき,,konki,"wytrwałość
 cierpliwość",,,
 5546,WORD_NOUN,,HIRAGANA,,,根拠,こんきょ,,konkyo,"podstawa
@@ -12084,10 +12103,13 @@ zatrudniony",,,
 5656,WORD_NOUN,,HIRAGANA,,,毒薬,どくやく,,dokuyaku,trucizna,,,
 5657,WORD_ADJECTIVE_NA,,HIRAGANA,,,有毒,ゆうどく,,yuudoku,trujący,np. owoc,,
 5658,WORD_NOUN,,HIRAGANA,,,毒矢,どくや,,dokuya,zatruta strzała,,,
-5659,WORD_ADJECTIVE_NA,,HIRAGANA,,,気の毒,きのどく,,ki no doku,"godny pożałowania
+5659,WORD_ADJECTIVE_NA,,HIRAGANA,,,気の毒,きのどく,,ki no doku,"przykry
+wzbudzający współczucie
+godny pożałowania
 smutny
 nieszczęśliwy
-bolesny",,,
+biedny
+przykro (z powodu sprawienia kłopotu)",,,
 5660,WORD_VERB_IRREGULAR,,HIRAGANA,,,了する,りょうする,,ryou suru,"kończyć
 rozumieć
 pojmować",,,
@@ -12674,8 +12696,10 @@ tchnienie",,,
 5926,WORD_NOUN,,HIRAGANA,,,禁煙,きんえん,,kin'en,zakaz palenia,,,
 5927,WORD_NOUN,,HIRAGANA,,,禁止,きんし,,kinshi,"zakaz
 prohibicja",,,
-5928,WORD_EXPRESSION,,HIRAGANA,,,立入禁止,たちいりきんし,,tachiirikinshi,"wstęp wzbroniony
-zakaz wstępu",,,
+5928,WORD_NOUN,,HIRAGANA,,,立入禁止,たちいりきんし,,tachiirikinshi,"zakaz wchodzenia
+zakaz wstępu
+wejście wzbronienie
+wstęp wzbroniony",,,
 5929,WORD_NOUN,,HIRAGANA,,,解禁,かいきん,,kaikin,zniesienie zakazu,,,
 5930,WORD_NOUN,,HIRAGANA,,,禁物,きんもつ,,kinmotsu,"rzeczy zabronione
 tabu",,,
@@ -16046,6 +16070,7 @@ użytkownik wynajętego lokalu",,,
 7563,WORD_NOUN,,HIRAGANA,,,借財,しゃくざい,,shakuzai,dług,,,
 7564,WORD_NOUN,,HIRAGANA,,,借家,しゃっか,,shakka,dom do wynajęcia,,,
 7565,WORD_NOUN,,HIRAGANA,,,教師,きょうし,,kyoushi,"profesor
+nauczyciel
 wykładowca",,,
 7566,WORD_NOUN,,HIRAGANA,,,医師,いし,,ishi,lekarz,,,
 7567,WORD_NOUN,,HIRAGANA,,,師弟,してい,,shitei,mistrz i uczeń,,,
@@ -16836,9 +16861,11 @@ strzelanie",,,8866
 lepić się",,,
 7936,WORD_VERB_U,,HIRAGANA,,,縮まる,ちぢまる,,chidimaru,"kurczyć się
 maleć",,,
-7937,WORD_VERB_U,,HIRAGANA,,,縮む,ちぢむ,,chidimu,"kurczyć się
+7937,WORD_VERB_U,,HIRAGANA,,,縮む,ちぢむ,,chidimu,"skracać się
+kurczyć się
 maleć
-marszczyć się",,,
+marszczyć się
+zbiegać się",,,
 7938,WORD_VERB_RU,,HIRAGANA,,,縮める,ちぢめる,,chidimeru,"zmniejszać
 skracać
 ciąć",,,
@@ -17172,9 +17199,11 @@ być dodanym",,,2645
 niższy",,,
 8066,WORD_VERB_U,,HIRAGANA,,,劣る,おとる,,otoru,"być gorszym
 być niżej",,,
-8067,WORD_NOUN,,HIRAGANA,,,裏,うら,,ura,"tył
-odwrotna strona
-wnętrze",,,
+8067,WORD_NOUN,,HIRAGANA,,,裏,うら,,ura,"tył (domu)
+odwrotna (lewa) strona
+podszewka
+podwórze
+tyły",,,
 8068,WORD_NOUN,,HIRAGANA,,,奴,やっこ,,yakko,"sługa
 giermek
 chłopak",,,8069
@@ -25195,3 +25224,75 @@ zamysł
 cel",,,
 11993,WORD_VERB_IRREGULAR,,HIRAGANA,,,増加する,ぞうかする,,zouka suru,"powiększyć
 pomnożyć",,,
+11994,WORD_EXPRESSION,,HIRAGANA,,,朝から晩まで,あさからばんまで,,asa kara ban made,od rana do wieczora,,,
+11995,WORD_EXPRESSION,,HIRAGANA,,,前の晩,まえのばん,,mae no ban,co wieczór,,,
+11996,WORD_NOUN,,HIRAGANA,,,小さい花,ちいさいはな,,chiisai hana,mały kwiatek,,,
+11997,WORD_NOUN,,HIRAGANA,,,小さい声,ちいさいこえ,,chiisai koe,cichy głos,,,
+11998,UNKNOWN,,HIRAGANA,,,小さな,ちいさな,,chiisana,mały,,,
+11999,WORD_NOUN,,HIRAGANA,,,小さな花,ちいさなはな,,chiisana hana,mały kwiatek,,,
+12000,WORD_NOUN,,HIRAGANA,,,小さな手,ちいさなて,,chiisana te,mała rączka,,,
+12001,WORD_NOUN,,HIRAGANA,,,小さな家,ちいさないえ,,chiisana ie,mały domek,,,
+12002,WORD_NOUN,,HIRAGANA_KATAKANA,,,ビニール袋,ビニールぶくろ,,biniiru bukuro,torba foliowa,,,
+12003,WORD_VERB_IRREGULAR,,HIRAGANA,,,復習する,ふくしゅうする,,fukushuu suru,powtarzać,lekcję,,
+12004,WORD_NOUN,,HIRAGANA,,,桃色,ももいろ,,momo iro,kolor różowy,,,
+12005,WORD_NOUN,,HIRAGANA,,,事業,じぎょう,,jigyou,"przedsięwzięcie
+interes",,,
+12006,WORD_NOUN,,HIRAGANA,,,事業団,じぎょうだん,,jigyoudan,stowarzyszenie przedsiębiorców,,,
+12007,WORD_NOUN,,HIRAGANA,,,事業家,じぎょうか,,jigyouka,przedsiębiorca,,,
+12008,WORD_VERB_U,,HIRAGANA,,,事実を話す,じじつをはなす,,jijitsu o hanasu,mówić prawdę,,,
+12009,WORD_VERB_RU,,HIRAGANA,,,事実を伝える,じじつをつたえる,,jijitsu o tsutaeru,przekazywać fakty,,,
+12010,WORD_NOUN,,HIRAGANA,,,事情,じじょう,,jijou,"okoliczności
+sytuacja
+stan rzeczy
+warunki",,,
+12011,WORD_NOUN,,HIRAGANA,,,日本事情,にほんじじょう,,nihon jijou,sytuacja w Japonii,,,
+12012,WORD_EXPRESSION,,HIRAGANA,,,時間がない,じかんがない,,jikan ga nai,nie ma czasu,,,
+12013,WORD_VERB_U,,HIRAGANA,,,時間に間に合う,じかんにまにあう,,jikan ni maniau,zdążyć na czas,,,
+12014,WORD_VERB_RU,,HIRAGANA,,,時間に遅れる,じかんにおくれる,,jikan ni okureru,"spóźnić się
+nie zdążyć na czas",,,
+12015,WORD_VERB_U,,HIRAGANA,,,時間を守る,じかんをまもる,,jikan o mamoru,być punktualnym,,,
+12016,WORD_NOUN,,HIRAGANA,,,時間割,じかんわり,,jikan wari,rozkład zajęć,,,
+12017,WORD_NOUN,,HIRAGANA,,,時間割り,じかんわり,,jikan wari,rozkład zajęć,,,
+12018,WORD_NOUN,,HIRAGANA,,,通行禁止,つうこうきんし,,tsuukou kinshi,zakaz ruchu,,,
+12019,WORD_NOUN,,HIRAGANA,,,立ち入禁止,たちいりきんし,,tachiiri kinshi,"zakaz wchodzenia
+zakaz wstępu
+wejście wzbronienie
+wstęp wzbroniony",,,
+12020,WORD_NOUN,,HIRAGANA,,,立入り禁止,たちいりきんし,,tachiiri kinshi,"zakaz wchodzenia
+zakaz wstępu
+wejście wzbronienie
+wstęp wzbroniony",,,
+12021,WORD_NOUN,,HIRAGANA,,,立ち入り禁止,たちいりきんし,,tachiiri kinshi,"zakaz wchodzenia
+zakaz wstępu
+wejście wzbronienie
+wstęp wzbroniony",,,
+12022,WORD_NOUN,,HIRAGANA,,,近視,きんし,,kinshi,krótkowzroczność,"wada wzroku, używa się również słowa: kingan",,
+12023,WORD_NOUN,,HIRAGANA_KATAKANA,,,絹のネクタイ,きぬのネクタイ,,kinu no nekutai,jedwabny krawat,,,
+12024,WORD_VERB_IRREGULAR,,HIRAGANA,,,競争する,きょうそうする,,kyousou suru,rywalizować,,,
+12025,WORD_VERB_U,,HIRAGANA,,,競争に勝つ,きょうそうにかつ,,kyousou ni katsu,zwyciężyć we współzawodnictwie,,,
+12026,WORD_VERB_RU,,HIRAGANA,,,競争に負ける,きょうそうにまける,,kyousou ni makeru,przegrać we współzawodnictwie,,,
+12027,WORD_NOUN,,HIRAGANA,,,共通,きょうつう,,kyoutsuu,wspólna sprawa,,,
+12028,WORD_VERB_IRREGULAR,,HIRAGANA,,,共通する,きょうつうする,,kyoutsuu suru,mieć coś wspólnego,,,
+12029,WORD_NOUN,,HIRAGANA,,,留学生にとって共通の問題,りゅうがくせいにとってきょうつうのもんだい,,ryuugakusei ni totte kyoutsuu no mondai,wspólny problem studentów zagranicznych,,,
+12030,WORD_NOUN,,HIRAGANA,,,十九世紀,じゅきゅうせいき,,jukyuu seiki,dziewiętnasty wiek,,,
+12031,WORD_ADJECTIVE_I,,HIRAGANA,,,丸い,まるい,,marui,"kulisty
+okrągły",,,
+12032,WORD_NOUN,,HIRAGANA,,,丸い石,まるいいし,,marui ishi,okrągły kamień,,,
+12033,WORD_NOUN,,HIRAGANA,,,円い窓,まるいまど,,marui mado,okrągłe okno,,,
+12034,WORD_NOUN,,HIRAGANA_KATAKANA,,,円いテーブロ,まるいテーブロ,,marui teeburo,okrągły stół,,,
+12035,WORD_ADJECTIVE_NA,,HIRAGANA,,,真っ青,まっさお,,massao,"prawdziwie niebieski
+intensywnie niebieski
+bardzo niebieski
+bardzo blady (o twarzy)",,,
+12036,WORD_NOUN,,HIRAGANA,,,木の根,きのね,,ki no ne,korzeń drzewa,,,
+12037,WORD_NOUN,,HIRAGANA,,,草の根,くさのね,,kusa no ne,korzeń trawy,,,
+12038,WORD_VERB_RU,,HIRAGANA,,,根が出る,ねがでる,,ne ga deru,wypuszczać korzenie,,,
+12039,WORD_VERB_RU,,HIRAGANA,,,根が生える,ねがはえる,,ne ga haeru,zakorzeniać się,,,
+12040,WORD_VERB_RU,,HIRAGANA,,,根が伸びる,ねがのびる,,ne ga nobiru,"zapuszczać korzenie
+zakorzeniać się",,,
+12041,WORD_PARTICULE,,HIRAGANA,,,-,ね,,ne,"prawda?
+dobrze?
+nieprawdaż?",,,5544
+12042,WORD_NOUN,,HIRAGANA,,,足の裏,あしのうら,,ashi no ura,podeszwa stopy,,,
+12043,WORD_NOUN,,HIRAGANA,,,裏側,うらがわ,,uragawa,"spodnia warstwa
+tylna (druga) strona",,,
