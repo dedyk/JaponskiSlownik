@@ -440,7 +440,8 @@ telewizor",,,
 219,WORD_NOUN,,HIRAGANA,Genki 1-3,,朝御飯,あさごはん,,asagohan,śniadanie,,,
 220,WORD_NOUN,,HIRAGANA,"Genki 1-2
 Genki 1-3",,お酒,おさけ,,osake,"sake
-alkohol",,,
+alkohol
+trunek",,,
 221,WORD_NOUN,,HIRAGANA,"Genki 1-3
 Genki kanji 2-20",,お茶,おちゃ,,ocha,zielona herbata,,,
 222,WORD_NOUN,,KATAKANA,Genki 1-3,,-,コーヒー,,koohii,kawa,,,
@@ -1112,10 +1113,12 @@ wspierać",osoba/zadanie,,
 481,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,"Genki 1-6
 Genki 2-18
 Genki kanji 1-7",に,入る,はいる,ni,hairu,"wchodzić
-włamywać się
-przyłączać się
-wstępować
-zawierać",,,7252
+być zawartym
+znajdować się w ...
+wstępować (do grupy, organizacji)
+otrzymać
+dostać
+zacząć się (o pewnym okresie)",,,7252
 482,WORD_VERB_U,,HIRAGANA,"Genki 1-6
 Genki kanji 1-10",を,持つ,もつ,o,motsu,"nosić
 brać
@@ -1743,7 +1746,8 @@ Genki kanji 1-3",,十,とお,,too,dziesięć,klasyfikator ogólny,,11
 721,WORD_NOUN,,HIRAGANA,,,図書室,としょしつ,,toshoshitsu,"biblioteka
 sala biblioteczna",w sali,,
 722,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-9,,茶色い,ちゃいろい,,chairoi,brązowy,,,
-723,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,灰色,はいいろ,,haiiro,szary,,,
+723,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,灰色,はいいろ,,haiiro,"szary
+popielaty",,,
 724,WORD_ADJECTIVE_NA,,KATAKANA,Genki 1-9,,-,ピンク,,pinku,różowy,,,
 725,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,銀色,ぎんいろ,,gin'iro,srebrny,,,
 726,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-9,,紫,むらさき,,murasaki,"fioletowy
@@ -2261,7 +2265,8 @@ Genki 2-20",,趣味,しゅみ,,shumi,hobby,,,
 935,WORD_NOUN,,KATAKANA,Genki dodatkowe 1-11,,-,バンド,,bando,zespół,muzyczny,,
 936,WORD_NOUN,,HIRAGANA,"Genki dodatkowe 1-11
 Genki 2-19
-Genki kanji 2-23",,文化,ぶんか,,bunka,kultura,,,
+Genki kanji 2-23",,文化,ぶんか,,bunka,"kultura
+cywilizacja",,,
 937,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,釣り,つり,,tsuri,"wędkarstwo
 reszta (pieniędzy)",,,
 938,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,祭り,まつり,,matsuri,"festiwal
@@ -2364,7 +2369,11 @@ prośba
 spełnić",,,
 971,WORD_PRONOUN,,HIRAGANA,"Genki dodatkowe 1-12
 Genki 2-14",,私たち,わたしたち,,watashi tachi,my,,,
-972,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,-,など,,nado,i tak dalej,,,
+972,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-12,,-,など,,nado,"i tak dalej
+i inne
+i tym podobne
+lub coś takiego
+na przykład",,,
 973,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-12,,-,たんざく,,tanzaku,kawałek ładnego papieru,,,
 974,WORD_NOUN,,HIRAGANA,"Genki dodatkowe 1-12
 Genki kanji 1-12",,人々,ひとびと,,hitobito,ludzie,,,
@@ -3688,7 +3697,9 @@ wykładowca",,,
 śliczny",,,
 1591,WORD_NOUN,,HIRAGANA,,,文,ぶん,,bun,"zdanie
 tekst literacki
-wypracowanie",gramatyka,,"7714
+wypracowanie
+pismo
+styl",gramatyka,,"7714
 7715"
 1592,WORD_NOUN,,KATAKANA,,,-,カタツムリ,,katatsumuri,ślimak,,,
 1593,WORD_NOUN,,HIRAGANA,,,血液,けつえき,,ketsueki,krew,,,
@@ -4720,7 +4731,8 @@ pomylić się
 nie tak nie jest (zaprzeczenie)",,,3699
 2145,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-16,,-,ロボット,,robotto,robot,,,
 2146,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,道具,どうぐ,,dougu,"narzędzie
-przyrząd",,,
+przyrząd
+przybory",,,
 2147,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-16,,-,ポケット,,poketto,kieszeń,,,
 2148,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-16,,喜んで,よろこんで,,yorokonde,"z przyjemnością
 z radością
@@ -4816,7 +4828,7 @@ grzyby",,,
 2180,WORD_NOUN,,HIRAGANA,,,学名,がくめい,,gakumei,naukowa (międzynarodowa) nazwa,,,
 2181,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,様,さま,,sama,"szanowny pan
 szanowna pani",przyrostek honoryfikatywny,,
-2182,WORD_NOUN,,HIRAGANA,,,矢,や,,ya,strzała,,,
+2182,WORD_NOUN,,HIRAGANA,,,矢,や,,ya,strzała,,,12073
 2183,WORD_NOUN,,HIRAGANA,,,宇宙,うちゅう,,uchuu,"wszechświat
 kosmos",,,
 2184,WORD_NOUN,,HIRAGANA,Genki 2-20,,宇宙人,うちゅうじん,,uchuu jin,"kosmita
@@ -5779,7 +5791,10 @@ zdobywać",,,
 2664,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,が,猛る,たける,ga,takeru,"wściekać się
 unosić się",,,
 2665,WORD_NOUN,,HIRAGANA,,,面,おもて,,omote,"twarz
-reputacja",,,
+maska
+oblicze
+reputacja
+strona (np. gazety)",,,12062
 2666,WORD_NOUN,,HIRAGANA,,,面積,めんせき,,menseki,"powierzchnia
 obszar",,,
 2667,WORD_NOUN,,HIRAGANA,,,面会,めんかい,,menkai,"wywiad
@@ -8251,7 +8266,7 @@ prosiak
 wieprz
 maciora",,,
 3862,WORD_NOUN,,HIRAGANA,,,菜,な,,na,"warzywo
-rzepak",,,
+rzepak",,,12063
 3863,WORD_NOUN,,HIRAGANA,,,菜園,さいえん,,saien,ogród warzywny,,,
 3864,WORD_NOUN,,HIRAGANA,,,山菜,さんさい,,sansai,jadalna dzika roślina,,,
 3865,WORD_NOUN,,HIRAGANA,,,菜食者,さいしょくしゃ,,saishokusha,"wegetarianin
@@ -8431,10 +8446,12 @@ filia (sklepu)",,,
 3955,WORD_NOUN,,HIRAGANA,Genki 2-20,,団扇,うちわ,,uchiwa,wachlarz,w kształcie liścia,,
 3956,WORD_NOUN,,HIRAGANA,Genki 2-20,,扇風機,せんぷうき,,senpuuki,wentylator,,,
 3957,WORD_NOUN,,KATAKANA,Genki 2-20,,-,ハイヒール,,haihiiru,buty na wysokich obcasach,,,
-3958,WORD_NOUN,,HIRAGANA,Genki 2-20,,屋,や,,ya,"sklep
+3958,WORD_NOUN,SUFFIX,HIRAGANA,Genki 2-20,,屋,や,,ya,"sklep
+zakład usługowy
 dach
 dom
-sprzedawca","~, postfiks",,
+sprzedawca
+kupiec","~, postfiks",,12073
 3959,WORD_NOUN,,HIRAGANA,Genki 2-20,,昨夜,ゆうべ,,yuube,wczorajszy wieczór,,,
 3960,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,致す,いたす,,itasu,[modestywna forma od suru],,,
 3961,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,頂く,いただく,,itadaku,"[modestywna forma od taberu, nomu, morau]",,,
@@ -8699,7 +8716,8 @@ schnąć",,,
 suchość",,,
 4094,WORD_NOUN,,HIRAGANA,,,杯,はい,,hai,"szklanka
 filiżanka
-toast",,,"90
+toast
+[klasyfikator do liczenia zawartości szklanek, kubków, łyżek itp]",,,"90
 4095"
 4095,WORD_NOUN,,HIRAGANA,,,杯,さかずき,,sakazuki,"kielich
 kieliszek do wina",,,4094
@@ -10546,6 +10564,7 @@ mylić drogę
 wahać się
 mieć wątpliwości",,,
 4941,WORD_ADJECTIVE_NA,,HIRAGANA,,,迷惑,めいわく,,meiwaku,"kłopot
+kłopotliwy
 niepokój",,,
 4942,WORD_NOUN,,HIRAGANA,"Genki kanji 2-21
 Genki dodatkowe 2-21",,迷信,めいしん,,meishin,"przesąd
@@ -11293,7 +11312,11 @@ odbicie
 refleksja
 zastanowienie",,,
 5277,WORD_NOUN,,HIRAGANA,,,反撃,はんげき,,hangeki,kontratak,,,
-5278,WORD_NOUN,,HIRAGANA,,,境,さかい,,sakai,ograniczenie,,,
+5278,WORD_NOUN,,HIRAGANA,,,境,さかい,,sakai,"ograniczenie
+granica
+brzeg
+skraj
+koniec",,,
 5279,WORD_NOUN,,HIRAGANA,,,国境,こっきょう,,kokkyou,granica państwa,,,5280
 5280,WORD_NOUN,,HIRAGANA,,,国境,くにざかい,,kunizakai,granica państwa,,,5279
 5281,WORD_NOUN,,HIRAGANA,,,境界,きょうかい,,kyoukai,"ograniczenie
@@ -13010,9 +13033,10 @@ rwać
 gnieść
 pokonać
 pobić",,,
-6052,WORD_VERB_RU,,HIRAGANA,,,破れる,やぶれる,,yabureru,"drzeć się
-rwać się
-niszczyć się",,,
+6052,WORD_VERB_RU,,HIRAGANA,,,破れる,やぶれる,,yabureru,"zniszczyć się
+połamać się
+rozerwać się
+podrzeć się",,,
 6053,WORD_NOUN,,HIRAGANA,,,破滅,はめつ,,hametsu,"destrukcja
 upadek
 ruina",,,
@@ -13737,6 +13761,7 @@ zaczął płonąć",,,
 6387,WORD_NOUN,,HIRAGANA,,,八面,はちめん,,hachimen,osiem kierunków,,,
 6388,WORD_NOUN,,HIRAGANA,,,八方,はっぽう,,happou,wszystkie kierunki,,,
 6389,WORD_NOUN,,HIRAGANA,,,八百屋,やおや,,yaoya,"sklep warzywniczy
+sklep warzywny
 stragan warzywniczy",,,
 6390,WORD_NOUN,,HIRAGANA,,,九々,くく,,kuku,tabliczka mnożenia,,,
 6391,WORD_NOUN,,HIRAGANA,,,十字架,じゅうじか,,juujika,krzyż,,,
@@ -14954,9 +14979,15 @@ gotowany ryż",,,
 7029,WORD_NOUN,,HIRAGANA,,,京阪,けいはん,,keihan,Kioto i Osaka,,,
 7030,WORD_NOUN,,HIRAGANA,,,京浜,けいひん,,keihin,Tokio i Yokohama,,,
 7031,WORD_NOUN,SUFFIX,HIRAGANA,,,分,ふん,,fun,"minuta
-[klasyfikator do liczenia minut]",,,7032
-7032,WORD_NOUN,,HIRAGANA,,,分,ぶ,,bu,"część
-procent",,,7031
+[klasyfikator do liczenia minut]",,,"7032
+12044"
+7032,WORD_NOUN,SUFFIX,HIRAGANA,,,分,ぶ,,bu,"część
+porcja
+procent
+udział
+przydział
+ułamek",,,"7031
+12044"
 7033,WORD_VERB_U,,HIRAGANA,,,分かる,わかる,,wakaru,"rozumieć
 znać
 poznać",,,
@@ -15803,7 +15834,8 @@ koszty zakupów",,,
 7430,WORD_NOUN,,HIRAGANA,,,野,や,,ya,"pole
 równina
 opozycja
-cywilne życie",,,7431
+cywilne życie",,,"7431
+12073"
 7431,WORD_NOUN,,HIRAGANA,,,野,の,,no,"pole
 równina",,,7430
 7432,WORD_NOUN,,HIRAGANA,,,野党,やとう,,yatou,partia opozycyjna,,,
@@ -16113,7 +16145,8 @@ głośny",,,"7584
 7584,WORD_NOUN,,HIRAGANA,,,名,な,,na,"imię
 sława
 reputacja",,,"7583
-10899"
+10899
+12063"
 7585,WORD_NOUN,,HIRAGANA,,,名札,なふだ,,nafuda,tabliczka z nazwiskiem,,,
 7586,WORD_NOUN,,HIRAGANA,,,表,ひょう,,hyou,"tablica
 tabela
@@ -16467,7 +16500,8 @@ dowcip",,,
 prosto",,,
 7773,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-23,,此の様に,このように,,kono you ni,w ten sposób,,,
 7774,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-23,,-,によって,,ni yotte,zależnie od,~,,
-7775,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-23,,殆ど,ほとんど,,hotondo,"prawie
+7775,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-23,,殆ど,ほとんど,,hotondo,"prawie wszystko
+prawie
 niemal
 nieomal",,,
 7776,WORD_ADJECTIVE_NA,,HIRAGANA,Genki dodatkowe 2-23,,同じよう,おなじよう,,onaji you,podobny,,,
@@ -16551,7 +16585,14 @@ bystrze",,,
 7821,WORD_VERB_U,,HIRAGANA,,,盛る,さかる,,sakaru,"obfitować
 prosperować
 być popularnym",,,7823
-7822,WORD_ADJECTIVE_NA,,HIRAGANA,,,盛ん,さかん,,sakan,"popularny
+7822,WORD_ADJECTIVE_NA,,HIRAGANA,,,盛ん,さかん,,sakan,"pomyślny
+cieszący się powodzeniem
+kwitnący
+ożywiony
+energiczny
+gorący
+entuzjastyczny
+popularny
 prosperujący",,,
 7823,WORD_VERB_U,,HIRAGANA,,,盛る,もる,,moru,"dawkować
 napełniać
@@ -19160,7 +19201,7 @@ widz",,,
 9107,WORD_NOUN,,HIRAGANA,,,作曲家,さっきょくか ,,sakkyokuka,kompozytor,,,
 9108,WORD_NOUN,,HIRAGANA,,,潜水艦,せんすいかん ,,sensuikan,"okręt podwodny
 łódź podwodna",,,
-9109,UNKNOWN,,HIRAGANA,,,扨,さて ,,sate,teraz,,,
+9109,UNKNOWN,,HIRAGANA,,,扨,さて ,,sate,teraz,,,12072
 9110,WORD_NOUN,,HIRAGANA,,,投影,とうえい ,,touei,"wizja
 projekcja
 rzut",,,
@@ -22440,9 +22481,11 @@ zyskać
 zdobyć
 zastrzelić",,,
 10600,WORD_NOUN,,HIRAGANA,,,一杯,いっぱい ,,ippai,"napój
-filiżanka (czegoś)",,,10601
+filiżanka (czegoś)",,,"10601
+12077"
 10601,WORD_ADVERB,,HIRAGANA,,,一杯,いっぱい ,,ippai,"w pełni
-całkowicie",,,10600
+całkowicie",,,"10600
+12077"
 10602,WORD_NOUN,,HIRAGANA,,,見聞き,みきき ,,mikiki,"doświadczenie
 przeżywać
 doznawać
@@ -24847,6 +24890,7 @@ nosić (rękawiczki, pierścionek itp)",,,
 11768,WORD_NOUN,,HIRAGANA,,,洟,はな,,hana,wydzielina z nosa,,,
 11769,WORD_VERB_IRREGULAR,,HIRAGANA,,,発展する,はってんする,,hatten suru,rozwijać się,,,
 11770,WORD_NOUN,,HIRAGANA,,,菓子屋,かしや,,kashiya,"sklep ze słodyczami
+sklep cukierniczy
 cukiernia",,,
 11771,WORD_VERB_U,,HIRAGANA,,,肩がこる,かたがこる,,kata ga koru,mieć zdrętwiałe (obolałe) ramię,,,
 11772,WORD_VERB_U,,HIRAGANA,,,肩に担ぐ,かたにかつぐ,,kata ni katsugu,nieść na ramionach,,,
@@ -25296,3 +25340,77 @@ nieprawdaż?",,,5544
 12042,WORD_NOUN,,HIRAGANA,,,足の裏,あしのうら,,ashi no ura,podeszwa stopy,,,
 12043,WORD_NOUN,,HIRAGANA,,,裏側,うらがわ,,uragawa,"spodnia warstwa
 tylna (druga) strona",,,
+12044,WORD_NOUN,SUFFIX,HIRAGANA,,,分,ぶん,,bun,"część
+porcja
+procent
+udział
+przydział
+ułamek",,,"7031
+7032"
+12045,WORD_NOUN,,HIRAGANA,,,文房具,ぶんぼうぐ ,,bunbougu,materiały piśmienne,,,
+12046,WORD_NOUN,,HIRAGANA,,,文学者,ぶんがくしゃ,,bungakusha,literat,,,
+12047,WORD_NOUN,,HIRAGANA,,,日本文学,にほんぶんがく,,nihon bungaku,literatura japońska,,,
+12048,WORD_VERB_U,,HIRAGANA,,,家の中に入る,いえのなかにはいる,,ie no naka ni hairu,wchodzić do domu,,,
+12049,WORD_VERB_U,,HIRAGANA,,,玄関を入る,げんかんをはいる,,genkan o hairu,wchodzić przez drzwi wejściowe,,,
+12050,WORD_VERB_U,,HIRAGANA,,,門を入る,もんをはいる,,mon o hairu,wchodzić przez bramę,,,
+12051,WORD_VERB_U,,HIRAGANA,,,大学に入る,だいがくにはいる,,daigaku ni hairu,wstępować na uniwersytet,,,
+12052,WORD_VERB_U,,HIRAGANA,,,会社に入る,かいしゃにはいる,,kaisha ni hairu,wstępować do firmy,,,
+12053,WORD_VERB_U,,HIRAGANA,,,仲間に入る,なかまにはいる,,nakama ni hairu,"dołączyć się do grupy, towarzystwa",,,
+12054,WORD_VERB_U,,HIRAGANA,,,手に入る,てにはいる,,te ni hairu,"dostać
+zdobyć",,,
+12055,WORD_VERB_U,,HIRAGANA,,,お金が入る,おかねがはいる,,okane ga hairu,dostać pieniądze,,,
+12056,WORD_VERB_IRREGULAR,,HIRAGANA,,,迷惑する,めいわくする,,meiwaku suru,mieć kłopot,,,
+12057,WORD_NOUN,,HIRAGANA,,,目方,めかた,,mekata,"ciężar
+waga",,,
+12058,WORD_VERB_U,,HIRAGANA,,,目方を量る,めかたをはかる,,mekata o hakaru,ważyć,coś,,
+12059,WORD_VERB_RU,,HIRAGANA,,,目方が増える,めかたがふえる,,mekata ga fueru,"zyskiwać na wadze
+przybierać na wadze",,,
+12060,WORD_VERB_RU,,HIRAGANA,,,目方が減る,めかたがへる,,mekata ga heru,tracić na wadze,,,
+12061,WORD_NOUN,,HIRAGANA_KATAKANA,,,綿のシャツ,めんをシャツ,,men o shatsu,bawełniana koszula,,,
+12062,WORD_NOUN,SUFFIX,HIRAGANA,,,面,めん,,men,"twarz
+maska
+oblicze
+reputacja
+strona (np. gazety)",,,2665
+12063,WORD_PARTICULE,,HIRAGANA,,,-,な,,na,"ależ
+ach jak ...! (podkreśla zachwyt mówiącego)
+nie! (wyraża zakaz lub ostre polecenie przy użyciu negacji, używa się po formie słownikowej czasownika)",,,"3862
+7584"
+12064,WORD_VERB_U,,HIRAGANA,,,温度が上がる,おんどがあがる,,ondo ga agaru,temperatura rośnie,,,
+12065,WORD_VERB_U,,HIRAGANA,,,温度が下がる,おんどがさがる,,ondo ga sagaru,temperatura spada,,,
+12066,WORD_ADJECTIVE_I,,HIRAGANA,,,温度が高い,おんどがたかい,,ondo ga takai,temperatura jest wysoka,,,
+12067,WORD_ADJECTIVE_I,,HIRAGANA,,,温度が低い,おんどがひくい,,ondo ga hikui,temperatura jest niska,,,
+12068,WORD_NOUN,,HIRAGANA,,,お願い,おねがい,,onegai,"pragnienie
+marzenie
+nadzieja
+prośba",,,
+12069,WORD_VERB_U,,HIRAGANA,,,魚を捕る,さかなをとる,,sakana o toru,łapać ryby,,,
+12070,WORD_VERB_U,,HIRAGANA,,,魚をつる,さかなをつる,,sakana o tsuru,"wędkować
+łowić ryby",,,
+12071,WORD_NOUN,,HIRAGANA,,,酒,さけ,,sake,"sake
+alkohol
+trunek",,,
+12072,WORD_CONJUNCTION,,HIRAGANA,,,-,さて,,sate,"a więc
+a zatem
+tymczasem",,,9109
+12073,WORD_PARTICULE,,HIRAGANA,,,-,や,,ya,"i ..., i ...
+i tym podobne
+takie jak","używane, gdy trzeba spośród wielu rzeczy wybrać kilka przykładowych",,"2182
+3958
+7430"
+12074,WORD_NOUN,,HIRAGANA,,,文房具屋,ぶんぼうぐや ,,bunbouguya,sklep papierniczy,,,
+12075,WORD_INTERJECTION,,HIRAGANA,,,-,やあ,,yaa,"halo
+hej",używane wyłącznie przez mężczyzn,,
+12076,WORD_VERB_RU,,HIRAGANA,,,戦争に敗れる,せんそうにやぶれる,,sensou ni yabureru,przegrać wojnę,,,
+12077,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,一杯,いっぱい,,ippai,jeden,"łyżki, kubki, miski, szklanki",,"10600
+10601"
+12078,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,二杯,にはい,,nihai,dwa,"łyżki, kubki, miski, szklanki",,
+12079,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,三杯,さんばい,,sanbai,trzy,"łyżki, kubki, miski, szklanki",,
+12080,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,四杯,よんはい,,yonhai,cztery,"łyżki, kubki, miski, szklanki",,
+12081,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,五杯,ごはい,,gohai,pięć,"łyżki, kubki, miski, szklanki",,
+12082,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,六杯,ろっぱい,,roppai,sześć,"łyżki, kubki, miski, szklanki",,
+12083,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,七杯,ななはい,,nanahai,siedem,"łyżki, kubki, miski, szklanki",,
+12084,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,八杯,はっぱい,,happai,osiem,"łyżki, kubki, miski, szklanki",,
+12085,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,九杯,きゅうはい,,kyuuhai,dziewięć,"łyżki, kubki, miski, szklanki",,
+12086,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,十杯,じっぱい,,jippai,dziesięć,"łyżki, kubki, miski, szklanki",,
+12087,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,何杯,なんはい,,nanhai,jak wiele,"łyżki, kubki, miski, szklanki",,
