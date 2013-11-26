@@ -79,7 +79,7 @@ Genki kanji 2-17",,二十歳,はたち,,hatachi,dwadzieścia lat,wiek,,
 49,WORD_GREETING,,HIRAGANA_EXCEPTION,Genki 1-1,,-,こんにちは,,konnichiwa,dzień dobry,po południu,,
 50,WORD_GREETING,,HIRAGANA_EXCEPTION,Genki 1-1,,-,こんばんは,,konbanwa,dobry wieczór,,,
 51,WORD_GREETING,,HIRAGANA,Genki 1-1,,-,さようなら,,sayounara,do widzenia,,,
-52,WORD_GREETING,,HIRAGANA,Genki 1-1,,お休みなさい,おやすみなさい,,oyasuminasai,dobranoc,,,
+52,WORD_GREETING,,HIRAGANA,Genki 1-1,,お休みなさい,おやすみなさい,,oyasumi nasai,dobranoc,,,
 53,WORD_GREETING,,HIRAGANA,Genki 1-1,,有難う,ありがとう,,arigatou,dziękuję,,,
 54,WORD_GREETING,,HIRAGANA,Genki 1-1,,有難う御座います,ありがとうございます,,arigatou gozaimasu,dziękuję,grzecznie,,
 55,WORD_GREETING,,HIRAGANA,Genki 1-1,,済みません,すみません,,sumimasen,"przepraszam
@@ -145,7 +145,10 @@ doktor",,,
 82,WORD_EXPRESSION,,HIRAGANA,"Genki 1-1
 Genki 1-3",,-,そうですね,,sou desu ne,to prawda,,,
 83,WORD_NOUN,,HIRAGANA,"Genki 1-1
-Genki kanji 1-6",,大学,だいがく,,daigaku,uniwersytet,,,
+Genki kanji 1-6",,大学,だいがく,,daigaku,"uniwersytet
+uczelnia
+akademia
+szkoła wyższa",,,
 84,WORD_NOUN,,HIRAGANA,"Genki 1-1
 Genki kanji 1-8
 Genki kanji 1-9",,電話,でんわ,,denwa,telefon,,,
@@ -1673,7 +1676,8 @@ opuszczony",,,4152
 694,WORD_VERB_U,,HIRAGANA,Genki 1-9,,踊る,おどる,,odoru,"tańczyć
 podskakiwać",,,
 695,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,"Genki 1-9
-Genki kanji 2-18",が,終わる,おわる,ga,owaru,kończyć się,,,
+Genki kanji 2-18",が,終わる,おわる,ga,owaru,"kończyć się
+być zakończonym",,,
 696,WORD_VERB_U,,HIRAGANA,Genki 1-9,,人気がある,にんきがある,,ninki ga aru,być popularny,,,
 697,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,"Genki 1-9
 Genki kanji 2-16",が,始まる,はじまる,ga,hajimaru,"zaczynać się
@@ -3305,13 +3309,16 @@ najstarszy syn",,,
 1413,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,柔道,じゅうどう,,juudou,"judo
 dżudo",,,
 1414,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,新雪,しんせつ,,shinsetsu,nowy śnieg,,,
-1415,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,国立大学,こくりつだいがく,,kokuritsudaigaku,uniwersytet narodowy,,,
+1415,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,国立大学,こくりつだいがく,,kokuritsu daigaku,"uniwersytet narodowy
+uniwersytet państwowy",,,
 1416,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,私立高校,しりつこうこう,,shiritsu koukou,prywatne liceum,,,
 1417,WORD_NOUN,,HIRAGANA,"Genki kanji 1-10
 Genki kanji 2-16",,自動車,じどうしゃ,,jidousha,"automobil
 samochód",,,
 1418,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,夜中,よなか,,yonaka,"północ
-późny wieczór",,,
+środek nocy
+późny wieczór
+noc",,,
 1419,UNKNOWN,,HIRAGANA,Genki kanji 1-10,,今夜,こんや,,kon'ya,dziś wieczorem,,,
 1420,WORD_NOUN,,HIRAGANA,Genki kanji 1-10,,朝食,ちょうしょく,,choushoku,śniadanie,,,
 1421,WORD_VERB_IRREGULAR,,HIRAGANA,"Genki 1-6
@@ -4372,8 +4379,13 @@ mieć dosyć",,,
 Genki kanji 2-19",,水不足,みずぶそく,,mizu bu soku,brak wody,,,
 1980,WORD_VERB_U,,HIRAGANA,"Genki kanji 2-15
 Genki dodatkowe 2-15",,通る,とおる,,tooru,"przejechać
+przebiegać
 przechodzić
-mijać",,,
+mijać
+przekroczyć
+przelecieć
+zdać (egzamin)
+zwyciężyć",,,
 1981,WORD_VERB_U,,HIRAGANA,"Genki kanji 2-15
 Genki dodatkowe 2-21",,通う,かよう,,kayou,"uczęszczać
 chodzić
@@ -4611,7 +4623,10 @@ generacja",,,
 2100,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,三世,さんせい,,sansei,trzecie pokolenie,,,
 2101,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,世の中,よのなか,,yononaka,"świat
 społeczeństwo
-ludzkość",w którym żyjemy,,
+ludzkość
+czasy
+wiek
+era",w którym żyjemy,,
 2102,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,視界,しかい,,shikai,"widoczność
 widzialność",,,
 2103,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,政界,せいかい,,sei kai,świat polityki,,,
@@ -4640,7 +4655,9 @@ Genki dodatkowe 2-16",,以上,いじょう,,ijou,"powyżej
 więcej niż
 ponad",,,
 2114,UNKNOWN,,HIRAGANA,Genki kanji 2-16,,以下,いか,,ika,"poniżej
-mniej niż",,,
+mniej niż
+pod
+co następuje",,,
 2115,UNKNOWN,,HIRAGANA,Genki kanji 2-16,,以前,いぜん,,izen,"poprzednio
 dawniej
 przed
@@ -5713,7 +5730,8 @@ służba
 dyżurny
 osoba pełniąca dyżur",,,
 2637,WORD_NOUN,,HIRAGANA,,,冷凍庫,れいとうこ,,reitouko,zamrażarka,,,
-2638,WORD_VERB_U,,HIRAGANA,Genki 2-18,,謝る,あやまる,,ayamaru,przepraszać,,,
+2638,WORD_VERB_U,,HIRAGANA,Genki 2-18,,謝る,あやまる,,ayamaru,"przepraszać
+tłumaczyć się",,,
 2639,WORD_VERB_U,,HIRAGANA,Genki 2-18,,押す,おす,,osu,"pchać
 naciskać
 popychać
@@ -7126,7 +7144,8 @@ dostanie pracy",,,
 3306,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,貸し出し,かしだし,,kashidashi,wypożyczanie,,,
 3307,WORD_NOUN,,HIRAGANA_KATAKANA,Genki kanji 2-18,,賃貸マンション,ちんたいマンション,,chintai manshon,wynajmowane mieszkanie,,,
 3308,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,大使館,たいしかん,,taishikan,ambasada,,,
-3309,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,終わり,おわり,,owari,koniec,,,
+3309,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,終わり,おわり,,owari,"koniec
+zakończenie",,,
 3310,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,最終,さいしゅう,,saishuu,ostatni ~ ...,"np. pociąg, autobus i etc",,
 3311,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,下宿,げしゅく,,geshuku,"stancja
 pensjonat
@@ -7744,7 +7763,8 @@ toczący się (proces)",,,
 3595,WORD_NOUN,,HIRAGANA,"Genki dodatkowe 2-19
 Genki 2-23",,思い出,おもいで,,omoide,"wspomnienie
 pamięć",,,
-3596,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-19,,如何,いかが,,ikaga,jak,uprzejma forma od どう,,
+3596,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-19,,如何,いかが,,ikaga,"jak
+co","uprzejma, honoryfikatywna forma od dou",,
 3597,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,経つ,たつ,,tatsu,"mijać
 przemijać
 upływać
@@ -10184,9 +10204,12 @@ gromadzić",,,
 4772,WORD_NOUN,,HIRAGANA,,,貯金箱,ちょきんばこ,,chokin bako,skarbonka,,,
 4773,WORD_NOUN,,HIRAGANA,,,貯水塔,ちょすいとう,,chosuitou,wieża ciśnień,,,
 4774,WORD_VERB_RU,,HIRAGANA,,,預ける,あずける,,azukeru,"powierzać
+oddać (pod opiekę)
 umieszczać
 deponować",,,
-4775,WORD_VERB_U,,HIRAGANA,,,預かる,あずかる,,azukaru,"przyjmować
+4775,WORD_VERB_U,,HIRAGANA,,,預かる,あずかる,,azukaru,"zająć się (czymś)
+mieć powierzone (coś)
+przyjmować
 brać pod opiekę",,,
 4776,WORD_NOUN,,HIRAGANA,,,預金,よきん,,yokin,"depozyt
 konto bankowe",,,
@@ -11268,7 +11291,7 @@ razem",zwykle używa się w formie: otagai,,
 5255,WORD_NOUN,,HIRAGANA,,,順応,じゅんのう,,junnou,adaptacja,,,
 5256,WORD_NOUN,,HIRAGANA,,,応用,おうよう,,ouyou,"praktyczne zastosowanie
 praktyka
-ulepszenie",,,
+stosowanie",,,
 5257,WORD_VERB_U,,HIRAGANA,,,薫る,かおる,,kaoru,"pachnieć
 rozsiewać przyjemną woń",,,
 5258,WORD_ADJECTIVE_NA,,HIRAGANA,,,純,じゅん,,jun,"czystość
@@ -15061,7 +15084,9 @@ ostatni epizod",w sporcie,,
 Pani Kuroki",nazwisko,,
 7063,WORD_NOUN,,HIRAGANA,Genki kanji 2-22,,白黒写真,しろくろしゃしん,,shirokuro shashin,czarno biała fotografia,,,
 7064,WORD_NOUN,,HIRAGANA,Genki kanji 2-22,,子供用,こどもよう,,kodomo you,dla dzieci,,,
-7065,WORD_NOUN,,HIRAGANA,Genki kanji 2-22,,末,すえ,,sue,koniec,,,266
+7065,WORD_NOUN,,HIRAGANA,Genki kanji 2-22,,末,すえ,,sue,"koniec
+kres
+zakończenie",,,266
 7066,WORD_NOUN,,HIRAGANA,Genki kanji 2-22,,末子,すえこ,,sueko,"ostatnie dziecko
 najmłodsze dziecko w rodzinie",,,
 7067,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-22,,期待する,きたいする,,kitai suru,"spodziewać się
@@ -15909,8 +15934,8 @@ student",,,
 7474,WORD_NOUN,,HIRAGANA,,,問い,とい,,toi,"pytanie
 problem",,,
 7475,WORD_NOUN,,HIRAGANA,,,問答,もんどう,,mondou,pytania i odpowiedzi,,,
-7476,WORD_NOUN,,HIRAGANA,,,学問,がくもん,,gakumon,"studiowanie
-nauka",,,
+7476,WORD_NOUN,,HIRAGANA,,,学問,がくもん,,gakumon,"nauka (dziedzina)
+studia",,,
 7477,WORD_NOUN,,HIRAGANA,,,問責,もんせき,,monseki,"krytyka
 zarzut
 oskarżenie
@@ -17678,9 +17703,10 @@ rin (jednostka długości ok. 0,3 mm)",,,
 8224,WORD_ADJECTIVE_I,,HIRAGANA,,,偉い,えらい,,erai,"wielki
 wspaniały
 sławny",,,
-8225,WORD_VERB_RU,,HIRAGANA,,,慌てる,あわてる,,awateru,"być zmieszanym
+8225,WORD_VERB_RU,,HIRAGANA,,,慌てる,あわてる,,awateru,"śpieszyć się
 tracić głowę
-śpieszyć się",,,
+wpadać w panikę
+być zmieszanym",,,
 8226,WORD_ADJECTIVE_I,,HIRAGANA,,,慌ただしい,あわただしい,,awatadashii,"zajęty
 śpieszący się
 zmieszany
@@ -17773,7 +17799,11 @@ przeszkadzać
 zapobiegać
 krępować",,,
 8257,WORD_ADVERB,,HIRAGANA,,,既に,すでに,,sudeni,"już
-poprzednio",,,
+uprzednio
+poprzednio
+przedtem
+wcześniej
+dawniej",,,
 8258,WORD_VERB_U,,HIRAGANA,,,慕う,したう,,shitau,"pragnąć
 tęsknić
 uwielbiać
@@ -18665,7 +18695,7 @@ Genki dodatkowe 2-16",,空,そら,,Sora,Sora,,,"1500
 8760,WORD_FEMALE_NAME,,HIRAGANA,,,康子,やすこ,,Yasuko,Yasuko,,,
 8761,WORD_FEMALE_NAME,,HIRAGANA,,,洋子,よこ,,Yoko,Yoko,,,
 8762,WORD_FEMALE_NAME,,HIRAGANA,,,陽子,ようこ,,Youko,Yoko,,,5574
-8763,WORD_FEMALE_NAME,,HIRAGANA,,,-,より,,Yori,Yori,,,
+8763,WORD_FEMALE_NAME,,HIRAGANA,,,-,より,,Yori,Yori,,,12117
 8764,WORD_FEMALE_NAME,,HIRAGANA,,,-,よし,,Yoshi,Yoshi,,,"4569
 10473
 10475
@@ -19312,7 +19342,11 @@ być potłuczonym",,,
 przepuścić
 wprowadzić
 wpuścić
+oprowadzić
+pokazać
 trwać
+kontynuować
+prowadzić (od początku do końca)
 utrzymywać się",,,
 9152,WORD_VERB_RU,,HIRAGANA,,,取れる,とれる,,toreru,"zostać zebranym
 zostać wziętym
@@ -20809,9 +20843,12 @@ pub
 tawerna",,,
 9847,WORD_VERB_RU,,HIRAGANA,,,合わせる,あわせる ,,awaseru,"zgrać
 dopasować
+adaptować
 połączyć
+łączyć
 złożyć
 zestawić
+porównywać
 akompaniować",,,
 9848,WORD_NOUN,,HIRAGANA,,,領収証,りょうしゅうしょう ,,ryoushuushou,"kwit
 pokwitowanie",,,
@@ -21166,10 +21203,12 @@ skrót",,,
 10042,WORD_NOUN,,HIRAGANA,,,算術,さんじゅつ ,,sanjutsu,arytmetyka,,,
 10043,UNKNOWN,,HIRAGANA,,,総て,すべて ,,subete,"całkiem
 całkowicie
+zupełnie
 całość
 cały
 każdy
-wszystko",,,
+wszystko
+wszyscy",,,
 10044,WORD_NOUN,,HIRAGANA,,,霊殿,れいでん ,,reiden,"świątynia
 sanktuarium
 mauzoleum",,,
@@ -25353,7 +25392,8 @@ ułamek",,,"7031
 12048,WORD_VERB_U,,HIRAGANA,,,家の中に入る,いえのなかにはいる,,ie no naka ni hairu,wchodzić do domu,,,
 12049,WORD_VERB_U,,HIRAGANA,,,玄関を入る,げんかんをはいる,,genkan o hairu,wchodzić przez drzwi wejściowe,,,
 12050,WORD_VERB_U,,HIRAGANA,,,門を入る,もんをはいる,,mon o hairu,wchodzić przez bramę,,,
-12051,WORD_VERB_U,,HIRAGANA,,,大学に入る,だいがくにはいる,,daigaku ni hairu,wstępować na uniwersytet,,,
+12051,WORD_VERB_U,,HIRAGANA,,,大学に入る,だいがくにはいる,,daigaku ni hairu,"wstępować na uniwersytet
+wstępować na uczelnię",,,
 12052,WORD_VERB_U,,HIRAGANA,,,会社に入る,かいしゃにはいる,,kaisha ni hairu,wstępować do firmy,,,
 12053,WORD_VERB_U,,HIRAGANA,,,仲間に入る,なかまにはいる,,nakama ni hairu,"dołączyć się do grupy, towarzystwa",,,
 12054,WORD_VERB_U,,HIRAGANA,,,手に入る,てにはいる,,te ni hairu,"dostać
@@ -25414,3 +25454,51 @@ hej",używane wyłącznie przez mężczyzn,,
 12085,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,九杯,きゅうはい,,kyuuhai,dziewięć,"łyżki, kubki, miski, szklanki",,
 12086,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,十杯,じっぱい,,jippai,dziesięć,"łyżki, kubki, miski, szklanki",,
 12087,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,何杯,なんはい,,nanhai,jak wiele,"łyżki, kubki, miski, szklanki",,
+12088,WORD_VERB_RU,,HIRAGANA,,,手を合わせる,てをあわせる,,te o awaseru,składać ręce,,,
+12089,WORD_VERB_RU,,HIRAGANA,,,声を合わせる,こえをあわせる,,koe o awaseru,"mówić chórem
+śpiewać chórem",,,
+12090,WORD_VERB_RU,,HIRAGANA,,,心を合わせる,こころをあわせる,,kokoro o awaseru,"współdziałać
+jednoczyć się",,,
+12091,WORD_NOUN,,HIRAGANA,,,台所用品,だいどころようひん,,daidokoro youhin,przybory kuchenne,,,
+12092,WORD_VERB_RU,,HIRAGANA,,,大学を出る,だいがくをでる,,daigaku o deru,"ukończyć uniwersytet
+ukończyć studia",,,
+12093,WORD_VERB_IRREGULAR,,HIRAGANA,,,代表する,だいひょうする,,daihyou suru,reprezentować,,,
+12094,WORD_NOUN,,HIRAGANA,,,代表者,だいひょうしゃ,,daihyousha,"reprezentant
+przedstawiciel",,,
+12095,WORD_VERB_IRREGULAR,,HIRAGANA,,,学生の意見を代表する,がくせいのいけんをだいひょうする,,gakusei no iken o daihyou suru,reprezentować opinię studentów,,,
+12096,WORD_NOUN,,HIRAGANA,,,学部,がくぶ,,gakubu,"wydział
+fakultet",,,
+12097,WORD_NOUN,,HIRAGANA,,,学部長,がくぶちょう,,gakubuchou,dziekan,,,
+12098,WORD_NOUN,,HIRAGANA,,,法学部,ほうがくぶ,,hougakubu,wydział prawa,,,
+12099,WORD_NOUN,,HIRAGANA,,,医学部,いがくぶ,,igakubu,wydział medycyny,,,
+12100,WORD_NOUN,,HIRAGANA,,,工学部,こうがくぶ,,kougakubu,wydział nauk technicznych,,,
+12101,WORD_NOUN,,HIRAGANA,,,理学部,りがくぶ,,rigakubu,wydział matematyczno-przyrodniczy (nauk ścisłych),,,
+12102,WORD_NOUN,,HIRAGANA,,,政治経済学部,せいじけいざいがくぶ,,seijikeizai gakubu,wydział nauk ekonomiczno-politycznych,,,
+12103,WORD_NOUN,,HIRAGANA,,,商学部,しょうがくぶ,,shougakubu,wydział handlu,,,
+12104,WORD_VERB_IRREGULAR,,HIRAGANA,,,学問する,がくもんする,,gakumon suru,"pracować naukowo
+prowadzić studia",,,
+12105,WORD_NOUN,,HIRAGANA,,,学年,がくねん,,gakunen,"rok szkolny
+rok akademicki",,,
+12106,WORD_NOUN,,HIRAGANA,,,学生服,がくせいふく,,gakuseifuku,"uniform studencki
+mundurek szkolny",,,
+12107,WORD_NOUN,,HIRAGANA,,,学生運動,がくせいうんどう,,gakusei undou,ruch studencki,,,
+12108,WORD_NOUN,,HIRAGANA,,,親子,おやこ,,oyako,rodzic(e) i dziecko/dzieci,,,
+12109,WORD_VERB_IRREGULAR,,HIRAGANA,,,応用する,おうようする,,ouyou suru,"stosować
+praktykować",,,
+12110,WORD_NOUN,,HIRAGANA,,,応用問題,おうようもんだい,,ouyou mondai,ćwiczenia sprawdzające,w podręczniku,,
+12111,WORD_VERB_IRREGULAR,,HIRAGANA,,,理論を実際に応用する,りろんをじっさいにおうようする,,riron o jissai ni ouyou suru,stosować teorię w praktyce,,,
+12112,UNKNOWN,,HIRAGANA,,,全て,すべて,,subete,"całkiem
+całkowicie
+zupełnie
+całość
+cały
+każdy
+wszystko
+wszyscy",,,
+12113,WORD_NOUN,,HIRAGANA,,,今月の末,こんげつのすえ,,kongetsu no sue,koniec tego miesiąca,,,
+12114,WORD_NOUN,,HIRAGANA,,,末っ子,すえっこ,,suekko,najmłodsze dziecko w rodzinie,,,
+12115,WORD_NOUN,,HIRAGANA,,,末の娘,すえのむすめ,,sue no musume,najmłodsza córka w rodzinie,,,
+12116,UNKNOWN,,HIRAGANA,,,平均以下,へいきんいか,,heikin' ika,poniżej przeciętnej,,,
+12117,WORD_PARTICULE,,HIRAGANA,,,-,より,,yori,"niż
+od
+bardziej",,,8763
