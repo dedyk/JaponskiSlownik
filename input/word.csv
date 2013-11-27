@@ -863,7 +863,8 @@ Genki kanji 2-14",,切手,きって,,kitte,znaczek pocztowy,,,
 391,WORD_NOUN,,HIRAGANA,Genki 1-5,,切符,きっぷ,,kippu,bilet,,,
 392,WORD_NOUN,,KATAKANA,Genki 1-5,,-,サーフィン,,saafin,surfing,,,
 393,WORD_NOUN,,HIRAGANA,"Genki 1-5
-Genki kanji 2-18",,宿題,しゅくだい,,shukudai,praca domowa,,,
+Genki kanji 2-18",,宿題,しゅくだい,,shukudai,"praca domowa
+zadanie domowe",,,
 394,WORD_NOUN,,HIRAGANA,"Genki 1-5
 Genki kanji 1-5
 Genki kanji 2-13",,食べ物,たべもの,,tabemono,"jedzenie
@@ -923,7 +924,11 @@ Genki kanji 1-7",,小さい,ちいさい,,chiisai,"mały
 drobny
 niewielki
 młody",,,
-416,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,-,つまらない,,tsumaranai,nudny,,,
+416,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,-,つまらない,,tsumaranai,"nieinteresujący
+nudny
+nic nie znaczący
+błahy
+niewiele wart",,,
 417,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-5
 Genki kanji 1-9",,古い,ふるい,,furui,"stary
 antyczny
@@ -1313,7 +1318,8 @@ zwierzchnik","własna rodzina, formalnie, w dzisiejszym świecie raczej już nie
 550,WORD_NOUN,,HIRAGANA,Genki 1-7,,夫,おっと,,otto,mąż,"własna rodzina, formalnie",,
 551,WORD_NOUN,,HIRAGANA,"Genki 1-7
 Genki kanji 2-22",,家内,かない,,kanai,żona,"własna rodzina, formalnie, w dzisiejszym świecie raczej już nie używane",,
-552,WORD_NOUN,,HIRAGANA,Genki 1-7,,妻,つま,,tsuma,żona,"własna rodzina, formalnie",,
+552,WORD_NOUN,,HIRAGANA,Genki 1-7,,妻,つま,,tsuma,"żona
+małżonka","własna rodzina, formalnie",,
 553,WORD_NOUN,,HIRAGANA,Genki 1-7,,祖父,そふ,,sofu,dziadek,"własna rodzina, formalnie",,
 554,WORD_NOUN,,HIRAGANA,Genki 1-7,,祖母,そぼ,,sobo,"babcia
 babka","własna rodzina, formalnie",,
@@ -1882,7 +1888,7 @@ po ...
 po zakończeniu",zdarzenie no,,"2627
 6909"
 772,UNKNOWN,,HIRAGANA,Genki 1-10,,-,このごろ,,konogoro,ostatnimi czasami,,,
-773,UNKNOWN,,HIRAGANA,Genki 1-10,,週間,しゅうかん,,shuukan,tygodnie,przedział czasu,,
+773,UNKNOWN,SUFFIX,HIRAGANA,Genki 1-10,,週間,しゅうかん,,shuukan,tydzień,przedział czasu,,
 774,UNKNOWN,,HIRAGANA,Genki 1-10,,-,で,,de,czym,"partykuła, metoda transportu, czym",,
 775,WORD_ASK,,HIRAGANA,Genki 1-10,,-,どうやって,,douyatte,jak,,,
 776,WORD_ASK,,HIRAGANA,"Genki 1-10
@@ -2265,7 +2271,11 @@ Genki 2-13",,募集,ぼしゅう,,boshuu,rekrutacja,"~, szukanie ...",,
 933,UNKNOWN,,KATAKANA,Genki dodatkowe 1-11,,-,アウトドア,,autodoa,zajęcia na wolnym powietrzu,outdoor activities,,
 934,WORD_NOUN,,HIRAGANA,"Genki dodatkowe 1-11
 Genki kanji 2-15
-Genki 2-20",,趣味,しゅみ,,shumi,hobby,,,
+Genki 2-20",,趣味,しゅみ,,shumi,"hobby
+zainteresowanie
+pasja
+zamiłowanie
+gust",,,
 935,WORD_NOUN,,KATAKANA,Genki dodatkowe 1-11,,-,バンド,,bando,zespół,muzyczny,,
 936,WORD_NOUN,,HIRAGANA,"Genki dodatkowe 1-11
 Genki 2-19
@@ -4078,8 +4088,9 @@ gromadzić",np. w banku,,
 chodzić po górach",,,827
 1829,WORD_VERB_U,,HIRAGANA,,,友だちを作る,ともだちをつくる,,tomodachi o tsukuru,"zaprzyjaźnić się
 zdobyć przyjaciela",,,
-1830,UNKNOWN,,HIRAGANA,Genki kanji 2-20,,最も,もっとも,,mottomo,"najbardziej
-[III poziom stopniowania przymiotników]",,,
+1830,WORD_ADVERB,,HIRAGANA,Genki kanji 2-20,,最も,もっとも,,mottomo,"najbardziej
+naj-
+[III poziom stopniowania przymiotników]",,,12123
 1831,WORD_NOUN,,HIRAGANA,,,現金自動預け払い機,げんきんじどうあずけばらいき,,genkin jidou azuke baraiki,"bankomat
 ATM",,,
 1832,WORD_NOUN,,HIRAGANA,,,保険会社,ほけんがいしゃ,,hoken gaisha,firma ubezpieczeniowa,,,
@@ -5501,8 +5512,8 @@ krwiopijca",,,
 ponieść porażkę
 opuścić cenę",,,
 2519,WORD_NOUN,,HIRAGANA,,,患者,かんじゃ,,kanja,pacjent,,,
-2520,WORD_NOUN,,HIRAGANA,,,羽,はね,,hane,"skrzydła
-pióra",,,
+2520,WORD_NOUN,,HIRAGANA,,,羽,はね,,hane,"skrzydło
+pióro",,,
 2521,WORD_NOUN,,KATAKANA,,,-,ダンス,,dansu,taniec,,,
 2522,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ダンスを習う,ダンスをならう,,dansu o narau,nauka tańca,,,
 2523,WORD_ADJECTIVE_NA,,HIRAGANA,,,主,おも,,omo,"główny
@@ -7777,7 +7788,9 @@ przywołujący wspomnienia
 wspominany z nostalgią
 ukochany",,,
 3600,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,"Genki dodatkowe 2-19
-Genki 2-20",,-,それでは,,sore de wa,"no więc
+Genki 2-20",,-,それでは,,sorede wa,"no więc
+a więc
+a zatem
 jeśli tak
 w takim razie",tylko na początku zdania,,
 3601,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-19,,将棋,しょうぎ,,shougi,japońskie szachy,,,
@@ -9070,6 +9083,9 @@ zwracać uwagę",,,
 łagodność
 aktor (rzeczownik)",,,
 4266,WORD_VERB_RU,,HIRAGANA,,,優れる,すぐれる,,sugureru,"być lepszym
+być wspaniałym
+być świetnym
+mieć przewagę
 przewyższać",,,
 4267,WORD_VERB_U,,HIRAGANA,,,優る,まさる,,masaru,"być lepszym
 przewyższać",,,
@@ -9237,7 +9253,10 @@ konferencja",,,
 obracać się
 nadawać się
 pasować",,,
-4336,WORD_VERB_RU,,HIRAGANA,,,向ける,むける,,mukeru,skręcać,,,
+4336,WORD_VERB_RU,,HIRAGANA,,,向ける,むける,,mukeru,"zwracać
+kierować
+skierować
+skręcać",na dany punkt,,
 4337,WORD_VERB_U,,HIRAGANA,,,向かう,むかう,,mukau,"być zwróconym ku
 zwracać się
 stać twarzą do
@@ -10495,8 +10514,11 @@ fundusze",,,
 zasoby",,,
 4902,WORD_NOUN,,HIRAGANA,,,物資,ぶっし,,busshi,"towar
 materiał (surowy)",,,
-4903,WORD_NOUN,,HIRAGANA,,,資格,しかく,,shikaku,"kwalifikacje
-kompetencja",,,
+4903,WORD_NOUN,,HIRAGANA,,,資格,しかく,,shikaku,"status
+pozycja
+charakter
+kwalifikacje
+kompetencja (czynniki potrzebne do tego, aby osiągnąć pewien status lub stanowisko)",,,
 4904,WORD_NOUN,,HIRAGANA,,,列,れつ,,retsu,"rząd
 szereg
 ranga
@@ -12283,7 +12305,8 @@ patent",,,
 5722,WORD_NOUN,,HIRAGANA,,,宗,しゅう,,shuu,"religia
 sekta
 wyznanie",,,
-5723,WORD_NOUN,,HIRAGANA,,,宗教,しゅうきょう,,shuukyou,religia,,,
+5723,WORD_NOUN,,HIRAGANA,,,宗教,しゅうきょう,,shuukyou,"religia
+wiara",,,
 5724,WORD_NOUN,,HIRAGANA,,,改宗,かいしゅう,,kaishuu,"nawrócenie się
 przyjęcie religii",,,
 5725,WORD_NOUN,,HIRAGANA,,,宗徒,しゅうと,,shuuto,"wierzący
@@ -13764,12 +13787,14 @@ stosować",,,
 6372,WORD_NOUN,,HIRAGANA,,,二ヶ月,にかげつ,,nikagetsu,dwa miesiące,,,
 6373,WORD_NOUN,,HIRAGANA,,,三次元,さんじげん,,sanjigen,"trójwymiarowy
 trzy wymiary",,,
-6374,WORD_NOUN,,HIRAGANA,,,四角,しかく,,shikaku,kwadrat,,,
+6374,WORD_NOUN,,HIRAGANA,,,四角,しかく,,shikaku,"kwadrat
+czworokąt",,,12124
 6375,WORD_NOUN,,HIRAGANA,,,六大州,ろくだいしゅう,,rokudaishuu,sześć kontynentów,,,
 6376,WORD_NOUN,,HIRAGANA,,,六角,ろっかく,,rokkaku,"sześciobok
 heksagon",,,
 6377,WORD_NOUN,,HIRAGANA,,,六年生,ろくねんせい,,rokunensei,uczeń szóstej klasy,,,
-6378,WORD_VERB_U,,HIRAGANA,,,燃やす,もやす,,moyasu,palić,,,
+6378,WORD_VERB_U,,HIRAGANA,,,燃やす,もやす,,moyasu,"palić
+spalać",,,
 6379,WORD_VERB_RU,,HIRAGANA,,,燃える,もえる,,moeru,"płonąć
 palić się","np. pożar, a także z miłości, entuzjazmu i etc",,
 6380,WORD_NOUN,,HIRAGANA,,,燃料,ねんりょう,,nenryou,paliwo,,,
@@ -15582,8 +15607,13 @@ to nieuchronne",używane według wzoru: ~te shikata ga nai,,
 7295,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 2-22,,逃げる,にげる,,nigeru,"uciekać
 unikać
 wycofywać się",,,
-7296,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-22,,其れで,それで,,sorede,"więc
-dlatego",,,
+7296,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-22,,其れで,それで,,sorede,"przeto
+więc
+dlatego
+wobec tego
+i
+po czym
+skutkiem czego",,,
 7297,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-22,,二日間,ふつかかん,,futsukakan,przez dwa dni,,,
 7298,WORD_VERB_RU,,HIRAGANA,,,仕える,つかえる,,tsukaeru,służyć,,,
 7299,WORD_NOUN,,HIRAGANA,,,仕方,しかた,,shikata,"metoda
@@ -16115,8 +16145,10 @@ jeździć (na nartach)",,,
 7557,WORD_ADJECTIVE_NA,,HIRAGANA,,,滑らか,なめらか,,nameraka,"śliski
 gładki",,,
 7558,WORD_NOUN,,HIRAGANA,,,水道,すいどう,,suidou,"wodociąg
+instalacja wodociągowa
 akwedukt
-kanał",,,
+kanał
+droga wodna",,,
 7559,WORD_NOUN,,HIRAGANA,,,水槽,すいそう,,suisou,"cysterna
 pojemnik na wodę",,,
 7560,WORD_NOUN,,HIRAGANA,,,借り手,かりて,,karite,pożyczający,,,
@@ -19886,7 +19918,8 @@ oddział
 sekcja
 wydział",,,
 9395,WORD_ADJECTIVE_I,,HIRAGANA,,,四角い,しかくい ,,shikakui,"kwadratowy
-prostokątny",,,
+prostokątny
+czworokątny",,,
 9396,UNKNOWN,,HIRAGANA,,,昼過ぎ,ひるすぎ ,,hirusugi,popołudnie,,,
 9397,WORD_NOUN,,HIRAGANA,,,白内障,はくないしょう ,,hakunaishou,"katarakta
 zaćma",,,
@@ -25502,3 +25535,65 @@ wszyscy",,,
 12117,WORD_PARTICULE,,HIRAGANA,,,-,より,,yori,"niż
 od
 bardziej",,,8763
+12118,WORD_NOUN,,KATAKANA,,,-,ハンドバッグ,,handobaggu,torebka,damska,,
+12119,WORD_NOUN,,KATAKANA,,,-,ハンドル,,handoru,"klamka
+uchwyt drzwi
+kierownica
+koło sterowe",,,
+12120,WORD_NOUN,,HIRAGANA,,,羽根,はね,,hane,"pióro
+pierze
+puch",,,
+12121,WORD_NOUN,,HIRAGANA,,,羽根つき,はねつき,,hanetsuki,hanetsuki,tradycyjna japońska zabawa noworoczna,,
+12122,WORD_ADJECTIVE_NA,,HIRAGANA,,,尤も,もっとも,,mottomo,"naturalny
+rozsądny
+racjonalny",,,12123
+12123,WORD_CONJUNCTION,,HIRAGANA,,,-,もっとも,,mottomo,"jednak
+ale","używane wówczas, gdy po ogólnym stwierdzeniu następuje wyjątek",,"1830
+12122"
+12124,WORD_ADJECTIVE_NA,,HIRAGANA,,,四角,しかく,,shikaku,czworokątny,,,6374
+12125,WORD_NOUN,,HIRAGANA_KATAKANA,,,四角なテーブル,しかくなテーブル,,shikaku na teeburu,czworokątny stół,,,
+12126,WORD_NOUN,,HIRAGANA,,,真四角,ましかく,,mashikaku,kwadrat,,,
+12127,WORD_CONJUNCTION,,HIRAGANA,,,然も,しかも,,shikamo,"ponadto
+poza tym
+do tego jeszcze
+przy tym
+niemniej jednak
+pomimo to",,,
+12128,WORD_CONJUNCTION,,HIRAGANA,,,併も,しかも,,shikamo,"ponadto
+poza tym
+do tego jeszcze
+przy tym
+niemniej jednak
+pomimo to",,,
+12129,WORD_CONJUNCTION,,HIRAGANA,,,而も,しかも,,shikamo,"ponadto
+poza tym
+do tego jeszcze
+przy tym
+niemniej jednak
+pomimo to",,,
+12130,WORD_ADJECTIVE_NA,,HIRAGANA,,,主観的,しゅかんてき,,shukanteki,subiektywny,,,
+12131,WORD_EXPRESSION,,HIRAGANA,,,-,それじゃ,,soreja,to na razie,,,
+12132,WORD_VERB_IRREGULAR,,HIRAGANA,,,水泳する,すいえいする,,suiei suru,pływać,,,
+12133,WORD_NOUN,,HIRAGANA,,,水平,すいへい,,suihei,"poziom
+płaszczyzna",,,12134
+12134,WORD_ADJECTIVE_NA,,HIRAGANA,,,水平,すいへい,,suihei,"poziomy
+horyzontalny",,,12133
+12135,WORD_NOUN,,HIRAGANA,,,水平線,すいへいせん,,suiheisen,"horyzont
+linia horyzontu",,,
+12136,WORD_NOUN,,KATAKANA,,,-,スピード,,supiido,"prędkość
+szybkość",,,
+12137,WORD_VERB_U,,HIRAGANA_KATAKANA,,,スピードを出す,スピードをだす,,supiido o dasu,"przyspieszyć
+dodać gazu",,,
+12138,WORD_ADJECTIVE_I,,HIRAGANA,,,酸っぱい,すっぱい,,suppai,"kwaśny
+kwaskowaty
+cierpki",,,
+12139,WORD_NOUN,,KATAKANA,,,-,スープ,,suupu,"zupa
+rosół",,,
+12140,WORD_NOUN,,KATAKANA,,,-,スプーン,,supuun,"łyżka
+łyżeczka",,,
+12141,WORD_ADVERB,,HIRAGANA,,,詰まり,つまり,,tsumari,"słowem
+krótko mówiąc
+innymi słowy",,,
+12142,WORD_ADVERB,,HIRAGANA,,,詰り,つまり,,tsumari,"słowem
+krótko mówiąc
+innymi słowy",,,
