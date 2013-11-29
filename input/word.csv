@@ -626,7 +626,8 @@ Genki kanji 2-15",,お寺,おてら,,otera,świątynia,buddyjska,,
 288,WORD_NOUN,,HIRAGANA,"Genki 1-4
 Genki dodatkowe 1-11
 Genki kanji 1-7
-Genki kanji 1-12",,神社,じんじゃ,,jinja,świątynia,shintoistyczna,,
+Genki kanji 1-12",,神社,じんじゃ,,jinja,"świątynia
+chram",shintoistyczna,,
 289,WORD_NOUN,,HIRAGANA,Genki 1-4,,公園,こうえん,,kouen,"park
 ogród",publiczny,,
 290,WORD_NOUN,,KATAKANA,Genki 1-4,,-,スーパー,,suupaa,supermarket,,,
@@ -755,7 +756,7 @@ Genki kanji 1-4",,木曜日,もくようび,,mokuyoubi,czwartek,drzewo,,
 362,WORD_DAY_WEEK,,HIRAGANA,"Genki 1-4
 Genki kanji 1-4",,金曜日,きんようび,,kin'youbi,piątek,"pieniądze, złoto",,
 363,WORD_VERB_U,,HIRAGANA,Genki 1-4,と,会う,あう,to,au,"spotykać
-widzieć osobę","osoba to, spotkanie zaplanowane",,1362
+widzieć osobę","osoba to, spotkanie zaplanowane, kiedy mowa o osobie, której status jest wyższy od statusu mówiącego, wtedy lepiej jest używać bardziej uprzejmego zwrotu: ome ni kakaru",,1362
 364,WORD_VERB_U,,HIRAGANA,"Genki 1-4
 Genki kanji 1-11",が,有る,ある,ga,aru,"być
 istnieć
@@ -1117,7 +1118,9 @@ wyruszyć",,,
 479,WORD_VERB_U,,HIRAGANA,"Genki 1-6
 Genki kanji 1-12",を,使う,つかう,o,tsukau,"używać
 korzystać
-wydawać (pieniądze)",,,
+wydawać (pieniądze)
+stosować (coś)
+posługiwać się (czymś)",,,
 480,WORD_VERB_U,,HIRAGANA,Genki 1-6,を,手伝う,てつだう,o,tetsudau,"pomagać
 asystować
 wspierać",osoba/zadanie,,
@@ -1190,6 +1193,7 @@ Genki 1-9",,-,から,,kara,ponieważ,,,"441
 przyjemny
 miły
 dobry
+łagodny
 znakomity
 doskonały",,,
 498,WORD_ADVERB,,HIRAGANA,Genki 1-6,,-,すぐ,,sugu,"w tej chwili
@@ -1450,7 +1454,8 @@ mieć posadę",niefizycznie,,
 596,WORD_VERB_RU,,HIRAGANA,Genki 1-7,,-,やせる,,yaseru,tracić na wadze,,,
 597,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,,-,やせています,,yasete imasu,być chudym,,,
 598,WORD_VERB_IRREGULAR,,HIRAGANA,"Genki 1-7
-Genki kanji 2-17",を,結婚する,けっこんする,o,kekkon suru,żenić się,,,
+Genki kanji 2-17",を,結婚する,けっこんする,o,kekkon suru,"żenić się
+brać ślub",,,
 599,WORD_PARTICULE,,HIRAGANA,Genki 1-7,,-,が,,ga,"ale
 no i ...",używane w tym samym zdaniu,,"4697
 8129
@@ -2032,7 +2037,8 @@ robić
 działać
 funkcjonować",,,
 829,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-11,,仕事をする,しごとをする,,shigoto o suru,pracować,,,
-830,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,疲れる,つかれる,,tsukareru,"być zmęczony
+830,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,疲れる,つかれる,,tsukareru,"być zmęczonym
+być wyczerpanym
 zmęczyć się
 znużyć się",,,
 831,WORD_VERB_RU,,HIRAGANA,Genki 1-11,,辞める,やめる,,yameru,"rezygnować
@@ -2811,7 +2817,8 @@ cudzoziemiec",,,
 1180,WORD_NOUN,,HIRAGANA,Genki 2-15,,観光,かんこう,,kankou,"zwiedzanie
 turystyka",,,
 1181,WORD_NOUN,,HIRAGANA,Genki 2-15,,結婚式,けっこんしき,,kekkon shiki,"ślub
-małżeństwo",,,
+małżeństwo
+ceremonia ślubna",,,
 1182,WORD_NOUN,,HIRAGANA,"Genki 2-15
 Genki kanji 2-15",,地震,じしん,,jishin,"trzęsienie ziemi
 wstrząs",,,
@@ -3148,7 +3155,8 @@ Genki kanji 1-10",,北海道,ほっかいどう,,hokkaidou,Hokkaido,Jedna z japo
 1342,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,南東,なんとう,,nantou,południowy wschód,,,
 1343,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,南西,なんせい,,nansei,południowy zachód,,,7683
 1344,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,北西,ほくせい,,hokusei,północny zachód,,,
-1345,UNKNOWN,,HIRAGANA,Genki kanji 1-6,,人口,じんこう,,jinkou,populacja,,,
+1345,UNKNOWN,,HIRAGANA,Genki kanji 1-6,,人口,じんこう,,jinkou,"populacja
+ludność",,,
 1346,WORD_NOUN,,HIRAGANA,Genki kanji 1-6,,出口,でぐち,,deguchi,"wyjście
 wylot
 ujście",,,
@@ -4579,7 +4587,8 @@ uśmiechać się",,,
 2062,WORD_VERB_RU,,HIRAGANA_KATAKANA,Genki 2-16,,-,アイロンをかける,,airon o kakeru,prasować,,,
 2063,WORD_VERB_RU,,HIRAGANA,"Genki 2-16
 Genki kanji 2-17",,集める,あつめる,,atsumeru,"zbierać
-gromadzić",,,
+gromadzić
+kolekcjonować",,,
 2064,WORD_VERB_RU,,HIRAGANA,Genki 2-16,,乗り遅れる,のりおくれる,,nori okureru,"spóźnić się
 przegapić","np. pociąg, autobus i etc",,
 2065,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-16,,朝寝坊する,あさねぼうする,,asanebou suru,zaspać,,,
@@ -4875,7 +4884,8 @@ obcy",,,
 2185,WORD_NOUN,,KATAKANA,,,-,ヘッドフォン,,heddo fon,słuchawki,,,
 2186,WORD_NOUN,,KATAKANA,,,-,トラクター,,torakutaa,"traktor
 ciągnik rolniczy",,,
-2187,WORD_NOUN,,HIRAGANA,,,結婚,けっこん,,kekkon,"małżeństwo
+2187,WORD_NOUN,,HIRAGANA,,,結婚,けっこん,,kekkon,"ślub
+małżeństwo
 zamążpójście",,,
 2188,WORD_NOUN,,HIRAGANA,,,再婚,さいこん,,saikon,"ponowne małżeństwo
 drugie (powtórne) małżeństwo",,,
@@ -5345,6 +5355,7 @@ salutowanie",,,
 postępowanie
 postawa",,,
 2413,WORD_VERB_U,,HIRAGANA,,,集まる,あつまる,,atsumaru,"spotykać się
+gromadzić się
 zbierać się",,,
 2414,WORD_NOUN,,HIRAGANA,,,集中,しゅうちゅう,,shuuchuu,"koncentracja
 skupienie",,,
@@ -7124,7 +7135,7 @@ warunki",,,
 3283,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,目下の人,めしたのひと,,meshita no hito,człowiek niżej postawiony,,,
 3284,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 2-18,,現代的,げんだいてき,,gendaiteki,"współczesny
 nowoczesny",,,
-3285,UNKNOWN,,HIRAGANA,Genki kanji 2-18,,的,てき,,teki,postfiks tworzący na-przymiotniki od rzeczowników,,,3286
+3285,UNKNOWN,SUFFIX,HIRAGANA,Genki kanji 2-18,,的,てき,,teki,postfiks tworzący na-przymiotniki od rzeczowników,,,3286
 3286,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,的,まと,,mato,"cel
 znak
 punkt","fizyczny, np. cel tarczy",,3285
@@ -7164,7 +7175,8 @@ posada
 zajęcie
 praca",,,
 3302,WORD_NOUN,,KATAKANA_HIRAGANA,Genki kanji 2-18,,サービス業,サービスぎょう,,saabisu gyou,przemysł usługowy,,,
-3303,WORD_NOUN,,HIRAGANA,,,農業,のうぎょう,,nougyou,przemysł rolniczy,,,
+3303,WORD_NOUN,,HIRAGANA,,,農業,のうぎょう,,nougyou,"przemysł rolniczy
+rolnictwo",,,
 3304,WORD_NOUN,,HIRAGANA,Genki kanji 2-18,,入試,にゅうし,,nyuushi,egzamin wstępny,,,
 3305,WORD_NOUN,,HIRAGANA,,,就職,しゅうしょく,,shuushoku,"zatrudnienie
 znalezienie pracy
@@ -7665,7 +7677,9 @@ otwór (na wylot)",,,
 3538,WORD_NOUN,,HIRAGANA,,,義妹,ぎまい,,gimai,młodsza bratowa,,,
 3539,WORD_NOUN,,HIRAGANA,,,景勝地,けいしょうち,,keishouchi,miejsce ze wspaniałymi widokami,,,
 3540,WORD_NOUN,,HIRAGANA,,,景気,けいき,,keiki,sytuacja ekonomiczna,,,
-3541,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,検査,けんさ,,kensa,"badanie
+3541,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,検査,けんさ,,kensa,"sprawdzenie
+kontrola
+badanie
 dochodzenie
 inspekcja","np. stanu jakości, jedzenia, wody",,
 3542,WORD_NOUN,,HIRAGANA,,,検事,けんじ,,kenji,prokurator publiczny,,,
@@ -9526,7 +9540,8 @@ dzielić",,,
 4453,WORD_NOUN,,HIRAGANA,,,入場券,にゅうじょうけん,,nyuujou ken,"bilet wstępu
 wejściówka",,,
 4454,WORD_NOUN,,HIRAGANA,,,定期券,ていきけん,,teiki ken,"bilet okresowy
-bilet miesięczny",np. miesięczny autobusowy/kolejowy,,
+bilet miesięczny
+bilet sezonowy","np. miesięczny autobusowy/kolejowy, inne określenie: teiki",,
 4455,WORD_NOUN,,HIRAGANA,,,回数券,かいすうけん,,kaisuu ken,bilet na określoną ilość przejazdów,np. autobusem,,
 4456,WORD_NOUN,,HIRAGANA,,,旅券,りょけん,,ryoken,paszport,,,
 4457,WORD_NOUN,,HIRAGANA,,,旅券査証,りょけんさしょう,,ryoken sashou,wiza,,,
@@ -11877,6 +11892,7 @@ władza
 prawo
 uprawnienie",,,
 5509,WORD_NOUN,,HIRAGANA,,,権利,けんり,,kenri,"prawo
+prawa
 przywileje
 uprawnienie",,,
 5510,WORD_NOUN,,HIRAGANA,,,権限,けんげん,,kengen,"prawo
@@ -14776,7 +14792,9 @@ często",,,
 6873,WORD_NOUN,,HIRAGANA,,,孫,まご,,mago,"wnuk
 wnuczka",,,
 6874,WORD_NOUN,,HIRAGANA,,,子孫,しそん,,shison,"potomek
-potomstwo",,,
+potomstwo
+następca
+późniejsze pokolenie",,,
 6875,WORD_NOUN,,HIRAGANA,,,孫引き,まごびき,,magobiki,odwoływanie się do drugorzędnych źródeł,,,
 6876,WORD_NOUN,,HIRAGANA,,,俗,ぞく,,zoku,"zwyczaje
 maniery
@@ -15282,7 +15300,16 @@ uprzejmy",,,7130
 7133,WORD_ADJECTIVE_NA,,HIRAGANA,,,丁重,ていちょう,,teichou,"grzeczność
 uprzejmość",,,
 7134,WORD_ADJECTIVE_NA,,HIRAGANA,,,丁寧,ていねい,,teinei,"uprzejmość
-grzeczność",,,
+grzeczność
+grzeczny
+uprzejmy
+kurtuazyjny
+skrupulatny
+gruntowny
+sumienny
+uważny
+ostrożny
+staranny",,,
 7135,WORD_NOUN,,HIRAGANA,,,丁稚,でっち,,decchi,"terminator
 uczeń",,,
 7136,WORD_NOUN,,HIRAGANA,,,休止,きゅうし,,kyuushi,"przerwa
@@ -15851,7 +15878,8 @@ ogłoszenie
 zawiadomienie
 proklamacja",,,
 7391,WORD_ADJECTIVE_NA,,HIRAGANA,,,適当,てきとう,,tekitou,"odpowiedni
-stosowny",,,
+stosowny
+właściwy",,,
 7392,WORD_ADJECTIVE_NA,,HIRAGANA,,,適切,てきせつ,,tekisetsu,"stosowny
 adekwatny",,,
 7393,WORD_NOUN,,HIRAGANA,,,適応,てきおう,,tekiou,"adaptacja
@@ -16322,7 +16350,10 @@ wschód słońca",,,
 7614,WORD_NOUN,,HIRAGANA,,,寺院,じいん,,jiin,świątynia,,,
 7615,WORD_NOUN,,HIRAGANA,,,山寺,やまでら,,yamadera,świątynia górska,,,
 7616,WORD_NOUN,,HIRAGANA,,,寺社,じしゃ,,jisha,świątynie buddyjskie i sintoistyczne,,,
-7617,WORD_VERB_RU,,HIRAGANA,,,延びる,のびる,,nobiru,"rozciągać się
+7617,WORD_VERB_RU,,HIRAGANA,,,延びる,のびる,,nobiru,"być przełożonym
+być przesuniętym
+być przedłużonym
+rozciągać się
 przedłużać się
 przeciągać się",,,
 7618,WORD_VERB_U,,HIRAGANA,,,延ばす,のばす,,nobasu,"przekładać
@@ -16762,7 +16793,8 @@ hojny",,,
 stać się nieuważnym",,,
 7847,WORD_VERB_RU,,HIRAGANA,,,緩める,ゆるめる,,yurumeru,rozluźniać,,,
 7848,WORD_ADJECTIVE_NA,,HIRAGANA,,,緩やか,ゆるやか,,yuruyaka,łagodny,,,
-7849,WORD_VERB_U,,HIRAGANA,,,遭う,あう,,au,spotykać się,,,
+7849,WORD_VERB_U,,HIRAGANA,,,遭う,あう,,au,"napotkać
+ulec",,,
 7850,WORD_ADVERB,,HIRAGANA,,,甚だ,はなはだ,,hanahada,"dużo
 wiele
 wielce
@@ -17027,7 +17059,10 @@ odmęt",,,
 7947,WORD_NOUN,,HIRAGANA,,,匁,もんめ,,monme,monme,jednostka wagi ok. 3.75g,,
 7948,WORD_VERB_RU,,HIRAGANA,,,伸びる,のびる,,nobiru,"rozciągać się
 rozszerzać się
-wydłużać się",,,
+wydłużać się
+rosnąć
+rozwijać się (o zdolnościach)
+poprawiać się",,,
 7949,WORD_VERB_U,,HIRAGANA,,,伸ばす,のばす,,nobasu,"wydłużać
 przedłużać
 rozciągać
@@ -19527,7 +19562,8 @@ ranga
 9193,WORD_NOUN,,HIRAGANA,,,支出,ししゅつ ,,shishutsu,"wydatek
 koszt
 nakład
-rozchód",,,
+rozchód
+płatność",,,
 9194,WORD_NOUN,,HIRAGANA,,,植生,しょくせい ,,shokusei,"roślinność
 wegetacja",,,
 9195,WORD_NOUN,,HIRAGANA,,,欠片,かけら ,,kakera,"kawałek
@@ -20283,7 +20319,11 @@ wieża wartownicza",,,9558
 zakażenie
 zarażenie",,,
 9562,WORD_NOUN,,HIRAGANA,,,抵抗,ていこう ,,teikou,"odporność
-wytrzymałość",,,
+wytrzymałość
+opór
+sprzeciw
+przeciwstawienie się
+opozycja",,,
 9563,WORD_NOUN,,HIRAGANA,,,略号,りゃくごう ,,ryakugou,"kod
 znak
 symbol",,,
@@ -25738,3 +25778,52 @@ osoba działająca",,,
 12199,WORD_ADJECTIVE_NA,,HIRAGANA,,,勝手,かって,,katte,"samolubny
 egoistyczny
 samowolny",,,12198
+12200,WORD_VERB_RU,,HIRAGANA,,,お金を集める,おかねをあつめる,,okane o atsumeru,zbierać pieniądze,,,
+12201,WORD_NOUN,,HIRAGANA,,,人口調査,じんこうちょうさ,,jinkou chousa,spis ludności,,,
+12202,WORD_NOUN,,HIRAGANA,,,人口問題,じんこうもんだい,,jinkou mondai,problem populacji,,,
+12203,WORD_NOUN,,HIRAGANA,,,人生観,じんせいかん,,jinseikan,pogląd na życie,,,
+12204,WORD_NOUN,,HIRAGANA,,,人生相談,じんせいそうだん,,jinsei soudan,poradnictwo w sprawach życiowych,,,
+12205,WORD_VERB_U,,HIRAGANA,,,自信がつく,じしんがつく,,jishin ga tsuku,nabrać pewności siebie,,,
+12206,WORD_VERB_U,,HIRAGANA,,,自信を失う,じしんをうしなう,,jishin o ushinau,stracić pewność siebie,,,
+12207,WORD_NOUN,,HIRAGANA,,,結婚生活,けっこんせいかつ,,kekkon seikatsu,życie małżeńskie,,,
+12208,WORD_NOUN,,HIRAGANA,,,結婚届,けっこんとどけ,,kekkon todoke,akt ślubu,,,
+12209,WORD_NOUN,,HIRAGANA,,,国際結婚,こくさいけっこん,,kokusai kekkon,małżeństwo mieszane,między osobami różnych narodowości,,
+12210,WORD_VERB_IRREGULAR,,HIRAGANA,,,憲法を制定する,けんぽうをせいていする,,kenpou o seitei suru,uchwalić konstytucję,,,
+12211,WORD_VERB_IRREGULAR,,HIRAGANA,,,憲法を改正する,けんぽうをかいせいする,,kenpou o kaisei suru,"rewidować konstytucję
+wnosić poprawki do konstytucji",,,
+12212,WORD_VERB_IRREGULAR,,HIRAGANA,,,検査する,けんさする,,kensa suru,sprawdzać,,,
+12213,WORD_VERB_RU,,HIRAGANA,,,検査を受ける,けんさをうける,,kensa o ukeru,"poddać się badaniu
+poddać się kontroli",,,
+12214,WORD_NOUN,,HIRAGANA,,,身体検査,しんたいけんさ,,shintai kensa,kontrolne badanie lekarskie,,,
+12215,WORD_NOUN,,HIRAGANA,,,上り,のぼり,,nobori,"wchodzenie
+wznoszenie
+droga w górę",,,
+12216,WORD_NOUN,,HIRAGANA,,,上り列車,のぼりれっしゃ,,nobori ressha,pociąg,jadący z prowincji do Tokio lub innego centralnego miasta,,
+12217,WORD_NOUN,,HIRAGANA,,,農業高校,のうぎょうこうこう,,nougyou koukou,technikum rolnicze,,,
+12218,WORD_NOUN,,HIRAGANA,,,農業技術者,のうぎょうぎじゅつしゃ,,nougyou gijutsusha,"inżynier rolniczy
+agrotechnik",,,
+12219,WORD_NOUN,,HIRAGANA,,,野原,のはら,,nohara,"pole
+równina",,,
+12220,WORD_NOUN,,HIRAGANA,,,農家,のうか,,nouka,"dom mieszkalny rolnika
+dom w gospodarstwie rolnym
+rolnik
+farmer
+rodzina rolnicza",,,
+12221,WORD_NOUN,,HIRAGANA,,,姿勢,しせい ,,shisei,"poza
+pozycja
+postawa
+zachowanie się",,,
+12222,WORD_ADJECTIVE_I,,HIRAGANA,,,姿勢がいい,しせいがいい,,shisei ga ii,"mieć dobrą postawę
+trzymać się prosto",,,
+12223,WORD_ADJECTIVE_I,,HIRAGANA,,,姿勢が悪い,しせいがわるい,,shisei ga warui,mieć zła postawę,,,
+12224,WORD_VERB_IRREGULAR,,HIRAGANA,,,支出する,ししゅつする,,shishutsu suru,"wydać
+wydawać",,,
+12225,WORD_NOUN,,HIRAGANA,,,思想家,しそうか,,shisouka,myśliciel,,,
+12226,WORD_NOUN,,HIRAGANA,,,社会主義思想,しゃかいしゅぎしそう,,shakaishugi shisou,"myśl socjalistyczna
+idee socjalistyczne",,,
+12227,WORD_VERB_IRREGULAR,,HIRAGANA,,,抵抗する,ていこうする,,teikou suru,stawiać opór,,,
+12228,WORD_VERB_RU,,HIRAGANA,,,抵抗を受ける,ていこうをうける,,teikou o ukeru,natrafić na opór,,,
+12229,WORD_NOUN,,HIRAGANA,,,停留所,ていりゅうじょ,,teiryuujo,"stacja
+przystanek",,,
+12230,WORD_VERB_U,,HIRAGANA,,,敵と戦う,てきとたたかう,,teki to tatakau,walczyć z nieprzyjacielem,,,
+12231,WORD_VERB_U,,HIRAGANA,,,敵を追う,てきをおう,,teki o ou,ścigać wroga,,,
