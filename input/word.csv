@@ -131,7 +131,8 @@ poranek
 ranek
 am",czas,,
 76,UNKNOWN,,HIRAGANA,Genki 1-1,,歳,さい,,sai,... lat,,,
-77,UNKNOWN,,HIRAGANA,Genki 1-1,,-,さん,,san,... Pan,,,"4
+77,UNKNOWN,,HIRAGANA,Genki 1-1,,-,さん,,san,"... Pan
+... Pani",,,"4
 4754
 6341
 8019
@@ -296,7 +297,8 @@ Genki kanji 1-10
 Genki kanji 2-15",,自転車,じてんしゃ,,jitensha,rower,,,
 151,WORD_NOUN,,HIRAGANA,"Genki 1-2
 Genki kanji 1-8",,新聞,しんぶん,,shinbun,gazeta,,,
-152,WORD_NOUN,,KATAKANA,Genki 1-2,,-,テープ,,teepu,kaseta,,,
+152,WORD_NOUN,,KATAKANA,Genki 1-2,,-,テープ,,teepu,"kaseta
+taśma magnetofonowa",,,
 153,WORD_NOUN,,HIRAGANA,"Genki 1-2
 Genki kanji 1-3
 Genki kanji 2-21",,時計,とけい,,tokei,zegarek,,,
@@ -879,7 +881,8 @@ Genki kanji 2-13",,食べ物,たべもの,,tabemono,"jedzenie
 395,WORD_NOUN,,HIRAGANA,Genki 1-5,,誕生日,たんじょうび,,tanjoubi,urodziny,,,
 396,WORD_NOUN,,KATAKANA,Genki 1-5,,-,テスト,,tesuto,test,,,
 397,WORD_NOUN,,HIRAGANA,"Genki 1-5
-Genki kanji 1-5",,天気,てんき,,tenki,pogoda,,,
+Genki kanji 1-5",,天気,てんき,,tenki,"pogoda
+ładna pogoda",,,
 398,WORD_NOUN,,HIRAGANA,"Genki 1-5
 Genki kanji 1-5",,飲み物,のみもの,,nomimono,"picie
 napój",,,
@@ -921,7 +924,8 @@ przerażający
 bojaźliwy
 być przerażonym
 bać się",,,
-413,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,寒い,さむい,,samui,zimna,pogoda,,
+413,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,寒い,さむい,,samui,"zimna
+chłodna",pogoda,,
 414,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-5
 Genki kanji 2-14",,楽しい,たのしい,,tanoshii,"zabawny
 wesoły
@@ -1352,6 +1356,8 @@ Genki kanji 2-21",,兄妹,きょうだい,,kyoudai,rodzeństwo,,,
 blok mieszkalny",,,
 561,WORD_NOUN,,HIRAGANA,"Genki 1-7
 Genki kanji 1-11",,歌,うた,,uta,"piosenka
+pieśń
+śpiew
 wiersz",,,
 562,WORD_NOUN,,HIRAGANA,"Genki 1-7
 Genki kanji 1-5",,男の人,おとこのひと,,otoko no hito,mężczyzna,,,
@@ -3028,7 +3034,7 @@ zamazany
 nieprzejrzysty
 zamglony (np. obraz)",,,
 1257,WORD_NOUN,,HIRAGANA,,,前髪,まえがみ,,maegami,grzywka,,,
-1258,WORD_EXPRESSION,,HIRAGANA,,,-,まま,,mama,"stan taki, jaki jest",~ no,,8472
+1258,WORD_EXPRESSION,,HIRAGANA,,,-,まま,,mama,"stan taki, jaki jest","~ no, przeważnie czasownik przed mama występuje w formie czasu przeszłego",,8472
 1259,WORD_EXPRESSION,,HIRAGANA,,,今のまま,いまのまま,,ima no mama,"stan taki, jaki jest dzisiaj",,,
 1260,WORD_VERB_U,,HIRAGANA,,,励ます,はげます,,hagemasu,"zachęcać kogoś
 podnosić na duchu
@@ -3426,7 +3432,13 @@ wysilać się",,,
 pracowity",,,
 1448,WORD_ADJECTIVE_I,,HIRAGANA,"Genki kanji 1-11
 Genki 2-17",,強い,つよい,,tsuyoi,"silny
-mocny",,,
+mocny
+potężny
+intensywny
+wytrzymały
+mocny (w czymś)
+dobry (w jakiejś dziedzinie)
+odporny",,,
 1449,WORD_ADJECTIVE_NA,,HIRAGANA,Genki kanji 1-11,,強情,ごうじょう,,goujou,"konserwatywny
 uparty
 zatwardziały",,,
@@ -4482,7 +4494,9 @@ biurowiec",,,
 1997,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-15,,戦争,せんそう,,sensou,wojna,,,
 1998,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-15,,-,ホームレス,,hoomuresu,bezdomny,,,
 1999,WORD_NOUN,,KATAKANA,,,-,アルプス,,arupusu,Alpy,,,
-2000,WORD_NOUN,,HIRAGANA,Genki 2-19,,お礼,おれい,,orei,"podziękowanie
+2000,WORD_NOUN,,HIRAGANA,Genki 2-19,,お礼,おれい,,orei,"ukłon
+pozdrowienie
+podziękowanie
 wyraz wdzięczności",,,
 2001,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,折れる,おれる,,oreru,"łamać się
 zginać się
@@ -5611,7 +5625,9 @@ bardzo czerwony
 głęboka czerwień",,,
 2546,UNKNOWN,,HIRAGANA,,,真黒,まっくろ,,makkuro,"prawdziwie czarny
 bardzo czarny
-głęboka czerń",,,
+głęboka czerń
+całkiem czarny
+kruczoczarny",,,
 2547,UNKNOWN,,HIRAGANA,,,真青,まっさお,,massao,"prawdziwie niebieski
 intensywnie niebieski
 bardzo niebieski
@@ -5655,9 +5671,10 @@ udoskonalić
 ulepszyć",,,
 2568,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-17,,-,このような,,konoyouna,"jak tak
 taki",,,
-2569,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-17,,展覧会,てんらんかい,,tenrankai,wystawa artystyczna,,,
+2569,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-17,,展覧会,てんらんかい,,tenrankai,"wystawa artystyczna
+pokaz",,,
 2570,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-17,,天井,てんじょう,,tenjou,"sufit
-pułap
+strop
 szczyt (cen)",,,
 2571,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-17,,-,のための,,no tame no,dla,~ ... X,,
 2572,UNKNOWN,,HIRAGANA_KATAKANA,Genki dodatkowe 2-17,,大ヒット,だいひっと,,dai hitto,wielki hit,"np. film, muzyka i etc",,
@@ -6483,7 +6500,9 @@ wydać (na świat)",,,
 2946,WORD_NOUN,,HIRAGANA,,,産,うぶ,,ubu,narodziny,,,
 2947,WORD_NOUN,,HIRAGANA,,,出産,しゅっさん,,shussan,"poród
 rozwiązanie",,,
-2948,WORD_NOUN,,HIRAGANA,,,産物,さんぶつ,,sanbutsu,produkt,,,
+2948,WORD_NOUN,,HIRAGANA,,,産物,さんぶつ,,sanbutsu,"produkt
+produkty
+płody (rolne)",,,
 2949,WORD_NOUN,,HIRAGANA,,,生産,せいさん,,seisan,"produkcja
 manufaktura",,,
 2950,WORD_NOUN,,HIRAGANA,,,不動産,ふどうさん,,fudousan,nieruchomość,,,
@@ -7868,6 +7887,7 @@ projekt",,,
 3610,WORD_VERB_U,,HIRAGANA,,,覚ます,さます,,samasu,"budzić
 trzeźwieć",,,
 3611,WORD_VERB_RU,,HIRAGANA,,,覚める,さめる,,sameru,"budzić się
+wstawać
 trzeźwieć",,,
 3612,WORD_VERB_U,,HIRAGANA,,,覚る,さとる,,satoru,"zrozumieć
 pojąć",,,
@@ -8618,7 +8638,7 @@ albo",,,
 zwijać
 zawijać
 pakować
-pokrywać",,,
+okrywać",,,
 4001,WORD_NOUN,,HIRAGANA,,,包み紙,つつみがみ,,tsutsumi gami,papier do pakowania,,,
 4002,WORD_NOUN,,HIRAGANA,,,包装,ほうそう,,housou,"pakowanie
 owijanie",,,
@@ -11207,7 +11227,7 @@ część",,,
 5162,WORD_NOUN,,HIRAGANA,,,敬意,けいい,,keii,respekt,,,
 5163,WORD_NOUN,,HIRAGANA,,,敬老,けいろう,,keirou,poważanie starszych,,,
 5164,WORD_NOUN,,HIRAGANA,,,敬遠,けいえん,,keien,trzymanie odpowiedniego dystansu,wyrażającego respekt,,
-5165,WORD_NOUN,,HIRAGANA,,,天皇,てんのう,,tennou,cesarz,,,
+5165,WORD_NOUN,,HIRAGANA,,,天皇,てんのう,,tennou,cesarz,japoński,,
 5166,WORD_NOUN,,HIRAGANA,,,皇居,こうきょ,,koukyo,pałac cesarski,,,
 5167,WORD_NOUN,,HIRAGANA,,,皇位,こうい,,koui,tron cesarski,,,
 5168,WORD_NOUN,,HIRAGANA,,,教皇,きょうこう,,kyoukou,papież,,,
@@ -11691,7 +11711,10 @@ zobowiązanie",,,
 5378,WORD_NOUN,,HIRAGANA,,,責務,せきむ,,sekimu,obowiązek,,,
 5379,WORD_NOUN,,HIRAGANA,,,責苦,せめく,,semeku,tortury,,,
 5380,WORD_NOUN,,HIRAGANA,,,責め道具,せめどうぐ,,semedougu,narzędzia tortur,,,
-5381,WORD_VERB_U,,HIRAGANA,,,打つ,うつ,,utsu,uderzać,,,
+5381,WORD_VERB_U,,HIRAGANA,,,打つ,うつ,,utsu,"uderzać
+bić
+stukać
+walić",,,
 5382,WORD_NOUN,,HIRAGANA,,,打楽器,だがっき,,dagakki,instrumenty perkusyjne,,,
 5383,WORD_ADJECTIVE_NA,,HIRAGANA,,,打算的,ださんてき,,dasanteki,"wyrachowany
 egoistyczny",,,
@@ -11900,7 +11923,9 @@ luksus",,,
 awans",,,
 5496,WORD_NOUN,,HIRAGANA,,,栄転,えいてん,,eiten,promocja,,,
 5497,WORD_VERB_RU,,HIRAGANA,,,努める,つとめる,,tsutomeru,"wysilać się
-starać się ze wszystkich sił",,,
+starać się ze wszystkich sił
+dołożyć wysiłku
+usiłować",,,
 5498,WORD_NOUN,,HIRAGANA,,,努力家,どりょくか,,doryokuka,człowiek ciężko pracujący,,,
 5499,WORD_NOUN,,HIRAGANA,,,協力者,きょうりょくしゃ,,kyouryokusha,współpracownik,,,
 5500,WORD_NOUN,,HIRAGANA,,,協同,きょうどう,,kyoudou,"partnerstwo
@@ -12897,7 +12922,9 @@ kryształ",,,
 5948,WORD_NOUN,,HIRAGANA,,,砲,ほう,,hou,"armata
 działo",,,
 5949,WORD_VERB_U,,HIRAGANA,,,疑う,うたがう,,utagau,"wątpić
+powątpiewać
 podejrzewać
+nie wierzyć
 nie ufać",,,
 5950,WORD_NOUN,,HIRAGANA,,,疑問,ぎもん,,gimon,"wątpliwość
 problem
@@ -13263,7 +13290,11 @@ lamentować
 opłakiwać",nad czymś,,
 6092,WORD_VERB_U,,HIRAGANA,,,蒔く,まく,,maku,"siać
 sadzić
-obsiewać",,,
+obsiewać
+wysiewać ziarno
+rozsypywać
+zraszać
+rozpryskiwać",,,
 6093,WORD_NOUN,,HIRAGANA,,,痴,ち,,chi,"głupi
 wariat
 zboczony seksualnie",,,
@@ -14593,6 +14624,7 @@ wolny czas
 harmonia",,,"387
 12274"
 6754,WORD_VERB_U,,HIRAGANA,Genki 2-22,,間に合う,まにあう,,ma ni au,"zdążyć na czas
+zdążyć
 mieścić się w czasie
 wystarczać",,,
 6755,WORD_ADVERB,,HIRAGANA,,,間も無く,まもなく,,mamonaku,"wkrótce
@@ -15397,7 +15429,8 @@ opadać
 zniżać się
 cofać się
 wycofywać się",,,
-7151,WORD_VERB_U,,HIRAGANA,,,下る,くだる,,kudaru,zejść na dół,,,
+7151,WORD_VERB_U,,HIRAGANA,,,下る,くだる,,kudaru,"zejść na dół
+schodzić w dół",,,
 7152,WORD_NOUN,,HIRAGANA,,,下水,げすい,,gesui,kanały ściekowe,,,
 7153,WORD_ADJECTIVE_NA,,HIRAGANA,,,下手,しもて,,shimote,"słaby w
 łamaga
@@ -16500,7 +16533,9 @@ lewica",,,
 lewicowa partia",,,
 7664,WORD_VERB_U,,HIRAGANA,,,行く,ゆく,,yuku,iść,,,"242
 243"
-7665,WORD_NOUN,,HIRAGANA,,,行,ぎょう,,gyou,linia,w tekście,,
+7665,WORD_NOUN,SUFFIX,HIRAGANA,,,行,ぎょう,,gyou,"linia
+linijka
+wiersz (pismo, druk)",w tekście,,
 7666,WORD_VERB_U,,HIRAGANA,,,行う,おこなう,,okonau,"robić
 czynić
 wykonywać",,,
@@ -17097,7 +17132,9 @@ ciąć",,,
 7939,WORD_VERB_RU,,HIRAGANA,,,縮れる,ちぢれる,,chidireru,marszczyć się,,,
 7940,WORD_NOUN,,HIRAGANA,,,肺,はい,,hai,płuca,,,90
 7941,WORD_NOUN,,HIRAGANA,,,豆,まめ,,mame,"fasola
-ziarno grochu",,,
+groch
+ziarno grochu
+soja",,,
 7942,WORD_VERB_U,,HIRAGANA,,,逸らす,そらす,,sorasu,"wypuszczać
 przepuszczać
 opuszczać
@@ -25739,7 +25776,8 @@ innymi słowy",,,
 12143,WORD_VERB_IRREGULAR,,HIRAGANA,,,配達する,はいたつする,,haitatsu suru,"roznosić
 doręczać",,,
 12144,WORD_NOUN,,HIRAGANA,,,牛乳配達,ぎゅうにゅうはいたつ,,gyuunyuu haitatsu,"doręczanie mleka
-doręczyciel mleka",,,
+doręczyciel mleka
+roznoszenie mleka",,,
 12145,WORD_NOUN,,HIRAGANA,,,新聞配達,しんぶんはいたつ,,shinbun haitatsu,"doręczanie gazet
 doręczyciel gazet",,,
 12146,WORD_VERB_RU,,HIRAGANA,,,髭が伸びる,ひげがのびる,,hige ga nobiru,"broda rośnie
@@ -25996,3 +26034,45 @@ potrawy francuskie",,,
 popularność",,,
 12298,WORD_VERB_IRREGULAR,,HIRAGANA,,,流行する,りゅうこうする,,ryuukou suru,"być modnym
 szerzyć się",,,
+12299,WORD_VERB_U,,HIRAGANA,,,客を招く,きゃくをまねく,,kyaku o maneku,zapraszać gościa,,,
+12300,WORD_VERB_RU,,HIRAGANA,,,真似る,まねる,,maneru,"naśladować
+imitować",,,
+12301,WORD_NOUN,,HIRAGANA,,,手ぬぐい,てぬぐい,,tenugui,"ręcznik (płócienny)
+ściereczka (do rąk)",,,
+12302,WORD_NOUN,,KATAKANA,,,-,テープレコーダー,,teepu rekoodaa,magnetofon,,,
+12303,WORD_NOUN,,KATAKANA,,,-,カセットテープ,,kasetto teepu,"taśma magnetofonowa
+kaseta magnetofonowa",,,
+12304,WORD_VERB_IRREGULAR,,HIRAGANA,,,通訳する,つうやくする,,tsuuyaku suru,"tłumaczyć
+przekładać",,,
+12305,WORD_NOUN,,HIRAGANA,,,同時通訳,どうじつうやく,,douji tsuuyaku,tłumaczenie symultaniczne,,,
+12306,WORD_NOUN,,HIRAGANA,,,強い雨,つよいあめ,,tsuyoi ame,"silny deszcz
+ulewny deszcz",,,
+12307,WORD_NOUN,,HIRAGANA,,,行事,ぎょうじ,,gyouji,"święto
+impreza",,,
+12308,WORD_NOUN,,HIRAGANA,,,牛乳瓶,ぎゅうにゅうびん,,gyuunyuubin,butelka na mleko,,,
+12309,WORD_NOUN,,HIRAGANA,,,牛乳屋,ぎゅうにゅうや,,gyuunyuuya,"mleczarnia
+mleczarz",,,
+12310,WORD_VERB_RU,,HIRAGANA,,,戦争に負ける,せんそうにまける,,sensou ni makeru,przegrać wojnę,,,
+12311,WORD_VERB_RU,,HIRAGANA,,,敵に負ける,てきにまける,,teki ni makeru,"być pobitym przez wroga
+być pobitym przez przeciwnika",,,
+12312,WORD_ADJECTIVE_NA,,HIRAGANA,,,真っ赤,まっか,,makka,"purpurowy
+szkarłatny
+intensywnie czerwony",,,
+12313,WORD_NOUN,,HIRAGANA,,,真っ赤な太陽,まっかなたいよう,,makka na taiyou,purpurowe słońce,,,
+12314,WORD_NOUN,,HIRAGANA,,,真っ赤な口紅,まっかなくちべに,,makka na kuchibeni,intensywnie czerwona szminka,,,
+12315,WORD_NOUN,,HIRAGANA,,,口紅,くちべに,,kuchibeni,szminka,,,
+12316,WORD_ADJECTIVE_NA,,HIRAGANA,,,真っ暗,まっくら,,makkura,"bardzo ciemno
+zupełnie ciemno",,,
+12317,UNKNOWN,SUFFIX,HIRAGANA,,,-,らしい,,rashii,wyglądający jak,,,
+12318,WORD_NOUN,,HIRAGANA,,,男らしい顔,おとこらしいかお,,otokorashii kao,"twarz wyglądający na męską
+męska twarz",,,
+12319,WORD_NOUN,,HIRAGANA,,,女らしい態度,おんならしいたいど,,onnarashii taido,"kobieca postawa
+kobiecy sposób bycia
+kobiece zachowanie",,,
+12320,WORD_NOUN,,HIRAGANA,,,お医者さん,おいしゃさん,,oisha san,pan doktor,,,
+12321,WORD_NOUN,,KATAKANA,,,-,キャタピラー,,kyatapiraa,"gąsienica
+nieskończony tor
+ciągły tor",,,
+12322,WORD_NOUN,,KATAKANA,,,-,ビキニ,,bikini,"bikini
+wyspy bikini",,,
+12323,WORD_FEMALE_NAME,,KATAKANA,,,-,アネタ,,aneta,Aneta,polskie imię,,
