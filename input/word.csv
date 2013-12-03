@@ -1063,7 +1063,10 @@ Genki kanji 2-19",,漢字,かんじ,,kanji,kanji,,,
 Genki kanji 2-16",,教科書,きょうかしょ,,kyoukasho,podręcznik,,,
 461,WORD_NOUN,,HIRAGANA,Genki 1-6,,市民病院,しみんびょういん,,shiminbyouin,szpital miejski,,,
 462,WORD_NOUN,,HIRAGANA,"Genki 1-6
-Genki kanji 1-8",,次,つぎ,,tsugi,następny,,,"11480
+Genki kanji 1-8",,次,つぎ,,tsugi,"następny
+następstwo
+następny raz
+kolejny",,,"11480
 11483"
 463,WORD_NOUN,,KATAKANA,Genki 1-6,,-,テレビゲーム,,terebi geemu,gra telewizyjna,,,
 464,WORD_NOUN,,HIRAGANA,"Genki 1-6
@@ -1071,7 +1074,9 @@ Genki kanji 1-5
 Genki kanji 1-8",,電気,でんき,,denki,"elektryczność
 prąd
 światło",,,
-465,WORD_NOUN,,HIRAGANA,Genki 1-6,,荷物,にもつ,,nimotsu,bagaż,,,
+465,WORD_NOUN,,HIRAGANA,Genki 1-6,,荷物,にもつ,,nimotsu,"bagaż
+paczka
+ładunek",,,
 466,WORD_NOUN,SUFFIX,KATAKANA,"Genki 1-6
 Genki 1-11",,-,ページ,,peeji,strona,,,
 467,WORD_NOUN,,HIRAGANA,Genki 1-6,,窓,まど,,mado,"okno
@@ -1093,6 +1098,7 @@ niezliczony
 olbrzymi
 doniosły",,,
 470,WORD_VERB_U,,HIRAGANA,Genki 1-6,,遊ぶ,あそぶ,,asobu,"bawić się
+zabawiać się
 grać
 miło spędzać czas",,,
 471,WORD_VERB_U,,HIRAGANA,"Genki 1-6
@@ -1478,7 +1484,7 @@ no i ...",używane w tym samym zdaniu,,"4697
 9588"
 600,WORD_EXPRESSION,,HIRAGANA,"Genki 1-7
 Genki 1-8",,何も,なにも,,nanimo,nic,nani [partykuła] mo + czasownik w formie negatywnej,,
-601,UNKNOWN,,HIRAGANA,Genki 1-7,,人,にん,,nin,ludzi,liczenie,,"79
+601,WORD_COUNTERS,,HIRAGANA,Genki 1-7,,人,にん,,nin,[klasyfikator do liczeniu ludzi],,,"79
 286"
 602,UNKNOWN,,HIRAGANA,"Genki 1-7
 Genki kanji 1-12",,別に,べつに,,betsu ni,"nieszczególnie
@@ -2608,7 +2614,9 @@ Genki kanji 1-6",,一生に一度,いっしょうにいちど,,isshou ni ichido,
 1044,UNKNOWN,,HIRAGANA,"Genki dodatkowe 2-13
 Genki 2-17",,-,やっぱり,,yappari,"mimo wszystko
 mimo to",,,
-1045,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-13,,満員電車,まんいんでんしゃ,,man'in densha,pociąg pełen ludzi,,,
+1045,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-13,,満員電車,まんいんでんしゃ,,man'in densha,"pociąg pełen ludzi
+pełny pociąg
+zatłoczony pociąg",,,
 1046,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-13,,第一印象,だいいちんしょう,,dai ichinshou,pierwsze wrażenie,,,
 1047,WORD_VERB_U,,HIRAGANA,"Genki dodatkowe 2-13
 Genki 2-17",,込む,こむ,,komu,"tłoczyć się
@@ -3123,6 +3131,9 @@ miesiąc",,,11521
 Genki 2-22",,木,き,,ki,"drzewo
 drewno",,,
 1307,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,土,つち,,tsuchi,"ziemia
+gleba
+grunt
+rola
 klepisko",,,
 1308,WORD_NOUN,,HIRAGANA,"Genki kanji 1-4
 Genki kanji 2-16",,屋上,おくじょう,,okujou,dach,,,
@@ -3296,7 +3307,9 @@ godzina",okres,,355
 1393,UNKNOWN,,HIRAGANA,"Genki kanji 1-9
 Genki dodatkowe 2-23",,人間,にんげん,,ningen,"człowiek
 istota ludzka
-śmiertelnik",,,
+śmiertelnik
+osobowość
+charakter",,,
 1394,UNKNOWN,,HIRAGANA,Genki kanji 1-9,,一週間,いしゅうかん,,ishuukan,jeden tydzień,,,
 1395,WORD_NOUN,,HIRAGANA,"Genki kanji 1-9
 Genki 2-19",,話,はなし,,hanashi,"rozmowa
@@ -5104,7 +5117,9 @@ kopiować
 duplikować
 reprodukować",,,
 2272,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,真ん中,まんなか,,mannaka,"środek
-centrum",,,
+centrum
+sam środek
+połowa",,,
 2273,UNKNOWN,,HIRAGANA,Genki kanji 2-17,,の真上,のまうえ,,no maue,powyżej,~,,
 2274,UNKNOWN,,HIRAGANA,Genki kanji 2-17,,真夜中,まよなか,,mayonaka,"północ
 środek nocy",środek nocy,,
@@ -5818,7 +5833,8 @@ zepsuć
 psuć
 rozbić
 łamać",,,
-2642,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,閉まる,しまる,ga,shimaru,zamykać się,,,
+2642,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,閉まる,しまる,ga,shimaru,"zamykać się
+zamknąć się",,,
 2643,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-18,が,助かる,たすかる,ga,tasukaru,"przetrwać
 uzyskać pomoc
 być uratowany",,,
@@ -6457,7 +6473,8 @@ piękna kobieta",,,
 2930,WORD_NOUN,,HIRAGANA,,,美化,びか,,bika,upiększenie,,,
 2931,WORD_NOUN,,HIRAGANA,,,島民,とうみん,,toumin,ludność wyspiarska,,,
 2932,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,無人島,むじんとう,,mujintou,bezludna wyspa,,,
-2933,WORD_NOUN,,HIRAGANA,,,島国,しまぐに,,shimaguni,państwo wyspiarskie,,,
+2933,WORD_NOUN,,HIRAGANA,,,島国,しまぐに,,shimaguni,"państwo wyspiarskie
+kraj wyspiarski",,,
 2934,WORD_NOUN,,HIRAGANA,,,信仰,しんこう,,shinkou,wiara,religijna,,
 2935,WORD_NOUN,,HIRAGANA,,,信用,しんよう,,shin'you,"ufność
 zaufanie
@@ -6695,7 +6712,9 @@ mata","np. w pociągu, w teatrze",,"888
 3031,UNKNOWN,,HIRAGANA,,,難い,かたい,,katai,"trudny
 ciężki",,,
 3032,WORD_ADJECTIVE_NA,,HIRAGANA,,,困難,こんなん,,konnan,"trudność
-kłopot",,,
+kłopot
+kłopotliwy
+męczący",,,
 3033,WORD_NOUN,,HIRAGANA,,,難民,なんみん,,nanmin,"uciekinierzy
 uchodźcy",,,
 3034,WORD_NOUN,,HIRAGANA,,,非難,ひなん,,hinan,"ostra krytyka
@@ -9484,7 +9503,9 @@ realizować",,,
 wypełniać się
 realizować się",,,
 4399,WORD_ADJECTIVE_NA,,HIRAGANA,,,満足,まんぞく,,manzoku,"zaspokojenie
-satysfakcja",,,
+satysfakcja
+zadowolenie
+zadowalający",,,
 4400,WORD_NOUN,,HIRAGANA,,,満席,まんせき,,manseki,"wszystkie miejsca zajęte
 brak wolnych miejsc",,,
 4401,WORD_NOUN,,HIRAGANA,,,満月,まんげつ,,mangetsu,pełnia księżyca,,,
@@ -10151,9 +10172,12 @@ skład",,,
 4692,WORD_NOUN,,HIRAGANA,,,倉敷料,くらしきりょう,,kurashikiryou,opłata za magazynowanie,,,
 4693,WORD_ADJECTIVE_NA,,HIRAGANA,,,倉皇,そうこう,,soukou,pośpiech,,,
 4694,WORD_NOUN,,HIRAGANA,,,倉主,くらぬし,,kuranushi,właściciel magazynu,,,
-4695,WORD_VERB_U,,HIRAGANA,,,敷く,しく,,shiku,"rozprzestrzeniać
-wykładać
-kłaść",,,
+4695,WORD_VERB_U,,HIRAGANA,,,敷く,しく,,shiku,"rozłożyć
+rozesłać (na równej przestrzeni, np. dywan, materac, żwir)
+rozciągnąć
+kłaść
+pociągnąć (tory)
+ułożyć (szyny kolejowe)",,,
 4696,WORD_NOUN,,HIRAGANA,,,尼,あま,,ama,"zakonnica
 siostra",,,
 4697,WORD_NOUN,,HIRAGANA,,,賀,が,,ga,gratulacje,,,599
@@ -12509,6 +12533,7 @@ wspierać się na",,,
 5768,WORD_NOUN,,HIRAGANA,,,基礎,きそ,,kiso,"fundament
 podstawa",,,
 5769,WORD_NOUN,,HIRAGANA,,,基本,きほん,,kihon,"podstawa
+baza
 standard
 fundament",,,
 5770,WORD_NOUN,,HIRAGANA,,,基地,きち,,kichi,baza,wojskowa,,
@@ -13176,7 +13201,8 @@ dołożyć wszelkich starań",,,
 kończyć się",,,
 6046,WORD_VERB_U,,HIRAGANA,,,尽かす,つかす,,tsukasu,"wyczerpywać
 zużywać",,,
-6047,WORD_VERB_U,,HIRAGANA,,,亡くなる,なくなる,,nakunaru,umierać,,,
+6047,WORD_VERB_U,,HIRAGANA,,,亡くなる,なくなる,,nakunaru,"umierać
+odchodzić","honoryfikatywny odpowiednik czasownika shinu, używany wyłącznie w odniesieniu do ludzi",,
 6048,WORD_VERB_U,,HIRAGANA,,,亡くする,なくする,,nakusuru,gubić,,,
 6049,WORD_ADJECTIVE_I,,HIRAGANA,,,亡い,ない,,nai,"zmarły
 martwy
@@ -13226,8 +13252,7 @@ dźwigar
 belka",,,
 6064,WORD_VERB_U,,HIRAGANA,,,吊る,つる,,tsuru,"zawiesić
 powiesić",,,
-6065,WORD_NOUN,,HIRAGANA,,,脚,あし,,ashi,"noga
-stopa",,,
+6065,WORD_NOUN,,HIRAGANA,,,脚,あし,,ashi,noga,mebla itp.,,
 6066,WORD_NOUN,,HIRAGANA,,,傍ら,かたわら,,katawara,"strona
 pobliże
 chwila",,,
@@ -14314,7 +14339,7 @@ samochód transportowy",,,
 6591,WORD_NOUN,,HIRAGANA,,,漢方,かんぽう,,kanpou,chińska sztuka medyczna,,,
 6592,WORD_NOUN,,HIRAGANA,,,漢和,かんわ,,kanwa,Chiny i Japonia,,,
 6593,WORD_NOUN,,HIRAGANA,,,田,た,,ta,"pole ryżowe
-plantacja ryżu",,,
+plantacja ryżu",nawodnione,,
 6594,WORD_NOUN,,HIRAGANA,,,田作り,たづくり,,tadukuri,uprawa pola ryżowego,,,
 6595,WORD_NOUN,,HIRAGANA,,,田園,でんえん,,den'en,"pola i ogrody
 okręg wiejski",,,
@@ -14512,7 +14537,7 @@ nawóz",,,
 akcja
 obligacja",,,
 6708,WORD_NOUN,,HIRAGANA,,,株式市場,かぶしきしじょう,,kabushikishijou,rynek papierów wartościowych,,,
-6709,WORD_NOUN,,HIRAGANA,,,株式会社,かぶしきがいしゃ,,kabushikigaisha,spółka akcyjna,,,
+6709,WORD_NOUN,,HIRAGANA,,,株式会社,かぶしきがいしゃ,,kabushiki gaisha,spółka akcyjna,,,
 6710,WORD_NOUN,,HIRAGANA,,,株主,かぶぬし,,kabunushi,"posiadacz (właściciel) udziału
 akcjonariusz
 udziałowiec",,,
@@ -15784,8 +15809,10 @@ praca
 uczynek",,,
 7303,WORD_NOUN,,HIRAGANA,,,会員,かいいん,,kaiin,członek,np. klubu,,
 7304,WORD_NOUN,,HIRAGANA,,,員数,いんずう,,inzuu,liczba członków,,,
-7305,WORD_NOUN,,HIRAGANA,,,満員,まんいん,,man'in,"pełno
-brak wolny miejsce",np. w autobusie,,
+7305,WORD_NOUN,,HIRAGANA,,,満員,まんいん,,man'in,"pełen ludzi
+pełno
+brak wolny miejsce
+bez wolnych miejsc",np. w autobusie,,
 7306,WORD_NOUN,,HIRAGANA,,,牧,まき,,maki,pastwisko,,,
 7307,WORD_NOUN,,HIRAGANA,,,牧場,ぼくじょう,,bokujou,"pastwisko
 łąka",,,
@@ -15841,8 +15868,11 @@ młodzieniec",,,
 obora",,,
 7331,WORD_NOUN,,HIRAGANA,,,野牛,やぎゅう,,yagyuu,bizon,,,
 7332,WORD_VERB_U,,HIRAGANA,,,鳴く,なく,,naku,"śpiewać
+bzyczeć
+miauczeć
 ryczeć
 wyć
+szczekać
 głos zwierząt
 głos ptaków",,,
 7333,WORD_VERB_U,,HIRAGANA,,,鳴らす,ならす,,narasu,"dzwonić
@@ -16017,9 +16047,9 @@ cały czas
 bez przerwy
 bardzo często
 bezustannie",,,
-7418,WORD_NOUN,,HIRAGANA,,,始末,しまつ,,shimatsu,"okoliczności
-zarządzanie
-posługiwanie się",,,
+7418,WORD_NOUN,,HIRAGANA,,,始末,しまつ,,shimatsu,"sytuacja
+stan rzeczy
+porządek",,,
 7419,WORD_NOUN,,HIRAGANA,,,学界,がっかい,,gakkai,"świat akademicki
 świat nauki",,,
 7420,WORD_NOUN,,HIRAGANA,,,下界,げかい,,gekai,ten świat,,,
@@ -23896,7 +23926,8 @@ puszka",,,
 11138,WORD_NOUN,,HIRAGANA,,,怪我,けが,,kega,rana,,,
 11139,WORD_VERB_IRREGULAR,,HIRAGANA,,,怪我する,けがする,,kega suru,zranić się,,,
 11140,WORD_NOUN,,HIRAGANA,,,怪我人,けがにん,,keganin,"ranny człowiek
-raniony człowiek",,,
+raniony człowiek
+poszkodowany",,,
 11141,WORD_NOUN,,HIRAGANA,,,大怪我,おおけが,,ookega,"wielka rana
 poważna rana",,,
 11142,WORD_NOUN,,HIRAGANA,,,文科系,ぶんかけい,,bunkakei,absolwent nauk humanistycznych,,,
@@ -26075,3 +26106,33 @@ pojazd gąsienicowy",,,
 12322,WORD_NOUN,,KATAKANA,,,-,ビキニ,,bikini,"bikini
 wyspy bikini",,,
 12323,WORD_FEMALE_NAME,,KATAKANA,,,-,アネタ,,aneta,Aneta,polskie imię,,
+12324,WORD_EXPRESSION,,HIRAGANA,,,-,なければならない,,nakereba naranai,"trzeba
+musieć",inna forma: nakute wa naranai,,
+12325,WORD_EXPRESSION,,HIRAGANA,,,-,なくてわならない,,nakute wa naranai,"trzeba
+musieć",inna forma: nakereba naranai,,
+12326,WORD_NOUN,,HIRAGANA,,,保証人,ほしょうにん,,hoshounin,gwarant,,,
+12327,WORD_VERB_IRREGULAR,,HIRAGANA,,,始末する,しまつする,,shimatsu suru,"postąpić (z kimś)
+potraktować
+zaprowadzić (ład)
+oznaczyć (ramy, zakres)
+załatwiać
+zrobić wszystko (jak należy)",,,
+12328,WORD_NOUN,,HIRAGANA,,,通知,つうち,,tsuuchi,"zawiadomienie
+obwieszczenie
+ogłoszenie
+wiadomość",,,
+12329,WORD_VERB_IRREGULAR,,HIRAGANA,,,通知する,つうちする,,tsuuchi suru,"zawiadomić
+ogłosić
+zakomunikować",,,
+12330,WORD_NOUN,,HIRAGANA,,,回教国,かいきょうこく,,kaikyou koku,kraje muzułmańskie,,,
+12331,WORD_NOUN,,HIRAGANA,,,回教徒,かいきょうと,,kaikyouto,mahometanin,,,
+12332,WORD_NOUN,,HIRAGANA,,,基本的人権,きほんてきじんけん,,kihonteki jinken,podstawowe prawa człowieka,,,
+12333,WORD_NOUN,,HIRAGANA,,,黄色,きいろ,,kiiro,"żółć
+żółty kolor",,,
+12334,WORD_NOUN,,HIRAGANA,,,新聞記事,しんぶんきじ,,shinbun kiji,artykuł w gazecie,,,
+12335,WORD_NOUN,,HIRAGANA,,,生地,きじ,,kiji,"materiał
+tkanina",,,
+12336,WORD_ADVERB,,HIRAGANA,,,-,こんなに,,konna ni,"tak
+w taki sposób","wskazuje stan, stopień, ilość rzeczy uznanych za bliskie mówiącemu, czasami używane także w celu podkreślenia, wzmocnienia",,
+12337,WORD_NOUN,,HIRAGANA,,,万年筆,まんねんひつ,,mannenhitsu,wieczne pióro,,,
+12338,WORD_VERB_IRREGULAR,,HIRAGANA,,,満足する,まんぞくする,,manzoku suru,być zadowolonym,,,
