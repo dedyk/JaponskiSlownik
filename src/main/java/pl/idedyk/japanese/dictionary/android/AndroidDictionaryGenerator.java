@@ -10,12 +10,10 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -305,6 +303,7 @@ public class AndroidDictionaryGenerator {
 		}
 
 		// generate additional top 2500 kanji
+		/*
 		Iterator<String> readKanjiDic2KeySetIterator = readKanjiDic2.keySet().iterator();
 
 		while (readKanjiDic2KeySetIterator.hasNext()) {
@@ -340,10 +339,12 @@ public class AndroidDictionaryGenerator {
 
 			kanjiCountMap.put(readKanjiDic2KeySetIteratorCurrentKanji, kanjiCountMapInteger);
 		}
+		*/
 
 		// top 2500 end
 
 		// generate common word additional kanji
+		/*
 		Collection<EDictEntry> jmedictCommonValues = jmedictCommon.values();
 		Iterator<EDictEntry> jmedictCommonValuesIterator = jmedictCommonValues.iterator();
 
@@ -392,7 +393,7 @@ public class AndroidDictionaryGenerator {
 				}
 			}
 		}
-
+		*/
 		// generate common word additional kanji end
 
 		String[] kanjiArray = new String[kanjiCountMap.size()];
