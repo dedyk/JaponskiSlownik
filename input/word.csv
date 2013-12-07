@@ -76,8 +76,8 @@ Genki kanji 1-3",,十歳,じゅっさい,,jussai,dziesięć lat,wiek,,
 47,WORD_AGE,,HIRAGANA,"Genki 1-1
 Genki kanji 2-17",,二十歳,はたち,,hatachi,dwadzieścia lat,wiek,,
 48,WORD_GREETING,,HIRAGANA,Genki 1-1,,お早う御座います,おはようございます,,ohayou gozaimasu,dzień dobry,rano (grzecznie),,
-49,WORD_GREETING,,HIRAGANA_EXCEPTION,Genki 1-1,,-,こんにちは,,konnichiwa,dzień dobry,po południu,,
-50,WORD_GREETING,,HIRAGANA_EXCEPTION,Genki 1-1,,-,こんばんは,,konbanwa,dobry wieczór,,,
+49,WORD_GREETING,,HIRAGANA_EXCEPTION,Genki 1-1,,-,こんにちは,,konnichi wa,dzień dobry,po południu,,
+50,WORD_GREETING,,HIRAGANA_EXCEPTION,Genki 1-1,,今晩は,こんばんは,,konban wa,dobry wieczór,,,
 51,WORD_GREETING,,HIRAGANA,Genki 1-1,,-,さようなら,,sayounara,do widzenia,,,
 52,WORD_GREETING,,HIRAGANA,Genki 1-1,,お休みなさい,おやすみなさい,,oyasumi nasai,dobranoc,,,
 53,WORD_GREETING,,HIRAGANA,Genki 1-1,,有難う,ありがとう,,arigatou,dziękuję,,,
@@ -208,7 +208,14 @@ nauki humanistyczne",,,
 dzieje",,,
 110,WORD_NOUN,,HIRAGANA,"Genki 1-1
 Genki 1-8
-Genki kanji 1-8",,仕事,しごと,,shigoto,praca,,,
+Genki kanji 1-8",,仕事,しごと,,shigoto,"praca
+zajęcie
+zatrudnienie
+zawód
+posada
+zadanie
+obowiązki
+przedsięwzięcie",,,
 111,WORD_NOUN,,HIRAGANA,"Genki 1-1
 Genki 1-10
 Genki kanji 2-14",,医者,いしゃ,,isha,lekarz,,,
@@ -1572,7 +1579,9 @@ atmosfera",,,
 626,UNKNOWN,,HIRAGANA,"Genki 1-8
 Genki kanji 1-10",,今朝,けさ,,kesa,"dzisiejszy poranek
 dziś rano",,,
-627,UNKNOWN,,HIRAGANA,Genki 1-8,,今月,こんげつ,,kongetsu,aktualny miesiąc,,,
+627,UNKNOWN,,HIRAGANA,Genki 1-8,,今月,こんげつ,,kongetsu,"aktualny miesiąc
+obecny miesiąc
+ten miesiąc",,,
 628,WORD_NOUN,,KATAKANA,Genki 1-8,,-,ディスコ,,disuko,disco,,,
 629,WORD_NOUN,,HIRAGANA,Genki 1-8,,天気予報,てんきよほう,,tenkiyohou,prognoza pogody,,,
 630,WORD_NOUN,,HIRAGANA,Genki 1-8,,所,ところ,,tokoro,"miejsce
@@ -1717,9 +1726,15 @@ proch",,,
 683,WORD_NOUN,,KATAKANA,Genki 1-9,,-,コンセート,,konseeto,koncert,,,
 684,UNKNOWN,,HIRAGANA,"Genki 1-9
 Genki kanji 1-12",,今度,こんど,,kondo,"następnym razem
-tym razem
+następny raz
 niedługo
-w najbliższej przyszłości",,,
+wkrótce
+w najbliższej przyszłości
+ten
+teraz
+tym razem
+ostatnio
+niedawno",,,
 685,WORD_NOUN,,HIRAGANA,"Genki 1-9
 Genki kanji 1-7
 Genki kanji 1-8",,作文,さくぶん,,sakubun,"wypracowanie
@@ -1782,7 +1797,10 @@ być opublikowanym",,,"704
 Genki 2-18
 Genki kanji 1-6",を,出る,でる,o,deru,wychodzić z,,,"703
 3054"
-705,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-9,,運動する,うんどうする,,undou suru,ćwiczyć,fizyczne,,
+705,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 1-9,,運動する,うんどうする,,undou suru,"ruszać się
+ćwiczyć
+trenować
+uprawiać sport",fizyczne,,
 706,WORD_VERB_IRREGULAR,,HIRAGANA,"Genki 1-9
 Genki kanji 2-17",を,散歩する,さんぽする,o,sanpo suru,spacerować,~ o miejsce,,
 707,UNKNOWN,,HIRAGANA,Genki 1-9,,是非,ぜひ,,zehi,"koniecznie
@@ -4296,8 +4314,14 @@ kuchenka
 piec
 grzejnik
 podgrzewacz",,,
-1868,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運動,うんどう,,undou,"ćwiczenia
-ruch",fizyczne/y,,
+1868,WORD_NOUN,,HIRAGANA,Genki kanji 2-16,,運動,うんどう,,undou,"ruch
+poruszanie się
+ćwiczenia
+trening
+sport
+ruch
+kampania
+akcja",fizyczne/y,,
 1869,WORD_ADJECTIVE_I,,HIRAGANA,,,騒がしい,さわがしい,,sawagashii,"głośny
 hałaśliwy",,,
 1870,WORD_VERB_U,,HIRAGANA,,,騒ぐ,さわぐ,,sawagu,"zachowywać się głośno
@@ -5792,7 +5816,8 @@ lupa",,,
 mąż opiekujący się domem",,,
 2576,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 2-17,,縦で撃たれる,じゅうでうたれる,,juude utareru,być postrzelony,,,
 2577,WORD_NOUN,,HIRAGANA,,,生徒,せいと,,seito,"uczeń
-uczennica","szkoły podstawowej
+uczennica
+student","szkoły podstawowej
 gimnazjum",,
 2578,WORD_NOUN,,HIRAGANA,,,男性生徒,だんせいせいと,,dansei seito,uczeń,płci męskiej,,
 2579,WORD_NOUN,,HIRAGANA,,,女性生徒,じょせいせいと,,josei seito,uczennica,,,
@@ -6336,7 +6361,7 @@ zobowiązanie",,,
 2820,WORD_NOUN,,HIRAGANA,,,契約,けいやく,,keiyaku,"kontrakt
 umowa
 przymierze",,,
-2821,WORD_NOUN,,HIRAGANA,,,新約聖書,しんやくせいしょ,,shin'yakuseisho,Nowy Testament,,,
+2821,WORD_NOUN,,HIRAGANA,,,新約聖書,しんやくせいしょ,,shin'yaku seisho,Nowy Testament,,,
 2822,WORD_NOUN,,HIRAGANA,,,公約,こうやく,,kouyaku,"zaangażowanie
 poświęcenie się
 oddanie się",sprawie,,
@@ -9888,7 +9913,7 @@ staroświecki",,,
 przywracanie do pierwotnego stanu",,,
 4515,WORD_NOUN,,HIRAGANA,,,旧悪,きゅうあく,,kyuuaku,"przeszłe przekroczenie
 poprzednie przekroczenie",,,
-4516,WORD_NOUN,,HIRAGANA,,,旧約聖書,きゅうやくせいしょ,,kyuuyakuseisho,Stary Testament,,,
+4516,WORD_NOUN,,HIRAGANA,,,旧約聖書,きゅうやくせいしょ,,kyuuyaku seisho,Stary Testament,,,
 4517,WORD_NOUN,,HIRAGANA,,,街,がい,,gai,"ulica
 centrum (miasta)",,,
 4518,WORD_NOUN,,HIRAGANA,,,派,は,,ha,"grupa
@@ -10745,8 +10770,9 @@ fundusz
 pieniądze",,,
 4900,WORD_NOUN,,HIRAGANA,,,資金,しきん,,shikin,"kapitał
 fundusze",,,
-4901,WORD_NOUN,,HIRAGANA,,,資源,しげん,,shigen,"środki
-zasoby",,,
+4901,WORD_NOUN,,HIRAGANA,,,資源,しげん,,shigen,"zasoby
+bogactwa
+środki",,,
 4902,WORD_NOUN,,HIRAGANA,,,物資,ぶっし,,busshi,"towar
 materiał (surowy)",,,
 4903,WORD_NOUN,,HIRAGANA,,,資格,しかく,,shikaku,"status
@@ -17385,7 +17411,11 @@ finansować",,,
 być opóźnionym
 być pozostawionym w niedokończonym stanie",,,
 7961,WORD_VERB_U,,HIRAGANA,,,茂る,しげる,,shigeru,"rosnąć gęsto
-rosnąć bujnie",,,
+rosnąć bujnie
+rosnąć obficie
+być bujnym
+być wybujałym
+być obfitym",,,
 7962,WORD_NOUN,,HIRAGANA,,,朱,しゅ,,shu,"cynober
 wermut",,,7963
 7963,WORD_NOUN,,HIRAGANA,,,朱,あか,,aka,"szkarłatny
@@ -26540,3 +26570,31 @@ higiena publiczna",,,
 12461,WORD_NOUN,,HIRAGANA,,,紀元前三世紀,きげんぜんさんせいき,,kigenzen sanseiki,III wiek p.n.e,,,
 12462,WORD_NOUN,,HIRAGANA,,,二十世紀,にじっせいき,,nijisseiki,XX wiek,,,
 12463,WORD_VERB_IRREGULAR,,HIRAGANA,,,成功する,せいこうする,,seikou suru,odnosić sukces,,,
+12464,WORD_NOUN,,HIRAGANA,,,性質,せいしつ,,seishitsu,"natura
+temperament
+skłonność
+jakość
+własność
+właściwość
+cecha",,,
+12465,WORD_NOUN,,HIRAGANA,,,小学校の生徒,しょうがっこうのせいと,,shougakkou no seito,uczeń szkoły podstawowej,,,
+12466,WORD_NOUN,,HIRAGANA,,,天然資源,てんねんしげん,,tennen shigen,bogactwa naturalne,,,
+12467,WORD_NOUN,,HIRAGANA,,,石油資源,せきゆしげん,,sekiyu shigen,zasoby ropy naftowej,,,
+12468,WORD_ADVERB,,HIRAGANA,,,-,そんなに,,sonna ni,"tak
+tak bardzo
+tak wiele
+tyle
+nie bardzo
+nie tak",,,
+12469,WORD_VERB_U,,HIRAGANA,,,頷く,うなずく,,unazuku,"kiwać głową
+skinąć głową",,,
+12470,WORD_VERB_U,,HIRAGANA,,,肯く,うなずく,,unazuku,"kiwać głową
+skinąć głową",,,
+12471,WORD_VERB_U,,HIRAGANA,,,首肯く,うなずく,,unazuku,"kiwać głową
+skinąć głową",,,
+12472,WORD_NOUN,,HIRAGANA,,,運動会,うんどうかい,,undoukai,zawody sportowe,,,
+12473,WORD_NOUN,,HIRAGANA,,,運動選手,うんどうせんしゅ,,undou senshu,"zawodnik
+sportowiec
+atleta",,,
+12474,WORD_NOUN,,HIRAGANA,,,選挙運動,せんきょうんどう,,senkyo undou,"kampania przed wyborcza
+akcja przed wyborcza",,,
