@@ -568,7 +568,14 @@ prawidłowy",zwykle pisane przy pomocy kany,,6686
 256,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-3
 Genki kanji 1-12",,早い,はやい,,hayai,"wczesny
 przedwczesny",,,
-257,WORD_ADVERB,,HIRAGANA,Genki 1-3,,-,あまり,,amari,niewiele,+ czasownik w formie negatywnej,,
+257,WORD_ADVERB,,HIRAGANA,Genki 1-3,,-,あまり,,amari,"niewiele (czasownik w formie negatywnej)
+niezbyt (czasownik w formie negatywnej)
+zbyt
+bardzo
+za bardzo
+tak bardzo
+zbytnio
+nazbyt (używane z formami twierdzącymi)",odmiana anmari,,12515
 258,WORD_ADVERB,,HIRAGANA,Genki 1-3,,全然,ぜんぜん,,zenzen,"wcale
 w ogóle (nie)
 całkowicie
@@ -921,8 +928,12 @@ służący",używane przez mężczyzn,,3934
 404,WORD_NOUN,,HIRAGANA,"Genki 1-5
 Genki kanji 1-8",,休み,やすみ,,yasumi,"wakacje
 odpoczynek
+przerwa
+pauza
 urlop
-ferie",,,
+ferie
+święta
+czas wolny",,,
 405,WORD_NOUN,,HIRAGANA,"Genki 1-5
 Genki kanji 1-11",,旅行,りょこう,,ryokou,"podróż
 wyjazd",,,
@@ -1196,7 +1207,10 @@ mieć
 posiadać",,,
 483,WORD_VERB_U,,HIRAGANA,Genki 1-6,を,休む,やすむ,o,yasumu,być nieobecnym,,,484
 484,WORD_VERB_U,,HIRAGANA,"Genki 1-6
-Genki kanji 1-8",,休む,やすむ,,yasumu,odpoczywać,,,483
+Genki kanji 1-8",,休む,やすむ,,yasumu,"odpoczywać
+odpocząć
+przerwać
+zrobić sobie przerwę",,,483
 485,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,"Genki 1-6
 Genki 2-18
 Genki kanji 2-16",を,開ける,あける,o,akeru,otwierać,,,7810
@@ -1229,7 +1243,8 @@ przydzielić
 zapisać
 dopisać",,,"2954
 8152"
-491,WORD_VERB_RU,,HIRAGANA,Genki 1-6,,電話をかける,でんわをかける,,denwa o kakeru,dzwonić,osoba ni,,
+491,WORD_VERB_RU,,HIRAGANA,Genki 1-6,,電話をかける,でんわをかける,,denwa o kakeru,"dzwonić
+zatelefonować",osoba ni,,
 492,WORD_VERB_RU,,HIRAGANA,"Genki 1-6
 Genki kanji 2-22",を,忘れる,わすれる,o,wasureru,"zapomnieć
 zapominać",,,
@@ -1903,7 +1918,8 @@ Genki kanji 2-15",,地下鉄,ちかてつ,,chikatetsu,"metro
 kolej podziemna",,,
 744,WORD_NOUN,,HIRAGANA,Genki 1-10,,手袋,てぶくろ,,tebukuro,"rękawiczki
 rękawica",,,
-745,WORD_NOUN,,HIRAGANA,Genki 1-10,,床や,とこや,,tokoya,fryzjer,męski,,
+745,WORD_NOUN,,HIRAGANA,Genki 1-10,,床屋,とこや,,tokoya,"fryzjer
+zakład fryzjerski",męski,,
 746,WORD_NOUN,,HIRAGANA,"Genki 1-10
 Genki kanji 2-19",,春,はる,,haru,wiosna,,,8566
 747,WORD_NOUN,,KATAKANA,Genki 1-10,,-,パンツ,,pantsu,majtki,,,
@@ -3355,7 +3371,8 @@ przedstawienie
 kompozycja
 produkt",,,
 1374,WORD_NOUN,,HIRAGANA,"Genki kanji 1-8
-Genki 2-21",,事,こと,,koto,rzecz,,,2153
+Genki 2-21",,事,こと,,koto,"rzecz
+sprawa",,,2153
 1375,WORD_NOUN,,HIRAGANA,Genki kanji 1-8,,火事,かじ,,kaji,"ogień
 pożar",,,
 1376,WORD_NOUN,,HIRAGANA,"Genki kanji 1-8
@@ -3587,7 +3604,9 @@ następujące po sobie święta
 następujące po sobie wolne dni",święta jedno po drugim,,
 1467,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki kanji 1-12
 Genki kanji 2-13",,特別,とくべつ,,tokubetsu,"specjalny
-wyjątkowy",,,
+wyjątkowy
+szczególny
+niezwykły",,,
 1468,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,差別,さべつ,,sabetsu,dyskryminacja,,,
 1469,UNKNOWN,,HIRAGANA,Genki kanji 1-12,,別々に,べつべつに,,betsu betsu ni,"oddzielnie
 osobno",,,
@@ -3677,7 +3696,8 @@ niebiosa
 nieboskłon",,,"7791
 7792
 8738"
-1501,WORD_VERB_U,,HIRAGANA,Genki kanji 2-13,,空く,あく,,aku,"być wolnym
+1501,WORD_VERB_U,,HIRAGANA,Genki kanji 2-13,,空く,あく,,aku,"być pustym
+być wolnym
 mieć czas
 być na wakacjach",,,11515
 1502,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,神戸港,こうべこう,,koube kou,port w Kobe,,,
@@ -4040,7 +4060,8 @@ komputer",,,
 1702,WORD_NOUN,,KATAKANA,,,-,ブーケ,,buuke,bukiet kwiatów,,,
 1703,WORD_NOUN,,HIRAGANA,,,花束,はなたば,,hanataba,bukiet kwiatów,dosł. wiązka kwiatów,,
 1704,WORD_NOUN,,HIRAGANA,"Genki kanji 2-15
-Genki dodatkowe 2-15",,建物,たてもの,,tatemono,budynek,,,
+Genki dodatkowe 2-15",,建物,たてもの,,tatemono,"budynek
+dom",,,
 1705,WORD_EXPRESSION,,HIRAGANA,,,建物ができました,たてものができました,,tatemono ga dekimashita,budynek został zbudowany,dosł. zaistniał,,
 1706,WORD_EXPRESSION,,HIRAGANA,,,友だちができました,ともだちができました,,tomodachi ga dekimashita,zdobyłem przyjaciela,dosł. zaistniał,,
 1707,WORD_EXPRESSION,,HIRAGANA,,,料理ができました,りょうりができました,,ryouri ga dekimashita,potrawa została przygotowana,dosł. zaistniała,,
@@ -4650,7 +4671,7 @@ stracić
 zniżać
 obniżać",,,
 2013,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-15,,落とされました,おとされました,,otosaremashita,została zrzucona,,,
-2014,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-15,,平和記念資料館,へいわきねんしりょうかん,,heiwakinenshiryoukan,Muzeum Pamięci i Pokoju,,,
+2014,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-15,,平和記念資料館,へいわきねんしりょうかん,,heiwa kinenshi ryoukan,Muzeum Pamięci i Pokoju,,,
 2015,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-15,,鹿,しか,,shika,jeleń,,,11203
 2016,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-15,,鯨,くじら,,kujira,wieloryb,,,
 2017,WORD_NOUN,,HIRAGANA_KATAKANA,Genki dodatkowe 2-15,,トロッコ列車,トロッコれっしゃ,,torokko ressha,mały pociąg,zwykle dla turystów,,
@@ -7793,13 +7814,19 @@ organizacja",,,
 przywódca grupy",,,
 3494,WORD_NOUN,,HIRAGANA,,,団結,だんけつ,,danketsu,"jedność
 solidarność",,,
-3495,WORD_NOUN,,HIRAGANA,,,宗教団体,しゅうきょうだんたい,,shuukyou dantai,grupa religijna,,,
+3495,WORD_NOUN,,HIRAGANA,,,宗教団体,しゅうきょうだんたい,,shuukyou dantai,"grupa religijna
+zgromadzenie religijne",,,
 3496,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,流れる,ながれる,,nagareru,"płynąć
 zostać zniesionym (przez wodę)
+spływać
+ciec
 wędrować
 płynąć (o czasie)",,,
 3497,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,流す,ながす,,nagasu,"polewać
 spłukiwać
+lać
+puszczać na wodę
+spławiać
 spuszczać (wodę)",,,
 3498,WORD_NOUN,,HIRAGANA,,,電流,でんりゅう,,denryuu,prąd elektryczny,,,
 3499,WORD_NOUN,,HIRAGANA,,,流刑,りゅうけい,,ryuukei,"deportacja
@@ -8963,7 +8990,8 @@ procent",,,
 4068,UNKNOWN,,HIRAGANA,,,故,こ,,ko,zmarły,,,4069
 4069,UNKNOWN,,HIRAGANA,,,故,ゆえ,,yue,"przyczyna
 okoliczność",,,4068
-4070,WORD_NOUN,,HIRAGANA,,,交通事故,こうつうじこ,,koutsuujiko,wypadek drogowy,,,
+4070,WORD_NOUN,,HIRAGANA,,,交通事故,こうつうじこ,,koutsuu jiko,"wypadek drogowy
+wypadek uliczny",,,
 4071,WORD_NOUN,,HIRAGANA,,,故事,こじ,,koji,wydarzenie historyczne,,,
 4072,WORD_NOUN,,HIRAGANA,,,故人,こじん,,kojin,zmarły,,,
 4073,WORD_NOUN,,HIRAGANA,,,故意,こい,,koi,"intencja
@@ -11323,6 +11351,7 @@ władać
 dzierżyć (władzę)",,,
 5107,WORD_NOUN,,HIRAGANA,,,縦,じゅう,,juu,długość,,,5108
 5108,WORD_NOUN,,HIRAGANA,,,縦,たて,,tate,"pionowo
+podłużny
 długość
 wysokość",,,5107
 5109,WORD_VERB_RU,,HIRAGANA,,,衰える,おとろえる,,otoroeru,"słabnąć
@@ -11351,7 +11380,12 @@ cylinder",,,
 tyczka",,,
 5119,WORD_VERB_U,,HIRAGANA,,,解く,とく,,toku,"rozwiązywać
 odwiązywać
-zwalniać",,,5122
+rozsupłać
+rozpiąć
+odczepić
+rozwiązać
+problem
+rozpracować",,,5122
 5120,WORD_VERB_U,,HIRAGANA,,,解かす,とかす,,tokasu,"topić
 rozpuszczać",,,
 5121,WORD_VERB_RU,,HIRAGANA,,,解ける,とける,,tokeru,"rozwiązywać się
@@ -12083,7 +12117,8 @@ pierwszy",,,
 5460,WORD_ADVERB,,HIRAGANA,Genki kanji 2-21,,初めて,はじめて,,hajimete,pierwszy raz,,,
 5461,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,初雪,はつゆき,,hatsuyuki,pierwszy śnieg,,,
 5462,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,回送電車,かいそうでんしゃ,,kaisou densha,techniczny przejazd pociągu,,,
-5463,WORD_NOUN,,HIRAGANA,,,時刻,じこく,,jikoku,rozkład jazdy,,,
+5463,WORD_NOUN,,HIRAGANA,,,時刻,じこく,,jikoku,"czas
+godzina",,,
 5464,WORD_NOUN,,HIRAGANA,,,時刻表,じこくひょう,,jikokuhyou,rozkład jazdy,wiszący na ścianie,,
 5465,WORD_VERB_U,,HIRAGANA,,,測る,はかる,,hakaru,mierzyć,głębokość,,
 5466,WORD_VERB_U,,HIRAGANA,,,量る,はかる,,hakaru,mierzyć,,,
@@ -12433,6 +12468,7 @@ prośba
 dochodzenie",,,
 5629,WORD_NOUN,,HIRAGANA,,,求償,きゅうしょう,,kyuushou,żądanie odszkodowania,,,
 5630,WORD_NOUN,,HIRAGANA,,,得,とく,,toku,"zysk
+korzyść
 przewaga
 pożytek",,,
 5631,WORD_VERB_RU,,HIRAGANA,,,得る,える,,eru,"zdobywać
@@ -12658,7 +12694,8 @@ wyznawca",,,
 5729"
 5731,WORD_NOUN,,HIRAGANA,,,灯火,とうか,,touka,lampa,,,
 5732,WORD_NOUN,,HIRAGANA,,,灯台,とうだい,,toudai,latarnia morska,,,
-5733,WORD_NOUN,,HIRAGANA,,,電灯,でんとう,,dentou,latarka,elektryczna,,
+5733,WORD_NOUN,,HIRAGANA,,,電灯,でんとう,,dentou,"lampa (elektryczna)
+światło",elektryczna,,
 5734,WORD_NOUN,,HIRAGANA,,,街灯,がいとう,,gaitou,światło uliczne,,,
 5735,WORD_NOUN,,HIRAGANA,,,灯心,とうしん,,toushin,knot,,,
 5736,UNKNOWN,,HIRAGANA,,,症,しょう,,shou,"choroba
@@ -13078,7 +13115,8 @@ osobowość",,,
 siebie
 własny
 samo-",,,
-5911,WORD_NOUN,,HIRAGANA,,,自己中心,じこちゅうしん,,jikochuushin,"egoizm
+5911,WORD_NOUN,,HIRAGANA,,,自己中心,じこちゅうしん,,jiko chuushin,"egoizm
+egocentryzm
 koncentrowanie się na sobie",,,
 5912,WORD_NOUN,,HIRAGANA,,,利己心,りこしん,,rikoshin,"samolubstwo
 egoizm",,,
@@ -15707,8 +15745,13 @@ amputacja",,,
 7161,WORD_VERB_RU,,HIRAGANA,,,立てる,たてる,,tateru,"stawiać
 budować
 wznosić
+wznieść
+postawić
+założyć
 zakładać (organizację)
-wysuwać (kandydaturę)",,,
+wysuwać (kandydaturę)
+stworzyć plan
+ustanowić",,,
 7162,WORD_NOUN,,HIRAGANA,,,立候補,りっこうほ,,rikkouho,zgłoszenie własnej kandydatury,,,
 7163,WORD_NOUN,,HIRAGANA,,,立憲政治,りっけんせいじ,,rikkenseiji,rząd konstytucyjny,,,
 7164,WORD_NOUN,SUFFIX,HIRAGANA,,,長,ちょう,,chou,"lider
@@ -17281,6 +17324,7 @@ pęcherz
 pęcherzyk",,,
 7887,WORD_VERB_U,,HIRAGANA,,,腐る,くさる,,kusaru,"gnić
 butwieć
+psuć się
 rdzewieć",,,
 7888,WORD_VERB_RU,,HIRAGANA,,,腐れる,くされる,,kusareru,"gnić
 butwieć
@@ -18165,9 +18209,11 @@ kręcić",,,
 8215,WORD_NOUN,,HIRAGANA,,,鉢,はち,,hachi,"miska
 doniczka
 wazonik",,,
-8216,WORD_NOUN,,HIRAGANA,,,癖,くせ,,kuse,"nawyk
+8216,WORD_NOUN,,HIRAGANA,,,癖,くせ,,kuse,"przyzwyczajenie
+nałóg
 złe przyzwyczajenie
-błąd",,,
+nawyk
+maniera",,,
 8217,WORD_VERB_U,,HIRAGANA,,,購う,あがなう,,aganau,"kupować
 nabywać",,,
 8218,WORD_VERB_U,,HIRAGANA,,,諭す,さとす,,satosu,"upominać
@@ -19978,7 +20024,8 @@ niełaska
 wstyd",,,
 9209,WORD_NOUN,,HIRAGANA,,,歯茎,はぐき ,,haguki,dziąsło,,,
 9210,WORD_NOUN,,HIRAGANA,,,流れ,ながれ ,,nagare,"strumień
-potok",,,
+potok
+prąd",,,
 9211,WORD_NOUN,,HIRAGANA,,,流産,りゅうざん ,,ryuuzan,poronienie,,,
 9212,WORD_NOUN,,HIRAGANA,,,脅威,きょうい ,,kyoui,"groźba
 zagrożenie
@@ -26721,3 +26768,53 @@ zupełnie",po słowie sappari następuje czasownik w formie przeczącej,,
 12512,WORD_VERB_IRREGULAR,,HIRAGANA,,,-,さっぱりする,,sappari suru,odświeżyć się,,,
 12513,WORD_NOUN,,KATAKANA,,,-,サラダ,,sarada,sałatka,,,
 12514,WORD_NOUN,,HIRAGANA_KATAKANA,,,野菜サラダ,やさいサラダ,,yasai sarada,sałatka jarzynowa,,,
+12515,WORD_NOUN,,HIRAGANA,,,余り,あまり,,amari,"resztki
+pozostałości
+nadwyżka",,,257
+12516,WORD_VERB_U,,HIRAGANA,,,電車に乗る,でんしゃにのる,,densha ni noru,wsiadać do pociągu,,,
+12517,WORD_VERB_RU,,HIRAGANA,,,電車を降りる,でんしゃをおりる,,densha o oriru,wysiadać z pociągu,,,
+12518,WORD_VERB_U,,HIRAGANA,,,電車で行く,でんしゃでいく,,densha de iku,jechać pociągiem,,,
+12519,WORD_NOUN,,HIRAGANA,,,電車賃,でんしゃちん,,denshachin,opłata za przejazd pociągiem,,,
+12520,WORD_NOUN,,HIRAGANA,,,電燈,でんとう,,dentou,"lampa (elektryczna)
+światło",,,
+12521,WORD_VERB_RU,,HIRAGANA,,,電灯をつける,でんとうをつける,,dentou o tsukeru,"zapalać światło
+zapalać lampę",,,
+12522,WORD_VERB_U,,HIRAGANA,,,電灯を消す,でんとうをけす,,dentou o kesu,"gasić światło
+gasić lampę",,,
+12523,WORD_VERB_IRREGULAR,,HIRAGANA,,,電話する,でんわする,,denwa suru,telefonować,,,
+12524,WORD_NOUN,,HIRAGANA,,,電話料金,でんわりょうきん,,denwa ryoukin,rachunek za telefon,,,
+12525,WORD_VERB_U,,HIRAGANA,,,電話で話す,でんわではなす,,denwa de hanasu,"mówić przez telefon
+rozmawiać przez telefon",,,
+12526,WORD_VERB_U,,HIRAGANA,,,電話を切る,でんわをきる,,denwa o kiru,przerwać rozmowę telefoniczną,,,
+12527,WORD_VERB_U,,HIRAGANA,,,電話口へ呼び出す,でんわぐちへよびだす,,denwaguchi e yobidasu,prosić do telefonu,,,
+12528,WORD_NOUN,,HIRAGANA,,,実行,じっこう,,jikkou,realizacja,,,
+12529,WORD_VERB_IRREGULAR,,HIRAGANA,,,実行する,じっこうする,,jikkou suru,realizować,,,
+12530,WORD_NOUN,,HIRAGANA,,,自己批判,じこひはん,,jiko hihan,samokrytyka,,,
+12531,WORD_NOUN,,HIRAGANA,,,自己満足,じこまんぞく,,jiko manzoku,samozadowolenie,,,
+12532,WORD_NOUN,,HIRAGANA,,,自己宣伝,じこせんでん,,jiko senden,autoreklama,,,
+12533,WORD_NOUN,,HIRAGANA,,,自己紹介,じこしょうかい,,jiko shoukai,"przedstawienie się
+prezentacja siebie samego",,,
+12534,WORD_NOUN,,HIRAGANA,,,自己主張,じこしゅちょう,,jiko shuchou,"obrona swoich poglądów
+dobitne wyrażanie swoich poglądów",,,
+12535,WORD_NOUN,,HIRAGANA,,,両側,りょうがわ,,ryougawa,obie strony,,,
+12536,WORD_NOUN,,HIRAGANA,,,電気料金,でんきりょうきん,,denki ryoukin,"opłata za światło
+opłata za prąd",,,
+12537,WORD_NOUN,,HIRAGANA_KATAKANA,,,ガス料金,ガスりょうきん,,gasu ryoukin,opłata za gaz,,,
+12538,WORD_NOUN,,HIRAGANA_KATAKANA,,,タクシー料金,タクシーりょうきん,,takushii ryoukin,opłata za taksówkę,,,
+12539,WORD_VERB_IRREGULAR,,HIRAGANA,,,旅行する,りょこうする,,ryokou suru,podróżować,,,
+12540,WORD_NOUN,,HIRAGANA,,,休み時間,やすみじかん,,yasumi jikan,przerwa między lekcjami,,,
+12541,WORD_VERB_RU,,HIRAGANA,,,国旗を立てる,こっきをたてる,,kokki o tateru,podnieść flagę narodową,,,
+12542,WORD_VERB_RU,,HIRAGANA,,,案を立てる,あんをたてる,,an o tateru,ułożyć plan,,,
+12543,WORD_VERB_RU,,HIRAGANA,,,予定を立てる,よていをたてる,,yotei o tateru,ustalić plan,,,
+12544,WORD_VERB_RU,,HIRAGANA,,,声を立てる,こえをたてる,,koe o tateru,wydać głos,,,
+12545,WORD_NOUN,,HIRAGANA_KATAKANA,,,社交ダンス,しゃこうダンス,,shakou dansu,taniec towarzyski,,,
+12546,WORD_NOUN,,KATAKANA,,,-,フォークダンス,,fooku dansu,taniec ludowy,,,
+12547,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,ダンスパーティー,,dansu paatii,zabawa taneczna,,,
+12548,WORD_NOUN,,HIRAGANA_KATAKANA,,,ダンス音楽,ダンスおんがく,,dansu ongaku,muzyka taneczna,,,
+12549,WORD_NOUN,,HIRAGANA_KATAKANA,,,ダンスをする,ダンスをする,,dansu o suru,tańczyć,,,
+12550,WORD_NOUN,,HIRAGANA,,,政治団体,せいじだんたい,,seiji dantai,organizacja polityczna,,,
+12551,WORD_NOUN,,HIRAGANA,,,団体旅行,だんたいりょこう,,dantai ryokou,"podróż grupowa
+wycieczka zbiorowa",,,
+12552,WORD_VERB_IRREGULAR,,HIRAGANA,,,得する,とくする,,toku suru,"osiągnąć zysk
+zyskać
+odnieść korzyść",,,
