@@ -142,7 +142,7 @@ am",czas,,
 601"
 80,WORD_NOUN,,HIRAGANA,"Genki 1-1
 Genki kanji 1-6",,先生,せんせい,,sensei,"nauczyciel
-doktor",,,
+[słowo honoryfikatywne stojące przy nazwisku, np. nauczyciela, mistrza, lekarza, artysty, prawnika, polityka]",,,
 81,WORD_NOUN,,HIRAGANA,Genki 1-1,,専門,せんもん,,senmon,specjalizacja,,,
 82,WORD_EXPRESSION,,HIRAGANA,"Genki 1-1
 Genki 1-3",,-,そうですね,,sou desu ne,to prawda,,,
@@ -1262,9 +1262,9 @@ zapominać",,,
 Genki kanji 1-9",,後で,あとで,,atode,później,,,
 495,WORD_ADVERB,,HIRAGANA,Genki 1-6,,遅く,おそく,,osoku,"zrobić coś później
 późno",,,
-496,UNKNOWN,,HIRAGANA,"Genki 1-5
+496,WORD_PARTICULE,,HIRAGANA,"Genki 1-5
 Genki 1-6
-Genki 1-9",,-,から,,kara,ponieważ,,,"441
+Genki 1-9",,-,から,,kara,ponieważ,"łączy dwa zdania, w których pierwsze przedstawia przyczynę sytuacji opisanej w drugim",,"441
 4880
 7792
 8358"
@@ -1716,7 +1716,10 @@ trudno
 szkoda
 godne pożałowania",... desu ne,,
 661,UNKNOWN,,HIRAGANA,Genki 1-8,,未だ,まだ,,mada,"jak do tej pory
-jeszcze nie",+ czasownik w formie te negatywnej,,4587
+jeszcze nie
+nadal
+dopiero
+zaledwie",+ czasownik w formie te negatywnej,,4587
 662,WORD_ADVERB,,HIRAGANA,"Genki 1-8
 Genki 1-9",,皆,みんな,,minna,"wszyscy
 wszystko",,,4096
@@ -2421,7 +2424,8 @@ Genki 2-19
 Genki kanji 2-23",,文化,ぶんか,,bunka,"kultura
 cywilizacja",,,
 937,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,釣り,つり,,tsuri,"wędkarstwo
-reszta (pieniędzy)",,,
+reszta (pieniędzy)
+końcówka (przy płaceniu)",,,
 938,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-11,,祭り,まつり,,matsuri,"festiwal
 uroczystość
 święto
@@ -5764,7 +5768,8 @@ trop",,,
 sznurki",,,
 2502,WORD_NOUN,,HIRAGANA,,,糸車,いとぐるま,,itoguruma,koło zamachowe,,,
 2503,WORD_NOUN,,HIRAGANA,,,糸巻き,いとまき,,itomaki,szpulka,,,
-2504,WORD_NOUN,,HIRAGANA,,,鋏,はさみ,,hasami,nożyczki,,,
+2504,WORD_NOUN,,HIRAGANA,,,鋏,はさみ,,hasami,"nożyczki
+nożyce",,,
 2505,WORD_NOUN,,KATAKANA,,,-,パスワード,,pasuwaado,hasło,,,
 2506,WORD_NOUN,,KATAKANA,Genki 2-18,,-,シャンプー,,shanpuu,szampon,,,
 2507,WORD_NOUN,,KATAKANA,,,-,ウォッカ,,wokka,wódka,,,
@@ -8306,7 +8311,9 @@ szlafrok",,,
 dobór
 alternatywa",,,
 3685,WORD_NOUN,,HIRAGANA,,,選手,せんしゅ,,senshu,"atleta
-zawodnik",,,
+zawodnik
+sportowiec
+gracz",,,
 3686,WORD_NOUN,,HIRAGANA,,,選集,せんしゅう,,senshuu,"selekcja
 antologia",,,
 3687,WORD_NOUN,,HIRAGANA,,,選民,せんみん,,senmin,naród wybrany,,,
@@ -8826,7 +8833,9 @@ filia (sklepu)",,,
 3953,WORD_NOUN,,KATAKANA,Genki 2-20,,-,スニーカー,,suniikaa,tenisówki,,,
 3954,WORD_NOUN,,HIRAGANA,Genki 2-20,,扇子,せんす,,sensu,wachlarz,składany,,
 3955,WORD_NOUN,,HIRAGANA,Genki 2-20,,団扇,うちわ,,uchiwa,wachlarz,w kształcie liścia,,
-3956,WORD_NOUN,,HIRAGANA,Genki 2-20,,扇風機,せんぷうき,,senpuuki,wentylator,,,
+3956,WORD_NOUN,,HIRAGANA,Genki 2-20,,扇風機,せんぷうき,,senpuuki,"wentylator
+wiatrak
+nawiew (elektryczny)",,,
 3957,WORD_NOUN,,KATAKANA,Genki 2-20,,-,ハイヒール,,haihiiru,buty na wysokich obcasach,,,
 3958,WORD_NOUN,SUFFIX,HIRAGANA,Genki 2-20,,屋,や,,ya,"sklep
 zakład usługowy
@@ -9698,8 +9707,11 @@ pęk",,,4365
 splatać (ramiona)
 zarządzać",,,4366
 4369,WORD_ADJECTIVE_I,,HIRAGANA,,,辛い,つらい,,tsurai,"męczący
+trudny
 trudny do wytrzymania
-bolesny",,,996
+bolesny
+ciężki
+przykry",,,996
 4370,WORD_ADJECTIVE_NA,,HIRAGANA,,,厳か,おごそか,,ogosoka,"godny
 poważny
 okazały
@@ -10177,7 +10189,7 @@ stałość
 wierność
 honor",,,
 4577,WORD_NOUN,,HIRAGANA,,,雄,おす,,osu,"płci męskiej
-samiec",,,
+samiec",używane w odniesieniu do zwierząt,,
 4578,WORD_VERB_RU,,HIRAGANA,,,過ぎる,すぎる,,sugiru,"przekraczać
 przekroczyć
 minąć
@@ -10503,7 +10515,10 @@ zamieszkiwanie",,,
 4725,WORD_NOUN,,HIRAGANA,,,居住地,きょじゅうち,,kyojuuchi,miejsce zamieszkania,,,
 4726,WORD_NOUN,,HIRAGANA,,,居眠り,いねむり,,inemuri,drzemka,,,
 4727,WORD_VERB_RU,,HIRAGANA,,,恐れる,おそれる,,osoreru,"bać się
-lękać się",,,
+być przestraszonym
+lękać się
+niepokoić się
+obawiać się",,,
 4728,WORD_ADVERB,,HIRAGANA,,,恐らく,おそらく,,osoraku,"chyba
 prawdopodobnie
 może","zwykle na końcu występuje czasownik w trybie przypuszczającym: darou, deshou",,
@@ -10514,7 +10529,8 @@ groźba
 niebezpieczeństwo",,,
 4730,WORD_ADJECTIVE_I,,HIRAGANA,,,恐ろしい,おそろしい,,osoroshii,"straszliwy
 przerażający
-okropny",,,
+okropny
+potworny",,,
 4731,WORD_NOUN,,HIRAGANA,,,竜,たつ,,tatsu,smok,chiński,,1904
 4732,WORD_NOUN,,HIRAGANA,,,壁,へき,,heki,"ściana
 płot
@@ -11275,7 +11291,10 @@ przyjęcie",,,5051
 przyjęcie",,,5050
 5052,WORD_NOUN,,HIRAGANA,,,常,つね,,tsune,"normalne warunki
 zwykły przebieg wydarzeń",,,10867
-5053,WORD_ADVERB,,HIRAGANA,,,常に,つねに,,tsune ni,zawsze,,,
+5053,WORD_ADVERB,,HIRAGANA,,,常に,つねに,,tsune ni,"zawsze
+zwykle
+zazwyczaj
+zwyczajowo",,,
 5054,WORD_NOUN,,HIRAGANA,,,常識,じょうしき,,joushiki,zdrowy rozsądek,,,
 5055,WORD_NOUN,,HIRAGANA,,,常用,じょうよう,,jouyou,"powszedni użytek
 zwykły użytek",,,
@@ -11468,7 +11487,13 @@ wyjaśnianie",,,
 5125,WORD_NOUN,,HIRAGANA,,,解説,かいせつ,,kaisetsu,"wytłumaczenie
 komentarz",,,
 5126,WORD_NOUN,,HIRAGANA,,,解任,かいにん,,kainin,zwolnienie,ze stanowiska,,
-5127,WORD_NOUN,,HIRAGANA,,,-,そちら,,sochira,tam,"uprzejmie, grzecznie, blisko osoby docelowej",,
+5127,WORD_NOUN,,HIRAGANA,,,-,そちら,,sochira,"tam
+tam oto
+po twojej stronie
+twoje miejsce
+tam, gdzie ty jesteś
+tamta osoba
+tamta rzecz","uprzejmie, grzecznie, blisko osoby docelowej",,
 5128,WORD_NOUN,,HIRAGANA,,,数独,すうどく,,suudoku,sudoku,matematyczno-logiczna gra,,
 5129,WORD_NOUN,,HIRAGANA,,,霜,しも,,shimo,"mróz
 szron",,,
@@ -12200,8 +12225,14 @@ pozycja",,,
 5471,WORD_NOUN,,HIRAGANA,,,従属,じゅうぞく,,juuzoku,"zależność
 subordynacja",,,
 5472,WORD_NOUN,,HIRAGANA,,,金属,きんぞく,,kinzoku,metal,,,
-5473,WORD_VERB_RU,,HIRAGANA,,,加える,くわえる,,kuwaeru,"dodawać
-łączyć",,,
+5473,WORD_VERB_RU,,HIRAGANA,,,加える,くわえる,,kuwaeru,"dodawać (coś do czegoś)
+zwiększać
+łączyć
+dołączać
+włączać
+przyłączać
+oddziaływać
+działać na",,,
 5474,WORD_VERB_U,,HIRAGANA,,,加わる,くわわる,,kuwawaru,"dodawać się
 łączyć się",,,
 5475,WORD_NOUN,,HIRAGANA,,,加算,かさん,,kasan,dodawanie,,,
@@ -15982,7 +16013,10 @@ gang",,,
 7218,WORD_VERB_U,,HIRAGANA,,,連なる,つらなる,,tsuranaru,"być połączonym z
 łączyć się
 stać w rzędzie",,,
-7219,WORD_VERB_RU,,HIRAGANA,,,連れる,つれる,,tsureru,zabierać kogoś,ze sobą,,
+7219,WORD_VERB_RU,,HIRAGANA,,,連れる,つれる,,tsureru,"zabierać kogoś
+ciągnąć
+wziąć ze sobą
+mieć towarzystwo","ze sobą, używane jest wtedy, gdy udajemy się gdzieś z osobą o statusie niższym niż nasz albo ze zwierzętami",,
 7220,WORD_NOUN,,HIRAGANA,,,連続,れんぞく,,renzoku,"ciąg
 seria
 kontynuacja",,,
@@ -18793,6 +18827,7 @@ wginać się",,,
 być złapanym w",,,
 8408,WORD_VERB_U,,HIRAGANA,,,挟む,はさむ,,hasamu,"kłaść pomiędzy
 wkładać do
+wetknąć
 trzymać pomiędzy
 uszczypnąć
 ścisnąć",,,
@@ -20023,7 +20058,9 @@ zwalczyć
 zwyciężać",,,
 9170,WORD_VERB_U,,HIRAGANA,,,間違う,まちがう,,machigau,"być pomylonym
 być w błędzie
-pomylić",,,
+być niepoprawnym
+pomylić
+pomylić coś",,,
 9171,WORD_VERB_U,,HIRAGANA,,,纏まる,まとまる,,matomaru,"zbierać się
 dojść do porozumienia
 być uporządkowanym",,,
@@ -27102,3 +27139,22 @@ sos Worcester",,,
 wada
 słaby punkt
 słaba strona",,,
+12677,WORD_VERB_U,,HIRAGANA,,,挾む,はさむ,,hasamu,"kłaść pomiędzy
+wkładać do
+wetknąć
+trzymać pomiędzy
+uszczypnąć
+ścisnąć",,,
+12678,WORD_VERB_U,,HIRAGANA,,,挿む,はさむ,,hasamu,"kłaść pomiędzy
+wkładać do
+wetknąć
+trzymać pomiędzy
+uszczypnąć
+ścisnąć",,,
+12679,WORD_VERB_RU,,HIRAGANA,,,橋を架ける,はしをかける,,hashi o kakeru,budować most,,,
+12680,WORD_ADVERB,,HIRAGANA,,,互いに,たがいに,,tagai ni,"wzajemnie
+nawzajem",,,
+12681,WORD_VERB_RU,,HIRAGANA,,,仲間に加える,なかまにくわえる,,nakama ni kuwaeru,włączyć do towarzystwa,,,
+12682,WORD_VERB_RU,,HIRAGANA,,,力を加える,ちからをくわえる,,chikara o kuwaeru,przykładać siłę,,,
+12683,WORD_EXPRESSION,,HIRAGANA,,,間違いない,まちがいない,,machigai nai,"bez wątpienia
+z pewnością",,,
