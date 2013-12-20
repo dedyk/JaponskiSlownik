@@ -1094,9 +1094,11 @@ bezwzględnie",,,
 439,WORD_ASK,,HIRAGANA,Genki 1-5,,-,どんな,,donna,"jaki
 jakiego rodzaju",,,
 440,WORD_PARTICULE,,HIRAGANA,Genki 1-5,,-,まで,,made,do,"miejsce, czasu",,
-441,UNKNOWN,,HIRAGANA,"Genki 1-5
+441,WORD_PARTICULE,,HIRAGANA,"Genki 1-5
 Genki 1-6
-Genki 1-9",,-,から,,kara,od,"miejsce, czasu",,"496
+Genki 1-9",,-,から,,kara,"od
+z
+po","miejsce, czasu",,"496
 4880
 7792
 8358"
@@ -1888,7 +1890,10 @@ Genki kanji 2-17",を,散歩する,さんぽする,o,sanpo suru,spacerować,~ o 
 za wszelką cenę",,,
 708,UNKNOWN,,HIRAGANA,Genki 1-9,,-,ところで,,tokorode,"przy okazji
 nawiasem mówiąc","używa się na przykład wtedy, gdy chcemy zmienić temat rozmowy",,
-709,WORD_ADVERB,,HIRAGANA,Genki 1-9,,-,もう,,mou,już,,,5311
+709,WORD_ADVERB,,HIRAGANA,Genki 1-9,,-,もう,,mou,"już
+niedługo
+jeszcze
+znowu",,,5311
 710,WORD_COUNTERS,,HIRAGANA,"Genki 1-9
 Klasyfikatory
 Genki kanji 1-3",,一つ,ひとつ,,hitotsu,jeden,klasyfikator ogólny,,
@@ -2165,7 +2170,9 @@ Genki kanji 1-7",,男の子,おとこのこ,,otoko no ko,chłopczyk,,,
 807,WORD_NOUN,,HIRAGANA,"Genki 1-11
 Genki kanji 1-7",,女の子,おんなのこ,,onna no ko,dziewczynka,,,
 808,WORD_NOUN,,HIRAGANA,"Genki 1-11
-Genki kanji 1-6",,外国,がいこく,,gaikoku,zagraniczny kraj,,,
+Genki kanji 1-6",,外国,がいこく,,gaikoku,"zagraniczny kraj
+obcy kraj
+zagranica",,,
 809,WORD_NOUN,,HIRAGANA,"Genki 1-11
 Genki kanji 1-11",,歌手,かしゅ,,kashu,"piosenkarz
 śpiewak
@@ -8098,7 +8105,8 @@ iść na kraniec
 nabywać biegłości
 wpadać w krańcowość",,,
 3531,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-19,,質がいい,しつがいい,,shitsu ga ii,dobra jakość,,,
-3532,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,訪問,ほうもん,,houmon,wizyta,,,
+3532,WORD_NOUN,,HIRAGANA,Genki kanji 2-19,,訪問,ほうもん,,houmon,"wizyta
+odwiedziny",,,
 3533,WORD_VERB_U,,HIRAGANA,Genki kanji 2-19,,問う,とう,,tou,"pytać
 szukać odpowiedzi",bardziej oficjalnie,,
 3534,UNKNOWN,,HIRAGANA,Genki kanji 2-19,,の多く,のおおく,,no ooku,większość,~ ...,,
@@ -12189,11 +12197,13 @@ sławne dzieło literackie",,,
 wybitny
 sławny",,,
 5354,WORD_VERB_RU,,HIRAGANA,,,並べる,ならべる,,naraberu,"ustawiać
-porządkować
-porównywać",,,
+układać
+ustawiać
+porządkować",,,
 5355,WORD_VERB_U,,HIRAGANA,,,並ぶ,ならぶ,,narabu,"ustawiać się
+być ustawionym
 stawać w szeregu
-rywalizować",,,
+stać w rzędzie",,,
 5356,WORD_NOUN,,HIRAGANA,,,並み,なみ,,nami,pospolity,,,
 5357,UNKNOWN,,HIRAGANA,,,並びに,ならびに,,narabini,"i
 również",,,
@@ -13824,8 +13834,10 @@ falochron",,,
 6073,WORD_VERB_IRREGULAR,,HIRAGANA,,,奏する,そうする,,sou suru,"mówić do władcy
 składać sprawozdanie (cesarzowi)",,,
 6074,WORD_NOUN,,HIRAGANA,,,箱,はこ,,hako,"pudełko
+pojemnik
 kaseta
-szkatułka",,,
+szkatułka
+[klasyfikator do liczenia pudełek z jakąś zawartością]",,,
 6075,WORD_NOUN,,HIRAGANA,,,塔,とう,,tou,"wieża
 obelisk
 pomnik",,,
@@ -16036,7 +16048,9 @@ pani
 kierunek
 sposób",,,940
 7141,UNKNOWN,,HIRAGANA,,,方に,まさに,,masa ni,właśnie,,,
-7142,WORD_NOUN,,HIRAGANA,,,方面,ほうめん,,houmen,kierunek,,,
+7142,WORD_NOUN,,HIRAGANA,,,方面,ほうめん,,houmen,"kierunek
+dziedzina
+aspekt",,,
 7143,WORD_NOUN,,HIRAGANA,,,東,あずま,,azuma,wschód,archaizm,,1329
 7144,WORD_NOUN,,HIRAGANA,,,中東,ちゅうとう,,chuutou,Środkowy Wschód,,,
 7145,WORD_NOUN,,HIRAGANA,,,東欧,とうおう,,touou,Wschodnia Europa,,,
@@ -17432,7 +17446,8 @@ bezużyteczny
 niebo",,,"1500
 7792
 8738"
-7792,WORD_NOUN,,HIRAGANA,,,空,から,,kara,pusty,,,"441
+7792,WORD_NOUN,,HIRAGANA,,,空,から,,kara,"pusty
+pustka",,,"441
 496
 1500
 7791
@@ -17522,7 +17537,9 @@ bogacić się",,,
 7830,WORD_VERB_U,,HIRAGANA,,,潤む,うるむ,,urumu,być mokrym,,,
 7831,WORD_ADJECTIVE_I,,HIRAGANA,,,詳しい,くわしい,,kuwashii,"dokładny
 szczegółowy
-precyzyjny",,,
+precyzyjny
+obeznany
+zaznajomiony",zwykle występuje z partykułą ni,,
 7832,WORD_VERB_RU,,HIRAGANA,,,飢える,うえる,,ueru,"głodować
 być głodnym",,,
 7833,WORD_NOUN,,HIRAGANA,,,帝,みかど,,mikado,cesarz,Japonii,,
@@ -17769,8 +17786,13 @@ niwelować
 upraszczać (np. pisownię znaku kanji)
 rozmieniać pieniądze",,,
 7920,WORD_VERB_RU,,HIRAGANA,,,崩れる,くずれる,,kuzureru,"rozpadać się
+obsuwać się
+zawalać się
 upadać
-pogarszać się",,,
+pogarszać się
+zniekształcać się
+psuć się
+móc rozmienić pieniądze",,,
 7921,WORD_NOUN,,HIRAGANA,,,襟,えり,,eri,"kołnierz
 kołnierzyk
 klapa (marynarki)
@@ -22052,7 +22074,9 @@ rebelia
 rewolta",,,
 9983,WORD_NOUN,,HIRAGANA,,,悲歌,ひか ,,hika,"elegia
 pieśń pogrzebowa",,,
-9984,WORD_NOUN,,HIRAGANA,,,外交,がいこう ,,gaikou,dyplomacja,,,
+9984,WORD_NOUN,,HIRAGANA,,,外交,がいこう ,,gaikou,"dyplomacja
+stosunki z zagranicą
+stosunki dyplomatyczne",,,
 9985,WORD_NOUN,,HIRAGANA,,,抽斗,ひきだし ,,hikidashi,szuflada,,,
 9986,WORD_NOUN,,HIRAGANA,,,攻城,こうじょう ,,koujou,oblężenie,,,
 9987,WORD_NOUN,,HIRAGANA,,,廊下,ろうか ,,rouka,"korytarz
@@ -23396,6 +23420,7 @@ zawierucha",,,
 wypowiedź",,,
 10564,WORD_NOUN,,HIRAGANA,,,方解石,ほうかいせき ,,houkaiseki,kalcyt,,,
 10565,WORD_VERB_U,,HIRAGANA,,,願う,ねがう ,,negau,"pragnąć
+prosić
 mieć nadzieję
 życzyć (sobie)",,,
 10566,WORD_NOUN,,KATAKANA,,,-,ライオン,,raion,lew,,,
@@ -27871,3 +27896,29 @@ rozsądzić",,,
 12931,WORD_NOUN,,HIRAGANA,,,所為,せい,,sei,"przyczyna
 powód",,,
 12932,WORD_NOUN,,HIRAGANA,,,数学者,すうがくしゃ,,suugakusha,matematyk,,,
+12933,WORD_VERB_IRREGULAR,,HIRAGANA,,,害する,がいする,,gai suru,szkodzić,,,
+12934,WORD_NOUN,,HIRAGANA,,,水害,すいがい,,suigai,szkody wyrządzone przez powódź,,,
+12935,WORD_NOUN,,HIRAGANA,,,外交問題,がいこうもんだい,,gaikou mondai,"problem stosunków z zagranicą
+kwestia dyplomatyczna",,,
+12936,WORD_NOUN,,HIRAGANA,,,外交政策,がいこうせいさく,,gaikou seisaku,polityka zagraniczna,,,
+12937,WORD_ADVERB,,HIRAGANA,,,-,はっきり,,hakkiri,"wyraźnie
+jasno",używa się również: hakkiri yo,,
+12938,WORD_NOUN,,HIRAGANA,,,発行,はっこう,,hakkou,"wydawanie
+publikowanie",,,
+12939,WORD_VERB_IRREGULAR,,HIRAGANA,,,発行する,はっこうする,,hakkou suru,wydawać,,,
+12940,WORD_NOUN,,HIRAGANA,,,発行所,はっこうじょ,,hakkoujo,"wydawca
+firma wydawnicza",,,
+12941,WORD_NOUN,,HIRAGANA,,,発行者,はっこうしゃ,,hakkousha,"wydawca
+wydawnictwo",,,
+12942,WORD_NOUN,,HIRAGANA,,,訪問する,ほうもんする,,houmon suru,odwiedzać,,,
+12943,WORD_NOUN,,HIRAGANA,,,屑,くず,,kuzu,"śmieci
+odpadki",,,
+12944,WORD_NOUN,,HIRAGANA,,,紙屑,かみくず,,kamikuzu,niepotrzebne papiery,,,
+12945,WORD_NOUN,,HIRAGANA,,,屑籠,くずかご,,kuzukago,kosz na śmieci,,,
+12946,WORD_NOUN,,HIRAGANA,,,螺子,ねじ,,neji,"śruba
+śrubka",,,
+12947,WORD_VERB_RU,,HIRAGANA,,,螺子を締める,ねじをしめる,,neji o shimeru,wkręcać śrubkę,,,
+12948,WORD_VERB_U,,HIRAGANA,,,螺子を外す,ねじをはずす,,neji o hazusu,wykręcać śrubę,,,
+12949,WORD_VERB_U,,HIRAGANA,,,捩る,ねじる,,nejiru,wykręcać,,,
+12950,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ネクタイを締める,ねくたいをしめる,,nekutai o shimeru,zawiązywać krawat,,,
+12951,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ネクタイを外す,ネクタイをはずす,,nekutai o hazusu,zdejmować krawat,,,
