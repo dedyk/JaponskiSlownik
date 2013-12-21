@@ -174,6 +174,14 @@ public class Validator {
 		mapEdictTypeToDictionaryEntryType.put("vs-s", DictionaryEntryType.WORD_VERB_IRREGULAR);
 		mapEdictTypeToDictionaryEntryType.put("v5aru", DictionaryEntryType.WORD_VERB_U);
 		mapEdictTypeToDictionaryEntryType.put("v5u-s", DictionaryEntryType.WORD_VERB_U);
+		mapEdictTypeToDictionaryEntryType.put("n", DictionaryEntryType.WORD_NOUN);
+		mapEdictTypeToDictionaryEntryType.put("n-adv", DictionaryEntryType.WORD_NOUN);
+		mapEdictTypeToDictionaryEntryType.put("n-t", DictionaryEntryType.WORD_NOUN);
+		mapEdictTypeToDictionaryEntryType.put("adj-f", DictionaryEntryType.WORD_NOUN);
+		mapEdictTypeToDictionaryEntryType.put("adj-no", DictionaryEntryType.WORD_NOUN);
+		mapEdictTypeToDictionaryEntryType.put("vs", DictionaryEntryType.WORD_NOUN);
+		mapEdictTypeToDictionaryEntryType.put("pn", DictionaryEntryType.WORD_PRONOUN);
+		mapEdictTypeToDictionaryEntryType.put("int", DictionaryEntryType.WORD_INTERJECTION);
 
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
 
@@ -202,7 +210,8 @@ public class Validator {
 
 				if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U
 						|| dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU
-						|| dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
+						|| dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR
+						|| dictionaryEntryType == DictionaryEntryType.WORD_NOUN) {
 
 					boolean noFound = true;
 					List<String> noFoundPosType = null;
@@ -227,11 +236,13 @@ public class Validator {
 
 							System.err.println("Dictionary entry type edict different for: "
 									+ currentPolishJapaneseEntry);
+							System.err.println("Available types: " + foundJMEDict + "\n");
 
 							System.exit(1);
 
 						} else {
 							System.out.println("Can't find dictionary entry type for: " + currentPolishJapaneseEntry);
+							System.out.println("Available types: " + foundJMEDict + "\n");
 						}
 					}
 				}

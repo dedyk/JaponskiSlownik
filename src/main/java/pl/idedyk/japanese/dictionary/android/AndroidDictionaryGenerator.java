@@ -66,7 +66,7 @@ public class AndroidDictionaryGenerator {
 				.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedict, jmedictCommon, jmedictName,
-				"input/word.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv",
+				"input/word-test.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv",
 				"output/transitive_intransitive_pairs.csv");
 
 		generateKanaEntries("../JapaneseDictionary_additional/kanjivg", "output/kana.csv");

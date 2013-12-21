@@ -1,19 +1,22 @@
 package pl.idedyk.japanese.dictionary.dto;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JMEDictEntry {
-	
-	private List<String> kanji = new ArrayList<String>();
-	
-	private List<String> kana = new ArrayList<String>();
-	
-	private List<String> pos = new ArrayList<String>();
-	
-	private List<String> misc = new ArrayList<String>();
-	
-	private List<String> trans = new ArrayList<String>();
+public class JMEDictEntry implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private final List<String> kanji = new ArrayList<String>();
+
+	private final List<String> kana = new ArrayList<String>();
+
+	private final List<String> pos = new ArrayList<String>();
+
+	private final List<String> misc = new ArrayList<String>();
+
+	private final List<String> trans = new ArrayList<String>();
 
 	public List<String> getKanji() {
 		return kanji;
@@ -38,5 +41,5 @@ public class JMEDictEntry {
 	@Override
 	public String toString() {
 		return kanji + " - " + kana + " - " + pos + " - " + misc + " - " + trans;
-	}	
+	}
 }

@@ -82,9 +82,8 @@ public class Test {
 		System.out.println(currentKanaAsRomaji);
 		 */
 
-		
 		//TreeMap<String, JMEDictEntry> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
-		
+
 		/*
 		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMEdict("/home/fmazurek/tmp2/e6/jm/test.xml");
 		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JaponskiSlownik_dodatki/edict_sub-utf8");
@@ -95,15 +94,15 @@ public class Test {
 		System.out.println(jmedict.get(JMEDictReader.getMapKey(null, "ぺらぺら")));
 		*/
 		//System.out.println(jmedict.get(JMEDictReader.getMapKey("開ける","あける")));
-		
+
 		//System.out.println(jmedict.get(JMEDictReader.getMapKey(null, "コーヒー")));
 		//System.out.println(jmedictCommon.get(EdictReader.getMapKey(null, "コーヒー")));
-		
+
 		/*
 		System.out.println(jmedict.get(JMEDictReader.getMapKey(null, "カレー")));
 		System.out.println(jmedictCommon.get(EdictReader.getMapKey(null, "カレー")));
 		*/
-		
+
 		/*
 		SAXReader reader = new SAXReader();
 
@@ -137,9 +136,9 @@ public class Test {
 			System.out.println(object);			
 		}
 		 */
-		
+
 		//TreeMap<String, EDictEntry> jmedictName = EdictReader.readEdict("../JaponskiSlownik_dodatki/enamdict-utf8");
-		
+
 		/*
 		Collection<EDictEntry> values = jmedictName.values();
 		
@@ -148,14 +147,15 @@ public class Test {
 			System.out.println(eDictEntry);
 		}
 		*/
-		
+
 		//System.out.println(jmedictName.get(EdictReader.getMapKey("誠", "まこと")));
-		
-		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
-		
+
+		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader
+				.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
+
 		List<JMEDictEntry> list = jmedict.get(JMEDictReader.getMapKey(null, "フレデリック"));
-		
+
 		System.out.println(list);
-		
+
 	}
 }

@@ -2360,7 +2360,7 @@ kolejka",~,,
 879,UNKNOWN,,HIRAGANA,Genki 1-11,,行目,ぎょうめ,,gyoume,numer linii,~,,
 880,UNKNOWN,,HIRAGANA,Genki 1-11,,二人ずつ,ふたりずつ,,futarizutsu,dla każdych dwóch osób,,,
 881,WORD_NOUN,,HIRAGANA,Genki 1-12,,風邪,かぜ,,kaze,przeziębienie,,,
-882,WORD_NOUN,,HIRAGANA,"Genki 1-12
+882,WORD_PRONOUN,,HIRAGANA,"Genki 1-12
 Genki kanji 2-14",,彼,かれ,,kare,"on
 narzeczony",,,
 883,WORD_NOUN,,HIRAGANA,Genki 1-12,,気温,きおん,,kion,temperatura,tylko do pogody,,
@@ -3871,7 +3871,7 @@ zamorski
 zagranica",,,
 1508,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,昼ご飯,ひるごはん,,hirugohan,obiad,,,
 1509,WORD_NOUN,,HIRAGANA,Genki kanji 2-13,,昼食,ちゅうしょく,,chuushoku,obiad,,,
-1510,WORD_NOUN,,HIRAGANA,"Genki 1-12
+1510,WORD_PRONOUN,,HIRAGANA,"Genki 1-12
 Genki dodatkowe 1-11
 Genki kanji 2-14",,彼女,かのじょ,,kanojo,"ona
 narzeczona",,,
@@ -4859,7 +4859,7 @@ maksymalny",,,
 wojak",,,
 2020,WORD_NOUN,,HIRAGANA,,,軍隊,ぐんたい,,guntai,"armia
 wojsko",,,
-2021,WORD_NOUN,,HIRAGANA,Genki 2-21,,襲う,おそう,,osou,"atakować
+2021,WORD_VERB_U,,HIRAGANA,Genki 2-21,,襲う,おそう,,osou,"atakować
 szturmować
 napadać
 nacierać
@@ -7688,7 +7688,7 @@ fatum",,,
 3340,WORD_NOUN,,HIRAGANA,,,題目,だいもく,,daimoku,"tytuł
 nagłówek",,,
 3341,WORD_NOUN,,HIRAGANA,,,議題,ぎだい,,gidai,przedmiot dyskusji,,,
-3342,WORD_NOUN,,HIRAGANA,,,彼氏,かれし,,kareshi,narzeczony,,,
+3342,WORD_PRONOUN,,HIRAGANA,,,彼氏,かれし,,kareshi,narzeczony,,,
 3343,WORD_NOUN,,HIRAGANA,,,女子,じょし,,joshi,"dziewczyna
 kobieta",,,
 3344,WORD_NOUN,,HIRAGANA,,,男子,だんし,,danshi,"chłopiec
@@ -8995,7 +8995,7 @@ zimna pogoda",,,3945
 chłód",,,
 3948,WORD_NOUN,,HIRAGANA,,,寒風,かんぷう,,kanpuu,"zimny wiatr
 mroźny wiatr",,,
-3949,WORD_NOUN,,HIRAGANA,Genki 2-20,,-,あちら,,achira,"tam
+3949,WORD_PRONOUN,,HIRAGANA,Genki 2-20,,-,あちら,,achira,"tam
 tamten","uprzejmie, grzecznie, daleko od mówcy i osoby docelowej",,
 3950,WORD_NOUN,,HIRAGANA,Genki 2-20,,係の者,かかりのもの,,kakari no mono,osoba odpowiedzialna,,,
 3951,WORD_NOUN,SUFFIX,HIRAGANA,Genki 2-20,,字,じ,,ji,"litera
@@ -9010,7 +9010,7 @@ filia (sklepu)",,,
 wiatrak
 nawiew (elektryczny)",,,
 3957,WORD_NOUN,,KATAKANA,Genki 2-20,,-,ハイヒール,,haihiiru,buty na wysokich obcasach,,,
-3958,WORD_NOUN,SUFFIX,HIRAGANA,Genki 2-20,,屋,や,,ya,"sklep
+3958,UNKNOWN,SUFFIX,HIRAGANA,Genki 2-20,,屋,や,,ya,"sklep
 zakład usługowy
 dach
 dom
@@ -11698,7 +11698,7 @@ wyjaśnianie",,,
 5125,WORD_NOUN,,HIRAGANA,,,解説,かいせつ,,kaisetsu,"wytłumaczenie
 komentarz",,,
 5126,WORD_NOUN,,HIRAGANA,,,解任,かいにん,,kainin,zwolnienie,ze stanowiska,,
-5127,WORD_NOUN,,HIRAGANA,,,-,そちら,,sochira,"tam
+5127,WORD_PRONOUN,,HIRAGANA,,,其方,そちら,,sochira,"tam
 tam oto
 po twojej stronie
 twoje miejsce
@@ -13481,7 +13481,7 @@ tchnienie",,,
 5926,WORD_NOUN,,HIRAGANA,,,禁煙,きんえん,,kin'en,zakaz palenia,,,
 5927,WORD_NOUN,,HIRAGANA,,,禁止,きんし,,kinshi,"zakaz
 prohibicja",,,
-5928,WORD_NOUN,,HIRAGANA,,,立入禁止,たちいりきんし,,tachiirikinshi,"zakaz wchodzenia
+5928,WORD_EXPRESSION,,HIRAGANA,,,立入禁止,たちいりきんし,,tachiirikinshi,"zakaz wchodzenia
 zakaz wstępu
 wejście wzbronienie
 wstęp wzbroniony",,,
@@ -23113,11 +23113,11 @@ niejasny",,,
 10430,WORD_NOUN,,HIRAGANA,,,儀,ぎ ,,gi,"ceremonia
 sprawa
 interes",,,
-10431,WORD_NOUN,,HIRAGANA,,,糞,くそ ,,kuso,"kał
+10431,WORD_INTERJECTION,,HIRAGANA,,,糞,くそ ,,kuso,"kał
 wydalina
 ekskrement
 gówno",,,10432
-10432,WORD_NOUN,,HIRAGANA,,,糞,ふん ,,fun,"kał
+10432,WORD_INTERJECTION,,HIRAGANA,,,糞,ふん ,,fun,"kał
 wydalina
 ekskrement
 gówno",kolokwializm,,10431
@@ -24430,9 +24430,9 @@ najmilszy",,,
 11007,WORD_NOUN,,HIRAGANA,,,最年長者,さいねんちょうしゃ ,,sainen chousha,najstarsza osoba,,,
 11008,WORD_VERB_IRREGULAR,,HIRAGANA,,,裁判する,さいばんする,,saiban suru,sądzić,,,
 11009,WORD_NOUN,,HIRAGANA,,,上旬,じょうじゅん,,joujun,pierwsza dekada miesiąca,,,
-11010,WORD_NOUN,,HIRAGANA,,,可也,かなり,,kanari,"dosyć
+11010,WORD_ADVERB,,HIRAGANA,,,可也,かなり,,kanari,"dosyć
 znacznie",~ no,,
-11011,WORD_NOUN,,HIRAGANA,,,可成,かなり,,kanari,"dosyć
+11011,WORD_ADVERB,,HIRAGANA,,,可成,かなり,,kanari,"dosyć
 znacznie",~ no,,
 11012,WORD_VERB_IRREGULAR,,HIRAGANA,,,攻撃する,こうげきする,,kougeki suru,atakować,,,
 11013,WORD_VERB_IRREGULAR,,HIRAGANA,,,講義する,こうぎする,,kougi suru,"robić wykład
@@ -25257,7 +25257,7 @@ wielki",,,
 11420,WORD_NOUN,,HIRAGANA,,,大きな荷物,おおきなにもつ,,ookina nimotsu,wielki bagaż,,,
 11421,WORD_NOUN,,HIRAGANA,,,大きな声,おおきなこえ,,ookina koe,donośny głos,,,
 11422,WORD_NOUN,,HIRAGANA,,,大きさ,おおきさ,,ookisa,wielkość,,,
-11423,WORD_NOUN,,HIRAGANA,,,多く,おおく,,ooku,"mnóstwo
+11423,WORD_ADVERB,,HIRAGANA,,,多く,おおく,,ooku,"mnóstwo
 wiele",,,
 11424,WORD_NOUN,,HIRAGANA,,,多くの人,おおくのひと,,ooku no hito,"mnóstwo osób
 wiele osób",,,
@@ -25702,7 +25702,7 @@ reguła
 przepis
 rozstrzygnięcie (występuje w wyrażeniu kimari ga tsuku lub kimari o tsukeru)
 konkluzja (występuje w wyrażeniu kimari ga tsuku lub kimari o tsukeru)",,,
-11622,WORD_NOUN,,HIRAGANA,,,万,まん,,man,dziesięć tysięcy,,,7454
+11622,WORD_NUMBER,,HIRAGANA,,,万,まん,,man,dziesięć tysięcy,,,7454
 11623,WORD_NUMBER,,HIRAGANA,,,千万,せんまん,,senman,dziesięć milionów,,,
 11624,WORD_NOUN,,HIRAGANA,,,真似,まね,,mane,naśladownictwo,,,
 11625,WORD_VERB_IRREGULAR,,HIRAGANA,,,真似する,まねする,,mane suru,naśladować,kogoś,,
@@ -26361,16 +26361,16 @@ nie zdążyć na czas",,,
 12015,WORD_VERB_U,,HIRAGANA,,,時間を守る,じかんをまもる,,jikan o mamoru,być punktualnym,,,
 12016,WORD_NOUN,,HIRAGANA,,,時間割,じかんわり,,jikan wari,rozkład zajęć,,,
 12017,WORD_NOUN,,HIRAGANA,,,時間割り,じかんわり,,jikan wari,rozkład zajęć,,,
-12018,WORD_NOUN,,HIRAGANA,,,通行禁止,つうこうきんし,,tsuukou kinshi,zakaz ruchu,,,
-12019,WORD_NOUN,,HIRAGANA,,,立ち入禁止,たちいりきんし,,tachiiri kinshi,"zakaz wchodzenia
+12018,WORD_EXPRESSION,,HIRAGANA,,,通行禁止,つうこうきんし,,tsuukou kinshi,zakaz ruchu,,,
+12019,WORD_EXPRESSION,,HIRAGANA,,,立ち入禁止,たちいりきんし,,tachiiri kinshi,"zakaz wchodzenia
 zakaz wstępu
 wejście wzbronienie
 wstęp wzbroniony",,,
-12020,WORD_NOUN,,HIRAGANA,,,立入り禁止,たちいりきんし,,tachiiri kinshi,"zakaz wchodzenia
+12020,WORD_EXPRESSION,,HIRAGANA,,,立入り禁止,たちいりきんし,,tachiiri kinshi,"zakaz wchodzenia
 zakaz wstępu
 wejście wzbronienie
 wstęp wzbroniony",,,
-12021,WORD_NOUN,,HIRAGANA,,,立ち入り禁止,たちいりきんし,,tachiiri kinshi,"zakaz wchodzenia
+12021,WORD_EXPRESSION,,HIRAGANA,,,立ち入り禁止,たちいりきんし,,tachiiri kinshi,"zakaz wchodzenia
 zakaz wstępu
 wejście wzbronienie
 wstęp wzbroniony",,,
@@ -26613,7 +26613,7 @@ następnym razem",,,
 wesoły
 radosny
 szczęśliwy",,,
-12154,WORD_NOUN,SUFFIX,HIRAGANA,,,行き,ゆき,,yuki,"idący
+12154,UNKNOWN,SUFFIX,HIRAGANA,,,行き,ゆき,,yuki,"idący
 jadący",dokądś,,11236
 12155,WORD_VERB_U,,HIRAGANA,,,雪が積もる,ゆきがつもる,,yuki ga tsumoru,śnieg się gromadzi,tworzy warstwę,,
 12156,WORD_VERB_RU,,HIRAGANA,,,雪が解ける,ゆきがとける,,yuki ga tokeru,śnieg topnieje,,,
