@@ -4,39 +4,39 @@ import java.util.List;
 import java.util.Set;
 
 public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
-	
+
 	private int id;
-	
+
 	private DictionaryEntryType dictionaryEntryType;
-	
+
 	private AttributeList attributeList;
-	
+
 	private WordType wordType;
-	
+
 	private String prefixKana;
-	
+
 	private List<String> groups;
-	
+
 	private String kanji;
-	
+
 	private String kanjiImagePath;
-	
+
 	private List<String> kanaList;
-	
+
 	private String prefixRomaji;
-	
+
 	private String realPrefixRomaji;
-	
+
 	private List<String> romajiList;
-	
+
 	private List<String> realRomajiList;
-		
+
 	private List<String> polishTranslates;
-	
+
 	private String info;
-	
-	private boolean useEntry;
-	
+
+	private List<ParseAdditionalInfo> parseAdditionalInfoList;
+
 	private Set<Integer> knownDuplicatedId;
 
 	public DictionaryEntryType getDictionaryEntryType() {
@@ -110,7 +110,7 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 	public void setPrefixKana(String prefixKana) {
 		this.prefixKana = prefixKana;
 	}
-	
+
 	public String getFullKanji() {
 		return kanji.equals("-") == false ? prefixKana + kanji : kanji;
 	}
@@ -125,15 +125,13 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 
 	@Override
 	public String toString() {
-		return "PolishJapaneseEntry [id=" + id + ", dictionaryEntryType="
-				+ dictionaryEntryType + ", attributeList="
-				+ attributeList + ", wordType=" + wordType
-				+ ", prefixKana=" + prefixKana + ", groups=" + groups
-				+ ", kanji=" + kanji + ", kanaList=" + kanaList
-				+ ", prefixRomaji=" + prefixRomaji + ", romajiList="
-				+ romajiList + ", polishTranslates=" + polishTranslates
-				+ ", info=" + info + ", useEntry=" + useEntry
-				+ ", knownDuplicatedId=" + knownDuplicatedId + "]";
+		return "PolishJapaneseEntry [id=" + id + ", dictionaryEntryType=" + dictionaryEntryType + ", attributeList="
+				+ attributeList + ", wordType=" + wordType + ", prefixKana=" + prefixKana + ", groups=" + groups
+				+ ", kanji=" + kanji + ", kanjiImagePath=" + kanjiImagePath + ", kanaList=" + kanaList
+				+ ", prefixRomaji=" + prefixRomaji + ", realPrefixRomaji=" + realPrefixRomaji + ", romajiList="
+				+ romajiList + ", realRomajiList=" + realRomajiList + ", polishTranslates=" + polishTranslates
+				+ ", info=" + info + ", parseAdditionalInfoList=" + parseAdditionalInfoList + ", knownDuplicatedId="
+				+ knownDuplicatedId + "]";
 	}
 
 	public int getId() {
@@ -142,14 +140,6 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public boolean isUseEntry() {
-		return useEntry;
-	}
-
-	public void setUseEntry(boolean useEntry) {
-		this.useEntry = useEntry;
 	}
 
 	public String getPrefixRomaji() {
@@ -192,38 +182,50 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 		this.attributeList = attributeList;
 	}
 
+	public List<ParseAdditionalInfo> getParseAdditionalInfoList() {
+		return parseAdditionalInfoList;
+	}
+
+	public void setParseAdditionalInfoList(List<ParseAdditionalInfo> parseAdditionalInfoList) {
+		this.parseAdditionalInfoList = parseAdditionalInfoList;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + id;
-		
+
 		return result;
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
+		if (this == obj) {
 			return true;
-		
-		if (obj == null)
+		}
+
+		if (obj == null) {
 			return false;
-		
-		if (getClass() != obj.getClass())
+		}
+
+		if (getClass() != obj.getClass()) {
 			return false;
-		
+		}
+
 		PolishJapaneseEntry other = (PolishJapaneseEntry) obj;
-		
-		if (id != other.id)
+
+		if (id != other.id) {
 			return false;
-		
+		}
+
 		return true;
 	}
 
 	@Override
 	public int compareTo(PolishJapaneseEntry entry) {
-		
-		if (id < entry.id) { 
+
+		if (id < entry.id) {
 			return -1;
 		} else if (id > entry.id) {
 			return 1;
@@ -231,7 +233,7 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 			return 0;
 		}
 	}
-	
+
 	public String getEntryPrefixKanaKanjiKanaKey() {
 		return prefixKana + "." + kanji + "." + kanaList.toString();
 	}

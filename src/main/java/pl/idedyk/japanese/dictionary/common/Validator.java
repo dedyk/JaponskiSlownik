@@ -13,6 +13,7 @@ import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
+import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
@@ -150,7 +151,9 @@ public class Validator {
 			}
 		}
 
-		// validate verb
+		// validate word
+		boolean wasError = false;
+
 		final Map<String, DictionaryEntryType> mapEdictTypeToDictionaryEntryType = new HashMap<String, DictionaryEntryType>();
 
 		mapEdictTypeToDictionaryEntryType.put("v1", DictionaryEntryType.WORD_VERB_RU);
@@ -160,6 +163,7 @@ public class Validator {
 		mapEdictTypeToDictionaryEntryType.put("v5m", DictionaryEntryType.WORD_VERB_U);
 		mapEdictTypeToDictionaryEntryType.put("v5s", DictionaryEntryType.WORD_VERB_U);
 		mapEdictTypeToDictionaryEntryType.put("vk", DictionaryEntryType.WORD_VERB_IRREGULAR);
+		mapEdictTypeToDictionaryEntryType.put("v4r", DictionaryEntryType.WORD_VERB_U);
 		mapEdictTypeToDictionaryEntryType.put("v5u", DictionaryEntryType.WORD_VERB_U);
 		mapEdictTypeToDictionaryEntryType.put("v5r-i", DictionaryEntryType.WORD_VERB_U);
 		mapEdictTypeToDictionaryEntryType.put("v5t", DictionaryEntryType.WORD_VERB_U);
@@ -180,8 +184,15 @@ public class Validator {
 		mapEdictTypeToDictionaryEntryType.put("adj-f", DictionaryEntryType.WORD_NOUN);
 		mapEdictTypeToDictionaryEntryType.put("adj-no", DictionaryEntryType.WORD_NOUN);
 		mapEdictTypeToDictionaryEntryType.put("vs", DictionaryEntryType.WORD_NOUN);
+		mapEdictTypeToDictionaryEntryType.put("n-suf", DictionaryEntryType.WORD_NOUN);
+		mapEdictTypeToDictionaryEntryType.put("n-pref", DictionaryEntryType.WORD_NOUN);
 		mapEdictTypeToDictionaryEntryType.put("pn", DictionaryEntryType.WORD_PRONOUN);
 		mapEdictTypeToDictionaryEntryType.put("int", DictionaryEntryType.WORD_INTERJECTION);
+		mapEdictTypeToDictionaryEntryType.put("adj-i", DictionaryEntryType.WORD_ADJECTIVE_I);
+		mapEdictTypeToDictionaryEntryType.put("adj-na", DictionaryEntryType.WORD_ADJECTIVE_NA);
+		mapEdictTypeToDictionaryEntryType.put("adv", DictionaryEntryType.WORD_ADVERB);
+		mapEdictTypeToDictionaryEntryType.put("n-adv", DictionaryEntryType.WORD_ADVERB);
+		mapEdictTypeToDictionaryEntryType.put("conj", DictionaryEntryType.WORD_CONJUNCTION);
 
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
 
@@ -211,42 +222,41 @@ public class Validator {
 				if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U
 						|| dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU
 						|| dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR
-						|| dictionaryEntryType == DictionaryEntryType.WORD_NOUN) {
+						|| dictionaryEntryType == DictionaryEntryType.WORD_NOUN
+						|| dictionaryEntryType == DictionaryEntryType.WORD_ADJECTIVE_I
+						|| dictionaryEntryType == DictionaryEntryType.WORD_ADJECTIVE_NA
+						|| dictionaryEntryType == DictionaryEntryType.WORD_ADVERB
+						|| dictionaryEntryType == DictionaryEntryType.WORD_PRONOUN
+						|| dictionaryEntryType == DictionaryEntryType.WORD_CONJUNCTION
+						|| dictionaryEntryType == DictionaryEntryType.WORD_INTERJECTION) {
 
 					boolean noFound = true;
-					List<String> noFoundPosType = null;
 
 					for (JMEDictEntry currentFoundJMEDict : foundJMEDict) {
 
-						DictionaryEntryType dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(
+						List<DictionaryEntryType> dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(
 								mapEdictTypeToDictionaryEntryType, currentFoundJMEDict.getPos());
 
-						if (dictionaryEntryTypeFromEdictPos == null) {
-							noFoundPosType = currentFoundJMEDict.getPos();
-						}
-
-						if (dictionaryEntryType == dictionaryEntryTypeFromEdictPos) {
+						if (dictionaryEntryTypeFromEdictPos.contains(dictionaryEntryType) == true) {
 							noFound = false;
 						}
 					}
 
-					if (noFound == true) {
+					if (noFound == true
+							&& currentPolishJapaneseEntry.getParseAdditionalInfoList().contains(
+									ParseAdditionalInfo.NO_TYPE_CHECK) == false) {
 
-						if (noFoundPosType == null) {
+						System.out.println("Dictionary entry type edict different for: " + currentPolishJapaneseEntry);
+						System.out.println("Available types: " + foundJMEDict + "\n");
 
-							System.err.println("Dictionary entry type edict different for: "
-									+ currentPolishJapaneseEntry);
-							System.err.println("Available types: " + foundJMEDict + "\n");
-
-							System.exit(1);
-
-						} else {
-							System.out.println("Can't find dictionary entry type for: " + currentPolishJapaneseEntry);
-							System.out.println("Available types: " + foundJMEDict + "\n");
-						}
+						wasError = true;
 					}
 				}
 			}
+		}
+
+		if (wasError == true) {
+			System.exit(1);
 		}
 
 		// validate names
@@ -344,19 +354,21 @@ public class Validator {
 		}
 	}
 
-	private static DictionaryEntryType getDictionaryEntryTypeFromEdictPos(
+	private static List<DictionaryEntryType> getDictionaryEntryTypeFromEdictPos(
 			Map<String, DictionaryEntryType> mapEdictTypeToDictionaryEntryType, List<String> pos) {
+
+		List<DictionaryEntryType> result = new ArrayList<DictionaryEntryType>();
 
 		for (String currentPos : pos) {
 
 			DictionaryEntryType dictionaryEntryType = mapEdictTypeToDictionaryEntryType.get(currentPos);
 
 			if (dictionaryEntryType != null) {
-				return dictionaryEntryType;
+				result.add(dictionaryEntryType);
 			}
 		}
 
-		return null;
+		return result;
 	}
 
 	private static KanaWord createKanaWord(String romaji, WordType wordType, Map<String, KanaEntry> hiraganaCache,
@@ -541,10 +553,6 @@ public class Validator {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 
-			if (polishJapaneseEntry.isUseEntry() == false) {
-				continue;
-			}
-
 			int id = polishJapaneseEntry.getId();
 			String kanji = polishJapaneseEntry.getKanji();
 
@@ -600,10 +608,6 @@ public class Validator {
 		TreeMap<String, TreeSet<PolishJapaneseEntry>> duplicatedKana = new TreeMap<String, TreeSet<PolishJapaneseEntry>>();
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
-
-			if (polishJapaneseEntry.isUseEntry() == false) {
-				continue;
-			}
 
 			int id = polishJapaneseEntry.getId();
 			String kanji = polishJapaneseEntry.getKanji();
@@ -674,10 +678,6 @@ public class Validator {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 
-			if (polishJapaneseEntry.isUseEntry() == false) {
-				continue;
-			}
-
 			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
 				continue;
 			}
@@ -699,10 +699,6 @@ public class Validator {
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
-
-			if (polishJapaneseEntry.isUseEntry() == false) {
-				continue;
-			}
 
 			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
 				continue;
@@ -737,10 +733,6 @@ public class Validator {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 
-			if (polishJapaneseEntry.isUseEntry() == false) {
-				continue;
-			}
-
 			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
 				continue;
 			}
@@ -761,10 +753,6 @@ public class Validator {
 
 		// kanji
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
-
-			if (currentPolishJapaneseEntry.isUseEntry() == true) {
-				continue;
-			}
 
 			int id = currentPolishJapaneseEntry.getId();
 			String kanji = currentPolishJapaneseEntry.getKanji();
@@ -790,10 +778,6 @@ public class Validator {
 		// kana
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
 
-			if (currentPolishJapaneseEntry.isUseEntry() == true) {
-				continue;
-			}
-
 			int id = currentPolishJapaneseEntry.getId();
 			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
 
@@ -812,10 +796,6 @@ public class Validator {
 
 		// summary
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-
-			if (polishJapaneseEntry.isUseEntry() == true) {
-				//continue;
-			}
 
 			int summaryPolishJapaneseEntryHashCode = getSummaryPolishJapaneseEntryHashCode(polishJapaneseEntry);
 

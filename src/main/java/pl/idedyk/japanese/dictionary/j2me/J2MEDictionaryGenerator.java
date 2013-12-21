@@ -45,7 +45,7 @@ public class J2MEDictionaryGenerator {
 				jmedictName);
 		generateKanjiImages(polishJapaneseEntries, charsCache, kanjiOutputDir);
 
-		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, false, true);
+		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true);
 
 		// kanji dictionary
 		//List<PolishJapaneseEntry> polishJapaneseKanjiEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);

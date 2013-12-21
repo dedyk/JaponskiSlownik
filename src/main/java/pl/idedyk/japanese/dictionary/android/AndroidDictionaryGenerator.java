@@ -66,7 +66,7 @@ public class AndroidDictionaryGenerator {
 				.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedict, jmedictCommon, jmedictName,
-				"input/word-test.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv",
+				"input/word.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv",
 				"output/transitive_intransitive_pairs.csv");
 
 		generateKanaEntries("../JapaneseDictionary_additional/kanjivg", "output/kana.csv");
@@ -113,13 +113,13 @@ public class AndroidDictionaryGenerator {
 		System.out.println("checkAndSavePolishJapaneseEntries: detectDuplicatePolishJapaneseKanjiEntries");
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);
 
-		System.out.println("checkAndSavePolishJapaneseEntries: validateUseNoEntryPolishJapaneseKanjiEntries");
-		Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);
+		// System.out.println("checkAndSavePolishJapaneseEntries: validateUseNoEntryPolishJapaneseKanjiEntries");
+		// Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);
 
 		// generate groups
 		System.out.println("checkAndSavePolishJapaneseEntries: generateGroups");
 
-		List<PolishJapaneseEntry> result = Helper.generateGroups(polishJapaneseEntries, true, true);
+		List<PolishJapaneseEntry> result = Helper.generateGroups(polishJapaneseEntries, true);
 
 		System.out.println("checkAndSavePolishJapaneseEntries: generateAdditionalInfoFromEdict");
 

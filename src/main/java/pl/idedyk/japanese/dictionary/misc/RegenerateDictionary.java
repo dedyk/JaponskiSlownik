@@ -10,22 +10,19 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 
 public class RegenerateDictionary {
-	
-	public static void main(String[] args) throws Exception {
-		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 
-		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true, false);
+	public static void main(String[] args) throws Exception {
+
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
+				.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+
+		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, false);
 
 		List<PolishJapaneseEntry> resultPolishJapaneseEntries = new ArrayList<PolishJapaneseEntry>();
 
 		int id = 1;
 
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
-
-			if (currentPolishJapaneseEntry.isUseEntry() == false) {
-				continue;
-			}
 
 			currentPolishJapaneseEntry.setId(id);
 
@@ -36,27 +33,25 @@ public class RegenerateDictionary {
 
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : resultPolishJapaneseEntries) {
 
-			if (currentPolishJapaneseEntry.isUseEntry() == false) {
-				continue;
-			}
-
 			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
 
-			Set<Integer> knownDuplicatedIds = generateKnownDuplicatedIdForKanji(polishJapaneseEntries, currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji());
+			Set<Integer> knownDuplicatedIds = generateKnownDuplicatedIdForKanji(polishJapaneseEntries,
+					currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji());
 
 			for (String currentKana : kanaList) {
 
-				generateKnownDuplicatedIdFormKanjiAndKana(knownDuplicatedIds, polishJapaneseEntries, currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji(),
-						currentKana);
+				generateKnownDuplicatedIdFormKanjiAndKana(knownDuplicatedIds, polishJapaneseEntries,
+						currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji(), currentKana);
 			}
 
 			currentPolishJapaneseEntry.setKnownDuplicatedId(knownDuplicatedIds);
 		}
 
-		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true);		
+		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true);
 	}
-	
-	private static Set<Integer> generateKnownDuplicatedIdForKanji(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, String kanji) {
+
+	private static Set<Integer> generateKnownDuplicatedIdForKanji(List<PolishJapaneseEntry> polishJapaneseKanjiEntries,
+			int id, String kanji) {
 
 		Set<Integer> result = new TreeSet<Integer>();
 
@@ -66,27 +61,20 @@ public class RegenerateDictionary {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 
-			if (polishJapaneseEntry.isUseEntry() == false) {
-				continue;
-			}
-
 			if (polishJapaneseEntry.getId() != id && polishJapaneseEntry.getKanji().equals(kanji)) {
-				result.add(polishJapaneseEntry.getId());				
+				result.add(polishJapaneseEntry.getId());
 			}
 		}
 
 		return result;
 	}
 
-	private static void generateKnownDuplicatedIdFormKanjiAndKana(Set<Integer> result, List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, String kanji, String kana) {
+	private static void generateKnownDuplicatedIdFormKanjiAndKana(Set<Integer> result,
+			List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, String kanji, String kana) {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 
-			if (polishJapaneseEntry.isUseEntry() == false) {
-				continue;
-			}
-
-			boolean differentKanji = ! kanji.equals(polishJapaneseEntry.getKanji());
+			boolean differentKanji = !kanji.equals(polishJapaneseEntry.getKanji());
 
 			if (kanji.equals("-") == true && polishJapaneseEntry.getKanji().equals("-") == false) {
 				differentKanji = false;
@@ -96,8 +84,9 @@ public class RegenerateDictionary {
 				differentKanji = false;
 			}
 
-			if (polishJapaneseEntry.getId() != id && differentKanji == false && polishJapaneseEntry.getKanaList().contains(kana) == true) {
-				result.add(polishJapaneseEntry.getId());				
+			if (polishJapaneseEntry.getId() != id && differentKanji == false
+					&& polishJapaneseEntry.getKanaList().contains(kana) == true) {
+				result.add(polishJapaneseEntry.getId());
 			}
 		}
 	}
