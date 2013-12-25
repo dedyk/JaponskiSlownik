@@ -1380,7 +1380,8 @@ stryjek
 mężczyzna w średnim wieku",,,
 509,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-6
 Genki 1-7",,頭がいい,あたまがいい,,atama ga ii,mądry,,,
-510,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-6,,頭が悪い,あたまがわるい,,atama ga warui,głupi,,,
+510,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-6,,頭が悪い,あたまがわるい,,atama ga warui,"głupi
+tępy",,,
 511,WORD_EXPRESSION,,HIRAGANA,Genki 1-6,,真っ直ぐ行く,まっすぐいく,,massugu iku,iść prosto,,,
 512,WORD_EXPRESSION,,HIRAGANA,Genki 1-6,,右に曲がる,みぎにまがる,,migi ni magaru,skręcić w prawo,,,
 513,WORD_EXPRESSION,,HIRAGANA,Genki 1-6,,左に曲がる,ひだりにまがる,,hidari ni magaru,skręcić w lewo,,,
@@ -6010,7 +6011,7 @@ związek",,,
 2561,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-17,,芸術,げいじゅつ,,geijutsu,"sztuka
 sztuka piękna",,,
 2562,WORD_NOUN,,HIRAGANA,,,芸術家,げいじゅつか,,geijutsuka,artysta,,,
-2563,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-17,,音楽家,おんがくか,,ongakuka,muzyk,,,
+2563,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-17,,音楽家,おんがくか,,ongakuka,muzyk,,,13147
 2564,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-17,,詩,し,,shi,"poezja
 poemat
 wiersz
@@ -7350,7 +7351,7 @@ składanie",,,
 3176,WORD_NOUN,,HIRAGANA,,,組成,そせい,,sosei,"kompozycja
 formacja
 konstrukcja",,,
-3177,WORD_NOUN,,HIRAGANA,,,労働組合,ろうどうくみあい,,roudou kumiai,związki zawodowe,,,
+3177,WORD_NOUN,,HIRAGANA,,,労働組合,ろうどうくみあい,,roudou kumiai,związek zawodowy,,,
 3178,WORD_NOUN,,HIRAGANA,,,組閣,そかく,,sokaku,"tworzenie gabinetu (rządu)
 formowanie gabinetu (rządu)",,,
 3179,WORD_VERB_U,,HIRAGANA,,,労る,いたわる,,itawaru,współczuć,,,
@@ -24498,7 +24499,8 @@ uchwycić",,,
 11031,WORD_NOUN,,HIRAGANA,,,地上,ちじょう,,chijou,"powierzchnia ziemi
 na ziemi",,,
 11032,WORD_NOUN,,HIRAGANA,,,地下水,ちかすい,,chikasui,"wody gruntowe
-wody podziemne",,,
+wody podziemne
+woda podskórna",,,
 11033,WORD_NOUN,,HIRAGANA,,,地下道,ちかどう,,chikadou,przejście podziemne,,,
 11034,WORD_NOUN,,HIRAGANA,,,地下街,ちかがい,,chikagai,podziemne centrum handlowe,,,
 11035,WORD_NOUN,,HIRAGANA,,,地下二階,ちかにかい,,chika nikai,"dwa piętra pod ziemią
@@ -28200,3 +28202,20 @@ mgła rozprasza się",,,
 13137,WORD_VERB_RU,,HIRAGANA,,,背が伸びる,せがのびる,,se ga nobiru,urosnąć,,,
 13138,WORD_NOUN,,HIRAGANA,,,修理代,しゅうりだい,,shuuridai,koszt naprawy,,,
 13139,WORD_NOUN,,HIRAGANA,,,週刊雑誌,しゅうかんざっし,,shuukan zasshi,tygodnik,,,
+13140,WORD_VERB_U,,HIRAGANA,,,傘をさす,かさをさす,,kasa o sasu,"iść pod parasolem
+nieść parasol nad głową",,,
+13141,WORD_VERB_RU,,HIRAGANA,,,傘をひろげる,かさをひろげる,,kasa o hirogeru,otwierać parasol,,,
+13142,WORD_VERB_RU,,HIRAGANA,,,傘をつぼめる,かさをつぼめる,,kasa o tsubomeru,zamykać parasol,,,
+13143,WORD_NOUN,,HIRAGANA,,,悪い品物,わるいしなもの,,warui shinamono,kiepski towar,,,
+13144,WORD_NOUN,,HIRAGANA,,,雄犬,おすいぬ,,osu inu,pies,samiec,,
+13145,WORD_NOUN,,HIRAGANA,,,雄猫,おすねこ,,osu neko,kot,samiec,,
+13146,WORD_NOUN,,HIRAGANA,,,片道切符,かたみちきっぷ,,katamichi kippu,bilet w jedną stronę,,,
+13147,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-17,,音楽家,おんがっか,,ongakka,muzyk,,,2563
+13148,WORD_VERB_IRREGULAR,,HIRAGANA,,,お礼をする,おれいをする,,orei o suru,składać podziękowanie,,,
+13149,UNKNOWN,,HIRAGANA,,,零下十度,れいかじゅうど,,reika juudo,dziesięć stopni poniżej zera,,,
+13150,WORD_VERB_RU,,HIRAGANA,,,汗が出る,あせがでる,,ase ga deru,pocić się,,,
+13151,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ハンカチで汗をふく,ハンカチであせをふく,,hankachi de ase o fuku,ocierać pot chusteczką,,,
+13152,WORD_ADJECTIVE_I,,HIRAGANA,,,足が強い,あしがつよい,,ashi ga tsuyoi,jest dobrym piechurem,dosł: ma mocne nogi,,
+13153,WORD_ADJECTIVE_I,,HIRAGANA,,,足が弱い,あしがよわい,,ashi ga yowai,jest kiepskim piechurem,dosł: ma słabe nogi,,
+13154,WORD_VERB_U,,HIRAGANA,,,川を渡る,かわをわたる,,kawa o wataru,przeprawiać się przez rzekę,,,
+13155,WORD_VERB_U,,HIRAGANA,,,橋を渡る,はしをわたる,,hashi o wataru,przejść przez most,,,
