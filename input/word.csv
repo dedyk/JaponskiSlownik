@@ -759,7 +759,7 @@ Genki kanji 1-3",,四月,しがつ,,shigatsu,kwiecień,,,
 340,WORD_MONTH,,HIRAGANA,Genki 1-4,,十二月,じゅうにがつ,,juunigatsu,grudzień,,,
 341,UNKNOWN,,HIRAGANA,"Genki 1-4
 Genki 2-19",,一昨日,おととい,,ototoi,przedwczoraj,,,3701
-342,UNKNOWN,,HIRAGANA,Genki 1-4,,昨日,きのう,,kinou,wczoraj,,,
+342,UNKNOWN,,HIRAGANA,Genki 1-4,,昨日,きのう,,kinou,wczoraj,,,13295
 343,UNKNOWN,,HIRAGANA,Genki 1-4,,明後日,あさって,,asatte,pojutrze,,,6911
 344,UNKNOWN,,HIRAGANA,Genki 1-4,,先々週,せんせんしゅう,,sensenshuu,tydzień przed zeszłym tygodniem,,,
 345,UNKNOWN,,HIRAGANA,"Genki 1-4
@@ -1577,7 +1577,7 @@ nosić","ubranie, poniżej pasa, np. obuwie, skarpetki, spodnie, spódnicę",,
 grubieć
 tyć",,,
 591,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,,太っています,ふとっています,,futotte imasu,być grubym,,,
-592,WORD_VERB_RU,,HIRAGANA,Genki 1-7,,-,めがねをかける,,megane o kakeru,zakładać okulary,,,
+592,WORD_VERB_RU,,HIRAGANA,Genki 1-7,,眼鏡をかける,めがねをかける,,megane o kakeru,zakładać okulary,,,
 593,WORD_VERB_RU,,HIRAGANA,"Genki 1-7
 Genki kanji 2-13",,着る,きる,,kiru,"zakładać
 nosić
@@ -6787,7 +6787,8 @@ urozmaicenie",,,2904
 2904,WORD_NOUN,,HIRAGANA,,,変化,へんげ,,henge,chochlik,,,2903
 2905,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,化学,かがく,,kagaku,chemia,,,
 2906,WORD_NOUN,,HIRAGANA,,,化け物,ばけもの,,bakemono,straszydło,,,
-2907,WORD_NOUN,,HIRAGANA,,,化粧品,けしょうひん,,keshouhin,artykuły kosmetyczne,,,
+2907,WORD_NOUN,,HIRAGANA,,,化粧品,けしょうひん,,keshouhin,"artykuły kosmetyczne
+kosmetyki",,,
 2908,WORD_NOUN,,HIRAGANA,,,援助,えんじょ,,enjo,"pomoc
 asysta
 wsparcie",,,
@@ -7371,7 +7372,8 @@ usługa",,,
 wynagrodzenie
 zapłata za pracę",,,
 3186,WORD_NOUN,,HIRAGANA,,,送り主,おくりぬし,,okurinushi,nadawca,,,
-3187,WORD_NOUN,,HIRAGANA,,,送り先,おくりさき,,okurisaki,adres,,,
+3187,WORD_NOUN,,HIRAGANA,,,送り先,おくりさき,,okurisaki,"adres
+miejsce docelowe",,,
 3188,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,送金,そうきん,,soukin,"przekaz
 przelew",pieniędzy,,
 3189,WORD_NOUN,,HIRAGANA,,,送別会,そうべつかい,,soubetsukai,pożegnalne przyjęcie,,,
@@ -7403,7 +7405,9 @@ zwroty wyrażające respekt",,,
 Genki dodatkowe 2-18",,種類,しゅるい,,shurui,"rodzaj
 gatunek
 typ",,,
-3202,WORD_NOUN,,HIRAGANA,Genki 2-19,,怠け者,なまけもの,,namakemono,leń,,,
+3202,WORD_NOUN,,HIRAGANA,Genki 2-19,,怠け者,なまけもの,,namakemono,"leń
+leniuch
+leniwa osoba",,,
 3203,WORD_NOUN,,HIRAGANA,Genki 2-19,,恥ずかしがり屋,はずかしがりや,,hazukashigariya,nieśmiała osoba,,,
 3204,WORD_NOUN,,HIRAGANA,,,課長,かちょう,,kachou,"kierownik działu
 szef sekcji",,,
@@ -8505,7 +8509,8 @@ mieć odrębne zdanie",,,2144
 3700,WORD_VERB_RU,,HIRAGANA,,,違える,たがえる,,tagaeru,"zmieniać
 mylić",,,3698
 3701,UNKNOWN,,HIRAGANA,,,一昨日,いっさくじつ,,issakujitsu,przedwczoraj,,,341
-3702,UNKNOWN,,HIRAGANA,,,昨年,さくねん,,sakunen,ubiegły rok,,,
+3702,UNKNOWN,,HIRAGANA,,,昨年,さくねん,,sakunen,"ubiegły rok
+w zeszłym roku",,,
 3703,UNKNOWN,,HIRAGANA,,,一昨年,いっさくねん,,issakunen,dwa lata temu,,,349
 3704,UNKNOWN,,HIRAGANA,,,昨今,さっこん,,sakkon,"niedawno
 w tych dniach",,,
@@ -9025,7 +9030,8 @@ dom
 sprzedawca
 kupiec","~, postfiks",,12073
 3959,WORD_NOUN,,HIRAGANA,Genki 2-20,,昨夜,ゆうべ,,yuube,"wczorajszy wieczór
-wczorajsza noc",,,
+wczorajsza noc
+ostatnia noc",,,13293
 3960,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,致す,いたす,,itasu,[modestywna forma od suru],,,
 3961,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,Genki 2-20,,頂く,いただく,,itadaku,"[modestywna forma od taberu, nomu, morau]",,,
 3962,WORD_VERB_U,,HIRAGANA,Genki 2-20,,伺う,うかがう,,ukagau,"pytać
@@ -9869,7 +9875,8 @@ narzędzie
 instalacje
 urządzenia",,,
 4353,WORD_NOUN,,HIRAGANA,,,食器,しょっき,,shokki,"sztućce
-naczynie stołowe",,,
+naczynie stołowe
+naczynia stołowe",,,
 4354,WORD_NOUN,,HIRAGANA,,,器材,きざい,,kizai,części do maszyn,,,
 4355,WORD_NOUN,,HIRAGANA,,,器官,きかん,,kikan,"organ
 narząd","np. wzroku, słuchu, itd.",,
@@ -10806,7 +10813,10 @@ uczestnictwo",,,
 radca",w sprawach publicznych,,
 4757,WORD_NOUN,,HIRAGANA,,,参列,さんれつ,,sanretsu,"udział
 obecność",,,
-4758,WORD_NOUN,,HIRAGANA,,,参考書,さんこうしょ,,sankousho,książka informacyjna,,,
+4758,WORD_NOUN,,HIRAGANA,,,参考書,さんこうしょ,,sankousho,"książka informacyjna
+informator
+materiał pomocniczy
+podręczne kompendium",,,
 4759,WORD_NOUN,,HIRAGANA,,,参議院,さんぎいん,,sangiin,Izba Radców,japońska,,
 4760,WORD_NOUN,,HIRAGANA,,,墓場,はかば,,hakaba,cmentarz,,,
 4761,WORD_NOUN,,HIRAGANA,,,墓穴,ぼけつ,,boketsu,dół grobowy,,,
@@ -14658,6 +14668,7 @@ przesłać
 przesyłać
 przekazywać",,,
 6432,WORD_NOUN,,HIRAGANA,,,届け先,とどけさき,,todokesaki,"adres
+adresat
 cel",,,
 6433,WORD_NOUN,,HIRAGANA,,,欠席届,けっせきとどけ,,kessekitodoke,zawiadomienie o nieobecności,,,
 6434,WORD_NOUN,,HIRAGANA,,,無届け,むとどけ,,mutodoke,nieobecność bez powiadomienia,,,
@@ -28225,7 +28236,9 @@ nieść parasol nad głową",,,
 13150,WORD_VERB_RU,,HIRAGANA,,,汗が出る,あせがでる,,ase ga deru,pocić się,,,
 13151,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ハンカチで汗をふく,ハンカチであせをふく,,hankachi de ase o fuku,ocierać pot chusteczką,,,
 13152,WORD_ADJECTIVE_I,,HIRAGANA,,,足が強い,あしがつよい,,ashi ga tsuyoi,jest dobrym piechurem,dosł: ma mocne nogi,,
-13153,WORD_ADJECTIVE_I,,HIRAGANA,,,足が弱い,あしがよわい,,ashi ga yowai,jest kiepskim piechurem,dosł: ma słabe nogi,,
+13153,WORD_ADJECTIVE_I,,HIRAGANA,,,足が弱い,あしがよわい,,ashi ga yowai,"jest kiepskim piechurem
+mieć słabe nogi
+łatwo się męczyć chodząc",dosł: ma słabe nogi,,
 13154,WORD_VERB_U,,HIRAGANA,,,川を渡る,かわをわたる,,kawa o wataru,przeprawiać się przez rzekę,,,
 13155,WORD_VERB_U,,HIRAGANA,,,橋を渡る,はしをわたる,,hashi o wataru,przejść przez most,,,
 13156,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ダイヤモンドが光る,ダイヤモンドがひかる,,daiyamondo ga hikaru,diament błyszczy,,,
@@ -28389,3 +28402,31 @@ wychodzący na północ",,,
 13286,WORD_NOUN,,HIRAGANA,,,健康にいい体操,けんこうにいいたいそう,,kenkou ni ii taisou,ćwiczenia pożyteczne dla zdrowia,dosł: dobre,,
 13287,WORD_VERB_U,,HIRAGANA,,,息をはく,いきをはく,,iki o haku,wydychać,,,
 13288,WORD_NOUN,,HIRAGANA,,,行き帰り,いきかえり,,ikikaeri,pójść tam i z powrotem,,,
+13289,WORD_VERB_U,,HIRAGANA,,,問題を解く,もんだいをとく,,mondai o toku,"rozwiązywać problem
+rozwiązywać zadanie",,,
+13290,WORD_NOUN,,HIRAGANA,,,元首相,もとしゅしょう,,moto shushou,były premier,,,
+13291,WORD_NOUN,,HIRAGANA,,,連絡先,れんらくさき,,renrakusaki,kontakt,do osoby,,
+13292,WORD_NOUN,,HIRAGANA,,,流行作家,りゅうこうさっか,,ryuukou sakka,"popularny pisarz
+autor bestsellerów",,,
+13293,WORD_NOUN,,HIRAGANA,,,昨夜,さくや,,sakuya,"wczorajszy wieczór
+wczorajsza noc
+ostatnia noc",,,3959
+13294,WORD_NOUN,,HIRAGANA,,,昨晩,さくばん,,sakuban,ostatniego wieczoru,,,
+13295,WORD_NOUN,,HIRAGANA,,,昨日,さくじつ,,sakujitsu,wczoraj,,,342
+13296,WORD_NOUN,,HIRAGANA,,,参加者,さんかしゃ,,sankasha,"uczestnik
+współzawodnik",,,
+13297,WORD_NOUN,,HIRAGANA,,,参加国,さんかこく,,sankakoku,kraj uczestniczący,,,
+13298,WORD_VERB_U,,HIRAGANA,,,目薬をさす,めぐすりをさす,,megusuri o sasu,zapuścić krople do oczu,,,
+13299,WORD_VERB_U,,HIRAGANA,,,やかんに水をさす,やかんにみずをさす,,yakan ni mizu o sasu,napełnić czajnik wodą,,,
+13300,WORD_VERB_U,,HIRAGANA,,,眼鏡を外す,めがねをはずす,,megane o hazusu,zdejmować okulary,,,
+13301,WORD_VERB_U,,HIRAGANA,,,火を消す,ひをけす,,hi o kesu,gasić ogień,,,
+13302,WORD_NOUN,,HIRAGANA,,,洋服だんす,ようふくだんす,,youfuku dansu,szafa na ubrania,,,
+13303,UNKNOWN,,HIRAGANA,,,八日前,ようかまえ,,youkamae,osiem dni temu,,,
+13304,UNKNOWN,,HIRAGANA,,,八日後,ようかご,,youkago,"za osiem dni
+po ośmiu dniach",,,
+13305,UNKNOWN,,HIRAGANA,,,四日前,よっかまえ,,yokkamae,cztery dni temu,,,
+13306,UNKNOWN,,HIRAGANA,,,四日後,よっかご,,yokkago,"za cztery dni
+po czterech dniach",,,
+13307,WORD_VERB_U,,HIRAGANA,,,予想が当たる,よそうがあたる,,yosou ga ataru,czyjeś przewidywania się sprawdziły,,,
+13308,WORD_VERB_RU,,HIRAGANA,,,予想が外れる,よそうがはずれる,,yosou ga hazureru,czyjeś przewidywania się nie sprawdziły,,,
+13309,WORD_ADJECTIVE_I,,HIRAGANA,,,数学に弱い,すうがくによわい,,suugaku ni yowai,słaby w matematyce,,,
