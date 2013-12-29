@@ -6350,7 +6350,8 @@ wydatek",,,
 2709,WORD_NOUN,,HIRAGANA,,,旅費,りょひ,,ryohi,koszty podróży,,,
 2710,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,生活費,せいかつひ,,seikatsuhi,"koszty utrzymania
 koszty życia
-wydatki na życie",,,
+wydatki na życie
+środki na życie",,,
 2711,WORD_NOUN,,HIRAGANA,,,消費,しょうひ,,shouhi,"konsumpcja
 zużycie
 spożycie",,,
@@ -11623,7 +11624,8 @@ pomylić się
 popełnić błąd",,,
 5087,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-21,を,馬鹿にする,ばかにする,o,baka ni suru,"obrażać
 wyśmiewać się z
-żartować sobie",,,
+żartować sobie
+lekceważyć",kogoś,,
 5088,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-21,,昼寝をする,ひるねをする,,hirune o suru,"robić sobie drzemkę
 zdrzemną się",,,
 5089,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-21,に,連絡する,れんらくする,ni,renraku suru,kontaktować się z,,,
@@ -28461,7 +28463,7 @@ kierunki wychowania",,,
 13323,WORD_NOUN,,HIRAGANA,,,動詞の活用表,どうしのかつようひょう,,doushi no katsuyouhyou,tabela koniugacji czasowników,,,
 13324,WORD_NOUN,,HIRAGANA,,,平和の願い,へいわのねがい,,heiwa no negai,pragnienie pokoju,,,
 13325,WORD_VERB_RU,,HIRAGANA,,,試験を受ける,しけんをうける,,shiken o ukeru,zdawać egzamin,,,
-13326,WORD_NOUN,,HIRAGANA_KATAKANA,,,ヘボン式ローマ字,ヘボンしきローマ字,,henonshiki roumaji,transkrypcja łacińska według systemu Hepburna,,,
+13326,WORD_NOUN,,HIRAGANA_KATAKANA,,,ヘボン式ローマ字,ヘボンしきローマジ,,henonshiki roumaji,transkrypcja łacińska według systemu Hepburna,,,
 13327,WORD_NOUN,,HIRAGANA,,,寝台車,しんだいしゃ,,shindaisha,wagon sypialny,,,
 13328,WORD_ADJECTIVE_I,,HIRAGANA,,,神経が鋭い,しんけいがするどい,,shinkei ga surudoi,"czuły
 nerwowy
@@ -28483,19 +28485,44 @@ doznać niepowodzenia w interesach",,,
 limit czasu",,,
 13338,WORD_NOUN,,HIRAGANA,,,家庭生活,かていせいかつ,,katei seikatsu,"życie rodzinne
 życie domowe",,,
-13339,WORD_NOUN,,HIRAGANA,,,生活費,せいかつひ,,seikatsuhi,"środki na życie
-koszty utrzymania",,,
-13340,WORD_NOUN,,HIRAGANA,,,請求書,せいきゅうしょ,,seikyuusho,rachunek,,,
-13341,WORD_VERB_RU,,HIRAGANA,,,請求を受ける,せいきゅうをうける,,seikyuu o ukeru,otrzymać rachunek,,,
-13342,WORD_NOUN,,HIRAGANA,,,交通整理,こうつうせいり,,koutsuu seiri,"kontrola ruchu
+13339,WORD_NOUN,,HIRAGANA,,,請求書,せいきゅうしょ,,seikyuusho,rachunek,,,
+13340,WORD_VERB_RU,,HIRAGANA,,,請求を受ける,せいきゅうをうける,,seikyuu o ukeru,otrzymać rachunek,,,
+13341,WORD_NOUN,,HIRAGANA,,,交通整理,こうつうせいり,,koutsuu seiri,"kontrola ruchu
 kierowanie ruchem",,,
-13343,WORD_NOUN,,HIRAGANA,,,経済政策,けいざいせいさく,,keizai seisaku,polityka gospodarcza,,,
-13344,WORD_NOUN,,HIRAGANA,,,農業政策,のうぎょうせいさく,,nougyou seisaku,polityka rolna,,,
-13345,WORD_VERB_RU,,HIRAGANA,,,政策を立てる,せいさくをたてる,,seisaku o tateru,"sformułować tezy polityczne
+13342,WORD_NOUN,,HIRAGANA,,,経済政策,けいざいせいさく,,keizai seisaku,polityka gospodarcza,,,
+13343,WORD_NOUN,,HIRAGANA,,,農業政策,のうぎょうせいさく,,nougyou seisaku,polityka rolna,,,
+13344,WORD_VERB_RU,,HIRAGANA,,,政策を立てる,せいさくをたてる,,seisaku o tateru,"sformułować tezy polityczne
 określić swoją politykę",,,
-13346,WORD_NOUN,,HIRAGANA,,,製作費,せいさくひ,,seisakuhi,koszty produkcji,,,
-13347,WORD_NOUN,,HIRAGANA,,,生産高,せいさんだか,,seisandaka,wysokość produkcji,,,
-13348,WORD_NOUN,,HIRAGANA,,,生産者,せいさんしゃ,,seisansha,"producent
+13345,WORD_NOUN,,HIRAGANA,,,製作費,せいさくひ,,seisakuhi,koszty produkcji,,,
+13346,WORD_NOUN,,HIRAGANA,,,生産高,せいさんだか,,seisandaka,wysokość produkcji,,,
+13347,WORD_NOUN,,HIRAGANA,,,生産者,せいさんしゃ,,seisansha,"producent
 wytwórca",,,
-13349,WORD_NOUN,,HIRAGANA,,,生産技術,せいさんぎじゅつ,,seisan gijutsu,"technika produkcyjna
+13348,WORD_NOUN,,HIRAGANA,,,生産技術,せいさんぎじゅつ,,seisan gijutsu,"technika produkcyjna
 technologia przemysłowa",,,
+13349,WORD_VERB_RU,,HIRAGANA,,,行をかえる,ぎょうをかえる,,gyou o kaeru,"zaczynać od nowego wiersza
+zmieniać wiersz",,,
+13350,WORD_VERB_U,,HIRAGANA,,,能力がある,のうりょくがある,,nouryoku ga aru,mieć zdolności,,,
+13351,WORD_EXPRESSION,,HIRAGANA,,,能力がない,のうりょくがない,,nouryoku ga nai,nie mieć zdolności,,,
+13352,WORD_VERB_U,,HIRAGANA_KATAKANA,,,-,ノートをとる,,nooto o toru,"robić notatki
+notować",,,
+13353,WORD_VERB_U,,HIRAGANA,,,服を脱ぐ,ふくをぬぐ,,fuku o nugu,"zdejmować ubranie
+rozbierać się",,,
+13354,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ズボンを脱ぐ,ズボンをぬぐ,,zubon o nugu,zdejmować spodnie,,,
+13355,WORD_VERB_U,,HIRAGANA,,,靴下を脱ぐ,くつしたをぬぐ,,kutsushita o nugu,zdejmować skarpety,,,
+13356,WORD_VERB_RU,,HIRAGANA,,,髪の毛が抜ける,かみのけがぬける,,kami no ke ga nukeru,"włosy wychodzą
+włosy wypadają",,,
+13357,WORD_VERB_U,,HIRAGANA,,,毛を抜く,けをぬく,,ke o nuku,wyrywać włos,,,
+13358,WORD_VERB_U,,HIRAGANA,,,草を抜く,くさをぬく,,kusa o nuku,"wyrywać zielsko
+pleć",,,
+13359,WORD_VERB_U,,HIRAGANA,,,歯を抜く,はをぬく,,ha o nuku,wyrywać ząb,,,
+13360,WORD_NOUN,,HIRAGANA,,,天気図,てんきず,,tenkizu,mapa pogody,,,
+13361,WORD_NOUN,,HIRAGANA,,,案内図,あんないず,,annaizu,"mapa turystyczna
+plan",,,
+13362,WORD_NOUN,,HIRAGANA,,,馬鹿者,ばかもの,,bakamono,głupiec,,,
+13363,WORD_NOUN,,HIRAGANA,,,ばか者,ばかもの,,bakamono,głupiec,,,
+13364,WORD_VERB_U,,HIRAGANA,,,便所に行く,べんじょにいく,,benjo ni iku,iść do toalety,,,
+13365,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,ビールびん,,biiru bin,butelka po piwie,,,
+13366,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ビールを飲む,ビールをのむ,,biiru o nomu,pić piwo,,,
+13367,WORD_NOUN,,HIRAGANA,,,美術品,びじゅつひん,,bijutsuhin,dzieło sztuki,,,
+13368,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,インクびん,,inku bin,buteleczka od atramentu,,,
+13369,WORD_NOUN,,HIRAGANA,,,しょう油びん,しょうゆびん,,shouyu bin,butelka od sosu sojowego,,,
