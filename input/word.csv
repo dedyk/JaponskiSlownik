@@ -3081,7 +3081,8 @@ konwenans",,,
 cło",,,
 1186,WORD_NOUN,,HIRAGANA,"Genki 2-15
 Genki kanji 2-19",,卒業式,そつぎょうしき,,sotsugyou shiki,"ceremonia ukończenia szkoły
-ceremonia zakończenia szkoły",,,
+ceremonia zakończenia szkoły
+ceremonia rozdania (wręczenie) świadectw (dyplomów)",,,
 1187,WORD_NOUN,,HIRAGANA,"Genki 1-4
 Genki 2-15",,蕎麦,そば,,soba,japoński makaron gryczany,,,385
 1188,WORD_NOUN,,HIRAGANA,"Genki 2-15
@@ -5698,7 +5699,7 @@ miejscowy",,,
 rebus",,,
 2390,WORD_NOUN,,HIRAGANA,,,学園,がくえん,,gakuen,"akademia
 kampus",,,
-2391,WORD_NOUN,,HIRAGANA,,,入学試験,にゅうがくしけん,,nyuugakushiken,egzamin wstępny,,,
+2391,WORD_NOUN,,HIRAGANA,,,入学試験,にゅうがくしけん,,nyuugaku shiken,egzamin wstępny,"do szkoły, na uczelnię",,
 2392,WORD_NOUN,,KATAKANA_HIRAGANA,,,オレンジ色,オレンジイロ,,orenji iro,kolor pomarańczowy,,,
 2393,WORD_NOUN,,HIRAGANA,,,原色,げんしょく,,genshoku,podstawowe kolory,,,
 2394,WORD_NOUN,,HIRAGANA,,,色紙,しきし,,shikishi,kolorowy papier,,,6751
@@ -20259,6 +20260,7 @@ zagięcie",,,
 9119,WORD_NOUN,,HIRAGANA,,,製作所,せいさくしょ ,,seisakusho,"fabryka
 wytwórnia",,,9120
 9120,WORD_NOUN,,HIRAGANA,,,製作所,せいさくじょ ,,seisakujo,"fabryka
+zakład wytwórczy
 wytwórnia",,,9119
 9121,WORD_VERB_U,,HIRAGANA,,,遊ばす,あそばす,,asobasu,pozwolić grać,,,
 9122,WORD_VERB_RU,,HIRAGANA,,,当てる,あてる,,ateru,"przyłożyć
@@ -24322,7 +24324,9 @@ powstrzymywać się od palenia",,,
 10932,WORD_VERB_IRREGULAR,,HIRAGANA,,,入学する,にゅうがくする,,nyuugaku suru,"wstępować na uczelnię
 wstępować do szkoły",,,
 10933,WORD_NOUN,,HIRAGANA,,,入学式,にゅうがくしき ,,nyuugaku shiki,"uroczystość przyjęcia nowych uczniów
-uroczystość przyjęcia nowych studentów",,,
+uroczystość przyjęcia nowych studentów
+inauguracja roku szkolnego
+inauguracja roku akademickiego",,,
 10934,WORD_NOUN,,HIRAGANA,,,入学願書,にゅうがくがんしょ ,,nyuugaku gansho,"podanie o przyjęcie na uczelnie
 podanie o przyjęcie do szkoły",,,
 10935,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,一階,いっかい,,ikkai,jeden,numer piętra,,
@@ -28456,3 +28460,42 @@ kierunki wychowania",,,
 13322,WORD_NOUN,,HIRAGANA,,,予定表,よていひょう,,yoteihyou,program,,,
 13323,WORD_NOUN,,HIRAGANA,,,動詞の活用表,どうしのかつようひょう,,doushi no katsuyouhyou,tabela koniugacji czasowników,,,
 13324,WORD_NOUN,,HIRAGANA,,,平和の願い,へいわのねがい,,heiwa no negai,pragnienie pokoju,,,
+13325,WORD_VERB_RU,,HIRAGANA,,,試験を受ける,しけんをうける,,shiken o ukeru,zdawać egzamin,,,
+13326,WORD_NOUN,,HIRAGANA_KATAKANA,,,ヘボン式ローマ字,ヘボンしきローマ字,,henonshiki roumaji,transkrypcja łacińska według systemu Hepburna,,,
+13327,WORD_NOUN,,HIRAGANA,,,寝台車,しんだいしゃ,,shindaisha,wagon sypialny,,,
+13328,WORD_ADJECTIVE_I,,HIRAGANA,,,神経が鋭い,しんけいがするどい,,shinkei ga surudoi,"czuły
+nerwowy
+wrażliwy",,,
+13329,WORD_ADJECTIVE_I,,HIRAGANA,,,神経が鈍い,しんけいがにぶい,,shinkei ga nibui,"niewrażliwy
+gruboskórny
+nieczuły",,,
+13330,WORD_EXPRESSION,,HIRAGANA,,,信用できる,しんようできる,,shin'you dekiru,"godny zaufania
+szanowany
+wiarygodny",,,
+13331,WORD_VERB_RU,,HIRAGANA,,,信用を得る,しんようをえる,,shin'you o eru,zdobyć zaufanie,czyjeś,,
+13332,WORD_VERB_U,,HIRAGANA,,,信用を失う,しんようをうしなう,,shin'you o ushinau,stracić zaufanie,czyjeś,,
+13333,WORD_NOUN,,HIRAGANA,,,心臓病,しんぞうびょう,,shinzoubyou,choroba serca,,,
+13334,WORD_VERB_IRREGULAR,,HIRAGANA,,,試験に失敗する,しけんにしっぱいする,,shiken ni shippai suru,oblać egzamin,,,
+13335,WORD_VERB_IRREGULAR,,HIRAGANA,,,事業に失敗する,じぎょうにしっぱいする,,jigyou ni shippai suru,"doznać niepowodzenia w pracy
+doznać niepowodzenia w interesach",,,
+13336,WORD_NOUN,,HIRAGANA,,,背が低い人,せいがひくいひと,,sei ga hikui hito,człowiek niskiego wzrostu,,,
+13337,WORD_NOUN,,HIRAGANA,,,制限時間,せいげんじかん,,seigen jikan,"ograniczony czas
+limit czasu",,,
+13338,WORD_NOUN,,HIRAGANA,,,家庭生活,かていせいかつ,,katei seikatsu,"życie rodzinne
+życie domowe",,,
+13339,WORD_NOUN,,HIRAGANA,,,生活費,せいかつひ,,seikatsuhi,"środki na życie
+koszty utrzymania",,,
+13340,WORD_NOUN,,HIRAGANA,,,請求書,せいきゅうしょ,,seikyuusho,rachunek,,,
+13341,WORD_VERB_RU,,HIRAGANA,,,請求を受ける,せいきゅうをうける,,seikyuu o ukeru,otrzymać rachunek,,,
+13342,WORD_NOUN,,HIRAGANA,,,交通整理,こうつうせいり,,koutsuu seiri,"kontrola ruchu
+kierowanie ruchem",,,
+13343,WORD_NOUN,,HIRAGANA,,,経済政策,けいざいせいさく,,keizai seisaku,polityka gospodarcza,,,
+13344,WORD_NOUN,,HIRAGANA,,,農業政策,のうぎょうせいさく,,nougyou seisaku,polityka rolna,,,
+13345,WORD_VERB_RU,,HIRAGANA,,,政策を立てる,せいさくをたてる,,seisaku o tateru,"sformułować tezy polityczne
+określić swoją politykę",,,
+13346,WORD_NOUN,,HIRAGANA,,,製作費,せいさくひ,,seisakuhi,koszty produkcji,,,
+13347,WORD_NOUN,,HIRAGANA,,,生産高,せいさんだか,,seisandaka,wysokość produkcji,,,
+13348,WORD_NOUN,,HIRAGANA,,,生産者,せいさんしゃ,,seisansha,"producent
+wytwórca",,,
+13349,WORD_NOUN,,HIRAGANA,,,生産技術,せいさんぎじゅつ,,seisan gijutsu,"technika produkcyjna
+technologia przemysłowa",,,
