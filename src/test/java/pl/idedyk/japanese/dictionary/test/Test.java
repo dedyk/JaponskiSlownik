@@ -1,10 +1,14 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.HashMap;
 import java.util.List;
-import java.util.TreeMap;
+import java.util.Map;
 
-import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
-import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
+import pl.idedyk.japanese.dictionary.common.Validator;
+import pl.idedyk.japanese.dictionary.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 
 public class Test {
 
@@ -150,12 +154,49 @@ public class Test {
 
 		//System.out.println(jmedictName.get(EdictReader.getMapKey("誠", "まこと")));
 
+		/*
 		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader
 				.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
 		List<JMEDictEntry> list = jmedict.get(JMEDictReader.getMapKey(null, "フレデリック"));
 
 		System.out.println(list);
+		*/
+
+		//String word = "ハーモニカをふく";
+
+		// hiragana
+		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
+
+		// katakana
+		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
+
+		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
+
+		for (KanaEntry kanaEntry : hiraganaEntries) {
+			hiraganaCache.put(kanaEntry.getKana(), kanaEntry);
+		}
+
+		Map<String, KanaEntry> katakanaCache = new HashMap<String, KanaEntry>();
+
+		for (KanaEntry kanaEntry : katakanaEntries) {
+			katakanaCache.put(kanaEntry.getKana(), kanaEntry);
+		}
+
+		System.out.println("checkAndSavePolishJapaneseEntries: parsePolishJapaneseEntriesFromCsv");
+
+		//KanaWord kanaWord = KanaHelper.convertKanaStringIntoKanaWord(word, hiraganaEntries, katakanaEntries);
+
+		//System.out.println(KanaHelper.createRomajiString(kanaWord));
+
+		// parse csv
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
+				.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+
+		// validate
+
+		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, null, null);
 
 	}
 }
