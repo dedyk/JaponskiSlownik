@@ -2,7 +2,7 @@
 れい",,"zero
 rei",zero,,,8710
 2,WORD_NUMBER,,HIRAGANA,Genki 1-1,,一,いち,,ichi,jeden,,,8809
-3,WORD_NUMBER,,HIRAGANA,Genki 1-1,,二,に,,ni,dwa,,,
+3,WORD_NUMBER,,HIRAGANA,Genki 1-1,,二,に,,ni,dwa,,,13596
 4,WORD_NUMBER,,HIRAGANA,Genki 1-1,,三,さん,,san,trzy,,,77
 5,WORD_NUMBER,,HIRAGANA,Genki 1-1,,四,"し
 よん
@@ -848,9 +848,13 @@ sporo
 wielka ilość
 dosyć
 wystarczająco",,,
-374,UNKNOWN,,HIRAGANA,Genki 1-4,,-,と,,to,partykuła do łączenia rzeczowników,,,"801
+374,WORD_PARTICULE,,HIRAGANA,Genki 1-4,,-,と,,to,"[partykuła do łączenia rzeczowników]
+i
+oraz",,,"801
 5240
-7909"
+7909
+13599
+13600"
 375,WORD_ASK,,HIRAGANA,Genki 1-4,,-,どうして,,doushite,"dlaczego
 jak
 w jaki sposób",,,
@@ -2159,7 +2163,9 @@ ton
 alarm
 śpiew (ptaka)",,,
 801,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-10,,戸,と,,to,"drzwi
-okiennica",,,374
+okiennica",,,"374
+13599
+13600"
 802,WORD_VERB_IRREGULAR,,HIRAGANA,"Genki dodatkowe 1-10
 Genki 2-21",,-,びっくりする,,bikkuri suru,"być zaskoczony
 zdziwić się
@@ -2481,7 +2487,9 @@ miara
 skala
 [klasyfikator do liczenia stopni temperatury]",np. temperatura,,6870
 924,UNKNOWN,,HIRAGANA,Genki 1-12,,二三日,にさんにち,,ni san nichi,"2,3 dni",,,
-925,UNKNOWN,,HIRAGANA,Genki 1-12,,-,ので,,node,ponieważ,~,,
+925,WORD_PARTICULE,,HIRAGANA,Genki 1-12,,-,ので,,node,"ponieważ
+dlatego, że
+bo",~,,
 926,WORD_ADVERB,,HIRAGANA,Genki 1-12,,始めて,はじめて,,hajimete,pierwszy raz,,,
 927,UNKNOWN,,HIRAGANA,Genki 1-12,,-,もうすぐ,,mousugu,"bardzo szybko
 za parę chwil/dni",,,
@@ -10026,7 +10034,7 @@ miód",,,
 4418,WORD_NOUN,,HIRAGANA,,,輪,わ,,wa,"koło
 okrąg
 obręcz
-pierścień",,,
+pierścień",,,13595
 4419,WORD_NOUN,,HIRAGANA,,,車輪,しゃりん,,sharin,koło,np. samochodu,,
 4420,WORD_NOUN,,HIRAGANA,,,輪転,りんてん,,rinten,rotacja,,,
 4421,WORD_NOUN,,HIRAGANA,,,五輪大会,ごりんたいかい,,gorintaikai,Igrzyska Olimpijskie,,,
@@ -11964,7 +11972,9 @@ gang
 towarzysze
 ludzie",,,"374
 5241
-10868"
+10868
+13599
+13600"
 5241,WORD_ADJECTIVE_NA,,HIRAGANA,,,徒,いたずら,,itazura,"próżność
 bezużyteczność",,,"5240
 10868"
@@ -11975,7 +11985,8 @@ wierny",,,
 5244,WORD_NOUN,,HIRAGANA,,,使徒,しと,,shito,apostoł,,,
 5245,WORD_NOUN,,HIRAGANA,,,徒手,としゅ,,toshu,"z pustymi rękami
 bez grosza",,,
-5246,WORD_PRONOUN,,HIRAGANA,,,我,わ,,wa,ja,,,5247
+5246,WORD_PRONOUN,,HIRAGANA,,,我,わ,,wa,ja,,,"5247
+13595"
 5247,WORD_PRONOUN,,HIRAGANA,,,我,われ,,ware,ja,,,5246
 5248,WORD_NOUN,,HIRAGANA,,,自我,じが,,jiga,"ja
 ego",,,
@@ -17044,7 +17055,7 @@ zrozumienie
 wyrozumiałość",,,
 7573,WORD_NOUN,,HIRAGANA,Genki 2-23,,理想,りそう,,risou,ideał,,,
 7574,WORD_NUMBER,,HIRAGANA,,,弐,に,,ni,"dwa
-drugi",używane w dokumentach,,
+drugi",używane w dokumentach,,13596
 7575,WORD_NOUN,,HIRAGANA,,,弐千円,にせんえん,,ni sen' en,dwa tysiące jenów,,,
 7576,WORD_NUMBER,,HIRAGANA,,,弐百万,にひゃくまん,,ni hyaku man,dwa miliony,,,
 7577,WORD_VERB_U,,HIRAGANA,,,討つ,うつ,,utsu,atakować,,,
@@ -17807,7 +17818,9 @@ być zalewanym",,,
 gong",,,
 7909,WORD_NOUN,,HIRAGANA,,,斗,と,,to,"to (jednostka pojemności ok 18 litrów)
 chochla
-czerpak",,,374
+czerpak",,,"374
+13599
+13600"
 7910,WORD_VERB_U,,HIRAGANA,,,沿う,そう,,sou,"biec wzdłuż
 biec równolegle
 rozciągać się (wzdłuż)
@@ -23191,7 +23204,7 @@ oblicze",,,
 10445,WORD_NOUN,,HIRAGANA,,,荷,に,,ni,"ładunek
 towar
 bagaż
-ciężar",,,
+ciężar",,,13596
 10446,WORD_NOUN,,HIRAGANA,,,術,すべ ,,sube,"sposób
 metoda",,,10447
 10447,WORD_NOUN,,HIRAGANA,,,術,じゅつ ,,jutsu,"sztuka
@@ -28836,3 +28849,31 @@ agitować
 wzbudzać
 niecić
 podburzać",,,
+13595,WORD_PARTICULE,,HIRAGANA,,,-,わ,,wa,"[partykuła kończąca zdanie, mająca znaczenie emfazy]
+[nadaje wypowiedzi zabarwienie emocjonalne]
+[wskazuje na determinację osoby mówiącej i jej wewnętrzne zaangażowanie]",,,"4418
+5246"
+13596,WORD_PARTICULE,,HIRAGANA,,,-,に,,ni,"na
+w",,,"3
+7574
+10445"
+13597,WORD_PARTICULE,,HIRAGANA_EXCEPTION,,,-,ては,,te wa,[partykuła używana do przekształcenia frazy czasownika w temat zdania],,,
+13598,WORD_PARTICULE,,HIRAGANA,,,-,ばかり,,bakari,"około
+tylko
+dopiero co",,,
+13599,WORD_PARTICULE,,HIRAGANA,,,-,と,,to,"z
+wraz
+razem",,,"374
+801
+5240
+7909
+13600"
+13600,WORD_PARTICULE,,HIRAGANA,,,-,と,,to,"kiedy
+gdy
+kiedykolwiek
+jeśli
+ilekroć",,,"374
+801
+5240
+7909
+13599"
