@@ -627,9 +627,12 @@ wiele",,,"1090
 3265
 7768
 7869"
-263,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,でも,,demo,"ale
+263,WORD_PARTICULE,,HIRAGANA,Genki 1-3,,-,でも,,demo,"ale
 nawet
-nawet jeśli","używane jest po kropce, w nowym zdaniu",,
+nawet jeśli
+chociaż
+wszystko
+każdy","używane jest po kropce, w nowym zdaniu",,
 264,WORD_EXPRESSION,,HIRAGANA,Genki 1-3,,-,どうですか,,dou desu ka,co ty na to,,,
 265,WORD_NOUN,,HIRAGANA,Genki 1-3,,週,しゅう,,shuu,tydzień,,,
 266,UNKNOWN,SUFFIX,HIRAGANA,Genki 1-3,,末,まつ,,matsu,koniec,,,7065
@@ -2090,8 +2093,10 @@ po zakończeniu",zdarzenie no,,"2627
 ostatnio
 w tych dniach
 w dzisiejszych czasach",,,
-773,UNKNOWN,SUFFIX,HIRAGANA,Genki 1-10,,週間,しゅうかん,,shuukan,tydzień,przedział czasu,,
-774,UNKNOWN,,HIRAGANA,Genki 1-10,,-,で,,de,czym,"partykuła, metoda transportu, czym",,
+773,WORD_NOUN,SUFFIX,HIRAGANA,Genki 1-10,,週間,しゅうかん,,shuukan,tydzień,przedział czasu,,
+774,WORD_PARTICULE,,HIRAGANA,Genki 1-10,,-,で,,de,"w
+we
+na","partykuła, wskazuje miejsce akcji, wskazuje środek transportu, wskazuje przyczynę powód",,
 775,WORD_ASK,,HIRAGANA,Genki 1-10,,-,どうやって,,douyatte,jak,,,
 776,WORD_ASK,,HIRAGANA,"Genki 1-10
 Genki 2-19",,-,どちら,,dochira,"które
@@ -13909,7 +13914,7 @@ być kuszonym
 być wprowadzanym w błąd",,,
 6078,WORD_NOUN,,HIRAGANA,,,程,ほど,,hodo,"ograniczenie
 zasięg
-stopień",,,
+stopień",,,13601
 6079,WORD_NOUN,,HIRAGANA,,,程度,ていど,,teido,"stopień
 poziom
 standard
@@ -27706,7 +27711,8 @@ kamyk",,,
 12750,WORD_NOUN,,HIRAGANA,,,西側,にしがわ,,nishigawa,"zachodnia strona
 zachód",,,
 12751,WORD_NOUN,,HIRAGANA,,,西の風,にしのかぜ,,nishi no kaze,zachodni wiatr,,,
-12752,WORD_PARTICULE,,HIRAGANA,,,-,の,,no,[partykuła przydawki],,,7431
+12752,WORD_PARTICULE,,HIRAGANA,,,-,の,,no,"[partykuła przydawki]
+[partykuła używana na końcu zdania]",,,7431
 12753,WORD_VERB_RU,,HIRAGANA,,,鍵を閉める,かぎをしめる,,kagi o shimeru,zamykać na klucz,,,
 12754,WORD_NOUN,,HIRAGANA,,,合鍵,あいかぎ,,aikagi,"dorobiony klucz
 wytrych",,,
@@ -28877,3 +28883,8 @@ ilekroć",,,"374
 5240
 7909
 13599"
+13601,WORD_PARTICULE,,HIRAGANA,,,-,ほど,,hodo,"około
+mniej więcej
+tak ... jak ...
+im bardziej ...
+tym ...",,,6078
