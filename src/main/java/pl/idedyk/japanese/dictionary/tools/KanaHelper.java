@@ -215,6 +215,8 @@ public class KanaHelper {
 		hiraganaEntries.add(new KanaEntry("ぢゅ", "dyu"));
 		hiraganaEntries.add(new KanaEntry("ぢょ", "dyo"));
 
+		hiraganaEntries.add(new KanaEntry("デュ", "dyu"));
+
 		hiraganaEntries.add(new KanaEntry("っ", "ttsu"));
 
 		return hiraganaEntries;
