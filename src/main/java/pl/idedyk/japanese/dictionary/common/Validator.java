@@ -267,18 +267,19 @@ public class Validator {
 
 				if (foundJMEDict != null) {
 
-					DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
+					List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry
+							.getDictionaryEntryTypeList();
 
-					if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U
-							|| dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU
-							|| dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR
-							|| dictionaryEntryType == DictionaryEntryType.WORD_NOUN
-							|| dictionaryEntryType == DictionaryEntryType.WORD_ADJECTIVE_I
-							|| dictionaryEntryType == DictionaryEntryType.WORD_ADJECTIVE_NA
-							|| dictionaryEntryType == DictionaryEntryType.WORD_ADVERB
-							|| dictionaryEntryType == DictionaryEntryType.WORD_PRONOUN
-							|| dictionaryEntryType == DictionaryEntryType.WORD_CONJUNCTION
-							|| dictionaryEntryType == DictionaryEntryType.WORD_INTERJECTION) {
+					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_U) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_RU) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_IRREGULAR) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NOUN) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_I) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_NA) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADVERB) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_PRONOUN) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_CONJUNCTION) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_INTERJECTION) == true) {
 
 						boolean noFound = true;
 
@@ -287,8 +288,13 @@ public class Validator {
 							List<DictionaryEntryType> dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(
 									mapEdictTypeToDictionaryEntryType, currentFoundJMEDict.getPos());
 
-							if (dictionaryEntryTypeFromEdictPos.contains(dictionaryEntryType) == true) {
-								noFound = false;
+							for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {
+
+								if (dictionaryEntryTypeFromEdictPos.contains(dictionaryEntryType) == true) {
+									noFound = false;
+
+									break;
+								}
 							}
 						}
 
@@ -316,11 +322,12 @@ public class Validator {
 			// validate names
 			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
 
-				DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
+				List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry
+						.getDictionaryEntryTypeList();
 
-				if (dictionaryEntryType != DictionaryEntryType.WORD_NAME
-						&& dictionaryEntryType != DictionaryEntryType.WORD_MALE_NAME
-						&& dictionaryEntryType != DictionaryEntryType.WORD_FEMALE_NAME) {
+				if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NAME) == false
+						&& dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_MALE_NAME) == false
+						&& dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_FEMALE_NAME) == false) {
 
 					continue;
 				}
@@ -350,20 +357,20 @@ public class Validator {
 
 						List<String> trans = jmeDictEntry.getTrans();
 
-						if (dictionaryEntryType == DictionaryEntryType.WORD_NAME
+						if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NAME) == true
 								&& (trans.contains("given") == false && trans.contains("masc") == false && trans
 										.contains("fem") == false)) {
 							System.out.println("Warning jmedict name type not found for: " + currentPolishJapaneseEntry
 									+ " - " + trans + "\n");
 						}
 
-						if (dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME
+						if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_MALE_NAME) == true
 								&& (trans.contains("given") == false && trans.contains("masc") == false)) {
 							System.out.println("Warning jmedict name male type not found for: "
 									+ currentPolishJapaneseEntry + " - " + trans + "\n");
 						}
 
-						if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME
+						if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_FEMALE_NAME) == true
 								&& (trans.contains("given") == false && trans.contains("fem") == false)) {
 							System.out.println("Warning jmedict name female type not found for: "
 									+ currentPolishJapaneseEntry + " - " + trans + "\n");
@@ -377,7 +384,7 @@ public class Validator {
 
 							List<String> trans = jmeDictEntry.getTrans();
 
-							if (dictionaryEntryType == DictionaryEntryType.WORD_NAME
+							if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NAME) == true
 									&& (trans.contains("given") == true || trans.contains("masc") == true || trans
 											.contains("fem") == true)) {
 								wasOk = true;
@@ -385,14 +392,14 @@ public class Validator {
 								break;
 							}
 
-							if (dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME
+							if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_MALE_NAME) == true
 									&& (trans.contains("given") == true || trans.contains("masc") == true)) {
 								wasOk = true;
 
 								break;
 							}
 
-							if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME
+							if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_FEMALE_NAME) == true
 									&& (trans.contains("given") == true || trans.contains("fem") == true)) {
 								wasOk = true;
 
@@ -930,7 +937,7 @@ public class Validator {
 
 		int result = 1;
 
-		result = prime * result + polishJapaneseEntry.getDictionaryEntryType().hashCode();
+		result = prime * result + polishJapaneseEntry.getDictionaryEntryTypeList().hashCode();
 		result = prime * result + polishJapaneseEntry.getAttributeList().hashCode();
 
 		result = prime * result + polishJapaneseEntry.getPolishTranslates().hashCode();

@@ -37,10 +37,6 @@ public class Helper {
 
 			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
 
-			if (currentPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_KANJI_READING) {
-				continue;
-			}
-
 			List<String> currentPolishJapaneseEntryGroups = currentPolishJapaneseEntry.getGroups();
 
 			if (currentPolishJapaneseEntryGroups == null || currentPolishJapaneseEntryGroups.size() == 0) {
@@ -70,10 +66,6 @@ public class Helper {
 
 			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
 
-			if (currentPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_KANJI_READING) {
-				continue;
-			}
-
 			String entryPrefixKanaKanjiKanaKey = currentPolishJapaneseEntry.getEntryPrefixKanaKanjiKanaKey();
 
 			List<String> groupsForCurrentPolishJapaneseEntry = polishJapaneseEntriesAndGroups
@@ -94,10 +86,6 @@ public class Helper {
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
-
-			if (polishJapaneseEntries.get(idx).getDictionaryEntryType() == DictionaryEntryType.WORD_KANJI_READING) {
-				continue;
-			}
 
 			polishJapaneseEntries.get(idx).setId(result.size() + 1);
 
@@ -132,9 +120,10 @@ public class Helper {
 					}
 
 					// suru verb
-					DictionaryEntryType dictionaryEntryType = currentPolishJapaneseEntry.getDictionaryEntryType();
+					List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry
+							.getDictionaryEntryTypeList();
 
-					if (dictionaryEntryType == DictionaryEntryType.WORD_NOUN) {
+					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NOUN) == true) {
 
 						if (foundJMEDict.getPos().contains("n") == true && foundJMEDict.getPos().contains("vs") == true
 								&& attributeList.contains(AttributeType.SURU_VERB) == false) {
@@ -144,9 +133,9 @@ public class Helper {
 					}
 
 					// transitivity, intransitivity
-					if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U
-							|| dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU
-							|| dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
+					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_U) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_RU) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_IRREGULAR) == true) {
 
 						/*
 						if (	attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == true &&
@@ -322,21 +311,25 @@ public class Helper {
 
 			newPolishJapaneseEntry.setId(counter);
 
+			List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
+
 			if (pos.contains("f") == true) {
-				newPolishJapaneseEntry.setDictionaryEntryType(DictionaryEntryType.WORD_FEMALE_NAME);
+				dictionaryEntryTypeList.add(DictionaryEntryType.WORD_FEMALE_NAME);
 
 			} else if (pos.contains("m") == true) {
-				newPolishJapaneseEntry.setDictionaryEntryType(DictionaryEntryType.WORD_MALE_NAME);
+				dictionaryEntryTypeList.add(DictionaryEntryType.WORD_MALE_NAME);
 
 			} else if (pos.contains("g") == true) {
-				newPolishJapaneseEntry.setDictionaryEntryType(DictionaryEntryType.WORD_NAME);
+				dictionaryEntryTypeList.add(DictionaryEntryType.WORD_NAME);
 
 			} else if (pos.contains("s") == true) {
-				newPolishJapaneseEntry.setDictionaryEntryType(DictionaryEntryType.WORD_SURNAME_NAME);
+				dictionaryEntryTypeList.add(DictionaryEntryType.WORD_SURNAME_NAME);
 
 			} else {
 				continue;
 			}
+
+			newPolishJapaneseEntry.setDictionaryEntryTypeList(dictionaryEntryTypeList);
 
 			newPolishJapaneseEntry.setWordType(WordType.HIRAGANA_KATAKANA);
 

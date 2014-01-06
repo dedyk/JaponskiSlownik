@@ -114,48 +114,42 @@ public class CsvReaderWriter {
 						String info = polishJapaneseEntry.getInfo() != null ? polishJapaneseEntry.getInfo().replaceAll(
 								"\n", ", ") : "";
 
-						if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_VERB_RU) {
+						if (polishJapaneseEntry.getDictionaryEntryTypeList().get(0) == DictionaryEntryType.WORD_VERB_RU) {
 							if (info.length() > 0) {
 								info = info + ", ";
 							}
 
 							info += "ru-czasownik";
-						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_VERB_U) {
+						} else if (polishJapaneseEntry.getDictionaryEntryTypeList().get(0) == DictionaryEntryType.WORD_VERB_U) {
 							if (info.length() > 0) {
 								info = info + ", ";
 							}
 
 							info += "u-czasownik";
-						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_VERB_IRREGULAR) {
+						} else if (polishJapaneseEntry.getDictionaryEntryTypeList().get(0) == DictionaryEntryType.WORD_VERB_IRREGULAR) {
 							if (info.length() > 0) {
 								info = info + ", ";
 							}
 
 							info += "czasownik nieregularny";
-						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_VERB_TE) {
+						} else if (polishJapaneseEntry.getDictionaryEntryTypeList().get(0) == DictionaryEntryType.WORD_VERB_TE) {
 							if (info.length() > 0) {
 								info = info + ", ";
 							}
 
 							info += "forma te";
-						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_ADJECTIVE_I) {
+						} else if (polishJapaneseEntry.getDictionaryEntryTypeList().get(0) == DictionaryEntryType.WORD_ADJECTIVE_I) {
 							if (info.length() > 0) {
 								info = info + ", ";
 							}
 
 							info += "i-przymiotnik";
-						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_ADJECTIVE_NA) {
+						} else if (polishJapaneseEntry.getDictionaryEntryTypeList().get(0) == DictionaryEntryType.WORD_ADJECTIVE_NA) {
 							if (info.length() > 0) {
 								info = info + ", ";
 							}
 
 							info += "na-przymiotnik";
-						} else if (polishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_KANJI_READING) {
-							if (info.length() > 0) {
-								info = info + ", ";
-							}
-
-							info += "czytanie";
 						}
 
 						AttributeList attributeList = polishJapaneseEntry.getAttributeList();
@@ -223,7 +217,7 @@ public class CsvReaderWriter {
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
 			csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
-			csvWriter.write(polishJapaneseEntry.getDictionaryEntryType().toString());
+			csvWriter.write(convertListToString(polishJapaneseEntry.getDictionaryEntryTypeList()));
 			csvWriter.write(convertAttributeListToString(polishJapaneseEntry.getAttributeList()));
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getGroups()));
@@ -257,7 +251,7 @@ public class CsvReaderWriter {
 
 			int id = Integer.parseInt(csvReader.get(0));
 
-			String dictionaryEntryTypeString = csvReader.get(1);
+			String dictionaryEntryTypeListString = csvReader.get(1);
 			String attributesString = csvReader.get(2);
 			String wordTypeString = csvReader.get(3);
 			String groupString = csvReader.get(4);
@@ -276,16 +270,10 @@ public class CsvReaderWriter {
 			String parseAdditionalInfoListString = csvReader.get(12);
 			String knownDuplicatedListString = csvReader.get(13);
 
-			DictionaryEntryType dictionaryEntryType = DictionaryEntryType.valueOf(dictionaryEntryTypeString);
-
-			if (dictionaryEntryType == DictionaryEntryType.WORD_KANJI_READING) {
-				continue;
-			}
-
 			PolishJapaneseEntry entry = new PolishJapaneseEntry();
 
 			entry.setId(id);
-			entry.setDictionaryEntryType(dictionaryEntryType);
+			entry.setDictionaryEntryTypeList(parseDictionaryEntryTypeStringList(dictionaryEntryTypeListString));
 			entry.setAttributeList(parseAttributesStringList(attributesString));
 			entry.setWordType(WordType.valueOf(wordTypeString));
 			entry.setGroups(parseStringIntoList(groupString));
@@ -308,6 +296,19 @@ public class CsvReaderWriter {
 		}
 
 		csvReader.close();
+
+		return result;
+	}
+
+	private static List<DictionaryEntryType> parseDictionaryEntryTypeStringList(String dictionaryEntryTypeStringList) {
+
+		List<String> dictionaryEntryTypeList = parseStringIntoList(dictionaryEntryTypeStringList);
+
+		List<DictionaryEntryType> result = new ArrayList<DictionaryEntryType>();
+
+		for (String currentDictionaryEntryTypeString : dictionaryEntryTypeList) {
+			result.add(DictionaryEntryType.valueOf(currentDictionaryEntryTypeString));
+		}
 
 		return result;
 	}

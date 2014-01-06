@@ -7,7 +7,7 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 
 	private int id;
 
-	private DictionaryEntryType dictionaryEntryType;
+	private List<DictionaryEntryType> dictionaryEntryTypeList;
 
 	private AttributeList attributeList;
 
@@ -39,8 +39,8 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 
 	private Set<Integer> knownDuplicatedId;
 
-	public DictionaryEntryType getDictionaryEntryType() {
-		return dictionaryEntryType;
+	public List<DictionaryEntryType> getDictionaryEntryTypeList() {
+		return dictionaryEntryTypeList;
 	}
 
 	public WordType getWordType() {
@@ -71,8 +71,8 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 		return info;
 	}
 
-	public void setDictionaryEntryType(DictionaryEntryType dictionaryEntryType) {
-		this.dictionaryEntryType = dictionaryEntryType;
+	public void setDictionaryEntryTypeList(List<DictionaryEntryType> dictionaryEntryTypeList) {
+		this.dictionaryEntryTypeList = dictionaryEntryTypeList;
 	}
 
 	public void setWordType(WordType wordType) {
@@ -125,12 +125,11 @@ public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 
 	@Override
 	public String toString() {
-		return "PolishJapaneseEntry [id=" + id + ", dictionaryEntryType=" + dictionaryEntryType + ", attributeList="
-				+ attributeList + ", wordType=" + wordType + ", prefixKana=" + prefixKana + ", groups=" + groups
-				+ ", kanji=" + kanji + ", kanjiImagePath=" + kanjiImagePath + ", kanaList=" + kanaList
-				+ ", prefixRomaji=" + prefixRomaji + ", realPrefixRomaji=" + realPrefixRomaji + ", romajiList="
-				+ romajiList + ", realRomajiList=" + realRomajiList + ", polishTranslates=" + polishTranslates
-				+ ", info=" + info + ", parseAdditionalInfoList=" + parseAdditionalInfoList + ", knownDuplicatedId="
+		return "PolishJapaneseEntry [id=" + id + ", dictionaryEntryTypeList=" + dictionaryEntryTypeList
+				+ ", attributeList=" + attributeList + ", wordType=" + wordType + ", prefixKana=" + prefixKana
+				+ ", groups=" + groups + ", kanji=" + kanji + ", kanaList=" + kanaList + ", prefixRomaji="
+				+ prefixRomaji + ", romajiList=" + romajiList + ", polishTranslates=" + polishTranslates + ", info="
+				+ info + ", parseAdditionalInfoList=" + parseAdditionalInfoList + ", knownDuplicatedId="
 				+ knownDuplicatedId + "]";
 	}
 

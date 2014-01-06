@@ -58,7 +58,7 @@ public class DictionarySQLDatabaseLoader {
 				insertStatement = dbConnection.prepareStatement(insertStatementSql);
 
 				insertStatement.setInt(1, polishJapaneseEntry.getId());
-				insertStatement.setString(3, polishJapaneseEntry.getDictionaryEntryType().toString());
+				insertStatement.setString(3, polishJapaneseEntry.getDictionaryEntryTypeList().toString());
 				insertStatement.setString(4, polishJapaneseEntry.getWordType().toString());
 				insertStatement.setString(5, polishJapaneseEntry.getPrefixKana());
 				insertStatement.setString(6, polishJapaneseEntry.getKanji());

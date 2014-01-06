@@ -28,7 +28,12 @@ public class ShowNounAdjectiveNaWords {
 
 			List<String> kanaList = polishJapaneseEntry.getKanaList();
 
-			DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+			List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
+			DictionaryEntryType dictionaryEntryType = null;
+
+			if (dictionaryEntryTypeList.size() == 1) {
+				dictionaryEntryType = dictionaryEntryTypeList.get(0);
+			}
 
 			if (dictionaryEntryType == DictionaryEntryType.WORD_NOUN
 					|| dictionaryEntryType == DictionaryEntryType.WORD_ADJECTIVE_NA) {
@@ -61,7 +66,14 @@ public class ShowNounAdjectiveNaWords {
 			String polishJapaneseEntryKanji = polishJapaneseEntry.getKanji();
 			List<String> polishJapaneseEntryKanaList = polishJapaneseEntry.getKanaList();
 
-			DictionaryEntryType polishJapaneseEntryDictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+			List<DictionaryEntryType> polishJapaneseEntryDictionaryEntryTypeList = polishJapaneseEntry
+					.getDictionaryEntryTypeList();
+
+			DictionaryEntryType polishJapaneseEntryDictionaryEntryType = null;
+
+			if (polishJapaneseEntryDictionaryEntryTypeList.size() == 1) {
+				polishJapaneseEntryDictionaryEntryType = polishJapaneseEntryDictionaryEntryTypeList.get(0);
+			}
 
 			if (polishJapaneseEntryKanji != null && polishJapaneseEntryKanji.equals("-") == true) {
 				polishJapaneseEntryKanji = "";
@@ -82,7 +94,7 @@ public class ShowNounAdjectiveNaWords {
 		PolishJapaneseEntry nounPolishJapaneseEntry = null;
 		PolishJapaneseEntry adjectiveNaPolishJapaneseEntry = null;
 
-		if (polishJapaneseEntry1.getDictionaryEntryType() == DictionaryEntryType.WORD_NOUN) {
+		if (polishJapaneseEntry1.getDictionaryEntryTypeList().get(0) == DictionaryEntryType.WORD_NOUN) {
 			nounPolishJapaneseEntry = polishJapaneseEntry1;
 			adjectiveNaPolishJapaneseEntry = polishJapaneseEntry2;
 

@@ -24,8 +24,6 @@ public enum DictionaryEntryType {
 
 	WORD_ADJECTIVE_NA("na-przymiotnik"),
 
-	WORD_KANJI_READING("kanji czytanie"),
-
 	WORD_EXPRESSION("Wyrażenia"),
 
 	WORD_THAT_POINT("Wskazywanie punktu"),
