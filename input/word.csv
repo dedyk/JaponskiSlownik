@@ -6574,11 +6574,14 @@ balonik",,,
 2794,WORD_NOUN,,HIRAGANA,,,心理学,しんりがく,,shinrigaku,psychologia,,,
 2795,WORD_NOUN,,HIRAGANA,,,心柄,こころがら,,kokorogara,"stan ducha
 stan umysłu",,,
-2796,WORD_NOUN,,HIRAGANA,"Genki dodatkowe 2-21
+2796,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,"Genki dodatkowe 2-21
 Genki 2-22",,心配,しんぱい,,shinpai,"niepokój
 troska
 obawa
-zmartwienie",,,6455
+zmartwienie
+zaniepokojony
+przejęty",,,
 2797,WORD_NOUN,,HIRAGANA,,,真心,まごころ,,magokoro,"szczerość
 otwartość",,,
 2798,WORD_NOUN,,HIRAGANA,,,体験,たいけん,,taiken,"doświadczenie
@@ -7838,8 +7841,12 @@ starzec
 stary człowiek",,,
 3386,WORD_NOUN,,HIRAGANA_KATAKANA,,,老人ホーム,ろうじんほーむ,,roujin hoomu,dom starców,,,
 3387,WORD_NOUN,,HIRAGANA,,,老い心,おいごころ,,oi gokoro,czuć się staro,,,
-3388,WORD_NOUN,,HIRAGANA,,,老巧,ろうこう,,roukou,doświadczony,,,3389
-3389,WORD_ADJECTIVE_NA,,HIRAGANA,,,老巧,ろうこう,,roukou,weteran,,,3388
+3388,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,老巧,ろうこう,,roukou,"doświadczony
+weteran",,,
+3389,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,アコースティック,,akoosutekku,"akustyczny
+akustyka",,,
 3390,WORD_NOUN,,HIRAGANA,,,老眼,ろうがん,,rougan,"dalekowzroczność starcza
 starczowzroczność",,,
 3391,WORD_NOUN,,HIRAGANA,Genki 2-21,,警察,けいさつ,,keisatsu,"policja
@@ -11933,10 +11940,13 @@ koniec","np. filmu, książki",NO_TYPE_CHECK,
 5222,WORD_NOUN,,HIRAGANA,,,完成,かんせい,,kansei,"zakończenie
 wykończenie
 ukończenie",,,
-5223,WORD_ADJECTIVE_NA,,HIRAGANA,,,完全,かんぜん,,kanzen,"dokonany
+5223,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,完全,かんぜん,,kanzen,"dokonany
 perfekcyjny
 całkowity
-kompletny",,,11131
+kompletny
+dokonanie
+perfekcja",,,
 5224,WORD_ADJECTIVE_NA,,HIRAGANA,,,完璧,かんぺき,,kanpeki,"doskonały
 bez zarzutu",,,
 5225,WORD_NOUN,,HIRAGANA,,,完敗,かんぱい,,kanpai,całkowita porażka,,,
@@ -14579,8 +14589,9 @@ przydzielać",,,
 6372,WORD_NOUN,,HIRAGANA,,,二ヶ月,にかげつ,,nikagetsu,dwa miesiące,,,
 6373,WORD_NOUN,,HIRAGANA,,,三次元,さんじげん,,sanjigen,"trójwymiarowy
 trzy wymiary",,,
-6374,WORD_NOUN,,HIRAGANA,,,四角,しかく,,shikaku,"kwadrat
-czworokąt",,,12124
+6374,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,四角,しかく,,shikaku,"kwadrat
+czworokąt",,,
 6375,WORD_NOUN,,HIRAGANA,,,六大州,ろくだいしゅう,,rokudaishuu,sześć kontynentów,,,
 6376,WORD_NOUN,,HIRAGANA,,,六角,ろっかく,,rokkaku,"sześciobok
 heksagon",,,
@@ -14732,9 +14743,7 @@ jednakże
 natomiast
 ale
 w przeciwieństwie do",,,
-6455,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki dodatkowe 2-21
-Genki 2-22",,心配,しんぱい,,shinpai,"zaniepokojony
-przejęty",,,2796
+6455,WORD_NOUN,,KATAKANA,,,-,シュガー,,shugaa,cukier,,,
 6456,WORD_NOUN,,HIRAGANA,"Genki dodatkowe 2-21
 Genki kanji 2-22",,お守り,おまもり,,omamori,"talizman
 amulet",,,
@@ -15729,9 +15738,12 @@ wrażliwość
 czułość",,,
 6957,UNKNOWN,,HIRAGANA,,,集,しゅう,,shuu,"zbiór
 zgromadzenie",postfiks,,
-6958,WORD_ADJECTIVE_NA,,HIRAGANA,,,別,べつ,,betsu,"inny
+6958,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,別,べつ,,betsu,"inny
 różny
-oddzielny",,,12867
+oddzielny
+różnica
+rozróżnianie",,,
 6959,WORD_VERB_RU,,HIRAGANA,,,別ける,わける,,wakeru,"rozdzielać
 rozróżniać",,,
 6960,WORD_NOUN,,HIRAGANA,,,別人,べつじん,,betsujin,inny człowiek,,,
@@ -18900,14 +18912,15 @@ jeszcze bardziej
 jeszcze
 ciągle",,,"8697
 8855"
-8291,WORD_NOUN,,HIRAGANA,,,寛,かん,,kan,"tolerancja
-wspaniałomyślność",,,"8292
-8578
+8291,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,寛,かん,,kan,"tolerancja
+wspaniałomyślność
+wyrozumiały
+łagodny",,,"8578
 8805"
-8292,WORD_ADJECTIVE_NA,,HIRAGANA,,,寛,かん,,kan,"wyrozumiały
-łagodny",,,"8291
-8578
-8805"
+8292,WORD_NOUN,,HIRAGANA,,,中軸,ちゅうじく,,chuujiku,"oś
+ośka
+sworzeń",,,
 8293,WORD_VERB_U,,HIRAGANA,,,侵す,おかす,,okasu,"napadać
 atakować
 wykraczać
@@ -18985,13 +18998,17 @@ uprawiać wędkarstwo",,,
 dłubać
 grawerować",,,
 8325,WORD_NOUN,,HIRAGANA,,,翁,おきな,,okina,stary człowiek,,,
-8326,WORD_ADJECTIVE_NA,,HIRAGANA,,,妙,みょう,,myou,"dziwny
+8326,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,妙,みょう,,myou,"dziwny
 cudaczny
-podejrzany",,,8327
-8327,WORD_NOUN,,HIRAGANA,,,妙,みょう,,myou,"cud
+podejrzany
+cud
 tajemnica
 misterium
-inteligencja",,,8326
+inteligencja",,,
+8327,WORD_NOUN,,HIRAGANA,,,俸給,ほうきゅう,,houkyuu,"pensja
+wynagrodzenie
+płaca",,,
 8328,WORD_VERB_U,,HIRAGANA,,,輝く,かがやく,,kagayaku,"błyszczeć
 świecić
 lśnić
@@ -19271,11 +19288,16 @@ oddychanie",,,
 okrutny",,,
 8433,WORD_NOUN,,HIRAGANA,,,漏れ,もれ,,more,"przeciekać
 wyciek",,,
-8434,WORD_NOUN,,HIRAGANA,,,陽気,ようき,,youki,"pogoda
-pora",,,8435
-8435,WORD_ADJECTIVE_NA,,HIRAGANA,,,陽気,ようき,,youki,"pogodny
+8434,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,陽気,ようき,,youki,"pogoda
+pora
+pogodny
 radosny
-wesoły",,,8434
+wesoły",,,
+8435,WORD_NOUN,,HIRAGANA,,,傘下,さんか,,sanka,"stowarzyszony z
+pod jurysdykcją
+pod patronem
+pod egidą",,,
 8436,WORD_NOUN,,HIRAGANA,,,錠前,じょうまえ,,joumae,"zamek
 zamknięcie",,,
 8437,WORD_NOUN,,HIRAGANA,,,錠前屋,じょうまえや,,joumaeya,ślusarz,,,
@@ -20181,10 +20203,12 @@ podrażnienie
 pobudzenie
 podniecenie
 stymulacja",,,
-9068,WORD_ADJECTIVE_NA,,HIRAGANA,,,不貞,ふてい,,futei,"niewierny
-niewierna",,,9069
-9069,WORD_NOUN,,HIRAGANA,,,不貞,ふてい,,futei,"niewierność
-zdrada małżeńska",,,9068
+9068,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,不貞,ふてい,,futei,"niewierny
+niewierna
+niewierność
+zdrada małżeńska",,,
+9069,WORD_NOUN,,HIRAGANA,,,円建て,えんだて,,endate,wartość wyrażona w jenach,,,
 9070,WORD_NOUN,,HIRAGANA,,,乗物,のりもの ,,norimono,pojazd,,,
 9071,WORD_NOUN,,HIRAGANA,,,予感,よかん ,,yokan,przeczucie,,,
 9072,WORD_ADJECTIVE_NA,,HIRAGANA,,,怠慢,たいまん ,,taiman,"niedbalstwo
@@ -20626,11 +20650,15 @@ animozja",,,
 reperkusja
 wpływ
 oddziaływanie",,,
-9253,WORD_ADJECTIVE_NA,,HIRAGANA,,,主要,しゅよう ,,shuyou,"główny
+9253,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,主要,しゅよう ,,shuyou,"główny
 naczelny
-zasadniczy",,,9254
-9254,WORD_NOUN,,HIRAGANA,,,主要,しゅよう ,,shuyou,"szef
-pryncypał",,,9253
+zasadniczy
+szef
+pryncypał",,,
+9254,WORD_NOUN,,HIRAGANA,,,国情,こくじょう,,kokujou,"kondycja kraju
+sytuacja kraju
+stan kraju",,,
 9255,WORD_NOUN,,HIRAGANA,,,押し,おし ,,oshi,"ciśnienie
 nacisk
 napór
@@ -20951,9 +20979,14 @@ nachylenie",,,
 9409,UNKNOWN,,HIRAGANA,,,一刻,いっこく ,,ikkoku,"minuta
 moment
 chwila",,,
-9410,WORD_NOUN,,HIRAGANA,,,真空,しんくう ,,shinkuu,"odkurzacz
-próżnia",,,9411
-9411,WORD_ADJECTIVE_NA,,HIRAGANA,,,真空,しんくう ,,shinkuu,pusty,,,9410
+9410,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,真空,しんくう ,,shinkuu,"odkurzacz
+próżnia
+pusty",,,
+9411,WORD_NOUN,,HIRAGANA,,,抵触,ていしょく,,teishoku,"kolizja
+konflikt
+być przeciwieństwem
+być niezgodnym",,,
 9412,WORD_NOUN,,HIRAGANA,,,粉体,ふんたい ,,funtai,proch,,,
 9413,WORD_NOUN,,HIRAGANA,,,逸話,いつわ ,,itsuwa,anegdota,,,
 9414,WORD_NOUN,,HIRAGANA,,,雑作,ぞうさ ,,zousa,"kłopot
@@ -21201,12 +21234,12 @@ utrata",,,
 9534,WORD_NOUN,,HIRAGANA,,,郊外,こうがい ,,kougai,"przedmieście
 okolice
 peryferia (miasta)",,,
-9535,WORD_ADJECTIVE_NA,,HIRAGANA,,,無秩序,むちつじょ ,,muchitsujo,"bałagan
+9535,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,無秩序,むちつじょ ,,muchitsujo,"bałagan
 pomieszanie
-zamęt",,,9536
-9536,WORD_NOUN,,HIRAGANA,,,無秩序,むちつじょ ,,muchitsujo,"bałagan
-pomieszanie
-zamęt",,,9535
+zamęt",,,
+9536,WORD_NOUN,,HIRAGANA,,,方策,ほうさく,,housaku,"plan
+polityka",,,
 9537,WORD_NOUN,,HIRAGANA,,,薬剤師,やくざいし ,,yakuzaishi,"aptekarz
 farmaceuta",,,
 9538,WORD_NOUN,,HIRAGANA,,,出来物,できもの ,,dekimono,"guz
@@ -21402,10 +21435,14 @@ przedsiębiorstwo",,,
 9618,WORD_NOUN,,HIRAGANA,,,相関,そうかん ,,soukan,"korelacja
 zależność
 związek",między dwoma rzeczami,,
-9619,WORD_NOUN,,HIRAGANA,,,貧困,ひんこん ,,hinkon,"bieda
-ubóstwo",,,9620
-9620,WORD_ADJECTIVE_NA,,HIRAGANA,,,貧困,ひんこん ,,hinkon,"biedny
-ubogi",,,9619
+9619,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,貧困,ひんこん ,,hinkon,"bieda
+ubóstwo
+biedny
+ubogi",,,
+9620,WORD_NOUN,,HIRAGANA,,,温もり,ぬくもり,,nukumori,"serdeczność
+gorliwość
+ciepło",,,
 9621,WORD_NOUN,,HIRAGANA,,,貧困者,ひんこんしゃ ,,hinkonsha,biedak,,,
 9622,WORD_NOUN,,HIRAGANA,,,輔佐,ほさ ,,hosa,"pomoc
 wsparcie
@@ -21550,10 +21587,15 @@ kuguar",,,
 9691,WORD_NOUN,,HIRAGANA,,,蝉 ,せみ,,semi,"cykada
 szarańcza",,,
 9692,WORD_NOUN,,HIRAGANA,,,鎌,かま ,,kama,sierp,,,
-9693,WORD_ADJECTIVE_NA,,HIRAGANA,,,名誉,めいよ ,,meiyo,"honorowy
-zaszczytny",,,9694
-9694,WORD_NOUN,,HIRAGANA,,,名誉,めいよ ,,meiyo,"honor
-zaszczyt",,,9693
+9693,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,名誉,めいよ ,,meiyo,"honorowy
+zaszczytny
+honor
+zaszczyt",,,
+9694,WORD_NOUN,,HIRAGANA,,,潜伏,せんぷく,,senpuku,"ukrycie
+maskowanie
+zasadzka
+pułapka",,,
 9695,WORD_NOUN,,HIRAGANA,,,天堂,てんどう ,,tendou,"niebo
 raj",,,
 9696,WORD_NOUN,,HIRAGANA,,,捨象,しゃしょう ,,shashou,abstrakcja,,,
@@ -22184,8 +22226,10 @@ wiekuisty",,,
 10003,WORD_NOUN,,HIRAGANA,,,饑餓,きが ,,kiga,"głód
 głodowanie",,,
 10004,WORD_NOUN,,KATAKANA,,,-,ニシン,,nishin,śledź,,,
-10005,WORD_NOUN,,HIRAGANA,,,毒科学,どくかがく ,,dokukagaku,toksykologia,,NO_TYPE_CHECK,10006
-10006,WORD_ADJECTIVE_NA,,HIRAGANA,,,毒科学,どくかがく ,,dokukagaku,toksyczny,,,10005
+10005,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,毒科学,どくかがく ,,dokukagaku,"toksykologia
+toksyczny",,NO_TYPE_CHECK,
+10006,WORD_NOUN,,HIRAGANA,,,特使,とくし,,tokushi,specjalny wysłannik,,,
 10007,WORD_NOUN,,HIRAGANA,,,銀行家,ぎんこうか ,,ginkouka,"bankier
 bankowiec",,,
 10008,WORD_NOUN,,HIRAGANA,,,手引書,てびきしょ ,,tebikisho,"podręcznik
@@ -22682,8 +22726,10 @@ wybuch (niezadowolenia)",,,
 próbka
 wzór",,,
 10216,WORD_NOUN,,HIRAGANA,,,胴衣,どうい,,doui,kamizelka,,,
-10217,WORD_ADJECTIVE_NA,,HIRAGANA,,,退屈,たいくつ ,,taikutsu,"nudny
-znudzony",,,12695
+10217,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,退屈,たいくつ ,,taikutsu,"nudny
+znudzony
+nuda",,,12695
 10218,WORD_NOUN,,HIRAGANA,,,製図,せいず ,,seizu,"rysunek
 kreślarstwo
 kartografia",,,
@@ -24746,8 +24792,9 @@ we wszystkich kierunkach",,,
 mniej więcej
 tak ... jak ...
 im bardziej ... tym ...",,,2276
-11131,WORD_NOUN,,HIRAGANA,,,完全,かんぜん,,kanzen,"dokonanie
-perfekcja",,,5223
+11131,WORD_NOUN,,HIRAGANA,,,結末,けつまつ,,ketsumatsu,"zakończenie
+konkluzja
+wniosek",,,
 11132,WORD_NOUN,,HIRAGANA,,,完全無欠,かんぜんむけつ,,kanzen muketsu,absolutna perfekcja,,,
 11133,WORD_ADJECTIVE_NA,,HIRAGANA,,,不完全,ふかんぜん,,fukanzen,"niekompletny
 niekompletność
@@ -26609,7 +26656,9 @@ racjonalny",,,12123
 12123,WORD_CONJUNCTION,,HIRAGANA,,,-,もっとも,,mottomo,"jednak
 ale","używane wówczas, gdy po ogólnym stwierdzeniu następuje wyjątek",,"1830
 12122"
-12124,WORD_ADJECTIVE_NA,,HIRAGANA,,,四角,しかく,,shikaku,czworokątny,,,6374
+12124,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,耳障り,みみざわり,,mimizawari,"uszkodzone ucho
+zranione ucho",,,
 12125,WORD_NOUN,,HIRAGANA_KATAKANA,,,四角なテーブル,しかくなテーブル,,shikaku na teeburu,czworokątny stół,,,
 12126,WORD_NOUN,,HIRAGANA,,,真四角,ましかく,,mashikaku,kwadrat,,,
 12127,WORD_CONJUNCTION,,HIRAGANA,,,然も,しかも,,shikamo,"ponadto
@@ -26633,10 +26682,13 @@ pomimo to",,,
 12130,WORD_ADJECTIVE_NA,,HIRAGANA,,,主観的,しゅかんてき,,shukanteki,subiektywny,,,
 12131,WORD_EXPRESSION,,HIRAGANA,,,-,それじゃ,,soreja,to na razie,,,
 12132,WORD_VERB_IRREGULAR,,HIRAGANA,,,水泳する,すいえいする,,suiei suru,pływać,,,
-12133,WORD_NOUN,,HIRAGANA,,,水平,すいへい,,suihei,"poziom
-płaszczyzna",,,12134
-12134,WORD_ADJECTIVE_NA,,HIRAGANA,,,水平,すいへい,,suihei,"poziomy
-horyzontalny",,,12133
+12133,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,水平,すいへい,,suihei,"poziom
+płaszczyzna
+poziomy
+horyzontalny",,,
+12134,WORD_NOUN,,HIRAGANA,,,雪国,ゆきぐに,,yukiguni,"śnieżny kraj
+zaśnieżony kraj",,,
 12135,WORD_NOUN,,HIRAGANA,,,水平線,すいへいせん,,suiheisen,"horyzont
 linia horyzontu",,,
 12136,WORD_NOUN,,KATAKANA,,,-,スピード,,supiido,"prędkość
@@ -26752,10 +26804,12 @@ kochać",,,
 12196,WORD_NOUN,,HIRAGANA,,,政治活動,せいじかつどう,,seiji katsudou,działalność polityczna,,,
 12197,WORD_NOUN,,HIRAGANA,,,活動的な人,かつどうてきなひと,,katsudouteki na hito,"osoba aktywna
 osoba działająca",,,
-12198,WORD_NOUN,,HIRAGANA,,,勝手,かって,,katte,kuchnia,,,12199
-12199,WORD_ADJECTIVE_NA,,HIRAGANA,,,勝手,かって,,katte,"samolubny
+12198,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,勝手,かって,,katte,"kuchnia
+samolubny
 egoistyczny
-samowolny",,,12198
+samowolny",,,
+12199,WORD_NOUN,,HIRAGANA,,,三役,さんやく,,san'yaku,trzy najwyższe wyniki,,,
 12200,WORD_VERB_RU,,HIRAGANA,,,お金を集める,おかねをあつめる,,okane o atsumeru,zbierać pieniądze,,,
 12201,WORD_NOUN,,HIRAGANA,,,人口調査,じんこうちょうさ,,jinkou chousa,spis ludności,,,
 12202,WORD_NOUN,,HIRAGANA,,,人口問題,じんこうもんだい,,jinkou mondai,problem populacji,,,
@@ -26886,8 +26940,12 @@ jednak",używa się również formy yappari,,
 12280,WORD_VERB_RU,,HIRAGANA,,,部品を取り替える,ぶひんをとりかえる,,buhin o torikaeru,wymieniać części,,,
 12281,WORD_NOUN,,HIRAGANA,,,部分品,ぶぶんひん,,bubunhin,"części składowe
 części zamienne",,,
-12282,WORD_NOUN,,HIRAGANA,,,無事,ぶじ,,buji,bezpieczeństwo,,,12283
-12283,WORD_ADJECTIVE_NA,,HIRAGANA,,,無事,ぶじ,,buji,bezpieczny,,,12282
+12282,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,無事,ぶじ,,buji,"bezpieczeństwo
+bezpieczny",,,
+12283,WORD_NOUN,,HIRAGANA,,,勧奨,かんしょう,,kanshou,"zachęta
+poparcie
+pobudzenie",,,
 12284,WORD_VERB_RU,,HIRAGANA,,,仏教を信じる,ぶっきょうをしんじる,,bukkyou o shinjiru,wyznawać buddyzm,,,
 12285,WORD_NOUN,,HIRAGANA,,,仏教徒,ぶっきょうと,,bukkyouto,buddysta,,,
 12286,WORD_NOUN,,HIRAGANA,,,仏教美術,ぶっきょうびじゅつ,,bukkyou bijutsu,sztuka buddyjska,,,
@@ -27595,7 +27653,10 @@ turniej",,,
 konstrukcja fizyczna
 walory fizyczne
 sylwetka",,,
-12695,WORD_NOUN,,HIRAGANA,,,退屈,たいくつ,,taikutsu,nuda,,,10217
+12695,WORD_NOUN,,HIRAGANA,,,横領,おうりょう,,ouryou,"defraudacja
+malwersacja
+sprzeniewierzenie
+przywłaszczenie",,,
 12696,WORD_VERB_IRREGULAR,,HIRAGANA,,,退屈する,たいくつする,,taikutsu suru,nudzić się,,,
 12697,WORD_NOUN,,HIRAGANA,,,退屈な話,たいくつなはなし,,taikutsu na hanashi,"nudna rozmowa
 nudne opowiadanie",,,
@@ -27877,8 +27938,10 @@ wystrzegać się",,,
 12864,WORD_NOUN,,HIRAGANA,,,弁当,べんとう,,bentou,pudełko na jedzenie,,,
 12865,WORD_NOUN,,HIRAGANA,,,弁当箱,べんとうばこ,,bentoubako,pudełko na jedzenie,pojemnik,,
 12866,WORD_NOUN,,KATAKANA,,,-,ベル,,beru,dzwonek,,,
-12867,WORD_NOUN,,HIRAGANA,,,別,べつ,,betsu,"różnica
-rozróżnianie",,,6958
+12867,WORD_NOUN,,HIRAGANA,,,計器,けいき,,keiki,"wskaźnik
+miernik
+licznik
+przyrząd pomiarowy",,,
 12868,UNKNOWN,,HIRAGANA,,,-,なんか,,nanka,"i inne
 i tym podobne
 na przykład",,,
