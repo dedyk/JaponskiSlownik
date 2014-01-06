@@ -171,6 +171,21 @@ public class Helper {
 						}
 					}
 
+					// noun/na-adjective
+					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NOUN) == true
+							&& dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_NA) == false
+							&& foundJMEDict.getPos().contains("adj-na") == true) {
+
+						dictionaryEntryTypeList.add(DictionaryEntryType.WORD_ADJECTIVE_NA);
+					}
+
+					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_NA) == true
+							&& dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NOUN) == false
+							&& foundJMEDict.getPos().contains("n") == true) {
+
+						dictionaryEntryTypeList.add(DictionaryEntryType.WORD_NOUN);
+					}
+
 					// kanji/kana alone
 					if (attributeList.contains(AttributeType.KANJI_ALONE) == false
 							&& foundJMEDict.getMisc().contains("uK") == true) {
