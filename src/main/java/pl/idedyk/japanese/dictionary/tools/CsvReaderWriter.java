@@ -229,7 +229,7 @@ public class CsvReaderWriter {
 			csvWriter.write(convertListToString(polishJapaneseEntry.getPolishTranslates()));
 			csvWriter.write(polishJapaneseEntry.getInfo());
 			//csvWriter.write(polishJapaneseEntry.isUseEntry() == false ? "NO" : "");
-			csvWriter.write("");
+			csvWriter.write(convertListToString(polishJapaneseEntry.getParseAdditionalInfoList()));
 
 			if (addKnownDupplicatedId == true) {
 				csvWriter
