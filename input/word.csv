@@ -104,7 +104,7 @@ Genki kanji 1-5",,今,いま,,ima,"teraz
 obecnie
 zaraz
 dopiero co",,,
-67,UNKNOWN,SUFFIX,HIRAGANA,Genki 1-1,,半,はん,,han,"połowa
+67,WORD_NOUN,SUFFIX,HIRAGANA,Genki 1-1,,半,はん,,han,"połowa
 pół
 nieparzysty numer",,,
 68,UNKNOWN,,HIRAGANA,"Genki 1-1
@@ -843,7 +843,8 @@ znajdować się","miejsce ni, do rzeczy żywych",,"645
 8043"
 370,UNKNOWN,,HIRAGANA,Genki 1-4,,-,ぐらい,,gurai,około,ogólne,,
 371,WORD_EXPRESSION,,HIRAGANA,Genki 1-4,,-,ごめんなさい,,gomen nasai,przepraszam,,,
-372,UNKNOWN,,HIRAGANA,Genki 1-4,,-,だから,,dakara,"ponieważ
+372,"WORD_NOUN
+WORD_CONJUNCTION",,HIRAGANA,Genki 1-4,,-,だから,,dakara,"ponieważ
 dlatego
 więc",często może występować na końcu zdania,,
 373,UNKNOWN,,HIRAGANA,Genki 1-4,,沢山,たくさん,,takusan,"dużo
@@ -861,7 +862,7 @@ oraz",,,"801
 375,WORD_ASK,,HIRAGANA,Genki 1-4,,-,どうして,,doushite,"dlaczego
 jak
 w jaki sposób",,,
-376,UNKNOWN,,HIRAGANA,"Genki 1-4
+376,WORD_EXPRESSION,,HIRAGANA,"Genki 1-4
 Genki kanji 1-4",,一人で,ひとりで,,hitoride,sam,,,
 377,UNKNOWN,,HIRAGANA,Genki 1-4,,-,もしもし,,moshimoshi,"hallo (podczas rozmowy telefonicznej)
 przepraszam (gdy wołamy nieznaną nam osobę)",,,
@@ -1615,7 +1616,7 @@ Genki 1-8",,何も,なにも,,nanimo,nic,nani [partykuła] mo + czasownik w form
 Genki kanji 1-12",,別に,べつに,,betsu ni,"nieszczególnie
 niespecjalnie",+ czasownik w formie negatywnej,,
 603,WORD_ADVERB,,HIRAGANA,Genki 1-7,,勿論,もちろん,,mochiron,oczywiście,,,
-604,UNKNOWN,,HIRAGANA,Genki 1-7,,-,よかったら,,yokattara,jeśli chcesz,,,
+604,WORD_EXPRESSION,,HIRAGANA,Genki 1-7,,-,よかったら,,yokattara,jeśli chcesz,,,
 605,WORD_VERB_U,,HIRAGANA,"Genki 1-8
 Genki kanji 1-8",,言う,いう,,iu,"mówić
 powiedzieć
@@ -1788,10 +1789,10 @@ wszystko",,,4096
 663,WORD_NOUN,,HIRAGANA,Genki 1-8,,誰か,だれか,,dareka,ktoś,"dareka [partykuła], do osób",,
 664,WORD_NOUN,,HIRAGANA,Genki 1-8,,-,どれか,,doreka,któryś,"doreka [partykuła], który",,
 665,UNKNOWN,,HIRAGANA,Genki 1-8,,-,どこか,,dokoka,gdzieś,"dokoka [partykuła], do miejsc",,
-666,UNKNOWN,,HIRAGANA,Genki 1-8,,-,だれも,,daremo,nikt,"dare [partykuła] mo + czasownik w formie negatywnej, do osób",,
+666,WORD_CONJUNCTION,,HIRAGANA,Genki 1-8,,-,だれも,,daremo,nikt,"dare [partykuła] mo + czasownik w formie negatywnej, do osób",,
 667,WORD_ADVERB,,HIRAGANA,Genki 1-8,,-,どれも,,doremo,żaden,"dore [partykuła] mo + czasownik w formie negatywnej, który",,
-668,UNKNOWN,,HIRAGANA,Genki 1-8,,-,どこも,,dokomo,nigdzie,"doko [partykuła] mo + czasownik w formie negatywnej, do miejsc",,
-669,UNKNOWN,,HIRAGANA,"Genki dodatkowe 1-8
+668,WORD_CONJUNCTION,,HIRAGANA,Genki 1-8,,-,どこも,,dokomo,nigdzie,"doko [partykuła] mo + czasownik w formie negatywnej, do miejsc",,
+669,WORD_EXPRESSION,,HIRAGANA,"Genki dodatkowe 1-8
 Genki 2-15",,-,について,,nitsuite,"o ...
 odnośnie ...",czegoś,,
 670,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 1-8,,-,いつか,,itsuka,"któregoś dnia
@@ -1808,7 +1809,7 @@ wcześniej",,,
 Genki kanji 2-23",,答える,こたえる,,kotaeru,"odpowiadać
 odpisywać
 reagować",,,
-674,UNKNOWN,,HIRAGANA,Genki dodatkowe 1-8,,次に,つぎに,,tsugini,drugi,,,
+674,WORD_CONJUNCTION,,HIRAGANA,Genki dodatkowe 1-8,,次に,つぎに,,tsugini,drugi,,,
 675,UNKNOWN,,HIRAGANA,"Genki dodatkowe 1-8
 Genki kanji 1-9
 Genki kanji 2-20",,最後に,さいごに,,saigoni,ostatni,,,
@@ -1906,7 +1907,7 @@ uprawiać sport",fizyczne,,
 Genki kanji 2-17",を,散歩する,さんぽする,o,sanpo suru,spacerować,~ o miejsce,,
 707,UNKNOWN,,HIRAGANA,Genki 1-9,,是非,ぜひ,,zehi,"koniecznie
 za wszelką cenę",,,
-708,UNKNOWN,,HIRAGANA,Genki 1-9,,-,ところで,,tokorode,"przy okazji
+708,WORD_CONJUNCTION,,HIRAGANA,Genki 1-9,,-,ところで,,tokorode,"przy okazji
 nawiasem mówiąc","używa się na przykład wtedy, gdy chcemy zmienić temat rozmowy",,
 709,WORD_ADVERB,,HIRAGANA,Genki 1-9,,-,もう,,mou,"już
 niedługo
@@ -1942,7 +1943,7 @@ Genki kanji 1-3",,九つ,ここのつ,,kokonotsu,dziewięć,klasyfikator ogólny
 719,WORD_COUNTERS,,HIRAGANA,"Genki 1-9
 Klasyfikatory
 Genki kanji 1-3",,十,とお,,too,dziesięć,klasyfikator ogólny,,11
-720,UNKNOWN,,HIRAGANA,Genki 1-11,,然して,そして,,soshite,"następnie
+720,WORD_CONJUNCTION,,HIRAGANA,Genki 1-11,,然して,そして,,soshite,"następnie
 i
 przeto
 więc",,,
@@ -2473,7 +2474,7 @@ Genki kanji 2-20
 Genki kanji 2-21",,心配する,しんぱいする,,shinpai suru,"martwić się
 niepokoić się",,,
 917,UNKNOWN,,HIRAGANA,Genki 1-12,,-,いつも,,itsumo,zawsze,,,
-918,UNKNOWN,,HIRAGANA,Genki 1-12,,お大事に,おだいじに,,odaijini,"będzie dobrze
+918,WORD_EXPRESSION,,HIRAGANA,Genki 1-12,,お大事に,おだいじに,,odaijini,"będzie dobrze
 trzymaj się",,,
 919,UNKNOWN,,HIRAGANA,Genki 1-12,,元気がない,げんきがない,,genki ga nai,słabo wyglądać,,,
 920,UNKNOWN,,HIRAGANA,Genki 1-12,,多分,たぶん,,tabun,"być może
@@ -2481,8 +2482,8 @@ chyba
 prawdopodobnie
 przypuszczalnie
 najprawdopodobniej","najczęściej towarzyszą mu formy ~ deshou , ~ darou i itp.",,
-921,UNKNOWN,,HIRAGANA,Genki 1-12,,-,できるだけ,,dekiru dake,w miarę możliwości,,,
-922,UNKNOWN,,HIRAGANA,Genki 1-12,,-,でしょう,,deshou,"prawdopodobnie
+921,WORD_EXPRESSION,,HIRAGANA,Genki 1-12,,-,できるだけ,,dekiru dake,w miarę możliwości,,,
+922,WORD_EXPRESSION,,HIRAGANA,Genki 1-12,,-,でしょう,,deshou,"prawdopodobnie
 chyba
 myślę, że ...","~, pewność 60%, używane m.in do prognozy pogody",,
 923,UNKNOWN,SUFFIX,HIRAGANA,Genki 1-12,,度,ど,,do,"razy
@@ -2496,7 +2497,7 @@ skala
 dlatego, że
 bo",~,,
 926,WORD_ADVERB,,HIRAGANA,Genki 1-12,,始めて,はじめて,,hajimete,pierwszy raz,,,
-927,UNKNOWN,,HIRAGANA,Genki 1-12,,-,もうすぐ,,mousugu,"bardzo szybko
+927,WORD_EXPRESSION,,HIRAGANA,Genki 1-12,,-,もうすぐ,,mousugu,"bardzo szybko
 za parę chwil/dni",,,
 928,WORD_VERB_U,,HIRAGANA,"Genki kanji 2-15
 Genki 2-18",,転ぶ,ころぶ,,korobu,"upaść
@@ -3536,7 +3537,7 @@ posłać (do szkoły, szpitala, etc)
 włączać
 wliczać
 przyrządzać (napoje)",,,2226
-1371,UNKNOWN,,HIRAGANA,Genki kanji 1-7,,輸入,ゆにゅう,,yunyuu,"import
+1371,WORD_NOUN,,HIRAGANA,Genki kanji 1-7,,輸入,ゆにゅう,,yunyuu,"import
 przywóz
 wwóz",,,
 1372,WORD_NOUN,,HIRAGANA,"Genki kanji 1-8
@@ -3699,7 +3700,7 @@ sąsiad",bardziej oficjalnie,,
 Genki 2-18",,明るい,あかるい,,akarui,"pogodny
 jasny
 radosny",,,
-1432,UNKNOWN,,HIRAGANA,Genki kanji 1-11,,説明,せつめい,,setsumei,"wyjaśnienie
+1432,WORD_NOUN,,HIRAGANA,Genki kanji 1-11,,説明,せつめい,,setsumei,"wyjaśnienie
 objaśnienie
 wytłumaczenie
 interpretacja
@@ -3958,7 +3959,7 @@ szybki marsz",,,
 podróżować pociągiem
 wsiadać do samochodu
 wsiadać do pociągu",,,
-1531,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,乗馬,じょうば,,jouba,jeździć konno,,,
+1531,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,乗馬,じょうば,,jouba,jeździć konno,,,
 1532,UNKNOWN,,HIRAGANA,Genki kanji 2-14,,当時,とうじ,,touji,"w tym czasie
 w owym czasie
 wtedy
@@ -4481,7 +4482,7 @@ uprowadzenie",,,
 1835,WORD_VERB_IRREGULAR,,HIRAGANA,,,誘拐する,ゆうかいする,,yuukai suru,"porywać
 uprowadzać",,,
 1836,WORD_VERB_RU,,HIRAGANA,,,振られる,ふられる,,furareru,zostać porzucony,"np. przez dziewczynę, chłopaka",,
-1837,UNKNOWN,,HIRAGANA,,,失業,しつぎょう,,shitsugyou,bezrobocie,,,
+1837,WORD_NOUN,,HIRAGANA,,,失業,しつぎょう,,shitsugyou,bezrobocie,,,
 1838,WORD_ADJECTIVE_I,,HIRAGANA,,,軽い,かるい,,karui,"lekki (nieciężki)
 lekki
 niepoważny",nieciężki,,
@@ -4989,7 +4990,7 @@ wcześniej
 niedawno
 poprzednim razem
 poprzednio",,,
-2072,UNKNOWN,,HIRAGANA,Genki 2-16,,-,このぐらい,,kono gurai,mniej więcej tyle,,,
+2072,WORD_EXPRESSION,,HIRAGANA,Genki 2-16,,-,このぐらい,,kono gurai,mniej więcej tyle,,,
 2073,WORD_EXPRESSION,,HIRAGANA,Genki 2-16,,-,ごめん,,gomen,przepraszam,mowa potoczna,,
 2074,WORD_EXPRESSION,,HIRAGANA,"Genki 2-16
 Genki 2-20",,失礼します,しつれいします,,shitsurei shimasu,"przepraszam, że przeszkadzam
@@ -12286,7 +12287,7 @@ być ustawionym
 stawać w szeregu
 stać w rzędzie",,,
 5356,WORD_NOUN,,HIRAGANA,,,並み,なみ,,nami,pospolity,,,
-5357,UNKNOWN,,HIRAGANA,,,並びに,ならびに,,narabini,"i
+5357,WORD_CONJUNCTION,,HIRAGANA,,,並びに,ならびに,,narabini,"i
 również",,,
 5358,WORD_VERB_U,,HIRAGANA,,,苦しむ,くるしむ,,kurushimu,"cierpieć
 męczyć się",z powodu bólu lub braku czegoś,,
@@ -14392,7 +14393,7 @@ wykonywać",,,
 dosięgać
 zdarzać się",,,
 6277,WORD_EXPRESSION,,HIRAGANA,,,及ばない,およばない,,oyobanai,niepotrzebny,,,
-6278,UNKNOWN,,HIRAGANA,,,及び,および,,oyobi,"i
+6278,WORD_CONJUNCTION,,HIRAGANA,,,及び,および,,oyobi,"i
 także
 oraz",,,
 6279,WORD_NOUN,,HIRAGANA,,,獄,ごく,,goku,"więzienie
@@ -14749,7 +14750,7 @@ usilnie",,,
 6452,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-21,,滅多に,めったに,,metta ni,rzadko,,,
 6453,WORD_ADJECTIVE_I,,HIRAGANA,Genki dodatkowe 2-21,,滅多にない,めったにない,,mettaninai,"rzadki
 rzadko",,,
-6454,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-21,,所が,ところが,,tokoro ga,"jednak
+6454,WORD_CONJUNCTION,,HIRAGANA,Genki dodatkowe 2-21,,所が,ところが,,tokoro ga,"jednak
 jednakże
 natomiast
 ale
@@ -16500,7 +16501,7 @@ to nieuchronne",używane według wzoru: ~te shikata ga nai,,
 7295,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 2-22,,逃げる,にげる,,nigeru,"uciekać
 unikać
 wycofywać się",,,
-7296,UNKNOWN,,HIRAGANA,Genki dodatkowe 2-22,,其れで,それで,,sorede,"przeto
+7296,WORD_CONJUNCTION,,HIRAGANA,Genki dodatkowe 2-22,,其れで,それで,,sorede,"przeto
 więc
 dlatego
 wobec tego
@@ -16800,7 +16801,7 @@ równina",,,"7430
 7433,WORD_NOUN,,HIRAGANA,,,野心,やしん,,yashin,ambicja,,,
 7434,WORD_NOUN,,HIRAGANA,,,野生動物,やせいどうぶつ,,yasei doubutsu,dzikie zwierzęta,,,
 7435,WORD_NOUN,,HIRAGANA,,,義姉,ぎし,,gishi,żona starszego brata,,,
-7436,UNKNOWN,,HIRAGANA,,,続,ぞく,,zoku,"kontynuacja
+7436,WORD_NOUN,PREFIX,HIRAGANA,,,続,ぞく,,zoku,"kontynuacja
 ciągłość",,,
 7437,WORD_NOUN,,HIRAGANA,,,続行,ぞっこう,,zokkou,kontynuacja,,,
 7438,WORD_NOUN,,HIRAGANA,,,相続,そうぞく,,souzoku,"sukcesja
@@ -17997,7 +17998,7 @@ wermut",,,7963
 7963,WORD_NOUN,,HIRAGANA,,,朱,あか,,aka,"szkarłatny
 czerwony
 krwisty",,,7962
-7964,UNKNOWN,,HIRAGANA,,,但し,ただし,,tadashi,"jednakże
+7964,WORD_CONJUNCTION,,HIRAGANA,,,但し,ただし,,tadashi,"jednakże
 lecz",,,
 7965,WORD_NOUN,,HIRAGANA,,,肝,きも,,kimo,wątroba,,,
 7966,WORD_NOUN,,HIRAGANA,,,幣,へい,,hei,"ofiara sintoistyczna (na specjalnie zwiniętym papierze)
@@ -20781,7 +20782,7 @@ młodzieńczy",,,
 9307,WORD_NOUN,,HIRAGANA,,,男児,だんじ,,danji,"chłopak
 chłopiec",,,
 9308,WORD_NOUN,,HIRAGANA,,,入り口,いりぐち,,iriguchi,wejście,,,
-9309,UNKNOWN,,HIRAGANA,,,何故ならば,なぜならば,,nazenaraba,"albowiem
+9309,WORD_CONJUNCTION,,HIRAGANA,,,何故ならば,なぜならば,,nazenaraba,"albowiem
 bo
 bowiem
 gdyż
@@ -26448,7 +26449,7 @@ mniej więcej",,,9778
 11989,UNKNOWN,SUFFIX,HIRAGANA,,,-,どおり,,doori,"w ten sposób
 tak, jak
 zgodnie z",,,
-11990,UNKNOWN,,HIRAGANA,,,予想通り,よそうどおり,,yosou doori,"tak, jak się spodziewano",,,
+11990,WORD_EXPRESSION,,HIRAGANA,,,予想通り,よそうどおり,,yosou doori,"tak, jak się spodziewano",,,
 11991,WORD_NOUN,,HIRAGANA,,,積もり,つもり,,tsumori,"zamiar
 zamysł
 cel",,,
@@ -28445,7 +28446,7 @@ ukazuje się nowe wydanie",,,
 13231,WORD_VERB_RU,,HIRAGANA,,,旅行に出る,りょこうにでる,,ryokou ni deru,wyruszać w podróż,,,
 13232,WORD_VERB_RU,,HIRAGANA,,,木の芽が出る,きのめがでる,,ki no me ga deru,na drzewach pojawiają się pączki,,,
 13233,WORD_ADJECTIVE_I,,HIRAGANA,,,日当たりがいい,ひあたりがいい,,hiatari ga ii,słoneczny,"np. pokój, dosł: dobrze wpada słońce",,
-13234,UNKNOWN,,HIRAGANA,,,その日,そのひ,,sono hi,tego dnia,,,
+13234,WORD_EXPRESSION,,HIRAGANA,,,その日,そのひ,,sono hi,tego dnia,,,
 13235,WORD_NOUN,,HIRAGANA,,,次の日,つぎのひ,,tsugi no hi,następnego dnia,,,
 13236,WORD_NOUN,,HIRAGANA,,,天気のよい日,てんきのよいひ,,tenki no yoi hi,pogodny dzień,,,
 13237,WORD_VERB_RU,,HIRAGANA,,,体が冷える,からだがひえる,,karada ga hieru,zmarznąć,dosł: ciało marznie,,
