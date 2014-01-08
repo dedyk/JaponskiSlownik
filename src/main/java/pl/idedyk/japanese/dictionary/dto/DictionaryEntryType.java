@@ -20,7 +20,11 @@ public enum DictionaryEntryType {
 
 	WORD_VERB_IRREGULAR("czasownik nieregularny"),
 
+	WORD_VERB_ZURU("czasownik zuru"),
+
 	WORD_ADJECTIVE_I("i-przymiotnik"),
+
+	WORD_AUX_ADJECTIVE_I("pomocniczy i-przymiotnik"),
 
 	WORD_ADJECTIVE_NA("na-przymiotnik"),
 
@@ -32,7 +36,11 @@ public enum DictionaryEntryType {
 
 	WORD_ADVERB("Przysłówek"),
 
+	WORD_ADVERB_TO("Przysłówek z partykułą to"),
+
 	WORD_ADVERBIAL_NOUN("Rzeczownik przysłówkowy"),
+
+	WORD_PRE_NOUN_ADVERBIAL("Przed rzeczownik przysłówkowy"),
 
 	WORD_DAY_NUMBER("Numer dnia"),
 
@@ -63,6 +71,8 @@ public enum DictionaryEntryType {
 	WORD_PARTICULE("Partykuła"),
 
 	WORD_INTERJECTION("Wykrzyknik"),
+
+	WORD_AUX("Pomocniczy"),
 
 	WORD_EMPTY("Pusty"),
 
