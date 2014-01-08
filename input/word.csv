@@ -864,8 +864,7 @@ znajdować się","miejsce ni, do rzeczy żywych",,"645
 8043"
 370,WORD_PARTICULE,SUFFIX,HIRAGANA,Genki 1-4,,-,ぐらい,,gurai,około,ogólne,,
 371,WORD_EXPRESSION,,HIRAGANA,Genki 1-4,,-,ごめんなさい,,gomen nasai,przepraszam,,,
-372,"WORD_NOUN
-WORD_CONJUNCTION",,HIRAGANA,Genki 1-4,,-,だから,,dakara,"ponieważ
+372,WORD_CONJUNCTION,,HIRAGANA,Genki 1-4,,-,だから,,dakara,"ponieważ
 dlatego
 więc",często może występować na końcu zdania,,
 373,WORD_ADVERB,,HIRAGANA,Genki 1-4,,沢山,たくさん,,takusan,"dużo
@@ -1812,7 +1811,7 @@ Genki 1-9",,皆,みんな,,minna,"wszyscy
 wszystko",,,4096
 663,WORD_NOUN,,HIRAGANA,Genki 1-8,,誰か,だれか,,dareka,ktoś,"dareka [partykuła], do osób",,
 664,WORD_NOUN,,HIRAGANA,Genki 1-8,,-,どれか,,doreka,któryś,"doreka [partykuła], który",,
-665,WORD_NOUN,,HIRAGANA,Genki 1-8,,何処か,どこか,,dokoka,gdzieś,"dokoka [partykuła], do miejsc",,
+665,WORD_ADVERB,,HIRAGANA,Genki 1-8,,何処か,どこか,,dokoka,gdzieś,"dokoka [partykuła], do miejsc",,
 666,WORD_CONJUNCTION,,HIRAGANA,Genki 1-8,,-,だれも,,daremo,nikt,"dare [partykuła] mo + czasownik w formie negatywnej, do osób",,
 667,WORD_ADVERB,,HIRAGANA,Genki 1-8,,-,どれも,,doremo,żaden,"dore [partykuła] mo + czasownik w formie negatywnej, który",,
 668,WORD_CONJUNCTION,,HIRAGANA,Genki 1-8,,-,どこも,,dokomo,nigdzie,"doko [partykuła] mo + czasownik w formie negatywnej, do miejsc",,
@@ -18674,7 +18673,8 @@ barbarzyńca",,,
 8173,WORD_ADJECTIVE_NA,,HIRAGANA,,,凡,ぼん,,bon,przeciętność,,,
 8174,WORD_ADVERB,,HIRAGANA,,,凡そ,およそ,,oyoso,"około
 w przybliżeniu",,,
-8175,WORD_NOUN,,HIRAGANA,,,凡て,すべて,,subete,"wszystko
+8175,"WORD_NOUN
+WORD_ADVERBIAL_NOUN",,HIRAGANA,,,凡て,すべて,,subete,"wszystko
 całość
 ogólnie",,,
 8176,WORD_VERB_U,,HIRAGANA,,,削る,けずる,,kezuru,"strugać
