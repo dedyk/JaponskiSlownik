@@ -72,10 +72,64 @@ public class UnknownWord {
 					}
 					
 					*/
+					/*
+					if (currentUniquePos.equals("[n-t]") == true) {
 
-					if (currentUniquePos.equals("[n, n-pref]") == true) {
-						System.out.println(polishJapaneseEntry.getId());
+						polishJapaneseEntry.getDictionaryEntryTypeList().clear();
+						polishJapaneseEntry.getDictionaryEntryTypeList().add(DictionaryEntryType.WORD_NOUN);
 					}
+					*/
+
+					/*
+					if (currentUniquePos.equals("[pref]") == true) {
+
+						polishJapaneseEntry.getDictionaryEntryTypeList().clear();
+						polishJapaneseEntry.getDictionaryEntryTypeList().add(DictionaryEntryType.WORD_EMPTY);
+
+						if (polishJapaneseEntry.getAttributeList().contains(AttributeType.PREFIX) == false) {
+							polishJapaneseEntry.getAttributeList().add(AttributeType.PREFIX);
+						}
+					}
+					*/
+
+					/*
+					if (currentUniquePos.equals("[suf]") == true) {
+
+						polishJapaneseEntry.getDictionaryEntryTypeList().clear();
+						polishJapaneseEntry.getDictionaryEntryTypeList().add(DictionaryEntryType.WORD_EMPTY);
+
+						if (polishJapaneseEntry.getAttributeList().contains(AttributeType.SUFFIX) == false) {
+							polishJapaneseEntry.getAttributeList().add(AttributeType.SUFFIX);
+						}
+					}
+					*/
+
+					/*
+					if (currentUniquePos.equals("[n, n-adv]") == true) {
+
+						polishJapaneseEntry.getDictionaryEntryTypeList().clear();
+						polishJapaneseEntry.getDictionaryEntryTypeList().add(DictionaryEntryType.WORD_NOUN);
+						polishJapaneseEntry.getDictionaryEntryTypeList().add(DictionaryEntryType.WORD_ADVERBIAL_NOUN);
+					}
+
+					if (currentUniquePos.equals("[n-adv]") == true) {
+
+						polishJapaneseEntry.getDictionaryEntryTypeList().clear();
+						polishJapaneseEntry.getDictionaryEntryTypeList().add(DictionaryEntryType.WORD_ADVERBIAL_NOUN);
+					}
+					*/
+
+					/*
+					if (currentUniquePos.equals("[n-suf]") == true) {
+						polishJapaneseEntry.getDictionaryEntryTypeList().clear();
+						polishJapaneseEntry.getDictionaryEntryTypeList().add(DictionaryEntryType.WORD_NOUN);
+
+						if (polishJapaneseEntry.getAttributeList().contains(AttributeType.SUFFIX) == false) {
+							polishJapaneseEntry.getAttributeList().add(AttributeType.SUFFIX);
+						}
+					}
+					*/
+
 				}
 			}
 		}

@@ -32,6 +32,8 @@ public enum DictionaryEntryType {
 
 	WORD_ADVERB("Przysłówek"),
 
+	WORD_ADVERBIAL_NOUN("Rzeczownik przysłówkowy"),
+
 	WORD_DAY_NUMBER("Numer dnia"),
 
 	WORD_DAY_WEEK("Dzień tygodnia"),
@@ -61,6 +63,8 @@ public enum DictionaryEntryType {
 	WORD_PARTICULE("Partykuła"),
 
 	WORD_INTERJECTION("Wykrzyknik"),
+
+	WORD_EMPTY("Pusty"),
 
 	UNKNOWN("unknown");
 
