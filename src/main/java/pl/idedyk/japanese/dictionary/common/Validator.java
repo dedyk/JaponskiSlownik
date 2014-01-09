@@ -230,7 +230,7 @@ public class Validator {
 			mapEdictTypeToDictionaryEntryType.put("v5u-s", DictionaryEntryType.WORD_VERB_U);
 			mapEdictTypeToDictionaryEntryType.put("n", DictionaryEntryType.WORD_NOUN);
 			mapEdictTypeToDictionaryEntryType.put("n-adv", DictionaryEntryType.WORD_NOUN);
-			mapEdictTypeToDictionaryEntryType.put("n-t", DictionaryEntryType.WORD_NOUN);
+			mapEdictTypeToDictionaryEntryType.put("n-t", DictionaryEntryType.WORD_TEMPORAL_NOUN);
 			mapEdictTypeToDictionaryEntryType.put("adj-f", DictionaryEntryType.WORD_NOUN);
 			mapEdictTypeToDictionaryEntryType.put("adj-no", DictionaryEntryType.WORD_NOUN);
 			mapEdictTypeToDictionaryEntryType.put("vs", DictionaryEntryType.WORD_NOUN);
@@ -243,6 +243,12 @@ public class Validator {
 			mapEdictTypeToDictionaryEntryType.put("adv", DictionaryEntryType.WORD_ADVERB);
 			mapEdictTypeToDictionaryEntryType.put("n-adv", DictionaryEntryType.WORD_ADVERB);
 			mapEdictTypeToDictionaryEntryType.put("conj", DictionaryEntryType.WORD_CONJUNCTION);
+			mapEdictTypeToDictionaryEntryType.put("vz", DictionaryEntryType.WORD_VERB_ZURU);
+			mapEdictTypeToDictionaryEntryType.put("aux-adj", DictionaryEntryType.WORD_AUX_ADJECTIVE_I);
+			mapEdictTypeToDictionaryEntryType.put("adv-to", DictionaryEntryType.WORD_ADVERB_TO);
+			mapEdictTypeToDictionaryEntryType.put("n-adv", DictionaryEntryType.WORD_ADVERBIAL_NOUN);
+			mapEdictTypeToDictionaryEntryType.put("adj-pn", DictionaryEntryType.WORD_PRE_NOUN_ADVERBIAL);
+			mapEdictTypeToDictionaryEntryType.put("aux", DictionaryEntryType.WORD_AUX);
 
 			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
 
@@ -279,7 +285,14 @@ public class Validator {
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADVERB) == true
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_PRONOUN) == true
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_CONJUNCTION) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_INTERJECTION) == true) {
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_INTERJECTION) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_TEMPORAL_NOUN) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_ZURU) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_AUX_ADJECTIVE_I) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADVERB_TO) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADVERBIAL_NOUN) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_PRE_NOUN_ADVERBIAL) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_AUX) == true) {
 
 						boolean noFound = true;
 

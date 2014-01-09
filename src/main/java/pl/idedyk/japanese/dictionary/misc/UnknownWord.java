@@ -34,6 +34,12 @@ public class UnknownWord {
 				continue;
 			}
 
+			/*
+			if (polishJapaneseEntry.getDictionaryEntryTypeList().contains(DictionaryEntryType.WORD_NOUN) == false) {
+				continue;
+			}
+			*/
+
 			List<JMEDictEntry> foundJMEDictList = findJMEdictEntry(jmedict, polishJapaneseEntry);
 
 			if (foundJMEDictList != null) {
@@ -130,6 +136,14 @@ public class UnknownWord {
 					}
 					*/
 
+					/*
+					if (pos.contains("n") == false && pos.contains("n-t") == true) {
+
+						polishJapaneseEntry.getDictionaryEntryTypeList()
+								.set(polishJapaneseEntry.getDictionaryEntryTypeList().indexOf(
+										DictionaryEntryType.WORD_NOUN), DictionaryEntryType.WORD_TEMPORAL_NOUN);
+					}
+					*/
 				}
 			}
 		}

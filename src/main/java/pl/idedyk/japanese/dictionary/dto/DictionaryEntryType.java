@@ -12,6 +12,8 @@ public enum DictionaryEntryType {
 
 	WORD_NOUN("rzeczownik"),
 
+	WORD_TEMPORAL_NOUN("rzeczownik czasowy"),
+
 	WORD_VERB_U("u-czasownik"),
 
 	WORD_VERB_RU("ru-czasownik"),
@@ -40,7 +42,7 @@ public enum DictionaryEntryType {
 
 	WORD_ADVERBIAL_NOUN("Rzeczownik przysłówkowy"),
 
-	WORD_PRE_NOUN_ADVERBIAL("Przed rzeczownik przysłówkowy"),
+	WORD_PRE_NOUN_ADVERBIAL("Pre rzeczownik przysłówkowy"),
 
 	WORD_DAY_NUMBER("Numer dnia"),
 
