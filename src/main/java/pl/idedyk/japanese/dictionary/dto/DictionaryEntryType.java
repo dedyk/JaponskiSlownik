@@ -30,6 +30,8 @@ public enum DictionaryEntryType {
 
 	WORD_ADJECTIVE_NA("na-przymiotnik"),
 
+	WORD_ADJECTIVE_TARU("taru-przymiotnik"),
+
 	WORD_EXPRESSION("Wyrażenia"),
 
 	WORD_THAT_POINT("Wskazywanie punktu"),
