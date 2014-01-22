@@ -23,6 +23,8 @@ public enum DictionaryEntryType {
 	WORD_VERB_ZURU("czasownik zuru"),
 	
 	WORD_VERB_AUX("czasownik pomocniczy"),
+	
+	WORD_NOUN_VERB_ACTING_PRENOMINALLY("???"),
 
 	WORD_ADJECTIVE_I("i-przymiotnik"),
 

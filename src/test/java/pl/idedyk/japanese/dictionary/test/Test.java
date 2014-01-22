@@ -1,10 +1,14 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.HashMap;
 import java.util.List;
-import java.util.TreeMap;
+import java.util.Map;
 
-import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
-import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
+import pl.idedyk.japanese.dictionary.common.Validator;
+import pl.idedyk.japanese.dictionary.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 
 public class Test {
 
@@ -153,17 +157,17 @@ public class Test {
 		//TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader
 		//		.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
+		/*
 		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader
 						.readJMEdict("../JapaneseDictionary_additional/JMdict_e_TEST");
 
 		List<JMEDictEntry> list = jmedict.get(JMEDictReader.getMapKey("一週間", "いっしゅうかん"));
 
 		System.out.println(list);
-		
+		*/
 
 		//String word = "ハーモニカをふく";
-
-		/*
+		
 		// hiragana
 		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
 
@@ -196,6 +200,5 @@ public class Test {
 
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, null, null);
-		*/
 	}
 }
