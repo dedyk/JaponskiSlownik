@@ -29,6 +29,21 @@ public class UnknownWord {
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
 			DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryTypeList().get(0);
+			
+			/*
+			if (dictionaryEntryType == DictionaryEntryType.WORD_GREETING) {
+				polishJapaneseEntry.getDictionaryEntryTypeList().remove(DictionaryEntryType.WORD_GREETING);
+				
+				if (polishJapaneseEntry.getDictionaryEntryTypeList().size() == 0) {				
+					polishJapaneseEntry.getDictionaryEntryTypeList().add(DictionaryEntryType.UNKNOWN);
+				}
+				
+				dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryTypeList().get(0);
+				
+				polishJapaneseEntry.getGroups().add("Zwroty grzecznościowe");
+			}
+			*/
+			
 
 			if (dictionaryEntryType != DictionaryEntryType.UNKNOWN) {
 				continue;

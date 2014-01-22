@@ -2,8 +2,6 @@ package pl.idedyk.japanese.dictionary.dto;
 
 public enum DictionaryEntryType {
 
-	WORD_GREETING("Powitanie"),
-
 	WORD_NUMBER("Liczba"),
 
 	WORD_TIME("Godzina"),
