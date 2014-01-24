@@ -5288,7 +5288,7 @@ moc
 potęga
 zdolność
 umiejętność
-energia",,,
+energia",,,14059
 2159,WORD_NOUN,,HIRAGANA,,,社長室,しゃちょうしつ,,shachou shitsu,pokój prezesa,firmy,,
 2160,WORD_NOUN,,HIRAGANA,Genki kanji 2-23,,化粧,けしょう,,keshou,"kosmetyka
 toaleta
@@ -5340,7 +5340,7 @@ grzyby",,,
 2179,WORD_NOUN,,HIRAGANA,,,茸雲,きのこぐも,,kinoko gumo,grzyb atomowy,,,
 2180,WORD_NOUN,,HIRAGANA,,,学名,がくめい,,gakumei,naukowa (międzynarodowa) nazwa,,,
 2181,WORD_EMPTY,SUFFIX,HIRAGANA,Genki kanji 2-19,,様,さま,,sama,"szanowny pan
-szanowna pani",przyrostek honoryfikatywny,,
+szanowna pani",przyrostek honoryfikatywny,,14047
 2182,WORD_NOUN,,HIRAGANA,,,矢,や,,ya,strzała,,,12073
 2183,WORD_NOUN,,HIRAGANA,,,宇宙,うちゅう,,uchuu,"wszechświat
 kosmos",,,
@@ -27282,7 +27282,8 @@ delegat",,,
 4190
 4305
 4818
-10574"
+10574
+14047"
 12401,WORD_VERB_IRREGULAR,,HIRAGANA,,,安心する,あんしんする,,anshin suru,uspokoić się,,,
 12402,WORD_NOUN,,HIRAGANA,,,安定,あんてい,,antei,"równowaga
 stabilność
@@ -30326,7 +30327,7 @@ zestaw (np. garderoby)
 komplet
 zbiór",,,
 14035,WORD_NOUN,,KATAKANA,,,-,セレナーデ,,serenaade,serenada,,,
-14036,WORD_NOUN,,KATAKANA,,,-,パソコンショップ,,pankon shoppu,sklep komputerowy,,,
+14036,WORD_NOUN,,KATAKANA,,,-,パソコンショップ,,pasokon shoppu,sklep komputerowy,,,
 14037,WORD_NOUN,,KATAKANA,,,-,フレックス,,furekkusu,"napinanie
 prężenie
 wyginanie",,,
@@ -30334,7 +30335,7 @@ wyginanie",,,
 defilowanie
 prowadzenie
 marzec",,,
-14039,WORD_NOUN,,HIRAGANA,,,不朽,ふきゅう,,kikyuu,"wieczność
+14039,WORD_NOUN,,HIRAGANA,,,不朽,ふきゅう,,fukyuu,"wieczność
 nieśmiertelność
 wiekopomność
 niezniszczalność",,,
@@ -30344,8 +30345,8 @@ dodatek
 przydział",,,
 14041,WORD_NOUN,,HIRAGANA,,,先制,せんせい,,sensei,"uprzedzenie (czegoś)
 przewaga na starcie",,,
-14042,WORD_NOUN,,HIRAGANA,,,入梅,つゆいり,,tsuyuiri,rozpoczęcie się pory deszczowej,,,
-14043,WORD_NOUN,,HIRAGANA,,,入梅,にゅうばい,,nyuubai,rozpoczęcie się pory deszczowej,,,
+14042,WORD_NOUN,,HIRAGANA,,,入梅,つゆいり,,tsuyuiri,rozpoczęcie się pory deszczowej,,,14043
+14043,WORD_NOUN,,HIRAGANA,,,入梅,にゅうばい,,nyuubai,rozpoczęcie się pory deszczowej,,,14042
 14044,WORD_NOUN,,HIRAGANA,,,墨絵,すみえ,,sumie,obraz namalowany tuszem,,,
 14045,WORD_NOUN,,HIRAGANA,,,墨絵風,すみえふう,,sumiefuu,styl malowania tuszem,,,
 14046,WORD_NOUN,,HIRAGANA,,,戦艦,せんかん,,senkan,okręt wojenny,,,
@@ -30354,9 +30355,44 @@ styl
 form
 design
 jak
-podobny do",,,
+podobny do",,,"2181
+12400"
 14048,WORD_NOUN,,HIRAGANA,,,歌人,かじん,,kajin,poeta (tanka),,,
 14049,WORD_NOUN,,HIRAGANA,,,短歌,たんか,,tanka,tanka,"krótka pieśń, krótki wiersz – jedna z najstarszych form poezji japońskiej (pierwotnie jedna z odmian waka) powstała około VI wieku.",,
 14050,WORD_NOUN,,HIRAGANA,,,異文,いぶん,,ibun,"wariant
 odmiana (rękopis, książka)
 część tekstu, która różni się w innej wersji",,,
+14051,WORD_NOUN,,HIRAGANA,,,見切り発車,みきりはっしゃ,,mikirihassha,"pochopna decyzja
+wykonanie pochodnej decyzje
+ruszenie pociągiem zanim wszyscy pasażerowie znajdą się w pociągu",,,
+14052,WORD_VERB_U,,HIRAGANA,,,話し込む,はなしこむ,,hanashikomu,być zaangażowany w rozmowę,,,
+14053,WORD_NOUN,,HIRAGANA,,,超音速,ちょうおんそく,,chouonsoku,prędkość ponaddźwiękowa,,,
+14054,WORD_NOUN,,HIRAGANA,,,部位,ぶい,,bui,"część
+pozycja","np. ciała, całości",,
+14055,WORD_NOUN,,HIRAGANA,,,領空,りょうくう,,ryoukuu,terytorialnej przestrzeni powietrznej,,,
+14056,WORD_NOUN,,KATAKANA,,,-,トロンボーン,,toronboon,puzon,,,
+14057,WORD_NOUN,,KATAKANA,,,-,ネット,,netto,"sieć (komputerowa)
+net
+siatka
+netto (cena)",,,
+14058,WORD_NOUN,,KATAKANA,,,-,ビタミン,,bitamin,witamina,,,
+14059,WORD_EMPTY,SUFFIX,HIRAGANA,,,力,りょく,,ryoku,"siła
+moc
+biegłość
+sprawność
+zdolność
+umiejętności",,,2158
+14060,WORD_NOUN,,HIRAGANA,,,図版,ずはん,,zuhan,"ilustracja
+rysunek
+rycina
+talerz
+płytka",,,
+14061,WORD_NOUN,,HIRAGANA,,,徴税,ちょうぜい,,chouzei,"pobieranie podatku
+ściąganie podatku
+pobór podatku",,,
+14062,WORD_NOUN,,HIRAGANA,,,憲政,けんせい,,kensei,rząd konstytucyjny,,,
+14063,WORD_NOUN,,HIRAGANA,,,救急箱,きゅうきゅうばこ,,kyuukyuubako,zestaw pierwszej pomocy,,,
+14064,WORD_NOUN,,HIRAGANA,,,筆頭,ひっとう,,hittou,"końcówka pędzelka
+pierwszy na liście
+szef",,,
+14065,WORD_NOUN,,HIRAGANA,,,経済研究所,けいざいけんきゅうしょ,,keizai kenkyuusho,ekonomiczne centrum badawcze,,,
