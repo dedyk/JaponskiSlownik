@@ -9,7 +9,9 @@ public enum DictionaryEntryType {
 	WORD_AGE("Wiek"),
 
 	WORD_NOUN("rzeczownik"),
-
+	
+	WORD_PRE_NOUN_ADJECTIVAL("???"),
+	
 	WORD_TEMPORAL_NOUN("rzeczownik czasowy"),
 
 	WORD_VERB_U("u-czasownik"),
