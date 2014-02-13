@@ -26,7 +26,7 @@ public enum DictionaryEntryType {
 	
 	WORD_VERB_AUX("czasownik pomocniczy"),
 	
-	WORD_NOUN_VERB_ACTING_PRENOMINALLY("???"),
+	WORD_ADJECTIVE_F("rzeczownik, bądź czasownik pełniący rolę przymiotnika"),
 
 	WORD_ADJECTIVE_I("i-przymiotnik"),
 

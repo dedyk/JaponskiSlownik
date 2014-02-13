@@ -231,7 +231,7 @@ public class Validator {
 			mapEdictTypeToDictionaryEntryType.put("n", DictionaryEntryType.WORD_NOUN);
 			mapEdictTypeToDictionaryEntryType.put("n-adv", DictionaryEntryType.WORD_NOUN);
 			mapEdictTypeToDictionaryEntryType.put("n-t", DictionaryEntryType.WORD_TEMPORAL_NOUN);
-			mapEdictTypeToDictionaryEntryType.put("adj-f", DictionaryEntryType.WORD_NOUN);
+			mapEdictTypeToDictionaryEntryType.put("adj-f", DictionaryEntryType.WORD_ADJECTIVE_F);
 			mapEdictTypeToDictionaryEntryType.put("adj-no", DictionaryEntryType.WORD_NOUN);
 			mapEdictTypeToDictionaryEntryType.put("vs", DictionaryEntryType.WORD_NOUN);
 			mapEdictTypeToDictionaryEntryType.put("n-suf", DictionaryEntryType.WORD_NOUN);
@@ -282,6 +282,7 @@ public class Validator {
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NOUN) == true
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_I) == true
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_NA) == true
+							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_F) == true
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADVERB) == true
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_PRONOUN) == true
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_CONJUNCTION) == true

@@ -46,7 +46,7 @@ public class UnknownWord {
 			
 
 			if (dictionaryEntryType != DictionaryEntryType.UNKNOWN) {
-				continue;
+				//continue;
 			}
 
 			/*
@@ -157,6 +157,20 @@ public class UnknownWord {
 						polishJapaneseEntry.getDictionaryEntryTypeList()
 								.set(polishJapaneseEntry.getDictionaryEntryTypeList().indexOf(
 										DictionaryEntryType.WORD_NOUN), DictionaryEntryType.WORD_TEMPORAL_NOUN);
+					}
+					*/
+					
+					/*
+					if (pos.contains("adj-f") == true) {
+						//System.out.println(polishJapaneseEntry.getKanji() + " - " + polishJapaneseEntry.getKanaList());
+						
+						if (pos.contains("n") == false) {
+							polishJapaneseEntry.getDictionaryEntryTypeList().remove(DictionaryEntryType.WORD_NOUN);
+						}
+						
+						if (polishJapaneseEntry.getDictionaryEntryTypeList().contains(DictionaryEntryType.WORD_ADJECTIVE_F) == false) {
+							polishJapaneseEntry.getDictionaryEntryTypeList().add(DictionaryEntryType.WORD_ADJECTIVE_F);
+						}
 					}
 					*/
 				}
