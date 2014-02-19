@@ -81,6 +81,8 @@ public enum DictionaryEntryType {
 	WORD_INTERJECTION("Wykrzyknik"),
 
 	WORD_AUX("Pomocniczy"),
+	
+	WORD_ATEJI("Ateji (fonetyczne czytanie)"),
 
 	WORD_EMPTY("Pusty"),
 
