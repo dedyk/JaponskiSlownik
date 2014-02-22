@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
 import com.csvreader.CsvReader;

@@ -3,6 +3,9 @@ package pl.idedyk.japanese.dictionary.dto;
 import java.util.List;
 import java.util.Set;
 
+import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
+
 public class PolishJapaneseEntry implements Comparable<PolishJapaneseEntry> {
 
 	private int id;

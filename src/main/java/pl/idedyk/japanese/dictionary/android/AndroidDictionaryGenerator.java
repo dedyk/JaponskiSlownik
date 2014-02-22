@@ -19,14 +19,16 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
-import pl.idedyk.japanese.dictionary.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
-import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
-import pl.idedyk.japanese.dictionary.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
@@ -36,7 +38,6 @@ import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 import pl.idedyk.japanese.dictionary.tools.KanjiUtils;
 import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
@@ -92,11 +93,13 @@ public class AndroidDictionaryGenerator {
 
 		System.out.println("checkAndSavePolishJapaneseEntries");
 
+		KanaHelper kanaHelper = new KanaHelper();
+		
 		// hiragana
-		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
+		List<KanaEntry> hiraganaEntries = kanaHelper.getAllHiraganaKanaEntries();
 
 		// katakana
-		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
+		List<KanaEntry> katakanaEntries = kanaHelper.getAllKatakanaKanaEntries();
 
 		System.out.println("checkAndSavePolishJapaneseEntries: parsePolishJapaneseEntriesFromCsv");
 
@@ -147,15 +150,19 @@ public class AndroidDictionaryGenerator {
 	private static void generateKanaEntries(String kanjivgDir, String destinationFileName) throws Exception {
 
 		System.out.println("generateKanaEntries");
+		
+		KanaHelper kanaHelper = new KanaHelper();
+		
+		List<KanaEntry> kanaEntries = new ArrayList<KanaEntry>();
 
 		// hiragana
-		List<KanaEntry> kanaEntries = KanaHelper.getAllHiraganaKanaEntries();
+		kanaEntries.addAll(kanaHelper.getAllHiraganaKanaEntries());
 
 		// katakana
-		kanaEntries.addAll(KanaHelper.getAllKatakanaKanaEntries());
+		kanaEntries.addAll(kanaHelper.getAllKatakanaKanaEntries());
 
 		// additional
-		kanaEntries.addAll(KanaHelper.getAdditionalKanaEntries());
+		kanaEntries.addAll(kanaHelper.getAllAdditionalKanaEntries());
 
 		Map<String, KanjivgEntry> kanaJapaneseKanjiEntryCache = new HashMap<String, KanjivgEntry>();
 
@@ -469,7 +476,7 @@ public class AndroidDictionaryGenerator {
 		}
 		*/
 
-		newKanjiEntry.setGroups(groupsList);
+		newKanjiEntry.setGroups(GroupEnum.convertToListGroupEnum(groupsList));
 
 		return newKanjiEntry;
 	}

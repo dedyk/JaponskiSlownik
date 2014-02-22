@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Validator;
-import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 
 public class Test {
 
@@ -165,14 +165,16 @@ public class Test {
 
 		System.out.println(list);
 		*/
+		
+		KanaHelper kanaHelper = new KanaHelper();
 
 		//String word = "ハーモニカをふく";
 		
 		// hiragana
-		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
+		List<KanaEntry> hiraganaEntries = kanaHelper.getAllHiraganaKanaEntries();
 
 		// katakana
-		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
+		List<KanaEntry> katakanaEntries = kanaHelper.getAllKatakanaKanaEntries();
 
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
 

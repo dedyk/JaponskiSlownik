@@ -8,19 +8,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.dto.AttributeList;
-import pl.idedyk.japanese.dictionary.dto.AttributeType;
-import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
+import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
-import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 
 import com.csvreader.CsvWriter;
 
@@ -307,9 +306,8 @@ public class Helper {
 		// fem -> f
 		// given -> g
 
-		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
-		List<KanaEntry> kitakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
-
+		KanaHelper kanaHelper = new KanaHelper();
+		
 		while (iterator.hasNext()) {
 			EDictEntry edictNameEntry = iterator.next();
 
@@ -360,8 +358,7 @@ public class Helper {
 
 			try {
 				List<String> romajiList = new ArrayList<String>();
-				romajiList.add(KanaHelper.createRomajiString(KanaHelper.convertKanaStringIntoKanaWord(kana,
-						hiraganaEntries, kitakanaEntries)));
+				romajiList.add(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), false)));
 
 				newPolishJapaneseEntry.setRomajiList(romajiList);
 

@@ -8,17 +8,19 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
-import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper.KanaWord;
 
 public class NameGenerator {
 
 	public static void main(String[] args) throws Exception {
 		
-		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
+		KanaHelper kanaHelper = new KanaHelper();
+		
+		List<KanaEntry> hiraganaEntries = kanaHelper.getAllHiraganaKanaEntries();
 		
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
 		
@@ -78,8 +80,8 @@ public class NameGenerator {
 					nameItem.name = name;
 					nameItem.kanji = null;
 					
-					KanaWord kanaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, name);
-					nameItem.kana = KanaHelper.createKanaString(kanaWord);
+					KanaWord kanaWord = kanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, name);
+					nameItem.kana = kanaHelper.createKanaString(kanaWord);
 					
 					nameItem.romaji = name;
 					
@@ -97,8 +99,8 @@ public class NameGenerator {
 						nameItem.name = name;
 						nameItem.kanji = currentKanji.trim();
 						
-						KanaWord kanaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, name);
-						nameItem.kana = KanaHelper.createKanaString(kanaWord);
+						KanaWord kanaWord = kanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, name);
+						nameItem.kana = kanaHelper.createKanaString(kanaWord);
 						
 						nameItem.romaji = name;
 						

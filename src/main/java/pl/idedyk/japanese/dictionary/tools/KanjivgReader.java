@@ -13,7 +13,7 @@ import org.dom4j.Element;
 import org.dom4j.XPath;
 import org.dom4j.io.SAXReader;
 
-import pl.idedyk.japanese.dictionary.dto.KanjivgEntry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
 
 public class KanjivgReader {
 	

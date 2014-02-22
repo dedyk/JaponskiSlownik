@@ -11,9 +11,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
-import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
-import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 
 public class ShowAdditionalKanji {

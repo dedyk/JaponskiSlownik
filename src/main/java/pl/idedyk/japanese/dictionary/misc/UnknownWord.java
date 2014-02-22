@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;

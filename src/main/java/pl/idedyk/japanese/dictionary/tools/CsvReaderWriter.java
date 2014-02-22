@@ -13,14 +13,15 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
-import pl.idedyk.japanese.dictionary.dto.Attribute;
-import pl.idedyk.japanese.dictionary.dto.AttributeList;
-import pl.idedyk.japanese.dictionary.dto.AttributeType;
-import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
-import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
-import pl.idedyk.japanese.dictionary.dto.KanjivgEntry;
+import pl.idedyk.japanese.dictionary.api.dto.Attribute;
+import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
+import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
@@ -532,7 +533,7 @@ public class CsvReaderWriter {
 			}
 			*/
 
-			entry.setGroups(groupsList);
+			entry.setGroups(GroupEnum.convertToListGroupEnum(groupsList));
 
 			result.add(entry);
 		}
@@ -583,7 +584,7 @@ public class CsvReaderWriter {
 			csvWriter.write(convertListToString(kanjiEntry.getPolishTranslates()));
 			csvWriter.write(kanjiEntry.getInfo());
 			csvWriter.write(String.valueOf(kanjiEntry.isGenerated()));
-			csvWriter.write(convertListToString(kanjiEntry.getGroups()));
+			csvWriter.write(convertListToString(GroupEnum.convertToValues(kanjiEntry.getGroups())));
 
 			csvWriter.endRecord();
 		}

@@ -9,24 +9,25 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import pl.idedyk.japanese.dictionary.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
+import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
-import pl.idedyk.japanese.dictionary.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper.KanaWord;
 
 public class Validator {
 
 	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries,
 			List<KanaEntry> hiraganaEntries, List<KanaEntry> katakanaEntries,
 			TreeMap<String, List<JMEDictEntry>> jmedict, TreeMap<String, List<JMEDictEntry>> jmedictName)
-			throws JapaneseDictionaryException {
+			throws DictionaryException {
 
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
 
@@ -39,6 +40,9 @@ public class Validator {
 		for (KanaEntry kanaEntry : katakanaEntries) {
 			katakanaCache.put(kanaEntry.getKana(), kanaEntry);
 		}
+		
+		KanaHelper kanaHelper = new KanaHelper();
+		final Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
 
 		// walidacja typow hiragana i katakana
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
@@ -74,12 +78,12 @@ public class Validator {
 
 				String currentKana = kanaList.get(idx);
 
-				KanaWord currentKanaAsKanaAsKanaWord = KanaHelper.convertKanaStringIntoKanaWord(currentKana,
-						hiraganaEntries, katakanaEntries);
+				KanaWord currentKanaAsKanaAsKanaWord = kanaHelper.convertKanaStringIntoKanaWord(currentKana,
+						kanaCache, false);
 
-				String currentKanaAsRomaji = KanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
+				String currentKanaAsRomaji = kanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
 
-				KanaWord kanaWord = createKanaWord(currentRomajiWithPrefix, polishJapaneseEntry.getWordType(),
+				KanaWord kanaWord = createKanaWord(kanaHelper, currentRomajiWithPrefix, polishJapaneseEntry.getWordType(),
 						hiraganaCache, katakanaCache);
 
 				if (kanaWord == null) {
@@ -87,7 +91,7 @@ public class Validator {
 				}
 
 				if (ignoreError == true
-						|| (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
+						|| (prefixKana + currentKana).equals(kanaHelper.createKanaString(kanaWord)) == false) {
 
 					if (prefixKana.equals("を") == true && prefixRomaji.equals("o") == true) {
 						polishJapaneseEntry.setRealPrefixRomaji("wo");
@@ -99,51 +103,51 @@ public class Validator {
 						polishJapaneseEntry.setRealPrefixRomaji("");
 					}
 
-					kanaWord = createKanaWord(polishJapaneseEntry.getRealPrefixRomaji() + currentRomaji,
+					kanaWord = createKanaWord(kanaHelper, polishJapaneseEntry.getRealPrefixRomaji() + currentRomaji,
 							polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
 
 					if (ignoreError == true
-							|| (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
+							|| (prefixKana + currentKana).equals(kanaHelper.createKanaString(kanaWord)) == false) {
 
 						currentRomaji = currentRomaji.replaceAll(" o ", " wo ");
 						currentRomaji = currentRomaji.replaceAll(" e ", " he ");
 
 						realRomajiList.add(currentRomaji);
 
-						kanaWord = createKanaWord(polishJapaneseEntry.getRealPrefixRomaji() + currentRomaji,
+						kanaWord = createKanaWord(kanaHelper, polishJapaneseEntry.getRealPrefixRomaji() + currentRomaji,
 								polishJapaneseEntry.getWordType(), hiraganaCache, katakanaCache);
 
 						if (ignoreError == false
-								&& (prefixKana + currentKana).equals(KanaHelper.createKanaString(kanaWord)) == false) {
-							throw new JapaneseDictionaryException("Validate error for word: " + currentRomaji + ": "
-									+ (prefixKana + currentKana) + " - " + KanaHelper.createKanaString(kanaWord));
+								&& (prefixKana + currentKana).equals(kanaHelper.createKanaString(kanaWord)) == false) {
+							throw new DictionaryException("Validate error for word: " + currentRomaji + ": "
+									+ (prefixKana + currentKana) + " - " + kanaHelper.createKanaString(kanaWord));
 						}
 					}
 				}
 
 				// is hiragana word
-				KanaWord currentKanaAsRomajiAsHiraganaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache,
+				KanaWord currentKanaAsRomajiAsHiraganaWord = kanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache,
 						currentKanaAsRomaji);
-				String currentKanaAsRomajiAsHiraganaWordAsAgainKana = KanaHelper
+				String currentKanaAsRomajiAsHiraganaWordAsAgainKana = kanaHelper
 						.createKanaString(currentKanaAsRomajiAsHiraganaWord);
 
 				// is katakana word
-				KanaWord currentKanaAsRomajiAsKatakanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache,
+				KanaWord currentKanaAsRomajiAsKatakanaWord = kanaHelper.convertRomajiIntoKatakanaWord(katakanaCache,
 						currentKanaAsRomaji);
-				String currentKanaAsRomajiAsKatakanaWordAsAgainKana = KanaHelper
+				String currentKanaAsRomajiAsKatakanaWordAsAgainKana = kanaHelper
 						.createKanaString(currentKanaAsRomajiAsKatakanaWord);
 
 				if (ignoreError == false && currentKana.equals(currentKanaAsRomajiAsHiraganaWordAsAgainKana) == false
 						&& currentKana.equals(currentKanaAsRomajiAsKatakanaWordAsAgainKana) == false) {
 
-					throw new JapaneseDictionaryException("Validate error for word: " + currentKana + " ("
+					throw new DictionaryException("Validate error for word: " + currentKana + " ("
 							+ currentKanaAsRomaji + ") vs " + currentKanaAsRomajiAsHiraganaWordAsAgainKana + " or "
 							+ currentKanaAsRomajiAsKatakanaWordAsAgainKana);
 				}
 			}
 
 			if (realRomajiList.size() > 0 && romajiList.size() != realRomajiList.size()) {
-				throw new JapaneseDictionaryException(
+				throw new DictionaryException(
 						"realRomajiList.size() > 0 && romajiList.size() != realRomajiList.size()");
 			}
 
@@ -173,11 +177,10 @@ public class Validator {
 
 				String currentKana = kanaList.get(idx);
 				String currentKanaWithPrefix = prefixKana + currentKana;
+				
+				KanaWord kanaWord = kanaHelper.convertKanaStringIntoKanaWord(currentKanaWithPrefix, kanaCache, false);
 
-				KanaWord kanaWord = KanaHelper.convertKanaStringIntoKanaWord(currentKanaWithPrefix, hiraganaEntries,
-						katakanaEntries);
-
-				String createdRomaji = KanaHelper.createRomajiString(kanaWord);
+				String createdRomaji = kanaHelper.createRomajiString(kanaWord);
 
 				if (currentRomajiWithPrefix.replaceAll(" ", "").equals(createdRomaji) == true) {
 
@@ -192,7 +195,7 @@ public class Validator {
 						// ok 2
 
 					} else {
-						throw new JapaneseDictionaryException("Validate error for word: " + currentKana);
+						throw new DictionaryException("Validate error for word: " + currentKana);
 					}
 				}
 
@@ -353,7 +356,7 @@ public class Validator {
 				}
 
 				if (currentPolishJapaneseEntry.getKanaList().size() > 1) {
-					throw new JapaneseDictionaryException("currentPolishJapaneseEntry.getKanaList().size() > 1");
+					throw new DictionaryException("currentPolishJapaneseEntry.getKanaList().size() > 1");
 				}
 
 				String kana = currentPolishJapaneseEntry.getKanaList().get(0); // nie powinno byc wiecej kany
@@ -448,15 +451,15 @@ public class Validator {
 		return result;
 	}
 
-	private static KanaWord createKanaWord(String romaji, WordType wordType, Map<String, KanaEntry> hiraganaCache,
-			Map<String, KanaEntry> katakanaCache) throws JapaneseDictionaryException {
+	private static KanaWord createKanaWord(KanaHelper kanaHelper, String romaji, WordType wordType, Map<String, KanaEntry> hiraganaCache,
+			Map<String, KanaEntry> katakanaCache) throws DictionaryException {
 
 		KanaWord kanaWord = null;
 
 		if (wordType == WordType.HIRAGANA) {
-			kanaWord = KanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, romaji);
+			kanaWord = kanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, romaji);
 		} else if (wordType == WordType.KATAKANA) {
-			kanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, romaji);
+			kanaWord = kanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, romaji);
 		} else if (wordType == WordType.HIRAGANA_KATAKANA) {
 			return null;
 		} else if (wordType == WordType.KATAKANA_HIRAGANA) {
@@ -470,7 +473,7 @@ public class Validator {
 		}
 
 		if (kanaWord.remaingRestChars.equals("") == false) {
-			throw new JapaneseDictionaryException("Validate error for word: " + romaji + ", remaing: "
+			throw new DictionaryException("Validate error for word: " + romaji + ", remaing: "
 					+ kanaWord.remaingRestChars);
 		}
 

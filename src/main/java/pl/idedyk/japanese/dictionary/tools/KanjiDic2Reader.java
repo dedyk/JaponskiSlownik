@@ -14,7 +14,7 @@ import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
-import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 
 public class KanjiDic2Reader {

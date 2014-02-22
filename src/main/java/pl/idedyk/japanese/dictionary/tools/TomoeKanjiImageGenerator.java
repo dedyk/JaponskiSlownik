@@ -11,8 +11,8 @@ import java.util.Set;
 
 import javax.imageio.ImageIO;
 
-import pl.idedyk.japanese.dictionary.dto.KanjiDic2Entry;
-import pl.idedyk.japanese.dictionary.dto.KanjiEntry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;

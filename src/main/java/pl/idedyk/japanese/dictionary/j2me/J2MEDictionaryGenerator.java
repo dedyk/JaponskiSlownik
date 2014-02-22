@@ -6,15 +6,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
-import pl.idedyk.japanese.dictionary.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
-import pl.idedyk.japanese.dictionary.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.KanjiImageWriter;
 
 public class J2MEDictionaryGenerator {
@@ -24,12 +24,14 @@ public class J2MEDictionaryGenerator {
 		String kanjiOutputDir = "output";
 		Map<String, String> charsCache = new HashMap<String, String>();
 
+		KanaHelper kanaHelper = new KanaHelper();
+		
 		// hiragana
-		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
+		List<KanaEntry> hiraganaEntries = kanaHelper.getAllHiraganaKanaEntries();
 		generateHiraganaImages(hiraganaEntries, charsCache, kanjiOutputDir);
 
 		// katakana
-		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
+		List<KanaEntry> katakanaEntries = kanaHelper.getAllKatakanaKanaEntries();
 		generateKatakanaImages(katakanaEntries, charsCache, kanjiOutputDir);
 
 		// read edict
