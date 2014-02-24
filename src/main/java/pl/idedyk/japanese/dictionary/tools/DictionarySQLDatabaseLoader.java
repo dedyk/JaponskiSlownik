@@ -65,7 +65,7 @@ public class DictionarySQLDatabaseLoader {
 				insertStatement.setString(7, convertListToString(polishJapaneseEntry.getKanaList()));
 				insertStatement.setString(8, polishJapaneseEntry.getPrefixRomaji());
 				insertStatement.setString(9, convertListToString(polishJapaneseEntry.getRomajiList()));
-				insertStatement.setString(10, convertListToString(polishJapaneseEntry.getPolishTranslates()));
+				insertStatement.setString(10, convertListToString(polishJapaneseEntry.getTranslates()));
 				insertStatement.setString(11, polishJapaneseEntry.getInfo());
 				//insertStatement.setString(12, polishJapaneseEntry.isUseEntry() == true ? "" : "NO");
 				insertStatement.setString(12, "");

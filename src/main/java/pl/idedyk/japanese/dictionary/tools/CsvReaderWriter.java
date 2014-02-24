@@ -22,10 +22,10 @@ import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
+import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
-import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
 import com.csvreader.CsvReader;
@@ -78,7 +78,7 @@ public class CsvReaderWriter {
 
 			sb.append(";");
 
-			List<String> groups = polishJapaneseEntry.getGroups();
+			List<String> groups = GroupEnum.convertToValues(polishJapaneseEntry.getGroups());
 
 			for (int groupsIdx = 0; groupsIdx < groups.size(); ++groupsIdx) {
 
@@ -103,7 +103,7 @@ public class CsvReaderWriter {
 				sb.append(polishJapaneseEntry.getKanjiImagePath()).append(";");
 			}
 
-			List<String> polishTranslates = polishJapaneseEntry.getPolishTranslates();
+			List<String> polishTranslates = polishJapaneseEntry.getTranslates();
 
 			if (polishTranslates != null) {
 				for (int idxPolishTranslates = 0; idxPolishTranslates < polishTranslates.size(); ++idxPolishTranslates) {
@@ -221,13 +221,13 @@ public class CsvReaderWriter {
 			csvWriter.write(convertListToString(polishJapaneseEntry.getDictionaryEntryTypeList()));
 			csvWriter.write(convertAttributeListToString(polishJapaneseEntry.getAttributeList()));
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
-			csvWriter.write(convertListToString(polishJapaneseEntry.getGroups()));
+			csvWriter.write(convertListToString(GroupEnum.convertToValues(polishJapaneseEntry.getGroups())));
 			csvWriter.write(polishJapaneseEntry.getPrefixKana());
 			csvWriter.write(polishJapaneseEntry.getKanji());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getKanaList()));
 			csvWriter.write(polishJapaneseEntry.getPrefixRomaji());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getRomajiList()));
-			csvWriter.write(convertListToString(polishJapaneseEntry.getPolishTranslates()));
+			csvWriter.write(convertListToString(polishJapaneseEntry.getTranslates()));
 			csvWriter.write(polishJapaneseEntry.getInfo());
 			//csvWriter.write(polishJapaneseEntry.isUseEntry() == false ? "NO" : "");
 			csvWriter.write(convertListToString(polishJapaneseEntry.getParseAdditionalInfoList()));
@@ -277,13 +277,13 @@ public class CsvReaderWriter {
 			entry.setDictionaryEntryTypeList(parseDictionaryEntryTypeStringList(dictionaryEntryTypeListString));
 			entry.setAttributeList(parseAttributesStringList(attributesString));
 			entry.setWordType(WordType.valueOf(wordTypeString));
-			entry.setGroups(parseStringIntoList(groupString));
+			entry.setGroups(GroupEnum.convertToListGroupEnum(parseStringIntoList(groupString)));
 			entry.setPrefixKana(prefixKanaString);
 			entry.setKanji(kanjiString);
 			entry.setKanaList(parseStringIntoList(kanaListString));
 			entry.setPrefixRomaji(prefixRomajiString);
 			entry.setRomajiList(parseStringIntoList(romajiListString));
-			entry.setPolishTranslates(parseStringIntoList(polishTranslateListString));
+			entry.setTranslates(parseStringIntoList(polishTranslateListString));
 			entry.setParseAdditionalInfoList(parseParseAdditionalInfoListString(parseAdditionalInfoListString));
 
 			Set<Integer> knownDuplicatedHashMap = new TreeSet<Integer>();

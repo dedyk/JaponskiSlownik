@@ -12,13 +12,13 @@ import java.util.TreeSet;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
+import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 
@@ -959,8 +959,8 @@ public class Validator {
 		result = prime * result + polishJapaneseEntry.getDictionaryEntryTypeList().hashCode();
 		result = prime * result + polishJapaneseEntry.getAttributeList().hashCode();
 
-		result = prime * result + polishJapaneseEntry.getPolishTranslates().hashCode();
-		result = prime * result + Arrays.hashCode(polishJapaneseEntry.getPolishTranslates().toString().getBytes());
+		result = prime * result + polishJapaneseEntry.getTranslates().hashCode();
+		result = prime * result + Arrays.hashCode(polishJapaneseEntry.getTranslates().toString().getBytes());
 
 		result = prime * result + polishJapaneseEntry.getInfo().hashCode();
 

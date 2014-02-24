@@ -11,13 +11,14 @@ import java.util.TreeMap;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
+import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
-import pl.idedyk.japanese.dictionary.dto.WordType;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 
@@ -36,7 +37,7 @@ public class Helper {
 
 			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
 
-			List<String> currentPolishJapaneseEntryGroups = currentPolishJapaneseEntry.getGroups();
+			List<String> currentPolishJapaneseEntryGroups = GroupEnum.convertToValues(currentPolishJapaneseEntry.getGroups());
 
 			if (currentPolishJapaneseEntryGroups == null || currentPolishJapaneseEntryGroups.size() == 0) {
 				continue;
@@ -79,7 +80,7 @@ public class Helper {
 
 			}
 
-			currentPolishJapaneseEntry.setGroups(groupsForCurrentPolishJapaneseEntry);
+			currentPolishJapaneseEntry.setGroups(GroupEnum.convertToListGroupEnum(groupsForCurrentPolishJapaneseEntry));
 		}
 
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
@@ -347,7 +348,7 @@ public class Helper {
 			newPolishJapaneseEntry.setWordType(WordType.HIRAGANA_KATAKANA);
 
 			newPolishJapaneseEntry.setAttributeList(new AttributeList());
-			newPolishJapaneseEntry.setGroups(new ArrayList<String>());
+			newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
 
 			newPolishJapaneseEntry.setKanji(kanji != null ? kanji : "-");
 
@@ -369,7 +370,7 @@ public class Helper {
 			List<String> polishTranslateList = new ArrayList<String>();
 			polishTranslateList.add(name);
 
-			newPolishJapaneseEntry.setPolishTranslates(polishTranslateList);
+			newPolishJapaneseEntry.setTranslates(polishTranslateList);
 
 			newPolishJapaneseEntry.setParseAdditionalInfoList(new ArrayList<ParseAdditionalInfo>());
 

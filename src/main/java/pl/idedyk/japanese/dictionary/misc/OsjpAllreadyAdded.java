@@ -44,7 +44,7 @@ public class OsjpAllreadyAdded {
 
 					int before = queue.size();
 
-					for (String currentPolishTranslate : foundPolishJapaneseEntry.getPolishTranslates()) {
+					for (String currentPolishTranslate : foundPolishJapaneseEntry.getTranslates()) {
 						queue.remove(currentPolishTranslate);
 					}
 
