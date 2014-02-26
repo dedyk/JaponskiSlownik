@@ -5,7 +5,7 @@ import java.util.Set;
 
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
 
-public class PolishJapaneseEntry extends DictionaryEntry {
+public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<PolishJapaneseEntry> {
 
 	private static final long serialVersionUID = 1L;
 
@@ -71,5 +71,49 @@ public class PolishJapaneseEntry extends DictionaryEntry {
 	
 	public String getEntryPrefixKanaKanjiKanaKey() {
 		return getPrefixKana() + "." + getKanji() + "." + getKanaList().toString();
+	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+
+		if (obj == null) {
+			return false;
+		}
+
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+
+		PolishJapaneseEntry other = (PolishJapaneseEntry) obj;
+
+		if (id != other.id) {
+			return false;
+		}
+
+		return true;
+	}
+
+	@Override
+	public int compareTo(PolishJapaneseEntry entry) {
+
+		if (id < entry.id) {
+			return -1;
+		} else if (id > entry.id) {
+			return 1;
+		} else {
+			return 0;
+		}
 	}
 }
