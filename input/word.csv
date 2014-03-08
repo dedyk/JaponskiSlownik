@@ -7852,9 +7852,11 @@ rachunek
 wiek
 okres
 pokolenie",~ za,,
-3358,"WORD_NOUN
-WORD_ADVERBIAL_NOUN",,HIRAGANA,Genki dodatkowe 2-18,,毎月,まいつき,,maitsuki,"w każdym miesiącu
-każdego miesiąca",,,
+3358,"WORD_ADVERBIAL_NOUN
+WORD_NOUN",,HIRAGANA,Genki dodatkowe 2-18,,毎月,まいつき,,maitsuki,"każdy miesiąc
+każdego miesiąca
+w każdym miesiącu
+miesięcznie",,,15242
 3359,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,Genki dodatkowe 2-18,,始めは,はじめは,,hajime wa,"na początku
 początkowo
 pierwszy",,,
@@ -33472,8 +33474,9 @@ kumulacja
 akumulacja",,,
 15242,"WORD_ADVERBIAL_NOUN
 WORD_NOUN",,HIRAGANA,,,毎月,まいげつ,,maigetsu,"każdy miesiąc
+każdego miesiąca
 w każdym miesiącu
-miesięcznie",,,
+miesięcznie",,,3358
 15243,WORD_NOUN,,KATAKANA,,,-,グリーンフィー,,guriin fii,green fee,"ang, opłata za kartę wstępu na pole golfowe",,
 15244,WORD_NOUN,,KATAKANA,,,-,バクテリア,,bakuteria,"bakteria
 zarazki",,,
@@ -33511,14 +33514,65 @@ trial motorowy",,,
 15250,WORD_TEMPORAL_NOUN,SUFFIX,HIRAGANA,,,一人一人,ひとりひとり,,hitori hitori,"poszczególnie
 kolejno
 indywidualnie
-pojedynczo",,,
+pojedynczo",,,15251
 15251,WORD_TEMPORAL_NOUN,SUFFIX,HIRAGANA,,,一人一人,ひとりびとり,,hitori bitori,"poszczególnie
 kolejno
 indywidualnie
-pojedynczo",,,
+pojedynczo",,,15250
 15252,WORD_NOUN,,HIRAGANA,,,実況,じっきょう,,jikkyou,"rzeczywista sytuacja
 prawdziwy stan
 aktualna sytuacja",,,
 15253,WORD_NOUN,,HIRAGANA,,,室長,しつちょう,,shitsuchou,"kierownik sekcji
 kierownik laboratorium
 osoba zarządzająca i monitorująca zadania np. w pokoju",,,
+15254,WORD_NOUN,,HIRAGANA,,,お買い得,おかいどく,,okaidoku,"okazja
+dobry interes
+dobry zakup",,,
+15255,WORD_NOUN,,HIRAGANA,,,お買得,おかいどく,,okaidoku,"okazja
+dobry interes
+dobry zakup",,,
+15256,WORD_NOUN,,HIRAGANA,,,お買徳,おかいどく,,okaidoku,"okazja
+dobry interes
+dobry zakup",,,
+15257,WORD_NOUN,,HIRAGANA,,,お買い徳,おかいどく,,okaidoku,"okazja
+dobry interes
+dobry zakup",,,
+15258,WORD_NOUN,,HIRAGANA,,,引継ぎ,ひきつぎ,,hikitsugi,"przejęcie
+przekazywanie
+przyjmowanie kontroli
+dziedziczenie",,,
+15259,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,慎重,しんちょう,,shinchou,"ostrożny
+rozważny
+przezorny
+roztropny
+uważny",,,
+15260,WORD_NOUN,,HIRAGANA,,,無休,むきゅう,,mukyuu,"nonstop
+bez przerwy
+bez urlopu
+bez odpoczynku",,,
+15261,WORD_NOUN,,HIRAGANA_KATAKANA,,,Ｘ線,エックスせん,,ekkusu sen,prześwietlenie,,,
+15262,WORD_NOUN,,HIRAGANA_KATAKANA,,,Ｘ線撮影,エックスせんさつえい ,,ekkusu sen satsuei,zdjęcie rentgenowskie,,,
+15263,WORD_NOUN,,KATAKANA,,,-,コーディネート,,koodineeto,"współrzędne
+koordynata
+pasowanie
+dopasowanie (np. ubranie, akcesoria, meble, kolory i etc)",,,
+15264,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,プロデューサー,,puroduusaa,producent,"filmowy, telewizyjny i etc",,
+15265,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,プロデューサ,,puroduusa,producent,"filmowy, telewizyjny i etc",,
+15266,WORD_VERB_RU,,HIRAGANA,,,割り当てる,わりあてる,,wariateru,"wyznaczać
+przydzielać
+przypisywać
+rozdzielać",,,
+15267,WORD_NOUN,,HIRAGANA,,,既成事実,きせいじじつ,,kiseijijitsu,"ustalony fakt
+fakt dokonany",,,
+15268,WORD_NOUN,,HIRAGANA,,,芸能,げいのう,,geinou,"publiczne widowisko
+publiczna rozrywka
+umiejętność
+zdolność
+osiągnięcie",,,
+15269,WORD_NOUN,,HIRAGANA,,,芸能界,げいのうかい,,geinoukai,"świat show biznesu
+przemysł rozrywkowy",,,
+15270,WORD_NOUN,,HIRAGANA,,,芸能者,げいのうしゃ,,geinousha,"wykonawca
+odtwórca
+artysta
+performer",,,
