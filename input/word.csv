@@ -1151,7 +1151,7 @@ całkowicie
 bezwzględnie",,,
 439,WORD_ASK,,HIRAGANA,Genki 1-5,,-,どんな,,donna,"jaki
 jakiego rodzaju",,,
-440,WORD_PARTICULE,,HIRAGANA,Genki 1-5,,-,まで,,made,do,"miejsce, czasu",,
+440,WORD_PARTICULE,,HIRAGANA,Genki 1-5,,迄,まで,,made,do,"miejsce, czasu",,
 441,WORD_PARTICULE,,HIRAGANA,"Genki 1-5
 Genki 1-6
 Genki 1-9",,-,から,,kara,"od
@@ -20436,7 +20436,10 @@ widz",,,
 9108,WORD_NOUN,,HIRAGANA,,,潜水艦,せんすいかん,,sensuikan,"okręt podwodny
 łódź podwodna",,,
 9109,"WORD_CONJUNCTION
-WORD_INTERJECTION",,HIRAGANA,,,扨,さて,,sate,teraz,,,12072
+WORD_INTERJECTION",,HIRAGANA,,,扨,さて,,sate,"teraz
+a więc
+a zatem
+tymczasem",,,
 9110,WORD_NOUN,,HIRAGANA,,,投影,とうえい,,touei,"wizja
 projekcja
 rzut",,,
@@ -26737,9 +26740,11 @@ prośba",,,
 12071,WORD_NOUN,,HIRAGANA,,,酒,さけ,,sake,"sake
 alkohol
 trunek",,,
-12072,WORD_CONJUNCTION,,HIRAGANA,,,-,さて,,sate,"a więc
+12072,"WORD_CONJUNCTION
+WORD_INTERJECTION",,HIRAGANA,,,扠,さて,,sate,"teraz
+a więc
 a zatem
-tymczasem",,,9109
+tymczasem",,,
 12073,WORD_PARTICULE,,HIRAGANA,,,-,や,,ya,"i ..., i ...
 i tym podobne
 takie jak","używane, gdy trzeba spośród wielu rzeczy wybrać kilka przykładowych",,"2182
@@ -33992,3 +33997,34 @@ WORD_ADVERB_TO",,HIRAGANA,,,続々,ぞくぞく,,zokuzoku,"sukcesywnie
 po kolei",,,
 15435,WORD_NOUN,,HIRAGANA,,,貴賓,きひん,,kihin,szlachetny gość,,,
 15436,WORD_NOUN,,HIRAGANA,,,超特急,ちょうとっきゅう,,choutokkyuu,super ekspres,,,
+15437,WORD_NOUN,,KATAKANA,,,-,ゴールデンアワー,,gooru den'awaa,godziny najwyższej oglądalności telewizji,,,
+15438,WORD_NOUN,,KATAKANA,,,-,ゴールデンタイム,,gooru dentaimu,godziny najwyższej oglądalności telewizji,,,
+15439,WORD_NOUN,,KATAKANA,,,-,フライト,,furaito,"lot
+przerażenie
+przestraszenie",,,
+15440,WORD_NOUN,,KATAKANA,,,-,ベースアップ,,beesu appu,"wzrost pensji
+wzrost wynagrodzenia",,,
+15441,WORD_NOUN,,HIRAGANA_KATAKANA,,,ハンセン病,ハンセンびょう,,hansen byou,"trąd
+lepra",zakaźna choroba skóry i nerwów,,
+15442,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,公明,こうめい,,koumei,"sprawiedliwość
+sprawiedliwy",,,
+15443,WORD_NOUN,,HIRAGANA,,,帰り道,かえりみち,,kaerimichi,"podróż powrotna
+droga z powrotem",,,
+15444,WORD_NOUN,,HIRAGANA,,,殺し,ころし,,koroshi,"morderstwo
+zabójstwo
+mord
+morderca",,,
+15445,WORD_NOUN,,HIRAGANA,,,落胆,らくたん,,rakutan,"przygnębienie
+zniechęcenie
+rozczarowanie
+zawiedzenie",,,
+15446,WORD_NOUN,,HIRAGANA,,,訴状,そじょう,,sojou,"petycja
+skarga
+reklamacja
+zażalenie",,,
+15447,"WORD_CONJUNCTION
+WORD_INTERJECTION",,HIRAGANA,,,偖,さて,,sate,"teraz
+a więc
+a zatem
+tymczasem",,,
