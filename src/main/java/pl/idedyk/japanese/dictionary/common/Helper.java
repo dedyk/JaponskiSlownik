@@ -238,6 +238,12 @@ public class Helper {
 							&& foundJMEDict.getPos().contains("n-pref") == true) {
 						attributeList.add(AttributeType.NOUN_PREFIX);
 					}
+					
+					// adjective-no
+					if (attributeList.contains(AttributeType.NOUN_ADJECTIVE_NO) == false
+							&& foundJMEDict.getPos().contains("adj-no") == true) {
+						attributeList.add(AttributeType.NOUN_ADJECTIVE_NO);
+					}					
 				}
 			}
 		}
