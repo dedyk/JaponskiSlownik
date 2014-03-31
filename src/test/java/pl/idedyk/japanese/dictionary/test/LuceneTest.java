@@ -1,35 +1,30 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.Arrays;
-import java.util.List;
-
-import org.apache.lucene.analysis.core.SimpleAnalyzer;
-import org.apache.lucene.document.Document;
-import org.apache.lucene.document.Field;
-import org.apache.lucene.document.TextField;
-import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
-import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
-import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.Query;
-import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.search.TopScoreDocCollector;
-import org.apache.lucene.store.Directory;
-import org.apache.lucene.store.RAMDirectory;
-import org.apache.lucene.util.Version;
-
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+//import org.apache.lucene.analysis.core.SimpleAnalyzer;
+//import org.apache.lucene.document.Document;
+//import org.apache.lucene.document.Field;
+//import org.apache.lucene.document.TextField;
+//import org.apache.lucene.index.DirectoryReader;
+//import org.apache.lucene.index.IndexReader;
+//import org.apache.lucene.index.IndexWriter;
+//import org.apache.lucene.index.IndexWriterConfig;
+//import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
+//import org.apache.lucene.search.IndexSearcher;
+//import org.apache.lucene.search.Query;
+//import org.apache.lucene.search.ScoreDoc;
+//import org.apache.lucene.search.TopScoreDocCollector;
+//import org.apache.lucene.store.Directory;
+//import org.apache.lucene.store.RAMDirectory;
+//import org.apache.lucene.util.Version;
 
 public class LuceneTest {
 
 	public static void main(String[] args) throws Exception {
 		
+		/*
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
 				.parsePolishJapaneseEntriesFromCsv("input/word.csv");
-				
+		
 		SimpleAnalyzer analyzer = new SimpleAnalyzer(Version.LUCENE_47);
 		
 		Directory index = new RAMDirectory();
@@ -65,10 +60,13 @@ public class LuceneTest {
 		}
 
 		reader.close();
+		*/
 	}
 	
+	/*
 	private static void addPolishJapaneseEntry(IndexWriter w, PolishJapaneseEntry polishJapaneseEntry) throws Exception {
-	
+		
+		/*
 		Document doc = new Document();
 		
 		String kanji = polishJapaneseEntry.getKanji();
@@ -94,6 +92,7 @@ public class LuceneTest {
 		// use a string field for isbn because we don't want it tokenized
 		//doc.add(new StringField("isbn", isbn, Field.Store.YES));
 		
-		w.addDocument(doc);		
+		w.addDocument(doc);	
 	}
+	*/
 }

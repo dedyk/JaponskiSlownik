@@ -32,9 +32,5 @@
 	<classpathentry kind="var" path="M2_REPO/findbugs/findbugs-ant/1.0.0/findbugs-ant-1.0.0.jar"/>
 	<classpathentry kind="var" path="M2_REPO/findbugs/findbugsGUI/1.0.0/findbugsGUI-1.0.0.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/JapaneseDictionaryAPI"/>
-	<classpathentry kind="lib" path="/home/fmazurek/tmp2/lucene/lucene-analyzers-common-4.7.0.jar"/>
-	<classpathentry kind="lib" path="/home/fmazurek/tmp2/lucene/lucene-core-4.7.0.jar" sourcepath="/home/fmazurek/.m2/repository/org/apache/lucene/lucene-core/4.7.0/lucene-core-4.7.0-sources.jar"/>
-	<classpathentry kind="lib" path="/home/fmazurek/tmp2/lucene/lucene-queries-4.7.0.jar"/>
-	<classpathentry kind="lib" path="/home/fmazurek/tmp2/lucene/lucene-queryparser-4.7.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
