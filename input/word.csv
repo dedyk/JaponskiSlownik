@@ -1200,7 +1200,8 @@ Genki 2-15",,電池,でんち,,denchi,bateria,,,
 Genki kanji 1-4",,お金,おかね,,okane,"pieniądze
 pieniądz",,,
 458,WORD_NOUN,,HIRAGANA,"Genki 1-6
-Genki 1-7",,-,おばあさん,,obaasan,"babcia
+Genki 1-7",,お祖母さん,おばあさん,,obaasan,"babcia
+babka
 starsza kobieta","spoza swojej rodziny lub własna rodzina, nieformalnie",,
 459,WORD_NOUN,,HIRAGANA,"Genki 1-6
 Genki kanji 2-17
@@ -10916,9 +10917,10 @@ spotykać się",,,
 4740,WORD_VERB_U,,HIRAGANA,,,接ぐ,つぐ,,tsugu,"łączyć
 sklejać
 cementować",,,
-4741,WORD_ADJECTIVE_NA,,HIRAGANA,,,直接,ちょくせつ,,chokusetsu,"bezpośredni
+4741,"WORD_ADJECTIVE_NA
+WORD_ADVERBIAL_NOUN",,HIRAGANA,,,直接,ちょくせつ,,chokusetsu,"bezpośredni
 bezpośrednio
-prosty",,,
+osobiście",,,
 4742,WORD_NOUN,,HIRAGANA,,,間接,かんせつ,,kansetsu,"pośredni
 pośrednio",,,
 4743,WORD_NOUN,,HIRAGANA,,,接骨,せっこつ,,sekkotsu,składanie kości,,,
@@ -25241,7 +25243,8 @@ z boku
 bardzo blisko",,,
 11248,WORD_VERB_IRREGULAR,,HIRAGANA,,,貯金する,ちょきんする,,chokin suru,oszczędzać,,,
 11249,WORD_NOUN,,KATAKANA,,,-,チョーク,,chooku,kreda,,,
-11250,WORD_NOUN,,HIRAGANA,,,直線,ちょくせつ,,chokusetsu,linia prosta,,,
+11250,WORD_NOUN,,HIRAGANA,,,対論,たいろん,,tairon,"argumentowanie się stojąc twarzą w twarz
+sprzeczanie się stojąc twarzą w twarz",,,
 11251,WORD_VERB_IRREGULAR,,HIRAGANA,,,調査する,ちょうさする,,chousa suru,"badać
 kontrolować
 śledzić",,,
@@ -35903,3 +35906,83 @@ motorniczy",,,
 16101,WORD_NOUN,,HIRAGANA,,,都道府県,とどうふけん,,todoufuken,podział administracyjny,Japonii,,
 16102,WORD_NOUN,,HIRAGANA,,,酔っ払い,よっぱらい,,yopparai,pijak,,,
 16103,WORD_NOUN,,HIRAGANA,,,音読み,おんよみ,,on'yomi,czytanie znaku kanji,chińskie,,
+16104,WORD_NOUN,,KATAKANA,,,-,コスプレ,,kosupure,cosplay,"z ang. costume playing - przebieranie się za postacie z mangi, anime, gier komputerowych i filmów",,
+16105,WORD_NOUN,,KATAKANA,,,-,スクラム,,sukuramu,"młyn (w rugby)
+scram (procedura wygaszenia łańcuchowej reakcji rozszczepienia w reaktorze jądrowym)",,,
+16106,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,ナイスバディ,,naisu badi,"atrakcyjne ciało
+pociągające ciało
+miło wyglądające ciało",,,
+16107,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,ナイスバディー,,naisu badii,"atrakcyjne ciało
+pociągające ciało
+miło wyglądające ciało",,,
+16108,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,フェア,,fea,"uczciwy
+sprawiedliwy
+opłata za przejazd
+strach
+obawa
+lęk","ang: fair, fare, fear",,
+16109,WORD_NOUN,,KATAKANA,,,-,ポトフ,,potofu,pot au feu,francuskie danie,,
+16110,WORD_NOUN,,HIRAGANA,,,お負け,おまけ,,omake,"próbka
+gratis (z zakupem innego produktu)
+przecena
+obniżka cen
+przesada
+wyolbrzymianie",,,
+16111,WORD_ADVERB,,HIRAGANA,,,一挙に,いっきょに,,ikkyo ni,"za jednym zamachem
+za jednym uderzeniem",,,
+16112,WORD_NOUN,,HIRAGANA,,,会報,かいほう,,kaihou,"biuletyn
+gazetka
+serwis
+raport",,,
+16113,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,劣勢,れっせい,,ressei,"niższość
+bycie gorszym
+niższa pozycja
+niekorzystna sytuacja",,,
+16114,WORD_NOUN,,HIRAGANA,,,劣勢感,れっせいかん,,resseikan,kompleks niższości,,,
+16115,WORD_NOUN,,HIRAGANA,,,大腸菌,だいちょうきん,,daichoukin,pałeczka okrężnicy,rodzaj bakterii,,
+16116,WORD_NOUN,,HIRAGANA,,,婆さん,ばあさん,,baasan,"babcia
+babka
+starsza kobieta",,,
+16117,WORD_NOUN,,HIRAGANA,,,実戦,じっせん,,jissen,"walka
+bój
+bitwa",,,
+16118,WORD_NOUN,,HIRAGANA,,,市場調査,しじょうちょうさ,,shijou chousa,"badania rynku
+badania rynkowe",,,
+16119,WORD_ADVERB,,HIRAGANA,,,強ち,あながち,,anagachi,"niekoniecznie
+nierzadki",,,
+16120,WORD_NOUN,,HIRAGANA,,,支障,ししょう,,shishou,"utrudnienie
+przeszkoda
+zawada
+trudność
+problem",,,
+16121,WORD_NOUN,,HIRAGANA,,,水道水,すいどうすい,,suidousui,"woda z kranu
+kranówka",,,
+16122,WORD_NOUN,,HIRAGANA,,,淵,ふち,,fuchi,"głębia
+otchłań
+głębokość
+głęboki zbiornik wodny (staw, jezioro i etc)",,,
+16123,WORD_NOUN,,HIRAGANA,,,疎開,そかい,,sokai,"ewakuacja
+rozproszenie",,,
+16124,WORD_NOUN,,HIRAGANA,,,疎開者,そかいしゃ,,sokaisha,"ewakuant
+osoba ewakuowana",,,
+16125,WORD_NOUN,,HIRAGANA,,,発着,はっちゃく,,hacchaku,"przyjazd i odjazd
+przybycie i wyjazd
+przylot i odlot",,,
+16126,WORD_NOUN,,HIRAGANA,,,直線,ちょくせん,,chokusen,"prosta
+linia prosta",,,
+16127,WORD_NOUN,,HIRAGANA,,,税額,ぜいがく,,zeigaku,kwota podatku,,,
+16128,WORD_NOUN,,HIRAGANA,,,蛮行,ばんこう,,bankou,"barbarzyństwo
+okrucieństwo
+akt barbarzyństwa",,,
+16129,WORD_NOUN,,HIRAGANA,,,谷底,たにそこ,,tanisoko,"dół wąwozu
+dół kotliny",,,16130
+16130,WORD_NOUN,,HIRAGANA,,,谷底,たにぞこ,,tanizoko,"dół wąwozu
+dół kotliny",,,16129
+16131,WORD_NOUN,,HIRAGANA,,,錯誤,さくご,,sakugo,"błąd
+pomyłka",,,
+16132,WORD_NOUN,,HIRAGANA,,,顎,あご,,ago,"podbródek
+szczęka",,,
