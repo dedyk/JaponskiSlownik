@@ -243,7 +243,14 @@ public class Helper {
 					if (attributeList.contains(AttributeType.NOUN_ADJECTIVE_NO) == false
 							&& foundJMEDict.getPos().contains("adj-no") == true) {
 						attributeList.add(AttributeType.NOUN_ADJECTIVE_NO);
-					}					
+					}
+					
+					// onamatopoeic or mimetic word
+					if (attributeList.contains(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD) == false
+							&& foundJMEDict.getMisc().contains("on-mim") == true) {
+						attributeList.add(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD);
+					}
+
 				}
 			}
 		}
