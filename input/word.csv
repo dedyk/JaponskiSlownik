@@ -4042,9 +4042,12 @@ uderzać
 dotknąć
 wystawić się (na działanie promieni słonecznych, ciepła, wiatru i etc)",,,
 1534,WORD_VERB_RU,,HIRAGANA,Genki kanji 2-14,,当っている,とうっている,,toutte iru,dobrze idzie,,,
-1535,WORD_NOUN,,HIRAGANA,"Genki kanji 2-14
+1535,WORD_NOUN,SUFFIX,HIRAGANA,"Genki kanji 2-14
 Genki 2-20",,音,おと,,oto,"dźwięk
-hałas",,,
+brzmienie
+hałas
+nuta",,,"16827
+16828"
 1536,WORD_NOUN,,HIRAGANA,Genki kanji 2-14,,本音,ほんね,,honne,"prawdziwe myślenie
 emocje",,,
 1537,WORD_ADJECTIVE_NA,,HIRAGANA,"Genki kanji 2-14
@@ -12802,7 +12805,8 @@ wytrwałość",,,5544
 podstawa
 geneza
 źródło",,,"5543
-12041"
+12041
+16828"
 5545,WORD_NOUN,,HIRAGANA,,,根気,こんき,,konki,"wytrwałość
 cierpliwość",,,
 5546,WORD_NOUN,,HIRAGANA,,,根拠,こんきょ,,konkyo,"podstawa
@@ -26718,7 +26722,8 @@ bardzo blady (o twarzy)",,,
 zakorzeniać się",,,
 12041,WORD_PARTICULE,,HIRAGANA,,,-,ね,,ne,"prawda?
 dobrze?
-nieprawdaż?",,,5544
+nieprawdaż?",,,"5544
+16828"
 12042,WORD_NOUN,,HIRAGANA,,,足の裏,あしのうら,,ashi no ura,podeszwa stopy,,,
 12043,WORD_NOUN,,HIRAGANA,,,裏側,うらがわ,,uragawa,"spodnia warstwa
 tylna (druga) strona",,,
@@ -37877,3 +37882,45 @@ modding",,,
 16820,WORD_NOUN,,HIRAGANA,,,新卒,しんそつ,,shinsotsu,"nowy absolwent
 niedawny absolwent
 świeży absolwent",,,
+16821,WORD_ATEJI,,HIRAGANA,,,洒落,しゃれ,,share,"żart
+dowcip
+kawał
+figiel
+elegancki
+szykowny
+stylowy
+modny
+wytworny",,,
+16822,WORD_VERB_U,,HIRAGANA,,,点す,ともす,,tomosu,"zapalać
+oświetlać
+świecić
+włączyć",,,16823
+16823,WORD_VERB_U,,HIRAGANA,,,点す,とぼす,,tobosu,"zapalać
+oświetlać
+świecić
+włączyć",,,16822
+16824,WORD_NOUN,,HIRAGANA,,,照射,しょうしゃ,,shousha,"eksponowanie
+naświetlenie",,,
+16825,WORD_NOUN,,HIRAGANA,,,誓約,せいやく,,seiyaku,"pisemne przyrzeczenie
+pisemna przysięga
+przyrzeczenie
+obietnica
+zobowiązanie",,,
+16826,WORD_NOUN,,HIRAGANA,,,都立,とりつ,,toritsu,metropolia,,,
+16827,WORD_NOUN,SUFFIX,HIRAGANA,,,音,おん,,on,"dźwięk
+brzmienie
+hałas
+nuta
+chińskie czytanie znaku kanji",,,"1535
+16828"
+16828,WORD_NOUN,SUFFIX,HIRAGANA,,,音,ね,,ne,"dźwięk
+brzmienie
+hałas
+nuta",,,"1535
+5544
+12041
+16827"
+16829,WORD_ADVERB,,HIRAGANA,,,順次,じゅんじ,,junji,"w porządku
+sekwencyjnie
+kolejno",,,
+16830,WORD_EXPRESSION,,HIRAGANA,,,頑張って,がんばって,,ganbatte,trzymaj się!,,,
