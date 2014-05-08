@@ -11965,7 +11965,8 @@ część",,,
 5166,WORD_NOUN,,HIRAGANA,,,皇居,こうきょ,,koukyo,pałac cesarski,,,
 5167,WORD_NOUN,,HIRAGANA,,,皇位,こうい,,koui,tron cesarski,,,
 5168,WORD_NOUN,,HIRAGANA,,,教皇,きょうこう,,kyoukou,papież,,,
-5169,WORD_NOUN,,HIRAGANA,,,皇太子,こうかいし,,koukaishi,książę,,,
+5169,WORD_NOUN,,HIRAGANA,,,皇太子,こうかいし,,koukaishi,"książę
+następca tronu",,,
 5170,WORD_VERB_U,,HIRAGANA,,,誤る,あやまる,,ayamaru,mylić się,,,
 5171,WORD_NOUN,,HIRAGANA,,,誤解,ごかい,,gokai,nieporozumienie,,,
 5172,WORD_NOUN,,HIRAGANA,,,誤算,ごさん,,gosan,pomyłka w liczeniu,,,
@@ -12062,7 +12063,7 @@ umiejętność",,,
 5214,WORD_NOUN,,HIRAGANA,,,民芸,みんげい,,mingei,sztuka ludowa,,,
 5215,WORD_NOUN,,HIRAGANA,,,文芸,ぶんげい,,bungei,literatura piękna,,,
 5216,WORD_NOUN,,HIRAGANA,,,詩人,しじん,,shijin,poeta,,,
-5217,WORD_NOUN,,HIRAGANA,,,詩歌,しいか,,shiika,poezja,japońska i chińska,,
+5217,WORD_NOUN,,HIRAGANA,,,詩歌,しいか,,shiika,poezja,japońska i chińska,,17019
 5218,WORD_NOUN,,HIRAGANA,,,詩集,ししゅう,,shishuu,"zbiór wierszy
 wybór wierszy",,,
 5219,WORD_ADJECTIVE_NA,,HIRAGANA,,,詩的,してき,,shiteki,poetyczny,,,
@@ -25122,7 +25123,8 @@ finansista",,,
 jedynie
 nie więcej niż","używane zawsze z przeczeniem, połączenie dake shika używane przy szczególnie mocnym podkreśleniu",,"1882
 2015
-8733"
+8733
+17019"
 11204,WORD_VERB_IRREGULAR,,HIRAGANA,,,使用する,しようする,,shiyou suru,"używać
 stosować",,,
 11205,WORD_ADVERB,,HIRAGANA,,,自然に,しぜんに,,shizen ni,"naturalnie
@@ -38370,3 +38372,90 @@ zwartość
 adhezja
 przyleganie
 przyczepność",,,
+16998,"WORD_ADVERB_TO
+WORD_ADVERB",,HIRAGANA,,,-,かちかち,,kachikachi,"tik-tak
+tykać
+brzęczenie
+pukanie
+stukanie",,,
+16999,"WORD_ADVERB_TO
+WORD_ADVERB",,KATAKANA,,,-,カチカチ,,kachikachi,"tik-tak
+tykać
+brzęczenie
+pukanie
+stukanie",,,
+17000,WORD_NOUN,,KATAKANA,,,-,アメダス,,amedasu,"AMeDAS
+Automated Meteorological Data Acquisition System",Zautomatyzowany system akwizycji danych meteorologicznych,,
+17001,WORD_NOUN,,KATAKANA,,,-,イリュージョン,,iryuujon,"iluzja
+złudzenie",,,
+17002,WORD_NOUN,,KATAKANA,,,-,ステルス,,suterusu,"tajemniczość
+ukrycie
+stealth",,,
+17003,WORD_NOUN,,KATAKANA,,,-,トリビューン,,toribyuun,trybuna,,,
+17004,WORD_NOUN,,KATAKANA,,,-,パパイア,,papaia,"papaja
+melonowiec",,,
+17005,WORD_NOUN,,HIRAGANA_KATAKANA,,,ドラ息子,ドラむすこ,,dora musuko,"leniwy syn
+rozrzutny syn
+rozwiązły syn",,,
+17006,WORD_NOUN,,HIRAGANA,,,中級,ちゅうきゅう,,chuukyuu,poziom średniozaawansowany,,,
+17007,WORD_NOUN,,HIRAGANA,,,仕上げ,しあげ,,shiage,"ostatnie poprawki
+wykończenie
+zakończenie",,,
+17008,WORD_NOUN,,HIRAGANA,,,喚起,かんき,,kanki,"podniecenie
+pobudzenie
+rozbudzenie
+wzbudzenie
+ekscytacja
+ewokacja",,,
+17009,WORD_NOUN,,HIRAGANA,,,在宅,ざいたく,,zaitaku,"bycie w domu
+bycie w",,,
+17010,WORD_NOUN,,HIRAGANA,,,扇動,せんどう,,sendou,"podżeganie
+nakłanianie
+podburzanie",,,
+17011,WORD_NOUN,,HIRAGANA,,,担保,たんぽ,,tanpo,"zabezpieczenie
+zastaw
+hipoteka",,,
+17012,WORD_NOUN,,HIRAGANA,,,最高峰,さいこうほう,,saikouhou,"najwyższy szczy
+najwyższa góra
+największy autorytet
+najbardziej wybitna osoba
+apogeum",,,
+17013,WORD_NOUN,,HIRAGANA,,,武勇,ぶゆう,,buyuu,"dzielność
+męstwo
+odwaga
+waleczność
+sprawność militarna",,,
+17014,"WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,漸次,ぜんじ,,zenji,"stopniowo
+powoli
+pomału
+po trochu
+sukcesywnie",,,
+17015,WORD_NOUN,,HIRAGANA,,,焼芋,やきいも,,yakiimo,pieczony słodki kartofel,,,
+17016,WORD_NOUN,,HIRAGANA,,,的中,てきちゅう,,tekichuu,"trafienie w sedno
+zrealizowanie",,,
+17017,WORD_NOUN,,HIRAGANA,,,皇太子妃,こうたいしひ,,koutaishihi,żona następcy tronu,,,
+17018,WORD_NOUN,,HIRAGANA,,,確保,かくほ,,kakuho,"gwarantowanie
+zapewnianie
+poręczanie
+popieranie
+rezerwowanie",,,
+17019,WORD_NOUN,,HIRAGANA,,,詩歌,しか,,shika,poezja,japońska i chińska,,"5217
+11203"
+17020,WORD_NOUN,,HIRAGANA,,,足止め,あしどめ,,ashidome,"areszt domowy
+pozbawienie wolności",,,
+17021,WORD_NOUN,,HIRAGANA,,,鈍化,どんか,,donka,"stępienie
+przytępienie",,,
+17022,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,非礼,ひれい,,hirei,"niegrzeczność
+nieuprzejmość",,,
+17023,WORD_NOUN,,HIRAGANA,,,騒動,そうどう,,soudou,"walka
+konflikt
+spór
+waśń
+konflikt
+zamieszki
+bunt
+rozruchy
+rebelia
+zawierucha",,,
