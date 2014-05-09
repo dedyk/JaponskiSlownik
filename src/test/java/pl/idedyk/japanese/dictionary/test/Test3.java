@@ -30,18 +30,50 @@ public class Test3 {
 		System.out.println("generateKanjiEntries: parseKanjiEntriesFromCsv");
 		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv("input/kanji.csv", readKanjiDic2);
 		
+		System.out.println("jmedictName");
+		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
+		
+		System.out.println("JMdict_e");
+		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		
 		Set<Character> alreadyKanjiSet = new TreeSet<Character>();
 		
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
 			alreadyKanjiSet.add(new Character(currentKanjiEntry.getKanji().charAt(0)));
 		}
 		
-		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader
-				.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
-
-		Collection<List<JMEDictEntry>> values = jmedict.values();
-		
 		final Map<Character, Integer> charCounter = new TreeMap<Character, Integer>();
+		
+		processJMEDict(alreadyKanjiSet, charCounter, jmedict);
+		processJMEDict(alreadyKanjiSet, charCounter, jmedictName);
+				
+		List<Character> charList = new ArrayList<Character>(charCounter.keySet());
+		
+		Collections.sort(charList, new Comparator<Character>() {
+
+			@Override
+			public int compare(Character o1, Character o2) {
+				return -1 * charCounter.get(o1).compareTo(charCounter.get(o2));
+			}
+		});
+		
+		for (Character character : charList) {
+			
+			if (isKanji(character) == false) {
+				continue;
+			}
+			
+			if (alreadyKanjiSet.contains(character) == true) {
+				continue;
+			}
+			
+			System.out.println(character + "\t" + charCounter.get(character));
+		}
+	}
+	
+	private static void processJMEDict(Set<Character> alreadyKanjiSet, final Map<Character, Integer> charCounter, TreeMap<String, List<JMEDictEntry>> jmedict) throws Exception {
+		
+		Collection<List<JMEDictEntry>> values = jmedict.values();
 		
 		for (List<JMEDictEntry> currentList : values) {
 			
@@ -65,30 +97,7 @@ public class Test3 {
 					}
 				}
 			}			
-		}
-		
-		List<Character> charList = new ArrayList<Character>(charCounter.keySet());
-		
-		Collections.sort(charList, new Comparator<Character>() {
-
-			@Override
-			public int compare(Character o1, Character o2) {
-				return -1 * charCounter.get(o1).compareTo(charCounter.get(o2));
-			}
-		});
-		
-		for (Character character : charList) {
-			
-			if (isKanji(character) == false) {
-				continue;
-			}
-			
-			if (alreadyKanjiSet.contains(character) == true) {
-				continue;
-			}
-			
-			System.out.println(character + "\t" + charCounter.get(character));
-		}
+		}		
 	}
 	
 	private static boolean isKanji(Character c) {		
