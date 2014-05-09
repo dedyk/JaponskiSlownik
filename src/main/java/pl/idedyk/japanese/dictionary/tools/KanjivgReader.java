@@ -22,6 +22,10 @@ public class KanjivgReader {
 
 	public static KanjivgEntry readKanjivgFile(File file) throws Exception {
 
+		if (file.isFile() == false) {
+			return null;
+		}
+		
 		String feature = "http://apache.org/xml/features/nonvalidating/load-external-dtd";
 
 		SAXReader reader = new SAXReader();		

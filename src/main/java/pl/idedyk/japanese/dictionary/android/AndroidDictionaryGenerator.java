@@ -543,11 +543,17 @@ public class AndroidDictionaryGenerator {
 		BufferedWriter tomoeFileFromKanjivgWriter = new BufferedWriter(new FileWriter(kvgToolFileFromKanjivgFile));
 
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+			
+			KanjivgEntry kanjivgEntry = currentKanjiEntry.getKanjivgEntry();
 
+			if (kanjivgEntry == null) {
+				continue;
+			}
+			
 			tomoeFileFromKanjivgWriter.write(currentKanjiEntry.getKanji());
 			tomoeFileFromKanjivgWriter.write(" ");
 
-			List<String> strokePaths = currentKanjiEntry.getKanjivgEntry().getStrokePaths();
+			List<String> strokePaths = kanjivgEntry.getStrokePaths();
 
 			for (String currentStrokePath : strokePaths) {
 				tomoeFileFromKanjivgWriter.write(currentStrokePath);
