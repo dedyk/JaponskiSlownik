@@ -5573,7 +5573,7 @@ WORD_ADVERBIAL_NOUN",,HIRAGANA,Genki kanji 2-17,,真夜中,まよなか,,mayonak
 Genki 2-20",,歩く,あるく,,aruku,chodzić,pieszo,,
 2276,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,歩道,ほどう,,hodou,"chodnik
 ścieżka
-przejście",,,11130
+przejście",,,
 2277,WORD_NOUN,,HIRAGANA,"Genki kanji 2-17
 Genki dodatkowe 2-17",,分野,ぶんや,,bun'ya,"dziedzina
 dział
@@ -14065,7 +14065,8 @@ być kuszonym
 być wprowadzanym w błąd",,,
 6078,WORD_NOUN,,HIRAGANA,,,程,ほど,,hodo,"ograniczenie
 zasięg
-stopień",,,13601
+stopień",,,"11130
+13601"
 6079,WORD_NOUN,,HIRAGANA,,,程度,ていど,,teido,"stopień
 poziom
 standard
@@ -24981,10 +24982,11 @@ we wszystkich kierunkach",,,
 11129,WORD_ADVERBIAL_NOUN,,HIRAGANA,,,方方,ほうぼう,,houbou,"tu i tam
 wszędzie
 we wszystkich kierunkach",,,
-11130,WORD_PARTICULE,,HIRAGANA,,,-,ほどう,,hodou,"około
+11130,WORD_PARTICULE,,HIRAGANA,,,程,ほど,,hodo,"około
 mniej więcej
 tak ... jak ...
-im bardziej ... tym ...",,,2276
+im bardziej ... tym ...",,,"2276
+6078"
 11131,WORD_NOUN,,HIRAGANA,,,結末,けつまつ,,ketsumatsu,"zakończenie
 konkluzja
 wniosek",,,
@@ -29173,11 +29175,10 @@ ilekroć",,,"374
 5240
 7909
 13599"
-13601,WORD_PARTICULE,,HIRAGANA,,,-,ほど,,hodo,"około
-mniej więcej
-tak ... jak ...
-im bardziej ...
-tym ...",,,6078
+13601,WORD_VERB_U,,HIRAGANA,,,旅立つ,たびだつ,,tabidatsu,"rozpoczynać podróż
+odjeżdżać
+odjechać
+odchodzić",,,
 13602,WORD_NOUN,,KATAKANA,,,-,コンパ,,konpa,"przyjęcie
 wydarzenie towarzyskie",organizowane przez studentów połączone z piciem alkoholu,,
 13603,WORD_NOUN,,KATAKANA,,,-,ネックレス,,nekkuresu,naszyjnik,,,
@@ -38653,3 +38654,71 @@ czołowy
 przewodni
 główny
 znakomity",,,
+17081,WORD_NOUN,,KATAKANA,,,-,カブ,,kabu,rzepa,,,
+17082,WORD_NOUN,,KATAKANA,,,-,コールドゲーム,,koorudo geemu,???,ang: called game (baseball),,
+17083,WORD_NOUN,,KATAKANA,,,-,ゴルジュ,,goruju,przełom rzeki,,,
+17084,WORD_NOUN,,KATAKANA,,,-,デモンストレーション,,demonsutoreeshon,"demonstracja
+manifestacja",,,
+17085,WORD_NOUN,,KATAKANA,,,-,フォース,,foosu,"siła
+moc
+forth (język programowania)",,,
+17086,WORD_NOUN,,KATAKANA,,,-,ヘブライズム,,heburaizumu,hebraizm,,,
+17087,WORD_NOUN,,KATAKANA,,,-,ポット,,potto,"dzbanek (szczególnie do herbaty, do kawy)
+czajniczek
+termos",,,
+17088,WORD_NOUN,,KATAKANA,,,-,ユーノス,,yuunosu,eunos,model samochodu Mazdy,,
+17089,WORD_EXPRESSION,,HIRAGANA,,,そう言えば,そういえば,,souieba,"przypomniał mi o ...
+teraz kiedy o tym wspomniałeś ...",,,
+17090,WORD_NOUN,,HIRAGANA,,,人物,じんぶつ,,jinbutsu,"postać
+osoba
+figura",,,
+17091,WORD_NOUN,,HIRAGANA,,,先行き,さきゆき,,sakiyuki,przyszłość,,,17092
+17092,WORD_NOUN,,HIRAGANA,,,先行き,さきいき,,sakiiki,przyszłość,,,17091
+17093,WORD_NOUN,,HIRAGANA,,,即興,そっきょう,,sokkyou,"improwizacja
+bez przygotowania
+spontaniczny",,,
+17094,WORD_NOUN,,HIRAGANA,,,帆船,はんせん,,hansen,"żaglowiec
+masztowiec
+żaglówka
+statek żaglowy",,,
+17095,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,年々,ねんねん,,nen nen,"lata
+rok po roku
+każdego roku
+rocznie",,,
+17096,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,年長,ねんちょう,,nenchou,"starszeństwo
+wysługa lat
+staż",,,
+17097,WORD_VERB_U,,HIRAGANA,,,引っ込む,ひっこむ,,hikkomu,"cofać się
+zapadać
+opaść
+uginać się
+zanurzyć się
+tonąć",,,
+17098,WORD_VERB_RU,,HIRAGANA,,,押し付ける,おしつける,,oshitsukeru,"naciskać
+pchać
+popychać
+przepychać",,,
+17099,WORD_NOUN,,HIRAGANA,,,拘置所,こうちしょ,,kouchisho,"więzienie
+zakład karny
+areszt",,,
+17100,WORD_NOUN,,HIRAGANA,,,揮発,きはつ,,kihatsu,ulatnianie się,,,
+17101,WORD_NOUN,,HIRAGANA,,,早,はや,,haya,"już
+teraz
+do tego czasu",,,
+17102,WORD_NOUN,,HIRAGANA,,,琢磨,たくま,,takuma,polerowanie klejnotów,,,
+17103,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,着々,ちゃくちゃく,,chaku chaku,"równo
+równomiernie
+stale",,,
+17104,WORD_NOUN,,HIRAGANA,,,認め印,みとめいん,,mitomein,"prywatna pieczęć
+imienna pieczęć
+nieformalna pieczęć
+pieczęć
+sygnet",,,
+17105,WORD_NOUN,,HIRAGANA,,,送り仮名,おくりがな,,okurigana,okurigana,kana dodawana do znaku kanji stanowiące całość słowa,,
+17106,WORD_NOUN,,HIRAGANA,,,食い違い,くいちがい,,kuichigai,"rozbieżność
+sprzeczność
+odmienna opinia
+sprzeczna opinia",,,
