@@ -69,6 +69,18 @@ public class Test3 {
 			
 			System.out.println(character + "\t" + charCounter.get(character));
 		}
+		
+		System.out.println("-----");
+		Collection<KanjiDic2Entry> kanjiDiv2Values = readKanjiDic2.values();
+		
+		for (KanjiDic2Entry kanjiDic2Entry : kanjiDiv2Values) {
+			
+			Character kanjiChar = kanjiDic2Entry.getKanji().charAt(0);
+			
+			if (charCounter.containsKey(kanjiChar) == false) {
+				System.out.println(kanjiChar);
+			}
+		}
 	}
 	
 	private static void processJMEDict(Set<Character> alreadyKanjiSet, final Map<Character, Integer> charCounter, TreeMap<String, List<JMEDictEntry>> jmedict) throws Exception {
