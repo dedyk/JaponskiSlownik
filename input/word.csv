@@ -8427,7 +8427,9 @@ wspominać",,,
 Genki 2-23",,思い出,おもいで,,omoide,"wspomnienie
 pamięć",,,
 3596,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-19,,如何,いかが,,ikaga,"jak
-co","uprzejma, honoryfikatywna forma od dou",,
+co
+w co sądzisz o","uprzejma, honoryfikatywna forma od dou",,"10801
+17323"
 3597,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,経つ,たつ,,tatsu,"mijać
 przemijać
 upływać
@@ -24323,12 +24325,10 @@ małe dziecko",,,
 przypadkowy
 bezpodstawny
 bezsensowna (odpowiedź)",,,
-10801,WORD_ADVERB,,HIRAGANA,,,-,どう,,dou,"jak
-jaki
-co z
-jak z",,,"6573
-7599
-8133"
+10801,WORD_ADVERB,,HIRAGANA,,,如何,どう,,dou,"jak
+w jaki sposób
+co sądzisz o",,,"3596
+17323"
 10802,WORD_NOUN,,HIRAGANA,,,博士,はくし,,hakushi,doktor,tytuł naukowy,,2690
 10803,WORD_NOUN,,HIRAGANA,,,広さ,ひろさ,,hirosa,"powierzchnia
 rozmiary",,,
@@ -39322,3 +39322,76 @@ rzut oka
 katalog
 spis (w szkole)",,,
 17308,WORD_NOUN,,KATAKANA,,,-,ブラインド,,buraindo,żaluzja,,,
+17309,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,-,せかせか,,sekaseka,"niespokojny
+nerwowy
+niecierpliwy
+pośpiesznie
+naprędce",,,
+17310,WORD_INTERJECTION,,HIRAGANA,,,-,やれやれ,,yareyare,"okrzyk ulgi
+okrzyk rozczarowania",,,
+17311,WORD_NOUN,,KATAKANA,,,-,トール,,tooru,"opłata za przejazd (and: toll)
+Thor",,,
+17312,WORD_NOUN,,KATAKANA,,,-,ナイト,,naito,"noc
+rycerz","ang: night, knight",,
+17313,WORD_NOUN,,KATAKANA,,,-,ブロード,,buroodo,sukno,,,
+17314,WORD_NOUN,,KATAKANA,,,-,ペトリ,,petori,Petri,,,
+17315,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,マクロ,,makuro,makro,,,
+17316,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,ミント,,minto,"mięta
+mięta pieprzowa
+miętowy",,,
+17317,WORD_NOUN,,KATAKANA,,,-,ライブラリー,,raiburarii,biblioteka,,,
+17318,WORD_NOUN,,HIRAGANA_KATAKANA,,,ライブラリー関数,ライブラリーかんすう,,raiburarii kansuu,funkcja biblioteczna,informatyka,,
+17319,WORD_NOUN,,KATAKANA,,,-,ワンポイントリリーフ,,wanpointo ririifu,???,"ang: one-point relief, baseball",,
+17320,WORD_NOUN,,HIRAGANA,,,使用人,しようにん,,shiyounin,"pracownik
+służący",,,
+17321,WORD_NOUN,,HIRAGANA,,,切り捨て,きりすて,,kirisute,"zaokrąglenie
+osoba zasłaniająca się przed mieczem osobami o niskim statusie (słowo historyczne)",,,
+17322,WORD_NOUN,,HIRAGANA,,,原生,げんせい,,gensei,"samoistna generacja
+prastary
+pierwotny
+prymitywny","np. bakterie, pierwotniaki",,
+17323,WORD_ADVERB,,HIRAGANA,,,如何,いかん,,ikan,"jak
+co
+w co sądzisz o",,,"3596
+10801"
+17324,WORD_NOUN,,HIRAGANA,,,年齢層,ねんれいそう,,nenreisou,"przekrój wiekowy
+przedział wiekowy",,,
+17325,WORD_NOUN,,HIRAGANA,,,引き下げ,ひきさげ,,hikisage,"redukcja
+skrócenie
+ucięcie",,,
+17326,WORD_NOUN,SUFFIX,HIRAGANA,,,待ち,まち,,machi,"oczekiwanie
+czas oczekiwania",,,
+17327,WORD_NOUN,,HIRAGANA,,,御化け,おばけ,,obake,"goblin
+chochlik
+skrzat
+zjawa
+widmo
+duch
+potwór",,,
+17328,WORD_ATEJI,,HIRAGANA,,,思惑,おもわく,,omowaku,"przewidywanie
+prawdopodobieństwo
+przewidywanie
+prognoza
+antycypacja
+spekulacje",,,
+17329,WORD_NOUN,,HIRAGANA,,,急変,きゅうへん,,kyuuhen,"nagła zmiana
+nagły przewrót
+nagłe zdarzenie
+nagły wypadek",,,
+17330,WORD_NOUN,,HIRAGANA,,,東宮,とうぐう,,touguu,następca tronu,,,
+17331,WORD_VERB_U,,HIRAGANA,,,表立つ,おもてだつ,,omotedatsu,"stać się osobą publiczną
+stać się osobą znaną",,,
+17332,WORD_NOUN,,HIRAGANA,,,近海,きんかい,,kinkai,"przyległe morze
+przyległe wody
+przybrzeżne wody
+wody terytorialne",,,
+17333,WORD_NOUN,,HIRAGANA,,,銑鉄,せんてつ,,sentetsu,surówka hutnicza,,,17334
+17334,WORD_NOUN,,HIRAGANA,,,銑鉄,ずくてつ,,zukutetsu,surówka hutnicza,,,17333
+17335,WORD_NOUN,,HIRAGANA,,,陣営,じんえい,,jin'ei,"ugrupowanie (osób o tej samej ideologii)
+frakcja polityczna
+obój wojskowy
+obóz
+kwatera",,,
