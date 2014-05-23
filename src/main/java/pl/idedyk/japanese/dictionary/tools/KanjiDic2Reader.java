@@ -75,6 +75,8 @@ public class KanjiDic2Reader {
         	List<String> onReading = getReading(rmgroup, "ja_on");
         	List<String> kunReading = getReading(rmgroup, "ja_kun");
         	
+        	List<String> engMeaning = getEngMeaning(rmgroup);
+        	
         	int strokeCount = Integer.parseInt(currentCharacterAsElement.selectSingleNode("misc/stroke_count").getText());
         	
         	Element jlptElement = (Element)currentCharacterAsElement.selectSingleNode("misc/jlpt");
@@ -100,6 +102,8 @@ public class KanjiDic2Reader {
         	
         	kanjiDic2Entry.setOnReading(onReading);
         	kanjiDic2Entry.setKunReading(kunReading);
+        	
+        	kanjiDic2Entry.setEngMeaning(engMeaning);
         	
         	List<String> radicals = kradFileMap.get(kanji);
         	
@@ -132,7 +136,22 @@ public class KanjiDic2Reader {
 		
 		return result;
 	}
-	
+
+	private static List<String> getEngMeaning(Element rmgroup) {
+		
+		List<String> result = new ArrayList<String>();
+		
+		List<?> meaningTypeNodes = rmgroup.selectNodes("meaning[not(@m_lang)]");
+		
+		for (Object currentMeaningTypeAsObject : meaningTypeNodes) {
+			Element currentMeaningTypeAsElement = (Element)currentMeaningTypeAsObject;
+			
+			result.add(currentMeaningTypeAsElement.getText());			
+		}
+		
+		return result;
+	}
+
 	public static List<RadicalInfo> readRadkfile(String radkFile) throws IOException {
 		
 		List<RadicalInfo> result = new ArrayList<RadicalInfo>();

@@ -1,18 +1,22 @@
 package pl.idedyk.japanese.dictionary.test;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.api.dictionary.dto.FindWordRequest;
-import pl.idedyk.japanese.dictionary.api.dictionary.dto.FindWordResult.ResultItem;
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
+
 
 public class Test2 {
 
 	public static void main(String[] args) throws Exception {
 
+		/*
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
 				.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 
@@ -29,7 +33,8 @@ public class Test2 {
 		// ResultItemComparator resultItemComparator = new ResultItemComparator(findWordRequest);
 
 		//Collections.sort(resultItemList, resultItemComparator);
-
+		*/
+		
 		/*
 		if (lhsKanji != null && lhsKanji.endsWith(findWord) == true && rhsKanji != null && rhsKanji.equals(findWord) == false) {
 			return -1;
@@ -37,7 +42,8 @@ public class Test2 {
 			return 1;
 		}
 		 */
-
+		
+		/*
 		for (ResultItem resultItem1 : resultItemList) {
 
 			for (ResultItem resultItem2 : resultItemList) {
@@ -63,8 +69,7 @@ public class Test2 {
 				}
 			}
 		}
-
-
+		*/
 
 		/*
 		for (ResultItem resultItem1 : resultItemList) {
@@ -95,9 +100,57 @@ public class Test2 {
 			}
 		}
 		 */
+		
+		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile("../JapaneseDictionary_additional/kradfile");
+		
+		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2("../JapaneseDictionary_additional/kanjidic2.xml", kradFileMap);
 
+		Collection<KanjiDic2Entry> readKanjiDic2Values = readKanjiDic2.values();
+		
+		Map<String, List<KanjiDic2Entry>> theSameEngMeaning = new TreeMap<String, List<KanjiDic2Entry>>();
+		
+		for (KanjiDic2Entry kanjiDic2Entry : readKanjiDic2Values) {
+			
+			List<String> engMeaning = kanjiDic2Entry.getEngMeaning();
+			
+			Collections.sort(engMeaning);
+			
+			String key = engMeaning.toString();
+			
+			List<KanjiDic2Entry> list = theSameEngMeaning.get(key);
+			
+			if (list == null) {
+				list = new ArrayList<KanjiDic2Entry>();
+			}
+			
+			list.add(kanjiDic2Entry);
+			
+			theSameEngMeaning.put(key, list);			
+		}
+		
+		Iterator<String> theSameEngMeaningIterator = theSameEngMeaning.keySet().iterator();
+		
+		while (theSameEngMeaningIterator.hasNext() == true) {
+			
+			String key = theSameEngMeaningIterator.next();
+			
+			List<KanjiDic2Entry> list = theSameEngMeaning.get(key);
+			
+			if (list.size() > 1) {
+				
+				StringBuffer listKanji = new StringBuffer();
+				
+				for (KanjiDic2Entry kanjiDic2Entry : list) {
+					listKanji.append(kanjiDic2Entry.getKanji() + " ");
+				}
+				
+				System.out.println(key + " - " + listKanji.toString());
+			}
+			
+		}
 	}
 
+	/*
 	private static DictionaryEntry createDictionaryEntry(PolishJapaneseEntry polishJapaneseEntry) {
 
 		DictionaryEntry dictionaryEntry = new DictionaryEntry();
@@ -115,7 +168,8 @@ public class Test2 {
 
 		return dictionaryEntry;
 	}	
-
+	*/
+	
 	/*
 	private static class ResultItemComparator implements Comparator<ResultItem> {
 
