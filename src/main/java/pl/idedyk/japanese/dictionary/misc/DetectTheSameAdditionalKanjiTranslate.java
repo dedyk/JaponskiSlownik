@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -30,12 +31,12 @@ public class DetectTheSameAdditionalKanjiTranslate {
 		
 		List<AdditionalKanjiEntry> additionalKanjiEntryList = readAdditionalKanjiEntry(additionalKanjiFile);
 		
-		writeAdditionalKanjiList(additionalKanjiEntryList, additionalKanjiOuputFile);
+		//writeAdditionalKanjiList(additionalKanjiEntryList, additionalKanjiOuputFile);
 		
 		Map<String, List<KanjiDic2Entry>> theSameEngMeaning = detectTheSameEngMeaning(kradFileMap, readKanjiDic2);
 
 		
-		/*
+		
 		Iterator<String> theSameEngMeaningIterator = theSameEngMeaning.keySet().iterator();
 		
 		while (theSameEngMeaningIterator.hasNext() == true) {
@@ -44,7 +45,7 @@ public class DetectTheSameAdditionalKanjiTranslate {
 			
 			List<KanjiDic2Entry> list = theSameEngMeaning.get(key);
 			
-			if (list.size() > 1) {
+			if (list.size() > 0) {
 				
 				StringBuffer listKanji = new StringBuffer();
 				
@@ -55,7 +56,7 @@ public class DetectTheSameAdditionalKanjiTranslate {
 				System.out.println(key + " - " + listKanji.toString());
 			}
 		}
-		*/
+		
 		
 	}
 	
