@@ -32,8 +32,7 @@ public class DetectTheSameAdditionalKanjiTranslate {
 		
 		writeAdditionalKanjiList(additionalKanjiEntryList, additionalKanjiOuputFile);
 		
-		
-		//Map<String, List<KanjiDic2Entry>> theSameEngMeaning = detectTheSameEngMeaning(kradFileMap, readKanjiDic2);
+		Map<String, List<KanjiDic2Entry>> theSameEngMeaning = detectTheSameEngMeaning(kradFileMap, readKanjiDic2);
 
 		
 		/*
@@ -94,17 +93,27 @@ public class DetectTheSameAdditionalKanjiTranslate {
 		
 		CsvReader csvReader = new CsvReader(new FileReader(additionalKanjiFile), ',');
 
+		boolean useKanji = true;
+		
 		while (csvReader.readRecord()) {
 			
 			AdditionalKanjiEntry additionalKanjiEntry = new AdditionalKanjiEntry();
 			
-			additionalKanjiEntry.setId(csvReader.get(0));
+			String id = csvReader.get(0);
+			
+			additionalKanjiEntry.setId(id);
 			additionalKanjiEntry.setDone(csvReader.get(1));
 			additionalKanjiEntry.setKanji(csvReader.get(2));
 			additionalKanjiEntry.setStrokeCount(csvReader.get(3));
 			additionalKanjiEntry.setTranslate(csvReader.get(4));
 			additionalKanjiEntry.setInfo(csvReader.get(5));
-
+			
+			if (useKanji == true && id.equals("X") == true) {
+				useKanji = false;
+			}
+			
+			additionalKanjiEntry.setUseKanji(useKanji);
+			
 			result.add(additionalKanjiEntry);			
 		}
 		
@@ -147,6 +156,8 @@ public class DetectTheSameAdditionalKanjiTranslate {
 		private String translate;
 		
 		private String info;
+		
+		private boolean useKanji;
 
 		public String getId() {
 			return id;
@@ -194,6 +205,14 @@ public class DetectTheSameAdditionalKanjiTranslate {
 
 		public void setKanji(String kanji) {
 			this.kanji = kanji;
-		}		
+		}
+
+		public boolean isUseKanji() {
+			return useKanji;
+		}
+
+		public void setUseKanji(boolean useKanji) {
+			this.useKanji = useKanji;
+		}	
 	}
 }
