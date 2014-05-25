@@ -289,10 +289,6 @@ public class DetectTheSameAdditionalKanjiTranslate {
 			this.kanji = kanji;
 		}
 
-		public boolean isUseKanji() {
-			return useKanji;
-		}
-
 		public void setUseKanji(boolean useKanji) {
 			this.useKanji = useKanji;
 		}
