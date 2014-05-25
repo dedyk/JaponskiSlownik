@@ -31,33 +31,102 @@ public class DetectTheSameAdditionalKanjiTranslate {
 		
 		List<AdditionalKanjiEntry> additionalKanjiEntryList = readAdditionalKanjiEntry(additionalKanjiFile);
 		
-		//writeAdditionalKanjiList(additionalKanjiEntryList, additionalKanjiOuputFile);
-		
 		Map<String, List<KanjiDic2Entry>> theSameEngMeaning = detectTheSameEngMeaning(kradFileMap, readKanjiDic2);
 
-		
-		
 		Iterator<String> theSameEngMeaningIterator = theSameEngMeaning.keySet().iterator();
 		
 		while (theSameEngMeaningIterator.hasNext() == true) {
 			
 			String key = theSameEngMeaningIterator.next();
 			
-			List<KanjiDic2Entry> list = theSameEngMeaning.get(key);
+			if (key.trim().equals("[]") == true) {
+				continue;
+			}
 			
-			if (list.size() > 0) {
+			List<KanjiDic2Entry> theSameEngMeaningKanjiDic2EntryList = theSameEngMeaning.get(key);
+
+			if (theSameEngMeaningKanjiDic2EntryList.size() <= 1) {
+				continue;
+			}
+						
+			List<AdditionalKanjiEntry> foundAdditionalKanjiEntryList = new ArrayList<AdditionalKanjiEntry>();
+			
+			for (KanjiDic2Entry currentKanjiDic2Entry : theSameEngMeaningKanjiDic2EntryList) {
 				
-				StringBuffer listKanji = new StringBuffer();
+				AdditionalKanjiEntry additionalKanjiEntry = findAdditionalKanjiEntry(additionalKanjiEntryList, currentKanjiDic2Entry.getKanji());
 				
-				for (KanjiDic2Entry kanjiDic2Entry : list) {
-					listKanji.append(kanjiDic2Entry.getKanji() + " ");
+				if (additionalKanjiEntry != null) {
+					foundAdditionalKanjiEntryList.add(additionalKanjiEntry);
+				}				
+			}
+			
+			if (foundAdditionalKanjiEntryList.size() <= 1) {
+				continue;
+			}
+			
+			String theSamePolishTranslate = null;
+			String theSamePolishInfo = null;
+			
+			for (AdditionalKanjiEntry additionalKanjiEntry : foundAdditionalKanjiEntryList) {
+				
+				String currentAdditionalKanjiEntryTranslate = additionalKanjiEntry.getTranslate();
+				String currentAdditionalKanjiEntryInfo = additionalKanjiEntry.getInfo();
+				
+				if (currentAdditionalKanjiEntryTranslate.equals("") == false && theSamePolishTranslate == null) {
+					
+					theSamePolishTranslate = currentAdditionalKanjiEntryTranslate;
+					theSamePolishInfo = currentAdditionalKanjiEntryInfo;
+					
+				} else if (theSamePolishTranslate != null && currentAdditionalKanjiEntryTranslate.equals("") == false && currentAdditionalKanjiEntryTranslate.equals(theSamePolishTranslate) == false) {
+					
+					for (AdditionalKanjiEntry additionalKanjiEntry2 : foundAdditionalKanjiEntryList) {
+						System.out.println(additionalKanjiEntry2);
+					}
+					
+					
+					System.out.println("Error");
+					
+					throw new Exception();
+				}				
+			}
+			
+			if (theSamePolishTranslate != null) {			
+
+				for (AdditionalKanjiEntry additionalKanjiEntry : foundAdditionalKanjiEntryList) {
+					
+					String currentAdditionalKanjiEntryTranslate = additionalKanjiEntry.getTranslate();
+	
+					if (currentAdditionalKanjiEntryTranslate.equals("") == true) {
+						additionalKanjiEntry.setTranslate(theSamePolishTranslate);
+						additionalKanjiEntry.setInfo(theSamePolishInfo);
+						additionalKanjiEntry.setDone("0");
+					}					
 				}
 				
-				System.out.println(key + " - " + listKanji.toString());
+			} else {
+				
+				StringBuffer allKanji = new StringBuffer();
+				
+				allKanji.append("---\n");
+				
+				for (AdditionalKanjiEntry additionalKanjiEntry : foundAdditionalKanjiEntryList) {
+					allKanji.append(additionalKanjiEntry.getKanji() + "\n");					
+				}
+				
+				for (AdditionalKanjiEntry additionalKanjiEntry : foundAdditionalKanjiEntryList) {
+					
+					String currentAdditionalKanjiEntryTranslate = additionalKanjiEntry.getTranslate();
+
+					if (currentAdditionalKanjiEntryTranslate.equals("") == false) {
+						throw new Exception();
+					}
+					
+					additionalKanjiEntry.setTranslate(allKanji.toString().replaceAll(additionalKanjiEntry.getKanji() + "\n", ""));				
+				}				
 			}
 		}
 		
-		
+		writeAdditionalKanjiList(additionalKanjiEntryList, additionalKanjiOuputFile);
 	}
 	
 	private static Map<String, List<KanjiDic2Entry>> detectTheSameEngMeaning(Map<String, List<String>> kradFileMap, Map<String, KanjiDic2Entry> readKanjiDic2) {
@@ -121,6 +190,18 @@ public class DetectTheSameAdditionalKanjiTranslate {
 		csvReader.close();
 		
 		return result;		
+	}
+	
+	private static AdditionalKanjiEntry findAdditionalKanjiEntry(List<AdditionalKanjiEntry> additionalKanjiEntryList, String kanji) {
+		
+		for (AdditionalKanjiEntry currentAdditionalKanjiEntry : additionalKanjiEntryList) {
+			
+			if (currentAdditionalKanjiEntry.getKanji().equals(kanji) == true) {
+				return currentAdditionalKanjiEntry;
+			}
+		}
+		
+		return null;		
 	}
 	
 	private static void writeAdditionalKanjiList(List<AdditionalKanjiEntry> additionalKanjiEntryList, String additionalKanjiOutputFile) throws Exception {
@@ -214,6 +295,12 @@ public class DetectTheSameAdditionalKanjiTranslate {
 
 		public void setUseKanji(boolean useKanji) {
 			this.useKanji = useKanji;
-		}	
+		}
+
+		@Override
+		public String toString() {
+			return "AdditionalKanjiEntry [id=" + id + ", done=" + done + ", kanji=" + kanji + ", strokeCount="
+					+ strokeCount + ", translate=" + translate + ", info=" + info + ", useKanji=" + useKanji + "]";
+		}
 	}
 }

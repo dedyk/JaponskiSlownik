@@ -219,6 +219,7 @@ być oczarowany
 być zachwycony
 ująć
 urzec
+urzekać
 zniewalać
 czarować
 topnieć
@@ -266,7 +267,8 @@ obszerny",
 grunt
 ziemia",
 98,2,蝨,-1,"wesz
-robactwo
+wsza
+robak
 szkodnik
 insekt",
 99,2,雉,-1,bażant,
@@ -408,7 +410,8 @@ przycinać",
 144,2,枡,-1,pudełko miernicze,
 145,2,梭,-1,"prom
 wahadłowiec
-kursować",
+kursować
+czółenko",
 146,2,棕,-1,szorstkowiec,gatunek drzewa
 147,2,緬,-1,"Birma
 cienka nić",
@@ -460,14 +463,18 @@ rozpatrywać",
 160,2,熨,-1,"żelazko
 wygładzać
 rozprostować",
-161,2,箆,-1,łopatka,
+161,2,箆,-1,"strzała
+łopatka
+szpachelka",
 162,2,簀,-1,szorstka mata,
 163,2,讚,-1,"pochwała
 chwała
 tytuł obrazu",
 164,2,賤,-1,"gardzić
 pogardzać
-niższy społecznie
+wzgardzać
+margines społeczny
+środowisko przestępcze
 ubóstwo
 bieda
 nędza",
@@ -627,12 +634,18 @@ rozdzielenie",
 pudełko
 skrzynia",
 217,2,戛,-1,halabarda,dwuręczna broń drzewcowa
-218,2,盪,-1,"być oczarowany
+218,2,盪,-1,"być zaczarowany
+być zaklęty
+być oczarowany
 być zachwycony
 ująć
 urzec
 urzekać
-zniewalać",
+zniewalać
+czarować
+topnieć
+topić
+rozpływać",
 219,2,睛,-1,źrenica oka,
 220,2,笊,-1,"bambusowy koszyk
 bambusowy kosz",
@@ -788,7 +801,8 @@ wydział
 lokalizacja
 miejscowość
 miejsce",
-278,2,觴,-1,"filiżanka
+278,2,觴,-1,"puchar
+kielich
 miseczka
 czarka",
 279,2,趾,-1,"odcisk stopy
@@ -884,7 +898,8 @@ bezużyteczny",
 łyżeczka
 podbierać
 czerpać",
-311,2,樅,-1,jodła,
+311,2,樅,-1,"jodła
+sosna",
 312,2,毘,-1,"asysta
 pomoc",
 313,2,秧,-1,"ryż
@@ -909,7 +924,9 @@ szarańcza",
 320,2,蜈,-1,pareczniki,gromada stawonogów zaliczanych do wijów
 321,2,螟,-1,szkodliwy pasożyt,
 322,2,觚,-1,"puchar
-kielich",
+kielich
+miseczka
+czarka",
 323,2,諤,-1,mówienie prawdy,
 324,2,鷂,-1,krogulec,gatunek średniej wielkości ptaka drapieżnego z rodziny jastrzębiowatych
 325,2,鹹,-1,słony,
@@ -1017,8 +1034,13 @@ roztopić
 roztapiać
 rozpuścić się",
 365,2,靱,-1,"giętki
+podatny
 elastyczny
-miękki",
+drżenie
+dreszcz
+miękki
+łagodny
+delikatny",
 366,2,鞅,-1,"pętać
 spętać
 skrępować
@@ -1121,7 +1143,10 @@ ochrypnięty",
 zniszczenie",
 402,2,戈,-1,"uzbrojenie
 halabarda",
-403,2,杼,-1,czółenko,
+403,2,杼,-1,"prom
+wahadłowiec
+kursować
+czółenko",
 404,2,欒,-1,"miodła
 harmonia
 zgranie
@@ -1443,8 +1468,8 @@ selekcja",
 524,2,谿,-1,"dolina
 kotlina",
 525,2,醋,-1,ocet,
-526,2,鮓,-1,"przyprawiony ryż
-sushi",
+526,2,鮓,-1,"sushi
+przyprawiony ryż",
 527,2,倖,-1,"szczęście
 radość
 pomyślność",
@@ -1583,7 +1608,8 @@ wiejski
 chłopski",
 566,1,晟,143,"czysty
 jasny
-wyraźny",
+wyraźny
+przejrzysty",
 567,1,柊,140,ostrokrzew,
 568,1,迪,139,"pouczać
 ścieżka
@@ -1780,9 +1806,10 @@ prawidłowy",
 630,1,頴,68,"spryt
 inteligencja
 zręczność
-kłos",
+kłos zboża",
 631,1,鼎,68,trójnożny czajniczek,
-632,1,厩,67,stajnia,
+632,1,厩,67,"stajnia
+obora",
 633,1,恕,67,"wybaczenie
 przebaczenie
 darowanie
@@ -1868,8 +1895,8 @@ pączek
 słód
 kiełek
 ukazywani się oznak",
-665,1,枦,52,"sumak
-drzewo woskowe",
+665,1,枦,52,"sumak (rodzaj roślin należący do rodziny nanerczowatych)
+woskowe drzewo",
 666,1,桔,52,używane w nazwach roślin,
 667,1,滿,52,"pełny
 wypełniony
@@ -1931,8 +1958,7 @@ odległy
 wysoki",
 690,1,冲,44,"otwarte morze
 wzniesienie się wysoko w kierunku nieba",
-691,1,剱,44,"miecz
-szpada",
+691,1,剱,44,miecz,
 692,1,耒,44,"trzygałęźny element podstawowy oznaczający drzewo
 przychodzić
 przyjść
@@ -2146,8 +2172,8 @@ jasny",
 stos
 palenie
 zapalanie",
-771,1,瑩,31,"jasny
-czysty
+771,1,瑩,31,"czysty
+jasny
 wyraźny
 przejrzysty",
 772,1,詢,31,"konsultowanie z
@@ -2214,6 +2240,7 @@ bystry
 pogodny
 świetlany",
 791,1,絲,28,"nić
+nitka
 wątek",
 792,1,賎,28,"gardzić
 pogardzać
@@ -2281,7 +2308,8 @@ posiadłość",
 814,1,凉,25,miły i zimny,
 815,1,昊,25,"duży
 niebo",
-816,1,暘,25,wschód słońca,
+816,1,暘,25,"wschód słońca
+świt",
 817,1,澳,25,"zakole rzeki
 zakręt w rzece
 skręcona linia brzegowa",
@@ -2378,7 +2406,7 @@ mila morska",
 857,1,甜,23,"słodki
 słodycze",
 858,1,肆,23,cztery,
-859,1,苳,23,lepieżnik,rodzaj rośliny
+859,1,苳,23,lepiężnik japoński,gatunek byliny z rodziny astrowatych
 860,1,蕭,23,"chwast
 zielsko
 spokój
@@ -2463,7 +2491,7 @@ nadmiar",
 karcenie
 ostrzeganie
 zabranianie",
-884,1,鑚,22,wywoływanie ognia poprzez pocieranie patyczków,
+884,1,鑚,22,rozpalanie ognia poprzez pocieranie patyków,
 885,1,霄,22,niebo,
 886,1,鶇,22,drozd,ptak z rodziny wróblowatych
 887,1,咥,21,"żuć
@@ -3167,7 +3195,8 @@ tęgi",
 1375,,壼,11,,
 1376,,娥,11,,
 1377,,广,11,,
-1378,,廏,11,,
+1378,1,廏,11,"stajnia
+obora",
 1379,,弩,11,,
 1380,,徃,11,,
 1381,,恃,11,,
@@ -4626,7 +4655,18 @@ tęgi",
 2834,,鐃,2,,
 2835,,鐔,2,,
 2836,,鐚,2,,
-2837,,鑠,2,,
+2837,,鑠,2,"być zaczarowany
+być zaklęty
+być oczarowany
+być zachwycony
+ująć
+urzec
+urzekać
+zniewalać
+czarować
+topnieć
+topić
+rozpływać",
 2838,,閠,2,,
 2839,,阨,2,,
 2840,,陝,2,,
