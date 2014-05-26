@@ -8,8 +8,6 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
 public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<PolishJapaneseEntry> {
 
 	private static final long serialVersionUID = 1L;
-
-	private int id;
 		
 	private String kanjiImagePath;
 	
@@ -20,15 +18,7 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 	private List<ParseAdditionalInfo> parseAdditionalInfoList;
 
 	private Set<Integer> knownDuplicatedId;
-	
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-	
+		
 	public String getRealPrefixRomaji() {
 		return realPrefixRomaji;
 	}
@@ -77,7 +67,7 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + id;
+		result = prime * result + getId();
 
 		return result;
 	}
@@ -98,7 +88,7 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 
 		PolishJapaneseEntry other = (PolishJapaneseEntry) obj;
 
-		if (id != other.id) {
+		if (getId() != other.getId()) {
 			return false;
 		}
 
@@ -108,9 +98,9 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 	@Override
 	public int compareTo(PolishJapaneseEntry entry) {
 
-		if (id < entry.id) {
+		if (getId() < entry.getId()) {
 			return -1;
-		} else if (id > entry.id) {
+		} else if (getId() > entry.getId()) {
 			return 1;
 		} else {
 			return 0;
