@@ -211,7 +211,8 @@ Genki kanji 2-22",,番号,ばんごう,,bangou,numer,,,
 92,WORD_NOUN,,HIRAGANA,"Genki 1-1
 Genki kanji 2-14",,留学生,りゅうがくせい,,ryuugakusei,student międzynarodowy,,,
 93,WORD_PRONOUN,,HIRAGANA,"Genki 1-1
-Genki kanji 1-5",,私,わたし,,watashi,ja,,,994
+Genki kanji 1-5",,私,わたし,,watashi,ja,,,"994
+17942"
 94,WORD_NOUN,,KATAKANA,Genki 1-1,,-,アメリカ,,Amerika,Ameryka,,,
 95,WORD_NOUN,,KATAKANA,Genki 1-1,,-,イギリス,,Igirisu,Wielka Brytania,,,
 96,WORD_NOUN,,KATAKANA,"Genki 1-1
@@ -2745,7 +2746,8 @@ artykuł
 wypracowanie
 raport
 referat",,,
-994,WORD_PRONOUN,,HIRAGANA,Genki 2-13,,私,わたくし,,watakushi,ja,formalnie,,93
+994,WORD_PRONOUN,,HIRAGANA,Genki 2-13,,私,わたくし,,watakushi,ja,formalnie,,"93
+17942"
 995,WORD_ADJECTIVE_I,,HIRAGANA,Genki 2-13,,嬉しい,うれしい,,ureshii,"zadowolony
 szczęśliwy
 radosny",,,
@@ -3385,7 +3387,8 @@ zamazany
 nieprzejrzysty
 zamglony (np. obraz)",,,
 1257,WORD_NOUN,,HIRAGANA,,,前髪,まえがみ,,maegami,grzywka,,,
-1258,WORD_EXPRESSION,,HIRAGANA,,,-,まま,,mama,"stan taki, jaki jest","~ no, przeważnie czasownik przed mama występuje w formie czasu przeszłego",,8472
+1258,WORD_PARTICULE,,HIRAGANA,,,儘,まま,,mama,"stan taki, jaki jest
+tak to jest","~ no, przeważnie czasownik przed mama występuje w formie czasu przeszłego",,17932
 1259,WORD_EXPRESSION,,HIRAGANA,,,今のまま,いまのまま,,ima no mama,"stan taki, jaki jest dzisiaj",,,
 1260,WORD_VERB_U,,HIRAGANA,,,励ます,はげます,,hagemasu,"zachęcać kogoś
 podnosić na duchu
@@ -19571,7 +19574,7 @@ stykać",,,
 8471,WORD_NOUN,,HIRAGANA,,,遅滞,ちたい,,chitai,zwłoka,,,
 8472,WORD_ADVERB,,HIRAGANA,,,間間,まま,,mama,"czasami
 czasem
-niekiedy",,,1258
+niekiedy",,,
 8473,WORD_NOUN,,HIRAGANA,,,陰茎,いんけい,,inkei,"penis
 prącie",,,
 8474,WORD_NOUN,,HIRAGANA,,,迷妄,めいもう,,meimou,"iluzja
@@ -41052,59 +41055,67 @@ WORD_NOUN",,HIRAGANA,,,頑固,がんこ,,ganko,"upór
 uporczywość
 nieustępliwość
 uparty",,,
-,WORD_NOUN,,HIRAGANA,,,原動力,げんどうりょく,,gendouryoku,"siła sprawcza
+17923,WORD_NOUN,,HIRAGANA,,,原動力,げんどうりょく,,gendouryoku,"siła sprawcza
 siła napędowa
 siła motywująca",,,
-,WORD_NOUN,,HIRAGANA,,,援護,えんご,,engo,"osłanianie
+17924,WORD_NOUN,,HIRAGANA,,,援護,えんご,,engo,"osłanianie
 krycie
 opieka
 opiekowanie
 ochrona
 osłanianie
 wspieranie",,,
-,WORD_NOUN,,HIRAGANA,,,最重点,さいじゅうてん,,saijuuten,bardzo ważny punkt,,,
-,WORD_NOUN,,HIRAGANA,,,炊出し,たきだし,,takidashi,"przydział ryżu w czasie nagłego wypadku
+17925,WORD_NOUN,,HIRAGANA,,,最重点,さいじゅうてん,,saijuuten,bardzo ważny punkt,,,
+17926,WORD_NOUN,,HIRAGANA,,,炊出し,たきだし,,takidashi,"przydział ryżu w czasie nagłego wypadku
 dystrybucja ryżu w czasie awaryjnym
 żywienie ryżem w czasie krytycznej sytuacji","np. w czasie wojny, klęski żywiołowej i etc",,
-,WORD_NOUN,,HIRAGANA,,,炊き出し,たきだし,,takidashi,"przydział ryżu w czasie nagłego wypadku
+17927,WORD_NOUN,,HIRAGANA,,,炊き出し,たきだし,,takidashi,"przydział ryżu w czasie nagłego wypadku
 dystrybucja ryżu w czasie awaryjnym
 żywienie ryżem w czasie krytycznej sytuacji",,,
-,WORD_NOUN,,HIRAGANA,,,闘士,とうし,,toushi,"bojownik
+17928,WORD_NOUN,,HIRAGANA,,,闘士,とうし,,toushi,"bojownik
 wojownik
 bokser
 mistrz",,,
-,WORD_NOUN,,KATAKANA,,,-,スナッチ,,sunacchi,"strzęp
+17929,WORD_NOUN,,KATAKANA,,,-,スナッチ,,sunacchi,"strzęp
 urywek
 kęs",ang: snatch,,
-,WORD_NOUN,,KATAKANA,,,-,チン,,chin,chin japoński,rasa psów,,
-,WORD_PARTICULE,,HIRAGANA,,,儘,まま,,mama,"to jest jest
-jak
-jak każdy lubi
-ponieważ",,,17932
-,WORD_PARTICULE,,HIRAGANA,,,儘,まんま,,manma,"to jest jest
-jak
-jak każdy lubi
-ponieważ",,,17931
-,WORD_NOUN,,HIRAGANA,,,早寝,はやね,,hayane,"pójście do łóżka wcześnie
+17930,WORD_NOUN,,KATAKANA,,,-,チン,,chin,chin japoński,rasa psów,,
+17931,WORD_NOUN,,HIRAGANA,,,洗面,せんめん,,senmen,mycie twarzy,,,
+17932,WORD_PARTICULE,,HIRAGANA,,,儘,まんま,,manma,"stan taki, jaki jest
+tak to jest",,,1258
+17933,WORD_NOUN,,HIRAGANA,,,早寝,はやね,,hayane,"pójście do łóżka wcześnie
 pójście wczesne spać",,,
-,WORD_NOUN,,HIRAGANA,,,来訪,らいほう,,raihou,"wizyta
+17934,WORD_NOUN,,HIRAGANA,,,来訪,らいほう,,raihou,"wizyta
 odwiedziny",,,
-,WORD_NOUN,,HIRAGANA,,,休憩所,きゅうけいじょ,,kyuukeijo,"strefa odpoczynku
+17935,WORD_NOUN,,HIRAGANA,,,休憩所,きゅうけいじょ,,kyuukeijo,"strefa odpoczynku
 strefa parkingowa (np. na zjeździe z autostrady)",,,
-,WORD_NOUN,,HIRAGANA,,,後任,こうにん,,kounin,"następca
+17936,WORD_NOUN,,HIRAGANA,,,後任,こうにん,,kounin,"następca
 sukcesor
 dziedzic",,,
-,WORD_NOUN,,HIRAGANA,,,農林,のうりん,,nourin,rolnictwo i leśnictwo,,,
-,WORD_NOUN,,HIRAGANA,,,捜し物,さがしもの,,sagashimono,"szukany przedmiot
+17937,WORD_NOUN,,HIRAGANA,,,農林,のうりん,,nourin,rolnictwo i leśnictwo,,,
+17938,WORD_NOUN,,HIRAGANA,,,捜し物,さがしもの,,sagashimono,"szukany przedmiot
 szukany obiekt",,,
-,WORD_NOUN,,HIRAGANA,,,中日,ちゅうにち,,chuunichi,"Chiny i Japonia
+17939,WORD_NOUN,,HIRAGANA,,,中日,ちゅうにち,,chuunichi,"Chiny i Japonia
 środek dnia",,,
-,WORD_NOUN,,HIRAGANA,,,-,どれでも,,doredemo,"pierwszy z brzegu
+17940,WORD_NOUN,,HIRAGANA,,,-,どれでも,,doredemo,"pierwszy z brzegu
 dowolny",,,
-,WORD_NOUN,,KATAKANA,,,-,バーナー,,baanaa,palnik,,,
-,WORD_PRONOUN,,HIRAGANA,,,私,あたし,,atashi,ja,używane przez kobiety,,
-,WORD_NOUN,,HIRAGANA,,,頭取,とうどり,,toudori,"prezes (banku)
+17941,WORD_NOUN,,KATAKANA,,,-,バーナー,,baanaa,palnik,,,
+17942,WORD_PRONOUN,,HIRAGANA,,,私,あたし,,atashi,ja,używane przez kobiety,,"93
+994"
+17943,WORD_NOUN,,HIRAGANA,,,頭取,とうどり,,toudori,"prezes (banku)
 kierownik pokoju dla aktorów (w teatrze)",,,
-,WORD_NOUN,,HIRAGANA,,,不信任,ふしんにん,,fushinnin,"brak zaufania
+17944,WORD_NOUN,,HIRAGANA,,,不信任,ふしんにん,,fushinnin,"brak zaufania
 brak ufności
 brak wiary",,,
+17945,WORD_NOUN,,HIRAGANA,,,賠償金,ばいしょうきん,,baishoukin,"odszkodowanie
+rekompensata
+reparacja
+zadośćuczynienie",,,
+17946,WORD_NOUN,,HIRAGANA,,,笑み,えみ,,emi,uśmiech,,,
+17947,WORD_NOUN,,HIRAGANA,,,系譜,けいふ,,keifu,"genealogia
+rodowód
+pochodzenie",,,
+17948,WORD_NOUN,,KATAKANA,,,-,スパッツ,,supattsu,"getry
+legginsy
+rajstopy",,,
+17949,WORD_NOUN,,KATAKANA,,,-,ジーン,,jiin,gen,ang: gene,,
