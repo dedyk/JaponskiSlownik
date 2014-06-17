@@ -22008,7 +22008,7 @@ opinia
 sława
 popularność
 w taki sposób
-podobnie jak",,,11988
+podobnie jak",,,11989
 9779,WORD_NOUN,,HIRAGANA,,,驚愕,きょうがく,,kyougaku,"niespodzianka
 przerażenie
 przestraszenie
@@ -26679,16 +26679,17 @@ przypuszczać",,,
 11986,WORD_NOUN,,HIRAGANA,,,蜘蛛の巣,くものす,,kumo no su,pajęczyna,,,
 11987,WORD_VERB_U,,HIRAGANA,,,巣を作る,すをつくる,,su o tsukuru,"zbudować gniazdo
 założyć gniazdo",,,
-11988,WORD_EMPTY,SUFFIX,HIRAGANA,,,-,とおり,,toori,"rodzaj
-gatunek
-klasa
-typ
-w przybliżeniu
-z grubsza
-mniej więcej",,,9778
-11989,WORD_EMPTY,SUFFIX,HIRAGANA,,,-,どおり,,doori,"w ten sposób
+11988,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,によって異なる,によってことなる,,niyotte kotonaru,różni się zależenie od,,,
+11989,WORD_EMPTY,SUFFIX,HIRAGANA,,,通り,どおり,,doori,"w ten sposób
 tak, jak
-zgodnie z",,,
+zgodnie z
+przestrzeganie ...
+mniej więcej
+z grubsza
+około
+... ulica
+... aleja",,,9778
 11990,WORD_EXPRESSION,,HIRAGANA,,,予想通り,よそうどおり,,yosou doori,"tak, jak się spodziewano",,,
 11991,WORD_NOUN,,HIRAGANA,,,積もり,つもり,,tsumori,"zamiar
 zamysł
@@ -41593,14 +41594,8 @@ podniszczony
 zapuszczony",,,
 18119,WORD_NOUN,,HIRAGANA,,,電動,でんどう,,dendou,"elektryczny
 pojazd elektryczny",,,
-18120,WORD_EMPTY,SUFFIX,HIRAGANA,,,通り,どおり,,doori,"w zgodzie z ...
-przestrzeganie ...
-mniej więcej
-z grubsza
-około
-... ulica
-... aleja",,,
-18121,WORD_NOUN,,HIRAGANA,,,-,マントル,,mantoru,płaszcz ziemski,,,
+18120,WORD_NOUN,,HIRAGANA,,,流入,りゅうにゅう,,ryuunyuu,napływ,np. kapitału,,
+18121,WORD_NOUN,,KATAKANA,,,-,マントル,,mantoru,płaszcz ziemski,,,
 18122,WORD_VERB_U,,HIRAGANA,,,落ち合う,おちあう,,ochiau,"spotykać się
 zbierać się
 gromadzić się
@@ -41614,3 +41609,43 @@ być obfity w
 być majętny
 obfitować w
 być obdarzony w",,,
+18127,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,グローバル,,guroobaru,"globalny
+ogólnoświatowy
+światowy",,,
+18128,WORD_NOUN,,HIRAGANA,,,成行き,なりゆき,,nariyuki,"wynik
+rezultat
+postęp
+rozwój
+bieg wydarzeń
+zlecenie maklerskie (skrót)",,,
+18129,WORD_VERB_U,,HIRAGANA,,,押し入る,おしいる,,oshiiru,"wepchnąć się
+wpychać się
+wciskać się",,,
+18130,WORD_NOUN,,HIRAGANA,,,熟練,じゅくれん,,jukuren,"umiejętność
+zręczność
+wprawa
+biegłość",,,
+18131,WORD_NOUN,,HIRAGANA,,,転機,てんき,,tenki,"punkt zwrotny
+przesilenie
+przełom",,,
+18132,WORD_NOUN,,KATAKANA,,,-,ゲル,,geru,"żel
+jurta
+pieniądze",słowo pochodzenia niemieckiego,,
+18133,WORD_NOUN,,KATAKANA,,,-,マスターズゴルフ,,masutaazu gorufu,Masters Tournament,turniej golfowy,,
+18134,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,メカニック,,mekanikku,"mechanik
+mechaniczny",,,
+18135,WORD_NOUN,,HIRAGANA,,,閣内,かくない,,kakunai,"wewnątrz gabinetu
+wewnątrz rządu",,,
+18136,WORD_NOUN,,HIRAGANA,,,高齢者,こうれいしゃ,,koureisha,"stara osoba
+starsza osoba",,,
+18137,WORD_NOUN,,HIRAGANA,,,事業所,じぎょうしょ,,jigyousho,"biuro
+biuro firmy
+zakład
+fabryka",,,
+18138,WORD_NOUN,,HIRAGANA,,,成案,せいあん,,seian,"dokładny plan
+określony plan
+sprecyzowany plan",,,
+18139,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,昼夜,ちゅうや,,chuuya,dzień i noc,,,
