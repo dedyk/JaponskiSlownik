@@ -4442,40 +4442,88 @@ wybawić",
 1510,1,蹂,10,"nadeptać
 przydeptać",
 1511,1,輛,10,klasyfikator na duże pojazdy,
-1512,,迯,10,,
-1513,,逧,10,,
-1514,,邱,10,"---
-岵
-阤",
-1515,,鏤,10,,
-1516,,鐺,10,,
-1517,,鑰,10,,
-1518,,鑷,10,,
+1512,1,迯,10,"zbiegać
+uciekać
+ulatniać się
+unikać
+umykać",
+1513,1,逧,10,"wąwóz
+parów
+dolina
+kotlina",
+1514,1,邱,10,"wzgórze
+pagórek
+górka
+wzniesienie",
+1515,1,鏤,10,"inkrustacja
+montować
+mocować
+instalować
+umieszczać",
+1516,1,鐺,10,"górna część pochwy od broni
+żelazko",
+1517,1,鑰,10,"klucz
+zamek
+zamknięcie",
+1518,1,鑷,10,"rwanie włosów
+wyrywanie włosów
+pinceta
+szczypczyki
+pęsetka",
 1519,1,鑼,10,gong,
-1520,,閂,10,,
-1521,,閔,10,,
-1522,,鞏,10,,
-1523,,鞳,10,,
-1524,,韛,10,,
-1525,,餝,10,,
-1526,,髏,10,"---
-髑",
-1527,,髻,10,,
-1528,,鬩,10,"---
-諍
-咯",
-1529,,魴,10,,
-1530,,鮄,10,,
-1531,,鳫,10,,
-1532,,劭,9,,
-1533,,勳,9,"---
-勛",
-1534,,匈,9,,
-1535,,匝,9,"---
-迴",
-1536,0,吶,9,"bełkot
+1520,1,閂,10,"zapora
+szlaban
+drążek",
+1521,1,閔,10,"być smutny
+smucić się
+trapić
+użalać się",
+1522,1,鞏,10,"mocno
+twardo
+silnie
+stanowczo
+zdecydowanie",
+1523,1,鞳,10,"dudnienie
+bulgotanie
+burczenie",
+1524,1,韛,10,???,
+1525,1,餝,10,"stroić
+ozdabiać
+zdobić
+dekorować
+ornament
+ozdoba",
+1526,1,髏,10,czaszka,
+1527,1,髻,10,samurajski kok,
+1528,1,鬩,10,"kłótnia
+spór
+sprzeczka
+waśń",
+1529,1,魴,10,rodzaj morskiego leszcza,ryba
+1530,1,鮄,10,???,
+1531,1,鳫,10,dzika gęś,
+1532,1,劭,9,"piękny
+wspaniały
+ładny
+polecany
+rekomendowany
+ciężka praca",
+1533,1,勳,9,"chwalebny czyn
+zaleta
+zasługa
+wartość
+ranga",
+1534,1,匈,9,"Węgry
+zgiełk
+zawierucha
+odmęt
+chaos",
+1535,1,匝,9,"krążyć
+obejść
+omijać",
+1536,1,吶,9,"bełkot
 jąkanie",
-1537,0,嗔,9,"być zły
+1537,1,嗔,9,"być zły
 być rozgniewany
 być rozzłoszczony
 być wciekły",
@@ -4577,8 +4625,7 @@ gromadzić",
 1611,,鞁,9,,
 1612,,驥,9,,
 1613,,骰,9,,
-1614,,髑,9,"---
-髏",
+1614,1,髑,9,czaszka,
 1615,,鯏,9,,
 1616,,鼺,9,,
 1617,,佯,8,,
@@ -4814,8 +4861,9 @@ pochlebiać",
 1803,,躱,7,,
 1804,,軛,7,,
 1805,,迢,7,,
-1806,,迴,7,"---
-匝",
+1806,1,迴,7,"krążyć
+obejść
+omijać",
 1807,,逍,7,,
 1808,,逼,7,,
 1809,,酘,7,,
@@ -4990,9 +5038,10 @@ sztandar",
 1946,,蠶,6,,
 1947,,衢,6,,
 1948,,誨,6,,
-1949,,諍,6,"---
-咯
-鬩",
+1949,1,諍,6,"kłótnia
+spór
+sprzeczka
+waśń",
 1950,,諡,6,,
 1951,,讎,6,,
 1952,,谺,6,,
@@ -8184,9 +8233,10 @@ cisza",
 騄",
 4650,0,咮,-,"dziób
 dziobek",
-4651,,咯,-,"---
-諍
-鬩",
+4651,1,咯,-,"kłótnia
+spór
+sprzeczka
+waśń",
 4652,,咭,-,,
 4653,,咪,-,,
 4654,,駪,-,"---
@@ -9207,8 +9257,11 @@ mocny",
 5528,,龞,-,"---
 鱉",
 5529,,勜,-,,
-5530,,勛,-,"---
-勳",
+5530,1,勛,-,"chwalebny czyn
+zaleta
+zasługa
+wartość
+ranga",
 5531,,龖,-,,
 5532,,勔,-,,
 5533,,龔,-,,
@@ -9642,9 +9695,10 @@ zbiegać",
 5894,,醎,-,,
 5895,,釷,-,"---
 鋀",
-5896,,岵,-,"---
-邱
-阤",
+5896,1,岵,-,"wzgórze
+pagórek
+górka
+wzniesienie",
 5897,,岴,-,,
 5898,0,釶,-,halabarda,dwuręczna broń drzewcowa
 5899,,釱,-,,
@@ -10394,9 +10448,10 @@ wspaniały
 6557,,孥,-,,
 6558,,阦,-,,
 6559,,阥,-,,
-6560,,阤,-,"---
-邱
-岵",
+6560,1,阤,-,"wzgórze
+pagórek
+górka
+wzniesienie",
 6561,,阢,-,,
 6562,,孯,-,,
 6563,,阬,-,,
