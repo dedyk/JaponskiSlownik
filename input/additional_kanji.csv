@@ -4527,33 +4527,82 @@ jąkanie",
 być rozgniewany
 być rozzłoszczony
 być wciekły",
-1538,,嚮,9,,
-1539,,坎,9,,
-1540,,壅,9,,
-1541,,媼,9,,
-1542,,嬲,9,,
-1543,,寐,9,,
+1538,1,嚮,9,"bezpośrednio
+prosto
+przysługa
+łaska
+kierować
+prowadzić
+pochylać się do
+chylić się do",
+1539,1,坎,9,"pułapka
+niebezpieczeństwo
+problem
+kłopot",
+1540,1,壅,9,"zatykać
+zamknąć się",
+1541,1,媼,9,"babcia
+matka
+starsza kobieta",
+1542,1,嬲,9,"wyśmiać
+kpić
+drwić
+drażnić
+dokuczać
+droczyć",
+1543,1,寐,9,"sen
+spanie",
 1544,1,崑,9,nazwa miejsca,
-1545,,嵒,9,,
-1546,,幄,9,"---
-幔
-幮
-幨
-笰",
-1547,,憚,9,,
-1548,,戝,9,,
-1549,,摧,9,,
-1550,,攸,9,,
-1551,,朏,9,,
+1545,1,嵒,9,"skała
+kamień
+głaz",
+1546,1,幄,9,"kurtyna
+zasłona
+kotara
+firanka",
+1547,1,憚,9,"strach
+bojaźń
+obawa
+lęk
+wahanie się
+cofać się",
+1548,1,戝,9,"pirat
+złodziej",
+1549,1,摧,9,"łamać
+złamać
+stłuc
+rozbić
+miażdżyć
+kruszyć
+znajomy
+poufały
+znany
+popularny",
+1550,1,攸,9,"spokojny
+zrelaksowany
+wypoczęty
+miejsce",
+1551,1,朏,9,"księżyc między nowiem a pierwszą lub trzecią kwadrą
+księżyc w kształcie rogala",
 1552,1,桷,9,krokiew,
-1553,0,楝,9,miodla,gatunek drzewa
-1554,,榿,9,,
-1555,,槭,9,,
-1556,,樓,9,,
-1557,,殃,9,,
-1558,,涔,9,,
-1559,,渙,9,,
-1560,,湃,9,,
+1553,1,楝,9,miodla,gatunek drzewa
+1554,1,榿,9,"olsza
+olcha",rodzaj drzew i krzewów z rodziny brzozowatych
+1555,1,槭,9,drzewo klonu,
+1556,1,樓,9,wieża,
+1557,1,殃,9,"klęska
+katastrofa
+kataklizm
+nieszczęście",
+1558,1,涔,9,"mroczny strumień
+mroczny potok
+rzeka w Shaanxi",
+1559,1,渙,9,"rozrzucać
+rozpraszać
+rozproszyć
+rozsypać
+rozwiać",
+1560,1,湃,9,dźwięk fal,
 1561,,湟,9,,
 1562,,煖,9,"---
 昫
@@ -6250,11 +6299,10 @@ wielki",
 2945,,帋,1,,
 2946,,帙,1,,
 2947,,幃,1,,
-2948,,幔,1,"---
-幄
-幮
-幨
-笰",
+2948,1,幔,1,"kurtyna
+zasłona
+kotara
+firanka",
 2949,,幵,1,"---
 并",
 2950,,庾,1,,
@@ -9999,11 +10047,10 @@ rydel",
 釓",
 6165,,幰,-,,
 6166,,錳,-,,
-6167,,幮,-,"---
-幔
-幄
-幨
-笰",
+6167,,幮,-,"kurtyna
+zasłona
+kotara
+firanka",
 6168,,幭,-,"---
 罨",
 6169,,幬,-,,
@@ -10012,11 +10059,10 @@ rydel",
 帮",
 6172,,幪,-,,
 6173,,錪,-,,
-6174,,幨,-,"---
-幔
-幄
-幮
-笰",
+6174,1,幨,-,"kurtyna
+zasłona
+kotara
+firanka",
 6175,,錥,-,,
 6176,,錤,-,"---
 耨
@@ -13110,11 +13156,10 @@ bambusowy kosz",
 8855,,笯,-,,
 8856,,笮,-,,
 8857,,笭,-,,
-8858,,笰,-,"---
-幔
-幄
-幮
-幨",
+8858,1,笰,-,"kurtyna
+zasłona
+kotara
+firanka",
 8859,,笱,-,,
 8860,,笴,-,,
 8861,,笿,-,,
