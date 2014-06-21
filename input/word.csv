@@ -293,7 +293,7 @@ Genki kanji 2-21",,妹,いもうと,,imouto,siostra,"własna rodzina, młodsza",
 Genki 1-7
 Genki kanji 2-21",,弟,おとうと,,otouto,brat,"własna rodzina, młodszy",,
 124,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,これ,,kore,ten,blisko mówcy,,
-125,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,それ,,sore,ten,blisko osoby docelowej,,
+125,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,其れ,それ,,sore,ten,blisko osoby docelowej,,
 126,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,あれ,,are,"tam
 tamten
 tamta",daleko od mówcy i osoby docelowej,,
@@ -306,7 +306,7 @@ tamten",daleko od mówcy i osoby docelowej (z rzeczownikiem),,68
 131,WORD_ASK,,HIRAGANA,Genki 1-2,,-,どの,,dono,"który
 jaki",z rzeczownikiem,,5639
 132,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,此処,ここ,,koko,tam,"miejsce, blisko mówcy",,
-133,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,そこ,,soko,tam,"miejsce, blisko osoby docelowej",,7008
+133,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,其処,そこ,,soko,tam,"miejsce, blisko osoby docelowej",,7008
 134,WORD_THAT_POINT,,HIRAGANA,Genki 1-2,,-,あそこ,,asoko,tam,"miejsce, daleko od mówcy i osoby docelowej",,
 135,WORD_ASK,,HIRAGANA,Genki 1-2,,-,どこ,,doko,gdzie,miejsce,,
 136,WORD_ASK,,HIRAGANA,Genki 1-2,,誰,だれ,,dare,"kto
@@ -14399,7 +14399,12 @@ klasyfikacja",,,
 6197,WORD_NOUN,,HIRAGANA,,,等差,とうさ,,tousa,różnica,,,
 6198,WORD_NOUN,,HIRAGANA,,,等分,とうぶん,,toubun,"dzielenie na równe części
 równe części",,,
-6199,WORD_ADJECTIVE_NA,,HIRAGANA,,,等閑,とうかん,,toukan,niedbałość,,,
+6199,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,等閑,とうかん,,toukan,"niedbalstwo
+niedbałość
+zaniedbanie
+lekceważenie
+bagatelizowanie",,,18240
 6200,WORD_NOUN,,HIRAGANA,,,華,はな,,hana,kwiat,,,
 6201,WORD_ADJECTIVE_NA,,HIRAGANA,,,華やか,はなやか,,hanayaka,"barwny
 jaskrawy
@@ -41950,3 +41955,44 @@ zakłopotanie",,,
 18235"
 18235,WORD_NOUN,,HIRAGANA,,,軍兵,ぐんびょう,,gunbyou,siły zbrojne,,,"18233
 18234"
+18236,WORD_NOUN,,KATAKANA,,,-,ツーリング,,tsuuringu,"zwiedzanie
+krajoznawstwo",ang: touring,,
+18237,WORD_NOUN,,KATAKANA,,,-,マルク,,maruku,marki,waluta,,
+18238,WORD_NOUN,,HIRAGANA,,,寅,とら,,tora,"trzeci znak w horoskopie chińskim
+znak tygrysa",,,
+18239,WORD_NOUN,,HIRAGANA,,,溶液,ようえき,,youeki,płynny roztwór,,,
+18240,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,等閑,なおざり,,naozari,"niedbalstwo
+niedbałość
+zaniedbanie
+lekceważenie
+bagatelizowanie",,,6199
+18241,WORD_NOUN,,HIRAGANA,,,議院運営委員会,ぎいんうんえいいいんかい,,giin' un'eiiinkai,Komisja ds. Przepisów i Administracji,,,
+18242,WORD_NOUN,,HIRAGANA,,,保養所,ほようじょ,,hoyoujo,"sanatorium
+dom spokojnej starości",,,18243
+18243,WORD_NOUN,,HIRAGANA,,,保養所,ほようしょ,,hoyousho,"sanatorium
+dom spokojnej starości",,,18242
+18244,WORD_NOUN,,HIRAGANA,,,利殖,りしょく,,rishoku,"przynoszenie zysku
+robienie pieniędzy",,,
+18245,WORD_ADJECTIVE_I,,HIRAGANA,,,堪らない,たまらない,,tamaranai,"nieznośny
+niedopuszczalny
+niemożliwy",,,
+18246,WORD_NOUN,,HIRAGANA,,,速力,そくりょく,,sokuryoku,"prędkość
+szybkość",,,
+18247,WORD_VERB_U,,HIRAGANA,,,切り離す,きりはなす,,kirihanasu,"oddzielać
+odłączać
+odrywać
+ścinać
+uwolnić
+puszczać
+podzielić
+dzielić
+ćwiartować",,,
+18248,WORD_NOUN,,HIRAGANA,,,積み立て,つみたて,,tsumitate,"oszczędności
+akumulacja
+odkładanie na bok
+rezerwowanie",,,
+18249,WORD_NOUN,,HIRAGANA,,,肉眼,にくがん,,nikugan,nagie oko,,,
+18250,WORD_NOUN,,HIRAGANA,,,重態,じゅうたい,,juutai,"poważna choroba
+poważny stan
+krytyczny stan",,,
