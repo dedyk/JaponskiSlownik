@@ -5334,13 +5334,31 @@ wróżbita
 medium",
 1798,1,諂,7,"schlebiać
 pochlebiać",
-1799,,譯,7,,
-1800,,貍,7,,
-1801,,跏,7,,
-1802,,踠,7,,
-1803,,躱,7,,
-1804,,軛,7,,
-1805,,迢,7,,
+1799,1,譯,7,"dekodować
+rozszyfrować
+kodować
+zaszyfrować
+tłumaczyć",
+1800,1,貍,7,tanuki,japońska nazwa zwierzęcia należącego do rodziny psowatych
+1801,1,跏,7,siedzenie w pozycji lotosu,
+1802,1,踠,7,"być niecierpliwy
+walka
+zmaganie
+batalia
+pisać",
+1803,1,躱,7,"unikać
+omijać
+odparować
+parować
+odpierać",
+1804,1,軛,7,"jarzmo
+nosidło
+niewola
+brzemię",
+1805,1,迢,7,"daleko
+odległy
+daleki
+oddalony",
 1806,1,迴,7,"krążyć
 obejść
 omijać",
@@ -5360,27 +5378,56 @@ popędzać",
 1809,1,酘,7,"fermentować
 warzyć",
 1810,1,鈕,7,guzik,
-1811,,銓,7,,
-1812,,銹,7,,
-1813,,陌,7,,
-1814,,雕,7,,
-1815,,雖,7,,
-1816,,雹,7,,
-1817,,霏,7,,
-1818,,霓,7,"---
-蝃
-蝀
-螮",
-1819,,頗,7,,
-1820,,顋,7,,
-1821,,顏,7,,
-1822,,飫,7,,
-1823,0,馥,7,"perfumy
+1811,1,銓,7,"miara
+mierzyć
+skala
+waga
+ważyć",
+1812,1,銹,7,"rdza
+korozja
+plama
+skaza",
+1813,1,陌,7,"wschodnio-zachodnia ścieżka pomiędzy polami ryżowymi
+droga",
+1814,1,雕,7,rzeźba,
+1815,1,雖,7,"chociaż
+aczkolwiek
+jakkolwiek
+jednak",
+1816,1,雹,7,grad,
+1817,1,霏,7,padający deszcz lub śnieg,
+1818,1,霓,7,tęcza,
+1819,1,頗,7,"nadzwyczajne
+niezwykle
+uprzedzony
+nieprzychylny
+stronniczy
+tendencyjny",
+1820,1,顋,7,"skrzela
+szczęka
+paszcza
+dolna część twarzy",
+1821,1,顏,7,"wyrażenie
+ekspresja
+twarz
+wyraz twarzy
+oblicze
+wizerunek",
+1822,1,飫,7,"przesyt
+sytość
+nasycenie",
+1823,1,馥,7,"perfumy
 pachnidło
 zapach",
-1824,,鬆,7,,
-1825,,鬣,7,"---
-騣",
+1824,1,鬆,7,"dziura w rozgotowanej rzodkiewi japońskiej
+por
+otworek
+dziurka
+rozczochrany
+luźny
+swobodny",
+1825,1,鬣,7,"grzywa
+lwia grzywa",
 1826,,鵆,7,,
 1827,,鵐,7,,
 1828,,麋,7,,
@@ -8350,14 +8397,8 @@ papugować
 błaznować",
 4345,,蝘,-,,
 4346,,蝝,-,,
-4347,,蝃,-,"---
-蝀
-螮
-霓",
-4348,,蝀,-,"---
-蝃
-螮
-霓",
+4347,1,蝃,-,tęcza,
+4348,1,蝀,-,tęcza,
 4349,,蝅,-,,
 4350,0,蝍,-,pareczniki,gromada stawonogów zaliczanych do wijów
 4351,,蜲,-,,
@@ -8417,10 +8458,7 @@ błaznować",
 4396,,螱,-,,
 4397,,螭,-,,
 4398,,螬,-,,
-4399,,螮,-,"---
-蝃
-蝀
-霓",
+4399,1,螮,-,tęcza,
 4400,,螧,-,,
 4401,,螣,-,,
 4402,,螞,-,,
@@ -8980,8 +9018,8 @@ wąsy",
 4871,,坥,-,,
 4872,,坧,-,,
 4873,,騤,-,,
-4874,,騣,-,"---
-鬣",
+4874,1,騣,-,"grzywa
+lwia grzywa",
 4875,,騢,-,"---
 騵",
 4876,,坢,-,,
