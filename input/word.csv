@@ -28368,12 +28368,13 @@ odpadki",,,
 12962,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,九箱,きゅうはこ,,kyuuhako,dziewięć,pudełka,,
 12963,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,十箱,じゅっぱこ,,juppako,dziesięć,pudełka,,
 12964,WORD_COUNTERS,,HIRAGANA,Klasyfikatory,,何箱,なんはこ,,nanhako,jak wiele,pudełka,,
-12965,WORD_PARTICULE,,HIRAGANA,,,-,ばっかり,,bakkari,"około
-mniej więcej
+12965,WORD_PARTICULE,,HIRAGANA,,,許り,ばっかり,,bakkari,"w przybliżeniu
+około
+orientacyjnie
 tylko
 jedynie
-dopiero co
-właśnie",,,
+zaledwie
+właśnie (coś zrobić, używane po formie prostej czasownika w czasie przeszłym)",,,13598
 12966,WORD_NOUN,,HIRAGANA,,,電話番号,でんわばんごう,,denwa bangou,numer telefonu,,,
 12967,WORD_VERB_RU,,HIRAGANA,,,番号をつける,ばんごうをつける,,bangou o tsukeru,ponumerować,,,
 12968,WORD_NOUN,,HIRAGANA_KATAKANA,,,ラジオ番組,ラジオばんぐみ,,rajio bangumi,program radiowy,,,
@@ -29204,11 +29205,17 @@ podburzać",,,
 13596,WORD_PARTICULE,,HIRAGANA,,,-,に,,ni,"na
 w",,,"3
 7574
-10445"
+10445
+18399"
 13597,WORD_PARTICULE,,HIRAGANA_EXCEPTION,,,-,ては,,te wa,[partykuła używana do przekształcenia frazy czasownika w temat zdania],,,
-13598,WORD_PARTICULE,,HIRAGANA,,,-,ばかり,,bakari,"około
+13598,WORD_PARTICULE,,HIRAGANA,,,許り,ばかり,,bakari,"w przybliżeniu
+około
+orientacyjnie
 tylko
-dopiero co",,,
+jedynie
+zaledwie
+dopiero co
+właśnie (coś zrobić, używane po formie prostej czasownika w czasie przeszłym)",,,12965
 13599,WORD_PARTICULE,,HIRAGANA,,,-,と,,to,"z
 wraz
 razem",,,"374
@@ -42453,7 +42460,7 @@ przyjazny
 przyjazny
 życzliwy",,,
 18399,WORD_NOUN,,HIRAGANA,,,丹,に,,ni,"czerwona ziemia
-cynober",,,
+cynober",,,13596
 18400,WORD_NOUN,,HIRAGANA_KATAKANA,,,女のコ,おんなのコ,,onna no ko,dziewczyna,,,
 18401,WORD_NOUN,,HIRAGANA,,,栄冠,えいかん,,eikan,"laury
 girlanda
@@ -42463,7 +42470,7 @@ otwarty
 bezpośredni
 zwięzły
 treściwy",,,
-18403,WORD_NOUN,,KATAKANA,,,-,プロデュース,,puroduusu,"produkcja
+18403,WORD_NOUN,,KATAKANA,,,-,プロデュース,,purodyuusu,"produkcja
 produkowanie (filmu, muzyki i etc)
 projektowanie (np. nowego komercyjnego produktu)",,,
 18404,WORD_NOUN,,KATAKANA,,,-,ベビーシッター,,bebii shittaa,"opiekunka do dziecka
@@ -42485,3 +42492,20 @@ intryga
 intrygowanie
 konspiracja
 konspirowanie",,,
+18408,WORD_NOUN,,KATAKANA,,,-,カリキュラム,,karikyuramu,program nauczania,ang: curriculum,,
+18409,WORD_VERB_IRREGULAR,,HIRAGANA,,,休する,きゅうする,,kyuu suru,"dojść do końca
+odpoczywać
+spoczywać
+wypoczywać",,,
+18410,WORD_NOUN,,HIRAGANA,,,十八番,じゅうはちばん,,juuhachi ban,"osiemnasty numer
+repertuar osiemnastu aktorów teatru kabuki (skrót)
+własny ulubiony wyczyn
+własna specjalność",,,18411
+18411,WORD_NOUN,,HIRAGANA,,,十八番,おはこ,,ohako,"własny ulubiony wyczyn
+własna specjalność",,,18410
+18412,WORD_NOUN,,HIRAGANA,,,健康食品,けんこうしょくひん,,kenkou shokuhin,zdrowe jedzenie,,,
+18413,WORD_NOUN,,KATAKANA,,,-,ボイラー,,boiraa,"bojler
+kocioł",,,13598
+18414,WORD_NOUN,,HIRAGANA,,,診療,しんりょう,,shin'ryou,"badanie lekarskie i leczenie szpitalne
+diagnoza
+rozpoznanie",,,
