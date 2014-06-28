@@ -1,14 +1,9 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.common.Validator;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
+import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
 public class Test {
 
@@ -166,6 +161,7 @@ public class Test {
 		System.out.println(list);
 		*/
 		
+		/*
 		KanaHelper kanaHelper = new KanaHelper();
 
 		//String word = "ハーモニカをふく";
@@ -202,5 +198,10 @@ public class Test {
 
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, null, null);
+		*/
+		
+		List<RadicalInfo> radicalList = KanjiDic2Reader.readRadkfile("../JapaneseDictionary_additional/radkfile");
+		
+		radicalList.getClass();		
 	}
 }

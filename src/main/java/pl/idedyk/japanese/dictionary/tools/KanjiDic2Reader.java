@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import org.dom4j.Document;
 import org.dom4j.Element;
@@ -19,7 +20,12 @@ import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 
 public class KanjiDic2Reader {
 	
+	private static Map<String, String> radicalToCorrectRadical = null;
+	private static Map<String, String> radicalCodeToCorrectRadical = null;
+	
 	public static Map<String, List<String>> readKradFile(String fileName) throws Exception {
+		
+		createRadicalToCorrectRadicalMapIfNeeded();
 		
 		Map<String, List<String>> result = new HashMap<String, List<String>>();
 		
@@ -42,9 +48,23 @@ public class KanjiDic2Reader {
 			
 			String[] radicalsSplited = radicals.split(" ");
 			
-			List<String> radicalsList = Arrays.asList(radicalsSplited);			
+			List<String> radicalsList = Arrays.asList(radicalsSplited);
 			
-			result.put(kanji, radicalsList);
+			List<String> mappedRadicalsList = new ArrayList<String>();
+			
+			for (String currentRadical : radicalsList) {
+				
+				String mappedRadicalException = radicalToCorrectRadical.get(currentRadical);
+				
+				if (mappedRadicalException == null) {					
+					mappedRadicalsList.add(currentRadical);
+					
+				} else {
+					mappedRadicalsList.add(mappedRadicalException);
+				}
+			}
+			
+			result.put(kanji, mappedRadicalsList);
 		}
 		
 		reader.close();
@@ -53,6 +73,8 @@ public class KanjiDic2Reader {
 	}
 	
 	public static Map<String, KanjiDic2Entry> readKanjiDic2(String fileName, Map<String, List<String>> kradFileMap) throws Exception {
+		
+		createRadicalToCorrectRadicalMapIfNeeded();
 		
 		Map<String, KanjiDic2Entry> result = new HashMap<String, KanjiDic2Entry>();
 		
@@ -108,7 +130,24 @@ public class KanjiDic2Reader {
         	List<String> radicals = kradFileMap.get(kanji);
         	
         	if (radicals == null) {
-        		radicals = new ArrayList<String>();        		
+        		radicals = new ArrayList<String>();
+        		
+        	} else {
+    			List<String> mappedRadicalsList = new ArrayList<String>();
+    			
+    			for (String currentRadical : radicals) {
+    				
+    				String mappedRadicalException = radicalToCorrectRadical.get(currentRadical);
+    				
+    				if (mappedRadicalException == null) {					
+    					mappedRadicalsList.add(currentRadical);
+    					
+    				} else {
+    					mappedRadicalsList.add(mappedRadicalException);
+    				}
+    			}
+
+    			radicals = mappedRadicalsList;
         	}
         	
         	kanjiDic2Entry.setRadicals(radicals);
@@ -154,6 +193,8 @@ public class KanjiDic2Reader {
 
 	public static List<RadicalInfo> readRadkfile(String radkFile) throws IOException {
 		
+		createRadicalToCorrectRadicalMapIfNeeded();
+				
 		List<RadicalInfo> result = new ArrayList<RadicalInfo>();
 		
 		BufferedReader reader = new BufferedReader(new FileReader(radkFile));
@@ -178,6 +219,21 @@ public class KanjiDic2Reader {
 				String radical = lineSplited[1];
 				String strokeCountString = lineSplited[2];
 				
+				if (lineSplited.length > 3) {
+					String mappedRadicalCode = lineSplited[3];
+					
+					String mappedRadical = radicalCodeToCorrectRadical.get(mappedRadicalCode);
+					
+					if (mappedRadical == null) {
+						
+						reader.close();
+						
+						throw new RuntimeException("RadicalExceptionMap null: " + mappedRadicalCode);
+					}
+					
+					radical = mappedRadical;
+				}
+				
 				RadicalInfo newRadicalInfo = new RadicalInfo();
 				
 				newRadicalInfo.setId(id);
@@ -193,5 +249,43 @@ public class KanjiDic2Reader {
 		reader.close();
 		
 		return result;
+	}
+	
+	private static void createRadicalToCorrectRadicalMapIfNeeded() {
+		
+		if (radicalToCorrectRadical != null && radicalCodeToCorrectRadical != null) {
+			return;
+		}
+		
+		radicalToCorrectRadical = new TreeMap<String, String>();
+		radicalCodeToCorrectRadical = new TreeMap<String, String>();
+		
+		addRadicalToCorrectRadicalMaps("刈","3331","刂");
+		addRadicalToCorrectRadicalMaps("滴","3557","啇");
+		addRadicalToCorrectRadicalMaps("忙","3D38","忄");
+		addRadicalToCorrectRadicalMaps("扎","3F37","扌");
+		addRadicalToCorrectRadicalMaps("汁","4653","氵");
+		addRadicalToCorrectRadicalMaps("杰","4944","灬");
+		addRadicalToCorrectRadicalMaps("犯","4A6D","犭");
+		addRadicalToCorrectRadicalMaps("疔","4D46","疒");
+		addRadicalToCorrectRadicalMaps("礼","504B","礻");
+		addRadicalToCorrectRadicalMaps("禹","5072","禸");
+		addRadicalToCorrectRadicalMaps("買","5474","罒");
+		addRadicalToCorrectRadicalMaps("初","5C33","衤");
+		addRadicalToCorrectRadicalMaps("込","6134","辶");
+		addRadicalToCorrectRadicalMaps("化","js01","亻");
+		addRadicalToCorrectRadicalMaps("个","js02","个"); // brak znaku w utf8
+		addRadicalToCorrectRadicalMaps("艾","js03","艹");
+		addRadicalToCorrectRadicalMaps("尚","js04","⺌");
+		addRadicalToCorrectRadicalMaps("老","js05","耂");
+		addRadicalToCorrectRadicalMaps("并","js07","丷");
+		addRadicalToCorrectRadicalMaps("阡","kozatoL","阝←");
+		addRadicalToCorrectRadicalMaps("邦","kozatoR","→阝");		
+	}
+	
+	private static void addRadicalToCorrectRadicalMaps(String radical, String radicalCode, String correctRadical) {
+		
+		radicalToCorrectRadical.put(radical, correctRadical);
+		radicalCodeToCorrectRadical.put(radicalCode, correctRadical);
 	}
 }
