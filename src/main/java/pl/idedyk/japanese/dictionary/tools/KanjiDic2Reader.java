@@ -276,11 +276,11 @@ public class KanjiDic2Reader {
 		addRadicalToCorrectRadicalMaps("化","js01","亻");
 		addRadicalToCorrectRadicalMaps("个","js02","个"); // brak znaku w utf8
 		addRadicalToCorrectRadicalMaps("艾","js03","艹");
-		addRadicalToCorrectRadicalMaps("尚","js04","⺌");
+		addRadicalToCorrectRadicalMaps("尚","js04","尚"); // ⺌ - niepoprawne wyswietlanie znaku w utf8
 		addRadicalToCorrectRadicalMaps("老","js05","耂");
 		addRadicalToCorrectRadicalMaps("并","js07","丷");
-		addRadicalToCorrectRadicalMaps("阡","kozatoL","阝←");
-		addRadicalToCorrectRadicalMaps("邦","kozatoR","→阝");		
+		addRadicalToCorrectRadicalMaps("阡","kozatoL","阝_");
+		addRadicalToCorrectRadicalMaps("邦","kozatoR","_阝");		
 	}
 	
 	private static void addRadicalToCorrectRadicalMaps(String radical, String radicalCode, String correctRadical) {
