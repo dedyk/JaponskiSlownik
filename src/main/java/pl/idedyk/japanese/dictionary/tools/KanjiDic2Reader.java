@@ -274,11 +274,11 @@ public class KanjiDic2Reader {
 		addRadicalToCorrectRadicalMaps("初","5C33","衤");
 		addRadicalToCorrectRadicalMaps("込","6134","辶");
 		addRadicalToCorrectRadicalMaps("化","js01","亻");
-		//addRadicalToCorrectRadicalMaps("个","js02","𠆢"); // znak U+201A2 (daszek)
-		addRadicalToCorrectRadicalMaps("个","js02","个"); // brak znaku w utf8
+		addRadicalToCorrectRadicalMaps("个","js02","𠆢"); // znak U+201A2 (daszek)
+		//addRadicalToCorrectRadicalMaps("个","js02","个"); // brak znaku w utf8
 		addRadicalToCorrectRadicalMaps("艾","js03","艹");
-		//addRadicalToCorrectRadicalMaps("尚","js04","⺌");
-		addRadicalToCorrectRadicalMaps("尚","js04","尚"); // ⺌ - niepoprawne wyswietlanie znaku w utf8
+		addRadicalToCorrectRadicalMaps("尚","js04","⺌");
+		//addRadicalToCorrectRadicalMaps("尚","js04","尚"); // ⺌ - niepoprawne wyswietlanie znaku w utf8
 		addRadicalToCorrectRadicalMaps("老","js05","耂");
 		addRadicalToCorrectRadicalMaps("并","js07","丷");
 		addRadicalToCorrectRadicalMaps("阡","kozatoL","阝_"); // brak znaku w utf8
