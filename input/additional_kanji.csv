@@ -6806,49 +6806,114 @@ wyraźny
 przejrzysty",
 2246,1,盒,4,"osłonięte naczynie
 osłonięty sprzęt",
-2247,,礑,4,,
-2248,,窖,4,,
-2249,,窗,4,,
-2250,,窠,4,,
-2251,,筯,4,,
-2252,,簣,4,,
-2253,,簳,4,,
-2254,,粢,4,,
-2255,,糜,4,,
-2256,,紆,4,"---
-跧",
-2257,,絎,4,,
-2258,,緤,4,,
-2259,,縡,4,,
+2247,1,礑,4,"raptem
+nagle
+niespodziewanie
+huk
+uderzenie
+wystrzał
+klaps
+trzepnięcie
+klepnięcie
+podstawa
+baza
+podłoże
+dno
+dół
+spód",
+2248,1,窖,4,piwnica,
+2249,1,窗,4,"szyba
+tafla
+okno
+witryna",
+2250,1,窠,4,"jaskinia
+jama
+nora
+wgłębienie
+gniazdo",
+2251,1,筯,4,"pałeczki (do jedzenia)
+szczypce
+cęgi",
+2252,1,簣,4,koszyk do noszenia ziemi,
+2253,1,簳,4,trzon strzały,
+2254,1,粢,4,"proso
+jagła
+ciastko ryżowe",
+2255,1,糜,4,"być rozgorączkowany
+być rozpalony",
+2256,1,紆,4,"kucać
+przykucać
+przysiad",
+2257,1,絎,4,"ślepy ścieg
+ślepy szew",
+2258,1,緤,4,"smycz
+uwieź",
+2259,1,縡,4,"oddech
+życie",
 2260,1,繧,4,"metoda farbowania
 metoda barwienia",
-2261,,罧,4,,
-2262,,罩,4,,
-2263,,羂,4,,
-2264,,羗,4,,
-2265,,翊,4,,
+2261,1,罧,4,wabienie ryby ogniskiem,
+2262,1,罩,4,koszyk na ryby trzymany w wodzie,
+2263,1,羂,4,"pułapka
+sidło
+potrzask
+zasadzka",
+2264,1,羗,4,"wykształcony
+uparty
+uporczywy
+zawzięty
+partykuła
+plemię w zachodnich Chinach",
+2265,1,翊,4,"pomaganie
+asystowanie
+wspieranie
+wspomaganie
+szanowanie
+respektowanie
+poważanie
+latanie
+pilotaż
+fruwanie",
 2266,1,翕,4,"zbierać
 gromadzić",
-2267,,肓,4,,
-2268,,胛,4,"---
-髆",
-2269,,脉,4,,
-2270,,膓,4,,
-2271,,舮,4,,
-2272,,荀,4,,
-2273,,莽,4,,
-2274,0,萇,4,rodzaj rośliny,
-2275,0,葷,4,czosnek,
-2276,,蒭,4,,
+2267,1,肓,4,akupunktura,
+2268,1,胛,4,łopatka,część ciała
+2269,1,脉,4,"nadzieja
+puls
+tętno
+żyła",
+2270,1,膓,4,"jelito
+kiszka
+flak
+wnętrzności",
+2271,1,舮,4,dziób okrętu,
+2272,1,荀,4,"nazwa własna
+rodzaj rośliny",
+2273,1,莽,4,"trawa
+trawiaste pole",
+2274,1,萇,4,rodzaj rośliny,
+2275,1,葷,4,czosnek,
+2276,1,蒭,4,"pasza
+siano
+cięcie trawy",
 2277,1,藋,4,-,
-2278,,蘞,4,,
-2279,,蚩,4,,
+2278,1,蘞,4,dzika winorośl,
+2279,1,蚩,4,"głupiec
+głupek
+błazen
+robienie głupka z",
 2280,1,蠎,4,"boa dusiciel
 pyton",
-2281,,衫,4,,
-2282,,袞,4,,
-2283,,裲,4,,
-2284,,覃,4,,
+2281,1,衫,4,cienkie kimono,
+2282,1,袞,4,cesarska szata,
+2283,1,裲,4,starożytna suknia,
+2284,1,覃,4,"głęboki
+duży
+wielki
+przedłużać
+rozciągać
+rozszerzać
+powiększać",
 2285,1,覊,4,"połączenie
 związek
 powiązanie
@@ -6856,15 +6921,27 @@ więź
 układ
 cugle
 lejce",
-2286,,覿,4,,
-2287,,誄,4,,
-2288,,誣,4,"---
-譖",
-2289,,謫,4,,
-2290,,讌,4,,
-2291,,賁,4,,
-2292,,賈,4,,
-2293,,赧,4,,
+2286,1,覿,4,"spotkanie
+widzenie",
+2287,1,誄,4,kondolencje,
+2288,1,誣,4,"oszczerstwo
+zniesławienie
+pomówienie",
+2289,1,謫,4,"przestępstwo
+zbrodnia",
+2290,1,讌,4,"bankiet
+biesiada
+uczta
+przyjęcie",
+2291,1,賁,4,"ozdabiać
+dekorować
+zdobić",
+2292,1,賈,4,"kupować
+nabywać
+handlowiec
+handlarz
+kupiec",
+2293,1,赧,4,stawać się czerwony,
 2294,,跑,4,,
 2295,,蹶,4,"---
 跌
@@ -8234,8 +8311,9 @@ wymioty",
 3401,1,譞,-,-,
 3402,1,譓,-,-,
 3403,1,譒,-,-,
-3404,,譖,-,"---
-誣",
+3404,1,譖,-,"oszczerstwo
+zniesławienie
+pomówienie",
 3405,,譔,-,,
 3406,,誶,-,,
 3407,1,誷,-,-,
@@ -8346,8 +8424,9 @@ wymioty",
 3509,,跬,-,,
 3510,,跥,-,,
 3511,,跤,-,,
-3512,,跧,-,"---
-紆",
+3512,1,跧,-,"kucać
+przykucać
+przysiad",
 3513,1,跽,-,-,
 3514,,跴,-,,
 3515,1,跰,-,-,
@@ -9821,8 +9900,7 @@ nieprzyzwoity",
 4806,,垃,-,,
 4807,,髃,-,,
 4808,1,垁,-,-,
-4809,,髆,-,"---
-胛",
+4809,1,髆,-,łopatka,część ciała
 4810,,髈,-,,
 4811,,垉,-,,
 4812,,髎,-,,
