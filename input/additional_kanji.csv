@@ -7586,61 +7586,119 @@ zdychać",
 2510,1,蚶,3,mięczak,
 2511,1,蜃,3,małż,
 2512,1,衄,3,krwawienia z nosa,
-2513,,衵,3,,
-2514,,袙,3,,
-2515,,裄,3,,
-2516,,裝,3,,
-2517,,觸,3,,
-2518,,詈,3,"---
-詬",
-2519,,諚,3,,
-2520,0,謐,3,"spokój
+2513,1,衵,3,"codzienne ubranie
+bielizna",
+2514,1,袙,3,przepaska wojownika,
+2515,1,裄,3,długość rękawa,
+2516,1,裝,3,"przebranie
+kamuflaż
+strój
+ubiór
+udawanie
+symulowanie
+wyznawanie
+twierdzenie",
+2517,1,觸,3,"ogłaszać
+zapowiadać
+obwieszać
+proklamować
+konflikt
+kolizja
+starcie
+zatarg
+kontakt
+styczność
+trafienie
+uderzenie
+czuć
+odczuwać
+dotykać",
+2518,1,詈,3,"ośmieszać
+wyśmiewać
+wyśmiać
+wykpiwać
+kpić",
+2519,1,諚,3,"rozkazywać
+dowodzić
+kazać",
+2520,1,謐,3,"spokój
 cisza",
-2521,,謦,3,,
+2521,1,謦,3,"kaszleć
+kasłać",
 2522,1,譃,3,-,
-2523,,賺,3,,
-2524,,跚,3,,
-2525,,跼,3,,
-2526,,踐,3,,
-2527,,踝,3,,
-2528,,踪,3,,
-2529,,蹋,3,,
-2530,,蹕,3,,
-2531,,蹣,3,,
-2532,,蹼,3,,
+2523,1,賺,3,"zachęcać
+namawiać
+skłaniać
+nakłonić",
+2524,1,跚,3,"rolka
+szpulka
+zataczać się
+chwiać się
+potykać się",
+2525,1,跼,3,"pochylać się
+ukłon
+pokłon
+kucać
+przykucać
+przysiadać
+schylać się",
+2526,1,踐,3,"przeprowadzić
+realizować
+wykonywać
+deptać
+zdeptać
+nadeptywać
+przydeptać",
+2527,1,踝,3,kostka,
+2528,1,踪,3,"wskazówka
+trop
+ślad
+ślad stopy
+odcisk stopy
+pozostałość",
+2529,1,蹋,3,"potknięcie
+potykać się
+błądzić
+deptać",
+2530,1,蹕,3,"osoba, która poprzedza króla w orszaku",
+2531,1,蹣,3,"zataczać się
+chwiać się",
+2532,1,蹼,3,noga z palcami połączonymi błoną pławną,
 2533,1,躡,3,"nadeptać
 przydeptać",
-2534,,軾,3,,
-2535,,輓,3,,
-2536,,轗,3,,
-2537,,辟,3,,
+2534,1,軾,3,"przednia barierka karety
+przednia poręcz wagonu",
+2535,1,輓,3,"ciągnąć
+pociągnąć",
+2536,+,轗,3,,
+2537,-,辟,3,,
 2538,1,辧,3,"dotyczyć
 radzić sobie
 robić
 traktować
 obchodzić się z",
-2539,,逑,3,,
-2540,,遉,3,,
-2541,,遐,3,,
-2542,,遒,3,,
-2543,,邈,3,,
-2544,,酣,3,,
-2545,,酥,3,,
-2546,,醉,3,,
-2547,,鈿,3,,
-2548,,銖,3,,
-2549,,銛,3,,
-2550,,鋩,3,,
-2551,,鏈,3,,
-2552,,鐇,3,,
-2553,,閖,3,,
-2554,,闖,3,,
-2555,,陦,3,wyspa,
+2539,-,逑,3,,
+2540,-,遉,3,,
+2541,-,遐,3,,
+2542,-,遒,3,,
+2543,-,邈,3,,
+2544,-,酣,3,,
+2545,-,酥,3,,
+2546,-,醉,3,,
+2547,-,鈿,3,,
+2548,-,銖,3,,
+2549,-,銛,3,,
+2550,-,鋩,3,,
+2551,-,鏈,3,,
+2552,-,鐇,3,,
+2553,-,閖,3,,
+2554,-,闖,3,,
+2555,-,陦,3,wyspa,
 2556,1,隗,3,"wysoki
 skromy
 spadzisty
 urwisty",
-2557,,霑,3,,
+2557,-,霑,3,,
 2558,,霾,3,,
 2559,,靈,3,,
 2560,,顱,3,,
@@ -8770,8 +8828,11 @@ pomówienie",
 3475,1,詷,-,-,
 3476,1,詶,-,-,
 3477,,詵,-,,
-3478,,詬,-,"---
-詈",
+3478,1,詬,-,"ośmieszać
+wyśmiewać
+wyśmiać
+wykpiwać
+kpić",
 3479,,詡,-,,
 3480,,詧,-,,
 3481,1,詥,-,-,
