@@ -675,7 +675,9 @@ każdy","używane jest po kropce, w nowym zdaniu",,
 WORD_ADVERBIAL_NOUN",SUFFIX,HIRAGANA,Genki 1-3,,末,まつ,,matsu,koniec,,,7065
 267,WORD_EMPTY,PREFIX,HIRAGANA,,,毎,まい,,mai,każdy,,,
 268,WORD_NOUN,,HIRAGANA,Genki 1-8,,お箸,おはし,,ohashi,pałeczki,,,
-269,WORD_NOUN,,HIRAGANA,Genki 1-6,,お風呂,おふろ,,ofuro,kąpiel,,,
+269,WORD_NOUN,,HIRAGANA,Genki 1-6,,お風呂,おふろ,,ofuro,"kąpiel
+wanna
+łaźnia",,,
 270,WORD_NOUN,SUFFIX,HIRAGANA,"Genki 2-13
 Genki kanji 2-14",,店,みせ,,mise,"sklep
 magazyn
@@ -43645,8 +43647,8 @@ chociaż",,,
 18800,WORD_NOUN,,KATAKANA,,,-,イヤホン,,iyahon,słuchawki do uszne,,,
 18801,WORD_NOUN,,KATAKANA,,,-,オードブル,,oodoburu,przystawka,potrawa podawana przed głównymi daniami,,
 18802,WORD_NOUN,,KATAKANA,,,-,グレゴリオ,,guregorio,gregoriański,kalendarz,,
-18803,WORD_NOUN,,HIRAGANA,,,グレゴリオ暦,グレゴリオれき,,guregorio reki,kalendarz gregoriański,,,
-18804,WORD_NOUN,,HIRAGANA,,,グレゴリオ聖歌,グレゴリオせいか,,guregorio seika,chorał gregoriański,"tradycyjny, jednogłosowy śpiew liturgiczny Kościoła łacińskiego",,
+18803,WORD_NOUN,,HIRAGANA_KATAKANA,,,グレゴリオ暦,グレゴリオれき,,guregorio reki,kalendarz gregoriański,,,
+18804,WORD_NOUN,,HIRAGANA_KATAKANA,,,グレゴリオ聖歌,グレゴリオせいか,,guregorio seika,chorał gregoriański,"tradycyjny, jednogłosowy śpiew liturgiczny Kościoła łacińskiego",,
 18805,WORD_NOUN,,KATAKANA,,,-,コイタス,,koitasu,"kopulacja
 stosunek płciowy
 akt płciowy",ang: coitus,,
@@ -43674,3 +43676,36 @@ styl (np. wypracowania)
 przyzwoitość
 obyczajność
 deklaratywność",,,18811
+18813,WORD_NOUN,,HIRAGANA,,,入選,にゅうせん,,nyuusen,"wybrany
+dobrany
+wybraniec",w konkursie,,
+18814,WORD_NOUN,,HIRAGANA,,,占有,せんゆう,,sen'yuu,"wyłączne posiadanie
+monopolizacja",,,
+18815,WORD_NOUN,,HIRAGANA,,,受章,じゅしょう,,jushou,"przyjęcie odznaczenia
+przyjęcie orderu",,,
+18816,WORD_NOUN,,HIRAGANA,,,庶民,しょみん,,shomin,"masa
+tłum
+zwykli ludzie",,,
+18817,WORD_NOUN,,HIRAGANA,,,掃海,そうかい,,soukai,oczyszczanie morza z min,,,
+18818,WORD_NOUN,,HIRAGANA,,,授業参観,じゅぎょうさんかん,,jugyou sankan,dzień rodziców,"dzień, w którym rodzice obserwują swoje dzieci w szkole",,
+18819,WORD_NOUN,,HIRAGANA,,,排出,はいしゅつ,,haishutsu,"emisja
+wydzielanie (np. CO2)
+eksmisja
+tryskanie
+wydalanie
+opróżnianie",,,
+18820,WORD_NOUN,,HIRAGANA,,,斜体,しゃたい,,shatai,"italika
+kursywa",,,
+18821,WORD_NOUN,,HIRAGANA,,,木場,きば,,kiba,"skład drzewny
+skład materiałów drzewnych",,,
+18822,WORD_NOUN,,HIRAGANA,,,生花,いけばな,,ikebana,ikebana,aranżacja kwiatowa,,18823
+18823,WORD_NOUN,,HIRAGANA,,,生花,せいか,,seika,"ikebana (aranżacja kwiatowa)
+świeże kwiaty",,,18822
+18824,WORD_NOUN,,HIRAGANA,,,食品添加物,しょくひんてんかぶつ,,shokuhin tenkabutsu,"dodatek do żywności
+substancja dodatkowa",,,
+18825,WORD_NOUN,,HIRAGANA,,,赤松,あかまつ,,akamatsu,japońska czerwona sosna,,,
+18826,WORD_NOUN,,HIRAGANA,,,陥落,かんらく,,kanraku,"upadek
+kapitulacja",,,
+18827,WORD_NOUN,,HIRAGANA,,,風呂,ふろ,,furo,"kąpiel
+wanna
+łaźnia",,,
