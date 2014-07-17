@@ -8540,8 +8540,9 @@ pieniądze
 środek
 miara",
 2834,1,鐃,2,gong,
-2835,,鐔,2,,
-2836,,鐚,2,,
+2835,1,鐔,2,"rękojeść
+trzon",
+2836,1,鐚,2,moneta o małej wartości,
 2837,1,鑠,2,"być zaczarowany
 być zaklęty
 być oczarowany
@@ -8554,51 +8555,99 @@ czarować
 topnieć
 topić
 rozpływać",
-2838,,閠,2,,
-2839,,阨,2,,
+2838,1,閠,2,"zdobycie tronu przez nieślubne dziecko
+nieprawne zdobycie tronu",
+2839,1,阨,2,"cierpienie
+strapienie
+udręka
+zwężenie
+ograniczenie
+blokowanie
+utrudnianie",
 2840,1,陝,2,nazwa miejsca,
-2841,,隶,2,,
-2842,,隹,2,,
-2843,,霙,2,,
-2844,,靆,2,,
-2845,,靛,2,,
-2846,,靺,2,,
-2847,,靼,2,,
-2848,,鞜,2,"---
-鞵",
-2849,,韵,2,,
-2850,,顚,2,,
-2851,,顴,2,"---
-頯",
+2841,1,隶,2,"rzucać
+rozszerzać
+powiększać
+dawać
+element podstawowy na niewolnika",
+2842,1,隹,2,"ptak
+element podstawowy na starego ptaka",
+2843,1,霙,2,deszcz ze śniegiem,
+2844,1,靆,2,pokrywa chmur,
+2845,1,靛,2,indygo,barwa o odcieniu pomiędzy niebieskim i fioletowym
+2846,1,靺,2,ludy tunguskie,
+2847,1,靼,2,"gładka skóra
+opalona skóra",
+2848,1,鞜,2,"but
+buty",
+2849,1,韵,2,"rym
+samogłoska",
+2850,1,顚,2,"szczyt
+wierzchołek
+niepokój
+zaniepokojenie
+rozstrój",
+2851,1,顴,2,kość policzkowa,
 2852,1,飳,2,-,
-2853,,餒,2,,
-2854,,餛,2,,
+2853,1,餒,2,"głód
+pragnienie
+łup
+zdobycz
+grabież",
+2854,1,餛,2,"zupa z pierożkami
+wonton (rodzaj pierożków popularnych w kuchni chińskiej)",
 2855,1,餢,2,-,
-2856,,餬,2,,
-2857,,餮,2,,
-2858,,饕,2,,
-2859,,駘,2,,
-2860,,駻,2,,
-2861,,騷,2,,
-2862,,騸,2,,
-2863,,驟,2,,
-2864,,驫,2,,
-2865,,髞,2,,
-2866,,髟,2,,
-2867,,髱,2,,
-2868,,鬥,2,,
-2869,,鬲,2,,
-2870,,魍,2,,
-2871,,魞,2,,
-2872,,鮞,2,,
-2873,,鯢,2,,
-2874,,鰮,2,"---
+2856,1,餬,2,ryżowy rosół,
+2857,1,餮,2,"żarłoczny
+łakomy
+nienasycony
+zachłanny",
+2858,1,饕,2,"chciwy
+łakomy
+żarłoczny
+wygłodniały",
+2859,1,駘,2,"głupi
+durny
+idiotyczny
+tępy",
+2860,1,駻,2,"wściekłość
+szał
+gniew
+furia
+dziczeć",
+2861,1,騷,2,"agitować
+poruszać
+wzburzać
+drażnić
+irytować
+przeszkadzanie
+niepokojenie
+złościć
+kłopot
+zmartwienie
+smutek",
+2862,1,騸,2,kastrować,
+2863,1,驟,2,"bieg
+nagle
+raptem
+nieoczekiwanie",
+2864,-,驫,2,,
+2865,-,髞,2,,
+2866,-,髟,2,,
+2867,-,髱,2,,
+2868,-,鬥,2,,
+2869,-,鬲,2,,
+2870,-,魍,2,,
+2871,-,魞,2,,
+2872,-,鮞,2,,
+2873,-,鯢,2,,
+2874,-,鰮,2,"---
 鰛",
-2875,,鴆,2,,
+2875,-,鴆,2,,
 2876,1,鵼,2,-,
-2877,,鶻,2,,
-2878,,鷄,2,,
-2879,,黏,2,,
+2877,-,鶻,2,,
+2878,-,鷄,2,,
+2879,-,黏,2,,
 2880,1,黔,2,czarny,
 2881,,黶,2,,
 2882,,鼹,2,,
@@ -10539,8 +10588,7 @@ gwar",
 4552,0,頳,-,czerwony,
 4553,1,頵,-,-,
 4554,,頫,-,,
-4555,,頯,-,"---
-顴",
+4555,1,頯,-,kość policzkowa,
 4556,1,頮,-,"mycie
 pranie
 przemywanie",
@@ -13138,8 +13186,8 @@ wodza",
 鞟",
 6781,,鞸,-,"---
 鞲",
-6782,,鞵,-,"---
-鞜",
+6782,1,鞵,-,"but
+buty",
 6783,1,嫶,-,-,
 6784,,嫵,-,,
 6785,,鞶,-,,
