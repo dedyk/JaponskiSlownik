@@ -3357,7 +3357,8 @@ uroda",,,
 1242,WORD_NOUN,,HIRAGANA,,,健康,けんこう,,kenkou,zdrowie,,,
 1243,WORD_EXPRESSION,,HIRAGANA,,,手に入れる,てにいれる,,teni ireru,zdobyć,,,
 1244,WORD_NOUN,,HIRAGANA,,,楽しさ,たのしさ,,tanoshisa,zabawna rzecz,,,
-1245,WORD_NOUN,,HIRAGANA,,,梅雨,つゆ,,tsuyu,pora deszczowa,,,
+1245,WORD_NOUN,,HIRAGANA,,,梅雨,つゆ,,tsuyu,"pora deszczowa
+deszcz w czasie pory deszczowej",,,19025
 1246,WORD_EXPRESSION,,KATAKANA,,,-,ケア,,kea,dbać,,,
 1247,WORD_NOUN,,HIRAGANA,,,恋,こい,,koi,"miłość
 zakochanie",,,
@@ -23365,7 +23366,7 @@ szafot",,,
 10390,WORD_NOUN,,HIRAGANA,,,需用家,じゅようか,,juyouka,"konsument
 klient",,,
 10391,WORD_NOUN,,HIRAGANA,,,鳴り,なり,,nari,"brzmienie
-dźwięk",,,
+dźwięk",,,19022
 10392,WORD_ADJECTIVE_I,,HIRAGANA,,,気まずい,きまずい,,kimazui,"niemiły
 nieprzyjemny
 przykry",,,
@@ -24392,8 +24393,16 @@ o ile to możliwe",,,
 ciocia",własna,,
 10809,WORD_NOUN,,HIRAGANA,,,叔母,おば,,oba,"ciotka
 ciocia",własna,,
-10810,WORD_NOUN,,KATAKANA,,,-,オーバー,,oobaa,"palto
-płaszcz",,,
+10810,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,オーバー,,oobaa,"płaszcz (skrót)
+palto (skrót)
+nad
+przez
+powyżej
+przekraczanie
+przewyższanie
+przekroczenie
+przesada",,,
 10811,WORD_ADVERB,,HIRAGANA,,,次第に,しだいに,,shidai ni,"stopniowo
 coraz bardziej",,,
 10812,WORD_VERB_IRREGULAR,,HIRAGANA,,,指導する,しどうする,,shidou suru,"kierować
@@ -44269,3 +44278,105 @@ podjąć ważną decyzję",,,
 przypominać
 pamiętać
 wspominać",,,
+19001,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,オーバ,,ooba,"płaszcz (skrót)
+palto (skrót)
+nad
+przez
+powyżej
+przekraczanie
+przewyższanie
+przekroczenie
+przesada",,,
+19002,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,真剣,しんけん,,shinken,"powaga
+prawdziwy miecz (przeciwieństwo nieostrej lub drewnianej broni)",,,
+19003,WORD_NOUN,,KATAKANA,,,-,サイドビジネス,,saido bijinesu,"dodatkowe zajęcie
+dodatkowa praca","ang: side business, side job",,
+19004,WORD_NOUN,,KATAKANA,,,-,ホーマー,,hoomaa,"home run
+homer",baseball,,
+19005,WORD_VERB_U,,HIRAGANA,,,ぶら下がる,ぶらさがる,,burasagaru,"wisieć
+powiesić
+zawieszać
+zwisać
+dyndać
+huśtać
+kołysać",,,
+19006,WORD_NOUN,,HIRAGANA,,,一件,いっけん,,ikken,"materia
+sprawa
+rzecz
+kwestia",własna,,
+19007,WORD_NOUN,,HIRAGANA,,,信奉,しんぽう,,shinpou,"wiara
+przekonanie
+zaufanie
+ufność",,,
+19008,WORD_ADVERB,,HIRAGANA,,,前もって,まえもって,,maemotte,"zawczasu
+poprzednio
+uprzednio
+przedtem
+z góry
+z wyprzedzeniem",,,
+19009,WORD_NOUN,,HIRAGANA,,,安眠,あんみん,,anmin,"spokojny sen
+łagodny sen",,,
+19010,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,緊密,きんみつ,,kinmitsu,"rygor
+surowość
+rygorystyczność
+dyscyplina
+bliskość
+ścisłość",,,
+19011,WORD_NOUN,,HIRAGANA,,,裂け目,さけめ,,sakeme,"rozdarcie
+rozerwanie
+rozprucie
+pęknięcie
+szczelina
+szpara
+rozstęp",,,
+19012,WORD_ADVERB,,HIRAGANA,,,-,ひょっとすると,,hyottosuruto,"być może
+może
+możliwe
+chyba
+prawdopodobnie",,,
+19013,WORD_NOUN,,KATAKANA,,,-,パルチザン,,paruchizan,"partyzant
+stronnik
+zwolennik
+poplecznik",,,
+19014,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,プライベート,,puraibeeto,"prywatny
+prywatność",,,
+19015,WORD_NOUN,,KATAKANA,,,-,ヘリウム,,heriumu,hel,,,
+19016,WORD_NOUN,,HIRAGANA,,,外出,がいしゅつ,,gaishutsu,"wycieczka
+wypad
+przechadzka
+podróż",,,
+19017,WORD_VERB_U,,HIRAGANA,,,待ち望む,まちのぞむ,,machinozomu,"patrzeć z niepokojem na
+patrzeć niespokojnie na
+patrzeć z niecierpliwością na
+czekać niecierpliwie na",,,
+19018,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,終了後,しゅうりょうご,,shuuryougo,"po zakończeniu (czegoś)
+po-",,,
+19019,WORD_NOUN,,HIRAGANA,,,繁茂,はんも,,hanmo,"bujny wzrost
+obfity rozrost",roślin,,
+19020,WORD_NOUN,,HIRAGANA,,,裏目,うらめ,,urame,"odwrotna strona
+przeciwnie (od spodziewanego)
+odnieść odwrotny skutek
+ścieg lewy (na drutach)",,,
+19021,WORD_NOUN,,HIRAGANA,,,風雨,ふうう,,fuuu,wiatr i deszcz,,,
+19022,WORD_PARTICULE,,HIRAGANA,,,-,なり,,nari,"albo
+lub
+ledwo (po formie słownikowej czasownika)
+zaledwie (po formie słownikowej czasownika)
+zaraz po (po formie słownikowej czasownika)
+przy jednoczesnym (po formie prostej czasu przeszłego czasownika)
+poprzedni stan nadal obowiązuje (po formie prostej czasu przeszłego czasownika)",,,10391
+19023,WORD_NOUN,,KATAKANA,,,-,ジュラルミン,,jurarumin,"duraluminium
+dural","ogólna nazwa stopów metali, przeznaczonych do przeróbki plastycznej, zawierających głównie aluminium oraz dodatki stopowe",,
+19024,WORD_NOUN,,HIRAGANA,,,一二,いちに,,ichini,"pierwszy i drugi
+kilka
+parę",,,
+19025,WORD_NOUN,,HIRAGANA,,,梅雨,ばいう,,baiu,"pora deszczowa
+deszcz w czasie pory deszczowej",,,1245
+19026,WORD_NOUN,,HIRAGANA,,,開場,かいじょう,,kaijou,"inauguracja
+otwarcie
+otwarcie (drzwi podczas wydarzenia i etc)",,,
