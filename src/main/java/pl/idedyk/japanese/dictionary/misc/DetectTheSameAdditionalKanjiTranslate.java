@@ -77,14 +77,16 @@ public class DetectTheSameAdditionalKanjiTranslate {
 					theSamePolishTranslate = currentAdditionalKanjiEntryTranslate;
 					theSamePolishInfo = currentAdditionalKanjiEntryInfo;
 					
-				} else if (theSamePolishTranslate != null && currentAdditionalKanjiEntryTranslate.equals("") == false && currentAdditionalKanjiEntryTranslate.equals(theSamePolishTranslate) == false) {
+				} else if (theSamePolishTranslate != null && currentAdditionalKanjiEntryTranslate.equals("") == false && 
+						currentAdditionalKanjiEntryTranslate.startsWith("---") == false &&
+						currentAdditionalKanjiEntryTranslate.equals(theSamePolishTranslate) == false) {
 					
 					for (AdditionalKanjiEntry additionalKanjiEntry2 : foundAdditionalKanjiEntryList) {
-						System.out.println(additionalKanjiEntry2);
+						System.err.println(additionalKanjiEntry2);
 					}
 					
 					
-					System.out.println("Error");
+					System.err.println("Error");
 					
 					throw new Exception();
 				}				
