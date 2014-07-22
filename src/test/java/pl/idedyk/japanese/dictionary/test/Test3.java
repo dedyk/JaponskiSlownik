@@ -77,6 +77,10 @@ public class Test3 {
 			
 			Character kanjiChar = kanjiDic2Entry.getKanji().charAt(0);
 			
+			if (alreadyKanjiSet.contains(kanjiChar) == true) {
+				continue;
+			}
+			
 			if (charCounter.containsKey(kanjiChar) == false) {
 				System.out.println(kanjiChar);
 			}

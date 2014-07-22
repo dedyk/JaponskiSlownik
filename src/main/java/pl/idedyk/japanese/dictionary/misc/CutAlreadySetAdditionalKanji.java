@@ -110,10 +110,6 @@ public class CutAlreadySetAdditionalKanji {
 		
 		private boolean useKanji;
 
-		public String getId() {
-			return id;
-		}
-
 		public void setId(String id) {
 			this.id = id;
 		}
@@ -124,10 +120,6 @@ public class CutAlreadySetAdditionalKanji {
 
 		public void setDone(String done) {
 			this.done = done;
-		}
-
-		public String getStrokeCount() {
-			return strokeCount;
 		}
 
 		public void setStrokeCount(String strokeCount) {
