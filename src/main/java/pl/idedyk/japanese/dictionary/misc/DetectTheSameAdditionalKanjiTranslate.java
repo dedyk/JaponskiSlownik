@@ -222,8 +222,6 @@ public class DetectTheSameAdditionalKanjiTranslate {
 			csvWriter.endRecord();
 		}
 		
-		
-		
 		csvWriter.close();
 	}
 	
