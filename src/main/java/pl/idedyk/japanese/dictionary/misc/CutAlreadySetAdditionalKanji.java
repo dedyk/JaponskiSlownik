@@ -35,7 +35,7 @@ public class CutAlreadySetAdditionalKanji {
 				throw new Exception(currentAdditionalKanjiEntry.toString());				
 			}
 			
-			if (currentAdditionalKanjiEntry.isUseKanji() == true) {
+			if (currentAdditionalKanjiEntry.isUseKanji() == false && done != null && (done.equals("1") == true)) {
 				filteredAdditionalKanjiEntryList.add(currentAdditionalKanjiEntry);
 			}
 		}		
