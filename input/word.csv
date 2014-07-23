@@ -19911,7 +19911,8 @@ Genki 2-16",,道,みち,,Michi,Michi,,,504
 8703,WORD_FEMALE_NAME,,HIRAGANA,,,夏美,なつみ,,Natsumi,Natsumi,,,
 8704,WORD_FEMALE_NAME,,HIRAGANA,,,信子,のぶこ,,Nobuko,Nobuko,,,
 8705,WORD_FEMALE_NAME,,HIRAGANA,,,-,のり,,Nori,Nori,,,"1689
-12873"
+12873
+19124"
 8706,WORD_FEMALE_NAME,,HIRAGANA,,,法子,のりこ,,Noriko,Noriko,,,
 8707,WORD_FEMALE_NAME,,HIRAGANA,,,典子,のりこ,,Noriko,Noriko,,,
 8708,WORD_FEMALE_NAME,,HIRAGANA,,,蘭,らん,,Ran,Ran,,,
@@ -27982,7 +27983,9 @@ pedagog",,,
 12714,WORD_VERB_IRREGULAR,,HIRAGANA,,,許可する,きょかする,,kyoka suru,zezwalać,,,
 12715,WORD_NOUN,,HIRAGANA,,,布切れ,ぬのきれ,,nunokire,kawałek materiału,,,12716
 12716,WORD_NOUN,,HIRAGANA,,,布切れ,ぬのぎれ,,nunogire,kawałek materiału,,,12715
-12717,WORD_NOUN,,HIRAGANA,,,布地,ぬのじ,,nunoji,materiał,,,
+12717,WORD_NOUN,,HIRAGANA,,,布地,ぬのじ,,nunoji,"materiał
+sukno
+tkanina",,,19113
 12718,WORD_NOUN,,HIRAGANA,,,布製,ぬのせい,,nunosei,"zrobiony z materiału
 zrobiony z tkaniny",,,
 12719,WORD_ADJECTIVE_I,,HIRAGANA,,,温い,ぬるい,,nurui,"chłodny
@@ -44650,10 +44653,10 @@ sprawdzenie
 wymeldowanie się",,,
 19113,WORD_NOUN,,HIRAGANA,,,布地,きれじ,,kireji,"materiał
 sukno
-tkanina",,,19114
-19114,WORD_NOUN,,HIRAGANA,,,布地,ぬのじ,,nunoji,"materiał
-sukno
-tkanina",,,19113
+tkanina",,,12717
+19114,WORD_NOUN,,HIRAGANA,,,消極,しょうきょく,,shoukyoku,"konserwatysta
+odmowa
+negacja",,,
 19115,WORD_NOUN,,KATAKANA,,,-,アーチ,,aachi,"łuk
 sklepienie (ang: arch)
 homerun (baseball)",,,
@@ -44686,15 +44689,15 @@ jeżdżenie
 rozpiętość obrazu
 dwuosobowy
 dwumiejscowy
-nastrój (podnoszenie lub przyłączenie się do czyjegoś nastroju)",,,
+nastrój (podnoszenie lub przyłączenie się do czyjegoś nastroju)",,,8705
 19125,WORD_NOUN,,HIRAGANA,,,代議,だいぎ,,daigi,"reprezentowanie w konferencji
 reprezentowanie na zjeździe",np. reprezentowanie swoich wyborców w parlamencie,,
 19126,WORD_NOUN,,HIRAGANA,,,雅楽,ががく,,gagaku,gagaku,"japoński styl klasycznej muzyki dworskiej, do dziś kultywowany na dworze cesarskim w Japonii",,
 19127,WORD_NOUN,,HIRAGANA,,,顔見知り,かおみしり,,kaomishiri,"znajomy
 znajoma
 znajomość",,,
-19128,WORD_NOUN,,KATAKANA,,,-,カデンツ,,kadenshi,kadencja,politologia,,
-19129,WORD_NOUN,,KATAKANA,,,-,カデンツァ ,,kadensha,kadencja,"muzyka, połączenie akordów mające charakter zakończenia",,
+19128,WORD_NOUN,,KATAKANA,,,-,カデンツ,,kadentsu,kadencja,politologia,,
+19129,WORD_NOUN,,KATAKANA,,,-,カデンツァ,,kadentsa,kadencja,"muzyka, połączenie akordów mające charakter zakończenia",,
 19130,WORD_NOUN,,HIRAGANA_KATAKANA,,,サイン会,サインかい,,sain kai,"podpis
 podpisywanie",np. podpisywanie książki przez autora,,
 19131,WORD_NOUN,,HIRAGANA,,,目抜き,めぬき,,menuki,"główny
@@ -44705,3 +44708,30 @@ ważny
 modny
 elegancki
 wytworny",,,
+19132,WORD_NOUN,,KATAKANA,,,-,ファーム,,faamu,"farma
+gospodarstwo rolne
+firma
+przedsiębiorstwo","ang: farm, firm",,
+19133,WORD_NOUN,,HIRAGANA,,,出金,しゅっきん,,shukkin,"wycofanie (pieniędzy)
+podjęcie (pieniędzy)
+wypłata (pieniędzy)
+udział
+wkład
+inwestycja
+finansowanie",,,
+19134,WORD_NOUN,,HIRAGANA,,,参観,さんかん,,sankan,"wizyta
+odwiedziny
+odwiedzanie
+wizytowanie
+inspekcja
+przegląd",,,
+19135,WORD_NOUN,,HIRAGANA,,,参観者,さんかんしゃ,,sankansha,"odwiedzający
+wizytator
+gość",,,
+19136,WORD_NOUN,,HIRAGANA,,,参観人,さんかんにん,,sankannin,"odwiedzający
+wizytator
+gość",,,
+19137,WORD_NOUN,,HIRAGANA,,,地検,ちけん,,chiken,Biuro prokuratora okręgowego,,,
+19138,WORD_NOUN,,HIRAGANA,,,大隊,だいたい,,daitai,batalion,,,
+19139,WORD_NOUN,,HIRAGANA,,,賄賂,わいろ,,wairo,łapówka,,,
+19140,WORD_NOUN,,HIRAGANA,,,重加算税,じゅうかさんぜい,,juuka sanzei,wysoki dodatkowy podatek,,,
