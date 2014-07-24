@@ -673,7 +673,7 @@ każdy","używane jest po kropce, w nowym zdaniu",,
 265,WORD_NOUN,,HIRAGANA,Genki 1-3,,週,しゅう,,shuu,tydzień,,,
 266,"WORD_NOUN
 WORD_ADVERBIAL_NOUN",SUFFIX,HIRAGANA,Genki 1-3,,末,まつ,,matsu,koniec,,,7065
-267,WORD_EMPTY,PREFIX,HIRAGANA,,,毎,まい,,mai,każdy,,,
+267,WORD_EMPTY,PREFIX,HIRAGANA,,,毎,まい,,mai,każdy,,,11901
 268,WORD_NOUN,,HIRAGANA,Genki 1-8,,お箸,おはし,,ohashi,pałeczki,,,
 269,WORD_NOUN,,HIRAGANA,Genki 1-6,,お風呂,おふろ,,ofuro,"kąpiel
 wanna
@@ -26549,8 +26549,8 @@ męski i żeński",,,
 gumka",,,
 11899,WORD_NOUN,,HIRAGANA_KATAKANA,,,ゴム紐,ゴムひも,,gomu himo,elastyczny gumowy sznurek,,,
 11900,WORD_NOUN,,HIRAGANA_KATAKANA,,,輪ゴム,わゴム,,wa gomu,gumka aptekarska,,,
-11901,WORD_EMPTY,SUFFIX,HIRAGANA,,,-,ごと,,goto,"za każdym ...
-co ...",,,
+11901,WORD_EMPTY,SUFFIX,HIRAGANA,,,毎,ごと,,goto,"za każdym ...
+co ...",,,267
 11902,WORD_EXPRESSION,,HIRAGANA,,,御座います,ございます,,gozaimasu,"być
 znajdować się
 mieć","wyrażenie honoryfikatywne, honoryfikatywny odpowiednik czasownika aru",,
@@ -44735,7 +44735,7 @@ gość",,,
 19138,WORD_NOUN,,HIRAGANA,,,大隊,だいたい,,daitai,batalion,,,
 19139,WORD_NOUN,,HIRAGANA,,,賄賂,わいろ,,wairo,łapówka,,,
 19140,WORD_NOUN,,HIRAGANA,,,重加算税,じゅうかさんぜい,,juuka sanzei,wysoki dodatkowy podatek,,,
-19141,WORD_NOUN,,KATAKANA,,,-,シミュレーション,,shimyureesjon,symulacja,,,
+19141,WORD_NOUN,,KATAKANA,,,-,シミュレーション,,shimyureeshon,symulacja,,,
 19142,WORD_NOUN,,HIRAGANA,,,取締まり,とりしまり,,torishimari,"kontrola
 sterowanie
 zarządzanie
@@ -44746,9 +44746,7 @@ sterowanie
 zarządzanie
 kierowanie
 nadzór",,,
-19144,WORD_ADVERBIAL_NOUN,SUFFIX,HIRAGANA,,,毎,ごと,,goto,"każdy odpowiednio
-każdy poszczególnie
-każdy indywidualnie",,,
+19144,WORD_NOUN,,HIRAGANA,,,横転,おうてん,,outen,przewracanie się na bok,np. podczas wypadku samochodowego,,
 19145,WORD_ADVERB,,HIRAGANA,,,絶え間なく,たえまなく,,taemanaku,"nieprzerwanie
 nieustannie
 bezustannie
@@ -44779,13 +44777,13 @@ zamaskowanie",,,
 dziecinnieć z wiekiem
 być psychicznie spowolniony
 być mentalnie spowolniony
-być zamroczony",,,
+być zamroczony",,,19156
 19156,WORD_VERB_RU,,HIRAGANA,,,惚ける,ほうける,,houkeru,"grzybieć
 dziecinnieć z wiekiem
 być psychicznie spowolniony
 być mentalnie spowolniony
 być zamroczony
-być czymś pochłonięty",,,
+być czymś pochłonięty",,,19155
 19157,WORD_NOUN,,HIRAGANA,,,競り合い,せりあい,,seriai,"zawody
 konkurencja
 rywalizacja
@@ -44807,3 +44805,22 @@ brykać
 harcować
 figlować
 żartować",,,
+19163,WORD_NOUN,,HIRAGANA,,,日本道路公団,にほんどうろこうだん,,nihon douro koudan,japońska spółka publiczna zajmująca się zarządzeniem autostradami,"stworzona w 1956 roku, zlikwidowana 1 października 2005 roku",,
+19164,WORD_NOUN,SUFFIX,HIRAGANA,,,法,ほう,,hou,"prawo
+ustawa
+przepis
+akt
+metoda
+nastrój (termin lingwistyczny)
+dharma (buddyzm)",,,
+19165,WORD_NOUN,,HIRAGANA,,,国民総生産,こくみんそうせいさん,,kokuminsou seisan,produkt narodowy brutto,,,
+19166,WORD_NOUN,,HIRAGANA,,,病床,びょうしょう,,byoushou,łóżko chorego,,,
+19167,WORD_NOUN,,HIRAGANA,,,保留,ほりゅう,,horyuu,"rezerwowanie
+zastrzeganie
+odroczenie
+zwlekanie
+przytrzymywanie (np. guzika)
+oczekiwanie
+trwanie
+w toku",,,
+19168,WORD_NOUN,,HIRAGANA,,,開校,かいこう,,kaikou,otwieranie szkoły,,,
