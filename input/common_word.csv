@@ -128,7 +128,7 @@
 128,,,そうだ,[int],"そうだ /(int) (1) that is so/that is right/it looks to me/I am of the impression/(2) people say that (after plain verb, adj)/it is said that/I hear that/(P)/"
 129,,,そうです,[int],"そうです /(int) (1) that is so/that is right/it looks to me/I am of the impression/(2) people say that (after plain verb, adj)/it is said that/I hear that/(P)/"
 130,,,そうですが,[exp],"そうですが /(exp) that's so, however ..../(P)/"
-131,,,そうなると,[exp],そうなると /(exp) if that is the case/if it becomes so/when it becomes so/(P)/
+131,1,,そうなると,[exp],そうなると /(exp) if that is the case/if it becomes so/when it becomes so/(P)/
 132,,,そしたら,[exp],そしたら /(exp) then/(P)/
 133,1,,そそっかしい,[adj-i],そそっかしい /(adj-i) careless/thoughtless/(P)/
 134,1,,そそられる,"[v1, vt]","そそられる /(v1,vt) to be interesting/to be fascinating/to be tantalizing/to be intriguing/(P)/"
@@ -6894,7 +6894,7 @@
 6894,1,受精卵,じゅせいらん,[n],受精卵 [じゅせいらん] /(n) fertilized eggs/fertilised eggs/(P)/
 6895,,受給,じゅきゅう,"[n, vs]","受給 [じゅきゅう] /(n,vs) receiving payments (pension, ration)/(P)/"
 6896,1,受胎,じゅたい,"[n, vs]","受胎 [じゅたい] /(n,vs) conception/fertilization/fertilisation/(P)/"
-6897,,受託,じゅたく,"[n, vs]","受託 [じゅたく] /(n,vs) being entrusted with/taking charge of/(P)/"
+6897,1,受託,じゅたく,"[n, vs]","受託 [じゅたく] /(n,vs) being entrusted with/taking charge of/(P)/"
 6898,,受診,じゅしん,"[n, vs]","受診 [じゅしん] /(n,vs) having a medical exam/seeing a doctor/(P)/"
 6899,,受諾,じゅだく,"[n, vs]","受諾 [じゅだく] /(n,vs) acceptance/(P)/"
 6900,,受講,じゅこう,"[n, vs]","受講 [じゅこう] /(n,vs) taking (attending) lectures/(P)/"
@@ -9628,8 +9628,8 @@
 9628,,接続,せつぞく,"[n, vs]","接続 [せつぞく] /(n,vs) (1) connection/attachment/union/join/joint/link/(2) changing trains/(3) (abbr) conjunction/(P)/"
 9629,,接見,せっけん,"[n, vs]","接見 [せっけん] /(n,vs) interview/(P)/"
 9630,1,接近,せっきん,"[n, vs]","接近 [せっきん] /(n,vs) (1) getting closer/drawing nearer/approaching/(2) being not much different/being near (age, skill, etc.)/(3) becoming close (i.e. friendly)/becoming intimate/(P)/"
-9631,,控え室,ひかえしつ,[n],控え室 [ひかえしつ] /(n) waiting room/(P)/
-9632,,控室,ひかえしつ,[n],控室 [ひかえしつ] /(n) waiting room/(P)/
+9631,1,控え室,ひかえしつ,[n],控え室 [ひかえしつ] /(n) waiting room/(P)/
+9632,1,控室,ひかえしつ,[n],控室 [ひかえしつ] /(n) waiting room/(P)/
 9633,,控訴,こうそ,"[n, vs, adj-no]","控訴 [こうそ] /(n,vs,adj-no) koso appeal (initial appeal to a higher court)/(P)/"
 9634,,推奨,すいしょう,"[n, vs]","推奨 [すいしょう] /(n,vs) recommendation/endorsement/(P)/"
 9635,1,推奨環境,すいしょうかんきょう,[n],推奨環境 [すいしょうかんきょう] /(n) (comp) system requirements (i.e. recommended hardware and software to run a package)/(P)/
@@ -9985,7 +9985,7 @@
 9985,,日出,にっしゅつ,[n],日出 [にっしゅつ] /(n) sunrise/(P)/
 9986,1,日刊,にっかん,"[n, adj-no]","日刊 [にっかん] /(n,adj-no) daily issue/(P)/"
 9987,1,日取り,ひどり,[n],日取り [ひどり] /(n) fixed date/appointed day/(P)/
-9988,,日向,ひなた,[n],日向 [ひなた] /(n) sunny place/in the sun/(P)/
+9988,1,日向,ひなた,[n],日向 [ひなた] /(n) sunny place/in the sun/(P)/
 9989,,日和,ひより,[ateji],日和 [ひより] /(ateji) (n) (1) weather/climatic conditions/(2) fine weather/clear day/(3) situation/state of affairs/(4) sea conditions/good day for sailing/(P)/
 9990,,日報,にっぽう,[n],日報 [にっぽう] /(n) daily report/(P)/
 9991,1,日増しに,ひましに,[adv],日増しに [ひましに] /(adv) day by day/(P)/
@@ -12505,7 +12505,7 @@
 12505,1,粘粘,ねばねば,"[adj-na, adv, n, vs]","粘粘 [ねばねば] /(adj-na,adv,n,vs) (uk) stickiness/(P)/"
 12506,1,粘膜,ねんまく,"[n, adj-no]","粘膜 [ねんまく] /(n,adj-no) mucous membrane/(P)/"
 12507,,粛清,しゅくせい,"[n, vs]","粛清 [しゅくせい] /(n,vs) (political) purge/(P)/"
-12508,,粥,かゆ,[n],粥 [かゆ] /(n) thin rice porridge/watery cooked rice/rice gruel/congee/(P)/
+12508,1,粥,かゆ,[n],粥 [かゆ] /(n) thin rice porridge/watery cooked rice/rice gruel/congee/(P)/
 12509,1,精々,せいぜい,[adv],精々 [せいぜい] /(adv) at the most/at best/to the utmost/as much (far) as possible/(P)/
 12510,,精子,せいし,"[n, adj-no]","精子 [せいし] /(n,adj-no) sperm/(P)/"
 12511,1,精巧,せいこう,"[adj-na, n]","精巧 [せいこう] /(adj-na,n) elaborate/delicate/exquisite/(P)/"
