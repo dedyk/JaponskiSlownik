@@ -1851,7 +1851,8 @@ dopiero
 zaledwie",+ czasownik w formie te negatywnej,,4587
 662,WORD_ADVERB,,HIRAGANA,"Genki 1-8
 Genki 1-9",,皆,みんな,,minna,"wszyscy
-wszystko",,,4096
+wszystko
+każdy",,,4096
 663,WORD_NOUN,,HIRAGANA,Genki 1-8,,誰か,だれか,,dareka,ktoś,"dareka [partykuła], do osób",,
 664,WORD_NOUN,,HIRAGANA,Genki 1-8,,-,どれか,,doreka,któryś,"doreka [partykuła], który",,
 665,WORD_ADVERB,,HIRAGANA,Genki 1-8,,何処か,どこか,,dokoka,gdzieś,"dokoka [partykuła], do miejsc",,
@@ -46476,7 +46477,7 @@ prosty i powszechny",ang: plain and popular,,
 zdumienie
 zdziwienie
 wędrówka","ang: wonder, wander",,
-,"WORD_ADVERB
+19710,"WORD_ADVERB
 WORD_ADVERB_TO",,KATAKANA,,,-,ドキドキ,,dokidoki,"bum-bum
 bang-bang
 walenie
@@ -46485,36 +46486,61 @@ uderzanie
 bicie
 stukot
 szybko uderzające (np. serce)",,,
-,WORD_NOUN,,HIRAGANA,,,会堂,かいどう,,kaidou,"kościół
+19711,WORD_NOUN,,HIRAGANA,,,会堂,かいどう,,kaidou,"kościół
 kaplica
 synagoga
 tabernakulum",,,
-,WORD_NOUN,,HIRAGANA,,,住み心地,すみごこち,,sumigokochi,"wygoda
+19712,WORD_NOUN,,HIRAGANA,,,住み心地,すみごこち,,sumigokochi,"wygoda
 komfort","w miejscu, którym żyje się",,
-,WORD_VERB_U,,HIRAGANA,,,割り込む,わりこむ,,warikomu,"przeszkadzać
+19713,WORD_VERB_U,,HIRAGANA,,,割り込む,わりこむ,,warikomu,"przeszkadzać
 przerywać
 zakłócać
 niepokoić
 wtrącać się
 wcinać się
 wpychać się",,,
-,WORD_NOUN,,HIRAGANA,,,決選投票,けっせんとうひょう,,kessen touhyou,"końcowe głosowanie
+19714,WORD_NOUN,,HIRAGANA,,,決選投票,けっせんとうひょう,,kessen touhyou,"końcowe głosowanie
 finalne głosowanie
 dogrywka w głosowaniu
 dodatkowe głosowanie",,,
-,WORD_NOUN,,HIRAGANA,,,独り言,ひとりごと,,hitorigoto,"monolog
+19715,WORD_NOUN,,HIRAGANA,,,独り言,ひとりごと,,hitorigoto,"monolog
 solilokwium
 mówienie do siebie",,,
-,WORD_NOUN,,HIRAGANA,,,生息,せいそく,,seisoku,"zamieszkiwanie
+19716,WORD_NOUN,,HIRAGANA,,,生息,せいそく,,seisoku,"zamieszkiwanie
 mieszkanie
 życie",,,
-,WORD_NOUN,,HIRAGANA,,,生息子,きむすこ,,kimusuko,"młody mężczyzna nie znający kobiet
+19717,WORD_NOUN,,HIRAGANA,,,生息子,きむすこ,,kimusuko,"młody mężczyzna nie znający kobiet
 prawiczek",,,
-,WORD_NOUN,,HIRAGANA,,,県営,けんえい,,ken'ei,"prefekturalny
+19718,WORD_NOUN,,HIRAGANA,,,県営,けんえい,,ken'ei,"prefekturalny
 pod kierownictwem prefektury",,,
-,WORD_VERB_RU,,HIRAGANA,,,禿げる,はげる,,hageru,"tracić włosy
+19719,WORD_VERB_RU,,HIRAGANA,,,禿げる,はげる,,hageru,"tracić włosy
 łysieć
 stawać się łysy
 stawiać się pusty (np. coraz to mniej drzew na górze wraz ze wzrostem wysokości)",,,
-,WORD_NOUN,,HIRAGANA,,,購買力,こうばいりょく,,koubairyoku,"moc zakupów
-moc kupowania",,,
+19720,WORD_NOUN,,HIRAGANA,,,購買力,こうばいりょく,,koubairyoku,"moc zakupów
+moc kupowania",np. na ekonomię,,
+19721,WORD_NOUN,,KATAKANA,,,-,オリンピック,,orinpikku,"olimpiada
+igrzyska olimpijskie",,,
+19722,WORD_NOUN,,KATAKANA,,,-,ニュージャージー,,nyuu jaajii,New Jersey,stan w północno-wschodniej części USA,,
+19723,WORD_NOUN,,KATAKANA,,,-,プロテスタント,,purotesutanto,protestant,,,
+19724,WORD_NOUN,,HIRAGANA_KATAKANA,,,プロテスタント教会,プロテスタントきょうかい,,purotesutanto kyoukai,protestancki kościół,,,
+19725,WORD_NOUN,,KATAKANA,,,-,リフォーム,,rifoomu,"renowacja
+odnowienie
+remont (np. domu)",,,
+19726,WORD_NOUN,,HIRAGANA,,,戦国,せんごく,,sengoku,"kraj w wojnie domowej
+wojujący kraj",,,
+19727,WORD_NOUN,,HIRAGANA,,,水位,すいい,,suii,poziom wody,,,
+19728,WORD_NOUN,,HIRAGANA,,,深刻化,しんこくか,,shinkokuka,stanie się bardziej poważny lub ciężki (problem),,,
+19729,WORD_NOUN,,HIRAGANA,,,無実,むじつ,,mijitsu,"niewinność
+brak w rzeczywistości
+niewinny
+fałsz
+nieprawda",,,
+19730,WORD_NOUN,,HIRAGANA,,,皆さん,みなさん,,mina san,"wszyscy
+wszystko
+każdy",,,
+19731,WORD_NOUN,,HIRAGANA,,,造船,ぞうせん,,zousen,"budownictwo okrętowe
+budowa okrętów
+budowa statków
+budowanie okrętu
+budowanie statku",,,
