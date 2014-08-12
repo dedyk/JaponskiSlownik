@@ -1,7 +1,5 @@
 package pl.idedyk.japanese.dictionary.misc;
 
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -11,10 +9,9 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.dto.AdditionalKanjiEntry;
+import pl.idedyk.japanese.dictionary.tools.AdditionalKanjiReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
-
-import com.csvreader.CsvReader;
-import com.csvreader.CsvWriter;
 
 public class DetectTheSameAdditionalKanjiTranslate {
 
@@ -27,11 +24,11 @@ public class DetectTheSameAdditionalKanjiTranslate {
 		String additionalKanjiOuputFile = "input/additional_kanji_output.csv";
 		
 		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(kradfile);		
-		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(kanjidic2, kradFileMap);
+		Map<String, KanjiDic2Entry> kanjiDic2Map = KanjiDic2Reader.readKanjiDic2(kanjidic2, kradFileMap);
 		
-		List<AdditionalKanjiEntry> additionalKanjiEntryList = readAdditionalKanjiEntry(additionalKanjiFile);
+		List<AdditionalKanjiEntry> additionalKanjiEntryList = AdditionalKanjiReaderWriter.readAdditionalKanjiEntry(additionalKanjiFile);
 		
-		Map<String, List<KanjiDic2Entry>> theSameEngMeaning = detectTheSameEngMeaning(kradFileMap, readKanjiDic2);
+		Map<String, List<KanjiDic2Entry>> theSameEngMeaning = detectTheSameEngMeaning(kradFileMap, kanjiDic2Map);
 
 		Iterator<String> theSameEngMeaningIterator = theSameEngMeaning.keySet().iterator();
 		
@@ -53,7 +50,7 @@ public class DetectTheSameAdditionalKanjiTranslate {
 			
 			for (KanjiDic2Entry currentKanjiDic2Entry : theSameEngMeaningKanjiDic2EntryList) {
 				
-				AdditionalKanjiEntry additionalKanjiEntry = findAdditionalKanjiEntry(additionalKanjiEntryList, currentKanjiDic2Entry.getKanji());
+				AdditionalKanjiEntry additionalKanjiEntry = AdditionalKanjiReaderWriter.findAdditionalKanjiEntry(additionalKanjiEntryList, currentKanjiDic2Entry.getKanji());
 				
 				if (additionalKanjiEntry != null) {
 					foundAdditionalKanjiEntryList.add(additionalKanjiEntry);
@@ -128,7 +125,7 @@ public class DetectTheSameAdditionalKanjiTranslate {
 			}
 		}
 		
-		writeAdditionalKanjiList(additionalKanjiEntryList, additionalKanjiOuputFile);
+		AdditionalKanjiReaderWriter.writeAdditionalKanjiList(additionalKanjiEntryList, additionalKanjiOuputFile);
 	}
 	
 	private static Map<String, List<KanjiDic2Entry>> detectTheSameEngMeaning(Map<String, List<String>> kradFileMap, Map<String, KanjiDic2Entry> readKanjiDic2) {
@@ -157,146 +154,5 @@ public class DetectTheSameAdditionalKanjiTranslate {
 		}	
 		
 		return theSameEngMeaning;
-	}
-	
-	private static List<AdditionalKanjiEntry> readAdditionalKanjiEntry(String additionalKanjiFile) throws Exception {
-		
-		List<AdditionalKanjiEntry> result = new ArrayList<AdditionalKanjiEntry>();
-		
-		CsvReader csvReader = new CsvReader(new FileReader(additionalKanjiFile), ',');
-
-		boolean useKanji = true;
-		
-		while (csvReader.readRecord()) {
-			
-			AdditionalKanjiEntry additionalKanjiEntry = new AdditionalKanjiEntry();
-			
-			String id = csvReader.get(0);
-			
-			additionalKanjiEntry.setId(id);
-			additionalKanjiEntry.setDone(csvReader.get(1));
-			additionalKanjiEntry.setKanji(csvReader.get(2));
-			additionalKanjiEntry.setStrokeCount(csvReader.get(3));
-			additionalKanjiEntry.setTranslate(csvReader.get(4));
-			additionalKanjiEntry.setInfo(csvReader.get(5));
-			
-			if (useKanji == true && id.equals("X") == true) {
-				useKanji = false;
-			}
-			
-			additionalKanjiEntry.setUseKanji(useKanji);
-			
-			result.add(additionalKanjiEntry);			
-		}
-		
-		csvReader.close();
-		
-		return result;		
-	}
-	
-	private static AdditionalKanjiEntry findAdditionalKanjiEntry(List<AdditionalKanjiEntry> additionalKanjiEntryList, String kanji) {
-		
-		for (AdditionalKanjiEntry currentAdditionalKanjiEntry : additionalKanjiEntryList) {
-			
-			if (currentAdditionalKanjiEntry.getKanji().equals(kanji) == true) {
-				return currentAdditionalKanjiEntry;
-			}
-		}
-		
-		return null;		
-	}
-	
-	private static void writeAdditionalKanjiList(List<AdditionalKanjiEntry> additionalKanjiEntryList, String additionalKanjiOutputFile) throws Exception {
-		
-		CsvWriter csvWriter = new CsvWriter(new FileWriter(additionalKanjiOutputFile), ',');
-		
-		for (AdditionalKanjiEntry additionalKanjiEntry : additionalKanjiEntryList) {
-			
-			csvWriter.write(additionalKanjiEntry.getId());
-			csvWriter.write(additionalKanjiEntry.getDone());
-			csvWriter.write(additionalKanjiEntry.getKanji());
-			csvWriter.write(additionalKanjiEntry.getStrokeCount());
-			csvWriter.write(additionalKanjiEntry.getTranslate());
-			csvWriter.write(additionalKanjiEntry.getInfo());
-			
-			csvWriter.endRecord();
-		}
-		
-		csvWriter.close();
-	}
-	
-	private static class AdditionalKanjiEntry {
-		
-		private String id;
-		
-		private String done;
-		
-		private String kanji;
-		
-		private String strokeCount;
-		
-		private String translate;
-		
-		private String info;
-		
-		private boolean useKanji;
-
-		public String getId() {
-			return id;
-		}
-
-		public void setId(String id) {
-			this.id = id;
-		}
-
-		public String getDone() {
-			return done;
-		}
-
-		public void setDone(String done) {
-			this.done = done;
-		}
-
-		public String getStrokeCount() {
-			return strokeCount;
-		}
-
-		public void setStrokeCount(String strokeCount) {
-			this.strokeCount = strokeCount;
-		}
-
-		public String getTranslate() {
-			return translate;
-		}
-
-		public void setTranslate(String translate) {
-			this.translate = translate;
-		}
-
-		public String getInfo() {
-			return info;
-		}
-
-		public void setInfo(String info) {
-			this.info = info;
-		}
-
-		public String getKanji() {
-			return kanji;
-		}
-
-		public void setKanji(String kanji) {
-			this.kanji = kanji;
-		}
-
-		public void setUseKanji(boolean useKanji) {
-			this.useKanji = useKanji;
-		}
-
-		@Override
-		public String toString() {
-			return "AdditionalKanjiEntry [id=" + id + ", done=" + done + ", kanji=" + kanji + ", strokeCount="
-					+ strokeCount + ", translate=" + translate + ", info=" + info + ", useKanji=" + useKanji + "]";
-		}
-	}
+	}		
 }
