@@ -50,7 +50,15 @@ public class AdditionalKanjiMisc {
 					System.err.println("o2KanjiDic2Entry: " + o2.getKanji());
 				}
 				
-				return new Integer(o2KanjiDic2Entry.getEngMeaning().size()).compareTo(o1KanjiDic2Entry.getEngMeaning().size());
+				int result = new Integer(o2KanjiDic2Entry.getEngMeaning().size()).compareTo(o1KanjiDic2Entry.getEngMeaning().size());
+				
+				if (result != 0) {
+					return result;
+				}
+				
+				result = new Integer(o1.getId()).compareTo(new Integer(o2.getId()));
+				
+				return result;
 			}
 		});
 		
