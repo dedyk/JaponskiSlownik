@@ -1,10 +1,14 @@
 package pl.idedyk.japanese.dictionary.misc;
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.AdditionalKanjiEntry;
@@ -25,6 +29,9 @@ public class AdditionalKanjiMisc {
 		
 		List<AdditionalKanjiEntry> additionalKanjiEntryList = AdditionalKanjiReaderWriter.readAdditionalKanjiEntry(additionalKanjiFile);
 		
+		/*
+		 * Liczba tlumaczen
+		 * 
 		Collections.sort(additionalKanjiEntryList, new Comparator<AdditionalKanjiEntry>() {
 
 			@Override
@@ -62,6 +69,8 @@ public class AdditionalKanjiMisc {
 			}
 		});
 		
+		// wyswietlenie
+		
 		for (int idx = 0; idx < additionalKanjiEntryList.size(); ++idx) {
 			
 			AdditionalKanjiEntry additionalKanjiEntry = additionalKanjiEntryList.get(idx);
@@ -71,6 +80,63 @@ public class AdditionalKanjiMisc {
 			}
 			
 			System.out.println(additionalKanjiEntry.getId());
+		}
+
+		*/
+		
+		/*
+		 * Te same znaczenia
+		 */
+		
+		Set<String> uniqueKanjiGroups = new HashSet<String>();
+		
+		for (AdditionalKanjiEntry additionalKanjiEntry : additionalKanjiEntryList) {
+			
+			String translate = additionalKanjiEntry.getTranslate();
+			
+			if (translate.startsWith("---") == false) {
+				continue;
+			}
+			
+			List<String> kanjiTheSameTranslateList = new ArrayList<String>();
+			
+			kanjiTheSameTranslateList.add(additionalKanjiEntry.getKanji());
+			
+			String[] translateSplited = translate.split("\n");
+			
+			for (int translateSplitedIdx = 1; translateSplitedIdx < translateSplited.length; translateSplitedIdx++) {
+				kanjiTheSameTranslateList.add(translateSplited[translateSplitedIdx]);
+			}
+			
+			Collections.sort(kanjiTheSameTranslateList);
+			
+			if (uniqueKanjiGroups.contains(kanjiTheSameTranslateList.toString()) == false) {				
+				uniqueKanjiGroups.add(kanjiTheSameTranslateList.toString());				
+			}			
+		}
+		
+		String[] uniqueKanjiGroupsArray = uniqueKanjiGroups.toArray(new String[] { });
+		
+		Arrays.sort(uniqueKanjiGroupsArray, new Comparator<String>() {
+
+			@Override
+			public int compare(String o1, String o2) {
+				
+				Integer o1length = o1.length();
+				Integer o2length = o2.length();
+				
+				int result = o2length.compareTo(o1length);
+				
+				if (result != 0) {
+					return result;
+				}
+				
+				return o2.compareTo(o1);				
+			}
+		});
+		
+		for (String currentUniqueKanjiGroup : uniqueKanjiGroupsArray) {
+			System.out.println(currentUniqueKanjiGroup);
 		}
 	}	
 }
