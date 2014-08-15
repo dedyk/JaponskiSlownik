@@ -542,7 +542,7 @@ dzisiaj
 obecne czasy",,,6943
 235,WORD_ADVERBIAL_NOUN,SUFFIX,HIRAGANA,Genki 1-3,,頃,ごろ,,goro,"czas
 około
-mniej więcej",to samo co toki,,
+mniej więcej",to samo co toki,,5091
 236,"WORD_TEMPORAL_NOUN
 WORD_ADVERBIAL_NOUN",,HIRAGANA,"Genki 1-3
 Genki kanji 1-5",,今晩,こんばん,,konban,"dziś wieczorem
@@ -11839,9 +11839,9 @@ lekceważyć",kogoś,,
 zdrzemną się",,,
 5089,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-21,に,連絡する,れんらくする,ni,renraku suru,kontaktować się z,,,
 5090,WORD_ADVERB,,HIRAGANA,Genki 2-21,,間に,あいだに,,aida ni,w czasie,,,
-5091,WORD_NOUN,,HIRAGANA,Genki 2-21,,-,ころ,,koro,"około
+5091,WORD_ADVERBIAL_NOUN,,HIRAGANA,Genki 2-21,,頃,ころ,,koro,"około
 wtedy
-czas",,,
+czas",to samo co toki,,235
 5092,WORD_ADVERB,,HIRAGANA,Genki 2-21,,兎に角,とにかく,,tonikaku,"w każdym razie
 tak czy inaczej
 tak czy owak
@@ -46818,3 +46818,28 @@ miejscowy",,,
 19814,WORD_NOUN,,HIRAGANA,,,遠,とお,,too,"odległy
 daleki
 oddalony",,,
+19815,WORD_NOUN,,KATAKANA,,,-,ミール,,miiru,"posiłek
+Mir (rosyjska stacja kosmiczna)",,,
+19816,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,前向き,まえむき,,maemuki,"przewidujący
+proaktywny
+zapobiegawczy
+z wyprzedzeniem",,,
+19817,WORD_NOUN,,HIRAGANA,,,労災,ろうさい,,rousai,"uraz wyrządzona w pracy
+uszkodzenie wyrządzone w pracy
+rana wyrządzona w pracy
+choroba zawodowa
+schorzenie zawodowe
+wypadek w pracy
+śmierć w pracy
+ubezpieczenie zawodowe (skrót)",,,
+19818,WORD_NOUN,,HIRAGANA,,,席巻,せっけん,,sekken,"zdobywanie
+podbijanie
+opanowanie
+najechanie
+inwazja
+okupowanie",,,
+19819,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,勝手気まま,かってきまま,,katte kimama,???,,,
+19820,WORD_NOUN,,HIRAGANA,,,過労,かろう,,karou,"przepracowanie
+przemęczenie",,,
