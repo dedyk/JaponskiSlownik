@@ -5303,7 +5303,7 @@ przekłuć
 przeszywać
 dźgać
 kłuć",
-1664,1,彍,-,otrzymywanie ukłonu,
+1664,1,彍,-,ciągnięcie łuku do maksymalnego rozciągnięcia,
 1665,1,鈉,-,"sód (pierwiastek chemiczny z grupy metali alkalicznych w układzie okresowym)
 ostrzenie drewna",
 1666,1,鈄,-,karafka do wina,
@@ -5311,7 +5311,7 @@ ostrzenie drewna",
 topór
 toporek",
 1668,1,鈆,-,ołów,
-1669,1,彄,-,"wygięcie w czasie ukłonu
+1669,1,彄,-,"wygięcie łuku
 rozciągnięcie
 rozciągłość",
 1670,1,鈁,-,frans,"pierwiastek chemiczny,  przypuszczalnie najaktywniejszy metal alkaliczny"
@@ -5398,9 +5398,7 @@ ukrywać
 zwężenie szyjki (np. w butelce, dzbanku i etc)",
 1704,1,弝,-,część uchwytu łuku podczas strzelania,
 1705,1,鉑,-,platyna,"pierwiastek chemiczny z grupy metali przejściowych w układzie okresowym, metal szlachetny"
-1706,1,弨,-,"ukłon
-pokłon
-skłon",
+1706,1,弨,-,łuk,
 1707,1,弮,-,-,
 1708,1,弣,-,"średni
 pośredni
@@ -5411,9 +5409,7 @@ osłaniać
 chować
 powlec
 pochwa",
-1710,1,弤,-,"ukłon
-pokłon
-skłon",
+1710,1,弤,-,łuk,
 1711,1,鉥,-,"igła
 szpilka",
 1712,1,弸,-,"pełny
@@ -5425,16 +5421,24 @@ solidny łuk",
 1714,1,鉿,-,hafn,"pierwiastek chemiczny, metal przejściowy"
 1715,1,鉼,-,"talerz
 płyta",
-1716,,弰,-,,
-1717,,鉶,-,,
-1718,,鉷,-,,
-1719,,忇,-,,
-1720,,忄,-,,
-1721,,銍,-,"---
-鐮",
-1722,,忋,-,,
-1723,,忔,-,,
-1724,,忓,-,,
+1716,1,弰,-,zakończenia łuku,
+1717,1,鉶,-,ofiarny kocioł,
+1718,1,鉷,-,"wywoływanie
+uruchamianie
+wyzwalanie",
+1719,1,忇,-,"wielkie osiągnięcie
+wspaniały wyczyn",
+1720,1,忄,-,"serce
+wariant elementu podstawowego serca",
+1721,1,銍,-,sierp,
+1722,1,忋,-,"podziwiać
+polegać na
+liczyć na
+opierać się",
+1723,1,忔,-,"być zachwycony
+być uszczęśliwiony
+czuć niechęć",
+1724,1,忓,-,zainteresowany,
 1725,1,忒,-,"zmienny
 niestały
 nadmierny
@@ -5443,16 +5447,41 @@ zbytni
 mylić się
 pomylić się
 zbyt",
-1726,,忑,-,,
-1727,,忐,-,,
-1728,,忞,-,,
-1729,,忤,-,,
-1730,,銧,-,,
-1731,,銤,-,"---
-鋨",
-1732,,銥,-,,
-1733,,忡,-,,
-1734,,銠,-,,
+1726,1,忑,-,"bojaźliwy
+straszny
+lękliwy
+nerwowy
+zdenerwowany",
+1727,1,忐,-,"nerwowy
+zdenerwowany
+bojaźliwy
+lękliwy",
+1728,1,忞,-,"wysilać się
+silić się
+niespokojny
+bezsenny
+nerwowy
+wzburzony
+nieświadomy własnych uczuć",
+1729,1,忤,-,"niesubordynowany
+nieposłuszny
+uparty
+uporczywy
+oporny
+hardy
+błędny
+niewłaściwy
+zły",
+1730,1,銧,-,"ostrze miecza
+rad (pierwiastek chemiczny z grupy metali ziem alkalicznych w układzie okresowym)",
+1731,1,銤,-,osm,pierwiastek chemiczny z grupy żelazowców
+1732,1,銥,-,iryd,"pierwiastek chemiczny, metal przejściowy"
+1733,1,忡,-,"strapiony
+zmartwiony
+zaniepokojony
+skrępowany
+niespokojny",
+1734,1,銠,-,rod,"pierwiastek chemiczny z grupy metali przejściowych w układzie okresowym, metal szlachetny"
 1735,1,忢,-,"rozpoznać
 dostrzegać
 rozeznać
@@ -5461,41 +5490,96 @@ oświecenie
 realizować
 rozumieć
 pojmować",
-1736,,忭,-,"---
-昪",
-1737,,忮,-,,
-1738,,忯,-,,
-1739,,銫,-,,
-1740,,銨,-,,
-1741,,忪,-,,
-1742,,銲,-,,
-1743,,忳,-,,
-1744,,忲,-,"---
-奓",
-1745,,銼,-,,
-1746,,銻,-,,
+1736,1,忭,-,"zachwycony
+uszczęśliwiony
+zadowolony
+usatysfakcjonowany",
+1737,1,忮,-,"agresywny
+napastliwy
+przewrotny
+perwersyjny
+uparty
+uporczywy
+oporny",
+1738,1,忯,-,"być czuły
+być delikatny
+być pełen szacunku
+kochać
+miłować
+uwielbiać",
+1739,1,銫,-,cez,"pierwiastek chemiczny, metal alkaliczny"
+1740,1,銨,-,"amon
+amonowy
+jon amonowy",
+1741,1,忪,-,"spokój
+cisza
+uspokojenie
+spokojny
+ciszy",
+1742,1,銲,-,"nagolennik
+zbroja na nogę
+lut
+lutowanie
+spawanie
+spajanie
+łączenie",
+1743,1,忳,-,"udręka
+cierpienie
+męka
+ubolewać
+smucić się
+martwić się
+głupi
+niemądry
+durny
+ignorancki",
+1744,1,忲,-,"ekstrawagancki
+rozrzutny
+przesadny
+nadmierny",
+1745,1,銼,-,"pilnik stolarza
+pilnik cieśli
+piłowanie
+wygładzanie",
+1746,1,銻,-,antymon,pierwiastek chemiczny z grupy metaloidów
 1747,1,鋀,-,tor,pierwiastek chemiczny z grupy aktynowców w układzie okresowym
-1748,,鋁,-,,
-1749,,鋂,-,,
-1750,,鋃,-,,
-1751,,鋅,-,,
-1752,,鋆,-,,
-1753,,鋇,-,,
-1754,,鋈,-,,
-1755,,鋌,-,,
-1756,,鋐,-,,
-1757,,鋕,-,,
-1758,,鋝,-,,
-1759,,鋜,-,,
+1748,1,鋁,-,"glin
+aluminium","pierwiastek chemiczny, metal z bloku p układu okresowego"
+1749,1,鋂,-,"kawałek pucharu
+kawałek kielicha",
+1750,1,鋃,-,lantan,pierwiastek chemiczny należący do bloku f w układzie okresowym
+1751,1,鋅,-,cynk,"pierwiastek chemiczny, metal przejściowy z grupy cynkowców w układzie okresowym"
+1752,1,鋆,-,"złoto (pierwiastek chemiczny o liczbie atomowej 79)
+znak używany w nazywaniu osób",
+1753,1,鋇,-,bar,"pierwiastek chemiczny, metal ziem alkalicznych"
+1754,1,鋈,-,posrebrzenie,
+1755,1,鋌,-,"pośpiech
+śpieszyć się
+pędzić
+sztaba
+blok metalu",
+1756,1,鋐,-,kraj w dzisiejszej prowincji Hubei,
+1757,1,鋕,-,"grawerować
+ryć
+wyryć",
+1758,1,鋝,-,"starożytna miara
+6 oz",
+1759,1,鋜,-,"kajdany
+więzy
+jarzmo",
 1760,1,鋟,-,"rzeźbić
 krajać
 ciosać
 kroić
 ryć",
-1761,,徧,-,,
-1762,,鋨,-,"---
-銤",
-1763,,鋮,-,,
+1761,1,徧,-,"naokoło
+wokół
+dookoła
+wszędzie
+krążyć
+obracać",
+1762,1,鋨,-,osm,pierwiastek chemiczny z grupy żelazowców
+1763,1,鋮,-,imię osoby,
 1764,,徬,-,,
 1765,,徯,-,,
 1766,,鋰,-,,
@@ -5649,8 +5733,7 @@ ustawiać",
 1876,,鑕,-,,
 1877,,奡,-,,
 1878,,奩,-,,
-1879,,鐮,-,"---
-銍",
+1879,1,鐮,-,sierp,
 1880,,鐲,-,,
 1881,,鐳,-,,
 1882,,奵,-,,
@@ -5668,8 +5751,10 @@ młoda dziewczyna",
 1889,,鐄,-,,
 1890,,鐏,-,"---
 錔",
-1891,,奓,-,"---
-忲",
+1891,1,奓,-,"ekstrawagancki
+rozrzutny
+przesadny
+nadmierny",
 1892,,鐓,-,,
 1893,,奛,-,,
 1894,,奞,-,,
@@ -6045,8 +6130,10 @@ układać w kolejności",
 2168,,曏,-,,
 2169,,曈,-,,
 2170,,曛,-,,
-2171,,昪,-,"---
-忭",
+2171,1,昪,-,"zachwycony
+uszczęśliwiony
+zadowolony
+usatysfakcjonowany",
 2172,,昬,-,,
 2173,,昡,-,,
 2174,,昤,-,,
