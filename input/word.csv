@@ -47303,7 +47303,7 @@ otwieranie",ang: open,,
 19936,WORD_NOUN,,KATAKANA,,,-,ポリープ,,poriipu,polip,,,
 19937,WORD_NOUN,,KATAKANA,,,-,ロッジ,,rojji,"domek letniskowy
 chata",ang: lodge,,
-19938,WORD_NOUN,,KATAKANA,,,-,ロビイスト,,robiisuto,lobbysta,,,
+19938,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ロビイスト,,robiisuto,lobbysta,,,
 19939,WORD_NOUN,,HIRAGANA,,,お持て成し,おもてなし,,omotenashi,"gościnność
 serdeczność
 goszczenie
@@ -47352,13 +47352,13 @@ urwać
 zrywać
 oberwać
 obedrzeć
-usuwać",,,
+usuwać",,,19953
 19953,WORD_VERB_U,SUFFIX,HIRAGANA,,,捲る,まくる,,makuru,"pojawić się
 zjawić się
 zwijać
 zwinąć
 podwijać (np. rękawy)
-[końcówka czasownika do wskazywania lekkomyślności w zaniechaniu działania]",,,
+[końcówka czasownika do wskazywania lekkomyślności w zaniechaniu działania]",,,19952
 19954,WORD_NOUN,,HIRAGANA,,,沿岸,えんがん,,engan,"wybrzeże
 brzeg",,,
 19955,WORD_NOUN,,KATAKANA,,,-,エクスプレス,,ekusupuresu,ekspres,,,
@@ -47372,3 +47372,17 @@ chwalebny czyn
 bohaterski czyn
 wybitna służba",,,
 19959,WORD_NOUN,,HIRAGANA,,,神官,しんかん,,shinkan,shintoistyczny mnich,,,
+19960,WORD_NOUN,,KATAKANA,,,-,ブレーキ,,bureeki,hamulec,ang: brake,,
+19961,WORD_NOUN,,HIRAGANA,,,地方分権,ちほうぶんけん,,chihou bunken,"decentralizacja władzy
+decentralizacja mocy
+decentralizacja siły",,,
+19962,WORD_NOUN,,HIRAGANA,,,涙声,なみだごえ,,namidagoe,"płaczliwy głos
+zapłakany głos",,,
+19963,WORD_NOUN,,HIRAGANA,,,質疑,しつぎ,,shitsugi,"pytanie
+zapytanie
+sprawa
+zagadnienie
+interpelacja",,,
+19964,WORD_VERB_U,,HIRAGANA,,,追い付く,おいつく,,oitsuku,"doganiać
+dopędzać
+dopaść",,,
