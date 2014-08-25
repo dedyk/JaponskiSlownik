@@ -1071,7 +1071,7 @@ Genki kanji 1-7",,小さい,ちいさい,,chiisai,"mały
 drobny
 niewielki
 młody",,,
-416,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,-,つまらない,,tsumaranai,"nieinteresujący
+416,WORD_ADJECTIVE_I,,HIRAGANA,Genki 1-5,,詰らない,つまらない,,tsumaranai,"nieinteresujący
 nudny
 nic nie znaczący
 błahy
@@ -1090,7 +1090,7 @@ prosty",problem / człowiek,,
 420,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,嫌い,きらい,,kirai,"nie lubić
 nielubiany
 znienawidzony",,,
-421,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,-,きれい,,kirei,"ładny
+421,WORD_ADJECTIVE_NA,,HIRAGANA,Genki 1-5,,奇麗,きれい,,kirei,"ładny
 czysty
 piękny
 uporządkowany
@@ -47847,9 +47847,9 @@ podstawa",ang: foundation,,
 20109,WORD_EMPTY,PREFIX,KATAKANA,,,-,マイ,,mai,"mój
 osobisty
 prywatny",ang: my,,
-,WORD_COUNTERS,,HIRAGANA,,,ヵ月,かげつ,,kagetsu,liczba miesięcy,,,
-,WORD_COUNTERS,,HIRAGANA,,,ヶ月,かげつ,,kagetsu,liczba miesięcy,,,
-,WORD_NOUN,,HIRAGANA,,,乱闘,らんとう,,rantou,"bójka
+20110,WORD_COUNTERS,,HIRAGANA,,,ヵ月,かげつ,,kagetsu,liczba miesięcy,,,
+20111,WORD_COUNTERS,,HIRAGANA,,,ヶ月,かげつ,,kagetsu,liczba miesięcy,,,
+20112,WORD_NOUN,,HIRAGANA,,,乱闘,らんとう,,rantou,"bójka
 burda
 zwada
 walka
@@ -47857,21 +47857,50 @@ starcie
 szamotanina
 rozrabianie
 awanturowanie się",,,
-,WORD_NOUN,,HIRAGANA,,,件数,けんすう,,kensuu,"liczba zdarzeń
+20113,WORD_NOUN,,HIRAGANA,,,件数,けんすう,,kensuu,"liczba zdarzeń
 liczba wydarzeń","np. wypadków, przestępstwo, spotkań, budowanych mieszkań, wejść na stronę www i etc)",,
-,WORD_NOUN,,HIRAGANA,,,信用金庫,しんようきんこ,,shinyoukinko,"spółdzielcza kasa pożyczkowa
+20114,WORD_NOUN,,HIRAGANA,,,信用金庫,しんようきんこ,,shin'youkinko,"spółdzielcza kasa pożyczkowa
 spółdzielnia kredytowa
 związek kredytowy",,,
-,WORD_NOUN,,HIRAGANA,,,充当,じゅうとう,,juutou,"przydział
+20115,WORD_NOUN,,HIRAGANA,,,充当,じゅうとう,,juutou,"przydział
 alokacja
 asygnowanie
 przeznaczenie",,,
-,WORD_NOUN,,HIRAGANA,,,充当金,じゅうとうきん,,juutoukin,"asygnowanie
+20116,WORD_NOUN,,HIRAGANA,,,充当金,じゅうとうきん,,juutoukin,"asygnowanie
 przeznaczenie",,,
-,WORD_NOUN,,HIRAGANA,,,単産,たんさん,,tansan,branżowy związek zawodowy,,,
-,"WORD_ADJECTIVE_NA
+20117,WORD_NOUN,,HIRAGANA,,,単産,たんさん,,tansan,branżowy związek zawodowy,,,
+20118,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,平穏,へいおん,,heion,"spokojny
 cichy
 kojący",,,
-,WORD_NOUN,,HIRAGANA,,,海産物,かいさんぶつ,,kaisanbutsu,produkt morski,,,
-,WORD_NOUN,,HIRAGANA,,,筆記用具,ひっきようぐ,,hikkiyougu,przyrządy do pisania,"np. długopis, ołówek, pióro",,
+20119,WORD_NOUN,,HIRAGANA,,,海産物,かいさんぶつ,,kaisanbutsu,produkt morski,,,
+20120,WORD_NOUN,,HIRAGANA,,,筆記用具,ひっきようぐ,,hikkiyougu,przyrządy do pisania,"np. długopis, ołówek, pióro",,
+20121,WORD_ADJECTIVE_NA,,HIRAGANA,,,綺麗,きれい,,kirei,"ładny
+czysty
+piękny
+uporządkowany
+dokładny
+wszystko
+idealnie",,,
+20122,WORD_NOUN,,HIRAGANA,,,美容師,びようし,,biyoushi,"kosmetyczka
+fryzjer
+specjalista od urody",,,
+20123,WORD_NOUN,,HIRAGANA,,,西日,にしび,,nishibi,zachodące słońce,,,
+20124,WORD_NOUN,,HIRAGANA,,,見え隠れ,みえがくれ,,miegakure,pojawienie się i zniknięcie,,,
+20125,WORD_ADJECTIVE_I,,HIRAGANA,,,詰まらない,つまらない,,tsumaranai,"nieinteresujący
+nudny
+nic nie znaczący
+błahy
+niewiele wart",,,
+20126,WORD_NOUN,,HIRAGANA,,,離反,りはん,,rihan,"separacja
+osamotnienie
+alienacja
+wyobcowanie",,,
+20127,WORD_NOUN,,HIRAGANA,,,選任,せんにん,,sennin,"nominacja
+nominowanie
+mianowanie (osoby na stanowisko)
+desygnacja
+wybór
+selekcja
+elekcja
+wyznaczanie",,,
