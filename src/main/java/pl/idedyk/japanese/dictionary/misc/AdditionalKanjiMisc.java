@@ -7,25 +7,22 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
-import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.AdditionalKanjiEntry;
 import pl.idedyk.japanese.dictionary.tools.AdditionalKanjiReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
 public class AdditionalKanjiMisc {
 
 	public static void main(String[] args) throws Exception{
 		
-		String kradfile = "../JapaneseDictionary_additional/kradfile";
-		String kanjidic2 = "../JapaneseDictionary_additional/kanjidic2.xml";
+		//String kradfile = "../JapaneseDictionary_additional/kradfile";
+		//String kanjidic2 = "../JapaneseDictionary_additional/kanjidic2.xml";
 		
 		String additionalKanjiFile = "input/additional_kanji.csv";
 
-		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(kradfile);		
-		final Map<String, KanjiDic2Entry> kanjiDic2Map = KanjiDic2Reader.readKanjiDic2(kanjidic2, kradFileMap);
+		//Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(kradfile);		
+		//final Map<String, KanjiDic2Entry> kanjiDic2Map = KanjiDic2Reader.readKanjiDic2(kanjidic2, kradFileMap);
 		
 		List<AdditionalKanjiEntry> additionalKanjiEntryList = AdditionalKanjiReaderWriter.readAdditionalKanjiEntry(additionalKanjiFile);
 		

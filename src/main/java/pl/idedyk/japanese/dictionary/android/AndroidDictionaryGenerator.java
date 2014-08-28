@@ -66,6 +66,7 @@ public class AndroidDictionaryGenerator {
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader
 				.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
+		@SuppressWarnings("unused")
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedict, jmedictCommon, jmedictName,
 				"input/word.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv",
 				"output/transitive_intransitive_pairs.csv");
@@ -75,8 +76,8 @@ public class AndroidDictionaryGenerator {
 		generateKanjiRadical("../JapaneseDictionary_additional/radkfile", "output/radical.csv");
 
 		final String zinniaTomoeSlimBinaryFile = "output/kanji_recognizer.model.db";
-
-		List<KanjiEntry> kanjiEntries = generateKanjiEntries(dictionary, jmedictCommon, "input/kanji.csv",
+		
+		List<KanjiEntry> kanjiEntries = generateKanjiEntries(/* dictionary, jmedictCommon, */ "input/kanji.csv",
 				"../JapaneseDictionary_additional/kanjidic2.xml", "../JapaneseDictionary_additional/kradfile",
 				"../JapaneseDictionary_additional/kanjivg", "output/kanji.csv");
 
@@ -208,8 +209,8 @@ public class AndroidDictionaryGenerator {
 
 	}
 
-	private static List<KanjiEntry> generateKanjiEntries(List<PolishJapaneseEntry> dictionary,
-			TreeMap<String, EDictEntry> jmedictCommon, String sourceKanjiName, String sourceKanjiDic2FileName,
+	private static List<KanjiEntry> generateKanjiEntries(/* List<PolishJapaneseEntry> dictionary,
+			TreeMap<String, EDictEntry> jmedictCommon, */ String sourceKanjiName, String sourceKanjiDic2FileName,
 			String sourceKradFileName, String kanjivgDir, String destinationFileName) throws Exception {
 
 		System.out.println("generateKanjiEntries");
@@ -226,8 +227,8 @@ public class AndroidDictionaryGenerator {
 		System.out.println("generateKanjiEntries: validateDuplicateKanjiEntriesList");
 		Validator.validateDuplicateKanjiEntriesList(kanjiEntries);
 
-		System.out.println("generateKanjiEntries: generateAdditionalKanjiEntries");
-		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2, "input/osjp.csv", jmedictCommon);
+		// System.out.println("generateKanjiEntries: generateAdditionalKanjiEntries");
+		// generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2, "input/osjp.csv", jmedictCommon);
 
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
 
@@ -249,6 +250,7 @@ public class AndroidDictionaryGenerator {
 		return kanjiEntries;
 	}
 
+	@SuppressWarnings("unused")
 	private static void generateAdditionalKanjiEntries(List<PolishJapaneseEntry> dictionary,
 			List<KanjiEntry> kanjiEntries, Map<String, KanjiDic2Entry> readKanjiDic2, String osjpFile,
 			TreeMap<String, EDictEntry> jmedictCommon) throws Exception {
