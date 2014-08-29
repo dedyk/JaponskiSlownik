@@ -1,5 +1,7 @@
 package pl.idedyk.japanese.dictionary.tools;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
@@ -13,6 +15,7 @@ import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
+import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 
@@ -25,6 +28,7 @@ public class ShowAdditionalKanji {
 		String sourceKanjiDic2FileName = "../JapaneseDictionary_additional/kanjidic2.xml";
 		String sourceKanjiName = "input/kanji.csv";
 		String edictCommonFileName = "../JapaneseDictionary_additional/edict_sub-utf8";
+		String kanjivgDir = "../JapaneseDictionary_additional/kanjivg";
 
 		System.out.println("generateKanjiEntries");
 
@@ -46,7 +50,23 @@ public class ShowAdditionalKanji {
 		System.out.println("generateKanjiEntries: readEdict");
 		// read edict common
 		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict(edictCommonFileName);
-
+		
+		System.out.println("generateKanjiEntries: readKanjivg");
+		
+		File kanjivgDirFile = new File(kanjivgDir);
+		
+		File[] kanjivgDirFileList = kanjivgDirFile.listFiles();
+		
+		List<KanjivgEntry> kanjivgEntryList = new ArrayList<KanjivgEntry>();
+		
+		for (File currentKanjivgFile : kanjivgDirFileList) {
+			
+			KanjivgEntry kanjivgEntry = KanjivgReader.readKanjivgFile(currentKanjivgFile);
+			
+			kanjivgEntryList.add(kanjivgEntry);
+			
+		}
+		
 		/*
 		Set<String> kanjiEntriesSet = new HashSet<String>();
 
@@ -218,7 +238,33 @@ public class ShowAdditionalKanji {
 		}
 
 		// generate common word additional kanji end
+		
+		// generate additional kanjivg
+		for (KanjivgEntry kanjivgEntry : kanjivgEntryList) {
+			
+			String kanji = kanjivgEntry.getKanji();
+			
+			if (kanji == null) {
+				continue;
+			}
 
+			if (alreadySetKanji.contains(kanji)) {
+				continue;
+			}
+
+			alreadySetKanji.add(kanji);
+
+			Integer kanjiCountMapInteger = kanjiCountMap.get(kanji);
+
+			if (kanjiCountMapInteger == null) {
+				kanjiCountMapInteger = new Integer(0);
+			}
+
+			kanjiCountMap.put(kanji, kanjiCountMapInteger);
+		}
+
+		// kanjivg end
+		
 		String[] kanjiArray = new String[kanjiCountMap.size()];
 
 		kanjiCountMap.keySet().toArray(kanjiArray);

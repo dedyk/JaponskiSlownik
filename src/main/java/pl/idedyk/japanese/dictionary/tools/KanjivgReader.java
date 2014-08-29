@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.dom4j.Document;
 import org.dom4j.Element;
+import org.dom4j.Node;
 import org.dom4j.XPath;
 import org.dom4j.io.SAXReader;
 
@@ -33,7 +34,17 @@ public class KanjivgReader {
 
 		Document document = reader.read(file);
 		
-		XPath pathXPath = createXPath(document, "/svg:svg/svg:g/*[@kvg:element]//svg:path");
+		XPath pathXPath = createXPath(document, "/svg:svg/svg:g/*[@kvg:element]/@kvg:element");
+		
+		Node kanjiNameNode = pathXPath.selectSingleNode(document);
+		
+		String kanji = null;
+		
+		if (kanjiNameNode != null) {			
+			kanji = kanjiNameNode.getText();			
+		}		
+		
+		pathXPath = createXPath(document, "/svg:svg/svg:g/*[@kvg:element]//svg:path");
 		
 		List<?> pathNodes = pathXPath.selectNodes(document);
 		
@@ -64,6 +75,7 @@ public class KanjivgReader {
 		
 		KanjivgEntry kanjivgEntry = new KanjivgEntry();
 
+		kanjivgEntry.setKanji(kanji);
 		kanjivgEntry.setStrokePaths(strokePaths);
 		
 		return kanjivgEntry;
