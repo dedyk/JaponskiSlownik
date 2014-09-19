@@ -69,6 +69,19 @@ public class Validator {
 			List<String> realRomajiList = new ArrayList<String>();
 
 			boolean ignoreError = false;
+			
+			if (romajiList.size() == 0) {				
+				throw new DictionaryException("Empty romaji: " + polishJapaneseEntry);
+				
+				/*
+				KanaWord currentKanaAsKanaAsKanaWord = kanaHelper.convertKanaStringIntoKanaWord(kanaList.get(0),
+						kanaCache, false);
+
+				String currentKanaAsRomaji = kanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
+
+				System.out.println(currentKanaAsRomaji);
+				*/
+			}
 
 			for (int idx = 0; idx < romajiList.size(); ++idx) {
 
@@ -125,24 +138,27 @@ public class Validator {
 					}
 				}
 
-				// is hiragana word
-				KanaWord currentKanaAsRomajiAsHiraganaWord = kanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache,
-						currentKanaAsRomaji);
-				String currentKanaAsRomajiAsHiraganaWordAsAgainKana = kanaHelper
-						.createKanaString(currentKanaAsRomajiAsHiraganaWord);
+				if (polishJapaneseEntry.getWordType() != WordType.HIRAGANA_EXCEPTION && polishJapaneseEntry.getWordType() != WordType.KATAKANA_EXCEPTION) {
 
-				// is katakana word
-				KanaWord currentKanaAsRomajiAsKatakanaWord = kanaHelper.convertRomajiIntoKatakanaWord(katakanaCache,
-						currentKanaAsRomaji);
-				String currentKanaAsRomajiAsKatakanaWordAsAgainKana = kanaHelper
-						.createKanaString(currentKanaAsRomajiAsKatakanaWord);
-
-				if (ignoreError == false && currentKana.equals(currentKanaAsRomajiAsHiraganaWordAsAgainKana) == false
-						&& currentKana.equals(currentKanaAsRomajiAsKatakanaWordAsAgainKana) == false) {
-
-					throw new DictionaryException("Validate error for word: " + currentKana + " ("
-							+ currentKanaAsRomaji + ") vs " + currentKanaAsRomajiAsHiraganaWordAsAgainKana + " or "
-							+ currentKanaAsRomajiAsKatakanaWordAsAgainKana);
+					// is hiragana word
+					KanaWord currentKanaAsRomajiAsHiraganaWord = kanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache,
+							currentKanaAsRomaji);
+					String currentKanaAsRomajiAsHiraganaWordAsAgainKana = kanaHelper
+							.createKanaString(currentKanaAsRomajiAsHiraganaWord);
+	
+					// is katakana word
+					KanaWord currentKanaAsRomajiAsKatakanaWord = kanaHelper.convertRomajiIntoKatakanaWord(katakanaCache,
+							currentKanaAsRomaji);
+					String currentKanaAsRomajiAsKatakanaWordAsAgainKana = kanaHelper
+							.createKanaString(currentKanaAsRomajiAsKatakanaWord);
+	
+					if (ignoreError == false && currentKana.equals(currentKanaAsRomajiAsHiraganaWordAsAgainKana) == false
+							&& currentKana.equals(currentKanaAsRomajiAsKatakanaWordAsAgainKana) == false) {
+	
+						throw new DictionaryException("Validate error for word: " + currentKana + " ("
+								+ currentKanaAsRomaji + ") vs " + currentKanaAsRomajiAsHiraganaWordAsAgainKana + " or "
+								+ currentKanaAsRomajiAsKatakanaWordAsAgainKana);
+					}
 				}
 			}
 
