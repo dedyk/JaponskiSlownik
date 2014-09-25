@@ -5,6 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -96,15 +98,10 @@ public class TatoebaSentencesParser {
 		Iterator<String> groupIterator = linksMap.keySet().iterator();
 		
 		Map<String, List<TatoebaSentence>> filteredLinksMap = new TreeMap<String, List<TatoebaSentence>>();
-		Map<String, TatoebaSentence> filteredTatoebaSentenceMap = new TreeMap<String, TatoebaSentence>();
 		
 		while (groupIterator.hasNext() == true) {			
 			String groupId = groupIterator.next();
-			
-			if (groupId.equals("2262517") == true) {
-				System.out.println("AAAAA");
-			}
-			
+						
 			List<TatoebaSentence> tatoebaSentenceList = linksMap.get(groupId);
 			
 			boolean containtPolishSentece = false;
@@ -126,31 +123,39 @@ public class TatoebaSentencesParser {
 			}
 			
 			if (containtPolishSentece == true && containtJapaneseSentece == true) {
-								
-				filteredLinksMap.put(groupId, tatoebaSentenceList);
 				
-				for (TatoebaSentence tatoebaSentence : tatoebaSentenceList) {
-					
-					if (tatoebaSentence.getGroupId().equals("2262517") == true) {
-						System.out.println("BBBBBB");
+				Collections.sort(tatoebaSentenceList, new Comparator<TatoebaSentence>() {
+
+					@Override
+					public int compare(TatoebaSentence o1, TatoebaSentence o2) {
+						
+						int compareTo = o2.getLang().compareTo(o1.getLang());
+						
+						if (compareTo != 0) {
+							return compareTo;
+						}
+						
+						return o1.getSentence().compareTo(o2.getSentence());
 					}
-					
-					filteredTatoebaSentenceMap.put(tatoebaSentence.getId(), tatoebaSentence);
-				}
+				});
+				
+				filteredLinksMap.put(groupId, tatoebaSentenceList);
 			}
 		}		
 		
 		linksMap = filteredLinksMap;
+		
+		Map<String, TatoebaSentence> filteredTatoebaSentenceMap = new TreeMap<String, TatoebaSentence>();
+		
+		for (List<TatoebaSentence> currentTatoebeSentece : linksMap.values()) {
+			
+			for (TatoebaSentence tatoebaSentence : currentTatoebeSentece) {
+				filteredTatoebaSentenceMap.put(tatoebaSentence.getId(), tatoebaSentence);
+			}	
+		}
+		
 		tatoebaSentenceMap = filteredTatoebaSentenceMap;
 		
-		List<TatoebaSentence> aaaa = linksMap.get("2262517");
-		
-		int a = 0;
-		
-		a++;
-
-		
-		/*
 		// parsowanie pliku jpn_indices.csv
 		File jpnIndicesFile = new File(tatoebaSentencesDir, "jpn_indices.csv");
 		
@@ -200,7 +205,6 @@ public class TatoebaSentencesParser {
 				}				
 			}			
 		}
-		*/		
 	}
 	
 	private List<String> tokenWord(String word) {
@@ -236,14 +240,12 @@ public class TatoebaSentencesParser {
 			
 			String groupId = tatoebaSentence.getGroupId();
 			
-			if (uniqueGroupIds.contains(groupId) == false) {
+			if (uniqueGroupIds.contains(groupId) == false && linksMap.containsKey(groupId) == true) {
 				
 				uniqueGroupIds.add(groupId);
 				
 				List<TatoebaSentence> tatoebeSentenceForGroup = linksMap.get(groupId);
-				
-				System.out.println(groupId + " - " + tatoebeSentenceForGroup);
-				
+								
 				result.add(tatoebeSentenceForGroup);
 			}			
 		}
