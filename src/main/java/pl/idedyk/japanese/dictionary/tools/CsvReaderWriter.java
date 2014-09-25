@@ -22,6 +22,7 @@ import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
+import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -711,5 +712,22 @@ public class CsvReaderWriter {
 		csvReader.close();
 
 		return result;
+	}
+
+	public static void writeTatoebaSentenceList(String sentencesDestinationFileName, List<TatoebaSentence> tatoebaSentenceList) throws IOException {
+		
+		CsvWriter csvWriter = new CsvWriter(new FileWriter(sentencesDestinationFileName), ',');
+		
+		for (TatoebaSentence tatoebaSentence : tatoebaSentenceList) {
+			
+			csvWriter.write(tatoebaSentence.getId());			
+			csvWriter.write(tatoebaSentence.getLang());
+			csvWriter.write(tatoebaSentence.getSentence());
+
+			csvWriter.endRecord();			
+		}
+		
+		
+		csvWriter.close();
 	}
 }

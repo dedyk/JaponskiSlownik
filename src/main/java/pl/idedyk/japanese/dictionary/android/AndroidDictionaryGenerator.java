@@ -70,6 +70,8 @@ public class AndroidDictionaryGenerator {
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedict, jmedictCommon, jmedictName,
 				"input/word.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv",
 				"output/transitive_intransitive_pairs.csv");
+		
+		//generateExampleSentence(dictionary, "../JapaneseDictionary_additional/tatoeba", "output/sentences.csv");
 
 		generateKanaEntries("../JapaneseDictionary_additional/kanjivg", "output/kana.csv");
 
@@ -109,7 +111,6 @@ public class AndroidDictionaryGenerator {
 				.parsePolishJapaneseEntriesFromCsv(sourceFileName);
 
 		// validate
-
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict,
 				jmedictName);
@@ -147,6 +148,23 @@ public class AndroidDictionaryGenerator {
 
 		return result;
 	}
+	
+	/*
+	private static void generateExampleSentence(List<PolishJapaneseEntry> dictionary, String tatoebaSentencesDir, String destinationFileName) throws Exception {
+		
+		System.out.println("generateExampleSentence");
+		
+		TatoebaSentencesParser tatoebaSentencesParser = new TatoebaSentencesParser(tatoebaSentencesDir);
+		
+		tatoebaSentencesParser.parse();
+		
+		//List<List<TatoebaSentence>> sentenceExamples = tatoebaSentencesParser.getSentenceExamples("食べる");
+
+		
+		
+		System.exit(1);
+	}
+	*/
 
 	private static void generateKanaEntries(String kanjivgDir, String destinationFileName) throws Exception {
 

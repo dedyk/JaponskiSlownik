@@ -4,17 +4,15 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
-import java.util.TreeSet;
 
+import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
 import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 
 import com.csvreader.CsvReader;
@@ -25,7 +23,7 @@ public class TatoebaSentencesParser {
 	
 	private Map<String, TatoebaSentence> tatoebaSentenceMap;
 	private Map<String, List<TatoebaSentence>> linksMap;
-	private Map<String, List<TatoebaSentence>> keyWordsAndSentenceMap;
+	private Map<String, List<String>> keyWordsAndSentenceMap;
 	
 	public TatoebaSentencesParser(String tatoebaSentencesDir) {
 		this.tatoebaSentencesDir = tatoebaSentencesDir;
@@ -86,9 +84,7 @@ public class TatoebaSentencesParser {
 				
 				linksMap.put(groupId, groupList);
 			}
-			
-			tatoebaSentence.setGroupId(groupId);
-			
+						
 			groupList.add(tatoebaSentence);
 		}
 		
@@ -177,33 +173,40 @@ public class TatoebaSentencesParser {
 		
 		csvReader.close();
 		
-		// cache'owanie po slowach
-		keyWordsAndSentenceMap = new TreeMap<String, List<TatoebaSentence>>();
+		// cache'owanie po slowach kluczowych i grupach
+		keyWordsAndSentenceMap = new TreeMap<String, List<String>>();
 		
-		Collection<TatoebaSentence> tatoebaSentenceMapValues = tatoebaSentenceMap.values();
+		groupIterator = linksMap.keySet().iterator();
 		
-		for (TatoebaSentence tatoebaSentence : tatoebaSentenceMapValues) {
+		while (groupIterator.hasNext() == true) {
 			
-			List<String> sentenceToken = tatoebaSentence.getSentenceToken();
-			
-			if (sentenceToken == null || sentenceToken.size() == 0) {
-				continue;
-			}
-			
-			for (String currentToken : sentenceToken) {
+			String groupId = groupIterator.next();
+						
+			List<TatoebaSentence> tatoebaSentenceList = linksMap.get(groupId);
+
+			for (TatoebaSentence tatoebaSentence : tatoebaSentenceList) {
 				
-				List<TatoebaSentence> tatoebaSentenceListForToken = keyWordsAndSentenceMap.get(currentToken);
+				List<String> sentenceToken = tatoebaSentence.getSentenceToken();
 				
-				if (tatoebaSentenceListForToken == null) {
-					tatoebaSentenceListForToken = new ArrayList<TatoebaSentence>();
-					
-					keyWordsAndSentenceMap.put(currentToken, tatoebaSentenceListForToken);
+				if (sentenceToken == null || sentenceToken.size() == 0) {
+					continue;
 				}
-				
-				if (tatoebaSentenceListForToken.contains(tatoebaSentence) == false) {					
-					tatoebaSentenceListForToken.add(tatoebaSentence);
+
+				for (String currentToken : sentenceToken) {
+					
+					List<String> keyWordsForGroups = keyWordsAndSentenceMap.get(currentToken);
+					
+					if (keyWordsForGroups == null) {
+						keyWordsForGroups = new ArrayList<String>();
+						
+						keyWordsAndSentenceMap.put(currentToken, keyWordsForGroups);
+					}
+					
+					if (keyWordsForGroups.contains(groupId) == false) {
+						keyWordsForGroups.add(groupId);
+					}					
 				}				
-			}			
+			}
 		}
 	}
 	
@@ -224,30 +227,26 @@ public class TatoebaSentencesParser {
 		return result;
 	}
 	
-	public List<List<TatoebaSentence>> getSentenceExamples(String word) {
+	public List<GroupWithTatoebaSentenceList> getExampleSentences(String word) {
 		
-		List<TatoebaSentence> tatoebeSentence = keyWordsAndSentenceMap.get(word);
+		List<String> groupsWithWord = keyWordsAndSentenceMap.get(word);
 		
-		if (tatoebeSentence == null || tatoebeSentence.size() == 0) {
+		if (groupsWithWord == null || groupsWithWord.size() == 0) {
 			return null;
 		}
 		
-		List<List<TatoebaSentence>> result = new ArrayList<List<TatoebaSentence>>();
+		List<GroupWithTatoebaSentenceList> result = new ArrayList<GroupWithTatoebaSentenceList>();
 		
-		Set<String> uniqueGroupIds = new TreeSet<String>();
-		
-		for (TatoebaSentence tatoebaSentence : tatoebeSentence) {
+		for (String currentGroupId : groupsWithWord) {
 			
-			String groupId = tatoebaSentence.getGroupId();
+			List<TatoebaSentence> tatoebaSentenceListForGroup = linksMap.get(currentGroupId);
 			
-			if (uniqueGroupIds.contains(groupId) == false && linksMap.containsKey(groupId) == true) {
-				
-				uniqueGroupIds.add(groupId);
-				
-				List<TatoebaSentence> tatoebeSentenceForGroup = linksMap.get(groupId);
-								
-				result.add(tatoebeSentenceForGroup);
-			}			
+			GroupWithTatoebaSentenceList groupWithTatoebaSentenceList = new GroupWithTatoebaSentenceList();
+			
+			groupWithTatoebaSentenceList.setGroupId(currentGroupId);
+			groupWithTatoebaSentenceList.setTatoebaSentenceList(tatoebaSentenceListForGroup);
+			
+			result.add(groupWithTatoebaSentenceList);
 		}
 		
 		return result;
@@ -259,15 +258,13 @@ public class TatoebaSentencesParser {
 		
 		tatoebaSentencesParser.parse();
 		
-		List<List<TatoebaSentence>> sentenceExamples = tatoebaSentencesParser.getSentenceExamples("食べる");
+		List<GroupWithTatoebaSentenceList> sentenceExamples = tatoebaSentencesParser.getExampleSentences("食べる");
 		
-		for (List<TatoebaSentence> currentSentenceGroup : sentenceExamples) {
+		for (GroupWithTatoebaSentenceList currentSentenceGroup : sentenceExamples) {
 			
-			String groupId = currentSentenceGroup.get(0).getGroupId();
+			System.out.println("Group id: " + currentSentenceGroup.getGroupId());
 			
-			System.out.println("Group id: " + groupId);
-			
-			for (TatoebaSentence tatoebaSentence : currentSentenceGroup) {
+			for (TatoebaSentence tatoebaSentence : currentSentenceGroup.getTatoebaSentenceList()) {
 				System.out.println(tatoebaSentence.getSentence());
 			}
 			
