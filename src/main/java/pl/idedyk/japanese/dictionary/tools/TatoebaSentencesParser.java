@@ -4,9 +4,11 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.StringTokenizer;
 import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
@@ -17,6 +19,10 @@ public class TatoebaSentencesParser {
 	
 	private String tatoebaSentencesDir;
 	
+	private Map<String, TatoebaSentence> tatoebaSentenceMap;
+	private Map<String, List<TatoebaSentence>> linksMap;
+	private Map<String, List<TatoebaSentence>> keyWordsAndSentenceMap;
+	
 	public TatoebaSentencesParser(String tatoebaSentencesDir) {
 		this.tatoebaSentencesDir = tatoebaSentencesDir;
 	}
@@ -24,7 +30,7 @@ public class TatoebaSentencesParser {
 	public void parse() throws IOException {
 		
 		// parsowanie pliku sentences.csv
-		Map<String, TatoebaSentence> tatoebaSentenceMap = new TreeMap<String, TatoebaSentence>();
+		tatoebaSentenceMap = new TreeMap<String, TatoebaSentence>();
 		
 		File sentencesFile = new File(tatoebaSentencesDir, "sentences.csv");
 		
@@ -52,7 +58,7 @@ public class TatoebaSentencesParser {
 		csvReader.close();
 		
 		// parsowanie pliku links.csv
-		Map<String, List<TatoebaSentence>> linksMap = new TreeMap<String, List<TatoebaSentence>>();
+		linksMap = new TreeMap<String, List<TatoebaSentence>>();
 		
 		File linksFile = new File(tatoebaSentencesDir, "links.csv");
 		
@@ -77,6 +83,8 @@ public class TatoebaSentencesParser {
 				linksMap.put(groupId, groupList);
 			}
 			
+			tatoebaSentence.setGroupId(groupId);
+			
 			groupList.add(tatoebaSentence);
 		}
 		
@@ -86,6 +94,7 @@ public class TatoebaSentencesParser {
 		Iterator<String> groupIterator = linksMap.keySet().iterator();
 		
 		Map<String, List<TatoebaSentence>> filteredLinksMap = new TreeMap<String, List<TatoebaSentence>>();
+		Map<String, TatoebaSentence> filteredTatoebaSentenceMap = new TreeMap<String, TatoebaSentence>();
 		
 		while (groupIterator.hasNext() == true) {			
 			String groupId = groupIterator.next();
@@ -106,16 +115,72 @@ public class TatoebaSentencesParser {
 				}
 				
 				if (containtPolishSentece == true && containtJapaneseSentece == true) {
-					filteredLinksMap.put(groupId, tatoebaSentenceList);
+					break;
 				}				
-			}			
+			}
+			
+			if (containtPolishSentece == true && containtJapaneseSentece == true) {
+				filteredLinksMap.put(groupId, tatoebaSentenceList);
+				
+				for (TatoebaSentence tatoebaSentence : tatoebaSentenceList) {
+					filteredTatoebaSentenceMap.put(tatoebaSentence.getId(), tatoebaSentence);
+				}
+			}
 		}		
 		
 		linksMap = filteredLinksMap;
+		tatoebaSentenceMap = filteredTatoebaSentenceMap;
 		
 		// parsowanie pliku jpn_indices.csv
+		File jpnIndicesFile = new File(tatoebaSentencesDir, "jpn_indices.csv");
 		
+		csvReader = new CsvReader(new FileReader(jpnIndicesFile), '\t');
+		
+		while (csvReader.readRecord()) {
+			
+			String sentenceId = csvReader.get(0);			
+			String japaneseIndices = csvReader.get(2);
+			
+			TatoebaSentence tatoebaSentence = tatoebaSentenceMap.get(sentenceId);
+			
+			if (tatoebaSentence == null) {
+				continue;
+			}
+						
+			tatoebaSentence.setSentenceToken(tokenWord(japaneseIndices));
+		}
+		
+		csvReader.close();
+		
+		// cache'owanie po slowach
+		keyWordsAndSentenceMap = new TreeMap<String, List<TatoebaSentence>>();
+		
+		Collection<TatoebaSentence> tatoebaSentenceMapValues = tatoebaSentenceMap.values();
+		
+		for (TatoebaSentence tatoebaSentence : tatoebaSentenceMapValues) {
+			
+			
+			
+		}		
 	}
+	
+	public List<String> tokenWord(String word) {
+		
+		if (word == null) {
+			return null;
+		}
+		
+		List<String> result = new ArrayList<String>();
+		
+		StringTokenizer st = new StringTokenizer(word, " \t\n\r\f.,:;()|[]\"'?!-–{}");
+		
+		while (st.hasMoreTokens()) {
+			result.add(st.nextToken());
+		}
+		
+		return result;
+	}
+
 	
 	public static void main(String[] args) throws Exception {
 		
