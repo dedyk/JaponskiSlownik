@@ -8,8 +8,10 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 
@@ -89,7 +91,7 @@ public class TatoebaSentencesParser {
 		}
 		
 		csvReader.close();
-		
+				
 		// filtrowanie grup w poszukiwaniu grup z polskim i japonskim jezykiem
 		Iterator<String> groupIterator = linksMap.keySet().iterator();
 		
@@ -98,6 +100,10 @@ public class TatoebaSentencesParser {
 		
 		while (groupIterator.hasNext() == true) {			
 			String groupId = groupIterator.next();
+			
+			if (groupId.equals("2262517") == true) {
+				System.out.println("AAAAA");
+			}
 			
 			List<TatoebaSentence> tatoebaSentenceList = linksMap.get(groupId);
 			
@@ -120,9 +126,15 @@ public class TatoebaSentencesParser {
 			}
 			
 			if (containtPolishSentece == true && containtJapaneseSentece == true) {
+								
 				filteredLinksMap.put(groupId, tatoebaSentenceList);
 				
 				for (TatoebaSentence tatoebaSentence : tatoebaSentenceList) {
+					
+					if (tatoebaSentence.getGroupId().equals("2262517") == true) {
+						System.out.println("BBBBBB");
+					}
+					
 					filteredTatoebaSentenceMap.put(tatoebaSentence.getId(), tatoebaSentence);
 				}
 			}
@@ -131,6 +143,14 @@ public class TatoebaSentencesParser {
 		linksMap = filteredLinksMap;
 		tatoebaSentenceMap = filteredTatoebaSentenceMap;
 		
+		List<TatoebaSentence> aaaa = linksMap.get("2262517");
+		
+		int a = 0;
+		
+		a++;
+
+		
+		/*
 		// parsowanie pliku jpn_indices.csv
 		File jpnIndicesFile = new File(tatoebaSentencesDir, "jpn_indices.csv");
 		
@@ -159,12 +179,31 @@ public class TatoebaSentencesParser {
 		
 		for (TatoebaSentence tatoebaSentence : tatoebaSentenceMapValues) {
 			
+			List<String> sentenceToken = tatoebaSentence.getSentenceToken();
 			
+			if (sentenceToken == null || sentenceToken.size() == 0) {
+				continue;
+			}
 			
-		}		
+			for (String currentToken : sentenceToken) {
+				
+				List<TatoebaSentence> tatoebaSentenceListForToken = keyWordsAndSentenceMap.get(currentToken);
+				
+				if (tatoebaSentenceListForToken == null) {
+					tatoebaSentenceListForToken = new ArrayList<TatoebaSentence>();
+					
+					keyWordsAndSentenceMap.put(currentToken, tatoebaSentenceListForToken);
+				}
+				
+				if (tatoebaSentenceListForToken.contains(tatoebaSentence) == false) {					
+					tatoebaSentenceListForToken.add(tatoebaSentence);
+				}				
+			}			
+		}
+		*/		
 	}
 	
-	public List<String> tokenWord(String word) {
+	private List<String> tokenWord(String word) {
 		
 		if (word == null) {
 			return null;
@@ -180,7 +219,37 @@ public class TatoebaSentencesParser {
 		
 		return result;
 	}
-
+	
+	public List<List<TatoebaSentence>> getSentenceExamples(String word) {
+		
+		List<TatoebaSentence> tatoebeSentence = keyWordsAndSentenceMap.get(word);
+		
+		if (tatoebeSentence == null || tatoebeSentence.size() == 0) {
+			return null;
+		}
+		
+		List<List<TatoebaSentence>> result = new ArrayList<List<TatoebaSentence>>();
+		
+		Set<String> uniqueGroupIds = new TreeSet<String>();
+		
+		for (TatoebaSentence tatoebaSentence : tatoebeSentence) {
+			
+			String groupId = tatoebaSentence.getGroupId();
+			
+			if (uniqueGroupIds.contains(groupId) == false) {
+				
+				uniqueGroupIds.add(groupId);
+				
+				List<TatoebaSentence> tatoebeSentenceForGroup = linksMap.get(groupId);
+				
+				System.out.println(groupId + " - " + tatoebeSentenceForGroup);
+				
+				result.add(tatoebeSentenceForGroup);
+			}			
+		}
+		
+		return result;
+	}
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -188,7 +257,19 @@ public class TatoebaSentencesParser {
 		
 		tatoebaSentencesParser.parse();
 		
+		List<List<TatoebaSentence>> sentenceExamples = tatoebaSentencesParser.getSentenceExamples("食べる");
 		
-		
+		for (List<TatoebaSentence> currentSentenceGroup : sentenceExamples) {
+			
+			String groupId = currentSentenceGroup.get(0).getGroupId();
+			
+			System.out.println("Group id: " + groupId);
+			
+			for (TatoebaSentence tatoebaSentence : currentSentenceGroup) {
+				System.out.println(tatoebaSentence.getSentence());
+			}
+			
+			System.out.println("-------");
+		}
 	}	
 }
