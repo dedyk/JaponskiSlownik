@@ -112,10 +112,7 @@ public class AndroidDictionaryGenerator {
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
 				.parsePolishJapaneseEntriesFromCsv(sourceFileName);
 
-		// validate
-		int fixme = 1; // !!!!!!!!!!!!!!!!!!!!!11
-		
-		/*
+		// validate		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict,
 				jmedictName);
@@ -125,7 +122,6 @@ public class AndroidDictionaryGenerator {
 
 		// System.out.println("checkAndSavePolishJapaneseEntries: validateUseNoEntryPolishJapaneseKanjiEntries");
 		// Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);
-		*/
 		
 		// generate groups
 		System.out.println("checkAndSavePolishJapaneseEntries: generateGroups");
