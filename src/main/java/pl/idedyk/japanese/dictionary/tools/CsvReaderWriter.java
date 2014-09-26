@@ -238,6 +238,8 @@ public class CsvReaderWriter {
 				csvWriter
 						.write(convertListToString(new ArrayList<Integer>(polishJapaneseEntry.getKnownDuplicatedId())));
 			}
+			
+			csvWriter.write(convertListToString(polishJapaneseEntry.getExampleSentenceGroupIdsList()));
 
 			csvWriter.endRecord();
 		}

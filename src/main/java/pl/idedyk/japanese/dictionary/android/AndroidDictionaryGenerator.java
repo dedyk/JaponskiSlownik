@@ -18,12 +18,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
+import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
+import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
@@ -41,6 +44,7 @@ import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 import pl.idedyk.japanese.dictionary.tools.KanjiUtils;
 import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
+import pl.idedyk.japanese.dictionary.tools.TatoebaSentencesParser;
 import pl.idedyk.japanese.dictionary.tools.TomoeReader;
 
 import com.csvreader.CsvReader;
@@ -71,8 +75,6 @@ public class AndroidDictionaryGenerator {
 				"input/word.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv",
 				"output/transitive_intransitive_pairs.csv");
 		
-		//generateExampleSentence(dictionary, "../JapaneseDictionary_additional/tatoeba", "output/sentences.csv");
-
 		generateKanaEntries("../JapaneseDictionary_additional/kanjivg", "output/kana.csv");
 
 		generateKanjiRadical("../JapaneseDictionary_additional/radkfile", "output/radical.csv");
@@ -111,6 +113,9 @@ public class AndroidDictionaryGenerator {
 				.parsePolishJapaneseEntriesFromCsv(sourceFileName);
 
 		// validate
+		int fixme = 1; // !!!!!!!!!!!!!!!!!!!!!11
+		
+		/*
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict,
 				jmedictName);
@@ -120,7 +125,8 @@ public class AndroidDictionaryGenerator {
 
 		// System.out.println("checkAndSavePolishJapaneseEntries: validateUseNoEntryPolishJapaneseKanjiEntries");
 		// Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);
-
+		*/
+		
 		// generate groups
 		System.out.println("checkAndSavePolishJapaneseEntries: generateGroups");
 
@@ -139,6 +145,9 @@ public class AndroidDictionaryGenerator {
 
 		// generate names
 		// Helper.generateNames(jmedictName, result);		
+		
+		System.out.println("checkAndSavePolishJapaneseEntries: generateExampleSentence");
+		generateExampleSentence(result, "../JapaneseDictionary_additional/tatoeba", "output/sentences.csv", "output/sentences_groups.csv");
 
 		System.out.println("checkAndSavePolishJapaneseEntries: generateCsv");
 
@@ -149,8 +158,8 @@ public class AndroidDictionaryGenerator {
 		return result;
 	}
 	
-	/*
-	private static void generateExampleSentence(List<PolishJapaneseEntry> dictionary, String tatoebaSentencesDir, String destinationFileName) throws Exception {
+	private static void generateExampleSentence(List<PolishJapaneseEntry> dictionary, String tatoebaSentencesDir, 
+			String sentencesDestinationFileName, String sentencesGroupsDestinationFileName) throws Exception {
 		
 		System.out.println("generateExampleSentence");
 		
@@ -158,13 +167,75 @@ public class AndroidDictionaryGenerator {
 		
 		tatoebaSentencesParser.parse();
 		
-		//List<List<TatoebaSentence>> sentenceExamples = tatoebaSentencesParser.getSentenceExamples("食べる");
+		List<TatoebaSentence> uniqueSentences = new ArrayList<TatoebaSentence>();
+		List<GroupWithTatoebaSentenceList> uniqueSentencesWithGroupList = new ArrayList<GroupWithTatoebaSentenceList>();
+		
+		Set<String> uniqueSentenceIds = new TreeSet<String>();
+		Set<String> uniqueGroupIds = new TreeSet<String>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : dictionary) {
+			
+			List<String> groupIds = new ArrayList<String>();
+			
+			String word = null;
+			
+			if (polishJapaneseEntry.isKanjiExists() == true) {
+				word = polishJapaneseEntry.getKanji();
+				
+			} else {
+				word = polishJapaneseEntry.getKanaList().get(0);
+			}
+			
+			List<GroupWithTatoebaSentenceList> exampleSentencesList = tatoebaSentencesParser.getExampleSentences(word, 10);
+			
+			if (exampleSentencesList == null) {
+				polishJapaneseEntry.setExampleSentenceGroupIdsList(groupIds);
+				
+				continue;
+			}
+			
+			for (GroupWithTatoebaSentenceList currentExampleSentencesGroup : exampleSentencesList) {
+				
+				groupIds.add(currentExampleSentencesGroup.getGroupId());
+				
+				if (uniqueGroupIds.contains(currentExampleSentencesGroup.getGroupId()) == false) {	
+					
+					uniqueGroupIds.add(currentExampleSentencesGroup.getGroupId());					
+					uniqueSentencesWithGroupList.add(currentExampleSentencesGroup);					
+				}				
+				
+				for (TatoebaSentence currentTatoebaSentenceInGroup : currentExampleSentencesGroup.getTatoebaSentenceList()) {
+										
+					if (uniqueSentenceIds.contains(currentTatoebaSentenceInGroup.getId()) == false) {
+						
+						uniqueSentenceIds.add(currentTatoebaSentenceInGroup.getId());
+						uniqueSentences.add(currentTatoebaSentenceInGroup);
+					}					
+				}				
+			}
+			
+			polishJapaneseEntry.setExampleSentenceGroupIdsList(groupIds);
+		}
+		
+		Collections.sort(uniqueSentences, new Comparator<TatoebaSentence>() {
 
+			@Override
+			public int compare(TatoebaSentence o1, TatoebaSentence o2) {
+				return new Long(o1.getId()).compareTo(new Long(o2.getId()));
+			}
+		});
 		
+		Collections.sort(uniqueSentencesWithGroupList, new Comparator<GroupWithTatoebaSentenceList>() {
+
+			@Override
+			public int compare(GroupWithTatoebaSentenceList o1, GroupWithTatoebaSentenceList o2) {
+				return new Long(o1.getGroupId()).compareTo(new Long(o2.getGroupId()));
+			}
+		});
 		
-		System.exit(1);
+		CsvReaderWriter.writeTatoebaSentenceList(sentencesDestinationFileName, uniqueSentences);
+		CsvReaderWriter.writeTatoebaSentenceGroupsList(sentencesGroupsDestinationFileName, uniqueSentencesWithGroupList);
 	}
-	*/
 
 	private static void generateKanaEntries(String kanjivgDir, String destinationFileName) throws Exception {
 

@@ -227,7 +227,7 @@ public class TatoebaSentencesParser {
 		return result;
 	}
 	
-	public List<GroupWithTatoebaSentenceList> getExampleSentences(String word) {
+	public List<GroupWithTatoebaSentenceList> getExampleSentences(String word, int maxResults) {
 		
 		List<String> groupsWithWord = keyWordsAndSentenceMap.get(word);
 		
@@ -247,6 +247,10 @@ public class TatoebaSentencesParser {
 			groupWithTatoebaSentenceList.setTatoebaSentenceList(tatoebaSentenceListForGroup);
 			
 			result.add(groupWithTatoebaSentenceList);
+			
+			if (result.size() >= maxResults) {
+				break;
+			}
 		}
 		
 		return result;
@@ -258,7 +262,7 @@ public class TatoebaSentencesParser {
 		
 		tatoebaSentencesParser.parse();
 		
-		List<GroupWithTatoebaSentenceList> sentenceExamples = tatoebaSentencesParser.getExampleSentences("食べる");
+		List<GroupWithTatoebaSentenceList> sentenceExamples = tatoebaSentencesParser.getExampleSentences("食べる", 10);
 		
 		for (GroupWithTatoebaSentenceList currentSentenceGroup : sentenceExamples) {
 			
