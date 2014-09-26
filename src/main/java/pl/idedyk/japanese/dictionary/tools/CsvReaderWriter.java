@@ -18,6 +18,7 @@ import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
+import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
@@ -726,8 +727,28 @@ public class CsvReaderWriter {
 
 			csvWriter.endRecord();			
 		}
-		
-		
+				
 		csvWriter.close();
+	}
+
+	public static void writeTatoebaSentenceGroupsList(String sentencesGroupsDestinationFileName, List<GroupWithTatoebaSentenceList> uniqueSentencesWithGroupList) throws IOException {
+		
+		CsvWriter csvWriter = new CsvWriter(new FileWriter(sentencesGroupsDestinationFileName), ',');
+		
+		for (GroupWithTatoebaSentenceList currentGroupWithTatoebaSentenceList : uniqueSentencesWithGroupList) {
+			
+			List<String> groupSentencesIdList = new ArrayList<String>();
+			
+			for (TatoebaSentence tatoebaSentence : currentGroupWithTatoebaSentenceList.getTatoebaSentenceList()) {
+				groupSentencesIdList.add(tatoebaSentence.getId());
+			}			
+			
+			csvWriter.write(currentGroupWithTatoebaSentenceList.getGroupId());			
+			csvWriter.write(convertListToString(groupSentencesIdList));
+
+			csvWriter.endRecord();			
+		}
+				
+		csvWriter.close();		
 	}
 }

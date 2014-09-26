@@ -19,12 +19,12 @@ public class Test4 {
 		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");;
 
-		generateExampleSentence(polishJapaneseEntries, "../JapaneseDictionary_additional/tatoeba", "output/sentences.csv");
+		generateExampleSentence(polishJapaneseEntries, "../JapaneseDictionary_additional/tatoeba", "output/sentences.csv", "output/sentences_groups.csv");
 
 	}
 	
 	private static void generateExampleSentence(List<PolishJapaneseEntry> dictionary, String tatoebaSentencesDir, 
-			String sentencesDestinationFileName) throws Exception {
+			String sentencesDestinationFileName, String sentencesGroupsDestinationFileName) throws Exception {
 		
 		System.out.println("generateExampleSentence");
 		
@@ -33,7 +33,10 @@ public class Test4 {
 		tatoebaSentencesParser.parse();
 		
 		List<TatoebaSentence> uniqueSentences = new ArrayList<TatoebaSentence>();
+		List<GroupWithTatoebaSentenceList> uniqueSentencesWithGroupList = new ArrayList<GroupWithTatoebaSentenceList>();
+		
 		Set<String> uniqueSentenceIds = new TreeSet<String>();
+		Set<String> uniqueGroupIds = new TreeSet<String>();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : dictionary) {
 			
@@ -54,6 +57,12 @@ public class Test4 {
 			
 			for (GroupWithTatoebaSentenceList currentExampleSentencesGroup : exampleSentencesList) {
 				
+				if (uniqueGroupIds.contains(currentExampleSentencesGroup.getGroupId()) == false) {					
+					uniqueGroupIds.add(currentExampleSentencesGroup.getGroupId());
+					
+					uniqueSentencesWithGroupList.add(currentExampleSentencesGroup);					
+				}				
+				
 				for (TatoebaSentence currentTatoebaSentenceInGroup : currentExampleSentencesGroup.getTatoebaSentenceList()) {
 										
 					if (uniqueSentenceIds.contains(currentTatoebaSentenceInGroup.getId()) == false) {
@@ -73,7 +82,16 @@ public class Test4 {
 			}
 		});
 		
+		Collections.sort(uniqueSentencesWithGroupList, new Comparator<GroupWithTatoebaSentenceList>() {
+
+			@Override
+			public int compare(GroupWithTatoebaSentenceList o1, GroupWithTatoebaSentenceList o2) {
+				return new Long(o1.getGroupId()).compareTo(new Long(o2.getGroupId()));
+			}
+		});
+		
 		CsvReaderWriter.writeTatoebaSentenceList(sentencesDestinationFileName, uniqueSentences);
+		CsvReaderWriter.writeTatoebaSentenceGroupsList(sentencesGroupsDestinationFileName, uniqueSentencesWithGroupList);
 	}
 
 }
