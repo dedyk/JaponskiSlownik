@@ -227,17 +227,38 @@ public class TatoebaSentencesParser {
 		return result;
 	}
 	
-	public List<GroupWithTatoebaSentenceList> getExampleSentences(String word, int maxResults) {
+	public List<GroupWithTatoebaSentenceList> getExampleSentences(String kanji, String kana, int maxResults) {
 		
-		List<String> groupsWithWord = keyWordsAndSentenceMap.get(word);
+		List<String> groupsWithKana = keyWordsAndSentenceMap.get(kana);
 		
-		if (groupsWithWord == null || groupsWithWord.size() == 0) {
+		if (groupsWithKana == null || groupsWithKana.size() == 0) {
 			return null;
+		}
+		
+		List<String> groupsWithKanji = null;
+		
+		if (kanji != null) {
+			
+			groupsWithKanji = keyWordsAndSentenceMap.get(kanji);
+			
+			if (groupsWithKanji == null || groupsWithKanji.size() == 0) {
+				return null;
+			}
+			
+			List<String> commonGroups = new ArrayList<String>(groupsWithKanji);
+			
+			commonGroups.retainAll(groupsWithKana);
+
+			if (commonGroups.size() == 0) {
+				return null;
+			}
+			
+			groupsWithKana = commonGroups;
 		}
 		
 		List<GroupWithTatoebaSentenceList> result = new ArrayList<GroupWithTatoebaSentenceList>();
 		
-		for (String currentGroupId : groupsWithWord) {
+		for (String currentGroupId : groupsWithKana) {
 			
 			List<TatoebaSentence> tatoebaSentenceListForGroup = linksMap.get(currentGroupId);
 			
@@ -262,14 +283,14 @@ public class TatoebaSentencesParser {
 		
 		tatoebaSentencesParser.parse();
 		
-		List<GroupWithTatoebaSentenceList> sentenceExamples = tatoebaSentencesParser.getExampleSentences("食べる", 10);
+		List<GroupWithTatoebaSentenceList> sentenceExamples = tatoebaSentencesParser.getExampleSentences("熟す", "じゅくす", 10);
 		
 		for (GroupWithTatoebaSentenceList currentSentenceGroup : sentenceExamples) {
 			
 			System.out.println("Group id: " + currentSentenceGroup.getGroupId());
 			
 			for (TatoebaSentence tatoebaSentence : currentSentenceGroup.getTatoebaSentenceList()) {
-				System.out.println(tatoebaSentence.getSentence());
+				System.out.println(tatoebaSentence.getId() + " - " + tatoebaSentence.getSentence());
 			}
 			
 			System.out.println("-------");
