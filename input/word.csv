@@ -1,26 +1,38 @@
 1,WORD_NUMBER,,HIRAGANA,Genki 1-1,,零,"ぜろ
 れい",,"zero
-rei",zero,,,8710
-2,WORD_NUMBER,,HIRAGANA,Genki 1-1,,一,いち,,ichi,jeden,,,8809
-3,WORD_NUMBER,,HIRAGANA,Genki 1-1,,二,に,,ni,dwa,,,13596
-4,WORD_NUMBER,,HIRAGANA,Genki 1-1,,三,さん,,san,trzy,,,77
+rei","zero
+0",,,8710
+2,WORD_NUMBER,,HIRAGANA,Genki 1-1,,一,いち,,ichi,"jeden
+1",,,8809
+3,WORD_NUMBER,,HIRAGANA,Genki 1-1,,二,に,,ni,"dwa
+2",,,13596
+4,WORD_NUMBER,,HIRAGANA,Genki 1-1,,三,さん,,san,"trzy
+3",,,77
 5,WORD_NUMBER,,HIRAGANA,Genki 1-1,,四,"し
 よん
 よ",,"shi
 yon
-yo",cztery,,,"10785
+yo","cztery
+4",,,"10785
 12723"
-6,WORD_NUMBER,,HIRAGANA,Genki 1-1,,五,ご,,go,pięć,,,
-7,WORD_NUMBER,,HIRAGANA,Genki 1-1,,六,ろく,,roku,sześć,,,
+6,WORD_NUMBER,,HIRAGANA,Genki 1-1,,五,ご,,go,"pięć
+5",,,
+7,WORD_NUMBER,,HIRAGANA,Genki 1-1,,六,ろく,,roku,"sześć
+6",,,
 8,WORD_NUMBER,,HIRAGANA,Genki 1-1,,七,"なな
 しち",,"nana
-shichi",siedem,,,8695
-9,WORD_NUMBER,,HIRAGANA,Genki 1-1,,八,はち,,hachi,osiem,,,
+shichi","siedem
+7",,,8695
+9,WORD_NUMBER,,HIRAGANA,Genki 1-1,,八,はち,,hachi,"osiem
+8",,,
 10,WORD_NUMBER,,HIRAGANA,Genki 1-1,,九,"きゅう
 く",,"kyuu
-ku",dziewięć,,,
-11,WORD_NUMBER,,HIRAGANA,Genki 1-1,,十,じゅう,,juu,dziesięć,,,719
-12,WORD_NUMBER,,HIRAGANA,Genki 1-1,,百,ひゃく,,hyaku,sto,,,6624
+ku","dziewięć
+9",,,
+11,WORD_NUMBER,,HIRAGANA,Genki 1-1,,十,じゅう,,juu,"dziesięć
+10",,,719
+12,WORD_NUMBER,,HIRAGANA,Genki 1-1,,百,ひゃく,,hyaku,"sto
+100",,,6624
 13,WORD_TIME,,HIRAGANA,"Genki 1-1
 Genki kanji 1-3",,一時,いちじ,,ichiji,pierwsza godzina,,,12770
 14,WORD_TIME,,HIRAGANA,"Genki 1-1
@@ -398,18 +410,25 @@ naprawdę",przy otrzymywaniu czegoś,,
 174,WORD_EXPRESSION,,HIRAGANA,Genki 1-2,,-,でわありません,,dewa arimasen,nie jest,oficjalnie,,
 175,WORD_EXPRESSION,,HIRAGANA,Genki 1-2,,-,じゃありません,,ja arimasen,nie jest,mniej oficjalnie,,
 176,WORD_NUMBER,,HIRAGANA,"Genki 1-2
-Genki kanji 1-3",,三百,さんびゃく,,sanbyaku,trzysta,,,
+Genki kanji 1-3",,三百,さんびゃく,,sanbyaku,"trzysta
+300",,,
 177,WORD_NUMBER,,HIRAGANA,"Genki 1-2
-Genki kanji 1-3",,六百,ろっぴゃく,,roppyaku,sześćset,,,
+Genki kanji 1-3",,六百,ろっぴゃく,,roppyaku,"sześćset
+600",,,
 178,WORD_NUMBER,,HIRAGANA,"Genki 1-2
-Genki kanji 1-3",,八百,はっぴゃく,,happyaku,osiemset,,,
-179,WORD_NUMBER,,HIRAGANA,Genki 1-2,,千,せん,,sen,tysiąc,,,6530
+Genki kanji 1-3",,八百,はっぴゃく,,happyaku,"osiemset
+800",,,
+179,WORD_NUMBER,,HIRAGANA,Genki 1-2,,千,せん,,sen,"tysiąc
+1000",,,6530
 180,WORD_NUMBER,,HIRAGANA,"Genki 1-2
-Genki kanji 1-3",,三千,さんぜん,,sanzen,trzy tysiące,,,
+Genki kanji 1-3",,三千,さんぜん,,sanzen,"trzy tysiące
+3000",,,
 181,WORD_NUMBER,,HIRAGANA,"Genki 1-2
-Genki kanji 1-3",,八千,はっせん,,hassen,osiem tysięcy,,,
+Genki kanji 1-3",,八千,はっせん,,hassen,"osiem tysięcy
+8000",,,
 182,WORD_NUMBER,,HIRAGANA,"Genki 1-2
-Genki kanji 1-3",,一万,いちまん,,ichiman,dziesięć tysięcy,,,
+Genki kanji 1-3",,一万,いちまん,,ichiman,"dziesięć tysięcy
+9000",,,
 183,WORD_NOUN,,HIRAGANA,"Genki 1-2
 Genki kanji 2-22",,黒板,こくばん,,kokuban,tablica,czarna,,
 184,WORD_NOUN,,KATAKANA,"Genki 1-2
@@ -3497,8 +3516,10 @@ troska",,,
 1293,WORD_NOUN,,HIRAGANA,"Genki kanji 1-3
 Genki kanji 1-10",,三年生,さんねんせい,,sannensei,student trzeciego roku,,,
 1294,WORD_NOUN,,HIRAGANA,Genki kanji 1-3,,四年生,よねんせい,,yonensei,student czwartego roku,,,
-1295,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,十万,じゅうまん,,juuman,sto tysięcy,,,
-1296,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,百万,ひゃくまん,,hyakuman,milion,,,
+1295,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,十万,じゅうまん,,juuman,"sto tysięcy
+100000",,,
+1296,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,百万,ひゃくまん,,hyakuman,"milion
+1000000",,,
 1297,WORD_NUMBER,,HIRAGANA,Genki kanji 1-3,,百円,ひゃくえん,,hyakuen,sto jenów,,,
 1298,WORD_EXPRESSION,,HIRAGANA,Genki kanji 1-3,,子供の時,こどものとき,,kodomo no toki,w czasach dzieciństwa,,,
 1299,WORD_NOUN,,HIRAGANA,Genki kanji 1-4,,母の日,ははのひ,,haha no hi,dzień matki,druga niedziela maja,,
@@ -11046,7 +11067,8 @@ niepohamowany",,,
 4753,WORD_NOUN,,HIRAGANA,,,砂,すな,,suna,"piasek
 pył
 ziarnko piasku",,,
-4754,WORD_NUMBER,,HIRAGANA,,,参,さん,,san,trzy,w dokumentach,,77
+4754,WORD_NUMBER,,HIRAGANA,,,参,さん,,san,"trzy
+3",w dokumentach,,77
 4755,WORD_NOUN,,HIRAGANA,,,参加,さんか,,sanka,"udział
 uczestnictwo",,,
 4756,WORD_NOUN,,HIRAGANA,,,参与,さんよ,,san'yo,"uczestnictwo
@@ -15159,7 +15181,8 @@ cecha szczególna
 mocny punkt
 zaleta
 rys",,,
-6530,WORD_NUMBER,,HIRAGANA,,,千,ち,,chi,tysiąc,,,179
+6530,WORD_NUMBER,,HIRAGANA,,,千,ち,,chi,"tysiąc
+1000",,,179
 6531,WORD_NOUN,,HIRAGANA,,,千年,せんねん,,sennen,"milenium
 tysiąc lat",,,
 6532,WORD_NOUN,,HIRAGANA,,,千円札,せんえんさつ,,sen'ensatsu,banknot tysiąc jenowy,,,
@@ -15794,7 +15817,8 @@ powolnie",,,
 panienka
 dziewczyna
 Panna",,,
-6851,WORD_NUMBER,,HIRAGANA,,,拾,じゅう,,juu,dziesięć,używane w dokumentach,,
+6851,WORD_NUMBER,,HIRAGANA,,,拾,じゅう,,juu,"dziesięć
+10",używane w dokumentach,,
 6852,WORD_NOUN,,HIRAGANA,,,拾い主,ひろいぬし,,hiroinushi,znalazca,,,
 6853,WORD_NOUN,,HIRAGANA,,,拾い物,ひろいもの,,hiroi mono,rzecz znaleziona,,,
 6854,WORD_VERB_IRREGULAR,,HIRAGANA,,,習得する,しゅうとくする,,shuutoku suru,"znaleźć
@@ -17310,7 +17334,8 @@ gryźć
 żreć",,,
 7552,WORD_NOUN,,HIRAGANA,,,食用品,しょくようひん,,shokuyouhin,artykuły spożywcze,,,
 7553,WORD_NOUN,,HIRAGANA,,,食卓,しょくたく,,shokutaku,stół,,,
-7554,WORD_NUMBER,,HIRAGANA,,,壱,いち,,ichi,jeden,w dokumentach,,
+7554,WORD_NUMBER,,HIRAGANA,,,壱,いち,,ichi,"jeden
+1",w dokumentach,,
 7555,WORD_NOUN,,HIRAGANA,,,壱万円,いちまんえん,,ichi man' en,dziesięć tysięcy jenów,,,
 7556,WORD_VERB_U,,HIRAGANA,,,滑る,すべる,,suberu,"ślizgać się
 poślizgnąć się
@@ -17350,9 +17375,11 @@ zrozumienie
 wyrozumiałość",,,
 7573,WORD_NOUN,,HIRAGANA,Genki 2-23,,理想,りそう,,risou,ideał,,,
 7574,WORD_NUMBER,,HIRAGANA,,,弐,に,,ni,"dwa
+2
 drugi",używane w dokumentach,,13596
 7575,WORD_NOUN,,HIRAGANA,,,弐千円,にせんえん,,ni sen' en,dwa tysiące jenów,,,
-7576,WORD_NUMBER,,HIRAGANA,,,弐百万,にひゃくまん,,ni hyaku man,dwa miliony,,,
+7576,WORD_NUMBER,,HIRAGANA,,,弐百万,にひゃくまん,,ni hyaku man,"dwa miliony
+2000000",,,
 7577,WORD_VERB_U,,HIRAGANA,,,討つ,うつ,,utsu,atakować,,,
 7578,WORD_NOUN,,HIRAGANA,,,討論,とうろん,,touron,"debata
 dyskusja",,,
@@ -21438,7 +21465,8 @@ hakama",,,
 9470,WORD_NOUN,,HIRAGANA,,,犯罪者,はんざいしゃ,,hanzaisha,"kryminalista
 przestępca
 zbrodniarz",,,
-9471,WORD_NOUN,,HIRAGANA,,,諺,ことわざ,,kotowaza,przysłowie,,,
+9471,WORD_NOUN,,HIRAGANA,,,諺,ことわざ,,kotowaza,"przysłowie
+maksima",,,
 9472,WORD_ADJECTIVE_NA,,HIRAGANA,,,勇烈,ゆうれつ,,yuuretsu,"dzielność
 męstwo
 odwaga
@@ -26175,8 +26203,10 @@ reguła
 przepis
 rozstrzygnięcie (występuje w wyrażeniu kimari ga tsuku lub kimari o tsukeru)
 konkluzja (występuje w wyrażeniu kimari ga tsuku lub kimari o tsukeru)",,,
-11622,WORD_NUMBER,,HIRAGANA,,,万,まん,,man,dziesięć tysięcy,,,7454
-11623,WORD_NUMBER,,HIRAGANA,,,千万,せんまん,,senman,dziesięć milionów,,,
+11622,WORD_NUMBER,,HIRAGANA,,,万,まん,,man,"dziesięć tysięcy
+10000",,,7454
+11623,WORD_NUMBER,,HIRAGANA,,,千万,せんまん,,senman,"dziesięć milionów
+10000000",,,
 11624,WORD_NOUN,,HIRAGANA,,,真似,まね,,mane,naśladownictwo,,,
 11625,WORD_VERB_IRREGULAR,,HIRAGANA,,,真似する,まねする,,mane suru,naśladować,kogoś,,
 11626,WORD_ADVERB,,HIRAGANA,,,態々,わざわざ,,wazawaza,"specjalnie
@@ -32799,7 +32829,8 @@ targ",,,
 nisko
 rząd
 surowy (plik, urządzenie i etc)",,,
-14875,WORD_NUMBER,,HIRAGANA,,,三十,さんじゅう,,sanjuu,trzydzieści,,,
+14875,WORD_NUMBER,,HIRAGANA,,,三十,さんじゅう,,sanjuu,"trzydzieści
+30",,,
 14876,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,不変,ふへん,,fuhen,"niezmienny
 stały
@@ -35889,7 +35920,8 @@ nieporządek
 zamęt
 chaos
 galimatias",,,
-16006,WORD_NUMBER,,HIRAGANA,,,二十,にじゅう,,nijuu,dwadzieścia,,,
+16006,WORD_NUMBER,,HIRAGANA,,,二十,にじゅう,,nijuu,"dwadzieścia
+20",,,
 16007,WORD_VERB_RU,,HIRAGANA,,,千切れる,ちぎれる,,chigireru,"być oderwanym
 być rozerwanym na kawałki",,,
 16008,WORD_NOUN,,HIRAGANA,,,和布,わかめ,,wakame,"Undaria pierzastodzielna
@@ -36585,7 +36617,8 @@ złagodzenie",,,
 16272,WORD_NOUN,,KATAKANA,,,-,ショパン,,shopan,Chopin,,,
 16273,WORD_NOUN,,KATAKANA,,,-,ブロイラー,,buroiraa,brojler,,,
 16274,WORD_NOUN,,KATAKANA,,,-,ユーモア,,yuumoa,humor,,,
-16275,WORD_NUMBER,,HIRAGANA,,,八十,はちじゅう,,hachijuu,osiemdziesiąt,,,
+16275,WORD_NUMBER,,HIRAGANA,,,八十,はちじゅう,,hachijuu,"osiemdziesiąt
+80",,,
 16276,WORD_NOUN,,HIRAGANA,,,初老,しょろう,,shorou,"po wieku średnim
 wiek czterdziestu lat
 starzenie się",,,
@@ -37556,7 +37589,8 @@ WORD_EXPRESSION",,HIRAGANA,,,ないと行けない,ないといけない,,nai to
 jest konieczne
 jest niezbędne",w połączenie z negatywną formą czasownika,,
 16626,WORD_NOUN,,HIRAGANA,,,出廷,しゅってい,,shuttei,stawienie się w sądzie,,,
-16627,WORD_NUMBER,,HIRAGANA,,,十九,じゅうきゅう,,juukyuu,dziewiętnaście,,,
+16627,WORD_NUMBER,,HIRAGANA,,,十九,じゅうきゅう,,juukyuu,"dziewiętnaście
+19",,,
 16628,WORD_NOUN,,HIRAGANA,,,安打,あんだ,,anda,bezpieczne uderzenie,baseball,,
 16629,WORD_ADVERB,,HIRAGANA,,,少なからず,すくなからず,,sukunakarazu,"znacznie
 istotnie
@@ -41495,7 +41529,8 @@ osadnik","ang, fra: colon",,
 18030,WORD_NOUN,,KATAKANA,,,-,トミーガン,,tomii gan,pistolet maszynowy Thompson,,,
 18031,WORD_NOUN,,HIRAGANA,,,一番乗り,いちばんのり,,ichiban nori,"pierwszy przyjazd
 pierwsze przybycie",,,
-18032,WORD_NUMBER,,HIRAGANA,,,四千,よんせん,,yonsen,cztery tysiące,,,
+18032,WORD_NUMBER,,HIRAGANA,,,四千,よんせん,,yonsen,"cztery tysiące
+4000",,,
 18033,WORD_NOUN,,KATAKANA,,,-,エメラルド,,emerarudo,szmaragd,,,
 18034,WORD_NOUN,,KATAKANA,,,-,キャビン,,kyabin,"chata
 chatka
@@ -52258,3 +52293,63 @@ fundusze
 kapitał",,,
 21562,WORD_NOUN,,HIRAGANA,,,陸海,りくかい,,rikukai,ląd i morze,,,
 21563,WORD_NOUN,,HIRAGANA,,,食中毒,しょくちゅうどく,,shokuchuudoku,zatrute jedzenie,,,
+21564,WORD_NOUN,,HIRAGANA,,,萌芽,ほうが,,houga,"kiełkowanie
+wschodzenie
+zalążek
+kiełek
+pączek",,,
+21565,WORD_PRONOUN,,HIRAGANA,,,貴様,きさま,,kisama,"ty (obraźliwie)
+drań
+sukinsyn
+skurwysyn
+ty (archaizm, grzecznościowo)",,,
+21566,WORD_NOUN,,HIRAGANA,,,樹雨,きさめ,,kisame,opad atmosferyczny z gęstej mgły osiadający na liściach w lesie,,,
+21567,WORD_NOUN,,HIRAGANA,,,格言,かくげん,,kakugen,aforyzm,,,
+21568,WORD_INTERJECTION,,HIRAGANA,,,-,そうだ,,sou da,"tak to jest
+to prawda
+dla mnie to wygląda
+ludzie mówią, że (po czasowniku w formie prostej)
+ja słyszałem, że ...",,,
+21569,WORD_INTERJECTION,,HIRAGANA,,,-,そうです,,sou desu,"tak to jest
+to prawda
+dla mnie to wygląda
+ludzie mówią, że (po czasowniku w formie prostej)
+ja słyszałem, że ...",,,
+21570,WORD_ADJECTIVE_I,,HIRAGANA,,,痛ましい,いたましい,,itamashii,"żałosny
+nędzny
+litościwy
+opłakany
+bolesny
+rozdzielający
+tragiczny",,,
+21571,WORD_VERB_U,,HIRAGANA,,,張り合う,はりあう,,hariau,"konkurować
+rywalizować
+walczyć",,,
+21572,WORD_NOUN,,HIRAGANA,,,怨み,うらみ,,urami,"uraza
+żal
+pretensja
+złość
+gorycz
+rozgoryczenie
+rozżalenie",,,
+21573,WORD_VERB_U,,HIRAGANA,,,欲張る,よくばる,,yokubaru,"pożądać
+łakomić
+pragnąć",,,
+21574,WORD_VERB_RU,,HIRAGANA,,,濁れる,にごる,,nigoru,"stać się mętny
+stać się zanieczyszczony",,,
+21575,WORD_NOUN,,HIRAGANA,,,物惜しみ,ものおしみ,,mono oshimi,"skąpstwo
+sknerstwo",,,
+21576,WORD_VERB_RU,,HIRAGANA,,,穢れる,けがれる,,kegareru,"być naruszony
+być pogwałcony
+być zepsuty
+być skorumpowany
+być skazony
+być zanieczyszczony
+być zaplamiony
+być poplamiony",,,
+21577,WORD_NOUN,,HIRAGANA,,,軽視,けいし,,keishi,"gardzenie
+pogardzanie
+lekceważenie
+zaniedbywanie
+ignorowanie",,,
+21578,WORD_NOUN,,HIRAGANA,,,静電気,せいでんき,,seidenki,elektryczność statyczna,,,
