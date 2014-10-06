@@ -11087,7 +11087,8 @@ podręczne kompendium",,,
 kamień nagrobny",,,
 4763,WORD_NOUN,,HIRAGANA,,,墓参り,はかまいり,,hakamairi,odwiedzanie grobu,,,
 4764,WORD_ADVERBIAL_NOUN,,HIRAGANA,,,他,ほか,,hoka,"inny
-pozostały",,,
+inne (szczególnie miejsca i rzeczy)
+pozostały",,,21786
 4765,WORD_NOUN,,HIRAGANA,,,他人,たにん,,tanin,"inny człowiek
 obcy
 inni
@@ -14918,8 +14919,12 @@ konwersacja",,,
 pojęcie",,,
 6407,WORD_NOUN,,HIRAGANA,,,悪,あく,,aku,zło,,,
 6408,WORD_NOUN,,HIRAGANA,,,悪人,あくにん,,akunin,zły człowiek,,,
-6409,WORD_NOUN,,HIRAGANA,,,悪口,わるぐち,,waruguchi,"plotka
-obmowa",,,
+6409,WORD_NOUN,,HIRAGANA,,,悪口,わるぐち,,waruguchi,"obelga
+obraza
+zniewaga
+oszczerstwo
+zniesławienie",,,"21797
+21798"
 6410,WORD_NOUN,,HIRAGANA,,,悪友,あくゆう,,akuyuu,złe towarzystwo,,,
 6411,WORD_NOUN,,HIRAGANA,,,悪戯,いたずら,,itazura,"żart
 figiel
@@ -17547,7 +17552,7 @@ złapać gumę",w kole,,
 zwyciężać","zawody, mistrzostwa",,
 7644,WORD_INTERJECTION,,HIRAGANA,Genki 2-23,,-,いや,,iya,nie,,,2471
 7645,WORD_EXPRESSION,,HIRAGANA,Genki 2-23,,元気でね,げんきでね,,genki de ne,dbaj o siebie,,,
-7646,WORD_EXPRESSION,,HIRAGANA,Genki 2-23,,-,そうそう,,sousou,masz rację,,,
+7646,WORD_EXPRESSION,,HIRAGANA,Genki 2-23,,-,そうそう,,sousou,masz rację,,,21800
 7647,WORD_ADVERB,,HIRAGANA,Genki 2-23,,-,そろそろ,,sorosoro,"niebawem
 wkrótce
 wnet
@@ -43587,7 +43592,10 @@ słaby wietrzyk",,,
 18712,WORD_EMPTY,,HIRAGANA,,,-,だの,,dano,???,,,
 18713,WORD_NOUN,,KATAKANA,,,-,コントラスト,,kontorasuto,kontrast,,,
 18714,WORD_NOUN,,KATAKANA,,,-,サンダル,,sandaru,"sandał
-sandały",,,
+sandały
+trepka
+trepek
+trepy",,,
 18715,WORD_NOUN,,KATAKANA,,,-,ハーブ,,haabu,"zioło
 ziele",,,
 18716,WORD_NOUN,,KATAKANA,,,-,ハーブティー,,haabu tii,ziołowa herbata,,,
@@ -53010,7 +53018,7 @@ małże",ang: mussels,,
 21785,WORD_NOUN,,KATAKANA,,,-,ロジック,,rojikku,"logika
 logiczny",ang: logic,,
 21786,WORD_ADVERBIAL_NOUN,,HIRAGANA,,,他,た,,ta,"inni
-inne","szczególnie osoby, sprawa, kwestia",,
+inne","szczególnie osoby, sprawa, kwestia",,4764
 21787,WORD_ADJECTIVE_NA,,HIRAGANA,,,低水準,ていすいじゅん,,teisuijun,"substandardowy
 podrzędny
 niskiego poziomu
@@ -53019,12 +53027,12 @@ niskopoziomowy",,,
 WORD_ADJECTIVE_NA",,HIRAGANA,,,凸凹,でこぼこ,,dekoboko,"nierówność
 niejednolitość
 nierównomierność
-chropowatość",,,
+chropowatość",,,21789
 21789,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,凸凹,とつおう,,totsuou,"nierówność
 niejednolitość
 nierównomierność
-chropowatość",,,
+chropowatość",,,21788
 21790,WORD_NOUN,,HIRAGANA,,,名所,めいしょ,,meisho,"słynne miejsce
 znane miejsce
 sławne miejsce",,,21791
@@ -53068,12 +53076,14 @@ pożądanie",,,
 obraza
 zniewaga
 oszczerstwo
-zniesławienie",,,
+zniesławienie",,,"6409
+21798"
 21798,WORD_NOUN,,HIRAGANA,,,悪口,わるくち,,warukuchi,"obelga
 obraza
 zniewaga
 oszczerstwo
-zniesławienie",,,
+zniesławienie",,,"6409
+21797"
 21799,WORD_CONJUNCTION,,HIRAGANA,,,故に,ゆえに,,yueni,"dlatego
 zatem
 więc
@@ -53096,7 +53106,9 @@ szybko
 prędko
 niezwłocznie
 wczesny
-rychły",,,
+rychły",,,"7646
+21801
+21802"
 21801,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,,,早々,はやばや,,hayabaya,"wczesny
 rychły
@@ -53104,10 +53116,12 @@ szybko
 prędko
 rychło
 niezwłocznie
-natychmiast",,,
+natychmiast",,,"21800
+21802"
 21802,WORD_ADVERB,,HIRAGANA,,,早々,はやはや,,hayahaya,"szybko
 prędko
-rychło",archaizm,,
+rychło",archaizm,,"21800
+21801"
 21803,WORD_NOUN,,HIRAGANA,,,楕円形,だえんけい,,daenkei,"kształt eliptyczny
 eliptyczny kształt",,,
 21804,WORD_NOUN,,HIRAGANA,,,浮き彫り,うきぼり,,ukibori,"płaskorzeźba
@@ -53144,3 +53158,6 @@ promocja
 awans
 wyniesienie",,,
 21812,WORD_NOUN,,HIRAGANA,,,１１０番,ひゃくとおばん,,hyakutoo ban,policyjny numer alarmowy,w Japonii,,
+21813,WORD_MALE_NAME,,KATAKANA,,,-,ルートヴィヒ,,ruutovihi,Ludwik,,,
+21814,WORD_FEMALE_NAME,,KATAKANA,,,-,アメリア,,ameria,Amelia,,,
+21815,WORD_NOUN,,HIRAGANA,,,極真,きょくしん,,kyokushin,kyokushin,"pełnokontaktowa sztuka walki, rodzaj karate, stworzona przez Masutatsu Ōyamę",,
