@@ -148,8 +148,13 @@ public class JMEDictReader {
 					Node nameType = trans.selectSingleNode("name_type");
 
 					if (nameType != null) {
-
 						jmeDictEntry.getTrans().add(entityMapper.getEntity(nameType.getText()));
+					}
+					
+					Node transDet = trans.selectSingleNode("trans_det");
+					
+					if (transDet != null) {
+						jmeDictEntry.getTransDet().add(transDet.getText());
 					}
 				}
 

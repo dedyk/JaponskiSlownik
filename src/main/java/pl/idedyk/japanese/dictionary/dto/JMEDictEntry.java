@@ -17,6 +17,8 @@ public class JMEDictEntry implements Serializable {
 	private final List<String> misc = new ArrayList<String>();
 
 	private final List<String> trans = new ArrayList<String>();
+	
+	private final List<String> transDet = new ArrayList<String>();
 
 	public List<String> getKanji() {
 		return kanji;
@@ -38,8 +40,12 @@ public class JMEDictEntry implements Serializable {
 		return trans;
 	}
 
+	public List<String> getTransDet() {
+		return transDet;
+	}
+
 	@Override
 	public String toString() {
-		return kanji + " - " + kana + " - " + pos + " - " + misc + " - " + trans;
+		return kanji + " - " + kana + " - " + pos + " - " + misc + " - " + trans + " - " + transDet;
 	}
 }
