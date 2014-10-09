@@ -306,93 +306,117 @@ public class Helper {
 		return foundEdict;
 	}
 
-	public static void generateNames(TreeMap<String, EDictEntry> jmedictName,
-			List<PolishJapaneseEntry> polishJapaneseEntries) {
+	public static List<PolishJapaneseEntry> generateNames(TreeMap<String, List<JMEDictEntry>> jmedictName) {
 
-		Iterator<EDictEntry> iterator = jmedictName.values().iterator();
+		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
+		
+		Iterator<List<JMEDictEntry>> jmedictNameValuesIterator = jmedictName.values().iterator();
 
-		int counter = 1000000;
+		/*
+		company -
+		+ fem +
+		given +
+		masc +
+		organization -
+		+ person +
+		place * ?
+		product -
+		station +
+		surname +
+		unclass * ?
+		*/
 
-		// [Thailand, former, Dalai, SNK, Niigata, Sony, st, f, g, uk, d, c, or, n, o, abbr, ik, m, Nintendo, h, Sega, Republic, u, co, 1, NEC, s, Bandai, deity, p, pr]
-
-		// surname -> s
-		// masc -> m
-		// fem -> f
-		// given -> g
+		// mapowanie typow
+		Map<String, DictionaryEntryType> nameTypeMapper = new HashMap<String, DictionaryEntryType>();
+		
+		nameTypeMapper.put("fem", DictionaryEntryType.WORD_FEMALE_NAME);
+		nameTypeMapper.put("person", DictionaryEntryType.WORD_PERSON);
+		
+		int counter = 1;
 
 		KanaHelper kanaHelper = new KanaHelper();
 		
-		while (iterator.hasNext()) {
-			EDictEntry edictNameEntry = iterator.next();
+		while(jmedictNameValuesIterator.hasNext()) {
+			
+			List<JMEDictEntry> jmedictValueList = jmedictNameValuesIterator.next();
 
-			String kanji = edictNameEntry.getKanji();
-			String kana = edictNameEntry.getKana();
-			String name = edictNameEntry.getName();
-			List<String> pos = edictNameEntry.getPos();
+			for (JMEDictEntry jmedictEntry : jmedictValueList) {
+				
+				if (jmedictEntry.getTrans().size() == 0) {
+					continue;
+				}
+				
+				List<DictionaryEntryType> nameDictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
+				
+				for (String currentTran : jmedictEntry.getTrans()) {
+					
+					DictionaryEntryType nameDictionaryEntryType = nameTypeMapper.get(currentTran);
+					
+					if (nameDictionaryEntryType == null) {
+						continue;
+					}
+					
+					nameDictionaryEntryTypeList.add(nameDictionaryEntryType);
+				}
+				
+				if (nameDictionaryEntryTypeList.size() == 0) {
+					continue;
+				}
+				
+				if (nameDictionaryEntryTypeList.contains(DictionaryEntryType.WORD_PERSON) == true) {
+					
+					nameDictionaryEntryTypeList.remove(DictionaryEntryType.WORD_FEMALE_NAME);					
+				}
+				
+				for (int idx = 0; idx < jmedictEntry.getKanji().size(); ++idx) {
+					
+					String kanji = jmedictEntry.getKanji().get(idx);
+					String kana = jmedictEntry.getKana().get(idx);
+					String transDet = jmedictEntry.getTransDet().get(idx);
+					
+					//System.out.println(kanji + " - " + kana + " - " + transDet);
+					
+					PolishJapaneseEntry newPolishJapaneseEntry = new PolishJapaneseEntry();
+					
+					newPolishJapaneseEntry.setId(counter);
+					counter++;
+					
+					newPolishJapaneseEntry.setDictionaryEntryTypeList(nameDictionaryEntryTypeList);
+					
+					newPolishJapaneseEntry.setWordType(WordType.HIRAGANA_KATAKANA);
+					
+					newPolishJapaneseEntry.setAttributeList(new AttributeList());
+					newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
 
-			if (name == null) {
-				continue;
+					newPolishJapaneseEntry.setKanji(kanji != null ? kanji : "-");
+
+					List<String> kanaList = new ArrayList<String>();
+					kanaList.add(kana);
+
+					newPolishJapaneseEntry.setKanaList(kanaList);
+
+					List<String> romajiList = new ArrayList<String>();
+					romajiList.add(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true)));
+
+					newPolishJapaneseEntry.setRomajiList(romajiList);
+
+					List<String> polishTranslateList = new ArrayList<String>();
+					polishTranslateList.add(transDet);
+
+					newPolishJapaneseEntry.setTranslates(polishTranslateList);
+
+					newPolishJapaneseEntry.setParseAdditionalInfoList(new ArrayList<ParseAdditionalInfo>());
+
+					//newPolishJapaneseEntry.setUseEntry(true);
+
+					newPolishJapaneseEntry.setExampleSentenceGroupIdsList(new ArrayList<String>());
+					
+					result.add(newPolishJapaneseEntry);
+				}
 			}
-
-			PolishJapaneseEntry newPolishJapaneseEntry = new PolishJapaneseEntry();
-
-			newPolishJapaneseEntry.setId(counter);
-
-			List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
-
-			if (pos.contains("f") == true) {
-				dictionaryEntryTypeList.add(DictionaryEntryType.WORD_FEMALE_NAME);
-
-			} else if (pos.contains("m") == true) {
-				dictionaryEntryTypeList.add(DictionaryEntryType.WORD_MALE_NAME);
-
-			} else if (pos.contains("g") == true) {
-				dictionaryEntryTypeList.add(DictionaryEntryType.WORD_NAME);
-
-			} else if (pos.contains("s") == true) {
-				dictionaryEntryTypeList.add(DictionaryEntryType.WORD_SURNAME_NAME);
-
-			} else {
-				continue;
-			}
-
-			newPolishJapaneseEntry.setDictionaryEntryTypeList(dictionaryEntryTypeList);
-
-			newPolishJapaneseEntry.setWordType(WordType.HIRAGANA_KATAKANA);
-
-			newPolishJapaneseEntry.setAttributeList(new AttributeList());
-			newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
-
-			newPolishJapaneseEntry.setKanji(kanji != null ? kanji : "-");
-
-			List<String> kanaList = new ArrayList<String>();
-			kanaList.add(kana);
-
-			newPolishJapaneseEntry.setKanaList(kanaList);
-
-			try {
-				List<String> romajiList = new ArrayList<String>();
-				romajiList.add(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), false)));
-
-				newPolishJapaneseEntry.setRomajiList(romajiList);
-
-			} catch (RuntimeException e) {
-				continue;
-			}
-
-			List<String> polishTranslateList = new ArrayList<String>();
-			polishTranslateList.add(name);
-
-			newPolishJapaneseEntry.setTranslates(polishTranslateList);
-
-			newPolishJapaneseEntry.setParseAdditionalInfoList(new ArrayList<ParseAdditionalInfo>());
-
-			//newPolishJapaneseEntry.setUseEntry(true);
-
-			polishJapaneseEntries.add(newPolishJapaneseEntry);
-
-			counter++;
 		}
+		
+		return result;
 	}
 
 	public static void generateTransitiveIntransitivePairs(

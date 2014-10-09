@@ -1,10 +1,12 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 
 public class Test4 {
@@ -18,7 +20,8 @@ public class Test4 {
 		// TreeSet<String> uniqueTrans = new TreeSet<String>();
 				
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
-
+		
+		/*
 		Iterator<List<JMEDictEntry>> jmedictNameValuesIterator = jmedictName.values().iterator();
 		
 		while(jmedictNameValuesIterator.hasNext()) {
@@ -28,17 +31,18 @@ public class Test4 {
 			for (JMEDictEntry jmedictEntry : jmedictValueList) {				
 				List<String> trans = jmedictEntry.getTrans();
 				
-				/*
+				/ *
 				for (String currentTrans : trans) {
 					uniqueTrans.add(currentTrans);
 				}
-				*/
+				* /
 				
 				if (trans.contains("unclass") == true) {
 					System.out.println(jmedictEntry);
 				}
 			}
 		}
+		*/
 		
 		/*
 		for (String currentUniqueTran : uniqueTrans) {
@@ -59,5 +63,9 @@ public class Test4 {
 		surname +
 		unclass * ?
 		*/
+		
+		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(jmedictName);
+		
+		CsvReaderWriter.generateCsv("/tmp/a.csv", generatedNames, false);
 	}
 }

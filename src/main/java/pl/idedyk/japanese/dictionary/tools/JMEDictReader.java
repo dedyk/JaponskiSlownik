@@ -145,10 +145,16 @@ public class JMEDictReader {
 
 					Element trans = (Element) transListObject;
 
-					Node nameType = trans.selectSingleNode("name_type");
+					List<?> nameType = trans.selectNodes("name_type");
 
 					if (nameType != null) {
-						jmeDictEntry.getTrans().add(entityMapper.getEntity(nameType.getText()));
+						
+						for (Object currentNameTypeObject : nameType) {
+							
+							Element currentNameTypeObjectAsElement = (Element)currentNameTypeObject;
+							
+							jmeDictEntry.getTrans().add(entityMapper.getEntity(currentNameTypeObjectAsElement.getText()));
+						}
 					}
 					
 					Node transDet = trans.selectSingleNode("trans_det");
