@@ -313,24 +313,29 @@ public class Helper {
 		Iterator<List<JMEDictEntry>> jmedictNameValuesIterator = jmedictName.values().iterator();
 
 		/*
-		company -
+		- company -
 		+ fem +
-		given +
-		masc +
-		organization -
+		+ given +
+		+ masc +
+		- organization -
 		+ person +
-		place * ?
-		product -
-		station +
-		surname +
-		unclass * ?
+		+ place * ?
+		- product -
+		+ station +
+		+ surname +
+		- unclass * ?
 		*/
 
 		// mapowanie typow
 		Map<String, DictionaryEntryType> nameTypeMapper = new HashMap<String, DictionaryEntryType>();
 		
 		nameTypeMapper.put("fem", DictionaryEntryType.WORD_FEMALE_NAME);
-		nameTypeMapper.put("person", DictionaryEntryType.WORD_PERSON);
+		nameTypeMapper.put("masc", DictionaryEntryType.WORD_MALE_NAME);
+		nameTypeMapper.put("given", DictionaryEntryType.WORD_NAME);
+		nameTypeMapper.put("surname", DictionaryEntryType.WORD_SURNAME_NAME);
+		nameTypeMapper.put("person", DictionaryEntryType.WORD_PERSON);		
+		//nameTypeMapper.put("station", DictionaryEntryType.WORD_STATION_NAME);
+		//nameTypeMapper.put("place", DictionaryEntryType.WORD_PLACE);
 		
 		int counter = 1;
 
@@ -411,12 +416,106 @@ public class Helper {
 
 					newPolishJapaneseEntry.setExampleSentenceGroupIdsList(new ArrayList<String>());
 					
+					fixPolishJapaneseEntryName(newPolishJapaneseEntry);
+					
 					result.add(newPolishJapaneseEntry);
 				}
 			}
 		}
 		
 		return result;
+	}
+	
+	private static void fixPolishJapaneseEntryName(PolishJapaneseEntry newPolishJapaneseEntry) {
+				
+		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_FEMALE_NAME ||
+				newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_MALE_NAME ||
+				newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_PERSON) {
+			
+			String translate = newPolishJapaneseEntry.getTranslates().get(0);
+			
+			List<String> romajiList = newPolishJapaneseEntry.getRomajiList();
+			
+			List<String> newRomajiList = new ArrayList<String>();
+			
+			for (String currentRomaji : romajiList) {
+				newRomajiList.add(fixRomajiForNames(currentRomaji, translate));
+			}
+			
+			newPolishJapaneseEntry.setRomajiList(newRomajiList);			
+		}
+		
+		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_STATION_NAME) {
+			
+			String translate = newPolishJapaneseEntry.getTranslates().get(0);
+			
+			translate = translate.replaceAll("Station", "(nazwa stacji)");
+			
+			List<String> newTranslateList = new ArrayList<String>();
+			newTranslateList.add(translate);
+			
+			newPolishJapaneseEntry.setTranslates(newTranslateList);
+		}
+		
+		
+		
+	}
+
+	private static String fixRomajiForNames(String romaji, String transDet) {
+				
+		int transAdd = 0;
+		
+		StringBuffer result = new StringBuffer();
+		
+		for (int romajiIdx = 0; romajiIdx < romaji.length(); ++romajiIdx) {
+			
+			String currentRomajiChar = ("" + romaji.charAt(romajiIdx)).toLowerCase();
+			
+			String currentTransDetChar = null;
+			
+			if (romajiIdx + transAdd < transDet.length()) {
+				currentTransDetChar = ("" + transDet.charAt(romajiIdx + transAdd)).toLowerCase();
+			}
+			
+			if (currentTransDetChar == null) {
+				result = null;
+				
+				break;
+			}
+			
+			if (currentTransDetChar.equals(" ") == true || currentTransDetChar.equals("-") == true) {
+				
+				result.append(" ");
+				
+				transAdd++;
+				
+				if (romajiIdx + transAdd < transDet.length()) {
+					currentTransDetChar = ("" + transDet.charAt(romajiIdx + transAdd)).toLowerCase();
+				}				
+			}
+			
+			if (currentTransDetChar == null) {
+				result = null;
+				
+				break;
+			}
+			
+			if (currentRomajiChar.equals(currentTransDetChar) == true) {
+				result.append(currentRomajiChar);
+				
+			} else {
+				result = null;
+				
+				break;
+			}
+		}
+		
+		if (result != null) {
+			return result.toString();
+			
+		} else {
+			return romaji;
+		}		
 	}
 
 	public static void generateTransitiveIntransitivePairs(

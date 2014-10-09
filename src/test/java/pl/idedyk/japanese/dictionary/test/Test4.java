@@ -18,8 +18,6 @@ public class Test4 {
 		//generateExampleSentence(polishJapaneseEntries, "../JapaneseDictionary_additional/tatoeba", "output/sentences.csv", "output/sentences_groups.csv");
 
 		// TreeSet<String> uniqueTrans = new TreeSet<String>();
-				
-		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
 		/*
 		Iterator<List<JMEDictEntry>> jmedictNameValuesIterator = jmedictName.values().iterator();
@@ -63,6 +61,8 @@ public class Test4 {
 		surname +
 		unclass * ?
 		*/
+		
+		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
 		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(jmedictName);
 		
