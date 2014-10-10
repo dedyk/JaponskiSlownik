@@ -334,8 +334,8 @@ public class Helper {
 		nameTypeMapper.put("given", DictionaryEntryType.WORD_NAME);
 		nameTypeMapper.put("surname", DictionaryEntryType.WORD_SURNAME_NAME);
 		nameTypeMapper.put("person", DictionaryEntryType.WORD_PERSON);		
-		//nameTypeMapper.put("station", DictionaryEntryType.WORD_STATION_NAME);
-		//nameTypeMapper.put("place", DictionaryEntryType.WORD_PLACE);
+		nameTypeMapper.put("station", DictionaryEntryType.WORD_STATION_NAME);
+		nameTypeMapper.put("place", DictionaryEntryType.WORD_PLACE);
 		
 		int counter = 1;
 
