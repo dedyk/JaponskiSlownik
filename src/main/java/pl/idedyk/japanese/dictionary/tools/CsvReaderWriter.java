@@ -364,6 +364,10 @@ public class CsvReaderWriter {
 	private static String convertListToString(List<?> list) {
 		StringBuffer sb = new StringBuffer();
 
+		if (list == null) {
+			list = new ArrayList<String>();
+		}
+		
 		for (int idx = 0; idx < list.size(); ++idx) {
 			sb.append(list.get(idx));
 
