@@ -80,9 +80,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".*\\ Prefecture$") == true) {
 				
 				translate = translate.replaceAll("\\ Prefecture$", " (prefektura)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+			
+			if (translate.matches(".*\\ Tumulus$") == true) {
+				
+				translate = translate.replaceAll("\\ Tumulus$", " (tumulus, kurhan)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
