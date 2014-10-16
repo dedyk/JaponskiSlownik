@@ -37,9 +37,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".*\\ Nuclear \\(elektrownia\\)$") == true) {
 				
 				translate = translate.replaceAll(" Nuclear \\(elektrownia\\)$", " (elektrownia nuklearna)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".*\\ underground \\(elektrownia\\)$") == true) {
+				
+				translate = translate.replaceAll(" underground \\(elektrownia\\)$", " (podziemna elektrownia wodna)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
