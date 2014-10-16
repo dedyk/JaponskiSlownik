@@ -45,14 +45,22 @@ public class ChangeJMnedictWordPlaceCsv {
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
 			*/
-
+			
+			/*
 			if (translate.matches(".*\\ underground \\(elektrownia\\)$") == true) {
 				
 				translate = translate.replaceAll(" underground \\(elektrownia\\)$", " (podziemna elektrownia wodna)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
 
+			if (translate.matches(".*\\ water purification plant$") == true) {
+				
+				translate = translate.replaceAll(" water purification plant$", " (oczyszczalnia wody)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		

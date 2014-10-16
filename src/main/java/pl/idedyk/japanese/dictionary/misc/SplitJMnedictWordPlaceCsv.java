@@ -39,7 +39,8 @@ public class SplitJMnedictWordPlaceCsv {
 			".*\\(elektrownia cieplna\\).*",
 			".*\\(elektrownia nuklearna\\).*",
 			".*\\(podziemna elektrownia wodna\\).*",
-			".*\\(elektrownia hydroelektryczna\\).*"
+			".*\\(elektrownia hydroelektryczna\\).*",
+			".*\\(oczyszczalnia wody\\).*"
 		};
 		
 		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE.csv");
