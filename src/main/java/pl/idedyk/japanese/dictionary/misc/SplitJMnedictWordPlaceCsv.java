@@ -32,12 +32,14 @@ public class SplitJMnedictWordPlaceCsv {
 			"^([A-Z]|[a-z]|'|-)*\\ \\(uniwersytet\\)$",
 			"^([A-Z]|[a-z]|'|-)*\\ \\(muzeum sztuki\\)$",
 			".*\\(lotnisko\\).*",
+			".*\\(kotlina\\).*",
 			".*\\(pomnik pamięci\\).*",
 			".*\\(kulturalny pomnik pamięci\\).*",
 			".*\\(kolejowy pomnik pamięci\\).*",
 			".*\\(elektrownia cieplna\\).*",
 			".*\\(elektrownia nuklearna\\).*",
-			".*\\(podziemna elektrownia wodna\\).*"
+			".*\\(podziemna elektrownia wodna\\).*",
+			".*\\(elektrownia hydroelektryczna\\).*"
 		};
 		
 		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE.csv");
