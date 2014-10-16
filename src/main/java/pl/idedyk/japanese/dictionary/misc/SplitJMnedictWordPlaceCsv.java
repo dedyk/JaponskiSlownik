@@ -29,8 +29,9 @@ public class SplitJMnedictWordPlaceCsv {
 			"^([A-Z]|[a-z]|'|-)*\\ \\(droga ekspresowa\\)$",
 			"^([A-Z]|[a-z]|'|-)*\\ \\(żeński uniwersytet\\)$",
 			"^([A-Z]|[a-z]|'|-)*\\ \\(onsen\\)$",
-			".*\\(lotnisko\\).*"
-				
+			"^([A-Z]|[a-z]|'|-)*\\ \\(uniwersytet\\)$",
+			".*\\(lotnisko\\).*",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(muzeum sztuki\\)$",				
 		};
 		
 		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE.csv");
