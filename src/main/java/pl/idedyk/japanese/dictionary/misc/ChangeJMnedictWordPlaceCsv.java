@@ -30,7 +30,7 @@ public class ChangeJMnedictWordPlaceCsv {
 			
 			if (translate.matches(".*\\ Thermal \\(elektrownia\\)$") == true) {
 				
-				translate = translate.replaceAll(" Thermal \\(elektrownia\\)$", " (elektronia cieplna)");
+				translate = translate.replaceAll(" Thermal \\(elektrownia\\)$", " (elektrownia cieplna)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
