@@ -11,8 +11,25 @@ public class SplitJMnedictWordPlaceCsv {
 	public static void main(String[] args) throws Exception {
 		
 		final String[] matches = {
-			"^([A-Z]|[a-z])*$"
-				
+			"^([A-Z]|[a-z]|'|-)*$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(świątynia\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(tunel\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(zapora wodna\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(pole golfowe\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(miasto\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(fabryka\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(park\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(szpital\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(elektrownia\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(strefa przemysłowa\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(strefa wulkaniczna\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(więzienie\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(ruiny historyczne\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(park lekkoatletyczny\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(droga ekspresowa\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(żeński uniwersytet\\)$",
+			"^([A-Z]|[a-z]|'|-)*\\ \\(onsen\\)$",
+			".*\\(lotnisko\\).*"
 				
 		};
 		
