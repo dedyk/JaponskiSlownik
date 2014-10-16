@@ -18,18 +18,26 @@ public class ChangeJMnedictWordPlaceCsv {
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : wordPlaceList) {
 			
 			String translate = currentPolishJapaneseEntry.getTranslates().get(0);
-						
+			
+			/*
 			if (translate.matches("^([A-Z]|[a-z]|'|-)*\\ University$") == true) {
 				
 				translate = translate.replaceAll(" University$", " (uniwersytet)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
 			
+			if (translate.matches(".*\\ Thermal \\(elektrownia\\)$") == true) {
+				
+				translate = translate.replaceAll(" Thermal \\(elektrownia\\)$", " (elektronia cieplna)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
 		
-		CsvReaderWriter.generateCsv("input_names/WORD_PLACE-nowe.csv", newWordPlaceList, false);
+		CsvReaderWriter.generateCsv("input_names/WORD_PLACE.csv", newWordPlaceList, false);
 	}
 }
