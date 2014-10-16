@@ -71,6 +71,14 @@ public class ChangeJMnedictWordPlaceCsv {
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
 
+			if (translate.matches(".*\\(China\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(China\\)$", " (Chiny)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+
+			
 
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
