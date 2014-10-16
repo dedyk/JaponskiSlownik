@@ -55,13 +55,23 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\ water purification plant$") == true) {
 				
 				translate = translate.replaceAll(" water purification plant$", " (oczyszczalnia wody)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
 			
+			if (translate.matches(".*\\ Astronomical Observatory$") == true) {
+				
+				translate = translate.replaceAll(" Astronomical Observatory$", " (obserwatorium astronomiczne)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+
+
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
 		
