@@ -28,12 +28,22 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".*\\ Thermal \\(elektrownia\\)$") == true) {
 				
 				translate = translate.replaceAll(" Thermal \\(elektrownia\\)$", " (elektrownia cieplna)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
+			
+			if (translate.matches(".*\\ Nuclear \\(elektrownia\\)$") == true) {
+				
+				translate = translate.replaceAll(" Nuclear \\(elektrownia\\)$", " (elektrownia nuklearna)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
