@@ -63,21 +63,29 @@ public class ChangeJMnedictWordPlaceCsv {
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
 			*/
-			
+			/*
 			if (translate.matches(".*\\ Astronomical Observatory$") == true) {
 				
 				translate = translate.replaceAll(" Astronomical Observatory$", " (obserwatorium astronomiczne)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
-
+			*/
+			/*
 			if (translate.matches(".*\\(China\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(China\\)$", " (Chiny)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
-
+			*/
+			
+			if (translate.matches(".*\\ Prefecture$") == true) {
+				
+				translate = translate.replaceAll("\\ Prefecture$", " (prefektura)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
 			
 
 			newWordPlaceList.add(currentPolishJapaneseEntry);
