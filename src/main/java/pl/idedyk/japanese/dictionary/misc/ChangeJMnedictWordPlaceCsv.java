@@ -1,7 +1,6 @@
 package pl.idedyk.japanese.dictionary.misc;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -17,7 +16,7 @@ public class ChangeJMnedictWordPlaceCsv {
 		
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : wordPlaceList) {
 			
-			String translate = currentPolishJapaneseEntry.getTranslates().get(0);
+			//String translate = currentPolishJapaneseEntry.getTranslates().get(0);
 			
 			/*
 			if (translate.matches("^([A-Z]|[a-z]|'|-)*\\ University$") == true) {
@@ -179,12 +178,14 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".* Skyline.*") == true) {
 				
 				translate = translate.replaceAll(" Skyline", " (malownicza górska droga)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
