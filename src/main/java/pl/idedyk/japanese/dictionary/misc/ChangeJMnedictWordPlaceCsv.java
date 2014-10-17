@@ -143,9 +143,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Junior College$") == true) {
 				
 				translate = translate.replaceAll(" Junior College$", " (studia licencjackie)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".* Baseball Stadium$") == true) {
+				
+				translate = translate.replaceAll(" Baseball Stadium$", " (stadion baseball'a)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
