@@ -151,10 +151,19 @@ public class ChangeJMnedictWordPlaceCsv {
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
 			*/
-
+			
+			/*
 			if (translate.matches(".* Baseball Stadium$") == true) {
 				
 				translate = translate.replaceAll(" Baseball Stadium$", " (stadion baseball'a)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".*Museum.*") == true) {
+				
+				translate = translate.replaceAll(" Museum ", " (muzeum)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
