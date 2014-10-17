@@ -170,9 +170,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".* Hut$") == true) {
 				
 				translate = translate.replaceAll(" Hut$", " (schronisko, w górach)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+			
+			if (translate.matches(".* Skyline.*") == true) {
+				
+				translate = translate.replaceAll(" Skyline", " (malownicza górska droga)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
