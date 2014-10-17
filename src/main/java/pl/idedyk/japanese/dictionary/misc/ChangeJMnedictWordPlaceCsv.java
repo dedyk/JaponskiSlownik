@@ -98,13 +98,23 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(grave\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(grave\\)$", " (grób)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
 
+			if (translate.matches(".* Medical School$") == true) {
+				
+				translate = translate.replaceAll(" Medical School$", " (szkoła medyczna)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+
+			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
 		
