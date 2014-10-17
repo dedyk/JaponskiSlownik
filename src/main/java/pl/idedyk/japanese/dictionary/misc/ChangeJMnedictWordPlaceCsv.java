@@ -89,13 +89,21 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".*\\ Tumulus$") == true) {
 				
 				translate = translate.replaceAll("\\ Tumulus$", " (tumulus, kurhan)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
-			
+			*/
+
+			if (translate.matches(".*\\(grave\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(grave\\)$", " (grób)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
 
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
