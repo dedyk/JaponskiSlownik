@@ -125,9 +125,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Gakuin University$") == true) {
 				
 				translate = translate.replaceAll(" Gakuin University$", " Gakuin (uniwersytet)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".* Women's Junior College$") == true) {
+				
+				translate = translate.replaceAll(" Women's Junior College$", " (żeńskie studia licencjackie)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
