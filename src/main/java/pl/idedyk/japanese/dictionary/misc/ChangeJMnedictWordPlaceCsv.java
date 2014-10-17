@@ -134,9 +134,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Women's Junior College$") == true) {
 				
 				translate = translate.replaceAll(" Women's Junior College$", " (żeńskie studia licencjackie)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".* Junior College$") == true) {
+				
+				translate = translate.replaceAll(" Junior College$", " (studia licencjackie)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
