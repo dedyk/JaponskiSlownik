@@ -49,6 +49,8 @@ public class SplitJMnedictWordPlaceCsv {
 			".*\\(grób\\).*",
 			".*\\(szkoła medyczna\\).*",
 			".*\\(klub golfowy, pole golfowe\\).*",
+			".*\\ Gakuen \\(uniwersytet\\).*",
+			".*\\ Gakuin \\(uniwersytet\\).*",
 		};
 		
 		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE.csv");

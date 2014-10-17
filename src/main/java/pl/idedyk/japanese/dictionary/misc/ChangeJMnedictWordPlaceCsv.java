@@ -116,9 +116,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Gakuen University$") == true) {
 				
 				translate = translate.replaceAll(" Gakuen University$", " Gakuen (uniwersytet)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".* Gakuin University$") == true) {
+				
+				translate = translate.replaceAll(" Gakuin University$", " Gakuin (uniwersytet)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
