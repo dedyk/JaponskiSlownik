@@ -160,14 +160,22 @@ public class ChangeJMnedictWordPlaceCsv {
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
 			*/
-
+			
+			/*
 			if (translate.matches(".*Museum.*") == true) {
 				
 				translate = translate.replaceAll(" Museum ", " (muzeum)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
-
+			*/
+			
+			if (translate.matches(".* Hut$") == true) {
+				
+				translate = translate.replaceAll(" Hut$", " (schronisko, w górach)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
