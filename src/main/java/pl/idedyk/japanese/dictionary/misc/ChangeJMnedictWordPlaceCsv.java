@@ -359,9 +359,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(Britain\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(Britain\\)$", " (Anglia)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".*\\(bay\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(bay\\)$", " (zatoka)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
