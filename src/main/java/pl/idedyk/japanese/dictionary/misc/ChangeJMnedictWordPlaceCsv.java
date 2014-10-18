@@ -377,6 +377,7 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(lowland\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(lowland\\)$", " (nizina)");
@@ -390,6 +391,15 @@ public class ChangeJMnedictWordPlaceCsv {
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
+			
+			if (translate.matches(".*\\(base\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(base\\)$", " (baza)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
