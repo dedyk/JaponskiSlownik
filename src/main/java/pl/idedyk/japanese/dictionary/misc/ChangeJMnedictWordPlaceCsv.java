@@ -242,9 +242,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(mountain region\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(mountain region\\)$", " (region górski)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".*\\(desert\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(desert\\)$", " (pustynia)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
