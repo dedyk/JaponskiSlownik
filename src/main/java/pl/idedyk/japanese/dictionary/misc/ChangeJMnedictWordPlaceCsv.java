@@ -323,9 +323,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".*\\(plateau\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(plateau\\)$", " (płaskowyż)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".*\\(archipelago\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(archipelago\\)$", " (archipelag)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
