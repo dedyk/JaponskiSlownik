@@ -368,9 +368,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(bay\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(bay\\)$", " (zatoka)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".*\\(lowland\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(lowland\\)$", " (nizina)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
