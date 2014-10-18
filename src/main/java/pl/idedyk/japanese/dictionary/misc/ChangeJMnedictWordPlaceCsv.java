@@ -215,9 +215,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".*\\(mountain\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(mountain\\)$", " (góra)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".*\\(islands\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(islands\\)$", " (archipelag)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
