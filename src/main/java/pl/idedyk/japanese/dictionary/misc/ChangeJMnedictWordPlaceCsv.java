@@ -251,9 +251,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(desert\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(desert\\)$", " (pustynia)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".*\\(channel\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(channel\\)$", " (kanał)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
