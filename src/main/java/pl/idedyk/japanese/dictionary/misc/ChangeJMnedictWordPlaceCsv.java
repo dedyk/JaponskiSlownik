@@ -341,9 +341,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(village\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(village\\)$", " (wieś)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".*\\(state\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(state\\)$", " (stan w USA)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
