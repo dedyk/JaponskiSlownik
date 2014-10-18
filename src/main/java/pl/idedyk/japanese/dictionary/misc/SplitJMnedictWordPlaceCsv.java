@@ -96,6 +96,14 @@ public class SplitJMnedictWordPlaceCsv {
 				}				
 			}
 			
+			if (ok == false) {
+				String info = currentPolishJapaneseEntry.getInfo();
+				
+				if (info.equals("GOTOWE") == true) {
+					ok = true;
+				}
+			}			
+			
 			if (ok == true) {
 				readyWordPlaceList.add(currentPolishJapaneseEntry);
 			} else {
