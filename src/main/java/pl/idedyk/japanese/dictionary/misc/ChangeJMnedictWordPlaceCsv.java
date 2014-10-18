@@ -384,6 +384,12 @@ public class ChangeJMnedictWordPlaceCsv {
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
 
+			if (translate.matches(".*\\(Dutch province\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(Dutch province\\)$", " (duńska prowincja)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
