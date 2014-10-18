@@ -287,13 +287,22 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(pass\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(pass\\)$", " (przełęcz)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
-			
+			*/
+
+			if (translate.matches(".*\\(mountain range\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(mountain range\\)$", " (pasmo górskie)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
 		
