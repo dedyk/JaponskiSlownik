@@ -296,9 +296,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(mountain range\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(mountain range\\)$", " (pasmo górskie)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".*\\(glacier\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(glacier\\)$", " (lodowiec)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
