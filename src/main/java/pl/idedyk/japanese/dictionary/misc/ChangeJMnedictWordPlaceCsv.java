@@ -269,9 +269,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".* Museum$") == true) {
 				
 				translate = translate.replaceAll(" Museum$", " (muzeum)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".* Peak$") == true) {
+				
+				translate = translate.replaceAll(" Peak$", " (szczyt)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
