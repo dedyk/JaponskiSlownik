@@ -305,9 +305,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(glacier\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(glacier\\)$", " (lodowiec)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".*\\(peninsula\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(peninsula\\)$", " (półwysep)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
