@@ -278,13 +278,21 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Peak$") == true) {
 				
 				translate = translate.replaceAll(" Peak$", " (szczyt)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
 
+			if (translate.matches(".*\\(pass\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(pass\\)$", " (przełęcz)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
