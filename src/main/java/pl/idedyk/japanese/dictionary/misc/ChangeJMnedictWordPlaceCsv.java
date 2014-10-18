@@ -188,9 +188,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(river\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(river\\)$", " (rzeka)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+			
+			if (translate.matches(".*\\(island\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(island\\)$", " (wyspa)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}

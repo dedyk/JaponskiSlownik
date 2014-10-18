@@ -58,6 +58,7 @@ public class SplitJMnedictWordPlaceCsv {
 			".*\\(schronisko, w górach\\).*",
 			".*\\(malownicza górska droga\\).*",
 			".*\\(rzeka\\).*",
+			".*\\(wyspa\\).*",
 		};
 		
 		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE.csv");
