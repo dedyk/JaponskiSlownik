@@ -224,9 +224,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".*\\(islands\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(islands\\)$", " (archipelag)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+			
+			if (translate.matches(".*\\(cape\\)$") == true) {
+				
+				translate = translate.replaceAll(" \\(cape\\)$", " (przylądek)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
