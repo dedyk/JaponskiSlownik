@@ -411,12 +411,22 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Beach \\(park\\)$") == true) {
 				
 				translate = translate.replaceAll(" Beach \\(park\\)$", " (plaża) (park)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
+
+			if (translate.matches(".* Bay$") == true) {
+				
+				translate = translate.replaceAll(" Bay$", " (zatoka)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
