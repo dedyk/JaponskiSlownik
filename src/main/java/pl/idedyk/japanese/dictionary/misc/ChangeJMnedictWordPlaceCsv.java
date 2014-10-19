@@ -400,6 +400,12 @@ public class ChangeJMnedictWordPlaceCsv {
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
 
+			if (translate.matches("^Mt\\..*") == true) {
+				
+				translate = translate.replaceAll("Mt\\. ", "góra ");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
