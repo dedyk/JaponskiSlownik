@@ -429,9 +429,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".* River$") == true) {
 				
 				translate = translate.replaceAll(" River$", " (rzeka)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".* Island$") == true) {
+				
+				translate = translate.replaceAll(" Island$", " (wyspa)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
