@@ -475,12 +475,22 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".* Mountains$") == true) {
 				
 				translate = translate.replaceAll(" Mountains$", " (pasmo górskie)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
+
+			if (translate.matches(".* Factory$") == true) {
+				
+				translate = translate.replaceAll(" Factory$", " (fabryka)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
