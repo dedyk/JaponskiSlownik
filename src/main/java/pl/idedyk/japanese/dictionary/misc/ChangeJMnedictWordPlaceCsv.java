@@ -445,6 +445,12 @@ public class ChangeJMnedictWordPlaceCsv {
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
 
+			if (translate.matches(".* Islands$") == true) {
+				
+				translate = translate.replaceAll(" Islands$", " (archipelag)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
