@@ -456,9 +456,19 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Lake$") == true) {
 				
 				translate = translate.replaceAll(" Lake$", " (jezioro)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches("^Lake .*$") == true) {
+				
+				translate = translate.replaceAll("^Lake ", "");
+				translate += " (jezioro)";
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
