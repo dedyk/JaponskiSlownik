@@ -484,9 +484,81 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Factory$") == true) {
 				
 				translate = translate.replaceAll(" Factory$", " (fabryka)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			/*
+			if (translate.matches(".* Park$") == true) {
+				
+				translate = translate.replaceAll(" Park$", " (park)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			/*
+			if (translate.matches(".* National \\(park\\)$") == true) {
+				
+				translate = translate.replaceAll(" National \\(park\\)$", " (park narodowy)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+			
+			/*
+			if (translate.matches(".* State \\(park\\)$") == true) {
+				
+				translate = translate.replaceAll(" State \\(park\\)$", " (park stanowy)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+			
+			/*
+			if (translate.matches(".* Historic \\(park\\)$") == true) {
+				
+				translate = translate.replaceAll(" Historic \\(park\\)$", " (park historii)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			/*
+			if (translate.matches(".* National Historic \\(park\\)$") == true) {
+				
+				translate = translate.replaceAll(" National Historic \\(park\\)$", " (park historii narodowej)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+			
+			/*
+			if (translate.matches(".* Provincial \\(park\\)$") == true) {
+				
+				translate = translate.replaceAll(" Provincial \\(park\\)$", " (park wojewódźki)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+			
+			/*
+			if (translate.matches(".* Club golf links$") == true) {
+				
+				translate = translate.replaceAll(" golf links$", " (pole golfowe)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+			
+			if (translate.matches(".* Golf Club \\(pole golfowe\\)$") == true) {
+				
+				translate = translate.replaceAll(" Golf Club \\(pole golfowe\\)$", " (klub golfowy, pole golfowe)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
