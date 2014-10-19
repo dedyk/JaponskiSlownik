@@ -438,19 +438,31 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Island$") == true) {
 				
 				translate = translate.replaceAll(" Island$", " (wyspa)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
 
+			/*
 			if (translate.matches(".* Islands$") == true) {
 				
 				translate = translate.replaceAll(" Islands$", " (archipelag)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
+
+			if (translate.matches(".* Lake$") == true) {
+				
+				translate = translate.replaceAll(" Lake$", " (jezioro)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
