@@ -465,6 +465,7 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches("^Lake .*$") == true) {
 				
 				translate = translate.replaceAll("^Lake ", "");
@@ -472,7 +473,14 @@ public class ChangeJMnedictWordPlaceCsv {
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
-
+			*/
+			
+			if (translate.matches(".* Mountains$") == true) {
+				
+				translate = translate.replaceAll(" Mountains$", " (pasmo górskie)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
