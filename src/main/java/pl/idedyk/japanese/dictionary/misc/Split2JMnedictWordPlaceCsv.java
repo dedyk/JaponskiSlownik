@@ -11,7 +11,8 @@ public class Split2JMnedictWordPlaceCsv {
 	public static void main(String[] args) throws Exception {
 		
 		//String matchTemplate = "^([A-Z]|[a-z]|'|-)\\ \\(.*\\)$";
-		String matchTemplate = "^([A-Z]|[a-z]|'|-)*\\ \\(.*\\)$";
+		//String matchTemplate = "^([A-Z]|[a-z]|'|-)*\\ \\(.*\\)$";
+		String matchTemplate = "^([A-Z]|[a-z]|'|-| )*\\(.*\\)$";
 				
 		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE-oczekujace.csv");
 		

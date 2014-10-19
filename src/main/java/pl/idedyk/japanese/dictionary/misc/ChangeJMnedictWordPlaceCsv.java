@@ -393,16 +393,27 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".*\\(base\\)$") == true) {
 				
 				translate = translate.replaceAll(" \\(base\\)$", " (baza)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
 
+			/*
 			if (translate.matches("^Mt\\..*") == true) {
 				
 				translate = translate.replaceAll("Mt\\. ", "góra ");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".* Beach \\(park\\)$") == true) {
+				
+				translate = translate.replaceAll(" Beach \\(park\\)$", " (plaża) (park)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
