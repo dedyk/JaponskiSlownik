@@ -601,9 +601,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Cemetery$") == true) {
 				
 				translate = translate.replaceAll(" Cemetery$", " (cmentarz)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".* Camping Ground$") == true) {
+				
+				translate = translate.replaceAll(" Camping Ground$", " (pole namiotowe)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
