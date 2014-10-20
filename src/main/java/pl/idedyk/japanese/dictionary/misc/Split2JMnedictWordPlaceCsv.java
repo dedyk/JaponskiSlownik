@@ -15,13 +15,14 @@ public class Split2JMnedictWordPlaceCsv {
 		//String matchTemplate = "^([A-Z]|[a-z]|'|-| )*\\(.*\\)$";
 		//String matchTemplate = ".* de .*";
 		//String matchTemplate = ".* di .*";
-		String matchTemplate = ".* du .*";
+		//String matchTemplate = ".* du .*";
 		//String matchTemplate = ".* University$";
 		//String matchTemplate = ".*大学$";
 		//String matchTemplate = ".*Republic.*";
 		//String matchTemplate = ".*Sea.*";
 		//String matchTemplate = ".*Range.*";
 		//String matchTemplate = ".*Canal.*";
+		String matchTemplate = ".*\\(park\\).*";
 		
 		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE-oczekujace.csv");
 		//List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names2/WORD_PLACE.csv");
