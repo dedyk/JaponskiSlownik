@@ -89,6 +89,7 @@ public class SplitJMnedictWordPlaceCsv {
 			".*\\(park historii narodowej\\).*",
 			".*\\(park wojewódźki\\).*",
 			".*\\(park narodowy\\).*",
+			".*\\(park stanowy\\).*",
 			".* Kanal$",
 			".*\\(płaskowyż\\).*",
 			".*\\(obwodnica\\).*",

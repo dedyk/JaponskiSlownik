@@ -2,6 +2,7 @@ package pl.idedyk.japanese.dictionary.misc;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
@@ -24,12 +25,14 @@ public class Split2JMnedictWordPlaceCsv {
 		//String matchTemplate = ".*Canal.*";
 		//String matchTemplate = ".*\\(park\\).*";
 		//String matchTemplate = ".*Gulf.*";
-		String matchTemplate = ".*Desert.*";
+		//String matchTemplate = ".*Desert.*";
 		
 		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE-oczekujace.csv");
 		//List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names2/WORD_PLACE.csv");
 		
 		List<PolishJapaneseEntry> processingWordPlaceList = new ArrayList<PolishJapaneseEntry>();
+		
+		Random random = new Random();
 		
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : waitingWordPlaceList) {
 			
@@ -37,8 +40,9 @@ public class Split2JMnedictWordPlaceCsv {
 			String translate = currentPolishJapaneseEntry.getTranslates().get(0);
 			
 			//if (kanji.matches(matchTemplate) == true) {
-			if (translate.matches(matchTemplate) == true) {			
-				
+			//if (translate.matches(matchTemplate) == true) {			
+			if (random.nextInt(30) <= 3) {
+			
 				System.out.println(translate);
 				
 				processingWordPlaceList.add(currentPolishJapaneseEntry);
