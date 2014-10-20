@@ -574,9 +574,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* byepass$") == true) {
 				
 				translate = translate.replaceAll(" byepass$", " (obwodnica)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".* Point$") == true) {
+				
+				translate = translate.replaceAll(" Point$", " (przylądek)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
