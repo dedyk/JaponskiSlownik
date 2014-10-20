@@ -23,7 +23,8 @@ public class Split2JMnedictWordPlaceCsv {
 		//String matchTemplate = ".*Range.*";
 		//String matchTemplate = ".*Canal.*";
 		//String matchTemplate = ".*\\(park\\).*";
-		String matchTemplate = ".*Gulf.*";
+		//String matchTemplate = ".*Gulf.*";
+		String matchTemplate = ".*Desert.*";
 		
 		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE-oczekujace.csv");
 		//List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names2/WORD_PLACE.csv");
