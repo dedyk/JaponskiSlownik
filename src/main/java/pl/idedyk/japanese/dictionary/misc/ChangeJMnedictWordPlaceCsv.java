@@ -592,9 +592,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Reform School$") == true) {
 				
 				translate = translate.replaceAll(" Reform School$", " (poprawcza szkoła)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".* Cemetery$") == true) {
+				
+				translate = translate.replaceAll(" Cemetery$", " (cmentarz)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
