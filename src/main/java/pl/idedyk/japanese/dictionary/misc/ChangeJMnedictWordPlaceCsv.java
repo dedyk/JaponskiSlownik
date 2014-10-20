@@ -19,6 +19,14 @@ public class ChangeJMnedictWordPlaceCsv {
 			
 			String translate = currentPolishJapaneseEntry.getTranslates().get(0);
 			
+			String info = currentPolishJapaneseEntry.getInfo();
+			
+			if (info.equals("GOTOWE") == true) {
+				newWordPlaceList.add(currentPolishJapaneseEntry);
+				
+				continue;
+			}
+			
 			/*
 			if (translate.matches("^([A-Z]|[a-z]|'|-)*\\ University$") == true) {
 				
@@ -619,13 +627,21 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* holiday home area$") == true) {
 				
 				translate = translate.replaceAll(" holiday home area$", " (miejsce letnich wakacyjnych domów)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/			
+
+			if (translate.matches(".* Channel$") == true) {
+				
+				translate = translate.replaceAll(" Channel$", " (kanał)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}			
-			
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
