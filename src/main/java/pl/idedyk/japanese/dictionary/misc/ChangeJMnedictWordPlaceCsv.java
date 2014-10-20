@@ -556,9 +556,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".* Golf Club \\(pole golfowe\\)$") == true) {
 				
 				translate = translate.replaceAll(" Golf Club \\(pole golfowe\\)$", " (klub golfowy, pole golfowe)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/
+
+			if (translate.matches(".* Plateau$") == true) {
+				
+				translate = translate.replaceAll(" Plateau$", " (płaskowyż)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
