@@ -636,13 +636,22 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/			
 
+			/*
 			if (translate.matches(".* Channel$") == true) {
 				
 				translate = translate.replaceAll(" Channel$", " (kanał)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}			
+			*/
 			
+			if (translate.matches(".* Straits$") == true) {
+				
+				translate = translate.replaceAll(" Straits$", " (cieśnina)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}			
+
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
 		
