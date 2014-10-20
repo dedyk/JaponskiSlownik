@@ -15,21 +15,21 @@ public class Split2JMnedictWordPlaceCsv {
 		//String matchTemplate = "^([A-Z]|[a-z]|'|-| )*\\(.*\\)$";
 		//String matchTemplate = ".* de .*";
 		//String matchTemplate = ".* di .*";
-		//String matchTemplate = ".* University$";
-		String matchTemplate = ".* Medical University$";
+		String matchTemplate = ".* University$";
+		//String matchTemplate = ".*大学$";
 		
-		
-		
-				
-		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE-oczekujace.csv");
+		//List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE-oczekujace.csv");
+		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names2/WORD_PLACE.csv");
 		
 		List<PolishJapaneseEntry> processingWordPlaceList = new ArrayList<PolishJapaneseEntry>();
 		
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : waitingWordPlaceList) {
 			
+			//String kanji = currentPolishJapaneseEntry.getKanji();
 			String translate = currentPolishJapaneseEntry.getTranslates().get(0);
 			
-			if (translate.matches(matchTemplate) == true) {
+			//if (kanji.matches(matchTemplate) == true) {
+			if (translate.matches(matchTemplate) == true) {			
 				
 				System.out.println(translate);
 				
