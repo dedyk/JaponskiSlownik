@@ -610,13 +610,22 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 
+			/*
 			if (translate.matches(".* Camping Ground$") == true) {
 				
 				translate = translate.replaceAll(" Camping Ground$", " (pole namiotowe)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
+			*/
 
+			if (translate.matches(".* holiday home area$") == true) {
+				
+				translate = translate.replaceAll(" holiday home area$", " (miejsce letnich wakacyjnych domów)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}			
+			
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
