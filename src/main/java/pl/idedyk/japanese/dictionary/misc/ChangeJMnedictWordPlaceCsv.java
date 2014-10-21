@@ -654,13 +654,23 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/			
 
+			/*
 			if (translate.matches(".* Reservoir$") == true) {
 				
 				translate = translate.replaceAll(" Reservoir$", " (jezioro)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			*/			
+
+			if (translate.matches(".* spinning mill$") == true) {
+				
+				translate = translate.replaceAll(" spinning mill$", " (przędzalnia)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}			
 
+			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
 		
