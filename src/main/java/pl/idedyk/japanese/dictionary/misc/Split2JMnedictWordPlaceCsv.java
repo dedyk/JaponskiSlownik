@@ -42,7 +42,7 @@ public class Split2JMnedictWordPlaceCsv {
 			
 			//if (kanji.matches(matchTemplate) == true) {
 			//if (translate.matches(matchTemplate) == true) {			
-			if (random.nextInt(30) < 3) {
+			if (random.nextInt(30) < 7) {
 			
 				System.out.println(translate);
 				
