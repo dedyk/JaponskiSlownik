@@ -29,6 +29,6 @@ public class JoinJMedictDictionary {
 			id++;
 		}
 		
-		CsvReaderWriter.generateCsv("input/names.csv", allPolishJapaneseNamesList, false);
+		CsvReaderWriter.generateCsv("input_names/names.csv", allPolishJapaneseNamesList, false);
 	}
 }
