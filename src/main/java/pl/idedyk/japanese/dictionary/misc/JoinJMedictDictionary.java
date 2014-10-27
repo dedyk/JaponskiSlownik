@@ -11,15 +11,10 @@ public class JoinJMedictDictionary {
 
 	public static void main(String[] args) throws Exception {
 		
-		File inputNamesDirFile = new File("input_names");
-		
-		File[] namesCsvDictionaryFileList = inputNamesDirFile.listFiles();
-		
 		List<PolishJapaneseEntry> allPolishJapaneseNamesList = new ArrayList<PolishJapaneseEntry>();
 		
-		for (File currentCsvDictionaryFile : namesCsvDictionaryFileList) {			
-			allPolishJapaneseNamesList.addAll(CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(currentCsvDictionaryFile.getAbsolutePath()));			
-		}
+		readDir(allPolishJapaneseNamesList, new File("input_names"));
+		readDir(allPolishJapaneseNamesList, new File("input_names/miss1"));
 		
 		int id = 1;
 		
@@ -30,5 +25,18 @@ public class JoinJMedictDictionary {
 		}
 		
 		CsvReaderWriter.generateCsv("input_names/names.csv", allPolishJapaneseNamesList, false);
+	}
+	
+	private static void readDir(List<PolishJapaneseEntry> allPolishJapaneseNamesList, File dir) throws Exception {
+				
+		File[] dirFileList = dir.listFiles();		
+		
+		for (File currentCsvDictionaryFile : dirFileList) {	
+			
+			if (currentCsvDictionaryFile.isFile() == true) {
+				allPolishJapaneseNamesList.addAll(CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(currentCsvDictionaryFile.getAbsolutePath()));
+			}
+			
+		}		
 	}
 }
