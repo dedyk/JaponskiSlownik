@@ -29,6 +29,10 @@ public class JMEDictReader {
 		return readJMEdict(fileName, "JMnedict", false);
 	}
 
+	public static TreeMap<String, List<JMEDictEntry>> readJMnedict(String fileName, boolean kanjiKeyNull) throws Exception {
+		return readJMEdict(fileName, "JMnedict", kanjiKeyNull);
+	}
+
 	private static TreeMap<String, List<JMEDictEntry>> readJMEdict(String fileName, String rootName,
 			final boolean kanjiKeyNull) throws Exception {
 
@@ -87,7 +91,7 @@ public class JMEDictReader {
 					for (Object object : rEleRebList) {
 
 						Element element = (Element) object;
-
+						
 						jmeDictEntry.getKana().add(element.getText());
 					}
 
@@ -222,8 +226,10 @@ public class JMEDictReader {
 		if (list == null) {
 			list = new ArrayList<JMEDictEntry>();
 		}
-
-		list.add(jmedictEntry);
+		
+		if (list.contains(jmedictEntry) == false) {
+			list.add(jmedictEntry);
+		}
 
 		treeMap.put(mapKey, list);
 	}

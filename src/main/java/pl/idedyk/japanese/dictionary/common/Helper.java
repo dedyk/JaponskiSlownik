@@ -335,7 +335,8 @@ public class Helper {
 		nameTypeMapper.put("surname", DictionaryEntryType.WORD_SURNAME_NAME);
 		nameTypeMapper.put("person", DictionaryEntryType.WORD_PERSON);		
 		nameTypeMapper.put("station", DictionaryEntryType.WORD_STATION_NAME);
-		nameTypeMapper.put("place", DictionaryEntryType.WORD_PLACE);
+		nameTypeMapper.put("place", DictionaryEntryType.WORD_PLACE);		
+		nameTypeMapper.put("unclass", DictionaryEntryType.WORD_UNCLASS_NAME);
 		
 		int counter = 1;
 
@@ -350,7 +351,7 @@ public class Helper {
 				if (jmedictEntry.getTrans().size() == 0) {
 					continue;
 				}
-				
+								
 				List<DictionaryEntryType> nameDictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
 				
 				for (String currentTran : jmedictEntry.getTrans()) {
@@ -373,9 +374,14 @@ public class Helper {
 					nameDictionaryEntryTypeList.remove(DictionaryEntryType.WORD_FEMALE_NAME);					
 				}
 				
-				for (int idx = 0; idx < jmedictEntry.getKanji().size(); ++idx) {
+				for (int idx = 0; idx < jmedictEntry.getKana().size(); ++idx) {
 					
-					String kanji = jmedictEntry.getKanji().get(idx);
+					String kanji = null;
+					
+					if (jmedictEntry.getKanji().size() > idx) {
+						kanji = jmedictEntry.getKanji().get(idx);
+					}
+					
 					String kana = jmedictEntry.getKana().get(idx);
 					String transDet = jmedictEntry.getTransDet().get(idx);
 					
@@ -456,9 +462,6 @@ public class Helper {
 			
 			newPolishJapaneseEntry.setTranslates(newTranslateList);
 		}
-		
-		
-		
 	}
 
 	private static String fixRomajiForNames(String romaji, String transDet) {

@@ -16,7 +16,7 @@ public class SplitJMnedict {
 
 	public static void main(String[] args) throws Exception {
 		
-		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
+		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml", true);
 		
 		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(jmedictName);
 		
@@ -45,7 +45,7 @@ public class SplitJMnedict {
 			
 			List<PolishJapaneseEntry> dictionaryEntryTypeList = groupedPolishJapaneseEntryList.get(dictionaryEntryType);
 			
-			CsvReaderWriter.generateCsv("input_names/" + dictionaryEntryType + ".csv", dictionaryEntryTypeList, false);			
+			CsvReaderWriter.generateCsv("input_names2/" + dictionaryEntryType + ".csv", dictionaryEntryTypeList, false);			
 		}		
 	}
 }
