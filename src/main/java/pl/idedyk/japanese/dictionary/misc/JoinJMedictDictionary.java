@@ -24,7 +24,28 @@ public class JoinJMedictDictionary {
 			id++;
 		}
 		
-		CsvReaderWriter.generateCsv("input_names/names.csv", allPolishJapaneseNamesList, false);
+		final int maxPos = 300000;
+		
+		int counter = 1;
+				
+		List<PolishJapaneseEntry> partialPolishJapaneseEntryList = new ArrayList<PolishJapaneseEntry>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : allPolishJapaneseNamesList) {
+			
+			partialPolishJapaneseEntryList.add(polishJapaneseEntry);
+
+			if (partialPolishJapaneseEntryList.size() >= maxPos) {				
+				CsvReaderWriter.generateCsv("input_names/names.csv_" + counter, partialPolishJapaneseEntryList, false);
+				
+				partialPolishJapaneseEntryList.clear();
+				
+				counter++;
+			}			
+		}
+		
+		if (partialPolishJapaneseEntryList.size() > 0) {
+			CsvReaderWriter.generateCsv("input_names/names.csv_" + counter, partialPolishJapaneseEntryList, false);
+		}		
 	}
 	
 	private static void readDir(List<PolishJapaneseEntry> allPolishJapaneseNamesList, File dir) throws Exception {
