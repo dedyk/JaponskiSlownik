@@ -193,6 +193,10 @@ public class SplitJMnedictWordPlaceCsv {
 			"^([A-Z]|[a-z]|'|-| )* \\(Kambodża\\)$",
 			"^([A-Z]|[a-z]|'|-| )* \\(Panama\\)$",
 			"^([A-Z]|[a-z]|'|-| )* \\(Libia\\)$",
+			"^([A-Z]|[a-z]|'|-| )* \\(Bośnia i Hercegowina\\)$",
+			"^([A-Z]|[a-z]|'|-| )* \\(Madagaskar\\)$",
+			"^([A-Z]|[a-z]|'|-| )* \\(Macedonia\\)$",
+			"^([A-Z]|[a-z]|'|-| )* \\(Cypr\\)$",
 		};
 		
 		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss1/WORD_PLACE.csv");
