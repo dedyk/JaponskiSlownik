@@ -11,6 +11,7 @@ public class SplitJMnedictWordPlaceCsv {
 	public static void main(String[] args) throws Exception {
 		
 		final String[] matches = {
+			/*
 			"^([A-Z]|[a-z]|'|-)*$",
 			"^([A-Z]|[a-z]|'|-)*\\ \\(świątynia\\)$",
 			"^([A-Z]|[a-z]|'|-)*\\ \\(tunel\\)$",
@@ -99,10 +100,11 @@ public class SplitJMnedictWordPlaceCsv {
 			".*\\(pole namiotowe\\).*",
 			".*\\(miejsce letnich wakacyjnych domów\\).*",
 			".*\\(cieśnina\\).*",
-			".*\\(przędzalnia\\).*",			
+			".*\\(przędzalnia\\).*",	
+			*/		
 		};
 		
-		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE.csv");
+		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss1/WORD_PLACE.csv");
 		
 		List<PolishJapaneseEntry> readyWordPlaceList = new ArrayList<PolishJapaneseEntry>();
 		List<PolishJapaneseEntry> waitingWordPlaceList = new ArrayList<PolishJapaneseEntry>();
@@ -139,7 +141,7 @@ public class SplitJMnedictWordPlaceCsv {
 			}
 		}		
 		
-		CsvReaderWriter.generateCsv("input_names/WORD_PLACE-gotowe.csv", readyWordPlaceList, false);
-		CsvReaderWriter.generateCsv("input_names/WORD_PLACE-oczekujace.csv", waitingWordPlaceList, false);
+		CsvReaderWriter.generateCsv("input_names/miss1/WORD_PLACE-gotowe.csv", readyWordPlaceList, false);
+		CsvReaderWriter.generateCsv("input_names/miss1/WORD_PLACE-oczekujace.csv", waitingWordPlaceList, false);
 	}
 }

@@ -2,7 +2,6 @@ package pl.idedyk.japanese.dictionary.misc;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
@@ -27,13 +26,14 @@ public class Split2JMnedictWordPlaceCsv {
 		//String matchTemplate = ".*Gulf.*";
 		//String matchTemplate = ".*Desert.*";
 		//String matchTemplate = ".*Peninsula.*";
+		String matchTemplate = ".*Poland.*";
 		
-		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE-oczekujace.csv");
+		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss1/WORD_PLACE-oczekujace.csv");
 		//List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names2/WORD_PLACE.csv");
 		
 		List<PolishJapaneseEntry> processingWordPlaceList = new ArrayList<PolishJapaneseEntry>();
 		
-		Random random = new Random();
+		//Random random = new Random();
 		
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : waitingWordPlaceList) {
 			
@@ -41,8 +41,8 @@ public class Split2JMnedictWordPlaceCsv {
 			String translate = currentPolishJapaneseEntry.getTranslates().get(0);
 			
 			//if (kanji.matches(matchTemplate) == true) {
-			//if (translate.matches(matchTemplate) == true) {			
-			if (random.nextInt(30) < 6) {
+			if (translate.matches(matchTemplate) == true) {			
+			//if (random.nextInt(30) < 6) {
 			
 				System.out.println(translate);
 				
@@ -50,6 +50,6 @@ public class Split2JMnedictWordPlaceCsv {
 			}			
 		}		
 		
-		CsvReaderWriter.generateCsv("input_names/WORD_PLACE-processing.csv", processingWordPlaceList, false);
+		CsvReaderWriter.generateCsv("input_names/miss1/WORD_PLACE-processing.csv", processingWordPlaceList, false);
 	}
 }

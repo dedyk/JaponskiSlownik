@@ -11,7 +11,7 @@ public class ChangeJMnedictWordPlaceCsv {
 
 	public static void main(String[] args) throws Exception {
 				
-		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE.csv");
+		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss1/WORD_PLACE.csv");
 		
 		List<PolishJapaneseEntry> newWordPlaceList = new ArrayList<PolishJapaneseEntry>();
 		
@@ -663,17 +663,18 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/			
 
+			/*
 			if (translate.matches(".* spinning mill$") == true) {
 				
 				translate = translate.replaceAll(" spinning mill$", " (przędzalnia)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
-			}			
-
+			}
+			*/
 			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
 		
-		CsvReaderWriter.generateCsv("input_names/WORD_PLACE.csv", newWordPlaceList, false);
+		CsvReaderWriter.generateCsv("input_names/miss1/WORD_PLACE.csv", newWordPlaceList, false);
 	}
 }
