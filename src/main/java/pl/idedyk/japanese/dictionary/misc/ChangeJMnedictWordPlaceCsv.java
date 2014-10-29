@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary.misc;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -10,13 +11,13 @@ public class ChangeJMnedictWordPlaceCsv {
 
 	public static void main(String[] args) throws Exception {
 				
-		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss1/WORD_PLACE.csv");
+		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss2/WORD_PLACE.csv");
 		
 		List<PolishJapaneseEntry> newWordPlaceList = new ArrayList<PolishJapaneseEntry>();
 		
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : wordPlaceList) {
 			
-			// String translate = currentPolishJapaneseEntry.getTranslates().get(0);
+			String translate = currentPolishJapaneseEntry.getTranslates().get(0);
 			
 			String info = currentPolishJapaneseEntry.getInfo();
 			
@@ -671,9 +672,16 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			if (translate.matches(".* tunnel$") == true) {
+				
+				translate = translate.replaceAll(" tunnel", " (tunel)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+			
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
 		
-		CsvReaderWriter.generateCsv("input_names/miss1/WORD_PLACE.csv", newWordPlaceList, false);
+		CsvReaderWriter.generateCsv("input_names/miss2/WORD_PLACE.csv", newWordPlaceList, false);
 	}
 }

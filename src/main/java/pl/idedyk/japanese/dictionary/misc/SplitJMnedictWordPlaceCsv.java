@@ -14,7 +14,6 @@ public class SplitJMnedictWordPlaceCsv {
 			/*
 			"^([A-Z]|[a-z]|'|-)*$",
 			"^([A-Z]|[a-z]|'|-)*\\ \\(świątynia\\)$",
-			"^([A-Z]|[a-z]|'|-)*\\ \\(tunel\\)$",
 			"^([A-Z]|[a-z]|'|-)*\\ \\(zapora wodna\\)$",
 			"^([A-Z]|[a-z]|'|-)*\\ \\(pole golfowe\\)$",
 			"^([A-Z]|[a-z]|'|-)*\\ \\(miasto\\)$",
@@ -102,6 +101,7 @@ public class SplitJMnedictWordPlaceCsv {
 			".*\\(cieśnina\\).*",
 			".*\\(przędzalnia\\).*",	
 			*/		
+			"^([A-Z]|[a-z]|'|-)*\\ \\(tunel\\)$",
 			"^([A-Z]|[a-z]|'|-| )* \\(Anglia\\)$",	
 			"^([A-Z]|[a-z]|'|-| )* \\(Afganistan\\)$",
 			"^([A-Z]|[a-z]|'|-| )* \\(Nowa Zelandia\\)$",
