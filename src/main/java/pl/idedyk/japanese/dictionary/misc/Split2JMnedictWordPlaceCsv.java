@@ -2,6 +2,7 @@ package pl.idedyk.japanese.dictionary.misc;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
@@ -35,14 +36,14 @@ public class Split2JMnedictWordPlaceCsv {
 		//String matchTemplate = ".*\\(Britain\\)$";
 		//String matchTemplate = ".*\\(Germany\\)$";
 		//String matchTemplate = ".*\\(.*\\)$";
-		String matchTemplate = "^([A-Z]|[a-z]|'|-)*$";
+		//String matchTemplate = "^([A-Z]|[a-z]|'|-)*$";
 		
 		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss2/WORD_PLACE-oczekujace.csv");
 		//List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names2/WORD_PLACE.csv");
 		
 		List<PolishJapaneseEntry> processingWordPlaceList = new ArrayList<PolishJapaneseEntry>();
 		
-		//Random random = new Random();
+		Random random = new Random();
 		
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : waitingWordPlaceList) {
 			
@@ -50,8 +51,8 @@ public class Split2JMnedictWordPlaceCsv {
 			String translate = currentPolishJapaneseEntry.getTranslates().get(0);
 			
 			//if (kanji.matches(matchTemplate) == true) {
-			if (translate.matches(matchTemplate) == true) {			
-			//if (random.nextInt(30) < 6) {
+			//if (translate.matches(matchTemplate) == true) {			
+			if (random.nextInt(30) < 2) {
 			
 				System.out.println(translate);
 				

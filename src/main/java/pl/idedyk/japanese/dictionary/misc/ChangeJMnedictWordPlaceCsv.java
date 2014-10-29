@@ -672,13 +672,22 @@ public class ChangeJMnedictWordPlaceCsv {
 			}
 			*/
 			
+			/*
 			if (translate.matches(".* tunnel$") == true) {
 				
 				translate = translate.replaceAll(" tunnel", " (tunel)");
 				
 				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
 			}
-			
+			*/
+
+			if (translate.matches(".* dam$") == true) {
+				
+				translate = translate.replaceAll(" dam", " (zapora wodna)");
+				
+				currentPolishJapaneseEntry.setTranslates(Arrays.asList(translate));
+			}
+
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
 		
