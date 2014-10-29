@@ -199,7 +199,7 @@ public class SplitJMnedictWordPlaceCsv {
 			"^([A-Z]|[a-z]|'|-| )* \\(Cypr\\)$",
 		};
 		
-		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss1/WORD_PLACE.csv");
+		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss2/WORD_PLACE.csv");
 		
 		List<PolishJapaneseEntry> readyWordPlaceList = new ArrayList<PolishJapaneseEntry>();
 		List<PolishJapaneseEntry> waitingWordPlaceList = new ArrayList<PolishJapaneseEntry>();
@@ -236,7 +236,7 @@ public class SplitJMnedictWordPlaceCsv {
 			}
 		}		
 		
-		CsvReaderWriter.generateCsv("input_names/miss1/WORD_PLACE-gotowe.csv", readyWordPlaceList, false);
-		CsvReaderWriter.generateCsv("input_names/miss1/WORD_PLACE-oczekujace.csv", waitingWordPlaceList, false);
+		CsvReaderWriter.generateCsv("input_names/miss2/WORD_PLACE-gotowe.csv", readyWordPlaceList, false);
+		CsvReaderWriter.generateCsv("input_names/miss2/WORD_PLACE-oczekujace.csv", waitingWordPlaceList, false);
 	}
 }
