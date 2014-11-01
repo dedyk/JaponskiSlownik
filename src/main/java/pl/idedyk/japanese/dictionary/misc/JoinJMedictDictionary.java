@@ -3,6 +3,8 @@ package pl.idedyk.japanese.dictionary.misc;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
@@ -13,10 +15,12 @@ public class JoinJMedictDictionary {
 		
 		List<PolishJapaneseEntry> allPolishJapaneseNamesList = new ArrayList<PolishJapaneseEntry>();
 		
-		readDir(allPolishJapaneseNamesList, new File("input_names"));
-		readDir(allPolishJapaneseNamesList, new File("input_names/miss1"));
-		readDir(allPolishJapaneseNamesList, new File("input_names/miss2"));
-		readDir(allPolishJapaneseNamesList, new File("input_names/miss3"));
+		Set<String> allPolishJapaneseNamesListMap = new TreeSet<String>();
+		
+		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names"));
+		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss1"));
+		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss2"));
+		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss3"));
 		
 		int id = 1;
 		
@@ -50,16 +54,35 @@ public class JoinJMedictDictionary {
 		}		
 	}
 	
-	private static void readDir(List<PolishJapaneseEntry> allPolishJapaneseNamesList, File dir) throws Exception {
+	private static void readDir(List<PolishJapaneseEntry> allPolishJapaneseNamesList, Set<String> allPolishJapaneseNamesListMap, 
+			File dir) throws Exception {
 				
 		File[] dirFileList = dir.listFiles();		
 		
 		for (File currentCsvDictionaryFile : dirFileList) {	
 			
 			if (currentCsvDictionaryFile.isFile() == true) {
-				allPolishJapaneseNamesList.addAll(CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(currentCsvDictionaryFile.getAbsolutePath()));
-			}
-			
+				
+				List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(currentCsvDictionaryFile.getAbsolutePath());
+				
+				for (PolishJapaneseEntry polishJapaneseEntry : parsePolishJapaneseEntriesFromCsv) {
+					
+					String key = getKey(polishJapaneseEntry);
+					
+					if (allPolishJapaneseNamesListMap.contains(key) == false) {
+						
+						allPolishJapaneseNamesListMap.add(key);
+						
+						allPolishJapaneseNamesList.add(polishJapaneseEntry);
+					}					
+				}
+			}			
 		}		
 	}
+	
+	private static String getKey(PolishJapaneseEntry polishJapaneseEntry) {
+		return polishJapaneseEntry.getKanji() + "." + polishJapaneseEntry.getKanaList().get(0) + "." + polishJapaneseEntry.getRomajiList().get(0) + 
+				polishJapaneseEntry.getTranslates().get(0);
+	}
+
 }
