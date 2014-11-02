@@ -367,7 +367,9 @@ public class Helper {
 						continue;
 					}
 					
-					nameDictionaryEntryTypeList.add(nameDictionaryEntryType);
+					if (nameDictionaryEntryTypeList.contains(nameDictionaryEntryType) == false) {
+						nameDictionaryEntryTypeList.add(nameDictionaryEntryType);
+					}					
 				}
 				
 				if (nameDictionaryEntryTypeList.size() == 0) {
