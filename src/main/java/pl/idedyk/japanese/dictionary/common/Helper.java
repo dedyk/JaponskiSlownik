@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
@@ -390,7 +391,8 @@ public class Helper {
 					}
 					
 					String kana = jmedictEntry.getKana().get(idx);
-					String transDet = jmedictEntry.getTransDet().get(idx);
+					
+					List<String> transDetList = jmedictEntry.getTransDet();					
 					
 					//System.out.println(kanji + " - " + kana + " - " + transDet);
 					
@@ -419,7 +421,7 @@ public class Helper {
 					newPolishJapaneseEntry.setRomajiList(romajiList);
 
 					List<String> polishTranslateList = new ArrayList<String>();
-					polishTranslateList.add(transDet);
+					polishTranslateList.add(Utils.convertListToString(transDetList));
 
 					newPolishJapaneseEntry.setTranslates(polishTranslateList);
 
