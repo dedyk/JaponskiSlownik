@@ -28,10 +28,12 @@ public class JMEDictReader {
 	public static TreeMap<String, List<JMEDictEntry>> readJMnedict(String fileName) throws Exception {
 		return readJMEdict(fileName, "JMnedict", false);
 	}
-
+	
+	/*
 	public static TreeMap<String, List<JMEDictEntry>> readJMnedict(String fileName, boolean kanjiKeyNull) throws Exception {
 		return readJMEdict(fileName, "JMnedict", kanjiKeyNull);
 	}
+	*/
 
 	private static TreeMap<String, List<JMEDictEntry>> readJMEdict(String fileName, String rootName,
 			final boolean kanjiKeyNull) throws Exception {

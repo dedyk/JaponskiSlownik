@@ -62,7 +62,7 @@ public class Test4 {
 		unclass * ?
 		*/
 		
-		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict-TEST.xml", true);
+		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict-TEST.xml");
 		
 		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(jmedictName);
 		

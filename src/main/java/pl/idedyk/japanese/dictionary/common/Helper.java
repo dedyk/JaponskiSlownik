@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
@@ -420,10 +419,7 @@ public class Helper {
 
 					newPolishJapaneseEntry.setRomajiList(romajiList);
 
-					List<String> polishTranslateList = new ArrayList<String>();
-					polishTranslateList.add(Utils.convertListToString(transDetList));
-
-					newPolishJapaneseEntry.setTranslates(polishTranslateList);
+					newPolishJapaneseEntry.setTranslates(transDetList);
 
 					newPolishJapaneseEntry.setParseAdditionalInfoList(new ArrayList<ParseAdditionalInfo>());
 

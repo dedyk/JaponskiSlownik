@@ -15,7 +15,7 @@ public class GenerateCompanyProductOrganizationNameList {
 	
 	public static void main(String[] args) throws Exception {
 		
-		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml", true);
+		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
 		List<PolishJapaneseEntry> namesList = Helper.generateNames(jmedictName);
 				
