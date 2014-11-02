@@ -199,7 +199,7 @@ public class CsvReaderWriter {
 
 		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
 
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId);
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, true);
 
 		csvWriter.close();
 	}
@@ -209,17 +209,31 @@ public class CsvReaderWriter {
 
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
 
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId);
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, true);
 
 		csvWriter.close();
 	}
 
+	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries,
+			boolean addKnownDupplicatedId, boolean addId) throws IOException {
+
+		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
+
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, addId);
+
+		csvWriter.close();
+	}
+	
 	private static void writePolishJapaneseEntries(CsvWriter csvWriter,
-			List<PolishJapaneseEntry> polishJapaneseEntries, boolean addKnownDupplicatedId) throws IOException {
+			List<PolishJapaneseEntry> polishJapaneseEntries, boolean addKnownDupplicatedId,
+			boolean addId) throws IOException {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
-			csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
+			if (addId == true) {
+				csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
+			}
+			
 			csvWriter.write(convertListToString(polishJapaneseEntry.getDictionaryEntryTypeList()));
 			csvWriter.write(convertAttributeListToString(polishJapaneseEntry.getAttributeList()));
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
@@ -235,8 +249,7 @@ public class CsvReaderWriter {
 			csvWriter.write(convertListToString(polishJapaneseEntry.getParseAdditionalInfoList()));
 
 			if (addKnownDupplicatedId == true) {
-				csvWriter
-						.write(convertListToString(new ArrayList<Integer>(polishJapaneseEntry.getKnownDuplicatedId())));
+				csvWriter.write(convertListToString(new ArrayList<Integer>(polishJapaneseEntry.getKnownDuplicatedId())));
 			}
 			
 			csvWriter.write(convertListToString(polishJapaneseEntry.getExampleSentenceGroupIdsList()));

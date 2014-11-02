@@ -314,16 +314,17 @@ public class Helper {
 
 		/*
 		- company -
+		- product -
+		- organization -
+		
 		+ fem +
 		+ given +
-		+ masc +
-		- organization -
+		+ masc +		
 		+ person +
-		+ place * ?
-		- product -
+		+ place +		
 		+ station +
 		+ surname +
-		- unclass * ?
+		+ unclass +
 		*/
 
 		// mapowanie typow
@@ -337,6 +338,10 @@ public class Helper {
 		nameTypeMapper.put("station", DictionaryEntryType.WORD_STATION_NAME);
 		nameTypeMapper.put("place", DictionaryEntryType.WORD_PLACE);		
 		nameTypeMapper.put("unclass", DictionaryEntryType.WORD_UNCLASS_NAME);
+		
+		nameTypeMapper.put("company", DictionaryEntryType.WORD_COMPANY_NAME);
+		nameTypeMapper.put("product", DictionaryEntryType.WORD_PRODUCT_NAME);
+		nameTypeMapper.put("organization", DictionaryEntryType.WORD_ORGANIZATION_NAME);
 		
 		int counter = 1;
 

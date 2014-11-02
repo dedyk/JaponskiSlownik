@@ -1,13 +1,11 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.common.Helper;
-import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 
 public class Test4 {
 
@@ -62,10 +60,32 @@ public class Test4 {
 		unclass * ?
 		*/
 		
+		/*
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
 		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(jmedictName);
 		
 		CsvReaderWriter.generateCsv("/tmp/a.csv", generatedNames, false);
+		*/
+		
+		List<PolishJapaneseEntry> namesList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names2/names.csv");
+		
+		List<PolishJapaneseEntry> smallNamesList = new ArrayList<PolishJapaneseEntry>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : namesList) {
+			
+			List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
+			
+			if (	dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_COMPANY_NAME) == true ||
+					dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_PRODUCT_NAME) == true ||
+					dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ORGANIZATION_NAME) == true) {
+				
+				if (dictionaryEntryTypeList.size() > 1) {					
+					smallNamesList.add(polishJapaneseEntry);					
+				}				
+			}			
+		}
+		
+		CsvReaderWriter.generateCsv("input_names2/names2.csv", smallNamesList, false);
 	}
 }
