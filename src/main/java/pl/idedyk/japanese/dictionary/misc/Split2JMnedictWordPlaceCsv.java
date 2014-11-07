@@ -40,9 +40,10 @@ public class Split2JMnedictWordPlaceCsv {
 		//String matchTemplate = "^([A-Z]|[a-z]|)*\\ ([A-Z]|[a-z]|)*$";
 		//String matchTemplate = "^.* von .*$";
 		//String matchTemplate = "^.* de .*$";
-		String matchTemplate = "^.* der .*$";
+		//String matchTemplate = "^.* der .*$";
+		String matchTemplate = "^([A-Z]|[a-z]|'|-)*$";
 		
-		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss3/WORD_UNCLASS_NAME-oczekujace.csv");
+		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss4/WORD_ORGANIZATION_NAME-oczekujace.csv");
 		//List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names2/WORD_PLACE.csv");
 		
 		List<PolishJapaneseEntry> processingWordPlaceList = new ArrayList<PolishJapaneseEntry>();
@@ -64,6 +65,6 @@ public class Split2JMnedictWordPlaceCsv {
 			}			
 		}		
 		
-		CsvReaderWriter.generateCsv("input_names/miss3/WORD_UNCLASS_NAME-processing.csv", processingWordPlaceList, false);
+		CsvReaderWriter.generateCsv("input_names/miss4/WORD_ORGANIZATION_NAME-processing.csv", processingWordPlaceList, false);
 	}
 }

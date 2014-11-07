@@ -198,11 +198,11 @@ public class SplitJMnedictWordPlaceCsv {
 			"^([A-Z]|[a-z]|'|-| )* \\(Madagaskar\\)$",
 			"^([A-Z]|[a-z]|'|-| )* \\(Macedonia\\)$",
 			"^([A-Z]|[a-z]|'|-| )* \\(Cypr\\)$",
-			*/
 			"^([A-Z]|[a-z]|'|-)*$",
+			*/
 		};
 		
-		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss3/WORD_UNCLASS_NAME.csv");
+		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss4/WORD_ORGANIZATION_NAME.csv");
 		
 		List<PolishJapaneseEntry> readyWordPlaceList = new ArrayList<PolishJapaneseEntry>();
 		List<PolishJapaneseEntry> waitingWordPlaceList = new ArrayList<PolishJapaneseEntry>();
@@ -239,7 +239,7 @@ public class SplitJMnedictWordPlaceCsv {
 			}
 		}		
 		
-		CsvReaderWriter.generateCsv("input_names/miss3/WORD_UNCLASS_NAME-gotowe.csv", readyWordPlaceList, false);
-		CsvReaderWriter.generateCsv("input_names/miss3/WORD_UNCLASS_NAME-oczekujace.csv", waitingWordPlaceList, false);
+		CsvReaderWriter.generateCsv("input_names/miss4/WORD_ORGANIZATION_NAME-gotowe.csv", readyWordPlaceList, false);
+		CsvReaderWriter.generateCsv("input_names/miss4/WORD_ORGANIZATION_NAME-oczekujace.csv", waitingWordPlaceList, false);
 	}
 }
