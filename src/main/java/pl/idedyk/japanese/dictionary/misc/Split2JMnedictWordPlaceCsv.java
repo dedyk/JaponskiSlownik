@@ -41,7 +41,9 @@ public class Split2JMnedictWordPlaceCsv {
 		//String matchTemplate = "^.* von .*$";
 		//String matchTemplate = "^.* de .*$";
 		//String matchTemplate = "^.* der .*$";
-		String matchTemplate = "^([A-Z]|[a-z]|'|-)*$";
+		//String matchTemplate = "^([A-Z]|[a-z]|'|-)*$";
+		//String matchTemplate = "^([A-Z]|[a-z]|'|-)* ([A-Z]|[a-z]|'|-)*$";
+		String matchTemplate = "^([A-Z]|[a-z]|'|-| )* Corporation$";
 		
 		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss4/WORD_ORGANIZATION_NAME-oczekujace.csv");
 		//List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names2/WORD_PLACE.csv");
