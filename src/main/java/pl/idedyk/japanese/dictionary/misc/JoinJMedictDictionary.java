@@ -24,6 +24,7 @@ public class JoinJMedictDictionary {
 		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss1"));
 		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss2"));
 		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss3"));
+		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss4"));
 		
 		int id = 1;
 		
