@@ -8537,11 +8537,15 @@ przywołujący wspomnienia
 wspominany z nostalgią
 ukochany",,,
 3600,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,"Genki dodatkowe 2-19
-Genki 2-20",,-,それでは,,sorede wa,"no więc
+Genki 2-20",,其れでは,それでは,,sorede wa,"no więc
 a więc
+więc
+ano
 a zatem
 jeśli tak
-w takim razie",tylko na początku zdania,,
+w takim razie
+w tej sytuacji
+w tym przypadku",tylko na początku zdania,,
 3601,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-19,,将棋,しょうぎ,,shougi,japońskie szachy,,,
 3602,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,今も,いまも,,ima mo,nawet teraz,,,
 3603,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,楽しみになる,たのしみになる,,tanoshimi ni naru,cieszyć się na,,,
@@ -56966,35 +56970,31 @@ spokój duszy",,,23144
 spokój duszy",,,23143
 23145,WORD_NOUN,,HIRAGANA,,,闘病,とうびょう,,toubyou,"walczenie z chorobą
 zwalczanie choroby",,,
-23146,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,其れでは,それでは,,sorede wa,"ano
-więc
-w tej sytuacji
-w tym przypadku",,,
-23147,WORD_NOUN,,KATAKANA,,,-,モグラ,,mogura,kret,,,
-23148,WORD_NOUN,,KATAKANA,,,-,モグラモチ,,moguramochi,kret,,,
-23149,WORD_NOUN,,HIRAGANA_KATAKANA,,,モグラ叩き,モグラたたき,,mogura tataki,whack-a-mole,"rodzaj zręcznościowej gry, której przy pomocy młodka nalezy trafić w kreta wychodzącego z losowej dziury",,
-23150,WORD_NOUN,,KATAKANA,,,-,シーソーゲーム,,shiisoo geemu,"zabawa na huśtawce
+23146,WORD_NOUN,,KATAKANA,,,-,モグラ,,mogura,kret,,,
+23147,WORD_NOUN,,KATAKANA,,,-,モグラモチ,,moguramochi,kret,,,
+23148,WORD_NOUN,,HIRAGANA_KATAKANA,,,モグラ叩き,モグラたたき,,mogura tataki,whack-a-mole,"rodzaj zręcznościowej gry, której przy pomocy młodka nalezy trafić w kreta wychodzącego z losowej dziury",,
+23149,WORD_NOUN,,KATAKANA,,,-,シーソーゲーム,,shiisoo geemu,"zabawa na huśtawce
 gra na huśtawce",ang: seesaw game,,
-23151,WORD_NOUN,,KATAKANA,,,-,チャーター,,chaataa,"czarter
+23150,WORD_NOUN,,KATAKANA,,,-,チャーター,,chaataa,"czarter
 wynajem",,,
-23152,WORD_NOUN,,HIRAGANA_KATAKANA,,,チャーター機,チャーターき,,chaataa ki,czarterowy samolot,,,
-23153,WORD_NOUN,,HIRAGANA_KATAKANA,,,チャーター便,チャーターびん,,chaataa bin,czarterowy lot,,,
-23154,"WORD_NOUN
+23151,WORD_NOUN,,HIRAGANA_KATAKANA,,,チャーター機,チャーターき,,chaataa ki,czarterowy samolot,,,
+23152,WORD_NOUN,,HIRAGANA_KATAKANA,,,チャーター便,チャーターびん,,chaataa bin,czarterowy lot,,,
+23153,"WORD_NOUN
 WORD_ADVERBIAL_NOUN",,HIRAGANA,,,太古,たいこ,,taiko,"starożytne czasy
 czasy starożytne
 starożytne lata
 starożytność",,,
-23155,WORD_NOUN,,HIRAGANA,,,太古代,たいこだい,,taikodai,era archaiczna,,,
-23156,"WORD_ADJECTIVE_NA
+23154,WORD_NOUN,,HIRAGANA,,,太古代,たいこだい,,taikodai,era archaiczna,,,
+23155,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,奇抜,きばつ,,kibatsu,"nowatorski
 oryginalny
 uderzający
 ekscentryczny
 dziwaczny
 fantastyczny",,,
-23157,WORD_NOUN,,HIRAGANA,,,社債,しゃさい,,shasai,"obligacje firmowe
+23156,WORD_NOUN,,HIRAGANA,,,社債,しゃさい,,shasai,"obligacje firmowe
 obligacje korporacyjne",,,
-23158,WORD_ATEJI,,HIRAGANA,,,端たない,はしたない,,hashitanai,"niewłaściwy
+23157,WORD_ATEJI,,HIRAGANA,,,端たない,はしたない,,hashitanai,"niewłaściwy
 nieodpowiedni
 nieprzyzwoity
 niestosowny
@@ -57002,101 +57002,109 @@ haniebny
 niegodziwy
 ordynarny
 wulgarny",,,
-23159,WORD_NOUN,,HIRAGANA,,,紋章,もんしょう,,monshou,"herb
+23158,WORD_NOUN,,HIRAGANA,,,紋章,もんしょう,,monshou,"herb
 tarcza herbowa",,,
-23160,WORD_NOUN,,KATAKANA,,,-,ストックホルム,,sutokkuhorumu,Sztokholm,"największe miasto, stolica Szwecji",,
-23161,WORD_NOUN,,HIRAGANA,,,会釈,えしゃく,,eshaku,"kiwnięcie głową
+23159,WORD_NOUN,,KATAKANA,,,-,ストックホルム,,sutokkuhorumu,Sztokholm,"największe miasto, stolica Szwecji",,
+23160,WORD_NOUN,,HIRAGANA,,,会釈,えしゃく,,eshaku,"kiwnięcie głową
 skinienie głowy
 powitanie
 przywitanie
 ukłonienie się",,,
-23162,WORD_NOUN,,HIRAGANA,,,公私,こうし,,koushi,"publiczny i prywatny
+23161,WORD_NOUN,,HIRAGANA,,,公私,こうし,,koushi,"publiczny i prywatny
 urzędowy i osobisty
 rządowy i osobisty",,,
-23163,WORD_NOUN,,HIRAGANA,,,出没,しゅつぼつ,,shutsubotsu,"pojawienie się i zniknięcie
+23162,WORD_NOUN,,HIRAGANA,,,出没,しゅつぼつ,,shutsubotsu,"pojawienie się i zniknięcie
 nawiedzać
 pojawianie się często",,,
-23164,"WORD_NOUN
+23163,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,出没自在,しゅつぼつじざい,,shutsubotsu jizai,"pojawienie się i zniknięcie na życzenie
 nieuchwytny
 nieosiągalny
 jak widmo
 jak zjawa",,,
-23165,WORD_NOUN,,HIRAGANA,,,同時代,どうじだい,,doujidai,"ten sam wiek
+23164,WORD_NOUN,,HIRAGANA,,,同時代,どうじだい,,doujidai,"ten sam wiek
 ten sam okres",,,
-23166,WORD_VERB_IRREGULAR,,HIRAGANA,,,熱する,ねっする,,nessuru,"grzać
+23165,WORD_VERB_IRREGULAR,,HIRAGANA,,,熱する,ねっする,,nessuru,"grzać
 ogrzewać
 podgrzewać
 zagrzać",,,
-23167,WORD_NOUN,,HIRAGANA,,,餡,あん,,an,"czerwona fasolowa pasta
+23166,WORD_NOUN,,HIRAGANA,,,餡,あん,,an,"czerwona fasolowa pasta
 czerwony fasolowy dżem
 anko",,,
-23168,WORD_NOUN,,HIRAGANA,,,餡こ,あんこ,,anko,"czerwona fasolowa pasta
+23167,WORD_NOUN,,HIRAGANA,,,餡こ,あんこ,,anko,"czerwona fasolowa pasta
 czerwony fasolowy dżem
 anko",,,
-23169,WORD_NOUN,,HIRAGANA,,,餡子,あんこ,,anko,"czerwona fasolowa pasta
+23168,WORD_NOUN,,HIRAGANA,,,餡子,あんこ,,anko,"czerwona fasolowa pasta
 czerwony fasolowy dżem
 anko",,,
-23170,WORD_NOUN,,HIRAGANA,,,余念,よねん,,yonen,"inny pomysł
+23169,WORD_NOUN,,HIRAGANA,,,余念,よねん,,yonen,"inny pomysł
 inna idea",,,
-23171,WORD_ADVERB,,HIRAGANA,,,余念なく,よねんなく,,yonennaku,"poważnie
+23170,WORD_ADVERB,,HIRAGANA,,,余念なく,よねんなく,,yonennaku,"poważnie
 gorliwie
 pilnie
 z całego serca",,,
-23172,WORD_ADVERB,,HIRAGANA,,,余念無く,よねんなく,,yonennaku,"poważnie
+23171,WORD_ADVERB,,HIRAGANA,,,余念無く,よねんなく,,yonennaku,"poważnie
 gorliwie
 pilnie
 z całego serca",,,
-23173,WORD_ADVERB,,HIRAGANA,,,余念もなく,よねんもなく,,yonenmonaku,"poważnie
+23172,WORD_ADVERB,,HIRAGANA,,,余念もなく,よねんもなく,,yonenmonaku,"poważnie
 gorliwie
 pilnie
 z całego serca",,,
-23174,WORD_ADVERB,,HIRAGANA,,,余念も無く,よねんもなく,,yonenmonaku,"poważnie
+23173,WORD_ADVERB,,HIRAGANA,,,余念も無く,よねんもなく,,yonenmonaku,"poważnie
 gorliwie
 pilnie
 z całego serca",,,
-23175,WORD_NOUN,,HIRAGANA,,,刃物,はもの,,hamono,"naostrzone narzędzie
+23174,WORD_NOUN,,HIRAGANA,,,刃物,はもの,,hamono,"naostrzone narzędzie
 naostrzony przedmiot
 sztućce",,,
-23176,WORD_NOUN,,HIRAGANA,,,刃物三昧,はものざんまい,,hamono zanmai,walka na noże,,,
-23177,WORD_NOUN,,HIRAGANA,,,提携,ていけい,,teikei,"współpraca
+23175,WORD_NOUN,,HIRAGANA,,,刃物三昧,はものざんまい,,hamono zanmai,walka na noże,,,
+23176,WORD_NOUN,,HIRAGANA,,,提携,ていけい,,teikei,"współpraca
 współdziałanie
 połączenie się (partnerów biznesowych)",,,
-23178,WORD_NOUN,,HIRAGANA,,,提携先,ていけいさき,,teikeisaki,partner biznesowy,,,
-23179,WORD_NOUN,,HIRAGANA,,,提携交渉,ていけいこうしょう,,teikei koushou,"negocjacje połączeniowe (pomiędzy partnerami biznesowymi)
+23177,WORD_NOUN,,HIRAGANA,,,提携先,ていけいさき,,teikeisaki,partner biznesowy,,,
+23178,WORD_NOUN,,HIRAGANA,,,提携交渉,ていけいこうしょう,,teikei koushou,"negocjacje połączeniowe (pomiędzy partnerami biznesowymi)
 rozmowy połączeniowe (pomiędzy partnerami biznesowymi)",,,
-23180,WORD_NOUN,,HIRAGANA,,,救急医療,きゅうきゅういりょう,,kyuukyuu iryou,"medycyna ratunkowa
+23179,WORD_NOUN,,HIRAGANA,,,救急医療,きゅうきゅういりょう,,kyuukyuu iryou,"medycyna ratunkowa
 ratownictwo medyczne",,,
-23181,WORD_NOUN,,HIRAGANA,,,特捜,とくそう,,tokusou,"specjalne dochodzenie
+23180,WORD_NOUN,,HIRAGANA,,,特捜,とくそう,,tokusou,"specjalne dochodzenie
 specjalne śledztwo",,,
-23182,WORD_NOUN,,HIRAGANA,,,特捜部,とくそうぶ,,tokusoubu,"departament dochodzeń specjalnych
+23181,WORD_NOUN,,HIRAGANA,,,特捜部,とくそうぶ,,tokusoubu,"departament dochodzeń specjalnych
 wydział śledztw specjalnych ",,,
-23183,WORD_NOUN,,HIRAGANA,,,衝撃,しょうげき,,shougeki,"szok
+23182,WORD_NOUN,,HIRAGANA,,,衝撃,しょうげき,,shougeki,"szok
 wstrząs
 siła uderzenia",,,
-23184,WORD_NOUN,,HIRAGANA,,,貸し切り,かしきり,,kashikiri,"rezerwacja
+23183,WORD_NOUN,,HIRAGANA,,,貸し切り,かしきり,,kashikiri,"rezerwacja
 rezerwowanie
 wynajem
 wynajmowanie",,,
-23185,WORD_NOUN,,HIRAGANA,,,新築,しんちく,,shinchiku,"nowy budynek
+23184,WORD_NOUN,,HIRAGANA,,,新築,しんちく,,shinchiku,"nowy budynek
 nowa konstrukcja",,,
-23186,WORD_NOUN,,HIRAGANA,,,新築祝い,しんちくいわい,,shinchiku iwai,parapetówka,,,
-23187,"WORD_ADJECTIVE_NA
+23185,WORD_NOUN,,HIRAGANA,,,新築祝い,しんちくいわい,,shinchiku iwai,parapetówka,,,
+23186,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,相応,そうおう,,souou,"stosowność
 odpowiedniość
 przydatność",,,
-23188,WORD_ADJECTIVE_I,,HIRAGANA,,,薄暗い,うすぐらい,,usugurai,"ciemny
+23187,WORD_ADJECTIVE_I,,HIRAGANA,,,薄暗い,うすぐらい,,usugurai,"ciemny
 mroczny
 przyćmiony",,,
-23189,WORD_NOUN,,HIRAGANA,,,融通,ゆうずう,,yuuzuu,"przystosowanie
-dostosowanie
-adaptabilność
-przystosowawczość
-pożyczanie (pieniędzy)
-finansowanie",,,23190
-23190,WORD_NOUN,,HIRAGANA,,,融通,ゆうづう,,yuuduu,"przystosowanie
+23188,WORD_NOUN,,HIRAGANA,,,融通,ゆうずう,,yuuzuu,"przystosowanie
 dostosowanie
 adaptabilność
 przystosowawczość
 pożyczanie (pieniędzy)
 finansowanie",,,23189
+23189,WORD_NOUN,,HIRAGANA,,,融通,ゆうづう,,yuuduu,"przystosowanie
+dostosowanie
+adaptabilność
+przystosowawczość
+pożyczanie (pieniędzy)
+finansowanie",,,23188
+23190,WORD_NOUN,,HIRAGANA,,,御籤,みくじ,,mikuji,pisemna wróżba,,,
+23191,WORD_NOUN,,HIRAGANA,,,御鬮,みくじ,,mikuji,pisemna wróżba,,,
+23192,WORD_NOUN,,HIRAGANA,,,神籤,みくじ,,mikuji,pisemna wróżba,,,
+23193,WORD_NOUN,,HIRAGANA,,,おみ籤,おみくじ,,omikuji,pisemna wróżba,,,
+23194,WORD_NOUN,,HIRAGANA,,,お御籤,おみくじ,,omikuji,pisemna wróżba,,,
+23195,WORD_NOUN,,HIRAGANA,,,お神籤,おみくじ,,omikuji,pisemna wróżba,,,
+23196,WORD_NOUN,,HIRAGANA,,,御御籤,おみくじ,,omikuji,pisemna wróżba,,,
+23197,WORD_NOUN,,HIRAGANA,,,御神籤,おみくじ,,omikuji,pisemna wróżba,,,
