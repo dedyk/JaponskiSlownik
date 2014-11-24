@@ -726,7 +726,7 @@ Genki kanji 2-13",,買い物,かいもの,,kaimono,"zakupy
 zakupione towary",,,
 276,WORD_NOUN,,KATAKANA,Genki 1-4,,-,クラス,,kurasu,"klasa
 grupa",,,
-277,WORD_PRONOUN,,HIRAGANA,Genki 1-4,,-,あなた,,anata,ty,,,
+277,WORD_PRONOUN,,HIRAGANA,Genki 1-4,,貴方,あなた,,anata,ty,używane do osób o równym lub niższym statusie,,21731
 278,WORD_NOUN,,HIRAGANA,"Genki 1-4
 Genki kanji 2-21",,犬,いぬ,,inu,pies,,,
 279,WORD_NOUN,,HIRAGANA,Genki 1-4,,土産,みやげ,,miyage,"pamiątka
@@ -9275,7 +9275,10 @@ chłód",,,
 3948,WORD_NOUN,,HIRAGANA,,,寒風,かんぷう,,kanpuu,"zimny wiatr
 mroźny wiatr",,,
 3949,WORD_PRONOUN,,HIRAGANA,Genki 2-20,,彼方,あちら,,achira,"tam
-tamten","uprzejmie, grzecznie, daleko od mówcy i osoby docelowej",,
+tamten","uprzejmie, grzecznie, daleko od mówcy i osoby docelowej",,"23797
+23798
+23799
+23800"
 3950,WORD_NOUN,,HIRAGANA,Genki 2-20,,係の者,かかりのもの,,kakari no mono,osoba odpowiedzialna,,,
 3951,WORD_NOUN,SUFFIX,HIRAGANA,Genki 2-20,,字,じ,,ji,"litera
 znak",,,6990
@@ -52900,7 +52903,7 @@ I wojna w Zatoce Perskiej",,,
 natychmiastowo
 od razu
 niezwłocznie",,,
-21731,WORD_PRONOUN,,HIRAGANA,,,貴方,あんた,,anta,ty,poufała forma anata,,
+21731,WORD_PRONOUN,,HIRAGANA,,,貴方,あんた,,anta,ty,poufała forma anata,,277
 21732,WORD_INTERJECTION,,HIRAGANA,,,-,さらば,,saraba,żegnaj!,,,21733
 21733,"WORD_INTERJECTION
 WORD_CONJUNCTION",,HIRAGANA,,,然らば,さらば,,saraba,"czyżby (archaizm)
@@ -58681,13 +58684,25 @@ uderzenie
 cios
 per (sufiks)",,,
 23797,WORD_PRONOUN,,HIRAGANA,,,彼方,あっち,,acchi,"tam
-tamten",,,
+tamten",,,"3949
+23798
+23799
+23800"
 23798,WORD_PRONOUN,,HIRAGANA,,,彼方,あち,,achi,"tam
-tamten",,,
+tamten",,,"3949
+23797
+23799
+23800"
 23799,WORD_PRONOUN,,HIRAGANA,,,彼方,かなた,,kanata,"po drugiej stronie
-po tamtej stronie",,,
+po tamtej stronie",,,"3949
+23797
+23798
+23800"
 23800,WORD_PRONOUN,,HIRAGANA,,,彼方,あなた,,anata,"po drugiej stronie
-po tamtej stronie",,,
+po tamtej stronie",,,"3949
+23797
+23798
+23799"
 23801,WORD_NOUN,,HIRAGANA,,,思わく,おもわく,,omowaku,"przewidywanie
 prognoza
 antycypacja
@@ -58751,3 +58766,4 @@ czarna zasłona
 manipulator
 polityczny gracz
 szara eminencja",,,
+23823,WORD_PRONOUN,,HIRAGANA,Genki 1-4,,貴男,あなた,,anata,ty,używane do osób o równym lub niższym statusie,,
