@@ -52,7 +52,13 @@ import com.csvreader.CsvReader;
 public class AndroidDictionaryGenerator {
 
 	public static void main(String[] args) throws Exception {
-
+		
+		boolean fullMode = true;
+		
+		if (args.length > 0) {
+			fullMode = Boolean.parseBoolean(args[0]);
+		}
+				
 		System.out.println("readEdict");
 
 		// read edict
@@ -85,9 +91,13 @@ public class AndroidDictionaryGenerator {
 				"../JapaneseDictionary_additional/kanjidic2.xml", "../JapaneseDictionary_additional/kradfile",
 				"../JapaneseDictionary_additional/kanjivg", "output/kanji.csv");
 
-		generateZinniaTomoeSlimBinaryFile(kanjiEntries, "output/kanjivgTomoeFile.txt", "output/kanjivgTomoeFile.xml",
-				"../JapaneseDictionary_additional/zinnia-0.06-app/bin/zinnia_learn",
-				"output/kanji_recognizer_handwriting-ja-slim.s", zinniaTomoeSlimBinaryFile);
+		if (fullMode == true) {
+		
+			generateZinniaTomoeSlimBinaryFile(kanjiEntries, "output/kanjivgTomoeFile.txt", "output/kanjivgTomoeFile.xml",
+					"../JapaneseDictionary_additional/zinnia-0.06-app/bin/zinnia_learn",
+					"output/kanji_recognizer_handwriting-ja-slim.s", zinniaTomoeSlimBinaryFile);
+			
+		}
 	}
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(
