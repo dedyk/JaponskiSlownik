@@ -11388,7 +11388,9 @@ wylinka
 496
 4879"
 4881,WORD_NOUN,,HIRAGANA,,,竹材,ちくざい,,chikuzai,bambus,,,
-4882,WORD_NOUN,,HIRAGANA,,,竹林,ちくりん,,chikurin,las bambusowy,,,
+4882,WORD_NOUN,,HIRAGANA,,,竹林,ちくりん,,chikurin,"las bambusowy
+bambusowy gąszcz
+bambusowe zarośla",,,24021
 4883,WORD_NOUN,,HIRAGANA,,,竹屋,たけや,,takeya,handlarz bambusem,,,
 4884,WORD_NOUN,,HIRAGANA,,,竹製,たけせい,,takesei,produkt bambusowy,,,
 4885,WORD_VERB_U,,HIRAGANA,,,争う,あらそう,,arasou,"kłócić się
@@ -59251,10 +59253,11 @@ przepisywanie
 pisanie odręczne",,,
 24019,WORD_NOUN,,HIRAGANA,,,諸車,しょしゃ,,shosha,"pojazdy wszystkich typów
 wszystkie pojazdy",,,
-24020,WORD_NOUN,,HIRAGANA,,,諸車通行止,しょしゃつうこうどめ,,shosha tsuukoudome,"zamknięty dla pojazdów
+24020,WORD_EXPRESSION,,HIRAGANA,,,諸車通行止,しょしゃつうこうどめ,,shosha tsuukoudome,"zamknięty dla pojazdów
 bez przejazdu",,,
-24021,WORD_NOUN,,HIRAGANA,,,竹林,たけばやし,,takebayashi,"bambusowy gąszcz
-bambusowe zarośla",,,
+24021,WORD_NOUN,,HIRAGANA,,,竹林,たけばやし,,takebayashi,"las bambusowy
+bambusowy gąszcz
+bambusowe zarośla",,,4882
 24022,WORD_NOUN,,HIRAGANA,,,内祝,うちいわい,,uchiiwai,"prezent dla bliskich krewnych lub przyjaciół
 prywatna uroczystość
 rodzinna uroczystość",,,
@@ -59353,7 +59356,7 @@ niezależność
 samodzielność
 suwerenność",,,
 24050,WORD_NOUN,,HIRAGANA,,,勝ち星,かちぼし,,kachiboshi,znak zwycięstwa,,,
-24051,WORD_VERB_U,,HIRAGANA,,,取上げる,とりあげる,,toriageru,"podnosić
+24051,WORD_VERB_RU,,HIRAGANA,,,取上げる,とりあげる,,toriageru,"podnosić
 podnieść
 przyjmować
 akceptować
@@ -59367,9 +59370,9 @@ odbierać",,,
 skazaniec
 kajdaniarz",,,
 24054,WORD_NOUN,,HIRAGANA,,,国賓,こくひん,,kokuhin,gość kraju,,,
-24055,WORD_NOUN,,HIRAGANA,,,土器,どき,,doki,wyroby gliniane,,,
+24055,WORD_NOUN,,HIRAGANA,,,土器,どき,,doki,wyroby gliniane,,,24056
 24056,WORD_NOUN,,HIRAGANA,,,土器,かわらけ,,kawarake,"wyroby gliniane
-nieszkliwiony wyrób gliniany",,,
+nieszkliwiony wyrób gliniany",,,24055
 24057,WORD_NOUN,,HIRAGANA,,,土器片,どきへん,,dokihen,"czerep
 skorupa",,,
 24058,WORD_NOUN,,HIRAGANA,,,府警,ふけい,,fukei,prefekturalna policja,,,
@@ -59387,3 +59390,8 @@ gorąca fala upałów",,,
 susza
 niedobór
 nieurodzaj",,,
+24066,WORD_ADJECTIVE_I,,HIRAGANA,,,分かり易い,わかりやすい,,wakari yasui,łatwy do zrozumienia,,,
+24067,WORD_ADJECTIVE_I,,HIRAGANA,,,分かりやすい,わかりやすい,,wakari yasui,łatwy do zrozumienia,,,
+24068,WORD_NOUN,,HIRAGANA,,,分け目,わけめ,,wakeme,"linia podziału
+linia dzieląca
+przedziałek (na głowie)",,,
