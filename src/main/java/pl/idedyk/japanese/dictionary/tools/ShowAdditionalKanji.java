@@ -40,7 +40,7 @@ public class ShowAdditionalKanji {
 				kradFileMap);
 
 		System.out.println("generateKanjiEntries: parseKanjiEntriesFromCsv");
-		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2);
+		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2, true);
 
 		System.out.println("generateKanjiEntries: parsePolishJapaneseEntriesFromCsv");
 		// read polish japanese entries

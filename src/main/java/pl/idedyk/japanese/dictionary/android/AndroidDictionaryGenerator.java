@@ -317,7 +317,7 @@ public class AndroidDictionaryGenerator {
 		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName, kradFileMap);
 
 		System.out.println("generateKanjiEntries: parseKanjiEntriesFromCsv");
-		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2);
+		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2, true);
 
 		System.out.println("generateKanjiEntries: validateDuplicateKanjiEntriesList");
 		Validator.validateDuplicateKanjiEntriesList(kanjiEntries);
@@ -340,7 +340,7 @@ public class AndroidDictionaryGenerator {
 
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 
-		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries);
+		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, true);
 
 		return kanjiEntries;
 	}
@@ -553,7 +553,7 @@ public class AndroidDictionaryGenerator {
 		newKanjiEntry.setPolishTranslates(polishTranslates);
 		newKanjiEntry.setInfo("");
 
-		newKanjiEntry.setGenerated(true);
+		//newKanjiEntry.setGenerated(true);
 
 		List<String> groupsList = new ArrayList<String>();
 
