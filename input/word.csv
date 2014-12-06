@@ -776,7 +776,13 @@ dzielnica
 ulica
 ruchliwe miejsce (o gęstej zabudowie)",,,
 297,WORD_NOUN,,KATAKANA,Genki 1-4,,-,レストラン,,resutoran,restauracja,,,
-298,WORD_DAY_NUMBER,,HIRAGANA,Genki 1-4,,一日,ついたち,,tsuitachi,pierwszy,dzień miesiąca,,1013
+298,WORD_DAY_NUMBER,,HIRAGANA,Genki 1-4,,一日,ついたち,,tsuitachi,"pierwszy dzień miesiąca
+pierwsze dziesięć dni w miesiącu księżycowym (archaizm)",,,"1013
+24590
+24594
+24595
+24596
+24597"
 299,WORD_DAY_NUMBER,,HIRAGANA,"Genki 1-4
 Genki 2-13",,二日,ふつか,,futsuka,drugi,dzień miesiąca,,1014
 300,WORD_DAY_NUMBER,,HIRAGANA,"Genki 1-4
@@ -2868,8 +2874,13 @@ razem
 ogółem",,,
 1011,WORD_EXPRESSION,,HIRAGANA,Genki 2-13,,と申します,ともうします,,to moushimasu,nazywam się,,,
 1012,WORD_EXPRESSION,,HIRAGANA,Genki 2-13,,よろしくお願いします,よろしくおねがいします,,yoroshiku onegai shimasu,Z góry dziękuję,,,
-1013,WORD_COUNT_DAY_NUMBER,,HIRAGANA,Genki 2-13,,一日,いちにち,,ichinichi,"jeden dzień
-cały dzień",liczenie dni,,298
+1013,WORD_COUNT_DAY_NUMBER,,HIRAGANA,Genki 2-13,,一日,いちにち,,ichinichi,"pierwszy dzień miesiąca
+jeden dzień",liczenie dni,,"298
+24590
+24594
+24595
+24596
+24597"
 1014,WORD_COUNT_DAY_NUMBER,,HIRAGANA,"Genki 1-4
 Genki 2-13",,二日,ふつか,,futsuka,dwa dni,liczenie dni,,299
 1015,WORD_COUNT_DAY_NUMBER,,HIRAGANA,"Genki 1-4
@@ -55559,7 +55570,9 @@ obecność w pracy",,,
 zalety i wady",,,
 22644,WORD_NOUN,,HIRAGANA,,,参謀,さんぼう,,sanbou,sztab dowodzenia,,,
 22645,WORD_NOUN,,HIRAGANA,,,１日,いちにち,,ichi nichi,"pierwszy dzień miesiąca
-jeden dzień",,,
+jeden dzień",,,"24591
+24592
+24593"
 22646,WORD_NOUN,,KATAKANA,,,-,エンタテイメント,,entateimento,"rozrywka
 widowisko
 przedstawienie",,,
@@ -60876,3 +60889,51 @@ mieć złe doświadczenie",,,
 24586,WORD_NOUN,,KATAKANA,,,Ｔバック,ティーバック,,tii bakku,stringi,"ang: T-back, bikini thong",,
 24587,WORD_NOUN,,KATAKANA,,,-,クリスチャン,,kurisuchan,chrześcijanin,ang: christian,,
 24588,WORD_NOUN,,KATAKANA,,,-,クリスマスイヴ,,kurisumasu ivu,wigilia,,,
+24589,WORD_NOUN,,HIRAGANA,,,一実,いちじつ,,ichijitsu,"jedna absolutna prawda
+jedna rzeczywistość",buddyzm,,
+24590,WORD_NOUN,,HIRAGANA,,,一日,いちじつ,,ichijitsu,"pierwszy dzień miesiąca
+jeden dzień",,,"298
+1013
+24594
+24595
+24596
+24597"
+24591,WORD_NOUN,,HIRAGANA,,,１日,いちじつ,,ichijitsu,"pierwszy dzień miesiąca
+jeden dzień",,,"22645
+24592
+24593"
+24592,WORD_NOUN,,HIRAGANA,,,１日,ひとえ,,hitoe,"pierwszy dzień miesiąca
+jeden dzień",,,"22645
+24591
+24593"
+24593,WORD_NOUN,,HIRAGANA,,,１日,ひとひ,,hitohi,"pierwszy dzień miesiąca
+jeden dzień",,,"22645
+24591
+24592"
+24594,WORD_NOUN,,HIRAGANA,,,一日,いっぴ,,ippi,pierwszy dzień miesiąca,,,"298
+1013
+24590
+24595
+24596
+24597"
+24595,WORD_NOUN,,HIRAGANA,,,一日,ひとえ,,hitoe,"pierwszy dzień miesiąca
+jeden dzień",,,"298
+1013
+24590
+24594
+24596
+24597"
+24596,WORD_NOUN,,HIRAGANA,,,一日,ひとひ,,hitohi,"pierwszy dzień miesiąca
+jeden dzień",,,"298
+1013
+24590
+24594
+24595
+24597"
+24597,WORD_NOUN,,HIRAGANA,,,一日,つきたち,,tsukitachi,"pierwszy dzień miesiąca (archaizm)
+pierwsze dziesięć dni w miesiącu księżycowym",,,"298
+1013
+24590
+24594
+24595
+24596"
