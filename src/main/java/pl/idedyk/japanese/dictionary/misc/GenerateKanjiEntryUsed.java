@@ -78,17 +78,7 @@ public class GenerateKanjiEntryUsed {
 		processJMEDictEntries(kanjiEntriesMap, jmedictName);
 
 		for (KanjiEntry kanjiEntry : kanjiEntries) {
-			
-			String kanji = kanjiEntry.getKanji();
-			
-			if (kanji.equals("吁") == true) {
-				
-				int a = 0;
-				
-				a++;
-				
-			}
-
+						
 			KanjiDic2Entry kanjiDic2Entry = kanjiEntry.getKanjiDic2Entry();
 			
 			if (kanjiDic2Entry == null) {
