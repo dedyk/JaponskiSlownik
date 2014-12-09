@@ -12,6 +12,7 @@ import org.dom4j.io.SAXReader;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.K_Ele;
+import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.R_Ele;
 
 public class JMEDictNewReader {
 	
@@ -75,10 +76,8 @@ public class JMEDictNewReader {
 						}
 							
 						case "r_ele": {
-							
-							int fixme = 1;
-							
-							//processREle(jmedictNewNativeEntry, currentRowElement);
+														
+							processREle(jmedictNewNativeEntry, currentRowElement);
 							
 							break;
 						}
@@ -184,6 +183,8 @@ public class JMEDictNewReader {
 	
 	private void processREle(JMEDictNewNativeEntry jmedictNewNativeEntry, Element element) {
 		
+		R_Ele r_ele = new R_Ele();
+		
 		List<?> rowElements = element.elements();
 		
 		for (Object currentRowElementObject : rowElements) {
@@ -194,12 +195,55 @@ public class JMEDictNewReader {
 			
 			switch (currentRowElementName) {
 				
+				case "reb": {
+					
+					String reb = currentRowElement.getText();
+										
+					r_ele.setReb(reb);
+					
+					break;
+				}
 				
+				case "re_nokanji": {
+					
+					r_ele.setRe_nokanji(true);
+					
+					break;
+				}
+				
+				case "re_restr": {
+					
+					String re_restr = currentRowElement.getText();
+					
+					r_ele.getRe_restr().add(re_restr);
+					
+					break;
+				}
+				
+				case "re_inf": {
+					
+					String re_inf = entityMapper.getEntity(currentRowElement.getText());
+
+					r_ele.getRe_inf().add(re_inf);
+					
+					break;
+				}
+				
+				case "re_pri": {
+					
+					String re_pri = currentRowElement.getText();
+					
+					r_ele.getRe_pri().add(re_pri);
+					
+					break;
+				}
 				
 				default: {					
 					throw new RuntimeException("Unknown r_ele element name: " + currentRowElementName);					
 				}			
 			}			
 		}
+		
+		jmedictNewNativeEntry.getR_ele().add(r_ele);
 	}
 }

@@ -15,7 +15,13 @@ public class Test5 {
 		
 		for (JMEDictNewNativeEntry jmeDictNewNativeEntry : jmedictNativeList) {
 			
-			System.out.println(jmeDictNewNativeEntry);
+			if (jmeDictNewNativeEntry.getEnt_seq().intValue() == 1000930) {
+				
+				
+				System.out.println(jmeDictNewNativeEntry);
+			}
+			
+			
 		}
 	}
 }
