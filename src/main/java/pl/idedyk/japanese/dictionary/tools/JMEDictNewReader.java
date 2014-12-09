@@ -2,7 +2,9 @@ package pl.idedyk.japanese.dictionary.tools;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.dom4j.Attribute;
 import org.dom4j.Element;
@@ -11,6 +13,7 @@ import org.dom4j.ElementPath;
 import org.dom4j.io.SAXReader;
 
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.K_Ele;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.LSource;
@@ -309,7 +312,7 @@ public class JMEDictNewReader {
 					
 					String pos = entityMapper.getEntity(currentRowElement.getText());
 					
-					sense.setPos(pos);
+					sense.getPos().add(pos);
 					
 					break;
 				}
@@ -454,6 +457,8 @@ public class JMEDictNewReader {
 				
 		JMENewDictionary jmeNewDictionary = new JMENewDictionary();
 		
+		KanaHelper kanaHelper = new KanaHelper();
+		
 		// dla kazdego elementu listy
 		for (JMEDictNewNativeEntry jmeDictNewNativeEntry : jmedictNativeList) {
 			
@@ -489,6 +494,16 @@ public class JMEDictNewReader {
 											
 						groupEntry.setKana(kana);
 						groupEntry.setKanaInfoList(kanaInfoList);
+						
+						try {
+							groupEntry.setRomaji(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true)));
+						
+						} catch (Exception e) {
+							// noop
+						}
+						
+						// tlumaczenia
+						generateWordTypeTranslateAdditionalInfoList(groupEntry, jmeDictNewNativeEntry);
 						
 						group.getGroupEntryList().add(groupEntry);						
 					}
@@ -541,6 +556,16 @@ public class JMEDictNewReader {
 						groupEntry.setKana(kana);
 						groupEntry.setKanaInfoList(kanaInfoList);
 						
+						try {
+							groupEntry.setRomaji(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true)));
+						
+						} catch (Exception e) {
+							// noop
+						}
+						
+						// tlumaczenia
+						generateWordTypeTranslateAdditionalInfoList(groupEntry, jmeDictNewNativeEntry);
+						
 						group.getGroupEntryList().add(groupEntry);						
 					}										
 				}
@@ -562,17 +587,104 @@ public class JMEDictNewReader {
 					groupEntry.setKana(kana);
 					groupEntry.setKanaInfoList(kanaInfoList);
 					
+					try {
+						groupEntry.setRomaji(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true)));
+					
+					} catch (Exception e) {
+						// noop
+					}
+					
+					// tlumaczenia
+					generateWordTypeTranslateAdditionalInfoList(groupEntry, jmeDictNewNativeEntry);
+					
 					group.getGroupEntryList().add(groupEntry);						
 				}
 			}
 			
 			// operacje koncowe
 			
-			// generowanie romaji
-			
 			jmeNewDictionary.getGroupList().add(group);
 		}
 		
 		return jmeNewDictionary;
+	}
+
+	private void generateWordTypeTranslateAdditionalInfoList(GroupEntry groupEntry, JMEDictNewNativeEntry jmeDictNewNativeEntry) {
+		
+		String kanji = groupEntry.getKanji();
+		String kana = groupEntry.getKana();
+		
+		List<Sense> senseList = jmeDictNewNativeEntry.getSense();
+		
+		Set<String> wordTypeList = new LinkedHashSet<String>();
+		
+		List<String> translateList = new ArrayList<String>();
+		List<String> additionalInfoList = new ArrayList<String>();
+				
+		for (Sense currentSense : senseList) {
+			
+			List<String> stagk = currentSense.getStagk();
+			List<String> stagr = currentSense.getStagr();
+			
+			List<String> misc = currentSense.getMisc();
+			
+			List<String> pos = currentSense.getPos();
+			
+			List<String> gloss = currentSense.getGloss();
+			
+			List<String> s_inf = currentSense.getS_inf();
+
+			boolean isKanjiRestricted = true;
+			
+			if (stagk.size() == 0) {
+				isKanjiRestricted = false;
+				
+			} else {
+				if (stagk.contains(kanji) == true) {
+					isKanjiRestricted = false;
+				}
+			}
+			
+			if (isKanjiRestricted == true) {
+				continue;
+			}	
+			
+			boolean isKanaRestricted = true;
+			
+			if (stagr.size() == 0) {
+				isKanaRestricted = false;
+				
+			} else {
+				if (stagr.contains(kana) == true) {
+					isKanaRestricted = false;
+				}
+			}
+			
+			if (isKanaRestricted == true) {
+				continue;
+			}
+			
+			for (String currentPos : pos) {
+				wordTypeList.add(currentPos);
+			}
+			
+			for (String currentMisc : misc) {				
+				wordTypeList.add(currentMisc);
+			}
+			
+			for (String currentGloss : gloss) {
+				translateList.add(currentGloss);
+			}
+			
+			for (String currentSInf : s_inf) {
+				additionalInfoList.add(currentSInf);
+			}
+
+		}
+		
+		groupEntry.setWordTypeList(wordTypeList);
+		
+		groupEntry.setTranslateList(translateList);
+		groupEntry.setAdditionalInfoList(additionalInfoList);
 	}
 }

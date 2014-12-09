@@ -152,7 +152,7 @@ public class JMEDictNewNativeEntry {
 	
 	public static class Sense {
 		
-		private String pos;
+		private List<String> pos = new ArrayList<String>();
 		
 		private List<String> stagk = new ArrayList<String>();
 		
@@ -174,11 +174,11 @@ public class JMEDictNewNativeEntry {
 
 		private List<String> gloss = new ArrayList<String>();
 		
-		public String getPos() {
+		public List<String> getPos() {
 			return pos;
 		}
 
-		public void setPos(String pos) {
+		public void setPos(List<String> pos) {
 			this.pos = pos;
 		}
 

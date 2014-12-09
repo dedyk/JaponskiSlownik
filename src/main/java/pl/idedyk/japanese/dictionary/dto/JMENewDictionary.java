@@ -2,6 +2,7 @@ package pl.idedyk.japanese.dictionary.dto;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class JMENewDictionary {
 
@@ -48,11 +49,19 @@ public class JMENewDictionary {
 		
 		private Group group;
 		
+		private Set<String> wordTypeList;
+		
 		private String kanji;		
 		private List<String> kanjiInfoList;
 		
 		private String kana;
 		private List<String> kanaInfoList;
+		
+		private String romaji;
+		
+		private List<String> translateList;
+		
+		private List<String> additionalInfoList;
 
 		public GroupEntry(JMEDictNewNativeEntry nativeEntry, Group group) {
 			this.nativeEntry = nativeEntry;
@@ -105,6 +114,38 @@ public class JMENewDictionary {
 
 		public void setKanaInfoList(List<String> kanaInfoList) {
 			this.kanaInfoList = kanaInfoList;
+		}
+
+		public String getRomaji() {
+			return romaji;
+		}
+
+		public void setRomaji(String romaji) {
+			this.romaji = romaji;
+		}
+
+		public Set<String> getWordTypeList() {
+			return wordTypeList;
+		}
+
+		public void setWordTypeList(Set<String> wordTypeList) {
+			this.wordTypeList = wordTypeList;
+		}
+
+		public List<String> getTranslateList() {
+			return translateList;
+		}
+
+		public void setTranslateList(List<String> translateList) {
+			this.translateList = translateList;
+		}
+
+		public List<String> getAdditionalInfoList() {
+			return additionalInfoList;
+		}
+
+		public void setAdditionalInfoList(List<String> additionalInfoList) {
+			this.additionalInfoList = additionalInfoList;
 		}
 	}
 }
