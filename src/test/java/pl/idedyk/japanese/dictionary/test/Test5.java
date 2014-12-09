@@ -16,14 +16,14 @@ public class Test5 {
 
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 
-		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
+		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 
 		List<JMEDictNewNativeEntry> jmedictNativeTestList = new ArrayList<JMEDictNewNativeEntry>();
 
 		for (JMEDictNewNativeEntry jmeDictNewNativeEntry : jmedictNativeList) {
 
-			if (jmeDictNewNativeEntry.getEnt_seq().intValue() == 1000320) {
+			if (jmeDictNewNativeEntry.getEnt_seq().intValue() == 1001130) {
 
 				jmedictNativeTestList.add(jmeDictNewNativeEntry);
 
@@ -33,7 +33,7 @@ public class Test5 {
 		
 		System.out.println();
 		
-		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
+		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeTestList);
 		
 		for (Group group : jmeNewDictionary.getGroupList()) {
 			

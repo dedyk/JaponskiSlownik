@@ -207,4 +207,9 @@ public class JMEDictEntityMapper {
 
 		return descToEntityMap.get(desc);
 	}
+	
+	public String getDesc(String entity) {
+		
+		return entityToDescMap.get(entity);
+	}
 }
