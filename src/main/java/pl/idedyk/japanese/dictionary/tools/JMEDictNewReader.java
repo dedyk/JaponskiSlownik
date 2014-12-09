@@ -16,6 +16,9 @@ import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.K_Ele;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.LSource;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.R_Ele;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.Sense;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 
 public class JMEDictNewReader {
 	
@@ -445,5 +448,127 @@ public class JMEDictNewReader {
 		}
 				
 		sense.getLsource().add(lSource);
+	}
+	
+	public JMENewDictionary createJMENewDictionary(List<JMEDictNewNativeEntry> jmedictNativeList) {
+				
+		JMENewDictionary jmeNewDictionary = new JMENewDictionary();
+		
+		// dla kazdego elementu listy
+		for (JMEDictNewNativeEntry jmeDictNewNativeEntry : jmedictNativeList) {
+			
+			// utworzenie grupy
+			Group group = new Group(jmeDictNewNativeEntry);
+						
+			// parsowanie elementu
+
+			// pobranie listy kanji			
+			List<K_Ele> k_ele = jmeDictNewNativeEntry.getK_ele();
+			
+			// pobranie listy kana
+			List<R_Ele> r_ele = jmeDictNewNativeEntry.getR_ele();
+			
+			if (r_ele.size() == 0) {
+				throw new RuntimeException("r_ele.size() == 0");
+			}
+			
+			// jesli nie ma kanji
+			if (k_ele.size() == 0) {
+				
+				for (R_Ele currentREle : r_ele) {
+					
+					boolean noKanji = currentREle.isRe_nokanji();
+					
+					if (noKanji == false) { // to chyba nie jest potrzebne
+						
+						String kana = currentREle.getReb();
+						List<String> kanaInfoList = currentREle.getRe_inf();
+
+						// utworz wpis do grupy
+						GroupEntry groupEntry = new GroupEntry(jmeDictNewNativeEntry, group);
+											
+						groupEntry.setKana(kana);
+						groupEntry.setKanaInfoList(kanaInfoList);
+						
+						group.getGroupEntryList().add(groupEntry);						
+					}
+				}				
+				
+			} else {				
+				// zlacz kanji z kana
+				
+				for (K_Ele currentKEle : k_ele) {					
+					for (R_Ele currentREle : r_ele) {
+						
+						// pobierz kanji
+						String kanji = currentKEle.getKeb();
+						List<String> kanjiInfoList = currentKEle.getKe_inf();
+												
+						boolean noKanji = currentREle.isRe_nokanji();
+						
+						// jest pozycja kana nie laczy sie ze znakiem kanji
+						if (noKanji == true) {
+							continue;
+						}
+						
+						// pobierz kana
+						String kana = currentREle.getReb();
+						List<String> kanaInfoList = currentREle.getRe_inf();
+						List<String> kanaRestrictedList = currentREle.getRe_restr();
+						
+						boolean isRestricted = true;
+						
+						// sprawdzanie, czy dany kana laczy sie z kanji
+						if (kanaRestrictedList.size() == 0) {							
+							isRestricted = false;
+							
+						} else {							
+							if (kanaRestrictedList.contains(kanji) == true) {
+								isRestricted = false;
+							}							
+						}
+						
+						if (isRestricted == true) {
+							continue; // omijamy to zlaczenie
+						}
+						
+						// utworz wpis do grupy
+						GroupEntry groupEntry = new GroupEntry(jmeDictNewNativeEntry, group);
+						
+						groupEntry.setKanji(kanji);
+						groupEntry.setKanjiInfoList(kanjiInfoList);
+						
+						groupEntry.setKana(kana);
+						groupEntry.setKanaInfoList(kanaInfoList);
+						
+						group.getGroupEntryList().add(groupEntry);						
+					}										
+				}
+			}
+			
+			// szukanie kana z no kanji
+			for (R_Ele currentREle : r_ele) {
+				
+				boolean noKanji = currentREle.isRe_nokanji();
+				
+				if (noKanji == true) {
+					
+					String kana = currentREle.getReb();
+					List<String> kanaInfoList = currentREle.getRe_inf();
+
+					// utworz wpis do grupy
+					GroupEntry groupEntry = new GroupEntry(jmeDictNewNativeEntry, group);
+										
+					groupEntry.setKana(kana);
+					groupEntry.setKanaInfoList(kanaInfoList);
+					
+					group.getGroupEntryList().add(groupEntry);						
+				}
+			}			
+			
+			jmeNewDictionary.getGroupList().add(group);
+		}
+		
+		return jmeNewDictionary;
 	}
 }
