@@ -564,7 +564,11 @@ public class JMEDictNewReader {
 					
 					group.getGroupEntryList().add(groupEntry);						
 				}
-			}			
+			}
+			
+			// operacje koncowe
+			
+			// generowanie romaji
 			
 			jmeNewDictionary.getGroupList().add(group);
 		}
