@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.dom4j.Attribute;
 import org.dom4j.Element;
 import org.dom4j.ElementHandler;
 import org.dom4j.ElementPath;
@@ -12,7 +13,9 @@ import org.dom4j.io.SAXReader;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.K_Ele;
+import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.LSource;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.R_Ele;
+import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.Sense;
 
 public class JMEDictNewReader {
 	
@@ -84,26 +87,20 @@ public class JMEDictNewReader {
 						
 						case "info": {
 							
-							int fixme = 1;
-							
+							processInfo(jmedictNewNativeEntry, currentRowElement);							
 							
 							break;						
 						}
 						
 						case "sense": {
 							
-							int fixme = 1;
+							processSense(jmedictNewNativeEntry, currentRowElement);
 							
 							break;
 						}
 							
-						default: {
-							int fixme = 1;
-							// wyjatek
-														
+						default: {														
 							throw new RuntimeException("Unknown element name: " + currentRowElementName);
-							
-							//System.err.println("ERROR: " + currentRowElementName);
 						}						
 					}					
 				}				
@@ -245,5 +242,208 @@ public class JMEDictNewReader {
 		}
 		
 		jmedictNewNativeEntry.getR_ele().add(r_ele);
+	}
+
+	private void processInfo(JMEDictNewNativeEntry jmedictNewNativeEntry, Element element) {
+				
+		List<?> rowElements = element.elements();
+		
+		for (Object currentRowElementObject : rowElements) {
+			
+			Element currentRowElement = (Element)currentRowElementObject;
+			
+			String currentRowElementName = currentRowElement.getName();
+			
+			switch (currentRowElementName) {
+				
+				case "audit": {
+					
+					// noop
+					
+					break;
+				}
+								
+				default: {					
+					throw new RuntimeException("Unknown info element name: " + currentRowElementName);					
+				}			
+			}			
+		}
+	}
+
+	private void processSense(JMEDictNewNativeEntry jmedictNewNativeEntry, Element element) {
+		
+		Sense sense = new Sense();
+		
+		List<?> rowElements = element.elements();
+		
+		for (Object currentRowElementObject : rowElements) {
+			
+			Element currentRowElement = (Element)currentRowElementObject;
+			
+			String currentRowElementName = currentRowElement.getName();
+			
+			switch (currentRowElementName) {
+				
+				case "stagk": {
+					
+					String stagk = currentRowElement.getText();
+					
+					sense.getStagk().add(stagk);
+					
+					break;					
+				}
+
+				case "stagr": {
+					
+					String stagr = currentRowElement.getText();
+					
+					sense.getStagr().add(stagr);
+					
+					break;					
+				}
+				
+				case "pos": {
+					
+					String pos = entityMapper.getEntity(currentRowElement.getText());
+					
+					sense.setPos(pos);
+					
+					break;
+				}
+								
+				case "xref": {
+					
+					String xref = currentRowElement.getText();
+					
+					sense.getXref().add(xref);
+					
+					break;
+				}
+				
+				case "ant": {
+					
+					String ant = currentRowElement.getText();
+					
+					sense.getAnt().add(ant);
+					
+					break;					
+				}
+				
+				case "field": {
+					
+					String field = entityMapper.getEntity(currentRowElement.getText());
+					
+					sense.getField().add(field);
+					
+					break;
+				}
+				
+				case "misc": {
+					
+					String misc = entityMapper.getEntity(currentRowElement.getText());
+					
+					sense.getMisc().add(misc);
+					
+					break;
+				}
+
+				case "s_inf": {
+					
+					String s_inf = currentRowElement.getText();
+					
+					sense.getS_inf().add(s_inf);
+					
+					break;
+				}
+				
+				case "lsource": {
+					
+					processLSource(sense, currentRowElement);
+					
+					break;
+				}
+				
+				case "dial": {
+					
+					String dial = entityMapper.getEntity(currentRowElement.getText());
+					
+					sense.getDial().add(dial);
+					
+					break;
+				}
+				
+				case "gloss": {
+					
+					if (currentRowElement.attribute("lang").getText().equals("eng") == true) {
+
+						String gloss = currentRowElement.getText();
+						
+						sense.getGloss().add(gloss);
+					}					
+					
+					break;
+				}
+								
+				default: {					
+					throw new RuntimeException("Unknown sense element name: " + currentRowElementName);					
+				}			
+			}			
+		}
+		
+		jmedictNewNativeEntry.getSense().add(sense);
+	}
+
+	private void processLSource(Sense sense, Element element) {
+		
+		LSource lSource = new LSource();
+		
+		String value = element.getText();
+		
+		lSource.setValue(value);
+		
+		List<?> attributes = element.attributes();
+		
+		for (Object currentAttributeObject : attributes) {
+			
+			Attribute currentAttribute = (Attribute)currentAttributeObject;
+			
+			String currentAttributeName = currentAttribute.getName();
+			
+			switch (currentAttributeName) {
+				
+				case "lang" : {
+					
+					String lang = currentAttribute.getText();
+					
+					lSource.setLang(lang);
+					
+					break;
+				}
+				
+				case "ls_wasei": {
+					
+					String wasei = currentAttribute.getText();
+					
+					lSource.setWasei(wasei);
+					
+					break;					
+				}
+
+				case "ls_type": {
+					
+					String type = currentAttribute.getText();
+					
+					lSource.setType(type);
+					
+					break;					
+				}
+				
+				default: {
+					throw new RuntimeException("Unknown lsource attribute name: " + currentAttributeName);
+				}
+			}			
+		}
+				
+		sense.getLsource().add(lSource);
 	}
 }

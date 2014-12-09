@@ -11,15 +11,16 @@ public class Test5 {
 		
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 		
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
+		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		
 		for (JMEDictNewNativeEntry jmeDictNewNativeEntry : jmedictNativeList) {
 			
-			if (jmeDictNewNativeEntry.getEnt_seq().intValue() == 1000930) {
+			//if (jmeDictNewNativeEntry.getEnt_seq().intValue() == 1008390) {
 				
 				
-				System.out.println(jmeDictNewNativeEntry);
-			}
+			System.out.println(jmeDictNewNativeEntry);
+			//}
 			
 			
 		}
