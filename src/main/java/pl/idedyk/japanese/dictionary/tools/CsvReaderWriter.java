@@ -199,7 +199,7 @@ public class CsvReaderWriter {
 
 		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
 
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, true);
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, true, true);
 
 		csvWriter.close();
 	}
@@ -209,24 +209,24 @@ public class CsvReaderWriter {
 
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
 
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, true);
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, true, true);
 
 		csvWriter.close();
 	}
 
 	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries,
-			boolean addKnownDupplicatedId, boolean addId) throws IOException {
+			boolean addKnownDupplicatedId, boolean addId, boolean addExampleSentenceGroupIds) throws IOException {
 
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
 
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, addId);
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, addId, addExampleSentenceGroupIds);
 
 		csvWriter.close();
 	}
 	
 	private static void writePolishJapaneseEntries(CsvWriter csvWriter,
 			List<PolishJapaneseEntry> polishJapaneseEntries, boolean addKnownDupplicatedId,
-			boolean addId) throws IOException {
+			boolean addId, boolean addExampleSentenceGroupIds) throws IOException {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
@@ -252,7 +252,9 @@ public class CsvReaderWriter {
 				csvWriter.write(convertListToString(new ArrayList<Integer>(polishJapaneseEntry.getKnownDuplicatedId())));
 			}
 			
-			csvWriter.write(convertListToString(polishJapaneseEntry.getExampleSentenceGroupIdsList()));
+			if (addExampleSentenceGroupIds == true) {
+				csvWriter.write(convertListToString(polishJapaneseEntry.getExampleSentenceGroupIdsList()));
+			}
 
 			csvWriter.endRecord();
 		}
