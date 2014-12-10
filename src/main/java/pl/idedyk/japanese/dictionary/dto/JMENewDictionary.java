@@ -61,11 +61,13 @@ public class JMENewDictionary {
 
 	public static class Group {
 		
+		private Integer id;
+		
 		private JMEDictNewNativeEntry nativeEntry;
 		
 		private List<GroupEntry> groupEntryList = new ArrayList<JMENewDictionary.GroupEntry>();
 		
-		public Group(JMEDictNewNativeEntry nativeEntry) {
+		public Group(Integer id, JMEDictNewNativeEntry nativeEntry) {
 			this.nativeEntry = nativeEntry;
 		}
 
@@ -83,6 +85,14 @@ public class JMENewDictionary {
 
 		public void setGroupEntryList(List<GroupEntry> groupEntryList) {
 			this.groupEntryList = groupEntryList;
+		}
+
+		public Integer getId() {
+			return id;
+		}
+
+		public void setId(Integer id) {
+			this.id = id;
 		}
 	}
 	

@@ -463,7 +463,7 @@ public class JMEDictNewReader {
 		for (JMEDictNewNativeEntry jmeDictNewNativeEntry : jmedictNativeList) {
 			
 			// utworzenie grupy
-			Group group = new Group(jmeDictNewNativeEntry);
+			Group group = new Group(jmeDictNewNativeEntry.getEnt_seq(), jmeDictNewNativeEntry);
 						
 			// parsowanie elementu
 
