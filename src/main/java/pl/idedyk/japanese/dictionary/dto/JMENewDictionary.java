@@ -1,9 +1,13 @@
 package pl.idedyk.japanese.dictionary.dto;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+
+import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 
 public class JMENewDictionary {
 
@@ -49,6 +53,82 @@ public class JMENewDictionary {
 		
 		return groupEntryCache.get(groupEntryKey);
 	}
+	
+	public List<GroupEntry> getTheSameTranslateInTheSameGroupGroupEntryList(String kanji, String kana) throws DictionaryException {
+		
+		String groupEntryKey = getKey(kanji, kana);
+		
+		List<GroupEntry> groupEntryList = groupEntryCache.get(groupEntryKey);
+		
+		if (groupEntryList == null) {
+			return groupEntryList;
+		}
+		
+		if (kanji == null || kanji.equals("-") == true) {
+			kanji = "$$$NULL$$$";
+		}
+		
+		boolean multiGroup = isMultiGroup(groupEntryList);
+		
+		if (multiGroup == true) {
+			throw new DictionaryException("Multi group: " + kanji + " - " + kana);
+		}
+		
+		groupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
+		
+		Map<String, List<GroupEntry>> theSameTranslate = new TreeMap<String, List<GroupEntry>>(); 
+		
+		for (GroupEntry groupEntry : groupEntryList) {
+			
+			String groupEntryTranslate = groupEntry.getTranslateList().toString();
+			
+			List<GroupEntry> groupEntryForTheSameTranslateList = theSameTranslate.get(groupEntryTranslate);
+			
+			if (groupEntryForTheSameTranslateList == null) {
+				groupEntryForTheSameTranslateList = new ArrayList<JMENewDictionary.GroupEntry>();
+				
+				theSameTranslate.put(groupEntryTranslate, groupEntryForTheSameTranslateList);
+			}			
+			
+			groupEntryForTheSameTranslateList.add(groupEntry);
+		}
+		
+		for (List<GroupEntry> groupEntryListWithTheSameTranslate : theSameTranslate.values()) {
+			
+			for (GroupEntry groupEntry : groupEntryListWithTheSameTranslate) {
+				
+				String groupEntryKanji = groupEntry.getKanji();
+				
+				if (groupEntryKanji == null || groupEntryKanji.equals("-") == true) {
+					groupEntryKanji = "$$$NULL$$$";
+				}			
+				
+				String groupEntryKana = groupEntry.getKana();
+				
+				if (kanji.equals(groupEntryKanji) == true && kana.equals(groupEntryKana) == true) {
+					return groupEntryListWithTheSameTranslate;
+				}				
+			}			
+		}
+		
+		return null;
+	}
+	
+	private boolean isMultiGroup(List<GroupEntry> groupEntryList) {
+		
+		Set<Integer> uniqueGroupIds = new HashSet<Integer>();
+		
+		for (GroupEntry groupEntry : groupEntryList) {
+			uniqueGroupIds.add(groupEntry.getGroup().getId());
+		}
+		
+		if (uniqueGroupIds.size() == 1) {			
+			return false;
+			
+		} else {
+			return true;
+		}
+	}	
 	
 	private String getKey(String kanji, String kana) {
 		

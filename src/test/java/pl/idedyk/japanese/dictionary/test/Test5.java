@@ -22,7 +22,7 @@ public class Test5 {
 
 		for (JMEDictNewNativeEntry jmeDictNewNativeEntry : jmedictNativeList) {
 
-			if (jmeDictNewNativeEntry.getEnt_seq().intValue() == 1001130) {
+			if (jmeDictNewNativeEntry.getEnt_seq().intValue() == 1194500) {
 
 				jmedictNativeTestList.add(jmeDictNewNativeEntry);
 
@@ -46,16 +46,10 @@ public class Test5 {
 		}
 		*/
 		
-		List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList("揚げ句", "あげく");
+		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("生花", "せいか");
 
-		for (GroupEntry groupEntry : groupEntryList) {
-			
-			List<GroupEntry> groupEntryList2 = groupEntry.getGroup().getGroupEntryList();
-			
-			for (GroupEntry groupEntry2 : groupEntryList2) {
-				
-				printGroupEntry(groupEntry2);
-			}
+		for (GroupEntry groupEntry : groupEntryList) {							
+			printGroupEntry(groupEntry);
 		}
 	}
 	

@@ -42,8 +42,8 @@ public class CompleteJMEDictGroup {
 			List<PolishJapaneseEntry> foundPolishJapaneseEntryGroupList = new ArrayList<PolishJapaneseEntry>();
 			
 			if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
-				
-				for (GroupEntry groupEntry : groupEntryList.get(0).getGroup().getGroupEntryList()) {
+								
+				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
 					
 					String groupEntryKanji = groupEntry.getKanji();
 					String groupEntryKana = groupEntry.getKana();
