@@ -599,13 +599,23 @@ public class JMEDictNewReader {
 					
 					group.getGroupEntryList().add(groupEntry);						
 				}
-			}
-			
-			// operacje koncowe
+			}			
 			
 			jmeNewDictionary.getGroupList().add(group);
 		}
 		
+		// operacje koncowe
+		
+		// cache'owanie wynikow		
+		for (Group group : jmeNewDictionary.getGroupList()) {
+			
+			List<GroupEntry> groupEntryList = group.getGroupEntryList();
+			
+			for (GroupEntry groupEntry : groupEntryList) {
+				jmeNewDictionary.addGroupEntryToCache(groupEntry);
+			}
+		}
+				
 		return jmeNewDictionary;
 	}
 

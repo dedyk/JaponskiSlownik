@@ -6,7 +6,6 @@ import java.util.Set;
 
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 
@@ -16,8 +15,8 @@ public class Test5 {
 
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
-		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 
 		List<JMEDictNewNativeEntry> jmedictNativeTestList = new ArrayList<JMEDictNewNativeEntry>();
 
@@ -33,42 +32,61 @@ public class Test5 {
 		
 		System.out.println();
 		
-		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeTestList);
+		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
 		
+		/*
 		for (Group group : jmeNewDictionary.getGroupList()) {
 			
 			List<GroupEntry> groupEntryList = group.getGroupEntryList();
 			
 			for (GroupEntry groupEntry : groupEntryList) {
 				
-				Set<String> wordTypeList = groupEntry.getWordTypeList();
-				
-				String kanji = groupEntry.getKanji();
-				List<String> kanjiInfoList = groupEntry.getKanjiInfoList();
-				
-				String kana = groupEntry.getKana();
-				List<String> kanaInfoList = groupEntry.getKanaInfoList();
-				
-				String romaji = groupEntry.getRomaji();
-				
-				List<String> translateList = groupEntry.getTranslateList();				
-				List<String> additionalInfoList = groupEntry.getAdditionalInfoList();
-				
-				System.out.println("WordTypeList: " + wordTypeList);
-				
-				System.out.println("Kanji: " + kanji);
-				System.out.println("KanjiInfoList: " + kanjiInfoList);
-				
-				System.out.println("Kana: " + kana);
-				System.out.println("KanaInfoList: " + kanaInfoList);
-				
-				System.out.println("Romaji: " + romaji);
-				
-				System.out.println("TranslateList: " + translateList);
-				System.out.println("AdditionalInfoList: " + additionalInfoList);
-				
-				System.out.println("---\n");
+				printGroupEntry(groupEntry);
 			}
 		}
+		*/
+		
+		List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList("揚げ句", "あげく");
+
+		for (GroupEntry groupEntry : groupEntryList) {
+			
+			List<GroupEntry> groupEntryList2 = groupEntry.getGroup().getGroupEntryList();
+			
+			for (GroupEntry groupEntry2 : groupEntryList2) {
+				
+				printGroupEntry(groupEntry2);
+			}
+		}
+	}
+	
+	private static void printGroupEntry(GroupEntry groupEntry) {
+
+		Set<String> wordTypeList = groupEntry.getWordTypeList();
+		
+		String kanji = groupEntry.getKanji();
+		List<String> kanjiInfoList = groupEntry.getKanjiInfoList();
+		
+		String kana = groupEntry.getKana();
+		List<String> kanaInfoList = groupEntry.getKanaInfoList();
+		
+		String romaji = groupEntry.getRomaji();
+		
+		List<String> translateList = groupEntry.getTranslateList();				
+		List<String> additionalInfoList = groupEntry.getAdditionalInfoList();
+		
+		System.out.println("WordTypeList: " + wordTypeList);
+		
+		System.out.println("Kanji: " + kanji);
+		System.out.println("KanjiInfoList: " + kanjiInfoList);
+		
+		System.out.println("Kana: " + kana);
+		System.out.println("KanaInfoList: " + kanaInfoList);
+		
+		System.out.println("Romaji: " + romaji);
+		
+		System.out.println("TranslateList: " + translateList);
+		System.out.println("AdditionalInfoList: " + additionalInfoList);
+		
+		System.out.println("---\n");		
 	}
 }

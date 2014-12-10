@@ -3,10 +3,13 @@ package pl.idedyk.japanese.dictionary.dto;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeMap;
 
 public class JMENewDictionary {
 
 	private List<Group> groupList = new ArrayList<Group>();
+	
+	private TreeMap<String, List<GroupEntry>> groupEntryCache = new TreeMap<String, List<GroupEntry>>();
 	
 	public List<Group> getGroupList() {
 		return groupList;
@@ -16,6 +19,46 @@ public class JMENewDictionary {
 		this.groupList = groupList;
 	}
 	
+	public TreeMap<String, List<GroupEntry>> getGroupEntryCache() {
+		return groupEntryCache;
+	}
+
+	public void setGroupEntryCache(TreeMap<String, List<GroupEntry>> groupEntryCache) {
+		this.groupEntryCache = groupEntryCache;
+	}
+	
+	public void addGroupEntryToCache(GroupEntry groupEntry) {
+		
+		String groupEntryKey = getKey(groupEntry.getKanji(), groupEntry.getKana());
+		
+		List<GroupEntry> groupEntryListInCache = groupEntryCache.get(groupEntryKey);
+		
+		if (groupEntryListInCache == null) {
+			groupEntryListInCache = new ArrayList<JMENewDictionary.GroupEntry>();
+			
+			groupEntryCache.put(groupEntryKey, groupEntryListInCache);
+			
+		}
+		
+		groupEntryListInCache.add(groupEntry);		
+	}
+	
+	public List<GroupEntry> getGroupEntryList(String kanji, String kana) {
+		
+		String groupEntryKey = getKey(kanji, kana);
+		
+		return groupEntryCache.get(groupEntryKey);
+	}
+	
+	private String getKey(String kanji, String kana) {
+		
+		if (kanji == null) {
+			kanji = "$$$NULL$$$";
+		}
+		
+		return kanji + "." + kana;		
+	}
+
 	public static class Group {
 		
 		private JMEDictNewNativeEntry nativeEntry;
@@ -146,6 +189,13 @@ public class JMENewDictionary {
 
 		public void setAdditionalInfoList(List<String> additionalInfoList) {
 			this.additionalInfoList = additionalInfoList;
+		}
+
+		@Override
+		public String toString() {
+			return "GroupEntry [wordTypeList=" + wordTypeList + ", kanji=" + kanji + ", kanjiInfoList=" + kanjiInfoList
+					+ ", kana=" + kana + ", kanaInfoList=" + kanaInfoList + ", romaji=" + romaji + ", translateList="
+					+ translateList + ", additionalInfoList=" + additionalInfoList + "]";
 		}
 	}
 }
