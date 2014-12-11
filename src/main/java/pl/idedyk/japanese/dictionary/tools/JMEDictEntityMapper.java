@@ -20,6 +20,7 @@ public class JMEDictEntityMapper {
 		addMap("X", "rude or X-rated term (not displayed in educational software)");
 		addMap("abbr", "abbreviation");
 		addMap("adj-i", "adjective (keiyoushi)");
+		addMap("adj-ix", "adjective (keiyoushi) - yoi/ii class");
 		addMap("adj-na", "adjectival nouns or quasi-adjectives (keiyodoshi)");
 		addMap("adj-no", "nouns which may take the genitive case particle `no'");
 		addMap("adj-pn", "pre-noun adjectival (rentaishi)");
@@ -38,11 +39,12 @@ public class JMEDictEntityMapper {
 		addMap("col", "colloquialism");
 		addMap("comp", "computer terminology");
 		addMap("conj", "conjunction");
+		addMap("cop-da", "copula");
 		addMap("ctr", "counter");
 		addMap("derog", "derogatory");
 		addMap("eK", "exclusively kanji");
 		addMap("ek", "exclusively kana");
-		addMap("exp", "Expressions (phrases, clauses, etc.)");
+		addMap("exp", "expressions (phrases, clauses, etc.)");
 		addMap("fam", "familiar language");
 		addMap("fem", "female term or language");
 		addMap("food", "food term");
@@ -87,7 +89,10 @@ public class JMEDictEntityMapper {
 		addMap("suf", "suffix");
 		addMap("uK", "word usually written using kanji alone");
 		addMap("uk", "word usually written using kana alone");
+		addMap("unc", "unclassified");
+		addMap("yoji", "yojijukugo");
 		addMap("v1", "Ichidan verb");
+		addMap("v1-s", "Ichidan verb - kureru special class");
 		addMap("v2a-s", "Nidan verb with 'u' ending (archaic)");
 		addMap("v4h", "Yodan verb with `hu/fu' ending (archaic)");
 		addMap("v4r", "Yodan verb with `ru' ending (archaic)");
@@ -173,9 +178,11 @@ public class JMEDictEntityMapper {
 		addMap("finc", "finance term");
 		addMap("geol", "geology, etc. term");
 		addMap("law", "law, etc. term");
+		addMap("mahj", "mahjong term");
 		addMap("med", "medicine, etc. term");
 		addMap("music", "music term");
 		addMap("Shinto", "Shinto term");
+		addMap("shogi", "shogi term");
 		addMap("sports", "sports term");
 		addMap("sumo", "sumo term");
 		addMap("zool", "zoology term");
@@ -187,6 +194,7 @@ public class JMEDictEntityMapper {
 		addMap("unclass", "unclassified name");
 		addMap("company", "company name");
 		addMap("product", "product name");
+		addMap("work", "work of art, literature, music, etc. name");
 		addMap("masc", "male given name or forename");
 		addMap("fem", "female given name or forename");
 		addMap("person", "full name of a particular person");
@@ -205,11 +213,24 @@ public class JMEDictEntityMapper {
 
 	public String getEntity(String desc) {
 
-		return descToEntityMap.get(desc);
+		String result = descToEntityMap.get(desc);
+		
+		if (result == null) {
+			throw new RuntimeException(desc);
+		}
+		
+		return result;
 	}
 	
 	public String getDesc(String entity) {
 		
-		return entityToDescMap.get(entity);
+		String result = entityToDescMap.get(entity);
+		
+		if (result == null) {
+			throw new RuntimeException(entity);
+		}
+		
+		return result;
+
 	}
 }

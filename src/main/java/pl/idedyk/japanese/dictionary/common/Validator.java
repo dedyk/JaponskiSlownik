@@ -217,6 +217,11 @@ public class Validator {
 
 			}
 		}
+		
+		int fixme = 1;
+		
+		// uzyc nowego edict'a
+		// skasowac NO_TYPE_CHECK i sprawdzic wyniki
 
 		if (jmedict != null) {
 
@@ -258,6 +263,7 @@ public class Validator {
 			mapEdictTypeToDictionaryEntryType.put("pn", DictionaryEntryType.WORD_PRONOUN);
 			mapEdictTypeToDictionaryEntryType.put("int", DictionaryEntryType.WORD_INTERJECTION);
 			mapEdictTypeToDictionaryEntryType.put("adj-i", DictionaryEntryType.WORD_ADJECTIVE_I);
+			mapEdictTypeToDictionaryEntryType.put("adj-ix", DictionaryEntryType.WORD_ADJECTIVE_I);
 			mapEdictTypeToDictionaryEntryType.put("adj-na", DictionaryEntryType.WORD_ADJECTIVE_NA);
 			mapEdictTypeToDictionaryEntryType.put("adv", DictionaryEntryType.WORD_ADVERB);
 			mapEdictTypeToDictionaryEntryType.put("n-adv", DictionaryEntryType.WORD_ADVERB);

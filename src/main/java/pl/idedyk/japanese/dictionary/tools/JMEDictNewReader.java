@@ -90,14 +90,7 @@ public class JMEDictNewReader {
 							
 							break;
 						}
-						
-						case "info": {
-							
-							processInfo(jmedictNewNativeEntry, currentRowElement);							
-							
-							break;						
-						}
-						
+												
 						case "sense": {
 							
 							processSense(jmedictNewNativeEntry, currentRowElement);
@@ -248,32 +241,6 @@ public class JMEDictNewReader {
 		}
 		
 		jmedictNewNativeEntry.getR_ele().add(r_ele);
-	}
-
-	private void processInfo(JMEDictNewNativeEntry jmedictNewNativeEntry, Element element) {
-				
-		List<?> rowElements = element.elements();
-		
-		for (Object currentRowElementObject : rowElements) {
-			
-			Element currentRowElement = (Element)currentRowElementObject;
-			
-			String currentRowElementName = currentRowElement.getName();
-			
-			switch (currentRowElementName) {
-				
-				case "audit": {
-					
-					// noop
-					
-					break;
-				}
-								
-				default: {					
-					throw new RuntimeException("Unknown info element name: " + currentRowElementName);					
-				}			
-			}			
-		}
 	}
 
 	private void processSense(JMEDictNewNativeEntry jmedictNewNativeEntry, Element element) {
