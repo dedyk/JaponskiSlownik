@@ -5,7 +5,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
@@ -82,9 +81,9 @@ public class CompleteJMEDictGroup {
 						
 					} else { // sprawdzenie
 												
-						if (	currentFoundTranslate.equals(currentFoundTranslate) == false ||
-								currentFoundInfo.equals(firstInfo) == false ||
-								currentFoundDictionaryEntryType.equals(firstDictionaryEntryType) == false) {
+						if (	currentFoundTranslate.equals(firstTranslate) == false ||
+								currentFoundInfo.equals(firstInfo) == false) { // ||
+								// currentFoundDictionaryEntryType.equals(firstDictionaryEntryType) == false) { 
 							
 							localValidationError = true;
 														
