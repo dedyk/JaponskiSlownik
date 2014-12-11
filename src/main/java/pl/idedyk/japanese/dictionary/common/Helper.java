@@ -107,6 +107,9 @@ public class Helper {
 
 			AttributeList attributeList = currentPolishJapaneseEntry.getAttributeList();
 
+			int fixme = 1;
+			// slowo przestarzale
+			
 			if (foundJMEDictList != null) {
 
 				for (JMEDictEntry foundJMEDict : foundJMEDictList) {

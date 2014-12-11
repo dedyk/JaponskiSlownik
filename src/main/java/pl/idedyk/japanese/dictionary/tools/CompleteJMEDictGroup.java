@@ -5,8 +5,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 
@@ -62,6 +64,7 @@ public class CompleteJMEDictGroup {
 				
 				String firstTranslate = null;
 				String firstInfo = null;
+				String firstDictionaryEntryType = null;
 				
 				boolean localValidationError = false;
 				
@@ -69,22 +72,19 @@ public class CompleteJMEDictGroup {
 					
 					String currentFoundTranslate = currentFoundPolishJapaneseEntry.getTranslates().toString();
 					String currentFoundInfo = currentFoundPolishJapaneseEntry.getInfo();
-										
+					String currentFoundDictionaryEntryType = currentFoundPolishJapaneseEntry.getDictionaryEntryTypeList().toString();
+					
 					if (firstTranslate == null) {
 						
 						firstTranslate = currentFoundTranslate;						
 						firstInfo = currentFoundInfo;
+						firstDictionaryEntryType = currentFoundDictionaryEntryType;
 						
 					} else { // sprawdzenie
-						
-						int fixme = 1;
-						
-						// sprawdzanie typow
-						// wyjatki w informacjach dodatkowych
-						// slowo przestarzale
-						
+												
 						if (	currentFoundTranslate.equals(currentFoundTranslate) == false ||
-								currentFoundInfo.equals(firstInfo) == false) {
+								currentFoundInfo.equals(firstInfo) == false ||
+								currentFoundDictionaryEntryType.equals(firstDictionaryEntryType) == false) {
 							
 							localValidationError = true;
 														
@@ -95,40 +95,52 @@ public class CompleteJMEDictGroup {
 				
 				if (localValidationError == true) { // jest blad
 					
-					StringBuffer errorGroupIds = new StringBuffer();
+					int edictTranslateInfoGroupDiffCounter = 0;
 					
 					for (PolishJapaneseEntry currentFoundPolishJapaneseEntry : foundPolishJapaneseEntryGroupList) {
-						errorGroupIds.append(currentFoundPolishJapaneseEntry.getId() + ".");								
+						
+						if (currentFoundPolishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.EDICT_TRANSLATE_INFO_GROUP_DIFF) == true) {
+							edictTranslateInfoGroupDiffCounter++;
+						}						
 					}
 					
-					if (alreadyValidateErrorResultGroupIds.contains(errorGroupIds.toString()) == false) {
+					if (edictTranslateInfoGroupDiffCounter != foundPolishJapaneseEntryGroupList.size()) {
 						
-						alreadyValidateErrorResultGroupIds.add(errorGroupIds.toString());
+						validateResult = false;
 						
-						System.out.println("Błąd walidacji dla: \n");
+						StringBuffer errorGroupIds = new StringBuffer();
 						
 						for (PolishJapaneseEntry currentFoundPolishJapaneseEntry : foundPolishJapaneseEntryGroupList) {
-							
-							int errorId = currentFoundPolishJapaneseEntry.getId();
-							String errorKanji = currentFoundPolishJapaneseEntry.getKanji();
-							String errorKana = currentFoundPolishJapaneseEntry.getKanaList().get(0);
-							String errorTranslate = currentFoundPolishJapaneseEntry.getTranslates().toString();
-							String errorInfo = currentFoundPolishJapaneseEntry.getInfo();
-							
-							System.out.println("id: " + errorId);
-							System.out.println("id: " + errorKanji);
-							System.out.println("id: " + errorKana);
-							System.out.println("id: " + errorTranslate);
-							System.out.println("id: " + errorInfo);
-							
-							System.out.println("---\n");
+							errorGroupIds.append(currentFoundPolishJapaneseEntry.getId() + ".");								
 						}
-					}
-					
-
-					
-					
-					
+						
+						if (alreadyValidateErrorResultGroupIds.contains(errorGroupIds.toString()) == false) {
+							
+							alreadyValidateErrorResultGroupIds.add(errorGroupIds.toString());
+							
+							System.out.println("Błąd walidacji dla: \n");
+							
+							for (PolishJapaneseEntry currentFoundPolishJapaneseEntry : foundPolishJapaneseEntryGroupList) {
+								
+								int errorId = currentFoundPolishJapaneseEntry.getId();
+								String errorKanji = currentFoundPolishJapaneseEntry.getKanji();
+								String errorKana = currentFoundPolishJapaneseEntry.getKanaList().get(0);
+								String dictionaryEntryType = currentFoundPolishJapaneseEntry.getDictionaryEntryTypeList().toString();
+								String errorTranslate = currentFoundPolishJapaneseEntry.getTranslates().toString();
+								String errorInfo = currentFoundPolishJapaneseEntry.getInfo();
+								
+								System.out.println("id: " + errorId);
+								System.out.println("dictionaryEntryType: " + dictionaryEntryType);
+								System.out.println("kanji: " + errorKanji);
+								System.out.println("kana: " + errorKana);
+								System.out.println("translate: " + errorTranslate);
+								System.out.println("info: " + errorInfo);
+								
+								System.out.println("---\n");
+							}
+						}
+						
+					}					
 				}
 			}
 		}	

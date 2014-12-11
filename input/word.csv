@@ -24,7 +24,7 @@
 10,WORD_NUMBER,,HIRAGANA,Genki 1-1,,九,きゅう,,kyuu,"dziewięć
 9",,,24763
 11,WORD_NUMBER,,HIRAGANA,Genki 1-1,,十,じゅう,,juu,"dziesięć
-10",,,719
+10",,EDICT_TRANSLATE_INFO_GROUP_DIFF,719
 12,WORD_NUMBER,,HIRAGANA,Genki 1-1,,百,ひゃく,,hyaku,"sto
 100",,,6624
 13,WORD_TIME,,HIRAGANA,"Genki 1-1
@@ -2075,7 +2075,7 @@ Genki kanji 1-3",,九つ,ここのつ,,kokonotsu,"dziesięć
 719,WORD_COUNTERS,,HIRAGANA,"Genki 1-9
 Klasyfikatory
 Genki kanji 1-3",,十,とお,,too,"dziesięć
-10",klasyfikator ogólny,,11
+10",klasyfikator ogólny,EDICT_TRANSLATE_INFO_GROUP_DIFF,11
 720,WORD_CONJUNCTION,,HIRAGANA,Genki 1-11,,然して,そして,,soshite,"następnie
 i
 przeto
@@ -8616,7 +8616,7 @@ pamięć",,,
 3596,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-19,,如何,いかが,,ikaga,"jak
 w jaki sposób
 jak, co
-co sądzisz o","uprzejma, honoryfikatywna forma od dou",,"10801
+co sądzisz o","uprzejma, honoryfikatywna forma od dou",EDICT_TRANSLATE_INFO_GROUP_DIFF,"10801
 17323"
 3597,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,経つ,たつ,,tatsu,"mijać
 przemijać
@@ -9441,7 +9441,7 @@ prawdziwie
 szczerze
 faktycznie
 istotnie
-rzeczywiście",grzecznie,,
+rzeczywiście",grzecznie,EDICT_TRANSLATE_INFO_GROUP_DIFF,
 3981,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,みたいな,,mitai na,"wygląda jak, ...",... X,,
 3982,WORD_EXPRESSION,,HIRAGANA,Genki 2-20,,-,よろしかったら,,yoroshikattara,proszę o dobre traktowanie,grzecznie,,
 3983,WORD_NOUN,,HIRAGANA,,,静けさ,しずけさ,,shizukesa,"cisza
@@ -10704,8 +10704,8 @@ stosowanie",,,
 4546,WORD_VERB_U,,HIRAGANA,,,役に立つ,やくにたつ,,yakunitatsu,"być pożytecznym
 być użytecznym
 być przydatnym",,,
-4547,WORD_NOUN,,HIRAGANA,,,合気道,あいきどう,,aikidou,Aikido,japońska sztuka walki,,
-4548,WORD_NOUN,,HIRAGANA,,,合氣道,あいきどう,,aikidou,Aikido,"japońska sztuka walki, dawny zapis",,
+4547,WORD_NOUN,,HIRAGANA,,,合気道,あいきどう,,aikidou,Aikido,japońska sztuka walki,EDICT_TRANSLATE_INFO_GROUP_DIFF,
+4548,WORD_NOUN,,HIRAGANA,,,合氣道,あいきどう,,aikidou,Aikido,"japońska sztuka walki, dawny zapis",EDICT_TRANSLATE_INFO_GROUP_DIFF,
 4549,WORD_NOUN,,HIRAGANA,,,積木,つみき,,tsumiki,klocki,zabawka,,
 4550,WORD_NOUN,,HIRAGANA,,,積み木,つみき,,tsumiki,klocki,zabawka,,
 4551,WORD_NOUN,,HIRAGANA,,,乳,ちち,,chichi,"mleko
@@ -13690,7 +13690,7 @@ letnie kimono",,,
 5816,WORD_NOUN,,HIRAGANA,,,浴場,よくじょう,,yokujou,łazienka,,,
 5817,WORD_NOUN,,HIRAGANA,,,浴槽,よくそう,,yokusou,wanna,,,
 5818,WORD_VERB_U,,HIRAGANA,,,択ぶ,えらぶ,,erabu,"wybierać
-selekcjonować",słowo przestarzałe,,
+selekcjonować",,,
 5819,WORD_NOUN,,HIRAGANA,,,災い,わざわい,,wazawai,"nieszczęście
 katastrofa",,,
 5820,WORD_NOUN,,HIRAGANA,,,天災,てんさい,,tensai,klęska żywiołowa,,,
@@ -23036,7 +23036,7 @@ uwaga",,,7389
 precyzyjnie
 akurat
 w sam raz
-właśnie",słowo przestarzałe,,
+właśnie",,,
 10101,WORD_NOUN,,HIRAGANA,,,握り,にぎり,,nigiri,"rączka
 klamka
 uchwyt
@@ -24761,7 +24761,7 @@ bezsensowna (odpowiedź)",,,
 10801,WORD_ADVERB,,HIRAGANA,,,如何,どう,,dou,"jak
 w jaki sposób
 jak, co
-co sądzisz o",,,"3596
+co sądzisz o",,EDICT_TRANSLATE_INFO_GROUP_DIFF,"3596
 17323"
 10802,WORD_NOUN,,HIRAGANA,,,博士,はくし,,hakushi,doktor,tytuł naukowy,,2690
 10803,WORD_NOUN,,HIRAGANA,,,広さ,ひろさ,,hirosa,"powierzchnia
@@ -27939,7 +27939,7 @@ prawdziwie
 szczerze
 faktycznie
 istotnie
-rzeczywiście",,,
+rzeczywiście",,EDICT_TRANSLATE_INFO_GROUP_DIFF,
 12443,WORD_ADVERB,,HIRAGANA,,,凝乎と,じっと,,jitto,"spokojnie
 nieruchomo
 trwać (w bezruchu)
