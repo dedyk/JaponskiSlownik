@@ -902,8 +902,13 @@ Genki kanji 1-4",,水曜日,すいようび,,suiyoubi,środa,woda,,
 Genki kanji 1-4",,木曜日,もくようび,,mokuyoubi,czwartek,drzewo,,
 362,WORD_DAY_WEEK,,HIRAGANA,"Genki 1-4
 Genki kanji 1-4",,金曜日,きんようび,,kin'youbi,piątek,"pieniądze, złoto",,
-363,WORD_VERB_U,,HIRAGANA,Genki 1-4,と,会う,あう,to,au,"spotykać
-widzieć osobę","osoba to, spotkanie zaplanowane, kiedy mowa o osobie, której status jest wyższy od statusu mówiącego, wtedy lepiej jest używać bardziej uprzejmego zwrotu: ome ni kakaru",,1362
+363,WORD_VERB_U,,HIRAGANA,Genki 1-4,と,会う,あう,to,au,"spotykać (osoba to, spotkanie zaplanowane, kiedy mowa o osobie, której status jest wyższy od statusu mówiącego, wtedy lepiej jest używać bardziej uprzejmego zwrotu: ome ni kakaru)
+widzieć osobę
+napotkać
+napotykać
+ulec wypadkowi
+mieć wypadek
+mieć złe doświadczenie",,,1362
 364,WORD_VERB_U,,HIRAGANA,"Genki 1-4
 Genki kanji 1-11",が,有る,ある,ga,aru,"być
 istnieć
@@ -1320,7 +1325,8 @@ zginąć
 stracić życie",,,
 476,WORD_VERB_U,,HIRAGANA,Genki 1-6,に,座る,すわる,ni,suwaru,"siadać
 siedzieć
-zajmować miejsce",na miejsce,,
+zajmować miejsce
+być ustawionym",na miejsce,,
 477,WORD_VERB_U,,HIRAGANA,"Genki 1-6
 Genki kanji 1-10",,立つ,たつ,,tatsu,"stać
 wstać
@@ -1374,7 +1380,7 @@ kształcić","kogoś, osoba ni rzecz",,
 schodzić
 zstępować
 zsiadać
-opuszczać",,,
+opuszczać",np. z samochodu,,
 488,WORD_VERB_RU,,HIRAGANA,"Genki 1-6
 Genki kanji 2-15",を,借りる,かりる,o,kariru,"pożyczać
 wynajmować","od kogoś, osoba ni rzecz",,
@@ -1836,7 +1842,11 @@ być potrzebnym",,,369
 Genki kanji 1-8",,思う,おもう,,omou,"myśleć
 przypuszczać
 wierzyć
+rozważać
+sądzić
+uważać
 wydawać się
+zgadywać
 spodziewać się
 pragnąć
 czuć","„myśleć w sercu”, mieć coś na myśli",,
@@ -1981,7 +1991,12 @@ być zakończonym",,,
 Genki kanji 2-16",が,始まる,はじまる,ga,hajimaru,"zaczynać się
 rozpoczynać się",coś,,
 698,WORD_VERB_U,,HIRAGANA,Genki 1-9,,弾く,ひく,,hiku,grać,"np. instrument klawiszowy, strunowy",,21547
-699,WORD_VERB_U,,HIRAGANA,Genki 1-9,,敲く,たたく,,tataku,grać,na bębnie,,
+699,WORD_VERB_U,,HIRAGANA,Genki 1-9,,敲く,たたく,,tataku,"uderzać
+bić
+stuknąć
+klepnąć
+dać klapsa
+grać na bębnie",,,
 700,WORD_VERB_U,,HIRAGANA,"Genki 1-9
 Genki 2-22",,吹く,ふく,,fuku,"dmuchać
 wiać
@@ -2234,7 +2249,8 @@ jak długo",,,
 rok
 rocznik",,,1407
 780,WORD_ADVERB,,HIRAGANA,Genki 1-10,,早く,はやく,,hayaku,"wcześnie
-szybko",zrobić coś,,
+szybko
+prędko",zrobić coś,,
 781,WORD_EXPRESSION,,HIRAGANA,,,積もりです,つもりです,,tsumori desu,mam zamiar,+ czasownik w formie prostej,,
 782,WORD_VERB_U,,HIRAGANA,,,歩いて行く,あるいていく,,aruite iku,iść na piechotę,,,
 783,WORD_NOUN,,HIRAGANA,,,交番,こうばん,,kouban,posterunek policji,,,
@@ -2247,8 +2263,11 @@ postępować
 skończyć się",,,
 786,WORD_NOUN,,HIRAGANA,,,階段,かいだん,,kaidan,"schody
 klatka schodowa",,,
-787,WORD_VERB_RU,,HIRAGANA,,を,下りる,おりる,o,oriru,"schodzić
-wysiadać",np. z samochodu,,
+787,WORD_VERB_RU,,HIRAGANA,,を,下りる,おりる,o,oriru,"wysiadać
+schodzić
+zstępować
+zsiadać
+opuszczać",np. z samochodu,,
 788,WORD_NOUN,,HIRAGANA,Genki kanji 2-15,,駐車場,ちゅうしゃじょう,,chuushajou,"miejsce parkingowe
 parking
 postój",,,
@@ -2366,8 +2385,10 @@ trzymać",zwierzęta,,
 826,WORD_VERB_U,,KATAKANA_HIRAGANA,Genki 1-11,,-,サボる,,saboru,opuszczać zajęcia,,,
 827,WORD_VERB_U,,HIRAGANA,Genki 1-11,に,登る,のぼる,ni,noboru,"wspinać się
 wnosić się
+iść do góry
 piąć się
-podnosić się",na górę,,1828
+podnosić się
+wschodzić",,,1828
 828,WORD_VERB_U,,HIRAGANA,"Genki 1-11
 Genki kanji 1-12",,働く,はたらく,,hataraku,"pracować
 robić
@@ -3086,7 +3107,8 @@ takiego rodzaju",blisko mówcy,,
 1089,WORD_EXPRESSION,,HIRAGANA,Genki 2-14,,丁度,ちょうど,,choudo,"dokładnie
 precyzyjnie
 akurat
-w sam raz",,,
+w sam raz
+właśnie",,,
 1090,WORD_ADVERB,,HIRAGANA,,,克く,よく,,yoku,"miło
 przyjemnie
 właściwie
@@ -3285,8 +3307,17 @@ obszerny
 przestrzenny",,,
 1198,WORD_VERB_U,,HIRAGANA,"Genki 2-15
 Genki kanji 1-10",,売る,うる,,uru,sprzedawać,,,
-1199,WORD_VERB_U,,HIRAGANA,Genki 2-15,,下ろす,おろす,,orosu,"podjąć
-podejmować","pieniądze, oszczędności",,1252
+1199,WORD_VERB_U,,HIRAGANA,Genki 2-15,,下ろす,おろす,,orosu,"zdjąć
+ściągnąć (np. flagę)
+wodować (np. statek)
+zrzucić
+schodzić (np. z drabiny)
+wypuścić (np. pasażerów)
+rozładować
+podjąć pieniądze
+podejmować pieniądze
+nosić ubranie pierwszy raz
+robić filet (z ryby)","pieniądze, oszczędności",,1252
 1200,WORD_VERB_U,,HIRAGANA,Genki 2-15,,描く,かく,,kaku,"rysować
 malować",,,4459
 1201,WORD_VERB_U,,HIRAGANA,Genki 2-15,,探す,さがす,,sagasu,"szukać
@@ -4532,8 +4563,10 @@ przyczepić
 zatrzymywać (np. samochód)",,,6770
 1770,WORD_NOUN,,KATAKANA,,,-,ジッパ,,jippa,zamek błyskawiczny,,,
 1771,WORD_NOUN,,HIRAGANA,,,王様,おうさま,,ousama,król,,,
-1772,WORD_VERB_U,,HIRAGANA,,,代わる,かわる,,kawaru,"zastępować
-wymieniać","używane, gdy inna osoba lub rzecz kogoś lub coś zastępuje, zaczyna pełnić funkcję lub rolę poprzedniej",,
+1772,WORD_VERB_U,,HIRAGANA,,,代わる,かわる,,kawaru,"zajmować czyjeś miejsce
+zastępować
+być zastępowanym
+zmieniać się","używane, gdy osoba zajmująca pewne stanowisko lub pełniąca jakąś rolę zostaje zastąpione przez inną",,
 1773,WORD_NOUN,,HIRAGANA_KATAKANA,,,バス代,バスだい,,basu dai,"opłata za autobus
 opłata za przejazd autobusem",,,
 1774,WORD_NOUN,,HIRAGANA,,,三十代の人,さんじゅうだいのひと,,sanjuu dai no hito,30-latkowie,,,
@@ -4858,7 +4891,8 @@ klasnąć w ręce",,,
 bić
 stuknąć
 klepnąć
-dać klapsa",,,
+dać klapsa
+grać na bębnie",,,
 1933,WORD_NOUN,,HIRAGANA,Genki 2-15,,態度,たいど,,taido,"postawa
 poza
 stanowisko
@@ -8580,8 +8614,9 @@ wspominać",,,
 Genki 2-23",,思い出,おもいで,,omoide,"wspomnienie
 pamięć",,,
 3596,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-19,,如何,いかが,,ikaga,"jak
-co
-w co sądzisz o","uprzejma, honoryfikatywna forma od dou",,"10801
+w jaki sposób
+jak, co
+co sądzisz o","uprzejma, honoryfikatywna forma od dou",,"10801
 17323"
 3597,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,経つ,たつ,,tatsu,"mijać
 przemijać
@@ -9025,9 +9060,17 @@ trud",,,
 3798,WORD_NOUN,,HIRAGANA,,,可能性,かのうせい,,kanousei,"możliwość
 prawdopodobieństwo",,,
 3799,WORD_NOUN,,HIRAGANA,,,不可分,ふかぶん,,fukabun,niepodzielny,,,
-3800,WORD_VERB_U,,HIRAGANA,,,降ろす,おろす,,orosu,"zdejmować
-wysadzać
-wyładować",,,
+3800,WORD_VERB_U,,HIRAGANA,,,降ろす,おろす,,orosu,"zdjąć
+ściągnąć (np. flagę)
+wodować (np. statek)
+zrzucić
+schodzić (np. z drabiny)
+wypuścić (np. pasażerów)
+rozładować
+podjąć pieniądze
+podejmować pieniądze
+nosić ubranie pierwszy raz
+robić filet (z ryby)",,,
 3801,WORD_NOUN,,HIRAGANA,,,首,こうべ,,koube,głowa,,,533
 3802,WORD_NOUN,,HIRAGANA,,,首輪,くびわ,,kubiwa,"naszyjnik
 kołnierzyk
@@ -10754,7 +10797,10 @@ więcej niż połowa",,,
 wyolbrzymienie",,,
 4586,WORD_EMPTY,PREFIX,HIRAGANA,,,未,み,,mi,jeszcze nie,prefiks,,8666
 4587,WORD_ADVERB,,HIRAGANA,,,未だ,いまだ,,imada,"jak do tej pory
-jeszcze nie",,,661
+jeszcze nie
+nadal
+dopiero
+zaledwie",+ czasownik w formie te negatywnej,,661
 4588,WORD_ADJECTIVE_NA,,HIRAGANA,,,未解決,みかいけつ,,mikaiketsu,nie rozwiązany,problem,,
 4589,WORD_NOUN,,HIRAGANA,,,未亡人,みぼうじん,,miboujin,wdowa,,,
 4590,WORD_NOUN,,HIRAGANA,,,未成年,みせいねん,,miseinen,niepełnoletni,,,
@@ -10938,7 +10984,10 @@ powrósło
 skakanka",,,
 4663,WORD_VERB_RU,,HIRAGANA,,,干る,ひる,,hiru,"schnąć
 cofać się",,,
-4664,WORD_VERB_U,,HIRAGANA,,,換わる,かわる,,kawaru,zmieniać się,,,
+4664,WORD_VERB_U,,HIRAGANA,,,換わる,かわる,,kawaru,"zajmować czyjeś miejsce
+zastępować
+być zastępowanym
+zmieniać się","używane, gdy osoba zajmująca pewne stanowisko lub pełniąca jakąś rolę zostaje zastąpione przez inną",,
 4665,WORD_VERB_RU,,HIRAGANA,,,顧みる,かえりみる,,kaerimiru,"spoglądać wstecz
 przeglądać
 wspominać
@@ -17593,9 +17642,14 @@ przemowa",,,
 przejrzystość",,,"8519
 8524
 11445"
-7607,WORD_VERB_RU,,HIRAGANA,,,明ける,あける,,akeru,"świtać
-rozjaśniać się
-kończyć się i rozpoczynać",,,
+7607,WORD_VERB_RU,,HIRAGANA,,,明ける,あける,,akeru,"otwierać (np. drzwi)
+rozpakowywać (np. paczkę)
+otwierać (interes)
+robić miejsce
+opróżniać
+zwolnić (miejsce)
+świtać
+rozjaśniać się",,,
 7608,WORD_VERB_U,,HIRAGANA,,,明く,あく,,aku,"otwierać się
 zaczynać się
 zwalniać się
@@ -17985,10 +18039,14 @@ pustka",,,"441
 wolny taxi",,,
 7795,WORD_NOUN,,HIRAGANA,,,大空,おおぞら,,oozora,"niebo
 firmament",,,
-7796,WORD_VERB_RU,,HIRAGANA,,,空ける,あける,,akeru,"opróżniać
-zwalniać
+7796,WORD_VERB_RU,,HIRAGANA,,,空ける,あける,,akeru,"otwierać (np. drzwi)
+rozpakowywać (np. paczkę)
+otwierać (interes)
+robić miejsce
+opróżniać
 zwolnić (miejsce)
-zarezerwować",np. miejsce,,
+świtać
+rozjaśniać się",,,
 7797,WORD_NOUN,,HIRAGANA,,,郡,ぐん,,gun,okręg administracyjny,,,
 7798,WORD_NOUN,,HIRAGANA,,,郡部,ぐんぶ,,gunbu,okręg wiejski,,,
 7799,WORD_VERB_RU,SUFFIX,HIRAGANA,,,兼ねる,かねる,,kaneru,"łączyć
@@ -18116,8 +18174,13 @@ hojny",,,
 stać się nieuważnym",,,
 7847,WORD_VERB_RU,,HIRAGANA,,,緩める,ゆるめる,,yurumeru,rozluźniać,,,
 7848,WORD_ADJECTIVE_NA,,HIRAGANA,,,緩やか,ゆるやか,,yuruyaka,łagodny,,,
-7849,WORD_VERB_U,,HIRAGANA,,,遭う,あう,,au,"napotkać
-ulec",,,
+7849,WORD_VERB_U,,HIRAGANA,,,遭う,あう,,au,"spotykać (osoba to, spotkanie zaplanowane, kiedy mowa o osobie, której status jest wyższy od statusu mówiącego, wtedy lepiej jest używać bardziej uprzejmego zwrotu: ome ni kakaru)
+widzieć osobę
+napotkać
+napotykać
+ulec wypadkowi
+mieć wypadek
+mieć złe doświadczenie",,,
 7850,WORD_ADVERB,,HIRAGANA,,,甚だ,はなはだ,,hanahada,"dużo
 wiele
 wielce
@@ -18151,7 +18214,16 @@ jar",,,7857
 7859,WORD_NOUN,,HIRAGANA,,,弧,こ,,ko,"łuk
 sklepienie łukowe",,,
 7860,WORD_VERB_U,,HIRAGANA,,,憶う,おもう,,omou,"myśleć
-zgadywać",,,
+przypuszczać
+wierzyć
+rozważać
+sądzić
+uważać
+wydawać się
+zgadywać
+spodziewać się
+pragnąć
+czuć","„myśleć w sercu”, mieć coś na myśli",,
 7861,WORD_VERB_RU,,HIRAGANA,,,憶える,おぼえる,,oboeru,"zapamiętywać
 uczyć się",,,
 7862,WORD_VERB_RU,,HIRAGANA,,,映える,はえる,,haeru,"błyszczeć
@@ -18495,8 +18567,10 @@ frakcja",,,
 7983,WORD_VERB_RU,,HIRAGANA,,,据える,すえる,,sueru,"kłaść
 umieszczać
 ustawiać",,,
-7984,WORD_VERB_U,,HIRAGANA,,,据わる,すわる,,suwaru,"siedzieć
-być ustawionym",,,
+7984,WORD_VERB_U,,HIRAGANA,,,据わる,すわる,,suwaru,"siadać
+siedzieć
+zajmować miejsce
+być ustawionym",na miejsce,,
 7985,WORD_ADJECTIVE_I,,HIRAGANA,,,烈しい,はげしい,,hageshii,"gwałtowny
 brutalny
 intensywny",,,
@@ -18851,7 +18925,11 @@ oszczędny",,,
 8105,WORD_EMPTY,PREFIX,HIRAGANA,,,准,じゅん,,jun,"jakby-
 niemal-
 pół-
-towarzyszący",prefiks,,
+wpół-
+quasi-
+towarzyszący
+związany
+sprężony",prefiks,,
 8106,WORD_VERB_RU,,HIRAGANA,,,准える,なぞらえる,,nazoraeru,"upodabniać do
 kształtować na wzór
 naśladować",,,8107
@@ -19368,7 +19446,11 @@ WORD_ADJECTIVE_F",,HIRAGANA,,,剛,ごう,,gou,siła,,,8917
 wrzeszczeć",,,
 8277,WORD_VERB_U,,HIRAGANA,,,喚ぶ,よぶ,,yobu,"wołać
 wzywać
-zapraszać",,,
+przywoływać
+zapraszać
+przyciągać
+nazywać
+przezywać",,,
 8278,WORD_NOUN,,HIRAGANA,,,姓,せい,,sei,nazwisko,,,
 8279,WORD_NOUN,,HIRAGANA,,,峠,とうげ,,touge,"ścieżka górska
 kryzys",,,
@@ -19628,7 +19710,12 @@ pływać",,,
 8371,WORD_NOUN,,HIRAGANA,,,諾,だく,,daku,zgoda,,,
 8372,WORD_NOUN,,HIRAGANA,,,賊,ぞく,,zoku,"buntownik
 złodziej",,,
-8373,WORD_VERB_U,,HIRAGANA,,,昇る,のぼる,,noboru,wschodzić,,,
+8373,WORD_VERB_U,,HIRAGANA,,,昇る,のぼる,,noboru,"wspinać się
+wnosić się
+iść do góry
+piąć się
+podnosić się
+wschodzić",,,
 8374,WORD_VERB_RU,,HIRAGANA,,,鍛える,きたえる,,kitaeru,"piłować
 skrawać
 strugać
@@ -21633,9 +21720,16 @@ męstwo
 odwaga
 waleczność",,,
 9473,WORD_VERB_U,,HIRAGANA,,,想う,おもう,,omou,"myśleć
+przypuszczać
+wierzyć
 rozważać
 sądzić
-uważać",,,
+uważać
+wydawać się
+zgadywać
+spodziewać się
+pragnąć
+czuć","„myśleć w sercu”, mieć coś na myśli",,
 9474,WORD_NOUN,,HIRAGANA,,,汚染,おせん,,osen,"skażenie
 zanieczyszczenie",,,
 9475,WORD_NOUN,,HIRAGANA,,,腕首,うでくび,,udekubi,"nadgarstek
@@ -21815,7 +21909,8 @@ opozycja",,,
 znak
 symbol",,,
 9564,WORD_NOUN,,HIRAGANA,,,漁夫,ぎょふ,,gyofu,rybak,,,
-9565,WORD_ADVERB,,HIRAGANA,,,速く,はやく,,hayaku,"szybko
+9565,WORD_ADVERB,,HIRAGANA,,,速く,はやく,,hayaku,"wcześnie
+szybko
 prędko",,,
 9566,WORD_NOUN,,HIRAGANA,,,表示,ひょうじ,,hyouji,"wskazanie
 określenie
@@ -22935,9 +23030,11 @@ kosmonauta",,,
 spostrzeżenie
 uwaga",,,7389
 10099,WORD_NOUN,,HIRAGANA,,,錫,すず,,suzu,cyna,,,
-10100,WORD_ADVERB,,HIRAGANA,,,恰度,ちょうど,,choudo,"akurat
-właśnie
-dokładnie",słowo przestarzałe,,
+10100,WORD_ADVERB,,HIRAGANA,,,恰度,ちょうど,,choudo,"dokładnie
+precyzyjnie
+akurat
+w sam raz
+właśnie",słowo przestarzałe,,
 10101,WORD_NOUN,,HIRAGANA,,,握り,にぎり,,nigiri,"rączka
 klamka
 uchwyt
@@ -24661,6 +24758,7 @@ bezpodstawny
 bezsensowna (odpowiedź)",,,
 10801,WORD_ADVERB,,HIRAGANA,,,如何,どう,,dou,"jak
 w jaki sposób
+jak, co
 co sądzisz o",,,"3596
 17323"
 10802,WORD_NOUN,,HIRAGANA,,,博士,はくし,,hakushi,doktor,tytuł naukowy,,2690
@@ -24740,6 +24838,9 @@ skaleczenie
 wada
 skaza",,,
 10833,WORD_VERB_U,,HIRAGANA,,,気づく,きづく,,kiduku,"zauważyć
+spostrzec
+dostrzec
+rozpoznać
 zdać sobie sprawę",zwykle występuje w postaci ~ni kizuku,,
 10834,WORD_VERB_RU,,HIRAGANA,,,儲ける,もうける,,moukeru,"robić pieniądze
 zarobić
@@ -24807,7 +24908,11 @@ linijka",,,
 10863,WORD_NOUN,,HIRAGANA,,,物指し,ものさし,,monosashi,"linia
 linijka",,,
 10864,WORD_VERB_U,,HIRAGANA,,,上る,のぼる,,noboru,"wspinać się
-iść do góry",,,
+wnosić się
+iść do góry
+piąć się
+podnosić się
+wschodzić",,,
 10865,WORD_NOUN,,HIRAGANA,,,立場,たちば,,tachiba,"stanowisko
 punkt widzenia
 sytuacja
@@ -25581,10 +25686,9 @@ kiedy",,,"1976
 19989"
 11235,WORD_EXPRESSION,,HIRAGANA,,,行けない,いけない,,ikenai,"nie wolno
 niewłaściwy",,,
-11236,WORD_NOUN,,HIRAGANA,,,行き,いき,,iki,"pójście
-kierunek
-idący do
-w jedną stronę",,,12154
+11236,WORD_NOUN,,HIRAGANA,,,行き,いき,,iki,"idący
+jadący
+zobowiązany",,,12154
 11237,WORD_VERB_U,,HIRAGANA,,,了う,しまう,,shimau,"włożyć
 schować
 odłożyć (na miejsce)
@@ -27335,7 +27439,8 @@ wesoły
 radosny
 szczęśliwy",,,
 12154,WORD_NOUN,SUFFIX,HIRAGANA,,,行き,ゆき,,yuki,"idący
-jadący",dokądś,,11236
+jadący
+zobowiązany",,,11236
 12155,WORD_VERB_U,,HIRAGANA,,,雪が積もる,ゆきがつもる,,yuki ga tsumoru,śnieg się gromadzi,tworzy warstwę,,
 12156,WORD_VERB_RU,,HIRAGANA,,,雪が解ける,ゆきがとける,,yuki ga tokeru,śnieg topnieje,,,
 12157,WORD_EXPRESSION,,HIRAGANA,,,東京行きの電車,とうきょうゆきのでんしゃ,,toukyou yuki no densha,pociąg do Tokio,,,
@@ -27827,10 +27932,12 @@ otwierać z klucza",,,
 12439,WORD_VERB_RU,,HIRAGANA,,,本を開ける,ほんをあける,,hon o akeru,otwierać książkę,,,
 12440,WORD_NOUN,,HIRAGANA,,,厚い本,あついほん,,atsui hon,gruba książka,,,
 12441,WORD_NOUN,,HIRAGANA,,,厚い壁,あついかべ,,atsui kabe,gruba ściana,,,
-12442,WORD_ADVERB,,HIRAGANA,,,実に,じつに,,jitsu ni,"rzeczywiście
+12442,WORD_ADVERB,,HIRAGANA,,,実に,じつに,,jitsu ni,"naprawdę
 prawdziwie
+szczerze
 faktycznie
-naprawdę",,,
+istotnie
+rzeczywiście",,,
 12443,WORD_ADVERB,,HIRAGANA,,,凝乎と,じっと,,jitto,"spokojnie
 nieruchomo
 trwać (w bezruchu)
@@ -28594,7 +28701,10 @@ synowa",,,
 12882,WORD_VERB_U,,HIRAGANA,,,追いつく,おいつく,,oitsuku,"dogonić
 złapać",,,
 12883,WORD_NOUN,,HIRAGANA,,,お祝い,おいわい,,oiwai,"gratulacje
-życzenia",,,
+gratulacyjny prezent
+uczczenie
+świętowanie
+festiwal",język honoryfikatywny,,
 12884,WORD_NOUN,,HIRAGANA,,,伯父,おじ,,oji,"wuj
 wujek
 stryj
@@ -43019,7 +43129,8 @@ powaga",,,
 18463,WORD_VERB_U,,HIRAGANA,,,気付く,きづく,,kiduku,"zauważyć
 spostrzec
 dostrzec
-rozpoznać",,,
+rozpoznać
+zdać sobie sprawę",zwykle występuje w postaci ~ni kizuku,,
 18464,WORD_NOUN,,HIRAGANA,,,県道,けんどう,,kendou,prefekturalna droga,,,
 18465,WORD_NOUN,,HIRAGANA,,,被災,ひさい,,hisai,"bycie ofiarą (klęski żywiołowej)
 przetrwanie (czegoś)",,,
@@ -43074,11 +43185,14 @@ wyszczególnienie
 wykaz
 jasna wypowiedź
 jasne stwierdzenie",,,
-18484,WORD_EMPTY,PREFIX,HIRAGANA,,,準,じゅん,,jun,"pół-
+18484,WORD_EMPTY,PREFIX,HIRAGANA,,,準,じゅん,,jun,"jakby-
+niemal-
+pół-
 wpół-
 quasi-
+towarzyszący
 związany
-sprężony",,,
+sprężony",prefiks,,
 18485,WORD_NOUN,,HIRAGANA,,,試金石,しきんせき,,shikinseki,lidyt,osadowa skała krzemionkowa należąca do grupy skał organogenicznych,,
 18486,WORD_VERB_U,,HIRAGANA,,,-,くたばる,,kutabaru,"paść martwym
 umrzeć
@@ -60971,8 +61085,11 @@ Kraina buddy (buddyzm)
 Raj buddy (buddyzm)
 Czysta ziemia (buddyzm)
 raj",,,
-24585,WORD_VERB_U,,HIRAGANA,,,逢う,あう,,au,"spotykać
+24585,WORD_VERB_U,,HIRAGANA,,,逢う,あう,,au,"spotykać (osoba to, spotkanie zaplanowane, kiedy mowa o osobie, której status jest wyższy od statusu mówiącego, wtedy lepiej jest używać bardziej uprzejmego zwrotu: ome ni kakaru)
+widzieć osobę
+napotkać
 napotykać
+ulec wypadkowi
 mieć wypadek
 mieć złe doświadczenie",,,
 24586,WORD_NOUN,,KATAKANA,,,Ｔバック,ティーバック,,tii bakku,stringi,"ang: T-back, bikini thong",,

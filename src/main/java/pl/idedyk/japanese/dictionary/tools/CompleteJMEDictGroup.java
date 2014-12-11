@@ -81,6 +81,7 @@ public class CompleteJMEDictGroup {
 						
 						// sprawdzanie typow
 						// wyjatki w informacjach dodatkowych
+						// slowo przestarzale
 						
 						if (	currentFoundTranslate.equals(currentFoundTranslate) == false ||
 								currentFoundInfo.equals(firstInfo) == false) {
