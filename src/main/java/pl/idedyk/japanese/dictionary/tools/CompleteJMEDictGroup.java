@@ -77,6 +77,11 @@ public class CompleteJMEDictGroup {
 						
 					} else { // sprawdzenie
 						
+						int fixme = 1;
+						
+						// sprawdzanie typow
+						// wyjatki w informacjach dodatkowych
+						
 						if (	currentFoundTranslate.equals(currentFoundTranslate) == false ||
 								currentFoundInfo.equals(firstInfo) == false) {
 							
