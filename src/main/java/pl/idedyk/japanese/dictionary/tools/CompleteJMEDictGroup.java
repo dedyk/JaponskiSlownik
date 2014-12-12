@@ -65,6 +65,9 @@ public class CompleteJMEDictGroup {
 				String firstInfo = null;
 				String firstDictionaryEntryType = null;
 				
+				int fixme = 1;
+				// sprawdzic atrybuty, np. suffiks
+				
 				boolean localValidationError = false;
 				
 				for (PolishJapaneseEntry currentFoundPolishJapaneseEntry : foundPolishJapaneseEntryGroupList) {
