@@ -713,7 +713,8 @@ lokal",,,7381
 271,WORD_NOUN,,HIRAGANA,,,-,おしょうさん,,oshousan,mnich,buddyjski,,
 272,WORD_NOUN,,HIRAGANA,,,小僧さん,こぞうさん,,kozousan,"uczeń buddyzmu
 młody mnich",,,
-273,WORD_NOUN,,KATAKANA,,,-,タヌキ,,tanuki,jenot,,,
+273,WORD_NOUN,,KATAKANA,,,-,タヌキ,,tanuki,"szop
+jenot",,,
 274,WORD_NOUN,,KATAKANA,Genki 1-4,,-,アルバイト,,arubaito,praca w niepełnym wymiarze godzin,,,
 275,WORD_NOUN,,HIRAGANA,"Genki 1-4
 Genki kanji 1-10
@@ -21526,11 +21527,13 @@ rytm
 harmonia",,,
 9379,WORD_NOUN,,HIRAGANA,,,行ない,おこない,,okonai,"postępowanie
 zachowanie
-akcja
+akt
 czyn
+wyczyn
 czynność
 działalność
-działanie",,,
+działanie
+ascetyzm",,,
 9380,WORD_NOUN,,HIRAGANA,,,動物学,どうぶつがく,,doubutsugaku,zoologia,,,
 9381,WORD_NOUN,,HIRAGANA,,,動物学者,どうぶつがくしゃ,,doubutsugakusha,zoolog,,,
 9382,WORD_NOUN,,HIRAGANA,,,曲がり,まがり,,magari,"krzywizna
@@ -21649,11 +21652,13 @@ rozwodniony",,,
 chwilowy
 przejściowy
 prowizoryczny",,,
-9435,WORD_ADJECTIVE_I,,HIRAGANA,,,虚しい,むなしい,,munashii,"daremny
-bezowocny
-bezskuteczny
+9435,WORD_ADJECTIVE_I,,HIRAGANA,,,虚しい,むなしい,,munashii,"pusty
 próżny
-pusty",,,
+daremny
+bezowocny
+nadaremny
+bezskuteczny
+nieskuteczny",,,
 9436,WORD_NOUN,,HIRAGANA,,,北部,ほくぶ,,hokubu,"północ
 północna część",regionu,,
 9437,WORD_NOUN,,HIRAGANA,,,台座,だいざ,,daiza,piedestał,,,
@@ -21707,7 +21712,9 @@ nabrać powietrza
 odetchnąć
 wciągać powietrze",,,
 9462,WORD_NOUN,,HIRAGANA,,,音韻学,おんいんがく,,on'ingaku,fonetyka,,,
-9463,WORD_NOUN,,HIRAGANA,,,手すり,てすり,,tesuri,poręcz,,,
+9463,WORD_NOUN,,HIRAGANA,,,手すり,てすり,,tesuri,"poręcz
+balustrada
+barierka",,,
 9464,WORD_NOUN,,HIRAGANA,,,破落戸,ごろつき,,gorotsuki,"łajdak
 łotr",,,
 9465,WORD_ADJECTIVE_F,,HIRAGANA,,,湿った,しめった,,shimetta,"mokry
@@ -21968,16 +21975,22 @@ czułek",,,
 odraczać
 opóźniać
 wstrzymywać",,,
-9584,WORD_ADJECTIVE_I,,HIRAGANA,,,情ない,なさけない,,nasakenai,"biedny
-lichy
+9584,WORD_ADJECTIVE_I,,HIRAGANA,,,情ない,なさけない,,nasakenai,"nędzny
 marny
-nędzny
-żałosny",,,9585
-9585,WORD_ADJECTIVE_I,,HIRAGANA,,,情ない,なっさけない,,nassakenai,"biedny
+biedny
 lichy
+żałosny
+opłakany
+haniebny
+karygodny",,,9585
+9585,WORD_ADJECTIVE_I,,HIRAGANA,,,情ない,なっさけない,,nassakenai,"nędzny
 marny
-nędzny
-żałosny",,,9584
+biedny
+lichy
+żałosny
+opłakany
+haniebny
+karygodny",,,9584
 9586,WORD_NOUN,,HIRAGANA,,,摩天楼,まてんろう,,matenrou,"wieżowiec
 drapacz chmur
 wysokościowiec",,,
@@ -22578,7 +22591,9 @@ intensywny",,,
 9852,WORD_NOUN,,HIRAGANA,,,痳病,りんびょう,,rinbyou,rzeżączka,,,
 9853,WORD_ADJECTIVE_NA,,HIRAGANA,,,濃厚,のうこう,,noukou,"gęsty
 zwarty",,,
-9854,WORD_NOUN,,HIRAGANA,,,落度,おちど,,ochido,wina,,,
+9854,WORD_NOUN,,HIRAGANA,,,落度,おちど,,ochido,"błąd
+pomyłka
+wina",,,
 9855,WORD_NOUN,,HIRAGANA,,,経線,けいせん,,keisen,południk,,,
 9856,WORD_NOUN,,HIRAGANA,,,要素,ようそ,,youso,"komponent
 składnik
@@ -22649,7 +22664,10 @@ proteiny",,,
 9892,WORD_NOUN,,HIRAGANA,,,受信者,じゅしんしゃ,,jushinsha,odbiorca,,,
 9893,WORD_VERB_U,,HIRAGANA,,,造り出す,つくりだす,,tsukuridasu,"produkować
 wytwarzać
-tworzyć",,,
+tworzyć
+podwyższać (zbiory)
+wynaleźć
+wymyślić (coś)",,,
 9894,WORD_NOUN,,HIRAGANA,,,木の葉,このは,,konoha,listowie,botanika,,9895
 9895,WORD_NOUN,,HIRAGANA,,,木の葉,きのは,,kinoha,listowie,botanika,,9894
 9896,WORD_NOUN,,HIRAGANA,,,体制,たいせい,,taisei,"struktura
@@ -22667,7 +22685,9 @@ sikorka",,,
 9903,WORD_NOUN,,HIRAGANA,,,形状,けいじょう,,keijou,"kształt
 forma",,,
 9904,WORD_NOUN,,HIRAGANA,,,脈搏,みゃくはく,,myakuhaku,"puls
-tętno",,,
+tętno
+pulsacja
+pulsowanie",,,
 9905,WORD_NOUN,,HIRAGANA,,,軍卒,ぐんそつ,,gunsotsu,żołnierz,,,
 9906,WORD_NOUN,,HIRAGANA,,,魔法,まほう,,mahou,"magia
 czary",,,
@@ -22683,9 +22703,11 @@ despota",,,
 9912,WORD_NOUN,,HIRAGANA,,,倫理学,りんりがく,,rinrigaku,etyka,,,
 9913,WORD_NOUN,,HIRAGANA,,,花崗岩,かこうがん,,kakougan,granit,,,
 9914,WORD_NOUN,,HIRAGANA,,,御互い,おたがい,,otagai,"wzajemny
-wspólny
 obustronny
-obopólny",,,
+obopólny
+wspólny
+nawzajem
+wzajemnie",,,
 9915,WORD_ADVERB,,HIRAGANA,,,御互いに,おたがいに,,otagai ni,"wzajemnie
 nawzajem
 wspólnie
@@ -22748,8 +22770,8 @@ okrucieństwo",,,
 9946,WORD_NOUN,,HIRAGANA,,,封建主義,ほうけんしゅぎ,,houkenshugi,feudalizm,,,
 9947,WORD_NOUN,,HIRAGANA,,,糖尿病,とうにょうびょう,,tounyoubyou,cukrzyca,,,
 9948,WORD_NOUN,,KATAKANA,,,-,ヘラジカ,,herajika,łoś,,,
-9949,WORD_NOUN,,HIRAGANA,,,三味線,さみせん,,samisen,samisen,"japoński instrument muzyczny, strunowy, szarpany, dosł: struny trzech smaków, inne nazwy samisen, shamisen",,9950
-9950,WORD_NOUN,,HIRAGANA,,,三味線,しゃみせん,,shamisen,shamisen,"japoński instrument muzyczny, strunowy, szarpany, dosł: struny trzech smaków, inne nazwy samisen, shamisen",,9949
+9949,WORD_NOUN,,HIRAGANA,,,三味線,さみせん,,samisen,"japoński instrument muzyczny, strunowy, szarpany","dosł: struny trzech smaków, inne nazwy samisen, shamisen",,9950
+9950,WORD_NOUN,,HIRAGANA,,,三味線,しゃみせん,,shamisen,"japoński instrument muzyczny, strunowy, szarpany","dosł: struny trzech smaków, inne nazwy samisen, shamisen",,9949
 9951,WORD_NOUN,,HIRAGANA,,,駿馬,しゅんば,,shunba,szybki koń,,,9952
 9952,WORD_NOUN,,HIRAGANA,,,駿馬,しゅんめ,,shunme,szybki koń,,,9951
 9953,WORD_NOUN,,HIRAGANA,,,尼法師,あまほうし,,amahoushi,"mniszka
@@ -22897,7 +22919,8 @@ zaopatrzenie
 organizowanie",,,
 10028,WORD_NOUN,,HIRAGANA,,,闘い,たたかい,,tatakai,"bitwa
 kłótnia
-walka",,,
+walka
+konflikt",,,
 10029,WORD_NOUN,,HIRAGANA,,,雪崩,なだれ,,nadare,lawina,,,
 10030,WORD_NOUN,,HIRAGANA,,,駆引き,かけひき,,kakehiki,"negocjowanie
 targowanie
@@ -22944,7 +22967,8 @@ szlachta",,,
 10048,WORD_NOUN,,HIRAGANA,,,組織学,そしきがく,,soshikigaku,histologia,,,
 10049,WORD_NOUN,,KATAKANA,,,-,チーター,,chiitaa,gepard,,,
 10050,WORD_NOUN,,HIRAGANA,,,魁,さきがけ,,sakigake,"pionier
-prekursor",,,
+prekursor
+pierwszy do zmiany",,,
 10051,WORD_NOUN,,HIRAGANA,,,魁偉,かいい,,kaii,"umięśniony
 muskularny
 imponujący",człowiek,,
@@ -23016,9 +23040,18 @@ królowanie",,,
 stępka",,,
 10086,WORD_NOUN,,HIRAGANA,,,美質,びしつ,,bishitsu,"cnota
 moralność",,,
-10087,WORD_NOUN,,HIRAGANA,,,遣い,つかい,,tsukai,"zadanie
+10087,WORD_NOUN,,HIRAGANA,,,遣い,つかい,,tsukai,"zlecenie
+zadanie
+misja
 cel
-zlecenie",,,
+wysłannictwo
+poselstwo
+posłaniec
+goniec
+kurier
+wysłannik
+nosiciel
+chowaniec",,,
 10088,WORD_NOUN,,HIRAGANA,,,鋼索,こうさく,,kousaku,"kabel
 stalowa lina",,,
 10089,WORD_NOUN,,HIRAGANA,,,長円,ちょうえん,,chouen,"elipsa
@@ -23493,6 +23526,9 @@ precyzja",,,
 10273,WORD_NOUN,,HIRAGANA,,,糸枠,いとわく,,itowaku,"szpula
 szpulka",,,
 10274,WORD_NOUN,,HIRAGANA,,,軌範,きはん,,kihan,"model
+wzór
+szablon
+przykład
 standard
 norma",,,
 10275,WORD_ADVERB_TO,,HIRAGANA,,,黙黙,もくもく,,mokumoku,"cichy
@@ -23868,10 +23904,8 @@ poczwarka",,,
 czołowy
 naczelny",,,
 10440,WORD_NOUN,,HIRAGANA,,,最前線,さいぜんせん,,saizensen,główna linia,,,
-10441,WORD_NOUN,,HIRAGANA,,,硬さ,かたさ,,katasa,"niewzruszoność
-nieugiętość
-niezłomność
-twardość
+10441,WORD_NOUN,,HIRAGANA,,,硬さ,かたさ,,katasa,"twardość
+wytrzymałość
 sztywność",,,
 10442,WORD_NOUN,,HIRAGANA,,,罰金,ばっきん,,bakkin,"grzywna
 kara pieniężna",,,
@@ -23922,10 +23956,13 @@ przewóz",,,
 10456,WORD_NOUN,,HIRAGANA,,,地質学,ちしつがく,,chishitsugaku,geologia,,,
 10457,WORD_NOUN,,HIRAGANA,,,黒金,くろがね,,kurogane,żelazo,,,
 10458,WORD_NOUN,,HIRAGANA,,,交響曲,こうきょうきょく,,koukyoukyoku,symfonia,,,
-10459,WORD_NOUN,,HIRAGANA,,,話合い,はなしあい,,hanashiai,"konferencja
+10459,WORD_NOUN,,HIRAGANA,,,話合い,はなしあい,,hanashiai,"dyskusja
+debata
+rozważanie
 zjazd
-dyskusja
-rozmowa",,,
+narada
+zebranie
+konferencja",,,
 10460,WORD_VERB_U,,HIRAGANA,,,消え入る,きえいる,,kieiru,"znikać
 niknąć
 rozpływać
@@ -24028,8 +24065,9 @@ politowanie
 sympatyzowanie",,,
 10510,WORD_NOUN,,HIRAGANA,,,妥協,だきょう,,dakyou,"kompromis
 ustępstwo",,,
-10511,WORD_NOUN,,HIRAGANA,,,戦い,たたかい,,tatakai,"walka
-bitwa
+10511,WORD_NOUN,,HIRAGANA,,,戦い,たたかい,,tatakai,"bitwa
+kłótnia
+walka
 konflikt",,,
 10512,WORD_NOUN,,HIRAGANA,,,旗幟,きし,,kishi,"flaga
 bandera
@@ -24220,7 +24258,8 @@ państwo",,,
 10583,WORD_NOUN,,HIRAGANA,,,部局,ぶきょく,,bukyoku,"departament
 sekcja
 wydział",,,
-10584,WORD_NOUN,,HIRAGANA,,,飢餓,きが,,kiga,głód,,,
+10584,WORD_NOUN,,HIRAGANA,,,飢餓,きが,,kiga,"głód
+głodowanie",,,
 10585,WORD_NOUN,,HIRAGANA,,,骨骼,こっかく,,kokkaku,"szkielet
 kościec
 kościotrup",,,
@@ -24315,8 +24354,16 @@ bojaźliwy",,,
 10617,WORD_NOUN,,HIRAGANA,,,野蛮人,やばんじん,,yabanjin,"barbarzyńca
 brutal
 dzikus",,,
-10618,WORD_ADJECTIVE_I,,HIRAGANA,,,荒荒しい,あらあらしい,,araarashii,"szorstki
-chropowaty",,,
+10618,WORD_ADJECTIVE_I,,HIRAGANA,,,荒荒しい,あらあらしい,,araarashii,"opustoszały
+opuszczony
+odludny
+wyludniony
+surowy
+szorstki
+chropowaty
+dziki
+gwałtowny
+brutalny",,,
 10619,WORD_NOUN,,HIRAGANA,,,蝋,ろう,,rou,wosk,,,
 10620,WORD_NOUN,,HIRAGANA,,,埋葬,まいそう,,maisou,"pogrzeb
 pochówek",,,
@@ -25526,7 +25573,8 @@ przyrzekać
 umawiać się",,,
 11163,WORD_VERB_IRREGULAR,,HIRAGANA,,,発音する,はつおんする,,hatsuon suru,wymawiać,,,
 11164,WORD_VERB_IRREGULAR,,HIRAGANA,,,発達する,はったつする,,hattatsu suru,rozwijać się,,,
-11165,WORD_NOUN,,HIRAGANA,,,紙くず,かみくず,,kamikuzu,śmieciowe papiery,,,
+11165,WORD_NOUN,,HIRAGANA,,,紙くず,かみくず,,kamikuzu,"niepotrzebne papiery
+śmieciowe papiery",,,
 11166,WORD_NOUN,,HIRAGANA,,,紙包み,かみづつみ,,kamidutsumi,paczka owinięta w papier,,,
 11167,WORD_NOUN,,HIRAGANA,,,紙袋,かみぶくろ,,kamibukuro,papierowa torba,,,
 11168,WORD_NOUN,,HIRAGANA,,,紙芝居,かみしばい,,kamishibai,teatrzyk obrazkowy,,,
@@ -25660,13 +25708,20 @@ zaledwie","na ogół stosuje się wraz ze słowami: dake, bakari, shika itp",,"6
 10868"
 11220,WORD_VERB_RU,,HIRAGANA,,,撮れる,とれる,,toreru,"zostać zrobionym (o zdjęciu)
 sfotografowanym",,,
-11221,WORD_VERB_RU,,HIRAGANA,,,取り上げる,とりあげる,,toriageru,"podnieść
+11221,WORD_VERB_RU,,HIRAGANA,,,取り上げる,とりあげる,,toriageru,"podnosić
+podnieść
 wznieść
+przyjmować
+akceptować
 zaakceptować
+posłuchać
 przyjąć
 zastosować
 zabrać
-skonfiskować",,,
+skonfiskować
+konfiskować
+rekwirować
+odbierać",,,
 11222,WORD_AUX,,HIRAGANA,,,様だ,ようだ,,you da,"taki jak
 podobny do
 wyglądający jak
@@ -26081,7 +26136,9 @@ być użytecznym
 być przydatnym",,,
 11437,WORD_VERB_RU,,HIRAGANA,,,仕事に飽きる,しごとにあきる,,shigoto ni akiru,"mieć dość pracy
 znudzić się pracą",,,
-11438,WORD_ADJECTIVE_NA,,HIRAGANA,,,暖か,あたたか,,atataka,ciepły,,,
+11438,WORD_ADJECTIVE_NA,,HIRAGANA,,,暖か,あたたか,,atataka,"ciepły
+serdeczny
+życzliwy",,,
 11439,WORD_ADJECTIVE_NA,,HIRAGANA,,,温か,あたたか,,atataka,"ciepły
 serdeczny
 życzliwy",,,
@@ -26357,7 +26414,8 @@ zaniedbanie",,,
 11571,WORD_VERB_IRREGULAR,,HIRAGANA,,,油断する,ゆだんする,,yudan suru,"być nieuważnym
 być nieostrożnym
 zaniedbywać",,,
-11572,WORD_NOUN,,HIRAGANA,,,狸,たぬき,,tanuki,szop,,,
+11572,WORD_NOUN,,HIRAGANA,,,狸,たぬき,,tanuki,"szop
+jenot",,,
 11573,WORD_ADVERB,,HIRAGANA,,,如何しても,どうしても,,doushitemo,"w żaden sposób
 za nic
 koniecznie
@@ -26512,10 +26570,11 @@ konkluzja (występuje w wyrażeniu kimari ga tsuku lub kimari o tsukeru)",,,
 11625,WORD_VERB_IRREGULAR,,HIRAGANA,,,真似する,まねする,,mane suru,naśladować,kogoś,,
 11626,WORD_ADVERB,,HIRAGANA,,,態々,わざわざ,,wazawaza,"specjalnie
 zadać sobie trud
+zrobić coś bez potrzeby
 pofatygować się",,,
 11627,WORD_ADVERB,,HIRAGANA,,,態態,わざわざ,,wazawaza,"specjalnie
-zrobić coś bez potrzeby
 zadać sobie trud
+zrobić coś bez potrzeby
 pofatygować się",,,
 11628,WORD_ADVERB,,HIRAGANA,,,随分,ずいぶん,,zuibun,"bardzo
 dużo
@@ -26586,9 +26645,14 @@ zupełnie",,,
 11662,WORD_NOUN,,HIRAGANA_KATAKANA,,,電気ストーブ,でんきストーブ,,denki sutoobu,grzejnik elektryczny,,,
 11663,WORD_NOUN,,KATAKANA,,,-,ガスストーブ,,gasu sutoobu,piec gazowy,,,
 11664,WORD_VERB_IRREGULAR,,HIRAGANA,,,予報する,よほうする,,yohou suru,przewidywać,,,
-11665,WORD_ADVERB,,HIRAGANA,,,余程,よほど,,yohodo,"bardzo
+11665,"WORD_ADVERB
+WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,余程,よほど,,yohodo,"bardzo
 dużo
-wielce",,,
+wiele
+sporo
+w znacznym stopniu
+w dużym stopniu",,,
 11666,WORD_VERB_RU,,HIRAGANA,,,規則を改める,きそくをあらためる,,kisoku o aratameru,"zmieniać reguły
 poprawić","zmieniać reguły
 ulepszać reguły
@@ -28842,7 +28906,8 @@ wydawnictwo",,,
 12943,"WORD_NOUN
 WORD_ADJECTIVE_F",,HIRAGANA,,,屑,くず,,kuzu,"śmieci
 odpadki",,,
-12944,WORD_NOUN,,HIRAGANA,,,紙屑,かみくず,,kamikuzu,niepotrzebne papiery,,,
+12944,WORD_NOUN,,HIRAGANA,,,紙屑,かみくず,,kamikuzu,"niepotrzebne papiery
+śmieciowe papiery",,,
 12945,WORD_NOUN,,HIRAGANA,,,屑籠,くずかご,,kuzukago,kosz na śmieci,,,
 12946,WORD_NOUN,,HIRAGANA,,,螺子,ねじ,,neji,"śruba
 śrubka",,,
@@ -33362,7 +33427,8 @@ kurczenie
 ekonomia
 obwarowanie",,,
 14942,WORD_NOUN,,HIRAGANA,,,落ち度,おちど,,ochido,"błąd
-pomyłka",,,
+pomyłka
+wina",,,
 14943,WORD_NOUN,,HIRAGANA,,,首位,しゅい,,shui,"prym
 pozycja wiodąca",,,
 14944,WORD_NOUN,,KATAKANA,,,-,アイス,,aisu,"lód
@@ -37271,6 +37337,8 @@ groźna choroba",,,
 16366,WORD_NOUN,,HIRAGANA,,,年月,ねんげつ,,nengetsu,miesiące i lata,,,16365
 16367,WORD_ADJECTIVE_I,,HIRAGANA,,,情けない,なさけない,,nasakenai,"nędzny
 marny
+biedny
+lichy
 żałosny
 opłakany
 haniebny
@@ -43000,11 +43068,7 @@ opowieść o duchach",,,
 18362,WORD_NOUN,,HIRAGANA,,,養豚,ようとん,,youton,"hodowla trzody chlewnej
 hodowla świń",,,
 18363,WORD_NOUN,,KATAKANA,,,-,シニア,,shinia,senior,,,
-18364,WORD_NOUN,,KATAKANA,,,-,リス,,risu,"złamanie
-pęknięcie
-szczelina
-litografia
-wiewiórkowate",,,
+18364,WORD_NOUN,,KATAKANA,,,-,リス,,risu,wiewiórka,,,
 18365,WORD_NOUN,,KATAKANA,,,-,ルーキー,,ruukii,"żółtodziób
 rekrut
 początkujący
@@ -48834,10 +48898,10 @@ przemyślenie",,,
 20238,WORD_NOUN,,HIRAGANA,,,迎賓館,げいひんかん,,geihinkan,"recepcja
 sala recepcyjna
 Pałac Akasaka (rządowy ośrodek dla dygnitarzy)",,,
-20239,WORD_ADJECTIVE_I,,HIRAGANA,,,空しい,むなしい,,munashii,"wolny
-pusty
+20239,WORD_ADJECTIVE_I,,HIRAGANA,,,空しい,むなしい,,munashii,"pusty
 próżny
 daremny
+bezowocny
 nadaremny
 bezskuteczny
 nieskuteczny",,,
@@ -52474,6 +52538,7 @@ pogląd",,,
 21463,WORD_NOUN,,HIRAGANA,,,話し合い,はなしあい,,hanashiai,"dyskusja
 debata
 rozważanie
+zjazd
 narada
 zebranie
 konferencja",,,
@@ -55039,6 +55104,7 @@ wybrzeże z plażą",,,
 22320,WORD_NOUN,,HIRAGANA,,,使い,つかい,,tsukai,"zlecenie
 zadanie
 misja
+cel
 wysłannictwo
 poselstwo
 posłaniec
@@ -58756,11 +58822,14 @@ pospolity
 zwykły",,,
 23648,WORD_NOUN,,HIRAGANA,,,泌尿器,ひにょうき,,hinyouki,narządy moczowe,,,23649
 23649,WORD_NOUN,,HIRAGANA,,,泌尿器,ひつにょうき,,hitsunyouki,narządy moczowe,,,23648
-23650,WORD_EMPTY,,HIRAGANA,,,行い,おこない,,okonai,"czyn
-akt
-wyczyn
+23650,WORD_NOUN,,HIRAGANA,,,行い,おこない,,okonai,"postępowanie
 zachowanie
-postępowanie
+akt
+czyn
+wyczyn
+czynność
+działalność
+działanie
 ascetyzm",,,
 23651,WORD_NOUN,,HIRAGANA,,,運休,うんきゅう,,unkyuu,"wstrzymanie usługi
 wstrzymanie służby",np. ruchu pociągów,,
@@ -59441,6 +59510,7 @@ WORD_ADJECTIVE_NA",,HIRAGANA,,,御互い様,おたがいさま,,otagaisama,jeste
 23897,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,お互いさま,おたがいさま,,otagaisama,jesteśmy równym statusem w odniesieniu (do czegoś),,,
 23898,WORD_NOUN,,HIRAGANA,,,お互い,おたがい,,otagai,"wzajemny
+obustronny
 obopólny
 wspólny
 nawzajem
@@ -59831,10 +59901,15 @@ suwerenność",,,
 24050,WORD_NOUN,,HIRAGANA,,,勝ち星,かちぼし,,kachiboshi,znak zwycięstwa,,,
 24051,WORD_VERB_RU,,HIRAGANA,,,取上げる,とりあげる,,toriageru,"podnosić
 podnieść
+wznieść
 przyjmować
 akceptować
+zaakceptować
 posłuchać
+przyjąć
+zastosować
 zabrać
+skonfiskować
 konfiskować
 rekwirować
 odbierać",,,
@@ -61924,8 +61999,9 @@ stan społeczeństwa",,,
 pseudonim",,,
 24823,WORD_NOUN,,HIRAGANA,,,特命,とくめい,,tokumei,misja,,,
 24824,WORD_VERB_U,,HIRAGANA,,,-,たがる,,tagaru,chcieć,"łączy się z czasownikiem, nie używane w pierwszej formie, łączy się z ~tai i ~garu",,
-24825,WORD_VERB_U,,HIRAGANA,,,創り出す,つくりだす,,tsukuridasu,"produkowanie
-wytwarzanie
+24825,WORD_VERB_U,,HIRAGANA,,,創り出す,つくりだす,,tsukuridasu,"produkować
+wytwarzać
+tworzyć
 podwyższać (zbiory)
 wynaleźć
 wymyślić (coś)",,,
