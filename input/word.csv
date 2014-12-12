@@ -4448,7 +4448,9 @@ WORD_TEMPORAL_NOUN",,HIRAGANA,Genki dodatkowe 2-13,,一生,いっしょう,,issh
 żywot",,,
 1689,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,海苔,のり,,nori,nori,japońska potrawa,,8705
 1690,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,すき焼き,すきやき,,sukiyaki,sukiyaki,japońska potrawa,,
-1691,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,-,なべ,,nabe,garnek,,,
+1691,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,鍋,なべ,,nabe,"rondel
+garnek
+gorący garnek",,,
 1692,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,-,すっぽん,,suppon,suppon,japońska potrawa,,
 1693,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-13,,亀,かめ,,kame,żółw,,,8597
 1694,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-16,,-,どこでも,,dokodemo,gdziekolwiek,,,
@@ -5665,7 +5667,8 @@ zawrzeć (umowę)
 wiązać (tworzyć związek pomiędzy osobami, tworzyć połączenie między oddalonymi miejscami)
 owocować",,,
 2254,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,婚約,こんやく,,kon'yaku,zaręczyny,,,
-2255,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-17,,婚約する,こんやくする,,kon'yaku suru,zaręczać się,,,
+2255,WORD_VERB_IRREGULAR,,HIRAGANA,Genki kanji 2-17,,婚約する,こんやくする,,kon'yaku suru,"zaręczać się
+zaręczyć się",,,
 2256,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,婚約者,こんやくしゃ,,kon'yakusha,"narzeczona
 zaręczony
 zaręczona",,,
@@ -6300,7 +6303,9 @@ wiersz
 utwór poetycki",,,10785
 2565,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 2-17,,数える,かぞえる,,kazoeru,"liczyć
 rachować
-kalkulować",,,
+kalkulować
+wymieniać
+wyliczać",,,
 2566,WORD_VERB_RU,,HIRAGANA,Genki dodatkowe 2-17,,名前をつける,なまえをつける,,namae o tsukeru,nazywać,,,
 2567,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 2-17,,完成する,かんせいする,,kansei suru,"wykonywać
 wykończyć
@@ -12008,7 +12013,8 @@ stukać",,,
 ukraść
 okraść
 rabować
-obrabować",,,
+obrabować
+zakradać się",,,
 5081,WORD_VERB_U,,HIRAGANA,Genki 2-21,,貼る,はる,,haru,"przyklejać
 naklejać
 nalepiać",,,
@@ -62192,3 +62198,43 @@ rzucać (np. granaty)
 wprowadzać (dane)
 poświęcać siebie
 wkładać serce i duszę w",,,24919
+24921,WORD_EXPRESSION,,HIRAGANA,,,-,じゃない,,janai,[tworzenie przeczeń od rzeczowników i na-przymiotników],,,
+24922,WORD_NOUN,,HIRAGANA_KATAKANA,,,イカ下足,イカげそ,,ika geso,"macki kalmara
+macki kałamarnicy",,,
+24923,WORD_NOUN,,HIRAGANA,,,烏賊下足,いかげそ,,ika geso,"macki kalmara
+macki kałamarnicy",,,
+24924,WORD_NOUN,,KATAKANA,,,-,イカゲソ,,ika geso,"macki kalmara
+macki kałamarnicy",,,
+24925,WORD_NOUN,,HIRAGANA,,,下足,げそ,,geso,"macki kalmara
+macki kałamarnicy",,,
+24926,WORD_NOUN,,HIRAGANA,,,初冠雪,はつかんせつ,,hatsukansetsu,pierwszy śnieg osiadły na górze,,,
+24927,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,KATAKANA,,,-,ヒーヒー,,hiihii,odgłos płaczącego dziecka,,,
+24928,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,-,ひいひい,,hiihii,odgłos płaczącego dziecka,,,
+24929,WORD_NOUN,,HIRAGANA,,,関係者,かんけいしゃ,,kankeisha,"upoważniona osoba
+uprawniona osoba
+kadra
+oficjał",,,
+24930,WORD_EXPRESSION,,HIRAGANA,,,関係者各位,かんけいしゃかくい,,kankeishakakui,"do wszystkich zainteresowanych
+do wszystkich zaangażowanych",,,
+24931,WORD_EXPRESSION,,HIRAGANA,,,関係者以外立入禁止,かんけいしゃいがいたちいりきんし,,kankeisha igaitachi irikinshi,tylko dla osób upoważnionych,,,
+24932,WORD_NOUN,,HIRAGANA,,,追肥,ついひ,,tsuihi,"dodatkowy nawóz
+dodatkowe nawożenie",,,
+24933,WORD_VERB_U,,HIRAGANA,,,寝入る,ねいる,,neiru,zasnąć,,,
+24934,WORD_VERB_U,,HIRAGANA,,,眠りこむ,ねむりこむ,,nemurikomu,"zasnąć
+spać głębokim snem",,,
+24935,WORD_VERB_U,,HIRAGANA,,,眠り込む,ねむりこむ,,nemurikomu,"zasnąć
+spać głębokim snem",,,
+24936,WORD_NOUN,,HIRAGANA,,,お鍋,おなべ,,onabe,"garnek (uprzejmie)
+typowa nazwa na służącą w okresie Edo (archaizm)
+pracowanie w nocy
+kobieta z objawami braku identyfikacji ze swoją płcią (np. transwestytka)",,,
+24937,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,こう言う,こういう,,kouiu,"jak
+jak to",,,
+24938,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,斯ういう,こういう,,kouiu,"jak
+jak to",,,
+24939,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,斯う言う,こういう,,kouiu,"jak
+jak to",,,
