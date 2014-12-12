@@ -67,6 +67,7 @@ public class CompleteJMEDictGroup {
 				
 				int fixme = 1;
 				// sprawdzic atrybuty, np. suffiks
+				// usunac EDICT_TRANSLATE_INFO_GROUP_DIFF i sprawdzic
 				
 				boolean localValidationError = false;
 				
