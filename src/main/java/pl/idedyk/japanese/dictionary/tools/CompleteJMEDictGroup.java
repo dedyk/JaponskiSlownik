@@ -87,8 +87,8 @@ public class CompleteJMEDictGroup {
 					} else { // sprawdzenie
 												
 						if (	currentFoundTranslate.equals(firstTranslate) == false ||
-								currentFoundInfo.equals(firstInfo) == false) { // ||
-								// currentFoundDictionaryEntryType.equals(firstDictionaryEntryType) == false) { 
+								currentFoundInfo.equals(firstInfo) == false ||
+								currentFoundDictionaryEntryType.equals(firstDictionaryEntryType) == false) { 
 							
 							localValidationError = true;
 														
