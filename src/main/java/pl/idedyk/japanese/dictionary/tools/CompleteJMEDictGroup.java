@@ -74,10 +74,7 @@ public class CompleteJMEDictGroup {
 				String firstDictionaryEntryType = null;
 				String firstAttributeList = null;
 				String firstPrefix = null;
-				
-				int fixme = 1;
-				// usunac EDICT_TRANSLATE_INFO_GROUP_DIFF i sprawdzic
-				
+								
 				boolean localValidationError = false;
 				
 				for (PolishJapaneseEntry currentFoundPolishJapaneseEntry : foundPolishJapaneseEntryGroupList) {
