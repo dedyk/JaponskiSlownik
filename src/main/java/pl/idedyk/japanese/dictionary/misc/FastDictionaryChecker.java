@@ -43,6 +43,6 @@ public class FastDictionaryChecker {
 		// validate
 
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, null, null);
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, null, null, null);
 	}
 }

@@ -11,9 +11,12 @@ import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
+import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 import pl.idedyk.japanese.dictionary.tools.KanjiImageWriter;
 
@@ -39,11 +42,19 @@ public class J2MEDictionaryGenerator {
 
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JaponskiSlownik_dodatki/JMnedict.xml");
 
+		// read new jmedict
+		System.out.println("new jmedict");
+		
+		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
+		
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");		
+		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
+		
 		// Słowniczek
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
-				.parsePolishJapaneseEntriesFromCsv("input/word.csv");
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmedict,
-				jmedictName);
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmeNewDictionary, jmedict, jmedictName);
+		
 		generateKanjiImages(polishJapaneseEntries, charsCache, kanjiOutputDir);
 
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true);

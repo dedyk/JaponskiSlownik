@@ -3,12 +3,16 @@ package pl.idedyk.japanese.dictionary.common;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import pl.idedyk.japanese.dictionary.api.dto.Attribute;
+import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
@@ -17,6 +21,8 @@ import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
@@ -26,7 +32,8 @@ public class Validator {
 
 	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries,
 			List<KanaEntry> hiraganaEntries, List<KanaEntry> katakanaEntries,
-			TreeMap<String, List<JMEDictEntry>> jmedict, TreeMap<String, List<JMEDictEntry>> jmedictName)
+			JMENewDictionary jmeNewDictionary, TreeMap<String, List<JMEDictEntry>> jmedict, 
+			TreeMap<String, List<JMEDictEntry>> jmedictName)
 			throws DictionaryException {
 
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
@@ -40,7 +47,7 @@ public class Validator {
 		for (KanaEntry kanaEntry : katakanaEntries) {
 			katakanaCache.put(kanaEntry.getKana(), kanaEntry);
 		}
-		
+				
 		KanaHelper kanaHelper = new KanaHelper();
 		final Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
 
@@ -453,6 +460,12 @@ public class Validator {
 					}
 				}
 			}
+		}
+		
+		if (jmeNewDictionary != null) {
+			
+			// walidacja grup edict
+			validateEdictGroup(jmeNewDictionary, polishJapaneseKanjiEntries);
 		}
 	}
 
@@ -1024,5 +1037,207 @@ public class Validator {
 						+ currentKanjiEntry + "\n");
 			}
 		}
+	}
+	
+	private static void validateEdictGroup(JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
+		boolean validateResult = true;
+		
+		Set<String> alreadyValidateErrorResultGroupIds = new HashSet<String>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			String kanji = polishJapaneseEntry.getKanji();
+			String kana = polishJapaneseEntry.getKanaList().get(0);
+			
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
+			
+			List<PolishJapaneseEntry> foundPolishJapaneseEntryGroupList = new ArrayList<PolishJapaneseEntry>();
+			
+			if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+								
+				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
+					
+					String groupEntryKanji = groupEntry.getKanji();
+					String groupEntryKana = groupEntry.getKana();
+					
+					List<GroupEntry> groupEntryList2 = jmeNewDictionary.getGroupEntryList(groupEntryKanji, groupEntryKana);
+					
+					if (isMultiGroup(groupEntryList2) == false) {
+						
+						PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntries, 
+								groupEntryKanji, groupEntryKana);
+						
+						if (findPolishJapaneseEntry != null) {
+							foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
+						}
+						
+					}
+				}
+			}
+			
+			// sprawdzanie, czy wszystkie elementy maja to samo tlumaczenie. Powinno tak byc, powinny byc w tej samej grupie
+			if (foundPolishJapaneseEntryGroupList.size() > 1) {
+				
+				String firstTranslate = null;
+				String firstInfo = null;
+				String firstDictionaryEntryType = null;
+				String firstAttributeList = null;
+				String firstPrefix = null;
+								
+				boolean localValidationError = false;
+				
+				for (PolishJapaneseEntry currentFoundPolishJapaneseEntry : foundPolishJapaneseEntryGroupList) {
+					
+					String currentFoundTranslate = currentFoundPolishJapaneseEntry.getTranslates().toString();
+					String currentFoundInfo = currentFoundPolishJapaneseEntry.getInfo();
+					String currentFoundDictionaryEntryType = currentFoundPolishJapaneseEntry.getDictionaryEntryTypeList().toString();
+					String currentFoundAttributeList = toAttributeListString(currentFoundPolishJapaneseEntry.getAttributeList());
+					String currentFoundPrefix = currentFoundPolishJapaneseEntry.getPrefixKana() + "-" + currentFoundPolishJapaneseEntry.getPrefixRomaji();			
+					
+					if (firstTranslate == null) {
+						
+						firstTranslate = currentFoundTranslate;						
+						firstInfo = currentFoundInfo;
+						firstDictionaryEntryType = currentFoundDictionaryEntryType;
+						firstAttributeList = currentFoundAttributeList;
+						firstPrefix = currentFoundPrefix;
+						
+					} else { // sprawdzenie
+												
+						if (	currentFoundTranslate.equals(firstTranslate) == false ||
+								currentFoundInfo.equals(firstInfo) == false ||
+								currentFoundDictionaryEntryType.equals(firstDictionaryEntryType) == false ||
+								currentFoundAttributeList.equals(firstAttributeList) == false ||
+								currentFoundPrefix.equals(firstPrefix) == false) { 
+							
+							localValidationError = true;
+														
+							break;
+						}						
+					}
+				}
+				
+				if (localValidationError == true) { // jest blad
+					
+					int edictTranslateInfoGroupDiffCounter = 0;
+					
+					for (PolishJapaneseEntry currentFoundPolishJapaneseEntry : foundPolishJapaneseEntryGroupList) {
+						
+						if (currentFoundPolishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.EDICT_TRANSLATE_INFO_GROUP_DIFF) == true) {
+							edictTranslateInfoGroupDiffCounter++;
+						}						
+					}
+					
+					if (edictTranslateInfoGroupDiffCounter != foundPolishJapaneseEntryGroupList.size()) {
+						
+						validateResult = false;
+						
+						StringBuffer errorGroupIds = new StringBuffer();
+						
+						for (PolishJapaneseEntry currentFoundPolishJapaneseEntry : foundPolishJapaneseEntryGroupList) {
+							errorGroupIds.append(currentFoundPolishJapaneseEntry.getId() + ".");								
+						}
+						
+						if (alreadyValidateErrorResultGroupIds.contains(errorGroupIds.toString()) == false) {
+							
+							alreadyValidateErrorResultGroupIds.add(errorGroupIds.toString());
+							
+							System.out.println("Błąd walidacji dla: \n");
+							
+							for (PolishJapaneseEntry currentFoundPolishJapaneseEntry : foundPolishJapaneseEntryGroupList) {
+								
+								int errorId = currentFoundPolishJapaneseEntry.getId();
+								String errorKanji = currentFoundPolishJapaneseEntry.getKanji();
+								String errorKana = currentFoundPolishJapaneseEntry.getKanaList().get(0);
+								String errorDictionaryEntryType = currentFoundPolishJapaneseEntry.getDictionaryEntryTypeList().toString();
+								String errorAttributeList = toAttributeListString(currentFoundPolishJapaneseEntry.getAttributeList());
+								String errorTranslate = currentFoundPolishJapaneseEntry.getTranslates().toString();
+								String errorInfo = currentFoundPolishJapaneseEntry.getInfo();
+								String errorPrefix = currentFoundPolishJapaneseEntry.getPrefixKana() + "-" + currentFoundPolishJapaneseEntry.getPrefixRomaji();
+								
+								System.out.println("id: " + errorId);
+								System.out.println("dictionaryEntryType: " + errorDictionaryEntryType);
+								System.out.println("attributeList: " + errorAttributeList);
+								System.out.println("prefix: " + errorPrefix);
+								System.out.println("kanji: " + errorKanji);
+								System.out.println("kana: " + errorKana);
+								System.out.println("translate: " + errorTranslate);
+								System.out.println("info: " + errorInfo);
+								
+								System.out.println("---\n");
+							}
+						}
+						
+					}					
+				}
+			}
+		}	
+		
+		if (validateResult == false) { // jesli jest blad walidacji
+			
+			throw new DictionaryException("Error");
+		}		
+	}
+	
+	private static boolean isMultiGroup(List<GroupEntry> groupEntryList) {
+		
+		Set<Integer> uniqueGroupIds = new HashSet<Integer>();
+		
+		for (GroupEntry groupEntry : groupEntryList) {
+			uniqueGroupIds.add(groupEntry.getGroup().getId());
+		}
+		
+		if (uniqueGroupIds.size() == 1) {			
+			return false;
+			
+		} else {
+			return true;
+		}
+	}
+	
+	private static PolishJapaneseEntry findPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries, 
+			String findKanji, String findKana) {
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+						
+			String kanji = polishJapaneseEntry.getKanji();
+			String kana = polishJapaneseEntry.getKanaList().get(0);
+			
+			if (kanji == null || kanji.equals("-") == true) {
+				kanji = "$$$NULL$$$";
+			}
+
+			if (findKanji == null || findKanji.equals("-") == true) {
+				findKanji = "$$$NULL$$$";
+			}
+			
+			if (kanji.equals(findKanji) == true && kana.equals(findKana) == true) {
+				return polishJapaneseEntry;
+			}
+		}
+		
+		return null;
+	}
+	
+	private static String toAttributeListString(AttributeList attributeList) {
+		
+		StringBuffer sb = new StringBuffer();
+		
+		List<Attribute> attributeListList = attributeList.getAttributeList();
+		
+		for (Attribute attribute : attributeListList) {
+			
+			if (sb.length() > 0) {
+				sb.append(", ");
+			}
+			
+			sb.append(attribute.getAttributeType());
+			
+			if (attribute.getAttributeValue() != null) {
+				sb.append(": " + attribute.getAttributeValue().toString());
+			}
+		}
+		
+		return sb.toString();
 	}
 }

@@ -13,7 +13,7 @@ import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 
-public class CompleteJMEDictGroup {
+public class CheckJMEDictGroup {
 
 	public static void main(String[] args) throws Exception {
 		

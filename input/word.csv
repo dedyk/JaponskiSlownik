@@ -798,7 +798,7 @@ Genki 2-13",,五日,いつか,,itsuka,piąty,dzień miesiąca,,"670
 303,WORD_NOUN,,HIRAGANA,"Genki 1-4
 Genki 2-13",,六日,むいか,,muika,szósty,dzień miesiąca,,1018
 304,WORD_NOUN,,HIRAGANA,"Genki 1-4
-Genki 2-13",,七日,なのか,,nanoka,siódmy,dzień miesiąca,,1019
+Genki 2-13",,七日,なのか,,nanoka,siódmy,dzień miesiąca,NO_TYPE_CHECK,1019
 305,WORD_NOUN,,HIRAGANA,"Genki 1-4
 Genki 2-13",,八日,ようか,,youka,ósmy,dzień miesiąca,,1020
 306,WORD_NOUN,,HIRAGANA,"Genki 1-4
@@ -827,18 +827,18 @@ Genki 2-13",,十日,とおか,,tooka,dziesiąty,dzień miesiąca,,1022
 327,WORD_NOUN,,HIRAGANA,Genki 1-4,,三十日,さんじゅうにち,,sanjuunichi,trzydziesty,dzień miesiąca,,16645
 328,WORD_NOUN,,HIRAGANA,Genki 1-4,,三十一日,さんじゅういちにち,,sanjuuichinichi,trzydziesty pierwszy,dzień miesiąca,,
 329,WORD_NOUN,,HIRAGANA,"Genki 1-4
-Genki kanji 1-4",,一月,いちがつ,,ichigatsu,styczeń,,,11050
-330,WORD_NOUN,,HIRAGANA,Genki 1-4,,二月,にがつ,,nigatsu,luty,,,
-331,WORD_NOUN,,HIRAGANA,Genki 1-4,,三月,さんがつ,,sangatsu,marzec,,,
+Genki kanji 1-4",,一月,いちがつ,,ichigatsu,styczeń,,NO_TYPE_CHECK,11050
+330,WORD_NOUN,,HIRAGANA,Genki 1-4,,二月,にがつ,,nigatsu,luty,,NO_TYPE_CHECK,
+331,WORD_NOUN,,HIRAGANA,Genki 1-4,,三月,さんがつ,,sangatsu,marzec,,NO_TYPE_CHECK,
 332,WORD_NOUN,,HIRAGANA,"Genki 1-4
-Genki kanji 1-3",,四月,しがつ,,shigatsu,kwiecień,,,
+Genki kanji 1-3",,四月,しがつ,,shigatsu,kwiecień,,NO_TYPE_CHECK,
 333,WORD_ADVERBIAL_NOUN,,HIRAGANA,Genki 1-4,,五月,ごがつ,,gogatsu,maj,,,
-334,WORD_NOUN,,HIRAGANA,Genki 1-4,,六月,ろくがつ,,rokugatsu,czerwiec,,,
-335,WORD_NOUN,,HIRAGANA,Genki 1-4,,七月,しちがつ,,shichigatsu,lipiec,,,
-336,WORD_NOUN,,HIRAGANA,Genki 1-4,,八月,はちがつ,,hachigatsu,sierpień,,,
-337,WORD_NOUN,,HIRAGANA,Genki 1-4,,九月,くがつ,,kugatsu,wrzesień,,,
-338,WORD_NOUN,,HIRAGANA,Genki 1-4,,十月,じゅうがつ,,juugatsu,październik,,,
-339,WORD_NOUN,,HIRAGANA,Genki 1-4,,十一月,じゅういちがつ,,juuichigatsu,listopad,,,
+334,WORD_NOUN,,HIRAGANA,Genki 1-4,,六月,ろくがつ,,rokugatsu,czerwiec,,NO_TYPE_CHECK,
+335,WORD_NOUN,,HIRAGANA,Genki 1-4,,七月,しちがつ,,shichigatsu,lipiec,,NO_TYPE_CHECK,
+336,WORD_NOUN,,HIRAGANA,Genki 1-4,,八月,はちがつ,,hachigatsu,sierpień,,NO_TYPE_CHECK,
+337,WORD_NOUN,,HIRAGANA,Genki 1-4,,九月,くがつ,,kugatsu,wrzesień,,NO_TYPE_CHECK,
+338,WORD_NOUN,,HIRAGANA,Genki 1-4,,十月,じゅうがつ,,juugatsu,październik,,NO_TYPE_CHECK,
+339,WORD_NOUN,,HIRAGANA,Genki 1-4,,十一月,じゅういちがつ,,juuichigatsu,listopad,,NO_TYPE_CHECK,
 340,WORD_ADVERBIAL_NOUN,,HIRAGANA,Genki 1-4,,十二月,じゅうにがつ,,juunigatsu,grudzień,,,
 341,"WORD_TEMPORAL_NOUN
 WORD_ADVERBIAL_NOUN",,HIRAGANA,"Genki 1-4
@@ -2964,7 +2964,7 @@ Genki 2-13",,五日,いつか,,itsuka,pięć dni,,,"302
 1018,WORD_NOUN,,HIRAGANA,"Genki 1-4
 Genki 2-13",,六日,むいか,,muika,sześć dni,,,303
 1019,WORD_NOUN,,HIRAGANA,"Genki 1-4
-Genki 2-13",,七日,なのか,,nanoka,siedem dni,,,304
+Genki 2-13",,七日,なのか,,nanoka,siedem dni,,NO_TYPE_CHECK,304
 1020,WORD_NOUN,,HIRAGANA,"Genki 1-4
 Genki 2-13",,八日,ようか,,youka,osiem dni,,,305
 1021,WORD_NOUN,,HIRAGANA,"Genki 1-4
@@ -37107,7 +37107,7 @@ równowaga",,,
 15884,WORD_NOUN,,HIRAGANA,,,釣合い,つりあい,,tsuriai,"balans
 równowaga",,,
 15885,WORD_NOUN,,HIRAGANA,,,養父,ようふ,,youfu,przybrany ojciec,,,
-15886,WORD_NOUN,,HIRAGANA,,,９月,くがつ,,kugatsu,wrzesień,,,
+15886,WORD_NOUN,,HIRAGANA,,,９月,くがつ,,kugatsu,wrzesień,,NO_TYPE_CHECK,
 15887,WORD_NOUN,,KATAKANA,,,-,アンケート,,ankeeto,"kwestionariusz
 ankieta
 formularz",,,
@@ -42706,7 +42706,7 @@ pielęgnacja
 opieka
 dbanie
 troszczenie się",,,
-17865,WORD_NOUN,,HIRAGANA,Genki 1-4,,１１月,じゅういちがつ,,juuichigatsu,listopad,,,
+17865,WORD_NOUN,,HIRAGANA,Genki 1-4,,１１月,じゅういちがつ,,juuichigatsu,listopad,,NO_TYPE_CHECK,
 17866,WORD_NOUN,,KATAKANA,,,-,ゴッドファーザー,,goddo faazaa,ojciec chrzestny,,,
 17867,WORD_NOUN,,HIRAGANA,,,後部,こうぶ,,koubu,"tył
 rufa",,,
@@ -47576,7 +47576,7 @@ zarozumialstwo
 duma",,,
 19492,WORD_NOUN,,KATAKANA,,,-,テーマパーク,,teema paaku,"park rozrywki
 park tematyczny",ang: theme park,,
-19493,WORD_NOUN,,HIRAGANA,,,１０月,じゅうがつ,,juugatsu,październik,,,
+19493,WORD_NOUN,,HIRAGANA,,,１０月,じゅうがつ,,juugatsu,październik,,NO_TYPE_CHECK,
 19494,WORD_NOUN,,KATAKANA,,,-,オンス,,onsu,uncja,28.35g,,
 19495,WORD_NOUN,,KATAKANA,,,-,ガール,,gaaru,dziewczyna,ang: girl,,
 19496,WORD_NOUN,,KATAKANA,,,-,ドラフト,,dorafuto,"szkic
@@ -58593,7 +58593,7 @@ eliminacyjne zawody
 eliminacyjny konkurs",,,
 23122,WORD_NOUN,,HIRAGANA,,,犠打,ぎだ,,gida,ang: sacrifice fly,"w baseballu: element statystyczny opisujący odbicie piłki przez pałkarza, najczęściej wysoko na zapole (outfield), po którym zostaje on wyeliminowany, ale jego zagranie umożliwia biegaczowi zdobycie punktów",,
 23123,WORD_NOUN,,HIRAGANA,,,犠飛,ぎひ,,gihi,ang: sacrifice fly,"w baseballu: element statystyczny opisujący odbicie piłki przez pałkarza, najczęściej wysoko na zapole (outfield), po którym zostaje on wyeliminowany, ale jego zagranie umożliwia biegaczowi zdobycie punktów",,
-23124,WORD_NOUN,,HIRAGANA,,,１月,いちがつ,,ichigatsu,styczeń,,,
+23124,WORD_NOUN,,HIRAGANA,,,１月,いちがつ,,ichigatsu,styczeń,,NO_TYPE_CHECK,
 23125,WORD_NOUN,,KATAKANA,,,-,カロリー,,karorii,"kaloria
 kalorie
 kaloryczny",,,
@@ -62156,7 +62156,7 @@ WORD_NOUN",,HIRAGANA,,,好都合,こうつごう,,koutsugou,"wygodny
 dogodny
 korzystny",,,
 24443,WORD_NOUN,,HIRAGANA,,,水晶,すいしょう,,suishou,kryształ,,,
-24444,WORD_NOUN,,HIRAGANA,,,４月,しがつ,,shigatsu,kwiecień,,,
+24444,WORD_NOUN,,HIRAGANA,,,４月,しがつ,,shigatsu,kwiecień,,NO_TYPE_CHECK,
 24445,WORD_NOUN,,HIRAGANA,,,例会,れいかい,,reikai,regularne spotkanie,,,
 24446,WORD_CONJUNCTION,,HIRAGANA,,,兼,けん,,ken,"z czymś
 łączony z
