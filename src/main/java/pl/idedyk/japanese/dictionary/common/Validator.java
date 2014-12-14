@@ -229,6 +229,7 @@ public class Validator {
 		
 		// uzyc nowego edict'a
 		// skasowac NO_TYPE_CHECK i sprawdzic wyniki
+		// walidacja duplikatow tlumaczen
 
 		if (jmedict != null) {
 
