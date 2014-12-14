@@ -5,6 +5,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import pl.idedyk.japanese.dictionary.api.dto.Attribute;
+import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
@@ -64,10 +66,10 @@ public class CompleteJMEDictGroup {
 				String firstTranslate = null;
 				String firstInfo = null;
 				String firstDictionaryEntryType = null;
+				String firstAttributeList = null;
+				String firstPrefix = null;
 				
 				int fixme = 1;
-				// sprawdzic atrybuty, np. suffiks
-				// prefiks
 				// usunac EDICT_TRANSLATE_INFO_GROUP_DIFF i sprawdzic
 				
 				boolean localValidationError = false;
@@ -77,18 +79,24 @@ public class CompleteJMEDictGroup {
 					String currentFoundTranslate = currentFoundPolishJapaneseEntry.getTranslates().toString();
 					String currentFoundInfo = currentFoundPolishJapaneseEntry.getInfo();
 					String currentFoundDictionaryEntryType = currentFoundPolishJapaneseEntry.getDictionaryEntryTypeList().toString();
+					String currentFoundAttributeList = toAttributeListString(currentFoundPolishJapaneseEntry.getAttributeList());
+					String currentFoundPrefix = currentFoundPolishJapaneseEntry.getPrefixKana() + "-" + currentFoundPolishJapaneseEntry.getPrefixRomaji();			
 					
 					if (firstTranslate == null) {
 						
 						firstTranslate = currentFoundTranslate;						
 						firstInfo = currentFoundInfo;
 						firstDictionaryEntryType = currentFoundDictionaryEntryType;
+						firstAttributeList = currentFoundAttributeList;
+						firstPrefix = currentFoundPrefix;
 						
 					} else { // sprawdzenie
 												
 						if (	currentFoundTranslate.equals(firstTranslate) == false ||
 								currentFoundInfo.equals(firstInfo) == false ||
-								currentFoundDictionaryEntryType.equals(firstDictionaryEntryType) == false) { 
+								currentFoundDictionaryEntryType.equals(firstDictionaryEntryType) == false ||
+								currentFoundAttributeList.equals(firstAttributeList) == false ||
+								currentFoundPrefix.equals(firstPrefix) == false) { 
 							
 							localValidationError = true;
 														
@@ -129,12 +137,16 @@ public class CompleteJMEDictGroup {
 								int errorId = currentFoundPolishJapaneseEntry.getId();
 								String errorKanji = currentFoundPolishJapaneseEntry.getKanji();
 								String errorKana = currentFoundPolishJapaneseEntry.getKanaList().get(0);
-								String dictionaryEntryType = currentFoundPolishJapaneseEntry.getDictionaryEntryTypeList().toString();
+								String errorDictionaryEntryType = currentFoundPolishJapaneseEntry.getDictionaryEntryTypeList().toString();
+								String errorAttributeList = toAttributeListString(currentFoundPolishJapaneseEntry.getAttributeList());
 								String errorTranslate = currentFoundPolishJapaneseEntry.getTranslates().toString();
 								String errorInfo = currentFoundPolishJapaneseEntry.getInfo();
+								String errorPrefix = currentFoundPolishJapaneseEntry.getPrefixKana() + "-" + currentFoundPolishJapaneseEntry.getPrefixRomaji();
 								
 								System.out.println("id: " + errorId);
-								System.out.println("dictionaryEntryType: " + dictionaryEntryType);
+								System.out.println("dictionaryEntryType: " + errorDictionaryEntryType);
+								System.out.println("attributeList: " + errorAttributeList);
+								System.out.println("prefix: " + errorPrefix);
 								System.out.println("kanji: " + errorKanji);
 								System.out.println("kana: " + errorKana);
 								System.out.println("translate: " + errorTranslate);
@@ -199,5 +211,27 @@ public class CompleteJMEDictGroup {
 		}
 		
 		return null;
+	}
+	
+	private static String toAttributeListString(AttributeList attributeList) {
+		
+		StringBuffer sb = new StringBuffer();
+		
+		List<Attribute> attributeListList = attributeList.getAttributeList();
+		
+		for (Attribute attribute : attributeListList) {
+			
+			if (sb.length() > 0) {
+				sb.append(", ");
+			}
+			
+			sb.append(attribute.getAttributeType());
+			
+			if (attribute.getAttributeValue() != null) {
+				sb.append(": " + attribute.getAttributeValue().toString());
+			}
+		}
+		
+		return sb.toString();
 	}
 }

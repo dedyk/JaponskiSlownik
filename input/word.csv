@@ -3742,8 +3742,8 @@ sam
 siebie
 się",,,
 1353,WORD_ADVERB,,HIRAGANA,Genki kanji 1-6,,先に,さきに,,sakini,na przód,,,
-1354,WORD_VERB_RU,,HIRAGANA,"Genki kanji 1-6
-Genki dodatkowe 2-15",,生まれる,うまれる,,umareru,"rodzić się
+1354,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,"Genki kanji 1-6
+Genki dodatkowe 2-15",が,生まれる,うまれる,ga,umareru,"rodzić się
 przyjść na świat",,,
 1355,WORD_NOUN,,HIRAGANA,"Genki kanji 1-6
 Genki 2-18",,外,そと,,soto,"na zewnątrz
@@ -4142,7 +4142,7 @@ niebiosa
 nieboskłon",,,"7791
 7792
 8738"
-1501,WORD_VERB_U,,HIRAGANA,Genki kanji 2-13,,空く,あく,,aku,"otwiera się
+1501,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,Genki kanji 2-13,が,空く,あく,ga,aku,"otwiera się
 zaczynać się
 zwalniać się
 opróżniać się
@@ -4651,7 +4651,7 @@ gościć
 dawać schronienie
 dać nocleg
 przenocować",np. w hotelu,,
-1769,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,,留める,とめる,,tomeru,"zatrzymać
+1769,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,を,留める,とめる,o,tomeru,"zatrzymać
 zatrzymywać (np. samochód)
 wstrzymać ruch
 hamować
@@ -5815,7 +5815,7 @@ odjazd
 start",,,
 2261,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,表紙,ひょうし,,hyoushi,"strona tytułowa
 okładka",,,
-2262,WORD_VERB_U,,HIRAGANA,"Genki kanji 2-17
+2262,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,"Genki kanji 2-17
 Genki dodatkowe 2-23",,表す,あらわす,,arawasu,"wyrażać
 wypowiadać
 pokazywać
@@ -7200,7 +7200,7 @@ monarchia",,,
 2884,WORD_NOUN,,HIRAGANA,,,王宮,おうきゅう,,oukyuu,pałac królewski,,,
 2885,WORD_NOUN,,HIRAGANA,,,葉末,はずえ,,hazue,koniuszek liścia,,,
 2886,WORD_NOUN,,HIRAGANA,,,葉緑素,ようりょくそ,,youryokuso,chlorofil,,,
-2887,WORD_NOUN,,HIRAGANA,,,側,かわ,,kawa,strona,czegoś,,"385
+2887,WORD_NOUN,SUFFIX,HIRAGANA,,,側,かわ,,kawa,strona,czegoś,,"385
 2038"
 2888,WORD_NOUN,,HIRAGANA,,,側面,そくめん,,sokumen,"strona
 bok",,,
@@ -7977,7 +7977,7 @@ być nieśmiałym",,,
 3231,WORD_VERB_RU,,HIRAGANA,,,恥じる,はじる,,hajiru,"wstydzić się
 czuć się zawstydzonym
 czuć się zhańbionym",,,
-3232,WORD_VERB_RU,,HIRAGANA,,,務める,つとめる,,tsutomeru,"pracować dla
+3232,WORD_VERB_RU,,HIRAGANA,,に,務める,つとめる,ni,tsutomeru,"pracować dla
 być zatrudnionym
 mieć posadę
 służyć",niefizycznie,,
@@ -12069,7 +12069,7 @@ osoba",,,
 ranga",,,
 4956,WORD_ADJECTIVE_NA,,HIRAGANA,,,格段,かくだん,,kakudan,"specjalny
 wyjątkowy",,,
-4957,WORD_VERB_RU,,HIRAGANA,,,視る,みる,,miru,"patrzeć
+4957,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,を,視る,みる,o,miru,"patrzeć
 widzieć
 oglądać
 przeglądać
@@ -12434,7 +12434,7 @@ lekceważyć",kogoś,,
 zdrzemną się",,,
 5089,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-21,に,連絡する,れんらくする,ni,renraku suru,kontaktować się z,,,
 5090,WORD_ADVERB,,HIRAGANA,Genki 2-21,,間に,あいだに,,aida ni,w czasie,,,
-5091,WORD_ADVERBIAL_NOUN,,HIRAGANA,Genki 2-21,,頃,ころ,,koro,"czas
+5091,WORD_ADVERBIAL_NOUN,SUFFIX,HIRAGANA,Genki 2-21,,頃,ころ,,koro,"czas
 około
 mniej więcej",to samo co toki,,235
 5092,WORD_ADVERB,,HIRAGANA,Genki 2-21,,兎に角,とにかく,,tonikaku,"w każdym razie
@@ -12936,7 +12936,7 @@ tłumić
 5305,WORD_NOUN,,HIRAGANA,,,在,ざい,,zai,"przedmieście
 wioska
 być usytuowanym",,,
-5306,WORD_VERB_U,,HIRAGANA,,,在る,ある,,aru,"być
+5306,WORD_VERB_U,,HIRAGANA,,が,在る,ある,ga,aru,"być
 istnieć
 mieć",do rzeczy martwych,,956
 5307,WORD_NOUN,,HIRAGANA,,,不在,ふざい,,fuzai,nieobecność,,,
@@ -13331,7 +13331,7 @@ kalkulować
 mierzyć czas
 przypuszczać
 wnioskować",,,
-5467,WORD_VERB_U,,HIRAGANA,,,聴く,きく,,kiku,"słuchać
+5467,WORD_VERB_U,,HIRAGANA,,を,聴く,きく,o,kiku,"słuchać
 słyszeć
 nasłuchiwać
 być posłusznym",,,
@@ -13473,7 +13473,7 @@ skrucha",,,
 5527,WORD_VERB_U,,HIRAGANA,,,請う,こう,,kou,"prosić
 życzyć sobie
 zapraszać",,,11466
-5528,WORD_VERB_RU,,HIRAGANA,,,請ける,うける,,ukeru,"brać
+5528,WORD_VERB_RU,,HIRAGANA,,を,請ける,うける,o,ukeru,"brać
 przyjmować
 akceptować
 zdobywać
@@ -13801,7 +13801,7 @@ przykro (z powodu sprawienia kłopotu)",,,
 5660,WORD_VERB_IRREGULAR,,HIRAGANA,,,了する,りょうする,,ryou suru,"kończyć
 rozumieć
 pojmować",,,
-5661,WORD_VERB_U,,HIRAGANA,,,了わる,おわる,,owaru,"kończyć się
+5661,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,が,了わる,おわる,ga,owaru,"kończyć się
 skończyć się
 być zakończonym",,,
 5662,WORD_EMPTY,SUFFIX,HIRAGANA,,,氏,し,,shi,"nazwisko
@@ -14715,7 +14715,7 @@ regulamin towarzystwa",,,
 6031,WORD_ADJECTIVE_NA,,HIRAGANA,,,変則,へんそく,,hensoku,nieregularność,,,
 6032,WORD_VERB_U,,HIRAGANA,,,遣わす,つかわす,,tsukawasu,"delegować
 wysyłać",,,
-6033,WORD_VERB_U,,HIRAGANA,,,遣う,つかう,,tsukau,"używać
+6033,WORD_VERB_U,,HIRAGANA,,を,遣う,つかう,o,tsukau,"używać
 korzystać
 spożywać
 stosować (coś)
@@ -14723,8 +14723,7 @@ posługiwać się (czymś)
 wydawać (pieniądze)
 marnować",,,
 6034,"WORD_NOUN
-WORD_ADJECTIVE_F","PREFIX
-SUFFIX",HIRAGANA,,,豪,ごう,,gou,"olbrzymi
+WORD_ADJECTIVE_F",,HIRAGANA,,,豪,ごう,,gou,"olbrzymi
 potężny
 mocny
 silny",,,
@@ -16176,7 +16175,7 @@ istnieć",,,
 6661,WORD_VERB_U,,HIRAGANA,,,生かす,いかす,,ikasu,"ożywiać
 utrzymywać przy życiu
 wykorzystywać (zdolności)",,,
-6662,WORD_VERB_U,,HIRAGANA,,,生む,うむ,,umu,"rodzić
+6662,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,を,生む,うむ,o,umu,"rodzić
 urodzić
 wytworzyć
 wydać (na świat)",,,
@@ -16430,7 +16429,7 @@ zatrzymać się (w jakimś miejscu, np. na noc)
 zostać (w miejscu)
 być ograniczony do
 być limitowany",,,6769
-6769,WORD_VERB_U,,HIRAGANA,,,留まる,とまる,,tomaru,"zatrzymać się
+6769,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,が,留まる,とまる,ga,tomaru,"zatrzymać się
 zatrzymywać się
 nocować
 kotwiczyć
@@ -16999,7 +16998,7 @@ udział
 przydział
 ułamek",,NO_TYPE_CHECK,"7031
 12044"
-7033,WORD_VERB_U,,HIRAGANA,,,分かる,わかる,,wakaru,"rozumieć
+7033,WORD_VERB_U,,HIRAGANA,,が,分かる,わかる,ga,wakaru,"rozumieć
 wiedzieć
 pojmować
 znać
@@ -17338,7 +17337,7 @@ silny punkt",,,
 7172,WORD_NOUN,,HIRAGANA,,,音節,おんせつ,,onsetsu,sylaba,,,
 7173,WORD_NOUN,,HIRAGANA,,,週日,しゅうじつ,,shuujitsu,dzień powszedni,,,
 7174,WORD_NOUN,,HIRAGANA,,,週刊新聞,しゅうかんしんぶん,,shuukan shinbun,tygodnik,,,
-7175,WORD_VERB_RU,,HIRAGANA,,,承ける,うける,,ukeru,"brać
+7175,WORD_VERB_RU,,HIRAGANA,,を,承ける,うける,o,ukeru,"brać
 przyjmować
 akceptować
 zdobywać
@@ -17905,7 +17904,7 @@ użycie",rzeczy,,
 7401,WORD_NOUN,,HIRAGANA,,,必需品,ひつじゅひん,,hitsujuhin,niezbędne rzeczy,,,
 7402,WORD_NOUN,,HIRAGANA,,,需給,じゅきゅう,,jukyuu,pobyt i podaż,,,
 7403,WORD_NOUN,,HIRAGANA,,,暦,こよみ,,koyomi,kalendarz,,,
-7404,WORD_VERB_U,,HIRAGANA,,,還る,かえる,,kaeru,"wracać
+7404,WORD_VERB_U,,HIRAGANA,,に,還る,かえる,ni,kaeru,"wracać
 iść (do domu)","cel, ni ~",,
 7405,WORD_VERB_U,,HIRAGANA,,,宣う,のたまう,,notamau,"proklamować
 ogłaszać
@@ -18369,7 +18368,7 @@ opróżniać
 zwolnić (miejsce)
 świtać
 rozjaśniać się",,,
-7608,WORD_VERB_U,,HIRAGANA,,,明く,あく,,aku,"otwiera się
+7608,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,が,明く,あく,ga,aku,"otwiera się
 zaczynać się
 zwalniać się
 opróżniać się
@@ -18495,7 +18494,7 @@ sjesta",,,
 lewica",,,
 7663,WORD_NOUN,,HIRAGANA,,,左党,さとう,,satou,"opozycja
 lewicowa partia",,,
-7664,WORD_VERB_U,,HIRAGANA,,,行く,ゆく,,yuku,"iść
+7664,WORD_VERB_U,,HIRAGANA,,に,行く,ゆく,ni,yuku,"iść
 zmierzać ku
 udać się","cel, ni ~",,"242
 243"
@@ -18911,7 +18910,7 @@ hojny",,,
 stać się nieuważnym",,,
 7847,WORD_VERB_RU,,HIRAGANA,,,緩める,ゆるめる,,yurumeru,rozluźniać,,,
 7848,WORD_ADJECTIVE_NA,,HIRAGANA,,,緩やか,ゆるやか,,yuruyaka,łagodny,,,
-7849,WORD_VERB_U,,HIRAGANA,,,遭う,あう,,au,"spotykać (osoba to, spotkanie zaplanowane, kiedy mowa o osobie, której status jest wyższy od statusu mówiącego, wtedy lepiej jest używać bardziej uprzejmego zwrotu: ome ni kakaru)
+7849,WORD_VERB_U,,HIRAGANA,,と,遭う,あう,to,au,"spotykać (osoba to, spotkanie zaplanowane, kiedy mowa o osobie, której status jest wyższy od statusu mówiącego, wtedy lepiej jest używać bardziej uprzejmego zwrotu: ome ni kakaru)
 widzieć osobę
 napotkać
 napotykać
@@ -19337,7 +19336,7 @@ frakcja",,,
 7983,WORD_VERB_RU,,HIRAGANA,,,据える,すえる,,sueru,"kłaść
 umieszczać
 ustawiać",,,
-7984,WORD_VERB_U,,HIRAGANA,,,据わる,すわる,,suwaru,"siadać
+7984,WORD_VERB_U,,HIRAGANA,,に,据わる,すわる,ni,suwaru,"siadać
 siedzieć
 zajmować miejsce
 być ustawionym",na miejsce,,
@@ -19550,7 +19549,7 @@ kończyć się",,,
 8043,WORD_VERB_RU,,HIRAGANA,,,鋳る,いる,,iru,"odlewać
 robić odlew
 bić (pieniądze)",,,369
-8044,WORD_VERB_RU,,HIRAGANA,,,享ける,うける,,ukeru,"brać
+8044,WORD_VERB_RU,,HIRAGANA,,を,享ける,うける,o,ukeru,"brać
 przyjmować
 akceptować
 zdobywać
@@ -19724,7 +19723,7 @@ zanudzać",,,
 8100,WORD_VERB_RU,,HIRAGANA,,,飽きる,あきる,,akiru,"znudzić się
 stracić zainteresowanie
 uprzykrzyć sobie",,,
-8101,WORD_VERB_U,,HIRAGANA,,,顕す,あらわす,,arawasu,"wyrażać
+8101,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,顕す,あらわす,,arawasu,"wyrażać
 wypowiadać
 pokazywać
 przedstawiać
@@ -19734,7 +19733,7 @@ odsłaniać
 odkrywać
 objawiać
 rozjaśniać",np. opinię,,
-8102,WORD_VERB_RU,,HIRAGANA,,,顕れる,あらわれる,,arawareru,"pojawić się
+8102,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,顕れる,あらわれる,,arawareru,"pojawić się
 pojawiać się
 ukazywać się
 ukazać się
@@ -20056,7 +20055,7 @@ przykucać",,,
 8195,WORD_NOUN,,HIRAGANA,,,廊,ろう,,rou,"korytarz
 hall
 wieża",,,
-8196,WORD_VERB_RU,,HIRAGANA,,,扶ける,たすける,,tasukeru,"pomagać
+8196,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,,扶ける,たすける,,tasukeru,"pomagać
 ratować
 ocalić
 przynieść ulgę
@@ -20624,7 +20623,7 @@ pływać",,,
 8371,WORD_NOUN,,HIRAGANA,,,諾,だく,,daku,zgoda,,,
 8372,WORD_NOUN,,HIRAGANA,,,賊,ぞく,,zoku,"buntownik
 złodziej",,,
-8373,WORD_VERB_U,,HIRAGANA,,,昇る,のぼる,,noboru,"wspinać się
+8373,WORD_VERB_U,,HIRAGANA,,に,昇る,のぼる,ni,noboru,"wspinać się
 wnosić się
 iść do góry
 piąć się
@@ -25483,7 +25482,7 @@ doktryna",,,
 pochylenie",,,
 10678,WORD_PRONOUN,,HIRAGANA,,,彼奴,あいつ,,aitsu,"on
 ona",bardzo nieformalne,,
-10679,WORD_VERB_U,,HIRAGANA,,を,汚す,けがす,o,kegasu,"pobrudzić się
+10679,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,を,汚す,けがす,o,kegasu,"pobrudzić się
 brudzić
 poplamić
 pomazać
@@ -25960,7 +25959,7 @@ linijka",,,
 linijka",,,
 10863,WORD_NOUN,,HIRAGANA,,,物指し,ものさし,,monosashi,"linia
 linijka",,,
-10864,WORD_VERB_U,,HIRAGANA,,,上る,のぼる,,noboru,"wspinać się
+10864,WORD_VERB_U,,HIRAGANA,,に,上る,のぼる,ni,noboru,"wspinać się
 wnosić się
 iść do góry
 piąć się
@@ -26759,7 +26758,7 @@ kiedy",,,"1976
 19989"
 11235,WORD_EXPRESSION,,HIRAGANA,,,行けない,いけない,,ikenai,"nie wolno
 niewłaściwy",,,
-11236,WORD_NOUN,,HIRAGANA,,,行き,いき,,iki,"idący
+11236,WORD_NOUN,SUFFIX,HIRAGANA,,,行き,いき,,iki,"idący
 jadący
 zobowiązany",,,12154
 11237,WORD_VERB_U,,HIRAGANA,,,了う,しまう,,shimau,"włożyć
@@ -36560,7 +36559,7 @@ wykrzywiać
 być skrzywiony
 być krzywy",,,"15703
 15704"
-15706,WORD_VERB_U,,HIRAGANA,,,現わす,あらわす,,arawasu,"wyrażać
+15706,WORD_VERB_U,VERB_TRANSITIVITY,HIRAGANA,,,現わす,あらわす,,arawasu,"wyrażać
 wypowiadać
 pokazywać
 przedstawiać
@@ -38599,7 +38598,7 @@ impuls",,,
 pewien
 niejaki
 jakiś",,,
-16444,WORD_VERB_U,,HIRAGANA,,,戴く,いただく,,itadaku,"[modestywna forma od taberu, nomu, morau]",,,
+16444,WORD_VERB_U,VERB_KEIGO_LOW,HIRAGANA,,,戴く,いただく,,itadaku,"[modestywna forma od taberu, nomu, morau]",,,
 16445,WORD_NOUN,,HIRAGANA,,,水産庁,すいさんちょう,,suisanchou,Agencja ds. rybołówstwa,,,
 16446,WORD_NOUN,,HIRAGANA,,,温存,おんぞん,,onzon,"zachowanie
 utrzymanie",,,
@@ -40686,7 +40685,7 @@ przesyłka",,,
 szanowanie
 uważanie",,,
 17156,WORD_NOUN,,HIRAGANA,,,男前,おとこまえ,,otokomae,przystojny mężczyzna,,,
-17157,WORD_VERB_RU,,HIRAGANA,,,着ける,つける,,tsukeru,"łączyć
+17157,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,を,着ける,つける,o,tsukeru,"łączyć
 przyczepiać
 przyklejać
 dodawać
@@ -41234,7 +41233,7 @@ zbankrutowana firma",,,
 chwytać
 zebrać
 reagować na",,,
-17354,WORD_VERB_RU,,HIRAGANA,,,現われる,あらわれる,,arawareru,"pojawić się
+17354,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,現われる,あらわれる,,arawareru,"pojawić się
 pojawiać się
 ukazywać się
 ukazać się
@@ -42023,7 +42022,7 @@ fabryczny",,,
 17626,"WORD_NOUN
 WORD_ADVERB",,HIRAGANA,,,-,ずきずき,,zukizuki,"pulsujący ból
 rozdzielający serce",,,
-17627,WORD_VERB_U,,HIRAGANA,,,反す,かえす,,kaesu,"zwrócić
+17627,WORD_VERB_U,,HIRAGANA,,を,反す,かえす,o,kaesu,"zwrócić
 zwracać
 oddawać",osoba ni rzecz,,
 17628,WORD_NOUN,,HIRAGANA,,,品,ひん,,hin,"elegancja
@@ -50724,7 +50723,7 @@ czczy
 bezpodstawny
 bezzasadny
 nieuzasadniony",,,
-20467,WORD_VERB_RU,,HIRAGANA,,,表れる,あらわれる,,arawareru,"pojawić się
+20467,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,表れる,あらわれる,,arawareru,"pojawić się
 pojawiać się
 ukazywać się
 ukazać się
@@ -51027,7 +51026,7 @@ przesiadka do innego pociągu
 spójnik (skrót)
 koniunkcja (skrót)",,,
 20548,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,気を付ける,きをつける,,ki o tsukeru,"być ostrożny
+WORD_EXPRESSION",,HIRAGANA,,に,気を付ける,きをつける,ni,ki o tsukeru,"być ostrożny
 być uważny
 być dbały
 zwracać uwagę
@@ -54005,7 +54004,7 @@ pragnąć",,,
 stać się zanieczyszczony",,,
 21575,WORD_NOUN,,HIRAGANA,,,物惜しみ,ものおしみ,,mono oshimi,"skąpstwo
 sknerstwo",,,
-21576,WORD_VERB_RU,,HIRAGANA,,,穢れる,けがれる,,kegareru,"być naruszony
+21576,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,,,穢れる,けがれる,,kegareru,"być naruszony
 być pogwałcony
 być zepsuty
 być pobrudzony
@@ -58830,7 +58829,7 @@ WORD_NOUN",,HIRAGANA,,,萎縮,いしゅく,,ishuku,"zanik
 atrofia
 kurczenie się
 skurcz",,,
-23214,WORD_VERB_U,,HIRAGANA,,,解る,わかる,,wakaru,"rozumieć
+23214,WORD_VERB_U,,HIRAGANA,,が,解る,わかる,ga,wakaru,"rozumieć
 wiedzieć
 pojmować
 znać
@@ -59440,7 +59439,7 @@ gotówka","ang: cache, cash",,
 doręczanie
 przekazywanie
 wręczanie",,,
-23459,WORD_VERB_IRREGULAR,,HIRAGANA,,,持って来る,もってくる,,motte kuru,"przynosić
+23459,WORD_VERB_IRREGULAR,,HIRAGANA,,を,持って来る,もってくる,o,motte kuru,"przynosić
 przynieść",,,
 23460,WORD_NOUN,,KATAKANA,,,-,ホアー,,hoaa,"dziwka
 kurwa
@@ -60314,7 +60313,7 @@ depozyt",,,
 23795,WORD_VERB_RU,,HIRAGANA,,,引き止める,ひきとめる,,hikitomeru,"powstrzymywać
 zatrzymywać
 hamować",,,
-23796,WORD_NOUN,,HIRAGANA,,,当たり,あたり,,atari,"trafić
+23796,WORD_NOUN,SUFFIX,HIRAGANA,,,当たり,あたり,,atari,"trafić
 trafienie
 sukces
 przypuszczenie
@@ -62369,15 +62368,15 @@ WORD_EXPRESSION",,HIRAGANA,,,御目に掛かる,おめにかかる,,ome ni kakar
 być rozpoznany (przez kogoś o wyższym statusie) (archaizm)
 być widoczny (archaizm)
 być zauważony (archaizm)",,,
-24522,WORD_VERB_U,,HIRAGANA,,,仰しゃる,おっしゃる,,ossharu,"[honoryfikatywna forma od iu]
+24522,WORD_VERB_U,VERB_KEIGO_HIGH,HIRAGANA,,,仰しゃる,おっしゃる,,ossharu,"[honoryfikatywna forma od iu]
 mówić (honoryfikatywnie)
 rozmawiać (honoryfikatywnie)
 dyskutować (honoryfikatywnie)",,,
-24523,WORD_VERB_U,,HIRAGANA,,,仰有る,おっしゃる,,ossharu,"[honoryfikatywna forma od iu]
+24523,WORD_VERB_U,VERB_KEIGO_HIGH,HIRAGANA,,,仰有る,おっしゃる,,ossharu,"[honoryfikatywna forma od iu]
 mówić (honoryfikatywnie)
 rozmawiać (honoryfikatywnie)
 dyskutować (honoryfikatywnie)",,,
-24524,WORD_VERB_U,,HIRAGANA,,,仰る,おっしゃる,,ossharu,"[honoryfikatywna forma od iu]
+24524,WORD_VERB_U,VERB_KEIGO_HIGH,HIRAGANA,,,仰る,おっしゃる,,ossharu,"[honoryfikatywna forma od iu]
 mówić (honoryfikatywnie)
 rozmawiać (honoryfikatywnie)
 dyskutować (honoryfikatywnie)",,,
@@ -62521,7 +62520,7 @@ Kraina buddy (buddyzm)
 Raj buddy (buddyzm)
 Czysta ziemia (buddyzm)
 raj",,,
-24585,WORD_VERB_U,,HIRAGANA,,,逢う,あう,,au,"spotykać (osoba to, spotkanie zaplanowane, kiedy mowa o osobie, której status jest wyższy od statusu mówiącego, wtedy lepiej jest używać bardziej uprzejmego zwrotu: ome ni kakaru)
+24585,WORD_VERB_U,,HIRAGANA,,と,逢う,あう,to,au,"spotykać (osoba to, spotkanie zaplanowane, kiedy mowa o osobie, której status jest wyższy od statusu mówiącego, wtedy lepiej jest używać bardziej uprzejmego zwrotu: ome ni kakaru)
 widzieć osobę
 napotkać
 napotykać
