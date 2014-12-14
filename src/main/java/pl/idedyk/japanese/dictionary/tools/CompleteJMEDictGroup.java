@@ -51,12 +51,18 @@ public class CompleteJMEDictGroup {
 					String groupEntryKanji = groupEntry.getKanji();
 					String groupEntryKana = groupEntry.getKana();
 					
-					PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntries, 
-							groupEntryKanji, groupEntryKana);
+					List<GroupEntry> groupEntryList2 = jmeNewDictionary.getGroupEntryList(groupEntryKanji, groupEntryKana);
 					
-					if (findPolishJapaneseEntry != null) {
-						foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
-					}					
+					if (isMultiGroup(groupEntryList2) == false) {
+						
+						PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntries, 
+								groupEntryKanji, groupEntryKana);
+						
+						if (findPolishJapaneseEntry != null) {
+							foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
+						}
+						
+					}
 				}
 			}
 			

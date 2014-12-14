@@ -148,6 +148,7 @@ public class JMENewDictionary {
 		private List<GroupEntry> groupEntryList = new ArrayList<JMENewDictionary.GroupEntry>();
 		
 		public Group(Integer id, JMEDictNewNativeEntry nativeEntry) {
+			this.id = id;
 			this.nativeEntry = nativeEntry;
 		}
 
