@@ -3513,7 +3513,7 @@ ofiarować",,,3218
 ostry koniec
 krawędź
 róg (ulicy)
-zakręt",,,
+zakręt",,,25045
 1239,WORD_VERB_U,,HIRAGANA,,,に気がつく,にきがつく,,niki ga tsuku,zauważyć,,,
 1240,WORD_NOUN,SUFFIX,HIRAGANA,,,美,び,,bi,"piękno
 piękność
@@ -9978,7 +9978,7 @@ gratis",,,
 niegrzeczny",,,
 4113,WORD_ADJECTIVE_I,,HIRAGANA,Genki kanji 2-20,,無い,ない,,nai,"nie być
 nie istnieć
-nie ma",forma przecząca czasownika aru,,
+nie ma",forma przecząca czasownika aru,,25047
 4114,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,払い戻し,はらいもどし,,haraimodoshi,zwrot,,,
 4115,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,分割払い,ぶんかつばらい,,bunkatsubarai,opłata w ratach,,,
 4116,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,好奇心,こうきしん,,koukishin,ciekawość,,,
@@ -14778,7 +14778,7 @@ odchodzić","honoryfikatywny odpowiednik czasownika shinu, używany wyłącznie 
 6048,WORD_VERB_U,,HIRAGANA,,,亡くする,なくする,,nakusuru,gubić,,,
 6049,WORD_ADJECTIVE_I,,HIRAGANA,,,亡い,ない,,nai,"zmarły
 martwy
-wymarły",,,
+wymarły",,,25047
 6050,WORD_VERB_RU,,HIRAGANA,,を,棄てる,すてる,o,suteru,"wyrzucać
 porzucać
 uprzątnąć
@@ -27234,7 +27234,8 @@ nadmiernie",,,
 11468,WORD_ADVERB,,HIRAGANA,,,無暗に,むやみに,,muyami ni,"bezmyślnie
 nadmiernie",,,
 11469,WORD_EMPTY,SUFFIX,HIRAGANA,,,内,ない,,nai,"wewnątrz
-w czasie",,,2836
+w czasie",,,"2836
+25047"
 11470,WORD_NOUN,,HIRAGANA,,,学校内,がっこうない,,gakkounai,na terenie szkoły,,,
 11471,WORD_NOUN,,HIRAGANA,,,時間内,じかんない,,jikannai,w określony czasie,,,
 11472,WORD_NOUN,,HIRAGANA,,,東京都内,とうきょうとない,,toukyou tonai,w obrębie miasta Tokio,,,
@@ -63718,13 +63719,15 @@ kwadrat
 goniec (w shogi)
 trzeci stopień (w japońskiej i chińskiej pentatonicznej skali)
 chińska konstelacja „róg” (jeden z 28 domów)
-jiao (jednostka monetarna, 1/10 juana)",,,
+jiao (jednostka monetarna, 1/10 juana)",,,1238
 25046,"WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,-,ざわざわ,,zawazawa,"hałaśliwie
 hałas
 odgłos rozmawiających ludzi",,,
 25047,WORD_EMPTY,,HIRAGANA,,,-,ない,,nai,"[tworzenie przeczeń]
-[sufiks stanowczości]",,,
+[sufiks stanowczości]",,,"4113
+6049
+11469"
 25048,WORD_NOUN,,KATAKANA,,,-,サリン,,sarin,sarin,gaz trujący,,
 25049,WORD_NOUN,,KATAKANA,,,-,ビュー,,byuu,widok,ang: view,,
 25050,WORD_NOUN,,KATAKANA,,,-,ワープロ,,waapuro,procesor tekstu,ang: word processor,,
@@ -63746,7 +63749,7 @@ protokół zmiany
 rejestracja modyfikacji",skrót,,
 25058,WORD_NOUN,,HIRAGANA,,,変更届け,へんこうとどけ,,henkoutodoke,"zawiadomienie o zmianie
 protokół zmiany
-rejestracja modyfikacji",,,
+rejestracja modyfikacji",skrót,,
 25059,WORD_NOUN,,HIRAGANA,,,将校,しょうこう,,shoukou,oficer,stopień wojskowy,,
 25060,WORD_ADJECTIVE_NA,,HIRAGANA,,,常識的,じょうしきてき,,joushikiteki,"zwyczajny
 powszechny
@@ -63756,3 +63759,28 @@ WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,満々,まんまん,,manman,"pełny (czegoś)
 napełniony po brzegi",,,
 25062,WORD_NOUN,,HIRAGANA,,,爆竹,ばくちく,,bakuchiku,petarda,,,
+25063,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,ボヤボヤ,,boyaboya,"nieostrożnie
+niedbale
+nierozważnie
+nieuważnie
+w roztargnieniu
+długie i rozczochrane (np. włosy)
+rozbłysk (np. ognia)
+wzrost (np. pary)",,,
+25064,WORD_NOUN,,HIRAGANA,,,丘陵,きゅうりょう,,kyuuryou,"wzgórze
+pagórek",,,
+25065,WORD_NOUN,,HIRAGANA,,,丘陵地帯,きゅうりょうちたい,,kyuuryou chitai,"górzysty region
+pagórkowaty region",,,
+25066,WORD_NOUN,,HIRAGANA,,,字詰め,じづめ,,jidume,"manuskrypt
+rękopis
+druk",,,
+25067,WORD_NOUN,,HIRAGANA,,,新陳代謝,しんちんたいしゃ,,shinchin taisha,"metabolizm
+przemiana energii
+wymiana
+przemiana
+odnowienie",,,
+25068,WORD_ADJECTIVE_I,,HIRAGANA,,,読みにくい,よみにくい,,yominikui,"trudny do czytania
+nieczytelny",,,
