@@ -5,9 +5,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
 public class Test {
 

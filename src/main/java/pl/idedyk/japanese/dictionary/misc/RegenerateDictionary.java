@@ -47,7 +47,7 @@ public class RegenerateDictionary {
 			currentPolishJapaneseEntry.setKnownDuplicatedId(knownDuplicatedIds);
 		}
 
-		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true);
+		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true, true, false);
 	}
 
 	private static Set<Integer> generateKnownDuplicatedIdForKanji(List<PolishJapaneseEntry> polishJapaneseKanjiEntries,
