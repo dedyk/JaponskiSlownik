@@ -1040,7 +1040,7 @@ public class Validator {
 		}
 	}
 	
-	private static void validateEdictGroup(JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
+	public static void validateEdictGroup(JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
 		boolean validateResult = true;
 		
 		Set<String> alreadyValidateErrorResultGroupIds = new HashSet<String>();

@@ -5,7 +5,7 @@ import java.util.Set;
 
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
 
-public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<PolishJapaneseEntry> {
+public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<PolishJapaneseEntry>, Cloneable {
 
 	private static final long serialVersionUID = 1L;
 		
@@ -106,4 +106,9 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 			return 0;
 		}
 	}
+
+	@Override
+	public  Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}	
 }
