@@ -50,7 +50,29 @@ public class Validator {
 				
 		KanaHelper kanaHelper = new KanaHelper();
 		final Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
-
+		
+		boolean wasDuplicateTranslateError = false;
+		
+		// walidacja duplikatow tlumaczen
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			List<String> translates = polishJapaneseEntry.getTranslates();
+			
+			Set<String> translatesSet = new TreeSet<String>(translates);
+			
+			if (translates.size() != translatesSet.size()) {
+				
+				wasDuplicateTranslateError = true;
+				
+				System.out.println("Duplicate translate: " + polishJapaneseEntry + "\n");
+			}
+			
+		}
+		
+		if (wasDuplicateTranslateError == true) {
+			throw new DictionaryException("Error");
+		}
+		
 		// walidacja typow hiragana i katakana
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 
@@ -229,7 +251,6 @@ public class Validator {
 		
 		// uzyc nowego edict'a
 		// skasowac NO_TYPE_CHECK i sprawdzic wyniki
-		// walidacja duplikatow tlumaczen
 
 		if (jmedict != null) {
 

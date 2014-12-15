@@ -1,8 +1,12 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
 
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
 public class Test {
@@ -200,8 +204,21 @@ public class Test {
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, null, null);
 		*/
 		
-		List<RadicalInfo> radicalList = KanjiDic2Reader.readRadkfile("../JapaneseDictionary_additional/radkfile");
+		// List<RadicalInfo> radicalList = KanjiDic2Reader.readRadkfile("../JapaneseDictionary_additional/radkfile");
 		
-		radicalList.getClass();		
+		// radicalList.getClass();		
+		
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			List<String> translates = polishJapaneseEntry.getTranslates();
+			
+			LinkedHashSet<String> translatesSet = new LinkedHashSet<String>(translates);
+			
+			polishJapaneseEntry.setTranslates(new ArrayList<String>(translatesSet));;
+		}
+		
+		CsvReaderWriter.generateCsv("input/word-new.csv", polishJapaneseEntries, true, true, false);
 	}
 }
