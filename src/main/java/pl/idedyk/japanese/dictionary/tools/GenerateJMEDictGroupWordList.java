@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 import com.csvreader.CsvWriter;
 
@@ -50,6 +51,8 @@ public class GenerateJMEDictGroupWordList {
 		
 		final Map<String, GroupEntry> newWordListAndGroupEntryMap = new HashMap<String, GroupEntry>();
 		
+		Set<String> alreadyAddedGroupEntry = new TreeSet<String>();
+		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.EDICT_TRANSLATE_INFO_GROUP_DIFF) == true) {
@@ -86,39 +89,47 @@ public class GenerateJMEDictGroupWordList {
 							}
 							
 						} else {
-							PolishJapaneseEntry newPolishJapaneseEntry = (PolishJapaneseEntry)polishJapaneseEntry.clone();
 							
-							if (groupEntryKanji == null || groupEntryKanji.equals("") == true) {
-								groupEntryKanji = "-";
-							}
+							String keyForGroupEntry = getKeyForAlreadyAddedGroupEntrySet(groupEntry);
 							
-							newPolishJapaneseEntry.setKanji(groupEntryKanji);
-							
-							List<String> kanaList = new ArrayList<String>();
-							kanaList.add(groupEntryKana);
-							
-							newPolishJapaneseEntry.setKanaList(kanaList);
-							
-							newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
-							
-							List<String> romajiList = new ArrayList<String>();
-							
-							WordType wordType = newPolishJapaneseEntry.getWordType();
-							
-							if (wordType == WordType.HIRAGANA || wordType == WordType.KATAKANA || wordType == WordType.HIRAGANA_KATAKANA || wordType == WordType.KATAKANA_HIRAGANA) {								
-								romajiList.add(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(groupEntryKana, kanaHelper.getKanaCache(), true)));
+							if (alreadyAddedGroupEntry.contains(keyForGroupEntry) == false) {
 								
-							} else {
-								romajiList.add("FIXME");
-							}
-							
-							newPolishJapaneseEntry.setRomajiList(romajiList);
-							
-							newPolishJapaneseEntry.setKnownDuplicatedId(new HashSet<Integer>());
-							
-							smallNewWordList.add(newPolishJapaneseEntry);
-							
-							newWordListAndGroupEntryMap.put(getKeyForNewWordListAndGroupEntry(newPolishJapaneseEntry), groupEntry);
+								alreadyAddedGroupEntry.add(keyForGroupEntry);
+								
+								PolishJapaneseEntry newPolishJapaneseEntry = (PolishJapaneseEntry)polishJapaneseEntry.clone();
+								
+								if (groupEntryKanji == null || groupEntryKanji.equals("") == true) {
+									groupEntryKanji = "-";
+								}
+								
+								newPolishJapaneseEntry.setKanji(groupEntryKanji);
+								
+								List<String> kanaList = new ArrayList<String>();
+								kanaList.add(groupEntryKana);
+								
+								newPolishJapaneseEntry.setKanaList(kanaList);
+								
+								newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
+								
+								List<String> romajiList = new ArrayList<String>();
+								
+								WordType wordType = newPolishJapaneseEntry.getWordType();
+								
+								if (wordType == WordType.HIRAGANA || wordType == WordType.KATAKANA || wordType == WordType.HIRAGANA_KATAKANA || wordType == WordType.KATAKANA_HIRAGANA) {								
+									romajiList.add(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(groupEntryKana, kanaHelper.getKanaCache(), true)));
+									
+								} else {
+									romajiList.add("FIXME");
+								}
+								
+								newPolishJapaneseEntry.setRomajiList(romajiList);
+								
+								newPolishJapaneseEntry.setKnownDuplicatedId(new HashSet<Integer>());
+								
+								smallNewWordList.add(newPolishJapaneseEntry);
+								
+								newWordListAndGroupEntryMap.put(getKeyForNewWordListAndGroupEntry(newPolishJapaneseEntry), groupEntry);
+							}							
 						}
 					}
 				}
@@ -189,6 +200,14 @@ public class GenerateJMEDictGroupWordList {
 		}
 		
 		return null;
+	}
+	
+	private static String getKeyForAlreadyAddedGroupEntrySet(GroupEntry groupEntry) {
+		
+		String key = groupEntry.getGroup().getId() + "." + groupEntry.getWordTypeList().toString() + "." + groupEntry.getKanji() + "." + groupEntry.getKana() + "." + 
+				groupEntry.getTranslateList().toString() + "." + groupEntry.getAdditionalInfoList().toString();
+		
+		return key;
 	}
 	
 	private static String getKeyForNewWordListAndGroupEntry(PolishJapaneseEntry polishJapaneseEntry) {
