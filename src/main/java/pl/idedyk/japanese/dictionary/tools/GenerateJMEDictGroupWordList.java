@@ -1,10 +1,16 @@
 package pl.idedyk.japanese.dictionary.tools;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
+import com.csvreader.CsvWriter;
+
+import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
@@ -14,6 +20,7 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 
 public class GenerateJMEDictGroupWordList {
 
@@ -40,6 +47,8 @@ public class GenerateJMEDictGroupWordList {
 		List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
 		
 		KanaHelper kanaHelper = new KanaHelper();
+		
+		final Map<String, GroupEntry> newWordListAndGroupEntryMap = new HashMap<String, GroupEntry>();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -108,6 +117,8 @@ public class GenerateJMEDictGroupWordList {
 							newPolishJapaneseEntry.setKnownDuplicatedId(new HashSet<Integer>());
 							
 							smallNewWordList.add(newPolishJapaneseEntry);
+							
+							newWordListAndGroupEntryMap.put(getKeyForNewWordListAndGroupEntry(newPolishJapaneseEntry), groupEntry);
 						}
 					}
 				}
@@ -120,7 +131,24 @@ public class GenerateJMEDictGroupWordList {
 				
 		System.out.println("Zapisywanie słownika...");
 		
-		CsvReaderWriter.generateCsv("input/word-new.csv", newWordList, true, true, false);		
+		CsvReaderWriter.generateCsv("input/word-new.csv", newWordList, true, true, false,
+				new ICustomAdditionalCsvWriter() {
+					
+					@Override
+					public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
+						
+						String key = getKeyForNewWordListAndGroupEntry(polishJapaneseEntry);
+						
+						GroupEntry groupEntry = newWordListAndGroupEntryMap.get(key);
+						
+						if (groupEntry == null) {
+							throw new RuntimeException(key);
+						}
+						
+						csvWriter.write(Utils.convertListToString(groupEntry.getTranslateList()));						
+					}
+				}
+		);
 	}	
 	
 	private static boolean isMultiGroup(List<GroupEntry> groupEntryList) {
@@ -161,5 +189,14 @@ public class GenerateJMEDictGroupWordList {
 		}
 		
 		return null;
+	}
+	
+	private static String getKeyForNewWordListAndGroupEntry(PolishJapaneseEntry polishJapaneseEntry) {
+		
+		String key = polishJapaneseEntry.getId() + "." + polishJapaneseEntry.getDictionaryEntryTypeList().toString() + "." + 
+				polishJapaneseEntry.getKanji() + "." + polishJapaneseEntry.getKanaList().get(0) + "." + polishJapaneseEntry.getRomajiList().get(0) +
+				polishJapaneseEntry.getTranslates().toString();
+		
+		return key;		
 	}
 }

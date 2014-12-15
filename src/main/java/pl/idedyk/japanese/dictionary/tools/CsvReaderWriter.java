@@ -199,7 +199,7 @@ public class CsvReaderWriter {
 
 		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
 
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, true, true);
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, true, true, null);
 
 		csvWriter.close();
 	}
@@ -209,7 +209,7 @@ public class CsvReaderWriter {
 
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
 
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, true, true);
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, true, true, null);
 
 		csvWriter.close();
 	}
@@ -219,14 +219,26 @@ public class CsvReaderWriter {
 
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
 
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, addId, addExampleSentenceGroupIds);
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, addId, addExampleSentenceGroupIds, null);
+
+		csvWriter.close();
+	}
+
+	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries,
+			boolean addKnownDupplicatedId, boolean addId, boolean addExampleSentenceGroupIds,
+			ICustomAdditionalCsvWriter customAdditionalCsvWriter) throws IOException {
+
+		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
+
+		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, addId, addExampleSentenceGroupIds, customAdditionalCsvWriter);
 
 		csvWriter.close();
 	}
 	
 	private static void writePolishJapaneseEntries(CsvWriter csvWriter,
 			List<PolishJapaneseEntry> polishJapaneseEntries, boolean addKnownDupplicatedId,
-			boolean addId, boolean addExampleSentenceGroupIds) throws IOException {
+			boolean addId, boolean addExampleSentenceGroupIds,
+			ICustomAdditionalCsvWriter customAdditionalCsvWriter) throws IOException {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
@@ -255,9 +267,17 @@ public class CsvReaderWriter {
 			if (addExampleSentenceGroupIds == true) {
 				csvWriter.write(convertListToString(polishJapaneseEntry.getExampleSentenceGroupIdsList()));
 			}
+			
+			if (customAdditionalCsvWriter != null) {
+				customAdditionalCsvWriter.write(csvWriter, polishJapaneseEntry);
+			}
 
 			csvWriter.endRecord();
 		}
+	}
+	
+	public static interface ICustomAdditionalCsvWriter {		
+		public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException;		
 	}
 
 	public static List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv(String fileName) throws IOException,
