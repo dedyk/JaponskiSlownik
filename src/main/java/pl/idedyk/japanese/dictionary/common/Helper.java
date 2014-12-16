@@ -268,18 +268,9 @@ public class Helper {
 			kanji = null;
 		}
 
-		List<String> kanaList = polishJapaneseEntry.getKanaList();
+		String kana = polishJapaneseEntry.getKana();
 
-		EDictEntry foundEdict = null;
-
-		for (String currentKana : kanaList) {
-
-			foundEdict = jmedict.get(EdictReader.getMapKey(kanji, currentKana));
-
-			if (foundEdict != null) {
-				break;
-			}
-		}
+		EDictEntry foundEdict = jmedict.get(EdictReader.getMapKey(kanji, kana));
 
 		return foundEdict;
 	}
@@ -293,18 +284,9 @@ public class Helper {
 			kanji = null;
 		}
 
-		List<String> kanaList = polishJapaneseEntry.getKanaList();
+		String kana = polishJapaneseEntry.getKana();
 
-		List<JMEDictEntry> foundEdict = null;
-
-		for (String currentKana : kanaList) {
-
-			foundEdict = jmedict.get(JMEDictReader.getMapKey(kanji, currentKana));
-
-			if (foundEdict != null) {
-				break;
-			}
-		}
+		List<JMEDictEntry> foundEdict = jmedict.get(JMEDictReader.getMapKey(kanji, kana));
 
 		return foundEdict;
 	}
@@ -412,15 +394,11 @@ public class Helper {
 
 					newPolishJapaneseEntry.setKanji(kanji != null ? kanji : "-");
 
-					List<String> kanaList = new ArrayList<String>();
-					kanaList.add(kana);
+					newPolishJapaneseEntry.setKana(kana);
 
-					newPolishJapaneseEntry.setKanaList(kanaList);
+					String romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true));
 
-					List<String> romajiList = new ArrayList<String>();
-					romajiList.add(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true)));
-
-					newPolishJapaneseEntry.setRomajiList(romajiList);
+					newPolishJapaneseEntry.setRomaji(romaji);
 
 					newPolishJapaneseEntry.setTranslates(transDetList);
 
@@ -448,15 +426,9 @@ public class Helper {
 			
 			String translate = newPolishJapaneseEntry.getTranslates().get(0);
 			
-			List<String> romajiList = newPolishJapaneseEntry.getRomajiList();
-			
-			List<String> newRomajiList = new ArrayList<String>();
-			
-			for (String currentRomaji : romajiList) {
-				newRomajiList.add(fixRomajiForNames(currentRomaji, translate));
-			}
-			
-			newPolishJapaneseEntry.setRomajiList(newRomajiList);			
+			String romaji = newPolishJapaneseEntry.getRomaji();
+						
+			newPolishJapaneseEntry.setRomaji(fixRomajiForNames(romaji, translate));			
 		}
 		
 		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_STATION_NAME) {
@@ -537,23 +509,14 @@ public class Helper {
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
 
 			String kanji = polishJapaneseEntry.getKanji();
-			List<String> kanaList = polishJapaneseEntry.getKanaList();
+			String kana = polishJapaneseEntry.getKana();
 
 			AttributeList attributeList = polishJapaneseEntry.getAttributeList();
 
 			if (attributeList.contains(AttributeType.VERB_TRANSITIVITY) == true) {
 
-				TransitiveIntransitivePair transitiveIntransitivePair = null;
-
-				for (String currentKana : kanaList) {
-
-					transitiveIntransitivePair = findTransitiveIntransitivePairFromTransitiveVerb(
-							transitiveIntransitivePairList, kanji, currentKana);
-
-					if (transitiveIntransitivePair != null) {
-						break;
-					}
-				}
+				TransitiveIntransitivePair transitiveIntransitivePair = findTransitiveIntransitivePairFromTransitiveVerb(
+						transitiveIntransitivePairList, kanji, kana);
 
 				if (transitiveIntransitivePair != null) {
 
@@ -570,17 +533,8 @@ public class Helper {
 
 			} else if (attributeList.contains(AttributeType.VERB_INTRANSITIVITY) == true) {
 
-				TransitiveIntransitivePair transitiveIntransitivePair = null;
-
-				for (String currentKana : kanaList) {
-
-					transitiveIntransitivePair = findTransitiveIntransitivePairFromIntransitiveVerb(
-							transitiveIntransitivePairList, kanji, currentKana);
-
-					if (transitiveIntransitivePair != null) {
-						break;
-					}
-				}
+				TransitiveIntransitivePair transitiveIntransitivePair = findTransitiveIntransitivePairFromIntransitiveVerb(
+						transitiveIntransitivePairList, kanji, kana);
 
 				if (transitiveIntransitivePair != null) {
 
@@ -689,15 +643,11 @@ public class Helper {
 
 			if (kanji.equals(polishJapaneseEntryKanji) == true) {
 
-				List<String> polishJapaneseEntryKanaList = polishJapaneseEntry.getKanaList();
+				String polishJapaneseEntryKana = polishJapaneseEntry.getKana();
 
-				for (String currentPolishJapaneseEntryKana : polishJapaneseEntryKanaList) {
-
-					if (kana.equals(currentPolishJapaneseEntryKana) == true) {
-						return polishJapaneseEntry;
-					}
+				if (kana.equals(polishJapaneseEntryKana) == true) {
+					return polishJapaneseEntry;
 				}
-
 			}
 		}
 

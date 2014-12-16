@@ -54,6 +54,6 @@ public class GenerateMissingJMnedict {
 	}
 	
 	private static String getKey(PolishJapaneseEntry polishJapaneseEntry) {
-		return polishJapaneseEntry.getKanji() + "." + polishJapaneseEntry.getKanaList().get(0) + "." + polishJapaneseEntry.getRomajiList().get(0);
+		return polishJapaneseEntry.getKanji() + "." + polishJapaneseEntry.getKana() + "." + polishJapaneseEntry.getRomaji();
 	}
 }

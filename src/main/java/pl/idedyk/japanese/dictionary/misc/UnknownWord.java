@@ -206,18 +206,9 @@ public class UnknownWord {
 			kanji = null;
 		}
 
-		List<String> kanaList = polishJapaneseEntry.getKanaList();
+		String kana = polishJapaneseEntry.getKana();
 
-		List<JMEDictEntry> foundEdict = null;
-
-		for (String currentKana : kanaList) {
-
-			foundEdict = jmedict.get(JMEDictReader.getMapKey(kanji, currentKana));
-
-			if (foundEdict != null) {
-				break;
-			}
-		}
+		List<JMEDictEntry> foundEdict = jmedict.get(JMEDictReader.getMapKey(kanji, kana));
 
 		return foundEdict;
 	}

@@ -50,28 +50,23 @@ public class CsvReaderWriter {
 			String prefixKana = polishJapaneseEntry.getPrefixKana();
 
 			String prefixRomaji = polishJapaneseEntry.getPrefixRomaji();
-			List<String> romajiList = polishJapaneseEntry.getRomajiList();
+			String romaji = polishJapaneseEntry.getRomaji();
 
 			if (prefixKana.equals("を") == true && prefixRomaji.equals("o") == true) {
 				prefixRomaji = "wo";
 			}
 
-			if (polishJapaneseEntry.getRealRomajiList() != null) {
-				romajiList = polishJapaneseEntry.getRealRomajiList();
+			if (polishJapaneseEntry.getRealRomaji() != null) {
+				romaji = polishJapaneseEntry.getRealRomaji();
 			}
 
-			for (int romIdx = 0; romIdx < romajiList.size(); ++romIdx) {
+			
+			String currentRomajiEntry = "";
 
-				String currentRomajiEntry = "";
+			currentRomajiEntry += romaji;
 
-				currentRomajiEntry += romajiList.get(romIdx);
-
-				sb.append(polishJapaneseEntry.getWordType().getPrintable() + ":" + currentRomajiEntry);
-
-				if (romIdx != romajiList.size() - 1) {
-					sb.append(",");
-				}
-			}
+			sb.append(polishJapaneseEntry.getWordType().getPrintable() + ":" + currentRomajiEntry);
+			
 			sb.append(";");
 
 			if (prefixRomaji != null && prefixRomaji.equals("") == false) {
@@ -252,9 +247,9 @@ public class CsvReaderWriter {
 			csvWriter.write(convertListToString(GroupEnum.convertToValues(polishJapaneseEntry.getGroups())));
 			csvWriter.write(polishJapaneseEntry.getPrefixKana());
 			csvWriter.write(polishJapaneseEntry.getKanji());
-			csvWriter.write(convertListToString(polishJapaneseEntry.getKanaList()));
+			csvWriter.write(polishJapaneseEntry.getKana());
 			csvWriter.write(polishJapaneseEntry.getPrefixRomaji());
-			csvWriter.write(convertListToString(polishJapaneseEntry.getRomajiList()));
+			csvWriter.write(polishJapaneseEntry.getRomaji());
 			csvWriter.write(convertListToString(polishJapaneseEntry.getTranslates()));
 			csvWriter.write(polishJapaneseEntry.getInfo());
 			//csvWriter.write(polishJapaneseEntry.isUseEntry() == false ? "NO" : "");
@@ -302,9 +297,9 @@ public class CsvReaderWriter {
 				throw new JapaneseDictionaryException("Empty kanji!");
 			}
 
-			String kanaListString = csvReader.get(7);
+			String kanaString = csvReader.get(7);
 			String prefixRomajiString = csvReader.get(8);
-			String romajiListString = csvReader.get(9);
+			String romajiString = csvReader.get(9);
 			String polishTranslateListString = csvReader.get(10);
 			String infoString = csvReader.get(11);
 			String parseAdditionalInfoListString = csvReader.get(12);
@@ -319,9 +314,9 @@ public class CsvReaderWriter {
 			entry.setGroups(GroupEnum.convertToListGroupEnum(parseStringIntoList(groupString)));
 			entry.setPrefixKana(prefixKanaString);
 			entry.setKanji(kanjiString);
-			entry.setKanaList(parseStringIntoList(kanaListString));
+			entry.setKana(kanaString);
 			entry.setPrefixRomaji(prefixRomajiString);
-			entry.setRomajiList(parseStringIntoList(romajiListString));
+			entry.setRomaji(romajiString);
 			entry.setTranslates(parseStringIntoList(polishTranslateListString));
 			entry.setParseAdditionalInfoList(parseParseAdditionalInfoListString(parseAdditionalInfoListString));
 

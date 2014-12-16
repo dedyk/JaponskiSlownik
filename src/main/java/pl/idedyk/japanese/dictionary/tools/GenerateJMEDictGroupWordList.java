@@ -64,7 +64,7 @@ public class GenerateJMEDictGroupWordList {
 			boolean canAdd = true;
 			
 			String kanji = polishJapaneseEntry.getKanji();
-			String kana = polishJapaneseEntry.getKanaList().get(0);
+			String kana = polishJapaneseEntry.getKana();
 			
 			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 						
@@ -103,26 +103,23 @@ public class GenerateJMEDictGroupWordList {
 								}
 								
 								newPolishJapaneseEntry.setKanji(groupEntryKanji);
-								
-								List<String> kanaList = new ArrayList<String>();
-								kanaList.add(groupEntryKana);
-								
-								newPolishJapaneseEntry.setKanaList(kanaList);
+																
+								newPolishJapaneseEntry.setKana(groupEntryKana);
 								
 								newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
 								
-								List<String> romajiList = new ArrayList<String>();
+								String romaji = null;
 								
 								WordType wordType = newPolishJapaneseEntry.getWordType();
 								
 								if (wordType == WordType.HIRAGANA || wordType == WordType.KATAKANA || wordType == WordType.HIRAGANA_KATAKANA || wordType == WordType.KATAKANA_HIRAGANA) {								
-									romajiList.add(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(groupEntryKana, kanaHelper.getKanaCache(), true)));
+									romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(groupEntryKana, kanaHelper.getKanaCache(), true));
 									
 								} else {
-									romajiList.add("FIXME");
+									romaji = "FIXME";
 								}
 								
-								newPolishJapaneseEntry.setRomajiList(romajiList);
+								newPolishJapaneseEntry.setRomaji(romaji);
 								
 								newPolishJapaneseEntry.setKnownDuplicatedId(new HashSet<Integer>());
 								
@@ -184,7 +181,7 @@ public class GenerateJMEDictGroupWordList {
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 						
 			String kanji = polishJapaneseEntry.getKanji();
-			String kana = polishJapaneseEntry.getKanaList().get(0);
+			String kana = polishJapaneseEntry.getKana();
 			
 			if (kanji == null || kanji.equals("-") == true) {
 				kanji = "$$$NULL$$$";
@@ -213,7 +210,7 @@ public class GenerateJMEDictGroupWordList {
 	private static String getKeyForNewWordListAndGroupEntry(PolishJapaneseEntry polishJapaneseEntry) {
 		
 		String key = polishJapaneseEntry.getId() + "." + polishJapaneseEntry.getDictionaryEntryTypeList().toString() + "." + 
-				polishJapaneseEntry.getKanji() + "." + polishJapaneseEntry.getKanaList().get(0) + "." + polishJapaneseEntry.getRomajiList().get(0) +
+				polishJapaneseEntry.getKanji() + "." + polishJapaneseEntry.getKana() + "." + polishJapaneseEntry.getRomaji() +
 				polishJapaneseEntry.getTranslates().toString();
 		
 		return key;		

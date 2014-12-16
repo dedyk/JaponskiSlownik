@@ -201,7 +201,7 @@ public class AndroidDictionaryGenerator {
 				word = polishJapaneseEntry.getKanji();
 				
 			} else {
-				word = polishJapaneseEntry.getKanaList().get(0);
+				word = polishJapaneseEntry.getKana();
 			}
 			
 			List<GroupWithTatoebaSentenceList> exampleSentencesList = tatoebaSentencesParser.getExampleSentences(null, word, 10);

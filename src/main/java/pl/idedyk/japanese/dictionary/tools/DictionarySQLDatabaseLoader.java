@@ -62,9 +62,9 @@ public class DictionarySQLDatabaseLoader {
 				insertStatement.setString(4, polishJapaneseEntry.getWordType().toString());
 				insertStatement.setString(5, polishJapaneseEntry.getPrefixKana());
 				insertStatement.setString(6, polishJapaneseEntry.getKanji());
-				insertStatement.setString(7, convertListToString(polishJapaneseEntry.getKanaList()));
+				insertStatement.setString(7, polishJapaneseEntry.getKana());
 				insertStatement.setString(8, polishJapaneseEntry.getPrefixRomaji());
-				insertStatement.setString(9, convertListToString(polishJapaneseEntry.getRomajiList()));
+				insertStatement.setString(9, polishJapaneseEntry.getRomaji());
 				insertStatement.setString(10, convertListToString(polishJapaneseEntry.getTranslates()));
 				insertStatement.setString(11, polishJapaneseEntry.getInfo());
 				//insertStatement.setString(12, polishJapaneseEntry.isUseEntry() == true ? "" : "NO");

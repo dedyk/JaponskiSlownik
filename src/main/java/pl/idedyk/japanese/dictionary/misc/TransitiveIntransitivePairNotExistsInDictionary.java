@@ -65,15 +65,11 @@ public class TransitiveIntransitivePairNotExistsInDictionary {
 			
 			if (kanji.equals(polishJapaneseEntryKanji) == true) {
 				
-				List<String> polishJapaneseEntryKanaList = polishJapaneseEntry.getKanaList();
+				String polishJapaneseEntryKana = polishJapaneseEntry.getKana();
 				
-				for (String currentPolishJapaneseEntryKana : polishJapaneseEntryKanaList) {
-					
-					if (kana.equals(currentPolishJapaneseEntryKana) == true) {
-						return polishJapaneseEntry;
-					}
-				}
-				
+				if (kana.equals(polishJapaneseEntryKana) == true) {
+					return polishJapaneseEntry;
+				}				
 			}
 		}
 		

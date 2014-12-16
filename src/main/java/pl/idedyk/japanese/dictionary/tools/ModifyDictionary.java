@@ -1,6 +1,5 @@
 package pl.idedyk.japanese.dictionary.tools;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -89,21 +88,11 @@ public class ModifyDictionary {
 			
 			currentPolishJapaneseEntry.setPrefixRomaji(prefixRomaji);
 			
-			List<String> romajiList = currentPolishJapaneseEntry.getRomajiList();
-			List<String> romajiListResult = new ArrayList<String>();
-			
-			for (String currentRomaji : romajiList) {
-				
-				if (currentRomaji.startsWith(prefixRomaji) == false) {
-					throw new RuntimeException(currentRomaji);
-				}
-				
-				currentRomaji = currentRomaji.substring(prefixRomaji.length()).trim();
-				
-				romajiListResult.add(currentRomaji);
-			}
-			
-			currentPolishJapaneseEntry.setRomajiList(romajiListResult);
+			String romaji = currentPolishJapaneseEntry.getRomaji();
+
+			romaji = romaji.substring(prefixRomaji.length()).trim();
+						
+			currentPolishJapaneseEntry.setRomaji(romaji);
 		}
 		
 		CsvReaderWriter.generateCsv(destinationFileName, polishJapaneseEntries, true);

@@ -13,7 +13,7 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 	
 	private String realPrefixRomaji;
 	
-	private List<String> realRomajiList;
+	private String realRomaji;
 	
 	private List<ParseAdditionalInfo> parseAdditionalInfoList;
 
@@ -35,12 +35,12 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 		this.kanjiImagePath = kanjiImagePath;
 	}
 	
-	public List<String> getRealRomajiList() {
-		return realRomajiList;
+	public String getRealRomaji() {
+		return realRomaji;
 	}
 
-	public void setRealRomajiList(List<String> realRomajiList) {
-		this.realRomajiList = realRomajiList;
+	public void setRealRomaji(String realRomaji) {
+		this.realRomaji = realRomaji;
 	}
 	
 	public List<ParseAdditionalInfo> getParseAdditionalInfoList() {
@@ -60,7 +60,7 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 	}
 	
 	public String getEntryPrefixKanaKanjiKanaKey() {
-		return getPrefixKana() + "." + getKanji() + "." + getKanaList().toString();
+		return getPrefixKana() + "." + getKanji() + "." + getKana().toString();
 	}
 	
 	@Override

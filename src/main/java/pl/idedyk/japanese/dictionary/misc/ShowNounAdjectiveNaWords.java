@@ -26,7 +26,7 @@ public class ShowNounAdjectiveNaWords {
 				kanji = "";
 			}
 
-			List<String> kanaList = polishJapaneseEntry.getKanaList();
+			String kana = polishJapaneseEntry.getKana();
 
 			List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
 			DictionaryEntryType dictionaryEntryType = null;
@@ -39,7 +39,7 @@ public class ShowNounAdjectiveNaWords {
 					|| dictionaryEntryType == DictionaryEntryType.WORD_ADJECTIVE_NA) {
 
 				PolishJapaneseEntry foundPolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntries, kanji,
-						kanaList,
+						kana,
 						dictionaryEntryType == DictionaryEntryType.WORD_NOUN ? DictionaryEntryType.WORD_ADJECTIVE_NA
 								: DictionaryEntryType.WORD_NOUN);
 
@@ -59,12 +59,12 @@ public class ShowNounAdjectiveNaWords {
 	}
 
 	private static PolishJapaneseEntry findPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries,
-			String kanji, List<String> kanaList, DictionaryEntryType dictionaryEntryType) {
+			String kanji, String kana, DictionaryEntryType dictionaryEntryType) {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
 			String polishJapaneseEntryKanji = polishJapaneseEntry.getKanji();
-			List<String> polishJapaneseEntryKanaList = polishJapaneseEntry.getKanaList();
+			String polishJapaneseEntryKana = polishJapaneseEntry.getKana();
 
 			List<DictionaryEntryType> polishJapaneseEntryDictionaryEntryTypeList = polishJapaneseEntry
 					.getDictionaryEntryTypeList();
@@ -79,7 +79,7 @@ public class ShowNounAdjectiveNaWords {
 				polishJapaneseEntryKanji = "";
 			}
 
-			if (polishJapaneseEntryKanji.equals(kanji) == true && polishJapaneseEntryKanaList.equals(kanaList) == true
+			if (polishJapaneseEntryKanji.equals(kanji) == true && polishJapaneseEntryKana.equals(kana) == true
 					&& dictionaryEntryType == polishJapaneseEntryDictionaryEntryType) {
 				return polishJapaneseEntry;
 			}

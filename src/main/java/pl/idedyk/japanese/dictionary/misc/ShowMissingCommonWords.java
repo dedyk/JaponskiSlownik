@@ -65,7 +65,7 @@ public class ShowMissingCommonWords {
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 
 			String polishJapaneseEntryKanji = polishJapaneseEntry.getKanji();
-			List<String> polishJapaneseEntryKanaList = polishJapaneseEntry.getKanaList();
+			String polishJapaneseEntryKana = polishJapaneseEntry.getKana();
 
 			if (polishJapaneseEntryKanji != null && polishJapaneseEntryKanji.equals("-") == true) {
 				polishJapaneseEntryKanji = null;
@@ -75,7 +75,7 @@ public class ShowMissingCommonWords {
 			String edictEntryKana = edictEntry.getKana();
 
 			if (findPolishJapaneseEntrySameKanji(polishJapaneseEntryKanji, edictEntryKanji) == true
-					&& findPolishJapaneseEntrySameKana(polishJapaneseEntryKanaList, edictEntryKana) == true) {
+					&& findPolishJapaneseEntrySameKana(polishJapaneseEntryKana, edictEntryKana) == true) {
 
 				return polishJapaneseEntry;
 			}
@@ -97,13 +97,10 @@ public class ShowMissingCommonWords {
 		return kanji1.equals(kanji2);
 	}
 
-	private static boolean findPolishJapaneseEntrySameKana(List<String> kanaList, String kana) {
+	private static boolean findPolishJapaneseEntrySameKana(String kana1, String kana2) {
 
-		for (String currentKana : kanaList) {
-
-			if (currentKana.equals(kana) == true) {
-				return true;
-			}
+		if (kana1.equals(kana2) == true) {
+			return true;
 		}
 
 		return false;

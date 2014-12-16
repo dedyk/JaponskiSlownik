@@ -33,16 +33,13 @@ public class RegenerateDictionary {
 
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : resultPolishJapaneseEntries) {
 
-			List<String> kanaList = currentPolishJapaneseEntry.getKanaList();
+			String kana = currentPolishJapaneseEntry.getKana();
 
 			Set<Integer> knownDuplicatedIds = generateKnownDuplicatedIdForKanji(polishJapaneseEntries,
 					currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji());
 
-			for (String currentKana : kanaList) {
-
-				generateKnownDuplicatedIdFormKanjiAndKana(knownDuplicatedIds, polishJapaneseEntries,
-						currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji(), currentKana);
-			}
+			generateKnownDuplicatedIdFormKanjiAndKana(knownDuplicatedIds, polishJapaneseEntries,
+					currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji(), kana);
 
 			currentPolishJapaneseEntry.setKnownDuplicatedId(knownDuplicatedIds);
 		}
@@ -85,7 +82,7 @@ public class RegenerateDictionary {
 			}
 
 			if (polishJapaneseEntry.getId() != id && differentKanji == false
-					&& polishJapaneseEntry.getKanaList().contains(kana) == true) {
+					&& polishJapaneseEntry.getKana().equals(kana) == true) {
 				result.add(polishJapaneseEntry.getId());
 			}
 		}
