@@ -15495,7 +15495,7 @@ przyciągać",,,
 6327,WORD_NOUN,,HIRAGANA,,,候,こう,,kou,"sezon
 pogoda",,,"6328
 11466"
-6328,WORD_EMPTY,ARCHAISM,HIRAGANA,,,候,そうろう,,sourou,klasyczna końcówka czasowników,równoznaczna z ~masu,,6327
+6328,WORD_VERB_AUX,ARCHAISM,HIRAGANA,,,候,そうろう,,sourou,klasyczna końcówka czasowników,równoznaczna z ~masu,,6327
 6329,WORD_NOUN,,HIRAGANA,,,候補,こうほ,,kouho,kandydatura,,,
 6330,WORD_NOUN,,HIRAGANA,,,候鳥,こうちょう,,kouchou,"wędrujące ptaki
 migrujące ptaki",,,
@@ -18646,7 +18646,8 @@ jedwabny materiał",,,
 7745,WORD_NOUN,,HIRAGANA,,,中立主義,ちゅうりつしゅぎ,,chuuritsu shugi,neutralność,,,
 7746,WORD_NOUN,,HIRAGANA,,,中世紀,ちゅうせいき,,chuuseiki,średniowiecze,,,
 7747,WORD_NOUN,,HIRAGANA,,,会議中,かいぎちゅう,,kaigi chuu,podczas konferencji,,,
-7748,WORD_EMPTY,PREFIX,HIRAGANA,,,前,ぜん,,zen,przedtem,prefiks,,380
+7748,"WORD_ADJECTIVE_NO
+WORD_NOUN",PREFIX,HIRAGANA,,,前,ぜん,,zen,przedtem,prefiks,,380
 7749,"WORD_TEMPORAL_NOUN
 WORD_ADVERBIAL_NOUN",,HIRAGANA,,,前回,ぜんかい,,zenkai,"poprzedni raz
 ostatnim razem",,,
@@ -19620,7 +19621,8 @@ tyły",,,
 8068,WORD_NOUN,,HIRAGANA,,,奴,やっこ,,yakko,"sługa
 giermek
 chłopak",,,8069
-8069,WORD_NOUN,,HIRAGANA,,,奴,やつ,,yatsu,"facet
+8069,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,奴,やつ,,yatsu,"facet
 kumpel",,,8068
 8070,WORD_VERB_IRREGULAR,,HIRAGANA,,,廃する,はいする,,haisuru,"znosić
 porzucać
@@ -53060,7 +53062,7 @@ tańczenie",ang: dancing,,
 21320,WORD_NOUN,,KATAKANA,,,-,ムーラン,,muuran,Moulins,"miejscowość i gmina we Francji, w regionie Owernia, w departamencie Allier",,
 21321,WORD_NOUN,,KATAKANA,,,-,ラッキーゾーン,,rakkii zoon,szczęśliwa strefa,ang: lucky zone,,
 21322,WORD_NOUN,,KATAKANA,,,-,ランナー,,rannaa,biegacz,ang: runner,,
-21323,WORD_NOUN,,HIRAGANA,,,お話し中,おはなしちゅう,,ohanashi chuu,zajęty,"telefon, język grzecznościowy",,
+21323,WORD_ADJECTIVE_NO,,HIRAGANA,,,お話し中,おはなしちゅう,,ohanashi chuu,zajęty,"telefon, język grzecznościowy",,
 21324,WORD_NOUN,,HIRAGANA,,,一変,いっぺん,,ippen,"kompletna zmiana
 zwrot
 zwrot o 180 stopni
