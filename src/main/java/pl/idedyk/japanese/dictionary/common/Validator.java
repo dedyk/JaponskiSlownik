@@ -239,6 +239,12 @@ public class Validator {
 			
 			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
 			
+				if (currentPolishJapaneseEntry.getParseAdditionalInfoList().contains(
+						ParseAdditionalInfo.NO_TYPE_CHECK) == true) {
+					
+					continue;
+				}
+				
 				String kanji = currentPolishJapaneseEntry.getKanji();
 				String kana = currentPolishJapaneseEntry.getKana();
 				
@@ -251,6 +257,10 @@ public class Validator {
 					GroupEntry groupEntry = groupEntryList.get(0);
 					
 					Set<String> groupEntryWordTypeList = groupEntry.getWordTypeList();
+					
+					if (groupEntryWordTypeList.size() == 0) {
+						continue;
+					}
 					
 					for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntryDictionaryEntryTypeList) {
 
@@ -277,7 +287,7 @@ public class Validator {
 							}
 							
 							int fixme4 = 1;
-							//System.out.println("Błąd walidacji typów dla: " + currentPolishJapaneseEntry + " - " + groupEntryWordTypeList + "\n");
+							System.out.println("Błąd walidacji typów dla: " + currentPolishJapaneseEntry + " - " + groupEntryWordTypeList + "\n");
 							
 							String[] groupEntryWordTypeListArray = groupEntryWordTypeList.toArray(new String[] { });
 														
