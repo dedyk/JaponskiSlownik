@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary.common;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -10,6 +11,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+
+import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
@@ -26,8 +29,10 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 
 public class Validator {
 
@@ -223,10 +228,13 @@ public class Validator {
 		
 		int fixme = 1;
 		
+		int fixme2 = 1;
+		final Map<Integer, List<DictionaryEntryType>> ttt = new HashMap<Integer, List<DictionaryEntryType>>();
+		
 		if (jmeNewDictionary != null) {
 			
 			boolean wasError = false;
-			
+						
 			DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
 			
 			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
@@ -237,7 +245,7 @@ public class Validator {
 				List<DictionaryEntryType> polishJapaneseEntryDictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
 								
 				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
-
+				
 				if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
 					
 					GroupEntry groupEntry = groupEntryList.get(0);
@@ -260,7 +268,34 @@ public class Validator {
 						if (wasOk == false) {
 							wasError = true;
 							
-							System.out.println("Błąd walidacji typów dla: " + currentPolishJapaneseEntry + " - " + groupEntryWordTypeList + "\n");
+							List<DictionaryEntryType> ddd = ttt.get(currentPolishJapaneseEntry.getId());
+							
+							if (ddd == null) {
+								ddd = new ArrayList<DictionaryEntryType>();
+								
+								ttt.put(currentPolishJapaneseEntry.getId(), ddd);
+							}
+							
+							int fixme4 = 1;
+							//System.out.println("Błąd walidacji typów dla: " + currentPolishJapaneseEntry + " - " + groupEntryWordTypeList + "\n");
+							
+							String[] groupEntryWordTypeListArray = groupEntryWordTypeList.toArray(new String[] { });
+														
+							for (String currentEntity : groupEntryWordTypeListArray) {
+								
+								try {
+									DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(currentEntity);
+									
+									if (dictionaryEntryType != null) {
+										ddd.add(dictionaryEntryType);
+									}
+									
+									
+								} catch (DictionaryException e) {
+									System.out.println("EEEE: " + currentPolishJapaneseEntry + "\n" + currentEntity + "\n");
+								}
+								
+							}							
 						}
 						
 						/*
@@ -278,10 +313,61 @@ public class Validator {
 			}
 			
 			if (wasError == true) {
-				throw new DictionaryException("Error");
+				//throw new DictionaryException("Error");
 			}
 		}
+		
+		int fixme3 = 1;
+		
+		/*
+		try {
+		
+			CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false,
+					new ICustomAdditionalCsvWriter() {
+	
+						@Override
+						public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
+
+							List<DictionaryEntryType> list = ttt.get(polishJapaneseEntry.getId());
+
+							if (list != null) {
+								
+								csvWriter.write(convertListToString(list));
+								
+							} else {
+								
+								csvWriter.write("");
+							}							
+						}
+						
+						private String convertListToString(List<?> list) {
+							StringBuffer sb = new StringBuffer();
+
+							if (list == null) {
+								list = new ArrayList<String>();
+							}
+							
+							for (int idx = 0; idx < list.size(); ++idx) {
+								sb.append(list.get(idx));
+
+								if (idx != list.size() - 1) {
+									sb.append("\n");
+								}
+							}
+
+							return sb.toString();
+						}
+					}
 				
+				
+				
+			);
+
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+		*/
+		
 		System.exit(1);
 		
 		// uzyc nowego edict'a

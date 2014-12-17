@@ -28,6 +28,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 	
 		addMap(DictionaryEntryType.WORD_NOUN, "n");
 		addMap(DictionaryEntryType.WORD_NOUN, "n-suf");
+		addMap(DictionaryEntryType.WORD_NOUN, "vs");
 		addMap(DictionaryEntryType.WORD_TEMPORAL_NOUN, "n-t");
 		
 		addMap(DictionaryEntryType.WORD_ADVERB, "adv");
@@ -44,6 +45,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addMap(DictionaryEntryType.WORD_PRE_NOUN_ADJECTIVAL, "adj-pn");
 		
 		addMap(DictionaryEntryType.WORD_VERB_RU, "v1");
+		addMap(DictionaryEntryType.WORD_VERB_RU, "v1-s");
 		
 		addMap(DictionaryEntryType.WORD_VERB_U, "v5k");
 		addMap(DictionaryEntryType.WORD_VERB_U, "v5k-s");
@@ -57,6 +59,9 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addMap(DictionaryEntryType.WORD_VERB_U, "v5g");
 		addMap(DictionaryEntryType.WORD_VERB_U, "v5b");
 		addMap(DictionaryEntryType.WORD_VERB_U, "v5n");
+		
+		addMap(DictionaryEntryType.WORD_VERB_U, "v5u-s");
+		addMap(DictionaryEntryType.WORD_VERB_U, "v5aru");
 		
 		addMap(DictionaryEntryType.WORD_VERB_IRREGULAR, "vk");
 		addMap(DictionaryEntryType.WORD_VERB_IRREGULAR, "vs-i");
@@ -87,8 +92,21 @@ public class DictionaryEntryJMEdictEntityMapper {
 		
 		addMap(DictionaryEntryType.WORD_EMPTY, "pref");
 		addMap(DictionaryEntryType.WORD_EMPTY, "suf");
+		
+		addNullMap("vt");
+		addNullMap("on-mim");
+		addNullMap("hon");
+		addNullMap("uk");
+		addNullMap("col");
+		addNullMap("arch");
+		addNullMap("abbr");
+		addNullMap("sl");
+		addNullMap("male");
+		addNullMap("fam");
+		addNullMap("cop-da");
+		addNullMap("obsc");
 	}
-	
+
 	private void addMap(DictionaryEntryType dictionaryEntryType, String entity) {
 		
 		List<String> entityList = dictionaryEntryToEntityMapper.get(dictionaryEntryType);
@@ -110,6 +128,10 @@ public class DictionaryEntryJMEdictEntityMapper {
 		}
 	}
 	
+	private void addNullMap(String entity) {		
+		entityToDictionaryEntryMapper.put(entity, null);		
+	}
+	
 	public List<String> getEntity(DictionaryEntryType dictionaryEntryType) throws DictionaryException {
 		
 		List<String> entityList = dictionaryEntryToEntityMapper.get(dictionaryEntryType);
@@ -119,5 +141,14 @@ public class DictionaryEntryJMEdictEntityMapper {
 		}
 		
 		return entityList;
+	}
+	
+	public DictionaryEntryType getDictionaryEntryType(String entity) throws DictionaryException {
+		
+		if (entityToDictionaryEntryMapper.containsKey(entity) == false) {
+			throw new DictionaryException("Empty DictionaryEntryType for: " + entity);
+		}
+		
+		return entityToDictionaryEntryMapper.get(entity);
 	}
 }

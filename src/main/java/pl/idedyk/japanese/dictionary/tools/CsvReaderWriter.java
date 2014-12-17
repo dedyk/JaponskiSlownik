@@ -242,6 +242,11 @@ public class CsvReaderWriter {
 			}
 			
 			csvWriter.write(convertListToString(polishJapaneseEntry.getDictionaryEntryTypeList()));
+			
+			if (customAdditionalCsvWriter != null) {
+				customAdditionalCsvWriter.write(csvWriter, polishJapaneseEntry);
+			}
+			
 			csvWriter.write(convertAttributeListToString(polishJapaneseEntry.getAttributeList()));
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
 			csvWriter.write(convertListToString(GroupEnum.convertToValues(polishJapaneseEntry.getGroups())));
@@ -263,9 +268,12 @@ public class CsvReaderWriter {
 				csvWriter.write(convertListToString(polishJapaneseEntry.getExampleSentenceGroupIdsList()));
 			}
 			
+			int fixme = 1;
+			/*
 			if (customAdditionalCsvWriter != null) {
 				customAdditionalCsvWriter.write(csvWriter, polishJapaneseEntry);
 			}
+			*/
 
 			csvWriter.endRecord();
 		}
