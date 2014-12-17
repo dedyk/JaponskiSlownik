@@ -26,6 +26,7 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
+import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 
 public class Validator {
@@ -222,6 +223,67 @@ public class Validator {
 		
 		int fixme = 1;
 		
+		if (jmeNewDictionary != null) {
+			
+			boolean wasError = false;
+			
+			DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
+			
+			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+				String kanji = currentPolishJapaneseEntry.getKanji();
+				String kana = currentPolishJapaneseEntry.getKana();
+				
+				List<DictionaryEntryType> polishJapaneseEntryDictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
+								
+				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
+
+				if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+					
+					GroupEntry groupEntry = groupEntryList.get(0);
+					
+					Set<String> groupEntryWordTypeList = groupEntry.getWordTypeList();
+					
+					for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntryDictionaryEntryTypeList) {
+
+						List<String> entityList = dictionaryEntryJMEdictEntityMapper.getEntity(currentDictionaryEntryType);
+						
+						boolean wasOk = false;
+						
+						for (String currentEntity : entityList) {
+							
+							if (groupEntryWordTypeList.contains(currentEntity) == true) {
+								wasOk = true;
+							}
+						}
+						
+						if (wasOk == false) {
+							wasError = true;
+							
+							System.out.println("Błąd walidacji typów dla: " + currentPolishJapaneseEntry + " - " + groupEntryWordTypeList + "\n");
+						}
+						
+						/*
+						for (String currentEntity : entityList) {
+							
+							if (groupEntryWordTypeList.contains(currentEntity) == false) {
+								wasError = true;
+								
+								System.out.println("Błąd walidacji typów dla: " + currentPolishJapaneseEntry + "\n");
+							}
+						}
+						*/						
+					}
+				}
+			}
+			
+			if (wasError == true) {
+				throw new DictionaryException("Error");
+			}
+		}
+				
+		System.exit(1);
+		
 		// uzyc nowego edict'a
 		// skasowac NO_TYPE_CHECK i sprawdzic wyniki
 
@@ -274,7 +336,6 @@ public class Validator {
 			mapEdictTypeToDictionaryEntryType.put("aux-adj", DictionaryEntryType.WORD_AUX_ADJECTIVE_I);
 			mapEdictTypeToDictionaryEntryType.put("adv-to", DictionaryEntryType.WORD_ADVERB_TO);
 			mapEdictTypeToDictionaryEntryType.put("n-adv", DictionaryEntryType.WORD_ADVERBIAL_NOUN);
-			mapEdictTypeToDictionaryEntryType.put("adj-pn", DictionaryEntryType.WORD_PRE_NOUN_ADVERBIAL);
 			mapEdictTypeToDictionaryEntryType.put("aux", DictionaryEntryType.WORD_AUX);
 
 			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
@@ -310,7 +371,6 @@ public class Validator {
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_AUX_ADJECTIVE_I) == true
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADVERB_TO) == true
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADVERBIAL_NOUN) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_PRE_NOUN_ADVERBIAL) == true
 							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_AUX) == true) {
 
 						boolean noFound = true;
@@ -348,6 +408,8 @@ public class Validator {
 				System.exit(1);
 			}
 		}
+		
+		System.exit(1);
 
 		if (jmedictName != null) {
 

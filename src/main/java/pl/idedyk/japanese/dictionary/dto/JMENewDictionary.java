@@ -132,7 +132,7 @@ public class JMENewDictionary {
 	
 	private String getKey(String kanji, String kana) {
 		
-		if (kanji == null) {
+		if (kanji == null || kanji.equals("-") == true) {
 			kanji = "$$$NULL$$$";
 		}
 		

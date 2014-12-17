@@ -3,9 +3,20 @@ package pl.idedyk.japanese.dictionary.test;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.common.Validator;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
+import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
+import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.EdictReader;
+import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
+import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 
 public class Test {
 
@@ -208,6 +219,7 @@ public class Test {
 		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 		
+		/*
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			List<String> translates = polishJapaneseEntry.getTranslates();
@@ -216,7 +228,35 @@ public class Test {
 			
 			polishJapaneseEntry.setTranslates(new ArrayList<String>(translatesSet));;
 		}
+		*/
 		
-		CsvReaderWriter.generateCsv("input/word-new.csv", polishJapaneseEntries, true, true, false);
+		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
+		
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		
+		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
+		
+		KanaHelper kanaHelper = new KanaHelper();
+		
+		// hiragana
+		List<KanaEntry> hiraganaEntries = kanaHelper.getAllHiraganaKanaEntries();
+
+		// katakana
+		List<KanaEntry> katakanaEntries = kanaHelper.getAllKatakanaKanaEntries();
+		
+		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader
+				.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+
+		TreeMap<String, List<JMEDictEntry>> jmedictName = null; 
+		
+		/*
+		JMEDictReader
+				.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
+		*/
+		
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, 
+				jmeNewDictionary, jmedict, jmedictName);
+		
+		//CsvReaderWriter.generateCsv("input/word-new.csv", polishJapaneseEntries, true, true, false);
 	}
 }
