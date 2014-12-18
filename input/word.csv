@@ -145,7 +145,10 @@ dopiero co",,,
 pół
 nieparzysty numer",,,
 68,WORD_INTERJECTION,,HIRAGANA,"Genki 1-1
-Genki 1-2",,-,あの,,ano,um,,,130
+Genki 1-2",,-,あの,,ano,"um
+więc
+no więc
+i ...",,,130
 69,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,"Genki 1-1
 Genki kanji 1-7
@@ -323,9 +326,12 @@ Genki kanji 2-21",,弟,おとうと,,otouto,brat,"własna rodzina, młodszy",,
 126,"WORD_NOUN
 WORD_INTERJECTION",,HIRAGANA,Genki 1-2,,彼,あれ,,are,"tam
 tamten
-tamta",daleko od mówcy i osoby docelowej,,20091
+tamta",daleko od mówcy i osoby docelowej,,882
 127,"WORD_NOUN
-WORD_INTERJECTION",,HIRAGANA,Genki 1-2,,何れ,どれ,,dore,który,,,11943
+WORD_INTERJECTION",,HIRAGANA,Genki 1-2,,何れ,どれ,,dore,który,,,"127
+11943
+19212
+19213"
 128,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,Genki 1-2,,此の,この,,kono,ten,blisko mówcy (z rzeczownikiem),,
 129,"WORD_PRE_NOUN_ADJECTIVAL
 WORD_INTERJECTION",,HIRAGANA,Genki 1-2,,其の,その,,sono,ten,blisko osoby docelowej (z rzeczownikiem),,
@@ -1002,7 +1008,9 @@ poznać",,,
 WORD_VERB_AUX",,HIRAGANA,Genki 1-4,が,居る,いる,ga,iru,"być
 istnieć
 znajdować się","miejsce ni, do rzeczy żywych",,
-370,WORD_PARTICULE,SUFFIX,HIRAGANA,Genki 1-4,,-,ぐらい,,gurai,około,ogólne,,
+370,WORD_PARTICULE,SUFFIX,HIRAGANA,Genki 1-4,,-,ぐらい,,gurai,"około
+tak jak
+co najmniej",ogólne,,
 371,WORD_EXPRESSION,,HIRAGANA,Genki 1-4,,-,ごめんなさい,,gomen nasai,przepraszam,,,
 372,"WORD_CONJUNCTION
 WORD_NOUN",,HIRAGANA,Genki 1-4,,-,だから,,dakara,"ponieważ
@@ -2431,8 +2439,15 @@ który
 którędy
 gdzie
 kto
-co",bardziej uprzejmie,,
-777,WORD_NOUN,,HIRAGANA,Genki 1-10,,何方,どっち,,docchi,które,mniej uprzejme,,
+co",bardziej uprzejmie,EDICT_TRANSLATE_INFO_GROUP_DIFF,"777
+12475"
+777,WORD_NOUN,,HIRAGANA,Genki 1-10,,何方,どっち,,docchi,"które
+który
+którędy
+gdzie
+kto
+co",mniej uprzejme,EDICT_TRANSLATE_INFO_GROUP_DIFF,"776
+12475"
 778,"WORD_EXPRESSION
 WORD_ADVERBIAL_NOUN",,HIRAGANA,Genki 1-10,,どの位,どのぐらい,,donogurai,"jak wiele
 jak długo",,,
@@ -2678,8 +2693,12 @@ przyjść z pomocą",,,
 856,WORD_VERB_RU,,HIRAGANA,Genki 2-16,,見せる,みせる,,miseru,"pokazywać
 wystawiać",,,
 857,"WORD_CONJUNCTION
-WORD_PARTICULE",,HIRAGANA,Genki 2-15,,-,けど,,kedo,"..., ale
-..., więc",~,,
+WORD_PARTICULE",,HIRAGANA,Genki 2-15,,-,けど,,kedo,"ale
+więc
+jednak
+jednakże
+chociaż
+mimo że","pierwsza część zdania nie odpowiada temu, czego oczekiwano w pierwszym zdaniu, bądź drugie zdanie jest przeciwne pierwszemu",,
 858,WORD_NOUN,,HIRAGANA,Genki 2-21,,犯人,はんにん,,hannin,"przestępca
 kryminalista",,,
 859,WORD_VERB_RU,VERB_INTRANSITIVITY,HIRAGANA,Genki 2-15,が,見える,みえる,ga,mieru,oglądać się,,,1210
@@ -2744,14 +2763,14 @@ straż
 pilnowanie
 kolej
 kolejka",~,,
-879,WORD_NOUN,,HIRAGANA,Genki 1-11,,行目,ぎょうめ,,gyoume,numer linii,~,,
+879,WORD_NOUN,,HIRAGANA,Genki 1-11,,行目,ぎょうめ,,gyoume,numer linii,,,
 880,WORD_ADJECTIVE_NO,,HIRAGANA,Genki 1-11,,二人ずつ,ふたりずつ,,futarizutsu,dla każdych dwóch osób,,,
 881,WORD_NOUN,,HIRAGANA,Genki 1-12,,風邪,かぜ,,kaze,przeziębienie,,,
 882,"WORD_PRONOUN
 WORD_ADJECTIVE_NO
 WORD_NOUN",,HIRAGANA,"Genki 1-12
 Genki kanji 2-14",,彼,かれ,,kare,"on
-narzeczony",,,
+narzeczony",,,126
 883,WORD_NOUN,,HIRAGANA,Genki 1-12,,気温,きおん,,kion,temperatura,tylko do pogody,,
 884,WORD_NOUN,,HIRAGANA,Genki 1-12,,曇り,くもり,,kumori,"pochmurna pogoda
 zachmurzenie",,,
@@ -3037,7 +3056,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,"Genki dodatkowe 1-12
 Genki kanji 1-12",,人々,ひとびと,,hitobito,ludzie,,,
 975,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-20,,値段,ねだん,,nedan,"cena
 koszt",,,
-976,WORD_NOUN,,KATAKANA,Genki 2-13,,-,ウエイター,,ueitaa,kelner,,,
+976,WORD_NOUN,,KATAKANA,Genki 2-13,,-,ウエイター,,ueitaa,kelner,ang: waiter,,
 977,"WORD_NOUN
 WORD_PRONOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,Genki 2-13,,お宅,おたく,,otaku,"dom
@@ -3078,7 +3097,8 @@ umówienie się",,,
 artykuł
 wypracowanie
 raport
-referat",,,
+sprawozdanie
+referat",ang: report,,
 994,"WORD_PRONOUN
 WORD_ADJECTIVE_NO
 WORD_NOUN",,HIRAGANA,Genki 2-13,,私,わたくし,,watakushi,ja,formalnie,,"93
@@ -3839,7 +3859,10 @@ uznanie
 pozwolenie
 identyfikacja",,,
 1279,WORD_ADJECTIVE_I,,HIRAGANA,,,-,でかい,,dekai,"ogromny
-gigantyczny",,,
+gigantyczny
+olbrzymi
+wielki
+duży",,,
 1280,WORD_NOUN,,HIRAGANA,,,御萩,おはぎ,,ohagi,ciastko,rodzaj ciastka,,
 1281,WORD_NOUN,,HIRAGANA,,,旧市街,きゅうしがい,,kyuushigai,stare miasto,,,
 1282,WORD_NOUN,,HIRAGANA,,,織物,おりもの,,orimono,"zwój
@@ -6627,7 +6650,8 @@ strzelba",,,
 2421,WORD_NOUN,,KATAKANA,,,-,シャンパン,,shanpan,szampan,,,
 2422,WORD_NOUN,,KATAKANA,,,-,ワイン,,wain,wino,,,
 2423,WORD_NOUN,,KATAKANA,,,-,コニャック,,konyakku,koniak,,,
-2424,WORD_NOUN,,KATAKANA,,,-,ウイスキー,,uisukii,whisky,,,
+2424,WORD_NOUN,,KATAKANA,,,-,ウイスキー,,uisukii,"whisky
+whiskey",,,
 2425,WORD_NOUN,,HIRAGANA,,,操縦士,そうじゅうし,,soujuushi,pilot,,,
 2426,WORD_NOUN,,KATAKANA,,,-,ヘリコプター,,herikoputaa,"helikopter
 śmigłowiec",,,
@@ -6810,7 +6834,7 @@ opuścić cenę",,,
 2519,WORD_NOUN,,HIRAGANA,,,患者,かんじゃ,,kanja,pacjent,,,
 2520,WORD_NOUN,,HIRAGANA,,,羽,はね,,hane,"pióro
 pierze
-puch",,,
+puch",,,25493
 2521,WORD_NOUN,,KATAKANA,,,-,ダンス,,dansu,taniec,,,
 2522,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ダンスを習う,ダンスをならう,,dansu o narau,nauka tańca,,,
 2523,"WORD_ADJECTIVE_NA
@@ -9897,15 +9921,19 @@ ranking
 pozycja",w rankingu,,
 3752,WORD_NOUN,,HIRAGANA,,,計,けい,,kei,suma,,,8617
 3753,WORD_NOUN,,HIRAGANA,,,膝,ひざ,,hiza,kolano,,,
-3754,WORD_ADVERB,,HIRAGANA,Genki 2-22,,-,ずっと,,zutto,"cały czas
+3754,WORD_ADVERB,,HIRAGANA,Genki 2-22,,-,ずっと,,zutto,"ciągle w jakimś stanie (od jakiegoś czasu, odległości i etc)
+całkowicie
+od początku
+cały czas
 przez cały czas
+całą drogę
 bardziej
 znacznie
-dawno
-od początku do końca
-wszędzie
+dawno temu
+odlegle
+bezpośrednio
 prosto
-bezpośrednio",,,
+wprost",,,
 3755,WORD_NOUN,,HIRAGANA,,,卒業論文,そつぎょうろんぶん,,sotsugyou ronbun,praca dyplomowa,,,
 3756,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,論争,ろんそう,,ronsou,dyskusja,,,
@@ -19968,8 +19996,8 @@ rozprzestrzenianie się pożaru",,,
 7624,WORD_NOUN,,HIRAGANA,Genki 2-23,,海外旅行,かいがいりょこう,,kaigai ryokou,podróż do zagranicznego kraju,,,
 7625,WORD_NOUN,,HIRAGANA,Genki 2-23,,国際電話,こくさいでんわ,,kokusai denwa,rozmowa międzynarodowa,,,
 7626,WORD_NOUN,,KATAKANA,Genki 2-23,,-,タイヤ,,taiya,opona,,,
-7627,"WORD_NOUN
-WORD_ADJECTIVE_NO
+7627,"WORD_ADJECTIVE_NO
+WORD_NOUN
 WORD_ADVERB",,HIRAGANA,Genki 2-23,,唯,ただ,,tada,"zwykły
 zwyczajny
 pospolity
@@ -26776,7 +26804,8 @@ kołek",,,
 10422,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,気紛れ,きまぐれ,,kimagure,"zachcianka
 kaprys",,,
-10423,WORD_NOUN,,KATAKANA,,,-,ビーバー,,biibaa,bóbr,,,
+10423,WORD_NOUN,,KATAKANA,,,-,ビーバー,,biibaa,"wiwat
+bóbr","wło: viva, ang: beaver",,
 10424,WORD_NOUN,,HIRAGANA,,,拍手喝采,はくしゅかっさい,,hakushukassai,"aplauz
 brawo
 oklaski",,,
@@ -28264,7 +28293,8 @@ podpis
 autograf",,,
 10989,WORD_VERB_IRREGULAR,,HIRAGANA_KATAKANA,,,-,サインする,,sain suru,podpisać,,,
 10990,"WORD_NOUN
-WORD_ADJECTIVE_NO",,KATAKANA,,,-,インク,,inku,atrament,,,
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,インク,,inku,"atrament
+tusz",,,
 10991,WORD_VERB_RU,,HIRAGANA,,,命を助ける,いのちをたすける,,inochi o tasukeru,ocalić czyjeś życie,,,
 10992,WORD_VERB_U,,HIRAGANA,,,命が助かる,いのちがたすかる,,inochi ga tasukaru,"uniknąć śmierci
 przeżyć
@@ -28276,6 +28306,7 @@ ujść z życiem",,,
 kolorowa błona fotograficzna",,,
 10997,"WORD_CONJUNCTION
 WORD_PARTICULE",,HIRAGANA,,,-,けれども,,keredomo,"ale
+więc
 jednak
 jednakże
 chociaż
@@ -28880,8 +28911,11 @@ odłożyć (na miejsce)
 uporządkować",,,
 11241,WORD_NOUN,,HIRAGANA_KATAKANA,,,湯上がりタオル,ゆあがりタオル,,yuagari taoru,ręcznik kąpielowy,,,
 11242,"WORD_CONJUNCTION
-WORD_PARTICULE",,HIRAGANA,,,-,たら,,tara,"kiedy
-jeśli",końcówka czasownika oznaczająca warunek,,"10666
+WORD_PARTICULE",,HIRAGANA,,,-,たら,,tara,"wskazywanie przypuszczenia
+jeśli ... wtedy ...
+kiedy
+jeśli
+wskazywanie podrażnienia, irytacji (zwykle po czyimś imieniu)",końcówka czasownika oznaczająca warunek,,"10666
 10667"
 11243,WORD_NOUN,,HIRAGANA,,,椒,はじかみ,,hajikami,"papryka
 imbir (archaizm)",,,
@@ -29779,9 +29813,17 @@ dosyć",,,
 11631,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,瓶詰め,びんづめ,,bindume,przetwory w słoikach,,,
 11632,WORD_NOUN,,HIRAGANA,,,四百字詰めの原稿用紙,よんひゃくじづめのげんこうようし,,yonhyakujidume no genkouyoushi,papier do pisania ręcznego (po japońsku) na czterysta znaków,,,
-11633,WORD_EMPTY,SUFFIX,HIRAGANA,,,-,ずつ,,zutsu,"każdemu
+11633,WORD_EMPTY,SUFFIX,HIRAGANA,,,-,ずつ,,zutsu,"za sztukę
+na osobę
+na głowę
+każdy
+stopniowo
+każdemu
 odpowiednio
-po ...",,,
+po ...
+po trochu
+na raz
+jednoczenie",,,
 11634,WORD_NOUN,,HIRAGANA,,,否定する,ひていする,,hitei suru,"zaprzeczyć
 zdementować",,,
 11635,WORD_NOUN,,HIRAGANA,,,否定的な意見,ひていてきないけん,,hiteiteki na iken,negatywna opinia,,,
@@ -29990,9 +30032,9 @@ WORD_EXPRESSION",,HIRAGANA,,,階段を上る,かいだんをのぼる,,kaidan o 
 11740,WORD_NOUN,,HIRAGANA,,,欠席届け,けっせきとどけ,,kesseki todoke,zawiadomienie o nieobecności,,,
 11741,WORD_NOUN,,KATAKANA,,,-,クーラー,,kuuraa,"klimatyzator
 klimatyzacja",,,
-11742,WORD_PARTICULE,,HIRAGANA,,,-,くらい,,kurai,"około
+11742,WORD_PARTICULE,SUFFIX,HIRAGANA,,,-,くらい,,kurai,"około
 tak jak
-co najmniej",,,6001
+co najmniej",ogólne,,6001
 11743,WORD_VERB_U,,HIRAGANA,,,仕事を探す,しごとをさがす,,shigoto o sagasu,szukać pracy,,,
 11744,WORD_VERB_RU,,HIRAGANA,,,温度を下げる,おんどをさげる,,ondo o sageru,zmniejszać temperaturę,,,
 11745,WORD_VERB_RU,,HIRAGANA,,,熱を下げる,ねつをさげる,,netsu o sageru,obniżać gorączkę,,,
@@ -30355,8 +30397,11 @@ przepraszam",,,
 11940,WORD_VERB_IRREGULAR,,HIRAGANA,,,失礼する,しつれいする,,shitsurei suru,źle się zachować,,,
 11941,WORD_EXPRESSION,,HIRAGANA,,,どの人,どのひと,,dono hito,który człowiek,,,
 11942,WORD_EXPRESSION,,HIRAGANA,,,どの方,どのかた,,dono kata,która osoba,,,
-11943,WORD_INTERJECTION,,HIRAGANA,Genki 1-2,,-,どれ,,dore,"a cóż to?
-(pokaż) no!","używane, kiedy mówiący chce coś zobaczyć",,127
+11943,"WORD_INTERJECTION
+WORD_NOUN",,HIRAGANA,Genki 1-2,,何れ,どれ,,dore,"a cóż to?
+(pokaż) no!","używane, kiedy mówiący chce coś zobaczyć",,"127
+19212
+19213"
 11944,WORD_NOUN,,HIRAGANA,,,広い道路,ひろいどうろ,,hiroi douro,szeroka droga,,,
 11945,WORD_NOUN,,HIRAGANA,,,狭い道路,せまいどうろ,,semai douro,"wąska droga
 wąska ulica",,,
@@ -31131,8 +31176,8 @@ pojazd gąsienicowy",,,
 12322,WORD_NOUN,,KATAKANA,,,-,ビキニ,,bikini,"bikini
 wyspy bikini",,,
 12323,WORD_FEMALE_NAME,,KATAKANA,,,-,アネタ,,aneta,Aneta,polskie imię,,
-12324,WORD_EXPRESSION,,HIRAGANA,,,-,なければならない,,nakereba naranai,"trzeba
-musieć",inna forma: nakute wa naranai,,
+12324,WORD_EXPRESSION,,HIRAGANA,,,-,なければならない,,nakereba naranai,"musieć coś zrobić
+trzeba coś zrobić",inna forma: nakute wa naranai,,
 12325,WORD_EXPRESSION,,HIRAGANA,,,-,なくてわならない,,nakute wa naranai,"trzeba
 musieć",inna forma: nakereba naranai,,
 12326,WORD_NOUN,,HIRAGANA,,,保証人,ほしょうにん,,hoshounin,gwarant,,,
@@ -31440,7 +31485,8 @@ atleta",,,
 12474,WORD_NOUN,,HIRAGANA,,,選挙運動,せんきょうんどう,,senkyo undou,"kampania przed wyborcza
 kampania wyborcza
 akcja przed wyborcza",,,
-12475,WORD_NOUN,,HIRAGANA,,,何方,どなた,,donata,kto,donata jest bardziej uprzejme niż dare,,
+12475,WORD_NOUN,,HIRAGANA,,,何方,どなた,,donata,kto,donata jest bardziej uprzejme niż dare,,"776
+777"
 12476,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,,,-,どんどん,,dondon,"gwałtownie
 wytrwale",używa się również: dondon to,,
@@ -33245,7 +33291,8 @@ WORD_INTERJECTION",,HIRAGANA,,,-,わ,,wa,"[partykuła kończąca zdanie, mająca
 5246
 14498
 19988
-20090"
+20090
+25493"
 13596,WORD_PARTICULE,,HIRAGANA,,,-,に,,ni,"na
 w",,,"3
 7574
@@ -34385,7 +34432,7 @@ pas
 zachód
 odpady
 marnotrawstwo
-strata",,,
+strata","ang: waist, west, waste",,
 13972,WORD_NOUN,,KATAKANA,,,-,セーフ,,seefu,safe,w baseballu,,
 13973,WORD_NOUN,,KATAKANA,,,-,チョーキング,,chookingu,podciągnięcie,"technika gry na instrumentach strunowych, polegająca na podciąganiu struny w poprzek gryfu",,
 13974,WORD_NOUN,,KATAKANA,,,-,ボコーダー,,bokoodaa,wokoder,,,
@@ -34857,7 +34904,11 @@ WORD_ADJECTIVE_NO",,KATAKANA,,,-,ブロンズ,,buronzu,brąz,,,
 14126,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA_KATAKANA,,,ブロンズ色,ブロンズいろ,,buronzu iro,kolor brązowy,,,
 14127,WORD_NOUN,,KATAKANA,,,-,メーキャップ,,meekyappu,"makijaż
-make up",,,
+charakteryzacja
+make up
+robienie makijażu
+tworzenie
+stanowienie",ang: make up,,
 14128,WORD_NOUN,,HIRAGANA,,,兵力,へいりょく,,heiryoku,"siły zbrojne
 siła armii",,,
 14129,WORD_NOUN,,HIRAGANA,,,兵員,へいいん,,heiin,"siła wojskowa
@@ -35024,8 +35075,10 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,１対１,いちたいいち,,ichi tai ichi,"jede
 indywidualny",,,
 14184,WORD_NOUN,,KATAKANA,,,-,イーグル,,iiguru,orzeł,,,
 14185,"WORD_NOUN
-WORD_ADJECTIVE_F",,KATAKANA,,,-,エクストラ,,ekusutora,"extra
-dodatkowy",,,
+WORD_ADJECTIVE_F",,KATAKANA,,,-,エクストラ,,ekusutora,"dodatkowy
+nadzwyczajny
+extra
+ekstra",,,
 14186,WORD_NOUN,,KATAKANA,,,-,オペレーター,,opereetaa,"operator
 operatorka
 telefonista
@@ -36854,9 +36907,10 @@ rozkład
 rozmieszenie
 dystrybucja
 rozdzielenie",,,
-14839,WORD_EXPRESSION,,HIRAGANA,,,-,でないと,,denaito,"bez
+14839,WORD_EXPRESSION,,HIRAGANA,,,-,でないと,,denaito,"ale jeśli
+w przeciwnym wypadku
 oprócz
-ale, jeśli",,,
+bez",,,
 14840,"WORD_NOUN
 WORD_ADJECTIVE_NO",,KATAKANA,,,-,アルミニウム,,aruminiumu,"aluminium
 glin",,,
@@ -37619,7 +37673,7 @@ cudowne
 przepiękne
 prześliczne",,,
 15134,WORD_NOUN,,KATAKANA,,,-,ヴォーカリスト,,vookarisuto,"wokalista
-wokalistka",,,
+wokalistka",ang: vocalist,,
 15135,WORD_NOUN,,HIRAGANA,,,冬場,ふゆば,,fuyuba,sezon zimowy,,,
 15136,"WORD_ADVERBIAL_NOUN
 WORD_TEMPORAL_NOUN",,HIRAGANA,,,初年,しょねん,,shonen,"pierwszy rok
@@ -38017,6 +38071,7 @@ romantyk
 romantyczka",,,
 15277,"WORD_ADJECTIVE_NA
 WORD_NOUN",,KATAKANA,,,-,ロマンティック,,romantikku,"romantyczny
+romantycznie
 romantyk
 romantyczka",,,
 15278,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,と言うことはない,ということはない,,to iu koto wa nai,"nie jest możliwe aby zrobić (to)
@@ -38105,10 +38160,11 @@ okres, w którym strony mogą odstąpić od umowy",,,
 15307,WORD_NOUN,,KATAKANA,,,-,タンカー,,tankaa,"tankowiec
 zbiornikowiec",,,
 15308,WORD_NOUN,,KATAKANA,,,-,メイキャップ,,meikyappu,"makijaż
+charakteryzacja
 make up
-robić makijaż
+robienie makijażu
 tworzenie
-stanowienie",,,
+stanowienie",ang: make up,,
 15309,WORD_NOUN,,KATAKANA,,,-,ラウンド,,raundo,"runda (np. w sporcie, w negocjacjach)
 obchód (np. pielęgniarki, ochrony i etc)",,,
 15310,WORD_NOUN,,HIRAGANA,,,判定,はんてい,,hantei,"wyrok
@@ -38320,8 +38376,10 @@ odwrotną pocztą
 dzwonić lub odpisać bez żadnego opóźnienia","wyłożone, odwinięte na zewnątrz części ubioru",,
 15383,WORD_NOUN,,HIRAGANA,,,海流,かいりゅう,,kairyuu,prąd morski,,,
 15384,WORD_NOUN,,HIRAGANA,,,父子,ふし,,fushi,ojciec i syn,,,
-15385,WORD_EXPRESSION,,HIRAGANA,,,-,なければいけない,,nakereba ikenai,musieć coś zrobić,,,
-15386,WORD_EXPRESSION,,HIRAGANA,,,-,なければなりません,,nakereba narimasen,musieć coś zrobić,,,
+15385,WORD_EXPRESSION,,HIRAGANA,,,-,なければいけない,,nakereba ikenai,"musieć coś zrobić
+trzeba coś zrobić",inna forma: nakute wa naranai,,
+15386,WORD_EXPRESSION,,HIRAGANA,,,-,なければなりません,,nakereba narimasen,"musieć coś zrobić
+trzeba coś zrobić",inna forma: nakute wa naranai,,
 15387,WORD_NOUN,,KATAKANA,,,-,コントラ,,kontora,Contras,"antyrządowa, antykomunistyczna partyzantka i organizacja terrorystyczna walcząca w Nikaragui przeciwko reformom, które wprowadzali sandiniści i ich sojusznicy",,
 15388,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,不評,ふひょう,,fuhyou,"zła reputacja
@@ -38710,7 +38768,8 @@ ukłonić się",,,
 WORD_ADJECTIVE_NO",,KATAKANA,,,-,アトピー,,atopii,"atopik
 atopia",choroba,,
 15529,"WORD_NOUN
-WORD_ADJECTIVE_NO",,KATAKANA,,,-,エッセイ,,essei,esej,,,
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,エッセイ,,essei,"esej
+wypracowanie",ang: essay,,
 15530,WORD_NOUN,,KATAKANA,,,-,エッセイスト,,esseisuto,eseista,,,
 15531,WORD_NOUN,,KATAKANA,,,-,サングラス,,sangurasu,"okulary przeciwsłoneczne
 okulary słoneczne
@@ -40534,7 +40593,7 @@ opiekun",,,
 16135,WORD_NOUN,,KATAKANA,,,-,ストリーカー,,sutoriikaa,streaker,"osoba, która wpada nago na imprezę masową, najczęściej sportową, by zwrócić na siebie uwagę widzów i jak najdłużej uciekać przed ochroną i policją.",,
 16136,WORD_NOUN,,KATAKANA,,,-,ディーゼル,,diizeru,diesel,,,
 16137,WORD_ADJECTIVE_F,SUFFIX,KATAKANA_EXCEPTION,,,-,デイ,,dii,"dzień
-pora dnia",,,
+pora dnia",ang: day,,
 16138,WORD_NOUN,,KATAKANA,,,-,ナショナリズム,,nashonarizumu,nacjonalizm,,,
 16139,WORD_NOUN,,KATAKANA,,,-,ノーヒットノーランゲーム,,noo hitto noo ran geemu,no-hit no-run game,"ang, mecz baseballowy, w którym miotacz nie dopuścił do zdobycia bazy przez zawodnika drużyny przeciwnej poprzez uderzenie",,
 16140,WORD_NOUN,,KATAKANA,,,-,ピット,,pitto,pit,,,
@@ -41988,8 +42047,9 @@ zwiastun",,,
 16641,WORD_ADJECTIVE_NA,,KATAKANA,,,-,スレンダー,,surendaa,"smukły
 szczupły",,,
 16642,WORD_NOUN,,KATAKANA,,,-,ティ,,ti,"herbata
-kołek
-podkładka","ang: tea, tee",,
+trójnik
+kołek (pod piłkę)
+podkładka (pod piłkę)","ang: tea, tee",,
 16643,WORD_NOUN,,KATAKANA,,,-,ドッグフード,,doggu fuudo,jedzenie dla psów,,,
 16644,WORD_NOUN,,KATAKANA,,,-,ニコチン,,nikochin,nikotyna,,,
 16645,WORD_NOUN,,HIRAGANA,,,三十日,みそか,,misoka,ostatni dzień miesiąca,,,327
@@ -46131,7 +46191,8 @@ humorystyczny",,,
 okrężnica
 kolonista
 osadnik","ang, fra: colon",,
-18029,WORD_ADJECTIVE_F,SUFFIX,KATAKANA,,,-,デー,,dee,dzień,"święta, ang: day",,
+18029,WORD_ADJECTIVE_F,SUFFIX,KATAKANA,,,-,デー,,dee,"dzień
+pora dnia",ang: day,,
 18030,WORD_NOUN,,KATAKANA,,,-,トミーガン,,tomii gan,pistolet maszynowy Thompson,,,
 18031,WORD_NOUN,,HIRAGANA,,,一番乗り,いちばんのり,,ichiban nori,"pierwszy przyjazd
 pierwsze przybycie",,,
@@ -46459,7 +46520,9 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,昼夜,ちゅうや,,chuuya,dzień i noc,,,
 18140,WORD_NOUN,,KATAKANA,,,-,ウェスト,,wesuto,"talia
 pas
 zachód
-odpady","ang: waist, west, waste",,
+odpady
+marnotrawstwo
+strata","ang: waist, west, waste",,
 18141,WORD_NOUN,,KATAKANA,,,-,コンバーター,,konbaataa,"konwerter
 przetwornik",,,
 18142,WORD_NOUN,,KATAKANA,,,-,ジェスイット,,jesuitto,jezuita,,,
@@ -47225,7 +47288,7 @@ ochrona",ang: security,,
 18378,WORD_NOUN,,KATAKANA,,,-,パートタイマー,,paato taimaa,"pracownik niepełnoetatowy
 pracownik na niepełnym etacie
 półetapowiec",,,
-18379,WORD_NOUN,,KATAKANA,,,-,メインストリート,,mein sutoriito,główna ulica,,,
+18379,WORD_NOUN,,KATAKANA,,,-,メインストリート,,mein sutoriito,główna ulica,ang: main street,,
 18380,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,根元,ねもと,,nemoto,"źródło
 podstawa
@@ -47417,6 +47480,9 @@ na osobę
 na głowę
 każdy
 stopniowo
+każdemu
+odpowiednio
+po ...
 po trochu
 na raz
 jednoczenie",,,
@@ -48972,7 +49038,7 @@ niezaspokojony
 niezadowalający
 niewystarczający
 niesatysfakcjonujący",,,
-18944,WORD_NOUN,,KATAKANA,,,-,キャロル,,kyaroru,kolęda,ang: carol,,
+18944,WORD_NOUN,,KATAKANA,,,-,キャロル,,kyaroru,kolęda,ang: carol,EDICT_TRANSLATE_INFO_GROUP_DIFF,
 18945,WORD_NOUN,,KATAKANA,,,-,バラック,,barakku,"koszary
 barak",,,
 18946,WORD_NOUN,,HIRAGANA,,,丹誠,たんせい,,tansei,"rzetelnie pracować
@@ -49894,7 +49960,9 @@ kto
 jakkolwiek
 w każdym razie
 przynajmniej
-prędzej lub później",,,19213
+prędzej lub później",,,"127
+11943
+19213"
 19213,"WORD_ADVERB
 WORD_PRONOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,何れ,いづれ,,idure,"gdzie
@@ -49903,7 +49971,9 @@ kto
 jakkolwiek
 w każdym razie
 przynajmniej
-prędzej lub później",,,19212
+prędzej lub później",,,"127
+11943
+19212"
 19214,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,新た,あらた,,arata,"nowy
 świeży
@@ -51194,8 +51264,12 @@ inspektor",ang: superviser,,
 19630,WORD_NOUN,,KATAKANA,,,-,スーパーバイザー,,suupaa baizaa,"nadzorca
 kierownik
 inspektor",ang: superviser,,
-19631,WORD_NOUN,,KATAKANA,,,-,リポート,,ripooto,"raport
-sprawozdanie",ang: report,,
+19631,WORD_NOUN,,KATAKANA,,,-,リポート,,ripooto,"praca semestralna
+artykuł
+wypracowanie
+raport
+sprawozdanie
+referat",ang: report,,
 19632,WORD_NOUN,,HIRAGANA,,,上越,じょうえつ,,jouetsu,Joetsu,"miasto w Japonii w prefekturze Niigata, na wyspie Honsiu, nad Morzem Japońskim",,
 19633,WORD_NOUN,,HIRAGANA,,,通念,つうねん,,tsuunen,"wspólna koncepcja
 wspólna idea
@@ -51221,9 +51295,9 @@ cenienie",,,
 odparcie
 odparcie zarzutów
 zbijanie",,,
-19639,WORD_NOUN,,KATAKANA,,,-,マネジメント,,manejimento,"management
+19639,WORD_NOUN,,KATAKANA,,,-,マネジメント,,manejimento,"zarząd
 zarządzanie
-kierowanie",,,
+kierowanie",ang: management,,
 19640,WORD_NOUN,,KATAKANA,,,-,ミステリ,,misuteri,"tajemnica
 zagadka
 misterium",,,
@@ -52555,6 +52629,7 @@ ostatecznie wyczerpany
 wiotki
 bezwładny",,,
 20019,WORD_ADJECTIVE_I,,HIRAGANA,,,-,でっかい,,dekkai,"ogromny
+gigantyczny
 olbrzymi
 wielki
 duży",,,
@@ -52789,8 +52864,7 @@ ty (archaizm)",,,"13595
 20093"
 20091,"WORD_PRONOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,吾,あれ,,are,"ja
-mnie",,,"126
-20089
+mnie",,,"20089
 20090
 20092
 20093"
@@ -53824,7 +53898,8 @@ dyrektor",organizacji,,
 20399,"WORD_NOUN
 WORD_ADJECTIVE_F",,KATAKANA,,,-,エキストラ,,ekisutora,"dodatkowy
 nadzwyczajny
-ekstra",ang: extra,,
+extra
+ekstra",,,
 20400,WORD_NOUN,,KATAKANA,,,-,ホイッスル,,hoissuru,"gwizdek
 gwizd
 świst",ang: whistler,,
@@ -54081,7 +54156,7 @@ gotowy","ang: lady, ready",,
 dama
 lady
 kobieta
-gotowy",,,
+gotowy","ang: lady, ready",,
 20474,WORD_EXPRESSION,,HIRAGANA,,,最後の舞台,さいごのぶたい,,saigo no butai,"finałowe wykonanie
 ostatnie wykonanie
 ostatni akt",,,
@@ -55866,7 +55941,8 @@ Ania",polskie imię,,
 21050,WORD_MALE_NAME,,KATAKANA,,,-,カミール,,kamiiru,Kamil,polskie imię,,
 21051,WORD_FEMALE_NAME,,KATAKANA,,,-,カミーラ,,kamiira,Kamila,polskie imię,,
 21052,WORD_FEMALE_NAME,,KATAKANA,,,-,カリナ,,karina,Karina,polskie imię,,
-21053,WORD_MALE_NAME,,KATAKANA,,,-,カロル,,karoru,Karol,polskie imię,NO_TYPE_CHECK,
+21053,WORD_MALE_NAME,,KATAKANA,,,-,カロル,,karoru,Karol,polskie imię,"NO_TYPE_CHECK
+EDICT_TRANSLATE_INFO_GROUP_DIFF",
 21054,WORD_FEMALE_NAME,,KATAKANA,,,-,カロリーナ,,karoriina,Karolina,polskie imię,,
 21055,WORD_FEMALE_NAME,,KATAKANA,,,-,カタジーナ,,katajiina,"Katarzyna
 Kasia",polskie imię,,
@@ -56083,7 +56159,10 @@ mokry
 wilgotny",,,
 21178,WORD_NOUN,,KATAKANA,,,-,メイクアップ,,meiku appu,"makijaż
 charakteryzacja
-make up",,,
+make up
+robienie makijażu
+tworzenie
+stanowienie",ang: make up,,
 21179,WORD_NOUN,,HIRAGANA,,,傷者,しょうしゃ,,shousha,"ranna osoba
 osoba poszkodowana
 ofiara",,,
@@ -56770,7 +56849,8 @@ bojaźliwy
 nieśmiałość",,,
 21381,WORD_NOUN,,KATAKANA,,,-,シャンティー,,shantii,Chantilly,,,
 21382,WORD_NOUN,,KATAKANA,,,-,ステータス,,suteetasu,"status
-stan",,,
+stan
+sytuacja",,,
 21383,WORD_NOUN,,KATAKANA,,,-,ハウ,,hau,"jak
 jakże",ang: how,,
 21384,WORD_NOUN,,KATAKANA,,,-,フィート,,fiito,"stopa
@@ -56906,7 +56986,8 @@ gruby",,,
 21418,WORD_NOUN,,KATAKANA,,,-,フェローシップ,,feroo shippu,"towarzystwo
 wspólnota
 stypendium",ang: fellowship,,
-21419,WORD_NOUN,,KATAKANA,,,-,ボーカリスト,,bookarisuto,wokalista,ang: vocalist,,
+21419,WORD_NOUN,,KATAKANA,,,-,ボーカリスト,,bookarisuto,"wokalista
+wokalistka",ang: vocalist,,
 21420,WORD_NOUN,,KATAKANA,,,-,マテリアル,,materiaru,"materiał
 tkanina
 tworzywo",,,
@@ -58600,7 +58681,7 @@ modelowy przykład",ang: model case,,
 skrytka
 schowek
 bujak","ang: locker, rocker",,
-21901,WORD_NOUN,,KATAKANA,,,-,ヴィーナス,,viinasu,Wenus,,,
+21901,WORD_NOUN,,KATAKANA,,,-,ヴィーナス,,viinasu,Wenus,planeta,,
 21902,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,事実無根,じじつむこん,,jijitsu mukon,"bezpodstawny
 bezzasadny
@@ -58968,7 +59049,8 @@ olbrzymi",ang: jumbo,,
 22020,WORD_NOUN,,KATAKANA,,,-,チタン,,chitan,tytan,,,
 22021,WORD_NOUN,,KATAKANA,,,-,ティー,,tii,"herbata
 trójnik
-podkładka","ang: tea, tee",,
+kołek (pod piłkę)
+podkładka (pod piłkę)","ang: tea, tee",,
 22022,WORD_NOUN,,KATAKANA,,,-,パイオニア,,paionia,"pionier
 Pioneer (japońska firma elektroniczna)",,,
 22023,WORD_NOUN,,KATAKANA,,,-,ベビーブーム,,bebii buumu,wyż demograficzny,ang: baby boom,,
@@ -59870,7 +59952,8 @@ liczba dni od momentu nowego księżyca",,,
 samozadowolenie
 samosatysfakcja
 samozaspokojenie",,,
-22353,WORD_INTERJECTION,,HIRAGANA,,,-,あのう,,anou,"więc
+22353,WORD_INTERJECTION,,HIRAGANA,,,-,あのう,,anou,"um
+więc
 no więc
 i ...",,,
 22354,WORD_NOUN,,KATAKANA,,,-,アスレチック,,asurechikku,"atletyczny
@@ -60755,7 +60838,7 @@ jeden dzień",,,"24591
 24775"
 22646,WORD_NOUN,,KATAKANA,,,-,エンタテイメント,,entateimento,"rozrywka
 widowisko
-przedstawienie",,,
+przedstawienie",ang: entertainment,,
 22647,WORD_NOUN,,KATAKANA,,,-,オーナー,,oonaa,właściciel,ang: owner,,
 22648,WORD_INTERJECTION,,HIRAGANA,,,お早う,おはよう,,ohayou,dzień dobry,skrót,,
 22649,WORD_NOUN,,HIRAGANA,,,用地,ようち,,youchi,"miejsce
@@ -61807,7 +61890,9 @@ podniecenie",,,22969
 22970,"WORD_CONJUNCTION
 WORD_PARTICULE",,HIRAGANA,,,-,ったら,,ttara,"wskazywanie przypuszczenia
 jeśli ... wtedy ...
-wskazywanie podrażnienia, irytacji (zwykle po czyimś imieniu)",,,
+kiedy
+jeśli
+wskazywanie podrażnienia, irytacji (zwykle po czyimś imieniu)",końcówka czasownika oznaczająca warunek,,
 22971,WORD_NOUN,,HIRAGANA,,,学卒,がくそつ,,gakusotsu,absolwent uczelni,,,
 22972,WORD_NOUN,,HIRAGANA,,,封じ手,ふうじて,,fuujite,[rodzaj planszowej gry],,,
 22973,WORD_NOUN,,HIRAGANA,,,無機物,むきぶつ,,mukibutsu,nieorganiczna substancja,,,
@@ -62778,7 +62863,9 @@ podkładanie ognia",,,
 23316,WORD_NOUN,,HIRAGANA,,,放火犯人,ほうかはんにん,,houka hannin,podpalacz,,,
 23317,WORD_PARTICULE,,HIRAGANA,,,-,かね,,kane,partykuła pytania wyrażająca zwątpienie,,,7908
 23318,WORD_EXPRESSION,,HIRAGANA,,,-,でなければ,,de nakereba,"ale jeśli
-w przeciwnym wypadku",,,
+w przeciwnym wypadku
+oprócz
+bez",,,
 23319,WORD_NOUN,,KATAKANA,,,-,バント,,banto,odbicie w polu,"baseball, ang: bunt",,
 23320,WORD_NOUN,,HIRAGANA,,,修業,しゅうぎょう,,shuugyou,"dążenie do wiedzy
 uczenie się
@@ -63076,7 +63163,7 @@ skroń czoła",,,
 23426,"WORD_ADJECTIVE_NA
 WORD_ADVERB
 WORD_NOUN",,KATAKANA,,,-,ペラペラ,,perapera,"być biegłym w języku
-płynnie",,,
+płynnie",język ga,,
 23427,WORD_NOUN,,HIRAGANA,,,両替機,りょうがえき,,ryougaeki,maszyna do rozmieniania pieniędzy,,,
 23428,WORD_NOUN,,HIRAGANA,,,和楽器,わがっき,,wagakki,tradycyjny japoński instrument muzyczny,,,
 23429,WORD_NOUN,,HIRAGANA,,,奇声,きせい,,kisei,"dziwny głos
@@ -64430,8 +64517,8 @@ WORD_NOUN",,HIRAGANA,,,土曜,どよう,,doyou,sobota,,,
 23915,WORD_NOUN,,HIRAGANA,,,工科,こうか,,kouka,"kurs politechniczny
 kurs inżynierski",,,
 23916,WORD_NOUN,,HIRAGANA,,,工科大学,こうかだいがく,,kouka daigaku,wyższa szkoła techniczna,,,
-23917,"WORD_ADJECTIVE_NO
-WORD_NOUN",,HIRAGANA,,,普遍,ふへん,,fuhen,"uniwersalia
+23917,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,普遍,ふへん,,fuhen,"uniwersalia
 pojęcie ogólne
 powszechnik
 uniwersalny
@@ -65552,7 +65639,10 @@ samouszkodzenie","działanie, zachowanie",,
 całkowicie
 od początku
 cały czas
+przez cały czas
 całą drogę
+bardziej
+znacznie
 dawno temu
 odlegle
 bezpośrednio
@@ -66004,7 +66094,7 @@ srebrna mięta (w okresie Edo)",,,
 chwilę temu
 dopiero co",,,
 24461,WORD_NOUN,,KATAKANA,,,-,ボキー,,bokii,"wynik jeden powyżej par na dołku (w golfie)
-wózek kołowy",,,
+wózek kołowy","ang: bogey, bogie",,
 24462,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,市販,しはん,,shihan,"sprzedawanie na rynku (np. na targu, w sklepie)
 oferowanie czegoś konsumentom
@@ -67948,7 +68038,8 @@ WORD_NOUN",,HIRAGANA,,,高率,こうりつ,,kouritsu,wysoki współczynnik,,,
 dopóki nie
 tak długo jak",,,
 25159,WORD_NOUN,,KATAKANA,,,-,マネージメント,,maneejimento,"zarząd
-zarządzanie",ang: management,,
+zarządzanie
+kierowanie",ang: management,,
 25160,WORD_NOUN,,HIRAGANA,,,借入金,かりいれきん,,kariirekin,"dług
 pożyczka",,,
 25161,WORD_NOUN,,HIRAGANA,,,年商,ねんしょう,,nenshou,roczny obrót finansowy,,,
@@ -69036,7 +69127,8 @@ zewnętrzny",,,
 25492,WORD_NOUN,,HIRAGANA,,,活路,かつろ,,katsuro,"sposób na przeżycie
 sposób na przetrwanie
 sposób ucieczki",,,
-25493,WORD_COUNTER,,HIRAGANA,,,羽,わ,,wa,klasyfikator na ptaki i króliki,,,
+25493,WORD_COUNTER,,HIRAGANA,,,羽,わ,,wa,klasyfikator na ptaki i króliki,,,"2520
+13595"
 25494,WORD_NOUN,,KATAKANA,,,-,エアバッグ,,ea baggu,poduszka powietrzna,ang: air bag,,
 25495,WORD_NOUN,,KATAKANA,,,-,クラック,,kurakku,"pęknięcie
 szczelina

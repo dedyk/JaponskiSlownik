@@ -1,19 +1,15 @@
 package pl.idedyk.japanese.dictionary.common;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
-
-import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
@@ -30,17 +26,14 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 
 public class Validator {
 
 	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries,
 			List<KanaEntry> hiraganaEntries, List<KanaEntry> katakanaEntries,
-			JMENewDictionary jmeNewDictionary, TreeMap<String, List<JMEDictEntry>> jmedict, 
-			TreeMap<String, List<JMEDictEntry>> jmedictName)
+			JMENewDictionary jmeNewDictionary, TreeMap<String, List<JMEDictEntry>> jmedictName)
 			throws DictionaryException {
 
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
@@ -227,9 +220,6 @@ public class Validator {
 		
 		}
 				
-		int fixme2 = 1;
-		final Map<Integer, List<DictionaryEntryType>> ttt = new HashMap<Integer, List<DictionaryEntryType>>();
-		
 		if (jmeNewDictionary != null) {
 			
 			boolean wasError = false;
@@ -299,9 +289,7 @@ public class Validator {
 					
 					continue;
 				}
-				
-				boolean abc = false;
-				
+								
 				String kanji = currentPolishJapaneseEntry.getKanji();
 				String kana = currentPolishJapaneseEntry.getKana();
 				
@@ -328,289 +316,21 @@ public class Validator {
 						}
 						
 						if (polishJapaneseEntryDictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
-							
-							List<DictionaryEntryType> ddd = ttt.get(currentPolishJapaneseEntry.getId());
-							
-							if (ddd == null) {
-								ddd = new ArrayList<DictionaryEntryType>();
-								
-								ttt.put(currentPolishJapaneseEntry.getId(), ddd);
-							}
-							
-							ddd.add(dictionaryEntryType);
-							
+														
 							wasError = true;
 							
 							System.out.println("Błąd walidacji typów(2) dla: " + currentPolishJapaneseEntry + " - " + groupEntryWordTypeList + "\n");
-							
-							abc = true;
 														
-						} else {
-							
-							List<DictionaryEntryType> ddd = ttt.get(currentPolishJapaneseEntry.getId());
-							
-							if (ddd == null) {
-								ddd = new ArrayList<DictionaryEntryType>();
-								
-								ttt.put(currentPolishJapaneseEntry.getId(), ddd);
-							}
-							
-							ddd.add(dictionaryEntryType);
-
-							
 						}
 					}					
-				}
-				
-				if (abc == false) {					
-					
-					ttt.remove(currentPolishJapaneseEntry.getId());
-					
-				} else {
-					
-					List<DictionaryEntryType> list = new ArrayList<DictionaryEntryType>(new LinkedHashSet<DictionaryEntryType>(ttt.get(currentPolishJapaneseEntry.getId())));
-					
-					ttt.put(currentPolishJapaneseEntry.getId(), list);
-					
-				}
-				
-			}
-			
-			
-			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
-				
-				List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
-				
-				List<DictionaryEntryType> list = ttt.get(currentPolishJapaneseEntry.getId());
-				
-				if (list != null) {
-					
-					
-					
-					/*
-					if (dictionaryEntryTypeList.size() == 1 && dictionaryEntryTypeList.get(0) == DictionaryEntryType.WORD_NOUN) {
-						
-						if (list.size() == 2 && list.get(0) == DictionaryEntryType.WORD_NOUN && list.get(1) == DictionaryEntryType.WORD_ADJECTIVE_NO) {
-							
-							currentPolishJapaneseEntry.setDictionaryEntryTypeList(list);
-							
-							System.out.println("AAAAA");
-						}						
-					}
-					*/
-					
-					if (list.contains(DictionaryEntryType.WORD_EXPRESSION) == true) {
-						
-						list.remove(DictionaryEntryType.WORD_EXPRESSION);
-						
-						list.add(DictionaryEntryType.WORD_EXPRESSION);										
-					}
-					
-					if (dictionaryEntryTypeList.get(0) == list.get(0)) {
-						
-						currentPolishJapaneseEntry.setDictionaryEntryTypeList(list);
-						
-						System.out.println("AAAAA");
-					}
-					
-					
-					
-					
 				}				
 			}
-			
-			
-			
-			
-			try {
-				
-				//CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false);
-				
-				
-				CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false,
-						new ICustomAdditionalCsvWriter() {
-		
-							@Override
-							public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
-
-								List<DictionaryEntryType> list = ttt.get(polishJapaneseEntry.getId());
-								
-								if (list != null) {
-																		
-									csvWriter.write(convertListToString(list));
-									
-								} else {
-									
-									csvWriter.write("");
-								}							
-							}
-							
-							private String convertListToString(List<?> list) {
-								StringBuffer sb = new StringBuffer();
-
-								if (list == null) {
-									list = new ArrayList<String>();
-								}
-								
-								for (int idx = 0; idx < list.size(); ++idx) {
-									sb.append(list.get(idx));
-
-									if (idx != list.size() - 1) {
-										sb.append("\n");
-									}
-								}
-
-								return sb.toString();
-							}
-						}
-					
-					
-					
-				);
-				
-						
-				
-
-			} catch (Exception e) {
-				throw new RuntimeException(e);
-			}			
 			
 			if (wasError == true) {
 				throw new DictionaryException("Error");
 			}
 		}
 		
-		
-		
-		System.exit(1);
-		
-		// uzyc nowego edict'a
-		// skasowac NO_TYPE_CHECK i sprawdzic wyniki
-
-		if (jmedict != null) {
-
-			// validate word
-			boolean wasError = false;
-
-			final Map<String, DictionaryEntryType> mapEdictTypeToDictionaryEntryType = new HashMap<String, DictionaryEntryType>();
-
-			mapEdictTypeToDictionaryEntryType.put("v1", DictionaryEntryType.WORD_VERB_RU);
-			mapEdictTypeToDictionaryEntryType.put("v5k", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("v5k-s", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("v5r", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("v5m", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("v5s", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("vk", DictionaryEntryType.WORD_VERB_IRREGULAR);
-			mapEdictTypeToDictionaryEntryType.put("v4r", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("v5u", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("v5r-i", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("v5t", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("v5g", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("v5b", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("v5n", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("vs-i", DictionaryEntryType.WORD_VERB_IRREGULAR);
-			mapEdictTypeToDictionaryEntryType.put("ateji", DictionaryEntryType.WORD_VERB_U); // ???
-			mapEdictTypeToDictionaryEntryType.put("io", DictionaryEntryType.WORD_VERB_U); // ???
-			mapEdictTypeToDictionaryEntryType.put("oK", DictionaryEntryType.WORD_VERB_U); // ???
-			mapEdictTypeToDictionaryEntryType.put("ik", DictionaryEntryType.WORD_VERB_U); // ???
-			mapEdictTypeToDictionaryEntryType.put("vs-s", DictionaryEntryType.WORD_VERB_IRREGULAR);
-			mapEdictTypeToDictionaryEntryType.put("v5aru", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("v5u-s", DictionaryEntryType.WORD_VERB_U);
-			mapEdictTypeToDictionaryEntryType.put("n", DictionaryEntryType.WORD_NOUN);
-			mapEdictTypeToDictionaryEntryType.put("n-adv", DictionaryEntryType.WORD_NOUN);
-			mapEdictTypeToDictionaryEntryType.put("n-t", DictionaryEntryType.WORD_TEMPORAL_NOUN);
-			mapEdictTypeToDictionaryEntryType.put("adj-f", DictionaryEntryType.WORD_ADJECTIVE_F);
-			mapEdictTypeToDictionaryEntryType.put("adj-no", DictionaryEntryType.WORD_NOUN);
-			mapEdictTypeToDictionaryEntryType.put("vs", DictionaryEntryType.WORD_NOUN);
-			mapEdictTypeToDictionaryEntryType.put("n-suf", DictionaryEntryType.WORD_NOUN);
-			mapEdictTypeToDictionaryEntryType.put("n-pref", DictionaryEntryType.WORD_NOUN);
-			mapEdictTypeToDictionaryEntryType.put("pn", DictionaryEntryType.WORD_PRONOUN);
-			mapEdictTypeToDictionaryEntryType.put("int", DictionaryEntryType.WORD_INTERJECTION);
-			mapEdictTypeToDictionaryEntryType.put("adj-i", DictionaryEntryType.WORD_ADJECTIVE_I);
-			mapEdictTypeToDictionaryEntryType.put("adj-ix", DictionaryEntryType.WORD_ADJECTIVE_I);
-			mapEdictTypeToDictionaryEntryType.put("adj-na", DictionaryEntryType.WORD_ADJECTIVE_NA);
-			mapEdictTypeToDictionaryEntryType.put("adv", DictionaryEntryType.WORD_ADVERB);
-			mapEdictTypeToDictionaryEntryType.put("n-adv", DictionaryEntryType.WORD_ADVERB);
-			mapEdictTypeToDictionaryEntryType.put("conj", DictionaryEntryType.WORD_CONJUNCTION);
-			mapEdictTypeToDictionaryEntryType.put("vz", DictionaryEntryType.WORD_VERB_ZURU);
-			mapEdictTypeToDictionaryEntryType.put("aux-adj", DictionaryEntryType.WORD_AUX_ADJECTIVE_I);
-			mapEdictTypeToDictionaryEntryType.put("adv-to", DictionaryEntryType.WORD_ADVERB_TO);
-			mapEdictTypeToDictionaryEntryType.put("n-adv", DictionaryEntryType.WORD_ADVERBIAL_NOUN);
-			mapEdictTypeToDictionaryEntryType.put("aux", DictionaryEntryType.WORD_AUX);
-
-			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
-
-				String kanji = currentPolishJapaneseEntry.getKanji();
-
-				if (kanji != null && kanji.equals("-") == true) {
-					kanji = null;
-				}
-
-				String kana = currentPolishJapaneseEntry.getKana();
-
-				List<JMEDictEntry> foundJMEDict = jmedict.get(JMEDictReader.getMapKey(kanji, kana));
-
-				if (foundJMEDict != null) {
-
-					List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry
-							.getDictionaryEntryTypeList();
-
-					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_U) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_RU) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_IRREGULAR) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NOUN) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_I) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_NA) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_F) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADVERB) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_PRONOUN) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_CONJUNCTION) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_INTERJECTION) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_TEMPORAL_NOUN) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_ZURU) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_AUX_ADJECTIVE_I) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADVERB_TO) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADVERBIAL_NOUN) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_AUX) == true) {
-
-						boolean noFound = true;
-
-						for (JMEDictEntry currentFoundJMEDict : foundJMEDict) {
-
-							List<DictionaryEntryType> dictionaryEntryTypeFromEdictPos = getDictionaryEntryTypeFromEdictPos(
-									mapEdictTypeToDictionaryEntryType, currentFoundJMEDict.getPos());
-
-							for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {
-
-								if (dictionaryEntryTypeFromEdictPos.contains(dictionaryEntryType) == true) {
-									noFound = false;
-
-									break;
-								}
-							}
-						}
-
-						if (noFound == true
-								&& currentPolishJapaneseEntry.getParseAdditionalInfoList().contains(
-										ParseAdditionalInfo.NO_TYPE_CHECK) == false) {
-
-							System.out.println("Dictionary entry type edict different for: "
-									+ currentPolishJapaneseEntry);
-							System.out.println("Available types: " + foundJMEDict + "\n");
-
-							wasError = true;
-						}
-					}
-				}
-			}
-
-			if (wasError == true) {
-				System.exit(1);
-			}
-		}
-		
-		System.exit(1);
-
 		if (jmedictName != null) {
 
 			// validate names
@@ -711,23 +431,6 @@ public class Validator {
 			// walidacja grup edict
 			validateEdictGroup(jmeNewDictionary, polishJapaneseKanjiEntries);
 		}
-	}
-
-	private static List<DictionaryEntryType> getDictionaryEntryTypeFromEdictPos(
-			Map<String, DictionaryEntryType> mapEdictTypeToDictionaryEntryType, List<String> pos) {
-
-		List<DictionaryEntryType> result = new ArrayList<DictionaryEntryType>();
-
-		for (String currentPos : pos) {
-
-			DictionaryEntryType dictionaryEntryType = mapEdictTypeToDictionaryEntryType.get(currentPos);
-
-			if (dictionaryEntryType != null) {
-				result.add(dictionaryEntryType);
-			}
-		}
-
-		return result;
 	}
 
 	private static KanaWord createKanaWord(KanaHelper kanaHelper, String romaji, WordType wordType, Map<String, KanaEntry> hiraganaCache,

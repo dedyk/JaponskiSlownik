@@ -38,8 +38,6 @@ public class J2MEDictionaryGenerator {
 		generateKatakanaImages(katakanaEntries, charsCache, kanjiOutputDir);
 
 		// read edict
-		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMEdict("../JaponskiSlownik_dodatki/JMdict_e");
-
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JaponskiSlownik_dodatki/JMnedict.xml");
 
 		// read new jmedict
@@ -53,7 +51,7 @@ public class J2MEDictionaryGenerator {
 		// Słowniczek
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 		
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmeNewDictionary, jmedict, jmedictName);
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmeNewDictionary, jmedictName);
 		
 		generateKanjiImages(polishJapaneseEntries, charsCache, kanjiOutputDir);
 
