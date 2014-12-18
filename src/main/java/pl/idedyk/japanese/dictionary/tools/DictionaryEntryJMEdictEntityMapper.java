@@ -27,6 +27,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addMap(DictionaryEntryType.WORD_NUMBER, "num");
 	
 		addMap(DictionaryEntryType.WORD_NOUN, "n");
+		addMap(DictionaryEntryType.WORD_NOUN, "n-pref");
 		addMap(DictionaryEntryType.WORD_NOUN, "n-suf");
 		addMap(DictionaryEntryType.WORD_NOUN, "vs");
 		addMap(DictionaryEntryType.WORD_TEMPORAL_NOUN, "n-t");
@@ -35,11 +36,13 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addMap(DictionaryEntryType.WORD_ADVERBIAL_NOUN, "n-adv");
 		addMap(DictionaryEntryType.WORD_ADVERB_TO, "adv-to");
 		
-		addMap(DictionaryEntryType.WORD_ADJECTIVE_I, "adj-i");		
+		addMap(DictionaryEntryType.WORD_ADJECTIVE_I, "adj-i");
+		addMap(DictionaryEntryType.WORD_ADJECTIVE_I, "adj-ix");
 		addMap(DictionaryEntryType.WORD_ADJECTIVE_NA, "adj-na");
 		addMap(DictionaryEntryType.WORD_ADJECTIVE_NO, "adj-no");
 		addMap(DictionaryEntryType.WORD_ADJECTIVE_F, "adj-f");
 		addMap(DictionaryEntryType.WORD_ADJECTIVE_TARU, "adj-t");
+		addMap(DictionaryEntryType.WORD_ADJECTIVE_NARI, "adj-nari");
 		addMap(DictionaryEntryType.WORD_AUX_ADJECTIVE_I, "aux-adj");
 				
 		addMap(DictionaryEntryType.WORD_PRE_NOUN_ADJECTIVAL, "adj-pn");
@@ -61,6 +64,8 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addMap(DictionaryEntryType.WORD_VERB_U, "v5n");
 		
 		addMap(DictionaryEntryType.WORD_VERB_U, "v5u-s");
+		addMap(DictionaryEntryType.WORD_VERB_U, "vs-c");
+		addMap(DictionaryEntryType.WORD_VERB_U, "vn");
 		addMap(DictionaryEntryType.WORD_VERB_U, "v5aru");
 		
 		addMap(DictionaryEntryType.WORD_VERB_IRREGULAR, "vk");
@@ -94,6 +99,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addMap(DictionaryEntryType.WORD_EMPTY, "suf");
 		
 		addNullMap("vt");
+		addNullMap("vi");
 		addNullMap("on-mim");
 		addNullMap("hon");
 		addNullMap("uk");
@@ -103,8 +109,22 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addNullMap("sl");
 		addNullMap("male");
 		addNullMap("fam");
+		addNullMap("fem");
 		addNullMap("cop-da");
 		addNullMap("obsc");
+		addNullMap("yoji");
+		addNullMap("derog");
+		addNullMap("pol");
+		addNullMap("sens");
+		addNullMap("vulg");
+		addNullMap("hum");
+		addNullMap("obs");
+		addNullMap("chn");
+		addNullMap("id");
+		addNullMap("m-sl");
+		addNullMap("v4h");
+		addNullMap("joc");
+		addNullMap("vr");
 	}
 
 	private void addMap(DictionaryEntryType dictionaryEntryType, String entity) {
@@ -149,6 +169,12 @@ public class DictionaryEntryJMEdictEntityMapper {
 			throw new DictionaryException("Empty DictionaryEntryType for: " + entity);
 		}
 		
-		return entityToDictionaryEntryMapper.get(entity);
+		DictionaryEntryType dictionaryEntryType = entityToDictionaryEntryMapper.get(entity);
+		
+		if (dictionaryEntryType == DictionaryEntryType.WORD_EMPTY) {
+			return null;
+		}
+		
+		return dictionaryEntryType;
 	}
 }

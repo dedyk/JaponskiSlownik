@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -225,16 +226,14 @@ public class Validator {
 
 		
 		}
-		
-		int fixme = 1;
-		
+				
 		int fixme2 = 1;
 		final Map<Integer, List<DictionaryEntryType>> ttt = new HashMap<Integer, List<DictionaryEntryType>>();
 		
 		if (jmeNewDictionary != null) {
 			
 			boolean wasError = false;
-						
+			
 			DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
 			
 			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
@@ -248,8 +247,6 @@ public class Validator {
 				String kanji = currentPolishJapaneseEntry.getKanji();
 				String kana = currentPolishJapaneseEntry.getKana();
 				
-				List<DictionaryEntryType> polishJapaneseEntryDictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
-								
 				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 				
 				if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
@@ -261,6 +258,8 @@ public class Validator {
 					if (groupEntryWordTypeList.size() == 0) {
 						continue;
 					}
+					
+					List<DictionaryEntryType> polishJapaneseEntryDictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
 					
 					for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntryDictionaryEntryTypeList) {
 
@@ -275,8 +274,60 @@ public class Validator {
 							}
 						}
 						
-						if (wasOk == false) {
+						if (wasOk == false) {						
+							
 							wasError = true;
+																					
+							System.out.println("Błąd walidacji typów(1) dla: " + currentPolishJapaneseEntry + " - " + groupEntryWordTypeList + "\n");																												
+						}					
+					}
+				}
+			}
+			
+			if (wasError == true) {
+				throw new DictionaryException("Error");
+			}
+			
+			//
+			
+			wasError = false;
+						
+			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+				if (currentPolishJapaneseEntry.getParseAdditionalInfoList().contains(
+						ParseAdditionalInfo.NO_TYPE_CHECK) == true) {
+					
+					continue;
+				}
+				
+				boolean abc = false;
+				
+				String kanji = currentPolishJapaneseEntry.getKanji();
+				String kana = currentPolishJapaneseEntry.getKana();
+				
+				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
+				
+				if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+
+					GroupEntry groupEntry = groupEntryList.get(0);
+					
+					Set<String> groupEntryWordTypeList = groupEntry.getWordTypeList();
+					
+					if (groupEntryWordTypeList.size() == 0) {
+						continue;
+					}
+					
+					List<DictionaryEntryType> polishJapaneseEntryDictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
+					
+					for (String currentEntity : groupEntryWordTypeList) {
+						
+						DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(currentEntity);
+						
+						if (dictionaryEntryType == null) {
+							continue;
+						}
+						
+						if (polishJapaneseEntryDictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
 							
 							List<DictionaryEntryType> ddd = ttt.get(currentPolishJapaneseEntry.getId());
 							
@@ -286,97 +337,94 @@ public class Validator {
 								ttt.put(currentPolishJapaneseEntry.getId(), ddd);
 							}
 							
-							int fixme4 = 1;
-							System.out.println("Błąd walidacji typów dla: " + currentPolishJapaneseEntry + " - " + groupEntryWordTypeList + "\n");
+							ddd.add(dictionaryEntryType);
 							
-							String[] groupEntryWordTypeListArray = groupEntryWordTypeList.toArray(new String[] { });
+							wasError = true;
+							
+							System.out.println("Błąd walidacji typów(2) dla: " + currentPolishJapaneseEntry + " - " + groupEntryWordTypeList + "\n");
+							
+							abc = true;
 														
-							for (String currentEntity : groupEntryWordTypeListArray) {
-								
-								try {
-									DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(currentEntity);
-									
-									if (dictionaryEntryType != null) {
-										ddd.add(dictionaryEntryType);
-									}
-									
-									
-								} catch (DictionaryException e) {
-									System.out.println("EEEE: " + currentPolishJapaneseEntry + "\n" + currentEntity + "\n");
-								}
-								
-							}							
-						}
-						
-						/*
-						for (String currentEntity : entityList) {
+						} else {
 							
-							if (groupEntryWordTypeList.contains(currentEntity) == false) {
-								wasError = true;
+							List<DictionaryEntryType> ddd = ttt.get(currentPolishJapaneseEntry.getId());
+							
+							if (ddd == null) {
+								ddd = new ArrayList<DictionaryEntryType>();
 								
-								System.out.println("Błąd walidacji typów dla: " + currentPolishJapaneseEntry + "\n");
+								ttt.put(currentPolishJapaneseEntry.getId(), ddd);
 							}
+							
+							ddd.add(dictionaryEntryType);
+
+							
 						}
-						*/						
-					}
+					}					
 				}
+				
+				if (abc == false) {
+					
+					
+					ttt.remove(currentPolishJapaneseEntry.getId());
+				}
+				
 			}
 			
+			try {
+				
+				CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false,
+						new ICustomAdditionalCsvWriter() {
+		
+							@Override
+							public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
+
+								List<DictionaryEntryType> list = ttt.get(polishJapaneseEntry.getId());
+								
+								if (list != null) {
+									
+									list = new ArrayList<DictionaryEntryType>(new LinkedHashSet<DictionaryEntryType>(list));
+									
+									csvWriter.write(convertListToString(list));
+									
+								} else {
+									
+									csvWriter.write("");
+								}							
+							}
+							
+							private String convertListToString(List<?> list) {
+								StringBuffer sb = new StringBuffer();
+
+								if (list == null) {
+									list = new ArrayList<String>();
+								}
+								
+								for (int idx = 0; idx < list.size(); ++idx) {
+									sb.append(list.get(idx));
+
+									if (idx != list.size() - 1) {
+										sb.append("\n");
+									}
+								}
+
+								return sb.toString();
+							}
+						}
+					
+					
+					
+				);
+
+			} catch (Exception e) {
+				throw new RuntimeException(e);
+			}			
+			
 			if (wasError == true) {
-				//throw new DictionaryException("Error");
+				throw new DictionaryException("Error");
 			}
 		}
 		
-		int fixme3 = 1;
 		
-		/*
-		try {
-		
-			CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false,
-					new ICustomAdditionalCsvWriter() {
-	
-						@Override
-						public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
-
-							List<DictionaryEntryType> list = ttt.get(polishJapaneseEntry.getId());
-
-							if (list != null) {
-								
-								csvWriter.write(convertListToString(list));
-								
-							} else {
-								
-								csvWriter.write("");
-							}							
-						}
-						
-						private String convertListToString(List<?> list) {
-							StringBuffer sb = new StringBuffer();
-
-							if (list == null) {
-								list = new ArrayList<String>();
-							}
-							
-							for (int idx = 0; idx < list.size(); ++idx) {
-								sb.append(list.get(idx));
-
-								if (idx != list.size() - 1) {
-									sb.append("\n");
-								}
-							}
-
-							return sb.toString();
-						}
-					}
-				
-				
-				
-			);
-
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-		*/
 		
 		System.exit(1);
 		
