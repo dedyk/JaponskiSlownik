@@ -424,9 +424,9 @@ public class Validator {
 			
 			try {
 				
-				CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false);
+				//CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false);
 				
-				/*
+				
 				CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false,
 						new ICustomAdditionalCsvWriter() {
 		
@@ -467,7 +467,7 @@ public class Validator {
 					
 					
 				);
-				*/
+				
 						
 				
 
