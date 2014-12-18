@@ -371,7 +371,6 @@ public class Validator {
 			}
 			
 			
-			/*
 			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
 				
 				List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
@@ -382,6 +381,7 @@ public class Validator {
 					
 					list = new ArrayList<DictionaryEntryType>(new LinkedHashSet<DictionaryEntryType>(list));
 					
+					/*
 					if (dictionaryEntryTypeList.size() == 1 && dictionaryEntryTypeList.get(0) == DictionaryEntryType.WORD_NOUN) {
 						
 						if (list.size() == 2 && list.get(0) == DictionaryEntryType.WORD_NOUN && list.get(1) == DictionaryEntryType.WORD_ADJECTIVE_NO) {
@@ -389,28 +389,31 @@ public class Validator {
 							currentPolishJapaneseEntry.setDictionaryEntryTypeList(list);
 							
 							System.out.println("AAAAA");
-						}
-						
-						
-						
-						
+						}						
 					}
+					*/
 					
+					if (dictionaryEntryTypeList.get(0) == list.get(0)) {
+						
+						currentPolishJapaneseEntry.setDictionaryEntryTypeList(list);
+						
+						System.out.println("AAAAA");
+					}
 					
 					
 					
 					
 				}				
 			}
-			*/
+			
 			
 			
 			
 			try {
 				
-				//CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false);
+				CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false);
 				
-				
+				/*
 				CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false,
 						new ICustomAdditionalCsvWriter() {
 		
@@ -460,8 +463,7 @@ public class Validator {
 					
 					
 				);
-				
-				
+				*/			
 				
 
 			} catch (Exception e) {
