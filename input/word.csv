@@ -328,8 +328,7 @@ WORD_INTERJECTION",,HIRAGANA,Genki 1-2,,彼,あれ,,are,"tam
 tamten
 tamta",daleko od mówcy i osoby docelowej,,882
 127,"WORD_NOUN
-WORD_INTERJECTION",,HIRAGANA,Genki 1-2,,何れ,どれ,,dore,który,,,"127
-11943
+WORD_INTERJECTION",,HIRAGANA,Genki 1-2,,何れ,どれ,,dore,który,,,"11943
 19212
 19213"
 128,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,Genki 1-2,,此の,この,,kono,ten,blisko mówcy (z rzeczownikiem),,
@@ -342,7 +341,7 @@ tamto
 tamten",daleko od mówcy i osoby docelowej (z rzeczownikiem),,"68
 8322"
 131,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,Genki 1-2,,何の,どの,,dono,"który
-jaki",z rzeczownikiem,,5639
+jaki",z rzeczownikiem,,
 132,WORD_NOUN,,HIRAGANA,Genki 1-2,,此処,ここ,,koko,tam,"miejsce, blisko mówcy",,
 133,WORD_NOUN,,HIRAGANA,Genki 1-2,,其処,そこ,,soko,tam,"miejsce, blisko osoby docelowej",,
 134,"WORD_PRONOUN
@@ -6834,7 +6833,9 @@ opuścić cenę",,,
 2519,WORD_NOUN,,HIRAGANA,,,患者,かんじゃ,,kanja,pacjent,,,
 2520,WORD_NOUN,,HIRAGANA,,,羽,はね,,hane,"pióro
 pierze
-puch",,,25493
+puch",,,"25493
+25565
+25566"
 2521,WORD_NOUN,,KATAKANA,,,-,ダンス,,dansu,taniec,,,
 2522,WORD_VERB_U,,HIRAGANA_KATAKANA,,,ダンスを習う,ダンスをならう,,dansu o narau,nauka tańca,,,
 2523,"WORD_ADJECTIVE_NA
@@ -14892,8 +14893,7 @@ charakter",,,
 5638,WORD_NOUN,,HIRAGANA,,,城,しろ,,shiro,"zamek
 pałac",,,
 5639,WORD_EMPTY,SUFFIX,HIRAGANA,,,殿,どの,,dono,"Pan
-Pani","przy nazwiskach, np. w adresie",,"131
-5640
+Pani","przy nazwiskach, np. w adresie",,"5640
 5641"
 5640,WORD_NOUN,,HIRAGANA,,,殿,しんがり,,shingari,tył,,,"5639
 5641"
@@ -28883,7 +28883,8 @@ wyższa szkoła średnia",,,
 sygnalizacja świetlna",,,
 11234,WORD_PARTICULE,,HIRAGANA,,,-,ば,,ba,"jeśli
 kiedy",,,"1976
-19989"
+19989
+25565"
 11235,WORD_EXPRESSION,,HIRAGANA,,,行けない,いけない,,ikenai,"nie wolno
 niewłaściwy",,,
 11236,WORD_NOUN,SUFFIX,HIRAGANA,,,行き,いき,,iki,"idący
@@ -69072,7 +69073,7 @@ zarządzany okręg",,,
 25470,WORD_NOUN,,HIRAGANA,,,強弱,きょうじゃく,,kyoujaku,"siła i słabość
 stopnie siły
 głośność",,,
-25471,WORD_NOUN,,HIRAGANA,,,怯弱,きょうじゃく,,kyoujaku,tchórz,,,
+25471,WORD_NOUN,,HIRAGANA,,,怯弱,きょうじゃく,,kyoujaku,tchórz,,,25558
 25472,WORD_NOUN,,KATAKANA,,,-,プレイガイド,,pureigaido,agencja sprzedaży biletów,ang: ticket agency,,
 25473,WORD_NOUN,,HIRAGANA,,,類義語,るいぎご,,ruigigo,quasi-synonim,"słowo, które ma podobne znaczenie do słowa, ale nie jest z nim zamienne",,
 25474,WORD_NOUN,,HIRAGANA,,,狭き門,せまきもん,,semakimon,"wąska brama
@@ -69128,7 +69129,9 @@ zewnętrzny",,,
 sposób na przetrwanie
 sposób ucieczki",,,
 25493,WORD_COUNTER,,HIRAGANA,,,羽,わ,,wa,klasyfikator na ptaki i króliki,,,"2520
-13595"
+13595
+25565
+25566"
 25494,WORD_NOUN,,KATAKANA,,,-,エアバッグ,,ea baggu,poduszka powietrzna,ang: air bag,,
 25495,WORD_NOUN,,KATAKANA,,,-,クラック,,kurakku,"pęknięcie
 szczelina
@@ -69151,7 +69154,7 @@ prywatny
 nieformalny
 sekretny
 poufały
-tajny",,,
+tajny",,,25568
 25499,WORD_NOUN,,HIRAGANA,,,応募,おうぼ,,oubo,"podanie
 aplikacja
 subskrypcja",,,
@@ -69177,10 +69180,10 @@ sztuczny penis",,,
 25508,WORD_NOUN,,HIRAGANA,,,張形,はりかた,,harikata,"przedmiot w kształcie penisa
 tradycyjny róg
 dildo
-sztuczny penis",,,
+sztuczny penis",,,25571
 25509,WORD_NOUN,,HIRAGANA,,,妄想,もうそう,,mousou,"dziki pomysł
 złudzenie
-urojenie",,,
+urojenie",,,25572
 25510,WORD_NOUN,,HIRAGANA,,,自由席,じゆうせき,,jiyuuseki,"niezarejestrowane miejsce
 wolne miejsce",,,
 25511,WORD_NOUN,,HIRAGANA,,,親もと,おやもと,,oyamoto,"dom rodzinny
@@ -69192,3 +69195,184 @@ dom (swój)",,,
 25514,WORD_VERB_U,,HIRAGANA,,,植う,うう,,uu,"rosnąć
 uprawiać
 sadzić",,,
+25515,WORD_NOUN,,KATAKANA,,,-,クリスマスイブ,,kurisumasuibu,wigilia,,,
+25516,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クリスマス・イヴ,,kurisumasuivu,wigilia,,,
+25517,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クリスマス・イブ,,kurisumasuibu,wigilia,,,
+25518,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ライブ・ハウス,,raibuhausu,"sklep, bar i etc, gdzie wykonywana jest muzyka na żywo",ang: live house,,
+25519,WORD_NOUN,,KATAKANA,,,-,パッキン,,pakkin,"pakowanie
+niemetalowa uszczelka
+uszczelka
+podkładka","ang: packing, non-metalic seal, washer, gasket",,
+25520,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クロスワード・パズル,,kurosuwaado pazuru,krzyżówka,ang: crossword puzzle,,
+25521,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クロス・ワード・パズル,,kurosuwaado pazuru,krzyżówka,ang: crossword puzzle,,
+25522,"WORD_INTERJECTION
+WORD_NOUN",,HIRAGANA,,,-,いらしゃい,,irashai,"proszę przyjść
+proszę iść
+proszę zostań
+witaj",honoryfikatywnie,,
+25523,WORD_EXPRESSION,,HIRAGANA,,,-,ふざけんな,,fuzakenna,"przestań pierdolić
+żartujesz sobie kurwa
+gadasz bzdury",wulgarnie,,
+25524,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,-,ふざけんじゃねーよ,,fuzaken janee yo,"przestań pierdolić
+żartujesz sobie kurwa
+gadasz bzdury",wulgarnie,,
+25525,WORD_EXPRESSION,,HIRAGANA,,,-,ふざけんじゃねえぞ,,fuzaken janee zo,"przestań pierdolić
+żartujesz sobie kurwa
+gadasz bzdury",wulgarnie,,
+25526,WORD_EXPRESSION,,HIRAGANA,,,-,ふざけんじゃないぞ,,fuzaken janai zo,"przestań pierdolić
+żartujesz sobie kurwa
+gadasz bzdury",wulgarnie,,
+25527,WORD_ADVERB,,HIRAGANA,,,-,ぐるりと,,gururito,"kręcenie się w kółko
+krążenie
+obracanie się",,,
+25528,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オフサイド・トラップ,,ofusaido torappu,pułapka ofsajdowa,ang: offside trap,,
+25529,WORD_NOUN,,KATAKANA,,,-,ピクチャ,,pikucha,"rysunek
+obraz
+obrazek",ang: picture,,
+25530,WORD_NOUN,,KATAKANA,,,-,コンプレッサ,,konpuressa,"kompresor
+sprężarka",,,
+25531,WORD_NOUN,,KATAKANA,,,-,ホチキス,,hochikisu,"zszywać
+spinacz do papieru",,,
+25532,WORD_MALE_NAME,,KATAKANA,,,-,チモシー,,chimoshii,Tymoteusz,,NO_TYPE_CHECK,
+25533,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クィンテット,,kuintetto,kwintet,wło: quintetto,,
+25534,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ドアチャイム,,doa chaimu,dzwonek do drzwi,,,
+25535,"WORD_EXPRESSION
+WORD_ADJECTIVE_I",,HIRAGANA,,,-,ぢゃない,,dyanai,[tworzenie przeczeń od rzeczowników i na-przymiotników],,,
+25536,WORD_NOUN,,KATAKANA,,,-,アンカ,,anka,"kotwica
+link do poprzedniego postu (np. na forum)",ang: anchor,,
+25537,WORD_ADJECTIVE_NA,,KATAKANA,,,-,クレイジー,,kureijii,"szalony
+oszalały
+wściekły",ang: crazy,,
+25538,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,プリーツ・スカート,,puriitsu sukaato,pofałdowania sukienka,,,
+25539,WORD_NOUN,,KATAKANA,,,-,ウォルフ,,worufu,wilk,ang: wolf,,
+25540,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ブュー,,buyuu,widok,ang: view,,
+25541,WORD_NOUN,,KATAKANA,,,-,メイト,,meito,"kumpel
+kolega
+mat",ang: mate,,
+25542,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,-,ぼやぼや,,boya boya,"nieostrożnie
+niedbale
+nierozważnie
+nieuważnie
+w roztargnieniu
+długie i rozczochrane (np. włosy)
+rozbłysk (np. ognia)
+wzrost (np. pary)",,,
+25543,WORD_ADJECTIVE_F,,KATAKANA,,,-,インジーニャス,,injiinyasu,pomysłowy,ang: ingenious,,
+25544,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,フリップ・フロップ,,furippu furoppu,przerzutnik,"układ sekwencyjny, ang: flip flop",,
+25545,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ショート・パンツ,,shooto pantsu,"krótki spodenki
+szorty","ang: short pants, shorts",,
+25546,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヘッド・コーチ,,heddo koochi,główny trener,ang: head coach,,
+25547,WORD_NOUN,,HIRAGANA,,,見透し,みとおし,,mitooshi,"perspektywa
+widoczność
+widzialność
+pogląd
+przewidywanie
+prognozowanie
+wizja
+wyobrażenie",,,
+25548,WORD_NOUN,,HIRAGANA,,,見通,みとおし,,mitooshi,"perspektywa
+widoczność
+widzialność
+pogląd
+przewidywanie
+prognozowanie
+wizja
+wyobrażenie",,,
+25549,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ショーウィンドー,,shoo windoo,"okno wystawowe
+witryna (w sklepie)",ang: show window,,
+25550,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ショーウィンドウ,,shoo windoo,"okno wystawowe
+witryna (w sklepie)",ang: show window,,
+25551,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ショー・ウインドー,,shoo uindoo,"okno wystawowe
+witryna (w sklepie)",ang: show window,,
+25552,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ショー・ウィンドー,,shoo windoo,"okno wystawowe
+witryna (w sklepie)",ang: show window,,
+25553,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ショー・ウィンドウ,,shoo windou,"okno wystawowe
+witryna (w sklepie)",ang: show window,,
+25554,WORD_NOUN,,KATAKANA,,,-,レアリスム,,rearisumu,realizm,,,
+25555,WORD_VERB_U,,HIRAGANA,,,寝ころぶ,ねころぶ,,nekorobu,"położyć się
+kłaść się
+odpoczywać
+rzucić się",,,
+25556,WORD_NOUN,,HIRAGANA,,,觀音,かんのん,,kannon,"Kannon
+Kwannon
+Buddyjska bogini miłosierdzia
+Guan Yin
+Avalokitesvara",,,
+25557,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,バックボーン・ネットワーク,,bakkuboon nettowaaku,sieć szkieletowa,and: backbone network,,
+25558,WORD_NOUN,,HIRAGANA,,,怯弱,きょじゃく,,kyojaku,tchórz,,,25471
+25559,WORD_NOUN,,KATAKANA,,,-,プレーガイド,,puree gaido,agencja sprzedaży biletów,ang: ticket agency,,
+25560,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,プレー・ガイド,,puree gaido,agencja sprzedaży biletów,ang: ticket agency,,
+25561,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,プレイ・ガイド,,purei gaido,agencja sprzedaży biletów,ang: ticket agency,,
+25562,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,凡ゆる,あらゆる,,arayuru,"wszyscy
+wszystko
+każdy",,,
+25563,WORD_VERB_RU,,HIRAGANA,,,煮つめる,につめる,,nitsumeru,"skondensować
+koncentrować
+osiągnąć kompromis
+dojść do kompromisu",,,
+25564,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,エロティック,,erotikku,"erotyczny
+erotyk",,,
+25565,WORD_COUNTER,,HIRAGANA,,,羽,ば,,ba,klasyfikator na ptaki i króliki,,,"2520
+11234
+25493
+25566"
+25566,WORD_COUNTER,,HIRAGANA,,,羽,ぱ,,pa,klasyfikator na ptaki i króliki,,,"2520
+25493
+25565"
+25567,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,エア・バッグ,,ea baggu,poduszka powietrzna,ang: air bag,,
+25568,"WORD_ADJECTIVE_NO
+WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,内々,ないない,,nainai,"krąg rodzinny
+wewnątrz
+w środku
+prywatny
+nieformalny
+sekretny
+poufały
+tajny",,,25498
+25569,"WORD_ADJECTIVE_NO
+WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,内内,うちうち,,uchiuchi,"krąg rodzinny
+wewnątrz
+w środku
+prywatny
+nieformalny
+sekretny
+poufały
+tajny",,,25570
+25570,"WORD_ADJECTIVE_NO
+WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,内内,ないない,,nainai,"krąg rodzinny
+wewnątrz
+w środku
+prywatny
+nieformalny
+sekretny
+poufały
+tajny",,,25569
+25571,WORD_NOUN,,HIRAGANA,,,張形,はりがた,,harigata,"przedmiot w kształcie penisa
+tradycyjny róg
+dildo
+sztuczny penis",,,25508
+25572,WORD_NOUN,,HIRAGANA,,,妄想,ぼうそう,,bousou,"dziki pomysł
+złudzenie
+urojenie",,,25509
+25573,WORD_NOUN,,HIRAGANA,,,盲想,もうそう,,mousou,"dziki pomysł
+złudzenie
+urojenie",,,25574
+25574,WORD_NOUN,,HIRAGANA,,,盲想,ぼうそう,,bousou,"dziki pomysł
+złudzenie
+urojenie",,,25573
+25575,WORD_NOUN,,HIRAGANA,,,親元,おやもと,,oyamoto,"dom rodzinny
+dom rodziców
+rodzice (swoje)
+dom (swój)",,,
+25576,WORD_NOUN,,HIRAGANA,,,親許,おやもと,,oyamoto,"dom rodzinny
+dom rodziców
+rodzice (swoje)
+dom (swój)",,,
+25577,WORD_NOUN,,HIRAGANA,,,樅の木,もみのき,,mominoki,jodła,,,
