@@ -1,15 +1,17 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.common.Validator;
-import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.api.example.ExampleManager;
+import pl.idedyk.japanese.dictionary.api.gramma.GrammaConjugaterManager;
+import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateResult;
+import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateResultType;
+import pl.idedyk.japanese.dictionary.api.keigo.KeigoHelper;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 
 public class Test {
 
@@ -223,6 +225,7 @@ public class Test {
 		}
 		*/
 		
+		/*
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 		
 		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
@@ -236,15 +239,50 @@ public class Test {
 
 		// katakana
 		List<KanaEntry> katakanaEntries = kanaHelper.getAllKatakanaKanaEntries();
-				
+		*/
+		
 		/*
 		JMEDictReader
 				.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		*/
 		
+		/*
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, 
 				jmeNewDictionary, null);
-		
+		*/
 		//CsvReaderWriter.generateCsv("input/word-new.csv", polishJapaneseEntries, true, true, false);
+		
+		KeigoHelper keigoHelper = new KeigoHelper();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			try {
+			
+				String kanji = polishJapaneseEntry.getKanji();
+				
+				if (kanji.equals("-") == true) {
+					polishJapaneseEntry.setKanji(null);
+				}
+				
+				Map<GrammaFormConjugateResultType, GrammaFormConjugateResult> grammaFormCache = new HashMap<GrammaFormConjugateResultType, GrammaFormConjugateResult>();
+				
+				GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, polishJapaneseEntry, grammaFormCache, null, true);
+				
+				for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntry.getDictionaryEntryTypeList()) {
+					GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, polishJapaneseEntry, grammaFormCache, currentDictionaryEntryType, true);
+				}
+				
+				ExampleManager.getExamples(keigoHelper, polishJapaneseEntry, grammaFormCache, null, true);
+				
+				for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntry.getDictionaryEntryTypeList()) {
+					ExampleManager.getExamples(keigoHelper, polishJapaneseEntry, grammaFormCache, currentDictionaryEntryType, true);
+				}
+
+			} catch (Exception e) {
+				System.out.println(polishJapaneseEntry.getId());
+			}
+			
+		}			
+				
 	}
 }
