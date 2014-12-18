@@ -382,6 +382,13 @@ public class Validator {
 								
 								if (list != null) {
 									
+									if (list.contains(DictionaryEntryType.WORD_EXPRESSION) == true) {
+										
+										list.remove(DictionaryEntryType.WORD_EXPRESSION);
+										
+										list.add(DictionaryEntryType.WORD_EXPRESSION);										
+									}									
+									
 									list = new ArrayList<DictionaryEntryType>(new LinkedHashSet<DictionaryEntryType>(list));
 									
 									csvWriter.write(convertListToString(list));
