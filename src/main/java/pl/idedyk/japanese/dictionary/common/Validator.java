@@ -370,8 +370,38 @@ public class Validator {
 				
 			}
 			
+			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
+				
+				List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
+				
+				List<DictionaryEntryType> list = ttt.get(currentPolishJapaneseEntry.getId());
+				
+				if (list != null) {
+					
+					if (dictionaryEntryTypeList.size() == 1 && dictionaryEntryTypeList.get(0) == DictionaryEntryType.WORD_NOUN) {
+						
+						if (list.size() == 2 && list.get(0) == DictionaryEntryType.WORD_NOUN && list.get(1) == DictionaryEntryType.WORD_ADJECTIVE_NO) {
+							
+							currentPolishJapaneseEntry.setDictionaryEntryTypeList(list);
+						}
+						
+						
+						
+						
+					}
+					
+					
+					
+					
+					
+				}				
+			}
+			
 			try {
 				
+				CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false);
+				
+				/*
 				CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false,
 						new ICustomAdditionalCsvWriter() {
 		
@@ -421,6 +451,7 @@ public class Validator {
 					
 					
 				);
+				*/
 
 			} catch (Exception e) {
 				throw new RuntimeException(e);
