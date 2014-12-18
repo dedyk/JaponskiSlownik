@@ -6556,7 +6556,9 @@ kampus",,,
 2392,WORD_NOUN,,KATAKANA_HIRAGANA,,,オレンジ色,オレンジいろ,,orenji iro,kolor pomarańczowy,,,
 2393,WORD_NOUN,,HIRAGANA,,,原色,げんしょく,,genshoku,podstawowe kolory,,,
 2394,WORD_NOUN,,HIRAGANA,,,色紙,しきし,,shikishi,kolorowy papier,,,6751
-2395,WORD_ADJECTIVE_NA,,HIRAGANA,,,好色,こうしょく,,koushoku,"erotyzm
+2395,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,好色,こうしょく,,koushoku,"erotyzm
 zmysłowość",,,
 2396,WORD_VERB_IRREGULAR,,HIRAGANA,,,色付けする,いろづけする,,iroduke suru,"kolorowanie
 barwienie",,,
@@ -6578,12 +6580,14 @@ złość",,,
 2404,WORD_NOUN,,KATAKANA,,,-,オーケストラ,,ookesutora,orkiestra,,,
 2405,WORD_NOUN,,HIRAGANA,,,拳銃,けんじゅう,,kenjuu,"pistolet
 rewolwer",,,
-2406,WORD_VERB_RU,VERB_TRANSITIVITY,HIRAGANA,,を,挙げる,あげる,o,ageru,"podnosić
+2406,"WORD_VERB_RU
+WORD_VERB_AUX",VERB_TRANSITIVITY,HIRAGANA,,を,挙げる,あげる,o,ageru,"podnosić
 wznosić
 odprawiać ceremonię",,,1081
 2407,WORD_VERB_U,VERB_INTRANSITIVITY,HIRAGANA,,が,挙がる,あがる,ga,agaru,"wznosić się
 podnosić się",,,
-2408,WORD_NOUN,,HIRAGANA,Genki 2-23,,選挙,せんきょ,,senkyo,"wybory
+2408,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,Genki 2-23,,選挙,せんきょ,,senkyo,"wybory
 wybór
 elekcja",,,
 2409,WORD_NOUN,,HIRAGANA,,,検挙,けんきょ,,kenkyo,"areszt
