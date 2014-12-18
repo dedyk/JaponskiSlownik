@@ -3,9 +3,11 @@ package pl.idedyk.japanese.dictionary.common;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
@@ -16,11 +18,12 @@ import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
-import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 
 import com.csvreader.CsvWriter;
 
@@ -95,147 +98,132 @@ public class Helper {
 		return result;
 	}
 
-	public static void generateAdditionalInfoFromEdict(TreeMap<String, List<JMEDictEntry>> jmedict,
+	public static void generateAdditionalInfoFromEdict(JMENewDictionary jmeNewDictionary,
 			TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) {
 
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 
 			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
 
-			List<JMEDictEntry> foundJMEDictList = findJMEdictEntry(jmedict, currentPolishJapaneseEntry);
-			EDictEntry foundEdictCommon = findEdictEntry(jmedictCommon, currentPolishJapaneseEntry);
-
-			AttributeList attributeList = currentPolishJapaneseEntry.getAttributeList();
-
-			int fixme = 1;
-			// slowo przestarzale
-			// sprawdzic wszystkie atrybuty
 			
-			if (foundJMEDictList != null) {
+			String kanji = currentPolishJapaneseEntry.getKanji();
+			String kana = currentPolishJapaneseEntry.getKana();
+			
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
+			
+			if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+				
+				GroupEntry groupEntry = groupEntryList.get(0);
+				
+				Set<String> groupEntryWordTypeList = groupEntry.getWordTypeList();
+				
+				if (groupEntryWordTypeList.size() == 0) {
+					continue;
+				}
 
-				for (JMEDictEntry foundJMEDict : foundJMEDictList) {
+				EDictEntry foundEdictCommon = findEdictEntry(jmedictCommon, currentPolishJapaneseEntry);
 
-					// common word
-					if (foundEdictCommon != null) {
+				AttributeList attributeList = currentPolishJapaneseEntry.getAttributeList();
+				
+				// common word
+				if (foundEdictCommon != null) {
 
-						if (attributeList.contains(AttributeType.COMMON_WORD) == false) {
-							attributeList.add(0, AttributeType.COMMON_WORD);
+					if (attributeList.contains(AttributeType.COMMON_WORD) == false) {
+						attributeList.add(0, AttributeType.COMMON_WORD);
+					}
+				}
+				
+				// suru verb
+				List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
+
+				if (groupEntryWordTypeList.contains("vs") == true && attributeList.contains(AttributeType.SURU_VERB) == false) {					
+					attributeList.add(AttributeType.SURU_VERB);
+				}
+				
+				// transitivity, intransitivity
+				if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_U) == true
+						|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_RU) == true
+						|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_IRREGULAR) == true) {
+
+					if (attributeList.contains(AttributeType.VERB_TRANSITIVITY) == false
+							&& attributeList.contains(AttributeType.VERB_INTRANSITIVITY) == false) {
+
+						if (groupEntryWordTypeList.contains("vt") == true) {
+							attributeList.add(AttributeType.VERB_TRANSITIVITY);
+
+						} else if (groupEntryWordTypeList.contains("vi") == true) {
+							attributeList.add(AttributeType.VERB_INTRANSITIVITY);
 						}
 					}
+				}
+				
+				// kanji/kana alone
+				if (attributeList.contains(AttributeType.KANJI_ALONE) == false && groupEntryWordTypeList.contains("uK") == true) {
+					attributeList.add(AttributeType.KANJI_ALONE);
+				}
 
-					// suru verb
-					List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry
-							.getDictionaryEntryTypeList();
+				if (attributeList.contains(AttributeType.KANA_ALONE) == false && groupEntryWordTypeList.contains("uk") == true) {
+					attributeList.add(AttributeType.KANA_ALONE);
+				}
 
-					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NOUN) == true) {
+				// archaism
+				/*
+				if (attributeList.contains(AttributeType.ARCHAISM) == false && groupEntryWordTypeList.contains("arch") == true) {
+					attributeList.add(AttributeType.ARCHAISM);
+				}
+				*/
 
-						if (foundJMEDict.getPos().contains("n") == true && foundJMEDict.getPos().contains("vs") == true
-								&& attributeList.contains(AttributeType.SURU_VERB) == false) {
+				// obsolete
+				if (attributeList.contains(AttributeType.OBSOLETE) == false && (groupEntryWordTypeList.contains("obs") == true || groupEntryWordTypeList.contains("ok") == true)) {
+					attributeList.add(AttributeType.OBSOLETE);
+				}
 
-							attributeList.add(AttributeType.SURU_VERB);
-						}
-					}
+				// obsure
+				if (attributeList.contains(AttributeType.OBSCURE) == false && groupEntryWordTypeList.contains("obsc") == true) {
+					attributeList.add(AttributeType.OBSCURE);
+				}
 
-					// transitivity, intransitivity
-					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_U) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_RU) == true
-							|| dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_IRREGULAR) == true) {
+				// suffix
+				if (attributeList.contains(AttributeType.SUFFIX) == false && groupEntryWordTypeList.contains("suf") == true) {
+					attributeList.add(AttributeType.SUFFIX);
+				}
 
-						/*
-						if (	attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == true &&
-								attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == false &&
-								foundJMEDict.getPos().contains("vi") == true) {
-							
-							System.err.println(currentPolishJapaneseEntry);
-							System.err.println(foundJMEDict);
-							
-							throw new RuntimeException("Different verb transitivity for: " + currentPolishJapaneseEntry);
-						}
+				// noun suffix
+				if (attributeList.contains(AttributeType.NOUN_SUFFIX) == false && groupEntryWordTypeList.contains("n-suf") == true) {
+					attributeList.add(AttributeType.NOUN_SUFFIX);
+				}
 
-						if (	attributeTypeList.contains(AttributeType.VERB_INTRANSITIVITY) == true && 
-								attributeTypeList.contains(AttributeType.VERB_TRANSITIVITY) == false &&							
-								foundJMEDict.getPos().contains("vt") == true) {
-							
-							System.err.println(currentPolishJapaneseEntry);
-							System.err.println(foundJMEDict);
-							
-							throw new RuntimeException("Different verb intransitivity for: " + currentPolishJapaneseEntry);
-						}
-						*/
+				// prefix
+				if (attributeList.contains(AttributeType.PREFIX) == false && groupEntryWordTypeList.contains("pref") == true) {
+					attributeList.add(AttributeType.PREFIX);
+				}
 
-						if (attributeList.contains(AttributeType.VERB_TRANSITIVITY) == false
-								&& attributeList.contains(AttributeType.VERB_INTRANSITIVITY) == false) {
-
-							if (foundJMEDict.getPos().contains("vt") == true) {
-								attributeList.add(AttributeType.VERB_TRANSITIVITY);
-
-							} else if (foundJMEDict.getPos().contains("vi") == true) {
-								attributeList.add(AttributeType.VERB_INTRANSITIVITY);
-							}
-						}
-					}
-
-					// kanji/kana alone
-					if (attributeList.contains(AttributeType.KANJI_ALONE) == false
-							&& foundJMEDict.getMisc().contains("uK") == true) {
-						attributeList.add(AttributeType.KANJI_ALONE);
-					}
-
-					if (attributeList.contains(AttributeType.KANA_ALONE) == false
-							&& foundJMEDict.getMisc().contains("uk") == true) {
-						attributeList.add(AttributeType.KANA_ALONE);
-					}
-
-					// archaism
-					if (attributeList.contains(AttributeType.ARCHAISM) == false
-							&& foundJMEDict.getMisc().contains("arch") == true) {
-						attributeList.add(AttributeType.ARCHAISM);
-					}
-
-					// obsolete
-					if (attributeList.contains(AttributeType.OBSOLETE) == false
-							&& (foundJMEDict.getMisc().contains("obs") == true || foundJMEDict.getMisc().contains("ok") == true)) {
-						attributeList.add(AttributeType.OBSOLETE);
-					}
-
-					// obsure
-					if (attributeList.contains(AttributeType.OBSCURE) == false
-							&& foundJMEDict.getMisc().contains("obsc") == true) {
-						attributeList.add(AttributeType.OBSCURE);
-					}
-
-					// suffix
-					if (attributeList.contains(AttributeType.SUFFIX) == false
-							&& foundJMEDict.getPos().contains("suf") == true) {
-						attributeList.add(AttributeType.SUFFIX);
-					}
-
-					// noun suffix
-					if (attributeList.contains(AttributeType.NOUN_SUFFIX) == false
-							&& foundJMEDict.getPos().contains("n-suf") == true) {
-						attributeList.add(AttributeType.NOUN_SUFFIX);
-					}
-
-					// prefix
-					if (attributeList.contains(AttributeType.PREFIX) == false
-							&& foundJMEDict.getPos().contains("pref") == true) {
-						attributeList.add(AttributeType.PREFIX);
-					}
-
-					// noun prefix
-					if (attributeList.contains(AttributeType.NOUN_PREFIX) == false
-							&& foundJMEDict.getPos().contains("n-pref") == true) {
-						attributeList.add(AttributeType.NOUN_PREFIX);
-					}
-										
-					// onamatopoeic or mimetic word
-					if (attributeList.contains(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD) == false
-							&& foundJMEDict.getMisc().contains("on-mim") == true) {
-						attributeList.add(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD);
-					}
-
+				// noun prefix
+				if (attributeList.contains(AttributeType.NOUN_PREFIX) == false && groupEntryWordTypeList.contains("n-pref") == true) {
+					attributeList.add(AttributeType.NOUN_PREFIX);
+				}
+									
+				// onamatopoeic or mimetic word
+				if (attributeList.contains(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD) == false && groupEntryWordTypeList.contains("on-mim") == true) {
+					attributeList.add(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD);
 				}
 			}
+		}
+	}
+
+	private static boolean isMultiGroup(List<GroupEntry> groupEntryList) {
+		
+		Set<Integer> uniqueGroupIds = new HashSet<Integer>();
+		
+		for (GroupEntry groupEntry : groupEntryList) {
+			uniqueGroupIds.add(groupEntry.getGroup().getId());
+		}
+		
+		if (uniqueGroupIds.size() == 1) {			
+			return false;
+			
+		} else {
+			return true;
 		}
 	}
 
@@ -251,22 +239,6 @@ public class Helper {
 		String kana = polishJapaneseEntry.getKana();
 
 		EDictEntry foundEdict = jmedict.get(EdictReader.getMapKey(kanji, kana));
-
-		return foundEdict;
-	}
-
-	private static List<JMEDictEntry> findJMEdictEntry(TreeMap<String, List<JMEDictEntry>> jmedict,
-			PolishJapaneseEntry polishJapaneseEntry) {
-
-		String kanji = polishJapaneseEntry.getKanji();
-
-		if (kanji != null && kanji.equals("-") == true) {
-			kanji = null;
-		}
-
-		String kana = polishJapaneseEntry.getKana();
-
-		List<JMEDictEntry> foundEdict = jmedict.get(JMEDictReader.getMapKey(kanji, kana));
 
 		return foundEdict;
 	}

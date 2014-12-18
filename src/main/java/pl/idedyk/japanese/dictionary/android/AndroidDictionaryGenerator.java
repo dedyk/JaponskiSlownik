@@ -61,13 +61,7 @@ public class AndroidDictionaryGenerator {
 		if (args.length > 0) {
 			fullMode = Boolean.parseBoolean(args[0]);
 		}
-				
-		System.out.println("readEdict");
-
-		// read edict
-		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader
-				.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
-
+		
 		System.out.println("readEdictCommon");
 
 		// read edict common
@@ -88,7 +82,7 @@ public class AndroidDictionaryGenerator {
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
 		
 		@SuppressWarnings("unused")
-		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedict, jmedictCommon, jmedictName,
+		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmedictName,
 				"input/word.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv",
 				"output/transitive_intransitive_pairs.csv");
 		
@@ -112,8 +106,7 @@ public class AndroidDictionaryGenerator {
 	}
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(
-			JMENewDictionary jmeNewDictionary, TreeMap<String, List<JMEDictEntry>> jmedict, 
-			TreeMap<String, EDictEntry> jmedictCommon,
+			JMENewDictionary jmeNewDictionary, TreeMap<String, EDictEntry> jmedictCommon,
 			TreeMap<String, List<JMEDictEntry>> jmedictName, String sourceFileName,
 			String transitiveIntransitivePairsFileName, String destinationFileName,
 			String transitiveIntransitivePairsOutputFile) throws Exception {
@@ -155,7 +148,7 @@ public class AndroidDictionaryGenerator {
 		List<TransitiveIntransitivePair> readTransitiveIntransitivePair = readTransitiveIntransitivePair(transitiveIntransitivePairsFileName);
 
 		// generate additional data from edict
-		Helper.generateAdditionalInfoFromEdict(jmedict, jmedictCommon, result);
+		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, result);
 
 		// generate transitive intransitive pairs
 		Helper.generateTransitiveIntransitivePairs(readTransitiveIntransitivePair, result,
