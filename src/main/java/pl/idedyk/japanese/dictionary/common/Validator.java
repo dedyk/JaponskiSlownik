@@ -362,10 +362,16 @@ public class Validator {
 					}					
 				}
 				
-				if (abc == false) {
-					
+				if (abc == false) {					
 					
 					ttt.remove(currentPolishJapaneseEntry.getId());
+					
+				} else {
+					
+					List<DictionaryEntryType> list = new ArrayList<DictionaryEntryType>(new LinkedHashSet<DictionaryEntryType>(ttt.get(currentPolishJapaneseEntry.getId())));
+					
+					ttt.put(currentPolishJapaneseEntry.getId(), list);
+					
 				}
 				
 			}
@@ -379,7 +385,7 @@ public class Validator {
 				
 				if (list != null) {
 					
-					list = new ArrayList<DictionaryEntryType>(new LinkedHashSet<DictionaryEntryType>(list));
+					
 					
 					/*
 					if (dictionaryEntryTypeList.size() == 1 && dictionaryEntryTypeList.get(0) == DictionaryEntryType.WORD_NOUN) {
@@ -392,6 +398,13 @@ public class Validator {
 						}						
 					}
 					*/
+					
+					if (list.contains(DictionaryEntryType.WORD_EXPRESSION) == true) {
+						
+						list.remove(DictionaryEntryType.WORD_EXPRESSION);
+						
+						list.add(DictionaryEntryType.WORD_EXPRESSION);										
+					}
 					
 					if (dictionaryEntryTypeList.get(0) == list.get(0)) {
 						
@@ -411,9 +424,9 @@ public class Validator {
 			
 			try {
 				
-				//CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false);
+				CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false);
 				
-				
+				/*
 				CsvReaderWriter.generateCsv("input/word-new2.csv", polishJapaneseKanjiEntries, true, true, false,
 						new ICustomAdditionalCsvWriter() {
 		
@@ -423,16 +436,7 @@ public class Validator {
 								List<DictionaryEntryType> list = ttt.get(polishJapaneseEntry.getId());
 								
 								if (list != null) {
-									
-									if (list.contains(DictionaryEntryType.WORD_EXPRESSION) == true) {
-										
-										list.remove(DictionaryEntryType.WORD_EXPRESSION);
-										
-										list.add(DictionaryEntryType.WORD_EXPRESSION);										
-									}									
-									
-									list = new ArrayList<DictionaryEntryType>(new LinkedHashSet<DictionaryEntryType>(list));
-									
+																		
 									csvWriter.write(convertListToString(list));
 									
 								} else {
@@ -463,6 +467,7 @@ public class Validator {
 					
 					
 				);
+				*/
 						
 				
 
