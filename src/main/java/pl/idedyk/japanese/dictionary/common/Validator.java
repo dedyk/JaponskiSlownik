@@ -271,15 +271,7 @@ public class Validator {
 					}
 				}
 			}
-			
-			if (wasError == true) {
-				throw new DictionaryException("Error");
-			}
-			
-			//
-			
-			wasError = false;
-						
+									
 			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
 			
 				if (currentPolishJapaneseEntry.getParseAdditionalInfoList().contains(
