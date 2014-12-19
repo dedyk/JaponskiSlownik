@@ -31,7 +31,6 @@ import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
-import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -43,7 +42,6 @@ import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
-import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 import pl.idedyk.japanese.dictionary.tools.KanjiUtils;
 import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
@@ -68,11 +66,6 @@ public class AndroidDictionaryGenerator {
 		TreeMap<String, EDictEntry> jmedictCommon = EdictReader
 				.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
 
-		// read jmedict name
-		System.out.println("jmedictName");
-		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader
-				.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
-
 		// read new jmedict
 		System.out.println("new jmedict");
 		
@@ -80,9 +73,13 @@ public class AndroidDictionaryGenerator {
 		
 		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
+				
+		List<JMEDictNewNativeEntry> jmedictNameNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
+		
+		JMENewDictionary jmeNewNameDictionary = jmedictNewReader.createJMENewDictionary(jmedictNameNativeList);
 		
 		@SuppressWarnings("unused")
-		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmedictName,
+		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmeNewNameDictionary,
 				"input/word.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv",
 				"output/transitive_intransitive_pairs.csv");
 		
@@ -107,7 +104,7 @@ public class AndroidDictionaryGenerator {
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(
 			JMENewDictionary jmeNewDictionary, TreeMap<String, EDictEntry> jmedictCommon,
-			TreeMap<String, List<JMEDictEntry>> jmedictName, String sourceFileName,
+			JMENewDictionary jmeNewNameDictionary, String sourceFileName,
 			String transitiveIntransitivePairsFileName, String destinationFileName,
 			String transitiveIntransitivePairsOutputFile) throws Exception {
 
@@ -130,7 +127,7 @@ public class AndroidDictionaryGenerator {
 		// validate		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries,
-				jmeNewDictionary, jmedictName);
+				jmeNewDictionary, jmeNewNameDictionary);
 
 		System.out.println("checkAndSavePolishJapaneseEntries: detectDuplicatePolishJapaneseKanjiEntries");
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);

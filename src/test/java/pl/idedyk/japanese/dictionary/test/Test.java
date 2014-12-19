@@ -1,5 +1,16 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.List;
+
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.common.Validator;
+import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
+
 public class Test {
 
 	public static void main(String[] args) throws Exception {
@@ -199,7 +210,7 @@ public class Test {
 		
 		// radicalList.getClass();		
 		
-		//List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 		
 		/*
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
@@ -212,7 +223,7 @@ public class Test {
 		}
 		*/
 		
-		/*
+		
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 		
 		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
@@ -226,17 +237,20 @@ public class Test {
 
 		// katakana
 		List<KanaEntry> katakanaEntries = kanaHelper.getAllKatakanaKanaEntries();
-		*/
+		
 		
 		/*
 		JMEDictReader
 				.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		*/
 		
-		/*
+		List<JMEDictNewNativeEntry> jmedictNameNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
+		
+		JMENewDictionary jmeNewNameDictionary = jmedictNewReader.createJMENewDictionary(jmedictNameNativeList);
+		
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, 
-				jmeNewDictionary, null);
-		*/
+				jmeNewDictionary, jmeNewNameDictionary);
+		
 		//CsvReaderWriter.generateCsv("input/word-new.csv", polishJapaneseEntries, true, true, false);
 		
 		/*
