@@ -1,18 +1,5 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.api.example.ExampleManager;
-import pl.idedyk.japanese.dictionary.api.gramma.GrammaConjugaterManager;
-import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateResult;
-import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateResultType;
-import pl.idedyk.japanese.dictionary.api.keigo.KeigoHelper;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-
 public class Test {
 
 	public static void main(String[] args) throws Exception {
@@ -212,7 +199,7 @@ public class Test {
 		
 		// radicalList.getClass();		
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		//List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 		
 		/*
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
@@ -252,6 +239,7 @@ public class Test {
 		*/
 		//CsvReaderWriter.generateCsv("input/word-new.csv", polishJapaneseEntries, true, true, false);
 		
+		/*
 		KeigoHelper keigoHelper = new KeigoHelper();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
@@ -280,9 +268,15 @@ public class Test {
 
 			} catch (Exception e) {
 				System.out.println(polishJapaneseEntry.getId());
-			}
-			
-		}			
-				
+			}			
+		}
+		*/	
+		
+		/*
+		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile("../JapaneseDictionary_additional/kradfile");
+
+		System.out.println("generateKanjiEntries: readKanjiDic2");
+		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2("../JapaneseDictionary_additional/kanjidic2.xml", kradFileMap);
+		*/
 	}
 }

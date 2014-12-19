@@ -92,12 +92,19 @@ public class KanjiDic2Reader {
         	
         	Element readingMeaning = (Element)currentCharacterAsElement.selectSingleNode("reading_meaning");
         	
-        	Element rmgroup = (Element)readingMeaning.selectSingleNode("rmgroup");
+        	List<String> onReading = new ArrayList<String>();
+        	List<String> kunReading = new ArrayList<String>();
         	
-        	List<String> onReading = getReading(rmgroup, "ja_on");
-        	List<String> kunReading = getReading(rmgroup, "ja_kun");
+        	List<String> engMeaning = new ArrayList<String>();
         	
-        	List<String> engMeaning = getEngMeaning(rmgroup);
+        	if (readingMeaning != null) {
+        		Element rmgroup = (Element)readingMeaning.selectSingleNode("rmgroup");
+        		
+            	onReading = getReading(rmgroup, "ja_on");
+            	kunReading = getReading(rmgroup, "ja_kun");
+            	
+            	engMeaning = getEngMeaning(rmgroup);
+        	}        	
         	
         	int strokeCount = Integer.parseInt(currentCharacterAsElement.selectSingleNode("misc/stroke_count").getText());
         	
