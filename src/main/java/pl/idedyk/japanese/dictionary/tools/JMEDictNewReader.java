@@ -19,6 +19,7 @@ import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.K_Ele;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.LSource;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.R_Ele;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.Sense;
+import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.Trans;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
@@ -97,6 +98,13 @@ public class JMEDictNewReader {
 							
 							break;
 						}
+						
+						case "trans": {
+							
+							processTrans(jmedictNewNativeEntry, currentRowElement);
+							
+							break;							
+						}
 							
 						default: {														
 							throw new RuntimeException("Unknown element name: " + currentRowElementName);
@@ -119,7 +127,7 @@ public class JMEDictNewReader {
 
 		return result;
 	}
-	
+
 	private void processEntSeq(JMEDictNewNativeEntry jmedictNewNativeEntry, Element element) {
 		
 		Integer ent_seq = Integer.parseInt(element.getText());
@@ -420,6 +428,57 @@ public class JMEDictNewReader {
 		sense.getLsource().add(lSource);
 	}
 	
+	
+	protected void processTrans(JMEDictNewNativeEntry jmedictNewNativeEntry, Element element) {
+		
+		Trans trans = new Trans();
+		
+		List<?> rowElements = element.elements();
+		
+		for (Object currentRowElementObject : rowElements) {
+			
+			Element currentRowElement = (Element)currentRowElementObject;
+			
+			String currentRowElementName = currentRowElement.getName();
+			
+			switch (currentRowElementName) {
+								
+				case "name_type": {
+					
+					String nameType = entityMapper.getEntity(currentRowElement.getText());
+					
+					trans.getName_type().add(nameType);
+					
+					break;
+				}
+								
+				case "xref": {
+					
+					String xref = currentRowElement.getText();
+					
+					trans.getXref().add(xref);
+					
+					break;
+				}
+				
+				case "trans_det": {
+					
+					String transDet = currentRowElement.getText();
+					
+					trans.getTrans_det().add(transDet);
+					
+					break;					
+				}
+												
+				default: {					
+					throw new RuntimeException("Unknown trans element name: " + currentRowElementName);					
+				}			
+			}			
+		}
+		
+		jmedictNewNativeEntry.getTrans().add(trans);
+	}
+	
 	public JMENewDictionary createJMENewDictionary(List<JMEDictNewNativeEntry> jmedictNativeList) {
 				
 		JMENewDictionary jmeNewDictionary = new JMENewDictionary();
@@ -656,7 +715,23 @@ public class JMEDictNewReader {
 			for (String currentSInf : s_inf) {
 				additionalInfoList.add(currentSInf);
 			}
-
+		}
+		
+		List<Trans> transList = jmeDictNewNativeEntry.getTrans();
+		
+		for (Trans trans : transList) {
+			
+			List<String> name_type = trans.getName_type();
+			
+			List<String> trans_det = trans.getTrans_det();
+		
+			for (String currentNameType : name_type) {				
+				wordTypeList.add(currentNameType);
+			}
+			
+			for (String currentTransDet : trans_det) {
+				translateList.add(currentTransDet);
+			}
 		}
 		
 		groupEntry.setWordTypeList(wordTypeList);

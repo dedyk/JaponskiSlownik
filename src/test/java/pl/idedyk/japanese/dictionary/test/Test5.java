@@ -16,13 +16,14 @@ public class Test5 {
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
 		List<JMEDictNewNativeEntry> jmedictNativeTestList = new ArrayList<JMEDictNewNativeEntry>();
 
 		for (JMEDictNewNativeEntry jmeDictNewNativeEntry : jmedictNativeList) {
 
-			if (jmeDictNewNativeEntry.getEnt_seq().intValue() == 1194500) {
+			if (jmeDictNewNativeEntry.getEnt_seq().intValue() == 5000037) {
 
 				jmedictNativeTestList.add(jmeDictNewNativeEntry);
 
@@ -46,7 +47,7 @@ public class Test5 {
 		}
 		*/
 		
-		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("生花", "せいか");
+		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("ＪＲ三山木駅", "ジェイアールみやまきえき");
 
 		for (GroupEntry groupEntry : groupEntryList) {							
 			printGroupEntry(groupEntry);

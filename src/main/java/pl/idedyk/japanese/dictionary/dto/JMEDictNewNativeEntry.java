@@ -13,6 +13,8 @@ public class JMEDictNewNativeEntry {
 	
 	private List<Sense> sense = new ArrayList<JMEDictNewNativeEntry.Sense>();
 	
+	private List<Trans> trans = new ArrayList<JMEDictNewNativeEntry.Trans>(); 
+	
 	public Integer getEnt_seq() {
 		return ent_seq;
 	}
@@ -45,12 +47,20 @@ public class JMEDictNewNativeEntry {
 		this.sense = sense;
 	}
 
+	public List<Trans> getTrans() {
+		return trans;
+	}
+
+	public void setTrans(List<Trans> trans) {
+		this.trans = trans;
+	}
+	
 	///
 
 	@Override
 	public String toString() {
 		return "JMEDictNewNativeEntry [ent_seq=" + ent_seq + ", k_ele=" + k_ele + ", r_ele=" + r_ele + ", sense="
-				+ sense + "]";
+				+ sense + ", trans=" + trans + "]";
 	}
 
 	public static class K_Ele {
@@ -315,6 +325,44 @@ public class JMEDictNewNativeEntry {
 		@Override
 		public String toString() {
 			return "LSource [lang=" + lang + ", value=" + value + ", wasei=" + wasei + ", type=" + type + "]";
+		}
+	}
+	
+	public static class Trans {
+		
+		private List<String> name_type = new ArrayList<String>();
+		
+		private List<String> xref = new ArrayList<String>();
+		
+		private List<String> trans_det = new ArrayList<String>();
+
+		public List<String> getName_type() {
+			return name_type;
+		}
+
+		public void setName_type(List<String> name_type) {
+			this.name_type = name_type;
+		}
+
+		public List<String> getXref() {
+			return xref;
+		}
+
+		public void setXref(List<String> xref) {
+			this.xref = xref;
+		}
+
+		public List<String> getTrans_det() {
+			return trans_det;
+		}
+
+		public void setTrans_det(List<String> trans_det) {
+			this.trans_det = trans_det;
+		}
+
+		@Override
+		public String toString() {
+			return "Trans [name_type=" + name_type + ", xref=" + xref + ", trans_det=" + trans_det + "]";
 		}
 	}
 }
