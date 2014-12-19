@@ -88,7 +88,7 @@ public class Validator {
 			}
 			*/
 
-			String kana = polishJapaneseEntry.getKana();
+			String kana = polishJapaneseEntry.getKana().replaceAll("・", "");
 			String romaji = polishJapaneseEntry.getRomaji();
 			String prefixKana = polishJapaneseEntry.getPrefixKana();
 			String prefixRomaji = polishJapaneseEntry.getPrefixRomaji();
@@ -99,8 +99,20 @@ public class Validator {
 
 			String currentRomajiWithPrefix = prefixRomaji + romaji;
 
-			KanaWord currentKanaAsKanaAsKanaWord = kanaHelper.convertKanaStringIntoKanaWord(kana,
-					kanaCache, false);
+			KanaWord currentKanaAsKanaAsKanaWord = null;
+			
+			try {
+				currentKanaAsKanaAsKanaWord = kanaHelper.convertKanaStringIntoKanaWord(kana,
+						kanaCache, false);
+				
+			} catch (Exception e) {
+				if (polishJapaneseEntry.getWordType() != WordType.HIRAGANA_EXCEPTION && polishJapaneseEntry.getWordType() != WordType.KATAKANA_EXCEPTION) {
+					throw new RuntimeException(e);
+					
+				} else {
+					continue;
+				}
+			}
 
 			String currentKanaAsRomaji = kanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
 
