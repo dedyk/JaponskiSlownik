@@ -592,8 +592,6 @@ public class Validator {
 
 			int id = polishJapaneseEntry.getId();
 			String kanji = polishJapaneseEntry.getKanji();
-
-			System.out.println(id);
 			
 			if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
 				continue;
