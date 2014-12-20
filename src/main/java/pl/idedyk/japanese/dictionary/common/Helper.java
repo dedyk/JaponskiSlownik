@@ -9,12 +9,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
+import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
@@ -99,12 +101,11 @@ public class Helper {
 	}
 
 	public static void generateAdditionalInfoFromEdict(JMENewDictionary jmeNewDictionary,
-			TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) {
+			TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
 
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 
 			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
-
 			
 			String kanji = currentPolishJapaneseEntry.getKanji();
 			String kana = currentPolishJapaneseEntry.getKana();
@@ -209,6 +210,72 @@ public class Helper {
 				}
 			}
 		}
+		
+		// generowanie alternatyw
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			String kanji = polishJapaneseEntry.getKanji();
+			String kana = polishJapaneseEntry.getKana();
+			
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
+			
+			List<PolishJapaneseEntry> foundPolishJapaneseEntryGroupList = new ArrayList<PolishJapaneseEntry>();
+			
+			if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+								
+				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
+					
+					String groupEntryKanji = groupEntry.getKanji();
+					String groupEntryKana = groupEntry.getKana();
+					
+					List<GroupEntry> groupEntryList2 = jmeNewDictionary.getGroupEntryList(groupEntryKanji, groupEntryKana);
+					
+					if (isMultiGroup(groupEntryList2) == false) {
+						
+						PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry2(polishJapaneseEntries, 
+								groupEntryKanji, groupEntryKana);
+						
+						if (findPolishJapaneseEntry != null) {
+							foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
+						}
+						
+					}
+				}
+			}
+			
+			if (foundPolishJapaneseEntryGroupList.size() > 1) {
+				
+				Set<Integer> foundPolishJapaneseEntryGroupListAllIds = new TreeSet<Integer>();
+				
+				for (PolishJapaneseEntry currentFoundPolishJapanaeseEntryGroupList : foundPolishJapaneseEntryGroupList) {					
+					foundPolishJapaneseEntryGroupListAllIds.add(currentFoundPolishJapanaeseEntryGroupList.getId());					
+				}
+				
+				for (PolishJapaneseEntry currentFoundPolishJapanaeseEntryGroupList : foundPolishJapaneseEntryGroupList) {
+					
+					if (currentFoundPolishJapanaeseEntryGroupList.getAttributeList().contains(AttributeType.ALTERNATIVE) == false) {
+						
+						Set<Integer> foundPolishJapaneseEntryGroupListIdsWithoutCurrentId = new TreeSet<Integer>(foundPolishJapaneseEntryGroupListAllIds);
+						
+						foundPolishJapaneseEntryGroupListIdsWithoutCurrentId.remove(currentFoundPolishJapanaeseEntryGroupList.getId());
+						
+						for (Integer currentAlternativeId : foundPolishJapaneseEntryGroupListIdsWithoutCurrentId) {
+							
+							currentAlternativeId.toString();
+							
+							/*
+							currentFoundPolishJapanaeseEntryGroupList.getAttributeList().
+								addAttributeValue(AttributeType.ALTERNATIVE, currentAlternativeId.toString());
+							
+							// tymczasowo
+							
+							*/
+						}						
+					}
+				}				
+			}
+		}				
 	}
 
 	private static boolean isMultiGroup(List<GroupEntry> groupEntryList) {
@@ -603,6 +670,30 @@ public class Helper {
 			}
 		}
 
+		return null;
+	}
+	
+	private static PolishJapaneseEntry findPolishJapaneseEntry2(List<PolishJapaneseEntry> polishJapaneseEntries, 
+			String findKanji, String findKana) {
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+						
+			String kanji = polishJapaneseEntry.getKanji();
+			String kana = polishJapaneseEntry.getKana();
+			
+			if (kanji == null || kanji.equals("-") == true) {
+				kanji = "$$$NULL$$$";
+			}
+
+			if (findKanji == null || findKanji.equals("-") == true) {
+				findKanji = "$$$NULL$$$";
+			}
+			
+			if (kanji.equals(findKanji) == true && kana.equals(findKana) == true) {
+				return polishJapaneseEntry;
+			}
+		}
+		
 		return null;
 	}
 }
