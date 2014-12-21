@@ -254,6 +254,10 @@ public class Helper {
 				
 				for (PolishJapaneseEntry currentFoundPolishJapanaeseEntryGroupList : foundPolishJapaneseEntryGroupList) {
 					
+					if (currentFoundPolishJapanaeseEntryGroupList.getParseAdditionalInfoList().contains(ParseAdditionalInfo.NO_ALTERNATIVE) == true) {
+						continue;
+					}
+					
 					if (currentFoundPolishJapanaeseEntryGroupList.getAttributeList().contains(AttributeType.ALTERNATIVE) == false) {
 						
 						Set<Integer> foundPolishJapaneseEntryGroupListIdsWithoutCurrentId = new TreeSet<Integer>(foundPolishJapaneseEntryGroupListAllIds);
