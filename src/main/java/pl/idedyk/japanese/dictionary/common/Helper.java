@@ -262,15 +262,9 @@ public class Helper {
 						
 						for (Integer currentAlternativeId : foundPolishJapaneseEntryGroupListIdsWithoutCurrentId) {
 							
-							currentAlternativeId.toString();
-							
-							/*
 							currentFoundPolishJapanaeseEntryGroupList.getAttributeList().
 								addAttributeValue(AttributeType.ALTERNATIVE, currentAlternativeId.toString());
-							
-							// tymczasowo
-							
-							*/
+
 						}						
 					}
 				}				
