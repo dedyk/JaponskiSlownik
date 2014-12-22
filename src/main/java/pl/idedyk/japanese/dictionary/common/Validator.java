@@ -17,7 +17,12 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
+import pl.idedyk.japanese.dictionary.api.example.ExampleManager;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
+import pl.idedyk.japanese.dictionary.api.gramma.GrammaConjugaterManager;
+import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateResult;
+import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateResultType;
+import pl.idedyk.japanese.dictionary.api.keigo.KeigoHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
@@ -225,10 +230,11 @@ public class Validator {
 				} else {
 					throw new DictionaryException("Validate error for word: " + currentKana);
 				}
-			}
-
-		
+			}		
 		}
+		
+		// wyliczanie form gramatycznych i przykladow
+		countGrammaFormAndExamples(polishJapaneseKanjiEntries);		
 				
 		if (jmeNewDictionary != null) {
 			
@@ -416,6 +422,9 @@ public class Validator {
 			// walidacja grup edict
 			validateEdictGroup(jmeNewDictionary, polishJapaneseKanjiEntries);
 		}
+		
+		// wyliczanie form gramatycznych i przykladow
+		countGrammaFormAndExamples(polishJapaneseKanjiEntries);		
 	}
 
 	private static KanaWord createKanaWord(KanaHelper kanaHelper, String romaji, WordType wordType, Map<String, KanaEntry> hiraganaCache,
@@ -1163,5 +1172,52 @@ public class Validator {
 		}
 		
 		return sb.toString();
+	}
+	
+	private static void countGrammaFormAndExamples(List<PolishJapaneseEntry> polishJapaneseKanjiEntries) throws DictionaryException {
+		
+		boolean wasError = false;
+		
+		KeigoHelper keigoHelper = new KeigoHelper();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			String kanji = polishJapaneseEntry.getKanji();
+			
+			if (kanji.equals("-") == true) {
+				polishJapaneseEntry.setKanji(null);
+			}
+			
+			try {
+				
+				Map<GrammaFormConjugateResultType, GrammaFormConjugateResult> grammaFormCache = new HashMap<GrammaFormConjugateResultType, GrammaFormConjugateResult>();
+				
+				GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, polishJapaneseEntry, grammaFormCache, null, true);
+				
+				for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntry.getDictionaryEntryTypeList()) {
+					GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, polishJapaneseEntry, grammaFormCache, currentDictionaryEntryType, true);
+				}
+				
+				ExampleManager.getExamples(keigoHelper, polishJapaneseEntry, grammaFormCache, null, true);
+				
+				for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntry.getDictionaryEntryTypeList()) {
+					ExampleManager.getExamples(keigoHelper, polishJapaneseEntry, grammaFormCache, currentDictionaryEntryType, true);
+				}
+				
+			} catch (Exception e) {
+				
+				System.out.println("Błąd wyliczania form gramatycznych i przykładów dla: " + polishJapaneseEntry + ": " + e.getMessage() + "\n");
+								
+				wasError = true;
+			}	
+			
+			// przywrocenie
+			polishJapaneseEntry.setKanji(kanji);
+		}	
+		
+		if (wasError == true) { // jesli jest blad walidacji			
+			throw new DictionaryException("Error");
+		}		
+
 	}
 }
