@@ -6059,7 +6059,7 @@ szanowna pani",przyrostek honoryfikatywny,,14047
 kosmos",,,
 2184,WORD_NOUN,,HIRAGANA,Genki 2-20,,宇宙人,うちゅうじん,,uchuu jin,"kosmita
 obcy",,,
-2185,WORD_NOUN,,KATAKANA,,,-,ヘッドフォン,,heddo fon,słuchawki,,,
+2185,WORD_NOUN,,KATAKANA,,,-,ヘッドフォン,,heddo fon,słuchawki,ang: headphone,,
 2186,WORD_NOUN,,KATAKANA,,,-,トラクター,,torakutaa,"traktor
 ciągnik rolniczy",,,
 2187,"WORD_NOUN
@@ -60553,8 +60553,12 @@ tętniący życiem
 ożywiony",,,
 22535,WORD_VERB_U,,HIRAGANA,,,生返る,いきかえる,,ikikaeru,"cucić
 wskrzeszać
+odnawiać
 ożywić
-przywrócić do życia",,,
+przywracać do życia
+przywrócić do życia
+zdrowieć
+dojść do siebie",,,
 22536,WORD_NOUN,,HIRAGANA,,,社会復帰,しゃかいふっき,,shakai fukki,"resocjalizacja
 resocjalizowanie",,,
 22537,WORD_NOUN,,HIRAGANA,,,緊迫,きんぱく,,kinpaku,"napięcie
@@ -70755,12 +70759,15 @@ szukać po omacku
 poszukiwanie rozwiązania
 badanie, aby znaleźć rozwiązanie",,,
 26071,WORD_NOUN,,KATAKANA,,,-,ジャズ,,jazu,jazz,,,
-26072,WORD_NOUN,,KATAKANA,,,-,ヘッドホン,,heddofon,słuchawki,ang: headphone,,
+26072,WORD_NOUN,,KATAKANA,,,-,ヘッドホン,,heddohon,słuchawki,ang: headphone,,
 26073,WORD_NOUN,,HIRAGANA,,,心不全,しんふぜん,,shinfuzen,"niewydolność serca
 uszkodzenie serca",,,
-26074,WORD_VERB_U,,HIRAGANA,,,生き返る,いきかえる,,ikikaeru,"odnawiać
+26074,WORD_VERB_U,,HIRAGANA,,,生き返る,いきかえる,,ikikaeru,"cucić
 wskrzeszać
+odnawiać
+ożywić
 przywracać do życia
+przywrócić do życia
 zdrowieć
 dojść do siebie",,,
 26075,WORD_NOUN,,HIRAGANA,,,顕在,けんざい,,kenzai,"rzeczywisty
@@ -70770,3 +70777,28 @@ klarowny
 jasny
 oczywisty
 wyraźny",,,
+26076,WORD_NOUN,,KATAKANA,,,-,クラスメイト,,kurasumeito,"kolega z klasy
+koleżanka z klasy",ang: classmate,,
+26077,WORD_NOUN,,KATAKANA,,,-,クラスメート,,kurasumeeto,"kolega z klasy
+koleżanka z klasy",ang: classmate,,
+26078,WORD_NOUN,,KATAKANA,,,-,ブレスト,,buresuto,"pierś
+żabka (styl pływacki, skrót)
+burza mózgów (skrót)","ang: breast, breast stroke, brainstorming",,
+26079,WORD_NOUN,,KATAKANA,,,-,ブレストストローク,,buresuto sutorooku,"styl klasyczny
+żabka (styl pływacki)",ang: breaststroke,,
+26080,WORD_NOUN,,HIRAGANA,,,拘禁,こうきん,,koukin,internowanie,,,
+26081,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,敏速,びんそく,,binsoku,"szybki
+prędki
+zręczny
+zwinny
+sprawny
+aktywny
+szybkość
+prędkość
+zręczność
+zwinność
+sprawność
+aktywność",,,
+26082,WORD_NOUN,,HIRAGANA,,,特例,とくれい,,tokurei,"specjalny przypadek
+wyjątek",,,
