@@ -35039,8 +35039,11 @@ siła armii",,,
 kadra wojskowa",,,
 14130,WORD_NOUN,,HIRAGANA,,,兵,つわもの,,tsuwamono,"żołnierz
 wojownik
+bojownik
+silny mężczyzna
 silny człowiek
-niezwykły człowiek
+wyjątkowa osoba
+wyjątkowy człowiek
 odważny człowiek",,,24381
 14131,WORD_ADVERB,,HIRAGANA,,,-,せずに,,sezuni,"bez (robienia czegoś)
 zamiast
@@ -45252,15 +45255,11 @@ przyrost",,,
 17651,WORD_NOUN,,HIRAGANA,,,引換え,ひきかえ,,hikikae,"wymiana
 zamiana
 konwersja
-przemiana
-przeciwnie
-z drugiej strony",,,
+przemiana",,,
 17652,WORD_NOUN,,HIRAGANA,,,引替え,ひきかえ,,hikikae,"wymiana
 zamiana
 konwersja
-przemiana
-przeciwnie
-z drugiej strony",,,
+przemiana",,,
 17653,WORD_NOUN,,HIRAGANA,,,感銘,かんめい,,kanmei,"głębokie wrażenie
 głęboka impresja",,,
 17654,WORD_NOUN,,HIRAGANA,,,採択,さいたく,,saitaku,"przyjmowanie
@@ -45489,7 +45488,7 @@ przypadkowy",,,
 w okręgu administracyjnym",,,
 17732,WORD_NOUN,,HIRAGANA,,,取り調べ,とりしらべ,,torishirabe,"śledztwo
 dochodzenie
-badanie",,,
+badanie",np. policyjne lub prokuratorskie,,
 17733,WORD_NOUN,,HIRAGANA,,,堆積,たいせき,,taiseki,"nagromadzenie się osadów skalnych
 odkładanie się osadów skalnych",,,
 17734,WORD_NOUN,,HIRAGANA,,,建議,けんぎ,,kengi,"propozycja
@@ -71600,17 +71599,15 @@ indywidualny
 osobny",,,
 26329,WORD_NOUN,,HIRAGANA,,,引き換え,ひきかえ,,hikikae,"wymiana
 zamiana
-przeciwnie
-wprost przeciwnie
-na odwrót",,,
+konwersja
+przemiana",,,
 26330,WORD_NOUN,,HIRAGANA,,,引き替え,ひきかえ,,hikikae,"wymiana
 zamiana
-przeciwnie
-wprost przeciwnie
-na odwrót",,,
+konwersja
+przemiana",,,
 26331,"WORD_ADVERB
 WORD_ADVERB_TO
-WORD_NOUN",,HIRAGANA,,,-,しょんぼり,,shonbou,"być przygnębiony
+WORD_NOUN",,HIRAGANA,,,-,しょんぼり,,shonbori,"być przygnębiony
 być smutny
 być przybity",,,
 26332,"WORD_NOUN
@@ -71639,9 +71636,11 @@ w środku
 wnętrze
 środek",,,26340
 26340,WORD_NOUN,,HIRAGANA,,,内面,うちづら,,uchidura,twarz prezentowana (okazywana) w domu,,,26339
-26341,WORD_NOUN,,HIRAGANA,,,取調べ,とりしらべ,,torishirabe,"dochodzenie
-śledztwo",np. policyjne lub prokuratorskie,,
-26342,WORD_NOUN,,HIRAGANA,,,孤児,こじ,,koji,"sierota
+26341,WORD_NOUN,,HIRAGANA,,,取調べ,とりしらべ,,torishirabe,"śledztwo
+dochodzenie
+badanie",np. policyjne lub prokuratorskie,,
+26342,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,孤児,こじ,,koji,"sierota
 osierocony",,,
 26343,WORD_NOUN,,HIRAGANA,,,強者,つわもの,,tsuwamono,"żołnierz
 wojownik
@@ -71653,3 +71652,47 @@ wyjątkowy człowiek
 odważny człowiek",,,26344
 26344,WORD_NOUN,,HIRAGANA,,,強者,きょうしゃ,,kyousha,"silny mężczyzna
 silny człowiek",,,26343
+26345,WORD_NOUN,,KATAKANA,,,-,スタメン,,sutamen,"startujący członek
+rozpoczynający członek","np. drużyny, ang: starting member",,
+26346,WORD_NOUN,,KATAKANA,,,-,ロープウェイ,,roopuwei,"kolejka liniowa
+kolej liniowa","ang: ropeway, cable car",,
+26347,WORD_NOUN,,HIRAGANA,,,事象,じしょう,,jishou,"wydarzenie
+zdarzenie
+zjawisko",,,
+26348,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,醜悪,しゅうあく,,shuuaku,"okropny
+brzydki
+straszny
+szpetny
+brzydota
+szpetność",,,
+26349,WORD_NOUN,,HIRAGANA,,,面談,めんだん,,mendan,"rozmowa kwalifikacyjna
+wywiad
+przesłuchanie",,,
+26350,WORD_NOUN,,HIRAGANA,,,戦力,せんりょく,,senryoku,"potencjał wojskowy
+siła wojskowa",,,
+26351,WORD_NOUN,,HIRAGANA,,,良妻,りょうさい,,ryousai,dobra żona,,,
+26352,WORD_NOUN,,HIRAGANA,,,良妻賢母,りょうさいけんぼ,,ryousai kenbo,dobra żona i mądra matka,,,
+26353,WORD_NOUN,,HIRAGANA,,,苦笑,くしょう,,kushou,"rozżalony uśmiech
+gorzki uśmiech
+cierpki uśmiech
+wymuszony uśmiech
+sarkastyczny uśmiech",,,
+26354,WORD_NOUN,,HIRAGANA,,,苦笑い,にがわらい,,nigawarai,"rozżalony uśmiech
+gorzki uśmiech
+cierpki uśmiech
+wymuszony uśmiech",,,
+26355,WORD_NOUN,,HIRAGANA,,,製紙,せいし,,seishi,"papiernictwo
+produkcja artykułów piśmiennych",,,
+26356,WORD_NOUN,,HIRAGANA,,,製紙業,せいしぎょう,,seishigyou,przemysł papierniczy,,,
+26357,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,KATAKANA,,,-,ゴロゴロ,,gorogoro,"grzmot
+mruczenie
+pomrukiwanie
+odgłos (np. brzucha)",,,
+26358,WORD_VERB_U,,HIRAGANA,,,請け負う,うけおう,,ukeou,"kontraktować
+podjąć się (czegoś)
+przedsięwziąć
+przyjmować
+brać odpowiedzialność za",,,
