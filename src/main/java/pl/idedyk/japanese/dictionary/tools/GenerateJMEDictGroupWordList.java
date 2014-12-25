@@ -108,6 +108,8 @@ public class GenerateJMEDictGroupWordList {
 								
 								newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
 								
+								newPolishJapaneseEntry.setWordType(getWordType(groupEntryKana));
+								
 								String romaji = null;
 								
 								WordType wordType = newPolishJapaneseEntry.getWordType();
@@ -157,7 +159,42 @@ public class GenerateJMEDictGroupWordList {
 					}
 				}
 		);
-	}	
+	}
+	
+	private static WordType getWordType(String kana) {
+		
+		WordType wordType = null;
+				
+		for (int idx = 0; idx < kana.length(); ++idx) {
+			
+			char c = kana.charAt(idx);
+			
+			boolean currentCIsHiragana = Utils.isHiragana(c);
+			boolean currentCIsKatakana = Utils.isKatakana(c);
+			
+			if (currentCIsHiragana == true) {
+				
+				if (wordType == null) {
+					wordType = WordType.HIRAGANA;
+					
+				} else if (wordType == WordType.KATAKANA) {
+					wordType = WordType.KATAKANA_HIRAGANA;					
+				}				
+			}
+
+			if (currentCIsKatakana == true) {
+				
+				if (wordType == null) {
+					wordType = WordType.KATAKANA;
+					
+				} else if (wordType == WordType.HIRAGANA) {
+					wordType = WordType.HIRAGANA_KATAKANA;					
+				}				
+			}			
+		}	
+		
+		return wordType;
+	}
 	
 	private static boolean isMultiGroup(List<GroupEntry> groupEntryList) {
 		
