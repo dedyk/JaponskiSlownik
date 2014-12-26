@@ -1,7 +1,6 @@
 package pl.idedyk.japanese.dictionary.dto;
 
 import java.util.List;
-import java.util.Set;
 
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
 
@@ -17,7 +16,7 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 	
 	private List<ParseAdditionalInfo> parseAdditionalInfoList;
 
-	private Set<Integer> knownDuplicatedId;
+	private List<KnownDuplicate> knownDuplicatedList;
 		
 	public String getRealPrefixRomaji() {
 		return realPrefixRomaji;
@@ -51,14 +50,30 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 		this.parseAdditionalInfoList = parseAdditionalInfoList;
 	}
 	
-	public Set<Integer> getKnownDuplicatedId() {
-		return knownDuplicatedId;
+	public List<KnownDuplicate> getKnownDuplicatedList() {
+		return knownDuplicatedList;
 	}
 
-	public void setKnownDuplicatedId(Set<Integer> knownDuplicatedId) {
-		this.knownDuplicatedId = knownDuplicatedId;
+	public void setKnownDuplicatedList(List<KnownDuplicate> knownDuplicatedList) {
+		this.knownDuplicatedList = knownDuplicatedList;
 	}
 	
+	public boolean isKnownDuplicate(KnownDuplicateType knownDuplicateType, int id) {
+		
+		for (KnownDuplicate knownDuplicate : knownDuplicatedList) {
+			
+			if (knownDuplicate.getKnownDuplicateType() != knownDuplicateType) {
+				continue;
+			}
+			
+			if (knownDuplicate.getId() == id) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
+
 	public String getEntryPrefixKanaKanjiKanaKey() {
 		return getPrefixKana() + "." + getKanji() + "." + getKana().toString();
 	}
@@ -111,4 +126,64 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 	public  Object clone() throws CloneNotSupportedException {
 		return super.clone();
 	}	
+	
+	public static class KnownDuplicate {
+		
+		private KnownDuplicateType knownDuplicateType;
+		
+		private int id;
+
+		public KnownDuplicate(KnownDuplicateType knownDuplicateType, int id) {
+			this.knownDuplicateType = knownDuplicateType;
+			this.id = id;
+		}
+
+		public KnownDuplicateType getKnownDuplicateType() {
+			return knownDuplicateType;
+		}
+
+		public int getId() {
+			return id;
+		}
+
+		@Override
+		public int hashCode() {
+			
+			final int prime = 31;
+			
+			int result = 1;
+			
+			result = prime * result + ((knownDuplicateType == null) ? 0 : knownDuplicateType.hashCode());
+			result = prime * result + id;
+			
+			return result;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			
+			if (this == obj)
+				return true;
+			
+			if (obj == null)
+				return false;
+			
+			if (getClass() != obj.getClass())
+				return false;
+			
+			KnownDuplicate other = (KnownDuplicate) obj;
+			
+			if (knownDuplicateType != other.knownDuplicateType)
+				return false;
+			
+			if (id != other.id)
+				return false;
+			
+			return true;
+		}
+	}
+	
+	public static enum KnownDuplicateType {		
+		DUPLICATE;		
+	}
 }

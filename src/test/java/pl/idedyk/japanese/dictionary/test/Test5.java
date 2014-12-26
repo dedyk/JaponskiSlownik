@@ -1,6 +1,5 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -16,9 +15,10 @@ public class Test5 {
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
-		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
+		/*
 		List<JMEDictNewNativeEntry> jmedictNativeTestList = new ArrayList<JMEDictNewNativeEntry>();
 
 		for (JMEDictNewNativeEntry jmeDictNewNativeEntry : jmedictNativeList) {
@@ -32,8 +32,25 @@ public class Test5 {
 		}
 		
 		System.out.println();
+		*/
 		
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
+		
+		/*
+		List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList("水瓜", "すいか");
+		
+		for (GroupEntry groupEntry : groupEntryList) {							
+			printGroupEntry(groupEntry);
+		}
+		*/
+		
+		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("最も", "もっとも");
+
+		for (GroupEntry groupEntry : groupEntryList) {							
+			printGroupEntry(groupEntry);
+		}
+
+		
 		
 		/*
 		for (Group group : jmeNewDictionary.getGroupList()) {
@@ -47,11 +64,13 @@ public class Test5 {
 		}
 		*/
 		
+		/*
 		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("ＪＲ三山木駅", "ジェイアールみやまきえき");
 
 		for (GroupEntry groupEntry : groupEntryList) {							
 			printGroupEntry(groupEntry);
 		}
+		*/
 	}
 	
 	private static void printGroupEntry(GroupEntry groupEntry) {

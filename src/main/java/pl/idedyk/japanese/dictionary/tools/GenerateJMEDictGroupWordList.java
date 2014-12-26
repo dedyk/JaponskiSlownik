@@ -21,6 +21,7 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 
 public class GenerateJMEDictGroupWordList {
@@ -123,7 +124,7 @@ public class GenerateJMEDictGroupWordList {
 								
 								newPolishJapaneseEntry.setRomaji(romaji);
 								
-								newPolishJapaneseEntry.setKnownDuplicatedId(new HashSet<Integer>());
+								newPolishJapaneseEntry.setKnownDuplicatedList(new ArrayList<KnownDuplicate>());
 								
 								smallNewWordList.add(newPolishJapaneseEntry);
 								

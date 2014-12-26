@@ -27,6 +27,7 @@ import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
@@ -730,7 +731,7 @@ public class Validator {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 
-			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
+			if (checkKnownDuplicated == true && polishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.DUPLICATE, id) == true) {
 				continue;
 			}
 
@@ -752,7 +753,7 @@ public class Validator {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 
-			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
+			if (checkKnownDuplicated == true && polishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.DUPLICATE, id) == true) {
 				continue;
 			}
 
@@ -785,7 +786,7 @@ public class Validator {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
 
-			if (checkKnownDuplicated == true && polishJapaneseEntry.getKnownDuplicatedId().contains(id) == true) {
+			if (checkKnownDuplicated == true && polishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.DUPLICATE, id) == true) {
 				continue;
 			}
 
@@ -871,7 +872,7 @@ public class Validator {
 				if (getSummary2PolishJapaneseEntryHashCode(currentPolishJapaneseEntryListBySummaryHashCodeResultItem) != summary2PolishJapaneseEntryHashCode
 						&& polishJapaneseEntry.getId() != currentPolishJapaneseEntryListBySummaryHashCodeResultItem
 								.getId()
-						&& polishJapaneseEntry.getKnownDuplicatedId().contains(
+						&& polishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.DUPLICATE, 
 								currentPolishJapaneseEntryListBySummaryHashCodeResultItem.getId()) == false) {
 
 					if (added == false) {

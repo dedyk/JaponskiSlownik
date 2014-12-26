@@ -10,8 +10,6 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
@@ -27,6 +25,8 @@ import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
@@ -256,7 +256,16 @@ public class CsvReaderWriter {
 			csvWriter.write(convertListToString(polishJapaneseEntry.getParseAdditionalInfoList()));
 
 			if (addKnownDupplicatedId == true) {
-				csvWriter.write(convertListToString(new ArrayList<Integer>(polishJapaneseEntry.getKnownDuplicatedId())));
+				
+				List<KnownDuplicate> knownDuplicatedId = polishJapaneseEntry.getKnownDuplicatedList();
+				
+				List<String> knownDuplicateIdStringList = new ArrayList<String>();
+				
+				for (KnownDuplicate currentKnownDuplicate : knownDuplicatedId) {					
+					knownDuplicateIdStringList.add(currentKnownDuplicate.getKnownDuplicateType() + " " + currentKnownDuplicate.getId());					
+				}
+								
+				csvWriter.write(convertListToString(knownDuplicateIdStringList));
 			}
 			
 			if (addExampleSentenceGroupIds == true) {
@@ -319,11 +328,20 @@ public class CsvReaderWriter {
 			entry.setRomaji(romajiString);
 			entry.setTranslates(parseStringIntoList(polishTranslateListString));
 			entry.setParseAdditionalInfoList(parseParseAdditionalInfoListString(parseAdditionalInfoListString));
-
-			Set<Integer> knownDuplicatedHashMap = new TreeSet<Integer>();
-
-			knownDuplicatedHashMap.addAll(parseStringIntoIntegerList(knownDuplicatedListString));
-			entry.setKnownDuplicatedId(knownDuplicatedHashMap);
+			
+			List<KnownDuplicate> knownDuplicatedList = new ArrayList<PolishJapaneseEntry.KnownDuplicate>();
+			
+			List<String> knownDuplicatedListStringAsListString = parseStringIntoList(knownDuplicatedListString);
+			
+			for (String currentKnownDuplicateString : knownDuplicatedListStringAsListString) {
+				
+				String[] currentKnownDuplicateStringSplited = currentKnownDuplicateString.split(" ");
+				
+				knownDuplicatedList.add(new KnownDuplicate(KnownDuplicateType.valueOf(currentKnownDuplicateStringSplited[0]), 
+						Integer.parseInt(currentKnownDuplicateStringSplited[1])));				
+			}
+						
+			entry.setKnownDuplicatedList(knownDuplicatedList);
 
 			entry.setInfo(infoString);
 
@@ -456,6 +474,7 @@ public class CsvReaderWriter {
 		return result;
 	}
 
+	/*
 	private static List<Integer> parseStringIntoIntegerList(String polishTranslateString) {
 
 		List<Integer> result = new ArrayList<Integer>();
@@ -473,6 +492,7 @@ public class CsvReaderWriter {
 
 		return result;
 	}
+	*/
 
 	public static void generateKanaEntriesCsv(String outputFile, List<KanaEntry> kanaEntries) throws IOException {
 
