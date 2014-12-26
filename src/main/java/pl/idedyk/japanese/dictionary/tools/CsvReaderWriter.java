@@ -8,6 +8,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -264,6 +265,8 @@ public class CsvReaderWriter {
 				for (KnownDuplicate currentKnownDuplicate : knownDuplicatedId) {					
 					knownDuplicateIdStringList.add(currentKnownDuplicate.getKnownDuplicateType() + " " + currentKnownDuplicate.getId());					
 				}
+				
+				Collections.sort(knownDuplicateIdStringList);
 								
 				csvWriter.write(convertListToString(knownDuplicateIdStringList));
 			}

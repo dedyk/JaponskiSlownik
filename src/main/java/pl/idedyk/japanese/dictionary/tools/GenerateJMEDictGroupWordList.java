@@ -3,7 +3,6 @@ package pl.idedyk.japanese.dictionary.tools;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -22,6 +21,7 @@ import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 
 public class GenerateJMEDictGroupWordList {
@@ -69,69 +69,65 @@ public class GenerateJMEDictGroupWordList {
 			
 			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 						
-			if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 								
 				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
 					
 					String groupEntryKanji = groupEntry.getKanji();
 					String groupEntryKana = groupEntry.getKana();
+											
+					PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntry, polishJapaneseEntries, 
+							groupEntryKanji, groupEntryKana);
 					
-					List<GroupEntry> groupEntryList2 = jmeNewDictionary.getGroupEntryList(groupEntryKanji, groupEntryKana);
-					
-					if (isMultiGroup(groupEntryList2) == false) {
+					if (findPolishJapaneseEntry != null) {
 						
-						PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntries, 
-								groupEntryKanji, groupEntryKana);
+						if (findPolishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.EDICT_TRANSLATE_INFO_GROUP_DIFF) == true) {
+							canAdd = false;
+						}
 						
-						if (findPolishJapaneseEntry != null) {
+					} else {
+						
+						String keyForGroupEntry = getKeyForAlreadyAddedGroupEntrySet(groupEntry);
+						
+						if (alreadyAddedGroupEntry.contains(keyForGroupEntry) == false) {
 							
-							if (findPolishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.EDICT_TRANSLATE_INFO_GROUP_DIFF) == true) {
-								canAdd = false;
+							alreadyAddedGroupEntry.add(keyForGroupEntry);
+							
+							PolishJapaneseEntry newPolishJapaneseEntry = (PolishJapaneseEntry)polishJapaneseEntry.clone();
+							
+							if (groupEntryKanji == null || groupEntryKanji.equals("") == true) {
+								groupEntryKanji = "-";
 							}
 							
-						} else {
+							newPolishJapaneseEntry.setKanji(groupEntryKanji);
+															
+							newPolishJapaneseEntry.setKana(groupEntryKana);
 							
-							String keyForGroupEntry = getKeyForAlreadyAddedGroupEntrySet(groupEntry);
+							newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
 							
-							if (alreadyAddedGroupEntry.contains(keyForGroupEntry) == false) {
+							newPolishJapaneseEntry.setWordType(getWordType(groupEntryKana));
+							
+							String romaji = null;
+							
+							WordType wordType = newPolishJapaneseEntry.getWordType();
+							
+							if (wordType == WordType.HIRAGANA || wordType == WordType.KATAKANA || wordType == WordType.HIRAGANA_KATAKANA || wordType == WordType.KATAKANA_HIRAGANA) {								
+								romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(groupEntryKana, kanaHelper.getKanaCache(), true));
 								
-								alreadyAddedGroupEntry.add(keyForGroupEntry);
-								
-								PolishJapaneseEntry newPolishJapaneseEntry = (PolishJapaneseEntry)polishJapaneseEntry.clone();
-								
-								if (groupEntryKanji == null || groupEntryKanji.equals("") == true) {
-									groupEntryKanji = "-";
-								}
-								
-								newPolishJapaneseEntry.setKanji(groupEntryKanji);
-																
-								newPolishJapaneseEntry.setKana(groupEntryKana);
-								
-								newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
-								
-								newPolishJapaneseEntry.setWordType(getWordType(groupEntryKana));
-								
-								String romaji = null;
-								
-								WordType wordType = newPolishJapaneseEntry.getWordType();
-								
-								if (wordType == WordType.HIRAGANA || wordType == WordType.KATAKANA || wordType == WordType.HIRAGANA_KATAKANA || wordType == WordType.KATAKANA_HIRAGANA) {								
-									romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(groupEntryKana, kanaHelper.getKanaCache(), true));
-									
-								} else {
-									romaji = "FIXME";
-								}
-								
-								newPolishJapaneseEntry.setRomaji(romaji);
-								
-								newPolishJapaneseEntry.setKnownDuplicatedList(new ArrayList<KnownDuplicate>());
-								
-								smallNewWordList.add(newPolishJapaneseEntry);
-								
-								newWordListAndGroupEntryMap.put(getKeyForNewWordListAndGroupEntry(newPolishJapaneseEntry), groupEntry);
-							}							
-						}
+							} else {
+								romaji = "FIXME";
+							}
+							
+							newPolishJapaneseEntry.setRomaji(romaji);
+							
+							newPolishJapaneseEntry.setKnownDuplicatedList(new ArrayList<KnownDuplicate>());
+							
+							smallNewWordList.add(newPolishJapaneseEntry);
+							
+							newWordListAndGroupEntryMap.put(getKeyForNewWordListAndGroupEntry(newPolishJapaneseEntry), groupEntry);
+						}							
 					}
+					
 				}
 			}
 			
@@ -196,25 +192,9 @@ public class GenerateJMEDictGroupWordList {
 		
 		return wordType;
 	}
-	
-	private static boolean isMultiGroup(List<GroupEntry> groupEntryList) {
 		
-		Set<Integer> uniqueGroupIds = new HashSet<Integer>();
-		
-		for (GroupEntry groupEntry : groupEntryList) {
-			uniqueGroupIds.add(groupEntry.getGroup().getId());
-		}
-		
-		if (uniqueGroupIds.size() == 1) {			
-			return false;
-			
-		} else {
-			return true;
-		}
-	}
-	
-	private static PolishJapaneseEntry findPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries, 
-			String findKanji, String findKana) {
+	private static PolishJapaneseEntry findPolishJapaneseEntry(PolishJapaneseEntry parentPolishJapaneseEntry,
+			List<PolishJapaneseEntry> polishJapaneseEntries, String findKanji, String findKana) {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 						
@@ -230,7 +210,10 @@ public class GenerateJMEDictGroupWordList {
 			}
 			
 			if (kanji.equals(findKanji) == true && kana.equals(findKana) == true) {
-				return polishJapaneseEntry;
+				
+				if (parentPolishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.EDICT_DUPLICATE, polishJapaneseEntry.getId()) == false) {
+					return polishJapaneseEntry;
+				}				
 			}
 		}
 		

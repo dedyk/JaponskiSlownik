@@ -993,18 +993,12 @@ public class Validator {
 					
 					String groupEntryKanji = groupEntry.getKanji();
 					String groupEntryKana = groupEntry.getKana();
+																
+					PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntry,
+							polishJapaneseEntries, groupEntryKanji, groupEntryKana);
 					
-					List<GroupEntry> groupEntryList2 = jmeNewDictionary.getGroupEntryList(groupEntryKanji, groupEntryKana);
-					
-					if (isMultiGroup(groupEntryList2) == false) {
-						
-						PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntries, 
-								groupEntryKanji, groupEntryKana);
-						
-						if (findPolishJapaneseEntry != null) {
-							foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
-						}
-						
+					if (findPolishJapaneseEntry != null) {
+						foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
 					}
 				}
 			}
@@ -1129,8 +1123,8 @@ public class Validator {
 		}
 	}
 	
-	private static PolishJapaneseEntry findPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries, 
-			String findKanji, String findKana) {
+	private static PolishJapaneseEntry findPolishJapaneseEntry(PolishJapaneseEntry parentPolishJapaneseEntry,
+			List<PolishJapaneseEntry> polishJapaneseEntries, String findKanji, String findKana) {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 						
@@ -1146,7 +1140,10 @@ public class Validator {
 			}
 			
 			if (kanji.equals(findKanji) == true && kana.equals(findKana) == true) {
-				return polishJapaneseEntry;
+				
+				if (parentPolishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.EDICT_DUPLICATE, polishJapaneseEntry.getId()) == false) {
+					return polishJapaneseEntry;
+				}				
 			}
 		}
 		

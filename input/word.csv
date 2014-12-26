@@ -2549,7 +2549,7 @@ DUPLICATE 26239"
 WORD_ADVERBIAL_NOUN",,HIRAGANA,Genki 1-10,,この頃,このごろ,,konogoro,"ostatnimi czasami
 ostatnio
 w tych dniach
-w dzisiejszych czasach",,,
+w dzisiejszych czasach",,,DUPLICATE 27355
 773,WORD_NOUN,SUFFIX,HIRAGANA,Genki 1-10,,週間,しゅうかん,,shuukan,tydzień,przedział czasu,,
 774,"WORD_PARTICULE
 WORD_CONJUNCTION
@@ -5342,8 +5342,8 @@ DUPLICATE 827"
 zdobyć przyjaciela",,,
 1830,WORD_ADVERB,,HIRAGANA,Genki kanji 2-20,,最も,もっとも,,mottomo,"najbardziej
 naj-
-[III poziom stopniowania przymiotników]",,,"DUPLICATE 27166
-DUPLICATE 12123"
+[III poziom stopniowania przymiotników]",,,"EDICT_DUPLICATE 12122
+DUPLICATE 27166"
 1831,WORD_NOUN,,HIRAGANA,,,現金自動預け払い機,げんきんじどうあずけばらいき,,genkin jidou azuke baraiki,"bankomat
 ATM",,,
 1832,WORD_NOUN,,HIRAGANA,,,保険会社,ほけんがいしゃ,,hoken gaisha,firma ubezpieczeniowa,,,
@@ -20770,7 +20770,7 @@ onieśmielać
 przymuszać
 zniewalać",,,
 7837,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,雌,めす,,mesu,samica,,,
+WORD_ADJECTIVE_NO",,HIRAGANA,,,雌,めす,,mesu,samica,,,EDICT_DUPLICATE 18209
 7838,WORD_NOUN,,HIRAGANA,,,婿,むこ,,muko,zięć,,,
 7839,WORD_NOUN,,HIRAGANA,,,孔,あな,,ana,"dziura
 dołek
@@ -22409,7 +22409,8 @@ skłaniać się",,,
 8319,WORD_NOUN,,HIRAGANA,,,偏り,かたより,,katayori,"skłonność
 nachylenie",,,
 8320,WORD_NOUN,,HIRAGANA,,,升,しょう,,shou,"sho (jednostka pojemności ok 1,8 litra)",,,DUPLICATE 8321
-8321,WORD_NOUN,,HIRAGANA,,,升,ます,,masu,pudełko miernicze,,,DUPLICATE 8320
+8321,WORD_NOUN,,HIRAGANA,,,升,ます,,masu,pudełko miernicze,,,"EDICT_DUPLICATE 17756
+DUPLICATE 8320"
 8322,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,彼の,かの,,kano,"tam
 tamta
 tamto
@@ -24415,7 +24416,7 @@ kompas",,,
 9323,WORD_NOUN,,HIRAGANA,,,機関車,きかんしゃ,,kikansha,"lokomotywa
 parowóz",,,
 9324,WORD_NOUN,,HIRAGANA,,,天文学,てんもんがく,,tenmongaku,astronomia,,,
-9325,WORD_NOUN,,HIRAGANA,,,鱒,ます,,masu,pstrąg,,,
+9325,WORD_NOUN,,HIRAGANA,,,鱒,ます,,masu,pstrąg,,,EDICT_DUPLICATE 17756
 9326,WORD_NOUN,,HIRAGANA,,,人道主義,じんどうしゅぎ,,jindoushugi,"humanitaryzm
 humanizm",,,
 9327,"WORD_NOUN
@@ -25354,11 +25355,14 @@ zwalniać
 poddawać się
 zaniedbywać",,,
 9708,WORD_NOUN,,HIRAGANA,,,卒業証書,そつぎょうしょうしょ,,sotsugyou shousho,dyplom,ukończenia szkoły,,
-9709,WORD_NOUN,,HIRAGANA,,,樺,かば,,kaba,brzoza,,,"DUPLICATE 9710
+9709,WORD_NOUN,,HIRAGANA,,,樺,かば,,kaba,brzoza,,,"EDICT_DUPLICATE 27357
+DUPLICATE 9710
 DUPLICATE 9711"
-9710,WORD_NOUN,,HIRAGANA,,,樺,かにわ,,kaniwa,brzoza,,,"DUPLICATE 9709
+9710,WORD_NOUN,,HIRAGANA,,,樺,かにわ,,kaniwa,brzoza,,,"EDICT_DUPLICATE 27357
+DUPLICATE 9709
 DUPLICATE 9711"
-9711,WORD_NOUN,,HIRAGANA,,,樺,かんば,,kanba,brzoza,,,"DUPLICATE 9709
+9711,WORD_NOUN,,HIRAGANA,,,樺,かんば,,kanba,brzoza,,,"EDICT_DUPLICATE 27357
+DUPLICATE 9709
 DUPLICATE 9710"
 9712,WORD_NOUN,,HIRAGANA,,,毛,け,,ke,"włos
 włosy
@@ -29359,11 +29363,13 @@ szybko obliczać",,,
 11297,WORD_NOUN,,HIRAGANA,,,陸,りく,,riku,"ląd
 brzeg",,,"DUPLICATE 11298
 DUPLICATE 25963
-DUPLICATE 25964"
+DUPLICATE 25964
+DUPLICATE 27354"
 11298,WORD_NOUN,,HIRAGANA,,,陸,おか,,oka,"ląd
 brzeg",,,"DUPLICATE 11297
 DUPLICATE 25963
-DUPLICATE 25964"
+DUPLICATE 25964
+DUPLICATE 27354"
 11299,WORD_NOUN,,HIRAGANA,,,理屈,りくつ,,rikutsu,"racjonalność
 logika
 wykręt
@@ -31123,13 +31129,18 @@ koło sterowe",,,
 pierze
 puch",,,
 12121,WORD_NOUN,,HIRAGANA,,,羽根つき,はねつき,,hanetsuki,hanetsuki,tradycyjna japońska zabawa noworoczna,,
-12122,WORD_CONJUNCTION,,HIRAGANA,,,尤も,もっとも,,mottomo,"naturalny
+12122,WORD_CONJUNCTION,,HIRAGANA,,,尤も,もっとも,,mottomo,"jednak (używane wówczas, gdy po ogólnym stwierdzeniu następuje wyjątek)
+ale (używane wówczas, gdy po ogólnym stwierdzeniu następuje wyjątek)
+naturalny
 rozsądny
-racjonalny",,,"DUPLICATE 27167
-DUPLICATE 12123"
-12123,WORD_CONJUNCTION,,HIRAGANA,,,-,もっとも,,mottomo,"jednak
-ale","używane wówczas, gdy po ogólnym stwierdzeniu następuje wyjątek",,"DUPLICATE 1830
-DUPLICATE 12122"
+racjonalny",,,"EDICT_DUPLICATE 1830
+EDICT_DUPLICATE 27166
+EDICT_DUPLICATE 27167
+DUPLICATE 27167
+DUPLICATE 27359"
+12123,WORD_NOUN,,HIRAGANA,,,同率,どうりつ,,douritsu,"w tej samej proporcji
+w tym samym stosunku
+w tym samym procencie",,,
 12124,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,耳障り,みみざわり,,mimizawari,"uszkodzone ucho
 zranione ucho",,,
@@ -32099,7 +32110,8 @@ WORD_EXPRESSION",,HIRAGANA,,,手を挙げる,てをあげる,,te o ageru,"podnie
 podnieść rękę",,,
 12611,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,手を振る,てをふる,,te o furu,machać ręką,,,
-12612,WORD_PARTICULE,,HIRAGANA,,,-,て,,te,[partykuła używana do tworzenia formy te czasownika],,,DUPLICATE 534
+12612,WORD_PARTICULE,,HIRAGANA,,,-,て,,te,[partykuła używana do tworzenia formy te czasownika],,,"EDICT_DUPLICATE 20569
+DUPLICATE 534"
 12613,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,売り場,うりば,,uriba,"stoisko
 miejsce sprzedaży",,,
@@ -45789,7 +45801,8 @@ pośrednik handlowy
 agent",,,
 17755,WORD_NOUN,,KATAKANA,,,-,プラスチック,,purasuchikku,plastik,,,
 17756,WORD_NOUN,,KATAKANA,,,-,マス,,masu,"masa
-masturbacja (skrót)",,,
+masturbacja (skrót)",,,"EDICT_DUPLICATE 8321
+EDICT_DUPLICATE 9325"
 17757,WORD_NOUN,,KATAKANA,,,-,モチーフ,,mochiifu,"motyw
 wzór",ang: motif,,
 17758,"WORD_ADVERBIAL_NOUN
@@ -47138,7 +47151,7 @@ habit
 kiecka
 kłaczek","ang: fluke, frock, flock",,
 18209,WORD_NOUN,,KATAKANA,,,-,メス,,mesu,"skalpel
-nóż chirurgiczny",,,
+nóż chirurgiczny",,,EDICT_DUPLICATE 7837
 18210,WORD_NOUN,,KATAKANA,,,-,リコール,,rikooru,"przywołanie
 przypomnienie
 pamięć",ang: recall,,
@@ -54887,7 +54900,7 @@ ochoczość
 rzetelność
 sumienność
 narażanie własnego życia",,,
-20569,WORD_PARTICULE,,HIRAGANA,,,-,って,,tte,nieformalna partykuła cytowania,,,
+20569,WORD_PARTICULE,,HIRAGANA,,,-,って,,tte,nieformalna partykuła cytowania,,,EDICT_DUPLICATE 12612
 20570,WORD_NOUN,,KATAKANA,,,-,キップ,,kippu,???,ang: kip,,
 20571,WORD_NOUN,,HIRAGANA,,,所在地,しょざいち,,shozaichi,"lokalizacja
 położenie
@@ -70808,11 +70821,13 @@ DUPLICATE 25961"
 25963,WORD_NUMBER,,HIRAGANA,,,陸,む,,mu,"sześć
 6",,,"DUPLICATE 11297
 DUPLICATE 11298
-DUPLICATE 25964"
+DUPLICATE 25964
+DUPLICATE 27354"
 25964,WORD_NUMBER,,HIRAGANA,,,陸,むう,,muu,"sześć
 6",,,"DUPLICATE 11297
 DUPLICATE 11298
-DUPLICATE 25963"
+DUPLICATE 25963
+DUPLICATE 27354"
 25965,WORD_NUMBER,,HIRAGANA,,,七,な,,na,"siedem
 7",,,"DUPLICATE 8
 DUPLICATE 24762
@@ -72573,7 +72588,7 @@ po zakończeniu",zdarzenie no,,DUPLICATE 7182
 WORD_ADVERBIAL_NOUN",,HIRAGANA,,,此の頃,このごろ,,konogoro,"ostatnimi czasami
 ostatnio
 w tych dniach
-w dzisiejszych czasach",,,
+w dzisiejszych czasach",,,DUPLICATE 27356
 26556,"WORD_EXPRESSION
 WORD_ADVERBIAL_NOUN",,HIRAGANA,,,どの位,どのくらい,,donokurai,"jak wiele
 jak długo",,,DUPLICATE 778
@@ -74484,10 +74499,13 @@ dmuchawiec",,,DUPLICATE 27163
 27165,WORD_NOUN,,KATAKANA,,,-,マーケティング・コミュニケーション,,maaketingu komyunikeeshon,komunikacja marketingowa,,,
 27166,WORD_ADVERB,,HIRAGANA,,,最も,もとも,,motomo,"najbardziej
 naj-
-[III poziom stopniowania przymiotników]",,,DUPLICATE 1830
+[III poziom stopniowania przymiotników]",,,"EDICT_DUPLICATE 12122
+DUPLICATE 1830"
 27167,WORD_ADVERB,,HIRAGANA,,,尤も,もとも,,motomo,"najbardziej
 naj-
-[III poziom stopniowania przymiotników]",,,DUPLICATE 12122
+[III poziom stopniowania przymiotników]",,,"EDICT_DUPLICATE 12122
+DUPLICATE 12122
+DUPLICATE 27359"
 27168,WORD_VERB_RU,,KATAKANA_HIRAGANA,,,-,フラれる,,furareru,zostać porzucony,"np. przez dziewczynę, chłopaka",,
 27169,WORD_ADJECTIVE_I,,HIRAGANA,,,軽い,かろい,,karoi,"lekki (nieciężki)
 lekki
@@ -75000,7 +75018,8 @@ spowodować",,,
 za i przeciw",,,
 27339,WORD_NOUN,,HIRAGANA,,,闘志,とうし,,toushi,"duch walki
 wola walki",,,
-27340,WORD_NOUN,,KATAKANA,,,-,スイカ,,suika,arbuz,,,
+27340,WORD_NOUN,,KATAKANA,,,-,スイカ,,suika,"arbuz
+kawon",,,
 27341,WORD_NOUN,,KATAKANA,,,-,ライフル,,raifuru,karabin,,,
 27342,WORD_NOUN,,KATAKANA_HIRAGANA,,,ライフル銃,ライフルじゅう,,raifuru juu,karabin,,,
 27343,WORD_NOUN,,HIRAGANA,,,店先,みせさき,,mise saki,"witryna sklepu
@@ -75034,3 +75053,26 @@ przejaskrawić",,,
 27352,WORD_NOUN,,HIRAGANA,,,本籍,ほんせき,,honseki,"miejsce stałego zamieszkania
 miejsce pochodzenia",własne,,
 27353,WORD_NOUN,,HIRAGANA,,,本籍地,ほんせきち,,honsekichi,miejsce stałego zamieszkania,,,
+27354,WORD_NUMBER,,HIRAGANA,,,陸,ろく,,roku,"sześć
+6",,,"DUPLICATE 11297
+DUPLICATE 11298
+DUPLICATE 25963
+DUPLICATE 25964"
+27355,"WORD_TEMPORAL_NOUN
+WORD_ADVERBIAL_NOUN",,HIRAGANA,,,この頃,このころ,,konokoro,"ostatnimi czasami
+ostatnio
+w tych dniach
+w dzisiejszych czasach",,,DUPLICATE 772
+27356,"WORD_TEMPORAL_NOUN
+WORD_ADVERBIAL_NOUN",,HIRAGANA,,,此の頃,このころ,,konokoro,"ostatnimi czasami
+ostatnio
+w tych dniach
+w dzisiejszych czasach",,,DUPLICATE 26555
+27357,WORD_NOUN,,KATAKANA,,,-,カバ,,kaba,hipopotam,,,"EDICT_DUPLICATE 9709
+EDICT_DUPLICATE 9710
+EDICT_DUPLICATE 9711"
+27358,WORD_NOUN,,KATAKANA,,,-,コイ,,koi,karp,,,
+27359,WORD_ADVERB,,HIRAGANA,,,尤も,もっとも,,mottomo,"najbardziej
+naj-
+[III poziom stopniowania przymiotników]",,,"DUPLICATE 12122
+DUPLICATE 27167"

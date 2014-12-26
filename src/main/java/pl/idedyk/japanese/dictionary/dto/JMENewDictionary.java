@@ -114,7 +114,7 @@ public class JMENewDictionary {
 		return null;
 	}
 	
-	private boolean isMultiGroup(List<GroupEntry> groupEntryList) {
+	public static boolean isMultiGroup(List<GroupEntry> groupEntryList) {
 		
 		Set<Integer> uniqueGroupIds = new HashSet<Integer>();
 		

@@ -24,6 +24,7 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 
@@ -228,19 +229,13 @@ public class Helper {
 					
 					String groupEntryKanji = groupEntry.getKanji();
 					String groupEntryKana = groupEntry.getKana();
+																
+					PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry2(polishJapaneseEntry, polishJapaneseEntries, 
+							groupEntryKanji, groupEntryKana);
 					
-					List<GroupEntry> groupEntryList2 = jmeNewDictionary.getGroupEntryList(groupEntryKanji, groupEntryKana);
-					
-					if (isMultiGroup(groupEntryList2) == false) {
-						
-						PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry2(polishJapaneseEntries, 
-								groupEntryKanji, groupEntryKana);
-						
-						if (findPolishJapaneseEntry != null) {
-							foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
-						}
-						
-					}
+					if (findPolishJapaneseEntry != null) {
+						foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
+					}					
 				}
 			}
 			
@@ -671,8 +666,8 @@ public class Helper {
 		return null;
 	}
 	
-	private static PolishJapaneseEntry findPolishJapaneseEntry2(List<PolishJapaneseEntry> polishJapaneseEntries, 
-			String findKanji, String findKana) {
+	private static PolishJapaneseEntry findPolishJapaneseEntry2(PolishJapaneseEntry parentPolishJapaneseEntry,
+			List<PolishJapaneseEntry> polishJapaneseEntries, String findKanji, String findKana) {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 						
@@ -688,7 +683,11 @@ public class Helper {
 			}
 			
 			if (kanji.equals(findKanji) == true && kana.equals(findKana) == true) {
-				return polishJapaneseEntry;
+				
+				if (parentPolishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.EDICT_DUPLICATE, polishJapaneseEntry.getId()) == false) {
+					return polishJapaneseEntry;
+				}				
+
 			}
 		}
 		

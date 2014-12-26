@@ -184,6 +184,8 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 	}
 	
 	public static enum KnownDuplicateType {		
-		DUPLICATE;		
+		DUPLICATE,
+		
+		EDICT_DUPLICATE;
 	}
 }
