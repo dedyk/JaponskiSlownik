@@ -13,6 +13,7 @@ import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
+import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
@@ -1157,6 +1158,10 @@ public class Validator {
 		List<Attribute> attributeListList = attributeList.getAttributeList();
 		
 		for (Attribute attribute : attributeListList) {
+			
+			if (attribute.getAttributeType() == AttributeType.ALTERNATIVE) {
+				continue;
+			}
 			
 			if (sb.length() > 0) {
 				sb.append(", ");

@@ -1,18 +1,19 @@
 1,"WORD_NOUN
 WORD_ADJECTIVE_NO",ALTERNATIVE 24759,HIRAGANA,Genki 1-1,,零,ぜろ,,zero,"zero
-0",,EDICT_TRANSLATE_INFO_GROUP_DIFF,"DUPLICATE 8710
-DUPLICATE 24759"
+0",,,"DUPLICATE 8710
+DUPLICATE 24759
+EDICT_DUPLICATE 8710"
 2,"WORD_NUMBER
 WORD_ADJECTIVE_NO
 WORD_NOUN",,HIRAGANA,Genki 1-1,,一,いち,,ichi,"jeden
-1",,EDICT_TRANSLATE_INFO_GROUP_DIFF,"DUPLICATE 8809
+1","壱, 弌 i 壹 używane w dokumentach",,"DUPLICATE 8809
 DUPLICATE 26514"
 3,WORD_NUMBER,,HIRAGANA,Genki 1-1,,二,に,,ni,"dwa
-2",,EDICT_TRANSLATE_INFO_GROUP_DIFF,DUPLICATE 13596
+2","弐, 貳 i 貮 używane w dokumentach",,DUPLICATE 13596
 4,WORD_NUMBER,,HIRAGANA,Genki 1-1,,三,さん,,san,"trzy
-3",,EDICT_TRANSLATE_INFO_GROUP_DIFF,DUPLICATE 77
+3",参 używane w dokumentach,,DUPLICATE 77
 5,WORD_NUMBER,,HIRAGANA,Genki 1-1,,四,し,,shi,"cztery
-4",,EDICT_TRANSLATE_INFO_GROUP_DIFF,"DUPLICATE 10785
+4",肆 używane w dokumentach,,"DUPLICATE 10785
 DUPLICATE 24760
 DUPLICATE 24761"
 6,WORD_NUMBER,,HIRAGANA,Genki 1-1,,五,ご,,go,"pięć
@@ -26,14 +27,15 @@ DUPLICATE 25959"
 DUPLICATE 24762
 DUPLICATE 25965"
 9,WORD_NUMBER,,HIRAGANA,Genki 1-1,,八,はち,,hachi,"osiem
-8",,EDICT_TRANSLATE_INFO_GROUP_DIFF,
+8",捌 używane w dokumentach,,
 10,WORD_NUMBER,,HIRAGANA,Genki 1-1,,九,きゅう,,kyuu,"dziewięć
 9",,,"DUPLICATE 24763
 DUPLICATE 25972
 DUPLICATE 25973
 DUPLICATE 25974"
 11,WORD_NUMBER,,HIRAGANA,Genki 1-1,,十,じゅう,,juu,"dziesięć
-10",,EDICT_TRANSLATE_INFO_GROUP_DIFF,DUPLICATE 719
+10",拾 używane w dokumentach,,"DUPLICATE 719
+EDICT_DUPLICATE 719"
 12,WORD_NUMBER,,HIRAGANA,Genki 1-1,,百,ひゃく,,hyaku,"sto
 100",,,DUPLICATE 6624
 13,"WORD_TEMPORAL_NOUN
@@ -2369,7 +2371,9 @@ Genki kanji 1-3",,九つ,ここのつ,,kokonotsu,"dziesięć
 719,WORD_NUMBER,,HIRAGANA,"Genki 1-9
 Klasyfikatory
 Genki kanji 1-3",,十,とお,,too,"dziesięć
-10",klasyfikator ogólny,EDICT_TRANSLATE_INFO_GROUP_DIFF,DUPLICATE 11
+10",klasyfikator ogólny,,"DUPLICATE 11
+EDICT_DUPLICATE 11
+EDICT_DUPLICATE 6851"
 720,WORD_CONJUNCTION,,HIRAGANA,Genki 1-11,,然して,そして,,soshite,"następnie
 i
 przeto
@@ -2563,14 +2567,14 @@ który
 którędy
 gdzie
 kto
-co",bardziej uprzejmie,EDICT_TRANSLATE_INFO_GROUP_DIFF,"DUPLICATE 777
+co","どちら - bardziej uprzejmie, どっち - mniej uprzejmie",,"DUPLICATE 777
 DUPLICATE 12475"
 777,WORD_NOUN,,HIRAGANA,Genki 1-10,,何方,どっち,,docchi,"które
 który
 którędy
 gdzie
 kto
-co",mniej uprzejme,EDICT_TRANSLATE_INFO_GROUP_DIFF,"DUPLICATE 776
+co","どちら - bardziej uprzejmie, どっち - mniej uprzejmie",,"DUPLICATE 776
 DUPLICATE 12475"
 778,"WORD_EXPRESSION
 WORD_ADVERBIAL_NOUN",,HIRAGANA,Genki 1-10,,どの位,どのぐらい,,donogurai,"jak wiele
@@ -9783,7 +9787,7 @@ pamięć",,,
 3596,WORD_ADVERB,,HIRAGANA,Genki dodatkowe 2-19,,如何,いかが,,ikaga,"jak
 w jaki sposób
 jak, co
-co sądzisz o","uprzejma, honoryfikatywna forma od dou",EDICT_TRANSLATE_INFO_GROUP_DIFF,"DUPLICATE 10801
+co sądzisz o","いかが - uprzejma, honoryfikatywna forma od どう",,"DUPLICATE 10801
 DUPLICATE 17323"
 3597,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,,経つ,たつ,,tatsu,"mijać
 przemijać
@@ -12188,8 +12192,8 @@ stosowanie",,,
 4546,WORD_VERB_U,,HIRAGANA,,,役に立つ,やくにたつ,,yakunitatsu,"być pożytecznym
 być użytecznym
 być przydatnym",,,
-4547,WORD_NOUN,,HIRAGANA,,,合気道,あいきどう,,aikidou,Aikido,japońska sztuka walki,EDICT_TRANSLATE_INFO_GROUP_DIFF,
-4548,WORD_NOUN,,HIRAGANA,,,合氣道,あいきどう,,aikidou,Aikido,"japońska sztuka walki, dawny zapis",EDICT_TRANSLATE_INFO_GROUP_DIFF,
+4547,WORD_NOUN,,HIRAGANA,,,合気道,あいきどう,,aikidou,Aikido,"japońska sztuka walki, 合氣道 - dawny zapis",,
+4548,WORD_NOUN,,HIRAGANA,,,合氣道,あいきどう,,aikidou,Aikido,"japońska sztuka walki, 合氣道 - dawny zapis",,
 4549,WORD_NOUN,,HIRAGANA,,,積木,つみき,,tsumiki,klocki,zabawka,,
 4550,WORD_NOUN,,HIRAGANA,,,積み木,つみき,,tsumiki,klocki,zabawka,,
 4551,WORD_NOUN,,HIRAGANA,,,乳,ちち,,chichi,"mleko
@@ -12741,7 +12745,7 @@ piach
 pył
 ziarnko piasku",,,
 4754,WORD_NUMBER,,HIRAGANA,,,参,さん,,san,"trzy
-3",w dokumentach,EDICT_TRANSLATE_INFO_GROUP_DIFF,DUPLICATE 77
+3",参 używane w dokumentach,,DUPLICATE 77
 4755,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,参加,さんか,,sanka,"udział
 uczestnictwo",,,
@@ -18294,7 +18298,7 @@ panienka
 dziewczyna
 Panna",,,
 6851,WORD_NUMBER,,HIRAGANA,,,拾,じゅう,,juu,"dziesięć
-10",używane w dokumentach,EDICT_TRANSLATE_INFO_GROUP_DIFF,
+10",拾 używane w dokumentach,,EDICT_DUPLICATE 719
 6852,WORD_NOUN,,HIRAGANA,,,拾い主,ひろいぬし,,hiroinushi,znalazca,,,
 6853,WORD_NOUN,,HIRAGANA,,,拾い物,ひろいもの,,hiroi mono,rzecz znaleziona,,,
 6854,WORD_VERB_IRREGULAR,,HIRAGANA,,,習得する,しゅうとくする,,shuutoku suru,"znaleźć
@@ -20086,7 +20090,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,食卓,しょくたく,,shokutaku,stół,,,
 7554,"WORD_NUMBER
 WORD_ADJECTIVE_NO
 WORD_NOUN",,HIRAGANA,,,壱,いち,,ichi,"jeden
-1",w dokumentach,EDICT_TRANSLATE_INFO_GROUP_DIFF,
+1","壱, 弌 i 壹 używane w dokumentach",,
 7555,WORD_NOUN,,HIRAGANA,,,壱万円,いちまんえん,,ichi man' en,dziesięć tysięcy jenów,,,
 7556,WORD_VERB_U,,HIRAGANA,,,滑る,すべる,,suberu,"ślizgać się
 poślizgnąć się
@@ -20130,8 +20134,8 @@ wyrozumiałość",,,
 7573,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,Genki 2-23,,理想,りそう,,risou,ideał,,,
 7574,WORD_NUMBER,,HIRAGANA,,,弐,に,,ni,"dwa
-2",używane w dokumentach,EDICT_TRANSLATE_INFO_GROUP_DIFF,DUPLICATE 13596
-7575,WORD_NOUN,,HIRAGANA,,,弐千円,にせんえん,,ni sen' en,dwa tysiące jenów,,EDICT_TRANSLATE_INFO_GROUP_DIFF,
+2","弐, 貳 i 貮 używane w dokumentach",,DUPLICATE 13596
+7575,WORD_NOUN,,HIRAGANA,,,弐千円,にせんえん,,ni sen' en,dwa tysiące jenów,,,
 7576,WORD_NUMBER,,HIRAGANA,,,弐百万,にひゃくまん,,ni hyaku man,"dwa miliony
 2000000",,,
 7577,WORD_VERB_U,,HIRAGANA,,,討つ,うつ,,utsu,"atakować
@@ -21633,13 +21637,17 @@ przekroczyć przez",,,
 8089,WORD_VERB_U,,HIRAGANA,,,超す,こす,,kosu,"przebierać miarę
 dopuszczać się ekscesów
 iść ponad",,,
-8090,WORD_NOUN,,HIRAGANA,,,鈴,すず,,suzu,dzwon,,EDICT_TRANSLATE_INFO_GROUP_DIFF,"DUPLICATE 8091
+8090,WORD_NOUN,,HIRAGANA,,,鈴,すず,,suzu,"dzwon
+dzwoneczek",,,"DUPLICATE 8091
 DUPLICATE 8709
 DUPLICATE 8741
-DUPLICATE 8741"
-8091,WORD_NOUN,,HIRAGANA,,,鈴,りん,,rin,dzwon,,EDICT_TRANSLATE_INFO_GROUP_DIFF,"DUPLICATE 8090
+DUPLICATE 8741
+EDICT_DUPLICATE 8709"
+8091,WORD_NOUN,,HIRAGANA,,,鈴,りん,,rin,"dzwon
+dzwoneczek",,,"DUPLICATE 8090
 DUPLICATE 8709
-DUPLICATE 8741"
+DUPLICATE 8741
+EDICT_DUPLICATE 8709"
 8092,WORD_NOUN,,HIRAGANA,,,溝,みぞ,,mizo,"rów
 kanał
 rynsztok",,,
@@ -23203,15 +23211,18 @@ DUPLICATE 19124"
 8706,WORD_FEMALE_NAME,,HIRAGANA,,,法子,のりこ,,Noriko,Noriko,,,
 8707,WORD_FEMALE_NAME,,HIRAGANA,,,典子,のりこ,,Noriko,Noriko,,,
 8708,WORD_FEMALE_NAME,,HIRAGANA,,,蘭,らん,,Ran,Ran,,NO_TYPE_CHECK,
-8709,WORD_FEMALE_NAME,,HIRAGANA,,,鈴,れい,,Rei,Rei,,"EDICT_TRANSLATE_INFO_GROUP_DIFF
-NO_TYPE_CHECK","DUPLICATE 8090
+8709,WORD_FEMALE_NAME,,HIRAGANA,,,鈴,れい,,Rei,Rei,,NO_TYPE_CHECK,"DUPLICATE 8090
 DUPLICATE 8091
-DUPLICATE 8741"
-8710,WORD_FEMALE_NAME,,HIRAGANA,Genki 1-1,,零,れい,,Rei,Rei,,"EDICT_TRANSLATE_INFO_GROUP_DIFF
-NO_TYPE_CHECK
+DUPLICATE 8741
+EDICT_DUPLICATE 8090
+EDICT_DUPLICATE 8091
+EDICT_DUPLICATE 8741"
+8710,WORD_FEMALE_NAME,,HIRAGANA,Genki 1-1,,零,れい,,Rei,Rei,,"NO_TYPE_CHECK
 NO_ALTERNATIVE","DUPLICATE 1
 DUPLICATE 24759
-DUPLICATE 24759"
+DUPLICATE 24759
+EDICT_DUPLICATE 1
+EDICT_DUPLICATE 24759"
 8711,WORD_FEMALE_NAME,,HIRAGANA,,,麗,れい,,Rei,Rei,,,
 8712,WORD_FEMALE_NAME,,HIRAGANA,,,霊,れい,,Rei,Rei,,NO_TYPE_CHECK,"DUPLICATE 5853
 DUPLICATE 5853
@@ -23254,7 +23265,8 @@ DUPLICATE 7792"
 8741,WORD_FEMALE_NAME,,HIRAGANA,,,鈴,すず,,Suzu,Suzu,,NO_TYPE_CHECK,"DUPLICATE 8090
 DUPLICATE 8090
 DUPLICATE 8091
-DUPLICATE 8709"
+DUPLICATE 8709
+EDICT_DUPLICATE 8709"
 8742,WORD_FEMALE_NAME,,HIRAGANA,,,雀,すずめ,,Suzume,Suzume,,NO_TYPE_CHECK,"DUPLICATE 2530
 DUPLICATE 2530"
 8743,WORD_FEMALE_NAME,,HIRAGANA,,,隆子,たかこ,,Takako,Takako,,,
@@ -28209,7 +28221,7 @@ bezsensowna (odpowiedź)",,,
 10801,WORD_ADVERB,,HIRAGANA,,,如何,どう,,dou,"jak
 w jaki sposób
 jak, co
-co sądzisz o",,EDICT_TRANSLATE_INFO_GROUP_DIFF,"DUPLICATE 3596
+co sądzisz o","いかが - uprzejma, honoryfikatywna forma od どう",,"DUPLICATE 3596
 DUPLICATE 17323"
 10802,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,博士,はくし,,hakushi,doktor,tytuł naukowy,,DUPLICATE 2690
@@ -49457,7 +49469,7 @@ niezaspokojony
 niezadowalający
 niewystarczający
 niesatysfakcjonujący",,,
-18944,WORD_NOUN,,KATAKANA,,,-,キャロル,,kyaroru,kolęda,ang: carol,EDICT_TRANSLATE_INFO_GROUP_DIFF,
+18944,WORD_NOUN,,KATAKANA,,,-,キャロル,,kyaroru,kolęda,ang: carol,,EDICT_DUPLICATE 21053
 18945,WORD_NOUN,,KATAKANA,,,-,バラック,,barakku,"koszary
 barak",,,
 18946,WORD_NOUN,,HIRAGANA,,,丹誠,たんせい,,tansei,"rzetelnie pracować
@@ -56360,8 +56372,7 @@ Ania",polskie imię,NO_TYPE_CHECK,
 21050,WORD_MALE_NAME,,KATAKANA,,,-,カミール,,kamiiru,Kamil,polskie imię,NO_TYPE_CHECK,
 21051,WORD_FEMALE_NAME,,KATAKANA,,,-,カミーラ,,kamiira,Kamila,polskie imię,NO_TYPE_CHECK,
 21052,WORD_FEMALE_NAME,,KATAKANA,,,-,カリナ,,karina,Karina,polskie imię,NO_TYPE_CHECK,
-21053,WORD_MALE_NAME,,KATAKANA,,,-,カロル,,karoru,Karol,polskie imię,"NO_TYPE_CHECK
-EDICT_TRANSLATE_INFO_GROUP_DIFF",
+21053,WORD_MALE_NAME,,KATAKANA,,,-,カロル,,karoru,Karol,polskie imię,NO_TYPE_CHECK,EDICT_DUPLICATE 18944
 21054,WORD_FEMALE_NAME,,KATAKANA,,,-,カロリーナ,,karoriina,Karolina,polskie imię,NO_TYPE_CHECK,
 21055,WORD_FEMALE_NAME,,KATAKANA,,,-,カタジーナ,,katajiina,"Katarzyna
 Kasia",polskie imię,NO_TYPE_CHECK,
@@ -60617,7 +60628,7 @@ niezwykły
 wyborowy
 doborowy",,,
 22430,WORD_NUMBER,,HIRAGANA,,,肆,し,,shi,"cztery
-4",używane w dokumentach,EDICT_TRANSLATE_INFO_GROUP_DIFF,DUPLICATE 10785
+4",肆 używane w dokumentach,,DUPLICATE 10785
 22431,WORD_NOUN,,KATAKANA,,,-,ソニー,,sonii,Sony,,,
 22432,WORD_NOUN,,HIRAGANA,,,屋台,やたい,,yatai,"wózek (np. na jedzenie)
 stragan
@@ -60652,7 +60663,8 @@ wspaniałomyślny
 wielkoduszny",,,
 22438,WORD_NOUN,,HIRAGANA,,,定食,ていしょく,,teishoku,"proponowane w restauracji zestawienie potraw
 specjał (dnia)",,,
-22439,WORD_NUMBER,,HIRAGANA,,,捌,はち,,hachi,osiem,używane w dokumentach,EDICT_TRANSLATE_INFO_GROUP_DIFF,
+22439,WORD_NUMBER,,HIRAGANA,,,捌,はち,,hachi,"osiem
+8",捌 używane w dokumentach,,
 22440,WORD_CONJUNCTION,,HIRAGANA,,,-,だけど,,dakedo,"jednak
 jednakże",,,
 22441,WORD_NOUN,,KATAKANA,,,-,サテン,,saten,"atłas
@@ -67335,12 +67347,13 @@ dodawanie przypraw",ang: spice,,
 WORD_ADJECTIVE_NO",ALTERNATIVE 1,HIRAGANA,Genki 1-1,,零,れい,,rei,"zero
 0",,,"DUPLICATE 1
 DUPLICATE 8710
-DUPLICATE 8710"
+DUPLICATE 8710
+EDICT_DUPLICATE 8710"
 24760,WORD_NUMBER,,HIRAGANA,Genki 1-1,,四,よん,,yon,"cztery
-4",,EDICT_TRANSLATE_INFO_GROUP_DIFF,"DUPLICATE 5
+4",肆 używane w dokumentach,,"DUPLICATE 5
 DUPLICATE 24761"
 24761,WORD_NUMBER,,HIRAGANA,Genki 1-1,,四,よ,,yo,"cztery
-4",,EDICT_TRANSLATE_INFO_GROUP_DIFF,"DUPLICATE 5
+4",肆 używane w dokumentach,,"DUPLICATE 5
 DUPLICATE 12723
 DUPLICATE 24760"
 24762,WORD_NUMBER,,HIRAGANA,Genki 1-1,,七,しち,,shichi,"siedem
@@ -71096,8 +71109,8 @@ czyj",,,"DUPLICATE 136
 DUPLICATE 26050"
 26052,WORD_EXPRESSION,,KATAKANA_EXCEPTION,,,-,オイシイ,,oishii,"smaczny
 smakowity
-pyszne",,"EDICT_TRANSLATE_INFO_GROUP_DIFF
-NO_TYPE_CHECK",
+pyszne",,"NO_TYPE_CHECK
+EDICT_TRANSLATE_INFO_GROUP_DIFF",
 26053,WORD_NOUN,,HIRAGANA,,,魚,うお,,uo,ryba,,,DUPLICATE 138
 26054,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,トンカツ,,tonkatsu,kotlet wieprzowy,,,
 26055,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,とんかつ,,tonkatsu,kotlet wieprzowy,,,
