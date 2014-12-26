@@ -260,13 +260,13 @@ public class CsvReaderWriter {
 				
 				List<KnownDuplicate> knownDuplicatedId = polishJapaneseEntry.getKnownDuplicatedList();
 				
+				Collections.sort(knownDuplicatedId);
+				
 				List<String> knownDuplicateIdStringList = new ArrayList<String>();
 				
 				for (KnownDuplicate currentKnownDuplicate : knownDuplicatedId) {					
 					knownDuplicateIdStringList.add(currentKnownDuplicate.getKnownDuplicateType() + " " + currentKnownDuplicate.getId());					
 				}
-				
-				Collections.sort(knownDuplicateIdStringList);
 								
 				csvWriter.write(convertListToString(knownDuplicateIdStringList));
 			}

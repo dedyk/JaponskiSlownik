@@ -127,7 +127,7 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 		return super.clone();
 	}	
 	
-	public static class KnownDuplicate {
+	public static class KnownDuplicate implements Comparable<KnownDuplicate> {
 		
 		private KnownDuplicateType knownDuplicateType;
 		
@@ -180,6 +180,24 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 				return false;
 			
 			return true;
+		}
+
+		@Override
+		public int compareTo(KnownDuplicate o) {
+			
+			if (knownDuplicateType != o.knownDuplicateType) {				
+				return knownDuplicateType.toString().compareTo(o.knownDuplicateType.toString());			
+			}
+			
+			if (id < o.id) {
+				return -1;
+				
+			} else if (id > o.id) {
+				return 1;
+				
+			} else {
+				return 0;
+			}
 		}
 	}
 	

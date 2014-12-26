@@ -34,23 +34,33 @@ public class RegenerateDictionary {
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : resultPolishJapaneseEntries) {
 
 			String kana = currentPolishJapaneseEntry.getKana();
-
-			List<KnownDuplicate> knownDuplicatedIds = generateKnownDuplicatedIdForKanji(polishJapaneseEntries,
+			
+			List<KnownDuplicate> knownDuplicatedList = currentPolishJapaneseEntry.getKnownDuplicatedList();
+			
+			List<KnownDuplicate> newKnownDuplicatedList = new ArrayList<PolishJapaneseEntry.KnownDuplicate>();
+			
+			for (KnownDuplicate knownDuplicate : knownDuplicatedList) {
+				
+				if (knownDuplicate.getKnownDuplicateType() != KnownDuplicateType.DUPLICATE) {
+					newKnownDuplicatedList.add(knownDuplicate);
+				}				
+			}
+			
+			generateKnownDuplicatedIdForKanji(newKnownDuplicatedList, polishJapaneseEntries,
 					currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji());
 
-			generateKnownDuplicatedIdFormKanjiAndKana(knownDuplicatedIds, polishJapaneseEntries,
+			generateKnownDuplicatedIdFormKanjiAndKana(newKnownDuplicatedList, polishJapaneseEntries,
 					currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji(), kana);
 
-			currentPolishJapaneseEntry.setKnownDuplicatedList(knownDuplicatedIds);
+			currentPolishJapaneseEntry.setKnownDuplicatedList(newKnownDuplicatedList);
 		}
 
 		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true, true, false);
 	}
 
-	private static List<KnownDuplicate> generateKnownDuplicatedIdForKanji(List<PolishJapaneseEntry> polishJapaneseKanjiEntries,
+	private static List<KnownDuplicate> generateKnownDuplicatedIdForKanji(List<KnownDuplicate> result,
+			List<PolishJapaneseEntry> polishJapaneseKanjiEntries,
 			int id, String kanji) {
-
-		List<KnownDuplicate> result = new ArrayList<KnownDuplicate>();
 
 		if (kanji.equals("-") == true) {
 			return result;
