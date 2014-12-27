@@ -9148,7 +9148,12 @@ szczęście",,,
 3348,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-18,,家庭教師,かていきょうし,,katei kyoushi,"nauczyciel udzielający lekcji w prywatnym domu
 korepetytor",,,
 3349,WORD_NOUN,,KATAKANA,Genki dodatkowe 2-18,,-,サークル,,saakuru,klub,,,
-3350,WORD_NOUN,,KATAKANA,,,-,チラシ,,chirashi,ulotka,,,
+3350,WORD_NOUN,,KATAKANA,,,-,チラシ,,chirashi,"ulotka
+broszurka
+rozproszenie
+rozrzut
+ryż sushi w pudełku lub miseczce z różnymi składnikami posypanymi na wierzchu (skrót)
+pisanie nieodpowiednią ręką",,,
 3351,WORD_VERB_U,,HIRAGANA,Genki kanji 2-21,,配る,くばる,,kubaru,"dystrybuować
 dostarczać
 roznosić
@@ -30486,9 +30491,13 @@ siano",,,
 siano",,,
 11759,WORD_NOUN,,HIRAGANA,,,枯れ草,かれくさ,,kare kusa,"wyschnięta trawa
 siano",,,
-11760,WORD_NOUN,,HIRAGANA,,,草原,くさはら,,kusa hara,"łąka
+11760,WORD_NOUN,,HIRAGANA,,,草原,くさはら,,kusa hara,"równina pokryta trawą
+łąka
+trawiasty obszar
 trawiasta równina
-step",,,
+sawanna
+preria
+step",,,DUPLICATE 27704
 11761,WORD_NOUN,,HIRAGANA,,,草花,くさばな,,kusa bana,"kwiaty wśród traw
 rośliny kwitnące",,,
 11762,WORD_ADJECTIVE_I,,HIRAGANA,,,汗臭い,あせくさい,,ase kusai,śmierdzący potem,,,
@@ -76209,13 +76218,13 @@ DUPLICATE 27693"
 27695,WORD_NOUN,,HIRAGANA,,,同校,どうこう,,doukou,ta sama szkoła,,,
 27696,"WORD_NOUN
 WORD_ADJECTIVE_NA
-WORD_NOUN",,HIRAGANA,,,微量,びりょう,,biryou,"bardzo mała ilość
+WORD_ADJECTIVE_NO",,HIRAGANA,,,微量,びりょう,,biryou,"bardzo mała ilość
 maleńka ilość",,,
-27697,WORD_NOUN,,HIRAGANA,,,散らし,ちらし,,chirashi,"rozproszenie
-rozrzut
-ulotka
+27697,WORD_NOUN,,HIRAGANA,,,散らし,ちらし,,chirashi,"ulotka
 broszurka
-ryż suchi w pudełku lub miseczce z różnymi składnikami posypanymi na wierzchu (skrót)
+rozproszenie
+rozrzut
+ryż sushi w pudełku lub miseczce z różnymi składnikami posypanymi na wierzchu (skrót)
 pisanie nieodpowiednią ręką",,,
 27698,WORD_NOUN,,HIRAGANA,,,洞察,どうさつ,,dousatsu,"rozeznanie
 wnikliwość
@@ -76245,13 +76254,14 @@ publiczność",,,
 27704,WORD_NOUN,,HIRAGANA,,,草原,そうげん,,sougen,"równina pokryta trawą
 łąka
 trawiasty obszar
+trawiasta równina
 sawanna
 preria
-step",,,
+step",,,DUPLICATE 11760
 27705,"WORD_ADJECTIVE_NA
 WORD_NOUN",,KATAKANA,,,-,エキゾチック,,ekizochikku,egzotyczny,,,
 27706,WORD_NOUN,,KATAKANA,,,-,エキゾチックアニマル ,,ekizochikku animaru,egzotyczne zwierze,,,
-27707,WORD_NOUN,,KATAKANA,,,-,シャープペンシル,,shaa purenshiru,ołówek automatyczny,"ang: propelling pencil, mechanical pencil",,
+27707,WORD_NOUN,,KATAKANA,,,-,シャープペンシル,,shaa pupenshiru,ołówek automatyczny,"ang: propelling pencil, mechanical pencil",,
 27708,WORD_NOUN,,KATAKANA,,,-,セゾン,,sezon,"sezon
 pora roku
 okres",ang: season,,
@@ -76259,9 +76269,11 @@ okres",ang: season,,
 rozległa nauka
 szeroka nauka",,,
 27710,WORD_NOUN,,HIRAGANA,,,博物学,はくぶつがく,,hakubutsugaku,historia naturalna,,,
-27711,WORD_NOUN,,HIRAGANA,,,新生,しんせい,,shinsei,"odrodzenie
+27711,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,新生,しんせい,,shinsei,"odrodzenie
 nowe narodziny
-rodzenie się",,,
+rodzenie się
+nowo narodzony",,,
 27712,WORD_NOUN,,HIRAGANA,,,人事異動,じんじいどう,,jinji idou,"zmiana personelu
 przesunięcia personelu
 przetasowanie personelu
@@ -76274,7 +76286,8 @@ zdradzić",,,
 27714,WORD_NOUN,,HIRAGANA,,,識者,しきしゃ,,shikisha,"dobrze poinformowana osoba
 myśląca osoba
 inteligentna osoba",,,
-27715,WORD_NOUN,,HIRAGANA,,,超越,ちょうえつ,,chouetsu,"transcendencja
+27715,"WORD_NOUN
+WORD_ADJECTIVE_F",,HIRAGANA,,,超越,ちょうえつ,,chouetsu,"transcendencja
 transcendentność
 transcendentalny
 przekraczanie
@@ -76288,3 +76301,15 @@ jasny
 wyraźny
 klarowny
 odrębny",,,
+27717,WORD_NOUN,,KATAKANA,,,-,ガウン,,gaun,"szlafrok
+toga",ang: gown,,
+27718,WORD_NOUN,,KATAKANA,,,-,ハイビスカス,,haibisukasu,"ketmia
+hibiskus",rodzaj krzewów i roślin zielnych z rodziny ślazowatych,,
+27719,"WORD_NOUN
+WORD_ADJECTIVE_F",,KATAKANA,,,-,ブラッシー,,burasshii,"ang:  brassie (rodzaj klubu golfowego)
+miedziany
+krzaczasty","ang: brassie, brassy, brushy",,
+27720,WORD_NOUN,,KATAKANA,,,-,ムスタング,,musutangu,mustang,,,
+27721,WORD_NOUN,,HIRAGANA,,,増水,ぞうすい,,zousui,"przybór wody (np. rzeki, jeziora i etc)
+zwiększenie poziomu wody
+wysoka woda",,,
