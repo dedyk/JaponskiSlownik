@@ -15974,7 +15974,7 @@ WORD_ADJECTIVE_NO
 WORD_ADVERB
 WORD_INTERJECTION",,HIRAGANA,,,己,おのれ,,onore,"ja
 jaźń
-osobowość",,,
+osobowość",,,DUPLICATE 28338
 5910,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,自己,じこ,,jiko,"sam
 siebie
@@ -20443,7 +20443,8 @@ DUPLICATE 26002
 DUPLICATE 27537
 DUPLICATE 27539"
 7645,WORD_EXPRESSION,,HIRAGANA,Genki 2-23,,元気でね,げんきでね,,genki de ne,dbaj o siebie,,,
-7646,WORD_EXPRESSION,,HIRAGANA,Genki 2-23,,-,そうそう,,sousou,masz rację,,,DUPLICATE 21800
+7646,WORD_EXPRESSION,,HIRAGANA,Genki 2-23,,-,そうそう,,sousou,masz rację,,,"DUPLICATE 21800
+DUPLICATE 28346"
 7647,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,Genki 2-23,,-,そろそろ,,sorosoro,"niebawem
 wkrótce
@@ -58814,7 +58815,8 @@ o co chodzi?
 w czym rzecz?",,,
 21777,"WORD_PRONOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,俺,おれ,,ore,"ja
-mnie","prostacko lub arogancko, dawniej używano również przez kobiety",,
+mnie","prostacko lub arogancko, dawniej używano również przez kobiety",,"DUPLICATE 28336
+DUPLICATE 28337"
 21778,WORD_NOUN,,HIRAGANA,,,股間,こかん,,kokan,"dolny region
 dolny obszar
 pomiędzy nogami",,,
@@ -58850,13 +58852,15 @@ WORD_ADJECTIVE_NO
 WORD_ADJECTIVE_NA",,HIRAGANA,,,凸凹,でこぼこ,,dekoboko,"nierówność
 niejednolitość
 nierównomierność
-chropowatość",,,DUPLICATE 21789
+chropowatość",,,"DUPLICATE 21789
+DUPLICATE 28343"
 21789,"WORD_NOUN
 WORD_ADJECTIVE_NO
 WORD_ADJECTIVE_NA",,HIRAGANA,,,凸凹,とつおう,,totsuou,"nierówność
 niejednolitość
 nierównomierność
-chropowatość",,,DUPLICATE 21788
+chropowatość",,,"DUPLICATE 21788
+DUPLICATE 28343"
 21790,WORD_NOUN,,HIRAGANA,,,名所,めいしょ,,meisho,"słynne miejsce
 znane miejsce
 sławne miejsce",,,DUPLICATE 21791
@@ -78221,9 +78225,12 @@ ryby",,,
 gnój
 łajno
 brud
-nieczystości",,,
+nieczystości",,,"DUPLICATE 28401
+DUPLICATE 28402
+DUPLICATE 28403
+DUPLICATE 28404"
 28330,WORD_NOUN,,KATAKANA,,,-,ポニー,,ponii,kucyk,ang: pony,,
-28331,WORD_NOUN,,HIRAGANA,,,鉄面,てつめん,,tetsumen,żelazna maska,noszona przez samurajów,,
+28331,WORD_NOUN,,HIRAGANA,,,鉄面,てつめん,,tetsumen,żelazna maska,noszona przez samurajów,,DUPLICATE 28405
 28332,WORD_FEMALE_NAME,,KATAKANA,,,-,ヴァネッサ,,vanessa,"Wanessa
 Vanessa",,,
 28333,WORD_NOUN,,HIRAGANA,,,黄道十二星座,こうどうじゅうにせいざ,,koudou juuni seiza,"zodiak
@@ -78232,3 +78239,279 @@ znaki zodiaku",,,
 deszcz i śnieg boga
 smok boga
 smok królewski",,,
+28335,WORD_NOUN,,HIRAGANA,,,隨筆,ずいひつ,,zuihitsu,"esej
+rozmaite zapiski
+literackie zapiski",,,
+28336,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,俺,おらあ,,oraa,"ja
+mnie","prostacko lub arogancko, dawniej używano również przez kobiety",,"DUPLICATE 21777
+DUPLICATE 28337"
+28337,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,俺,おり,,ori,"ja
+mnie","prostacko lub arogancko, dawniej używano również przez kobiety",,"DUPLICATE 21777
+DUPLICATE 28336"
+28338,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,己,おれ,,ore,"ja
+mnie","prostacko lub arogancko, dawniej używano również przez kobiety",,DUPLICATE 5909
+28339,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,乃公,おれ,,ore,"ja
+mnie","prostacko lub arogancko, dawniej używano również przez kobiety",,"DUPLICATE 28340
+DUPLICATE 28341"
+28340,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,乃公,だいこう,,daikou,"ja
+mnie","prostacko lub arogancko, dawniej używano również przez kobiety",,"DUPLICATE 28339
+DUPLICATE 28341"
+28341,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,乃公,ないこう,,naikou,"ja
+mnie","prostacko lub arogancko, dawniej używano również przez kobiety",,"DUPLICATE 28339
+DUPLICATE 28340"
+28342,WORD_NOUN,,KATAKANA,,,-,スイレン,,suiren,lilia wodna,,,
+28343,"WORD_NOUN
+WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_NA",,HIRAGANA,,,凸凹,だくぼく,,dakuboku,"nierówność
+niejednolitość
+nierównomierność
+chropowatość",,,"DUPLICATE 21788
+DUPLICATE 21789"
+28344,WORD_NOUN,,HIRAGANA,,,想い,おもい,,omoi,"uczucie
+odczucie
+czucie
+wrażenie
+emocja
+myśl
+pragnienie
+pożądanie",,,
+28345,WORD_NOUN,,HIRAGANA,,,念い,おもい,,omoi,"uczucie
+odczucie
+czucie
+wrażenie
+emocja
+myśl
+pragnienie
+pożądanie",,,
+28346,"WORD_ADVERB
+WORD_NOUN
+WORD_ADVERBIAL_NOUN",SUFFIX,HIRAGANA,,,早早,そうそう,,sousou,"skoro
+jak tylko
+właśnie
+dopiero co
+zaraz
+bezpośrednio po
+natychmiast po
+pośpiesznie
+pospiesznie
+śpiesznie
+naprędce
+szybko
+prędko
+niezwłocznie
+wczesny
+rychły",,,"DUPLICATE 7646
+DUPLICATE 28347
+DUPLICATE 28348"
+28347,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,早早,はやばや,,hayabaya,"wczesny
+rychły
+szybko
+prędko
+rychło
+niezwłocznie
+natychmiast",,,"DUPLICATE 28346
+DUPLICATE 28348"
+28348,WORD_ADVERB,,HIRAGANA,,,早早,はやはや,,hayahaya,"szybko
+prędko
+rychło",archaizm,,"DUPLICATE 28346
+DUPLICATE 28347"
+28349,WORD_NOUN,,HIRAGANA,,,だ円形,だえんけい,,daenkei,"kształt eliptyczny
+eliptyczny kształt",,,
+28350,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,浮彫り,うきぼり,,ukibori,"płaskorzeźba
+wytłaczana rzeźba",,,
+28351,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,浮彫,うきぼり,,ukibori,"płaskorzeźba
+wytłaczana rzeźba",,,
+28352,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,浮き彫,うきぼり,,ukibori,"płaskorzeźba
+wytłaczana rzeźba",,,
+28353,WORD_NOUN,,HIRAGANA,,,話声,はなしごえ,,hanashigoe,"odgłos mówienia
+dźwięki mówienia
+głos rozmowy
+odgłosy rozmowy",,,
+28354,WORD_NOUN,,HIRAGANA,,,雨ふり,あめふり,,amefuri,"opady deszczu
+deszczowa pogoda
+deszczowa aura",,,
+28355,WORD_NOUN,,HIRAGANA,,,雨降,あめふり,,amefuri,"opady deszczu
+deszczowa pogoda
+deszczowa aura",,,
+28356,WORD_NOUN,,HIRAGANA,,,昂揚,こうよう,,kouyou,"poprawa
+ulepszenie
+udoskonalenie
+wzbogacenie
+egzaltacja
+zachwyt
+wychwalenie
+promocja
+awans
+wyniesienie",,,
+28357,WORD_NOUN,,HIRAGANA,,,一一〇番,ひゃくとおばん,,hyaku too ban,policyjny numer alarmowy,w Japonii,,
+28358,WORD_NOUN,,KATAKANA,,,-,キャンディー,,kyandii,"cukierek
+cukierki
+słodycze","ang: candy, sweets",,
+28359,WORD_NOUN,,KATAKANA,,,-,キャンディ,,kyandi,"cukierek
+cukierki
+słodycze","ang: candy, sweets",,
+28360,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ジェラチン,,jerachin,żelatyna,,,
+28361,WORD_NOUN,,KATAKANA,,,-,ハイウェー,,haiwee,"szosa
+autostrada
+droga",ang: highway,,
+28362,WORD_NOUN,,KATAKANA,,,-,ハイウエイ,,haiuei,"szosa
+autostrada
+droga",ang: highway,,
+28363,WORD_NOUN,,KATAKANA,,,-,ハードウエア,,haadouea,sprzęt,"szczególnie komputerowy, ang: hardware",,
+28364,WORD_NOUN,,KATAKANA,,,-,ボーダー・ライン,,boodaa rain,"linia graniczna
+granica",ang: border line,,
+28365,WORD_NOUN,,HIRAGANA,,,釣針,つりばり,,tsuribari,"haczyk
+haczyk wędkarski",,,
+28366,WORD_NOUN,,HIRAGANA,,,釣り鉤,つりばり,,tsuribari,"haczyk
+haczyk wędkarski",,,
+28367,WORD_NOUN,,HIRAGANA,,,釣鉤,つりばり,,tsuribari,"haczyk
+haczyk wędkarski",,,
+28368,WORD_NOUN,,HIRAGANA,,,つり針,つりばり,,tsuribari,"haczyk
+haczyk wędkarski",,,
+28369,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,気狂い,きちがい,,kichigai,"szaleństwo
+obłęd
+obłąkanie
+wariactwo
+szaleniec
+wariat
+entuzjasta
+zapaleniec
+fanatyk",,,
+28370,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,基地外,きちがい,,kichigai,"szaleństwo
+obłęd
+obłąkanie
+wariactwo
+szaleniec
+wariat
+entuzjasta
+zapaleniec
+fanatyk",,,
+28371,WORD_NOUN,,HIRAGANA,,,装幀,そうてい,,soutei,"oprawa (książki)
+oprawianie książki
+format
+formatowanie",,,
+28372,WORD_NOUN,,HIRAGANA,,,装釘,そうてい,,soutei,"oprawa (książki)
+oprawianie książki
+format
+formatowanie",,,
+28373,WORD_NOUN,,HIRAGANA,,,装訂,そうてい,,soutei,"oprawa (książki)
+oprawianie książki
+format
+formatowanie",,,
+28374,WORD_NOUN,,HIRAGANA,,,銓衡,せんこう,,senkou,"wybór
+dobór
+selekcja",,,
+28375,WORD_NOUN,,HIRAGANA,,,口ごたえ,くちごたえ,,kuchigotae,"riposta
+retorta
+odpowiadanie niegrzeczne
+pyskowanie",,,
+28376,WORD_NOUN,,HIRAGANA,,,口応え,くちごたえ,,kuchigotae,"riposta
+retorta
+odpowiadanie niegrzeczne
+pyskowanie",,,
+28377,WORD_VERB_RU,,HIRAGANA,,,心掛ける,こころがける,,kokorogakeru,"zapamiętać
+zachować w pamięci
+nosić w pamięci
+starać
+usiłować
+próbować",,,
+28378,WORD_VERB_RU,,HIRAGANA,,,心懸ける,こころがける,,kokorogakeru,"zapamiętać
+zachować w pamięci
+nosić w pamięci
+starać
+usiłować
+próbować",,,
+28379,WORD_NOUN,,KATAKANA,,,-,ブルー・カラー,,buruu karaa,"niebieski kołnierzyk
+pracownik fizyczny",termin wprowadzony w amerykańskiej socjologii na określenie pracowników produkcyjnych lub administracyjnych niższego szczebla,,
+28380,WORD_NOUN,,KATAKANA,,,-,シナリオ・ライター,,shinario raitaa,scenarzysta,ang: scriptwriter,,
+28381,WORD_ADJECTIVE_I,,HIRAGANA,,,清清しい,すがすがしい,,sugasugashii,"ożywczy
+krzepiący (np. uczucie, widok, wiatr, poranne powietrze)
+rześki
+energiczny
+orzeźwiający",,,
+28382,WORD_NOUN,,KATAKANA,,,-,サンクスギビング・デー,,sankusugibingu dee,"Święto Dziękczynienia
+Dzień Dziękczynienia",ang: Thanksgiving Day,,
+28383,WORD_VERB_U,,HIRAGANA,,,上まわる,うわまわる,,uwamawaru,"przekraczać
+przewyższać (np. zysk, stopę bezrobocia i etc)
+być lepszy niż",,,
+28384,WORD_VERB_U,,HIRAGANA,,,上廻る,うわまわる,,uwamawaru,"przekraczać
+przewyższać (np. zysk, stopę bezrobocia i etc)
+być lepszy niż",,,
+28385,WORD_VERB_RU,,HIRAGANA,,,印象づける,いんしょうづける,,inshoudukeru,"imponować
+robić wrażenie",na kimś,,
+28386,WORD_NOUN,,KATAKANA,,,-,ワン・タッチ,,wan tacchi,"jeden dotyk
+jedno dotknięcie",ang: one touch,,
+28387,WORD_NOUN,,KATAKANA,,,-,インフルエンザ・ウイルス,,infuruenza uirusu,wirus grypy,ang: influenza virus,,
+28388,WORD_NOUN,,HIRAGANA,,,牡羊座,おひつじざ,,ohitsujiza,"gwiazdozbiór barana
+baran",,,
+28389,WORD_NOUN,,HIRAGANA,,,牡牛座,おうしざ,,oushiza,"gwiazdozbiór byka
+byk",,,
+28390,WORD_NOUN,,HIRAGANA,,,双子座,ふたござ,,futagoza,"gwiazdozbiór bliźniąt
+bliźnięta",,,
+28391,WORD_NOUN,,HIRAGANA,,,蟹座,かにざ,,kaniza,"gwiazdozbiór raka
+rak",,,
+28392,WORD_NOUN,,HIRAGANA,,,蠏座,かにざ,,kaniza,"gwiazdozbiór raka
+rak",,,
+28393,WORD_NOUN,,HIRAGANA,,,乙女座,おとめざ,,otomeza,"gwiazdozbiór panny
+panna",,,
+28394,WORD_NOUN,,HIRAGANA,,,天秤座,てんびんざ,,tenbinza,"gwiazdozbiór wagi
+waga",,,
+28395,WORD_NOUN,,HIRAGANA,,,蠍座,さそりざ,,sasoriza,"gwiazdozbiór skorpiona
+skorpion",,,
+28396,WORD_NOUN,,HIRAGANA,,,蝎座,さそりざ,,sasoriza,"gwiazdozbiór skorpiona
+skorpion",,,
+28397,WORD_NOUN,,HIRAGANA,,,射手座,いてざ,,iteza,"gwiazdozbiór strzelca
+strzelec",,,
+28398,WORD_NOUN,,HIRAGANA,,,山羊座,やぎざ,,yagiza,"gwiazdozbiór koziorożca
+koziorożec",,,
+28399,WORD_NOUN,,HIRAGANA,,,水瓶座,みずがめざ,,mizugameza,"gwiazdozbiór wodnika
+wodnik",,,
+28400,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,魚座,うおざ,,uoza,"gwiazdozbiór ryb
+ryby",,,
+28401,WORD_NOUN,,HIRAGANA,,,汚穢,おあい,,oai,"fekalia
+gnój
+łajno
+brud
+nieczystości",,,"DUPLICATE 28329
+DUPLICATE 28402
+DUPLICATE 28403
+DUPLICATE 28404"
+28402,WORD_NOUN,,HIRAGANA,,,汚穢,あえ,,ae,"fekalia
+gnój
+łajno
+brud
+nieczystości",,,"DUPLICATE 28329
+DUPLICATE 28401
+DUPLICATE 28403
+DUPLICATE 28404"
+28403,WORD_NOUN,,HIRAGANA,,,汚穢,わえ,,wae,"fekalia
+gnój
+łajno
+brud
+nieczystości",,,"DUPLICATE 28329
+DUPLICATE 28401
+DUPLICATE 28402
+DUPLICATE 28404"
+28404,WORD_NOUN,,HIRAGANA,,,汚穢,おかい,,okai,"fekalia
+gnój
+łajno
+brud
+nieczystości",,,"DUPLICATE 28329
+DUPLICATE 28401
+DUPLICATE 28402
+DUPLICATE 28403"
+28405,WORD_NOUN,,HIRAGANA,,,鉄面,かなめん,,kanamen,żelazna maska,noszona przez samurajów,,DUPLICATE 28331
