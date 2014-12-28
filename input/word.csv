@@ -3509,7 +3509,7 @@ cały dzień",przeciwieństwo nocy,,
 właściciel domu","osoba, od którego wynajmujemy mieszkanie",,
 1056,WORD_NOUN,,HIRAGANA,Genki 2-14,,お返し,おかえし,,okaeshi,"„oddany” prezent
 „oddana” przysługa","prezent za przysługę, odwdzięczanie się prezentem",,
-1057,WORD_NOUN,,KATAKANA,Genki 2-14,,-,クラブ,,kurabu,klub,,,
+1057,WORD_NOUN,,KATAKANA,Genki 2-14,,-,クラブ,,kurabu,klub,"np. golfowy, tenisowy",,DUPLICATE 28072
 1058,WORD_NOUN,,KATAKANA,Genki 2-14,,-,クリスマス,,kurisumasu,święta bożego narodzenia,,,
 1059,WORD_NOUN,,KATAKANA,Genki 2-14,,-,コップ,,koppu,"kubek
 szklanka",,,
@@ -69929,6 +69929,7 @@ WORD_NOUN",,HIRAGANA,,,不十分,ふじゅうぶん,,fujuubun,"niewystarczający
 nieodpowiedni
 niedostateczny
 niedoskonały
+niedostatek
 brak
 niedobór",,,
 25581,WORD_NOUN,,HIRAGANA,,,合板,ごうばん,,gouban,"sklejka
@@ -70237,6 +70238,7 @@ WORD_NOUN",,HIRAGANA,,,不充分,ふじゅうぶん,,fujuubun,"niewystarczający
 nieodpowiedni
 niedostateczny
 niedoskonały
+niedostatek
 brak
 niedobór",,,
 25705,WORD_NOUN,,HIRAGANA,,,短目,みじかめ,,mijikame,"niewysoki
@@ -77390,10 +77392,8 @@ hibiskus",rodzaj krzewów i roślin zielnych z rodziny ślazowatych,,
 28065,WORD_NOUN,,KATAKANA,,,-,ベイオニット,,beionitto,bagnet,ang: bayonet,,
 28066,WORD_NOUN,,KATAKANA,,,-,オーロラ,,oorora,"zorza
 zorza polarna",ang: aurora,,
-28067,"WORD_ADJECTIVE_NA
-WORD_NOUN",,HIRAGANA,,,不充分,ふじゅうぶん,,fujuubun,"niewystarczający
-niedostateczny
-niedostatek",,,
+28067,WORD_NOUN,,KATAKANA,,,-,ブルーカラー,,buruukaraa,"niebieski kołnierzyk
+pracownik fizyczny",termin wprowadzony w amerykańskiej socjologii na określenie pracowników produkcyjnych lub administracyjnych niższego szczebla,,
 28068,WORD_NOUN,,HIRAGANA,,,凝視,ぎょうし,,gyoushi,"wpatrywanie się
 przypatrywanie się",,,
 28069,WORD_NOUN,,HIRAGANA,,,油彩,ゆさい,,yusai,"malarstwo olejne
@@ -77405,9 +77405,9 @@ usługi seksualne
 przemysł porno
 sex przemysł",,,
 28071,WORD_NOUN,,KATAKANA,,,-,シナリオライター,,shinario raitaa,scenarzysta,ang: scriptwriter,,
-28072,WORD_NOUN,,KATAKANA,,,倶楽部,クラブ,,furabu,"klub
+28072,WORD_NOUN,,KATAKANA,,,倶楽部,クラブ,,kurabu,"klub
 braterstwo
-stowarzyszenie",,,
+stowarzyszenie",,,DUPLICATE 1057
 28073,"WORD_ADJECTIVE_NA
 WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,同等,どうとう,,doutou,"równy
@@ -77435,9 +77435,11 @@ przewyższać (np. zysk, stopę bezrobocia i etc)
 być lepszy niż",,,
 28079,WORD_VERB_RU,,HIRAGANA,,,印象付ける,いんしょうづける,,inshou dukeru,"imponować
 robić wrażenie",na kimś,,
-28080,WORD_NOUN,,HIRAGANA,,,彫金,ちょうきん,,choukin,"metalowa rzeźba
+28080,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,彫金,ちょうきん,,choukin,"metalowa rzeźba
 grawerunek
-grawerstwo",,,
+grawerstwo
+grawerowany",,,
 28081,WORD_NOUN,,KATAKANA,,,-,クルーズ,,kuruuzu,rejs wycieczkowym statkiem,ang: cruise,,
 28082,WORD_NOUN,,KATAKANA,,,-,トゥルー,,turuu,prawda,ang: true,,
 28083,WORD_NOUN,,KATAKANA,,,-,ワンタッチ,,wan tacchi,"jeden dotyk
@@ -77445,3 +77447,14 @@ jedno dotknięcie",ang: one touch,,
 28084,WORD_NOUN,,HIRAGANA,,,楽曲,がっきょく,,gakkyoku,"kompozycja muzyczna
 melodia",,,
 28085,WORD_NOUN,,HIRAGANA,,,生保,せいほ,,seiho,ubezpieczenie na życie,skrót,,
+28086,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,インフルエンザ,,infuruenza,grypa,ang: influenza,,
+28087,WORD_NOUN,,KATAKANA,,,-,インフルエンザウイルス,,infuruenza uirusu,wirus grypy,ang: influenza virus,,
+28088,WORD_NOUN,,KATAKANA,,,-,コネクション,,konekushon,połączenie,ang: connection,,
+28089,WORD_NOUN,,KATAKANA,,,-,サイロ,,sairo,silos,ang: silo,,
+28090,"WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,盲目,もうもく,,moumoku,"ślepy
+ślepota",,,
+28091,WORD_NOUN,,HIRAGANA,,,頻発,ひんぱつ,,hinpatsu,"częstotliwość
+częstość",,,
