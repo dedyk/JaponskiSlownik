@@ -11,6 +11,7 @@ import java.util.TreeSet;
 import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
@@ -57,6 +58,12 @@ public class GenerateJMEDictGroupWordList {
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.EDICT_TRANSLATE_INFO_GROUP_DIFF) == true) {
+				continue;
+			}
+			
+			DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+			
+			if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
 				continue;
 			}
 			
@@ -197,6 +204,12 @@ public class GenerateJMEDictGroupWordList {
 			List<PolishJapaneseEntry> polishJapaneseEntries, String findKanji, String findKana) {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+			
+			if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+				continue;
+			}
 						
 			String kanji = polishJapaneseEntry.getKanji();
 			String kana = polishJapaneseEntry.getKana();

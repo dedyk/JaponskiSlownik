@@ -1419,7 +1419,7 @@ strasznie
 absolutnie
 zupełnie
 całkowicie
-bezwzględnie",,,
+bezwzględnie",,,DUPLICATE 30330
 439,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,Genki 1-5,,-,どんな,,donna,"jaki
 jakiego rodzaju",,,
 440,WORD_PARTICULE,,HIRAGANA,Genki 1-5,,迄,まで,,made,do,"miejsce, czasu",,
@@ -1780,7 +1780,8 @@ WORD_COUNTER",,HIRAGANA,"Genki 1-7
 Genki kanji 1-11
 Genki dodatkowe 2-15",,手,て,,te,"dłoń
 ręka
-ramię",,,DUPLICATE 12612
+ramię",,,"DUPLICATE 12612
+DUPLICATE 30215"
 535,WORD_NOUN,,HIRAGANA,Genki 1-7,,頭,あたま,,atama,"głowa
 rozum",,,"DUPLICATE 3712
 DUPLICATE 28179
@@ -14281,11 +14282,19 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,我,わ,,wa,"ja
 mnie
 siebie
 ty (archaizm)",,,"DUPLICATE 5247
-DUPLICATE 13595"
+DUPLICATE 13595
+DUPLICATE 30078
+DUPLICATE 30079
+DUPLICATE 30080
+DUPLICATE 30081"
 5247,"WORD_PRONOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,我,われ,,ware,"ja
 mnie
-ty (archaizm)",,,DUPLICATE 5246
+ty (archaizm)",,,"DUPLICATE 5246
+DUPLICATE 30078
+DUPLICATE 30079
+DUPLICATE 30080
+DUPLICATE 30081"
 5248,WORD_NOUN,,HIRAGANA,,,自我,じが,,jiga,"ja
 ego",,,
 5249,"WORD_ADJECTIVE_NA
@@ -15540,15 +15549,19 @@ wyznawca",,,
 WORD_COUNTER",,HIRAGANA,,,灯,とう,,tou,"światło
 lampa
 klasyfikator na lampy elektryczne",,,"DUPLICATE 5729
-DUPLICATE 5730"
+DUPLICATE 5730
+DUPLICATE 30189"
 5729,WORD_NOUN,,HIRAGANA,,,灯,ひ,,hi,"światło
 lampa",,,"DUPLICATE 5728
-DUPLICATE 5730"
+DUPLICATE 5730
+DUPLICATE 30189"
 5730,WORD_NOUN,,HIRAGANA,,,灯,ともしび,,tomoshibi,"światło
 lampa",,,"DUPLICATE 5728
-DUPLICATE 5729"
+DUPLICATE 5729
+DUPLICATE 30189"
 5731,WORD_NOUN,,HIRAGANA,,,灯火,とうか,,touka,"światło
-lampa",,,DUPLICATE 28909
+lampa",,,"DUPLICATE 28909
+DUPLICATE 30191"
 5732,WORD_NOUN,,HIRAGANA,,,灯台,とうだい,,toudai,latarnia morska,,,
 5733,WORD_NOUN,,HIRAGANA,,,電灯,でんとう,,dentou,"lampa (elektryczna)
 światło",,,
@@ -21521,7 +21534,8 @@ dolina
 parów
 wąwóz
 jar",,,
-7987,WORD_NOUN,,HIRAGANA,,,斎,とき,,toki,posiłek,spożywany podczas nabożeństw buddyjskich,,
+7987,WORD_NOUN,,HIRAGANA,,,斎,とき,,toki,posiłek,spożywany podczas nabożeństw buddyjskich,,"DUPLICATE 30164
+DUPLICATE 30165"
 7988,WORD_VERB_U,,HIRAGANA,,,倣う,ならう,,narau,"naśladować
 iść za",,,
 7989,"WORD_NOUN
@@ -21885,10 +21899,16 @@ dopuszczać się ekscesów
 iść ponad",,,
 8090,WORD_NOUN,,HIRAGANA,,,鈴,すず,,suzu,"dzwon
 dzwoneczek",,,"DUPLICATE 8091
-DUPLICATE 29865"
+DUPLICATE 29865
+DUPLICATE 30389
+DUPLICATE 30389
+DUPLICATE 30390"
 8091,WORD_NOUN,,HIRAGANA,,,鈴,りん,,rin,"dzwon
 dzwoneczek",,,"DUPLICATE 8090
-DUPLICATE 29865"
+DUPLICATE 29865
+DUPLICATE 30389
+DUPLICATE 30390
+DUPLICATE 30390"
 8092,WORD_NOUN,,HIRAGANA,,,溝,みぞ,,mizo,"rów
 kanał
 rynsztok",,,
@@ -27338,7 +27358,7 @@ słuchawka",,,
 10178,WORD_NOUN,,HIRAGANA,,,代理業者,だいりぎょうしゃ,,dairigyousha,"agent
 przedstawiciel",,,
 10179,WORD_NOUN,,HIRAGANA,,,代理業,だいりぎょう,,dairigyou,agencja,,,
-10180,WORD_NOUN,,HIRAGANA,,,聾,つんぼ,,tsunbo,głuchota,,,
+10180,WORD_NOUN,,HIRAGANA,,,聾,つんぼ,,tsunbo,głuchota,,,DUPLICATE 30437
 10181,WORD_NOUN,,HIRAGANA,,,淫売,いんばい,,inbai,"nierząd
 prostytucja",,,
 10182,"WORD_NOUN
@@ -27365,7 +27385,8 @@ wykwintny
 smakowity",,,
 10186,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,驢馬,ろば,,roba,osioł,,,
-10187,WORD_NOUN,,HIRAGANA,,,鱗,うろこ,,uroko,łuska,,,
+10187,WORD_NOUN,,HIRAGANA,,,鱗,うろこ,,uroko,łuska,,,"DUPLICATE 30441
+DUPLICATE 30442"
 10188,WORD_NOUN,,HIRAGANA,,,玄武岩,げんぶがん,,genbugan,bazalt,,,
 10189,WORD_ADJECTIVE_NA,,HIRAGANA,,,死刑執行,しけいしっこう,,shikeishikkou,egzekucyjny,,,
 10190,"WORD_NOUN
@@ -28995,7 +29016,8 @@ myśl",,,
 10793,WORD_VERB_IRREGULAR,,HIRAGANA,,,工夫する,くふうする,,kufuu suru,rozmyślać,,,
 10794,WORD_INTERJECTION,,HIRAGANA,,,-,あ,,a,"o
 oj
-ach",,,DUPLICATE 20089
+ach",,,"DUPLICATE 20089
+DUPLICATE 30079"
 10795,WORD_INTERJECTION,,HIRAGANA,,,吁,ああ,,aa,"ach
 o",,,DUPLICATE 14760
 10796,WORD_INTERJECTION,,HIRAGANA,,,嗟,ああ,,aa,"ach
@@ -31466,7 +31488,7 @@ wreszcie
 w końcu",,,
 11871,WORD_ADVERB,,HIRAGANA,,,愈,いよいよ,,iyoiyo,"coraz bardziej
 wreszcie
-w końcu",,,
+w końcu",,,DUPLICATE 30400
 11872,WORD_NOUN,,HIRAGANA,,,奧,おく,,oku,"serce
 wnętrze
 w głębi
@@ -32973,6 +32995,7 @@ podnieść rękę",,,
 12611,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,手を振る,てをふる,,te o furu,machać ręką,,,
 12612,WORD_PARTICULE,,HIRAGANA,,,-,て,,te,[partykuła używana do tworzenia formy te czasownika],,,"DUPLICATE 534
+DUPLICATE 30215
 EDICT_DUPLICATE 20569"
 12613,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,売り場,うりば,,uriba,"stoisko
@@ -33178,7 +33201,8 @@ WORD_INTERJECTION",,HIRAGANA,,,-,よ,,yo,"[partykuła kończąca zdanie, używan
 DUPLICATE 7191
 DUPLICATE 20728
 DUPLICATE 24761
-DUPLICATE 26396"
+DUPLICATE 26396
+DUPLICATE 30398"
 12724,WORD_NOUN,SUFFIX,HIRAGANA,,,-,だらけ,,darake,"pokryty
 pełny",,,
 12725,"WORD_ADJECTIVE_NO
@@ -55170,7 +55194,7 @@ celebracja
 festiwal
 święto
 festyn
-gratulacyjny prezent",,,
+gratulacyjny prezent",,,DUPLICATE 30161
 20397,WORD_NOUN,,HIRAGANA,,,首長,しゅちょう,,shuchou,"szef
 dyrektor",organizacji,,
 20398,WORD_NOUN,,KATAKANA,,,-,インシュリン,,inshurin,insulina,,,
@@ -55214,7 +55238,7 @@ specjalne zaopatrzenie (szczególnie w czasie wojny)",,,
 WORD_ADJECTIVE_NO",,KATAKANA,,,-,ハイファイ,,haifai,"hi-fi
 high-fidelity",,,
 20411,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,大根,だいこん,,daikon,rzodkiew japońska,,,
+WORD_ADJECTIVE_NO",,HIRAGANA,,,大根,だいこん,,daikon,rzodkiew japońska,,,DUPLICATE 30169
 20412,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,対面,たいめん,,taimen,"wywiad
 rozmowa
@@ -55369,7 +55393,7 @@ pójście do szpitala",,,
 20457,WORD_NOUN,,HIRAGANA,,,部会,ぶかい,,bukai,"spotkanie działu
 spotkanie sekcji
 spotkanie sektora",,,
-20458,WORD_NOUN,,HIRAGANA,,,麹,こうじ,,kouji,słód ryżowy,,,
+20458,WORD_NOUN,,HIRAGANA,,,麹,こうじ,,kouji,słód ryżowy,,,DUPLICATE 30175
 20459,WORD_NOUN,,KATAKANA,,,-,プランタン,,purantan,"wiosenna pora
 okres wiosenny
 wiosna",,,
@@ -55549,7 +55573,7 @@ domicyl
 lokal
 posesja",,,
 20511,WORD_NOUN,,HIRAGANA,,,小豆,あずき,,azuki,"fasola azuki
-czerwona soja",gatunek rośliny jednorocznej z rodziny bobowatych,,
+czerwona soja",gatunek rośliny jednorocznej z rodziny bobowatych,,DUPLICATE 30198
 20512,WORD_NOUN,,KATAKANA,,,-,サード,,saado,"trzeci
 trzecia","np. baza, bieg i etc",,
 20513,WORD_ADJECTIVE_NO,,HIRAGANA,,,よそ行き,よそゆき,,yoso yuki,"wyjście
@@ -55732,7 +55756,7 @@ nowożytny
 nowoczesny
 aktualny
 bieżący",,,
-20552,WORD_NOUN,,HIRAGANA,,,今昔,こんじゃく,,konjaku,przeszłość i teraźniejszość,,,
+20552,WORD_NOUN,,HIRAGANA,,,今昔,こんじゃく,,konjaku,przeszłość i teraźniejszość,,,DUPLICATE 30214
 20553,WORD_NOUN,,HIRAGANA,,,寝具,しんぐ,,shingu,"pościel
 posłanie",,,
 20554,WORD_NOUN,,HIRAGANA,,,寝具類,しんぐるい,,shingurui,"pościel
@@ -56052,10 +56076,14 @@ uroczystości żałobne",,,
 20648,WORD_NOUN,,KATAKANA,,,-,ピンチヒッター,,pinchi hittaa,pinch hitter,"w baseballu: zawodnik rezerwowy wchodzący do gry za pałkarza (ang. hitter), na którego właśnie przypada kolej odbijania lub który jest w trakcie odbijania, tzn. wykonał już przynajmniej jedną próbę odbicia",,
 20649,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,白髪,はくはつ,,hakuhatsu,"białe włosy
-siwe głosy",,,DUPLICATE 20650
+siwe głosy",,,"DUPLICATE 20650
+DUPLICATE 30239
+DUPLICATE 30240"
 20650,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,白髪,しらが,,shiraga,"białe włosy
-siwe głosy",,,DUPLICATE 20649
+siwe głosy",,,"DUPLICATE 20649
+DUPLICATE 30239
+DUPLICATE 30240"
 20651,WORD_PARTICULE,,HIRAGANA,,,-,でさえ,,desae,"nawet
 jeszcze
 choćby
@@ -56128,7 +56156,11 @@ problemy fiskalne",,,
 20666,WORD_NOUN,,HIRAGANA,,,黒子,ほくろ,,hokuro,"czarny pieprzyk
 uroczy zakątek
 malowniczy zakątek",,,"DUPLICATE 25209
-DUPLICATE 25285"
+DUPLICATE 25285
+DUPLICATE 30246
+DUPLICATE 30247
+DUPLICATE 30248
+DUPLICATE 30249"
 20667,"WORD_ADJECTIVE_NA
 WORD_NOUN",,KATAKANA,,,-,グレー,,guree,"szary
 siwy","ang: grey, gray",,
@@ -56144,7 +56176,7 @@ naciskanie
 20671,WORD_NOUN,,HIRAGANA,,,王者,おうじゃ,,ouja,"król
 monarchia
 panujący
-rządzący",,,
+rządzący",,,DUPLICATE 30252
 20672,WORD_NOUN,,HIRAGANA,,,固定費,こていひ,,koteihi,"koszt stały
 koszty stałe",,,
 20673,WORD_NOUN,,HIRAGANA,,,固定費用,こていひよう,,koteihiyou,"koszt stały
@@ -56319,7 +56351,7 @@ naturalnie
 od startu",,,
 20705,WORD_ADVERB,,HIRAGANA,,,何よりも,なによりも,,naniyorimo,"więcej niż wszystko
 nade wszystko
-ponad wszystko",,,
+ponad wszystko",,,DUPLICATE 30257
 20706,"WORD_NOUN
 WORD_ADVERB
 WORD_ADVERB_TO
@@ -56630,7 +56662,7 @@ rumień
 wykwit
 wpływ
 oddziaływanie (np. negatywne lub krytyczne)",,,
-20789,WORD_NOUN,,HIRAGANA,,,沼田,ぬまた,,numata,podmokłe pole ryżowe,,,
+20789,WORD_NOUN,,HIRAGANA,,,沼田,ぬまた,,numata,podmokłe pole ryżowe,,,DUPLICATE 30273
 20790,WORD_NOUN,,HIRAGANA,,,清算,せいさん,,seisan,"rozliczenie (finansowe)
 likwidacja (postępowanie prowadzone w spółkach osobowych i kapitałowych mające na celu spieniężenie majątku oraz zakończenie bieżących spraw spółki)
 zakończenie (relacji, związku)
@@ -56831,7 +56863,7 @@ strategia
 kierunek",ang: policy,,
 20848,WORD_NOUN,,KATAKANA,,,-,レフェリー,,referii,"sędzia
 arbiter",ang: referee,,
-20849,WORD_NOUN,,HIRAGANA,,,東南,とうなん,,tounan,południowy wschód,,,
+20849,WORD_NOUN,,HIRAGANA,,,東南,とうなん,,tounan,południowy wschód,,,DUPLICATE 30293
 20850,WORD_NOUN,,HIRAGANA,,,減益,げんえき,,gen'eki,spadek zysków,,,
 20851,WORD_VERB_U,,HIRAGANA,,,着飾る,きかざる,,kikazaru,"wystroić się
 stroić się
@@ -57485,7 +57517,7 @@ cytowanie",,,
 21192,WORD_ADVERB,,HIRAGANA,,,迚も,とっても,,tottemo,"bardzo
 wcale nie (przed przeczącą formą)
 bynajmniej
-nijak",,,
+nijak",,,DUPLICATE 30330
 21193,WORD_NOUN,,HIRAGANA,,,地裁,ちさい,,chisai,"sąd okręgowy
 sąd rejonowy",,,
 21194,WORD_VERB_U,,HIRAGANA,,,話し出す,はなしだす,,hanashi dasu,"mówić prawdę
@@ -57560,7 +57592,7 @@ ten sam wiek",,,
 21216,WORD_NOUN,,HIRAGANA,,,有無,うむ,,umu,"byt lub niebyt
 obecność lub nieobecność
 zgoda lub odmowa
-tak lub nie",,,
+tak lub nie",,,DUPLICATE 30335
 21217,WORD_NOUN,,HIRAGANA,,,ゆうむ,ゆうむ,,yuumu,"byt lub niebyt
 obecność lub nieobecność
 zgoda lub odmowa
@@ -57870,7 +57902,7 @@ popełnić gafę
 popełnić błąd",,,
 21302,WORD_NOUN,,KATAKANA,,,-,アロー,,aroo,"strzała
 strzałka",ang: arrow,,
-21303,WORD_NOUN,,KATAKANA,,,-,クーデター,,kuudetaa,zamach stanu,,,
+21303,WORD_NOUN,,KATAKANA,,,-,クーデター,,kuu detaa,zamach stanu,,,
 21304,WORD_NOUN,,KATAKANA,,,-,ドッジボール,,dojji booru,"dwa ognie
 gra w zbijaka",wieloosobowa zabawa sportowa,,
 21305,WORD_VERB_RU,,HIRAGANA,,,乗り越える,のりこえる,,nori koeru,"pokonywać
@@ -57994,7 +58026,7 @@ wyrażenie używane do kobiet prowadzących restaurację, zajazd i etc",,,
 patrzenie na osobę postronną",,,
 21344,WORD_NOUN,,HIRAGANA,,,女将,おかみ,,okami,"pani domu
 właścicielka
-gospodyni",,,
+gospodyni",,,DUPLICATE 30378
 21345,"WORD_NOUN
 WORD_CONJUNCTION",SUFFIX,HIRAGANA,,,不知,しらず,,shirazu,"nie musieć
 nie wymuszony
@@ -69486,7 +69518,11 @@ pożyczka",,,
 maszynista sceny
 maszynista teatralny
 sufler (w teatrze)",,,"DUPLICATE 20666
-DUPLICATE 25285"
+DUPLICATE 25285
+DUPLICATE 30246
+DUPLICATE 30247
+DUPLICATE 30248
+DUPLICATE 30249"
 25210,WORD_NOUN,,HIRAGANA,,,実害,じつがい,,jitsugai,"rzeczywista szkoda
 rzeczywista krzywda",,,
 25211,WORD_ADVERB,,HIRAGANA,,,日外,じつがい,,jitsugai,"pewnego razu
@@ -69699,7 +69735,11 @@ przyrodzony",,,DUPLICATE 24541
 maszynista sceny
 maszynista teatralny
 sufler (w teatrze)",,,"DUPLICATE 20666
-DUPLICATE 25209"
+DUPLICATE 25209
+DUPLICATE 30246
+DUPLICATE 30247
+DUPLICATE 30248
+DUPLICATE 30249"
 25286,WORD_NOUN,,HIRAGANA,,,黒衣,くろご,,kurogo,"osoba ubrana na czarno asystujący w scenie (kabuki)
 maszynista sceny
 maszynista teatralny
@@ -80426,11 +80466,11 @@ bezużyteczność",,,
 28794,"WORD_PRONOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,吾れ,われ,,ware,"ja
 mnie
-ty (archaizm)",,,
+ty (archaizm)",,,DUPLICATE 30082
 28795,"WORD_PRONOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,我れ,われ,,ware,"ja
 mnie
-ty (archaizm)",,,
+ty (archaizm)",,,DUPLICATE 30083
 28796,"WORD_PRONOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,我我,われわれ,,wareware,"my
 nam
@@ -80758,7 +80798,8 @@ WORD_COUNTER",,HIRAGANA,,,燈,とう,,tou,"światło
 lampa
 klasyfikator na lampy elektryczne",,,
 28909,WORD_NOUN,,HIRAGANA,,,灯火,ともしび,,tomoshibi,"światło
-lampa",,,DUPLICATE 5731
+lampa",,,"DUPLICATE 5731
+DUPLICATE 30191"
 28910,WORD_NOUN,,HIRAGANA,,,燭,ともしび,,tomoshibi,"światło
 lampa",,,
 28911,WORD_NOUN,,HIRAGANA,,,燈火,とうか,,touka,"światło
@@ -83760,6 +83801,8 @@ super-",,,
 29865,WORD_NOUN,,HIRAGANA,,,鈴,れい,,rei,"dzwon
 dzwoneczek",,,"DUPLICATE 8090
 DUPLICATE 8091
+DUPLICATE 30389
+DUPLICATE 30390
 EDICT_DUPLICATE 8090
 EDICT_DUPLICATE 8091"
 29866,WORD_VERB_U,,HIRAGANA,,,厭く,あく,,aku,"mieć dosyć
@@ -84291,7 +84334,7 @@ wymię",,,DUPLICATE 8502
 30044,WORD_NOUN,,HIRAGANA,,,鸚鵡,おうむ,,oumu,papuga,,,
 30045,WORD_NOUN,,HIRAGANA,,,鼻ひげ,はなひげ,,hanahige,"wąs
 wąsy",,,
-30046,WORD_NOUN,,HIRAGANA,,,黒貂,ふるき,,furuki,saból,gatunek drapieżnego ssaka z rodziny łasicowatych,,
+30046,WORD_NOUN,,HIRAGANA,,,黒貂,ふるき,,furuki,saból,gatunek drapieżnego ssaka z rodziny łasicowatych,,DUPLICATE 30391
 30047,WORD_ADJECTIVE_F,,HIRAGANA,,,古き,ふるき,,furuki,"stary
 starszy",stara forma furui,,
 30048,WORD_NOUN,,HIRAGANA,,,閃き,ひらめき,,hirameki,"talent
@@ -84301,7 +84344,8 @@ błysk
 intuicja
 falowanie (np. flagi na wietrze)",,,
 30049,WORD_NOUN,,HIRAGANA,,,小島,こじま,,kojima,"mała wyspa
-wysepka",,,
+wysepka",,,"DUPLICATE 30393
+DUPLICATE 30394"
 30050,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,桁外れ,けたはずれ,,ketahazure,"nieprawdopodobny
 niesamowity
@@ -84339,12 +84383,16 @@ scena rzezi
 miejsce walki powiedzy Asura i Sakra devanam Indra",,,
 30062,WORD_NOUN,,HIRAGANA,,,六道,ろくどう,,rokudou,sześć królestw,"królestwa: Deva, Asura, ludzi, zwierząt, Głodnych Duchów, Nakara",,
 30063,WORD_ADVERB,,HIRAGANA,,,弥,いよ,,iyo,"coraz bardziej
-coraz częściej",archaizm,,DUPLICATE 30064
+coraz częściej",archaizm,,"DUPLICATE 30064
+DUPLICATE 30398
+DUPLICATE 30399"
 30064,WORD_ADVERB,,HIRAGANA,,,弥,いや,,iya,"coraz bardziej
 coraz częściej
 bardzo
 nadzwyczaj",,,"DUPLICATE 7644
-DUPLICATE 30063"
+DUPLICATE 30063
+DUPLICATE 30398
+DUPLICATE 30399"
 30065,WORD_NOUN,,HIRAGANA,,,幾夜,いくよ,,ikuyo,liczba nocy,,,
 30066,WORD_NOUN,,HIRAGANA,,,幾世,いくよ,,ikuyo,"generacja
 pokolenie
@@ -84368,3 +84416,1331 @@ mnich (szczególnie główny mnich swiątyni)
 mistrz",,NO_TYPE_CHECK,
 30072,WORD_NOUN,,HIRAGANA,,,小槌,こづち,,koduchi,"mały młoteczek
 młoteczek",,,
+30073,WORD_NOUN,,HIRAGANA,,,有様,ありさま,,arisama,"stan
+kondycja
+sytuacja
+okoliczność",,,DUPLICATE 30074
+30074,WORD_NOUN,,HIRAGANA,,,有様,ありよう,,ariyou,"stan
+kondycja
+sytuacja
+okoliczność",,,DUPLICATE 30073
+30075,WORD_NOUN,,HIRAGANA,,,流行り歌,はやりうた,,hayariuta,"popularna piosenka
+przebój
+szlagier",,,
+30076,WORD_NOUN,,HIRAGANA,,,流行り唄,はやりうた,,hayariuta,"popularna piosenka
+przebój
+szlagier",,,
+30077,WORD_NOUN,,HIRAGANA,,,流行唄,はやりうた,,hayariuta,"popularna piosenka
+przebój
+szlagier",,,
+30078,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,我,あれ,,are,"ja
+mnie",,,"DUPLICATE 5246
+DUPLICATE 5247
+DUPLICATE 30079
+DUPLICATE 30080
+DUPLICATE 30081"
+30079,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,我,あ,,a,"ja
+mnie",,,"DUPLICATE 5246
+DUPLICATE 5247
+DUPLICATE 10794
+DUPLICATE 30078
+DUPLICATE 30080
+DUPLICATE 30081"
+30080,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,我,わぬ,,wanu,"ja
+mnie",,,"DUPLICATE 5246
+DUPLICATE 5247
+DUPLICATE 30078
+DUPLICATE 30079
+DUPLICATE 30081"
+30081,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,我,わろ,,waro,"ja
+mnie",,,"DUPLICATE 5246
+DUPLICATE 5247
+DUPLICATE 30078
+DUPLICATE 30079
+DUPLICATE 30080"
+30082,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,吾れ,あれ,,are,"ja
+mnie",,,DUPLICATE 28794
+30083,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,我れ,あれ,,are,"ja
+mnie",,,DUPLICATE 28795
+30084,WORD_NOUN,,KATAKANA,,,-,ニンニク,,ninniku,czosnek pospolity,,,
+30085,WORD_NOUN,,KATAKANA,,,-,ヴィレッジ,,virejji,"wieś
+wioska
+osada",ang: village,,
+30086,WORD_NOUN,,KATAKANA,,,-,ファウンデーション,,faundeeshon,"fundacja
+fundament
+podstawa",ang: foundation,,
+30087,WORD_NOUN,,KATAKANA,,,-,サン・ディエゴ,,san diego,San Diego,miasto w USA w stanie Kalifornia położone nad Pacyfikiem oraz siedziba hrabstwa o tej samej nazwie,,
+30088,WORD_NOUN,,KATAKANA,,,-,ベートーベン,,beetooben,Beethoven,,,
+30089,WORD_NOUN,,KATAKANA,,,-,ヴェートーベン,,veetooben,Beethoven,,,
+30090,WORD_NOUN,,KATAKANA,,,-,ルズム,,ruzumu,rym,,,
+30091,WORD_NOUN,,HIRAGANA,,,河原,かわら,,kawara,"wyschnięte koryto rzeki
+brzeg rzeki",,,
+30092,WORD_NOUN,,HIRAGANA,,,磧,かわら,,kawara,"wyschnięte koryto rzeki
+brzeg rzeki",,,
+30093,WORD_NOUN,,HIRAGANA,,,根子,ねっこ,,nekko,"korzeń
+rdzeń
+pniak
+pień",,,
+30094,WORD_ADVERB,,HIRAGANA,,,犇々,ひしひし,,hishihishi,"ostro
+dotkliwie
+przenikliwie
+ciężko
+poważnie",,,
+30095,WORD_ADVERB,,HIRAGANA,,,緊緊,ひしひし,,hishihishi,"ostro
+dotkliwie
+przenikliwie
+ciężko
+poważnie",,,
+30096,WORD_ADVERB,,HIRAGANA,,,緊々,ひしひし,,hishihishi,"ostro
+dotkliwie
+przenikliwie
+ciężko
+poważnie",,,
+30097,WORD_ADVERB,,HIRAGANA,,,受け付け中,うけつけちゅう,,uketsukechuu,aktualnie przyjmujemy,np. wnioski,,
+30098,WORD_ADVERB,,HIRAGANA,,,受付け中,うけつけちゅう,,uketsukechuu,aktualnie przyjmujemy,np. wnioski,,
+30099,WORD_NOUN,,HIRAGANA,,,駆込み,かけこみ,,kakekomi,"pośpiech na ostatnią chwilę
+gonitwa na ostatnią chwilę
+popłoch
+panika",,,
+30100,WORD_NOUN,,HIRAGANA,,,駆けこみ,かけこみ,,kakekomi,"pośpiech na ostatnią chwilę
+gonitwa na ostatnią chwilę
+popłoch
+panika",,,
+30101,WORD_NOUN,,KATAKANA,,,-,アーチェリ,,aacheri,łucznictwo,ang: archery,,
+30102,WORD_NOUN,,KATAKANA,,,-,キャッシュ・カード,,kyasshu kaado,karta bankomatowa,"ang: cash card, ATM card",,
+30103,WORD_NOUN,,KATAKANA,,,-,フォルト,,foruto,"wina
+wada
+usterka
+błąd",ang: fault,,
+30104,WORD_NOUN,,KATAKANA,,,-,プラグマチズム,,puragumachizumu,pragmatyzm,ang: pragmatism,,
+30105,"WORD_NOUN
+WORD_ADVERB
+WORD_ADVERBIAL_NOUN",,HIRAGANA,,,年ごろ,としごろ,,toshigoro,"przybliżony wiek
+widoczny wiek
+wiek osoby zdolnej do zawarcia małżeństwa (szczególnie kobiet)
+wiek osoby niezależnej
+wiek osoby dojrzałej
+odpowiedni wiek na
+wystarczająco dorosły na
+na jakieś lata (archaizm)",,,
+30106,WORD_NOUN,,HIRAGANA,,,悔泣,くやしなき,,kuyashinaki,"płakanie z udręki
+płakanie z utrapienia
+łzy ubolewania
+łzy skruchy",,,
+30107,WORD_VERB_U,,HIRAGANA,,,歩きまわる,あるきまわる,,arukimawaru,"chodzić w kółko
+chodzić tam i z powrotem",,,
+30108,WORD_VERB_U,,HIRAGANA,,,歩き廻る,あるきまわる,,arukimawaru,"chodzić w kółko
+chodzić tam i z powrotem",,,
+30109,WORD_ADJECTIVE_I,,HIRAGANA,,,馴々しい,なれなれしい,,narenareshii,"zbyt spoufalający się
+zbyt poufały",,,
+30110,WORD_NOUN,,HIRAGANA,,,波戸場,はとば,,hatoba,"nadbrzeże
+przystań
+keja
+molo
+pomost wyładunkowy",,,
+30111,"WORD_NOUN
+WORD_INTERJECTION",,HIRAGANA,,,お替り,おかわり,,okawari,"dokładka
+druga miseczka
+druga porcja",,,
+30112,"WORD_NOUN
+WORD_INTERJECTION",,HIRAGANA,,,お替わり,おかわり,,okawari,"dokładka
+druga miseczka
+druga porcja",,,
+30113,"WORD_NOUN
+WORD_INTERJECTION",,HIRAGANA,,,御代わり,おかわり,,okawari,"dokładka
+druga miseczka
+druga porcja",,,
+30114,"WORD_NOUN
+WORD_INTERJECTION",,HIRAGANA,,,お代り,おかわり,,okawari,"dokładka
+druga miseczka
+druga porcja",,,
+30115,"WORD_NOUN
+WORD_INTERJECTION",,HIRAGANA,,,御代り,おかわり,,okawari,"dokładka
+druga miseczka
+druga porcja",,,
+30116,WORD_NOUN,,HIRAGANA,,,割箸,わりばし,,waribashi,"drewniane złączone pałeczki, które da się łatwo rozdzielić przed jedzeniem",,,
+30117,WORD_NOUN,,HIRAGANA,,,割りばし,わりばし,,waribashi,"drewniane złączone pałeczki, które da się łatwo rozdzielić przed jedzeniem",,,
+30118,WORD_NOUN,,HIRAGANA,,,わり箸,わりばし,,waribashi,"drewniane złączone pałeczki, które da się łatwo rozdzielić przed jedzeniem",,,
+30119,WORD_NOUN,,HIRAGANA,,,深味,ふかみ,,fukami,"głębokość
+głębia
+głębokie miejsce",,,
+30120,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,あい昧,あいまい,,aimai,"niejasny
+ogólnikowy
+nieokreślony
+dwuznaczny
+niejednoznaczny
+wieloznaczny
+nieostry (matematyka)
+rozmyty (matematyka)",,,
+30121,WORD_VERB_RU,,HIRAGANA,,,囃したてる,はやしたてる,,hayashitateru,"wiwatować
+dopingować
+kibicować
+dodawać otuchy
+drwić
+kpić
+szydzić
+wyśmiewać",,,
+30122,WORD_NOUN,,KATAKANA,,,-,ウ,,u,kormoran,,,
+30123,WORD_NOUN,,KATAKANA,,,-,ドール・キュー,,dooru kyuu,kolejka po zasiłek,ang: dole queue,,
+30124,WORD_NOUN,,KATAKANA,,,-,ベイス,,beisu,"baza
+podstawa
+bas","ang: base, bass",,
+30125,WORD_NOUN,,KATAKANA,,,-,ペヤ,,peya,"para
+łódź z dwoma wioślarzami
+gruszka","ang: pair, pair-oared boat, pear",,
+30126,WORD_NOUN,,KATAKANA,,,-,ヨット・ハーバー,,yotto haabaa,"marina
+port jachtowy",,,
+30127,WORD_NOUN,,HIRAGANA,,,お御輿,おみこし,,omikoshi,"przenośna świątynia
+przenośna kapliczka (noszona podczas festiwali)
+pośladki
+dolne plecy
+talia
+pas
+biodro (zwykle pisane bez użycia znaków kanji)",,,
+30128,WORD_NOUN,,HIRAGANA,,,御神輿,おみこし,,omikoshi,"przenośna świątynia
+przenośna kapliczka (noszona podczas festiwali)
+pośladki
+dolne plecy
+talia
+pas
+biodro (zwykle pisane bez użycia znaków kanji)",,,
+30129,WORD_NOUN,,HIRAGANA,,,お神興,おみこし,,omikoshi,"przenośna świątynia
+przenośna kapliczka (noszona podczas festiwali)
+pośladki
+dolne plecy
+talia
+pas
+biodro (zwykle pisane bez użycia znaków kanji)",,,
+30130,WORD_NOUN,,HIRAGANA,,,御輿,みこし,,mikoshi,"przenośna świątynia
+przenośna kapliczka (noszona podczas festiwali)
+palankin (honoryfikatywnie)
+pośladki
+dolne plecy
+talia
+pas
+biodro (zwykle pisane bez użycia znaków kanji)",,,
+30131,WORD_NOUN,,HIRAGANA,,,神興,みこし,,mikoshi,"przenośna świątynia
+przenośna kapliczka (noszona podczas festiwali)
+palankin (honoryfikatywnie)
+pośladki
+dolne plecy
+talia
+pas
+biodro (zwykle pisane bez użycia znaków kanji)",,,
+30132,WORD_NOUN,,HIRAGANA,,,せせら笑い,せせらわらい,,seserawarai,"sardoniczny śmiech
+pogardliwy uśmiech
+lekceważący uśmiech",,,
+30133,WORD_NOUN,,HIRAGANA,,,嘲笑い,せせらわらい,,seserawarai,"sardoniczny śmiech
+pogardliwy uśmiech
+lekceważący uśmiech",,,
+30134,WORD_NOUN,,KATAKANA,,,-,エレキ・ギター,,ereki gitaa,gitara elektryczna,,,
+30135,WORD_NOUN,,KATAKANA,,,-,ダイアル,,daiaru,"pokrętło
+wykręcanie
+wybieranie",ang: dial,,
+30136,WORD_NOUN,,HIRAGANA,,,-,へどろ,,hedoro,"sztam
+muł",,,
+30137,WORD_NOUN,,KATAKANA,,,-,マイノリティ,,mainoriti,mniejszość,ang: minority,,
+30138,WORD_NOUN,,KATAKANA,,,-,マイノリティー・グループ,,mainoritii guruupu,grupa mniejszościowa,ang: minority group,,
+30139,WORD_NOUN,,HIRAGANA,,,寄航,きこう,,kikou,"zatrzymanie się w porcie
+postój w porcie
+cumowanie w porcie",,,
+30140,WORD_NOUN,,HIRAGANA,,,旋廻,せんかい,,senkai,"rewolucja
+obrót
+przewrót
+rotacja
+obracanie się",,,
+30141,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,添附,てんぷ,,tenpu,"załącznik
+aneks
+dodatek","np. do mail'a, dokumentu, raportu",,
+30142,WORD_NOUN,,HIRAGANA,,,振出し,ふりだし,,furidashi,"wytrząsanie
+wytrzepowanie
+rzucanie kostką do gry
+podrzucanie
+emisja
+emitowanie
+szkic
+rysowanie
+szkicowanie
+miejsce rozpoczęcia
+punkt rozpoczęcia
+rozpoczęcie
+początek
+infuzja (skrót)",,,
+30143,WORD_NOUN,,HIRAGANA,,,振出,ふりだし,,furidashi,"wytrząsanie
+wytrzepowanie
+rzucanie kostką do gry
+podrzucanie
+emisja
+emitowanie
+szkic
+rysowanie
+szkicowanie
+miejsce rozpoczęcia
+punkt rozpoczęcia
+rozpoczęcie
+początek
+infuzja (skrót)",,,
+30144,WORD_NOUN,,HIRAGANA,,,振り出,ふりだし,,furidashi,"wytrząsanie
+wytrzepowanie
+rzucanie kostką do gry
+podrzucanie
+emisja
+emitowanie
+szkic
+rysowanie
+szkicowanie
+miejsce rozpoczęcia
+punkt rozpoczęcia
+rozpoczęcie
+początek
+infuzja (skrót)",,,
+30145,WORD_ADJECTIVE_I,,HIRAGANA,,,ねばり強い,ねばりづよい,,nebariduyoi,"nieustępliwy
+uporczywy
+wytrwały
+nieugięty",,,
+30146,WORD_NOUN,,HIRAGANA,,,部所,ぶしょ,,busho,"własna placówka
+departament
+dział
+wydział
+oddział
+sekcja
+agencja",,,
+30147,WORD_NOUN,,KATAKANA,,,-,グレコローマン・スタイル,,gurekorooman sutairu,styl greko-romański,,,
+30148,WORD_NOUN,,HIRAGANA,,,供宴,きょうえん,,kyouen,"uczta
+biesiada
+uroczystość
+przyjęcie
+bankiet
+Uczta (dialog Platona zaliczany najczęściej do średniego okresu jego twórczości (powstał prawdopodobnie pomiędzy 384 a 372 r. p.n.e.))",,,
+30149,WORD_NOUN,,HIRAGANA,,,享宴,きょうえん,,kyouen,"uczta
+biesiada
+uroczystość
+przyjęcie
+bankiet
+Uczta (dialog Platona zaliczany najczęściej do średniego okresu jego twórczości (powstał prawdopodobnie pomiędzy 384 a 372 r. p.n.e.))",,,
+30150,WORD_NOUN,,KATAKANA,,,-,ディレクトリー,,direkutorii,"katalog
+folder",informatyka,,
+30151,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ディレクトリィ,,direkutorii,"katalog
+folder",informatyka,,
+30152,WORD_NOUN,,HIRAGANA,,,一騎打,いっきうち,,ikkiuchi,"walka jeden na jeden
+osobista walka
+osobisty bój",,,
+30153,WORD_NOUN,,HIRAGANA,,,一騎討,いっきうち,,ikkiuchi,"walka jeden na jeden
+osobista walka
+osobisty bój",,,
+30154,WORD_NOUN,,HIRAGANA,,,一騎討ち,いっきうち,,ikkiuchi,"walka jeden na jeden
+osobista walka
+osobisty bój",,,
+30155,WORD_NOUN,,KATAKANA,,,-,クロス・カントリー,,kurosu kantorii,"przełaj
+bieg przełajowy (skrót)
+bieg narciarski (skrót)",,,
+30156,WORD_NOUN,,KATAKANA,,,-,クロスカントリー・レース,,kurosukantorii reesu,"bieg przełajowy
+bieg narciarski",,,
+30157,WORD_NOUN,,HIRAGANA,,,依嘱,いしょく,,ishoku,"powierzenie
+powierzanie
+zawierzanie",,,
+30158,WORD_VERB_IRREGULAR,,HIRAGANA,,,劃する,かくする,,kakusuru,"rysować (linię)
+rozgraniczać
+rozgraniczyć
+odgraniczać
+oznaczać
+zaznaczać
+dzielić
+rozdzielać
+planować
+nakreślać
+zaplanować",,,
+30159,WORD_NOUN,,KATAKANA,,,-,レーシング・カー,,reeshingu kaa,samochód wyścigowy,ang: racing car,,
+30160,"WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO",,HIRAGANA,,,有りがち,ありがち,,arigachi,"częsty
+częstotliwy
+liczny
+zwykły
+powszechny
+zwyczajny
+typowy",,,
+30161,WORD_NOUN,,HIRAGANA,,,祝い,ゆわい,,yuwai,"gratulacje
+uroczystość
+świętowanie
+celebracja
+festiwal
+święto
+festyn
+gratulacyjny prezent",,,DUPLICATE 20396
+30162,WORD_NOUN,,HIRAGANA,,,祝,いわい,,iwai,"gratulacje
+uroczystość
+świętowanie
+celebracja
+festiwal
+święto
+festyn
+gratulacyjny prezent",,,DUPLICATE 30163
+30163,WORD_NOUN,,HIRAGANA,,,祝,ゆわい,,yuwai,"gratulacje
+uroczystość
+świętowanie
+celebracja
+festiwal
+święto
+festyn
+gratulacyjny prezent",,,DUPLICATE 30162
+30164,WORD_NOUN,,HIRAGANA,,,斎,いわい,,iwai,"gratulacje
+uroczystość
+świętowanie
+celebracja
+festiwal
+święto
+festyn
+gratulacyjny prezent",,,"DUPLICATE 7987
+DUPLICATE 30165"
+30165,WORD_NOUN,,HIRAGANA,,,斎,ゆわい,,yuwai,"gratulacje
+uroczystość
+świętowanie
+celebracja
+festiwal
+święto
+festyn
+gratulacyjny prezent",,,"DUPLICATE 7987
+DUPLICATE 30164"
+30166,WORD_NOUN,,KATAKANA,,,-,インスリン,,insurin,insulina,,,
+30167,WORD_NOUN,,KATAKANA,,,-,バッテン,,batten,"znak krzyża
+znak krzyżówki
+znak wady
+znak winy
+znak X
+X",,,
+30168,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ハイフィ,,haifi,"hi-fi
+high-fidelity",,,
+30169,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,大根,だいこ,,daiko,rzodkiew japońska,,,DUPLICATE 20411
+30170,WORD_NOUN,,KATAKANA,,,-,シークレット・サービス,,shiikuretto saabisu,secret service,,,
+30171,WORD_NOUN,,KATAKANA,,,-,ノー・コメント,,noo komento,bez komentarza,ang: no comment,,
+30172,WORD_NOUN,,HIRAGANA,,,角すい,かくすい,,kakusui,"ostrosłup
+piramida",,,
+30173,"WORD_EXPRESSION
+WORD_PRE_NOUN_ADJECTIVAL",,HIRAGANA,,,-,ああゆう,,aayuu,"trochę
+jakby
+jak to",,,
+30174,WORD_NOUN,,KATAKANA,,,-,クリスマス・カード,,kurisumasu kaado,"kartka świąteczna
+kartka bożonarodzeniowa",ang: Christmas card,,
+30175,WORD_NOUN,,HIRAGANA,,,麹,かむだち,,kamudachi,słód ryżowy,,,DUPLICATE 20458
+30176,WORD_NOUN,,HIRAGANA,,,糀,こうじ,,kouji,słód ryżowy,,,
+30177,WORD_NOUN,,KATAKANA,,,-,プリンタン,,purintan,"wiosenna pora
+okres wiosenny
+wiosna",,,
+30178,WORD_NOUN,,HIRAGANA,,,漱,うがい,,ugai,"płukanie gardła
+płukanie ust",,,
+30179,WORD_NOUN,,KATAKANA,,,-,コンミッション,,konmisshon,komisja,,,
+30180,WORD_NOUN,,KATAKANA,,,-,コンピュータグラフィクス,,konpyuuta gurafikusu,grafika komputerowa,,,
+30181,WORD_NOUN,,KATAKANA,,,-,コンピュターグラフィックス,,konpyutaa gurafikkusu,grafika komputerowa,,,
+30182,WORD_NOUN,,KATAKANA,,,-,コンピュータグラフィックス,,konpyuuta gurafikkusu,grafika komputerowa,,,
+30183,WORD_NOUN,,KATAKANA,,,-,コンピューター・グラフィックス,,konpyuutaa gurafikkusu,grafika komputerowa,,,
+30184,WORD_NOUN,,KATAKANA,,,-,コンピュータ・グラフィクス,,konpyuuta gurafikusu,grafika komputerowa,,,
+30185,WORD_NOUN,,KATAKANA,,,-,コンピューター・グラフィクス,,konpyuutaa gurafikusu,grafika komputerowa,,,
+30186,WORD_NOUN,,KATAKANA,,,-,コンピュータ・グラフィックス,,konpyuuta gurafikkusu,grafika komputerowa,,,
+30187,WORD_NOUN,,KATAKANA,,,-,ヨーガート,,yoogaato,jogurt,,,
+30188,WORD_NOUN,,KATAKANA,,,-,ヨウグルト,,youguruto,jogurt,,,
+30189,WORD_NOUN,,HIRAGANA,,,灯,あかり,,akari,"lampa
+lampka
+światło",,,"DUPLICATE 5728
+DUPLICATE 5729
+DUPLICATE 5730"
+30190,WORD_NOUN,,HIRAGANA,,,灯かり,あかり,,akari,"lampa
+lampka
+światło",,,
+30191,WORD_NOUN,,HIRAGANA,,,灯火,あかり,,akari,"lampa
+lampka
+światło",,,"DUPLICATE 5731
+DUPLICATE 28909"
+30192,WORD_NOUN,,KATAKANA,,,-,テスト・ケース,,tesuto keesu,przypadek testowy,ang: test case,,
+30193,WORD_VERB_U,,HIRAGANA,,,齎らす,もたらす,,motarasu,"przynosić
+przynieść
+brać",,,
+30194,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,卵型,たまごがた,,tamagogata,"owalny
+jajowaty
+jajkowaty",,,
+30195,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,無慾,むよく,,muyoku,"bezinteresowny
+niesamolubny
+nieegoistyczny
+nieskąpy
+niechciwy",,,
+30196,WORD_NOUN,,KATAKANA,,,-,ジェット・エンジン,,jetto enjin,silnik odrzutowy,,,
+30197,WORD_NOUN,,HIRAGANA,,,受渡し,うけわたし,,ukewatashi,"dostawa
+doręczenie",,,
+30198,WORD_NOUN,,HIRAGANA,,,小豆,しょうず,,shouzu,"fasola azuki
+czerwona soja",gatunek rośliny jednorocznej z rodziny bobowatych,,DUPLICATE 20511
+30199,WORD_ADJECTIVE_NO,,HIRAGANA,,,余所行き,よそゆき,,yosoyuki,"wyjście
+własne najlepsze (ubranie, wygląd, maniery, zachowanie i etc)
+formalne zachowanie (np. maniery, mowa i etc)",,,DUPLICATE 30200
+30200,WORD_ADJECTIVE_NO,,HIRAGANA,,,余所行き,よそいき,,yosoiki,"wyjście
+własne najlepsze (ubranie, wygląd, maniery, zachowanie i etc)
+formalne zachowanie (np. maniery, mowa i etc)",,,DUPLICATE 30199
+30201,WORD_ADJECTIVE_NO,,HIRAGANA,,,他所行き,よそゆき,,yosoyuki,"wyjście
+własne najlepsze (ubranie, wygląd, maniery, zachowanie i etc)
+formalne zachowanie (np. maniery, mowa i etc)",,,DUPLICATE 30202
+30202,WORD_ADJECTIVE_NO,,HIRAGANA,,,他所行き,よそいき,,yosoiki,"wyjście
+własne najlepsze (ubranie, wygląd, maniery, zachowanie i etc)
+formalne zachowanie (np. maniery, mowa i etc)",,,DUPLICATE 30201
+30203,WORD_NOUN,,KATAKANA,,,-,ゴー・サイン,,goosain,"zielone światło
+zielony sygnał
+dawanie pozwolenia",ang: go sign,,
+30204,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,功者,こうしゃ,,kousha,"spryt
+inteligencja
+umiejętność
+zręczność
+takt
+wyczucie
+sprytna osoba
+bystra osoba
+zręczna osoba",,,
+30205,WORD_PRE_NOUN_ADJECTIVAL,,KATAKANA,,,-,ハウトゥー,,hau tuu,"jak
+w jaki sposób",ang: how to,,
+30206,WORD_PRE_NOUN_ADJECTIVAL,,KATAKANA,,,-,ハウ・ツー,,hau tsuu,"jak
+w jaki sposób",ang: how to,,
+30207,WORD_PRE_NOUN_ADJECTIVAL,,KATAKANA,,,-,ハウ・トゥー,,hau tuu,"jak
+w jaki sposób",ang: how to,,
+30208,WORD_NOUN,,KATAKANA,,,-,フロッピー・ディスク,,furoppii disuku,dyskietka,,,
+30209,WORD_NOUN,,HIRAGANA,,,道ばた,みちばた,,michibata,"przydrożny
+pobocze
+przydroże
+brzeg drogi
+skraj drogi",,,
+30210,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,いま一つ,いまひとつ,,imahitotsu,"inny
+jeden więcej
+niezupełnie
+niecały
+niedobry
+brakujący
+nieobecny",,,
+30211,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,今ひとつ,いまひとつ,,imahitotsu,"inny
+jeden więcej
+niezupełnie
+niecały
+niedobry
+brakujący
+nieobecny",,,
+30212,WORD_NOUN,,KATAKANA,,,-,ヘッディング,,heddingu,"główka (w piłce nożnej)
+główkowanie (w piłce nożnej)
+nagłówek
+tytuł",ang: heading,,
+30213,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,-,にこにこ,,nikoniko,"z uśmiechem
+z przyjacielskim uśmiechem",,,
+30214,WORD_NOUN,,HIRAGANA,,,今昔,こんせき,,konseki,przeszłość i teraźniejszość,,,DUPLICATE 20552
+30215,WORD_PARTICULE,,HIRAGANA,,,-,て,,te,nieformalna partykuła cytowania,,,"DUPLICATE 534
+DUPLICATE 12612"
+30216,WORD_NOUN,,HIRAGANA,,,黙否権,もくひけん,,mokuhiken,prawo do utrzymania ciszy i spokoju,,,
+30217,WORD_NOUN,,KATAKANA,,,-,ポニーテイル,,poniiteiru,kucyk,fryzura,,
+30218,WORD_TEMPORAL_NOUN,,HIRAGANA,,,いつ頃,いつごろ,,itsugoro,"mniej więcej kiedy
+jak prędko",,,
+30219,WORD_TEMPORAL_NOUN,,HIRAGANA,,,何時ごろ,いつごろ,,itsugoro,"mniej więcej kiedy
+jak prędko",,,
+30220,WORD_NOUN,,KATAKANA,,,-,メロ・ドラマ,,mero dorama,"melodramat
+opera mydlana",,,
+30221,WORD_NOUN,,HIRAGANA,,,割当て,わりあて,,wariate,"przydział
+działka
+udział
+alokacja",,,
+30222,WORD_NOUN,,HIRAGANA,,,割当,わりあて,,wariate,"przydział
+działka
+udział
+alokacja",,,DUPLICATE 30223
+30223,WORD_NOUN,,HIRAGANA,,,割当,かっとう,,kattou,"przydział
+działka
+udział
+alokacja",,,DUPLICATE 30222
+30224,WORD_NOUN,,HIRAGANA,,,黄瓜,きゅうり,,kyuuri,"ogórek
+ogórek siewny",,,
+30225,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,タンサン,,tansan,"kwas węglowy
+woda gazowana (skrót)
+wodorowęglan sodu (skrót)
+soda oczyszczona (skrót)",,,
+30226,WORD_NOUN,,HIRAGANA,,,ふんい気,ふんいき,,fun'iki,"atmosfera
+otoczenie
+nastrój",,,
+30227,WORD_NOUN,,HIRAGANA,,,ふん囲気,ふんいき,,fun'iki,"atmosfera
+otoczenie
+nastrój",,,
+30228,WORD_NOUN,,KATAKANA_HIRAGANA,,,成吉思汗,ジンギスかん,,jingisu kan,jingisukan,japońskie danie z baraniny,,
+30229,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジンギス汗,ジンギスかん,,jingisu kan,jingisukan,japońskie danie z baraniny,,
+30230,WORD_NOUN,,KATAKANA,,,-,ダンス・ホール,,dansu hooru,"sala taneczna
+sala balowa",ang: dance hall,,
+30231,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,中味,なかみ,,nakami,"zawartość
+treść
+wnętrze
+środek
+wypełnienie
+napełnienie
+ostrze miecza",,,
+30232,WORD_NOUN,,HIRAGANA,,,江戸っ児,えどっこ,,edokko,edokko,"osoba, która urodziła się i mieszkała w Edo",,
+30233,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,主脳,しゅのう,,shunou,"głowa
+mózg
+umysł
+duch liderowania
+duch kierowania
+duch przodowania",,,
+30234,WORD_NOUN,,HIRAGANA,,,管絃楽,かんげんがく,,kangengaku,muzyka orkiestrowa,,,
+30235,WORD_NOUN,,KATAKANA,,,-,ギヤ,,giya,"bieg
+przekładnia
+koło zębate",ang: gear,,
+30236,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ギイア,,giia,"bieg
+przekładnia
+koło zębate",ang: gear,,
+30237,WORD_NOUN,,KATAKANA,,,-,ギアー,,giaa,"bieg
+przekładnia
+koło zębate",ang: gear,,
+30238,WORD_NOUN,,KATAKANA,,,-,ピンチ・ヒッター,,pinchi hittaa,pinch hitter,"w baseballu: zawodnik rezerwowy wchodzący do gry za pałkarza (ang. hitter), na którego właśnie przypada kolej odbijania lub który jest w trakcie odbijania, tzn. wykonał już przynajmniej jedną próbę odbicia",,
+30239,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,白髪,しろかみ,,shirokami,"białe włosy
+siwe głosy",,,"DUPLICATE 20649
+DUPLICATE 20650
+DUPLICATE 30240"
+30240,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,白髪,しらかみ,,shirakami,"białe włosy
+siwe głosy",,,"DUPLICATE 20649
+DUPLICATE 20650
+DUPLICATE 30239"
+30241,WORD_PARTICULE,,HIRAGANA,,,-,ですら,,desura,"nawet
+jeszcze
+choćby
+ale
+jednakże
+jednak",,,
+30242,WORD_NOUN,,KATAKANA,,,-,エジンバラ,,ejinbara,Edynburg,miasto w Wielkiej Brytanii,,
+30243,WORD_NOUN,,KATAKANA,,,-,ウオッチング,,uocchingu,"oglądanie
+obserwowanie",ang: watching,,
+30244,WORD_NOUN,,HIRAGANA,,,潅腸,かんちょう,,kanchou,lewatywa,,,
+30245,WORD_NOUN,,HIRAGANA,,,灌腸,かんちょう,,kanchou,lewatywa,,,
+30246,WORD_NOUN,,HIRAGANA,,,黒子,こくし,,kokushi,"czarny pieprzyk
+uroczy zakątek
+malowniczy zakątek",,,"DUPLICATE 20666
+DUPLICATE 25209
+DUPLICATE 25285
+DUPLICATE 30247
+DUPLICATE 30248
+DUPLICATE 30249"
+30247,WORD_NOUN,,HIRAGANA,,,黒子,ははくそ,,hahakuso,"czarny pieprzyk
+uroczy zakątek
+malowniczy zakątek",,,"DUPLICATE 20666
+DUPLICATE 25209
+DUPLICATE 25285
+DUPLICATE 30246
+DUPLICATE 30248
+DUPLICATE 30249"
+30248,WORD_NOUN,,HIRAGANA,,,黒子,ははくろ,,hahakuro,"czarny pieprzyk
+uroczy zakątek
+malowniczy zakątek",,,"DUPLICATE 20666
+DUPLICATE 25209
+DUPLICATE 25285
+DUPLICATE 30246
+DUPLICATE 30247
+DUPLICATE 30249"
+30249,WORD_NOUN,,HIRAGANA,,,黒子,ほくそ,,hokuso,"czarny pieprzyk
+uroczy zakątek
+malowniczy zakątek",,,"DUPLICATE 20666
+DUPLICATE 25209
+DUPLICATE 25285
+DUPLICATE 30246
+DUPLICATE 30247
+DUPLICATE 30248"
+30250,WORD_NOUN,,KATAKANA,,,-,スペンサー・ジャケット,,supensaa jaketto,marynarka Spencer,ang: spencer jacket,,
+30251,"WORD_NOUN
+WORD_ADVERB_TO
+WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO",,HIRAGANA,,,-,ぱらぱら,,para para,para para,"japoński styl solowego tańca klubowego, powstały około 1970, oparty na przewidzianych do konkretnych utworów konkretnych układach rytmiczno-ruchowych przypominających artystyczny taniec synchroniczny, wykonywany jednocześnie przez całą publiczność w salach klubowych",,
+30252,WORD_NOUN,,HIRAGANA,,,王者,おうしゃ,,ousha,"król
+monarchia
+panujący
+rządzący",,,DUPLICATE 20671
+30253,WORD_VERB_U,,HIRAGANA,,,糾す,ただす,,tadasu,"upewnić się
+potwierdzać
+weryfikować",,,
+30254,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,別別,べつべつ,,betsu betsu,"osobny
+oddzielny
+odrębny
+rozdzielny
+indywidualny
+pojedynczy",,,
+30255,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN
+WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ガラガラ,,gara gara,"klekot
+klekotanie
+stukanie
+turkotanie
+grzechotanie (np. zabawką)
+odgłos płukania gardła
+szorstki (głos)
+chropowaty",,,
+30256,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,-,ごってり,,gotteri,"grubo
+gęsto
+ciężko
+ociężale
+obficie
+bogato
+dostanie",,,
+30257,WORD_ADVERB,,HIRAGANA,,,何よりも,なんよりも,,nan'yorimo,"więcej niż wszystko
+nade wszystko
+ponad wszystko",,,DUPLICATE 20705
+30258,WORD_VERB_U,,HIRAGANA,,,指さす,ゆびさす,,yubisasu,"wskazywać
+pokazywać
+wskazać",,,
+30259,WORD_VERB_U,,HIRAGANA,,,つぎ込む,つぎこむ,,tsugikomu,"lać
+wlać
+wlewać
+nalewać
+inwestować
+lokować
+wkładać
+utopić pieniądze w",,,
+30260,WORD_VERB_U,,HIRAGANA,,,書きこむ,かきこむ,,kakikomu,"wypełniać (np. pozycje w formularzu)
+zapisywać
+zapełniać
+wysyłać wiadomość (np. na forum)",,,
+30261,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,次次,つぎつぎ,,tsugitsugi,"w kolejności
+w szeregu
+po kolei
+jeden po drugim",,,
+30262,WORD_NOUN,,KATAKANA,,,-,モス・グリーン,,mosuguriin,zielony mech,"kolor, ang: moss green",,
+30263,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,突き出し,つきだし,,tsukidashi,"występ
+wystawianie
+wypukłość",,,
+30264,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,つき出し,つきだし,,tsukidashi,"występ
+wystawianie
+wypukłość",,,
+30265,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,彎曲,わんきょく,,wankyoku,"krzywa
+łuk
+zaokrąglenie
+wygięcie
+zakrzywienie
+skrzywienie",,,
+30266,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,弯曲,わんきょく,,wankyoku,"krzywa
+łuk
+zaokrąglenie
+wygięcie
+zakrzywienie
+skrzywienie",,,
+30267,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,わん曲,わんきょく,,wankyoku,"krzywa
+łuk
+zaokrąglenie
+wygięcie
+zakrzywienie
+skrzywienie",,,
+30268,WORD_NOUN,,KATAKANA,,,-,テンポラリ,,tenporari,"tymczasowy
+czasowy
+chwilowy
+przejściowy",ang: temporary,,
+30269,WORD_ADJECTIVE_NA,,HIRAGANA,,,側か,ほのか,,honoka,"nikły
+blady
+słaby
+niewyraźny
+niejasny
+nijaki
+mdły",,,
+30270,WORD_VERB_RU,,HIRAGANA,,,持堪える,もちこたえる,,mochikotaeru,"wytrzymywać
+przetrzymać (np. wbrew naciskowi, ciśnieniu i etc)
+wytrzymać
+przeciwstawiać się
+znosić
+znieść",,,
+30271,WORD_VERB_RU,,HIRAGANA,,,持ちこたえる,もちこたえる,,mochikotaeru,"wytrzymywać
+przetrzymać (np. wbrew naciskowi, ciśnieniu i etc)
+wytrzymać
+przeciwstawiać się
+znosić
+znieść",,,
+30272,WORD_NOUN,,KATAKANA,,,-,セトモノ,,setomono,"wyroby garncarskie
+ceramika
+wyroby ceramiczne
+porcelana",,,
+30273,WORD_NOUN,,HIRAGANA,,,沼田,ぬまだ,,numada,podmokłe pole ryżowe,,,DUPLICATE 20789
+30274,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヲタク,,wotaku,"otaku (miłośnik japońskiej popkultury, głównie anime, mangi i gier komputerowych)
+dziwak
+głupek
+entuzjasta
+zapaleniec
+miłośnik
+fanatyk",,,
+30275,WORD_NOUN,,KATAKANA,,,-,ジグゾーパズル,,jiguzoo pazuru,"układanka
+łamigłówka
+puzzle",,,
+30276,WORD_NOUN,,KATAKANA,,,-,ジクソーパズル,,jikusoo pazuru,"układanka
+łamigłówka
+puzzle",,,
+30277,WORD_NOUN,,KATAKANA,,,-,ジクゾーパズル,,jikuzoo pazuru,"układanka
+łamigłówka
+puzzle",,,
+30278,WORD_NOUN,,KATAKANA,,,-,ジグソー・パズル,,jigusoo pazuru,"układanka
+łamigłówka
+puzzle",,,
+30279,WORD_NOUN,,KATAKANA,,,-,ジグゾー・パズル,,jiguzoo pazuru,"układanka
+łamigłówka
+puzzle",,,
+30280,WORD_NOUN,,KATAKANA,,,-,バーレル,,baareru,"beczka
+baryła
+baryłka",,,
+30281,WORD_ADJECTIVE_I,,HIRAGANA,,,図図しい,ずうずうしい,,zuuzuushii,"bezczelny
+zuchwały
+nachalny",,,
+30282,WORD_NOUN,,HIRAGANA,,,気疲れ,きづかれ,,kidukare,"psychiczne zmęczenie
+zmartwienie
+niepokój
+znużenie",,,
+30283,WORD_NOUN,,HIRAGANA,,,禁錮,きんこ,,kinko,"uwięzienie
+więzienie
+ograniczenie
+areszt",,,
+30284,WORD_NOUN,,HIRAGANA,,,禁錮刑,きんこけい,,kinkokei,"kara pozbawienia wolności
+kara aresztu",,,
+30285,WORD_NOUN,,HIRAGANA,,,黴毒,ばいどく,,baidoku,"kiła
+syfilis",,,
+30286,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,コラーン,,koraan,Koran,święta księga islamu,,
+30287,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,クルアーン,,kuruaan,Koran,święta księga islamu,,
+30288,WORD_VERB_U,,HIRAGANA,,,引離す,ひきはなす,,hikihanasu,"rozgarniać
+rozdzielać
+oddzielać
+separować
+rozłączyć",,,
+30289,WORD_VERB_U,,HIRAGANA,,,引きはなす,ひきはなす,,hikihanasu,"rozgarniać
+rozdzielać
+oddzielać
+separować
+rozłączyć",,,
+30290,"WORD_VERB_U
+WORD_VERB_AUX",,HIRAGANA,,,耽ける,ふける,,fukeru,"folgować
+dogadzać
+pobłażać
+odpuszczać sobie
+być opętany
+być nawiedzony
+być pochłonięty
+być zaabsorbowany",,,
+30291,WORD_NOUN,,KATAKANA,,,-,ポリシ,,porishi,"polityka
+polisa
+taktyka
+strategia
+kierunek",ang: policy,,
+30292,WORD_NOUN,,KATAKANA,,,-,レフリー,,refurii,"sędzia
+arbiter",ang: referee,,
+30293,WORD_NOUN,,HIRAGANA,,,東南,ひがしみなみ,,higashi minami,południowy wschód,,,DUPLICATE 20849
+30294,WORD_NOUN,,HIRAGANA,,,鉢植,はちうえ,,hachiue,roślina doniczkowa,,,
+30295,WORD_NOUN,,HIRAGANA,,,叛旗,はんき,,hanki,"baner rewolucji
+transparent rewolucji
+poziom buntu
+standard rewolucji",,,
+30296,WORD_NOUN,,KATAKANA,,,-,ヘヤ,,heya,"włos
+włosy",,,
+30297,WORD_NOUN,,KATAKANA,,,-,ヘヤー,,heyaa,"włos
+włosy",,,
+30298,WORD_NOUN,,HIRAGANA,,,鰮,いわし,,iwashi,"sardela
+sardynka",,,
+30299,WORD_NOUN,,HIRAGANA,,,反影,はんえい,,han'ei,"wpływ
+oddziaływanie
+działanie
+aplikowanie (np. aktualizacji)
+odbicie (np. światła, obrazu, sytuacji, postawy i etc)",,,
+30300,WORD_NOUN,,HIRAGANA,,,上腿,じょうたい,,joutai,"górna część ciała
+górna połowa ciała",,,
+30301,"WORD_NOUN
+WORD_COUNTER",,HIRAGANA,,,廻り,まわり,,mawari,"rotacja
+obrót
+wirowanie
+ruch obrotowy
+krążenie
+rozprzestrzenia
+otoczenie
+okolica
+obwód
+okrąg",,,
+30302,WORD_VERB_U,,HIRAGANA,,,書きなおす,かきなおす,,kakinaosu,"wypisać
+rozpisać
+przepisywać
+robić wierną kopię",,,
+30303,WORD_ADVERB,,HIRAGANA,,,永らく,ながらく,,nagaraku,"długo
+(od) długiego okresu czasu",,,
+30304,"WORD_NOUN
+WORD_ADJECTIVE_F",,KATAKANA,,,-,アイドゥル,,aiduru,"idol
+młoda gwiazda","w japońskiej popkulturze to młoda osoba medialna (piosenkarka, aktorka, modelka itp.), w większości przypadków nastoletnia, która jest uważana za szczególnie atrakcyjną i uroczą",,
+30305,WORD_TEMPORAL_NOUN,,HIRAGANA,,,大みそか,おおみそか,,oomisoka,"sylwester
+31 grudnia",,,
+30306,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,据置き,すえおき,,sueoki,"odłożenie
+odkładanie",np. oszczędności,,
+30307,WORD_NOUN,,KATAKANA,,,-,フューズ,,fyuuzu,bezpiecznik,ang: fuse,,
+30308,WORD_NOUN,,KATAKANA,,,-,クリスマス・ツリー,,kurisumasu tsurii,"choinka bożonarodzeniowa
+drzewko bożonarodzeniowe",,,
+30309,WORD_NOUN,,HIRAGANA,,,合い乗り,あいのり,,ainori,"wspólna jazda
+wspólne jechanie",,,
+30310,WORD_NOUN,,KATAKANA,,,-,テロリスト・グループ,,terorisuto guruupu,grupa terrorystyczna,,,
+30311,WORD_NOUN,,HIRAGANA,,,意志疎通,いしそつう,,ishisotsuu,"wzajemne zrozumienie
+zrozumienie drugiego człowieka",,,
+30312,WORD_NOUN,,KATAKANA,,,-,カラー・コーディネーター,,karaa koodineetaa,???,"ang: color coordinator, colour coordinator",,
+30313,WORD_NOUN,,KATAKANA,,,-,ピープルズ・キャピタリズム,,piipuruzu kyapitarizumu,kapitalizm ludowy,ang: people's capitalism,,
+30314,WORD_NOUN,,KATAKANA,,,-,サンタ・クララ,,santakurara,Santa Clara,"miasto w USA, w stanie Kalifornia, w aglomeracji San José w Dolinie Krzemowej",,
+30315,WORD_NOUN,,KATAKANA,,,-,シュレッダ,,shuredda,niszczarka,"urządzenie służące do niszczenia poufnych dokumentów, najczęściej wykorzystywane do zastosowań biurowych",,
+30316,WORD_NOUN,,KATAKANA,,,-,プライム・タイム,,puraimu taimu,"czas najwyższej oglądalności
+godziny największej oglądalności",ang: prime time,,
+30317,WORD_NOUN,,HIRAGANA,,,買い取り,かいとり,,kaitori,"zakup
+kupno
+nabytek",,,
+30318,WORD_EXPRESSION,,HIRAGANA,,,お陰さまで,おかげさまで,,okagesamade,"(jestem w porządku) dziękuję
+dziękuję Tobie
+na szczęście
+szczęśliwie
+pomyślnie
+pod cieniem bogów",język grzecznościowy,,
+30319,WORD_VERB_U,,HIRAGANA,,,立込む,たてこむ,,tatekomu,"być zatłoczony
+być ciasny
+być tłumny
+być zajętym",,,
+30320,WORD_NOUN,,HIRAGANA,,,色狂い,いろきちがい,,irokichigai,"erotomania
+obsesja na punkcie seksu
+maniak seksualny",,,DUPLICATE 30321
+30321,WORD_NOUN,,HIRAGANA,,,色狂い,いろぐるい,,irogurui,"erotomania
+obsesja na punkcie seksu
+maniak seksualny",,,DUPLICATE 30320
+30322,WORD_NOUN,,HIRAGANA,,,色狂,いろきちがい,,irokichigai,"erotomania
+obsesja na punkcie seksu
+maniak seksualny",,,
+30323,WORD_NOUN,,HIRAGANA,,,御産,おさん,,osan,poród,język grzecznościowy,,
+30324,WORD_NOUN,,HIRAGANA,,,浮游,ふゆう,,fuyuu,"unoszenie się
+dryfowanie
+zawieszenie
+wędrowanie
+błądzenie
+tułanie się",,,
+30325,WORD_VERB_U,,HIRAGANA,,,見落す,みおとす,,miotosu,"przeoczyć
+pominąć
+przegapić",,,
+30326,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,グールメ,,guurume,"smakosz
+koneser
+gastronom
+najwyższej jakości jedzenie",ang: gourmet,,
+30327,WORD_NOUN,,HIRAGANA,,,気魄,きはく,,kihaku,"duch
+dusza
+odwaga
+zapał
+wigor
+krzepkość",,,
+30328,WORD_NOUN,,KATAKANA,,,-,ストーリ,,sutoori,"historia
+opowiadanie",ang: story,,
+30329,WORD_NOUN,,HIRAGANA,,,綱曳き,つなひき,,tsunahiki,przeciąganie liny,,,
+30330,WORD_ADVERB,,HIRAGANA,,,迚も,とても,,totemo,"bardzo
+wcale nie (przed przeczącą formą)
+bynajmniej
+nijak",,,"DUPLICATE 438
+DUPLICATE 21192"
+30331,WORD_NOUN,,KATAKANA,,,-,ステロイド・ホルモン,,suteroidohorumon,"hormon steroidowe
+hormony steroidowe",,,
+30332,WORD_NOUN,,HIRAGANA,,,１打,いちだ,,ichida,"uderzenie
+cios",,,
+30333,WORD_NOUN,,HIRAGANA,,,弱味,よわみ,,yowami,"słabość
+osłabienie
+niedostatek
+niedomaganie
+brak
+ranne miejsce
+bolesne miejsce
+bolące miejsce",,,
+30334,WORD_VERB_U,,HIRAGANA,,,持出す,もちだす,,mochidasu,"wyjąć
+wyciągać
+wynosić
+wydobyć
+wspominać (o czymś)
+wzmiankować
+poruszać temat",,,
+30335,WORD_NOUN,,HIRAGANA,,,有無,ゆうむ,,yuumu,"byt lub niebyt
+obecność lub nieobecność
+zgoda lub odmowa
+tak lub nie",,,DUPLICATE 21216
+30336,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,彼等,かれら,,karera,"oni
+ich",,,
+30337,WORD_NOUN,,KATAKANA,,,-,パーフォーマンス,,paafoomansu,"przedstawienie
+występ
+spektakl
+performance",,,
+30338,WORD_NOUN,,KATAKANA,,,-,パフォーマンス・アート,,pafoomansu aato,sztuka performance,ang: performance art,,
+30339,WORD_NOUN,,HIRAGANA,,,決り手,きまりて,,kimarite,"zwycięska technika
+oficjalne zwycięskie techniki (metody wygrywania meczu w sumo)",,,
+30340,WORD_NOUN,,HIRAGANA,,,極り手,きまりて,,kimarite,"zwycięska technika
+oficjalne zwycięskie techniki (metody wygrywania meczu w sumo)",,,
+30341,WORD_EXPRESSION,,HIRAGANA,,,-,どうだっていい,,doudatteii,"błahy
+nieistotny
+mierny
+marny
+niewart martwienia się",,,
+30342,WORD_EXPRESSION,,HIRAGANA,,,-,どうでもよい,,doudemoyoi,"błahy
+nieistotny
+mierny
+marny
+niewart martwienia się",,,
+30343,WORD_NOUN,,KATAKANA,,,-,カムフラージュ,,kamufuraaju,"kamuflaż
+maskowanie",,,
+30344,WORD_NOUN,,KATAKANA,,,-,グレイド,,gureido,"klasa
+stopień
+ranga",ang: grade,,
+30345,WORD_NOUN,,HIRAGANA,,,御絞り,おしぼり,,oshibori,oshibori,"wilgotny ręcznik podawany gościom w japońskich barach, herbaciarniach i restauracjach",,
+30346,WORD_NOUN,,HIRAGANA,,,あお向け,あおむけ,,aomuke,stawianie czoła,,,
+30347,WORD_NOUN,,HIRAGANA,,,口きき,くちきき,,kuchikiki,"mediacja
+pośrednictwo
+mediator
+pośrednik
+wpływowy człowiek
+elokwencja (archaizm)
+elokwentna osoba (archaizm)",,,
+30348,WORD_VERB_U,,HIRAGANA,,,引出す,ひきだす,,hikidasu,"wyciągać
+wysuwać
+wydobyć",,,
+30349,WORD_VERB_U,,HIRAGANA,,,引きだす,ひきだす,,hikidasu,"wyciągać
+wysuwać
+wydobyć",,,
+30350,WORD_NOUN,,HIRAGANA,,,思い付き,おもいつき,,omoitsuki,"plan
+projekt
+pomysł
+idea
+koncepcja
+sugestia
+propozycja",,,
+30351,WORD_NOUN,SUFFIX,HIRAGANA,,,極め,きめ,,kime,"porozumienie
+umowa
+reguły
+zasady
+regulamin",,,
+30352,WORD_ADJECTIVE_I,,HIRAGANA,,,-,しつっこい,,shitsukkoi,"uparty
+uporczywy
+zawzięty
+nieustępliwy
+zbyt bogaty (np. w smak)
+tłusty
+ciężki",,,
+30353,WORD_NOUN,,HIRAGANA,,,風物誌,ふうぶつし,,fuubutsushi,"rzeczy, które przypominają o porze roku
+poemat o naturze
+poemat o porze roku",,,
+30354,WORD_NOUN,,KATAKANA,,,-,クーデタ,,kuu deta,zamach stanu,,,
+30355,WORD_NOUN,,KATAKANA,,,-,クー・デター,,kuu detaa,zamach stanu,,,
+30356,WORD_NOUN,,KATAKANA,,,-,クー・デタ,,kuu deta,zamach stanu,,,
+30357,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ドッヂボール,,doddi booru,"dwa ognie
+gra w zbijaka",wieloosobowa zabawa sportowa,,
+30358,WORD_NOUN,,KATAKANA,,,-,ドッチボール,,docchi booru,"dwa ognie
+gra w zbijaka",wieloosobowa zabawa sportowa,,
+30359,WORD_NOUN,,KATAKANA,,,-,ドッジ・ボール,,dojji booru,"dwa ognie
+gra w zbijaka",wieloosobowa zabawa sportowa,,
+30360,WORD_VERB_RU,,HIRAGANA,,,乗りこえる,のりこえる,,norikoeru,"pokonywać
+przezwyciężać
+przewyższać
+przekraczać
+przerastać
+wspinać się
+wdrapywać się
+piąć się",,,
+30361,WORD_VERB_RU,,HIRAGANA,,,乗越える,のりこえる,,norikoeru,"pokonywać
+przezwyciężać
+przewyższać
+przekraczać
+przerastać
+wspinać się
+wdrapywać się
+piąć się",,,
+30362,WORD_VERB_RU,,HIRAGANA,,,為続ける,しつづける,,shitsudukeru,"kontynuować by zrobić
+trwać w robieniu
+zawziąć się w robieniu",,,
+30363,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,吾輩,わがはい,,wagahai,"ja (nutką arogancji, archaizm)
+siebie
+my
+nas
+sami",,,
+30364,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,我が輩,わがはい,,wagahai,"ja (nutką arogancji, archaizm)
+siebie
+my
+nas
+sami",,,
+30365,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,吾が輩,わがはい,,wagahai,"ja (nutką arogancji, archaizm)
+siebie
+my
+nas
+sami",,,
+30366,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,わが輩,わがはい,,wagahai,"ja (nutką arogancji, archaizm)
+siebie
+my
+nas
+sami",,,
+30367,WORD_NOUN,,KATAKANA,,,-,カップリング・シュガー,,kappuringu shugaa,"połączone cukry
+złączone cukry",ang: coupling sugar,,
+30368,WORD_NOUN,,KATAKANA,,,-,ラッキー・ゾーン,,rakkii zoon,szczęśliwa strefa,ang: lucky zone,,
+30369,WORD_ADJECTIVE_NO,,HIRAGANA,,,お話中,おはなしちゅう,,ohanashichuu,zajęty,"telefon, język grzecznościowy",,
+30370,WORD_ADJECTIVE_NO,,HIRAGANA,,,御話し中,おはなしちゅう,,ohanashichuu,zajęty,"telefon, język grzecznościowy",,
+30371,WORD_ADJECTIVE_NO,,HIRAGANA,,,御話中,おはなしちゅう,,ohanashichuu,zajęty,"telefon, język grzecznościowy",,
+30372,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,目がさめる,めがさめる,,megasameru,"budzić
+przebudzić
+zbudzić
+ożywiać
+poradzić (w czymś)",,,
+30373,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,目が醒める,めがさめる,,megasameru,"budzić
+przebudzić
+zbudzić
+ożywiać
+poradzić (w czymś)",,,
+30374,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,眼が覚める,めがさめる,,megasameru,"budzić
+przebudzić
+zbudzić
+ożywiać
+poradzić (w czymś)",,,
+30375,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,礒,いそ,,iso,"kamienna plaża
+wybrzeże
+brzeg morza",,,
+30376,"WORD_ADVERB_TO
+WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,軽軽,かるがる,,karugaru,"lekko
+z łatwością
+bezproblemowo
+niedbale
+nieostrożnie
+nieuważnie",,,DUPLICATE 30377
+30377,"WORD_ADVERB_TO
+WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,軽軽,かろがろ,,karogaro,"lekko
+z łatwością
+bezproblemowo
+niedbale
+nieostrożnie
+nieuważnie",,,DUPLICATE 30376
+30378,WORD_NOUN,,HIRAGANA,,,女将,じょしょう,,joshou,"pani domu
+właścicielka
+gospodyni",,,DUPLICATE 21344
+30379,WORD_NOUN,,KATAKANA,,,-,アウトゥレット,,auturetto,outlet,"rodzaj sklepu sprzedającego np. końcówki serii, nadwyżki produkcyjne, niesprzedane przez pierwotny sklep i etc",,
+30380,WORD_NOUN,,KATAKANA,,,-,アウトレット・ストア,,autoretto sutoa,sklep typu outlet,ang: outlet store,,
+30381,WORD_NOUN,,KATAKANA,,,-,アウトレット・ボックス,,autoretto bokkusu,ang: outlet box,skrzynka do montażu gniazdek i podłączenie ich do instalacji elektrycznej,,
+30382,WORD_NOUN,,KATAKANA,,,-,エディプス,,edipusu,Edyp,w mitologii greckiej syn Lajosa i Jokasty,,
+30383,WORD_NOUN,,KATAKANA,,,-,オイディプース,,oidipuusu,Edyp,w mitologii greckiej syn Lajosa i Jokasty,,
+30384,WORD_NOUN,,KATAKANA,,,-,ベリー・ダンス,,berii dansu,taniec brzucha,ang: belly dance,,
+30385,WORD_VERB_RU,,HIRAGANA,,,見棄てる,みすてる,,misuteru,"porzucać
+opuścić
+zostawić",,,
+30386,WORD_VERB_RU,,HIRAGANA,,,見すてる,みすてる,,misuteru,"porzucać
+opuścić
+zostawić",,,
+30387,WORD_NOUN,,KATAKANA,,,-,インセンティブ・セール,,insentibu seeru,"zachęcająca wyprzedaż
+motywująca wyprzedaż",ang: incentive sale,,
+30388,WORD_NOUN,,HIRAGANA,,,衰頽,すいたい,,suitai,"spadek
+zanik
+degeneracja",,,
+30389,WORD_NOUN,,HIRAGANA,,,鈴,すず,,suzu,"dzwon
+dzwoneczek",,,"DUPLICATE 8090
+DUPLICATE 8090
+DUPLICATE 8091
+DUPLICATE 29865
+DUPLICATE 30390"
+30390,WORD_NOUN,,HIRAGANA,,,鈴,りん,,rin,"dzwon
+dzwoneczek",,,"DUPLICATE 8090
+DUPLICATE 8091
+DUPLICATE 8091
+DUPLICATE 29865
+DUPLICATE 30389"
+30391,WORD_NOUN,,HIRAGANA,,,黒貂,くろてん,,kuroten,saból,gatunek drapieżnego ssaka z rodziny łasicowatych,,DUPLICATE 30046
+30392,WORD_NOUN,,KATAKANA,,,-,クロテン,,kuroten,saból,gatunek drapieżnego ssaka z rodziny łasicowatych,,
+30393,WORD_NOUN,,HIRAGANA,,,小島,しょうとう,,shoutou,"mała wyspa
+wysepka",,,"DUPLICATE 30049
+DUPLICATE 30394"
+30394,WORD_NOUN,,HIRAGANA,,,小島,おじま,,ojima,"mała wyspa
+wysepka",,,"DUPLICATE 30049
+DUPLICATE 30393"
+30395,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA_HIRAGANA,,,ケタ外れ,ケタはずれ,,ketahazure,"nieprawdopodobny
+niesamowity
+niewiarygodne
+niezwykłe
+zadziwiające
+zdumiewające
+wyjątkowe
+fenomenalne",,,
+30396,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,けた外れ,けたはずれ,,ketahazure,"nieprawdopodobny
+niesamowity
+niewiarygodne
+niezwykłe
+zadziwiające
+zdumiewające
+wyjątkowe
+fenomenalne",,,
+30397,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,ケタハズレ,,ketahazure,"nieprawdopodobny
+niesamowity
+niewiarygodne
+niezwykłe
+zadziwiające
+zdumiewające
+wyjątkowe
+fenomenalne",,,
+30398,WORD_ADVERB,,HIRAGANA,,,弥,よ,,yo,"coraz bardziej
+coraz częściej",archaizm,,"DUPLICATE 12723
+DUPLICATE 30063
+DUPLICATE 30064
+DUPLICATE 30399"
+30399,WORD_ADVERB,,HIRAGANA,,,弥,いよよ,,iyoyo,"coraz bardziej
+coraz częściej",archaizm,,"DUPLICATE 30063
+DUPLICATE 30064
+DUPLICATE 30398"
+30400,WORD_ADVERB,,HIRAGANA,,,愈,いよよ,,iyoyo,"coraz bardziej
+coraz częściej",archaizm,,DUPLICATE 11871
+30401,WORD_NOUN,,HIRAGANA,,,幾代,いくよ,,ikuyo,"generacja
+pokolenie
+wieki
+lata",,,
+30402,WORD_NOUN,,HIRAGANA,,,和上,かしょう,,kashou,"mentor lub wyższy mnich (w Tendai lub Buddyzmie Kegon)
+drugi najwyższa ranga w Buddyzmie
+mnich (szczególnie główny mnich swiątyni)
+mistrz",,NO_TYPE_CHECK,
+30403,WORD_NOUN,,HIRAGANA,,,生薑湯,しょうがゆ,,shougayu,herbata imbirowa,,,
+30404,WORD_NOUN,,HIRAGANA,,,雀蜂,すずめばち,,suzumebachi,szerszeń,,,
+30405,WORD_NOUN,,HIRAGANA,,,胡蜂,すずめばち,,suzumebachi,szerszeń,,,
+30406,WORD_NOUN,,KATAKANA,,,-,チータ,,chiita,gepard,,,
+30407,WORD_ADJECTIVE_I,,HIRAGANA,,,恙ない,つつがない,,tsutsuganai,"bezpieczny
+pewny
+pełny zdrowia",,,
+30408,"WORD_VERB_RU
+WORD_VERB_AUX",,HIRAGANA,,,申上げる,もうしあげる,,moushiageru,mówić,grzecznie,,
+30409,"WORD_VERB_RU
+WORD_VERB_AUX",,HIRAGANA,,,申しあげる,もうしあげる,,moushiageru,mówić,grzecznie,,
+30410,WORD_VERB_RU,,HIRAGANA,,,疵付ける,きずつける,,kizutsukeru,"kaleczyć
+ranić
+zranić",,,
+30411,WORD_VERB_RU,,HIRAGANA,,,傷つける,きずつける,,kizutsukeru,"kaleczyć
+ranić
+zranić",,,
+30412,WORD_VERB_RU,,HIRAGANA,,,疵つける,きずつける,,kizutsukeru,"kaleczyć
+ranić
+zranić",,,
+30413,WORD_NOUN,,KATAKANA,,,-,クリ,,kuri,kasztan,,,
+30414,WORD_NOUN,,HIRAGANA,,,鄙語,ひご,,higo,"wulgaryzm
+wulgarne wyrażenie",,,
+30415,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,兆候,ちょうこう,,choukou,"znak
+objaw
+oznaka
+symptom
+przejaw",,,
+30416,WORD_NOUN,,HIRAGANA,,,受皿,うけざら,,ukezara,spodek,,,
+30417,WORD_NOUN,,KATAKANA,,,-,スズ,,suzu,cyna,,,
+30418,WORD_NOUN,,HIRAGANA,,,憶説,おくせつ,,okusetsu,"hipoteza
+przypuszczenie
+domysły
+spekulacje",,,
+30419,WORD_NOUN,,HIRAGANA,,,くつ屋,くつや,,kutsuya,"sklep obuwniczy
+zakład szewski
+szewc",,,
+30420,WORD_NOUN,,HIRAGANA,,,あめ玉,あめだま,,amedama,"cukierek
+ryżowa galaretka",,,
+30421,WORD_NOUN,,HIRAGANA,,,腟,ちつ,,chitsu,"pochwa
+wagina",,,
+30422,WORD_NOUN,,HIRAGANA,,,ほら穴,ほらあな,,horaana,"grota
+jaskinia
+pieczara",,,
+30423,WORD_NOUN,,HIRAGANA,,,破たん,はたん,,hatan,"bankructwo
+plajta
+upadłość",,,
+30424,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,聯隊,れんたい,,rentai,pułk,,,
+30425,WORD_NOUN,,HIRAGANA,,,絵かき,えかき,,ekaki,"artysta
+malarz",,,
+30426,WORD_NOUN,,HIRAGANA,,,絵書き,えかき,,ekaki,"artysta
+malarz",,,
+30427,WORD_NOUN,,HIRAGANA,,,絵描,えかき,,ekaki,"artysta
+malarz",,,
+30428,WORD_NOUN,,HIRAGANA,,,跂及,ききゅう,,kikyuu,"próba
+usiłowanie",,,
+30429,WORD_NOUN,,HIRAGANA,,,復しゅう,ふくしゅう,,fukushuu,"zemsta
+odwet
+wendetta",,,
+30430,WORD_NOUN,,HIRAGANA,,,復讎,ふくしゅう,,fukushuu,"zemsta
+odwet
+wendetta",,,
+30431,WORD_NOUN,,HIRAGANA,,,鼬,いたち,,itachi,łasica,,,
+30432,WORD_NOUN,,HIRAGANA,,,鼬鼠,いたち,,itachi,łasica,,,
+30433,WORD_NOUN,,HIRAGANA,,,しょう液,しょうえき,,shoueki,płyn surowiczy,,,
+30434,WORD_NOUN,,HIRAGANA,,,統馭,とうぎょ,,tougyo,"kontrola
+kontrolowanie
+sprawdzanie
+monitorowanie
+nadzorowanie",,,
+30435,WORD_NOUN,,HIRAGANA,,,支払,しはらい,,shiharai,"płatność
+zapłata
+opłata",,,
+30436,WORD_NOUN,,KATAKANA,,,-,セルリー,,serurii,seler,,,
+30437,WORD_NOUN,,HIRAGANA,,,聾,みみしい,,mimishii,głuchota,,,DUPLICATE 10180
+30438,WORD_NOUN,,HIRAGANA,,,淫賣,いんばい,,inbai,"nierząd
+prostytucja",,,
+30439,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,甦生,そせい,,sosei,"zmartwychwstanie
+reanimacja
+rehabilitacja
+odrodzenie
+regeneracja
+reorganizacja
+przegrupowanie",,,
+30440,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ロバ,,roba,osioł,,,
+30441,WORD_NOUN,,HIRAGANA,,,鱗,こけ,,koke,łuska,,,"DUPLICATE 10187
+DUPLICATE 30442"
+30442,WORD_NOUN,,HIRAGANA,,,鱗,こけら,,kokera,łuska,,,"DUPLICATE 10187
+DUPLICATE 30441"
+30443,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,カタクチイワシ,,katakuchi iwashi,sardela,,,
+30444,WORD_NOUN,,HIRAGANA,,,辯士,べんし,,benshi,"mówca
+orator",,,
+30445,WORD_NOUN,,HIRAGANA,,,諷喩,ふうゆ,,fuuyu,alegoria,,,
+30446,WORD_NOUN,,HIRAGANA,,,風喩,ふうゆ,,fuuyu,alegoria,,,
+30447,WORD_NOUN,,HIRAGANA,,,千年期,せんねんき,,sennenki,"tysiąclecie
+millenium",,,
+30448,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,怠屈,たいくつ,,taikutsu,"nudny
+znudzony
+nuda",,,
+30449,WORD_ADJECTIVE_I,,HIRAGANA,,,脂っこい,あぶらっこい,,aburakkoi,"tłusty
+oleisty",,,
+30450,WORD_ADJECTIVE_I,,HIRAGANA,,,油っこい,あぶらっこい,,aburakkoi,"tłusty
+oleisty",,,
+30451,WORD_ADJECTIVE_I,,HIRAGANA,,,脂濃い,あぶらっこい,,aburakkoi,"tłusty
+oleisty",,,
+30452,WORD_ADJECTIVE_I,,HIRAGANA,,,油っ濃い,あぶらっこい,,aburakkoi,"tłusty
+oleisty",,,
