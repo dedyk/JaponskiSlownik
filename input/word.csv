@@ -20552,7 +20552,8 @@ zwyciężać","zawody, mistrzostwa",,
 7644,WORD_INTERJECTION,,HIRAGANA,Genki 2-23,,-,いや,,iya,nie,,,"DUPLICATE 2471
 DUPLICATE 26002
 DUPLICATE 27537
-DUPLICATE 27539"
+DUPLICATE 27539
+DUPLICATE 30064"
 7645,WORD_EXPRESSION,,HIRAGANA,Genki 2-23,,元気でね,げんきでね,,genki de ne,dbaj o siebie,,,
 7646,WORD_EXPRESSION,,HIRAGANA,Genki 2-23,,-,そうそう,,sousou,masz rację,,,"DUPLICATE 21800
 DUPLICATE 28346"
@@ -84291,8 +84292,8 @@ wymię",,,DUPLICATE 8502
 30045,WORD_NOUN,,HIRAGANA,,,鼻ひげ,はなひげ,,hanahige,"wąs
 wąsy",,,
 30046,WORD_NOUN,,HIRAGANA,,,黒貂,ふるき,,furuki,saból,gatunek drapieżnego ssaka z rodziny łasicowatych,,
-30047,WORD_ADJECTIVE_F,,HIRAGANA,,,古き,ふるき,,"stary
-starszy",stara forma furui,,,
+30047,WORD_ADJECTIVE_F,,HIRAGANA,,,古き,ふるき,,furuki,"stary
+starszy",stara forma furui,,
 30048,WORD_NOUN,,HIRAGANA,,,閃き,ひらめき,,hirameki,"talent
 zamiłowanie
 smykałka
@@ -84338,11 +84339,12 @@ scena rzezi
 miejsce walki powiedzy Asura i Sakra devanam Indra",,,
 30062,WORD_NOUN,,HIRAGANA,,,六道,ろくどう,,rokudou,sześć królestw,"królestwa: Deva, Asura, ludzi, zwierząt, Głodnych Duchów, Nakara",,
 30063,WORD_ADVERB,,HIRAGANA,,,弥,いよ,,iyo,"coraz bardziej
-coraz częściej",archaizm,,
+coraz częściej",archaizm,,DUPLICATE 30064
 30064,WORD_ADVERB,,HIRAGANA,,,弥,いや,,iya,"coraz bardziej
 coraz częściej
 bardzo
-nadzwyczaj",,,
+nadzwyczaj",,,"DUPLICATE 7644
+DUPLICATE 30063"
 30065,WORD_NOUN,,HIRAGANA,,,幾夜,いくよ,,ikuyo,liczba nocy,,,
 30066,WORD_NOUN,,HIRAGANA,,,幾世,いくよ,,ikuyo,"generacja
 pokolenie
@@ -84363,6 +84365,6 @@ Kegon (buddyjska sekta)",,,
 30071,WORD_NOUN,,HIRAGANA,,,和尚,かしょう,,kashou,"mentor lub wyższy mnich (w Tendai lub Buddyzmie Kegon)
 drugi najwyższa ranga w Buddyzmie
 mnich (szczególnie główny mnich swiątyni)
-mistrz",,,
+mistrz",,NO_TYPE_CHECK,
 30072,WORD_NOUN,,HIRAGANA,,,小槌,こづち,,koduchi,"mały młoteczek
 młoteczek",,,
