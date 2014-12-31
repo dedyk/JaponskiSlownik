@@ -1128,7 +1128,13 @@ public class Validator {
 			List<PolishJapaneseEntry> polishJapaneseEntries, String findKanji, String findKana) {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-						
+			
+			DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+			
+			if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+				continue;
+			}
+			
 			String kanji = polishJapaneseEntry.getKanji();
 			String kana = polishJapaneseEntry.getKana();
 			
