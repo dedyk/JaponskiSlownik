@@ -1058,8 +1058,7 @@ WORD_NOUN
 WORD_COUNTER",SUFFIX,HIRAGANA,"Genki 1-4
 Genki 2-14
 Genki kanji 1-9",,時間,じかん,,jikan,"czas
-godzina",okres,,"DUPLICATE 1391
-DUPLICATE 1391"
+godzina",okres,,
 356,WORD_NOUN,,HIRAGANA,Genki 1-4,,一時間,いちじかん,,ichijikan,jedna godzina,,,
 357,WORD_NOUN,,HIRAGANA,Genki 1-4,,時,とき,,toki,"czas
 w czasie
@@ -1395,11 +1394,13 @@ wchodzić
 jechać
 jeździć
 być w (np. słowniku)",czymś,,
-433,WORD_VERB_U,,HIRAGANA,Genki 1-5,を,-,やる,o,yaru,"wykonywać
+433,WORD_VERB_U,,HIRAGANA,"Genki 1-5
+Genki 2-21",を,-,やる,o,yaru,"wykonywać
 dać
+dawać
 robić
 uprawiać
-żyć (za coś, z czegoś)","zazwyczaj oznacza dawanie czegoś osobom o tym samym lub niższym statusie, a także karmienie zwierząt i zabiegi pielęgnacyjne w stosunku do roślin. Używa go osoba dająca",,DUPLICATE 5082
+żyć (za coś, z czegoś)","zazwyczaj oznacza dawanie czegoś osobom o tym samym lub niższym statusie, a także karmienie zwierząt i zabiegi pielęgnacyjne (podlewanie) w stosunku do roślin. Używa go osoba dająca",,
 434,WORD_VERB_RU,,HIRAGANA,Genki 1-5,,出かける,でかける,,dekakeru,"wychodzić
 wyjść
 wyjechać (np. wycieczka lub wypad)
@@ -4378,13 +4379,7 @@ Genki kanji 2-14
 Genki dodatkowe 2-22",,親友,しんゆう,,shin'yuu,najlepszy przyjaciel,,,
 1390,WORD_NOUN,,HIRAGANA,"Genki kanji 1-9
 Genki dodatkowe 2-19",,友人,ゆうじん,,yuujin,przyjaciel,bardziej oficjalnie,,
-1391,"WORD_ADVERBIAL_NOUN
-WORD_NOUN
-WORD_COUNTER",SUFFIX,HIRAGANA,"Genki 1-4
-Genki 2-14
-Genki kanji 1-9",,時間,じかん,,jikan,"czas
-godzina",okres,,"DUPLICATE 355
-DUPLICATE 355"
+1391,WORD_NOUN,,KATAKANA,,,-,スターズアンドストライプス,,sutaazu ando sutoraipusu,Gwiazdy i Pasy,"ang: Stars and Stripes, określenie flagi Stanów Zjednoczonych",,
 1392,WORD_NOUN,,HIRAGANA,Genki kanji 1-9,,二時間,にじかん,,nijikan,dwie godziny,,,
 1393,WORD_NOUN,,HIRAGANA,"Genki kanji 1-9
 Genki dodatkowe 2-23",,人間,にんげん,,ningen,"człowiek
@@ -13860,7 +13855,7 @@ zakradać się",,,
 5081,WORD_VERB_U,,HIRAGANA,Genki 2-21,,貼る,はる,,haru,"przyklejać
 naklejać
 nalepiać",,,
-5082,WORD_VERB_U,,HIRAGANA,Genki 2-21,,-,やる,,yaru,dawać,"zwierzętom, kwiatom (podlewać), młodszemu rodzeństwu i etc",,DUPLICATE 433
+5082,WORD_NOUN,,HIRAGANA,,,広葉樹,こうようじゅ,,kouyouju,szerokolistne drzewo,,,
 5083,WORD_VERB_RU,,HIRAGANA,Genki 2-21,,苛める,いじめる,,ijimeru,"znęcać się
 prześladować
 dręczyć
@@ -66991,13 +66986,9 @@ chusteczka higieniczna",,,DUPLICATE 24277
 24279,WORD_NOUN,,HIRAGANA,,,有難さ,ありがたさ,,arigatasa,"walor
 cnota
 zaleta
-poświęcenie",,,"DUPLICATE 24280
-DUPLICATE 24280"
-24280,WORD_NOUN,,HIRAGANA,,,有難さ,ありがたさ,,arigatasa,"walor
-cnota
-zaleta
-poświęcenie",,,"DUPLICATE 24279
-DUPLICATE 24279"
+poświęcenie",,,
+24280,WORD_NOUN,,HIRAGANA,,,通達,つうたつ,,tsuutatsu,"powiadomienie
+zawiadomienie",,,
 24281,WORD_NOUN,,HIRAGANA,,,閉店,へいてん,,heiten,"zamknięty sklep
 zamknięcie sklepu",,,
 24282,WORD_NOUN,,HIRAGANA,,,閉店時間,へいてんじかん,,heiten jikan,godziny zamknięcia,"np. sklepu, restauracji i etc",,
