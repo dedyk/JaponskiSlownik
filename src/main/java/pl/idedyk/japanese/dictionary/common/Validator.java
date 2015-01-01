@@ -425,8 +425,11 @@ public class Validator {
 			validateEdictGroup(jmeNewDictionary, polishJapaneseKanjiEntries);
 		}
 		
-		// wyliczanie form gramatycznych i przykladow
-		countGrammaFormAndExamples(polishJapaneseKanjiEntries);		
+		if (jmeNewDictionary != null) {
+			
+			// wyliczanie form gramatycznych i przykladow
+			countGrammaFormAndExamples(polishJapaneseKanjiEntries);				
+		}		
 	}
 
 	private static KanaWord createKanaWord(KanaHelper kanaHelper, String romaji, WordType wordType, Map<String, KanaEntry> hiraganaCache,
