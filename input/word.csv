@@ -3826,6 +3826,7 @@ przestrzenny",,,
 1198,WORD_VERB_U,,HIRAGANA,"Genki 2-15
 Genki kanji 1-10",,売る,うる,,uru,sprzedawać,,,
 1199,WORD_VERB_U,,HIRAGANA,Genki 2-15,,下ろす,おろす,,orosu,"zdjąć
+robić coś w dół
 ściągnąć (np. flagę)
 wodować (np. statek)
 zrzucić
@@ -3835,8 +3836,7 @@ rozładować
 podjąć pieniądze
 podejmować pieniądze
 nosić ubranie pierwszy raz
-robić filet (z ryby)",,,"DUPLICATE 1252
-DUPLICATE 1252"
+robić filet (z ryby)",,,
 1200,WORD_VERB_U,,HIRAGANA,Genki 2-15,,描く,かく,,kaku,"rysować
 szkicować
 malować",,,DUPLICATE 4459
@@ -4037,8 +4037,8 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,世界中,せかいじゅう,,sekai juu,na całym
 1251,WORD_NOUN,,HIRAGANA,,,四方,しほう,,shihou,"cztery kierunki świata
 wszystkie kierunki świata
 cztery strony świata",,,
-1252,WORD_VERB_U,,HIRAGANA,Genki 2-15,,下ろす,おろす,,orosu,robić coś w dół,,,"DUPLICATE 1199
-DUPLICATE 1199"
+1252,WORD_VERB_RU,,HIRAGANA,,,利かせる,きかせる,,kikaseru,"przyprawiać (solą)
+wydobywać smak",,,
 1253,WORD_VERB_U,,HIRAGANA,,,見下ろす,みおろす,,mi orosu,patrzeć w dół,,,
 1254,WORD_VERB_U,,HIRAGANA,,,そびえ立つ,そびえたつ,,sobie tatsu,górować nad czymś,,,
 1255,WORD_NOUN,,HIRAGANA,,,青空,あおぞら,,aozora,"niebieskie niebo
@@ -21923,16 +21923,10 @@ dopuszczać się ekscesów
 iść ponad",,,
 8090,WORD_NOUN,,HIRAGANA,,,鈴,すず,,suzu,"dzwon
 dzwoneczek",,,"DUPLICATE 8091
-DUPLICATE 29865
-DUPLICATE 30389
-DUPLICATE 30389
-DUPLICATE 30390"
+DUPLICATE 29865"
 8091,WORD_NOUN,,HIRAGANA,,,鈴,りん,,rin,"dzwon
 dzwoneczek",,,"DUPLICATE 8090
-DUPLICATE 29865
-DUPLICATE 30389
-DUPLICATE 30390
-DUPLICATE 30390"
+DUPLICATE 29865"
 8092,WORD_NOUN,,HIRAGANA,,,溝,みぞ,,mizo,"rów
 kanał
 rynsztok",,,
@@ -83903,8 +83897,6 @@ super-",,,
 29865,WORD_NOUN,,HIRAGANA,,,鈴,れい,,rei,"dzwon
 dzwoneczek",,,"DUPLICATE 8090
 DUPLICATE 8091
-DUPLICATE 30389
-DUPLICATE 30390
 EDICT_DUPLICATE 8090
 EDICT_DUPLICATE 8091"
 29866,WORD_VERB_U,,HIRAGANA,,,厭く,あく,,aku,"mieć dosyć
@@ -85672,18 +85664,12 @@ motywująca wyprzedaż",ang: incentive sale,,
 30388,WORD_NOUN,,HIRAGANA,,,衰頽,すいたい,,suitai,"spadek
 zanik
 degeneracja",,,
-30389,WORD_NOUN,,HIRAGANA,,,鈴,すず,,suzu,"dzwon
-dzwoneczek",,,"DUPLICATE 8090
-DUPLICATE 8090
-DUPLICATE 8091
-DUPLICATE 29865
-DUPLICATE 30390"
-30390,WORD_NOUN,,HIRAGANA,,,鈴,りん,,rin,"dzwon
-dzwoneczek",,,"DUPLICATE 8090
-DUPLICATE 8091
-DUPLICATE 8091
-DUPLICATE 29865
-DUPLICATE 30389"
+30389,WORD_NOUN,,HIRAGANA,,,反発,はんぱつ,,hanpatsu,"sprzeciw
+bunt
+rebelia
+rewolta",,,
+30390,WORD_NOUN,,HIRAGANA,,,軍港,ぐんこう,,gunkou,"port wojenny
+baza woska",,,
 30391,WORD_NOUN,,HIRAGANA,,,黒貂,くろてん,,kuroten,saból,gatunek drapieżnego ssaka z rodziny łasicowatych,,DUPLICATE 30046
 30392,WORD_NOUN,,KATAKANA,,,-,クロテン,,kuroten,saból,gatunek drapieżnego ssaka z rodziny łasicowatych,,
 30393,WORD_NOUN,,HIRAGANA,,,小島,しょうとう,,shoutou,"mała wyspa
@@ -93726,6 +93712,7 @@ istota
 esencja
 kwintesencja
 duch
+dusza
 dusza",,,
 32944,WORD_NOUN,,KATAKANA,,,-,フロン・ガス,,furon gasu,freon,,,
 32945,WORD_VERB_U,,HIRAGANA,,,突きさす,つきさす,,tsukisasu,"dźgać
@@ -94195,13 +94182,6 @@ korekta",ang: revision,,
 stosownie z
 odpowiednio z",,,
 33077,WORD_NOUN,,HIRAGANA,,,常用漢字,じょうようかんじ,,jouyou kanji,kanji powszechnego użycia,"w 1981 roku było to 1945 znaków, w 2010 to 2136 znaki",,
-33078,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,神髄,しんずい,,shinzui,"prawdziwe znaczenie
-istota
-sedno
-kwintesencja
-dusza
-serce",,,
-33079,"WORD_ADJECTIVE_NA
+33078,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,粗大,そだい,,sodai,"szorstki
 chropowaty",,,
