@@ -30172,7 +30172,8 @@ przypadkiem",,,
 niespodziewanie
 przypadkiem",,,
 11255,WORD_NOUN,,HIRAGANA,,,掛け布団,かけぶとん,,kakebuton,kołdra,,,
-11256,WORD_NOUN,,HIRAGANA,,,敷布団,しきぶとん,,shikibuton,materac,,,
+11256,WORD_NOUN,,HIRAGANA,,,敷布団,しきぶとん,,shikibuton,"japoński materac
+futon kładziony na podłodze",,,
 11257,WORD_NOUN,,HIRAGANA,,,座布団,ざぶとん,,zabuton,poduszka do siedzenia,,,
 11258,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,布団を敷く,ふとんをしく,,futon o shiku,rozścielać posłanie (materac),,,
@@ -86574,10 +86575,14 @@ imbir (archaizm)",,,DUPLICATE 8945
 30721,WORD_NOUN,,HIRAGANA,,,掛布団,かけぶとん,,kakebuton,kołdra,,,
 30722,WORD_NOUN,,HIRAGANA,,,掛け蒲団,かけぶとん,,kakebuton,kołdra,,,
 30723,WORD_NOUN,,HIRAGANA,,,掛蒲団,かけぶとん,,kakebuton,kołdra,,,
-30724,WORD_NOUN,,HIRAGANA,,,敷き布団,しきぶとん,,shikibuton,materac,,,
-30725,WORD_NOUN,,HIRAGANA,,,敷き蒲団,しきぶとん,,shikibuton,materac,,,
-30726,WORD_NOUN,,HIRAGANA,,,敷蒲団,しきぶとん,,shikibuton,materac,,,
-30727,WORD_NOUN,,HIRAGANA,,,敷ぶとん,しきぶとん,,shikibuton,materac,,,
+30724,WORD_NOUN,,HIRAGANA,,,敷き布団,しきぶとん,,shikibuton,"japoński materac
+futon kładziony na podłodze",,,
+30725,WORD_NOUN,,HIRAGANA,,,敷き蒲団,しきぶとん,,shikibuton,"japoński materac
+futon kładziony na podłodze",,,
+30726,WORD_NOUN,,HIRAGANA,,,敷蒲団,しきぶとん,,shikibuton,"japoński materac
+futon kładziony na podłodze",,,
+30727,WORD_NOUN,,HIRAGANA,,,敷ぶとん,しきぶとん,,shikibuton,"japoński materac
+futon kładziony na podłodze",,,
 30728,WORD_NOUN,,HIRAGANA,,,座蒲団,ざぶとん,,zabuton,poduszka do siedzenia,,,
 30729,WORD_NOUN,,HIRAGANA,,,座ぶとん,ざぶとん,,zabuton,poduszka do siedzenia,,,
 30730,WORD_NOUN,,HIRAGANA,,,坐蒲団,ざぶとん,,zabuton,poduszka do siedzenia,,,
@@ -94280,41 +94285,80 @@ część nazwy",,,
 WORD_ADJECTIVE_F",,KATAKANA,,,-,スコットランド,,sukottorando,"Szkocja
 szkocki",,,
 33121,WORD_NOUN,,KATAKANA,,,-,スコットランドヤード,,sukottorando yaado,Scotland Yard,,,
-33122,WORD_NOUN,,KATAKANA_HIRAGANA,,,-,スコットランド人,,sukottorando jin,Szkot,,,
+33122,WORD_NOUN,,KATAKANA_HIRAGANA,,,スコットランド人,スコットランドじん,,sukottorando jin,Szkot,,,
 33123,WORD_NOUN,,HIRAGANA,,,出方,でかた,,dekata,"nastawienie
 stosunek
 przekonanie
 teatralny bileter",,,
-33124,WORD_NOUN,,HIRAGANA,,,敷き布団,しきぶとん,,shikibuton,"japoński materac
-futon kładziony na podłodze",,,
-33125,WORD_NOUN,,HIRAGANA,,,生涯教育,しょうがいきょういく,,shougai kyouiku,"kształcenie ustawiczne
+33124,WORD_NOUN,,HIRAGANA,,,生涯教育,しょうがいきょういく,,shougai kyouiku,"kształcenie ustawiczne
 uczenie się przez całe życie",,,
-33126,"WORD_ADVERBIAL_NOUN
+33125,"WORD_ADVERBIAL_NOUN
 WORD_TEMPORAL_NOUN",,HIRAGANA,,,近日,きんじつ,,kinjitsu,"wkrótce
 niedługo
 za parę dni
 za kilka dni",,,
-33127,WORD_CONJUNCTION,,HIRAGANA,,,-,それでいて,,soredeite,"jednak
+33126,WORD_CONJUNCTION,,HIRAGANA,,,-,それでいて,,soredeite,"jednak
 a jednak
 mimo wszystko
 mimo, że",,,
-33128,WORD_NOUN,,KATAKANA,,,-,コート,,kooto,"płaszcz
+33127,WORD_NOUN,,KATAKANA,,,-,コート,,kooto,"płaszcz
 żakiet
 kort (np. tenisowy)","ang: coat, court",,
-33129,WORD_NOUN,,KATAKANA,,,-,コートドレス,,kooto doresu,płaszcz,ang: coatdress,,
-33130,WORD_NOUN,,HIRAGANA,,,新日本製鐵,しんにっぽんせいてつ,,shinppon seitetsu,Nippon Steel Corporation,,,
-33131,WORD_NOUN,,HIRAGANA,,,決着,けっちゃく,,kecchaku,"wniosek
+33128,WORD_NOUN,,KATAKANA,,,-,コートドレス,,kooto doresu,płaszcz,ang: coatdress,,
+33129,WORD_NOUN,,HIRAGANA,,,新日本製鐵,しんにっぽんせいてつ,,shin nippon seitetsu,Nippon Steel Corporation,,,
+33130,WORD_NOUN,,HIRAGANA,,,決着,けっちゃく,,kecchaku,"wniosek
 konkluzja
 decyzja
 porozumienie",,,
-33132,"WORD_VERB_RU
+33131,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,決着を付ける,けっちゃくをつける,,kecchaku o tsukeru,rozstrzygać,po sporze,,
-33133,"WORD_VERB_RU
+33132,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,決着をつける,けっちゃくをつける,,kecchaku o tsukeru,rozstrzygać,po sporze,,
-33134,WORD_NOUN,,HIRAGANA,,,選別,せんべつ,,senbetsu,"wybór
+33133,WORD_NOUN,,HIRAGANA,,,選別,せんべつ,,senbetsu,"wybór
 selekcja
 klasyfikacja
 sortowanie
 wstępne badanie stanu zdrowia",,,
-33135,WORD_NOUN,,HIRAGANA,,,選定,せんてい,,sentei,"wybór
+33134,WORD_NOUN,,HIRAGANA,,,選定,せんてい,,sentei,"wybór
 selekcja",,,
+33135,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ユーズド,,yuuzudo,używany,"np. samochód, ang: used",,
+33136,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA_HIRAGANA,,,ガラス張り,ガラスばり,,garasu bari,"szklany bok (np. budynku)
+",,,
+33137,"WORD_NOUN
+WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_F",,HIRAGANA,,,代替,だいたい,,daitai,"zastępowanie
+zamiana
+zmiana
+alternatywa
+zamiennik",,,
+33138,WORD_VERB_U,,HIRAGANA,,,取り次ぐ,とりつぐ,,toritsugu,"pełnić rolę pośrednika
+pośredniczenie
+zapowiedzieć (kogoś przyjście)
+odpowiedzieć (na telefon, na drzwi)
+odebrać (gościa z recepcji)
+wprowadzić (gościa)
+przekazać (wiadomość)",,,
+33139,WORD_NOUN,,HIRAGANA,,,立ち,たち,,tachi,stanie,,,
+33140,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,カサカサ,,kasakasa,"suchy
+suchutki
+suchuteńki
+szelest
+szmer
+szum",,,
+33141,WORD_NOUN,,KATAKANA,,,-,キャスティング,,kyasutingu,"rzucanie
+zarzucanie (np. wędki)
+casting",,,
+33142,WORD_NOUN,,KATAKANA,,,-,キャスティングボート,,kyasutingu booto,"głos rozstrzygający
+głos decydujący",ang: casting vote,,
+33143,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,期日,きじつ,,kijitsu,ustalona data,,,
+33144,WORD_NOUN,,HIRAGANA,,,発動,はつどう,,hatsudou,wprowadzać w życie,,,
+33145,WORD_NOUN,,HIRAGANA,,,発動機,はつどうき,,hatsudouki,silnik,,,
+33146,WORD_NOUN,,HIRAGANA,,,霧雨,きりさめ,,kirisame,"mżawka
+kapuśniaczek
+lekki deszczyk",,,

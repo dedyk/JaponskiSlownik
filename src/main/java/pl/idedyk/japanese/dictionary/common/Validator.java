@@ -234,10 +234,7 @@ public class Validator {
 				}
 			}		
 		}
-		
-		// wyliczanie form gramatycznych i przykladow
-		countGrammaFormAndExamples(polishJapaneseKanjiEntries);		
-				
+						
 		if (jmeNewDictionary != null) {
 			
 			boolean wasError = false;
