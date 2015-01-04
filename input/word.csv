@@ -94738,7 +94738,7 @@ WORD_NOUN",,KATAKANA,,,-,グッド,,guddo,dobry,ang: good,,
 student mieszkający w akademiku",,,
 33260,WORD_EMPTY,SUFFIX,HIRAGANA,,,等々,とうとう,,toutou,"etc
 i tak dalej
-i tak podobnie",,,
+i tak podobnie",,,DUPLICATE 33300
 33261,WORD_NOUN,,HIRAGANA,,,野鳥,やちょう,,yachou,dziki ptak,,,
 33262,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,広域,こういき,,kouiki,"szeroki obszar
@@ -94789,7 +94789,7 @@ pisać wstęp",,,
 33280,WORD_NOUN,,HIRAGANA,,,二兎,にと,,nito,dwa króliki,archaizm,,
 33281,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,上代,じょうだい,,joudai,"starożytne czasy
-nominalna cena detaliczna",,,
+nominalna cena detaliczna",,,DUPLICATE 33305
 33282,WORD_NOUN,,HIRAGANA,,,城代,じょうだい,,joudai,"podkomorzy
 szambelan
 marszałek dworu",,,
@@ -94822,3 +94822,48 @@ wiekopomny",,,
 33292,WORD_NOUN,,KATAKANA,,,-,ボルシチ,,borushichi,barszcz,zupa,,
 33293,WORD_NOUN,,KATAKANA,,,-,クリスマスカロル,,kurisumasu karoru,kolęda bożonarodzeniowa,,,
 33294,WORD_NOUN,,KATAKANA,,,-,クリスマスキャロル,,kurisumasu kyaroru,kolęda bożonarodzeniowa,,,
+33295,"WORD_NOUN
+WORD_EXPRESSION",,HIRAGANA,,,お終い,おしまい,,oshimai,"koniec
+zakończenie
+zamknięcie
+to wszytko",grzecznie,,
+33296,"WORD_NOUN
+WORD_EXPRESSION",,HIRAGANA,,,御仕舞い,おしまい,,oshimai,"koniec
+zakończenie
+zamknięcie
+to wszytko",grzecznie,,
+33297,"WORD_NOUN
+WORD_EXPRESSION",,HIRAGANA,,,御終い,おしまい,,oshimai,"koniec
+zakończenie
+zamknięcie
+to wszytko",grzecznie,,
+33298,"WORD_NOUN
+WORD_EXPRESSION",,HIRAGANA,,,お仕舞,おしまい,,oshimai,"koniec
+zakończenie
+zamknięcie
+to wszytko",grzecznie,,
+33299,"WORD_NOUN
+WORD_EXPRESSION",,HIRAGANA,,,御仕舞,おしまい,,oshimai,"koniec
+zakończenie
+zamknięcie
+to wszytko",grzecznie,,
+33300,WORD_EMPTY,SUFFIX,HIRAGANA,,,等々,などなど,,nadonado,"etc
+i tak dalej
+i tak podobnie",,,DUPLICATE 33260
+33301,WORD_EMPTY,SUFFIX,HIRAGANA,,,等等,とうとう,,toutou,"etc
+i tak dalej
+i tak podobnie",,,DUPLICATE 33302
+33302,WORD_EMPTY,SUFFIX,HIRAGANA,,,等等,などなど,,nadonado,"etc
+i tak dalej
+i tak podobnie",,,DUPLICATE 33301
+33303,WORD_NOUN,,KATAKANA,,,-,パンチ・パーマ,,panchi paama,"krótka, kręcona męska fryzura",popularna wśród członków yakazy lub przestępców,,
+33304,WORD_VERB_U,,HIRAGANA,,,見離す,みはなす,,mihanasu,"opuszczać
+zostawić
+porzucić
+opuścić
+rzucić",,,
+33305,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,上代,うわだい,,uwadai,"starożytne czasy
+nominalna cena detaliczna",,,DUPLICATE 33281
+33306,WORD_NOUN,,KATAKANA,,,-,クリスマス・キャロル,,kurisumasu kyaroru,kolęda bożonarodzeniowa,,,
+33307,WORD_NOUN,,KATAKANA,,,-,クリスマス・カロル,,kurisumasu karoru,kolęda bożonarodzeniowa,,,
