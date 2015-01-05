@@ -18,13 +18,6 @@
 		<version.compiler.plugin>3.1</version.compiler.plugin>
 	</properties>
 	
-	<repositories>
-		<repository>
-		    <id>Atilika Open Source repository</id>
-		    <url>http://www.atilika.org/nexus/content/repositories/atilika</url>
-		</repository>	
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>net.htmlparser.jericho</groupId>
@@ -68,9 +61,23 @@
 		</dependency>
 
 		<dependency>
-		    <groupId>org.atilika.kuromoji</groupId>
-		    <artifactId>kuromoji</artifactId>
-		    <version>0.7.7</version>
+		    <groupId>com.atilika.kuromoji</groupId>
+		    <artifactId>kuromoji-common</artifactId>
+		    <version>0.8-SNAPSHOT</version>
+		    <type>jar</type>
+		</dependency>
+
+		<dependency>
+		    <groupId>com.atilika.kuromoji</groupId>
+		    <artifactId>kuromoji-unidic-extended</artifactId>
+		    <version>0.8-SNAPSHOT</version>
+		    <type>jar</type>
+		</dependency>
+
+		<dependency>
+		    <groupId>com.atilika.kuromoji</groupId>
+		    <artifactId>kuromoji-ipadic</artifactId>
+		    <version>0.8-SNAPSHOT</version>
 		    <type>jar</type>
 		</dependency>
 	</dependencies>

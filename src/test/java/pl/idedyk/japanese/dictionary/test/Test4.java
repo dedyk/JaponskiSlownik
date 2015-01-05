@@ -2,9 +2,10 @@ package pl.idedyk.japanese.dictionary.test;
 
 import java.util.Map;
 
-import org.atilika.kuromoji.Token;
-import org.atilika.kuromoji.Tokenizer;
-import org.atilika.kuromoji.Tokenizer.Mode;
+import com.atilika.kuromoji.AbstractTokenizer;
+import com.atilika.kuromoji.AbstractTokenizer.Mode;
+import com.atilika.kuromoji.Token;
+import com.atilika.kuromoji.unidic.extended.Tokenizer;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
@@ -110,7 +111,7 @@ public class Test4 {
 		
 		//String text = "北海道医療大学駅"; // hokkaidou iryou daigaku eki
 		
-		String text = "北朝鮮人権問題"; 
+		String text = "上越国際スキー場前駅"; 
 		
 		//String text = "小さくて奥ゆかしい日本語ヘルパー";
 		
@@ -118,7 +119,7 @@ public class Test4 {
 		
 		//String text = "北朝鮮難民救援基金";
 		
-		Tokenizer tokenizer = Tokenizer.builder().mode(Mode.SEARCH).build();
+		AbstractTokenizer tokenizer = Tokenizer.builder().mode(Mode.SEARCH).build();
 				
         for (Token token : tokenizer.tokenize(text)) {
         	

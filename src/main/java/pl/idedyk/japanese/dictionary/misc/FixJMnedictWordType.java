@@ -34,7 +34,7 @@ public class FixJMnedictWordType {
 				
 				@Override
 				public boolean accept(File pathname) {
-					return pathname.isFile();
+					return pathname.isFile() && pathname.getName().endsWith(".csv");
 				}
 			});
 			
