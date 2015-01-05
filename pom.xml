@@ -17,6 +17,13 @@
 		<!-- other plugin versions -->
 		<version.compiler.plugin>3.1</version.compiler.plugin>
 	</properties>
+	
+	<repositories>
+		<repository>
+		    <id>Atilika Open Source repository</id>
+		    <url>http://www.atilika.org/nexus/content/repositories/atilika</url>
+		</repository>	
+	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -58,6 +65,13 @@
 			<groupId>pl.idedyk.japanese</groupId>
 			<artifactId>JapaneseDictionaryLuceneCommon</artifactId>
 			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.atilika.kuromoji</groupId>
+		    <artifactId>kuromoji</artifactId>
+		    <version>0.7.7</version>
+		    <type>jar</type>
 		</dependency>
 	</dependencies>
 
