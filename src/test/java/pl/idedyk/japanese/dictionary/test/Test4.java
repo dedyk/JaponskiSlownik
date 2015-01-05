@@ -108,7 +108,9 @@ public class Test4 {
 				
 		Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
 		
-		String text = "北海道医療大学駅"; // hokkaidou iryou daigaku eki
+		//String text = "北海道医療大学駅"; // hokkaidou iryou daigaku eki
+		
+		String text = "北朝鮮人権問題"; 
 		
 		//String text = "小さくて奥ゆかしい日本語ヘルパー";
 		
