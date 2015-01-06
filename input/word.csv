@@ -61777,7 +61777,7 @@ odgałęzienie
 gałąź",,,
 22492,WORD_NOUN,,HIRAGANA,,,吐露,とろ,,toro,"wyrażanie własnych myśli
 mówienie otwarcie
-wypowiadanie się otwarcie",,,
+wypowiadanie się otwarcie",,,DUPLICATE 33381
 22493,WORD_NOUN,,HIRAGANA,,,吸引,きゅういん,,kyuuin,"absorpcja
 wchłanianie
 pochłanianie
@@ -95036,7 +95036,7 @@ przedłożyć",,,
 33371,WORD_NOUN,,KATAKANA,,,-,ロマンス,,romansu,"romans
 historia miłosna
 romantyczna relacja",,,
-33372,WORD_NOUN,,KATAKANA,,,一堂,いちどう,,ichidou,"jeden budynek (świątynia, pokój, sala i etc)
+33372,WORD_NOUN,,HIRAGANA,,,一堂,いちどう,,ichidou,"jeden budynek (świątynia, pokój, sala i etc)
 ten sam pokój
 to samo miejsce
 ten sam budynek",,,
@@ -95062,12 +95062,14 @@ rozerwać
 zerwać",,,
 33381,WORD_NOUN,SUFFIX,HIRAGANA,,,-,とろ,,toro,"tłuste mięso z tuńczyka
 tłusty kawałek mięsa
-tłusty ...",,,
-33382,WORD_NOUN,,HIRAGANA,,,瀞,とろ,,toro,rozlewisko,rzeczne,,
+tłusty ...",,,"DUPLICATE 22492
+DUPLICATE 33382
+DUPLICATE 33383"
+33382,WORD_NOUN,,HIRAGANA,,,瀞,とろ,,toro,rozlewisko,rzeczne,,DUPLICATE 33381
 33383,WORD_NOUN,,HIRAGANA,,,渡露,とろ,,toro,"migracja do Rosji
-wędrówka do Rosji",,,
+wędrówka do Rosji",,,DUPLICATE 33381
 33384,WORD_NOUN,,KATAKANA,,,-,ビッグバン,,biggu ban,wielki wybuch,astronomia,,
-33385,WORD_NOUN,,KATAKANA_HIRAGANA,,,ビッグバン宇宙論,ビッグバンうちゅうろん,,biggu ban chuuron,teoria wielkiego wybuchu,astronomia,,
+33385,WORD_NOUN,,KATAKANA_HIRAGANA,,,ビッグバン宇宙論,ビッグバンうちゅうろん,,biggu ban' uchuuron,teoria wielkiego wybuchu,astronomia,,
 33386,WORD_NOUN,,KATAKANA,,,-,ビッグバンド,,biggu bando,wielki zespół muzyczny,ang: big band,,
 33387,WORD_NOUN,,HIRAGANA,,,貸金,かしきん,,kashikin,pożyczka,,,
 33388,WORD_NOUN,,HIRAGANA,,,飛行士,ひこうし,,hikoushi,pilot,,,
@@ -95085,3 +95087,14 @@ przedłużenie (czasu)",,,
 33394,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,陣中,じんちゅう,,jinchuu,"w obozie
 z przodu",,,
+33395,WORD_NOUN,,KATAKANA,,,-,カップ,,kappu,filiżanka,ang: cup,,
+33396,WORD_NOUN,,KATAKANA,,,-,ハネムーン,,hanemuun,miesiąc miodowy,ang: honeymoon,,
+33397,WORD_VERB_U,,HIRAGANA,,,囀る,さえずる,,saezuru,"ćwierkać
+świergotać",,,
+33398,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,机上,きじょう,,kijou,"na biurku
+teoretyczny
+akademicki",,,
+33399,WORD_NOUN,,KATAKANA,,,面子,メンツ,,mentsu,"twarz
+honor",,,DUPLICATE 33400
+33400,WORD_NOUN,,HIRAGANA,,,面子,めんこ,,menko,menko,japońska gra karciana,,DUPLICATE 33399
