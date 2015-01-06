@@ -9,8 +9,10 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
 import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
@@ -258,9 +260,23 @@ public class TatoebaSentencesParser {
 		
 		List<GroupWithTatoebaSentenceList> result = new ArrayList<GroupWithTatoebaSentenceList>();
 		
+		Set<String> uniqueSentencesPair = new TreeSet<String>();
+		
 		for (String currentGroupId : groupsWithKana) {
 			
 			List<TatoebaSentence> tatoebaSentenceListForGroup = linksMap.get(currentGroupId);
+			
+			StringBuffer tatoebaSentenceKeyToCheck = new StringBuffer();
+			
+			for (TatoebaSentence tatoebaSentence : tatoebaSentenceListForGroup) {				
+				tatoebaSentenceKeyToCheck.append(tatoebaSentence.getId()).append(".");				
+			}
+			
+			if (uniqueSentencesPair.contains(tatoebaSentenceKeyToCheck.toString()) == true) {
+				continue;
+			}
+			
+			uniqueSentencesPair.add(tatoebaSentenceKeyToCheck.toString());
 			
 			GroupWithTatoebaSentenceList groupWithTatoebaSentenceList = new GroupWithTatoebaSentenceList();
 			

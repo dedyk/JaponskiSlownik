@@ -2,7 +2,9 @@ package pl.idedyk.japanese.dictionary.test;
 
 import java.util.List;
 
+import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
@@ -10,6 +12,7 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
+import pl.idedyk.japanese.dictionary.tools.TatoebaSentencesParser;
 
 public class Test {
 
@@ -210,7 +213,7 @@ public class Test {
 		
 		// radicalList.getClass();		
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		//List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 		
 		/*
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
@@ -223,7 +226,7 @@ public class Test {
 		}
 		*/
 		
-		
+		/*
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 		
 		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
@@ -232,24 +235,28 @@ public class Test {
 		
 		KanaHelper kanaHelper = new KanaHelper();
 		
+		
 		// hiragana
 		List<KanaEntry> hiraganaEntries = kanaHelper.getAllHiraganaKanaEntries();
 
 		// katakana
 		List<KanaEntry> katakanaEntries = kanaHelper.getAllKatakanaKanaEntries();
-		
+		*/
 		
 		/*
 		JMEDictReader
 				.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		*/
 		
+		/*
 		List<JMEDictNewNativeEntry> jmedictNameNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
 		JMENewDictionary jmeNewNameDictionary = jmedictNewReader.createJMENewDictionary(jmedictNameNativeList);
 		
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, 
 				jmeNewDictionary, jmeNewNameDictionary);
+		
+		*/
 		
 		//CsvReaderWriter.generateCsv("input/word-new.csv", polishJapaneseEntries, true, true, false);
 		
@@ -292,5 +299,31 @@ public class Test {
 		System.out.println("generateKanjiEntries: readKanjiDic2");
 		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2("../JapaneseDictionary_additional/kanjidic2.xml", kradFileMap);
 		*/
+		
+		TatoebaSentencesParser tatoebaSentencesParser = new TatoebaSentencesParser("../JapaneseDictionary_additional/tatoeba");
+		
+		tatoebaSentencesParser.parse();
+		
+		List<GroupWithTatoebaSentenceList> exampleSentencesList = tatoebaSentencesParser.getExampleSentences(null, "今日は", 10);
+		
+		for (GroupWithTatoebaSentenceList groupWithTatoebaSentenceList : exampleSentencesList) {
+			
+			String groupId = groupWithTatoebaSentenceList.getGroupId();
+			
+			System.out.println("G: " + groupId);
+			
+			List<TatoebaSentence> tatoebaSentenceList = groupWithTatoebaSentenceList.getTatoebaSentenceList();
+			
+			for (TatoebaSentence tatoebaSentence : tatoebaSentenceList) {
+				
+				String id = tatoebaSentence.getId();
+				String sentence = tatoebaSentence.getSentence();
+				
+				System.out.println("\tSG:" + id);
+				System.out.println("\tSG:" + sentence);
+			}
+			
+			System.out.println("---");
+		}
 	}
 }
