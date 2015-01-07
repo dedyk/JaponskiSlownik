@@ -15912,13 +15912,15 @@ intensywny",,,
 5857,WORD_VERB_U,,HIRAGANA,,,償う,つぐなう,,tsugunau,"rekompensować
 odpłacać
 odkupić",,,
-5858,WORD_NOUN,,HIRAGANA,,,甲,かん,,kan,wysoki,głos,,DUPLICATE 5859
+5858,WORD_NOUN,,HIRAGANA,,,甲,かん,,kan,wysoki,głos,,"DUPLICATE 5859
+DUPLICATE 33498"
 5859,WORD_NOUN,,HIRAGANA,,,甲,こう,,kou,"A
 pierwsza klasa
 pierwszy
 zbroja
 skorupa",,,"DUPLICATE 5858
-DUPLICATE 11466"
+DUPLICATE 11466
+DUPLICATE 33498"
 5860,WORD_NOUN,,HIRAGANA,,,甲羅,こうら,,koura,skorupa,żółwia lub kraba,,
 5861,WORD_VERB_U,,HIRAGANA,,,漏る,もる,,moru,"przeciekać
 przesączać się",,,
@@ -80589,7 +80591,7 @@ własny kraj",,,
 granica
 brzeg
 skraj
-koniec",,,
+koniec",,,DUPLICATE 33500
 28803,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,国界,こっきょう,,kokkyou,granica państwa,,,"DUPLICATE 28804
 DUPLICATE 28805"
@@ -95405,16 +95407,18 @@ odpoczywanie",podczas powracania do zdrowia,,
 33492,WORD_NOUN,,KATAKANA,,,-,ブラマンジェ,,buramanje,budyń,,,
 33493,WORD_NOUN,,HIRAGANA,,,抜き手,ぬきて,,nukite,kraul,rodzaj tradycyjnego japońskiego stylu pływackiego,,
 33494,WORD_NOUN,,HIRAGANA,,,貫手,ぬきて,,nukite,dłoń włócznia,np. w karate,,
-33495,WORD_NOUN,,HIRAGANA,,,しゃがれ声,しゃがれごえ,,shagare goe,"zachrypły głos
+33495,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,しゃがれ声,しゃがれごえ,,shagare goe,"zachrypły głos
 ochrypły głos",,,
 33496,WORD_VERB_RU,,HIRAGANA,,,嗄れる,しわがれる,,shiwagareru,"ochrypnąć
 zachrypnąć",,,DUPLICATE 33497
 33497,WORD_VERB_RU,,HIRAGANA,,,嗄れる,かれる,,kareru,"ochrypnąć
 zachrypnąć",,,DUPLICATE 33496
 33498,WORD_NOUN,,HIRAGANA,,,甲,よろい,,yoroi,"zbroja
-pancerz",,,
+pancerz",,,"DUPLICATE 5858
+DUPLICATE 5859"
 33499,WORD_NOUN,,HIRAGANA,,,板金鎧,ばんきんよろい,,bankin' yoroi,zbroja płytkowa,,,
-33500,WORD_NOUN,SUFFIX,HIRAGANA,,,界,かい,,kai,królestwo,,,
+33500,WORD_NOUN,SUFFIX,HIRAGANA,,,界,かい,,kai,królestwo,,,DUPLICATE 28802
 33501,WORD_ADVERB,,HIRAGANA,,,遠慮なく,えんりょなく,,enryonaku,"bez rezerwacji
 bez przeszkód
 otwarcie
@@ -95444,7 +95448,8 @@ prowokujące",,,
 rozpocząć życie na nowo",,,
 33510,WORD_NOUN,,HIRAGANA,,,生変,しょうへん,,shouhen,"odrodzenie
 ponowne narodzenie",,,
-33511,WORD_NOUN,,HIRAGANA,,,瞳,ひとみ,,hitomi,"źrenica (oka)
+33511,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,瞳,ひとみ,,hitomi,"źrenica (oka)
 oko",,,
 33512,WORD_NOUN,,HIRAGANA,,,生まれ変わり,うまれかわり,,umare kawari,"ponowne narodzenie
 reinkarnacja",,,
