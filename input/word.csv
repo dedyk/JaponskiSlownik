@@ -17917,7 +17917,11 @@ możliwość
 swoboda (działania)",,,
 6607,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,他所,よそ,,yoso,"inne miejsce
-tam",,,
+gdzie indziej
+tam
+poza (grupą lub rodziną)
+tamci ludzie
+niepowiązana sprawa",,,
 6608,WORD_NOUN,,HIRAGANA,,,余り物,あまりもの,,amarimono,"resztki
 pozostałości",,,
 6609,WORD_NOUN,,HIRAGANA,,,余罪,よざい,,yozai,inne przestępstwa,,,
@@ -26592,7 +26596,7 @@ element",,,
 skłonność
 kierunek
 dążność",,,
-9858,WORD_NOUN,,HIRAGANA,,,陰核,へのこ,,henoko,łechtaczka,,,
+9858,WORD_NOUN,,HIRAGANA,,,陰核,へのこ,,henoko,jądra,u mężczyzny,,DUPLICATE 33582
 9859,WORD_NOUN,,HIRAGANA,,,雌牛,めうし,,meushi,krowa,,,
 9860,WORD_NOUN,,HIRAGANA,,,農夫,のうふ,,noufu,"chłop
 wieśniak",,,
@@ -29631,7 +29635,8 @@ obecnie",,,
 WORD_ADVERBIAL_NOUN",,HIRAGANA,,,近ごろ,ちかごろ,,chikagoro,"ostatnio
 teraz
 obecnie",,,
-11038,WORD_NOUN,,HIRAGANA,,,仮名,かな,,kana,kana,japoński alfabet sylabiczny,,DUPLICATE 2232
+11038,WORD_NOUN,,HIRAGANA,,,仮名,かな,,kana,kana,japoński alfabet sylabiczny,,"DUPLICATE 2232
+DUPLICATE 33567"
 11039,WORD_NOUN,,KATAKANA,,,-,クリーニング,,kuriiningu,"pranie
 czyszczenie (chemiczne)",,,
 11040,WORD_VERB_U,,HIRAGANA,,,繰り返す,くりかえす,,kurikaesu,"powtarzać
@@ -65361,7 +65366,7 @@ turkusowy (skrót)",,,
 23705,"WORD_ADJECTIVE_NA
 WORD_ADJECTIVE_NO",,HIRAGANA,,,青緑,あおみどり,,aomidori,"niebiesko-zielony
 turkusowy
-wodny",,,
+wodny",,,DUPLICATE 33579
 23706,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,青緑色,せいりょくしょく,,seiryokushoku,"niebiesko-zielony
 turkusowy
@@ -81792,10 +81797,18 @@ możliwość
 swoboda (działania)",,,
 29204,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,余所,よそ,,yoso,"inne miejsce
-tam",,,
+gdzie indziej
+tam
+poza (grupą lub rodziną)
+tamci ludzie
+niepowiązana sprawa",,,
 29205,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,外,よそ,,yoso,"inne miejsce
-tam",,,"DUPLICATE 1355
+gdzie indziej
+tam
+poza (grupą lub rodziną)
+tamci ludzie
+niepowiązana sprawa",,,"DUPLICATE 1355
 DUPLICATE 6462
 DUPLICATE 26889"
 29206,"WORD_NOUN
@@ -95616,21 +95629,16 @@ wycieczkowicz",ang: hiker,,
 ksywa
 alias
 pseudonim
-pseudonim literacki",,,
-33568,WORD_ADJECTIVE_F,,KATAKANA,,,-,コールド,,koorudo,"zimny
+pseudonim literacki",,,DUPLICATE 11038
+33568,"WORD_ADJECTIVE_F
+WORD_NOUN",,KATAKANA,,,-,コールド,,koorudo,"zimny
 zimny krem (skrót)
 zimna fala (skrót)",,,
 33569,"WORD_ADJECTIVE_NA
 WORD_NOUN",,KATAKANA,,,-,エレガント,,ereganto,"elegancki
 wytworny",ang: elegant,,
 33570,WORD_NOUN,,KATAKANA,,,-,マネーサプライ,,manee sapurai,podaż pieniądza,ang: money supply,,
-33571,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,余所,よそ,,yoso,"inne miejsce
-gdzie indziej
-poza (grupą lub rodziną)
-tamci ludzie
-niepowiązana sprawa",,,
-33572,"WORD_ADJECTIVE_NA
+33571,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,寛容,かんよう,,kan'you,"tolerancyjny
 pobłażliwy
 wspaniałomyślny
@@ -95639,29 +95647,29 @@ tolerancja
 pobłażliwość
 wspaniałomyślność
 wielkoduszność",,,
-33573,WORD_NOUN,,HIRAGANA,,,磁場,じば,,jiba,"pole magnetyczne
+33572,WORD_NOUN,,HIRAGANA,,,磁場,じば,,jiba,"pole magnetyczne
 atmosfera
 punkt centralny
 punkt ogniskowy",,,
-33574,WORD_NOUN,,KATAKANA,,,-,アフター,,afutaa,po,ang: after,,
-33575,WORD_NOUN,,KATAKANA,,,-,ペナルティー,,penarutii,kara,ang: penalty,,
-33576,WORD_NOUN,,HIRAGANA,,,封鎖,ふうさ,,fuusa,"blokada
+33573,WORD_NOUN,,KATAKANA,,,-,アフター,,afutaa,po,ang: after,,
+33574,WORD_NOUN,,KATAKANA,,,-,ペナルティー,,penarutii,kara,ang: penalty,,
+33575,WORD_NOUN,,HIRAGANA,,,封鎖,ふうさ,,fuusa,"blokada
 zamrażanie środków
 zamrażanie funduszy",,,
-33577,WORD_NOUN,,HIRAGANA,,,本尊,ほんぞん,,honzon,"główny obiekt czci w świątyni (zwykle Budda)
+33576,WORD_NOUN,,HIRAGANA,,,本尊,ほんぞん,,honzon,"główny obiekt czci w świątyni (zwykle Budda)
 główny obraz",,,
-33578,WORD_NOUN,,HIRAGANA,,,追随,ついずい,,tsuizui,"iść za kimś
+33577,WORD_NOUN,,HIRAGANA,,,追随,ついずい,,tsuizui,"iść za kimś
 podążać za kimś",,,
-33579,WORD_NOUN,,HIRAGANA,,,烏草樹,さしぶ,,sashibu,Vaccinium bracteatum,"roślina, archaizm",,
-33580,WORD_NOUN,,HIRAGANA,,,青緑,あおみどろ,,aomidoro,skrętnica,rodzaj glonów z grupy zielenic,,
-33581,WORD_NOUN,,HIRAGANA,,,貧乏所帯,びんぼうじょたい,,binbou jotai,"biedne gospodarstwo domowe
+33578,WORD_NOUN,,HIRAGANA,,,烏草樹,さしぶ,,sashibu,Vaccinium bracteatum,"roślina, archaizm",,
+33579,WORD_NOUN,,HIRAGANA,,,青緑,あおみどろ,,aomidoro,skrętnica,rodzaj glonów z grupy zielenic,,DUPLICATE 23705
+33580,WORD_NOUN,,HIRAGANA,,,貧乏所帯,びんぼうじょたい,,binbou jotai,"biedne gospodarstwo domowe
 ubogie gospodarstwo domowe",,,
-33582,WORD_EXPRESSION,,HIRAGANA,,,-,だよね,,dayone,"tak jest, prawda?
+33581,WORD_EXPRESSION,,HIRAGANA,,,-,だよね,,dayone,"tak jest, prawda?
 wiem, prawda?
 w istocie?",,,
-33583,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,陰核,いんかく,,inkaku,łechtaczka,,,
-33584,WORD_NOUN,,HIRAGANA,,,突っ込み,つっこみ,,tsukkomi,"penetracja
+33582,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,陰核,いんかく,,inkaku,łechtaczka,,,DUPLICATE 9858
+33583,WORD_NOUN,,HIRAGANA,,,突っ込み,つっこみ,,tsukkomi,"penetracja
 przenikanie
 wnikanie w coś
 seks (idiomatyczne wyrażenie)
@@ -95670,12 +95678,12 @@ postać stanowiąca obiekt żartów komika
 riposta
 dowcip
 żart",,,
-33585,WORD_NOUN,,HIRAGANA,,,訳読,やくどく,,yakudoku,"ustne tłumaczenie
+33584,WORD_NOUN,,HIRAGANA,,,訳読,やくどく,,yakudoku,"ustne tłumaczenie
 czytanie i tłumaczenie",,,
-33586,WORD_NOUN,,HIRAGANA,,,薬毒,やくどく,,yakudoku,trucizna w lekarstwie,,,
-33587,WORD_NOUN,,KATAKANA,,,-,カバレッジ,,kabarejji,"zasięg
+33585,WORD_NOUN,,HIRAGANA,,,薬毒,やくどく,,yakudoku,trucizna w lekarstwie,,,
+33586,WORD_NOUN,,KATAKANA,,,-,カバレッジ,,kabarejji,"zasięg
 pokrycie",ang: coverage,,
-33588,WORD_ADJECTIVE_NO,,HIRAGANA,,,無宗教,むしゅうきょう,,mushuukyou,"świecki
+33587,WORD_ADJECTIVE_NO,,HIRAGANA,,,無宗教,むしゅうきょう,,mushuukyou,"świecki
 laicki
 bez oficjalnej religii",,,
-33589,WORD_NOUN,,HIRAGANA,,,伊集,いじゅ,,iju,Schima wallichii,roślina,,
+33588,WORD_NOUN,,HIRAGANA,,,伊集,いじゅ,,iju,Schima wallichii,roślina,,
