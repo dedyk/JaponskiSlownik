@@ -24868,8 +24868,12 @@ potęgować",,,
 narastać
 powiększać się
 nadmuchiwać",,,
-9165,WORD_VERB_RU,,HIRAGANA,,,-,ぶつける,,butsukeru,"uderzać
-trafiać",,,
+9165,WORD_VERB_RU,,HIRAGANA,,,打付ける,ぶつける,,butsukeru,"walić (np. w własną głowę)
+uderzać
+zderzyć się
+rzucać (np. piłkę, pytanie, prośbę)
+wyrażać
+ujść (np. własnym emocjom)",,,DUPLICATE 33704
 9166,WORD_VERB_RU,,HIRAGANA,,,解ける,ほどける,,hodokeru,"rozpadać się
 rozwiązać się",,,DUPLICATE 5121
 9167,WORD_VERB_U,,HIRAGANA,,,亡ぼす,ほろぼす,,horobosu,"niszczyć
@@ -96027,18 +96031,30 @@ wbijać
 pukać
 uderzać (np. w ręce)
 walić (np. w własną głowę)
-rzucać (np. kamień)",,,DUPLICATE 33705
-33705,WORD_VERB_RU,,HIRAGANA,,,打付ける,ぶつける,,butsukeru,"walić (np. w własną głowę)
-uderzać
-zderzyć się
-rzucać (np. piłkę, pytanie, prośbę)
-wyrażać
-ujść (np. własnym emocjom)",,,DUPLICATE 33704
-33706,WORD_NOUN,,HIRAGANA,,,相性,あいしょう,,aishou,"pokrewieństwo
+rzucać (np. kamień)",,,DUPLICATE 9165
+33705,WORD_NOUN,,HIRAGANA,,,相性,あいしょう,,aishou,"pokrewieństwo
 podobieństwo
 zgodność",,,
-33707,"WORD_NOUN
+33706,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,軟式,なんしき,,nanshiki,granie z miękką piłką (ang: soft ball) w tenisa,,,
-33708,WORD_NOUN,,HIRAGANA,,,軟式テニス,なんしきテニス,,nanshiki tenisu,granie z miękką piłką (ang: soft ball) w tenisa,,,
-33709,WORD_NOUN,,HIRAGANA,,,軟式野球,なんしきやきゅう,,nanshiki yakyuu,softball,,,
-33710,WORD_NOUN,,HIRAGANA,,,軟式庭球,なんしきていきゅう,,nanshiki teikyuu,softball tennis,,,
+33707,WORD_NOUN,,HIRAGANA_KATAKANA,,,軟式テニス,なんしきテニス,,nanshiki tenisu,granie z miękką piłką (ang: soft ball) w tenisa,,,
+33708,WORD_NOUN,,HIRAGANA,,,軟式野球,なんしきやきゅう,,nanshiki yakyuu,softball,,,
+33709,WORD_NOUN,,HIRAGANA,,,軟式庭球,なんしきていきゅう,,nanshiki teikyuu,softball tennis,,,
+33710,WORD_NOUN,,HIRAGANA,,,相性問題,あいせいもんだい,,aisei mondai,"kwestia kompatybilności
+problem kompatybilności",informatyka,,
+33711,WORD_NOUN,,HIRAGANA,,,相性占い,あいしょううらない,,aishou uranai,"horoskop zgodności (np. w miłości)
+odczytanie zgodności",,,
+33712,WORD_NOUN,,HIRAGANA,,,中腹,ちゅうふく,,chuufuku,"górska strona
+w połowie drogi na górę",,,
+33713,WORD_NOUN,,HIRAGANA,,,喪主,もしゅ,,moshu,"główny żałobnik
+gospodarz uroczystości żałobnych",,,
+33714,WORD_NOUN,,HIRAGANA,,,来襲,らいしゅう,,raishuu,"atak
+najazd
+inwazja",,,
+33715,WORD_NOUN,,HIRAGANA,,,渇水,かっすい,,kassui,"niedobór wody
+deficyt wody",,,
+33716,WORD_NOUN,,HIRAGANA,,,渇水期,かっすいき,,kassuiki,pora sucha,,,
+33717,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,苦言,くげん,,kugen,"szczera rada
+napomnienie
+upomnienie",,,
