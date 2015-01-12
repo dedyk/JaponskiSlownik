@@ -66313,7 +66313,7 @@ rodzaj chrząszcza",,,
 24040,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,三種,さんしゅ,,sanshu,"trzy rodzaje
 trzy odmiany",,,
-24041,WORD_NOUN,,HIRAGANA,,,仏語,ふつご,,futsugo,język francuski,,,
+24041,WORD_NOUN,,HIRAGANA,,,仏語,ふつご,,futsugo,język francuski,,,DUPLICATE 33841
 24042,WORD_NOUN,,HIRAGANA,,,作況指数,さっきょうしすう,,sakkyou shisuu,wskaźnik uprawy ryżu,,,
 24043,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,冷や,ひや,,hiya,"zimna woda (skrót)
@@ -96342,7 +96342,7 @@ osoba, której można zaufać",,,
 WORD_ADJECTIVE_NO",,HIRAGANA,,,余暇,よか,,yoka,czas wolny,,,
 33802,WORD_NOUN,,HIRAGANA,,,作詞,さくし,,sakushi,"pisanie piosenki
 komponowanie piosenki",,,
-33803,WORD_NOUN,,HIRAGANA,,,作詞家,さくしか ,,sakushika,"autor słów
+33803,WORD_NOUN,,HIRAGANA,,,作詞家,さくしか,,sakushika,"autor słów
 tekściarz
 kompozytor piosenek
 autor piosenek",,,
@@ -96376,7 +96376,8 @@ pozostała osoba",,,
 33817,WORD_NOUN,,HIRAGANA,,,出港,しゅっこう,,shukkou,"wymarsz statku
 wyruszenie statku
 odpłynięcie statku",,,
-33818,WORD_NOUN,,HIRAGANA,,,他者間,たしゃかん,,tashakan,"wielostronne
+33818,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,他者間,たしゃかん,,tashakan,"wielostronne
 wielopartyjne",,,
 33819,WORD_NOUN,,HIRAGANA,,,法師,ほうし,,houshi,"buddyjski mnich
 bonza",,,
@@ -96407,7 +96408,8 @@ nakładanie się na siebie",ang:overlap,,
 po co
 w jakim celu
 jak",,,
-33833,WORD_NOUN,,HIRAGANA,,,原発,げんぱつ,,genpatsu,"elektrownia nuklearna
+33833,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,原発,げんぱつ,,genpatsu,"elektrownia nuklearna
 elektrownia atomowa
 elektrownia jądrowa
 produkowanie energii nuklearnej
@@ -96423,14 +96425,14 @@ kolibrowate",rodzina ptaków,,
 33839,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオアリクイ,,ooarikui,mrówkojad wielki,,,
 33840,WORD_NOUN,,HIRAGANA,,,蟻食い,ありくい,,arikui,mrówkojad,,,
 33841,WORD_NOUN,,HIRAGANA,,,仏語,ぶつご,,butsugo,"słowa Buddy
-nauczanie Buddy",,,
+nauczanie Buddy",,,DUPLICATE 24041
 33842,WORD_NOUN,,HIRAGANA,,,持子,もつご,,motsugo,"czebaczek amurski
 kiełb amurski",gatunek słodkowodnej ryby z rodziny karpiowatych,,
 33843,WORD_NOUN,,KATAKANA,,,-,ストレッチャー,,sutorecchaa,nosze,"sanitarne, ang: stretcher",,
 33844,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,和声,わせい,,wasei,"harmonia
 zgodność
-konsonans",,,
+konsonans",,,DUPLICATE 33881
 33845,WORD_EXPRESSION,,HIRAGANA,,,和西,わせい,,wasei,japońsko-hiszpański,,,
 33846,WORD_NOUN,,HIRAGANA,,,膳部,ぜんぶ,,zenbu,"jedzenie (na stole) (szczególnie na małym japońskim stole)
 obiad
@@ -96440,39 +96442,81 @@ WORD_ADVERB_TO",,HIRAGANA,,,平然,へいぜん,,heizen,"spokojny
 opanowany
 cichy",,,
 33848,WORD_NOUN,,KATAKANA,,,-,バハムート,,bahamuuto,bahamut,mitologiczny stwór pochodzący z Arabii,,
-33849,WORD_NOUN,,HIRAGANA,,,代父母,だいふぼ,,daifubo,rodzice chrzestni,,,
-33850,"WORD_NOUN
+33849,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,教父,きょうふ,,kyoufu,"ojciec chrzestny
 chrzestny",,,
-33851,WORD_NOUN,,HIRAGANA,,,教母,きょうぼ,,kyoubo,"matka chrzestna
+33850,WORD_NOUN,,HIRAGANA,,,教母,きょうぼ,,kyoubo,"matka chrzestna
 chrzestna",,,
-33852,WORD_VERB_U,,HIRAGANA,,,-,である,,de aru,być,formalnie lub literacko,,
-33853,WORD_ADVERB,,HIRAGANA,,,一度も,いちども,,ichidomo,nigdy,w zdaniu z czasownikiem w formie przeczącej,,
-33854,WORD_NOUN,,HIRAGANA,,,雌犬,めいぬ,,me inu,"suka (samica psa)
+33851,WORD_VERB_U,,HIRAGANA,,,-,である,,de aru,być,formalnie lub literacko,,
+33852,WORD_ADVERB,,HIRAGANA,,,一度も,いちども,,ichidomo,nigdy,w zdaniu z czasownikiem w formie przeczącej,,
+33853,WORD_NOUN,,HIRAGANA,,,雌犬,めいぬ,,me inu,"suka (samica psa)
 dziwka
-suka",,,
-33855,WORD_VERB_AUX,,HIRAGANA,,,-,られる,,rareru,"[końcówka od strony biernej lub potencjalnej]
-[używana do grzecznościowych działań innych] ",,,
-33856,WORD_NOUN,,HIRAGANA,,,死罪,しざい,,shizai,przestępstwo zagrożone karą śmierci,,,
-33857,WORD_NOUN,,HIRAGANA,,,私財,しざい,,shizai,"prywatne fundusze
+suka",,,DUPLICATE 33882
+33854,"WORD_VERB_RU
+WORD_VERB_AUX",,HIRAGANA,,,-,られる,,rareru,"[końcówka od strony biernej lub potencjalnej]
+[używana do grzecznościowych działań innych]",,,
+33855,WORD_NOUN,,HIRAGANA,,,死罪,しざい,,shizai,przestępstwo zagrożone karą śmierci,,,
+33856,WORD_NOUN,,HIRAGANA,,,私財,しざい,,shizai,"prywatne fundusze
 własne fundusze
 prywatna własność",,,
-33858,WORD_NOUN,,HIRAGANA,,,資材,しざい,,shizai,"materiał
+33857,WORD_NOUN,,HIRAGANA,,,資材,しざい,,shizai,"materiał
 surowiec",,,
-33859,WORD_NOUN,,HIRAGANA,,,資財,しざい,,shizai,"mienie
+33858,WORD_NOUN,,HIRAGANA,,,資財,しざい,,shizai,"mienie
 majątek",,,
-33860,"WORD_NOUN
+33859,"WORD_NOUN
 WORD_ADJECTIVE_NO",,KATAKANA,,,-,アレルギー,,arerugii,"alergia
 uczulenie",ang: allergy,,
-33861,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,コンピューターアレルギー,,konpyuutaa arerugii,"alergia na komputer
+33860,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,コンピューターアレルギー,,konpyuutaa arerugii,"alergia na komputer
 alergia komputerowa",ang: computer allergy,,
-33862,WORD_NOUN,,HIRAGANA_KATAKANA,,,食物アレルギー,しょくもつアレルギー,,shokumotsu arerugii,"alergia na jedzenie
+33861,WORD_NOUN,,HIRAGANA_KATAKANA,,,食物アレルギー,しょくもつアレルギー,,shokumotsu arerugii,"alergia na jedzenie
 alergia pokarmowa",,,
-33863,WORD_NOUN,,KATAKANA,,,-,ピーナッツアレルギー,,piinattsu arerugii,alergia na orzechy ziemne,ang: peanut allergy,,
-33864,WORD_NOUN,,KATAKANA,,,-,ナッツアレルギー,,nattsu arerugii,alergia na orzechy,ang: nut allergy,,
-33865,WORD_NOUN,,KATAKANA,,,-,アレルギーテスト,,arerugii tesuto,testy alergiczne,ang: allergy testing,,
-33866,WORD_NOUN,,HIRAGANA,,,暴発,ぼうはつ,,bouhatsu,"samoczynny wystrzał z broni
+33862,WORD_NOUN,,KATAKANA,,,-,ピーナッツアレルギー,,piinattsu arerugii,alergia na orzechy ziemne,ang: peanut allergy,,
+33863,WORD_NOUN,,KATAKANA,,,-,ナッツアレルギー,,nattsu arerugii,alergia na orzechy,ang: nut allergy,,
+33864,WORD_NOUN,,KATAKANA,,,-,アレルギーテスト,,arerugii tesuto,testy alergiczne,ang: allergy testing,,
+33865,WORD_NOUN,,HIRAGANA,,,暴発,ぼうはつ,,bouhatsu,"samoczynny wystrzał z broni
 samoistny wystrzał z broni
 przypadkowy wystrzał z broni",,,
-33867,WORD_NOUN,,HIRAGANA,,,次号,じごう,,jigou,"następna kwestia
+33866,WORD_NOUN,,HIRAGANA,,,次号,じごう,,jigou,"następna kwestia
 następny przypadek",,,
+33867,WORD_NOUN,,KATAKANA,,,-,カーネージョン,,kaaneejon,goździk,,,
+33868,WORD_NOUN,,KATAKANA_HIRAGANA,,,ヴェルサイユ条約,ヴェルサイユじょうやく,,verusaiyu jouyaku,Traktat wersalski,,,
+33869,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,多者間,たしゃかん,,tashakan,"wielostronne
+wielopartyjne",,,
+33870,WORD_NOUN,,KATAKANA,,,-,オン・パレード,,on pareedo,"na paradzie
+kolejne obiekty
+szereg obiektów",,,
+33871,WORD_NOUN,,KATAKANA,,,-,プリティー,,puritii,"ładny
+przyjemny do oglądania",ang: pretty,,
+33872,WORD_NOUN,,KATAKANA,,,-,オーバーラップウィンドウ,,oobaarappu windou,nachodzące na siebie okno,ang: overlap window,,
+33873,WORD_NOUN,,KATAKANA,,,-,ハチドリ,,hachidori,"koliber
+kolibrowate",rodzina ptaków,,
+33874,WORD_NOUN,,HIRAGANA,,,大蟻食,おおありくい,,ooarikui,mrówkojad wielki,,,
+33875,WORD_NOUN,,HIRAGANA,,,大蟻食い,おおありくい,,ooarikui,mrówkojad wielki,,,
+33876,WORD_NOUN,,HIRAGANA,,,蟻食,ありくい,,arikui,mrówkojad,,,
+33877,WORD_NOUN,,HIRAGANA,,,蟻喰,ありくい,,arikui,mrówkojad,,,
+33878,WORD_NOUN,,HIRAGANA,,,食蟻獣,ありくい,,arikui,mrówkojad,,,
+33879,WORD_NOUN,,KATAKANA,,,-,アリクイ,,arikui,mrówkojad,,,
+33880,WORD_NOUN,,KATAKANA,,,-,モツゴ,,motsugo,"czebaczek amurski
+kiełb amurski",gatunek słodkowodnej ryby z rodziny karpiowatych,,
+33881,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,和声,かせい,,kasei,"harmonia
+zgodność
+konsonans",,,DUPLICATE 33844
+33882,WORD_NOUN,,HIRAGANA,,,雌犬,めすいぬ,,mesuinu,"suka (samica psa)
+dziwka
+suka",,,DUPLICATE 33853
+33883,WORD_NOUN,,HIRAGANA,,,牝犬,めすいぬ,,mesuinu,"suka (samica psa)
+dziwka
+suka",,,DUPLICATE 33884
+33884,WORD_NOUN,,HIRAGANA,,,牝犬,めいぬ,,meinu,"suka (samica psa)
+dziwka
+suka",,,DUPLICATE 33883
+33885,"WORD_VERB_RU
+WORD_VERB_AUX",,HIRAGANA,,,-,れる,,reru,"[końcówka od strony biernej lub potencjalnej]
+[używana do grzecznościowych działań innych]",,,
+33886,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,コンピューター・アレルギー,,konpyuutaa arerugii,"alergia na komputer
+alergia komputerowa",ang: computer allergy,,
+33887,WORD_NOUN,,KATAKANA,,,-,ピーナツアレルギー,,piinatsuarerugii,alergia na orzechy ziemne,ang: peanut allergy,,
+33888,WORD_NOUN,,KATAKANA,,,-,ナッツ・アレルギー,,nattsu arerugii,alergia na orzechy,ang: nut allergy,,
+33889,WORD_NOUN,,KATAKANA,,,-,アレルギー・テスト,,arerugii tesuto,testy alergiczne,ang: allergy testing,,
