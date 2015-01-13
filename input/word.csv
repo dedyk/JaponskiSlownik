@@ -96613,12 +96613,12 @@ wkroczenie",w połączeniu z suru i itasu wyrażenie grzecznościowe używane po
 słowna wiadomość
 ustna wiadomość",,,
 33929,WORD_NOUN,,KATAKANA,,,-,エラー,,eraa,błąd,ang: error,,
-33930,WORD_NOUN,,HIRAGANA_KATAKANA,,,受信エラー,じゅしんエラー,,jushin eraa,otrzymanie błędu,,,
-33931,WORD_NOUN,,KATAKANA,,,-,バッファアンダーランエラー,,bafa andaa ran eraa,błąd typu buffer underrun,sytuacja w której dane są transmitowane do danego urządzenia w zbyt wolnym i niewystarczającym tempie,,
+33930,WORD_NOUN,,HIRAGANA_KATAKANA,,,受信エラー,じゅしんエラー,,jushin' eraa,otrzymanie błędu,,,
+33931,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,バッファアンダーランエラー,,baffa andaa ran eraa,błąd typu buffer underrun,sytuacja w której dane są transmitowane do danego urządzenia w zbyt wolnym i niewystarczającym tempie,,
 33932,WORD_NOUN,,HIRAGANA_KATAKANA,,,構文エラー,こうぶんエラー,,koubun' eraa,"błąd składniowy
 błąd syntaktyczny",,,
-33933,WORD_NOUN,,HIRAGANA,,,標準エラー,ひょうじゅんエラー,,hyoujun' eraa,standardowy błąd,,,
-33934,WORD_NOUN,,HIRAGANA,,,-,ヒューマンエラー,,hyuuman eraa,ludzki błąd,,,
+33933,WORD_NOUN,,HIRAGANA_KATAKANA,,,標準エラー,ひょうじゅんエラー,,hyoujun' eraa,standardowy błąd,,,
+33934,WORD_NOUN,,KATAKANA,,,-,ヒューマンエラー,,hyuuman' eraa,ludzki błąd,,,
 33935,WORD_NOUN,,HIRAGANA,,,介殻,かいかく,,kaikaku,"muszla
 muszelka",,,
 33936,WORD_NOUN,,HIRAGANA,,,海角,かいかく,,kaikaku,"przylądek
@@ -96631,7 +96631,7 @@ uprzedzenie
 poprzedni zapisek
 poprzedni przypis
 wstępne zawiadomienie",,,
-33939,WORD_NOUN,,HIRAGANA,,,与国,よこく,,yokosu,"sprzymierzeniec
+33939,WORD_NOUN,,HIRAGANA,,,与国,よこく,,yokoku,"sprzymierzeniec
 sojusznik",,,
 33940,WORD_NOUN,,HIRAGANA,,,恐懼,きょうく,,kyouku,"bycie przestraszony
 bycie przerażony",,,
@@ -96645,8 +96645,8 @@ bycie przestraszony",archaizm,,
 WORD_NOUN",,HIRAGANA,,,気弱,きよわ,,kiyowa,"bojaźliwy
 lękliwy
 nieśmiały",,,
-33946,WORD_NOUN,,HIRAGANA,,,喞筒,そくとう,,sokutou,pompa,,,
-33947,WORD_NOUN,,HIRAGANA,,,喞筒,しょくとう,,shokutou,pompa,,,
+33946,WORD_NOUN,,HIRAGANA,,,喞筒,そくとう,,sokutou,pompa,,,DUPLICATE 33947
+33947,WORD_NOUN,,HIRAGANA,,,喞筒,しょくとう,,shokutou,pompa,,,DUPLICATE 33946
 33948,WORD_NOUN,,KATAKANA,,,-,ポンプ,,ponpu,pompa,,,
 33949,WORD_NOUN,,HIRAGANA,,,添い寝,そいね,,soine,"spanie razem
 wspólne spanie",,,
