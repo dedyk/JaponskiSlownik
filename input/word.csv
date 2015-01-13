@@ -96575,7 +96575,7 @@ pokazanie",,,
 33909,WORD_NOUN,,HIRAGANA,,,学歴,がくれき,,gakureki,"przygotowanie akademickie
 pochodzenie akademickie",,,
 33910,WORD_NOUN,,HIRAGANA,,,火傷,やけど,,yakedo,"oparzenie
-poparzenie",,,
+poparzenie",,,DUPLICATE 33979
 33911,WORD_NOUN,,HIRAGANA,,,身投げ,みなげ,,minage,rzucanie (siebie),aby np. popełnić samobójstwo,,
 33912,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,身辺,しんぺん,,shinpen,"własna osoba
@@ -96593,7 +96593,9 @@ niedostatek pomocy
 bezzałogowy
 pozbawiony załogi
 niezamieszkały
-bezludny",,,
+bezludny",,,"DUPLICATE 33980
+DUPLICATE 33981
+DUPLICATE 33982"
 33918,WORD_NOUN,,HIRAGANA,,,黒鉛,こくえん,,kokuen,grafit,,,
 33919,WORD_NOUN,,HIRAGANA,,,円領,えんりょう,,enryou,rodzaj tradycyjnego japońskiego kołnierza,,,
 33920,WORD_EXPRESSION,,HIRAGANA,,,お邪魔します,おじゃまします,,ojamashimasu,"przepraszam bardzo, że przeszkadzam (przerywam)",zwrot grzecznościowy używany podczas wchodzenia do czyjegoś domu,,
@@ -96688,7 +96690,7 @@ redukowanie
 ograniczanie",,,
 33960,WORD_NOUN,,HIRAGANA,,,遡源,さくげん,,sakugen,"powracanie do źródeł
 powracanie do początku
-powtarzanie",,,
+powtarzanie",,,DUPLICATE 33992
 33961,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,削除,さくじょ,,sakujo,"eliminowanie
 anulowanie
@@ -96724,4 +96726,69 @@ cesarska brama pałacowa",,,
 zatwierdzenie",,,
 33973,WORD_NOUN,,HIRAGANA,,,刑事犯,けいじはん,,keijihan,przestępstwo karne,,,
 33974,WORD_NOUN,,HIRAGANA,,,戸締まり,とじまり,,tojimari,"zamykanie
+zamykanie drzwi",,,
+33975,WORD_ADVERB,SUFFIX,HIRAGANA,,,適に,たまに,,tama ni,"od czasu do czasu
+okazjonalnie
+raz na jakiś czas",,,
+33976,WORD_NOUN,,KATAKANA,,,-,デモテープ,,demo teepu,taśma demo,,,
+33977,WORD_NOUN,,KATAKANA,,,-,フランスデモ,,furansu demo,ogromna uliczna demonstracja,,,
+33978,WORD_NOUN,,KATAKANA,,,-,グランド・ピアノ,,gurando piano,fortepian,ang: grand piano,,
+33979,WORD_NOUN,,HIRAGANA,,,火傷,かしょう,,kashou,"oparzenie
+poparzenie",,,DUPLICATE 33910
+33980,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,無人,ぶにん,,bunin,"brak pomocy
+niedostatek pomocy
+bezzałogowy
+pozbawiony załogi
+niezamieszkały
+bezludny",,,"DUPLICATE 33917
+DUPLICATE 33981
+DUPLICATE 33982"
+33981,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,無人,ぶじん,,bujin,"brak pomocy
+niedostatek pomocy
+bezzałogowy
+pozbawiony załogi
+niezamieszkały
+bezludny",,,"DUPLICATE 33917
+DUPLICATE 33980
+DUPLICATE 33982"
+33982,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,無人,むにん,,munin,"brak pomocy
+niedostatek pomocy
+bezzałogowy
+pozbawiony załogi
+niezamieszkały
+bezludny",,,"DUPLICATE 33917
+DUPLICATE 33980
+DUPLICATE 33981"
+33983,WORD_EXPRESSION,,HIRAGANA,,,御邪魔します,おじゃまします,,ojamashimasu,"przepraszam bardzo, że przeszkadzam (przerywam)",zwrot grzecznościowy używany podczas wchodzenia do czyjegoś domu,,
+33984,WORD_NOUN,,HIRAGANA,,,側聞,そくぶん,,sokubun,"słuchać beztrosko
+pobieżne słuchanie",,,
+33985,WORD_NOUN,,HIRAGANA,,,御邪魔,おじゃま,,ojama,"przeszkoda
+utrudnienie
+wkroczenie",w połączeniu z suru i itasu wyrażenie grzecznościowe używane podczas wchodzenia do czyjegoś domu,,
+33986,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,バッファ・アンダー・ラン・エラー,,baffa andaa ran'e raa,błąd typu buffer underrun,sytuacja w której dane są transmitowane do danego urządzenia w zbyt wolnym i niewystarczającym tempie,,
+33987,WORD_NOUN,,KATAKANA,,,-,ヒューマン・エラー,,hyuuman' eraa,ludzki błąd,,,
+33988,WORD_NOUN,,HIRAGANA,,,教唆煽動,きょうさせんどう,,kyousasendou,nakłanianie i podżeganie,,,
+33989,WORD_NOUN,,HIRAGANA,,,添寝,そいね,,soine,"spanie razem
+wspólne spanie",,,
+33990,WORD_NOUN,,KATAKANA,,,-,ハマチ,,hamachi,hamachi,gatunek ryby,,
+33991,WORD_ADJECTIVE_I,,HIRAGANA,,,変哲もない,へんてつもない,,hentetsumonai,"zwykły
+zwyczajny
+nieszczególny
+przeciętny
+monotonny",,,
+33992,WORD_NOUN,,HIRAGANA,,,遡源,そげん,,sogen,"powracanie do źródeł
+powracanie do początku
+powtarzanie",,,DUPLICATE 33960
+33993,WORD_NOUN,,HIRAGANA,,,溯源,さくげん,,sakugen,"powracanie do źródeł
+powracanie do początku
+powtarzanie",,,DUPLICATE 33994
+33994,WORD_NOUN,,HIRAGANA,,,溯源,そげん,,sogen,"powracanie do źródeł
+powracanie do początku
+powtarzanie",,,DUPLICATE 33993
+33995,WORD_NOUN,,HIRAGANA,,,帝闕,ていけつ,,teiketsu,"cesarski pałac
+cesarska brama pałacowa",,,
+33996,WORD_NOUN,,HIRAGANA,,,戸締り,とじまり,,tojimari,"zamykanie
 zamykanie drzwi",,,
