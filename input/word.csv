@@ -29472,8 +29472,9 @@ kiełki bambusowe",,,
 10969,WORD_VERB_U,,HIRAGANA,,,卵を産む,たまごをうむ,,tamago o umu,"złożyć jajko
 znieść jajko",,,
 10970,WORD_VERB_U,,HIRAGANA,,,卵がかえる,たまごがかえる,,tamago ga kaeru,pisklęta wylęgają się z jajek,,,
-10971,WORD_ADVERB,,HIRAGANA,,,-,たまに,,tama ni,"rzadko
-od czasu do czasu",,,
+10971,WORD_ADVERB,SUFFIX,HIRAGANA,,,偶に,たまに,,tama ni,"od czasu do czasu
+okazjonalnie
+raz na jakiś czas",,,
 10972,WORD_ADVERB,,HIRAGANA,,,序でに,ついでに,,tsuide ni,"przy okazji
 po drodze
 kiedy
@@ -96529,7 +96530,8 @@ demonstracja",skrót,,
 33893,WORD_NOUN,,HIRAGANA,,,公言,こうげん,,kougen,"oświadczenie
 deklaracja",,,
 33894,"WORD_ADJECTIVE_NA
-WORD_NOUN",,HIRAGANA,,,未熟,みじゅく,,mijuku,"brak doświadczenia
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,未熟,みじゅく,,mijuku,"brak doświadczenia
 niedojrzały
 niedoświadczony",,,
 33895,WORD_NOUN,,HIRAGANA,,,誤認,ごにん,,gonin,"złe rozpoznanie
@@ -96545,9 +96547,8 @@ przesadny",,,
 nadmierna rywalizacja",,,
 33899,"WORD_NOUN
 WORD_ADJECTIVE_NO",,KATAKANA_HIRAGANA,,,カリブ海,カリブかい,,karibu kai,Morze Karaibskie,,,
-33900,WORD_ADVERB,SUFFIX,HIRAGANA,,,偶に,たまに,,tama ni,"okazjonalnie
-od czasu do czasu
-raz na jakiś czas",,,
+33900,WORD_NOUN,,HIRAGANA,,,侍女,じじょ,,jijo,"służąca
+pomocnica",,,
 33901,"WORD_ADJECTIVE_NA
 WORD_ADJECTIVE_NO",,HIRAGANA,,,必死,ひっし,,hisshi,"szalony
 oszalały
@@ -96647,7 +96648,13 @@ lękliwy
 nieśmiały",,,
 33946,WORD_NOUN,,HIRAGANA,,,喞筒,そくとう,,sokutou,pompa,,,DUPLICATE 33947
 33947,WORD_NOUN,,HIRAGANA,,,喞筒,しょくとう,,shokutou,pompa,,,DUPLICATE 33946
-33948,WORD_NOUN,,KATAKANA,,,-,ポンプ,,ponpu,pompa,,,
+33948,WORD_ADJECTIVE_I,,HIRAGANA,,,諄い,くどい,,kudoi,"rozwlekły
+przegadany
+gadatliwy
+pełen powtórzeń
+dokuczliwy
+natarczywy
+natrętny",,,
 33949,WORD_NOUN,,HIRAGANA,,,添い寝,そいね,,soine,"spanie razem
 wspólne spanie",,,
 33950,"WORD_NOUN
