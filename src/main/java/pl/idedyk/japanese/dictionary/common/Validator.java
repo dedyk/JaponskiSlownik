@@ -1,7 +1,6 @@
 package pl.idedyk.japanese.dictionary.common;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -605,9 +604,45 @@ public class Validator {
 	*/
 
 	public static void detectDuplicatePolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries) {
-
+		
 		StringBuffer report = new StringBuffer();
-
+		
+		// cache'owanie
+		Map<String, List<PolishJapaneseEntry>> theSameKanjiPolishJapaneseListMap = new TreeMap<String, List<PolishJapaneseEntry>>();
+		Map<String, List<PolishJapaneseEntry>> theSameKanaPolishJapaneseListMap = new TreeMap<String, List<PolishJapaneseEntry>>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			String kanji = polishJapaneseEntry.getKanji();
+			
+			boolean kanjiExists = polishJapaneseEntry.isKanjiExists();		
+			
+			if (kanjiExists == true) {
+				
+				List<PolishJapaneseEntry> theSameKanjiPolishJapaneseList = theSameKanjiPolishJapaneseListMap.get(kanji);
+				
+				if (theSameKanjiPolishJapaneseList == null) {					
+					theSameKanjiPolishJapaneseList = new ArrayList<PolishJapaneseEntry>();
+					
+					theSameKanjiPolishJapaneseListMap.put(kanji, theSameKanjiPolishJapaneseList);					
+				}
+				
+				theSameKanjiPolishJapaneseList.add(polishJapaneseEntry);				
+			}	
+			
+			String kana = polishJapaneseEntry.getKana();
+			
+			List<PolishJapaneseEntry> theSameKanaPolishJapaneseList = theSameKanaPolishJapaneseListMap.get(kana);
+			
+			if (theSameKanaPolishJapaneseList == null) {					
+				theSameKanaPolishJapaneseList = new ArrayList<PolishJapaneseEntry>();
+				
+				theSameKanaPolishJapaneseListMap.put(kana, theSameKanaPolishJapaneseList);					
+			}
+			
+			theSameKanaPolishJapaneseList.add(polishJapaneseEntry);
+		}
+		
 		// kanji
 		TreeMap<String, TreeSet<PolishJapaneseEntry>> duplicatedKanji = new TreeMap<String, TreeSet<PolishJapaneseEntry>>();
 
@@ -616,16 +651,15 @@ public class Validator {
 			int id = polishJapaneseEntry.getId();
 			String kanji = polishJapaneseEntry.getKanji();
 			
-			if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
+			if (polishJapaneseEntry.isKanjiExists() == false) {
 				continue;
 			}
 
-			List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanji(
-					polishJapaneseKanjiEntries, id, true, kanji);
+			List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanji(theSameKanjiPolishJapaneseListMap, id, true, kanji);
 
 			if (findPolishJapaneseKanjiEntry.size() > 0) {
 
-				findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanji(polishJapaneseKanjiEntries, id,
+				findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanji(theSameKanjiPolishJapaneseListMap, id,
 						false, kanji);
 
 				TreeSet<PolishJapaneseEntry> polishJapaneseEntryKanjiTreeSet = duplicatedKanji.get(kanji);
@@ -674,12 +708,12 @@ public class Validator {
 			String kana = polishJapaneseEntry.getKana();
 
 			List<PolishJapaneseEntry> findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanjiAndKana(
-					polishJapaneseKanjiEntries, id, true, kanji, kana);
+					theSameKanaPolishJapaneseListMap, id, true, kanji, kana);
 
 			if (findPolishJapaneseKanjiEntry.size() > 0) {
 
 				findPolishJapaneseKanjiEntry = findPolishJapaneseKanjiEntryInKanjiAndKana(
-						polishJapaneseKanjiEntries, id, false, kanji, kana);
+						theSameKanaPolishJapaneseListMap, id, false, kanji, kana);
 
 				TreeSet<PolishJapaneseEntry> polishJapaneseEntryKanaTreeSet = duplicatedKana.get(kana);
 
@@ -726,33 +760,39 @@ public class Validator {
 	}
 
 	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntryInKanji(
-			List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, boolean checkKnownDuplicated, String kanji) {
+			Map<String, List<PolishJapaneseEntry>> theSameKanjiPolishJapaneseListMap, int id, boolean checkKnownDuplicated, String kanji) {
 
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
-
-		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
-
+		
+		List<PolishJapaneseEntry> theSameKanjiPolishJapaneseList = theSameKanjiPolishJapaneseListMap.get(kanji);
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : theSameKanjiPolishJapaneseList) {
+			
 			if (checkKnownDuplicated == true && polishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.DUPLICATE, id) == true) {
 				continue;
 			}
 
-			if (polishJapaneseEntry.getId() != id && polishJapaneseEntry.getKanji().equals(kanji)) {
+			if (polishJapaneseEntry.getId() != id) {
 				result.add(polishJapaneseEntry);
-			} else if (checkKnownDuplicated == false && polishJapaneseEntry.getKanji().equals(kanji)) {
+				
+			} else if (checkKnownDuplicated == false) {
 				result.add(polishJapaneseEntry);
+				
 			}
-		}
+		}		
 
 		return result;
 	}
 
 	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntryInKanjiAndKana(
-			List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, boolean checkKnownDuplicated, String kanji,
+			Map<String, List<PolishJapaneseEntry>> theSameKanaPolishJapaneseListMap, int id, boolean checkKnownDuplicated, String kanji,
 			String kana) {
 
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
-
-		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+		
+		List<PolishJapaneseEntry> theSameKanaPolishJapaneseList = theSameKanaPolishJapaneseListMap.get(kana);
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : theSameKanaPolishJapaneseList) {
 
 			if (checkKnownDuplicated == true && polishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.DUPLICATE, id) == true) {
 				continue;
@@ -768,11 +808,12 @@ public class Validator {
 				differentKanji = false;
 			}
 
-			if (polishJapaneseEntry.getId() != id && differentKanji == false
-					&& polishJapaneseEntry.getKana().equals(kana) == true) {
+			if (polishJapaneseEntry.getId() != id && differentKanji == false) {
+				
 				result.add(polishJapaneseEntry);
-			} else if (checkKnownDuplicated == false && differentKanji == false
-					&& polishJapaneseEntry.getKana().equals(kana) == true) {
+				
+			} else if (checkKnownDuplicated == false && differentKanji == false) {
+				
 				result.add(polishJapaneseEntry);
 			}
 		}
@@ -780,6 +821,7 @@ public class Validator {
 		return result;
 	}
 
+	/*
 	private static List<PolishJapaneseEntry> findPolishJapaneseKanjiEntryInKana(
 			List<PolishJapaneseEntry> polishJapaneseKanjiEntries, int id, boolean checkKnownDuplicated, String kana) {
 
@@ -953,6 +995,7 @@ public class Validator {
 
 		return result;
 	}
+	*/
 
 	public static void validateDuplicateKanjiEntriesList(List<KanjiEntry> kanjiEntries)
 			throws JapaneseDictionaryException {

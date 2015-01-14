@@ -2,9 +2,9 @@ package pl.idedyk.japanese.dictionary.test;
 
 import java.util.List;
 
-import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
-import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
-import pl.idedyk.japanese.dictionary.tools.TatoebaSentencesParser;
+import pl.idedyk.japanese.dictionary.common.Validator;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 
 public class Test {
 
@@ -292,6 +292,7 @@ public class Test {
 		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2("../JapaneseDictionary_additional/kanjidic2.xml", kradFileMap);
 		*/
 		
+		/*
 		TatoebaSentencesParser tatoebaSentencesParser = new TatoebaSentencesParser("../JapaneseDictionary_additional/tatoeba");
 		
 		tatoebaSentencesParser.parse();
@@ -317,5 +318,15 @@ public class Test {
 			
 			System.out.println("---");
 		}
+		*/
+		
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			polishJapaneseEntry.getKnownDuplicatedList().clear();			
+		}
+		
+		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);
 	}
 }
