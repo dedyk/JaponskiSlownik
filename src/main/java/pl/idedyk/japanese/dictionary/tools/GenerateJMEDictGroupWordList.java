@@ -22,7 +22,6 @@ import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 
 public class GenerateJMEDictGroupWordList {
@@ -55,6 +54,9 @@ public class GenerateJMEDictGroupWordList {
 		
 		Set<String> alreadyAddedGroupEntry = new TreeSet<String>();
 		
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = 
+				pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
+		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.EDICT_TRANSLATE_INFO_GROUP_DIFF) == true) {
@@ -83,7 +85,8 @@ public class GenerateJMEDictGroupWordList {
 					String groupEntryKanji = groupEntry.getKanji();
 					String groupEntryKana = groupEntry.getKana();
 											
-					PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntry, polishJapaneseEntries, 
+					PolishJapaneseEntry findPolishJapaneseEntry = 
+							pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntryWithEdictDuplicate(polishJapaneseEntry, cachePolishJapaneseEntryList, 
 							groupEntryKanji, groupEntryKana);
 					
 					if (findPolishJapaneseEntry != null) {
@@ -200,39 +203,6 @@ public class GenerateJMEDictGroupWordList {
 		return wordType;
 	}
 		
-	private static PolishJapaneseEntry findPolishJapaneseEntry(PolishJapaneseEntry parentPolishJapaneseEntry,
-			List<PolishJapaneseEntry> polishJapaneseEntries, String findKanji, String findKana) {
-		
-		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-			
-			DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
-			
-			if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
-				continue;
-			}
-						
-			String kanji = polishJapaneseEntry.getKanji();
-			String kana = polishJapaneseEntry.getKana();
-			
-			if (kanji == null || kanji.equals("-") == true) {
-				kanji = "$$$NULL$$$";
-			}
-
-			if (findKanji == null || findKanji.equals("-") == true) {
-				findKanji = "$$$NULL$$$";
-			}
-			
-			if (kanji.equals(findKanji) == true && kana.equals(findKana) == true) {
-				
-				if (parentPolishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.EDICT_DUPLICATE, polishJapaneseEntry.getId()) == false) {
-					return polishJapaneseEntry;
-				}				
-			}
-		}
-		
-		return null;
-	}
-	
 	private static String getKeyForAlreadyAddedGroupEntrySet(GroupEntry groupEntry) {
 		
 		String key = groupEntry.getGroup().getId() + "." + groupEntry.getWordTypeList().toString() + "." + groupEntry.getKanji() + "." + groupEntry.getKana() + "." + 

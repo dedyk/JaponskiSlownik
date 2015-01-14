@@ -1018,9 +1018,13 @@ public class Validator {
 	}
 	
 	public static void validateEdictGroup(JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
+		
 		boolean validateResult = true;
 		
 		Set<String> alreadyValidateErrorResultGroupIds = new HashSet<String>();
+		
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = 
+				pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -1038,8 +1042,8 @@ public class Validator {
 					String groupEntryKanji = groupEntry.getKanji();
 					String groupEntryKana = groupEntry.getKana();
 																
-					PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry(polishJapaneseEntry,
-							polishJapaneseEntries, groupEntryKanji, groupEntryKana);
+					PolishJapaneseEntry findPolishJapaneseEntry = pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntryWithEdictDuplicate(
+							polishJapaneseEntry, cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
 					
 					if (findPolishJapaneseEntry != null) {
 						foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
@@ -1166,40 +1170,7 @@ public class Validator {
 			return true;
 		}
 	}
-	
-	private static PolishJapaneseEntry findPolishJapaneseEntry(PolishJapaneseEntry parentPolishJapaneseEntry,
-			List<PolishJapaneseEntry> polishJapaneseEntries, String findKanji, String findKana) {
 		
-		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-			
-			DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
-			
-			if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
-				continue;
-			}
-			
-			String kanji = polishJapaneseEntry.getKanji();
-			String kana = polishJapaneseEntry.getKana();
-			
-			if (kanji == null || kanji.equals("-") == true) {
-				kanji = "$$$NULL$$$";
-			}
-
-			if (findKanji == null || findKanji.equals("-") == true) {
-				findKanji = "$$$NULL$$$";
-			}
-			
-			if (kanji.equals(findKanji) == true && kana.equals(findKana) == true) {
-				
-				if (parentPolishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.EDICT_DUPLICATE, polishJapaneseEntry.getId()) == false) {
-					return polishJapaneseEntry;
-				}				
-			}
-		}
-		
-		return null;
-	}
-	
 	private static String toAttributeListString(AttributeList attributeList) {
 		
 		StringBuffer sb = new StringBuffer();
