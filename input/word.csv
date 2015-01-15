@@ -16980,7 +16980,7 @@ ustawy",,,
 norma
 reguła",,,
 6212,WORD_NOUN,,HIRAGANA,,,略,りゃく,,ryaku,"skrót
-pominięcie",,,
+pominięcie",,,DUPLICATE 34116
 6213,WORD_NOUN,,HIRAGANA,,,略語,りゃくご,,ryakugo,skrót,,,
 6214,WORD_NOUN,,HIRAGANA,,,略述,りゃくじゅつ,,ryakujutsu,"krótkie sprawozdanie
 krótka relacja",,,
@@ -97075,7 +97075,8 @@ likwidowanie",,,
 34096,WORD_NOUN,,KATAKANA,,,-,バリトン,,bariton,baryton,,,
 34097,WORD_NOUN,PREFIX,KATAKANA,,,-,フライ,,furai,"smażone owoce morza lub warzywa (w ogólności)
 mucha","ang: fried, fly",,
-34098,WORD_NOUN,,HIRAGANA,,,お帰り,おかえり,,okaeri,"powrót (honoryfikatywnie)
+34098,"WORD_NOUN
+WORD_INTERJECTION",,HIRAGANA,,,お帰り,おかえり,,okaeri,"powrót (honoryfikatywnie)
 witaj w domu (skrót)",,,
 34099,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,中毒,ちゅうどく,,chuudoku,"zatrucie
@@ -97119,7 +97120,7 @@ niezrozumiały
 niepojęty",,,
 34113,WORD_NOUN,,HIRAGANA,,,先進国,せんしんこく,,senshinkoku,"zaawansowany kraj
 rozwinięty kraj",,,
-34114,WORD_NOUN,,HIRAGANA,,,力添え,ちからぞえ,,chikarazou,"pomoc
+34114,WORD_NOUN,,HIRAGANA,,,力添え,ちからぞえ,,chikarazoe,"pomoc
 asysta
 wsparcie",,,
 34115,WORD_NOUN,,HIRAGANA,,,産量,さんりょう,,sanryou,"produkcja
@@ -97127,4 +97128,4 @@ plon",,,
 34116,WORD_ADVERB,,HIRAGANA,,,略,ほぼ,,hobo,"prawie
 mniej więcej
 z grubsza
-około",,,
+około",,,DUPLICATE 6212
