@@ -125,11 +125,15 @@ public class GenerateMissingWordList {
 
 		IndexSearcher searcher = new IndexSearcher(reader);
 
+		int counter = 0;
+		
 		for (String currentMissingWord : missingWords) {
 			
 			if (currentMissingWord.equals("") == true) {
 				continue;
 			}
+			
+			counter++;
 
 			Query query = createQuery(currentMissingWord);
 
@@ -158,7 +162,7 @@ public class GenerateMissingWordList {
 					
 					PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
 					
-					polishJapaneseEntry.setId(100000 + newWordList.size());
+					polishJapaneseEntry.setId(counter);
 					
 					List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
 					
@@ -225,7 +229,7 @@ public class GenerateMissingWordList {
 				
 				PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
 				
-				polishJapaneseEntry.setId(100000 + newWordList.size());
+				polishJapaneseEntry.setId(counter);
 				
 				List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
 				
