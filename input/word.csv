@@ -2679,7 +2679,8 @@ DUPLICATE 8619
 DUPLICATE 9189
 DUPLICATE 9190
 DUPLICATE 24188
-DUPLICATE 29841"
+DUPLICATE 29841
+DUPLICATE 34241"
 793,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-10,,-,おもち,,omochi,ciastko ryżowe,,,
 794,WORD_ADJECTIVE_I,,HIRAGANA,"Genki dodatkowe 1-10
 Genki 2-13
@@ -8839,7 +8840,8 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,労働市場,ろうどうしじょう,,roudou shi
 3185,WORD_NOUN,,HIRAGANA,,,労賃,ろうちん,,rouchin,"pensja
 wynagrodzenie
 zapłata za pracę",,,
-3186,WORD_NOUN,,HIRAGANA,,,送り主,おくりぬし,,okurinushi,nadawca,,,
+3186,WORD_NOUN,,HIRAGANA,,,送り主,おくりぬし,,okurinushi,"darczyńca
+nadawca prezentu",,,
 3187,WORD_NOUN,,HIRAGANA,,,送り先,おくりさき,,okurisaki,"adres
 miejsce docelowe",,,
 3188,WORD_NOUN,,HIRAGANA,Genki kanji 2-21,,送金,そうきん,,soukin,"przekaz
@@ -9472,8 +9474,10 @@ specjalista
 biegły
 mistrz
 majster",,,
-3430,WORD_NOUN,,HIRAGANA,,,質,しち,,shichi,"zakładnik
-zestaw",,,
+3430,WORD_NOUN,,HIRAGANA,,,質,しち,,shichi,"zabezpieczenie
+zastaw
+gwarancja
+zastawiony przedmiot",,,DUPLICATE 34233
 3431,WORD_VERB_U,,HIRAGANA,,,質す,ただす,,tadasu,"pytać
 żądać
 prosić
@@ -77829,7 +77833,8 @@ składanie",,,
 27901,WORD_VERB_U,,HIRAGANA,,,労わる,いたわる,,itawaru,współczuć,,,
 27902,WORD_VERB_U,,HIRAGANA,,,犒う,ねぎらう,,negirau,"dziękować za
 wynagradzać za",,,
-27903,WORD_NOUN,,HIRAGANA,,,贈り主,おくりぬし,,okurinushi,nadawca,,,
+27903,WORD_NOUN,,HIRAGANA,,,贈り主,おくりぬし,,okurinushi,"darczyńca
+nadawca prezentu",,,
 27904,WORD_VERB_U,,HIRAGANA,,,祀る,まつる,,matsuru,"czcić
 oddawać hołd
 sprawować obrzędy",,,
@@ -85599,10 +85604,14 @@ elokwencja (archaizm)
 elokwentna osoba (archaizm)",,,
 30348,WORD_VERB_U,,HIRAGANA,,,引出す,ひきだす,,hikidasu,"wyciągać
 wysuwać
-wydobyć",,,
+wydobyć
+wypłacać
+podejmować",,,
 30349,WORD_VERB_U,,HIRAGANA,,,引きだす,ひきだす,,hikidasu,"wyciągać
 wysuwać
-wydobyć",,,
+wydobyć
+wypłacać
+podejmować",,,
 30350,WORD_NOUN,,HIRAGANA,,,思い付き,おもいつき,,omoitsuki,"plan
 projekt
 pomysł
@@ -97460,7 +97469,7 @@ brutalny
 nikczemny
 niegodziwy",,,
 34227,"WORD_ADVERBIAL_NOUN
-WORD_TEMPORALN_NOUN",,HIRAGANA,,,初日,しょにち,,shonichi,"pierwszy dzień
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,初日,しょにち,,shonichi,"pierwszy dzień
 początek dnia",,,
 34228,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,屈指,くっし,,kusshi,"czołowy
@@ -97478,9 +97487,10 @@ dowód rzeczowy",,,
 34232,WORD_NOUN,,HIRAGANA,,,礎石,そせき,,soseki,kamień węgielny,,,
 34233,WORD_NOUN,SUFFIX,HIRAGANA,,,質,しつ,,shitsu,"jakość
 cecha
-właściwość",,,
-34234,WORD_NOUN,,HIRAGANA,,,贈り主,おくりぬし,,okurinushi,"darczyńca
-nadawca prezentu",,,
+właściwość",,,DUPLICATE 3430
+34234,WORD_NOUN,,HIRAGANA,,,間に合わせ,まにあわせ,,ma ni awase,"namiastka
+prowizorka
+tymczasowe rozwiązanie",,,
 34235,WORD_NOUN,,HIRAGANA,,,車両,しゃりょう,,sharyou,"tabor
 tabor kolejowy
 wagon kolejowy",,,
@@ -97508,7 +97518,7 @@ unowocześnienie",,,
 WORD_ADJECTIVE_NO",,HIRAGANA,,,下記,かき,,kaki,"jak następuje
 następująco
 następnie
-następny",,,
+następny",,,DUPLICATE 792
 34242,WORD_NOUN,,KATAKANA,,,-,ガボン,,gabon,Gabon,państwo położone w środkowej Afryce nad Oceanem Atlantyckim,,
 34243,WORD_NOUN,,HIRAGANA,,,画本,がほん,,gahon,"książka z obrazami
 książka z obrazkami
