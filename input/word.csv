@@ -21438,7 +21438,7 @@ przepuszczać
 opuszczać
 tracić",,,
 7943,WORD_VERB_RU,,HIRAGANA,,,逸れる,それる,,soreru,"zbaczać
-odchylać się",,,
+odchylać się",,,DUPLICATE 34335
 7944,WORD_NOUN,,HIRAGANA,,,郭,かく,,kaku,"rejon
 dzielnica
 część miasta
@@ -42557,7 +42557,7 @@ trzęsienie się
 trząść się z zimna bądź strachu",,,
 16328,WORD_NOUN,,KATAKANA,,,-,グライダー,,guraidaa,szybowiec,,,
 16329,WORD_NOUN,,KATAKANA,,,-,グリーンピース,,guriin piisu,"zielony groszek
-Greenpeace",,,
+Greenpeace","ang: green peas, Greenpeace",,
 16330,WORD_NOUN,,KATAKANA,,,-,ゲン,,gen,gen,,,
 16331,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,跣,はだし,,hadashi,"bosy
@@ -91771,9 +91771,9 @@ WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,熱熱,あつあつ,,atsuatsu,"wrzący
 namiętność w miłości",,,
 32315,WORD_NOUN,,KATAKANA,,,-,グリンピース,,gurinpiisu,"zielony groszek
-Greenpeace",,,
+Greenpeace","ang: green peas, Greenpeace",,
 32316,WORD_NOUN,,KATAKANA,,,-,グリーン・ピース,,guriin piisu,"zielony groszek
-Greenpeace",,,
+Greenpeace","ang: green peas, Greenpeace",,
 32317,"WORD_NOUN
 WORD_ADJECTIVE_NA",,KATAKANA,,,-,スクエアー,,sukueaa,"plac
 skwer
@@ -97700,8 +97700,12 @@ WORD_EXPRESSION",,HIRAGANA,,,気のせい,きのせい,,ki no sei,"fantazja
 wyobraźnia",,,
 34308,WORD_NOUN,,HIRAGANA,,,気泡,きほう,,kihou,"pęcherzyk
 bąbelek",powietrza w wodzie,,
-34309,WORD_NOUN,,KATAKANA,,,-,グリン ピース,,gurinpiisu,"zielony groszek
-Greenpeace","ang: green peas, Greenpeace",,
+34309,WORD_NOUN,,HIRAGANA,,,重鎮,じゅうちん,,juuchin,"lider
+władza
+filar
+podstawa
+podpora
+ostoja",,,
 34310,WORD_NOUN,,KATAKANA,,,-,ダミー,,damii,"manekin
 atrapa
 imitacja",ang: dummy,,
@@ -97752,7 +97756,8 @@ wkradanie się
 zakradanie się",,,
 34323,WORD_NOUN,,HIRAGANA,,,潜入者,せんにゅうしゃ,,sennyuusha,"intruz
 infiltrator",,,
-34324,WORD_NOUN,,HIRAGANA,,,独学,どくがく,,dokugaku,"samokształcenie
+34324,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,独学,どくがく,,dokugaku,"samokształcenie
 samouctwo",,,
 34325,WORD_NOUN,,HIRAGANA,,,独学者,どくがくしゃ,,dokugakusha,samouk,,,
 34326,WORD_NOUN,,HIRAGANA,,,純度,じゅんど,,jundo,"czystość
@@ -97779,7 +97784,7 @@ przepis",,,
 34335,WORD_VERB_RU,SUFFIX,HIRAGANA,,,逸れる,はぐれる,,hagureru,"stracić z oczu (własnych towarzyszy)
 zabłądzić
 zabłąkać
-stracić okazję (po formie czasownika bez masu, czasami っぱぐれる)",,,
+stracić okazję (po formie czasownika bez masu, czasami っぱぐれる)",,,DUPLICATE 7943
 34336,"WORD_ADJECTIVE_NA
 WORD_ADVERB",,HIRAGANA,,,-,ぎりぎり,,girigiri,"w ostatniej chwili
 ledwo co
