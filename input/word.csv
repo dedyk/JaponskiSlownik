@@ -1724,7 +1724,7 @@ kierunek
 wskazówka",,,
 505,WORD_NOUN,,HIRAGANA,Genki 2-16,,塵,ごみ,,gomi,"śmieci
 odpadki
-odpady",,,
+odpady",,,DUPLICATE 34366
 506,WORD_NOUN,,HIRAGANA,"Genki 1-6
 Genki 1-7
 Genki 2-13",,お祖父さん,おじいさん,,ojiisan,"dziadek
@@ -2776,7 +2776,7 @@ galeria sztuki",artystyczne,,
 820,"WORD_NOUN
 WORD_COUNTER",,HIRAGANA,"Genki 1-11
 Genki kanji 1-5",,山,やま,,yama,"góra
-pagórek",,,
+pagórek",,,DUPLICATE 34403
 821,WORD_NOUN,,HIRAGANA,Genki 1-11,,夢,ゆめ,,yume,"marzenie
 sen
 wizja
@@ -23927,7 +23927,8 @@ rejon",,,
 8776,WORD_VERB_U,,HIRAGANA,,,放る,ほる,,horu,"rzucać
 zrzucać
 podrzucać
-wrzucać",,,DUPLICATE 9656
+wrzucać",,,"DUPLICATE 9656
+DUPLICATE 34410"
 8777,WORD_VERB_U,,HIRAGANA,,,抛る,ほうる,,houru,"rzucać
 zrzucać
 podrzucać
@@ -26130,7 +26131,8 @@ rejon",,,
 9656,WORD_VERB_U,,HIRAGANA,,,放る,ほうる,,houru,"rzucać
 zrzucać
 podrzucać
-wrzucać",,,DUPLICATE 8776
+wrzucać",,,"DUPLICATE 8776
+DUPLICATE 34410"
 9657,WORD_NOUN,,HIRAGANA,,,武者,むしゃ,,musha,"wojak
 wojownik
 bojownik",,,
@@ -97884,7 +97886,7 @@ grupa ekspertów (skrót)","ang: brain, brain trust",,
 34365,WORD_NOUN,,KATAKANA,,,-,ラブソング,,rabu songu,piosenka miłosna,ang: love song,,
 34366,WORD_NOUN,,HIRAGANA,,,塵,ちり,,chiri,"kurz
 drut
-nieczystość",,,
+nieczystość",,,DUPLICATE 505
 34367,WORD_NOUN,,HIRAGANA,,,水揚げ,みずあげ,,mizuage,"rozładunek (np. statku)
 łapanie (ryb)
 schwytanie (ryb)
@@ -97903,7 +97905,7 @@ nawrót
 zmiana
 zwrot
 przestawienie",,,
-34372,WORD_NOUN,,HIRAGANA,,,間一髪,かんいっぱつ,,kanippatsu,grubość włosa,,,
+34372,WORD_NOUN,,HIRAGANA,,,間一髪,かんいっぱつ,,kan' ippatsu,grubość włosa,,,
 34373,WORD_NOUN,,HIRAGANA,,,転向者,てんこうしゃ,,tenkousha,"konwertyta
 neofita",,,
 34374,WORD_NOUN,,KATAKANA,,,-,ミクロン,,mikuron,mikron,jednostka równa jednej milionowej metra,,
@@ -97994,7 +97996,7 @@ przejeżdżać przez",,,
 34402,WORD_NOUN,PREFIX,HIRAGANA,,,残,ざん,,zan,"pozostały
 pozostałość
 dodatkowy",,,
-34403,WORD_EMPTY,SUFFIX,HIRAGANA,,,山,ざん,,zan,góra,,,
+34403,WORD_EMPTY,SUFFIX,HIRAGANA,,,山,ざん,,zan,góra,,,DUPLICATE 820
 34404,WORD_NOUN,,HIRAGANA,,,斬,ざん,,zan,"obcięcie głowy
 ścięcie
 dekapitacja",,,
@@ -98015,16 +98017,17 @@ zostawić
 rezygnować
 poddać się
 stracić kontakt z
-oddalić się od",archaizm,,
+oddalić się od",archaizm,,DUPLICATE 34409
 34409,WORD_VERB_U,,HIRAGANA,,,離る,さかる,,sakaru,"odejść
 oddalić się
 gasnąć
 znikać
 ucichnąć
-ustać",archaizm,,
+ustać",archaizm,,DUPLICATE 34408
 34410,WORD_VERB_U,,HIRAGANA,,,放る,はなる,,hanaru,"otrzymać wolność
 zostać uwolniony
-zostać zwolniony",,,
+zostać zwolniony",,,"DUPLICATE 8776
+DUPLICATE 9656"
 34411,"WORD_ADVERB
 WORD_ADVERB_TO
 WORD_NOUN",,KATAKANA,,,-,ハラハラ,,harahara,"serce robiące bum-bum
