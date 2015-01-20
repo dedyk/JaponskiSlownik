@@ -23931,7 +23931,9 @@ rejon",,,
 zrzucać
 podrzucać
 wrzucać",,,"DUPLICATE 9656
-DUPLICATE 34410"
+DUPLICATE 34410
+DUPLICATE 34456
+DUPLICATE 34457"
 8777,WORD_VERB_U,,HIRAGANA,,,抛る,ほうる,,houru,"rzucać
 zrzucać
 podrzucać
@@ -26135,7 +26137,9 @@ rejon",,,
 zrzucać
 podrzucać
 wrzucać",,,"DUPLICATE 8776
-DUPLICATE 34410"
+DUPLICATE 34410
+DUPLICATE 34456
+DUPLICATE 34457"
 9657,WORD_NOUN,,HIRAGANA,,,武者,むしゃ,,musha,"wojak
 wojownik
 bojownik",,,
@@ -98032,7 +98036,9 @@ ustać",archaizm,,DUPLICATE 34408
 34410,WORD_VERB_U,,HIRAGANA,,,放る,はなる,,hanaru,"otrzymać wolność
 zostać uwolniony
 zostać zwolniony",,,"DUPLICATE 8776
-DUPLICATE 9656"
+DUPLICATE 9656
+DUPLICATE 34456
+DUPLICATE 34457"
 34411,"WORD_ADVERB
 WORD_ADVERB_TO
 WORD_NOUN",,KATAKANA,,,-,ハラハラ,,harahara,"serce robiące bum-bum
@@ -98169,44 +98175,52 @@ sadło",,,
 wydalać
 usuwać (z ciała)
 wypróżniać
-rodzić",,,
+rodzić",,,"DUPLICATE 8776
+DUPLICATE 9656
+DUPLICATE 34410
+DUPLICATE 34457"
 34457,WORD_VERB_U,,HIRAGANA,,,放る,まる,,maru,"wydalać
 wypróżniać
-usuwać","kał, mocz",,
+usuwać","kał, mocz",,"DUPLICATE 8776
+DUPLICATE 9656
+DUPLICATE 34410
+DUPLICATE 34456"
 34458,WORD_NOUN,,HIRAGANA,,,舞妓,まいこ,,maiko,"maiko
-tańcząca dziewczyna",uczennica na gejszę,,
+tańcząca dziewczyna",uczennica na gejszę,,DUPLICATE 34459
 34459,WORD_NOUN,,HIRAGANA,,,舞妓,ぶぎ,,bugi,"maiko
-tańcząca dziewczyna",uczennica na gejszę,,
+tańcząca dziewczyna",uczennica na gejszę,,DUPLICATE 34458
 34460,WORD_NOUN,,HIRAGANA,,,舞子,まいこ,,maiko,"maiko
 tańcząca dziewczyna",uczennica na gejszę,,
 34461,WORD_NOUN,,HIRAGANA,,,美妓,びぎ,,bigi,piękna maiko lub gejszaa,,,
 34462,WORD_NOUN,,HIRAGANA,,,芸舞妓,げいまいこ,,geimaiko,gejsza i maiko,,,
 34463,WORD_NOUN,,HIRAGANA,,,都踊り,みやこおどり,,miyako odori,taniec wykonywany w kwietniu przez gejszę i maiko w Kioto,,,
 34464,WORD_NOUN,,HIRAGANA,,,都をどり,みやこをどり,,miyakow odori,taniec wykonywany w kwietniu przez gejszę i maiko w Kioto,,,
-34465,WORD_NOUN,,HIRAGANA,,,お座敷,おざしき,,ozashiki,"pokój z matami tatami
-pokój z matami tatami, gdzie odbywa się przyjęcie z gejszami i maiko
-dawny japoński pokój",,,
-34466,WORD_NOUN,,HIRAGANA,,,御座敷,おざしき,,ozashiki,"pokój z matami tatami
-pokój z matami tatami, gdzie odbywa się przyjęcie z gejszami i maiko
-dawny japoński pokój",,,
-34467,WORD_NOUN,,HIRAGANA,,,座敷,ざしき,,zashiki,"pokój z matami tatami
-pokój z matami tatami, gdzie odbywa się przyjęcie z gejszami i maiko
-dawny japoński pokój",,,
-34468,WORD_NOUN,,HIRAGANA,,,坐敷,ざしき,,zashiki,"pokój z matami tatami
-pokój z matami tatami, gdzie odbywa się przyjęcie z gejszami i maiko
-dawny japoński pokój",,,
-34469,WORD_NOUN,,HIRAGANA,,,義侠の士,ぎきょうのし,,gikyou no shi,paladyn,,,
-34470,"WORD_NOUN
+34465,WORD_NOUN,,HIRAGANA,,,お座敷,おざしき,,ozashiki,"pokój
+pomieszczenie
+salon","zwykle w stylu japońskim, wyłożony matami",,
+34466,WORD_NOUN,,HIRAGANA,,,御座敷,おざしき,,ozashiki,"pokój
+pomieszczenie
+salon","zwykle w stylu japońskim, wyłożony matami",,
+34467,WORD_NOUN,,HIRAGANA,,,義侠の士,ぎきょうのし,,gikyou no shi,paladyn,,,
+34468,"WORD_NOUN
 WORD_ADJECTIVE_NA
 WORD_ADJECTIVE_NO",,HIRAGANA,,,醜女,しゅうじょ,,shuujo,"brzydka kobieta
-nieładna kobieta",,,
-34471,"WORD_NOUN
+nieładna kobieta",,,"DUPLICATE 34469
+DUPLICATE 34470
+DUPLICATE 34471"
+34469,"WORD_NOUN
 WORD_ADJECTIVE_NA
 WORD_ADJECTIVE_NO",,HIRAGANA,,,醜女,しこめ,,shikome,"brzydka kobieta
 nieładna kobieta
-żeński demon",,,
-34472,"WORD_NOUN
+żeński demon",,,"DUPLICATE 34468
+DUPLICATE 34470
+DUPLICATE 34471"
+34470,"WORD_NOUN
 WORD_ADJECTIVE_NA
 WORD_ADJECTIVE_NO",,HIRAGANA,,,醜女,ぶおんな,,buonna,"brzydka kobieta
-nieładna kobieta",,,
-34473,WORD_NOUN,,HIRAGANA,,,醜女,ぶす,,busu,wyjątkowo brzydka kobieta,,,
+nieładna kobieta",,,"DUPLICATE 34468
+DUPLICATE 34469
+DUPLICATE 34471"
+34471,WORD_NOUN,,HIRAGANA,,,醜女,ぶす,,busu,wyjątkowo brzydka kobieta,,,"DUPLICATE 34468
+DUPLICATE 34469
+DUPLICATE 34470"
