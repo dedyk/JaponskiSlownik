@@ -165,7 +165,7 @@ public class GenerateMissingWordList {
 					polishJapaneseEntry.setId(counter);
 					
 					List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
-					
+										
 					for (String currentEntity : wordTypeList) {
 						
 						DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(currentEntity);
