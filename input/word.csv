@@ -201,7 +201,9 @@ DUPLICATE 6341
 DUPLICATE 8019
 DUPLICATE 9631
 DUPLICATE 27673
-DUPLICATE 29116"
+DUPLICATE 29116
+DUPLICATE 34438
+DUPLICATE 34439"
 78,WORD_ADJECTIVE_NO,SUFFIX,HIRAGANA,Genki 1-1,,時,じ,,ji,... godzina,,,DUPLICATE 357
 79,WORD_EMPTY,SUFFIX,HIRAGANA,Genki 1-1,,人,じん,,jin,... człowiek,,,"DUPLICATE 286
 DUPLICATE 601"
@@ -2776,7 +2778,8 @@ galeria sztuki",artystyczne,,
 820,"WORD_NOUN
 WORD_COUNTER",,HIRAGANA,"Genki 1-11
 Genki kanji 1-5",,山,やま,,yama,"góra
-pagórek",,,DUPLICATE 34403
+pagórek",,,"DUPLICATE 34403
+DUPLICATE 34438"
 821,WORD_NOUN,,HIRAGANA,Genki 1-11,,夢,ゆめ,,yume,"marzenie
 sen
 wizja
@@ -30680,7 +30683,8 @@ DUPLICATE 8074
 DUPLICATE 8424
 DUPLICATE 28497
 DUPLICATE 28856
-DUPLICATE 29789"
+DUPLICATE 29789
+DUPLICATE 34454"
 11467,WORD_ADVERB,,HIRAGANA,,,無闇に,むやみに,,muyami ni,"bezmyślnie
 nadmiernie",,,
 11468,WORD_ADVERB,,HIRAGANA,,,無暗に,むやみに,,muyami ni,"bezmyślnie
@@ -97877,7 +97881,7 @@ przepis",,,
 34361,WORD_NOUN,,KATAKANA,,,-,エア・クリーナー,,ea kuriinaa,filtr powietrza,,,
 34362,WORD_NOUN,,KATAKANA,,,-,コンセンサス,,konsensasu,"konsensus
 jednomyślność
-zgodna opinia ",,,
+zgodna opinia",,,
 34363,WORD_NOUN,,KATAKANA,,,-,デリート,,deriito,"kasowanie
 usuwanie",ang: delete,,
 34364,WORD_NOUN,,KATAKANA,,,-,ブレーン,,bureen,"mózg
@@ -97996,11 +98000,12 @@ przejeżdżać przez",,,
 34402,WORD_NOUN,PREFIX,HIRAGANA,,,残,ざん,,zan,"pozostały
 pozostałość
 dodatkowy",,,
-34403,WORD_EMPTY,SUFFIX,HIRAGANA,,,山,ざん,,zan,góra,,,DUPLICATE 820
+34403,WORD_EMPTY,SUFFIX,HIRAGANA,,,山,ざん,,zan,góra,,,"DUPLICATE 820
+DUPLICATE 34438"
 34404,WORD_NOUN,,HIRAGANA,,,斬,ざん,,zan,"obcięcie głowy
 ścięcie
 dekapitacja",,,
-34405,WORD_NOUN,,HIRAGANA,,,餐,ざん,,zan,posiłek,archaizm,,
+34405,WORD_NOUN,,HIRAGANA,,,餐,ざん,,zan,posiłek,archaizm,,DUPLICATE 34439
 34406,"WORD_NOUN
 WORD_EXPRESSION
 WORD_ADVERBIAL_NOUN",,HIRAGANA,,,ある限り,あるかぎり,,aru kagiri,"wszystko (tam jest)
@@ -98059,7 +98064,7 @@ WORD_TEMPORAL_NOUN",,HIRAGANA,,,今宵,こよい,,koyoi,"tego wieczora
 wieczorem
 dziś wieczorem
 dziś w nocy",,,
-34418,WORD_NOUN,,HIRAGANA,,,紙縒り,こより,,koyori,sznurek wykonany ze skręconego papieru,,,
+34418,WORD_NOUN,,HIRAGANA,,,紙縒り,こより,,koyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34441
 34419,WORD_NOUN,,HIRAGANA,,,冥府,めいふ,,meifu,"hades
 królestwo zmarłych
 szeol",,,
@@ -98085,7 +98090,7 @@ zwyczajny",,,
 34425,WORD_NOUN,,HIRAGANA,,,箇条書き,かじょうがき,,kajougaki,"wyszczególnienie
 wyszczególniona postać",,,
 34426,WORD_NOUN,,HIRAGANA,,,庚,かのえ,,kanoe,"siódmy w rankingu
-siódmy znak w chińskim kalendarzu",,,
+siódmy znak w chińskim kalendarzu",,,DUPLICATE 34454
 34427,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,出色,しゅっしょく,,shusshoku,"wybitny
 perfekcyjny
@@ -98098,3 +98103,63 @@ ekscelencja",,,
 płakanie
 szlochanie",,,
 34430,WORD_NOUN,,HIRAGANA,,,小括,しょうかつ,,shoukatsu,podsumowanie,np. w pracy naukowej,,
+34431,WORD_NOUN,,KATAKANA,,,-,ブレイン,,burein,"mózg
+mózg (operacji) (skrót)
+grupa ekspertów (skrót)","ang: brain, brain trust",,
+34432,WORD_NOUN,,KATAKANA,,,-,ラブ・ソング,,rabu songu,piosenka miłosna,ang: love song,,
+34433,WORD_NOUN,,HIRAGANA,,,水あげ,みずあげ,,mizuage,"rozładunek (np. statku)
+łapanie (ryb)
+schwytanie (ryb)
+sprzedawanie (w sklepie)
+inicjacja początkującej gejszy lub prostytutki, polegająca na pozbawieniu jej dziewictwa
+utrzymywanie kwiatów w dobrym stanie (w ikebana)",,,
+34434,WORD_VERB_U,,HIRAGANA,,,飛びかう,とびかう,,tobikau,"bujać
+przelatywać
+latać dookoła
+śmigać dookoła",,,
+34435,WORD_VERB_U,,HIRAGANA,,,とび交う,とびかう,,tobikau,"bujać
+przelatywać
+latać dookoła
+śmigać dookoła",,,
+34436,WORD_NOUN,,HIRAGANA,,,見晴し,みはらし,,miharashi,"widok
+perspektywa
+wizja
+krajobraz",,,
+34437,WORD_NOUN,,HIRAGANA,,,見はらし,みはらし,,miharashi,"widok
+perspektywa
+wizja
+krajobraz",,,
+34438,WORD_EMPTY,SUFFIX,HIRAGANA,,,山,さん,,san,góra,,,"DUPLICATE 77
+DUPLICATE 820
+DUPLICATE 34403"
+34439,WORD_NOUN,,HIRAGANA,,,餐,さん,,san,posiłek,archaizm,,"DUPLICATE 77
+DUPLICATE 34405"
+34440,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,-,はらはら,,harahara,"serce robiące bum-bum
+gwałtowny spadek wielkich kropli
+siedzenie jak na szpilkach
+stan napięcia
+niepewność
+ekscytujący
+emocjonujący
+pasjonujący
+fascynujący",,,
+34441,WORD_NOUN,,HIRAGANA,,,紙縒り,かみより,,kamiyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34418
+34442,WORD_NOUN,,HIRAGANA,,,紙縒,こより,,koyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34443
+34443,WORD_NOUN,,HIRAGANA,,,紙縒,かみより,,kamiyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34442
+34444,WORD_NOUN,,HIRAGANA,,,紙撚り,こより,,koyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34445
+34445,WORD_NOUN,,HIRAGANA,,,紙撚り,かみより,,kamiyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34444
+34446,WORD_NOUN,,HIRAGANA,,,紙撚,こより,,koyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34447
+34447,WORD_NOUN,,HIRAGANA,,,紙撚,かみより,,kamiyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34446
+34448,WORD_NOUN,,HIRAGANA,,,紙捻り,こより,,koyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34449
+34449,WORD_NOUN,,HIRAGANA,,,紙捻り,かみより,,kamiyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34448
+34450,WORD_NOUN,,HIRAGANA,,,紙捻,こより,,koyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34451
+34451,WORD_NOUN,,HIRAGANA,,,紙捻,かみより,,kamiyori,sznurek wykonany ze skręconego papieru,,,DUPLICATE 34450
+34452,WORD_NOUN,,HIRAGANA,,,個条書き,かじょうがき,,kajougaki,"wyszczególnienie
+wyszczególniona postać",,,
+34453,WORD_NOUN,,HIRAGANA,,,箇条書,かじょうがき,,kajougaki,"wyszczególnienie
+wyszczególniona postać",,,
+34454,WORD_NOUN,,HIRAGANA,,,庚,こう,,kou,"siódmy w rankingu
+siódmy znak w chińskim kalendarzu",,,"DUPLICATE 11466
+DUPLICATE 34426"
