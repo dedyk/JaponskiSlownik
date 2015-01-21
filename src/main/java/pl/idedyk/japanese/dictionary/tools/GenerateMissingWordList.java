@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.apache.lucene.document.Document;
@@ -65,6 +66,10 @@ public class GenerateMissingWordList {
 
 		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
 
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
+		
 		System.out.println("Indeksowanie...");
 
 		// tworzenie indeksu lucene
@@ -170,7 +175,7 @@ public class GenerateMissingWordList {
 						
 						DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(currentEntity);
 						
-						if (dictionaryEntryType != null) {
+						if (dictionaryEntryType != null && dictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
 							dictionaryEntryTypeList.add(dictionaryEntryType);
 						}
 					}
@@ -195,8 +200,17 @@ public class GenerateMissingWordList {
 
 					List<String> newTranslateList = new ArrayList<String>();
 					
+					List<PolishJapaneseEntry> findPolishJapaneseEntry = pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntry(
+							cachePolishJapaneseEntryList, kanji, kana);
+					
 					newTranslateList.add("_");
 					newTranslateList.add("-----------");
+					
+					if (findPolishJapaneseEntry != null && findPolishJapaneseEntry.size() > 0) {
+						newTranslateList.add("JUZ JEST");
+						newTranslateList.add("-----------");
+					}
+					
 					newTranslateList.add(currentMissingWord);
 					newTranslateList.add("-----------");
 					newTranslateList.addAll(translateList);

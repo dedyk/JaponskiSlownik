@@ -40,6 +40,37 @@ public class Utils {
 		return result;
 	}
 	
+	public static List<PolishJapaneseEntry> findPolishJapaneseEntry(
+			Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryMap, String findKanji, String findKana) {
+		
+		if (findKanji == null || findKanji.equals("-") == true) {
+			findKanji = "$$$NULL$$$";
+		}
+
+		String foundKey = findKanji + "." + findKana;
+		
+		List<PolishJapaneseEntry> polishJapaneseEntries = cachePolishJapaneseEntryMap.get(foundKey);
+		
+		if (polishJapaneseEntries == null) {
+			return null;
+		}
+		
+		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+			
+			if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+				continue;
+			}		
+			
+			result.add(polishJapaneseEntry);
+		}
+		
+		return result;
+	}	
+	
 	public static PolishJapaneseEntry findPolishJapaneseEntryWithEdictDuplicate(PolishJapaneseEntry parentPolishJapaneseEntry,
 			Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryMap, String findKanji, String findKana) {
 		
