@@ -4073,7 +4073,12 @@ pocieszać",,,
 WORD_EXPRESSION",,HIRAGANA,,,気に入る,きにはいる,,ki ni hairu,"spodobać się
 pasować
 być dobranym",,,
-1262,WORD_EXPRESSION,,HIRAGANA,,,-,やすい,,yasui,łatwość robienia czegoś,+ czasownik bez masu,,"DUPLICATE 211
+1262,WORD_ADJECTIVE_I,SUFFIX,HIRAGANA,,,易い,やすい,,yasui,"łatwy
+prosty
+nietrudny
+łatwość robienia czegoś
+prawdopodobnie
+przypuszczalny",po czasowniku w formie bez masu,,"DUPLICATE 211
 DUPLICATE 7990"
 1263,WORD_EXPRESSION,,HIRAGANA,,,食べやすい,たべやすい,,tabe yasui,łatwość jedzenia,,,
 1264,"WORD_NOUN
@@ -7354,6 +7359,8 @@ do użytku
 dla",,,DUPLICATE 12400
 2597,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,薫製,くんせい,,kunsei,"wędzenie
+wędzone
+wędzony
 wędzone jedzenie",,,
 2598,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,純情,じゅんじょう,,junjou,czyste serce,,,
@@ -30061,7 +30068,8 @@ finansista",,,
 jedynie
 nie więcej niż","używane zawsze z przeczeniem, połączenie dake shika używane przy szczególnie mocnym podkreśleniu",,"DUPLICATE 1882
 DUPLICATE 2015
-DUPLICATE 17019"
+DUPLICATE 17019
+DUPLICATE 34558"
 11204,WORD_VERB_IRREGULAR,,HIRAGANA,,,使用する,しようする,,shiyou suru,"używać
 stosować",,,
 11205,WORD_ADVERB,,HIRAGANA,,,自然に,しぜんに,,shizen ni,"naturalnie
@@ -37920,7 +37928,8 @@ połączenie",,,
 14697,WORD_NOUN,,HIRAGANA,,,発信,はっしん,,hasshin,"wysyłanie
 przesyłanie
 transmisja",,,
-14698,WORD_NOUN,,HIRAGANA,,,絨緞,じゅうたん,,juutan,"dywan
+14698,WORD_NOUN,,HIRAGANA,,,絨緞,じゅうたん,,juutan,"wykładzina
+dywan
 dywanik
 chodnik",,,
 14699,WORD_NOUN,,HIRAGANA,,,育ち,そだち,,sodachi,"hodowla
@@ -56783,7 +56792,7 @@ refluks",,,
 20770,WORD_EMPTY,SUFFIX,HIRAGANA,,,-,なんて,,nante,"tak jak
 (rzecz) jak
 okrzyk
-wykrzyknienie",,,
+wykrzyknienie",,,DUPLICATE 34587
 20771,WORD_NOUN,,KATAKANA,,,-,アダルト,,adaruto,"dorosły
 osoba dorosła
 osoba pełnoletnia",ang: adult,,
@@ -76772,12 +76781,18 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,双互,そうご,,sougo,"wzajemny
 obustronny",,,
 27580,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,燻製,くんせい,,kunsei,"wędzenie
+wędzone
+wędzony
 wędzone jedzenie",,,
 27581,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,熏製,くんせい,,kunsei,"wędzenie
+wędzone
+wędzony
 wędzone jedzenie",,,
 27582,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,くん製,くんせい,,kunsei,"wędzenie
+wędzone
+wędzony
 wędzone jedzenie",,,
 27583,WORD_NOUN,,HIRAGANA,,,越南,えつなん,,etsunan,Wietnam,,,
 27584,WORD_NOUN,,HIRAGANA,,,蜥蜴,とかげ,,tokage,"jaszczurka
@@ -88916,7 +88931,8 @@ być mentalnie spowolniony
 być zamroczony
 być czymś pochłonięty",,,
 31498,WORD_NOUN,,HIRAGANA,,,絃楽器,げんがっき,,gengakki,instrument strunowy,,,
-31499,WORD_NOUN,,HIRAGANA,,,絨氈,じゅうたん,,juutan,"dywan
+31499,WORD_NOUN,,HIRAGANA,,,絨氈,じゅうたん,,juutan,"wykładzina
+dywan
 dywanik
 chodnik",,,
 31500,WORD_NOUN,,KATAKANA,,,-,シビリアン・コントロール,,shibirian kontorooru,"kontrola cywilów
@@ -98368,21 +98384,16 @@ zbyteczny lęk",,,
 34530,WORD_NOUN,,HIRAGANA,,,己酉,きゆう,,kiyuu,46-ty w cyklu sexagenary,,,DUPLICATE 34532
 34531,WORD_NOUN,,HIRAGANA,,,癸酉,みずのととり,,mizuno totori,dziesiąty w cyklu sexagenary,,,DUPLICATE 34529
 34532,WORD_NOUN,,HIRAGANA,,,己酉,つちのととり,,tsuchino totori,46-ty w cyklu sexagenary,,,DUPLICATE 34530
-34533,WORD_NOUN,,KATAKANA,,,-,ディテール,,dideeru,"detal
+34533,WORD_NOUN,,KATAKANA,,,-,ディテール,,diteeru,"detal
 szczegół",ang: detail,,
 34534,WORD_NOUN,,HIRAGANA,,,大詰め,おおづめ,,oodume,"finałowa scena
 zakończenie
 finał",,,
-34535,WORD_ADJECTIVE_I,SUFFIX,HIRAGANA,,,易い,やすい,,yasui,"łatwy
-prosty
-nietrudny
-prawdopodobnie (po czasowniku w formie bez masu)
-przypuszczalny (po czasowniku w formie bez masu)
-łatwy (coś zrobić, po czasowniku w formie bez masu)",,,
+34535,WORD_NOUN,,KATAKANA,,,-,エージェント,,eejento,agent,,,
 34536,WORD_NOUN,,HIRAGANA,,,留置,りゅうち,,ryuuchi,"zatrzymanie
 uwięzienie",,,
 34537,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,日本一,にほんいち,,nihon ichi,"najlepszy w Japonii
+WORD_ADJECTIVE_NO",,HIRAGANA,,,日本一,にほんいち,,nihon' ichi,"najlepszy w Japonii
 numer jeden w Japonii",,,
 34538,WORD_NOUN,,KATAKANA,,,-,アクティビティ,,akutibiti,"aktywność
 działanie
@@ -98416,12 +98427,12 @@ chwiejnie",,,
 34546,WORD_NOUN,,HIRAGANA,,,烈震,れっしん,,resshin,katastrofalne trzęsienie ziemi,,,
 34547,WORD_NOUN,,HIRAGANA,,,色彩,しきさい,,shikisai,"kolor
 odcień",,,
-34548,WORD_NOUN,,KATAKANA,,,-,ストロボ,,sutorobo,"stroboskop
+34548,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ストロボ,,sutorobo,"stroboskop
 stroboskopowy
 lampa stroboskopowa",,,
 34549,WORD_NOUN,,KATAKANA,,,-,ストロボスコープ,,sutorobosukoopu,stroboskop,,,
 34550,WORD_NOUN,,HIRAGANA,,,上級,じょうきゅう,,joukyuu,"wyższy poziom
-wyższy poziom
 górny poziom
 górny stopień",,,
 34551,WORD_ADVERB,,HIRAGANA,,,動もすれば,ややもすれば,,yayamo sureba,"mieć skłonność do
@@ -98431,7 +98442,8 @@ być narażony na",,,
 akcent
 modulacja
 alteracja",,,
-34553,WORD_ADJECTIVE_I,,HIRAGANA,,,抑揚のない,よくようのない,,yokuyou no nai,monotonny,,,
+34553,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,抑揚のない,よくようのない,,yokuyou no nai,monotonny,,,
 34554,WORD_VERB_U,,HIRAGANA,,,蒸し返す,むしかえす,,mushikaesu,???,,,
 34555,WORD_NOUN,,KATAKANA,,,-,アプリケーション,,apurikeeshon,"aplikacja
 oprogramowanie",komputerowe,,
@@ -98445,7 +98457,7 @@ atrakcja turystyczna
 wystawa
 wydarzenie
 widowisko",,,
-34558,WORD_NOUN,,HIRAGANA,,,史家,しか,,shika,historyk,,,
+34558,WORD_NOUN,,HIRAGANA,,,史家,しか,,shika,historyk,,,DUPLICATE 11203
 34559,WORD_NOUN,,HIRAGANA,,,基軸,きじく,,kijiku,"kluczowy
 miara
 kryteria
@@ -98464,11 +98476,10 @@ bezczelność",,,
 cześć
 baj
 ciao",,,
-34563,"WORD_NOUN
-WORD_ADJECTIVE_NO",,,,,燻製,くんせい,,kunsei,"wędzenie
-wędzone
-wędzony
-wędzone jedzenie",,,
+34563,WORD_NOUN,,HIRAGANA,,,総理,そうり,,souri,"premier (głowa rządu)
+prezes rady ministrów
+lider rządzących
+nadzorca",skrót,,
 34564,WORD_NOUN,,HIRAGANA,,,手取り,てとり,,tetori,"utalentowany zapaśnik
 dobry w manipulowaniu (innymi)
 przebiegła osoba
@@ -98516,7 +98527,7 @@ swoboda
 prostota",,,
 34587,"WORD_ADJECTIVE_F
 WORD_ADVERB",,HIRAGANA,,,何て,なんて,,nante,"jak!
-co!",,,
+co!",,,DUPLICATE 20770
 34588,WORD_NOUN,,HIRAGANA,,,挑戦,ちょうせん,,chousen,"wyzwanie
 próba",,,
 34589,WORD_NOUN,,HIRAGANA,,,肥育,ひいく,,hiiku,tuczenie,,,
