@@ -596,7 +596,7 @@ DUPLICATE 1216"
 211,WORD_ADJECTIVE_I,,HIRAGANA,"Genki 1-2
 Genki 1-5
 Genki kanji 2-13",,安い,やすい,,yasui,"tani
-niedrogi",,,DUPLICATE 1262
+niedrogi",,,
 212,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,"Genki 1-3
 Genki kanji 1-11",,映画,えいが,,eiga,film,,,
@@ -4079,8 +4079,7 @@ prosty
 nietrudny
 łatwość robienia czegoś
 prawdopodobnie
-przypuszczalny",po czasowniku w formie bez masu,,"DUPLICATE 211
-DUPLICATE 7990"
+przypuszczalny",po czasowniku w formie bez masu,,
 1263,WORD_EXPRESSION,,HIRAGANA,,,食べやすい,たべやすい,,tabe yasui,łatwość jedzenia,,,
 1264,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,本物,ほんもの,,honmono,"prawdziwa rzecz (nie falsyfikat)
@@ -21603,7 +21602,7 @@ iść za",,,
 WORD_ADJECTIVE_NA",,HIRAGANA,,,廉,れん,,ren,"czystość
 uczciwość
 niska cena",,,DUPLICATE 7991
-7990,WORD_ADJECTIVE_I,,HIRAGANA,,,廉い,やすい,,yasui,tani,,,DUPLICATE 1262
+7990,WORD_ADJECTIVE_I,,HIRAGANA,,,廉い,やすい,,yasui,tani,,,
 7991,WORD_NOUN,,HIRAGANA,,,廉,かど,,kado,"oskarżenie
 podejrzenie",,,DUPLICATE 7989
 7992,WORD_VERB_U,,HIRAGANA,,,拒む,こばむ,,kobamu,"odmawiać
@@ -98265,7 +98264,7 @@ piksel",ang: dot,,
 34476,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,満期,まんき,,manki,"upłynięcie (terminu)
 termin płatności (wpłaty)",,,
-34477,WORD_NOUN,,HIRAGANA,,,満期日,まんきび ,,mankibi,"termin wymagalności
+34477,WORD_NOUN,,HIRAGANA,,,満期日,まんきび,,mankibi,"termin wymagalności
 data uregulowania
 data zapadalności
 termin płatności
@@ -98285,7 +98284,7 @@ home run (baseball)",,,
 WORD_TEMPORAL_NOUN",,HIRAGANA,,,一着,いっちゃく,,icchaku,"pierwszy przyjazd
 pierwsze przybycie
 pierwszy w wyścigu
-dopasowane ubranie ",,,
+dopasowane ubranie",,,
 34481,WORD_NOUN,,HIRAGANA,,,単身赴任,たんしんふにん,,tanshin funin,"praca z dala od własnego domu
 podjęcie pracy z dala od własnej rodziny",,,
 34482,WORD_NOUN,,HIRAGANA,,,単身赴任者,たんしんふにんしゃ,,tanshin funinsha,"osoba, która pracuje z dala od własnej rodziny",,,
@@ -98396,7 +98395,7 @@ finał",,,
 uwięzienie",,,
 34537,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,日本一,にほんいち,,nihon' ichi,"najlepszy w Japonii
-numer jeden w Japonii",,,
+numer jeden w Japonii",,,DUPLICATE 34648
 34538,WORD_NOUN,,KATAKANA,,,-,アクティビティ,,akutibiti,"aktywność
 działanie
 czynność",,,
@@ -98448,7 +98447,7 @@ alteracja",,,
 WORD_EXPRESSION",,HIRAGANA,,,抑揚のない,よくようのない,,yokuyou no nai,monotonny,,,
 34554,WORD_VERB_U,,HIRAGANA,,,蒸し返す,むしかえす,,mushikaesu,???,,,
 34555,WORD_NOUN,,KATAKANA,,,-,アプリケーション,,apurikeeshon,"aplikacja
-oprogramowanie",komputerowe,,
+oprogramowanie",komputerowa,,
 34556,WORD_NOUN,,HIRAGANA,,,催し,もよおし,,moyooshi,"wydarzenie
 święto
 spotkanie towarzyskie
@@ -98458,7 +98457,7 @@ patronat (nad spotkaniem)",,,
 atrakcja turystyczna
 wystawa
 wydarzenie
-widowisko",,,
+widowisko",,,DUPLICATE 34656
 34558,WORD_NOUN,,HIRAGANA,,,史家,しか,,shika,historyk,,,DUPLICATE 11203
 34559,WORD_NOUN,,HIRAGANA,,,基軸,きじく,,kijiku,"kluczowy
 miara
@@ -98510,7 +98509,8 @@ być pociągający",,,
 uprzejma wypowiedź
 uprzejme wyrażenie",,,
 34579,WORD_NOUN,,HIRAGANA,,,春日,はるひ,,haruhi,"wiosenny dzień
-wiosenne słońce",,,
+wiosenne słońce",,,"DUPLICATE 34664
+DUPLICATE 34665"
 34580,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,精神分析,せいしんぶんせき,,seishin bunseki,psychoanaliza,,,
 34581,WORD_NOUN,,KATAKANA,,,-,サイコアナリシス,,saikoanarishisu,psychoanaliza,,,
@@ -98649,3 +98649,103 @@ wyższa szkoła muzyczna",,,
 34638,WORD_NOUN,,HIRAGANA,,,山百合,やまゆり,,yamayuri,lilium auratum,odmiana lilli,,
 34639,WORD_NOUN,,KATAKANA,,,-,ヤマユリ,,yamayuri,lilium auratum,odmiana lilli,,
 34640,WORD_NOUN,,HIRAGANA,,,保健室,ほけんしつ,,hoken shitsu,gabinet lekarski w szkole,,,
+34641,"WORD_ADVERB
+WORD_EXPRESSION",,HIRAGANA,,,成る程,なるほど,,naruhodo,"racja
+zgadza się",,,
+34642,"WORD_ADVERB
+WORD_EXPRESSION",,KATAKANA,,,-,ナルホド,,naruhodo,"racja
+zgadza się",,,
+34643,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,ダメ,,dame,"beznadziejny
+niedobry
+nieużyteczny
+do niczego
+nie wolno",,,
+34644,WORD_NOUN,,KATAKANA,,,-,デテール,,deteeru,"detal
+szczegół",ang: detail,,
+34645,WORD_NOUN,,KATAKANA,,,-,ディーテイル,,diiteiru,"detal
+szczegół",ang: detail,,
+34646,WORD_NOUN,,HIRAGANA,,,大詰,おおづめ,,oodume,"finałowa scena
+zakończenie
+finał",,,
+34647,WORD_NOUN,,KATAKANA,,,-,エイジェント,,eijento,agent,,,
+34648,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,日本一,にっぽんいち,,nippon' ichi,"najlepszy w Japonii
+numer jeden w Japonii",,,DUPLICATE 34537
+34649,WORD_NOUN,,KATAKANA,,,-,アクチビティ,,akuchibiti,"aktywność
+działanie
+czynność",,,
+34650,WORD_NOUN,,KATAKANA,,,-,アクテビティ,,akutebiti,"aktywność
+działanie
+czynność",,,
+34651,WORD_NOUN,,KATAKANA,,,-,アクティビティー,,akutibitii,"aktywność
+działanie
+czynność",,,
+34652,WORD_VERB_U,,HIRAGANA,,,凋む,しぼむ,,shibomu,"zanikać
+znikać
+usychać
+marnieć
+zmizernieć",,,
+34653,WORD_NOUN,,KATAKANA,,,-,パロディ,,parodi,parodia,,,
+34654,WORD_VERB_U,,HIRAGANA,,,蒸返す,むしかえす,,mushikaesu,???,,,
+34655,WORD_NOUN,,KATAKANA,,,-,アプリケイション,,apurikeishon,"aplikacja
+oprogramowanie",komputerowa,,
+34656,WORD_NOUN,,HIRAGANA,,,催し物,もよおしもの,,moyooshimono,"interesujący punkt
+atrakcja turystyczna
+wystawa
+wydarzenie
+widowisko",,,DUPLICATE 34557
+34657,WORD_NOUN,,HIRAGANA,,,催物,もよおしもの,,moyooshimono,"interesujący punkt
+atrakcja turystyczna
+wystawa
+wydarzenie
+widowisko",,,DUPLICATE 34658
+34658,WORD_NOUN,,HIRAGANA,,,催物,もようしもの,,moyoushimono,"interesujący punkt
+atrakcja turystyczna
+wystawa
+wydarzenie
+widowisko",,,DUPLICATE 34657
+34659,WORD_EXPRESSION,,HIRAGANA,,,-,じゃあね,,jaane,"do zobaczenia później
+cześć
+baj
+ciao",,,
+34660,WORD_EXPRESSION,,HIRAGANA_KATAKANA,,,-,じゃーね,,jaane,"do zobaczenia później
+cześć
+baj
+ciao",,,
+34661,WORD_NOUN,,HIRAGANA,,,綜理,そうり,,souri,"premier (głowa rządu)
+prezes rady ministrów
+lider rządzących
+nadzorca",skrót,,
+34662,WORD_VERB_RU,,HIRAGANA,,,憬れる,あこがれる,,akogareru,"tęsknić za
+pragnąć
+być uwielbiany
+być pociągający",,,
+34663,WORD_VERB_RU,,HIRAGANA,,,憧憬れる,あこがれる,,akogareru,"tęsknić za
+pragnąć
+być uwielbiany
+być pociągający",,,
+34664,WORD_NOUN,,HIRAGANA,,,春日,しゅんじつ,,shunjitsu,"wiosenny dzień
+wiosenne słońce",,,"DUPLICATE 34579
+DUPLICATE 34665"
+34665,WORD_NOUN,,HIRAGANA,,,春日,はるび,,harubi,"wiosenny dzień
+wiosenne słońce",,,"DUPLICATE 34579
+DUPLICATE 34664"
+34666,WORD_VERB_U,,HIRAGANA,,,見逃がす,みのがす,,minogasu,"nie zauważyć
+przeoczyć
+pominąć
+przymknąć oko
+ignorować
+tracić okazję",,,
+34667,WORD_VERB_U,,HIRAGANA,,,見のがす,みのがす,,minogasu,"nie zauważyć
+przeoczyć
+pominąć
+przymknąć oko
+ignorować
+tracić okazję",,,
+34668,WORD_NOUN,,HIRAGANA_EXCEPTION,,,獅子女,すふぃんくす,,sufunkusu,sfinks,,,
+34669,WORD_NOUN,,KATAKANA,,,-,ドルフィン・キック,,dorufin kikku,pływanie delfinem,"styl pływacki, ang: dolphin kick",,
+34670,WORD_NOUN,,HIRAGANA,,,ひな菊,ひなぎく,,hinagiku,stokrotka,,,
+34671,WORD_NOUN,,KATAKANA,,,-,ヒナギク,,hinagiku,stokrotka,,,
+34672,WORD_NOUN,,HIRAGANA,,,姫女菀,ひめじょおん,,himejoon,stokrotka,,,
+34673,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヒメジョオン,,himejoon,stokrotka,,,
