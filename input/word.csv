@@ -99084,7 +99084,7 @@ dostawa (sufiks)",,,
 34777,WORD_NOUN,,HIRAGANA,,,直球,ちょっきゅう,,chokkyuu,"prosta piłka (baseball)
 prosty
 bezpośredni
-otwarty",,,
+otwarty",,,DUPLICATE 34829
 34778,WORD_NOUN,,HIRAGANA,,,突き,つき,,tsuki,"pchnięcie
 uderzenie (w szermierce)
 tsuki (atak na szyję, w kendo)
@@ -99130,17 +99130,17 @@ odpowiedni czas
 stosowny moment
 życzenia okresowe",,,
 34794,WORD_NOUN,,HIRAGANA,,,辞儀,じぎ,,jigi,"ukłon i przywitanie
-kłanianie się",,,
+kłanianie się",,,DUPLICATE 34839
 34795,WORD_NOUN,,HIRAGANA,,,辞宜,じぎ,,jigi,"ukłon i przywitanie
-kłanianie się",,,
+kłanianie się",,,DUPLICATE 34840
 34796,WORD_NOUN,,HIRAGANA,,,時儀,じぎ,,jigi,"ukłon i przywitanie
-kłanianie się",,,
+kłanianie się",,,DUPLICATE 34841
 34797,"WORD_ADVERB
 WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,-,それは,,sore wa,"bardzo
 niezwykle
 wyjątkowo
 to jest",,,
-34798,WORD_NOUN,,HIRAGANA,,,路肩,ろかた,,rokata,pobocze drogi,,,
+34798,WORD_NOUN,,HIRAGANA,,,路肩,ろかた,,rokata,pobocze drogi,,,DUPLICATE 34844
 34799,WORD_NOUN,,HIRAGANA,,,許容範囲,きょようはんい,,kyoyouhan'i,"stopień tolerancji
 poziom tolerancji
 dopuszczalny zakres
@@ -99200,4 +99200,70 @@ miejsce (w szeregu)",,,
 34822,WORD_EMPTY,,HIRAGANA_EXCEPTION,,,-,ゐ,,wi,wi,znak hiragana obecnie nieużywany,NO_TYPE_CHECK,
 34823,WORD_NOUN,,HIRAGANA,,,山路,やまじ,,yamaji,"górska droga
 górski szlak
-górska ścieżka",,,
+górska ścieżka",,,DUPLICATE 34846
+34824,WORD_VERB_U,,HIRAGANA,,,適う,かなう,,kanau,"spełnić (życzenie)
+zrealizować
+nadawać się
+konkurować
+rywalizować
+ścierać",,,
+34825,WORD_VERB_U,,HIRAGANA,,,敵う,かなう,,kanau,"spełnić (życzenie)
+zrealizować
+nadawać się
+konkurować
+rywalizować
+ścierać",,,
+34826,WORD_EXPRESSION,,HIRAGANA,,,に依って,によって,,ni yotte,"według
+zgodnie z
+dzięki (czemuś)
+z powodu
+zależnie od",,,
+34827,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,ウェット,,wetto,"mokry
+wilgotny",ang: wet,,
+34828,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,銘名,めいめい,,meimei,"nomenklatura
+nazewnictwo
+nazywanie",,,
+34829,WORD_NOUN,,HIRAGANA,,,直球,ちょくきゅう,,chokukyuu,"prosta piłka (baseball)
+prosty
+bezpośredni
+otwarty",,,DUPLICATE 34777
+34830,WORD_NOUN,,HIRAGANA,,,終えん,しゅうえん,,shuuen,"zgon
+upadek
+zejście",,,
+34831,WORD_NOUN,,KATAKANA,,,-,アイ,,ai,"indygo
+indygowiec","roślina, kolor, farba",,
+34832,WORD_NOUN,,HIRAGANA,,,言葉使い,ことばづかい,,kotobadukai,"mowa
+wyrażenie
+sformułowanie",,,
+34833,WORD_NOUN,,HIRAGANA,,,言葉づかい,ことばづかい,,kotobadukai,"mowa
+wyrażenie
+sformułowanie",,,
+34834,WORD_NOUN,,KATAKANA,,,-,スクランブルドエッグ,,sukuranburudo eggu,jajecznica,ang: scrambled eggs,,
+34835,WORD_NOUN,,KATAKANA,,,-,スクランブルドエッグズ,,sukuranburudo egguzu,jajecznica,ang: scrambled eggs,,
+34836,WORD_NOUN,,KATAKANA,,,-,スクランブル・エッグ,,sukuranburu eggu,jajecznica,ang: scrambled eggs,,
+34837,WORD_NOUN,,KATAKANA,,,-,スクランブルド・エッグ,,sukuranburudo eggu,jajecznica,ang: scrambled eggs,,
+34838,WORD_NOUN,,KATAKANA,,,-,スクランブルド・エッグズ,,sukuranburudo egguzu,jajecznica,ang: scrambled eggs,,
+34839,WORD_NOUN,,HIRAGANA,,,辞儀,じんぎ,,jingi,"ukłon i przywitanie
+kłanianie się",,,DUPLICATE 34794
+34840,WORD_NOUN,,HIRAGANA,,,辞宜,じんぎ,,jingi,"ukłon i przywitanie
+kłanianie się",,,DUPLICATE 34795
+34841,WORD_NOUN,,HIRAGANA,,,時儀,じんぎ,,jingi,"ukłon i przywitanie
+kłanianie się",,,DUPLICATE 34796
+34842,"WORD_ADVERB
+WORD_EXPRESSION",,HIRAGANA,,,-,そりゃ,,sorya,"bardzo
+niezwykle
+wyjątkowo
+to jest",,,
+34843,"WORD_ADVERB
+WORD_EXPRESSION",,HIRAGANA,,,-,そりゃあ,,soryaa,"bardzo
+niezwykle
+wyjątkowo
+to jest",,,
+34844,WORD_NOUN,,HIRAGANA,,,路肩,ろけん,,roken,pobocze drogi,,,DUPLICATE 34798
+34845,WORD_NOUN,,KATAKANA,,,-,ヴァイオリニスト,,vaiorinisuto,"skrzypek
+skrzypaczka",,,
+34846,WORD_NOUN,,HIRAGANA,,,山路,さんろ,,sanro,"górska droga
+górski szlak
+górska ścieżka",,,DUPLICATE 34823
