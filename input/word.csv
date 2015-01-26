@@ -99279,10 +99279,10 @@ górska ścieżka",,,DUPLICATE 34823
 34847,WORD_ADJECTIVE_NA,,KATAKANA,,,-,ジューシー,,juushii,soczysty,ang: juicy,,
 34848,WORD_NOUN,,HIRAGANA,,,北極熊,ほっきょくぐま,,hokkyokuguma,niedźwiedź polarny,,,
 34849,WORD_INTERJECTION,,KATAKANA,,,-,ウィ,,wi,tak,z języka francuskiego,,
-34850,WORD_NOUN,,KATAKANA,,,-,ヰ,,wi,wi,znak katakana obecnie nieużywany,,
+34850,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヰ,,wi,wi,znak katakana obecnie nieużywany,,
 34851,WORD_NOUN,,HIRAGANA,,,じゃん拳,じゃんけん,,janken,"papier, kamień, nożyce",gra,,
 34852,WORD_NOUN,,HIRAGANA,,,じゃん拳ぽん,じゃんけんぽん,,janken pon,"papier, kamień, nożyce",gra,,
-34853,WORD_NOUN,,KATAKANA,,,-,シロフクロウ,,shikofukurou,"puchacz śnieżny
+34853,WORD_NOUN,,KATAKANA,,,-,シロフクロウ,,shirofukurou,"puchacz śnieżny
 sowa śnieżka
 sowa biała",,,
 34854,WORD_NOUN,,KATAKANA,,,-,バトン,,baton,"batuta
@@ -99305,12 +99305,12 @@ pobrudzić
 zaplamić
 plamić
 uszkodzić
-stracić własną czystość",,,
+stracić własną czystość",,,DUPLICATE 34866
 34866,WORD_VERB_U,,HIRAGANA,,,汚る,けがる,,kegaru,"być naruszony
 być zakłócony
 być zanieczyszczony
 być nieczysty
-być zaplamiony",archaizm,,
+być zaplamiony",archaizm,,DUPLICATE 34865
 34867,WORD_NOUN,,HIRAGANA,,,日欧,にちおう,,nichiou,"Japonia i Europa
 Japońsko-Europejski",,,
 34868,WORD_NOUN,,HIRAGANA,,,押印,おういん,,ouin,stemplowanie własną pieczęcią,,,
@@ -99326,11 +99326,7 @@ podręcznik do czarnej magii
 księga magik i zaklęć",ang: grimoire,,
 34875,WORD_NOUN,,KATAKANA,,,-,ミルクチョコレート,,miruku chokoreeto,mleczna czekolada,,,
 34876,"WORD_ADVERB_TO
-WORD_ADJECTIVE_TARU",,HIRAGANA,,,潺潺,せんせん,,sensen,"_
------------
-潺潺
------------
-murmuringly (of a river, etc.)",,,
+WORD_ADJECTIVE_TARU",,HIRAGANA,,,潺潺,せんせん,,sensen,szumiąca,np. rzeka,,
 34877,WORD_NOUN,,KATAKANA,,,-,アンコール,,ankooru,"bis
 bisowanie",dodatkowy utwór grany na koniec koncertu,,
 34878,WORD_NOUN,,KATAKANA,,,-,ディスクロージャー,,disukuroojaa,"ujawnienie
@@ -99342,7 +99338,7 @@ ponton",ang: dinghy,,
 34881,WORD_NOUN,,KATAKANA,,,-,ブラチスラバ,,burachisuraba,Bratysława,Stolica Słowacji,,
 34882,WORD_NOUN,,KATAKANA,,,-,ボードセーリング,,boodo seeringu,"pływanie na desce
 windsurfing",ang: board sailing,,
-34883,WORD_NOUN,,KATAKANA,,,-,メゾソプラノ,,mezo sopuran,mezzosopran,,,
+34883,WORD_NOUN,,KATAKANA,,,-,メゾソプラノ,,mezo sopurano,mezzosopran,,,
 34884,WORD_NOUN,,KATAKANA,,,-,モダニズム,,modanizumu,modernizm,,,
 34885,WORD_NOUN,,KATAKANA,,,-,リサイクルショップ,,risaikuru shoppu,"sklep z rzeczami używanymi
 sklep typu secondhand",ang: recycle shop,,
