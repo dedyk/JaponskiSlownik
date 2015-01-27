@@ -99487,7 +99487,7 @@ nasze ryzyko",,,
 słuchanie
 przesłuchanie
 odbiór radiowy",,,
-34942,WORD_NOUN,,HIRAGANA,,,萩原,はぎはら,,hagihara,trzcinowe pole,,,
+34942,WORD_NOUN,,HIRAGANA,,,萩原,はぎはら,,hagihara,trzcinowe pole,,,DUPLICATE 35007
 34943,WORD_NOUN,,KATAKANA,,,-,アクセサリー,,akusesarii,"akcesoria
 dodatki",ang: accessory,,
 34944,WORD_NOUN,,KATAKANA,,,-,スプリング,,supuringu,"sprężyna
@@ -99558,10 +99558,10 @@ sznurkowy fartuch
 ozdobny sznurek zwisający od pasa zawodnika sumo
 jedzenie ofiarowane bogom",,,DUPLICATE 34968
 34968,WORD_NOUN,,HIRAGANA,,,-,さがり,,sagari,gruba spódniczka,,,DUPLICATE 34967
-34969,WORD_NOUN,,HIRAGANA,,,針魚,さより,,sayori,japońskie þółdziobcowate,gatunek rośliny,,
-34970,WORD_NOUN,,HIRAGANA,,,細魚,さより,,sayori,japońskie þółdziobcowate,gatunek rośliny,,
-34971,WORD_NOUN,,HIRAGANA,,,鱵,さより,,sayori,japońskie þółdziobcowate,gatunek rośliny,,
-34972,WORD_NOUN,,KATAKANA,,,-,サヨリ,,sayori,japońskie þółdziobcowate,gatunek rośliny,,
+34969,WORD_NOUN,,HIRAGANA,,,針魚,さより,,sayori,japońskie półdziobcowate,gatunek ryby,,DUPLICATE 35015
+34970,WORD_NOUN,,HIRAGANA,,,細魚,さより,,sayori,japońskie półdziobcowate,gatunek ryby,,
+34971,WORD_NOUN,,HIRAGANA,,,鱵,さより,,sayori,japońskie półdziobcowate,gatunek ryby,,
+34972,WORD_NOUN,,KATAKANA,,,-,サヨリ,,sayori,japońskie półdziobcowate,gatunek ryby,,
 34973,WORD_NOUN,,HIRAGANA,,,光り物,ひかりもの,,hikarimono,"lśniące ciało jak spadająca gwiazda
 dowolny błyszczący metal
 pokrojona w plastry ryba ze srebrną skórą (np. iwashi, aji, sayori, sanma, kohada)",,,
@@ -99579,7 +99579,8 @@ tarcza
 środek tarczy
 punkt kluczowy (rozmowy)
 punkt akupunktury
-węzeł gryfu (np. shamisen)",,,
+węzeł gryfu (np. shamisen)",,,"DUPLICATE 35017
+DUPLICATE 35018"
 34977,WORD_NOUN,,HIRAGANA,,,壺,つふ,,tsufu,"dzban
 garnek
 wazon
@@ -99589,7 +99590,8 @@ tarcza
 środek tarczy
 punkt kluczowy (rozmowy)
 punkt akupunktury
-węzeł gryfu (np. shamisen)",,,
+węzeł gryfu (np. shamisen)",,,"DUPLICATE 35019
+DUPLICATE 35020"
 34978,WORD_NOUN,,HIRAGANA,,,壼,つふ,,tsufu,"dzban
 garnek
 wazon
@@ -99599,7 +99601,8 @@ tarcza
 środek tarczy
 punkt kluczowy (rozmowy)
 punkt akupunktury
-węzeł gryfu (np. shamisen)",,,
+węzeł gryfu (np. shamisen)",,,"DUPLICATE 35021
+DUPLICATE 35022"
 34979,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,痛風,つうふう,,tsuufuu,"podagra
 gościec",,,
@@ -99690,3 +99693,133 @@ chodzenie szybko
 masturbacja (kolokwializm)",,,
 35001,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,有糸分裂,ゆうしぶんれつ,,yuushi bunretsu,mitoza,,,
+35002,WORD_NOUN,,HIRAGANA,,,取壊し,とりこわし,,torikowashi,"burzenie
+rozbiórka
+rozbieranie
+zniszczenie
+demontaż",,,
+35003,WORD_NOUN,,HIRAGANA,,,取り毀し,とりこわし,,torikowashi,"burzenie
+rozbiórka
+rozbieranie
+zniszczenie
+demontaż",,,
+35004,WORD_NOUN,,HIRAGANA,,,取毀し,とりこわし,,torikowashi,"burzenie
+rozbiórka
+rozbieranie
+zniszczenie
+demontaż",,,
+35005,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,時は金也,ときはかねなり,,toki wa kanenari,czas to pieniądz,,,
+35006,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,時は金成り,ときはかねなり,,toki wa kanenari,czas to pieniądz,,,
+35007,WORD_NOUN,,HIRAGANA,,,萩原,はぎわら,,hagiwara,trzcinowe pole,,,DUPLICATE 34942
+35008,WORD_NOUN,,KATAKANA,,,-,アクセサリ,,akusesari,"akcesoria
+dodatki",ang: accessory,,
+35009,WORD_NOUN,,KATAKANA,,,-,フロリング,,furoringu,drewniana podłoga,ang: wooden flooring,,
+35010,WORD_ADVERB,,HIRAGANA,,,一先ず,ひとまず,,hitomazu,"na razie
+raz
+jednokrotnie
+w zarysie",,,
+35011,WORD_ADVERB,,HIRAGANA,,,一先,ひとまず,,hitomazu,"na razie
+raz
+jednokrotnie
+w zarysie",,,
+35012,WORD_ADVERB,,HIRAGANA,,,ひと先ず,ひとまず,,hitomazu,"na razie
+raz
+jednokrotnie
+w zarysie",,,
+35013,WORD_VERB_U,,HIRAGANA,,,引き継ぐ,ひきつぐ,,hikitsugu,"przejąć
+przejmować
+obejmować
+przekazać
+wręczać",,,
+35014,WORD_VERB_U,,HIRAGANA,,,引きつぐ,ひきつぐ,,hikitsugu,"przejąć
+przejmować
+obejmować
+przekazać
+wręczać",,,
+35015,WORD_NOUN,,HIRAGANA,,,針魚,はりお,,hario,japońskie półdziobcowate,gatunek ryby,,DUPLICATE 34969
+35016,WORD_NOUN,,KATAKANA,,,-,センサ,,sensa,"sensor
+czujnik",,,
+35017,WORD_NOUN,,HIRAGANA,,,壷,つぼ,,tsubo,"dzban
+garnek
+wazon
+kubek do gry w kości
+zagłębienie (np. w basenie)
+tarcza
+środek tarczy
+punkt kluczowy (rozmowy)
+punkt akupunktury
+węzeł gryfu (np. shamisen)",,,"DUPLICATE 34976
+DUPLICATE 35018"
+35018,WORD_NOUN,,HIRAGANA,,,壷,つほ,,tsuho,"dzban
+garnek
+wazon
+kubek do gry w kości
+zagłębienie (np. w basenie)
+tarcza
+środek tarczy
+punkt kluczowy (rozmowy)
+punkt akupunktury
+węzeł gryfu (np. shamisen)",,,"DUPLICATE 34976
+DUPLICATE 35017"
+35019,WORD_NOUN,,HIRAGANA,,,壺,つぼ,,tsubo,"dzban
+garnek
+wazon
+kubek do gry w kości
+zagłębienie (np. w basenie)
+tarcza
+środek tarczy
+punkt kluczowy (rozmowy)
+punkt akupunktury
+węzeł gryfu (np. shamisen)",,,"DUPLICATE 34977
+DUPLICATE 35020"
+35020,WORD_NOUN,,HIRAGANA,,,壺,つほ,,tsuho,"dzban
+garnek
+wazon
+kubek do gry w kości
+zagłębienie (np. w basenie)
+tarcza
+środek tarczy
+punkt kluczowy (rozmowy)
+punkt akupunktury
+węzeł gryfu (np. shamisen)",,,"DUPLICATE 34977
+DUPLICATE 35019"
+35021,WORD_NOUN,,HIRAGANA,,,壼,つぼ,,tsubo,"dzban
+garnek
+wazon
+kubek do gry w kości
+zagłębienie (np. w basenie)
+tarcza
+środek tarczy
+punkt kluczowy (rozmowy)
+punkt akupunktury
+węzeł gryfu (np. shamisen)",,,"DUPLICATE 34978
+DUPLICATE 35022"
+35022,WORD_NOUN,,HIRAGANA,,,壼,つほ,,tsuho,"dzban
+garnek
+wazon
+kubek do gry w kości
+zagłębienie (np. w basenie)
+tarcza
+środek tarczy
+punkt kluczowy (rozmowy)
+punkt akupunktury
+węzeł gryfu (np. shamisen)",,,"DUPLICATE 34978
+DUPLICATE 35021"
+35023,WORD_NOUN,,HIRAGANA,,,泊り,とまり,,tomari,"pobyt
+postój
+przerwa
+miejsce zakotwiczenia
+nocna służba
+nocny dyżur",,,
+35024,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,頃合い,ころあい,,koroai,"odpowiedni czas
+stosowny czas
+dobry czas
+stosowność
+umiar",,,
+35025,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,野放途,のほうず,,nohouzu,"nieregulowany
+krnąbrny
+niesforny
+dziki
+nieokiełznany",,,
