@@ -99840,7 +99840,7 @@ WORD_NOUN",,HIRAGANA,,,定例,ていれい,,teirei,"regularny
 zwykły (np. sesja parlamentu)
 regularne działanie
 zwyczajne użycie
-regularna praktyka",,,
+regularna praktyka",,,DUPLICATE 35069
 35033,WORD_NOUN,,HIRAGANA,,,弾圧,だんあつ,,dan'atsu,"ucisk
 opresja
 prześladowanie
@@ -99952,3 +99952,34 @@ głucha osoba",,,
 35067,WORD_NOUN,,HIRAGANA,,,演奏者,えんそうしゃ,,ensousha,"artysta
 wykonawca
 muzyk",,,
+35068,WORD_NOUN,,KATAKANA,,,-,ウイーク,,uiiku,"tydzień
+słaby","ang: week, weak",,
+35069,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,定例,じょうれい,,jourei,"regularny
+zwykły (np. sesja parlamentu)
+regularne działanie
+zwyczajne użycie
+regularna praktyka",,,DUPLICATE 35032
+35070,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,劇戦,げきせん,,gekisen,"zażarta bitwa
+gwałtowna walka
+zawzięta bitwa
+gorące zawody
+ciężki bój",,,
+35071,WORD_NOUN,,KATAKANA,,,-,デフェンス,,defensu,obrona,ang: defense,,
+35072,WORD_NOUN,,KATAKANA,,,-,ホット・ライン,,hotto rain,"gorąca linia
+hotline",,,
+35073,"WORD_NOUN
+WORD_ADJECTIVE_F",,HIRAGANA,,,ふれ合い,ふれあい,,fureai,"kontakt
+styczność
+łączność
+bliski kontakt (z kimś)
+wzajemny dotyk",,,
+35074,"WORD_NOUN
+WORD_ADJECTIVE_F",,HIRAGANA,,,触合い,ふれあい,,fureai,"kontakt
+styczność
+łączność
+bliski kontakt (z kimś)
+wzajemny dotyk",,,
+35075,WORD_NOUN,,HIRAGANA,,,ろう者,ろうしゃ,,rousha,"niesłysząca osoba
+głucha osoba",,,
