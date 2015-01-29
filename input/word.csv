@@ -27692,10 +27692,12 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,沈黙,ちんもく,,chinmoku,"cisza
 uciszanie",,,
 10270,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,真直,まなお,,manao,"szczerość
-prostota",,,DUPLICATE 10271
+prostota",,,"DUPLICATE 10271
+DUPLICATE 35109"
 10271,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,真直,しんちょく,,shinchoku,"szczerość
-prostota",,,DUPLICATE 10270
+prostota",,,"DUPLICATE 10270
+DUPLICATE 35109"
 10272,WORD_NOUN,,HIRAGANA,,,精度,せいど,,seido,"dokładność
 precyzja",,,
 10273,WORD_NOUN,,HIRAGANA,,,糸枠,いとわく,,itowaku,"szpula
@@ -82403,19 +82405,27 @@ public relations",,,
 29368,"WORD_ADJECTIVE_NA
 WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,真っ直,まっすぐ,,massugu,"prosto
-prosty",,,
+prosty
+wyprostowany
+szczery",,,
 29369,"WORD_ADJECTIVE_NA
 WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,真っすぐ,まっすぐ,,massugu,"prosto
-prosty",,,
+prosty
+wyprostowany
+szczery",,,
 29370,"WORD_ADJECTIVE_NA
 WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,真直ぐ,まっすぐ,,massugu,"prosto
-prosty",,,
+prosty
+wyprostowany
+szczery",,,DUPLICATE 35107
 29371,"WORD_ADJECTIVE_NA
 WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,真すぐ,まっすぐ,,massugu,"prosto
-prosty",,,
+prosty
+wyprostowany
+szczery",,,DUPLICATE 35108
 29372,WORD_VERB_U,,HIRAGANA,,,列なる,つらなる,,tsuranaru,"być połączonym z
 łączyć się
 stać w rzędzie",,,
@@ -100088,19 +100098,20 @@ WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,真直ぐ,ますぐ,,masugu,"prosto
 prosty
 wyprostowany
-szczery",,,
+szczery",,,DUPLICATE 29370
 35108,"WORD_ADJECTIVE_NA
 WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,真すぐ,ますぐ,,masugu,"prosto
 prosty
 wyprostowany
-szczery",,,
+szczery",,,DUPLICATE 29371
 35109,"WORD_ADJECTIVE_NA
 WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,真直,ますぐ,,masugu,"prosto
 prosty
 wyprostowany
-szczery",,,
+szczery",,,"DUPLICATE 10270
+DUPLICATE 10271"
 35110,WORD_ADJECTIVE_NA,,HIRAGANA,,,乱り,みだり,,midari,"samolubny
 lekceważenie porządku i zasad
 nieostrożny
@@ -100156,3 +100167,12 @@ błysk miecza",,,
 WORD_ADVERBIAL_NOUN",,HIRAGANA,,,紫電一閃,しでんいっせん,,shiden' issen,"błysk błyskawicy
 błysk miecza
 wymachiwanie mieczem",,,
+35122,WORD_NOUN,,HIRAGANA,,,霊山,れいざん,,reizan,święta góra,,,
+35123,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,血漿,けっしょう,,kesshou,"osocze
+osocze krwi",,,
+35124,WORD_NOUN,,KATAKANA,,,-,ブラックコーヒー,,burakku koohii,czarna kawa,,,
+35125,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,電子音楽,でんしおんがく,,denshiongaku,muzyka elektroniczna,,,
+35126,WORD_NOUN,,KATAKANA,,,-,アポロ,,aporo,"Apollo (projekt kosmiczny)
+Apollo (w mitologii, bóg Grecki i Rzymu)",,,
