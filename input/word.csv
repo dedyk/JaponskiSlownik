@@ -4028,7 +4028,8 @@ ofiarować",,,DUPLICATE 3218
 ostry koniec
 krawędź
 róg (ulicy)
-zakręt",,,DUPLICATE 25045
+zakręt",,,"DUPLICATE 25045
+DUPLICATE 35317"
 1239,WORD_VERB_U,,HIRAGANA,,,に気がつく,にきがつく,,niki ga tsuku,zauważyć,,,
 1240,WORD_NOUN,SUFFIX,HIRAGANA,,,美,び,,bi,"piękno
 piękność
@@ -69237,7 +69238,8 @@ kwadrat
 goniec (w shogi)
 trzeci stopień (w japońskiej i chińskiej pentatonicznej skali)
 chińska konstelacja „róg” (jeden z 28 domów)
-jiao (jednostka monetarna, 1/10 juana)",,,DUPLICATE 1238
+jiao (jednostka monetarna, 1/10 juana)",,,"DUPLICATE 1238
+DUPLICATE 35317"
 25046,"WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,-,ざわざわ,,zawazawa,"hałaśliwie
 hałas
@@ -100784,7 +100786,7 @@ weranda","ang: porch, pouch",,
 35300,WORD_NOUN,,KATAKANA,,,-,パウチ,,pauchi,"torebka
 sakiewka
 woreczek",ang: pouch,,
-35301,WORD_ADJECTIVE_I,,HIRAGANA,,,あり得ない,ありえない,,orienai,"niemożliwy
+35301,WORD_ADJECTIVE_I,,HIRAGANA,,,あり得ない,ありえない,,arienai,"niemożliwy
 nieprawdopodobny
 wątpliwy
 mało prawdopodobny",,,
@@ -100822,22 +100824,28 @@ miejsce jadalne w restauracji","ang: hall, hole, whole, dining area of a restaur
 35312,WORD_NOUN,,HIRAGANA,,,点在,てんざい,,tenzai,"rozsiana wioska
 rozproszona wioska
 rozrzucona wioska",,,
-35313,WORD_NOUN,,HIRAGANA,,,電撃,でんげき,,dengeki,"wstrząs elektryczny
+35313,"WORD_NOUN
+WORD_ADJECTIVE_F",,HIRAGANA,,,電撃,でんげき,,dengeki,"wstrząs elektryczny
 atak błyskawicą",,,
 35314,WORD_NOUN,,KATAKANA,,,-,ポプリ,,popuri,potpourri,słowo pochodzi z języka francuskiego i oznacza mieszaninę różnych rzeczy,,
 35315,WORD_NOUN,,HIRAGANA,,,形態,けいたい,,keitai,"forma
 kształt
 figura",,,
-35316,WORD_NOUN,,HIRAGANA,,,直下,ちょっか,,chokka,"bezpośrednio pod
+35316,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,直下,ちょっか,,chokka,"bezpośrednio pod
 spadanie pionowe",,,
-35317,WORD_NOUN,,HIRAGANA,,,角,つの,,tsuno,róg,,,
+35317,WORD_NOUN,,HIRAGANA,,,角,つの,,tsuno,róg,,,"DUPLICATE 1238
+DUPLICATE 25045"
 35318,WORD_NOUN,,HIRAGANA,,,農地改革,のうちかいかく,,nouchi kaikaku,"reforma rolna
-reforma agralna",,,
+reforma agrarna",,,
 35319,WORD_NOUN,,KATAKANA,,,-,ストッパー,,sutoppaa,"korek
 zatyczka
 szpunt",ang: stopper,,
 35320,WORD_NOUN,,KATAKANA,,,-,ソックス,,sokkusu,skarpetki,ang: socks,,
-35321,WORD_NOUN,,KATAKANA,,,-,バトンタッチ,,baton tacchi,przekazywanie pałeczki,np. w sztafecie,,
+35321,WORD_NOUN,,HIRAGANA,,,軽減,けいげん,,keigen,"obniżka
+obniżenie
+ulga
+zmniejszenie",,,
 35322,WORD_NOUN,,KATAKANA_HIRAGANA,,,ドラム缶,ドラムかん,,doramu kan,beczka,,,
 35323,WORD_EXPRESSION,,HIRAGANA,,,訳じゃない,わけじゃない,,wake janai,"to nie znaczy, że ...
 ja nie miałem na myśli, że ...
