@@ -127,6 +127,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addNullMap("v4h");
 		addNullMap("joc");
 		addNullMap("vr");
+		addNullMap("poet");
 	}
 
 	private void addMap(DictionaryEntryType dictionaryEntryType, String entity) {
