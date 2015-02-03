@@ -11199,7 +11199,8 @@ zabraniać",,,
 4106,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,Genki kanji 2-20,,両手,りょうて,,ryou te,obie ręce,liczba mnoga,,
 4107,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,両足,りょうあし,,ryou ashi,"obie nogi
-obie stopy",liczba mnoga,,DUPLICATE 35387
+obie stopy",liczba mnoga,,"DUPLICATE 35387
+DUPLICATE 35400"
 4108,WORD_NOUN,,HIRAGANA,Genki kanji 2-20,,両替,りょうがえ,,ryougae,wymieniać,,,
 4109,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,"Genki kanji 2-20
@@ -48964,7 +48965,7 @@ noworoczne życzenia",,,
 WORD_PRONOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,手前,てまえ,,temae,"przed
 punkt widzenia (własny)
-ty (wulgarnie)",,,
+ty (wulgarnie)",,,DUPLICATE 35411
 18434,WORD_NOUN,,HIRAGANA,,,格子,こうし,,koushi,"sieć krystaliczna kryształu
 krata
 kratka (wzór)",,,
@@ -101021,7 +101022,8 @@ szkielet samochodu",,,
 35385,WORD_NOUN,,KATAKANA,,,-,ソプラノ,,sopurano,sopran,,,
 35386,WORD_NOUN,,KATAKANA,,,-,ファイアウォール,,faiawooru,"firewall
 ściana ogniowa",informatyka,,
-35387,WORD_NOUN,,HIRAGANA,,,両足,りょうそく,,ryou soku,obie stopy,,,DUPLICATE 4107
+35387,WORD_NOUN,,HIRAGANA,,,両足,りょうそく,,ryou soku,obie stopy,,,"DUPLICATE 4107
+DUPLICATE 35400"
 35388,WORD_NOUN,,HIRAGANA,,,責任感,せきにんかん,,sekininkan,poczucie odpowiedzialności,,,
 35389,WORD_NOUN,,KATAKANA,,,-,コープ,,koopu,"spółdzielnia
 kooperatywa",ang: co-op,,
@@ -101061,9 +101063,11 @@ zwolennik",,,
 zerwanie relacji
 zerwanie stosunków
 pogwałcenie przyjaźni",,,
-35400,WORD_NOUN,,HIRAGANA,,,両足,もろあし,,moroashi,obie stopy,,,
+35400,WORD_NOUN,,HIRAGANA,,,両足,もろあし,,moroashi,obie stopy,,,"DUPLICATE 4107
+DUPLICATE 35387"
 35401,WORD_NOUN,,HIRAGANA,,,現生,げんしょう,,genshou,"obecny świat
-obecne czasy",,,
+obecne czasy",,,"DUPLICATE 35412
+DUPLICATE 35414"
 35402,WORD_ADVERB,,HIRAGANA,,,今から,いまから,,imakara,"od teraz
 odtąd
 od obecnego momentu
@@ -101081,15 +101085,14 @@ własna wioska (pokornie)",,,
 35410,WORD_NOUN,,HIRAGANA,,,真綿,まわた,,mawata,"jedwabna wata
 jedwabny puch",,,
 35411,"WORD_PRONOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,手前,てめえ,,temee,ty,"wulgarnie, używane przez młodych mężczyzn",,
+WORD_ADJECTIVE_NO",,HIRAGANA,,,手前,てめえ,,temee,ty,"wulgarnie, używane przez młodych mężczyzn",,DUPLICATE 18433
 35412,WORD_NOUN,,HIRAGANA,,,現生,げんなま,,gennama,"rzeczywiste pieniądze
 realne pieniądze
-gotówka",,,
+gotówka",,,"DUPLICATE 35401
+DUPLICATE 35414"
 35413,WORD_NOUN,,HIRAGANA,,,現なま,げんなま,,gennama,"rzeczywiste pieniądze
 realne pieniądze
 gotówka",,,
-35414,WORD_NOUN,,HIRAGANA,,,現生,げんなま,,gennama,"rzeczywiste pieniądze
-realne pieniądze
-gotówka",,,
-35415,WORD_NOUN,,HIRAGANA,,,現生,げんせい,,gensei,"życie w teraźniejszości
-życie w obecnych czasach",,,
+35414,WORD_NOUN,,HIRAGANA,,,現生,げんせい,,gensei,"życie w teraźniejszości
+życie w obecnych czasach",,,"DUPLICATE 35401
+DUPLICATE 35412"
