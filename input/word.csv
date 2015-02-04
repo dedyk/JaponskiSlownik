@@ -31615,7 +31615,8 @@ DUPLICATE 4518
 DUPLICATE 6167
 DUPLICATE 7913
 DUPLICATE 10357
-DUPLICATE 26140"
+DUPLICATE 26140
+EDICT_DUPLICATE 35454"
 11860,WORD_VERB_IRREGULAR,,HIRAGANA,,,予定する,よていする,,yotei suru,planować,,,
 11861,"WORD_ADVERB
 WORD_ADVERB_TO
@@ -101210,9 +101211,10 @@ demokratyczny",,,
 35451,WORD_ADJECTIVE_I,,HIRAGANA,,,眩い,まぶい,,mabui,"śliczny
 czarujący
 uroczy
-ładny",,,
+ładny",,,"DUPLICATE 35452
+DUPLICATE 35464"
 35452,WORD_NOUN,,HIRAGANA,,,-,まぶい,,mabui,"duch
-dusza",dialekt Ryuukyuu,,
+dusza",dialekt Ryuukyuu,,DUPLICATE 35451
 35453,WORD_NOUN,,HIRAGANA,,,残月,ざんげつ,,zangetsu,księżyc widziany nad ranem,,,
 35454,WORD_INTERJECTION,,HIRAGANA,,,-,はあ,,haa,"tak
 rzeczywiście
@@ -101220,7 +101222,7 @@ faktycznie
 dobrze
 ha!
 co?
-he?",,,
+he?",,,EDICT_DUPLICATE 11859
 35455,WORD_NOUN,,HIRAGANA,,,警備,けいび,,keibi,"obrona
 ochrona
 chronienie
@@ -101244,3 +101246,10 @@ ważny sekret, który nie jest łatwo ujawnić innym",,,
 35459,WORD_NOUN,,HIRAGANA,,,亥,い,,i,dwunasty znak w chińskim zadiaku,,,
 35460,WORD_NOUN,,HIRAGANA,,,大冒険,だいぼうけん,,daibouken,wielka przygoda,,,
 35461,WORD_NOUN,,HIRAGANA,,,脇差,わきざし,,wakizashi,krótki miecz,,,
+35462,WORD_NOUN,,HIRAGANA,,,日本髪,にほんがみ,,nihon gami,tradycyjna japońska kobieca fryzura,,,
+35463,WORD_NOUN,,HIRAGANA,,,毛切り石,けきりいし,,kekiriishi,kamień do krojenia własnych włosów łonowych,"w łaźniach publicznych, w okresie Edo",,
+35464,WORD_ADJECTIVE_I,,HIRAGANA,,,眩い,まばゆい,,mabayui,"oszałamiający
+imponujący
+olśniewający
+oślepiający
+olśniewająco piękny",,,DUPLICATE 35451
