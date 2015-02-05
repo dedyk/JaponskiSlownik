@@ -101366,7 +101366,7 @@ przedterminowe zakończenie
 kończenie zdania drugiej osoby przewidując, co druga osoba może powiedzieć",,,
 35497,WORD_NOUN,,HIRAGANA,,,助手,じょしゅ,,joshu,"pomocnik
 asystent
-towarzysz",,,
+towarzysz",,,DUPLICATE 35539
 35498,WORD_NOUN,,HIRAGANA,,,反則,はんそく,,hansoku,"nieczysta gra (w sporcie)
 łamanie zasad
 naruszenie
@@ -101404,8 +101404,8 @@ piękny chłopczyk
 śliczny młodzieniec",,,
 35511,WORD_EXPRESSION,,HIRAGANA,,,何方へ,どちらへ,,dochirahe,"dokąd?
 gdzie?",,,
-35512,WORD_NOUN,,HIRAGANA,,,生き霊,いきりょう,,ikiryou,mściwy duch,zrodzony z nienawiści ludzi,,
-35513,WORD_NOUN,,HIRAGANA,,,生霊,いきりょう,,ikiryou,mściwy duch,zrodzony z nienawiści ludzi,,
+35512,WORD_NOUN,,HIRAGANA,,,生き霊,いきりょう,,ikiryou,mściwy duch,zrodzony z nienawiści ludzi,,DUPLICATE 35541
+35513,WORD_NOUN,,HIRAGANA,,,生霊,いきりょう,,ikiryou,mściwy duch,zrodzony z nienawiści ludzi,,DUPLICATE 35542
 35514,WORD_NOUN,,HIRAGANA,,,錦秋,きんしゅう,,kinshuu,"jesień z pięknymi liśćmi
 jesień gdzie liście są piękne jak brokat",,,
 35515,WORD_NOUN,,HIRAGANA,,,錦繍,きんしゅう,,kinshuu,"piękny materiał
@@ -101427,7 +101427,7 @@ trochę jak ...
 jakby ...
 podobny do
 przypominający",,,
-35518,WORD_NOUN,,HIRAGANA,,,五月雨,さみだれ,,samidare,wczesnoletni deszcz,,,
+35518,WORD_NOUN,,HIRAGANA,,,五月雨,さみだれ,,samidare,wczesnoletni deszcz,,,DUPLICATE 35545
 35519,"WORD_ADVERBIAL_NOUN
 WORD_NOUN",,HIRAGANA,,,真っ最中,まっさいちゅう,,massaichuu,"środek
 po środku
@@ -101440,3 +101440,57 @@ pośródf",,,
 35525,WORD_NOUN,,HIRAGANA,,,進撃,しんげき,,shingeki,"natarcie
 szarża
 atak",,,
+35526,WORD_NOUN,,KATAKANA,,,-,パトロウル,,patorouru,"patrol
+patrolowanie",,,
+35527,WORD_NOUN,,KATAKANA,,,-,ブランデ,,burande,brandy,napój alkoholowy,,
+35528,WORD_NOUN,,KATAKANA,,,-,ブランディ,,burandi,brandy,napój alkoholowy,,
+35529,WORD_NOUN,,HIRAGANA,,,引き分け,ひきわけ,,hikiwake,remis,"w zawodach, w meczu i etc",,
+35530,WORD_NOUN,,HIRAGANA,,,撒布,さんぷ,,sanpu,"rozpowszechnianie
+szerzenie
+rozproszenie
+rozpylenie
+natryskiwanie",,,DUPLICATE 35531
+35531,WORD_NOUN,,HIRAGANA,,,撒布,さっぷ,,sappu,"rozpowszechnianie
+szerzenie
+rozproszenie
+rozpylenie
+natryskiwanie",,,DUPLICATE 35530
+35532,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,リウマチ,,riumachi,reumatyzm,,,
+35533,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ロイマチス,,roimachisu,reumatyzm,,,
+35534,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,リウマチス,,riumachisu,reumatyzm,,,
+35535,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,リョーマチ,,ryoomachi,reumatyzm,,,
+35536,WORD_NOUN,,KATAKANA,,,-,デー・ゲーム,,dee geemu,"dzień gry
+dzień meczu",ang: day game,,
+35537,WORD_NOUN,,HIRAGANA,,,先どり,さきどり,,sakidori,"odbieranie z wyprzedzeniem
+przyjmowanie z wyprzedzeniem
+branie przed innymi
+pobieranie z wyprzedzeniem (ang: prefetch, informatyka)
+przedterminowe zakończenie
+kończenie zdania drugiej osoby przewidując, co druga osoba może powiedzieć",,,
+35538,WORD_NOUN,,HIRAGANA,,,先取,さきどり,,sakidori,"odbieranie z wyprzedzeniem
+przyjmowanie z wyprzedzeniem
+branie przed innymi
+pobieranie z wyprzedzeniem (ang: prefetch, informatyka)
+przedterminowe zakończenie
+kończenie zdania drugiej osoby przewidując, co druga osoba może powiedzieć",,,
+35539,WORD_NOUN,,HIRAGANA,,,助手,すけて,,sukete,"pomocnik
+asystent
+towarzysz",,,DUPLICATE 35497
+35540,WORD_ADVERB,ATEJI,HIRAGANA,,,万更,まんざら,,manzara,"nie całkiem
+niezupełnie
+niekompletnie",,,
+35541,WORD_NOUN,,HIRAGANA,,,生き霊,いきすだま,,ikisudama,mściwy duch,zrodzony z nienawiści ludzi,,DUPLICATE 35512
+35542,WORD_NOUN,,HIRAGANA,,,生霊,いきすだま,,ikisudama,mściwy duch,zrodzony z nienawiści ludzi,,DUPLICATE 35513
+35543,WORD_NOUN,,HIRAGANA,,,生き魑魅,いきすだま,,ikisudama,mściwy duch,zrodzony z nienawiści ludzi,,
+35544,WORD_NOUN,,HIRAGANA,,,生魑魅,いきすだま,,ikisudama,mściwy duch,zrodzony z nienawiści ludzi,,
+35545,WORD_NOUN,,HIRAGANA,,,五月雨,さつきあめ,,satsukiame,wczesnoletni deszcz,,,DUPLICATE 35518
+35546,"WORD_ADVERBIAL_NOUN
+WORD_NOUN",,HIRAGANA,,,真最中,まっさいちゅう,,massaichuu,"środek
+po środku
+pośródf",,,
+35547,WORD_NOUN,,KATAKANA,,,-,カレードスコープ,,kareedosukoopu,kalejdoskop,,,
+35548,WORD_NOUN,,KATAKANA,,,-,バランス・ボール,,baransu booru,piłka gimnastyczna,"ang: balance ball, exercise ball, Swiss ball",,
