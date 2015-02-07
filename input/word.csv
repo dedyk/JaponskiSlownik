@@ -93195,7 +93195,8 @@ raczkować",,,
 32719,WORD_VERB_U,,HIRAGANA,,,爬う,はう,,hau,"pełzać
 czołgać się
 raczkować",,,
-32720,WORD_NOUN,,KATAKANA,,,-,キー・ホルダー,,kii horudaa,"breloczek do kluczy
+32720,WORD_NOUN,,KATAKANA,,,-,キー・ホルダー,,kii horudaa,"brelok
+breloczek do kluczy
 zbiór kluczy (szyfrowanie, ang: keyring)",,,
 32721,WORD_NOUN,,KATAKANA,,,-,レパートリ,,repaatori,"repertuar
 repertorium",,,
@@ -101650,19 +101651,21 @@ premier
 lider
 przywódca",,,
 35614,WORD_NOUN,,HIRAGANA,,,画竜,がりょう,,garyou,"narysowany smok
-namalowany smok",,,
+namalowany smok",,,DUPLICATE 35615
 35615,WORD_NOUN,,HIRAGANA,,,画竜,がりゅう,,garyuu,"narysowany smok
-namalowany smok",,,
-35616,WORD_NOUN,,HIRAGANA,,,飛竜,ひりゅう,,hiryuu,latający smok,,,
-35617,WORD_NOUN,,HIRAGANA,,,飛竜,ひりょう,,hiryou,latający smok,,,
+namalowany smok",,,DUPLICATE 35614
+35616,WORD_NOUN,,HIRAGANA,,,飛竜,ひりゅう,,hiryuu,latający smok,,,"DUPLICATE 35617
+DUPLICATE 35661"
+35617,WORD_NOUN,,HIRAGANA,,,飛竜,ひりょう,,hiryou,latający smok,,,"DUPLICATE 35616
+DUPLICATE 35661"
 35618,WORD_NOUN,,HIRAGANA,,,守護竜,しゅごりゅう,,shugoryuu,"smok obrońca
 obronny smok
 chroniący smok",,,
 35619,WORD_NOUN,,HIRAGANA,,,守護龍,しゅごりゅう,,shugoryuu,"smok obrońca
 obronny smok
 chroniący smok",,,
-35620,WORD_NOUN,,HIRAGANA,,,白竜,はくりょう,,hakuryou,biały smok,,,
-35621,WORD_NOUN,,HIRAGANA,,,白竜,はくりゅう,,hakuryuu,biały smok,,,
+35620,WORD_NOUN,,HIRAGANA,,,白竜,はくりょう,,hakuryou,biały smok,,,DUPLICATE 35621
+35621,WORD_NOUN,,HIRAGANA,,,白竜,はくりゅう,,hakuryuu,biały smok,,,DUPLICATE 35620
 35622,WORD_NOUN,,HIRAGANA,,,竜船,りゅうせん,,ryuusen,"łódź w kształcie smoka
 smocza łódź",,,
 35623,WORD_NOUN,,KATAKANA,,,-,ドラゴンボート,,doragon booto,"łódź w kształcie smoka
@@ -101670,7 +101673,7 @@ smocza łódź",ang: dragon boat,,
 35624,WORD_NOUN,,KATAKANA,,,-,マスカット,,masukatto,"muszkatel
 muszkatel (wino)
 winogrono muskat",,,
-35625,WORD_NOUN,,KATAKANA,,,-,シートベルト,,shooto beruto,"pas bezpieczeństwa
+35625,WORD_NOUN,,KATAKANA,,,-,シートベルト,,shiito beruto,"pas bezpieczeństwa
 pasy bezpieczeństwa",ang: seat belt,,
 35626,WORD_NOUN,,HIRAGANA,,,謳歌,おうか,,ouka,"radość
 uradowanie
@@ -101710,8 +101713,8 @@ zaproponowane miejsce",,,
 35637,WORD_NOUN,,HIRAGANA,,,択ばれし者,えらばれしもの,,erabareshimono,wybraniec,,,
 35638,WORD_NOUN,,HIRAGANA,,,道号,どうごう,,dougou,samowybrany pseudonim dla mnicha,,,
 35639,WORD_NOUN,,HIRAGANA,,,御題,ぎょだい,,gyodai,motyw przewodni dla cesarskich zawodów poetyckich,,,
-35640,"WORD_EXPRESSION
-WORD_VERB_U",,HIRAGANA,,,選に入る,せんにはいる,,sennihairu,być wybrany,,,
+35640,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,選に入る,せんにはいる,,sennihairu,być wybrany,,,
 35641,"WORD_CONJUNCTION
 WORD_INTERJECTION
 WORD_NOUN",,HIRAGANA,,,御意,ぎょい,,gyoi,"twoja prośba
@@ -101721,7 +101724,7 @@ twoja przyjemność",,,
 cesarskie ubranie",,,
 35643,WORD_NOUN,,HIRAGANA,,,上諭,じょうゆ,,jouyu,"dekret cesarski
 edykt cesarski",,,
-35644,WORD_ADVERB,,HIRAGANA,,,-,なんでよっ,,nande yo,"dlaczego?
+35644,WORD_ADVERB,,HIRAGANA_EXCEPTION,,,-,なんでよっ,,nande yo,"dlaczego?
 dlaczego nie?
 za co?
 co nie tak?",,,
@@ -101759,7 +101762,8 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,空き間,あきま,,akima,"wolny pokój
 pokój do wynajęcia lub najmu",,,
 35659,WORD_NOUN,,HIRAGANA,,,黒揚羽,くろあげは,,kuroageha,papilio protenor,odmiana motyla,,
 35660,WORD_NOUN,,KATAKANA,,,-,ロザリオ,,rozario,różaniec,,,
-35661,WORD_NOUN,,KATAKANA,,,飛竜,ペーロン,,peeron,długa 22-osobowa łódź służąca do wyścigów,,,
+35661,WORD_NOUN,,KATAKANA,,,飛竜,ペーロン,,peeron,długa 22-osobowa łódź służąca do wyścigów,,,"DUPLICATE 35616
+DUPLICATE 35617"
 35662,WORD_NOUN,,KATAKANA,,,-,コンピュータゲーム,,konpyuuta geemu,gra komputerowa,,,
 35663,WORD_NOUN,,KATAKANA,,,-,ドリフト,,dorifuto,dryft,samochodem,,
 35664,WORD_NOUN,,HIRAGANA,,,偏流,へんりゅう,,henryuu,"prąd dryfowy
