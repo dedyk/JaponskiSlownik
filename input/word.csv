@@ -2690,7 +2690,8 @@ DUPLICATE 9190
 DUPLICATE 24188
 DUPLICATE 29841
 DUPLICATE 34241
-DUPLICATE 35787"
+DUPLICATE 35787
+DUPLICATE 35843"
 793,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-10,,-,おもち,,omochi,ciastko ryżowe,,,
 794,WORD_ADJECTIVE_I,,HIRAGANA,"Genki dodatkowe 1-10
 Genki 2-13
@@ -23557,7 +23558,9 @@ DUPLICATE 8617"
 8617,WORD_NOUN,,HIRAGANA,,,牡蠣,ぼれい,,borei,ostryga,,,DUPLICATE 8616
 8618,WORD_NOUN,,HIRAGANA,,,牡蛎,ぼれい,,borei,ostryga,,,DUPLICATE 9190
 8619,WORD_NOUN,,HIRAGANA,,,蠣,かき,,kaki,ostryga,,,DUPLICATE 792
-8620,WORD_NOUN,,KATAKANA,,,-,カキ,,kaki,ostryga,,,EDICT_DUPLICATE 35787
+8620,WORD_NOUN,,KATAKANA,,,-,カキ,,kaki,ostryga,,,"DUPLICATE 35844
+EDICT_DUPLICATE 35787
+EDICT_DUPLICATE 35843"
 8621,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,諷刺,ふうし,,fuushi,"satyra
 ironia
@@ -102199,7 +102202,7 @@ bezbarwny
 nieciekawy
 męczący
 daremny
-próżny",,,
+próżny",,,DUPLICATE 35847
 35802,WORD_VERB_U,,HIRAGANA,,,喋る,しゃべる,,shaberu,"rozmawiać
 czatować
 paplać
@@ -102228,7 +102231,7 @@ fryzjerstwo
 układanie włosów",,,
 35815,WORD_NOUN,,HIRAGANA,,,髪結,かみゆい,,kamiyui,"fryzjer
 fryzjerstwo
-układanie włosów",,,
+układanie włosów",,,DUPLICATE 35850
 35816,WORD_NOUN,,HIRAGANA,,,愉楽,ゆらく,,yuraku,przyjemność,,,
 35817,WORD_NOUN,,HIRAGANA,,,逸楽,いつらく,,itsuraku,przyjemność,,,
 35818,WORD_NOUN,,HIRAGANA,,,佚楽,いつらく,,itsuraku,przyjemność,,,
@@ -102241,10 +102244,10 @@ radość",,,
 radość",,,
 35824,WORD_VERB_U,,HIRAGANA,,,点る,ともる,,tomoru,"być oświetlony (np. świeczką, lampą, żarówką i etc)
 być zapalony
-być płonący",,,
+być płonący",,,DUPLICATE 35851
 35825,WORD_VERB_U,,HIRAGANA,,,灯る,ともる,,tomoru,"być oświetlony (np. świeczką, lampą, żarówką i etc)
 być zapalony
-być płonący",,,
+być płonący",,,DUPLICATE 35852
 35826,WORD_NOUN,,HIRAGANA,,,奴等,やつら,,yatsura,"oni
 tamci ludzie",,,
 35827,WORD_NOUN,,HIRAGANA,,,奴ら,やつら,,yatsura,"oni
@@ -102266,7 +102269,7 @@ metempsychoza",,,DUPLICATE 35831
 35833,WORD_EXPRESSION,,HIRAGANA,,,夜明け前が一番暗い,よあけまえがいちばんくらい,,yoake mae ga ichiban kurai,ciemność jest zawsze przed świtem,,,
 35834,WORD_NOUN,,HIRAGANA,,,地境,ちきょう,,chikyou,"granica
 granica ziemi
-granica terenu",,,
+granica terenu",,,DUPLICATE 35853
 35835,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,地峡,ちきょう,,chikyou,przesmyk,"wąski pas lądu łączący dwa większe obszary lądowe, oddzielający od siebie dwa morza lub oceany",,
 35836,WORD_NOUN,,HIRAGANA,,,初巳,はつみ,,hatsumi,pierwszy dzień smoka w roku,,,
@@ -102280,3 +102283,63 @@ podłużny",,,
 wydarzenie militarne
 kwestia wojskowa
 wojskowa osoba",,,
+35840,WORD_NOUN,,HIRAGANA,,,解り,わかり,,wakari,"rozumienie
+zrozumienie
+pojmowanie
+zdolność pojmowania",,,
+35841,WORD_NOUN,,HIRAGANA,,,判り,わかり,,wakari,"rozumienie
+zrozumienie
+pojmowanie
+zdolność pojmowania",,,
+35842,WORD_NOUN,,HIRAGANA,,,分り,わかり,,wakari,"rozumienie
+zrozumienie
+pojmowanie
+zdolność pojmowania",,,
+35843,WORD_NOUN,,HIRAGANA,,,柹,かき,,kaki,"kaki
+japońska persymona (diospyros kaki)",,,"DUPLICATE 792
+EDICT_DUPLICATE 8620"
+35844,WORD_NOUN,,KATAKANA,,,-,カキ,,kaki,"kaki
+japońska persymona (diospyros kaki)",,,DUPLICATE 8620
+35845,WORD_NOUN,,HIRAGANA,,,終熄,しゅうそく,,shuusoku,"zakończenie
+być wyjaśniony
+być rozwiązany",,,
+35846,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,パワー・アップ,,pawaa appu,"stawanie się mocniejszym
+stawanie się silniejszym",ang: power up,,
+35847,WORD_ADJECTIVE_I,,HIRAGANA,,,味気ない,あじきない,,ajikinai,"nudny
+mdły
+bezbarwny
+nieciekawy
+męczący
+daremny
+próżny",,,DUPLICATE 35801
+35848,WORD_ADJECTIVE_I,,HIRAGANA,,,味気無い,あじけない,,ajikenai,"nudny
+mdły
+bezbarwny
+nieciekawy
+męczący
+daremny
+próżny",,,DUPLICATE 35849
+35849,WORD_ADJECTIVE_I,,HIRAGANA,,,味気無い,あじきない,,ajikinai,"nudny
+mdły
+bezbarwny
+nieciekawy
+męczący
+daremny
+próżny",,,DUPLICATE 35848
+35850,WORD_NOUN,,HIRAGANA,,,髪結,かみい,,kamii,"fryzjer
+fryzjerstwo
+układanie włosów",,,DUPLICATE 35815
+35851,WORD_VERB_U,,HIRAGANA,,,点る,とぼる,,toboru,"być oświetlony (np. świeczką, lampą, żarówką i etc)
+być zapalony
+być płonący",,,DUPLICATE 35824
+35852,WORD_VERB_U,,HIRAGANA,,,灯る,とぼる,,toboru,"być oświetlony (np. świeczką, lampą, żarówką i etc)
+być zapalony
+być płonący",,,DUPLICATE 35825
+35853,WORD_NOUN,,HIRAGANA,,,地境,じざかい,,jizakai,"granica
+granica ziemi
+granica terenu",,,DUPLICATE 35834
+35854,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,小判形,こばんがた,,kobangata,"owal
+owalny
+eliptyczny
+podłużny",,,
