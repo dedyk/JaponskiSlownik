@@ -1,10 +1,13 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.util.List;
 
-import pl.idedyk.japanese.dictionary.common.Validator;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
 public class Test {
 
@@ -320,6 +323,7 @@ public class Test {
 		}
 		*/
 		
+		/*
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
@@ -328,5 +332,15 @@ public class Test {
 		}
 		
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);
+		*/
+				
+		System.out.println("generateKanjiRadical");
+
+		List<RadicalInfo> radicalList = KanjiDic2Reader.readRadkfile("../JapaneseDictionary_additional/radkfile");
+
+		OutputStream outputStream = new FileOutputStream(new File("output/radical-test.csv"));
+
+		CsvReaderWriter.generateKanjiRadicalCsv(outputStream, radicalList);
+
 	}
 }
