@@ -355,7 +355,10 @@ WORD_INTERJECTION",,HIRAGANA,Genki 1-2,,彼,あれ,,are,"tam
 tamten
 tamta",daleko od mówcy i osoby docelowej,,DUPLICATE 882
 127,"WORD_NOUN
-WORD_INTERJECTION",,HIRAGANA,Genki 1-2,,何れ,どれ,,dore,który,,,"DUPLICATE 11943
+WORD_INTERJECTION",,HIRAGANA,Genki 1-2,,何れ,どれ,,dore,"który
+którykolwiek
+więc
+zobaczmy",,,"DUPLICATE 11943
 DUPLICATE 11943
 DUPLICATE 19212
 DUPLICATE 19213"
@@ -27971,7 +27974,7 @@ wydział ekonomii",,,
 10363,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,倫理,りんり,,rinri,"etyka
 moralność",,,
-10364,WORD_NOUN,,HIRAGANA,,,天ぷら,てんぷら,,tenpura,tempura,japońska potrawa,,
+10364,WORD_NOUN,,HIRAGANA,,,天ぷら,てんぷら,,tenpura,tempura,"potrawa kuchni japońskiej, pochodząca z Portugalii",,
 10365,WORD_NOUN,,HIRAGANA,,,寄贈,きぞう,,kizou,"dotacja
 darowizna
 datek",,,DUPLICATE 30527
@@ -33002,7 +33005,11 @@ WORD_ADJECTIVE_NA
 WORD_ADVERB
 WORD_ADJECTIVE_NO",,HIRAGANA,,,余り,あまり,,amari,"resztki
 pozostałości
-nadwyżka",,,"DUPLICATE 257
+nadwyżka
+niewiele (z zdaniem w formie przeczącej)
+zbyt wiele
+obficie
+w pełni",,,"DUPLICATE 257
 DUPLICATE 30983"
 12516,WORD_VERB_U,,HIRAGANA,,,電車に乗る,でんしゃにのる,,densha ni noru,wsiadać do pociągu,,,
 12517,WORD_VERB_RU,,HIRAGANA,,,電車を降りる,でんしゃをおりる,,densha o oriru,wysiadać z pociągu,,,
@@ -44606,19 +44613,43 @@ przyczepność",,,
 16998,"WORD_ADVERB_TO
 WORD_ADVERB
 WORD_ADJECTIVE_NO
-WORD_ADJECTIVE_NA",,HIRAGANA,,,-,かちかち,,kachikachi,"tik-tak
+WORD_ADJECTIVE_NA",,HIRAGANA,,,-,かちかち,,kachi kachi,"tik-tak (odgłos dużego zegara)
 tykać
 brzęczenie
 pukanie
-stukanie",,,
+stukanie
+suchy i twardy
+zmrożony
+uporczywy
+zaciekły
+uparty
+oporny na zmiany
+zawzięty
+zesztywniały ze strachu
+napięty
+nerwowy
+przestraszony
+przerażony",,,
 16999,"WORD_ADVERB_TO
 WORD_ADVERB
 WORD_ADJECTIVE_NO
-WORD_ADJECTIVE_NA",,KATAKANA,,,-,カチカチ,,kachikachi,"tik-tak
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,カチカチ,,kachi kachi,"tik-tak (odgłos dużego zegara)
 tykać
 brzęczenie
 pukanie
-stukanie",,,
+stukanie
+suchy i twardy
+zmrożony
+uporczywy
+zaciekły
+uparty
+oporny na zmiany
+zawzięty
+zesztywniały ze strachu
+napięty
+nerwowy
+przestraszony
+przerażony",,,
 17000,WORD_NOUN,,KATAKANA,,,-,アメダス,,amedasu,"AMeDAS
 Automated Meteorological Data Acquisition System",Zautomatyzowany system akwizycji danych meteorologicznych,,
 17001,WORD_NOUN,,KATAKANA,,,-,イリュージョン,,iryuujon,"iluzja
@@ -80835,7 +80866,15 @@ stać w rzędzie",,,
 być ustawionym
 stawać w szeregu
 stać w rzędzie",,,
-28825,WORD_NOUN,,HIRAGANA,,,並,なみ,,nami,pospolity,,,
+28825,WORD_NOUN,,HIRAGANA,,,並,なみ,,nami,"pospolity
+średni
+przeciętny
+zwyczajny
+rząd (np. domów)
+średni poziom
+taki sam poziom
+równy
+każdy (np. miesiąc)",,,
 28826,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,苦勞,くろう,,kurou,"kłopoty
 trudności
@@ -86234,9 +86273,9 @@ ciemnota",,,
 30521,WORD_NOUN,,HIRAGANA,,,耀き,かがやき,,kagayaki,blask,,,
 30522,WORD_NOUN,,HIRAGANA,,,鰻,むなぎ,,munagi,węgorz,,,DUPLICATE 10356
 30523,WORD_NOUN,,KATAKANA,,,-,ウナギ,,unagi,węgorz,,,
-30524,WORD_NOUN,,HIRAGANA,,,天麩羅,てんぷら,,tenpura,tempura,japońska potrawa,,
-30525,WORD_NOUN,,HIRAGANA,,,天婦羅,てんぷら,,tenpura,tempura,japońska potrawa,,
-30526,WORD_NOUN,,KATAKANA,,,-,テンプラ,,tenpura,tempura,japońska potrawa,,
+30524,WORD_NOUN,,HIRAGANA,,,天麩羅,てんぷら,,tenpura,tempura,"potrawa kuchni japońskiej, pochodząca z Portugalii",,
+30525,WORD_NOUN,,HIRAGANA,,,天婦羅,てんぷら,,tenpura,tempura,"potrawa kuchni japońskiej, pochodząca z Portugalii",,
+30526,WORD_NOUN,,KATAKANA,,,-,テンプラ,,tenpura,tempura,"potrawa kuchni japońskiej, pochodząca z Portugalii",,
 30527,WORD_NOUN,,HIRAGANA,,,寄贈,きそう,,kisou,"dotacja
 darowizna
 datek",,,DUPLICATE 10365
@@ -92501,19 +92540,43 @@ pełny brzuch",,,
 32517,"WORD_ADVERB_TO
 WORD_ADVERB
 WORD_ADJECTIVE_NO
-WORD_ADJECTIVE_NA",,HIRAGANA,,,-,こちこち,,kochikochi,"tik-tak
+WORD_ADJECTIVE_NA",,HIRAGANA,,,-,こちこち,,kochi kochi,"tik-tak (odgłos dużego zegara)
 tykać
 brzęczenie
 pukanie
-stukanie",,,
+stukanie
+suchy i twardy
+zmrożony
+uporczywy
+zaciekły
+uparty
+oporny na zmiany
+zawzięty
+zesztywniały ze strachu
+napięty
+nerwowy
+przestraszony
+przerażony",,,
 32518,"WORD_ADVERB_TO
 WORD_ADVERB
 WORD_ADJECTIVE_NO
-WORD_ADJECTIVE_NA",,KATAKANA,,,-,コチコチ,,kochikochi,"tik-tak
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,コチコチ,,kochi kochi,"tik-tak (odgłos dużego zegara)
 tykać
 brzęczenie
 pukanie
-stukanie",,,
+stukanie
+suchy i twardy
+zmrożony
+uporczywy
+zaciekły
+uparty
+oporny na zmiany
+zawzięty
+zesztywniały ze strachu
+napięty
+nerwowy
+przestraszony
+przerażony",,,
 32519,WORD_NOUN,,KATAKANA,,,-,パパイヤ,,papaiya,"papaja
 melonowiec",,,
 32520,WORD_NOUN,,HIRAGANA,,,どら息子,どらむすこ,,doramusuko,"leniwy syn
@@ -102507,3 +102570,76 @@ wygląda jak by",,,
 35908,"WORD_EXPRESSION
 WORD_ADVERB",,HIRAGANA_EXCEPTION,,,と言うことは,ということは,,to iu koto wa,"to znaczy
 więc to znaczy",,,
+35909,WORD_NOUN,,KATAKANA,,,-,カルテット,,karutetto,"kwartet
+czteroosobowy zespół muzyczny",,,
+35910,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,発作,ほっさ,,hossa,"atak (np. kaszlu)
+napad (np. padaczki)",,,
+35911,WORD_NOUN,,KATAKANA,,,-,ホームイン,,hoomu in,zdobycie punktu,"w baseball'u, ang: home in, get home",,
+35912,WORD_NOUN,,KATAKANA,,,-,レプラ,,repura,trąd,ang: leprosy,,
+35913,WORD_ADJECTIVE_I,,HIRAGANA,,,仕方ない,しかたない,,shikatanai,???,,,
+35914,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,先だって,せんだって,,sendatte,"ostatnio
+niedawno",,,
+35915,WORD_NOUN,,HIRAGANA,,,効能,こうのう,,kounou,"efekt
+skutek
+efektywność
+skuteczność
+korzyść
+pożytek",,,
+35916,WORD_NOUN,,HIRAGANA,,,呆気,あっけ,,akke,"zaskoczony
+oniemiały
+stropiony",,,
+35917,WORD_NOUN,,HIRAGANA,,,庭木,にわき,,niwaki,drzewo ogrodowe,,,
+35918,WORD_NOUN,,KATAKANA,,,-,コーティング,,kootingu,"powłoka
+warstwa
+pokład",ang: coating,,
+35919,WORD_VERB_IRREGULAR,,HIRAGANA,,,徹する,てっする,,tessuru,"przenikać
+penetrować
+wnikać
+wgłębiać się
+poświęcać się (czemuś)
+robić uważnie i pilnie
+robić przez (np. całą noc)",,,
+35920,WORD_NOUN,,KATAKANA,,,-,スタンド,,sutando,"stojak
+trybuna
+podstawka (np. na kałamarz i pióra)
+lampa biurkowa
+stanowisko (np. redakcji)
+stacja (np. benzynowa)",ang: stand,,
+35921,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,期間限定,きかんげんてい,,kikan gentei,"ograniczony czas
+oferta ograniczona w czasie",,,
+35922,WORD_NOUN,,HIRAGANA,,,渡航,とこう,,tokou,"podróż
+rejs
+wojaż",,,
+35923,WORD_NOUN,,HIRAGANA,,,湿疹,しっしん,,shisshin,"egzema
+wyprysk
+wykwit skórny
+wysypka",choroba,,
+35924,WORD_NOUN,,HIRAGANA,,,現行犯,げんこうはん,,genkouhan,"gorący uczynek
+na gorącym uczynku",np. złapany przestępca,,
+35925,WORD_NOUN,,HIRAGANA,,,生誕,せいたん,,seitan,narodziny,,,
+35926,WORD_NOUN,,HIRAGANA,,,盗塁,とうるい,,tourui,skradziona baza,"ang: stolen base, w baseballu następuje wówczas gdy biegacz osiągnie kolejną bazę, bez wprowadzenia piłki do gry lub w wyniku popełnienia błędu przez drużynę broniącą",,
+35927,WORD_NOUN,SUFFIX,HIRAGANA,,,級,きゅう,,kyuu,"klasa
+stopień
+pozycja",,,
+35928,WORD_NOUN,,HIRAGANA,,,締め付け,しめつけ,,shimetsuke,"nacisk
+zacisk
+zaciskanie
+zapięcie",,,
+35929,WORD_NOUN,,HIRAGANA,,,繰り上げ,くりあげ,,kuriage,"zwyżka
+ruch w górę
+ruch w kierunku ku górze",,,
+35930,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,血縁,けつえん,,ketsuen,"pokrewieństwo
+pokrewieństwo krwi
+więzy krwi",,,
+35931,WORD_NOUN,,HIRAGANA,,,論点,ろんてん,,ronten,"sedno pytania
+cel pytania
+punkt pytania",,,
+35932,WORD_NOUN,,HIRAGANA,,,造語,ぞうご,,zougo,"neologizm
+nowe wyrażenie",,,
+35933,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,飽和,ほうわ,,houwa,"nasycenie
+saturacja",,,
