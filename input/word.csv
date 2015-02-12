@@ -102604,7 +102604,7 @@ napad (np. padaczki)",,,
 35913,WORD_ADJECTIVE_I,,HIRAGANA,,,仕方ない,しかたない,,shikatanai,???,,,
 35914,"WORD_ADVERBIAL_NOUN
 WORD_TEMPORAL_NOUN",,HIRAGANA,,,先だって,せんだって,,sendatte,"ostatnio
-niedawno",,,
+niedawno",,,DUPLICATE 35958
 35915,WORD_NOUN,,HIRAGANA,,,効能,こうのう,,kounou,"efekt
 skutek
 efektywność
@@ -102675,8 +102675,8 @@ WORD_ADJECTIVE_NO",,KATAKANA,,,-,マイナス,,mainasu,minus,,,
 35937,WORD_NOUN,,HIRAGANA,,,甘受,かんじゅ,,kanju,"uleganie
 podporządkowanie
 znoszenie",,,
-35938,WORD_NOUN,,HIRAGANA,,,貫主,かんじゅ,,kanju,główny opat (w buddyjskiej świątyni),,,
-35939,WORD_NOUN,,HIRAGANA,,,貫首,かんじゅ,,kanju,główny opat (w buddyjskiej świątyni),,,
+35938,WORD_NOUN,,HIRAGANA,,,貫主,かんじゅ,,kanju,główny opat,w buddyjskiej świątyni,,DUPLICATE 35972
+35939,WORD_NOUN,,HIRAGANA,,,貫首,かんじゅ,,kanju,główny opat,w buddyjskiej świątyni,,DUPLICATE 35973
 35940,WORD_NOUN,,HIRAGANA,,,官需,かんじゅ,,kanju,"oficjalne żądanie
 oficjalny postulat",,,
 35941,WORD_NOUN,,HIRAGANA,,,感受,かんじゅ,,kanju,"wrażliwość
@@ -102718,6 +102718,87 @@ gmerać
 szukać po omacku",,,
 35953,WORD_VERB_U,,HIRAGANA,,,乗り馴らす,のりならす,,norinarasu,ujeżdżać,konia,,
 35954,WORD_VERB_U,,HIRAGANA,,,押し込む,おしこむ,,oshikomu,"wciskać do
+pchać do
+wpychać do
+upychać do
+włamywać się",,,
+35955,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クァルテット,,kuarutetto,"kwartet
+czteroosobowy zespół muzyczny",,,
+35956,WORD_NOUN,,KATAKANA,,,-,ホーム・イン,,hoomu in,zdobycie punktu,"w baseball'u, ang: home in, get home",,
+35957,WORD_ADJECTIVE_I,,HIRAGANA,,,仕方無い,しかたない,,shikatanai,???,,,
+35958,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,先だって,さきだって,,sakidatte,"ostatnio
+niedawno",,,DUPLICATE 35914
+35959,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,先達て,せんだって,,sendatte,"ostatnio
+niedawno",,,DUPLICATE 35960
+35960,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,先達て,さきだって,,sakidatte,"ostatnio
+niedawno",,,DUPLICATE 35959
+35961,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,先立って,さきだって,,sakidatte,"ostatnio
+niedawno",,,
+35962,WORD_NOUN,,HIRAGANA,,,功能,こうのう,,kounou,"efekt
+skutek
+efektywność
+skuteczność
+korzyść
+pożytek",,,DUPLICATE 35963
+35963,WORD_NOUN,,HIRAGANA,,,功能,くのう,,kunou,"efekt
+skutek
+efektywność
+skuteczność
+korzyść
+pożytek",,,DUPLICATE 35962
+35964,WORD_NOUN,,HIRAGANA,,,あっ気,あっけ,,akke,"zaskoczony
+oniemiały
+stropiony",,,
+35965,WORD_NOUN,,HIRAGANA,,,飽気,あっけ,,akke,"zaskoczony
+oniemiały
+stropiony",,,
+35966,WORD_NOUN,,HIRAGANA,,,湿しん,しっしん,,shisshin,"egzema
+wyprysk
+wykwit skórny
+wysypka",choroba,,
+35967,WORD_NOUN,,HIRAGANA,,,締めつけ,しめつけ,,shimetsuke,"nacisk
+zacisk
+zaciskanie
+zapięcie",,,
+35968,WORD_NOUN,,HIRAGANA,,,締付け,しめつけ,,shimetsuke,"nacisk
+zacisk
+zaciskanie
+zapięcie",,,
+35969,WORD_NOUN,,HIRAGANA,,,締付,しめつけ,,shimetsuke,"nacisk
+zacisk
+zaciskanie
+zapięcie",,,
+35970,WORD_NOUN,,HIRAGANA,,,繰上,くりあげ,,kuriage,"zwyżka
+ruch w górę
+ruch w kierunku ku górze",,,
+35971,WORD_NOUN,,HIRAGANA,,,繰上げ,くりあげ,,kuriage,"zwyżka
+ruch w górę
+ruch w kierunku ku górze",,,
+35972,WORD_NOUN,,HIRAGANA,,,貫主,かんしゅ,,kanshu,główny opat,w buddyjskiej świątyni,,DUPLICATE 35938
+35973,WORD_NOUN,,HIRAGANA,,,貫首,かんしゅ,,kanshu,główny opat,w buddyjskiej świątyni,,DUPLICATE 35939
+35974,"WORD_ADVERB_TO
+WORD_NOUN",,KATAKANA,,,-,チラチラ,,chirachira,"delikatne spadanie
+lekkie spadanie (np. śniegu, płatku, konfetti)
+migotanie
+mienienie się
+pojawianie i znikanie
+zerkanie (powtarzalne)
+od czasu do czasu (słyszeć, widzieć)
+sporadycznie (słyszeć, widzieć)",,,
+35975,"WORD_ADVERB_TO
+WORD_NOUN",,KATAKANA_EXCEPTION,,,-,チラッチラッ,,chiracchira,"delikatne spadanie
+lekkie spadanie (np. śniegu, płatku, konfetti)
+migotanie
+mienienie się
+pojawianie i znikanie
+zerkanie (powtarzalne)
+od czasu do czasu (słyszeć, widzieć)
+sporadycznie (słyszeć, widzieć)",,,
+35976,WORD_VERB_U,,HIRAGANA,,,押しこむ,おしこむ,,oshikomu,"wciskać do
 pchać do
 wpychać do
 upychać do
