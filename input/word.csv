@@ -103098,12 +103098,14 @@ umacnianie",,,
 36064,WORD_NOUN,,HIRAGANA,,,検視,けんし,,kenshi,"autopsja
 dochodzenie przyczyny śmierci",,,
 36065,WORD_TEMPORAL_NOUN,,HIRAGANA,,,歳月,さいげつ,,saigetsu,"czas
-lata",,,
+lata",,,DUPLICATE 36099
 36066,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,浪費,ろうひ,,rouhi,"marnotrawstwo
 marnowanie
 rozrzutność",,,
-36067,WORD_NOUN,,HIRAGANA,,,踵,かかと,,kakato,pięta,,,
+36067,WORD_NOUN,,HIRAGANA,,,踵,かかと,,kakato,pięta,,,"DUPLICATE 36100
+DUPLICATE 36101
+DUPLICATE 36102"
 36068,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,銀,ぎん,,gin,"srebro
 srebrna moneta
@@ -103134,7 +103136,7 @@ pisemne oświadczenie",,,
 36075,WORD_NOUN,,HIRAGANA,,,水木,みずき,,mizuki,dereń,"rodzaj ozdobnych krzewów, z rodziny dereniowatych z umiarkowanej strefy półkuli północnej",,
 36076,WORD_NOUN,,KATAKANA,,,-,ミズキ,,mizuki,dereń,"rodzaj ozdobnych krzewów, z rodziny dereniowatych z umiarkowanej strefy półkuli północnej",,
 36077,WORD_NOUN,,KATAKANA,,,-,コンドーム,,kondoomu,prezerwatywa,,,
-36078,WORD_NOUN,,HIRAGANA,,,旅信,りょしん,,ryoshin,wiadomość od kogoś w podróży,,,
+36078,WORD_NOUN,,HIRAGANA,,,旅信,りょしん,,ryoshin,wiadomość od kogoś w podróży,,,DUPLICATE 36104
 36079,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,,,-,きゅん,,kyun,"wypełniony (emocjami)
 chwilowy ucisk w piersiach spowodowane silnymi emocjami, uczuciami (np. podczas rozstania z osobą, którą się kocha)",szczególnie występuje w zdaniu: 胸がきゅん（と）なる,,
@@ -103162,4 +103164,50 @@ zamek feudalnego władcy",,,
 36089,WORD_NOUN,,HIRAGANA,,,平調,へいちょう,,heichou,"spokojny stan
 normalny stan",,,
 36090,WORD_VERB_RU,,HIRAGANA,,,待ちわびる,まちわびる,,machiwabiru,"być zmęczony czekaniem
+czekać niecierpliwie",,,
+36091,WORD_NOUN,,KATAKANA,,,-,クラッカ,,kurakka,"krakers
+cracker (włamywacz komputerowy)
+petarda
+łamacz",ang: cracker,,
+36092,WORD_NOUN,,KATAKANA,,,-,ジェット・コースター,,jettokoo sutaa,kolejka górska,"ang: roller coaster, jet coaster",,
+36093,WORD_NOUN,,HIRAGANA,,,御釣り,おつり,,otsuri,"reszty (np. pieniądze)
+równowaga
+balans",grzecznościowo,,
+36094,WORD_NOUN,,HIRAGANA,,,御釣,おつり,,otsuri,"reszty (np. pieniądze)
+równowaga
+balans",grzecznościowo,,
+36095,WORD_NOUN,,HIRAGANA,,,歎き,なげき,,nageki,"żal
+smutek
+rozpacz
+lament",,,
+36096,WORD_NOUN,,HIRAGANA,,,辨慶,べんけい,,benkei,"silna osoba
+odważna osoba (używane po imieniu dla 12-wiecznych walecznych mnichów)
+bambusowa rura z wywierconymi dziurami (używane jako podpora dla naczyń kuchennych)
+tartan (wzór, skrót)
+szachownica (wzór, skrót)",,,
+36097,WORD_NOUN,,HIRAGANA,,,検屍,けんし,,kenshi,"autopsja
+dochodzenie przyczyny śmierci",,,
+36098,WORD_NOUN,,HIRAGANA,,,検死,けんし,,kenshi,"autopsja
+dochodzenie przyczyny śmierci",,,
+36099,WORD_TEMPORAL_NOUN,,HIRAGANA,,,歳月,としつき,,toshitsuki,"czas
+lata",,,DUPLICATE 36065
+36100,WORD_NOUN,,HIRAGANA,,,踵,きびす,,kibisu,pięta,,,"DUPLICATE 36067
+DUPLICATE 36101
+DUPLICATE 36102"
+36101,WORD_NOUN,,HIRAGANA,,,踵,くびす,,kubisu,pięta,,,"DUPLICATE 36067
+DUPLICATE 36100
+DUPLICATE 36102"
+36102,WORD_NOUN,,HIRAGANA,,,踵,あくと,,akuto,pięta,,,"DUPLICATE 36067
+DUPLICATE 36100
+DUPLICATE 36101"
+36103,WORD_VERB_U,,HIRAGANA,,,思いなおす,おもいなおす,,omoinaosu,"przemyśleć
+zmieniać swoje myślenie",,,
+36104,WORD_NOUN,,HIRAGANA,,,旅信,たびだより,,tabidayori,wiadomość od kogoś w podróży,,,DUPLICATE 36078
+36105,WORD_NOUN,,KATAKANA,,,-,ハイキング・コース,,haikingu koosu,"piesza wędrówka
+piesza wycieczka","ang: hiking trail, hiking course",,
+36106,WORD_VERB_RU,,HIRAGANA,,,待ち侘びる,まちわびる,,machiwabiru,"być zmęczony czekaniem
+czekać niecierpliwie",,,
+36107,WORD_VERB_RU,,HIRAGANA,,,待ち詫びる,まちわびる,,machiwabiru,"być zmęczony czekaniem
+czekać niecierpliwie",,,
+36108,WORD_VERB_RU,,HIRAGANA,,,待ち佗びる,まちわびる,,machiwabiru,"być zmęczony czekaniem
 czekać niecierpliwie",,,
