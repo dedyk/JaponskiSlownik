@@ -67,7 +67,7 @@ public class ShowMissingCommonWords {
 			String polishJapaneseEntryKanji = polishJapaneseEntry.getKanji();
 			String polishJapaneseEntryKana = polishJapaneseEntry.getKana();
 
-			if (polishJapaneseEntryKanji != null && polishJapaneseEntryKanji.equals("-") == true) {
+			if (polishJapaneseEntryKanji != null && (polishJapaneseEntryKanji.equals("") == true || polishJapaneseEntryKanji.equals("-") == true)) {
 				polishJapaneseEntryKanji = null;
 			}
 

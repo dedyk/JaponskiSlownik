@@ -64,7 +64,7 @@ public class JMENewDictionary {
 			return groupEntryList;
 		}
 		
-		if (kanji == null || kanji.equals("-") == true) {
+		if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
 			kanji = "$$$NULL$$$";
 		}
 		
@@ -99,7 +99,7 @@ public class JMENewDictionary {
 				
 				String groupEntryKanji = groupEntry.getKanji();
 				
-				if (groupEntryKanji == null || groupEntryKanji.equals("-") == true) {
+				if (groupEntryKanji == null || groupEntryKanji.equals("") == true || groupEntryKanji.equals("-") == true) {
 					groupEntryKanji = "$$$NULL$$$";
 				}			
 				
@@ -132,7 +132,7 @@ public class JMENewDictionary {
 	
 	private String getKey(String kanji, String kana) {
 		
-		if (kanji == null || kanji.equals("-") == true) {
+		if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
 			kanji = "$$$NULL$$$";
 		}
 		

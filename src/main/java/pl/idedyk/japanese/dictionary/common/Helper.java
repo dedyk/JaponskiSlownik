@@ -294,7 +294,7 @@ public class Helper {
 
 		String kanji = polishJapaneseEntry.getKanji();
 
-		if (kanji != null && kanji.equals("-") == true) {
+		if (kanji != null && (kanji.equals("") == true || kanji.equals("-") == true)) {
 			kanji = null;
 		}
 

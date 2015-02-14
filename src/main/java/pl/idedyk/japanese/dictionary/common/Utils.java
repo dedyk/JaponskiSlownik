@@ -20,7 +20,7 @@ public class Utils {
 			String kanji = polishJapaneseEntry.getKanji();
 			String kana = polishJapaneseEntry.getKana();
 			
-			if (kanji == null || kanji.equals("-") == true) {
+			if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
 				kanji = "$$$NULL$$$";
 			}
 			
@@ -43,7 +43,7 @@ public class Utils {
 	public static List<PolishJapaneseEntry> findPolishJapaneseEntry(
 			Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryMap, String findKanji, String findKana) {
 		
-		if (findKanji == null || findKanji.equals("-") == true) {
+		if (findKanji == null || findKanji.equals("") == true || findKanji.equals("-") == true) {
 			findKanji = "$$$NULL$$$";
 		}
 
@@ -74,7 +74,7 @@ public class Utils {
 	public static PolishJapaneseEntry findPolishJapaneseEntryWithEdictDuplicate(PolishJapaneseEntry parentPolishJapaneseEntry,
 			Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryMap, String findKanji, String findKana) {
 		
-		if (findKanji == null || findKanji.equals("-") == true) {
+		if (findKanji == null || findKanji.equals("") == true || findKanji.equals("-") == true) {
 			findKanji = "$$$NULL$$$";
 		}
 
