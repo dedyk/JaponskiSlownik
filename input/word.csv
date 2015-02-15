@@ -103233,7 +103233,9 @@ WORD_ADVERB",,HIRAGANA,,,万一,まんいち,,man'ichi,"nagły wypadek
 nagłe zdarzenie
 nieoczekiwane zdarzenie
 jakimś przypadkiem
-jakąś możliwością",,,
+jakąś możliwością",,,"DUPLICATE 36161
+DUPLICATE 36162
+DUPLICATE 36163"
 36116,WORD_NOUN,,HIRAGANA,,,両輪,りょうりん,,ryourin,"dwa koła
 dwukołowy",,,
 36117,"WORD_ADVERB
@@ -103266,7 +103268,7 @@ makroskopijny",,,
 36125,WORD_NOUN,,HIRAGANA,,,格付け,かくづけ,,kakuduke,"ranking
 klasyfikacja
 hierarchia
-alokacja",,,
+alokacja",,,DUPLICATE 36164
 36126,WORD_NOUN,,HIRAGANA,,,煮物,にもの,,nimono,jedzenie przygotowywane poprzez gotowanie lub duszenie,,,
 36127,WORD_NOUN,,HIRAGANA,,,牛舎,ぎゅうしゃ,,gyuusha,obora,dla bydła,,
 36128,WORD_NOUN,,HIRAGANA,,,白骨,はっこつ,,hakkotsu,"biała (wybielona) kość
@@ -103365,9 +103367,9 @@ WORD_ADVERB_TO",,HIRAGANA,,,-,ぴくぴく,,pikupiku,"tik (nerwowy)
 drgawka
 skurcz",,,
 36148,WORD_NOUN,,KATAKANA,,,-,クロスドレッサー,,kurosu doressaa,transwestyta,ang: cross-dresser,,
-36149,WORD_NOUN,,KATAKANA,,,-,ニューハーフ,,nyuuhaafu,"transwestyta
+36149,WORD_NOUN,,KATAKANA,,,-,ニューハーフ,,nyuu haafu,"transwestyta
 mężczyzna przebrany za kobietę",,,
-36150,WORD_NOUN,,KATAKANA,,,-,ミスターレディー,,misutaaredii,transwestyta,ang: my lady,,
+36150,WORD_NOUN,,KATAKANA,,,-,ミスターレディー,,misutaa redii,transwestyta,ang: my lady,,
 36151,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,両形,りょうけい,,ryoukei,dymorfizm,,,DUPLICATE 36142
 36152,WORD_NOUN,,HIRAGANA,,,珍中の珍,ちんちゅうのちん,,chinchuu no chin,"rzadkość
@@ -103406,3 +103408,58 @@ drań
 czarny charakter (w kabuki, joruri i etc)",,,"DUPLICATE 36154
 DUPLICATE 36155
 DUPLICATE 36156"
+36158,WORD_NOUN,,KATAKANA,,,-,ニューウェーヴ,,nyuu weevu,nowa fala,ang: new wave,,
+36159,WORD_NOUN,,KATAKANA,,,-,ニュー・ウェーブ,,nyuu weebu,nowa fala,ang: new wave,,
+36160,WORD_NOUN,,KATAKANA,,,-,ニュー・ウェーヴ,,nyuu weevu,nowa fala,ang: new wave,,
+36161,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,万一,ばんいち,,ban'ichi,"nagły wypadek
+nagłe zdarzenie
+nieoczekiwane zdarzenie
+jakimś przypadkiem
+jakąś możliwością",,,"DUPLICATE 36115
+DUPLICATE 36162
+DUPLICATE 36163"
+36162,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,万一,まんいつ,,man'itsu,"nagły wypadek
+nagłe zdarzenie
+nieoczekiwane zdarzenie
+jakimś przypadkiem
+jakąś możliwością",,,"DUPLICATE 36115
+DUPLICATE 36161
+DUPLICATE 36163"
+36163,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,万一,ばんいつ,,ban'itsu,"nagły wypadek
+nagłe zdarzenie
+nieoczekiwane zdarzenie
+jakimś przypadkiem
+jakąś możliwością",,,"DUPLICATE 36115
+DUPLICATE 36161
+DUPLICATE 36162"
+36164,WORD_NOUN,,HIRAGANA,,,格付け,かくずけ,,kakuzuke,"ranking
+klasyfikacja
+hierarchia
+alokacja",,,DUPLICATE 36125
+36165,WORD_NOUN,,HIRAGANA,,,異和感,いわかん,,iwakan,"niewygodne uczucie
+kłopotliwe uczucie
+apatia
+marazm
+niepokój fizyczny",,,
+36166,WORD_NOUN,,KATAKANA,,,-,クロス・ドレッサー,,kurosu doressaa,transwestyta,ang: cross-dresser,,
+36167,WORD_NOUN,,KATAKANA,,,-,ニュー・ハーフ,,nyuu haafu,"transwestyta
+mężczyzna przebrany za kobietę",,,
+36168,WORD_NOUN,,KATAKANA,,,-,ミスター・レディー,,misutaa redii,transwestyta,ang: my lady,,
+36169,WORD_NOUN,,HIRAGANA,,,赭面,あかつら,,akatsura,"czerwona twarz
+drań
+łajdak
+czarny charakter (w kabuki, joruri i etc)",,,"DUPLICATE 36170
+DUPLICATE 36171"
+36170,WORD_NOUN,,HIRAGANA,,,赭面,あかづら,,akadura,"czerwona twarz
+drań
+łajdak
+czarny charakter (w kabuki, joruri i etc)",,,"DUPLICATE 36169
+DUPLICATE 36171"
+36171,WORD_NOUN,,HIRAGANA,,,赭面,あかっつら,,akattsura,"czerwona twarz
+drań
+łajdak
+czarny charakter (w kabuki, joruri i etc)",,,"DUPLICATE 36169
+DUPLICATE 36170"
