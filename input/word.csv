@@ -1400,13 +1400,36 @@ wchodzić
 jechać
 jeździć
 być w (np. słowniku)",czymś,,
-433,WORD_VERB_U,,HIRAGANA,"Genki 1-5
-Genki 2-21",を,-,やる,o,yaru,"wykonywać
-dać
-dawać
-robić
+433,"WORD_VERB_U
+WORD_VERB_AUX",,HIRAGANA,"Genki 1-5
+Genki 2-21",を,行る,やる,o,yaru,"robić
+podjąć się
+wykonywać
+grać (w grze)
+uczyć się
+studiować
+wysyłać
+położyć
+dać 
+dawać(coś komuś o równym lub niższym statusie)
 uprawiać
-żyć (za coś, z czegoś)","zazwyczaj oznacza dawanie czegoś osobom o tym samym lub niższym statusie, a także karmienie zwierząt i zabiegi pielęgnacyjne (podlewanie) w stosunku do roślin. Używa go osoba dająca",,
+przyspieszać pojazd
+praktykować (prawo, medycynę i etc)
+mieć (picie, jedzenie)
+jeść
+pić
+palić
+wykonywać (występ)
+wymazywać (z pamięci)
+krzywdzić
+ranić
+zabijać
+uprawiać seks z
+robić coś ... do końca (zwykle pisane kaną, po czasowniku w formie bez masu, często w formie negatywnej)
+robić coś ... z grubsza (zwykle pisane kaną, po czasowniku w formie bez masu)
+robić coś ... dla (osoby o równym lub niższym statusie)
+robić coś (czasami z negatywnym niuansem)
+wkładać duży wysiłek w (po formie te czasownika)","zazwyczaj oznacza dawanie czegoś osobom o tym samym lub niższym statusie, a także karmienie zwierząt i zabiegi pielęgnacyjne (podlewanie) w stosunku do roślin. Używa go osoba dająca",,
 434,WORD_VERB_RU,,HIRAGANA,Genki 1-5,,出かける,でかける,,dekakeru,"wychodzić
 wyjść
 wyjechać (np. wycieczka lub wypad)
@@ -6600,7 +6623,7 @@ przedmiot",,,
 WORD_ADJECTIVE_NO",,HIRAGANA,Genki kanji 2-17,,赤字,あかじ,,akaji,deficyt,,,
 2266,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,Genki kanji 2-17,,名字,みょうじ,,myouji,nazwisko,,,
-2267,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,大文字,おおもじ,,oomoji,duże litery,,,
+2267,WORD_NOUN,,HIRAGANA,Genki kanji 2-17,,大文字,おおもじ,,oomoji,duże litery,,,DUPLICATE 36216
 2268,WORD_NOUN,,HIRAGANA,"Genki kanji 2-17
 Genki dodatkowe 2-17",,活動,かつどう,,katsudou,"aktywność
 działalność
@@ -103587,114 +103610,86 @@ jazda na rowerze",ang: cycling,,
 36203,WORD_NOUN,,KATAKANA_HIRAGANA,,,ルワンダ虐殺,ルワンダぎゃくさつ,,ruwanda gyakusatsu,Ludobójstwo w Rwandzie (1994),,,
 36204,WORD_NOUN,,HIRAGANA,,,日本新党,にほんしんとう,,nihon shintou,Nowa Partia Japonii (1992-1994),,,
 36205,WORD_NOUN,,HIRAGANA_KATAKANA,,,松本サリン事件,まつもとサリンじけん,,matsumoto sarin jiken,akt terrorystyczny z użyciem gazu sarin w Matsumoto,"czerwiec 27-28, 1994",,
-36206,WORD_ADVERBIAL_NOUN,,HIRAGANA,,,３月,さんがつ,,sangatsu,marzec,,,
-36207,"WORD_ADVERB
+36206,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,,,赤々,あかあか,,akaaka,"jasny
 jaskrawy
 błyszcząco",,,
-36208,"WORD_ADVERB
+36207,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,,,赤赤,あかあか,,akaaka,"jasny
 jaskrawy
 błyszcząco",,,
-36209,WORD_NOUN,,HIRAGANA,,,冴えた色,さえたいろ,,saeta iro,"jasny kolor
+36208,WORD_NOUN,,HIRAGANA,,,冴えた色,さえたいろ,,saeta iro,"jasny kolor
 jaskrawy kolor",,,
-36210,WORD_NOUN,,KATAKANA,,,-,ヌーンブライト,,nuun buraito,jasne południe,ang: noon bright,,
-36211,WORD_NOUN,,HIRAGANA,,,華燭,かしょく,,kashoku,jasne światło,,,
-36212,WORD_NOUN,,HIRAGANA,,,輝線,きせん,,kisen,???,,,
-36213,"WORD_ADJECTIVE_TARU
+36209,WORD_NOUN,,KATAKANA,,,-,ヌーンブライト,,nuun buraito,jasne południe,ang: noon bright,,
+36210,WORD_NOUN,,HIRAGANA,,,華燭,かしょく,,kashoku,jasne światło,,,
+36211,WORD_NOUN,,HIRAGANA,,,輝線,きせん,,kisen,???,,,
+36212,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,燦々,さんさん,,sansan,"błyskotliwy
 znakomity
 olśniewający",,,
-36214,"WORD_ADJECTIVE_TARU
+36213,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,燦燦,さんさん,,sansan,"błyskotliwy
 znakomity
 olśniewający",,,
-36215,"WORD_ADJECTIVE_TARU
+36214,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,粲粲,さんさん,,sansan,"błyskotliwy
 znakomity
 olśniewający",,,
-36216,"WORD_ADJECTIVE_TARU
+36215,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,粲々,さんさん,,sansan,"błyskotliwy
 znakomity
 olśniewający",,,
-36217,WORD_NOUN,,HIRAGANA,,,大文字,だいもんじ,,daimonji,"duże litery
+36216,WORD_NOUN,,HIRAGANA,,,大文字,だいもんじ,,daimonji,"duże litery
 wielkie litery
 znak “dai” oznaczający “duży”
-ogromny znak “dai” utworzone przez płonące litery utworzone na zboczu góry w Kioto 16 sierpnia każdego miesiąca",,,
-36218,WORD_NOUN,,HIRAGANA,,,原義,げんぎ,,gengi,"oryginalne znaczenie
+ogromny znak “dai” utworzone przez płonące litery utworzone na zboczu góry w Kioto 16 sierpnia każdego miesiąca",,,DUPLICATE 2267
+36217,WORD_NOUN,,HIRAGANA,,,原義,げんぎ,,gengi,"oryginalne znaczenie
 oryginalny sens",,,
-36219,WORD_NOUN,,HIRAGANA,,,絃妓,げんぎ,,gengi,"gejsza
+36218,WORD_NOUN,,HIRAGANA,,,絃妓,げんぎ,,gengi,"gejsza
 kobieta która zabawia (np. poprzez granie na shamisen) swoich gości",,,
-36220,WORD_NOUN,,HIRAGANA,,,弦妓,げんぎ,,gengi,"gejsza
+36219,WORD_NOUN,,HIRAGANA,,,弦妓,げんぎ,,gengi,"gejsza
 kobieta która zabawia (np. poprzez granie na shamisen) swoich gości",,,
-36221,WORD_MALE_NAME,,KATAKANA,,,-,キャスパー,,kyasupaa,"Kacper
+36220,WORD_MALE_NAME,,KATAKANA,,,-,キャスパー,,kyasupaa,"Kacper
 Kasper",imię,,
-36222,WORD_NOUN,,KATAKANA,,,-,オグ,,ogu,ogg,kontenerowy format pliku,,
-36223,WORD_NOUN,,KATAKANA,,,-,ロマンジ,,romanji,romanji,błędny zapis “romaji”,,
-36224,"WORD_VERB_U
-WORD_VERB_AUX",,HIRAGANA,,,行る,やる,,yaru,"robić
-podjąć się
-wykonywać
-grać (w grze)
-uczyć się
-studiować
-wysyłać
-położyć
-dać (coś komuś o równym lub niższym statusie)
-przyspieszać pojazd
-praktykować (prawo, medycynę i etc)
-mieć (picie, jedzenie)
-jeść
-pić
-palić
-wykonywać (występ)
-wymazywać (z pamięci)
-krzywdzić
-ranić
-zabijać
-uprawiać seks z
-robić coś ... do końca (zwykle pisane kaną, po czasowniku w formie bez masu, często w formie negatywnej)
-robić coś ... z grubsza (zwykle pisane kaną, po czasowniku w formie bez masu)
-robić coś ... dla (osoby o równym lub niższym statusie)
-robić coś (czasami z negatywnym niuansem)
-wkładać duży wysiłek w (po formie te czasownika)",,,
-36225,WORD_NOUN,,HIRAGANA,,,芝刈り,しばかり,,shibakari,koszenie trawy,,,
-36226,WORD_NOUN,,HIRAGANA,,,芝刈,しばかり,,shibakari,koszenie trawy,,,
-36227,WORD_NOUN,,HIRAGANA,,,柴刈り,しばかり,,shibakari,"zbieranie chrustu
+36221,WORD_NOUN,,KATAKANA,,,-,オグ,,ogu,ogg,kontenerowy format pliku,,
+36222,WORD_NOUN,,KATAKANA,,,-,ロマンジ,,romanji,romanji,błędny zapis “romaji”,,
+36223,WORD_NOUN,,HIRAGANA,,,芝刈り,しばかり,,shibakari,koszenie trawy,,,
+36224,WORD_NOUN,,HIRAGANA,,,芝刈,しばかり,,shibakari,koszenie trawy,,,
+36225,WORD_NOUN,,HIRAGANA,,,柴刈り,しばかり,,shibakari,"zbieranie chrustu
 zbieranie drewna opałowego",,,
-36228,WORD_NOUN,,HIRAGANA,,,芝刈り機,しばかりき,,shibakariki,kosiarka do trawy,,,
-36229,WORD_NOUN,,HIRAGANA,,,噴霧,ふんむ,,funmu,"spray
+36226,WORD_NOUN,,HIRAGANA,,,芝刈り機,しばかりき,,shibakariki,kosiarka do trawy,,,
+36227,WORD_NOUN,,HIRAGANA,,,噴霧,ふんむ,,funmu,"spray
 rozpylacz
 rozpylanie
 natryskiwanie",,,
-36230,WORD_NOUN,,KATAKANA,,,-,ロックミュージック,,rokku myuujikku,muzyka rockowa,,,
-36231,WORD_NOUN,,HIRAGANA,,,椰子,やし,,yashi,palma,,,
-36232,"WORD_NOUN
+36228,WORD_NOUN,,KATAKANA,,,-,ロックミュージック,,rokku myuujikku,muzyka rockowa,,,
+36229,WORD_NOUN,,HIRAGANA,,,椰子,やし,,yashi,palma,,,
+36230,"WORD_NOUN
 WORD_ADJECTIVE_NO",,KATAKANA,,,-,ケラチン,,kerachin,keratyna,,,
-36233,WORD_NOUN,,KATAKANA,,,-,アンバンドリング,,anbandoringu,"podzielenie
+36231,WORD_NOUN,,KATAKANA,,,-,アンバンドリング,,anbandoringu,"podzielenie
 rozdzielenie",ang: unbundling,,
-36234,WORD_NOUN,,KATAKANA,,,-,アンバンドル,,anbandoru,podzielenie,ang: unbundle,,
-36235,WORD_NOUN,,KATAKANA,,,-,クランベリーソース,,kuranberii soosu,"sos żurawinowy
+36232,WORD_NOUN,,KATAKANA,,,-,アンバンドル,,anbandoru,podzielenie,ang: unbundle,,
+36233,WORD_NOUN,,KATAKANA,,,-,クランベリーソース,,kuranberii soosu,"sos żurawinowy
 sos z żurawiny",,,
-36236,WORD_EXPRESSION,,HIRAGANA,,,人もあろうに,ひともあろうに,,hito mo arou ni,"z wszystkich ludzi
+36234,WORD_EXPRESSION,,HIRAGANA,,,人もあろうに,ひともあろうに,,hito mo arou ni,"z wszystkich ludzi
 pośród wszystkich ludzi",,,
-36237,"WORD_ADJECTIVE_NA
+36235,"WORD_ADJECTIVE_NA
 WORD_ADJECTIVE_NO",,HIRAGANA,,,人も無げ,ひともなげ,,hito mo nage,"arogancki
 bezczelny
 apodyktyczny",,,
-36238,WORD_NOUN,,HIRAGANA,,,僚機,りょうき,,ryouki,skrzydłowy,"samolot, który wpiera drugi samolot",,
-36239,WORD_NOUN,,HIRAGANA,,,出戻り,でもどり,,demodori,"rozwiedziona kobieta, która powróciła do swoich rodziców
+36236,WORD_NOUN,,HIRAGANA,,,僚機,りょうき,,ryouki,skrzydłowy,"samolot, który wpiera drugi samolot",,
+36237,WORD_NOUN,,HIRAGANA,,,出戻り,でもどり,,demodori,"rozwiedziona kobieta, która powróciła do swoich rodziców
 pracownik, który opuścił stanowisku i powrócił do swojego poprzedniego stanowiska
 statek, który opuścił oraz powrócił do swojego portu",,,
-36240,WORD_ADJECTIVE_NO,,HIRAGANA,,,有翼,ゆうよく,,yuuyoku,"skrzydlaty
+36238,WORD_ADJECTIVE_NO,,HIRAGANA,,,有翼,ゆうよく,,yuuyoku,"skrzydlaty
 uskrzydlony",,,
-36241,WORD_NOUN,,HIRAGANA,,,苔桃,こけもも,,kokemomo,"borówka brusznica
+36239,WORD_NOUN,,HIRAGANA,,,苔桃,こけもも,,kokemomo,"borówka brusznica
 borówka czerwona",gatunek rośliny wieloletniej z rodziny wrzosowatych,,
-36242,WORD_NOUN,,HIRAGANA,,,蔓苔桃,つるこけもも,,tsurukokemomo,żurawina błotna,gatunek rośliny wieloletniej z rodziny wrzosowatych,,
-36243,WORD_NOUN,,HIRAGANA,,,馬鹿安値,ばかやすね,,baka yasune,"absurdalnie niska cena
+36240,WORD_NOUN,,HIRAGANA,,,蔓苔桃,つるこけもも,,tsurukokemomo,żurawina błotna,gatunek rośliny wieloletniej z rodziny wrzosowatych,,
+36241,WORD_NOUN,,HIRAGANA,,,馬鹿安値,ばかやすね,,baka yasune,"absurdalnie niska cena
 śmiesznie niska cena",,,
-36244,WORD_NOUN,,HIRAGANA,,,芝刈機,しばかりき,,shibakariki,kosiarka do trawy,,,
-36245,WORD_NOUN,,HIRAGANA,,,芝刈り器,しばかりき,,shibakariki,kosiarka do trawy,,,
-36246,WORD_NOUN,,KATAKANA,,,-,クランベリー,,kuranberii,żurawina,,,
-36247,WORD_NOUN,,KATAKANA,,,-,クランベリー・ソース,,kuranberii soosu,"sos żurawinowy
+36242,WORD_NOUN,,HIRAGANA,,,芝刈機,しばかりき,,shibakariki,kosiarka do trawy,,,
+36243,WORD_NOUN,,HIRAGANA,,,芝刈り器,しばかりき,,shibakariki,kosiarka do trawy,,,
+36244,WORD_NOUN,,KATAKANA,,,-,クランベリー,,kuranberii,żurawina,,,
+36245,WORD_NOUN,,KATAKANA,,,-,クランベリー・ソース,,kuranberii soosu,"sos żurawinowy
 sos z żurawiny",,,
