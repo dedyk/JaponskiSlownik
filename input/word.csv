@@ -5796,7 +5796,7 @@ Genki 2-17",,足りる,たりる,,tariru,"wystarczać
 być wystarczającym
 mieć dosyć",,,
 1978,"WORD_TEMPORAL_NOUN
-WORD_ADVERBIAL_NOUN",,HIRAGANA,Genki kanji 2-15,,一足,いっそく,,issoku,jedna para,np. butów,,
+WORD_ADVERBIAL_NOUN",,HIRAGANA,Genki kanji 2-15,,一足,いっそく,,issoku,jedna para,np. butów,,DUPLICATE 36176
 1979,WORD_NOUN,,HIRAGANA,"Genki kanji 2-15
 Genki kanji 2-19",,水不足,みずぶそく,,mizu bu soku,brak wody,,,
 1980,WORD_VERB_U,,HIRAGANA,"Genki kanji 2-15
@@ -13907,7 +13907,12 @@ dostrzegać",,,
 5077,WORD_VERB_U,,HIRAGANA,Genki 2-21,,蹴る,ける,,keru,"kopać
 kopnąć","nogą, np, piłkę",,
 5078,WORD_VERB_U,,HIRAGANA,Genki 2-21,,捕まる,つかまる,,tsukamaru,"być aresztowany
-być złapany",,,
+być złapany
+chwytać
+łapać
+znaleźć (np. dowód)
+złapać (np. taksówkę)
+być zatrzymany przez",,,
 5079,WORD_VERB_U,,HIRAGANA,Genki 2-21,,殴る,なぐる,,naguru,"uderzać
 bić
 stukać",,,
@@ -80647,11 +80652,26 @@ chaotyczny",,,
 WORD_EXPRESSION",,HIRAGANA,,,気がつく,きがつく,,kigatsuku,"zauważyć
 dostrzegać",,,
 28745,WORD_VERB_U,,HIRAGANA,,,掴まる,つかまる,,tsukamaru,"być aresztowany
-być złapany",,,
+być złapany
+chwytać
+łapać
+znaleźć (np. dowód)
+złapać (np. taksówkę)
+być zatrzymany przez",,,
 28746,WORD_VERB_U,,HIRAGANA,,,捉まる,つかまる,,tsukamaru,"być aresztowany
-być złapany",,,
+być złapany
+chwytać
+łapać
+znaleźć (np. dowód)
+złapać (np. taksówkę)
+być zatrzymany przez",,,
 28747,WORD_VERB_U,,HIRAGANA,,,摑まる,つかまる,,tsukamaru,"być aresztowany
-być złapany",,,
+być złapany
+chwytać
+łapać
+znaleźć (np. dowód)
+złapać (np. taksówkę)
+być zatrzymany przez",,,
 28748,WORD_VERB_U,,HIRAGANA,,,擲る,なぐる,,naguru,"uderzać
 bić
 stukać",,,
@@ -103463,3 +103483,92 @@ drań
 łajdak
 czarny charakter (w kabuki, joruri i etc)",,,"DUPLICATE 36169
 DUPLICATE 36170"
+36172,WORD_NOUN,,KATAKANA,,,-,コンマ,,konma,"przecinek
+celdille (znak pod literą c)
+kropka dziesiętna",ang: comma,,
+36173,WORD_NOUN,,KATAKANA,,,-,バリエーション,,barieeshon,"wariacja
+odmiana",ang: variation,,
+36174,WORD_NOUN,,KATAKANA,,,-,モーツァルト,,mootsaruto,Wolfgang Amadeusz Mozart,,,
+36175,WORD_EXPRESSION,,HIRAGANA,,,に際して,にさいして,,ni saishite,"z okazji (czegoś)
+w momencie (czegoś)
+w chwili (czegoś)",,,
+36176,WORD_NOUN,,HIRAGANA,,,一足,ひとあし,,hitoashi,"krok
+krótki dystans
+krótki czas",,,DUPLICATE 1978
+36177,WORD_NOUN,,HIRAGANA,,,修繕,しゅうぜん,,shuuzen,"naprawa
+reparacja
+naprawianie
+reperowanie",,,
+36178,WORD_ADVERB,,HIRAGANA,,,元より,もとより,,motoyori,"od początku
+od pierwszego
+przez cały czas
+początkowo
+pierwotnie
+oczywiście",,,
+36179,WORD_NOUN,,HIRAGANA,,,共産,きょうさん,,kyousan,"komunizm
+partia komunistyczna (skrót)",,,
+36180,WORD_NOUN,,HIRAGANA,,,出動,しゅつどう,,shutsudou,???,,,
+36181,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,安物,やすもの,,yasumono,"tani przedmiot
+przedmiot słabej jakości",,,
+36182,WORD_NOUN,,HIRAGANA,,,対向,たいこう,,taikou,???,,,
+36183,WORD_NOUN,,HIRAGANA,,,廃絶,はいぜつ,,haizetsu,"zniesienie
+eliminacja
+wyeliminowanie
+pozbycie się
+zaprzestanie
+przerwanie
+wygaszenie",,,
+36184,WORD_NOUN,,HIRAGANA,,,影絵,かげえ,,kagee,"rysunek z sylwetką
+rysunek z zarysem
+rysunek z cieniem
+sylwetka
+zarys
+kontur",,,
+36185,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,慢性,まんせい,,mansei,"chroniczność
+chroniczny
+przewlekły
+stan chroniczny",,,
+36186,WORD_NOUN,,HIRAGANA,,,数日,すうじつ,,suujitsu,kilka dni,,,
+36187,WORD_NOUN,,HIRAGANA,,,未発表,みはっぴょう,,mihappyou,"niewydany
+nieopublikowany
+jeszcze nie ogłoszony",,,
+36188,WORD_NOUN,,HIRAGANA,,,楽屋,がくや,,gakuya,"przymierzalnia
+poczekalnia dla artystów
+za kulisami",,,
+36189,WORD_NOUN,,HIRAGANA,,,母校,ぼこう,,bokou,alma mater,"uczelnia, którą ktoś ukończył",,
+36190,WORD_NOUN,,HIRAGANA,,,決め手,きめて,,kimete,"osoba, która decyduje
+decydujący czynnik
+decydujący argument
+rozstrzygający argument
+zwycięski ruch
+karta atutowa",,,
+36191,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,浅はか,あさはか,,asahaka,"płytki
+powierzchowny
+pobieżny
+lekkomyślny
+frywolny
+niepoważny
+bezmyślny
+nierozsądny
+głupi
+niemądry",,,
+36192,WORD_VERB_U,,HIRAGANA,,,言い返す,いいかえす,,iikaesu,"odpowiadać niegrzecznie
+pyskować
+odszczeknąć
+ripostować
+powtarzać słowa
+mówić wielokrotnie",,,
+36193,WORD_VERB_U,,HIRAGANA,,,蹲る,うずくまる,,uzukumaru,"przykucnąć
+kucać
+kucnąć
+kulić
+skulić się",,,
+36194,WORD_NOUN,,HIRAGANA,,,飲料,いんりょう,,inryou,"napój
+picie",,,
+36195,WORD_NOUN,,HIRAGANA,,,香辛料,こうしんりょう,,koushinryou,"przyprawa
+przyprawa kulinarna
+przyprawa korzenna",,,
+36196,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ロックウール,,rokku uuru,wełna mineralna,ang: rock wool,,
