@@ -59104,7 +59104,7 @@ jedna pozycja
 jeden powód
 jeden urywek (książki)
 ta sama logika
-ten sam powód",,,
+ten sam powód",,,DUPLICATE 36512
 21542,WORD_ADVERB,,HIRAGANA,,,些とも,ちっとも,,chittomo,"bynajmniej
 skądże
 ależ skąd",z przeczącą formą czasownika,,
@@ -104370,7 +104370,8 @@ mała chorągiew noszony przez żołnierzy podczas bitwy w okresie od Sengoku do
 36457,WORD_NOUN,,KATAKANA,,,-,サポーター,,sapootaa,"ochraniacz sportowy
 stronnik
 zwolennik
-kibic",ang: supporter,,
+kibic
+gość w programie telewizyjnym",ang: supporter,,
 36458,WORD_NOUN,,KATAKANA,,,-,ストーム,,sutoomu,"burza
 sztorm",,,
 36459,WORD_NOUN,,KATAKANA,,,-,ノーランストッキング,,noo ran sutokkingu,pończochy typu no-run,,,
@@ -104389,7 +104390,7 @@ oddany",,,
 36463,WORD_VERB_U,,HIRAGANA,,,乗り出す,のりだす,,noridasu,"wyruszać w podróż
 wypływać
 rozpoczynać podróż
-pochylać się ku przodowi",,,
+pochylać się ku przodowi",,,DUPLICATE 36513
 36464,WORD_VERB_RU,,HIRAGANA,,,作り上げる,つくりあげる,,tsukuriageru,"tworzyć
 wytwarzać
 konstruować
@@ -104504,3 +104505,66 @@ DUPLICATE 36503
 DUPLICATE 36504"
 36506,WORD_NOUN,,HIRAGANA,,,瓢箪,ひょうたん,,hyoutan,tykwa,owoc,,
 36507,WORD_NOUN,,HIRAGANA,,,葫蘆,ころ,,koro,tykwa,owoc,,
+36508,WORD_NOUN,,KATAKANA,,,-,サウジ・アラビア,,sauji arabia,Arabia Saudyjska,,,
+36509,WORD_NOUN,,KATAKANA,,,-,サポータ,,sapoota,"ochraniacz sportowy
+stronnik
+zwolennik
+kibic
+gość w programie telewizyjnym",ang: supporter,,
+36510,WORD_NOUN,,KATAKANA,,,-,ホーム・ヘルパー,,hoomu herupaa,pomocnik domowy,"osoba, która pomaga w domu, np. starszym osobom, ang: home helper",,
+36511,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,一すじ,ひとすじ,,hitosuji,"jeden długi obiekt (np. kosmyk włosów, strumień światła, struga dymu)
+pochodzenie z linii prostej
+poważny
+zdecydowany
+stanowczy
+zdeterminowany
+oddany",,,
+36512,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,一条,ひとすじ,,hitosuji,"jeden długi obiekt (np. kosmyk włosów, strumień światła, struga dymu)
+pochodzenie z linii prostej
+poważny
+zdecydowany
+stanowczy
+zdeterminowany
+oddany",,,DUPLICATE 21541
+36513,WORD_VERB_U,,HIRAGANA,,,乗り出す,のりいだす,,noriidasu,"wyruszać w podróż
+wypływać
+rozpoczynać podróż
+pochylać się ku przodowi",,,DUPLICATE 36463
+36514,WORD_VERB_U,,HIRAGANA,,,乗出す,のりだす,,noridasu,"wyruszać w podróż
+wypływać
+rozpoczynać podróż
+pochylać się ku przodowi",,,DUPLICATE 36515
+36515,WORD_VERB_U,,HIRAGANA,,,乗出す,のりいだす,,noriidasu,"wyruszać w podróż
+wypływać
+rozpoczynać podróż
+pochylać się ku przodowi",,,DUPLICATE 36514
+36516,WORD_VERB_RU,,HIRAGANA,,,造り上げる,つくりあげる,,tsukuriageru,"tworzyć
+wytwarzać
+konstruować
+budować",,,
+36517,WORD_NOUN,,HIRAGANA,,,金づち,かなづち,,kanaduchi,"młotek
+beznadziejny pływak
+osoba rozpoczynająca naukę pływania",,,
+36518,WORD_NOUN,,HIRAGANA,,,鉄鎚,かなづち,,kanaduchi,"młotek
+beznadziejny pływak
+osoba rozpoczynająca naukę pływania",,,
+36519,WORD_VERB_U,,HIRAGANA,,,出揃う,でそろう,,desorou,"pojawić się wszyscy razem
+ukazać się wszyscy razem
+być wszyscy obecni",,,
+36520,WORD_NOUN,,HIRAGANA,,,瓢,ふくべ,,fukube,tykwa,owoc,,"DUPLICATE 36524
+DUPLICATE 36525"
+36521,WORD_NOUN,,HIRAGANA,,,匏,ふくべ,,fukube,tykwa,owoc,,"DUPLICATE 36522
+DUPLICATE 36523"
+36522,WORD_NOUN,,HIRAGANA,,,匏,ひさご,,hisago,tykwa,owoc,,"DUPLICATE 36521
+DUPLICATE 36523"
+36523,WORD_NOUN,,HIRAGANA,,,匏,ひさこ,,hisako,tykwa,owoc,,"DUPLICATE 36521
+DUPLICATE 36522"
+36524,WORD_NOUN,,HIRAGANA,,,瓢,ひさご,,hisago,tykwa,owoc,,"DUPLICATE 36520
+DUPLICATE 36525"
+36525,WORD_NOUN,,HIRAGANA,,,瓢,ひさこ,,hisako,tykwa,owoc,,"DUPLICATE 36520
+DUPLICATE 36524"
+36526,WORD_NOUN,,KATAKANA,,,-,ヒョウタン,,hyoutan,tykwa,owoc,,
+36527,WORD_NOUN,,HIRAGANA,,,胡蘆,ころ,,koro,tykwa,owoc,,
+36528,WORD_NOUN,,HIRAGANA,,,胡盧,ころ,,koro,tykwa,owoc,,
