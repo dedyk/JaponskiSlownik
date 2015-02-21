@@ -31214,7 +31214,8 @@ WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,万,まん,,man,"dziesięć tysięcy
 10000",,,DUPLICATE 7454
 11623,WORD_NOUN,,HIRAGANA,,,千万,せんまん,,senman,"dziesięć milionów
-10000000",,,DUPLICATE 36563
+10000000",,,"DUPLICATE 36563
+DUPLICATE 36575"
 11624,WORD_NOUN,,HIRAGANA,,,真似,まね,,mane,naśladownictwo,,,
 11625,WORD_VERB_IRREGULAR,,HIRAGANA,,,真似する,まねする,,mane suru,naśladować,kogoś,,
 11626,WORD_ADVERB,,HIRAGANA,,,態々,わざわざ,,wazawaza,"specjalnie
@@ -104666,7 +104667,8 @@ wiele osób spiskujących i robiących złe rzeczy",,,DUPLICATE 36561
 WORD_TEMPORAL_NOUN",,HIRAGANA,,,千万,ちよろず,,chiyorozu,"niezmiernie
 nadzwyczaj
 bardzo dużo
-bardzo wiele",,,DUPLICATE 11623
+bardzo wiele",,,"DUPLICATE 11623
+DUPLICATE 36575"
 36564,WORD_NOUN,,HIRAGANA,,,余齢,よれい,,yorei,"średnia długość życia
 przeciętna długość życia
 statystyczna długość życia",,,
@@ -104691,3 +104693,14 @@ DUPLICATE 36571"
 egzorcysta
 medium",,,"DUPLICATE 36569
 DUPLICATE 36570"
+36572,WORD_NOUN,,KATAKANA,,,-,アイシャドー,,aishadoo,cień do powiek,ang: eyeshadow,,
+36573,WORD_NOUN,,KATAKANA,,,-,タイム・セール,,taimu seeru,specjalna oferta (np. w sklepie) ograniczona w czasie,ang: limited-time sale,,
+36574,WORD_NOUN,,HIRAGANA,,,買出し,かいだし,,kaidashi,"wychodzenie na zakupy
+zakupy masowe
+zakupy hurtowe",,,
+36575,"WORD_ADVERB
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,千万,せんばん,,senban,"niezmiernie
+nadzwyczaj
+bardzo dużo
+bardzo wiele",,,"DUPLICATE 11623
+DUPLICATE 36563"
