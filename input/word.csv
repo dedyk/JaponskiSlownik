@@ -31214,7 +31214,7 @@ WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,万,まん,,man,"dziesięć tysięcy
 10000",,,DUPLICATE 7454
 11623,WORD_NOUN,,HIRAGANA,,,千万,せんまん,,senman,"dziesięć milionów
-10000000",,,
+10000000",,,DUPLICATE 36563
 11624,WORD_NOUN,,HIRAGANA,,,真似,まね,,mane,naśladownictwo,,,
 11625,WORD_VERB_IRREGULAR,,HIRAGANA,,,真似する,まねする,,mane suru,naśladować,kogoś,,
 11626,WORD_ADVERB,,HIRAGANA,,,態々,わざわざ,,wazawaza,"specjalnie
@@ -104657,16 +104657,16 @@ los",,,
 36561,WORD_NOUN,,HIRAGANA,,,百鬼夜行,ひゃっきやぎょう,,hyakki yagyou,"wiele potworów, duchów i etc formujące linię i chodzące przez noc
 prawdziwy chaos
 rzeczywisty pandemonium
-wiele osób spiskujących i robiących złe rzeczy",,,
+wiele osób spiskujących i robiących złe rzeczy",,,DUPLICATE 36562
 36562,WORD_NOUN,,HIRAGANA,,,百鬼夜行,ひゃっきやこう,,hyakkiyakou,"wiele potworów, duchów i etc formujące linię i chodzące przez noc
 prawdziwy chaos
 rzeczywisty pandemonium
-wiele osób spiskujących i robiących złe rzeczy",,,
+wiele osób spiskujących i robiących złe rzeczy",,,DUPLICATE 36561
 36563,"WORD_ADVERB
 WORD_TEMPORAL_NOUN",,HIRAGANA,,,千万,ちよろず,,chiyorozu,"niezmiernie
 nadzwyczaj
 bardzo dużo
-bardzo wiele",,,
+bardzo wiele",,,DUPLICATE 11623
 36564,WORD_NOUN,,HIRAGANA,,,余齢,よれい,,yorei,"średnia długość życia
 przeciętna długość życia
 statystyczna długość życia",,,
@@ -104681,10 +104681,13 @@ przeciętna długość życia
 statystyczna długość życia",,,
 36569,WORD_NOUN,,HIRAGANA,,,陰陽家,いんようか,,in'youka,"wróżbita (szczególnie w koncepcji Yin i Yang)
 egzorcysta
-medium",,,
+medium",,,"DUPLICATE 36570
+DUPLICATE 36571"
 36570,WORD_NOUN,,HIRAGANA,,,陰陽家,おんようけ,,on'youke,"wróżbita (szczególnie w koncepcji Yin i Yang)
 egzorcysta
-medium",,,
+medium",,,"DUPLICATE 36569
+DUPLICATE 36571"
 36571,WORD_NOUN,,HIRAGANA,,,陰陽家,おんみょうけ,,onmyouke,"wróżbita (szczególnie w koncepcji Yin i Yang)
 egzorcysta
-medium",,,
+medium",,,"DUPLICATE 36569
+DUPLICATE 36570"
