@@ -4,15 +4,18 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 
 import com.csvreader.CsvReader;
+import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
@@ -38,7 +41,7 @@ public class GetCommonPartList {
 				pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
 
 		// czytanie listy common'owych plikow
-		Map<String, CommonWord> commonWordMap = readCommonWordFile("input/common_word.csv");
+		Map<Integer, CommonWord> commonWordMap = readCommonWordFile("input/common_word.csv");
 		
 		// czytanie identyfikatorow common'owych slow
 		List<String> commonWordIds = readCommonWordIds(fileName);
@@ -56,7 +59,7 @@ public class GetCommonPartList {
 		
 		for (String currentCommonWordId : commonWordIds) {
 			
-			CommonWord commonWord = commonWordMap.get(currentCommonWordId);
+			CommonWord commonWord = commonWordMap.get(Integer.parseInt(currentCommonWordId));
 			
 			String commonKanji = null;
 			String commonKana = null;
@@ -69,6 +72,8 @@ public class GetCommonPartList {
 				commonKana = commonWord.getKana();
 				
 				groupEntryList = jmeNewDictionary.getGroupEntryList(commonKanji, commonKana);
+				
+				commonWord.done = true;
 				
 			} else {
 				
@@ -200,17 +205,19 @@ public class GetCommonPartList {
 		}
 		
 		CsvReaderWriter.generateCsv("input/word-common-new.csv", newWordList, true, true, false);
+		
+		writeCommonWordFile(commonWordMap, "input/common_word-nowy.csv");
 	}
 	
-	private static Map<String, CommonWord> readCommonWordFile(String fileName) throws Exception {
+	private static Map<Integer, CommonWord> readCommonWordFile(String fileName) throws Exception {
 		
-		TreeMap<String, CommonWord> result = new TreeMap<String, CommonWord>();
+		TreeMap<Integer, CommonWord> result = new TreeMap<Integer, CommonWord>();
 		
 		CsvReader csvReader = new CsvReader(new FileReader(new File(fileName)));
 				
 		while (csvReader.readRecord()) {
 			
-			String id = csvReader.get(0);
+			Integer id = Integer.parseInt(csvReader.get(0));
 			
 			boolean done = csvReader.get(1).equals("1");
 			
@@ -229,6 +236,27 @@ public class GetCommonPartList {
 		csvReader.close();
 		
 		return result;
+	}
+	
+	private static void writeCommonWordFile(Map<Integer, CommonWord> commonWordMap, String fileName) throws Exception {
+		
+		CsvWriter csvWriter = new CsvWriter(new FileWriter(fileName), ',');
+		
+		Set<Entry<Integer, CommonWord>> commonWordMapEntrySet = commonWordMap.entrySet();
+		
+		for (Entry<Integer, CommonWord> currentCommonWordEntry : commonWordMapEntrySet) {
+			
+			csvWriter.write(String.valueOf(currentCommonWordEntry.getValue().id));
+			csvWriter.write(currentCommonWordEntry.getValue().done == true ? "1" : "");
+			csvWriter.write(currentCommonWordEntry.getValue().kanji);
+			csvWriter.write(currentCommonWordEntry.getValue().kana);
+			csvWriter.write(currentCommonWordEntry.getValue().type);
+			csvWriter.write(currentCommonWordEntry.getValue().translate);
+			
+			csvWriter.endRecord();
+		}	
+		
+		csvWriter.close();
 	}
 	
 	private static List<String> readCommonWordIds(String fileName) {
@@ -309,7 +337,7 @@ public class GetCommonPartList {
 	
 	private static class CommonWord {
 		
-		private String id;
+		private Integer id;
 		
 		private boolean done;
 		
@@ -320,7 +348,7 @@ public class GetCommonPartList {
 		
 		private String translate;
 		
-		public CommonWord(String id, boolean done, String kanji, String kana, String type, String translate) {
+		public CommonWord(Integer id, boolean done, String kanji, String kana, String type, String translate) {
 			this.id = id;
 			this.done = done;
 			this.kanji = kanji;
@@ -330,12 +358,12 @@ public class GetCommonPartList {
 		}
 
 		@SuppressWarnings("unused")
-		public String getId() {
+		public Integer getId() {
 			return id;
 		}
 
 		@SuppressWarnings("unused")
-		public void setId(String id) {
+		public void setId(Integer id) {
 			this.id = id;
 		}
 
