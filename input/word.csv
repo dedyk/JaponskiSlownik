@@ -5229,8 +5229,11 @@ dom",,,
 1705,WORD_EXPRESSION,,HIRAGANA,,,建物ができました,たてものができました,,tatemono ga dekimashita,budynek został zbudowany,dosł. zaistniał,,
 1706,WORD_EXPRESSION,,HIRAGANA,,,友だちができました,ともだちができました,,tomodachi ga dekimashita,zdobyłem przyjaciela,dosł. zaistniał,,
 1707,WORD_EXPRESSION,,HIRAGANA,,,料理ができました,りょうりができました,,ryouri ga dekimashita,potrawa została przygotowana,dosł. zaistniała,,
-1708,WORD_EXPRESSION,,HIRAGANA,,,-,ために,,tame ni,"dla
-w celu","rzeczownik no ~, czasownik ~",,
+1708,WORD_CONJUNCTION,,HIRAGANA,,,為に,ために,,tame ni,"dla
+w celu
+z powodu
+na rzecz
+na korzyść","rzeczownik no ~, czasownik ~",,
 1709,WORD_NOUN,,HIRAGANA,,,卓球,たっきゅう,,takkyuu,"ping pong
 tenis stołowy",,,
 1710,WORD_NOUN,,KATAKANA,,,-,ガールフレンド,,gaaru furendo,narzeczona,,,
@@ -10085,7 +10088,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,Genki dodatkowe 2-19,,国際,こくさい,,kokusai,
 3634,WORD_NOUN,,HIRAGANA,Genki dodatkowe 2-19,,電気工学,でんきこうがく,,denki kougaku,elektrotechnika,,,
 3635,WORD_VERB_IRREGULAR,,HIRAGANA,Genki dodatkowe 2-19,,研究する,けんきゅうする,,kenkyuu suru,"badać
 studiować",,,
-3636,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,-,のために,,no tame ni,dla,"~ kogoś, czegoś",,
+3636,WORD_EXPRESSION,,HIRAGANA,Genki dodatkowe 2-19,,の為に,のために,,no tame ni,dla,"~ kogoś, czegoś",,
 3637,WORD_VERB_U,,HIRAGANA,Genki dodatkowe 2-19,に,申し込む,もうしこむ,ni,moushikomu,"prosić o
 proponować (np. rozmowę)
 składać podanie
@@ -105073,3 +105076,89 @@ nowotwór
 nabrzmienie
 opuchlizna
 obrzęk",,,DUPLICATE 36679
+36695,WORD_NOUN,,KATAKANA,,,-,タイル,,tairu,"kafelek
+płytka ceramiczna
+powłoka","ang: tile, coating",,
+36696,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ヒッピー,,hippii,"hipis
+hippis",ang: hippy,,
+36697,WORD_NOUN,,KATAKANA,,,-,メンタルヘルス,,mentaru herusu,zdrowie psychiczne,ang: mental health,,
+36698,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ライバル,,raibaru,"rywal
+przeciwnik
+konkurent",ang: rival,,
+36699,WORD_NOUN,,HIRAGANA,,,三日月,みかづき,,mikaduki,księżyc między nowiem a pierwszą lub trzecią kwadrą,,,
+36700,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,不敵,ふてき,,futeki,"brawurowy
+odważny
+śmiały
+nieustraszony
+dzielny
+brawura
+odwaga
+śmiałość",,,
+36701,WORD_NOUN,,HIRAGANA,,,全人,ぜんじん,,zenjin,"święty
+osoba zrównoważona moralnie i intelektualnie",,,
+36702,WORD_NOUN,,HIRAGANA,,,労働条件,ろうどうじょうけん,,roudou jouken,warunki pracy,,,
+36703,WORD_NOUN,,HIRAGANA,,,寝泊まり,ねとまり,,netomari,"pobyt w
+zakwaterowanie w",,,
+36704,WORD_NOUN,,HIRAGANA,,,小言,こごと,,kogoto,"nagana
+bura
+zarzut
+reprymenda",,,
+36705,WORD_NOUN,,HIRAGANA,,,接着,せっちゃく,,secchaku,"adhezja
+przyleganie
+przywieranie
+klejenie się",,,
+36706,WORD_ADJECTIVE_I,,HIRAGANA,,,暇がない,ひまがない,,himaganai,"zajęty
+zapracowany
+niemający wolnego czasu",,,
+36707,WORD_NOUN,,HIRAGANA,,,歯切れ,はぎれ,,hagire,"artykulacja
+wymowa",,,
+36708,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,無茶,むちゃ,,mucha,"absurdalny
+bezsensowny
+nierozsądny
+niemądry
+nieprzemyślany
+bardzo
+nadzwyczaj
+niezwykle
+ponad miarę",,,
+36709,WORD_NOUN,,HIRAGANA,,,特派員,とくはいん,,tokuhain,"korespondent (specjalny, np. dla gazety)
+delegat
+przedstawiciel
+reprezentant",,,
+36710,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,生後,せいご,,seigo,"pourodzeniowy
+poporodowy
+od urodzenia",,,
+36711,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,県下,けんか,,kenka,"prefekturalny
+w prefekturze",,,
+36712,WORD_NOUN,,HIRAGANA,,,糖分,とうぶん,,toubun,"ilość cukru
+zawartość cukru",,,
+36713,WORD_NOUN,,HIRAGANA,,,記載,きさい,,kisai,"opis
+wzmianka
+wspomnienie
+wpis
+rekord",,,
+36714,WORD_NOUN,,HIRAGANA,,,足踏み,あしぶみ,,ashibumi,"stąpanie
+kroczenie
+tupanie
+maszerowanie w miejscu
+zastój
+zatrzymanie
+impas
+pat",,,
+36715,WORD_NOUN,,HIRAGANA,,,飛び火,とびひ,,tobihi,???,,,
+36716,WORD_NOUN,,KATAKANA,,,-,スクリュー,,sukuryuu,"śruba
+wkręt
+śruba napędowa (np. statku)","ang: screw, propeller",,
+36717,WORD_NOUN,,HIRAGANA,,,同地,どうち,,douchi,"to samo miejsce
+to miejsce",,,
+36718,WORD_ADVERB,,HIRAGANA,,,恐る恐る,おそるおそる,,osoru osoru,nieśmiało,,,
+36719,WORD_NOUN,,HIRAGANA,,,列挙,れっきょ,,rekkyo,"wykaz
+wyliczenie
+lista",,,
