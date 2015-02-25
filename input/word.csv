@@ -7310,7 +7310,7 @@ premia",,,
 2556,WORD_NOUN,,KATAKANA_HIRAGANA,,,ノーベル賞,ノーベルしょう,,nooberu shou,nagroda Nobla,,,
 2557,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,受賞者,じゅしょうしゃ,,jushousha,laureat,,,
-2558,WORD_NOUN,,HIRAGANA,,,罰,ばつ,,batsu,kara,,,
+2558,WORD_NOUN,,HIRAGANA,,,罰,ばつ,,batsu,kara,,,DUPLICATE 36787
 2559,WORD_NOUN,,HIRAGANA,,,賞罰,しょうばつ,,shoubatsu,nagroda i kara,,,
 2560,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,Genki dodatkowe 2-17,,関係,かんけい,,kankei,"stosunek
@@ -9000,7 +9000,8 @@ DUPLICATE 6457
 DUPLICATE 8266
 DUPLICATE 24263
 DUPLICATE 29010
-DUPLICATE 29011"
+DUPLICATE 29011
+DUPLICATE 36788"
 3219,WORD_VERB_RU,,HIRAGANA,Genki 2-19,,-,もてる,,moteru,"podobać się (osobie)
 być zainteresowany (osobą)","cel romantyczny, osoba ni",,DUPLICATE 15462
 3220,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-19,,遠慮する,えんりょする,,enryo suru,"zachować rezerwę
@@ -22692,7 +22693,8 @@ być głodnym",,,DUPLICATE 8265
 8265,WORD_VERB_RU,,HIRAGANA,,,餓える,かつえる,,katsueru,"głodować
 być głodnym",,,DUPLICATE 8264
 8266,WORD_VERB_RU,,HIRAGANA,,,駆ける,かける,,kakeru,"biec
-galopować",,,DUPLICATE 3218
+galopować",,,"DUPLICATE 3218
+EDICT_DUPLICATE 36788"
 8267,WORD_VERB_U,,HIRAGANA,,,駆る,かる,,karu,"przynaglać
 skłaniać
 pobudzać",,,
@@ -105307,3 +105309,74 @@ zasuwa (np. w drzwiach)",,,
 sztućce
 przebiegły biznesmen
 ostry biznesmen",,,
+36770,WORD_NOUN,,KATAKANA,,,-,ダイニング,,dainingu,"jadalnia
+pokój jadalny
+posiłek","ang: dining, dining room, meal",,
+36771,WORD_NOUN,,KATAKANA,,,-,トップ,,toppu,"top
+pozycja top
+wyższe kierownictwo
+wyższy urzędnik",,,
+36772,WORD_NOUN,,KATAKANA,,,-,ビューロー,,byuuroo,"biurko
+sekretarzyk
+komoda",ang: bureau,,
+36773,WORD_NOUN,,KATAKANA,,,-,モノレール,,monoreeru,kolej jednoszynowa,ang: monorail,,
+36774,WORD_NOUN,,KATAKANA,,,-,リセッション,,risesshon,recesja,ang: recession,,
+36775,WORD_VERB_RU,,HIRAGANA,,,出迎える,でむかえる,,demukaeru,"spotykać
+witać
+powitać",,,
+36776,WORD_NOUN,,HIRAGANA,,,原住民,げんじゅうみん,,genjuumin,"rdzenni mieszkańcy
+pierwotni mieszkańcy
+tubylcy",,,
+36777,WORD_NOUN,SUFFIX,HIRAGANA,,,垂れ,たれ,,tare,"wiszący
+coś wiszącego (np. skóra)
+sos wykonany z sosu sojowego, mirin, octu i dashi
+element podstawowy kanji umieszczany w górnym lewym rogu znaku
+[sufiks używany po rzeczowniku lub na-przymiotniku wskazujący czyjąś naturę]",,,
+36778,WORD_NOUN,,HIRAGANA,,,大相撲,おおずもう,,oozumou,zawodowy zawodnik sumo,,,
+36779,WORD_NOUN,,HIRAGANA,,,大蔵,おおくら,,ookura,Ministerstwo Finansów,,,
+36780,WORD_NOUN,,HIRAGANA,,,待ち伏せ,まちぶせ,,machibuse,"zasadzka
+realizacja zasadzki",,,
+36781,WORD_NOUN,,HIRAGANA,,,手振り,てぶり,,teburi,ruch lub gest rękoma lub ramionami,,,
+36782,WORD_NOUN,,HIRAGANA,,,水車,すいしゃ,,suisha,"koło wodne
+turbina wodna
+turbina hydrauliczna",,,
+36783,WORD_NOUN,,HIRAGANA,,,無我,むが,,muga,"bezinteresowność
+usuwanie się w cień
+skromność
+samorezygnacja
+anatta
+anatman (podstawowa doktryna buddyjska, według której nie istnieje nic takiego jak atman)",,,
+36784,WORD_NOUN,,HIRAGANA,,,物腰,ものごし,,monogoshi,"sposób zachowania
+postawa
+postępowanie",,,
+36785,WORD_NOUN,,HIRAGANA,,,硬式,こうしき,,koushiki,piłka,"do tenisa, baseball",,
+36786,WORD_NOUN,,HIRAGANA,,,継承,けいしょう,,keishou,"sukcesja
+dziedziczenie
+akcesja
+objęcie",,,
+36787,WORD_NOUN,,HIRAGANA,,,罰,ばち,,bachi,"kara boska
+klątwa
+sroga kara",,,DUPLICATE 2558
+36788,WORD_VERB_U,,HIRAGANA,,,翔る,かける,,kakeru,"szybować
+unosić się
+latać
+lecieć
+biec
+pędzić
+ciskać",,,"DUPLICATE 3218
+EDICT_DUPLICATE 8266"
+36789,WORD_NOUN,,HIRAGANA,,,親分,おやぶん,,oyabun,"szef
+głowa (świata przestępczego)",,,
+36790,WORD_NOUN,,HIRAGANA,,,語源,ごげん,,gogen,"pochodzenie słowa
+źródło słowa
+etymologia",,,
+36791,WORD_NOUN,,HIRAGANA,,,貸間,かしま,,kashima,pokój do wynajęcia,,,
+36792,WORD_VERB_RU,,HIRAGANA,,,述べる,のべる,,noberu,"oświadczać
+ogłaszać
+wyrażać
+wspominać",,,
+36793,WORD_NOUN,,HIRAGANA,,,逃げ,にげ,,nige,ucieczka,,,
+36794,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,静粛,せいしゅく,,seishuku,"cichy
+milczący
+cisza",,,
