@@ -105428,7 +105428,7 @@ rycerski duch",,,
 yeti",,,
 36819,WORD_NOUN,,KATAKANA,,,-,イエティ,,ieti,"człowiek śniegu
 yeti",,,
-36820,WORD_NOUN,,KATAKANA,,,-,イェティー,,yetii,"człowiek śniegu
+36820,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,イェティー,,yetii,"człowiek śniegu
 yeti",,,
 36821,WORD_NOUN,,KATAKANA,,,-,ヒバゴン,,hibagon,mistyczny japoński potwór człowiekowaty,podobny do yeti lub wielkiej stopy,,
 36822,WORD_NOUN,,HIRAGANA,,,野人,やじん,,yajin,"wieśniak
@@ -105445,6 +105445,6 @@ przestawić
 poruszyć
 odłożyć
 odwlekać
-opóźniać",,,
+opóźniać",,,DUPLICATE 36825
 36825,WORD_VERB_U,,HIRAGANA,,,滑らす,すべらす,,suberasu,"ślizgać się
-sunąć",,,
+sunąć",,,DUPLICATE 36824
