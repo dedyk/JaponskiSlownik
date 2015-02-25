@@ -9001,7 +9001,9 @@ DUPLICATE 8266
 DUPLICATE 24263
 DUPLICATE 29010
 DUPLICATE 29011
-DUPLICATE 36788"
+DUPLICATE 36788
+DUPLICATE 36827
+DUPLICATE 36828"
 3219,WORD_VERB_RU,,HIRAGANA,Genki 2-19,,-,もてる,,moteru,"podobać się (osobie)
 być zainteresowany (osobą)","cel romantyczny, osoba ni",,DUPLICATE 15462
 3220,WORD_VERB_IRREGULAR,,HIRAGANA,Genki 2-19,,遠慮する,えんりょする,,enryo suru,"zachować rezerwę
@@ -22694,7 +22696,10 @@ być głodnym",,,DUPLICATE 8265
 być głodnym",,,DUPLICATE 8264
 8266,WORD_VERB_RU,,HIRAGANA,,,駆ける,かける,,kakeru,"biec
 galopować",,,"DUPLICATE 3218
-EDICT_DUPLICATE 36788"
+DUPLICATE 36827
+DUPLICATE 36827
+EDICT_DUPLICATE 36788
+EDICT_DUPLICATE 38266"
 8267,WORD_VERB_U,,HIRAGANA,,,駆る,かる,,karu,"przynaglać
 skłaniać
 pobudzać",,,
@@ -105416,13 +105421,13 @@ WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,任侠,じんきょう,,jinkyou,"rycerstwo
 bohaterstwo
 heroizm
-rycerski duch",,,
+rycerski duch",,,DUPLICATE 36836
 36816,"WORD_ADJECTIVE_NA
 WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,仁侠,じんきょう,,jinkyou,"rycerstwo
 bohaterstwo
 heroizm
-rycerski duch",,,
+rycerski duch",,,DUPLICATE 36837
 36817,WORD_NOUN,,HIRAGANA,,,大阪弁,おおさかべん,,oosaka ben,dialekt z Osaki,,,
 36818,WORD_NOUN,,HIRAGANA,,,雪男,ゆきおとこ,,yukiotoko,"człowiek śniegu
 yeti",,,
@@ -105448,3 +105453,52 @@ odwlekać
 opóźniać",,,DUPLICATE 36825
 36825,WORD_VERB_U,,HIRAGANA,,,滑らす,すべらす,,suberasu,"ślizgać się
 sunąć",,,DUPLICATE 36824
+36826,WORD_NOUN,,HIRAGANA,,,待伏せ,まちぶせ,,machibuse,"zasadzka
+realizacja zasadzki",,,
+36827,WORD_VERB_U,,HIRAGANA,,,駆ける,かける,,kakeru,"szybować
+unosić się
+latać
+lecieć
+biec
+pędzić
+ciskać",,,"DUPLICATE 3218
+DUPLICATE 8266
+DUPLICATE 8266"
+36828,WORD_VERB_U,,HIRAGANA,,,翔ける,かける,,kakeru,"szybować
+unosić się
+latać
+lecieć
+biec
+pędzić
+ciskać",,,"DUPLICATE 3218
+EDICT_DUPLICATE 8266"
+36829,WORD_NOUN,,HIRAGANA,,,語原,ごげん,,gogen,"pochodzenie słowa
+źródło słowa
+etymologia",,,
+36830,WORD_NOUN,,HIRAGANA,,,貸し間,かしま,,kashima,pokój do wynajęcia,,,
+36831,WORD_VERB_RU,,HIRAGANA,,,宣べる,のべる,,noberu,"oświadczać
+ogłaszać
+wyrażać
+wspominać",,,
+36832,WORD_VERB_RU,,HIRAGANA,,,陳べる,のべる,,noberu,"oświadczać
+ogłaszać
+wyrażać
+wspominać",,,
+36833,WORD_NOUN,,KATAKANA,,,-,テレフォンカード,,terefon kaado,karta telefoniczna,,,
+36834,WORD_NOUN,,KATAKANA,,,-,テレフォン・カード,,terefon kaado,karta telefoniczna,,,
+36835,WORD_VERB_RU,,HIRAGANA,,,待伏せる,まちぶせる,,machibuseru,"zaczaić się
+wciągać w zasadzkę",,,
+36836,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,任侠,にんきょう,,ninkyou,"rycerstwo
+bohaterstwo
+heroizm
+rycerski duch",,,DUPLICATE 36815
+36837,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,仁侠,にんきょう,,ninkyou,"rycerstwo
+bohaterstwo
+heroizm
+rycerski duch",,,DUPLICATE 36816
+36838,WORD_VERB_U,,HIRAGANA,,,辷らす,すべらす,,suberasu,"ślizgać się
+sunąć",,,
