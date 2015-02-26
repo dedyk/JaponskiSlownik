@@ -105585,23 +105585,23 @@ cudowny
 wspaniały",,,
 36864,WORD_NOUN,,HIRAGANA,,,間借り人,まがりにん,,magarinin,"lokator
 najemca",,,
-36865,WORD_FEMALE_NAME,,KATAKANA,,,-,ツェツィーリア,,sheshiiria,Cecylia,imię,NO_TYPE_CHECK,
-36866,WORD_FEMALE_NAME,,KATAKANA,,,-,チェチーリア,,shechiiria,Cecylia,imię,NO_TYPE_CHECK,
+36865,WORD_FEMALE_NAME,,KATAKANA_EXCEPTION,,,-,ツェツィーリア,,sheshiiria,Cecylia,imię,NO_TYPE_CHECK,
+36866,WORD_FEMALE_NAME,,KATAKANA,,,-,チェチーリア,,chechiiria,Cecylia,imię,NO_TYPE_CHECK,
 36867,WORD_MALE_NAME,,KATAKANA,,,-,フェルディナンド,,ferudinando,Ferdynand,imię,NO_TYPE_CHECK,
-36868,"WORD_EXPRESSION
-WORD_VERB_RU",,HIRAGANA,,,大目に見る,おおめにみる,,oome ni miru,"tolerować
+36868,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,大目に見る,おおめにみる,,oome ni miru,"tolerować
 znosić
 akceptować
 przymknąć na coś oko
 pomijać coś milczeniem",,,
-36869,"WORD_EXPRESSION
-WORD_VERB_RU",,HIRAGANA,,,多めに見る,おおめにみる,,oome ni miru,"tolerować
+36869,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,多めに見る,おおめにみる,,oome ni miru,"tolerować
 znosić
 akceptować
 przymknąć na coś oko
 pomijać coś milczeniem",,,
-36870,"WORD_EXPRESSION
-WORD_VERB_RU",,HIRAGANA,,,多目に見る,おおめにみる,,oome ni miru,"tolerować
+36870,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,多目に見る,おおめにみる,,oome ni miru,"tolerować
 znosić
 akceptować
 przymknąć na coś oko
@@ -105624,12 +105624,13 @@ poborca",,,
 36878,WORD_NOUN,,KATAKANA,,,-,ヘモグロビン,,hemogurobin,hemoglobina,,,
 36879,WORD_NOUN,,HIRAGANA,,,数矢,かずや,,kazuya,"produkowana masowo strzała
 strzała do ćwiczeń na strzelnicy",,,
-36880,WORD_MALE_NAME,,KATAKANA,,,-,タデウス,,tadeusu,Tadeusz,imię,,
+36880,WORD_MALE_NAME,,KATAKANA,,,-,タデウス,,tadeusu,Tadeusz,imię,NO_TYPE_CHECK,
 36881,WORD_VERB_U,,HIRAGANA,,,寝転がる,ねころがる,,nekorogaru,"położyć się
 leżeć",,,
 36882,WORD_NOUN,,HIRAGANA,,,家主,やぬし,,yanushi,"właściciel
 właściciel domu
-gospodarz domu",,,
+gospodarz domu",,,"DUPLICATE 36887
+DUPLICATE 36888"
 36883,WORD_VERB_U,,HIRAGANA,,,殺る,やる,,yaru,"sprzątnąć kogoś
 ukatrupić kogoś
 załatwić kogoś
@@ -105640,10 +105641,12 @@ grać",na scenie,,
 36885,WORD_VERB_U,,HIRAGANA,,,犯る,やる,,yaru,uprawiać seks z,slang,,
 36886,WORD_MALE_NAME,,KATAKANA,,,-,トマス,,tomasu,Tomasz,Idę i wrócę,NO_TYPE_CHECK,
 36887,WORD_NOUN,,HIRAGANA,,,家主,いえあるじ,,iearuji,"właściciel domu
-gospodarz domu",,,
+gospodarz domu",,,"DUPLICATE 36882
+DUPLICATE 36888"
 36888,WORD_NOUN,,HIRAGANA,,,家主,いえぬし,,ienushi,"właściciel
 właściciel domu
-gospodarz domu",,,
+gospodarz domu",,,"DUPLICATE 36882
+DUPLICATE 36887"
 36889,"WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,-,ぱたぱた,,pata pata,"trzepotanie (odgłos czegoś lekkiego i cienkiego jak kręcący się wiatrak)
 tupot (odgłos lekkich kroków)
@@ -105654,13 +105657,13 @@ skręcać się
 zniekształcać się
 być giętki (np. bambus, ciało)
 być elastyczny
-być sprężysty",,,
+być sprężysty",,,DUPLICATE 36892
 36892,WORD_VERB_U,,HIRAGANA,,,撓る,しわる,,shiwaru,"zginać się
 skręcać się
 zniekształcać się
 być giętki (np. bambus, ciało)
 być elastyczny
-być sprężysty",,,
+być sprężysty",,,DUPLICATE 36891
 36893,WORD_NOUN,,HIRAGANA,,,見取り,みとり,,mitori,"percepcja
 postrzeganie
 pojęcie
