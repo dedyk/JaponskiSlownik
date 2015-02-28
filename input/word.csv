@@ -3307,7 +3307,9 @@ i inne
 i tym podobne
 lub coś takiego
 na przykład",,,
-973,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-12,,-,たんざく,,tanzaku,kawałek ładnego papieru,,,
+973,WORD_NOUN,,HIRAGANA,Genki dodatkowe 1-12,,短冊,たんざく,,tanzaku,"długie, wąskie karteczki na których napisane są (pionowo) wiersze
+paseczek papieru
+cienki prostokąt (skrót)",,,DUPLICATE 36970
 974,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,"Genki dodatkowe 1-12
 Genki kanji 1-12",,人々,ひとびと,,hitobito,"ludzie
@@ -105879,14 +105881,14 @@ mieć konwulsje
 zesztywnieć",,,
 36967,WORD_NOUN,,HIRAGANA,,,彩色,さいしき,,saishiki,"ubarwienie
 kolorystyka
-zabarwienie",,,
+zabarwienie",,,DUPLICATE 37001
 36968,WORD_NOUN,,HIRAGANA,,,手法,しゅほう,,shuhou,"technika
 metoda
 sposób",,,
 36969,WORD_EMPTY,SUFFIX,HIRAGANA,,,沿い,ぞい,,zoi,wzdłuż,,,
 36970,WORD_NOUN,,HIRAGANA,,,短冊,たんじゃく,,tanjaku,"długie, wąskie karteczki na których napisane są (pionowo) wiersze
 paseczek papieru
-cienki prostokąt (skrót)",,,
+cienki prostokąt (skrót)",,,DUPLICATE 973
 36971,WORD_NOUN,,HIRAGANA,,,自他,じた,,jita,"siebie i innych
 przechodni i nieprzechodni (czasownik)",,,
 36972,WORD_NOUN,,HIRAGANA,,,面々,めんめん,,menmen,"każdy
@@ -105901,7 +105903,7 @@ zamiar
 zamysł
 cel",,,
 36975,WORD_NOUN,,KATAKANA,,,-,マークシート,,maaku shiito,wizualny arkusz odpowiedzi,zaznaczanie prawidłowej odpowiedzi na teście,,
-36976,WORD_NOUN,,KATAKANA,,,-,メドレーリレー,,medoreeriree,sztafeta w stylu dowolnym,"w pływaniu, ang: medley relay",,
+36976,WORD_NOUN,,KATAKANA,,,-,メドレーリレー,,medoree riree,sztafeta w stylu dowolnym,"w pływaniu, ang: medley relay",,
 36977,WORD_ADJECTIVE_I,,HIRAGANA,,,喜ばしい,よろこばしい,,yorokobashii,"wspaniały
 zachwycający
 radosny
@@ -105949,3 +105951,71 @@ głupek
 naiwniak
 dureń",,,
 36994,WORD_NOUN,,HIRAGANA,,,根菜類,こんさいるい,,konsairui,roślina korzeniowa,,,
+36995,WORD_NOUN,,KATAKANA,,,-,ショート・カット,,shooto katto,"skrót
+krótkie włosy (u kobiet)",ang: short cut,,
+36996,WORD_NOUN,,KATAKANA,,,-,トラベラーチェック,,toraberaa chekku,czek podróżny,"ang: traveller's cheque, traveler's check",,
+36997,WORD_NOUN,,KATAKANA,,,-,トラベラー・チェック,,toraberaa chekku,czek podróżny,"ang: traveller's cheque, traveler's check",,
+36998,WORD_NOUN,,KATAKANA,,,-,ナチス,,nachisu,"nazista
+narodowy socjalista",,,
+36999,WORD_VERB_U,,HIRAGANA,,,引き攣る,ひきつる,,hikitsuru,"mieć skurcz
+mieć drgawki
+mieć konwulsje
+zesztywnieć",,,
+37000,WORD_VERB_U,,HIRAGANA,,,引攣る,ひきつる,,hikitsuru,"mieć skurcz
+mieć drgawki
+mieć konwulsje
+zesztywnieć",,,
+37001,WORD_NOUN,,HIRAGANA,,,彩色,さいしょく,,saishoku,"ubarwienie
+kolorystyka
+zabarwienie",,,DUPLICATE 36967
+37002,WORD_NOUN,,HIRAGANA,,,短籍,たんざく,,tanzaku,"długie, wąskie karteczki na których napisane są (pionowo) wiersze
+paseczek papieru
+cienki prostokąt (skrót)",,,DUPLICATE 37003
+37003,WORD_NOUN,,HIRAGANA,,,短籍,たんじゃく,,tanjaku,"długie, wąskie karteczki na których napisane są (pionowo) wiersze
+paseczek papieru
+cienki prostokąt (skrót)",,,DUPLICATE 37002
+37004,WORD_NOUN,,HIRAGANA,,,短尺,たんざく,,tanzaku,"długie, wąskie karteczki na których napisane są (pionowo) wiersze
+paseczek papieru
+cienki prostokąt (skrót)",,,DUPLICATE 37005
+37005,WORD_NOUN,,HIRAGANA,,,短尺,たんじゃく,,tanjaku,"długie, wąskie karteczki na których napisane są (pionowo) wiersze
+paseczek papieru
+cienki prostokąt (skrót)",,,DUPLICATE 37004
+37006,WORD_NOUN,,HIRAGANA,,,面面,めんめん,,menmen,"każdy
+wszyscy
+każdy kierunek",,,
+37007,WORD_NOUN,,KATAKANA,,,-,マーク・シート,,maaku shiito,wizualny arkusz odpowiedzi,zaznaczanie prawidłowej odpowiedzi na teście,,
+37008,WORD_NOUN,,KATAKANA,,,-,メドレー・リレー,,medoree riree,sztafeta w stylu dowolnym,"w pływaniu, ang: medley relay",,
+37009,WORD_ADJECTIVE_I,,HIRAGANA,,,悦ばしい,よろこばしい,,yorokobashii,"wspaniały
+zachwycający
+radosny
+pełen radości
+szczęśliwy",,,
+37010,WORD_NOUN,,HIRAGANA,,,空け者,うつけもの,,utsukemono,"głupek
+dureń
+idiota
+tuman
+osioł",,,
+37011,WORD_NOUN,,HIRAGANA,,,呆気者,うつけもの,,utsukemono,"głupek
+dureń
+idiota
+tuman
+osioł",,,
+37012,WORD_NOUN,,KATAKANA,,,-,ジップ・コード,,jippu koodo,kod pocztowy,ang: zip code,,
+37013,WORD_ADJECTIVE_I,,HIRAGANA,,,固苦しい,かたくるしい,,katakurushii,"formalny
+oficjalny
+uroczysty
+ceremonialny
+dokładny
+ścisły",,,DUPLICATE 37014
+37014,WORD_ADJECTIVE_I,,HIRAGANA,,,固苦しい,かたぐるしい,,katagurushii,"formalny
+oficjalny
+uroczysty
+ceremonialny
+dokładny
+ścisły",,,DUPLICATE 37013
+37015,WORD_NOUN,,HIRAGANA,,,虚け,うつけ,,utsuke,"roztargnienie
+nieuwaga
+rozmarzenie
+głupek
+naiwniak
+dureń",,,
