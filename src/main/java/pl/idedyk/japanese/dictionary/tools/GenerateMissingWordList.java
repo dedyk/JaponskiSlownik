@@ -3,6 +3,7 @@ package pl.idedyk.japanese.dictionary.tools;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -122,7 +123,11 @@ public class GenerateMissingWordList {
 
 		indexWriter.close();
 		
-		List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
+		List<PolishJapaneseEntry> foundWordList = new ArrayList<PolishJapaneseEntry>();
+		List<String> foundWordSearchList = new ArrayList<String>();
+		
+		List<PolishJapaneseEntry> notFoundWordList = new ArrayList<PolishJapaneseEntry>();
+		List<String> notFoundWordSearchList = new ArrayList<String>();
 		
 		// stworzenie wyszukiwacza
 		IndexReader reader = DirectoryReader.open(index);
@@ -144,6 +149,8 @@ public class GenerateMissingWordList {
 			ScoreDoc[] scoreDocs = searcher.search(query, null, 10).scoreDocs;
 			
 			if (scoreDocs.length > 0) {
+				
+				foundWordSearchList.add(currentMissingWord);
 				
 				for (ScoreDoc scoreDoc : scoreDocs) {
 
@@ -235,10 +242,12 @@ public class GenerateMissingWordList {
 					
 					polishJapaneseEntry.setInfo(additionalInfoSb.toString());
 									
-					newWordList.add(polishJapaneseEntry);
+					foundWordList.add(polishJapaneseEntry);
 				}				
 				
 			} else {
+				
+				notFoundWordSearchList.add(currentMissingWord);
 				
 				PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
 				
@@ -268,7 +277,7 @@ public class GenerateMissingWordList {
 				polishJapaneseEntry.setTranslates(newTranslateList);				
 				polishJapaneseEntry.setInfo("");
 								
-				newWordList.add(polishJapaneseEntry);				
+				notFoundWordList.add(polishJapaneseEntry);
 			}
 		}
 
@@ -276,8 +285,20 @@ public class GenerateMissingWordList {
 		
 		System.out.println("Zapisywanie słownika...");
 		
+		List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
+		
+		newWordList.addAll(foundWordList);
+		newWordList.addAll(notFoundWordList);
+		
 		CsvReaderWriter.generateCsv("input/word-new.csv", newWordList, true, true, false);
-
+		
+		FileWriter searchResultFileWriter = new FileWriter(fileName + "-new");
+		
+		searchResultFileWriter.write(Utils.convertListToString(foundWordSearchList));
+		searchResultFileWriter.write("\n---------\n");
+		searchResultFileWriter.write(Utils.convertListToString(notFoundWordSearchList));
+		
+		searchResultFileWriter.close();
 	}
 	
 	private static List<String> readMissingFile(String fileName) {
