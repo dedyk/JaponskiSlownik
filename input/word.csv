@@ -4124,9 +4124,11 @@ dodawać otuchy
 pobudzać
 pocieszać",,,
 1261,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,気に入る,きにはいる,,ki ni hairu,"spodobać się
+WORD_EXPRESSION",,HIRAGANA,,,気に入る,きにはいる,,ki ni hairu,"być zadowolony z
+spodobać się
 pasować
-być dobranym",,,
+być dobranym
+odpowiadać",,,DUPLICATE 37175
 1262,WORD_ADJECTIVE_I,SUFFIX,HIRAGANA,,,易い,やすい,,yasui,"łatwy
 prosty
 nietrudny
@@ -83952,8 +83954,8 @@ udręka
 choroba",,,
 29774,WORD_NOUN,,HIRAGANA,,,爵,さく,,saku,"baron
 godność para",,,DUPLICATE 7899
-29775,WORD_NOUN,,HIRAGANA,,,竈,かま,,kama,piec,"do wypalania cegły, porcelany itp.",,
-29776,WORD_NOUN,,HIRAGANA,,,竃,かま,,kama,piec,"do wypalania cegły, porcelany itp.",,
+29775,WORD_NOUN,,HIRAGANA,,,竈,かま,,kama,piec,"do wypalania cegły, porcelany itp.",,DUPLICATE 37183
+29776,WORD_NOUN,,HIRAGANA,,,竃,かま,,kama,piec,"do wypalania cegły, porcelany itp.",,DUPLICATE 37182
 29777,WORD_NOUN,,HIRAGANA,,,畦,うね,,une,"grządka
 rowek
 fałda",,,DUPLICATE 28971
@@ -106531,7 +106533,7 @@ plakietka
 talizman
 amulet",,,"DUPLICATE 4674
 DUPLICATE 4675"
-37159,WORD_NOUN,,HIRAGANA,,,正座,せいざ,,seiza,seiza,dosł: siedzieć we właściwy sposób - tradycyjny sposób siedzenia stosowany w Japonii w pomieszczeniach z tatami,,
+37159,WORD_NOUN,,HIRAGANA,,,正座,せいざ,,seiza,seiza,dosł: siedzieć we właściwy sposób - tradycyjny sposób siedzenia stosowany w Japonii w pomieszczeniach z tatami,,DUPLICATE 37198
 37160,WORD_NOUN,,HIRAGANA,,,確執,かくしつ,,kakushitsu,"niezgoda
 dysonans
 antagonizm
@@ -106570,11 +106572,15 @@ w czasie którym zajmuje powiedzenie “ah!”",,,
 37174,WORD_NOUN,,HIRAGANA,,,読会,どっかい,,dokkai,czytanie projektu ustawy,,,
 37175,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,気に入る,きにいる,,ki ni iru,"być zadowolony z
+spodobać się
 pasować
-odpowiadać",,,
+być dobranym
+odpowiadać",,,DUPLICATE 1261
 37176,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,気にいる,きにいる,,ki ni iru,"być zadowolony z
+spodobać się
 pasować
+być dobranym
 odpowiadać",,,
 37177,WORD_NOUN,,HIRAGANA,,,大学卒,だいがくそつ,,daigakusotsu,"absolwent uniwersytetu
 absolwent uczelni wyższej",,,
@@ -106590,10 +106596,10 @@ lekko",,,
 37181,WORD_NOUN,,HIRAGANA,,,一年間,いちねんかん,,ichinenkan,okres jednego roku,,,
 37182,WORD_NOUN,,HIRAGANA,,,竃,かまど,,kamado,"piec kuchenny
 palenisko
-ognisko domowe",,,
+ognisko domowe",,,DUPLICATE 29776
 37183,WORD_NOUN,,HIRAGANA,,,竈,かまど,,kamado,"piec kuchenny
 palenisko
-ognisko domowe",,,
+ognisko domowe",,,DUPLICATE 29775
 37184,WORD_NOUN,,HIRAGANA,,,木の実,きのみ,,ki no mi,"orzech
 owoc
 czarna jagoda
@@ -106621,51 +106627,50 @@ przełom
 moment krytyczny",,,
 37198,WORD_NOUN,,HIRAGANA,,,正座,しょうざ,,shouza,"siedzenie z honorem
 siedzenie z poszanowaniem
-siedzenie z respektem",,,
+siedzenie z respektem",,,DUPLICATE 37159
 37199,WORD_NOUN,,KATAKANA,,,-,オヒョウ,,ohyou,halibut,gatunków ryb z rodziny flądrowatych,,
-37200,WORD_NOUN,,KATAKANA,,,-,オヒョウ,,ohyou,halibut,gatunków ryb z rodziny flądrowatych,,
-37201,WORD_NOUN,,KATAKANA_HIRAGANA,,,シャブ中,シャブちゅう,,shabuchuu,"narkoman
+37200,WORD_NOUN,,KATAKANA_HIRAGANA,,,シャブ中,シャブちゅう,,shabuchuu,"narkoman
 narkomanka
 ćpun",szczególnie od stymulantów,,
-37202,WORD_NOUN,,KATAKANA_HIRAGANA,,,ペイ患,ペイかん,,peikan,"narkoman
+37201,WORD_NOUN,,KATAKANA_HIRAGANA,,,ペイ患,ペイかん,,peikan,"narkoman
 narkomanka
 ćpun",,,
-37203,WORD_NOUN,,KATAKANA_HIRAGANA,,,ポン中,ポンちゅう,,ponchuu,"narkoman
+37202,WORD_NOUN,,KATAKANA_HIRAGANA,,,ポン中,ポンちゅう,,ponchuu,"narkoman
 narkomanka
 ćpun",szczególnie od stymulantów,,
-37204,WORD_NOUN,,HIRAGANA,,,大鮃,おひょう,,ohyou,halibut,gatunków ryb z rodziny flądrowatych,,
-37205,WORD_NOUN,,HIRAGANA,,,実関数,じつかんすう,,jitsukansuu,funkcja zmiennej rzeczywistej,,,
-37206,WORD_ADJECTIVE_I,,HIRAGANA,,,寝苦しい,ねぐるしい,,negurushii,niemożność dobrego spania,,,
-37207,"WORD_NOUN
+37203,WORD_NOUN,,HIRAGANA,,,大鮃,おひょう,,ohyou,halibut,gatunków ryb z rodziny flądrowatych,,
+37204,WORD_NOUN,,HIRAGANA,,,実関数,じつかんすう,,jitsukansuu,funkcja zmiennej rzeczywistej,,,
+37205,WORD_ADJECTIVE_I,,HIRAGANA,,,寝苦しい,ねぐるしい,,negurushii,niemożność dobrego spania,,,
+37206,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,専門分野,せんもんぶんや,,senmon bun'ya,"(własny) kierunek studiów
 (własna) specjalizacja (na studiach)",,,
-37208,WORD_VERB_U,,HIRAGANA,,,文字る,もじる,,mojiru,"zniekształcać
+37207,WORD_VERB_U,,HIRAGANA,,,文字る,もじる,,mojiru,"zniekształcać
 zdeformować
 parodiować
 grać słowami",,,
-37209,WORD_NOUN,,HIRAGANA,,,木鍬,こくわ,,kokuwa,drewniana motyka,archaizm,,
-37210,WORD_NOUN,,HIRAGANA,,,薬中,やくちゅう,,yakuchuu,"narkoman
+37208,WORD_NOUN,,HIRAGANA,,,木鍬,こくわ,,kokuwa,drewniana motyka,archaizm,,
+37209,WORD_NOUN,,HIRAGANA,,,薬中,やくちゅう,,yakuchuu,"narkoman
 narkomanka
 ćpun",,,
-37211,WORD_NOUN,,HIRAGANA,,,薬物中毒,やくぶつちゅうどく,,yakubutsu chuudoku,"medyczne zatrucie
+37210,WORD_NOUN,,HIRAGANA,,,薬物中毒,やくぶつちゅうどく,,yakubutsu chuudoku,"medyczne zatrucie
 chemiczne zatrucie
 zatrucie lekami
 zatrucie narkotykami
 nadużywanie narkotyków",,,
-37212,"WORD_NOUN
+37211,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,麻薬中毒,まやくちゅうどく,,mayaku chuudoku,"narkomania
 uzależnienie od narkotyków",,,
-37213,WORD_NOUN,,HIRAGANA,,,麻薬中毒者,まやくちゅうどくしゃ,,mayaku chuudokusha,"narkoman
+37212,WORD_NOUN,,HIRAGANA,,,麻薬中毒者,まやくちゅうどくしゃ,,mayaku chuudokusha,"narkoman
 narkomanka
 ćpun",,,
-37214,WORD_NOUN,,HIRAGANA,,,麻薬常習,まやくじょうしゅう,,mayaku joushuu,"narkomania
+37213,WORD_NOUN,,HIRAGANA,,,麻薬常習,まやくじょうしゅう,,mayaku joushuu,"narkomania
 uzależnienie od narkotyków",,,
-37215,WORD_NOUN,,HIRAGANA,,,麻薬患者,まやくかんじゃ,,mayaku kanja,"narkoman
+37214,WORD_NOUN,,HIRAGANA,,,麻薬患者,まやくかんじゃ,,mayaku kanja,"narkoman
 narkomanka
 ćpun",,,
-37216,WORD_EXPRESSION,,HIRAGANA,,,お手並み拝見,おてなみはいけん,,otenami haiken,"pozwól mi zobaczyć co masz
+37215,WORD_EXPRESSION,,HIRAGANA,,,お手並み拝見,おてなみはいけん,,otenami haiken,"pozwól mi zobaczyć co masz
 pokaż mi co masz",,,
-37217,WORD_NOUN,,HIRAGANA,,,素絹,そけん,,soken,szorstki jedwab,,,
-37218,WORD_NOUN,,HIRAGANA,,,訴権,そけん,,soken,prawo do podejmowania działań prawnych,,,
-37219,WORD_NOUN,,HIRAGANA,,,素見,そけん,,soken,"oglądanie wystaw sklepowych
+37216,WORD_NOUN,,HIRAGANA,,,素絹,そけん,,soken,szorstki jedwab,,,
+37217,WORD_NOUN,,HIRAGANA,,,訴権,そけん,,soken,prawo do podejmowania działań prawnych,,,
+37218,WORD_NOUN,,HIRAGANA,,,素見,そけん,,soken,"oglądanie wystaw sklepowych
 przeglądanie","skrót, archaizm",,
