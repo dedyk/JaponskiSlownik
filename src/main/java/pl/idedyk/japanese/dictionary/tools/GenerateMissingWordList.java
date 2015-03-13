@@ -13,6 +13,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -124,7 +125,9 @@ public class GenerateMissingWordList {
 		indexWriter.close();
 		
 		List<PolishJapaneseEntry> foundWordList = new ArrayList<PolishJapaneseEntry>();
-		List<String> foundWordSearchList = new ArrayList<String>();
+		List<PolishJapaneseEntry> alreadyAddedWordList = new ArrayList<PolishJapaneseEntry>();
+		
+		List<String> foundWordSearchList = new ArrayList<String>();		
 		
 		List<PolishJapaneseEntry> notFoundWordList = new ArrayList<PolishJapaneseEntry>();
 		List<String> notFoundWordSearchList = new ArrayList<String>();
@@ -135,6 +138,8 @@ public class GenerateMissingWordList {
 		IndexSearcher searcher = new IndexSearcher(reader);
 
 		int counter = 0;
+		
+		Set<Integer> alreadyFoundDocument = new TreeSet<Integer>();
 		
 		for (String currentMissingWord : missingWords) {
 			
@@ -153,6 +158,14 @@ public class GenerateMissingWordList {
 				foundWordSearchList.add(currentMissingWord);
 				
 				for (ScoreDoc scoreDoc : scoreDocs) {
+					
+					if (alreadyFoundDocument.contains(scoreDoc.doc) == true) {
+						continue;
+						
+					} else {
+						alreadyFoundDocument.add(scoreDoc.doc);
+						
+					}
 
 					Document foundDocument = searcher.doc(scoreDoc.doc);
 
@@ -212,9 +225,13 @@ public class GenerateMissingWordList {
 					newTranslateList.add("_");
 					newTranslateList.add("-----------");
 					
+					boolean alreadyAddedPolishJapaneseEntry = false;
+					
 					if (findPolishJapaneseEntry != null && findPolishJapaneseEntry.size() > 0) {
 						newTranslateList.add("JUZ JEST");
 						newTranslateList.add("-----------");
+						
+						alreadyAddedPolishJapaneseEntry = true;
 					}
 					
 					newTranslateList.add(currentMissingWord);
@@ -241,8 +258,13 @@ public class GenerateMissingWordList {
 					}
 					
 					polishJapaneseEntry.setInfo(additionalInfoSb.toString());
-									
-					foundWordList.add(polishJapaneseEntry);
+					
+					if (alreadyAddedPolishJapaneseEntry == false) {
+						foundWordList.add(polishJapaneseEntry);
+						
+					} else {
+						alreadyAddedWordList.add(polishJapaneseEntry);
+					}
 				}				
 				
 			} else {
@@ -288,6 +310,7 @@ public class GenerateMissingWordList {
 		List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
 		
 		newWordList.addAll(foundWordList);
+		newWordList.addAll(alreadyAddedWordList);
 		newWordList.addAll(notFoundWordList);
 		
 		CsvReaderWriter.generateCsv("input/word-new.csv", newWordList, true, true, false);
