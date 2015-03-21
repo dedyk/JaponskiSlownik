@@ -689,6 +689,14 @@ public class Validator {
 			}
 
 			report.append("\n");
+			
+			report.append("--\n");
+			
+			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : treeSetForKanji) {
+				report.append("DUPLICATE " + currentPolishJapaneseEntryInTreeSetForKanji.getId()).append("\n");
+			}
+			
+			report.append("--\n");
 
 			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : treeSetForKanji) {
 				report.append("\t" + currentPolishJapaneseEntryInTreeSetForKanji).append("\n");
@@ -741,6 +749,14 @@ public class Validator {
 			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKana : treeSetForKana) {
 				report.append(currentPolishJapaneseEntryInTreeSetForKana.getId()).append(" ");
 			}
+			
+			report.append("--\n");
+			
+			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKana : treeSetForKana) {
+				report.append("DUPLICATE " + currentPolishJapaneseEntryInTreeSetForKana.getId()).append("\n");
+			}
+			
+			report.append("--\n");
 
 			report.append("\n");
 
