@@ -29,6 +29,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addMap(DictionaryEntryType.WORD_NOUN, "n");
 		addMap(DictionaryEntryType.WORD_NOUN, "n-pref");
 		addMap(DictionaryEntryType.WORD_NOUN, "n-suf");
+		addMap(DictionaryEntryType.WORD_NOUN, "n-pr");
 		addMap(DictionaryEntryType.WORD_NOUN, "vs");
 		addMap(DictionaryEntryType.WORD_TEMPORAL_NOUN, "n-t");
 		
