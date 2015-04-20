@@ -2,6 +2,7 @@ package pl.idedyk.japanese.dictionary.tools;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.LinkedHashSet;
@@ -31,6 +32,7 @@ import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.lucene.LuceneAnalyzer;
 
 public class JMEDictSearcher {
@@ -79,8 +81,51 @@ public class JMEDictSearcher {
 
 				String romaji = groupEntry.getRomaji();
 
-				List<String> translateList = groupEntry.getTranslateList();				
-				List<String> additionalInfoList = groupEntry.getAdditionalInfoList();
+				List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();
+				
+				List<String> translateList2 = new ArrayList<String>();
+				
+				for (GroupEntryTranslate groupEntryTranslate : translateList) {
+					
+					StringBuffer translate = new StringBuffer(groupEntryTranslate.getTranslate());
+					
+					List<String> miscInfoList = groupEntryTranslate.getMiscInfoList();
+					List<String> additionalInfoList = groupEntryTranslate.getAdditionalInfoList();
+					
+					boolean wasMiscOrAdditionalInfo = false;
+					
+					for (int idx = 0; miscInfoList != null && idx < miscInfoList.size(); ++idx) {
+						
+						if (wasMiscOrAdditionalInfo == false) {
+							translate.append(" (");
+							
+							wasMiscOrAdditionalInfo = true;
+							
+						} else if (idx != miscInfoList.size() - 1) {
+							translate.append(", ");
+						}
+						
+						translate.append(entityMapper.getDesc(miscInfoList.get(idx)));
+					}
+					
+					for (int idx = 0; additionalInfoList != null && idx < additionalInfoList.size(); ++idx) {
+						
+						if (wasMiscOrAdditionalInfo == false) {
+							translate.append(" (");
+							
+							wasMiscOrAdditionalInfo = true;
+							
+						} else if (idx != additionalInfoList.size() - 1) {
+							translate.append(", ");
+						}
+					}
+					
+					if (wasMiscOrAdditionalInfo == true) {
+						translate.append(")");
+					}
+					
+					translateList2.add(translate.toString());
+				}
 
 				addFieldToDocument(document, "wordTypeList", wordTypeList);
 
@@ -92,8 +137,8 @@ public class JMEDictSearcher {
 
 				addFieldToDocument(document, "romaji", romaji);
 
-				addFieldToDocument(document, "translateList", translateList);
-				addFieldToDocument(document, "additionalInfoList", additionalInfoList);
+				addFieldToDocument(document, "translateList", translateList2);
+				//addFieldToDocument(document, "additionalInfoList", additionalInfoList);
 
 				indexWriter.addDocument(document);
 			}			
@@ -148,8 +193,8 @@ public class JMEDictSearcher {
 
 				String romaji = groupEntry.getRomaji();
 
-				List<String> translateList = groupEntry.getTranslateList();				
-				List<String> additionalInfoList = groupEntry.getAdditionalInfoList();
+				List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();			
+				List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
 
 				System.out.println("Czytanie:\n\t\t\t" + kanji + " - " + kana + " - " + romaji);
 
@@ -173,8 +218,8 @@ public class JMEDictSearcher {
 
 				System.out.println("Tłumaczenie:");
 
-				for (String currentTranslate : translateList) {
-					System.out.println("\t\t\t" + currentTranslate);
+				for (GroupEntryTranslate groupEntryTranslate : translateList) {
+					System.out.println("\t\t\t" + groupEntryTranslate.getTranslate());
 				}
 
 				System.out.println("Dodatkowe informacje:\t");
@@ -258,8 +303,20 @@ public class JMEDictSearcher {
 
 		groupEntry.setRomaji(document.get("romaji"));
 
-		groupEntry.setTranslateList(Arrays.asList(document.getValues("translateList")));
-		groupEntry.setAdditionalInfoList(Arrays.asList(document.getValues("additionalInfoList")));
+		List<GroupEntryTranslate> translateList = new ArrayList<GroupEntryTranslate>();
+		
+		for (String currentTranslate : Arrays.asList(document.getValues("translateList"))) {
+			
+			GroupEntryTranslate translate = new GroupEntryTranslate();
+			
+			translate.setTranslate(currentTranslate);
+			
+			translateList.add(translate);
+		}
+				
+		groupEntry.setTranslateList(translateList);
+		
+		//groupEntry.setAdditionalInfoList(Arrays.asList(document.getValues("additionalInfoList")));
 
 		return groupEntry;
 	}

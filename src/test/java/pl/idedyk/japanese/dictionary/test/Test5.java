@@ -6,6 +6,7 @@ import java.util.Set;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 
 public class Test5 {
@@ -14,8 +15,8 @@ public class Test5 {
 
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 
-		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e_TEST");
+		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
 		/*
@@ -44,8 +45,10 @@ public class Test5 {
 		}
 		*/
 		
-		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("最も", "もっとも");
-
+		//List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("月立ち", "つきたち");
+		
+		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(null, "いらっしゃる");
+		
 		for (GroupEntry groupEntry : groupEntryList) {							
 			printGroupEntry(groupEntry);
 		}
@@ -85,8 +88,7 @@ public class Test5 {
 		
 		String romaji = groupEntry.getRomaji();
 		
-		List<String> translateList = groupEntry.getTranslateList();				
-		List<String> additionalInfoList = groupEntry.getAdditionalInfoList();
+		List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();		
 		
 		System.out.println("WordTypeList: " + wordTypeList);
 		
@@ -99,7 +101,6 @@ public class Test5 {
 		System.out.println("Romaji: " + romaji);
 		
 		System.out.println("TranslateList: " + translateList);
-		System.out.println("AdditionalInfoList: " + additionalInfoList);
 		
 		System.out.println("---\n");		
 	}

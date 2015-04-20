@@ -193,10 +193,8 @@ public class JMENewDictionary {
 		
 		private String romaji;
 		
-		private List<String> translateList;
+		private List<GroupEntryTranslate> translateList;
 		
-		private List<String> additionalInfoList;
-
 		public GroupEntry(JMEDictNewNativeEntry nativeEntry, Group group) {
 			this.nativeEntry = nativeEntry;
 			this.group = group;
@@ -266,12 +264,44 @@ public class JMENewDictionary {
 			this.wordTypeList = wordTypeList;
 		}
 
-		public List<String> getTranslateList() {
+		public List<GroupEntryTranslate> getTranslateList() {
 			return translateList;
 		}
 
-		public void setTranslateList(List<String> translateList) {
+		public void setTranslateList(List<GroupEntryTranslate> translateList) {
 			this.translateList = translateList;
+		}
+
+		@Override
+		public String toString() {
+			return "GroupEntry [wordTypeList=" + wordTypeList + ", kanji=" + kanji + ", kanjiInfoList=" + kanjiInfoList
+					+ ", kana=" + kana + ", kanaInfoList=" + kanaInfoList + ", romaji=" + romaji + ", translateList="
+					+ translateList;
+		}
+	}
+	
+	public static class GroupEntryTranslate {
+		
+		private String translate;
+		
+		private List<String> miscInfoList;
+		
+		private List<String> additionalInfoList;
+
+		public String getTranslate() {
+			return translate;
+		}
+
+		public void setTranslate(String translate) {
+			this.translate = translate;
+		}
+
+		public List<String> getMiscInfoList() {
+			return miscInfoList;
+		}
+
+		public void setMiscInfoList(List<String> miscInfoList) {
+			this.miscInfoList = miscInfoList;
 		}
 
 		public List<String> getAdditionalInfoList() {
@@ -284,9 +314,8 @@ public class JMENewDictionary {
 
 		@Override
 		public String toString() {
-			return "GroupEntry [wordTypeList=" + wordTypeList + ", kanji=" + kanji + ", kanjiInfoList=" + kanjiInfoList
-					+ ", kana=" + kana + ", kanaInfoList=" + kanaInfoList + ", romaji=" + romaji + ", translateList="
-					+ translateList + ", additionalInfoList=" + additionalInfoList + "]";
+			return "GroupEntryTranslate [translate=" + translate + ", miscInfoList=" + miscInfoList
+					+ ", additionalInfoList=" + additionalInfoList + "]";
 		}
 	}
 }

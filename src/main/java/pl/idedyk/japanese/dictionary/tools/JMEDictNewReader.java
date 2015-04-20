@@ -19,10 +19,10 @@ import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.K_Ele;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.LSource;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.R_Ele;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.Sense;
-import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry.Trans;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 
 public class JMEDictNewReader {
 	
@@ -98,14 +98,7 @@ public class JMEDictNewReader {
 							
 							break;
 						}
-						
-						case "trans": {
-							
-							processTrans(jmedictNewNativeEntry, currentRowElement);
-							
-							break;							
-						}
-							
+													
 						default: {														
 							throw new RuntimeException("Unknown element name: " + currentRowElementName);
 						}						
@@ -428,57 +421,7 @@ public class JMEDictNewReader {
 		sense.getLsource().add(lSource);
 	}
 	
-	
-	protected void processTrans(JMEDictNewNativeEntry jmedictNewNativeEntry, Element element) {
 		
-		Trans trans = new Trans();
-		
-		List<?> rowElements = element.elements();
-		
-		for (Object currentRowElementObject : rowElements) {
-			
-			Element currentRowElement = (Element)currentRowElementObject;
-			
-			String currentRowElementName = currentRowElement.getName();
-			
-			switch (currentRowElementName) {
-								
-				case "name_type": {
-					
-					String nameType = entityMapper.getEntity(currentRowElement.getText());
-					
-					trans.getName_type().add(nameType);
-					
-					break;
-				}
-								
-				case "xref": {
-					
-					String xref = currentRowElement.getText();
-					
-					trans.getXref().add(xref);
-					
-					break;
-				}
-				
-				case "trans_det": {
-					
-					String transDet = currentRowElement.getText();
-					
-					trans.getTrans_det().add(transDet);
-					
-					break;					
-				}
-												
-				default: {					
-					throw new RuntimeException("Unknown trans element name: " + currentRowElementName);					
-				}			
-			}			
-		}
-		
-		jmedictNewNativeEntry.getTrans().add(trans);
-	}
-	
 	public JMENewDictionary createJMENewDictionary(List<JMEDictNewNativeEntry> jmedictNativeList) {
 				
 		JMENewDictionary jmeNewDictionary = new JMENewDictionary();
@@ -654,8 +597,7 @@ public class JMEDictNewReader {
 		
 		Set<String> wordTypeList = new LinkedHashSet<String>();
 		
-		List<String> translateList = new ArrayList<String>();
-		List<String> additionalInfoList = new ArrayList<String>();
+		List<GroupEntryTranslate> translateList = new ArrayList<GroupEntryTranslate>();
 				
 		for (Sense currentSense : senseList) {
 			
@@ -704,39 +646,33 @@ public class JMEDictNewReader {
 				wordTypeList.add(currentPos);
 			}
 			
-			for (String currentMisc : misc) {				
-				wordTypeList.add(currentMisc);
-			}
 			
 			for (String currentGloss : gloss) {
-				translateList.add(currentGloss);
-			}
-			
-			for (String currentSInf : s_inf) {
-				additionalInfoList.add(currentSInf);
-			}
+				
+				GroupEntryTranslate groupEntryTranslate = new GroupEntryTranslate();
+				
+				groupEntryTranslate.setTranslate(currentGloss);
+				
+				List<String> miscInfoList = new ArrayList<String>();
+				List<String> additionalInfoList = new ArrayList<String>();
+				
+				for (String currentMisc : misc) {				
+					miscInfoList.add(currentMisc);
+				}
+				
+				for (String currentSInf : s_inf) {
+					additionalInfoList.add(currentSInf);
+				}
+
+				groupEntryTranslate.setMiscInfoList(miscInfoList);
+				groupEntryTranslate.setAdditionalInfoList(additionalInfoList);
+				
+				translateList.add(groupEntryTranslate);
+			}			
 		}
-		
-		List<Trans> transList = jmeDictNewNativeEntry.getTrans();
-		
-		for (Trans trans : transList) {
-			
-			List<String> name_type = trans.getName_type();
-			
-			List<String> trans_det = trans.getTrans_det();
-		
-			for (String currentNameType : name_type) {				
-				wordTypeList.add(currentNameType);
-			}
-			
-			for (String currentTransDet : trans_det) {
-				translateList.add(currentTransDet);
-			}
-		}
-		
+				
 		groupEntry.setWordTypeList(wordTypeList);
 		
 		groupEntry.setTranslateList(translateList);
-		groupEntry.setAdditionalInfoList(additionalInfoList);
 	}
 }

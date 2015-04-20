@@ -18,6 +18,7 @@ import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -35,6 +36,8 @@ public class GenerateJMEDictGroupWordList {
 		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
+		
+		final JMEDictEntityMapper entityMapper = new JMEDictEntityMapper();
 		
 		System.out.println("Wczytywanie słownika...");
 		
@@ -162,7 +165,55 @@ public class GenerateJMEDictGroupWordList {
 							throw new RuntimeException(key);
 						}
 						
-						csvWriter.write(Utils.convertListToString(groupEntry.getTranslateList()));						
+						List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();
+						
+						///
+						
+						List<String> translateList2 = new ArrayList<String>();
+						
+						for (GroupEntryTranslate groupEntryTranslate : translateList) {
+							
+							StringBuffer translate = new StringBuffer(groupEntryTranslate.getTranslate());
+							
+							List<String> miscInfoList = groupEntryTranslate.getMiscInfoList();
+							List<String> additionalInfoList = groupEntryTranslate.getAdditionalInfoList();
+							
+							boolean wasMiscOrAdditionalInfo = false;
+							
+							for (int idx = 0; miscInfoList != null && idx < miscInfoList.size(); ++idx) {
+								
+								if (wasMiscOrAdditionalInfo == false) {
+									translate.append(" (");
+									
+									wasMiscOrAdditionalInfo = true;
+									
+								} else if (idx != miscInfoList.size() - 1) {
+									translate.append(", ");
+								}
+								
+								translate.append(entityMapper.getDesc(miscInfoList.get(idx)));
+							}
+							
+							for (int idx = 0; additionalInfoList != null && idx < additionalInfoList.size(); ++idx) {
+								
+								if (wasMiscOrAdditionalInfo == false) {
+									translate.append(" (");
+									
+									wasMiscOrAdditionalInfo = true;
+									
+								} else if (idx != additionalInfoList.size() - 1) {
+									translate.append(", ");
+								}
+							}
+							
+							if (wasMiscOrAdditionalInfo == true) {
+								translate.append(")");
+							}
+							
+							translateList2.add(translate.toString());
+						}
+						
+						csvWriter.write(Utils.convertListToString(translateList2));						
 					}
 				}
 		);
@@ -206,7 +257,7 @@ public class GenerateJMEDictGroupWordList {
 	private static String getKeyForAlreadyAddedGroupEntrySet(GroupEntry groupEntry) {
 		
 		String key = groupEntry.getGroup().getId() + "." + groupEntry.getWordTypeList().toString() + "." + groupEntry.getKanji() + "." + groupEntry.getKana() + "." + 
-				groupEntry.getTranslateList().toString() + "." + groupEntry.getAdditionalInfoList().toString();
+				groupEntry.getTranslateList().toString();
 		
 		return key;
 	}

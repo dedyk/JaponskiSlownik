@@ -25,6 +25,7 @@ import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 
@@ -94,8 +95,8 @@ public class GetCommonPartList {
 
 					String romaji = groupEntry.getRomaji();
 
-					List<String> translateList = groupEntry.getTranslateList();				
-					List<String> additionalInfoList = groupEntry.getAdditionalInfoList();
+					List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();			
+					List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
 					
 					PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
 					
@@ -144,7 +145,10 @@ public class GetCommonPartList {
 					}
 					
 					newTranslateList.add("-----------");
-					newTranslateList.addAll(translateList);
+					
+					for (GroupEntryTranslate groupEntryTranslate : translateList) {
+						newTranslateList.add(groupEntryTranslate.getTranslate());
+					}
 					
 					polishJapaneseEntry.setTranslates(newTranslateList);
 					
