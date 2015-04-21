@@ -124,7 +124,7 @@ public class GenerateMissingWordList {
 							
 							wasMiscOrAdditionalInfo = true;
 							
-						} else if (idx != miscInfoList.size() - 1) {
+						} else {
 							translate.append(", ");
 						}
 						
@@ -138,7 +138,7 @@ public class GenerateMissingWordList {
 							
 							wasMiscOrAdditionalInfo = true;
 							
-						} else if (idx != additionalInfoList.size() - 1) {
+						} else {
 							translate.append(", ");
 						}
 					}
@@ -159,7 +159,7 @@ public class GenerateMissingWordList {
 				addFieldToDocument(document, "kanaInfoList", kanaInfoList);
 
 				addFieldToDocument(document, "romaji", romaji);
-
+				
 				addFieldToDocument(document, "translateList", translateList2);
 				//addFieldToDocument(document, "additionalInfoList", additionalInfoList);
 

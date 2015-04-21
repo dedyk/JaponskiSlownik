@@ -101,7 +101,7 @@ public class JMEDictSearcher {
 							
 							wasMiscOrAdditionalInfo = true;
 							
-						} else if (idx != miscInfoList.size() - 1) {
+						} else {
 							translate.append(", ");
 						}
 						
@@ -115,7 +115,7 @@ public class JMEDictSearcher {
 							
 							wasMiscOrAdditionalInfo = true;
 							
-						} else if (idx != additionalInfoList.size() - 1) {
+						} else {
 							translate.append(", ");
 						}
 					}

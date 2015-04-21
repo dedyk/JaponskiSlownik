@@ -55,6 +55,7 @@ public class GetCommonPartList {
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
 		
 		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
+		JMEDictEntityMapper jmEDictEntityMapper = new JMEDictEntityMapper();
 		
 		List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
 		
@@ -95,9 +96,54 @@ public class GetCommonPartList {
 
 					String romaji = groupEntry.getRomaji();
 
-					List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();			
-					List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
+					List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();	
 					
+					List<String> translateList2 = new ArrayList<String>();
+					
+					for (GroupEntryTranslate groupEntryTranslate : translateList) {
+						
+						StringBuffer translate = new StringBuffer(groupEntryTranslate.getTranslate());
+						
+						List<String> miscInfoList = groupEntryTranslate.getMiscInfoList();
+						List<String> additionalInfoList = groupEntryTranslate.getAdditionalInfoList();
+						
+						boolean wasMiscOrAdditionalInfo = false;
+						
+						for (int idx = 0; miscInfoList != null && idx < miscInfoList.size(); ++idx) {
+							
+							if (wasMiscOrAdditionalInfo == false) {
+								translate.append(" (");
+								
+								wasMiscOrAdditionalInfo = true;
+								
+							} else {
+								translate.append(", ");
+							}
+							
+							translate.append(jmEDictEntityMapper.getDesc(miscInfoList.get(idx)));
+						}
+						
+						for (int idx = 0; additionalInfoList != null && idx < additionalInfoList.size(); ++idx) {
+							
+							if (wasMiscOrAdditionalInfo == false) {
+								translate.append(" (");
+								
+								wasMiscOrAdditionalInfo = true;
+								
+							} else {
+								translate.append(", ");
+							}
+						}
+						
+						if (wasMiscOrAdditionalInfo == true) {
+							translate.append(")");
+						}
+						
+						translateList2.add(translate.toString());
+					}					
+					
+					List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
+										
 					PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
 					
 					polishJapaneseEntry.setId(Integer.valueOf(currentCommonWordId));
@@ -145,10 +191,7 @@ public class GetCommonPartList {
 					}
 					
 					newTranslateList.add("-----------");
-					
-					for (GroupEntryTranslate groupEntryTranslate : translateList) {
-						newTranslateList.add(groupEntryTranslate.getTranslate());
-					}
+					newTranslateList.addAll(translateList2);
 					
 					polishJapaneseEntry.setTranslates(newTranslateList);
 					
