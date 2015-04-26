@@ -137,7 +137,7 @@ public class Helper {
 				// suru verb
 				List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
 
-				if (groupEntryWordTypeList.contains("vs") == true && attributeList.contains(AttributeType.SURU_VERB) == false) {					
+				if (groupEntry.containsAttribute("vs") == true && attributeList.contains(AttributeType.SURU_VERB) == false) {					
 					attributeList.add(AttributeType.SURU_VERB);
 				}
 				
@@ -149,21 +149,21 @@ public class Helper {
 					if (attributeList.contains(AttributeType.VERB_TRANSITIVITY) == false
 							&& attributeList.contains(AttributeType.VERB_INTRANSITIVITY) == false) {
 
-						if (groupEntryWordTypeList.contains("vt") == true) {
+						if (groupEntry.containsAttribute("vt") == true) {
 							attributeList.add(AttributeType.VERB_TRANSITIVITY);
 
-						} else if (groupEntryWordTypeList.contains("vi") == true) {
+						} else if (groupEntry.containsAttribute("vi") == true) {
 							attributeList.add(AttributeType.VERB_INTRANSITIVITY);
 						}
 					}
 				}
 				
 				// kanji/kana alone
-				if (attributeList.contains(AttributeType.KANJI_ALONE) == false && groupEntryWordTypeList.contains("uK") == true) {
+				if (attributeList.contains(AttributeType.KANJI_ALONE) == false && groupEntry.containsAttribute("uK") == true) {
 					attributeList.add(AttributeType.KANJI_ALONE);
 				}
 
-				if (attributeList.contains(AttributeType.KANA_ALONE) == false && groupEntryWordTypeList.contains("uk") == true) {
+				if (attributeList.contains(AttributeType.KANA_ALONE) == false && groupEntry.containsAttribute("uk") == true) {
 					attributeList.add(AttributeType.KANA_ALONE);
 				}
 
@@ -175,37 +175,37 @@ public class Helper {
 				*/
 
 				// obsolete
-				if (attributeList.contains(AttributeType.OBSOLETE) == false && (groupEntryWordTypeList.contains("obs") == true || groupEntryWordTypeList.contains("ok") == true)) {
+				if (attributeList.contains(AttributeType.OBSOLETE) == false && (groupEntry.containsAttribute("obs") == true || groupEntry.containsAttribute("ok") == true)) {
 					attributeList.add(AttributeType.OBSOLETE);
 				}
 
 				// obsure
-				if (attributeList.contains(AttributeType.OBSCURE) == false && groupEntryWordTypeList.contains("obsc") == true) {
+				if (attributeList.contains(AttributeType.OBSCURE) == false && groupEntry.containsAttribute("obsc") == true) {
 					attributeList.add(AttributeType.OBSCURE);
 				}
 
 				// suffix
-				if (attributeList.contains(AttributeType.SUFFIX) == false && groupEntryWordTypeList.contains("suf") == true) {
+				if (attributeList.contains(AttributeType.SUFFIX) == false && groupEntry.containsAttribute("suf") == true) {
 					attributeList.add(AttributeType.SUFFIX);
 				}
 
 				// noun suffix
-				if (attributeList.contains(AttributeType.NOUN_SUFFIX) == false && groupEntryWordTypeList.contains("n-suf") == true) {
+				if (attributeList.contains(AttributeType.NOUN_SUFFIX) == false && groupEntry.containsAttribute("n-suf") == true) {
 					attributeList.add(AttributeType.NOUN_SUFFIX);
 				}
 
 				// prefix
-				if (attributeList.contains(AttributeType.PREFIX) == false && groupEntryWordTypeList.contains("pref") == true) {
+				if (attributeList.contains(AttributeType.PREFIX) == false && groupEntry.containsAttribute("pref") == true) {
 					attributeList.add(AttributeType.PREFIX);
 				}
 
 				// noun prefix
-				if (attributeList.contains(AttributeType.NOUN_PREFIX) == false && groupEntryWordTypeList.contains("n-pref") == true) {
+				if (attributeList.contains(AttributeType.NOUN_PREFIX) == false && groupEntry.containsAttribute("n-pref") == true) {
 					attributeList.add(AttributeType.NOUN_PREFIX);
 				}
 									
 				// onamatopoeic or mimetic word
-				if (attributeList.contains(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD) == false && groupEntryWordTypeList.contains("on-mim") == true) {
+				if (attributeList.contains(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD) == false && groupEntry.containsAttribute("on-mim") == true) {
 					attributeList.add(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD);
 				}
 			}

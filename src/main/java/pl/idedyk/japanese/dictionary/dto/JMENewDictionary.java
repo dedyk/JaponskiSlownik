@@ -271,6 +271,37 @@ public class JMENewDictionary {
 		public void setTranslateList(List<GroupEntryTranslate> translateList) {
 			this.translateList = translateList;
 		}
+		
+		public boolean containsAttribute(String attribute) {
+			
+			if (wordTypeList != null && wordTypeList.contains(attribute) == true) {
+				return true;
+			}
+			
+			if (kanjiInfoList != null && kanjiInfoList.contains(attribute) == true) {
+				return true;
+			}
+			
+			if (kanaInfoList != null && kanaInfoList.contains(attribute) == true) {
+				return true;
+			}
+			
+			if (translateList != null) {
+				
+				for (GroupEntryTranslate groupEntryTranslate : translateList) {
+					
+					if (groupEntryTranslate.getMiscInfoList() != null && groupEntryTranslate.getMiscInfoList().contains(attribute) == true) {
+						return true;
+					}
+					
+					if (groupEntryTranslate.getAdditionalInfoList() != null && groupEntryTranslate.getAdditionalInfoList().contains(attribute) == true) {
+						return true;
+					}
+				}
+			}
+			
+			return false;
+		}
 
 		@Override
 		public String toString() {

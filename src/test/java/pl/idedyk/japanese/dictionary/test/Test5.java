@@ -15,7 +15,7 @@ public class Test5 {
 
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e_TEST");
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
@@ -47,7 +47,7 @@ public class Test5 {
 		
 		//List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("月立ち", "つきたち");
 		
-		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(null, "いらっしゃる");
+		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("賽子", "さいころ");
 		
 		for (GroupEntry groupEntry : groupEntryList) {							
 			printGroupEntry(groupEntry);
