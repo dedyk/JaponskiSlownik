@@ -603,9 +603,9 @@ public class Validator {
 	
 	*/
 
-	public static void detectDuplicatePolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries) {
+	public static void detectDuplicatePolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, String wordDuplicateFileName) {
 		
-		StringBuffer report = new StringBuffer();
+		List<PolishJapaneseEntryDuplicate> polishJapaneseEntryDuplicateList = new ArrayList<Validator.PolishJapaneseEntryDuplicate>();
 		
 		// cache'owanie
 		Map<String, List<PolishJapaneseEntry>> theSameKanjiPolishJapaneseListMap = new TreeMap<String, List<PolishJapaneseEntry>>();
@@ -681,28 +681,14 @@ public class Validator {
 			String key = duplicatedKanjiIterator.next();
 
 			TreeSet<PolishJapaneseEntry> treeSetForKanji = duplicatedKanji.get(key);
-
-			report.append("Kanji: " + key).append(": ");
+			
+			PolishJapaneseEntryDuplicate polishJapaneseEntryDuplicate = new PolishJapaneseEntryDuplicate(key, null);
 
 			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : treeSetForKanji) {
-				report.append(currentPolishJapaneseEntryInTreeSetForKanji.getId()).append(" ");
-			}
-
-			report.append("\n");
-			
-			report.append("--\n");
-			
-			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : treeSetForKanji) {
-				report.append("DUPLICATE " + currentPolishJapaneseEntryInTreeSetForKanji.getId()).append("\n");
+				polishJapaneseEntryDuplicate.addPolishJapaneseEntry(currentPolishJapaneseEntryInTreeSetForKanji);
 			}
 			
-			report.append("--\n");
-
-			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : treeSetForKanji) {
-				report.append("\t" + currentPolishJapaneseEntryInTreeSetForKanji).append("\n");
-			}
-
-			report.append("---\n\n");
+			polishJapaneseEntryDuplicateList.add(polishJapaneseEntryDuplicate);
 		}
 
 		// kanji && kana
@@ -743,31 +729,73 @@ public class Validator {
 			String key = duplicatedKanaIterator.next();
 
 			TreeSet<PolishJapaneseEntry> treeSetForKana = duplicatedKana.get(key);
-
-			report.append("Kana: " + key).append(": ");
+			
+			PolishJapaneseEntryDuplicate polishJapaneseEntryDuplicate = new PolishJapaneseEntryDuplicate(null, key);
 
 			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKana : treeSetForKana) {
-				report.append(currentPolishJapaneseEntryInTreeSetForKana.getId()).append(" ");
+				polishJapaneseEntryDuplicate.addPolishJapaneseEntry(currentPolishJapaneseEntryInTreeSetForKana);
 			}
 			
-			report.append("--\n");
-			
-			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKana : treeSetForKana) {
-				report.append("DUPLICATE " + currentPolishJapaneseEntryInTreeSetForKana.getId()).append("\n");
-			}
-			
-			report.append("--\n");
-
-			report.append("\n");
-
-			for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKana : treeSetForKana) {
-				report.append("\t" + currentPolishJapaneseEntryInTreeSetForKana).append("\n");
-			}
-
-			report.append("---\n\n");
+			polishJapaneseEntryDuplicateList.add(polishJapaneseEntryDuplicate);			
 		}
 
-		if (report.length() > 0) {
+		if (polishJapaneseEntryDuplicateList.size() > 0) {
+			
+			StringBuffer report = new StringBuffer();
+			
+			for (PolishJapaneseEntryDuplicate polishJapaneseEntryDuplicate : polishJapaneseEntryDuplicateList) {
+				
+				if (polishJapaneseEntryDuplicate.getKanji() != null) { // duplikat kanji
+					
+					report.append("Kanji: " + polishJapaneseEntryDuplicate.getKanji()).append(": ");
+
+					for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : polishJapaneseEntryDuplicate.getPolishJapaneseEntryList()) {
+						report.append(currentPolishJapaneseEntryInTreeSetForKanji.getId()).append(" ");
+					}
+
+					report.append("\n");
+					
+					report.append("--\n");
+					
+					for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : polishJapaneseEntryDuplicate.getPolishJapaneseEntryList()) {
+						report.append("DUPLICATE " + currentPolishJapaneseEntryInTreeSetForKanji.getId()).append("\n");
+					}
+					
+					report.append("--\n");
+
+					for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : polishJapaneseEntryDuplicate.getPolishJapaneseEntryList()) {
+						report.append("\t" + currentPolishJapaneseEntryInTreeSetForKanji).append("\n");
+					}
+
+					report.append("---\n\n");
+					
+				} else { // duplikat kana
+					
+					report.append("Kana: " + polishJapaneseEntryDuplicate.getKana()).append(": ");
+
+					for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKana : polishJapaneseEntryDuplicate.getPolishJapaneseEntryList()) {
+						report.append(currentPolishJapaneseEntryInTreeSetForKana.getId()).append(" ");
+					}
+					
+					report.append("\n");
+					
+					report.append("--\n");
+					
+					for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKana : polishJapaneseEntryDuplicate.getPolishJapaneseEntryList()) {
+						report.append("DUPLICATE " + currentPolishJapaneseEntryInTreeSetForKana.getId()).append("\n");
+					}
+					
+					report.append("--\n");
+
+					report.append("\n");
+
+					for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKana : polishJapaneseEntryDuplicate.getPolishJapaneseEntryList()) {
+						report.append("\t" + currentPolishJapaneseEntryInTreeSetForKana).append("\n");
+					}
+
+					report.append("---\n\n");					
+				}
+			}
 
 			System.out.println(report.toString());
 
@@ -1257,6 +1285,57 @@ public class Validator {
 		if (wasError == true) { // jesli jest blad walidacji			
 			throw new DictionaryException("Error");
 		}		
+	}
+	
+	private static class PolishJapaneseEntryDuplicate {
+				
+		private String kanji;
+		
+		private String kana;
+		
+		private List<PolishJapaneseEntry> polishJapaneseEntryList;
 
+		public PolishJapaneseEntryDuplicate(String kanji, String kana) {
+			this.kanji = kanji;
+			this.kana = kana;
+		}
+
+		public String getKanji() {
+			return kanji;
+		}
+
+		@SuppressWarnings("unused")
+		public void setKanji(String kanji) {
+			this.kanji = kanji;
+		}
+
+		public String getKana() {
+			return kana;
+		}
+
+		@SuppressWarnings("unused")
+		public void setKana(String kana) {
+			this.kana = kana;
+		}
+
+		public List<PolishJapaneseEntry> getPolishJapaneseEntryList() {
+			return polishJapaneseEntryList;
+		}
+
+		@SuppressWarnings("unused")
+		public void setPolishJapaneseEntryList(List<PolishJapaneseEntry> polishJapaneseEntryList) {
+			this.polishJapaneseEntryList = polishJapaneseEntryList;
+		}
+		
+		public void addPolishJapaneseEntry(PolishJapaneseEntry polishJapaneseEntry) {
+			
+			if (polishJapaneseEntryList == null) {
+				polishJapaneseEntryList = new ArrayList<PolishJapaneseEntry>();
+			}
+			
+			if (polishJapaneseEntryList.contains(polishJapaneseEntry) == false) {
+				polishJapaneseEntryList.add(polishJapaneseEntry);
+			}			
+		}
 	}
 }

@@ -130,7 +130,7 @@ public class AndroidDictionaryGenerator {
 				jmeNewDictionary, jmeNewNameDictionary);
 
 		System.out.println("checkAndSavePolishJapaneseEntries: detectDuplicatePolishJapaneseKanjiEntries");
-		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);
+		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries, "input/word-duplicate.csv");
 
 		// System.out.println("checkAndSavePolishJapaneseEntries: validateUseNoEntryPolishJapaneseKanjiEntries");
 		// Validator.validateUseNoEntryPolishJapaneseKanjiEntries(polishJapaneseEntries);

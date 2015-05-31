@@ -15,7 +15,9 @@ public class ValidateDictionary {
 		
 		System.out.println("Wczytywanie słownika...");
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		int fixme = 1;
+		
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word-TEST.csv");
 		
 		System.out.println("Wczytywanie słownika edict...");
 		
@@ -30,6 +32,6 @@ public class ValidateDictionary {
 		
 		System.out.println("Walidacja duplikatów...");
 		
-		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);		
+		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries, "input/word-duplicate.csv");		
 	}
 }
