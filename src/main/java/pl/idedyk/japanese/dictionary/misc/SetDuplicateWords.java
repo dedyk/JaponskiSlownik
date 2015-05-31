@@ -1,60 +1,77 @@
 package pl.idedyk.japanese.dictionary.misc;
 
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.common.Helper;
+import com.csvreader.CsvReader;
+
+import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 
-public class RegenerateDictionary {
+public class SetDuplicateWords {
 
 	public static void main(String[] args) throws Exception {
-
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
-
-		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, false);
-
-		List<PolishJapaneseEntry> resultPolishJapaneseEntries = new ArrayList<PolishJapaneseEntry>();
-
-		int id = 1;
-
-		for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
-
-			currentPolishJapaneseEntry.setId(id);
-
-			resultPolishJapaneseEntries.add(currentPolishJapaneseEntry);
-
-			id++;
-		}
-
-		for (PolishJapaneseEntry currentPolishJapaneseEntry : resultPolishJapaneseEntries) {
-
-			String kana = currentPolishJapaneseEntry.getKana();
-			
-			List<KnownDuplicate> knownDuplicatedList = currentPolishJapaneseEntry.getKnownDuplicatedList();
-			
-			List<KnownDuplicate> newKnownDuplicatedList = new ArrayList<PolishJapaneseEntry.KnownDuplicate>();
-			
-			for (KnownDuplicate knownDuplicate : knownDuplicatedList) {
 				
-				if (knownDuplicate.getKnownDuplicateType() != KnownDuplicateType.DUPLICATE) {
-					newKnownDuplicatedList.add(knownDuplicate);
+		// wczytywanie pliku slownika
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		
+		Map<Integer, PolishJapaneseEntry> polishJapaneseEntriesMap = new TreeMap<Integer, PolishJapaneseEntry>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			polishJapaneseEntriesMap.put(polishJapaneseEntry.getId(), polishJapaneseEntry);			
+		}
+		
+		// wczytywanie pliku z lista duplikatow
+		
+		CsvReader csvReader = new CsvReader(new FileReader("input/word-duplicate.csv"), ',');
+		
+		while (csvReader.readRecord()) {
+			
+			String status = csvReader.get(0);
+			
+			if (status != null && status.equals("1") == true) {
+								
+				String ids = csvReader.get(3);
+				
+				List<String> idsList = Utils.parseStringIntoList(ids, false);
+				
+				for (String currentId : idsList) {
+					
+					PolishJapaneseEntry polishJapaneseEntryForCurrentId = polishJapaneseEntriesMap.get(Integer.parseInt(currentId));
+
+					// usuwanie innych niz DUPLICATE wpisow
+					List<KnownDuplicate> knownDuplicatedList = polishJapaneseEntryForCurrentId.getKnownDuplicatedList();
+					
+					List<KnownDuplicate> newKnownDuplicatedList = new ArrayList<PolishJapaneseEntry.KnownDuplicate>();
+					
+					for (KnownDuplicate knownDuplicate : knownDuplicatedList) {
+						
+						if (knownDuplicate.getKnownDuplicateType() != KnownDuplicateType.DUPLICATE) {
+							newKnownDuplicatedList.add(knownDuplicate);
+						}				
+					}
+					
+					generateKnownDuplicatedIdForKanji(newKnownDuplicatedList, polishJapaneseEntries,
+							polishJapaneseEntryForCurrentId.getId(), polishJapaneseEntryForCurrentId.getKanji());
+
+					generateKnownDuplicatedIdFormKanjiAndKana(newKnownDuplicatedList, polishJapaneseEntries,
+							polishJapaneseEntryForCurrentId.getId(), polishJapaneseEntryForCurrentId.getKanji(), polishJapaneseEntryForCurrentId.getKana());
+
+					polishJapaneseEntryForCurrentId.setKnownDuplicatedList(newKnownDuplicatedList);
 				}				
 			}
-			
-			generateKnownDuplicatedIdForKanji(newKnownDuplicatedList, polishJapaneseEntries,
-					currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji());
-
-			generateKnownDuplicatedIdFormKanjiAndKana(newKnownDuplicatedList, polishJapaneseEntries,
-					currentPolishJapaneseEntry.getId(), currentPolishJapaneseEntry.getKanji(), kana);
-
-			currentPolishJapaneseEntry.setKnownDuplicatedList(newKnownDuplicatedList);
 		}
+				
+		csvReader.close();
 
-		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true, true, false);
+		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries, true, true, false);
 	}
 
 	private static List<KnownDuplicate> generateKnownDuplicatedIdForKanji(List<KnownDuplicate> result,

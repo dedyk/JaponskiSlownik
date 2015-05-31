@@ -14,10 +14,8 @@ public class ValidateDictionary {
 	public static void main(String[] args) throws Exception {
 		
 		System.out.println("Wczytywanie słownika...");
-		
-		int fixme = 1;
-		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word-TEST.csv");
+				
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 		
 		System.out.println("Wczytywanie słownika edict...");
 		
