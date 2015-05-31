@@ -1,5 +1,8 @@
 package pl.idedyk.japanese.dictionary.common;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -9,6 +12,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+
+import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
@@ -603,7 +608,7 @@ public class Validator {
 	
 	*/
 
-	public static void detectDuplicatePolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, String wordDuplicateFileName) {
+	public static void detectDuplicatePolishJapaneseKanjiEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries, String wordDuplicateFileName) throws IOException {
 		
 		List<PolishJapaneseEntryDuplicate> polishJapaneseEntryDuplicateList = new ArrayList<Validator.PolishJapaneseEntryDuplicate>();
 		
@@ -741,17 +746,37 @@ public class Validator {
 
 		if (polishJapaneseEntryDuplicateList.size() > 0) {
 			
+			CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(new FileOutputStream(wordDuplicateFileName)), ',');
+			
 			StringBuffer report = new StringBuffer();
 			
 			for (PolishJapaneseEntryDuplicate polishJapaneseEntryDuplicate : polishJapaneseEntryDuplicateList) {
 				
+				csvWriter.write(""); // miejsce na zaznaczenie
+				
 				if (polishJapaneseEntryDuplicate.getKanji() != null) { // duplikat kanji
 					
+					csvWriter.write("KANJI");
+					
+					csvWriter.write(polishJapaneseEntryDuplicate.getKanji());
+					
 					report.append("Kanji: " + polishJapaneseEntryDuplicate.getKanji()).append(": ");
+					
+					List<String> ids = new ArrayList<String>();
+					List<String> details = new ArrayList<String>();
 
 					for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKanji : polishJapaneseEntryDuplicate.getPolishJapaneseEntryList()) {
+						
 						report.append(currentPolishJapaneseEntryInTreeSetForKanji.getId()).append(" ");
+						
+						ids.add(String.valueOf(currentPolishJapaneseEntryInTreeSetForKanji.getId()));
+						
+						details.add(currentPolishJapaneseEntryInTreeSetForKanji.getKanji() + " - " + currentPolishJapaneseEntryInTreeSetForKanji.getKana() + " - " + 
+								currentPolishJapaneseEntryInTreeSetForKanji.getTranslates() + " - " + currentPolishJapaneseEntryInTreeSetForKanji.getInfo());
 					}
+					
+					csvWriter.write(pl.idedyk.japanese.dictionary.api.dictionary.Utils.convertListToString(ids));
+					csvWriter.write(pl.idedyk.japanese.dictionary.api.dictionary.Utils.convertListToString(details));
 
 					report.append("\n");
 					
@@ -771,11 +796,28 @@ public class Validator {
 					
 				} else { // duplikat kana
 					
+					csvWriter.write("KANA");
+					
+					csvWriter.write(polishJapaneseEntryDuplicate.getKana());
+					
 					report.append("Kana: " + polishJapaneseEntryDuplicate.getKana()).append(": ");
 
+					List<String> ids = new ArrayList<String>();
+					List<String> details = new ArrayList<String>();
+					
 					for (PolishJapaneseEntry currentPolishJapaneseEntryInTreeSetForKana : polishJapaneseEntryDuplicate.getPolishJapaneseEntryList()) {
+						
 						report.append(currentPolishJapaneseEntryInTreeSetForKana.getId()).append(" ");
+						
+						ids.add(String.valueOf(currentPolishJapaneseEntryInTreeSetForKana.getId()));
+						
+						details.add(currentPolishJapaneseEntryInTreeSetForKana.getKanji() + " - " + currentPolishJapaneseEntryInTreeSetForKana.getKana() + " - " + 
+								currentPolishJapaneseEntryInTreeSetForKana.getTranslates() + " - " + currentPolishJapaneseEntryInTreeSetForKana.getInfo());
+
 					}
+					
+					csvWriter.write(pl.idedyk.japanese.dictionary.api.dictionary.Utils.convertListToString(ids));
+					csvWriter.write(pl.idedyk.japanese.dictionary.api.dictionary.Utils.convertListToString(details));
 					
 					report.append("\n");
 					
@@ -795,7 +837,11 @@ public class Validator {
 
 					report.append("---\n\n");					
 				}
+				
+				csvWriter.endRecord();
 			}
+			
+			csvWriter.close();
 
 			System.out.println(report.toString());
 
