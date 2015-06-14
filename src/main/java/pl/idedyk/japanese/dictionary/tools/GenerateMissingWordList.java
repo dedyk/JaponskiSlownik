@@ -35,17 +35,14 @@ import org.apache.lucene.store.RAMDirectory;
 import org.apache.lucene.util.Version;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
-import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
-import pl.idedyk.japanese.dictionary.api.dto.WordType;
+import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary.common.Helper.CreatePolishJapaneseEntryResult;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.lucene.LuceneAnalyzer;
 
 public class GenerateMissingWordList {
@@ -66,7 +63,6 @@ public class GenerateMissingWordList {
 
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
 
-		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
 		JMEDictEntityMapper jmEDictEntityMapper = new JMEDictEntityMapper();
 
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
@@ -215,99 +211,12 @@ public class GenerateMissingWordList {
 					Document foundDocument = searcher.doc(scoreDoc.doc);
 
 					GroupEntry groupEntry = createGroupEntry(foundDocument);
-
-					Set<String> wordTypeList = groupEntry.getWordTypeList();
 					
-					String kanji = groupEntry.getKanji();
-					List<String> kanjiInfoList = groupEntry.getKanjiInfoList();
-
-					String kana = groupEntry.getKana();
-					List<String> kanaInfoList = groupEntry.getKanaInfoList();
-
-					String romaji = groupEntry.getRomaji();
-
-					List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();			
-					List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
+					CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counter, currentMissingWord);
 					
-					PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
-					
-					polishJapaneseEntry.setId(counter);
-					
-					List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
+					PolishJapaneseEntry polishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;
 										
-					for (String currentEntity : wordTypeList) {
-						
-						DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(currentEntity);
-						
-						if (dictionaryEntryType != null && dictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
-							dictionaryEntryTypeList.add(dictionaryEntryType);
-						}
-					}
-									
-					polishJapaneseEntry.setDictionaryEntryTypeList(dictionaryEntryTypeList);
-					
-					polishJapaneseEntry.setAttributeList(new AttributeList());
-					
-					polishJapaneseEntry.setWordType(getWordType(kana));
-					
-					polishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
-					
-					if (kanji == null || kanji.equals("") == true) {
-						kanji = "-";
-					}
-					
-					polishJapaneseEntry.setKanji(kanji);
-					polishJapaneseEntry.setKana(kana);
-					polishJapaneseEntry.setRomaji(romaji);
-									
-					polishJapaneseEntry.setKnownDuplicatedList(new ArrayList<KnownDuplicate>());
-
-					List<String> newTranslateList = new ArrayList<String>();
-					
-					List<PolishJapaneseEntry> findPolishJapaneseEntry = pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntry(
-							cachePolishJapaneseEntryList, kanji, kana);
-					
-					newTranslateList.add("_");
-					newTranslateList.add("-----------");
-					
-					boolean alreadyAddedPolishJapaneseEntry = false;
-					
-					if (findPolishJapaneseEntry != null && findPolishJapaneseEntry.size() > 0) {
-						newTranslateList.add("JUZ JEST");
-						newTranslateList.add("-----------");
-						
-						alreadyAddedPolishJapaneseEntry = true;
-					}
-					
-					newTranslateList.add(currentMissingWord);
-					newTranslateList.add("-----------");
-					
-					for (GroupEntryTranslate groupEntryTranslate : translateList) {
-						newTranslateList.add(groupEntryTranslate.getTranslate());
-					}					
-					
-					polishJapaneseEntry.setTranslates(newTranslateList);
-					
-					StringBuffer additionalInfoSb = new StringBuffer();
-
-					if (kanjiInfoList.size() > 0) {
-						additionalInfoSb.append(Utils.convertListToString(kanjiInfoList));
-						additionalInfoSb.append("\n");
-					}
-
-					if (kanaInfoList.size() > 0) {
-						additionalInfoSb.append(Utils.convertListToString(kanaInfoList));
-						additionalInfoSb.append("\n");
-					}
-					
-					if (additionalInfoList.size() > 0) {
-						additionalInfoSb.append(Utils.convertListToString(additionalInfoList));
-						additionalInfoSb.append("\n");
-					}
-					
-					polishJapaneseEntry.setInfo(additionalInfoSb.toString());
-					
-					if (alreadyAddedPolishJapaneseEntry == false) {
+					if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
 						foundWordList.add(polishJapaneseEntry);
 						
 					} else {
@@ -319,33 +228,7 @@ public class GenerateMissingWordList {
 				
 				notFoundWordSearchList.add(currentMissingWord);
 				
-				PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
-				
-				polishJapaneseEntry.setId(counter);
-				
-				List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
-				
-				dictionaryEntryTypeList.add(DictionaryEntryType.UNKNOWN);
-												
-				polishJapaneseEntry.setDictionaryEntryTypeList(dictionaryEntryTypeList);				
-				polishJapaneseEntry.setAttributeList(new AttributeList());
-				
-				polishJapaneseEntry.setWordType(WordType.KATAKANA);
-				
-				polishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
-								
-				polishJapaneseEntry.setKanji("-");
-				polishJapaneseEntry.setKana("-");
-				polishJapaneseEntry.setRomaji("-");
-								
-				polishJapaneseEntry.setKnownDuplicatedList(new ArrayList<KnownDuplicate>());
-
-				List<String> newTranslateList = new ArrayList<String>();
-				
-				newTranslateList.add(currentMissingWord);
-								
-				polishJapaneseEntry.setTranslates(newTranslateList);				
-				polishJapaneseEntry.setInfo("");
+				PolishJapaneseEntry polishJapaneseEntry = Helper.createEmptyPolishJapaneseEntry(currentMissingWord, counter);
 								
 				notFoundWordList.add(polishJapaneseEntry);
 			}
@@ -491,40 +374,5 @@ public class GenerateMissingWordList {
 		//groupEntry.setAdditionalInfoList(Arrays.asList(document.getValues("additionalInfoList")));
 
 		return groupEntry;
-	}
-	
-	private static WordType getWordType(String kana) {
-		
-		WordType wordType = null;
-				
-		for (int idx = 0; idx < kana.length(); ++idx) {
-			
-			char c = kana.charAt(idx);
-			
-			boolean currentCIsHiragana = Utils.isHiragana(c);
-			boolean currentCIsKatakana = Utils.isKatakana(c);
-			
-			if (currentCIsHiragana == true) {
-				
-				if (wordType == null) {
-					wordType = WordType.HIRAGANA;
-					
-				} else if (wordType == WordType.KATAKANA) {
-					wordType = WordType.KATAKANA_HIRAGANA;					
-				}				
-			}
-
-			if (currentCIsKatakana == true) {
-				
-				if (wordType == null) {
-					wordType = WordType.KATAKANA;
-					
-				} else if (wordType == WordType.HIRAGANA) {
-					wordType = WordType.HIRAGANA_KATAKANA;					
-				}				
-			}			
-		}	
-		
-		return wordType;
 	}
 }

@@ -15,7 +15,9 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
+import pl.idedyk.japanese.dictionary.common.Helper.CreatePolishJapaneseEntryResult;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
@@ -50,6 +52,9 @@ public class GenerateJMEDictGroupWordList {
 		System.out.println("Generowanie słów...");
 		
 		List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
+		List<PolishJapaneseEntry> newMultiWordList = new ArrayList<PolishJapaneseEntry>();
+		
+		int newMultiWordListCounter = 0;
 		
 		KanaHelper kanaHelper = new KanaHelper();
 		
@@ -57,8 +62,7 @@ public class GenerateJMEDictGroupWordList {
 		
 		Set<String> alreadyAddedGroupEntry = new TreeSet<String>();
 		
-		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = 
-				pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
+		final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -80,6 +84,20 @@ public class GenerateJMEDictGroupWordList {
 			String kana = polishJapaneseEntry.getKana();
 			
 			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
+			
+			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == true) {
+				
+				newMultiWordListCounter++;
+				
+				for (GroupEntry groupEntry : groupEntryList) {
+					
+					CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(groupEntry, newMultiWordListCounter);
+					
+					PolishJapaneseEntry newPolishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;
+					
+					newMultiWordList.add(newPolishJapaneseEntry);
+				}
+			}			
 						
 			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 								
@@ -217,6 +235,21 @@ public class GenerateJMEDictGroupWordList {
 					}
 				}
 		);
+		
+		CsvReaderWriter.generateCsv("input/word-multi.csv", newMultiWordList, true, true, false,
+				new ICustomAdditionalCsvWriter() {
+					
+					@Override
+					public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
+						
+						PolishJapaneseEntry findOtherPolishJapaneseEntry = 
+								pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntryWithEdictDuplicate(polishJapaneseEntry, cachePolishJapaneseEntryList, 
+										polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
+						
+						
+						csvWriter.write(Utils.convertListToString(findOtherPolishJapaneseEntry.getTranslates()));						
+					}
+		});
 	}
 	
 	private static WordType getWordType(String kana) {

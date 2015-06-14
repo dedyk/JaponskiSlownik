@@ -11,6 +11,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
@@ -22,10 +23,14 @@ import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
+import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
+import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
 
 import com.csvreader.CsvWriter;
 
@@ -667,4 +672,246 @@ public class Helper {
 
 		return null;
 	}	
+	
+	public static class CreatePolishJapaneseEntryResult {
+		
+		public PolishJapaneseEntry polishJapaneseEntry;
+		
+		public boolean alreadyAddedPolishJapaneseEntry;
+	}
+	
+	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(GroupEntry groupEntry) throws DictionaryException {		
+		return createPolishJapaneseEntry(null, groupEntry, 0, null);
+	}	
+	
+	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(GroupEntry groupEntry, int id) throws DictionaryException {
+		return createPolishJapaneseEntry(null, groupEntry, id, null);
+	}
+	
+	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList, GroupEntry groupEntry, int id, String missingWord) throws DictionaryException {
+		
+		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
+		JMEDictEntityMapper jmEDictEntityMapper = new JMEDictEntityMapper();
+		
+		Set<String> wordTypeList = groupEntry.getWordTypeList();
+		
+		String kanji = groupEntry.getKanji();
+		List<String> kanjiInfoList = groupEntry.getKanjiInfoList();
+
+		String kana = groupEntry.getKana();
+		List<String> kanaInfoList = groupEntry.getKanaInfoList();
+
+		String romaji = groupEntry.getRomaji();
+
+		List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();			
+		
+		List<String> translateList2 = new ArrayList<String>();
+		
+		for (GroupEntryTranslate groupEntryTranslate : translateList) {
+			
+			StringBuffer translate = new StringBuffer(groupEntryTranslate.getTranslate());
+			
+			List<String> miscInfoList = groupEntryTranslate.getMiscInfoList();
+			List<String> additionalInfoList = groupEntryTranslate.getAdditionalInfoList();
+			
+			boolean wasMiscOrAdditionalInfo = false;
+			
+			for (int idx = 0; miscInfoList != null && idx < miscInfoList.size(); ++idx) {
+				
+				if (wasMiscOrAdditionalInfo == false) {
+					translate.append(" (");
+					
+					wasMiscOrAdditionalInfo = true;
+					
+				} else {
+					translate.append(", ");
+				}
+				
+				translate.append(jmEDictEntityMapper.getDesc(miscInfoList.get(idx)));
+			}
+			
+			for (int idx = 0; additionalInfoList != null && idx < additionalInfoList.size(); ++idx) {
+				
+				if (wasMiscOrAdditionalInfo == false) {
+					translate.append(" (");
+					
+					wasMiscOrAdditionalInfo = true;
+					
+				} else {
+					translate.append(", ");
+				}
+			}
+			
+			if (wasMiscOrAdditionalInfo == true) {
+				translate.append(")");
+			}
+			
+			translateList2.add(translate.toString());
+		}					
+		
+		List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
+		
+		PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
+		
+		polishJapaneseEntry.setId(id);
+		
+		List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
+							
+		for (String currentEntity : wordTypeList) {
+			
+			DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(currentEntity);
+			
+			if (dictionaryEntryType != null && dictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
+				dictionaryEntryTypeList.add(dictionaryEntryType);
+			}
+		}
+						
+		polishJapaneseEntry.setDictionaryEntryTypeList(dictionaryEntryTypeList);
+		
+		polishJapaneseEntry.setAttributeList(new AttributeList());
+		
+		polishJapaneseEntry.setWordType(getWordType(kana));
+		
+		polishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
+		
+		if (kanji == null || kanji.equals("") == true) {
+			kanji = "-";
+		}
+		
+		polishJapaneseEntry.setKanji(kanji);
+		polishJapaneseEntry.setKana(kana);
+		polishJapaneseEntry.setRomaji(romaji);
+						
+		polishJapaneseEntry.setKnownDuplicatedList(new ArrayList<KnownDuplicate>());
+
+		List<String> newTranslateList = new ArrayList<String>();
+		
+		List<PolishJapaneseEntry> findPolishJapaneseEntry = null;
+		
+		if (cachePolishJapaneseEntryList != null) {
+			
+			findPolishJapaneseEntry = pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntry(
+					cachePolishJapaneseEntryList, kanji, kana);			
+		}
+		
+		newTranslateList.add("_");
+		newTranslateList.add("-----------");
+		
+		boolean alreadyAddedPolishJapaneseEntry = false;
+		
+		if (findPolishJapaneseEntry != null && findPolishJapaneseEntry.size() > 0) {
+			newTranslateList.add("JUZ JEST");
+			newTranslateList.add("-----------");
+			
+			alreadyAddedPolishJapaneseEntry = true;
+		}
+		
+		if (missingWord != null) {
+			newTranslateList.add(missingWord);
+		}
+				
+		newTranslateList.add("-----------");
+		newTranslateList.addAll(translateList2);
+				
+		polishJapaneseEntry.setTranslates(newTranslateList);
+		
+		StringBuffer additionalInfoSb = new StringBuffer();
+
+	    if (kanjiInfoList != null && kanjiInfoList.size() > 0) {
+		    additionalInfoSb.append(Utils.convertListToString(kanjiInfoList));
+		    additionalInfoSb.append("\n");
+	    }
+
+	    if (kanaInfoList != null && kanaInfoList.size() > 0) {
+		    additionalInfoSb.append(Utils.convertListToString(kanaInfoList));
+		    additionalInfoSb.append("\n");
+	    }
+	    
+	    if (additionalInfoList != null && additionalInfoList.size() > 0) {
+		    additionalInfoSb.append(Utils.convertListToString(additionalInfoList));
+		    additionalInfoSb.append("\n");
+	    }
+		
+		polishJapaneseEntry.setInfo(additionalInfoSb.toString());		
+		
+		CreatePolishJapaneseEntryResult result = new CreatePolishJapaneseEntryResult();
+		
+		result.polishJapaneseEntry = polishJapaneseEntry;
+		result.alreadyAddedPolishJapaneseEntry = alreadyAddedPolishJapaneseEntry;
+		
+		return result;
+	}
+	
+	public static PolishJapaneseEntry createEmptyPolishJapaneseEntry(String missingWord, int counter) {
+		
+		PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
+		
+		polishJapaneseEntry.setId(counter);
+		
+		List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
+		
+		dictionaryEntryTypeList.add(DictionaryEntryType.UNKNOWN);
+										
+		polishJapaneseEntry.setDictionaryEntryTypeList(dictionaryEntryTypeList);				
+		polishJapaneseEntry.setAttributeList(new AttributeList());
+		
+		polishJapaneseEntry.setWordType(WordType.KATAKANA);
+		
+		polishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
+						
+		polishJapaneseEntry.setKanji("-");
+		polishJapaneseEntry.setKana("-");
+		polishJapaneseEntry.setRomaji("-");
+						
+		polishJapaneseEntry.setKnownDuplicatedList(new ArrayList<KnownDuplicate>());
+
+		List<String> newTranslateList = new ArrayList<String>();
+		
+		if (missingWord != null) {
+			newTranslateList.add(missingWord);
+			
+		} else {
+			newTranslateList.add("");			
+		}		
+						
+		polishJapaneseEntry.setTranslates(newTranslateList);				
+		polishJapaneseEntry.setInfo("");
+		
+		return polishJapaneseEntry;
+	}
+	
+	private static WordType getWordType(String kana) {
+		
+		WordType wordType = null;
+				
+		for (int idx = 0; idx < kana.length(); ++idx) {
+			
+			char c = kana.charAt(idx);
+			
+			boolean currentCIsHiragana = Utils.isHiragana(c);
+			boolean currentCIsKatakana = Utils.isKatakana(c);
+			
+			if (currentCIsHiragana == true) {
+				
+				if (wordType == null) {
+					wordType = WordType.HIRAGANA;
+					
+				} else if (wordType == WordType.KATAKANA) {
+					wordType = WordType.KATAKANA_HIRAGANA;					
+				}				
+			}
+
+			if (currentCIsKatakana == true) {
+				
+				if (wordType == null) {
+					wordType = WordType.KATAKANA;
+					
+				} else if (wordType == WordType.HIRAGANA) {
+					wordType = WordType.HIRAGANA_KATAKANA;					
+				}				
+			}			
+		}	
+		
+		return wordType;
+	}
 }

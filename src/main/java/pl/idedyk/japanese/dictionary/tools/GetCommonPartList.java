@@ -17,16 +17,10 @@ import java.util.TreeMap;
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
-import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
-import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
-import pl.idedyk.japanese.dictionary.api.dto.WordType;
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 
 public class GetCommonPartList {
@@ -53,10 +47,7 @@ public class GetCommonPartList {
 		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
-		
-		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
-		JMEDictEntityMapper jmEDictEntityMapper = new JMEDictEntityMapper();
-		
+				
 		List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
 		
 		for (String currentCommonWordId : commonWordIds) {
@@ -85,168 +76,16 @@ public class GetCommonPartList {
 			if (groupEntryList != null && groupEntryList.size() > 0) {
 				
 				for (GroupEntry groupEntry : groupEntryList) {
-
-					Set<String> wordTypeList = groupEntry.getWordTypeList();
 					
-					String kanji = groupEntry.getKanji();
-					List<String> kanjiInfoList = groupEntry.getKanjiInfoList();
-
-					String kana = groupEntry.getKana();
-					List<String> kanaInfoList = groupEntry.getKanaInfoList();
-
-					String romaji = groupEntry.getRomaji();
-
-					List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();	
-					
-					List<String> translateList2 = new ArrayList<String>();
-					
-					for (GroupEntryTranslate groupEntryTranslate : translateList) {
-						
-						StringBuffer translate = new StringBuffer(groupEntryTranslate.getTranslate());
-						
-						List<String> miscInfoList = groupEntryTranslate.getMiscInfoList();
-						List<String> additionalInfoList = groupEntryTranslate.getAdditionalInfoList();
-						
-						boolean wasMiscOrAdditionalInfo = false;
-						
-						for (int idx = 0; miscInfoList != null && idx < miscInfoList.size(); ++idx) {
-							
-							if (wasMiscOrAdditionalInfo == false) {
-								translate.append(" (");
-								
-								wasMiscOrAdditionalInfo = true;
-								
-							} else {
-								translate.append(", ");
-							}
-							
-							translate.append(jmEDictEntityMapper.getDesc(miscInfoList.get(idx)));
-						}
-						
-						for (int idx = 0; additionalInfoList != null && idx < additionalInfoList.size(); ++idx) {
-							
-							if (wasMiscOrAdditionalInfo == false) {
-								translate.append(" (");
-								
-								wasMiscOrAdditionalInfo = true;
-								
-							} else {
-								translate.append(", ");
-							}
-						}
-						
-						if (wasMiscOrAdditionalInfo == true) {
-							translate.append(")");
-						}
-						
-						translateList2.add(translate.toString());
-					}					
-					
-					List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
-										
-					PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
-					
-					polishJapaneseEntry.setId(Integer.valueOf(currentCommonWordId));
-					
-					List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
-										
-					for (String currentEntity : wordTypeList) {
-						
-						DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(currentEntity);
-						
-						if (dictionaryEntryType != null && dictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
-							dictionaryEntryTypeList.add(dictionaryEntryType);
-						}
-					}
-									
-					polishJapaneseEntry.setDictionaryEntryTypeList(dictionaryEntryTypeList);
-					
-					polishJapaneseEntry.setAttributeList(new AttributeList());
-					
-					polishJapaneseEntry.setWordType(getWordType(kana));
-					
-					polishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
-					
-					if (kanji == null || kanji.equals("") == true) {
-						kanji = "-";
-					}
-					
-					polishJapaneseEntry.setKanji(kanji);
-					polishJapaneseEntry.setKana(kana);
-					polishJapaneseEntry.setRomaji(romaji);
-									
-					polishJapaneseEntry.setKnownDuplicatedList(new ArrayList<KnownDuplicate>());
-
-					List<String> newTranslateList = new ArrayList<String>();
-					
-					List<PolishJapaneseEntry> findPolishJapaneseEntry = pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntry(
-							cachePolishJapaneseEntryList, kanji, kana);
-					
-					newTranslateList.add("_");
-					newTranslateList.add("-----------");
-					
-					if (findPolishJapaneseEntry != null && findPolishJapaneseEntry.size() > 0) {
-						newTranslateList.add("JUZ JEST");
-						newTranslateList.add("-----------");
-					}
-					
-					newTranslateList.add("-----------");
-					newTranslateList.addAll(translateList2);
-					
-					polishJapaneseEntry.setTranslates(newTranslateList);
-					
-					StringBuffer additionalInfoSb = new StringBuffer();
-
-					if (kanjiInfoList != null && kanjiInfoList.size() > 0) {
-						additionalInfoSb.append(Utils.convertListToString(kanjiInfoList));
-						additionalInfoSb.append("\n");
-					}
-
-					if (kanaInfoList != null && kanaInfoList.size() > 0) {
-						additionalInfoSb.append(Utils.convertListToString(kanaInfoList));
-						additionalInfoSb.append("\n");
-					}
-					
-					if (additionalInfoList != null && additionalInfoList.size() > 0) {
-						additionalInfoSb.append(Utils.convertListToString(additionalInfoList));
-						additionalInfoSb.append("\n");
-					}
-					
-					polishJapaneseEntry.setInfo(additionalInfoSb.toString());
+					PolishJapaneseEntry polishJapaneseEntry = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, Integer.valueOf(currentCommonWordId), null).polishJapaneseEntry;
 									
 					newWordList.add(polishJapaneseEntry);
 				}				
 				
 			} else {
 				
-				PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
-				
-				polishJapaneseEntry.setId(Integer.valueOf(currentCommonWordId));
-				
-				List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
-				
-				dictionaryEntryTypeList.add(DictionaryEntryType.UNKNOWN);
+				PolishJapaneseEntry polishJapaneseEntry = Helper.createEmptyPolishJapaneseEntry(null, Integer.valueOf(currentCommonWordId));
 												
-				polishJapaneseEntry.setDictionaryEntryTypeList(dictionaryEntryTypeList);				
-				polishJapaneseEntry.setAttributeList(new AttributeList());
-				
-				polishJapaneseEntry.setWordType(WordType.KATAKANA);
-				
-				polishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
-								
-				polishJapaneseEntry.setKanji("-");
-				polishJapaneseEntry.setKana("-");
-				polishJapaneseEntry.setRomaji("-");
-								
-				polishJapaneseEntry.setKnownDuplicatedList(new ArrayList<KnownDuplicate>());
-
-				List<String> newTranslateList = new ArrayList<String>();
-				
-				newTranslateList.add("");
-								
-				polishJapaneseEntry.setTranslates(newTranslateList);				
-				polishJapaneseEntry.setInfo("");
-								
 				newWordList.add(polishJapaneseEntry);				
 			}			
 		}
@@ -346,42 +185,7 @@ public class GetCommonPartList {
 			throw new RuntimeException(e);
 		}
 	}
-	
-	private static WordType getWordType(String kana) {
 		
-		WordType wordType = null;
-				
-		for (int idx = 0; idx < kana.length(); ++idx) {
-			
-			char c = kana.charAt(idx);
-			
-			boolean currentCIsHiragana = Utils.isHiragana(c);
-			boolean currentCIsKatakana = Utils.isKatakana(c);
-			
-			if (currentCIsHiragana == true) {
-				
-				if (wordType == null) {
-					wordType = WordType.HIRAGANA;
-					
-				} else if (wordType == WordType.KATAKANA) {
-					wordType = WordType.KATAKANA_HIRAGANA;					
-				}				
-			}
-
-			if (currentCIsKatakana == true) {
-				
-				if (wordType == null) {
-					wordType = WordType.KATAKANA;
-					
-				} else if (wordType == WordType.HIRAGANA) {
-					wordType = WordType.HIRAGANA_KATAKANA;					
-				}				
-			}			
-		}	
-		
-		return wordType;
-	}
-	
 	private static class CommonWord {
 		
 		private Integer id;

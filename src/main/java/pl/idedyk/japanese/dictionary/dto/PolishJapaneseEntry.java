@@ -17,7 +17,7 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 	private List<ParseAdditionalInfo> parseAdditionalInfoList;
 
 	private List<KnownDuplicate> knownDuplicatedList;
-		
+			
 	public String getRealPrefixRomaji() {
 		return realPrefixRomaji;
 	}
