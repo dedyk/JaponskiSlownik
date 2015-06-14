@@ -5,6 +5,7 @@ import java.util.Set;
 
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
@@ -47,12 +48,22 @@ public class Test5 {
 		
 		//List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("月立ち", "つきたち");
 		
-		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("賽子", "さいころ");
+		List<Group> groupList = jmeNewDictionary.getGroupList("正身", "そうじみ");
 		
+		for (Group group : groupList) {
+			
+			List<GroupEntry> groupEntryList = group.getGroupEntryList();
+			
+			for (GroupEntry groupEntry : groupEntryList) {							
+				printGroupEntry(groupEntry);
+			}
+		}
+				
+		/*
 		for (GroupEntry groupEntry : groupEntryList) {							
 			printGroupEntry(groupEntry);
 		}
-
+		*/
 		
 		
 		/*

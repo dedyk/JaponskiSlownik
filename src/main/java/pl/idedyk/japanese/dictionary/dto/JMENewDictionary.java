@@ -47,6 +47,35 @@ public class JMENewDictionary {
 		groupEntryListInCache.add(groupEntry);		
 	}
 	
+	public List<Group> getGroupList(String kanji, String kana) {
+		
+		List<Group> result = new ArrayList<Group>();
+		
+		Set<Integer> uniqueGroupIds = new HashSet<Integer>();
+		
+		String groupEntryKey = getKey(kanji, kana);
+		
+		List<GroupEntry> groupEntryList = groupEntryCache.get(groupEntryKey);
+		
+		if (groupEntryList == null) {
+			return result;
+		}
+		
+		for (GroupEntry groupEntry : groupEntryList) {
+			
+			Group group = groupEntry.getGroup();
+			
+			if (uniqueGroupIds.contains(group.getId()) == false) {
+				
+				uniqueGroupIds.add(group.getId());
+				
+				result.add(group);
+			}			
+		}
+		
+		return result;
+	}
+	
 	public List<GroupEntry> getGroupEntryList(String kanji, String kana) {
 		
 		String groupEntryKey = getKey(kanji, kana);
