@@ -15,9 +15,7 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
-import pl.idedyk.japanese.dictionary.common.Helper.CreatePolishJapaneseEntryResult;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
@@ -52,9 +50,9 @@ public class GenerateJMEDictGroupWordList {
 		System.out.println("Generowanie słów...");
 		
 		List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
-		List<PolishJapaneseEntry> newMultiWordList = new ArrayList<PolishJapaneseEntry>();
+		//List<PolishJapaneseEntry> newMultiWordList = new ArrayList<PolishJapaneseEntry>();
 		
-		int newMultiWordListCounter = 0;
+		//int newMultiWordListCounter = 0;
 		
 		KanaHelper kanaHelper = new KanaHelper();
 		
@@ -85,6 +83,7 @@ public class GenerateJMEDictGroupWordList {
 			
 			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 			
+			/*
 			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == true) {
 				
 				newMultiWordListCounter++;
@@ -97,7 +96,8 @@ public class GenerateJMEDictGroupWordList {
 					
 					newMultiWordList.add(newPolishJapaneseEntry);
 				}
-			}			
+			}
+			*/			
 						
 			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 								
@@ -236,6 +236,7 @@ public class GenerateJMEDictGroupWordList {
 				}
 		);
 		
+		/*
 		CsvReaderWriter.generateCsv("input/word-multi.csv", newMultiWordList, true, true, false,
 				new ICustomAdditionalCsvWriter() {
 					
@@ -250,6 +251,7 @@ public class GenerateJMEDictGroupWordList {
 						csvWriter.write(Utils.convertListToString(findOtherPolishJapaneseEntry.getTranslates()));						
 					}
 		});
+		*/
 	}
 	
 	private static WordType getWordType(String kana) {
