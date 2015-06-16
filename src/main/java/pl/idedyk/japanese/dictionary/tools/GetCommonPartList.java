@@ -27,6 +27,9 @@ public class GetCommonPartList {
 
 	public static void main(String[] args) throws Exception {
 		
+		// cat input/common_word.csv | egrep -E -e "^[0-9]*,," | cut -d, -f1 | shuf | head -1
+		// cat input/common_word.csv | egrep -E -e "^[0-9]*,," | cut -d, -f1 | wc -l
+		
 		String fileName = args[0];
 		
 		// czytanie pliku ze slownikiem
