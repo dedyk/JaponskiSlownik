@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.dom4j.Attribute;
 import org.dom4j.Element;
@@ -532,6 +533,17 @@ public class JMEDictNewReader {
 						// tlumaczenia
 						generateWordTypeTranslateAdditionalInfoList(groupEntry, jmeDictNewNativeEntry);
 						
+						// priorytet
+						List<String> kanaPriority = currentREle.getRe_pri();
+						
+						List<String> priority = new ArrayList<String>();
+						
+						priority.addAll(kanaPriority);
+						
+						priority = new ArrayList<String>(new TreeSet<String>(priority));
+						
+						groupEntry.setPriority(priority);
+						
 						group.getGroupEntryList().add(groupEntry);						
 					}
 				}				
@@ -593,6 +605,19 @@ public class JMEDictNewReader {
 						// tlumaczenia
 						generateWordTypeTranslateAdditionalInfoList(groupEntry, jmeDictNewNativeEntry);
 						
+						// priorytet
+						List<String> kanjiPriority = currentKEle.getKe_pri();
+						List<String> kanaPriority = currentREle.getRe_pri();
+						
+						List<String> priority = new ArrayList<String>();
+						
+						priority.addAll(kanjiPriority);
+						priority.addAll(kanaPriority);
+						
+						priority = new ArrayList<String>(new TreeSet<String>(priority));
+						
+						groupEntry.setPriority(priority);
+						
 						group.getGroupEntryList().add(groupEntry);						
 					}										
 				}
@@ -623,6 +648,17 @@ public class JMEDictNewReader {
 					
 					// tlumaczenia
 					generateWordTypeTranslateAdditionalInfoList(groupEntry, jmeDictNewNativeEntry);
+					
+					// priorytet
+					List<String> kanaPriority = currentREle.getRe_pri();
+					
+					List<String> priority = new ArrayList<String>();
+					
+					priority.addAll(kanaPriority);
+					
+					priority = new ArrayList<String>(new TreeSet<String>(priority));
+					
+					groupEntry.setPriority(priority);
 					
 					group.getGroupEntryList().add(groupEntry);						
 				}

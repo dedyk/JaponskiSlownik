@@ -167,6 +167,28 @@ public class JMENewDictionary {
 		
 		return kanji + "." + kana;		
 	}
+	
+	public static List<List<GroupEntry>> groupByTheSameTranslate(List<GroupEntry> groupEntryList) {
+		
+		Map<String, List<GroupEntry>> theSameTranslate = new TreeMap<String, List<GroupEntry>>(); 
+		
+		for (GroupEntry groupEntry : groupEntryList) {
+			
+			String groupEntryTranslate = groupEntry.getTranslateList().toString();
+			
+			List<GroupEntry> groupEntryForTheSameTranslateList = theSameTranslate.get(groupEntryTranslate);
+			
+			if (groupEntryForTheSameTranslateList == null) {
+				groupEntryForTheSameTranslateList = new ArrayList<JMENewDictionary.GroupEntry>();
+				
+				theSameTranslate.put(groupEntryTranslate, groupEntryForTheSameTranslateList);
+			}			
+			
+			groupEntryForTheSameTranslateList.add(groupEntry);
+		}
+		
+		return new ArrayList<List<GroupEntry>>(theSameTranslate.values());
+	}
 
 	public static class Group {
 		
@@ -223,6 +245,8 @@ public class JMENewDictionary {
 		private String romaji;
 		
 		private List<GroupEntryTranslate> translateList;
+		
+		private List<String> priority;
 		
 		public GroupEntry(JMEDictNewNativeEntry nativeEntry, Group group) {
 			this.nativeEntry = nativeEntry;
@@ -301,6 +325,14 @@ public class JMENewDictionary {
 			this.translateList = translateList;
 		}
 		
+		public List<String> getPriority() {
+			return priority;
+		}
+
+		public void setPriority(List<String> priority) {
+			this.priority = priority;
+		}
+
 		public boolean containsAttribute(String attribute) {
 			
 			if (wordTypeList != null && wordTypeList.contains(attribute) == true) {
@@ -336,7 +368,7 @@ public class JMENewDictionary {
 		public String toString() {
 			return "GroupEntry [wordTypeList=" + wordTypeList + ", kanji=" + kanji + ", kanjiInfoList=" + kanjiInfoList
 					+ ", kana=" + kana + ", kanaInfoList=" + kanaInfoList + ", romaji=" + romaji + ", translateList="
-					+ translateList;
+					+ translateList + ", priority=" + priority + "]";
 		}
 	}
 	
