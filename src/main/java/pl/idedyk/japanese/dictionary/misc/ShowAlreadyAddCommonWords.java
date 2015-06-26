@@ -42,7 +42,7 @@ public class ShowAlreadyAddCommonWords {
 				List<PolishJapaneseEntry> findPolishJapaneseEntry = 
 						pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntry(cachePolishJapaneseEntryList, kanji, kana);
 				
-				if (findPolishJapaneseEntry != null) {
+				if (findPolishJapaneseEntry != null && findPolishJapaneseEntry.size() > 0) {
 					
 					csvWriter.write(id);
 					
