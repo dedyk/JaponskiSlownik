@@ -50,9 +50,6 @@ public class GenerateJMEDictGroupWordList {
 		System.out.println("Generowanie słów...");
 		
 		List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
-		//List<PolishJapaneseEntry> newMultiWordList = new ArrayList<PolishJapaneseEntry>();
-		
-		//int newMultiWordListCounter = 0;
 		
 		KanaHelper kanaHelper = new KanaHelper();
 		
@@ -65,6 +62,10 @@ public class GenerateJMEDictGroupWordList {
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.EDICT_TRANSLATE_INFO_GROUP_DIFF) == true) {
+				continue;
+			}
+
+			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.NO_JMEDICT_ALTERNATIVE) == true) {
 				continue;
 			}
 			
@@ -82,23 +83,7 @@ public class GenerateJMEDictGroupWordList {
 			String kana = polishJapaneseEntry.getKana();
 			
 			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
-			
-			/*
-			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == true) {
-				
-				newMultiWordListCounter++;
-				
-				for (GroupEntry groupEntry : groupEntryList) {
-					
-					CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(groupEntry, newMultiWordListCounter);
-					
-					PolishJapaneseEntry newPolishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;
-					
-					newMultiWordList.add(newPolishJapaneseEntry);
-				}
-			}
-			*/			
-						
+									
 			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 								
 				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
@@ -234,24 +219,7 @@ public class GenerateJMEDictGroupWordList {
 						csvWriter.write(Utils.convertListToString(translateList2));						
 					}
 				}
-		);
-		
-		/*
-		CsvReaderWriter.generateCsv("input/word-multi.csv", newMultiWordList, true, true, false,
-				new ICustomAdditionalCsvWriter() {
-					
-					@Override
-					public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
-						
-						PolishJapaneseEntry findOtherPolishJapaneseEntry = 
-								pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntryWithEdictDuplicate(polishJapaneseEntry, cachePolishJapaneseEntryList, 
-										polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
-						
-						
-						csvWriter.write(Utils.convertListToString(findOtherPolishJapaneseEntry.getTranslates()));						
-					}
-		});
-		*/
+		);		
 	}
 	
 	private static WordType getWordType(String kana) {
