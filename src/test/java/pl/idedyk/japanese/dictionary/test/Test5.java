@@ -16,7 +16,8 @@ public class Test5 {
 
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
@@ -37,7 +38,7 @@ public class Test5 {
 		*/
 		
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
-		
+				
 		/*
 		List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList("水瓜", "すいか");
 		
@@ -48,6 +49,7 @@ public class Test5 {
 		
 		//List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("月立ち", "つきたち");
 		
+		/*
 		List<Group> groupList = jmeNewDictionary.getGroupList("正身", "そうじみ");
 		
 		for (Group group : groupList) {
@@ -58,6 +60,7 @@ public class Test5 {
 				printGroupEntry(groupEntry);
 			}
 		}
+		*/
 				
 		/*
 		for (GroupEntry groupEntry : groupEntryList) {							
@@ -66,7 +69,6 @@ public class Test5 {
 		*/
 		
 		
-		/*
 		for (Group group : jmeNewDictionary.getGroupList()) {
 			
 			List<GroupEntry> groupEntryList = group.getGroupEntryList();
@@ -76,10 +78,9 @@ public class Test5 {
 				printGroupEntry(groupEntry);
 			}
 		}
-		*/
 		
 		/*
-		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("ＪＲ三山木駅", "ジェイアールみやまきえき");
+		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("大社", "おおやしろ");
 
 		for (GroupEntry groupEntry : groupEntryList) {							
 			printGroupEntry(groupEntry);
