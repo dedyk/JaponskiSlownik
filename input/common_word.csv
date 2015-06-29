@@ -72,9 +72,9 @@
 72,,-,アペタイザー,[n],"[appetizer, appetiser]"
 73,,-,アボート,"[n, vs]",[abort]
 74,,-,アポインテシステム,[n],[appointment system]
-75,,-,アマルガム,[n],[amalgam]
+75,1,-,アマルガム,[n],[amalgam]
 76,,-,アマン,[n],[lover]
-77,,-,アミ,[n],"[friend, AMI]"
+77,1,-,アミ,[n],"[friend, AMI]"
 78,,-,アムール,[n],[love]
 79,,-,アムネスティ,[n],[amnesty]
 80,,-,アメニティー,[n],[amenity]
@@ -103,7 +103,7 @@
 103,,-,アントニム,[n],[antonym]
 104,,-,アンパーザー,[n],[unparser]
 105,,-,アンファンテリブル,[n],[enfants terribles]
-106,,-,アンペア,[n],[ampere]
+106,1,-,アンペア,[n],[ampere]
 107,,-,アンモナイト,[n],[ammonite]
 108,,-,イースタングリップ,[n],[eastern grip (in tennis)]
 109,,-,イーブン,[n],[even]
@@ -123,7 +123,7 @@
 123,,-,ウイニングボール,[n],[winning ball]
 124,,-,ウインドブレーカー,[n],"[windbreaker, jacket]"
 125,,-,ウェーバー,[n],"[waiver, weber (Wb) (unit of magnetic flux)]"
-126,,-,ウェルダン,[n],[well-done]
+126,1,-,ウェルダン,[n],[well-done]
 127,,-,ウォーカソン,[n],[walkathon]
 128,,-,ウォークスルー,[n],[(structured) walk through]
 129,,-,ウォーターカラー,[n],"[watercolor, watercolour]"
@@ -555,7 +555,7 @@
 555,,黄河,こうが,[n],[Yellow river (in China)]
 556,,黄土,こうど,[n],"[earth, yellow soil, yellow ochre (ocher), loess, Hades, hell, underworld, world of the dead]"
 557,,黄土,おうど,[n],"[earth, yellow soil, yellow ochre (ocher), loess]"
-558,,黄疸,おうだん,"[n, adj-no]",[jaundice]
+558,1,黄疸,おうだん,"[n, adj-no]",[jaundice]
 559,,屋号,やごう,[n],"[name of store, trade name, stage name (e.g. of actor)]"
 560,,恩典,おんてん,[n],"[favour, favor, act of grace, special privilege]"
 561,,緩い,ぬるい,[],[lenient]
@@ -2613,14 +2613,14 @@
 2613,,卓,しょく,[n],"[table, desk, offering table before an altar (sometimes used in tea ceremony), tabletop incense burner]"
 2614,,卓抜,たくばつ,"[adj-na, n]","[excellence, superiority, preeminence, prevalence]"
 2615,,托鉢,たくはつ,"[n, vs]","[monk's ""begging"", religious mendicancy, asking for alms, going with one's bowl to the meditation hall at mealtime (in a Zen temple)]"
-2616,,沢庵,たくあん,[n],[pickled daikon radish]
+2616,1,沢庵,たくあん,[n],[pickled daikon radish]
 2617,,濁り,にごり,"[n, adj-no]","[muddiness, murkiness, lack of clarity, impurity, Japanese voiced consonant mark, unrefined sake]"
 2618,,叩く,はたく,"[v5k, vt]","[to strike, to clap, to knock, to dust, to beat, to use up money]"
 2619,,奪い取る,うばいとる,"[v5r, vt]","[to plunder, to grab, to snatch]"
 2620,,脱ぎ捨てる,ぬぎすてる,"[v1, vt]","[to fling, to throw off (clothes), to kick off (boots)]"
 2621,,脱色,だっしょく,"[n, vs]","[decolourization, decolorization, decolourisation, decolorisation, bleaching]"
 2622,,脱帽,だつぼう,"[n, vs]","[removing one's hat, admiring someone greatly, ""taking off one's hat"" to someone]"
-2623,,脱毛,だつもう,"[n, vs, adj-no]","[loss of hair, hair loss, removal of hair, hair removal, depilation]"
+2623,1,脱毛,だつもう,"[n, vs, adj-no]","[loss of hair, hair loss, removal of hair, hair removal, depilation]"
 2624,,単三,たんさん,[n],[size AA (battery)]
 2625,,単純化,たんじゅんか,"[n, vs]",[simplification]
 2626,,単色,たんしょく,"[n, adj-no]","[single colour (color), monochrome]"
@@ -3405,7 +3405,7 @@
 3405,,分派,ぶんぱ,"[n, vs]","[denominations, sect, branch, faction, separation from]"
 3406,,分売,ぶんばい,"[n, vs]",[selling separately]
 3407,,分娩,ぶんべん,"[n, vs, adj-no]","[delivery, confinement, childbirth]"
-3408,,分捕り品,ぶんどりひん,[n],"[loot, booty, plunder]"
+3408,1,分捕り品,ぶんどりひん,[n],"[loot, booty, plunder]"
 3409,,分捕る,ぶんどる,"[v5r, vt]","[to capture, to seize, to plunder]"
 3410,,分与,ぶんよ,"[n, vs]","[distribution, allocation, dispensation, impartation]"
 3411,,分流,ぶんりゅう,"[n, vs]","[distributary, tributary, branch]"
@@ -3445,7 +3445,7 @@
 3445,,並み大抵,なみたいてい,[adj-na],[ordinary]
 3446,,閉館,へいかん,"[n, vs]",[closing of a building]
 3447,,閉経,へいけい,[n],[menopause]
-3448,,米,よね,[n],"[(husked grains of) rice, 88 years old]"
+3448,1,米,よね,[n],"[(husked grains of) rice, 88 years old]"
 3449,,米作,べいさく,[n],[rice crop]
 3450,,米寿,べいじゅ,[n],[88th birthday]
 3451,,米粉,こめこ,[n],[rice flour]
@@ -3632,7 +3632,7 @@
 3632,1,無理難題,むりなんだい,[n],[unreasonable demand]
 3633,,冥利,みょうり,[n],"[providence, luck, favor, favour, advantage]"
 3634,,名医,めいい,[n],"[noted doctor, excellent physician]"
-3635,,名家,めいか,[n],"[distinguished family, noted family, noble family, family status in the Imperial Court, master (of a craft), expert]"
+3635,1,名家,めいか,[n],"[distinguished family, noted family, noble family, family status in the Imperial Court, master (of a craft), expert]"
 3636,,名鑑,めいかん,[n],"[directory, list]"
 3637,,名言,めいげん,[n],"[wise saying, famous saying]"
 3638,,名産,めいさん,[n],"[noted product, local specialty]"
@@ -3701,7 +3701,7 @@
 3701,,友釣り,ともづり,[n],[live decoy fishing (esp. for sweetfish)]
 3702,,友邦,ゆうほう,[n],[friendly nation]
 3703,,悠々自適,ゆうゆうじてき,"[adj-na, adj-no, n]","[living a life of leisure with dignity, living quietly and comfortably free from worldly cares, otium cum dignitate]"
-3704,,有感地震,ゆうかんじしん,[n],[perceptible earthquake]
+3704,1,有感地震,ゆうかんじしん,[n],[perceptible earthquake]
 3705,,有形,ゆうけい,"[n, adj-no]","[material, tangible, concrete]"
 3706,,有限会社,ゆうげんがいしゃ,[n],"[limited company, company structure for small businesses, abolished in 2006 (YK)]"
 3707,,有終,ゆうしゅう,[n],[perfection]
@@ -3923,7 +3923,7 @@
 3923,,誂える,あつらえる,"[v1, vt]","[to give an order, to place an order]"
 3924,,諍い,いさかい,"[n, vs]","[quarrel, dispute, argument]"
 3925,,躊躇,ちゅうちょ,"[n, vs]","[hesitation, indecision, vacillation]"
-3926,,逍遥,しょうよう,"[n, vs]","[ramble, saunter, walk, wander, stroll]"
+3926,1,逍遥,しょうよう,"[n, vs]","[ramble, saunter, walk, wander, stroll]"
 3927,,鍼灸,しんきゅう,[n],[acupuncture and moxibustion]
 3928,,冗舌,じょうぜつ,"[adj-na, n]","[garrulity, loquacity, talkativeness]"
 3929,,悪名高い,あくみょうたかい,[adj-i],"[infamous, notorious]"
@@ -4048,7 +4048,7 @@
 4048,,年魚,ねんぎょ,[n],"[sweetfish (Plecoglossus altivelis altivelis), ayu, salmon]"
 4049,,鮎,あゆ,[n],"[sweetfish (Plecoglossus altivelis altivelis), ayu]"
 4050,,荒削り,あらけずり,"[adj-na, n]","[rough-hewn, incomplete, unrefined, still in the process of being formed]"
-4051,,荒れ果てる,あれはてる,"[v1, vi]","[to fall into ruin, to be desolated]"
+4051,1,荒れ果てる,あれはてる,"[v1, vi]","[to fall into ruin, to be desolated]"
 4052,,合わさる,あわさる,"[v5r, vi]","[to get together, to unite]"
 4053,,鮑,あわび,[n],"[abalone, ear shell]"
 4054,,安全弁,あんぜんべん,[n],[safety valve]
@@ -4336,7 +4336,7 @@
 4336,,闊達,かったつ,"[adj-na, n]","[openhearted, frank, broad-minded]"
 4337,,謹厳,きんげん,"[adj-na, n]","[stern, grave, solemn, sobersided]"
 4338,,高慢,こうまん,[adj-na],"[haughty, arrogant, proud]"
-4339,,廉潔,れんけつ,"[adj-na, n]","[honest, incorruptible, integrity]"
+4339,1,廉潔,れんけつ,"[adj-na, n]","[honest, incorruptible, integrity]"
 4340,,老練,ろうれん,"[adj-na, n, adj-no]","[experienced, veteran]"
 4341,,流麗,りゅうれい,"[adj-na, n]","[fluent, flowing, elegant]"
 4342,,清楚,せいそ,"[adj-na, n]","[neat and clean, tidy, trim]"
@@ -5476,7 +5476,7 @@
 5476,,腎炎,じんえん,"[n, adj-no]","[kidney inflammation, nephritis]"
 5477,,賢所,かしこどころ,[n],[a palace sanctuary]
 5478,,一工夫,ひとくふう,"[n, vs]","[contrivance, bit of fiddling, little ingenuity, bit more (e.g. food)]"
-5479,,一次産品,いちじさんぴん,[n],[primary products]
+5479,1,一次産品,いちじさんぴん,[n],[primary products]
 5480,,一次産業,いちじさんぎょう,[n],[primary industry]
 5481,,一苦労,ひとくろう,"[n, vs]","[a hard time, pains]"
 5482,,一浪,いちろう,"[n, vs]",[failing college entrance exams and retaking them a year later]
