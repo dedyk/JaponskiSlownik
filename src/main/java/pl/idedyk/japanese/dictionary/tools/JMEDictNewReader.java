@@ -675,7 +675,10 @@ public class JMEDictNewReader {
 			List<GroupEntry> groupEntryList = group.getGroupEntryList();
 			
 			for (GroupEntry groupEntry : groupEntryList) {
+				
 				jmeNewDictionary.addGroupEntryToCache(groupEntry);
+				
+				jmeNewDictionary.addGroupEntryToOnlyKanjiCache(groupEntry);
 			}
 		}
 				

@@ -15,6 +15,8 @@ public class JMENewDictionary {
 	
 	private TreeMap<String, List<GroupEntry>> groupEntryCache = new TreeMap<String, List<GroupEntry>>();
 	
+	private TreeMap<String, List<GroupEntry>> groupEntryOnlyKanjiCache = new TreeMap<String, List<GroupEntry>>();
+	
 	public List<Group> getGroupList() {
 		return groupList;
 	}
@@ -22,15 +24,7 @@ public class JMENewDictionary {
 	public void setGroupList(List<Group> groupList) {
 		this.groupList = groupList;
 	}
-	
-	public TreeMap<String, List<GroupEntry>> getGroupEntryCache() {
-		return groupEntryCache;
-	}
-
-	public void setGroupEntryCache(TreeMap<String, List<GroupEntry>> groupEntryCache) {
-		this.groupEntryCache = groupEntryCache;
-	}
-	
+		
 	public void addGroupEntryToCache(GroupEntry groupEntry) {
 		
 		String groupEntryKey = getKey(groupEntry.getKanji(), groupEntry.getKana());
@@ -46,6 +40,28 @@ public class JMENewDictionary {
 		
 		groupEntryListInCache.add(groupEntry);		
 	}
+	
+	public void addGroupEntryToOnlyKanjiCache(GroupEntry groupEntry) {
+		
+		String kanji = groupEntry.getKanji();
+		
+		if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
+			return;
+		}
+		
+		String groupEntryKey = getKey(groupEntry.getKanji(), null);
+		
+		List<GroupEntry> groupEntryListInOnlyKanjiCache = groupEntryOnlyKanjiCache.get(groupEntryKey);
+		
+		if (groupEntryListInOnlyKanjiCache == null) {
+			groupEntryListInOnlyKanjiCache = new ArrayList<JMENewDictionary.GroupEntry>();
+			
+			groupEntryOnlyKanjiCache.put(groupEntryKey, groupEntryListInOnlyKanjiCache);
+			
+		}
+		
+		groupEntryListInOnlyKanjiCache.add(groupEntry);		
+	}	
 	
 	public List<Group> getGroupList(String kanji, String kana) {
 		
@@ -81,6 +97,13 @@ public class JMENewDictionary {
 		String groupEntryKey = getKey(kanji, kana);
 		
 		return groupEntryCache.get(groupEntryKey);
+	}
+
+	public List<GroupEntry> getGroupEntryList(String kanji) {
+		
+		String groupEntryKey = getKey(kanji, null);
+		
+		return groupEntryOnlyKanjiCache.get(groupEntryKey);
 	}
 	
 	public List<GroupEntry> getTheSameTranslateInTheSameGroupGroupEntryList(String kanji, String kana) throws DictionaryException {
@@ -165,7 +188,12 @@ public class JMENewDictionary {
 			kanji = "$$$NULL$$$";
 		}
 		
-		return kanji + "." + kana;		
+		if (kana != null) {
+			return kanji + "." + kana;
+			
+		} else {
+			return kanji;
+		}
 	}
 	
 	public static List<List<GroupEntry>> groupByTheSameTranslate(List<GroupEntry> groupEntryList) {
