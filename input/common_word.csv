@@ -84,7 +84,7 @@
 84,,-,アリストクラシー,[n],[aristocracy]
 85,,-,アルカイズム,[n],[archaism]
 86,,-,アルコーブ,[n],[alcove]
-87,,-,アルゴリズミック,"[adj-na, n]",[algorithmic]
+87,1,-,アルゴリズミック,"[adj-na, n]",[algorithmic]
 88,,-,アルバトロス,[n],[albatross]
 89,,Α,アルファ,[n],[alpha]
 90,,-,アルブミン,[n],[albumin]
@@ -116,7 +116,7 @@
 116,,印度支那,インドシナ,[n],[Indochina]
 117,1,印度尼西亜,インドネシア,[n],[Indonesia]
 118,,-,インフレーション,[n],[inflation]
-119,,-,インボイス,[n],[invoice]
+119,1,-,インボイス,[n],[invoice]
 120,,-,ウィークデー,[n],[weekday]
 121,,-,ウイット,[n],[wit]
 122,,-,ウイニングショット,[n],"[winning shot (tennis, ball games)]"
@@ -1222,7 +1222,7 @@
 1222,1,献体,けんたい,"[n, vs]","[body donation, becoming naked]"
 1223,,研修員,けんしゅういん,[n],[trainee]
 1224,,研鑽,けんさん,"[n, vs]","[diligent study, devoting oneself to one's studies]"
-1225,,肩凝り,かたこり,[n],[stiff shoulders]
+1225,1,肩凝り,かたこり,[n],[stiff shoulders]
 1226,,肩身,かたみ,[n],[shoulders]
 1227,,肩入れ,かたいれ,"[n, vs]","[support, backing, patronage]"
 1228,,肩幅,かたはば,"[n, adj-no]",[shoulder width (breadth)]
@@ -2446,7 +2446,7 @@
 2446,,前奏曲,ぜんそうきょく,[n],"[prelude, overture]"
 2447,,前代,ぜんだい,[n],"[previous generation, former ages]"
 2448,1,前段,ぜんだん,[n],"[preceding paragraph, first part]"
-2449,,前著,ぜんちょ,[n],"[ibid., the above-mentioned publication]"
+2449,1,前著,ぜんちょ,[n],"[ibid., the above-mentioned publication]"
 2450,,前任,ぜんにん,"[n, adj-no]",[former (official)]
 2451,,前任者,ぜんにんしゃ,[n],[predecessor]
 2452,,前方後円墳,ぜんぽうこうえんふん,[n],[keyhole-shaped tumulus (form of ancient Imperial grave)]
@@ -2821,7 +2821,7 @@
 2821,,転写,てんしゃ,"[n, vs, adj-no]","[transcription (of a text, DNA, RNA, etc.), transliteration]"
 2822,,点景,てんけい,[n],"[persons or animals added to a picture, incidental details of a picture]"
 2823,,点取り,てんとり,[n],"[competition for school marks, keeping score, score]"
-2824,,伝いに,づたいに,[suf],[along (the wall)]
+2824,1,伝いに,づたいに,[suf],[along (the wall)]
 2825,,伝家,でんか,[n],"[heirloom, trump card, last resort, family tradition]"
 2826,1,伝奇,でんき,[n],[romance (fiction)]
 2827,,伝授,でんじゅ,"[n, vs]","[(giving) instruction, initiation]"
@@ -3625,7 +3625,7 @@
 3625,,無政府主義,むせいふしゅぎ,[n],[(doctrine of) anarchism]
 3626,,無声,むせい,"[n, adj-no]","[voiceless, unvoiced, silent, noiseless]"
 3627,,無線操縦,むせんそうじゅう,"[n, adj-no]",[radio-controlled (plane)]
-3628,,無線電話,むせんでんわ,"[n, adj-no]","[cordless telephone, wireless telephone]"
+3628,1,無線電話,むせんでんわ,"[n, adj-no]","[cordless telephone, wireless telephone]"
 3629,1,無敵,むてき,"[adj-na, n, adj-no]","[invincible, unrivaled, unrivalled]"
 3630,,無防備,むぼうび,"[adj-na, n, adj-no]","[defenseless, defenceless]"
 3631,,無理心中,むりしんじゅう,"[n, vs]",[forced double suicide]
@@ -4321,7 +4321,7 @@
 4321,,帰郷,ききょう,"[n, vs]","[homecoming, return to one's home]"
 4322,,規正,きせい,"[n, vs]",[correction]
 4323,,技官,ぎかん,[n],"[technical official, technical officer]"
-4324,,義務づける,ぎむづける,[v1],[to obligate]
+4324,1,義務づける,ぎむづける,[v1],[to obligate]
 4325,,義務付ける,ぎむづける,"[v1, vt]",[to obligate]
 4326,,議会政治,ぎかいせいじ,[n],"[parliamentarism, parliamentary government]"
 4327,1,破摧,はさい,"[n, vs, adj-no]","[crushing, smashing, cracking to pieces]"
@@ -4406,7 +4406,7 @@
 4406,,立ち枯れ,たちがれ,"[n, adj-no]","[blighted, withered]"
 4407,,大輪,たいりん,"[n, adj-no]",[large-flowered]
 4408,,時計回り,とけいまわり,[n],"[clockwise rotation, CW]"
-4409,,薄手,うすで,"[n, adj-na, adj-no]","[of thin make, light, thin, shallow, slight wound]"
+4409,1,薄手,うすで,"[n, adj-na, adj-no]","[of thin make, light, thin, shallow, slight wound]"
 4410,,薄曇り,うすぐもり,"[n, adj-no]",[slightly cloudy]
 4411,,甘んじる,あまんじる,"[v1, vi]","[to content oneself with, to be resigned to (one's fate), to be contented (satisfied) with (one's lot)]"
 4412,,網目,あみめ,[n],"[mesh (of net), halftone]"
@@ -4505,7 +4505,7 @@
 4505,,本分,ほんぶん,[n],"[one's duty, one's part]"
 4506,,本舗,ほんぽ,[n],"[head office, main shop]"
 4507,,堀端,ほりばた,[n],[side of a moat]
-4508,,砲声,ほうせい,[n],"[sound of a gun, roar of cannon]"
+4508,1,砲声,ほうせい,[n],"[sound of a gun, roar of cannon]"
 4509,,補習,ほしゅう,"[n, vs]",[supplementary lessons]
 4510,1,歩数,ほすう,[n],[number of steps]
 4511,,報徳,ほうとく,[n],[moral requital]
@@ -4599,7 +4599,7 @@
 4599,1,壁新聞,かべしんぶん,[n],"[wall newspaper, wall poster]"
 4600,,門出,かどで,"[n, vs]","[leaving one's own house (e.g. when going to war), departure, setting out, starting a new life, starting life anew]"
 4601,,核の傘,かくのかさ,[n],[nuclear umbrella]
-4602,,紙切れ,かみきれ,[n],[scrap of paper]
+4602,1,紙切れ,かみきれ,[n],[scrap of paper]
 4603,,重なり,かさなり,[n],"[overlapping, piling, stacking]"
 4604,,加州,かしゅう,[n],[State of California]
 4605,,語らい,かたらい,[n],"[talk, troth, chat, lovers vow]"
@@ -4784,7 +4784,7 @@
 4784,,城跡,しろあと,[n],"[castle site, ruins of a castle]"
 4785,,至誠,しせい,[n],"[sincerity, devotion]"
 4786,,質実,しつじつ,"[adj-na, n]","[simplicity, plainness]"
-4787,,手土産,てみやげ,[n],[present (brought by a visitor)]
+4787,1,手土産,てみやげ,[n],[present (brought by a visitor)]
 4788,,表書き,おもてがき,[n],"[address (on envelope, etc.)]"
 4789,,後宮,こうきゅう,[n],"[inner palace (reserved for women), harem, seraglio, consort of the emperor]"
 4790,,-,カイゼル,[n],"[kaiser, emperor]"
@@ -4819,7 +4819,7 @@
 4819,,大門,だいもん,[n],[large front gate]
 4820,,初子,ういご,[n],[first child]
 4821,,法主,ほっす,[n],[high priest]
-4822,,漁期,ぎょき,[n],[fishing season]
+4822,1,漁期,ぎょき,[n],[fishing season]
 4823,,流民,るみん,[n],[refugees]
 4824,,白雲,しらくも,[n],[white clouds]
 4825,,白旗,しらはた,[n],"[white flag, truce flag, surrender flag]"
@@ -5216,7 +5216,7 @@
 5216,,誤判,ごはん,[n],"[misjudgement, misjudgment, erroneous judgement, miscarriage of justice]"
 5217,,誤射,ごしゃ,"[n, vs]",[accidental shooting]
 5218,,御仕着せ,おしきせ,[n],"[uniforms supplied to employees, an allotment]"
-5219,,御用達,ごようたし,"[n, n-suf, adj-no]","[purveyor (esp. to the government, Imperial Household, etc.)]"
+5219,1,御用達,ごようたし,"[n, n-suf, adj-no]","[purveyor (esp. to the government, Imperial Household, etc.)]"
 5220,,御家芸,おいえげい,[n],"[one's specialty, one's forte, specialty of a kabuki school]"
 5221,1,御株,おかぶ,[n],[one's forte]
 5222,,御破算,ごはさん,[n],[starting afresh]
@@ -5416,11 +5416,11 @@
 5416,,親兄弟,おやきょうだい,[n],"[parents and siblings, one's relatives]"
 5417,,親鳥,おやどり,[n],[parent bird]
 5418,,最大公約数,さいだいこうやくすう,[n],"[greatest common divisor, GCD]"
-5419,,最右翼,さいうよく,[n],"[dominant person, preeminent person, strongest contender]"
+5419,1,最右翼,さいうよく,[n],"[dominant person, preeminent person, strongest contender]"
 5420,,撮み洗い,つまみあらい,[n],[washing only the soiled part (of a garment)]
 5421,,七三,しちさん,[n],"[7 or 3 ratio, hair parted on one side]"
 5422,,切り込み,きりこみ,[n],"[cut, notch, raid, attack]"
-5423,,絶対多数,ぜったいたすう,[n],[absolute majority]
+5423,1,絶対多数,ぜったいたすう,[n],[absolute majority]
 5424,,絶対温度,ぜったいおんど,[n],"[absolute temperature, measure of temperature from absolute zero (-273C)]"
 5425,,絶対量,ぜったいりょう,[n],"[absolute amount, absolute quantity]"
 5426,,絶品,ぜっぴん,"[n, adj-no]","[superb piece of work, masterpiece, exquisite item, perfection, unique article]"
@@ -5474,7 +5474,7 @@
 5474,,自爆,じばく,"[n, vs, adj-no]","[suicide bombing (e.g. crashing one's plane into a target), self-destruction, blowing oneself up]"
 5475,,自警,じけい,"[n, vs]",[giving warning oneself]
 5476,,腎炎,じんえん,"[n, adj-no]","[kidney inflammation, nephritis]"
-5477,,賢所,かしこどころ,[n],[a palace sanctuary]
+5477,1,賢所,かしこどころ,[n],[a palace sanctuary]
 5478,,一工夫,ひとくふう,"[n, vs]","[contrivance, bit of fiddling, little ingenuity, bit more (e.g. food)]"
 5479,1,一次産品,いちじさんぴん,[n],[primary products]
 5480,,一次産業,いちじさんぎょう,[n],[primary industry]
@@ -5599,7 +5599,7 @@
 5599,,焼け石,やけいし,[n],[hot or heated stone]
 5600,,焼け野原,やけのはら,[n],"[burnt field, burnt area]"
 5601,,哨戒,しょうかい,"[n, vs]",[patrolling (esp. using ships or aircraft)]
-5602,,小手,こて,[n],[forearm]
+5602,1,小手,こて,[n],[forearm]
 5603,,小出し,こだし,[n],[(apportioning) in small amounts]
 5604,,小曲,しょうきょく,"[n, adj-no]",[short piece of music]
 5605,,小休止,しょうきゅうし,"[n, vs]","[short break, breather]"
@@ -5629,7 +5629,7 @@
 5629,,右左,みぎひだり,[n],[right and left]
 5630,,国土計画,こくどけいかく,[n],[national land planning]
 5631,,国民体育大会,こくみんたいいくたいかい,[n],[National Athletic Meet]
-5632,,国民審査,こくみんしんさ,[n],[national review (as an act of a peoples' sovereignty)]
+5632,1,国民審査,こくみんしんさ,[n],[national review (as an act of a peoples' sovereignty)]
 5633,,国光,こっこう,[n],"[national glory, Ralls Genet (cultivar of apple), Ralls Janet, Rawls Jennet]"
 5634,,国有化,こくゆうか,"[n, vs]","[nationalization, nationalisation]"
 5635,,国法,こくほう,[n],[national law]
@@ -5895,7 +5895,7 @@
 5895,,婦選,ふせん,[n],[women's suffrage]
 5896,,海山,うみやま,"[adv, n]",[sea and mountains]
 5897,1,海外経済協力基金,かいがいけいざいきょうりょくききん,[n],[Overseas Economic Cooperation Fund]
-5898,,海図,かいず,[n],[sea chart]
+5898,1,海図,かいず,[n],[sea chart]
 5899,,海洋気象台,かいようきしょうだい,[n],[marine meteorological observatory]
 5900,,海賊版,かいぞくばん,[n],"[pirated edition, bootleg]"
 5901,,夢見,ゆめみ,[n],[having a dream]
@@ -6092,7 +6092,7 @@
 6092,,理性的,りせいてき,[adj-na],[rational]
 6093,,理数,りすう,[n],[science and mathematics]
 6094,,理詰め,りづめ,"[n, adj-no]","[reasoning, logic, persuasion]"
-6095,,裏番組,うらばんぐみ,[n],[program in a competing timeslot (programme)]
+6095,1,裏番組,うらばんぐみ,[n],[program in a competing timeslot (programme)]
 6096,,陵墓,りょうぼ,[n],[imperial tomb or mausoleum]
 6097,,力水,ちからみず,[n],[water offered to wrestlers just prior to a bout]
 6098,,力負け,ちからまけ,"[n, vs]","[losing by being overmatched, being defeated by a stronger opponent, losing by misusing one's powers, defeat as a result of trying too hard]"
@@ -6790,7 +6790,7 @@
 6790,,予研,よけん,[n],[National Institute of Health]
 6791,,情報学,じょうほうがく,[n],[informatics]
 6792,,類する,るいする,[vs-s],[to be similar to]
-6793,,委任統治,いにんとうち,[n],[mandate]
+6793,1,委任統治,いにんとうち,[n],[mandate]
 6794,,移動性高気圧,いどうせいこうきあつ,[n],[migratory anticyclone]
 6795,,胃カメラ,いカメラ,[n],"[endoscope, gastrocamera]"
 6796,,陰イオン,いんイオン,"[n, adj-no]",[anion]
@@ -6844,7 +6844,7 @@
 6844,,最速,さいそく,[adj-no],[fastest]
 6845,,大っぴら,おおっぴら,"[adj-na, adj-no]","[open, public, overt, free, unreserved, uninhibited]"
 6846,,片や,かたや,[exp],"[on one hand, on the other hand]"
-6847,,働かす,はたらかす,"[v5s, vt]","[to put someone to work, to make someone work]"
+6847,1,働かす,はたらかす,"[v5s, vt]","[to put someone to work, to make someone work]"
 6848,,後退り,あとずさり,"[n, vs]","[stepping back, drawing back]"
 6849,,伍する,ごする,"[vs-s, vi]","[to rank with, to rank among]"
 6850,,大盤振る舞い,おおばんぶるまい,"[n, vs]","[lavish feast, splendid banquet, corporate largess, lavish hospitality]"
@@ -7295,7 +7295,7 @@ counter for people or implements ()"
 -----------
 -----------
 decapitated head of an enemy"
-6946,,首,しゅ,,"_
+6946,1,首,しゅ,,"_
 -----------
 -----------
 counter for songs and poems"
@@ -7659,7 +7659,7 @@ fine
 minute
 stingy
 cheap"
-7007,,御,み,,"_
+7007,1,御,み,,"_
 -----------
 -----------
 august (honorific or respectful (sonkeigo) language)
@@ -10011,7 +10011,7 @@ counter for loads (that can be carried on one's shoulders)"
 -----------
 -----------
 the common people"
-7426,,大御宝,おおみたから,,"_
+7426,1,大御宝,おおみたから,,"_
 -----------
 -----------
 imperial subjects (archaism)
