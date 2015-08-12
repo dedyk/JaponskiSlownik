@@ -56,7 +56,7 @@
 56,,-,アダージョ,[n],[adagio]
 57,,-,アチーブ,[n],"[achieve, achievement test]"
 58,,-,アップル,[n],"[apple, Apple (computer company)]"
-59,,-,アテスト,[vs],"[attest (e.g. scorecard), sign]"
+59,1,-,アテスト,[vs],"[attest (e.g. scorecard), sign]"
 60,,-,アディオス,[exp],"[good-bye, carton]"
 61,,-,アト,"[n, pref]","[atto-, 10^-18]"
 62,,-,アドバルーン,[n],"[advertising balloon, ad-balloon]"
@@ -263,7 +263,7 @@
 263,,悪玉,あくだま,[n],"[bad character, bad person, villain, baddie]"
 264,1,悪習,あくしゅう,[n],"[bad habit, vice]"
 265,,悪条件,あくじょうけん,[n],"[unfavorable conditions, unfavourable conditions]"
-266,,悪政,あくせい,[n],[misgovernment]
+266,1,悪政,あくせい,[n],[misgovernment]
 267,1,悪戦苦闘,あくせんくとう,"[n, vs]","[hard fighting, hard struggle, fighting against heavy odds]"
 268,,悪態,あくたい,[n],[abusive language]
 269,,悪童,あくどう,[n],[bad boy]
@@ -302,7 +302,7 @@
 302,,委任状,いにんじょう,[n],"[commission, proxy, power of attorney, authorization]"
 303,,威光,いこう,[n],"[power, authority, influence]"
 304,,威風,いふう,[n],"[majesty, dignity]"
-305,,意気軒昂,いきけんこう,"[adj-na, adj-t, adv-to]","[in high spirits, elated]"
+305,1,意気軒昂,いきけんこう,"[adj-na, adj-t, adv-to]","[in high spirits, elated]"
 306,,意気消沈,いきしょうちん,"[n, vs, adj-no]","[depressed in spirits, dispirited, disheartened, rejection]"
 307,,意気投合,いきとうごう,"[n, vs]","[hit it off with (a person), find a kindred spirit in (a person), sympathy, mutual understanding]"
 308,,意中,いちゅう,[n],"[one's mind, one's heart, one's intention]"
@@ -404,7 +404,7 @@
 404,,一木,いちぼく,[n],[one tree]
 405,1,一目散に,いちもくさんに,[adv],"[at full speed, as fast as one's legs can carry one]"
 406,,一矢,いっし,"[n-adv, n]","[an arrow, (a) retort]"
-407,,一役,いちやく,[n],"[an office, an important office]"
+407,1,一役,いちやく,[n],"[an office, an important office]"
 408,,一葉,ひとは,[n],"[one leaf, one boat]"
 409,,一葉,いちよう,[n],"[one leaf, one page, one sheet, one card, one photo, one boat]"
 410,1,一卵性双生児,いちらんせいそうせいじ,[n],[identical twins]
@@ -494,7 +494,7 @@
 494,,縁切り,えんきり,"[n, vs]","[separation, divorce, severing of connections]"
 495,1,椽側,えんがわ,[n],"[veranda, porch, balcony, open corridor]"
 496,,縁台,えんだい,[n],[bench]
-497,,遠からず,とおからず,[adv],"[soon, in the near future]"
+497,1,遠からず,とおからず,[adv],"[soon, in the near future]"
 498,,遠ざける,とおざける,"[v1, vt]","[to keep away, to keep at a distance]"
 499,,遠因,えんいん,[n],[underlying cause]
 500,1,遠縁,とおえん,"[n, adj-no]",[distant relative]
@@ -1578,7 +1578,7 @@
 1578,,雑菌,ざっきん,[n],"[microorganisms, saprophyte, saprophytic bacteria]"
 1579,,雑事,ざつじ,[n],[miscellaneous matters]
 1580,1,雑種,ざっしゅ,[n],"[hybrid, crossbreed, mongrel]"
-1581,,雑多,ざった,"[adj-na, n, adj-no]","[miscellaneous, mixed, unorganized]"
+1581,1,雑多,ざった,"[adj-na, n, adj-no]","[miscellaneous, mixed, unorganized]"
 1582,,雑費,ざっぴ,[n],[miscellaneous expenses]
 1583,,雑木,ぞうき,[n],"[various kinds of small trees, assorted trees]"
 1584,,三つ折り,みつおり,[n],"[threefold, folded in three]"
@@ -1925,7 +1925,7 @@
 1925,,重機関銃,じゅうきかんじゅう,[n],[heavy machine gun]
 1926,,重金属,じゅうきんぞく,[n],[heavy metals]
 1927,1,重罪,じゅうざい,"[n, adj-no]","[felony, serious crime]"
-1928,,重臣,じゅうしん,[n],"[chief vassal, senior statesman]"
+1928,1,重臣,じゅうしん,[n],"[chief vassal, senior statesman]"
 1929,,重税,じゅうぜい,"[n, adj-no]",[heavy taxation]
 1930,,重奏,じゅうそう,"[n, vs]",[instrumental ensemble]
 1931,,重篤,じゅうとく,"[adj-na, n]",[serious (illness)]
@@ -2201,7 +2201,7 @@
 2201,,進み出る,すすみでる,"[v1, vi]","[to step forward, to volunteer]"
 2202,,進行状況,しんこうじょうきょう,[n],[state of progress]
 2203,1,針路,しんろ,[n],"[course, direction, compass bearing]"
-2204,,震え上がる,ふるえあがる,"[v5r, vi]","[to tremble violently, to shudder up]"
+2204,1,震え上がる,ふるえあがる,"[v5r, vi]","[to tremble violently, to shudder up]"
 2205,,人家,じんか,[n],"[house, houses, human habitation]"
 2206,,人垣,ひとがき,[n],[crowd of people]
 2207,,人格者,じんかくしゃ,[n],"[person of character, man of character]"
@@ -2643,7 +2643,7 @@
 2643,1,截ち切る,たちきる,"[v5r, vt]","[to cut apart (cloth, paper, etc.)]"
 2644,,断崖,だんがい,[n],"[palisade, cliff]"
 2645,,断末魔,だんまつま,[n],[death agony]
-2646,,段違い,だんちがい,"[adj-na, n]","[wide difference, remarkable difference]"
+2646,1,段違い,だんちがい,"[adj-na, n]","[wide difference, remarkable difference]"
 2647,,男っぽい,おとこっぽい,[adj-i],"[manly, boyish]"
 2648,,男泣き,おとこなき,"[n, vs]",[man's weeping (esp. someone not prone to tears)]
 2649,,男装,だんそう,"[n, adj-no, vs]","[disguising oneself as a man, dressing as a man (for a woman), male clothing]"
@@ -2726,7 +2726,7 @@
 2726,,直射,ちょくしゃ,"[n, vs, adj-no]","[direct fire, frontal fire, direct rays (of sunlight)]"
 2727,,直接行動,ちょくせつこうどう,[n],[direct action]
 2728,,直訴,じきそ,"[n, vs]",[direct appeal]
-2729,,直送,ちょくそう,"[n, vs]",[direct delivery]
+2729,1,直送,ちょくそう,"[n, vs]",[direct delivery]
 2730,,地下足袋,じかたび,[n],"[work tabi, split-toed heavy cloth shoes with rubber soles]"
 2731,,直談判,じかだんぱん,"[n, vs]",[direct talks]
 2732,,直腸,ちょくちょう,"[n, adj-no]",[rectum]
@@ -3477,7 +3477,7 @@
 3477,,変奏曲,へんそうきょく,[n],[variation]
 3478,,変装,へんそう,"[n, vs]","[disguise, masquerade]"
 3479,,変速,へんそく,"[n, vs]",[shifting gears]
-3480,,変調,へんちょう,"[n, vs]","[change of tone, variation (music), irregularity, anomaly, abnormality, modulation (in radio)]"
+3480,1,変調,へんちょう,"[n, vs]","[change of tone, variation (music), irregularity, anomaly, abnormality, modulation (in radio)]"
 3481,,変電所,へんでんしょ,[n],[transformer substation]
 3482,,片っ端から,かたっぱしから,[adv],"[absolutely every little bit, everything from A to Z, systematically, thoroughly, one after another]"
 3483,,片言,かたこと,"[n, adj-no]","[prattle, broken language, halting language, baby talk, imperfect speech, smattering]"
@@ -4409,7 +4409,7 @@
 4409,1,薄手,うすで,"[n, adj-na, adj-no]","[of thin make, light, thin, shallow, slight wound]"
 4410,,薄曇り,うすぐもり,"[n, adj-no]",[slightly cloudy]
 4411,,甘んじる,あまんじる,"[v1, vi]","[to content oneself with, to be resigned to (one's fate), to be contented (satisfied) with (one's lot)]"
-4412,,網目,あみめ,[n],"[mesh (of net), halftone]"
+4412,1,網目,あみめ,[n],"[mesh (of net), halftone]"
 4413,,番狂わせ,ばんくるわせ,[n],"[unexpected result, upset, surprise]"
 4414,,馬身,ばしん,[n],[horse's length]
 4415,,菩提,ぼだい,[n],"[bodhi, enlightenment, happiness in the next world]"
@@ -4788,7 +4788,7 @@
 4788,1,表書き,おもてがき,[n],"[address (on envelope, etc.)]"
 4789,,後宮,こうきゅう,[n],"[inner palace (reserved for women), harem, seraglio, consort of the emperor]"
 4790,,-,カイゼル,[n],"[kaiser, emperor]"
-4791,,消長,しょうちょう,"[n, vs]","[prosperity and decay, prosperity and decline, rise and fall, ups and downs, ebb and flow, waxing and waning]"
+4791,1,消長,しょうちょう,"[n, vs]","[prosperity and decay, prosperity and decline, rise and fall, ups and downs, ebb and flow, waxing and waning]"
 4792,,所存,しょぞん,[n],"[opinion, intention, thought]"
 4793,,心筋梗塞,しんきんこうそく,[n],"[heart attack, myocardial infarction]"
 4794,1,諜報,ちょうほう,[n],"[secret information, intelligence]"
@@ -5726,7 +5726,7 @@
 5726,,言い出しっぺ,いいだしっぺ,[n],"[first person to say something, first person to suggest something, he who smelt it dealt it, the first person who claims innocence is guilty]"
 5727,,言い争い,いいあらそい,[n],"[a quarrel, argument]"
 5728,,言い逃れ,いいのがれ,[n],"[evasion, excuse, subterfuge]"
-5729,,言い値,いいね,[n],[the asking price]
+5729,1,言い値,いいね,[n],[the asking price]
 5730,,言い換え,いいかえ,"[n, vs]",[putting in other words]
 5731,,言語障害,げんごしょうがい,"[n, adj-no]","[speech impediment, speech disorder]"
 5732,,基数,きすう,[n],"[cardinal number, base, radix]"
@@ -6411,7 +6411,7 @@
 6411,,前立腺肥大症,ぜんりつせんひだいしょう,[n],[enlargement of the prostate]
 6412,,立太子,りったいし,[n],[investiture of the Crown Prince]
 6413,,立ち木,たちき,[n],"[standing tree, standing timber]"
-6414,,立会人,たちあいにん,[n],"[witness, observer]"
+6414,1,立会人,たちあいにん,[n],"[witness, observer]"
 6415,,立ち回り,たちまわり,[n],"[fight, scuffle, walking about, walking around, conducting oneself, stroll (in Noh, an action piece involving circling the stage)]"
 6416,,立身出世,りっしんしゅっせ,"[n, vs]",[success in life]
 6417,,立ち見,たちみ,"[n, vs]","[standing watching a performance, standing and looking at something]"
@@ -6888,7 +6888,7 @@ five"
 -----------
 -----------
 six"
-6870,,七,チー,,"_
+6870,1,七,チー,,"_
 -----------
 -----------
 seven"
@@ -7338,7 +7338,7 @@ elder brother
 pronoun or suffix used in reference to an older brother figure (familiar language, male term or language)
 Mister (familiar language, male term or language)
 Mr (familiar language, male term or language)"
-6953,,兄,にい,,"_
+6953,1,兄,にい,,"_
 -----------
 -----------
 used after the name of someone who is an older brother figure (familiar language)
@@ -8086,7 +8086,7 @@ building"
 -----------
 -----------
 inn (archaism)"
-7085,,性,さが,,"_
+7085,1,性,さが,,"_
 -----------
 -----------
 one's nature
@@ -10053,7 +10053,7 @@ able-to-seat (of a chair, etc.) ()"
 -----------
 -----------
 to be defeated"
-7433,,竿,かん,,"_
+7433,1,竿,かん,,"_
 -----------
 -----------
 counter for poles, rods, etc."
@@ -12082,7 +12082,7 @@ somebody else's problem"
 -----------
 -----------
 New Year's Day sunrise"
-7798,,太師,たいし,,"_
+7798,1,太師,たいし,,"_
 -----------
 -----------
 Senior Grand Tutor (senior-most of the top three civil positions of the Zhou Dynasty)
