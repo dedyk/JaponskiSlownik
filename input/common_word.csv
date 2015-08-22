@@ -635,7 +635,7 @@
 635,1,河童,かっぱ,[n],"[kappa, mythical water-dwelling creature, excellent swimmer, cucumber, rolled sushi containing a stick of cucumber]"
 636,1,河童,かわわっぱ,[n],"[kappa, mythical water-dwelling creature]"
 637,,火の気,ひのけ,[n],"[heat of fire, trace of fire]"
-638,,火の玉,ひのたま,[n],"[fireball, ball of fire, will-o'-the-wisp, jack-o'-lantern]"
+638,1,火の玉,ひのたま,[n],"[fireball, ball of fire, will-o'-the-wisp, jack-o'-lantern]"
 639,,火の車,ひのくるま,"[exp, n]","[fiery chariot (which carries the souls of sinners into hell), desperate financial situation, dire straits]"
 640,,火の手,ひのて,[n],"[flames, blaze, fire]"
 641,1,火の粉,ひのこ,[n],[sparks]
@@ -769,7 +769,7 @@
 769,1,楽劇,がくげき,[n],"[musical play, opera]"
 770,,楽勝,らくしょう,"[n, vs, adj-no]",[easy victory]
 771,,楽天,らくてん,[n],[optimism]
-772,,額面割れ,がくめんわれ,[n],[drop below par]
+772,1,額面割れ,がくめんわれ,[n],[drop below par]
 773,1,懸かり,かかり,[n],"[starting, engaging, expenses, costs, attack (esp. a corner approach in the game of go), barb]"
 774,1,樫,かし,[n],[evergreen oak]
 775,,割り振り,わりふり,[n],"[assignment, allotment, quota, rationing, apportionment, allocation (risk, resources, etc.)]"
@@ -1309,7 +1309,7 @@
 1309,,五月晴れ,さつきばれ,[n],[early-summer fine weather (during rainy season)]
 1310,,五人組,ごにんぐみ,[n],"[five-family unit, five-man group, quintet]"
 1311,,五線,ごせん,[n],"[staff, stave]"
-1312,,五線譜,ごせんふ,[n],[staff notation]
+1312,1,五線譜,ごせんふ,[n],[staff notation]
 1313,1,五體,ごたい,[],[the five styles in Japanese calligraphy]
 1314,1,五分五分,ごぶごぶ,"[n, adj-no]","[as likely as not, 50-50, even match, tie]"
 1315,,五目,ごもく,[n],"[mixture of ingredients (originally five), mixture of minced vegetables, fish, and meat, mixed in a starch (rice, noodles), gomoku (game), five in a row, go-bang]"
@@ -1704,7 +1704,7 @@
 1704,1,至宝,しほう,"[n, adj-no]","[most valuable asset, pride of ..., most important person]"
 1705,,視聴覚,しちょうかく,[n],"[senses of seeing and hearing, audiovisual]"
 1706,,詩形,しけい,[n],"[form of verse, verse form, poetic form]"
-1707,,試掘,しくつ,"[n, vs]","[prospecting, trial digging]"
+1707,1,試掘,しくつ,"[n, vs]","[prospecting, trial digging]"
 1708,1,試験管,しけんかん,[n],[test tube]
 1709,,試用,しよう,"[n, vs]","[trial, experimental use]"
 1710,1,資力,しりょく,[n],"[means, resources, wealth]"
@@ -1799,7 +1799,7 @@
 1799,,写植,しゃしょく,[n],[phototypesetting]
 1800,,煮干,にぼし,[n],[(small crunchy) dried sardines]
 1801,1,煮詰まる,につまる,"[v5r, vi]","[to be boiled down, to approach a conclusion (of a discussion, investigation, etc.), to come to a standstill, to reach an impasse]"
-1802,,煮込み,にこみ,[n],"[stew, hodgepodge]"
+1802,1,煮込み,にこみ,[n],"[stew, hodgepodge]"
 1803,,煮立つ,にたつ,"[v5t, vi]","[to boil, to simmer]"
 1804,,社用,しゃよう,[n],[company business]
 1805,1,謝辞,しゃじ,[n],"[thanks, apology]"
@@ -2465,7 +2465,7 @@
 2465,,全島,ぜんとう,"[n, adj-no]",[the whole island]
 2466,,全敗,ぜんぱい,"[n, vs]","[complete defeat, losing all of one's matches, finishing the tournament with no wins]"
 2467,,全幅,ぜんぷく,"[adj-no, n]","[full, wholehearted, utmost, all, every, overall width]"
-2468,,全編,ぜんぺん,[n],"[whole book (volume), complete episode]"
+2468,1,全編,ぜんぺん,[n],"[whole book (volume), complete episode]"
 2469,,全裸,ぜんら,"[n, adj-no]",[nude]
 2470,,狙い撃ち,ねらいうち,"[n, vs]","[sharpshooting, shooting, sniping]"
 2471,,狙撃,そげき,"[n, vs]","[shooting, sniping]"
@@ -2769,7 +2769,7 @@
 2769,,低周波,ていしゅうは,[n],[low frequency waves]
 2770,,低俗,ていぞく,"[adj-na, n]",[vulgar]
 2771,,低率,ていりつ,"[adj-na, n, adj-no]",[low rate]
-2772,,低廉,ていれん,"[adj-na, n]","[cheap, inexpensive]"
+2772,1,低廉,ていれん,"[adj-na, n]","[cheap, inexpensive]"
 2773,1,停止,ちょうじ,"[n, vs]","[suspension, interruption, stoppage, ban, standstill, halt, hang-up, deadlock, stalemate, abeyance, suspension of music, dance, etc. as a sign of mourning for a prominent person]"
 2774,,停船,ていせん,"[n, vs]","[stopping a ship, detention, quarantine]"
 2775,,定式,ていしき,[n],[formula]
@@ -2957,7 +2957,7 @@
 2957,,突き飛ばす,つきとばす,"[v5s, vt]",[to thrust away]
 2958,,突き付ける,つきつける,"[v1, vt]","[to thrust before, to thrust at]"
 2959,,突き落とす,つきおとす,"[v5s, vt]","[to thrust down, to push off]"
-2960,,突っ走る,つっぱしる,"[v5r, vi]","[to run swiftly, to dash, to rush, to race]"
+2960,1,突っ走る,つっぱしる,"[v5r, vi]","[to run swiftly, to dash, to rush, to race]"
 2961,,突っ立つ,つったつ,[v5t],"[to stick up (hair, etc.), to stand up abruptly, to stand in one place, doing nothing in particular, to stand around, to stand flat-footed]"
 2962,,突堤,とってい,[n],[breakwater]
 2963,,突発,とっぱつ,"[n, vs]","[outbreak, occurrence]"
@@ -3165,7 +3165,7 @@
 3165,,発券,はっけん,"[n, vs]","[issuing (a banknote, ticket, etc.)]"
 3166,,発現,はつげん,"[n, vs]","[revelation, manifestation, appearance, expression (e.g. in molecular biology - protein expression or gene expression)]"
 3167,,発情,はつじょう,"[n, vs]","[sexual excitement, capable of breeding, having the urge to breed]"
-3168,,発色,はっしょく,"[n, vs]","[coloring, colouring]"
+3168,1,発色,はっしょく,"[n, vs]","[coloring, colouring]"
 3169,,発表者,はっぴょうしゃ,[n],"[announcer, presenter, speaker, publisher]"
 3170,,髪飾り,かみかざり,[n],[hair ornaments]
 3171,1,吐かす,ぬかす,[],"[to say, to speak]"
@@ -3213,7 +3213,7 @@
 3213,,悲運,ひうん,[n],"[sad fate, tragic doom, ill fate]"
 3214,,悲報,ひほう,[n],"[sad news, news of a death, death notice]"
 3215,1,悲愴,ひそう,"[adj-na, n]","[pathetic, sad, sorrowful, grievous]"
-3216,,比する,ひする,[vs-s],[to compare]
+3216,1,比する,ひする,[vs-s],[to compare]
 3217,,疲れ果て,つかれはて,[exp],[being tired out]
 3218,,皮質,ひしつ,[n],[cortex]
 3219,,秘境,ひきょう,[n],"[unexplored region, one of the most secluded regions]"
@@ -3510,7 +3510,7 @@
 3510,,母港,ぼこう,[n],[home port]
 3511,1,母性愛,ぼせいあい,[n],[maternal love]
 3512,1,母船,ぼせん,[n],"[depot ship, mother ship]"
-3513,,簿外,ぼがい,[n],"[unaccounted, off the books]"
+3513,1,簿外,ぼがい,[n],"[unaccounted, off the books]"
 3514,,包摂,ほうせつ,"[n, vs]","[subsumption, connotation, inclusion, encompassing]"
 3515,1,報ずる,ほうずる,"[vz, vt]","[to inform, to report]"
 3516,1,抱き込む,だきこむ,"[v5m, vt]","[to hold in one's arms, to bring over a person to one's side, to involve]"
@@ -3613,7 +3613,7 @@
 3613,,妙薬,みょうやく,[n],"[wonder drug, miracle cure, elixir]"
 3614,,民業,みんぎょう,[n],[private enterprise]
 3615,1,民心,みんしん,[n],[popular sentiment]
-3616,,民生委員,みんせいいいん,[n],[district welfare officer]
+3616,1,民生委員,みんせいいいん,[n],[district welfare officer]
 3617,,民団,みんだん,[n],[foreign-settlement corporation]
 3618,,民有,みんゆう,"[n, adj-no]",[private ownership]
 3619,1,眠る,ねぶる,"[v5r, vi]","[to sleep (not necessarily lying down), to close one's eyes]"
@@ -3870,7 +3870,7 @@
 3870,1,弄る,まさぐる,"[v5r, vt]","[to touch, to tamper with, to grope about, to feel for something]"
 3871,1,浪花節,なにわぶし,[n],"[naniwabushi, var. of sung narrative popular during the Edo period]"
 3872,,漏出,ろうしゅつ,"[n, vs]","[leaking out, leak]"
-3873,,論考,ろんこう,"[n, vs]",[study (of something)]
+3873,1,論考,ろんこう,"[n, vs]",[study (of something)]
 3874,1,論証,ろんしょう,"[n, vs]","[proof, certain truth, demonstration, argumentation]"
 3875,,倭人,わじん,[n],"[Japanese person (term esp. used in ancient China, etc.)]"
 3876,1,和音,わおん,"[n, adj-no]","[chord, (Japanese) on reading, Japanese music]"
@@ -5378,7 +5378,7 @@
 5378,1,間引き,まびき,"[n, vs]","[thinning out, pruning, culling, sub-sampling (e.g. video frames, signals), infanticide]"
 5379,,間接選挙,かんせつせんきょ,[n],[indirect election]
 5380,,見当違い,けんとうちがい,"[adj-na, n]","[wrong (guess or estimate), misdirected]"
-5381,,見回り,みまわり,[n],[patrolling]
+5381,1,見回り,みまわり,[n],[patrolling]
 5382,1,見取り図,みとりず,[n],[rough sketch]
 5383,,現下,げんか,"[n, adj-no]","[the present time, current]"
 5384,,現出,げんしゅつ,"[n, vs]","[appearance, emergence]"
@@ -5387,7 +5387,7 @@
 5387,,割増賃金,わりましちんぎん,[n],[extra pay]
 5388,,調律師,ちょうりつし,[n],[piano tuner]
 5389,,忠魂,ちゅうこん,[n],"[loyalty, the loyal dead]"
-5390,,居士,こじ,[n],"[grhapati (layman; sometimes used as a posthumous suffix), private-sector scholar]"
+5390,1,居士,こじ,[n],"[grhapati (layman; sometimes used as a posthumous suffix), private-sector scholar]"
 5391,,裾野,すその,[n],"[foot of a mountain, plain at the foot of a mountain, range, spread, extent, encompassing circle]"
 5392,,湖底,こてい,"[n, adj-no]",[bottom of a lake]
 5393,,湖岸,こがん,"[n, adj-no]","[lakeshore, lakeside]"
@@ -5806,7 +5806,7 @@
 5806,,成長株,せいちょうかぶ,[n],"[growth stock, person with future promise]"
 5807,,成魚,せいぎょ,[n],[adult fish]
 5808,,成鳥,せいちょう,[n],[adult bird]
-5809,,盛り土,もりつち,[n],"[embankment (for road, railway, etc.), raising the ground level, fill]"
+5809,1,盛り土,もりつち,[n],"[embankment (for road, railway, etc.), raising the ground level, fill]"
 5810,,盛会,せいかい,[n],[successful meeting]
 5811,,盛時,せいじ,[n],"[prime of life, era of national prosperity]"
 5812,,盛期,せいき,[n],[prosperous period]
@@ -6305,7 +6305,7 @@
 6305,,聞き上手,ききじょうず,"[adj-na, n]",[good listener]
 6306,,聞き込み,ききこみ,[n],"[getting information (esp. by interviewing witnesses, etc. in a police investigation)]"
 6307,,聞き込み捜査,ききこみそうさ,[n],"[(police) legwork, house-to-house inquiry, canvassing, investigation carried out by questioning neighbours, bystanders, etc.]"
-6308,,聞き役,ききやく,[n],[listener's role]
+6308,1,聞き役,ききやく,[n],[listener's role]
 6309,,陸送,りくそう,"[n, vs]",[land transportation]
 6310,,陸続き,りくつづき,[n],"[border on, by land]"
 6311,,全盲,ぜんもう,"[n, adj-no]",[total blindness]
@@ -6825,7 +6825,7 @@
 6825,1,憲法裁判所,けんぽうさいばんしょ,[n],[constitutional court]
 6826,,国際電信電話諮問委員会,こくさいでんしんでんわしもんいいんかい,[n],"[International Telegraph and Telephone Consultative Committee, CCITT]"
 6827,,産業スパイ,さんぎょうスパイ,[n],[industrial espionage]
-6828,,出自,しゅつじ,[n],"[birthplace, descent, blood-lines, origins, one's outward self]"
+6828,1,出自,しゅつじ,[n],"[birthplace, descent, blood-lines, origins, one's outward self]"
 6829,1,水頭症,すいとうしょう,[n],[hydrocephalus]
 6830,1,青酸カリ,せいさんカリ,[n],[potassium cyanide]
 6831,1,大量殺人,たいりょうさつじん,[n],"[mass killing, mass murder, bloodbath]"
@@ -9505,7 +9505,7 @@ someone (archaism)
 unknown person (archaism)
 I (archaism)
 personal pronoun (used by samurai) (archaism)"
-7339,,何某,なにがし,,"_
+7339,1,何某,なにがし,,"_
 -----------
 -----------
 certain person (word usually written using kana alone)
@@ -9607,7 +9607,7 @@ grated vegetables, fruit, etc.
 grater (abbreviation)
 using new tools (or clothes, etc.)
 new tools (or clothes, etc.)"
-7354,,勲,くん,,"_
+7354,1,勲,くん,,"_
 -----------
 -----------
 merit (esp. order of merit)"
