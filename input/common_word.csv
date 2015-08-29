@@ -99,7 +99,7 @@
 99,,-,アンジェラス,[n],[angelus]
 100,,-,アンタイドローン,[n],[untied loan]
 101,,-,アンダーパー,[n],[under par]
-102,,-,アンチテーゼ,[n],[antithesis]
+102,1,-,アンチテーゼ,[n],[antithesis]
 103,,-,アントニム,[n],[antonym]
 104,,-,アンパーザー,[n],[unparser]
 105,,-,アンファンテリブル,[n],[enfants terribles]
@@ -401,7 +401,7 @@
 401,,一脈,いちみゃく,[n],"[(a) vein, (a) thread (of connection)]"
 402,,一睡,いっすい,"[n, vs]",[(usu. in negative sentences) (not) a wink of sleep]
 403,,一命,いちめい,[n],"[(a) life, (a) command]"
-404,,一木,いちぼく,[n],[one tree]
+404,1,一木,いちぼく,[n],[one tree]
 405,1,一目散に,いちもくさんに,[adv],"[at full speed, as fast as one's legs can carry one]"
 406,,一矢,いっし,"[n-adv, n]","[an arrow, (a) retort]"
 407,1,一役,いちやく,[n],"[an office, an important office]"
@@ -704,7 +704,7 @@
 704,,懐石料理,かいせきりょうり,[n],"[tea-ceremony dishes, traditional Japanese meal brought in courses]"
 705,1,懐刀,ふところがたな,[n],"[dagger, stiletto, confidant, right-hand man]"
 706,,懐妊,かいにん,"[n, vs]","[pregnancy, conception]"
-707,,戒名,かいみょう,[n],[posthumous Buddhist name]
+707,1,戒名,かいみょう,[n],[posthumous Buddhist name]
 708,1,革める,あらためる,"[v1, vt]","[to change, to alter, to revise, to replace, to reform, to correct, to mend, to improve, to do properly, to do formally]"
 709,1,検める,あらためる,[],"[to examine, to check, to inspect]"
 710,,改悪,かいあく,"[n, vs]","[deterioration, changing for the worse]"
@@ -844,7 +844,7 @@
 844,,丸裸,まるはだか,"[adj-na, n]","[nude, utterly stark naked, wearing only one's birthday suit]"
 845,,含ませる,ふくませる,"[v1, vt]","[to soak, to saturate, to suckle, to make one hold something in the mouth, to include, to instruct, to make one understand]"
 846,1,眼下,がんか,"[n, adj-no]","[under one's eyes, below]"
-847,,眼球,がんきゅう,"[n, adj-no]",[eyeball]
+847,1,眼球,がんきゅう,"[n, adj-no]",[eyeball]
 848,,眼光,がんこう,[n],"[glint in eye, discernment]"
 849,,眼目,がんもく,[n],"[core, point, gist, essence, main object]"
 850,,眼力,がんりき,[n],"[insight, power of observation]"
@@ -1164,7 +1164,7 @@
 1164,1,激的,げきてき,[],[extreme]
 1165,,劇評,げきひょう,[n],[drama criticism]
 1166,,打ち合う,うちあう,"[v5u, vt]","[to fight, to exchange blows, to rally]"
-1167,,撃退,げきたい,"[n, vs]","[repulse, repel (i.e. the enemy)]"
+1167,1,撃退,げきたい,"[n, vs]","[repulse, repel (i.e. the enemy)]"
 1168,,撃破,げきは,"[n, vs]",[crushing]
 1169,,激賞,げきしょう,"[n, vs]",[enthusiastic praise]
 1170,,激増,げきぞう,"[n, vs]",[sudden increase]
@@ -1316,7 +1316,7 @@
 1316,,遅れを取る,おくれをとる,"[exp, v5r]",[to fall behind]
 1317,,後記,こうき,"[n, vs, adj-no]","[postscript, under-mentioned, described below]"
 1318,,後進国,こうしんこく,[n],"[undeveloped country, third world country]"
-1319,,後生大事,ごしょうだいじ,[n],"[with religious zeal, with utmost devotion, take great care of]"
+1319,1,後生大事,ごしょうだいじ,[n],"[with religious zeal, with utmost devotion, take great care of]"
 1320,,後追い,あとおい,"[n, vs]","[trailing, chasing after, imitation, copy]"
 1321,,後年,こうねん,"[n-adv, n-t]","[future years, in (one's) later years]"
 1322,1,後半生,こうはんせい,[n],[latter half of one's life]
@@ -2360,7 +2360,7 @@
 2360,,切り替わる,きりかわる,[v5r],"[to change completely, to switch (to), to shift (to another mode)]"
 2361,,切り貼り,きりばり,"[n, vs]","[patching (up), cutting a part and pasting a new one (e.g. a shoji door), cut and paste]"
 2362,,切り倒す,きりたおす,"[v5s, vt]","[to cut down, to chop down, to fell]"
-2363,,切り売り,きりうり,[n],[selling by the piece]
+2363,1,切り売り,きりうり,[n],[selling by the piece]
 2364,,切り返し,きりかえし,[n],"[railway switchback, twisting backward knee trip]"
 2365,,切り落とす,きりおとす,"[v5s, vt]","[to cut off, to lop off, to prune]"
 2366,,切り立った,きりたった,[adj-f],"[steep, precipitous]"
@@ -2577,7 +2577,7 @@
 2577,,胎内,たいない,[n],"[interior of the womb (of a pregnant woman), interior of the uterus, interior of a Buddhistic statue]"
 2578,1,貸し倒れ,かしだおれ,[n],"[bad debt, irrecoverable debt]"
 2579,1,除ける,のける,"[v1, vt, aux-v]","[to put something out of the way, to move (something, someone) aside, to remove, to exclude, to take away, to set aside, to keep apart, to remove (someone) from the group, to shun, to do well despite difficulties, to accomplish despite adversity, to do resolutely, to do boldly]"
-2580,,退化,たいか,"[n, vs]","[degeneration, retrogression]"
+2580,1,退化,たいか,"[n, vs]","[degeneration, retrogression]"
 2581,1,退会,たいかい,"[n, vs]","[withdrawal from a group, resignation, secession, unsubscribing (mailing list, etc.)]"
 2582,1,退散,たいさん,"[n, vs]","[dispersing, breaking up, running away]"
 2583,,代案,だいあん,[n],[alternate plan]
@@ -2709,7 +2709,7 @@
 2709,,町家,まちや,[n],"[townhouse (i.e. house in the middle of a town), traditional townhouse, tradesman's house (esp. a home with a shop in front), merchant's house, merchant's family]"
 2710,,町会,ちょうかい,[n],[town council]
 2711,,聴聞会,ちょうもんかい,[n],[hearing]
-2712,,調合,ちょうごう,"[n, vs]","[mixing, compounding, dispensing (e.g. prescription)]"
+2712,1,調合,ちょうごう,"[n, vs]","[mixing, compounding, dispensing (e.g. prescription)]"
 2713,,調製,ちょうせい,"[n, vs]","[manufacture, preparation, execution (an order)]"
 2714,,調度,ちょうど,"[n, vs]","[supplies, furniture, fixtures]"
 2715,,調律,ちょうりつ,"[n, vs]",[tuning (musical)]
@@ -2855,7 +2855,7 @@
 2855,,土俗,どぞく,[n],[local customs]
 2856,,土着,どちゃく,"[n, adj-no]","[aboriginal, indigenous]"
 2857,,土鍋,どなべ,[n],[earthenware pot]
-2858,,土嚢,どのう,[n],[sandbag]
+2858,1,土嚢,どのう,[n],[sandbag]
 2859,,土用,どよう,[n],"[midsummer, dog days]"
 2860,1,奴,しゃつ,[],"[(derogatory or familiar) he, she, him, her]"
 2861,1,斃す,たおす,[],"[to kill, to defeat, to beat]"
@@ -3329,7 +3329,7 @@
 3329,,付け届け,つけとどけ,[n],"[gift, present, tip, bribe]"
 3330,1,付け入る,つけいる,[v5r],"[to take advantage of, to impose on]"
 3331,,付言,ふげん,"[n, vs]","[saying in addition, postscript, additional remarks]"
-3332,,付則,ふそく,[n],"[additional rules, by-laws, supplementary provisions, additional clauses]"
+3332,1,付則,ふそく,[n],"[additional rules, by-laws, supplementary provisions, additional clauses]"
 3333,,付託,ふたく,"[n, vs]","[committal, reference, submission (e.g. to committee), commitment]"
 3334,,埠頭,ふとう,[n],"[pier, wharf, quay, dock]"
 3335,,夫君,ふくん,[n],[someone else's husband]
@@ -3521,7 +3521,7 @@
 3521,,放蕩,ほうとう,"[n, vs, adj-na]","[dissipation, prodigality, debauchery]"
 3522,,放熱,ほうねつ,"[n, vs, adj-no]",[radiation]
 3523,,放免,ほうめん,"[n, vs]","[release (from custody), discharge, liberation, setting free, letting go, letting off, acquittal]"
-3524,,方便,ほうべん,[n],"[expedient, means, instrument, upaya (skillful means, methods of teaching)]"
+3524,1,方便,ほうべん,[n],"[expedient, means, instrument, upaya (skillful means, methods of teaching)]"
 3525,1,朋友,ほうゆう,[n],"[friend, companion]"
 3526,,法治,ほうち,"[n, adj-no]",[constitutional government]
 3527,,泡盛,あわもり,[n],"[awamori, strong Okinawan liquor distilled from rice or millet]"
@@ -4027,7 +4027,7 @@
 4027,,副官,ふくかん,[n],"[adjutant, aide, aide-de-camp]"
 4028,1,文書,もんじょ,[n],"[document, writing, letter, paperwork, note, records, archives, document addressed to someone in particular (jargon used in paleography)]"
 4029,1,抱く,うだく,"[v5k, vt]","[to embrace, to hold in the arms (e.g. a baby), to hug]"
-4030,,末弟,ばってい,[n],"[youngest brother, last disciple]"
+4030,1,末弟,ばってい,[n],"[youngest brother, last disciple]"
 4031,1,末路,まつろ,[n],"[last days, the end, one's fate]"
 4032,,末裔,まつえい,[n],[descendants]
 4033,1,万,よろず,"[num, n, adj-no, n-adv]","[10,000, ten thousand, myriad, everything, all, various]"
@@ -4412,7 +4412,7 @@
 4412,1,網目,あみめ,[n],"[mesh (of net), halftone]"
 4413,,番狂わせ,ばんくるわせ,[n],"[unexpected result, upset, surprise]"
 4414,,馬身,ばしん,[n],[horse's length]
-4415,,菩提,ぼだい,[n],"[bodhi, enlightenment, happiness in the next world]"
+4415,1,菩提,ぼだい,[n],"[bodhi, enlightenment, happiness in the next world]"
 4416,,木刀,ぼくとう,[n],[wooden sword]
 4417,,棒高跳び,ぼうたかとび,[n],[pole vault (jump)]
 4418,,棒読み,ぼうよみ,"[n, vs]","[reading in a monotone, reading a Chinese classical text without translating it into Japanese]"
@@ -4827,7 +4827,7 @@
 4827,1,白壁,はくへき,[n],[white plaster wall]
 4828,,風邪気,かぜけ,[n],[slight cold]
 4829,,流し台,ながしだい,[n],"[sink, washstand]"
-4830,,食料品店,しょくりょうひんてん,[n],"[grocer, grocery store]"
+4830,1,食料品店,しょくりょうひんてん,[n],"[grocer, grocery store]"
 4831,,字書,じしょ,[n],[(character) dictionary]
 4832,,環状線,かんじょうせん,[n],"[loop line, (transportation) belt line]"
 4833,,源平,げんぺい,[n],"[Genji and Heike clans, two opposing sides]"
@@ -5676,7 +5676,7 @@
 5676,1,名品,めいひん,[n],"[fine product, masterpiece]"
 5677,,名将,めいしょう,[n],[great or famous commander]
 5678,1,名馬,めいば,[n],[fine or famous horse]
-5679,,名訳,めいやく,[n],[superlative translation]
+5679,1,名訳,めいやく,[n],[superlative translation]
 5680,,名跡,めいせき,[n],"[famous historic spot, family name, professional name]"
 5681,,名歌,めいか,[n],[excellent or famous poem]
 5682,1,民具,みんぐ,[n],[everyday articles which have come to be regarded as folk art]
@@ -6196,7 +6196,7 @@
 6196,,逃げ場,にげば,[n],"[refuge, escape]"
 6197,,逃避行,とうひこう,[n],"[flight, elopement]"
 6198,,跳ね上がり,はねあがり,[n],"[jumping, jump (e.g. in prices), rashness, rash person]"
-6199,,高年,こうねん,[n],[old age]
+6199,1,高年,こうねん,[n],[old age]
 6200,,高利,こうり,[n],[high interest rate]
 6201,,高飛び込み,たかとびこみ,[n],[the high dive]
 6202,,高点,こうてん,[n],[high score]
@@ -7138,7 +7138,7 @@ new growth (of a tree) (archaism)"
 your home (honorific or respectful (sonkeigo) language)
 your residence (honorific or respectful (sonkeigo) language)
 you (referring to one's equal; epistolary style) (honorific or respectful (sonkeigo) language)"
-6918,,御飯,おんいい,,"_
+6918,1,御飯,おんいい,,"_
 -----------
 -----------
 steamed rice as an offering to a god (honorific or respectful (sonkeigo) language, obscure term)"
@@ -11598,7 +11598,7 @@ frame sections of the door or window that provide most of its structural integri
 -----------
 the rear of an old-fashioned Japanese hearth from which smoke was exhausted
 (in Kyoto dialect) the hearth itself"
-7710,,婦,ふ,,"_
+7710,1,婦,ふ,,"_
 -----------
 -----------
 married woman
@@ -12455,7 +12455,7 @@ flicker of light"
 -----------
 mercifulness
 compassion"
-7865,,保安,ほうあん,,"_
+7865,1,保安,ほうあん,,"_
 -----------
 -----------
 Houan era (1120.4.10-1124.4.3)
