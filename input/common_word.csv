@@ -707,7 +707,7 @@
 707,1,戒名,かいみょう,[n],[posthumous Buddhist name]
 708,1,革める,あらためる,"[v1, vt]","[to change, to alter, to revise, to replace, to reform, to correct, to mend, to improve, to do properly, to do formally]"
 709,1,検める,あらためる,[],"[to examine, to check, to inspect]"
-710,,改悪,かいあく,"[n, vs]","[deterioration, changing for the worse]"
+710,1,改悪,かいあく,"[n, vs]","[deterioration, changing for the worse]"
 711,,改称,かいしょう,"[n, vs]","[renaming, retitling]"
 712,,改題,かいだい,"[n, vs]",[changing a title]
 713,1,改廃,かいはい,"[n, vs]","[change, reorganization, reorganisation]"
@@ -855,7 +855,7 @@
 855,1,願い出る,ねがいでる,"[v1, vt]",[to apply for]
 856,,企て,くわだて,[n],"[plan, attempt, undertaking]"
 857,,危なっかしい,あぶなっかしい,[adj-i],"[dangerous, critical, grave, uncertain, unreliable, dodgy, limping, narrow, close, watch out]"
-858,,器量,きりょう,[n],"[looks, features, personal beauty, ability, talent, calibre, caliber, capability, capacity, dignity, credit, estimation]"
+858,1,器量,きりょう,[n],"[looks, features, personal beauty, ability, talent, calibre, caliber, capability, capacity, dignity, credit, estimation]"
 859,,基底,きてい,"[n, adj-no]","[base, ground]"
 860,,基点,きてん,"[n, adj-no]","[datum point, cardinal point, reference point, origin]"
 861,,基板,きばん,[n],"[substrate, (computer) circuit board]"
@@ -942,7 +942,7 @@
 942,,急襲,きゅうしゅう,"[n, vs]","[raid, assault, descent]"
 943,,急場,きゅうば,[n],[emergency]
 944,,急造,きゅうぞう,"[n, vs, adj-no]",[hurried construction]
-945,,急転直下,きゅうてんちょっか,"[n, vs]","[suddenly and precipitately, take a sudden turn]"
+945,1,急転直下,きゅうてんちょっか,"[n, vs]","[suddenly and precipitately, take a sudden turn]"
 946,,救護,きゅうご,"[n, vs]","[relief, aid]"
 947,,救世,きゅうせい,[n],[salvation]
 948,,救難,きゅうなん,[n],"[rescue, salvage]"
@@ -954,7 +954,7 @@
 954,1,泣き所,なきどころ,[n],"[weak point, vulnerable point, Achilles' heel]"
 955,,泣き崩れる,なきくずれる,"[v1, vi]",[to break down crying]
 956,,泣寝入り,なきねいり,"[n, vs]","[crying oneself to sleep, giving up in frustration, accepting meekly, being compelled to accept a situation]"
-957,,球形,きゅうけい,"[n, adj-no]",[globular or spherical shape]
+957,1,球形,きゅうけい,"[n, adj-no]",[globular or spherical shape]
 958,,球根,きゅうこん,"[n, adj-no]",[(plant) bulb]
 959,,球状,きゅうじょう,"[n, adj-no]","[shape of a globe, globe shape, spherical]"
 960,1,球審,きゅうしん,[n],[baseball chief umpire]
@@ -1029,7 +1029,7 @@
 1029,,局所,きょくしょ,"[n, adj-no]","[section, local, local anesthesia, localized, topical]"
 1030,,局部,きょくぶ,"[n, adj-no]","[part, section, affected region, genitals, private parts]"
 1031,1,枉げる,まげる,[],"[to bend (the truth), to distort, to twist, to pervert, to yield (a point), to depart (from a principle), to ignore (what one really thinks), to pawn]"
-1032,,曲面,きょくめん,[n],[curved surface]
+1032,1,曲面,きょくめん,[n],[curved surface]
 1033,1,極く,ごく,[adv],"[quite, very]"
 1034,,極悪,ごくあく,"[adj-na, n, adj-no]",[heinous]
 1035,1,極意,ごくい,[n],"[deepest level (of an art, skill, etc.), secret teachings, mysteries, innermost secrets, the secret (of success, etc.)]"
@@ -1168,7 +1168,7 @@
 1168,,撃破,げきは,"[n, vs]",[crushing]
 1169,,激賞,げきしょう,"[n, vs]",[enthusiastic praise]
 1170,,激増,げきぞう,"[n, vs]",[sudden increase]
-1171,,激闘,げきとう,"[n, vs]",[fierce fighting]
+1171,1,激闘,げきとう,"[n, vs]",[fierce fighting]
 1172,1,激烈,げきれつ,"[n, adj-na]","[violence, vehemence, fury, fervour, fervor, severity, fierceness, keenness]"
 1173,1,隙,すきけ,[n],"[gap, space]"
 1174,,欠勤,けっきん,"[n, vs]",[absence (from work)]
@@ -1275,7 +1275,7 @@
 1275,,減食,げんしょく,"[n, vs]","[diet (for weight loss), dieting]"
 1276,,減衰,げんすい,"[n, vs]","[attenuation, damping, decay]"
 1277,,減配,げんぱい,"[n, vs]","[reduction in a dividend, smaller ration]"
-1278,,現業,げんぎょう,[n],"[on-site work, work-site operations]"
+1278,1,現業,げんぎょう,[n],"[on-site work, work-site operations]"
 1279,,現世,げんせい,"[n, adj-no]","[present world, present age, transient world, life, recent epoch (i.e. the Holocene epoch)]"
 1280,,現世,げんせ,"[n, adj-no]","[present world, present age, transient world, life]"
 1281,,言い張る,いいはる,"[v5r, vt]","[to insist, to assert, to be obstinate in saying]"
@@ -1771,7 +1771,7 @@
 1771,,失火,しっか,"[n, vs]","[accidental fire, fire caused by negligence, misfire, failure to ignite]"
 1772,,失業保険,しつぎょうほけん,[n],[unemployment insurance]
 1773,,失禁,しっきん,"[n, vs, adj-no]",[incontinence]
-1774,,失言,しつげん,"[n, vs]","[verbal gaffe, verbal slip, slip of the tongue, using improper words]"
+1774,1,失言,しつげん,"[n, vs]","[verbal gaffe, verbal slip, slip of the tongue, using improper words]"
 1775,,失語症,しつごしょう,[n],[aphasia (loss of speech)]
 1776,,失効,しっこう,"[n, vs]","[lapse, abatement, invalidation]"
 1777,,失笑,しっしょう,"[n, vs]","[laughing at an inappropriate time, not being able to hold back one's laughter, scornful laughter, snicker, snigger]"
@@ -2688,7 +2688,7 @@
 2688,1,中幕,なかまく,[n],[middle act]
 2689,1,中葉,ちゅうよう,"[n-adv, n-t]",[about the middle (of an era)]
 2690,1,中値,なかね,[n],[medium or average price]
-2691,,仲立ち,なかだち,"[n, vs]","[mediation, agency, agent, mediator, middleman, go-between]"
+2691,1,仲立ち,なかだち,"[n, vs]","[mediation, agency, agent, mediator, middleman, go-between]"
 2692,,忠孝,ちゅうこう,[n],[loyalty and filial piety]
 2693,1,午,ひる,"[n-adv, n-t]","[noon, midday]"
 2694,,虫垂炎,ちゅうすいえん,[n],[appendicitis]
@@ -2793,7 +2793,7 @@
 2793,,敵役,かたきやく,[n],"[role of the villain, the bad guy]"
 2794,1,笛吹,ふえふき,[n],[flute player]
 2795,,適材適所,てきざいてきしょ,"[exp, n]",[the right person in the right place]
-2796,,適任,てきにん,"[adj-na, adj-no]","[competent, suitable, qualified]"
+2796,1,適任,てきにん,"[adj-na, adj-no]","[competent, suitable, qualified]"
 2797,,鉄則,てっそく,[n],"[ironclad regulation, inviolable rule]"
 2798,,鉄分,てつぶん,[n],[iron (content)]
 2799,1,天下一品,てんかいっぴん,[n],"[best article under heaven, peerless]"
@@ -2999,7 +2999,7 @@
 2999,1,南中,なんちゅう,"[n, vs]",[crossing the meridian]
 3000,,南半球,みなみはんきゅう,[n],[southern hemisphere]
 3001,,南風,なんぷう,[n],"[south wind, southerly wind, summer]"
-3002,,南北戦争,なんぼくせんそう,[n],[(US) Civil War]
+3002,1,南北戦争,なんぼくせんそう,[n],[(US) Civil War]
 3003,,南洋,なんよう,[n],[South Seas]
 3004,,軟派,なんぱ,"[n, vs]","[seducer, smooth talker, ladies' man, playboy, playgirl, picking up women (on the street), moderate party, moderate, social story (in a newspaper, etc.), society columnist (of a newspaper), bearish trader, bear]"
 3005,,難産,なんざん,"[n, vs]","[difficult delivery, difficult childbirth, dystocia]"
@@ -3260,7 +3260,7 @@
 3260,,百家争鳴,ひゃっかそうめい,[n],[Let a hundred schools of thought contend]
 3261,,百科,ひゃっか,[n],"[many objects (for study), encyclopedia, encyclopaedia]"
 3262,,百科全書,ひゃっかぜんしょ,[n],"[encyclopedia, Diderot's ""Encyclopedie universelle des arts et sciences""]"
-3263,,百害,ひゃくがい,[n],[great damage]
+3263,1,百害,ひゃくがい,[n],[great damage]
 3264,1,百景,ひゃっけい,[n],[100 famous views]
 3265,1,百人一首,ひゃくにんいっしゅ,[n],"[100 poems by 100 famous poets, (playing) cards of one hundred famous poems]"
 3266,,百聞,ひゃくぶん,[n],[hearing a hundred times]
@@ -3711,7 +3711,7 @@
 3711,,遊郭,ゆうかく,[n],[red light district]
 3712,,遊女,ゆうじょ,[n],"[prostitute, harlot]"
 3713,,遊離,ゆうり,"[n, vs, adj-no]","[separation, isolation, release (e.g. of a chemical)]"
-3714,,郵便為替,ゆうびんかわせ,[n],[postal money order]
+3714,1,郵便為替,ゆうびんかわせ,[n],[postal money order]
 3715,,融雪,ゆうせつ,[n],"[melted snow, melting of snow]"
 3716,,予見,よけん,"[n, vs]","[foresight, foreknowledge, divination]"
 3717,,予行,よこう,"[n, vs]",[rehearsal]
@@ -3997,7 +3997,7 @@
 3997,,伐り出す,きりだす,"[v5s, vt]","[to quarry, to cut (timber), to cut and carry off, to select and extract (from a media file), to splice out]"
 3998,,鑽り出す,きりだす,[],"[to start a fire (with flint, by rubbing sticks together, etc.)]"
 3999,,川面,かわづら,[n],"[river surface, surface of a river]"
-4000,,船底,せんてい,[n],"[ship's bottom, bilge]"
+4000,1,船底,せんてい,[n],"[ship's bottom, bilge]"
 4001,,前足,まえあし,[n],"[forefoot, forefeet, foreleg, forelimb]"
 4002,,前歯,ぜんし,[n],[front tooth]
 4003,,前輪,まえわ,[n],"[front wheel, saddle fork]"
@@ -4683,7 +4683,7 @@
 4683,,猛追,もうつい,"[n, vs]","[hot chase (pursuit), hectic chase]"
 4684,,無医村,むいそん,[n],[village lacking a doctor]
 4685,,無事故,むじこ,"[adj-na, n]",[without accident]
-4686,,長柄,ながえ,[n],"[long handle, long-handled spear, long shaft]"
+4686,1,長柄,ながえ,[n],"[long handle, long-handled spear, long shaft]"
 4687,1,流れ作業,ながれさぎょう,[n],[assembly-line system]
 4688,,流し網,ながしあみ,[n],[drift net]
 4689,,生水,なまみず,[n],[unboiled water]
@@ -4699,7 +4699,7 @@
 4699,1,苦り切る,にがりきる,"[v5r, vi]",[to look sour (disgusted)]
 4700,,肉離れ,にくばなれ,"[n, vs]",[pulled or torn muscle]
 4701,,日参,にっさん,"[n, vs]","[daily visit (of worship), frequent visit]"
-4702,,日章旗,にっしょうき,[n],[the Japanese (rising sun) flag]
+4702,1,日章旗,にっしょうき,[n],[the Japanese (rising sun) flag]
 4703,1,野菊,のぎく,[n],"[wild chrysanthemum, aster]"
 4704,,農具,のうぐ,[n],"[farming implement, farm tools]"
 4705,,農繁期,のうはんき,[n],[busy farming season]
@@ -5267,7 +5267,7 @@
 5267,1,書き手,かきて,[n],"[writer, calligrapher]"
 5268,,書林,しょりん,[n],"[vast stock of books, bookstore, bookshop]"
 5269,1,書き残す,かきのこす,"[v5s, vt]","[to leave a note or document behind, to leave half-written, to leave out]"
-5270,,書類送検,しょるいそうけん,"[n, vs]","[sending documents to a prosecutor, filing charges]"
+5270,1,書類送検,しょるいそうけん,"[n, vs]","[sending documents to a prosecutor, filing charges]"
 5271,,土俵入り,どひょういり,[n],[entrance procession of wrestlers into the ring]
 5272,1,土製,どせい,[n],"[clay, earthen]"
 5273,,土質,どしつ,[n],"[soil, soil quality]"
@@ -5506,7 +5506,7 @@
 5506,,年余,ねんよ,[n],[more than a year]
 5507,,秘策,ひさく,[n],[secret plan or measures]
 5508,,密生,みっせい,"[n, vs, adj-no]",[thick or dense growth]
-5509,,密葬,みっそう,"[n, vs]","[private funeral, secret burial]"
+5509,1,密葬,みっそう,"[n, vs]","[private funeral, secret burial]"
 5510,1,密漁,みつりょう,"[n, vs]",[poaching (fish or seafood)]
 5511,,密談,みつだん,"[n, vs]",[private or confidential or secret talk]
 5512,1,密輸入,みつゆにゅう,"[n, vs]",[smuggling in]
@@ -6239,7 +6239,7 @@
 6239,,藍綬褒章,らんじゅほうしょう,[n],[Medal with Blue Ribbon]
 6240,,接ぎ木,つぎき,"[n, vs]",[grafting]
 6241,,接岸,せつがん,"[n, vs]",[coming alongside a pier or quay]
-6242,,監察官,かんさつかん,[n],"[inspector, supervisor]"
+6242,1,監察官,かんさつかん,[n],"[inspector, supervisor]"
 6243,,臨書,りんしょ,"[n, vs]",[writing (from a copy)]
 6244,,臨戦,りんせん,[n],[preparing for action or battle]
 6245,1,屋形船,やかたぶね,[n],"[houseboat, pleasure boat (large, roofed)]"
@@ -8244,7 +8244,7 @@ nature (of person)"
 -----------
 visitor from afar
 guest"
-7113,,稀人,まれびと,,"_
+7113,1,稀人,まれびと,,"_
 -----------
 -----------
 visitor from afar
