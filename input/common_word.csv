@@ -82,7 +82,7 @@
 82,,-,アラー,[n],[Allah]
 83,,-,アラウンド,[n],[around]
 84,,-,アリストクラシー,[n],[aristocracy]
-85,,-,アルカイズム,[n],[archaism]
+85,1,-,アルカイズム,[n],[archaism]
 86,,-,アルコーブ,[n],[alcove]
 87,1,-,アルゴリズミック,"[adj-na, n]",[algorithmic]
 88,,-,アルバトロス,[n],[albatross]
@@ -581,7 +581,7 @@
 581,,下取り,したどり,"[n, vs]","[trade in, part exchange]"
 582,,下準備,したじゅんび,[n],"[preliminary arrangements, spade work]"
 583,1,下心,したごころ,[n],"[secret intention, ulterior motive, kanji ""heart"" radical at bottom]"
-584,,下請け業者,したうけぎょうしゃ,[n],[subcontractor]
+584,1,下請け業者,したうけぎょうしゃ,[n],[subcontractor]
 585,,下積み,したづみ,[n],"[lowest social strata, goods piled beneath]"
 586,,下層,かそう,"[n, adj-no]",[lower strata (classes)]
 587,,下草,したくさ,[n],"[undergrowth, weeds beneath a tree]"
@@ -716,7 +716,7 @@
 716,1,海港,かいこう,[n],"[port, seaport]"
 717,,海事,かいじ,"[n, adj-no]",[maritime affairs]
 718,,海女,あま,[n],"[ama, female diver (who collects shells, seaweed, etc.)]"
-719,,海草,かいそう,[n],"[marine plant, seagrass, seaweed]"
+719,1,海草,かいそう,[n],"[marine plant, seagrass, seaweed]"
 720,,海兵,かいへい,[n],"[sailor, marine]"
 721,1,皆殺し,みなごろし,[n],"[massacre, annihilation, wholesale slaughter]"
 722,,絵柄,えがら,[n],"[pattern, design]"
@@ -1133,7 +1133,7 @@
 1133,1,貌,かたち,[],[visage]
 1134,,形作る,かたちづくる,"[v5r, vi]","[to form, to shape, to make, to mold, to mould, to build up]"
 1135,,形象,けいしょう,[n],"[shape, figure, image]"
-1136,,形相,ぎょうそう,[n],"[look (esp. an angry or upset look), expression]"
+1136,1,形相,ぎょうそう,[n],"[look (esp. an angry or upset look), expression]"
 1137,1,携行,けいこう,"[n, vs]",[carrying]
 1138,,敬愛,けいあい,"[n, vs]",[respect and affection]
 1139,,敬礼,けいれい,"[n, vs]","[salute, bow]"
@@ -1887,7 +1887,7 @@
 1887,1,宗主国,そうしゅこく,[n],"[suzerain state, state that controls another in international affairs, but allows it domestic sovereignty]"
 1888,1,即く,つく,[v5k],"[to ascend (the throne), to accede]"
 1889,,就役,しゅうえき,"[n, vs]","[placed in commission, entering servitude]"
-1890,,修験道,しゅげんどう,[n],"[Shugendou, Japanese mountain asceticism-shamanism incorporating Shinto and Buddhist concepts]"
+1890,1,修験道,しゅげんどう,[n],"[Shugendou, Japanese mountain asceticism-shamanism incorporating Shinto and Buddhist concepts]"
 1891,,修辞,しゅうじ,[n],"[figure of speech, rhetorical flourish]"
 1892,,修身,しゅうしん,[n],"[morals, ethics, moral training]"
 1893,,修整,しゅうせい,"[n, vs]","[adjustment, retouching (in photography)]"
@@ -2481,7 +2481,7 @@
 2481,,僧籍,そうせき,[n],[priesthood]
 2482,1,僧堂,そうどう,[n],[temple meditation hall or certain other temple structures]
 2483,,創建,そうけん,"[n, vs]","[establishment, foundation]"
-2484,,創世,そうせい,[n],[creation of world]
+2484,1,創世,そうせい,[n],[creation of world]
 2485,,双頭,そうとう,[n],[double-headed]
 2486,,双発,そうはつ,"[n, adj-no]",[two-motored]
 2487,,叢書,そうしょ,[n],"[series (of publications), library (of literature)]"
@@ -2749,7 +2749,7 @@
 2749,1,追善,ついぜん,"[n, vs]","[mass for the dead, Buddhist service held on the anniversary of someone's death]"
 2750,,追想,ついそう,"[n, vs]","[recollection, reminiscence]"
 2751,1,追認,ついにん,"[n, vs]","[ratification, confirmation]"
-2752,,痛快,つうかい,"[adj-na, n]","[intense pleasure, thrilling]"
+2752,1,痛快,つうかい,"[adj-na, n]","[intense pleasure, thrilling]"
 2753,,通りすがり,とおりすがり,"[n, adj-no]","[on the way, passing, that happen to pass by]"
 2754,,通り越す,とおりこす,"[v5s, vi]","[to go past (a place or thing), to go beyond]"
 2755,,通り道,とおりみち,[n],"[passage, path, route, one's way]"
@@ -3190,7 +3190,7 @@
 3190,1,反り,そり,[n],"[warp, curvature, curve, arch]"
 3191,,反攻,はんこう,"[n, vs]",[counteroffensive]
 3192,1,反射鏡,はんしゃきょう,[n],[reflector]
-3193,,反騰,はんとう,"[n, vs]",[reactionary price rise]
+3193,1,反騰,はんとう,"[n, vs]",[reactionary price rise]
 3194,,反比例,はんぴれい,"[n, vs]",[inverse proportion]
 3195,1,反面教師,はんめんきょうし,[n],"[bad example from which one can learn, good example of what not to do (esp. how not to behave), negative example]"
 3196,1,反目,はんもく,"[n, vs]","[enmity, antagonism, hostility]"
@@ -3299,7 +3299,7 @@
 3299,1,不純物,ふじゅんぶつ,[n],"[foreign matter, impurities]"
 3300,,不審火,ふしんび,[n],"[fire under suspicious circumstances, arson]"
 3301,,不心得,ふこころえ,"[adj-na, n]","[indiscretion, imprudence]"
-3302,,不世出,ふせいしゅつ,[n],"[rare, extraordinary, unparalleled, unparallelled]"
+3302,1,不世出,ふせいしゅつ,[n],"[rare, extraordinary, unparalleled, unparallelled]"
 3303,,不成功,ふせいこう,"[adj-na, n, adj-no]","[failure, abortive (attempt, action)]"
 3304,,不正確,ふせいかく,"[adj-na, n]","[uncertainty, inaccuracy]"
 3305,,不戦勝,ふせんしょう,[n],"[win without playing, unearned win]"
@@ -3425,7 +3425,7 @@
 3425,1,兵団,へいだん,[n],[army corps]
 3426,,兵法,へいほう,[n],"[art of war, strategy, tactics]"
 3427,1,平易,へいい,"[adj-na, n]","[easy, simple, plain]"
-3428,,平価,へいか,[n],"[normal prices, par, parity]"
+3428,1,平価,へいか,[n],"[normal prices, par, parity]"
 3429,,平家物語,へいけものがたり,[n],[Tale of the Heike]
 3430,,平行棒,へいこうぼう,[n],[parallel bars]
 3431,,平謝り,ひらあやまり,[n],[earnest apology]
@@ -4623,7 +4623,7 @@
 4623,,土中,どちゅう,[n],"[(in the) earth, underground]"
 4624,,支那,しな,[n],[China]
 4625,,五重奏,ごじゅうそう,[n],[instrumental quintet]
-4626,,無私,むし,"[adj-na, n, adj-no]","[selflessness, unselfish]"
+4626,1,無私,むし,"[adj-na, n, adj-no]","[selflessness, unselfish]"
 4627,,滅私,めっし,[n],"[selflessness, being unselfish]"
 4628,,強襲,きょうしゅう,"[n, vs]","[assault, violent attack]"
 4629,,寮費,りょうひ,[n],[boarding-expenses]
@@ -4915,7 +4915,7 @@
 4915,1,刷り,すり,[n],[printing]
 4916,1,三度,みたび,"[n, adv]","[three times, thrice, several times, often, frequently]"
 4917,,思い知らせる,おもいしらせる,"[v1, vt]","[to teach somebody a lesson, to have a revenge on, to get even with, to make someone realize, to make someone realise]"
-4918,,指導要領,しどうようりょう,[n],"[government-approved curriculums, (educational) guidelines]"
+4918,1,指導要領,しどうようりょう,[n],"[government-approved curriculums, (educational) guidelines]"
 4919,,死傷,ししょう,"[n, vs]","[casualties, injuries and deaths]"
 4920,,自家用車,じかようしゃ,[n],[private automobile]
 4921,,失投,しっとう,"[n, vs]",[careless pitch]
@@ -5540,7 +5540,7 @@
 5540,,適性検査,てきせいけんさ,[n],[aptitude test]
 5541,1,敵地,てきち,[n],"[enemy territory, hostile place]"
 5542,1,敵性,てきせい,[n],[inimical character]
-5543,,敵陣,てきじん,[n],[enemy camp or line]
+5543,1,敵陣,てきじん,[n],[enemy camp or line]
 5544,,敵機,てっき,[n],[enemy plane]
 5545,,正木,まさき,[n],[Japanese spindletree (Euonymus japonicus)]
 5546,,政治結社,せいじけっしゃ,[n],"[a political organization, a political organisation]"
@@ -5749,7 +5749,7 @@
 5749,,歴程,れきてい,[n],[a route or passage]
 5750,,霊泉,れいせん,[n],[miraculous spring or fountain]
 5751,,霊場,れいじょう,[n],[sacred ground]
-5752,,低姿勢,ていしせい,[n],[(keeping a) low profile]
+5752,1,低姿勢,ていしせい,[n],[(keeping a) low profile]
 5753,1,底引き網,そこびきあみ,[n],[trawl (net)]
 5754,,底冷え,そこびえ,"[n, vs]",[penetrating cold]
 5755,1,第一次世界大戦,だいいちじせかいたいせん,[n],"[World War I, First World War]"
@@ -5864,7 +5864,7 @@
 5864,,汁気,しるけ,[n],[juice]
 5865,1,針葉樹,しんようじゅ,[n],"[conifer, needle-leaved tree]"
 5866,1,深入り,ふかいり,"[n, vs]","[getting deeply into, becoming deeply involved in]"
-5867,,深化,しんか,"[n, vs]",[deepening]
+5867,1,深化,しんか,"[n, vs]",[deepening]
 5868,,深長,しんちょう,"[adj-na, n]",[profound]
 5869,1,深追い,ふかおい,"[n, vs]",[chase too far]
 5870,1,湿り気,しめりけ,[n],[moisture]
@@ -6017,7 +6017,7 @@
 6017,,大衆性,たいしゅうせい,[n],[popularity]
 6018,,大道具,おおどうぐ,[n],"[stage setting, scenery]"
 6019,1,大僧正,だいそうじょう,[n],[high priest]
-6020,,大農,だいのう,[n],"[large-scale (mechanized, mechanised) farming, wealthy farmer]"
+6020,1,大農,だいのう,[n],"[large-scale (mechanized, mechanised) farming, wealthy farmer]"
 6021,,大路,たいろ,[n],"[main street (esp. in a capital), main thoroughfare, most important of the three classes of highway (ritsuryo period)]"
 6022,1,大路,おおじ,[n],"[main street (esp. in a capital), main thoroughfare]"
 6023,1,大腿,だいたい,"[n, adj-no]",[thigh]
@@ -6057,7 +6057,7 @@
 6057,,既製品,きせいひん,[n],[ready-made goods]
 6058,,気付け,きづけ,[suf],"[care of (e.g. address on letter), c/o]"
 6059,,気炎,きえん,[n],"[high spirits, big talking]"
-6060,,愛社,あいしゃ,[n],[devotion to one's company]
+6060,1,愛社,あいしゃ,[n],[devotion to one's company]
 6061,,入れ代わり立ち代わり,いれかわりたちかわり,[adv],[by turns]
 6062,,入部,にゅうぶ,"[n, vs]",[joining a club]
 6063,,内回り,うちまわり,[n],"[inner tracks or lanes, going around an inner circle, indoors]"
@@ -6501,7 +6501,7 @@
 6501,,浮き出る,うきでる,"[v1, vi]","[to rise to the surface, to surface, to stand out (e.g. against a background)]"
 6502,,相半ばする,あいなかばする,"[vs-s, vi]","[to be equal in number, degree, etc. (of two things in opposition), to balance, to cancel out]"
 6503,,売り切る,うりきる,"[v5r, vt]","[to sell out, to sell off]"
-6504,,世間知らず,せけんしらず,"[adj-na, n]",[ignorant of the ways of the world]
+6504,1,世間知らず,せけんしらず,"[adj-na, n]",[ignorant of the ways of the world]
 6505,,移り変わる,うつりかわる,[v5r],[to change]
 6506,1,殺気立つ,さっきだつ,"[v5t, vi]","[to be seething (with anger), to be frenzied, to be menacing, to be murderous]"
 6507,,言い過ぎる,いいすぎる,"[v1, vt]","[to talk or say too much, to go too far, to overstate, to exaggerate]"
@@ -6538,7 +6538,7 @@
 6538,,生乳,せいにゅう,[n],[raw milk]
 6539,,屍,しかばね,[n],"[corpse, kanji ""corpse"" radical]"
 6540,,屍,し,[n],[corpse]
-6541,,死の灰,しのはい,[n],"[lethal radioactive fallout, atomic dust]"
+6541,1,死の灰,しのはい,[n],"[lethal radioactive fallout, atomic dust]"
 6542,1,植栽,しょくさい,"[n, vs]",[raising trees and plants]
 6543,,消音,しょうおん,"[n, vs, adj-no]","[silencing (e.g. machine), muffling, muting (e.g. TV)]"
 6544,,焼身,しょうしん,"[n, vs]","[burning oneself (to death), self-immolation]"
@@ -6683,7 +6683,7 @@
 6683,,筋肉質,きんにくしつ,[n],[muscularity]
 6684,,厳冬期,げんとうき,[n],[coldest period]
 6685,,現場監督,げんばかんとく,[n],"[field overseer, site foreman]"
-6686,,現代版,げんだいばん,[n],[modern version (e.g. of Italian Renaissance architecture)]
+6686,1,現代版,げんだいばん,[n],[modern version (e.g. of Italian Renaissance architecture)]
 6687,1,固定票,こていひょう,[n],"[solid (an assured, a safe) vote, solid (assured) support]"
 6688,,語学力,ごがくりょく,[n],[language ability]
 6689,,交響詩,こうきょうし,[n],[symphonic poem]
