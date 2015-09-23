@@ -286,6 +286,34 @@ public class CsvReaderWriter {
 	public static interface ICustomAdditionalCsvWriter {		
 		public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException;		
 	}
+	
+	public static void generateWordPowerCsv(OutputStream out, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
+
+		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
+
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+
+			csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
+			
+			int power = Integer.MAX_VALUE;
+			
+			List<GroupEnum> groups = polishJapaneseEntry.getGroups();
+			
+			for (GroupEnum groupEnum : groups) {
+				
+				if (groupEnum.getPower() < power) {
+					power = groupEnum.getPower();
+				}				
+			}
+			
+			csvWriter.write(String.valueOf(power));
+			
+			csvWriter.endRecord();
+		}
+
+		csvWriter.close();
+	}
+
 
 	public static List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv(String fileName) throws IOException,
 			JapaneseDictionaryException {

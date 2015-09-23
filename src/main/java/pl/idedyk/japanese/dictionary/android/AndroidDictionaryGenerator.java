@@ -80,7 +80,7 @@ public class AndroidDictionaryGenerator {
 		
 		@SuppressWarnings("unused")
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmeNewNameDictionary,
-				"input/word.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv",
+				"input/word.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word-power.csv",
 				"output/transitive_intransitive_pairs.csv");
 		
 		generateKanaEntries("../JapaneseDictionary_additional/kanjivg", "output/kana.csv");
@@ -105,7 +105,7 @@ public class AndroidDictionaryGenerator {
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(
 			JMENewDictionary jmeNewDictionary, TreeMap<String, EDictEntry> jmedictCommon,
 			JMENewDictionary jmeNewNameDictionary, String sourceFileName,
-			String transitiveIntransitivePairsFileName, String destinationFileName,
+			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationPowerFileName,
 			String transitiveIntransitivePairsOutputFile) throws Exception {
 
 		System.out.println("checkAndSavePolishJapaneseEntries");
@@ -138,8 +138,8 @@ public class AndroidDictionaryGenerator {
 		// generate groups
 		System.out.println("checkAndSavePolishJapaneseEntries: generateGroups");
 
-		List<PolishJapaneseEntry> result = Helper.generateGroups(polishJapaneseEntries, true);
-
+		List<PolishJapaneseEntry> result = Helper.generateGroups(polishJapaneseEntries, true);		
+		
 		System.out.println("checkAndSavePolishJapaneseEntries: generateAdditionalInfoFromEdict");
 
 		List<TransitiveIntransitivePair> readTransitiveIntransitivePair = readTransitiveIntransitivePair(transitiveIntransitivePairsFileName);
@@ -162,7 +162,14 @@ public class AndroidDictionaryGenerator {
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 
 		CsvReaderWriter.generateCsv(outputStream, result, false);
+		
+		// generowanie mocy slow
+		System.out.println("checkAndSavePolishJapaneseEntries: generateWordPowerCsv");
 
+		FileOutputStream outputPowerStream = new FileOutputStream(new File(destinationPowerFileName));
+
+		CsvReaderWriter.generateWordPowerCsv(outputPowerStream, result);
+		
 		return result;
 	}
 	
