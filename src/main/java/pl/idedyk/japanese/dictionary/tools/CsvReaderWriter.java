@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
@@ -290,17 +291,15 @@ public class CsvReaderWriter {
 	}
 	
 	public static void generateWordPowerCsv(OutputStream out, JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
-
-		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
+		
+		TreeMap<Integer, List<PolishJapaneseEntry>> groupByPower = new TreeMap<>();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			String kanji = polishJapaneseEntry.getKanji();
 			String kana = polishJapaneseEntry.getKana();
 			List<GroupEnum> groups = polishJapaneseEntry.getGroups();
-			
-			csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
-			
+						
 			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 			
 			int power = Integer.MAX_VALUE;
@@ -326,10 +325,33 @@ public class CsvReaderWriter {
 				}
 			}
 			
-			csvWriter.write(String.valueOf(power));			
-			csvWriter.endRecord();
+			List<PolishJapaneseEntry> polishJapaneseEntryListForPower = groupByPower.get(power);
+			
+			if (polishJapaneseEntryListForPower == null) {
+				
+				polishJapaneseEntryListForPower = new ArrayList<>();
+				
+				groupByPower.put(power, polishJapaneseEntryListForPower);
+			}
+			
+			polishJapaneseEntryListForPower.add(polishJapaneseEntry);			
 		}
-
+		
+		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
+		
+		for (Integer power : groupByPower.keySet()) {
+		
+			csvWriter.write(String.valueOf(power));
+			
+			List<PolishJapaneseEntry> polishJapaneseEntryListForPower = groupByPower.get(power);
+			
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryListForPower) {
+				csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
+			}
+			
+			csvWriter.endRecord();			
+		}
+		
 		csvWriter.close();
 	}
 
