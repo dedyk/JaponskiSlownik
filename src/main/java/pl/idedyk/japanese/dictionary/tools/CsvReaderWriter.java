@@ -24,11 +24,13 @@ import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
 import com.csvreader.CsvReader;
@@ -287,27 +289,44 @@ public class CsvReaderWriter {
 		public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException;		
 	}
 	
-	public static void generateWordPowerCsv(OutputStream out, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
+	public static void generateWordPowerCsv(OutputStream out, JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
 
 		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
-
+		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-
+			
+			String kanji = polishJapaneseEntry.getKanji();
+			String kana = polishJapaneseEntry.getKana();
+			List<GroupEnum> groups = polishJapaneseEntry.getGroups();
+			
 			csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
+			
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 			
 			int power = Integer.MAX_VALUE;
 			
-			List<GroupEnum> groups = polishJapaneseEntry.getGroups();
-			
 			for (GroupEnum groupEnum : groups) {
-				
+
 				if (groupEnum.getPower() < power) {
 					power = groupEnum.getPower();
 				}				
 			}
 			
-			csvWriter.write(String.valueOf(power));
+			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+				
+				List<String> groupEntryPriorityList = groupEntryList.get(0).getPriority();
+				
+				for (String priority : groupEntryPriorityList) {
+					
+					int priorityPower = JMENewDictionary.mapPriorityToPower(priority, 100);
+					
+					if (priorityPower < power) {
+						power = priorityPower;
+					}
+				}
+			}
 			
+			csvWriter.write(String.valueOf(power));			
 			csvWriter.endRecord();
 		}
 

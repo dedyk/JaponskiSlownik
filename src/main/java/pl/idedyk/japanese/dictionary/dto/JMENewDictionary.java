@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary.dto;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -216,6 +217,82 @@ public class JMENewDictionary {
 		}
 		
 		return new ArrayList<List<GroupEntry>>(theSameTranslate.values());
+	}
+	
+	public static int mapPriorityToPower(String priority, int start) {
+		
+		Map<String, Integer> jmedictPriorityMap = new HashMap<String, Integer>();
+				
+		jmedictPriorityMap.put("gai1", 1);
+		jmedictPriorityMap.put("ichi1", 2);
+		jmedictPriorityMap.put("news1", 3);
+		jmedictPriorityMap.put("spec1", 4);
+		
+		jmedictPriorityMap.put("gai2", 5);
+		jmedictPriorityMap.put("ichi2", 6);
+		jmedictPriorityMap.put("news2", 7);
+		jmedictPriorityMap.put("spec2", 8);
+
+		jmedictPriorityMap.put("nf01", 9);
+		jmedictPriorityMap.put("nf02", 10);
+		jmedictPriorityMap.put("nf03", 11);
+		jmedictPriorityMap.put("nf04", 12);
+		jmedictPriorityMap.put("nf05", 13);
+		jmedictPriorityMap.put("nf06", 14);
+		jmedictPriorityMap.put("nf07", 15);
+		jmedictPriorityMap.put("nf08", 16);
+		jmedictPriorityMap.put("nf09", 17);
+		jmedictPriorityMap.put("nf10", 18);
+
+		jmedictPriorityMap.put("nf11", 19);
+		jmedictPriorityMap.put("nf12", 20);
+		jmedictPriorityMap.put("nf13", 21);
+		jmedictPriorityMap.put("nf14", 22);
+		jmedictPriorityMap.put("nf15", 23);
+		jmedictPriorityMap.put("nf16", 24);
+		jmedictPriorityMap.put("nf17", 25);
+		jmedictPriorityMap.put("nf18", 26);
+		jmedictPriorityMap.put("nf19", 27);
+		jmedictPriorityMap.put("nf20", 28);
+		
+		jmedictPriorityMap.put("nf21", 29);
+		jmedictPriorityMap.put("nf22", 30);
+		jmedictPriorityMap.put("nf23", 31);
+		jmedictPriorityMap.put("nf24", 32);
+		jmedictPriorityMap.put("nf25", 33);
+		jmedictPriorityMap.put("nf26", 34);
+		jmedictPriorityMap.put("nf27", 35);
+		jmedictPriorityMap.put("nf28", 36);
+		jmedictPriorityMap.put("nf29", 37);
+		jmedictPriorityMap.put("nf30", 38);
+
+		jmedictPriorityMap.put("nf31", 39);
+		jmedictPriorityMap.put("nf32", 40);
+		jmedictPriorityMap.put("nf33", 41);
+		jmedictPriorityMap.put("nf34", 42);
+		jmedictPriorityMap.put("nf35", 43);
+		jmedictPriorityMap.put("nf36", 44);
+		jmedictPriorityMap.put("nf37", 45);
+		jmedictPriorityMap.put("nf38", 46);
+		jmedictPriorityMap.put("nf39", 47);
+		jmedictPriorityMap.put("nf40", 48);
+
+		jmedictPriorityMap.put("nf41", 49);
+		jmedictPriorityMap.put("nf42", 50);
+		jmedictPriorityMap.put("nf43", 51);
+		jmedictPriorityMap.put("nf44", 52);
+		jmedictPriorityMap.put("nf45", 53);
+		jmedictPriorityMap.put("nf46", 54);
+		jmedictPriorityMap.put("nf47", 55);
+		jmedictPriorityMap.put("nf48", 56);
+		
+		Integer power = jmedictPriorityMap.get(priority);
+		
+		if (power == null) {
+			throw new RuntimeException("Can't find power for: " + priority);
+		}
+		
+		return start + power;		
 	}
 
 	public static class Group {

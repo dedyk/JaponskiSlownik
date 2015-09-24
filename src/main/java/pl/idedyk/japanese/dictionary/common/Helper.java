@@ -3,7 +3,6 @@ package pl.idedyk.japanese.dictionary.common;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -117,7 +116,7 @@ public class Helper {
 			
 			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 			
-			if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 				
 				GroupEntry groupEntry = groupEntryList.get(0);
 				
@@ -230,7 +229,7 @@ public class Helper {
 			
 			List<PolishJapaneseEntry> foundPolishJapaneseEntryGroupList = new ArrayList<PolishJapaneseEntry>();
 			
-			if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 								
 				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
 					
@@ -276,22 +275,6 @@ public class Helper {
 				}				
 			}
 		}				
-	}
-
-	private static boolean isMultiGroup(List<GroupEntry> groupEntryList) {
-		
-		Set<Integer> uniqueGroupIds = new HashSet<Integer>();
-		
-		for (GroupEntry groupEntry : groupEntryList) {
-			uniqueGroupIds.add(groupEntry.getGroup().getId());
-		}
-		
-		if (uniqueGroupIds.size() == 1) {			
-			return false;
-			
-		} else {
-			return true;
-		}
 	}
 
 	private static EDictEntry findEdictEntry(TreeMap<String, EDictEntry> jmedict,

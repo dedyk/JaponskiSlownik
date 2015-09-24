@@ -1,13 +1,14 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.List;
-import java.util.Set;
 
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 
 public class Test5 {
@@ -16,8 +17,8 @@ public class Test5 {
 
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 
-		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
@@ -69,6 +70,7 @@ public class Test5 {
 		*/
 		
 		
+		/*
 		for (Group group : jmeNewDictionary.getGroupList()) {
 			
 			List<GroupEntry> groupEntryList = group.getGroupEntryList();
@@ -78,6 +80,7 @@ public class Test5 {
 				printGroupEntry(groupEntry);
 			}
 		}
+		*/
 		
 		/*
 		List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList("大社", "おおやしろ");
@@ -86,8 +89,18 @@ public class Test5 {
 			printGroupEntry(groupEntry);
 		}
 		*/
+		
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");;
+		
+		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true);
+		
+		FileOutputStream outputPowerStream = new FileOutputStream(new File("output/word-power-TEST.csv"));
+
+		CsvReaderWriter.generateWordPowerCsv(outputPowerStream, jmeNewDictionary, polishJapaneseEntries);
+
 	}
 	
+	/*
 	private static void printGroupEntry(GroupEntry groupEntry) {
 
 		Set<String> wordTypeList = groupEntry.getWordTypeList();
@@ -116,4 +129,5 @@ public class Test5 {
 		
 		System.out.println("---\n");		
 	}
+	*/
 }

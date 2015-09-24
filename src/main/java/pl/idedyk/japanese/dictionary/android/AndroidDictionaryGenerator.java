@@ -168,7 +168,7 @@ public class AndroidDictionaryGenerator {
 
 		FileOutputStream outputPowerStream = new FileOutputStream(new File(destinationPowerFileName));
 
-		CsvReaderWriter.generateWordPowerCsv(outputPowerStream, result);
+		CsvReaderWriter.generateWordPowerCsv(outputPowerStream, jmeNewDictionary, result);
 		
 		return result;
 	}
