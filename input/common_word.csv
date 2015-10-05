@@ -107,7 +107,7 @@
 107,,-,アンモナイト,[n],[ammonite]
 108,,-,イースタングリップ,[n],[eastern grip (in tennis)]
 109,,-,イーブン,[n],[even]
-110,,-,イーブンパー,[n],[even par]
+110,1,-,イーブンパー,[n],[even par]
 111,,-,イコン,[n],[icon (religious)]
 112,,以色列,イスラエル,[n],[Israel]
 113,1,伊太利,イタリア,[n],[Italy]
@@ -120,7 +120,7 @@
 120,,-,ウィークデー,[n],[weekday]
 121,,-,ウイット,[n],[wit]
 122,,-,ウイニングショット,[n],"[winning shot (tennis, ball games)]"
-123,,-,ウイニングボール,[n],[winning ball]
+123,1,-,ウイニングボール,[n],[winning ball]
 124,,-,ウインドブレーカー,[n],"[windbreaker, jacket]"
 125,1,-,ウェーバー,[n],"[waiver, weber (Wb) (unit of magnetic flux)]"
 126,1,-,ウェルダン,[n],[well-done]
@@ -573,7 +573,7 @@
 573,,下り列車,くだりれっしゃ,[n],"[trains going away from the capital, down train]"
 574,,下回り,したまわり,[n],"[subordinate part, menial service, subordinate, utility man]"
 575,,下回る,したまわる,"[v5r, vt]","[to fall below (esp. figures: profits, unemployment rate, etc.), to be less than, to be lower than, to fall just short of, to be just under]"
-576,,下絵,したえ,[n],"[rough sketch, cartoon, design]"
+576,1,下絵,したえ,[n],"[rough sketch, cartoon, design]"
 577,1,下向き,したむき,[n],"[pointing down, pointing downward, (market) decline, downturn, downward trend]"
 578,1,下校,げこう,"[n, vs]","[coming home from school, end of school day]"
 579,,下座,げざ,"[n, vs]","[squatting, prostrating oneself, crouching, musicians' box on the left side of the stage, lower seat]"
@@ -610,7 +610,7 @@
 610,,可視,かし,"[n, adj-no]",[visibility]
 611,1,可動,かどう,"[n, adj-no]","[mobile, moveable]"
 612,,可燃,かねん,"[adj-no, n]","[inflammable, flammable, combustible, burnable]"
-613,,可変,かへん,"[adj-na, n, adj-no]","[variable, changeable, convertible, controllable]"
+613,1,可変,かへん,"[adj-na, n, adj-no]","[variable, changeable, convertible, controllable]"
 614,1,可憐,かれん,"[adj-na, n]","[sweet (e.g. young girls, flowers blooming), touchingly lovely, cute, pitiful, pitiable]"
 615,,夏服,なつふく,[n],[summer clothing]
 616,1,家筋,いえすじ,[n],"[lineage, pedigree, family line]"
@@ -670,7 +670,7 @@
 670,,我流,がりゅう,"[n, adj-no]","[self-taught, one's own way]"
 671,,牙城,がじょう,[n],"[stronghold (esp. of an enemy or opponent), inner citadel, bastion]"
 672,,画材,がざい,[n],"[subject matter of a painting, art supplies, art materials]"
-673,,画策,かくさく,"[n, vs]","[plan, scheme, program formulation, programme formulation, maneuver, manoeuvre]"
+673,1,画策,かくさく,"[n, vs]","[plan, scheme, program formulation, programme formulation, maneuver, manoeuvre]"
 674,,画題,がだい,[n],"[motif, theme, subject (of picture)]"
 675,,画壇,がだん,[n],"[artists' world, painting circles]"
 676,,画布,がふ,[n],[(oil painting) canvas]
@@ -732,7 +732,7 @@
 732,1,外局,がいきょく,[n],[external bureau]
 733,,外勤,がいきん,"[n, vs]",[working away from the office]
 734,1,外形,がいけい,[n],"[externals, external form]"
-735,,外債,がいさい,[n],"[foreign loan, foreign debt, foreign bond]"
+735,1,外債,がいさい,[n],"[foreign loan, foreign debt, foreign bond]"
 736,1,外人,ほかびと,[],[outsider]
 737,,外注,がいちゅう,"[n, vs]","[outside order, outsourcing, custom (manufacture)]"
 738,,外敵,がいてき,[n],"[foreign enemy, outside invader]"
@@ -1322,7 +1322,7 @@
 1322,1,後半生,こうはんせい,[n],[latter half of one's life]
 1323,,後払い,あとばらい,"[n, vs]",[deferred payment]
 1324,,後編,こうへん,[n],"[latter part (of book, etc.), sequel, concluding part]"
-1325,,後味,あとあじ,[n],[aftertaste]
+1325,1,後味,あとあじ,[n],[aftertaste]
 1326,1,御曹司,おんぞうし,[n],"[son of a distinguished family, son of a noble]"
 1327,,御用,ごよう,[n],"[your order, your business, official business, arrest, apprehension, capture]"
 1328,1,御覧,ごらん,"[int, n]","[(please) try to, (please) look, seeing, looking, watching]"
@@ -1644,7 +1644,7 @@
 1644,,仕上がる,しあがる,"[v5r, vi]","[to be finished, to be completed, to be done]"
 1645,,仕打ち,しうち,[n],"[(poor) treatment, (bad) behavior, behaviour, action, act]"
 1646,,仕入れ先,しいれさき,[n],[supplier]
-1647,,仕様書,しようしょ,[n],[specification document]
+1647,1,仕様書,しようしょ,[n],[specification document]
 1648,,仕留める,しとめる,"[v1, vt]","[to bring down (a bird), to kill]"
 1649,,使いこなす,つかいこなす,"[v5s, vt]","[to handle (men), to master (a tool), to manage, to acquire a command of (a language)]"
 1650,,使い慣れる,つかいなれる,[v1],[to get accustomed to using]
@@ -1965,7 +1965,7 @@
 1965,1,出納簿,すいとうぼ,[n],[cashbook]
 1966,,出版元,しゅっぱんもと,[n],[publisher]
 1967,,出兵,しゅっぺい,"[n, vs]","[dispatch of troops, despatch of troops, expedition]"
-1968,,出歩く,であるく,"[v5k, vi]","[to go out, to take a stroll, to go about]"
+1968,1,出歩く,であるく,"[v5k, vi]","[to go out, to take a stroll, to go about]"
 1969,,出来栄え,できばえ,[n],"[result, effect, performance, success, workmanship, execution, shape and quality of (an article), finishing touches]"
 1970,1,出来合い,できあい,[n],"[ready-made, common-law (wife)]"
 1971,1,駿足,しゅんそく,"[n, adj-no]","[fast runner, swift horse, fleet steed]"
@@ -2013,7 +2013,7 @@
 2013,,両刃,もろは,"[adj-no, n]","[double-edged, double-edged blade]"
 2014,,諸般,しょはん,[n],"[various, several]"
 2015,1,助け船,たすけぶね,[n],"[lifeboat, friend in need, timely help]"
-2016,,助産,じょさん,[n],[midwifery]
+2016,1,助産,じょさん,[n],[midwifery]
 2017,,助走,じょそう,"[n, vs]",[approach run (long jump)]
 2018,1,助長,じょちょう,"[n, vs]","[promotion, fostering, unwanted help (usu. unintentionally harmful), unnecessary help]"
 2019,,女学生,じょがくせい,[n],[schoolgirl]
@@ -2316,7 +2316,7 @@
 2316,,精錬,せいれん,"[n, vs]","[refining, refinement, smelting, training]"
 2317,,製錬,せいれん,"[n, vs]","[refining, refinement, smelting]"
 2318,,精緻,せいち,"[adj-na, n]","[delicate, minute, subtle]"
-2319,,聖典,せいてん,[n],"[scriptures, sacred book, holy book, holy writings, writings of a sage, sage's memoir]"
+2319,1,聖典,せいてん,[n],"[scriptures, sacred book, holy book, holy writings, writings of a sage, sage's memoir]"
 2320,,声帯,せいたい,[n],[vocal cords]
 2321,,声紋,せいもん,[n],[voice print]
 2322,1,製版,せいはん,"[n, vs]",[plate-making (printing)]
@@ -2660,7 +2660,7 @@
 2660,1,置き換える,おきかえる,"[v1, vt]","[to replace, to move, to change the position of]"
 2661,,致命,ちめい,[n],[fatal]
 2662,1,晩い,おそい,[],"[late (e.g. ""late at night"")]"
-2663,,遅らせる,おくらせる,"[v1, vt]","[to delay, to postpone, to put off, to slow down, to hold up, to retard, to put back (a clock)]"
+2663,1,遅らせる,おくらせる,"[v1, vt]","[to delay, to postpone, to put off, to slow down, to hold up, to retard, to put back (a clock)]"
 2664,,蓄音機,ちくおんき,[n],[gramophone]
 2665,1,茶会,ちゃかい,[n],"[tea party, get-together, tea ceremony]"
 2666,,茶番,ちゃばん,[n],[farce]
@@ -3387,7 +3387,7 @@
 3387,,仏頂面,ぶっちょうづら,[n],[sour look]
 3388,1,仏典,ぶってん,[n],"[Buddhist scriptures, sutras]"
 3389,,仏殿,ぶつでん,[n],[Buddhist temple]
-3390,,仏塔,ぶっとう,[n],[pagoda]
+3390,1,仏塔,ぶっとう,[n],[pagoda]
 3391,1,仏法,ぶっぽう,[n],[Buddhism]
 3392,,仏門,ぶつもん,[n],"[Buddhism, priesthood]"
 3393,1,仏領,ふつりょう,[n],"[French possession, French territory]"
@@ -3921,7 +3921,7 @@
 3921,,訃報,ふほう,[n],"[news of a person's death, obituary]"
 3922,1,詭弁,きべん,"[n, adj-no]","[sophistry, sophism, chicanery, play on words]"
 3923,,誂える,あつらえる,"[v1, vt]","[to give an order, to place an order]"
-3924,,諍い,いさかい,"[n, vs]","[quarrel, dispute, argument]"
+3924,1,諍い,いさかい,"[n, vs]","[quarrel, dispute, argument]"
 3925,,躊躇,ちゅうちょ,"[n, vs]","[hesitation, indecision, vacillation]"
 3926,1,逍遥,しょうよう,"[n, vs]","[ramble, saunter, walk, wander, stroll]"
 3927,1,鍼灸,しんきゅう,[n],[acupuncture and moxibustion]
@@ -3945,7 +3945,7 @@
 3945,1,塩,えん,[n],"[salt (i.e. sodium chloride), common salt, table salt, salt (e.g. sodium chloride, calcium sulfate, etc.)]"
 3946,1,塩害,えんがい,[n],[salt-air damage]
 3947,,奥底,おくそこ,[n],"[depths, bottom (of one's heart)]"
-3948,,下段,げだん,[n],"[lower tier, lower step, lower column, lower berth, bottom shelf, low position (of a sword in kendo, etc.)]"
+3948,1,下段,げだん,[n],"[lower tier, lower step, lower column, lower berth, bottom shelf, low position (of a sword in kendo, etc.)]"
 3949,,化粧水,けしょうすい,[n],[face lotion]
 3950,1,暇,いとま,"[adj-na, n]","[spare time, free time, leisure, time off, day off, vacation, holiday, leave, quitting (one's job), firing someone, divorcing (one's spouse), leaving, departing]"
 3951,,荷役,にえき,[n],"[handling cargo, loading and unloading]"
@@ -4136,7 +4136,7 @@
 4136,,潮干狩り,しおひがり,[n],"[shell gathering (at low tide), clamming]"
 4137,,死骸,しがい,[n],"[body, corpse, remains]"
 4138,1,子細,しさい,"[n, adj-na]","[reasons, circumstances, significance, particulars, hindrance, obstruction, interference]"
-4139,,品々,しなじな,[n],[various articles]
+4139,1,品々,しなじな,[n],[various articles]
 4140,1,渋々,しぶしぶ,"[adv, adv-to]","[reluctantly, unwillingly]"
 4141,,仕向ける,しむける,"[v1, vt]","[to induce (somebody to do something), to tempt, to act toward (somebody in a certain way), to handle (men), to treat, to send, to forward to]"
 4142,,遮断器,しゃだんき,[n],[circuit breaker]
@@ -4242,7 +4242,7 @@
 4242,,古創,ふるきず,[n],"[old wound, scar, old unpleasant incident]"
 4243,,古惚ける,ふるぼける,"[v1, vi]","[to look old, to become musty, to wear out]"
 4244,,別働隊,べつどうたい,[n],"[flying column, detached force]"
-4245,,北々西,ほくほくせい,[n],[north-northwest]
+4245,1,北々西,ほくほくせい,[n],[north-northwest]
 4246,,掘り返す,ほりかえす,"[v5s, vt]","[to dig up, to turn up, to tear up]"
 4247,,掘り出し物,ほりだしもの,[n],"[(lucky) find, bargain, good buy, treasure trove]"
 4248,,本末転倒,ほんまつてんとう,"[n, vs, adj-no]","[failing to properly evaluate the (relative) importance (of), putting the cart before the horse, mistaking the cause for the end, mistaking the insignificant for the essential, getting one's priorities backwards]"
@@ -4946,7 +4946,7 @@
 4946,,相思,そうし,[n],[mutual affection or love]
 4947,1,装身具,そうしんぐ,[n],"[(personal) accessories (ornaments, outfit)]"
 4948,1,草創,そうそう,"[n, vs]","[beginning, inauguration]"
-4949,,早産,そうざん,"[n, vs, adj-no]",[premature birth]
+4949,1,早産,そうざん,"[n, vs, adj-no]",[premature birth]
 4950,,耐乏,たいぼう,[n],"[austerity, voluntary privation]"
 4951,1,大器,たいき,[n],"[large container, person of great talent]"
 4952,,滞空,たいくう,[n],[staying (remaining) in the air]
@@ -5173,7 +5173,7 @@
 5173,1,非合理,ひごうり,"[adj-na, n]",[illogicality]
 5174,1,非国民,ひこくみん,[n],[unpatriotic individual]
 5175,,非常手段,ひじょうしゅだん,[n],[emergency measures]
-5176,,非道,ひどう,"[adj-na, n, adj-no]","[unjust, inhuman]"
+5176,1,非道,ひどう,"[adj-na, n, adj-no]","[unjust, inhuman]"
 5177,,非戦闘員,ひせんとういん,[n],"[non-combatant, civilian]"
 5178,,排水量,はいすいりょう,[n],"[displacement (e.g. of a ship), volume of wastewater]"
 5179,1,排外,はいがい,[n],[anti-foreign]
@@ -5211,7 +5211,7 @@
 5211,1,投げ入れ,なげいれ,[n],[nageire (casual or nature-imitating style of Japanese floral arrangement)]
 5212,,投げ技,なげわざ,[n],"[throw or throwing technique (sumo, judo)]"
 5213,,啄木,たくぼく,[n],[woodpecker]
-5214,,雅文,がぶん,[n],[elegant (literary) style]
+5214,1,雅文,がぶん,[n],[elegant (literary) style]
 5215,,語り物,かたりもの,[n],[a narrative]
 5216,,誤判,ごはん,[n],"[misjudgement, misjudgment, erroneous judgement, miscarriage of justice]"
 5217,,誤射,ごしゃ,"[n, vs]",[accidental shooting]
@@ -6452,7 +6452,7 @@
 6452,,白梅,しらうめ,[n],"[white plum blossoms, white Japanese apricot, white-blossomed plum]"
 6453,1,白馬,しろうま,[n],"[white horse, unrefined sake]"
 6454,,白装束,しろしょうぞく,[n],[white clothing]
-6455,,白銀,はくぎん,[n],"[silver, snow]"
+6455,1,白銀,はくぎん,[n],"[silver, snow]"
 6456,,夫唱婦随,ふしょうふずい,[n],[a wife should do her husband's bidding]
 6457,,軟投,なんとう,[n],[soft pitch]
 6458,1,雪上,せつじょう,[n],[on the snow]
@@ -6949,7 +6949,7 @@ type of baggy tobi trousers with the baggy part taking up eight-tenths of the fu
 nine parts
 nine percent
 almost"
-6883,,二十歳,はたとせ,,"_
+6883,1,二十歳,はたとせ,,"_
 -----------
 -----------
 twenty years (archaism)"
@@ -7628,7 +7628,7 @@ tower
 stand
 pedestal
 calyx"
-7002,,台,たい,,"_
+7002,1,台,たい,,"_
 -----------
 -----------
 Taiwan (abbreviation)"
@@ -10273,7 +10273,7 @@ how many words"
 -----------
 -----------
 birthplace"
-7467,,撚る,よる,,"_
+7467,1,撚る,よる,,"_
 -----------
 -----------
 to twist (yarn)
@@ -12581,7 +12581,7 @@ cleft lip (obscure term)"
 musical (dramatic) piece in several acts
 type of koto solo
 lively type of shamisen song"
-7891,,着,ぎ,,"_
+7891,1,着,ぎ,,"_
 -----------
 -----------
 clothes
