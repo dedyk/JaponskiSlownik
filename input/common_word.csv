@@ -83,7 +83,7 @@
 83,,-,アラウンド,[n],[around]
 84,,-,アリストクラシー,[n],[aristocracy]
 85,1,-,アルカイズム,[n],[archaism]
-86,,-,アルコーブ,[n],[alcove]
+86,1,-,アルコーブ,[n],[alcove]
 87,1,-,アルゴリズミック,"[adj-na, n]",[algorithmic]
 88,,-,アルバトロス,[n],[albatross]
 89,,Α,アルファ,[n],[alpha]
@@ -351,7 +351,7 @@
 351,1,一芸,いちげい,[n],"[an art, one talent]"
 352,1,一撃,いちげき,"[n, vs]","[blow, hit, poke]"
 353,,一戸,いっこ,[n],"[one house, household]"
-354,,一顧,いっこ,"[n, vs]",[(take no) notice of]
+354,1,一顧,いっこ,"[n, vs]",[(take no) notice of]
 355,1,一語,いちご,[n],[one word]
 356,,一考,いっこう,"[n, vs]","[consideration, thought]"
 357,,一昨,いっさく,[n],[one previous]
@@ -1424,7 +1424,7 @@
 1424,1,降り注ぐ,ふりそそぐ,"[v5g, vi]","[to rain incessantly, to downpour]"
 1425,,香味,こうみ,[n],"[smell and taste, flavour, flavor]"
 1426,1,高価い,たかい,[],[expensive]
-1427,,高ぶる,たかぶる,"[v5r, vi]","[to be highly strung, to get excited, to get worked up, to be proud, to be haughty]"
+1427,1,高ぶる,たかぶる,"[v5r, vi]","[to be highly strung, to get excited, to get worked up, to be proud, to be haughty]"
 1428,,高み,たかみ,[n],"[height, elevated place]"
 1429,,高感度,こうかんど,"[n, adj-no]","[high sensitivity, highly sensitive (e.g. film, radio receiver), high speed (film), discerning, discriminating, of refined tastes]"
 1430,,高機能,こうきのう,"[adj-no, adj-na]","[high-functioning, high-performance, sophisticated]"
@@ -1467,7 +1467,7 @@
 1467,,国書,こくしょ,[n],"[credentials, sovereign message]"
 1468,1,国粋,こくすい,[n],[national characteristics]
 1469,1,国粋主義,こくすいしゅぎ,"[n, adj-no]","[nationalism, extreme patriotism]"
-1470,,国葬,こくそう,[n],"[state funeral, national funeral]"
+1470,1,国葬,こくそう,[n],"[state funeral, national funeral]"
 1471,1,国定,こくてい,"[n, adj-no]","[state-sponsored, national]"
 1472,1,国文,こくぶん,[n],[national literature]
 1473,,国務大臣,こくむだいじん,[n],[Minister of State]
@@ -1892,7 +1892,7 @@
 1892,,修身,しゅうしん,[n],"[morals, ethics, moral training]"
 1893,,修整,しゅうせい,"[n, vs]","[adjustment, retouching (in photography)]"
 1894,1,修養,しゅうよう,"[n, vs]","[self-improvement, (mental) training, self-discipline, cultivation]"
-1895,,修羅,しゅら,[n],"[fighting, scene of carnage]"
+1895,1,修羅,しゅら,[n],"[fighting, scene of carnage]"
 1896,1,拾い上げる,ひろいあげる,[v1],"[to pick up, to pick out]"
 1897,1,卒える,おえる,[],[to graduate]
 1898,1,終演,しゅうえん,"[n, vs]",[end of a performance]
@@ -2128,7 +2128,7 @@
 2128,,醸し出す,かもしだす,"[v5s, vt]","[to engender, to bring about]"
 2129,,植民,しょくみん,"[n, vs, adj-no]","[colonization, colonisation]"
 2130,,織り込む,おりこむ,"[v5m, vt]","[to weave into, to interweave, to be incorporated in, to be factored in]"
-2131,,色っぽい,いろっぽい,[adj-i],"[amorous, sexy, voluptuous, erotic]"
+2131,1,色っぽい,いろっぽい,[adj-i],"[amorous, sexy, voluptuous, erotic]"
 2132,,色刷り,いろずり,[n],"[colour printing, color printing]"
 2133,,色直し,いろなおし,"[n, vs]",[redyeing (costume)]
 2134,1,色分け,いろわけ,"[n, vs]","[classification, color coding, colour coding, color keying, colour keying, differentiation using different colors (colours)]"
@@ -3431,7 +3431,7 @@
 3431,,平謝り,ひらあやまり,[n],[earnest apology]
 3432,,平手,ひらて,[n],"[palm, open hand, equality, lack of handicap (e.g. in a game)]"
 3433,1,平準,へいじゅん,[n],[level]
-3434,,平生,へいぜい,"[adj-no, n-adv, n-t]","[usual, ordinary]"
+3434,1,平生,へいぜい,"[adj-no, n-adv, n-t]","[usual, ordinary]"
 3435,1,平素,へいそ,"[n-adv, n-t]","[ordinary, in the past, usual, regular]"
 3436,1,平定,へいてい,"[n, vs]","[suppression, repression, subjugation]"
 3437,1,平日,ひらび,"[n-adv, n]","[weekday, ordinary days (i.e. non-holiday), kanji radical 73]"
@@ -3603,7 +3603,7 @@
 3603,,未完,みかん,"[n, adj-no]","[incomplete, unfinished]"
 3604,,未経験,みけいけん,"[adj-na, n, adj-no]",[inexperience]
 3605,,未収,みしゅう,"[n, adj-no]","[accrued, outstanding]"
-3606,,未来派,みらいは,[n],[futurism]
+3606,1,未来派,みらいは,[n],[futurism]
 3607,1,未了,みりょう,"[n, adj-no]","[unfinished, unfilled (order), unexecuted]"
 3608,,密会,みっかい,"[n, vs]",[clandestine meeting]
 3609,,密告,みっこく,"[n, vs]","[secret information, betrayal, inform on]"
@@ -4096,7 +4096,7 @@
 4096,,陰武者,かげむしゃ,[n],"[body double (orig. of a military leader), wire puller, someone behind the scenes]"
 4097,1,愛しみ,かなしみ,[n],"[sadness, sorrow, grief, affection, love]"
 4098,1,唐揚げ,からあげ,"[n, vs]",[fried food (most oft. chicken)]
-4099,,借り物,かりもの,[n],[borrowed thing]
+4099,1,借り物,かりもの,[n],[borrowed thing]
 4100,1,軽々しい,かるがるしい,[adj-i],"[indiscreet, thoughtless, careless, frivolous]"
 4101,1,変り種,かわりだね,[n],"[novelty, exception, hybrid, mutation, variety, freak, eccentric personality]"
 4102,1,合衆国,がっしゅうこく,[n],"[federal state, United States of America]"
@@ -4978,7 +4978,7 @@
 4978,,弱火,よわび,[n],"[simmering, low fire, gentle heating]"
 4979,,弱り果てる,よわりはてる,"[v1, vi]","[to be exhausted, to be at a loss, to be worn out, to be helpless]"
 4980,,夢物語,ゆめものがたり,[n],"[account of a dream, fantastic story, wild tale, empty dream, pipe dream]"
-4981,,郵船,ゆうせん,[n],[mail boat]
+4981,1,郵船,ゆうせん,[n],[mail boat]
 4982,1,残額,ざんがく,[n],"[remaining amount, balance (of an account)]"
 4983,1,残雪,ざんせつ,[n],"[remaining snow, lingering snow]"
 4984,,残党,ざんとう,[n],"[remnants, survivors, refugees, pocket (of resistance)]"
@@ -6053,7 +6053,7 @@
 6053,,押し込み,おしこみ,[n],"[burglary, burglar, closet]"
 6054,1,押し花,おしばな,[n],[pressed flower]
 6055,,押しかけ女房,おしかけにょうぼう,[n],[woman who forced her husband into marriage]
-6056,,既往,きおう,"[n, adj-no]",[the past]
+6056,1,既往,きおう,"[n, adj-no]",[the past]
 6057,,既製品,きせいひん,[n],[ready-made goods]
 6058,1,気付け,きづけ,[suf],"[care of (e.g. address on letter), c/o]"
 6059,,気炎,きえん,[n],"[high spirits, big talking]"
@@ -6704,7 +6704,7 @@
 6704,,選挙公報,せんきょこうほう,[n],[official gazette for elections]
 6705,,測定器,そくていき,[n],[measuring instrument]
 6706,,帯状疱疹,たいじょうほうしん,"[n, adj-no]","[shingles, herpes zoster]"
-6707,,単純平均,たんじゅんへいきん,[n],"[simple average, arithmetic average]"
+6707,1,単純平均,たんじゅんへいきん,[n],"[simple average, arithmetic average]"
 6708,,地場産業,じばさんぎょう,[n],[local (silverware) industry (of the town)]
 6709,,地方団体,ちほうだんたい,[n],[local public body]
 6710,,貯蔵庫,ちょぞうこ,[n],"[storehouse, bunker, silo]"
@@ -6818,7 +6818,7 @@
 6818,,吟醸酒,ぎんじょうしゅ,[n],[type of sake brewed by low temperature fermentation from white rice milled to 60%]
 6819,,口煩い,くちうるさい,[adj-i],"[nagging, faultfinding, carping, captious]"
 6820,1,気付き,きづき,[n],"[awareness, realization]"
-6821,,飲ます,のます,"[v5s, vt]",[to make somebody drink]
+6821,1,飲ます,のます,"[v5s, vt]",[to make somebody drink]
 6822,,踊らされる,おどらされる,[v1],"[to be manipulated, to be made to dance]"
 6823,,彼奴ら,あいつら,[n],[they]
 6824,,介護保険,かいごほけん,[n],[nursing insurance]
@@ -11392,7 +11392,7 @@ end of life
 death
 never
 not at all"
-7670,,象棋,シャンチー,,"_
+7670,1,象棋,シャンチー,,"_
 -----------
 -----------
 xiangqi
@@ -11747,7 +11747,7 @@ plough (archaism)"
 -----------
 -----------
 kung fu (word usually written using kana alone)"
-7738,,豆汁,とうじゅう,,"_
+7738,1,豆汁,とうじゅう,,"_
 -----------
 -----------
 mung bean milk
