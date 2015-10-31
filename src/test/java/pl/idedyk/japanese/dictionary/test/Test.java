@@ -1,13 +1,6 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-import java.util.List;
-
-import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
+import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
 
 public class Test {
 
@@ -333,7 +326,8 @@ public class Test {
 		
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries);
 		*/
-				
+		
+		/*
 		System.out.println("generateKanjiRadical");
 
 		List<RadicalInfo> radicalList = KanjiDic2Reader.readRadkfile("../JapaneseDictionary_additional/radkfile");
@@ -341,6 +335,10 @@ public class Test {
 		OutputStream outputStream = new FileOutputStream(new File("output/radical-test.csv"));
 
 		CsvReaderWriter.generateKanjiRadicalCsv(outputStream, radicalList);
-
+		*/
+		
+		JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
+		
+		System.out.println(jishoOrgConnector.isWordExists("猫義"));
 	}
 }

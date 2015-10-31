@@ -11,6 +11,10 @@ export CLASSPATH=$HOME/.m2/repository/net/sourceforge/javacsv/javacsv/2.1/javacs
 export CLASSPATH=$HOME/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:$CLASSPATH
 export CLASSPATH=$HOME/.m2/repository/jaxen/jaxen/1.1.4/jaxen-1.1.4.jar:$CLASSPATH
 
+export CLASSPATH=$HOME/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:$CLASSPATH
+
+export CLASSPATH=$HOME/.m2/repository/org/json/json/20150729/json-20150729.jar:$CLASSPATH
+
 export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-core/$LUCENE_VERSION/lucene-core-$LUCENE_VERSION.jar:$CLASSPATH
 export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-analyzers-common/$LUCENE_VERSION/lucene-analyzers-common-$LUCENE_VERSION.jar:$CLASSPATH
 export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-queries/$LUCENE_VERSION/lucene-queries-$LUCENE_VERSION.jar:$CLASSPATH

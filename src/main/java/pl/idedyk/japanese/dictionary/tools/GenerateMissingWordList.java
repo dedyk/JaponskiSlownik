@@ -172,7 +172,10 @@ public class GenerateMissingWordList {
 		
 		List<PolishJapaneseEntry> notFoundWordList = new ArrayList<PolishJapaneseEntry>();
 		List<String> notFoundWordSearchList = new ArrayList<String>();
-		
+
+		List<PolishJapaneseEntry> notFoundJishoFoundWordList = new ArrayList<PolishJapaneseEntry>();
+		List<String> notFoundJishoFoundWordSearchList = new ArrayList<String>();
+
 		// stworzenie wyszukiwacza
 		IndexReader reader = DirectoryReader.open(index);
 
@@ -181,6 +184,8 @@ public class GenerateMissingWordList {
 		int counter = 0;
 		
 		Set<Integer> alreadyFoundDocument = new TreeSet<Integer>();
+		
+		JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
 		
 		for (String currentMissingWord : missingWords) {
 			
@@ -226,11 +231,22 @@ public class GenerateMissingWordList {
 				
 			} else {
 				
-				notFoundWordSearchList.add(currentMissingWord);
-				
 				PolishJapaneseEntry polishJapaneseEntry = Helper.createEmptyPolishJapaneseEntry(currentMissingWord, counter);
-								
-				notFoundWordList.add(polishJapaneseEntry);
+				
+				boolean wordExistsInJishoOrg = jishoOrgConnector.isWordExists(currentMissingWord);
+				
+				if (wordExistsInJishoOrg == true) {
+					
+					notFoundJishoFoundWordSearchList.add(currentMissingWord);								
+					
+					notFoundJishoFoundWordList.add(polishJapaneseEntry);
+					
+				} else {
+					
+					notFoundWordSearchList.add(currentMissingWord);								
+					
+					notFoundWordList.add(polishJapaneseEntry);
+				}
 			}
 		}
 
@@ -242,6 +258,7 @@ public class GenerateMissingWordList {
 		
 		newWordList.addAll(foundWordList);
 		newWordList.addAll(alreadyAddedWordList);
+		newWordList.addAll(notFoundJishoFoundWordList);
 		newWordList.addAll(notFoundWordList);
 		
 		CsvReaderWriter.generateCsv("input/word-new.csv", newWordList, true, true, false);
@@ -249,6 +266,8 @@ public class GenerateMissingWordList {
 		FileWriter searchResultFileWriter = new FileWriter(fileName + "-new");
 		
 		searchResultFileWriter.write(Utils.convertListToString(foundWordSearchList));
+		searchResultFileWriter.write("\n---------\n");
+		searchResultFileWriter.write(Utils.convertListToString(notFoundJishoFoundWordSearchList));
 		searchResultFileWriter.write("\n---------\n");
 		searchResultFileWriter.write(Utils.convertListToString(notFoundWordSearchList));
 		
