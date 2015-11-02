@@ -187,6 +187,7 @@ public class GenerateMissingWordList {
 		
 		JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
 		
+		System.out.println("Szukanie...");
 		for (String currentMissingWord : missingWords) {
 			
 			if (currentMissingWord.equals("") == true) {
@@ -233,6 +234,8 @@ public class GenerateMissingWordList {
 				
 				PolishJapaneseEntry polishJapaneseEntry = Helper.createEmptyPolishJapaneseEntry(currentMissingWord, counter);
 				
+				System.out.println("Szukanie w jisho.org: " + currentMissingWord);
+				
 				boolean wordExistsInJishoOrg = jishoOrgConnector.isWordExists(currentMissingWord);
 				
 				if (wordExistsInJishoOrg == true) {
@@ -247,6 +250,8 @@ public class GenerateMissingWordList {
 					
 					notFoundWordList.add(polishJapaneseEntry);
 				}
+				
+				Thread.sleep(500);
 			}
 		}
 
