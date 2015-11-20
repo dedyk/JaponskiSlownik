@@ -714,7 +714,7 @@
 714,1,海がめ,うみがめ,[n],[sea turtle]
 715,1,海原,うなばら,[n],"[ocean, sea, the deep]"
 716,1,海港,かいこう,[n],"[port, seaport]"
-717,,海事,かいじ,"[n, adj-no]",[maritime affairs]
+717,1,海事,かいじ,"[n, adj-no]",[maritime affairs]
 718,1,海女,あま,[n],"[ama, female diver (who collects shells, seaweed, etc.)]"
 719,1,海草,かいそう,[n],"[marine plant, seagrass, seaweed]"
 720,,海兵,かいへい,[n],"[sailor, marine]"
@@ -950,7 +950,7 @@
 950,1,求道,きゅうどう,[n],[seeking for truth]
 951,,泣かせる,なかせる,"[v1, vt]","[to make someone cry, to move someone to tears, to let cry, to grieve]"
 952,1,泣きじゃくる,なきじゃくる,[v5r],[to sob]
-953,,泣き叫ぶ,なきさけぶ,"[v5b, vi]","[to cry and shout, to scream]"
+953,1,泣き叫ぶ,なきさけぶ,"[v5b, vi]","[to cry and shout, to scream]"
 954,1,泣き所,なきどころ,[n],"[weak point, vulnerable point, Achilles' heel]"
 955,1,泣き崩れる,なきくずれる,"[v1, vi]",[to break down crying]
 956,1,泣寝入り,なきねいり,"[n, vs]","[crying oneself to sleep, giving up in frustration, accepting meekly, being compelled to accept a situation]"
@@ -1514,7 +1514,7 @@
 1514,,座り込む,すわりこむ,"[v5m, vi]","[to sit down (and bask), to sit-in (in protest)]"
 1515,,座標軸,ざひょうじく,[n],[coordinate axis]
 1516,,挫傷,ざしょう,"[n, vs]",[bruise (internal)]
-1517,,催眠術,さいみんじゅつ,[n],[hypnotism]
+1517,1,催眠術,さいみんじゅつ,[n],[hypnotism]
 1518,1,再興,さいこう,"[n, vs]","[revival, restoration, resuscitation]"
 1519,,再生産,さいせいさん,"[n, vs]",[reproduction]
 1520,1,再調査,さいちょうさ,[n],"[re-examination, reinvestigation]"
@@ -1832,7 +1832,7 @@
 1832,,主翼,しゅよく,[n],"[main wings (of an aeroplane, airplane)]"
 1833,,取りこぼす,とりこぼす,"[v5s, vi]","[to lose an easy game, to suffer an unexpected defeat, to lose information]"
 1834,,取り違える,とりちがえる,"[v1, vt]","[to mistake one thing for another, to mix up two things, to confuse two things, to take by mistake, to misunderstand, to misapprehend]"
-1835,,取り下げる,とりさげる,"[v1, vt]","[to withdraw, to abandon (e.g. a lawsuit)]"
+1835,1,取り下げる,とりさげる,"[v1, vt]","[to withdraw, to abandon (e.g. a lawsuit)]"
 1836,,取り外し,とりはずし,[n],"[removal, dismantling, detaching]"
 1837,,取り交わす,とりかわす,[v5s],"[to exchange, to interchange]"
 1838,,取り合い,とりあい,[n],"[scramble, struggle]"
@@ -2430,7 +2430,7 @@
 2430,1,船長,ふなおさ,[n],"[ship's captain, skipper, boatman]"
 2431,,船尾,せんび,"[n, adj-no]",[stern of a ship]
 2432,,選び出す,えらびだす,"[v5s, vt]","[to select, to pick out]"
-2433,,選曲,せんきょく,"[n, vs]","[chosen song, choosing a song, choice of songs]"
+2433,1,選曲,せんきょく,"[n, vs]","[chosen song, choosing a song, choice of songs]"
 2434,,前科,ぜんか,[n],"[previous conviction, criminal record, previous offense, previous offence]"
 2435,1,前駆,ぜんく,"[n, vs, adj-no]","[outrider (person riding horseback in the lead position of a cavalcade), outriding, harbinger, herald, precursor, forerunner, foretoken, anticipation]"
 2436,,前言,ぜんげん,"[n, vs]",[previous remarks]
@@ -2451,7 +2451,7 @@
 2451,1,前任者,ぜんにんしゃ,[n],[predecessor]
 2452,1,前方後円墳,ぜんぽうこうえんふん,[n],[keyhole-shaped tumulus (form of ancient Imperial grave)]
 2453,,前門,ぜんもん,[n],[front gate]
-2454,,前立腺,ぜんりつせん,[n],[prostate gland]
+2454,1,前立腺,ぜんりつせん,[n],[prostate gland]
 2455,,善玉,ぜんだま,[n],[good person]
 2456,1,善処,ぜんしょ,"[n, vs]","[handling carefully, tiding over, making best of, using discretion]"
 2457,,全壊,ぜんかい,"[n, vs]",[complete destruction]
@@ -2648,7 +2648,7 @@
 2648,,男泣き,おとこなき,"[n, vs]",[man's weeping (esp. someone not prone to tears)]
 2649,,男装,だんそう,"[n, adj-no, vs]","[disguising oneself as a man, dressing as a man (for a woman), male clothing]"
 2650,,知見,ちけん,"[n, vs]","[expertise, experience, knowledge]"
-2651,,知力,ちりょく,"[n, adj-no]","[wisdom, intellectual power, intelligence, mental capacity, brains]"
+2651,1,知力,ちりょく,"[n, adj-no]","[wisdom, intellectual power, intelligence, mental capacity, brains]"
 2652,,地滑り,じすべり,[n],[landslide]
 2653,,地酒,じざけ,[n],[local sake]
 2654,,地所,じしょ,[n],"[estate, plot of land]"
@@ -3930,9 +3930,9 @@
 3930,,悪霊,あくりょう,[n],[evil spirit]
 3931,,案文,あんぶん,[n],"[draft, draught]"
 3932,,闇夜,あんや,[n],[dark night]
-3933,,一家言,いっかげん,[n],"[private opinion, personal view, personal opinion]"
+3933,1,一家言,いっかげん,[n],"[private opinion, personal view, personal opinion]"
 3934,,一個人,いちこじん,"[n, adj-no]","[private person, individual]"
-3935,,一山,ひとやま,[n],"[one mountain, pile (of something), heap, lot (in sale), hump, worst part, large profit, killing]"
+3935,1,一山,ひとやま,[n],"[one mountain, pile (of something), heap, lot (in sale), hump, worst part, large profit, killing]"
 3936,,一子,いっし,[n],"[a child, one child, one of several children, especially the son and heir, one stone (in the game of go)]"
 3937,1,ひとり子,ひとりご,[n],[(an) only child]
 3938,1,一人,いちにん,[n],[one person]
@@ -4263,7 +4263,7 @@
 4263,,向い風,むかいかぜ,[n],"[headwind, head wind]"
 4264,,向かい側,むかいがわ,"[n, adj-no]","[opposite side, other side, other party]"
 4265,1,召し使い,めしつかい,[n],"[servant, menial]"
-4266,,諸々,もろもろ,[n],"[all kinds of things, various things, large number of people]"
+4266,1,諸々,もろもろ,[n],"[all kinds of things, various things, large number of people]"
 4267,1,友誼,ゆうぎ,[n],"[friendship, friendly relations, fellowship]"
 4268,1,勇姿,ゆうし,[n],[gallant figure]
 4269,1,柚,ゆず,[n],"[yuzu (species of aromatic Asiatic citron, Citrus junos)]"
@@ -4774,7 +4774,7 @@
 4774,,心房,しんぼう,"[n, adj-no]","[atrium, chamber of the heart]"
 4775,1,深部,しんぶ,[n],"[depths, deep part]"
 4776,,新著,しんちょ,[n],[new book or literary work]
-4777,,進言,しんげん,"[n, vs]","[proposal, counsel, advice (to a superior)]"
+4777,1,進言,しんげん,"[n, vs]","[proposal, counsel, advice (to a superior)]"
 4778,,神経系,しんけいけい,[n],[nervous system]
 4779,,神経痛,しんけいつう,[n],"[nerve pain, neuralgia]"
 4780,,親権,しんけん,[n],[parental authority]
@@ -5390,7 +5390,7 @@
 5390,1,居士,こじ,[n],"[grhapati (layman; sometimes used as a posthumous suffix), private-sector scholar]"
 5391,,裾野,すその,[n],"[foot of a mountain, plain at the foot of a mountain, range, spread, extent, encompassing circle]"
 5392,,湖底,こてい,"[n, adj-no]",[bottom of a lake]
-5393,,湖岸,こがん,"[n, adj-no]","[lakeshore, lakeside]"
+5393,1,湖岸,こがん,"[n, adj-no]","[lakeshore, lakeside]"
 5394,,仮想敵国,かそうてきこく,[n],[hypothetical or imaginary enemy]
 5395,,家父,かふ,[n],[one's father]
 5396,,家政学,かせいがく,[n],"[home economics, domestic science]"
@@ -5564,12 +5564,12 @@
 5564,,水難,すいなん,[n],"[drowning, flood, shipwreck]"
 5565,1,追分,おいわけ,[n],[forked road]
 5566,,追手,おいて,[n],"[pursuer, pursuing party, posse]"
-5567,,追い立て,おいたて,[n],"[ejection, eviction, dispossession]"
+5567,1,追い立て,おいたて,[n],"[ejection, eviction, dispossession]"
 5568,,追尾,ついび,"[n, vs]","[following, pursuing, tracking, shadowing, tailing, chasing]"
 5569,1,論功行賞,ろんこうこうしょう,[n],"[conferral of honors (honours), according to merits]"
 5570,,論法,ろんぽう,[n],"[logic, reasoning, argument, line of argument]"
 5571,,論集,ろんしゅう,[n],[treatise or essay collection]
-5572,,論壇,ろんだん,[n],"[rostrum, the world of criticism]"
+5572,1,論壇,ろんだん,[n],"[rostrum, the world of criticism]"
 5573,,類例,るいれい,[n],"[similar instance, similar case, parallel case, analogy]"
 5574,,類書,るいしょ,[n],[similar books]
 5575,,訳文,やくぶん,[n],"[a translation, translated sentence]"
@@ -6028,7 +6028,7 @@
 6028,1,太公望,たいこうぼう,[n],[(avid) angler]
 6029,1,太白,たいはく,[n],"[Venus (planet), thick silk thread, refined sugar, white rice jelly, variety of sweet potato]"
 6030,1,多方面,たほうめん,"[adj-na, n]","[many-sided, multifarious, versatility]"
-6031,,多色,たしょく,"[n, adj-no]","[many colors, many colours]"
+6031,1,多色,たしょく,"[n, adj-no]","[many colors, many colours]"
 6032,,多雨,たう,"[n, adj-no]",[heavy rain]
 6033,,多発性,たはつせい,[n],"[multiple, poly-]"
 6034,1,舌鼓,したつづみ,[n],[smacking one's lips]
@@ -6235,7 +6235,7 @@
 6235,,三段目,さんだんめ,[n],[third lowest division]
 6236,,杉戸,すぎど,[n],[door made of cedar]
 6237,,検体,けんたい,[n],"[specimen, sample, object to be examined]"
-6238,,検事局,けんじきょく,[n],[prosecutor's office]
+6238,1,検事局,けんじきょく,[n],[prosecutor's office]
 6239,1,藍綬褒章,らんじゅほうしょう,[n],[Medal with Blue Ribbon]
 6240,,接ぎ木,つぎき,"[n, vs]",[grafting]
 6241,,接岸,せつがん,"[n, vs]",[coming alongside a pier or quay]
@@ -6386,7 +6386,7 @@
 6386,1,震撼,しんかん,"[n, vs]",[shake]
 6387,1,異教徒,いきょうと,[n],"[pagan, heretic]"
 6388,,埋め合わせ,うめあわせ,[n],[compensation]
-6389,,来迎,らいごう,[n],[the coming of Amida Buddha to welcome the spirits of the dead]
+6389,1,来迎,らいごう,[n],[the coming of Amida Buddha to welcome the spirits of the dead]
 6390,,流し打ち,ながしうち,[n],[hitting to the opposite field]
 6391,1,硫安,りゅうあん,[n],[ammonium sulfate]
 6392,,捜索隊,そうさくたい,[n],[search party]
@@ -6448,7 +6448,7 @@
 6448,1,白玉,しらたま,[n],"[white gem (esp. a pearl), rice flour dumpling, white-flowered camellia]"
 6449,1,白地,しらじ,"[n, adj-pn]","[white background, blank, female virgin]"
 6450,,白百合,しらゆり,[n],[white lily]
-6451,,白浜,しらはま,[n],[white sandy beach]
+6451,1,白浜,しらはま,[n],[white sandy beach]
 6452,,白梅,しらうめ,[n],"[white plum blossoms, white Japanese apricot, white-blossomed plum]"
 6453,1,白馬,しろうま,[n],"[white horse, unrefined sake]"
 6454,,白装束,しろしょうぞく,[n],[white clothing]
@@ -6470,7 +6470,7 @@
 6470,,風変わり,ふうがわり,"[adj-na, n]","[strange, eccentric]"
 6471,,風前,ふうぜん,[n],[where the wind blows]
 6472,,風貌,ふうぼう,[n],"[looks, appearance]"
-6473,,早出,はやで,"[n, vs]",[early arrival]
+6473,1,早出,はやで,"[n, vs]",[early arrival]
 6474,1,早苗,さなえ,[n],[rice seedlings]
 6475,,早変わり,はやがわり,[n],[quick change]
 6476,1,早婚,そうこん,[n],"[early marriage, marrying young]"
@@ -6735,7 +6735,7 @@
 6735,1,黒鳥,こくちょう,[n],[black swan (Cygnus atratus)]
 6736,1,差し込み,さしこみ,[n],"[insertion, plug, (electrical) outlet, power point, spasm of pain, griping pain, (fit of) convulsions, stitch]"
 6737,,最後列,さいこうれつ,[n],"[(very) back (last) row, rearmost row]"
-6738,,紫綬褒章,しじゅほうしょう,[n],[Medal with Purple Ribbon]
+6738,1,紫綬褒章,しじゅほうしょう,[n],[Medal with Purple Ribbon]
 6739,,主著,しゅちょ,[n],[one's main (chief) (literary) work]
 6740,,取っ組み合い,とっくみあい,[n],"[grapple, scuffle]"
 6741,1,書き直し,かきなおし,[n],"[rewriting, rewrite, fair copy]"
@@ -7365,7 +7365,7 @@ that (archaism)
 he (archaism)
 she (archaism)
 that person (archaism)"
-6958,,雌,め,,"_
+6958,1,雌,め,,"_
 -----------
 -----------
 female
@@ -9691,7 +9691,7 @@ hypotenuse"
 -----------
 -----------
 boiler"
-7368,,缶,ほとぎ,,"_
+7368,1,缶,ほとぎ,,"_
 -----------
 -----------
 fat-bodied, small-mouthed earthenware jar for carrying water
@@ -11700,7 +11700,7 @@ pleasant-smelling vegetation"
 junior Shinto priest
 Shinto priest (polite (teineigo) language, obscure term)
 generic title for a member of the Shinto priesthood (polite (teineigo) language, obscure term)"
-7729,,祝,しゅく,,"_
+7729,1,祝,しゅく,,"_
 -----------
 -----------
 public holiday (abbreviation)
@@ -12414,7 +12414,7 @@ to be crooked (chin)"
 charming
 fascinating
 voluptuous"
-7857,,破れ目,やぶれめ,,"_
+7857,1,破れ目,やぶれめ,,"_
 -----------
 -----------
 rent
@@ -12481,7 +12481,7 @@ sea devil ()"
 -----------
 invasion (obscure term)
 invader (obscure term)"
-7869,,赤短,あかたん,,"_
+7869,1,赤短,あかたん,,"_
 -----------
 -----------
 (in hanafuda) the collection of the three red poetry ribbon cards"
