@@ -1,6 +1,12 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.TreeMap;
+
+import pl.idedyk.japanese.dictionary.dto.CommonWord;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 
 public class Test {
 
@@ -337,8 +343,29 @@ public class Test {
 		CsvReaderWriter.generateKanjiRadicalCsv(outputStream, radicalList);
 		*/
 		
-		JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
+		// JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
 		
-		System.out.println(jishoOrgConnector.isWordExists("猫義"));
+		// System.out.println(jishoOrgConnector.isWordExists("猫義"));
+		
+		Map<Integer, CommonWord> commonWordMap = CsvReaderWriter.readCommonWordFile("input/common_word.csv");
+		
+		Collection<CommonWord> commonWordValues = commonWordMap.values();
+		
+		Iterator<CommonWord> commonWordValuesIterator = commonWordValues.iterator();
+		
+		Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
+		
+		while (commonWordValuesIterator.hasNext() == true) {
+
+			CommonWord currentCommonWord = commonWordValuesIterator.next();
+			
+			if (currentCommonWord.getId().intValue() < 6863 || currentCommonWord.isDone() == true) {
+				continue;				
+			}
+			
+			newCommonWordMap.put(currentCommonWord.getId(), currentCommonWord);
+		}		
+		
+		CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/test.csv");
 	}
 }

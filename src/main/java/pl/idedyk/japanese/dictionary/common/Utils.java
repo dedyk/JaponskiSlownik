@@ -6,6 +6,10 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.dto.CommonWord;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 
@@ -100,5 +104,27 @@ public class Utils {
 		}
 		
 		return null;
+	}
+	
+	public static CommonWord convertGroupEntryToCommonWord(int id, GroupEntry groupEntry) {
+				
+		List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();
+		
+		List<String> translateStringList = new ArrayList<String>();
+		
+		for (GroupEntryTranslate groupEntryTranslate : translateList) {
+			translateStringList.add(groupEntryTranslate.getTranslate());
+		}
+		
+		CommonWord commonWord = new CommonWord(id, false, groupEntry.getKanji(), groupEntry.getKana(), groupEntry.getWordTypeList().toString(), translateStringList.toString());
+		
+		return commonWord;
+	}
+	
+	public static CommonWord convertEDictEntryToCommonWord(int id, EDictEntry edictEntry) {
+		
+		CommonWord commonWord = new CommonWord(id, false, edictEntry.getKanji(), edictEntry.getKana(), edictEntry.getPos().toString(), edictEntry.getRawLine());
+		
+		return commonWord;		
 	}
 }

@@ -946,7 +946,7 @@ public class CsvReaderWriter {
 			
 			csvWriter.write(String.valueOf(currentCommonWordEntry.getValue().getId()));
 			csvWriter.write(currentCommonWordEntry.getValue().isDone() == true ? "1" : "");
-			csvWriter.write(currentCommonWordEntry.getValue().getKanji());
+			csvWriter.write(currentCommonWordEntry.getValue().getKanji() != null ? currentCommonWordEntry.getValue().getKanji() : "-");
 			csvWriter.write(currentCommonWordEntry.getValue().getKana());
 			csvWriter.write(currentCommonWordEntry.getValue().getType());
 			csvWriter.write(currentCommonWordEntry.getValue().getTranslate());

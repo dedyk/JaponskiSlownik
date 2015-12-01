@@ -1,15 +1,14 @@
 package pl.idedyk.japanese.dictionary.misc;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
-import pl.idedyk.japanese.dictionary.common.Helper.CreatePolishJapaneseEntryResult;
+import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
@@ -40,7 +39,9 @@ public class FindMissingTheSameKanji {
 		
 		System.out.println("Generowanie słów...");
 		
-		List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
+		Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
+
+		int csvId = 1;
 				
 		Set<String> alreadyAddedGroupEntry = new TreeSet<String>();
 		
@@ -96,19 +97,18 @@ public class FindMissingTheSameKanji {
 							
 							//
 							
-							CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryInGroup, 
-									polishJapaneseEntry.getId(), null);
+							CommonWord commonWord = pl.idedyk.japanese.dictionary.common.Utils.convertGroupEntryToCommonWord(csvId, groupEntryInGroup);
 							
-							PolishJapaneseEntry newPolishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;								
-	
-							newWordList.add(newPolishJapaneseEntry);						
+							newCommonWordMap.put(commonWord.getId(), commonWord);
+							
+							csvId++;						
 						}
 					}
 				}
 			}			
 		}
 		
-		CsvReaderWriter.generateCsv("input/missing-the-same-kanji.csv", newWordList, true, true, false);
+		CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/missing-the-same-kanji.csv");
 	}
 	
 	private static String getKeyForAlreadyAddedGroupEntrySet(GroupEntry groupEntry) {

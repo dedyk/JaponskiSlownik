@@ -1,17 +1,14 @@
 package pl.idedyk.japanese.dictionary.misc;
 
-import java.io.FileWriter;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
-import com.csvreader.CsvWriter;
-
+import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
@@ -35,9 +32,8 @@ public class ShowMissingPriorityWords {
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
 		
 		List<Group> groupList = jmeNewDictionary.getGroupList();
-		
-		// common word writer
-		CsvWriter csvWriter = new CsvWriter(new FileWriter("input/common_word.csv"), ',');
+				
+		Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
 		
 		int csvId = 1;
 		
@@ -66,29 +62,16 @@ public class ShowMissingPriorityWords {
 						
 					System.out.println(groupEntry);
 					
-					csvWriter.write(String.valueOf(csvId));
-					csvWriter.write("");
-					csvWriter.write(groupEntryKanji != null ? groupEntryKanji : "-");
-					csvWriter.write(groupEntryKana);
-					csvWriter.write(groupEntry.getWordTypeList().toString());
+					CommonWord commonWord = pl.idedyk.japanese.dictionary.common.Utils.convertGroupEntryToCommonWord(csvId, groupEntry);
 					
-					List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();
+					newCommonWordMap.put(commonWord.getId(), commonWord);
 					
-					List<String> translateStringList = new ArrayList<String>();
-					
-					for (GroupEntryTranslate groupEntryTranslate : translateList) {
-						translateStringList.add(groupEntryTranslate.getTranslate());
-					}					
-					
-					csvWriter.write(translateStringList.toString());
-
-					csvWriter.endRecord();
-
 					csvId++;						
 				}				
 			}
 		}	
 		
-		csvWriter.close();
+		// zapis do pliku
+		CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/missing_priority_common_word.csv");
 	}
 }

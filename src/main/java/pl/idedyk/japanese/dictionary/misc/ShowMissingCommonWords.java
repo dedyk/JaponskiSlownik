@@ -1,16 +1,15 @@
 package pl.idedyk.japanese.dictionary.misc;
 
-import java.io.FileWriter;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
-
-import com.csvreader.CsvWriter;
 
 public class ShowMissingCommonWords {
 
@@ -27,8 +26,7 @@ public class ShowMissingCommonWords {
 		// jmedict common iterator
 		Iterator<EDictEntry> jmedictCommonIterator = jmedictCommon.values().iterator();
 
-		// common word writer
-		CsvWriter csvWriter = new CsvWriter(new FileWriter("input/common_word.csv"), ',');
+		Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
 
 		int csvId = 1;
 
@@ -40,22 +38,19 @@ public class ShowMissingCommonWords {
 					currentEdictEntry);
 
 			if (findPolishJapaneseEntryResult == null) {
+				
 				System.out.println(currentEdictEntry);
 
-				csvWriter.write(String.valueOf(csvId));
-				csvWriter.write("");
-				csvWriter.write(currentEdictEntry.getKanji());
-				csvWriter.write(currentEdictEntry.getKana());
-				csvWriter.write(currentEdictEntry.getPos().toString());
-				csvWriter.write(currentEdictEntry.getRawLine());
-
-				csvWriter.endRecord();
-
-				csvId++;
+				CommonWord commonWord = pl.idedyk.japanese.dictionary.common.Utils.convertEDictEntryToCommonWord(csvId, currentEdictEntry);
+				
+				newCommonWordMap.put(commonWord.getId(), commonWord);
+				
+				csvId++;						
 			}
 		}
-
-		csvWriter.close();
+		
+		// zapis do pliku
+		CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/missing_common_word.csv");
 	}
 
 	private static PolishJapaneseEntry findPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries,
