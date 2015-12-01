@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary.tools;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -11,7 +12,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
+import java.util.Map.Entry;
 
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
@@ -25,6 +28,7 @@ import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
+import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -902,4 +906,54 @@ public class CsvReaderWriter {
 				
 		csvWriter.close();		
 	}
+	
+	public static Map<Integer, CommonWord> readCommonWordFile(String fileName) throws Exception {
+		
+		TreeMap<Integer, CommonWord> result = new TreeMap<Integer, CommonWord>();
+		
+		CsvReader csvReader = new CsvReader(new FileReader(new File(fileName)));
+				
+		while (csvReader.readRecord()) {
+			
+			Integer id = Integer.parseInt(csvReader.get(0));
+			
+			boolean done = csvReader.get(1).equals("1");
+			
+			String kanji = csvReader.get(2);
+			String kana = csvReader.get(3);
+			
+			String type = csvReader.get(4);
+			
+			String translate = csvReader.get(5);
+			
+			CommonWord commonWord = new CommonWord(id, done, kanji, kana, type, translate);
+			
+			result.put(id, commonWord);
+		}
+		
+		csvReader.close();
+		
+		return result;
+	}
+	
+	public static void writeCommonWordFile( Map<Integer, CommonWord> commonWordMap, String fileName) throws Exception {
+		
+		CsvWriter csvWriter = new CsvWriter(new FileWriter(fileName), ',');
+		
+		Set<Entry<Integer, CommonWord>> commonWordMapEntrySet = commonWordMap.entrySet();
+		
+		for (Entry<Integer, CommonWord> currentCommonWordEntry : commonWordMapEntrySet) {
+			
+			csvWriter.write(String.valueOf(currentCommonWordEntry.getValue().getId()));
+			csvWriter.write(currentCommonWordEntry.getValue().isDone() == true ? "1" : "");
+			csvWriter.write(currentCommonWordEntry.getValue().getKanji());
+			csvWriter.write(currentCommonWordEntry.getValue().getKana());
+			csvWriter.write(currentCommonWordEntry.getValue().getType());
+			csvWriter.write(currentCommonWordEntry.getValue().getTranslate());
+			
+			csvWriter.endRecord();
+		}	
+		
+		csvWriter.close();
+	}	
 }
