@@ -7,10 +7,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
 
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
@@ -22,13 +22,12 @@ import org.apache.lucene.store.Directory;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.common.Helper;
-import pl.idedyk.japanese.dictionary.common.Helper.CreatePolishJapaneseEntryResult;
+import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 
-public class GenerateMissingWordList {
+public class GenerateMissingWordListInCommonWords {
 
 	public static void main(String[] args) throws Exception {
 		
@@ -45,38 +44,25 @@ public class GenerateMissingWordList {
 		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
-
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+				
+		// czytanie listy common'owych plikow
 		
-		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(polishJapaneseEntries);
+		System.out.println("Wczytywanie plików common'owych");
+		
+		Map<Integer, CommonWord> commonWordMap = CsvReaderWriter.readCommonWordFile("input/common_word.csv");
 		
 		System.out.println("Indeksowanie...");
 
 		// tworzenie indeksu lucene
 		Directory index = Helper.createLuceneDictionaryIndex(jmeNewDictionary);
-		
-		List<PolishJapaneseEntry> foundWordList = new ArrayList<PolishJapaneseEntry>();
-		List<PolishJapaneseEntry> alreadyAddedWordList = new ArrayList<PolishJapaneseEntry>();
-		
+				
 		List<String> foundWordSearchList = new ArrayList<String>();		
 		
-		List<PolishJapaneseEntry> notFoundWordList = new ArrayList<PolishJapaneseEntry>();
-		List<String> notFoundWordSearchList = new ArrayList<String>();
-
-		List<PolishJapaneseEntry> notFoundJishoFoundWordList = new ArrayList<PolishJapaneseEntry>();
-		List<String> notFoundJishoFoundWordSearchList = new ArrayList<String>();
-
 		// stworzenie wyszukiwacza
 		IndexReader reader = DirectoryReader.open(index);
 
 		IndexSearcher searcher = new IndexSearcher(reader);
-
-		int counter = 0;
-		
-		Set<Integer> alreadyFoundDocument = new TreeSet<Integer>();
-		
-		JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
-		
+				
 		System.out.println("Szukanie...");
 		for (String currentMissingWord : missingWords) {
 			
@@ -84,85 +70,41 @@ public class GenerateMissingWordList {
 				continue;
 			}
 			
-			counter++;
-
 			Query query = Helper.createLuceneDictionaryIndexQuery(currentMissingWord);
 
 			ScoreDoc[] scoreDocs = searcher.search(query, null, 10).scoreDocs;
 			
 			if (scoreDocs.length > 0) {
 				
-				foundWordSearchList.add(currentMissingWord);
-				
 				for (ScoreDoc scoreDoc : scoreDocs) {
 					
-					if (alreadyFoundDocument.contains(scoreDoc.doc) == true) {
-						continue;
-						
-					} else {
-						alreadyFoundDocument.add(scoreDoc.doc);
-						
-					}
-
 					Document foundDocument = searcher.doc(scoreDoc.doc);
 
 					GroupEntry groupEntry = Helper.createGroupEntry(foundDocument);
 					
-					CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counter, currentMissingWord);
+					String groupEntryKanji = groupEntry.getKanji();
+					String groupEntryKana = groupEntry.getKana();
 					
-					PolishJapaneseEntry polishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;
-										
-					if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
-						foundWordList.add(polishJapaneseEntry);
-						
-					} else {
-						alreadyAddedWordList.add(polishJapaneseEntry);
+					boolean existsInCommonWords = existsInCommonWords(commonWordMap, groupEntryKanji, groupEntryKana);
+					
+					if (existsInCommonWords == false) {
+						continue;
+					}
+					
+					if (foundWordSearchList.contains(currentMissingWord) == false) {
+						foundWordSearchList.add(currentMissingWord);
 					}
 				}				
-				
-			} else {
-				
-				PolishJapaneseEntry polishJapaneseEntry = Helper.createEmptyPolishJapaneseEntry(currentMissingWord, counter);
-				
-				System.out.println("Szukanie w jisho.org: " + currentMissingWord);
-				
-				boolean wordExistsInJishoOrg = jishoOrgConnector.isWordExists(currentMissingWord);
-				
-				if (wordExistsInJishoOrg == true) {
-					
-					notFoundJishoFoundWordSearchList.add(currentMissingWord);								
-					
-					notFoundJishoFoundWordList.add(polishJapaneseEntry);
-					
-				} else {
-					
-					notFoundWordSearchList.add(currentMissingWord);								
-					
-					notFoundWordList.add(polishJapaneseEntry);
-				}
 			}
 		}
 
 		reader.close();
 		
 		System.out.println("Zapisywanie słownika...");
-		
-		List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
-		
-		newWordList.addAll(foundWordList);
-		newWordList.addAll(alreadyAddedWordList);
-		newWordList.addAll(notFoundJishoFoundWordList);
-		newWordList.addAll(notFoundWordList);
-		
-		CsvReaderWriter.generateCsv("input/word-new.csv", newWordList, true, true, false);
-		
+				
 		FileWriter searchResultFileWriter = new FileWriter(fileName + "-new");
 		
 		searchResultFileWriter.write(Utils.convertListToString(foundWordSearchList));
-		searchResultFileWriter.write("\n---------\n");
-		searchResultFileWriter.write(Utils.convertListToString(notFoundJishoFoundWordSearchList));
-		searchResultFileWriter.write("\n---------\n");
-		searchResultFileWriter.write(Utils.convertListToString(notFoundWordSearchList));
 		
 		searchResultFileWriter.close();
 	}
@@ -202,5 +144,38 @@ public class GenerateMissingWordList {
 			
 			throw new RuntimeException(e);
 		}
-	}		
+	}	
+	
+	private static boolean existsInCommonWords(Map<Integer, CommonWord> commonWordMap, String kanji, String kana) {
+		
+		if (kanji == null || kanji.equals("") == true) {
+			kanji = "-";
+		}
+		
+		Collection<CommonWord> commonWordValues = commonWordMap.values();
+		
+		Iterator<CommonWord> commonWordValuesIterator = commonWordValues.iterator();
+				
+		while (commonWordValuesIterator.hasNext() == true) {
+			
+			CommonWord currentCommonWord = commonWordValuesIterator.next();
+			
+			if (currentCommonWord.isDone() == false) {
+				
+				String currentCommonWordKanji = currentCommonWord.getKanji();
+				
+				if (currentCommonWordKanji == null || currentCommonWordKanji.equals("") == true) {
+					currentCommonWordKanji = "-";
+				}
+				
+				String currentCommonWordKana = currentCommonWord.getKana();
+				
+				if (kanji.equals(currentCommonWordKanji) == true && kana.equals(currentCommonWordKana) == true) {
+					return true;
+				}
+			}
+		}
+		
+		return false;
+	}
 }

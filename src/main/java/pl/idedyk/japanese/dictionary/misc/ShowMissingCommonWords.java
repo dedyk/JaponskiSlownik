@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -41,7 +42,7 @@ public class ShowMissingCommonWords {
 				
 				System.out.println(currentEdictEntry);
 
-				CommonWord commonWord = pl.idedyk.japanese.dictionary.common.Utils.convertEDictEntryToCommonWord(csvId, currentEdictEntry);
+				CommonWord commonWord = Helper.convertEDictEntryToCommonWord(csvId, currentEdictEntry);
 				
 				newCommonWordMap.put(commonWord.getId(), commonWord);
 				

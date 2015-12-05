@@ -28,8 +28,7 @@ public class GetCommonPartList {
 		// czytanie pliku ze slownikiem
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 
-		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = 
-				pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(polishJapaneseEntries);
 
 		// czytanie listy common'owych plikow
 		Map<Integer, CommonWord> commonWordMap = CsvReaderWriter.readCommonWordFile("input/common_word.csv");

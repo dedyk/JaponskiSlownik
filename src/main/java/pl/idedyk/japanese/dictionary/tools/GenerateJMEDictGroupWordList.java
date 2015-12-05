@@ -15,6 +15,7 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
@@ -57,7 +58,7 @@ public class GenerateJMEDictGroupWordList {
 		
 		Set<String> alreadyAddedGroupEntry = new TreeSet<String>();
 		
-		final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
+		final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(polishJapaneseEntries);
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -92,7 +93,7 @@ public class GenerateJMEDictGroupWordList {
 					String groupEntryKana = groupEntry.getKana();
 											
 					PolishJapaneseEntry findPolishJapaneseEntry = 
-							pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntryWithEdictDuplicate(polishJapaneseEntry, cachePolishJapaneseEntryList, 
+							Helper.findPolishJapaneseEntryWithEdictDuplicate(polishJapaneseEntry, cachePolishJapaneseEntryList, 
 							groupEntryKanji, groupEntryKana);
 					
 					if (findPolishJapaneseEntry != null) {

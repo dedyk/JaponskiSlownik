@@ -1,14 +1,33 @@
 package pl.idedyk.japanese.dictionary.common;
 
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+
+import org.apache.lucene.document.Document;
+import org.apache.lucene.document.Field;
+import org.apache.lucene.document.TextField;
+import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.Term;
+import org.apache.lucene.index.IndexWriterConfig.OpenMode;
+import org.apache.lucene.search.BooleanQuery;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.TermQuery;
+import org.apache.lucene.search.BooleanClause.Occur;
+import org.apache.lucene.store.Directory;
+import org.apache.lucene.store.RAMDirectory;
+import org.apache.lucene.util.Version;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
@@ -18,12 +37,16 @@ import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
+import pl.idedyk.japanese.dictionary.lucene.LuceneAnalyzer;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
@@ -218,7 +241,7 @@ public class Helper {
 		// generowanie alternatyw
 		
 		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = 
-				pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
+				cachePolishJapaneseEntryList(polishJapaneseEntries);
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -236,7 +259,7 @@ public class Helper {
 					String groupEntryKanji = groupEntry.getKanji();
 					String groupEntryKana = groupEntry.getKana();
 																
-					PolishJapaneseEntry findPolishJapaneseEntry = pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntryWithEdictDuplicate(
+					PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntryWithEdictDuplicate(
 							polishJapaneseEntry, cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
 					
 					if (findPolishJapaneseEntry != null) {
@@ -773,8 +796,7 @@ public class Helper {
 		
 		if (cachePolishJapaneseEntryList != null) {
 			
-			findPolishJapaneseEntry = pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntry(
-					cachePolishJapaneseEntryList, kanji, kana);			
+			findPolishJapaneseEntry = findPolishJapaneseEntry(cachePolishJapaneseEntryList, kanji, kana);			
 		}
 		
 		newTranslateList.add("_");
@@ -896,5 +918,303 @@ public class Helper {
 		}	
 		
 		return wordType;
+	}
+	
+	public static Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList(List<PolishJapaneseEntry> polishJapaneseEntries) {
+		
+		Map<String, List<PolishJapaneseEntry>> result = new TreeMap<String, List<PolishJapaneseEntry>>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			String kanji = polishJapaneseEntry.getKanji();
+			String kana = polishJapaneseEntry.getKana();
+			
+			if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
+				kanji = "$$$NULL$$$";
+			}
+			
+			String key = kanji + "." + kana;
+			
+			List<PolishJapaneseEntry> keyPolishJapaneseEntryList = result.get(key);
+			
+			if (keyPolishJapaneseEntryList == null) {				
+				keyPolishJapaneseEntryList = new ArrayList<PolishJapaneseEntry>();
+				
+				result.put(key, keyPolishJapaneseEntryList);
+			}
+			
+			keyPolishJapaneseEntryList.add(polishJapaneseEntry);			
+		}
+		
+		return result;
+	}
+	
+	public static List<PolishJapaneseEntry> findPolishJapaneseEntry(
+			Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryMap, String findKanji, String findKana) {
+		
+		if (findKanji == null || findKanji.equals("") == true || findKanji.equals("-") == true) {
+			findKanji = "$$$NULL$$$";
+		}
+
+		String foundKey = findKanji + "." + findKana;
+		
+		List<PolishJapaneseEntry> polishJapaneseEntries = cachePolishJapaneseEntryMap.get(foundKey);
+		
+		if (polishJapaneseEntries == null) {
+			return null;
+		}
+		
+		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+			
+			if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+				continue;
+			}		
+			
+			result.add(polishJapaneseEntry);
+		}
+		
+		return result;
+	}	
+	
+	public static PolishJapaneseEntry findPolishJapaneseEntryWithEdictDuplicate(PolishJapaneseEntry parentPolishJapaneseEntry,
+			Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryMap, String findKanji, String findKana) {
+		
+		if (findKanji == null || findKanji.equals("") == true || findKanji.equals("-") == true) {
+			findKanji = "$$$NULL$$$";
+		}
+
+		String foundKey = findKanji + "." + findKana;
+		
+		List<PolishJapaneseEntry> polishJapaneseEntries = cachePolishJapaneseEntryMap.get(foundKey);
+		
+		if (polishJapaneseEntries == null) {
+			return null;
+		}
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+			
+			if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+				continue;
+			}
+							
+			if (parentPolishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.EDICT_DUPLICATE, polishJapaneseEntry.getId()) == false) {
+				return polishJapaneseEntry;
+			}			
+		}
+		
+		return null;
+	}
+	
+	public static CommonWord convertGroupEntryToCommonWord(int id, GroupEntry groupEntry) {
+				
+		List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();
+		
+		List<String> translateStringList = new ArrayList<String>();
+		
+		for (GroupEntryTranslate groupEntryTranslate : translateList) {
+			translateStringList.add(groupEntryTranslate.getTranslate());
+		}
+		
+		CommonWord commonWord = new CommonWord(id, false, groupEntry.getKanji(), groupEntry.getKana(), groupEntry.getWordTypeList().toString(), translateStringList.toString());
+		
+		return commonWord;
+	}
+	
+	public static CommonWord convertEDictEntryToCommonWord(int id, EDictEntry edictEntry) {
+		
+		CommonWord commonWord = new CommonWord(id, false, edictEntry.getKanji(), edictEntry.getKana(), edictEntry.getPos().toString(), edictEntry.getRawLine());
+		
+		return commonWord;		
+	}
+	
+	public static Directory createLuceneDictionaryIndex(JMENewDictionary jmeNewDictionary) throws IOException {
+		
+		JMEDictEntityMapper jmEDictEntityMapper = new JMEDictEntityMapper();
+		
+		Directory index = new RAMDirectory();
+
+		// tworzenie analizatora lucene
+		LuceneAnalyzer analyzer = new LuceneAnalyzer(Version.LUCENE_47);
+
+		IndexWriterConfig indexWriterConfig = new IndexWriterConfig(Version.LUCENE_47, analyzer);
+		indexWriterConfig.setOpenMode(OpenMode.CREATE);
+
+		IndexWriter indexWriter = new IndexWriter(index, indexWriterConfig);
+
+		for (Group group : jmeNewDictionary.getGroupList()) {
+
+			List<GroupEntry> groupEntryList = group.getGroupEntryList();
+
+			for (GroupEntry groupEntry : groupEntryList) {
+
+				Document document = new Document();
+
+				Set<String> wordTypeList = groupEntry.getWordTypeList();
+
+				String kanji = groupEntry.getKanji();
+				List<String> kanjiInfoList = groupEntry.getKanjiInfoList();
+
+				String kana = groupEntry.getKana();
+				List<String> kanaInfoList = groupEntry.getKanaInfoList();
+
+				String romaji = groupEntry.getRomaji();
+
+				List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();
+				
+				List<String> translateList2 = new ArrayList<String>();
+				
+				for (GroupEntryTranslate groupEntryTranslate : translateList) {
+					
+					StringBuffer translate = new StringBuffer(groupEntryTranslate.getTranslate());
+					
+					List<String> miscInfoList = groupEntryTranslate.getMiscInfoList();
+					List<String> additionalInfoList = groupEntryTranslate.getAdditionalInfoList();
+					
+					boolean wasMiscOrAdditionalInfo = false;
+					
+					for (int idx = 0; miscInfoList != null && idx < miscInfoList.size(); ++idx) {
+						
+						if (wasMiscOrAdditionalInfo == false) {
+							translate.append(" (");
+							
+							wasMiscOrAdditionalInfo = true;
+							
+						} else {
+							translate.append(", ");
+						}
+						
+						translate.append(jmEDictEntityMapper.getDesc(miscInfoList.get(idx)));
+					}
+					
+					for (int idx = 0; additionalInfoList != null && idx < additionalInfoList.size(); ++idx) {
+						
+						if (wasMiscOrAdditionalInfo == false) {
+							translate.append(" (");
+							
+							wasMiscOrAdditionalInfo = true;
+							
+						} else {
+							translate.append(", ");
+						}
+					}
+					
+					if (wasMiscOrAdditionalInfo == true) {
+						translate.append(")");
+					}
+					
+					translateList2.add(translate.toString());
+				}
+				
+				addFieldToDocument(document, "wordTypeList", wordTypeList);
+
+				addFieldToDocument(document, "kanji", kanji);
+				addFieldToDocument(document, "kanjiInfoList", kanjiInfoList);
+
+				addFieldToDocument(document, "kana", kana);
+				addFieldToDocument(document, "kanaInfoList", kanaInfoList);
+
+				addFieldToDocument(document, "romaji", romaji);
+				
+				addFieldToDocument(document, "translateList", translateList2);
+				//addFieldToDocument(document, "additionalInfoList", additionalInfoList);
+
+				indexWriter.addDocument(document);
+			}			
+		}
+
+		indexWriter.close();
+		
+		
+		return index;
+	}
+	
+	public static void addFieldToDocument(Document document, String fieldName, String value) {
+
+		if (value != null) {
+			document.add(new TextField(fieldName, value, Field.Store.YES));
+		}
+	}
+
+	private static void addFieldToDocument(Document document, String fieldName, Collection<String> collection) {
+
+		if (collection == null) {
+			return;
+		}
+
+		for (String string : collection) {
+			document.add(new TextField(fieldName, string, Field.Store.YES));
+
+		}		
+	}
+	
+	public static Query createLuceneDictionaryIndexQuery(String word) {
+
+		BooleanQuery query = new BooleanQuery();
+
+		String[] wordSplited = word.split("\\s+");
+
+		BooleanQuery wordBooleanQuery = new BooleanQuery();
+
+		wordBooleanQuery.add(createQuery(wordSplited, "kanji"), Occur.SHOULD);
+		wordBooleanQuery.add(createQuery(wordSplited, "kana"), Occur.SHOULD);				
+
+		wordBooleanQuery.add(createQuery(wordSplited, "romaji"), Occur.SHOULD);
+
+		wordBooleanQuery.add(createQuery(wordSplited, "translateList"), Occur.SHOULD);
+		wordBooleanQuery.add(createQuery(wordSplited, "additionalInfoList"), Occur.SHOULD);
+
+		query.add(wordBooleanQuery, Occur.MUST);
+
+		return query;
+	}
+	
+	private static Query createQuery(String[] wordSplited, String fieldName) {
+
+		BooleanQuery booleanQuery = new BooleanQuery();
+
+		for (String currentWord : wordSplited) {
+			//booleanQuery.add(new PrefixQuery(new Term(fieldName, currentWord)), Occur.MUST);
+			booleanQuery.add(new TermQuery(new Term(fieldName, currentWord)), Occur.MUST);
+		}
+
+		return booleanQuery;
+	}
+	
+	public static GroupEntry createGroupEntry(Document document) {
+
+		GroupEntry groupEntry = new GroupEntry(null, null);
+
+		groupEntry.setWordTypeList(new LinkedHashSet<String>(Arrays.asList(document.getValues("wordTypeList"))));
+
+		groupEntry.setKanji(document.get("kanji"));
+		groupEntry.setKanjiInfoList(Arrays.asList(document.getValues("kanjiInfoList")));
+
+		groupEntry.setKana(document.get("kana"));
+		groupEntry.setKanaInfoList(Arrays.asList(document.getValues("kanaInfoList")));
+
+		groupEntry.setRomaji(document.get("romaji"));
+		
+		List<GroupEntryTranslate> translateList = new ArrayList<GroupEntryTranslate>();
+		
+		for (String currentTranslate : Arrays.asList(document.getValues("translateList"))) {
+			
+			GroupEntryTranslate translate = new GroupEntryTranslate();
+			
+			translate.setTranslate(currentTranslate);
+			
+			translateList.add(translate);
+		}
+				
+		groupEntry.setTranslateList(translateList);
+		
+		//groupEntry.setAdditionalInfoList(Arrays.asList(document.getValues("additionalInfoList")));
+
+		return groupEntry;
 	}
 }

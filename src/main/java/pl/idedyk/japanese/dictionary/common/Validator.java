@@ -1113,8 +1113,7 @@ public class Validator {
 		
 		Set<String> alreadyValidateErrorResultGroupIds = new HashSet<String>();
 		
-		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = 
-				pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(polishJapaneseEntries);
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -1132,7 +1131,7 @@ public class Validator {
 					String groupEntryKanji = groupEntry.getKanji();
 					String groupEntryKana = groupEntry.getKana();
 																
-					PolishJapaneseEntry findPolishJapaneseEntry = pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntryWithEdictDuplicate(
+					PolishJapaneseEntry findPolishJapaneseEntry = Helper.findPolishJapaneseEntryWithEdictDuplicate(
 							polishJapaneseEntry, cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
 					
 					if (findPolishJapaneseEntry != null) {

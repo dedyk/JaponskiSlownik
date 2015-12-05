@@ -7,6 +7,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
@@ -45,7 +46,7 @@ public class FindMissingTheSameKanji {
 				
 		Set<String> alreadyAddedGroupEntry = new TreeSet<String>();
 		
-		final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
+		final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(polishJapaneseEntries);
 				
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -85,7 +86,7 @@ public class FindMissingTheSameKanji {
 					String groupEntryKana = groupEntryInGroup.getKana();
 					
 					List<PolishJapaneseEntry> findPolishJapaneseEntryList = 
-							pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+							Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
 	
 					if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
 						
@@ -97,7 +98,7 @@ public class FindMissingTheSameKanji {
 							
 							//
 							
-							CommonWord commonWord = pl.idedyk.japanese.dictionary.common.Utils.convertGroupEntryToCommonWord(csvId, groupEntryInGroup);
+							CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntryInGroup);
 							
 							newCommonWordMap.put(commonWord.getId(), commonWord);
 							

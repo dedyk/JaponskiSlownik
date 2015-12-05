@@ -50,7 +50,7 @@ public class GenerateJMEDictGroupWordList2 {
 		
 		Set<String> alreadyAddedGroupEntry = new TreeSet<String>();
 		
-		final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
+		final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(polishJapaneseEntries);
 				
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -87,7 +87,7 @@ public class GenerateJMEDictGroupWordList2 {
 						String groupEntryKana = groupEntry.getKana();
 
 						PolishJapaneseEntry findPolishJapaneseEntry = 
-								pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntryWithEdictDuplicate(polishJapaneseEntry, cachePolishJapaneseEntryList, 
+								Helper.findPolishJapaneseEntryWithEdictDuplicate(polishJapaneseEntry, cachePolishJapaneseEntryList, 
 								groupEntryKanji, groupEntryKana);
 
 						if (findPolishJapaneseEntry == null) {

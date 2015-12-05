@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
@@ -22,7 +23,7 @@ public class ShowMissingPriorityWords {
 		
 		// cache'owanie slownika
 		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = 
-				pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
+				Helper.cachePolishJapaneseEntryList(polishJapaneseEntries);
 
 		// wczytywanie slownika edict
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
@@ -56,13 +57,13 @@ public class ShowMissingPriorityWords {
 				String groupEntryKanji = groupEntry.getKanji();
 				String groupEntryKana = groupEntry.getKana();
 									
-				List<PolishJapaneseEntry> findPolishJapaneseEntryList = pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+				List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
 					
 				if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
 						
 					System.out.println(groupEntry);
 					
-					CommonWord commonWord = pl.idedyk.japanese.dictionary.common.Utils.convertGroupEntryToCommonWord(csvId, groupEntry);
+					CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
 					
 					newCommonWordMap.put(commonWord.getId(), commonWord);
 					

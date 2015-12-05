@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
@@ -18,7 +19,7 @@ public class ShowAlreadyAddCommonWords {
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
 
 		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = 
-				pl.idedyk.japanese.dictionary.common.Utils.cachePolishJapaneseEntryList(polishJapaneseEntries);
+				Helper.cachePolishJapaneseEntryList(polishJapaneseEntries);
 		
 		
 		// czytanie listy common'owych plikow
@@ -38,7 +39,7 @@ public class ShowAlreadyAddCommonWords {
 			if (currentCommonWord.isDone() == false) {
 				
 				List<PolishJapaneseEntry> findPolishJapaneseEntry = 
-						pl.idedyk.japanese.dictionary.common.Utils.findPolishJapaneseEntry(cachePolishJapaneseEntryList, currentCommonWord.getKanji(), currentCommonWord.getKana());
+						Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, currentCommonWord.getKanji(), currentCommonWord.getKana());
 				
 				// ta pozycja jej juz dodana
 				if (findPolishJapaneseEntry != null && findPolishJapaneseEntry.size() > 0) {
