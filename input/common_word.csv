@@ -34,13 +34,13 @@
 34,1,-,アイゼン,[n],"[metal pins of climbing shoes, crampons, climbing irons]"
 35,1,-,アイソトープ,[n],[isotope]
 36,1,-,アイライン,[n],[eyeliner]
-37,,-,アインスタイニウム,[n],[einsteinium (Es)]
+37,1,-,アインスタイニウム,[n],[einsteinium (Es)]
 38,,-,アウトサイダー,[n],[outsider]
 39,,-,アウトバーン,[n],"[autobahn (only used for German, etc. highways)]"
 40,1,-,アウトロー,[n],"[outlaw, low and away (pitch)]"
 41,1,-,アカデミズム,[n],[academism]
 42,,-,アクアトロン,[n],[aquatron]
-43,,-,アクトレス,[n],[actress]
+43,1,-,アクトレス,[n],[actress]
 44,1,-,アゴラフォビア,[n],[agoraphobia]
 45,,-,アスコットタイ,[n],[Ascot tie]
 46,1,-,アスピーテ,[n],[Aspite]
@@ -55,7 +55,7 @@
 55,1,-,アタッシュケース,[n],[attache case]
 56,1,-,アダージョ,[n],[adagio]
 57,,-,アチーブ,[n],"[achieve, achievement test]"
-58,,-,アップル,[n],"[apple, Apple (computer company)]"
+58,1,-,アップル,[n],"[apple, Apple (computer company)]"
 59,1,-,アテスト,[vs],"[attest (e.g. scorecard), sign]"
 60,,-,アディオス,[exp],"[good-bye, carton]"
 61,1,-,アト,"[n, pref]","[atto-, 10^-18]"
@@ -97,7 +97,7 @@
 97,1,-,アングロサクソン,"[n, adj-no]",[Anglo-Saxon]
 98,1,-,アンサホン,[n],[answer phone]
 99,,-,アンジェラス,[n],[angelus]
-100,,-,アンタイドローン,[n],[untied loan]
+100,1,-,アンタイドローン,[n],[untied loan]
 101,,-,アンダーパー,[n],[under par]
 102,1,-,アンチテーゼ,[n],[antithesis]
 103,1,-,アントニム,[n],[antonym]
@@ -154,7 +154,7 @@
 154,1,ＦＭ,エフエム,[n],"[FM, frequency modulation]"
 155,,-,エホバ,[n],[Jehovah]
 156,1,-,エマージェンシー,[n],[emergency]
-157,,-,エミグラント,[n],[emigrant]
+157,1,-,エミグラント,[n],[emigrant]
 158,,-,エリスロポエチン,[n],[erythropoietin]
 159,1,-,エルニーニョ,[n],[El Nino]
 160,,-,エルビウム,[n],[erbium (Er)]
@@ -181,7 +181,7 @@
 181,1,玖馬,キューバ,[n],[Cuba]
 182,1,基督,キリスト,"[n, adj-no]",[Christ]
 183,1,瓩,キログラム,[n],"[kilogram, kilogramme]"
-184,,粁,キロメートル,[n],"[kilometer, kilometre]"
+184,1,粁,キロメートル,[n],"[kilometer, kilometre]"
 185,1,苦力,クーリー,[n],[coolie]
 186,,科威都,クウェート,[n],[Kuwait]
 187,1,瓦無,グアム,[n],[Guam]
@@ -219,7 +219,7 @@
 219,,-,ブルドーザー,[n],[bulldozer]
 220,1,Β,ベータ,[n],[beta]
 221,1,秘露,ペルー,[n],[Peru]
-222,,-,ホログラム,[n],[hologram]
+222,1,-,ホログラム,[n],[hologram]
 223,1,-,ポピュリスム,[n],[populism]
 224,1,-,マイスタージンガー,[n],[(Die) Meistersinger]
 225,,-,マウンティング,[n],[mounting]
@@ -236,7 +236,7 @@
 236,1,羅宇,ラオス,[n],[Laos]
 237,1,-,リアリティー,[n],[reality]
 238,1,利比利亜,リベリア,[n],[Liberia]
-239,,-,ルミネッセンス,[n],[luminescence]
+239,1,-,ルミネッセンス,[n],[luminescence]
 240,,-,レグホン,[n],[Leghorn (var. of chicken)]
 241,,黎巴嫩,レバノン,[n],[Lebanon]
 242,,ＲＯＭ,ロム,[n],"[read-only memory, ROM, lurker (on a forum), read-only member]"
@@ -253,7 +253,7 @@
 253,1,哀歓,あいかん,[n],"[joys and sorrows, happiness and sadness]"
 254,1,愛育,あいいく,"[n, vs]",[tender nurture]
 255,,愛妻,あいさい,[n],[beloved wife]
-256,,愛車,あいしゃ,[n],"[(one's) beloved car (or motorcycle, bicycle, etc.), (one's) wheels]"
+256,1,愛車,あいしゃ,[n],"[(one's) beloved car (or motorcycle, bicycle, etc.), (one's) wheels]"
 257,1,愛書,あいしょ,[n],"[great love of books, favorite book (favourite)]"
 258,1,愛唱,あいしょう,"[n, vs]",[fondness for singing]
 259,1,愛蔵,あいぞう,"[n, adj-no, vs]","[treasured, cherished]"
@@ -262,7 +262,7 @@
 262,,愛馬,あいば,[n],"[favourite horse, favorite horse]"
 263,,悪玉,あくだま,[n],"[bad character, bad person, villain, baddie]"
 264,1,悪習,あくしゅう,[n],"[bad habit, vice]"
-265,,悪条件,あくじょうけん,[n],"[unfavorable conditions, unfavourable conditions]"
+265,1,悪条件,あくじょうけん,[n],"[unfavorable conditions, unfavourable conditions]"
 266,1,悪政,あくせい,[n],[misgovernment]
 267,1,悪戦苦闘,あくせんくとう,"[n, vs]","[hard fighting, hard struggle, fighting against heavy odds]"
 268,,悪態,あくたい,[n],[abusive language]
@@ -277,10 +277,10 @@
 277,1,圧殺,あっさつ,"[n, vs]",[crushing to death]
 278,,圧死,あっし,"[n, vs]",[crushing to death]
 279,1,圧縮空気,あっしゅくくうき,"[n, adj-no]",[compressed air]
-280,,圧政,あっせい,[n],"[despotic administration, tyrannical rule, power politics, political pressure]"
-281,,圧力団体,あつりょくだんたい,[n],"[pressure group, lobby]"
+280,1,圧政,あっせい,[n],"[despotic administration, tyrannical rule, power politics, political pressure]"
+281,1,圧力団体,あつりょくだんたい,[n],"[pressure group, lobby]"
 282,,絢爛,けんらん,"[adj-t, adv-to]","[gorgeous, brilliant, dazzling, gaudy, flowery (speech)]"
-283,,粟,あわ,[n],"[foxtail millet (Setaria italica), Italian millet (also Hungarian, German)]"
+283,1,粟,あわ,[n],"[foxtail millet (Setaria italica), Italian millet (also Hungarian, German)]"
 284,,安穏,あんのん,"[adj-na, n]","[peace, quiet, tranquility, tranquillity]"
 285,1,安産,あんざん,"[n, vs]","[easy delivery, easy childbirth]"
 286,,安全地帯,あんぜんちたい,[n],[safety zone]
@@ -303,7 +303,7 @@
 303,,威光,いこう,[n],"[power, authority, influence]"
 304,1,威風,いふう,[n],"[majesty, dignity]"
 305,1,意気軒昂,いきけんこう,"[adj-na, adj-t, adv-to]","[in high spirits, elated]"
-306,,意気消沈,いきしょうちん,"[n, vs, adj-no]","[depressed in spirits, dispirited, disheartened, rejection]"
+306,1,意気消沈,いきしょうちん,"[n, vs, adj-no]","[depressed in spirits, dispirited, disheartened, rejection]"
 307,,意気投合,いきとうごう,"[n, vs]","[hit it off with (a person), find a kindred spirit in (a person), sympathy, mutual understanding]"
 308,,意中,いちゅう,[n],"[one's mind, one's heart, one's intention]"
 309,1,慰留,いりゅう,"[n, vs]",[dissuasion from resigning or leaving]
@@ -313,8 +313,8 @@
 313,1,畏敬,いけい,"[n, vs]","[reverence, awe, respect]"
 314,1,異郷,いきょう,[n],"[foreign country, foreign land, strange land, far-off land]"
 315,,異彩,いさい,[n],"[conspicuousness (usu. color), prominence, distinctiveness]"
-316,,異説,いせつ,"[n, adj-no]",[different opinion]
-317,,異母,いぼ,[n],[different mother]
+316,1,異説,いせつ,"[n, adj-no]",[different opinion]
+317,1,異母,いぼ,[n],[different mother]
 318,,移り気,うつりぎ,"[adj-na, n]","[whim, frivolity, fickleness, inconstant, capriciousness]"
 319,1,移設,いせつ,"[n, vs]","[relocation (of a facility), moving establishment, to relocate, to move into place, to put into place, to adapt, to affix, to install]"
 320,1,胃炎,いえん,[n],"[gastritis, gastric catarrh]"
@@ -353,7 +353,7 @@
 353,1,一戸,いっこ,[n],"[one house, household]"
 354,1,一顧,いっこ,"[n, vs]",[(take no) notice of]
 355,1,一語,いちご,[n],[one word]
-356,,一考,いっこう,"[n, vs]","[consideration, thought]"
+356,1,一考,いっこう,"[n, vs]","[consideration, thought]"
 357,1,一昨,いっさく,[n],[one previous]
 358,1,一策,いっさく,[n],"[idea, plan]"
 359,1,一事,いちじ,[n],[one thing]
@@ -381,7 +381,7 @@
 381,1,一長一短,いっちょういったん,[n],"[(something having its) merits and demerits, advantages and disadvantages, good points and shortcomings]"
 382,1,挺,ちょう,[ctr],"[counter for long and narrow things such as guns, scissors, spades, hoes, inksticks, palanquins, candles, jinrikishas, shamisen, oars, etc.]"
 383,,一滴,いってき,"[n-adv, n]",[drop (of fluid)]
-384,,一徹,いってつ,"[adj-na, n, adj-no]","[obstinate, stubborn, inflexible]"
+384,1,一徹,いってつ,"[adj-na, n, adj-no]","[obstinate, stubborn, inflexible]"
 385,1,一転,いってん,[n-adv],"[turn, complete change]"
 386,1,一点張り,いってんばり,"[n, adj-no]","[persistence, single-mindedness]"
 387,1,一刀,ひとかたな,[],[single stroke]
@@ -391,7 +391,7 @@
 391,1,一念,いちねん,[n],"[determined purpose, an incredibly short span of time (i.e. the time occupied by a single thought), a single repetition of a prayer (esp. in Jodo-shu)]"
 392,1,一念発起,いちねんほっき,"[n, vs]","[being resolved to (do something), having a wholehearted intention]"
 393,,一皮,ひとかわ,[n],[unmasking]
-394,,一部始終,いちぶしじゅう,[n],"[full particulars, the whole story, from beginning to end]"
+394,1,一部始終,いちぶしじゅう,[n],"[full particulars, the whole story, from beginning to end]"
 395,1,一文字,いちもんじ,[n],"[straight line, beeline]"
 396,1,一片,いっぺん,[n],"[(a) slice, (a) piece]"
 397,,一報,いっぽう,"[n, vs]",[information]
@@ -427,14 +427,14 @@
 427,,引き分ける,ひきわける,"[v1, vt]","[to pull apart, to separate]"
 428,,引き連れる,ひきつれる,"[v1, vt]",[to take along with]
 429,,引け値,ひけね,[n],[closing quotations]
-430,,引っ込み,ひっこみ,[n],"[retreat, retirement, depression (hole)]"
+430,1,引っ込み,ひっこみ,[n],"[retreat, retirement, depression (hole)]"
 431,1,引っ込み思案,ひっこみじあん,"[adj-no, adj-na]","[reserved, introverted, reticent, shy, withdrawn]"
 432,1,引火,いんか,"[n, vs]",[catching fire]
 433,1,引導,いんどう,[n],"[requiem, prayer for dead, dismissal]"
 434,1,引率,いんそつ,"[n, vs]","[leading, commanding]"
 435,,飲み回る,のみまわる,"[v5r, vt]","[to go on a pub-crawl, to drink at a round of places]"
 436,1,飲み干す,のみほす,"[v5s, vt]","[to drink up, to drain (cup)]"
-437,,飲み食い,のみくい,"[n, vs]","[food and drink, eating and drinking]"
+437,1,飲み食い,のみくい,"[n, vs]","[food and drink, eating and drinking]"
 438,,飲み放題,のみほうだい,"[exp, adj-no]","[all you can drink, bottomless cup]"
 439,,飲用,いんよう,"[n, vs, adj-no]",[drinking]
 440,1,院政,いんせい,[n],[government by cloistered emperors]
@@ -457,14 +457,14 @@
 457,,運び出す,はこびだす,[v5s],[to carry out]
 458,,運勢,うんせい,[n],"[fortune, luck]"
 459,1,運動費,うんどうひ,[n],[campaign fund]
-460,,雲散霧消,うんさんむしょう,"[n, vs]",[vanishing like mist]
+460,1,雲散霧消,うんさんむしょう,"[n, vs]",[vanishing like mist]
 461,1,雲水,うんすい,[n],"[itinerant priest, wandering monk, mendicant, clouds and water]"
 462,,営巣,えいそう,"[n, vs]",[building a nest]
 463,1,営林署,えいりんしょ,[n],[forest service field office]
-464,,映写,えいしゃ,"[n, vs, adj-no]",[projection]
+464,1,映写,えいしゃ,"[n, vs, adj-no]",[projection]
 465,1,映写機,えいしゃき,[n],"[movie projector, film projector, cine projector]"
 466,,栄養価,えいようか,[n],"[nutritional value, food value]"
-467,,永世,えいせい,[n],"[eternity, perpetuity, immortality, permanence]"
+467,1,永世,えいせい,[n],"[eternity, perpetuity, immortality, permanence]"
 468,,英国航空,えいこくこうくう,[n],[British Airways]
 469,1,英断,えいだん,[n],"[resolution, decisive judgement, decisive judgment]"
 470,1,英霊,えいれい,[n],"[spirits of war dead, great men]"
@@ -476,7 +476,7 @@
 476,,円環,えんかん,"[adj-na, n]","[circle, ring, torus]"
 477,,円陣,えんじん,[n],"[forming a circle, circular formation (orig. in battle), huddle, ring]"
 478,1,円錐,まるぎり,[n],[round gimlet]
-479,,園遊会,えんゆうかい,[n],[garden party]
+479,1,園遊会,えんゆうかい,[n],[garden party]
 480,1,延納,えんのう,"[n, vs]",[deferred payment]
 481,1,怨念,おんねん,[n],"[grudge, malice, hatred]"
 482,,怨霊,おんりょう,[n],"[revengeful ghost, apparition]"
@@ -509,7 +509,7 @@
 509,,塩化ビニール,えんかビニール,[n],[vinyl chloride]
 510,,塩焼き,しおやき,"[n, vs]","[(fish) grilled or broiled with salt, boiling seawater to get salt]"
 511,1,塩辛,しおから,[n],[salted fish (entrails)]
-512,,汚泥,おでい,[n],[dirty mud]
+512,1,汚泥,おでい,[n],[dirty mud]
 513,,奥の手,おくのて,[n],"[left hand, upper hand, secret skills, secret, mystery, last resort, trump card]"
 514,,奥まって,おくまって,[exp],"[secluded, innermost]"
 515,1,奥まる,おくまる,"[v5r, vi]","[to lie deep in, to extend far back]"
@@ -539,7 +539,7 @@
 539,1,横たえる,よこたえる,"[v1, vt]","[to lay down, to wear (a sword, etc.) at one's side]"
 540,,横穴,よこあな,[n],"[cave, tunnel]"
 541,,横向き,よこむき,[n],"[turning sideways, landscape orientation]"
-542,,横軸,よこじく,"[n, adj-no]","[abscissa, horizontal axis, horizontal scroll]"
+542,1,横軸,よこじく,"[n, adj-no]","[abscissa, horizontal axis, horizontal scroll]"
 543,1,横車,よこぐるま,"[exp, n]","[perverseness, obstinacy, something unreasonable (like pushing a cart from the side (instead of from behind)), side wheel throw (judo)]"
 544,,横波,よこなみ,[n],"[side (transverse) wave, broadside sea]"
 545,,横付け,よこづけ,"[n, vs]",[coming alongside]
@@ -568,7 +568,7 @@
 568,1,音速,おんそく,[n],[speed of sound]
 569,1,音波,おんぱ,"[n, adj-no]",[sound wave]
 570,,音盤,おんばん,[n],"[disk, record]"
-571,,下げ足,さげあし,[n],[downward trend]
+571,1,下げ足,さげあし,[n],[downward trend]
 572,1,下し,くだし,[n],"[evacuation, purgation]"
 573,,下り列車,くだりれっしゃ,[n],"[trains going away from the capital, down train]"
 574,1,下回り,したまわり,[n],"[subordinate part, menial service, subordinate, utility man]"
@@ -583,7 +583,7 @@
 583,1,下心,したごころ,[n],"[secret intention, ulterior motive, kanji ""heart"" radical at bottom]"
 584,1,下請け業者,したうけぎょうしゃ,[n],[subcontractor]
 585,,下積み,したづみ,[n],"[lowest social strata, goods piled beneath]"
-586,,下層,かそう,"[n, adj-no]",[lower strata (classes)]
+586,1,下層,かそう,"[n, adj-no]",[lower strata (classes)]
 587,,下草,したくさ,[n],"[undergrowth, weeds beneath a tree]"
 588,,下側,したがわ,"[n, adj-no]",[underside]
 589,1,下田,げでん,[n],[worn-out rice land]
@@ -596,7 +596,7 @@
 596,,化学繊維,かがくせんい,[n],"[synthetic fibers, synthetic fibres]"
 597,1,化学療法,かがくりょうほう,"[n, adj-no]",[chemotherapy]
 598,1,化身,けしん,"[n, vs, adj-no]","[incarnation, impersonation, personification, avatar]"
-599,,仮差押え,かりさしおさえ,[n],"[provisional seizure, provisional attachment, provisional garnishment]"
+599,1,仮差押え,かりさしおさえ,[n],"[provisional seizure, provisional attachment, provisional garnishment]"
 600,,仮死,かし,"[n, adj-no]","[asphyxiation, apparent death]"
 601,,何物,なにもの,[n],"[something, nothing (with neg. verb)]"
 602,,伽藍,がらん,"[n, n-suf]","[temple (esp. large one), monastery, temple building]"
@@ -614,7 +614,7 @@
 614,1,可憐,かれん,"[adj-na, n]","[sweet (e.g. young girls, flowers blooming), touchingly lovely, cute, pitiful, pitiable]"
 615,,夏服,なつふく,[n],[summer clothing]
 616,1,家筋,いえすじ,[n],"[lineage, pedigree, family line]"
-617,,家集,かしゅう,[n],[poet's poetical works]
+617,1,家集,かしゅう,[n],[poet's poetical works]
 618,1,家臣,かしん,"[n, adj-no]","[vassal, retainer]"
 619,1,家中,うちじゅう,[n],"[whole family, all (members of) family, all over the house]"
 620,1,家長,かちょう,"[n, adj-no]","[patriarch, family head]"
@@ -641,7 +641,7 @@
 641,1,火の粉,ひのこ,[n],[sparks]
 642,,火気,かき,[n],[fire]
 643,1,火元,ひもと,[n],[origin of a fire]
-644,,火勢,かせい,[n],[force of flames]
+644,1,火勢,かせい,[n],[force of flames]
 645,1,火中,かちゅう,"[n, vs]","[in the fire, in the flames]"
 646,1,火柱,ひばしら,[n],"[pillar of fire, blazing column]"
 647,1,火縄銃,ひなわじゅう,[n],"[matchlock, arquebus]"
@@ -652,7 +652,7 @@
 652,1,花鳥風月,かちょうふうげつ,[n],"[beauties of nature, the traditional themes of natural beauty in Japanese aesthetics, artistic pursuits involving nature themes]"
 653,,花冷え,はなびえ,[n],[chilly spring weather]
 654,1,荷主,にぬし,[n],[shipper]
-655,,荷動き,にうごき,[n],[movement of goods]
+655,1,荷動き,にうごき,[n],[movement of goods]
 656,,華族,かぞく,[n],"[noble, peer]"
 657,,蝦夷,えぞ,[n],"[historical term for non-Yamato peoples in northern Japan, Yezo (northern part of Meiji-era Japan, esp. Hokkaido, but also Sakhalin and the Kuril Islands)]"
 658,,蝦夷,えみし,[n],[historical term for non-Yamato peoples in northern Japan]
@@ -661,7 +661,7 @@
 661,1,過誤,かご,[n],"[mistake, fault]"
 662,1,過重,かじゅう,"[adj-na, n]",[overweight]
 663,1,過少,かしょう,"[adj-na, n]",[too few]
-664,,過食,かしょく,"[n, vs]",[overeating]
+664,1,過食,かしょく,"[n, vs]",[overeating]
 665,1,過信,かしん,"[n, vs]","[trusting too much, overestimating ability]"
 666,1,過日,かじつ,"[n-adv, n-t]","[recently, the other day]"
 667,,過半,かはん,"[n, adj-no]",[the greater part]
@@ -674,7 +674,7 @@
 674,,画題,がだい,[n],"[motif, theme, subject (of picture)]"
 675,1,画壇,がだん,[n],"[artists' world, painting circles]"
 676,1,画布,がふ,[n],[(oil painting) canvas]
-677,,画風,がふう,[n],[style of painting]
+677,1,画風,がふう,[n],[style of painting]
 678,1,画法,がほう,[n],[art of drawing and painting]
 679,,芽生える,めばえる,"[v1, vi]","[to bud, to sprout]"
 680,,介して,かいして,[exp],[through the medium of]
@@ -709,7 +709,7 @@
 709,1,検める,あらためる,[],"[to examine, to check, to inspect]"
 710,1,改悪,かいあく,"[n, vs]","[deterioration, changing for the worse]"
 711,,改称,かいしょう,"[n, vs]","[renaming, retitling]"
-712,,改題,かいだい,"[n, vs]",[changing a title]
+712,1,改題,かいだい,"[n, vs]",[changing a title]
 713,1,改廃,かいはい,"[n, vs]","[change, reorganization, reorganisation]"
 714,1,海がめ,うみがめ,[n],[sea turtle]
 715,1,海原,うなばら,[n],"[ocean, sea, the deep]"
@@ -740,7 +740,7 @@
 740,1,外泊,がいはく,"[n, vs]","[spending night somewhere else (usu. away from home), sleepover, sleep over]"
 741,1,外用,がいよう,"[n, vs, adj-no]",[external use]
 742,,概して,がいして,[adv],"[generally, as a rule]"
-743,,概観,がいかん,"[n, vs]","[general view, outline]"
+743,1,概観,がいかん,"[n, vs]","[general view, outline]"
 744,1,街区,がいく,[n],[block (of land)]
 745,1,各面,かくめん,[n],[all phases]
 746,1,格下げ,かくさげ,"[n, vs]","[demotion, downgrading]"
@@ -752,7 +752,7 @@
 752,1,確報,かくほう,[n],"[definite report, confirmed data]"
 753,1,醒ます,さます,"[v5s, vt]","[to awaken, to disabuse, to sober up, to dampen, to throw a damper on, to spoil]"
 754,1,角材,かくざい,[n],"[squared timber, rectangular lumber]"
-755,,閣外,かくがい,"[n, adj-no]",[outside the Cabinet]
+755,1,閣外,かくがい,"[n, adj-no]",[outside the Cabinet]
 756,1,隔絶,かくぜつ,"[n, vs]","[isolation, separation, remoteness, seclusion, reclusion, inaccessibility, sequestration]"
 757,,隔日,かくじつ,"[n-adv, n-t]",[every other day]
 758,1,隔年,かくねん,"[n-adv, n-t]","[biannually, every second year, every other year]"
@@ -784,10 +784,10 @@
 784,,滑り込む,すべりこむ,"[v5m, vi]","[to slide into (base), to slip into (ditch)]"
 785,1,滑り落ちる,すべりおちる,[v1],[to slip off]
 786,1,滑空,かっくう,"[n, vs]",[gliding (through the air)]
-787,,滑車,かっしゃ,"[n, adj-no]","[pulley, block, tackle]"
+787,1,滑車,かっしゃ,"[n, adj-no]","[pulley, block, tackle]"
 788,1,茅,かや,[n],"[grass used for thatching, sedge used for thatching]"
 789,1,茅場,かやば,[n],"[hayfield, field of miscanthus]"
-790,,瓦解,がかい,"[n, vs]","[collapse, downfall]"
+790,1,瓦解,がかい,"[n, vs]","[collapse, downfall]"
 791,,乾パン,かんパン,[n],"[cracker, hard biscuit, hardtack]"
 792,1,乾燥器,かんそうき,[n],"[drying machine, dryer, desiccator]"
 793,,冠状,かんじょう,"[n, adj-no]",[coronary]
@@ -819,7 +819,7 @@
 819,,汗ばむ,あせばむ,"[v5m, vi]",[to be sweaty]
 820,,環濠,かんごう,[n],[(circular) moat]
 821,1,甘口,あまくち,"[adj-na, n, adj-no]","[sweet flavour, sweet flavor, mildness, flattery, stupidity]"
-822,,甘露,かんろ,"[adj-na, n]","[nectar, sweetness]"
+822,1,甘露,かんろ,"[adj-na, n]","[nectar, sweetness]"
 823,1,監察医,かんさつい,[n],"[medical coroner, medical examiner]"
 824,1,監訳,かんやく,"[n, vs]",[supervising a translation]
 825,1,簡便,かんべん,"[adj-na, n]","[handy, simple and easy]"
@@ -828,7 +828,7 @@
 828,1,胆,たん,[n],"[liver, innards, courage, spirit, pluck, guts]"
 829,,艦載機,かんさいき,[n],[ship-borne plane]
 830,1,艦長,かんちょう,[n],[captain (of a warship)]
-831,,観月,かんげつ,"[n, vs]",[moon viewing (esp. during the eight month of the lunar calendar)]
+831,1,観月,かんげつ,"[n, vs]",[moon viewing (esp. during the eight month of the lunar calendar)]
 832,1,鑑識,かんしき,"[n, vs]","[judgement, judgment, discernment, discrimination, having eye for, forensics, crime lab]"
 833,1,間,あわい,"[n-adv, n, n-t]","[space (between), gap, interval, distance, time (between), pause, break, span (temporal or spatial), stretch, period (while), relationship (between, among), members (within, among)]"
 834,1,間合い,まあい,[n],"[interval, distance, break, pause, suitable time, appropriate opportunity, distance between opponents (kendo)]"
@@ -836,8 +836,8 @@
 836,,関節炎,かんせつえん,"[adj-na, n]",[arthritis]
 837,,館員,かんいん,[n],[personnel (of public building)]
 838,,丸見え,まるみえ,"[n, adj-no]","[full view, plain sight, completely visible]"
-839,,丸腰,まるごし,[adj-no],"[unarmed, without weapons]"
-840,,丸出し,まるだし,[n],"[bare, exposed, undisguised, broad (provincial accent)]"
+839,1,丸腰,まるごし,[adj-no],"[unarmed, without weapons]"
+840,1,丸出し,まるだし,[n],"[bare, exposed, undisguised, broad (provincial accent)]"
 841,,丸洗い,まるあらい,"[n, vs]","[washing a kimono (or futon, etc.) without taking it apart, laundering whole]"
 842,,丸本,まるぼん,[n],"[reciter's book, complete set of books]"
 843,,丸木,まるき,[n],[log]
@@ -846,7 +846,7 @@
 846,1,眼下,がんか,"[n, adj-no]","[under one's eyes, below]"
 847,1,眼球,がんきゅう,"[n, adj-no]",[eyeball]
 848,1,眼光,がんこう,[n],"[glint in eye, discernment]"
-849,,眼目,がんもく,[n],"[core, point, gist, essence, main object]"
+849,1,眼目,がんもく,[n],"[core, point, gist, essence, main object]"
 850,,眼力,がんりき,[n],"[insight, power of observation]"
 851,1,贋作,がんさく,"[n, vs]","[fake, sham, counterfeit]"
 852,1,顔,がん,[n],"[face, visage, look, expression, countenance]"
@@ -857,7 +857,7 @@
 857,,危なっかしい,あぶなっかしい,[adj-i],"[dangerous, critical, grave, uncertain, unreliable, dodgy, limping, narrow, close, watch out]"
 858,1,器量,きりょう,[n],"[looks, features, personal beauty, ability, talent, calibre, caliber, capability, capacity, dignity, credit, estimation]"
 859,1,基底,きてい,"[n, adj-no]","[base, ground]"
-860,,基点,きてん,"[n, adj-no]","[datum point, cardinal point, reference point, origin]"
+860,1,基点,きてん,"[n, adj-no]","[datum point, cardinal point, reference point, origin]"
 861,,基板,きばん,[n],"[substrate, (computer) circuit board]"
 862,,基部,きぶ,"[n, adj-no]","[base, foundation]"
 863,1,奇形,きけい,"[n, adj-no]","[birth defect, deformity, malformation, misshapenness]"
@@ -907,16 +907,16 @@
 907,1,騎乗,きじょう,"[n, adj-no]","[mount, on horseback]"
 908,1,鬼,き,[n],"[ogre, demon, spirit of a deceased person, Chinese ""ghost"" constellation (one of the 28 mansions)]"
 909,1,亀甲,きっこう,[n],[tortoise shell]
-910,,偽り,いつわり,"[n, adj-no]","[lie, falsehood, fiction, fabrication]"
+910,1,偽り,いつわり,"[n, adj-no]","[lie, falsehood, fiction, fabrication]"
 911,,偽名,ぎめい,"[n, adj-no]","[alias (false name), assumed name]"
 912,,儀典,ぎてん,[n],"[ceremony, rite, ritual, service]"
-913,,儀礼的,ぎれいてき,[adj-na],"[formal, courteous]"
+913,1,儀礼的,ぎれいてき,[adj-na],"[formal, courteous]"
 914,,技量,ぎりょう,[n],"[ability, competency, talent, skill, capacity]"
 915,,疑,ぎ,[n],"[doubt, distrust, suspicion (of)]"
 916,,疑心暗鬼,ぎしんあんき,[exp],"[Suspicion will raise bogies, Once you suspect something, everything else will look suspicious, Jumping at shadows]"
 917,1,菊花,きっか,[n],[chrysanthemum]
 918,1,詰め掛ける,つめかける,"[v1, vi]","[to crowd (a house), to throng to (a door)]"
-919,,詰め寄る,つめよる,"[v5r, vi]","[to draw near, to draw closer, to press someone (e.g. for an answer)]"
+919,1,詰め寄る,つめよる,"[v5r, vi]","[to draw near, to draw closer, to press someone (e.g. for an answer)]"
 920,,客引き,きゃくひき,"[n, vs]","[touting, tout, barker, pander]"
 921,1,客演,きゃくえん,"[n, vs]",[guest appearance]
 922,1,逆行,ぎゃっこう,"[n, vs, adj-no]","[reverse movement, retrogression, going backwards, moving in the wrong direction, running counter to (e.g. the laws of nature), running against (e.g. the tide of the times), retrogradation, retrogression]"
@@ -939,7 +939,7 @@
 939,1,宮司,ぐうじ,[n],[chief priest]
 940,1,急ぎ足,いそぎあし,[n],"[fast pace, quick pace]"
 941,1,急降下,きゅうこうか,"[n, vs]","[swoop, nose dive]"
-942,,急襲,きゅうしゅう,"[n, vs]","[raid, assault, descent]"
+942,1,急襲,きゅうしゅう,"[n, vs]","[raid, assault, descent]"
 943,1,急場,きゅうば,[n],[emergency]
 944,1,急造,きゅうぞう,"[n, vs, adj-no]",[hurried construction]
 945,1,急転直下,きゅうてんちょっか,"[n, vs]","[suddenly and precipitately, take a sudden turn]"
@@ -980,12 +980,12 @@
 980,1,居直る,いなおる,"[v5r, vi]","[to sit up properly straight, to become aggressive]"
 981,,居並ぶ,いならぶ,"[v5b, vi]","[to sit in a row, to be arrayed]"
 982,,巨費,きょひ,[n],[great cost]
-983,,巨利,きょり,[n],[huge profit]
+983,1,巨利,きょり,[n],[huge profit]
 984,1,拒食症,きょしょくしょう,[n],[anorexia]
 985,1,挙国,きょこく,[n],[the whole nation]
-986,,虚々実々,きょきょじつじつ,"[n, adj-no]","[full of wiles and tricks, match between persons equal in shrewdness mobilizing all the tricks each can muster, shrewdly avoiding the opponent's strong points and attacking its weaknesses]"
+986,1,虚々実々,きょきょじつじつ,"[n, adj-no]","[full of wiles and tricks, match between persons equal in shrewdness mobilizing all the tricks each can muster, shrewdly avoiding the opponent's strong points and attacking its weaknesses]"
 987,1,虚言,きょげん,[n],"[falsehood, lie]"
-988,,虚飾,きょしょく,"[n, adj-no]","[ostentation, show, affectation]"
+988,1,虚飾,きょしょく,"[n, adj-no]","[ostentation, show, affectation]"
 989,1,虚像,きょぞう,"[n, adj-no]","[virtual image, false image, pretense, pretence]"
 990,,虚脱,きょだつ,"[n, vs]","[prostration, lethargy, collapse, despondency]"
 991,1,虚礼,きょれい,[n],[empty (useless) formalities]
@@ -1005,7 +1005,7 @@
 1005,,強含み,つよふくみ,[n],"[strengthening, strong tone, strong feeling]"
 1006,1,強震,きょうしん,[n],[severe earthquake]
 1007,1,強靭,きょうじん,"[adj-na, n]","[tough, strong, stiff, tenacious]"
-1008,,強弁,きょうべん,"[n, vs]","[insisting (unreasonably), obstinate insistence]"
+1008,1,強弁,きょうべん,"[n, vs]","[insisting (unreasonably), obstinate insistence]"
 1009,1,教え込む,おしえこむ,"[v5m, vt]","[to train to, to give an idea to]"
 1010,1,教化,きょうか,"[n, vs]","[education, enlightenment, civilization, civilisation, indoctrination]"
 1011,,教職,きょうしょく,[n],"[the teaching profession, (in Christianity) education of laity]"
@@ -1026,7 +1026,7 @@
 1026,1,饗応,きょうおう,"[n, vs]","[entertainment, treat, feast, banquet, immediately agreeing with someone else]"
 1027,1,暁,あかとき,[n],"[dawn, daybreak]"
 1028,,業界紙,ぎょうかいし,[n],[trade journal]
-1029,,局所,きょくしょ,"[n, adj-no]","[section, local, local anesthesia, localized, topical]"
+1029,1,局所,きょくしょ,"[n, adj-no]","[section, local, local anesthesia, localized, topical]"
 1030,,局部,きょくぶ,"[n, adj-no]","[part, section, affected region, genitals, private parts]"
 1031,1,枉げる,まげる,[],"[to bend (the truth), to distort, to twist, to pervert, to yield (a point), to depart (from a principle), to ignore (what one really thinks), to pawn]"
 1032,1,曲面,きょくめん,[n],[curved surface]
@@ -1051,7 +1051,7 @@
 1051,1,禁足,きんそく,"[n, vs]",[confinement]
 1052,1,緊要,きんよう,"[adj-na, n]","[momentous, exigent, urgent, important, vital]"
 1053,1,菌類,きんるい,[n],"[fungus, fungi]"
-1054,,近刊,きんかん,"[n, adj-no]","[forthcoming publication, to be published soon, coming soon, in preparation, recent publication]"
+1054,1,近刊,きんかん,"[n, adj-no]","[forthcoming publication, to be published soon, coming soon, in preparation, recent publication]"
 1055,,近県,きんけん,[n],"[neighboring prefectures, neighbouring prefectures]"
 1056,1,近接,きんせつ,"[n, vs, adj-no]","[neighboring, neighbouring, adjacent, adjoin]"
 1057,1,近東,きんとう,[n],[Near East]
@@ -1067,7 +1067,7 @@
 1067,1,金平,きんぴら,[n],[chopped burdock root (and sometimes carrot) cooked in sugar and soy sauce]
 1068,1,金目,かねめ,"[adj-na, n, adj-no]",[monetary value]
 1069,1,吟遊詩人,ぎんゆうしじん,[n],"[troubadour, minstrel]"
-1070,,銀盤,ぎんばん,[n],"[skating rink, ice surface, silver plate]"
+1070,1,銀盤,ぎんばん,[n],"[skating rink, ice surface, silver plate]"
 1071,1,九分,くぶ,[n],"[nine parts, nine percent, almost]"
 1072,1,句会,くかい,[n],[gathering of haiku poets]
 1073,,区検,くけん,[n],[local prosecutor]
@@ -1091,7 +1091,7 @@
 1091,1,唐手,からて,[n],[karate]
 1092,,空費,くうひ,"[n, vs]",[wastefulness]
 1093,1,空模様,そらもよう,[n],"[look of the sky, weather]"
-1094,,空陸,くうりく,[n],"[land and air, land and air forces]"
+1094,1,空陸,くうりく,[n],"[land and air, land and air forces]"
 1095,1,空論,くうろん,"[n, adj-no]",[abstract or impracticable theory]
 1096,1,寓意,ぐうい,"[n, adj-no]","[hidden meaning, symbolism, moral]"
 1097,1,寓話,ぐうわ,"[n, adj-no]","[fable, allegory]"
@@ -1117,7 +1117,7 @@
 1117,1,軍手,ぐんて,[n],"[cotton gloves, working gloves]"
 1118,,軍勢,ぐんぜい,[n],"[military forces, hosts, troops]"
 1119,1,軍曹,ぐんそう,[n],[sergeant]
-1120,,軍馬,ぐんば,[n],"[warhorse, army horse]"
+1120,1,軍馬,ぐんば,[n],"[warhorse, army horse]"
 1121,1,軍票,ぐんぴょう,[n],[military scrip]
 1122,1,軍法会議,ぐんぽうかいぎ,[n],[court-martial]
 1123,1,軍務,ぐんむ,[n],"[military and naval affairs, military service]"
@@ -1127,7 +1127,7 @@
 1127,,係留,けいりゅう,"[n, vs]","[mooring, anchorage]"
 1128,1,傾き,かたむき,[n],"[slope, inclination, list, tendency, trend, bent, disposition, bias, slope (of a linear function)]"
 1129,1,兄姉,けいし,[n],[brother and sister]
-1130,,兄弟子,あにでし,[n],"[senior schoolmate, senior apprentice]"
+1130,1,兄弟子,あにでし,[n],"[senior schoolmate, senior apprentice]"
 1131,,啓蟄,けいちつ,[n],"[""awakening of insects"" solar term (approx. Mar. 6, the day on which hibernating insects are said to come out of the ground)]"
 1132,,型紙,かたがみ,[n],[pattern paper (for dressmaking)]
 1133,1,貌,かたち,[],[visage]
@@ -1147,7 +1147,7 @@
 1147,,継ぎ目,つぎめ,[n],"[joint, seam, joining point]"
 1148,1,計らい,はからい,[n],"[arrangement, good offices, discretion, judgment, disposition]"
 1149,,計算書,けいさんしょ,[n],[statement of account]
-1150,,警句,けいく,"[n, adj-no]",[aphorism]
+1150,1,警句,けいく,"[n, adj-no]",[aphorism]
 1151,1,警務,けいむ,[n],"[police affairs, military police]"
 1152,1,軽機関銃,けいきかんじゅう,[n],[light machine gun]
 1153,1,軽金属,けいきんぞく,[n],[light metals]
@@ -1166,7 +1166,7 @@
 1166,,打ち合う,うちあう,"[v5u, vt]","[to fight, to exchange blows, to rally]"
 1167,1,撃退,げきたい,"[n, vs]","[repulse, repel (i.e. the enemy)]"
 1168,1,撃破,げきは,"[n, vs]",[crushing]
-1169,,激賞,げきしょう,"[n, vs]",[enthusiastic praise]
+1169,1,激賞,げきしょう,"[n, vs]",[enthusiastic praise]
 1170,,激増,げきぞう,"[n, vs]",[sudden increase]
 1171,1,激闘,げきとう,"[n, vs]",[fierce fighting]
 1172,1,激烈,げきれつ,"[n, adj-na]","[violence, vehemence, fury, fervour, fervor, severity, fierceness, keenness]"
@@ -1177,7 +1177,7 @@
 1177,1,欠落,けつらく,"[n, vs]","[missing, lacking]"
 1178,,きまり悪い,きまりわるい,[adj-i],"[feeling awkward, being ashamed, being bashful]"
 1179,1,決まり文句,きまりもんく,[n],"[cliche, platitude, formula, set phrase]"
-1180,,決め込む,きめこむ,"[v5m, vt]","[to take for granted, to assume, to pretend (to be), to act as if one were ..., to fancy oneself as being, to do intentionally, to persist in doing]"
+1180,1,決め込む,きめこむ,"[v5m, vt]","[to take for granted, to assume, to pretend (to be), to act as if one were ..., to fancy oneself as being, to do intentionally, to persist in doing]"
 1181,1,決壊,けっかい,"[n, vs]","[burst (e.g. dam, embankment, levee), breach, collapse, washout, rupture]"
 1182,1,決行,けっこう,"[n, vs]","[doing (with resolve), carrying out (i.e. a plan)]"
 1183,1,決死,けっし,[n],"[preparedness for death, do-or-die spirit]"
@@ -1186,7 +1186,7 @@
 1186,1,穴場,あなば,[n],"[little-known good place, good out-of-the-way place, well-kept-secret place, hole-in-the-wall]"
 1187,,結果論,けっかろん,[n],[hindsight-based opinion]
 1188,,結審,けっしん,"[n, vs]",[conclusion of trial (hearing)]
-1189,,結石,けっせき,"[n, adj-no]",[calculus (concretion of minerals formed inside the body)]
+1189,1,結石,けっせき,"[n, adj-no]",[calculus (concretion of minerals formed inside the body)]
 1190,,結節,けっせつ,"[n, vs, adj-no]","[knot, nodule, tubercule, node]"
 1191,1,結腸,けっちょう,"[n, adj-no]",[colon]
 1192,1,結納,ゆいのう,"[n, vs]","[engagement gift, (ceremonial) exchange of engagement gifts]"
@@ -1202,7 +1202,7 @@
 1202,1,血肉,けつにく,[n],"[flesh and blood, relatives]"
 1203,1,月次,つきなみ,"[adj-na, n]",[every month]
 1204,,月報,げっぽう,[n],[monthly report]
-1205,,健脚,けんきゃく,"[adj-na, n]",[good walker]
+1205,1,健脚,けんきゃく,"[adj-na, n]",[good walker]
 1206,,健筆,けんぴつ,[n],[powerful pen]
 1207,1,兼営,けんえい,"[n, vs]",[operating or carrying on simultaneously]
 1208,,兼業農家,けんぎょうのうか,[n],[part-time farmer]
@@ -1280,7 +1280,7 @@
 1280,1,現世,げんせ,"[n, adj-no]","[present world, present age, transient world, life]"
 1281,,言い張る,いいはる,"[v5r, vt]","[to insist, to assert, to be obstinate in saying]"
 1282,1,言いつける,いいつける,"[v1, vt]","[to tell (to do), to order, to charge, to direct, to tell on (someone), to report, to often say]"
-1283,,言い聞かせる,いいきかせる,"[v1, vt]","[to tell someone to do something, to warn, to persuade, to instruct]"
+1283,1,言い聞かせる,いいきかせる,"[v1, vt]","[to tell someone to do something, to warn, to persuade, to instruct]"
 1284,1,言外,げんがい,"[n, adj-no]","[unexpressed, implied, implicit]"
 1285,1,言語道断,ごんごどうだん,"[adj-na, n, adj-no]","[outrageous, preposterous, scandalous, inexcusable, absurd, execrable]"
 1286,1,言行,げんこう,[n],[speech and behaviour (behavior)]
@@ -1289,7 +1289,7 @@
 1289,1,古めかしい,ふるめかしい,[adj-i],[old-fashioned]
 1290,1,古豪,こごう,[n],"[veteran, old-timer, man of experience]"
 1291,1,古式,こしき,[n],"[old style, ancient rites]"
-1292,,古生物,こせいぶつ,[n],[extinct plants and animals]
+1292,1,古生物,こせいぶつ,[n],[extinct plants and animals]
 1293,1,古米,こまい,[n],[old rice]
 1294,1,古木,こぼく,[n],[old tree]
 1295,,古老,ころう,[n],"[old people, seniors, elders, old-timer]"
@@ -1315,7 +1315,7 @@
 1315,,五目,ごもく,[n],"[mixture of ingredients (originally five), mixture of minced vegetables, fish, and meat, mixed in a starch (rice, noodles), gomoku (game), five in a row, go-bang]"
 1316,1,遅れを取る,おくれをとる,"[exp, v5r]",[to fall behind]
 1317,1,後記,こうき,"[n, vs, adj-no]","[postscript, under-mentioned, described below]"
-1318,,後進国,こうしんこく,[n],"[undeveloped country, third world country]"
+1318,1,後進国,こうしんこく,[n],"[undeveloped country, third world country]"
 1319,1,後生大事,ごしょうだいじ,[n],"[with religious zeal, with utmost devotion, take great care of]"
 1320,1,後追い,あとおい,"[n, vs]","[trailing, chasing after, imitation, copy]"
 1321,1,後年,こうねん,"[n-adv, n-t]","[future years, in (one's) later years]"
@@ -1339,7 +1339,7 @@
 1339,,交感神経,こうかんしんけい,"[n, adj-no]",[sympathetic nerves]
 1340,1,交歓,こうかん,"[n, vs]","[exchange of courtesies (cordialities), fraternization, fraternisation]"
 1341,1,交戦国,こうせんこく,[n],"[warring nations, belligerents]"
-1342,,交配,こうはい,"[n, vs]","[mating, crossbreeding, cross-fertilization, cross-fertilisation]"
+1342,1,交配,こうはい,"[n, vs]","[mating, crossbreeding, cross-fertilization, cross-fertilisation]"
 1343,,交尾,こうび,"[n, vs, adj-no]",[copulation (in animals)]
 1344,1,交遊,こうゆう,"[n, vs]","[friend, friendship, companionship, fraternization, fraternity, comradeship, acquaintance]"
 1345,,光速,こうそく,[n],[speed of light]
@@ -1355,7 +1355,7 @@
 1355,,公道,こうどう,[n],"[public road, justice]"
 1356,,公明正大,こうめいせいだい,"[adj-na, n]","[fairness, just and upright, aboveboard]"
 1357,,公用文,こうようぶん,[n],[official terminology]
-1358,,功罪,こうざい,[n],"[both good and bad, merits and demerits]"
+1358,1,功罪,こうざい,[n],"[both good and bad, merits and demerits]"
 1359,1,効,こう,[n],"[efficacy, benefit, efficiency, effect, result, success]"
 1360,,厚化粧,あつげしょう,"[n, vs]","[thick makeup, heavy makeup]"
 1361,,厚遇,こうぐう,"[n, vs]","[cordial welcome, hearty welcome, kind treatment, hospitality]"
@@ -1397,17 +1397,17 @@
 1397,1,硬骨,こうこつ,"[n, adj-no, adj-na]","[bone, firm, uncompromising]"
 1398,1,硬軟,こうなん,[n],[hardness]
 1399,,紅花,べにばな,[n],"[safflower, dyer's safflower, Carthamus tinctorius]"
-1400,,紅海,こうかい,[n],[Red Sea]
+1400,1,紅海,こうかい,[n],[Red Sea]
 1401,,綱紀粛正,こうきしゅくせい,[n],"[eliminating corruption among government officials, tightening discipline (among)]"
 1402,,考え込む,かんがえこむ,"[v5m, vi]","[to ponder, to brood]"
 1403,,考え出す,かんがえだす,[v5s],"[to think out, to devise, to invent, to begin to think, to come up with a plan]"
 1404,,考査,こうさ,"[n, vs]","[examination, consideration, test, quiz]"
-1405,,航空宇宙技術研究所,こうくううちゅうぎじゅつけんきゅうじょ,[n],"[National Aerospace Laboratory, NAL]"
+1405,1,航空宇宙技術研究所,こうくううちゅうぎじゅつけんきゅうじょ,[n],"[National Aerospace Laboratory, NAL]"
 1406,1,航跡,こうせき,[n],[wake (of boat)]
 1407,1,荒海,あらうみ,[n],[rough sea]
 1408,1,荒城,こうじょう,[n],[ruined castle]
 1409,,荒天,こうてん,[n],[stormy weather]
-1410,,荒唐無稽,こうとうむけい,"[adj-na, n]","[absurdity, nonsense, preposterous]"
+1410,1,荒唐無稽,こうとうむけい,"[adj-na, n]","[absurdity, nonsense, preposterous]"
 1411,1,行き交う,ゆきかう,"[v5u, vi]","[to come and go, to go back and forth]"
 1412,1,行く手,ゆくて,[n],"[one's way, one's path]"
 1413,1,行者,ぎょうじゃ,[n],"[ascetic, pilgrim, devotee]"
@@ -1418,7 +1418,7 @@
 1418,1,講話,こうわ,"[n, vs]","[lecture, discourse]"
 1419,1,校売,こうばい,[n],"[school store, co-op, school canteen, tuck shop]"
 1420,1,鉱床,こうしょう,[n],"[mineral deposit, ore deposit]"
-1421,,鉱脈,こうみゃく,[n],"[vein (of ore), reef, streak, lode]"
+1421,1,鉱脈,こうみゃく,[n],"[vein (of ore), reef, streak, lode]"
 1422,1,鋼管,こうかん,[n],[steel pipe]
 1423,1,降りしきる,ふりしきる,"[v5r, vi]","[to rain incessantly, to downpour]"
 1424,1,降り注ぐ,ふりそそぐ,"[v5g, vi]","[to rain incessantly, to downpour]"
@@ -1428,14 +1428,14 @@
 1428,1,高み,たかみ,[n],"[height, elevated place]"
 1429,,高感度,こうかんど,"[n, adj-no]","[high sensitivity, highly sensitive (e.g. film, radio receiver), high speed (film), discerning, discriminating, of refined tastes]"
 1430,,高機能,こうきのう,"[adj-no, adj-na]","[high-functioning, high-performance, sophisticated]"
-1431,,高貴,こうき,"[adj-na, n, adj-no]","[high class, noble]"
+1431,1,高貴,こうき,"[adj-na, n, adj-no]","[high class, noble]"
 1432,1,高空,こうくう,[n],[high altitude]
 1433,1,高血圧症,こうけつあつしょう,[n],"[high blood pressure (as an illness), hypertension]"
 1434,,高山病,こうざんびょう,[n],"[altitude sickness, mountain sickness]"
 1435,1,高射特科,こうしゃとっか,[n],[anti-aircraft artillery]
 1436,1,高射砲,こうしゃほう,[n],[antiaircraft gun]
 1437,1,高周波,こうしゅうは,[n],"[high frequency, HF]"
-1438,,高精度,こうせいど,[n],[high precision]
+1438,1,高精度,こうせいど,[n],[high precision]
 1439,,高専,こうせん,[n],"[technical college, higher schools and colleges]"
 1440,,高配,こうはい,[n],"[(your) good offices, your trouble]"
 1441,,高飛車,たかびしゃ,"[adj-na, n]","[high-handed, domineering, on one's high horse]"
@@ -1475,7 +1475,7 @@
 1475,1,黒ずむ,くろずむ,"[v5m, vi]","[to blacken, to darken]"
 1476,,黒光り,くろびかり,"[n, vs]","[black lustre, black luster]"
 1477,1,黒松,くろまつ,[n],[black pine]
-1478,,黒船,くろふね,[n],"[black ships (i.e. Western ships, often painted with tar, that came to Japan in the 16th century), product, person, etc. arriving from the West and disturbing the Japanese market, etc.]"
+1478,1,黒船,くろふね,[n],"[black ships (i.e. Western ships, often painted with tar, that came to Japan in the 16th century), product, person, etc. arriving from the West and disturbing the Japanese market, etc.]"
 1479,1,黒地,くろじ,[n],"[black ground, black cloth]"
 1480,1,黒点,こくてん,[n],"[black spot, dark spot, sunspot]"
 1481,1,黒土,こくど,[n],"[black terracotta, black soil]"
@@ -1516,7 +1516,7 @@
 1516,1,挫傷,ざしょう,"[n, vs]",[bruise (internal)]
 1517,1,催眠術,さいみんじゅつ,[n],[hypnotism]
 1518,1,再興,さいこう,"[n, vs]","[revival, restoration, resuscitation]"
-1519,,再生産,さいせいさん,"[n, vs]",[reproduction]
+1519,1,再生産,さいせいさん,"[n, vs]",[reproduction]
 1520,1,再調査,さいちょうさ,[n],"[re-examination, reinvestigation]"
 1521,,再読,さいどく,"[n, vs]",[rereading]
 1522,1,再配置,さいはいち,[n],"[rearrangement, reallocation, realignment, relocation]"
@@ -1536,7 +1536,7 @@
 1536,,歳費,さいひ,[n],[annual expenditure]
 1537,1,犀,さい,[n],[rhinoceros]
 1538,1,砦,とりで,[n],"[fort, fortress, stronghold, fortification]"
-1539,,祭神,さいじん,[n],[enshrined deity]
+1539,1,祭神,さいじん,[n],[enshrined deity]
 1540,,祭祀,さいし,[n],"[ritual, religious service, festival]"
 1541,1,細める,ほそめる,"[v1, vt]",[to make narrow]
 1542,1,細身,ほそみ,"[n, adj-no]","[narrow, thin (sized), slender]"
@@ -1545,7 +1545,7 @@
 1545,1,細面,ほそおもて,"[n, adj-no]",[slender face]
 1546,,裁断,さいだん,"[n, vs]","[cutting (cloth, paper), judgement, judgment, decision]"
 1547,1,際する,さいする,[vs-s],"[to arrive, to come to pass]"
-1548,,際どい,きわどい,[adj-i],"[very close, close, narrow (e.g. narrow victory), dangerous, risky, hazardous, suggestive, bordering on the obscene, risqué, delicate (e.g. question), immoral, questionable, shady, extreme, harsh, cruel]"
+1548,1,際どい,きわどい,[adj-i],"[very close, close, narrow (e.g. narrow victory), dangerous, risky, hazardous, suggestive, bordering on the obscene, risqué, delicate (e.g. question), immoral, questionable, shady, extreme, harsh, cruel]"
 1549,,在位,ざいい,"[n, vs]",[reign (i.e of a ruler)]
 1550,1,罪悪,ざいあく,[n],"[crime, sin, vice]"
 1551,1,罪状,ざいじょう,[n],"[charges, nature of offence, nature of offense]"
@@ -1555,7 +1555,7 @@
 1555,1,肴,さかな,[n],"[appetizer or snack served with drinks, performance to liven up a bar, conversation to liven up a party]"
 1556,,造り酒屋,つくりざかや,[n],"[sake brewer, sake brewery]"
 1557,,作り直す,つくりなおす,"[v5s, vt]","[to remake, to rebuild]"
-1558,,作り物,つくりもの,"[n, adj-no]","[artificial product, man-made product, imitation, fake, sham, fiction, decoration (e.g. for a festival), theatrical prop (esp. a large prop in noh or kyogen, e.g. tree, well, etc.), crop]"
+1558,1,作り物,つくりもの,"[n, adj-no]","[artificial product, man-made product, imitation, fake, sham, fiction, decoration (e.g. for a festival), theatrical prop (esp. a large prop in noh or kyogen, e.g. tree, well, etc.), crop]"
 1559,1,作為,さくい,"[n, vs]","[artificiality, act, commission (of a crime)]"
 1560,1,作歌,さっか,"[n, vs]","[writing songs or poems, poem]"
 1561,,作詩,さくし,"[n, vs]","[versification, verse making]"
@@ -1589,11 +1589,11 @@
 1589,1,三軍,さんぐん,"[n, adj-no]","[great army, mighty host, whole army]"
 1590,1,三校,さんこう,[n],[third proof]
 1591,1,三佐,さんさ,[n],[major (JSDF)]
-1592,,三尺,さんじゃく,[n],"[3 Japanese feet, waistband, belt, cloth girdle]"
+1592,1,三尺,さんじゃく,[n],"[3 Japanese feet, waistband, belt, cloth girdle]"
 1593,,三重殺,さんじゅうさつ,[n],[triple play]
 1594,,三重奏,さんじゅうそう,[n],[instrumental trio]
 1595,1,三春,さんしゅん,[n],[three spring months]
-1596,,三色,さんしょく,"[n, adj-no]","[three colours, three colors, triple run, winning hand containing the same chow in each of the three suits, triple pung, winning hand containing the same pung in each of the three suits]"
+1596,1,三色,さんしょく,"[n, adj-no]","[three colours, three colors, triple run, winning hand containing the same chow in each of the three suits, triple pung, winning hand containing the same pung in each of the three suits]"
 1597,1,三食,さんしょく,[n],[three meals (a day)]
 1598,1,三体,さんたい,[n],[the three character styles: square and semicursive and grass]
 1599,1,三等,さんとう,[n],[third class]
@@ -1601,7 +1601,7 @@
 1601,1,三文,さんもん,[n],"[cheapness, farthing]"
 1602,1,三昧,さんまい,"[n, n-suf]","[samadhi (state of intense concentration achieved through meditation), concentrating on something, absorbing oneself in something]"
 1603,1,三枚目,さんまいめ,[n],"[comedian, actor who plays comic roles, figure of fun, laughing stock]"
-1604,,三面,さんめん,[n],"[three sides, three faces, page three (of a newspaper)]"
+1604,1,三面,さんめん,[n],"[three sides, three faces, page three (of a newspaper)]"
 1605,1,参った,まいった,[exp],"[I'm beaten, I give up]"
 1606,,参賀,さんが,"[n, vs]",[congratulatory palace visit]
 1607,1,参会,さんかい,"[n, vs]",[attendance (at a meeting)]
@@ -1653,7 +1653,7 @@
 1653,,使い切る,つかいきる,"[v5r, vt]","[to use up, to exhaust, to wear out]"
 1654,1,遣い物,つかいもの,[n],"[useful thing, usable article, present, gift]"
 1655,1,使い物,つかいもの,[n],"[useful thing, usable article]"
-1656,,刺し網,さしあみ,[n],[gill net]
+1656,1,刺し網,さしあみ,[n],[gill net]
 1657,1,刺殺,しさつ,"[n, vs]","[stabbing to death, putting out]"
 1658,1,司法権,しほうけん,[n],"[judicial power, jurisdiction]"
 1659,1,史観,しかん,"[n, suf]","[historical view, view of history (from a given point of view)]"
@@ -1667,7 +1667,7 @@
 1667,1,始祖,しそ,[n],"[founder, originator, pioneer]"
 1668,,始動,しどう,"[n, vs]","[starting (in machines), activation]"
 1669,,子飼い,こがい,[n],[protege]
-1670,,子持ち,こもち,[n],"[parenthood, parent or someone with children on the way (esp. an expecting mother), (of a fish) containing roe (eggs)]"
+1670,1,子持ち,こもち,[n],"[parenthood, parent or someone with children on the way (esp. an expecting mother), (of a fish) containing roe (eggs)]"
 1671,1,子分,こぶん,[n],"[henchman, follower, adopted child]"
 1672,1,乾児,こぶん,[n],"[henchman, follower]"
 1673,,市井,しせい,[n],"[the street, the town]"
@@ -1682,13 +1682,13 @@
 1682,,思い知る,おもいしる,"[v5r, vt]","[to realize, to realise]"
 1683,,思い悩む,おもいなやむ,"[v5m, vt]","[to worry about, to be worried about, to fret about, to not know what to do, to be at a loss (as to what to do)]"
 1684,,思い返す,おもいかえす,"[v5s, vt]","[to re-think, to think back upon, to change one's mind]"
-1685,,思い立つ,おもいたつ,"[v5t, vt]","[to occur (to one's mind), to get the idea of doing, to resolve, to make up one's mind]"
+1685,1,思い立つ,おもいたつ,"[v5t, vt]","[to occur (to one's mind), to get the idea of doing, to resolve, to make up one's mind]"
 1686,,思潮,しちょう,[n],[trend of thought]
 1687,1,指揮棒,しきぼう,[n],"[conductor's stick, conductor's baton]"
 1688,1,指向,しこう,"[n, vs, adj-no, n-suf]","[being orientated (towards), pointing (towards), directing (towards), directional (e.g. microphone), -oriented]"
 1689,1,指南,しなん,"[n, vs]","[instruction (in martial arts, performance, etc.), teaching, coaching]"
 1690,1,施し,ほどこし,[n],[charity]
-1691,,施錠,せじょう,"[n, vs]",[locking]
+1691,1,施錠,せじょう,"[n, vs]",[locking]
 1692,1,宗,むね,[n],"[center (centre), pillar, principle]"
 1693,1,廃める,やめる,[],"[to cancel, to abandon, to give up, to abolish, to abstain, to refrain]"
 1694,,死角,しかく,[n],"[blind spot, dead space]"
@@ -1723,7 +1723,7 @@
 1723,,持ち去る,もちさる,[v5r],"[to take away, to carry away]"
 1724,1,持ち合せる,もちあわせる,"[v1, vt]",[to happen to have on hand or in stock]
 1725,1,持ち上げる,もちあげる,"[v1, vt]","[to elevate, to raise, to lift up, to flatter, to extol, to praise to the sky]"
-1726,,持ち場,もちば,[n],"[job, station, position, post, route]"
+1726,1,持ち場,もちば,[n],"[job, station, position, post, route]"
 1727,1,持ち切り,もちきり,[n],"[hot topic, talk of the town]"
 1728,,持ち上がる,もちあがる,"[v5r, vi]","[to be lifted, to be raised, to rise, to go up, to happen suddenly, to occur, to come up, to turn up, to be homeroom teacher for the same class multiple years in a row, to move up with one's class]"
 1729,1,刻,とき,[n],"[time, hour, moment]"
@@ -1796,17 +1796,17 @@
 1796,1,舎利,しゃり,[n],"[bones left after cremation (esp. those of a Buddha or Boddhisatva), grain of rice, cooked rice]"
 1797,1,舎利,さり,[n],[bones left after cremation (esp. those of a Buddha or Boddhisatva)]
 1798,,写実,しゃじつ,"[n, vs]","[realism, real picture]"
-1799,,写植,しゃしょく,[n],[phototypesetting]
+1799,1,写植,しゃしょく,[n],[phototypesetting]
 1800,,煮干,にぼし,[n],[(small crunchy) dried sardines]
 1801,1,煮詰まる,につまる,"[v5r, vi]","[to be boiled down, to approach a conclusion (of a discussion, investigation, etc.), to come to a standstill, to reach an impasse]"
 1802,1,煮込み,にこみ,[n],"[stew, hodgepodge]"
 1803,,煮立つ,にたつ,"[v5t, vi]","[to boil, to simmer]"
 1804,1,社用,しゃよう,[n],[company business]
 1805,1,謝辞,しゃじ,[n],"[thanks, apology]"
-1806,,車座,くるまざ,[n],[sitting in a circle]
+1806,1,車座,くるまざ,[n],[sitting in a circle]
 1807,1,邪悪,じゃあく,"[adj-na, n]","[wicked, evil]"
 1808,1,邪険,じゃけん,"[n, adj-na]","[cruelty, hard-heartedness]"
-1809,,借り換え,かりかえ,[n],"[conversion, refunding, renewal]"
+1809,1,借り換え,かりかえ,[n],"[conversion, refunding, renewal]"
 1810,,借り受ける,かりうける,"[v1, vt]","[to borrow, to have a loan, to hire, to rent, to buy on credit]"
 1811,1,借り出す,かりだす,"[v5s, vt]","[to borrow, to take out]"
 1812,,借り上げる,かりあげる,"[v1, vt]","[to hire, to lease, to requisition, to charter]"
@@ -1825,7 +1825,7 @@
 1825,,主権在民,しゅけんざいみん,[n],[the sovereignty of the people]
 1826,1,主事,しゅじ,[n],"[manager, director, superintendent, overseer]"
 1827,1,主成分,しゅせいぶん,[n],"[main ingredient, main component]"
-1828,,主賓,しゅひん,[n],"[main guest, guest of honor, guest of honour]"
+1828,1,主賓,しゅひん,[n],"[main guest, guest of honor, guest of honour]"
 1829,1,主文,しゅぶん,[n],"[the text, the main clause, the main part of a document]"
 1830,,主峰,しゅほう,[n],[the highest peak]
 1831,1,主務,しゅむ,"[n, adj-f]","[person in charge, competent (authority, minister, etc.)]"
@@ -1862,11 +1862,11 @@
 1862,1,手練手管,てれんてくだ,[n],"[wiles, art of coaxing]"
 1863,,種苗,しゅびょう,[n],"[seeds and seedlings, eggs and hatchlings, (fish) eggs and fry]"
 1864,1,腫,しゅ,[n-suf],"[tumor, tumour]"
-1865,,腫瘍,しゅよう,[n],"[tumor, tumour, neoplasm, neoplasia]"
+1865,1,腫瘍,しゅよう,[n],"[tumor, tumour, neoplasm, neoplasia]"
 1866,1,主旨,しゅし,[n],"[meaning, point (e.g. of a statement), gist, effect]"
 1867,,酒気,しゅき,[n],"[liquor smell, tipsiness]"
 1868,1,酒好き,さけずき,"[adj-na, n]",[drinker]
-1869,,酒豪,しゅごう,[n],[heavy drinker]
+1869,1,酒豪,しゅごう,[n],[heavy drinker]
 1870,1,首筋,くびすじ,[n],"[nape of the neck, back of the neck, scruff of the neck]"
 1871,1,受け流す,うけながす,"[v5s, vt]","[to ward off, to elude, to turn aside (a joke)]"
 1872,,受検,じゅけん,"[n, vs]",[being subjected to investigation]
@@ -1874,7 +1874,7 @@
 1874,1,呪縛,じゅばく,"[n, vs]","[curse, spell]"
 1875,,呪文,じゅもん,[n],"[spell, charm, incantation, magic word]"
 1876,1,授乳,じゅにゅう,"[n, vs, adj-no]","[breast-feeding, suckling, nursing]"
-1877,,収監,しゅうかん,"[n, vs]",[imprisonment]
+1877,1,収監,しゅうかん,"[n, vs]",[imprisonment]
 1878,,収受,しゅうじゅ,"[n, vs]","[reception, receiving]"
 1879,,収蔵,しゅうぞう,"[n, vs]","[garnering, collection]"
 1880,,収束,しゅうそく,"[n, vs, adj-no]","[conclusion, resolution, firming up (plans, etc.), coming together, returning to normal, gathering and bundling, convergence, focusing (e.g. light), convergence]"
@@ -1886,7 +1886,7 @@
 1886,1,宗旨,しゅうし,[n],"[tenets (doctrines) of a religious sect, (religious) sect]"
 1887,1,宗主国,そうしゅこく,[n],"[suzerain state, state that controls another in international affairs, but allows it domestic sovereignty]"
 1888,1,即く,つく,[v5k],"[to ascend (the throne), to accede]"
-1889,,就役,しゅうえき,"[n, vs]","[placed in commission, entering servitude]"
+1889,1,就役,しゅうえき,"[n, vs]","[placed in commission, entering servitude]"
 1890,1,修験道,しゅげんどう,[n],"[Shugendou, Japanese mountain asceticism-shamanism incorporating Shinto and Buddhist concepts]"
 1891,1,修辞,しゅうじ,[n],"[figure of speech, rhetorical flourish]"
 1892,1,修身,しゅうしん,[n],"[morals, ethics, moral training]"
@@ -1921,7 +1921,7 @@
 1921,,渋柿,しぶがき,[n],[astringent persimmon]
 1922,,縦横無尽,じゅうおうむじん,"[adj-na, n]","[freely, right and left, as one pleases]"
 1923,1,重なり合う,かさなりあう,[v5u],"[to lie on top of each other, to overlap, to pile up]"
-1924,,重ね着,かさねぎ,"[n, vs]","[layering (clothing), wearing one garment over another]"
+1924,1,重ね着,かさねぎ,"[n, vs]","[layering (clothing), wearing one garment over another]"
 1925,,重機関銃,じゅうきかんじゅう,[n],[heavy machine gun]
 1926,1,重金属,じゅうきんぞく,[n],[heavy metals]
 1927,1,重罪,じゅうざい,"[n, adj-no]","[felony, serious crime]"
@@ -1941,12 +1941,12 @@
 1941,1,祝詞,のりと,[n],"[ritual prayer, invocation of the gods participating in a rite]"
 1942,1,祝典,しゅくてん,[n],[celebration]
 1943,1,縮刷版,しゅくさつばん,[n],"[small edition, pocket edition]"
-1944,,粛軍,しゅくぐん,[n],[army purge]
+1944,1,粛軍,しゅくぐん,[n],[army purge]
 1945,,粛正,しゅくせい,[n],"[regulation, enforcement]"
 1946,1,熟成,じゅくせい,"[n, vs]","[mature, ripen, cure, ferment]"
-1947,,熟読,じゅくどく,"[n, vs]","[perusal, careful reading]"
-1948,,熟慮,じゅくりょ,"[n, vs]","[deliberation, (thoughtful) consideration, to consider a matter carefully]"
-1949,,出くわす,でくわす,[v5s],"[to happen to meet, to come across]"
+1947,1,熟読,じゅくどく,"[n, vs]","[perusal, careful reading]"
+1948,1,熟慮,じゅくりょ,"[n, vs]","[deliberation, (thoughtful) consideration, to consider a matter carefully]"
+1949,1,出くわす,でくわす,[v5s],"[to happen to meet, to come across]"
 1950,1,出し入れ,だしいれ,"[n, vs]","[deposit and withdraw, taking in and out]"
 1951,,出し物,だしもの,[n],"[program (e.g. theatre, theater), programme, (theatrical) piece, number, performance, feature]"
 1952,1,出過ぎる,ですぎる,"[v1, vi]","[to project or protrude too much, to be too forward, to obtrude]"
@@ -1957,7 +1957,7 @@
 1957,1,出刃,でば,[n],"[knife, pointed carver]"
 1958,1,出尽す,でつくす,[v5s],"[to be all out, to exhaust]"
 1959,,出世作,しゅっせさく,[n],[work of art or literature that brings fame]
-1960,,出先,でさき,[n],[one's destination]
+1960,1,出先,でさき,[n],[one's destination]
 1961,,出先機関,でさききかん,[n],[branch office]
 1962,,出窓,でまど,[n],[bay window]
 1963,1,出超,しゅっちょう,[n],"[excess of exports, favorable balance of trade, favourable balance of trade]"
@@ -1966,7 +1966,7 @@
 1966,1,出版元,しゅっぱんもと,[n],[publisher]
 1967,1,出兵,しゅっぺい,"[n, vs]","[dispatch of troops, despatch of troops, expedition]"
 1968,1,出歩く,であるく,"[v5k, vi]","[to go out, to take a stroll, to go about]"
-1969,,出来栄え,できばえ,[n],"[result, effect, performance, success, workmanship, execution, shape and quality of (an article), finishing touches]"
+1969,1,出来栄え,できばえ,[n],"[result, effect, performance, success, workmanship, execution, shape and quality of (an article), finishing touches]"
 1970,1,出来合い,できあい,[n],"[ready-made, common-law (wife)]"
 1971,1,駿足,しゅんそく,"[n, adj-no]","[fast runner, swift horse, fleet steed]"
 1972,,峻別,しゅんべつ,"[n, vs]",[rigorous distinction]
@@ -2068,7 +2068,7 @@
 2068,1,昇任,しょうにん,"[n, vs]","[promotion, advancement]"
 2069,1,松竹梅,しょうちくばい,[n],"[pine, bamboo and plum (together an auspicious grouping), high, middle and low (ranking), top, middle and bottom, upper, medium, lower, first, second and third (class)]"
 2070,1,消し止める,けしとめる,"[v1, vt]","[to put out, to extinguish]"
-2071,,消去,しょうきょ,"[n, vs]","[elimination, erasure, dying out, clearing, purge, melting away]"
+2071,1,消去,しょうきょ,"[n, vs]","[elimination, erasure, dying out, clearing, purge, melting away]"
 2072,1,消耗品,しょうもうひん,[n],[consumable goods]
 2073,1,灼ける,やける,[],"[to be jealous, to be envious]"
 2074,,焼け落ちる,やけおちる,"[v1, vi]",[to be burned down]
@@ -2086,7 +2086,7 @@
 2086,1,登り,のぼり,"[n, adj-no]","[ascent, climbing, ascending (path), climb, northward (towards Tokyo)]"
 2087,1,上意,じょうい,[n],"[will or decree (esp. of shogun), emperor's wishes]"
 2088,1,上下動,じょうげどう,[n],[vertical motion (in earthquakes)]
-2089,,上滑り,うわすべり,"[adj-na, n]","[superficial, careless, inattentive]"
+2089,1,上滑り,うわすべり,"[adj-na, n]","[superficial, careless, inattentive]"
 2090,,上官,じょうかん,[n],[superior officer]
 2091,1,上気,じょうき,"[n, vs]","[flushing (of one's cheeks), dizziness, rush of blood to the head]"
 2092,1,上出来,じょうでき,"[adj-na, n]",[good performance]
@@ -2095,7 +2095,7 @@
 2095,1,上水,じょうすい,[n],"[water supply, tap water]"
 2096,1,上席,じょうせき,"[n, adj-no]","[seniority, precedence, upper seat]"
 2097,,上端,じょうたん,[n],"[upper end, top, tip, top edge]"
-2098,,上段,じょうだん,[n],"[upper tier, upper section, upper deck, upper row, upper step, upper grade, upper berth, top shelf, place of honor, place of honour, dais, raised part of floor, overhead position (of a sword in kendo, etc.)]"
+2098,1,上段,じょうだん,[n],"[upper tier, upper section, upper deck, upper row, upper step, upper grade, upper berth, top shelf, place of honor, place of honour, dais, raised part of floor, overhead position (of a sword in kendo, etc.)]"
 2099,1,上値,うわね,[n],"[higher price, price rise]"
 2100,1,上棟,じょうとう,[n],[raising the ridgepole]
 2101,1,上等兵,じょうとうへい,[n],"[private first-class (army), airman first class (air force), lance corporal (US Marines; Commonwealth military), seaman (navy)]"
@@ -2115,7 +2115,7 @@
 2115,,乗合,のりあい,"[n, adj-no]","[riding together, fellow passenger, joint partnership]"
 2116,1,乗船,じょうせん,"[n, vs]","[embarking, embarkation, boarding]"
 2117,1,城下,じょうか,[n],[land near the castle]
-2118,,城壁,じょうへき,"[n, adj-no]","[rampart, castle walls]"
+2118,1,城壁,じょうへき,"[n, adj-no]","[rampart, castle walls]"
 2119,,場末,ばすえ,"[n, adj-no]","[outskirts (e.g. of a shopping district), rundown district]"
 2120,,常緑,じょうりょく,"[n, adj-no]",[evergreen]
 2121,1,常緑樹,じょうりょくじゅ,[n],[evergreen tree]
@@ -2129,15 +2129,15 @@
 2129,1,植民,しょくみん,"[n, vs, adj-no]","[colonization, colonisation]"
 2130,1,織り込む,おりこむ,"[v5m, vt]","[to weave into, to interweave, to be incorporated in, to be factored in]"
 2131,1,色っぽい,いろっぽい,[adj-i],"[amorous, sexy, voluptuous, erotic]"
-2132,,色刷り,いろずり,[n],"[colour printing, color printing]"
+2132,1,色刷り,いろずり,[n],"[colour printing, color printing]"
 2133,1,色直し,いろなおし,"[n, vs]",[redyeing (costume)]
 2134,1,色分け,いろわけ,"[n, vs]","[classification, color coding, colour coding, color keying, colour keying, differentiation using different colors (colours)]"
 2135,,食い逃げ,くいにげ,"[n, vs]","[running away without paying for food, bilk]"
 2136,1,食い入る,くいいる,"[v5r, vi]",[to eat into]
 2137,,食らいつく,くらいつく,"[v5k, vi]","[to bite at, to snap at, to nibble, to get one's teeth into (metaphorically), to get to grips with, to really get into]"
-2138,,食べ過ぎ,たべすぎ,[n],[overeating]
+2138,1,食べ過ぎ,たべすぎ,[n],[overeating]
 2139,,食べ残し,たべのこし,[n],[leftover food (esp. on one's plate at the end of a meal)]
-2140,,食前,しょくぜん,"[n-adv, n-t]",[before meals]
+2140,1,食前,しょくぜん,"[n-adv, n-t]",[before meals]
 2141,,食通,しょくつう,[n],"[gourmandism, gourmet, gourmand, foodie]"
 2142,1,信教,しんきょう,[n],"[religious belief, faith]"
 2143,1,信心,しんじん,"[n, vs, adj-no]","[faith, belief, devotion, godliness]"
@@ -2150,20 +2150,20 @@
 2150,1,寝起き,ねおき,"[n, vs]","[lying down and getting up, waking, living (with), staying (with)]"
 2151,1,寝込む,ねこむ,"[v5m, vi]","[to stay in bed, to sleep, to be laid up for a long time]"
 2152,1,寝食,しんしょく,"[n, vs]","[bed and food, eating and sleeping]"
-2153,,寝静まる,ねしずまる,"[v5r, vi]",[to fall asleep]
+2153,1,寝静まる,ねしずまる,"[v5r, vi]",[to fall asleep]
 2154,1,寝袋,ねぶくろ,[n],[sleeping bag]
 2155,1,心血,しんけつ,[n],[heart's blood]
-2156,,心持ち,こころもち,"[n, adv]","[feeling, mood, sensation, disposition, mental attitude, somewhat, slightly, just a little]"
+2156,1,心持ち,こころもち,"[n, adv]","[feeling, mood, sensation, disposition, mental attitude, somewhat, slightly, just a little]"
 2157,1,心底,しんそこ,"[adv, n]","[one's innermost depths, completely (from the bottom of one's heart)]"
 2158,,心電図,しんでんず,[n],"[electro-cardiogram, ECG, EKG]"
-2159,,心拍,しんぱく,"[n, adj-no]",[heart rate]
+2159,1,心拍,しんぱく,"[n, adj-no]",[heart rate]
 2160,1,心変わり,こころがわり,[n],"[change one's mind, inconstancy, faithlessness]"
 2161,1,振り替える,ふりかえる,"[v1, vt]","[to change (e.g. a bill), to transfer (e.g. money), to switch over, to move over]"
 2162,,振り分ける,ふりわける,"[v1, vt]","[to divide in two, to divide in half, to apportion, to divide among, to portion out, to allot, to assign]"
 2163,,振り落とす,ふりおとす,"[v5s, vt]","[to shake off, to throw off]"
 2164,,新館,しんかん,[n],"[annexe, annex]"
 2165,,新奇,しんき,"[adj-na, n]",[novel]
-2166,,新妻,にいづま,[n],[new wife]
+2166,1,新妻,にいづま,[n],[new wife]
 2167,1,新参,しんざん,"[n, adj-no]","[newcomer, tyro]"
 2168,1,新手,しんて,[],"[new method, new trick]"
 2169,1,新説,しんせつ,[n],[new theory]
@@ -2185,7 +2185,7 @@
 2185,,真性,しんせい,"[n, adj-no]","[inborn nature, genuine, intrinsic, essential]"
 2186,,真正,しんせい,"[adj-na, n, adj-no]","[genuine, authentic, true, pure]"
 2187,,真打,しんうち,[n],"[star performer, headliner]"
-2188,,真田,さなだ,[n],"[plait, braid]"
+2188,1,真田,さなだ,[n],"[plait, braid]"
 2189,,神経症,しんけいしょう,[n],"[nervous disorder, neurosis]"
 2190,,神経戦,しんけいせん,[n],[war of nerves]
 2191,1,神代,かみよ,[n],"[ancient time, age of the gods]"
@@ -2202,9 +2202,9 @@
 2202,,進行状況,しんこうじょうきょう,[n],[state of progress]
 2203,1,針路,しんろ,[n],"[course, direction, compass bearing]"
 2204,1,震え上がる,ふるえあがる,"[v5r, vi]","[to tremble violently, to shudder up]"
-2205,,人家,じんか,[n],"[house, houses, human habitation]"
+2205,1,人家,じんか,[n],"[house, houses, human habitation]"
 2206,,人垣,ひとがき,[n],[crowd of people]
-2207,,人格者,じんかくしゃ,[n],"[person of character, man of character]"
+2207,1,人格者,じんかくしゃ,[n],"[person of character, man of character]"
 2208,,人間工学,にんげんこうがく,"[n, adj-no]","[ergonomics, human engineering]"
 2209,1,人間味,にんげんみ,[n],"[human kindness, human weakness]"
 2210,1,人気取り,にんきとり,[n],"[bid for popularity, publicity stunt]"
@@ -2248,7 +2248,7 @@
 2248,,水瓶,みずがめ,[n],[water jug]
 2249,1,水兵,すいへい,[n],[(naval) sailor]
 2250,1,水没,すいぼつ,"[n, vs]",[submerge]
-2251,,水門,すいもん,[n],"[sluice gate, water gate, flood gate]"
+2251,1,水門,すいもん,[n],"[sluice gate, water gate, flood gate]"
 2252,,水流,すいりゅう,[n],[water current]
 2253,,炊き込み,たきこみ,[n],[(something) cooked with rice]
 2254,,炊き込む,たきこむ,"[v5m, vt]",[to cook (something) with rice]
@@ -2280,7 +2280,7 @@
 2280,1,成仏,じょうぶつ,"[n, vs]","[entering Nirvana, becoming a Buddha, going to heaven, resting in peace, dying (peacefully)]"
 2281,,政体,せいたい,[n],"[form of government, system of government, polity]"
 2282,,整形,せいけい,"[n, vs, adj-no]","[orthopedics, plastic surgery, cosmetic surgery, smoothing (bursty traffic, etc.), shaping, fairing]"
-2283,,整然,せいぜん,"[adj-t, adv-to]","[orderly, regular, systematic, well-organized, well-organised, trim, tidy, accurate]"
+2283,1,整然,せいぜん,"[adj-t, adv-to]","[orderly, regular, systematic, well-organized, well-organised, trim, tidy, accurate]"
 2284,1,整地,せいち,"[n, vs]",[soil preparation]
 2285,1,星雲,せいうん,[n],"[nebula, galaxy]"
 2286,1,星団,せいだん,[n],[star cluster]
@@ -2299,7 +2299,7 @@
 2299,1,生ビール,なまビール,[n],"[unpasteurized beer, draft beer, draught beer]"
 2300,1,生活難,せいかつなん,[n],[difficulties in living]
 2301,1,生殺与奪,せいさつよだつ,[n],[(having) life-and-death power (over)]
-2302,,生殖器,せいしょくき,[n],"[genital organ, genitalia, sexual organ, reproductive organ]"
+2302,1,生殖器,せいしょくき,[n],"[genital organ, genitalia, sexual organ, reproductive organ]"
 2303,1,生身,しょうじん,"[n, adj-no]","[living flesh, flesh and blood, physical body of Buddha or a bodhisattva]"
 2304,1,生身,なまみ,"[n, adj-no]","[living flesh, flesh and blood]"
 2305,1,生粋,きっすい,"[n, adj-no]","[pure, genuine, natural-born]"
@@ -2322,7 +2322,7 @@
 2322,1,製版,せいはん,"[n, vs]",[plate-making (printing)]
 2323,1,製粉,せいふん,"[n, vs]","[milling, grinding into flour]"
 2324,1,製本,せいほん,"[n, vs]","[book making (binding, publishing)]"
-2325,,西南西,せいなんせい,[n],[west-southwest]
+2325,1,西南西,せいなんせい,[n],[west-southwest]
 2326,1,西北,せいほく,[n],[north-west]
 2327,1,西北西,せいほくせい,[n],[west-northwest]
 2328,,請け合う,うけあう,"[v5u, vt]","[to undertake, to take on (task), to assure, to guarantee, to vouch (for), to promise]"
@@ -2336,12 +2336,12 @@
 2336,1,石畳,いしだたみ,[n],"[(flat) stone paving, sett, flagstone, (chocolate) pavé, various rectangular pastries, esp. layered chocolate]"
 2337,1,石仏,いしぼとけ,[n],"[stone Buddhist image, unemotional person, taciturn person]"
 2338,1,石油公団,せきゆこうだん,[n],[Japan National Oil Corporation]
-2339,,積み出す,つみだす,"[v5s, vt]",[to send off]
+2339,1,積み出す,つみだす,"[v5s, vt]",[to send off]
 2340,,積み上げ,つみあげ,[n],"[piling up, making a heap, laying bricks]"
 2341,1,積み上げる,つみあげる,"[v1, vt]","[to pile up, to make a heap, to lay (e.g. bricks), to acquire (e.g. experience), to build (a reputation)]"
 2342,1,積み立てる,つみたてる,"[v1, vt]","[to accumulate, to save]"
 2343,1,積乱雲,せきらんうん,[n],[cumulonimbus cloud]
-2344,,責め,せめ,[n],"[persecution, blame, responsibility]"
+2344,1,責め,せめ,[n],"[persecution, blame, responsibility]"
 2345,,責任転嫁,せきにんてんか,[n],"[shift the responsibility (for something) on to (someone), pass the buck]"
 2346,1,赤潮,あかしお,[n],[red tide]
 2347,,跡取り,あととり,[n],"[heir, heiress, inheritor, successor]"
@@ -2374,9 +2374,9 @@
 2374,1,接客,せっきゃく,"[n, vs]","[serving customers, looking after visitors, reception]"
 2375,1,接合,せつごう,"[n, vs]","[union, joining, conjugation]"
 2376,,接地,せっち,"[n, vs]","[ground (elec), contact patch (between car tyre and road), landing (an aeroplane, airplane)]"
-2377,,折り合う,おりあう,"[v5u, vi]",[to compromise]
+2377,1,折り合う,おりあう,"[v5u, vi]",[to compromise]
 2378,,折り重なる,おりかさなる,"[v5r, vi]","[to lie on top of one another, to be in a heap]"
-2379,,節水,せっすい,"[n, vs]","[saving water, water conservation, conservation of water]"
+2379,1,節水,せっすい,"[n, vs]","[saving water, water conservation, conservation of water]"
 2380,1,節制,せっせい,"[n, vs, adj-no]","[moderation, self-restraint, temperance]"
 2381,1,説話,せつわ,"[n, vs]","[tale, narrative]"
 2382,1,雪中,せっちゅう,"[n, adj-no]",[in the snow]
@@ -2393,7 +2393,7 @@
 2393,1,先勝,せんかち,[n],"[lucky day in the morning, but not in the afternoon]"
 2394,1,先勝,せんしょう,"[n, vs]","[scoring the first point, winning the first game, lucky day in the morning, but not in the afternoon]"
 2395,1,先生,せんじょう,"[n, suf]","[teacher, master, doctor, with names of teachers, etc. as an honorific, previous existence]"
-2396,,先走る,さきばしる,"[v5r, vi]","[to be forward, to be impertinent]"
+2396,1,先走る,さきばしる,"[v5r, vi]","[to be forward, to be impertinent]"
 2397,1,先達,せんだつ,[n],"[guide, leader, pioneer]"
 2398,,先端的,せんたんてき,[adj-na],"[ultramodern, leading]"
 2399,,先天性,せんてんせい,"[n, adj-no]","[hereditary, congenital]"
@@ -2401,12 +2401,12 @@
 2401,1,先鋒,せんぽう,[n],"[advance guard, vanguard, athlete who competes in the first match of a team competition (kendo, judo, etc.)]"
 2402,,先立つ,さきだつ,"[v5t, vi]","[to lead, to take the lead (in doing something), to precede, to go before, to take precedence, to die before (esp. one's spouse, parents, etc.), to be a prerequisite]"
 2403,1,千差万別,せんさばんべつ,"[adj-na, n, adj-no]","[an infinite variety of, multifarious, being extremely varied and wide-ranging]"
-2404,,千載一遇,せんざいいちぐう,[n],"[once in a lifetime (opportunity), (a golden opportunity that may) happen only once in a thousand years]"
+2404,1,千載一遇,せんざいいちぐう,[n],"[once in a lifetime (opportunity), (a golden opportunity that may) happen only once in a thousand years]"
 2405,1,千秋,せんしゅう,[n],"[thousand years, many years]"
 2406,1,千切り,せんぎり,[n],"[small pieces or strips of vegetables, shredded vegetables]"
 2407,1,千種,ちぐさ,"[n, adj-na, adj-no]","[great variety of flowering plants, light greenish-blue, various]"
 2408,1,千草,ちぐさ,[n],"[great variety of flowering plants, light greenish-blue]"
-2409,,占星術,せんせいじゅつ,[n],[astrology]
+2409,1,占星術,せんせいじゅつ,[n],[astrology]
 2410,,専科,せんか,[n],"[specialized course, specialised course, something that is specialized for a certain field or application (e.g. a sauce specially made for zaru soba)]"
 2411,1,専心,せんしん,"[n, vs]","[undivided attention, concentration]"
 2412,1,川,がわ,[suf],"[the .... river, (suffix used with the names of rivers)]"
@@ -2426,14 +2426,14 @@
 2426,1,旋風,つむじかぜ,[n],[whirlwind]
 2427,1,線画,せんが,[n],[line drawing]
 2428,,線形,せんけい,"[n, adj-no]","[line, straight alignment, linear, linearity]"
-2429,,船首,せんしゅ,[n],"[bow (of boat), prow, stem]"
+2429,1,船首,せんしゅ,[n],"[bow (of boat), prow, stem]"
 2430,1,船長,ふなおさ,[n],"[ship's captain, skipper, boatman]"
 2431,1,船尾,せんび,"[n, adj-no]",[stern of a ship]
 2432,1,選び出す,えらびだす,"[v5s, vt]","[to select, to pick out]"
 2433,1,選曲,せんきょく,"[n, vs]","[chosen song, choosing a song, choice of songs]"
 2434,,前科,ぜんか,[n],"[previous conviction, criminal record, previous offense, previous offence]"
 2435,1,前駆,ぜんく,"[n, vs, adj-no]","[outrider (person riding horseback in the lead position of a cavalcade), outriding, harbinger, herald, precursor, forerunner, foretoken, anticipation]"
-2436,,前言,ぜんげん,"[n, vs]",[previous remarks]
+2436,1,前言,ぜんげん,"[n, vs]",[previous remarks]
 2437,1,前項,ぜんこう,[n],[preceding paragraph]
 2438,,前座,ぜんざ,"[n, adj-no]","[opening performance, minor performer]"
 2439,1,前山,ぜんざん,[n],"[foothills, first range of mountains]"
@@ -2443,7 +2443,7 @@
 2443,,前世界,ぜんせかい,[n],[prehistoric age]
 2444,,前世紀,ぜんせいき,[n],"[last century, ancient times]"
 2445,1,前節,ぜんせつ,[n],"[preceding paragraph, section, or verse]"
-2446,,前奏曲,ぜんそうきょく,[n],"[prelude, overture]"
+2446,1,前奏曲,ぜんそうきょく,[n],"[prelude, overture]"
 2447,,前代,ぜんだい,[n],"[previous generation, former ages]"
 2448,1,前段,ぜんだん,[n],"[preceding paragraph, first part]"
 2449,1,前著,ぜんちょ,[n],"[ibid., the above-mentioned publication]"
@@ -2460,7 +2460,7 @@
 2460,1,全館,ぜんかん,[n],[entire building]
 2461,,全軍,ぜんぐん,[n],"[the whole army, the whole team]"
 2462,1,全戸,ぜんこ,[n],[all the houses (in town)]
-2463,,全市,ぜんし,[n],[the whole city]
+2463,1,全市,ぜんし,[n],[the whole city]
 2464,1,全店,ぜんてん,"[n, adj-no]",[the whole store]
 2465,1,全島,ぜんとう,"[n, adj-no]",[the whole island]
 2466,1,全敗,ぜんぱい,"[n, vs]","[complete defeat, losing all of one's matches, finishing the tournament with no wins]"
@@ -2478,26 +2478,26 @@
 2478,,素養,そよう,[n],"[groundings in, accomplishments, training, elementary attainments]"
 2479,1,組み込み,くみこみ,"[n, vs, adj-f]","[cut-in (printing), insertion, inclusion, built-in, predefined, embedded (e.g. software)]"
 2480,1,組み入れる,くみいれる,"[v1, vt]","[to incorporate, to work into, to insert]"
-2481,,僧籍,そうせき,[n],[priesthood]
+2481,1,僧籍,そうせき,[n],[priesthood]
 2482,1,僧堂,そうどう,[n],[temple meditation hall or certain other temple structures]
 2483,1,創建,そうけん,"[n, vs]","[establishment, foundation]"
 2484,1,創世,そうせい,[n],[creation of world]
 2485,,双頭,そうとう,[n],[double-headed]
-2486,,双発,そうはつ,"[n, adj-no]",[two-motored]
+2486,1,双発,そうはつ,"[n, adj-no]",[two-motored]
 2487,1,叢書,そうしょ,[n],"[series (of publications), library (of literature)]"
 2488,,壮観,そうかん,"[adj-na, n]","[spectacle, magnificent view]"
 2489,1,壮絶,そうぜつ,"[adj-na, n]","[grand, heroic, sublime, fierce]"
 2490,1,壮麗,そうれい,"[adj-na, n]","[splendour, splendor, pompousness, magnificence]"
 2491,,奏法,そうほう,[n],"[playing (instrument), playing method, touch]"
 2492,1,爽快,そうかい,"[adj-na, n]","[refreshing, exhilarating]"
-2493,,捜し求める,さがしもとめる,[v1],"[to search for, to seek for, to look for]"
-2494,,操り,あやつり,[n],"[manipulation, puppet]"
+2493,1,捜し求める,さがしもとめる,[v1],"[to search for, to seek for, to look for]"
+2494,1,操り,あやつり,[n],"[manipulation, puppet]"
 2495,1,操車,そうしゃ,[n],[operation (of trains)]
 2496,1,早計,そうけい,"[adj-na, n, adj-no]","[over hasty, rash]"
 2497,1,早足,はやあし,[n],"[quick pace, quick steps, quick march, trot (horse gait)]"
 2498,1,早晩,そうばん,"[n-adv, n]","[sooner or later, eventually]"
 2499,1,巣箱,すばこ,[n],"[nest box, (bee) hive, frame, super]"
-2500,,巣立つ,すだつ,[v5t],[to leave the nest]
+2500,1,巣立つ,すだつ,[v5t],[to leave the nest]
 2501,1,漕艇,そうてい,"[n, adj-f]","[rowing, boating]"
 2502,1,相打ち,あいうち,[n],"[simultaneously striking one another (in kendo, etc.), draw, tie]"
 2503,1,相対性理論,そうたいせいりろん,[n],[The Theory of Relativity]
@@ -2560,7 +2560,7 @@
 2560,,打ち返す,うちかえす,[v5s],"[to return a blow repeat, to turn back, to rewhip, to plow up, to plough up, to come and retreat]"
 2561,1,打つ手,うつて,[n],[way to do (something)]
 2562,1,体液,たいえき,[n],[body fluids]
-2563,,体外,たいがい,"[n, adj-no]","[ectogenesis, outside the body]"
+2563,1,体外,たいがい,"[n, adj-no]","[ectogenesis, outside the body]"
 2564,1,体系的,たいけいてき,[adj-na],[systematic]
 2565,1,体臭,たいしゅう,[n],"[body odor, body odour, personal odor, personal odour, characteristic (of someone)]"
 2566,1,体面,たいめん,[n],"[honour, honor, dignity, prestige, reputation, appearances]"
@@ -2588,7 +2588,7 @@
 2588,1,代筆,だいひつ,"[n, vs]",[writing on someone's behalf]
 2589,1,代物,しろもの,[n],"[thing, article, goods, fellow, affair, stuff]"
 2590,,台形,だいけい,"[n, adj-no]","[trapezium, trapezoid]"
-2591,,台紙,だいし,[n],"[cardboard, mat, mount]"
+2591,1,台紙,だいし,[n],"[cardboard, mat, mount]"
 2592,,台場,だいば,[n],"[fort, battery]"
 2593,1,大奥,おおおく,[n],"[inner palace (in Edo Castle), palace's ladies chambers, shogun's harem]"
 2594,1,大王,だいおう,[n],[great king]
@@ -2611,7 +2611,7 @@
 2611,1,大柄,おおがら,"[adj-na, n, adj-no]","[large build, large pattern]"
 2612,1,大麻,おおあさ,"[n, adj-no]","[hemp, cannabis]"
 2613,1,卓,しょく,[n],"[table, desk, offering table before an altar (sometimes used in tea ceremony), tabletop incense burner]"
-2614,,卓抜,たくばつ,"[adj-na, n]","[excellence, superiority, preeminence, prevalence]"
+2614,1,卓抜,たくばつ,"[adj-na, n]","[excellence, superiority, preeminence, prevalence]"
 2615,1,托鉢,たくはつ,"[n, vs]","[monk's ""begging"", religious mendicancy, asking for alms, going with one's bowl to the meditation hall at mealtime (in a Zen temple)]"
 2616,1,沢庵,たくあん,[n],[pickled daikon radish]
 2617,1,濁り,にごり,"[n, adj-no]","[muddiness, murkiness, lack of clarity, impurity, Japanese voiced consonant mark, unrefined sake]"
@@ -2632,9 +2632,9 @@
 2632,,探鉱,たんこう,[n],[mineral exploration]
 2633,,淡紅色,たんこうしょく,"[adj-na, n]",[pink]
 2634,,短詩,たんし,"[n, adj-no]",[verselet]
-2635,,端子,たんし,[n],"[terminal (electricity), pin (on a semiconductor or microcontroller), port (e.g. LAN port)]"
+2635,1,端子,たんし,[n],"[terminal (electricity), pin (on a semiconductor or microcontroller), port (e.g. LAN port)]"
 2636,1,端数,はすう,"[n, adj-no]","[fraction, odd amount, leftover amount]"
-2637,,端正,たんせい,"[adj-na, n]","[handsome, noble]"
+2637,1,端正,たんせい,"[adj-na, n]","[handsome, noble]"
 2638,,端役,はやく,"[n, adj-no]",[minor role]
 2639,,団子,だんご,[n],"[dango, dumpling (usu. sweet), doughboy, ball-shaped object, something round, lump, group, bunch, knot, tight crowd]"
 2640,1,弾痕,だんこん,[n],"[bullet hole, bullet mark]"
@@ -2645,7 +2645,7 @@
 2645,,断末魔,だんまつま,[n],[death agony]
 2646,1,段違い,だんちがい,"[adj-na, n]","[wide difference, remarkable difference]"
 2647,,男っぽい,おとこっぽい,[adj-i],"[manly, boyish]"
-2648,,男泣き,おとこなき,"[n, vs]",[man's weeping (esp. someone not prone to tears)]
+2648,1,男泣き,おとこなき,"[n, vs]",[man's weeping (esp. someone not prone to tears)]
 2649,,男装,だんそう,"[n, adj-no, vs]","[disguising oneself as a man, dressing as a man (for a woman), male clothing]"
 2650,1,知見,ちけん,"[n, vs]","[expertise, experience, knowledge]"
 2651,1,知力,ちりょく,"[n, adj-no]","[wisdom, intellectual power, intelligence, mental capacity, brains]"
@@ -2692,7 +2692,7 @@
 2692,,忠孝,ちゅうこう,[n],[loyalty and filial piety]
 2693,1,午,ひる,"[n-adv, n-t]","[noon, midday]"
 2694,,虫垂炎,ちゅうすいえん,[n],[appendicitis]
-2695,,猪口,ちょこ,[n],"[small cup, sake cup]"
+2695,1,猪口,ちょこ,[n],"[small cup, sake cup]"
 2696,1,弔い合戦,とむらいがっせん,[n],[battle of revenge]
 2697,1,張り込み,はりこみ,[n],"[stakeout, ambush, cordon, lookout, watch, paste-up, collage]"
 2698,1,張り込む,はりこむ,[v5m],"[to be on the lookout, to lie in wait]"
@@ -2725,7 +2725,7 @@
 2725,1,直航,ちょっこう,"[n, vs]","[direct voyage, direct service]"
 2726,,直射,ちょくしゃ,"[n, vs, adj-no]","[direct fire, frontal fire, direct rays (of sunlight)]"
 2727,,直接行動,ちょくせつこうどう,[n],[direct action]
-2728,,直訴,じきそ,"[n, vs]",[direct appeal]
+2728,1,直訴,じきそ,"[n, vs]",[direct appeal]
 2729,1,直送,ちょくそう,"[n, vs]",[direct delivery]
 2730,,地下足袋,じかたび,[n],"[work tabi, split-toed heavy cloth shoes with rubber soles]"
 2731,,直談判,じかだんぱん,"[n, vs]",[direct talks]
@@ -2745,7 +2745,7 @@
 2745,1,追い払う,おいはらう,"[v5u, vt]",[to drive away]
 2746,,追い返す,おいかえす,"[v5s, vt]","[to turn away, to send away]"
 2747,1,追い立てる,おいたてる,"[v1, vt]","[to drive on, to urge forward (e.g. cattle), to rouse (game from its cover), to shoo away, to press a tenant to leave, to evict]"
-2748,,追憶,ついおく,"[n, vs, adj-no]","[recollection, reminiscence]"
+2748,1,追憶,ついおく,"[n, vs, adj-no]","[recollection, reminiscence]"
 2749,1,追善,ついぜん,"[n, vs]","[mass for the dead, Buddhist service held on the anniversary of someone's death]"
 2750,1,追想,ついそう,"[n, vs]","[recollection, reminiscence]"
 2751,1,追認,ついにん,"[n, vs]","[ratification, confirmation]"
@@ -2776,7 +2776,7 @@
 2776,1,定職,ていしょく,[n],"[occupation (i.e. field of regular employment), steady job, regular work]"
 2777,,定石,じょうせき,[n],"[established tactic, play by the book]"
 2778,,定足数,ていそくすう,[n],[quorum]
-2779,,定本,ていほん,[n],"[revised edition (of a book or manuscript), authoritative edition, standard edition, edition incorporating many changes and corrections, final version of a book as edited by the author, revised edition of a book as edited by the author]"
+2779,1,定本,ていほん,[n],"[revised edition (of a book or manuscript), authoritative edition, standard edition, edition incorporating many changes and corrections, final version of a book as edited by the author, revised edition of a book as edited by the author]"
 2780,1,御門,みかど,[n],"[emperor (of Japan), mikado, (the gates of an) imperial residence]"
 2781,,帝王,ていおう,"[n, adj-no]","[sovereign, emperor]"
 2782,1,帝王切開,ていおうせっかい,"[n, adj-no]","[Caesarean section (Cesarean), C-section]"
@@ -2816,7 +2816,7 @@
 2816,1,転げ落ちる,ころげおちる,"[v1, vi]","[to fall off, to tumble down]"
 2817,1,転ずる,てんずる,"[vz, vi]","[to turn, to shift, to alter, to distract]"
 2818,1,転回,てんかい,"[n, vs]","[revolution, rotation]"
-2819,,転校,てんこう,"[n, vs]",[change schools]
+2819,1,転校,てんこう,"[n, vs]",[change schools]
 2820,1,転載,てんさい,"[n, vs]","[reprinting, reproduction]"
 2821,1,転写,てんしゃ,"[n, vs, adj-no]","[transcription (of a text, DNA, RNA, etc.), transliteration]"
 2822,1,点景,てんけい,[n],"[persons or animals added to a picture, incidental details of a picture]"
@@ -2840,7 +2840,7 @@
 2840,1,電工,でんこう,"[n, n-suf]","[electrician, electrical engineering, electric works (following company name)]"
 2841,1,電算機,でんさんき,[n],[electronic computer]
 2842,,電子計算機,でんしけいさんき,[n],[computer]
-2843,,電磁,でんじ,[n],[electromagnetic]
+2843,1,電磁,でんじ,[n],[electromagnetic]
 2844,1,電磁気,でんじき,[n],[electromagnetism]
 2845,1,電送,でんそう,"[n, vs]",[facsimile transmission]
 2846,1,電離,でんり,"[n, vs]","[ionization, ionisation, electrolytic dissociation]"
@@ -2868,14 +2868,14 @@
 2868,1,唐草,からくさ,[n],"[arabesque pattern, toothed medick (Medicago polymorpha)]"
 2869,1,投げ掛ける,なげかける,"[v1, vt]","[to throw at, to turn, to raise]"
 2870,1,投げ入れる,なげいれる,"[v1, vt]","[to throw into, to dump in together]"
-2871,,投獄,とうごく,"[n, vs]",[imprisonment]
+2871,1,投獄,とうごく,"[n, vs]",[imprisonment]
 2872,,投網,とあみ,[n],[a casting net]
 2873,1,東国,とうごく,[n],"[eastern country, eastern provinces, Kanto provinces]"
 2874,1,東進,とうしん,"[n, vs]",[proceeding east]
 2875,1,東西,ひがしにし,"[n, adj-no]","[east and west, Orient and Occident, East and West]"
 2876,1,東方,ひがしかた,"[n, adj-no]","[eastern direction, the Orient, eastern fighter in a match (e.g. sumo wrestling)]"
 2877,1,東北,ひがしきた,[n],[north-east]
-2878,,東奔西走,とうほんせいそう,"[n, vs]","[busying oneself about (something), being on the move, bestirring oneself, on the go, taking an active interest]"
+2878,1,東奔西走,とうほんせいそう,"[n, vs]","[busying oneself about (something), being on the move, bestirring oneself, on the go, taking an active interest]"
 2879,1,棟梁,とうりょう,"[n, adj-t]","[chief support, pillar (e.g. of nation), leader, boss, master (craftsman), beams and ridge supports of a roof (orig. meaning)]"
 2880,1,盗人,ぬすびと,[n],"[thief, robber]"
 2881,,盗聴器,とうちょうき,[n],"[listening device, bug, wiretap]"
@@ -2900,7 +2900,7 @@
 2900,1,動転,どうてん,"[n, vs]","[being upset, being surprised and stunned, transition, changing, moving]"
 2901,1,同じる,どうじる,"[v1, vi]",[to agree]
 2902,,同位,どうい,[n],"[the same rank, the same digit]"
-2903,,同格,どうかく,"[n, adj-no, adj-na]","[the same rank, equality, apposition]"
+2903,1,同格,どうかく,"[n, adj-no, adj-na]","[the same rank, equality, apposition]"
 2904,1,同義,どうぎ,"[adj-na, n, adj-no]",[the same meaning]
 2905,,同系,どうけい,"[n, adj-no]","[affiliated, akin]"
 2906,,同根,どうこん,[n],"[same root, same origin]"
@@ -2926,7 +2926,7 @@
 2926,1,道楽,どうらく,"[n, adj-na, vs]","[pastime, hobby, favorite amusement, dissipation, debauchery, loose living, prodigality, indulging in alcohol, women, gambling, etc., profligacy]"
 2927,1,道教,どうきょう,[n],"[Taoism, Daoism]"
 2928,1,道連れ,みちづれ,[n],"[fellow traveler, fellow traveller, someone unwillingly made to take part, being made to take part in something]"
-2929,,銅鑼,どら,[n],"[gong, tam-tam]"
+2929,1,銅鑼,どら,[n],"[gong, tam-tam]"
 2930,1,徳利,とっくり,[n],"[sake bottle, tall and slender bottle with a narrow mouth made from ceramic, metal or glass that can be used for sake, shoyu or rice vinegar, turtleneck (sweater), someone who cannot swim]"
 2931,,特記,とっき,"[n, vs]",[special mention]
 2932,1,特級,とっきゅう,[n],"[high grade, special grade, classy]"
@@ -2953,7 +2953,7 @@
 2953,1,突き出す,つきだす,"[v5s, vt]","[to push out, to project, to stick out, to hand over (e.g. to the police)]"
 2954,1,突き出る,つきでる,"[v1, vi]","[to project, to stick out, to stand out]"
 2955,1,突き進む,つきすすむ,"[v5m, vi]","[to push on, to plunge forward, to push one's way to]"
-2956,,突き破る,つきやぶる,"[v5r, vt]","[to break through, to penetrate, to pierce]"
+2956,1,突き破る,つきやぶる,"[v5r, vt]","[to break through, to penetrate, to pierce]"
 2957,1,突き飛ばす,つきとばす,"[v5s, vt]",[to thrust away]
 2958,1,突き付ける,つきつける,"[v1, vt]","[to thrust before, to thrust at]"
 2959,1,突き落とす,つきおとす,"[v5s, vt]","[to thrust down, to push off]"
@@ -2967,7 +2967,7 @@
 2967,1,鈍行,どんこう,"[n, adj-no]","[ordinary train, slow train]"
 2968,1,内圧,ないあつ,[n],[internal pressure]
 2969,1,内縁,ないえん,[n],"[de facto marriage, common-law marriage]"
-2970,,内科医,ないかい,[n],"[physician, internist]"
+2970,1,内科医,ないかい,[n],"[physician, internist]"
 2971,,内掛け,うちがけ,[n],[inside leg trip]
 2972,1,内局,ないきょく,[n],[bureau in a ministry]
 2973,,内勤,ないきん,"[n, vs, adj-no]",[office or indoor work]
@@ -3002,7 +3002,7 @@
 3002,1,南北戦争,なんぼくせんそう,[n],[(US) Civil War]
 3003,1,南洋,なんよう,[n],[South Seas]
 3004,1,軟派,なんぱ,"[n, vs]","[seducer, smooth talker, ladies' man, playboy, playgirl, picking up women (on the street), moderate party, moderate, social story (in a newspaper, etc.), society columnist (of a newspaper), bearish trader, bear]"
-3005,,難産,なんざん,"[n, vs]","[difficult delivery, difficult childbirth, dystocia]"
+3005,1,難産,なんざん,"[n, vs]","[difficult delivery, difficult childbirth, dystocia]"
 3006,1,難渋,なんじゅう,"[adj-na, n]",[retardation]
 3007,1,難所,なんしょ,[n],"[perilous pass (on a route or journey), rough spot]"
 3008,1,難破,なんぱ,"[n, vs]",[shipwreck]
@@ -3072,7 +3072,7 @@
 3072,1,年越し,としこし,"[n, vs]","[New Year's Eve, end of the year]"
 3073,,年寄る,としよる,"[v5r, vi]",[to grow old]
 3074,,年祭,ねんさい,[n],[anniversary]
-3075,,年少,ねんしょう,"[adj-na, n, adj-no]",[youth]
+3075,1,年少,ねんしょう,"[adj-na, n, adj-no]",[youth]
 3076,1,年中,ねんちゅう,[n],"[whole year, all year round, throughout the year, middle class (of a nursery school, etc.)]"
 3077,1,年中行事,ねんちゅうぎょうじ,[n],"[annual function, annual event]"
 3078,,年報,ねんぽう,[n],"[annual report, yearbook]"
@@ -3085,7 +3085,7 @@
 3085,1,燃え尽きる,もえつきる,"[v1, vi]",[to burn out]
 3086,,粘り気,ねばりけ,[n],[stickiness]
 3087,,粘性,ねんせい,"[n, adj-no]",[viscosity]
-3088,,悩ましい,なやましい,[adj-i],"[seductive, carnal, enchanting, troubling, difficult, thorny, hard, anxious, uneasy]"
+3088,1,悩ましい,なやましい,[adj-i],"[seductive, carnal, enchanting, troubling, difficult, thorny, hard, anxious, uneasy]"
 3089,1,濃密,のうみつ,"[adj-na, n]","[thick, dense, rich (as in taste or content), deep (colour), strong (smell, scent), crowded]"
 3090,1,納会,のうかい,[n],"[the last meeting (of the year, the term, etc.)]"
 3091,1,能書き,のうがき,[n],"[advertising the excellence of one's wares, boasting, self-advertisement, statement of the virtues of a medicine, description of the virtues of a drug]"
@@ -3103,7 +3103,7 @@
 3103,1,馬,いま,[n],[horse]
 3104,1,馬具,ばぐ,[n],[harness]
 3105,,馬頭,ばとう,[n],"[Hayagriva, Horsehead (tantric Buddhist deity)]"
-3106,,俳壇,はいだん,[n],[the world of the haiku]
+3106,1,俳壇,はいだん,[n],[the world of the haiku]
 3107,1,俳諧,はいかい,[n],"[haikai, collective name for haiku, haibun, haiga, senryū, etc., humorous or vulgar renga poetry]"
 3108,,廃車,はいしゃ,"[n, vs]","[decommissioned vehicle, out of service vehicle]"
 3109,1,廃品,はいひん,[n],"[waste, garbage]"
@@ -3114,7 +3114,7 @@
 3114,,敗走,はいそう,"[n, vs]","[take flight, take to one's heels]"
 3115,1,背伸び,せのび,"[n, vs]","[standing on tiptoe and stretching one's back to make oneself taller, stretching oneself, overreaching oneself, overstretching oneself, trying to do something beyond one's ability, pushing to the limit]"
 3116,1,配下,はいか,[n],"[subordinates, one's followers]"
-3117,,配偶,はいぐう,"[n, vs, adj-no]",[combination]
+3117,1,配偶,はいぐう,"[n, vs, adj-no]",[combination]
 3118,1,配合,はいごう,"[n, vs, adj-no]","[combination, arrangement, distribution, mixture, match, harmony]"
 3119,,配色,はいしょく,"[n, vs]","[color scheme, colour scheme]"
 3120,,配水,はいすい,"[n, vs]",[water supply]
@@ -3126,8 +3126,8 @@
 3126,1,買いかぶる,かいかぶる,"[v5r, vt]","[to overestimate, to make too much of]"
 3127,,買い戻す,かいもどす,"[v5s, vt]","[to buy back, to redeem]"
 3128,1,売り渡す,うりわたす,"[v5s, vt]",[to sell over to]
-3129,,売り払う,うりはらう,"[v5u, vt]","[to sell out of, to sell completely]"
-3130,,売れ残り,うれのこり,[n],"[unsold items, leftovers, remainders, remnants, spinster, old maid]"
+3129,1,売り払う,うりはらう,"[v5u, vt]","[to sell out of, to sell completely]"
+3130,1,売れ残り,うれのこり,[n],"[unsold items, leftovers, remainders, remnants, spinster, old maid]"
 3131,,売買高,ばいばいだか,[n],"[sales amount, sales volume]"
 3132,1,売名,ばいめい,[n],[self-advertisement]
 3133,1,剥,はく,[n],"[coming off, peeling off, being worn off, faded, discolored, discoloured]"
@@ -3135,14 +3135,14 @@
 3135,1,博徒,ばくと,[n],[gambler]
 3136,1,白む,しらむ,"[v5m, vi]","[to grow light, to become white, to turn grey (gray)]"
 3137,1,白亜,はくあ,"[n, adj-no]","[chalk (mineral), white wall]"
-3138,,白亜紀,はくあき,[n],[Cretaceous Period]
+3138,1,白亜紀,はくあき,[n],[Cretaceous Period]
 3139,1,白子,しろこ,[],[albino]
 3140,1,白子,しらこ,"[n, adj-no]","[soft roe, milt, albino]"
 3141,1,白寿,はくじゅ,[n],[99th birthday]
 3142,1,白身,しろみ,[n],"[white of egg, white meat, sapwood, white-fleshed fish for sushi and sashimi (e.g. tai, hirame, karei)]"
 3143,1,白痴,はくち,[n],"[idiot, retard, idiocy, profound mental retardation]"
 3144,1,白昼,はくちゅう,"[n-adv, n-t]","[daytime, midday]"
-3145,,白日,はくじつ,[n],"[bright sunshine, broad daylight]"
+3145,1,白日,はくじつ,[n],"[bright sunshine, broad daylight]"
 3146,1,白木,しらき,[n],"[plain wood, unfinished woodwork]"
 3147,1,薄,すすき,[n],"[Japanese pampas grass (Miscanthus sinensis), silver grass, zebra grass]"
 3148,1,薄っぺら,うすっぺら,"[adj-na, n]","[very thin, flimsy, cheap, shallow]"
@@ -3170,14 +3170,14 @@
 3170,,髪飾り,かみかざり,[n],[hair ornaments]
 3171,1,吐かす,ぬかす,[],"[to say, to speak]"
 3172,1,抜き取る,ぬきとる,"[v5r, vt]","[to pull out, to draw out, to disconnect]"
-3173,,抜き出す,ぬきだす,"[v5s, vt]","[to pick out, to single out, to select, to extract, to draw out, to pull out, to distill]"
+3173,1,抜き出す,ぬきだす,"[v5s, vt]","[to pick out, to single out, to select, to extract, to draw out, to pull out, to distill]"
 3174,,抜き打ち,ぬきうち,[n],"[drawing a katana and attacking in the same stroke, doing something suddenly, without warning]"
 3175,,抜け出る,ぬけでる,"[v1, vi]","[to slip out, to steal out, to excel, to stand out]"
 3176,1,抜け落ちる,ぬけおちる,"[v1, vi]","[to come out (e.g. hair), to fall out, to collapse (e.g. building, floor), to be left out, to be omitted]"
 3177,,抜擢,ばってき,"[n, vs]","[selection (esp. from many people for an important job position), exceptional promotion]"
 3178,1,判官,じょう,[],"[3rd grade official (ritsuryo system), assistant district officer, inspector]"
 3179,1,判然,はんぜん,"[adj-t, adv-to]","[clear, distinct, evident, definite]"
-3180,,判別,はんべつ,"[n, vs]","[distinction, discrimination]"
+3180,1,判別,はんべつ,"[n, vs]","[distinction, discrimination]"
 3181,1,半ズボン,はんズボン,[n],"[short pants, shorts, breeches, knickerbockers]"
 3182,1,半壊,はんかい,"[n, vs]",[partial destruction]
 3183,1,半紙,はんし,[n],[Japanese writing paper used for calligraphy]
@@ -3200,7 +3200,7 @@
 3200,1,版元,はんもと,[n],[publisher]
 3201,,犯意,はんい,[n],"[criminal intent, malice]"
 3202,1,般若,はんにゃ,[n],"[prajna, wisdom required to attain enlightenment, noh mask of a grinning, horned demoness (represents a woman's rage and jealousy), family crest designed after the Hannya noh mask, dreadful face (esp. of a woman driven mad by jealousy), terrifying facial expression]"
-3203,,飯店,はんてん,[n],[Chinese restaurant]
+3203,1,飯店,はんてん,[n],[Chinese restaurant]
 3204,,挽歌,ばんか,"[n, adj-no]","[elegy, funeral song]"
 3205,1,晩夏,ばんか,"[n-adv, n]","[late summer, sixth month of the lunar calendar]"
 3206,1,晩秋,ばんしゅう,"[n-adv, n]","[late autumn (fall), ninth month of the lunar calendar]"
@@ -3231,7 +3231,7 @@
 3231,,非売品,ひばいひん,[n],"[article not for sale, Not for sale]"
 3232,1,非凡,ひぼん,"[adj-na, n]","[prodigy, rare, unique, extraordinary]"
 3233,1,非力,ひりき,"[adj-na, n]","[powerless, disability, incompetence]"
-3234,,飛び越える,とびこえる,"[v1, vt]","[to jump over, to clear, to walk over (someone)]"
+3234,1,飛び越える,とびこえる,"[v1, vt]","[to jump over, to clear, to walk over (someone)]"
 3235,,飛び越す,とびこす,"[v5s, vt]",[to leap over]
 3236,1,飛び回る,とびまわる,"[v5r, vi]","[to fly about, to skip about, to bustle about]"
 3237,1,飛び起きる,とびおきる,"[v1, vi]",[to jump up to one's feet]
@@ -3264,7 +3264,7 @@
 3264,1,百景,ひゃっけい,[n],[100 famous views]
 3265,1,百人一首,ひゃくにんいっしゅ,[n],"[100 poems by 100 famous poets, (playing) cards of one hundred famous poems]"
 3266,,百聞,ひゃくぶん,[n],[hearing a hundred times]
-3267,,標榜,ひょうぼう,"[n, vs]","[advocate, champion cause]"
+3267,1,標榜,ひょうぼう,"[n, vs]","[advocate, champion cause]"
 3268,1,表看板,おもてかんばん,[n],"[sign out in front, front (for someone)]"
 3269,,表出,ひょうしゅつ,"[n, vs]","[expression, presentation]"
 3270,1,表象,ひょうしょう,"[n, vs, adj-no]","[symbol, emblem, mental image, representation, idea]"
@@ -3302,13 +3302,13 @@
 3302,1,不世出,ふせいしゅつ,[n],"[rare, extraordinary, unparalleled, unparallelled]"
 3303,1,不成功,ふせいこう,"[adj-na, n, adj-no]","[failure, abortive (attempt, action)]"
 3304,,不正確,ふせいかく,"[adj-na, n]","[uncertainty, inaccuracy]"
-3305,,不戦勝,ふせんしょう,[n],"[win without playing, unearned win]"
+3305,1,不戦勝,ふせんしょう,[n],"[win without playing, unearned win]"
 3306,,不鮮明,ふせんめい,"[n, adj-na]","[blur, blurred, indistinct]"
 3307,,不定期,ふていき,"[adj-na, n, adj-no]","[irregular, indeterminate, tramp (steamer)]"
 3308,1,不適,ふてき,"[adj-na, n]","[inadequacy, inappropriateness, unfitness, impropriety]"
 3309,,不徹底,ふてってい,"[adj-na, n]","[inconsistent, illogical, unconvincing, not thorough, indefinite, half-way]"
 3310,1,不渡り手形,ふわたりてがた,[n],"[dishonored bill, dishonoured bill]"
-3311,,不統一,ふとういつ,"[adj-na, n]","[disunity, disharmony]"
+3311,1,不統一,ふとういつ,"[adj-na, n]","[disunity, disharmony]"
 3312,1,不同,ふどう,"[adj-na, n, adj-no]","[difference, diversity, irregularity, disorder]"
 3313,1,不同意,ふどうい,[n],"[disagreement, objection]"
 3314,,不得手,ふえて,"[adj-na, n]","[weak point, unskillfulness]"
@@ -3336,13 +3336,13 @@
 3336,1,夫人,ぶにん,[],[consort of the emperor]
 3337,1,夫人,はしかし,[n],"[wife, Mrs, madam]"
 3338,1,布,ふ,[n],"[cloth, bujian (spade-shaped bronze coin of ancient China)]"
-3339,,浮き立つ,うきたつ,"[v5t, vi]","[to be enlivened, to be exhilarated]"
+3339,1,浮き立つ,うきたつ,"[v5t, vi]","[to be enlivened, to be exhilarated]"
 3340,1,浮動,ふどう,"[n, vs, adj-no]",[floating]
 3341,1,浮力,ふりょく,[n],"[buoyancy, floating power]"
 3342,1,腐蝕,ふしょく,"[n, vs]",[corrosion]
 3343,1,敗ける,まける,"[v1, vi]","[to lose, to be defeated]"
 3344,1,負け惜しみ,まけおしみ,"[exp, n]","[poor loser, make excuses, unwilling to admit defeat, sour grapes]"
-3345,,武官,ぶかん,[n],[military or naval officer]
+3345,1,武官,ぶかん,[n],[military or naval officer]
 3346,1,武功,ぶこう,[n],[military exploits]
 3347,,武術,ぶじゅつ,[n],"[martial arts, military arts, wushu, modern sport derived from traditional Chinese martial arts]"
 3348,1,武人,ぶじん,[n],[military man]
@@ -3400,7 +3400,7 @@
 3400,1,分家,ぶんけ,"[n, vs]",[branch family]
 3401,1,分科,ぶんか,[n],"[department, section, branch, course, school (e.g. of learning)]"
 3402,1,分会,ぶんかい,[n],"[branch, chapter]"
-3403,,分厚い,ぶあつい,[adj-i],"[bulky, massive, thick, heavy]"
+3403,1,分厚い,ぶあつい,[adj-i],"[bulky, massive, thick, heavy]"
 3404,1,分水嶺,ぶんすいれい,[n],"[watershed, divide]"
 3405,1,分派,ぶんぱ,"[n, vs]","[denominations, sect, branch, faction, separation from]"
 3406,1,分売,ぶんばい,"[n, vs]",[selling separately]
@@ -3485,7 +3485,7 @@
 3485,1,片田舎,かたいなか,[n],"[back country, remote countryside]"
 3486,1,片付け,かたづけ,[n],"[tidying up, finishing]"
 3487,1,片面,かためん,"[n, adj-no]",[one side]
-3488,,片腕,かたうで,[n],"[one arm, right-hand man]"
+3488,1,片腕,かたうで,[n],"[one arm, right-hand man]"
 3489,1,編み出す,あみだす,"[v5s, vt]","[to work out, to think out, to devise, to invent]"
 3490,1,編纂,へんさん,"[n, vs]","[compilation (esp. dictionary, history, law code), editing]"
 3491,1,編隊,へんたい,[n],[formation]
@@ -3518,7 +3518,7 @@
 3518,1,放言,ほうげん,"[n, vs]",[careless remark]
 3519,1,放心,ほうしん,"[n, vs]","[absentmindedness, peace of mind]"
 3520,,放電,ほうでん,"[n, vs]",[electrical discharge]
-3521,,放蕩,ほうとう,"[n, vs, adj-na]","[dissipation, prodigality, debauchery]"
+3521,1,放蕩,ほうとう,"[n, vs, adj-na]","[dissipation, prodigality, debauchery]"
 3522,,放熱,ほうねつ,"[n, vs, adj-no]",[radiation]
 3523,1,放免,ほうめん,"[n, vs]","[release (from custody), discharge, liberation, setting free, letting go, letting off, acquittal]"
 3524,1,方便,ほうべん,[n],"[expedient, means, instrument, upaya (skillful means, methods of teaching)]"
@@ -3542,7 +3542,7 @@
 3542,1,望月,ぼうげつ,[n],"[full moon, 15th day of the lunar calendar]"
 3543,,棒状,ぼうじょう,"[n, adj-no]",[cylinder or rod-shaped]
 3544,,紡ぎ歌,つむぎうた,[n],[spinning song]
-3545,,膨らみ,ふくらみ,[n],"[swelling, bulge, puff]"
+3545,1,膨らみ,ふくらみ,[n],"[swelling, bulge, puff]"
 3546,1,謀議,ぼうぎ,"[n, vs]","[plot, conspiracy, conference]"
 3547,1,謀反,むほん,"[n, vs]","[rebellion, uprising, insurrection, treason]"
 3548,,防寒,ぼうかん,[n],[protection against cold]
@@ -3562,7 +3562,7 @@
 3562,1,墨書,ぼくしょ,"[n, vs]",[writing in India ink]
 3563,1,勃発,ぼっぱつ,"[n, vs]","[outbreak (e.g. war), outburst, sudden occurrence]"
 3564,1,歿,ぼつ,"[n, n-suf]","[discard, death]"
-3565,,没年,ぼつねん,[n],[one's age at death]
+3565,1,没年,ぼつねん,[n],[one's age at death]
 3566,1,奔流,ほんりゅう,[n],"[torrent, violently rushing stream, tumbling (water)]"
 3567,1,本意,ほんい,[n],"[one's real intent, one's real motive, one's real hopes, one's original purpose]"
 3568,1,本院,ほんいん,[n],"[this institution, the main institution]"
@@ -3576,23 +3576,23 @@
 3576,1,本社,ほんじゃ,[],[main shrine]
 3577,,本場所,ほんばしょ,[n],[official sumo tournament (six per year)]
 3578,1,本陣,ほんじん,[n],"[troop headquarters, stronghold, inn designated for use by a daimyo (Edo period)]"
-3579,,本船,ほんせん,[n],"[mother ship, this ship]"
+3579,1,本船,ほんせん,[n],"[mother ship, this ship]"
 3580,,本訴,ほんそ,[n],"[original suit, main lawsuit, main action]"
 3581,1,本草,ほんぞう,[n],"[plants, medicinal herbs]"
 3582,1,本葬,ほんそう,[n],[formal funeral]
 3583,1,本則,ほんそく,[n],"[rules, original rules]"
 3584,,本題,ほんだい,[n],"[main question, real issue at hand]"
-3585,,本殿,ほんでん,[n],"[main shrine, inner sanctuary]"
+3585,1,本殿,ほんでん,[n],"[main shrine, inner sanctuary]"
 3586,1,本道,ほんどう,[n],"[highway, main road, the right road]"
 3587,,本舞台,ほんぶたい,[n],"[main stage, public place]"
 3588,,本邦,ほんぽう,[n],"[this country, our country]"
 3589,1,本望,ほんもう,"[adj-na, n]","[long-cherished ambition, satisfaction]"
-3590,,凡打,ぼんだ,"[n, vs]",[poor batting]
+3590,1,凡打,ぼんだ,"[n, vs]",[poor batting]
 3591,,魔物,まもの,[n],"[demon, devil, evil spirit, monster, goblin, apparition]"
 3592,1,魔力,まりょく,[n],"[magical power, charm]"
 3593,1,毎秒,まいびょう,"[n-adv, n-t]",[every second]
 3594,,幕間,まくあい,[n],"[intermission (between acts), interlude]"
-3595,,末寺,まつじ,[n],[branch temple]
+3595,1,末寺,まつじ,[n],[branch temple]
 3596,1,末梢,まっしょう,"[n, adj-no]","[tree top, tip, periphery, minor details, nonessentials]"
 3597,1,万感,ばんかん,[n],"[flood of emotions, many thoughts]"
 3598,,万策,ばんさく,[n],[all means]
@@ -3614,14 +3614,14 @@
 3614,1,民業,みんぎょう,[n],[private enterprise]
 3615,1,民心,みんしん,[n],[popular sentiment]
 3616,1,民生委員,みんせいいいん,[n],[district welfare officer]
-3617,,民団,みんだん,[n],[foreign-settlement corporation]
+3617,1,民団,みんだん,[n],[foreign-settlement corporation]
 3618,1,民有,みんゆう,"[n, adj-no]",[private ownership]
 3619,1,眠る,ねぶる,"[v5r, vi]","[to sleep (not necessarily lying down), to close one's eyes]"
 3620,1,無我夢中,むがむちゅう,"[n, adj-no]","[being absorbed in, losing oneself in]"
 3621,1,無垢,むく,"[n, adj-na, adj-no]",[purity]
 3622,1,無作法,ぶさほう,"[adj-na, n]","[ill-mannered, rude]"
 3623,,無重力,むじゅうりょく,[n],"[weightlessness, zero gravity]"
-3624,,無常,むじょう,"[adj-na, n, adj-no]","[uncertainty, transiency, impermanence, mutability]"
+3624,1,無常,むじょう,"[adj-na, n, adj-no]","[uncertainty, transiency, impermanence, mutability]"
 3625,1,無政府主義,むせいふしゅぎ,[n],[(doctrine of) anarchism]
 3626,1,無声,むせい,"[n, adj-no]","[voiceless, unvoiced, silent, noiseless]"
 3627,1,無線操縦,むせんそうじゅう,"[n, adj-no]",[radio-controlled (plane)]
@@ -3634,23 +3634,23 @@
 3634,1,名医,めいい,[n],"[noted doctor, excellent physician]"
 3635,1,名家,めいか,[n],"[distinguished family, noted family, noble family, family status in the Imperial Court, master (of a craft), expert]"
 3636,,名鑑,めいかん,[n],"[directory, list]"
-3637,,名言,めいげん,[n],"[wise saying, famous saying]"
+3637,1,名言,めいげん,[n],"[wise saying, famous saying]"
 3638,,名産,めいさん,[n],"[noted product, local specialty]"
 3639,1,名士,めいし,[n],"[celebrity, personage]"
 3640,1,名盤,めいばん,[n],[famous (musical) recording]
 3641,,名付け親,なづけおや,"[n, adj-no]",[godparent]
-3642,,名文,めいぶん,[n],[famous literary composition]
+3642,1,名文,めいぶん,[n],[famous literary composition]
 3643,1,名木,めいぼく,[n],"[old tree of historical interest, excellent wood, precious woods, choice wood]"
 3644,1,命綱,いのちづな,[n],[lifeline]
 3645,,命取り,いのちとり,"[adj-no, n]","[fatal, deadly, mortal]"
 3646,1,命拾い,いのちびろい,"[n, vs]",[narrow escape from death]
 3647,1,命脈,めいみゃく,[n],"[life, thread of life]"
-3648,,明け渡す,あけわたす,"[v5s, vt]","[to vacate, to surrender]"
+3648,1,明け渡す,あけわたす,"[v5s, vt]","[to vacate, to surrender]"
 3649,1,明解,めいかい,"[adj-na, n]",[clear understanding]
 3650,1,明文,めいぶん,"[n, adj-no]","[explicit statement (e.g. law), express provision]"
 3651,1,明晰,めいせき,[adj-na],"[clear, distinct]"
 3652,1,面食らう,めんくらう,"[v5u, vi]","[to be confused, to be bewildered, to be taken aback]"
-3653,,面前,めんぜん,[n],[presence]
+3653,1,面前,めんぜん,[n],[presence]
 3654,1,面相,めんそう,[n],"[countenance, features, looks]"
 3655,,麺,めん,[n],"[noodles, flour]"
 3656,1,茂み,しげみ,[n],"[thicket, coppice, brushwood]"
@@ -3672,7 +3672,7 @@
 3672,1,籾,もみ,[n],"[unhulled rice, rice in the husk, paddy, rice husks, chaff]"
 3673,,問い詰める,といつめる,"[v1, vt]","[to press a question, to cross-examine]"
 3674,,問題児,もんだいじ,[n],[problem child]
-3675,,門外不出,もんがいふしゅつ,"[n, adj-no]",[(treasuring something by) never taking (it) off the premises]
+3675,1,門外不出,もんがいふしゅつ,"[n, adj-no]",[(treasuring something by) never taking (it) off the premises]
 3676,,門徒,もんと,[n],"[follower, believer]"
 3677,,門番,もんばん,[n],"[gatekeeper, door guard, doorman, concierge, janitor]"
 3678,1,夜曲,やきょく,[n],[nocturne]
@@ -3684,7 +3684,7 @@
 3684,1,夜遊び,よあそび,"[n, vs]","[nightlife, night amusements]"
 3685,,野外劇,やがいげき,[n],[pageant]
 3686,1,野戦,やせん,[n],[field]
-3687,,野良,のら,"[n, adj-no, n-pref]","[field, farm, rural, agricultural, stray (e.g. dog, cat), unauthorised (esp. mobile phone application)]"
+3687,1,野良,のら,"[n, adj-no, n-pref]","[field, farm, rural, agricultural, stray (e.g. dog, cat), unauthorised (esp. mobile phone application)]"
 3688,,野良犬,のらいぬ,[n],[stray dog]
 3689,1,野良猫,のらねこ,[n],"[stray cat, alley cat]"
 3690,1,矢面,やおもて,"[n, adj-no]",[bearing the full brunt of something]
@@ -3694,11 +3694,11 @@
 3694,1,輸液,ゆえき,"[n, vs]",[transfusion]
 3695,,優に,ゆうに,[adv],"[easily, sufficiently, well, skillfully]"
 3696,,優越,ゆうえつ,"[n, vs]","[supremacy, predominance, being superior to]"
-3697,,優生,ゆうせい,"[n, adj-no]",[eugenic]
+3697,1,優生,ゆうせい,"[n, adj-no]",[eugenic]
 3698,1,優先権,ゆうせんけん,[n],"[priority, preference, preferential right]"
 3699,,優待,ゆうたい,"[n, vs, adj-no]","[preferential treatment, hospitality, warm reception, welcome]"
 3700,1,勇猛,ゆうもう,"[adj-na, n]","[daring, bravery, valor, valour]"
-3701,,友釣り,ともづり,[n],[live decoy fishing (esp. for sweetfish)]
+3701,1,友釣り,ともづり,[n],[live decoy fishing (esp. for sweetfish)]
 3702,1,友邦,ゆうほう,[n],[friendly nation]
 3703,1,悠々自適,ゆうゆうじてき,"[adj-na, adj-no, n]","[living a life of leisure with dignity, living quietly and comfortably free from worldly cares, otium cum dignitate]"
 3704,1,有感地震,ゆうかんじしん,[n],[perceptible earthquake]
@@ -3707,7 +3707,7 @@
 3707,,有終,ゆうしゅう,[n],[perfection]
 3708,1,有斐閣,ゆうひかく,[n],[Yuuhikaku (law book publisher)]
 3709,1,有名無実,ゆうめいむじつ,"[adj-na, n, adj-no]",[in name but not in reality]
-3710,,誘い出す,さそいだす,"[v5s, vt]","[to lure, to invite out]"
+3710,1,誘い出す,さそいだす,"[v5s, vt]","[to lure, to invite out]"
 3711,1,遊郭,ゆうかく,[n],[red light district]
 3712,1,遊女,ゆうじょ,[n],"[prostitute, harlot]"
 3713,1,遊離,ゆうり,"[n, vs, adj-no]","[separation, isolation, release (e.g. of a chemical)]"
@@ -3732,8 +3732,8 @@
 3732,1,幼生,ようせい,"[adj-na, n, adj-no]","[larva, larvae]"
 3733,1,幼年,ようねん,[n],"[childhood, infancy]"
 3734,1,容態,ようだい,[n],"[condition, state (of health)]"
-3735,,揚げ物,あげもの,[n],[deep-fried food]
-3736,,洋菓子,ようがし,[n],[Western confectionery]
+3735,1,揚げ物,あげもの,[n],[deep-fried food]
+3736,1,洋菓子,ようがし,[n],[Western confectionery]
 3737,1,洋館,ようかん,[n],[western-style house]
 3738,1,溶け合う,とけあう,"[v5u, vi]",[to melt together]
 3739,1,熔解,ようかい,[],"[melting, liquefying, fusion]"
@@ -3745,9 +3745,9 @@
 3745,1,要塞,ようさい,[n],"[fort, stronghold, fortification]"
 3746,1,陽炎,かげろう,[n],"[heat haze, shimmer of hot air]"
 3747,,陽電子,ようでんし,[n],[positron]
-3748,,養女,ようじょ,[n],"[adopted daughter, foster daughter]"
+3748,1,養女,ようじょ,[n],"[adopted daughter, foster daughter]"
 3749,,養生,ようじょう,"[n, vs]","[hygiene, health care, recuperation, regimen, covering (with a protective material), coating, to cure (concrete)]"
-3750,,養母,ようぼ,[n],"[foster mother, adoptive mother]"
+3750,1,養母,ようぼ,[n],"[foster mother, adoptive mother]"
 3751,,羅漢,らかん,[n],"[arhat, Lohan, achiever of Nirvana]"
 3752,1,裸眼,らがん,[n],[naked eye]
 3753,,裸体,らたい,[n],"[naked body, nudity]"
@@ -3793,7 +3793,7 @@
 3793,1,立ち食い,たちぐい,"[n, vs]","[eating while standing, eating at a (street) stall]"
 3794,,立ち並ぶ,たちならぶ,"[v5b, vi]","[to stand in a row (e.g. shops on a street), to line in a row, to line, to be equal to, to be on a par with]"
 3795,,建ち並ぶ,たちならぶ,"[v5b, vi]","[to stand in a row (e.g. shops on a street), to line in a row, to line]"
-3796,,立ち返る,たちかえる,"[v5r, vi]","[to come back (to), to return to a starting point]"
+3796,1,立ち返る,たちかえる,"[v5r, vi]","[to come back (to), to return to a starting point]"
 3797,,立ち戻る,たちもどる,"[v5r, vi]","[to return, to come back]"
 3798,1,立正佼成会,りっしょうこうせいかい,[n],[Rissho Kosei-kai (offshoot of Nichiren-Buddhism founded in 1938)]
 3799,1,立方,たちかた,[n],"[way of standing, dancer (in a Japanese dance performance)]"
@@ -3801,7 +3801,7 @@
 3801,1,略取,りゃくしゅ,"[n, vs]",[abduction]
 3802,,流し込む,ながしこむ,"[v5m, vt]","[to pour into, to wash down, to insert (e.g. into a data stream)]"
 3803,1,流れ出る,ながれでる,[v1],"[to flow out, to stream out, to pour out, to gush forth, to leak, to ooze out, to drift away]"
-3804,,流れ弾,ながれだま,[n],[stray bullet]
+3804,1,流れ弾,ながれだま,[n],[stray bullet]
 3805,1,流水,りゅうすい,[n],"[running water, stream]"
 3806,1,流体,りゅうたい,[n],[fluid]
 3807,1,流布,るふ,"[n, vs, adj-no]","[circulation, dissemination]"
@@ -3823,7 +3823,7 @@
 3823,1,両用,りょうよう,"[n, vs]",[dual use]
 3824,,両隣,りょうどなり,[n],[both sides]
 3825,1,寮母,りょうぼ,[n],"[housemother, dorm mother]"
-3826,,良心的,りょうしんてき,[adj-na],"[upright, fair, honest]"
+3826,1,良心的,りょうしんてき,[adj-na],"[upright, fair, honest]"
 3827,,良性,りょうせい,"[n, adj-no]",[benign]
 3828,1,良品,りょうひん,[n],[superior article]
 3829,1,量感,りょうかん,[n],"[voluminous, massive, bulky]"
@@ -3854,8 +3854,8 @@
 3854,1,煉る,ねる,"[v5r, vt, vi]","[to knead, to thicken into a paste (stirring over a flame), to polish (a plan, etc.), to refine, to elaborate, to work out, to train, to drill, to exercise, to tan (leather), to temper (steel), to walk in procession, to parade, to march]"
 3855,1,蓮,はちす,[n],"[sacred lotus (Nelumbo nucifera), Indian lotus, lotus, rose of Sharon (Hibiscus syriacus)]"
 3856,1,蓮華,れんげ,[n],"[lotus flower, Chinese milk vetch (Astragalus sinicus), china spoon, lotus-shaped pedestal for a gravestone]"
-3857,,連れ込む,つれこむ,"[v5m, vt]",[to bring (somebody into a place)]
-3858,,連れ出す,つれだす,"[v5s, vt]",[to take out]
+3857,1,連れ込む,つれこむ,"[v5m, vt]",[to bring (somebody into a place)]
+3858,1,連れ出す,つれだす,"[v5s, vt]",[to take out]
 3859,,連れ添う,つれそう,"[v5u, vi]","[to become a couple, to be man and wife, to be married to]"
 3860,1,連れ立つ,つれだつ,"[v5t, vi]","[to accompany, to go with, to go together]"
 3861,,連歌,れんが,[n],"[early Japanese poetry form, poetic dialogue]"
@@ -3876,10 +3876,10 @@
 3876,1,和音,わおん,"[n, adj-no]","[chord, (Japanese) on reading, Japanese music]"
 3877,1,和尚,わじょう,[],"[preceptor or high priest (in Shingon, Hosso, Ritsu or Shin Buddhism), second highest priestly rank in Buddhism, master (of one's art, trade, etc.)]"
 3878,1,和訳,わやく,"[n, vs]",[Japanese translation]
-3879,,和洋,わよう,[n],[Japan and Europe]
+3879,1,和洋,わよう,[n],[Japan and Europe]
 3880,,話術,わじゅつ,"[n, adj-no]",[art of conversation]
 3881,,賄い,まかない,[n],"[boarding, board, meals, catering, cook]"
-3882,,蕨,わらび,[n],[bracken]
+3882,1,蕨,わらび,[n],[bracken]
 3883,,腕章,わんしょう,[n],[arm band]
 3884,,腕組み,うでぐみ,"[n, vs]",[folding one's arms]
 3885,1,腕立て伏せ,うでたてふせ,"[n, vs]",[push-up (exercise)]
@@ -3975,7 +3975,7 @@
 3975,1,施行,せぎょう,[],"[giving alms, giving food to the poor or monks]"
 3976,,歯痛,しつう,"[n, adj-no]",[toothache]
 3977,1,七色,なないろ,[n],[the seven prismatic colors (colours)]
-3978,,借家人,しゃくやにん,[n],"[tenant, renter]"
+3978,1,借家人,しゃくやにん,[n],"[tenant, renter]"
 3979,,十指,じっし,[n],[the ten fingers]
 3980,,出漁,しゅつぎょ,"[n, vs]",[going fishing]
 3981,1,出所,でどころ,"[n, vs]","[birthplace, origin, source, authority, release (discharge) from prison, exit, point of departure, time to take action]"
@@ -4077,7 +4077,7 @@
 4077,1,売り掛け金,うりかけきん,[n],"[accounts receivable, outstanding sales account]"
 4078,,売り子,うりこ,[n],"[salesperson, shop assistant, hawker, peddler, vendor]"
 4079,1,英才,えいさい,[n],"[genius, brilliance, unusual talent, gifted person, person of unusual talent]"
-4080,,往々,おうおう,[adv],"[sometimes, often]"
+4080,1,往々,おうおう,[adv],"[sometimes, often]"
 4081,1,陸符,おか,[],[bonus points awarded to the winner at the end of a game]
 4082,1,岡,おか,[n],"[hill, height, knoll, rising ground]"
 4083,1,押し上げる,おしあげる,"[v1, vt]","[to boost, to force up, to push up]"
@@ -4107,12 +4107,12 @@
 4107,,凶暴,きょうぼう,"[adj-na, n]","[brutal, atrocious, ferocious]"
 4108,,興味津々,きょうみしんしん,"[adj-no, adj-t, adv-to]","[very interesting, of absorbing interest, having a keen interest (in), being immensely curious (about)]"
 4109,1,切り株,きりかぶ,[n],"[stump, stubble]"
-4110,,切り傷,きりきず,[n],"[cut, gash, incision]"
+4110,1,切り傷,きりきず,[n],"[cut, gash, incision]"
 4111,1,切り取り,きりとり,[n],"[cutting, tearing off, cutting off, clipping, robbery with assault, burglary]"
 4112,1,切り身,きりみ,[n],"[cut, slice (meat, fish), fillet]"
 4113,,金坑,きんこう,[n],[gold mine]
 4114,,御者,ぎょしゃ,[n],"[coachman, driver, cabman, postilion]"
-4115,,屈強,くっきょう,"[adj-na, n, adj-no]","[robust, brawny, muscular, strong, sturdy]"
+4115,1,屈強,くっきょう,"[adj-na, n, adj-no]","[robust, brawny, muscular, strong, sturdy]"
 4116,1,屈伏,くっぷく,"[n, vs]","[yielding, submission, surrender, giving way, succumbing]"
 4117,1,悔し涙,くやしなみだ,[n],"[tears of regret, bitter tears, vexation, chagrin]"
 4118,,繰り越し,くりこし,[n],"[balance brought forward, transferred amount (of money)]"
@@ -4130,7 +4130,7 @@
 4130,1,豪勢,ごうせい,"[adj-na, n]","[luxury, magnificence, extravagance]"
 4131,1,再々,さいさい,"[adv, n]","[often, frequently]"
 4132,1,寒々,さむざむ,"[adv-to, vs]","[wintry, very cold-looking (e.g. landscape), bleak (e.g. room, street), desolate, empty (of furnishings)]"
-4133,,三絃,さんげん,[n],"[three-stringed instrument, samisen]"
+4133,1,三絃,さんげん,[n],"[three-stringed instrument, samisen]"
 4134,1,三三五五,さんさんごご,[adv],"[in groups of twos and threes, in small groups]"
 4135,1,三段跳び,さんだんとび,[n],"[triple jump, hop, step and jump]"
 4136,,潮干狩り,しおひがり,[n],"[shell gathering (at low tide), clamming]"
@@ -4147,13 +4147,13 @@
 4147,1,仕訳,しわけ,"[n, vs]","[assortment journalizing (in bookkeeping), classification]"
 4148,1,伸張,しんちょう,"[n, vs, adj-no]","[expansion, extension, elongation, stretching, uncompression]"
 4149,,直々,じきじき,[adj-na],"[personal, direct]"
-4150,,弱小,じゃくしょう,"[adj-na, n]","[puniness, youth]"
+4150,1,弱小,じゃくしょう,"[adj-na, n]","[puniness, youth]"
 4151,1,淳朴,じゅんぼく,"[adj-na, n]","[rustic simplicity, homeliness, unsophisticated, naive, honest, simple]"
-4152,,上提,じょうてい,"[n, vs]","[introducing (a bill), presentation, departure on a journey]"
+4152,1,上提,じょうてい,"[n, vs]","[introducing (a bill), presentation, departure on a journey]"
 4153,,筋合,すじあい,[n],"[reason, right]"
 4154,1,捨て身,すてみ,[n],[at the risk of one's life]
 4155,1,戦々恐々,せんせんきょうきょう,"[adj-na, adj-no, adj-t, adv-to]","[trembling with fear, filled with trepidation]"
-4156,,善後策,ぜんごさく,[n],"[remedial measure, countermeasure, counter-measure, relief measure, remedy]"
+4156,1,善後策,ぜんごさく,[n],"[remedial measure, countermeasure, counter-measure, relief measure, remedy]"
 4157,1,前人未到,ぜんじんみとう,"[adj-na, n]","[untrodden (region, field of study, etc.), unprecedented (discovery, achievement, etc.)]"
 4158,1,前篇,ぜんぺん,[n],"[first part, first volume, prequel]"
 4159,,相克,そうこく,"[n, vs]",[rivalry]
@@ -4201,7 +4201,7 @@
 4201,1,抜け穴,ぬけあな,[n],"[secret passage, underground passage, loophole]"
 4202,1,抜け道,ぬけみち,[n],"[byway, bypath, byroad, secret path, way of escape, loophole, excuse]"
 4203,1,捩れる,ねじれる,"[v1, vi]","[to twist, to wrench, to screw]"
-4204,,値幅,ねはば,[n],[price range or fluctuation]
+4204,1,値幅,ねはば,[n],[price range or fluctuation]
 4205,,上り詰める,のぼりつめる,"[v1, vi]","[to go to the top, to climb to the top, to ascend to the top, to reach the summit (e.g. of a mountain), to be engrossed in, to be very enthusiastic about, to be infatuated with]"
 4206,1,乗り心地,のりごこち,[n],[one's feeling while riding]
 4207,1,俳徊,はいかい,"[n, vs]","[loitering, roaming, sauntering, wandering about, prowling]"
@@ -4220,11 +4220,11 @@
 4220,1,盤石,ばんじゃく,[n],"[huge rock, firmness, solidity]"
 4221,1,乾上がる,ひあがる,"[v5r, vi]","[to dry up, to parch, to ebb away]"
 4222,1,陽当り,ひあたり,[n],"[exposure to the sun, sunny place]"
-4223,,引き当てる,ひきあてる,"[v1, vt]","[to draw (the winning ticket), to apply, to compare, to put (oneself in someone's position)]"
+4223,1,引き当てる,ひきあてる,"[v1, vt]","[to draw (the winning ticket), to apply, to compare, to put (oneself in someone's position)]"
 4224,1,引き換える,ひきかえる,"[v1, vt]","[to exchange (things), to convert]"
 4225,1,引き込み線,ひきこみせん,[n],"[(railway) siding, service line, service wire]"
 4226,1,惹き付ける,ひきつける,[v1],"[to fascinate, to attract, to charm, to pull up (at a gate)]"
-4227,,引き出物,ひきでもの,[n],"[gift, souvenir]"
+4227,1,引き出物,ひきでもの,[n],"[gift, souvenir]"
 4228,1,引き戸,ひきど,[n],[sliding door]
 4229,1,一人ぼっち,ひとりぼっち,"[n, adj-no]","[aloneness, loneliness, solitude]"
 4230,1,百戦練磨,ひゃくせんれんま,"[n, adj-no]","[veteran, (someone) schooled by adversity in many battles, (someone) rich in life's experience gained through much adversity]"
@@ -4258,7 +4258,7 @@
 4258,,円顔,まるがお,"[n, adj-no]","[round face, moon face]"
 4259,1,曼荼羅,まんだら,[n],"[mandala, Buddhist visual schema of the enlightened mind]"
 4260,1,見落し,みおとし,[n],"[oversight, omission, something overlooked, thing left unnoticed]"
-4261,,見返し,みかえし,[n],"[endpaper, end paper (of a book), facing (extra layer of material used to make a garment), looking back, triumphing over (a rival)]"
+4261,1,見返し,みかえし,[n],"[endpaper, end paper (of a book), facing (extra layer of material used to make a garment), looking back, triumphing over (a rival)]"
 4262,1,巫女,みこ,[n],"[miko, shrine maiden, young girl or woman (trad. an unmarried virgin) who assists priests at shrines, medium, sorceress, shamaness]"
 4263,,向い風,むかいかぜ,[n],"[headwind, head wind]"
 4264,,向かい側,むかいがわ,"[n, adj-no]","[opposite side, other side, other party]"
@@ -4268,7 +4268,7 @@
 4268,1,勇姿,ゆうし,[n],[gallant figure]
 4269,1,柚,ゆず,[n],"[yuzu (species of aromatic Asiatic citron, Citrus junos)]"
 4270,1,由々しい,ゆゆしい,[adj-i],"[grave, serious, alarming]"
-4271,,揺,ゆり,[n],"[vibration, flickering, jolting, tremor]"
+4271,1,揺,ゆり,[n],"[vibration, flickering, jolting, tremor]"
 4272,,横丁,よこちょう,[n],"[bystreet, side street, back street, alley, lane]"
 4273,1,夜店,よみせ,[n],"[night stall, night shop, night fair]"
 4274,1,弱々しい,よわよわしい,[adj-i],"[frail, slender, feminine]"
@@ -4279,7 +4279,7 @@
 4279,1,湧き起こる,わきおこる,"[v5r, vi]","[to well up, to burst, to arise]"
 4280,1,早稲,わせ,"[n, adj-no]","[early ripening rice, early-ripening fruit (grain, etc.), person who becomes physically or mentally mature at an early age]"
 4281,,割り増し,わりまし,"[n, adj-no]","[premium, bonus, extra wages, (after a number) tenths increase]"
-4282,,原題,げんだい,[n],[original title]
+4282,1,原題,げんだい,[n],[original title]
 4283,,楽壇,がくだん,[n],[musical world]
 4284,1,老師,ろうし,[n],"[old priest, sage, (Zen) teacher]"
 4285,,思い違い,おもいちがい,"[n, vs]","[misunderstanding, misapprehension, false impression, to be mistaken, to have the wrong idea]"
@@ -4303,7 +4303,7 @@
 4303,1,良く良く,よくよく,[adv],"[exceedingly, very]"
 4304,1,彼方此方,かなたこなた,"[adv, pn]","[here and there, all around, everywhere, throughout, all over]"
 4305,1,彼此,かれこれ,"[adv, pn]","[one thing or another, this and that, this or that, just on, around, about, nearly, roughly, almost, round about]"
-4306,,行けません,いけません,[exp],"[wrong, not good, of no use, hopeless, past hope, must not do]"
+4306,1,行けません,いけません,[exp],"[wrong, not good, of no use, hopeless, past hope, must not do]"
 4307,,それと無く,それとなく,[adv],"[indirectly, obliquely]"
 4308,,飲ませる,のませる,[v1],"[to make somebody drink, to give someone a drink]"
 4309,,屋台骨,やたいぼね,[n],"[framework, mainstay, support, supporter]"
@@ -4346,7 +4346,7 @@
 4346,1,朝貢,ちょうこう,"[n, vs]",[bringing tribute]
 4347,,徴集,ちょうしゅう,"[n, vs]","[levying, recruitment]"
 4348,,注視,ちゅうし,"[n, vs, adj-no]","[gazing steadily at, observing (a person) closely, maintain a watch over]"
-4349,,打電,だでん,"[n, vs]","[sending a telegram, telegraph]"
+4349,1,打電,だでん,"[n, vs]","[sending a telegram, telegraph]"
 4350,1,度外視,どがいし,"[n, vs]","[taking no account of, neglecting, to disregard, to take no account of, to overlook]"
 4351,1,服喪,ふくも,"[n, vs]",[going into mourning]
 4352,1,憤死,ふんし,"[n, vs]",[dying in a fit of anger or indignation]
@@ -4374,12 +4374,12 @@
 4374,,連破,れんぱ,"[n, vs]","[winning successively, defeating one's enemy in succession]"
 4375,1,硫化,りゅうか,"[n, vs]","[sulfuration, sulphuration]"
 4376,,流失,りゅうしつ,"[n, vs]",[washed away]
-4377,,算段,さんだん,"[n, vs]","[contriving, managing, raising (money)]"
+4377,1,算段,さんだん,"[n, vs]","[contriving, managing, raising (money)]"
 4378,1,潜行,せんこう,"[n, vs]","[underwater navigation, going underground, going into hiding, travelling incognito, traveling incognito, travelling in disguise, traveling in disguise]"
 4379,1,疾駆,しっく,"[n, vs]","[riding fast, driving a horse fast]"
 4380,1,死守,ししゅ,"[n, vs]","[defending to the last, defending desperately]"
 4381,1,昇降,しょうこう,"[n, vs]","[ascending and descending, going up and down]"
-4382,,焼香,しょうこう,"[n, vs]",[burning (offer) incense]
+4382,1,焼香,しょうこう,"[n, vs]",[burning (offer) incense]
 4383,1,縮減,しゅくげん,"[n, vs]","[reduction, diminishment, contraction]"
 4384,1,走破,そうは,"[n, vs]",[running (cover) the whole distance]
 4385,1,掃射,そうしゃ,"[n, vs]","[sweeping with fire, mowing down, strafing]"
@@ -4393,7 +4393,7 @@
 4393,,随伴,ずいはん,"[n, vs]","[attendance, accompanying, following, adjoint]"
 4394,1,日干し,ひぼし,"[n, adj-no]",[sun-dried]
 4395,1,従前,じゅうぜん,"[n, adj-no]","[previous, former]"
-4396,,可処分,かしょぶん,"[n, adj-no]",[disposable]
+4396,1,可処分,かしょぶん,"[n, adj-no]",[disposable]
 4397,,既刊,きかん,"[adj-no, n]",[already published]
 4398,1,的外れ,まとはずれ,"[adj-na, n, adj-no]","[out of focus, off the point, miss the mark]"
 4399,,無二,むに,"[n, adj-no]","[peerless, matchless]"
@@ -4413,11 +4413,11 @@
 4413,1,番狂わせ,ばんくるわせ,[n],"[unexpected result, upset, surprise]"
 4414,1,馬身,ばしん,[n],[horse's length]
 4415,1,菩提,ぼだい,[n],"[bodhi, enlightenment, happiness in the next world]"
-4416,,木刀,ぼくとう,[n],[wooden sword]
+4416,1,木刀,ぼくとう,[n],[wooden sword]
 4417,,棒高跳び,ぼうたかとび,[n],[pole vault (jump)]
 4418,1,棒読み,ぼうよみ,"[n, vs]","[reading in a monotone, reading a Chinese classical text without translating it into Japanese]"
 4419,1,文武,ぶんぶ,[n],"[literary and military arts, the pen and the sword]"
-4420,,病原体,びょうげんたい,[n],[pathogen]
+4420,1,病原体,びょうげんたい,[n],[pathogen]
 4421,,病弊,びょうへい,[n],"[evil influence, ill effect]"
 4422,1,病根,びょうこん,[n],"[cause of a disease, root of an evil]"
 4423,,病身,びょうしん,"[n, adj-no]","[weak constitution, ill health]"
@@ -4434,13 +4434,13 @@
 4434,1,調味,ちょうみ,"[n, vs]","[seasoning, flavoring, flavouring]"
 4435,1,長幼,ちょうよう,[n],[young and old]
 4436,1,超絶,ちょうぜつ,"[n, vs]","[transcendence, excellence, superiority]"
-4437,,忠犬,ちゅうけん,[n],[faithful dog (Hachiko)]
+4437,1,忠犬,ちゅうけん,[n],[faithful dog (Hachiko)]
 4438,1,宙乗り,ちゅうのり,[n],"[midair stunt, aerial stunts]"
 4439,1,中生代,ちゅうせいだい,[n],[Mesozoic era]
 4440,1,大福,だいふく,[n],"[great fortune, good luck, rice cake stuffed with bean jam]"
-4441,,大吉,だいきち,[n],[excellent luck]
+4441,1,大吉,だいきち,[n],[excellent luck]
 4442,1,脱会,だっかい,"[n, vs]","[withdrawal (from membership of organization, organisation)]"
-4443,,暖地,だんち,[n],"[warm district, region of mild climate]"
+4443,1,暖地,だんち,[n],"[warm district, region of mild climate]"
 4444,,断交,だんこう,"[n, vs]",[breaking off (severing) relations]
 4445,,打算,ださん,"[n, vs]","[calculation, self-interest, selfishness]"
 4446,,脱脂粉乳,だっしふんにゅう,[n],[powdered skim (nonfat) milk]
@@ -4500,7 +4500,7 @@
 4500,,品評,ひんぴょう,"[n, vs]","[estimation, criticism, comment]"
 4501,,人減らし,ひとべらし,[n],"[personnel cut, labor cut, labour cut]"
 4502,1,冷やかし,ひやかし,[n],"[teasing, chaffing, raillery, ridicule, jeering, merely asking the price, just looking at goods, window-shopping, browsing]"
-4503,,日銭,ひぜに,[n],"[daily income in cash, money paid by daily installments, money paid by daily instalments]"
+4503,1,日銭,ひぜに,[n],"[daily income in cash, money paid by daily installments, money paid by daily instalments]"
 4504,1,放漫,ほうまん,"[adj-na, n]","[whimsy, looseness, indiscretion, laxity]"
 4505,,本分,ほんぶん,[n],"[one's duty, one's part]"
 4506,,本舗,ほんぽ,[n],"[head office, main shop]"
@@ -4516,7 +4516,7 @@
 4516,,精華,せいか,[n],"[flower, essence, glory]"
 4517,,隷書,れいしょ,[n],"[clerical script (ancient, highly angular style of kanji)]"
 4518,1,地学,ちがく,[n],"[earth sciences (geology, mineralogy, petrology, geophysics, geochemistry, seismology, etc.)]"
-4519,,結露,けつろ,"[n, vs]","[dew, condensation]"
+4519,1,結露,けつろ,"[n, vs]","[dew, condensation]"
 4520,,素焼,すやき,[n],[bisque (fired pottery)]
 4521,1,篆刻,てんこく,"[n, vs]",[seal engraving]
 4522,1,寄り切り,よりきり,[n],[holding opponent's belt while pushing from the ring]
@@ -4562,7 +4562,7 @@
 4562,1,抜け目,ぬけめ,[n],"[imprudence, an oversight]"
 4563,1,敷き詰める,しきつめる,"[v1, vt]","[to cover a surface, to spread all over, to blanket, to lay]"
 4564,1,敷物,しきもの,[n],"[carpet, rug, matting, carpeting, mat, mattress, quilt etc. spread out on the floor (or ground) and used to sit or sleep on, spread, (cloth) cover, coaster]"
-4565,,抱え込む,かかえこむ,"[v5m, vt]","[to hold a thing in one's arms, to carry in one's arms, to embrace (e.g. a baby), to take upon oneself, to be saddled with]"
+4565,1,抱え込む,かかえこむ,"[v5m, vt]","[to hold a thing in one's arms, to carry in one's arms, to embrace (e.g. a baby), to take upon oneself, to be saddled with]"
 4566,1,蓑,みの,[n],[straw raincoat]
 4567,,面白がる,おもしろがる,"[v5r, vi]","[to amuse oneself, to be amused, to enjoy, to think fun]"
 4568,1,野宿,のじゅく,"[n, vs]","[sleeping outdoors, sleeping out in the open air, camping]"
@@ -4592,7 +4592,7 @@
 4592,,常態,じょうたい,[n],[normal state (condition)]
 4593,1,譲与,じょうよ,"[n, vs, adj-no]",[transfer]
 4594,1,純銀,じゅんぎん,[n],[pure silver]
-4595,,潤沢,じゅんたく,"[adj-na, n]","[abundant, ample, plentiful, affluent, lustrous, glossy]"
+4595,1,潤沢,じゅんたく,"[adj-na, n]","[abundant, ample, plentiful, affluent, lustrous, glossy]"
 4596,1,純増,じゅんぞう,[n],[net increase]
 4597,1,授産,じゅさん,[n],"[sheltered work programs, sheltered work programmes, providing with work, giving employment]"
 4598,1,縦走,じゅうそう,"[n, vs]","[traverse, walk along the ridge]"
@@ -4619,12 +4619,12 @@
 4619,,暴れん坊,あばれんぼう,[n],"[rambunctious kid, wild kid, hooligan, rowdy, roughneck, a rough]"
 4620,1,産廃,さんぱい,[n],[industrial waste]
 4621,1,諸悪,しょあく,[n],[every (kind of) evil or crime]
-4622,,座標,ざひょう,"[n, adj-no]","[coordinate, coordinates]"
+4622,1,座標,ざひょう,"[n, adj-no]","[coordinate, coordinates]"
 4623,1,土中,どちゅう,[n],"[(in the) earth, underground]"
 4624,,支那,しな,[n],[China]
 4625,1,五重奏,ごじゅうそう,[n],[instrumental quintet]
 4626,1,無私,むし,"[adj-na, n, adj-no]","[selflessness, unselfish]"
-4627,,滅私,めっし,[n],"[selflessness, being unselfish]"
+4627,1,滅私,めっし,[n],"[selflessness, being unselfish]"
 4628,1,強襲,きょうしゅう,"[n, vs]","[assault, violent attack]"
 4629,,寮費,りょうひ,[n],[boarding-expenses]
 4630,1,貸本,かしほん,[n],[books for loan]
@@ -4637,7 +4637,7 @@
 4637,1,堅守,けんしゅ,"[n, vs]","[strong defense, strong defence]"
 4638,1,利き,きき,"[n, n-suf, n-pref]","[effectiveness, efficacy, efficaciousness, dominance (e.g. of left or right hand), tasting (alcohol, tea, etc.)]"
 4639,1,効き,きき,[n],"[effectiveness, efficacy, efficaciousness]"
-4640,,着こなす,きこなす,"[v5s, vt]","[to wear (clothes) stylishly, to dress oneself stylishly]"
+4640,1,着こなす,きこなす,"[v5s, vt]","[to wear (clothes) stylishly, to dress oneself stylishly]"
 4641,,気負う,きおう,"[v5u, vi]","[to get worked up, to be eager (enthusiastic), to rouse oneself]"
 4642,,霧吹き,きりふき,[n],"[spray, atomizer, atomiser]"
 4643,1,極まりない,きわまりない,"[suf, adj-i]","[extremely, in the extreme, knows no bounds (e.g. rudeness), unparalleled, boundless (e.g. universe, ocean), limitless]"
@@ -4698,7 +4698,7 @@
 4698,1,煮え切らない,にえきらない,"[exp, adj-i]","[half-cooked, vague, halfhearted, indecisive]"
 4699,1,苦り切る,にがりきる,"[v5r, vi]",[to look sour (disgusted)]
 4700,1,肉離れ,にくばなれ,"[n, vs]",[pulled or torn muscle]
-4701,,日参,にっさん,"[n, vs]","[daily visit (of worship), frequent visit]"
+4701,1,日参,にっさん,"[n, vs]","[daily visit (of worship), frequent visit]"
 4702,1,日章旗,にっしょうき,[n],[the Japanese (rising sun) flag]
 4703,1,野菊,のぎく,[n],"[wild chrysanthemum, aster]"
 4704,1,農具,のうぐ,[n],"[farming implement, farm tools]"
@@ -4709,11 +4709,11 @@
 4709,1,大判,おおばん,[n],"[large size, large oval Japanese gold coin]"
 4710,,帯封,おびふう,[n],"[half wrapper, strip of paper]"
 4711,1,大助かり,おおだすかり,"[adj-na, n]",[great help]
-4712,,怠り,おこたり,[n],"[negligence, carelessness]"
+4712,1,怠り,おこたり,[n],"[negligence, carelessness]"
 4713,,思い余る,おもいあまる,"[v5r, vi]","[to not know how to act or what to do, to be at a loss]"
 4714,1,女手,おんなで,[n],"[female labor, female labour, hiragana, womans handwriting, woman in a family]"
 4715,1,雷雲,らいうん,[n],[thunder cloud]
-4716,,乱気流,らんきりゅう,[n],"[(air) turbulence, turbulent air]"
+4716,1,乱気流,らんきりゅう,[n],"[(air) turbulence, turbulent air]"
 4717,,乱世,らんせい,[n],"[troubled times, turbulent times]"
 4718,,濫造,らんぞう,"[n, vs]","[overproduction, careless manufacture, churning out (substandard goods)]"
 4719,1,霊験,れいげん,[n],"[miraculous efficacy, miracle, miraculous virtue]"
@@ -4723,10 +4723,10 @@
 4723,1,利食い,りぐい,"[n, vs]",[profit-taking]
 4724,,陸揚げ,りくあげ,"[n, vs]","[unloading (a ship), landing]"
 4725,1,陸地,りくち,"[n, adj-no]",[land]
-4726,,離日,りにち,"[n, vs]",[departure from Japan]
+4726,1,離日,りにち,"[n, vs]",[departure from Japan]
 4727,1,臨検,りんけん,"[n, vs]","[on-the-spot investigation or inspection, raid]"
 4728,1,離農,りのう,"[n, vs]",[giving up farming for another profession]
-4729,,理路,りろ,[n],"[logic, reasoning, argument]"
+4729,1,理路,りろ,[n],"[logic, reasoning, argument]"
 4730,,理想郷,りそうきょう,[n],"[ideal land, earthly paradise, Utopia, Arcadia]"
 4731,,立志,りっし,[n],"[one's life goal, (fixing) one's aim in life]"
 4732,,立像,りつぞう,[n],"[standing statue, standing image]"
@@ -4748,7 +4748,7 @@
 4748,1,政談,せいだん,[n],"[talking politics, discussion of a law case]"
 4749,,清風,せいふう,[n],"[breath of fresh air, cool (refreshing) breeze]"
 4750,1,生業,せいぎょう,[n],"[occupation, livelihood, calling]"
-4751,,盛夏,せいか,[n],"[midsummer, height of summer]"
+4751,1,盛夏,せいか,[n],"[midsummer, height of summer]"
 4752,1,積年,せきねん,"[n, adj-no]","[(many) years, long-standing (esp. hatred, grudge), ancient]"
 4753,1,石像,せきぞう,[n],[stone statue]
 4754,,遷宮,せんぐう,[n],"[installation of a deity in a new shrine, transfer of a shrine]"
@@ -4756,7 +4756,7 @@
 4756,1,船腹,せんぷく,[n],"[side or bottom of a ship, ship's hold, bottoms, shipping, tonnage, freight space]"
 4757,1,線審,せんしん,[n],[linesman]
 4758,1,船倉,せんそう,[n],"[ship's hold, hatch]"
-4759,,説法,せっぽう,"[n, vs]","[lecture, sermon, preaching, moralizing, moralising]"
+4759,1,説法,せっぽう,"[n, vs]","[lecture, sermon, preaching, moralizing, moralising]"
 4760,,施主,せしゅ,[n],"[donor, benefactor, almsgiver, chief mourner, client (of a builder, etc.)]"
 4761,,車台,しゃだい,[n],"[chassis, car body]"
 4762,,社団,しゃだん,[n],"[corporation, association]"
@@ -4773,7 +4773,7 @@
 4773,1,死滅,しめつ,"[n, vs]","[extinction, annihilation, destruction]"
 4774,,心房,しんぼう,"[n, adj-no]","[atrium, chamber of the heart]"
 4775,1,深部,しんぶ,[n],"[depths, deep part]"
-4776,,新著,しんちょ,[n],[new book or literary work]
+4776,1,新著,しんちょ,[n],[new book or literary work]
 4777,1,進言,しんげん,"[n, vs]","[proposal, counsel, advice (to a superior)]"
 4778,,神経系,しんけいけい,[n],[nervous system]
 4779,1,神経痛,しんけいつう,[n],"[nerve pain, neuralgia]"
@@ -4814,7 +4814,7 @@
 4814,1,干支,えと,[n],"[sexagenary cycle (60-year cycle of 12 animal zodiac and 5 elements in Chinese astrology), 12-year Chinese zodiac]"
 4815,1,隣村,りんそん,[n],"[neighboring village, neighbouring village]"
 4816,1,神器,じんぎ,[n],"[sacred treasure, the three sacred treasures (sword, jewel, mirror)]"
-4817,,海風,かいふう,[n],[sea breeze]
+4817,1,海風,かいふう,[n],[sea breeze]
 4818,,大本,たいほん,[n],[foundation]
 4819,,大門,だいもん,[n],[large front gate]
 4820,1,初子,ういご,[n],[first child]
@@ -4832,7 +4832,7 @@
 4832,,環状線,かんじょうせん,[n],"[loop line, (transportation) belt line]"
 4833,1,源平,げんぺい,[n],"[Genji and Heike clans, two opposing sides]"
 4834,1,和裁,わさい,[n],"[Japanese dressmaking, kimono making]"
-4835,,滑り止め,すべりどめ,[n],"[tyre chains, anti-skid device, backup measure, taking entrance examination to a university in case one fails at other universities]"
+4835,1,滑り止め,すべりどめ,[n],"[tyre chains, anti-skid device, backup measure, taking entrance examination to a university in case one fails at other universities]"
 4836,1,忘れ去る,わすれさる,"[v5r, vt]","[to forget completely, to leave behind]"
 4837,,江上,こうじょう,[n],[(on the) bank of a large river]
 4838,1,攻め立てる,せめたてる,"[v1, vt]","[to make an incessant onslaught, to attack incessantly]"
@@ -4844,7 +4844,7 @@
 4844,1,客人,きゃくじん,[n],"[caller, visitor, company, guest]"
 4845,,湧出,ゆうしゅつ,"[n, vs]","[gushing out, welling up, springing up]"
 4846,1,通用門,つうようもん,[n],"[side gate, side door, service entrance]"
-4847,,通巻,つうかん,[n],[consecutive number of (or total) volumes]
+4847,1,通巻,つうかん,[n],[consecutive number of (or total) volumes]
 4848,1,痛打,つうだ,"[n, vs]","[hard or crushing blow, severe attack]"
 4849,,筒抜け,つつぬけ,[n],"[being overheard, being leaked (e.g. secrets), going in one ear and out the other]"
 4850,,続落,ぞくらく,"[n, vs]",[continued fall in (stock) prices]
@@ -4924,12 +4924,12 @@
 4924,1,取り壊す,とりこわす,"[v5s, vt]","[to demolish, to tear or pull down]"
 4925,,取り返し,とりかえし,[n],[recovery]
 4926,1,手の内,てのうち,[n],"[palm (of one's hand), skill, scope of one's power, one's intentions, one's plan, one's hand (mahjong, card games, etc.)]"
-4927,,手打ち,てうち,[n],"[making noodles by hand, striking a deal, coming to an agreement, reconciliation, killing with bare hands]"
+4927,1,手打ち,てうち,[n],"[making noodles by hand, striking a deal, coming to an agreement, reconciliation, killing with bare hands]"
 4928,,酒販,しゅはん,[n],[liquor trade]
 4929,,集結,しゅうけつ,"[n, vs]","[massing (of troops), gathering]"
 4930,1,縦割り,たてわり,[n],"[dividing vertically, vertical split, top-to-bottom sectioning, division into sections, splitting lengthwise]"
 4931,1,熟し,こなし,[n],[carriage (e.g. of one's body)]
-4932,,利比亜,リビア,[n],[Libya]
+4932,1,利比亜,リビア,[n],[Libya]
 4933,1,矢継早,やつぎばや,"[adj-na, n, adj-no]",[rapid succession (e.g. questions)]
 4934,,赤茶ける,あかちゃける,"[v1, vi]","[to turn reddish-brown, to turn rufous, to become discolored, to become discoloured]"
 4935,1,賞杯,しょうはい,[n],"[trophy, prize cup]"
@@ -4947,7 +4947,7 @@
 4947,1,装身具,そうしんぐ,[n],"[(personal) accessories (ornaments, outfit)]"
 4948,1,草創,そうそう,"[n, vs]","[beginning, inauguration]"
 4949,1,早産,そうざん,"[n, vs, adj-no]",[premature birth]
-4950,,耐乏,たいぼう,[n],"[austerity, voluntary privation]"
+4950,1,耐乏,たいぼう,[n],"[austerity, voluntary privation]"
 4951,1,大器,たいき,[n],"[large container, person of great talent]"
 4952,1,滞空,たいくう,[n],[staying (remaining) in the air]
 4953,1,滞留,たいりゅう,"[n, vs]","[staying, stagnating, sojourn]"
@@ -4958,7 +4958,7 @@
 4958,1,挺身,ていしん,"[n, vs]","[volunteer, volunteering]"
 4959,,鉄道網,てつどうもう,[n],"[railroad network, railroad system]"
 4960,1,特価,とっか,"[n, adj-no]","[special price, bargain price]"
-4961,,徳行,とっこう,[n],"[virtuous act or deeds, goodness]"
+4961,1,徳行,とっこう,[n],"[virtuous act or deeds, goodness]"
 4962,1,常夏,とこなつ,[n],[everlasting summer]
 4963,,得度,とくど,"[n, vs]","[becoming a monk, entering priesthood]"
 4964,1,特等,とくとう,"[n, n-pref]","[special quality, class or grade]"
@@ -4975,13 +4975,13 @@
 4975,1,揚力,ようりょく,[n],"[dynamic lift, lifting power]"
 4976,,羊水,ようすい,[n],[amniotic fluid]
 4977,,四つ切り,よつぎり,[n],"[cutting into four, quarter, photograph size 254mm x 305 mm]"
-4978,,弱火,よわび,[n],"[simmering, low fire, gentle heating]"
+4978,1,弱火,よわび,[n],"[simmering, low fire, gentle heating]"
 4979,,弱り果てる,よわりはてる,"[v1, vi]","[to be exhausted, to be at a loss, to be worn out, to be helpless]"
-4980,,夢物語,ゆめものがたり,[n],"[account of a dream, fantastic story, wild tale, empty dream, pipe dream]"
+4980,1,夢物語,ゆめものがたり,[n],"[account of a dream, fantastic story, wild tale, empty dream, pipe dream]"
 4981,1,郵船,ゆうせん,[n],[mail boat]
 4982,1,残額,ざんがく,[n],"[remaining amount, balance (of an account)]"
 4983,1,残雪,ざんせつ,[n],"[remaining snow, lingering snow]"
-4984,,残党,ざんとう,[n],"[remnants, survivors, refugees, pocket (of resistance)]"
+4984,1,残党,ざんとう,[n],"[remnants, survivors, refugees, pocket (of resistance)]"
 4985,1,全身全霊,ぜんしんぜんれい,[n],"[complete devotion, body and soul, one's best]"
 4986,1,前頭葉,ぜんとうよう,[n],[frontal lobe]
 4987,1,造営,ぞうえい,"[n, vs]","[building, construction]"
@@ -5004,7 +5004,7 @@
 5004,1,大所,おおどころ,[n],"[wealthy family, important person, bigwig]"
 5005,1,大逆,たいぎゃく,[n],[high treason]
 5006,,多人数,たにんずう,[n],[large number of people]
-5007,,使い走り,つかいはしり,"[n, vs]",[running errands]
+5007,1,使い走り,つかいはしり,"[n, vs]",[running errands]
 5008,1,軽重,けいじゅう,"[n, vs]","[relative weight, relative importance]"
 5009,,難治,なんじ,"[n, adj-no]","[intractable (diseases), hard to cure, rebellious, insurgent, refractory, obstinate]"
 5010,1,流砂,りゅうしゃ,[n],[quicksand]
@@ -5021,7 +5021,7 @@
 5021,,速決,そっけつ,"[n, vs]","[prompt decision, summary judgment, summary judgement]"
 5022,1,完全雇用,かんぜんこよう,[n],[full employment]
 5023,1,院議,いんぎ,[n],[legislative decision]
-5024,,券売機,けんばいき,[n],"[ticket machine, ticket-vending machine]"
+5024,1,券売機,けんばいき,[n],"[ticket machine, ticket-vending machine]"
 5025,1,巻き網,まきあみ,[n],"[purse seine, round haul net]"
 5026,1,官軍,かんぐん,[n],"[government forces, loyalist army]"
 5027,1,官業,かんぎょう,[n],[government-run enterprise]
@@ -5044,7 +5044,7 @@
 5044,,混血児,こんけつじ,[n],[child of mixed blood or race]
 5045,1,血の気,ちのけ,[n],"[blood (as in hot-blooded, ruddy complexion, etc.)]"
 5046,,血の海,ちのうみ,[exp],"[sea of blood, pool of blood]"
-5047,,血栓,けっせん,"[n, adj-no]","[thrombus, blood clot]"
+5047,1,血栓,けっせん,"[n, adj-no]","[thrombus, blood clot]"
 5048,1,血税,けつぜい,[n],"[heavy taxation, conscription]"
 5049,1,血統書,けっとうしょ,[n],[a pedigree]
 5050,,懐中時計,かいちゅうとけい,[n],[pocket watch]
@@ -5054,7 +5054,7 @@
 5054,1,模範的,もはんてき,[adj-na],[exemplary]
 5055,1,模擬店,もぎてん,[n],[refreshment booth]
 5056,1,荒事,あらごと,[n],[(theatrical) fighting scene]
-5057,,荒巻,あらまき,[n],"[salted salmon, fish wrapped in (bamboo) leaves]"
+5057,1,荒巻,あらまき,[n],"[salted salmon, fish wrapped in (bamboo) leaves]"
 5058,,荒れ模様,あれもよう,"[adj-na, adj-no]","[stormy, threatening]"
 5059,,荒療治,あらりょうじ,"[n, vs]",[drastic measure or treatment]
 5060,,魔女狩り,まじょがり,[n],[witch hunt]
@@ -5083,7 +5083,7 @@
 5083,1,舞台監督,ぶたいかんとく,[n],[stage director]
 5084,,猛省,もうせい,"[n, vs]",[serious reflection or soul-searching]
 5085,,江戸前,えどまえ,[n],[Tokyo style]
-5086,,空中分解,くうちゅうぶんかい,"[n, vs]",[mid-air breakage or disintegration]
+5086,1,空中分解,くうちゅうぶんかい,"[n, vs]",[mid-air breakage or disintegration]
 5087,1,浴用,よくよう,[n],[for bath use]
 5088,1,浴後,よくご,"[n-adv, n-t]",[after bathing]
 5089,,公安調査庁,こうあんちょうさちょう,[n],[(Japanese) Public Security Intelligence Agency]
@@ -5091,7 +5091,7 @@
 5091,1,胸突き八丁,むなつきはっちょう,[n],"[the most trying spot or period, the most difficult period]"
 5092,1,口上書,こうじょうしょ,[n],"[verbal note (notes verbale), written statement]"
 5093,,口添え,くちぞえ,"[n, vs]","[recommendation, putting in a good word for someone]"
-5094,,口裏,くちうら,[n],"[determining a speaker's true or hidden meaning, determining a speaker's intentions from his manner of speech, divining good or bad luck from listening to someone]"
+5094,1,口裏,くちうら,[n],"[determining a speaker's true or hidden meaning, determining a speaker's intentions from his manner of speech, divining good or bad luck from listening to someone]"
 5095,,後天性,こうてんせい,[n],"[acquired, a posteriori]"
 5096,,後ろ手,うしろで,[n],"[hands behind one's back, hands tied behind one's back, behind (e.g. someone), rear, back, appearance from behind]"
 5097,,後代,こうだい,[n],"[posterity, future generations]"
@@ -5099,17 +5099,17 @@
 5099,,後ろ指,うしろゆび,[n],[being talked about or backbitten]
 5100,,後ろ髪,うしろがみ,[n],[hair on the back of one's head]
 5101,,半永久,はんえいきゅう,[n],[semipermanence]
-5102,,伴走,ばんそう,"[n, vs]","[running alongside, pacesetting, accompanying]"
+5102,1,伴走,ばんそう,"[n, vs]","[running alongside, pacesetting, accompanying]"
 5103,,発火点,はっかてん,[n],"[point of ignition, flash point]"
 5104,,発議,はつぎ,"[n, vs]","[proposal, motion]"
 5105,1,廃物,はいぶつ,"[n, adj-no]","[scrap, junk, waste material]"
 5106,,廃校,はいこう,"[n, vs]",[abolition or closing of a school]
-5107,,廃船,はいせん,[n],[scrapped vessel]
-5108,,廃園,はいえん,"[n, vs]",[neglected or abandoned garden]
+5107,1,廃船,はいせん,[n],[scrapped vessel]
+5108,1,廃園,はいえん,"[n, vs]",[neglected or abandoned garden]
 5109,,抜き去る,ぬきさる,[v5r],"[to (sur)pass, to overtake]"
 5110,,反骨,はんこつ,[n],[rebellious spirit]
 5111,,返り点,かえりてん,[n],[marks indicating the Japanese meaning of the texts of Chinese classics]
-5112,,返書,へんしょ,[n],"[reply, response]"
+5112,1,返書,へんしょ,[n],"[reply, response]"
 5113,,版本,はんぽん,[n],[book printed from woodblocks]
 5114,1,敗血症,はいけつしょう,[n],"[blood poisoning, septicemia, sepsis]"
 5115,1,八景,はっけい,[n],[eight picturesque sights]
@@ -5117,11 +5117,11 @@
 5117,1,片足,かたあし,"[n, adj-no]","[one leg, one-legged]"
 5118,1,片時,かたとき,[n],"[moment, instant]"
 5119,,片親,かたおや,[n],"[one parent, single parent]"
-5120,,拝観,はいかん,"[n, vs]","[see, inspect, visit]"
+5120,1,拝観,はいかん,"[n, vs]","[see, inspect, visit]"
 5121,1,破竹,はちく,[n],[breaking bamboo]
 5122,1,藩士,はんし,[n],[feudal retainer or warrior]
 5123,1,含み資産,ふくみしさん,[n],[hidden assets]
-5124,,金工,きんこう,[n],"[metalwork, metalsmith, goldsmith]"
+5124,1,金工,きんこう,[n],"[metalwork, metalsmith, goldsmith]"
 5125,1,金糸,きんし,[n],[gold thread]
 5126,1,金策,きんさく,"[n, vs]",[(means of) raising money]
 5127,1,金製,きんせい,"[n, adj-no]",[made of gold]
@@ -5134,7 +5134,7 @@
 5134,1,感傷的,かんしょうてき,[adj-na],"[sentimental, emotional, maudlin, mawkish]"
 5135,,吸水性,きゅうすいせい,[n],[water absorbency]
 5136,,急先鋒,きゅうせんぽう,[n],"[van (of a movement), vanguard, forefront]"
-5137,,急追,きゅうつい,"[n, vs]",[(being in) hot pursuit]
+5137,1,急追,きゅうつい,"[n, vs]",[(being in) hot pursuit]
 5138,1,給金,きゅうきん,[n],"[(one's) pay, wages]"
 5139,,給費,きゅうひ,"[n, vs]","[provision of expenses, scholarship]"
 5140,,禁制品,きんせいひん,[n],"[contraband (goods), prohibited goods]"
@@ -5148,14 +5148,14 @@
 5148,1,航続距離,こうぞくきょり,[n],[cruising range]
 5149,,行人,こうじん,[n],"[passer-by, traveler, traveller]"
 5150,1,行く先,ゆくさき,"[n-adv, n-t]","[one's destination, one's whereabouts, the future]"
-5151,,行状,ぎょうじょう,[n],"[behavior, behaviour]"
+5151,1,行状,ぎょうじょう,[n],"[behavior, behaviour]"
 5152,1,行軍,こうぐん,"[n, vs]","[march, marching]"
 5153,,動物性,どうぶつせい,[n],"[animal nature, animality]"
 5154,1,種付け,たねつけ,"[n, vs]",[mating]
 5155,,用立てる,ようだてる,"[v1, vt]","[to make use of, to lend money]"
 5156,1,用材,ようざい,[n],[materials]
 5157,1,用金,ようきん,[n],[public money]
-5158,,通史,つうし,[n],[overview of history]
+5158,1,通史,つうし,[n],[overview of history]
 5159,,通性,つうせい,"[n, adj-no]",[common quality]
 5160,1,通信教育,つうしんきょういく,"[n, adj-no]",[correspondence education]
 5161,1,通信簿,つうしんぼ,[n],[report card]
@@ -5180,8 +5180,8 @@
 5180,,排卵誘発剤,はいらんゆうはつざい,[n],[ovulation-inducing drug]
 5181,,排煙,はいえん,"[n, vs]",[smoke (dispersal)]
 5182,1,悲劇的,ひげきてき,[adj-na],[tragic]
-5183,,貧打,ひんだ,[n],[poor hitting]
-5184,,配車,はいしゃ,"[n, vs]",[allocation or dispatching of cars (despatching)]
+5183,1,貧打,ひんだ,[n],[poor hitting]
+5184,1,配車,はいしゃ,"[n, vs]",[allocation or dispatching of cars (despatching)]
 5185,,配船,はいせん,"[n, vs]",[assignment of vessels]
 5186,,飛び下り,とびおり,[n],[jumping off]
 5187,1,飛行艇,ひこうてい,[n],[flying boat]
@@ -5191,7 +5191,7 @@
 5191,1,薄日,うすび,[n],[soft light]
 5192,1,薄焼き,うすやき,[n],"[lightly fried, lightly baked]"
 5193,1,拍子抜け,ひょうしぬけ,"[n, vs, adj-no]","[anticlimax, let-down, disappointment, loss of interest]"
-5194,,父祖,ふそ,[n],[ancestors]
+5194,1,父祖,ふそ,[n],[ancestors]
 5195,,布目,ぬのめ,[n],"[texture, ""grain"" of a fabric or cloth, direction of the loom or weave in a roll of fabric]"
 5196,1,扶桑,ふそう,[n],"[land east of China, Japan]"
 5197,,独占的,どくせんてき,[adj-na],[monopolistic]
@@ -5220,7 +5220,7 @@
 5220,1,御家芸,おいえげい,[n],"[one's specialty, one's forte, specialty of a kabuki school]"
 5221,1,御株,おかぶ,[n],[one's forte]
 5222,1,御破算,ごはさん,[n],[starting afresh]
-5223,,御祭り騒ぎ,おまつりさわぎ,[n],"[festival merrymaking, revelry]"
+5223,1,御祭り騒ぎ,おまつりさわぎ,[n],"[festival merrymaking, revelry]"
 5224,,御飾り,おかざり,[n],"[decorations, offerings, mere window dressing]"
 5225,1,御霊,みたま,[n],[spirit of a deceased person]
 5226,,抽象論,ちゅうしょうろん,[n],[an abstract argument]
@@ -5235,7 +5235,7 @@
 5235,1,朝帰り,あさがえり,"[n, vs]",[staying out all night and coming home in the morning]
 5236,,朝駆け,あさがけ,"[n, vs]",[early-morning attack]
 5237,1,組み上げる,くみあげる,"[v1, vt]","[to compose, to put together]"
-5238,,組み写真,くみしゃしん,[n],[composite or montage photograph]
+5238,1,組み写真,くみしゃしん,[n],[composite or montage photograph]
 5239,1,組織労働者,そしきろうどうしゃ,[n],"[organized labour (organised, labor), unionized labour]"
 5240,1,昨冬,さくとう,"[n-adv, n-t]",[last winter]
 5241,,跡形,あとかた,[n],"[trace, vestige, evidence]"
@@ -5246,7 +5246,7 @@
 5246,1,手弁当,てべんとう,[n],"[bringing one's own lunch, without pay]"
 5247,1,手代,てだい,[n],[sales clerk]
 5248,,手広い,てびろい,[adj-i],"[spacious, roomy]"
-5249,,手投げ弾,てなげだん,[n],[hand grenade]
+5249,1,手投げ弾,てなげだん,[n],[hand grenade]
 5250,1,手形割引,てがたわりびき,[n],[discounting of a bill]
 5251,1,手っ取り早い,てっとりばやい,[adj-i],"[quick, prompt, without delay, simple, easy, effortless]"
 5252,1,手塩,てしお,[n],"[table salt, small plate]"
@@ -5268,7 +5268,7 @@
 5268,1,書林,しょりん,[n],"[vast stock of books, bookstore, bookshop]"
 5269,1,書き残す,かきのこす,"[v5s, vt]","[to leave a note or document behind, to leave half-written, to leave out]"
 5270,1,書類送検,しょるいそうけん,"[n, vs]","[sending documents to a prosecutor, filing charges]"
-5271,,土俵入り,どひょういり,[n],[entrance procession of wrestlers into the ring]
+5271,1,土俵入り,どひょういり,[n],[entrance procession of wrestlers into the ring]
 5272,1,土製,どせい,[n],"[clay, earthen]"
 5273,,土質,どしつ,[n],"[soil, soil quality]"
 5274,1,社内報,しゃないほう,[n],[company newsletter]
@@ -5280,9 +5280,9 @@
 5280,1,社交界,しゃこうかい,[n],[high society]
 5281,1,社風,しゃふう,[n],"[corporate culture, company climate or spirit, the way a company does things]"
 5282,,社務,しゃむ,[n],"[business affairs of a company, clerical business of a Shinto shrine]"
-5283,,社章,しゃしょう,[n],[company badge]
+5283,1,社章,しゃしょう,[n],[company badge]
 5284,1,社業,しゃぎょう,[n],[company's business]
-5285,,石山,いしやま,[n],[stony mountain]
+5285,1,石山,いしやま,[n],[stony mountain]
 5286,1,石灰岩,せっかいがん,[n],[limestone]
 5287,1,石造り,いしづくり,[n],[(made of) stone]
 5288,1,石組み,いしぐみ,[n],[arrangement of stones in a garden]
@@ -5300,7 +5300,7 @@
 5300,,真砂,まさご,[n],[sand]
 5301,,真夏日,まなつび,[n],[day on which the temperature exceeds 30 degrees Centigrade]
 5302,,至上命令,しじょうめいれい,[n],"[categorical imperative, overriding necessity]"
-5303,,珍事,ちんじ,[n],"[strange occurrence, unusual occurrence, unexpected occurrence]"
+5303,1,珍事,ちんじ,[n],"[strange occurrence, unusual occurrence, unexpected occurrence]"
 5304,,診察室,しんさつしつ,[n],[examining room]
 5305,1,身支度,みじたく,"[n, vs]","[dress, outfit, getup, to dress oneself, to outfit oneself]"
 5306,1,身売り,みうり,"[n, vs]",[selling oneself (into bondage) (esp. for prostitutes)]
@@ -5314,7 +5314,7 @@
 5314,1,勝ち名乗り,かちなのり,[n],[being declared the winner of a bout]
 5315,1,勝負師,しょうぶし,[n],"[gambler, risk taker]"
 5316,1,勝ち残る,かちのこる,"[v5r, vi]",[to win and advance to the next round]
-5317,,勝ち進む,かちすすむ,"[v5m, vi]",[to win and advance to the next round]
+5317,1,勝ち進む,かちすすむ,"[v5m, vi]",[to win and advance to the next round]
 5318,1,騰勢,とうせい,[n],[upward trend]
 5319,1,昇華,しょうか,"[n, vs]",[sublimation]
 5320,1,乗務,じょうむ,"[n, vs]",[doing transport-related work]
@@ -5350,7 +5350,7 @@
 5350,,病虫害,びょうちゅうがい,[n],[(crop) damage from disease and harmful insects]
 5351,1,病変,びょうへん,[n],"[lesion, pathological change]"
 5352,1,病害,びょうがい,[n],[(crop) damage owing to disease or blight]
-5353,,病患,びょうかん,[n],"[sickness, disease]"
+5353,1,病患,びょうかん,[n],"[sickness, disease]"
 5354,1,病態,びょうたい,[n],"[patient's condition, pathology]"
 5355,1,並木道,なみきみち,[n],"[avenue, boulevard, tree-lined street]"
 5356,,百選,ひゃくせん,"[n-suf, n]","[top hundred, hundred best]"
@@ -5369,7 +5369,7 @@
 5369,1,対校,たいこう,"[n, vs]",[pertaining to school]
 5370,,汗水,あせみず,[n],[sweat]
 5371,1,建て売り,たてうり,"[n, vs]",[constructing and selling a ready-built house]
-5372,,建値,たてね,[n],"[official market quotations, exchange rates]"
+5372,1,建値,たてね,[n],"[official market quotations, exchange rates]"
 5373,1,寒冷前線,かんれいぜんせん,[n],[cold front]
 5374,1,寒椿,かんつばき,[n],[camellia-like plant native to China]
 5375,1,寒暖,かんだん,[n],"[heat and cold, (extremes of) temperature]"
@@ -5392,10 +5392,10 @@
 5392,1,湖底,こてい,"[n, adj-no]",[bottom of a lake]
 5393,1,湖岸,こがん,"[n, adj-no]","[lakeshore, lakeside]"
 5394,,仮想敵国,かそうてきこく,[n],[hypothetical or imaginary enemy]
-5395,,家父,かふ,[n],[one's father]
+5395,1,家父,かふ,[n],[one's father]
 5396,,家政学,かせいがく,[n],"[home economics, domestic science]"
 5397,1,処世,しょせい,[n],[conduct]
-5398,,車代,くるまだい,[n],"[carfare, cartage fee, honorarium]"
+5398,1,車代,くるまだい,[n],"[carfare, cartage fee, honorarium]"
 5399,,車券,しゃけん,[n],[bike-race (betting) ticket]
 5400,1,車間距離,しゃかんきょり,[n],[distance between two trains or vehicles]
 5401,1,下味,したあじ,[n],[seasoning of food]
@@ -5434,18 +5434,18 @@
 5434,1,物量,ぶつりょう,[n],[amount of material resources]
 5435,,物種,ものだね,[n],"[origin, fundamental element]"
 5436,,文人,ぶんじん,[n],"[person of letters, literary person]"
-5437,,文士,ぶんし,[n],"[man of letters, literary man]"
+5437,1,文士,ぶんし,[n],"[man of letters, literary man]"
 5438,1,文化映画,ぶんかえいが,[n],[cultural film]
 5439,1,文字盤,もじばん,[n],"[dial (on timepiece, meter, etc.), letter board (e.g. on typewriter, writing aide for the disabled, etc.), character board]"
 5440,,文学的,ぶんがくてき,[adj-na],[literary]
 5441,1,文典,ぶんてん,[n],[grammar]
-5442,,文明開化,ぶんめいかいか,[n],[Japan's Westernization movement during the Meiji era (Westernisation)]
+5442,1,文明開化,ぶんめいかいか,[n],[Japan's Westernization movement during the Meiji era (Westernisation)]
 5443,1,文物,ぶんぶつ,[n],[(the products of) culture or civilization (civilisation)]
 5444,,文理,ぶんり,[n],"[literature and science, context, (line of) reasoning]"
 5445,1,文集,ぶんしゅう,[n],[anthology]
 5446,1,米食,べいしょく,[n],[rice-based or centered diet (centred)]
 5447,,尾花,おばな,[n],[Japanese pampas grass]
-5448,,火事場,かじば,[n],[scene of a fire]
+5448,1,火事場,かじば,[n],[scene of a fire]
 5449,1,火消し,ひけし,[n],"[extinguishing a fire, (Edo-period) fireman]"
 5450,1,門戸開放政策,もんこかいほうせいさく,[n],[open door policy]
 5451,,門外,もんがい,[n],"[outside a gate, beyond one's area of expertise]"
@@ -5462,7 +5462,7 @@
 5462,1,自重,じじゅう,[n],[weight of an (unloaded) vehicle]
 5463,,自律神経失調症,じりつしんけいしっちょうしょう,[n],[autonomic ataxia]
 5464,1,自虐,じぎゃく,[n],"[masochism, inflicting damage to oneself]"
-5465,,自動制御,じどうせいぎょ,"[n, adj-no]",[automatic control]
+5465,1,自動制御,じどうせいぎょ,"[n, adj-no]",[automatic control]
 5466,,自著,じちょ,[n],[one's own literary work]
 5467,1,自責点,じせきてん,[n],[an earned run]
 5468,1,自問自答,じもんじとう,"[n, vs]","[answering one's own question, wondering to oneself, soliloquizing, soliloquising]"
@@ -5478,7 +5478,7 @@
 5478,1,一工夫,ひとくふう,"[n, vs]","[contrivance, bit of fiddling, little ingenuity, bit more (e.g. food)]"
 5479,1,一次産品,いちじさんぴん,[n],[primary products]
 5480,,一次産業,いちじさんぎょう,[n],[primary industry]
-5481,,一苦労,ひとくろう,"[n, vs]","[a hard time, pains]"
+5481,1,一苦労,ひとくろう,"[n, vs]","[a hard time, pains]"
 5482,1,一浪,いちろう,"[n, vs]",[failing college entrance exams and retaking them a year later]
 5483,,一樹,いちじゅ,[n],"[one tree, a tree]"
 5484,1,開店休業,かいてんきゅうぎょう,[n],"[open, but transacting no business at all]"
@@ -5488,7 +5488,7 @@
 5488,1,付き添い看護婦,つきそいかんごふ,[n],[private nurse]
 5489,,腐葉土,ふようど,[n],"[humus, leaf mold, leaf mould]"
 5490,1,蜂起,ほうき,"[n, vs]","[uprising, revolt]"
-5491,,邦字,ほうじ,[n],"[Japanese characters, kanji and kana]"
+5491,1,邦字,ほうじ,[n],"[Japanese characters, kanji and kana]"
 5492,,棒引き,ぼうびき,"[n, vs]","[cancellation, writing off (a debt)]"
 5493,1,認容,にんよう,"[n, vs]","[acknowledgement, acknowledgment]"
 5494,1,泥仕合,どろじあい,[n],"[mudslinging, smear campaign]"
@@ -5536,7 +5536,7 @@
 5536,1,修正主義,しゅうせいしゅぎ,"[n, adj-no]",[revisionism]
 5537,,適正価格,てきせいかかく,[n],[fair or reasonable price]
 5538,,適地,てきち,[n],[suitable place]
-5539,,適役,てきやく,[n],[suitable post or role]
+5539,1,適役,てきやく,[n],[suitable post or role]
 5540,1,適性検査,てきせいけんさ,[n],[aptitude test]
 5541,1,敵地,てきち,[n],"[enemy territory, hostile place]"
 5542,1,敵性,てきせい,[n],[inimical character]
@@ -5571,7 +5571,7 @@
 5571,,論集,ろんしゅう,[n],[treatise or essay collection]
 5572,1,論壇,ろんだん,[n],"[rostrum, the world of criticism]"
 5573,,類例,るいれい,[n],"[similar instance, similar case, parallel case, analogy]"
-5574,,類書,るいしょ,[n],[similar books]
+5574,1,類書,るいしょ,[n],[similar books]
 5575,1,訳文,やくぶん,[n],"[a translation, translated sentence]"
 5576,1,訳詞,やくし,[n],[translated text]
 5577,1,訳詩,やくし,[n],[translated poem]
@@ -5639,7 +5639,7 @@
 5639,1,郵便切手,ゆうびんきって,[n],[postage stamp]
 5640,1,郵便受け,ゆうびんうけ,[n],"[mailbox, letter box, letterbox, mail slot]"
 5641,1,砲丸投げ,ほうがんなげ,[n],[the shot put]
-5642,,砲台,ほうだい,[n],"[(gun) battery, fort]"
+5642,1,砲台,ほうだい,[n],"[(gun) battery, fort]"
 5643,1,腹式呼吸,ふくしきこきゅう,[n],[abdominal breathing]
 5644,1,宝刀,ほうとう,[n],[treasured sword]
 5645,,宝冠,ほうかん,[n],"[diadem, jeweled crown]"
@@ -5667,8 +5667,8 @@
 5667,,精神鑑定,せいしんかんてい,"[n, vs]",[psychiatric examination]
 5668,,精霊,しょうりょう,[n],[spirit of the deceased]
 5669,,請負業,うけおいぎょう,[n],[the contracting business]
-5670,,平和部隊,へいわぶたい,[n],[the Peace Corps]
-5671,,名人芸,めいじんげい,[n],[masterful performance]
+5670,1,平和部隊,へいわぶたい,[n],[the Peace Corps]
+5671,1,名人芸,めいじんげい,[n],[masterful performance]
 5672,,名山,めいざん,[n],[famous mountain]
 5673,1,名句,めいく,[n],"[famous saying, noted haiku]"
 5674,1,名目賃金,めいもくちんぎん,[n],[nominal wages]
@@ -5728,12 +5728,12 @@
 5728,1,言い逃れ,いいのがれ,[n],"[evasion, excuse, subterfuge]"
 5729,1,言い値,いいね,[n],[the asking price]
 5730,,言い換え,いいかえ,"[n, vs]",[putting in other words]
-5731,,言語障害,げんごしょうがい,"[n, adj-no]","[speech impediment, speech disorder]"
+5731,1,言語障害,げんごしょうがい,"[n, adj-no]","[speech impediment, speech disorder]"
 5732,,基数,きすう,[n],"[cardinal number, base, radix]"
 5733,,基礎控除,きそこうじょ,[n],[basic or standard deduction]
 5734,1,期成同盟,きせいどうめい,[n],[association formed to carry out an objective]
 5735,,棋風,きふう,[n],[one's style of playing shogi or go]
-5736,,旗本,はたもと,[n],"[shogunal vassal, direct retainer of a shogun]"
+5736,1,旗本,はたもと,[n],"[shogunal vassal, direct retainer of a shogun]"
 5737,,器械体操,きかいたいそう,[n],"[apparatus gymnastics, artistic gymnastics]"
 5738,1,安全装置,あんぜんそうち,[n],[safety device]
 5739,1,案内状,あんないじょう,[n],[letter of invitation]
@@ -5745,7 +5745,7 @@
 5745,1,利水,りすい,"[n, adj-no]",[irrigation]
 5746,1,利付債,りつきさい,[n],[interest-bearing bond]
 5747,1,利用価値,りようかち,[n],[utility value]
-5748,,利根,りこん,"[adj-na, n]","[intelligence, cleverness, innate aptitude]"
+5748,1,利根,りこん,"[adj-na, n]","[intelligence, cleverness, innate aptitude]"
 5749,1,歴程,れきてい,[n],[a route or passage]
 5750,1,霊泉,れいせん,[n],[miraculous spring or fountain]
 5751,1,霊場,れいじょう,[n],[sacred ground]
@@ -5765,15 +5765,15 @@
 5765,1,極め付き,きわめつき,[adj-no],"[guaranteed (to be genuine, valuable, etc.), certified (as genuine, valuable, etc.)]"
 5766,1,極彩色,ごくさいしき,[n],"[richly colored, richly coloured]"
 5767,1,極細,ごくぼそ,[n],[superfine]
-5768,,極道,ごくどう,"[adj-na, n]","[wicked, evil, profligate, immoral, wickedness, evildoing, organized crime, yakuza, underworld]"
-5769,,交換条件,こうかんじょうけん,"[n, adj-no]",[bargaining point]
+5768,1,極道,ごくどう,"[adj-na, n]","[wicked, evil, profligate, immoral, wickedness, evildoing, organized crime, yakuza, underworld]"
+5769,1,交換条件,こうかんじょうけん,"[n, adj-no]",[bargaining point]
 5770,1,校風,こうふう,[n],[school tradition]
 5771,,校訓,こうくん,[n],[school precepts]
 5772,,学士院,がくしいん,[n],[Japan Academy]
 5773,1,学外,がくがい,[n],"[outside the school, extramural]"
 5774,1,学用品,がくようひん,[n],[school supplies]
 5775,1,学事,がくじ,[n],[educational affairs]
-5776,,学制,がくせい,[n],[educational or school system]
+5776,1,学制,がくせい,[n],[educational or school system]
 5777,,学術会議,がくじゅつかいぎ,[n],[Japan Science Council]
 5778,1,学務,がくむ,[n],[school affairs]
 5779,,教主,きょうしゅ,"[n, adj-no]",[founder of a religious sect]
@@ -5786,7 +5786,7 @@
 5786,,若木,わかぎ,[n],"[young tree, sapling]"
 5787,1,若い者,わかいもの,"[exp, n]","[young man, young woman, young people, youth, youngsters, young employee, young manservant, young follower]"
 5788,,若武者,わかむしゃ,[n],[young warrior]
-5789,,若宮,わかみや,[n],"[young imperial prince, child of the imperial family, shrine dedicated to a child of the god of the main shrine, newly built shrine (to which a divided tutelary deity has just been transferred)]"
+5789,1,若宮,わかみや,[n],"[young imperial prince, child of the imperial family, shrine dedicated to a child of the god of the main shrine, newly built shrine (to which a divided tutelary deity has just been transferred)]"
 5790,,若菜,わかな,[n],[young greens or herbs]
 5791,1,庭先,にわさき,[n],[in the garden]
 5792,1,挺身隊,ていしんたい,[n],[volunteer corps]
@@ -5805,19 +5805,19 @@
 5805,1,成文,せいぶん,[n],"[written expression, writing]"
 5806,1,成長株,せいちょうかぶ,[n],"[growth stock, person with future promise]"
 5807,1,成魚,せいぎょ,[n],[adult fish]
-5808,,成鳥,せいちょう,[n],[adult bird]
+5808,1,成鳥,せいちょう,[n],[adult bird]
 5809,1,盛り土,もりつち,[n],"[embankment (for road, railway, etc.), raising the ground level, fill]"
 5810,1,盛会,せいかい,[n],[successful meeting]
 5811,1,盛時,せいじ,[n],"[prime of life, era of national prosperity]"
 5812,1,盛期,せいき,[n],[prosperous period]
 5813,1,整理部,せいりぶ,[n],[copyreading department]
 5814,1,神木,しんぼく,[n],"[sacred tree, support pillars of the traditional fire festival bonfires]"
-5815,,神体,しんたい,[n],"[shintai, object of worship believed to contain the spirit of a deity, typically housed in a shrine]"
+5815,1,神体,しんたい,[n],"[shintai, object of worship believed to contain the spirit of a deity, typically housed in a shrine]"
 5816,1,神学校,しんがっこう,[n],"[theological school, seminary]"
 5817,,神前,しんぜん,[n],"[before god, before an altar]"
 5818,1,神格,しんかく,[n],[divinity]
 5819,1,神経学,しんけいがく,[n],[neurology]
-5820,,神頼み,かみだのみ,[n],[entreaty to a deity]
+5820,1,神頼み,かみだのみ,[n],[entreaty to a deity]
 5821,1,紳士的,しんしてき,[adj-na],[gentlemanly]
 5822,1,紳士録,しんしろく,[n],[(who's who) directory]
 5823,,電子顕微鏡,でんしけんびきょう,[n],[electron microscope]
@@ -5891,7 +5891,7 @@
 5891,1,増量,ぞうりょう,"[n, vs]",[increased volume or quantity]
 5892,1,増補,ぞうほ,"[n, vs]",[enlarging a book]
 5893,1,磁力,じりょく,[n],"[magnetism, magnetic force]"
-5894,,伏流,ふくりゅう,"[n, vs]",[subterranean stream]
+5894,1,伏流,ふくりゅう,"[n, vs]",[subterranean stream]
 5895,,婦選,ふせん,[n],[women's suffrage]
 5896,,海山,うみやま,"[adv, n]",[sea and mountains]
 5897,1,海外経済協力基金,かいがいけいざいきょうりょくききん,[n],[Overseas Economic Cooperation Fund]
@@ -5906,7 +5906,7 @@
 5906,1,湯水,ゆみず,[n],"[hot and cold water, abundant item, plentiful item]"
 5907,1,瞠目,どうもく,"[n, vs]",[gazing at (in wonderment)]
 5908,,上伸,じょうしん,"[n, vs]",[rise in market prices]
-5909,,上告審,じょうこくしん,[n],[appeal hearing]
+5909,1,上告審,じょうこくしん,[n],[appeal hearing]
 5910,1,商業銀行,しょうぎょうぎんこう,[n],[commercial bank]
 5911,,良知,りょうち,[n],[intuition]
 5912,1,浪曲,ろうきょく,[n],[recitation of stories accompanied by samisen (called naniwabushi)]
@@ -5914,9 +5914,9 @@
 5914,1,落花生,らっかせい,[n],"[peanut, groundnut]"
 5915,1,落葉樹,らくようじゅ,[n],[deciduous tree]
 5916,1,露天商,ろてんしょう,[n],[stallholder]
-5917,,巨悪,きょあく,[n],"[great evil, consummate villain]"
+5917,1,巨悪,きょあく,[n],"[great evil, consummate villain]"
 5918,,虚実,きょじつ,[n],[truth or falsehood]
-5919,,打ち上げ花火,うちあげはなび,[n],[skyrocket (firework)]
+5919,1,打ち上げ花火,うちあげはなび,[n],[skyrocket (firework)]
 5920,1,打ち止め,うちどめ,[n],[end (of an entertainment or match)]
 5921,1,打ち掛け,うちかけ,[n],"[women's bridal robe with trailing skirts worn over a kimono, ending play for the day, leaving a game unfinished (esp. Go)]"
 5922,1,裲襠,うちかけ,[n],[women's bridal robe with trailing skirts worn over a kimono]
@@ -5974,7 +5974,7 @@
 5974,1,母艦,ぼかん,[n],[mother ship]
 5975,1,梅雨前線,ばいうぜんせん,[n],[seasonal rain front]
 5976,1,梅園,ばいえん,[n],[plum garden or orchard]
-5977,,牧舎,ぼくしゃ,[n],"[barn, stable]"
+5977,1,牧舎,ぼくしゃ,[n],"[barn, stable]"
 5978,1,当代,とうだい,"[n-adv, n-t, adj-no]","[the present age, these days, (present) head of the family]"
 5979,,当主,とうしゅ,[n],[(present) head of a family]
 5980,,当たり年,あたりどし,[n],[good or lucky year]
@@ -5991,7 +5991,7 @@
 5991,1,大凶,だいきょう,[n],"[terrible luck, atrocity]"
 5992,1,大引け,おおびけ,[n],"[closing (a market or trading session), closing price]"
 5993,1,大本山,だいほんざん,[n],[head temple of a Buddhist sect]
-5994,,大本営,だいほんえい,[n],[imperial headquarters]
+5994,1,大本営,だいほんえい,[n],[imperial headquarters]
 5995,,大広間,おおひろま,[n],[banquet or reception hall]
 5996,1,大目,おおめ,"[adj-na, n]","[large eyes, magnanimity]"
 5997,1,大任,たいにん,[n],"[important task, heavy responsibility]"
@@ -6007,10 +6007,10 @@
 6007,1,大帝,たいてい,[n],"[great emperor, .. the Great]"
 6008,1,大政,たいせい,[n],"[sovereign power, the reins of government]"
 6009,1,大食,たいしょく,"[n, vs, adj-no]",[gluttony]
-6010,,大荒れ,おおあれ,"[adj-na, n]","[great storm, agitation, upheaval]"
+6010,1,大荒れ,おおあれ,"[adj-na, n]","[great storm, agitation, upheaval]"
 6011,,大部屋,おおべや,[n],"[large room, actors' common-use room, hospital room or ward]"
 6012,1,大挙,たいきょ,"[n-adv, n-t]","[in force, in great numbers]"
-6013,,大著,たいちょ,[n],"[voluminous work, bulky volume, tome, great work, masterpiece, magnum opus]"
+6013,1,大著,たいちょ,[n],"[voluminous work, bulky volume, tome, great work, masterpiece, magnum opus]"
 6014,1,大脳皮質,だいのうひしつ,[n],[cerebral cortex]
 6015,,大御所,おおごしょ,[n],"[leading figure, influential figure, mogul]"
 6016,1,大衆化,たいしゅうか,"[n, vs]","[popularization, popularisation]"
@@ -6030,7 +6030,7 @@
 6030,1,多方面,たほうめん,"[adj-na, n]","[many-sided, multifarious, versatility]"
 6031,1,多色,たしょく,"[n, adj-no]","[many colors, many colours]"
 6032,,多雨,たう,"[n, adj-no]",[heavy rain]
-6033,,多発性,たはつせい,[n],"[multiple, poly-]"
+6033,1,多発性,たはつせい,[n],"[multiple, poly-]"
 6034,1,舌鼓,したつづみ,[n],[smacking one's lips]
 6035,,舌触り,したざわり,[n],[texture of food]
 6036,,値崩れ,ねくずれ,"[n, vs]",[price collapse]
@@ -6041,7 +6041,7 @@
 6041,,置き傘,おきがさ,[n],[spare umbrella kept (at work) in the event of a sudden shower]
 6042,,特別配当金,とくべつはいとうきん,[n],[special dividend]
 6043,1,特注,とくちゅう,"[n, vs, adj-no]","[special order (goods), custom (made), bespoke]"
-6044,,特高,とっこう,[n],"[Special Higher Police (1911-1945), police unit controlling political thought and expression]"
+6044,1,特高,とっこう,[n],"[Special Higher Police (1911-1945), police unit controlling political thought and expression]"
 6045,1,特進,とくしん,"[n, vs]",[special promotion (in rank or grade)]
 6046,,特装,とくそう,[n],"[specially equipped, customized, customised]"
 6047,1,差し入れ,さしいれ,"[n, vs]","[insertion, letter drop, things sent to a prisoner, supply of provisions, refreshments, etc. to someone carrying out a task]"
@@ -6072,13 +6072,13 @@
 6072,,男声,だんせい,[n],[male voice]
 6073,1,寝技,ねわざ,[n],"[(in wrestling or judo) pinning technique, underhanded dealings]"
 6074,1,潜在意識,せんざいいしき,"[n, adj-no]",[subconscious (awareness)]
-6075,,心身症,しんしんしょう,[n],[psychosomatic illness]
+6075,1,心身症,しんしんしょう,[n],[psychosomatic illness]
 6076,1,心苦しい,こころぐるしい,[adj-i],"[painful, being sorry, feeling sorry]"
 6077,1,心性,しんせい,[n],"[mind, disposition, nature]"
 6078,,心室,しんしつ,"[n, adj-no]",[ventricle]
 6079,1,心神喪失,しんしんそうしつ,"[n, adj-no]",[of unsound mind]
 6080,,心根,こころね,[n],"[feelings, nature, disposition]"
-6081,,心憎い,こころにくい,[adj-i],"[refined, admirable, superb]"
+6081,1,心憎い,こころにくい,[adj-i],"[refined, admirable, superb]"
 6082,1,心機一転,しんきいってん,"[n, vs]","[changing one's attitude, turning over a new leaf, getting a fresh start]"
 6083,1,心頭,しんとう,[n],"[heart, mind]"
 6084,,養護教諭,ようごきょうゆ,[n],"[school nurse, nurse-teacher, health teacher]"
@@ -6088,7 +6088,7 @@
 6088,1,洋装,ようそう,"[n, vs]","[Western clothing, Western binding]"
 6089,,営林局,えいりんきょく,[n],[regional forestry office]
 6090,1,営営,えいえい,"[adj-na, adv, n]","[hard, unceasing]"
-6091,,街頭募金,がいとうぼきん,[n],[streetside fundraising]
+6091,1,街頭募金,がいとうぼきん,[n],[streetside fundraising]
 6092,1,理性的,りせいてき,[adj-na],[rational]
 6093,1,理数,りすう,[n],[science and mathematics]
 6094,1,理詰め,りづめ,"[n, adj-no]","[reasoning, logic, persuasion]"
@@ -6115,16 +6115,16 @@
 6115,1,張り合い,はりあい,[n],"[competition, rivalry, something worth doing]"
 6116,1,常套手段,じょうとうしゅだん,[n],"[one's habitual practice, usual measure, old trick]"
 6117,1,常備,じょうび,"[n, vs, adj-no]","[standing, reserve, always having ready]"
-6118,,常温,じょうおん,[n],"[normal temperature, average temperature, fixed temperature]"
+6118,1,常温,じょうおん,[n],"[normal temperature, average temperature, fixed temperature]"
 6119,1,常道,じょうどう,[n],"[normal practice, proper practice]"
 6120,1,作画,さくが,"[n, vs]","[drawing pictures, taking photographs]"
-6121,,作況,さっきょう,[n],"[crops, quality]"
+6121,1,作況,さっきょう,[n],"[crops, quality]"
 6122,1,作為的,さくいてき,[adj-na],"[intentional, contrived]"
 6123,1,作劇,さくげき,"[n, vs]",[playwriting]
 6124,1,所収,しょしゅう,[n],[included or carried (in a publication)]
 6125,,所行,しょぎょう,[n],"[deed, act]"
 6126,1,所論,しょろん,[n],[one's opinion]
-6127,,初見,しょけん,[n],"[seeing for the first time, first sight]"
+6127,1,初見,しょけん,[n],"[seeing for the first time, first sight]"
 6128,,初等教育,しょとうきょういく,[n],[elementary education]
 6129,1,初診,しょしん,[n],[initial medical examination]
 6130,1,初顔合わせ,はつかおあわせ,[n],"[first meeting, first contest between]"
@@ -6132,7 +6132,7 @@
 6132,,床上,ゆかうえ,[n],"[on a floor, above floor level]"
 6133,1,強行軍,きょうこうぐん,[n],"[forced march, doing something on a very strict schedule]"
 6134,,強肩,きょうけん,"[n, adj-no]",[strong throwing arm]
-6135,,強迫観念,きょうはくかんねん,"[n, adj-no]","[obsession, unreasonable but compulsive idea]"
+6135,1,強迫観念,きょうはくかんねん,"[n, adj-no]","[obsession, unreasonable but compulsive idea]"
 6136,1,知日,ちにち,[n],"[pro-Japanese, Japanophile]"
 6137,,知育,ちいく,[n],[intellectual training]
 6138,1,知恵袋,ちえぶくろ,[n],"[bag full of wisdom, bag containing all the world's wisdom, person who is a fountain of wisdom, brains (of a company)]"
@@ -6147,7 +6147,7 @@
 6147,1,単勝,たんしょう,[n],[winning at the races]
 6148,1,弾き語り,ひきがたり,[n],[singing to one's own accompaniment]
 6149,,戦中派,せんちゅうは,[n],[the war generation]
-6150,,戦史,せんし,[n],"[military history, military annals]"
+6150,1,戦史,せんし,[n],"[military history, military annals]"
 6151,1,戦争犯罪人,せんそうはんざいにん,[n],[war criminal]
 6152,1,戦敗,せんぱい,[n],[defeat in war]
 6153,,戦傷,せんしょう,[n],[war wound]
@@ -6161,11 +6161,11 @@
 6161,1,脱党,だっとう,"[n, vs]",[defection from or leaving a (political) party]
 6162,,税目,ぜいもく,[n],[items of taxation]
 6163,1,税源,ぜいげん,[n],"[tax source, source of taxation revenue, taxable item]"
-6164,,説明文,せつめいぶん,[n],[explanatory note]
+6164,1,説明文,せつめいぶん,[n],[explanatory note]
 6165,,説経,せっきょう,"[n, vs]",[lecture on the sutras]
 6166,1,瀬踏み,せぶみ,"[n, vs]","[sounding out, measuring the depths (of a river)]"
 6167,1,化学調味料,かがくちょうみりょう,[n],"[chemical seasoning (esp. monosodium glutamate), MSG]"
-6168,,眼中,がんちゅう,[n],[consideration]
+6168,1,眼中,がんちゅう,[n],[consideration]
 6169,,眼底,がんてい,[n],[fundus of the eye]
 6170,,眼前,がんぜん,[n],[before one's eyes]
 6171,1,銀製,ぎんせい,"[n, adj-no]",[made of silver]
@@ -6199,10 +6199,10 @@
 6199,1,高年,こうねん,[n],[old age]
 6200,1,高利,こうり,[n],[high interest rate]
 6201,1,高飛び込み,たかとびこみ,[n],[the high dive]
-6202,,高点,こうてん,[n],[high score]
+6202,1,高点,こうてん,[n],[high score]
 6203,1,高等専門学校,こうとうせんもんがっこう,[n],[technical college]
 6204,1,高等裁判所,こうとうさいばんしょ,[n],[High Court]
-6205,,高緯度,こういど,[n],[high latitudes]
+6205,1,高緯度,こういど,[n],[high latitudes]
 6206,,高嶺,たかね,[n],[high peak]
 6207,1,県人,けんじん,[n],[native of a prefecture]
 6208,1,県人会,けんじんかい,[n],[association of people from the same prefecture]
@@ -6212,7 +6212,7 @@
 6212,,魚河岸,うおがし,[n],[riverside fish market]
 6213,1,漁夫の利,ぎょふのり,"[exp, n]",[profiting while others fight]
 6214,,漁具,ぎょぐ,[n],[fishing tackle]
-6215,,汚れ役,よごれやく,[n],"[role of a villain (film, drama, etc.), bad-guy role, social outcast role]"
+6215,1,汚れ役,よごれやく,[n],"[role of a villain (film, drama, etc.), bad-guy role, social outcast role]"
 6216,,慣習法,かんしゅうほう,[n],"[common law, customary law (in international law)]"
 6217,,川尻,かわじり,[n],"[mouth of a river, lower stream]"
 6218,1,川風,かわかぜ,[n],[breeze off a river]
@@ -6229,7 +6229,7 @@
 6229,,進駐軍,しんちゅうぐん,[n],[occupying forces (esp. of the Allies in Japan after World War II)]
 6230,,雑則,ざっそく,[n],[miscellaneous rules]
 6231,1,雑食,ざっしょく,"[adj-no, vs]",[omnivorous]
-6232,,雑穀,ざっこく,[n],"[assorted grains, cereals, millet]"
+6232,1,雑穀,ざっこく,[n],"[assorted grains, cereals, millet]"
 6233,1,三回忌,さんかいき,[n],[second anniversary of a death]
 6234,,三冠王,さんかんおう,[n],[winner of triple crown]
 6235,,三段目,さんだんめ,[n],[third lowest division]
@@ -6244,7 +6244,7 @@
 6244,,臨戦,りんせん,[n],[preparing for action or battle]
 6245,1,屋形船,やかたぶね,[n],"[houseboat, pleasure boat (large, roofed)]"
 6246,1,宇宙通信,うちゅうつうしん,[n],[space communication]
-6247,,雨後,うご,"[n-adv, n-t]",[after rain]
+6247,1,雨後,うご,"[n-adv, n-t]",[after rain]
 6248,1,時日,じじつ,[n],"[date, time]"
 6249,1,時世,じせい,[n],[the times]
 6250,1,時代物,じだいもの,[n],"[antique, historical object, pre-Meiji period drama, period piece]"
@@ -6261,7 +6261,7 @@
 6261,1,耐性菌,たいせいきん,[n],[antibiotic-resistant bacteria]
 6262,,仕向け,しむけ,[n],"[delivery, sending, treatment]"
 6263,1,事件記者,じけんきしゃ,[n],[police reporter]
-6264,,司法研修所,しほうけんしゅうじょ,[n],[Judicial Research and Training Institute]
+6264,1,司法研修所,しほうけんしゅうじょ,[n],[Judicial Research and Training Institute]
 6265,,司法書士,しほうしょし,[n],"[judicial scrivener, judicial clerk, person qualified to prepare legal documents, handle real-estate transactions, etc.]"
 6266,1,息の根,いきのね,[n],[life]
 6267,1,色柄,いろがら,[n],"[colored pattern, coloured pattern]"
@@ -6294,10 +6294,10 @@
 6294,1,離れ離れ,はなればなれ,"[adj-na, adj-no, n]","[separate, scattered, apart, atwain]"
 6295,,乱打,らんだ,"[n, vs]","[hitting, battering]"
 6296,,乱軍,らんぐん,[n],[melee]
-6297,,乱戦,らんせん,[n],[melee]
+6297,1,乱戦,らんせん,[n],[melee]
 6298,,乱読,らんどく,"[n, vs]","[indiscriminate reading, reading unsystematically, desultory reading]"
 6299,1,本丸,ほんまる,[n],"[inner citadel, core, center, centre, focus, crux]"
-6300,,本元,ほんもと,[n],"[origin, main branch of family]"
+6300,1,本元,ほんもと,[n],"[origin, main branch of family]"
 6301,1,本庁,ほんちょう,[n],"[central government office, this office]"
 6302,1,本立て,ほんたて,[n],[bookends]
 6303,1,本決まり,ほんぎまり,[n],"[definite decision, final decision]"
@@ -6313,7 +6313,7 @@
 6313,1,選良,せんりょう,[n],"[member of parliament, the elite]"
 6314,1,選書,せんしょ,[n],"[anthology, selection of books]"
 6315,1,選評,せんぴょう,[n],[selection and commentary (on literary texts or poems)]
-6316,,算入,さんにゅう,"[n, vs]","[factoring in, including]"
+6316,1,算入,さんにゅう,"[n, vs]","[factoring in, including]"
 6317,1,代替わり,だいがわり,[n],"[taking over (e.g. store or family's headship), subrogation, substitution of one person for another (usu. a creditor)]"
 6318,1,袋物,ふくろもの,[n],[bags and purses (handbags)]
 6319,1,貸し借り,かしかり,"[n, vs]",[lending and borrowing]
@@ -6338,12 +6338,12 @@
 6338,1,復配,ふくはい,"[n, vs]",[resumption of dividends]
 6339,1,複線,ふくせん,[n],"[double track, two-track line]"
 6340,1,報国,ほうこく,[n],[patriotism]
-6341,,弱含み,よわふくみ,[n],[bearish (stock market)]
+6341,1,弱含み,よわふくみ,[n],[bearish (stock market)]
 6342,1,脳神経,のうしんけい,[n],"[cranial nerves, cerebral nerves]"
 6343,1,脳挫傷,のうざしょう,[n],[cerebral contusion]
 6344,1,玉音,ぎょくおん,[n],"[the Emperor's voice, beautiful voice, beautiful sound]"
 6345,1,煮汁,にじる,[n],[broth]
-6346,,赤身,あかみ,"[n, adj-no]","[lean meat, lean tuna, heartwood]"
+6346,1,赤身,あかみ,"[n, adj-no]","[lean meat, lean tuna, heartwood]"
 6347,1,生存競争,せいぞんきょうそう,[n],[struggle for existence]
 6348,,生き地獄,いきじごく,[n],"[hell on earth, living hell]"
 6349,1,生き別れ,いきわかれ,[n],[lifelong separation]
@@ -6358,7 +6358,7 @@
 6358,1,経国,けいこく,[n],"[government, administration]"
 6359,,経堂,きょうどう,[n],[sutra library]
 6360,1,経験的,けいけんてき,[adj-na],"[experiential, empirical, experimental]"
-6361,,撚糸,ねんし,[n],"[twisted thread or yarn, twining of thread or yarn]"
+6361,1,撚糸,ねんし,[n],"[twisted thread or yarn, twining of thread or yarn]"
 6362,1,難曲,なんきょく,[n],[difficult musical piece]
 6363,1,難事,なんじ,[n],[difficulty]
 6364,1,難燃加工,なんねんかこう,[n],[fireproof]
@@ -6396,11 +6396,11 @@
 6396,,好球,こうきゅう,[n],[good pitch]
 6397,1,好戦,こうせん,[n],[belligerence]
 6398,,好敵手,こうてきしゅ,[n],[worthy rival or opponent]
-6399,,休刊日,きゅうかんび,[n],[newspaper holiday]
+6399,1,休刊日,きゅうかんび,[n],[newspaper holiday]
 6400,1,休耕,きゅうこう,"[n, vs]",[lying fallow]
 6401,1,腰高,こしだか,"[adj-na, n]","[overbearing, unstable wrestling stance]"
 6402,1,腰椎,ようつい,"[n, adj-no]","[lumbar vertebra, lumbar vertebrae]"
-6403,,腰縄,こしなわ,[n],"[leash, rope tied round prisoner's waists]"
+6403,1,腰縄,こしなわ,[n],"[leash, rope tied round prisoner's waists]"
 6404,1,約束手形,やくそくてがた,[n],[promissory note]
 6405,,角地,かどち,[n],[corner lot]
 6406,1,角質,かくしつ,"[n, adj-no]","[keratin, corneum, cuticle, collagen, horny substance]"
@@ -6453,12 +6453,12 @@
 6453,1,白馬,しろうま,[n],"[white horse, unrefined sake]"
 6454,,白装束,しろしょうぞく,[n],[white clothing]
 6455,1,白銀,はくぎん,[n],"[silver, snow]"
-6456,,夫唱婦随,ふしょうふずい,[n],[a wife should do her husband's bidding]
+6456,1,夫唱婦随,ふしょうふずい,[n],[a wife should do her husband's bidding]
 6457,1,軟投,なんとう,[n],[soft pitch]
 6458,1,雪上,せつじょう,[n],[on the snow]
 6459,1,雪原,せつげん,[n],[snow field]
 6460,1,座員,ざいん,[n],[member of a theatrical troupe]
-6461,,刈り取り,かりとり,[n],"[harvesting, reaping]"
+6461,1,刈り取り,かりとり,[n],"[harvesting, reaping]"
 6462,1,芸文,げいぶん,[n],[art and literature]
 6463,,芸域,げいいき,[n],[range of skills]
 6464,,変わり身,かわりみ,[n],"[change of attitude (stance, position), lightness of foot, ability to dodge out of the way of an attack]"
@@ -6474,7 +6474,7 @@
 6474,1,早苗,さなえ,[n],[rice seedlings]
 6475,,早変わり,はやがわり,[n],[quick change]
 6476,1,早婚,そうこん,[n],"[early marriage, marrying young]"
-6477,,早場米,はやばまい,[n],"[rice from an early harvest, early rice]"
+6477,1,早場米,はやばまい,[n],"[rice from an early harvest, early rice]"
 6478,1,早道,はやみち,[n],[shortcut]
 6479,,降圧剤,こうあつざい,[n],"[drug to lower blood pressure, antihypertensive]"
 6480,1,呼び込み,よびこみ,"[n, vs]","[barker, tout, hawker, someone who attempts to attract patrons to entertainment events, shops, bars, and such, by exhorting passing public, calling out to potential customers]"
@@ -6482,7 +6482,7 @@
 6482,1,撃ち合い,うちあい,[n],"[gunfight, exchange of shots, firefight]"
 6483,,辻堂,つじどう,[n],[wayside shrine]
 6484,,辻説法,つじせっぽう,[n],[street preaching]
-6485,,送り付ける,おくりつける,"[v1, vt]",[to send]
+6485,1,送り付ける,おくりつける,"[v1, vt]",[to send]
 6486,1,駆け巡る,かけめぐる,"[v5r, vi]","[to run about, to rush about]"
 6487,1,間引く,まびく,"[v5k, vt]","[to thin out, to cull, to run on a curtailed schedule]"
 6488,,切り返す,きりかえす,"[v5s, vt]","[to slash back, to strike back, to counterattack, to retort, to cut the wheel, to perform a twisting backward knee trip]"
@@ -6510,7 +6510,7 @@
 6510,1,洗い直す,あらいなおす,"[v5s, vt]","[to wash again, to reconsider]"
 6511,,打ち立てる,うちたてる,"[v1, vt]","[to establish, to formulate]"
 6512,1,出し切る,だしきる,"[v5r, vt]","[to use up, to do one's best]"
-6513,,練り直す,ねりなおす,"[v5s, vt]","[to knead again, to rework, to revise, to polish]"
+6513,1,練り直す,ねりなおす,"[v5s, vt]","[to knead again, to rework, to revise, to polish]"
 6514,1,置き忘れる,おきわすれる,"[v1, vt]","[to leave behind, to misplace, to forget]"
 6515,1,左四つ,ひだりよつ,[n],[hold in which both wrestlers obtain an underarm grip with the left hand and an over-arm grip with the right]
 6516,1,差し迫る,さしせまる,"[v5r, vi]","[to be urgent, to be pressing, to be imminent]"
@@ -6520,7 +6520,7 @@
 6520,1,担ぎ出す,かつぎだす,"[v5s, vt]","[to carry something out of a place, to elevate (someone) to a high position, to convince someone to accept a post (esp. through flattery), to mention something, to broach a topic, to bring up (a subject), to raise (an issue), to mention]"
 6521,1,耳慣れる,みみなれる,"[v1, vi]",[to be something familiar]
 6522,1,息詰まる,いきづまる,[v5r],"[to be breathtaking, to be stifling]"
-6523,,繰り入れる,くりいれる,"[v1, vt]","[to transfer (esp. money in), to add (esp. money to an account), to reel in (e.g. net, fishing line)]"
+6523,1,繰り入れる,くりいれる,"[v1, vt]","[to transfer (esp. money in), to add (esp. money to an account), to reel in (e.g. net, fishing line)]"
 6524,,繰り上がる,くりあがる,"[v5r, vi]","[to move up (e.g. date, rank, order), to be advanced, to be carried (of a number in addition)]"
 6525,,乱れ飛ぶ,みだれとぶ,"[v5b, vi]",[to fly wildly about]
 6526,,貸し付ける,かしつける,"[v1, vt]","[to lend, to loan]"
@@ -6542,7 +6542,7 @@
 6542,1,植栽,しょくさい,"[n, vs]",[raising trees and plants]
 6543,1,消音,しょうおん,"[n, vs, adj-no]","[silencing (e.g. machine), muffling, muting (e.g. TV)]"
 6544,1,焼身,しょうしん,"[n, vs]","[burning oneself (to death), self-immolation]"
-6545,,生薬,しょうやく,[n],"[crude drug, crude medicine, natural remedy]"
+6545,1,生薬,しょうやく,[n],"[crude drug, crude medicine, natural remedy]"
 6546,,照り,てり,[n],"[sunshine, dry weather, luster, lustre]"
 6547,,都電,とでん,[n],[Metropolitan Electric Railway]
 6548,,追試,ついし,"[n, vs]",[supplementary examination]
@@ -6581,7 +6581,7 @@
 6581,1,悲しげ,かなしげ,"[adj-na, n]",[seeming sad]
 6582,,川流れ,かわながれ,[n],"[being carried away by a current, drowning in a river, person who drowned in a river, cancellation, standing up, breaking a promise]"
 6583,1,感極まる,かんきわまる,[v5r],[to be overcome with emotion]
-6584,,奇人,きじん,[n],"[queer fellow, odd fellow, eccentric person, crank, oddball, freak]"
+6584,1,奇人,きじん,[n],"[queer fellow, odd fellow, eccentric person, crank, oddball, freak]"
 6585,1,急カーブ,きゅうカーブ,[n],[sharp curve (turn)]
 6586,1,侠客,きょうかく,[n],"[self-styled humanitarian, chivalrous person, persons acting under the pretence of chivalry who formed gangs and engaged in gambling]"
 6587,,技研,ぎけん,[n],[technical research institute]
@@ -6591,7 +6591,7 @@
 6591,1,紅旗,こうき,[n],[Red Flag (Chinese Communist Party bulletin)]
 6592,1,甲骨文,こうこつぶん,[n],[ancient inscriptions of Chinese characters on oracle bones and tortoise shells]
 6593,,港湾局,こうわんきょく,[n],[Port and Harbor Authority]
-6594,,御利益,ごりやく,[n],"[grace (of God), divine favour, blessing, miracle, answer to a prayer, benefit, efficacy]"
+6594,1,御利益,ごりやく,[n],"[grace (of God), divine favour, blessing, miracle, answer to a prayer, benefit, efficacy]"
 6595,1,最たる物,さいたるもの,[n],[the most extreme]
 6596,1,薩長,さっちょう,[n],[Satsuma and Choshu]
 6597,1,左方,さほう,[n],[left side]
@@ -6621,14 +6621,14 @@
 6621,,大喪,たいそう,[n],[Imperial mourning]
 6622,1,拓銀,たくぎん,[n],[Takushoku Bank]
 6623,1,知恵遅れ,ちえおくれ,[n],[mental retardation]
-6624,,中飛,ちゅうひ,[n],"[center fly, centre fly]"
-6625,,散らかった紙屑,ちらかったかみくず,[n],[scattered (littered) paper scraps]
+6624,1,中飛,ちゅうひ,[n],"[center fly, centre fly]"
+6625,1,散らかった紙屑,ちらかったかみくず,[n],[scattered (littered) paper scraps]
 6626,,詰み,つみ,[n],[checkmate]
-6627,,手広く,てびろく,[adv],"[widely, extensively, on an extensive scale]"
+6627,1,手広く,てびろく,[adv],"[widely, extensively, on an extensive scale]"
 6628,,天台宗,てんだいしゅう,[n],[Tendai sect (of Buddhism)]
 6629,1,電算,でんそろ,[n],[electronic calculator combined with a soroban]
 6630,1,倒壊,とうかい,"[n, vs]","[destruction, collapse, crumbling]"
-6631,,研ぎ,とぎ,[n],"[polish, grinding, sharpening]"
+6631,1,研ぎ,とぎ,[n],"[polish, grinding, sharpening]"
 6632,1,嫁ぎ先,とつぎさき,[n],[family a woman has married into]
 6633,1,捕らわれ,とらわれ,[n],"[imprisonment, captive]"
 6634,1,道議会,どうぎかい,[n],[Hokkaido Prefectural Assembly]
@@ -6639,7 +6639,7 @@
 6639,1,慣れ親しむ,なれしたしむ,[v5m],"[to become familiar with, to get used to]"
 6640,1,鈍らす,にぶらす,"[v5s, vt]","[to blunt, to dull, to weaken]"
 6641,1,入塾,にゅうじゅく,"[n, vs]",[entering a private school]
-6642,,根付く,ねづく,"[v5k, vi]","[to take root, to strike]"
+6642,1,根付く,ねづく,"[v5k, vi]","[to take root, to strike]"
 6643,1,熱延,ねつえん,[n],[hot rolling]
 6644,1,飲み過ぎ,のみすぎ,[n],"[overdrinking, excessive drinking]"
 6645,1,弾き,はじき,[n],"[gun, pistol, tiddlywinks, marbles, repellence]"
@@ -6669,7 +6669,7 @@
 6669,,液状化,えきじょうか,"[n, vs]","[liquefaction, liquefy]"
 6670,,脆弱,ぜいじゃく,"[adj-na, n]","[frail, brittle, fragile]"
 6671,1,糠,ぬか,[n],[rice-bran]
-6672,,導入部,どうにゅうぶ,[n],[(musical) introduction]
+6672,1,導入部,どうにゅうぶ,[n],[(musical) introduction]
 6673,1,泊,はく,[ctr],[counter for nights of a stay]
 6674,1,飛,ひ,[n],[rook]
 6675,1,柊,ひいらぎ,[n],"[holly olive (Osmanthus heterophyllus), false holly, holly, spotnape ponyfish (Leiognathus nuchalis)]"
@@ -6687,19 +6687,19 @@
 6687,1,固定票,こていひょう,[n],"[solid (an assured, a safe) vote, solid (assured) support]"
 6688,1,語学力,ごがくりょく,[n],[language ability]
 6689,,交響詩,こうきょうし,[n],[symphonic poem]
-6690,,行政管理庁,ぎょうせいかんりちょう,[n],[Administrative Management Agency]
+6690,1,行政管理庁,ぎょうせいかんりちょう,[n],[Administrative Management Agency]
 6691,1,行政書士,ぎょうせいしょし,[n],"[administrative scrivener, notary public, paralegal qualified to prepare legal documents on administrative matters, e.g. immigration]"
 6692,1,高等科,こうとうか,[n],[advanced course]
 6693,1,獅子舞,ししまい,[n],"[lion dance, traditional dance performed by one or more dancers wearing a guardian lion costume]"
 6694,1,紙吹雪,かみふぶき,[n],"[confetti, ticker tape]"
 6695,1,実質賃金,じっしつちんぎん,[n],[real wages]
-6696,,情緒障害,じょうしょしょうがい,"[n, vs]",[(suffering) an emotional disturbance]
+6696,1,情緒障害,じょうしょしょうがい,"[n, vs]",[(suffering) an emotional disturbance]
 6697,1,心拍数,しんぱくすう,[n],"[one's heart rate, pulse rate]"
 6698,1,申告書,しんこくしょ,[n],"[report, declaration]"
 6699,1,真実味,しんじつみ,[n],"[truth (veracity, authenticity) (e.g. of a report)]"
 6700,1,髄膜炎,ずいまくえん,[n],[meningitis]
 6701,1,世帯数,せたいすう,[n],[number of households]
-6702,,生鮮食料品,せいせんしょくりょうひん,[n],"[perishable food, perishables]"
+6702,1,生鮮食料品,せいせんしょくりょうひん,[n],"[perishable food, perishables]"
 6703,1,精神主義,せいしんしゅぎ,[n],"[spiritualism, idealism]"
 6704,,選挙公報,せんきょこうほう,[n],[official gazette for elections]
 6705,1,測定器,そくていき,[n],[measuring instrument]
@@ -6713,12 +6713,12 @@
 6713,1,東南東,とうなんとう,[n],"[east-southeast, ESE]"
 6714,,東北東,とうほくとう,[n],"[east-northeast, ENE]"
 6715,,捕り物,とりものちょう,[n],"[detective story (esp. one from the Edo period featuring thief-takers), detective's memoirs, thief taker's memoirs]"
-6716,,有機肥料,ゆうきひりょう,[n],"[organic fertilizer, organic fertiliser]"
+6716,1,有機肥料,ゆうきひりょう,[n],"[organic fertilizer, organic fertiliser]"
 6717,1,達し,たっし,[n],"[official notice, notification]"
 6718,,大洋州,たいようしゅう,[n],"[Oceania, Pacific Ocean countries]"
 6719,1,営為,えいい,[n],"[business, occupation]"
 6720,1,遠投,えんとう,"[n, vs]",[long throw]
-6721,,押し倒し,おしたおし,[n],"[oshitaoshi, (frontal) push-down, (win by) knocking down opponent by pushing him with hand(s) rested on his body]"
+6721,1,押し倒し,おしたおし,[n],"[oshitaoshi, (frontal) push-down, (win by) knocking down opponent by pushing him with hand(s) rested on his body]"
 6722,,果ては,はては,[n],"[in the end, on top of that]"
 6723,1,快投,かいとう,"[n, vs]",[good pitch]
 6724,1,完調,かんちょう,[n],[one's best form]
@@ -6727,7 +6727,7 @@
 6727,1,鬼子母神,きしもじん,[n],[Hariti (goddess of childbirth and children)]
 6728,1,吸い上げ,すいあげ,[n],"[suction, sucking]"
 6729,1,泣かされる,なかされる,"[v1, vi]","[to be moved to tears, to suffer greatly (from)]"
-6730,,球速,きゅうそく,[n],"[speed of a pitched ball, (pitcher's) pace]"
+6730,1,球速,きゅうそく,[n],"[speed of a pitched ball, (pitcher's) pace]"
 6731,1,建学,けんがく,"[n, vs]",[foundation of a school]
 6732,1,原液,げんえき,[n],[undiluted solution (of)]
 6733,1,原酒,げんしゅ,[n],"[refined sake not diluted in water, undiluted sake, unblended whisky (whiskey)]"
@@ -6739,7 +6739,7 @@
 6739,1,主著,しゅちょ,[n],[one's main (chief) (literary) work]
 6740,,取っ組み合い,とっくみあい,[n],"[grapple, scuffle]"
 6741,1,書き直し,かきなおし,[n],"[rewriting, rewrite, fair copy]"
-6742,,序二段,じょにだん,[n],[jonidan (second lowest) division]
+6742,1,序二段,じょにだん,[n],[jonidan (second lowest) division]
 6743,,勝差,しょうさ,[n],[difference in wins (in number of games won)]
 6744,,小手投げ,こてなげ,[n],"[armlock throw, forearm throw]"
 6745,1,消し去る,けしさる,"[v5r, vt]","[to get rid of, to erase]"
@@ -6760,7 +6760,7 @@
 6760,,同和,どうわ,[n],"[social integration (esp. of burakumin), assimilation, burakumin]"
 6761,1,二元,にげん,"[n, adj-no]","[duality, binary (system)]"
 6762,,廃油,はいゆ,[n],[waste oil]
-6763,,配点,はいてん,"[n, vs]",[allotment (allocation) of marks]
+6763,1,配点,はいてん,"[n, vs]",[allotment (allocation) of marks]
 6764,1,皮脂,ひし,[n],"[sebum, sebaceous matter]"
 6765,1,腐臭,ふしゅう,[n],"[smell of something rotten, rotten smell]"
 6766,,払い下げ,はらいさげ,[n],"[disposal (usu. of unwanted government assets), sale]"
@@ -6769,7 +6769,7 @@
 6769,,無国籍,むこくせき,"[n, adj-no]","[statelessness, stateless]"
 6770,1,目くじら,めくじら,[n],[corner of one's eye]
 6771,,目覚め,めざめ,[n],[waking]
-6772,,油絵の具,あぶらえのぐ,[n],"[oils, oil colors, oil colours, oil paints (colors, colours), oil-based paints (for artwork)]"
+6772,1,油絵の具,あぶらえのぐ,[n],"[oils, oil colors, oil colours, oil paints (colors, colours), oil-based paints (for artwork)]"
 6773,1,優駿,ゆうしゅん,[n],[fine horse]
 6774,1,和え物,あえもの,[n],"[chopped fish, shellfish or vegetables, dressed with (miso or other) sauce]"
 6775,,渇,かつ,[n],[thirst]
@@ -6835,8 +6835,8 @@
 6835,1,冷媒,れいばい,[n],"[refrigerant, coolant]"
 6836,1,労働基準局,ろうどうきじゅんきょく,[n],"[labor standards bureau, labour standards bureau]"
 6837,,短パン,たんパン,[n],"[shorts, short pants]"
-6838,,泰,たい,[n],[Thailand]
-6839,,利かす,きかす,[v5s],"[to season, to enliven]"
+6838,1,泰,たい,[n],[Thailand]
+6839,1,利かす,きかす,[v5s],"[to season, to enliven]"
 6840,,一括払い,いっかつはらい,[n],[lump-sum payment]
 6841,1,育ち盛り,そだちざかり,"[n, adj-no]",[growth period (in children)]
 6842,1,滑り降りる,すべりおりる,[v1],"[to slide down (a hill) (e.g. ski, toboggan), to slip down]"
@@ -6851,16 +6851,16 @@
 6851,1,名ばかり,なばかり,[adj-no],"[in name only, titular, nominal]"
 6852,1,人,たり,[ctr],[counter for people]
 6853,,済み,ずみ,"[n-suf, n]","[arranged, taken care of, settled, completed, finished]"
-6854,,牡鹿,おじか,[n],[buck (male deer)]
+6854,1,牡鹿,おじか,[n],[buck (male deer)]
 6855,1,妾,めかけ,[n],"[mistress, kept woman, concubine]"
 6856,1,高麗,こま,"[n, n-pref]",[Korea (esp. the Goguryeo kingdom or the Goryeo dynasty)]
 6857,1,面と向かう,めんとむかう,"[exp, v5u]",[to meet face-to-face]
 6858,1,心象,しんしょう,[n],"[mental image, image]"
-6859,,和地関,バチカン,[n],[Vatican]
+6859,1,和地関,バチカン,[n],[Vatican]
 6860,1,参する,さんする,"[vs-s, vi]","[to participate, to take part, to engage in, to be involved]"
 6861,1,入魂,にゅうこん,"[n, vs, adj-no]","[putting one's heart and soul into, putting one's all into, intimacy, familiarity]"
 6862,1,神事,しんじ,[n],[Shinto ritual]
-6863,,一,イー,,"_
+6863,1,一,イー,,"_
 -----------
 -----------
 one"
@@ -6880,7 +6880,7 @@ three"
 -----------
 -----------
 four"
-6868,,五,ウー,,"_
+6868,1,五,ウー,,"_
 -----------
 -----------
 five"
@@ -6913,7 +6913,7 @@ four-hour period (archaism)"
 -----------
 -----------
 the four seasons"
-6876,,一分,いちぶん,,"_
+6876,1,一分,いちぶん,,"_
 -----------
 -----------
 duty
@@ -6957,7 +6957,7 @@ twenty years (archaism)"
 -----------
 -----------
 just now (archaism)"
-6885,,今,こん,,"_
+6885,1,今,こん,,"_
 -----------
 -----------
 the current ...
@@ -6976,7 +6976,7 @@ scholarship (archaism)"
 -----------
 -----------
 counter for years (following a number in the hito-futa-mi counting system) (archaism)"
-6888,,時,どき,,"_
+6888,1,時,どき,,"_
 -----------
 -----------
 time for -
@@ -6991,7 +6991,7 @@ person"
 -----------
 -----------
 boy (honorific or respectful (sonkeigo) language)"
-6891,,妾,わらわ,,"_
+6891,1,妾,わらわ,,"_
 -----------
 -----------
 I (archaism, humble (kenjougo) language, female given name or forename)
@@ -7001,7 +7001,7 @@ me (archaism, humble (kenjougo) language, female given name or forename)"
 -----------
 I (word usually written using kana alone)
 me (used by elderly males) (word usually written using kana alone)"
-6893,,私,あっし,,"_
+6893,1,私,あっし,,"_
 -----------
 -----------
 I (mainly used by working men)
@@ -7046,7 +7046,7 @@ friend (archaism, familiar language, female given name or forename)"
 -----------
 what kind
 what sort"
-6901,,其れ処,それどころ,,"_
+6901,1,其れ処,それどころ,,"_
 -----------
 -----------
 (usu. before a verb in negative form) (not) so much (word usually written using kana alone)
@@ -7273,7 +7273,7 @@ way (archaism, )
 road (archaism, )
 way to ... ()
 road to ... ()"
-6942,,塵,じん,,"_
+6942,1,塵,じん,,"_
 -----------
 -----------
 defilement
@@ -7285,7 +7285,7 @@ one billionth"
 -----------
 -----------
 counter for people or implements ()"
-6944,,口,く,,"_
+6944,1,口,く,,"_
 -----------
 -----------
 mouth
@@ -7485,7 +7485,7 @@ to see (humble (kenjougo) language)
 to face (an enemy)
 to confront
 to serve (esp. as one's wife)"
-6980,,例,ためし,,"_
+6980,1,例,ためし,,"_
 -----------
 -----------
 precedent
@@ -7498,7 +7498,7 @@ brace (word usually written using kana alone)
 couple (word usually written using kana alone)
 joint
 hinge"
-6982,,喉,こん,,"_
+6982,1,喉,こん,,"_
 -----------
 -----------
 fish (archaism, female given name or forename)
@@ -7527,7 +7527,7 @@ suffix used as a rough indicator of location, direction, time, etc. ()"
 surrounding area (archaism)
 shore (of the sea)
 suffix used as a rough indicator of location, direction, time, etc. ()"
-6987,,曇る,くぐもる,,"_
+6987,1,曇る,くぐもる,,"_
 -----------
 -----------
 to mumble (word usually written using kana alone)
@@ -7647,7 +7647,7 @@ placard (word usually written using kana alone)"
 -----------
 stairs ()
 stairs at the front of a noh stage"
-7005,,階,きだはし,,"_
+7005,1,階,きだはし,,"_
 -----------
 -----------
 stairs ()"
@@ -7754,7 +7754,7 @@ hard
 inflexible
 obstinate
 stubborn"
-7026,,安心,あんじん,,"_
+7026,1,安心,あんじん,,"_
 -----------
 -----------
 obtaining peace of mind through faith or ascetic practice"
@@ -7857,7 +7857,7 @@ concealed winning hand consisting of chows, a pair that isn't a value pair, and 
 monkey (esp. the Japanese macaque, Macaca fuscata)
 ape
 non-human primate"
-7043,,枝,し,,"_
+7043,1,枝,し,,"_
 -----------
 -----------
 counter for long, thin things (i.e. swords)"
@@ -7888,7 +7888,7 @@ past, present and future existences"
 -----------
 -----------
 outside near the door to one's home (archaism)"
-7050,,敵,かたき,,"_
+7050,1,敵,かたき,,"_
 -----------
 -----------
 rival ()
@@ -7899,7 +7899,7 @@ enemy (esp. one with which there is longstanding enmity) ()
 foe ()
 revenge
 spouse (archaism)"
-7051,,力,りき,,"_
+7051,1,力,りき,,"_
 -----------
 -----------
 strength
@@ -8118,11 +8118,11 @@ words mainly used in songs or poetry"
 -----------
 -----------
 to wander around"
-7091,,廻る,みる,,"_
+7091,1,廻る,みる,,"_
 -----------
 -----------
 to go around (archaism)"
-7092,,原,げん,,"_
+7092,1,原,げん,,"_
 -----------
 -----------
 original
@@ -8155,7 +8155,7 @@ fortune"
 -----------
 -----------
 live birth"
-7097,,付く,づく,,"_
+7097,1,付く,づく,,"_
 -----------
 -----------
 to become (a state, condition, etc.)"
@@ -8172,7 +8172,7 @@ honorific added to names of makuuchi and juryo division wrestlers (honorific or 
 -----------
 metropolitan
 municipal"
-7101,,競べ馬,くらべうま,,"_
+7101,1,競べ馬,くらべうま,,"_
 -----------
 -----------
 traditional horse-racing
@@ -8221,7 +8221,7 @@ mansion (in Chinese astronomy)"
 -----------
 vagina (word usually written using kana alone, archaism, slang)
 girl (word usually written using kana alone)"
-7109,,-,メコ,,"_
+7109,1,-,メコ,,"_
 -----------
 -----------
 vagina (word usually written using kana alone, archaism, slang)"
@@ -8296,7 +8296,7 @@ to pass through (archaism)
 to go through (archaism)
 to experience (archaism)
 to go through (archaism)"
-7121,,経,けい,,"_
+7121,1,経,けい,,"_
 -----------
 -----------
 warp (weaving)
@@ -8334,7 +8334,7 @@ reel (of film)"
 -----------
 -----------
 knot (nautical mile per hour) (word usually written using kana alone)"
-7128,,節,ぶし,,"_
+7128,1,節,ぶし,,"_
 -----------
 -----------
 characteristic way of speaking"
@@ -8366,7 +8366,7 @@ agency (government department between a ministry and a bureau under the ritsuryo
 water's edge
 shore
 waterside"
-7135,,係,がかり,,"_
+7135,1,係,がかり,,"_
 -----------
 -----------
 charge ()
@@ -8487,7 +8487,7 @@ cordoning-off sign (archaism)"
 -----------
 guidance
 guide"
-7158,,興し,おこし,,"_
+7158,1,興し,おこし,,"_
 -----------
 -----------
 millet or rice cake, roasted and hardened with starch syrup and sugar (sometimes including peanuts, etc.) (word usually written using kana alone)"
@@ -8735,7 +8735,7 @@ to prepare (word usually written using kana alone)"
 selfish (word usually written using kana alone)
 self-indulgent (word usually written using kana alone)
 arbitrary (word usually written using kana alone)"
-7201,,縦し,よし,,"_
+7201,1,縦し,よし,,"_
 -----------
 -----------
 even if (word usually written using kana alone)"
@@ -8743,7 +8743,7 @@ even if (word usually written using kana alone)"
 -----------
 -----------
 Russia (abbreviation)"
-7203,,露,あらわ,,"_
+7203,1,露,あらわ,,"_
 -----------
 -----------
 exposed (word usually written using kana alone)
@@ -8868,7 +8868,7 @@ to mature (e.g. personality)
 to mellow
 to mature (foodstuff)
 to be properly aged"
-7222,,熟れる,なれる,,"_
+7222,1,熟れる,なれる,,"_
 -----------
 -----------
 to mature (esp. by fermentation)
@@ -9014,7 +9014,7 @@ sixth sign of the Chinese calendar"
 -----------
 -----------
 you (word usually written using kana alone, derogatory)"
-7249,,己,な,,"_
+7249,1,己,な,,"_
 -----------
 -----------
 I (archaism)
@@ -9030,7 +9030,7 @@ you (derogatory)"
 -----------
 -----------
 substitute for ..."
-7252,,徴,ち,,"_
+7252,1,徴,ち,,"_
 -----------
 -----------
 fourth degree (of the Japanese & Chinese pentatonic scale)"
@@ -9060,7 +9060,7 @@ counter for chairs or seats"
 foolish thing
 stupid thing
 absurdity"
-7258,,蹴り,けり,,"_
+7258,1,蹴り,けり,,"_
 -----------
 -----------
 kick"
@@ -9123,7 +9123,7 @@ taking care of
 assisting
 assistant
 helper"
-7270,,汗,かん,,"_
+7270,1,汗,かん,,"_
 -----------
 -----------
 khan (medieval ruler of a Tatary tribe)"
@@ -9143,7 +9143,7 @@ humaneness"
 -----------
 prevailing mood of a locality
 emotional climate of a district"
-7274,,品,ほん,,"_
+7274,1,品,ほん,,"_
 -----------
 -----------
 court rank
@@ -9175,7 +9175,7 @@ post ()
 pile ()
 picket ()
 stump (abbreviation, archaism, )"
-7279,,株,しゅ,,"_
+7279,1,株,しゅ,,"_
 -----------
 -----------
 stump
@@ -9293,7 +9293,7 @@ long"
 -----------
 commotion (word usually written using kana alone)
 stir (word usually written using kana alone)"
-7300,,元,げん,,"_
+7300,1,元,げん,,"_
 -----------
 -----------
 unknown (e.g. in an equation)
@@ -9329,7 +9329,7 @@ later date"
 fishball
 meatball
 pill"
-7307,,古文,こもん,,"_
+7307,1,古文,こもん,,"_
 -----------
 -----------
 kanji (abbreviation, obscure term)"
@@ -9362,7 +9362,7 @@ pilgrim"
 fishing
 collecting shells
 fisherman"
-7313,,綱,こう,,"_
+7313,1,綱,こう,,"_
 -----------
 -----------
 class"
@@ -9479,7 +9479,7 @@ to fuss over (word usually written using kana alone)
 to be particular about (word usually written using kana alone)
 to be obsessive (word usually written using kana alone)
 to be fixated (word usually written using kana alone)"
-7334,,憂い,うい,,"_
+7334,1,憂い,うい,,"_
 -----------
 -----------
 unhappy
@@ -9834,7 +9834,7 @@ wild goat (word usually written using kana alone)"
 -----------
 -----------
 lesser cuckoo (Cuculus poliocephalus) (word usually written using kana alone)"
-7393,,造作,ぞうさく,,"_
+7393,1,造作,ぞうさく,,"_
 -----------
 -----------
 building (esp. a house)
@@ -10148,7 +10148,7 @@ satisfactory (word usually written using kana alone, )
 decent (word usually written using kana alone, )
 good (word usually written using kana alone, )
 worthy (word usually written using kana alone, )"
-7449,,東風,あゆ,,"_
+7449,1,東風,あゆ,,"_
 -----------
 -----------
 wind that blows from north to north-east during spring and summer along the coast of the Sea of Japan (word usually written using kana alone)"
@@ -10189,7 +10189,7 @@ Ming-cho type(face) (abbreviation)"
 -----------
 -----------
 first sign of Chinese zodiac (The Rat, 11pm-1am, north, November)"
-7456,,子,し,,"_
+7456,1,子,し,,"_
 -----------
 -----------
 child (esp. a boy)
@@ -10283,7 +10283,7 @@ to lay (rope)"
 -----------
 honorific affix (honorific or respectful (sonkeigo) language, )
 honorific prefix (honorific or respectful (sonkeigo) language)"
-7469,,大御,おおみ,,"_
+7469,1,大御,おおみ,,"_
 -----------
 -----------
 august (in ref. to the emperor or the gods) (honorific or respectful (sonkeigo) language)
@@ -10374,7 +10374,7 @@ said person (archaism)"
 act (obscure term)
 deed (obscure term)
 one's doing (obscure term)"
-7486,,抄録,すぐき,,"_
+7486,1,抄録,すぐき,,"_
 -----------
 -----------
 regional pickle of Kyoto made from turnip-like vegetable"
@@ -10512,7 +10512,7 @@ size D (battery) ()"
 way
 course
 the only way"
-7508,,戸口,ここう,,"_
+7508,1,戸口,ここう,,"_
 -----------
 -----------
 houses and inhabitants
@@ -10779,7 +10779,7 @@ worthless person"
 -----------
 -----------
 klesha (polluting thoughts such as greed, hatred and delusion, which result in suffering)"
-7557,,法相,ほっそう,,"_
+7557,1,法相,ほっそう,,"_
 -----------
 -----------
 dharmalaksana (dharma characteristics, the specific characteristics of all manifest phenomena)
@@ -10797,7 +10797,7 @@ everyday garment worn by men in ancient Japan (archaism)"
 -----------
 personal appearance
 looks"
-7561,,急所,きゅうじょ,,"_
+7561,1,急所,きゅうじょ,,"_
 -----------
 -----------
 vital point (critical place to make a move in the game of Go)"
@@ -10919,7 +10919,7 @@ single
 simple
 singles (in tennis) (abbreviation)
 winning system (as in horse racing) (abbreviation)"
-7585,,無口,むこう,,"_
+7585,1,無口,むこう,,"_
 -----------
 -----------
 astomatous"
@@ -11475,7 +11475,7 @@ fixing"
 -----------
 to beat to death
 to kill"
-7686,,幌,ほろ,,"_
+7686,1,幌,ほろ,,"_
 -----------
 -----------
 canopy (esp. the cloth or canvas used for it)
@@ -11484,7 +11484,7 @@ top (of a convertible)
 hood
 helmet cape
 cloth covering one's back to protect against arrows during battle"
-7687,,草冠,くさかんむり,,"_
+7687,1,草冠,くさかんむり,,"_
 -----------
 -----------
 kanji ""grass radical"" (radical 140) ()
@@ -11515,7 +11515,7 @@ spirit"
 effect
 efficacy
 omen"
-7693,,偶,たま,,"_
+7693,1,偶,たま,,"_
 -----------
 -----------
 occasional (word usually written using kana alone)
@@ -11670,7 +11670,7 @@ to gleam (word usually written using kana alone)"
 -----------
 man among men (manga slang)
 man's man (manga slang)"
-7724,,漢,かん,,"_
+7724,1,漢,かん,,"_
 -----------
 -----------
 China ()
@@ -11722,7 +11722,7 @@ circulation (e.g. of blood)"
 -----------
 -----------
 retainer"
-7733,,贔屓,びいき,,"_
+7733,1,贔屓,びいき,,"_
 -----------
 -----------
 liking something
@@ -11790,7 +11790,7 @@ foundation"
 -----------
 -----------
 exaggeration"
-7746,,俎,そ,,"_
+7746,1,俎,そ,,"_
 -----------
 -----------
 altar of sacrifice"
@@ -11808,7 +11808,7 @@ imperial prince"
 -----------
 -----------
 director (of the provincial governors under the ritsuryo system)"
-7750,,漸,ぜん,,"_
+7750,1,漸,ぜん,,"_
 -----------
 -----------
 gradual progress"
@@ -11834,7 +11834,7 @@ strong
 resolute
 firm
 strict"
-7755,,更衣,こうい,,"_
+7755,1,更衣,こうい,,"_
 -----------
 -----------
 changing one's clothes
@@ -11890,7 +11890,7 @@ purpose
 look
 eyes
 expression of eyes"
-7764,,希,ぎ,,"_
+7764,1,希,ぎ,,"_
 -----------
 -----------
 Greece (abbreviation)
@@ -11928,7 +11928,7 @@ last day of the month (archaism)"
 -----------
 -----------
 daily allowance"
-7771,,僻,ひが,,"_
+7771,1,僻,ひが,,"_
 -----------
 -----------
 evil
@@ -11954,7 +11954,7 @@ presence (of a nobleman, the emperor, etc.)
 outrider (person riding horseback in the lead position of a cavalcade)
 My Lord
 My Lady"
-7775,,御前,おんまえ,,"_
+7775,1,御前,おんまえ,,"_
 -----------
 -----------
 word used after an addressee's name in a formal letter (female given name or forename, polite (teineigo) language)"
@@ -12015,7 +12015,7 @@ albino"
 soft roe
 milt
 albino"
-7787,,裳,も,,"_
+7787,1,裳,も,,"_
 -----------
 -----------
 ancient skirt"
@@ -12182,7 +12182,7 @@ two flat things"
 -----------
 -----------
 one's (portion of a) drink"
-7817,,鉄槌,てっつい,,"_
+7817,1,鉄槌,てっつい,,"_
 -----------
 -----------
 iron hammer
@@ -12321,7 +12321,7 @@ to make something the pretext (for)"
 -----------
 clouds appearing before the wind starts to blow
 winds and clouds ()"
-7840,,呪う,まじなう,,"_
+7840,1,呪う,まじなう,,"_
 -----------
 -----------
 to pray that one avoids disaster or illness (archaism)
@@ -12522,15 +12522,15 @@ you (archaism, vulgar expression or word)"
 -----------
 -----------
 you (archaism, familiar language)"
-7878,,汝,なむち,,"_
+7878,1,汝,なむち,,"_
 -----------
 -----------
 you (archaism)"
-7879,,汝,みまし,,"_
+7879,1,汝,みまし,,"_
 -----------
 -----------
 you (archaism, honorific or respectful (sonkeigo) language)"
-7880,,螺,にし,,"_
+7880,1,螺,にし,,"_
 -----------
 -----------
 small spiral-shelled snail (word usually written using kana alone)"
@@ -12544,7 +12544,7 @@ light caning (10-50 times) (archaism)"
 hilly section of a city (usu. residential)
 Yamanote (hilly residential section of western Tokyo, incl. Yotsuya, Aoyama, Koishikawa, Hongo, Ichigaya, Akasaka, Azabu and surrounds)
 place near the mountains"
-7883,,桑蚕,くわこ,,"_
+7883,1,桑蚕,くわこ,,"_
 -----------
 -----------
 wild silkworm moth (Bombyx mandarina) (word usually written using kana alone)"
@@ -12587,7 +12587,7 @@ lively type of shamisen song"
 clothes
 outfit
 uniform"
-7892,,篶,すず,,"_
+7892,1,篶,すず,,"_
 -----------
 -----------
 Sasamorpha borealis (species of bamboo grass unique to Japan) (archaism)
@@ -12602,7 +12602,7 @@ sliver (strand of loose fibers)"
 -----------
 -----------
 thin-culmed dwarf bamboo (growing in clusters)"
-7895,,囁き言,ささやきごと,,"_
+7895,1,囁き言,ささやきごと,,"_
 -----------
 -----------
 whispering (archaism)
@@ -12627,11 +12627,11 @@ sweet talk (word usually written using kana alone)
 sweet nothings (word usually written using kana alone)
 lovers' talk (word usually written using kana alone)
 pillow talk (word usually written using kana alone)"
-7898,,流,る,,"_
+7898,1,流,る,,"_
 -----------
 -----------
 exile (archaism)"
-7899,,葛,かずら,,"_
+7899,1,葛,かずら,,"_
 -----------
 -----------
 creeping plant
@@ -12644,7 +12644,7 @@ barbarian"
 -----------
 -----------
 court historian (archaism)"
-7902,,追手,おいて,,"_
+7902,1,追手,おいて,,"_
 -----------
 -----------
 pursuer
@@ -12723,7 +12723,7 @@ British (abbreviation)"
 -----------
 -----------
 (someone else's) child (polite (teineigo) language)"
-7917,,戯け,たわけ,,"_
+7917,1,戯け,たわけ,,"_
 -----------
 -----------
 tomfoolery
@@ -12753,24 +12753,24 @@ male presence"
 7934,,編み目,あみめ,[n],[stitch]
 7935,1,相,あい,[pref],"[together, mutually, fellow]"
 7936,,相,そう,[n],"[appearance, look, countenance, a 'seeming' that fortune-tellers relate to one's fortune, aspect, phase (e.g. solid, liquid and gaseous)]"
-7937,,相,しょう,[suf],[minister of state]
+7937,1,相,しょう,[suf],[minister of state]
 7938,,梢,こずえ,[n],"[treetop, tip of a branch]"
 7939,,栄,ロン,[n],[winning by picking up a discarded tile]
 7940,,栄,えい,[n],"[glory, prosperity]"
 7941,,正中,しょうちゅう,"[n, adj-no]","[center of a noh stage, Shouchuu era (1324.12.9-1326.4.26)]"
 7942,,正中,しょうなか,[n],[center of a noh stage]
-7943,,起り,むくり,[n],[camber]
+7943,1,起り,むくり,[n],[camber]
 7944,,御先,おさき,[n],"[going before, the future]"
 7945,,籬,まがき,[n],[roughly woven fence]
 7946,,捩れる,よじれる,"[v1, vi]",[to be twisted]
 7947,1,拗れる,こじれる,"[v1, vi]","[to get complicated, to grow worse, to turn sour]"
-7948,,爾,おれ,[n],[you]
+7948,1,爾,おれ,[n],[you]
 7949,1,然,しか,[int],"[like that, as such, yeah, uh-huh]"
 7950,,片言,へんげん,[n],"[brief remark, few words, one side (e.g. of an argument), ex-parte statement]"
 7951,,臣,しん,[n],"[retainer, attendant, I (used by a servant when speaking to his master), me]"
 7952,,臣,おみ,[n],"[retainer, attendant, Omi (hereditary title; orig. one of the two highest such titles, later demoted to sixth highest of eight)]"
 7953,1,突き込む,つきこむ,[v5m],"[to thrust (something) into (something), to cram, to plunge into, to go into deeply, to get involved with, to meddle, to poke one's nose into, to riposte, to retort, to quip]"
-7954,,毬,かさ,[n],"[cone (e.g. pine, hemlock)]"
+7954,1,毬,かさ,[n],"[cone (e.g. pine, hemlock)]"
 7955,,永々,えいえい,[adv],[forever]
 7956,,無効ＳＰＤＵ,むこうエスピーディーユー,[n],[invalid SPDU]
 7957,1,梅桃,ゆすらうめ,[n],"[Nanking cherry (Prunus tomentosa), downy cherry]"
@@ -12780,8 +12780,8 @@ male presence"
 7961,1,止め,とどめ,[n],"[finishing blow, clincher]"
 7962,,逸,いち,[pref],"[very, excellent]"
 7963,,止め,どめ,[suf],[(something) stopper (e.g. geridome is medicine for diarrhea)]
-7964,,返り,かえり,[n],"[turning over, flipping over, reply, response, marks indicating the Japanese meaning of the texts of Chinese classics, lapel]"
-7965,,噛み熟す,かみこなす,"[v5s, vt]","[to chew, to digest]"
+7964,1,返り,かえり,[n],"[turning over, flipping over, reply, response, marks indicating the Japanese meaning of the texts of Chinese classics, lapel]"
+7965,1,噛み熟す,かみこなす,"[v5s, vt]","[to chew, to digest]"
 7966,,一文字,ひともじ,[n],"[one (written) character, Welsh onion (Allium fistulosum)]"
 7967,,大佐賀,おおさが,[n],[Sebastes iracundus (species of rockfish)]
 7968,,茅,ちがや,[n],[cogon grass (Imperata cylindrica)]
@@ -12790,7 +12790,7 @@ male presence"
 7971,,氏上,うじのかみ,[n],[head of a clan]
 7972,,叱り,しかり,[n],[scolding]
 7973,1,幾歳,いくさい,[n],"[what age?, how old?]"
-7974,,二言,ふたこと,[n],"[two words, repetition]"
+7974,1,二言,ふたこと,[n],"[two words, repetition]"
 7975,,一味,ひとあじ,"[adv, n]",[unique or peculiar flavor (flavour)]
 7976,1,摩り込む,すりこむ,[v5m],"[to rub in, to grind and mix]"
 7977,1,華奢,きゃしゃ,"[adj-na, n]","[dainty, delicate, slender, slim and elegant, fragile (e.g. furniture), delicate, frail]"
@@ -12798,16 +12798,16 @@ male presence"
 7979,,手拭き,てふき,[n],"[(hand) towel, handkerchief, paper tissue, napkin, serviette]"
 7980,,若僧,にゃくそう,[n],"[young monk, boy monk]"
 7981,,道楽,みちがく,[n],[form of gagaku performed while marching]
-7982,,憂世,ゆうせい,[n],[worrying about world conditions]
+7982,1,憂世,ゆうせい,[n],[worrying about world conditions]
 7983,,大殿,おおとの,[n],"[current master, father of one's current master, minister (of government), noble, nobleman's residence]"
-7984,,立方,りっぽう,"[n, vs]",[cube]
+7984,1,立方,りっぽう,"[n, vs]",[cube]
 7985,,居処,いど,[n],"[one's seat, buttocks]"
 7986,1,抉る,えぐる,"[v5r, vt]","[to gouge, to hollow out, to bore, to excavate, to scoop out, to greatly perturb, to cause emotional pain, to get to the bottom of things, to relentlessly bring the truth to light]"
 7987,1,刳る,くる,"[v5r, vt]","[to gouge, to hollow out, to bore, to excavate, to scoop out]"
 7988,1,抉る,こじる,"[v5r, v1, vt]","[to pry, to prize, to prise]"
 7989,1,抉る,くじる,"[v5r, vt]","[to stick into and move around, to dig around in, to pick (i.e. one's teeth)]"
 7990,,寒,さむ,"[n, int]",[cold]
-7991,,ご影,ごえい,[n],"[image (esp. of a deity, buddha, royal, noble, etc.)]"
+7991,1,ご影,ごえい,[n],"[image (esp. of a deity, buddha, royal, noble, etc.)]"
 7992,,我人,わひと,[n],[you (nuance of either deep affection or contempt)]
 7993,,袴下,こした,[n],"[long johns, long underpants, long underwear]"
 7994,,切り端,きりはし,[n],"[scraps, cut end, cut-off piece]"
