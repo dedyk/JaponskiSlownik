@@ -258,7 +258,7 @@ public class Validator {
 				
 				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 				
-				if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+				if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 					
 					GroupEntry groupEntry = groupEntryList.get(0);
 					
@@ -306,7 +306,7 @@ public class Validator {
 				
 				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 				
-				if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+				if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 
 					GroupEntry groupEntry = groupEntryList.get(0);
 					
@@ -370,7 +370,7 @@ public class Validator {
 
 				List<GroupEntry> groupEntryList = jmeNewNameDictionary.getGroupEntryList(kanji, kana);
 				
-				if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+				if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 					
 					boolean wasOk = false;
 					
@@ -1124,7 +1124,7 @@ public class Validator {
 			
 			List<PolishJapaneseEntry> foundPolishJapaneseEntryGroupList = new ArrayList<PolishJapaneseEntry>();
 			
-			if (groupEntryList != null && isMultiGroup(groupEntryList) == false) {
+			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 								
 				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
 					
@@ -1243,23 +1243,7 @@ public class Validator {
 			throw new DictionaryException("Error");
 		}		
 	}
-	
-	private static boolean isMultiGroup(List<GroupEntry> groupEntryList) {
-		
-		Set<Integer> uniqueGroupIds = new HashSet<Integer>();
-		
-		for (GroupEntry groupEntry : groupEntryList) {
-			uniqueGroupIds.add(groupEntry.getGroup().getId());
-		}
-		
-		if (uniqueGroupIds.size() == 1) {			
-			return false;
 			
-		} else {
-			return true;
-		}
-	}
-		
 	private static String toAttributeListString(AttributeList attributeList) {
 		
 		StringBuffer sb = new StringBuffer();

@@ -27,9 +27,9 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addMap(DictionaryEntryType.WORD_NUMBER, "num");
 	
 		addMap(DictionaryEntryType.WORD_NOUN, "n");
-		addMap(DictionaryEntryType.WORD_NOUN, "n-pref");
-		addMap(DictionaryEntryType.WORD_NOUN, "n-suf");
-		addMap(DictionaryEntryType.WORD_NOUN, "n-pr");
+		addMap(DictionaryEntryType.WORD_NOUN_PREFIX, "n-pref");
+		addMap(DictionaryEntryType.WORD_NOUN_SUFFIX, "n-suf");
+		addMap(DictionaryEntryType.WORD_PROPER_NOUN, "n-pr");
 		addMap(DictionaryEntryType.WORD_NOUN, "vs");
 		addMap(DictionaryEntryType.WORD_TEMPORAL_NOUN, "n-t");
 		
@@ -110,8 +110,10 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addMap(DictionaryEntryType.WORD_MALE_NAME, null);
 		addMap(DictionaryEntryType.WORD_FEMALE_NAME, null);
 		
-		addMap(DictionaryEntryType.WORD_EMPTY, "pref");
-		addMap(DictionaryEntryType.WORD_EMPTY, "suf");
+		addMap(DictionaryEntryType.WORD_PREFIX, "pref");
+		addMap(DictionaryEntryType.WORD_SUFFIX, "suf");
+		
+		addMap(DictionaryEntryType.WORD_EMPTY, null);
 		
 		addNullMap("vt");
 		addNullMap("vi");
@@ -169,7 +171,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 	}
 	
 	public List<String> getEntity(DictionaryEntryType dictionaryEntryType) throws DictionaryException {
-		
+				
 		List<String> entityList = dictionaryEntryToEntityMapper.get(dictionaryEntryType);
 		
 		if (entityList == null) {

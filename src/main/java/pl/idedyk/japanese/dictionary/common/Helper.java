@@ -210,7 +210,8 @@ public class Helper {
 				if (attributeList.contains(AttributeType.OBSCURE) == false && groupEntry.containsAttribute("obsc") == true) {
 					attributeList.add(AttributeType.OBSCURE);
 				}
-
+				
+				/*
 				// suffix
 				if (attributeList.contains(AttributeType.SUFFIX) == false && groupEntry.containsAttribute("suf") == true) {
 					attributeList.add(AttributeType.SUFFIX);
@@ -230,6 +231,7 @@ public class Helper {
 				if (attributeList.contains(AttributeType.NOUN_PREFIX) == false && groupEntry.containsAttribute("n-pref") == true) {
 					attributeList.add(AttributeType.NOUN_PREFIX);
 				}
+				*/
 									
 				// onamatopoeic or mimetic word
 				if (attributeList.contains(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD) == false && groupEntry.containsAttribute("on-mim") == true) {
