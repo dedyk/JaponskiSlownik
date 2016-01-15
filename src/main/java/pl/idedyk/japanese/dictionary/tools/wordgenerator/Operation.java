@@ -2,14 +2,27 @@ package pl.idedyk.japanese.dictionary.tools.wordgenerator;
 
 public enum Operation {
 	
-	GET_COMMON_PART_LIST("get-common-part-list");
+	GET_COMMON_PART_LIST("get-common-part-list", "Pobiera listę common'owych słów"),
+	
+	HELP("help", "Pokazuje pomoc");
 	
 	private String operation;
 	
-	Operation(String operation) {
+	private String description;
+	
+	Operation(String operation, String description) {
 		this.operation = operation;
+		this.description = description;
 	}
 	
+	public String getOperation() {
+		return operation;
+	}
+	
+	public String getDescription() {
+		return description;
+	}
+
 	public static Operation findOperation(String operation) {
 		
 		Operation[] values = values();

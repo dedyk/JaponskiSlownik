@@ -20,7 +20,10 @@ public class WordGenerator {
 	
 	public static void main(String[] args) throws Exception {
 		
-		args = new String[] { "get-common-part-list", "lista" };
+		int fixme = 1;
+		
+		//args = new String[] { "get-common-part-list", "lista" };
+		args = new String[] { "help" };
 		
 		///
 		
@@ -54,9 +57,8 @@ public class WordGenerator {
 		// przetwarzanie operacji
 		switch (operation) {
 			
-			case GET_COMMON_PART_LIST:
+			case GET_COMMON_PART_LIST: {
 				
-			{				
 				// cat input/common_word.csv | egrep -E -e "^[0-9]*,," | cut -d, -f1 | shuf | head -1
 				// cat input/common_word.csv | egrep -E -e "^[0-9]*,," | cut -d, -f1 | wc -l
 				
@@ -130,6 +132,20 @@ public class WordGenerator {
 				
 				// zapis nowego pliku common
 				CsvReaderWriter.writeCommonWordFile(commonWordMap, "input/common_word-nowy.csv");
+				
+				break;
+			}
+			
+			case HELP: {
+				
+				// pobranie listy mozliwych operacji
+				Operation[] operationList = Operation.values();
+				
+				System.out.println("Lista dostępnych operacji:xj\n");
+				
+				for (Operation currentOperation : operationList) {
+					System.out.println(currentOperation.getOperation() + " - " + currentOperation.getDescription());
+				}
 				
 				break;
 			}
