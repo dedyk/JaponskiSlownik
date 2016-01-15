@@ -4,6 +4,8 @@ public enum Operation {
 	
 	GET_COMMON_PART_LIST("get-common-part-list", "Pobiera listę common'owych słów"),
 	
+	GENERATE_MISSING_WORD_LIST_IN_COMMON_WORDS("generate-missing-word-list-in-common-words", "Pokazuje słowa, krórych wyszukanie da wynik wśród common'owych słów"),
+	
 	HELP("help", "Pokazuje pomoc");
 	
 	private String operation;
@@ -39,13 +41,9 @@ public enum Operation {
 }
 
 /*
-HELP
-
 GenerateJMEDictGroupWordList
 GenerateJMEDictGroupWordList2
 GenerateMissingWordList
-GenerateMissingWordListInCommonWords
-GetCommonPartList
 FindMissingTheSameKanji
 ShowAllJMEdictPriorities
 ShowAllMissingWords

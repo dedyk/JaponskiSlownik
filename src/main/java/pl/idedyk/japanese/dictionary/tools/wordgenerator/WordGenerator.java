@@ -3,12 +3,24 @@ package pl.idedyk.japanese.dictionary.tools.wordgenerator;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.lucene.document.Document;
+import org.apache.lucene.index.DirectoryReader;
+import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.ScoreDoc;
+import org.apache.lucene.store.Directory;
+
+import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
@@ -23,7 +35,8 @@ public class WordGenerator {
 		int fixme = 1;
 		
 		//args = new String[] { "get-common-part-list", "lista" };
-		args = new String[] { "help" };
+		//args = new String[] { "help" };
+		args = new String[] { "generate-missing-word-list-in-common-words", "lista" };
 		
 		///
 		
@@ -78,7 +91,7 @@ public class WordGenerator {
 				// pobranie cache ze slowami
 				Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
 
-				// czytanie listy common'owych plikow
+				// czytanie common'owego pliku
 				Map<Integer, CommonWord> commonWordMap = wordGeneratorHelper.getCommonWordMap();
 				
 				// przygotowywane slownika jmedict
@@ -132,6 +145,85 @@ public class WordGenerator {
 				
 				// zapis nowego pliku common
 				CsvReaderWriter.writeCommonWordFile(commonWordMap, "input/common_word-nowy.csv");
+				
+				break;
+			}
+			
+			case GENERATE_MISSING_WORD_LIST_IN_COMMON_WORDS: {
+				
+				if (args.length != 2) {
+					
+					System.err.println("Niepoprawna liczba argumentów");
+					
+					return;
+				}
+				
+				String fileName = args[1];
+								
+				// wczytywanie pliku z lista slow
+				System.out.println("Wczytywanie brakujących słów...");
+				
+				List<String> missingWords = readFile(fileName);
+				
+				// czytanie common'owego pliku
+				Map<Integer, CommonWord> commonWordMap = wordGeneratorHelper.getCommonWordMap();
+				
+				// tworzenie indeksu lucene
+				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
+								
+				// stworzenie wyszukiwacza
+				IndexReader reader = DirectoryReader.open(luceneIndex);
+
+				IndexSearcher searcher = new IndexSearcher(reader);
+				
+				// tworzenie listy wynikowej				
+				List<String> foundWordSearchList = new ArrayList<String>();
+				
+				System.out.println("Szukanie...");
+				
+				for (String currentMissingWord : missingWords) {
+					
+					if (currentMissingWord.equals("") == true) {
+						continue;
+					}
+					
+					Query query = Helper.createLuceneDictionaryIndexQuery(currentMissingWord);
+
+					ScoreDoc[] scoreDocs = searcher.search(query, null, 10).scoreDocs;
+					
+					if (scoreDocs.length > 0) {
+						
+						for (ScoreDoc scoreDoc : scoreDocs) {
+							
+							Document foundDocument = searcher.doc(scoreDoc.doc);
+
+							GroupEntry groupEntry = Helper.createGroupEntry(foundDocument);
+							
+							String groupEntryKanji = groupEntry.getKanji();
+							String groupEntryKana = groupEntry.getKana();
+							
+							boolean existsInCommonWords = existsInCommonWords(commonWordMap, groupEntryKanji, groupEntryKana);
+							
+							if (existsInCommonWords == false) {
+								continue;
+							}
+							
+							if (foundWordSearchList.contains(currentMissingWord) == false) {
+								foundWordSearchList.add(currentMissingWord);
+							}
+						}				
+					}
+				}
+
+				reader.close();
+				
+				System.out.println("Zapisywanie pliku...");
+						
+				FileWriter searchResultFileWriter = new FileWriter(fileName + "-new");
+				
+				searchResultFileWriter.write(Utils.convertListToString(foundWordSearchList));
+				
+				searchResultFileWriter.close();
 				
 				break;
 			}
@@ -195,5 +287,38 @@ public class WordGenerator {
 			
 			throw new RuntimeException(e);
 		}
+	}
+	
+	private static boolean existsInCommonWords(Map<Integer, CommonWord> commonWordMap, String kanji, String kana) {
+		
+		if (kanji == null || kanji.equals("") == true) {
+			kanji = "-";
+		}
+		
+		Collection<CommonWord> commonWordValues = commonWordMap.values();
+		
+		Iterator<CommonWord> commonWordValuesIterator = commonWordValues.iterator();
+				
+		while (commonWordValuesIterator.hasNext() == true) {
+			
+			CommonWord currentCommonWord = commonWordValuesIterator.next();
+			
+			if (currentCommonWord.isDone() == false) {
+				
+				String currentCommonWordKanji = currentCommonWord.getKanji();
+				
+				if (currentCommonWordKanji == null || currentCommonWordKanji.equals("") == true) {
+					currentCommonWordKanji = "-";
+				}
+				
+				String currentCommonWordKana = currentCommonWord.getKana();
+				
+				if (kanji.equals(currentCommonWordKanji) == true && kana.equals(currentCommonWordKana) == true) {
+					return true;
+				}
+			}
+		}
+		
+		return false;
 	}
 }

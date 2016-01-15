@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.lucene.store.Directory;
+
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
@@ -34,6 +36,8 @@ public class WordGeneratorHelper {
 	
 	private JMENewDictionary jmeNewDictionary;
 
+	private Directory index;
+	
 	public WordGeneratorHelper(String wordCsvFile, String wordCommonCsvFile, String jmdicteFile) {
 		
 		this.wordCsvFile = wordCsvFile;		
@@ -111,5 +115,17 @@ public class WordGeneratorHelper {
 		}
 		
 		return jmeNewDictionary;		
+	}
+	
+	public Directory getLuceneIndex() throws IOException, DictionaryException {
+		
+		if (index == null) {
+			
+			System.out.println("Tworzenie indeksu lucene");
+			
+			index = Helper.createLuceneDictionaryIndex(getJMENewDictionary());			
+		}
+		
+		return index;
 	}
 }
