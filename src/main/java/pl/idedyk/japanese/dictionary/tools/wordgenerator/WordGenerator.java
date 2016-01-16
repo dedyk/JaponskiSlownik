@@ -44,6 +44,7 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
+import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 
 public class WordGenerator {
@@ -56,8 +57,9 @@ public class WordGenerator {
 		//args = new String[] { "help" };
 		//args = new String[] { "generate-missing-word-list-in-common-words", "lista" };
 		//args = new String[] { "generate-jmedict-group-word-list" };
-		// args = new String[] { "show-missing-priority-words" };
-		args = new String[] { "show-all-missing-words" };
+		//args = new String[] { "show-missing-priority-words" };
+		//args = new String[] { "show-all-missing-words" };
+		args = new String[] { "generate-missing-word-list", "lista" };
 		
 		///
 		
@@ -166,6 +168,144 @@ public class WordGenerator {
 				
 				// zapis nowego pliku common
 				CsvReaderWriter.writeCommonWordFile(commonWordMap, "input/common_word-nowy.csv");
+				
+				break;
+			}
+			
+			case GENERATE_MISSING_WORD_LIST: {
+				
+				if (args.length != 2) {
+					
+					System.err.println("Niepoprawna liczba argumentów");
+					
+					return;
+				}
+				
+				String fileName = args[1];
+								
+				// wczytywanie pliku z lista slow
+				System.out.println("Wczytywanie brakujących słów...");
+				
+				List<String> missingWords = readFile(fileName);
+				
+				// pobranie cache ze slowami
+				Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
+
+				// tworzenie indeksu lucene
+				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
+								
+				// stworzenie wyszukiwacza
+				IndexReader reader = DirectoryReader.open(luceneIndex);
+
+				IndexSearcher searcher = new IndexSearcher(reader);
+
+				// generowanie slow
+				List<PolishJapaneseEntry> foundWordList = new ArrayList<PolishJapaneseEntry>();
+				List<PolishJapaneseEntry> alreadyAddedWordList = new ArrayList<PolishJapaneseEntry>();
+				
+				List<String> foundWordSearchList = new ArrayList<String>();		
+				
+				List<PolishJapaneseEntry> notFoundWordList = new ArrayList<PolishJapaneseEntry>();
+				List<String> notFoundWordSearchList = new ArrayList<String>();
+
+				List<PolishJapaneseEntry> notFoundJishoFoundWordList = new ArrayList<PolishJapaneseEntry>();
+				List<String> notFoundJishoFoundWordSearchList = new ArrayList<String>();
+				
+				int counter = 0;
+				
+				Set<Integer> alreadyFoundDocument = new TreeSet<Integer>();
+				
+				JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
+				
+				System.out.println("Szukanie...");
+				
+				for (String currentMissingWord : missingWords) {
+					
+					if (currentMissingWord.equals("") == true) {
+						continue;
+					}
+					
+					counter++;
+
+					Query query = Helper.createLuceneDictionaryIndexQuery(currentMissingWord);
+
+					ScoreDoc[] scoreDocs = searcher.search(query, null, 10).scoreDocs;
+					
+					if (scoreDocs.length > 0) {
+						
+						foundWordSearchList.add(currentMissingWord);
+						
+						for (ScoreDoc scoreDoc : scoreDocs) {
+							
+							if (alreadyFoundDocument.contains(scoreDoc.doc) == true) {
+								continue;
+								
+							} else {
+								alreadyFoundDocument.add(scoreDoc.doc);
+								
+							}
+
+							Document foundDocument = searcher.doc(scoreDoc.doc);
+
+							GroupEntry groupEntry = Helper.createGroupEntry(foundDocument);
+							
+							CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counter, currentMissingWord);
+							
+							PolishJapaneseEntry polishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;
+												
+							if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
+								foundWordList.add(polishJapaneseEntry);
+								
+							} else {
+								alreadyAddedWordList.add(polishJapaneseEntry);
+							}
+						}				
+						
+					} else {
+						
+						PolishJapaneseEntry polishJapaneseEntry = Helper.createEmptyPolishJapaneseEntry(currentMissingWord, counter);
+						
+						System.out.println("Szukanie w jisho.org: " + currentMissingWord);
+						
+						boolean wordExistsInJishoOrg = jishoOrgConnector.isWordExists(currentMissingWord);
+						
+						if (wordExistsInJishoOrg == true) {
+							
+							notFoundJishoFoundWordSearchList.add(currentMissingWord);								
+							
+							notFoundJishoFoundWordList.add(polishJapaneseEntry);
+							
+						} else {
+							
+							notFoundWordSearchList.add(currentMissingWord);								
+							
+							notFoundWordList.add(polishJapaneseEntry);
+						}
+					}
+				}
+
+				reader.close();
+				
+				System.out.println("Zapisywanie słownika...");
+				
+				List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
+				
+				newWordList.addAll(foundWordList);
+				newWordList.addAll(alreadyAddedWordList);
+				newWordList.addAll(notFoundJishoFoundWordList);
+				newWordList.addAll(notFoundWordList);
+				
+				CsvReaderWriter.generateCsv("input/word-new.csv", newWordList, true, true, false);
+				
+				FileWriter searchResultFileWriter = new FileWriter(fileName + "-new");
+				
+				searchResultFileWriter.write(Utils.convertListToString(foundWordSearchList));
+				searchResultFileWriter.write("\n---------\n");
+				searchResultFileWriter.write(Utils.convertListToString(notFoundJishoFoundWordSearchList));
+				searchResultFileWriter.write("\n---------\n");
+				searchResultFileWriter.write(Utils.convertListToString(notFoundWordSearchList));
+				
+				searchResultFileWriter.close();
 				
 				break;
 			}

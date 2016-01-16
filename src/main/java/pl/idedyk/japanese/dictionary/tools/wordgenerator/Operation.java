@@ -4,7 +4,9 @@ public enum Operation {
 	
 	GET_COMMON_PART_LIST("get-common-part-list", "Pobiera listę common'owych słów"),
 	
-	GENERATE_MISSING_WORD_LIST_IN_COMMON_WORDS("generate-missing-word-list-in-common-words", "Pokazuje słowa, krórych wyszukanie da wynik wśród common'owych słów"),
+	GENERATE_MISSING_WORD_LIST("generate-missing-word-list", "Generuje grabujące znalezione słowa"),
+	
+	GENERATE_MISSING_WORD_LIST_IN_COMMON_WORDS("generate-missing-word-list-in-common-words", "Generuje słowa, krórych wyszukanie da wynik wśród common'owych słów"),
 	
 	GENERATE_JMEDICT_GROUP_WORD_LIST("generate-jmedict-group-word-list", "Generuje słowa z grup jmedict"),
 	
@@ -49,7 +51,6 @@ public enum Operation {
 }
 
 /*
-GenerateMissingWordList
 FindMissingTheSameKanji
 ShowAlreadyAddCommonWords
 
