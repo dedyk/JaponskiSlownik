@@ -56,7 +56,8 @@ public class WordGenerator {
 		//args = new String[] { "help" };
 		//args = new String[] { "generate-missing-word-list-in-common-words", "lista" };
 		//args = new String[] { "generate-jmedict-group-word-list" };
-		args = new String[] { "show-missing-priority-words" };
+		// args = new String[] { "show-missing-priority-words" };
+		args = new String[] { "show-all-missing-words" };
 		
 		///
 		
@@ -629,6 +630,62 @@ public class WordGenerator {
 				
 				// zapis do pliku
 				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/missing_priority_common_word.csv");
+				
+				break;
+			}
+			
+			case SHOW_ALL_MISSING_WORDS: {
+				
+				if (args.length != 1) {
+					
+					System.err.println("Niepoprawna liczba argumentów");
+					
+					return;
+				}
+				
+				// wczytanie i cache'owanie slownika
+				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
+				
+				// wczytanie slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				
+				// generowanie brakujacych slow
+				List<Group> groupList = jmeNewDictionary.getGroupList();
+				
+				Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
+				
+				int csvId = 1;
+
+				for (Group group : groupList) {
+					
+					List<GroupEntry> groupEntryList = group.getGroupEntryList();
+					
+					List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
+								
+					for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
+						
+						GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0);
+																		
+						String groupEntryKanji = groupEntry.getKanji();
+						String groupEntryKana = groupEntry.getKana();
+											
+						List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+							
+						if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
+								
+							System.out.println(groupEntry);
+							
+							CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
+							
+							newCommonWordMap.put(commonWord.getId(), commonWord);
+							
+							csvId++;							
+						}				
+					}
+				}	
+				
+				// zapis do pliku
+				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/all_missing_word.csv");
 				
 				break;
 			}

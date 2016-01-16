@@ -12,6 +12,8 @@ public enum Operation {
 	
 	SHOW_MISSING_PRIORITY_WORDS("show-missing-priority-words", "Generuje brakujące słowa priorytetowe z grup jmedict"),
 	
+	SHOW_ALL_MISSING_WORDS("show-all-missing-words", "Generuje wszystkie słowa, które są w słowniku jmedict, a których brakuje"),
+	
 	HELP("help", "Pokazuje pomoc");
 	
 	private String operation;
@@ -49,9 +51,7 @@ public enum Operation {
 /*
 GenerateMissingWordList
 FindMissingTheSameKanji
-ShowAllMissingWords
 ShowAlreadyAddCommonWords
-ShowMissingCommonWords
 
 +
 
