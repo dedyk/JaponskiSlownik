@@ -6,6 +6,12 @@ public enum Operation {
 	
 	GENERATE_MISSING_WORD_LIST_IN_COMMON_WORDS("generate-missing-word-list-in-common-words", "Pokazuje słowa, krórych wyszukanie da wynik wśród common'owych słów"),
 	
+	GENERATE_JMEDICT_GROUP_WORD_LIST("generate-jmedict-group-word-list", "Generuje słowa z grup jmedict"),
+	
+	GENERATE_JMEDICT_GROUP_WORD_LIST2("generate-jmedict-group-word-list2", "Generuje słowa z grup jmedict 2"),
+	
+	SHOW_MISSING_PRIORITY_WORDS("show-missing-priority-words", "Generuje brakujące słowa priorytetowe z grup jmedict"),
+	
 	HELP("help", "Pokazuje pomoc");
 	
 	private String operation;
@@ -41,15 +47,11 @@ public enum Operation {
 }
 
 /*
-GenerateJMEDictGroupWordList
-GenerateJMEDictGroupWordList2
 GenerateMissingWordList
 FindMissingTheSameKanji
-ShowAllJMEdictPriorities
 ShowAllMissingWords
 ShowAlreadyAddCommonWords
 ShowMissingCommonWords
-ShowMissingPriorityWords
 
 +
 

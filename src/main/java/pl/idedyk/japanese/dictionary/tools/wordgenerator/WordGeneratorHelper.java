@@ -14,6 +14,7 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 
 public class WordGeneratorHelper {
@@ -33,6 +34,8 @@ public class WordGeneratorHelper {
 	private Map<Integer, CommonWord> commonWordMap;
 	
 	private List<JMEDictNewNativeEntry> jmedictNativeList;
+	
+	private JMEDictEntityMapper jmedictEntityMapper;
 	
 	private JMENewDictionary jmeNewDictionary;
 
@@ -103,6 +106,15 @@ public class WordGeneratorHelper {
 		}
 		
 		return jmedictNativeList;
+	}
+	
+	public JMEDictEntityMapper getJmedictEntityMapper() {
+		
+		if (jmedictEntityMapper == null) {
+			jmedictEntityMapper = new JMEDictEntityMapper();
+		}
+		
+		return jmedictEntityMapper;
 	}
 	
 	public JMENewDictionary getJMENewDictionary() throws DictionaryException {
