@@ -953,7 +953,7 @@ public class WordGenerator {
 				// pobranie listy mozliwych operacji
 				Operation[] operationList = Operation.values();
 				
-				System.out.println("Lista dostępnych operacji:xj\n");
+				System.out.println("Lista dostępnych operacji:\n");
 				
 				for (Operation currentOperation : operationList) {
 					System.out.println(currentOperation.getOperation() + " - " + currentOperation.getDescription());
