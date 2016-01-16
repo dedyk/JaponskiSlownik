@@ -2,6 +2,8 @@ package pl.idedyk.japanese.dictionary.tools.wordgenerator;
 
 public enum Operation {
 	
+	FIND_MISSING_THE_SAME_KANJI("find-missing-the-same-kanji", "Znajduje wszystkie słowa, których brakuje w słowniku, a które pisane są tym samym znakiem kanji"),
+	
 	GET_COMMON_PART_LIST("get-common-part-list", "Pobiera listę common'owych słów"),
 	
 	GENERATE_MISSING_WORD_LIST("generate-missing-word-list", "Generuje grabujące znalezione słowa"),
@@ -12,9 +14,11 @@ public enum Operation {
 	
 	GENERATE_JMEDICT_GROUP_WORD_LIST2("generate-jmedict-group-word-list2", "Generuje słowa z grup jmedict 2"),
 	
-	SHOW_MISSING_PRIORITY_WORDS("show-missing-priority-words", "Generuje brakujące słowa priorytetowe z grup jmedict"),
-	
 	SHOW_ALL_MISSING_WORDS("show-all-missing-words", "Generuje wszystkie słowa, które są w słowniku jmedict, a których brakuje"),
+	
+	SHOW_ALREADY_ADD_COMMON_WORDS("show-already-add-common-words", "Pokazuje common'owe słowa, które są już dodane do słownika"),
+	
+	SHOW_MISSING_PRIORITY_WORDS("show-missing-priority-words", "Generuje brakujące słowa priorytetowe z grup jmedict"),
 	
 	HELP("help", "Pokazuje pomoc");
 	
@@ -49,12 +53,3 @@ public enum Operation {
 		return null;
 	}	
 }
-
-/*
-FindMissingTheSameKanji
-ShowAlreadyAddCommonWords
-
-+
-
-prefix, postfix generator
-*/

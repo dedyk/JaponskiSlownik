@@ -50,19 +50,7 @@ import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvW
 public class WordGenerator {
 	
 	public static void main(String[] args) throws Exception {
-		
-		int fixme = 1;
-		
-		//args = new String[] { "get-common-part-list", "lista" };
-		//args = new String[] { "help" };
-		//args = new String[] { "generate-missing-word-list-in-common-words", "lista" };
-		//args = new String[] { "generate-jmedict-group-word-list" };
-		//args = new String[] { "show-missing-priority-words" };
-		//args = new String[] { "show-all-missing-words" };
-		args = new String[] { "generate-missing-word-list", "lista" };
-		
-		///
-		
+				
 		String operationString = null;
 		Operation operation = null;
 		
@@ -826,6 +814,136 @@ public class WordGenerator {
 				
 				// zapis do pliku
 				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/all_missing_word.csv");
+				
+				break;
+			}
+			
+			case SHOW_ALREADY_ADD_COMMON_WORDS: {
+				
+				// wczytanie i cache'owanie slownika
+				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
+
+				// czytanie common'owego pliku
+				Map<Integer, CommonWord> commonWordMap = wordGeneratorHelper.getCommonWordMap();
+				
+				// przegladanie listy common'owych plikow i sprawdzanie, czy nie jest juz dodany
+				Collection<CommonWord> commonWordValues = commonWordMap.values();
+				
+				Iterator<CommonWord> commonWordValuesIterator = commonWordValues.iterator();
+				
+				Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
+				
+				while (commonWordValuesIterator.hasNext() == true) {
+					
+					CommonWord currentCommonWord = commonWordValuesIterator.next();
+					
+					if (currentCommonWord.isDone() == false) {
+						
+						List<PolishJapaneseEntry> findPolishJapaneseEntry = 
+								Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, currentCommonWord.getKanji(), currentCommonWord.getKana());
+						
+						// ta pozycja jej juz dodana
+						if (findPolishJapaneseEntry != null && findPolishJapaneseEntry.size() > 0) {
+							
+							newCommonWordMap.put(currentCommonWord.getId(), currentCommonWord);				
+						}
+					}
+				}
+				
+				// zapis juz dodanych common'owych slow
+				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/already-added-common_word.csv");				
+				
+				break;
+			}
+			
+			case FIND_MISSING_THE_SAME_KANJI: {
+				
+				// wczytanie slownika
+				List<PolishJapaneseEntry> polishJapaneseEntries = wordGeneratorHelper.getPolishJapaneseEntriesList();
+
+				// cache'owanie slownika
+				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
+				
+				// wczytanie slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();				
+				
+				// walidacja slownika
+				System.out.println("Walidowanie słownika...");
+				
+				Validator.validateEdictGroup(jmeNewDictionary, polishJapaneseEntries);
+
+				// generowanie slow
+				System.out.println("Generowanie słów...");
+				
+				Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
+
+				int csvId = 1;
+						
+				Set<String> alreadyAddedGroupEntry = new TreeSet<String>();
+								
+				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+					
+					if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.EDICT_TRANSLATE_INFO_GROUP_DIFF) == true) {
+						continue;
+					}
+
+					if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.NO_JMEDICT_ALTERNATIVE) == true) {
+						continue;
+					}
+					
+					DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+					
+					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+						continue;
+					}
+								
+					String kanji = polishJapaneseEntry.getKanji();
+					
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji);
+					
+					if (groupEntryList == null) {
+						continue;
+					}
+					
+					for (GroupEntry groupEntry : groupEntryList) {
+						
+						List<GroupEntry> groupEntryListForGroupEntry = groupEntry.getGroup().getGroupEntryList(); // podmiana na wszystkie elementy z grupy
+						
+						List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryListForGroupEntry);
+										
+						for (List<GroupEntry> theSameTranslateGroupEntryList : groupByTheSameTranslateGroupEntryList) {
+							
+							GroupEntry groupEntryInGroup = theSameTranslateGroupEntryList.get(0);
+													
+							String groupEntryKanji = groupEntryInGroup.getKanji();
+							String groupEntryKana = groupEntryInGroup.getKana();
+							
+							List<PolishJapaneseEntry> findPolishJapaneseEntryList = 
+									Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+			
+							if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
+								
+								String keyForGroupEntry = getKeyForAlreadyAddedGroupEntrySet(groupEntryInGroup);
+								
+								if (alreadyAddedGroupEntry.contains(keyForGroupEntry) == false) {
+									
+									alreadyAddedGroupEntry.add(keyForGroupEntry);
+									
+									//
+									
+									CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntryInGroup);
+									
+									newCommonWordMap.put(commonWord.getId(), commonWord);
+									
+									csvId++;						
+								}
+							}
+						}
+					}			
+				}
+				
+				// zapisywanie slownika
+				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/missing-the-same-kanji.csv");				
 				
 				break;
 			}
