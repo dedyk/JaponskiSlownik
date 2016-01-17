@@ -672,6 +672,8 @@ public class JMEDictNewReader {
 		// cache'owanie wynikow		
 		for (Group group : jmeNewDictionary.getGroupList()) {
 			
+			jmeNewDictionary.addGroupToCache(group);
+			
 			List<GroupEntry> groupEntryList = group.getGroupEntryList();
 			
 			for (GroupEntry groupEntry : groupEntryList) {

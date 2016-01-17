@@ -18,12 +18,22 @@ public class JMENewDictionary {
 	
 	private TreeMap<String, List<GroupEntry>> groupEntryOnlyKanjiCache = new TreeMap<String, List<GroupEntry>>();
 	
+	private Map<Integer, Group> groupByIdCache = new TreeMap<Integer, Group>();
+	
 	public List<Group> getGroupList() {
 		return groupList;
 	}
 
-	public void setGroupList(List<Group> groupList) {
-		this.groupList = groupList;
+	public void setGroupList(List<Group> groupList) {		
+		this.groupList = groupList;		
+	}
+	
+	public Group getGroupById(Integer id) {
+		return groupByIdCache.get(id);
+	}
+	
+	public void addGroupToCache(Group group) {				
+		groupByIdCache.put(group.getId(), group);
 	}
 		
 	public void addGroupEntryToCache(GroupEntry groupEntry) {

@@ -16,12 +16,14 @@ import java.util.TreeSet;
 
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
+import org.apache.lucene.document.IntField;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.index.IndexWriterConfig.OpenMode;
 import org.apache.lucene.search.BooleanQuery;
+import org.apache.lucene.search.PrefixQuery;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.BooleanClause.Occur;
@@ -1057,6 +1059,8 @@ public class Helper {
 
 				Document document = new Document();
 
+				Integer groupId = groupEntry.getGroup().getId();
+				
 				Set<String> wordTypeList = groupEntry.getWordTypeList();
 
 				String kanji = groupEntry.getKanji();
@@ -1113,6 +1117,8 @@ public class Helper {
 					translateList2.add(translate.toString());
 				}
 				
+				addFieldToDocument(document, "groupId", groupId);
+				
 				addFieldToDocument(document, "wordTypeList", wordTypeList);
 
 				addFieldToDocument(document, "kanji", kanji);
@@ -1142,6 +1148,13 @@ public class Helper {
 			document.add(new TextField(fieldName, value, Field.Store.YES));
 		}
 	}
+	
+	public static void addFieldToDocument(Document document, String fieldName, Integer value) {
+
+		if (value != null) {
+			document.add(new IntField(fieldName, value, Field.Store.YES));
+		}
+	}
 
 	private static void addFieldToDocument(Document document, String fieldName, Collection<String> collection) {
 
@@ -1155,7 +1168,7 @@ public class Helper {
 		}		
 	}
 	
-	public static Query createLuceneDictionaryIndexQuery(String word) {
+	public static Query createLuceneDictionaryIndexTermQuery(String word) {
 
 		BooleanQuery query = new BooleanQuery();
 
@@ -1163,26 +1176,57 @@ public class Helper {
 
 		BooleanQuery wordBooleanQuery = new BooleanQuery();
 
-		wordBooleanQuery.add(createQuery(wordSplited, "kanji"), Occur.SHOULD);
-		wordBooleanQuery.add(createQuery(wordSplited, "kana"), Occur.SHOULD);				
+		wordBooleanQuery.add(createTermQuery(wordSplited, "kanji"), Occur.SHOULD);
+		wordBooleanQuery.add(createTermQuery(wordSplited, "kana"), Occur.SHOULD);				
 
-		wordBooleanQuery.add(createQuery(wordSplited, "romaji"), Occur.SHOULD);
+		wordBooleanQuery.add(createTermQuery(wordSplited, "romaji"), Occur.SHOULD);
 
-		wordBooleanQuery.add(createQuery(wordSplited, "translateList"), Occur.SHOULD);
-		wordBooleanQuery.add(createQuery(wordSplited, "additionalInfoList"), Occur.SHOULD);
+		wordBooleanQuery.add(createTermQuery(wordSplited, "translateList"), Occur.SHOULD);
+		wordBooleanQuery.add(createTermQuery(wordSplited, "additionalInfoList"), Occur.SHOULD);
 
 		query.add(wordBooleanQuery, Occur.MUST);
 
 		return query;
 	}
 	
-	private static Query createQuery(String[] wordSplited, String fieldName) {
+	public static Query createLuceneDictionaryIndexPrefixQuery(String word) {
+
+		BooleanQuery query = new BooleanQuery();
+
+		String[] wordSplited = word.split("\\s+");
+
+		BooleanQuery wordBooleanQuery = new BooleanQuery();
+
+		wordBooleanQuery.add(createPrefixQuery(wordSplited, "kanji"), Occur.SHOULD);
+		wordBooleanQuery.add(createPrefixQuery(wordSplited, "kana"), Occur.SHOULD);				
+
+		wordBooleanQuery.add(createPrefixQuery(wordSplited, "romaji"), Occur.SHOULD);
+
+		wordBooleanQuery.add(createPrefixQuery(wordSplited, "translateList"), Occur.SHOULD);
+		wordBooleanQuery.add(createPrefixQuery(wordSplited, "additionalInfoList"), Occur.SHOULD);
+
+		query.add(wordBooleanQuery, Occur.MUST);
+
+		return query;
+	}
+	
+	private static Query createTermQuery(String[] wordSplited, String fieldName) {
 
 		BooleanQuery booleanQuery = new BooleanQuery();
 
 		for (String currentWord : wordSplited) {
-			//booleanQuery.add(new PrefixQuery(new Term(fieldName, currentWord)), Occur.MUST);
 			booleanQuery.add(new TermQuery(new Term(fieldName, currentWord)), Occur.MUST);
+		}
+
+		return booleanQuery;
+	}
+	
+	private static Query createPrefixQuery(String[] wordSplited, String fieldName) {
+
+		BooleanQuery booleanQuery = new BooleanQuery();
+
+		for (String currentWord : wordSplited) {
+			booleanQuery.add(new PrefixQuery(new Term(fieldName, currentWord)), Occur.MUST);
 		}
 
 		return booleanQuery;
@@ -1190,8 +1234,10 @@ public class Helper {
 	
 	public static GroupEntry createGroupEntry(Document document) {
 
-		GroupEntry groupEntry = new GroupEntry(null, null);
-
+		Group fakeGroup = new Group(Integer.parseInt(document.get("groupId")), null);
+		
+		GroupEntry groupEntry = new GroupEntry(null, fakeGroup);		
+		
 		groupEntry.setWordTypeList(new LinkedHashSet<String>(Arrays.asList(document.getValues("wordTypeList"))));
 
 		groupEntry.setKanji(document.get("kanji"));
