@@ -697,7 +697,9 @@ public class WordGenerator {
 								csvWriter.write(sourcePolishJapaneseEntry.getInfo());
 							}
 						}
-				);				
+				);
+
+				break;
 			}
 			
 			case SHOW_MISSING_PRIORITY_WORDS: {
