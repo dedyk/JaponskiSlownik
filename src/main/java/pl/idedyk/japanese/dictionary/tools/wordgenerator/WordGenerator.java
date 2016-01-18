@@ -952,6 +952,33 @@ public class WordGenerator {
 			
 			case GENERATE_PREFIX_WORD_LIST: {
 				
+				if (args.length != 2) {
+					
+					System.err.println("Niepoprawna liczba argumentów");
+					
+					return;
+				}
+				
+				// sprawdzenie parametrow				
+				Integer minPrefixLength = null;
+								
+				try {
+					minPrefixLength = Integer.parseInt(args[1]);
+					
+				} catch (NumberFormatException e) {
+					
+					System.out.println("Niepoprawna minimalna długość prefiksu");
+					
+					return;					
+				}
+				
+				if (minPrefixLength.intValue() < 1) {
+
+					System.out.println("Niepoprawna minimalna długość prefiksu");
+					
+					return;
+				}				
+				
 				// wczytanie slownika
 				List<PolishJapaneseEntry> polishJapaneseEntries = wordGeneratorHelper.getPolishJapaneseEntriesList();
 
@@ -988,14 +1015,14 @@ public class WordGenerator {
 						continue;
 					}
 					
-					for (int idx = 1; idx <= kanji.length(); ++idx) {						
+					for (int idx = minPrefixLength; idx <= kanji.length(); ++idx) {						
 						allPrefixes.add(kanji.substring(0, idx));						
 					}
 					
 					/*
 					String kana = polishJapaneseEntry.getKana();
 					
-					for (int idx = 1; idx <= kana.length(); ++idx) {						
+					for (int idx = minPrefixLength; idx <= kana.length(); ++idx) {						
 						allPrefixes.add(kana.substring(0, idx));
 					}
 					*/
@@ -1074,6 +1101,33 @@ public class WordGenerator {
 			
 			case GENERATE_PREFIX2_WORD_LIST: {
 				
+				if (args.length != 2) {
+					
+					System.err.println("Niepoprawna liczba argumentów");
+					
+					return;
+				}
+				
+				// sprawdzenie parametrow				
+				Integer minPrefixLength = null;
+								
+				try {
+					minPrefixLength = Integer.parseInt(args[1]);
+					
+				} catch (NumberFormatException e) {
+					
+					System.out.println("Niepoprawna minimalna długość prefiksu");
+					
+					return;					
+				}
+				
+				if (minPrefixLength.intValue() < 1) {
+
+					System.out.println("Niepoprawna minimalna długość prefiksu");
+					
+					return;
+				}
+				
 				// wczytanie slownika
 				List<PolishJapaneseEntry> polishJapaneseEntries = wordGeneratorHelper.getPolishJapaneseEntriesList();
 
@@ -1110,11 +1164,17 @@ public class WordGenerator {
 						continue;
 					}
 					
-					if (kanji.length() < 2) {
+					if (kanji.length() < minPrefixLength) {
 						continue;
 					}					
 					
-					//String kana = polishJapaneseEntry.getKana();
+					/*
+					// String kana = polishJapaneseEntry.getKana();
+					
+					if (kana.length() < minPrefixLength) {
+						continue;
+					}
+					*/
 					
 					allPrefixes.add(kanji);					
 					//allPrefixes.add(kana);					
