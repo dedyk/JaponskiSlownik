@@ -51,8 +51,6 @@ public class WordGenerator {
 	
 	public static void main(String[] args) throws Exception {
 		
-		args = new String[] { "generate-prefix-word-list", "4" };
-				
 		String operationString = null;
 		Operation operation = null;
 		
