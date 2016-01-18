@@ -50,6 +50,8 @@ import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvW
 public class WordGenerator {
 	
 	public static void main(String[] args) throws Exception {
+		
+		args = new String[] { "generate-prefix-word-list", "4" };
 				
 		String operationString = null;
 		Operation operation = null;
@@ -1019,20 +1021,18 @@ public class WordGenerator {
 						allPrefixes.add(kanji.substring(0, idx));						
 					}
 					
-					/*
 					String kana = polishJapaneseEntry.getKana();
 					
 					for (int idx = minPrefixLength; idx <= kana.length(); ++idx) {						
 						allPrefixes.add(kana.substring(0, idx));
 					}
-					*/
 				}
 				
 				int currentPrefixCounter = 1;
 				
 				for (String currentPrefix : allPrefixes) {
 					
-					System.out.format("%s - %d / %d\n", currentPrefix, currentPrefixCounter, allPrefixes.size());
+					System.out.format("%s - %d / %d / %d\n", currentPrefix, currentPrefixCounter, allPrefixes.size(), newCommonWordMap.size());
 					
 					currentPrefixCounter++;
 						
@@ -1091,7 +1091,6 @@ public class WordGenerator {
 						}													
 					}
 				}
-							
 				
 				// zapisywanie slownika
 				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/prefix-word-list.csv");				
@@ -1168,23 +1167,21 @@ public class WordGenerator {
 						continue;
 					}					
 					
-					/*
-					// String kana = polishJapaneseEntry.getKana();
+					String kana = polishJapaneseEntry.getKana();
 					
 					if (kana.length() < minPrefixLength) {
 						continue;
 					}
-					*/
 					
 					allPrefixes.add(kanji);					
-					//allPrefixes.add(kana);					
+					allPrefixes.add(kana);					
 				}				
 				
 				int currentPrefixCounter = 1;
 				
 				for (String currentPrefix : allPrefixes) {
 					
-					System.out.format("%s - %d / %d\n", currentPrefix, currentPrefixCounter, allPrefixes.size());
+					System.out.format("%s - %d / %d / %d\n", currentPrefix, currentPrefixCounter, allPrefixes.size(), newCommonWordMap.size());
 					
 					currentPrefixCounter++;
 						
