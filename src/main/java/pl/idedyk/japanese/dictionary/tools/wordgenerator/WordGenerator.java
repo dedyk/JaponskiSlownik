@@ -46,6 +46,7 @@ import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
+import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 
 public class WordGenerator {
 	
@@ -1242,6 +1243,128 @@ public class WordGenerator {
 				
 				// zapisywanie slownika
 				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/prefix2-word-list.csv");				
+				
+				break;
+			}
+			
+			case FIX_DICTIONARY_WORD_TYPE: {
+				
+				// wczytanie slownika
+				List<PolishJapaneseEntry> polishJapaneseEntries = wordGeneratorHelper.getPolishJapaneseEntriesList();
+
+				// wczytanie slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				
+				// klasa do mapowania typow
+				DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = wordGeneratorHelper.getDictionaryEntryJMEdictEntityMapper();
+				
+				for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
+					
+					if (currentPolishJapaneseEntry.getParseAdditionalInfoList().contains(
+							ParseAdditionalInfo.NO_TYPE_CHECK) == true) {
+						
+						continue;
+					}
+					
+					String kanji = currentPolishJapaneseEntry.getKanji();
+					String kana = currentPolishJapaneseEntry.getKana();
+					
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
+					
+					if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+						
+						GroupEntry groupEntry = groupEntryList.get(0);
+						
+						Set<String> groupEntryWordTypeList = groupEntry.getWordTypeList();
+						
+						if (groupEntryWordTypeList.size() == 0) {
+							continue;
+						}
+						
+						List<DictionaryEntryType> polishJapaneseEntryDictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
+						
+						List<DictionaryEntryType> dictionaryEntryTypeToDelete = new ArrayList<DictionaryEntryType>();
+						List<DictionaryEntryType> dictionaryEntryTypeToAdd = new ArrayList<DictionaryEntryType>();
+						
+						// czy nalezy usunac jakis typ
+						for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntryDictionaryEntryTypeList) {
+
+							List<String> entityList = dictionaryEntryJMEdictEntityMapper.getEntity(currentDictionaryEntryType);
+							
+							boolean isOneContains = false;
+							
+							for (String currentEntity : entityList) {
+								
+								if (groupEntryWordTypeList.contains(currentEntity) == true) {
+									
+									isOneContains = true;
+									
+									break;
+								}
+							}
+							
+							if (isOneContains == false) {
+								dictionaryEntryTypeToDelete.add(currentDictionaryEntryType);
+							}
+						}						
+						
+						// czy nalezy dodac jakis typ
+						for (String currentEntity : groupEntryWordTypeList) {
+							
+							DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(currentEntity);
+							
+							if (dictionaryEntryType == null) {
+								continue;
+							}
+							
+							if (polishJapaneseEntryDictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
+								dictionaryEntryTypeToAdd.add(dictionaryEntryType);
+							}
+						}
+
+						// usuwamy typy
+						for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeToDelete) {
+							polishJapaneseEntryDictionaryEntryTypeList.remove(dictionaryEntryType);
+						}
+						
+						// dodajemy typy
+						for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeToAdd) {
+							polishJapaneseEntryDictionaryEntryTypeList.add(dictionaryEntryType);
+						}
+						
+						// jeszcze jedno dodatkowe sprawdzenie (potrzebne do liczenia form i przykladow) (moze nie byc wszystkich, wtedy trzeba je dodac)
+						if (	polishJapaneseEntryDictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_U) == true && 
+								polishJapaneseEntryDictionaryEntryTypeList.get(0) != DictionaryEntryType.WORD_VERB_U) {
+							
+							polishJapaneseEntryDictionaryEntryTypeList.remove(DictionaryEntryType.WORD_VERB_U);
+							
+							polishJapaneseEntryDictionaryEntryTypeList.add(0, DictionaryEntryType.WORD_VERB_U);
+						}
+
+						if (	polishJapaneseEntryDictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_I) == true && 
+								polishJapaneseEntryDictionaryEntryTypeList.get(0) != DictionaryEntryType.WORD_ADJECTIVE_I) {
+							
+							polishJapaneseEntryDictionaryEntryTypeList.remove(DictionaryEntryType.WORD_ADJECTIVE_I);
+							
+							polishJapaneseEntryDictionaryEntryTypeList.add(0, DictionaryEntryType.WORD_ADJECTIVE_I);
+						}
+						
+						/*
+						if (	polishJapaneseEntryDictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_NA) == true && 
+								polishJapaneseEntryDictionaryEntryTypeList.get(0) != DictionaryEntryType.WORD_ADJECTIVE_NA &&
+								polishJapaneseEntryDictionaryEntryTypeList.get(0) != DictionaryEntryType.WORD_NOUN &&
+								polishJapaneseEntryDictionaryEntryTypeList.get(0) != DictionaryEntryType.WORD_ADJECTIVE_NO) {
+							
+							polishJapaneseEntryDictionaryEntryTypeList.remove(DictionaryEntryType.WORD_ADJECTIVE_NA);
+							
+							polishJapaneseEntryDictionaryEntryTypeList.add(0, DictionaryEntryType.WORD_ADJECTIVE_NA);
+						}
+						*/
+					}
+				}	
+				
+				// zapis nowego slownika
+				CsvReaderWriter.generateCsv("input/word-new.csv", polishJapaneseEntries, true, true, false);
 				
 				break;
 			}
