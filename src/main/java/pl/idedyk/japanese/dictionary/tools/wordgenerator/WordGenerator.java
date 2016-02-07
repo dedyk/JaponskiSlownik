@@ -953,7 +953,7 @@ public class WordGenerator {
 			
 			case GENERATE_PREFIX_WORD_LIST: {
 				
-				if (args.length != 2) {
+				if (args.length != 3) {
 					
 					System.err.println("Niepoprawna liczba argumentów");
 					
@@ -961,24 +961,42 @@ public class WordGenerator {
 				}
 				
 				// sprawdzenie parametrow				
-				Integer minPrefixLength = null;
+				Integer minKanjiPrefixLength = null;
+				Integer minKanaPrefixLength = null;
 								
 				try {
-					minPrefixLength = Integer.parseInt(args[1]);
+					minKanjiPrefixLength = Integer.parseInt(args[1]);
 					
 				} catch (NumberFormatException e) {
 					
-					System.out.println("Niepoprawna minimalna długość prefiksu");
+					System.out.println("Niepoprawna minimalna długość prefiksu kanji");
 					
 					return;					
 				}
 				
-				if (minPrefixLength.intValue() < 1) {
+				if (minKanjiPrefixLength.intValue() < 1) {
 
-					System.out.println("Niepoprawna minimalna długość prefiksu");
+					System.out.println("Niepoprawna minimalna długość prefiksu kanji");
 					
 					return;
-				}				
+				}
+				
+				try {
+					minKanaPrefixLength = Integer.parseInt(args[2]);
+					
+				} catch (NumberFormatException e) {
+					
+					System.out.println("Niepoprawna minimalna długość prefiksu kana");
+					
+					return;					
+				}
+				
+				if (minKanaPrefixLength.intValue() < 1) {
+
+					System.out.println("Niepoprawna minimalna długość prefiksu kana");
+					
+					return;
+				}
 				
 				// wczytanie slownika
 				List<PolishJapaneseEntry> polishJapaneseEntries = wordGeneratorHelper.getPolishJapaneseEntriesList();
@@ -1016,13 +1034,13 @@ public class WordGenerator {
 						continue;
 					}
 					
-					for (int idx = minPrefixLength; idx <= kanji.length(); ++idx) {						
+					for (int idx = minKanjiPrefixLength; idx <= kanji.length(); ++idx) {						
 						allPrefixes.add(kanji.substring(0, idx));						
 					}
 					
 					String kana = polishJapaneseEntry.getKana();
 					
-					for (int idx = minPrefixLength; idx <= kana.length(); ++idx) {						
+					for (int idx = minKanaPrefixLength; idx <= kana.length(); ++idx) {						
 						allPrefixes.add(kana.substring(0, idx));
 					}
 				}
@@ -1099,7 +1117,7 @@ public class WordGenerator {
 			
 			case GENERATE_PREFIX2_WORD_LIST: {
 				
-				if (args.length != 2) {
+				if (args.length != 3) {
 					
 					System.err.println("Niepoprawna liczba argumentów");
 					
@@ -1107,21 +1125,39 @@ public class WordGenerator {
 				}
 				
 				// sprawdzenie parametrow				
-				Integer minPrefixLength = null;
+				Integer minKanjiPrefixLength = null;
+				Integer minKanaPrefixLength = null;
 								
 				try {
-					minPrefixLength = Integer.parseInt(args[1]);
+					minKanjiPrefixLength = Integer.parseInt(args[1]);
 					
 				} catch (NumberFormatException e) {
 					
-					System.out.println("Niepoprawna minimalna długość prefiksu");
+					System.out.println("Niepoprawna minimalna długość prefiksu kanji");
 					
 					return;					
 				}
 				
-				if (minPrefixLength.intValue() < 1) {
+				if (minKanjiPrefixLength.intValue() < 1) {
 
-					System.out.println("Niepoprawna minimalna długość prefiksu");
+					System.out.println("Niepoprawna minimalna długość prefiksu kanji");
+					
+					return;
+				}
+				
+				try {
+					minKanaPrefixLength = Integer.parseInt(args[2]);
+					
+				} catch (NumberFormatException e) {
+					
+					System.out.println("Niepoprawna minimalna długość prefiksu kana");
+					
+					return;					
+				}
+				
+				if (minKanaPrefixLength.intValue() < 1) {
+
+					System.out.println("Niepoprawna minimalna długość prefiksu kana");
 					
 					return;
 				}
@@ -1162,13 +1198,13 @@ public class WordGenerator {
 						continue;
 					}
 					
-					if (kanji.length() < minPrefixLength) {
+					if (kanji.length() < minKanjiPrefixLength) {
 						continue;
 					}					
 					
 					String kana = polishJapaneseEntry.getKana();
 					
-					if (kana.length() < minPrefixLength) {
+					if (kana.length() < minKanaPrefixLength) {
 						continue;
 					}
 					

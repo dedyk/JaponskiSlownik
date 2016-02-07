@@ -16,9 +16,9 @@ public enum Operation {
 	
 	GENERATE_JMEDICT_GROUP_WORD_LIST2("generate-jmedict-group-word-list2", "Generuje słowa z grup jmedict 2"),
 	
-	GENERATE_PREFIX_WORD_LIST("generate-prefix-word-list", "Generuje słowa, które zawierają się w istniejących słowach (uwaga: używa tylko znaków kanji)"),
+	GENERATE_PREFIX_WORD_LIST("generate-prefix-word-list", "Generuje słowa, które zawierają się w istniejących słowach"),
 	
-	GENERATE_PREFIX2_WORD_LIST("generate-prefix2-word-list", "Generuje słowa, które początych zaczyna się od istniejących słów (uwaga: nie używa znaków kanji krótszych niż 2 znaki)"),
+	GENERATE_PREFIX2_WORD_LIST("generate-prefix2-word-list", "Generuje słowa, które początych zaczyna się od istniejących słów"),
 	
 	SHOW_ALL_MISSING_WORDS("show-all-missing-words", "Generuje wszystkie słowa, które są w słowniku jmedict, a których brakuje"),
 	
