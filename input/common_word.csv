@@ -165,7 +165,7 @@
 165,,-,エンダイブ,[n],[endive]
 166,,-,エンディアン,[suf],[-endian (i.e. big-endian or little-endian)]
 167,,-,エンドライン,[n],[end line]
-168,,-,エンバシー,[n],[embassy]
+168,1,-,エンバシー,[n],[embassy]
 169,,-,エンペラー,[n],[emperor]
 170,1,ＯＫ,オッケー,[exp],[OK]
 171,1,Ω,オメガ,[n],[omega]
@@ -838,7 +838,7 @@
 838,,丸見え,まるみえ,"[n, adj-no]","[full view, plain sight, completely visible]"
 839,1,丸腰,まるごし,[adj-no],"[unarmed, without weapons]"
 840,1,丸出し,まるだし,[n],"[bare, exposed, undisguised, broad (provincial accent)]"
-841,,丸洗い,まるあらい,"[n, vs]","[washing a kimono (or futon, etc.) without taking it apart, laundering whole]"
+841,1,丸洗い,まるあらい,"[n, vs]","[washing a kimono (or futon, etc.) without taking it apart, laundering whole]"
 842,,丸本,まるぼん,[n],"[reciter's book, complete set of books]"
 843,1,丸木,まるき,[n],[log]
 844,1,丸裸,まるはだか,"[adj-na, n]","[nude, utterly stark naked, wearing only one's birthday suit]"
@@ -896,7 +896,7 @@
 896,1,気流,きりゅう,[n],"[atmospheric current, air current, airflow]"
 897,1,規則的,きそくてき,[adj-na],"[systematic, regular, routine]"
 898,,記,き,"[n, n-suf]","[account, history, chronicle, annals, record, Records of Ancient Matters]"
-899,,記名,きめい,"[n, vs]","[signature, register, to put one's name on, to sign, stamped name, typed name]"
+899,1,記名,きめい,"[n, vs]","[signature, register, to put one's name on, to sign, stamped name, typed name]"
 900,1,貴社,きしゃ,[n],"[your company, your shrine]"
 901,1,貴婦人,きふじん,[n],[lady]
 902,1,貴女,あなた,"[pn, adj-no]",[you (referring to someone of equal or lower status)]
@@ -1192,7 +1192,7 @@
 1192,1,結納,ゆいのう,"[n, vs]","[engagement gift, (ceremonial) exchange of engagement gifts]"
 1193,,血眼,ちまなこ,[n],"[bloodshot eyes, in a frenzy]"
 1194,1,血筋,ちすじ,[n],"[lineage, stock, strain, blood relationship]"
-1195,,血行,けっこう,[n],[circulation (of the blood)]
+1195,1,血行,けっこう,[n],[circulation (of the blood)]
 1196,1,血小板,けっしょうばん,[n],[platelet]
 1197,1,血色,けっしょく,[n],[complexion]
 1198,1,血清,けっせい,"[n, adj-no]",[serum]
@@ -1401,7 +1401,7 @@
 1401,1,綱紀粛正,こうきしゅくせい,[n],"[eliminating corruption among government officials, tightening discipline (among)]"
 1402,,考え込む,かんがえこむ,"[v5m, vi]","[to ponder, to brood]"
 1403,,考え出す,かんがえだす,[v5s],"[to think out, to devise, to invent, to begin to think, to come up with a plan]"
-1404,,考査,こうさ,"[n, vs]","[examination, consideration, test, quiz]"
+1404,1,考査,こうさ,"[n, vs]","[examination, consideration, test, quiz]"
 1405,1,航空宇宙技術研究所,こうくううちゅうぎじゅつけんきゅうじょ,[n],"[National Aerospace Laboratory, NAL]"
 1406,1,航跡,こうせき,[n],[wake (of boat)]
 1407,1,荒海,あらうみ,[n],[rough sea]
@@ -1913,7 +1913,7 @@
 1913,1,住み替える,すみかえる,"[v1, vt]",[to change one's residence]
 1914,1,充血,じゅうけつ,"[n, vs]","[congestion (with blood), hyperemia, hyperaemia]"
 1915,1,十月革命,じゅうがつかくめい,[n],[October Revolution]
-1916,,十字軍,じゅうじぐん,[n],"[Crusades, Crusaders]"
+1916,1,十字軍,じゅうじぐん,[n],"[Crusades, Crusaders]"
 1917,,十種競技,じっしゅきょうぎ,[n],[decathlon]
 1918,1,十二指腸,じゅうにしちょう,"[n, adj-no]",[duodenum]
 1919,1,十文字,じゅうもんじ,"[n, adj-no]","[cross, cruciform]"
@@ -2288,7 +2288,7 @@
 2288,,正攻法,せいこうほう,[n],[frontal attack]
 2289,1,正史,せいし,[n],"[official history, authorized history]"
 2290,1,正視,せいし,"[n, vs, adj-no]","[looking straight ahead, viewing sincerely, normal vision]"
-2291,,正室,せいしつ,[n],"[legal wife (of a noble) (as opposed to a concubine), room for receiving guests, heir, successor]"
+2291,1,正室,せいしつ,[n],"[legal wife (of a noble) (as opposed to a concubine), room for receiving guests, heir, successor]"
 2292,1,正殿,せいでん,[n],"[main temple, main building of a shrine, alternate name for the Shishiden, Hall for State Ceremonies, central building of a palace, State Chamber]"
 2293,1,正答,せいとう,"[n, vs]",[correct answer]
 2294,,正統派,せいとうは,[n],[orthodox school]
@@ -2315,7 +2315,7 @@
 2315,,精肉,せいにく,[n],"[(good quality) meat, processed meat, small goods]"
 2316,1,精錬,せいれん,"[n, vs]","[refining, refinement, smelting, training]"
 2317,1,製錬,せいれん,"[n, vs]","[refining, refinement, smelting]"
-2318,,精緻,せいち,"[adj-na, n]","[delicate, minute, subtle]"
+2318,1,精緻,せいち,"[adj-na, n]","[delicate, minute, subtle]"
 2319,1,聖典,せいてん,[n],"[scriptures, sacred book, holy book, holy writings, writings of a sage, sage's memoir]"
 2320,1,声帯,せいたい,[n],[vocal cords]
 2321,,声紋,せいもん,[n],[voice print]
@@ -2762,7 +2762,7 @@
 2762,1,釣鐘,つりがね,[n],"[temple bell, hanging bell, funeral bell]"
 2763,1,低圧,ていあつ,"[n, adj-no]","[low pressure, low voltage]"
 2764,1,低位,ていい,[n],[lower position]
-2765,,低額,ていがく,[n],[small amount]
+2765,1,低額,ていがく,[n],[small amount]
 2766,1,低空,ていくう,"[n, adj-no]","[low altitude, low sky]"
 2767,1,低空飛行,ていくうひこう,[n],[low-altitude flying]
 2768,,低血圧,ていけつあつ,[n],[low blood pressure]
@@ -3257,7 +3257,7 @@
 3257,1,端先,はなさき,[],[tip (of something)]
 3258,1,必然性,ひつぜんせい,[n],"[necessity, inevitability]"
 3259,,必要条件,ひつようじょうけん,[n],"[necessary condition, requirement]"
-3260,,百家争鳴,ひゃっかそうめい,[n],[Let a hundred schools of thought contend]
+3260,1,百家争鳴,ひゃっかそうめい,[n],[Let a hundred schools of thought contend]
 3261,1,百科,ひゃっか,[n],"[many objects (for study), encyclopedia, encyclopaedia]"
 3262,,百科全書,ひゃっかぜんしょ,[n],"[encyclopedia, Diderot's ""Encyclopedie universelle des arts et sciences""]"
 3263,1,百害,ひゃくがい,[n],[great damage]
@@ -4280,7 +4280,7 @@
 4280,1,早稲,わせ,"[n, adj-no]","[early ripening rice, early-ripening fruit (grain, etc.), person who becomes physically or mentally mature at an early age]"
 4281,,割り増し,わりまし,"[n, adj-no]","[premium, bonus, extra wages, (after a number) tenths increase]"
 4282,1,原題,げんだい,[n],[original title]
-4283,,楽壇,がくだん,[n],[musical world]
+4283,1,楽壇,がくだん,[n],[musical world]
 4284,1,老師,ろうし,[n],"[old priest, sage, (Zen) teacher]"
 4285,,思い違い,おもいちがい,"[n, vs]","[misunderstanding, misapprehension, false impression, to be mistaken, to have the wrong idea]"
 4286,1,弁天,べんてん,[n],[Benten (goddess of arts and wisdom)]
@@ -4294,7 +4294,7 @@
 4294,1,先鋭,せんえい,"[adj-na, n, adj-no]","[radical, acute, sharp]"
 4295,1,言いがかり,いいがかり,[n],"[false accusation, pretext, commitment]"
 4296,1,狂わす,くるわす,[v5s],"[to drive mad, to make insane, to cause a malfunction, to put out of order, to throw out of kilter, to derail (a plan, etc.)]"
-4297,,咥える,くわえる,"[v1, vt]",[to hold in one's mouth]
+4297,1,咥える,くわえる,"[v1, vt]",[to hold in one's mouth]
 4298,1,強張る,こわばる,"[v5r, vi]","[to stiffen, to become stiff]"
 4299,1,ずる賢い,ずるがしこい,[adj-i],"[devious, cunning, sly, crafty]"
 4300,1,明月,めいげつ,[n],"[harvest moon, bright moon, full moon]"
@@ -4490,7 +4490,7 @@
 4490,1,閉校,へいこう,"[n, vs]",[closing a school]
 4491,1,閉山,へいざん,"[n, vs]","[end the climbing season, closure of a mountain to climbers, closing a mine, discontinuation of mining]"
 4492,1,変転,へんてん,"[n, vs]","[mutation, change, transition]"
-4493,,減り,へり,[n],"[decrease, reduction, fall]"
+4493,1,減り,へり,[n],"[decrease, reduction, fall]"
 4494,1,非番,ひばん,[n],[off duty]
 4495,1,非業の死,ひごうのし,[n],[unnatural death]
 4496,1,悲喜,ひき,[n],[joys and sorrows]
@@ -5270,7 +5270,7 @@
 5270,1,書類送検,しょるいそうけん,"[n, vs]","[sending documents to a prosecutor, filing charges]"
 5271,1,土俵入り,どひょういり,[n],[entrance procession of wrestlers into the ring]
 5272,1,土製,どせい,[n],"[clay, earthen]"
-5273,,土質,どしつ,[n],"[soil, soil quality]"
+5273,1,土質,どしつ,[n],"[soil, soil quality]"
 5274,1,社内報,しゃないほう,[n],[company newsletter]
 5275,1,社中,しゃちゅう,[n],"[in a company, troupe]"
 5276,1,社史,しゃし,[n],[history of a company]
@@ -5360,7 +5360,7 @@
 5360,1,謝恩会,しゃおんかい,[n],[thank-you party]
 5361,1,駆け出し,かけだし,"[n, adj-no]","[novice, beginner, starting to run, running off, running away]"
 5362,1,駆け付け三杯,かけつけさんばい,[n],[three cups of sake which latecomers to a party are made to drink]
-5363,,具申,ぐしん,"[n, vs]",[offering a full report to a superior]
+5363,1,具申,ぐしん,"[n, vs]",[offering a full report to a superior]
 5364,1,椎間板,ついかんばん,[n],[intervertebral disk]
 5365,,春陽,しゅんよう,[n],"[spring sunshine, springtime]"
 5366,1,対人,たいじん,[adj-no],"[personal, inter-personal]"
@@ -6363,7 +6363,7 @@
 6363,1,難事,なんじ,[n],[difficulty]
 6364,1,難燃加工,なんねんかこう,[n],[fireproof]
 6365,1,熱波,ねっぱ,[n],[heat wave]
-6366,,熱風,ねっぷう,[n],[hot wind]
+6366,1,熱風,ねっぷう,[n],[hot wind]
 6367,1,熱帯低気圧,ねったいていきあつ,[n],[tropical cyclone]
 6368,1,熱帯夜,ねったいや,[n],"[sultry night, sweltering night, night in which temperature doesn't fall below 25 degrees C]"
 6369,1,熱源,ねつげん,[n],[heat source]
@@ -6786,7 +6786,7 @@
 6786,1,投了,とうりょう,"[n, vs]","[resignation, giving up the game for lost]"
 6787,1,柳刃包丁,やなぎばぼうちょう,[n],[kitchen knife for sashimi]
 6788,,檄,げき,[n],"[(written) appeal, circular, manifesto, encouragement, encouraging words, letter of encouragement]"
-6789,,国立予防衛生研究所,こくりつよぼうえいせいけんきゅうしょ,[n],[National Institute of Health]
+6789,1,国立予防衛生研究所,こくりつよぼうえいせいけんきゅうしょ,[n],[National Institute of Health]
 6790,1,予研,よけん,[n],[National Institute of Health]
 6791,1,情報学,じょうほうがく,[n],[informatics]
 6792,1,類する,るいする,[vs-s],[to be similar to]
@@ -7865,7 +7865,7 @@ counter for long, thin things (i.e. swords)"
 -----------
 -----------
 first doing of ... (ever, in one's life, in the new year, etc.) ()"
-7045,,獣,しし,,"_
+7045,1,獣,しし,,"_
 -----------
 -----------
 beast (esp. one used for its meat, such as a boar or a deer) (archaism)
@@ -8758,7 +8758,7 @@ open (word usually written using kana alone)"
 -----------
 large river (esp. the Yangtze) (archaism)
 Lake Biwa"
-7205,,柱,じゅう,,"_
+7205,1,柱,じゅう,,"_
 -----------
 -----------
 fret (of a biwa)"
@@ -10932,7 +10932,7 @@ astomatous"
 -----------
 detail
 details"
-7588,,細小,いさら,,"_
+7588,1,細小,いさら,,"_
 -----------
 -----------
 small (word usually written using kana alone, archaism, )
@@ -11088,12 +11088,12 @@ one's own effort"
 -----------
 -----------
 first child"
-7618,,仲人,なかびと,,"_
+7618,1,仲人,なかびと,,"_
 -----------
 -----------
 go-between (archaism)
 matchmaker (archaism)"
-7619,,手書き,てかき,,"_
+7619,1,手書き,てかき,,"_
 -----------
 -----------
 skilled penman"
@@ -11219,7 +11219,7 @@ road
 distance travelled in a day
 (with decade) one's ....
 age ...."
-7640,,良人,りょうじん,,"_
+7640,1,良人,りょうじん,,"_
 -----------
 -----------
 husband ()
@@ -11461,7 +11461,7 @@ large fan-shaped object held by an attendant and used to conceal the face of a n
 -----------
 fortune-telling (archaism)
 divination (archaism)"
-7684,,卜,ぼく,,"_
+7684,1,卜,ぼく,,"_
 -----------
 -----------
 divining (archaism)
@@ -12754,7 +12754,7 @@ male presence"
 7935,1,相,あい,[pref],"[together, mutually, fellow]"
 7936,,相,そう,[n],"[appearance, look, countenance, a 'seeming' that fortune-tellers relate to one's fortune, aspect, phase (e.g. solid, liquid and gaseous)]"
 7937,1,相,しょう,[suf],[minister of state]
-7938,,梢,こずえ,[n],"[treetop, tip of a branch]"
+7938,1,梢,こずえ,[n],"[treetop, tip of a branch]"
 7939,,栄,ロン,[n],[winning by picking up a discarded tile]
 7940,1,栄,えい,[n],"[glory, prosperity]"
 7941,1,正中,しょうちゅう,"[n, adj-no]","[center of a noh stage, Shouchuu era (1324.12.9-1326.4.26)]"
