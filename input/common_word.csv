@@ -8,7 +8,7 @@
 8,1,敵わない,かなわない,[adj-i],"[no match for, unbearable, unable, can't do, beyond one's power]"
 9,1,嚏,くさめ,"[n, exp]","[sneeze, spoken twice in response to someone sneezing as a charm against an early death]"
 10,1,愚図愚図,ぐずぐず,"[adv, adv-to, vs, adj-na]","[slowly, tardily, hesitatingly, lingering, complaining, loose, slackened]"
-11,,斯う,こう,"[adv, int]","[in this way (used for something or someone close to the speaker, including the speaker himself, or for the opinions of the speaker), thus, such, uh... (interjection used as a verbal pause)]"
+11,1,斯う,こう,"[adv, int]","[in this way (used for something or someone close to the speaker, including the speaker himself, or for the opinions of the speaker), thus, such, uh... (interjection used as a verbal pause)]"
 12,1,拘わる,こだわる,"[v5r, vi]","[to fuss over, to be particular about, to be obsessive, to be fixated]"
 13,1,この外,このほか,[conj],"[besides, moreover, in addition]"
 14,1,この間,このかん,"[n-t, n-adv]","[the other day, lately, recently, during this period, meanwhile, in the meantime]"
@@ -88,7 +88,7 @@
 88,,-,アルバトロス,[n],[albatross]
 89,1,Α,アルファ,[n],[alpha]
 90,1,-,アルブミン,[n],[albumin]
-91,,-,アルマジロ,[n],[armadillo]
+91,1,-,アルマジロ,[n],[armadillo]
 92,1,-,アルミサッシ,[n],[aluminium sash (aluminum) (i.e. window frame)]
 93,1,-,アルミホイル,[n],"[aluminum foil, aluminium foil, tin foil]"
 94,1,-,アレイ,[n],"[array, alley]"
@@ -862,7 +862,7 @@
 862,,基部,きぶ,"[n, adj-no]","[base, foundation]"
 863,1,奇形,きけい,"[n, adj-no]","[birth defect, deformity, malformation, misshapenness]"
 864,1,奇想天外,きそうてんがい,"[adj-na, n, adj-no]","[fantastic idea, bizarre]"
-865,,寄せ付ける,よせつける,"[v1, vt]","[to let (someone) come near, to let (someone) get close]"
+865,1,寄せ付ける,よせつける,"[v1, vt]","[to let (someone) come near, to let (someone) get close]"
 866,1,寄り合い,よりあい,[n],"[meeting, gathering, village assembly, two wrestlers approaching each other]"
 867,1,寄稿,きこう,"[n, vs]",[contribution (e.g. to newspaper)]
 868,1,寄宿,きしゅく,"[n, vs]",[lodging]
@@ -1461,7 +1461,7 @@
 1461,1,刻印,こくいん,"[n, vs]",[carved seal]
 1462,1,国威,こくい,[n],[national prestige]
 1463,1,国花,こっか,[n],[national flower]
-1464,,国教,こっきょう,"[n, adj-no]",[state religion]
+1464,1,国教,こっきょう,"[n, adj-no]",[state religion]
 1465,1,国史,こくし,[n],"[history of a nation, Japanese history]"
 1466,,国事,こくじ,"[n, adj-no]",[national affairs]
 1467,1,国書,こくしょ,[n],"[credentials, sovereign message]"
@@ -1734,7 +1734,7 @@
 1734,1,時勢,じせい,[n],"[spirit of the age, trends, conditions]"
 1735,1,次善,じぜん,"[n, adj-no]",[second best]
 1736,1,磁性,じせい,[n],[magnetism]
-1737,,示し合わせる,しめしあわせる,"[v1, vt]","[to arrange beforehand, to make a sign to each other, to conspire]"
+1737,1,示し合わせる,しめしあわせる,"[v1, vt]","[to arrange beforehand, to make a sign to each other, to conspire]"
 1738,1,耳飾り,みみかざり,[n],[earrings]
 1739,1,耳鼻咽喉科,じびいんこうか,[n],"[otorhinolaryngology, ear, nose and throat]"
 1740,1,自意識,じいしき,[n],[self-consciousness]
@@ -1997,7 +1997,7 @@
 1997,1,初潮,しょちょう,[n],[first menstruation]
 1998,1,初冬,しょとう,"[n-adv, n]","[early winter, tenth month of the lunar calendar]"
 1999,,初等,しょとう,[n],"[elementary, primary]"
-2000,,所感,しょかん,[n],"[impression, feeling]"
+2000,1,所感,しょかん,[n],"[impression, feeling]"
 2001,1,所作,しょさ,[n],"[conduct, behaviour, movements, gesture, one's carriage, performance (on stage, etc.), dance, acting, dance (in kabuki), dance play]"
 2002,1,所産,しょさん,[n],"[result, fruit (of), product (of)]"
 2003,,所用,しょよう,"[n, vs]","[engagement, business]"
@@ -2138,7 +2138,7 @@
 2138,1,食べ過ぎ,たべすぎ,[n],[overeating]
 2139,1,食べ残し,たべのこし,[n],[leftover food (esp. on one's plate at the end of a meal)]
 2140,1,食前,しょくぜん,"[n-adv, n-t]",[before meals]
-2141,,食通,しょくつう,[n],"[gourmandism, gourmet, gourmand, foodie]"
+2141,1,食通,しょくつう,[n],"[gourmandism, gourmet, gourmand, foodie]"
 2142,1,信教,しんきょう,[n],"[religious belief, faith]"
 2143,1,信心,しんじん,"[n, vs, adj-no]","[faith, belief, devotion, godliness]"
 2144,1,信任状,しんにんじょう,[n],[credentials]
@@ -2331,7 +2331,7 @@
 2331,1,青菜,あおな,[n],[greens]
 2332,1,青砥,あおと,[n],[medium-grade millstone]
 2333,1,静穏,せいおん,"[adj-na, n]","[serene, tranquility, tranquillity]"
-2334,,昔風,むかしふう,"[adj-na, n, adj-no]",[old fashioned]
+2334,1,昔風,むかしふう,"[adj-na, n, adj-no]",[old fashioned]
 2335,1,石器時代,せっきじだい,[n],[Stone Age]
 2336,1,石畳,いしだたみ,[n],"[(flat) stone paving, sett, flagstone, (chocolate) pavé, various rectangular pastries, esp. layered chocolate]"
 2337,1,石仏,いしぼとけ,[n],"[stone Buddhist image, unemotional person, taciturn person]"
@@ -2514,7 +2514,7 @@
 2514,1,装具,そうぐ,[n],"[equipment, harness, fittings]"
 2515,1,装束,しょうぞく,"[n, vs]","[costume, personal appearance, interior decoration, landscaping, furniture]"
 2516,1,走り去る,はしりさる,[v5r],[to run away]
-2517,,走査,そうさ,"[n, vs]","[scanning (e.g. TV), traversal]"
+2517,1,走査,そうさ,"[n, vs]","[scanning (e.g. TV), traversal]"
 2518,1,送り出す,おくりだす,"[v5s, vt]","[to send out, to forward, to show (a person) out]"
 2519,1,送り届ける,おくりとどける,"[v1, vt]","[to send to, to deliver, to escort (a person) home]"
 2520,,送受,そうじゅ,"[n, vs]","[sending and receiving, transception, to transceive, to send and receive]"
@@ -3172,7 +3172,7 @@
 3172,1,抜き取る,ぬきとる,"[v5r, vt]","[to pull out, to draw out, to disconnect]"
 3173,1,抜き出す,ぬきだす,"[v5s, vt]","[to pick out, to single out, to select, to extract, to draw out, to pull out, to distill]"
 3174,,抜き打ち,ぬきうち,[n],"[drawing a katana and attacking in the same stroke, doing something suddenly, without warning]"
-3175,,抜け出る,ぬけでる,"[v1, vi]","[to slip out, to steal out, to excel, to stand out]"
+3175,1,抜け出る,ぬけでる,"[v1, vi]","[to slip out, to steal out, to excel, to stand out]"
 3176,1,抜け落ちる,ぬけおちる,"[v1, vi]","[to come out (e.g. hair), to fall out, to collapse (e.g. building, floor), to be left out, to be omitted]"
 3177,,抜擢,ばってき,"[n, vs]","[selection (esp. from many people for an important job position), exceptional promotion]"
 3178,1,判官,じょう,[],"[3rd grade official (ritsuryo system), assistant district officer, inspector]"
@@ -3413,7 +3413,7 @@
 3413,1,奮い立つ,ふるいたつ,"[v5t, vi]",[to cheer up]
 3414,1,粉雪,こなゆき,[n],[powdered snow]
 3415,1,紛れ込む,まぎれこむ,"[v5m, vi]","[to disappear into, to slip into, to be lost in, to be mixed up with]"
-3416,,文案,ぶんあん,[n],"[draft, draught]"
+3416,1,文案,ぶんあん,[n],"[draft, draught]"
 3417,1,文官,ぶんかん,[n],[civil official]
 3418,1,文豪,ぶんごう,[n],[literary master]
 3419,,文例,ぶんれい,[n],[sample sentence]
@@ -3595,7 +3595,7 @@
 3595,1,末寺,まつじ,[n],[branch temple]
 3596,1,末梢,まっしょう,"[n, adj-no]","[tree top, tip, periphery, minor details, nonessentials]"
 3597,1,万感,ばんかん,[n],"[flood of emotions, many thoughts]"
-3598,,万策,ばんさく,[n],[all means]
+3598,1,万策,ばんさく,[n],[all means]
 3599,,万端,ばんたん,[n],"[all, everything]"
 3600,1,万有引力,ばんゆういんりょく,[n],[universal gravitation]
 3601,1,蔓延,まんえん,"[n, vs]","[spread (e.g. of a disease), rampancy, infestation, proliferation, being widespread]"
@@ -3929,7 +3929,7 @@
 3929,1,悪名高い,あくみょうたかい,[adj-i],"[infamous, notorious]"
 3930,1,悪霊,あくりょう,[n],[evil spirit]
 3931,,案文,あんぶん,[n],"[draft, draught]"
-3932,,闇夜,あんや,[n],[dark night]
+3932,1,闇夜,あんや,[n],[dark night]
 3933,1,一家言,いっかげん,[n],"[private opinion, personal view, personal opinion]"
 3934,1,一個人,いちこじん,"[n, adj-no]","[private person, individual]"
 3935,1,一山,ひとやま,[n],"[one mountain, pile (of something), heap, lot (in sale), hump, worst part, large profit, killing]"
@@ -4327,7 +4327,7 @@
 4327,1,破摧,はさい,"[n, vs, adj-no]","[crushing, smashing, cracking to pieces]"
 4328,,亢進,こうしん,"[n, vs]","[rising, exacerbated, exasperated, accelerated, aggravated]"
 4329,1,座礁,ざしょう,"[n, vs]","[running aground, being stranded]"
-4330,,座視,ざし,"[n, vs]","[remaining an idle spectator, looking on unconcernedly (doing nothing)]"
+4330,1,座視,ざし,"[n, vs]","[remaining an idle spectator, looking on unconcernedly (doing nothing)]"
 4331,1,徒,あだ,"[adj-na, n]","[vain, futile, transient, frivolous]"
 4332,1,牧歌的,ぼっかてき,[adj-na],"[pastoral, idyllic]"
 4333,1,珍妙,ちんみょう,"[adj-na, n]","[queer, odd, fantastic]"
@@ -4553,7 +4553,7 @@
 4553,,擤む,かむ,"[v5m, vt]",[to blow (one's nose)]
 4554,,気遣わしい,きづかわしい,[adj-i],"[anxiously, with anxious looks, with anxiety]"
 4555,1,泣き出す,なきだす,"[v5s, vi]","[to burst into tears, to burst out crying, to begin to cry, to be moved to tears]"
-4556,,呼ばわり,よばわり,[vs],"[to call (e.g. somebody a thief), to denounce, to brand as]"
+4556,1,呼ばわり,よばわり,[vs],"[to call (e.g. somebody a thief), to denounce, to brand as]"
 4557,,鉦,かね,[n],"[gong, handbell]"
 4558,1,暮らし向き,くらしむき,[n],"[circumstances, lifestyle, life circumstances]"
 4559,1,赤土,あかつち,[n],"[red clay, tuff loam, dark-red paint]"
@@ -5631,7 +5631,7 @@
 5631,1,国民体育大会,こくみんたいいくたいかい,[n],[National Athletic Meet]
 5632,1,国民審査,こくみんしんさ,[n],[national review (as an act of a peoples' sovereignty)]
 5633,1,国光,こっこう,[n],"[national glory, Ralls Genet (cultivar of apple), Ralls Janet, Rawls Jennet]"
-5634,,国有化,こくゆうか,"[n, vs]","[nationalization, nationalisation]"
+5634,1,国有化,こくゆうか,"[n, vs]","[nationalization, nationalisation]"
 5635,1,国法,こくほう,[n],[national law]
 5636,1,国家主義,こっかしゅぎ,"[n, adj-no]","[nationalism, statism]"
 5637,,国許,くにもと,[n],"[hometown, native place]"
@@ -6467,7 +6467,7 @@
 6467,1,風圧,ふうあつ,[n],[wind pressure]
 6468,1,風合い,ふうあい,[n],[texture]
 6469,,風俗営業,ふうぞくえいぎょう,[n],"[business offering food and entertainment, cabaret, club and restaurant business, sex industry]"
-6470,,風変わり,ふうがわり,"[adj-na, n]","[strange, eccentric]"
+6470,1,風変わり,ふうがわり,"[adj-na, n]","[strange, eccentric]"
 6471,1,風前,ふうぜん,[n],[where the wind blows]
 6472,1,風貌,ふうぼう,[n],"[looks, appearance]"
 6473,1,早出,はやで,"[n, vs]",[early arrival]
@@ -6983,7 +6983,7 @@ time for -
 time of -
 - time
 (suitable) time to -"
-6889,,人,と,,"_
+6889,1,人,と,,"_
 -----------
 -----------
 person"
@@ -8986,7 +8986,7 @@ place where people gather
 police station (archaism)
 camp (archaism)
 barracks (archaism)"
-7243,,神,み,,"_
+7243,1,神,み,,"_
 -----------
 -----------
 soul (archaism)
@@ -10125,7 +10125,7 @@ proof of identity (for nobles, doctors, etc.) (Heian period) (archaism)"
 -----------
 -----------
 counter for soakings (of fabric in a dye) (archaism)"
-7445,,一方,ひとかた,,"_
+7445,1,一方,ひとかた,,"_
 -----------
 -----------
 one person (honorific or respectful (sonkeigo) language)
@@ -11499,7 +11499,7 @@ ramie (Boehmeria nivea var. nipononivea) (word usually written using kana alone)
 light
 lamp
 obsolete unit of luminous intensity (approx. 1.0067 candela)"
-7690,,素,そ,,"_
+7690,1,素,そ,,"_
 -----------
 -----------
 plain, white silk
@@ -12192,7 +12192,7 @@ crushing blow"
 -----------
 one's hand being completely concealed (abbreviation)
 not having called any tiles (abbreviation)"
-7819,,枝垂れ,しだれ,,"_
+7819,1,枝垂れ,しだれ,,"_
 -----------
 -----------
 weeping form (e.g. tree)"
@@ -12340,7 +12340,7 @@ fellow practicer of austerities"
 ring
 link
 open spirals of heavy metal wire twisted into a kettle and used to lift it (tea ceremony)"
-7843,,取り得,とりどく,,"_
+7843,1,取り得,とりどく,,"_
 -----------
 -----------
 gain
@@ -12741,9 +12741,9 @@ male presence"
 7922,,清々,せいせい,"[adv-to, adv, vs]","[feeling refreshed, feeling relieved]"
 7923,1,生り,なり,[n],[bearing (fruit)]
 7924,1,白板,はくばん,[n],"[whiteboard, white board]"
-7925,,鰓,えら,[n],"[gills, branchia]"
+7925,1,鰓,えら,[n],"[gills, branchia]"
 7926,1,薄,うす,[pref],"[light (e.g. colour, color)]"
-7927,,漁り,あさり,"[n-suf, n]","[searching, rummaging, fishing, collecting shells]"
+7927,1,漁り,あさり,"[n-suf, n]","[searching, rummaging, fishing, collecting shells]"
 7928,1,芒,のぎ,[n],"[arista, awn, (grain) beard]"
 7929,,金平,かねひら,[n],[Acheilognathus rhombeus (species of cyprinid)]
 7930,1,執,しゅう,[n],"[attachment, obsession, persistence]"
