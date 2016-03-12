@@ -54,7 +54,7 @@ public class WordGenerator {
 		
 		String operationString = null;
 		Operation operation = null;
-		
+				
 		// wstepne sprawdzenie argumentow		
 		if (args.length == 0) {
 			
@@ -78,7 +78,7 @@ public class WordGenerator {
 		// utworzenie helper'a
 		WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper("input/word.csv", "input/common_word.csv", 
 				"../JapaneseDictionary_additional/JMdict_e");
-
+		
 		// przetwarzanie operacji
 		switch (operation) {
 			
@@ -817,6 +817,103 @@ public class WordGenerator {
 				
 				// zapis do pliku
 				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/all_missing_word.csv");
+				
+				break;
+			}
+			
+			case SHOW_ALREADY_ADD_WORDS: {
+				
+				if (args.length != 2) {
+					
+					System.err.println("Niepoprawna liczba argumentów");
+					
+					return;
+				}
+				
+				String fileName = args[1];
+								
+				// wczytywanie pliku z lista slow
+				System.out.println("Wczytywanie brakujących słów...");
+				
+				List<String> missingWords = readFile(fileName);
+				
+				// pobranie cache ze slowami
+				Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
+
+				// tworzenie indeksu lucene
+				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
+								
+				// stworzenie wyszukiwacza
+				IndexReader reader = DirectoryReader.open(luceneIndex);
+
+				IndexSearcher searcher = new IndexSearcher(reader);
+
+				// generowanie slow				
+				List<String> foundWordSearchList = new ArrayList<String>();		
+								
+				int counter = 0;
+				
+				Set<Integer> alreadyFoundDocument = new TreeSet<Integer>();
+								
+				System.out.println("Szukanie...");
+								
+				for (String currentMissingWord : missingWords) {
+					
+					if (currentMissingWord.equals("") == true) {
+						continue;
+					}
+										
+					counter++;
+
+					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
+
+					ScoreDoc[] scoreDocs = searcher.search(query, null, 10).scoreDocs;
+					
+					if (scoreDocs.length > 0) {
+						
+						Boolean currentMissingWordAlreadyFound = null;
+						
+						for (ScoreDoc scoreDoc : scoreDocs) {
+							
+							if (alreadyFoundDocument.contains(scoreDoc.doc) == true) {
+								continue;
+								
+							} else {
+								alreadyFoundDocument.add(scoreDoc.doc);
+								
+							}
+							
+							if (currentMissingWordAlreadyFound == null) {
+								currentMissingWordAlreadyFound = true;
+							}							
+
+							Document foundDocument = searcher.doc(scoreDoc.doc);
+
+							GroupEntry groupEntry = Helper.createGroupEntry(foundDocument);
+							
+							CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counter, currentMissingWord);
+																			
+							if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
+								currentMissingWordAlreadyFound = false;
+								
+								break;								
+							}
+						}	
+						
+						if (currentMissingWordAlreadyFound != null && currentMissingWordAlreadyFound.booleanValue() == true) {
+							foundWordSearchList.add(currentMissingWord);
+						}
+					}
+				}
+
+				reader.close();
+				
+				System.out.println("Zapisywanie słownika...");
+								
+				FileWriter searchResultFileWriter = new FileWriter(fileName + "-new");
+				
+				searchResultFileWriter.write(Utils.convertListToString(foundWordSearchList));				
+				searchResultFileWriter.close();
 				
 				break;
 			}
