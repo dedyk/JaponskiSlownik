@@ -118,7 +118,7 @@
 118,1,-,インフレーション,[n],[inflation]
 119,1,-,インボイス,[n],[invoice]
 120,1,-,ウィークデー,[n],[weekday]
-121,,-,ウイット,[n],[wit]
+121,1,-,ウイット,[n],[wit]
 122,1,-,ウイニングショット,[n],"[winning shot (tennis, ball games)]"
 123,1,-,ウイニングボール,[n],[winning ball]
 124,,-,ウインドブレーカー,[n],"[windbreaker, jacket]"
@@ -193,7 +193,7 @@
 193,1,Ｇパン,ジーパン,[n],"[jeans, dungarees]"
 194,1,ＪＥＴＲＯ,ジェトロ,[n],"[Japanese External Trade Organization (Organisation), JETRO]"
 195,1,ＪＩＳ,ジス,[n],"[Japanese Industrial Standard, JIS]"
-196,,ＪＡＳ,ジャス,[n],"[Japanese Agricultural Standard, JAS]"
+196,1,ＪＡＳ,ジャス,[n],"[Japanese Agricultural Standard, JAS]"
 197,1,牙買加,ジャマイカ,[n],[Jamaica]
 198,1,寿府,ジュネーブ,[n],[Geneva]
 199,1,塞爾維,セルビア,[n],[Serbia]
@@ -205,7 +205,7 @@
 205,1,Δ,デルタ,[n],[delta]
 206,1,土耳古,トルコ,[n],"[Turkey, turquoise]"
 207,1,尼加拉瓦,ニカラグア,[n],[Nicaragua]
-208,,-,ニス,[n],[varnish]
+208,1,-,ニス,[n],[varnish]
 209,1,紐育,ニューヨーク,[n],"[New York (US state, city)]"
 210,1,-,ハーキュリーズ,[n],"[Hercules, Herakles]"
 211,1,布哇,ハワイ,[n],[Hawaii]
@@ -668,8 +668,8 @@
 668,1,翳み,かすみ,[],[dimness (of sight)]
 669,1,我ながら,われながら,[adv],"[even if I say so myself, for me (to do such a thing)]"
 670,1,我流,がりゅう,"[n, adj-no]","[self-taught, one's own way]"
-671,,牙城,がじょう,[n],"[stronghold (esp. of an enemy or opponent), inner citadel, bastion]"
-672,,画材,がざい,[n],"[subject matter of a painting, art supplies, art materials]"
+671,1,牙城,がじょう,[n],"[stronghold (esp. of an enemy or opponent), inner citadel, bastion]"
+672,1,画材,がざい,[n],"[subject matter of a painting, art supplies, art materials]"
 673,1,画策,かくさく,"[n, vs]","[plan, scheme, program formulation, programme formulation, maneuver, manoeuvre]"
 674,1,画題,がだい,[n],"[motif, theme, subject (of picture)]"
 675,1,画壇,がだん,[n],"[artists' world, painting circles]"
@@ -812,7 +812,7 @@
 812,1,感傷,かんしょう,[n],"[sentiment, sentimentality]"
 813,1,感電,かんでん,"[n, vs]",[receive an electric shock]
 814,1,感服,かんぷく,"[adj-na, n, vs]",[admirable]
-815,,慣用,かんよう,"[n, vs, adj-no]","[common, customary]"
+815,1,慣用,かんよう,"[n, vs, adj-no]","[common, customary]"
 816,1,柑橘類,かんきつるい,[n],[citrus fruits]
 817,1,歓呼,かんこ,"[n, vs]","[acclamation, jubilation]"
 818,1,歓送,かんそう,"[n, vs]",[hearty send-off]
@@ -1185,7 +1185,7 @@
 1185,,決闘,けっとう,"[n, vs]","[duel, shoot-out]"
 1186,1,穴場,あなば,[n],"[little-known good place, good out-of-the-way place, well-kept-secret place, hole-in-the-wall]"
 1187,1,結果論,けっかろん,[n],[hindsight-based opinion]
-1188,,結審,けっしん,"[n, vs]",[conclusion of trial (hearing)]
+1188,1,結審,けっしん,"[n, vs]",[conclusion of trial (hearing)]
 1189,1,結石,けっせき,"[n, adj-no]",[calculus (concretion of minerals formed inside the body)]
 1190,1,結節,けっせつ,"[n, vs, adj-no]","[knot, nodule, tubercule, node]"
 1191,1,結腸,けっちょう,"[n, adj-no]",[colon]
@@ -1326,7 +1326,7 @@
 1326,1,御曹司,おんぞうし,[n],"[son of a distinguished family, son of a noble]"
 1327,1,御用,ごよう,[n],"[your order, your business, official business, arrest, apprehension, capture]"
 1328,1,御覧,ごらん,"[int, n]","[(please) try to, (please) look, seeing, looking, watching]"
-1329,,語り継ぐ,かたりつぐ,"[v5g, vt]","[to transmit, to hand down]"
+1329,1,語り継ぐ,かたりつぐ,"[v5g, vt]","[to transmit, to hand down]"
 1330,1,語り合う,かたりあう,"[v5u, vt]",[to talk together]
 1331,1,語感,ごかん,[n],"[sense of language, feeling of a word, impression a word makes, nuance]"
 1332,,語数,ごすう,[n],[number of words]
@@ -1351,7 +1351,7 @@
 1351,1,公告,こうこく,"[n, vs]","[public announcement, official notice]"
 1352,1,公証人,こうしょうにん,[n],"[notary public, notary, public notary]"
 1353,1,公正証書,こうせいしょうしょ,[n],"[notarized document, notarised document]"
-1354,,公党,こうとう,[n],[political party]
+1354,1,公党,こうとう,[n],[political party]
 1355,1,公道,こうどう,[n],"[public road, justice]"
 1356,,公明正大,こうめいせいだい,"[adj-na, n]","[fairness, just and upright, aboveboard]"
 1357,1,公用文,こうようぶん,[n],[official terminology]
@@ -1650,7 +1650,7 @@
 1650,1,使い慣れる,つかいなれる,[v1],[to get accustomed to using]
 1651,1,使い込む,つかいこむ,"[v5m, vt]","[to embezzle, to misappropriate, to peculate, to accustom oneself to using, to use for a long time]"
 1652,1,使い手,つかいて,[n],"[user, consumer, employer, master (e.g. of swordsmanship), prodigal, spendthrift]"
-1653,,使い切る,つかいきる,"[v5r, vt]","[to use up, to exhaust, to wear out]"
+1653,1,使い切る,つかいきる,"[v5r, vt]","[to use up, to exhaust, to wear out]"
 1654,1,遣い物,つかいもの,[n],"[useful thing, usable article, present, gift]"
 1655,1,使い物,つかいもの,[n],"[useful thing, usable article]"
 1656,1,刺し網,さしあみ,[n],[gill net]
@@ -2375,7 +2375,7 @@
 2375,1,接合,せつごう,"[n, vs]","[union, joining, conjugation]"
 2376,,接地,せっち,"[n, vs]","[ground (elec), contact patch (between car tyre and road), landing (an aeroplane, airplane)]"
 2377,1,折り合う,おりあう,"[v5u, vi]",[to compromise]
-2378,,折り重なる,おりかさなる,"[v5r, vi]","[to lie on top of one another, to be in a heap]"
+2378,1,折り重なる,おりかさなる,"[v5r, vi]","[to lie on top of one another, to be in a heap]"
 2379,1,節水,せっすい,"[n, vs]","[saving water, water conservation, conservation of water]"
 2380,1,節制,せっせい,"[n, vs, adj-no]","[moderation, self-restraint, temperance]"
 2381,1,説話,せつわ,"[n, vs]","[tale, narrative]"
@@ -2663,7 +2663,7 @@
 2663,1,遅らせる,おくらせる,"[v1, vt]","[to delay, to postpone, to put off, to slow down, to hold up, to retard, to put back (a clock)]"
 2664,1,蓄音機,ちくおんき,[n],[gramophone]
 2665,1,茶会,ちゃかい,[n],"[tea party, get-together, tea ceremony]"
-2666,,茶番,ちゃばん,[n],[farce]
+2666,1,茶番,ちゃばん,[n],[farce]
 2667,1,着込む,きこむ,[v5m],"[to wear extra clothes, to dress formally]"
 2668,1,着信,ちゃくしん,"[n, vs, adj-f]","[arrival (e.g. post, signal), receiving, incoming]"
 2669,1,着心地,きごこち,[n],[(good or bad) feel when wearing something]
@@ -4767,7 +4767,7 @@
 4767,1,司直,しちょく,[n],"[judge, judiciary, administration of justice, judicial authorities]"
 4768,1,市中銀行,しちゅうぎんこう,[n],"[commercial bank, city bank, private bank, high street bank]"
 4769,1,子午線,しごせん,[n],"[meridian, meridian line]"
-4770,,紙片,しへん,[n],"[piece (scrap, bit, strip) of paper]"
+4770,1,紙片,しへん,[n],"[piece (scrap, bit, strip) of paper]"
 4771,,試乗,しじょう,"[n, vs]","[test drive, test ride, trial ride]"
 4772,1,敷石,しきいし,[n],"[paving stone, pavement]"
 4773,1,死滅,しめつ,"[n, vs]","[extinction, annihilation, destruction]"
@@ -5133,7 +5133,7 @@
 5133,1,感覚器,かんかくき,[n],[sense organ]
 5134,1,感傷的,かんしょうてき,[adj-na],"[sentimental, emotional, maudlin, mawkish]"
 5135,1,吸水性,きゅうすいせい,[n],[water absorbency]
-5136,,急先鋒,きゅうせんぽう,[n],"[van (of a movement), vanguard, forefront]"
+5136,1,急先鋒,きゅうせんぽう,[n],"[van (of a movement), vanguard, forefront]"
 5137,1,急追,きゅうつい,"[n, vs]",[(being in) hot pursuit]
 5138,1,給金,きゅうきん,[n],"[(one's) pay, wages]"
 5139,,給費,きゅうひ,"[n, vs]","[provision of expenses, scholarship]"
@@ -5600,7 +5600,7 @@
 5600,1,焼け野原,やけのはら,[n],"[burnt field, burnt area]"
 5601,1,哨戒,しょうかい,"[n, vs]",[patrolling (esp. using ships or aircraft)]
 5602,1,小手,こて,[n],[forearm]
-5603,,小出し,こだし,[n],[(apportioning) in small amounts]
+5603,1,小出し,こだし,[n],[(apportioning) in small amounts]
 5604,1,小曲,しょうきょく,"[n, adj-no]",[short piece of music]
 5605,1,小休止,しょうきゅうし,"[n, vs]","[short break, breather]"
 5606,1,小回り,こまわり,"[n, adj-no]","[tight turn, adaptability, flexibility, maneuverability]"
@@ -5711,7 +5711,7 @@
 5711,1,山河,さんが,[n],"[mountains and rivers, natural surroundings]"
 5712,1,山国,やまぐに,[n],[mountainous country]
 5713,1,山門,さんもん,[n],"[main temple gate, temple]"
-5714,,山海,さんかい,[n],[mountains and seas]
+5714,1,山海,さんかい,[n],[mountains and seas]
 5715,1,山姥,やまうば,[n],[mountain witch]
 5716,1,山盛り,やまもり,"[n, adj-no]","[heap, pile, stack, full measure]"
 5717,1,山開き,やまびらき,[n],[start of the mountain-climbing season]
@@ -6166,7 +6166,7 @@
 6166,1,瀬踏み,せぶみ,"[n, vs]","[sounding out, measuring the depths (of a river)]"
 6167,1,化学調味料,かがくちょうみりょう,[n],"[chemical seasoning (esp. monosodium glutamate), MSG]"
 6168,1,眼中,がんちゅう,[n],[consideration]
-6169,,眼底,がんてい,[n],[fundus of the eye]
+6169,1,眼底,がんてい,[n],[fundus of the eye]
 6170,1,眼前,がんぜん,[n],[before one's eyes]
 6171,1,銀製,ぎんせい,"[n, adj-no]",[made of silver]
 6172,1,店構え,みせがまえ,[n],"[store's appearance (esp. shop front, signs, etc.)]"
@@ -6645,7 +6645,7 @@
 6645,1,弾き,はじき,[n],"[gun, pistol, tiddlywinks, marbles, repellence]"
 6646,1,早まって,はやまって,[exp],[in one's hurry]
 6647,1,貼り合わせる,はりあわせる,[v1],[to paste together]
-6648,,晴れやかな笑顔,はれやかなえがお,[n],[beaming smile]
+6648,1,晴れやかな笑顔,はれやかなえがお,[n],[beaming smile]
 6649,1,標章,ひょうしょう,[n],"[emblem, ensign, mark]"
 6650,1,府税,ふぜい,[n],[urban prefectural tax]
 6651,1,風土記,ふどき,[n],"[description of regional climate, culture, etc.]"
@@ -6748,7 +6748,7 @@
 6748,1,吹き付け,ふきつけ,[n],[spraying]
 6749,1,据え付け,すえつけ,[n],"[installation, setting, fitting, mounting]"
 6750,,積み出し,つみだし,[n],"[shipment, forwarding]"
-6751,,船会社,ふながいしゃ,[n],[steamship (shipping) company]
+6751,1,船会社,ふながいしゃ,[n],[steamship (shipping) company]
 6752,1,走力,そうりょく,[n],[running ability]
 6753,1,他人様,ひとさま,[n],"[other people, others]"
 6754,1,退室,たいしつ,"[n, vs]",[exit from a room]
@@ -7233,7 +7233,7 @@ enthusiast (for)
 love (of)
 being attractive (to)
 to tend to be liked (by)"
-6936,,大丈夫,だいじょうふ,,"_
+6936,1,大丈夫,だいじょうふ,,"_
 -----------
 -----------
 great man
@@ -7613,7 +7613,7 @@ friend (colloquialism, abbreviation, word usually written using kana alone)"
 -----------
 counter for the ichi-ni-san counting system (usu. directly preceding the item being counted)
 a noun read using its on-yomi"
-6999,,箇,つ,,"_
+6999,1,箇,つ,,"_
 -----------
 -----------
 counter for the hito-futa-mi counting system (forming hitotsu, futatsu, mitsu, and misoji, yasoji, etc.) (word usually written using kana alone)"
@@ -7973,7 +7973,7 @@ area of thick growth (of trees, grass, etc.)"
 -----------
 -----------
 boiled and half-dried bonito (word usually written using kana alone, abbreviation)"
-7063,,角力,かくりょく,,"_
+7063,1,角力,かくりょく,,"_
 -----------
 -----------
 comparison of strength
@@ -11024,12 +11024,12 @@ Japanese spirea (Spiraea Japonica) (word usually written using kana alone, abbre
 -----------
 -----------
 ceremonial clothes formerly worn by nobility"
-7605,,頼み,だのみ,,"_
+7605,1,頼み,だのみ,,"_
 -----------
 -----------
 depending on
 dependent upon"
-7606,,諍う,いさかう,,"_
+7606,1,諍う,いさかう,,"_
 -----------
 -----------
 to quarrel
@@ -11548,7 +11548,7 @@ chance meeting"
 outstandingly (archaism)
 extraordinarily (archaism)
 exceptionally (archaism)"
-7700,,確,かく,,"_
+7700,1,確,かく,,"_
 -----------
 -----------
 certain
