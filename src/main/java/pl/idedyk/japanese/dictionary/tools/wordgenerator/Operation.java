@@ -4,6 +4,8 @@ public enum Operation {
 	
 	FIND_MISSING_THE_SAME_KANJI("find-missing-the-same-kanji", "Znajduje wszystkie słowa, których brakuje w słowniku, a które pisane są tym samym znakiem kanji"),
 	
+	FIND_MISSING_THE_SAME_KANA("find-missing-the-same-kana", "Znajduje wszystkie słowa, których brakuje w słowniku, a które pisane są tym samym znakiem kana"),
+	
 	FIX_DICTIONARY_WORD_TYPE("fix-dictionary-word-type", "Naprawia typy słów wedle nowego jmdict"),
 	
 	GET_COMMON_PART_LIST("get-common-part-list", "Pobiera listę common'owych słów"),

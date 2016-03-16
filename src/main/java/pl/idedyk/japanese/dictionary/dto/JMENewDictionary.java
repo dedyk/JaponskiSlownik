@@ -18,6 +18,8 @@ public class JMENewDictionary {
 	
 	private TreeMap<String, List<GroupEntry>> groupEntryOnlyKanjiCache = new TreeMap<String, List<GroupEntry>>();
 	
+	private TreeMap<String, List<GroupEntry>> groupEntryOnlyKanaCache = new TreeMap<String, List<GroupEntry>>();
+	
 	private Map<Integer, Group> groupByIdCache = new TreeMap<Integer, Group>();
 	
 	public List<Group> getGroupList() {
@@ -74,6 +76,21 @@ public class JMENewDictionary {
 		groupEntryListInOnlyKanjiCache.add(groupEntry);		
 	}	
 	
+	public void addGroupEntryToOnlyKanaCache(GroupEntry groupEntry) {
+				
+		String groupEntryKey = getKey(null, groupEntry.getKana());
+		
+		List<GroupEntry> groupEntryListInOnlyKanaCache = groupEntryOnlyKanaCache.get(groupEntryKey);
+		
+		if (groupEntryListInOnlyKanaCache == null) {
+			groupEntryListInOnlyKanaCache = new ArrayList<JMENewDictionary.GroupEntry>();
+			
+			groupEntryOnlyKanaCache.put(groupEntryKey, groupEntryListInOnlyKanaCache);			
+		}
+		
+		groupEntryListInOnlyKanaCache.add(groupEntry);		
+	}	
+	
 	public List<Group> getGroupList(String kanji, String kana) {
 		
 		List<Group> result = new ArrayList<Group>();
@@ -110,11 +127,18 @@ public class JMENewDictionary {
 		return groupEntryCache.get(groupEntryKey);
 	}
 
-	public List<GroupEntry> getGroupEntryList(String kanji) {
+	public List<GroupEntry> getGroupEntryListInOnlyKanji(String kanji) {
 		
 		String groupEntryKey = getKey(kanji, null);
 		
 		return groupEntryOnlyKanjiCache.get(groupEntryKey);
+	}
+
+	public List<GroupEntry> getGroupEntryListInOnlyKana(String kana) {
+		
+		String groupEntryKey = getKey(null, kana);
+		
+		return groupEntryOnlyKanaCache.get(groupEntryKey);
 	}
 	
 	public List<GroupEntry> getTheSameTranslateInTheSameGroupGroupEntryList(String kanji, String kana) throws DictionaryException {

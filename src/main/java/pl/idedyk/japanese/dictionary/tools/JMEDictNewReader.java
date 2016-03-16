@@ -681,6 +681,7 @@ public class JMEDictNewReader {
 				jmeNewDictionary.addGroupEntryToCache(groupEntry);
 				
 				jmeNewDictionary.addGroupEntryToOnlyKanjiCache(groupEntry);
+				jmeNewDictionary.addGroupEntryToOnlyKanaCache(groupEntry);
 			}
 		}
 				
