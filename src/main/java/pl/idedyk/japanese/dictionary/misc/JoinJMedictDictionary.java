@@ -20,12 +20,28 @@ public class JoinJMedictDictionary {
 		
 		Map<String, PolishJapaneseEntry> allPolishJapaneseNamesListMap = new TreeMap<String, PolishJapaneseEntry>();
 		
-		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names"));
-		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss1"));
-		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss2"));
-		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss3"));
-		readDir(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss4"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/WORD_MALE_NAME.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/WORD_PERSON.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/WORD_NAME.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/WORD_STATION_NAME.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/WORD_FEMALE_NAME.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/WORD_SURNAME_NAME.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/WORD_PLACE.csv"));
 		
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss1/WORD_MALE_NAME.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss1/WORD_PERSON.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss1/WORD_NAME.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss1/WORD_FEMALE_NAME.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss1/WORD_SURNAME_NAME.csv"));
+		
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss2/WORD_PLACE.csv"));
+		
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss3/WORD_UNCLASS_NAME.csv"));
+		
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss4/WORD_PRODUCT_NAME.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss4/WORD_COMPANY_NAME.csv"));
+		readFile(allPolishJapaneseNamesList, allPolishJapaneseNamesListMap, new File("input_names/miss4/WORD_ORGANIZATION_NAME.csv"));
+				
 		int id = 1;
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : allPolishJapaneseNamesList) {
@@ -58,40 +74,32 @@ public class JoinJMedictDictionary {
 		}		
 	}
 	
-	private static void readDir(List<PolishJapaneseEntry> allPolishJapaneseNamesList, Map<String, PolishJapaneseEntry> allPolishJapaneseNamesListMap, 
-			File dir) throws Exception {
-				
-		File[] dirFileList = dir.listFiles();		
+	private static void readFile(List<PolishJapaneseEntry> allPolishJapaneseNamesList, Map<String, PolishJapaneseEntry> allPolishJapaneseNamesListMap, 
+			File file) throws Exception {
 		
-		for (File currentCsvDictionaryFile : dirFileList) {	
+		List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(file.getAbsolutePath());
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : parsePolishJapaneseEntriesFromCsv) {
 			
-			if (currentCsvDictionaryFile.isFile() == true) {
+			String key = getKey(polishJapaneseEntry);
+			
+			PolishJapaneseEntry polishJapaneseEntryInMap = allPolishJapaneseNamesListMap.get(key);
+			
+			if (polishJapaneseEntryInMap == null) {
 				
-				List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(currentCsvDictionaryFile.getAbsolutePath());
+				allPolishJapaneseNamesListMap.put(key, polishJapaneseEntry);
 				
-				for (PolishJapaneseEntry polishJapaneseEntry : parsePolishJapaneseEntriesFromCsv) {
-					
-					String key = getKey(polishJapaneseEntry);
-					
-					PolishJapaneseEntry polishJapaneseEntryInMap = allPolishJapaneseNamesListMap.get(key);
-					
-					if (polishJapaneseEntryInMap == null) {
-						
-						allPolishJapaneseNamesListMap.put(key, polishJapaneseEntry);
-						
-						allPolishJapaneseNamesList.add(polishJapaneseEntry);
-						
-					} else {
-						
-						Set<DictionaryEntryType> dictionaryEntryUniqueList = new TreeSet<DictionaryEntryType>();
-						
-						dictionaryEntryUniqueList.addAll(polishJapaneseEntryInMap.getDictionaryEntryTypeList());
-						dictionaryEntryUniqueList.addAll(polishJapaneseEntry.getDictionaryEntryTypeList());
-						
-						polishJapaneseEntryInMap.setDictionaryEntryTypeList(new ArrayList<DictionaryEntryType>(dictionaryEntryUniqueList));
-					}
-				}
-			}			
+				allPolishJapaneseNamesList.add(polishJapaneseEntry);
+				
+			} else {
+				
+				Set<DictionaryEntryType> dictionaryEntryUniqueList = new TreeSet<DictionaryEntryType>();
+				
+				dictionaryEntryUniqueList.addAll(polishJapaneseEntryInMap.getDictionaryEntryTypeList());
+				dictionaryEntryUniqueList.addAll(polishJapaneseEntry.getDictionaryEntryTypeList());
+				
+				polishJapaneseEntryInMap.setDictionaryEntryTypeList(new ArrayList<DictionaryEntryType>(dictionaryEntryUniqueList));
+			}
 		}		
 	}
 	
