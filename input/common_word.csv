@@ -222,7 +222,7 @@
 222,1,-,ホログラム,[n],[hologram]
 223,1,-,ポピュリスム,[n],[populism]
 224,1,-,マイスタージンガー,[n],[(Die) Meistersinger]
-225,,-,マウンティング,[n],[mounting]
+225,1,-,マウンティング,[n],[mounting]
 226,1,燐寸,マッチ,[n],[match (to light fire with)]
 227,1,馬来西亜,マレーシア,[n],[Malaysia]
 228,1,芒果,マンゴー,[n],[mango (Mangifera indica)]
@@ -432,7 +432,7 @@
 432,1,引火,いんか,"[n, vs]",[catching fire]
 433,1,引導,いんどう,[n],"[requiem, prayer for dead, dismissal]"
 434,1,引率,いんそつ,"[n, vs]","[leading, commanding]"
-435,,飲み回る,のみまわる,"[v5r, vt]","[to go on a pub-crawl, to drink at a round of places]"
+435,1,飲み回る,のみまわる,"[v5r, vt]","[to go on a pub-crawl, to drink at a round of places]"
 436,1,飲み干す,のみほす,"[v5s, vt]","[to drink up, to drain (cup)]"
 437,1,飲み食い,のみくい,"[n, vs]","[food and drink, eating and drinking]"
 438,1,飲み放題,のみほうだい,"[exp, adj-no]","[all you can drink, bottomless cup]"
@@ -606,8 +606,8 @@
 606,1,加療,かりょう,"[n, vs]",[medical treatment]
 607,1,加齢,かれい,"[n, vs]","[aging, ageing, adding to one's years]"
 608,,可逆,かぎゃく,"[adj-na, adj-no, n]",[reversible]
-609,,可及的,かきゅうてき,[adj-na],[as ... as possible]
-610,,可視,かし,"[n, adj-no]",[visibility]
+609,1,可及的,かきゅうてき,[adj-na],[as ... as possible]
+610,1,可視,かし,"[n, adj-no]",[visibility]
 611,1,可動,かどう,"[n, adj-no]","[mobile, moveable]"
 612,1,可燃,かねん,"[adj-no, n]","[inflammable, flammable, combustible, burnable]"
 613,1,可変,かへん,"[adj-na, n, adj-no]","[variable, changeable, convertible, controllable]"
@@ -1243,7 +1243,7 @@
 1243,1,瞠る,みはる,[],[to open one's eyes wide]
 1244,1,見通す,みとおす,"[v5s, vt]","[to see without obstruction, to see through, to forecast, to predict, to anticipate]"
 1245,1,見透かす,みすかす,"[v5s, vt]",[to see through]
-1246,,見抜く,みぬく,"[v5k, vt]",[to see through]
+1246,1,見抜く,みぬく,"[v5k, vt]",[to see through]
 1247,1,見立てる,みたてる,"[v1, vt]","[to select, to choose, to diagnose (an illness), to judge, to liken to something else, to regard as something else (e.g. to use another person as a mirror), to see someone off, to look after, to be (someone's) guardian, to underrate, to look down on, to underestimate (someone)]"
 1248,1,見劣り,みおとり,"[n, vs]","[unfavourable comparison, unfavorable comparison]"
 1249,1,軒下,のきした,[n],[under the overhang of a Japanese roof]
@@ -2184,10 +2184,10 @@
 2184,1,真空管,しんくうかん,[n],[vacuum tube]
 2185,1,真性,しんせい,"[n, adj-no]","[inborn nature, genuine, intrinsic, essential]"
 2186,1,真正,しんせい,"[adj-na, n, adj-no]","[genuine, authentic, true, pure]"
-2187,,真打,しんうち,[n],"[star performer, headliner]"
+2187,1,真打,しんうち,[n],"[star performer, headliner]"
 2188,1,真田,さなだ,[n],"[plait, braid]"
 2189,1,神経症,しんけいしょう,[n],"[nervous disorder, neurosis]"
-2190,,神経戦,しんけいせん,[n],[war of nerves]
+2190,1,神経戦,しんけいせん,[n],[war of nerves]
 2191,1,神代,かみよ,[n],"[ancient time, age of the gods]"
 2192,1,神風,しんぷう,[n],[divine wind (esp. a typhoon thought to have protected Japan from a Mongolian invasion in the 13th century)]
 2193,1,神仏,しんぶつ,[n],"[gods and buddhas, gods and Buddha, Shinto and Buddhism]"
@@ -2279,7 +2279,7 @@
 2279,1,成婚,せいこん,[n],"[marriage, wedding]"
 2280,1,成仏,じょうぶつ,"[n, vs]","[entering Nirvana, becoming a Buddha, going to heaven, resting in peace, dying (peacefully)]"
 2281,1,政体,せいたい,[n],"[form of government, system of government, polity]"
-2282,,整形,せいけい,"[n, vs, adj-no]","[orthopedics, plastic surgery, cosmetic surgery, smoothing (bursty traffic, etc.), shaping, fairing]"
+2282,1,整形,せいけい,"[n, vs, adj-no]","[orthopedics, plastic surgery, cosmetic surgery, smoothing (bursty traffic, etc.), shaping, fairing]"
 2283,1,整然,せいぜん,"[adj-t, adv-to]","[orderly, regular, systematic, well-organized, well-organised, trim, tidy, accurate]"
 2284,1,整地,せいち,"[n, vs]",[soil preparation]
 2285,1,星雲,せいうん,[n],"[nebula, galaxy]"
@@ -2580,7 +2580,7 @@
 2580,1,退化,たいか,"[n, vs]","[degeneration, retrogression]"
 2581,1,退会,たいかい,"[n, vs]","[withdrawal from a group, resignation, secession, unsubscribing (mailing list, etc.)]"
 2582,1,退散,たいさん,"[n, vs]","[dispersing, breaking up, running away]"
-2583,,代案,だいあん,[n],[alternate plan]
+2583,1,代案,だいあん,[n],[alternate plan]
 2584,1,代執行,だいしっこう,[n],"[execution by proxy, subrogation (of administrative acts)]"
 2585,1,代書,だいしょ,"[n, vs]","[amanuensis, scribe]"
 2586,1,代走,だいそう,[n],[substitute runner]
@@ -2593,7 +2593,7 @@
 2593,1,大奥,おおおく,[n],"[inner palace (in Edo Castle), palace's ladies chambers, shogun's harem]"
 2594,1,大王,だいおう,[n],[great king]
 2595,1,大海,おおうみ,[n],"[ocean, large sea, fabric pattern]"
-2596,,大漁,たいりょう,[n],[big catch]
+2596,1,大漁,たいりょう,[n],[big catch]
 2597,1,大仰,おおぎょう,"[adj-na, n]",[exaggeration]
 2598,1,大局,たいきょく,[n],"[general situation, the whole point]"
 2599,1,大群,たいぐん,"[n, adj-no]","[large crowd, large herd, large flock, large school, large shoal, swarm]"
@@ -2938,7 +2938,7 @@
 2938,1,特派,とくは,"[n, vs]","[send specially, special envoy]"
 2939,1,禿,かぶろ,[n],"[baldness, bald head, children's hairstyle of short untied hair, children with short untied hair, young girl working as a servant for a high-class prostitute (Edo period), idiot, moron]"
 2940,1,毒素,どくそ,"[n, adj-no]",[toxin]
-2941,,独り相撲,ひとりずもう,[exp],"[fighting (tilting at) windmills, working oneself up even though there really isn't anything to fight at, single-person mimicking a wrestling match]"
+2941,1,独り相撲,ひとりずもう,[exp],"[fighting (tilting at) windmills, working oneself up even though there really isn't anything to fight at, single-person mimicking a wrestling match]"
 2942,1,独り立ち,ひとりだち,"[n, vs]","[being independent, standing on one's own, becoming independent]"
 2943,1,独居,どっきょ,"[n, vs]","[solitude, solitary life]"
 2944,1,独善,どくぜん,[n],"[self-righteousness, self-justified]"
@@ -3241,7 +3241,7 @@
 3241,1,飛び乗る,とびのる,"[v5r, vi]",[to jump upon (a moving object)]
 3242,1,飛び立つ,とびたつ,"[v5t, vi]","[to jump up, to start up, to leap to one's feet, to fly away, to take off]"
 3243,1,飛来,ひらい,"[n, vs]","[come flying in (migratory birds, airborne sand, pollen, etc.), come by airplane]"
-3244,,尾翼,びよく,[n],"[tail, tail plane]"
+3244,1,尾翼,びよく,[n],"[tail, tail plane]"
 3245,1,微弱,びじゃく,"[adj-na, n]","[feeble, faint, weak]"
 3246,1,微粒子,びりゅうし,[n],"[corpuscle, minute particle, particulate]"
 3247,1,微力,びりょく,"[adj-na, n]",[poor ability]
@@ -3620,7 +3620,7 @@
 3620,1,無我夢中,むがむちゅう,"[n, adj-no]","[being absorbed in, losing oneself in]"
 3621,1,無垢,むく,"[n, adj-na, adj-no]",[purity]
 3622,1,無作法,ぶさほう,"[adj-na, n]","[ill-mannered, rude]"
-3623,,無重力,むじゅうりょく,[n],"[weightlessness, zero gravity]"
+3623,1,無重力,むじゅうりょく,[n],"[weightlessness, zero gravity]"
 3624,1,無常,むじょう,"[adj-na, n, adj-no]","[uncertainty, transiency, impermanence, mutability]"
 3625,1,無政府主義,むせいふしゅぎ,[n],[(doctrine of) anarchism]
 3626,1,無声,むせい,"[n, adj-no]","[voiceless, unvoiced, silent, noiseless]"
@@ -3652,7 +3652,7 @@
 3652,1,面食らう,めんくらう,"[v5u, vi]","[to be confused, to be bewildered, to be taken aback]"
 3653,1,面前,めんぜん,[n],[presence]
 3654,1,面相,めんそう,[n],"[countenance, features, looks]"
-3655,,麺,めん,[n],"[noodles, flour]"
+3655,1,麺,めん,[n],"[noodles, flour]"
 3656,1,茂み,しげみ,[n],"[thicket, coppice, brushwood]"
 3657,1,毛穴,けあな,[n],[pores (of the skin)]
 3658,1,毛頭,もうとう,[adv],"[not in the least, not at all, not a bit]"
@@ -3712,7 +3712,7 @@
 3712,1,遊女,ゆうじょ,[n],"[prostitute, harlot]"
 3713,1,遊離,ゆうり,"[n, vs, adj-no]","[separation, isolation, release (e.g. of a chemical)]"
 3714,1,郵便為替,ゆうびんかわせ,[n],[postal money order]
-3715,,融雪,ゆうせつ,[n],"[melted snow, melting of snow]"
+3715,1,融雪,ゆうせつ,[n],"[melted snow, melting of snow]"
 3716,1,予見,よけん,"[n, vs]","[foresight, foreknowledge, divination]"
 3717,1,予行,よこう,"[n, vs]",[rehearsal]
 3718,1,予審,よしん,[n],"[preliminary examination, pretrial hearing]"
@@ -5095,7 +5095,7 @@
 5095,1,後天性,こうてんせい,[n],"[acquired, a posteriori]"
 5096,1,後ろ手,うしろで,[n],"[hands behind one's back, hands tied behind one's back, behind (e.g. someone), rear, back, appearance from behind]"
 5097,,後代,こうだい,[n],"[posterity, future generations]"
-5098,,後段,こうだん,[n],[latter or second part]
+5098,1,後段,こうだん,[n],[latter or second part]
 5099,1,後ろ指,うしろゆび,[n],[being talked about or backbitten]
 5100,1,後ろ髪,うしろがみ,[n],[hair on the back of one's head]
 5101,1,半永久,はんえいきゅう,[n],[semipermanence]
@@ -5841,7 +5841,7 @@
 5841,1,死力,しりょく,[n],[desperate effort]
 5842,1,死生,しせい,"[n, vs]",[life and death]
 5843,1,死没,しぼつ,"[n, vs]",[death]
-5844,,死に物狂い,しにものぐるい,"[exp, n, adj-no]","[desperation, struggle to the death]"
+5844,1,死に物狂い,しにものぐるい,"[exp, n, adj-no]","[desperation, struggle to the death]"
 5845,1,死海,しかい,[n],[Dead Sea]
 5846,1,死票,しひょう,[n],[useless vote]
 5847,1,死線,しせん,[n],"[point between life and death, verge of death]"
@@ -6075,7 +6075,7 @@
 6075,1,心身症,しんしんしょう,[n],[psychosomatic illness]
 6076,1,心苦しい,こころぐるしい,[adj-i],"[painful, being sorry, feeling sorry]"
 6077,1,心性,しんせい,[n],"[mind, disposition, nature]"
-6078,,心室,しんしつ,"[n, adj-no]",[ventricle]
+6078,1,心室,しんしつ,"[n, adj-no]",[ventricle]
 6079,1,心神喪失,しんしんそうしつ,"[n, adj-no]",[of unsound mind]
 6080,1,心根,こころね,[n],"[feelings, nature, disposition]"
 6081,1,心憎い,こころにくい,[adj-i],"[refined, admirable, superb]"
@@ -6370,7 +6370,7 @@
 6370,1,熱演,ねつえん,"[n, vs]",[enthusiastic performance]
 6371,1,熱闘,ねっとう,[n],[fierce fighting]
 6372,1,職安,しょくあん,[n-pr],[Public Employment Security Office]
-6373,,職制,しょくせい,[n],"[office organization, office organisation, management, managerial post]"
+6373,1,職制,しょくせい,[n],"[office organization, office organisation, management, managerial post]"
 6374,,職務質問,しょくむしつもん,"[n, vs]",[police questioning]
 6375,,職業安定所,しょくぎょうあんていじょ,[n-pr],[Public Employment Security Office]
 6376,1,職業病,しょくぎょうびょう,[n],[occupational disease]
@@ -6466,7 +6466,7 @@
 6466,1,孤高,ここう,"[adj-na, n]","[isolation, aloofness, superiority]"
 6467,1,風圧,ふうあつ,[n],[wind pressure]
 6468,1,風合い,ふうあい,[n],[texture]
-6469,,風俗営業,ふうぞくえいぎょう,[n],"[business offering food and entertainment, cabaret, club and restaurant business, sex industry]"
+6469,1,風俗営業,ふうぞくえいぎょう,[n],"[business offering food and entertainment, cabaret, club and restaurant business, sex industry]"
 6470,1,風変わり,ふうがわり,"[adj-na, n]","[strange, eccentric]"
 6471,1,風前,ふうぜん,[n],[where the wind blows]
 6472,1,風貌,ふうぼう,[n],"[looks, appearance]"
@@ -6606,7 +6606,7 @@
 6606,1,焼身自殺,しょうしんじさつ,[n],"[self-immolation, burning oneself to death, suicide by fire]"
 6607,1,生者,しょうじゃ,[n],"[animate nature, living things, living person, the living]"
 6608,1,食事時,しょくじどき,[n],[mealtime]
-6609,,織布,しょくふ,[n],[woven fabric]
+6609,1,織布,しょくふ,[n],[woven fabric]
 6610,1,准看護婦,じゅんかんごふ,[n],[practical nurse]
 6611,1,末永く,すえながく,[adv],"[forever, everlastingly, for many years to come, ever]"
 6612,1,杉林,すぎばやし,[n],[cryptomeria forest]
@@ -6664,7 +6664,7 @@
 6664,,弱まり,よわまり,[n],"[abatement, weakening]"
 6665,1,臨床医,りんしょうい,[n],[clinician]
 6666,1,労音,ろうおん,[n],[Workers' Music Council]
-6667,,分かれ,わかれ,[n],"[offshoot, branch, fork]"
+6667,1,分かれ,わかれ,[n],"[offshoot, branch, fork]"
 6668,1,悪知恵,わるぢえ,[n],"[craft, cunning, guile, serpentine wisdom]"
 6669,,液状化,えきじょうか,"[n, vs]","[liquefaction, liquefy]"
 6670,1,脆弱,ぜいじゃく,"[adj-na, n]","[frail, brittle, fragile]"
@@ -8234,7 +8234,7 @@ price
 margin (e.g. for stapling, etc.)
 area required for something
 shiro (unit of land area equal to one-fiftieth of a tan; ~19.83 m.sq.) (archaism)"
-7111,,質,たち,,"_
+7111,1,質,たち,,"_
 -----------
 -----------
 quality
@@ -10131,7 +10131,7 @@ counter for soakings (of fabric in a dye) (archaism)"
 one person (honorific or respectful (sonkeigo) language)
 (often in negative form) ordinary
 common"
-7446,,殆,ほとほと,,"_
+7446,1,殆,ほとほと,,"_
 -----------
 -----------
 quite (usu. negative connotation) (word usually written using kana alone)
@@ -10227,7 +10227,7 @@ chop chop (word usually written using kana alone)
 yeah (word usually written using kana alone)
 that's right (word usually written using kana alone)
 exactly (word usually written using kana alone)"
-7461,,白,しら,,"_
+7461,1,白,しら,,"_
 -----------
 -----------
 white
