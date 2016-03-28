@@ -121,7 +121,7 @@
 121,1,-,ウイット,[n],[wit]
 122,1,-,ウイニングショット,[n],"[winning shot (tennis, ball games)]"
 123,1,-,ウイニングボール,[n],[winning ball]
-124,,-,ウインドブレーカー,[n],"[windbreaker, jacket]"
+124,1,-,ウインドブレーカー,[n],"[windbreaker, jacket]"
 125,1,-,ウェーバー,[n],"[waiver, weber (Wb) (unit of magnetic flux)]"
 126,1,-,ウェルダン,[n],[well-done]
 127,1,-,ウォーカソン,[n],[walkathon]
@@ -285,7 +285,7 @@
 285,1,安産,あんざん,"[n, vs]","[easy delivery, easy childbirth]"
 286,1,安全地帯,あんぜんちたい,[n],[safety zone]
 287,1,安息,あんそく,[n-adv],"[rest, repose]"
-288,,安置,あんち,"[n, vs]","[enshrinement, installation (of image)]"
+288,1,安置,あんち,"[n, vs]","[enshrinement, installation (of image)]"
 289,1,安直,あんちょく,"[adj-na, n]","[inexpensive, cheap, easy, simple]"
 290,1,安堵,あんど,"[n, vs, adj-no]","[relief, reassurance, recognition of right to land ownership (by the shogunate, a feudal lord, etc.), living safely surrounded by walls]"
 291,1,暗算,あんざん,"[n, vs]",[mental arithmetic]
@@ -503,7 +503,7 @@
 503,1,遠近,えんきん,[n],"[distance, perspective, far and near, here and there]"
 504,1,遠景,えんけい,[n],"[vista, background, perspective, distant view]"
 505,1,遠出,とおで,"[n, vs]",[going afar]
-506,,遠心,えんしん,"[adj-na, n, vs, adj-no]",[centrifuge]
+506,1,遠心,えんしん,"[adj-na, n, vs, adj-no]",[centrifuge]
 507,1,遠目,とおめ,"[adj-na, n, adj-no]","[distant view, farsightedness]"
 508,1,遠来,えんらい,[n],[foreign or distant visitor]
 509,1,塩化ビニール,えんかビニール,[n],[vinyl chloride]
@@ -1163,7 +1163,7 @@
 1163,1,劇化,げきか,"[n, vs]","[dramatization, dramatisation]"
 1164,1,激的,げきてき,[],[extreme]
 1165,1,劇評,げきひょう,[n],[drama criticism]
-1166,,打ち合う,うちあう,"[v5u, vt]","[to fight, to exchange blows, to rally]"
+1166,1,打ち合う,うちあう,"[v5u, vt]","[to fight, to exchange blows, to rally]"
 1167,1,撃退,げきたい,"[n, vs]","[repulse, repel (i.e. the enemy)]"
 1168,1,撃破,げきは,"[n, vs]",[crushing]
 1169,1,激賞,げきしょう,"[n, vs]",[enthusiastic praise]
@@ -2537,7 +2537,7 @@
 2537,1,足摺,あしずり,"[n, vs]",[stamping or scraping one's feet]
 2538,1,俗に,ぞくに,[adv],"[as slang, commonly]"
 2539,1,俗説,ぞくせつ,[n],"[common saying, popular version, folklore, tradition]"
-2540,,続発,ぞくはつ,"[n, vs]","[coming about, happening, occurring, successive occurrence]"
+2540,1,続発,ぞくはつ,"[n, vs]","[coming about, happening, occurring, successive occurrence]"
 2541,,損じ,そんじ,[n],"[slip, error, failure]"
 2542,1,損じる,そんじる,"[v1, vi]","[to harm, to hurt, to injure, to damage]"
 2543,1,村八分,むらはちぶ,[n],[ostracism]
@@ -2767,7 +2767,7 @@
 2767,1,低空飛行,ていくうひこう,[n],[low-altitude flying]
 2768,1,低血圧,ていけつあつ,[n],[low blood pressure]
 2769,1,低周波,ていしゅうは,[n],[low frequency waves]
-2770,,低俗,ていぞく,"[adj-na, n]",[vulgar]
+2770,1,低俗,ていぞく,"[adj-na, n]",[vulgar]
 2771,1,低率,ていりつ,"[adj-na, n, adj-no]",[low rate]
 2772,1,低廉,ていれん,"[adj-na, n]","[cheap, inexpensive]"
 2773,1,停止,ちょうじ,"[n, vs]","[suspension, interruption, stoppage, ban, standstill, halt, hang-up, deadlock, stalemate, abeyance, suspension of music, dance, etc. as a sign of mourning for a prominent person]"
@@ -2856,11 +2856,11 @@
 2856,1,土着,どちゃく,"[n, adj-no]","[aboriginal, indigenous]"
 2857,1,土鍋,どなべ,[n],[earthenware pot]
 2858,1,土嚢,どのう,[n],[sandbag]
-2859,,土用,どよう,[n],"[midsummer, dog days]"
+2859,1,土用,どよう,[n],"[midsummer, dog days]"
 2860,1,奴,しゃつ,[],"[(derogatory or familiar) he, she, him, her]"
 2861,1,斃す,たおす,[],"[to kill, to defeat, to beat]"
 2862,1,斃れる,たおれる,[],"[to be forced to bed (by illness, etc.), to die, to go bankrupt, to be ruined, to have a bad debt, to be defeated (in a game), to fall (of governments, dictators, etc.)]"
-2863,,倒木,とうぼく,[n],[fallen tree]
+2863,1,倒木,とうぼく,[n],[fallen tree]
 2864,1,冬山,ふゆやま,[n],"[wintry mountain, mountain that is often climbed during the winter]"
 2865,1,凍傷,とうしょう,[n],"[frostbite, chilblains]"
 2866,1,凍土,とうど,[n],[frozen soil]
@@ -3525,7 +3525,7 @@
 3525,1,朋友,ほうゆう,[n],"[friend, companion]"
 3526,1,法治,ほうち,"[n, adj-no]",[constitutional government]
 3527,1,泡盛,あわもり,[n],"[awamori, strong Okinawan liquor distilled from rice or millet]"
-3528,,縫い,ぬい,[n],"[embroidery, sewing]"
+3528,1,縫い,ぬい,[n],"[embroidery, sewing]"
 3529,1,縫い付ける,ぬいつける,"[v1, vt]",[to sew on]
 3530,1,褒章,ほうしょう,[n],"[medal of honour, medal of merit]"
 3531,1,邦題,ほうだい,[n],[Japanese (translation) title given to foreign work]
@@ -3667,7 +3667,7 @@
 3667,1,目障り,めざわり,"[adj-na, n]","[eyesore, unpleasant sight, obstructing a view]"
 3668,1,目まぐるしい,めまぐるしい,[adj-i],"[hectic, bewildering, bustling, dizzy]"
 3669,1,目隠し,めかくし,"[n, vs]","[something used to cover the eyes, blindfold, blinder, blinker, eye bandage, concealing one's home such that the interior cannot be seen from outside]"
-3670,,目新しい,めあたらしい,[adj-i],"[original, novel, new]"
+3670,1,目新しい,めあたらしい,[adj-i],"[original, novel, new]"
 3671,1,目鼻,めはな,[n],"[shape, form]"
 3672,1,籾,もみ,[n],"[unhulled rice, rice in the husk, paddy, rice husks, chaff]"
 3673,1,問い詰める,といつめる,"[v1, vt]","[to press a question, to cross-examine]"
@@ -3725,7 +3725,7 @@
 3725,1,余録,よろく,[n],"[unofficial record, rumour, rumor]"
 3726,1,与え,あたえ,[n],"[gift, godsend]"
 3727,1,預け,あずけ,[n],"[custody, keeping]"
-3728,,用船,ようせん,"[n, vs]","[chartered ship, chartering or hiring a vessel]"
+3728,1,用船,ようせん,"[n, vs]","[chartered ship, chartering or hiring a vessel]"
 3729,1,幼魚,ようぎょ,[n],[fry (young fish)]
 3730,1,幼時,ようじ,"[n-t, adj-no]","[childhood, infancy]"
 3731,1,幼女,ようじょ,[n],[little girl]
@@ -4075,7 +4075,7 @@
 4075,1,裏書,うらがき,"[n, vs]","[endorsement, proof, note on back of the scroll]"
 4076,1,占い師,うらないし,[n],"[diviner, fortuneteller, soothsayer, palmist]"
 4077,1,売り掛け金,うりかけきん,[n],"[accounts receivable, outstanding sales account]"
-4078,,売り子,うりこ,[n],"[salesperson, shop assistant, hawker, peddler, vendor]"
+4078,1,売り子,うりこ,[n],"[salesperson, shop assistant, hawker, peddler, vendor]"
 4079,1,英才,えいさい,[n],"[genius, brilliance, unusual talent, gifted person, person of unusual talent]"
 4080,1,往々,おうおう,[adv],"[sometimes, often]"
 4081,1,陸符,おか,[],[bonus points awarded to the winner at the end of a game]
@@ -4192,7 +4192,7 @@
 4192,1,夏祭,なつまつり,[n],[summer festival]
 4193,1,並々,なみなみ,"[adv, n]",[ordinary]
 4194,1,並外れる,なみはずれる,"[v1, vi]",[to be uncommon]
-4195,,成り立ち,なりたち,[n],"[the way in which something came about, origin, structure, organization, the way something is constructed]"
+4195,1,成り立ち,なりたち,[n],"[the way in which something came about, origin, structure, organization, the way something is constructed]"
 4196,1,南々西,なんなんせい,[n],[south-southwest]
 4197,1,南々東,なんなんとう,[n],[south-southeast]
 4198,1,苦々しい,にがにがしい,[adj-i],"[unpleasant, disgusting, loathsome, shameful, scandalous]"
@@ -4420,7 +4420,7 @@
 4420,1,病原体,びょうげんたい,[n],[pathogen]
 4421,1,病弊,びょうへい,[n],"[evil influence, ill effect]"
 4422,1,病根,びょうこん,[n],"[cause of a disease, root of an evil]"
-4423,,病身,びょうしん,"[n, adj-no]","[weak constitution, ill health]"
+4423,1,病身,びょうしん,"[n, adj-no]","[weak constitution, ill health]"
 4424,1,着水,ちゃくすい,"[n, vs]",[landing on the water]
 4425,1,着座,ちゃくざ,"[n, vs]",[taking a seat]
 4426,1,地方版,ちほうばん,[n],[local edition]
@@ -4541,7 +4541,7 @@
 4541,1,見逃し,みのがし,[n],"[overlooking, letting a good ball go by]"
 4542,1,見立て,みたて,[n],"[choice, selection, diagnosis, medical opinion, judgement, legal opinion, comparison, parodic allusion]"
 4543,1,言い残す,いいのこす,"[v5s, vt]","[to leave word with (a person), to state in one's will, to leave (something) unsaid, to forget to mention]"
-4544,,御三家,ごさんけ,[n],"[three branch Tokugawa families (Owari, Kii, and Mito), big three, top three]"
+4544,1,御三家,ごさんけ,[n],"[three branch Tokugawa families (Owari, Kii, and Mito), big three, top three]"
 4545,1,公共職業安定所,こうきょうしょくぎょうあんていじょ,[n-pr],"[Public Employment Security Office, PESO]"
 4546,1,公述,こうじゅつ,"[n, vs]",[speaking at a public hearing]
 4547,1,行き詰まる,いきづまる,[v5r],"[to reach the limits, to come to the end of one's tether]"
@@ -4589,7 +4589,7 @@
 4589,1,女婿,じょせい,[n],[one's son-in-law]
 4590,1,定席,じょうせき,[n],"[one's habitual seat, regular hall, entertainment hall]"
 4591,1,情操,じょうそう,[n],"[sensibility (artistic, moral), (good) taste, sentiment]"
-4592,,常態,じょうたい,[n],[normal state (condition)]
+4592,1,常態,じょうたい,[n],[normal state (condition)]
 4593,1,譲与,じょうよ,"[n, vs, adj-no]",[transfer]
 4594,1,純銀,じゅんぎん,[n],[pure silver]
 4595,1,潤沢,じゅんたく,"[adj-na, n]","[abundant, ample, plentiful, affluent, lustrous, glossy]"
@@ -4727,7 +4727,7 @@
 4727,1,臨検,りんけん,"[n, vs]","[on-the-spot investigation or inspection, raid]"
 4728,1,離農,りのう,"[n, vs]",[giving up farming for another profession]
 4729,1,理路,りろ,[n],"[logic, reasoning, argument]"
-4730,,理想郷,りそうきょう,[n],"[ideal land, earthly paradise, Utopia, Arcadia]"
+4730,1,理想郷,りそうきょう,[n],"[ideal land, earthly paradise, Utopia, Arcadia]"
 4731,1,立志,りっし,[n],"[one's life goal, (fixing) one's aim in life]"
 4732,1,立像,りつぞう,[n],"[standing statue, standing image]"
 4733,1,理容,りよう,[n],"[barbering, haircutting, hairdressing]"
@@ -4760,7 +4760,7 @@
 4760,1,施主,せしゅ,[n],"[donor, benefactor, almsgiver, chief mourner, client (of a builder, etc.)]"
 4761,1,車台,しゃだい,[n],"[chassis, car body]"
 4762,1,社団,しゃだん,[n],"[corporation, association]"
-4763,,射幸心,しゃこうしん,[n],"[passion for gambling, fondness for speculation, speculative spirit]"
+4763,1,射幸心,しゃこうしん,[n],"[passion for gambling, fondness for speculation, speculative spirit]"
 4764,1,写経,しゃきょう,"[n, vs]","[hand-copied sutras, copying of a sutra]"
 4765,1,社運,しゃうん,[n],[company fortunes]
 4766,1,渋り腹,しぶりばら,[n],"[bowel pains, painful loose bowels]"
@@ -5354,7 +5354,7 @@
 5354,1,病態,びょうたい,[n],"[patient's condition, pathology]"
 5355,1,並木道,なみきみち,[n],"[avenue, boulevard, tree-lined street]"
 5356,1,百選,ひゃくせん,"[n-suf, n]","[top hundred, hundred best]"
-5357,,捨て石,すていし,[n],"[ornamental garden stone (seemingly placed randomly to give the garden a more natural appearance), sacrificed stone (in the game of go)]"
+5357,1,捨て石,すていし,[n],"[ornamental garden stone (seemingly placed randomly to give the garden a more natural appearance), sacrificed stone (in the game of go)]"
 5358,1,野辺,のべ,[n],[field]
 5359,1,野道,のみち,[n],[path in a field]
 5360,1,謝恩会,しゃおんかい,[n],[thank-you party]
@@ -5362,7 +5362,7 @@
 5362,1,駆け付け三杯,かけつけさんばい,[n],[three cups of sake which latecomers to a party are made to drink]
 5363,1,具申,ぐしん,"[n, vs]",[offering a full report to a superior]
 5364,1,椎間板,ついかんばん,[n],[intervertebral disk]
-5365,,春陽,しゅんよう,[n],"[spring sunshine, springtime]"
+5365,1,春陽,しゅんよう,[n],"[spring sunshine, springtime]"
 5366,1,対人,たいじん,[adj-no],"[personal, inter-personal]"
 5367,1,対内,たいない,[n],"[domestic, internal]"
 5368,1,対流,たいりゅう,"[n, adj-no]",[convection]
@@ -5614,7 +5614,7 @@
 5614,1,小骨,こぼね,"[n, adj-no]",[small bones]
 5615,1,小袖,こそで,[n],"[short sleeves, quilted silk garment]"
 5616,1,小異,しょうい,[n],[minor differences]
-5617,,小粒,こつぶ,"[adj-na, n, adj-no]","[small grain, small stature or ability]"
+5617,1,小粒,こつぶ,"[adj-na, n, adj-no]","[small grain, small stature or ability]"
 5618,1,小論,しょうろん,[n],"[short article, one's own article]"
 5619,1,笑いもの,わらいもの,[n],"[laughingstock, butt of ridicule]"
 5620,,答辞,とうじ,[n],[formal reply]
@@ -6063,7 +6063,7 @@
 6063,1,内回り,うちまわり,[n],"[inner tracks or lanes, going around an inner circle, indoors]"
 6064,1,内発,ないはつ,[n],[burst of energy from within]
 6065,1,納采,のうさい,[n],[betrothal gift]
-6066,,納涼,のうりょう,[n],[(enjoying the) cool of the evening]
+6066,1,納涼,のうりょう,[n],[(enjoying the) cool of the evening]
 6067,1,南極点,なんきょくてん,[n],[the South Pole]
 6068,1,賃下げ,ちんさげ,"[n, vs]",[pay cut]
 6069,1,賃金格差,ちんぎんかくさ,[n],[wage differential]
@@ -6227,7 +6227,7 @@
 6227,1,進軍,しんぐん,"[n, vs]","[march, advance]"
 6228,1,進塁,しんるい,"[n, vs]",[advance (to the next base)]
 6229,1,進駐軍,しんちゅうぐん,[n],[occupying forces (esp. of the Allies in Japan after World War II)]
-6230,,雑則,ざっそく,[n],[miscellaneous rules]
+6230,1,雑則,ざっそく,[n],[miscellaneous rules]
 6231,1,雑食,ざっしょく,"[adj-no, vs]",[omnivorous]
 6232,1,雑穀,ざっこく,[n],"[assorted grains, cereals, millet]"
 6233,1,三回忌,さんかいき,[n],[second anniversary of a death]
@@ -6553,7 +6553,7 @@
 6553,1,煩い,わずらい,[n],"[worry, agony, vexation, illness, sickness]"
 6554,1,翌春,よくしゅん,[n-t],[next spring]
 6555,1,預貸率,よたいりつ,[n],[loan-deposit ratio]
-6556,,誘爆,ゆうばく,"[n, vs]","[induced explosion, secondary explosion]"
+6556,1,誘爆,ゆうばく,"[n, vs]","[induced explosion, secondary explosion]"
 6557,1,前傾,ぜんけい,"[n, vs, adj-no]",[forward inclination (tilt)]
 6558,1,取り止めの無い,とりとめのない,[adj-i],"[incoherent, wandering, vague, rambling, whimsical]"
 6559,1,汗だく,あせだく,[exp],"[dripping with sweat, bathed in perspiration]"
@@ -8094,7 +8094,7 @@ one's destiny
 custom
 tradition
 habit"
-7086,,業,ぎょう,,"_
+7086,1,業,ぎょう,,"_
 -----------
 -----------
 work
@@ -9313,7 +9313,7 @@ Muraji (hereditary title; orig. one of the two highest such titles, later demote
 -----------
 -----------
 thunder (archaism)"
-7304,,入会,いりあい,,"_
+7304,1,入会,いりあい,,"_
 -----------
 -----------
 common (e.g. fishery or hunting ground)
@@ -9754,7 +9754,7 @@ wickedness (archaism)
 evil (archaism)
 calamity (archaism)
 disaster (archaism)"
-7378,,邸,てい,,"_
+7378,1,邸,てい,,"_
 -----------
 -----------
 residence (honorific or respectful (sonkeigo) language, )
@@ -10429,7 +10429,7 @@ tone
 will-power
 pluck
 pride"
-7493,,紛れ,まぎれ,,"_
+7493,1,紛れ,まぎれ,,"_
 -----------
 -----------
 confusion"
@@ -12446,7 +12446,7 @@ acquired at ... ()"
 -----------
 Chinese moonseed (Sinomenium acutum) (word usually written using kana alone)
 complex inter-relationship (as in the struggle between two types of vine over one piece of land)"
-7863,,灯影,とうえい,,"_
+7863,1,灯影,とうえい,,"_
 -----------
 -----------
 flicker of light"
@@ -12570,7 +12570,7 @@ switch (cane used for flogging)"
 -----------
 -----------
 severe caning (60-100 times) (archaism)"
-7889,,兎口,すぐち,,"_
+7889,1,兎口,すぐち,,"_
 -----------
 -----------
 harelip (obscure term)
