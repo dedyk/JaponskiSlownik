@@ -46,6 +46,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addMap(DictionaryEntryType.WORD_ADJECTIVE_NARI, "adj-nari");
 		addMap(DictionaryEntryType.WORD_ADJECTIVE_KU, "adj-ku");
 		addMap(DictionaryEntryType.WORD_AUX_ADJECTIVE_I, "aux-adj");
+		addMap(DictionaryEntryType.WORD_ADJECTIVE_SHIKU, "adj-shiku");
 				
 		addMap(DictionaryEntryType.WORD_PRE_NOUN_ADJECTIVAL, "adj-pn");
 		
