@@ -752,9 +752,12 @@ public class WordGenerator {
 							
 							CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
 							
-							newCommonWordMap.put(commonWord.getId(), commonWord);
-							
-							csvId++;						
+							if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
+								
+								newCommonWordMap.put(commonWord.getId(), commonWord);
+								
+								csvId++;
+							}
 						}				
 					}
 				}	
@@ -808,9 +811,12 @@ public class WordGenerator {
 							
 							CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
 							
-							newCommonWordMap.put(commonWord.getId(), commonWord);
+							if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
 							
-							csvId++;							
+								newCommonWordMap.put(commonWord.getId(), commonWord);
+							
+								csvId++;
+							}
 						}				
 					}
 				}	
@@ -1033,9 +1039,12 @@ public class WordGenerator {
 									
 									CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntryInGroup);
 									
-									newCommonWordMap.put(commonWord.getId(), commonWord);
+									if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
 									
-									csvId++;						
+										newCommonWordMap.put(commonWord.getId(), commonWord);
+									
+										csvId++;
+									}
 								}
 							}
 						}
@@ -1125,9 +1134,12 @@ public class WordGenerator {
 									
 									CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntryInGroup);
 									
-									newCommonWordMap.put(commonWord.getId(), commonWord);
+									if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
+
+										newCommonWordMap.put(commonWord.getId(), commonWord);
 									
-									csvId++;						
+										csvId++;
+									}
 								}
 							}
 						}
@@ -1198,7 +1210,7 @@ public class WordGenerator {
 
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-				
+								
 				// wczytanie slownika jmedict
 				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();				
 				
@@ -1212,7 +1224,7 @@ public class WordGenerator {
 				
 				// generowanie slow
 				System.out.println("Generowanie słów...");
-				
+								
 				Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
 
 				int csvId = 1;
@@ -1297,9 +1309,12 @@ public class WordGenerator {
 									
 									CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
 									
-									newCommonWordMap.put(commonWord.getId(), commonWord);
-									
-									csvId++;						
+									if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
+
+										newCommonWordMap.put(commonWord.getId(), commonWord);
+										
+										csvId++;										
+									}									
 								}
 							}
 						}													
@@ -1463,9 +1478,12 @@ public class WordGenerator {
 									
 									CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
 									
-									newCommonWordMap.put(commonWord.getId(), commonWord);
+									if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
 									
-									csvId++;						
+										newCommonWordMap.put(commonWord.getId(), commonWord);
+									
+										csvId++;
+									}
 								}
 							}
 						}													

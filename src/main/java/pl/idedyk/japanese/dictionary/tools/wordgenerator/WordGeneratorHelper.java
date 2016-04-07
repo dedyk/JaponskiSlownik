@@ -1,8 +1,10 @@
 package pl.idedyk.japanese.dictionary.tools.wordgenerator;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import org.apache.lucene.store.Directory;
 
@@ -33,6 +35,7 @@ public class WordGeneratorHelper {
 	private Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList;
 	
 	private Map<Integer, CommonWord> commonWordMap;
+	private Map<String, List<CommonWord>> commonWordExistsMap;
 	
 	private List<JMEDictNewNativeEntry> jmedictNativeList;
 	
@@ -88,6 +91,54 @@ public class WordGeneratorHelper {
 		}
 		
 		return commonWordMap;		
+	}
+	
+	public Map<String, List<CommonWord>> getCommonWordExistsMap() throws Exception {
+		
+		if (commonWordExistsMap == null) {
+			
+			commonWordExistsMap = new TreeMap<>();
+			
+			Map<Integer, CommonWord> commonWordMap = getCommonWordMap();
+			
+			for (CommonWord commonWord : commonWordMap.values()) {
+				
+				String key = getCommonWordKey(commonWord);
+				
+				List<CommonWord> commonWordList = commonWordExistsMap.get(key);
+				
+				if (commonWordList == null) {
+					
+					commonWordList = new ArrayList<>();
+					
+					commonWordExistsMap.put(key, commonWordList);
+				}
+				
+				commonWordList.add(commonWord);				
+			}
+		}
+		
+		return commonWordExistsMap;
+	}
+	
+	private String getCommonWordKey(CommonWord commonWord) {
+		
+		String kanji = commonWord.getKanji();
+		
+		if (kanji == null) {
+			kanji = "-";
+		}
+		
+		return kanji + "." + commonWord.getKana() + "." + commonWord.getTranslate();		
+	}
+	
+	public boolean isCommonWordExists(CommonWord commonWord) throws Exception {
+		
+		Map<String, List<CommonWord>> commonWordExistsMap = getCommonWordExistsMap();
+		
+		String key = getCommonWordKey(commonWord);
+		
+		return commonWordExistsMap.containsKey(key);
 	}
 	
 	public JMEDictNewReader getJMEDictNewReader() {
