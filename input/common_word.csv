@@ -403,7 +403,7 @@
 403,,装,そう,[n],"[clothing, binding (of a book)]"
 404,,走,そう,[suf],"[run, race]"
 405,1,甑,こしき,[n],"[steaming basket (traditionally clay or wood), steaming vat (for steaming rice in sake production)]"
-406,,甑,そう,[n],[steaming basket (traditionally clay or wood)]
+406,1,甑,そう,[n],[steaming basket (traditionally clay or wood)]
 407,,躁鬱,そううつ,"[adj-na, n]","[manic-depressive (bipolar), mood swing]"
 408,,蒼古,そうこ,"[adj-t, adv-to]",[old-fashioned and tasteful]
 409,,操行,そうこう,[n],"[conduct, deportment]"
@@ -1113,7 +1113,7 @@
 1113,,-,ガスマット,[n],[aluminum-foil burner liner]
 1114,,-,フレオンガス,[n],[Freon gas]
 1115,,-,プロパンガス,[n],[propane gas]
-1116,,-,ガスパイプライン,[n],[gas pipeline]
+1116,1,-,ガスパイプライン,[n],[gas pipeline]
 1117,,-,ガスタンク,[n],"[gas tank, gasholder, gasometer]"
 1118,,-,ガスヒーポン,[n],[gas heat pump]
 1119,,-,ガスメーター,[n],[gas meter]
@@ -2839,7 +2839,7 @@
 2839,,-,ライブラリルーチン,[n],[library routine]
 2840,,-,ランタイムライブラリ,[n],[run-time library]
 2841,,-,レコードライブラリ,[n],"[sound recordings library, record library]"
-2842,,-,アーカイブライブラリ,[n],[archive library]
+2842,1,-,アーカイブライブラリ,[n],[archive library]
 2843,,-,ダイナミックリンクライブラリ,[n],"[dynamic linking library, DLL]"
 2844,,-,ダイナミックリンクライブラリファイル,[n],[dynamic-link library file]
 2845,,-,テープライブラリー,[n],[tape library]
@@ -2853,7 +2853,7 @@
 2853,1,-,デジタルラジオ,[n],[digital radio]
 2854,,-,ラジオブイ,[n],[radio buoy]
 2855,1,-,ラテ,[n],"[latte, caffè latte, radio and television]"
-2856,,-,ラッテ,[n],"[latte, caffè latte, rat (esp. laboratory or pet)]"
+2856,1,-,ラッテ,[n],"[latte, caffè latte, rat (esp. laboratory or pet)]"
 2857,,-,カフェラテ,[n],"[cafe latte, latte]"
 2858,,-,ラテンリズム,[n],[Latin-American rhythm]
 2859,,-,リアウインドー,[n],[rear window]
@@ -3875,7 +3875,7 @@
 3875,,蓋然,がいぜん,[n],[probability]
 3876,,薄め,うすめ,"[adj-no, adj-na, n]","[slight, thin, on the weak side]"
 3877,1,薄ら,うっすら,"[adv-to, adv]","[slightly, lightly, thinly, faintly, dimly]"
-3878,,薄ら,うすら,[pref],"[slight, light, thin, faint, dim]"
+3878,1,薄ら,うすら,[pref],"[slight, light, thin, faint, dim]"
 3879,,薄利,はくり,[n],"[small profits, low interest]"
 3880,,薄明,はくめい,[n],"[twilight, dusk, faint light]"
 3881,,薄紫,うすむらさき,[n],[light purple]
@@ -4072,3 +4072,1693 @@
 4072,,黄道,こうどう,[n],[ecliptic]
 4073,,鼻高,はなたか,"[adj-na, n]","[high nose, person with a high nose, pride]"
 4074,,齧歯,げっし,[n],[rodent]
+4075,,辛み,つらみ,[n],"[pent-up resentment, grudges and hard feelings]"
+4076,,稲虫,いなむし,[n],[rice pest]
+4077,,四魔,しま,[n],[the four kinds of demons that make trouble for sentient beings]
+4078,,死魔,しま,[n],[demon of death]
+4079,,-,スチールサッシ,[n],[steel sash]
+4080,,-,スチールネールファイル,[n],[steel nail file]
+4081,,-,スチールファイル,[n],[steel file]
+4082,,-,スチールラジアル,[n],[steel radial]
+4083,,-,ディレードスチール,[n],[delayed steal]
+4084,,-,ハイスピードスチール,[n],[high-speed steel]
+4085,,-,ホームスチール,[n],[stealing home]
+4086,,-,サイクルスチール,[n],[cycle stealing]
+4087,,-,スチールバンド,[n],[steel band]
+4088,,-,ダブルスチール,[n],[double steal]
+4089,,-,スチールグレー,[n],[steel gray]
+4090,,-,スチールサッシュ,[n],[steel sash]
+4091,,-,スチールウール,[n],[steel wool]
+4092,,-,トリプルスチール,[n],[triple steal]
+4093,,-,ブー,[int],"[beep, honk (car horn), buzz (buzzer), boo (wrong answer, like buzzer on quiz shows)]"
+4094,,主殿,しゅでん,[n],"[main building (of a villa, palace, etc.)]"
+4095,,俯伏,ふふく,"[n, vs]",[prostration]
+4096,,甘酸,かんさん,[n],"[sweetness and bitterness, joys and sorrows]"
+4097,,花売り,はなうり,[n],[flower vendor]
+4098,,哀傷歌,あいしょうか,[n],"[lament, elegy, dirge, funeral song]"
+4099,,足が早い,あしがはやい,"[exp, adj-i]","[to be fast at walking and running, to be quick to spoil (of foodstuffs)]"
+4100,,安全剃刀,あんぜんかみそり,[n],[safety razor]
+4101,,医院長,いいんちょう,[n],[head doctor]
+4102,,一周期,いっしゅうき,[n],[period]
+4103,,医療品,いりょうひん,[n],[medical supplies]
+4104,,印刷社,いんさつしゃ,[n],[printing company]
+4105,,宇宙観,うちゅうかん,[n],[one's outlook on the universe]
+4106,,宇宙塵,うちゅうじん,[n],"[space dust, cosmic dust, interstellar dust]"
+4107,,運動界,うんどうかい,[n],[the world of sports]
+4108,,運輸相,うんゆしょう,[n],[Transport Minister]
+4109,,応用科学,おうようかがく,[n],[applied science]
+4110,,音楽界,おんがくかい,[n],"[the world of music, the music world]"
+4111,,解決法,かいけつほう,[n],"[solution, way out]"
+4112,,解説者,かいせつしゃ,[n],[commentator]
+4113,,回送車,かいそうしゃ,[n],"[out-of-service car, out-of-service train, deadhead]"
+4114,,海綿状,かいめんじょう,"[n, adj-no]","[spongiform, spongelike, spongy]"
+4115,,可逆性,かぎゃくせい,[n],[reversibility]
+4116,,悲し相な顔,かなしそうなかお,[n],[sad-looking face]
+4117,,株式持合,かぶしきもちあい,[n],[cross shareholdings]
+4118,,寒苦鳥,かんくちょう,[n],[imaginary bird living in the Indian Himalayas (used as a Buddhist metaphor)]
+4119,,乾生姜,かんしょうが,[n],[powdered ginger]
+4120,,干渉的,かんしょうてき,[adj-na],[coherent]
+4121,,観照的,かんしょうてき,[adj-na],"[contemplative, meditative, meditational]"
+4122,,肝動脈,かんどうみゃく,[n],[hepatic artery]
+4123,,観覧者,かんらんしゃ,[n],"[spectator, visitor]"
+4124,,外交的,がいこうてき,[adj-na],[diplomatic]
+4125,,学習書,がくしゅうしょ,[n],"[book for learners, study book]"
+4126,,旗章学,きしょうがく,[n],[vexillology]
+4127,,休肝日,きゅうかんび,[n],"[teetotal day, day off drinking, liver rest day]"
+4128,,休館日,きゅうかんび,[n],"[day on which a museum, etc. is regularly closed, closed day]"
+4129,,-,きゅうきゅう,"[adj-na, adv, n]",[squeak]
+4130,,汲々,きゅうきゅう,"[adj-t, adv-to]","[diligent, absorbed (in something)]"
+4131,,岌岌,きゅうきゅう,"[adj-t, adv-to]","[tall (as a mountain, etc.), exceedingly dangerous]"
+4132,,嗅球,きゅうきゅう,[n],"[olfactory bulb, bulbus olfactorius]"
+4133,,窮境,きゅうきょう,[n],[predicament]
+4134,,究竟,くっきょう,"[adv, adj-no, vs, adj-na, n]","[after all, in the end, finally, excellent, superb, handy, appropriate, ideal, robust, brawny, muscular, strong, sturdy]"
+4135,,九竅,きゅうきょう,[n],[general term for the nine holes in the body of humans and other mammals]
+4136,,仇讎,きゅうしゅう,[n],"[revenge, bitter enemy]"
+4137,,旧習,きゅうしゅう,[n],[old customs]
+4138,,休出,きゅうしゅつ,[n],[working on a day off]
+4139,,休祥,きゅうしょう,[n],[good omen]
+4140,,旧称,きゅうしょう,[n],"[old name, former title]"
+4141,,旧章,きゅうしょう,[n],[ancient laws]
+4142,,九生,きゅうしょう,[n],[nine lives (of a cat)]
+4143,,急進的,きゅうしんてき,[adj-na],[radical]
+4144,,丘上,きゅうじょう,[n],[hilltop]
+4145,,弓状,きゅうじょう,"[n, adj-no]","[bow-shaped, arched]"
+4146,,旧情,きゅうじょう,[n],"[old friendship, old love, old acquaintance, reawakened feeling, emotion, passion, sentiment, etc.]"
+4147,,急制度,きゅうせいど,[n],[emergency braking procedure (e.g. during driver training and testing)]
+4148,,吸虫,きゅうちゅう,[n],[trematode (i.e. a fluke)]
+4149,,九天直下,きゅうてんちょっか,[n],"[falling headlong, plummeting, sudden crash]"
+4150,,旧領,きゅうりょう,[n],[old fief]
+4151,,休漁,きゅうりょう,"[n, vs]",[suspension of fishing]
+4152,,休猟,きゅうりょう,"[n, vs]",[suspension of hunting]
+4153,,虬竜,きゅうりょう,[n],"[mizuchi, mythical dragon-like beast]"
+4154,,教育法,きょういくほう,[n],[teaching method]
+4155,,匡救,きょうきゅう,"[n, vs]","[delivering from sin, succor, succour]"
+4156,,京響,きょうきょう,[n],[Kyoto Symphony Orchestra]
+4157,,恟恟,きょうきょう,"[adv-to, adj-t]","[terrified, horrified, panicked]"
+4158,,皓々,こうこう,"[adj-t, adv-to]","[bright (esp. of the moon), broad and empty]"
+4159,,皎々,きょうきょう,"[adj-t, adv-to]",[bright (esp. of the moon)]
+4160,,協議会,きょうぎかい,[n],"[conference, convention]"
+4161,,嬌羞,きょうしゅう,[n],[charming and coy]
+4162,,共修,きょうしゅう,"[n, vs]","[studying together (esp. of males and females), coeducation]"
+4163,,強縮,きょうしゅく,"[adj-na, n]",[tetanus]
+4164,,矯飾,きょうしょく,"[n, vs]","[affectation, pretense, pretence]"
+4165,,狂想曲,きょうそうきょく,[n],[capriccio]
+4166,,競争馬,きょうそうば,[n],[racehorse]
+4167,,兄妹喧嘩,きょうだいげんか,"[n, vs]",[quarrel between siblings]
+4168,,姉妹喧嘩,きょうだいげんか,"[n, vs]",[quarrel between sisters]
+4169,,凶兆,きょうちょう,[n],[evil omen]
+4170,,共聴,きょうちょう,[adj-f],"[community, shared]"
+4171,,恐鳥,きょうちょう,[n],"[moa (extinct, flightless bird formerly found in New Zealand)]"
+4172,,共同性,きょうどうせい,[n],[cooperation]
+4173,,郷土食,きょうどしょく,[n],"[local cuisine, regional cuisine]"
+4174,,共和政,きょうわせい,[n],[republicanism]
+4175,,曲調,きょくちょう,[n],"[melody, tune]"
+4176,,尭尭,ぎょうぎょう,"[adj-t, adv-to]",[high (as of a mountain)]
+4177,,行々子,ぎょうぎょうし,[n],"[reed warbler (esp. the great reed warbler, but also the black-browed reed warbler)]"
+4178,,驍将,ぎょうしょう,[n],"[veteran general, leader]"
+4179,,行中,ぎょうちゅう,[n],[in the middle of a line]
+4180,,銀行印,ぎんこういん,[n],[seal used for bank transactions]
+4181,,熏蒸剤,くんじょうざい,[n],[fumigant]
+4182,,経験を積む,けいけんをつむ,"[exp, v5m]","[to gain experience, to accumulate experiences]"
+4183,,経済圏,けいざいけん,[n],[economic bloc]
+4184,,経済性,けいざいせい,[n],[economy (saving money)]
+4185,,警視長,けいしちょう,[n],[chief superintendent (police)]
+4186,,継承者,けいしょうしゃ,[n],[successor]
+4187,,刑事上,けいじじょう,[adj-no],"[penal, criminal]"
+4188,,研究科,けんきゅうか,[n],[(post)graduate course]
+4189,,県級市,けんきゅうし,[n],[county-level city (of China)]
+4190,,研究書,けんきゅうしょ,[n],"[monograph, study]"
+4191,,健康上,けんこうじょう,[adj-no],"[health (concerns, reasons, etc.)]"
+4192,,研修医,けんしゅうい,[n],"[medical intern, resident]"
+4193,,研修課,けんしゅうか,[n],[training section]
+4194,,建築様式,けんちくようしき,[n],[architectural style]
+4195,,交換所,こうかんじょ,[n],[clearing house]
+4196,,交換嬢,こうかんじょう,[n],[telephone operator]
+4197,,後臼歯,こうきゅうし,[n],[molar]
+4198,,口供書,こうきょうしょ,[n],"[affidavit, deposition]"
+4199,,向光性,こうこうせい,[n],[heliotropism]
+4200,,侯爵夫人,こうしゃくふじん,[n],[marchioness]
+4201,,考証学,こうしょうがく,[n],[(in Chinese history) study of ancient texts]
+4202,,更新世,こうしんせい,[n],[Pleistocene epoch]
+4203,,更新料,こうしんりょう,[n],"[renewal charge, renewal fee]"
+4204,,更生施設,こうせいしせつ,[n],"[rehabilitation facilities, halfway house]"
+4205,,恒星年,こうせいねん,[n],[a sidereal year]
+4206,,好青年,こうせいねん,[n],"[good young man, agreeable youth]"
+4207,,硬葉樹,こうようじゅ,"[n, adj-no]",[sclerophyllous tree]
+4208,,国防相,こくぼうしょう,[n],"[defense minister, defence minister]"
+4209,,国民新,こくみんしん,[n],"[Kokumin Shinto, People's New Party (Japanese political party)]"
+4210,,国民党,こくみんとう,[n],"[Constitutional Nationalist Party (1910-1922), Guomindang (Chinese Nationalist Party), Kuomintang]"
+4211,,混合酒,こんごうしゅ,[n],"[cocktail, mixed drink, blended liquor]"
+4212,,昏迷状態,こんめいじょうたい,[n],"[befuddled (bewildered, confused) state, stupor]"
+4213,,御免なさい,ごめんなさい,[exp],"[I beg your pardon, excuse me]"
+4214,,最前戦,さいぜんせん,[n],"[front, first line, spearhead]"
+4215,,魚を釣る,さかなをつる,"[exp, v5r]","[to fish, to angle]"
+4216,,作業量,さぎょうりょう,[n],"[workload, quantity of work, work rate, units produced]"
+4217,,作成日時,さくせいにちじ,[n],[creation-time]
+4218,,財務相,ざいむしょう,[n],"[treasurer, treasury minister, finance minister]"
+4219,,雑誌記者,ざっしきしゃ,[n],[magazine journalist]
+4220,,紫綬褒賞,しじゅほうしょう,[n],[purple-ribboned medal awarded for scholarly or artistic achievement]
+4221,,至上者,しじょうしゃ,[n],[Supreme Being]
+4222,,週刊紙,しゅうかんし,[n],[weekly newspaper]
+4223,,蹴球,しゅうきゅう,[n],"[football (incl. soccer, rugby, American football, etc.; esp. used for soccer)]"
+4224,,週給,しゅうきゅう,[n],[weekly pay]
+4225,,州境,しゅうきょう,[n],"[state boundary, provincial boundary]"
+4226,,秋興,しゅうきょう,[n],[the pleasantness of autumn]
+4227,,宗教画,しゅうきょうが,[n],[religious painting or picture]
+4228,,褶曲,しゅうきょく,"[n, vs]","[bend, geologic fold]"
+4229,,終曲,しゅうきょく,[n],[finale]
+4230,,醜業,しゅうぎょう,[n],[prostitution]
+4231,,就業時間,しゅうぎょうじかん,[n],[work hours]
+4232,,州々,しゅうしゅう,[n],"[every state, every province]"
+4233,,集輯,しゅうしゅう,"[n, vs]",[gathered together and compiled]
+4234,,習習,しゅうしゅう,[n],[gentle breeze]
+4235,,修習,しゅうしゅう,[n],[apprenticeship]
+4236,,愁色,しゅうしょく,[n],[worried look]
+4237,,集住,しゅうじゅう,"[n, vs]","[dwelling together, living concentratedly]"
+4238,,修熟,しゅうじゅく,[n],[developing skill]
+4239,,収着,しゅうちゃく,[n],[sorption]
+4240,,集注,しゅうちゅう,"[n, vs]",[variorum]
+4241,,衆評,しゅうひょう,[n],[public opinion]
+4242,,秋涼,しゅうりょう,[n],"[coolness of autumn, cool autumn wind, eighth lunar month]"
+4243,,宿将,しゅくしょう,[n],[veteran general]
+4244,,祝勝,しゅくしょう,"[n, adj-no]",[victory celebration]
+4245,,縮重,しゅくじゅう,[n],[degeneracy]
+4246,,出勤者,しゅっきんしゃ,[n],[workers on the job]
+4247,,出展社,しゅってんしゃ,[n],"[exhibiting company (at a trade show, etc.)]"
+4248,,出版部,しゅっぱんぶ,[n],[publishing department]
+4249,,出定,しゅつじょう,"[n, vs]",[leaving a state of intense concentration]
+4250,,出猟,しゅつりょう,"[n, vs]",[going hunting]
+4251,,私有財産,しゆうざいさん,[n],[private property]
+4252,,照会状,しょうかいじょう,[n],"[reference letter, letter of inquiry, letter of enquiry]"
+4253,,渉外部,しょうがいぶ,[n],"[liaison department, public relations department]"
+4254,,奨学生,しょうがくせい,[n],[scholarship student]
+4255,,小学部,しょうがくぶ,[n],"[elementary school (esp. the elementary school section of a school that also encompasses other grades), primary school]"
+4256,,正客,しょうきゃく,[n],"[guest of honor, guest of honour]"
+4257,,消却,しょうきゃく,"[n, vs]","[erasure, paying back debt, effacement]"
+4258,,掌客,しょうきゃく,[n],[court official in charge of entertaining important guests]
+4259,,承久,しょうきゅう,[n],"[Shoukyuu era, Joukyuu era (1219.4.12-1222.4.13)]"
+4260,,小丘,しょうきゅう,[n],"[hillock, small hill, knoll, hummock]"
+4261,,小球,しょうきゅう,[n],"[small ball, globule, spherule, pellet]"
+4262,,小臼歯,しょうきゅうし,[n],[premolar (tooth)]
+4263,,商況,しょうきょう,[n],[business conditions]
+4264,,正慶,しょうきょう,[n],"[Shoukyou era, Shoukei era (of the Northern Court) (1332.4.28-1333.5.?)]"
+4265,,正行,しょうぎょう,[n],"[correct practices (esp. in Jodo, the path to rebirth in paradise)]"
+4266,,硝子体,しょうしたい,[n],"[vitreous body (of the eye), vitreous humor, vitreous humour, the vitreous]"
+4267,,誦習,しょうしゅう,"[n, vs]","[learning by memorization, learning by memorisation]"
+4268,,抄出,しょうしゅつ,"[n, vs]","[taking excerpts, extraction]"
+4269,,悄悄,しおしお,"[adj-t, adv-to]","[in low spirits, dejected, sad]"
+4270,,昭昭,しょうしょう,"[adj-t, adv-to]","[clear, bright, plain, obvious]"
+4271,,蕭蕭,しょうしょう,"[adv-to, adj-t]","[drearily, with desolation, with loneliness (esp. the rain and wind)]"
+4272,,小職,しょうしょく,"[n, pn]","[lowly government servant, humble government servant, I, me]"
+4273,,小身者,しょうしんもの,[n],"[person with a humble salary, person of a low condition]"
+4274,,正直言って,しょうじきいって,[exp],"[to be honest, to be frank, honestly, if you want to know the truth]"
+4275,,昇順,しょうじゅん,"[adj-na, n]",[ascending order]
+4276,,召状,しょうじょう,[n],[letter of invitation]
+4277,,商状,しょうじょう,[n],[market conditions]
+4278,,霄壌,しょうじょう,[n],[heaven and earth]
+4279,,猩々,しょうじょう,[n],"[orangutan, heavy drinker]"
+4280,,小乗,しょうじょう,[n],[Hinayana (the Lesser Vehicle)]
+4281,,蕭条,しょうじょう,"[adj-t, adv-to]","[dreary, bleak, lonely]"
+4282,,正定,しょうじょう,[n],[right concentration]
+4283,,商船旗,しょうせんき,[n],[merchant flag]
+4284,,正長,しょうちょう,[n],[Shouchou era (1428.4.27-1429.9.5)]
+4285,,簫の笛,しょうのふえ,[n],[xiao (vertical Chinese bamboo flute)]
+4286,,証票,しょうひょう,[n],"[certificate, voucher, chit]"
+4287,,証憑,しょうひょう,[n],"[documented evidence (contract, voucher, etc.)]"
+4288,,称名,しょうみょう,"[n, vs]","[intoning the name of the Buddha, chanting the name of the Buddha]"
+4289,,小名,しょうみょう,[n],[minor feudal lord]
+4290,,正命,しょうみょう,[n],[right livelihood]
+4291,,商略,しょうりゃく,"[n, vs]",[business policy]
+4292,,正暦,しょうりゃく,[n],[Shouryaku era (990.11.7-995.2.22)]
+4293,,商量,しょうりょう,"[n, vs]","[consideration, deliberation, discussion]"
+4294,,鷦鷯,みそさざい,[n],[winter wren (Troglodytes troglodytes)]
+4295,,渉猟,しょうりょう,"[n, vs]","[ranging over or scouting out a territory, searching far and wide (for), reading extensively]"
+4296,,青龍,せいりょう,[n],"[blue dragon (an auspicious creature in Chinese mythology), Azure Dragon (god said to rule over the eastern heavens)]"
+4297,,蕭寥,しょうりょう,"[adj-t, adv-to]","[desolate, lonely, barren]"
+4298,,秤量,ひょうりょう,"[n, vs]","[measuring weight, weighing, maximum weight (on a scales)]"
+4299,,秤量,しょうりょう,"[n, vs]","[measuring weight, weighing]"
+4300,,食傷,しょくしょう,"[n, vs]","[surfeit, glut, being fed up, food poisoning]"
+4301,,食虫,しょくちゅう,"[n, adj-no]",[insectivore]
+4302,,食品店,しょくひんてん,[n],[grocery store]
+4303,,食料費,しょくりょうひ,[n],"[food expenses, food prices]"
+4304,,処生訓,しょせいくん,[n],[guiding motto for one's life]
+4305,,使用量,しようりょう,[n],[amount used]
+4306,,市立学校,しりつがっこう,[n],[municipal school]
+4307,,新甘泉,しんかんせん,[n],"[shinkansen pear, hybrid nashi developed in Tottori prefecture]"
+4308,,申請人,しんせいじん,[n],[applicant]
+4309,,新体験,しんたいけん,[n],[new experience]
+4310,,侵入者,しんにゅうしゃ,[n],"[intruder, invader, trespasser, raider]"
+4311,,新面目,しんめんもく,[n],"[new appearance, new look, new sight, new scene]"
+4312,,自己消化,じこしょうか,[n],"[autolysis, autodigestion]"
+4313,,銃床,じゅうしょう,[n],[gunstock]
+4314,,重唱,じゅうしょう,"[n, vs]",[singing in parts]
+4315,,銃傷,じゅうしょう,[n],[gunshot wound]
+4316,,重職,じゅうしょく,[n],[responsible position]
+4317,,重巡,じゅうじゅん,[n],[heavy cruiser]
+4318,,充電器,じゅうでんき,[n],[(battery) charger]
+4319,,重電機,じゅうでんき,[n],[heavy electric equipment]
+4320,,重電気,じゅうでんき,[n],[heavy electric (power)]
+4321,,重陽子,じゅうようし,[n],[deuteron]
+4322,,銃猟,じゅうりょう,[n],"[shooting, hunting]"
+4323,,従量,じゅうりょう,[n],"[incurred amount, usage volume, metered rate or amount]"
+4324,,準結晶,じゅんけっしょう,"[n, adj-no]","[quasicrystal, paracrystal]"
+4325,,諄々,じゅんじゅん,"[adj-t, adv-to]","[earnestly, repeatedly, patiently]"
+4326,,遵奉者,じゅんぽうしゃ,[n],[conformist]
+4327,,上客,じょうきゃく,[n],"[guest of honor, guest of hounor, good customer]"
+4328,,常客,じょうきゃく,[n],"[regular customer, patron]"
+4329,,承久,じょうきゅう,[n],[Joukyuu era (1219.4.12-1222.4.13)]
+4330,,貞享,じょうきょう,[n],[Joukyou era (1684.2.21-1688.9.30)]
+4331,,上下巻,じょうげかん,[n],"[first and second volume (e.g. of a book), volume one and volume two, book one and book two]"
+4332,,上昇期,じょうしょうき,[n],"[upturn, increment phase, rise period]"
+4333,,杖術,じょうじゅつ,[n],"[jōjutsu, form of martial art using a cane staff]"
+4334,,静注,じょうちゅう,[n],"[intravenous injection, IV]"
+4335,,情報誌,じょうほうし,[n],"[listings magazine, information magazine]"
+4336,,常用者,じょうようしゃ,[n],"[constant user, addict]"
+4337,,女性性,じょせいせい,[n],[femininity]
+4338,,人工島,じんこうとう,[n],"[artificial island, man-made island]"
+4339,,水上機,すいじょうき,[n],"[hydroplane, seaplane]"
+4340,,相撲を取る,すもうをとる,"[exp, v5r]","[to wrestle with, to contest an issue, to take part in sumo]"
+4341,,製靴業,せいかぎょう,[n],[the shoemaking industry]
+4342,,製鋼所,せいこうじょ,[n],"[steelworks, steel mill, steelmaking plant]"
+4343,,生合成,せいごうせい,"[n, vs]",[biosynthesis]
+4344,,性細胞,せいさいぼう,[n],[sex cell]
+4345,,制酸剤,せいさんざい,[n],[anti-acid preparation]
+4346,,製糸業,せいしぎょう,[n],[the silk industry]
+4347,,製糸工場,せいしこうじょう,[n],"[spinning mill, filature, thread-manufacturing plant, silk mill]"
+4348,,精神界,せいしんかい,[n],"[spiritual world, mental world]"
+4349,,精神病医,せいしんびょうい,[n],"[psychiatrist, mental specialist, alienist]"
+4350,,生体学,せいたいがく,[n],[somatology]
+4351,,生態型,せいたいけい,[n],[ecotype]
+4352,,正当性,せいとうせい,"[n, adj-no]","[lawfulness, propriety, reasonableness, appropriateness, legality, legitimacy, justifiability, validity]"
+4353,,石炭酸,せきたんさん,[n],"[phenol, carbolic acid]"
+4354,,宣告書,せんこくしょ,[n],[(written) judgement or verdict (judgment)]
+4355,,先住者,せんじゅうしゃ,[n],[former occupant]
+4356,,扇動者,せんどうしゃ,[n],[agitator]
+4357,,染髪剤,せんぱつざい,[n],[hair dye]
+4358,,占有権,せんゆうけん,[n],[right of exclusive possession]
+4359,,前哨線,ぜんしょうせん,[n],[scouting line]
+4360,,全段階,ぜんだんかい,[n],"[all stages, every level, entire sequence]"
+4361,,双極子,そうきょくし,[n],[dipole]
+4362,,走行会,そうこうかい,[n],"[track meet (non-competitive driving on a race course), track day, track event]"
+4363,,早東戦,そうとうせん,[n],[(baseball) game between Waseda and Tokyo universities]
+4364,,対抗試合,たいこうじあい,[n],"[match, tournament, interschool match]"
+4365,,対称的,たいしょうてき,[adj-na],[symmetrical]
+4366,,対症的,たいしょうてき,[adj-na],"[temporary (of medical care), pallative, dealing only with the symptoms, symptomatic, superficial]"
+4367,,対情報,たいじょうほう,[n],[counter-intelligence]
+4368,,対生葉,たいせいよう,[n],[opposite leaves]
+4369,,タバコを吸う,タバコをすう,"[exp, v5u]",[to smoke a cigarette]
+4370,,単行書,たんこうしょ,[n],[monograph]
+4371,,淡黄色,たんおうしょく,"[adj-na, n]","[pale yellow, light yellow]"
+4372,,男性性,だんせいせい,"[n, adj-no]",[masculinity]
+4373,,地球化学,ちきゅうかがく,"[n, adj-no]",[geochemistry]
+4374,,中間子,ちゅうかんし,[n],"[meson, mesotron]"
+4375,,中間派,ちゅうかんは,[n],"[middle-of-the-roaders, neutralists, independents]"
+4376,,中継器,ちゅうけいき,[n],"[repeater, relay]"
+4377,,中国史,ちゅうごくし,[n],[Chinese history]
+4378,,中称,ちゅうしょう,[n],"[mesioproximal pronoun (indicating proximity to the listener, i.e. sore, soko, sochira)]"
+4379,,中焦,ちゅうしょう,[n],"[middle jiao (in traditional Chinese medicine), middle burner]"
+4380,,忠純,ちゅうじゅん,[n],"[faithfulness and purity, unswerving loyalty]"
+4381,,忠順,ちゅうじゅん,[n],[homage]
+4382,,衷情,ちゅうじょう,[n],"[true heart, inner feelings]"
+4383,,柱状,ちゅうじょう,[n],[in the shape of a pillar or column]
+4384,,手杖,しゅじょう,[n],"[staff (esp. one used by a monk, i.e. as a walking stick during a pilgrimage)]"
+4385,,中世史,ちゅうせいし,[n],[mediaeval history]
+4386,,中性紙,ちゅうせいし,[n],"[neutral paper, acid-free paper, alkaline paper, archival paper]"
+4387,,長球,ちょうきゅう,"[n, adj-no]",[prolate spheroid]
+4388,,長享,ちょうきょう,[n],[Choukyou era (1487.7.20-1489.8.21)]
+4389,,調査法,ちょうさほう,[n],"[investigative approach, research method, survey method]"
+4390,,調色,ちょうしょく,"[n, vs]","[mixing colors, mixing colours, tone]"
+4391,,懲治監,ちょうじかん,[n],[reformatory]
+4392,,弔銃,ちょうじゅう,[n],[volley of rifles at a funeral]
+4393,,聴従,ちょうじゅう,"[n, vs]",[following advice]
+4394,,鳥銃,ちょうじゅう,[n],[fowling gun]
+4395,,重畳,ちょうじょう,"[adj-t, adv-to, n, vs]","[placed one upon another, piled up, superimposition, superposition, excellent, splendid]"
+4396,,長上,ちょうじょう,[n],[one's elders or superiors]
+4397,,超常,ちょうじょう,"[n, adj-f]","[paranormality, anomalous phenomenon]"
+4398,,丁々,ちょうちょう,"[adv, n]","[clashing of swords, felling of trees, ringing of an ax]"
+4399,,張力,ちょうりょく,[n],"[tension, tensile strength]"
+4400,,潮力,ちょうりょく,[n],[tidal energy]
+4401,,直射日光,ちょくしゃにっこう,[n],"[direct sunlight, direct rays of the sun]"
+4402,,直長,ちょくちょう,[n],[shift supervisor]
+4403,,直轄市,ちょっかつし,[n],[direct-controlled municipality (of China)]
+4404,,挺進隊,ていしんたい,[n],[group that goes ahead of the main body]
+4405,,天蠍宮,てんかつきゅう,[n],"[Scorpio (8th zodiacal sign), the Scorpion]"
+4406,,電気量,でんきりょう,[n],"[amount of electricity, quantity of electricity]"
+4407,,電子光学,でんしこうがく,[n],[electron optics]
+4408,,電灯を点ける,でんとうをつける,"[exp, v1]",[to turn (switch) on an electric lamp]
+4409,,登録車,とうろくしゃ,[n],"[vehicle larger than a light motor vehicle, and subject to automobile registration and tax]"
+4410,,登録証,とうろくしょう,[n],"[registration book, registration card]"
+4411,,どうでも良い,どうでもよい,"[exp, adj-i]","[inconsequential, indifferent, not worth worrying about, whatever you do is OK, trivial]"
+4412,,同の字点,どうのじてん,[n],[kanji iteration mark]
+4413,,独立祭,どくりつさい,[n],[Independence Day celebration]
+4414,,生優しい,なまやさしい,[adj-i],"[somewhat kind, rather gentle]"
+4415,,南極帯,なんきょくたい,[n],[Antarctic Zone]
+4416,,日本領,にほんりょう,[n],[Japanese territory]
+4417,,入京,にゅうきょう,"[n, vs]","[entering the capital, entering Tokyo]"
+4418,,入鋏,にゅうきょう,"[n, vs]",[(ticket) punching]
+4419,,乳漿,にゅうしょう,[n],"[serum lactis, whey]"
+4420,,乳色,にゅうしょく,[n],"[milk white, opaque white]"
+4421,,乳状,にゅうじょう,"[n, adj-no]",[milky]
+4422,,入城,にゅうじょう,"[n, vs]",[entry into a castle (by a conquering force)]
+4423,,入定,にゅうじょう,"[n, vs]","[entering a state of intense concentration, death (of a high monk, etc.)]"
+4424,,入場権,にゅうじょうけん,[n],[liberty of entrance]
+4425,,入朝,にゅうちょう,"[n, vs]","[visiting Japan, arrival in Japan]"
+4426,,入庁,にゅうちょう,"[n, vs]","[becoming employed by a government office, agency, board, etc.]"
+4427,,排水管,はいすいかん,[n],"[drainpipe, drainage pipe]"
+4428,,秤にかける,はかりにかける,"[exp, v1]","[to weigh on a scale, to weigh up options, to compare pros and cons]"
+4429,,柏鵬時代,はくほうじだい,[n],[era during 1960s dominated by grand champions Taiho and Kashiwado]
+4430,,初公開,はつこうかい,[n],"[debut, opening, first public exhibition]"
+4431,,紐を結ぶ,ひもをむすぶ,"[exp, v5b]",[to tie a string]
+4432,,百獣,ひゃくじゅう,[n],[all kinds of animals]
+4433,,氷床,ひょうしょう,[n],[ice sheet]
+4434,,氷晶,ひょうしょう,[n],[ice crystals]
+4435,,表章,ひょうしょう,"[n, vs]","[symbol, emblem, image, expressing, representation, making clear (e.g. someone's virtues)]"
+4436,,平声,ひょうしょう,[n],"[first tone in old Chinese phonetics, level tone, (of a Japanese accent) having a low, flat tone]"
+4437,,兵仗,ひょうじょう,[n],"[arms, armed soldier]"
+4438,,氷上,ひょうじょう,[adj-no],[on ice]
+4439,,評注,ひょうちゅう,[n],"[commentary, notes and comments]"
+4440,,評註,ひょうちゅう,[n],"[annotation, commentary]"
+4441,,標註,ひょうちゅう,[n],[marginal notations]
+4442,,病症,びょうしょう,[n],[nature of a disease]
+4443,,病中,びょうちゅう,[n-t],[while ill]
+4444,,不干渉,ふかんしょう,[n],"[abstention, nonintervention, noninterference]"
+4445,,不認承,ふにんしょう,[n],[nonrecognition]
+4446,,文学書,ぶんがくしょ,[n],"[book, literary work]"
+4447,,併行線,へいこうせん,[n],[parallel railways]
+4448,,編集子,へんしゅうし,[n],[editorial-staff member]
+4449,,報償金,ほうしょうきん,[n],[compensation]
+4450,,報道人,ほうどうじん,[n],"[reporter, mediaperson]"
+4451,,報連相,ほうれんそう,[n],"[reporting, contacting, and consultation]"
+4452,,保存量,ほぞんりょう,[n],[conserved quantity]
+4453,,無遊病,むゆうびょう,[n],"[somnambulism, sleep-walking]"
+4454,,目薬を差す,めぐすりをさす,"[exp, v5s]",[to apply eyedrops]
+4455,,文科省,もんかしょう,[n],"[Ministry of Education, Culture, Sports, Science and Technology]"
+4456,,文科相,もんかしょう,[n],"[Minister of Education, Culture, Sports, Science and Technology]"
+4457,,文部科学相,もんぶかがくしょう,[n],"[Minister of Education, Culture, Sports, Science and Technology]"
+4458,,遊戯場,ゆうぎじょう,[n],[amusement place]
+4459,,有力紙,ゆうりょくし,[n],"[influential newspaper, leading newspaper]"
+4460,,有力視,ゆうりょくし,"[n, vs, adj-no]","[regarding as very likely (to win, succeed, etc.)]"
+4461,,呼び出し法,よびだしほう,[n],[access mode]
+4462,,宜しかったら,よろしかったら,[exp],"[if you don't mind, if you like]"
+4463,,略章,りゃくしょう,[n],[miniature medal or decoration]
+4464,,柳条,りゅうじょう,[n],[willow twig]
+4465,,留置所,りゅうちじょ,[n],"[jail, gaol]"
+4466,,留鳥,りゅうちょう,[n],[nonmigratory bird]
+4467,,両議院,りょうぎいん,[n],[both houses of parliament]
+4468,,涼秋,りょうしゅう,[n],"[cool autumn, cool fall]"
+4469,,猟色,りょうしょく,[n],"[lechery, philandering, lewdness, debauchery]"
+4470,,猟獣,りょうじゅう,[n],[game animal]
+4471,,旅行社,りょこうしゃ,[n],"[travel agent, travel agency]"
+4472,,冷感症,れいかんしょう,[n],"[female sexual arousal disorder, FSAD, anaphrodisia, hyphedonia, frigidity]"
+4473,,冷却器,れいきゃくき,[n],"[refrigerator, cooler, freezer, radiator (of a car)]"
+4474,,労働相,ろうどうしょう,[n],[Minister of Labor (Labour)]
+4475,,悪悪戯,わるいたずら,[n],[mischief]
+4476,,-,アイスクリームサンデー,[n],"[ice cream sundae, icecream sundae]"
+4477,,-,アイスクリームコーン,[n],[ice cream cone]
+4478,,愛斯蘭,アイスランド,[n],[Iceland]
+4479,,氷州,アイスランド,[n],[Iceland]
+4480,,-,アイスランドキャットシャーク,[n],"[Iceland catshark (Apristurus laurussonii, an Atlantic species)]"
+4481,,-,アイティーユー,[n],[ITU]
+4482,,-,アイティーユーティー,[n],[ITU-T]
+4483,,-,アイデンティティクライシス,[n],[identity crisis]
+4484,,-,アイデンティティーカード,[n],[identity card]
+4485,,-,ナショナルアイデンティティー,[n],[national identity]
+4486,,愛蘭,アイルランド,[n],"[Ireland, Eire]"
+4487,,-,アカデミックガウン,[n],[academic gown]
+4488,,-,アカデミックディスカウント,[n],[academic discount]
+4489,,-,アカデミックパッケージ,[n],[academic package]
+4490,,-,アカデミックハラスメント,[n],"[harassment, discrimination, bullying, etc. of staff and students at educational institutions]"
+4491,,-,アクティビティサンプリング,[n],[activity sampling]
+4492,,-,システムアクティビティ,[n],[system activity]
+4493,,-,アクロバットダンサー,[n],"[acrobatic dancer, contortionist]"
+4494,,-,アコースティックサウンド,[n],[acoustic sound]
+4495,,-,アコースティックエミッション,[n],[acoustic emission]
+4496,,-,アコーディオンプリーツ,[n],[accordion pleats]
+4497,,-,アシスタントディレクター,[n],[assistant director]
+4498,,-,アシスタントパーサー,[n],[assistant purser]
+4499,,-,アシスタントオブジェクト,[n],[assistant object]
+4500,,-,アシスタントドッグ,[n],"[assistance dog, helper dog, assistant dog]"
+4501,,-,パーソナルデジタルアシスタント,[n],"[personal digital assistant, PDA]"
+4502,,-,ホワイトアスパラガス,[n],[white asparagus]
+4503,,-,グリーンアスパラガス,[n],[green asparagus]
+4504,,-,アスファルトジャングル,[n],[asphalt jungle]
+4505,,-,アスファルトシングル,[n],[asphalt shingle]
+4506,,-,アスファルトフェルト,[n],[asphalt felt]
+4507,,-,フィールドアスレチック,[n],[outdoor obstacle course]
+4508,,-,アスレチックフィールド,[n],[athletic field]
+4509,,-,テクノロジーアセスメント,[n],[technology assessment]
+4510,,-,ヒューマンアセスメント,[n],[human assessment]
+4511,,-,リスクアセスメント,[n],[risk assessment]
+4512,,-,アソシエーションフットボール,[n],"[association football, soccer]"
+4513,,-,ビューティーアドバイザー,[n],"[beauty adviser, beauty advisor]"
+4514,,-,アドバンテージルール,[n],[advantage rule]
+4515,,-,アドベンチャーゲーム,[n],[adventure game]
+4516,,-,プログラムアナライザー,[n],"[program analyzer, programme analyzer]"
+4517,,-,コンピュータアニメーション,[n],[computer animation]
+4518,,-,クレイアニメーション,[n],[clay animation]
+4519,,-,オリジナルビデオアニメーション,[n],[animated film released direct-to-video]
+4520,,-,アフタヌーンシャドー,[n],[afternoon shadow]
+4521,,-,アフタヌーンドレス,[n],[afternoon dress]
+4522,,-,アフタヌーンティ,[n],[afternoon tea]
+4523,,-,グッドアフターヌーン,[n],[good afternoon]
+4524,,-,アプリケーションプログラム,[n],"[application program, application programme]"
+4525,,-,アプリケーションアイコン,[n],[application icon]
+4526,,-,アプリケーションサーバ,[n],[application server]
+4527,,-,アプリケーションサービスプロバイダ,[n],[Application Service Provider]
+4528,,-,アプリケーションジェネレータ,[n],[application generator]
+4529,,-,アプリケーションソフトウェア,[n],[application software]
+4530,,-,アプリケーションプロセッサ,[n],[application processor]
+4531,,-,オフィスアプリケーション,[n],[office application]
+4532,,-,オラクルアプリケーション,[n],[Oracle Applications]
+4533,,-,キラーアプリケーション,[n],"[""killer"" application]"
+4534,,-,コンソールアプリケーション,[n],[console application]
+4535,,-,データベースアプリケーション,[n],[database application]
+4536,,-,ヘルパーアプリケーション,[n],[helper application]
+4537,,-,アプリケーションインターフェース,[n],[application interface]
+4538,,-,アプリケーションエンジニア,[n],[application systems engineer]
+4539,,-,アプリケーションフレームワーク,[n],[application framework]
+4540,,-,アプリケーションシステム,[n],[application system]
+4541,,-,アプリケーションテクノロジ,[n],[application technology]
+4542,,-,アプリケーションノート,[n],[application note]
+4543,,-,アプリケーションフォーマット,[n],[disk formatting]
+4544,,-,アプリケーションプロトコル,[n],[application protocol]
+4545,,-,ウェブアプリケーション,[n],[web application]
+4546,,-,アプリケーションプログラミングインタフェース,[n],"[application programming interface, API]"
+4547,,-,システムアプリケーションアーキテクチャ,[n],"[System Application Architecture, SAA]"
+4548,,-,アプリケーションプログラムパッケージ,[n],[application program package]
+4549,,-,アミューズメントスペース,[n],[amusement spot (esp. video game arcade)]
+4550,,-,ハッシュアルゴリズム,[n],[hash algorithm]
+4551,,-,ラウンドロビンアルゴリズム,[n],[round-robin algorithm]
+4552,,-,セキュアハッシュアルゴリズム,[n],[secure hash algorithm]
+4553,,亜爾然丁,アルゼンチン,[n],[Argentina]
+4554,,-,アルゼンチンタンゴ,[n],[Argentine tango]
+4555,,-,アンゼリカ,[n],"[angelica (any herb of the genus Angelica, esp. garden angelica, Angelica archangelica)]"
+4556,,-,アンチークファッション,[n],[antique fashion]
+4557,,-,クローズドアーキテクチャ,[n],[closed architecture]
+4558,,-,システムアーキテクチャ,[n],[system architecture]
+4559,,-,スイッチアーキテクチャ,[n],[switch architecture]
+4560,,-,ネットワークアーキテクチャ,[n],[network architecture]
+4561,,-,マイクロチャネルアーキテクチャ,[n],[microchannel architecture]
+4562,,-,インストラクションセットアーキテクチャ,[n],"[instruction set architecture, ISA]"
+4563,,-,クライアントサーバアーキテクチャ,[n],[client-server architecture]
+4564,,-,システムネットワークアーキテクチャ,[n],"[Systems Network Architecture, SNA]"
+4565,,-,グリーンアーキテクチャー,[n],[green architecture]
+4566,,-,ランドスケープアーキテクチュア,[n],[landscape architecture]
+4567,,-,フィールドアーチェリー,[n],[field archery]
+4568,,-,ライディングアーチェリー,[n],[riding archery]
+4569,,-,ヘアアーティスト,[n],[hair stylist]
+4570,,-,イングリッシュ,"[adj-f, n]","[English, Engrish]"
+4571,,-,イングリッシュグリップ,[n],[English grip (tennis)]
+4572,,-,イングリッシュブレックファースト,[n],[English breakfast]
+4573,,-,イングリッシュホルン,[n],"[English horn, cor anglais]"
+4574,,-,カレントイングリッシュ,[n],[current English]
+4575,,-,キングズイングリッシュ,[n],[King's English]
+4576,,-,ジャパニーズイングリッシュ,[n],[Japanese English]
+4577,,-,ピジンイングリッシュ,[n],[pidgin English]
+4578,,-,ブロークンイングリッシュ,[n],[broken English]
+4579,,-,ベーシックイングリッシュ,[n],"[Basic English, version of English with a maximum of 850 basic words]"
+4580,,-,オールイングリッシュ,[n],[all English (method of teaching English)]
+4581,,-,オールドイングリッシュシープドッグ,[n],[Old English sheepdog]
+4582,,インシュリンショック療法,インシュリンショックりょうほう,[n],[insulin shock therapy]
+4583,,-,インシュリンショック,[n],[insulin shock]
+4584,,-,インスタントラーメン,[n],"[instant ramen, precooked Chinese noodles]"
+4585,,-,インスタントメッセージ,[n],"[instant message, IM]"
+4586,,-,インスタントメッセンジャー,[n],"[instant messenger, IM]"
+4587,,-,インスタントメッセージング,[n],"[instant messaging, IM]"
+4588,,-,インスタントカメラ,[n],[instant camera]
+4589,,-,インストラクションセット,[n],[instruction set]
+4590,,-,グループインタビュー,[n],[group interview]
+4591,,-,デプスインタビュー,[n],[depth interview]
+4592,,-,ヒーローインタービュー,[n],"[interview with leading player in a game (esp. baseball), player-of-the-game interview]"
+4593,,-,インターネットアドレス,[n],[Internet address]
+4594,,-,インターネットオークション,[n],[Internet auction]
+4595,,-,インターネットカフェ,[n],"[Internet cafe, cybercafe]"
+4596,,-,インターネットギャンブル,[n],[Internet gambling]
+4597,,-,インターネットセキュリティ,[n],[Internet security]
+4598,,-,インターネットバブル,[n],[dot-com bubble]
+4599,,-,インターネットバンキング,[n],[Internet banking]
+4600,,-,インターネットプロトコル,[n],"[Internet Protocol, IP]"
+4601,,-,インターネットユーザー,[n],[Internet user]
+4602,,-,モバイルインターネット,[n],[mobile Internet]
+4603,,-,インターネットプロバイダー,[n],"[Internet Service Provider, ISP]"
+4604,,-,ケーブルインターネット,[n],[cable Internet (connection)]
+4605,,-,インターネットアクセス,[n],[Internet access]
+4606,,-,インターネットエクスプローラ,[n],[Internet Explorer]
+4607,,-,インターネットフォン,[n],[Internet Phone]
+4608,,-,インターネットメール,[n],[Internet mail]
+4609,,-,インターネットワーム,[n],[Internet worm]
+4610,,-,インターネットワールド,[n],[Internet World (trade show)]
+4611,,-,ワイドインターネット,[n],[WIDE Internet]
+4612,,-,インターネットサイト,[n],[Internet site]
+4613,,-,インターネットショッピング,[n],[Internet shopping]
+4614,,-,インターネットマーケティング,[n],[Internet marketing]
+4615,,-,インターネットコミュニティ,[n],[Internet community]
+4616,,-,インターネットスラング,[n],[Internet slang]
+4617,,-,インターネットポリス,[n],[Internet police]
+4618,,-,インターネットプロトコルアドレス,[n],"[Internet Protocol address, IP address]"
+4619,,-,インターネットリレーチャット,[n],"[Internet relay chat, IRC]"
+4620,,-,シリアルラインインターネットプロトコル,[n],"[Serial Line Internet Protocol, SLIP]"
+4621,,-,インダストリー,[n],[industry]
+4622,,-,インダストリアルエンジニアリング,[n],[industrial engineering]
+4623,,-,インダストリアルデザイナー,[n],[industrial designer]
+4624,,-,インダストリアルデザイン,[n],[industrial design]
+4625,,-,インダストリアルパーク,[n],[industrial park]
+4626,,-,システムインテグレーション,[n],"[system integration, SI]"
+4627,,-,ウエハスケールインテグレーション,[n],[wafer-scale integration]
+4628,,-,アーティフィシャルインテリジェンス,[n],[artificial intelligence]
+4629,,-,インテリジェンステスト,[n],[intelligence test]
+4630,,-,タイムインテリジェンス,[n],[time intelligence]
+4631,,-,インテリジェントシティー,[n],[intelligent city]
+4632,,-,インテリジェントターミナル,[n],[intelligent terminal]
+4633,,-,インテリジェントデザイン,[n],[intelligent design (theory that life or the universe must have been designed by an intelligent being)]
+4634,,-,インテリジェントケーブル,[n],[intelligent cable]
+4635,,-,インテリジェントデータベース,[n],[intelligent database]
+4636,,-,インテリジェントネットワーク,[n],[intelligent network]
+4637,,-,インテリジェントハブ,[n],[intelligent hub]
+4638,,-,インテリジェントマルチプレクサ,[n],"[intelligent mux, intelligent multiplexer]"
+4639,,-,インテリジェントステーション,[n],[intelligent station]
+4640,,-,インディアンジュエリー,[n],[Indian jewellery (jewelry)]
+4641,,-,アメリカンインディアン,[n],[American Indian]
+4642,,-,プエブロインディアン,[n],[Pueblo Indian]
+4643,,-,インディアンスウェルシャーク,[n],"[Indian swellshark (Cephaloscyllium silasi, species of catshark from the western Indian Ocean)]"
+4644,,-,インデックスファンド,[n],[index fund]
+4645,,-,コンポジットインデックス,[n],[composite index]
+4646,,-,ミゼリーインデックス,[n],[misery index]
+4647,,-,インデックストラック,[n],[index track]
+4648,,-,インデックスバッファ,[n],[index buffer]
+4649,,-,インデックスファイル,[n],[indexed file]
+4650,,-,インデックスホール,[n],[index hole]
+4651,,-,インデックスレジスタ,[n],[index register]
+4652,,-,フルテキストインデックス,[n],[full-text index]
+4653,,-,リストインデックス,[n],[list index]
+4654,,-,インデックスアドレッシング,[n],[index addressing]
+4655,,-,インフォメーションアナリスト,[n],[information analyst]
+4656,,-,インフォメーションサイエンス,[n],[information science]
+4657,,-,インフォメーションシステム,[n],[information system]
+4658,,-,インフォメーションシンジケート,[n],[information syndicate]
+4659,,-,インフォメーションセオリー,[n],[information theory]
+4660,,-,インフォメーションソサイエティー,[n],[information society]
+4661,,-,インフォメーションディスクロージャー,[n],[information disclosure]
+4662,,-,インフォメーションデモクラシー,[n],[information democracy]
+4663,,-,インフォメーションブローカー,[n],[information broker]
+4664,,-,インフォメーションプロセッサー,[n],[information processor]
+4665,,-,インフォメーションプロセッシング,[n],[information processing]
+4666,,-,インフォメーションプロバイダー,[n],[information provider]
+4667,,-,インフォメーションユーティリティー,[n],[information utility]
+4668,,-,インフォメーションリテラシー,[n],[information literacy]
+4669,,-,インフォメーションリトリーバル,[n],[information retrieval]
+4670,,-,インフォメーションレボリューション,[n],[information revolution]
+4671,,-,インフォメーションテクノロジー,[n],"[information technology, IT]"
+4672,,-,インフォメーションセンター,[n],"[information kiosk, information centre]"
+4673,,-,インフォメーションスーパーハイウェイ,[n],[information superhighway]
+4674,,-,インフラストラクチャモード,[n],[infrastructure mode]
+4675,,-,インフルエンザワクチン,[n],"[flu vaccine, influenza vaccine]"
+4676,,-,ウィークエンドハウス,[n],[weekend house]
+4677,,-,ウイークエンドカーペンター,[n],[weekend carpenter]
+4678,,-,ウイークエンドファーザー,[n],[weekend father]
+4679,,-,ウイークエンドペインター,[n],[weekend painter]
+4680,,-,ウエディング,[n],[wedding]
+4681,,-,ウェディングケーキ,[n],[wedding cake]
+4682,,-,ウエディングベール,[n],[wedding veil]
+4683,,-,ウエディングマーチ,[n],[wedding march]
+4684,,-,ウエディングリング,[n],[wedding ring]
+4685,,-,ショットガンウェディング,[n],[shotgun wedding]
+4686,,-,シルバーウェディング,[n],[silver wedding]
+4687,,-,スターウォッチング,[n],[star watching]
+4688,,-,ホエールウォッチング,[n],[whale watching]
+4689,,-,タウンウォッチング,[n],"[observing people, shops, etc. while strolling around town]"
+4690,,-,バードウオッチング,[n],[bird watching]
+4691,,-,エキサイティングゲーム,[n],[exciting game]
+4692,,-,エキスパートシステム,[n],[expert system]
+4693,,-,デーリーエキスプレス,[n],[daily express]
+4694,,-,マルチメディアエクステンション,[n],"[multimedia extension, MMX]"
+4695,,-,エクストリーム,[adj-f],[extreme]
+4696,,-,デスクトップエクスペリエンス,[n],[desktop experience]
+4697,,-,チーフエグゼクティブ,[n],[chief executive]
+4698,,-,カンパニーエコノミスト,[n],[company economist]
+4699,,-,エコノミック,[adj-no],[economic]
+4700,,-,カフェエスプレッソ,[n],[expresso coffee]
+4701,,-,パイレートエディション,[n],[pirated edition]
+4702,,-,エナジーセーブ,"[n, adj-f]","[energy save, energy saving, energy saver]"
+4703,,ＮＰＯ,エヌピーオー,[n],"[nonprofit organization, Not-for-Profit Organization]"
+4704,,-,エマージェンシーランディング,[n],[emergency landing]
+4705,,-,エレクトリックコマース,[n],[electric commerce]
+4706,,-,ホームエレクトロニクス,[n],[home electronics]
+4707,,-,メディカルエレクトロニクス,[n],[medical electronics]
+4708,,-,エレベーターホール,[n],"[elevator landing, elevator hall]"
+4709,,-,カントリーエレベーター,[n],[country elevator]
+4710,,-,エンカウンターグループ,[n],[encounter group]
+4711,,-,エンジニアリングプラスチック,[n],[engineering plastics]
+4712,,-,システムエンジニアリング,[n],[systems engineering]
+4713,,-,ジーンエンジニアリング,[n],"[gene engineering, genetic engineering]"
+4714,,-,バリューエンジニアリング,[n],[value engineering]
+4715,,-,ヒューマンエンジニアリング,[n],"[human engineering, HE]"
+4716,,-,ナレッジエンジニアリング,[n],[knowledge engineering]
+4717,,-,エンジニアリングワークステーション,[n],"[engineering workstation, EWS]"
+4718,,-,ソフトウェアエンジニアリング,[n],"[software engineering, SE]"
+4719,,-,トラヒックエンジニアリング,[n],[traffic engineering]
+4720,,-,ネットワークエンジニアリング,[n],[network engineering]
+4721,,-,エンジニアリングセラミックス,[n],[engineering ceramics]
+4722,,-,ワールドエンタープライズ,[n],"[world enterprise, multi-national enterprise]"
+4723,,-,エンディングノート,[n],"[booklet constituting an informal living will (containing wishes regarding one's hospitalization or funeral, and perhaps one's life story, messages to loved ones, etc.)]"
+4724,,-,クリエーティブエージェンシー,[n],[creative agency]
+4725,,-,トラベルエージェンシー,[n],[travel agency]
+4726,,-,メールエージェント,[n],[mail agent]
+4727,,-,ユーザエージェント,[n],[user agent]
+4728,,-,ディレクトリシステムエージェント,[n],"[Directory System Agent, DSA]"
+4729,,-,オフィシャルハンデ,[n],[official handicap (golf)]
+4730,,-,オフィシャルゲーム,[n],[official game]
+4731,,-,オフィシャルサプライヤー,[n],[official supplier]
+4732,,-,オフィシャルサイト,[n],[official website]
+4733,,-,オペレーションセンター,[n],"[operation center, operation centre]"
+4734,,-,オペレーションリサーチ,[n],[operations research]
+4735,,-,スムージングオペレーション,[n],[smoothing operation]
+4736,,-,オペレーションコード,[n],"[operation code, op-code]"
+4737,,-,オペレーションマニュアル,[n],[Operations manuals]
+4738,,-,オペレーションツイスト,[n],[operation twist]
+4739,,-,オペレーションシステム,[n],[operating system]
+4740,,-,オペレーティング,[n],[operating]
+4741,,-,オペレーティングマージン,[n],[operating margin]
+4742,,-,オペレーティングシステムイメージ,[n],[operating system image]
+4743,,-,オペレーティングシステムファームウェア,[n],[operating system firmware]
+4744,,-,ディスクオペレーティングシステム,[n],"[disk operating system, DOS]"
+4745,,-,ネットワークオペレーティングシステム,[n],[network operating system]
+4746,,-,マルチタスクオペレーティングシステム,[n],[multitasking operating system]
+4747,,-,オリエンタルショートヘア,[n],[Oriental shorthair (cat breed)]
+4748,,-,オリエンタルロングヘア,[n],[oriental longhair]
+4749,,-,オリエンタルバタフライフィッシュ,[n],"[Oriental butterflyfish (Chaetodon auripes, species found mostly from Japan to Taiwan)]"
+4750,,-,オリンピックパーク,[n],[Olympic Park]
+4751,,-,オリンピックイヤー,[n],[Olympic year]
+4752,,-,オリンピックコングレス,[n],[Olympic Congress]
+4753,,-,オークションサイト,[n],[auction site]
+4754,,-,オンラインオークション,[n],[online auction]
+4755,,-,ネットオークション,[n],[net auction]
+4756,,-,オークションブリッジ,[n],[auction bridge]
+4757,,-,オーケストラボックス,[n],[orchestra box]
+4758,,-,ウィンドオーケストラ,[n],"[wind band, symphonic band]"
+4759,,-,ストリングオーケストラ,[n],[string orchestra]
+4760,,-,シンフォニーオーケストラ,[n],[symphony orchestra]
+4761,,-,オーケストラピット,[n],[orchestra pit]
+4762,,濠太剌利,オーストラリア,[n],[Australia]
+4763,,-,オーストラリアサーモン,[n],[Australian salmon (Arripis trutta)]
+4764,,墺太利,オーストリア,[n],[Austria]
+4765,,-,オーチャードグラス,[n],[orchard grass]
+4766,,-,オートマチックコントロール,[n],[automatic control]
+4767,,-,オートマチックトランスミッション,[n],[automatic transmission]
+4768,,-,オートマチックシフト,[n],[automatic transmission]
+4769,,-,オープニングゲーム,[n],[opening game]
+4770,,-,オープニングナンバー,[n],[opening number]
+4771,,-,オールスター,[n],[all-star (cast)]
+4772,,-,オールスターゲーム,[n],[all-star game]
+4773,,-,マリッジカウンセラー,[n],"[marriage counselor, marriage counsellor]"
+4774,,-,スクールカウンセラー,[n],[school counsellor]
+4775,,-,カップリング,[n],"[coupling, shipping, pairing of characters in a romantic relationship (in fan fiction, manga, etc.)]"
+4776,,-,カナディアン,"[n, adj-no]",[Canadian]
+4777,,-,ジャパニーズカナディアン,[n],[Japanese Canadian]
+4778,,-,カナディアンウイスキー,[n],[Canadian whisky]
+4779,,-,アカプリッチオ,[n],[a capriccio]
+4780,,-,コアカリキュラム,[n],[core curriculum]
+4781,,-,カリフォルニアロール,[n],[California roll]
+4782,,-,カリフォルニアコンドル,[n],[California condor (Gymnogyps californianus)]
+4783,,-,カリフォルニアドチザメ,[n],"[leopard shark (Triakis semifasciata, species found along the Pacific coast of North America)]"
+4784,,-,カリフォルニアスウェルシャーク,[n],"[swellshark (Cephaloscyllium ventriosum, species of catshark in the Eastern Pacific)]"
+4785,,-,インクカートリッジ,[n],[ink cartridge]
+4786,,-,カートリッジフォント,[n],[cartridge font]
+4787,,-,テープカートリッジ,[n],[tape cartridge]
+4788,,-,ディスクカートリッジ,[n],[disk cartridge]
+4789,,-,トナーカートリッジ,[n],[toner cartridge]
+4790,,-,リボンカートリッジ,[n],[ribbon cartridge]
+4791,,-,カートリッジテープドライブ,[n],[cartridge tape drive]
+4792,,-,フレキシブルディスクカートリッジ,[n],[flexible disk cartridge]
+4793,,-,キャスチング,[n],[casting]
+4794,,-,キャスチングリール,[n],[casting reel]
+4795,,-,チルドキャスチング,[n],[chilled casting]
+4796,,-,サーフキャスティング,[n],[surf casting]
+4797,,-,ディスクキャッシング,[n],[disk caching]
+4798,,-,キャッチャーボート,[n],[catcher (whaling boat)]
+4799,,-,キッチンキャビネット,[n],[kitchen cabinet]
+4800,,-,コーナーキャビネット,[n],[corner cabinet]
+4801,,-,シャドーキャビネット,[n],[shadow cabinet]
+4802,,-,ファイルキャビネット,[n],"[filing cabinet, file cabinet]"
+4803,,-,インナーキャビネット,[n],[inner cabinet]
+4804,,-,キャビネットアラーム,[n],[cabinet alarm]
+4805,,-,キャビネットファイル,[n],[cabinet file]
+4806,,-,キャビネットフレーム,[n],[cabinet frame]
+4807,,-,キャビネットモニタリング,[n],[cabinet monitoring]
+4808,,-,キャビネットルーフ,[n],[cabinet roof]
+4809,,-,イメージキャラクター,[n],[mascot]
+4810,,-,キャラクタディスプレイ,[n],[character display]
+4811,,-,ナショナルキャラクター,[n],[national character]
+4812,,-,キャラクターコード,[n],[character code]
+4813,,-,アニメキャラクター,[n],"[cartoon characters, anime characters]"
+4814,,-,キャラクターゲーム,[n],"[computer game using characters from manga, anime, etc.]"
+4815,,-,アドキャラクター,[n],[advertising character]
+4816,,-,キャラクターデザイン,[n],[character design]
+4817,,-,プレイヤーキャラクター,[n],"[player character, PC]"
+4818,,-,キャラクターソング,[n],"[character leitmotif, character theme song]"
+4819,,-,マスコットキャラクター,[n],"[mascot character, mascot]"
+4820,,-,アイスキャンディー,[n],"[ice pop, icy pole, popsicle, ice lolly]"
+4821,,-,ニコチンキャンディー,[n],[nicotine lollipop]
+4822,,-,キャンピングトレーラー,[n],"[camping trailer, caravan]"
+4823,,-,アドキャンペーン,[n],[ad campaign]
+4824,,-,キャンペーンセール,[n],[campaign sale]
+4825,,-,スポットキャンペーン,[n],[spot campaign]
+4826,,-,テーマキャンペーン,[n],[Theme campaign]
+4827,,-,テストキャンペーン,[n],[test campaign]
+4828,,-,プレスキャンペーン,[n],[press campaign]
+4829,,-,マーケティングキャンペーン,[n],[marketing campaign]
+4830,,-,ネガティブキャンペーン,[n],[negative campaign]
+4831,,-,キャンペーンガール,[n],[poster girl]
+4832,,-,キャンペーンモデル,[n],"[poster girl, face (of an advertising campaign, etc.)]"
+4833,,-,クオリティーペーパー,[n],[quality paper]
+4834,,-,クライアント・サーバーモデル,[n],[client-server model]
+4835,,-,クライアントサブスクリプション,[n],[client subscription]
+4836,,-,クライアントスクリプト,[n],[client script]
+4837,,-,クライアントハブ,[n],[client hub]
+4838,,-,シンクライアント,[n],[thin client]
+4839,,-,パッシブクライアント,[n],[passive client]
+4840,,-,クライアントアクセスポイント,[n],[client access point]
+4841,,-,クライアントアクセスライセンス,[n],[client access license]
+4842,,-,クライアントサーバーシステム,[n],"[client-server system, CSS]"
+4843,,-,クライアントサーバコンピューティング,[n],[client-server computing]
+4844,,-,クライアントサーバモデル,[n],[client-server model]
+4845,,-,アイスクライミング,[n],[ice climbing]
+4846,,-,クリエイティブコンテンツ,[n],[creative content]
+4847,,-,クリエーティブグループ,[n],[creative group]
+4848,,-,クリスチャンネーム,[n],[Christian name]
+4849,,-,クリスチャンロック,[n],[Christian rock]
+4850,,-,クリスチャンサイエンス,[n],[Christian Science]
+4851,,-,ドライクリーニング,[n],[dry cleaning]
+4852,,-,ウエットクリーニング,[n],[wet cleaning]
+4853,,-,ヘッドクリーニングキット,[n],[head cleaning kit]
+4854,,-,クリーンアップ,[n],"[cleanup (hitter), cleaning up]"
+4855,,-,ファイルクリーンアップ,[n],[file clean-up]
+4856,,-,クリーンナップ,[n],[cleanup]
+4857,,-,クレアチニン,[n],[creatinine]
+4858,,-,クレンジング,"[n, vs]",[cleansing]
+4859,,-,クレンジングローション,[n],[cleansing lotion]
+4860,,-,クレンジングフォーム,[n],[cleansing foam]
+4861,,-,エスニッククレンジング,[n],[ethnic cleansing]
+4862,,-,グラフィックアート,[n],[graphic arts]
+4863,,-,グラフィックイコライザー,[n],"[graphic equalizer, graphic equaliser]"
+4864,,-,グラフィックディスプレー,[n],"[graphic display, graphics display]"
+4865,,-,グラフィックデザイナー,[n],[graphic designer]
+4866,,-,グラフィックデザイン,[n],[graphic design]
+4867,,-,アダルトグラフィック,[n],[glossy sex magazine]
+4868,,-,グラフィックアクセラレータ,[n],[graphics accelerator]
+4869,,-,グラフィックエンジン,[n],[graphic engine]
+4870,,-,グラフィックカード,[n],"[graphics card, video card]"
+4871,,-,グラフィックタブレット,[n],[graphic tablet]
+4872,,-,グラフィックツール,[n],[graphic(al) tool]
+4873,,-,グラフィックディスプレイ,[n],[graphic display]
+4874,,-,グラフィックフィルタ,[n],"[graphic filter, graphics filter]"
+4875,,-,グラフィックモード,[n],[graphics mode]
+4876,,-,グラフィックスアクセラレータ,[n],[graphics accelerator]
+4877,,-,グラフィックスアダプタ,[n],[graphics adapter]
+4878,,-,グラフィックスコプロセッサ,[n],[graphics coprocessor]
+4879,,-,グラフィックスコントローラ,[n],[Graphics Controller]
+4880,,-,グラフィックスサブシステム,[n],[graphics subsystem]
+4881,,-,グラフィックスターミナル,[n],[graphics terminal]
+4882,,-,グラフィックスタブレット,[n],[graphics tablet]
+4883,,-,グラフィックスチップ,[n],[graphics chip]
+4884,,-,グラフィックスフォーマット,[n],[graphics format]
+4885,,-,グラフィックスプリンタ,[n],[graphics printer]
+4886,,-,グラフィックスボード,[n],[graphics board]
+4887,,-,グラフィックスワークステーション,[n],"[graphics workstation, GWS]"
+4888,,-,ベクターグラフィックス,[n],[vector graphics]
+4889,,-,ラスターグラフィックス,[n],[raster graphics]
+4890,,-,グラフィックスプロセシングユニット,[n],"[graphics processing unit, GPU]"
+4891,,-,グレコローマン,[n],[Greco-Roman (style of wrestling)]
+4892,,-,ナショナルコスチューム,[n],[national costume]
+4893,,-,コスチュームプレー,[n],"[cosplay, period drama, costume drama, costume play]"
+4894,,-,コスチュームジュエリー,[n],[costume jewelry]
+4895,,-,コネクションオリエンテッド,[n],[connection oriented]
+4896,,-,コネクションプロビジョニング,[n],[connection provisioning]
+4897,,-,ダイレクトコネクション,[n],[direct connection]
+4898,,-,バーチャルコネクション,[n],[virtual connection]
+4899,,-,メタリックコネクション,[n],[metallic connection]
+4900,,-,コマーシャルアート,[n],[commercial art]
+4901,,-,コマーシャルソング,[n],[advertising jingle]
+4902,,-,コマーシャルデザイン,[n],[commercial design]
+4903,,-,コマーシャルパッケージ,[n],[commercial package]
+4904,,-,コマーシャルフィルム,[n],[commercial film]
+4905,,-,コマーシャルベース,[n],[commercial base]
+4906,,-,コマーシャルペーパー,[n],[commercial paper]
+4907,,-,コマーシャルメッセージ,[n],[commercial message]
+4908,,-,スポットコマーシャル,[n],[spot commercial]
+4909,,-,オーラルコミュニケーション,[n],[aural communication]
+4910,,-,コミュニケーションギャップ,[n],[communications gap]
+4911,,-,ノンバーバルコミュニケーション,[n],[non-verbal communication]
+4912,,-,パーソナルコミュニケーション,[n],[personal communication]
+4913,,-,マスコミュニケーション,[n],"[mass communication, the media, mass collaboration, e.g. Wikipedia]"
+4914,,-,カスタムコミュニケーション,[n],"[customized communication, customised communication]"
+4915,,-,リスクコミュニケーション,[n],[risk communication]
+4916,,-,コミュニケーションサーバー,[n],[communication server]
+4917,,-,コミュニケーションシステム,[n],[communication system]
+4918,,-,コミュニケーショングッズ,[n],[well-chosen gifts (with a positive message)]
+4919,,-,コミュニティーカレッジ,[n],"[junior college, community college]"
+4920,,-,コミュニティースクール,[n],[community school]
+4921,,-,コミュニティーセンター,[n],"[community center, community centre]"
+4922,,-,コミュニティーペーパー,[n],[community paper]
+4923,,-,コミュニティーメディア,[n],[community media]
+4924,,-,コミュニティーオーガニゼーション,[n],[community organization]
+4925,,-,スタンプコレクション,[n],[stamp collection]
+4926,,-,ガベジコレクション,[n],[garbage collection]
+4927,,-,クリップコレクション,[n],[clip collection]
+4928,,-,ファイルコレクション,[n],[file collection]
+4929,,-,ヘルプコレクション,[n],[help collection]
+4930,,-,コンサルタントエンジニア,[n],[consultant engineer]
+4931,,-,マネジメントコンサルタント,[n],[management consultant]
+4932,,-,コンサルティングセールス,[n],[consulting sales]
+4933,,-,コンシューマーインターポール,[n],[Consumer Interpole]
+4934,,-,コンスタントシェーディング,[n],[constant shading]
+4935,,-,コンスタントビットレイト,[n],[constant bit rate]
+4936,,-,ナショナルコンセンサス,[n],[national consensus]
+4937,,-,ユニコードコンソーシアム,[n],[Unicode Consortium]
+4938,,-,ツアーコンダクター,[n],"[tour conductor, tour guide]"
+4939,,-,コンチェルトグロッソ,[n],[concerto grosso]
+4940,,-,コンチネンタルスタイル,[n],[continental style]
+4941,,-,コンチネンタルタンゴ,[n],[continental tango]
+4942,,-,コンチネンタルブレックファースト,[n],[continental breakfast]
+4943,,-,コンチネンタルプラン,[n],[continental plan]
+4944,,-,コンチネンタルルック,[n],[continental look]
+4945,,-,ブラックコンテンポラリー,[n],"[black contemporary (music), contemporary soul music]"
+4946,,-,トップコンディション,[n],[top condition]
+4947,,-,ベストコンディション,[n],[best condition]
+4948,,-,キャッシュコントローラ,[n],[cache controller]
+4949,,-,ストアコントローラ,[n],[store controller]
+4950,,-,ディスクコントローラ,[n],[disk controller]
+4951,,-,ディスプレイコントローラ,[n],[display controller]
+4952,,-,ネットワークコントローラ,[n],[network controller]
+4953,,-,アナログコントローラ,[n],[analog controller]
+4954,,-,フロッピーディスクコントローラ,[n],"[floppy disk controller, FDC]"
+4955,,-,タブレットコントローラー,[n],"[tablet controller, tablet game pad, tablet gaming controller]"
+4956,,-,コストコントロール,[n],[cost control]
+4957,,-,コントロールアンプ,[n],[control amp]
+4958,,-,コントロールタワー,[n],[control tower]
+4959,,-,コントロールプログラム,[n],"[control program, control programme]"
+4960,,-,ストックコントロール,[n],[stock control]
+4961,,-,フライトコントロール,[n],[flight control]
+4962,,-,プロセスコントロール,[n],[process control]
+4963,,-,プロダクションコントロール,[n],[production control]
+4964,,-,ボリュームコントロール,[n],[volume control]
+4965,,-,マインドコントロール,"[n, vs]",[mind-control]
+4966,,-,ユニットコントロール,[n],[unit control]
+4967,,-,リスクコントロール,[n],[risk control]
+4968,,-,リモートコントロール,[n],[remote control]
+4969,,-,ウエイトコントロール,[n],[weight control]
+4970,,-,カスタムコントロール,[n],[custom control]
+4971,,-,コントロールケーブル,[n],[control cable]
+4972,,-,コントロールコード,[n],[control code]
+4973,,-,コントロールパネル,[n],[control panel]
+4974,,-,コントロールファイル,[n],[control file]
+4975,,-,コントロールブレーク,[n],[control break]
+4976,,-,コントロールメッセージ,[n],[control message]
+4977,,-,フローコントロール,[n],[flow control]
+4978,,-,アクセスコントロール,[n],[access control]
+4979,,-,コントロールセンター,[n],"[control center, control centre]"
+4980,,-,ダメージコントロール,[n],[damage control]
+4981,,-,ドーピングコントロール,[n],[doping control]
+4982,,-,トラクションコントロール,[n],[traction control]
+4983,,-,ワンマンコントロール,[n],[one-man control]
+4984,,-,クルーズコントロール,[n],[cruise control]
+4985,,-,スパンオブコントロール,[n],[span of control]
+4986,,-,アクセスコントロールリスト,[n],"[access control list, ACL]"
+4987,,-,ゲームコントロールアダプタ,[n],[game control adapter]
+4988,,-,システムコンバーター,[n],[system converter]
+4989,,-,トルクコンバーター,[n],[torque converter]
+4990,,-,コンパニオンプラント,[n],[companion plant]
+4991,,-,コンパニオンアニマル,[n],"[companion animal, pet]"
+4992,,-,イベントコンパニオン,[n],"[promotional model (e.g. at a trade show), booth babe]"
+4993,,-,コンパニオンプランツ,[n],[companion plant]
+4994,,-,レディズコンパニオン,[n],"[lady's companion (paid female companion of a wealthy or high-ranking woman, esp. in Victorian England)]"
+4995,,-,スーパーコンパニオン,[n],[female escort]
+4996,,-,キーストーンコンビネーション,[n],[keystone combination]
+4997,,-,コンビネーションプレー,[n],[combination play]
+4998,,-,コンビネーションサラダ,[n],[combination salad]
+4999,,-,コンビネーションジャンプ,[n],[combination jump]
+5000,,-,コンビネーションブロー,[n],[combination blow]
+5001,,-,アナログコンピューター,[n],[analog computer]
+5002,,-,オフィスコンピューター,[n],[office computer]
+5003,,-,コンピューターアート,[n],[computer art]
+5004,,-,コンピュータウイルス,[n],[computer virus]
+5005,,-,コンピュータソフトウェア,[n],[computer software]
+5006,,-,コンピュータマニア,[n],[hacker]
+5007,,-,パーソナルコンピュータ,[n],"[personal computer, PC]"
+5008,,-,ダイビングコンピュータ,[n],[dive computer]
+5009,,-,コンピューターサイエンス,[n],[computer science]
+5010,,-,コンピュータリテラシー,[n],[computer literacy]
+5011,,-,アレイコンピュータ,[n],[array computer]
+5012,,-,オンボードコンピュータ,[n],[on-board computer]
+5013,,-,オンラインコンピューター,[n],[online computer]
+5014,,-,クリップボードコンピュータ,[n],[clipboard computer]
+5015,,-,ゲストコンピュータ,[n],[guest computer]
+5016,,-,コンピュータセキュリティ,[n],[computer security]
+5017,,-,コンピュータネットワーク,[n],[computer network]
+5018,,-,コンピュータプログラマー,[n],[computer programmer]
+5019,,-,コンピュータワーム,[n],[computer worm]
+5020,,-,デジタルコンピュータ,[n],[digital computer]
+5021,,-,デスクトップコンピュータ,[n],[desktop computer]
+5022,,-,ネットワークコンピュータ,[n],"[network computer, NC]"
+5023,,-,ノンストップコンピュータ,[n],[non-stop computer]
+5024,,-,ハンドヘルドコンピュータ,[n],[hand-held computer]
+5025,,-,パームトップコンピュータ,[n],[palmtop computer]
+5026,,-,パラレルコンピュータ,[n],[parallel computer]
+5027,,-,ファジーコンピュータ,[n],[fuzzy computer]
+5028,,-,ファミリーコンピュータ,[n],[family computer]
+5029,,-,フロントエンドコンピュータ,[n],[front-end computer]
+5030,,-,ブリーフケースコンピュータ,[n],[briefcase computer]
+5031,,-,ホストコンピュータ,[n],[host computer]
+5032,,-,ポータブルコンピュータ,[n],[portable computer]
+5033,,-,メインフレームコンピュータ,[n],[mainframe computer]
+5034,,-,ラップトップコンピュータ,[n],[laptop computer]
+5035,,-,オンラインコンピュータシステム,[n],[online computer system]
+5036,,-,コンピュータグラフィクスインタフェース,[n],"[Computer Graphics Interface, CGI]"
+5037,,-,シングルボードコンピュータ,[n],[single-board computer]
+5038,,-,コンピューターアニメ,[n],[computer animation]
+5039,,-,コンピュータートモグラフィー,[n],[computer tomography]
+5040,,-,コンピューターマインド,[n],[computer mind]
+5041,,-,コンピューターユーティリティー,[n],[computer utility]
+5042,,-,サテライトコンピューター,[n],[satellite computer]
+5043,,-,デジタルコンピューター,[n],[digital computer]
+5044,,-,ハイブリッドコンピューター,[n],[hybrid computer]
+5045,,-,ファミリーコンピューター,[n],"[Nintendo Entertainment System, NES]"
+5046,,-,ホストコンピューター,[n],[host computer]
+5047,,-,ファジーコンピューター,[n],[fuzzy computer]
+5048,,-,コンピューターネットワーク,[n],[computer network]
+5049,,-,コンピューターシステム,[n],[computer system]
+5050,,-,サイクルコンピューター,[n],"[cyclocomputer, bicycle computer, cycle computer]"
+5051,,-,コンフィギュレーションコマンド,[n],[configuration commands]
+5052,,-,コンフィギュレーションメモリ,[n],[configuration memory]
+5053,,-,システムコンフィギュレーション,[n],[system configuration]
+5054,,-,メモリコンフィギュレーション,[n],[memory configuration]
+5055,,-,インフェリオリティーコンプレックス,[n],[inferiority complex]
+5056,,-,エディプスコンプレックス,[n],"[Oedipus complex, sexual attraction to one's mother]"
+5057,,-,エレクトラコンプレックス,[n],[Electra complex]
+5058,,-,シンデレラコンプレックス,[n],[Cinderella complex]
+5059,,-,マザーコンプレックス,[n],"[Oedipus complex, sexual attraction to one's mother]"
+5060,,-,カインコンプレックス,[n],"[Cain complex (jealousy of a sibling, ultimately leading to hatred)]"
+5061,,-,シネマコンプレックス,[n],[cinema complex]
+5062,,-,アーバンコンプレックス,[n],[urban complex]
+5063,,-,ブラザーコンプレックス,[n],"[brother complex, unnatural attachment to one's brother (esp. by his sister)]"
+5064,,-,エアコンプレッサー,[n],[air compressor]
+5065,,-,コンベンションビューロー,[n],[convention bureau]
+5066,,-,コンベンションホール,[n],[convention hall]
+5067,,-,ナショナルコンベンション,[n],[national convention]
+5068,,-,インテリアコーディネーター,[n],[interior coordinator]
+5069,,-,グリーンコーディネーター,[n],[interior foliage designer]
+5070,,-,ファッションコーディネーター,[n],[fashion coordinator]
+5071,,-,パブリックコーポレーション,[n],[public corporation]
+5072,,-,バーチャルコーポレーション,[n],"[virtual corporation, VC]"
+5073,,-,コーポレート,[adj-f],[corporate]
+5074,,-,コーポレートガバナンス,[n],[corporate governance]
+5075,,-,コーポレートバンキング,[n],[corporate banking]
+5076,,-,コーポレートライセンス,[n],[corporate license]
+5077,,-,ルーブ・ゴールドバーグ・マシン,[n],[Rube Goldberg machine]
+5078,,-,サイクリングコース,[n],[cycling course]
+5079,,-,エアサスペンション,[n],[air suspension]
+5080,,-,シングルソースサプライヤー,[n],[single source supplier]
+5081,,-,ファイアーサラマンダー,[n],[fire salamander (Salamandra salamandra)]
+5082,,-,バードサンクチュアリー,[n],[bird sanctuary]
+5083,,-,ランダムサンプリング,[n],[random sampling]
+5084,,-,サンプリングレート,[n],[sampling rate]
+5085,,-,パワーシェアリング,[n],[power sharing]
+5086,,-,タイムシェアリング,[n],[time sharing]
+5087,,-,ファイルシェアリング,[n],[file sharing]
+5088,,-,コードシェアリング,[n],[code-sharing]
+5089,,-,マネジメントシミュレーション,[n],[management simulation]
+5090,,-,シミュレーションゲーム,[n],[simulation game]
+5091,,-,フライトシミュレータ,[n],[flight simulator]
+5092,,-,シューティング,[n],[shooting]
+5093,,-,シューティングスクリプト,[n],[shooting script]
+5094,,-,シューティングゲーム,[n],[shooting game]
+5095,,-,シューティングスター,[n],[shooting star]
+5096,,-,カタログショッピング,[n],"[catalog shopping, catalogue shopping]"
+5097,,-,ショッピングカート,[n],[shopping cart]
+5098,,-,ショッピングバッグ,[n],[shopping bag]
+5099,,-,ショッピングモール,[n],[shopping mall]
+5100,,-,ホームショッピング,[n],[home shopping]
+5101,,-,オンラインショッピング,[n],[online shopping]
+5102,,-,テレホンショッピング,[n],[phone shopping]
+5103,,-,フォーラムショッピング,[n],[seeking a venue (usu. for litigation)]
+5104,,-,ネットショッピング,[n],"[online shopping, net shopping]"
+5105,,-,ショッピングトップ,[n],[first page of an online-shopping site]
+5106,,-,ショッピングアテンダント,[n],"[shop attendant, sales assistant, store clerk]"
+5107,,-,ショッピングバッグレディー,[n],[shopping bag lady]
+5108,,-,オンラインショッピングサイト,[n],[online shopping site]
+5109,,-,オンラインショッピングカート,[n],[online shopping carts]
+5110,,-,シンガポール・スリング,[n],[Singapore sling]
+5111,,-,シンジケートローン,[n],[syndicate loan]
+5112,,-,アナログシンセサイザー,[n],[analog synthesizer]
+5113,,-,デジタルシンセサイザー,[n],[digital synthesizer]
+5114,,-,アイソレーションシンドローム,[n],[isolation syndrome]
+5115,,-,メタボリックシンドローム,[n],[metabolic syndrome]
+5116,,-,クラッシュシンドローム,[n],[crush syndrome]
+5117,,-,チャイナシンドローム,[n],[China syndrome]
+5118,,-,ホワイトシンドローム,[n],[white syndrome (coral disease)]
+5119,,-,エンプティーネストシンドローム,[n],[empty nest syndrome]
+5120,,-,シンボリックリンク,[n],[symbolic link]
+5121,,-,シンボリックデバッガ,[n],[symbolic debugger]
+5122,,-,トップシークレット,[n],[top secret]
+5123,,-,シークレットシューズ,[n],[shoes with thick soles to make one look taller]
+5124,,-,シークレットウィンドウ,[n],"[incognito window, incognito tab]"
+5125,,-,ジェスチャーゲーム,[n],[charades]
+5126,,-,ジェネレーションギャップ,[n],[generation gap]
+5127,,-,ビートジェネレーション,[n],[beat generation]
+5128,,-,ロストジェネレーション,[n],[lost generation]
+5129,,-,ジャイアントパンダ,[n],[giant panda (Ailuropoda melanoleuca)]
+5130,,-,ジャイアントケルプ,[n],[giant kelp (Macrocystis pyrifera)]
+5131,,-,ジャイアントスラローム,[n],[giant slalom]
+5132,,-,ジャイアントコーン,[n],[giant corn]
+5133,,-,ジャイアントインパクト,[n],[giant impact (theory)]
+5134,,-,ジャパニーズスマイル,[n],[Japanese smile]
+5135,,-,ジャパニーズボブテイル,[n],[Japanese bobtail (breed of cat)]
+5136,,-,ジャンピング,[n],[jumping]
+5137,,-,ベースジャンプ,[n],[BASE jumping]
+5138,,-,ビデオジャーナリスト,[n],[video journalist]
+5139,,-,イエロージャーナリズム,[n],[yellow journalism]
+5140,,-,ブラックジャーナリズム,[n],[black journalism]
+5141,,瑞典,スウェーデン,[n],[Sweden]
+5142,,-,スウェーデンリレー,[n],[Swedish relay]
+5143,,-,スクランブルレース,[n],[scramble race]
+5144,,-,フィギュアスケーティング,[n],[figure skating]
+5145,,-,ペアスケーティング,[n],[pair skating]
+5146,,-,フードスタイリスト,[n],[food stylist]
+5147,,-,スタンダードナンバー,[n],[standard number]
+5148,,-,スタンダードバージョン,[n],[standard version]
+5149,,-,スタンダードモード,[n],[standard mode]
+5150,,-,ダブルスタンダード,[n],[double standard]
+5151,,-,スタンダードテスト,[n],[standard test]
+5152,,-,デファクトスタンダード,[n],[de facto standard]
+5153,,-,デジュールスタンダード,[n],[de jure standard]
+5154,,-,スターリング,[n],[sterling]
+5155,,-,スターリングブロック,[n],[Sterling block]
+5156,,-,スターリングシルバー,[n],[Sterling silver]
+5157,,-,サテライトステーション,[n],[satellite station]
+5158,,-,トラッキングステーション,[n],[tracking station]
+5159,,-,ナースステーション,[n],[nurse station]
+5160,,-,エコステーション,[n],[a service station for cars that run on alternative fuels]
+5161,,-,ビーコンステーション,[n],[beaconing station]
+5162,,-,ベースステーション,[n],[base station]
+5163,,-,エアステーション,[n],[air station]
+5164,,-,ステーションブレイク,[n],[station break]
+5165,,-,パンティーストッキング,[n],[panty hose]
+5166,,-,スパゲッティウエスタン,[n],[spaghetti Western (film)]
+5167,,-,スパゲッティコード,[n],[spaghetti code]
+5168,,-,スパゲッティミートソース,[n],[spaghetti with meat sauce]
+5169,,-,ペイロードスペシャリスト,[n],[payload specialist]
+5170,,-,スポッテッドスキャット,[n],[spotted scat (Scatophagus argus)]
+5171,,-,ヘッドスライディング,"[n, vs]","[headfirst slide, head-first sliding]"
+5172,,-,スライディングキャッチ,[n],[sliding catch]
+5173,,-,スライディングスケール,[n],[sliding scale]
+5174,,-,スライディングシート,[n],[sliding seat]
+5175,,-,スライディングシステム,[n],[sliding system]
+5176,,-,スライディングタックル,[n],[sliding tackle]
+5177,,-,セキュリティホール,[n],[security hole]
+5178,,-,セキュリティポリス,[n],[bodyguard for VIPs]
+5179,,-,セキュリティコンテキスト,[n],[security context]
+5180,,-,セキュリティシステム,[n],[security system]
+5181,,-,セキュリティファイル,[n],[security file]
+5182,,-,セキュリティプリンシパル,[n],[security principal]
+5183,,-,セキュリティプロトコル,[n],[security protocol]
+5184,,-,セキュリティホスト,[n],[security host]
+5185,,-,セキュリティリスク,[n],[security risk]
+5186,,-,セキュリティログ,[n],[security log]
+5187,,-,ナショナルセキュリティー,[n],[national security]
+5188,,-,アジェンダセッティング,[n],[agenda setting]
+5189,,-,ファインセラミックス,[n],[fine ceramics]
+5190,,-,ナチュラルセレクション,[n],[natural selection]
+5191,,-,ポートフォリオセレクション,[n],[portfolio selection]
+5192,,-,セーフティー,[n],[safety]
+5193,,-,セイフティバント,[n],[bunt performed for a base hit]
+5194,,-,セーフティーネット,[n],[safety net]
+5195,,-,セーフティーゾーン,[n],[safety zone]
+5196,,-,セーフティービンディング,[n],[safety binding (ski)]
+5197,,-,セーフティボックス,[n],[safety deposit box]
+5198,,-,アクティブセーフティー,[n],[active safety]
+5199,,-,セーフティーファクター,[n],[safety factor]
+5200,,-,セーフティーバルブ,[n],[safety valve]
+5201,,-,セーフティーコーン,[n],"[safety cone, traffic cone]"
+5202,,-,ジャパンソサエティー,[n],[Japan Society]
+5203,,-,マスソサエティー,[n],[mass society]
+5204,,-,アドインソフトウェア,[n],[add-in software]
+5205,,-,ウィンドウソフトウェア,[n],[windowing software]
+5206,,-,オーサリングソフトウェア,[n],[authoring software]
+5207,,-,オープンソースソフトウェア,[n],[open source software]
+5208,,-,オンラインソフトウェア,[n],[online software]
+5209,,-,カスタムソフトウェア,[n],[custom software]
+5210,,-,キャンドソフトウェア,[n],[canned software]
+5211,,-,システムソフトウェア,[n],[system software]
+5212,,-,ソフトウェアガイド,[n],[software guide]
+5213,,-,ソフトウェアスクロール,[n],[software scroll]
+5214,,-,ソフトウェアハウス,[n],[software house]
+5215,,-,ソフトウェアパッケージ,[n],[software package]
+5216,,-,ソフトウェアモデム,[n],[software modem]
+5217,,-,ソフトウェアライセンス,[n],[software license]
+5218,,-,データベースソフトウェア,[n],[database software]
+5219,,-,ドローイングソフトウェア,[n],[drawing software]
+5220,,-,ドローソフトウェア,[n],[drawing software]
+5221,,-,パッケージソフトウェア,[n],[packaged software]
+5222,,-,プリインストールソフトウェア,[n],[preinstalled software]
+5223,,-,プレゼンテーションソフトウェア,[n],[presentation software]
+5224,,-,ペインティングソフトウェア,[n],[painting software]
+5225,,-,メールソフトウェア,[n],[mail software]
+5226,,-,リッパーソフトウェア,[n],[ripper software]
+5227,,-,リッピングソフトウェア,[n],[ripping software]
+5228,,-,ソフトウェアエンジニア,[n],[software engineer]
+5229,,-,ウイルスチェックソフトウェア,[n],[virus checker software]
+5230,,-,コードモーフィングソフトウェア,[n],[code morphing software]
+5231,,-,システムソフトウエア,[n],[systems software]
+5232,,-,メディカルソーシャルワーカー,[n],"[medical social worker, MSW]"
+5233,,-,ファインマンダイアグラム,[n],[Feynman diagram]
+5234,,-,オブジェクトモデルダイアグラム,[n],[object model diagram]
+5235,,-,ダイナミックアロケーション,[n],[dynamic allocation]
+5236,,-,ダイナミックディスク,[n],[dynamic disk]
+5237,,-,ダイナミックメモリ,[n],[dynamic memory]
+5238,,-,ダイナミックリロケーション,[n],[dynamic relocation]
+5239,,-,ダイナミックリンク,[n],[dynamic link]
+5240,,-,ダイナミックルーティング,[n],[dynamic routing]
+5241,,-,ダイナミックルート,[n],[dynamic route]
+5242,,-,ダイナミックレンジ,[n],[dynamic range]
+5243,,-,ダイナミックプログラミング,[n],[dynamic programming]
+5244,,-,ダイナミックスピーカー,[n],[dynamic speaker]
+5245,,-,ダウンロードコンテンツ,[n],"[downloadable content (e.g. for a video game), DLC]"
+5246,,-,チェックインカウンター,[n],[check-in counter]
+5247,,-,チャリティーショー,[n],[charity show]
+5248,,-,チューリップツリー,[n],[tulip tree (Liriodendron tulipifera)]
+5249,,-,チョコレートケーキ,[n],[chocolate cake]
+5250,,-,ホットチョコレート,[n],[hot chocolate]
+5251,,-,ホワイトチョコレート,[n],[white chocolate]
+5252,,-,チョコレートファウンテン,[n],[chocolate fountain]
+5253,,-,チョコレートパフェ,[n],[chocolate parfait]
+5254,,-,チョコレートブラウニー,[n],[chocolate brownie]
+5255,,-,ビターチョコレート,[n],[bitter chocolate]
+5256,,-,ダブルチーズバーガー,[n],[double cheeseburger]
+5257,,-,ティーンエイジ,[n],[teen-age]
+5258,,-,テクノロジーアート,[n],[technology art]
+5259,,-,テクノロジーギャップ,[n],[technology gap]
+5260,,-,テクノロジートランスファー,[n],[technology transfer]
+5261,,-,グリーンテクノロジー,[n],[green technology]
+5262,,-,テクノロジーバブル,[n],[technology bubble]
+5263,,-,プッシュテクノロジー,[n],[push technology]
+5264,,-,ケーブルテレビジョン,[n],[cable television]
+5265,,-,テンポラリーワーカー,[n],[temporary worker]
+5266,,-,ディクショナリプロパティ,[n],[dictionary property]
+5267,,-,ウォーキングディクショナリー,[n],[walking dictionary]
+5268,,-,オンラインディクショナリー,[n],[online dictionary]
+5269,,-,ディスカウントストア,[n],[discount store]
+5270,,-,ディスカウントセール,[n],[discount sale]
+5271,,-,ボリュームディスカウント,[n],[volume discount]
+5272,,-,ディスカウントショップ,[n],[discount shop]
+5273,,-,ディスカウントキャッシュフロー,[n],[discounted cash flow]
+5274,,-,グループディスカッション,[n],[group discussion]
+5275,,-,パネルディスカッション,[n],[panel discussion]
+5276,,-,フォーラムディスカッション,[n],[forum discussion]
+5277,,-,ウインドーディスプレー,[n],[window display]
+5278,,-,ナンバーディスプレー,[n],"[number display, caller ID (on telephones)]"
+5279,,-,プラズマディスプレイ,[n],[plasma display]
+5280,,-,アクティブディスプレイ,[n],[active display]
+5281,,-,アナログディスプレイ,[n],[analog display]
+5282,,-,ディスプレイアダプター,[n],[display adapter]
+5283,,-,ディスプレイカード,[n],[display card]
+5284,,-,ディスプレイシステム,[n],[display system]
+5285,,-,ディスプレイセッション,[n],[display session]
+5286,,-,ディスプレイポストスクリプト,[n],"[Display PostScript, DPS]"
+5287,,-,ディスプレイモデル,[n],[display model]
+5288,,-,ビットマップディスプレイ,[n],[bit-mapped display]
+5289,,-,フラットディスプレイ,[n],[flat (screen) display]
+5290,,-,マルチスキャンディスプレイ,[n],[multi-scan display]
+5291,,-,モノクロディスプレイ,[n],[monochrome display]
+5292,,-,アクティブマトリクスディスプレイ,[n],[active matrix display]
+5293,,-,オンスクリーンディスプレイ,[n],[on-screen display]
+5294,,-,パッシブマトリクスディスプレイ,[n],[passive matrix display]
+5295,,-,ビデオディスプレイカード,[n],[video display card]
+5296,,-,フラットパネルディスプレイ,[n],[flat panel display]
+5297,,-,フルページディスプレイ,[n],[full-page display]
+5298,,-,プラズマディスプレイパネル,[n],"[plasma display panel, PDP]"
+5299,,-,ラスタースキャンディスプレイ,[n],[raster scan display]
+5300,,-,カウンターディスプレー,[n],[counter display]
+5301,,-,プラズマディスプレー,[n],[plasma display]
+5302,,-,デュアルスキャンディスプレー,[n],[dual scan display]
+5303,,-,アクチブディフェンス,[n],"[active defense, active defence]"
+5304,,-,マンツーマンディフェンス,[n],"[man-to-man defense, man-to-man defence]"
+5305,,-,ゾーンディフェンス,[n],[zone defense]
+5306,,-,ディフェンディング,[n],[defending]
+5307,,-,ディフェンディングゾーン,[n],[defending zone]
+5308,,-,フロアディレクター,[n],"[floor director, FD]"
+5309,,-,ライトディレクター,[n],[light director]
+5310,,-,リモートディレクトリ,[n],[remote directory]
+5311,,-,アクティブディレクトリ,[n],[Active Directory]
+5312,,-,カレントディレクトリ,[n],[current directory]
+5313,,-,ディレクトリエントリ,[n],"[directory entry, link]"
+5314,,-,ディレクトリスタック,[n],[directory stack]
+5315,,-,ディレクトリストア,[n],[directory store]
+5316,,-,ディレクトリツリー,[n],[directory tree]
+5317,,-,ドロップディレクトリ,[n],[drop directory]
+5318,,-,メインディレクトリ,[n],[main directory]
+5319,,-,ルートディレクトリ,[n],[root directory]
+5320,,-,ワーキングディレクトリ,[n],[working directory]
+5321,,-,オンラインディレクトリー,[n],[online directory]
+5322,,ＤＶＤ,ディーブイディー,[n],"[digital versatile disc, DVD]"
+5323,,ＨＤＤＶＤ,エッチディーディーブイディー,[n],"[high-definition digital versatile disc (HD DVD, high-definition DVD)]"
+5324,,-,デコレーションケーキ,[n],"[decorated cake, fancy cake]"
+5325,,-,インテリアデコレーション,[n],[interior decoration]
+5326,,-,デコレーションチャリンコ,[n],"[bicycle custom-fitted with an ornate, box-shaped body, art bike]"
+5327,,-,デコレーショントラック,[n],"[showily decorated truck (e.g. chrome, air-brushed pictures, colored lights), art truck]"
+5328,,-,マスデモクラシー,[n],[mass democracy]
+5329,,-,グラスルートデモクラシー,[n],[grassroots democracy]
+5330,,-,バーミューダトライアングル,[n],[Bermuda Triangle]
+5331,,-,ゴールデントライアングル,[n],"[Golden Triangle (area near the borders of Burma, Thailand and Laos)]"
+5332,,-,スンニ・トライアングル,[n],"[Sunni Triangle (area of Iraq bounded by Baghdad, Ramadi and Tikrit)]"
+5333,,-,トラフィックビルダー,[n],[traffic builder]
+5334,,-,トラフィックシェーピング,[n],[traffic shaping]
+5335,,-,トラフィックパディング,[n],[traffic padding]
+5336,,-,トラフィックパラメータ,[n],[traffic parameter]
+5337,,-,トラフィックフロー,[n],[traffic flow]
+5338,,-,トラフィックマネジメント,[n],[traffic management]
+5339,,-,ウェブトラフィック,[n],[web traffic]
+5340,,-,トランジスターグラマー,[n],"[transistor glamour, transistor glamor]"
+5341,,-,バイポーラートランジスター,[n],[bipolar transistor]
+5342,,-,スカルプトリートメント,[n],[scalp treatment]
+5343,,-,ボディートリートメント,[n],[body treatment]
+5344,,-,アサーティブネストレーニング,[n],[assertiveness training]
+5345,,-,インターバルトレーニング,[n],[interval training]
+5346,,-,ウエートトレーニング,[n],[weight training]
+5347,,-,サーキットトレーニング,[n],[circuit training]
+5348,,-,トレーニングウエア,[n],[training wear]
+5349,,-,トレーニングキャンプ,[n],[training camp]
+5350,,-,トレーニングシャツ,[n],[sweat shirt]
+5351,,-,トレーニングシューズ,[n],[training shoes]
+5352,,-,トレーニングパンツ,[n],[sweat pants]
+5353,,-,トレーニングウィザード,[n],[training wizard]
+5354,,-,メンタルトレーニング,[n],[mental training]
+5355,,-,クレートトレーニング,[n],"[crate training, housebreaking, house-training]"
+5356,,-,トレーニングセンター,[n],[training centre (center)]
+5357,,-,イメージトレーニング,[n],"[training method in sports, etc. where one imagines how a scenario would play out, mental rehearsal, mental preparation, visualization (for practicing a skill in one's mind)(practising), practicing under simulated conditions (e.g. while watching a video), mental dry run]"
+5358,,-,トレーニングウェア,[n],[training wear]
+5359,,-,トイレトレーニング,[n],"[toilet training, potty training]"
+5360,,-,トレーニングマシン,[n],"[exercise machine, training machine, trainer]"
+5361,,-,ボイストレーニング,[n],[voice training]
+5362,,-,オンザジョブトレーニング,[n],[on-the-job training]
+5363,,-,オフザジョブトレーニング,[n],[off-the-job training]
+5364,,-,メジャートーナメント,[n],[major tournament]
+5365,,-,トーナメントツアー,[n],[tournament tour]
+5366,,-,ドキュメンタリードラマ,[n],[documentary drama]
+5367,,-,ヒューマンドキュメント,[n],[human document]
+5368,,-,サンプルドキュメント,[n],[sample document]
+5369,,-,ドキュメントイメージング,[n],[document imaging]
+5370,,-,ドキュメントファイル,[n],[document file]
+5371,,-,ドキュメントプロパティ,[n],[document properties]
+5372,,-,ベースラインドキュメント,[n],[baseline document]
+5373,,-,マイドキュメント,[n],[My Documents]
+5374,,-,マスタドキュメント,[n],[master document]
+5375,,-,ワーキングドキュメント,[n],[working document]
+5376,,-,ウインドードレッシング,[n],[window dressing]
+5377,,-,サラダドレッシング,[n],[salad dressing]
+5378,,-,フレンチドレッシング,[n],[French dressing]
+5379,,-,ランチドレッシング,[n],[ranch dressing]
+5380,,-,ドローイングプログラム,[n],[drawing program]
+5381,,-,ドローイングボード,[n],[drawing board]
+5382,,-,ドローイングペーパー,[n],[drawing paper]
+5383,,新西蘭,ニュージーランド,[n],[New Zealand]
+5384,,-,システムネットワーク,[n],[systems network]
+5385,,-,ニューラルネットワーク,[n],[neural network]
+5386,,-,ネットワークアドミン,[n],[network administration]
+5387,,-,ラインネットワーク,[n],[line network]
+5388,,-,オーバーレイネットワーク,[n],[overlay network]
+5389,,-,スターネットワーク,[n],[star network]
+5390,,-,テレコムネットワーク,[n],[telecom network]
+5391,,-,ネットワークアダプタ,[n],[network adapter]
+5392,,-,ネットワークアドミニストレータ,[n],[network administrator]
+5393,,-,ネットワークアドレス,[n],[network address]
+5394,,-,ネットワークインフラ,[n],[network infrastructure]
+5395,,-,ネットワークエレメント,[n],[network element]
+5396,,-,ネットワークケーブル,[n],[network cabling]
+5397,,-,ネットワークサービスプロバイダ,[n],"[network service provider, NSP]"
+5398,,-,ネットワークトポロジー,[n],[network topology]
+5399,,-,ネットワークドライブ,[n],[network drive]
+5400,,-,ネットワークパケット,[n],[network packet]
+5401,,-,ネットワークプリンタ,[n],[network printer]
+5402,,-,ネットワークプロトコル,[n],[network protocol]
+5403,,-,ネットワークマネージャ,[n],[network manager]
+5404,,-,リングネットワーク,[n],[ring network]
+5405,,-,ワークグループネットワーク,[n],[workgroup network]
+5406,,-,ワイヤレスネットワーク,[n],[wireless network]
+5407,,-,リカレントニューラルネットワーク,[n],[recurrent neural network]
+5408,,-,オンラインネットワークシステム,[n],[online network system]
+5409,,-,トークンリングネットワーク,[n],[token-ring network]
+5410,,-,ネットワークアクセスポイント,[n],"[network access point, NAP]"
+5411,,-,ネットワークインターフェースカード,[n],"[network interface card, NIC]"
+5412,,-,ネットワークサーバモード,[n],[network server mode]
+5413,,-,ネットワークバイトオーダー,[n],[network byte order]
+5414,,-,ネットワークファイルシステム,[n],"[Network File System, NFS]"
+5415,,-,ネットワークプロトコルアナライザ,[n],[network protocol analyzer]
+5416,,-,パーソナルエリアネットワーク,[n],[Personal Area Network]
+5417,,-,メトロポリタンエリアネットワーク,[n],"[Metropolitan Area Network, MAN]"
+5418,,-,ワイドエリアネットワーク,[n],"[wide area network, WAN]"
+5419,,ノイマン型,ノイマンがた,[n],[Neumann-type (computer)]
+5420,,-,ノルディックコンバインド,[n],[Nordic combined (skiing event)]
+5421,,-,ノンタイトル,[adj-no],[nontitle]
+5422,,-,ノーヒットノーラン,[exp],"[no-hit, no-run baseball game]"
+5423,,-,デジタルハイビジョン,[n],[digital Hi-Vision]
+5424,,-,ハイブリッドディスク,[n],[hybrid disk]
+5425,,-,ヘッドハンティング,[n],"[head-hunting, recruiting professionals from other companies]"
+5426,,-,バーゲンハンティング,[n],[bargain hunting]
+5427,,-,ロケーションハンティング,[n],"[location scouting, location scout]"
+5428,,-,ストーンハンティング,[n],[collecting rocks and mineral specimens (as a hobby)]
+5429,,-,ハンディキャップレース,[n],[handicap race]
+5430,,-,ハードウェアエラー,[n],[hardware error]
+5431,,-,ハードウェアプラットフォーム,[n],[hardware platform]
+5432,,-,ハードウェアベース,[n],[hardware based]
+5433,,-,インクリメンタルバックアップ,[n],[incremental backup]
+5434,,-,オンラインバックアップ,[n],[online backup]
+5435,,-,テープバックアップ,[n],[tape backup]
+5436,,-,バックアップスナップショット,[n],[backup snapshot]
+5437,,-,バックアップディスケット,[n],[backup diskette]
+5438,,-,バックアップバッテリ,[n],[backup battery]
+5439,,-,バックアップファイル,[n],"[backup file, job-recovery control file]"
+5440,,-,バックアップルート,[n],[backup route]
+5441,,-,バッテリバックアップ,[n],[battery backup]
+5442,,-,ファイルバックアップ,[n],[file backup]
+5443,,-,フルバックアップ,[n],[full backup]
+5444,,-,ホットバックアップ,[n],[hot backup]
+5445,,-,ログバックアップ,[n],[log backup]
+5446,,-,バックアップライト,[n],[backup light]
+5447,,-,バックアップシステム,[n],[backup system]
+5448,,-,バックアップセットカタログ,[n],[backup set catalog]
+5449,,-,ブロックレベルバックアップ,[n],[block level backup]
+5450,,-,バックグラウンドミュージック,[n],[background music]
+5451,,-,バックグラウンドサウンド,[n],[background sound]
+5452,,-,バックグラウンドジョブ,[n],[background job]
+5453,,-,キャンパスバックボーン,[n],[campus backbone]
+5454,,-,マルチキャストバックボーン,[n],[multicast backbone (Mbone)]
+5455,,-,トスバッティング,[n],[pepper game]
+5456,,-,バッティングアベレージ,[n],[batting average]
+5457,,-,バッティングオーダー,[n],[batting order]
+5458,,-,バッティングケージ,[n],[batting cage]
+5459,,-,バッティングセンター,[n],"[batting center, batting centre, batting cage]"
+5460,,-,ティーバッティング,[n],[tee batting]
+5461,,-,レギュラーバッティング,[n],[regular batting]
+5462,,-,バラエティーショー,[n],[variety show]
+5463,,-,バラエティーストア,[n],[variety store]
+5464,,-,バリエーションルート,[n],"[variation route (esp. in mountain-climbing), alternative route]"
+5465,,-,バーベキューソース,[n],"[barbecue sauce, BBQ sauce]"
+5466,,-,パイナップルフラワー,[n],[pineapple flower]
+5467,,-,パシフィックテレシス,[n],[Pacific Telesys]
+5468,,-,パッティンググリーン,[n],[putting green]
+5469,,-,コストパフォーマンス,[n],[cost performance]
+5470,,-,ピーク・パフォーマンス・ボイヤンシー,[n],[peak performance buoyancy]
+5471,,-,パブリックドメイン,[n],[public domain]
+5472,,-,フレンチパラドックス,[n],"[French paradox, paradox of relatively high health levels in France despite smoking, consumption of alcohol, meat, etc.]"
+5473,,-,パーフェクトゲーム,[n],[perfect game]
+5474,,-,キャパシティビルディング,[n],[capacity building]
+5475,,-,ピックアップ,"[n, vs]","[choice, selection, picking out (from a larger list), pickup (phonograph), stylus bar, pickup truck, pickup, pickup (reaction)]"
+5476,,-,ピックアップトラック,[n],[pickup truck]
+5477,,-,ピンポイントランディング,[n],[pinpoint landing]
+5478,,-,インベントリーファイナンス,[n],[inventory finance]
+5479,,-,リスクファイナンス,[n],[risk finance]
+5480,,-,エクイティファイナンス,[n],[equity finance]
+5481,,-,リテールファイナンス,[n],[small-scale finance]
+5482,,-,ファイリング,"[n, vs]",[filing]
+5483,,-,レンジファインダー,[n],[range finder]
+5484,,-,ジャパンファウンデーション,[n],[Japan Foundation]
+5485,,-,ファクシミリアダプタ,[n],[facsimile adapter]
+5486,,-,ファクトリーチーム,[n],[factory team]
+5487,,-,フォトンファクトリー,[n],[photon factory]
+5488,,-,ファシリティマネジメント,[n],[facility management]
+5489,,-,クレジットファシリティ,[n],[credit facility]
+5490,,-,オイルファシリティー,[n],[oil facility]
+5491,,-,エスニックファッション,[n],[ethnic fashion]
+5492,,-,トータルファッション,[n],[total fashion]
+5493,,-,トップファッション,[n],[top fashion]
+5494,,-,ナサファッション,[n],[NASA fashion]
+5495,,-,ファッションインダストリー,[n],[fashion industry]
+5496,,-,ファッションエディター,[n],[fashion editor]
+5497,,-,ファッションフード,[n],[fashion food]
+5498,,-,ファッションマッサージ,[n],[fashion massage]
+5499,,-,ファッションモデル,[n],[fashion model]
+5500,,-,マスファッション,[n],[mass fashion]
+5501,,-,ファッションブック,[n],[fashion book]
+5502,,-,パンクファッション,[n],[punk fashion]
+5503,,-,ファッションヘルス,[n],[prostitution (in the guise of a massage service)]
+5504,,-,アノニマスファッション,[n],[fashion not created by designers but based on street styles]
+5505,,-,ファッションアイテム,[n],"[fashion item, fashion accessory]"
+5506,,-,ファストファッション,[n],[fast fashion]
+5507,,-,ファッションデザイナー,[n],"[fashion designer, couturier]"
+5508,,-,ファッションセンス,[n],"[fashion sense, sense of fashion]"
+5509,,-,アウトオブファッション,[n],[out of fashion]
+5510,,-,ファンダメンタル,[adj-na],[fundamental]
+5511,,-,アーバンファーニチャー,[n],[urban furniture]
+5512,,-,ポリティカルフィクション,[n],[political fiction]
+5513,,-,ファンフィクション,[n],"[fan-fiction, fan fiction, fanfiction, fanfic]"
+5514,,-,フィットネスシューズ,[n],[fitness shoes]
+5515,,-,エアロビックフィットネス,[n],[aerobic fitness]
+5516,,-,フィットネスバイク,[n],[exercise bike]
+5517,,-,フィジカルフィットネス,[n],[physical fitness]
+5518,,-,オイルフィニッシュ,[n],[oil finish]
+5519,,-,フィフティー,[n],[fifty]
+5520,,-,ジャズフェスティバル,[n],[jazz festival]
+5521,,-,ロックフェスティバル,[n],"[rock festival, rockfest]"
+5522,,-,ウッドストックフェスティバル,[n],[Woodstock Music and Art Festival (1969)]
+5523,,-,スノーフェスティバル,[n],[snow festival]
+5524,,-,レスビアンフェミニズム,[n],[lesbian feminism]
+5525,,-,ポストモダンフェミニズム,[n],[postmodern feminism]
+5526,,-,リベラルフェミニズム,[n],[liberal feminism]
+5527,,-,ラジカルフェミニズム,[n],[radical feminism]
+5528,,-,フォーチュンクッキー,[n],[fortune cookie]
+5529,,-,ファイルフォーマット,[n],[file format]
+5530,,-,キャラクタフォーマット,[n],[character format]
+5531,,-,テキストフォーマット,[n],[text format]
+5532,,-,ネイティブフォーマット,[n],[native format]
+5533,,-,バイナリフォーマット,[n],[binary format]
+5534,,-,チャネルデフィニションフォーマット,[n],[channel definition format]
+5535,,-,ネーティブファイルフォーマット,[n],[native file format]
+5536,,-,リッチテキストフォーマット,[n],"[rich text format, RTF]"
+5537,,-,フォーミュラ,[n],[formula]
+5538,,-,フォーミュラプラン,[n],[formula plan]
+5539,,-,ショットガンフォーメーション,[n],[shotgun formation]
+5540,,-,タッチフットボール,[n],[touch football]
+5541,,-,フランクフルトソーセージ,[n],"[frankfurter, frank]"
+5542,,-,フランチャイズチェーン,[n],"[franchise chain, FC]"
+5543,,-,フレキシブルディスク,[n],"[flexible disk, floppy disk]"
+5544,,-,フレキシブルバック,[n],[flexible back]
+5545,,-,フレキシブルマニュファクチャリングシステム,[n],[flexible manufacturing system]
+5546,,-,フロンティアスピリット,[n],[frontier spirit]
+5547,,-,ブリティッシュコロンビア,[n],[British Columbia]
+5548,,-,ブリティッシュテレコム,[n],"[British Telecom, BT]"
+5549,,-,ブリリアント,[n],[brilliant]
+5550,,-,タンクブリージング,[n],[(scuba) tank breathing]
+5551,,-,エアブリージングエンジン,[n],[air breathing engine]
+5552,,ブレーキを掛ける,ブレーキをかける,"[exp, v1]","[to put on the brakes, to put a stop to]"
+5553,,-,オフブロードウェー,[n],[off Broadway]
+5554,,-,プライバシーセパレータ,[n],"[client separation, block relay, facility to stop intercommunication between devices sharing a router]"
+5555,,-,プライベートルーム,[n],[private room]
+5556,,-,プライベートアドレス,[n],[private address]
+5557,,-,プライベートメッセージ,[n],"[private message, PM]"
+5558,,-,プライベートブラウジング,[n],[private browsing]
+5559,,-,プラスチックマネー,[n],[plastic money]
+5560,,-,プラスチックモデル,[n],[plastic model]
+5561,,-,アクリルプラスチック,[n],[acrylic plastic]
+5562,,-,プラスチックタイル,[n],[plastic tile]
+5563,,-,オーサリングプラットフォーム,[n],[authoring platform]
+5564,,-,プロダクトプランニング,[n],[product planning]
+5565,,-,ファイナンシャルプランニング,[n],[financial planning]
+5566,,-,キャパシティプランニング,[n],[capacity planning]
+5567,,-,デスクトッププレゼンテーション,[n],[desktop presentation]
+5568,,-,プレゼンテーションコンテキスト,[n],[presentation context]
+5569,,-,プレゼンテーションマネージャ,[n],"[presentation manager, PM]"
+5570,,-,プレッシャーグループ,[n],[pressure group]
+5571,,-,リニアプログラミング,[n],"[linear programming, linear programing]"
+5572,,-,ロジックプログラミング,[n],"[logic programming, logic programing]"
+5573,,-,コードプログラミング,[n],[code programming]
+5574,,-,プログラミングインターフェイス,[n],[programming interface]
+5575,,-,プログラミングシステム,[n],[programming system]
+5576,,-,モジュラプログラミング,[n],[modular programming]
+5577,,-,イベントドリブンプログラミング,[n],[event-driven programming]
+5578,,-,オーバーヘッドプロジェクター,[n],[overhead projector]
+5579,,-,スライドプロジェクター,[n],[slide projector]
+5580,,-,ビデオプロジェクター,[n],[video projector]
+5581,,-,サマリプロジェクト,[n],[summary project]
+5582,,-,パイロットプロジェクト,[n],[pilot project]
+5583,,-,プロジェクトグループ,[n],[project group]
+5584,,-,プロジェクトタスク,[n],[project tasks]
+5585,,-,プロジェクトデザイナ,[n],[project designer]
+5586,,-,プロジェクトファイル,[n],[project file]
+5587,,-,マクロプロジェクト,[n],[macro project]
+5588,,-,ナショナルプロジェクト,[n],[national project]
+5589,,-,プロジェクトマネージャー,[n],[project manager]
+5590,,-,フードプロセッサー,[n],[food processor]
+5591,,-,フロントエンドプロセッサ,[n],"[front-end processor, FEP]"
+5592,,-,ランゲージプロセッサー,[n],[language processor]
+5593,,-,ワードプロセッサ,[n],[word processor]
+5594,,-,アウトラインプロセッサ,[n],[outline processor]
+5595,,-,アレイプロセッサー,[n],[array processor]
+5596,,-,アナログプロセッサー,[n],"[analog processor, analogue processor]"
+5597,,-,インターフェイスメッセージプロセッサー,[n],"[Interface Message Processor, IMP]"
+5598,,-,プロダクションチーム,[n],[production team]
+5599,,-,マスプロダクション,[n],[mass production]
+5600,,-,プロダクションシステム,[n],[production system]
+5601,,-,プロダクションルール,[n],[production rule]
+5602,,-,クリーナープロダクション,[n],[cleaner production]
+5603,,-,プロデューサーシステム,[n],[producer system]
+5604,,-,テーマプロモーション,[n],[Theme promotion]
+5605,,-,セールスプロモーション,[n],[sales promotion]
+5606,,-,デザインプロモーター,[n],[design promoter]
+5607,,-,プロンプタースクリーン,[n],[prompter screen]
+5608,,-,エッグベネディクト,[n],[eggs Benedict]
+5609,,-,フリンジベネフィット,[n],[fringe benefit]
+5610,,-,ペナルティーキック,[n],[penalty kick]
+5611,,-,ペナルティーゴール,[n],"[penalty goal, PG]"
+5612,,-,ペナルティーボックス,[n],[penalty box]
+5613,,-,ペナルティーエリア,[n],[penalty area]
+5614,,-,ペナルティースロー,[n],"[penalty throw, penalty shot]"
+5615,,-,ペンシルベニアダッチ,[n],"[Pennsylvania Dutch, Pennsylvania German]"
+5616,,ボタンを掛ける,ボタンをかける,"[exp, v1]",[to fasten a button]
+5617,,-,サーチエンジンポジショニング,[n],[search engine positioning]
+5618,,-,ポテトチップ,[n],[potato chip]
+5619,,-,スカラーポテンシャル,[n],[scalar potential]
+5620,,-,ベクトルポテンシャル,[n],[vector potential]
+5621,,-,ポリエチレンテレフタラート,[n],[polyethylene terephthalate]
+5622,,-,アイソタクチックポリプロピレン,[n],[isotactic polypropylene]
+5623,,-,ポートレイトモード,[n],[portrait mode]
+5624,,-,ノイジーマイノリティ,[n],[noisy minority]
+5625,,-,エスニックマイノリティー,[n],[ethnic minority]
+5626,,-,モーメントマグニチュード,[n],[moment magnitude]
+5627,,-,マジックマッシュルーム,[n],[magic mushroom]
+5628,,-,アセンブリマニフェスト,[n],[assembly manifest]
+5629,,-,マニフェストデスティニー,[n],[Manifest Destiny]
+5630,,-,マーケティングマネジメント,[n],[marketing management]
+5631,,-,マネジメントゲーム,[n],[management game]
+5632,,-,マネジメントサイクル,[n],[management cycle]
+5633,,-,エアーマネジメント,[n],[air management]
+5634,,-,マネジメントシステム,[n],[management system]
+5635,,-,ナレッジマネジメント,[n],[knowledge management]
+5636,,-,コストマネジメント,[n],[cost management]
+5637,,-,リスクマネジメント,[n],[risk management]
+5638,,-,トップマネジメント,[n],[top management]
+5639,,-,サプライチェーンマネジメント,[n],[supply chain management]
+5640,,-,マネーマネジメントファンド,[n],"[money management fund, MMF]"
+5641,,-,アセットマネージメント,[n],[asset management]
+5642,,-,ケースマネージメント,[n],[case management]
+5643,,-,コンストラクションマネージメント,[n],[construction management]
+5644,,-,フロアマネージャー,[n],[floor manager]
+5645,,-,プロダクトマネージャー,[n],[product manager]
+5646,,-,プレーイングマネージャー,[n],[playing manager (player-manager of a sports team)]
+5647,,-,ランマネージャー,[n],[LAN Manager]
+5648,,-,ファンドマネージャー,[n],[fund manager]
+5649,,-,マルチメディアタイトル,[n],[multimedia title]
+5650,,-,マルチメディアデータベース,[n],"[multimedia database, MDB]"
+5651,,-,マルチメディアパソコン,[n],[multimedia personal computer]
+5652,,-,マングローブオオトカゲ,[n],"[mangrove monitor (Varanus indicus, species of carnivorous monitor lizard from the Western Pacific), mangrove goanna, Western Pacific monitor lizard]"
+5653,,-,エリアマーケティング,[n],[area marketing]
+5654,,-,ダイレクトマーケティング,[n],[direct marketing]
+5655,,-,テストマーケティング,[n],[test marketing]
+5656,,-,バーチカルマーケティング,[n],[vertical marketing]
+5657,,-,マーケティングコスト,[n],[marketing cost]
+5658,,-,マーケティングマップ,[n],[marketing map]
+5659,,-,マーケティングリサーチ,[n],[marketing research]
+5660,,-,ターゲットマーケティング,[n],[targeted marketing]
+5661,,-,アフィリエイトマーケティング,[n],[affiliate marketing]
+5662,,-,ステルスマーケティング,[n],[stealth marketing]
+5663,,-,ミッドナイトショー,[n],[midnight show]
+5664,,-,ミトコンドリアイブ,[n],[mitochondrial Eve]
+5665,,-,ミュージカルコメディー,[n],[musical comedy]
+5666,,-,ミュージカルショー,[n],[musical show]
+5667,,-,ミュージカルプレー,[n],[musical play]
+5668,,-,ミュージカルボックス,[n],[musical box]
+5669,,-,ミュージカルグラス,[n],[musical glasses]
+5670,,-,ウエスタンミュージック,[n],[Western music]
+5671,,-,エレクトロニックミュージック,[n],[electronic music]
+5672,,-,カントリーミュージック,[n],[country music]
+5673,,-,サロンミュージック,[n],[salon music]
+5674,,-,ジュジュミュージック,[n],[juju music]
+5675,,-,スクリーンミュージック,[n],[screen music]
+5676,,-,テーマミュージック,[n],[Theme music]
+5677,,-,バイオミュージック,[n],[bio music]
+5678,,-,バックミュージック,[n],[background music]
+5679,,-,ヒルビリーミュージック,[n],[hillbilly music]
+5680,,-,ポピュラーミュージック,[n],[popular music]
+5681,,-,マウンテンミュージック,[n],[mountain music]
+5682,,-,ミュージックセラピー,[n],[music therapy]
+5683,,-,ミュージックテープ,[n],[music tape]
+5684,,-,ストリーミングミュージック,[n],[streaming music]
+5685,,-,ミニマルミュージック,[n],[minimal music]
+5686,,-,ミュージックホール,[n],[music hall]
+5687,,-,ソウルミュージック,[n],[soul music]
+5688,,-,チェンバーミュージック,[n],[chamber music]
+5689,,-,デスクトップミュージック,[n],"[desktop music, DTM]"
+5690,,-,ブラックミュージック,[n],[African-American music]
+5691,,-,ディスコミュージック,[n],[disco music]
+5692,,-,フォークミュージック,[n],[folk music]
+5693,,-,ハウスミュージック,[n],[house music]
+5694,,-,ムードミュージック,[n],[mood music]
+5695,,-,ミュージックボックス,[n],[music box]
+5696,,-,レースミュージック,[n],[race music]
+5697,,-,サーフミュージック,[n],[surf music]
+5698,,-,ボーカルミュージック,[n],[vocal music]
+5699,,-,ヒーリングミュージック,[n],[healing music]
+5700,,-,ワールドミュージック,[n],[world music]
+5701,,-,アーリーミュージック,[n],[early music]
+5702,,-,イージーリスニングミュージック,[n],[easy listening music]
+5703,,-,アナリストミーティング,[n],[analyst meeting]
+5704,,-,タウンミーティング,[n],[town meeting]
+5705,,-,オフラインミーティング,[n],[off-line meeting]
+5706,,-,ミーティングルーム,[n],[meeting room]
+5707,,-,マスムーブメント,[n],[mass movement]
+5708,,メトロポリス・ヘイスティングス法,メトロポリス・ヘイスティングスほう,[n],[Metropolis-Hastings algorithm]
+5709,,-,システムメンテナンス,[n],[system maintenance]
+5710,,-,アフターメンテナンス,[n],[customer service]
+5711,,-,モザンビークティラピア,[n],"[Mozambique tilapia (tilapiine cichlid fish native to southern Africa, Oreochromis mossambicus)]"
+5712,,-,ヘルスモニタリング,[n],[health monitoring]
+5713,,-,ユニバーサルスペース,[n],[universal space]
+5714,,-,ユニバーサルタイム,[n],[universal time]
+5715,,-,ユニバーサルデザイン,[n],[universal design]
+5716,,-,ユニバーサルジョイント,[n],[universal joint]
+5717,,-,スターティングラインアップ,[n],[starting lineup]
+5718,,-,シガヌスロマグニフィカス,[n],"[magnificent rabbitfish (Siganus magnificus, species of rabbitfish found from Thailand to Java)]"
+5719,,-,ブラックアイ・ラビットフィッシュ,[n],"[blackeye rabbitfish (Siganus puelloides, species of rabbitfish found in the Maldives and the Similan Islands)]"
+5720,,-,スリーブロッチド・ラビットフィッシュ,[n],"[threeblotched rabbitfish (Siganus trispilos, species of rabbitfish from the eastern Indian Ocean)]"
+5721,,-,スモールアイ・ラビットフィッシュ,[n],"[smalleyed rabbitfish (Hydrolagus affinis), Atlantic chimaera, deepwater chimaera]"
+5722,,-,イエローテール・スターリー・ラビットフィッシュ,[n],"[brown-spotted spinefoot (Siganus stellatus, species of rabbitfish from the Indian Ocean), starspotted spinefoot, tellate rabbitfish, yellow-tail starry rabbitfish]"
+5723,,-,ランディングゾーン,[n],"[landing zone, LZ]"
+5724,,-,ランディングギア,[n],[landing gear]
+5725,,-,リアルタイムシステム,[n],[real-time system]
+5726,,-,リアルタイムクロック,[n],[real-time clock]
+5727,,-,オンラインリアルタイムシステム,[n],[online real time system]
+5728,,-,リアルタイムブロックリスト,[n],[real-time block list]
+5729,,-,インベントリーリセッション,[n],[inventory recession]
+5730,,-,リニアモーター,[n],[linear motor]
+5731,,-,アーバンリニュアル,[n],[urban renewal]
+5732,,-,リバーシブルコート,[n],[reversible coat]
+5733,,-,リバーシブルファブリック,[n],[reversible fabric]
+5734,,-,リバーシブルレーン,[n],[reversible lane]
+5735,,-,メモリリフレッシュ,[n],[memory refresh]
+5736,,-,リフレッシュレート,[n],[refresh rate]
+5737,,-,プライスリーダーシップ,[n],[price leadership]
+5738,,-,リーディングインダストリー,[n],[leading industry]
+5739,,-,リーディングカンパニー,[n],[leading company]
+5740,,-,リーディングケース,[n],[leading case]
+5741,,-,リーディングヒッター,[n],[leading hitter]
+5742,,-,リーディングジョッキー,[n],[leading jockey]
+5743,,-,イタリアルネッサンス,[n],[the Italian renaissance]
+5744,,-,ルポルタージュ・ライター,[n],"[reportage writer, documentary writer]"
+5745,,-,エレクトロルミネセンス,[n],"[electroluminescence, electro-luminescence, electronic luminescence, EL]"
+5746,,-,レクリエーションセンター,[n],[recreation center]
+5747,,-,アフターレコーディング,[n],"[adding sounds to a soundtrack after a film has been made, postrecording, postsynchronization, postsynchronisation, postlooping, dubbing]"
+5748,,-,レコーディングスタジオ,[n],[recording studio]
+5749,,-,レコーディングダイエット,[n],[weight-loss diet accompanied by meticulous notes about when and what one has eaten]
+5750,,-,デジタルレコーディング,[n],[digital recording]
+5751,,-,レセプションルーム,[n],[reception room]
+5752,,-,レパートリーシステム,[n],[repertory system]
+5753,,-,メモリロケーション,[n],[memory location]
+5754,,-,ジョブローテーション,[n],[job rotation]
+5755,,-,ヘビーローテーション,[n],"[heavy rotation, frequently broadcasting or listening to the same music, frequently wearing the same outfit]"
+5756,,-,スーパーローテーション,[n],[super-rotation]
+5757,,-,ローヤリティ,[n],[royalty]
+5758,,-,ワンボックス,[n],"[minivan, people-mover, 6-8 seat automobile with sliding door or doors]"
+5759,,-,ワンポイントレッスン,"[exp, n]",[short lesson dealing with one specific point]
+5760,,-,マスターワークステーション,[n],[master workstation]
+5761,,-,ワークステーションウィンドウ,[n],[workstation window]
+5762,,-,ワークステーションビューポート,[n],[workstation viewport]
+5763,,-,ヴァリエーション・ドリル,[n],[variation drill]
+5764,,-,バージョンアップ,"[n, vs]","[updating a software version, version upgrade]"
