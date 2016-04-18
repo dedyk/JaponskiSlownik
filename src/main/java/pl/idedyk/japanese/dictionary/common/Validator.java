@@ -163,7 +163,7 @@ public class Validator {
 
 					if (ignoreError == false
 							&& (prefixKana + kana).equals(kanaHelper.createKanaString(kanaWord)) == false) {
-						throw new DictionaryException("Validate error for word: " + romaji + ": "
+						throw new DictionaryException("Validate error for word(" + polishJapaneseEntry.getId() + "): " + romaji + ": "
 								+ (prefixKana + kana) + " - " + kanaHelper.createKanaString(kanaWord));
 					}
 				}
@@ -186,7 +186,7 @@ public class Validator {
 				if (ignoreError == false && kana.equals(currentKanaAsRomajiAsHiraganaWordAsAgainKana) == false
 						&& kana.equals(currentKanaAsRomajiAsKatakanaWordAsAgainKana) == false) {
 
-					throw new DictionaryException("Validate error for word: " + kana + " ("
+					throw new DictionaryException("Validate error for word (" + polishJapaneseEntry.getId() + "): " + kana + " ("
 							+ currentKanaAsRomaji + ") vs " + currentKanaAsRomajiAsHiraganaWordAsAgainKana + " or "
 							+ currentKanaAsRomajiAsKatakanaWordAsAgainKana);
 				}
@@ -234,7 +234,7 @@ public class Validator {
 					// ok 2
 
 				} else {
-					throw new DictionaryException("Validate error for word: " + currentKana);
+					throw new DictionaryException("Validate error for word(" + polishJapaneseEntry.getId() + "): " + currentKana);
 				}
 			}		
 		}
