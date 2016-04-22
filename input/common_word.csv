@@ -1345,7 +1345,7 @@
 1345,,-,コールドコーヒー,[n],[cold coffee]
 1346,,-,ドリップコーヒー,[n],[drip coffee]
 1347,,-,ミルクコーヒー,[n],"[milk coffee, white coffee]"
-1348,,-,インスタントコーヒー,[n],[instant coffee]
+1348,1,-,インスタントコーヒー,[n],[instant coffee]
 1349,,-,コーヒーポット,[n],[coffee pot]
 1350,1,-,ホットコーヒー,[n],"[coffee (hot, as opposed to iced)]"
 1351,,-,レギュラーコーヒー,[n],[regular coffee (as opposed to instant coffee)]
@@ -1449,7 +1449,7 @@
 1449,,-,サー,[n],[Sir]
 1450,,-,アフターサービス,[n],"[after-sales service, warranty service]"
 1451,,-,インテリジェンスサービス,[n],[intelligence service]
-1452,,-,エアサービス,[n],[air service]
+1452,1,-,エアサービス,[n],[air service]
 1453,,-,キャンドルサービス,[n],"[candlelight service (e.g. in a church), ceremony during a wedding reception where the bride and the groom go from table to table lighting a candle at each]"
 1454,,-,クーリエサービス,[n],[courier service]
 1455,,-,ケータリングサービス,[n],[catering service]
@@ -3795,7 +3795,7 @@
 3795,,納め,おさめ,"[n, n-suf, adj-no]","[the last, the end, the closing]"
 3796,,紡績工,ぼうせきこう,[n],"[a spinner, spinning mill employee]"
 3797,,紫外,しがい,"[n, adj-no]","[ultraviolet, UV]"
-3798,,細作り,ほそづくり,"[adj-na, n]","[thinly made, slight build or stature]"
+3798,1,細作り,ほそづくり,"[adj-na, n]","[thinly made, slight build or stature]"
 3799,,終着,しゅうちゃく,[n],"[making one's final stop (e.g. of a bus, train, etc.), reaching the end of the line]"
 3800,,組み入れ,くみいれ,[n],"[incorporating, inserting, nesting (e.g. of matryoshka dolls), nest, square offering tray made of unvarnished wood (three per nested set), latticed ceiling]"
 3801,,絞刑,こうけい,[n],[death by hanging]
@@ -3972,7 +3972,7 @@
 3972,,運動失調,うんどうしっちょう,"[n, adj-no]","[ataxia, loss of coordination of the muscles, failure of muscular coordination]"
 3973,,過小,かしょう,"[adj-na, n, adj-no]",[too small]
 3974,,道義的,どうぎてき,[adj-na],[moral]
-3975,,道議,どうぎ,[n],[member of the Hokkaido Prefectural Assembly]
+3975,1,道議,どうぎ,[n],[member of the Hokkaido Prefectural Assembly]
 3976,,達す,たっす,[v5s],"[to reach, to get to]"
 3977,,違和,いわ,[n],[physical disorder]
 3978,,適す,てきす,"[v5s, vi]","[to fit, to suit]"
@@ -4117,7 +4117,7 @@
 4117,,株式持合,かぶしきもちあい,[n],[cross shareholdings]
 4118,,寒苦鳥,かんくちょう,[n],[imaginary bird living in the Indian Himalayas (used as a Buddhist metaphor)]
 4119,,乾生姜,かんしょうが,[n],[powdered ginger]
-4120,,干渉的,かんしょうてき,[adj-na],[coherent]
+4120,1,干渉的,かんしょうてき,[adj-na],[coherent]
 4121,,観照的,かんしょうてき,[adj-na],"[contemplative, meditative, meditational]"
 4122,,肝動脈,かんどうみゃく,[n],[hepatic artery]
 4123,1,観覧者,かんらんしゃ,[n],"[spectator, visitor]"
@@ -4561,7 +4561,7 @@
 4561,,-,マイクロチャネルアーキテクチャ,[n],[microchannel architecture]
 4562,,-,インストラクションセットアーキテクチャ,[n],"[instruction set architecture, ISA]"
 4563,,-,クライアントサーバアーキテクチャ,[n],[client-server architecture]
-4564,,-,システムネットワークアーキテクチャ,[n],"[Systems Network Architecture, SNA]"
+4564,1,-,システムネットワークアーキテクチャ,[n],"[Systems Network Architecture, SNA]"
 4565,,-,グリーンアーキテクチャー,[n],[green architecture]
 4566,,-,ランドスケープアーキテクチュア,[n],[landscape architecture]
 4567,,-,フィールドアーチェリー,[n],[field archery]
@@ -5010,7 +5010,7 @@
 5010,,-,コンピュータリテラシー,[n],[computer literacy]
 5011,,-,アレイコンピュータ,[n],[array computer]
 5012,,-,オンボードコンピュータ,[n],[on-board computer]
-5013,,-,オンラインコンピューター,[n],[online computer]
+5013,1,-,オンラインコンピューター,[n],[online computer]
 5014,,-,クリップボードコンピュータ,[n],[clipboard computer]
 5015,,-,ゲストコンピュータ,[n],[guest computer]
 5016,,-,コンピュータセキュリティ,[n],[computer security]
@@ -5190,7 +5190,7 @@
 5190,,-,ナチュラルセレクション,[n],[natural selection]
 5191,,-,ポートフォリオセレクション,[n],[portfolio selection]
 5192,,-,セーフティー,[n],[safety]
-5193,,-,セイフティバント,[n],[bunt performed for a base hit]
+5193,1,-,セイフティバント,[n],[bunt performed for a base hit]
 5194,,-,セーフティーネット,[n],[safety net]
 5195,,-,セーフティーゾーン,[n],[safety zone]
 5196,,-,セーフティービンディング,[n],[safety binding (ski)]
@@ -6569,7 +6569,7 @@
 6569,,芳草,ほうそう,[n],[fragrant herb]
 6570,,蜂巣,はちす,[n],"[hive, beehive, skep]"
 6571,,蓬窓,ほうそう,[n],"[window with a view of a Japanese mugwort thicket, poor house, humble house, primitive house]"
-6572,,権道,けんどう,[n],"[inappropriate means to a worthy end, expediency]"
+6572,1,権道,けんどう,[n],"[inappropriate means to a worthy end, expediency]"
 6573,,萱堂,けんどう,[n],[mother]
 6574,,享持,きょうじ,[n],[securing rights and profits]
 6575,,凶事,きょうじ,[n],"[calamity, misfortune]"
@@ -6886,7 +6886,7 @@
 6886,,告ぐ,つぐ,"[v2g-s, vt]","[to tell, to inform, to announce, to indicate, to signal, to mark]"
 6887,,次会,じかい,[n],[the next meeting]
 6888,,磁界,じかい,[n],[magnetic field]
-6889,,持戒,じかい,[n],[strictly adhering to Buddhist precepts]
+6889,1,持戒,じかい,[n],[strictly adhering to Buddhist precepts]
 6890,,字解,じかい,"[n, vs]",[kanji meaning interpretation]
 6891,,耳介,じかい,"[n, adj-no]","[auricle, auricular]"
 6892,,眼筋,がんきん,[n],"[ocular muscles, muscles that control eye movement]"
@@ -7864,7 +7864,7 @@
 7864,,有性,ゆうせい,"[n, adj-no]",[sexual]
 7865,,幽静,ゆうせい,[adj-na],"[profoundly quiet, serene]"
 7866,,有生,うしょう,"[n, adj-no]","[living thing, animate]"
-7867,,伝奏,でんそう,"[n, vs]",[delivering a message to the emperor]
+7867,1,伝奏,でんそう,"[n, vs]",[delivering a message to the emperor]
 7868,,電装,でんそう,[n],"[fitting (electrical equipment), wiring]"
 7869,,曠世,こうせい,"[n, adj-no]","[unparalleled, unparallelled, matchless]"
 7870,,恒性,こうせい,[n],[constancy]
@@ -8596,7 +8596,7 @@
 8596,,果報,かほう,"[adj-na, n]","[good fortune, luck, happiness, vipaka (retribution)]"
 8597,,過褒,かほう,[n],[overpraise]
 8598,,嘉保,かほう,[n],[Kahou era (1094.12.15-1096.12.17)]
-8599,,加盟者,かめいしゃ,[n],[participants]
+8599,1,加盟者,かめいしゃ,[n],[participants]
 8600,,琴瑟,きんしつ,[n],"[qin and se (two different kinds of Chinese zither), happy marriage]"
 8601,,金漆,きんしつ,[n],[lacquer made from the sap of Acanthopanax sciadophylloides]
 8602,,金文,きんぶん,[n],"[Chinese bronze inscriptions, type of lettering used on metal objects, especially in China during the Yin and Zhou dynasties]"
@@ -9143,7 +9143,7 @@
 9143,,函人,かんじん,[n],"[armorer, armourer]"
 9144,,寛仁,かんじん,"[adj-na, n]",[magnanimous]
 9145,,官人,かんにん,[n],"[government official (esp. one of low to medium rank), public servant]"
-9146,,観心,かんじん,[n],[introspection]
+9146,1,観心,かんじん,[n],[introspection]
 9147,,大兵,だいひょう,[n],"[of great build or stature, great number of soldiers, great army]"
 9148,,台下,だいか,"[n, n-suf]","[your honor (honour), his (or her) honor (honour)]"
 9149,,台数,だいすう,[n],"[number of large objects such as cars, computers, etc.]"
@@ -11116,7 +11116,7 @@
 11116,,画楼,がろう,[n],"[high decorated building, picture-perfect mansion, stately home that looks as if it were from a painting]"
 11117,,餓狼,がろう,[n],[hungry wolf]
 11118,,山藍,やまあい,[n],[Mercurialis leiocarpa (species of mercury whose leaves can be used to produce an indigo dye)]
-11119,,僧体,そうたい,[n],[appearance of a Buddhist priest]
+11119,1,僧体,そうたい,[n],[appearance of a Buddhist priest]
 11120,,草体,そうたい,[n],[character written in the highly cursive sōsho style]
 11121,,不臣,ふしん,[n],"[disloyalty, unfaithfulness]"
 11122,,普請,ふしん,"[n, vs]","[building, construction, group effort by Buddhist practitioners, group activities by a community (e.g. cleaning, etc.)]"
@@ -12854,7 +12854,7 @@
 12854,,無塩,むえん,"[n, adj-no]","[salt free, no-salt, unsalted]"
 12855,,無鉛,むえん,"[n, adj-no]","[unleaded (gasoline, petrol)]"
 12856,,無煙,むえん,"[n, adj-no]",[smokeless]
-12857,,遍照,へんじょう,"[n, vs]","[universal illumination (esp. in Buddhism, by the dharma-body)]"
+12857,1,遍照,へんじょう,"[n, vs]","[universal illumination (esp. in Buddhism, by the dharma-body)]"
 12858,,道床,どうしょう,[n],[roadbed]
 12859,,同小,どうしょう,[n],[the above-mentioned elementary school]
 12860,,銅賞,どうしょう,[n],[bronze (third-place) prize]
@@ -15166,7 +15166,7 @@
 15166,,分粒,ぶんりゅう,[n],"[sizing, grading]"
 15167,,妻女,さいじょ,[n],"[one's wife, one's wife and daughter or daughters]"
 15168,,古墨,こぼく,[n],[old ink stick]
-15169,,焼土,しょうど,[n],"[burning earth, e.g. for sterilization and converting compost]"
+15169,1,焼土,しょうど,[n],"[burning earth, e.g. for sterilization and converting compost]"
 15170,,例言,れいげん,"[n, vs]","[preface, foreword]"
 15171,,零元,れいげん,[n],[zero element]
 15172,,黎元,れいげん,[n],"[commoners, the masses]"
@@ -15955,7 +15955,7 @@
 15955,,格外,かくがい,"[adj-na, n, adj-no]","[nonstandard, extraordinary, special]"
 15956,,画会,がかい,[n],[artists' patrons' association]
 15957,,雅懐,がかい,[n],[aesthetic sentiment]
-15958,,寒露,かんろ,[n],"[late-autumn or early-winter dew, ""cold dew"" solar term (approx. Oct. 8)]"
+15958,1,寒露,かんろ,[n],"[late-autumn or early-winter dew, ""cold dew"" solar term (approx. Oct. 8)]"
 15959,,管路,かんろ,[n],"[conduit line, pipeline]"
 15960,,寒月,かんげつ,[n],"[wintry moon, a winter month]"
 15961,,教鞭,きょうべん,[n],"[teacher's cane, teacher's pointer]"
@@ -16664,7 +16664,7 @@
 16664,,王父,おうふ,[n],[deceased grandfather]
 16665,,大あり,おおあり,"[adj-na, n]","[plentiful, abundant, definitely extant]"
 16666,,大瀬,おおせ,[n],"[Japanese wobbegong (Orectolobus japonicus, species of carpet shark), Japanese carpet shark, fringe shark]"
-16667,,大戸,おおど,[n],"[main door at the front of a house, front shutters]"
+16667,1,大戸,おおど,[n],"[main door at the front of a house, front shutters]"
 16668,,置きに,おきに,"[exp, suf]","[repeated at intervals, every other (day, week, month, ...)]"
 16669,,汚言,おげん,[n],[frequently uttering obscene words or socially inappropriate remarks]
 16670,,-,おこた,[n],"[kotatsu, table over an electric heater (orig. a charcoal brazier in a floor well) with a hanging quilt that retains heat]"
@@ -16694,7 +16694,7 @@
 16694,,織り子,おりこ,[n],[weaver]
 16695,,恩威,おんい,[n],[benevolence and strictness]
 16696,,音価,おんか,[n],[phonetic value]
-16697,,温雅,おんが,"[adj-na, n]","[graceful, affable]"
+16697,1,温雅,おんが,"[adj-na, n]","[graceful, affable]"
 16698,,音画,おんが,[n],"[Tonmalerei (musical imagery), sound film]"
 16699,,遠諱,おんき,[n],[semicentennial memorial service]
 16700,,恩顧,おんこ,[n],"[favour, favor, patronage]"
@@ -19174,7 +19174,7 @@
 19174,,-,デジタルアート,[n],[digital art]
 19175,,-,ビデオアート,[n],[video art]
 19176,,-,フォークアート,[n],[folk art]
-19177,,-,プリミティブアート,[n],[primitive art]
+19177,1,-,プリミティブアート,[n],[primitive art]
 19178,,-,アートシアター,[n],"[art theater, art theatre]"
 19179,,-,アブストラクトアート,[n],[abstract art]
 19180,,-,ネイルアート,[n],"[nail art, fashion nails]"
@@ -19702,7 +19702,7 @@
 19702,,-,エントリモデル,[n],[entry model]
 19703,,-,パスワードエントリ,[n],[password entry]
 19704,,-,ジョブエントリシステム,[n],[Job Entry System]
-19705,,-,エントリーモデル,[n],[entry model]
+19705,1,-,エントリーモデル,[n],[entry model]
 19706,,-,キーレスエントリー,[n],[keyless entry]
 19707,,-,オーダーエントリー,[n],[order entry]
 19708,,-,エントリーシート,[n],[application form (esp. job application)]
@@ -20766,7 +20766,7 @@
 20766,,-,ローラーゲーム,[n],[roller game]
 20767,,-,サバイバルゲーム,[n],[survival game]
 20768,,-,チームゲーム,[n],[team game]
-20769,,-,ゼロゲーム,[n],[zero game]
+20769,1,-,ゼロゲーム,[n],[zero game]
 20770,,-,アブストラクトゲーム,[n],[abstract strategy game]
 20771,,-,テーブルゲーム,[n],"[tabletop game, table game]"
 20772,,-,モバイルゲーム,[n],[mobile game]
@@ -21948,7 +21948,7 @@
 21948,,-,スープストック,[n],[soup stock]
 21949,,-,ストップビット,[n],[stop bit]
 21950,,-,ストップモーション,[n],"[freeze frame, stop motion]"
-21951,,-,ドクターストップ,[n],"[breaking up a match on doctor's orders (in boxing, etc.), being ordered by one's doctor to give up such habits as drinking, smoking, overeating, etc.]"
+21951,1,-,ドクターストップ,[n],"[breaking up a match on doctor's orders (in boxing, etc.), being ordered by one's doctor to give up such habits as drinking, smoking, overeating, etc.]"
 21952,,-,アイドリングストップ,[n],[turning off a vehicle engine when stopped]
 21953,,-,タブストップ,[n],"[tabulation stop, tab stop]"
 21954,,-,フルストップ,[n],[full stop]
@@ -22070,7 +22070,7 @@
 22070,,-,シテンヤッコ,[n],[threespot angelfish (Apolemichthys trimaculatus)]
 22071,,-,スリースポットダムゼルフィッシュ,[n],[threespot damselfish (Stegastes planifrons)]
 22072,,-,すぽん,"[adv, adv-to]","[snugly (into hole, container, etc.), tightly (fitting, covering), firmly, (with a) pop (i.e. sound of a cork, etc. being pulled out of a hole in one movement)]"
-22073,,-,スポンジラバー,[n],[sponge rubber]
+22073,1,-,スポンジラバー,[n],[sponge rubber]
 22074,,-,スマイリーフェイス,[n],[smiley faces]
 22075,,-,スマイリーマーク,[n],[smiley mark]
 22076,,-,スマイルマーク,[n],[smiley]
@@ -22289,7 +22289,7 @@
 22289,,-,ボーカルソロ,[n],[vocal solo]
 22290,,-,ヒットソング,[n],[hit song]
 22291,,-,プロテストソング,[n],[protest song]
-22292,,-,メッセージソング,[n],[message song]
+22292,1,-,メッセージソング,[n],[message song]
 22293,,-,ワークソング,[n],[work song]
 22294,,-,ソングポスト,[n],[song post]
 22295,,-,ポピュラーソング,[n],[popular song]
