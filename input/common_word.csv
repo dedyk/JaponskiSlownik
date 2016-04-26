@@ -1160,7 +1160,7 @@
 1160,1,-,イグニッションキー,[n],[ignition key]
 1161,,-,エンジンキー,[n],[ignition key]
 1162,1,-,キーアドバイザー,[n],"[key advisor, key adviser]"
-1163,,-,キーインダストリー,[n],[key industry]
+1163,1,-,キーインダストリー,[n],[key industry]
 1164,1,-,キーカレンシー,[n],[key currency]
 1165,,-,キークラブ,[n],[key club]
 1166,,-,キーパンチ,[n],[key punch]
@@ -2219,7 +2219,7 @@
 2219,,-,バースコントロール,[n],[birth control]
 2220,,-,バスストップ,[n],[bus stop]
 2221,1,-,バスレーン,[n],[bus lane]
-2222,,-,レールバス,[n],[rail bus]
+2222,1,-,レールバス,[n],[rail bus]
 2223,,-,バスジャック,[n],[bus hijacking]
 2224,,-,バスガイド,[n],[bus tour guide]
 2225,,-,ボンネットバス,[n],"[bus with front engine, cab-behind-engine bus]"
@@ -3081,7 +3081,7 @@
 3081,,亡き,なき,"[adj-pn, n]","[the late, the deceased]"
 3082,,人付,ひとづき,[n],[reputation]
 3083,,人差し,ひとさし,[n],"[index finger, forefinger]"
-3084,,人知,じんち,[n],"[human intellect, knowledge]"
+3084,1,人知,じんち,[n],"[human intellect, knowledge]"
 3085,,人見,ひとみ,[n],"[hole in the curtains to allow someone backstage to see the audience (in kabuki theatre), public observation, feel of being watched, casual observers]"
 3086,,人頭,じんとう,[n],"[the number of people, population, human head]"
 3087,,人頭,にんとう,[n],"[the number of people, population]"
@@ -3627,7 +3627,7 @@
 3627,1,洗膾,あらい,[],[sashimi chilled in iced water]
 3628,1,洗い,あらい,[n],"[washing, sashimi chilled in iced water]"
 3629,,津々,しんしん,"[adj-t, adv-to]","[gushing, overflowing, everlasting, unfailing, endless]"
-3630,,派出,はしゅつ,"[n, vs]","[sending out, dispatching, despatching]"
+3630,1,派出,はしゅつ,"[n, vs]","[sending out, dispatching, despatching]"
 3631,,清め,きよめ,[n],[purification]
 3632,,浜の真砂,はまのまさご,[n],[grains of sand on the beach (i.e. something countless)]
 3633,,浜松,はままつ,[n],[Hamamatsu (city)]
@@ -4304,7 +4304,7 @@
 4304,1,処生訓,しょせいくん,[n],[guiding motto for one's life]
 4305,,使用量,しようりょう,[n],[amount used]
 4306,,市立学校,しりつがっこう,[n],[municipal school]
-4307,,新甘泉,しんかんせん,[n],"[shinkansen pear, hybrid nashi developed in Tottori prefecture]"
+4307,1,新甘泉,しんかんせん,[n],"[shinkansen pear, hybrid nashi developed in Tottori prefecture]"
 4308,,申請人,しんせいじん,[n],[applicant]
 4309,,新体験,しんたいけん,[n],[new experience]
 4310,1,侵入者,しんにゅうしゃ,[n],"[intruder, invader, trespasser, raider]"
@@ -4645,7 +4645,7 @@
 4645,,-,コンポジットインデックス,[n],[composite index]
 4646,,-,ミゼリーインデックス,[n],[misery index]
 4647,,-,インデックストラック,[n],[index track]
-4648,,-,インデックスバッファ,[n],[index buffer]
+4648,1,-,インデックスバッファ,[n],[index buffer]
 4649,,-,インデックスファイル,[n],[indexed file]
 4650,,-,インデックスホール,[n],[index hole]
 4651,,-,インデックスレジスタ,[n],[index register]
@@ -6372,7 +6372,7 @@
 6372,,寛弘,かんこう,[n],[Kankou era (1004.7.20-1012.12.25)]
 6373,,還幸,かんこう,"[n, vs]","[return of the Emperor (from a visit), return of a shintai to its shrine]"
 6374,,侍臣,じしん,[n],"[courtier, attendant]"
-6375,,慈心,じしん,[n],"[benevolence, mercy]"
+6375,1,慈心,じしん,[n],"[benevolence, mercy]"
 6376,,磁心,じしん,[n],[(magnetic) core]
 6377,,磁針,じしん,[n],[magnetic needle]
 6378,,時針,じしん,[n],"[hour hand (watch, clock)]"
@@ -7154,7 +7154,7 @@
 7154,,進貢,しんこう,"[n, vs]",[paying tribute]
 7155,,親好,しんこう,[n],"[friendship, good fellowship]"
 7156,,深交,しんこう,[n],[close friendship]
-7157,,身光,しんこう,[n],"[aureole (of a Buddhist statue; surrounding the body but not the head), aureola]"
+7157,1,身光,しんこう,[n],"[aureole (of a Buddhist statue; surrounding the body but not the head), aureola]"
 7158,,主潮,しゅちょう,[n],[main current]
 7159,,主調,しゅちょう,[n],"[keynote, predominant element, main point]"
 7160,,主長,しゅちょう,[n],"[head, chief]"
@@ -7277,7 +7277,7 @@
 7277,,這々,ほうほう,[n],"[confusedly, perplexity]"
 7278,,鐘声,しょうせい,[n],[sound of a bell]
 7279,,照星,しょうせい,[n],[bead or front sight of a firearm]
-7280,,焼成,しょうせい,"[n, vs]",[firing (pottery)]
+7280,1,焼成,しょうせい,"[n, vs]",[firing (pottery)]
 7281,,小成,しょうせい,[n],[a minor success]
 7282,,将星,しょうせい,[n],[commander]
 7283,,勝勢,しょうせい,[n],[(favorable) odds]
@@ -7717,7 +7717,7 @@
 7717,,例時,れいじ,[n],[the usual time]
 7718,,励磁,れいじ,"[n, vs]",[excitation]
 7719,,夕礼,ゆうれい,[n],[evening assembly (company)]
-7720,,須義,すぎ,[n],"[cobia (Rachycentron canadum), sergeant fish]"
+7720,1,須義,すぎ,[n],"[cobia (Rachycentron canadum), sergeant fish]"
 7721,,死霊,しりょう,[n],"[spirit of a dead person, ghost, departed soul]"
 7722,,思料,しりょう,"[n, vs]","[careful consideration, thought]"
 7723,,私領,しりょう,[n],"[private land, park]"
@@ -8360,7 +8360,7 @@
 8360,,詐偽,さぎ,[n],"[lie, untruth, prevarication]"
 8361,,沖積,ちゅうせき,"[n, adj-no]",[alluvial]
 8362,,殿中,でんちゅう,[n],[in the palace]
-8363,,電鋳,でんちゅう,[n],[electroforming]
+8363,1,電鋳,でんちゅう,[n],[electroforming]
 8364,,仔虫,しちゅう,[n],[larva]
 8365,,死中,しちゅう,[n],[fatal situation]
 8366,,怪傑,かいけつ,[n],"[man of extraordinary talent, wonder man]"
@@ -10171,7 +10171,7 @@
 10171,,参差,しんし,"[adj-t, adv-to]",[of uneven heights or lengths]
 10172,,辛巳,かのとみ,[n],[eighteenth of the sexagenary cycle]
 10173,,神使,しんし,[n],"[messenger of god, divine messenger]"
-10174,,刑場,けいじょう,[n],[place of execution]
+10174,1,刑場,けいじょう,[n],[place of execution]
 10175,,啓上,けいじょう,"[n, vs]",[speaking respectfully]
 10176,,警乗,けいじょう,"[n, vs]",[policing (a train)]
 10177,,基石,きせき,[n],"[cornerstone, foundation stone]"
@@ -10702,7 +10702,7 @@
 10702,,-,あおば,[n],[(former) regular (stops at every station) Tohoku-line Shinkansen]
 10703,,青歯,あおば,[n],[Bluetooth (variety of short-range wireless LAN)]
 10704,,陳ねる,ひねる,"[v1, vi]",[to age]
-10705,,比日,ひにち,[n],[the Philippines and Japan]
+10705,1,比日,ひにち,[n],[the Philippines and Japan]
 10706,,手技,しゅぎ,[n],[craft]
 10707,,英京,えいきょう,[n],[London (British capital)]
 10708,,永享,えいきょう,[n],[Eikyou era (1429.9.5-1441.2.17)]
@@ -12175,7 +12175,7 @@
 12175,,夏官,かかん,[n],[Ministry of War (Zhou-dynasty China)]
 12176,,万両,まんりょう,[n],"[Ardisia crenata, coralberry]"
 12177,,斯業,しぎょう,[n],[this business or profession]
-12178,,詩行,しぎょう,[n],[line of a poem]
+12178,1,詩行,しぎょう,[n],[line of a poem]
 12179,,詩業,しぎょう,[n],"[poetic achievements, poetic works, act of writing poetry]"
 12180,,嗣業,しぎょう,[n],[succeeding to a business]
 12181,1,士業,しぎょう,[n],"[professional occupation, professional practice]"
@@ -13487,7 +13487,7 @@
 13487,,邦語,ほうご,[n],"[one's native language, Japanese]"
 13488,,法語,ほうご,[n],[Buddhist sermon]
 13489,,仰視,ぎょうし,"[n, vs, adj-no]","[looking up to, revering]"
-13490,,凝脂,ぎょうし,[n],[solidified oil]
+13490,1,凝脂,ぎょうし,[n],[solidified oil]
 13491,,楓属,ふうぞく,[n],[genus Liquidambar]
 13492,,超勤,ちょうきん,[n],[overtime (work)]
 13493,,調琴,ちょうきん,[n],[playing the koto]
@@ -13539,7 +13539,7 @@
 13539,,唐歌,からうた,[n],[Chinese poem]
 13540,,中半,ちゅうはん,[n],"[middle, half-finished]"
 13541,,中飯,ちゅうはん,[n],[the noonday meal]
-13542,,足蹠,そくせき,[n],[sole (of the foot)]
+13542,1,足蹠,そくせき,[n],[sole (of the foot)]
 13543,,嘆美,たんび,"[n, vs]","[admiration, adoration, extolling]"
 13544,,耽美,たんび,[n],[aesthetics]
 13545,,七赤,しちせき,[n],[seventh of nine traditional astrological signs (corresponding to Venus and west)]
@@ -14859,7 +14859,7 @@
 14859,,古陶,ことう,[n],"[old pottery, antique porcelain]"
 14860,,夜業,やぎょう,"[n, vs]","[night work, night shift]"
 14861,,救癩,きゅうらい,[n],[helping the lepers]
-14862,,月卿,げっけい,[n],"[court noble, nobility]"
+14862,1,月卿,げっけい,[n],"[court noble, nobility]"
 14863,,撃茎,げきけい,[n],[firing pin]
 14864,,速急,そっきゅう,[adj-na],"[immediate, quick, sudden]"
 14865,,才六,さいろく,[n],"[kid, brat, Edo term used to debase people from Kansai]"
@@ -15673,7 +15673,7 @@
 15673,,画報,がほう,[n],"[illustrated news magazine, pictorial]"
 15674,,芽胞,がほう,"[n, adj-no]",[spore]
 15675,,立体視,りったいし,[n],"[stereopsis, binocular vision]"
-15676,,後難,こうなん,[n],"[future problems, consequences]"
+15676,1,後難,こうなん,[n],"[future problems, consequences]"
 15677,,全山,ぜんざん,[n],[the whole mountain]
 15678,,介音,かいおん,[n],"[medial, final-head (glide before the center vowel in Chinese)]"
 15679,,開音,かいおん,[n],"[long ""o"" vowel arising from combination of the ""a"" and ""u"" sounds]"
@@ -15895,7 +15895,7 @@
 15895,,立軸,たてじく,[n],"[vertical shaft, upright arm shaft]"
 15896,,真物,しんぶつ,[n],[genuine article]
 15897,,癌腫,がんしゅ,[n],[carcinoma]
-15898,,願酒,がんしゅ,[n],[praying at a temple or shrine for help to stop drinking]
+15898,1,願酒,がんしゅ,[n],[praying at a temple or shrine for help to stop drinking]
 15899,,閉局,へいきょく,"[n, vs]",[closing of post-office or telephone exchange]
 15900,,三宮,さんぐう,[n],"[Grand Empress Dowager, the Empress Dowager and the Empress Consort]"
 15901,,指揮権,しきけん,"[n, vs]",[(exercising) the right to command]
@@ -16785,7 +16785,7 @@
 16785,,片刃,かたば,"[n, adj-no]",[single edge (e.g. sword blade)]
 16786,,型費,かたひ,[n],"[tooling cost, die cost]"
 16787,,片帆,かたほ,[n],"[close-haul, reach, reefed sail]"
-16788,,佞む,かだむ,[v5m],"[to deceive, to fool, to lie, to commit adultery]"
+16788,1,佞む,かだむ,[v5m],"[to deceive, to fool, to lie, to commit adultery]"
 16789,,割拠,かっきょ,"[n, vs]","[holding one's ground, defending local authority]"
 16790,,角距,かっきょ,[n],[angular distance]
 16791,,脚気,かっけ,[n],[beriberi]
@@ -16834,7 +16834,7 @@
 16834,,還都,かんと,[n],"[return of government (to Kyoto), making former capital (esp. Kyoto) the capital again]"
 16835,,間投詞,かんとうし,[n],[interjection]
 16836,,鉋,かんな,[n],[plane (for working with wood)]
-16837,,乾皮,かんぴ,[n],[dried hides]
+16837,1,乾皮,かんぴ,[n],[dried hides]
 16838,,官費,かんぴ,[n],[government expense]
 16839,,完母,かんぼ,[n],[feeding an infant solely with breast milk (i.e. no formula)]
 16840,,簡保,かんぽ,[n],[postal life insurance]
@@ -17357,7 +17357,7 @@
 17357,,主根,おもね,[n],"[main root, taproot]"
 17358,,首座,しゅざ,[n],"[seat of honor, seat of honour, head of the table, head]"
 17359,,守株,しゅしゅ,"[n, vs]","[lack of innovation, stupidity]"
-17360,,繻子,しゅす,"[n, adj-no]",[satin]
+17360,1,繻子,しゅす,"[n, adj-no]",[satin]
 17361,,主訴,しゅそ,[n],[main complaint]
 17362,,首鼠,しゅそ,[n],"[being unable to make up one's mind, sitting on the fence]"
 17363,,酒槽,さかぶね,[n],"[sake cask, sake tun]"
@@ -21607,7 +21607,7 @@
 21607,,-,シートフィルム,[n],[sheet film]
 21608,,-,バケットシート,[n],[bucket seat]
 21609,,-,エクセルシート,[n],[Excel spreadsheet]
-21610,,-,レジャーシート,[n],"[picnic sheet, picnic plaid]"
+21610,1,-,レジャーシート,[n],"[picnic sheet, picnic plaid]"
 21611,,-,シートペーパー,[n],[toilet seat paper]
 21612,,-,タックシート,[n],"[label sheet, paper, etc. adhesive sheet]"
 21613,,-,シートフィードスキャナ,[n],[sheet-fed scanner]
@@ -21877,7 +21877,7 @@
 21877,,-,ホールスタッフ,[n],"[staff who serve or assist customers or visitors (e.g. restaurant, pachinko parlour, etc.)]"
 21878,,-,クローズドスタンス,[n],[closed stance]
 21879,,-,スタンドプレー,[n],"[grandstand play, grandstanding, showboating]"
-21880,,-,フロアスタンド,[n],[floor lamp]
+21880,1,-,フロアスタンド,[n],[floor lamp]
 21881,,-,メインスタンド,[n],[main stand]
 21882,,-,セルフスタンド,[n],"[self-service gasoline station, self-service petrol station]"
 21883,,-,アクスルスタンド,[n],[axle stand]
@@ -23243,7 +23243,7 @@
 23243,,-,ドメインネームサーバー,[n],"[domain name server, DNS]"
 23244,,-,ノイズリダクション,[n],[noise reduction]
 23245,,-,ホワイトノイズ,[n],[white noise]
-23246,,-,マイクノイズ,[n],[microphone noise]
+23246,1,-,マイクノイズ,[n],[microphone noise]
 23247,,-,ハンドリングノイズ,[n],[handling noise (microphone)]
 23248,,-,ノウ,"[n, vs, int]","[know, no]"
 23249,,-,ノックバット,[n],[fungo bat]
