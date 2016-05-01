@@ -1336,47 +1336,62 @@ public class WordGenerator {
 					return;
 				}
 				
-				// sprawdzenie parametrow				
-				Integer minKanjiPrefixLength = null;
-				Integer minKanaPrefixLength = null;
+				// sprawdzenie parametrow	
+				Integer minKanjiLength = null;
+				Integer minKanaLength = null;				
+				
+				Integer maxKanjiLength = null;
+				Integer maxKanaLength = null;
 								
 				if (args[1].equals("-") == false) {
 					
-					try {
-						minKanjiPrefixLength = Integer.parseInt(args[1]);
-						
-					} catch (NumberFormatException e) {
-						
-						System.out.println("Niepoprawna minimalna długość prefiksu kanji");
-						
-						return;					
-					}
+					String kanjiStringRange = args[1];
 					
-					if (minKanjiPrefixLength.intValue() < 1) {
-	
-						System.out.println("Niepoprawna minimalna długość prefiksu kanji");
+					String[] kanjiStringRangeSplited = kanjiStringRange.split("-");
+					
+					if (kanjiStringRangeSplited.length != 2) {
+						
+						System.out.println("Niepoprawny przedział dla znaków kanji");
 						
 						return;
+					}
+					
+					try {						
+						minKanjiLength = Integer.parseInt(kanjiStringRangeSplited[0]);						
+						maxKanjiLength = Integer.parseInt(kanjiStringRangeSplited[1]);
+												
+					} catch (NumberFormatException e) {
+						
+						System.out.println("Niepoprawny przedział dla znaków kanji");
+						
+						return;
+						
 					}
 				}
 				
 				if (args[2].equals("-") == false) {
 					
-					try {
-						minKanaPrefixLength = Integer.parseInt(args[2]);
-						
-					} catch (NumberFormatException e) {
-						
-						System.out.println("Niepoprawna minimalna długość prefiksu kana");
-						
-						return;					
-					}
+					String kanaStringRange = args[2];
 					
-					if (minKanaPrefixLength.intValue() < 1) {
-
-						System.out.println("Niepoprawna minimalna długość prefiksu kana");
+					String[] kanaStringRangeSplited = kanaStringRange.split("-");
+					
+					if (kanaStringRangeSplited.length != 2) {
+						
+						System.out.println("Niepoprawny przedział dla znaków kana");
 						
 						return;
+					}
+					
+					try {						
+						minKanaLength = Integer.parseInt(kanaStringRangeSplited[0]);						
+						maxKanaLength = Integer.parseInt(kanaStringRangeSplited[1]);
+												
+					} catch (NumberFormatException e) {
+						
+						System.out.println("Niepoprawny przedział dla znaków kana");
+						
+						return;
+						
 					}
 				}				
 				
@@ -1412,13 +1427,13 @@ public class WordGenerator {
 															
 					String kanji = polishJapaneseEntry.getKanji();
 					
-					if (minKanjiPrefixLength != null && kanji.length() >= minKanjiPrefixLength) {
+					if (maxKanjiLength != null) {
 						allPrefixes.add(kanji);	
 					}
 										
 					String kana = polishJapaneseEntry.getKana();
 					
-					if (minKanaPrefixLength != null && kana.length() >= minKanaPrefixLength) {
+					if (maxKanaLength != null) {
 						allPrefixes.add(kana);
 					}
 				}				
@@ -1469,7 +1484,24 @@ public class WordGenerator {
 
 								String groupEntryKanji = groupEntry.getKanji();
 								String groupEntryKana = groupEntry.getKana();
-																
+								
+								if (minKanjiLength != null && groupEntryKanji != null && groupEntryKanji.length() < minKanjiLength) {
+									continue;
+								}
+								
+								if (minKanaLength != null && groupEntryKana != null && groupEntryKana.length() < minKanaLength) {
+									continue;
+								}
+
+								
+								if (maxKanjiLength != null && groupEntryKanji != null && groupEntryKanji.length() > maxKanjiLength) {
+									continue;
+								}
+
+								if (maxKanaLength != null && groupEntryKana.length() > maxKanaLength) {
+									continue;
+								}
+								
 								List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
 								
 								if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
