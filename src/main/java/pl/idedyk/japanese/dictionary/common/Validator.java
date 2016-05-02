@@ -118,7 +118,7 @@ public class Validator {
 				
 			} catch (Exception e) {
 				if (polishJapaneseEntry.getWordType() != WordType.HIRAGANA_EXCEPTION && polishJapaneseEntry.getWordType() != WordType.KATAKANA_EXCEPTION) {
-					throw new RuntimeException(e);
+					throw new RuntimeException(polishJapaneseEntry.getId() + ": " + e);
 					
 				} else {
 					continue;
