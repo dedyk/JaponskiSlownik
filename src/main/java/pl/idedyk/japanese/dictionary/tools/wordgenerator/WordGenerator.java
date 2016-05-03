@@ -163,7 +163,7 @@ public class WordGenerator {
 			
 			case GENERATE_MISSING_WORD_LIST: {
 				
-				if (args.length != 2) {
+				if (args.length != 2 && args.length != 3) {
 					
 					System.err.println("Niepoprawna liczba argumentów");
 					
@@ -171,6 +171,12 @@ public class WordGenerator {
 				}
 				
 				String fileName = args[1];
+				
+				boolean checkInJishoOrg = true;
+				
+				if (args.length > 2) {
+					checkInJishoOrg = Boolean.parseBoolean(args[2]);
+				}				
 								
 				// wczytywanie pliku z lista slow
 				System.out.println("Wczytywanie brakujących słów...");
@@ -180,6 +186,9 @@ public class WordGenerator {
 				// pobranie cache ze slowami
 				Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
 
+				// wczytanie slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				
 				// tworzenie indeksu lucene
 				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
 								
@@ -202,7 +211,9 @@ public class WordGenerator {
 				
 				int counter = 0;
 				
-				Set<Integer> alreadyFoundDocument = new TreeSet<Integer>();
+				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
+				
+				System.out.println("Sprawdzanie w jisho.org: " + checkInJishoOrg);
 				
 				JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
 				
@@ -226,37 +237,59 @@ public class WordGenerator {
 						
 						for (ScoreDoc scoreDoc : scoreDocs) {
 							
-							if (alreadyFoundDocument.contains(scoreDoc.doc) == true) {
+							Document foundDocument = searcher.doc(scoreDoc.doc);
+
+							// znaleziony obiekt od lucene
+							GroupEntry groupEntryFromLucene = Helper.createGroupEntry(foundDocument);
+							
+							Integer groupId = groupEntryFromLucene.getGroup().getId();
+							
+							// czy ta grupa byla juz sprawdzana
+							if (alreadyCheckedGroupId.contains(groupId) == true) {
 								continue;
 								
 							} else {
-								alreadyFoundDocument.add(scoreDoc.doc);
+								alreadyCheckedGroupId.add(groupId);
 								
 							}
-
-							Document foundDocument = searcher.doc(scoreDoc.doc);
-
-							GroupEntry groupEntry = Helper.createGroupEntry(foundDocument);
 							
-							CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counter, currentMissingWord);
+							// szukamy pelnej grupy
+							Group groupInDictionary = jmeNewDictionary.getGroupById(groupId);
 							
-							PolishJapaneseEntry polishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;
-												
-							if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
-								foundWordList.add(polishJapaneseEntry);
+							List<GroupEntry> groupEntryList = groupInDictionary.getGroupEntryList();
+																
+							// grupujemy po tych samych tlumaczenia
+							List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
+										
+							for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
 								
-							} else {
-								alreadyAddedWordList.add(polishJapaneseEntry);
-							}
+								GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
+								
+								CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counter, currentMissingWord);
+								
+								PolishJapaneseEntry polishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;
+													
+								if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
+									foundWordList.add(polishJapaneseEntry);
+									
+								} else {
+									alreadyAddedWordList.add(polishJapaneseEntry);
+								}								
+							}								
 						}				
 						
 					} else {
 						
 						PolishJapaneseEntry polishJapaneseEntry = Helper.createEmptyPolishJapaneseEntry(currentMissingWord, counter);
+												
+						boolean wordExistsInJishoOrg = false;
 						
-						System.out.println("Szukanie w jisho.org: " + currentMissingWord);
-						
-						boolean wordExistsInJishoOrg = jishoOrgConnector.isWordExists(currentMissingWord);
+						if (checkInJishoOrg == true) {	
+							
+							System.out.println("Szukanie w jisho.org: " + currentMissingWord);
+							
+							wordExistsInJishoOrg = jishoOrgConnector.isWordExists(currentMissingWord);
+						}
 						
 						if (wordExistsInJishoOrg == true) {
 							
