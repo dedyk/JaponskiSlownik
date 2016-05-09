@@ -729,7 +729,7 @@
 729,,-,ズームイン,[n],[zoom in]
 730,,-,ネットイン,[n],"[net in (tennis), netball falling in]"
 731,,-,ピットイン,"[n, vs]",[pit stop]
-732,,-,フレームイン,[n],[frame in]
+732,1,-,フレームイン,[n],[frame in]
 733,,-,ベッドイン,"[n, vs]",[going to bed (usu. with someone)]
 734,,-,ページイン,[n],[page in]
 735,,-,ワイプイン,[n],[wipe in]
@@ -2465,7 +2465,7 @@
 2465,,-,ピンヒール,[n],[stiletto (high heels)]
 2466,,-,ガイドピン,[n],[guide pin]
 2467,,-,ショートピン,[n],[short pin]
-2468,,-,ジャンパピン,[n],[jumper pin]
+2468,1,-,ジャンパピン,[n],[jumper pin]
 2469,,-,ピンコネクタ,[n],[pin connector]
 2470,,-,ピンジャック,[n],[pin jack]
 2471,,-,ピンフィード,[n],[pin feed]
@@ -2631,7 +2631,7 @@
 2631,,-,ベンチプレス,[n],[bench press]
 2632,,-,ベンチシート,[n],[bench seat]
 2633,,-,ベーだ,[int],[Nuts to you!]
-2634,,-,ペイブリッジ,[n],[pay bridge]
+2634,1,-,ペイブリッジ,[n],[pay bridge]
 2635,,-,ペイオフ,[n],"[deposit insurance, payoff (e.g. in game theory)]"
 2636,1,-,バックペイ,[n],[back pay]
 2637,,-,フェルトペン,[n],"[felt pen, felt-tip pen, fiber-tip pen]"
@@ -3661,7 +3661,7 @@
 3661,,無下に,むげに,[adv],"[bluntly (refusing, etc.), flatly, out of hand, completely]"
 3662,1,無党派,むとうは,[n],[political independents]
 3663,,無尽,むじん,"[n, adj-na]","[inexhaustibility, mutual financing association]"
-3664,,無性,むせい,"[n, adj-no]",[asexual]
+3664,1,無性,むせい,"[n, adj-no]",[asexual]
 3665,,無想,むそう,[n],[a blank mind]
 3666,,無意,むい,[n],[unintentional]
 3667,,無手,むて,"[n, adj-no]","[empty-handed, unarmed, lacking funds]"
@@ -4619,7 +4619,7 @@
 4619,,-,インターネットリレーチャット,[n],"[Internet relay chat, IRC]"
 4620,,-,シリアルラインインターネットプロトコル,[n],"[Serial Line Internet Protocol, SLIP]"
 4621,,-,インダストリー,[n],[industry]
-4622,,-,インダストリアルエンジニアリング,[n],[industrial engineering]
+4622,1,-,インダストリアルエンジニアリング,[n],[industrial engineering]
 4623,,-,インダストリアルデザイナー,[n],[industrial designer]
 4624,,-,インダストリアルデザイン,[n],[industrial design]
 4625,,-,インダストリアルパーク,[n],[industrial park]
@@ -5888,7 +5888,7 @@
 5888,,-,ソ,[n],"[soh, so, 5th note in the tonic solfa representation of the diatonic scale]"
 5889,,-,ダヴィンチ,[n],[da Vinci]
 5890,1,-,ダカーポ,[n],"[da capo, DC]"
-5891,,-,デファクト,[adj-f],[de facto]
+5891,1,-,デファクト,[adj-f],[de facto]
 5892,,-,デジュール,[adj-pn],[de jure]
 5893,,-,ドゥルセ・デ・レチェ,[n],"[dulce de leche, dessert created by heating sweetened milk to caramelize its sugar]"
 5894,,-,ト,[n],"[7th in a sequence denoted by the iroha system, 7th note in the diatonic scale (used in key names, etc.)]"
@@ -6470,7 +6470,7 @@
 6470,,更位,こうい,[n],[second accession of the same emperor]
 6471,,黄緯,こうい,[n],"[celestial latitude, ecliptic latitude]"
 6472,,攻囲,こうい,"[n, vs]",[siege]
-6473,,地核,ちかく,[n],[earth core]
+6473,1,地核,ちかく,[n],[earth core]
 6474,,節名,せつめい,[n],[section-name]
 6475,,伝染る,うつる,"[v5r, vi]","[to be infected, to be contagious]"
 6476,,画架,がか,[n],[easel]
@@ -6997,7 +6997,7 @@
 6997,,癰,よう,[n],[carbuncle]
 6998,,庸,よう,[n],[tax paid to avoid forced labor (ritsuryo period)]
 6999,,個目,こめ,[ctr],[indicates position in a sequence]
-7000,,逆接,ぎゃくせつ,[n],"[contradictory conjunction (but, however, etc.)]"
+7000,1,逆接,ぎゃくせつ,[n],"[contradictory conjunction (but, however, etc.)]"
 7001,,ヒ酸,ヒさん,[n],[arsenic acid]
 7002,1,避寒,ひかん,"[n, vs]",[wintering]
 7003,,罷官,ひかん,[n],[removal from office]
@@ -8610,7 +8610,7 @@
 8610,,権原,けんげん,[n],[origin of rights]
 8611,,顕現,けんげん,"[n, vs]",[manifestation]
 8612,,献言,けんげん,"[n, vs]","[right to speak, offering one's opinion to one's superior, proposal]"
-8613,,乾元,けんげん,[n],[Kengen era (1302.11.21-1303.8.5)]
+8613,1,乾元,けんげん,[n],[Kengen era (1302.11.21-1303.8.5)]
 8614,,詔令,しょうれい,[n],[imperial edict]
 8615,,瘴癘,しょうれい,[n],[tropical disease (e.g. malaria)]
 8616,,内製,ないせい,"[n, vs]",[in-house production]
@@ -8788,7 +8788,7 @@
 8788,,黄禍,こうか,"[n, adj-no]",[Yellow Peril]
 8789,,黄花,こうか,[n],[chrysanthemum]
 8790,,公暇,こうか,[n],"[leave of absence, furlough]"
-8791,,公課,こうか,[n],"[public imposts, taxes]"
+8791,1,公課,こうか,[n],"[public imposts, taxes]"
 8792,,考課,こうか,[n],"[evaluation, rating]"
 8793,,鉱化,こうか,"[n, vs]","[mineralize, mineralise]"
 8794,,劫火,ごうか,[n],[world-destroying conflagration]
@@ -9245,7 +9245,7 @@
 9245,,求仙,きゅうせん,[n],"[multicolorfin rainbowfish (Parajulis poecilepterus, was Halichoeres poecilopterus)]"
 9246,,星学,せいがく,[n],[astronomy]
 9247,,聖楽,せいがく,[n],"[church music, sacred music]"
-9248,,正楽,せいがく,[n],"[court music, gagaku]"
+9248,1,正楽,せいがく,[n],"[court music, gagaku]"
 9249,,凄艶,せいえん,"[adj-na, n]",[weirdly beautiful]
 9250,,盛宴,せいえん,[n],[grand banquet]
 9251,,製塩,せいえん,"[n, vs]",[salt making]
@@ -9569,7 +9569,7 @@
 9569,,野蒜,のびる,[n],"[wild rocambole (edible plant, Allium grayi)]"
 9570,,円規,えんき,[n],[pair of compasses]
 9571,,遠忌,おんき,[n],[13th or later anniversary of a death]
-9572,,厭棄,えんき,"[n, vs]","[abandonment, rejection]"
+9572,1,厭棄,えんき,"[n, vs]","[abandonment, rejection]"
 9573,,遠称,えんしょう,[n],"[distal pronoun (indicating distance from both speaker and listener, i.e. are, asoko, achira)]"
 9574,,艶笑,えんしょう,"[n, vs]","[seductive smile, erotic humor]"
 9575,,煙硝,えんしょう,[n],[gunpowder]
@@ -9793,7 +9793,7 @@
 9793,,防諜,ぼうちょう,[n],"[counterintelligence, counterespionage]"
 9794,,防潮,ぼうちょう,[n],[protection against the tide]
 9795,,防鳥,ぼうちょう,[n],"[birdproofing, protection from birds]"
-9796,,偕老,かいろう,[n],[growing old together]
+9796,1,偕老,かいろう,[n],[growing old together]
 9797,,党争,とうそう,[n],[faction]
 9798,,凍瘡,とうそう,[n],"[chilblains, frostbite]"
 9799,,船隊,せんたい,[n],[fleet]
@@ -10490,7 +10490,7 @@
 10490,,釘頭,ていとう,[n],[nailhead]
 10491,,低糖,ていとう,[adj-no],[reduced sugar]
 10492,,勲等,くんとう,[n],[the Order of Merit]
-10493,,願意,がんい,[n],"[wish, hope, petition, request, object of an application, intent of a request]"
+10493,1,願意,がんい,[n],"[wish, hope, petition, request, object of an application, intent of a request]"
 10494,,抱懐,ほうかい,"[n, vs]","[harboring, harbouring, cherishing, entertaining]"
 10495,,法界,ほうかい,[n],"[universe, realm of thought, underlying principle of reality, manifestation of true thusness, being jealous of things that have nothing to do with one, being jealous of others who are in love with each other]"
 10496,,法界,ほっかい,[n],"[universe, realm of thought, underlying principle of reality, manifestation of true thusness]"
@@ -11448,7 +11448,7 @@
 11448,,山峡,さんきょう,[n],"[gorge, ravine, gap]"
 11449,,三強,さんきょう,[n],[top three]
 11450,,三卿,さんきょう,[n],"[three secondary Tokugawa branch families (Tayasu, Shimizu, and Hitotsubashi)]"
-11451,,惨況,さんきょう,[n],"[wretched state, pitiable condition]"
+11451,1,惨況,さんきょう,[n],"[wretched state, pitiable condition]"
 11452,,赫奕,かくえき,"[adj-t, adv-to]","[bright, beaming, brilliant, glowing]"
 11453,,内廷,ないてい,[n],"[harem, inside the palace, the palace]"
 11454,,内庭,うちにわ,[n],"[inner court, quadrangle]"
@@ -11687,7 +11687,7 @@
 11687,,旧刊,きゅうかん,[n],"[back number, old edition]"
 11688,,旧官,きゅうかん,[n],[former government official]
 11689,,旧慣,きゅうかん,[n],[old customs]
-11690,,旧歓,きゅうかん,[n],[old joy]
+11690,1,旧歓,きゅうかん,[n],[old joy]
 11691,,旧観,きゅうかん,[n],"[former state, former appearance]"
 11692,,旧館,きゅうかん,[n],"[old building, older building]"
 11693,,吸汗,きゅうかん,[n],[absorbing sweat]
@@ -12382,7 +12382,7 @@
 12382,,偽報,ぎほう,[n],[false report]
 12383,,通宝,つうほう,[n],[currency]
 12384,,良計,りょうけい,[n],[good plan]
-12385,,決答,けっとう,"[n, vs]","[clear answer, definite answer]"
+12385,1,決答,けっとう,"[n, vs]","[clear answer, definite answer]"
 12386,,人才,じんさい,"[n, adj-no]","[capable person, talented person]"
 12387,,靉靆,あいたい,"[adj-t, adv-to]",[trailing clouds]
 12388,,文亀,ぶんき,[n],[Bunki era (1501.2.29-1504.2.30)]
@@ -13938,7 +13938,7 @@
 13938,,大宝,たいほう,[n],"[great treasure, Taihou era (701.3.21-704.5.10), Daihou era, great treasure (used to refer to bodhisattvas, esoteric teachings, etc.), homa-mandala (fire altar)]"
 13939,,大鵬,たいほう,[n],"[dapeng (giant bird in Chinese mythology, similar to the roc or Garuda)]"
 13940,,大邦,たいほう,[n],"[large country, great nation, major power, great power]"
-13941,,三府,さんぷ,[n],[the Three Urban Prefectures]
+13941,1,三府,さんぷ,[n],[the Three Urban Prefectures]
 13942,,算譜,さんぷ,[n],"[(computer) program, programme]"
 13943,,円転,えんてん,"[adj-t, adv-to]","[orotund, smooth circular motion, spherical, rolling smoothly, (with) smooth circular motion]"
 13944,,宛転,えんてん,"[adj-t, adv-to]","[eloquent, fluent, smooth-spoken, sonorous, facile, silver-tongued, (of eyebrows) shapely]"
@@ -15477,7 +15477,7 @@
 15477,,草根,そうこん,[n],[grass roots]
 15478,,国鳥,こくちょう,[n],[national bird]
 15479,,国蝶,こくちょう,[n],[national butterfly]
-15480,,不錆鋼,ふせいこう,[n],[stainless steel]
+15480,1,不錆鋼,ふせいこう,[n],[stainless steel]
 15481,,不精巧,ふせいこう,[adj-na],"[clumsy, bungling]"
 15482,,疑感,ぎかん,[n],"[(feelings of) doubt, misgivings, suspicion, qualms]"
 15483,,上番,じょうばん,"[n, vs]",[being on duty]
@@ -17022,7 +17022,7 @@
 17022,1,訓詁,くんこ,[n],"[interpretation, exegesis]"
 17023,,-,ぐう,"[n, adv]","[rock (in rock, paper, scissors), sound made through constricted throat, sound made in suffering or under adversity]"
 17024,,愚姉,ぐし,[n],[older sister]
-17025,,軍鼓,ぐんこ,[n],[war drum]
+17025,1,軍鼓,ぐんこ,[n],[war drum]
 17026,,軍使,ぐんし,[n],[truce bearer]
 17027,,軍士,ぐんし,[n],[soldiers]
 17028,,軍師,ぐんし,[n],"[strategist, tactician, schemer]"
@@ -17155,7 +17155,7 @@
 17155,,この後,このあと,"[n-adv, n-t]","[after this, henceforth, henceforward, from now on]"
 17156,,木の間,このま,[n],[in the trees]
 17157,,この世,このよ,"[n, adj-no]","[this world, the present life (in contrast to the land of the dead)]"
-17158,,小鼻,こばな,[n],"[nostrils, wings of the nose]"
+17158,1,小鼻,こばな,[n],"[nostrils, wings of the nose]"
 17159,,虎皮,こひ,[n],[tiger fur]
 17160,,古筆,こひつ,[n],[old writing]
 17161,,媚,こび,[n],"[flattery, cajolery, flirtation]"
@@ -19041,7 +19041,7 @@
 19041,,-,アニマルセラピー,[n],[animal therapy]
 19042,,-,アニマルプリント,[n],"[animal print, animal print fabric]"
 19043,,-,アニメソング,[n],[anime song]
-19044,,-,アニメオタク,[n],[anime otaku]
+19044,1,-,アニメオタク,[n],[anime otaku]
 19045,,-,デジタルアニメ,[n],"[digital animation, non-cel animation]"
 19046,,-,クレイアニメ,[n],[clay animation]
 19047,,-,アービタ,[n],[arbiter]
@@ -19534,7 +19534,7 @@
 19534,,-,エアピープル,[n],[air people]
 19535,,-,エアフォース,[n],[air force]
 19536,,-,エアブレーキ,[n],[air brake]
-19537,,-,エアページェント,[n],[air pageant]
+19537,1,-,エアページェント,[n],[air pageant]
 19538,,-,エアホステス,[n],"[air hostess, stewardess]"
 19539,,-,エアポット,[n],[air pot]
 19540,,-,エアポンプ,[n],[air pump]
@@ -20104,7 +20104,7 @@
 20104,,-,ビデオカード,[n],[video card]
 20105,,-,プロセッサカード,[n],[processor card]
 20106,,-,ミニチュアカード,[n],[miniature card]
-20107,,-,メザニンカード,[n],[mezzanine card]
+20107,1,-,メザニンカード,[n],[mezzanine card]
 20108,,-,モデムカード,[n],[modem card]
 20109,,-,ライザーカード,[n],[raiser card]
 20110,,-,ラインカード,[n],[line card]
@@ -24466,7 +24466,7 @@
 24466,,-,ネバーマインド,[exp],[never mind]
 24467,1,-,マインドマップ,[n],[mind map]
 24468,,-,マウスユニット,[n],[mouse unit (unit of toxicity in poisons)]
-24469,,-,オプティカルマウス,[n],[optical mouse]
+24469,1,-,オプティカルマウス,[n],[optical mouse]
 24470,,-,マウスクリック,[n],[mouse click]
 24471,,-,マウスポインタ,[n],[mouse pointer]
 24472,,-,メカニカルマウス,[n],[mechanical mouse]
