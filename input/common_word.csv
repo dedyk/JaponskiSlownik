@@ -1166,7 +1166,7 @@
 1166,,-,キーパンチ,[n],[key punch]
 1167,,-,キーマーケット,[n],[key market]
 1168,,-,シフトキー,[n],[shift key]
-1169,,-,テンキー,[n],"[numeric keypad, numeric key]"
+1169,1,-,テンキー,[n],"[numeric keypad, numeric key]"
 1170,,-,ファンクションキー,[n],[function key]
 1171,,-,マスターキー,[n],[master key]
 1172,,-,スペアキー,[n],[spare key]
@@ -1294,7 +1294,7 @@
 1294,,-,ヘルスケア,[n],[health care]
 1295,,-,ケアマネージメント,[n],[care management]
 1296,,-,インフォーマルケア,[n],[informal care]
-1297,,-,グループケア,[n],[group care]
+1297,1,-,グループケア,[n],[group care]
 1298,,-,エイジングケア,[n],[anti-aging (skin) care]
 1299,,-,グリーフケア,[n],[grief care]
 1300,,-,プライマリーヘルスケア,[n],[primary health care]
@@ -2832,8 +2832,8 @@
 2832,,-,テープライブラリ,[n],[tape library]
 2833,,-,ドキュメントライブラリ,[n],[document library]
 2834,,-,ビデオライブラリ,[n],[video library]
-2835,,-,プログラムライブラリ,[n],[program library]
-2836,,-,ライブラリケース,[n],[library case]
+2835,1,-,プログラムライブラリ,[n],[program library]
+2836,1,-,ライブラリケース,[n],[library case]
 2837,,-,ライブラリディレクトリ,[n],[library directory]
 2838,1,-,ライブラリファイル,[n],[library file]
 2839,1,-,ライブラリルーチン,[n],[library routine]
@@ -6271,7 +6271,7 @@
 6271,,香盤,こうばん,[n],"[incense tray, incense burner, programme (theater), seating arrangement (in a theater)]"
 6272,,和がる,あがる,"[v5r, vi]",[to win a hand]
 6273,,戒壇,かいだん,[n],[ordination platform]
-6274,,解団,かいだん,"[n, vs]",[disbandment]
+6274,1,解団,かいだん,"[n, vs]",[disbandment]
 6275,,お餅,おもち,[n],"[rice cakes, pounded mochi rice]"
 6276,,いい事,いいこと,"[exp, n, int]","[good thing, nice thing, good excuse, good grounds, good opportunity, interjection used to impress an idea or to urge a response]"
 6277,,下賜,かし,"[n, vs]","[grant, bestowal, giving something to someone of low social standing (by a person of very high social standing)]"
@@ -7425,7 +7425,7 @@
 7425,,復する,ふくする,[vs-s],"[to return to normal, to recover, to restore]"
 7426,,大尺,だいしゃく,[n],[large shaku (approx. 35.6cm)]
 7427,,帝釈,たいしゃく,[n],"[Sakra devanam Indra (deity of Hinduism, Jainism, and Buddhism)]"
-7428,,周天,しゅうてん,[n],"[the full scope of the heavens, 360 degrees, one full revolution of the earth, twelve years, one full cycle of the Chinese calendar]"
+7428,1,周天,しゅうてん,[n],"[the full scope of the heavens, 360 degrees, one full revolution of the earth, twelve years, one full cycle of the Chinese calendar]"
 7429,,周旋,しゅうせん,"[n, vs]","[good offices, recommendation, mediation, (Tokugawa-era) employment office]"
 7430,,修撰,しゅうせん,[n],"[editing, compiling]"
 7431,,臭腺,しゅうせん,[n],[scent gland]
@@ -8142,7 +8142,7 @@
 8142,,昇汞,しょうこう,[n],"[mercury chloride, corrosive sublimate]"
 8143,,晶光,しょうこう,[n],[brilliant light]
 8144,1,茶話,ちゃわ,[n],[a chat over tea]
-8145,,減封,げんぽう,[n],"[forced reduction of a daimyo's land by the Edo Shogunate, curtailment of a daimyo's domain]"
+8145,1,減封,げんぽう,[n],"[forced reduction of a daimyo's land by the Edo Shogunate, curtailment of a daimyo's domain]"
 8146,,厳刑,げんけい,[n],[severe punishment]
 8147,,元慶,がんぎょう,[n],"[Gangyou era (877.4.16-885.2.21), Genkei era]"
 8148,,元型,げんけい,[n],[archetype]
@@ -8277,7 +8277,7 @@
 8277,,静振,せいしん,[n],[seiche]
 8278,,繞,にょう,[n],"[kanji radical that runs from the left to the bottom part of the kanji, kanji enclosure-type radical]"
 8279,,肌膚,きふ,[n],[skin]
-8280,,貴腐,きふ,[n],"[noble rot, Botrytis cinerea infection, esp. of grapes]"
+8280,1,貴腐,きふ,[n],"[noble rot, Botrytis cinerea infection, esp. of grapes]"
 8281,,棊布,きふ,"[n, vs]","[scattering (e.g. of islands, Go pieces, etc., often in a harmonious balance), dispersal, constellation, irregular spread]"
 8282,,毀誉,きよ,[n],"[praise and censure, approval and disapproval, approbation and condemnation]"
 8283,,地体,じたい,"[n, adv]","[essence, true nature, substance, reality, originally, naturally, by nature, from the start]"
@@ -8840,7 +8840,7 @@
 8840,,囚役,しゅうえき,[n],"[prison labor, prison labour]"
 8841,,襲用,しゅうよう,"[n, vs]","[adoption, following]"
 8842,,収獲,しゅうかく,[n],"[(good) result, game]"
-8843,,融剤,ゆうざい,[n],"[flux (substance mixed with a solid in order to lower its melting point), fusing agent]"
+8843,1,融剤,ゆうざい,[n],"[flux (substance mixed with a solid in order to lower its melting point), fusing agent]"
 8844,,弦材,げんざい,[n],[civil engineering chord member]
 8845,,噴泉,ふんせん,[n],"[fountain, spring]"
 8846,,紛然,ふんぜん,"[n, adj-t, adv-to]","[confusion, disorder]"
@@ -11682,7 +11682,7 @@
 11682,,歯学,しがく,[n],[dentistry]
 11683,,視学,しがく,[n],[school inspector]
 11684,,詩学,しがく,[n],"[study of poetry, poetics]"
-11685,,斯学,しがく,[n],[this academic subject]
+11685,1,斯学,しがく,[n],[this academic subject]
 11686,,休閑,きゅうかん,[n],[fallowing]
 11687,,旧刊,きゅうかん,[n],"[back number, old edition]"
 11688,,旧官,きゅうかん,[n],[former government official]
@@ -12494,7 +12494,7 @@
 12494,,卵塔,らんとう,[n],[oval tombstone]
 12495,,軒数,けんすう,[n],[number of houses]
 12496,,検数,けんすう,"[n, adj-f]",[tally]
-12497,,重盗,じゅうとう,[n],[double steal]
+12497,1,重盗,じゅうとう,[n],[double steal]
 12498,,平温,へいおん,[n],[the usual temperature]
 12499,,奇矯,ききょう,"[adj-na, n]",[eccentric]
 12500,,気胸,ききょう,[n],"[pneumothorax, artificial pneumothorax]"
@@ -12529,7 +12529,7 @@
 12529,,弁才,べんさい,[n],"[eloquence, oratorical talent]"
 12530,,嬰児,えいじ,[n],"[infant, baby]"
 12531,,永治,えいじ,[n],[Eiji era (1141.7.10-1142.4.28)]
-12532,,綱目,こうもく,[n],[main point and details]
+12532,1,綱目,こうもく,[n],[main point and details]
 12533,,庶出,しょしゅつ,"[n, adj-no]",[illegitimate birth]
 12534,,仙界,せんかい,[n],"[dwelling place of hermits, pure land away from the world]"
 12535,,浅海,せんかい,[n],[shallow sea]
@@ -13317,7 +13317,7 @@
 13317,,発走,はっそう,"[n, vs]","[start (of a race), first race]"
 13318,,八双,はっそう,[n],[style of sword fighting]
 13319,,点線,てんせん,[n],"[dotted line, perforated line]"
-13320,,亡親,ぼうしん,[n],[deceased parent]
+13320,1,亡親,ぼうしん,[n],[deceased parent]
 13321,,謀臣,ぼうしん,[n],"[strategist, tactician, schemer]"
 13322,,防浸,ぼうしん,[n],"[watertight, waterproof]"
 13323,,望診,ぼうしん,[n],"[the four examinations (in Chinese medicine: seeing, hearing, asking, touching)]"
@@ -13532,7 +13532,7 @@
 13532,,四囲,しい,"[n, vs]","[surroundings, circumference]"
 13533,,私意,しい,[n],"[personal opinion, selfishness]"
 13534,,四夷,しい,[n],[the surrounding barbarians (from a Chinese perspective)]
-13535,,紫衣,しえ,[n],"[purple vestment (traditionally awarded by the imperial household), high-ranking priest's purple robe]"
+13535,1,紫衣,しえ,[n],"[purple vestment (traditionally awarded by the imperial household), high-ranking priest's purple robe]"
 13536,,気振り,けぶり,[n],"[sign, indication]"
 13537,,薨御,こうぎょ,[n],"[death of important person (e.g. prince, princess, cabinet minister)]"
 13538,,藩王,はんおう,[n],"[maharaja, maharajah, nawab]"
@@ -15078,7 +15078,7 @@
 15078,,不稔性,ふねんせい,[n],[infertility (esp. of plants)]
 15079,,寂寥,せきりょう,"[n, adj-t, adv-to]","[loneliness, desolateness]"
 15080,,脊梁,せきりょう,[n],"[backbone, mountain range]"
-15081,,責了,せきりょう,[exp],[OK with corrections]
+15081,1,責了,せきりょう,[exp],[OK with corrections]
 15082,,応化,おうげ,"[n, vs]",[assumption of a suitable form (by a buddha or bodhisattva)]
 15083,,獄衣,ごくい,[n],[prison uniform]
 15084,,白鑞,しろめ,[n],"[pewter, solder]"
@@ -17519,7 +17519,7 @@
 17519,,徐歩,じょほ,"[n, vs]",[walking slowly]
 17520,,自余,じよ,[n],"[the others, the remainder]"
 17521,,事理,じり,[n],"[reason, facts, propriety, sense]"
-17522,,自利,じり,[n],"[benefitting oneself, benefiting oneself]"
+17522,1,自利,じり,[n],"[benefitting oneself, benefiting oneself]"
 17523,,自立心,じりつしん,[n],"[spirit of self-reliance, feeling of independence]"
 17524,,人工湖,じんこうこ,[n],[artificial lake]
 17525,,人士,じんし,[n],"[gentleman, well-bred man, well-educated man, people]"
@@ -17822,7 +17822,7 @@
 17822,,聴許,ちょうきょ,"[n, vs]",[permission]
 17823,,調弦,ちょうげん,"[n, vs]",[tuning]
 17824,,長元,ちょうげん,[n],[Chougen era (1028.7.25-1037.4.21)]
-17825,,超限,ちょうげん,[adj-f],[transfinite]
+17825,1,超限,ちょうげん,[adj-f],[transfinite]
 17826,,長途,ちょうと,[n],[long way]
 17827,,丁と,ちょうと,[adv],"[with a clang, with a bang, with a crash]"
 17828,,手斧,ておの,[n],"[hatchet, adze, adz]"
@@ -18498,7 +18498,7 @@
 18498,,明喩,めいゆ,[n],[simile]
 18499,,明和,めいわ,[n],[Meiwa era (1764.6.2-1772.11.16)]
 18500,,芽茶,めちゃ,[n],[coarse broken tea leaves and buds generated during the sifting process]
-18501,,鍍金,めっき,"[n, vs]","[gilt, plating, pretense, pretence]"
+18501,1,鍍金,めっき,"[n, vs]","[gilt, plating, pretense, pretence]"
 18502,,麺子,めんす,[n],[noodles]
 18503,,免租,めんそ,[n],[tax exemption]
 18504,,免訴,めんそ,"[n, vs]","[acquittal, dismissal (of a case)]"
@@ -18570,7 +18570,7 @@
 18570,,雄途,ゆうと,[n],[brave enterprise]
 18571,,尤度,ゆうど,[n],[likelihood]
 18572,,裕度,ゆうど,[n],[electrical tolerance]
-18573,,勇夫,ゆうふ,[n],[valiant man]
+18573,1,勇夫,ゆうふ,[n],[valiant man]
 18574,,勇婦,ゆうふ,[n],"[heroine, brave woman]"
 18575,,有夫,ゆうふ,[n],[married woman]
 18576,,瑜伽,ゆが,[n],[yoga]
@@ -18928,7 +18928,7 @@
 18928,,-,ビデオアダプタ,[n],[video adapter]
 18929,,-,ファイルアダプタ,[n],[file adapter]
 18930,,-,ラインアダプター,[n],[line adapter]
-18931,,-,ターミナルアダプター,[n],[terminal adapter]
+18931,1,-,ターミナルアダプター,[n],[terminal adapter]
 18932,,-,アダルトショップ,[n],"[sex shop, adult shop, porn shop]"
 18933,,-,ヤングアダルト,[n],[young adult]
 18934,,-,アダルトコンテンツ,[n],"[adult content, pink content]"
@@ -19338,7 +19338,7 @@
 19338,,-,インポ,[n],[impotence]
 19339,,-,ダブルイーグル,[n],[double eagle (golf)]
 19340,,-,イージーオーダー,[n],[easy order]
-19341,,-,イージーペイメント,[n],[easy payment (system)]
+19341,1,-,イージーペイメント,[n],[easy payment (system)]
 19342,,-,イージーリスニング,[n],[easy listening music]
 19343,,-,イージーパンツ,[n],[loose-fitting pants with an elastic or drawcord waist]
 19344,,-,イージーミス,[n],"[silly mistake, careless mistake]"
@@ -19867,7 +19867,7 @@
 19867,,-,オンラインテスト,[n],"[online test, online testing]"
 19868,,-,オンラインデータベース,[n],"[online database, on-line database]"
 19869,,-,オンラインデバッギング,[n],[online debugging]
-19870,,-,オンラインデバッグ,[n],[online debug]
+19870,1,-,オンラインデバッグ,[n],[online debug]
 19871,,-,オンライントレーディング,[n],[online trading]
 19872,,-,オンラインパッケージ,[n],[online package]
 19873,,-,オンラインヘルプ,[n],[online help]
@@ -22209,7 +22209,7 @@
 22209,,-,モーニングセット,[n],"[breakfast set (often a drink and toast), breakfast special, special breakfast offer]"
 22210,,-,チェスセット,[n],[chess set]
 22211,,-,コンバインドリンクセット,[n],[combined link set]
-22212,,-,ラッキーセブン,[n],[lucky seventh]
+22212,1,-,ラッキーセブン,[n],[lucky seventh]
 22213,,-,ソケットセブン,[n],[Socket 7]
 22214,,-,セブンブリッジ,[n],"[Seven Bridge, Japanese card game where the '7' card is special]"
 22215,,-,ゼロゼロセブン,[n],"[007 (James Bond's code in the books and films), double-oh-seven]"
@@ -23529,7 +23529,7 @@
 23529,,-,パッケ,[n],[packaging]
 23530,,-,パッケージプログラム,[n],"[package program, package programme]"
 23531,,-,パッケージメディア,[n],[package media]
-23532,,-,パッケージライセンス,[n],"[package license (software, franchising, etc.)]"
+23532,1,-,パッケージライセンス,[n],"[package license (software, franchising, etc.)]"
 23533,,-,トークンパッシングプロトコル,[n],[token passing protocol]
 23534,,-,パッチ,"[n, vs]","[patch, close-fitting trousers]"
 23535,,-,パッチファイル,[n],[patch file]
@@ -24202,7 +24202,7 @@
 24202,,-,ベビーベッド,[n],"[cot, basinette, crib]"
 24203,,-,セミダブルベッド,[n],[three-quarter bed]
 24204,,-,サリドマイドベビー,[n],[thalidomide baby]
-24205,,-,ベビーリーフ,[n],"[baby leaf, baby leaves]"
+24205,1,-,ベビーリーフ,[n],"[baby leaf, baby leaves]"
 24206,,-,ベリー,"[adv, n]","[very, berry, belly]"
 24207,,-,ベリーロール,[n],[belly roll]
 24208,,-,インサイドベルト,[n],[inside belt]
