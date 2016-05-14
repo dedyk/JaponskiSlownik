@@ -1515,7 +1515,7 @@
 1515,,-,サービスレベル,[n],[service level]
 1516,,-,サービスバルコニー,[n],[small balcony]
 1517,,-,サービスゲーム,[n],[service game (e.g. in tennis)]
-1518,,-,ソーシャル・ネットワーキング・サービス,[n],"[social networking service, SNS]"
+1518,1,-,ソーシャル・ネットワーキング・サービス,[n],"[social networking service, SNS]"
 1519,,-,インターネットサービスプロバイダー,[n],"[Internet Service Provider, ISP]"
 1520,,-,クオリティオブサービス,[n],[quality of service]
 1521,,-,ケーブルサービスプロバイダ,[n],[global service provider]
@@ -3380,7 +3380,7 @@
 3380,,差延,さえん,[n],[différance]
 3381,,市町,しちょう,[n],[cities and towns]
 3382,1,希ガス,きガス,"[n, exp]","[noble gas, inert gas, I get the feeling that, I think that]"
-3383,,稀ガス,きガス,[n],"[noble gas, inert gas]"
+3383,1,稀ガス,きガス,[n],"[noble gas, inert gas]"
 3384,,帯状,おびじょう,"[n, adj-no]",[belt-shaped]
 3385,,常套,じょうとう,[n],"[conventionality, triteness]"
 3386,,常任委員,じょうにんいいん,[n],[member of a standing committee]
@@ -5149,11 +5149,11 @@
 5149,,-,スタンダードモード,[n],[standard mode]
 5150,,-,ダブルスタンダード,[n],[double standard]
 5151,,-,スタンダードテスト,[n],[standard test]
-5152,,-,デファクトスタンダード,[n],[de facto standard]
+5152,1,-,デファクトスタンダード,[n],[de facto standard]
 5153,,-,デジュールスタンダード,[n],[de jure standard]
-5154,,-,スターリング,[n],[sterling]
-5155,,-,スターリングブロック,[n],[Sterling block]
-5156,,-,スターリングシルバー,[n],[Sterling silver]
+5154,1,-,スターリング,[n],[sterling]
+5155,1,-,スターリングブロック,[n],[Sterling block]
+5156,1,-,スターリングシルバー,[n],[Sterling silver]
 5157,,-,サテライトステーション,[n],[satellite station]
 5158,,-,トラッキングステーション,[n],[tracking station]
 5159,,-,ナースステーション,[n],[nurse station]
@@ -6746,7 +6746,7 @@
 6746,,砕鉱,さいこう,"[n, vs]",[crushing ore]
 6747,,斉衡,さいこう,[n],[Saikou era (854.11.30-857.2.21)]
 6748,,鰓孔,えらあな,[n],"[gill slit, pharyngeal slit]"
-6749,,催行,さいこう,"[n, vs]",[carrying out a trip (according to plans)]
+6749,1,催行,さいこう,"[n, vs]",[carrying out a trip (according to plans)]
 6750,,斎行,さいこう,"[n, vs]",[carrying out (a religious festival or ceremony)]
 6751,,平氏,へいし,[n],[the Tairas]
 6752,,斃死,へいし,"[n, vs]","[falling dead, perishing, dying]"
@@ -6761,7 +6761,7 @@
 6761,,臣籍,しんせき,[n],[status of a subject]
 6762,,耐風,たいふう,"[n, adj-no]",[wind resistance]
 6763,,扼す,やくす,"[v5s, vt]","[to command, to dominate, to prevent, to obstruct, to grip, to hold]"
-6764,,この位,このくらい,"[n, adv]","[this much, this amount]"
+6764,1,この位,このくらい,"[n, adv]","[this much, this amount]"
 6765,,正格,せいかく,[n],[correct rules]
 6766,,精確,せいかく,"[adj-na, n]","[detailed and accurate, exhaustive and precise, meticulous, finely detailed]"
 6767,,製革,せいかく,[n],[tanning]
@@ -9328,7 +9328,7 @@
 9328,,全心,ぜんしん,[n],[one's whole heart]
 9329,,善神,ぜんしん,[n],"[good God, good deities, true teachings of Buddha]"
 9330,,前医,ぜんい,[n],[one's previous doctor]
-9331,,前行,ぜんこう,[n],[former conduct]
+9331,1,前行,ぜんこう,[n],[former conduct]
 9332,,全甲,ぜんこう,[n],[all-A (student)]
 9333,,全高,ぜんこう,[n],"[overall height, distance from the ground to the highest point of an object]"
 9334,,快然,かいぜん,"[adv-to, adj-t, adj-na]","[happy, elated, good mood, pleasant feelings, cured (of an illness), recovered (from an illness)]"
@@ -9907,7 +9907,7 @@
 9907,,貴顕,きけん,[n],[distinguished person]
 9908,,貴見,きけん,[n],[your (esteemed) opinion]
 9909,,手写,しゅしゃ,"[n, vs]",[copying by hand]
-9910,,流竄,りゅうざん,[n],"[banishment, exile]"
+9910,1,流竄,りゅうざん,[n],"[banishment, exile]"
 9911,,強意,きょうい,"[n, adj-no]",[emphasis]
 9912,,胸囲,きょうい,"[n, adj-no]",[chest measurement]
 9913,,教委,きょうい,[n],[Board of Education]
@@ -10082,7 +10082,7 @@
 10082,,幻灯,げんとう,[n],"[slide projector, magic lantern]"
 10083,,減等,げんとう,"[n, vs]","[reduction, mitigation, commutation, demotion]"
 10084,,舷灯,げんとう,[n],"[running lights, sidelight, side light]"
-10085,,舷頭,げんとう,[n],[gunwale]
+10085,1,舷頭,げんとう,[n],[gunwale]
 10086,,鷹隼,ようしゅん,[n],[hawk and falcon]
 10087,,艇首,ていしゅ,[n],[bow (of a boat)]
 10088,,丁種,ていしゅ,[n],"[being unfit for duty in the former Japanese military (due to failing the conscription physical), person who is unfit for military duty]"
@@ -10251,7 +10251,7 @@
 10251,,超高,ちょうこう,[adj-no],"[extra-high, ultra, super]"
 10252,,鳥綱,ちょうこう,[n],"[Aves, class of vertebrates comprising the birds]"
 10253,,鼻疾,びしつ,[n],[diseases of the nose]
-10254,,舷,げん,[n],"[side of a boat, gunwale]"
+10254,1,舷,げん,[n],"[side of a boat, gunwale]"
 10255,,延会,えんかい,[n],[postponement (adjournment) of meeting]
 10256,,遠海,えんかい,[n],"[deep sea, ocean]"
 10257,,応長,おうちょう,[n],[Ouchou era (1311.4.28-1312.3.20)]
@@ -14739,7 +14739,7 @@
 14739,,談叢,だんそう,[n],"[a number of interesting stories, book containing a number of interesting stories]"
 14740,,止渇,しかつ,[n],[cessation of coughing]
 14741,,正西,せいせい,[n],[due west]
-14742,,正々,せいせい,"[adj-t, adv-to]","[accurate, exact, punctual, neat]"
+14742,1,正々,せいせい,"[adj-t, adv-to]","[accurate, exact, punctual, neat]"
 14743,,整斉,せいせい,"[n, adj-no]",[symmetrical]
 14744,,済世,さいせい,[n],"[saving the world, promoting national welfare]"
 14745,,控訴権,こうそけん,[n],[right of appeal]
@@ -16055,7 +16055,7 @@
 16055,,神名,しんめい,[n],"[name of a god, name of a shrine]"
 16056,,移駐,いちゅう,"[n, vs]","[moving, transferring]"
 16057,,願力,がんりき,[n],[the power of prayer (in Buddhism)]
-16058,,貴腐人,きふじん,[n],[adult woman who likes comics about male homosexual love]
+16058,1,貴腐人,きふじん,[n],[adult woman who likes comics about male homosexual love]
 16059,,俗間,ぞっかん,[n],"[the world, the public]"
 16060,,属官,ぞっかん,[n],"[subordinate official, government clerk]"
 16061,,角形,かくけい,[n],"[(N)-cornered polygon, incl. triangle, Japanese rectangular envelope (opening on the short dimension; numbered 0-8, A3, A4, each with different sizes)]"
@@ -16352,7 +16352,7 @@
 16352,,機縁,きえん,[n],"[opportunity, chance]"
 16353,,帰園,きえん,"[n, vs]",[returning home from kindergarten]
 16354,,罷業,ひぎょう,[n],"[strike, walkout]"
-16355,,藻草,もぐさ,[n],"[water-plants, seaweed, algae]"
+16355,1,藻草,もぐさ,[n],"[water-plants, seaweed, algae]"
 16356,,真牡蠣,まがき,[n],[Pacific oyster (Crassostrea gigas)]
 16357,,辛未,かのとひつじ,[n],[eighth of the sexagenary cycle]
 16358,,禍害,かがい,[n],"[evil, harm, mischief]"
@@ -16645,9 +16645,9 @@
 16645,,遠離,おんり,"[n, vs]","[separation by a great distance, detachment]"
 16646,,遠離,えんり,"[n, vs]",[separation by a great distance]
 16647,,甥御,おいご,[n],[(another person's) nephew]
-16648,,甥っ子,おいっこ,[n],[nephew]
+16648,1,甥っ子,おいっこ,[n],[nephew]
 16649,,-,おいた,[n],"[childish prank, mischief]"
-16650,,刺草,いらくさ,[n],[nettle (Urtica thunbergiana)]
+16650,1,刺草,いらくさ,[n],[nettle (Urtica thunbergiana)]
 16651,,俺ら,おいら,[],"[I, me]"
 16652,,俺ら,おれら,"[pn, adj-no]","[we, us, I, me]"
 16653,,黄衣,おうえ,[n],"[yellow clothes, Lama's clothes (e.g. Dalai Lama)]"
@@ -17218,8 +17218,8 @@
 17218,,儕輩,さいはい,[n],"[colleagues, fellows]"
 17219,,細氷,さいひょう,[n],"[ice crystals, diamond dust]"
 17220,,採油,さいゆ,"[n, vs]","[getting oil, extraction of oil (e.g. from seeds), drilling for oil]"
-17221,,犀利,さいり,"[adj-na, n]","[sharp, keen]"
-17222,,再履,さいり,"[n, vs]","[repeating a course, taking a course again]"
+17221,1,犀利,さいり,"[adj-na, n]","[sharp, keen]"
+17222,1,再履,さいり,"[n, vs]","[repeating a course, taking a course again]"
 17223,,再話,さいわ,"[n, vs]","[retelling (tale, legend)]"
 17224,,然かし,さかし,"[exp, int]","[indeed, it is so, I concur, it is so]"
 17225,,作業衣,さぎょうい,[n],[work clothes]
@@ -17930,7 +17930,7 @@
 17930,,等呼,とうこ,[n],[denghu (phonetic method of classifying Chinese finals)]
 17931,,投光器,とうこうき,[n],"[floodlight, floodlight projector]"
 17932,,倒語,とうご,[n],"[inverted word, verlan]"
-17933,,頭語,とうご,[n],[the opening greeting on letters]
+17933,1,頭語,とうご,[n],[the opening greeting on letters]
 17934,,倒叙,とうじょ,[n],[reverse chronological order]
 17935,,東司,とうす,[n],[toilet in a Zen monastery]
 17936,,投打,とうだ,[n],[pitching and batting]
@@ -18194,7 +18194,7 @@
 18194,,万国旗,ばんこくき,[n],[flags of all nations]
 18195,,蛮語,ばんご,[n],[language of the barbarians]
 18196,,晩産化,ばんさんか,"[n, vs]",[increase in the average age of childbirth]
-18197,,万死,ばんし,[n],[certain death]
+18197,1,万死,ばんし,[n],[certain death]
 18198,,蕃社,ばんしゃ,[n],[aborigines village]
 18199,,万謝,ばんしゃ,"[n, vs]","[many thanks, sincere apologies]"
 18200,,番所,ばんしょ,[n],[guard house]
@@ -18371,7 +18371,7 @@
 18371,,-,ぺたん,[adv],[sound of something making firm contact with a flat surface]
 18372,,-,ぺったん,[adv-to],[flattening]
 18373,,保安課,ほあんか,[n],"[safety division, security division, public peace department]"
-18374,,保育士,ほいくし,[n],"[nursery school teacher, childcare worker]"
+18374,1,保育士,ほいくし,[n],"[nursery school teacher, childcare worker]"
 18375,,方技,ほうぎ,[n],[magical art (esp. related to medicine)]
 18376,,崩御,ほうぎょ,"[n, vs]","[death (of an emperor), demise]"
 18377,,鮑魚,ほうぎょ,[n],[salt-cured fish]
@@ -18877,7 +18877,7 @@
 18877,,-,アクティブシステム,[n],[active system]
 18878,,-,アクティブタスク,[n],[active task]
 18879,,-,アクティブフィルタ,[n],[active filter]
-18880,,-,アクティブマトリックス,[n],[active matrix]
+18880,1,-,アクティブマトリックス,[n],[active matrix]
 18881,,-,アクティブリスク,[n],[active risk]
 18882,,-,アクティブウィンドウ,[n],[active window]
 18883,,-,アクティブオブジェクト,[n],[active object]
@@ -21065,7 +21065,7 @@
 21065,,-,ファイルサイズ,[n],[file size]
 21066,,-,フォントサイズ,[n],[font size]
 21067,,-,ブロックサイズ,[n],[block size]
-21068,,-,マトリックスサイズ,[n],[matrix size]
+21068,1,-,マトリックスサイズ,[n],[matrix size]
 21069,,-,レターサイズ,[n],[letter size]
 21070,,-,ミラーサイト,[n],[(ftp or WWW) mirror site]
 21071,,-,サイトシステム,[n],[site system]
@@ -23063,7 +23063,7 @@
 23063,,-,バーニーズ・マウンテン・ドッグ,[n],[Bernese mountain dog]
 23064,,-,ドットプリンター,[n],"[dot matrix printer, dot printer, matrix printer]"
 23065,,-,ドットマップ,[n],[dot map]
-23066,,-,ドットマトリックス,[n],[dot matrix]
+23066,1,-,ドットマトリックス,[n],[dot matrix]
 23067,,-,ポルカドット,[n],[polka dot]
 23068,,-,ドットピッチ,[n],"[dot pitch, DP]"
 23069,,-,ドットファイル,[n],[dot file]
@@ -23670,7 +23670,7 @@
 23670,,-,ビデオリンク,[n],[video link]
 23671,,-,マイビデオ,[n],[My Videos]
 23672,,-,ビデオメッセージ,[n],[video message]
-23673,,-,ビデオキャプチャーボード,[n],[video capture board]
+23673,1,-,ビデオキャプチャーボード,[n],[video capture board]
 23674,,-,フルモーションビデオ,[n],[full motion video]
 23675,,-,ビフ,[n],[BIFF]
 23676,,-,モザイクビュー,[n],[Mosaic View]
