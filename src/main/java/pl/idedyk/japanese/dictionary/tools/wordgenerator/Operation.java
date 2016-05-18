@@ -30,6 +30,8 @@ public enum Operation {
 	
 	SHOW_MISSING_PRIORITY_WORDS("show-missing-priority-words", "Generuje brakujące słowa priorytetowe z grup jmedict"),
 	
+	SHOW_SIMILAR_RELATED_WORDS("show-similar-related-words", "Pokazuje podobne słowa"),
+	
 	HELP("help", "Pokazuje pomoc");
 	
 	private String operation;

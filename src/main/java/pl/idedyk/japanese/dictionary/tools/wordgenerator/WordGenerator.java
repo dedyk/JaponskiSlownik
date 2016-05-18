@@ -51,10 +51,10 @@ import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 public class WordGenerator {
 	
 	public static void main(String[] args) throws Exception {
-		
+				
 		String operationString = null;
 		Operation operation = null;
-				
+		
 		// wstepne sprawdzenie argumentow		
 		if (args.length == 0) {
 			
@@ -67,7 +67,7 @@ public class WordGenerator {
 		
 		// wykrycie operacji
 		operation = Operation.findOperation(operationString);
-		
+				
 		if (operation == null) {
 			
 			System.err.println("Nieznana operacja: " + operationString);
@@ -1680,6 +1680,125 @@ public class WordGenerator {
 				
 				// zapis nowego slownika
 				CsvReaderWriter.generateCsv("input/word-new.csv", polishJapaneseEntries, true, true, false);
+				
+				break;
+			}
+			
+			case SHOW_SIMILAR_RELATED_WORDS: {
+				
+				// wczytanie slownika
+				List<PolishJapaneseEntry> polishJapaneseEntries = wordGeneratorHelper.getPolishJapaneseEntriesList();
+
+				// cache'owanie slownika
+				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
+								
+				// wczytanie slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();				
+				
+				// tworzenie indeksu lucene
+				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
+								
+				// stworzenie wyszukiwacza
+				IndexReader reader = DirectoryReader.open(luceneIndex);
+
+				IndexSearcher searcher = new IndexSearcher(reader);
+				
+				// generowanie slow
+				System.out.println("Generowanie słów...");
+								
+				Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
+
+				int csvId = 1;
+				
+				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
+
+				// tutaj
+				
+				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+					
+					String kanji = polishJapaneseEntry.getKanji();
+					String kana = polishJapaneseEntry.getKana();
+					
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
+					
+					if (groupEntryList != null && groupEntryList.size() > 0) {
+						
+						for (GroupEntry groupEntry : groupEntryList) {
+							
+							List<String> similarRelatedList = groupEntry.getSimilarRelatedList();
+							
+							for (String currentSimilarRelated : similarRelatedList) {
+								
+								int pointIdx = currentSimilarRelated.indexOf("・");
+								
+								if (pointIdx != -1) {
+									currentSimilarRelated = currentSimilarRelated.substring(0, pointIdx);
+								}
+								
+								Query query = Helper.createLuceneDictionaryIndexTermQuery(currentSimilarRelated);
+
+								ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
+								
+								if (scoreDocs.length > 0) {
+																
+									for (ScoreDoc scoreDoc : scoreDocs) {
+										
+										Document foundDocument = searcher.doc(scoreDoc.doc);
+
+										// znaleziony obiekt od lucene
+										GroupEntry groupEntryFromLucene = Helper.createGroupEntry(foundDocument);
+										
+										Integer groupId = groupEntryFromLucene.getGroup().getId();
+										
+										// czy ta grupa byla juz sprawdzana
+										if (alreadyCheckedGroupId.contains(groupId) == true) {
+											continue;
+											
+										} else {
+											alreadyCheckedGroupId.add(groupId);
+											
+										}
+										
+										// szukamy pelnej grupy
+										Group foundGroupInDictionary = jmeNewDictionary.getGroupById(groupId);
+										
+										List<GroupEntry> foundGroupEntryList = foundGroupInDictionary.getGroupEntryList();
+																			
+										// grupujemy po tych samych tlumaczenia
+										List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(foundGroupEntryList);
+													
+										for (List<GroupEntry> foundGroupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
+											
+											GroupEntry foundGroupEntry = foundGroupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
+
+											String foundGroupEntryKanji = foundGroupEntry.getKanji();
+											String foundGroupEntryKana = foundGroupEntry.getKana();
+																			
+											List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, foundGroupEntryKanji, foundGroupEntryKana);
+											
+											if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
+												
+												//System.out.println(groupEntry);
+												
+												CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, foundGroupEntry);
+												
+												if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
+
+													newCommonWordMap.put(commonWord.getId(), commonWord);
+													
+													csvId++;										
+												}
+											}
+										}
+									}
+								}
+							}							
+						}
+					}
+				}
+				
+				// zapisywanie slownika
+				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/similar-related-word-list.csv");
 				
 				break;
 			}

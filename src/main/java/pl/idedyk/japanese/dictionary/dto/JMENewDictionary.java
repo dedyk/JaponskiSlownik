@@ -385,6 +385,8 @@ public class JMENewDictionary {
 		
 		private List<GroupEntryTranslate> translateList;
 		
+		private List<String> similarRelatedList;
+		
 		private List<String> priority;
 		
 		public GroupEntry(JMEDictNewNativeEntry nativeEntry, Group group) {
@@ -470,6 +472,14 @@ public class JMENewDictionary {
 
 		public void setPriority(List<String> priority) {
 			this.priority = priority;
+		}
+
+		public List<String> getSimilarRelatedList() {
+			return similarRelatedList;
+		}
+
+		public void setSimilarRelatedList(List<String> similarRelatedList) {
+			this.similarRelatedList = similarRelatedList;
 		}
 
 		public boolean containsAttribute(String attribute) {

@@ -698,7 +698,9 @@ public class JMEDictNewReader {
 		Set<String> wordTypeList = new LinkedHashSet<String>();
 		
 		List<GroupEntryTranslate> translateList = new ArrayList<GroupEntryTranslate>();
-				
+		
+		List<String> similarRelatedList = new ArrayList<String>();
+		
 		for (Sense currentSense : senseList) {
 			
 			List<String> stagk = currentSense.getStagk();
@@ -711,6 +713,8 @@ public class JMEDictNewReader {
 			List<String> gloss = currentSense.getGloss();
 			
 			List<String> s_inf = currentSense.getS_inf();
+			
+			List<String> xref = currentSense.getXref();
 
 			boolean isKanjiRestricted = true;
 			
@@ -745,8 +749,7 @@ public class JMEDictNewReader {
 			for (String currentPos : pos) {
 				wordTypeList.add(currentPos);
 			}
-			
-			
+						
 			for (String currentGloss : gloss) {
 				
 				GroupEntryTranslate groupEntryTranslate = new GroupEntryTranslate();
@@ -768,7 +771,11 @@ public class JMEDictNewReader {
 				groupEntryTranslate.setAdditionalInfoList(additionalInfoList);
 				
 				translateList.add(groupEntryTranslate);
-			}			
+			}	
+			
+			for (String currentSimilarRelated : xref) {
+				similarRelatedList.add(currentSimilarRelated);
+			}
 		}
 		
 		List<Trans> transList = jmeDictNewNativeEntry.getTrans();
@@ -796,5 +803,7 @@ public class JMEDictNewReader {
 		groupEntry.setWordTypeList(wordTypeList);
 		
 		groupEntry.setTranslateList(translateList);
+		
+		groupEntry.setSimilarRelatedList(similarRelatedList);
 	}
 }
