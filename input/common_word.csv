@@ -36,7 +36,7 @@
 36,,医家,いか,[n],[doctor]
 37,,位記,いき,[n],[court rank diploma]
 38,,移記,いき,"[n, vs]","[transfer to the records, transcription to a special document]"
-39,,委棄,いき,"[n, vs]","[waiving (a right), waiver, renunciation, abandonment, desertion]"
+39,1,委棄,いき,"[n, vs]","[waiving (a right), waiver, renunciation, abandonment, desertion]"
 40,,畏懼,いく,"[n, vs]","[reverence, awe, fear]"
 41,,生く,いく,"[v2k-k, v4k, vi, v2k-s, vt]","[to live, to exist, to bring to life]"
 42,,-,いけ,[pref],[prefix used to strengthen a derogatory adjective]
@@ -51,7 +51,7 @@
 51,,維那,いな,[n],[one of the six administrators of a Zen temple (in charge of general affairs)]
 52,1,鯔,いな,[n],[young striped mullet]
 53,,否か,いなか,[conj],[.. or not]
-54,,情夫,じょうふ,[n],[lover (male)]
+54,1,情夫,じょうふ,[n],[lover (male)]
 55,1,いろは歌,いろはうた,[n],[iroha poem]
 56,,尹,いん,[n],[director (of the ritsuryo-period Imperial Prosecuting and Investigating Office)]
 57,,殷,いん,[n],[Yin Dynasty (of China)]
@@ -152,7 +152,7 @@
 152,,輿,かご,[n],"[palanquin, litter, bier]"
 153,,訛語,かご,[n],[non-standard pronunciation]
 154,,歌語,かご,[n],[words mainly used in songs or poetry]
-155,,華語,かご,[n],[Chinese language]
+155,1,華語,かご,[n],[Chinese language]
 156,,暈,かさ,[n],"[astronomical halo (ring, etc.)]"
 157,,瘡,かさ,[n],"[pustule, scab, syphilis, pox]"
 158,,滓,かす,[n],"[dregs, sediment, grounds, meal, lees (esp. sake), leftovers, by-product, worthless item, thing of little to no value, dregs (e.g. of society), scum, dross, card only worth 1 point (in hanafuda)]"
@@ -259,16 +259,16 @@
 259,,乾,けん,[n],"[qian (one of the trigrams of the I Ching: heaven, northwest)]"
 260,,堅,けん,[n],"[strength, solidity, firmness, armour, armor]"
 261,,険,けん,"[n, adj-na]","[steepness, steep place, harsh (look), sharp (tongue)]"
-262,,壎,けん,[n],[xun (ancient Chinese musical instrument resembling a clay ocarina)]
+262,1,壎,けん,[n],[xun (ancient Chinese musical instrument resembling a clay ocarina)]
 263,,闃,げき,"[adv-to, adj-t]",[quietly]
 264,,激,げき,[pref],[extremely ...]
 265,,古意,こい,[n],"[ancient ways, the feelings of the ancients]"
-266,,-,こい,"[suf, adj-i]","[rich in ..., high in ..., full of ..., very ..., quite ...]"
+266,1,-,こい,"[suf, adj-i]","[rich in ..., high in ..., full of ..., very ..., quite ...]"
 267,1,稲子,いなご,[n],"[rice grasshopper (of genus Oxya), grasshopper, locust (of family Catantopidae)]"
 268,,恋う,こう,"[v5u-s, vt]",[to love]
 269,,劫,こう,[n],"[kalpa (eon, aeon), ko (in go), position that allows for eternal capture and recapture of the same stones]"
 270,,-,コウ,[],"[ko (in go), position that allows for eternal capture and recapture of the same stones]"
-271,,爻,こう,[n],[yao (line representing yin or yang that comprises one third of a trigram)]
+271,1,爻,こう,[n],[yao (line representing yin or yang that comprises one third of a trigram)]
 272,,亢,こう,[n],"[Chinese ""Neck"" constellation (one of the 28 mansions)]"
 273,1,考,こう,"[n, n-suf]","[thought, report on one's investigation into ..., deceased father]"
 274,,硬,こう,[n],[hardness]
@@ -329,7 +329,7 @@
 329,,知客,しか,[n],[head monk in charge of the administrative section of a zendo (Zen)]
 330,,詩化,しか,"[n, vs]",[poetization]
 331,1,詩家,しか,[n],[poet]
-332,,始期,しき,[n],"[beginning period, initial term]"
+332,1,始期,しき,[n],"[beginning period, initial term]"
 333,,紙器,しき,[n],"[paper articles, containers, etc. made of paper]"
 334,,私記,しき,[n],[private records or documents]
 335,1,志気,しき,[n],"[determination, esprit de corps]"
@@ -340,7 +340,7 @@
 340,,市区,しく,[n],"[municipal district, streets]"
 341,,四苦,しく,[n],"[the four kinds of suffering (birth, old age, disease, death)]"
 342,1,死苦,しく,[n],"[inevitability of death (one of the four kinds of suffering), death pains, agony of death]"
-343,,頻く,しく,"[v5k, vi]","[to occur repeatedly, to be repeated]"
+343,1,頻く,しく,"[v5k, vi]","[to occur repeatedly, to be repeated]"
 344,,強か,したたか,"[adj-na, adv]","[tough, stubborn, determined, hard, severely, heavily, hard, a great deal, much]"
 345,,私募,しぼ,"[n, vs]","[private offering (of securities), private placement]"
 346,,紙魚,しみ,[n],"[true bristletail (any insect of order Thysanura, esp. of family Lepismatidae), Oriental silverfish (Ctenolepisma villosa), someone who is unable to apply what they have read]"
@@ -411,9 +411,9 @@
 411,,奏効,そうこう,"[n, vs]",[efficacy]
 412,,糟糠,そうこう,[n],"[chaff and bran, plain food, worthless thing, trifle]"
 413,,然う斯う,そうこう,"[adv, vs]","[this and that, one thing or another]"
-414,,綜絖,そうこう,[n],"[heddle, heald, part of a loom, a wire or cord with an eye, through which the warp threads are threaded]"
+414,1,綜絖,そうこう,[n],"[heddle, heald, part of a loom, a wire or cord with an eye, through which the warp threads are threaded]"
 415,,其処ら,そこら,[n],"[everywhere, somewhere, approximately, that area, around there]"
-416,,-,そよ,[adv-to],[with a slight (breeze)]
+416,1,-,そよ,[adv-to],[with a slight (breeze)]
 417,,-,そら,"[int, exp]","[look!, look out!, look at me!, here!, there!, that is]"
 418,,橇,そり,[n],"[sleigh, sled, sledge]"
 419,,-,それ,[int],[there! (used to call someone's attention to something)]
@@ -600,7 +600,7 @@
 600,,-,ほう,"[int, exp]","[oh, ho, exclamation of surprise, admiration, etc., hoo (owl call), toot (sound of a flute)]"
 601,,芳紀,ほうき,[n],"[age of a young lady who is at the peak of her (sexual) attractiveness, marriable age (of a young lady), sweet sixteen]"
 602,,宝器,ほうき,[n],"[treasured article or vessel, outstanding individual]"
-603,,芳気,ほうき,[n],[fragrant scent]
+603,1,芳気,ほうき,[n],[fragrant scent]
 604,,宝亀,ほうき,[n],[Houki era (770.10.1-781.1.1)]
 605,,方里,ほうり,[n],[a square ri]
 606,,鳳梨,ほうり,[n],[pineapple]
@@ -760,7 +760,7 @@
 760,,-,カスタムプラグイン,[n],[custom plug-in]
 761,,-,ジャストインタイムコンパイラ,[n],[Just In Time Compiler]
 762,1,-,ピクチャーインピクチャー,[n],[picture in picture]
-763,,-,インストアマーチャンダイジング,[n],[in-store merchandising]
+763,1,-,インストアマーチャンダイジング,[n],[in-store merchandising]
 764,,-,セットインスリーブ,[n],[set-in sleeve]
 765,1,-,ウオークインクロゼット,[n],[walk-in closet]
 766,,-,ウォークインクローゼット,[n],[walk-in closet]
@@ -776,7 +776,7 @@
 776,1,-,クリーピングインフレ,[n],[creeping inflation]
 777,,-,コストインフレ,[n],[cost inflation]
 778,,-,インフレターゲット,[n],[inflation target]
-779,,-,マイルドインフレーション,[n],[mild inflation]
+779,1,-,マイルドインフレーション,[n],[mild inflation]
 780,,-,コストインフレーション,[n],[cost inflation]
 781,1,-,クリーピングインフレーション,[n],[creeping inflation]
 782,,-,コストプッシュインフレーション,[n],[cost-push inflation]
@@ -797,7 +797,7 @@
 797,,-,パワーエリート,[n],[power elite]
 798,1,Ｌ,エル,[n],"[L, l]"
 799,,-,エルサイズ,[n],"[L size, large size]"
-800,,-,エログロ,"[adj-na, n, adj-no]",[erotic and grotesque]
+800,1,-,エログロ,"[adj-na, n, adj-no]",[erotic and grotesque]
 801,,-,エロアニメ,[n],"[erotic animation, pornographic animation, animation containing explicit sexual content]"
 802,,-,エロゲーム,[n],[erotic video game]
 803,,-,エロコメディ,[n],[erotic comedy]
@@ -833,7 +833,7 @@
 833,,-,オレ,[int],[olé]
 834,1,-,オレンジジュース,[n],[orange juice]
 835,,-,ネーブルオレンジ,[n],[navel orange]
-836,,-,オレンジカード,[n],[orange card (pre-paid ticket)]
+836,1,-,オレンジカード,[n],[orange card (pre-paid ticket)]
 837,,-,ブラッドオレンジ,[n],[blood orange]
 838,1,-,エージェントオレンジ,[n],[Agent Orange (dioxin-laden defoliant used during the Vietnam War)]
 839,,-,オレンジピール,[n],[orange peel]
@@ -911,7 +911,7 @@
 911,,-,オープンリール,[n],[open reel]
 912,,-,オープンショップ,[n],[open shop]
 913,,-,オープンキッチン,[n],[open kitchen]
-914,,-,オープンカフェ,[n],"[pavement cafe, sidewalk cafe, open-air cafe]"
+914,1,-,オープンカフェ,[n],"[pavement cafe, sidewalk cafe, open-air cafe]"
 915,,-,オープンジョー,[n],[open-jaw (ticket)]
 916,,-,オープンデーティングシステム,[n],[open-dating system]
 917,1,-,オープンマーケットオペレーション,[n],[open market operation]
@@ -952,7 +952,7 @@
 952,,-,アングロカトリック,"[n, adj-no]",[Anglo-Catholic]
 953,,-,アースカラー,[n],"[earth color, earth colour]"
 954,1,-,ウイングカラー,[n],[wing collar]
-955,,-,カラーアレンジメント,[n],"[color arrangement, colour arrangement]"
+955,1,-,カラーアレンジメント,[n],"[color arrangement, colour arrangement]"
 956,1,-,カラーインク,[n],"[colored ink, coloured ink]"
 957,,-,カラーコンディショニング,[n],"[color conditioning, colour conditioning]"
 958,,-,カラーコンビネーション,[n],"[color combination, colour combination]"
@@ -965,7 +965,7 @@
 965,,-,カラーマーカー,[n],"[color marking pen, colour marking pen]"
 966,1,-,カラーリンス,[n],"[color rinse, colour rinse]"
 967,,-,シンボルカラー,[n],"[symbol color, symbol colour]"
-968,,-,スクールカラー,[n],"[school color, school colour]"
+968,1,-,スクールカラー,[n],"[school color, school colour]"
 969,1,-,スタンドカラー,[n],[stand-up collar]
 970,,-,スチールカラー,[n],"[steel collar worker, robot]"
 971,,-,ナチュラルカラー,[n],"[natural color, natural colour]"
@@ -1008,7 +1008,7 @@
 1008,,-,カラーアナリスト,[n],[color analyst]
 1009,,-,カラーサークル,[n],[color circle]
 1010,,-,カラーコーディネーション,[n],[color coordination]
-1011,,-,カラースケール,[n],[color scale]
+1011,1,-,カラースケール,[n],[color scale]
 1012,,-,カラースキャナー,[n],[colour scanner (color)]
 1013,,-,クールカラー,[n],[cool color]
 1014,,-,ダブルカラー,[n],[double collar]
@@ -1052,7 +1052,7 @@
 1052,,-,カークーラー,[n],[car air-conditioner]
 1053,,-,カーステレオ,[n],[car stereo]
 1054,,-,カースリーパー,[n],[sleeping car (car sleeper) (train)]
-1055,,-,カートレイン,[n],"[car train, train carrying both passengers and vehicles]"
+1055,1,-,カートレイン,[n],"[car train, train carrying both passengers and vehicles]"
 1056,,-,カーヒーター,[n],[car heater]
 1057,,-,カーライフ,[n],[car life]
 1058,,-,カーラジオ,[n],[car radio]
@@ -1091,7 +1091,7 @@
 1091,1,-,プルマンカー,[n],[Pullman car]
 1092,,-,カーマニア,[n],"[car enthusiast, car buff]"
 1093,,-,カーレーサー,[n],[racing driver]
-1094,,-,キャラバンカー,[n],"[van or truck with a display, retail, etc. facility, mobile showroom]"
+1094,1,-,キャラバンカー,[n],"[van or truck with a display, retail, etc. facility, mobile showroom]"
 1095,,-,ファンカー,[n],"[car using a fan to create a ground effect, fan car]"
 1096,,-,スロープカー,[n],"[slope car, small automated monorail]"
 1097,,-,キャリアカー,[n],"[car carrier, car transporter, auto transport truck]"
@@ -1116,12 +1116,12 @@
 1116,1,-,ガスパイプライン,[n],[gas pipeline]
 1117,,-,ガスタンク,[n],"[gas tank, gasholder, gasometer]"
 1118,,-,ガスヒーポン,[n],[gas heat pump]
-1119,,-,ガスメーター,[n],[gas meter]
+1119,1,-,ガスメーター,[n],[gas meter]
 1120,1,-,マスタードガス,[n],[mustard gas]
 1121,,-,ガスパネル,[n],"[plasma panel, gas panel]"
 1122,,-,ガスランプ,[n],[gas lamp]
 1123,,-,ガスマントル,[n],[gas mantle]
-1124,,-,ガスボイラー,[n],[gas boiler]
+1124,1,-,ガスボイラー,[n],[gas boiler]
 1125,1,-,ガスカーボン,[n],[gas carbon]
 1126,,-,ガスクロマトグラフ,[n],[gas chromatograph]
 1127,1,-,ガスパイプ,[n],[gas pipe]
@@ -1136,7 +1136,7 @@
 1136,1,-,ガラルファ,[n],"[doctor fish (Garra rufa), nibble fish, kangal fish, reddish log sucker]"
 1137,,-,ガラディナー,[n],[gala dinner]
 1138,,-,ガラスブロック,[n],[glass block]
-1139,,-,クリスタルガラス,[n],[crystal glass]
+1139,1,-,クリスタルガラス,[n],[crystal glass]
 1140,,-,パイレックスガラス,[n],[Pyrex glass]
 1141,,-,フォトクロミックガラス,[n],[photochromic glass]
 1142,1,-,フロントガラス,[n],"[windscreen, windshield]"
@@ -1174,7 +1174,7 @@
 1174,,-,ショートカットキー,[n],[shortcut key]
 1175,,-,アクセスキー,[n],[access key]
 1176,1,-,アップルキー,[n],[Apple key]
-1177,,-,アプリケーションキー,[n],[application key]
+1177,1,-,アプリケーションキー,[n],[application key]
 1178,1,-,エスケープキー,[n],"[escape key, ESC key]"
 1179,,-,エレクトリカルキー,[n],[electrical key]
 1180,,-,エンターキー,[n],[Enter key]
