@@ -163,9 +163,9 @@ public class WordGenerator {
 			
 			case GENERATE_MISSING_WORD_LIST: {
 				
-				if (args.length != 2 && args.length != 3) {
+				if (args.length != 2 && args.length != 3 && args.length != 4) {
 					
-					System.err.println("Niepoprawna liczba argumentów");
+					System.err.println("Niepoprawna liczba argumentów. Poprawne wywołanie: [plik z lista słów] [czy sprawdzać w jisho.org] [czy zapis w formacie common]");
 					
 					return;
 				}
@@ -173,10 +173,15 @@ public class WordGenerator {
 				String fileName = args[1];
 				
 				boolean checkInJishoOrg = true;
+				boolean saveInCommonFormat = false;
 				
 				if (args.length > 2) {
 					checkInJishoOrg = Boolean.parseBoolean(args[2]);
-				}				
+				}
+				
+				if (args.length > 3) {
+					saveInCommonFormat = Boolean.parseBoolean(args[3]);
+				}
 								
 				// wczytywanie pliku z lista slow
 				System.out.println("Wczytywanie brakujących słów...");
@@ -199,6 +204,8 @@ public class WordGenerator {
 
 				// generowanie slow
 				List<PolishJapaneseEntry> foundWordList = new ArrayList<PolishJapaneseEntry>();
+				Map<Integer, CommonWord> foundWordListInCommonWordMap = new TreeMap<>();
+				
 				List<PolishJapaneseEntry> alreadyAddedWordList = new ArrayList<PolishJapaneseEntry>();
 				
 				List<String> foundWordSearchList = new ArrayList<String>();		
@@ -268,9 +275,13 @@ public class WordGenerator {
 								CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counter, currentMissingWord);
 								
 								PolishJapaneseEntry polishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;
-													
+								CommonWord commonWord = Helper.convertGroupEntryToCommonWord(counter, groupEntry);					
+								
 								if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
+									
 									foundWordList.add(polishJapaneseEntry);
+									
+									foundWordListInCommonWordMap.put(commonWord.getId(), commonWord);
 									
 								} else {
 									alreadyAddedWordList.add(polishJapaneseEntry);
@@ -309,15 +320,22 @@ public class WordGenerator {
 				reader.close();
 				
 				System.out.println("Zapisywanie słownika...");
-				
-				List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
-				
-				newWordList.addAll(foundWordList);
-				newWordList.addAll(alreadyAddedWordList);
-				newWordList.addAll(notFoundJishoFoundWordList);
-				newWordList.addAll(notFoundWordList);
-				
-				CsvReaderWriter.generateCsv("input/word-new.csv", newWordList, true, true, false);
+								
+				if (saveInCommonFormat == false) {
+					
+					List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
+					
+					newWordList.addAll(foundWordList);
+					newWordList.addAll(alreadyAddedWordList);
+					newWordList.addAll(notFoundJishoFoundWordList);
+					newWordList.addAll(notFoundWordList);
+					
+					CsvReaderWriter.generateCsv("input/word-new.csv", newWordList, true, true, false);
+					
+				} else {
+					CsvReaderWriter.writeCommonWordFile(foundWordListInCommonWordMap, "input/word-new.csv");
+					
+				}
 				
 				FileWriter searchResultFileWriter = new FileWriter(fileName + "-new");
 				
