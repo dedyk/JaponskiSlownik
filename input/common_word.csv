@@ -51,7 +51,7 @@
 51,1,古女,ごまめ,[n],[dried young anchovies (or sardines)]
 52,1,古馬,こば,[n],[horses 4 or more years old (usu. in racing)]
 53,1,大生,だいせい,[suf],[college student]
-54,,法華,ほっけ,[n],"[Nichiren sect, Tendai sect, Lotus Sutra]"
+54,1,法華,ほっけ,[n],"[Nichiren sect, Tendai sect, Lotus Sutra]"
 55,1,補講,ほこう,"[n, vs]",[supplementary classes or lectures]
 56,1,諒する,りょうする,"[vs-s, vt]","[to acknowledge, to understand, to appreciate]"
 57,1,晋,しん,[n],"[Jin (dynasty of China, 265-420 CE)]"
@@ -108,7 +108,7 @@
 108,1,御襁褓気触れ,おむつかぶれ,[n],"[diaper rash, nappy rash]"
 109,1,-,クース,[n],"[vintage awamori, awamori aged in cask for at least three years]"
 110,1,一極,いっきょく,[n],"[monopole, singular pole, unipole]"
-111,,刻苦,こっく,"[n, vs]",[hard work]
+111,1,刻苦,こっく,"[n, vs]",[hard work]
 112,1,称揚,しょうよう,"[n, vs]","[praise, admiration, exalting, extolling]"
 113,1,金座,きんざ,[n],[Edo-period gold mint]
 114,1,可用,かよう,[n],"[available, in service]"
@@ -139,7 +139,7 @@
 142,1,戊,つちのえ,[n],"[5th in rank, fifth sign of the Chinese calendar]"
 143,1,巻き寿司,まきずし,[n],"[makizushi, sushi made rolled in nori seaweed with a core of filling]"
 144,1,薨,こう,[n],"[death (of a nobleman, etc.)]"
-145,,相席,あいせき,"[n, vs]",[sharing a table (at a restaurant with someone you don't know)]
+145,1,相席,あいせき,"[n, vs]",[sharing a table (at a restaurant with someone you don't know)]
 146,1,合同会社,ごうどうかいしゃ,[n],"[limited liability company, LLC, GK, company structure for small businesses, established in 2005]"
 147,1,埒,らち,[n],"[bounds, limits]"
 148,1,建保,けんぽう,[n],[Kempou era (1213.12.6-1219.4.12)]
@@ -295,7 +295,7 @@
 302,1,指示詞,しじし,[n],[demonstrative]
 303,1,沒る,いる,[v5r],[to set beyond the Western horizon (i.e. the sun)]
 304,1,-,だろうか,[exp],[indicates question]
-305,,板書,ばんしょ,"[n, vs]",[writing on a blackboard]
+305,1,板書,ばんしょ,"[n, vs]",[writing on a blackboard]
 306,1,漁家,ぎょか,[n],[fishing household]
 307,1,余効,よこう,[n],"[aftereffect, after effect]"
 308,1,悲,ひ,[n],[karuna (compassion)]
@@ -338,7 +338,7 @@
 347,1,異能,いのう,[n],"[unusual power, superpower, ability beyond that of humans]"
 348,1,生血,なまち,[n],"[fresh blood, lifeblood]"
 349,1,愛の神,あいのかみ,[n],"[Amor, Eros, Venus, god of love]"
-350,,飛越,ひえつ,"[n, vs]","[jumping over (a hurdle), clearing (a fence), hurdling]"
+350,1,飛越,ひえつ,"[n, vs]","[jumping over (a hurdle), clearing (a fence), hurdling]"
 351,1,下り腹,くだりばら,[n],"[diarrhoea, diarrhea, loose bowels]"
 352,1,第九,だいく,[n],[the ninth (i.e. Beethoven's Ninth Symphony)]
 353,1,温泉場,おんせんば,[n],"[place where there are hot springs, hot springs spa]"
@@ -472,7 +472,7 @@
 486,1,目にかかる,めにかかる,"[exp, v5r]","[to meet (someone of higher status), to be recognized (esp. by someone of higher status), to be visible, to be seen, to be noticed]"
 487,1,喜捨,きしゃ,"[n, vs]",[almsgiving]
 488,1,別記,べっき,"[n, vs]","[addendum, supplementary material, afterword, postscript, marginal notes]"
-489,,改行,かいぎょう,"[n, vs]","[new line, new paragraph, newline (e.g. LF, CR, CRLF)]"
+489,1,改行,かいぎょう,"[n, vs]","[new line, new paragraph, newline (e.g. LF, CR, CRLF)]"
 490,1,出稿,しゅっこう,"[n, vs]","[placing (an ad), submission of advertising copy, sending a manuscript for printing]"
 491,1,楷書体,かいしょたい,[n],[square (block) style of printed typeface]
 493,1,お手手,おてて,[n],"[hand, hands]"
@@ -638,7 +638,7 @@
 661,1,小さ童,ちいさわらわ,[n],[small child (esp. a servant child in the Heian-period imperial palace)]
 662,1,清祥,せいしょう,[n],"[spirit, energy]"
 663,1,鸚哥,いんこ,[n],"[true parrot (esp. small parrots such as the parakeet, lory and conure)]"
-664,,-,マイブーム,[n],"[current obsession, current kick, personal obsession]"
+664,1,-,マイブーム,[n],"[current obsession, current kick, personal obsession]"
 666,1,くり抜く,くりぬく,"[v5k, vt]","[to gouge out, to excavate, to hollow, to bore, to drill, to carve (e.g. pumpkin)]"
 667,1,前の世,まえのよ,[n],[previous existence]
 668,1,-,テレビドラマ,[n],"[teledrama, television drama, television play, video drama]"
@@ -674,7 +674,7 @@
 700,1,日清,にっしん,[n],[First Sino-Japanese war (1894-1895)]
 701,1,-,わあ,[int],"[wow! (surprise), oh! (startled), eek!, gee!, yeah! (joy), alright!, hurray!, waah! (crying), boohoo!]"
 702,1,千千,せんせん,[n],"[thousands, great number of, variety]"
-703,,古草,ふるくさ,[n],"[last year's grass, dead grass]"
+703,1,古草,ふるくさ,[n],"[last year's grass, dead grass]"
 704,1,古酒,こしゅ,[n],"[well-cured sake, last year's sake, old sake]"
 705,1,好学,こうがく,[n],[love of learning]
 706,1,鬲,かなえ,[n],"[kanji ""tripod"" radical (radical 193)]"
