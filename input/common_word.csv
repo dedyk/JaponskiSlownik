@@ -26,12 +26,12 @@
 26,1,-,ナイト・ダイブ,[n],[night dive]
 27,1,-,ガチャン,"[adv-to, n]","[(with a) slamming noise (door, telephone receiver), (with a) banging noise, (with a) clash (broken dish), (with a) clank, (with a) bang]"
 28,1,緊急時,きんきゅうじ,"[n, adj-no]",[emergency]
-29,,-,バイバイ,"[int, n, vs]","[bye-bye, good-bye, see you, so long, saying goodbye, parting]"
+29,1,-,バイバイ,"[int, n, vs]","[bye-bye, good-bye, see you, so long, saying goodbye, parting]"
 30,1,-,カンバン,[n],"[kanban, kamban, scheduling system for just-in-time production]"
-31,,-,スタートボタン,[n],[start button (e.g. in Windows)]
+31,1,-,スタートボタン,[n],[start button (e.g. in Windows)]
 32,1,辟,へき,[n],"[false, punish, crime, law, ruler]"
 33,1,真名,まな,[n],"[kanji (as opposed to kana), printed-style writing]"
-34,,風帯,ふうたい,[n],[tassel]
+34,1,風帯,ふうたい,[n],[tassel]
 35,1,中継器,ちゅうけいき,[n],"[repeater, relay]"
 36,1,轂,こしき,[n],"[hub, nave]"
 37,1,再入,さいにゅう,"[n, n-pref]","[re-entry, reentry, readmittance]"
@@ -52,7 +52,7 @@
 52,1,古馬,こば,[n],[horses 4 or more years old (usu. in racing)]
 53,1,大生,だいせい,[suf],[college student]
 54,,法華,ほっけ,[n],"[Nichiren sect, Tendai sect, Lotus Sutra]"
-55,,補講,ほこう,"[n, vs]",[supplementary classes or lectures]
+55,1,補講,ほこう,"[n, vs]",[supplementary classes or lectures]
 56,1,諒する,りょうする,"[vs-s, vt]","[to acknowledge, to understand, to appreciate]"
 57,1,晋,しん,[n],"[Jin (dynasty of China, 265-420 CE)]"
 58,1,決め所,きめどころ,[n],"[crucial point, perfect chance, golden opportunity]"
@@ -103,7 +103,7 @@
 103,1,小首,こくび,[n],[head]
 104,1,遁甲,とんこう,[n],[type of astrology]
 105,1,折り込む,おりこむ,"[v5m, vt]",[to fold inside]
-106,,-,ミ,[n],"[mi, 3rd note in the tonic solfa representation of the diatonic scale]"
+106,1,-,ミ,[n],"[mi, 3rd note in the tonic solfa representation of the diatonic scale]"
 107,1,-,シトリン,[n],"[citrine, citrine quartz, false topaz]"
 108,1,御襁褓気触れ,おむつかぶれ,[n],"[diaper rash, nappy rash]"
 109,1,-,クース,[n],"[vintage awamori, awamori aged in cask for at least three years]"
@@ -115,7 +115,7 @@
 115,1,病者,びょうしゃ,[n],"[sick person, patient, invalid]"
 116,1,魔性,ましょう,"[n, adj-no]",[devilishness]
 117,1,険相,けんそう,"[adj-na, n]","[forbidding look, uncanny look]"
-118,,生日,いくひ,[n],"[lucky day, day of celebration]"
+118,1,生日,いくひ,[n],"[lucky day, day of celebration]"
 119,1,節介,せっかい,"[adj-na, n]","[meddling, meddlesomeness, nosiness, interference, officiousness]"
 120,1,-,ストーン,[n],"[stone, bijou, trinket, gemstone, stone (unit of weight: 14lb), curling stone, curling rock]"
 121,1,祖霊,それい,[n],"[ancestral spirit, collective of ancestral spirits which have lost their individualities, ancestor deified as a kami, spirit of a kami]"
@@ -312,7 +312,7 @@
 320,1,胃散,いさん,[n],[stomach medicine]
 321,1,もう直,もうじき,"[exp, adv]",[soon]
 322,1,蓮華草,れんげそう,[n],[Chinese milk vetch (Astragalus sinicus)]
-323,,東坡肉,トンポーロー,[n],"[Dongpo pork, Chinese pan-fried red-cooked pork squares, named for poet Su Shi (Dong Po)]"
+323,1,東坡肉,トンポーロー,[n],"[Dongpo pork, Chinese pan-fried red-cooked pork squares, named for poet Su Shi (Dong Po)]"
 324,1,堕す,だす,"[v5s, vi]","[to degenerate, to lapse into]"
 325,1,-,バックシャン,[n],"[woman's fine rear-end, good ass, nice derriere, girl who looks great from behind]"
 326,1,-,クールビズ,[n],"[cool biz, cool business, business casual (Japanese Ministry of the Environment (MOE) campaign encouraging people to wear lighter clothes and for companies to set their air conditioners to 28C, etc.)]"
@@ -344,7 +344,7 @@
 353,1,温泉場,おんせんば,[n],"[place where there are hot springs, hot springs spa]"
 354,1,楓,ふう,[n],[Formosan sweetgum (Liquidambar formosana)]
 355,1,狂喜,きょうき,"[n, vs, adj-no]","[wild joy, ecstasy]"
-356,,会意,かいい,[n],"[compound ideograph formation (one of the six kanji classifications), making kanji up of meaningful parts (e.g. ""mountain pass"" is up + down + mountain)]"
+356,1,会意,かいい,[n],"[compound ideograph formation (one of the six kanji classifications), making kanji up of meaningful parts (e.g. ""mountain pass"" is up + down + mountain)]"
 357,1,忍び泣き,しのびなき,[n],[quiet weeping]
 358,1,例解,れいかい,"[n, vs]","[illustration, example]"
 359,1,-,コンポーネント,[n],[component]
@@ -356,8 +356,8 @@
 365,1,-,パーソナルデジタルアシスタント,[n],"[personal digital assistant, PDA]"
 366,1,包子,パオズ,[n],"[baozi, Chinese steamed bun]"
 367,1,異形,いけい,"[n, adj-no]","[atypical appearance, atypicality, heteromorphy]"
-368,,捏ね,つくね,[n],[chicken or fish meatloaf made with egg]
-369,,後の月,あとのつき,[n],[last month]
+368,1,捏ね,つくね,[n],[chicken or fish meatloaf made with egg]
+369,1,後の月,あとのつき,[n],[last month]
 370,1,京風,きょうふう,[n],"[Kyoto style, urbanity, refinement]"
 371,1,兄事,けいじ,"[n, vs]",[defer to another as if an older brother]
 372,1,黄斑,おうはん,"[n, adj-no]","[macula, macule, macula lutea, yellow spot]"
@@ -390,7 +390,7 @@
 399,1,体位,たいい,"[n, adj-no]","[physique, physical standard, posture, sexual position]"
 400,1,音楽界,おんがくかい,[n],"[the world of music, the music world]"
 401,1,私有財産,しゆうざいさん,[n],[private property]
-402,,-,ハードコア,"[n, adj-na, adj-no]","[hard-core (music, porn, etc.), hardcore, hard core (fruit, etc.)]"
+402,1,-,ハードコア,"[n, adj-na, adj-no]","[hard-core (music, porn, etc.), hardcore, hard core (fruit, etc.)]"
 403,1,結語,けつご,[n],"[conclusion, concluding remarks]"
 404,1,-,サウザンアイランド,[n],[Thousand Island (dressing)]
 405,1,爾汝,じじょ,[n],"[you, thou]"
@@ -441,13 +441,13 @@
 454,1,-,カメラポジション,[n],[camera position]
 455,1,見栄を張る,みえをはる,"[exp, v5r]","[to be pretentious, to put on airs]"
 456,1,厚生労働相,こうせいろうどうしょう,[n],"[Minister of Health, Labour and Welfare]"
-457,,下木,したき,[n],"[understory trees, underbrush, undergrowth]"
+457,1,下木,したき,[n],"[understory trees, underbrush, undergrowth]"
 458,1,主殿,しゅでん,[n],"[main building (of a villa, palace, etc.)]"
 459,1,二人っきり,ふたりっきり,[n],[just the two of them]
 460,1,鍔,つば,[n],"[guard on sword, polearms, etc., flange, brim, visor (e.g. of a hat)]"
 461,1,ＰＰ,ピーピー,[n],"[producer's price, PP, polypropylene, PP]"
 462,1,震い,ふるい,[n],"[shaking, ague, trembling, shivering]"
-463,,-,まんずり,[n],[masturbation (female)]
+463,1,-,まんずり,[n],[masturbation (female)]
 464,1,居合道,いあいどう,[n],[iaido (art of drawing the Japanese sword)]
 465,1,-,こりゃ,[exp],"[hey there, I say, see here]"
 466,1,天子,てんし,[n],"[emperor, ruler (with a heavenly mandate), heavenly being, celestial being]"
@@ -475,8 +475,8 @@
 489,,改行,かいぎょう,"[n, vs]","[new line, new paragraph, newline (e.g. LF, CR, CRLF)]"
 490,1,出稿,しゅっこう,"[n, vs]","[placing (an ad), submission of advertising copy, sending a manuscript for printing]"
 491,1,楷書体,かいしょたい,[n],[square (block) style of printed typeface]
-493,,お手手,おてて,[n],"[hand, hands]"
-494,,蛮語,ばんご,[n],[language of the barbarians]
+493,1,お手手,おてて,[n],"[hand, hands]"
+494,1,蛮語,ばんご,[n],[language of the barbarians]
 495,1,副長,ふくちょう,[n],"[deputy head, deputy director, vice chief (of something), executive officer (navy)]"
 496,1,台辞,だいじ,[n],"[words, one's lines]"
 497,1,-,コーラングレ,[n],"[cor anglais, English horn]"
@@ -512,7 +512,7 @@
 528,1,-,コードモーフィングソフトウェア,[n],[code morphing software]
 529,1,-,こりこり,"[adv, adv-to, vs]","[crisp (like a pickle), crunchy, firm (musculature), stiff (shoulders, neck, etc.)]"
 530,1,無糖,むとう,"[n, adj-no]","[sugarless, unsweetened]"
-531,,友引,ともびき,[n],[good day for business and lawsuits (trial day)]
+531,1,友引,ともびき,[n],[good day for business and lawsuits (trial day)]
 532,1,平温,へいおん,[n],[the usual temperature]
 533,1,-,ワーキングホリデー,[n],[working holiday]
 534,1,麦酒,ばくしゅ,[n],[beer]
@@ -542,7 +542,7 @@
 560,1,手刀,てがたな,[n],[hand used like a sword in striking]
 561,1,入刀,にゅうとう,"[n, vs]",[cutting the cake (at a wedding)]
 562,1,-,ドードー,[n],[dodo (Raphus cucullatus)]
-563,,袿,うちき,[n],[Heian period court clothing]
+563,1,袿,うちき,[n],[Heian period court clothing]
 564,1,袷,あわせ,[n],[lined kimono]
 565,1,三つまた,みつまた,"[n, adj-no]","[three-pronged fork, trident]"
 566,1,三百代言,さんびゃくだいげん,[n],"[pettifogging lawyer, unscrupulous or unethical lawyer, shyster, casuist, sophist]"
@@ -566,7 +566,7 @@
 584,1,施肥,せひ,"[n, vs]","[manuring, fertilization, fertilisation]"
 585,1,炊夫,すいふ,[n],[male cook]
 586,1,同大,どうだい,[n],"[something of the same size, the said university]"
-587,,-,トラックトレーラー,[n],"[truck trailer, semi truck, tractor trailer]"
+587,1,-,トラックトレーラー,[n],"[truck trailer, semi truck, tractor trailer]"
 588,1,-,シャモ,[n],[non-Ainu Japanese]
 589,1,口気,こうき,[n],"[bad breath, intimation]"
 590,1,開襟,かいきん,"[n, vs, adj-no]",[open-necked (shirt)]
@@ -594,7 +594,7 @@
 614,1,原意,げんい,[n],[original meaning]
 615,1,定性,ていせい,[n],"[qualitative, stability of a substance]"
 616,1,番衆,ばんしゅう,[n],"[guard (of a daimyo, emperor, etc.)]"
-617,,-,コモンキャリア,[n],[common carrier]
+617,1,-,コモンキャリア,[n],[common carrier]
 618,1,たけり立つ,たけりたつ,"[v5t, vi]","[to rage, to howl]"
 619,1,法体,ほったい,[n],"[clerical appearance, appearance of a priest, teachings of Buddha, condition of the universe at creation, in the pure land teachings, the name of Amitabha, or prayers to Amitabha, investiture of a Buddhist priest]"
 622,1,三大,さんだい,[pref],[the big three ...]
@@ -627,8 +627,8 @@
 649,1,復唱,ふくしょう,"[n, vs]","[recital, repetition, rehearsal, repeating an order]"
 650,1,拙い,つたない,[adj-i],"[poor-quality, shoddy, crude, unskillful, inexpert, maladroit, inept, foolish, clumsy, unlucky]"
 651,1,苦しい時の神頼み,くるしいときのかみだのみ,[exp],"[danger past, God forgotten]"
-652,,健児,けんじ,[n],[stalwart youth]
-653,,-,ノースリーブ,[adj-no],[sleeveless]
+652,1,健児,けんじ,[n],[stalwart youth]
+653,1,-,ノースリーブ,[adj-no],[sleeveless]
 654,1,-,ボードゲーム,[n],[board game]
 655,1,乙夜,いつや,[n],[second division of the night (approx. 9 pm to 11 pm)]
 656,1,不言,ふげん,[n],[silence]
@@ -660,11 +660,11 @@
 684,1,殷,いん,[n],[Yin Dynasty (of China)]
 685,1,付設,ふせつ,"[n, vs]","[annex, affiliated structure or institute]"
 686,1,女院,にょういん,[n],"[woman bestowed with the title ""in"" (usu. the empress, imperial princesses, etc.)]"
-688,,正副,せいふく,[n],"[original and copy, chief and vice-chief]"
+688,1,正副,せいふく,[n],"[original and copy, chief and vice-chief]"
 689,1,長月,ながつき,[n],[ninth month of the lunar calendar]
-690,,女子高校,じょしこうこう,[n],[girls' high school]
+690,1,女子高校,じょしこうこう,[n],[girls' high school]
 692,1,就職活動,しゅうしょくかつどう,[n],"[job hunting, job searching]"
-693,,途切れ途切れ,とぎれとぎれ,"[adj-na, adj-no, adv]","[broken, intermittent, disconnected]"
+693,1,途切れ途切れ,とぎれとぎれ,"[adj-na, adj-no, adv]","[broken, intermittent, disconnected]"
 694,1,持てはやす,もてはやす,"[v5s, vt]","[to praise extravagantly, to lionize, to lionise, to make much of]"
 695,1,-,キレる,"[v1, vi]","[to get angry, to snap, to blow one's top, to lose one's temper, to flip]"
 696,1,大才,たいさい,[n],[great talent]
@@ -688,7 +688,7 @@
 715,1,賢察,けんさつ,"[n, vs]",[discernment]
 716,1,御社,おんしゃ,[n],"[your company, your shrine]"
 717,1,発疹,はっしん,"[n, vs]","[rash, eruption]"
-718,,薪水,しんすい,[n],"[fuel and water, firewood and water, gathering firewood and drawing water, kitchen work, housework]"
+718,1,薪水,しんすい,[n],"[fuel and water, firewood and water, gathering firewood and drawing water, kitchen work, housework]"
 720,1,責め立てる,せめたてる,"[v1, vt]","[to torture severely, to urge]"
 721,1,乳歯,にゅうし,[n],"[milk (baby) tooth, first set of teeth]"
 722,1,未然形,みぜんけい,[n],[imperfective form]
