@@ -112,20 +112,15 @@ public class Validator {
 
 			KanaWord currentKanaAsKanaAsKanaWord = null;
 			
-			try {
-				currentKanaAsKanaAsKanaWord = kanaHelper.convertKanaStringIntoKanaWord(kana,
-						kanaCache, false);
+			if (polishJapaneseEntry.getWordType() != WordType.HIRAGANA_EXCEPTION && polishJapaneseEntry.getWordType() != WordType.KATAKANA_EXCEPTION) {
 				
-			} catch (Exception e) {
-				if (polishJapaneseEntry.getWordType() != WordType.HIRAGANA_EXCEPTION && polishJapaneseEntry.getWordType() != WordType.KATAKANA_EXCEPTION) {
-					throw new RuntimeException(polishJapaneseEntry.getId() + ": " + e);
+				try {
+					currentKanaAsKanaAsKanaWord = kanaHelper.convertKanaStringIntoKanaWord(kana, kanaCache, false);
 					
-				} else {
-					continue;
+				} catch (Exception e) {
+					throw new RuntimeException(polishJapaneseEntry.getId() + ": " + e);
 				}
-			}
-
-			String currentKanaAsRomaji = kanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
+			}			
 
 			KanaWord kanaWord = createKanaWord(kanaHelper, currentRomajiWithPrefix, polishJapaneseEntry.getWordType(),
 					hiraganaCache, katakanaCache);
@@ -171,6 +166,8 @@ public class Validator {
 
 			if (polishJapaneseEntry.getWordType() != WordType.HIRAGANA_EXCEPTION && polishJapaneseEntry.getWordType() != WordType.KATAKANA_EXCEPTION) {
 
+				String currentKanaAsRomaji = kanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
+				
 				// is hiragana word
 				KanaWord currentKanaAsRomajiAsHiraganaWord = kanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache,
 						currentKanaAsRomaji);
