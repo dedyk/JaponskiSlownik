@@ -1,5 +1,9 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.Map;
+
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 
 public class Test5 {
 
@@ -108,11 +112,22 @@ public class Test5 {
 		System.out.println(uniquePolishTranslatesHashSet.size());
 		*/
 		
+		/*
 		String a = "\u305b\u304d";
 		String b = "\u3059\u308b";
 		
 		System.out.println(a + " - " + a.hashCode());
 		System.out.println(b + " - " + b.hashCode());
+		*/
+		
+		KanaHelper kanaHelper = new KanaHelper();
+		
+		final Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
+		
+		String lhsRomaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(
+				"ー", kanaCache, true));
+		
+		System.out.println(lhsRomaji);
 	}
 	
 	/*
