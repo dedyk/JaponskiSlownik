@@ -111,9 +111,9 @@
 111,,お嬢,おじょう,[n],[(someone else's) daughter]
 112,,御内,おうち,[n],"[home, your home, your group, their home]"
 113,1,お気に,おきに,[n],"[favorite, favourite, pet]"
-114,,お父,おとう,[n],"[daddy, father, husband]"
+114,1,お父,おとう,[n],"[daddy, father, husband]"
 115,1,お疲れ,おつかれ,"[int, n, adj-no]","[thanks (e.g. for coming, helping, etc.), glad you could make it, tiredness, fatigue]"
-116,,お目,おめ,[n],"[eye, eyes, sight, vision, looking]"
+116,1,お目,おめ,[n],"[eye, eyes, sight, vision, looking]"
 117,,お祭り,おまつり,[n],"[festival, feast, carnival]"
 118,,お蔭様,おかげさま,[n],"[(somebody's) backing, assistance, thanks to (somebody)]"
 119,,お話,おはなし,[n],"[story, tale]"
@@ -129,7 +129,7 @@
 129,1,和気,わき,[n],[harmonious atmosphere]
 130,1,歌妓,かぎ,[n],"[woman who earns her living by entertaining with song, dance and playing the shamisen, geisha who sings at parties]"
 131,,佳句,かく,[n],[beautiful passage of literature]
-132,,斯く,かく,"[adv, adj-no]","[like this, such, thus, in this way]"
+132,1,斯く,かく,"[adv, adj-no]","[like this, such, thus, in this way]"
 133,,膈,かく,[n],"[diaphragm, vicinity of the diaphragm]"
 134,,舁く,かく,"[v5k, vt]","[to carry on one's shoulders (esp. of two or more people carrying a palanquin, etc.)]"
 135,,隠れ,かくれ,"[n-pref, n]","[hidden, concealed, unknown, crypto-, passing away, dying, death]"
@@ -512,7 +512,7 @@
 512,1,胴囲,どうい,[n],"[waist, girth, measurement around waist]"
 513,1,-,どちらか,[n],"[either, one (of the two)]"
 514,,-,どら,"[n-pref, n, int]","[loafing, indolent, lazy, debauched, profligate, hey]"
-515,,-,でら,[adv],"[very, awfully, exceedingly]"
+515,1,-,でら,[adv],"[very, awfully, exceedingly]"
 516,,無いと,ないと,[exp],"[have to (verb), must (verb), is indispensable, absolutely necessary]"
 517,,梛,なぎ,[n],"[nagi (species of conifer, Nageia nagi)]"
 518,,水葱,なぎ,[n],[Monochoria korsakowii (species of flowering plant)]
@@ -723,7 +723,7 @@
 723,,-,インコース,[n],"[inside track, inside pitch]"
 724,1,-,インプレー,[n],[in play (ball)]
 725,,-,ゲートイン,"[n, vs]",[entering the starting gate]
-726,,-,シーズンイン,[n],[start of a season (e.g. soccer)]
+726,1,-,シーズンイン,[n],[start of a season (e.g. soccer)]
 727,,-,シフトイン,[n],"[shift in, SI]"
 728,,-,スネークイン,[n],[sneak in]
 729,,-,ズームイン,[n],[zoom in]
@@ -1055,7 +1055,7 @@
 1055,1,-,カートレイン,[n],"[car train, train carrying both passengers and vehicles]"
 1056,,-,カーヒーター,[n],[car heater]
 1057,,-,カーライフ,[n],[car life]
-1058,,-,カーラジオ,[n],[car radio]
+1058,1,-,カーラジオ,[n],[car radio]
 1059,1,-,カーリース,[n],[car lease]
 1060,,-,カスタムカー,[n],"[customized car, customised car]"
 1061,1,-,クラシックカー,[n],[classic car]
@@ -1109,7 +1109,7 @@
 1109,,-,カーテンリング,[n],[curtain ring]
 1110,,-,カーテンレール,[n],[curtain rail]
 1111,1,-,ガスクロマトグラフィー,[n],[gas chromatography]
-1112,,-,ガスステーション,[n],[gas station]
+1112,1,-,ガスステーション,[n],[gas station]
 1113,,-,ガスマット,[n],[aluminum-foil burner liner]
 1114,,-,フレオンガス,[n],[Freon gas]
 1115,1,-,プロパンガス,[n],[propane gas]
@@ -1367,7 +1367,7 @@
 1367,,-,パーソナルコール,[n],[personal call]
 1368,1,-,パーソンコール,[n],[person call]
 1369,,-,プロシジャコール,[n],[procedure call]
-1370,,-,モーニングコール,[n],[wake-up call]
+1370,1,-,モーニングコール,[n],[wake-up call]
 1371,1,-,ナースコール,[n],"[nurse call, a patient's call button in a hospital]"
 1372,,-,コールオプション,[n],[call option]
 1373,,-,ワンコール,[n],"[one mobile telephone ring (used by companies, usually sex-related, to register a phone number on a mobile in the hope people will return the call)]"
@@ -2210,7 +2210,7 @@
 2210,,-,ケースバイケース,[exp],[case-by-case]
 2211,,-,ツーバイフォー,[n],[two-by-four (e.g. method)]
 2212,1,-,バイリニアフィルタリング,[n],[bilinear filtering]
-2213,,-,フライバイワイヤー,[n],[fly-by-wire]
+2213,1,-,フライバイワイヤー,[n],[fly-by-wire]
 2214,,-,スタンドバイクレジット,[n],[standby credit]
 2215,,-,システムバス,[n],[system bus]
 2216,,-,スクールバス,[n],[school bus]
@@ -2516,7 +2516,7 @@
 2516,,-,フリーウエイト,[n],[free weights (i.e. weights lined up on the side wall of a gym)]
 2517,,-,バリアフリー,"[n, adj-no]",[impediment removal]
 2518,1,-,フリーフライヤー,[n],[experimental unmanned spacecraft]
-2519,,-,フリーダイビング,[n],"[freediving, free-diving, skin diving]"
+2519,1,-,フリーダイビング,[n],"[freediving, free-diving, skin diving]"
 2520,,-,フリーペーパー,[n],[newspaper with a lot of advertisements and delivered for free of charge]
 2521,1,-,ハンズフリー,"[n, adj-no]",[hands-free (e.g. telephone)]
 2522,,-,ジェンダーフリー,[adj-f],[gender equality]
@@ -3305,7 +3305,7 @@
 3305,,大聖,だいしょう,[n],"[Buddha, high-ranked bodhisattva]"
 3306,1,大阪,おおさか,[n],"[Osaka, large hill]"
 3307,1,大阪,おおざか,[],[large hill]
-3308,,大震,たいしん,[n],"[violent earthquake, severe earthquake]"
+3308,1,大震,たいしん,[n],"[violent earthquake, severe earthquake]"
 3309,,大風,おおかぜ,[n],"[gale, strong wind, high wind]"
 3310,,大風,おおふう,"[adj-na, n]","[arrogant, haughty, calm, placid]"
 3311,,大風呂敷,おおぶろしき,[n],"[large furoshiki, big talk, vain boasting or bluster, blowing one's own trumpet, rodomontade]"
@@ -3378,7 +3378,7 @@
 3378,,巫山戯,ふざけ,"[n, adj-pn]","[play, sport, romp, frolic, joke, prank]"
 3379,1,差し上げ,さしあげ,"[n, vs]",[carrying a portable shrine with arms stretched out (i.e. without shouldering it)]
 3380,,差延,さえん,[n],[différance]
-3381,,市町,しちょう,[n],[cities and towns]
+3381,1,市町,しちょう,[n],[cities and towns]
 3382,1,希ガス,きガス,"[n, exp]","[noble gas, inert gas, I get the feeling that, I think that]"
 3383,1,稀ガス,きガス,[n],"[noble gas, inert gas]"
 3384,1,帯状,おびじょう,"[n, adj-no]",[belt-shaped]
@@ -3940,7 +3940,7 @@
 3940,,起死,きし,[n],[saving from the brink of death]
 3941,,起毛,きもう,[n],[nap raising]
 3942,1,超低,ちょうてい,"[adj-no, pref]","[very low (deep, cold, etc.), ultra-, infra-, hyper-]"
-3943,,足し,たし,[n],[top up (e.g. a little bit to remedy an insufficiency)]
+3943,1,足し,たし,[n],[top up (e.g. a little bit to remedy an insufficiency)]
 3944,,途切れ,とぎれ,[n],"[break, pause, interruption, intermission]"
 3945,,途絶え,とだえ,[n],"[pause, intermission, break, interruption, suspension]"
 3946,1,蹌踉,そうろう,"[adj-t, adv-to]","[tottering, staggering, reeling]"
@@ -4195,7 +4195,7 @@
 4195,,交換所,こうかんじょ,[n],[clearing house]
 4196,,交換嬢,こうかんじょう,[n],[telephone operator]
 4197,,後臼歯,こうきゅうし,[n],[molar]
-4198,,口供書,こうきょうしょ,[n],"[affidavit, deposition]"
+4198,1,口供書,こうきょうしょ,[n],"[affidavit, deposition]"
 4199,,向光性,こうこうせい,[n],[heliotropism]
 4200,,侯爵夫人,こうしゃくふじん,[n],[marchioness]
 4201,1,考証学,こうしょうがく,[n],[(in Chinese history) study of ancient texts]
@@ -4255,7 +4255,7 @@
 4255,,小学部,しょうがくぶ,[n],"[elementary school (esp. the elementary school section of a school that also encompasses other grades), primary school]"
 4256,,正客,しょうきゃく,[n],"[guest of honor, guest of honour]"
 4257,,消却,しょうきゃく,"[n, vs]","[erasure, paying back debt, effacement]"
-4258,,掌客,しょうきゃく,[n],[court official in charge of entertaining important guests]
+4258,1,掌客,しょうきゃく,[n],[court official in charge of entertaining important guests]
 4259,,承久,しょうきゅう,[n],"[Shoukyuu era, Joukyuu era (1219.4.12-1222.4.13)]"
 4260,1,小丘,しょうきゅう,[n],"[hillock, small hill, knoll, hummock]"
 4261,,小球,しょうきゅう,[n],"[small ball, globule, spherule, pellet]"
@@ -4337,7 +4337,7 @@
 4337,,女性性,じょせいせい,[n],[femininity]
 4338,,人工島,じんこうとう,[n],"[artificial island, man-made island]"
 4339,,水上機,すいじょうき,[n],"[hydroplane, seaplane]"
-4340,,相撲を取る,すもうをとる,"[exp, v5r]","[to wrestle with, to contest an issue, to take part in sumo]"
+4340,1,相撲を取る,すもうをとる,"[exp, v5r]","[to wrestle with, to contest an issue, to take part in sumo]"
 4341,1,製靴業,せいかぎょう,[n],[the shoemaking industry]
 4342,,製鋼所,せいこうじょ,[n],"[steelworks, steel mill, steelmaking plant]"
 4343,,生合成,せいごうせい,"[n, vs]",[biosynthesis]
@@ -4628,7 +4628,7 @@
 4628,,-,アーティフィシャルインテリジェンス,[n],[artificial intelligence]
 4629,,-,インテリジェンステスト,[n],[intelligence test]
 4630,,-,タイムインテリジェンス,[n],[time intelligence]
-4631,,-,インテリジェントシティー,[n],[intelligent city]
+4631,1,-,インテリジェントシティー,[n],[intelligent city]
 4632,,-,インテリジェントターミナル,[n],[intelligent terminal]
 4633,1,-,インテリジェントデザイン,[n],[intelligent design (theory that life or the universe must have been designed by an intelligent being)]
 4634,,-,インテリジェントケーブル,[n],[intelligent cable]
@@ -4670,7 +4670,7 @@
 4670,,-,インフォメーションレボリューション,[n],[information revolution]
 4671,,-,インフォメーションテクノロジー,[n],"[information technology, IT]"
 4672,,-,インフォメーションセンター,[n],"[information kiosk, information centre]"
-4673,,-,インフォメーションスーパーハイウェイ,[n],[information superhighway]
+4673,1,-,インフォメーションスーパーハイウェイ,[n],[information superhighway]
 4674,,-,インフラストラクチャモード,[n],[infrastructure mode]
 4675,,-,インフルエンザワクチン,[n],"[flu vaccine, influenza vaccine]"
 4676,,-,ウィークエンドハウス,[n],[weekend house]
@@ -4913,7 +4913,7 @@
 4913,,-,マスコミュニケーション,[n],"[mass communication, the media, mass collaboration, e.g. Wikipedia]"
 4914,,-,カスタムコミュニケーション,[n],"[customized communication, customised communication]"
 4915,,-,リスクコミュニケーション,[n],[risk communication]
-4916,,-,コミュニケーションサーバー,[n],[communication server]
+4916,1,-,コミュニケーションサーバー,[n],[communication server]
 4917,,-,コミュニケーションシステム,[n],[communication system]
 4918,,-,コミュニケーショングッズ,[n],[well-chosen gifts (with a positive message)]
 4919,,-,コミュニティーカレッジ,[n],"[junior college, community college]"
@@ -5137,7 +5137,7 @@
 5137,1,-,ベースジャンプ,[n],[BASE jumping]
 5138,,-,ビデオジャーナリスト,[n],[video journalist]
 5139,,-,イエロージャーナリズム,[n],[yellow journalism]
-5140,,-,ブラックジャーナリズム,[n],[black journalism]
+5140,1,-,ブラックジャーナリズム,[n],[black journalism]
 5141,,瑞典,スウェーデン,[n],[Sweden]
 5142,,-,スウェーデンリレー,[n],[Swedish relay]
 5143,,-,スクランブルレース,[n],[scramble race]
@@ -5322,7 +5322,7 @@
 5322,,ＤＶＤ,ディーブイディー,[n],"[digital versatile disc, DVD]"
 5323,,ＨＤＤＶＤ,エッチディーディーブイディー,[n],"[high-definition digital versatile disc (HD DVD, high-definition DVD)]"
 5324,,-,デコレーションケーキ,[n],"[decorated cake, fancy cake]"
-5325,,-,インテリアデコレーション,[n],[interior decoration]
+5325,1,-,インテリアデコレーション,[n],[interior decoration]
 5326,,-,デコレーションチャリンコ,[n],"[bicycle custom-fitted with an ornate, box-shaped body, art bike]"
 5327,,-,デコレーショントラック,[n],"[showily decorated truck (e.g. chrome, air-brushed pictures, colored lights), art truck]"
 5328,1,-,マスデモクラシー,[n],[mass democracy]
@@ -5340,7 +5340,7 @@
 5340,1,-,トランジスターグラマー,[n],"[transistor glamour, transistor glamor]"
 5341,,-,バイポーラートランジスター,[n],[bipolar transistor]
 5342,,-,スカルプトリートメント,[n],[scalp treatment]
-5343,,-,ボディートリートメント,[n],[body treatment]
+5343,1,-,ボディートリートメント,[n],[body treatment]
 5344,,-,アサーティブネストレーニング,[n],[assertiveness training]
 5345,,-,インターバルトレーニング,[n],[interval training]
 5346,1,-,ウエートトレーニング,[n],[weight training]
@@ -5452,7 +5452,7 @@
 5452,,-,バックグラウンドジョブ,[n],[background job]
 5453,,-,キャンパスバックボーン,[n],[campus backbone]
 5454,,-,マルチキャストバックボーン,[n],[multicast backbone (Mbone)]
-5455,,-,トスバッティング,[n],[pepper game]
+5455,1,-,トスバッティング,[n],[pepper game]
 5456,,-,バッティングアベレージ,[n],[batting average]
 5457,,-,バッティングオーダー,[n],[batting order]
 5458,,-,バッティングケージ,[n],[batting cage]
@@ -5826,7 +5826,7 @@
 5826,,-,け,[prt],[particle indicating that the speaker is trying to recall some information]
 5827,,罫,けい,[n],"[line, rule]"
 5828,,偈,げ,[n],[gatha (poetic verse of a scripture)]
-5829,,濃,こ,[pref],"[dark, thick]"
+5829,1,濃,こ,[pref],"[dark, thick]"
 5830,,胡,こ,[n],[barbarian tribes surrounding ancient China]
 5831,,仔,こ,"[n, n-suf]",[young (animal)]
 5832,,誤,ご,"[n, n-pref]","[mistake, error]"
@@ -6018,7 +6018,7 @@
 6018,1,蹴爪,けづめ,[n],"[fetlock (horse, etc.), spur (chicken, etc.), cockspur, dewclaw (dog, etc.)]"
 6019,,蹲,つくばい,[n],[stone wash basin found in Japanese gardens]
 6020,,軟,なん,"[adj-t, adv-to]",[soft]
-6021,,転,くるり,"[adv, adv-to, n]","[turning around (once), suddenly, abruptly, completely (wrapped in something), quickly (unwrapping something), beautiful, round (eyes), flail (for threshing grain)]"
+6021,1,転,くるり,"[adv, adv-to, n]","[turning around (once), suddenly, abruptly, completely (wrapped in something), quickly (unwrapping something), beautiful, round (eyes), flail (for threshing grain)]"
 6022,,轟,とどろ,[adv],[roaring]
 6023,,速,そく,"[suf, ctr]","[gear, speed (e.g. 4-speed transmission)]"
 6024,,醜,しゅう,[n],[ugliness]

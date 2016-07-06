@@ -780,7 +780,9 @@ public class Helper {
 		
 		polishJapaneseEntry.setAttributeList(new AttributeList());
 		
-		polishJapaneseEntry.setWordType(getWordType(kana));
+		WordType wordType = getWordType(kana);
+		
+		polishJapaneseEntry.setWordType(wordType);
 		
 		polishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
 		
@@ -839,6 +841,12 @@ public class Helper {
 	    if (additionalInfoList != null && additionalInfoList.size() > 0) {
 		    additionalInfoSb.append(Utils.convertListToString(additionalInfoList));
 		    additionalInfoSb.append("\n");
+	    }
+	    
+	    if (	(wordType == WordType.KATAKANA || wordType == WordType.KATAKANA_EXCEPTION) &&
+	    		translateList2.size() == 1) {
+	    	
+	    	additionalInfoSb.append("ang: " + translateList2.get(0));	    	
 	    }
 		
 		polishJapaneseEntry.setInfo(additionalInfoSb.toString());		
