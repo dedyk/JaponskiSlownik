@@ -97,7 +97,7 @@
 97,,お手,おて,"[n, int]","[hand, arm, handwriting, penmanship, 'shake' (command to have a dog place its paw in your hand)]"
 98,,御伽,おとぎ,[n],"[attending (upon), keeping another company]"
 99,,小野,おの,[n],"[plain, field]"
-100,,御櫃,おひつ,[n],"[round, wooden container for cooked rice]"
+100,1,御櫃,おひつ,[n],"[round, wooden container for cooked rice]"
 101,,-,おみ,[n],"[miso (usu. said by housewives), miso soup]"
 102,,澱,おり,[n],"[dregs, lees, grounds, sediment]"
 103,,汚吏,おり,[n],[corrupt official]
@@ -239,7 +239,7 @@
 239,1,挙止,きょし,[n],"[bearing, deportment]"
 240,1,鋸歯,きょし,[n],"[teeth of a saw, serration]"
 241,1,拒止,きょし,"[n, vs]",[refusal]
-242,,挙示,きょし,"[n, vs]","[assignment, citation]"
+242,1,挙示,きょし,"[n, vs]","[assignment, citation]"
 243,1,句意,くい,[n],[meaning of phrase]
 244,1,食い,くい,[n],"[eating, bite (in fishing)]"
 245,,句義,くぎ,[n],[meaning of a phrase]
@@ -740,7 +740,7 @@
 740,,-,インディーズ,[n],"[indies, independent film or music]"
 741,,-,ランクイン,"[n, vs]","[placing in a list (top ten, popularity, sales, etc.)]"
 742,1,-,キーイン,[n],[key in]
-743,,-,スワップイン,[n],[swapped in]
+743,1,-,スワップイン,[n],[swapped in]
 744,1,-,タイプイン,"[n, vs]",[type in]
 745,,-,ロールイン,"[n, vs]",[roll in]
 746,1,-,インキー,[vs],[shutting yourself out of your car with the key left inside]
@@ -1224,7 +1224,7 @@
 1224,1,-,キーボードリセット,[n],[keyboard reset]
 1225,,-,キーボードロック,[n],[keyboard lock]
 1226,,-,サンプリングキーボード,[n],[sampling keyboard]
-1227,,-,ソフトウェアキーボード,[n],[software keyboard]
+1227,1,-,ソフトウェアキーボード,[n],[software keyboard]
 1228,1,-,アコースティックギター,[n],[acoustic guitar]
 1229,,-,ギターアンプ,[n],[guitar amplifier]
 1230,,-,ギターシンセ,[n],"[guitar synthesizer, guitar synthesiser]"
@@ -1305,7 +1305,7 @@
 1305,1,-,フェアコピー,[n],[fair copy]
 1306,,-,キャッチコピー,[n],[large text that appears in ads or brochures to catch the reader's attention (in copywriting)]
 1307,,-,コピーワンス,[n],[copy once (regulation)]
-1308,,-,コピーコントロール,[n],[copy control]
+1308,1,-,コピーコントロール,[n],[copy control]
 1309,,-,コピーアンドペースト,[n],[copy and paste]
 1310,,-,コピープログラム,[n],[copy program]
 1311,,-,コピープロテクション,[n],[copy protection]
@@ -1324,7 +1324,7 @@
 1324,,-,コンクリートジャングル,[n],[concrete jungle]
 1325,,-,コンクリートパイル,[n],[concrete pile]
 1326,1,-,コンクリートブロック,[n],[concrete block]
-1327,,-,コンクリートミキサー,[n],[concrete mixer]
+1327,1,-,コンクリートミキサー,[n],[concrete mixer]
 1328,,-,アスファルトコンクリート,[n],[asphalt concrete]
 1329,,-,コンクリートバイブレーター,[n],[concrete vibrator]
 1330,,-,ファイバーコンクリート,[n],[fiber concrete]
@@ -1384,7 +1384,7 @@
 1384,1,-,ラブコール,[n],"[love call, calling out to someone with love or good will, phone call to a loved one, fervent request, heartfelt appeal, passionate call to action]"
 1385,,-,ロールコール,[n],[roll call]
 1386,,-,コール・ド・バレエ,[n],[corps de ballet]
-1387,,-,リモートプロシージャコール,[n],[remote procedure call (rpc)]
+1387,1,-,リモートプロシージャコール,[n],[remote procedure call (rpc)]
 1388,1,-,ゴミステーション,[n],[garbage collection point]
 1389,,-,イソプレンゴム,[n],[isoprene rubber]
 1390,,-,ウレタンゴム,[n],[polyurethane rubber]
@@ -1554,7 +1554,7 @@
 1554,1,-,シーバス,[n],[C Bus]
 1555,,-,シーモンキー,[n],[Sea-Monkeys (trademarked variant of brine shrimp)]
 1556,1,-,シーアンカー,[n],[sea anchor]
-1557,,-,シーグリーン,[n],[sea green]
+1557,1,-,シーグリーン,[n],[sea green]
 1558,,-,シーサーペント,[n],[sea serpent]
 1559,,-,シーパワー,[n],[sea power]
 1560,,-,リーフィーシードラゴン,[n],[leafy sea dragon (Phycodurus eques)]
@@ -1860,7 +1860,7 @@
 1860,1,-,テレビガイド,[n],"[TV guide, television guide]"
 1861,,-,テレビショー,[n],[TV show]
 1862,,-,インタラクティブテレビ,[n],[interactive television]
-1863,,-,テレビパソコン,[n],[PC using a TV as a monitor]
+1863,1,-,テレビパソコン,[n],[PC using a TV as a monitor]
 1864,,-,ローカルテレビ,[n],[local television]
 1865,,-,テレビスクリーン,[n],"[television screen, TV screen, telescreen]"
 1866,,-,テレビスタジオ,[n],"[television studio, TV studio]"
@@ -2443,7 +2443,7 @@
 2443,,-,ドライビール,[n],[dry beer]
 2444,,-,ボックビール,[n],[bock beer]
 2445,1,-,クラフトビール,[n],"[microbrew beer, craft beer, boutique beer]"
-2446,,-,ピア,[n],[peer]
+2446,1,-,ピア,[n],[peer]
 2447,,-,ピアグループ,[n],[peer group]
 2448,,-,ピアシステム,[n],[peer system]
 2449,,-,ピアグループリーダ,[n],[peer group leader]
@@ -2716,7 +2716,7 @@
 2716,,-,ポケ,[n],[poke (Hawaiian raw-fish salad)]
 2717,,-,アウトポケット,[n],"[outside pocket, patch pocket]"
 2718,1,-,エアポケット,[n],[air pocket]
-2719,,-,サイドポケット,[n],[side pocket]
+2719,1,-,サイドポケット,[n],[side pocket]
 2720,,-,ポケットコンピューター,[n],"[pocket computer, pocket PC]"
 2721,1,-,ポケット・チーフ,[n],[pocket square (decorative handkerchief used as an accessory to a suit)]
 2722,,-,フットポケット,[n],[foot pocket portion of a diving fin]
@@ -2990,7 +2990,7 @@
 2990,,-,ワンテンポ,[n],[one beat]
 2991,1,-,ワンクッション,[n],[action taken to soften the impact of something]
 2992,,-,ワンメーター,[n],"[(within) basic fare (of a taxi meter, without being charged for mileage)]"
-2993,,-,ワンペア,[n],[one pair (poker)]
+2993,1,-,ワンペア,[n],[one pair (poker)]
 2994,,-,ワンフロア,[n],"[one floor (of a building), single floor]"
 2995,,-,ワンオペレーション,[n],[staffing a retail outlet with one person]
 2996,,-,ワンラインダイヤグラム,[n],[one-line diagram]
@@ -3255,7 +3255,7 @@
 3255,,呈す,ていす,"[v5s, vt]","[to present, to offer, to give, to show, to display, to exhibit, to assume (e.g. a shape)]"
 3256,,呉越,ごえつ,[n],"[Go-Etsu, two rival states in ancient China]"
 3257,1,周縁,しゅうえん,"[n, adj-no]","[fringe, rim]"
-3258,,味噌すり,みそすり,[n],"[grinding miso, flattery, flatterer, monk]"
+3258,1,味噌すり,みそすり,[n],"[grinding miso, flattery, flatterer, monk]"
 3259,,呼起,こき,"[n, vs]","[recollection, something called to mind]"
 3260,,咄嗟,とっさ,"[n, adj-no]","[moment, instant]"
 3261,,咎め,とがめ,[n],"[blame, censure, rebuke, reproof]"
@@ -3837,7 +3837,7 @@
 3837,,脱脂,だっし,"[n, vs]",[removal of fat]
 3838,,腫れ,はれ,[n],"[swelling, boil]"
 3839,,腐れ,くされ,"[n, pref]","[rotting, spoiling, decaying, corroding, rotten, worthless, paltry, contemptible]"
-3840,,腐植,ふしょく,"[n, adj-no]",[humus]
+3840,1,腐植,ふしょく,"[n, adj-no]",[humus]
 3841,1,腕立,うでたて,"[n, vs]",[push-up]
 3842,,腹膜,ふくまく,"[n, adj-no]",[peritoneum]
 3843,,膝窩,しっか,"[n, adj-no]","[popliteal fossa, popliteal space, area behind the knee]"
@@ -4258,7 +4258,7 @@
 4258,1,掌客,しょうきゃく,[n],[court official in charge of entertaining important guests]
 4259,,承久,しょうきゅう,[n],"[Shoukyuu era, Joukyuu era (1219.4.12-1222.4.13)]"
 4260,1,小丘,しょうきゅう,[n],"[hillock, small hill, knoll, hummock]"
-4261,,小球,しょうきゅう,[n],"[small ball, globule, spherule, pellet]"
+4261,1,小球,しょうきゅう,[n],"[small ball, globule, spherule, pellet]"
 4262,1,小臼歯,しょうきゅうし,[n],[premolar (tooth)]
 4263,,商況,しょうきょう,[n],[business conditions]
 4264,,正慶,しょうきょう,[n],"[Shoukyou era, Shoukei era (of the Northern Court) (1332.4.28-1333.5.?)]"
@@ -4533,14 +4533,14 @@
 4533,,-,キラーアプリケーション,[n],"[""killer"" application]"
 4534,,-,コンソールアプリケーション,[n],[console application]
 4535,,-,データベースアプリケーション,[n],[database application]
-4536,,-,ヘルパーアプリケーション,[n],[helper application]
+4536,1,-,ヘルパーアプリケーション,[n],[helper application]
 4537,,-,アプリケーションインターフェース,[n],[application interface]
 4538,1,-,アプリケーションエンジニア,[n],[application systems engineer]
 4539,1,-,アプリケーションフレームワーク,[n],[application framework]
 4540,,-,アプリケーションシステム,[n],[application system]
 4541,,-,アプリケーションテクノロジ,[n],[application technology]
 4542,,-,アプリケーションノート,[n],[application note]
-4543,,-,アプリケーションフォーマット,[n],[disk formatting]
+4543,1,-,アプリケーションフォーマット,[n],[disk formatting]
 4544,,-,アプリケーションプロトコル,[n],[application protocol]
 4545,1,-,ウェブアプリケーション,[n],[web application]
 4546,,-,アプリケーションプログラミングインタフェース,[n],"[application programming interface, API]"
@@ -4940,7 +4940,7 @@
 4940,,-,コンチネンタルスタイル,[n],[continental style]
 4941,,-,コンチネンタルタンゴ,[n],[continental tango]
 4942,,-,コンチネンタルブレックファースト,[n],[continental breakfast]
-4943,,-,コンチネンタルプラン,[n],[continental plan]
+4943,1,-,コンチネンタルプラン,[n],[continental plan]
 4944,1,-,コンチネンタルルック,[n],[continental look]
 4945,1,-,ブラックコンテンポラリー,[n],"[black contemporary (music), contemporary soul music]"
 4946,,-,トップコンディション,[n],[top condition]
@@ -5072,7 +5072,7 @@
 5072,,-,バーチャルコーポレーション,[n],"[virtual corporation, VC]"
 5073,,-,コーポレート,[adj-f],[corporate]
 5074,,-,コーポレートガバナンス,[n],[corporate governance]
-5075,,-,コーポレートバンキング,[n],[corporate banking]
+5075,1,-,コーポレートバンキング,[n],[corporate banking]
 5076,,-,コーポレートライセンス,[n],[corporate license]
 5077,,-,ルーブ・ゴールドバーグ・マシン,[n],[Rube Goldberg machine]
 5078,,-,サイクリングコース,[n],[cycling course]
@@ -5113,7 +5113,7 @@
 5113,,-,デジタルシンセサイザー,[n],[digital synthesizer]
 5114,,-,アイソレーションシンドローム,[n],[isolation syndrome]
 5115,,-,メタボリックシンドローム,[n],[metabolic syndrome]
-5116,,-,クラッシュシンドローム,[n],[crush syndrome]
+5116,1,-,クラッシュシンドローム,[n],[crush syndrome]
 5117,,-,チャイナシンドローム,[n],[China syndrome]
 5118,,-,ホワイトシンドローム,[n],[white syndrome (coral disease)]
 5119,,-,エンプティーネストシンドローム,[n],[empty nest syndrome]
@@ -5185,7 +5185,7 @@
 5185,,-,セキュリティリスク,[n],[security risk]
 5186,,-,セキュリティログ,[n],[security log]
 5187,,-,ナショナルセキュリティー,[n],[national security]
-5188,,-,アジェンダセッティング,[n],[agenda setting]
+5188,1,-,アジェンダセッティング,[n],[agenda setting]
 5189,,-,ファインセラミックス,[n],[fine ceramics]
 5190,,-,ナチュラルセレクション,[n],[natural selection]
 5191,,-,ポートフォリオセレクション,[n],[portfolio selection]
@@ -5538,7 +5538,7 @@
 5538,,-,フォーミュラプラン,[n],[formula plan]
 5539,,-,ショットガンフォーメーション,[n],[shotgun formation]
 5540,1,-,タッチフットボール,[n],[touch football]
-5541,,-,フランクフルトソーセージ,[n],"[frankfurter, frank]"
+5541,1,-,フランクフルトソーセージ,[n],"[frankfurter, frank]"
 5542,,-,フランチャイズチェーン,[n],"[franchise chain, FC]"
 5543,,-,フレキシブルディスク,[n],"[flexible disk, floppy disk]"
 5544,,-,フレキシブルバック,[n],[flexible back]
@@ -5876,7 +5876,7 @@
 5876,,兎馬,うさぎうま,[n],[donkey]
 5877,,絽,ろ,"[n, adj-no]",[silk gauze (esp. used in light clothing for high summer)]
 5878,,-,ゝ,[n],[repetition mark in hiragana]
-5879,,-,アカペラ,[n],"[a cappella, unaccompanied choir or choral work]"
+5879,1,-,アカペラ,[n],"[a cappella, unaccompanied choir or choral work]"
 5880,,-,アプリオリ,[adj-na],[a priori]
 5881,,-,アテンポ,[exp],[a tempo]
 5882,,-,アラモード,[n],[a la mode]
@@ -5894,7 +5894,7 @@
 5894,,-,ト,[n],"[7th in a sequence denoted by the iroha system, 7th note in the diatonic scale (used in key names, etc.)]"
 5895,,-,ド,[n],"[doh, do, 1st note in the tonic solfa representation of the diatonic scale]"
 5896,,-,ブッシュ・ド・ノエル,[n],"[bûche de Noël, Yule log (cake)]"
-5897,,-,クルドサック,[n],[cul-de-sac]
+5897,1,-,クルドサック,[n],[cul-de-sac]
 5898,,-,ニ,[n],"[4th in a sequence denoted by the iroha system, 4th note in the diatonic scale (used in key names, etc.)]"
 5899,,-,ハ,[n],"[third in a sequence denoted by the iroha system, third note in the diatonic scale (used in key names, etc.)]"
 5900,,-,パ,[n],"[pas (dancing step), Pakistan, Pacific League]"
@@ -5954,7 +5954,7 @@
 5954,,提,ひさげ,[n],[ceremonial sake decanter with a spout and semicircular handle]
 5955,,撓わ,たわわ,[adj-na],"[(of a branch heavily laden with fruit, etc.) drooping, bending]"
 5956,,撥,ばち,[n],"[plectrum, pick, drumstick for Japanese drums (e.g. taiko)]"
-5957,,撰,せん,"[n, n-suf]","[anthology (of poetry, etc.), compilation, collection, selection]"
+5957,1,撰,せん,"[n, n-suf]","[anthology (of poetry, etc.), compilation, collection, selection]"
 5958,,擬,ぎ,[pref],"[pseudo-, quasi-]"
 5959,1,敬,けい,[n],"[reverence, respect]"
 5960,,於て,おいて,[conj],"[at, in, on]"
