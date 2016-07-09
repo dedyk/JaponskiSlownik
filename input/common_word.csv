@@ -115,7 +115,7 @@
 115,1,お疲れ,おつかれ,"[int, n, adj-no]","[thanks (e.g. for coming, helping, etc.), glad you could make it, tiredness, fatigue]"
 116,1,お目,おめ,[n],"[eye, eyes, sight, vision, looking]"
 117,,お祭り,おまつり,[n],"[festival, feast, carnival]"
-118,,お蔭様,おかげさま,[n],"[(somebody's) backing, assistance, thanks to (somebody)]"
+118,1,お蔭様,おかげさま,[n],"[(somebody's) backing, assistance, thanks to (somebody)]"
 119,,お話,おはなし,[n],"[story, tale]"
 120,,御釜,おかま,[n],"[pot, volcanic crater, (one's) buttocks, male homosexual, effeminate man, male transvestite]"
 121,,改,かい,[n-suf],[revision]
@@ -573,7 +573,7 @@
 573,1,葺く,ふく,"[v5k, vt]","[to roof (a house with some material), to thatch, to shingle, to tile]"
 574,,-,ふさ,"[adv, adj-na]",[plenty]
 575,,普茶,ふちゃ,[n],[entertaining people by serving tea (esp. in the Obaku school of Zen)]
-576,,付す,ふす,"[v5s, vt]","[to affix, to append, to attach, to entrust, to refer, to handle (as such), to follow (the leader), to submit (a document, etc.)]"
+576,1,付す,ふす,"[v5s, vt]","[to affix, to append, to attach, to entrust, to refer, to handle (as such), to follow (the leader), to submit (a document, etc.)]"
 577,,補す,ふす,[v5s],"[to appoint, to designate]"
 578,1,俯す,ふす,[vs-c],"[to lower (one's head, gaze, etc.)]"
 579,,臥す,ふす,"[v5s, vi]",[to lie down (in bed)]
@@ -857,7 +857,7 @@
 857,1,-,オートセーブ,[n],[auto save]
 858,1,-,オートダイヤル,[n],[auto dial]
 859,1,-,オートトランスフォーマー,[n],[auto transformer]
-860,,-,オートリトラクト,[n],[auto retract]
+860,1,-,オートリトラクト,[n],[auto retract]
 861,1,-,オートログイン,[n],"[auto login, auto-login]"
 862,1,-,オートウォーク,[n],[moving walkway]
 863,,-,オートパワーオフ,[n],[auto power off]
@@ -913,7 +913,7 @@
 913,,-,オープンキッチン,[n],[open kitchen]
 914,1,-,オープンカフェ,[n],"[pavement cafe, sidewalk cafe, open-air cafe]"
 915,1,-,オープンジョー,[n],[open-jaw (ticket)]
-916,,-,オープンデーティングシステム,[n],[open-dating system]
+916,1,-,オープンデーティングシステム,[n],[open-dating system]
 917,1,-,オープンマーケットオペレーション,[n],[open market operation]
 918,1,-,オープンリールテープ,[n],[open-reel tape]
 919,,-,オープンウオーターダイバー,[n],[open water diver]
@@ -1192,7 +1192,7 @@
 1192,1,-,キーフィーチャ,[n],[key feature]
 1193,1,-,キーフィールド,[n],[key field]
 1194,,-,キーフレーム,[n],[key frame]
-1195,,-,キーマクロ,[n],[key macro]
+1195,1,-,キーマクロ,[n],[key macro]
 1196,,-,キーリカバリー,[n],[key recovery]
 1197,,-,キーリピート,[n],[key repeat]
 1198,,-,キーリング,[n],[key ring (encryption)]
@@ -1215,7 +1215,7 @@
 1215,,-,キーパーソン,[n],[key person]
 1216,,-,キーツール,[n],[important tool]
 1217,,-,カーソルコントロールキー,[n],[cursor control key]
-1218,,-,パワーオンキー,[n],[power-on key]
+1218,1,-,パワーオンキー,[n],[power-on key]
 1219,1,-,プログラムファンクションキー,[n],"[program function key, PF key]"
 1220,,-,キーボードバッファ,[n],[keyboard buffer]
 1221,,-,キーボードパスワード,[n],[keyboard password]
@@ -1356,7 +1356,7 @@
 1356,,-,ソリュブルコーヒー,[n],[soluble coffee]
 1357,,-,ジャワコーヒー,[n],[Java coffee]
 1358,1,-,コーヒーゼリー,[n],"[coffee jelly, coffee jello, gelled sweetened coffee dessert]"
-1359,,-,コールガール,[n],[call girl]
+1359,1,-,コールガール,[n],[call girl]
 1360,1,-,コールサイン,[n],[call sign]
 1361,,-,コールタール,[n],[coal tar]
 1362,,-,コールブローカー,[n],[call broker]
@@ -1733,7 +1733,7 @@
 1733,,-,ソーシャルセキュリティー,[n],[social security]
 1734,,-,ソーシャルワーク,[n],[social work]
 1735,,-,ソーシャルアクション,[n],[social action]
-1736,,-,ソーシャルコスト,[n],[social cost]
+1736,1,-,ソーシャルコスト,[n],[social cost]
 1737,1,-,ソーシャルエコロジー,[n],[social ecology]
 1738,,-,ソーシャルスキル,[n],[social skill]
 1739,,-,ソーシャルダンピング,[n],[social dumping]
@@ -1762,7 +1762,7 @@
 1762,,-,コンポーネントタイプ,[n],[component type]
 1763,1,-,データタイプ,[n],[data type]
 1764,,-,デーライトタイプ,[n],[daylight type]
-1765,,-,ニュータイプ,[n],[new type]
+1765,1,-,ニュータイプ,[n],[new type]
 1766,,-,タイプミス,[n],"[typographical error, typo]"
 1767,,-,ジャケットタイプ,[n],"[jacket type (e.g. a style of clothing), jacket-style buoyancy control device (BCD) shaped like a sleeveless coat]"
 1768,1,-,ベストタイプ,[n],[best type]
@@ -1901,7 +1901,7 @@
 1901,1,-,イメージデータ,[n],[image data]
 1902,1,-,システムデータ,[n],[system data]
 1903,,-,テキストデータ,[n],[character data]
-1904,,-,データインスタンス,[n],[data instance]
+1904,1,-,データインスタンス,[n],[data instance]
 1905,,-,データインタフェース,[n],[data interface]
 1906,,-,データインテンシブ,[n],[data intensive]
 1907,,-,データインベントリ,[n],[data inventory]
@@ -2318,7 +2318,7 @@
 2318,,-,ボーディングパス,[n],[boarding pass]
 2319,,-,ロングパス,[n],[long pass]
 2320,,-,スクリーンパス,[n],[screen pass]
-2321,,-,トライアングルパス,[n],[triangle pass]
+2321,1,-,トライアングルパス,[n],[triangle pass]
 2322,,-,チェストパス,[n],[chest pass]
 2323,1,-,クリティカルパス,[n],[critical path]
 2324,,-,パスレシーバー,[n],[pass receiver]
@@ -2682,7 +2682,7 @@
 2682,,-,ネットボール,[n],[net ball]
 2683,1,-,ビーンボール,[n],[bean ball]
 2684,1,-,ファンシーボール,[n],[fancy ball]
-2685,,-,フィンガーボール,[n],[finger bowl]
+2685,1,-,フィンガーボール,[n],[finger bowl]
 2686,,-,フェードボール,[n],[fade ball]
 2687,,-,フックボール,[n],[hook bowl]
 2688,1,-,ボールベアリング,[n],[ball bearing]
@@ -2900,7 +2900,7 @@
 2900,,-,レモンバター,[n],[lemon butter]
 2901,,-,レモンピール,[n],[lemon peel]
 2902,,-,レモンバーム,[n],"[lemon balm (Melissa officinalis), sweet balm]"
-2903,,-,コスメチックレンズ,[n],[cosmetic lens]
+2903,1,-,コスメチックレンズ,[n],[cosmetic lens]
 2904,,-,コンバージョンレンズ,[n],[conversion lens]
 2905,,-,コンバーターレンズ,[n],[converter lens]
 2906,,-,マクロレンズ,[n],[macro lens]
@@ -3741,7 +3741,7 @@
 3741,,省エネ,しょうエネ,[n],"[energy conservation, economical use of energy]"
 3742,1,看取,かんしゅ,"[n, vs]","[seeing through, perceiving, noticing, getting wind of]"
 3743,,看破,かんぱ,"[n, vs]","[penetration, see through, fathom, reading another's thoughts]"
-3744,,着す,じゃくす,"[vs-c, vi]","[to insist on, to cling to, to adhere to]"
+3744,1,着す,じゃくす,"[vs-c, vi]","[to insist on, to cling to, to adhere to]"
 3745,1,着呼,ちゃっこ,[n],[incoming call]
 3746,,着心,きごころ,[n],[feeling of clothes]
 3747,,知らない,しらない,[adj-i],"[unknown, strange, I don't care, I don't know and I feel nothing]"
@@ -3788,7 +3788,7 @@
 3788,,第二次,だいにじ,[n],[the second ...]
 3789,,管弦,かんげん,[n],"[wind and string instruments, music]"
 3790,,篤志,とくし,"[adj-na, n, adj-no]","[charity, benevolence]"
-3791,,精一,せいいつ,"[adj-na, n]",[purity]
+3791,1,精一,せいいつ,"[adj-na, n]",[purity]
 3792,,精神医学,せいしんいがく,"[n, adj-no]",[psychiatry]
 3793,,糖尿,とうにょう,[n],"[glycosuria, glucosuria, urine sugar]"
 3794,,糞ゲー,くそゲー,[n],"[shit video game, embarrassingly bad video game]"
@@ -3931,12 +3931,12 @@
 3931,,貴公,きこう,"[pn, adj-no]",[you (primarily used by males when addressing their male equals or inferiors)]
 3932,1,買い換え,かいかえ,[n],"[buying a replacement, replacing by buying something new]"
 3933,,貼付け,はりつけ,[n],[paste]
-3934,,貼付,ちょうふ,"[n, vs]","[pasting, sticking, attaching, affixing, appending]"
+3934,1,貼付,ちょうふ,"[n, vs]","[pasting, sticking, attaching, affixing, appending]"
 3935,,資す,しす,"[v5s, vi]","[to contribute, to play a part in, to have a hand in, to finance]"
 3936,,赤外,せきがい,"[adj-na, adj-no]",[infrared]
 3937,,赤茶,あかちゃ,[n],[reddish brown]
 3938,,赤血,せっけつ,[n],[red blood]
-3939,,起居,ききょ,"[n, vs]","[behavior, behaviour, one's daily life]"
+3939,1,起居,ききょ,"[n, vs]","[behavior, behaviour, one's daily life]"
 3940,,起死,きし,[n],[saving from the brink of death]
 3941,,起毛,きもう,[n],[nap raising]
 3942,1,超低,ちょうてい,"[adj-no, pref]","[very low (deep, cold, etc.), ultra-, infra-, hyper-]"
@@ -4124,7 +4124,7 @@
 4124,,外交的,がいこうてき,[adj-na],[diplomatic]
 4125,,学習書,がくしゅうしょ,[n],"[book for learners, study book]"
 4126,,旗章学,きしょうがく,[n],[vexillology]
-4127,,休肝日,きゅうかんび,[n],"[teetotal day, day off drinking, liver rest day]"
+4127,1,休肝日,きゅうかんび,[n],"[teetotal day, day off drinking, liver rest day]"
 4128,1,休館日,きゅうかんび,[n],"[day on which a museum, etc. is regularly closed, closed day]"
 4129,,-,きゅうきゅう,"[adj-na, adv, n]",[squeak]
 4130,,汲々,きゅうきゅう,"[adj-t, adv-to]","[diligent, absorbed (in something)]"
@@ -4811,7 +4811,7 @@
 4811,1,-,ナショナルキャラクター,[n],[national character]
 4812,,-,キャラクターコード,[n],[character code]
 4813,,-,アニメキャラクター,[n],"[cartoon characters, anime characters]"
-4814,,-,キャラクターゲーム,[n],"[computer game using characters from manga, anime, etc.]"
+4814,1,-,キャラクターゲーム,[n],"[computer game using characters from manga, anime, etc.]"
 4815,,-,アドキャラクター,[n],[advertising character]
 4816,,-,キャラクターデザイン,[n],[character design]
 4817,,-,プレイヤーキャラクター,[n],"[player character, PC]"
@@ -4922,7 +4922,7 @@
 4922,,-,コミュニティーペーパー,[n],[community paper]
 4923,,-,コミュニティーメディア,[n],[community media]
 4924,,-,コミュニティーオーガニゼーション,[n],[community organization]
-4925,,-,スタンプコレクション,[n],[stamp collection]
+4925,1,-,スタンプコレクション,[n],[stamp collection]
 4926,,-,ガベジコレクション,[n],[garbage collection]
 4927,,-,クリップコレクション,[n],[clip collection]
 4928,,-,ファイルコレクション,[n],[file collection]
@@ -5004,7 +5004,7 @@
 5004,,-,コンピュータウイルス,[n],[computer virus]
 5005,1,-,コンピュータソフトウェア,[n],[computer software]
 5006,,-,コンピュータマニア,[n],[hacker]
-5007,,-,パーソナルコンピュータ,[n],"[personal computer, PC]"
+5007,1,-,パーソナルコンピュータ,[n],"[personal computer, PC]"
 5008,,-,ダイビングコンピュータ,[n],[dive computer]
 5009,,-,コンピューターサイエンス,[n],[computer science]
 5010,,-,コンピュータリテラシー,[n],[computer literacy]
@@ -5186,7 +5186,7 @@
 5186,,-,セキュリティログ,[n],[security log]
 5187,,-,ナショナルセキュリティー,[n],[national security]
 5188,1,-,アジェンダセッティング,[n],[agenda setting]
-5189,,-,ファインセラミックス,[n],[fine ceramics]
+5189,1,-,ファインセラミックス,[n],[fine ceramics]
 5190,,-,ナチュラルセレクション,[n],[natural selection]
 5191,,-,ポートフォリオセレクション,[n],[portfolio selection]
 5192,,-,セーフティー,[n],[safety]
@@ -5424,7 +5424,7 @@
 5424,1,-,ハイブリッドディスク,[n],[hybrid disk]
 5425,,-,ヘッドハンティング,[n],"[head-hunting, recruiting professionals from other companies]"
 5426,1,-,バーゲンハンティング,[n],[bargain hunting]
-5427,,-,ロケーションハンティング,[n],"[location scouting, location scout]"
+5427,1,-,ロケーションハンティング,[n],"[location scouting, location scout]"
 5428,,-,ストーンハンティング,[n],[collecting rocks and mineral specimens (as a hobby)]
 5429,1,-,ハンディキャップレース,[n],[handicap race]
 5430,,-,ハードウェアエラー,[n],[hardware error]
@@ -5632,7 +5632,7 @@
 5632,,-,マネジメントサイクル,[n],[management cycle]
 5633,,-,エアーマネジメント,[n],[air management]
 5634,,-,マネジメントシステム,[n],[management system]
-5635,,-,ナレッジマネジメント,[n],[knowledge management]
+5635,1,-,ナレッジマネジメント,[n],[knowledge management]
 5636,,-,コストマネジメント,[n],[cost management]
 5637,,-,リスクマネジメント,[n],[risk management]
 5638,,-,トップマネジメント,[n],[top management]
@@ -5746,7 +5746,7 @@
 5746,1,-,レクリエーションセンター,[n],[recreation center]
 5747,,-,アフターレコーディング,[n],"[adding sounds to a soundtrack after a film has been made, postrecording, postsynchronization, postsynchronisation, postlooping, dubbing]"
 5748,,-,レコーディングスタジオ,[n],[recording studio]
-5749,,-,レコーディングダイエット,[n],[weight-loss diet accompanied by meticulous notes about when and what one has eaten]
+5749,1,-,レコーディングダイエット,[n],[weight-loss diet accompanied by meticulous notes about when and what one has eaten]
 5750,,-,デジタルレコーディング,[n],[digital recording]
 5751,,-,レセプションルーム,[n],[reception room]
 5752,,-,レパートリーシステム,[n],[repertory system]
