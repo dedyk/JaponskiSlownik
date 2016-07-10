@@ -81,7 +81,7 @@
 81,1,凰,おう,[n],[huang (female Chinese firebird)]
 82,,-,おお,[int],"[oh!, good heavens!, ugh! oh no!, ah!, agh!, the penny drops!]"
 83,1,墺,おう,"[n, n-pref, n-suf]",[Austria]
-84,,唖,おし,[n],"[muteness, speech impairment, mute, deaf-mute]"
+84,1,唖,おし,[n],"[muteness, speech impairment, mute, deaf-mute]"
 85,,唖,あ,[n],"[muteness, speech impairment]"
 86,1,奥旨,おうし,[n],"[deep truth, deep knowledge]"
 87,,横死,おうし,"[n, vs]","[violent (tragic or accidental) death, dog's death]"
@@ -137,7 +137,7 @@
 137,1,駆け,かけ,[n],"[canter, gallop]"
 138,1,水夫,すいふ,[n],"[sailor, seaman]"
 139,,鹿子,かこ,[n],"[deer, fawn]"
-140,,か具,かこ,[n],[metal buckle]
+140,1,か具,かこ,[n],[metal buckle]
 141,,下行,かこう,"[adj-na, n]",[descending]
 142,,佳肴,かこう,[n],"[delicacy, rare treat, good-eating fish]"
 143,,歌稿,かこう,[n],[manuscript of poem]
@@ -281,7 +281,7 @@
 281,1,虎児,こじ,[n],[tiger cub]
 282,,火箸,こじ,[n],[tongs (esp. for incense or for use in a Buddhist temple)]
 283,,濾す,こす,"[v5s, vt]","[to filter, to strain]"
-284,,鼓す,こす,[v5s],"[to beat (a drum), to pluck up courage]"
+284,1,鼓す,こす,[v5s],"[to beat (a drum), to pluck up courage]"
 285,,擦り,こすり,[n],"[rubbing, scrubbing, scraping]"
 286,,鯒,こち,[n],"[flathead (esp. the bartailed flathead, Platycephalus indicus)]"
 287,,故知,こち,[n],[the wisdom of the ancients]
@@ -362,7 +362,7 @@
 362,,勝,しょう,"[n, suf, ctr]","[win, victory, beautiful scenery, scenic spot, counter for wins]"
 363,,鍾,しょう,[n],[round bronze jar used for storing alcohol (Han dynasty China)]
 364,,小我,しょうが,[n],"[the self, the ego]"
-365,,小雅,しょうが,[n],[minor festal song (subgenre of the Shi Jing)]
+365,1,小雅,しょうが,[n],[minor festal song (subgenre of the Shi Jing)]
 366,1,召致,しょうち,"[n, vs]",[calling together]
 367,1,勝地,しょうち,[n],"[beauty spot, scenic spot]"
 368,,小知,しょうち,[n],"[superficial knowledge, shallow wisdom, small fief]"
@@ -419,7 +419,7 @@
 419,,-,それ,[int],[there! (used to call someone's attention to something)]
 420,1,其れと,それと,[conj],"[and then, even so, and]"
 421,,胼胝,たこ,"[n, adj-no]","[callus, callosity, corn]"
-422,,ただ事,ただごと,[n],[trivial matter]
+422,1,ただ事,ただごと,[n],[trivial matter]
 423,1,裁ち,たち,[n],"[cutting, cut]"
 424,,立て,たて,"[pref, suf, ctr]","[central, main, head, chief, just (done), freshly (baked), indicates activity only just occurred, counter for consecutive losses]"
 425,,建て,たて,"[n, n-suf, n-pref]","[contract, commitment]"
@@ -475,7 +475,7 @@
 475,,天花,てんか,[n],[snow]
 476,1,転科,てんか,"[n, vs]",[changing one's academic course]
 477,1,転訛,てんか,"[n, vs]","[corruption, bastardisation]"
-478,,天干,てんかん,[n],[celestial stems (10 signs of the Chinese calendar)]
+478,1,天干,てんかん,[n],[celestial stems (10 signs of the Chinese calendar)]
 479,,天官,てんかん,[n],[Ministry of State (Zhou-dynasty China)]
 480,,天冠,てんかん,[n],"[imperial coronation crown, celestial crown, crown worn by Buddha and celestial beings]"
 481,,奠都,てんと,"[n, vs]",[transferring the capital]
@@ -725,7 +725,7 @@
 725,,-,ゲートイン,"[n, vs]",[entering the starting gate]
 726,1,-,シーズンイン,[n],[start of a season (e.g. soccer)]
 727,,-,シフトイン,[n],"[shift in, SI]"
-728,,-,スネークイン,[n],[sneak in]
+728,1,-,スネークイン,[n],[sneak in]
 729,,-,ズームイン,[n],[zoom in]
 730,,-,ネットイン,[n],"[net in (tennis), netball falling in]"
 731,1,-,ピットイン,"[n, vs]",[pit stop]
@@ -1318,7 +1318,7 @@
 1318,,-,コルレーニョ,[n],[col legno]
 1319,,-,コンロッド,[n],"[connecting rod (automotive), con-rod]"
 1320,,-,コンモート,[n],[con moto]
-1321,,-,コンマン,[n],[con man]
+1321,1,-,コンマン,[n],[con man]
 1322,,-,コンク,[adj-f],[concentrated]
 1323,,-,コンクリ,[n],[concrete]
 1324,,-,コンクリートジャングル,[n],[concrete jungle]
@@ -1487,7 +1487,7 @@
 1487,,-,サービスプロバイダ,[n],[service provider]
 1488,,-,サービスルーチン,[n],"[utility routine, service routine]"
 1489,,-,ソケットサービス,[n],[socket services]
-1490,,-,ダイヤルインサービス,[n],[dial-in service]
+1490,1,-,ダイヤルインサービス,[n],[dial-in service]
 1491,,-,データグラムサービス,[n],[datagram service]
 1492,,-,ディレクトリサービス,[n],[directory service]
 1493,,-,デビットカードサービス,[n],[debit card service]
@@ -1646,7 +1646,7 @@
 1646,,-,マリンスポーツ,[n],[marine sports]
 1647,,-,ニュースポーツ,[n],[new sports]
 1648,1,-,シーズンスポーツ,[n],[season sports]
-1649,,-,マージナルスポーツ,[n],[marginal sports]
+1649,1,-,マージナルスポーツ,[n],[marginal sports]
 1650,,-,スポーツシャツ,[n],"[sports shirt, sport shirt]"
 1651,,-,スポーツバッグ,[n],[sports bag]
 1652,,-,スポーツジム,[n],"[sports gym, gymnasium]"
@@ -1958,7 +1958,7 @@
 1958,,-,トランスポート,[n],[transport]
 1959,1,-,トランペットスカート,[n],[trumpet skirt]
 1960,1,-,トランペットウィンソック,[n],[Trumpet Winsock]
-1961,,-,トル,[n],"[torr, to delete (editor's mark)]"
+1961,1,-,トル,[n],"[torr, to delete (editor's mark)]"
 1962,,-,オスマントルコ,[n],[Ottoman Turkey]
 1963,,-,トロッコ,[n],"[rail car (esp. a small one used in mines, etc.), trolley]"
 1964,,-,アコーディオンドア,[n],[accordion door]
@@ -2085,7 +2085,7 @@
 2085,,-,ノーパーキング,[n],[No parking]
 2086,,-,ノーフロスト,"[n, adj-no]","[self-defrosting equipment (freezer, refrigerator, etc.)]"
 2087,1,-,ノーブランド,[n],"[off-brand, generic (goods)]"
-2088,,-,ノープレー,[n],[no play]
+2088,1,-,ノープレー,[n],[no play]
 2089,1,-,ノースリーブ,[adj-no],[sleeveless]
 2090,,-,ノーストッキング,"[exp, adj-no]","[without stockings, stockingless]"
 2091,1,-,ノーヒント,[n],[no hint (e.g. quiz questions where no clues are given)]
@@ -2310,7 +2310,7 @@
 2310,,-,シーズンパス,[n],[season pass]
 2311,,-,クリッピングパス,[n],[clipping path]
 2312,,-,サーチパス,[n],[search path]
-2313,,-,バーチャルパス,[n],[virtual path]
+2313,1,-,バーチャルパス,[n],[virtual path]
 2314,,-,パスオーバーヘッド,[n],[path overhead]
 2315,,-,パスフレーズ,[n],[pass phrase]
 2316,,-,パスプレフィックス,[n],[path prefix]
@@ -2637,7 +2637,7 @@
 2637,,-,フェルトペン,[n],"[felt pen, felt-tip pen, fiber-tip pen]"
 2638,,-,ペンパル,[n],[pen pal]
 2639,,-,ライトペン,[n],[light pen]
-2640,,-,ペンタブレット,[n],[pen tablet]
+2640,1,-,ペンタブレット,[n],[pen tablet]
 2641,,-,デジタルペン,[n],[digital pen]
 2642,,-,スタイラスペン,[n],[stylus pen]
 2643,,-,タブレットペン,[n],[tablet pen]
@@ -2795,7 +2795,7 @@
 2795,,-,インナーライフ,[n],[inner life]
 2796,1,-,ジャズライフ,[n],[jazz life]
 2797,1,-,ライフサイエンス,[n],[life science]
-2798,,-,ライフサイクル,[n],[life cycle]
+2798,1,-,ライフサイクル,[n],[life cycle]
 2799,,-,ライフジャケット,[n],"[life jacket, life vest]"
 2800,,-,ライフベスト,[n],"[life vest, life jacket]"
 2801,,-,ライフステージ,[n],[life stage]
@@ -2888,7 +2888,7 @@
 2888,1,-,レコードコンサート,[n],[record concert]
 2889,1,-,オフザレコード,[n],[off the record]
 2890,,-,マスタブートレコード,[n],"[master boot record, MBR]"
-2891,,-,レック,[n],"[lek (communal ground used by birds in mating season), lekking]"
+2891,1,-,レック,[n],"[lek (communal ground used by birds in mating season), lekking]"
 2892,,-,レック・ダイブ,[n],[wreck dive]
 2893,,-,レック・ダイビング,[n],[wreck diving]
 2894,1,-,レビ,[n],"[levee, levy]"
@@ -4746,7 +4746,7 @@
 4746,,-,マルチタスクオペレーティングシステム,[n],[multitasking operating system]
 4747,,-,オリエンタルショートヘア,[n],[Oriental shorthair (cat breed)]
 4748,,-,オリエンタルロングヘア,[n],[oriental longhair]
-4749,,-,オリエンタルバタフライフィッシュ,[n],"[Oriental butterflyfish (Chaetodon auripes, species found mostly from Japan to Taiwan)]"
+4749,1,-,オリエンタルバタフライフィッシュ,[n],"[Oriental butterflyfish (Chaetodon auripes, species found mostly from Japan to Taiwan)]"
 4750,,-,オリンピックパーク,[n],[Olympic Park]
 4751,1,-,オリンピックイヤー,[n],[Olympic year]
 4752,,-,オリンピックコングレス,[n],[Olympic Congress]
@@ -4973,7 +4973,7 @@
 4973,,-,コントロールパネル,[n],[control panel]
 4974,,-,コントロールファイル,[n],[control file]
 4975,,-,コントロールブレーク,[n],[control break]
-4976,,-,コントロールメッセージ,[n],[control message]
+4976,1,-,コントロールメッセージ,[n],[control message]
 4977,,-,フローコントロール,[n],[flow control]
 4978,1,-,アクセスコントロール,[n],[access control]
 4979,,-,コントロールセンター,[n],"[control center, control centre]"
@@ -4990,7 +4990,7 @@
 4990,,-,コンパニオンプラント,[n],[companion plant]
 4991,,-,コンパニオンアニマル,[n],"[companion animal, pet]"
 4992,,-,イベントコンパニオン,[n],"[promotional model (e.g. at a trade show), booth babe]"
-4993,,-,コンパニオンプランツ,[n],[companion plant]
+4993,1,-,コンパニオンプランツ,[n],[companion plant]
 4994,,-,レディズコンパニオン,[n],"[lady's companion (paid female companion of a wealthy or high-ranking woman, esp. in Victorian England)]"
 4995,,-,スーパーコンパニオン,[n],[female escort]
 4996,,-,キーストーンコンビネーション,[n],[keystone combination]
@@ -5204,7 +5204,7 @@
 5204,1,-,アドインソフトウェア,[n],[add-in software]
 5205,,-,ウィンドウソフトウェア,[n],[windowing software]
 5206,,-,オーサリングソフトウェア,[n],[authoring software]
-5207,,-,オープンソースソフトウェア,[n],[open source software]
+5207,1,-,オープンソースソフトウェア,[n],[open source software]
 5208,,-,オンラインソフトウェア,[n],[online software]
 5209,,-,カスタムソフトウェア,[n],[custom software]
 5210,,-,キャンドソフトウェア,[n],[canned software]
@@ -5331,7 +5331,7 @@
 5331,,-,ゴールデントライアングル,[n],"[Golden Triangle (area near the borders of Burma, Thailand and Laos)]"
 5332,,-,スンニ・トライアングル,[n],"[Sunni Triangle (area of Iraq bounded by Baghdad, Ramadi and Tikrit)]"
 5333,,-,トラフィックビルダー,[n],[traffic builder]
-5334,,-,トラフィックシェーピング,[n],[traffic shaping]
+5334,1,-,トラフィックシェーピング,[n],[traffic shaping]
 5335,,-,トラフィックパディング,[n],[traffic padding]
 5336,,-,トラフィックパラメータ,[n],[traffic parameter]
 5337,,-,トラフィックフロー,[n],[traffic flow]
@@ -5414,7 +5414,7 @@
 5414,1,-,ネットワークファイルシステム,[n],"[Network File System, NFS]"
 5415,1,-,ネットワークプロトコルアナライザ,[n],[network protocol analyzer]
 5416,,-,パーソナルエリアネットワーク,[n],[Personal Area Network]
-5417,,-,メトロポリタンエリアネットワーク,[n],"[Metropolitan Area Network, MAN]"
+5417,1,-,メトロポリタンエリアネットワーク,[n],"[Metropolitan Area Network, MAN]"
 5418,,-,ワイドエリアネットワーク,[n],"[wide area network, WAN]"
 5419,,ノイマン型,ノイマンがた,[n],[Neumann-type (computer)]
 5420,,-,ノルディックコンバインド,[n],[Nordic combined (skiing event)]
@@ -5562,7 +5562,7 @@
 5562,,-,プラスチックタイル,[n],[plastic tile]
 5563,,-,オーサリングプラットフォーム,[n],[authoring platform]
 5564,1,-,プロダクトプランニング,[n],[product planning]
-5565,,-,ファイナンシャルプランニング,[n],[financial planning]
+5565,1,-,ファイナンシャルプランニング,[n],[financial planning]
 5566,,-,キャパシティプランニング,[n],[capacity planning]
 5567,,-,デスクトッププレゼンテーション,[n],[desktop presentation]
 5568,1,-,プレゼンテーションコンテキスト,[n],[presentation context]
@@ -5589,7 +5589,7 @@
 5589,,-,プロジェクトマネージャー,[n],[project manager]
 5590,1,-,フードプロセッサー,[n],[food processor]
 5591,,-,フロントエンドプロセッサ,[n],"[front-end processor, FEP]"
-5592,,-,ランゲージプロセッサー,[n],[language processor]
+5592,1,-,ランゲージプロセッサー,[n],[language processor]
 5593,,-,ワードプロセッサ,[n],[word processor]
 5594,,-,アウトラインプロセッサ,[n],[outline processor]
 5595,,-,アレイプロセッサー,[n],[array processor]
@@ -5720,7 +5720,7 @@
 5720,,-,スリーブロッチド・ラビットフィッシュ,[n],"[threeblotched rabbitfish (Siganus trispilos, species of rabbitfish from the eastern Indian Ocean)]"
 5721,,-,スモールアイ・ラビットフィッシュ,[n],"[smalleyed rabbitfish (Hydrolagus affinis), Atlantic chimaera, deepwater chimaera]"
 5722,,-,イエローテール・スターリー・ラビットフィッシュ,[n],"[brown-spotted spinefoot (Siganus stellatus, species of rabbitfish from the Indian Ocean), starspotted spinefoot, tellate rabbitfish, yellow-tail starry rabbitfish]"
-5723,,-,ランディングゾーン,[n],"[landing zone, LZ]"
+5723,1,-,ランディングゾーン,[n],"[landing zone, LZ]"
 5724,1,-,ランディングギア,[n],[landing gear]
 5725,,-,リアルタイムシステム,[n],[real-time system]
 5726,,-,リアルタイムクロック,[n],[real-time clock]
