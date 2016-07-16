@@ -15,6 +15,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
@@ -216,7 +217,7 @@ public class WordGenerator {
 				List<PolishJapaneseEntry> notFoundJishoFoundWordList = new ArrayList<PolishJapaneseEntry>();
 				List<String> notFoundJishoFoundWordSearchList = new ArrayList<String>();
 				
-				int counter = 0;
+				AtomicInteger counter = new AtomicInteger();
 				
 				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
 				
@@ -232,8 +233,6 @@ public class WordGenerator {
 						continue;
 					}
 					
-					counter++;
-
 					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
 
 					ScoreDoc[] scoreDocs = searcher.search(query, null, 10).scoreDocs;
@@ -272,10 +271,12 @@ public class WordGenerator {
 								
 								GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
 								
-								CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counter, currentMissingWord);
+								int counterValue = counter.incrementAndGet();
 								
+								CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counterValue, currentMissingWord);
+																
 								PolishJapaneseEntry polishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;
-								CommonWord commonWord = Helper.convertGroupEntryToCommonWord(counter, groupEntry);					
+								CommonWord commonWord = Helper.convertGroupEntryToCommonWord(counterValue, groupEntry);					
 								
 								if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
 									
@@ -291,7 +292,9 @@ public class WordGenerator {
 						
 					} else {
 						
-						PolishJapaneseEntry polishJapaneseEntry = Helper.createEmptyPolishJapaneseEntry(currentMissingWord, counter);
+						int counterValue = counter.incrementAndGet();
+						
+						PolishJapaneseEntry polishJapaneseEntry = Helper.createEmptyPolishJapaneseEntry(currentMissingWord, counterValue);
 												
 						boolean wordExistsInJishoOrg = false;
 						
