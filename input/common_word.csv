@@ -943,7 +943,7 @@
 943,1,-,レーザーカット,[n],"[razor cut, laser cutting, lasing]"
 944,1,-,ロスカット,"[n, vs]","[loss-cutting, cutting one's losses]"
 945,1,-,カットトマト,[n],"[chopped tomatoes (canned, etc.)]"
-946,,-,ケーキカット,[n],[cake cutting ceremony]
+946,1,-,ケーキカット,[n],[cake cutting ceremony]
 947,,-,カットシートフィーダ,[n],[cut-sheet feeder]
 948,,-,ポークカツ,[n],[pork cutlet]
 949,,-,チキンカツ,[n],[chicken cutlet]
@@ -1339,7 +1339,7 @@
 1339,,-,コーヒーシロップ,[n],[coffee syrup]
 1340,,-,コーヒースタンド,[n],[coffee stand]
 1341,,-,コーヒーハウス,[n],[coffee house]
-1342,,-,コーヒーフロート,[n],[coffee float]
+1342,1,-,コーヒーフロート,[n],[coffee float]
 1343,,-,コーヒーブレーク,[n],[coffee break]
 1344,,-,コーヒーミル,[n],"[coffee mill, coffee grinder]"
 1345,,-,コールドコーヒー,[n],[cold coffee]
@@ -1498,9 +1498,9 @@
 1498,,-,ベアラサービス,[n],[bearer service]
 1499,,-,ホスティングサービス,[n],[hosting service]
 1500,,-,メッセージングサービス,[n],[messaging service]
-1501,,-,アプリケーションサービス,[n],[application service]
+1501,1,-,アプリケーションサービス,[n],[application service]
 1502,,-,インターネットサービス,[n],"[Internet service, Internet-based service]"
-1503,,-,ウェブサービス,[n],"[web service, web services]"
+1503,1,-,ウェブサービス,[n],"[web service, web services]"
 1504,,-,サービスブレーク,[n],[service break]
 1505,1,-,サービスコート,[n],[service court]
 1506,,-,サービスハウス,[n],[service house]
@@ -1549,7 +1549,7 @@
 1549,1,-,シーチキン,[n],"[canned tuna (from sea chicken, orig. a brand name)]"
 1550,,-,シーバース,[n],[sea berth]
 1551,1,-,シービーム,[n],"[Sea Beam (company name), C-beam]"
-1552,,-,シーカヤック,[n],[sea kayak]
+1552,1,-,シーカヤック,[n],[sea kayak]
 1553,,-,シーストローク,"[n, vs]",[C-stroke (canoeing)]
 1554,1,-,シーバス,[n],[C Bus]
 1555,,-,シーモンキー,[n],[Sea-Monkeys (trademarked variant of brine shrimp)]
@@ -1572,7 +1572,7 @@
 1572,1,-,ジェントル,[adj-na],[gentle]
 1573,1,-,ジャバ,[n],"[Java (Indonesian island), Java (programming language), Java coffee]"
 1574,1,-,ジャワ,[n],"[Java (Indonesian island), Java coffee]"
-1575,,-,ジャワマングース,[n],[small Asian mongoose (Herpestes javanicus)]
+1575,1,-,ジャワマングース,[n],[small Asian mongoose (Herpestes javanicus)]
 1576,1,-,ジュニアカレッジ,[n],[junior college]
 1577,,-,ジュニアスタイル,[n],[junior style]
 1578,,-,ジュニアフェザー,[n],[junior feather (weight)]
@@ -1737,7 +1737,7 @@
 1737,1,-,ソーシャルエコロジー,[n],[social ecology]
 1738,,-,ソーシャルスキル,[n],[social skill]
 1739,1,-,ソーシャルダンピング,[n],[social dumping]
-1740,,-,ソーシャルゲーム,[n],"[social game, social network game]"
+1740,1,-,ソーシャルゲーム,[n],"[social game, social network game]"
 1741,1,-,ソーシャルメディア,[n],[social media]
 1742,,-,ソーシャルネットワーキング,[n],[social networking]
 1743,,-,ソーシャルグループワーク,[n],[social group work]
@@ -1815,7 +1815,7 @@
 1815,,-,アイスダンス,[n],[ice dancing]
 1816,,-,ステージダンス,[n],[dance for the stage]
 1817,,-,ラインダンス,[n],"[revue dance performed in a line, line dance]"
-1818,,-,アクロバットダンス,[n],[acrobatic dance]
+1818,1,-,アクロバットダンス,[n],[acrobatic dance]
 1819,,-,チークダンス,[n],[cheek-to-cheek dancing]
 1820,,-,チアダンス,[n],[cheerleading]
 1821,,-,スローダンス,[n],[slow dance]
@@ -1882,7 +1882,7 @@
 1882,,-,マザーズデー,[n],[Mother's Day]
 1883,,-,デイトレーダー,[n],[day trader]
 1884,,-,アンザックデー,[n],[Anzac Day]
-1885,,-,デイトレード,[n],[day trade]
+1885,1,-,デイトレード,[n],[day trade]
 1886,,-,デーホスピタル,[n],[day hospital]
 1887,,-,ボクシングデー,[n],"[Boxing Day (public holiday in the UK, Aus., Canada, etc.)]"
 1888,,-,カナダデー,[n],[Canada Day]
@@ -2161,7 +2161,7 @@
 2161,,-,スライハンド,[n],[sleight of hand (e.g. in magic tricks)]
 2162,,-,グラバーハンド,[n],[grabber hand]
 2163,,-,ハンドヘルド,[n],[hand held]
-2164,,-,ハンドアックス,[n],[hand axe (ax)]
+2164,1,-,ハンドアックス,[n],[hand axe (ax)]
 2165,,-,ハンドブレーキ,[n],[hand brake]
 2166,,-,ハンドドリル,[n],[hand drill]
 2167,,-,ハンドログ,[n],[hand log]
@@ -3056,7 +3056,7 @@
 3056,,不文,ふぶん,"[adj-no, n]","[unwritten, illiterate, uneducated, poor writing]"
 3057,1,不時,ふじ,"[n, adj-no]","[emergency, unexpectedness]"
 3058,,不用,ふよう,"[adj-na, n, adj-no]","[disused, unused, useless, wasteful, of no use]"
-3059,,不祥,ふしょう,"[adj-na, n]","[disgraceful, inauspicious, ill-omened, ominous, scandalous]"
+3059,1,不祥,ふしょう,"[adj-na, n]","[disgraceful, inauspicious, ill-omened, ominous, scandalous]"
 3060,,不等,ふとう,"[adj-na, n, adj-no]","[disparity, inequality]"
 3061,,不帰,ふき,[n],"[rising no more (as in illness and death), returning no more, dying]"
 3062,,不退,ふたい,[n],[determination]
@@ -3422,7 +3422,7 @@
 3422,,御主,おぬし,"[pn, adj-no]",[you (when referring to one's equals or inferiors)]
 3423,1,御国,みくに,[n],"[country, Japan]"
 3424,,隠亡,おんぼう,[n],"[cemetery guard, crematorium worker]"
-3425,,御坊,ごぼう,[n],"[temple, monk's quarters, monk]"
+3425,1,御坊,ごぼう,[n],"[temple, monk's quarters, monk]"
 3426,1,御寝,およる,[n],"[sleep, rest]"
 3427,1,御年,おんとし,[n],[age]
 3428,1,御手洗,みたらし,[n],[font of purifying water placed at the entrance of a shrine]
@@ -3431,7 +3431,7 @@
 3431,1,微温,びおん,"[n, adj-no]","[lukewarmness, tepidity]"
 3432,,心意,しんい,[n],[mind]
 3433,,心機,しんき,[n],[one's mental state or attitude]
-3434,,心気,しんき,"[n, adj-na]","[mentality, mood, sentiment, feelings, fretfulness, tedium]"
+3434,1,心気,しんき,"[n, adj-na]","[mentality, mood, sentiment, feelings, fretfulness, tedium]"
 3435,,心的,しんてき,"[adj-na, n]","[mental, psychological, physical]"
 3436,,心神,しんしん,[n],[mind]
 3437,1,心身障害,しんしんしょうがい,[n],[mental and physical disorder]
@@ -3524,7 +3524,7 @@
 3524,1,旧市,きゅうし,[n],"[old town, former town]"
 3525,,旧石器,きゅうせっき,[n],[paleolith]
 3526,,早め,はやめ,[adj-no],"[early, fast]"
-3527,,早慶,そうけい,[n],[Waseda-Keio]
+3527,1,早慶,そうけい,[n],[Waseda-Keio]
 3528,1,早発性痴呆,そうはつせいちほう,[n],[dementia praecox]
 3529,,明々,あかあか,"[adv, adv-to]","[brightly lit, brightly lighted, lit up, lighted up]"
 3530,,明か,さやか,[adj-na],"[clear, fresh, bright]"
@@ -3587,7 +3587,7 @@
 3587,1,横流,おうりゅう,"[n, vs]","[overflowing, flooding]"
 3588,,横浜,よこはま,[n],[Yokohama (city)]
 3589,,樺太,からふと,[n],[Karafuto (Japanese name for Sakhalin)]
-3590,,欲す,ほりす,"[v5s, vt]","[to want, to desire]"
+3590,1,欲す,ほりす,"[v5s, vt]","[to want, to desire]"
 3591,,止めど,とめど,[n],"[end, termination point]"
 3592,1,正位,せいい,[n],"[correct location, correct position]"
 3593,,正式名,せいしきめい,[n],[formal name]
@@ -3651,14 +3651,14 @@
 3651,,火縄,ひなわ,[n],"[fuse, cord]"
 3652,,灰白,かいはく,[n],"[gray, grey, griseous]"
 3653,1,炊飯,すいはん,"[n, vs]","[rice cooking, to cook rice]"
-3654,,炒め,いため,"[n-suf, n-pref]",[fried dish]
+3654,1,炒め,いため,"[n-suf, n-pref]",[fried dish]
 3655,,煎り豆,いりまめ,[n],[parched or roasted beans (or soybeans)]
 3656,1,為政,いせい,[n],"[governing, administering]"
 3657,,無き,なき,"[adj-f, suf]","[-less (often used after one word to modify another, e.g. soulless body), lacking, non-existing]"
 3658,,無きゃ,なきゃ,[suf],"[unless one ..., if one does not ..., cannot do without something, have to do]"
 3659,,無くては,なくては,[exp],"[unless, without]"
 3660,,無しに,なしに,[exp],[without]
-3661,,無下に,むげに,[adv],"[bluntly (refusing, etc.), flatly, out of hand, completely]"
+3661,1,無下に,むげに,[adv],"[bluntly (refusing, etc.), flatly, out of hand, completely]"
 3662,1,無党派,むとうは,[n],[political independents]
 3663,,無尽,むじん,"[n, adj-na]","[inexhaustibility, mutual financing association]"
 3664,1,無性,むせい,"[n, adj-no]",[asexual]
@@ -3720,7 +3720,7 @@
 3720,,異邦,いほう,[n],[foreign country]
 3721,,疾っく,とっく,"[n-t, adj-no, adv]","[a long time ago, quickly, swiftly]"
 3722,1,痩せ,やせ,"[n, adj-no]","[emaciation, extreme thinness, lean person]"
-3723,,痺れ,しびれ,[n],"[numbness, limbs going to sleep]"
+3723,1,痺れ,しびれ,[n],"[numbness, limbs going to sleep]"
 3724,,発呼,はっこ,[n],[outgoing call]
 3725,,発展途上,はってんとじょう,[adj-no],"[developing (e.g. industry, town, economy)]"
 3726,,発起,ほっき,"[n, vs]","[proposal, promotion, spiritual awakening, resolution]"
@@ -4196,7 +4196,7 @@
 4196,,交換嬢,こうかんじょう,[n],[telephone operator]
 4197,,後臼歯,こうきゅうし,[n],[molar]
 4198,1,口供書,こうきょうしょ,[n],"[affidavit, deposition]"
-4199,,向光性,こうこうせい,[n],[heliotropism]
+4199,1,向光性,こうこうせい,[n],[heliotropism]
 4200,,侯爵夫人,こうしゃくふじん,[n],[marchioness]
 4201,1,考証学,こうしょうがく,[n],[(in Chinese history) study of ancient texts]
 4202,1,更新世,こうしんせい,[n],[Pleistocene epoch]
@@ -4891,7 +4891,7 @@
 4891,1,-,グレコローマン,[n],[Greco-Roman (style of wrestling)]
 4892,,-,ナショナルコスチューム,[n],[national costume]
 4893,1,-,コスチュームプレー,[n],"[cosplay, period drama, costume drama, costume play]"
-4894,,-,コスチュームジュエリー,[n],[costume jewelry]
+4894,1,-,コスチュームジュエリー,[n],[costume jewelry]
 4895,1,-,コネクションオリエンテッド,[n],[connection oriented]
 4896,1,-,コネクションプロビジョニング,[n],[connection provisioning]
 4897,1,-,ダイレクトコネクション,[n],[direct connection]
@@ -5086,7 +5086,7 @@
 5086,,-,タイムシェアリング,[n],[time sharing]
 5087,,-,ファイルシェアリング,[n],[file sharing]
 5088,,-,コードシェアリング,[n],[code-sharing]
-5089,,-,マネジメントシミュレーション,[n],[management simulation]
+5089,1,-,マネジメントシミュレーション,[n],[management simulation]
 5090,,-,シミュレーションゲーム,[n],[simulation game]
 5091,,-,フライトシミュレータ,[n],[flight simulator]
 5092,,-,シューティング,[n],[shooting]
@@ -5282,7 +5282,7 @@
 5282,,-,ディスプレイアダプター,[n],[display adapter]
 5283,,-,ディスプレイカード,[n],[display card]
 5284,,-,ディスプレイシステム,[n],[display system]
-5285,,-,ディスプレイセッション,[n],[display session]
+5285,1,-,ディスプレイセッション,[n],[display session]
 5286,,-,ディスプレイポストスクリプト,[n],"[Display PostScript, DPS]"
 5287,,-,ディスプレイモデル,[n],[display model]
 5288,,-,ビットマップディスプレイ,[n],[bit-mapped display]
@@ -5603,7 +5603,7 @@
 5603,,-,プロデューサーシステム,[n],[producer system]
 5604,,-,テーマプロモーション,[n],[Theme promotion]
 5605,,-,セールスプロモーション,[n],[sales promotion]
-5606,,-,デザインプロモーター,[n],[design promoter]
+5606,1,-,デザインプロモーター,[n],[design promoter]
 5607,,-,プロンプタースクリーン,[n],[prompter screen]
 5608,,-,エッグベネディクト,[n],[eggs Benedict]
 5609,1,-,フリンジベネフィット,[n],[fringe benefit]
@@ -5814,7 +5814,7 @@
 5814,,菓,か,"[n, suf, ctr]","[fruit, counter for fruit]"
 5815,,几,おしまずき,[n],"[armrest, desk, table]"
 5816,,季,き,[n],"[season, seasonal word or phrase (in haiku), year]"
-5817,,揆,き,[n],"[way, method]"
+5817,1,揆,き,[n],"[way, method]"
 5818,,危,き,[n],"[danger, Chinese ""rooftop"" constellation (one of the 28 mansions)]"
 5819,,箕,き,[n],"[Chinese ""winnowing basket"" constellation (one of the 28 mansions)]"
 5820,,紀,き,[n],"[period, Nihon-shoki]"
@@ -5984,7 +5984,7 @@
 5984,,祓い,はらい,[n],"[purification, exorcism]"
 5985,,穎,えい,[n],"[awn, glume]"
 5986,1,箆,へら,[n],[spatula]
-5987,,算,さん,"[n, vs]","[divining sticks, counting, calculation]"
+5987,1,算,さん,"[n, vs]","[divining sticks, counting, calculation]"
 5988,,＠系,アットけい,[n],[roguelike (character display computer game)]
 5989,,累,るい,[n],"[trouble, evil influence, implication, involvement]"
 5990,,縮,しゅく,"[n, suf, ctr]","[wearing armour (armor), counter for suits of armour]"
