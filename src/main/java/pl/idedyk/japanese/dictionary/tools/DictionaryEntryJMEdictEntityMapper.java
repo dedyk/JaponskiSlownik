@@ -119,6 +119,8 @@ public class DictionaryEntryJMEdictEntityMapper {
 		
 		addMap(DictionaryEntryType.WORD_EMPTY, null);
 		
+		addMap(DictionaryEntryType.UNKNOWN, "unc");
+		
 		addNullMap("vt");
 		addNullMap("vi");
 		addNullMap("on-mim");
