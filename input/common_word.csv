@@ -84,7 +84,7 @@
 84,1,唖,おし,[n],"[muteness, speech impairment, mute, deaf-mute]"
 85,1,唖,あ,[n],"[muteness, speech impairment]"
 86,1,奥旨,おうし,[n],"[deep truth, deep knowledge]"
-87,,横死,おうし,"[n, vs]","[violent (tragic or accidental) death, dog's death]"
+87,1,横死,おうし,"[n, vs]","[violent (tragic or accidental) death, dog's death]"
 88,,王師,おうし,[n],"[emperor's teacher, imperial army]"
 89,,押紙,おしがみ,[n],"[paper on which questions and comments are pasted, backing paper, blotting paper]"
 90,1,大鋸,おが,[n],"[large saw, framed pit saw]"
@@ -381,7 +381,7 @@
 381,,腎,じん,[n],[kidney]
 382,1,-,すい,[adv-to],"[lightly, nimbly]"
 383,,錐,すい,[n],"[cone, pyramid]"
-384,,過ぐ,すぐ,"[v2g-k, vi]","[to pass through, to pass by, to go beyond, to pass (i.e. of time), to elapse, to have expired, to have ended, to be over, to exceed, to surpass, to be above]"
+384,1,過ぐ,すぐ,"[v2g-k, vi]","[to pass through, to pass by, to go beyond, to pass (i.e. of time), to elapse, to have expired, to have ended, to be over, to exceed, to surpass, to be above]"
 385,1,煤,すす,[n],[soot]
 386,1,すり合わせ,すりあわせ,[n],"[comparing and adjusting, reconciling, knocking into shape, bouncing of ideas, opinions, etc. off each other to obtain a fine-tuned integrated whole, lapping, precision surface finishing, mating by rubbing together, margination]"
 387,1,擦れ,すれ,"[n, n-suf]","[chafing, sore, scrape, scratch, mark, rub, rubbing together, blister]"
@@ -482,7 +482,7 @@
 482,1,点頭,てんとう,"[n, vs]",[nodding]
 483,1,天道,あまじ,[],"[deva realm (svarga), path in the heavens]"
 484,1,天道,てんとう,[n],"[the sun, god of heaven and the earth, laws governing the heavens, celestial path, celestial motion, deva realm (svarga)]"
-485,,纏頭,てんとう,[n],[a tip]
+485,1,纏頭,てんとう,[n],[a tip]
 486,,天秤,てんびん,[n],"[(balance) scales, shoulder carrying pole, steelyard]"
 487,1,出居,いでい,[n],"[sitting outdoors, room that served both as a reception room and as a living room in a Heian-period mansion, temporary sitting place installed in the garden at the imperial court, used on the occasion of archery or sumo ceremonies]"
 488,1,出切る,できる,"[v5r, vt]","[to be out of, to have no more at hand]"
@@ -524,7 +524,7 @@
 524,,担い,にない,[n],"[carrying (on one's shoulder), bearing, shouldering, taking responsibility for, bucket carried on either end of a pole]"
 525,1,-,にも,[exp],"[also, too, not ... either, as well, even, (it's not possible) no matter what, although one might wish otherwise]"
 526,1,に依る,による,"[exp, v5r]","[by means of, due to, because of, according to]"
-527,,に加え,にくわえ,[exp],[in addition]
+527,1,に加え,にくわえ,[exp],[in addition]
 528,1,杜松,ねず,[n],"[temple juniper (Juniperus rigida), needle juniper]"
 529,,-,ねば,[exp],[if not ...]
 530,,覗き,のぞき,"[n, adj-no]","[peep, peeping, peep show, device with lens mounted on a stand or in a box to view enlarged pictures]"
@@ -727,7 +727,7 @@
 727,,-,シフトイン,[n],"[shift in, SI]"
 728,1,-,スネークイン,[n],[sneak in]
 729,,-,ズームイン,[n],[zoom in]
-730,,-,ネットイン,[n],"[net in (tennis), netball falling in]"
+730,1,-,ネットイン,[n],"[net in (tennis), netball falling in]"
 731,1,-,ピットイン,"[n, vs]",[pit stop]
 732,1,-,フレームイン,[n],[frame in]
 733,,-,ベッドイン,"[n, vs]",[going to bed (usu. with someone)]
@@ -787,7 +787,7 @@
 787,1,-,デュアルインラインパッケージ,[n],"[dual inline package, DIP]"
 788,1,Ｅ,イー,[n],"[E, e]"
 789,1,-,イーオン,[n],"[eon, very long period of time]"
-790,,-,ウォー,[n],[war]
+790,1,-,ウォー,[n],[war]
 791,,-,ウォール,[n],[wall]
 792,,-,カーテンウォール,[n],[curtain wall]
 793,,-,ウォールペーパー,[n],[wall paper]
@@ -1833,7 +1833,7 @@
 1833,1,-,チリパウダー,[n],"[chili powder, chilli powder]"
 1834,,-,フルチン,[n],[full exposure of the penis (e.g. no trousers or pants)]
 1835,,-,テーブルテニス,[n],[table tennis]
-1836,,-,テニスエルボー,[n],[tennis elbow]
+1836,1,-,テニスエルボー,[n],[tennis elbow]
 1837,1,-,テニスラケット,[n],[tennis racket]
 1838,,-,テニスシューズ,[n],[tennis shoes]
 1839,1,-,テニスプレーヤー,[n],[tennis player]
@@ -1848,7 +1848,7 @@
 1848,,-,テレビタレント,[n],[television talent]
 1849,,-,テレビネットワーク,[n],[television network]
 1850,,-,デジタルテレビ,[n],[digital television]
-1851,,-,モニターテレビ,[n],[monitor television]
+1851,1,-,モニターテレビ,[n],[monitor television]
 1852,,-,テレビカメラ,[n],[television camera]
 1853,1,-,テレビファクシミリ,[n],[facsimile through television]
 1854,,-,ケーブルテレビ,[n],[cable television]
@@ -3464,7 +3464,7 @@
 3464,,手真似,てまね,"[n, vs]","[gesture, sign, hand signal]"
 3465,1,手付,てつけ,[n],"[deposit, earnest money]"
 3466,1,手懸け,てかけ,[n],[handhold on an object which facilitates carrying]
-3467,,手練,しゅれん,"[n, vs]","[skill, dexterity, master hand]"
+3467,1,手練,しゅれん,"[n, vs]","[skill, dexterity, master hand]"
 3468,,手練,てれん,[n],[means of deceiving another]
 3469,,才略,さいりゃく,[n],[wise planning]
 3470,,抜本,ばっぽん,"[n, adj-f]","[eradication, drastic]"
@@ -3712,7 +3712,7 @@
 3712,1,甲虫,かぶとむし,[n],"[rhinoceros beetle (esp. the Japanese rhinoceros beetle, Trypoxylus dichotomus)]"
 3713,1,甲虫,こうちゅう,[n],[beetle]
 3714,,甲高,こうだか,"[adj-na, n, adj-no]","[high-pitched, high in the instep]"
-3715,,申し,もうし,[int],[excuse me! (when calling out to someone)]
+3715,1,申し,もうし,[int],[excuse me! (when calling out to someone)]
 3716,,男名,おとこな,[n],"[male name, adult name]"
 3717,1,町議,ちょうぎ,[n],"[town councillor, town council member]"
 3718,1,異な,けな,[adj-pn],"[exceptional, praiseworthy, laudable]"
@@ -3787,7 +3787,7 @@
 3787,,第二,だいに,"[n, adj-no]",[second]
 3788,1,第二次,だいにじ,[n],[the second ...]
 3789,1,管弦,かんげん,[n],"[wind and string instruments, music]"
-3790,,篤志,とくし,"[adj-na, n, adj-no]","[charity, benevolence]"
+3790,1,篤志,とくし,"[adj-na, n, adj-no]","[charity, benevolence]"
 3791,1,精一,せいいつ,"[adj-na, n]",[purity]
 3792,,精神医学,せいしんいがく,"[n, adj-no]",[psychiatry]
 3793,1,糖尿,とうにょう,[n],"[glycosuria, glucosuria, urine sugar]"
@@ -4014,7 +4014,7 @@
 4014,,降車,こうしゃ,"[n, vs]","[alighting, getting off, getting down]"
 4015,,除幕,じょまく,"[n, vs]",[unveiling (ceremony)]
 4016,,陰画,いんが,"[n, adj-no]",[(photographic) negative]
-4017,,陸続,りくぞく,"[adj-na, n]",[one after another]
+4017,1,陸続,りくぞく,"[adj-na, n]",[one after another]
 4018,,隠し,かくし,"[n, n-pref, n-suf]","[hiding, concealing, being hidden, being concealed, pocket]"
 4019,1,隠遁,いんとん,"[n, vs]","[retirement (from the world), seclusion]"
 4020,,隠見,いんけん,"[n, vs]",[appearance and disappearance]
@@ -4096,7 +4096,7 @@
 4096,,甘酸,かんさん,[n],"[sweetness and bitterness, joys and sorrows]"
 4097,,花売り,はなうり,[n],[flower vendor]
 4098,,哀傷歌,あいしょうか,[n],"[lament, elegy, dirge, funeral song]"
-4099,,足が早い,あしがはやい,"[exp, adj-i]","[to be fast at walking and running, to be quick to spoil (of foodstuffs)]"
+4099,1,足が早い,あしがはやい,"[exp, adj-i]","[to be fast at walking and running, to be quick to spoil (of foodstuffs)]"
 4100,,安全剃刀,あんぜんかみそり,[n],[safety razor]
 4101,,医院長,いいんちょう,[n],[head doctor]
 4102,,一周期,いっしゅうき,[n],[period]
@@ -4190,7 +4190,7 @@
 4190,,研究書,けんきゅうしょ,[n],"[monograph, study]"
 4191,1,健康上,けんこうじょう,[adj-no],"[health (concerns, reasons, etc.)]"
 4192,1,研修医,けんしゅうい,[n],"[medical intern, resident]"
-4193,,研修課,けんしゅうか,[n],[training section]
+4193,1,研修課,けんしゅうか,[n],[training section]
 4194,1,建築様式,けんちくようしき,[n],[architectural style]
 4195,,交換所,こうかんじょ,[n],[clearing house]
 4196,,交換嬢,こうかんじょう,[n],[telephone operator]
@@ -4390,7 +4390,7 @@
 4390,,調色,ちょうしょく,"[n, vs]","[mixing colors, mixing colours, tone]"
 4391,1,懲治監,ちょうじかん,[n],[reformatory]
 4392,1,弔銃,ちょうじゅう,[n],[volley of rifles at a funeral]
-4393,,聴従,ちょうじゅう,"[n, vs]",[following advice]
+4393,1,聴従,ちょうじゅう,"[n, vs]",[following advice]
 4394,1,鳥銃,ちょうじゅう,[n],[fowling gun]
 4395,1,重畳,ちょうじょう,"[adj-t, adv-to, n, vs]","[placed one upon another, piled up, superimposition, superposition, excellent, splendid]"
 4396,1,長上,ちょうじょう,[n],[one's elders or superiors]
@@ -4399,7 +4399,7 @@
 4399,1,張力,ちょうりょく,[n],"[tension, tensile strength]"
 4400,1,潮力,ちょうりょく,[n],[tidal energy]
 4401,,直射日光,ちょくしゃにっこう,[n],"[direct sunlight, direct rays of the sun]"
-4402,,直長,ちょくちょう,[n],[shift supervisor]
+4402,1,直長,ちょくちょう,[n],[shift supervisor]
 4403,,直轄市,ちょっかつし,[n],[direct-controlled municipality (of China)]
 4404,1,挺進隊,ていしんたい,[n],[group that goes ahead of the main body]
 4405,,天蠍宮,てんかつきゅう,[n],"[Scorpio (8th zodiacal sign), the Scorpion]"
@@ -4573,7 +4573,7 @@
 4573,,-,イングリッシュホルン,[n],"[English horn, cor anglais]"
 4574,,-,カレントイングリッシュ,[n],[current English]
 4575,1,-,キングズイングリッシュ,[n],[King's English]
-4576,,-,ジャパニーズイングリッシュ,[n],[Japanese English]
+4576,1,-,ジャパニーズイングリッシュ,[n],[Japanese English]
 4577,,-,ピジンイングリッシュ,[n],[pidgin English]
 4578,,-,ブロークンイングリッシュ,[n],[broken English]
 4579,1,-,ベーシックイングリッシュ,[n],"[Basic English, version of English with a maximum of 850 basic words]"
@@ -4851,7 +4851,7 @@
 4851,,-,ドライクリーニング,[n],[dry cleaning]
 4852,,-,ウエットクリーニング,[n],[wet cleaning]
 4853,,-,ヘッドクリーニングキット,[n],[head cleaning kit]
-4854,,-,クリーンアップ,[n],"[cleanup (hitter), cleaning up]"
+4854,1,-,クリーンアップ,[n],"[cleanup (hitter), cleaning up]"
 4855,1,-,ファイルクリーンアップ,[n],[file clean-up]
 4856,1,-,クリーンナップ,[n],[cleanup]
 4857,,-,クレアチニン,[n],[creatinine]
@@ -5128,7 +5128,7 @@
 5128,,-,ロストジェネレーション,[n],[lost generation]
 5129,,-,ジャイアントパンダ,[n],[giant panda (Ailuropoda melanoleuca)]
 5130,,-,ジャイアントケルプ,[n],[giant kelp (Macrocystis pyrifera)]
-5131,,-,ジャイアントスラローム,[n],[giant slalom]
+5131,1,-,ジャイアントスラローム,[n],[giant slalom]
 5132,,-,ジャイアントコーン,[n],[giant corn]
 5133,,-,ジャイアントインパクト,[n],[giant impact (theory)]
 5134,1,-,ジャパニーズスマイル,[n],[Japanese smile]
@@ -5202,10 +5202,10 @@
 5202,,-,ジャパンソサエティー,[n],[Japan Society]
 5203,,-,マスソサエティー,[n],[mass society]
 5204,1,-,アドインソフトウェア,[n],[add-in software]
-5205,,-,ウィンドウソフトウェア,[n],[windowing software]
+5205,1,-,ウィンドウソフトウェア,[n],[windowing software]
 5206,,-,オーサリングソフトウェア,[n],[authoring software]
 5207,1,-,オープンソースソフトウェア,[n],[open source software]
-5208,,-,オンラインソフトウェア,[n],[online software]
+5208,1,-,オンラインソフトウェア,[n],[online software]
 5209,,-,カスタムソフトウェア,[n],[custom software]
 5210,1,-,キャンドソフトウェア,[n],[canned software]
 5211,1,-,システムソフトウェア,[n],[system software]
@@ -5346,7 +5346,7 @@
 5346,1,-,ウエートトレーニング,[n],[weight training]
 5347,,-,サーキットトレーニング,[n],[circuit training]
 5348,1,-,トレーニングウエア,[n],[training wear]
-5349,,-,トレーニングキャンプ,[n],[training camp]
+5349,1,-,トレーニングキャンプ,[n],[training camp]
 5350,1,-,トレーニングシャツ,[n],[sweat shirt]
 5351,1,-,トレーニングシューズ,[n],[training shoes]
 5352,1,-,トレーニングパンツ,[n],[sweat pants]
@@ -5438,7 +5438,7 @@
 5438,1,-,バックアップバッテリ,[n],[backup battery]
 5439,1,-,バックアップファイル,[n],"[backup file, job-recovery control file]"
 5440,1,-,バックアップルート,[n],[backup route]
-5441,,-,バッテリバックアップ,[n],[battery backup]
+5441,1,-,バッテリバックアップ,[n],[battery backup]
 5442,,-,ファイルバックアップ,[n],[file backup]
 5443,,-,フルバックアップ,[n],[full backup]
 5444,,-,ホットバックアップ,[n],[hot backup]
@@ -5460,7 +5460,7 @@
 5460,,-,ティーバッティング,[n],[tee batting]
 5461,,-,レギュラーバッティング,[n],[regular batting]
 5462,,-,バラエティーショー,[n],[variety show]
-5463,,-,バラエティーストア,[n],[variety store]
+5463,1,-,バラエティーストア,[n],[variety store]
 5464,,-,バリエーションルート,[n],"[variation route (esp. in mountain-climbing), alternative route]"
 5465,,-,バーベキューソース,[n],"[barbecue sauce, BBQ sauce]"
 5466,,-,パイナップルフラワー,[n],[pineapple flower]
@@ -6016,7 +6016,7 @@
 6016,1,賤,しず,[n],"[lowly person, lowliness, I (used by male entertainers)]"
 6017,1,賤,せん,[n],"[lowly person, lowliness]"
 6018,1,蹴爪,けづめ,[n],"[fetlock (horse, etc.), spur (chicken, etc.), cockspur, dewclaw (dog, etc.)]"
-6019,,蹲,つくばい,[n],[stone wash basin found in Japanese gardens]
+6019,1,蹲,つくばい,[n],[stone wash basin found in Japanese gardens]
 6020,,軟,なん,"[adj-t, adv-to]",[soft]
 6021,1,転,くるり,"[adv, adv-to, n]","[turning around (once), suddenly, abruptly, completely (wrapped in something), quickly (unwrapping something), beautiful, round (eyes), flail (for threshing grain)]"
 6022,1,轟,とどろ,[adv],[roaring]
@@ -6215,7 +6215,7 @@
 6215,1,就ける,つける,"[v1, vt]","[to install (a king, emperor, etc.), to appoint (to a post), to promote, to assign (to study under)]"
 6216,1,即ける,つける,"[v1, vt]","[to install (a king, emperor, etc.)]"
 6217,1,尾ける,つける,[v1],"[to hunt a spy, to put a tail on someone, to stalk]"
-6218,,欠講,けっこう,"[n, vs]",[cancellation of lecture or class]
+6218,1,欠講,けっこう,"[n, vs]",[cancellation of lecture or class]
 6219,,海驢,あしか,"[n, adj-no]","[eared seal (esp. the California sea lion, Zalophus californianus), sea lion]"
 6220,,伯母さん,おばさん,[n],[aunt]
 6221,,小母さん,おばさん,[n],"[old lady, ma'am (vocative)]"
@@ -12192,7 +12192,7 @@
 12192,,放下,ほうげ,"[n, vs]","[discarding, abandoning, casting off one's attachments (in Zen)]"
 12193,,放下,ほうか,"[n, vs]","[discarding, abandoning, variety of street performance from the Middle Ages]"
 12194,,包か,ほうか,[n],"[wrapping, envelopment]"
-12195,,仕官,しかん,"[n, vs]","[government service, samurai's service]"
+12195,1,仕官,しかん,"[n, vs]","[government service, samurai's service]"
 12196,1,史官,しかん,[n],[chronicler]
 12197,,歯冠,しかん,[n],[crown of a tooth]
 12198,,尸諌,しかん,"[n, vs]",[admonishing (one's master) at the cost of one's life]
@@ -16222,7 +16222,7 @@
 16222,,梟首,きょうしゅ,"[n, vs]",[exposure of a severed head]
 16223,,兇手,きょうしゅ,[n],[assassin]
 16224,,強取,ごうしゅ,"[n, vs]","[seizure, plunder, robbery, taking something by force]"
-16225,,悪令,あくれい,[n],[bad decree]
+16225,1,悪令,あくれい,[n],[bad decree]
 16226,,悪例,あくれい,[n],"[bad example, bad precedent]"
 16227,1,文安,ぶんあん,[n],"[Bun'an era (1444.2.5-1449.7.28), Bunnan era]"
 16228,,我利,がり,[n],[self interest]
@@ -18680,7 +18680,7 @@
 18680,1,冷視,れいし,"[n, vs]","[giving a cold look, icy stare, taking a cold-hearted attitude]"
 18681,,冷罵,れいば,"[n, vs]","[sneer, scoffing, abuse]"
 18682,,霊符,れいふ,[n],"[charm, amulet, talisman]"
-18683,,礼部,れいぶ,[n],[Ministry of Rites (Tang-dynasty China)]
+18683,1,礼部,れいぶ,[n],[Ministry of Rites (Tang-dynasty China)]
 18684,,歴史画,れきしが,[n],[historical picture]
 18685,,歴史書,れきししょ,[n],[history book]
 18686,,劣弧,れっこ,[n],[minor arc]
@@ -23149,7 +23149,7 @@
 23149,,-,ベビィドール,[n],[baby doll]
 23150,,-,ビスクドール,[n],[bisque doll]
 23151,,-,ナイスチョイス,[exp],[nice choice]
-23152,,-,ナイスミディ,[n],[charming middle-aged woman]
+23152,1,-,ナイスミディ,[n],[charming middle-aged woman]
 23153,,-,ナイトホスピタル,[n],[night hospital]
 23154,,-,ナイトラッチ,[n],[night latch]
 23155,1,-,ナイト・ダイブ,[n],[night dive]
