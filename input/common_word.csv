@@ -397,7 +397,7 @@
 397,1,説破,せっぱ,"[n, vs]","[confuting, arguing down]"
 398,1,贅,ぜい,[n],"[extravagance, luxury]"
 399,1,税,ぜい,"[n, suf]",[tax]
-400,,曾,ひい,[pref],"[great (i.e. great-grandson, great-grandmother)]"
+400,1,曾,ひい,[pref],"[great (i.e. great-grandson, great-grandmother)]"
 401,1,艘,そう,[ctr],[counter for (small) boats]
 402,,宋,そう,[n],[Song (dynasty of China)]
 403,1,装,そう,[n],"[clothing, binding (of a book)]"
@@ -579,7 +579,7 @@
 579,1,臥す,ふす,"[v5s, vi]",[to lie down (in bed)]
 580,,麸,ふすま,[n],"[wheat bran, mash]"
 581,1,衾,ふすま,[n],"[quilt, bedding]"
-582,,不理,ふり,"[adj-na, n]","[unreasonable, irrational, illogical]"
+582,1,不理,ふり,"[adj-na, n]","[unreasonable, irrational, illogical]"
 583,1,不離,ふり,[n],[inseparability]
 584,,浮利,ふり,[n],"[easy money, quick profit]"
 585,,柯,ふる,[n],"[handle of an axe, handle of a hatchet]"
@@ -665,7 +665,7 @@
 665,,輛,りょう,[ctr],"[counter for carriages (e.g. in a train), counter for vehicles]"
 666,,涼,りょう,[n],"[cool breeze, cool air, refreshing coolness]"
 667,,良家,りょうけ,[n],"[good family, respectable family, decent family]"
-668,,両拳,りょうけん,[n],[both fists]
+668,1,両拳,りょうけん,[n],[both fists]
 669,1,老,ろう,[n],"[old age, age, old people, the old, the aged]"
 670,,婁,ろう,[n],"[Chinese ""Bond"" constellation (one of the 28 mansions)]"
 671,1,牢,ろう,[n],"[prison, jail, gaol]"
@@ -1208,8 +1208,8 @@
 1208,1,-,メインキー,[n],[main key]
 1209,1,-,リターンキー,[n],[RETURN key]
 1210,1,-,リピートキー,[n],[repeat key]
-1211,,-,レコードキー,[n],[record key]
-1212,,-,キーパンチャー,[n],[key puncher]
+1211,1,-,レコードキー,[n],[record key]
+1212,1,-,キーパンチャー,[n],[key puncher]
 1213,,-,キーベッド,[n],[key bed]
 1214,,-,キーライト,[n],[key light]
 1215,1,-,キーパーソン,[n],[key person]
@@ -1540,7 +1540,7 @@
 1540,,-,シャブ,[n],"[stimulant, pep-pill, upper, speed]"
 1541,,高フルクトース・コーン・シロップ,こうフルクトースコーンシロップ,[n],"[high-fructose corn syrup, HFCS]"
 1542,,-,コーンシロップ,[n],[corn syrup]
-1543,,-,アクリルシロップ,[n],[acrylic syrup]
+1543,1,-,アクリルシロップ,[n],[acrylic syrup]
 1544,1,-,メープルシロップ,[n],[maple syrup]
 1545,,-,グレナデンシロップ,[n],[grenadine syrup]
 1546,,-,ガムシロップ,[n],[gum syrup]
@@ -1832,7 +1832,7 @@
 1832,,-,チリペッパー,[n],"[chili pepper, chilli pepper]"
 1833,1,-,チリパウダー,[n],"[chili powder, chilli powder]"
 1834,,-,フルチン,[n],[full exposure of the penis (e.g. no trousers or pants)]
-1835,,-,テーブルテニス,[n],[table tennis]
+1835,1,-,テーブルテニス,[n],[table tennis]
 1836,1,-,テニスエルボー,[n],[tennis elbow]
 1837,1,-,テニスラケット,[n],[tennis racket]
 1838,,-,テニスシューズ,[n],[tennis shoes]
@@ -1881,7 +1881,7 @@
 1881,1,-,ブルーデー,[n],[days of one's menstrual period]
 1882,,-,マザーズデー,[n],[Mother's Day]
 1883,,-,デイトレーダー,[n],[day trader]
-1884,,-,アンザックデー,[n],[Anzac Day]
+1884,1,-,アンザックデー,[n],[Anzac Day]
 1885,1,-,デイトレード,[n],[day trade]
 1886,,-,デーホスピタル,[n],[day hospital]
 1887,1,-,ボクシングデー,[n],"[Boxing Day (public holiday in the UK, Aus., Canada, etc.)]"
@@ -2566,7 +2566,7 @@
 2566,1,-,ブルシャーク,[n],[bull shark (Carcharhinus leucas)]
 2567,,-,アーミーブルー,[n],[army blue]
 2568,,-,スカイブルー,[n],[sky blue]
-2569,,-,ブルートレイン,[n],[night express with sleeper cars (from the original color of the trains) (colour)]
+2569,1,-,ブルートレイン,[n],[night express with sleeper cars (from the original color of the trains) (colour)]
 2570,,-,ブルーフィルム,[n],"[blue film, porno(graphic) film]"
 2571,,-,ブルーブック,[n],[blue book]
 2572,,-,ブルーマンデー,[n],[blue Monday]
@@ -2734,7 +2734,7 @@
 2734,,-,リモートマウント,[n],[remote mount]
 2735,,-,ヘッドマウントディスプレイ,[n],"[head mounted display, HMD]"
 2736,,-,ラックマウントサーバ,[n],[rack-mount server]
-2737,,-,マグ,[n],[mug]
+2737,1,-,マグ,[n],[mug]
 2738,,-,マグカップ,[n],[mug]
 2739,1,-,タイトルマッチ,[n],[title match]
 2740,,-,タッグマッチ,[n],[tag-team match (wrestling)]
@@ -2955,7 +2955,7 @@
 2955,1,-,ローカルオブザーバー,[n],[local observer]
 2956,,-,ローカルコンテント,[n],[local content]
 2957,,-,ローカルエコー,[n],[local echo]
-2958,,-,ローカルオペレータ,[n],[local operator]
+2958,1,-,ローカルオペレータ,[n],[local operator]
 2959,,-,ローカルキャリア,[n],[local carrier]
 2960,,-,ローカルディスク,[n],[local disk]
 2961,,-,ローカルファイル,[n],[local file]
@@ -2977,7 +2977,7 @@
 2977,,-,オンリーワン,"[n, adj-no]","[only one (person, thing), sole, unique, highest, best, most outstanding, custom-made]"
 2978,,-,ページワン,[n],[page one (Japanese card game)]
 2979,,-,ワンレングス,[n],[haircut of uniform length]
-2980,,-,ワンツー,[n],[one-two punch]
+2980,1,-,ワンツー,[n],[one-two punch]
 2981,1,-,ワンパターン,"[n, adj-no]","[predictable, repetitive, being in a rut, set in one's ways]"
 2982,,-,ワンアウト,[n],[one out]
 2983,,-,ワンセット,[n],[one set]
@@ -3023,7 +3023,7 @@
 3023,,万国博,ばんこくはく,[n],"[international exposition, world expo, world fair]"
 3024,1,万有,ばんゆう,[n],"[all things, all creation, universal]"
 3025,1,三々,さんさん,[n],[3-3 point (in go)]
-3026,,三味,さみ,[n],[three-stringed guitar]
+3026,1,三味,さみ,[n],[three-stringed guitar]
 3027,,三回,さんかい,[n],[three times]
 3028,1,三年,さんねん,[n],[three years]
 3029,,三相,さんそう,"[n, adj-no]",[three phases]
@@ -3100,7 +3100,7 @@
 3100,,仮名文,かなぶみ,[n],[publication in kana alone]
 3101,,仰せ,おおせ,[n],"[statement, command, wishes (of a superior)]"
 3102,1,任せ,まかせ,[n-suf],[leaving everything up to someone else]
-3103,,伍す,ごす,"[v5s, vi]","[to rank with, to rank among]"
+3103,1,伍す,ごす,"[v5s, vi]","[to rank with, to rank among]"
 3104,,休す,きゅうす,"[v5s, vi]","[to come to an end, to rest]"
 3105,,休め,やすめ,[int],[(Stand) at ease!]
 3106,1,会わす,あわす,"[v5s, vt]","[to make (someone) to meet, to let (someone) meet, to expose to, to subject to]"
@@ -3300,7 +3300,7 @@
 3300,1,大晦,おおつごもり,[n],"[the last day of the year, New Year's Eve]"
 3301,,大盤,おおばん,[n],"[demonstration board (for Go, Shougi, etc.)]"
 3302,1,太祖,たいそ,[n],"[founder, progenitor, emperor]"
-3303,,大笑,たいしょう,"[n, vs]","[loud laughter, hearty laugh]"
+3303,1,大笑,たいしょう,"[n, vs]","[loud laughter, hearty laugh]"
 3304,,大聖,たいせい,[n],[great sage]
 3305,,大聖,だいしょう,[n],"[Buddha, high-ranked bodhisattva]"
 3306,1,大阪,おおさか,[n],"[Osaka, large hill]"
@@ -3372,7 +3372,7 @@
 3372,1,少子,しょうし,[n],[low birth rate]
 3373,1,属す,ぞくす,"[v5s, vi]","[to belong to, to come under, to be affiliated with, to be subject to]"
 3374,1,属す,しょくす,"[v5s, vt]","[to entrust, to send (a message, etc.)]"
-3375,,山椒,さんしょう,[n],"[Japanese pepper (species of Sichuan pepper, Zanthoxylum piperitum), Japanese prickly ash]"
+3375,1,山椒,さんしょう,[n],"[Japanese pepper (species of Sichuan pepper, Zanthoxylum piperitum), Japanese prickly ash]"
 3376,,川崎,かわさき,[n],[Kawasaki (city)]
 3377,1,左様,さよう,"[adj-na, int]","[like that, that's right, indeed, let me see...]"
 3378,,巫山戯,ふざけ,"[n, adj-pn]","[play, sport, romp, frolic, joke, prank]"
@@ -3385,7 +3385,7 @@
 3385,1,常套,じょうとう,[n],"[conventionality, triteness]"
 3386,,常任委員,じょうにんいいん,[n],[member of a standing committee]
 3387,1,幕開き,まくあき,[n],"[the rise of the curtain, opening (of play), beginning (e.g. of an era), opening (festival, event, etc.)]"
-3388,,平城,ひらじろ,[n],[castle on the plains]
+3388,1,平城,ひらじろ,[n],[castle on the plains]
 3389,,平城,へいじょう,[n],[ancient name of Nara]
 3390,,幻覚症,げんかくしょう,[n],[hallucinosis]
 3391,1,広漠,こうばく,"[adj-t, adv-to]","[vast, wide, boundless]"
@@ -3705,7 +3705,7 @@
 3705,,生々,せいせい,"[adj-na, n]","[lively, growing up]"
 3706,,生中,なまちゅう,[n],[medium-size draft beer]
 3707,,生半,なまなか,"[adj-na, adv]","[halfway-done, mediocre, uncertain, half-hearted, half-heartedly, insufficiently]"
-3708,,生殺,せいさつ,"[n, vs]","[sparing life and taking life, letting live and killing]"
+3708,1,生殺,せいさつ,"[n, vs]","[sparing life and taking life, letting live and killing]"
 3709,,生臭,なまぐさ,[n],"[something that smells of fish or blood, meat and fish, degenerate monk, corrupt priest]"
 3710,,用務,ようむ,[n],[business]
 3711,,田作,でんさく,[n],[rice-field tilling]
@@ -3822,12 +3822,12 @@
 3822,,義侠,ぎきょう,[n],"[chivalry, generosity]"
 3823,1,翰林,かんりん,[n],[literary circles]
 3824,,老け,ふけ,[n],"[aging, ageing]"
-3825,,考古,こうこ,[n],"[study of antiquities, archeology]"
+3825,1,考古,こうこ,[n],"[study of antiquities, archeology]"
 3826,,耳鼻,じび,[n],[nose and ears]
 3827,,耳鼻咽喉,じびいんこう,[n],"[ear, nose, and throat]"
 3828,,聖職,せいしょく,"[n, adj-no]","[sacred profession, holy orders, vocation, ministry]"
 3829,,聴診,ちょうしん,"[n, vs, adj-no]","[auscultation, listening to a person's chest with a stethoscope]"
-3830,,肌寒,はださむ,[n],[autumn chill]
+3830,1,肌寒,はださむ,[n],[autumn chill]
 3831,,育て,そだて,[n],"[bringing up, raising]"
 3832,,育毛,いくもう,"[n, vs]","[hair restoration, new hair growth]"
 3833,1,背泳,はいえい,[n],[backstroke]
@@ -4420,7 +4420,7 @@
 4420,,乳色,にゅうしょく,[n],"[milk white, opaque white]"
 4421,,乳状,にゅうじょう,"[n, adj-no]",[milky]
 4422,1,入城,にゅうじょう,"[n, vs]",[entry into a castle (by a conquering force)]
-4423,,入定,にゅうじょう,"[n, vs]","[entering a state of intense concentration, death (of a high monk, etc.)]"
+4423,1,入定,にゅうじょう,"[n, vs]","[entering a state of intense concentration, death (of a high monk, etc.)]"
 4424,1,入場権,にゅうじょうけん,[n],[liberty of entrance]
 4425,,入朝,にゅうちょう,"[n, vs]","[visiting Japan, arrival in Japan]"
 4426,,入庁,にゅうちょう,"[n, vs]","[becoming employed by a government office, agency, board, etc.]"
@@ -4822,7 +4822,7 @@
 4822,1,-,キャンピングトレーラー,[n],"[camping trailer, caravan]"
 4823,1,-,アドキャンペーン,[n],[ad campaign]
 4824,1,-,キャンペーンセール,[n],[campaign sale]
-4825,,-,スポットキャンペーン,[n],[spot campaign]
+4825,1,-,スポットキャンペーン,[n],[spot campaign]
 4826,,-,テーマキャンペーン,[n],[Theme campaign]
 4827,,-,テストキャンペーン,[n],[test campaign]
 4828,1,-,プレスキャンペーン,[n],[press campaign]
@@ -4981,7 +4981,7 @@
 4981,,-,ドーピングコントロール,[n],[doping control]
 4982,1,-,トラクションコントロール,[n],[traction control]
 4983,1,-,ワンマンコントロール,[n],[one-man control]
-4984,,-,クルーズコントロール,[n],[cruise control]
+4984,1,-,クルーズコントロール,[n],[cruise control]
 4985,,-,スパンオブコントロール,[n],[span of control]
 4986,1,-,アクセスコントロールリスト,[n],"[access control list, ACL]"
 4987,,-,ゲームコントロールアダプタ,[n],[game control adapter]
@@ -5100,7 +5100,7 @@
 5100,1,-,ホームショッピング,[n],[home shopping]
 5101,,-,オンラインショッピング,[n],[online shopping]
 5102,1,-,テレホンショッピング,[n],[phone shopping]
-5103,,-,フォーラムショッピング,[n],[seeking a venue (usu. for litigation)]
+5103,1,-,フォーラムショッピング,[n],[seeking a venue (usu. for litigation)]
 5104,,-,ネットショッピング,[n],"[online shopping, net shopping]"
 5105,1,-,ショッピングトップ,[n],[first page of an online-shopping site]
 5106,1,-,ショッピングアテンダント,[n],"[shop attendant, sales assistant, store clerk]"
@@ -5187,7 +5187,7 @@
 5187,,-,ナショナルセキュリティー,[n],[national security]
 5188,1,-,アジェンダセッティング,[n],[agenda setting]
 5189,1,-,ファインセラミックス,[n],[fine ceramics]
-5190,,-,ナチュラルセレクション,[n],[natural selection]
+5190,1,-,ナチュラルセレクション,[n],[natural selection]
 5191,,-,ポートフォリオセレクション,[n],[portfolio selection]
 5192,,-,セーフティー,[n],[safety]
 5193,1,-,セイフティバント,[n],[bunt performed for a base hit]
@@ -5541,7 +5541,7 @@
 5541,1,-,フランクフルトソーセージ,[n],"[frankfurter, frank]"
 5542,,-,フランチャイズチェーン,[n],"[franchise chain, FC]"
 5543,,-,フレキシブルディスク,[n],"[flexible disk, floppy disk]"
-5544,,-,フレキシブルバック,[n],[flexible back]
+5544,1,-,フレキシブルバック,[n],[flexible back]
 5545,,-,フレキシブルマニュファクチャリングシステム,[n],[flexible manufacturing system]
 5546,,-,フロンティアスピリット,[n],[frontier spirit]
 5547,1,-,ブリティッシュコロンビア,[n],[British Columbia]
@@ -5951,7 +5951,7 @@
 5951,,投,とう,"[n, suf, ctr]","[pitching ability, counter for pitches]"
 5952,,択,たく,[ctr],"[counter for choices, options, etc.]"
 5953,,拠り所,よりどころ,[n],"[grounds, foundation, authority, support, prop, something upon which to rely]"
-5954,,提,ひさげ,[n],[ceremonial sake decanter with a spout and semicircular handle]
+5954,1,提,ひさげ,[n],[ceremonial sake decanter with a spout and semicircular handle]
 5955,,撓わ,たわわ,[adj-na],"[(of a branch heavily laden with fruit, etc.) drooping, bending]"
 5956,,撥,ばち,[n],"[plectrum, pick, drumstick for Japanese drums (e.g. taiko)]"
 5957,1,撰,せん,"[n, n-suf]","[anthology (of poetry, etc.), compilation, collection, selection]"
@@ -10472,7 +10472,7 @@
 10472,1,詩経,しきょう,[n],"[the Shijing (Shih Ching) or Book of Odes (Songs, Poems) - one of the Five Classics]"
 10473,,詩境,しきょう,[n],[poem's locale]
 10474,,詩興,しきょう,[n],[poetic inspiration]
-10475,,試供,しきょう,"[n, vs]",[offering something free as a promotion]
+10475,1,試供,しきょう,"[n, vs]",[offering something free as a promotion]
 10476,,四凶,しきょう,[n],[the four inauspicious beasts from Chinese mythology]
 10477,1,滲入,しんにゅう,"[n, vs]",[permeation]
 10478,,之繞,しんにょう,[n],"[kanji ""road"" or ""advance"" radical (radical 162)]"
@@ -13930,7 +13930,7 @@
 13930,,禀性,ひんせい,[n],"[nature, character]"
 13931,,稟性,ひんせい,[n],[inborn nature]
 13932,,評する,ひょうする,"[vs-s, vt]","[to evaluate, to appraise, to comment on]"
-13933,,軒輊,けんち,"[n, vs]","[high and low, disparity]"
+13933,1,軒輊,けんち,"[n, vs]","[high and low, disparity]"
 13934,,検地,けんち,"[n, vs]","[land survey, cadastral survey]"
 13935,1,鎖線,させん,[n],"[chain line, dot-dash line]"
 13936,,殉じる,じゅんじる,"[v1, vi]",[to sacrifice oneself]
@@ -19599,7 +19599,7 @@
 19599,,-,カードエッジコネクタ,[n],[edge connector]
 19600,,-,エッセン,[n],[meal]
 19601,,-,バニラエッセンス,[n],[vanilla essence]
-19602,,-,コンテクストエディタ,[n],[context editor]
+19602,1,-,コンテクストエディタ,[n],[context editor]
 19603,,-,スクリーンエディタ,[n],[screen editor]
 19604,,-,テキストエディタ,[n],[text editor]
 19605,,-,フォントエディタ,[n],[font editor]
