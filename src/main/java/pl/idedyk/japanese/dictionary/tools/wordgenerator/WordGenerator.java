@@ -824,11 +824,70 @@ public class WordGenerator {
 			
 			case SHOW_ALL_MISSING_WORDS: {
 				
-				if (args.length != 1) {
+				if (args.length != 3) {
 					
 					System.err.println("Niepoprawna liczba argumentów");
 					
 					return;
+				}
+				
+				// sprawdzenie parametrow	
+				Integer minKanjiLength = null;
+				Integer minKanaLength = null;				
+				
+				Integer maxKanjiLength = null;
+				Integer maxKanaLength = null;
+								
+				if (args[1].equals("-") == false) {
+					
+					String kanjiStringRange = args[1];
+					
+					String[] kanjiStringRangeSplited = kanjiStringRange.split("-");
+					
+					if (kanjiStringRangeSplited.length != 2) {
+						
+						System.out.println("Niepoprawny przedział dla znaków kanji");
+						
+						return;
+					}
+					
+					try {						
+						minKanjiLength = Integer.parseInt(kanjiStringRangeSplited[0]);						
+						maxKanjiLength = Integer.parseInt(kanjiStringRangeSplited[1]);
+												
+					} catch (NumberFormatException e) {
+						
+						System.out.println("Niepoprawny przedział dla znaków kanji");
+						
+						return;
+						
+					}
+				}
+				
+				if (args[2].equals("-") == false) {
+					
+					String kanaStringRange = args[2];
+					
+					String[] kanaStringRangeSplited = kanaStringRange.split("-");
+					
+					if (kanaStringRangeSplited.length != 2) {
+						
+						System.out.println("Niepoprawny przedział dla znaków kana");
+						
+						return;
+					}
+					
+					try {						
+						minKanaLength = Integer.parseInt(kanaStringRangeSplited[0]);						
+						maxKanaLength = Integer.parseInt(kanaStringRangeSplited[1]);
+												
+					} catch (NumberFormatException e) {
+						
+						System.out.println("Niepoprawny przedział dla znaków kana");
+						
+						return;
+						
+					}
 				}
 				
 				// wczytanie i cache'owanie slownika
@@ -856,6 +915,24 @@ public class WordGenerator {
 																		
 						String groupEntryKanji = groupEntry.getKanji();
 						String groupEntryKana = groupEntry.getKana();
+
+						// filtrowanie po dlugosci												
+						if (minKanjiLength != null && groupEntryKanji != null && groupEntryKanji.length() < minKanjiLength) {
+							continue;
+						}
+						
+						if (minKanaLength != null && groupEntryKana != null && groupEntryKana.length() < minKanaLength) {
+							continue;
+						}
+
+						
+						if (maxKanjiLength != null && groupEntryKanji != null && groupEntryKanji.length() > maxKanjiLength) {
+							continue;
+						}
+
+						if (maxKanaLength != null && groupEntryKana.length() > maxKanaLength) {
+							continue;
+						}
 											
 						List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
 							
