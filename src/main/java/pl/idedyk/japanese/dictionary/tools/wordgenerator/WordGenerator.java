@@ -1369,19 +1369,43 @@ public class WordGenerator {
 					if (minKanjiPrefixLength != null) {
 						
 						String kanji = polishJapaneseEntry.getKanji();
-
-						for (int idx = minKanjiPrefixLength; idx <= kanji.length(); ++idx) {						
-							allPrefixes.add(kanji.substring(0, idx));						
-						}						
+						
+						for (int startIdx = 0; startIdx < kanji.length(); ++startIdx) {
+							
+							for (int endIdx = 0; endIdx <= kanji.length(); ++endIdx) {
+								
+								if (endIdx <= startIdx) {
+									continue;
+								}
+								
+								if (endIdx - startIdx < minKanjiPrefixLength) {
+									continue;
+								}
+								
+								allPrefixes.add(kanji.substring(startIdx, endIdx));
+							}			
+						}
 					}
 					
 					if (minKanaPrefixLength != null) {
 						
 						String kana = polishJapaneseEntry.getKana();
-						
-						for (int idx = minKanaPrefixLength; idx <= kana.length(); ++idx) {						
-							allPrefixes.add(kana.substring(0, idx));
-						}						
+												
+						for (int startIdx = 0; startIdx < kana.length(); ++startIdx) {
+							
+							for (int endIdx = 0; endIdx <= kana.length(); ++endIdx) {
+								
+								if (endIdx <= startIdx) {
+									continue;
+								}
+								
+								if (endIdx - startIdx < minKanaPrefixLength) {
+									continue;
+								}
+								
+								allPrefixes.add(kana.substring(startIdx, endIdx));
+							}			
+						}
 					}
 				}
 				
