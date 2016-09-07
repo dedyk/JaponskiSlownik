@@ -17,6 +17,7 @@ import java.util.TreeSet;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.IntField;
+import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
@@ -1127,17 +1128,17 @@ public class Helper {
 				
 				addFieldToDocument(document, "groupId", groupId);
 				
-				addFieldToDocument(document, "wordTypeList", wordTypeList);
+				addStringFieldToDocument(document, "wordTypeList", wordTypeList);
 
-				addFieldToDocument(document, "kanji", kanji);
-				addFieldToDocument(document, "kanjiInfoList", kanjiInfoList);
+				addStringFieldToDocument(document, "kanji", kanji);
+				addTextFieldToDocument(document, "kanjiInfoList", kanjiInfoList);
 
-				addFieldToDocument(document, "kana", kana);
-				addFieldToDocument(document, "kanaInfoList", kanaInfoList);
+				addStringFieldToDocument(document, "kana", kana);
+				addTextFieldToDocument(document, "kanaInfoList", kanaInfoList);
 
-				addFieldToDocument(document, "romaji", romaji);
+				addTextFieldToDocument(document, "romaji", romaji);
 				
-				addFieldToDocument(document, "translateList", translateList2);
+				addTextFieldToDocument(document, "translateList", translateList2);
 				//addFieldToDocument(document, "additionalInfoList", additionalInfoList);
 
 				indexWriter.addDocument(document);
@@ -1150,21 +1151,21 @@ public class Helper {
 		return index;
 	}
 	
-	public static void addFieldToDocument(Document document, String fieldName, String value) {
+	private static void addTextFieldToDocument(Document document, String fieldName, String value) {
 
 		if (value != null) {
 			document.add(new TextField(fieldName, value, Field.Store.YES));
 		}
 	}
-	
-	public static void addFieldToDocument(Document document, String fieldName, Integer value) {
+
+	private static void addStringFieldToDocument(Document document, String fieldName, String value) {
 
 		if (value != null) {
-			document.add(new IntField(fieldName, value, Field.Store.YES));
+			document.add(new StringField(fieldName, value, Field.Store.YES));
 		}
 	}
-
-	private static void addFieldToDocument(Document document, String fieldName, Collection<String> collection) {
+	
+	private static void addTextFieldToDocument(Document document, String fieldName, Collection<String> collection) {
 
 		if (collection == null) {
 			return;
@@ -1175,7 +1176,26 @@ public class Helper {
 
 		}		
 	}
+
+	private static void addStringFieldToDocument(Document document, String fieldName, Collection<String> collection) {
+
+		if (collection == null) {
+			return;
+		}
+
+		for (String string : collection) {
+			document.add(new StringField(fieldName, string, Field.Store.YES));
+
+		}		
+	}
 	
+	private static void addFieldToDocument(Document document, String fieldName, Integer value) {
+
+		if (value != null) {
+			document.add(new IntField(fieldName, value, Field.Store.YES));
+		}
+	}
+		
 	public static Query createLuceneDictionaryIndexTermQuery(String word) {
 
 		BooleanQuery query = new BooleanQuery();
