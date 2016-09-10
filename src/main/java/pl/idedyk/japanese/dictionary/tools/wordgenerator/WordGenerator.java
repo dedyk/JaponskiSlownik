@@ -17,6 +17,12 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.DefaultParser;
+import org.apache.commons.cli.HelpFormatter;
+import org.apache.commons.cli.Options;
+import org.apache.commons.cli.UnrecognizedOptionException;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
@@ -823,72 +829,86 @@ public class WordGenerator {
 			}
 			
 			case SHOW_ALL_MISSING_WORDS: {
+								
+				CommandLineParser commandLineParser = new DefaultParser();
 				
-				if (args.length != 3) {
+				//
+				
+				Options options = new Options();
+
+				options.addOption("mnknj", "min-kanji-length", true, "Min kanji length");
+				options.addOption("mnkaj", "min-kana-length", true, "Min kana length");
+				
+				options.addOption("maknj", "max-kanji-length", true, "Max kanji length");
+				options.addOption("makaj", "max-kana-length", true, "Max kanji length");
+				
+				options.addOption("okn", "only-kanji", false, "Only kanji");
+				options.addOption("oka", "only-kana", false, "Only kana");
+				
+				options.addOption("h", "help", false, "Help");
+				
+				//
+				
+				CommandLine commandLine = null;
+				
+				try {
+					commandLine = commandLineParser.parse(options, args);
 					
-					System.err.println("Niepoprawna liczba argumentów");
+				} catch (UnrecognizedOptionException e) {
 					
-					return;
+					System.out.println(e.getMessage() + "\n");
+					
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.SHOW_ALL_MISSING_WORDS.getOperation(), options );
+					
+					System.exit(1);
 				}
 				
-				// sprawdzenie parametrow	
+				if (commandLine.hasOption("help") == true) {
+
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.SHOW_ALL_MISSING_WORDS.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				// parametry
 				Integer minKanjiLength = null;
 				Integer minKanaLength = null;				
 				
 				Integer maxKanjiLength = null;
 				Integer maxKanaLength = null;
-								
-				if (args[1].equals("-") == false) {
-					
-					String kanjiStringRange = args[1];
-					
-					String[] kanjiStringRangeSplited = kanjiStringRange.split("-");
-					
-					if (kanjiStringRangeSplited.length != 2) {
-						
-						System.out.println("Niepoprawny przedział dla znaków kanji");
-						
-						return;
-					}
-					
-					try {						
-						minKanjiLength = Integer.parseInt(kanjiStringRangeSplited[0]);						
-						maxKanjiLength = Integer.parseInt(kanjiStringRangeSplited[1]);
-												
-					} catch (NumberFormatException e) {
-						
-						System.out.println("Niepoprawny przedział dla znaków kanji");
-						
-						return;
-						
-					}
+
+				Boolean onlyKanji = null;
+				Boolean onlyKana = null;
+				
+				if (commandLine.hasOption("min-kanji-length") == true) {
+					minKanjiLength = Integer.parseInt(commandLine.getOptionValue("min-kanji-length"));
+				}
+
+				if (commandLine.hasOption("max-kanji-length") == true) {
+					maxKanjiLength = Integer.parseInt(commandLine.getOptionValue("max-kanji-length"));
+				}
+
+				if (commandLine.hasOption("min-kana-length") == true) {
+					minKanaLength = Integer.parseInt(commandLine.getOptionValue("min-kana-length"));
+				}
+
+				if (commandLine.hasOption("max-kana-length") == true) {
+					maxKanaLength = Integer.parseInt(commandLine.getOptionValue("max-kana-length"));
 				}
 				
-				if (args[2].equals("-") == false) {
-					
-					String kanaStringRange = args[2];
-					
-					String[] kanaStringRangeSplited = kanaStringRange.split("-");
-					
-					if (kanaStringRangeSplited.length != 2) {
-						
-						System.out.println("Niepoprawny przedział dla znaków kana");
-						
-						return;
-					}
-					
-					try {						
-						minKanaLength = Integer.parseInt(kanaStringRangeSplited[0]);						
-						maxKanaLength = Integer.parseInt(kanaStringRangeSplited[1]);
-												
-					} catch (NumberFormatException e) {
-						
-						System.out.println("Niepoprawny przedział dla znaków kana");
-						
-						return;
-						
-					}
+				if (commandLine.hasOption("only-kanji") == true) {
+					onlyKanji = true;	
 				}
+
+				if (commandLine.hasOption("only-kana") == true) {
+					onlyKana = true;	
+				}
+
+				//				
 				
 				// wczytanie i cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
@@ -915,6 +935,16 @@ public class WordGenerator {
 																		
 						String groupEntryKanji = groupEntry.getKanji();
 						String groupEntryKana = groupEntry.getKana();
+						
+						// czy jest znak kanji
+						if (onlyKanji != null && onlyKanji.booleanValue() == true && groupEntryKanji == null) {
+							continue;
+						}
+						
+						// czy tylko kana
+						if (onlyKana != null && onlyKana.booleanValue() == true && groupEntryKanji != null) {
+							continue;
+						}
 
 						// filtrowanie po dlugosci												
 						if (minKanjiLength != null && groupEntryKanji != null && groupEntryKanji.length() < minKanjiLength) {

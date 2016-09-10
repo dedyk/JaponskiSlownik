@@ -12,6 +12,7 @@ export CLASSPATH=$HOME/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:$CLASSPA
 export CLASSPATH=$HOME/.m2/repository/jaxen/jaxen/1.1.4/jaxen-1.1.4.jar:$CLASSPATH
 
 export CLASSPATH=$HOME/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:$CLASSPATH
+export CLASSPATH=$HOME/.m2/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar:$CLASSPATH
 
 export CLASSPATH=$HOME/.m2/repository/org/json/json/20150729/json-20150729.jar:$CLASSPATH
 
