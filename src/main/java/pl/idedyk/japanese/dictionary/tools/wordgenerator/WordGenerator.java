@@ -1439,6 +1439,41 @@ public class WordGenerator {
 					}
 				}
 				
+				// wczytywanie dodatkowego pliku
+				
+				File customFile = new File("input/custom_prefix_file");
+				
+				if (customFile.isFile() == true) {
+					
+					// wczytywanie dodatkowego pliku
+					
+					List<String> customFileLines = readFile(customFile.getAbsolutePath());
+					
+					for (String currentCustomFileLine : customFileLines) {
+						
+						for (int startIdx = 0; startIdx < currentCustomFileLine.length(); ++startIdx) {
+							
+							for (int endIdx = 0; endIdx <= currentCustomFileLine.length(); ++endIdx) {
+								
+								if (endIdx <= startIdx) {
+									continue;
+								}
+																
+								allPrefixes.add(currentCustomFileLine.substring(startIdx, endIdx));
+							}			
+						}
+					}
+					
+				} else {					
+					System.out.println("Brak pliku: " + customFile);
+					
+					Thread.sleep(1000);
+					
+				}
+				
+				//////
+								
+				
 				int currentPrefixCounter = 1;
 				
 				for (String currentPrefix : allPrefixes) {
