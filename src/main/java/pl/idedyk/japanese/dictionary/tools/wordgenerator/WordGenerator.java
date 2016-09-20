@@ -1450,7 +1450,7 @@ public class WordGenerator {
 					List<String> customFileLines = readFile(customFile.getAbsolutePath());
 					
 					for (String currentCustomFileLine : customFileLines) {
-						
+												
 						for (int startIdx = 0; startIdx < currentCustomFileLine.length(); ++startIdx) {
 							
 							for (int endIdx = 0; endIdx <= currentCustomFileLine.length(); ++endIdx) {
@@ -1458,12 +1458,28 @@ public class WordGenerator {
 								if (endIdx <= startIdx) {
 									continue;
 								}
-																
-								allPrefixes.add(currentCustomFileLine.substring(startIdx, endIdx));
+								
+								String substring = currentCustomFileLine.substring(startIdx, endIdx);
+								
+								boolean isAllJapaneseChars = true;
+								
+								for (int substringIdx = 0; substringIdx < substring.length(); ++substringIdx) {
+									
+									if (Utils.isJapanaseChar(substring.charAt(substringIdx)) == false) {
+										
+										isAllJapaneseChars = false;
+										
+										break;
+									}									
+								}
+								
+								if (isAllJapaneseChars == true) {
+									allPrefixes.add(substring);									
+								}
 							}			
 						}
 					}
-					
+										
 				} else {					
 					System.out.println("Brak pliku: " + customFile);
 					
