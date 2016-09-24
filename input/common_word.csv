@@ -356,7 +356,7 @@
 356,1,暑,しょ,[n],"[heat, midsummer]"
 357,1,少,しょう,[pref],"[small, little, few]"
 358,1,頌,しょう,[n],"[praise, hymn (genre of the Shi Jing)]"
-359,,簫,しょう,[n],[xiao (vertical Chinese bamboo flute)]
+359,1,簫,しょう,[n],[xiao (vertical Chinese bamboo flute)]
 360,,濃漿,こんず,[n],[rice water]
 361,1,承,しょう,[n],[second line of a four-line Chinese poem]
 362,,勝,しょう,"[n, suf, ctr]","[win, victory, beautiful scenery, scenic spot, counter for wins]"
@@ -617,14 +617,14 @@
 617,,摩訶,まか,"[n, n-pref]",[maha (great)]
 618,1,槙,まき,[n],[yew plum pine (Podocarpus macrophyllus)]
 619,1,魔器,まき,[n],"[magical focus, magical foci]"
-620,,摩多,また,[n],[vowel (in the Siddham script)]
+620,1,摩多,また,[n],[vowel (in the Siddham script)]
 621,1,迄も,までも,[exp],"[to (an extent), up to, so far as, even, doesn't amount to doing ..., not significant enough to require ..., even if ...]"
 622,1,勿,まな,[adv],"[must not, may not]"
 623,1,末那,まな,[n],"[manas (defiled mental consciousness, which gives rise to the perception of self)]"
 624,1,真名,まな,[n],"[kanji (as opposed to kana), printed-style writing]"
 625,1,虎子,こし,[n],"[bedpan, chamber pot, potty, baby tiger]"
 626,1,虎子,まる,[n],"[bedpan, chamber pot, potty]"
-627,,見ヶ〆,みかじめ,[n],"[supervision, management]"
+627,1,見ヶ〆,みかじめ,[n],"[supervision, management]"
 628,1,針孔,めど,[n],"[eye of a needle, hole]"
 629,1,針眼,みず,[n],[eye of a needle]
 630,,弥陀,みだ,[n],[Amitabha]
@@ -726,7 +726,7 @@
 726,1,-,シーズンイン,[n],[start of a season (e.g. soccer)]
 727,1,-,シフトイン,[n],"[shift in, SI]"
 728,1,-,スネークイン,[n],[sneak in]
-729,,-,ズームイン,[n],[zoom in]
+729,1,-,ズームイン,[n],[zoom in]
 730,1,-,ネットイン,[n],"[net in (tennis), netball falling in]"
 731,1,-,ピットイン,"[n, vs]",[pit stop]
 732,1,-,フレームイン,[n],[frame in]
@@ -955,7 +955,7 @@
 955,1,-,カラーアレンジメント,[n],"[color arrangement, colour arrangement]"
 956,1,-,カラーインク,[n],"[colored ink, coloured ink]"
 957,1,-,カラーコンディショニング,[n],"[color conditioning, colour conditioning]"
-958,,-,カラーコンビネーション,[n],"[color combination, colour combination]"
+958,1,-,カラーコンビネーション,[n],"[color combination, colour combination]"
 959,1,-,カラースプレー,[n],"[color spraypaint, colour spraypaint]"
 960,,-,カラーダイナミックス,[n],"[color dynamics, colour dynamics]"
 961,1,-,カラーディスプレー,[n],"[color display, colour display]"
@@ -1763,7 +1763,7 @@
 1763,1,-,データタイプ,[n],[data type]
 1764,,-,デーライトタイプ,[n],[daylight type]
 1765,1,-,ニュータイプ,[n],[new type]
-1766,,-,タイプミス,[n],"[typographical error, typo]"
+1766,1,-,タイプミス,[n],"[typographical error, typo]"
 1767,,-,ジャケットタイプ,[n],"[jacket type (e.g. a style of clothing), jacket-style buoyancy control device (BCD) shaped like a sleeveless coat]"
 1768,1,-,ベストタイプ,[n],[best type]
 1769,,-,アクションタイプ,[n],[action type]
@@ -1786,7 +1786,7 @@
 1786,1,-,フルフットタイプ,[n],[full foot type scuba fin]
 1787,1,-,ペーパータオル,[n],[paper towel]
 1788,,-,フェイスタオル,[n],[face towel]
-1789,,-,ビーチタオル,[n],[beach towel]
+1789,1,-,ビーチタオル,[n],[beach towel]
 1790,,-,ラップタオル,[n],"[wrap towel, towel wrap, large towel with fasteners (e.g. worn for privacy while changing clothes)]"
 1791,1,タバコモザイク病,タバコモザイクびょう,[n],[tobacco mosaic]
 1792,,-,キイロハギ,[n],"[yellow tang (Zebrasoma flavescens, species of Pacific tang)]"
@@ -1974,7 +1974,7 @@
 1974,1,-,ドアーヒンヂ,[n],[door hinge]
 1975,,-,ドアスコープ,[n],[peep hole]
 1976,,-,バックドア,[n],[back door]
-1977,,-,ドアビーム,[n],[door beam]
+1977,1,-,ドアビーム,[n],[door beam]
 1978,,-,キャビネットフロントドア,[n],[cabinet front door]
 1979,1,独逸,ドイツ,[n],[Germany]
 1980,1,-,ドイツパン,[n],[German bread]
@@ -2068,7 +2068,7 @@
 2068,,-,カレントニュース,[n],[current news]
 2069,1,-,ラジオニュース,[n],[radio news]
 2070,1,-,ニュースオンデマンド,[n],[news on demand]
-2071,,-,ヌー,[n],[gnu]
+2071,1,-,ヌー,[n],[gnu]
 2072,,-,オールヌード,[n],"[totally naked, buck naked]"
 2073,1,-,フルヌード,[n],"[totally naked, buck naked]"
 2074,1,-,ネクタイピン,[n],[necktie pin]
@@ -2126,7 +2126,7 @@
 2126,1,-,ハイキューブ,[n],[high cubic capacity (used for measuring shipping containers)]
 2127,,-,ハイポリマー,[n],[high polymer]
 2128,1,-,ハイデフィニション,[adj-f],[high-definition (e.g. television)]
-2129,,-,ハイスペック,[n],[high spec]
+2129,1,-,ハイスペック,[n],[high spec]
 2130,1,-,ハイテンション,[n],"[high tension (as in electronics, etc.), excited, enthusiastic]"
 2131,1,-,ハイリターン,[adj-na],[high return]
 2132,,-,ハイリスク,[adj-na],[high risk]
@@ -2186,7 +2186,7 @@
 2186,1,-,ハードセクター,[n],[hard sector]
 2187,1,-,ハードドライブ,[n],[hard drive]
 2188,,-,ハードハイフン,[n],[hard hyphen]
-2189,,-,ハードパッチ,[n],[hard patch]
+2189,1,-,ハードパッチ,[n],[hard patch]
 2190,1,-,ハードカレンシー,[n],[hard currency]
 2191,,-,ハードパンチャー,[n],[hard puncher]
 2192,1,-,ハードトレーニング,[n],[hard training]
@@ -2352,7 +2352,7 @@
 2352,,-,オールドパー,[n],[Old Parr]
 2353,1,-,パーセーブ,[n],"[par save (in golf, number of shots above par for that hole)]"
 2354,1,-,パーオン,[n],"[on par (in golf, meeting par for that hole)]"
-2355,,-,ナックルパート,[n],[knuckle part]
+2355,1,-,ナックルパート,[n],[knuckle part]
 2356,1,-,ヒトキメラ,[n],[human chimera]
 2357,1,人ゲノム,ひとゲノム,[n],[human genome]
 2358,,-,コアビジネス,[n],[core business]
@@ -2478,7 +2478,7 @@
 2478,1,-,ピンクレディー,[n],[pink lady]
 2479,1,-,ベビーピンク,[n],[baby pink]
 2480,,-,ローズピンク,[n],[rose pink]
-2481,,-,ピンクコンパニオン,[n],[female escort]
+2481,1,-,ピンクコンパニオン,[n],[female escort]
 2482,,-,フラ,[n],[hula (dance)]
 2483,1,-,フライズ,[n],"[flies, area over the stage of a theater (containing overhead lights, drop curtains, etc.)]"
 2484,1,-,フラフープ,[n],"[hula hoop, Hula-Hoop]"
@@ -2618,7 +2618,7 @@
 2618,1,-,プロリーグ,[n],[professional league (sport)]
 2619,,-,プロボクサー,[n],"[prizefighter, pro boxer, professional boxer, pugilist]"
 2620,1,-,プロバスケットボールリーグ,[n],[professional basketball league]
-2621,,-,プロバレエダンサー,[n],[professional ballet dancer]
+2621,1,-,プロバレエダンサー,[n],[professional ballet dancer]
 2622,,-,プロファイルエディタ,[n],[profile editor]
 2623,1,希伯来,ヘブライ,"[n, adj-f]",[Hebrew]
 2624,,ヘボン式,ヘボンしき,[n],[Hepburn system (of romaji)]
@@ -2909,7 +2909,7 @@
 2909,1,-,アクリルレンズ,[n],[acrylic lens]
 2910,,-,コーテッドレンズ,[n],[coated lens]
 2911,,-,レンズシャッター,[n],[lens shutter]
-2912,,-,フィッシュアイレンズ,[n],[fisheye lens]
+2912,1,-,フィッシュアイレンズ,[n],[fisheye lens]
 2913,1,-,イオンロケット,[n],[ion rocket]
 2914,,-,ロケットランチャー,[n],[rocket launcher]
 2915,1,-,ロケットエンジン,[n],"[rocket engine, rocket motor]"
@@ -3139,7 +3139,7 @@
 3139,1,共働,きょうどう,"[n, adj-no]",[coaction]
 3140,,内分,ないぶん,"[n, vs]","[secret, confidential]"
 3141,,内憂,ないゆう,[n],[internal or domestic troubles]
-3142,,内観,ないかん,"[n, vs]",[introspection]
+3142,1,内観,ないかん,"[n, vs]",[introspection]
 3143,,内閣法,ないかくほう,[n],[Cabinet Law]
 3144,1,円相,えんそう,[n],[circle painted with a single stroke in Zen calligraphy]
 3145,1,再入,さいにゅう,"[n, n-pref]","[re-entry, reentry, readmittance]"
@@ -3453,7 +3453,7 @@
 3453,1,情報化,じょうほうか,"[n, vs]","[computerization, computerisation]"
 3454,,憂え,うれえ,[n],"[lamentation, grief, anguish, anxiety, illness, mourning]"
 3455,1,愛し,はし,[adj-shiku],"[lovely, beloved, sweet, adorable]"
-3456,,感圧,かんあつ,"[n, adj-no]",[pressure sensitivity]
+3456,1,感圧,かんあつ,"[n, adj-no]",[pressure sensitivity]
 3457,1,懐かし,なつかし,[adj-no],"[dear, desired, missed]"
 3458,1,懐中,かいちゅう,"[n, vs]",[one's pocket]
 3459,,懐石,かいせき,[n],"[simple meal eaten before tea is served, sophisticated traditional Japanese cuisine brought in courses]"
@@ -3816,7 +3816,7 @@
 3816,1,置き土,おきつち,[n],[earth taken from elsewhere and placed atop]
 3817,1,置き換え,おきかえ,[n],"[replacement, substitute, displacement, transposition, reset]"
 3818,,羅針,らしん,[n],[compass needle]
-3819,,羊皮,ようひ,[n],"[sheep skin, fleece, parchment]"
+3819,1,羊皮,ようひ,[n],"[sheep skin, fleece, parchment]"
 3820,,美辞,びじ,[n],"[flowery language, pretty words]"
 3821,,群雄,ぐんゆう,[n],[rival chiefs]
 3822,1,義侠,ぎきょう,[n],"[chivalry, generosity]"
@@ -4361,7 +4361,7 @@
 4361,1,双極子,そうきょくし,[n],[dipole]
 4362,,走行会,そうこうかい,[n],"[track meet (non-competitive driving on a race course), track day, track event]"
 4363,1,早東戦,そうとうせん,[n],[(baseball) game between Waseda and Tokyo universities]
-4364,,対抗試合,たいこうじあい,[n],"[match, tournament, interschool match]"
+4364,1,対抗試合,たいこうじあい,[n],"[match, tournament, interschool match]"
 4365,,対称的,たいしょうてき,[adj-na],[symmetrical]
 4366,1,対症的,たいしょうてき,[adj-na],"[temporary (of medical care), pallative, dealing only with the symptoms, symptomatic, superficial]"
 4367,1,対情報,たいじょうほう,[n],[counter-intelligence]
@@ -4554,7 +4554,7 @@
 4554,,-,アルゼンチンタンゴ,[n],[Argentine tango]
 4555,,-,アンゼリカ,[n],"[angelica (any herb of the genus Angelica, esp. garden angelica, Angelica archangelica)]"
 4556,,-,アンチークファッション,[n],[antique fashion]
-4557,,-,クローズドアーキテクチャ,[n],[closed architecture]
+4557,1,-,クローズドアーキテクチャ,[n],[closed architecture]
 4558,,-,システムアーキテクチャ,[n],[system architecture]
 4559,1,-,スイッチアーキテクチャ,[n],[switch architecture]
 4560,,-,ネットワークアーキテクチャ,[n],[network architecture]
@@ -4959,7 +4959,7 @@
 4959,1,-,コントロールプログラム,[n],"[control program, control programme]"
 4960,1,-,ストックコントロール,[n],[stock control]
 4961,,-,フライトコントロール,[n],[flight control]
-4962,,-,プロセスコントロール,[n],[process control]
+4962,1,-,プロセスコントロール,[n],[process control]
 4963,1,-,プロダクションコントロール,[n],[production control]
 4964,1,-,ボリュームコントロール,[n],[volume control]
 4965,1,-,マインドコントロール,"[n, vs]",[mind-control]
@@ -5052,7 +5052,7 @@
 5052,,-,コンフィギュレーションメモリ,[n],[configuration memory]
 5053,,-,システムコンフィギュレーション,[n],[system configuration]
 5054,1,-,メモリコンフィギュレーション,[n],[memory configuration]
-5055,,-,インフェリオリティーコンプレックス,[n],[inferiority complex]
+5055,1,-,インフェリオリティーコンプレックス,[n],[inferiority complex]
 5056,1,-,エディプスコンプレックス,[n],"[Oedipus complex, sexual attraction to one's mother]"
 5057,1,-,エレクトラコンプレックス,[n],[Electra complex]
 5058,,-,シンデレラコンプレックス,[n],[Cinderella complex]
@@ -5703,7 +5703,7 @@
 5703,1,-,アナリストミーティング,[n],[analyst meeting]
 5704,,-,タウンミーティング,[n],[town meeting]
 5705,1,-,オフラインミーティング,[n],[off-line meeting]
-5706,,-,ミーティングルーム,[n],[meeting room]
+5706,1,-,ミーティングルーム,[n],[meeting room]
 5707,1,-,マスムーブメント,[n],[mass movement]
 5708,1,メトロポリス・ヘイスティングス法,メトロポリス・ヘイスティングスほう,[n],[Metropolis-Hastings algorithm]
 5709,1,-,システムメンテナンス,[n],[system maintenance]
@@ -5785,8 +5785,8 @@
 5785,1,-,ユーザーガイド,[n],"[user guide, users' guide]"
 5786,,-,シングルユーザー,[n],[single user]
 5787,,-,パワーユーザー,[n],[power user]
-5788,,-,ヘビーユーザー,[n],[heavy user]
-5789,,-,ユーザーインタフェース,[n],[user interface]
+5788,1,-,ヘビーユーザー,[n],[heavy user]
+5789,1,-,ユーザーインタフェース,[n],[user interface]
 5790,1,-,ユーザーサポート,[n],[user support]
 5791,1,-,ユーザートラヒック,[n],[user traffic]
 5792,,-,ライトユーザー,[n],[light user]
@@ -6979,7 +6979,7 @@
 6979,1,殿上,てんじょう,[n],"[the court, palace circles, palace floor]"
 6980,,纏繞,てんじょう,"[n, vs]","[twining around, entangling]"
 6981,1,私窩子,しかし,[n],"[prostitute, harlot]"
-6982,,世途,せいと,[n],"[the world, the path of life]"
+6982,1,世途,せいと,[n],"[the world, the path of life]"
 6983,,征途,せいと,[n],[(military or pleasure) expedition]
 6984,,星斗,せいと,[n],[star]
 6985,,聖徒,せいと,[n],"[disciple, adherent]"
@@ -15604,7 +15604,7 @@
 15604,,協心,きょうしん,"[n, vs]","[unison, accord]"
 15605,,強振,きょうしん,"[n, vs]",[swinging hard]
 15606,,実員,じついん,[n],[actual number of people]
-15607,,着荷,ちゃっか,"[n, vs]",[arrival of goods]
+15607,1,着荷,ちゃっか,"[n, vs]",[arrival of goods]
 15608,,着果,ちゃっか,"[n, vs]","[to bear fruit, to produce fruit or vegetables (for a plant)]"
 15609,1,詩趣,ししゅ,[n],[poetic]
 15610,,旨酒,うまさけ,[n],"[high-grade sake, good sake]"
@@ -24550,7 +24550,7 @@
 24550,,-,マリー・セレスト,[n],"[Mary Celeste, famous British ship found in 1872 without crew or passengers, archetypal ghost ship, unmanned ship]"
 24551,,-,マルタ,[n],[Malta]
 24552,,-,マルツ,[n],[malt]
-24553,,-,マロングラッセ,[n],[marrons glacés]
+24553,1,-,マロングラッセ,[n],[marrons glacés]
 24554,,-,マンガンノジュール,[n],[manganese nodule]
 24555,,-,マンガンクラスト,[n],[manganese crust]
 24556,,-,マングース,[n],[mongoose]
@@ -24791,7 +24791,7 @@
 24791,,-,アタッチメントユニットインタフェース,[n],"[attachment unit interface, AUI]"
 24792,1,-,ライオンタマリン,[n],[lion tamarin]
 24793,,-,ライスケイク,[n],[rice cake]
-24794,,-,アップリンクライセンス,[n],[uplink license]
+24794,1,-,アップリンクライセンス,[n],[uplink license]
 24795,,-,シガーライター,[n],"[cigarette lighter (in an automobile), car cigar lighter]"
 24796,,-,ルポライター,[n],"[reportage writer, documentary writer]"
 24797,1,-,シガレットライター,[n],[(car) cigarette lighter]
@@ -32213,7 +32213,7 @@
 32213,,装る,よそる,"[v5r, vt]","[to serve, to dish up, to prepare]"
 32214,,-,よぼよぼ,"[adj-na, adv, n, vs]","[unsteady, tottering, weak from old age, infirm]"
 32215,,読み込む,よみこむ,"[v5m, vt]","[to read thoroughly, to read repeatedly, to express (e.g. emotion in poetry), to read (extra meaning) into (something), to fetch (e.g. CPU inst.), to read (data into a system), to load]"
-32216,,詠み込む,よみこむ,[v5m],"[to include in a poem (season word, place name, etc.)]"
+32216,1,詠み込む,よみこむ,[v5m],"[to include in a poem (season word, place name, etc.)]"
 32217,,余類,よるい,[n],[remnants of a party or a gang]
 32218,,来県,らいけん,"[n, vs]",[coming to a prefecture]
 32219,,吏人,りじん,[n],[officials]
