@@ -830,7 +830,7 @@
 830,,-,オリーブグリーン,[n],[olive green]
 831,,-,オリーブドラブ,[n],[olive drab]
 832,1,-,オーレ,"[int, n]","[olé, øre, Danish or Norwegian monetary unit equal to one hundredth of a krone, öre, Swedish monetary unit equal to one hundredth of a krona]"
-833,,-,オレ,[int],[olé]
+833,1,-,オレ,[int],[olé]
 834,1,-,オレンジジュース,[n],[orange juice]
 835,1,-,ネーブルオレンジ,[n],[navel orange]
 836,1,-,オレンジカード,[n],[orange card (pre-paid ticket)]
@@ -3469,7 +3469,7 @@
 3469,,才略,さいりゃく,[n],[wise planning]
 3470,,抜本,ばっぽん,"[n, adj-f]","[eradication, drastic]"
 3471,,抜本,ぬきほん,[n],"[excerpt, selection]"
-3472,,擬き,もどき,"[n-suf, n]","[-like, pseudo-, mock ..., imitation ..., in the style of ..., comical character who mocks or apes the main character (in Japanese performing arts), criticism, censure]"
+3472,1,擬き,もどき,"[n-suf, n]","[-like, pseudo-, mock ..., imitation ..., in the style of ..., comical character who mocks or apes the main character (in Japanese performing arts), criticism, censure]"
 3473,1,押しかけ,おしかけ,[n],"[uninvited (visitor), stalker]"
 3474,1,押し付け,おしつけ,[n],"[imposition (i.e. of rules, of a decision), compulsion]"
 3475,,押し上げ,おしあげ,[n],"[upheaval, upthrust, uplift]"
@@ -5921,7 +5921,7 @@
 5921,,米印,こめじるし,[n],"[rice symbol, note (supplementary information) symbol, symbol with an ""x"" and four dots]"
 5922,1,吃,チー,[n],[said when taking a tile discarded by the player to one's left to form a chow]
 5923,1,周,しゅう,"[n, n-suf, ctr]","[Zhou (dynasty of China), Chou, perimeter, counter for laps or circuits]"
-5924,,呪り,かしり,[n],"[spell, curse]"
+5924,1,呪り,かしり,[n],"[spell, curse]"
 5925,1,哲,てつ,"[n, adj-na]","[sage, wise man, philosopher, disciple, sagacity, wisdom, intelligence]"
 5926,1,嘔,むかつき,[n],"[getting nauseated, getting angry]"
 5927,1,増,ぞう,[n],[increase]
@@ -16462,7 +16462,7 @@
 16462,,見とる,みとる,"[v5r, vt]","[to perceive, to understand]"
 16463,,朝議,ちょうぎ,[n],"[court council, privy council]"
 16464,,着袴,ちゃっこ,[n],[ceremony of fitting child with a hakama]
-16465,,広葉樹林,こうようじゅりん,[n],"[broad-leaved forest, broadleaf forest]"
+16465,1,広葉樹林,こうようじゅりん,[n],"[broad-leaved forest, broadleaf forest]"
 16466,,野巫,やぶ,[n],"[rural female shaman, unlearned Zen practitioner]"
 16467,,共同疎開,きょうどうそかい,[n],[community evacuation]
 16468,,共同祖界,きょうどうそかい,[n],[international settlement]
@@ -16578,7 +16578,7 @@
 16578,,韻書,いんしょ,[n],[Chinese dictionary arranged by finals]
 16579,,陰部,いんぶ,[n],[the genital area]
 16580,,韻母,いんぼ,[n],[final (Chinese)]
-16581,,迂愚,うぐ,"[adj-na, n]","[stupid, ignorant]"
+16581,1,迂愚,うぐ,"[adj-na, n]","[stupid, ignorant]"
 16582,,石斑魚,うぐい,[n],[Japanese dace (Tribolodon hakonensis)]
 16583,1,薄雲,うすぐも,[n],[thin clouds]
 16584,1,薄目,うすめ,[n],"[half-open eyes, half-closed eyes]"
@@ -18183,7 +18183,7 @@
 18183,,墓域,ばいき,[n],"[cemetery area, land set aside for burial]"
 18184,1,曝書,ばくしょ,"[n, vs]",[airing of books]
 18185,,真っしぐら,まっしぐら,[adv],"[at full speed, impetuously, precipitately, headlong]"
-18186,,博奕,ばくえき,[n],[gambling]
+18186,1,博奕,ばくえき,[n],[gambling]
 18187,,幕吏,ばくり,[n],[shogunate official]
 18188,,曝気,ばっき,"[n, vs]",[aeration]
 18189,,馬齢,ばれい,[n],[humble term for refer to one's own age]
@@ -28544,7 +28544,7 @@
 28544,,句を作る,くをつくる,"[exp, v5r]",[to compose a haiku poem]
 28545,,君主国,くんしゅこく,[n],[monarchy]
 28546,,-,ぐない,[int],[good night]
-28547,,愚昧,ぐまい,"[adj-na, n]",[stupid]
+28547,1,愚昧,ぐまい,"[adj-na, n]",[stupid]
 28548,,愚妹,ぐまい,[n],[younger sister]
 28549,,茱萸,ぐみ,[n],"[oleaster (any plant of genus Elaeagnus), silverberry (US)]"
 28550,,-,ぐむ,"[suf, v5m]","[to appear, to start to appear, to show signs of appearing]"
@@ -30408,7 +30408,7 @@
 30408,1,-,オリックス,[n],"[oryx (esp. the gemsbok, Oryx gazella)]"
 30409,,-,ベイサオリックス,[n],[beisa oryx (Oryx beisa)]
 30410,,ＯＬ,オーエル,[n],"[female office worker, office lady, OL, overlap, orienteering]"
-30411,,ＯＬＥ,オーエルイー,[n],"[OLE, object linking and embedding]"
+30411,1,ＯＬＥ,オーエルイー,[n],"[OLE, object linking and embedding]"
 30412,,-,カシア,[n],[cassia (Cinnamomum aromaticum)]
 30413,,-,カナダバルサム,[n],[Canada balsam (resin obtained from balsam fir)]
 30414,,カナダ藻,カナダも,[n],"[waterweed (any aquatic plant of genus Elodea, esp. common waterweed, Elodea canadensis)]"
@@ -31597,7 +31597,7 @@
 31597,,隠り世,かくりよ,[n],"[afterlife, realm of the dead]"
 31598,,隠熊之実,かくれくまのみ,[n],[Ocellaris clownfish (Amphiprion ocellaris)]
 31599,,隠れん坊,かくれんぼ,[n],"[hide-and-seek (the game), hide-and-go-seek]"
-31600,,梶木,かじき,[n],"[marlin, swordfish, spearfish, sailfish]"
+31600,1,梶木,かじき,[n],"[marlin, swordfish, spearfish, sailfish]"
 31601,,かすみ草,かすみそう,[n],"[common gypsophila (Gypsophila elegans), baby's breath, babies' breath, soaproot]"
 31602,,型通り,かたどおり,[adj-na],"[formal, proper, prescribed, conventional, stereotypical]"
 31603,,渇する,かっする,"[vs-s, vi]","[to be thirsty, to be dry]"
@@ -34493,7 +34493,7 @@
 34493,,-,コズミック,[n],[cosmic]
 34494,,-,コネクト,"[n, vs]",[connect]
 34495,1,-,コプロ,[n],[coprocessor]
-34496,,-,コプロセッサ,[n],[coprocessor]
+34496,1,-,コプロセッサ,[n],[coprocessor]
 34497,,-,コマース,[n],[commerce]
 34498,,-,コミッティー,[n],[committee]
 34499,,-,コミットメント,[n],[commitment]
