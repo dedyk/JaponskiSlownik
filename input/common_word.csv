@@ -156,7 +156,7 @@
 156,,暈,かさ,[n],"[astronomical halo (ring, etc.)]"
 157,1,瘡,かさ,[n],"[pustule, scab, syphilis, pox]"
 158,,滓,かす,[n],"[dregs, sediment, grounds, meal, lees (esp. sake), leftovers, by-product, worthless item, thing of little to no value, dregs (e.g. of society), scum, dross, card only worth 1 point (in hanafuda)]"
-159,,科す,かす,[v5s],"[to inflict, to impose (a fine, etc.)]"
+159,1,科す,かす,[v5s],"[to inflict, to impose (a fine, etc.)]"
 160,1,嫁す,かす,[v5s],"[to wed, to be married, to shift blame to someone else]"
 161,,仮す,かす,"[v5s, vt]","[to grant, to allow, to forgive]"
 162,1,掠り,かすり,[n],"[grazing, touching lightly, squeezing (someone for money), percentage, kickback]"
@@ -513,7 +513,7 @@
 513,1,-,どちらか,[n],"[either, one (of the two)]"
 514,1,-,どら,"[n-pref, n, int]","[loafing, indolent, lazy, debauched, profligate, hey]"
 515,1,-,でら,[adv],"[very, awfully, exceedingly]"
-516,,無いと,ないと,[exp],"[have to (verb), must (verb), is indispensable, absolutely necessary]"
+516,1,無いと,ないと,[exp],"[have to (verb), must (verb), is indispensable, absolutely necessary]"
 517,1,梛,なぎ,[n],"[nagi (species of conifer, Nageia nagi)]"
 518,,水葱,なぎ,[n],[Monochoria korsakowii (species of flowering plant)]
 519,1,-,なんぞ,[prt],"[et cetera, etc., and the like, and so forth]"
@@ -1064,7 +1064,7 @@
 1064,,-,サービスカー,[n],[service car]
 1065,,-,スタントカー,[n],[stunt car]
 1066,,-,ストックカー,[n],[stock car]
-1067,,-,バキュームカー,[n],"[septic tank truck, honey wagon]"
+1067,1,-,バキュームカー,[n],"[septic tank truck, honey wagon]"
 1068,1,-,ファミリーカー,[n],[family car]
 1069,1,-,マルチパーパスカー,[n],[multipurpose car]
 1070,1,-,ミニチュアカー,[n],[miniature car]
@@ -1237,7 +1237,7 @@
 1237,,-,フォークギター,[n],[folk guitar]
 1238,1,-,フラメンコギター,[n],[flamenco guitar]
 1239,1,-,クラシックギター,[n],[classic guitar]
-1240,,-,ガットギター,[n],[gut guitar]
+1240,1,-,ガットギター,[n],[gut guitar]
 1241,,-,ソリッドギター,[n],[solid guitar]
 1242,,-,クラシックライフ,[n],[classic life]
 1243,1,-,クラシックレース,[n],[classic races]
@@ -1269,7 +1269,7 @@
 1269,,-,グローランプ,[n],[glow lamp]
 1270,1,-,グローバルパワー,[n],[global powers]
 1271,1,-,グローバルビレッジ,[n],[global village]
-1272,,-,グローバルマーケット,[n],[global market]
+1272,1,-,グローバルマーケット,[n],[global market]
 1273,1,-,グローバルサプライチェーン,[n],[global supply-chain]
 1274,1,-,グローバルスタンダード,[n],[global standards]
 1275,,-,グローバルデフレ,[n],[global deflation]
@@ -1799,11 +1799,11 @@
 1799,1,-,ダイヤモンドカーソル,[n],[diamond cursor]
 1800,1,-,ダイヤモンドダスト,[n],[diamond dust]
 1801,1,-,ダイヤモンドリング,[n],[diamond ring]
-1802,,-,ダイヤモンドテトラ,[n],[diamond tetra (Moenkhausia pittieri)]
+1802,1,-,ダイヤモンドテトラ,[n],[diamond tetra (Moenkhausia pittieri)]
 1803,1,-,ダイヤモンドルース,[n],[loose diamonds]
 1804,,-,ダウ,[n],"[Dow (i.e. Dow-Jones), dhow]"
 1805,,ダウ平均,ダウへいきん,[n],[the Dow (i.e. the Dow Jones Industrial Average)]
-1806,,-,ノーダウン,[n],[no outs]
+1806,1,-,ノーダウン,[n],[no outs]
 1807,1,-,ゴーゴーダンス,[n],[go-go dance]
 1808,1,-,ジャズダンス,[n],[jazz dance]
 1809,,-,スクエアダンス,[n],[square dance]
@@ -1826,7 +1826,7 @@
 1826,,-,ソシアルダンス,[n],"[social dance, social dancing]"
 1827,1,-,ダンスパートナー,[n],"[dance partner, partner]"
 1828,1,-,チャオ,[int],[ciao]
-1829,,歴青,れきせい,[n],"[asphalt, bitumen]"
+1829,1,歴青,れきせい,[n],"[asphalt, bitumen]"
 1830,,-,アークティックチャー,[n],[arctic char (Salvelinus alpinus)]
 1831,1,-,チリソース,[n],"[chili sauce, chilli sauce]"
 1832,1,-,チリペッパー,[n],"[chili pepper, chilli pepper]"
@@ -2229,7 +2229,7 @@
 2229,,-,リムジンバス,[n],[airport shuttle bus]
 2230,1,-,リフトバス,[n],[kneeling bus]
 2231,,-,アドレスバス,[n],[address bus]
-2232,,-,トークンバス,[n],[token bus]
+2232,1,-,トークンバス,[n],[token bus]
 2233,1,-,バスアービトレーション,[n],[bus arbitration]
 2234,1,-,バスエラー,[n],[bus error]
 2235,,-,バスクロック,[n],"[bus clock, bath clock, bathroom clock]"
@@ -2241,7 +2241,7 @@
 2241,,-,ローカルバス,[n],[local bus]
 2242,1,-,ディマンドバス,[n],[demand bus]
 2243,,-,バスケープ,[n],[bath cape]
-2244,,-,ウオーターバス,[n],[water bath]
+2244,1,-,ウオーターバス,[n],[water bath]
 2245,,-,バードバス,[n],"[bird bath, bird-bath]"
 2246,,-,ユニットバス,[n],"[modular bath, prefabricated bath]"
 2247,1,-,ストライプドバス,[n],"[striped bass (Morone saxatilis), Atlantic striped bass, stripers, linesiders, pimpfish, rockfish]"
@@ -2933,7 +2933,7 @@
 2933,1,-,ローティーン,[n],[early teens]
 2934,,-,ローネック,[n],[low-necked collar]
 2935,1,-,ロースクール,[n],[law school]
-2936,,-,スーパーロー,[exp],[super-low (description of a small truck with a low tray)]
+2936,1,-,スーパーロー,[exp],[super-low (description of a small truck with a low tray)]
 2937,,-,フラットロー,[n],[small truck]
 2938,,-,ローキック,[n],[low kick (e.g. in fighting)]
 2939,,-,ローテーブル,[n],"[low table, table with very short legs]"
@@ -3012,7 +3012,7 @@
 3012,,一目散,いちもくさん,[n],"[at full speed, as fast as one can go]"
 3013,1,一直,いっちょく,[n],[lining out to first base]
 3014,,一眠,いちみん,[n],[the first sleep (of silkworms)]
-3015,,一辺,いっぺん,[n],[side of a geometric shape (e.g. triangle or rectangle)]
+3015,1,一辺,いっぺん,[n],[side of a geometric shape (e.g. triangle or rectangle)]
 3016,1,一酸化,いっさんか,"[adj-na, n]",[monoxide]
 3017,,一里,いちり,[n],[2.44 miles]
 3018,1,一騎,いっき,[n],[one horseman]
@@ -3098,7 +3098,7 @@
 3098,1,付合,つけあい,[n],[linking poems]
 3099,,仙台,せんだい,[n],[Sendai (city)]
 3100,,仮名文,かなぶみ,[n],[publication in kana alone]
-3101,,仰せ,おおせ,[n],"[statement, command, wishes (of a superior)]"
+3101,1,仰せ,おおせ,[n],"[statement, command, wishes (of a superior)]"
 3102,1,任せ,まかせ,[n-suf],[leaving everything up to someone else]
 3103,1,伍す,ごす,"[v5s, vi]","[to rank with, to rank among]"
 3104,,休す,きゅうす,"[v5s, vi]","[to come to an end, to rest]"
@@ -3249,7 +3249,7 @@
 3249,1,向日,こうじつ,[n],[anthelion (optical phenomenon)]
 3250,1,否定的,ひていてき,[adj-na],"[negative, contradictory]"
 3251,,吸水,きゅうすい,"[n, vs]",[water absorption]
-3252,,吸血,きゅうけつ,"[n, adj-no]","[bloodsucking, sucking blood]"
+3252,1,吸血,きゅうけつ,"[n, adj-no]","[bloodsucking, sucking blood]"
 3253,1,吹き,ふき,"[n, n-suf]","[blowing (e.g. of the wind), playing (a wind instrument), player (e.g. clarinet), (pair of) bellows, casting, founding, melting]"
 3254,1,吹奏,すいそう,"[n, vs]",[playing wind instruments]
 3255,,呈す,ていす,"[v5s, vt]","[to present, to offer, to give, to show, to display, to exhibit, to assume (e.g. a shape)]"
@@ -3472,7 +3472,7 @@
 3472,1,擬き,もどき,"[n-suf, n]","[-like, pseudo-, mock ..., imitation ..., in the style of ..., comical character who mocks or apes the main character (in Japanese performing arts), criticism, censure]"
 3473,1,押しかけ,おしかけ,[n],"[uninvited (visitor), stalker]"
 3474,1,押し付け,おしつけ,[n],"[imposition (i.e. of rules, of a decision), compulsion]"
-3475,,押し上げ,おしあげ,[n],"[upheaval, upthrust, uplift]"
+3475,1,押し上げ,おしあげ,[n],"[upheaval, upthrust, uplift]"
 3476,1,押し目,おしめ,[n],"[weakness, dip]"
 3477,1,押っ,おっ,[pref],"[vigorously ..., suddenly ...]"
 3478,1,拉致,らち,"[n, vs]","[taking captive, carrying away, kidnapping, kidnaping, abduction]"
@@ -4067,11 +4067,11 @@
 4067,,高機,たかばた,[n],[traditional Japanese treadle-operated tall loom]
 4068,,高飛び,たかとび,"[n, vs]","[flight, escape, running away, fleeing, flying high]"
 4069,,鬼子,おにご,[n],"[child born with teeth, child which does not resemble its parents, changeling, wild child, badly-behaved child]"
-4070,,鳥瞰,ちょうかん,"[n, vs]",[bird's-eye view]
+4070,1,鳥瞰,ちょうかん,"[n, vs]",[bird's-eye view]
 4071,1,黄変,おうへん,"[n, vs]",[turning yellow]
 4072,1,黄道,こうどう,[n],[ecliptic]
 4073,,鼻高,はなたか,"[adj-na, n]","[high nose, person with a high nose, pride]"
-4074,,齧歯,げっし,[n],[rodent]
+4074,1,齧歯,げっし,[n],[rodent]
 4075,1,辛み,つらみ,[n],"[pent-up resentment, grudges and hard feelings]"
 4076,1,稲虫,いなむし,[n],[rice pest]
 4077,1,四魔,しま,[n],[the four kinds of demons that make trouble for sentient beings]
@@ -4158,7 +4158,7 @@
 4158,1,皓々,こうこう,"[adj-t, adv-to]","[bright (esp. of the moon), broad and empty]"
 4159,1,皎々,きょうきょう,"[adj-t, adv-to]",[bright (esp. of the moon)]
 4160,1,協議会,きょうぎかい,[n],"[conference, convention]"
-4161,,嬌羞,きょうしゅう,[n],[charming and coy]
+4161,1,嬌羞,きょうしゅう,[n],[charming and coy]
 4162,1,共修,きょうしゅう,"[n, vs]","[studying together (esp. of males and females), coeducation]"
 4163,,強縮,きょうしゅく,"[adj-na, n]",[tetanus]
 4164,1,矯飾,きょうしょく,"[n, vs]","[affectation, pretense, pretence]"
@@ -4279,7 +4279,7 @@
 4279,1,猩々,しょうじょう,[n],"[orangutan, heavy drinker]"
 4280,,小乗,しょうじょう,[n],[Hinayana (the Lesser Vehicle)]
 4281,1,蕭条,しょうじょう,"[adj-t, adv-to]","[dreary, bleak, lonely]"
-4282,,正定,しょうじょう,[n],[right concentration]
+4282,1,正定,しょうじょう,[n],[right concentration]
 4283,,商船旗,しょうせんき,[n],[merchant flag]
 4284,1,正長,しょうちょう,[n],[Shouchou era (1428.4.27-1429.9.5)]
 4285,1,簫の笛,しょうのふえ,[n],[xiao (vertical Chinese bamboo flute)]
@@ -5184,7 +5184,7 @@
 5184,,-,セキュリティホスト,[n],[security host]
 5185,,-,セキュリティリスク,[n],[security risk]
 5186,1,-,セキュリティログ,[n],[security log]
-5187,,-,ナショナルセキュリティー,[n],[national security]
+5187,1,-,ナショナルセキュリティー,[n],[national security]
 5188,1,-,アジェンダセッティング,[n],[agenda setting]
 5189,1,-,ファインセラミックス,[n],[fine ceramics]
 5190,1,-,ナチュラルセレクション,[n],[natural selection]
@@ -5341,7 +5341,7 @@
 5341,,-,バイポーラートランジスター,[n],[bipolar transistor]
 5342,,-,スカルプトリートメント,[n],[scalp treatment]
 5343,1,-,ボディートリートメント,[n],[body treatment]
-5344,,-,アサーティブネストレーニング,[n],[assertiveness training]
+5344,1,-,アサーティブネストレーニング,[n],[assertiveness training]
 5345,,-,インターバルトレーニング,[n],[interval training]
 5346,1,-,ウエートトレーニング,[n],[weight training]
 5347,,-,サーキットトレーニング,[n],[circuit training]
@@ -5666,7 +5666,7 @@
 5666,1,-,ミュージカルショー,[n],[musical show]
 5667,1,-,ミュージカルプレー,[n],[musical play]
 5668,,-,ミュージカルボックス,[n],[musical box]
-5669,,-,ミュージカルグラス,[n],[musical glasses]
+5669,1,-,ミュージカルグラス,[n],[musical glasses]
 5670,,-,ウエスタンミュージック,[n],[Western music]
 5671,,-,エレクトロニックミュージック,[n],[electronic music]
 5672,,-,カントリーミュージック,[n],[country music]
@@ -5818,7 +5818,7 @@
 5818,1,危,き,[n],"[danger, Chinese ""rooftop"" constellation (one of the 28 mansions)]"
 5819,,箕,き,[n],"[Chinese ""winnowing basket"" constellation (one of the 28 mansions)]"
 5820,1,紀,き,[n],"[period, Nihon-shoki]"
-5821,,綺,き,[n],[thin twilled silk fabric]
+5821,1,綺,き,[n],[thin twilled silk fabric]
 5822,,騎,き,[ctr],[counter for horsemen]
 5823,,矩,く,[n],[quadrature]
 5824,,褻,け,"[adj-no, n]","[mundane, commonplace, ordinary]"
@@ -6006,7 +6006,7 @@
 6006,,赤古里,チョゴリ,[n],"[chogori, jeogori, short jacket traditionally worn by Koreans]"
 6007,1,覚,さとり,[n],"[Satori, folklore monster that can read minds]"
 6008,1,触,そく,[n],"[contact, touch, tactile object, uncleanliness]"
-6009,,贈り名,おくりな,[n],[posthumous name]
+6009,1,贈り名,おくりな,[n],[posthumous name]
 6010,1,諱,いみな,[n],"[real name (of a deceased person or a noble), posthumous name]"
 6011,1,諱,ただのみな,[n],[real name (of a deceased person or a noble)]
 6012,,議,ぎ,[n],"[discussion, deliberation, thought, opinion]"
@@ -6027,7 +6027,7 @@
 6027,,銑,ずく,[n],[pig iron]
 6028,1,鋭,えい,"[n, adj-na]","[sharpness, sharp weapon, blade, fine soldier]"
 6029,1,鏨,たがね,[n],"[chisel, burin, graver, engraving tool, gad, jumper, mining tool]"
-6030,,閲,えつ,[n],"[inspection (esp. of a document), stamp of approval (for a document)]"
+6030,1,閲,えつ,[n],"[inspection (esp. of a document), stamp of approval (for a document)]"
 6031,,闌,たけなわ,[adv],"[in full swing, at full height]"
 6032,1,嵯峨,さが,"[adj-t, adv-to]",[precipitous]
 6033,1,震,しん,[n],"[zhen (one of the trigrams of the I Ching: thunder, east)]"
@@ -7366,7 +7366,7 @@
 7366,,死所,ししょ,[n],"[place of death, place to die]"
 7367,,士庶,ししょ,[n],"[samurai and commoners, normal people (as opposed to people of a high social standing)]"
 7368,,詩書,ししょ,[n],"[book of poetry, The Classic of Poetry and The Classic of History (Chinese texts)]"
-7369,,上梓,じょうし,"[n, vs]","[publication, wood-block printing]"
+7369,1,上梓,じょうし,"[n, vs]","[publication, wood-block printing]"
 7370,,上使,じょうし,[n],"[shogun's envoy, emissary]"
 7371,,上旨,じょうし,[n],[the emperor's thoughts]
 7372,,上肢,じょうし,[n],"[upper limbs, arms]"
@@ -11117,7 +11117,7 @@
 11117,,餓狼,がろう,[n],[hungry wolf]
 11118,,山藍,やまあい,[n],[Mercurialis leiocarpa (species of mercury whose leaves can be used to produce an indigo dye)]
 11119,1,僧体,そうたい,[n],[appearance of a Buddhist priest]
-11120,,草体,そうたい,[n],[character written in the highly cursive sōsho style]
+11120,1,草体,そうたい,[n],[character written in the highly cursive sōsho style]
 11121,,不臣,ふしん,[n],"[disloyalty, unfaithfulness]"
 11122,,普請,ふしん,"[n, vs]","[building, construction, group effort by Buddhist practitioners, group activities by a community (e.g. cleaning, etc.)]"
 11123,,浮心,ふしん,[n],"[center of buoyancy, centre of buoyancy]"
@@ -14337,7 +14337,7 @@
 14337,,分列,ぶんれつ,"[n, vs]",[filing off (in a parade)]
 14338,,規定値,きていち,[n],"[control value, minimal required value]"
 14339,1,兀頭,こっとう,[n],"[bald head, baldness]"
-14340,,詠草,えいそう,[n],"[draft poem, draught poem]"
+14340,1,詠草,えいそう,[n],"[draft poem, draught poem]"
 14341,,厭人,えんじん,[n],[misanthropy]
 14342,,煙塵,えんじん,[n],"[dust, smokestack smoke, battle scene]"
 14343,,煙管,えんかん,[n],"[kiseru, Japanese smoking pipe, fire tube (of a fire-tube boiler), chimney]"
@@ -30223,7 +30223,7 @@
 30223,,輪距,りんきょ,[n],"[wheel track, tread]"
 30224,,臨在,りんざい,"[n, vs]",[presence]
 30225,,-,りんりん,[adv],[bell ringing (chiming)]
-30226,,類音,るいおん,[n],[similar sound]
+30226,1,類音,るいおん,[n],[similar sound]
 30227,,累加,るいか,"[n, vs]","[acceleration, progressive increase]"
 30228,1,類火,るいか,[n],"[catching fire, a spreading fire]"
 30229,,類歌,るいか,[n],[similar song]
@@ -30352,7 +30352,7 @@
 30352,,-,イレクト,"[n, vs]","[elect, erect]"
 30353,,-,インジケータ,[n],[indicator]
 30354,,-,インスタンス,[n],[instance]
-30355,,-,デフォルトインスタンス,[n],[default instance]
+30355,1,-,デフォルトインスタンス,[n],[default instance]
 30356,,-,インストール,"[n, vs]",[installation (esp. software)]
 30357,,-,インタフェース,[n],[interface]
 30358,,-,マンマシンインターフェース,[n],"[man-machine interface, MMI]"
