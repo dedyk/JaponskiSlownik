@@ -73,7 +73,7 @@
 73,,閏,うるう,"[n, adj-no]","[embolism, intercalation]"
 74,1,-,ン,[n-pref],[some (at the start of a number in place of a digit)]
 75,,彫り,ほり,[n],"[carving, engraving, chiselled features]"
-76,,彫り,えり,[n],"[carving, engraving]"
+76,1,彫り,えり,[n],"[carving, engraving]"
 77,,魞,えり,[n],"[fishing weir, fish weir, fish trap, pouch-shaped bamboo fence across river, etc.]"
 78,1,遠道,えんどう,[n],"[long walk, roundabout way]"
 79,1,-,おい,"[int, pn]","[hey!, oi!, ahoy!, I, me]"
@@ -698,7 +698,7 @@
 698,1,-,ワンルームアパート,[n],"[studio apartment, bed-sitter]"
 699,,-,ブラックアフリカ,[n],[Black Africa]
 700,,-,サブサハラアフリカ,[n],[Sub-Saharan Africa]
-701,,-,アフリカゴールデンキャット,[n],[African golden cat (Profelis aurata)]
+701,1,-,アフリカゴールデンキャット,[n],[African golden cat (Profelis aurata)]
 702,,-,アヴェマリア,[exp],"[Ave Maria (prayer), Hail Mary]"
 703,,-,アポ,[n],[appointment]
 704,,-,アミノ,[pref],[amino]
@@ -804,7 +804,7 @@
 804,1,-,エロビデオ,[n],[pornographic film]
 805,1,-,エンスペース,[n],[en space]
 806,,-,エンダッシュ,[n],[en dash]
-807,,-,エンマーク,[n],[yen mark]
+807,1,-,エンマーク,[n],[yen mark]
 808,,-,エンドエンド,[n],[end to end]
 809,1,-,イーストエンド,[n],[East End]
 810,,-,ウエストエンド,[n],[West End]
@@ -1092,7 +1092,7 @@
 1092,1,-,カーマニア,[n],"[car enthusiast, car buff]"
 1093,1,-,カーレーサー,[n],[racing driver]
 1094,1,-,キャラバンカー,[n],"[van or truck with a display, retail, etc. facility, mobile showroom]"
-1095,,-,ファンカー,[n],"[car using a fan to create a ground effect, fan car]"
+1095,1,-,ファンカー,[n],"[car using a fan to create a ground effect, fan car]"
 1096,,-,スロープカー,[n],"[slope car, small automated monorail]"
 1097,,-,キャリアカー,[n],"[car carrier, car transporter, auto transport truck]"
 1098,1,-,ストックカーレース,[n],[stock car race]
@@ -1308,7 +1308,7 @@
 1308,1,-,コピーコントロール,[n],[copy control]
 1309,,-,コピーアンドペースト,[n],[copy and paste]
 1310,,-,コピープログラム,[n],[copy program]
-1311,,-,コピープロテクション,[n],[copy protection]
+1311,1,-,コピープロテクション,[n],[copy protection]
 1312,,-,コピープロテクト,[n],[copy protection]
 1313,1,-,ソフトコピー,[n],[soft copy]
 1314,,-,バックアップコピー,[n],[backup copy]
@@ -1446,14 +1446,14 @@
 1446,,-,ホットサンド,[n],"[toasted sandwich, hot sandwich]"
 1447,,-,サンドタイガーシャーク,[n],"[sand tiger shark (Carcharias taurus), gray nurse shark]"
 1448,1,-,サンドイッチスプレッド,[n],[sandwich spread]
-1449,,-,サー,[n],[Sir]
+1449,1,-,サー,[n],[Sir]
 1450,,-,アフターサービス,[n],"[after-sales service, warranty service]"
 1451,1,-,インテリジェンスサービス,[n],[intelligence service]
 1452,1,-,エアサービス,[n],[air service]
 1453,1,-,キャンドルサービス,[n],"[candlelight service (e.g. in a church), ceremony during a wedding reception where the bride and the groom go from table to table lighting a candle at each]"
 1454,,-,クーリエサービス,[n],[courier service]
 1455,1,-,ケータリングサービス,[n],[catering service]
-1456,,-,コミューターサービス,[n],[commuter service]
+1456,1,-,コミューターサービス,[n],[commuter service]
 1457,,-,サービスガール,[n],"[waitress, (restaurant) host]"
 1458,,-,サービスステーション,[n],[service station]
 1459,,-,サービスヤード,[n],[service yard]
@@ -1963,7 +1963,7 @@
 1963,1,-,トロッコ,[n],"[rail car (esp. a small one used in mines, etc.), trolley]"
 1964,1,-,アコーディオンドア,[n],[accordion door]
 1965,1,-,エアドア,[n],[air door]
-1966,,-,スイングドア,[n],[swing door]
+1966,1,-,スイングドア,[n],[swing door]
 1967,1,-,ドアエンジン,[n],[door operating equipment]
 1968,1,-,ドアガール,[n],[door girl]
 1969,1,-,ドアチェーン,[n],[door chain]
@@ -2050,7 +2050,7 @@
 2050,1,-,ニューメディアコミュニティー,[n],[new media community]
 2051,,-,スポットニュース,[n],[spot news]
 2052,1,-,トピックニュース,[n],[topic news]
-2053,,-,ニュースアナリスト,[n],[news analyst]
+2053,1,-,ニュースアナリスト,[n],[news analyst]
 2054,1,-,ニュースグループ,[n],"[NG, news group]"
 2055,1,-,ニュースバリュー,[n],[news value]
 2056,1,-,フラッシュニュース,[n],[news flash]
@@ -2326,7 +2326,7 @@
 2326,1,-,クリニカルパス,[n],"[clinical pathway, care map]"
 2327,1,-,パスコンプリート,[n],"[completion, pass completion]"
 2328,,-,バンドパスフィルタ,[n],[Band-Pass Filter]
-2329,,-,パステ,[n],[power steering]
+2329,1,-,パステ,[n],[power steering]
 2330,,-,トラヒックパラメータ,[n],[traffic parameter]
 2331,,-,プレパラトリースクール,[n],[preparatory school]
 2332,1,-,パラメーター,"[n, adj-no]",[parameter]
@@ -2804,7 +2804,7 @@
 2804,,-,ライフヒストリー,[n],[life history]
 2805,,-,ライフラフト,[n],[life raft]
 2806,,-,ライフプラン,[n],"[life plan, life planning]"
-2807,,-,ライフデザイン,[n],"[life plan, life planning]"
+2807,1,-,ライフデザイン,[n],"[life plan, life planning]"
 2808,1,-,ファミリーライフサイクル,[n],[family life cycle]
 2809,1,-,プロダクトライフサイクル,[n],[product life cycle]
 2810,1,-,システムライフサイクル,[n],[system life cycle]
@@ -2981,7 +2981,7 @@
 2981,1,-,ワンパターン,"[n, adj-no]","[predictable, repetitive, being in a rut, set in one's ways]"
 2982,,-,ワンアウト,[n],[one out]
 2983,,-,ワンセット,[n],[one set]
-2984,,-,ワンクール,[n],[one run of a television series]
+2984,1,-,ワンクール,[n],[one run of a television series]
 2985,,-,ワンランク,[n],"[one rank, one grade]"
 2986,,-,ワンポイント,"[n, adj-f]","[one point, stitched ornament, small needlepoint design, relief pitcher brought in to face one batter]"
 2987,1,-,ワンストップ,[n],[one-stop service]
@@ -3170,7 +3170,7 @@
 3170,,前哨,ぜんしょう,[n],[outpost]
 3171,1,前奏,ぜんそう,[n],"[prelude, overture]"
 3172,1,前屈,ぜんくつ,"[n, vs]",[bend forward]
-3173,,前書,ぜんしょ,[n],"[previous writing, first of two books, previous letter]"
+3173,1,前書,ぜんしょ,[n],"[previous writing, first of two books, previous letter]"
 3174,,前置,ぜんち,"[n, adj-no]","[preface, introduction]"
 3175,1,剥がれ,はがれ,[n],"[peeling, separation, exfoliation]"
 3176,1,剰余,じょうよ,[n],"[surplus, balance, remainder]"
@@ -3394,7 +3394,7 @@
 3394,,庶幾,しょき,"[n, vs]","[desire, hope]"
 3395,1,建て,だて,[suf],"[indicates storeys, structures, or materials used in a building, indicates denomination (after a currency)]"
 3396,1,弁え,わきまえ,[n],"[sense, discretion, knowledge]"
-3397,,弁理,べんり,"[n, vs]",[management]
+3397,1,弁理,べんり,"[n, vs]",[management]
 3398,,費え,ついえ,[n],[wasteful expenses]
 3399,1,式次,しきじ,[n],"[program of a ceremony, programme of a ceremony]"
 3400,1,引き,びき,[suf],[-off (price reduction)]
@@ -3721,7 +3721,7 @@
 3721,,疾っく,とっく,"[n-t, adj-no, adv]","[a long time ago, quickly, swiftly]"
 3722,1,痩せ,やせ,"[n, adj-no]","[emaciation, extreme thinness, lean person]"
 3723,1,痺れ,しびれ,[n],"[numbness, limbs going to sleep]"
-3724,,発呼,はっこ,[n],[outgoing call]
+3724,1,発呼,はっこ,[n],[outgoing call]
 3725,,発展途上,はってんとじょう,[adj-no],"[developing (e.g. industry, town, economy)]"
 3726,1,発起,ほっき,"[n, vs]","[proposal, promotion, spiritual awakening, resolution]"
 3727,1,白々,しらじら,"[adv-to, adv]","[growing light (e.g. at dawn), pale, appearing dumb, talking in an obvious way]"
@@ -3815,7 +3815,7 @@
 3815,,罪障,ざいしょう,[n],[sins (which prevent entry into bliss)]
 3816,1,置き土,おきつち,[n],[earth taken from elsewhere and placed atop]
 3817,1,置き換え,おきかえ,[n],"[replacement, substitute, displacement, transposition, reset]"
-3818,,羅針,らしん,[n],[compass needle]
+3818,1,羅針,らしん,[n],[compass needle]
 3819,1,羊皮,ようひ,[n],"[sheep skin, fleece, parchment]"
 3820,,美辞,びじ,[n],"[flowery language, pretty words]"
 3821,,群雄,ぐんゆう,[n],[rival chiefs]
@@ -3849,7 +3849,7 @@
 3849,1,臨機,りんき,[n],[expedient]
 3850,1,自傷,じしょう,[n],"[self-mutilation, self-injury]"
 3851,1,自叙,じじょ,"[n, vs]",[autobiography]
-3852,,自己中,じこちゅう,[n],"[selfishness, egotism, egoism, egocentricity]"
+3852,1,自己中,じこちゅう,[n],"[selfishness, egotism, egoism, egocentricity]"
 3853,1,自己満,じこまん,[n],"[self-satisfaction, (self-)complacency]"
 3854,,自暴,じぼう,[n],"[despair, desperation, abandonment]"
 3855,1,自然増,しぜんぞう,[n],[natural increase]
@@ -4209,12 +4209,12 @@
 4209,1,国民新,こくみんしん,[n],"[Kokumin Shinto, People's New Party (Japanese political party)]"
 4210,1,国民党,こくみんとう,[n],"[Constitutional Nationalist Party (1910-1922), Guomindang (Chinese Nationalist Party), Kuomintang]"
 4211,1,混合酒,こんごうしゅ,[n],"[cocktail, mixed drink, blended liquor]"
-4212,,昏迷状態,こんめいじょうたい,[n],"[befuddled (bewildered, confused) state, stupor]"
+4212,1,昏迷状態,こんめいじょうたい,[n],"[befuddled (bewildered, confused) state, stupor]"
 4213,,御免なさい,ごめんなさい,[exp],"[I beg your pardon, excuse me]"
 4214,,最前戦,さいぜんせん,[n],"[front, first line, spearhead]"
 4215,,魚を釣る,さかなをつる,"[exp, v5r]","[to fish, to angle]"
 4216,1,作業量,さぎょうりょう,[n],"[workload, quantity of work, work rate, units produced]"
-4217,,作成日時,さくせいにちじ,[n],[creation-time]
+4217,1,作成日時,さくせいにちじ,[n],[creation-time]
 4218,,財務相,ざいむしょう,[n],"[treasurer, treasury minister, finance minister]"
 4219,1,雑誌記者,ざっしきしゃ,[n],[magazine journalist]
 4220,,紫綬褒賞,しじゅほうしょう,[n],[purple-ribboned medal awarded for scholarly or artistic achievement]
@@ -4412,7 +4412,7 @@
 4412,,同の字点,どうのじてん,[n],[kanji iteration mark]
 4413,,独立祭,どくりつさい,[n],[Independence Day celebration]
 4414,1,生優しい,なまやさしい,[adj-i],"[somewhat kind, rather gentle]"
-4415,,南極帯,なんきょくたい,[n],[Antarctic Zone]
+4415,1,南極帯,なんきょくたい,[n],[Antarctic Zone]
 4416,,日本領,にほんりょう,[n],[Japanese territory]
 4417,,入京,にゅうきょう,"[n, vs]","[entering the capital, entering Tokyo]"
 4418,,入鋏,にゅうきょう,"[n, vs]",[(ticket) punching]
@@ -4462,7 +4462,7 @@
 4462,1,宜しかったら,よろしかったら,[exp],"[if you don't mind, if you like]"
 4463,1,略章,りゃくしょう,[n],[miniature medal or decoration]
 4464,,柳条,りゅうじょう,[n],[willow twig]
-4465,,留置所,りゅうちじょ,[n],"[jail, gaol]"
+4465,1,留置所,りゅうちじょ,[n],"[jail, gaol]"
 4466,1,留鳥,りゅうちょう,[n],[nonmigratory bird]
 4467,1,両議院,りょうぎいん,[n],[both houses of parliament]
 4468,,涼秋,りょうしゅう,[n],"[cool autumn, cool fall]"
@@ -4736,7 +4736,7 @@
 4736,1,-,オペレーションコード,[n],"[operation code, op-code]"
 4737,1,-,オペレーションマニュアル,[n],[Operations manuals]
 4738,,-,オペレーションツイスト,[n],[operation twist]
-4739,,-,オペレーションシステム,[n],[operating system]
+4739,1,-,オペレーションシステム,[n],[operating system]
 4740,1,-,オペレーティング,[n],[operating]
 4741,1,-,オペレーティングマージン,[n],[operating margin]
 4742,,-,オペレーティングシステムイメージ,[n],[operating system image]
@@ -5158,7 +5158,7 @@
 5158,1,-,トラッキングステーション,[n],[tracking station]
 5159,1,-,ナースステーション,[n],[nurse station]
 5160,1,-,エコステーション,[n],[a service station for cars that run on alternative fuels]
-5161,,-,ビーコンステーション,[n],[beaconing station]
+5161,1,-,ビーコンステーション,[n],[beaconing station]
 5162,1,-,ベースステーション,[n],[base station]
 5163,,-,エアステーション,[n],[air station]
 5164,,-,ステーションブレイク,[n],[station break]
@@ -5196,7 +5196,7 @@
 5196,,-,セーフティービンディング,[n],[safety binding (ski)]
 5197,,-,セーフティボックス,[n],[safety deposit box]
 5198,1,-,アクティブセーフティー,[n],[active safety]
-5199,,-,セーフティーファクター,[n],[safety factor]
+5199,1,-,セーフティーファクター,[n],[safety factor]
 5200,,-,セーフティーバルブ,[n],[safety valve]
 5201,1,-,セーフティーコーン,[n],"[safety cone, traffic cone]"
 5202,,-,ジャパンソサエティー,[n],[Japan Society]
@@ -5595,7 +5595,7 @@
 5595,,-,アレイプロセッサー,[n],[array processor]
 5596,1,-,アナログプロセッサー,[n],"[analog processor, analogue processor]"
 5597,,-,インターフェイスメッセージプロセッサー,[n],"[Interface Message Processor, IMP]"
-5598,,-,プロダクションチーム,[n],[production team]
+5598,1,-,プロダクションチーム,[n],[production team]
 5599,,-,マスプロダクション,[n],[mass production]
 5600,1,-,プロダクションシステム,[n],[production system]
 5601,1,-,プロダクションルール,[n],[production rule]
@@ -5758,7 +5758,7 @@
 5758,1,-,ワンボックス,[n],"[minivan, people-mover, 6-8 seat automobile with sliding door or doors]"
 5759,1,-,ワンポイントレッスン,"[exp, n]",[short lesson dealing with one specific point]
 5760,,-,マスターワークステーション,[n],[master workstation]
-5761,,-,ワークステーションウィンドウ,[n],[workstation window]
+5761,1,-,ワークステーションウィンドウ,[n],[workstation window]
 5762,,-,ワークステーションビューポート,[n],[workstation viewport]
 5763,,-,ヴァリエーション・ドリル,[n],[variation drill]
 5764,1,-,バージョンアップ,"[n, vs]","[updating a software version, version upgrade]"
@@ -12936,7 +12936,7 @@
 12936,,四診,ししん,[n],"[the four examinations (in Chinese medicine: seeing, hearing, asking, touching)]"
 12937,,何点,なんてん,[exp],[how many points]
 12938,,南天,なんてん,[n],"[southern sky, heavenly bamboo (Nandina domestica), nandina]"
-12939,,朱筆,しゅひつ,[n],[red-ink brush]
+12939,1,朱筆,しゅひつ,[n],[red-ink brush]
 12940,,妄挙,ぼうきょ,[n],"[unreasonable actions, lack of discrimination]"
 12941,,感泣,かんきゅう,"[n, vs]",[being moved to tears]
 12942,,官給,かんきゅう,"[n, vs]","[government supply, government issue]"
@@ -23172,7 +23172,7 @@
 23172,,-,ナショナルプロダクト,[n],[national product]
 23173,,-,ナショナルホリデー,[n],[national holiday]
 23174,,-,ナショナルミニマム,[n],[national minimum]
-23175,,-,ナチュラルフーズ,[n],[natural foods]
+23175,1,-,ナチュラルフーズ,[n],[natural foods]
 23176,,-,ナチュラルヒストリー,[n],[natural history]
 23177,,ＮＡＫ,ナック,[n],"[negative acknowledgement, NAK]"
 23178,,ＮａＫ,ナック,[n],[NaK (sodium-potassium alloy)]
@@ -30977,7 +30977,7 @@
 30977,,-,リズミックソウル,[n],[rhythmic soul]
 30978,,-,リセール,[n],[resale]
 30979,,-,リック,"[n, vs]",[lick]
-30980,,-,リッジ,[n],[ridge]
+30980,1,-,リッジ,[n],[ridge]
 30981,,-,リップス,[n],[LIPS]
 30982,,-,リトラクト,[n],[retract]
 30983,,-,リプル,[n],[ripple]
@@ -34620,7 +34620,7 @@
 34620,,-,スチューデント,[n],[student]
 34621,,-,スチレン,[n],[styrene]
 34622,,-,ステディ,[n],[steady]
-34623,,-,ステレオグラム,[n],[stereogram]
+34623,1,-,ステレオグラム,[n],[stereogram]
 34624,,-,ステープル,[n],[staple]
 34625,,-,ストパ,[n],[straight permanent wave]
 34626,,-,ストライド,[n],[stride]
