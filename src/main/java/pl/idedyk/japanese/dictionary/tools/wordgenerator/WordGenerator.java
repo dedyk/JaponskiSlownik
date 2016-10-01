@@ -1395,7 +1395,7 @@ public class WordGenerator {
 				Set<String> allPrefixes = new TreeSet<String>();
 				
 				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-															
+					
 					if (minKanjiPrefixLength != null) {
 						
 						String kanji = polishJapaneseEntry.getKanji();
@@ -1420,6 +1420,54 @@ public class WordGenerator {
 					if (minKanaPrefixLength != null) {
 						
 						String kana = polishJapaneseEntry.getKana();
+												
+						for (int startIdx = 0; startIdx < kana.length(); ++startIdx) {
+							
+							for (int endIdx = 0; endIdx <= kana.length(); ++endIdx) {
+								
+								if (endIdx <= startIdx) {
+									continue;
+								}
+								
+								if (endIdx - startIdx < minKanaPrefixLength) {
+									continue;
+								}
+								
+								allPrefixes.add(kana.substring(startIdx, endIdx));
+							}			
+						}
+					}
+				}
+				
+				// wczytywanie common'owego pliku
+				Map<Integer, CommonWord> commonWordMap = wordGeneratorHelper.getCommonWordMap();
+				
+				for (CommonWord commonWord : commonWordMap.values()) {
+					
+					if (minKanjiPrefixLength != null) {
+						
+						String kanji = commonWord.getKanji();
+						
+						for (int startIdx = 0; startIdx < kanji.length(); ++startIdx) {
+							
+							for (int endIdx = 0; endIdx <= kanji.length(); ++endIdx) {
+								
+								if (endIdx <= startIdx) {
+									continue;
+								}
+								
+								if (endIdx - startIdx < minKanjiPrefixLength) {
+									continue;
+								}
+								
+								allPrefixes.add(kanji.substring(startIdx, endIdx));
+							}			
+						}
+					}
+					
+					if (minKanaPrefixLength != null) {
+						
+						String kana = commonWord.getKana();
 												
 						for (int startIdx = 0; startIdx < kana.length(); ++startIdx) {
 							
@@ -1483,7 +1531,7 @@ public class WordGenerator {
 				} else {					
 					System.out.println("Brak pliku: " + customFile);
 					
-					Thread.sleep(1000);
+					Thread.sleep(3000);
 					
 				}
 				
