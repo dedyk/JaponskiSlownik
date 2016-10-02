@@ -571,7 +571,7 @@ public class WordGenerator {
 				// zapisywanie slownika
 				System.out.println("Zapisywanie słownika...");
 				
-				CsvReaderWriter.generateCsv(new String[] { "input/word01-new.csv", "input/word02-new.csv" }, newWordList, true, true, false,
+				CsvReaderWriter.generateCsv(new String[] { "input/word-new.csv" }, newWordList, true, true, false,
 						new ICustomAdditionalCsvWriter() {
 							
 							@Override
@@ -740,7 +740,7 @@ public class WordGenerator {
 						
 				System.out.println("Zapisywanie słownika...");
 				
-				CsvReaderWriter.generateCsv(new String[] { "input/word01-new2.csv", "input/word02-new2.csv" }, newWordList, true, true, false,
+				CsvReaderWriter.generateCsv(new String[] { "input/word-new2.csv" }, newWordList, true, true, false,
 						new ICustomAdditionalCsvWriter() {
 							
 							@Override
