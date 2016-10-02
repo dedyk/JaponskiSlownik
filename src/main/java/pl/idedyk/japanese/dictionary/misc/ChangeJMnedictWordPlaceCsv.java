@@ -10,7 +10,7 @@ public class ChangeJMnedictWordPlaceCsv {
 
 	public static void main(String[] args) throws Exception {
 				
-		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/miss2/WORD_PLACE.csv");
+		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input_names/miss2/WORD_PLACE.csv" });
 		
 		List<PolishJapaneseEntry> newWordPlaceList = new ArrayList<PolishJapaneseEntry>();
 		
@@ -692,6 +692,6 @@ public class ChangeJMnedictWordPlaceCsv {
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
 		
-		CsvReaderWriter.generateCsv("input_names/miss2/WORD_PLACE.csv", newWordPlaceList, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names/miss2/WORD_PLACE.csv" }, newWordPlaceList, false);
 	}
 }

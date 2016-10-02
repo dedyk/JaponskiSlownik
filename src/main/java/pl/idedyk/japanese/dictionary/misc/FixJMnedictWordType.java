@@ -40,7 +40,7 @@ public class FixJMnedictWordType {
 			
 			for (File currentNameFile : currentNameDirFileList) {
 				
-				List<PolishJapaneseEntry> currentNameFilePolishJapaneseEntryList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(currentNameFile.getAbsolutePath());
+				List<PolishJapaneseEntry> currentNameFilePolishJapaneseEntryList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { currentNameFile.getAbsolutePath() });
 				
 				/*
 				for (PolishJapaneseEntry currentPolishJapaneseEntry : currentNameFilePolishJapaneseEntryList) {
@@ -50,7 +50,7 @@ public class FixJMnedictWordType {
 					currentPolishJapaneseEntry.setDictionaryEntryTypeList(allPolishJapaneseEntryListMap.get(key).getDictionaryEntryTypeList());					
 				} */
 				
-				CsvReaderWriter.generateCsv(currentNameFile.getAbsolutePath(), currentNameFilePolishJapaneseEntryList, false);
+				CsvReaderWriter.generateCsv(new String[] { currentNameFile.getAbsolutePath() }, currentNameFilePolishJapaneseEntryList, false);
 			}
 		}		
 	}

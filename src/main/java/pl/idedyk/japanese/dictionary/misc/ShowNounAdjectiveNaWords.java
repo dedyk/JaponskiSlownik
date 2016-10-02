@@ -14,7 +14,7 @@ public class ShowNounAdjectiveNaWords {
 
 		// read polish japanese entries
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
-				.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+				.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 
 		Set<String> alreadyWordSet = new HashSet<String>();
 

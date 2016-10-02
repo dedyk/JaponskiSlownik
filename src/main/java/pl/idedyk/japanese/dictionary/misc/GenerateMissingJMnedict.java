@@ -25,7 +25,7 @@ public class GenerateMissingJMnedict {
 			File currentNewFile = new File(newDirFile, currentPreviousFile.getName());
 			
 			// poprzednia lista
-			List<PolishJapaneseEntry> previousPolishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(currentPreviousFile.getAbsolutePath());			
+			List<PolishJapaneseEntry> previousPolishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { currentPreviousFile.getAbsolutePath() });			
 			
 			Map<String, PolishJapaneseEntry> previousPolishJapaneseEntriesMap = new TreeMap<String, PolishJapaneseEntry>();
 			
@@ -34,7 +34,7 @@ public class GenerateMissingJMnedict {
 			}
 			
 			// nowa lista
-			List<PolishJapaneseEntry> newPolishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(currentNewFile.getAbsolutePath());
+			List<PolishJapaneseEntry> newPolishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { currentNewFile.getAbsolutePath() });
 			
 			// porownanie
 			List<PolishJapaneseEntry> missingPolishJapaneseEntries = new ArrayList<PolishJapaneseEntry>();
@@ -49,7 +49,7 @@ public class GenerateMissingJMnedict {
 			// zapis
 			File currentMissingFile = new File(differentDirFile, currentPreviousFile.getName());
 			
-			CsvReaderWriter.generateCsv(currentMissingFile.getAbsolutePath(), missingPolishJapaneseEntries, false);
+			CsvReaderWriter.generateCsv(new String[] { currentMissingFile.getAbsolutePath() }, missingPolishJapaneseEntries, false);
 		}
 	}
 	

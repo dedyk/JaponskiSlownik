@@ -12,7 +12,7 @@ public class Merge2JMnedictWordPlaceCsv {
 
 	public static void main(String[] args) throws Exception {
 				
-		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE-oczekujace.csv");
+		List<PolishJapaneseEntry> waitingWordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input_names/WORD_PLACE-oczekujace.csv" });
 		
 		Map<String, PolishJapaneseEntry> waitingWordPlaceMap = new TreeMap<String, PolishJapaneseEntry>();
 		
@@ -20,7 +20,7 @@ public class Merge2JMnedictWordPlaceCsv {
 			waitingWordPlaceMap.put(getKey(currentWaitingPolishJapaneseEntry), currentWaitingPolishJapaneseEntry);
 		}
 		
-		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names/WORD_PLACE.csv");
+		List<PolishJapaneseEntry> wordPlaceList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input_names/WORD_PLACE.csv" });
 		
 		List<PolishJapaneseEntry> newWordPlaceList = new ArrayList<PolishJapaneseEntry>();
 		
@@ -40,7 +40,7 @@ public class Merge2JMnedictWordPlaceCsv {
 			}
 		}
 		
-		CsvReaderWriter.generateCsv("input_names/WORD_PLACE.csv", newWordPlaceList, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names/WORD_PLACE.csv" }, newWordPlaceList, false);
 	}
 	
 	private static String getKey(PolishJapaneseEntry polishJapaneseEntry) {

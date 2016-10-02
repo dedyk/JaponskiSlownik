@@ -23,7 +23,7 @@ public class LuceneTest {
 		
 		/*
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
-				.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+				.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 		
 		SimpleAnalyzer analyzer = new SimpleAnalyzer(Version.LUCENE_47);
 		

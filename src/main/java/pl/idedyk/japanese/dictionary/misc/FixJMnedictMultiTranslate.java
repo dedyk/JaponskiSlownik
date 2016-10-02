@@ -13,7 +13,7 @@ public class FixJMnedictMultiTranslate {
 
 	public static void main(String[] args) throws Exception {
 
-		List<PolishJapaneseEntry> multiTranslateNameList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input_names2/multiTranslateName.csv");
+		List<PolishJapaneseEntry> multiTranslateNameList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input_names2/multiTranslateName.csv" });
 		
 		Map<String, PolishJapaneseEntry> multiTranslateNameListMap = new TreeMap<String, PolishJapaneseEntry>();
 		
@@ -35,7 +35,7 @@ public class FixJMnedictMultiTranslate {
 			
 			for (File currentNameFile : currentNameDirFileList) {
 				
-				List<PolishJapaneseEntry> currentNameFilePolishJapaneseEntryList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(currentNameFile.getAbsolutePath());				
+				List<PolishJapaneseEntry> currentNameFilePolishJapaneseEntryList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { currentNameFile.getAbsolutePath() });				
 				
 				for (PolishJapaneseEntry polishJapaneseEntry : currentNameFilePolishJapaneseEntryList) {
 					
@@ -53,11 +53,11 @@ public class FixJMnedictMultiTranslate {
 					}					
 				}
 				
-				CsvReaderWriter.generateCsv(currentNameFile.getAbsolutePath(), currentNameFilePolishJapaneseEntryList, false);
+				CsvReaderWriter.generateCsv(new String[] { currentNameFile.getAbsolutePath() }, currentNameFilePolishJapaneseEntryList, false);
 			}
 		}
 		
-		CsvReaderWriter.generateCsv("input_names2/multiTranslateName-operation.csv", multiTranslateNameList, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names2/multiTranslateName-operation.csv" }, multiTranslateNameList, false);
 	}
 	
 	private static String getKey(PolishJapaneseEntry polishJapaneseEntry) {

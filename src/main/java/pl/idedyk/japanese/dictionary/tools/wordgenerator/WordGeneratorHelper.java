@@ -2,6 +2,7 @@ package pl.idedyk.japanese.dictionary.tools.wordgenerator;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -22,7 +23,7 @@ import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 
 public class WordGeneratorHelper {
 	
-	private String wordCsvFile;
+	private String[] wordCsvFiles;
 	private String wordCommonCsvFile;
 	
 	private String jmdicteFile;
@@ -47,9 +48,9 @@ public class WordGeneratorHelper {
 
 	private Directory index;
 	
-	public WordGeneratorHelper(String wordCsvFile, String wordCommonCsvFile, String jmdicteFile) {
+	public WordGeneratorHelper(String[] wordCsvFiles, String wordCommonCsvFile, String jmdicteFile) {
 		
-		this.wordCsvFile = wordCsvFile;		
+		this.wordCsvFiles = wordCsvFiles;		
 		this.wordCommonCsvFile = wordCommonCsvFile;
 		
 		this.jmdicteFile = jmdicteFile;		
@@ -59,9 +60,9 @@ public class WordGeneratorHelper {
 		
 		if (polishJapaneseEntries == null) {
 			
-			System.out.println("Wczytywanie pliku: " + wordCsvFile);
+			System.out.println("Wczytywanie pliku: " + Arrays.toString(wordCsvFiles));
 			
-			polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(wordCsvFile);
+			polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(wordCsvFiles);
 		}
 		
 		return polishJapaneseEntries;		

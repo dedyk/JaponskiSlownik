@@ -18,7 +18,7 @@ public class UnknownWord {
 
 		// read polish japanese entries
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
-				.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+				.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 
 		// read edict
 		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader
@@ -194,7 +194,7 @@ public class UnknownWord {
 			System.out.println();
 		}
 
-		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries, true);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv" }, polishJapaneseEntries, true);
 	}
 
 	private static List<JMEDictEntry> findJMEdictEntry(TreeMap<String, List<JMEDictEntry>> jmedict,

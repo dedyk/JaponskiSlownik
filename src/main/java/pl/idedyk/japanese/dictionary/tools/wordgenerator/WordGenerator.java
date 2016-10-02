@@ -83,7 +83,7 @@ public class WordGenerator {
 		}
 		
 		// utworzenie helper'a
-		WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper("input/word.csv", "input/common_word.csv", 
+		WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv" }, "input/common_word.csv", 
 				"../JapaneseDictionary_additional/JMdict_e");
 		
 		// przetwarzanie operacji
@@ -160,7 +160,7 @@ public class WordGenerator {
 				}
 				
 				// zapis porcji slow
-				CsvReaderWriter.generateCsv("input/word-common-new.csv", newWordList, true, true, false);
+				CsvReaderWriter.generateCsv(new String[] { "input/word-common-new.csv" }, newWordList, true, true, false);
 				
 				// zapis nowego pliku common
 				CsvReaderWriter.writeCommonWordFile(commonWordMap, "input/common_word-nowy.csv");
@@ -339,7 +339,7 @@ public class WordGenerator {
 					newWordList.addAll(notFoundJishoFoundWordList);
 					newWordList.addAll(notFoundWordList);
 					
-					CsvReaderWriter.generateCsv("input/word-new.csv", newWordList, true, true, false);
+					CsvReaderWriter.generateCsv(new String[] { "input/word-new.csv" }, newWordList, true, true, false);
 					
 				} else {
 					CsvReaderWriter.writeCommonWordFile(foundWordListInCommonWordMap, "input/word-new.csv");
@@ -571,7 +571,7 @@ public class WordGenerator {
 				// zapisywanie slownika
 				System.out.println("Zapisywanie słownika...");
 				
-				CsvReaderWriter.generateCsv("input/word-new.csv", newWordList, true, true, false,
+				CsvReaderWriter.generateCsv(new String[] { "input/word01-new.csv", "input/word02-new.csv" }, newWordList, true, true, false,
 						new ICustomAdditionalCsvWriter() {
 							
 							@Override
@@ -740,7 +740,7 @@ public class WordGenerator {
 						
 				System.out.println("Zapisywanie słownika...");
 				
-				CsvReaderWriter.generateCsv("input/word-new2.csv", newWordList, true, true, false,
+				CsvReaderWriter.generateCsv(new String[] { "input/word01-new2.csv", "input/word02-new2.csv" }, newWordList, true, true, false,
 						new ICustomAdditionalCsvWriter() {
 							
 							@Override
@@ -1930,7 +1930,7 @@ public class WordGenerator {
 				}	
 				
 				// zapis nowego slownika
-				CsvReaderWriter.generateCsv("input/word-new.csv", polishJapaneseEntries, true, true, false);
+				CsvReaderWriter.generateCsv(new String[] { "input/word01-new.csv", "input/word02-new.csv" }, polishJapaneseEntries, true, true, false);
 				
 				break;
 			}

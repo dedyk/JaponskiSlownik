@@ -45,7 +45,7 @@ public class SplitJMnedict {
 			
 			List<PolishJapaneseEntry> dictionaryEntryTypeList = groupedPolishJapaneseEntryList.get(dictionaryEntryType);
 			
-			CsvReaderWriter.generateCsv("input_names3/" + dictionaryEntryType + ".csv", dictionaryEntryTypeList, false);			
+			CsvReaderWriter.generateCsv(new String[] { "input_names3/" + dictionaryEntryType + ".csv" }, dictionaryEntryTypeList, false);			
 		}		
 	}
 }

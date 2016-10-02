@@ -13,7 +13,7 @@ public class RegenerateDictionary {
 
 	public static void main(String[] args) throws Exception {
 
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, false);
 
@@ -32,6 +32,8 @@ public class RegenerateDictionary {
 
 		for (PolishJapaneseEntry currentPolishJapaneseEntry : resultPolishJapaneseEntries) {
 
+			System.out.println(currentPolishJapaneseEntry.getId());
+			
 			String kana = currentPolishJapaneseEntry.getKana();
 			
 			List<KnownDuplicate> knownDuplicatedList = currentPolishJapaneseEntry.getKnownDuplicatedList();
@@ -54,7 +56,7 @@ public class RegenerateDictionary {
 			currentPolishJapaneseEntry.setKnownDuplicatedList(newKnownDuplicatedList);
 		}
 
-		CsvReaderWriter.generateCsv("input/word-wynik.csv", resultPolishJapaneseEntries, true, true, false);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv" }, resultPolishJapaneseEntries, true, true, false);
 	}
 
 	private static List<KnownDuplicate> generateKnownDuplicatedIdForKanji(List<KnownDuplicate> result,

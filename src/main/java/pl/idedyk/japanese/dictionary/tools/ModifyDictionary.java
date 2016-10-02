@@ -8,10 +8,10 @@ public class ModifyDictionary {
 
 	public static void main(String[] args) throws Exception {
 		
-		checkPolishJapaneseEntries("input/word.csv", "input/word-temp.csv");
+		checkPolishJapaneseEntries(new String[] { "input/word01.csv", "input/word02.csv" }, new String[] { "input/word01-temp.csv", "input/word02-temp.csv" });
 	}
 	
-	private static void checkPolishJapaneseEntries(String sourceFileName, String destinationFileName) throws Exception {
+	private static void checkPolishJapaneseEntries(String[] sourceFileNames, String[] destinationFileNames) throws Exception {
 		
 		//List<KanaEntry> allKanaEntries = KanaHelper.getAllHiraganaKanaEntries();
 		//allKanaEntries.addAll(KanaHelper.getAllKatakanaKanaEntries());
@@ -24,7 +24,7 @@ public class ModifyDictionary {
 		}
 		*/
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileName);
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileNames);
 		
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 			
@@ -95,6 +95,6 @@ public class ModifyDictionary {
 			currentPolishJapaneseEntry.setRomaji(romaji);
 		}
 		
-		CsvReaderWriter.generateCsv(destinationFileName, polishJapaneseEntries, true);
+		CsvReaderWriter.generateCsv(destinationFileNames, polishJapaneseEntries, true);
 	}
 }

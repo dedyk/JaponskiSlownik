@@ -23,7 +23,7 @@ public class ShowAdditionalKanji {
 
 	public static void main(String[] args) throws Exception {
 
-		String sourceWordFileName = "input/word.csv";
+		String[] sourceWordFileNames = new String[] { "input/word01.csv", "input/word02.csv" };
 		String sourceKradFileName = "../JapaneseDictionary_additional/kradfile";
 		String sourceKanjiDic2FileName = "../JapaneseDictionary_additional/kanjidic2.xml";
 		String sourceKanjiName = "input/kanji.csv";
@@ -45,7 +45,7 @@ public class ShowAdditionalKanji {
 		System.out.println("generateKanjiEntries: parsePolishJapaneseEntriesFromCsv");
 		// read polish japanese entries
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
-				.parsePolishJapaneseEntriesFromCsv(sourceWordFileName);
+				.parsePolishJapaneseEntriesFromCsv(sourceWordFileNames);
 
 		System.out.println("generateKanjiEntries: readEdict");
 		// read edict common

@@ -61,7 +61,7 @@ public class JoinJMedictDictionary {
 			partialPolishJapaneseEntryList.add(polishJapaneseEntry);
 
 			if (partialPolishJapaneseEntryList.size() >= maxPos) {				
-				CsvReaderWriter.generateCsv("input_names/names.csv_" + counter, partialPolishJapaneseEntryList, false);
+				CsvReaderWriter.generateCsv(new String[] { "input_names/names.csv_" + counter }, partialPolishJapaneseEntryList, false);
 				
 				partialPolishJapaneseEntryList.clear();
 				
@@ -70,14 +70,14 @@ public class JoinJMedictDictionary {
 		}
 		
 		if (partialPolishJapaneseEntryList.size() > 0) {
-			CsvReaderWriter.generateCsv("input_names/names.csv_" + counter, partialPolishJapaneseEntryList, false);
+			CsvReaderWriter.generateCsv(new String[] { "input_names/names.csv_" + counter }, partialPolishJapaneseEntryList, false);
 		}		
 	}
 	
 	private static void readFile(List<PolishJapaneseEntry> allPolishJapaneseNamesList, Map<String, PolishJapaneseEntry> allPolishJapaneseNamesListMap, 
 			File file) throws Exception {
 		
-		List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(file.getAbsolutePath());
+		List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { file.getAbsolutePath() });
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : parsePolishJapaneseEntriesFromCsv) {
 			

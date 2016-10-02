@@ -13,7 +13,7 @@ public class RemoveNames {
 
 	public static void main(String[] args) throws Exception {
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
@@ -65,6 +65,6 @@ public class RemoveNames {
 			}			
 		}		
 		
-		CsvReaderWriter.generateCsv("input/word-nowy.csv", result, true, true, false);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-nowy.csv", "input/word02-nowy.csv" }, result, true, true, false);
 	}
 }

@@ -12,7 +12,7 @@ public class TransitiveIntransitivePairNotExistsInDictionary {
 
 	public static void main(String[] args) throws Exception {
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 				
 		CsvReader csvReader = new CsvReader(new FileReader("input/transitive_intransitive_pairs.csv"), ',');
 		

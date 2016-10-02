@@ -34,11 +34,11 @@ public class DictionarySQLDatabaseLoader {
 
 		final String mysqlAddress = "jdbc:mysql://localhost/japdb?characterEncoding=utf8&user=japdbuser&password=japdbpasswd";
 
-		//loadDictionaryIntoDB(mysqlAddress, "words", "input/word.csv");
-		loadDictionaryIntoDB(mysqlAddress, "words", "output/word.csv");
+		//loadDictionaryIntoDB(mysqlAddress, "words", new String[] { "input/word01.csv", "input/word02.csv" });
+		loadDictionaryIntoDB(mysqlAddress, "words", new String[] { "output/word01.csv", "output/word02.csv" });
 	}
 
-	private static void loadDictionaryIntoDB(String mysqlAddress, String tableName, String inputFileName)
+	private static void loadDictionaryIntoDB(String mysqlAddress, String tableName, String[] inputFileName)
 			throws IOException, JapaneseDictionaryException {
 
 		final String insertStatementSql = "insert into " + tableName + " values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";

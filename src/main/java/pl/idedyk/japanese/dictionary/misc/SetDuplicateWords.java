@@ -19,7 +19,7 @@ public class SetDuplicateWords {
 	public static void main(String[] args) throws Exception {
 				
 		// wczytywanie pliku slownika
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 		
 		Map<Integer, PolishJapaneseEntry> polishJapaneseEntriesMap = new TreeMap<Integer, PolishJapaneseEntry>();
 		
@@ -71,7 +71,7 @@ public class SetDuplicateWords {
 				
 		csvReader.close();
 
-		CsvReaderWriter.generateCsv("input/word-wynik.csv", polishJapaneseEntries, true, true, false);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv" }, polishJapaneseEntries, true, true, false);
 	}
 
 	private static List<KnownDuplicate> generateKnownDuplicatedIdForKanji(List<KnownDuplicate> result,

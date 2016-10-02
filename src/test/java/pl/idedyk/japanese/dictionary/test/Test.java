@@ -195,7 +195,7 @@ public class Test {
 
 		// parse csv
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
-				.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+				.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 
 		// validate
 
@@ -207,7 +207,7 @@ public class Test {
 		
 		// radicalList.getClass();		
 		
-		//List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		//List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 		
 		/*
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
@@ -323,7 +323,7 @@ public class Test {
 		*/
 		
 		/*
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			

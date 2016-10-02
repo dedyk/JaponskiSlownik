@@ -14,7 +14,7 @@ public class ShowVocabList {
 	public static void main(String[] args) throws Exception {
 		
 		// wczytanie listy slow
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 		
 		// stworzenie cache
 		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(polishJapaneseEntries);

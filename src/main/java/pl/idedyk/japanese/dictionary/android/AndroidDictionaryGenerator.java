@@ -80,7 +80,7 @@ public class AndroidDictionaryGenerator {
 		
 		@SuppressWarnings("unused")
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmeNewNameDictionary,
-				"input/word.csv", "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word-power.csv",
+				new String[] { "input/word01.csv", "input/word02.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word-power.csv",
 				"output/transitive_intransitive_pairs.csv");
 		
 		generateKanaEntries("../JapaneseDictionary_additional/kanjivg", "output/kana.csv");
@@ -104,7 +104,7 @@ public class AndroidDictionaryGenerator {
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(
 			JMENewDictionary jmeNewDictionary, TreeMap<String, EDictEntry> jmedictCommon,
-			JMENewDictionary jmeNewNameDictionary, String sourceFileName,
+			JMENewDictionary jmeNewNameDictionary, String[] sourceFileNames,
 			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationPowerFileName,
 			String transitiveIntransitivePairsOutputFile) throws Exception {
 
@@ -122,7 +122,7 @@ public class AndroidDictionaryGenerator {
 
 		// parse csv
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
-				.parsePolishJapaneseEntriesFromCsv(sourceFileName);
+				.parsePolishJapaneseEntriesFromCsv(sourceFileNames);
 
 		// validate		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
@@ -159,9 +159,7 @@ public class AndroidDictionaryGenerator {
 
 		System.out.println("checkAndSavePolishJapaneseEntries: generateCsv");
 
-		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
-
-		CsvReaderWriter.generateCsv(outputStream, result, false);
+		CsvReaderWriter.generateCsv(new String[] { destinationFileName }, result, false);
 		
 		// generowanie mocy slow
 		System.out.println("checkAndSavePolishJapaneseEntries: generateWordPowerCsv");

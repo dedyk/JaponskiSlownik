@@ -56,10 +56,10 @@ public class GenerateCompanyProductOrganizationNameList {
 			}			
 		}
 		
-		CsvReaderWriter.generateCsv("input_names2/newCompanyProductOrganizationName.csv", newCompanyProductOrganizationName, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names2/newCompanyProductOrganizationName.csv" }, newCompanyProductOrganizationName, false);
 		
-		CsvReaderWriter.generateCsv("input_names2/alreadyAddedCompanyName.csv", companyAddedCompanyProductOrganizationName, false);
-		CsvReaderWriter.generateCsv("input_names2/alreadyAddedProductName.csv", productAddedCompanyProductOrganizationName, false);
-		CsvReaderWriter.generateCsv("input_names2/alreadyAddedOrganizationName.csv", organizationAddedCompanyProductOrganizationName, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names2/alreadyAddedCompanyName.csv" }, companyAddedCompanyProductOrganizationName, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names2/alreadyAddedProductName.csv" }, productAddedCompanyProductOrganizationName, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names2/alreadyAddedOrganizationName.csv" }, organizationAddedCompanyProductOrganizationName, false);
 	}
 }

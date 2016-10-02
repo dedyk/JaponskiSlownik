@@ -48,7 +48,7 @@ public class J2MEDictionaryGenerator {
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
 		
 		// Słowniczek
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 		
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmeNewDictionary, jmeNewNameDictionary);
 		
@@ -57,7 +57,7 @@ public class J2MEDictionaryGenerator {
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true);
 
 		// kanji dictionary
-		//List<PolishJapaneseEntry> polishJapaneseKanjiEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv", null);
+		//List<PolishJapaneseEntry> polishJapaneseKanjiEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" }, null);
 		//Validator.validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries, katakanaEntries);
 		//generateKanjiImages(polishJapaneseKanjiEntries, charsCache, kanjiOutputDir);
 

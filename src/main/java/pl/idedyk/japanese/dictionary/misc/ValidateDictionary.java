@@ -15,7 +15,7 @@ public class ValidateDictionary {
 		
 		System.out.println("Wczytywanie słownika...");
 				
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 		
 		System.out.println("Wczytywanie słownika edict...");
 		

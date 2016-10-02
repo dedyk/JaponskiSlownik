@@ -84,7 +84,7 @@ public class Test5 {
 		}
 		*/
 		
-		//List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv("input/word.csv");;
+		//List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 		
 		/*
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true);

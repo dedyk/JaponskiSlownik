@@ -42,6 +42,8 @@ import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
 public class CsvReaderWriter {
+	
+	private static final int MAX_DICTIONARY_SIZE = 100000;
 
 	public static void generateDictionaryApplicationResult(String outputFile,
 			List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
@@ -197,6 +199,7 @@ public class CsvReaderWriter {
 		pw.close();
 	}
 
+	/*
 	public static void generateCsv(OutputStream out, List<PolishJapaneseEntry> polishJapaneseEntries,
 			boolean addKnownDupplicatedId) throws IOException {
 
@@ -206,36 +209,127 @@ public class CsvReaderWriter {
 
 		csvWriter.close();
 	}
+	*/
 
-	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries,
+	public static void generateCsv(String[] outputFiles, List<PolishJapaneseEntry> polishJapaneseEntries,
 			boolean addKnownDupplicatedId) throws IOException {
+		
+		List<List<PolishJapaneseEntry>> polishJapaneseEntriesSplited = null;
+		
+		if (outputFiles.length == 1) {
+			polishJapaneseEntriesSplited = new ArrayList<List<PolishJapaneseEntry>>();
+			
+			polishJapaneseEntriesSplited.add(polishJapaneseEntries);
+			
+		} else {
+			polishJapaneseEntriesSplited = splitList(polishJapaneseEntries, MAX_DICTIONARY_SIZE);
+		}		
 
-		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
+		if (outputFiles.length < polishJapaneseEntriesSplited.size()) {
+			throw new RuntimeException("Brak wystarczającej liczby plików");
+		}
+		
+		for (int idx = 0; idx < polishJapaneseEntriesSplited.size(); ++idx) {
+			
+			CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFiles[idx]), ',');
 
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, true, true, null);
+			writePolishJapaneseEntries(csvWriter, polishJapaneseEntriesSplited.get(idx), addKnownDupplicatedId, true, true, null);
 
-		csvWriter.close();
+			csvWriter.close();
+		}		
 	}
 
-	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries,
+	public static void generateCsv(String[] outputFiles, List<PolishJapaneseEntry> polishJapaneseEntries,
 			boolean addKnownDupplicatedId, boolean addId, boolean addExampleSentenceGroupIds) throws IOException {
 
-		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
+		List<List<PolishJapaneseEntry>> polishJapaneseEntriesSplited = null;
+		
+		if (outputFiles.length == 1) {
+			polishJapaneseEntriesSplited = new ArrayList<List<PolishJapaneseEntry>>();
+			
+			polishJapaneseEntriesSplited.add(polishJapaneseEntries);
+			
+		} else {
+			polishJapaneseEntriesSplited = splitList(polishJapaneseEntries, MAX_DICTIONARY_SIZE);
+		}		
 
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, addId, addExampleSentenceGroupIds, null);
+		if (outputFiles.length < polishJapaneseEntriesSplited.size()) {
+			throw new RuntimeException("Brak wystarczającej liczby plików");
+		}
+		
+		for (int idx = 0; idx < polishJapaneseEntriesSplited.size(); ++idx) {
+			
+			CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFiles[idx]), ',');
 
-		csvWriter.close();
+			writePolishJapaneseEntries(csvWriter, polishJapaneseEntriesSplited.get(idx), addKnownDupplicatedId, addId, addExampleSentenceGroupIds, null);
+
+			csvWriter.close();
+		}
 	}
 
-	public static void generateCsv(String outputFile, List<PolishJapaneseEntry> polishJapaneseEntries,
+	public static void generateCsv(String[] outputFiles, List<PolishJapaneseEntry> polishJapaneseEntries,
 			boolean addKnownDupplicatedId, boolean addId, boolean addExampleSentenceGroupIds,
 			ICustomAdditionalCsvWriter customAdditionalCsvWriter) throws IOException {
 
-		CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFile), ',');
+		List<List<PolishJapaneseEntry>> polishJapaneseEntriesSplited = null;
+		
+		if (outputFiles.length == 1) {
+			polishJapaneseEntriesSplited = new ArrayList<List<PolishJapaneseEntry>>();
+			
+			polishJapaneseEntriesSplited.add(polishJapaneseEntries);
+			
+		} else {
+			polishJapaneseEntriesSplited = splitList(polishJapaneseEntries, MAX_DICTIONARY_SIZE);
+		}
 
-		writePolishJapaneseEntries(csvWriter, polishJapaneseEntries, addKnownDupplicatedId, addId, addExampleSentenceGroupIds, customAdditionalCsvWriter);
+		if (outputFiles.length < polishJapaneseEntriesSplited.size()) {
+			throw new RuntimeException("Brak wystarczającej liczby plików");
+		}
+		
+		for (int idx = 0; idx < polishJapaneseEntriesSplited.size(); ++idx) {
+			
+			CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFiles[idx]), ',');
 
-		csvWriter.close();
+			writePolishJapaneseEntries(csvWriter, polishJapaneseEntriesSplited.get(idx), addKnownDupplicatedId, addId, addExampleSentenceGroupIds, customAdditionalCsvWriter);
+
+			csvWriter.close();
+		}
+	}
+	
+	private static <T> List<List<T>> splitList(List<T> list, int size) {
+		
+		if (size <= 0) {
+			throw new RuntimeException("size <= 0");
+		}
+		
+		int start = 0;
+		int stop = size;
+		
+		if (stop >= list.size()) {
+			stop = list.size();
+		}
+
+		List<List<T>> result = new ArrayList<List<T>>();
+				
+		while (true) {
+			
+			List<T> smallResult = list.subList(start, stop);
+			
+			result.add(smallResult);
+			
+			start = stop;
+			stop += size;
+			
+			if (start >= list.size()) {
+				break;
+			}
+			
+			if (stop >= list.size()) {
+				stop = list.size();
+			}
+		}
+		
+		return result;
 	}
 	
 	private static void writePolishJapaneseEntries(CsvWriter csvWriter,
@@ -360,71 +454,75 @@ public class CsvReaderWriter {
 	}
 
 
-	public static List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv(String fileName) throws IOException,
+	public static List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv(String[] fileNames) throws IOException,
 			JapaneseDictionaryException {
 
+		
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 
-		CsvReader csvReader = new CsvReader(new FileReader(fileName), ',');
+		for (String fileName : fileNames) {
 
-		while (csvReader.readRecord()) {
+			CsvReader csvReader = new CsvReader(new FileReader(fileName), ',');
 
-			int id = Integer.parseInt(csvReader.get(0));
+			while (csvReader.readRecord()) {
 
-			String dictionaryEntryTypeListString = csvReader.get(1);
-			String attributesString = csvReader.get(2);
-			String wordTypeString = csvReader.get(3);
-			String groupString = csvReader.get(4);
-			String prefixKanaString = csvReader.get(5);
-			String kanjiString = csvReader.get(6);
+				int id = Integer.parseInt(csvReader.get(0));
 
-			if (kanjiString.equals("") == true) {
-				throw new JapaneseDictionaryException("Empty kanji!");
+				String dictionaryEntryTypeListString = csvReader.get(1);
+				String attributesString = csvReader.get(2);
+				String wordTypeString = csvReader.get(3);
+				String groupString = csvReader.get(4);
+				String prefixKanaString = csvReader.get(5);
+				String kanjiString = csvReader.get(6);
+
+				if (kanjiString.equals("") == true) {
+					throw new JapaneseDictionaryException("Empty kanji!");
+				}
+
+				String kanaString = csvReader.get(7);
+				String prefixRomajiString = csvReader.get(8);
+				String romajiString = csvReader.get(9);
+				String polishTranslateListString = csvReader.get(10);
+				String infoString = csvReader.get(11);
+				String parseAdditionalInfoListString = csvReader.get(12);
+				String knownDuplicatedListString = csvReader.get(13);
+
+				PolishJapaneseEntry entry = new PolishJapaneseEntry();
+
+				entry.setId(id);
+				entry.setDictionaryEntryTypeList(parseDictionaryEntryTypeStringList(dictionaryEntryTypeListString));
+				entry.setAttributeList(parseAttributesStringList(attributesString));
+				entry.setWordType(WordType.valueOf(wordTypeString));
+				entry.setGroups(GroupEnum.convertToListGroupEnum(parseStringIntoList(groupString)));
+				entry.setPrefixKana(prefixKanaString);
+				entry.setKanji(kanjiString);
+				entry.setKana(kanaString);
+				entry.setPrefixRomaji(prefixRomajiString);
+				entry.setRomaji(romajiString);
+				entry.setTranslates(parseStringIntoList(polishTranslateListString));
+				entry.setParseAdditionalInfoList(parseParseAdditionalInfoListString(parseAdditionalInfoListString));
+
+				List<KnownDuplicate> knownDuplicatedList = new ArrayList<PolishJapaneseEntry.KnownDuplicate>();
+
+				List<String> knownDuplicatedListStringAsListString = parseStringIntoList(knownDuplicatedListString);
+
+				for (String currentKnownDuplicateString : knownDuplicatedListStringAsListString) {
+
+					String[] currentKnownDuplicateStringSplited = currentKnownDuplicateString.split(" ");
+
+					knownDuplicatedList.add(new KnownDuplicate(KnownDuplicateType.valueOf(currentKnownDuplicateStringSplited[0]), 
+							Integer.parseInt(currentKnownDuplicateStringSplited[1])));				
+				}
+
+				entry.setKnownDuplicatedList(knownDuplicatedList);
+
+				entry.setInfo(infoString);
+
+				result.add(entry);
 			}
 
-			String kanaString = csvReader.get(7);
-			String prefixRomajiString = csvReader.get(8);
-			String romajiString = csvReader.get(9);
-			String polishTranslateListString = csvReader.get(10);
-			String infoString = csvReader.get(11);
-			String parseAdditionalInfoListString = csvReader.get(12);
-			String knownDuplicatedListString = csvReader.get(13);
-
-			PolishJapaneseEntry entry = new PolishJapaneseEntry();
-
-			entry.setId(id);
-			entry.setDictionaryEntryTypeList(parseDictionaryEntryTypeStringList(dictionaryEntryTypeListString));
-			entry.setAttributeList(parseAttributesStringList(attributesString));
-			entry.setWordType(WordType.valueOf(wordTypeString));
-			entry.setGroups(GroupEnum.convertToListGroupEnum(parseStringIntoList(groupString)));
-			entry.setPrefixKana(prefixKanaString);
-			entry.setKanji(kanjiString);
-			entry.setKana(kanaString);
-			entry.setPrefixRomaji(prefixRomajiString);
-			entry.setRomaji(romajiString);
-			entry.setTranslates(parseStringIntoList(polishTranslateListString));
-			entry.setParseAdditionalInfoList(parseParseAdditionalInfoListString(parseAdditionalInfoListString));
-			
-			List<KnownDuplicate> knownDuplicatedList = new ArrayList<PolishJapaneseEntry.KnownDuplicate>();
-			
-			List<String> knownDuplicatedListStringAsListString = parseStringIntoList(knownDuplicatedListString);
-			
-			for (String currentKnownDuplicateString : knownDuplicatedListStringAsListString) {
-				
-				String[] currentKnownDuplicateStringSplited = currentKnownDuplicateString.split(" ");
-				
-				knownDuplicatedList.add(new KnownDuplicate(KnownDuplicateType.valueOf(currentKnownDuplicateStringSplited[0]), 
-						Integer.parseInt(currentKnownDuplicateStringSplited[1])));				
-			}
-						
-			entry.setKnownDuplicatedList(knownDuplicatedList);
-
-			entry.setInfo(infoString);
-
-			result.add(entry);
+			csvReader.close();
 		}
-
-		csvReader.close();
 
 		return result;
 	}
