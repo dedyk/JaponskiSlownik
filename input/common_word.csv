@@ -1287,7 +1287,7 @@
 1287,,-,ケアワーカー,[n],"[nursing care worker, care provider, home-care worker]"
 1288,1,-,ターミナルケア,[n],[terminal care]
 1289,,-,ケアサービス,[n],[care service]
-1290,,-,ケアハウス,[n],"[nursing care center, nursing care centre]"
+1290,1,-,ケアハウス,[n],"[nursing care center, nursing care centre]"
 1291,,-,ケアプラン,[n],[care plan]
 1292,1,-,ケアマネージャー,[n],[care manager]
 1293,,-,デイケア,[n],[day care]
@@ -1484,7 +1484,7 @@
 1484,,-,サービスビューロー,[n],[Service Bureau]
 1485,,-,サービスプリミティブ,[n],[service primitive]
 1486,,-,サービスプログラム,[n],"[utility program, service program]"
-1487,,-,サービスプロバイダ,[n],[service provider]
+1487,1,-,サービスプロバイダ,[n],[service provider]
 1488,,-,サービスルーチン,[n],"[utility routine, service routine]"
 1489,,-,ソケットサービス,[n],[socket services]
 1490,1,-,ダイヤルインサービス,[n],[dial-in service]
@@ -1596,7 +1596,7 @@
 1596,,-,バレエスキー,[n],"[ski ballet, acroski]"
 1597,,-,エアリアルスキー,[n],[aerial skiing]
 1598,,-,ローンスキー,[n],[lawn skiing]
-1599,,-,ショートスキー,[n],[short ski]
+1599,1,-,ショートスキー,[n],[short ski]
 1600,1,-,ノルディックスキー,[n],[Nordic skiing]
 1601,1,-,スキーパンツ,[n],[ski pants]
 1602,1,-,スキーパラグライダー,[n],[ski paraglider]
@@ -2445,7 +2445,7 @@
 2445,1,-,クラフトビール,[n],"[microbrew beer, craft beer, boutique beer]"
 2446,1,-,ピア,[n],[peer]
 2447,,-,ピアグループ,[n],[peer group]
-2448,,-,ピアシステム,[n],[peer system]
+2448,1,-,ピアシステム,[n],[peer system]
 2449,1,-,ピアグループリーダ,[n],[peer group leader]
 2450,1,-,アップライトピアノ,[n],[upright piano]
 2451,1,-,ジャズピアノ,[n],[jazz piano]
@@ -2612,7 +2612,7 @@
 2612,,-,プロデビュー,[n],[professional debut]
 2613,,-,プロレスラー,[n],[pro wrestler]
 2614,1,-,プロサッカー,[n],[professional soccer]
-2615,,-,コンパクトプロ,[n],[Compact Pro]
+2615,1,-,コンパクトプロ,[n],[Compact Pro]
 2616,1,-,プロボクシング,[n],"[pro boxing, professional boxing]"
 2617,1,-,プロチーム,[n],"[professional team (usu. in sport), pro team]"
 2618,1,-,プロリーグ,[n],[professional league (sport)]
@@ -2635,7 +2635,7 @@
 2635,1,-,ペイオフ,[n],"[deposit insurance, payoff (e.g. in game theory)]"
 2636,1,-,バックペイ,[n],[back pay]
 2637,,-,フェルトペン,[n],"[felt pen, felt-tip pen, fiber-tip pen]"
-2638,,-,ペンパル,[n],[pen pal]
+2638,1,-,ペンパル,[n],[pen pal]
 2639,,-,ライトペン,[n],[light pen]
 2640,1,-,ペンタブレット,[n],[pen tablet]
 2641,1,-,デジタルペン,[n],[digital pen]
@@ -2837,7 +2837,7 @@
 2837,,-,ライブラリディレクトリ,[n],[library directory]
 2838,1,-,ライブラリファイル,[n],[library file]
 2839,1,-,ライブラリルーチン,[n],[library routine]
-2840,,-,ランタイムライブラリ,[n],[run-time library]
+2840,1,-,ランタイムライブラリ,[n],[run-time library]
 2841,1,-,レコードライブラリ,[n],"[sound recordings library, record library]"
 2842,1,-,アーカイブライブラリ,[n],[archive library]
 2843,1,-,ダイナミックリンクライブラリ,[n],"[dynamic linking library, DLL]"
@@ -3052,7 +3052,7 @@
 3052,1,不届き,ふとどき,"[adj-na, n]","[rude, insolent, nefarious]"
 3053,,不成,ふなり,"[adj-no, n]","[unpromoted (piece), limit orders that become market orders at the closing auction if not already executed]"
 3054,1,不敬,ふけい,"[adj-na, n]","[disrespect, irreverence, impiety, blasphemy, profanity]"
-3055,,不斉,ふせい,"[n, adj-no]","[irregularity, unevenness, asymmetry, lack of uniformity]"
+3055,1,不斉,ふせい,"[n, adj-no]","[irregularity, unevenness, asymmetry, lack of uniformity]"
 3056,1,不文,ふぶん,"[adj-no, n]","[unwritten, illiterate, uneducated, poor writing]"
 3057,1,不時,ふじ,"[n, adj-no]","[emergency, unexpectedness]"
 3058,,不用,ふよう,"[adj-na, n, adj-no]","[disused, unused, useless, wasteful, of no use]"
@@ -3129,7 +3129,7 @@
 3129,,入れ,いれ,[n-suf],"[container, receptacle]"
 3130,1,入唐,にっとう,"[n, vs]","[visiting Tang China (esp. of an envoy, monk, or exchange student), entering Tang China]"
 3131,1,入国管理,にゅうこくかんり,[n],[immigration control]
-3132,,入館,にゅうかん,"[n, vs]","[entry (e.g. library, school, museum), entering]"
+3132,1,入館,にゅうかん,"[n, vs]","[entry (e.g. library, school, museum), entering]"
 3133,,全作,ぜんさく,[n],"[whole work, all of the works]"
 3134,,全速,ぜんそく,"[n, adj-no]",[full speed]
 3135,1,八咫,やあた,[n],"[eight ata (approx. 144 cm), large, long]"
@@ -3210,7 +3210,7 @@
 3210,,原動,げんどう,[n],[motive]
 3211,1,厭世,えんせい,[n],"[pessimism, weariness with life]"
 3212,1,参政,さんせい,[n],[participation in government]
-3213,,参議,さんぎ,"[n, vs]","[participation in government, state councillor (in the ritsuryo system), state councilor, vice-minister (early Meiji period), Cabinet Councillor (1937-1943), Cabinet Councilor]"
+3213,1,参議,さんぎ,"[n, vs]","[participation in government, state councillor (in the ritsuryo system), state councilor, vice-minister (early Meiji period), Cabinet Councillor (1937-1943), Cabinet Councilor]"
 3214,1,友禅,ゆうぜん,[n],"[type of dyeing method or pattern, silk printed by the Yuzen process]"
 3215,1,双児,そうじ,[n],[twins]
 3216,,双生,そうせい,"[n, adj-no]","[bearing twins, twins]"
@@ -3331,7 +3331,7 @@
 3331,,嬉しそう,うれしそう,[adj-na],"[delightful, glad-looking]"
 3332,1,存じ,ぞんじ,[n],[knowing]
 3333,1,孤城,こじょう,[n],"[solitary castle, isolated castle]"
-3334,,学生会,がくせいかい,[n],[student council (details vary widely but a body of students that takes part in overseeing student behaviour or student activities)]
+3334,1,学生会,がくせいかい,[n],[student council (details vary widely but a body of students that takes part in overseeing student behaviour or student activities)]
 3335,,学習指導,がくしゅうしどう,[n],[educational guidance]
 3336,1,学習障害,がくしゅうしょうがい,"[n, adj-no]",[learning disability]
 3337,,孵化,ふか,"[n, vs]","[incubation, hatching]"
@@ -3456,7 +3456,7 @@
 3456,1,感圧,かんあつ,"[n, adj-no]",[pressure sensitivity]
 3457,1,懐かし,なつかし,[adj-no],"[dear, desired, missed]"
 3458,1,懐中,かいちゅう,"[n, vs]",[one's pocket]
-3459,,懐石,かいせき,[n],"[simple meal eaten before tea is served, sophisticated traditional Japanese cuisine brought in courses]"
+3459,1,懐石,かいせき,[n],"[simple meal eaten before tea is served, sophisticated traditional Japanese cuisine brought in courses]"
 3460,,懲らしめ,こらしめ,[n],[chastisement]
 3461,1,成層,せいそう,[n],[stratification]
 3462,1,戒厳,かいげん,[n],[martial law]
@@ -3964,7 +3964,7 @@
 3964,1,逆上せ,のぼせ,[n],"[hot flash, rush of blood to the head]"
 3965,1,通り抜け,とおりぬけ,[n],"[passing through, through passage]"
 3966,1,通商産業,つうしょうさんぎょう,[n],[Ministry of International Trade and Industry]
-3967,,造酒,ぞうしゅ,"[n, vs]",[sake brewing]
+3967,1,造酒,ぞうしゅ,"[n, vs]",[sake brewing]
 3968,1,連れて,つれて,"[conj, exp]","[as, in proportion to]"
 3969,1,連れ込み,つれこみ,[n],[taking one's lover to a hotel]
 3970,1,遇す,ぐうす,"[v5s, vt]","[to entertain, to treat]"
@@ -4344,7 +4344,7 @@
 4344,,性細胞,せいさいぼう,[n],[sex cell]
 4345,,制酸剤,せいさんざい,[n],[anti-acid preparation]
 4346,1,製糸業,せいしぎょう,[n],[the silk industry]
-4347,,製糸工場,せいしこうじょう,[n],"[spinning mill, filature, thread-manufacturing plant, silk mill]"
+4347,1,製糸工場,せいしこうじょう,[n],"[spinning mill, filature, thread-manufacturing plant, silk mill]"
 4348,1,精神界,せいしんかい,[n],"[spiritual world, mental world]"
 4349,1,精神病医,せいしんびょうい,[n],"[psychiatrist, mental specialist, alienist]"
 4350,1,生体学,せいたいがく,[n],[somatology]
@@ -4553,7 +4553,7 @@
 4553,,亜爾然丁,アルゼンチン,[n],[Argentina]
 4554,,-,アルゼンチンタンゴ,[n],[Argentine tango]
 4555,,-,アンゼリカ,[n],"[angelica (any herb of the genus Angelica, esp. garden angelica, Angelica archangelica)]"
-4556,,-,アンチークファッション,[n],[antique fashion]
+4556,1,-,アンチークファッション,[n],[antique fashion]
 4557,1,-,クローズドアーキテクチャ,[n],[closed architecture]
 4558,,-,システムアーキテクチャ,[n],[system architecture]
 4559,1,-,スイッチアーキテクチャ,[n],[switch architecture]
@@ -4587,7 +4587,7 @@
 4587,1,-,インスタントメッセージング,[n],"[instant messaging, IM]"
 4588,1,-,インスタントカメラ,[n],[instant camera]
 4589,,-,インストラクションセット,[n],[instruction set]
-4590,,-,グループインタビュー,[n],[group interview]
+4590,1,-,グループインタビュー,[n],[group interview]
 4591,,-,デプスインタビュー,[n],[depth interview]
 4592,,-,ヒーローインタービュー,[n],"[interview with leading player in a game (esp. baseball), player-of-the-game interview]"
 4593,1,-,インターネットアドレス,[n],[Internet address]
@@ -4598,7 +4598,7 @@
 4598,1,-,インターネットバブル,[n],[dot-com bubble]
 4599,,-,インターネットバンキング,[n],[Internet banking]
 4600,,-,インターネットプロトコル,[n],"[Internet Protocol, IP]"
-4601,,-,インターネットユーザー,[n],[Internet user]
+4601,1,-,インターネットユーザー,[n],[Internet user]
 4602,1,-,モバイルインターネット,[n],[mobile Internet]
 4603,1,-,インターネットプロバイダー,[n],"[Internet Service Provider, ISP]"
 4604,1,-,ケーブルインターネット,[n],[cable Internet (connection)]
@@ -4740,7 +4740,7 @@
 4740,1,-,オペレーティング,[n],[operating]
 4741,1,-,オペレーティングマージン,[n],[operating margin]
 4742,,-,オペレーティングシステムイメージ,[n],[operating system image]
-4743,,-,オペレーティングシステムファームウェア,[n],[operating system firmware]
+4743,1,-,オペレーティングシステムファームウェア,[n],[operating system firmware]
 4744,1,-,ディスクオペレーティングシステム,[n],"[disk operating system, DOS]"
 4745,1,-,ネットワークオペレーティングシステム,[n],[network operating system]
 4746,,-,マルチタスクオペレーティングシステム,[n],[multitasking operating system]
@@ -4792,7 +4792,7 @@
 4792,,-,フレキシブルディスクカートリッジ,[n],[flexible disk cartridge]
 4793,1,-,キャスチング,[n],[casting]
 4794,1,-,キャスチングリール,[n],[casting reel]
-4795,,-,チルドキャスチング,[n],[chilled casting]
+4795,1,-,チルドキャスチング,[n],[chilled casting]
 4796,,-,サーフキャスティング,[n],[surf casting]
 4797,,-,ディスクキャッシング,[n],[disk caching]
 4798,,-,キャッチャーボート,[n],[catcher (whaling boat)]
@@ -4931,7 +4931,7 @@
 4931,,-,マネジメントコンサルタント,[n],[management consultant]
 4932,1,-,コンサルティングセールス,[n],[consulting sales]
 4933,,-,コンシューマーインターポール,[n],[Consumer Interpole]
-4934,,-,コンスタントシェーディング,[n],[constant shading]
+4934,1,-,コンスタントシェーディング,[n],[constant shading]
 4935,1,-,コンスタントビットレイト,[n],[constant bit rate]
 4936,1,-,ナショナルコンセンサス,[n],[national consensus]
 4937,1,-,ユニコードコンソーシアム,[n],[Unicode Consortium]
@@ -5125,7 +5125,7 @@
 5125,1,-,ジェスチャーゲーム,[n],[charades]
 5126,1,-,ジェネレーションギャップ,[n],[generation gap]
 5127,1,-,ビートジェネレーション,[n],[beat generation]
-5128,,-,ロストジェネレーション,[n],[lost generation]
+5128,1,-,ロストジェネレーション,[n],[lost generation]
 5129,,-,ジャイアントパンダ,[n],[giant panda (Ailuropoda melanoleuca)]
 5130,1,-,ジャイアントケルプ,[n],[giant kelp (Macrocystis pyrifera)]
 5131,1,-,ジャイアントスラローム,[n],[giant slalom]
@@ -5272,7 +5272,7 @@
 5272,,-,ディスカウントショップ,[n],[discount shop]
 5273,,-,ディスカウントキャッシュフロー,[n],[discounted cash flow]
 5274,1,-,グループディスカッション,[n],[group discussion]
-5275,,-,パネルディスカッション,[n],[panel discussion]
+5275,1,-,パネルディスカッション,[n],[panel discussion]
 5276,,-,フォーラムディスカッション,[n],[forum discussion]
 5277,1,-,ウインドーディスプレー,[n],[window display]
 5278,1,-,ナンバーディスプレー,[n],"[number display, caller ID (on telephones)]"
@@ -5403,7 +5403,7 @@
 5403,1,-,ネットワークマネージャ,[n],[network manager]
 5404,,-,リングネットワーク,[n],[ring network]
 5405,1,-,ワークグループネットワーク,[n],[workgroup network]
-5406,,-,ワイヤレスネットワーク,[n],[wireless network]
+5406,1,-,ワイヤレスネットワーク,[n],[wireless network]
 5407,1,-,リカレントニューラルネットワーク,[n],[recurrent neural network]
 5408,,-,オンラインネットワークシステム,[n],[online network system]
 5409,,-,トークンリングネットワーク,[n],[token-ring network]
@@ -5868,7 +5868,7 @@
 5868,1,戊,つちのえ,[n],"[5th in rank, fifth sign of the Chinese calendar]"
 5869,1,葡,ぽ,"[n, n-pref, n-suf]",[Portugal]
 5870,,-,み,[suf],"[-ness (nominalizing suffix, esp. of sensory or subjective adjectives), nominalizing suffix indicating location, (as ...mi ...mi) alternating between ... and ...]"
-5871,,箕,み,[n],"[winnow, winnowing basket, winnowing fan]"
+5871,1,箕,み,[n],"[winnow, winnowing basket, winnowing fan]"
 5872,1,-,む,"[int, aux-v]","[unh (sound of physical exertion), oof, wow, whoa, yes, yeah, uh-huh, probably, will, intend to, would like to have done (for me)]"
 5873,,冶,や,[n],[melting]
 5874,1,輻,や,[n],[spoke]
@@ -5908,7 +5908,7 @@
 5908,1,-,ー,[n],[long vowel mark (usually only used in katakana)]
 5909,1,九〇式大空中聴音機,きゅうまるしきだいくうちゅうちょうおんき,[n],"[Japanese war tuba, pre-radar acoustic locator used by the Imperial Japanese Army]"
 5910,1,仄,ほの,[pref],"[slight, dim, faint]"
-5911,,付,づけ,[n-suf],"[dated (e.g. a letter), date of effect (e.g. a rule change)]"
+5911,1,付,づけ,[n-suf],"[dated (e.g. a letter), date of effect (e.g. a rule change)]"
 5912,1,伽,とぎ,[n],"[nursing, nurse, attending, attendant, entertainer]"
 5913,1,厳,げん,"[adj-t, adv-to]","[strict, stern]"
 5914,,削,さく,[n],"[plane, sharpen, whittle, pare, shave (leather), scrape off, crossout, reduce, curtail]"
@@ -5996,7 +5996,7 @@
 5996,,膠,にかわ,[n],"[glue (usu. from animal and fish bone, skin, etc.)]"
 5997,1,膿,うみ,[n],[pus]
 5998,1,臭,しゅう,[suf],"[-smell, stinking of, smacking of, hinting of]"
-5999,,萼,がく,[n],[calyx]
+5999,1,萼,がく,[n],[calyx]
 6000,1,-,ヤブ,[],[(medical) quack]
 6001,1,藪,やぶ,[n],"[thicket, bush, grove, scrub, (medical) quack]"
 6002,1,蜀,しょく,[n],"[Shu (one of the Three Kingdoms competing for control of China after the fall of the Han Dynasty), Shu Han]"
@@ -19647,7 +19647,7 @@
 19647,,-,クリアエリア,[n],[clear area]
 19648,,-,グラフエリア,[n],[chart area]
 19649,,-,システムエリア,[n],[system area]
-19650,,-,スワップエリア,[n],[swap area]
+19650,1,-,スワップエリア,[n],[swap area]
 19651,,-,チャットエリア,[n],[chat area]
 19652,,-,プログラムエリア,[n],[program area]
 19653,,-,プロットエリア,[n],[plot area]
@@ -19983,7 +19983,7 @@
 19983,1,-,スープカップ,[n],[soup cup]
 19984,,-,グリースカップ,[n],[grease cup]
 19985,,-,メジャーカップ,[n],[measuring cup]
-19986,,-,カップサラダ,[n],"[salad served in a glass, cup, hollowed-out tomato, etc.]"
+19986,1,-,カップサラダ,[n],"[salad served in a glass, cup, hollowed-out tomato, etc.]"
 19987,,-,アメリカズカップレース,[n],[America's Cup race]
 19988,,-,ワーキングカップル,[n],[working couple]
 19989,,-,ポークカツレツ,[n],[pork cutlet]
@@ -25492,7 +25492,7 @@
 25492,,序破急,じょはきゅう,[n],"[artistic modulations in traditional Japanese performances, opening, middle and climax (end)]"
 25493,,弾正台,だんじょうだい,[n],"[Imperial Prosecuting and Investigating Office (1869-1871 CE), Imperial Prosecuting and Investigating Office (under the ritsuryo system)]"
 25494,,弾正台,ただすつかさ,[],[Imperial Prosecuting and Investigating Office (under the ritsuryo system)]
-25495,,犯罪に及ぶ,はんざいにおよぶ,"[exp, v5b]","[to commit a crime, to resort to crime]"
+25495,1,犯罪に及ぶ,はんざいにおよぶ,"[exp, v5b]","[to commit a crime, to resort to crime]"
 25496,,各論,かくろん,[n],"[item-by-item discussion, itemized discussion, detailed exposition, detailed discussion]"
 25497,,八方行灯,はっぽうあんどん,[n],[large hanging paper lantern]
 25498,,科を作る,しなをつくる,"[exp, v5r]","[to put on coquettish airs, to act flirtatiously, to act kittenish]"
@@ -26087,7 +26087,7 @@
 26087,,錦上花を添える,きんじょうかをそえる,"[exp, v1]",[crowning beauty with even greater glory]
 26088,,食器洗い機,しょっきあらいき,[n],"[dishwasher, dishwashing machine]"
 26089,,間一髪のところ,かんいっぱつのところ,[n],"[close call, narrow escape]"
-26090,,黄道十二宮,こうどうじゅうにきゅう,[n],[twelve signs of the zodiac]
+26090,1,黄道十二宮,こうどうじゅうにきゅう,[n],[twelve signs of the zodiac]
 26091,,食わせる,くわせる,"[v1, vt]","[to feed, to provide, to inflict, to cheat]"
 26092,,音楽大学,おんがくだいがく,[n],"[college of music, school of music, music college]"
 26093,1,年季明け,ねんきあけ,[n],[expiration of a term of service]
