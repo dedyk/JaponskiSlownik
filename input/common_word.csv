@@ -2312,7 +2312,7 @@
 2312,1,-,サーチパス,[n],[search path]
 2313,1,-,バーチャルパス,[n],[virtual path]
 2314,1,-,パスオーバーヘッド,[n],[path overhead]
-2315,,-,パスフレーズ,[n],[pass phrase]
+2315,1,-,パスフレーズ,[n],[pass phrase]
 2316,1,-,パスプレフィックス,[n],[path prefix]
 2317,1,-,グライドパス,[n],[glide path]
 2318,,-,ボーディングパス,[n],[boarding pass]
@@ -3438,7 +3438,7 @@
 3438,1,忘年,ぼうねん,[n],"[forgetting the hardships of the old year, forgetting one another's age difference]"
 3439,,急転,きゅうてん,"[n, vs]",[sudden change]
 3440,1,性善,せいぜん,[n],[intrinsic goodness]
-3441,,性差,せいさ,[n],[sex difference]
+3441,1,性差,せいさ,[n],[sex difference]
 3442,,性感,せいかん,"[n, adj-no]",[sexual feelings]
 3443,1,怪事,かいじ,[n],"[mystery, strange event, mysterious affair]"
 3444,1,怯え,おびえ,[n],"[being startled, surprised or afraid, panic, trepidation]"
@@ -8862,7 +8862,7 @@
 8862,,刃文,はもん,[n],[temper pattern of a sword blade]
 8863,,後車,こうしゃ,[n],[rear car]
 8864,,講社,こうしゃ,[n],[religious association]
-8865,,厚謝,こうしゃ,"[n, vs]",[deep gratitude]
+8865,1,厚謝,こうしゃ,"[n, vs]",[deep gratitude]
 8866,,鉱車,こうしゃ,[n],"[mine car, mine wagon]"
 8867,,棄市,きし,[n],"[execution by decapitation, followed by public display of the body (form of punishment in ancient China)]"
 8868,,貴誌,きし,[n],"[your magazine, your journal, your paper, your honored paper, your honoured paper, your columns]"
@@ -9703,7 +9703,7 @@
 9703,,-,すかす,[v5s],"[to pose, to be affected, to put on an air]"
 9704,,賺す,すかす,[v5s],"[to coax, to cajole, to humour (humor), to wheedle]"
 9705,,空かす,すかす,[v5s],"[to feel hungry, to get hungry]"
-9706,,受く,うく,"[v2k-s, vt]","[to receive, to get, to be given]"
+9706,1,受く,うく,"[v2k-s, vt]","[to receive, to get, to be given]"
 9707,,羸,るい,[n],"[weakness, weakening, tiring]"
 9708,,波羅夷,はらい,[n],[parajika (rules entailing expulsion from the sangha for life)]
 9709,,臥せる,ふせる,"[v5r, vt]","[to lie down, to retire, to go to bed]"
@@ -12161,7 +12161,7 @@
 12161,,鶚,みさご,[n],"[osprey (Pandion haliaetus), fish hawk]"
 12162,,初給,しょきゅう,[n],"[starting salary, initial payment]"
 12163,,藩命,はんめい,[n],"[feudal decree, edict by a daimyo]"
-12164,,虚学,きょがく,[n],"[the soft sciences (social science, humanities, etc.)]"
+12164,1,虚学,きょがく,[n],"[the soft sciences (social science, humanities, etc.)]"
 12165,,及落,きゅうらく,[n],[success or failure (in examinations)]
 12166,,舌炎,ぜつえん,[n],[glossitis]
 12167,,三族,さんぞく,[n],"[three types of relatives (e.g. father, children and grandchildren; parents, siblings, wife and children; etc.)]"
@@ -16721,7 +16721,7 @@
 16721,,開拓使,かいたくし,[n],[early-Meiji administrative unit for Hokkaido (1869-1882)]
 16722,,回転機,かいてんき,[n],[rotator]
 16723,,灰土,かいど,[n],"[ashes and earth, poor volcanic soil]"
-16724,,塊土,かいど,[n],[lump of earth]
+16724,1,塊土,かいど,[n],[lump of earth]
 16725,,開度,かいど,[n],"[divergence, aperture]"
 16726,,会派,かいは,[n],"[faction, denomination, communion]"
 16727,,海馬,かいば,[n],"[seahorse, sea horse, hippocampus, walrus]"
@@ -18236,7 +18236,7 @@
 18236,,干葉,ひば,[n],"[dried leaves, dried daikon leaves]"
 18237,,肥馬,ひば,[n],[fat horse]
 18238,1,檜葉,ひば,[n],"[hinoki leaf, hiba false arborvitae (species of cypress, Thujopsis dolabrata), small ornamental false cypress (i.e. a variety of hinoki or a related species)]"
-18239,,緋梅,ひばい,[n],[Hibai Japanese apricot]
+18239,1,緋梅,ひばい,[n],[Hibai Japanese apricot]
 18240,,火箸,ひばし,[n],"[long metal chopsticks (for handling charcoal, esp. in a brazier), fire tongs]"
 18241,,日歩,ひぶ,[n],"[daily interest, daily rate]"
 18242,,秘部,ひぶ,[n],"[secret place, genitals]"
@@ -18338,7 +18338,7 @@
 18338,1,丙午,ひのえうま,[n],"[43rd year of the sexagenary cycle (year of the Fire Horse, renowned for disasters and the birth of women destined to kill their husbands)]"
 18339,,兵語,へいご,[n],[military term]
 18340,,平語,へいご,[n],[The Tale of the Taira Clan]
-18341,,兵馬,へいば,[n],"[arms and cavalry, troops, war, military affairs]"
+18341,1,兵馬,へいば,[n],"[arms and cavalry, troops, war, military affairs]"
 18342,,斃仆,へいふ,"[n, vs]","[falling dead, perishing, dying]"
 18343,,弊履,へいり,[n],[worn-out sandals (shoes)]
 18344,,偏奇,へんき,[n],[eccentricity]
@@ -19489,7 +19489,7 @@
 19489,,-,ウォーターポロ,[n],[water polo]
 19490,,-,カジュアルウォーター,[n],[casual water]
 19491,,-,トニックウォーター,[n],[tonic water]
-19492,,-,ウォータージャケット,[n],[water jacket]
+19492,1,-,ウォータージャケット,[n],[water jacket]
 19493,,-,ウォータースパニエル,[n],[water spaniel]
 19494,,-,ウォータースライダー,[n],"[water slide, water slider]"
 19495,,-,ドレスウオッチ,[n],[dress watch]
@@ -20300,7 +20300,7 @@
 20300,,-,キャラクタプリンタ,[n],[character printer]
 20301,,-,キャラクタベース,[n],[character based]
 20302,,-,キャラクタマップ,[n],[character map]
-20303,,-,ノンキャリア,[n],[non career (i.e. civil servants not on track for high-ranking positions)]
+20303,1,-,ノンキャリア,[n],[non career (i.e. civil servants not on track for high-ranking positions)]
 20304,1,-,コモンキャリア,[n],[common carrier]
 20305,,-,キャリアコード,[n],[carrier code]
 20306,1,-,キャリアディテクト,[n],"[carrier detect, CD]"
@@ -29553,7 +29553,7 @@
 29553,,遁世,とんせい,"[n, vs]",[seclusion from the world]
 29554,1,頓知,とんち,[n],"[quick wit, ready wit]"
 29555,,同案,どうあん,[n],"[same plan, same idea, that plan, that idea]"
-29556,,同委員会,どういいんかい,[n],[the same committee]
+29556,1,同委員会,どういいんかい,[n],[the same committee]
 29557,,堂宇,どうう,[n],"[edifice, temple, hall]"
 29558,,道会,どうかい,[n],[Hokkaido Prefectural Assembly]
 29559,,導関数,どうかんすう,[n],"[derivative, derived function]"
@@ -29920,7 +29920,7 @@
 29920,,真海豚,まいるか,[n],[short-beaked common dolphin (Delphinus delphis)]
 29921,,前に,まえに,[adv],"[ahead, before, ago]"
 29922,,魔風,まかぜ,[n],"[storm caused by the devil, evil wind, eerie wind]"
-29923,,紛い,まがい,"[n, n-suf]","[imitation, sham, -like]"
+29923,1,紛い,まがい,"[n, n-suf]","[imitation, sham, -like]"
 29924,,魔街,まがい,[n],"[den of thieves, brothel, red-light district]"
 29925,,間がいい,まがいい,"[exp, adj-ix]",[lucky]
 29926,,紛える,まがえる,"[v1, vt]","[to imitate, to confuse]"
@@ -30185,7 +30185,7 @@
 30185,,理体,りたい,[n],"[essence of all things, noumenon]"
 30186,,履帯,りたい,[n],"[tank tread, continuous track, caterpillar track, endless track, crawler track]"
 30187,,李朝,りちょう,[n],"[Joseon Dynasty, Yi Dynasty of Korea (1392-1910), Ly Dynasty of Vietnam (1009-1225)]"
-30188,,立言,りつげん,"[n, vs]",[expression of one's views]
+30188,1,立言,りつげん,"[n, vs]",[expression of one's views]
 30189,,利敵,りてき,[n],"[benefitting the enemy, benefiting the enemy]"
 30190,,-,れどめ,[n],[readme]
 30191,,利幅,りはば,[n],[profit margin]
@@ -30703,7 +30703,7 @@
 30703,,-,デバッグフラグ,[n],[debug(ger) flag]
 30704,,-,デフィニション,[n],[definition]
 30705,,-,デリック,[n],[derrick]
-30706,,-,デング,[n],[dengue (fever)]
+30706,1,-,デング,[n],[dengue (fever)]
 30707,1,-,ラジオカーボンデーティング,[n],[radiocarbon dating]
 30708,,-,トゥース,[n],[tooth]
 30709,,-,トグル,"[n, vs]",[toggle]
@@ -31635,7 +31635,7 @@
 31635,,切手収集,きってしゅうしゅう,"[n, adj-no]","[philately, stamp collecting]"
 31636,,気にかける,きにかける,"[exp, v1, vt]","[to weigh on one's mind, to trouble one's heart, to be concerned about, to worry about]"
 31637,,気にしない,きにしない,"[exp, adj-i]","[not caring, not giving a damn]"
-31638,,鬼繞,きにょう,[n],"[kanji ""demon"" radical]"
+31638,1,鬼繞,きにょう,[n],"[kanji ""demon"" radical]"
 31639,,木灰,きばい,[n],[wood ashes]
 31640,,脚部,きゃくぶ,[n],[leg]
 31641,,急雨,きゅうう,[n],[rain shower]
