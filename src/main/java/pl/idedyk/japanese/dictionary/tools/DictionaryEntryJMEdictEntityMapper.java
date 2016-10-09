@@ -96,6 +96,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 		
 		addMap(DictionaryEntryType.WORD_NIDAN_VERB, "v2h-k");
 		addMap(DictionaryEntryType.WORD_NIDAN_VERB, "v2h-s");
+		addMap(DictionaryEntryType.WORD_NIDAN_VERB, "v2k-s");
 		
 		addMap(DictionaryEntryType.WORD_AUX, "aux");
 		addMap(DictionaryEntryType.WORD_VERB_AUX, "aux-v");
