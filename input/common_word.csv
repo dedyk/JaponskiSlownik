@@ -458,7 +458,7 @@
 458,1,鴆,ちん,[n],"[poisonfeather bird, zhenniao, zhen, mythical poisonous bird (of ancient China)]"
 459,,鴇,とき,[n],"[Japanese crested ibis (Nipponia nippon), crested ibis]"
 460,1,欅,けやき,[n],"[Japanese zelkova (species of elm-like tree, Zelkowa serrata)]"
-461,,就き,つき,[exp],"[concerning, per, on account of]"
+461,1,就き,つき,[exp],"[concerning, per, on account of]"
 462,,木菟,みみずく,[n],[horned owl]
 463,1,搗く,つく,"[v5k, vt]","[to hull (rice, barley, etc.), to pound (rice), to polish (rice), to stamp (ore)]"
 464,1,褄,つま,[n],"[skirt (of a kimono), hem (of a kimono)]"
@@ -1376,7 +1376,7 @@
 1376,1,-,コールセンター,[n],[call center]
 1377,1,-,システムコール,[n],[system call]
 1378,1,-,ファンクションコール,[n],[function call]
-1379,,-,コールナンバー,[n],[call number]
+1379,1,-,コールナンバー,[n],[call number]
 1380,1,-,コーラングレ,[n],"[cor anglais, English horn]"
 1381,1,-,ステーションコール,[n],[station call]
 1382,1,-,コールカッター,[n],[coal cutter]
@@ -1482,7 +1482,7 @@
 1482,1,-,サービスセンター,[n],[service center]
 1483,,-,サービスタイプ,[n],[service type]
 1484,,-,サービスビューロー,[n],[Service Bureau]
-1485,,-,サービスプリミティブ,[n],[service primitive]
+1485,1,-,サービスプリミティブ,[n],[service primitive]
 1486,,-,サービスプログラム,[n],"[utility program, service program]"
 1487,1,-,サービスプロバイダ,[n],[service provider]
 1488,,-,サービスルーチン,[n],"[utility routine, service routine]"
@@ -1730,7 +1730,7 @@
 1730,1,-,ソーシャルエンジニアリング,[n],[social engineering]
 1731,1,-,ソーシャルケースワーク,[n],[social casework]
 1732,1,-,ソーシャルケースワーカー,[n],[social caseworker]
-1733,,-,ソーシャルセキュリティー,[n],[social security]
+1733,1,-,ソーシャルセキュリティー,[n],[social security]
 1734,1,-,ソーシャルワーク,[n],[social work]
 1735,1,-,ソーシャルアクション,[n],[social action]
 1736,1,-,ソーシャルコスト,[n],[social cost]
@@ -1925,7 +1925,7 @@
 1925,,-,データモジュール,[n],[data module]
 1926,,-,データレコード,[n],"[data record, DR]"
 1927,1,-,ディジタルデータ,[n],[digital data]
-1928,,-,デフォルトデータ,[n],[default data]
+1928,1,-,デフォルトデータ,[n],[default data]
 1929,1,-,バイナリデータ,[n],[binary data]
 1930,,-,プログラムデータ,[n],[program data]
 1931,1,-,ベクトルデータ,[n],[vector data]
@@ -2232,7 +2232,7 @@
 2232,1,-,トークンバス,[n],[token bus]
 2233,1,-,バスアービトレーション,[n],[bus arbitration]
 2234,1,-,バスエラー,[n],[bus error]
-2235,,-,バスクロック,[n],"[bus clock, bath clock, bathroom clock]"
+2235,1,-,バスクロック,[n],"[bus clock, bath clock, bathroom clock]"
 2236,1,-,バスドライバ,[n],[bus driver]
 2237,,-,バスネットワーク,[n],[bus network]
 2238,1,-,バスマウス,[n],[bus mouse]
@@ -2357,7 +2357,7 @@
 2357,1,人ゲノム,ひとゲノム,[n],[human genome]
 2358,,-,コアビジネス,[n],[core business]
 2359,1,-,サウンドビジネス,[n],[sound business]
-2360,,-,ショービジネス,[n],[show business]
+2360,1,-,ショービジネス,[n],[show business]
 2361,,-,ビジネスアセスメント,[n],[business assessment]
 2362,1,-,ビジネスウエア,[n],[business wear]
 2363,1,-,ビジネスカレッジ,[n],[business college]
@@ -2522,7 +2522,7 @@
 2522,,-,ジェンダーフリー,[adj-f],[gender equality]
 2523,1,-,リンクフリー,[exp],[indication that a page or site may be linked without restriction]
 2524,1,-,フリーライダー,[n],[free rider]
-2525,,-,フリーライター,[n],[freelance writer]
+2525,1,-,フリーライター,[n],[freelance writer]
 2526,1,-,エラーフリー,[n],[error free]
 2527,1,-,フリッカフリー,[n],[flicker free]
 2528,1,-,ライセンスフリー,[n],[license free]
@@ -2567,7 +2567,7 @@
 2567,,-,アーミーブルー,[n],[army blue]
 2568,,-,スカイブルー,[n],[sky blue]
 2569,1,-,ブルートレイン,[n],[night express with sleeper cars (from the original color of the trains) (colour)]
-2570,,-,ブルーフィルム,[n],"[blue film, porno(graphic) film]"
+2570,1,-,ブルーフィルム,[n],"[blue film, porno(graphic) film]"
 2571,,-,ブルーブック,[n],[blue book]
 2572,,-,ブルーマンデー,[n],[blue Monday]
 2573,1,-,ブルーリボン,[n],[Blue Ribbon (Prize)]
@@ -3111,7 +3111,7 @@
 3111,1,住宅金融,じゅうたくきんゆう,[n],[housing finance]
 3112,,住民基本台帳,じゅうみんきほんだいちょう,[n],[basic resident register]
 3113,,何だ,なんだ,[int],[What!]
-3114,,何処まで,どこまで,[adv],"[how far, to what extent]"
+3114,1,何処まで,どこまで,[adv],"[how far, to what extent]"
 3115,1,何時まで,いつまで,[adv],"[how long?, till when?]"
 3116,1,余儀,よぎ,[n],"[another method, another problem]"
 3117,1,箇条,かじょう,[n],"[item, article, clause, section, point]"
@@ -3221,7 +3221,7 @@
 3221,,取り上げ,とりあげ,[n],"[adoption, acceptance, confiscation, midwifery, midwife]"
 3222,,取り付け,とりつけ,[n],"[installation, mounting, furnishing, fitting, run (on a bank), bank run]"
 3223,1,取り入れ,とりいれ,[n],"[taking in, harvesting]"
-3224,,取り合わせ,とりあわせ,[n],"[an assortment, combination]"
+3224,1,取り合わせ,とりあわせ,[n],"[an assortment, combination]"
 3225,,取り替え,とりかえ,[n],"[swap, exchange]"
 3226,1,取り止め,とりやめ,[n],"[cancellation, suspension]"
 3227,1,取り違え,とりちがえ,[n],"[mix-up, mistake, misunderstanding]"
@@ -3321,7 +3321,7 @@
 3321,,奇兵,きへい,[n],"[irregular soldiers, commandos]"
 3322,1,奇想,きそう,[n],[fantastic idea]
 3323,1,奏す,そうす,"[v5s, vt]","[to report to the Emperor, to play (musical instrument), to accomplish]"
-3324,,女子高,じょしこう,[n],[girls' high school]
+3324,1,女子高,じょしこう,[n],[girls' high school]
 3325,1,女性解放,じょせいかいほう,[n],"[women's liberation, emancipation of women]"
 3326,,女生,じょせい,[n],[schoolgirl]
 3327,,奴隷制,どれいせい,[n],[slavery]
@@ -3391,7 +3391,7 @@
 3391,1,広漠,こうばく,"[adj-t, adv-to]","[vast, wide, boundless]"
 3392,1,広葉,こうよう,[n],[broad leaf]
 3393,1,座談,ざだん,"[n, vs]","[conversation, discussion]"
-3394,,庶幾,しょき,"[n, vs]","[desire, hope]"
+3394,1,庶幾,しょき,"[n, vs]","[desire, hope]"
 3395,1,建て,だて,[suf],"[indicates storeys, structures, or materials used in a building, indicates denomination (after a currency)]"
 3396,1,弁え,わきまえ,[n],"[sense, discretion, knowledge]"
 3397,1,弁理,べんり,"[n, vs]",[management]
@@ -3767,7 +3767,7 @@
 3767,1,積分,せきぶん,[n],[integral]
 3768,1,穴だらけ,あなだらけ,"[n, adj-no]","[hole, aperture, opening, orifice, fault, flaw]"
 3769,1,穴居,けっきょ,"[n, vs, adj-no]","[cave dwelling, troglodytism]"
-3770,,空振,くうしん,[n],"[atmospheric vibration, infrasound (as produced by volcanic activity)]"
+3770,1,空振,くうしん,[n],"[atmospheric vibration, infrasound (as produced by volcanic activity)]"
 3771,,突っかけ,つっかけ,[n],[slip-on shoe]
 3772,,窓ガラス,まどガラス,[n],"[windowpane, window glass]"
 3773,,窮す,きゅうす,"[v5s, vi]","[to be hard pressed, to be at a loss, to become poor, to be reduced to poverty]"
@@ -3969,7 +3969,7 @@
 3969,1,連れ込み,つれこみ,[n],[taking one's lover to a hotel]
 3970,1,遇す,ぐうす,"[v5s, vt]","[to entertain, to treat]"
 3971,1,遊園,ゆうえん,[n],"[playground (for children), park]"
-3972,,運動失調,うんどうしっちょう,"[n, adj-no]","[ataxia, loss of coordination of the muscles, failure of muscular coordination]"
+3972,1,運動失調,うんどうしっちょう,"[n, adj-no]","[ataxia, loss of coordination of the muscles, failure of muscular coordination]"
 3973,,過小,かしょう,"[adj-na, n, adj-no]",[too small]
 3974,,道義的,どうぎてき,[adj-na],[moral]
 3975,1,道議,どうぎ,[n],[member of the Hokkaido Prefectural Assembly]
@@ -3985,7 +3985,7 @@
 3985,1,重々,じゅうじゅう,"[adj-no, adv, n]","[repeated, manifold]"
 3986,,重工,じゅうこう,[n],[heavy industry]
 3987,,重機,じゅうき,[n],"[heavy machinery, heavy equipment, heavy machine gun]"
-3988,,重水,じゅうすい,[n],[heavy water]
+3988,1,重水,じゅうすい,[n],[heavy water]
 3989,1,重苦,じゅうく,[n],[intense suffering]
 3990,,野伏,のぶし,[n],"[hermit, mountain ascetic, itinerant priest, mountain-dwelling robber, brigand]"
 3991,1,量販,りょうはん,"[n, vs]","[volume sales, volume retail]"
@@ -4029,7 +4029,7 @@
 4029,,雲泥,うんでい,[n],[great difference]
 4030,1,電子音,でんしおん,[n],[electronic sound]
 4031,,電気工,でんきこう,[n],[electrician]
-4032,,電熱,でんねつ,"[n, adj-no]",[electric heat]
+4032,1,電熱,でんねつ,"[n, adj-no]",[electric heat]
 4033,1,電話料,でんわりょう,[n],[telephone charge]
 4034,1,震え,ふるえ,[n],"[shivering, trembling]"
 4035,,青み,あおみ,"[n, adj-no]","[blueness, greenness, tinge of blue (green)]"
@@ -4557,7 +4557,7 @@
 4557,1,-,クローズドアーキテクチャ,[n],[closed architecture]
 4558,,-,システムアーキテクチャ,[n],[system architecture]
 4559,1,-,スイッチアーキテクチャ,[n],[switch architecture]
-4560,,-,ネットワークアーキテクチャ,[n],[network architecture]
+4560,1,-,ネットワークアーキテクチャ,[n],[network architecture]
 4561,1,-,マイクロチャネルアーキテクチャ,[n],[microchannel architecture]
 4562,1,-,インストラクションセットアーキテクチャ,[n],"[instruction set architecture, ISA]"
 4563,1,-,クライアントサーバアーキテクチャ,[n],[client-server architecture]
@@ -4653,7 +4653,7 @@
 4653,1,-,リストインデックス,[n],[list index]
 4654,,-,インデックスアドレッシング,[n],[index addressing]
 4655,,-,インフォメーションアナリスト,[n],[information analyst]
-4656,,-,インフォメーションサイエンス,[n],[information science]
+4656,1,-,インフォメーションサイエンス,[n],[information science]
 4657,,-,インフォメーションシステム,[n],[information system]
 4658,1,-,インフォメーションシンジケート,[n],[information syndicate]
 4659,1,-,インフォメーションセオリー,[n],[information theory]
@@ -4837,10 +4837,10 @@
 4837,1,-,クライアントハブ,[n],[client hub]
 4838,,-,シンクライアント,[n],[thin client]
 4839,,-,パッシブクライアント,[n],[passive client]
-4840,,-,クライアントアクセスポイント,[n],[client access point]
+4840,1,-,クライアントアクセスポイント,[n],[client access point]
 4841,1,-,クライアントアクセスライセンス,[n],[client access license]
 4842,1,-,クライアントサーバーシステム,[n],"[client-server system, CSS]"
-4843,,-,クライアントサーバコンピューティング,[n],[client-server computing]
+4843,1,-,クライアントサーバコンピューティング,[n],[client-server computing]
 4844,,-,クライアントサーバモデル,[n],[client-server model]
 4845,,-,アイスクライミング,[n],[ice climbing]
 4846,,-,クリエイティブコンテンツ,[n],[creative content]
@@ -4947,7 +4947,7 @@
 4947,1,-,ベストコンディション,[n],[best condition]
 4948,1,-,キャッシュコントローラ,[n],[cache controller]
 4949,1,-,ストアコントローラ,[n],[store controller]
-4950,,-,ディスクコントローラ,[n],[disk controller]
+4950,1,-,ディスクコントローラ,[n],[disk controller]
 4951,,-,ディスプレイコントローラ,[n],[display controller]
 4952,1,-,ネットワークコントローラ,[n],[network controller]
 4953,1,-,アナログコントローラ,[n],[analog controller]
@@ -5618,7 +5618,7 @@
 5618,,-,ポテトチップ,[n],[potato chip]
 5619,1,-,スカラーポテンシャル,[n],[scalar potential]
 5620,,-,ベクトルポテンシャル,[n],[vector potential]
-5621,,-,ポリエチレンテレフタラート,[n],[polyethylene terephthalate]
+5621,1,-,ポリエチレンテレフタラート,[n],[polyethylene terephthalate]
 5622,1,-,アイソタクチックポリプロピレン,[n],[isotactic polypropylene]
 5623,1,-,ポートレイトモード,[n],[portrait mode]
 5624,1,-,ノイジーマイノリティ,[n],[noisy minority]
@@ -5812,7 +5812,7 @@
 5812,1,顆,か,"[n, ctr]","[condyle, counter for grains and small spheres]"
 5813,,過,か,[pref],"[surplus- (attaches to start of Sino-Japanese words), excess-, over-, per- (chemical with more of a certain element than found in other compounds of the same constituents)]"
 5814,1,菓,か,"[n, suf, ctr]","[fruit, counter for fruit]"
-5815,,几,おしまずき,[n],"[armrest, desk, table]"
+5815,1,几,おしまずき,[n],"[armrest, desk, table]"
 5816,,季,き,[n],"[season, seasonal word or phrase (in haiku), year]"
 5817,1,揆,き,[n],"[way, method]"
 5818,1,危,き,[n],"[danger, Chinese ""rooftop"" constellation (one of the 28 mansions)]"
@@ -5867,7 +5867,7 @@
 5867,1,補,ほ,[suf],"[assistant ..., probationary ...]"
 5868,1,戊,つちのえ,[n],"[5th in rank, fifth sign of the Chinese calendar]"
 5869,1,葡,ぽ,"[n, n-pref, n-suf]",[Portugal]
-5870,,-,み,[suf],"[-ness (nominalizing suffix, esp. of sensory or subjective adjectives), nominalizing suffix indicating location, (as ...mi ...mi) alternating between ... and ...]"
+5870,1,-,み,[suf],"[-ness (nominalizing suffix, esp. of sensory or subjective adjectives), nominalizing suffix indicating location, (as ...mi ...mi) alternating between ... and ...]"
 5871,1,箕,み,[n],"[winnow, winnowing basket, winnowing fan]"
 5872,1,-,む,"[int, aux-v]","[unh (sound of physical exertion), oof, wow, whoa, yes, yeah, uh-huh, probably, will, intend to, would like to have done (for me)]"
 5873,,冶,や,[n],[melting]
@@ -7346,7 +7346,7 @@
 7346,,市債,しさい,[n],[municipal bond]
 7347,,詩才,しさい,[n],"[talent for poetry, poetic genius]"
 7348,,再議,さいぎ,"[n, vs]","[reconsideration, redeliberation]"
-7349,,細断,さいだん,"[n, vs]","[shredding, chopping up, pulping]"
+7349,1,細断,さいだん,"[n, vs]","[shredding, chopping up, pulping]"
 7350,,佳調,かちょう,[n],[good tune]
 7351,,可聴,かちょう,"[adj-na, n]",[audible]
 7352,,化調,かちょう,[n],[chemical seasoning]
@@ -10810,7 +10810,7 @@
 10810,,少時,しょうじ,"[n-adv, n-t]","[one's early days, little while]"
 10811,,消磁,しょうじ,[n],"[demagnetization, demagnetisation, degaussing]"
 10812,,荘司,しょうじ,[n],[administrator of a manor]
-10813,,正治,しょうじ,[n],[Shouji era (1199.4.27-1201.2.13)]
+10813,1,正治,しょうじ,[n],[Shouji era (1199.4.27-1201.2.13)]
 10814,,賞辞,しょうじ,[n],"[words of praise, encomium]"
 10815,,正時,しょうじ,"[n, adj-no, adv, adv-to]",[(on) the hour]
 10816,1,逸る,はやる,[v5r],"[to be in high spirits, to be impatient, to be hotblooded, to be rash, to be impetuous]"
@@ -14338,7 +14338,7 @@
 14338,,規定値,きていち,[n],"[control value, minimal required value]"
 14339,1,兀頭,こっとう,[n],"[bald head, baldness]"
 14340,1,詠草,えいそう,[n],"[draft poem, draught poem]"
-14341,,厭人,えんじん,[n],[misanthropy]
+14341,1,厭人,えんじん,[n],[misanthropy]
 14342,,煙塵,えんじん,[n],"[dust, smokestack smoke, battle scene]"
 14343,,煙管,えんかん,[n],"[kiseru, Japanese smoking pipe, fire tube (of a fire-tube boiler), chimney]"
 14344,,鉛管,えんかん,[n],[lead pipe]
@@ -18551,7 +18551,7 @@
 18551,,優艶,ゆうえん,"[adj-na, n]","[charming, fascinating, beautiful, elegant, graceful, sweet, delicate]"
 18552,,悠遠,ゆうえん,"[adj-na, n]","[faraway, remoteness]"
 18553,,幽遠,ゆうえん,"[adj-na, n]",[deep and remote]
-18554,,幽艶,ゆうえん,"[adj-na, n]","[modest and beautiful, profound and elegant]"
+18554,1,幽艶,ゆうえん,"[adj-na, n]","[modest and beautiful, profound and elegant]"
 18555,,有塩,ゆうえん,[adj-no],"[salted, with salt]"
 18556,,有夏,ゆうか,[n],[Mainland China]
 18557,,幽居,ゆうきょ,"[n, vs]","[hermitage, retreat, retirement, seclusion]"
@@ -34672,7 +34672,7 @@
 34672,,-,ゼラニウム,[n],[geranium (usu. a cultivated pelargonium)]
 34673,,-,ゼロサム,[n],[zerosum]
 34674,,-,ソケット,[n],[socket]
-34675,,-,ソップ,[n],[soup]
+34675,1,-,ソップ,[n],[soup]
 34676,,-,ソナー,[n],[sonar]
 34677,,-,ソニック,[n],[sonic]
 34678,,-,ソリッド,[n],[solid]
