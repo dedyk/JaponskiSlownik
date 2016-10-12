@@ -944,7 +944,7 @@
 944,1,-,ロスカット,"[n, vs]","[loss-cutting, cutting one's losses]"
 945,1,-,カットトマト,[n],"[chopped tomatoes (canned, etc.)]"
 946,1,-,ケーキカット,[n],[cake cutting ceremony]
-947,,-,カットシートフィーダ,[n],[cut-sheet feeder]
+947,1,-,カットシートフィーダ,[n],[cut-sheet feeder]
 948,,-,ポークカツ,[n],[pork cutlet]
 949,1,-,チキンカツ,[n],[chicken cutlet]
 950,1,-,カツサンド,[n],"[pork-cutlet sandwich, tonkatsu sandwich]"
@@ -3302,7 +3302,7 @@
 3302,1,太祖,たいそ,[n],"[founder, progenitor, emperor]"
 3303,1,大笑,たいしょう,"[n, vs]","[loud laughter, hearty laugh]"
 3304,1,大聖,たいせい,[n],[great sage]
-3305,,大聖,だいしょう,[n],"[Buddha, high-ranked bodhisattva]"
+3305,1,大聖,だいしょう,[n],"[Buddha, high-ranked bodhisattva]"
 3306,1,大阪,おおさか,[n],"[Osaka, large hill]"
 3307,1,大阪,おおざか,[],[large hill]
 3308,1,大震,たいしん,[n],"[violent earthquake, severe earthquake]"
@@ -16679,7 +16679,7 @@
 16679,,-,おっ,[int],"[oh, oops]"
 16680,,音なし,おとなし,"[n, adj-no]","[silence, without sound]"
 16681,,鬼歯,おにば,[n],[protruding tooth (like a fang)]
-16682,,尾羽,おは,[n],[tail and feathers]
+16682,1,尾羽,おは,[n],[tail and feathers]
 16683,,-,おは,[int],"[Good morning!, Hi!]"
 16684,1,帯地,おびじ,[n],[obi cloth or material]
 16685,,お麩,おふ,[n],"[wheat gluten, seitan]"
@@ -17556,7 +17556,7 @@
 17556,,聖句,せいく,[n],"[scripture, passage from scripture]"
 17557,,成空,せいくう,[n],[come to nothingness]
 17558,1,世故,せいこ,[n],[worldly affairs]
-17559,,成功度,せいこうど,[n],"[degree of success, success rate]"
+17559,1,成功度,せいこうど,[n],"[degree of success, success rate]"
 17560,1,省察,せいさつ,"[n, vs]","[reflection, consideration]"
 17561,,制札,せいさつ,[n],[roadside prohibition-edict boards]
 17562,1,静止画,せいしが,[n],[still image]
@@ -28188,7 +28188,7 @@
 28188,,解析器,かいせきき,[n],[analyzer]
 28189,,買相場,かいそうば,[n],[buying rate (currency)]
 28190,,開拓地,かいたくち,[n],"[reclaimed land, cleared land, area opened for development]"
-28191,,階建,かいだて,[suf],[an N-storey building]
+28191,1,階建,かいだて,[suf],[an N-storey building]
 28192,,皆納,かいのう,"[n, vs]",[full payment of a tax]
 28193,,開発計画,かいはつけいかく,[n],"[development project (program, programme, plan)]"
 28194,,開発事業,かいはつじぎょう,[n],[development (work)]
@@ -30242,7 +30242,7 @@
 30242,,礼式,れいしき,[n],"[etiquette, manners]"
 30243,,令する,れいする,"[vs-s, vt]","[to command, to order]"
 30244,,礼装,れいそう,"[n, vs]",[formal dress]
-30245,,霊的,れいてき,"[adj-na, n]","[spiritual, incorporeal]"
+30245,1,霊的,れいてき,"[adj-na, n]","[spiritual, incorporeal]"
 30246,,歴々,れきれき,"[n, adj-t, adv-to]","[notables, dignitaries, illustrious families, clear, plain, obvious]"
 30247,,連玉,れだま,[n],[Spanish broom (Spartium junceum)]
 30248,,連邦王国,れんぽうおうこく,[n],"[United Kingdom, UK]"
@@ -32688,7 +32688,7 @@
 32688,,埋もれ木,うもれぎ,[n],"[bogwood, bog oak, obscurity, fig]"
 32689,,城郭都市,じょうかくとし,[n],"[fortified city, walled city]"
 32690,,基本文,きほんぶん,[n],[basic statement]
-32691,,基礎的,きそてき,[adj-na],"[fundamental, basic]"
+32691,1,基礎的,きそてき,[adj-na],"[fundamental, basic]"
 32692,,基礎知識,きそちしき,[n],[fundamental knowledge]
 32693,,報告会,ほうこくかい,[n],[debriefing (session)]
 32694,,塔子,ターツ,[n],[chow missing one tile]
@@ -34598,7 +34598,7 @@
 34598,,Ｇジャン,ジージャン,[n],"[jean jacket, denim jacket]"
 34599,,-,スイッチャ,[n],[switcher]
 34600,,-,スインガー,[n],[swinger]
-34601,,-,スエット,[n],"[sweat, suet, sweatshirt, sweat pants]"
+34601,1,-,スエット,[n],"[sweat, suet, sweatshirt, sweat pants]"
 34602,1,-,スウェット,[n],"[sweat, sweatshirt, sweat pants]"
 34603,,-,スカジー,[n],[SCSI]
 34604,,-,スカルプチャー,[n],[sculpture]
@@ -35248,7 +35248,7 @@
 35248,,大羽,おおばね,[n],"[contour feather, quill feather]"
 35249,,天慶,てんぎょう,[n],[Tengyou era (938.5.22-947.4.22)]
 35250,,仇する,あだする,[vs-s],"[to harm, to injure, to oppose]"
-35251,,尾羽,おばね,[n],[tail feathers]
+35251,1,尾羽,おばね,[n],[tail feathers]
 35252,,山女,やまおんな,[n],"[mountain witch, akebia (Akebia quinata)]"
 35253,,山鳴,やまならし,[n],[Japanese aspen (Populus tremula var. sieboldii)]
 35254,,磐座,いわくら,[n],[dwelling place of a god (usu. in reference to a large rock)]
