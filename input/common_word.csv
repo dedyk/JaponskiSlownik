@@ -22,7 +22,7 @@
 22,1,醤蝦,あみ,[n],"[opossum shrimp (Mysida spp.), mysid]"
 23,,-,あや,[int],"[wow, whoa]"
 24,1,𩺊,あら,[n],[saw-edged perch (Niphon spinosus)]
-25,,在り,あり,"[adj-no, n, adj-na, vr, vi]","[existing (at the present moment), alright, acceptable, passable, to be (usu. of inanimate objects), to have]"
+25,1,在り,あり,"[adj-no, n, adj-na, vr, vi]","[existing (at the present moment), alright, acceptable, passable, to be (usu. of inanimate objects), to have]"
 26,,在りし,ありし,[adj-pn],"[prior, past, old, before having died]"
 27,1,有り得,ありう,"[v2a-s, vi]","[to be possible, to be likely, to be probable]"
 28,1,ある意味,あるいみ,[exp],"[in a sense, in some way, to an extent]"
@@ -1885,7 +1885,7 @@
 1885,1,-,デイトレード,[n],[day trade]
 1886,,-,デーホスピタル,[n],[day hospital]
 1887,1,-,ボクシングデー,[n],"[Boxing Day (public holiday in the UK, Aus., Canada, etc.)]"
-1888,,-,カナダデー,[n],[Canada Day]
+1888,1,-,カナダデー,[n],[Canada Day]
 1889,1,-,デイホーム,[n],"[day-care center (usu. for the elderly) (centre), day center]"
 1890,1,-,データクラフト,[n],[data craft]
 1891,1,-,データセット,[n],"[data set, data-set]"
@@ -1923,7 +1923,7 @@
 1923,1,-,データフォーク,[n],[data fork]
 1924,1,-,データマルチプレクサ,[n],[data multiplexer]
 1925,,-,データモジュール,[n],[data module]
-1926,,-,データレコード,[n],"[data record, DR]"
+1926,1,-,データレコード,[n],"[data record, DR]"
 1927,1,-,ディジタルデータ,[n],[digital data]
 1928,1,-,デフォルトデータ,[n],[default data]
 1929,1,-,バイナリデータ,[n],[binary data]
@@ -1989,7 +1989,7 @@
 1989,1,-,スリットドラム,[n],[slit drum]
 1990,1,-,スチールドラム,[n],"[steel drum, steel pan]"
 1991,1,-,サイドドラム,[n],[side drum]
-1992,,-,ブレーキドラム,[n],[brake drum]
+1992,1,-,ブレーキドラム,[n],[brake drum]
 1993,,-,ドラムブレーキ,[n],[drum brake]
 1994,1,-,ドラムバッグ,[n],"[gym bag, sports bag, duffel bag, duffle bag, drum-shaped bag, cylindrical bag]"
 1995,,-,ドルクローズ,[n],[dollar clause]
@@ -2349,7 +2349,7 @@
 2349,1,-,パン・ド・カンパーニュ,[n],"[pain de campagne, country bread]"
 2350,1,ＰＥＲ,パー,[n],"[price-earnings ratio, PER]"
 2351,,-,オーバーパー,[n],[over par (golf)]
-2352,,-,オールドパー,[n],[Old Parr]
+2352,1,-,オールドパー,[n],[Old Parr]
 2353,1,-,パーセーブ,[n],"[par save (in golf, number of shots above par for that hole)]"
 2354,1,-,パーオン,[n],"[on par (in golf, meeting par for that hole)]"
 2355,1,-,ナックルパート,[n],[knuckle part]
@@ -2908,7 +2908,7 @@
 2908,1,-,ワイドレンズ,[n],[wide-angle lens]
 2909,1,-,アクリルレンズ,[n],[acrylic lens]
 2910,1,-,コーテッドレンズ,[n],[coated lens]
-2911,,-,レンズシャッター,[n],[lens shutter]
+2911,1,-,レンズシャッター,[n],[lens shutter]
 2912,1,-,フィッシュアイレンズ,[n],[fisheye lens]
 2913,1,-,イオンロケット,[n],[ion rocket]
 2914,,-,ロケットランチャー,[n],[rocket launcher]
@@ -2971,7 +2971,7 @@
 2971,1,輪尾狐猿,わおきつねざる,[n],[ring-tailed lemur (Lemur catta)]
 2972,1,-,ステーションワゴン,[n],[station wagon]
 2973,1,-,ワゴンセール,[n],"[bargain corner to sell off stock cheaply, cart sale]"
-2974,,-,トールワゴン,[n],[tall wagon]
+2974,1,-,トールワゴン,[n],[tall wagon]
 2975,1,-,ティーワゴン,[n],"[tea trolley, tea wagon, tea cart]"
 2976,1,ＷＡＮ,ワン,[n],"[wide area network, WAN]"
 2977,1,-,オンリーワン,"[n, adj-no]","[only one (person, thing), sole, unique, highest, best, most outstanding, custom-made]"
@@ -3020,7 +3020,7 @@
 3020,,丁子,ちょうじ,[n],[clove]
 3021,1,丁字,ていじ,[n],"[letter ""T""]"
 3022,1,七味,しちみ,[n],"[seven delicious flavors (flavours), blend of seven spices (cayenne, sesame, Japanese pepper, citrus peel, etc.), shichimi]"
-3023,,万国博,ばんこくはく,[n],"[international exposition, world expo, world fair]"
+3023,1,万国博,ばんこくはく,[n],"[international exposition, world expo, world fair]"
 3024,1,万有,ばんゆう,[n],"[all things, all creation, universal]"
 3025,1,三々,さんさん,[n],[3-3 point (in go)]
 3026,1,三味,さみ,[n],[three-stringed guitar]
@@ -3088,7 +3088,7 @@
 3088,1,人頭,ひとがしら,[n],"[skull, cranium, kanji ""person"" radical at top]"
 3089,1,人馬,じんば,[n],[men and horses]
 3090,1,介す,かいす,"[v5s, vt]","[to use as an intermediary, to mediate, to assist, to worry, to mind, to care]"
-3091,,仕付け,しつけ,[n],"[tacking (in needlework), basting, planting (esp. rice seedlings), discipline, training, teaching manners]"
+3091,1,仕付け,しつけ,[n],"[tacking (in needlework), basting, planting (esp. rice seedlings), discipline, training, teaching manners]"
 3092,1,仕舞,しまい,[n],"[end, close, finish, termination, noh dance in plain clothes]"
 3093,1,仕舞い,しまい,[n],"[end, close, finish, termination]"
 3094,1,仕舞い,じまい,[suf],"[ending, quitting, closing, indicates disappointment for not having done what one wanted or intended to do]"
@@ -3107,7 +3107,7 @@
 3107,1,会す,えす,"[vs-c, vt]","[to understand, to comprehend]"
 3108,1,会す,かいす,"[v5s, vi]","[to meet, to assemble, to gather, to encounter, to run into]"
 3109,,伝え,つたえ,[n],"[legend, tradition]"
-3110,,似非,えせ,"[adj-na, n, pref]","[false, would-be, sham, pretended, mock, spurious, pseudo, quasi]"
+3110,1,似非,えせ,"[adj-na, n, pref]","[false, would-be, sham, pretended, mock, spurious, pseudo, quasi]"
 3111,1,住宅金融,じゅうたくきんゆう,[n],[housing finance]
 3112,,住民基本台帳,じゅうみんきほんだいちょう,[n],[basic resident register]
 3113,,何だ,なんだ,[int],[What!]
@@ -3185,7 +3185,7 @@
 3185,,劣等,れっとう,"[adj-na, n, adj-no]","[inferiority, low grade]"
 3186,,助教,じょきょう,[n],[assistant teacher]
 3187,1,労働基準,ろうどうきじゅん,"[n, adj-f]","[labor standard, labor standards (e.g. bureau, law)]"
-3188,,動物愛,どうぶつあい,[n],[love for animals]
+3188,1,動物愛,どうぶつあい,[n],[love for animals]
 3189,1,勝ち得,かちどく,[n],[win of a low-ranked wrestler in the extra eighth bout in the tournament]
 3190,1,包容,ほうよう,"[n, vs]","[implication, toleration, magnanimity, comprehension]"
 3191,1,化け,ばけ,"[n, adj-no]","[transforming oneself, taking on another form, disguising oneself, artificial fly (for fishing)]"
@@ -3207,7 +3207,7 @@
 3207,1,占取,せんしゅ,[n],[preoccupation]
 3208,1,印画,いんが,[n],[(photographic) print]
 3209,,即す,そくす,"[v5s, vi]","[to conform to, to agree with, to be adapted to, to be based on]"
-3210,,原動,げんどう,[n],[motive]
+3210,1,原動,げんどう,[n],[motive]
 3211,1,厭世,えんせい,[n],"[pessimism, weariness with life]"
 3212,1,参政,さんせい,[n],[participation in government]
 3213,1,参議,さんぎ,"[n, vs]","[participation in government, state councillor (in the ritsuryo system), state councilor, vice-minister (early Meiji period), Cabinet Councillor (1937-1943), Cabinet Councilor]"
@@ -3383,7 +3383,7 @@
 3383,1,稀ガス,きガス,[n],"[noble gas, inert gas]"
 3384,1,帯状,おびじょう,"[n, adj-no]",[belt-shaped]
 3385,1,常套,じょうとう,[n],"[conventionality, triteness]"
-3386,,常任委員,じょうにんいいん,[n],[member of a standing committee]
+3386,1,常任委員,じょうにんいいん,[n],[member of a standing committee]
 3387,1,幕開き,まくあき,[n],"[the rise of the curtain, opening (of play), beginning (e.g. of an era), opening (festival, event, etc.)]"
 3388,1,平城,ひらじろ,[n],[castle on the plains]
 3389,1,平城,へいじょう,[n],[ancient name of Nara]
@@ -3537,7 +3537,7 @@
 3537,1,晴れやか,はれやか,[adj-na],"[clear, bright, sunny]"
 3538,1,晴雨,せいう,[n],[(clear or rainy) weather]
 3539,1,暈け,ぼけ,[n],"[bokeh, blur, lack of focus, unsharpness]"
-3540,,暑中お見舞い,しょちゅうおみまい,[n],"[summer greeting card, inquiry after someone's health in the hot season]"
+3540,1,暑中お見舞い,しょちゅうおみまい,[n],"[summer greeting card, inquiry after someone's health in the hot season]"
 3541,1,暗唱,あんしょう,"[n, vs]","[recitation, reciting from memory]"
 3542,1,暗証,あんしょう,[n],"[code, cipher, password]"
 3543,1,曲々,きょくきょく,"[adj-t, adv-to]","[winding, twisting, zigzagging]"
@@ -3753,7 +3753,7 @@
 3753,1,破砕性,はさいせい,[n],"[crushable, breakable, friability]"
 3754,1,破風,はふ,"[n, adj-no]",[gable]
 3755,1,確たる,かくたる,[adj-pn],"[certain, definite, clear, credible]"
-3756,,社民,しゃみん,[n],[Social Democratic Party]
+3756,1,社民,しゃみん,[n],[Social Democratic Party]
 3757,1,神仙,しんせん,[n],"[immortal mountain wizard (in Taoism), Taoist immortal, supernatural being, (in Japan) 11th note of the ancient chromatic scale (approx. C)]"
 3758,1,神戸,こうべ,[n],[Kobe (port city near Osaka)]
 3759,1,神経性,しんけいせい,[adj-no],"[nervous, neural, neurogenic]"
@@ -3889,7 +3889,7 @@
 3889,1,被せ,きせ,[n],"[not folding on a stitch but placing the fold (2mm) deeper past the stitch, folding the excess back to cover the stitch]"
 3890,1,被虐,ひぎゃく,[n],[suffering (as a result of maltreatment)]
 3891,1,被虐性愛,ひぎゃくせいあい,[n],[(sexual) masochism]
-3892,,裏番,うらばん,[n],[secret leader of a group of juvenile delinquents]
+3892,1,裏番,うらばん,[n],[secret leader of a group of juvenile delinquents]
 3893,1,褒奨,ほうしょう,[n],[compensation]
 3894,1,要す,ようす,"[v5s, vt]","[to need, to require, to take, to demand]"
 3895,,要り,いり,[n],"[expense, expenses]"
@@ -4062,7 +4062,7 @@
 4062,1,馬鹿に,ばかに,[adv],"[ridiculously, unusually, exceptionally]"
 4063,1,馴染み,なじみ,[n],"[intimacy, friendship, familiarity]"
 4064,,駄弁,だべん,[n],"[foolish tale, nonsense]"
-4065,,髄膜,ずいまく,[n],[meninges]
+4065,1,髄膜,ずいまく,[n],[meninges]
 4066,1,高密,こうみつ,[n],[high density]
 4067,,高機,たかばた,[n],[traditional Japanese treadle-operated tall loom]
 4068,,高飛び,たかとび,"[n, vs]","[flight, escape, running away, fleeing, flying high]"
@@ -4284,7 +4284,7 @@
 4284,1,正長,しょうちょう,[n],[Shouchou era (1428.4.27-1429.9.5)]
 4285,1,簫の笛,しょうのふえ,[n],[xiao (vertical Chinese bamboo flute)]
 4286,1,証票,しょうひょう,[n],"[certificate, voucher, chit]"
-4287,,証憑,しょうひょう,[n],"[documented evidence (contract, voucher, etc.)]"
+4287,1,証憑,しょうひょう,[n],"[documented evidence (contract, voucher, etc.)]"
 4288,,称名,しょうみょう,"[n, vs]","[intoning the name of the Buddha, chanting the name of the Buddha]"
 4289,,小名,しょうみょう,[n],[minor feudal lord]
 4290,1,正命,しょうみょう,[n],[right livelihood]
@@ -4531,7 +4531,7 @@
 4531,,-,オフィスアプリケーション,[n],[office application]
 4532,1,-,オラクルアプリケーション,[n],[Oracle Applications]
 4533,1,-,キラーアプリケーション,[n],"[""killer"" application]"
-4534,,-,コンソールアプリケーション,[n],[console application]
+4534,1,-,コンソールアプリケーション,[n],[console application]
 4535,1,-,データベースアプリケーション,[n],[database application]
 4536,1,-,ヘルパーアプリケーション,[n],[helper application]
 4537,1,-,アプリケーションインターフェース,[n],[application interface]
@@ -4732,7 +4732,7 @@
 4732,1,-,オフィシャルサイト,[n],[official website]
 4733,,-,オペレーションセンター,[n],"[operation center, operation centre]"
 4734,1,-,オペレーションリサーチ,[n],[operations research]
-4735,,-,スムージングオペレーション,[n],[smoothing operation]
+4735,1,-,スムージングオペレーション,[n],[smoothing operation]
 4736,1,-,オペレーションコード,[n],"[operation code, op-code]"
 4737,1,-,オペレーションマニュアル,[n],[Operations manuals]
 4738,1,-,オペレーションツイスト,[n],[operation twist]
@@ -4880,7 +4880,7 @@
 4880,1,-,グラフィックスサブシステム,[n],[graphics subsystem]
 4881,1,-,グラフィックスターミナル,[n],[graphics terminal]
 4882,1,-,グラフィックスタブレット,[n],[graphics tablet]
-4883,,-,グラフィックスチップ,[n],[graphics chip]
+4883,1,-,グラフィックスチップ,[n],[graphics chip]
 4884,,-,グラフィックスフォーマット,[n],[graphics format]
 4885,,-,グラフィックスプリンタ,[n],[graphics printer]
 4886,1,-,グラフィックスボード,[n],[graphics board]
@@ -5367,7 +5367,7 @@
 5367,,-,ヒューマンドキュメント,[n],[human document]
 5368,,-,サンプルドキュメント,[n],[sample document]
 5369,,-,ドキュメントイメージング,[n],[document imaging]
-5370,,-,ドキュメントファイル,[n],[document file]
+5370,1,-,ドキュメントファイル,[n],[document file]
 5371,1,-,ドキュメントプロパティ,[n],[document properties]
 5372,,-,ベースラインドキュメント,[n],[baseline document]
 5373,1,-,マイドキュメント,[n],[My Documents]
@@ -5840,7 +5840,7 @@
 5840,1,自,じ,[pref],"[self-, from ..., this ... (in contrast to some other ...), aforementioned]"
 5841,1,自,ころ,[pref],[self-]
 5842,1,簀,す,[n],[mat (made of pieces of split bamboo or reeds tied together)]
-5843,,-,せ,[adv],"[so, really, seeming]"
+5843,1,-,せ,[adv],"[so, really, seeming]"
 5844,1,疎,そ,"[n, adj-na]","[sparse, not close (of a relationship)]"
 5845,1,疽,そ,[n],[type of carbuncle]
 5846,1,蘇,そ,"[n, n-suf, n-pref]","[condensed milk, Soviet Union]"
@@ -5957,7 +5957,7 @@
 5957,1,撰,せん,"[n, n-suf]","[anthology (of poetry, etc.), compilation, collection, selection]"
 5958,,擬,ぎ,[pref],"[pseudo-, quasi-]"
 5959,1,敬,けい,[n],"[reverence, respect]"
-5960,,於て,おいて,[conj],"[at, in, on]"
+5960,1,於て,おいて,[conj],"[at, in, on]"
 5961,1,材,ざい,"[n, suf]","[wood, lumber, timber, man of talent, (raw) material, ingredients]"
 5962,,針桑,はりぐわ,[n],"[storehousebush (Cudrania tricuspidata), mandarin melon berry, silkworm thorn, cudrang]"
 5963,,椎,しい,[n],"[any beech tree of genus Castanopsis, chinquapin, chinkapin]"
@@ -5991,7 +5991,7 @@
 5991,1,縹,はなだ,[n],[light indigo]
 5992,1,繊,せん,"[n, num]","[daikon julienne, julienned daikon, one ten-millionth]"
 5993,1,纔,ひたた,[adv],[just a tiny bit]
-5994,,零し,こぼし,[n],[waste-water container (tea ceremony)]
+5994,1,零し,こぼし,[n],[waste-water container (tea ceremony)]
 5995,1,脱,だつ,[pref],"[de- (indicating reversal, removal, etc.)]"
 5996,,膠,にかわ,[n],"[glue (usu. from animal and fish bone, skin, etc.)]"
 5997,1,膿,うみ,[n],[pus]
@@ -8944,7 +8944,7 @@
 8944,,軍制,ぐんせい,[n],"[military system, military organization, military organisation]"
 8945,,群棲,ぐんせい,"[n, vs]",[living gregariously]
 8946,1,郡制,ぐんせい,[n],[county system]
-8947,,壬戌,みずのえいぬ,[n],[59th of the sexagenary cycle]
+8947,1,壬戌,みずのえいぬ,[n],[59th of the sexagenary cycle]
 8948,,塵埃,じんあい,[n],"[dust, dirt, this drab world]"
 8949,,神祇,じんぎ,[n],[gods of heaven and earth]
 8950,,人車,じんしゃ,[n],"[rickshaw, jinrikisha]"
@@ -20312,7 +20312,7 @@
 20312,1,-,キャリーバッグ,[n],"[small case with wheels, large bag with handles, carry bag]"
 20313,,-,キャン,[adv-to],[yelp]
 20314,,-,キャンドルーチン,[n],[canned routine]
-20315,,-,アロマキャンドル,[n],"[aroma candle, aromatic candle]"
+20315,1,-,アロマキャンドル,[n],"[aroma candle, aromatic candle]"
 20316,,-,キャンバスワーク,[n],[canvas work]
 20317,,-,キャンパスシューズ,[n],[campus shoes]
 20318,,-,キャンプサイト,[n],[camp site]
@@ -25386,7 +25386,7 @@
 25386,,漫ろに,そぞろに,[adv],"[in spite of oneself, somehow, without knowing why, vaguely]"
 25387,,-,フープ,[n],[hoop]
 25388,,気が差す,きがさす,"[exp, v5s]","[to feel uneasy, to worry (about something)]"
-25389,,魔が差す,まがさす,"[exp, v5s]","[to be possessed by an evil spirit, to be tempted, to give in to an urge, to succumb to temptation]"
+25389,1,魔が差す,まがさす,"[exp, v5s]","[to be possessed by an evil spirit, to be tempted, to give in to an urge, to succumb to temptation]"
 25390,,神経が細かい,しんけいがこまかい,[exp],"[having delicate feeling, being sensitive]"
 25391,,時間がかかる,じかんがかかる,"[exp, v5r]",[to take time]
 25392,,罠にかかる,わなにかかる,"[exp, v5r]","[to be caught in a trap (snare, etc.), to fall for (a trick, ambush, etc.)]"
@@ -25415,7 +25415,7 @@
 25415,,欲の皮が突っ張る,よくのかわがつっぱる,"[exp, v5r]",[to be greedy]
 25416,,肌を許す,はだをゆるす,"[exp, v5s]",[to surrender one's chastity to a man]
 25417,,肌が合う,はだがあう,"[exp, v5u]","[to be compatible, to get along well]"
-25418,,電子殻,でんしかく,[n],[electron shell]
+25418,1,電子殻,でんしかく,[n],[electron shell]
 25419,,争えない,あらそえない,[adj-i],"[indisputable, undeniable, unmistakable]"
 25420,,直取引,じきとりひき,[n],"[spot transaction, cash transaction]"
 25421,1,ご迷惑,ごめいわく,"[n, adj-na]","[trouble, bother, annoyance]"
@@ -34108,7 +34108,7 @@
 34108,,筆誅,ひっちゅう,"[n, vs]",[written denunciation]
 34109,,氷温,ひょうおん,"[n, adj-f]","[freezing temperature, chilling temperature]"
 34110,,平瓦,ひらがわら,[n],[concave roof tile]
-34111,,美形,びけい,[n],"[beautiful form, beautiful shape, beauty]"
+34111,1,美形,びけい,[n],"[beautiful form, beautiful shape, beauty]"
 34112,,美景,びけい,[n],[beautiful scenery]
 34113,,微乳,びにゅう,[n],[small (delicate) breasts]
 34114,,憫笑,びんしょう,"[n, vs]",[smiling with pity]
