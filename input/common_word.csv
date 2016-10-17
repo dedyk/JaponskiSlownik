@@ -1255,7 +1255,7 @@
 1255,1,-,ホストクラブ,[n],[host club]
 1256,,-,ドライブクラブ,[n],"[car rental agency, driving club]"
 1257,,-,パリクラブ,[n],[Paris club (group of creditor countries)]
-1258,,-,クリケットクラブ,[n],[cricket club]
+1258,1,-,クリケットクラブ,[n],[cricket club]
 1259,1,-,テニスクラブ,[n],[tennis club]
 1260,1,-,ヨットクラブ,[n],"[yacht club, yachting club]"
 1261,1,-,ダンスクラブ,[n],[dance club]
@@ -1648,7 +1648,7 @@
 1648,1,-,シーズンスポーツ,[n],[season sports]
 1649,1,-,マージナルスポーツ,[n],[marginal sports]
 1650,,-,スポーツシャツ,[n],"[sports shirt, sport shirt]"
-1651,,-,スポーツバッグ,[n],[sports bag]
+1651,1,-,スポーツバッグ,[n],[sports bag]
 1652,,-,スポーツジム,[n],"[sports gym, gymnasium]"
 1653,1,スマトラ虎,スマトラとら,[n],[Sumatran tiger (Panthera tigris sumatrae)]
 1654,1,-,スラブ,[n],"[Slav, Slavic, slab]"
@@ -1883,7 +1883,7 @@
 1883,1,-,デイトレーダー,[n],[day trader]
 1884,1,-,アンザックデー,[n],[Anzac Day]
 1885,1,-,デイトレード,[n],[day trade]
-1886,,-,デーホスピタル,[n],[day hospital]
+1886,1,-,デーホスピタル,[n],[day hospital]
 1887,1,-,ボクシングデー,[n],"[Boxing Day (public holiday in the UK, Aus., Canada, etc.)]"
 1888,1,-,カナダデー,[n],[Canada Day]
 1889,1,-,デイホーム,[n],"[day-care center (usu. for the elderly) (centre), day center]"
@@ -2073,8 +2073,8 @@
 2073,1,-,フルヌード,[n],"[totally naked, buck naked]"
 2074,1,-,ネクタイピン,[n],[necktie pin]
 2075,1,-,ノーネクタイ,[exp],[no necktie]
-2076,,-,ノイマンアーキテクチャ,[n],[Neuman architecture]
-2077,,-,ノー,"[int, n-pref, n]",[no]
+2076,1,-,ノイマンアーキテクチャ,[n],[Neuman architecture]
+2077,1,-,ノー,"[int, n-pref, n]",[no]
 2078,1,-,ノーワークノーペイ,[n],[no work no pay]
 2079,,-,ノーカーボン,[n],[no carbon (paper)]
 2080,,-,ノーカウント,[n],[not counting (as anything significant)]
@@ -2131,7 +2131,7 @@
 2131,1,-,ハイリターン,[adj-na],[high return]
 2132,,-,ハイリスク,[adj-na],[high risk]
 2133,1,-,ハイコスト,[n],[high cost]
-2134,,-,ハイコントラスト,[n],[high contrast]
+2134,1,-,ハイコントラスト,[n],[high contrast]
 2135,1,-,ハイパフォーマンス,[n],[high performance]
 2136,1,-,ハイレゾリューション,[n],[high resolution]
 2137,1,-,ハイカルチャー,[n],[high culture]
@@ -2164,7 +2164,7 @@
 2164,1,-,ハンドアックス,[n],[hand axe (ax)]
 2165,1,-,ハンドブレーキ,[n],[hand brake]
 2166,1,-,ハンドドリル,[n],[hand drill]
-2167,,-,ハンドログ,[n],[hand log]
+2167,1,-,ハンドログ,[n],[hand log]
 2168,1,-,ハンドマネー,[n],[hand money]
 2169,1,-,ハンドトラクター,[n],[hand tractor]
 2170,1,-,ハンドミキサー,[n],"[handheld mixer, hand mixer]"
@@ -2872,7 +2872,7 @@
 2872,1,-,ストーブリーグ,[n],"[(hot) stove league, trading of players in the off-season]"
 2873,,-,パシフィックリーグ,[n],[Pacific League]
 2874,1,-,マイナーリーグ,[n],[minor league]
-2875,,-,メージャーリーグ,[n],[Major League]
+2875,1,-,メージャーリーグ,[n],[Major League]
 2876,1,-,メジャーリーグ,[n],[major league]
 2877,1,-,リトルリーグ,[n],[Little League]
 2878,1,-,セントラルリーグ,[n],"[Central League, CL]"
@@ -3180,7 +3180,7 @@
 3180,1,加水,かすい,"[n, vs]","[adding water, dilution with water]"
 3181,1,加虐,かぎゃく,"[n, vs, adj-no]","[causing pain, sadism]"
 3182,1,加虐性愛,かぎゃくせいあい,"[n, adj-no]",[sadism]
-3183,,劣性,れっせい,"[n, adj-no]","[recessiveness, recessive]"
+3183,1,劣性,れっせい,"[n, adj-no]","[recessiveness, recessive]"
 3184,1,劣性遺伝,れっせいいでん,[n],[recessive heredity]
 3185,,劣等,れっとう,"[adj-na, n, adj-no]","[inferiority, low grade]"
 3186,1,助教,じょきょう,[n],[assistant teacher]
@@ -3399,7 +3399,7 @@
 3399,1,式次,しきじ,[n],"[program of a ceremony, programme of a ceremony]"
 3400,1,引き,びき,[suf],[-off (price reduction)]
 3401,,引き付け,ひきつけ,[n],[convulsions]
-3402,,引っ掛け,ひっかけ,[n],"[hook, gab, snare, trap, trick (question), arm-grabbing force out]"
+3402,1,引っ掛け,ひっかけ,[n],"[hook, gab, snare, trap, trick (question), arm-grabbing force out]"
 3403,1,張り替え,はりかえ,"[n, vs]","[re-upholstering, re-covering, repapering]"
 3404,1,強制収容,きょうせいしゅうよう,"[n, vs]","[(enforced) confinement, internment, detention by legal force]"
 3405,1,強請,きょうせい,"[n, vs]","[blackmail, extortion, persistent demand]"
@@ -3687,7 +3687,7 @@
 3687,1,牴牾,ていご,"[n, vs]","[crossing each other, running counter to, differing, clashing]"
 3688,1,特効,とっこう,[n],[of particular efficacy]
 3689,1,特恵,とっけい,"[n, adj-no]","[preferential treatment, special favour or benefit, special favor or benefit]"
-3690,,特攻,とっこう,[n],"[suicide attack, kamikaze attack]"
+3690,1,特攻,とっこう,[n],"[suicide attack, kamikaze attack]"
 3691,,犬猿,けんえん,[n],"[dogs and monkeys (esp. as an example of a bad relationship, like that between cats and dogs)]"
 3692,,狂い,くるい,[n],"[deviation, confusion, disorder]"
 3693,1,狂詩,きょうし,[n],[(Edo-period) type of humorous poem (humourous)]
@@ -3717,7 +3717,7 @@
 3717,1,町議,ちょうぎ,[n],"[town councillor, town council member]"
 3718,1,異な,けな,[adj-pn],"[exceptional, praiseworthy, laudable]"
 3719,,異教,いきょう,"[n, adj-no]","[paganism, heathenism]"
-3720,,異邦,いほう,[n],[foreign country]
+3720,1,異邦,いほう,[n],[foreign country]
 3721,,疾っく,とっく,"[n-t, adj-no, adv]","[a long time ago, quickly, swiftly]"
 3722,1,痩せ,やせ,"[n, adj-no]","[emaciation, extreme thinness, lean person]"
 3723,1,痺れ,しびれ,[n],"[numbness, limbs going to sleep]"
@@ -3970,7 +3970,7 @@
 3970,1,遇す,ぐうす,"[v5s, vt]","[to entertain, to treat]"
 3971,1,遊園,ゆうえん,[n],"[playground (for children), park]"
 3972,1,運動失調,うんどうしっちょう,"[n, adj-no]","[ataxia, loss of coordination of the muscles, failure of muscular coordination]"
-3973,,過小,かしょう,"[adj-na, n, adj-no]",[too small]
+3973,1,過小,かしょう,"[adj-na, n, adj-no]",[too small]
 3974,,道義的,どうぎてき,[adj-na],[moral]
 3975,1,道議,どうぎ,[n],[member of the Hokkaido Prefectural Assembly]
 3976,1,達す,たっす,[v5s],"[to reach, to get to]"
@@ -4098,7 +4098,7 @@
 4098,,哀傷歌,あいしょうか,[n],"[lament, elegy, dirge, funeral song]"
 4099,1,足が早い,あしがはやい,"[exp, adj-i]","[to be fast at walking and running, to be quick to spoil (of foodstuffs)]"
 4100,,安全剃刀,あんぜんかみそり,[n],[safety razor]
-4101,,医院長,いいんちょう,[n],[head doctor]
+4101,1,医院長,いいんちょう,[n],[head doctor]
 4102,,一周期,いっしゅうき,[n],[period]
 4103,,医療品,いりょうひん,[n],[medical supplies]
 4104,,印刷社,いんさつしゃ,[n],[printing company]
@@ -4146,7 +4146,7 @@
 4146,1,旧情,きゅうじょう,[n],"[old friendship, old love, old acquaintance, reawakened feeling, emotion, passion, sentiment, etc.]"
 4147,1,急制度,きゅうせいど,[n],[emergency braking procedure (e.g. during driver training and testing)]
 4148,1,吸虫,きゅうちゅう,[n],[trematode (i.e. a fluke)]
-4149,,九天直下,きゅうてんちょっか,[n],"[falling headlong, plummeting, sudden crash]"
+4149,1,九天直下,きゅうてんちょっか,[n],"[falling headlong, plummeting, sudden crash]"
 4150,1,旧領,きゅうりょう,[n],[old fief]
 4151,,休漁,きゅうりょう,"[n, vs]",[suspension of fishing]
 4152,1,休猟,きゅうりょう,"[n, vs]",[suspension of hunting]
@@ -4324,7 +4324,7 @@
 4324,,準結晶,じゅんけっしょう,"[n, adj-no]","[quasicrystal, paracrystal]"
 4325,,諄々,じゅんじゅん,"[adj-t, adv-to]","[earnestly, repeatedly, patiently]"
 4326,1,遵奉者,じゅんぽうしゃ,[n],[conformist]
-4327,,上客,じょうきゃく,[n],"[guest of honor, guest of hounor, good customer]"
+4327,1,上客,じょうきゃく,[n],"[guest of honor, guest of hounor, good customer]"
 4328,1,常客,じょうきゃく,[n],"[regular customer, patron]"
 4329,1,承久,じょうきゅう,[n],[Joukyuu era (1219.4.12-1222.4.13)]
 4330,1,貞享,じょうきょう,[n],[Joukyou era (1684.2.21-1688.9.30)]
@@ -4403,7 +4403,7 @@
 4403,1,直轄市,ちょっかつし,[n],[direct-controlled municipality (of China)]
 4404,1,挺進隊,ていしんたい,[n],[group that goes ahead of the main body]
 4405,,天蠍宮,てんかつきゅう,[n],"[Scorpio (8th zodiacal sign), the Scorpion]"
-4406,,電気量,でんきりょう,[n],"[amount of electricity, quantity of electricity]"
+4406,1,電気量,でんきりょう,[n],"[amount of electricity, quantity of electricity]"
 4407,1,電子光学,でんしこうがく,[n],[electron optics]
 4408,1,電灯を点ける,でんとうをつける,"[exp, v1]",[to turn (switch) on an electric lamp]
 4409,,登録車,とうろくしゃ,[n],"[vehicle larger than a light motor vehicle, and subject to automobile registration and tax]"
@@ -4592,7 +4592,7 @@
 4592,,-,ヒーローインタービュー,[n],"[interview with leading player in a game (esp. baseball), player-of-the-game interview]"
 4593,1,-,インターネットアドレス,[n],[Internet address]
 4594,,-,インターネットオークション,[n],[Internet auction]
-4595,,-,インターネットカフェ,[n],"[Internet cafe, cybercafe]"
+4595,1,-,インターネットカフェ,[n],"[Internet cafe, cybercafe]"
 4596,1,-,インターネットギャンブル,[n],[Internet gambling]
 4597,1,-,インターネットセキュリティ,[n],[Internet security]
 4598,1,-,インターネットバブル,[n],[dot-com bubble]
@@ -4714,7 +4714,7 @@
 4714,,-,バリューエンジニアリング,[n],[value engineering]
 4715,,-,ヒューマンエンジニアリング,[n],"[human engineering, HE]"
 4716,1,-,ナレッジエンジニアリング,[n],[knowledge engineering]
-4717,,-,エンジニアリングワークステーション,[n],"[engineering workstation, EWS]"
+4717,1,-,エンジニアリングワークステーション,[n],"[engineering workstation, EWS]"
 4718,1,-,ソフトウェアエンジニアリング,[n],"[software engineering, SE]"
 4719,1,-,トラヒックエンジニアリング,[n],[traffic engineering]
 4720,1,-,ネットワークエンジニアリング,[n],[network engineering]
@@ -4832,7 +4832,7 @@
 4832,1,-,キャンペーンモデル,[n],"[poster girl, face (of an advertising campaign, etc.)]"
 4833,1,-,クオリティーペーパー,[n],[quality paper]
 4834,1,-,クライアント・サーバーモデル,[n],[client-server model]
-4835,,-,クライアントサブスクリプション,[n],[client subscription]
+4835,1,-,クライアントサブスクリプション,[n],[client subscription]
 4836,1,-,クライアントスクリプト,[n],[client script]
 4837,1,-,クライアントハブ,[n],[client hub]
 4838,,-,シンクライアント,[n],[thin client]
@@ -5212,7 +5212,7 @@
 5212,1,-,ソフトウェアガイド,[n],[software guide]
 5213,1,-,ソフトウェアスクロール,[n],[software scroll]
 5214,,-,ソフトウェアハウス,[n],[software house]
-5215,,-,ソフトウェアパッケージ,[n],[software package]
+5215,1,-,ソフトウェアパッケージ,[n],[software package]
 5216,1,-,ソフトウェアモデム,[n],[software modem]
 5217,1,-,ソフトウェアライセンス,[n],[software license]
 5218,1,-,データベースソフトウェア,[n],[database software]
@@ -5432,7 +5432,7 @@
 5432,,-,ハードウェアベース,[n],[hardware based]
 5433,1,-,インクリメンタルバックアップ,[n],[incremental backup]
 5434,,-,オンラインバックアップ,[n],[online backup]
-5435,,-,テープバックアップ,[n],[tape backup]
+5435,1,-,テープバックアップ,[n],[tape backup]
 5436,1,-,バックアップスナップショット,[n],[backup snapshot]
 5437,1,-,バックアップディスケット,[n],[backup diskette]
 5438,1,-,バックアップバッテリ,[n],[backup battery]
@@ -5479,7 +5479,7 @@
 5479,,-,リスクファイナンス,[n],[risk finance]
 5480,,-,エクイティファイナンス,[n],[equity finance]
 5481,1,-,リテールファイナンス,[n],[small-scale finance]
-5482,,-,ファイリング,"[n, vs]",[filing]
+5482,1,-,ファイリング,"[n, vs]",[filing]
 5483,1,-,レンジファインダー,[n],[range finder]
 5484,,-,ジャパンファウンデーション,[n],[Japan Foundation]
 5485,1,-,ファクシミリアダプタ,[n],[facsimile adapter]
@@ -5576,7 +5576,7 @@
 5576,1,-,モジュラプログラミング,[n],[modular programming]
 5577,1,-,イベントドリブンプログラミング,[n],[event-driven programming]
 5578,,-,オーバーヘッドプロジェクター,[n],[overhead projector]
-5579,,-,スライドプロジェクター,[n],[slide projector]
+5579,1,-,スライドプロジェクター,[n],[slide projector]
 5580,,-,ビデオプロジェクター,[n],[video projector]
 5581,1,-,サマリプロジェクト,[n],[summary project]
 5582,1,-,パイロットプロジェクト,[n],[pilot project]
@@ -5733,7 +5733,7 @@
 5733,,-,リバーシブルファブリック,[n],[reversible fabric]
 5734,1,-,リバーシブルレーン,[n],[reversible lane]
 5735,1,-,メモリリフレッシュ,[n],[memory refresh]
-5736,,-,リフレッシュレート,[n],[refresh rate]
+5736,1,-,リフレッシュレート,[n],[refresh rate]
 5737,,-,プライスリーダーシップ,[n],[price leadership]
 5738,1,-,リーディングインダストリー,[n],[leading industry]
 5739,1,-,リーディングカンパニー,[n],[leading company]
@@ -17256,7 +17256,7 @@
 17256,,座入り,ざいり,[n],"[entering a tea room, joining a group]"
 17257,,座臥,ざが,[n-t],"[daily life, sitting and lying down]"
 17258,,-,ざく,[n],[assorted vegetables for sukiyaki (esp. green onion)]
-17259,,邪気,じゃけ,[],"[(vengeful) ghost, specter, spectre]"
+17259,1,邪気,じゃけ,[],"[(vengeful) ghost, specter, spectre]"
 17260,,邪気,じゃき,[n],"[maliciousness, ill will, noxious gas, (vengeful) ghost, specter, spectre]"
 17261,,座所,ざしょ,[n],"[throne, (the place of) a nobleman's seat]"
 17262,1,雑記,ざっき,[n],[miscellaneous notes]
@@ -27878,7 +27878,7 @@
 27878,,安定化,あんていか,"[n, vs]","[stabilization, stabilisation]"
 27879,,安定状態,あんていじょうたい,[n],"[steady state, stable state]"
 27880,,-,あんよ,"[n, vs]","[foot, tootsie, tootsy, toddle, walk]"
-27881,,帷幄,いあく,[n],"[headquarters, general staff]"
+27881,1,帷幄,いあく,[n],"[headquarters, general staff]"
 27882,,言う通り,いうとおり,[exp],[as (somebody) says]
 27883,,胃液,いえき,[n],[gastric juice]
 27884,,言えば,いえば,[exp],[speaking of]
@@ -27903,7 +27903,7 @@
 27903,,居食い,いぐい,"[n, vs]",[living in idleness]
 27904,,居グセ,いグセ,[n],[aural highlight of a noh play in which the main actor remains seated]
 27905,,違警罪,いけいざい,[n],[(relatively minor) offense against police regulations (offence)]
-27906,,移行期,いこうき,[n],"[transition, cutover period]"
+27906,1,移行期,いこうき,[n],"[transition, cutover period]"
 27907,,移行期間,いこうきかん,[n],[period of transition (e.g. from old to new system)]
 27908,,移行性,いこうせい,"[n, adj-na]","[portability, upgradability, upwards compatibility, transitional]"
 27909,,異国人,いこくじん,[n],"[foreigner, stranger, outsider, alien]"
@@ -29469,7 +29469,7 @@
 29469,,手を取る,てをとる,"[exp, v5r]",[to take someone's hand]
 29470,,点火器,てんかき,[n],[igniter]
 29471,,天泣,てんきゅう,[n],[rain from a cloudless sky]
-29472,,天球,てんきゅう,[n],"[celestial sphere, the heavens]"
+29472,1,天球,てんきゅう,[n],"[celestial sphere, the heavens]"
 29473,,天球儀,てんきゅうぎ,[n],"[celestial globe, armillary sphere]"
 29474,,点穴,てんけつ,[n],"[pressure points (e.g. for application of moxa), vulnerable body cavities]"
 29475,,-,てんで,[adv],"[(not) at all, altogether, entirely]"
@@ -34755,7 +34755,7 @@
 34755,,-,デキシー,[n],"[Dixie, southern states of the USA, Dixieland jazz]"
 34756,,-,ディキシーランド,[n],"[Dixieland, southern states of the USA, Dixieland jazz]"
 34757,,-,デシジョン,[n],[decision]
-34758,,-,デシマル,[n],[decimal]
+34758,1,-,デシマル,[n],[decimal]
 34759,,-,デシン,[n],[crepe de Chine]
 34760,,-,デスティニー,[n],[destiny]
 34761,,-,デスティネーション,[n],[destination]
