@@ -16,7 +16,7 @@
 16,1,亜父,あふ,[n],[person one respects second only to one's father]
 17,1,溢れ,あふれ,[n],[overflow]
 18,1,虻,あぶ,[n],"[horsefly, gadfly]"
-19,,亜麻,あま,"[n, adj-no]","[flax (Linum usitatissimum), linseed]"
+19,1,亜麻,あま,"[n, adj-no]","[flax (Linum usitatissimum), linseed]"
 20,,海人,あま,[n],"[male diver (who collects shells, seaweed, etc.), fisherman]"
 21,1,阿媽,あま,[n],[amah (foreign maid or nursemaid working in east Asia)]
 22,1,醤蝦,あみ,[n],"[opossum shrimp (Mysida spp.), mysid]"
@@ -149,7 +149,7 @@
 149,,下綱,かこう,[n],[infraclass]
 150,1,架構,かこう,[n],"[framework, frame, structure]"
 151,1,仮構,かこう,"[n, vs]","[fiction, fabrication, concoction, invention, falsework (scaffolding, etc.)]"
-152,,輿,かご,[n],"[palanquin, litter, bier]"
+152,1,輿,かご,[n],"[palanquin, litter, bier]"
 153,1,訛語,かご,[n],[non-standard pronunciation]
 154,,歌語,かご,[n],[words mainly used in songs or poetry]
 155,1,華語,かご,[n],[Chinese language]
@@ -889,8 +889,8 @@
 889,,-,オープントレード,[n],[open trade]
 890,,-,オープンドア,[n],[open door]
 891,1,-,オープンハウス,[n],[open house]
-892,,-,オープンフレーム,[n],[open frame]
-893,,-,オープンプランニング,[n],[open planning]
+892,1,-,オープンフレーム,[n],[open frame]
+893,1,-,オープンプランニング,[n],[open planning]
 894,1,-,オープンマーケット,[n],[open market]
 895,,-,オープンマリッジ,[n],[open marriage]
 896,1,-,オープンユニバーシティー,[n],[Open University]
@@ -899,7 +899,7 @@
 899,1,-,オープンスクール,[n],"[school(s) with flexible, child-centred curricula]"
 900,,-,オープンチケット,[n],[open ticket]
 901,,-,オープンディスカッション,[n],[open discussion (style of meeting)]
-902,,-,オープンアーキテクチャ,[n],[open architecture]
+902,1,-,オープンアーキテクチャ,[n],[open architecture]
 903,1,-,オープンネットワーク,[n],[open network]
 904,1,-,オープンファイル,[n],[open file]
 905,,-,オープンプライス,[n],"[discretionary price, price a retailer can set at its discretion]"
@@ -1099,7 +1099,7 @@
 1099,1,-,カーナビゲーションシステム,[n],[car navigation system]
 1100,1,-,ソーラーカーレース,[n],[solar car race]
 1101,,-,サブコンパクトカー,[n],[subcompact car]
-1102,,-,グランドツーリングカー,[n],[grand touring car]
+1102,1,-,グランドツーリングカー,[n],[grand touring car]
 1103,1,-,ワンマンカー,[n],"[conductorless bus (i.e. having only a driver), conductorless train]"
 1104,1,-,エアカーテン,[n],[air curtain]
 1105,,-,カーテンアンテナ,[n],[curtain antenna]
@@ -1447,7 +1447,7 @@
 1447,,-,サンドタイガーシャーク,[n],"[sand tiger shark (Carcharias taurus), gray nurse shark]"
 1448,1,-,サンドイッチスプレッド,[n],[sandwich spread]
 1449,1,-,サー,[n],[Sir]
-1450,,-,アフターサービス,[n],"[after-sales service, warranty service]"
+1450,1,-,アフターサービス,[n],"[after-sales service, warranty service]"
 1451,1,-,インテリジェンスサービス,[n],[intelligence service]
 1452,1,-,エアサービス,[n],[air service]
 1453,1,-,キャンドルサービス,[n],"[candlelight service (e.g. in a church), ceremony during a wedding reception where the bride and the groom go from table to table lighting a candle at each]"
@@ -1490,7 +1490,7 @@
 1490,1,-,ダイヤルインサービス,[n],[dial-in service]
 1491,,-,データグラムサービス,[n],[datagram service]
 1492,1,-,ディレクトリサービス,[n],[directory service]
-1493,,-,デビットカードサービス,[n],[debit card service]
+1493,1,-,デビットカードサービス,[n],[debit card service]
 1494,1,-,ネームサービス,[n],[name service]
 1495,1,-,ハウジングサービス,[n],[housing service]
 1496,1,-,ファウンドリサービス,[n],[foundry service]
@@ -1823,7 +1823,7 @@
 1823,,-,ゴーストダンス,[n],[ghost dance]
 1824,,-,ポールダンス,[n],"[pole dance, pole dancing]"
 1825,,-,ダンスキャップ,[n],"[dunce cap, fool's cap]"
-1826,,-,ソシアルダンス,[n],"[social dance, social dancing]"
+1826,1,-,ソシアルダンス,[n],"[social dance, social dancing]"
 1827,1,-,ダンスパートナー,[n],"[dance partner, partner]"
 1828,1,-,チャオ,[int],[ciao]
 1829,1,歴青,れきせい,[n],"[asphalt, bitumen]"
@@ -1842,7 +1842,7 @@
 1842,1,-,リングテニス,[n],[ring tennis]
 1843,1,-,テレ,[adj-no],[tele]
 1844,1,-,テレショップ,[n],[television shopping]
-1845,,-,システムテレビ,[n],[system television]
+1845,1,-,システムテレビ,[n],[system television]
 1846,1,-,テレビショッピング,[n],[home shopping network]
 1847,1,-,テレビセット,[n],[television set]
 1848,,-,テレビタレント,[n],[television talent]
@@ -2118,7 +2118,7 @@
 2118,1,-,ハイソサエティ,[n],[high society]
 2119,,-,ハイタッチ,[n],[high five]
 2120,,-,ハイテンポ,[n],[high tempo]
-2121,,-,ハイパワー,"[n, adj-f]","[high power, high-powered]"
+2121,1,-,ハイパワー,"[n, adj-f]","[high power, high-powered]"
 2122,1,-,ハイピッチ,[n],[high pitch]
 2123,,-,ハイファッション,[n],[high fashion]
 2124,1,-,ハイミス,[n],"[older unmarried woman, old maid, spinster]"
@@ -2336,7 +2336,7 @@
 2336,1,-,パラメタフィールド,[n],[parameter field]
 2337,1,-,パリコレクション,[n],"[Paris Fashion Week, major fashion show, held twice yearly in Paris]"
 2338,,-,パリコミューン,[n],[the Paris Commune]
-2339,,-,クリームパン,[n],[cream-filled roll]
+2339,1,-,クリームパン,[n],[cream-filled roll]
 2340,,-,ジャムパン,[n],[jam bun]
 2341,1,-,クイックパン,[n],[quick bread]
 2342,1,-,チョーパン,[n],[head butt]
@@ -2387,7 +2387,7 @@
 2387,1,-,ビジネストラヒック,[n],[business traffic]
 2388,1,-,ビジネスプロセス,[n],[business process]
 2389,1,-,ビジネスユーザ,[n],[business user]
-2390,,-,ビジネスロジック,[n],[business logic]
+2390,1,-,ビジネスロジック,[n],[business logic]
 2391,1,-,インターネットビジネス,[n],[Internet business]
 2392,,-,ビジネスランチ,[n],[business lunch]
 2393,1,-,フィービジネス,[n],[fee business]
@@ -2699,7 +2699,7 @@
 2699,1,-,ボールガール,[n],[ball girl (as in tennis)]
 2700,1,-,サッカーボール,[n],"[soccer ball, football (as used in soccer)]"
 2701,,-,コントロールボール,[n],"[control ball, track ball, tracker ball]"
-2702,,-,ゴルフボール,[n],[golf ball]
+2702,1,-,ゴルフボール,[n],[golf ball]
 2703,,-,ボールアンパイア,[n],[ball umpire]
 2704,,-,ジャンプボール,[n],[jump ball]
 2705,,-,ミンチボール,[n],[mince ball]
@@ -2846,7 +2846,7 @@
 2846,,-,フォトライブラリー,[n],[photo library]
 2847,1,-,ラジオコントロール,[n],[radio control]
 2848,1,-,ラジオコンパス,[n],[radio compass]
-2849,,-,インターネットラジオ,[n],[Internet radio]
+2849,1,-,インターネットラジオ,[n],[Internet radio]
 2850,,-,ラジオドラマ,[n],[radio drama]
 2851,1,-,ラジオビーコン,[n],[radio beacon]
 2852,,-,トランジスターラジオ,[n],[transistor radio]
@@ -3355,7 +3355,7 @@
 3355,1,寒心,かんしん,"[n, vs]","[deplorable, alarming]"
 3356,1,寝ぼけ,ねぼけ,[n],[(being) half asleep]
 3357,1,寝間,ねま,[n],[bedroom]
-3358,,察す,さっす,"[v5s, vt]","[to guess, to sense, to presume, to judge, to sympathize with, to sympathise with]"
+3358,1,察す,さっす,"[v5s, vt]","[to guess, to sense, to presume, to judge, to sympathize with, to sympathise with]"
 3359,1,寺子,てらこ,[n],[child who attended a temple school]
 3360,1,対す,たいす,"[v5s, vi]","[to face (each other), to be facing, to be directed toward (the future, etc.), to be in response to, to be related to, to receive (a client, etc.), to compare with, to contrast with, to be in opposition with, to be opposed to, to confront, to oppose, to compete with]"
 3361,1,対す,ついす,"[v5s, vi]","[to form a pair, to correspond]"
@@ -3702,7 +3702,7 @@
 3702,,理学療法,りがくりょうほう,[n],"[physiotherapy, physical therapy]"
 3703,1,琉球,りゅうきゅう,[n],"[Ryukyu, chain of southwestern Japanese islands comprising Okinawa Prefecture]"
 3704,1,甘やか,あまやか,[adj-na],"[sweet (voice, fragrance, etc.)]"
-3705,,生々,せいせい,"[adj-na, n]","[lively, growing up]"
+3705,1,生々,せいせい,"[adj-na, n]","[lively, growing up]"
 3706,1,生中,なまちゅう,[n],[medium-size draft beer]
 3707,1,生半,なまなか,"[adj-na, adv]","[halfway-done, mediocre, uncertain, half-hearted, half-heartedly, insufficiently]"
 3708,1,生殺,せいさつ,"[n, vs]","[sparing life and taking life, letting live and killing]"
@@ -3745,7 +3745,7 @@
 3745,1,着呼,ちゃっこ,[n],[incoming call]
 3746,,着心,きごころ,[n],[feeling of clothes]
 3747,,知らない,しらない,[adj-i],"[unknown, strange, I don't care, I don't know and I feel nothing]"
-3748,,石竜,せきりゅう,[n],[lizard]
+3748,1,石竜,せきりゅう,[n],[lizard]
 3749,1,砕氷,さいひょう,"[n, vs, adj-no]",[ice breaking]
 3750,1,砲丸,ほうがん,[n],"[shell, shots, cannon ball]"
 3751,1,破れ,やれ,[n],"[tear, rip, breach, break, hole, crack, breakdown, collapse, spoilage, waste, wastepaper]"
@@ -3948,7 +3948,7 @@
 3948,1,身元不明,みもとふめい,"[n, adj-no]",[(a person or body being) unidentifiable (unidentified)]
 3949,,身分証,みぶんしょう,[n],"[identification papers, ID]"
 3950,1,身分証明,みぶんしょうめい,[n],[identification]
-3951,,軍法,ぐんぽう,[n],"[military law, martial law, tactics, strategy]"
+3951,1,軍法,ぐんぽう,[n],"[military law, martial law, tactics, strategy]"
 3952,1,軍資,ぐんし,[n],"[war materiel, military expenses, war fund, campaign funds]"
 3953,,転び,ころび,[n],"[turning around, converting, batter (construction technique)]"
 3954,1,軽業,かるわざ,[n],"[acrobatics, risky undertaking]"
@@ -4070,7 +4070,7 @@
 4070,1,鳥瞰,ちょうかん,"[n, vs]",[bird's-eye view]
 4071,1,黄変,おうへん,"[n, vs]",[turning yellow]
 4072,1,黄道,こうどう,[n],[ecliptic]
-4073,,鼻高,はなたか,"[adj-na, n]","[high nose, person with a high nose, pride]"
+4073,1,鼻高,はなたか,"[adj-na, n]","[high nose, person with a high nose, pride]"
 4074,1,齧歯,げっし,[n],[rodent]
 4075,1,辛み,つらみ,[n],"[pent-up resentment, grudges and hard feelings]"
 4076,1,稲虫,いなむし,[n],[rice pest]
@@ -5130,7 +5130,7 @@
 5130,1,-,ジャイアントケルプ,[n],[giant kelp (Macrocystis pyrifera)]
 5131,1,-,ジャイアントスラローム,[n],[giant slalom]
 5132,1,-,ジャイアントコーン,[n],[giant corn]
-5133,,-,ジャイアントインパクト,[n],[giant impact (theory)]
+5133,1,-,ジャイアントインパクト,[n],[giant impact (theory)]
 5134,1,-,ジャパニーズスマイル,[n],[Japanese smile]
 5135,,-,ジャパニーズボブテイル,[n],[Japanese bobtail (breed of cat)]
 5136,,-,ジャンピング,[n],[jumping]
@@ -5382,7 +5382,7 @@
 5382,,-,ドローイングペーパー,[n],[drawing paper]
 5383,,新西蘭,ニュージーランド,[n],[New Zealand]
 5384,,-,システムネットワーク,[n],[systems network]
-5385,,-,ニューラルネットワーク,[n],[neural network]
+5385,1,-,ニューラルネットワーク,[n],[neural network]
 5386,1,-,ネットワークアドミン,[n],[network administration]
 5387,,-,ラインネットワーク,[n],[line network]
 5388,1,-,オーバーレイネットワーク,[n],[overlay network]
@@ -5390,7 +5390,7 @@
 5390,,-,テレコムネットワーク,[n],[telecom network]
 5391,,-,ネットワークアダプタ,[n],[network adapter]
 5392,1,-,ネットワークアドミニストレータ,[n],[network administrator]
-5393,,-,ネットワークアドレス,[n],[network address]
+5393,1,-,ネットワークアドレス,[n],[network address]
 5394,,-,ネットワークインフラ,[n],[network infrastructure]
 5395,1,-,ネットワークエレメント,[n],[network element]
 5396,1,-,ネットワークケーブル,[n],[network cabling]
@@ -5520,7 +5520,7 @@
 5520,1,-,ジャズフェスティバル,[n],[jazz festival]
 5521,,-,ロックフェスティバル,[n],"[rock festival, rockfest]"
 5522,1,-,ウッドストックフェスティバル,[n],[Woodstock Music and Art Festival (1969)]
-5523,,-,スノーフェスティバル,[n],[snow festival]
+5523,1,-,スノーフェスティバル,[n],[snow festival]
 5524,1,-,レスビアンフェミニズム,[n],[lesbian feminism]
 5525,,-,ポストモダンフェミニズム,[n],[postmodern feminism]
 5526,,-,リベラルフェミニズム,[n],[liberal feminism]
@@ -5823,7 +5823,7 @@
 5823,,矩,く,[n],[quadrature]
 5824,1,褻,け,"[adj-no, n]","[mundane, commonplace, ordinary]"
 5825,1,卦,け,[n],[divination sign]
-5826,,-,け,[prt],[particle indicating that the speaker is trying to recall some information]
+5826,1,-,け,[prt],[particle indicating that the speaker is trying to recall some information]
 5827,,罫,けい,[n],"[line, rule]"
 5828,,偈,げ,[n],[gatha (poetic verse of a scripture)]
 5829,1,濃,こ,[pref],"[dark, thick]"
@@ -5960,7 +5960,7 @@
 5960,1,於て,おいて,[conj],"[at, in, on]"
 5961,1,材,ざい,"[n, suf]","[wood, lumber, timber, man of talent, (raw) material, ingredients]"
 5962,,針桑,はりぐわ,[n],"[storehousebush (Cudrania tricuspidata), mandarin melon berry, silkworm thorn, cudrang]"
-5963,,椎,しい,[n],"[any beech tree of genus Castanopsis, chinquapin, chinkapin]"
+5963,1,椎,しい,[n],"[any beech tree of genus Castanopsis, chinquapin, chinkapin]"
 5964,,楮,こうぞ,[n],[hybrid mulberry tree used to make Japanese paper (Broussonetia kazinoki x papyrifera)]
 5965,1,形木,かたぎ,[n],[wooden printing block]
 5966,1,正・写し受信者表示,せい・うつしじゅしんしゃひょうじ,[n],[primary and copy recipients indication]
@@ -10593,7 +10593,7 @@
 10593,1,新線,しんせん,[n],[new railway line]
 10594,1,推参,すいさん,"[adj-na, n]","[paying an unannounced visit, rudeness]"
 10595,,推算,すいさん,"[n, vs]",[estimation]
-10596,,炊さん,すいさん,"[n, vs]","[cooking (rice, grains)]"
+10596,1,炊さん,すいさん,"[n, vs]","[cooking (rice, grains)]"
 10597,,梨花,りか,[n],[pear blossoms]
 10598,,李花,りか,[n],[plum blossoms]
 10599,,梨果,りか,"[n, adj-no]",[pome]
@@ -22714,7 +22714,7 @@
 22714,,-,テキストファイル,[n],[text file]
 22715,,-,プレーンテキスト,[n],[plain text]
 22716,,-,クリアテキスト,[n],[clear text]
-22717,,-,テキストオブジェクト,[n],[text object]
+22717,1,-,テキストオブジェクト,[n],[text object]
 22718,1,-,テキストクエリ,[n],[text query]
 22719,,-,テキストフォント,[n],[text font]
 22720,,-,テキストブロック,[n],[text block]
@@ -29684,7 +29684,7 @@
 29684,,敗亡,はいぼう,"[n, vs]",[defeat (in battle)]
 29685,,拝領,はいりょう,"[n, vs]","[receiving (from a superior), bestowed]"
 29686,,端唄,はうた,[n],[short love song (popular in late Edo period)]
-29687,,破鏡,はきょう,[n],"[broken mirror, marital separation, divorce]"
+29687,1,破鏡,はきょう,[n],"[broken mirror, marital separation, divorce]"
 29688,,歯糞,はくそ,[n],[(dental) plaque]
 29689,,白桃,はくとう,[n],[white peach]
 29690,,白頭,はくとう,[n],"[head with grey hair (gray), grey head]"
@@ -31230,7 +31230,7 @@
 31230,,謙譲語Ｉ,けんじょうごいち,[n],"[humble language in which the listener (or a third party) is the indirect object of an action (or the recipient of an object, etc.)]"
 31231,,謙譲語ＩＩ,けんじょうごに,[n],"[humble language in which an action or object is not directed toward the listener (or a third party), humble language used as a courtesy]"
 31232,1,虚根,きょこん,[n],[imaginary root]
-31233,,巨根,きょこん,"[n, adj-no]",[large penis]
+31233,1,巨根,きょこん,"[n, adj-no]",[large penis]
 31234,1,来電,らいでん,[n],[incoming telegram]
 31235,,プリント配線盤,プリントはいせんばん,[n],[printed circuit board]
 31236,,群系,ぐんけい,[n],"[formation, classification of plant communities]"
