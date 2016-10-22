@@ -15,6 +15,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.commons.cli.CommandLine;
@@ -83,7 +84,7 @@ public class WordGenerator {
 		}
 		
 		// utworzenie helper'a
-		WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv" }, "input/common_word.csv", 
+		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv" }, "input/common_word.csv", 
 				"../JapaneseDictionary_additional/JMdict_e");
 		
 		// przetwarzanie operacji
@@ -1373,7 +1374,7 @@ public class WordGenerator {
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
 								
 				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();				
+				final JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();				
 				
 				// tworzenie indeksu lucene
 				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
@@ -1381,18 +1382,12 @@ public class WordGenerator {
 				// stworzenie wyszukiwacza
 				IndexReader reader = DirectoryReader.open(luceneIndex);
 
-				IndexSearcher searcher = new IndexSearcher(reader);
+				final IndexSearcher searcher = new IndexSearcher(reader);
 				
 				// generowanie slow
 				System.out.println("Generowanie słów...");
-								
-				Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
-
-				int csvId = 1;
-								
-				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
-				
-				Set<String> allPrefixes = new TreeSet<String>();
+												
+				final Set<String> allPrefixes = new TreeSet<String>();
 				
 				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 					
@@ -1536,73 +1531,124 @@ public class WordGenerator {
 				}
 				
 				//////
+				
+				final Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
+				
+				final Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
+				
+				final AtomicInteger csvId = new AtomicInteger(0);
+				
+				//
+				
+				final ConcurrentLinkedQueue<String> allPrefixesConcurrentLinkedQueue = new ConcurrentLinkedQueue<>(allPrefixes);
 								
+				final AtomicInteger currentPrefixCounter = new AtomicInteger(1);
 				
-				int currentPrefixCounter = 1;
-				
-				for (String currentPrefix : allPrefixes) {
-					
-					System.out.format("%s - %d / %d / %d\n", currentPrefix, currentPrefixCounter, allPrefixes.size(), newCommonWordMap.size());
-					
-					currentPrefixCounter++;
+				class GeneratePrefixWordListThread extends Thread {
+
+					@Override
+					public void run() {
 						
-					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentPrefix);
-
-					ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
-					
-					if (scoreDocs.length > 0) {
+						try {
+						
+							while (true) {
+								
+								String currentPrefix = allPrefixesConcurrentLinkedQueue.poll();
+								
+								if (currentPrefix == null) {
+									break;
+								}
+								
+								System.out.format("%s - %d / %d / %d\n", currentPrefix, currentPrefixCounter.intValue(), allPrefixes.size(), newCommonWordMap.size());
+								
+								currentPrefixCounter.incrementAndGet();
+								
+								//
+								
+								Query query = Helper.createLuceneDictionaryIndexTermQuery(currentPrefix);
+	
+								ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
+	
+								if (scoreDocs.length > 0) {
+									
+									for (ScoreDoc scoreDoc : scoreDocs) {
+										
+										Document foundDocument = searcher.doc(scoreDoc.doc);
+	
+										// znaleziony obiekt od lucene
+										GroupEntry groupEntryFromLucene = Helper.createGroupEntry(foundDocument);
+										
+										Integer groupId = groupEntryFromLucene.getGroup().getId();
+										
+										// czy ta grupa byla juz sprawdzana
+										synchronized (alreadyCheckedGroupId) {
+											
+											if (alreadyCheckedGroupId.contains(groupId) == true) {
+												continue;
+												
+											} else {
+												alreadyCheckedGroupId.add(groupId);
+												
+											}
+										}									
+										
+										// szukamy pelnej grupy
+										Group groupInDictionary = jmeNewDictionary.getGroupById(groupId);
+										
+										List<GroupEntry> groupEntryList = groupInDictionary.getGroupEntryList();
+																			
+										// grupujemy po tych samych tlumaczenia
+										List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
 													
-						for (ScoreDoc scoreDoc : scoreDocs) {
-							
-							Document foundDocument = searcher.doc(scoreDoc.doc);
-
-							// znaleziony obiekt od lucene
-							GroupEntry groupEntryFromLucene = Helper.createGroupEntry(foundDocument);
-							
-							Integer groupId = groupEntryFromLucene.getGroup().getId();
-							
-							// czy ta grupa byla juz sprawdzana
-							if (alreadyCheckedGroupId.contains(groupId) == true) {
-								continue;
-								
-							} else {
-								alreadyCheckedGroupId.add(groupId);
-								
-							}
-							
-							// szukamy pelnej grupy
-							Group groupInDictionary = jmeNewDictionary.getGroupById(groupId);
-							
-							List<GroupEntry> groupEntryList = groupInDictionary.getGroupEntryList();
-																
-							// grupujemy po tych samych tlumaczenia
-							List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
-										
-							for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
-								
-								GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
-
-								String groupEntryKanji = groupEntry.getKanji();
-								String groupEntryKana = groupEntry.getKana();
-																
-								List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
-								
-								if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
-										
-									//System.out.println(groupEntry);
-									
-									CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
-									
-									if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
-
-										newCommonWordMap.put(commonWord.getId(), commonWord);
-										
-										csvId++;										
-									}									
+										for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
+											
+											GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
+	
+											String groupEntryKanji = groupEntry.getKanji();
+											String groupEntryKana = groupEntry.getKana();
+																			
+											List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+											
+											if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
+													
+												//System.out.println(groupEntry);
+												
+												CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId.incrementAndGet(), groupEntry);
+												
+												synchronized (wordGeneratorHelper) {
+													
+													if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
+														
+														newCommonWordMap.put(commonWord.getId(), commonWord);
+													}									
+												}											
+											}
+										}
+									}													
 								}
 							}
-						}													
+							
+						} catch (Exception e) {
+							throw new RuntimeException(e);
+						}
 					}
+				}
+				
+				// stworzenie watkow
+				GeneratePrefixWordListThread[] generatePrefixWordListThreads = new GeneratePrefixWordListThread[6];
+				
+				for (int idx = 0; idx < generatePrefixWordListThreads.length; ++idx) {
+					generatePrefixWordListThreads[idx] = new GeneratePrefixWordListThread();
+				}
+				
+				// uruchomienie watkow
+				for (int idx = 0; idx < generatePrefixWordListThreads.length; ++idx) {
+					generatePrefixWordListThreads[idx].start();
+				}
+				
+				// poczekanie na wszystkie watki
+				for (int idx = 0; idx < generatePrefixWordListThreads.length; ++idx) {
+					generatePrefixWordListThreads[idx].join();
 				}
 				
 				// zapisywanie slownika
