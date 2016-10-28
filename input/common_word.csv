@@ -103,7 +103,7 @@
 103,,汚吏,おり,[n],[corrupt official]
 104,1,悪露,おろ,"[n, adj-no]","[lochia, post-natal vaginal discharge]"
 105,1,疎,おろ,[pref],"[incompletely, insufficiently, partially, somewhat]"
-106,,お代,おだい,[n],"[charge (e.g. admission, menu item), cost, price]"
+106,1,お代,おだい,[n],"[charge (e.g. admission, menu item), cost, price]"
 107,1,お召し,おめし,[n],"[summoning, calling, riding, wearing, dressing, clothing, (high-quality) silk crepe (fabric)]"
 108,1,お国,おくに,[n],"[your native country, your hometown, my home country (i.e. Japan), countryside, country, daimyo's territory (Edo period)]"
 109,,お好み,おこのみ,"[n, adj-no]","[choice, preference]"
@@ -423,11 +423,11 @@
 423,1,裁ち,たち,[n],"[cutting, cut]"
 424,1,立て,たて,"[pref, suf, ctr]","[central, main, head, chief, just (done), freshly (baked), indicates activity only just occurred, counter for consecutive losses]"
 425,1,建て,たて,"[n, n-suf, n-pref]","[contract, commitment]"
-426,,溜め,ため,[n],"[cesspool, sink, manure sink]"
+426,1,溜め,ため,[n],"[cesspool, sink, manure sink]"
 427,1,-,ため,[n],"[the same (age, social status), peer]"
 428,,多羅,たら,[n],"[palmyra, lusterleaf holly, patra (silver incense dish placed in front of a Buddhist statue)]"
 429,,-,たる,[aux-v],"[(those) who are, (that) which is, often used in relation to qualifications and requirements for a position, in the capacity of]"
-430,,-,たれソース,[n],"[tare sauce, dipping sauce]"
+430,1,-,たれソース,[n],"[tare sauce, dipping sauce]"
 431,,痰,たん,[n],"[phlegm, sputum]"
 432,1,貪,たん,[n],"[coveting, raga (desire)]"
 433,1,-,たん,[suf],[(cute) suffix for familiar person]
@@ -452,7 +452,7 @@
 452,,稠度,ちょうど,[n],[consistency]
 453,1,-,ちり,[n],"[dish of fish (meat, etc.), tofu, vegetables boiled together and served with ponzu dipping sauce]"
 454,1,狆,ちん,[n],"[Japanese spaniel, Pekinese, chin]"
-455,,-,ちん,[n-suf],[intimate (or disdainful) suffix used after a person's name (or the base of an adjective describing that person)]
+455,1,-,ちん,[n-suf],[intimate (or disdainful) suffix used after a person's name (or the base of an adjective describing that person)]
 456,1,鎮,ちん,[n],"[a weight, temple supervisor, town (of China)]"
 457,1,鎮,しず,[n],[a weight]
 458,1,鴆,ちん,[n],"[poisonfeather bird, zhenniao, zhen, mythical poisonous bird (of ancient China)]"
@@ -471,7 +471,7 @@
 471,1,展,てん,[suf],"[exhibition, exhibit]"
 472,1,恬,てん,"[adj-t, adv-to]",[nonchalant]
 473,1,転,てん,[n],"[altering pronunciation or meaning, word with altered pronunciation or meaning, turning or twisting part of a text (in Chinese poetry)]"
-474,,天火,てんか,[n],[fire caused by lightning]
+474,1,天火,てんか,[n],[fire caused by lightning]
 475,1,天花,てんか,[n],[snow]
 476,1,転科,てんか,"[n, vs]",[changing one's academic course]
 477,1,転訛,てんか,"[n, vs]","[corruption, bastardisation]"
@@ -1195,7 +1195,7 @@
 1195,1,-,キーマクロ,[n],[key macro]
 1196,1,-,キーリカバリー,[n],[key recovery]
 1197,1,-,キーリピート,[n],[key repeat]
-1198,,-,キーリング,[n],[key ring (encryption)]
+1198,1,-,キーリング,[n],[key ring (encryption)]
 1199,1,-,キャプスロックキー,[n],"[Caps Lock key, caps lock key]"
 1200,1,-,クリアキー,[n],[Clear key]
 1201,,-,クロマキー,[n],[chroma key]
@@ -1544,7 +1544,7 @@
 1544,1,-,メープルシロップ,[n],[maple syrup]
 1545,1,-,グレナデンシロップ,[n],[grenadine syrup]
 1546,,-,ガムシロップ,[n],[gum syrup]
-1547,,-,シー,[n],[sea]
+1547,1,-,シー,[n],[sea]
 1548,1,Ｃ,シー,[n],"[C, c]"
 1549,1,-,シーチキン,[n],"[canned tuna (from sea chicken, orig. a brand name)]"
 1550,,-,シーバース,[n],[sea berth]
@@ -1766,7 +1766,7 @@
 1766,1,-,タイプミス,[n],"[typographical error, typo]"
 1767,,-,ジャケットタイプ,[n],"[jacket type (e.g. a style of clothing), jacket-style buoyancy control device (BCD) shaped like a sleeveless coat]"
 1768,1,-,ベストタイプ,[n],[best type]
-1769,,-,アクションタイプ,[n],[action type]
+1769,1,-,アクションタイプ,[n],[action type]
 1770,,-,キャビネットタイプ,[n],[cabinet type]
 1771,1,-,ジョブタイプ,[n],[job type]
 1772,1,-,タイプスタイル,[n],[type style]
@@ -1902,7 +1902,7 @@
 1902,1,-,システムデータ,[n],[system data]
 1903,,-,テキストデータ,[n],[character data]
 1904,1,-,データインスタンス,[n],[data instance]
-1905,,-,データインタフェース,[n],[data interface]
+1905,1,-,データインタフェース,[n],[data interface]
 1906,1,-,データインテンシブ,[n],[data intensive]
 1907,1,-,データインベントリ,[n],[data inventory]
 1908,1,-,データウェアハウス,[n],"[data warehouse, data warehousing]"
@@ -2003,7 +2003,7 @@
 2003,1,-,ナイルグリーン,[n],[Nile green]
 2004,,-,ナイルモニター,[n],"[Nile monitor (Varanus niloticus, species of carnivorous monitor lizard native to sub-Saharan Africa), water leguaan]"
 2005,1,-,ナイルアロワナ,[n],[African arowana (Heterotis niloticus)]
-2006,,-,ナイルパーチ,[n],"[Nile perch (Lates niloticus), African snook, Capitaine, Victoria perch]"
+2006,1,-,ナイルパーチ,[n],"[Nile perch (Lates niloticus), African snook, Capitaine, Victoria perch]"
 2007,,-,ナイルティラピア,[n],"[Nile tilapia (Oreochromis niloticus niloticus) (larger member of the family Cichlidae, important to aquaculture since ancient Egypt)]"
 2008,1,-,ウエストナイルウイルス,[n],[West Nile virus]
 2009,1,-,ナイロンストッキング,[n],"[nylons, nylon stockings]"
@@ -2124,7 +2124,7 @@
 2124,1,-,ハイミス,[n],"[older unmarried woman, old maid, spinster]"
 2125,,-,ランナーズハイ,[n],[runner's high]
 2126,1,-,ハイキューブ,[n],[high cubic capacity (used for measuring shipping containers)]
-2127,,-,ハイポリマー,[n],[high polymer]
+2127,1,-,ハイポリマー,[n],[high polymer]
 2128,1,-,ハイデフィニション,[adj-f],[high-definition (e.g. television)]
 2129,1,-,ハイスペック,[n],[high spec]
 2130,1,-,ハイテンション,[n],"[high tension (as in electronics, etc.), excited, enthusiastic]"
@@ -2494,7 +2494,7 @@
 2494,1,-,フライキャスチング,[n],[fly casting]
 2495,,-,ドライフライ,[n],[dry fly]
 2496,,-,フライギャラリー,[n],[fly gallery]
-2497,,-,ストリーマーフライ,[n],[streamer fly (fishing)]
+2497,1,-,ストリーマーフライ,[n],[streamer fly (fishing)]
 2498,1,-,ミックスフライ,[n],[plate of assorted fried food]
 2499,,-,カベルネ・フラン,[n],[Cabernet Franc (wine grape variety)]
 2500,,仏蘭西,フランス,[n],[France]
@@ -2881,7 +2881,7 @@
 2881,1,-,ステレオレコード,[n],[stereo record]
 2882,1,-,モノラルレコード,[n],[monaural record]
 2883,1,-,レコードプレーヤー,[n],[record player]
-2884,,-,レコードホルダー,[n],[record holder]
+2884,1,-,レコードホルダー,[n],[record holder]
 2885,,-,カレントレコード,[n],[current record]
 2886,1,-,ダミーレコード,[n],[dummy record]
 2887,,-,ヘッダレコード,[n],[header record]
@@ -3217,7 +3217,7 @@
 3217,1,双眼,そうがん,"[n, adj-no]","[both eyes, binocular]"
 3218,1,反比,はんぴ,[n],[inverse ratio]
 3219,1,取り,どり,[n-suf],"[samurai receiving this much rice as a fee, offering of rice cake containing this much rice, person receiving this amount of money as a salary]"
-3220,,取り纏め,とりまとめ,[n],"[collecting, collection, collation, gathering, arrangement, coordination]"
+3220,1,取り纏め,とりまとめ,[n],"[collecting, collection, collation, gathering, arrangement, coordination]"
 3221,,取り上げ,とりあげ,[n],"[adoption, acceptance, confiscation, midwifery, midwife]"
 3222,,取り付け,とりつけ,[n],"[installation, mounting, furnishing, fitting, run (on a bank), bank run]"
 3223,1,取り入れ,とりいれ,[n],"[taking in, harvesting]"
@@ -3258,7 +3258,7 @@
 3258,1,味噌すり,みそすり,[n],"[grinding miso, flattery, flatterer, monk]"
 3259,,呼起,こき,"[n, vs]","[recollection, something called to mind]"
 3260,1,咄嗟,とっさ,"[n, adj-no]","[moment, instant]"
-3261,,咎め,とがめ,[n],"[blame, censure, rebuke, reproof]"
+3261,1,咎め,とがめ,[n],"[blame, censure, rebuke, reproof]"
 3262,1,唯物,ゆいぶつ,[n],[materialism (in philosophy)]
 3263,,商業学,しょうぎょうがく,[n],[commercial science]
 3264,1,問いかけ,といかけ,[n],"[query, interrogation, enquiry, question, inquiry]"
@@ -3707,7 +3707,7 @@
 3707,1,生半,なまなか,"[adj-na, adv]","[halfway-done, mediocre, uncertain, half-hearted, half-heartedly, insufficiently]"
 3708,1,生殺,せいさつ,"[n, vs]","[sparing life and taking life, letting live and killing]"
 3709,1,生臭,なまぐさ,[n],"[something that smells of fish or blood, meat and fish, degenerate monk, corrupt priest]"
-3710,,用務,ようむ,[n],[business]
+3710,1,用務,ようむ,[n],[business]
 3711,1,田作,でんさく,[n],[rice-field tilling]
 3712,1,甲虫,かぶとむし,[n],"[rhinoceros beetle (esp. the Japanese rhinoceros beetle, Trypoxylus dichotomus)]"
 3713,1,甲虫,こうちゅう,[n],[beetle]
@@ -3727,7 +3727,7 @@
 3727,1,白々,しらじら,"[adv-to, adv]","[growing light (e.g. at dawn), pale, appearing dumb, talking in an obvious way]"
 3728,1,白化,はっか,"[n, vs]","[bleaching, whitening, chlorosis, albinism]"
 3729,1,白白,はくはく,[adj-na],[clear]
-3730,,白腹,しろはら,[n],[pale thrush (Turdus pallidus)]
+3730,1,白腹,しろはら,[n],[pale thrush (Turdus pallidus)]
 3731,1,百八,ひゃくはち,"[num, n]","[108, one hundred and eight, the number of kleshas, worldly thoughts and passions, the sum of 12 months, 24 seasons of the solar year, and 72 'climates' of one year]"
 3732,,百家,ひゃっか,[n],[many scholars]
 3733,1,百貨,ひゃっか,[n],[all kinds of goods]
@@ -4795,7 +4795,7 @@
 4795,1,-,チルドキャスチング,[n],[chilled casting]
 4796,1,-,サーフキャスティング,[n],[surf casting]
 4797,,-,ディスクキャッシング,[n],[disk caching]
-4798,,-,キャッチャーボート,[n],[catcher (whaling boat)]
+4798,1,-,キャッチャーボート,[n],[catcher (whaling boat)]
 4799,,-,キッチンキャビネット,[n],[kitchen cabinet]
 4800,,-,コーナーキャビネット,[n],[corner cabinet]
 4801,1,-,シャドーキャビネット,[n],[shadow cabinet]
@@ -5161,7 +5161,7 @@
 5161,1,-,ビーコンステーション,[n],[beaconing station]
 5162,1,-,ベースステーション,[n],[base station]
 5163,1,-,エアステーション,[n],[air station]
-5164,,-,ステーションブレイク,[n],[station break]
+5164,1,-,ステーションブレイク,[n],[station break]
 5165,1,-,パンティーストッキング,[n],[panty hose]
 5166,1,-,スパゲッティウエスタン,[n],[spaghetti Western (film)]
 5167,1,-,スパゲッティコード,[n],[spaghetti code]
@@ -5317,7 +5317,7 @@
 5317,,-,ドロップディレクトリ,[n],[drop directory]
 5318,1,-,メインディレクトリ,[n],[main directory]
 5319,,-,ルートディレクトリ,[n],[root directory]
-5320,,-,ワーキングディレクトリ,[n],[working directory]
+5320,1,-,ワーキングディレクトリ,[n],[working directory]
 5321,1,-,オンラインディレクトリー,[n],[online directory]
 5322,,ＤＶＤ,ディーブイディー,[n],"[digital versatile disc, DVD]"
 5323,,ＨＤＤＶＤ,エッチディーディーブイディー,[n],"[high-definition digital versatile disc (HD DVD, high-definition DVD)]"
@@ -5391,7 +5391,7 @@
 5391,,-,ネットワークアダプタ,[n],[network adapter]
 5392,1,-,ネットワークアドミニストレータ,[n],[network administrator]
 5393,1,-,ネットワークアドレス,[n],[network address]
-5394,,-,ネットワークインフラ,[n],[network infrastructure]
+5394,1,-,ネットワークインフラ,[n],[network infrastructure]
 5395,1,-,ネットワークエレメント,[n],[network element]
 5396,1,-,ネットワークケーブル,[n],[network cabling]
 5397,1,-,ネットワークサービスプロバイダ,[n],"[network service provider, NSP]"
@@ -5879,7 +5879,7 @@
 5879,1,-,アカペラ,[n],"[a cappella, unaccompanied choir or choral work]"
 5880,1,-,アプリオリ,[adj-na],[a priori]
 5881,,-,アテンポ,[exp],[a tempo]
-5882,,-,アラモード,[n],[a la mode]
+5882,1,-,アラモード,[n],[a la mode]
 5883,1,-,デジャブ,[n],"[deja vu, something already seen or experienced, feeling of having seen or experienced something at least once before]"
 5884,1,-,ジャック・オ・ランターン,[n],"[jack-o'-lantern, jack o'lantern]"
 5885,,-,ヶ,"[ctr, prt]","[counter for the ichi-ni-san counting system (usu. directly preceding the item being counted), noun read using its on-yomi, counter for articles, indicates possessive (esp. in place names)]"
@@ -6012,7 +6012,7 @@
 6012,,議,ぎ,[n],"[discussion, deliberation, thought, opinion]"
 6013,,讚,さん,[n],"[a style of Chinese poetry, legend or inscription on a picture]"
 6014,,賂,まいない,[n],[bribe]
-6015,,賜物,たまもの,[n],"[gift, boon, result, fruit]"
+6015,1,賜物,たまもの,[n],"[gift, boon, result, fruit]"
 6016,1,賤,しず,[n],"[lowly person, lowliness, I (used by male entertainers)]"
 6017,1,賤,せん,[n],"[lowly person, lowliness]"
 6018,1,蹴爪,けづめ,[n],"[fetlock (horse, etc.), spur (chicken, etc.), cockspur, dewclaw (dog, etc.)]"
@@ -6038,8 +6038,8 @@
 6038,1,祝い歌,いわいうた,[n],"[festive poem or song, congratulatory form (of waka)]"
 6039,1,顰,ひそみ,[n],"[knitted brows, frown]"
 6040,1,鬢,びん,[n],"[sidelocks, hair at the temples]"
-6041,,野雁,のがん,[n],"[bustard (esp. the great bustard, Otis tarda)]"
-6042,,黍,きび,[n],"[(common) millet (Panicum miliaceium), proso millet]"
+6041,1,野雁,のがん,[n],"[bustard (esp. the great bustard, Otis tarda)]"
+6042,1,黍,きび,[n],"[(common) millet (Panicum miliaceium), proso millet]"
 6043,1,１．５次会,いってんごじかい,[n],[informal wedding ceremony]
 6044,1,ＰＡＣ・３,パック・スリー,[n],"[Patriot advanced capability-3, PAC3 anti-ballistic missile system, PAC3 missile]"
 6045,1,ＰＭ２.５,ピーエムにてんご,[n],"[PM 2.5, particulate matter 2.5, particles smaller than 2.5 micrometers]"
@@ -6504,7 +6504,7 @@
 6504,,涜職,とくしょく,[n],"[corruption, bribery]"
 6505,,道仏,どうぶつ,[n],[Taoism and Buddhism]
 6506,,良吏,りょうり,[n],[good official]
-6507,,暗然,あんぜん,"[adj-t, adv-to]","[dark, gloomy, black, unclear, doleful, discouraged, disappointed, tearful, dispirited]"
+6507,1,暗然,あんぜん,"[adj-t, adv-to]","[dark, gloomy, black, unclear, doleful, discouraged, disappointed, tearful, dispirited]"
 6508,,晏然,あんぜん,"[adv-to, adj-t]","[calm, tranquil]"
 6509,,大宗,たいそう,[n],"[leading figure, foundation]"
 6510,,大葬,たいそう,[n],[imperial funeral]
@@ -7401,7 +7401,7 @@
 7401,,容色,ようしょく,[n],"[looks, features, beauty]"
 7402,,溶食,ようしょく,[n],"[corrosion, dissolution]"
 7403,1,正副,せいふく,[n],"[original and copy, chief and vice-chief]"
-7404,,正服,せいふく,[n],"[uniform, regulation dress]"
+7404,1,正服,せいふく,[n],"[uniform, regulation dress]"
 7405,1,正腹,せいふく,[n],[legitimacy]
 7406,,清福,せいふく,[n],[happiness]
 7407,,整復,せいふく,"[n, vs]",[reposition]
@@ -12384,7 +12384,7 @@
 12384,,良計,りょうけい,[n],[good plan]
 12385,1,決答,けっとう,"[n, vs]","[clear answer, definite answer]"
 12386,1,人才,じんさい,"[n, adj-no]","[capable person, talented person]"
-12387,,靉靆,あいたい,"[adj-t, adv-to]",[trailing clouds]
+12387,1,靉靆,あいたい,"[adj-t, adv-to]",[trailing clouds]
 12388,,文亀,ぶんき,[n],[Bunki era (1501.2.29-1504.2.30)]
 12389,,児孫,じそん,[n],"[children and grandchildren, descendants]"
 12390,,自存,じそん,"[n, vs, adj-no]","[existing of or by itself, self-existence]"
@@ -25338,7 +25338,7 @@
 25338,,お題目,おだいもく,[n],"[Nichiren chant, (an empty) slogan]"
 25339,,お楽しみ,おたのしみ,[n],"[enjoyment, pleasure, diversion, amusement, hobby]"
 25340,,楽しみにする,たのしみにする,"[exp, vs-i]",[to look forward to something]
-25341,,散らし鮨,ちらしずし,[n],[sushi rice in a box or bowl with a variety of ingredients sprinkled on top]
+25341,1,散らし鮨,ちらしずし,[n],[sushi rice in a box or bowl with a variety of ingredients sprinkled on top]
 25342,,散らし書き,ちらしがき,[n],[writing in an irregular hand]
 25343,,代表電話番号,だいひょうでんわばんごう,[n],[switchboard number]
 25344,,代理申請会社,だいりしんせいかいしゃ,[n],[proxy application company]
@@ -29582,7 +29582,7 @@
 29582,1,-,どかん,"[adv, adv-to]",[with a bang]
 29583,,独座,どくざ,"[n, vs]",[sitting alone]
 29584,,-,どしん,"[adv-to, adv]","[plump, with a thud, heavily]"
-29585,,土味,どみ,[n],[local flavouring]
+29585,1,土味,どみ,[n],[local flavouring]
 29586,,度量衡,どりょうこう,[n],[weights and measures]
 29587,,内意,ないい,[n],"[intention, personal opinion]"
 29588,,内衣,ないい,[n],[single-layer absorbent bathrobe (worn during or after a bath)]
