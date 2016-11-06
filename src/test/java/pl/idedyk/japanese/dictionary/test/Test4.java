@@ -1,15 +1,9 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.Map;
+import java.util.List;
 
-import com.atilika.kuromoji.AbstractTokenizer;
-import com.atilika.kuromoji.AbstractTokenizer.Mode;
-import com.atilika.kuromoji.Token;
-import com.atilika.kuromoji.unidic.extended.Tokenizer;
-
-import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
+import com.atilika.kuromoji.ipadic.Token;
+import com.atilika.kuromoji.ipadic.Tokenizer;
 
 public class Test4 {
 
@@ -105,32 +99,48 @@ public class Test4 {
 		//String text = "dziesięć lat";
 		//String text = "お早う御座います";
 		
-		KanaHelper kanaHelper = new KanaHelper();
+		// KanaHelper kanaHelper = new KanaHelper();
 				
-		Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
+		// Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
 		
 		//String text = "北海道医療大学駅"; // hokkaidou iryou daigaku eki
 		
-		String text = "上越国際スキー場前駅"; 
+		// String text = "上越国際スキー場前駅"; 
 		
-		//String text = "小さくて奥ゆかしい日本語ヘルパー";
+		String text = "小さくて奥ゆかしい日本語ヘルパー";
 		
 		//String text = "北朝鮮兵が中国で殺人韓国紙";
 		
 		//String text = "北朝鮮難民救援基金";
-		
-		AbstractTokenizer tokenizer = Tokenizer.builder().mode(Mode.SEARCH).build();
 				
-        for (Token token : tokenizer.tokenize(text)) {
+		Tokenizer tokenizer = new Tokenizer();
+		
+		List<Token> tokenList = tokenizer.tokenize(text);
+		
+        for (Token token : tokenList) {
         	
-        	String surfaceForm = token.getSurfaceForm();
-        	String reading = token.getReading();
+        	System.out.println("S: " + token.getSurface());
+        	System.out.println("B: " + token.getBaseForm());
+        	System.out.println("CF: " + token.getConjugationForm());
+        	System.out.println("CT: " + token.getConjugationType());
+        	System.out.println("PSL1: " + token.getPartOfSpeechLevel1());
+        	System.out.println("PSL2: " + token.getPartOfSpeechLevel2());
+        	System.out.println("PSL3: " + token.getPartOfSpeechLevel3());
+        	System.out.println("PSL4: " + token.getPartOfSpeechLevel4());
+        	System.out.println("PO: " + token.getPosition());
+        	System.out.println("PR: " + token.getPronunciation());
+        	System.out.println("R: " + token.getReading());        	        	
         	
+        	System.out.println("-----\n");
+        	//System.out.println(token.getSurface() + "\t" + token.getAllFeatures());
+        	
+        	/*
         	KanaWord kanaWord = kanaHelper.convertKanaStringIntoKanaWord(reading, kanaCache, false);
         	
         	String romaji = kanaHelper.createRomajiString(kanaWord);
         	
             System.out.println(surfaceForm + "\t" + reading + "\t" + romaji);
+            */
         }
 		
 		/*
