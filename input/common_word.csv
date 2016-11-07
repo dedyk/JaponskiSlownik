@@ -85,7 +85,7 @@
 85,1,唖,あ,[n],"[muteness, speech impairment]"
 86,1,奥旨,おうし,[n],"[deep truth, deep knowledge]"
 87,1,横死,おうし,"[n, vs]","[violent (tragic or accidental) death, dog's death]"
-88,,王師,おうし,[n],"[emperor's teacher, imperial army]"
+88,1,王師,おうし,[n],"[emperor's teacher, imperial army]"
 89,1,押紙,おしがみ,[n],"[paper on which questions and comments are pasted, backing paper, blotting paper]"
 90,1,大鋸,おが,[n],"[large saw, framed pit saw]"
 91,1,燠,おき,[n],"[embers, live charcoal]"
@@ -179,7 +179,7 @@
 179,1,割腔,かっこう,[n],"[blastocoel, blastocoele, segmentation cavity]"
 180,1,活,かつ,"[n, suf]","[living, life, judo art of resuscitation, action, activity]"
 181,1,喝,かつ,"[int, n]","[exclamation used to scold practitioners (in Zen), scolding or threatening with a shout]"
-182,,家兎,かと,[n],"[domestic rabbit, tame rabbit]"
+182,1,家兎,かと,[n],"[domestic rabbit, tame rabbit]"
 183,1,蚊火,かび,[n],[smoky fire to repel mosquitoes]
 184,1,過振り,かぶり,[n],"[overdraft, overdraught]"
 185,1,被り,かぶり,[n],"[headdress, crown, covering, fogging (photography), blushing]"
@@ -416,7 +416,7 @@
 416,1,-,そよ,[adv-to],[with a slight (breeze)]
 417,,-,そら,"[int, exp]","[look!, look out!, look at me!, here!, there!, that is]"
 418,1,橇,そり,[n],"[sleigh, sled, sledge]"
-419,,-,それ,[int],[there! (used to call someone's attention to something)]
+419,1,-,それ,[int],[there! (used to call someone's attention to something)]
 420,1,其れと,それと,[conj],"[and then, even so, and]"
 421,,胼胝,たこ,"[n, adj-no]","[callus, callosity, corn]"
 422,1,ただ事,ただごと,[n],[trivial matter]
@@ -709,7 +709,7 @@
 709,1,-,アメリカアリゲーター,[n],[American alligator (Alligator mississippiensis)]
 710,1,-,アメリカサインランゲージ,[n],"[American Sign Language, ASL]"
 711,1,-,ベークトアラスカ,[n],[baked Alaska]
-712,,亜剌比亜,アラビア,"[n, adj-no]",[Arabia]
+712,1,亜剌比亜,アラビア,"[n, adj-no]",[Arabia]
 713,1,-,アラビアコーヒー,[n],[arabica coffee (Coffea arabica)]
 714,1,-,アラビアオリックス,[n],[Arabian oryx (Oryx leucoryx)]
 715,1,-,アラビアガム,[n],[gum arabic]
@@ -814,7 +814,7 @@
 814,1,-,ハイエンド,[adj-f],"[high-end, high end, high level]"
 815,1,-,エンドラン,[n],"[hit-and-run play, end run (American football)]"
 816,,-,バッドエンド,[n],"[bad ending (film, novel)]"
-817,,-,エンドキー,[n],[End key]
+817,1,-,エンドキー,[n],[End key]
 818,1,-,エンドシステム,[n],[end system]
 819,1,-,シングルエンド,[n],[single ended]
 820,,-,ローエンド,[adj-f],"[low end, low level]"
@@ -1387,7 +1387,7 @@
 1387,1,-,リモートプロシージャコール,[n],[remote procedure call (rpc)]
 1388,1,-,ゴミステーション,[n],[garbage collection point]
 1389,1,-,イソプレンゴム,[n],[isoprene rubber]
-1390,,-,ウレタンゴム,[n],[polyurethane rubber]
+1390,1,-,ウレタンゴム,[n],[polyurethane rubber]
 1391,1,-,クロロプレンゴム,[n],[chloroprene rubber]
 1392,1,-,ゴムテープ,[n],"[elastic, elastic band, insulating tape, rubberized tape, rubberised tape]"
 1393,1,-,ゴムライニング,[n],[rubber lining]
@@ -1608,7 +1608,7 @@
 1608,1,-,リンクステート,[n],[link state]
 1609,,-,イスラミックステート,[n],"[Islamic State (of Iraq and the Levant), IS, ISIL]"
 1610,1,-,インターステートハイウエー,[n],[interstate highway]
-1611,,-,シンプルステートメント,[n],[simple statement]
+1611,1,-,シンプルステートメント,[n],[simple statement]
 1612,1,-,ナショナルステートメント,[n],"[statement by the government, national statement]"
 1613,1,-,スピードダウン,"[n, vs]",[slowing down]
 1614,,-,スピードボール,[n],[fastball]
@@ -1649,7 +1649,7 @@
 1649,1,-,マージナルスポーツ,[n],[marginal sports]
 1650,1,-,スポーツシャツ,[n],"[sports shirt, sport shirt]"
 1651,1,-,スポーツバッグ,[n],[sports bag]
-1652,,-,スポーツジム,[n],"[sports gym, gymnasium]"
+1652,1,-,スポーツジム,[n],"[sports gym, gymnasium]"
 1653,1,スマトラ虎,スマトラとら,[n],[Sumatran tiger (Panthera tigris sumatrae)]
 1654,1,-,スラブ,[n],"[Slav, Slavic, slab]"
 1655,1,-,スラヴ,[n],"[Slav, Slavic]"
@@ -2061,7 +2061,7 @@
 2061,1,-,ニュースチャンネル,[n],[news channel]
 2062,,-,ニュースサイト,[n],[news site]
 2063,,-,ニューススタンド,[n],[newsstand]
-2064,,-,ネットニュース,[n],"[net news, network news, Usenet]"
+2064,1,-,ネットニュース,[n],"[net news, network news, Usenet]"
 2065,1,-,メールニュース,[n],[email newsletter]
 2066,1,-,ニュースクライアント,[n],[news client (software)]
 2067,1,-,ニュースショー,[n],[news show]
@@ -2248,7 +2248,7 @@
 2248,1,-,フロリダバス,[n],[Florida black bass (Micropterus salmoides)]
 2249,1,-,ワンコインバス,[n],[100-yen bus]
 2250,1,-,バスガール,[n],"[female bus driver, female bus conductor]"
-2251,,-,ベビーバス,[n],"[baby bath, baby bathtub]"
+2251,1,-,ベビーバス,[n],"[baby bath, baby bathtub]"
 2252,,-,バスマット,[n],[bath mat]
 2253,,-,ワンマンバス,[n],[one-man bus]
 2254,1,-,アップルデスクトップバス,[n],[Apple Desktop Bus]
@@ -2308,7 +2308,7 @@
 2308,1,-,パスボール,[n],[passed ball]
 2309,1,-,ショートパス,[n],[short pass (soccer)]
 2310,1,-,シーズンパス,[n],[season pass]
-2311,,-,クリッピングパス,[n],[clipping path]
+2311,1,-,クリッピングパス,[n],[clipping path]
 2312,1,-,サーチパス,[n],[search path]
 2313,1,-,バーチャルパス,[n],[virtual path]
 2314,1,-,パスオーバーヘッド,[n],[path overhead]
@@ -2364,7 +2364,7 @@
 2364,,-,ビジネスガール,[n],[female office worker]
 2365,,-,ビジネスクラス,[n],[business class]
 2366,1,-,ビジネスゲーム,[n],[business game]
-2367,,-,ビジネスコンサルタント,[n],[business consultant]
+2367,1,-,ビジネスコンサルタント,[n],[business consultant]
 2368,,-,ビジネスサーベイ,[n],[business survey]
 2369,1,-,ビジネススクール,[n],[business school]
 2370,1,-,ビジネスパートナー,[n],[business partner]
@@ -2584,7 +2584,7 @@
 2584,1,-,インディアンブルー,[n],[Indian blue]
 2585,1,-,マリッジブルー,[n],[pre-nuptial doubts]
 2586,1,-,ウェディングブルー,[n],[pre-nuptial doubts]
-2587,,-,エンゲージブルー,[n],[engagement doubts]
+2587,1,-,エンゲージブルー,[n],[engagement doubts]
 2588,1,-,セルリアンブルー,[n],[cerulean blue]
 2589,1,-,ベビーブルー,[n],[baby blue]
 2590,,-,ブルーノート,[n],[blue note]
@@ -2742,7 +2742,7 @@
 2742,,-,タグマッチ,[n],[tag match]
 2743,1,-,テストマッチ,[n],[test match]
 2744,1,-,マナ,[n],"[manna, mana]"
-2745,,-,テーブルマナー,[n],[table manners]
+2745,1,-,テーブルマナー,[n],[table manners]
 2746,1,-,マルシップ,[n],"[Maru-ship, Japanese ship (because Japanese ship names often end in Maru)]"
 2747,1,マン・ホイットニーのＵ検定,マン・ホイットニーのユーけんてい,[n],[Mann-Whitney U test]
 2748,1,-,アイディアマン,[n],"[idea man, ideas man, person of ideas]"
@@ -2854,13 +2854,13 @@
 2854,1,-,ラジオブイ,[n],[radio buoy]
 2855,1,-,ラテ,[n],"[latte, caffè latte, radio and television]"
 2856,1,-,ラッテ,[n],"[latte, caffè latte, rat (esp. laboratory or pet)]"
-2857,,-,カフェラテ,[n],"[cafe latte, latte]"
+2857,1,-,カフェラテ,[n],"[cafe latte, latte]"
 2858,1,-,ラテンリズム,[n],[Latin-American rhythm]
 2859,1,-,リアウインドー,[n],[rear window]
 2860,,-,リアエンジン,[n],[rear engine]
 2861,1,-,リアシート,[n],[rear seat]
 2862,1,-,リアドライブ,[n],[rear drive]
-2863,,-,リアパネル,[n],[back panel]
+2863,1,-,リアパネル,[n],[back panel]
 2864,1,-,リアサスペンション,[n],[rear suspension]
 2865,,-,リノタイル,[n],[lino tile]
 2866,,-,リバー,[n],"[liver, river]"
@@ -2895,7 +2895,7 @@
 2895,1,-,レモンイエロー,[n],[lemon yellow]
 2896,1,-,レモンスカッシュ,[n],[lemon squash]
 2897,,-,レモンティー,[n],[lemon tea]
-2898,,-,レモンジュース,[n],[lemon juice]
+2898,1,-,レモンジュース,[n],[lemon juice]
 2899,,-,レモンソール,[n],[lemon sole (Microstomus kitt)]
 2900,1,-,レモンバター,[n],[lemon butter]
 2901,1,-,レモンピール,[n],[lemon peel]
@@ -3551,7 +3551,7 @@
 3551,1,有価,ゆうか,"[n, adj-no]","[valuable (object), negotiable (instrument)]"
 3552,,有意,ゆうい,"[adj-na, n, adj-no]",[significance]
 3553,,有識,ゆうしき,[n],"[well-informed, learned]"
-3554,,服す,ふくす,[v5s],"[to obey, to submit, to defer, to yield, to abide, to serve (e.g. in the army, or a sentence in jail (gaol)), to observe (e.g. mourning), to drink (tea, medicine, etc.)]"
+3554,1,服す,ふくす,[v5s],"[to obey, to submit, to defer, to yield, to abide, to serve (e.g. in the army, or a sentence in jail (gaol)), to observe (e.g. mourning), to drink (tea, medicine, etc.)]"
 3555,,朝一,あさいち,[n-t],[first thing in the morning]
 3556,1,朝寝,あさね,"[n, vs]",[sleeping late in the morning]
 3557,1,期成,きせい,[n],"[realization of an objective, realisation of an objective]"
@@ -3832,7 +3832,7 @@
 3832,1,育毛,いくもう,"[n, vs]","[hair restoration, new hair growth]"
 3833,1,背泳,はいえい,[n],[backstroke]
 3834,,胡麻,ごま,[n],[sesame (seeds)]
-3835,,能書,のうしょ,[n],"[excellent calligraphy, calligraphy]"
+3835,1,能書,のうしょ,[n],"[excellent calligraphy, calligraphy]"
 3836,1,脱穀,だっこく,"[n, vs]",[threshing (e.g. rice)]
 3837,1,脱脂,だっし,"[n, vs]",[removal of fat]
 3838,,腫れ,はれ,[n],"[swelling, boil]"
@@ -4097,7 +4097,7 @@
 4097,,花売り,はなうり,[n],[flower vendor]
 4098,,哀傷歌,あいしょうか,[n],"[lament, elegy, dirge, funeral song]"
 4099,1,足が早い,あしがはやい,"[exp, adj-i]","[to be fast at walking and running, to be quick to spoil (of foodstuffs)]"
-4100,,安全剃刀,あんぜんかみそり,[n],[safety razor]
+4100,1,安全剃刀,あんぜんかみそり,[n],[safety razor]
 4101,1,医院長,いいんちょう,[n],[head doctor]
 4102,1,一周期,いっしゅうき,[n],[period]
 4103,,医療品,いりょうひん,[n],[medical supplies]
@@ -4665,7 +4665,7 @@
 4665,1,-,インフォメーションプロセッシング,[n],[information processing]
 4666,1,-,インフォメーションプロバイダー,[n],[information provider]
 4667,1,-,インフォメーションユーティリティー,[n],[information utility]
-4668,,-,インフォメーションリテラシー,[n],[information literacy]
+4668,1,-,インフォメーションリテラシー,[n],[information literacy]
 4669,1,-,インフォメーションリトリーバル,[n],[information retrieval]
 4670,1,-,インフォメーションレボリューション,[n],[information revolution]
 4671,1,-,インフォメーションテクノロジー,[n],"[information technology, IT]"
@@ -5000,7 +5000,7 @@
 5000,1,-,コンビネーションブロー,[n],[combination blow]
 5001,1,-,アナログコンピューター,[n],[analog computer]
 5002,1,-,オフィスコンピューター,[n],[office computer]
-5003,,-,コンピューターアート,[n],[computer art]
+5003,1,-,コンピューターアート,[n],[computer art]
 5004,,-,コンピュータウイルス,[n],[computer virus]
 5005,1,-,コンピュータソフトウェア,[n],[computer software]
 5006,1,-,コンピュータマニア,[n],[hacker]
@@ -5523,7 +5523,7 @@
 5523,1,-,スノーフェスティバル,[n],[snow festival]
 5524,1,-,レスビアンフェミニズム,[n],[lesbian feminism]
 5525,,-,ポストモダンフェミニズム,[n],[postmodern feminism]
-5526,,-,リベラルフェミニズム,[n],[liberal feminism]
+5526,1,-,リベラルフェミニズム,[n],[liberal feminism]
 5527,1,-,ラジカルフェミニズム,[n],[radical feminism]
 5528,1,-,フォーチュンクッキー,[n],[fortune cookie]
 5529,1,-,ファイルフォーマット,[n],[file format]
@@ -5600,7 +5600,7 @@
 5600,1,-,プロダクションシステム,[n],[production system]
 5601,1,-,プロダクションルール,[n],[production rule]
 5602,1,-,クリーナープロダクション,[n],[cleaner production]
-5603,,-,プロデューサーシステム,[n],[producer system]
+5603,1,-,プロデューサーシステム,[n],[producer system]
 5604,1,-,テーマプロモーション,[n],[Theme promotion]
 5605,,-,セールスプロモーション,[n],[sales promotion]
 5606,1,-,デザインプロモーター,[n],[design promoter]
@@ -5643,7 +5643,7 @@
 5643,1,-,コンストラクションマネージメント,[n],[construction management]
 5644,1,-,フロアマネージャー,[n],[floor manager]
 5645,1,-,プロダクトマネージャー,[n],[product manager]
-5646,,-,プレーイングマネージャー,[n],[playing manager (player-manager of a sports team)]
+5646,1,-,プレーイングマネージャー,[n],[playing manager (player-manager of a sports team)]
 5647,1,-,ランマネージャー,[n],[LAN Manager]
 5648,,-,ファンドマネージャー,[n],[fund manager]
 5649,,-,マルチメディアタイトル,[n],[multimedia title]
@@ -6550,7 +6550,7 @@
 6550,,禁漁,きんりょう,[n],[prohibition of fishing]
 6551,1,新来,しんらい,"[n, adj-no]",[newcomer]
 6552,,啓く,ひらく,[v5k],"[to enlighten, to edify]"
-6553,,披く,ひらく,"[v5k, vt]","[to open, to unfold, to spread out]"
+6553,1,披く,ひらく,"[v5k, vt]","[to open, to unfold, to spread out]"
 6554,,平句,ひらく,[n],[ordinary verse of a renga (i.e. not the first three verses or the last verse)]
 6555,,先考,せんこう,[n],[one's late father]
 6556,,旋光,せんこう,[n],[polarimetric]
@@ -24231,7 +24231,7 @@
 24231,1,-,ペル,[n],[pel]
 24232,,-,ペンキローラー,[n],[paint roller]
 24233,,-,フンボルトペンギン,[n],[Humboldt penguin (Spheniscus humboldti)]
-24234,,-,マゼランペンギン,[n],[Magellanic penguin (Spheniscus magellanicus)]
+24234,1,-,マゼランペンギン,[n],[Magellanic penguin (Spheniscus magellanicus)]
 24235,,-,マカロニペンギン,[n],[macaroni penguin (Eudyptes chrysolophus)]
 24236,,-,シュレーターペンギン,[n],[erect-crested penguin (Eudyptes sclateri)]
 24237,1,-,ロイヤルペンギン,[n],[royal penguin (Eudyptes schlegeli)]
@@ -27262,7 +27262,7 @@
 27262,,封戸,ふこ,[n],"[household of which half of the taxes were given to a designated person (ritsuryo system), vassal household allotted to a courtier]"
 27263,,房毛,ふさげ,[n],"[lock, tuft, tassel, feathers (i.e. fringe of hair on the legs), feathering, penicil]"
 27264,,文化省,ぶんかしょう,[n],[Ministry of Culture (e.g. in China)]
-27265,,兵端,へいたん,[n],"[hostilities, beginning of hostilities]"
+27265,1,兵端,へいたん,[n],"[hostilities, beginning of hostilities]"
 27266,,兵站,へいたん,[n],"[supply train, communications]"
 27267,1,平淡,へいたん,"[adj-na, n]","[simple, quiet]"
 27268,,閉端,へいたん,[n],"[closed end, bocca chiusa, end of wind instrument]"
@@ -32817,7 +32817,7 @@
 32817,,工芸品,こうげいひん,[n],"[handicraft, industrial art object]"
 32818,,巨万,きょまん,[n],"[huge fortune, millions]"
 32819,,巨大地震,きょだいじしん,[n],"[giant earthquake, massive earthquake]"
-32820,,差別表現,さべつひょうげん,[n],"[word, phrase, or image that is perceived as showing or suggesting discrimination or prejudice against a person or group of people]"
+32820,1,差別表現,さべつひょうげん,[n],"[word, phrase, or image that is perceived as showing or suggesting discrimination or prejudice against a person or group of people]"
 32821,1,已然形,いぜんけい,[n],[realis form (e.g. has happened)]
 32822,,帆柱,ほばしら,[n],[mast]
 32823,1,希釈,きしゃく,"[n, vs]",[dilution]
@@ -35225,7 +35225,7 @@
 35225,,人界,にんがい,[n],[spiritual realm of humanity]
 35226,,人足,にんそく,[n],"[coolie, laborer, labourer, carrier]"
 35227,1,仏心,ほとけごころ,[n],"[mercy, merciful heart, charity]"
-35228,,徒心,あだごころ,[n],"[cheating heart, fleeting heart, fickle heart]"
+35228,1,徒心,あだごころ,[n],"[cheating heart, fleeting heart, fickle heart]"
 35229,1,替え紋,かえもん,[n],"[informal family crest, auxiliary crest]"
 35230,,いつ何どき,いつなんどき,[adv],"[at any time, every moment]"
 35231,,作り字,つくりじ,[n],"[native Japanese kanji (esp. used during the Edo period), made-up kanji, Chinese character of one's own creation, creating a character with a group of people]"
