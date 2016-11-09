@@ -23,7 +23,7 @@
 23,,-,あや,[int],"[wow, whoa]"
 24,1,𩺊,あら,[n],[saw-edged perch (Niphon spinosus)]
 25,1,在り,あり,"[adj-no, n, adj-na, vr, vi]","[existing (at the present moment), alright, acceptable, passable, to be (usu. of inanimate objects), to have]"
-26,,在りし,ありし,[adj-pn],"[prior, past, old, before having died]"
+26,1,在りし,ありし,[adj-pn],"[prior, past, old, before having died]"
 27,1,有り得,ありう,"[v2a-s, vi]","[to be possible, to be likely, to be probable]"
 28,1,ある意味,あるいみ,[exp],"[in a sense, in some way, to an extent]"
 29,1,安固,あんこ,"[adj-na, n]","[secure, solid, stable]"
@@ -138,7 +138,7 @@
 138,1,水夫,すいふ,[n],"[sailor, seaman]"
 139,1,鹿子,かこ,[n],"[deer, fawn]"
 140,1,か具,かこ,[n],[metal buckle]
-141,,下行,かこう,"[adj-na, n]",[descending]
+141,1,下行,かこう,"[adj-na, n]",[descending]
 142,1,佳肴,かこう,[n],"[delicacy, rare treat, good-eating fish]"
 143,,歌稿,かこう,[n],[manuscript of poem]
 144,1,河港,かこう,[n],[river port]
@@ -252,7 +252,7 @@
 252,1,砕け,くだけ,[n],[familiar (informal) (speech style)]
 253,1,砕けた,くだけた,[adj-f],"[easy (e.g. explanation, description), plain, familiar, informal (e.g. greeting, expression), friendly, affable (e.g. person)]"
 254,1,競,くら,[suf],"[contest, match]"
-255,,庫裏,くり,[n],"[temple kitchen, monastery kitchen, quarters of a head priest (and his family)]"
+255,1,庫裏,くり,[n],"[temple kitchen, monastery kitchen, quarters of a head priest (and his family)]"
 256,1,刳り,くり,[n],"[hollow, scoop]"
 257,1,呉る,くる,"[v2r-s, vt]","[to give, to let one have, to do for one]"
 258,1,家司,けいし,[n],"[steward in charge of the affairs of nobles of the third rank and higher (from the middle of the Heian period), administrative position (Kamakura and Muromachi periods)]"
@@ -796,7 +796,7 @@
 796,1,Ｘ,エックス,[n],"[X, x, unknown quantity, an unknown]"
 797,1,-,パワーエリート,[n],[power elite]
 798,1,Ｌ,エル,[n],"[L, l]"
-799,,-,エルサイズ,[n],"[L size, large size]"
+799,1,-,エルサイズ,[n],"[L size, large size]"
 800,1,-,エログロ,"[adj-na, n, adj-no]",[erotic and grotesque]
 801,1,-,エロアニメ,[n],"[erotic animation, pornographic animation, animation containing explicit sexual content]"
 802,,-,エロゲーム,[n],[erotic video game]
@@ -892,7 +892,7 @@
 892,1,-,オープンフレーム,[n],[open frame]
 893,1,-,オープンプランニング,[n],[open planning]
 894,1,-,オープンマーケット,[n],[open market]
-895,,-,オープンマリッジ,[n],[open marriage]
+895,1,-,オープンマリッジ,[n],[open marriage]
 896,1,-,オープンユニバーシティー,[n],[Open University]
 897,1,-,ニューオープン,[n],[newly opened (e.g. of shop)]
 898,,-,オープンソース,[n],"[open source (software, etc.)]"
@@ -1273,7 +1273,7 @@
 1273,1,-,グローバルサプライチェーン,[n],[global supply-chain]
 1274,1,-,グローバルスタンダード,[n],[global standards]
 1275,,-,グローバルデフレ,[n],[global deflation]
-1276,,-,グローバルアドレス,[n],[global address]
+1276,1,-,グローバルアドレス,[n],[global address]
 1277,,-,グローバルグループ,[n],[global group]
 1278,,-,グローバルデータ,[n],[global data]
 1279,1,-,グローバルトランザクション,[n],[global transaction]
@@ -1400,7 +1400,7 @@
 1400,1,-,パラゴム,[n],[Para rubber]
 1401,1,-,トラガカントゴム,[n],[tragacanth gum]
 1402,1,-,ゴムホース,[n],[rubber hose]
-1403,,-,ゴムマスク,[n],[rubber mask]
+1403,1,-,ゴムマスク,[n],[rubber mask]
 1404,1,-,ゴムボート,[n],"[rubber raft, inflatable boat]"
 1405,1,-,ヘアゴム,[n],"[hair elastic, hair tie, hair band, rubber band]"
 1406,1,-,スチレンブタジエンゴム,[n],"[styrene-butadiene rubber, SBR]"
@@ -1476,7 +1476,7 @@
 1476,,-,コロケーションサービス,[n],[co-location service]
 1477,1,-,サービスアスペクト,[n],[service aspect]
 1478,1,-,サービスエンドポイント,[n],[service end point]
-1479,,-,サービスクラス,[n],[service class]
+1479,1,-,サービスクラス,[n],[service class]
 1480,,-,サービスグレード,[n],[service grade]
 1481,,-,サービスコンセント,[n],[service outlet]
 1482,1,-,サービスセンター,[n],[service center]
@@ -1488,7 +1488,7 @@
 1488,,-,サービスルーチン,[n],"[utility routine, service routine]"
 1489,1,-,ソケットサービス,[n],[socket services]
 1490,1,-,ダイヤルインサービス,[n],[dial-in service]
-1491,,-,データグラムサービス,[n],[datagram service]
+1491,1,-,データグラムサービス,[n],[datagram service]
 1492,1,-,ディレクトリサービス,[n],[directory service]
 1493,1,-,デビットカードサービス,[n],[debit card service]
 1494,1,-,ネームサービス,[n],[name service]
@@ -1782,7 +1782,7 @@
 1782,1,-,コールドタイプ,[n],[cold type]
 1783,1,-,ホットタイプ,[n],[hot type]
 1784,1,-,ポーションタイプ,"[n, adj-no]","[single-serving container (coffee capsule, jam, tea, etc.)]"
-1785,,-,ハンディタイプ,[adj-no],"[compact, pocket]"
+1785,1,-,ハンディタイプ,[adj-no],"[compact, pocket]"
 1786,1,-,フルフットタイプ,[n],[full foot type scuba fin]
 1787,1,-,ペーパータオル,[n],[paper towel]
 1788,1,-,フェイスタオル,[n],[face towel]
@@ -2156,7 +2156,7 @@
 2156,1,-,シェークハンド,[n],[shake hands]
 2157,,-,ハンドローション,[n],[hand lotion]
 2158,1,-,マジックハンド,[n],"[magic hand, manipulator]"
-2159,,-,ハンドキャリアー,[n],[employee of a messenger or delivery service]
+2159,1,-,ハンドキャリアー,[n],[employee of a messenger or delivery service]
 2160,,-,ハンドクリーム,[n],[hand cream]
 2161,1,-,スライハンド,[n],[sleight of hand (e.g. in magic tricks)]
 2162,,-,グラバーハンド,[n],[grabber hand]
@@ -2896,7 +2896,7 @@
 2896,1,-,レモンスカッシュ,[n],[lemon squash]
 2897,,-,レモンティー,[n],[lemon tea]
 2898,1,-,レモンジュース,[n],[lemon juice]
-2899,,-,レモンソール,[n],[lemon sole (Microstomus kitt)]
+2899,1,-,レモンソール,[n],[lemon sole (Microstomus kitt)]
 2900,1,-,レモンバター,[n],[lemon butter]
 2901,1,-,レモンピール,[n],[lemon peel]
 2902,1,-,レモンバーム,[n],"[lemon balm (Melissa officinalis), sweet balm]"
@@ -2936,7 +2936,7 @@
 2936,1,-,スーパーロー,[exp],[super-low (description of a small truck with a low tray)]
 2937,1,-,フラットロー,[n],[small truck]
 2938,1,-,ローキック,[n],[low kick (e.g. in fighting)]
-2939,,-,ローテーブル,[n],"[low table, table with very short legs]"
+2939,1,-,ローテーブル,[n],"[low table, table with very short legs]"
 2940,1,-,コモンロー,[n],"[common law, Anglo-American law]"
 2941,1,-,ローデバイス,[n],[raw device]
 2942,,-,ローバッテリ,[n],[low battery]
@@ -3812,7 +3812,7 @@
 3812,1,縺れ,もつれ,[n],"[tangle, entanglement, snarl, complication, difficulties, trouble, troubles, snag]"
 3813,1,繁華,はんか,"[adj-na, n]","[bustle, prosperity]"
 3814,1,繰り下げ,くりさげ,[n],"[postponement, deferment, moving down]"
-3815,,罪障,ざいしょう,[n],[sins (which prevent entry into bliss)]
+3815,1,罪障,ざいしょう,[n],[sins (which prevent entry into bliss)]
 3816,1,置き土,おきつち,[n],[earth taken from elsewhere and placed atop]
 3817,1,置き換え,おきかえ,[n],"[replacement, substitute, displacement, transposition, reset]"
 3818,1,羅針,らしん,[n],[compass needle]
@@ -4021,7 +4021,7 @@
 4021,1,集め,あつめ,"[n, suf]","[collecting, assembling]"
 4022,1,難し,かたし,[adj-ku],"[difficult, hard]"
 4023,1,雪加,せっか,[n],"[zitting cisticola (Cisticola juncidis), fan-tailed warbler]"
-4024,,雪景,せっけい,[n],"[snowy scenery, snowscape]"
+4024,1,雪景,せっけい,[n],"[snowy scenery, snowscape]"
 4025,1,雪見,ゆきみ,[n],[snow viewing]
 4026,1,雪消,ゆきげ,[n],"[snow melting, water from melting snow]"
 4027,1,雪風,ゆきかぜ,[n],"[snow-bearing wind, wind bringing snow]"
@@ -4247,7 +4247,7 @@
 4247,,出展社,しゅってんしゃ,[n],"[exhibiting company (at a trade show, etc.)]"
 4248,,出版部,しゅっぱんぶ,[n],[publishing department]
 4249,,出定,しゅつじょう,"[n, vs]",[leaving a state of intense concentration]
-4250,,出猟,しゅつりょう,"[n, vs]",[going hunting]
+4250,1,出猟,しゅつりょう,"[n, vs]",[going hunting]
 4251,1,私有財産,しゆうざいさん,[n],[private property]
 4252,1,照会状,しょうかいじょう,[n],"[reference letter, letter of inquiry, letter of enquiry]"
 4253,1,渉外部,しょうがいぶ,[n],"[liaison department, public relations department]"
@@ -4277,7 +4277,7 @@
 4277,1,商状,しょうじょう,[n],[market conditions]
 4278,1,霄壌,しょうじょう,[n],[heaven and earth]
 4279,1,猩々,しょうじょう,[n],"[orangutan, heavy drinker]"
-4280,,小乗,しょうじょう,[n],[Hinayana (the Lesser Vehicle)]
+4280,1,小乗,しょうじょう,[n],[Hinayana (the Lesser Vehicle)]
 4281,1,蕭条,しょうじょう,"[adj-t, adv-to]","[dreary, bleak, lonely]"
 4282,1,正定,しょうじょう,[n],[right concentration]
 4283,,商船旗,しょうせんき,[n],[merchant flag]
@@ -4789,7 +4789,7 @@
 4789,1,-,トナーカートリッジ,[n],[toner cartridge]
 4790,1,-,リボンカートリッジ,[n],[ribbon cartridge]
 4791,1,-,カートリッジテープドライブ,[n],[cartridge tape drive]
-4792,,-,フレキシブルディスクカートリッジ,[n],[flexible disk cartridge]
+4792,1,-,フレキシブルディスクカートリッジ,[n],[flexible disk cartridge]
 4793,1,-,キャスチング,[n],[casting]
 4794,1,-,キャスチングリール,[n],[casting reel]
 4795,1,-,チルドキャスチング,[n],[chilled casting]
@@ -4861,7 +4861,7 @@
 4861,,-,エスニッククレンジング,[n],[ethnic cleansing]
 4862,1,-,グラフィックアート,[n],[graphic arts]
 4863,1,-,グラフィックイコライザー,[n],"[graphic equalizer, graphic equaliser]"
-4864,,-,グラフィックディスプレー,[n],"[graphic display, graphics display]"
+4864,1,-,グラフィックディスプレー,[n],"[graphic display, graphics display]"
 4865,1,-,グラフィックデザイナー,[n],[graphic designer]
 4866,1,-,グラフィックデザイン,[n],[graphic design]
 4867,1,-,アダルトグラフィック,[n],[glossy sex magazine]
@@ -5035,7 +5035,7 @@
 5035,,-,オンラインコンピュータシステム,[n],[online computer system]
 5036,1,-,コンピュータグラフィクスインタフェース,[n],"[Computer Graphics Interface, CGI]"
 5037,1,-,シングルボードコンピュータ,[n],[single-board computer]
-5038,,-,コンピューターアニメ,[n],[computer animation]
+5038,1,-,コンピューターアニメ,[n],[computer animation]
 5039,1,-,コンピュータートモグラフィー,[n],[computer tomography]
 5040,1,-,コンピューターマインド,[n],[computer mind]
 5041,,-,コンピューターユーティリティー,[n],[computer utility]
@@ -5089,10 +5089,10 @@
 5089,1,-,マネジメントシミュレーション,[n],[management simulation]
 5090,1,-,シミュレーションゲーム,[n],[simulation game]
 5091,,-,フライトシミュレータ,[n],[flight simulator]
-5092,,-,シューティング,[n],[shooting]
+5092,1,-,シューティング,[n],[shooting]
 5093,1,-,シューティングスクリプト,[n],[shooting script]
 5094,1,-,シューティングゲーム,[n],[shooting game]
-5095,,-,シューティングスター,[n],[shooting star]
+5095,1,-,シューティングスター,[n],[shooting star]
 5096,1,-,カタログショッピング,[n],"[catalog shopping, catalogue shopping]"
 5097,1,-,ショッピングカート,[n],[shopping cart]
 5098,1,-,ショッピングバッグ,[n],[shopping bag]
@@ -5144,7 +5144,7 @@
 5144,1,-,フィギュアスケーティング,[n],[figure skating]
 5145,1,-,ペアスケーティング,[n],[pair skating]
 5146,1,-,フードスタイリスト,[n],[food stylist]
-5147,,-,スタンダードナンバー,[n],[standard number]
+5147,1,-,スタンダードナンバー,[n],[standard number]
 5148,1,-,スタンダードバージョン,[n],[standard version]
 5149,1,-,スタンダードモード,[n],[standard mode]
 5150,1,-,ダブルスタンダード,[n],[double standard]
@@ -5827,7 +5827,7 @@
 5827,1,罫,けい,[n],"[line, rule]"
 5828,,偈,げ,[n],[gatha (poetic verse of a scripture)]
 5829,1,濃,こ,[pref],"[dark, thick]"
-5830,,胡,こ,[n],[barbarian tribes surrounding ancient China]
+5830,1,胡,こ,[n],[barbarian tribes surrounding ancient China]
 5831,1,仔,こ,"[n, n-suf]",[young (animal)]
 5832,1,誤,ご,"[n, n-pref]","[mistake, error]"
 5833,1,-,ざあ,[exp],"[if it is not ..., if it does not ...]"
@@ -6010,7 +6010,7 @@
 6010,1,諱,いみな,[n],"[real name (of a deceased person or a noble), posthumous name]"
 6011,1,諱,ただのみな,[n],[real name (of a deceased person or a noble)]
 6012,1,議,ぎ,[n],"[discussion, deliberation, thought, opinion]"
-6013,,讚,さん,[n],"[a style of Chinese poetry, legend or inscription on a picture]"
+6013,1,讚,さん,[n],"[a style of Chinese poetry, legend or inscription on a picture]"
 6014,,賂,まいない,[n],[bribe]
 6015,1,賜物,たまもの,[n],"[gift, boon, result, fruit]"
 6016,1,賤,しず,[n],"[lowly person, lowliness, I (used by male entertainers)]"
@@ -11497,7 +11497,7 @@
 11497,,閉場,へいじょう,"[n, vs]",[closing of a place]
 11498,,石匕,せきひ,[n],"[stone knife (Jomon-period tool, shaped like a rice spoon)]"
 11499,,所労,しょろう,[n],"[illness, fatigue]"
-11500,,早生児,そうせいじ,[n],[premature baby]
+11500,1,早生児,そうせいじ,[n],[premature baby]
 11501,,野鶏,やけい,[n],[fowl]
 11502,,禁猟,きんりょう,[n],[No Hunting!]
 11503,,金龍,きんりゅう,[n],[golden dragon]
@@ -18999,7 +18999,7 @@
 18999,,-,アドモード,[n],[add mode]
 19000,,-,スポットアド,[n],[spot ad]
 19001,,-,アドイン,[n],[add-in]
-19002,,-,コンテンツアドバイザ,[n],[content advisor]
+19002,1,-,コンテンツアドバイザ,[n],[content advisor]
 19003,1,-,アドービ,[n],"[adobe, Adobe (company)]"
 19004,,-,ウェブアドレス,[n],[Web address]
 19005,,-,メールアドレス,[n],[email address]
@@ -28936,7 +28936,7 @@
 28936,,所得者,しょとくしゃ,[n],[income earner]
 28937,,しようも無い,しようもない,"[exp, adj-i]","[useless, stupid, good-for-nothing, having no way to do ...]"
 28938,,尻抜け,しりぬけ,[n],"[forgetfulness, leaving things unfinished]"
-28939,,四隣,しりん,[n],"[whole neighborhood, whole neighbourhood, surrounding countries]"
+28939,1,四隣,しりん,[n],"[whole neighborhood, whole neighbourhood, surrounding countries]"
 28940,,白蝶,しろちょう,[n],[any butterfly of family Pieridae (incl. the white butterflies and the sulfur butterflies)]
 28941,,しわ加工,しわかこう,[n],"[crease effect (textiles), crease process, wrinkle effect]"
 28942,,新案,しんあん,[n],"[new idea or design, novelty]"
@@ -30566,7 +30566,7 @@
 30566,,-,バリオンステッチ,[n],[bullion stitch]
 30567,,-,ステム,[n],"[stem (of a plant), stem (bicycle part), axle, shaft]"
 30568,,-,ステラ,[n],[stela]
-30569,,-,ステロール,[n],[sterol]
+30569,1,-,ステロール,[n],[sterol]
 30570,,-,ストラクチャ,[n],[structure]
 30571,,-,ストラップ,[n],"[strap (often decorative for key-holder, mobile phones, etc.)]"
 30572,,-,ストリーム,[n],[stream]
@@ -34255,7 +34255,7 @@
 34255,,-,アドバイザリー,"[n, adj-no]",[advisory]
 34256,,-,アドミッション,[n],[admission]
 34257,,-,アドミニストレータ,[n],[administrator]
-34258,,-,アドレシング,[n],[addressing]
+34258,1,-,アドレシング,[n],[addressing]
 34259,,-,アドレッシング,[n],[addressing]
 34260,,-,アナフィラキシー,[n],[anaphylaxis]
 34261,,-,アニュアル,"[n, adj-f]",[annual]
