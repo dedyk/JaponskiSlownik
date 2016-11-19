@@ -3,9 +3,12 @@ package pl.idedyk.japanese.dictionary.tools.wordgenerator;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -58,6 +61,7 @@ import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 
 public class WordGenerator {
 	
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws Exception {
 				
 		String operationString = null;
@@ -1383,7 +1387,7 @@ public class WordGenerator {
 				IndexReader reader = DirectoryReader.open(luceneIndex);
 
 				final IndexSearcher searcher = new IndexSearcher(reader);
-				
+								
 				// generowanie slow
 				System.out.println("Generowanie słów...");
 												
@@ -1526,9 +1530,29 @@ public class WordGenerator {
 				} else {					
 					System.out.println("Brak pliku: " + customFile);
 					
-					Thread.sleep(3000);
-					
+					Thread.sleep(3000);					
 				}
+				
+				// wczytanie pliku z cache'em juz sprawdzonych prefiksow
+				final File prefixCacheFile = new File("cache/prefix_word_list.cache");
+				
+				Set<String> prefixCacheMap = null;
+				
+				if (prefixCacheFile.isFile() == true) {
+					
+					FileInputStream prefixCacheFileInputStream = new FileInputStream(prefixCacheFile);
+					
+					ObjectInputStream objectInputStream = new ObjectInputStream(prefixCacheFileInputStream);
+					
+					prefixCacheMap = (Set<String>) objectInputStream.readObject();
+					
+					objectInputStream.close();
+					
+				} else {
+					prefixCacheMap = new TreeSet<>();
+				}
+				
+				final Set<String> prefixCacheMap2 = prefixCacheMap;
 				
 				//////
 				
@@ -1564,6 +1588,17 @@ public class WordGenerator {
 								currentPrefixCounter.incrementAndGet();
 								
 								//
+								
+								// sprawdzamy, czy sprawdzalismy juz ten prefiks wczesniej
+								synchronized (prefixCacheMap2) {
+									
+									if (prefixCacheMap2.contains(currentPrefix) == true) {
+										continue;
+										
+									} else {
+										prefixCacheMap2.add(currentPrefix);
+									}
+								}								
 								
 								Query query = Helper.createLuceneDictionaryIndexTermQuery(currentPrefix);
 	
@@ -1652,7 +1687,14 @@ public class WordGenerator {
 				}
 				
 				// zapisywanie slownika
-				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/prefix-word-list.csv");				
+				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/prefix-word-list.csv");	
+				
+				// zapisanie cache
+				ObjectOutputStream cacheObjectOutputStream = new ObjectOutputStream(new FileOutputStream(prefixCacheFile));
+				
+				cacheObjectOutputStream.writeObject(prefixCacheMap2);
+				
+				cacheObjectOutputStream.close();
 				
 				break;
 			}
