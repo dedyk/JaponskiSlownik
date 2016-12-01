@@ -42,7 +42,7 @@
 42,1,-,いけ,[pref],[prefix used to strengthen a derogatory adjective]
 43,1,埋ける,いける,[v1],"[to bury something in the ground, to cover coals with ash, to bank a fire]"
 44,1,伊佐木,いさき,[n],"[chicken grunt (species of fish, Parapristipoma trilineatum), threeline grunt]"
-45,,-,いざ,"[adv, int]","[now, come (now), well]"
+45,1,-,いざ,"[adv, int]","[now, come (now), well]"
 46,1,遺子,いし,[n],[orphan]
 47,,遺址,いし,[n],[(historic) ruins]
 48,1,縊死,いし,"[n, vs]","[suicide by hanging, hanging oneself]"
@@ -124,7 +124,7 @@
 124,1,下衣,したごろも,[n],"[undergarment, underwear, lower garment (e.g. trousers)]"
 125,1,華夷,かい,[n],"[China and foreign countries (from the perspective of China), civilized land and uncivilized land]"
 126,,垣間,かいま,[n],"[chink (e.g. in fence), gap (e.g. in hedge)]"
-127,,呵呵,かか,"[adv, n]",[sound of laughter]
+127,1,呵呵,かか,"[adv, n]",[sound of laughter]
 128,1,花卉,かき,[n],"[flowering plant, flower]"
 129,1,和気,わき,[n],[harmonious atmosphere]
 130,1,歌妓,かぎ,[n],"[woman who earns her living by entertaining with song, dance and playing the shamisen, geisha who sings at parties]"
@@ -757,7 +757,7 @@
 757,1,-,ホールインワン,[n],[hole in one]
 758,,-,ジャストインタイム,[n],"[just-in-time (inventory strategy), JIT]"
 759,1,-,インサーキットエミュレータ,[n],[incircuit emulator]
-760,,-,カスタムプラグイン,[n],[custom plug-in]
+760,1,-,カスタムプラグイン,[n],[custom plug-in]
 761,1,-,ジャストインタイムコンパイラ,[n],[Just In Time Compiler]
 762,1,-,ピクチャーインピクチャー,[n],[picture in picture]
 763,1,-,インストアマーチャンダイジング,[n],[in-store merchandising]
@@ -1118,7 +1118,7 @@
 1118,1,-,ガスヒーポン,[n],[gas heat pump]
 1119,1,-,ガスメーター,[n],[gas meter]
 1120,1,-,マスタードガス,[n],[mustard gas]
-1121,,-,ガスパネル,[n],"[plasma panel, gas panel]"
+1121,1,-,ガスパネル,[n],"[plasma panel, gas panel]"
 1122,1,-,ガスランプ,[n],[gas lamp]
 1123,1,-,ガスマントル,[n],[gas mantle]
 1124,1,-,ガスボイラー,[n],[gas boiler]
@@ -1199,7 +1199,7 @@
 1199,1,-,キャプスロックキー,[n],"[Caps Lock key, caps lock key]"
 1200,1,-,クリアキー,[n],[Clear key]
 1201,,-,クロマキー,[n],[chroma key]
-1202,,-,コマンドキー,[n],[command key]
+1202,1,-,コマンドキー,[n],[command key]
 1203,1,-,コントロールキー,[n],[control key]
 1204,1,-,スペースキー,[n],"[space bar, space key]"
 1205,1,-,ソートキー,[n],[sort key]
@@ -1363,7 +1363,7 @@
 1363,1,-,コールマネー,[n],[call money]
 1364,1,-,コールレート,[n],[call rate]
 1365,1,-,コールローン,[n],[call loan]
-1366,,-,コレクトコール,[n],[collect call]
+1366,1,-,コレクトコール,[n],[collect call]
 1367,1,-,パーソナルコール,[n],[personal call]
 1368,1,-,パーソンコール,[n],[person call]
 1369,,-,プロシジャコール,[n],[procedure call]
@@ -1499,7 +1499,7 @@
 1499,1,-,ホスティングサービス,[n],[hosting service]
 1500,,-,メッセージングサービス,[n],[messaging service]
 1501,1,-,アプリケーションサービス,[n],[application service]
-1502,,-,インターネットサービス,[n],"[Internet service, Internet-based service]"
+1502,1,-,インターネットサービス,[n],"[Internet service, Internet-based service]"
 1503,1,-,ウェブサービス,[n],"[web service, web services]"
 1504,1,-,サービスブレーク,[n],[service break]
 1505,1,-,サービスコート,[n],[service court]
@@ -1574,7 +1574,7 @@
 1574,1,-,ジャワ,[n],"[Java (Indonesian island), Java coffee]"
 1575,1,-,ジャワマングース,[n],[small Asian mongoose (Herpestes javanicus)]
 1576,1,-,ジュニアカレッジ,[n],[junior college]
-1577,,-,ジュニアスタイル,[n],[junior style]
+1577,1,-,ジュニアスタイル,[n],[junior style]
 1578,,-,ジュニアフェザー,[n],[junior feather (weight)]
 1579,,-,ジュニアフライ,[n],[junior fly (weight)]
 1580,1,-,ジュニアミドル,[n],[junior middle (weight)]
@@ -1827,7 +1827,7 @@
 1827,1,-,ダンスパートナー,[n],"[dance partner, partner]"
 1828,1,-,チャオ,[int],[ciao]
 1829,1,歴青,れきせい,[n],"[asphalt, bitumen]"
-1830,,-,アークティックチャー,[n],[arctic char (Salvelinus alpinus)]
+1830,1,-,アークティックチャー,[n],[arctic char (Salvelinus alpinus)]
 1831,1,-,チリソース,[n],"[chili sauce, chilli sauce]"
 1832,1,-,チリペッパー,[n],"[chili pepper, chilli pepper]"
 1833,1,-,チリパウダー,[n],"[chili powder, chilli powder]"
@@ -1935,9 +1935,9 @@
 1935,1,-,ルーティングデータ,[n],[routing data]
 1936,1,-,アプリケーションデータ,[n],[application data]
 1937,,-,メッシュデータ,[n],[mesh data]
-1938,,-,データホルダー,[n],[copy holder]
+1938,1,-,データホルダー,[n],[copy holder]
 1939,1,-,データシリーズ,[n],[data series]
-1940,,-,ビッグデータ,[n],[big data]
+1940,1,-,ビッグデータ,[n],[big data]
 1941,1,-,フライトデータレコーダー,[n],[flight data recorder]
 1942,1,-,レッドデータブック,[n],[Red Data Book (of endangered species)]
 1943,1,-,インターネットデータセンター,[n],[Internet Data Center]
@@ -1993,7 +1993,7 @@
 1993,,-,ドラムブレーキ,[n],[drum brake]
 1994,1,-,ドラムバッグ,[n],"[gym bag, sports bag, duffel bag, duffle bag, drum-shaped bag, cylindrical bag]"
 1995,1,-,ドルクローズ,[n],[dollar clause]
-1996,,-,ドルシフト,[n],[dollar shift]
+1996,1,-,ドルシフト,[n],[dollar shift]
 1997,1,-,ドルショック,[n],[dollar shock]
 1998,1,-,ドルショップ,[n],[dollar shop]
 1999,1,-,ドルペッグ,[n],"[dollar peg, being pegged to the dollar]"
@@ -2377,7 +2377,7 @@
 2377,1,-,モンキービジネス,[n],[monkey business]
 2378,,-,ビジネスプロデュース,[n],[starting up and developing a business]
 2379,1,-,ネットビジネス,[n],[Internet business]
-2380,,-,ビジネスプラン,[n],[business plan]
+2380,1,-,ビジネスプラン,[n],[business plan]
 2381,1,-,ビジネスセンター,[n],"[business center of a city (centre), business center of a hotel (providing fax & copy services, etc.)]"
 2382,1,-,ビジネスレター,[n],[business letter]
 2383,1,-,スモールビジネス,[n],[small business]
@@ -2675,7 +2675,7 @@
 2675,1,-,エッジボール,[n],[edge ball]
 2676,1,-,オイルボール,[n],[oil ball]
 2677,1,-,クッションボール,[n],"[cushion ball, carom off the outfield wall by a batted ball]"
-2678,,-,サラダボウル,[n],[salad bowl]
+2678,1,-,サラダボウル,[n],[salad bowl]
 2679,1,-,デッドボール,[n],[pitch that hits the batter]
 2680,1,-,トップボール,[n],[top ball]
 2681,1,-,ドローボール,[n],[draw ball]
@@ -2774,7 +2774,7 @@
 2774,1,-,モダンリビング,[n],[modern living]
 2775,1,-,モダンボーイ,[n],[modern boy (1920s slang)]
 2776,1,-,モダンガール,[n],[modern girl (1920s slang)]
-2777,,-,モノスペースフォント,[n],[monospace font]
+2777,1,-,モノスペースフォント,[n],[monospace font]
 2778,1,モン・クメール語派,モン・クメールごは,[n],[Mon-Khmer (branch of languages)]
 2779,1,-,ヤム,[n],[yam]
 2780,1,-,パープルヤム,[n],"[purple yam (Dioscorea alata), water yam, winged yam]"
@@ -3444,7 +3444,7 @@
 3444,1,怯え,おびえ,[n],"[being startled, surprised or afraid, panic, trepidation]"
 3445,1,恋恋,れんれん,"[adj-na, n]",[attached to]
 3446,1,恐る,おそる,"[v2r-k, v4r, v2r-s, vi]","[to fear, to be afraid]"
-3447,,改悛,かいしゅん,"[n, vs]","[repentance, contrition]"
+3447,1,改悛,かいしゅん,"[n, vs]","[repentance, contrition]"
 3448,1,悪し,あし,[n],[evil]
 3449,1,悪名,あくみょう,[n],"[bad reputation, ill repute, bad name]"
 3450,1,悪天,あくてん,[n],[bad weather]
@@ -3761,7 +3761,7 @@
 3761,1,福岡,ふくおか,[n],[Fukuoka (city)]
 3762,,私書,ししょ,[n],"[private document, personal letter]"
 3763,1,秋雨,あきさめ,[n],"[autumn rain, fall rain]"
-3764,,科学技術,かがくぎじゅつ,"[n, adj-no]","[science and technology, scientific technique]"
+3764,1,科学技術,かがくぎじゅつ,"[n, adj-no]","[science and technology, scientific technique]"
 3765,1,称す,しょうす,"[v5s, vt]","[to take the name of, to call oneself, to pretend, to feign, to purport]"
 3766,1,移動性,いどうせい,"[n, adj-no]","[mobility, migration, rambling, roving, mobile, moving, ambulatory]"
 3767,1,積分,せきぶん,[n],[integral]
@@ -3791,7 +3791,7 @@
 3791,1,精一,せいいつ,"[adj-na, n]",[purity]
 3792,1,精神医学,せいしんいがく,"[n, adj-no]",[psychiatry]
 3793,1,糖尿,とうにょう,[n],"[glycosuria, glucosuria, urine sugar]"
-3794,,糞ゲー,くそゲー,[n],"[shit video game, embarrassingly bad video game]"
+3794,1,糞ゲー,くそゲー,[n],"[shit video game, embarrassingly bad video game]"
 3795,1,納め,おさめ,"[n, n-suf, adj-no]","[the last, the end, the closing]"
 3796,1,紡績工,ぼうせきこう,[n],"[a spinner, spinning mill employee]"
 3797,1,紫外,しがい,"[n, adj-no]","[ultraviolet, UV]"
@@ -3999,7 +3999,7 @@
 3999,1,鉄甲,てっこう,[n],"[iron armor (armour), iron helmet]"
 4000,,銅版,どうばん,[n],"[copper plate, copperplate]"
 4001,1,鍛え,きたえ,[n],"[forging, tempering, drilling, training, disciplining]"
-4002,,鍛冶,かじ,[n],"[smithing, blacksmith]"
+4002,1,鍛冶,かじ,[n],"[smithing, blacksmith]"
 4003,1,鎌倉,かまくら,[n],[Kamakura (city)]
 4004,1,鎮め,しずめ,[n],"[controlling, suppressing, quelling]"
 4005,1,鎮痛,ちんつう,"[n, adj-no]","[pain relief, killing pain]"
@@ -4642,7 +4642,7 @@
 4642,1,-,プエブロインディアン,[n],[Pueblo Indian]
 4643,1,-,インディアンスウェルシャーク,[n],"[Indian swellshark (Cephaloscyllium silasi, species of catshark from the western Indian Ocean)]"
 4644,,-,インデックスファンド,[n],[index fund]
-4645,,-,コンポジットインデックス,[n],[composite index]
+4645,1,-,コンポジットインデックス,[n],[composite index]
 4646,1,-,ミゼリーインデックス,[n],[misery index]
 4647,1,-,インデックストラック,[n],[index track]
 4648,1,-,インデックスバッファ,[n],[index buffer]
@@ -5012,7 +5012,7 @@
 5012,1,-,オンボードコンピュータ,[n],[on-board computer]
 5013,1,-,オンラインコンピューター,[n],[online computer]
 5014,1,-,クリップボードコンピュータ,[n],[clipboard computer]
-5015,,-,ゲストコンピュータ,[n],[guest computer]
+5015,1,-,ゲストコンピュータ,[n],[guest computer]
 5016,1,-,コンピュータセキュリティ,[n],[computer security]
 5017,,-,コンピュータネットワーク,[n],[computer network]
 5018,1,-,コンピュータプログラマー,[n],[computer programmer]
@@ -5039,7 +5039,7 @@
 5039,1,-,コンピュータートモグラフィー,[n],[computer tomography]
 5040,1,-,コンピューターマインド,[n],[computer mind]
 5041,,-,コンピューターユーティリティー,[n],[computer utility]
-5042,,-,サテライトコンピューター,[n],[satellite computer]
+5042,1,-,サテライトコンピューター,[n],[satellite computer]
 5043,1,-,デジタルコンピューター,[n],[digital computer]
 5044,1,-,ハイブリッドコンピューター,[n],[hybrid computer]
 5045,1,-,ファミリーコンピューター,[n],"[Nintendo Entertainment System, NES]"
@@ -5273,7 +5273,7 @@
 5273,1,-,ディスカウントキャッシュフロー,[n],[discounted cash flow]
 5274,1,-,グループディスカッション,[n],[group discussion]
 5275,1,-,パネルディスカッション,[n],[panel discussion]
-5276,,-,フォーラムディスカッション,[n],[forum discussion]
+5276,1,-,フォーラムディスカッション,[n],[forum discussion]
 5277,1,-,ウインドーディスプレー,[n],[window display]
 5278,1,-,ナンバーディスプレー,[n],"[number display, caller ID (on telephones)]"
 5279,1,-,プラズマディスプレイ,[n],[plasma display]
@@ -5467,7 +5467,7 @@
 5467,1,-,パシフィックテレシス,[n],[Pacific Telesys]
 5468,1,-,パッティンググリーン,[n],[putting green]
 5469,1,-,コストパフォーマンス,[n],[cost performance]
-5470,,-,ピーク・パフォーマンス・ボイヤンシー,[n],[peak performance buoyancy]
+5470,1,-,ピーク・パフォーマンス・ボイヤンシー,[n],[peak performance buoyancy]
 5471,1,-,パブリックドメイン,[n],[public domain]
 5472,1,-,フレンチパラドックス,[n],"[French paradox, paradox of relatively high health levels in France despite smoking, consumption of alcohol, meat, etc.]"
 5473,1,-,パーフェクトゲーム,[n],[perfect game]
@@ -5729,7 +5729,7 @@
 5729,1,-,インベントリーリセッション,[n],[inventory recession]
 5730,1,-,リニアモーター,[n],[linear motor]
 5731,1,-,アーバンリニュアル,[n],[urban renewal]
-5732,,-,リバーシブルコート,[n],[reversible coat]
+5732,1,-,リバーシブルコート,[n],[reversible coat]
 5733,1,-,リバーシブルファブリック,[n],[reversible fabric]
 5734,1,-,リバーシブルレーン,[n],[reversible lane]
 5735,1,-,メモリリフレッシュ,[n],[memory refresh]
@@ -7140,7 +7140,7 @@
 7140,,厳暑,げんしょ,[n],[extreme heat]
 7141,,返歌,へんか,[n],[ode in reply]
 7142,,如才,じょさい,[n],"[affable, slick, smooth-tongued, smart, sharp, clever, skillful, adroit]"
-7143,,干天,かんてん,[n],"[drought, dry weather]"
+7143,1,干天,かんてん,[n],"[drought, dry weather]"
 7144,,看点,かんてん,[n],[viewpoint]
 7145,,寒点,かんてん,[n],[cold points (of the skin)]
 7146,,官展,かんてん,[n],[exhibition sponsored by the government]
@@ -9508,7 +9508,7 @@
 9508,1,手燭,てしょく,[n],[portable candlestick]
 9509,1,酒食,しゅしょく,"[n, vs]",[food and (alcoholic) drink]
 9510,,良師,りょうし,[n],[good teacher]
-9511,,料紙,りょうし,[n],[writing paper]
+9511,1,料紙,りょうし,[n],[writing paper]
 9512,,洗眼,せんがん,"[n, vs]",[washing the eyes]
 9513,,腺癌,せんがん,[n],[adenocarcinoma]
 9514,,遺芳,いほう,[n],[memory or autograph of deceased]
@@ -29589,7 +29589,7 @@
 29589,,内調,ないちょう,[n],[Cabinet Information Research Office]
 29590,,-,ないで,"[conj, aux]","[without doing ..., used in sentence-final position as an indirect prohibition]"
 29591,,内皮,ないひ,"[n, adj-no]","[endothelium, endodermis]"
-29592,,萎える,なえる,"[v1, vi]","[to lose strength, to become weak, to waste away, to wither, to droop]"
+29592,1,萎える,なえる,"[v1, vi]","[to lose strength, to become weak, to waste away, to wither, to droop]"
 29593,,-,なおこ,[n],"[long thin brown ""naoko"" mushroom]"
 29594,,中には,なかには,[adv],"[some (of them), among (them)]"
 29595,,仲に入る,なかにはいる,"[exp, v5r]",[to act as an intermediary]
@@ -31962,7 +31962,7 @@
 31962,,兎や角,とやかく,[adv],"[anyhow, anyway, somehow or other, generally speaking, in any case, all kinds of this, this and that]"
 31963,,取り付く,とりつく,"[v5k, vi]","[to cling to, to hold on to, to hold fast to, to grapple, to set about doing, to begin, to commence, to undertake, to take hold of, to possess, to haunt, to obtain a clue, to get a lead]"
 31964,,取り憑く,とりつく,"[v5k, vi]","[to take hold of, to possess, to haunt]"
-31965,,取り札,とりふだ,[n],"[card to pick up (in card games), card that is picked up by players instead of read (in karuta), card printed with the second half of a poem (in karuta)]"
+31965,1,取り札,とりふだ,[n],"[card to pick up (in card games), card that is picked up by players instead of read (in karuta), card printed with the second half of a poem (in karuta)]"
 31966,,頓狂,とんきょう,"[adj-na, n]","[wild, in disarray]"
 31967,,豚汁,とんじる,[n],"[pork miso soup, miso soup with pork and vegetables]"
 31968,,頓珍漢,とんちんかん,"[adj-na, n]","[absurdity, contradiction, incoherence, irrelevance]"
@@ -32877,7 +32877,7 @@
 32877,,急進派,きゅうしんは,[n],[radical faction or group]
 32878,,性的興奮,せいてきこうふん,[n],"[sexual arousal, sexual excitation]"
 32879,,性転換,せいてんかん,"[n, vs]",[sex change]
-32880,,性転換手術,せいてんかんしゅじゅつ,[n],[sex change surgery]
+32880,1,性転換手術,せいてんかんしゅじゅつ,[n],[sex change surgery]
 32881,,怨恨,えんこん,[n],"[enmity, grudge]"
 32882,,恐れ入りますが,おそれいりますが,[exp],"[Sorry to impose but ..., Excuse me but ...]"
 32883,,恒久的,こうきゅうてき,[adj-na],"[permanent, perpetual, lasting]"
