@@ -2,7 +2,7 @@
 2,1,-,あい,"[int, n]","[yes, wind that blows from north to north-east during spring and summer along the coast of the sea of Japan]"
 3,,哀訴,あいそ,"[n, vs]","[appeal, complaint]"
 4,1,饗,きょう,[n],"[treating someone (to food or drink), entertaining someone (as one's guest)]"
-5,,和え,あえ,"[n-suf, n-pref, n]",[food with dressing on it (e.g. salad)]
+5,1,和え,あえ,"[n-suf, n-pref, n]",[food with dressing on it (e.g. salad)]
 6,1,灰汁,あく,[n],"[lye, harsh taste, astringency, scum (formed when cooking some foods), (excessive) strength of will]"
 7,1,筌,うえ,[n],[cylindrical bamboo fishing basket]
 8,1,浅黄,あさぎ,[n],[light yellow]
@@ -67,7 +67,7 @@
 67,1,右図,うず,[n],"[map on the right, chart on the right]"
 68,1,雲珠,うず,[n],[crupper ornament]
 69,1,髻華,うず,[n],[flower or branch fastened in the hair]
-70,,鬱,うつ,[n],"[depression, low spirits]"
+70,1,鬱,うつ,[n],"[depression, low spirits]"
 71,1,独活,うど,[n],"[udo (plant related to ginseng, used in medicine and cooking) (Aralia cordata)]"
 72,1,粳,うる,[n],[nonglutinous grain (not sticky enough to make mochi rice cakes)]
 73,1,閏,うるう,"[n, adj-no]","[embolism, intercalation]"
@@ -192,7 +192,7 @@
 192,1,辛味,からみ,[n],"[hot taste, sharp taste, pungent taste, salty taste]"
 193,1,空身,からみ,[n],[traveling alone and with little luggage (travelling)]
 194,1,鍰,からみ,[n],[slag]
-195,,感,かん,"[n, n-suf]","[feeling, sensation, emotion, admiration, impression]"
+195,1,感,かん,"[n, n-suf]","[feeling, sensation, emotion, admiration, impression]"
 196,1,癇,かん,[n],"[temper, nerves]"
 197,1,-,かん,"[adv, adv-to]","[ding, chime (sound of a bell or a small gong)]"
 198,1,澗,かん,[num],"[10^36, undecillion]"
@@ -414,7 +414,7 @@
 414,1,綜絖,そうこう,[n],"[heddle, heald, part of a loom, a wire or cord with an eye, through which the warp threads are threaded]"
 415,1,其処ら,そこら,[n],"[everywhere, somewhere, approximately, that area, around there]"
 416,1,-,そよ,[adv-to],[with a slight (breeze)]
-417,,-,そら,"[int, exp]","[look!, look out!, look at me!, here!, there!, that is]"
+417,1,-,そら,"[int, exp]","[look!, look out!, look at me!, here!, there!, that is]"
 418,1,橇,そり,[n],"[sleigh, sled, sledge]"
 419,1,-,それ,[int],[there! (used to call someone's attention to something)]
 420,1,其れと,それと,[conj],"[and then, even so, and]"
@@ -1254,7 +1254,7 @@
 1254,1,-,デートクラブ,[n],[date club]
 1255,1,-,ホストクラブ,[n],[host club]
 1256,,-,ドライブクラブ,[n],"[car rental agency, driving club]"
-1257,,-,パリクラブ,[n],[Paris club (group of creditor countries)]
+1257,1,-,パリクラブ,[n],[Paris club (group of creditor countries)]
 1258,1,-,クリケットクラブ,[n],[cricket club]
 1259,1,-,テニスクラブ,[n],[tennis club]
 1260,1,-,ヨットクラブ,[n],"[yacht club, yachting club]"
@@ -1319,7 +1319,7 @@
 1319,1,-,コンロッド,[n],"[connecting rod (automotive), con-rod]"
 1320,1,-,コンモート,[n],[con moto]
 1321,1,-,コンマン,[n],[con man]
-1322,,-,コンク,[adj-f],[concentrated]
+1322,1,-,コンク,[adj-f],[concentrated]
 1323,1,-,コンクリ,[n],[concrete]
 1324,1,-,コンクリートジャングル,[n],[concrete jungle]
 1325,1,-,コンクリートパイル,[n],[concrete pile]
@@ -1419,7 +1419,7 @@
 1419,1,-,スカイサイン,[n],[sky sign]
 1420,1,-,バイタルサイン,[n],[vital signs]
 1421,1,-,サインランゲージ,[n],[sign language]
-1422,,-,ピースサイン,"[n, vs]","[peace sign, V sign]"
+1422,1,-,ピースサイン,"[n, vs]","[peace sign, V sign]"
 1423,1,-,バリトンサクソフォン,[n],[baritone saxophone]
 1424,1,-,サブサハラ,[n],[Sub-Saharan Africa]
 1425,,-,サン,[n],"[sun, saint, San (people)]"
@@ -1430,7 +1430,7 @@
 1430,1,-,サンセリフ,[n],[sans serif]
 1431,1,-,サンライズ,[n],"[sunrise, half-melon shaped bun (term used in the Chugoku area)]"
 1432,,-,サンユーザグループ,[n],"[Sun User Group, SUG]"
-1433,,-,サノバビッチ,[int],[son of a bitch]
+1433,1,-,サノバビッチ,[int],[son of a bitch]
 1434,1,-,オイルサンド,[n],"[oil sands, tar sands, bituminous sands]"
 1435,1,-,サンドウェッジ,[n],[sand wedge (golf)]
 1436,1,-,サンドスキー,[n],[sand skiing]
@@ -1735,7 +1735,7 @@
 1735,1,-,ソーシャルアクション,[n],[social action]
 1736,1,-,ソーシャルコスト,[n],[social cost]
 1737,1,-,ソーシャルエコロジー,[n],[social ecology]
-1738,,-,ソーシャルスキル,[n],[social skill]
+1738,1,-,ソーシャルスキル,[n],[social skill]
 1739,1,-,ソーシャルダンピング,[n],[social dumping]
 1740,1,-,ソーシャルゲーム,[n],"[social game, social network game]"
 1741,1,-,ソーシャルメディア,[n],[social media]
@@ -2488,7 +2488,7 @@
 2488,1,-,ポテトフライ,[n],"[fried potato, French fries, chips]"
 2489,1,-,イージーフライ,[n],[routine fly ball]
 2490,1,-,スパニッシュフライ,[n],"[Spanish fly (Lytta vesicatoria), Spanish fly (crushed dried Spanish flies sometimes used as an aphrodisiac), cantharides]"
-2491,,-,フレンチフライ,[n],"[fried potato, French fries, chips]"
+2491,1,-,フレンチフライ,[n],"[fried potato, French fries, chips]"
 2492,1,-,フライアウト,[n],[fly out]
 2493,1,-,ウェットフライ,[n],[wet fly]
 2494,1,-,フライキャスチング,[n],[fly casting]
@@ -2916,7 +2916,7 @@
 2916,1,-,ロシアデスマン,[n],[Russian desman (Desmana moschata)]
 2917,1,-,キャピタルロス,[n],[capital loss]
 2918,1,-,ロスリーダー,[n],[loss leader]
-2919,,-,ロスタイム,[n],"[loss of time, lost time]"
+2919,1,-,ロスタイム,[n],"[loss of time, lost time]"
 2920,1,-,ペットロス,[n],[emotional effect on pet owners from losing their pet]
 2921,1,-,チャンスロス,[n],"[opportunity loss, loss of sales opportunity]"
 2922,1,-,ロマ,[n],"[Roma, Rom]"
@@ -2941,7 +2941,7 @@
 2941,1,-,ローデバイス,[n],[raw device]
 2942,1,-,ローバッテリ,[n],[low battery]
 2943,,-,ローパーテーション,[n],"[low partition, office partition]"
-2944,,-,ローテク,[adj-f],"[low technology, low-tech]"
+2944,1,-,ローテク,[adj-f],"[low technology, low-tech]"
 2945,1,-,フロントロー,[n],[front row]
 2946,1,-,バックロー,[n],[back row]
 2947,1,-,ローボレー,[n],[low volley]
@@ -3351,7 +3351,7 @@
 3351,1,家父長,かふちょう,"[n, adj-na]","[patriarch, patriarchal, patriarchic]"
 3352,,宿泊料,しゅくはくりょう,[n],[hotel charges]
 3353,1,寄木,よせぎ,[n],"[wooden mosaic, parquetry]"
-3354,,寄書,きしょ,"[n, vs]",[contributed article]
+3354,1,寄書,きしょ,"[n, vs]",[contributed article]
 3355,1,寒心,かんしん,"[n, vs]","[deplorable, alarming]"
 3356,1,寝ぼけ,ねぼけ,[n],[(being) half asleep]
 3357,1,寝間,ねま,[n],[bedroom]
@@ -4012,7 +4012,7 @@
 4012,1,間切り,まぎり,[n],"[sailing windward, land division in the Ryukyu Kingdom equivalent to modern prefectures (but the size of cities or towns)]"
 4013,1,間違え,まちがえ,[n],"[mistake, error, blunder, accident, mishap, trouble, improper conduct (e.g. between man and woman), indiscretion]"
 4014,1,降車,こうしゃ,"[n, vs]","[alighting, getting off, getting down]"
-4015,,除幕,じょまく,"[n, vs]",[unveiling (ceremony)]
+4015,1,除幕,じょまく,"[n, vs]",[unveiling (ceremony)]
 4016,,陰画,いんが,"[n, adj-no]",[(photographic) negative]
 4017,1,陸続,りくぞく,"[adj-na, n]",[one after another]
 4018,1,隠し,かくし,"[n, n-pref, n-suf]","[hiding, concealing, being hidden, being concealed, pocket]"
@@ -4039,7 +4039,7 @@
 4039,1,非人,ひにん,[n],"[group comprising the lowest rank of Japan's Edo-period caste system (often ex-convicts or vagrants), non-human]"
 4040,1,非定型,ひていけい,[adj-f],"[free (e.g. verse), atypical]"
 4041,1,非常用,ひじょうよう,[n],[for emergency use]
-4042,,非業,ひごう,[n],[unnatural or untimely (death)]
+4042,1,非業,ひごう,[n],[unnatural or untimely (death)]
 4043,1,非鉄,ひてつ,[adj-no],[non-ferrous]
 4044,1,面倒見,めんどうみ,[n],[taking care of someone]
 4045,1,吠陀,ヴェーダ,[n],[Veda]
@@ -4085,7 +4085,7 @@
 4085,1,-,ホームスチール,[n],[stealing home]
 4086,1,-,サイクルスチール,[n],[cycle stealing]
 4087,1,-,スチールバンド,[n],[steel band]
-4088,,-,ダブルスチール,[n],[double steal]
+4088,1,-,ダブルスチール,[n],[double steal]
 4089,,-,スチールグレー,[n],[steel gray]
 4090,1,-,スチールサッシュ,[n],[steel sash]
 4091,1,-,スチールウール,[n],[steel wool]
@@ -4093,7 +4093,7 @@
 4093,1,-,ブー,[int],"[beep, honk (car horn), buzz (buzzer), boo (wrong answer, like buzzer on quiz shows)]"
 4094,1,主殿,しゅでん,[n],"[main building (of a villa, palace, etc.)]"
 4095,,俯伏,ふふく,"[n, vs]",[prostration]
-4096,,甘酸,かんさん,[n],"[sweetness and bitterness, joys and sorrows]"
+4096,1,甘酸,かんさん,[n],"[sweetness and bitterness, joys and sorrows]"
 4097,,花売り,はなうり,[n],[flower vendor]
 4098,,哀傷歌,あいしょうか,[n],"[lament, elegy, dirge, funeral song]"
 4099,1,足が早い,あしがはやい,"[exp, adj-i]","[to be fast at walking and running, to be quick to spoil (of foodstuffs)]"
@@ -4242,7 +4242,7 @@
 4242,1,秋涼,しゅうりょう,[n],"[coolness of autumn, cool autumn wind, eighth lunar month]"
 4243,1,宿将,しゅくしょう,[n],[veteran general]
 4244,1,祝勝,しゅくしょう,"[n, adj-no]",[victory celebration]
-4245,,縮重,しゅくじゅう,[n],[degeneracy]
+4245,1,縮重,しゅくじゅう,[n],[degeneracy]
 4246,1,出勤者,しゅっきんしゃ,[n],[workers on the job]
 4247,,出展社,しゅってんしゃ,[n],"[exhibiting company (at a trade show, etc.)]"
 4248,,出版部,しゅっぱんぶ,[n],[publishing department]
@@ -4362,7 +4362,7 @@
 4362,1,走行会,そうこうかい,[n],"[track meet (non-competitive driving on a race course), track day, track event]"
 4363,1,早東戦,そうとうせん,[n],[(baseball) game between Waseda and Tokyo universities]
 4364,1,対抗試合,たいこうじあい,[n],"[match, tournament, interschool match]"
-4365,,対称的,たいしょうてき,[adj-na],[symmetrical]
+4365,1,対称的,たいしょうてき,[adj-na],[symmetrical]
 4366,1,対症的,たいしょうてき,[adj-na],"[temporary (of medical care), pallative, dealing only with the symptoms, symptomatic, superficial]"
 4367,1,対情報,たいじょうほう,[n],[counter-intelligence]
 4368,1,対生葉,たいせいよう,[n],[opposite leaves]
@@ -4687,7 +4687,7 @@
 4687,1,-,スターウォッチング,[n],[star watching]
 4688,1,-,ホエールウォッチング,[n],[whale watching]
 4689,1,-,タウンウォッチング,[n],"[observing people, shops, etc. while strolling around town]"
-4690,,-,バードウオッチング,[n],[bird watching]
+4690,1,-,バードウオッチング,[n],[bird watching]
 4691,1,-,エキサイティングゲーム,[n],[exciting game]
 4692,1,-,エキスパートシステム,[n],[expert system]
 4693,1,-,デーリーエキスプレス,[n],[daily express]
@@ -4847,7 +4847,7 @@
 4847,1,-,クリエーティブグループ,[n],[creative group]
 4848,1,-,クリスチャンネーム,[n],[Christian name]
 4849,1,-,クリスチャンロック,[n],[Christian rock]
-4850,,-,クリスチャンサイエンス,[n],[Christian Science]
+4850,1,-,クリスチャンサイエンス,[n],[Christian Science]
 4851,1,-,ドライクリーニング,[n],[dry cleaning]
 4852,1,-,ウエットクリーニング,[n],[wet cleaning]
 4853,1,-,ヘッドクリーニングキット,[n],[head cleaning kit]
@@ -5024,7 +5024,7 @@
 5024,1,-,ハンドヘルドコンピュータ,[n],[hand-held computer]
 5025,1,-,パームトップコンピュータ,[n],[palmtop computer]
 5026,1,-,パラレルコンピュータ,[n],[parallel computer]
-5027,,-,ファジーコンピュータ,[n],[fuzzy computer]
+5027,1,-,ファジーコンピュータ,[n],[fuzzy computer]
 5028,1,-,ファミリーコンピュータ,[n],[family computer]
 5029,1,-,フロントエンドコンピュータ,[n],[front-end computer]
 5030,1,-,ブリーフケースコンピュータ,[n],[briefcase computer]
@@ -5279,7 +5279,7 @@
 5279,1,-,プラズマディスプレイ,[n],[plasma display]
 5280,1,-,アクティブディスプレイ,[n],[active display]
 5281,1,-,アナログディスプレイ,[n],[analog display]
-5282,,-,ディスプレイアダプター,[n],[display adapter]
+5282,1,-,ディスプレイアダプター,[n],[display adapter]
 5283,1,-,ディスプレイカード,[n],[display card]
 5284,1,-,ディスプレイシステム,[n],[display system]
 5285,1,-,ディスプレイセッション,[n],[display session]
@@ -5539,7 +5539,7 @@
 5539,1,-,ショットガンフォーメーション,[n],[shotgun formation]
 5540,1,-,タッチフットボール,[n],[touch football]
 5541,1,-,フランクフルトソーセージ,[n],"[frankfurter, frank]"
-5542,,-,フランチャイズチェーン,[n],"[franchise chain, FC]"
+5542,1,-,フランチャイズチェーン,[n],"[franchise chain, FC]"
 5543,1,-,フレキシブルディスク,[n],"[flexible disk, floppy disk]"
 5544,1,-,フレキシブルバック,[n],[flexible back]
 5545,,-,フレキシブルマニュファクチャリングシステム,[n],[flexible manufacturing system]
@@ -5974,7 +5974,7 @@
 5974,1,燦,さん,[adj-t],"[brilliant, resplendant]"
 5975,1,独,どく,[n],[Germany]
 5976,1,糎,サンチ,[n],"[centimeter (esp. of cannon caliber, etc.)]"
-5977,,現,げん,[pref],"[present (e.g. government, administration), current, existing]"
+5977,1,現,げん,[pref],"[present (e.g. government, administration), current, existing]"
 5978,1,畢,ひつ,[n],"[Chinese ""Net"" constellation (one of the 28 mansions)]"
 5979,1,瘡,くさ,[n],[eczema]
 5980,1,監,げん,"[n, n-suf]","[special Nara-period administrative division for areas containing a detached palace (Yoshino and Izumi), secretary, third highest-ranking officials in the Dazaifu]"
@@ -24909,7 +24909,7 @@
 24909,,-,レンタリース,[n],[car rental and lease]
 24910,1,-,セションリーダ,[n],[session leader]
 24911,,-,ビーティングリード,[n],[beating reed]
-24912,,-,ソルトリーフ,[n],[salt leaf (var. of ice plant)]
+24912,1,-,ソルトリーフ,[n],[salt leaf (var. of ice plant)]
 24913,,-,テーパーリーマー,[n],[taper reamer]
 24914,,-,スピニングリール,[n],[spinning reel]
 24915,,-,ルイビトン,[n],[Louis Vuitton]
@@ -26235,7 +26235,7 @@
 26235,,べた焼き,べたやき,[n],"[contact print, pancake topped with vegetables, etc.]"
 26236,1,位置エネルギー,いちエネルギー,[n],[potential energy]
 26237,,縄付き,なわつき,[n],"[criminal, being bound by ropes, prisoner in bonds]"
-26238,,雷酸水銀,らいさんすいぎん,[n],[mercury fulminate]
+26238,1,雷酸水銀,らいさんすいぎん,[n],[mercury fulminate]
 26239,,-,ガリア,[n],[Gaul]
 26240,,朱に染まる,あけにそまる,"[exp, v5r]","[to welter in blood, to be covered in blood]"
 26241,,飯櫃,めしびつ,[n],"[round, wooden container for cooked rice]"
@@ -30022,7 +30022,7 @@
 30022,,盟邦,めいほう,[n],"[ally, allied powers]"
 30023,,名峰,めいほう,[n],"[famous mountain, beautiful mountain]"
 30024,,名宝,めいほう,[n],"[famous treasure, noted treasure]"
-30025,,迷夢,めいむ,[n],"[illusion, fallacy, delusion]"
+30025,1,迷夢,めいむ,[n],"[illusion, fallacy, delusion]"
 30026,1,迷霧,めいむ,[n],[dense fog]
 30027,,目籠,めかご,[n],[openwork bamboo basket]
 30028,,粧す,めかす,"[v5s, aux-v]","[to adorn oneself, to dress oneself up, to give an air of, to make oneself seem like]"
@@ -34411,7 +34411,7 @@
 34411,,-,オールターナティブ,[adj-na],[alternative]
 34412,,-,オールドファッション,[n],[old-fashioned]
 34413,,-,カウンティ,[n],[county]
-34414,,-,カカオ,[n],"[cacao, cocoa]"
+34414,1,-,カカオ,[n],"[cacao, cocoa]"
 34415,,-,カシミール,[n],[Kashmir]
 34416,,-,カシュー,[n],"[cashew (Anacardium occidentale), acajou]"
 34417,,-,カスケード,"[adj-na, n]",[cascade]
@@ -35806,7 +35806,7 @@
 35806,,黒み,くろみ,[n],"[black tinge, black colour, black color, black part, dark spot]"
 35807,,黒身,くろみ,[n],"[meat of a fish (e.g. tuna) that is dark red with blood, usu. coming from the parts close to the spine]"
 35808,,軍車,ぐんしゃ,[n],[tank (military vehicle)]
-35809,,恵沢,けいたく,[n],"[blessing, pity, favor, favour, benefit]"
+35809,1,恵沢,けいたく,[n],"[blessing, pity, favor, favour, benefit]"
 35810,,経理課,けいりか,[n],[accounting section]
 35811,,閲する,えっする,[vs-s],"[to inspect, to examine, to check, to elapse, to pass (time)]"
 35812,,-,ケラレ,[n],[vignetting (darkening of the perimeter of a photographic image)]
