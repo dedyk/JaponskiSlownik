@@ -12,7 +12,7 @@
 12,1,厚,あつ,[suf],[thickness]
 13,1,誂え,あつらえ,"[n, adj-no]","[order, article ordered]"
 14,1,あの人,あのひと,"[pn, adj-no]","[he, she, that person, you]"
-15,,阿父,あふ,[n],[father]
+15,1,阿父,あふ,[n],[father]
 16,1,亜父,あふ,[n],[person one respects second only to one's father]
 17,1,溢れ,あふれ,[n],[overflow]
 18,1,虻,あぶ,[n],"[horsefly, gadfly]"
@@ -128,7 +128,7 @@
 128,1,花卉,かき,[n],"[flowering plant, flower]"
 129,1,和気,わき,[n],[harmonious atmosphere]
 130,1,歌妓,かぎ,[n],"[woman who earns her living by entertaining with song, dance and playing the shamisen, geisha who sings at parties]"
-131,,佳句,かく,[n],[beautiful passage of literature]
+131,1,佳句,かく,[n],[beautiful passage of literature]
 132,1,斯く,かく,"[adv, adj-no]","[like this, such, thus, in this way]"
 133,1,膈,かく,[n],"[diaphragm, vicinity of the diaphragm]"
 134,1,舁く,かく,"[v5k, vt]","[to carry on one's shoulders (esp. of two or more people carrying a palanquin, etc.)]"
@@ -653,7 +653,7 @@
 653,1,余意,よい,[n],[implied meaning]
 654,1,良くある,よくある,"[exp, v5r-i]",[is often the case]
 655,1,縒り,より,[n],"[twist, ply]"
-656,,寄り,より,"[n, suf]","[pushing back one's opponent while locked in close quarters, having a tendency towards, being close to]"
+656,1,寄り,より,"[n, suf]","[pushing back one's opponent while locked in close quarters, having a tendency towards, being close to]"
 657,1,選り,より,[n],"[selecting, choosing]"
 658,1,爛,らん,"[adj-t, adv-to]","[brilliant, bright]"
 659,1,襴,らん,[n],[horizontally-wrapped fabric forming the bottom part of some traditional Japanese clothing]
@@ -930,7 +930,7 @@
 930,1,-,パイプカット,[n],[vasectomy]
 931,1,-,ヒップカット,[n],[hip cut]
 932,1,-,モヒカンカット,[n],"[mohawk haircut, mohican hairstyle]"
-933,,-,レイヤードカット,[n],[layered cut]
+933,1,-,レイヤードカット,[n],[layered cut]
 934,1,-,レザーカット,[n],[razor cut]
 935,1,-,カットハウス,[n],"[beauty parlour, beauty parlor]"
 936,1,-,リストカット,"[n, vs]","[wrist cutting, slashing one's wrists]"
@@ -962,7 +962,7 @@
 962,1,-,カラートーン,[n],"[color screentone, colour screentone, color mechanical tint, colour mechanical tint]"
 963,1,-,カラープランニング,[n],"[color planning, colour planning]"
 964,1,-,カラーボックス,[n],"[cheap, easily put together cupboard, bookcase, shelves, chest, etc. made of colored plywood]"
-965,,-,カラーマーカー,[n],"[color marking pen, colour marking pen]"
+965,1,-,カラーマーカー,[n],"[color marking pen, colour marking pen]"
 966,1,-,カラーリンス,[n],"[color rinse, colour rinse]"
 967,1,-,シンボルカラー,[n],"[symbol color, symbol colour]"
 968,1,-,スクールカラー,[n],"[school color, school colour]"
@@ -1451,7 +1451,7 @@
 1451,1,-,インテリジェンスサービス,[n],[intelligence service]
 1452,1,-,エアサービス,[n],[air service]
 1453,1,-,キャンドルサービス,[n],"[candlelight service (e.g. in a church), ceremony during a wedding reception where the bride and the groom go from table to table lighting a candle at each]"
-1454,,-,クーリエサービス,[n],[courier service]
+1454,1,-,クーリエサービス,[n],[courier service]
 1455,1,-,ケータリングサービス,[n],[catering service]
 1456,1,-,コミューターサービス,[n],[commuter service]
 1457,1,-,サービスガール,[n],"[waitress, (restaurant) host]"
@@ -1547,7 +1547,7 @@
 1547,1,-,シー,[n],[sea]
 1548,1,Ｃ,シー,[n],"[C, c]"
 1549,1,-,シーチキン,[n],"[canned tuna (from sea chicken, orig. a brand name)]"
-1550,,-,シーバース,[n],[sea berth]
+1550,1,-,シーバース,[n],[sea berth]
 1551,1,-,シービーム,[n],"[Sea Beam (company name), C-beam]"
 1552,1,-,シーカヤック,[n],[sea kayak]
 1553,1,-,シーストローク,"[n, vs]",[C-stroke (canoeing)]
@@ -1690,7 +1690,7 @@
 1690,1,-,ゲームソフト,[n],[game software]
 1691,1,-,ソフトテニス,[n],[soft tennis (using soft rubber balls instead of hard yellow balls)]
 1692,1,-,アドインソフト,[n],[add-in software]
-1693,,-,アニメーションソフト,[n],[animation software]
+1693,1,-,アニメーションソフト,[n],[animation software]
 1694,1,-,アンチウィルスソフト,[n],[anti-virus software]
 1695,1,-,オーサリングソフト,[n],[authoring software]
 1696,1,-,オンラインソフト,[n],[online software]
@@ -1721,7 +1721,7 @@
 1721,1,-,ソフトシャドウ,[n],[soft shadow]
 1722,1,-,ソフトビニール,[n],"[soft vinyl, vinyl chloride monomer, used for moulded shapes such as toys]"
 1723,1,-,コンピュータソフト,[n],[computer software]
-1724,,-,ソフトページブレーク,[n],[soft page break]
+1724,1,-,ソフトページブレーク,[n],[soft page break]
 1725,1,-,パブリックドメインソフト,[n],"[public domain software, public-domain software, PDS]"
 1726,1,-,ソフトエネルギーパス,[n],[soft energy path]
 1727,1,-,ソフトコンタクトレンズ,[n],[soft contact lens]
@@ -1851,7 +1851,7 @@
 1851,1,-,モニターテレビ,[n],[monitor television]
 1852,1,-,テレビカメラ,[n],[television camera]
 1853,1,-,テレビファクシミリ,[n],[facsimile through television]
-1854,,-,ケーブルテレビ,[n],[cable television]
+1854,1,-,ケーブルテレビ,[n],[cable television]
 1855,1,-,テレビコマーシャル,[n],"[television advertising, television commercial]"
 1856,1,-,ペイテレビ,[n],"[pay TV, pay television]"
 1857,1,-,テレビアンテナ,[n],"[television aerial, television antenna]"
@@ -1934,7 +1934,7 @@
 1934,1,-,ユーザデータ,[n],[user data]
 1935,1,-,ルーティングデータ,[n],[routing data]
 1936,1,-,アプリケーションデータ,[n],[application data]
-1937,,-,メッシュデータ,[n],[mesh data]
+1937,1,-,メッシュデータ,[n],[mesh data]
 1938,1,-,データホルダー,[n],[copy holder]
 1939,1,-,データシリーズ,[n],[data series]
 1940,1,-,ビッグデータ,[n],[big data]
@@ -2375,7 +2375,7 @@
 2375,1,-,ビッグビジネス,[n],[big business]
 2376,1,-,ベンチャービジネス,[n],"[start-up company, venture business]"
 2377,1,-,モンキービジネス,[n],[monkey business]
-2378,,-,ビジネスプロデュース,[n],[starting up and developing a business]
+2378,1,-,ビジネスプロデュース,[n],[starting up and developing a business]
 2379,1,-,ネットビジネス,[n],[Internet business]
 2380,1,-,ビジネスプラン,[n],[business plan]
 2381,1,-,ビジネスセンター,[n],"[business center of a city (centre), business center of a hotel (providing fax & copy services, etc.)]"
@@ -2940,7 +2940,7 @@
 2940,1,-,コモンロー,[n],"[common law, Anglo-American law]"
 2941,1,-,ローデバイス,[n],[raw device]
 2942,1,-,ローバッテリ,[n],[low battery]
-2943,,-,ローパーテーション,[n],"[low partition, office partition]"
+2943,1,-,ローパーテーション,[n],"[low partition, office partition]"
 2944,1,-,ローテク,[adj-f],"[low technology, low-tech]"
 2945,1,-,フロントロー,[n],[front row]
 2946,1,-,バックロー,[n],[back row]
@@ -3486,7 +3486,7 @@
 3486,1,掛け布,かけふ,[n],[cloth covering]
 3487,1,接尾,せつび,[n],[suffix]
 3488,1,接頭,せっとう,[n],[prefix]
-3489,,掴み,つかみ,[n],[grip]
+3489,1,掴み,つかみ,[n],[grip]
 3490,,揉め,もめ,[n],"[quarrel, trouble, dispute]"
 3491,1,揺す,ゆす,"[v5s, vt]","[to rock the left hand (to produce vibrato on a koto, etc.)]"
 3492,1,揺籃,ようらん,[n],[cradle]
@@ -3956,7 +3956,7 @@
 3956,1,輪姦,りんかん,"[n, vs]",[gang rape]
 3957,1,迎賓,げいひん,[n],[welcoming honored guests (esp. from overseas)]
 3958,1,近似,きんじ,"[n, vs, adj-no]","[approximate, proximate, having a close resemblance]"
-3959,,迫り,せり,[n],"[stage elevator, trapdoor]"
+3959,1,迫り,せり,[n],"[stage elevator, trapdoor]"
 3960,1,送信側,そうしんがわ,[n],"[sending entity, sender]"
 3961,1,逃れ,のがれ,[n],"[escaping, evading]"
 3962,1,逆に,ぎゃくに,[adv],"[conversely, on the contrary]"
@@ -4026,7 +4026,7 @@
 4026,1,雪消,ゆきげ,[n],"[snow melting, water from melting snow]"
 4027,1,雪風,ゆきかぜ,[n],"[snow-bearing wind, wind bringing snow]"
 4028,1,雲散,うんさん,"[n, vs]","[scatter, disperse]"
-4029,,雲泥,うんでい,[n],[great difference]
+4029,1,雲泥,うんでい,[n],[great difference]
 4030,1,電子音,でんしおん,[n],[electronic sound]
 4031,,電気工,でんきこう,[n],[electrician]
 4032,1,電熱,でんねつ,"[n, adj-no]",[electric heat]
@@ -4478,7 +4478,7 @@
 4478,1,愛斯蘭,アイスランド,[n],[Iceland]
 4479,1,氷州,アイスランド,[n],[Iceland]
 4480,1,-,アイスランドキャットシャーク,[n],"[Iceland catshark (Apristurus laurussonii, an Atlantic species)]"
-4481,,-,アイティーユー,[n],[ITU]
+4481,1,-,アイティーユー,[n],[ITU]
 4482,1,-,アイティーユーティー,[n],[ITU-T]
 4483,1,-,アイデンティティクライシス,[n],[identity crisis]
 4484,1,-,アイデンティティーカード,[n],[identity card]
@@ -4871,7 +4871,7 @@
 4871,1,-,グラフィックタブレット,[n],[graphic tablet]
 4872,1,-,グラフィックツール,[n],[graphic(al) tool]
 4873,1,-,グラフィックディスプレイ,[n],[graphic display]
-4874,,-,グラフィックフィルタ,[n],"[graphic filter, graphics filter]"
+4874,1,-,グラフィックフィルタ,[n],"[graphic filter, graphics filter]"
 4875,,-,グラフィックモード,[n],[graphics mode]
 4876,1,-,グラフィックスアクセラレータ,[n],[graphics accelerator]
 4877,1,-,グラフィックスアダプタ,[n],[graphics adapter]
@@ -5140,7 +5140,7 @@
 5140,1,-,ブラックジャーナリズム,[n],[black journalism]
 5141,1,瑞典,スウェーデン,[n],[Sweden]
 5142,1,-,スウェーデンリレー,[n],[Swedish relay]
-5143,,-,スクランブルレース,[n],[scramble race]
+5143,1,-,スクランブルレース,[n],[scramble race]
 5144,1,-,フィギュアスケーティング,[n],[figure skating]
 5145,1,-,ペアスケーティング,[n],[pair skating]
 5146,1,-,フードスタイリスト,[n],[food stylist]
@@ -5181,7 +5181,7 @@
 5181,1,-,セキュリティファイル,[n],[security file]
 5182,1,-,セキュリティプリンシパル,[n],[security principal]
 5183,1,-,セキュリティプロトコル,[n],[security protocol]
-5184,,-,セキュリティホスト,[n],[security host]
+5184,1,-,セキュリティホスト,[n],[security host]
 5185,1,-,セキュリティリスク,[n],[security risk]
 5186,1,-,セキュリティログ,[n],[security log]
 5187,1,-,ナショナルセキュリティー,[n],[national security]
@@ -5226,7 +5226,7 @@
 5226,1,-,リッパーソフトウェア,[n],[ripper software]
 5227,1,-,リッピングソフトウェア,[n],[ripping software]
 5228,,-,ソフトウェアエンジニア,[n],[software engineer]
-5229,,-,ウイルスチェックソフトウェア,[n],[virus checker software]
+5229,1,-,ウイルスチェックソフトウェア,[n],[virus checker software]
 5230,1,-,コードモーフィングソフトウェア,[n],[code morphing software]
 5231,1,-,システムソフトウエア,[n],[systems software]
 5232,1,-,メディカルソーシャルワーカー,[n],"[medical social worker, MSW]"
@@ -5310,7 +5310,7 @@
 5310,1,-,リモートディレクトリ,[n],[remote directory]
 5311,1,-,アクティブディレクトリ,[n],[Active Directory]
 5312,1,-,カレントディレクトリ,[n],[current directory]
-5313,,-,ディレクトリエントリ,[n],"[directory entry, link]"
+5313,1,-,ディレクトリエントリ,[n],"[directory entry, link]"
 5314,1,-,ディレクトリスタック,[n],[directory stack]
 5315,1,-,ディレクトリストア,[n],[directory store]
 5316,1,-,ディレクトリツリー,[n],[directory tree]
@@ -5485,7 +5485,7 @@
 5485,1,-,ファクシミリアダプタ,[n],[facsimile adapter]
 5486,1,-,ファクトリーチーム,[n],[factory team]
 5487,1,-,フォトンファクトリー,[n],[photon factory]
-5488,,-,ファシリティマネジメント,[n],[facility management]
+5488,1,-,ファシリティマネジメント,[n],[facility management]
 5489,1,-,クレジットファシリティ,[n],[credit facility]
 5490,1,-,オイルファシリティー,[n],[oil facility]
 5491,1,-,エスニックファッション,[n],[ethnic fashion]
@@ -5581,7 +5581,7 @@
 5581,1,-,サマリプロジェクト,[n],[summary project]
 5582,1,-,パイロットプロジェクト,[n],[pilot project]
 5583,1,-,プロジェクトグループ,[n],[project group]
-5584,,-,プロジェクトタスク,[n],[project tasks]
+5584,1,-,プロジェクトタスク,[n],[project tasks]
 5585,,-,プロジェクトデザイナ,[n],[project designer]
 5586,1,-,プロジェクトファイル,[n],[project file]
 5587,1,-,マクロプロジェクト,[n],[macro project]
@@ -5627,7 +5627,7 @@
 5627,1,-,マジックマッシュルーム,[n],[magic mushroom]
 5628,1,-,アセンブリマニフェスト,[n],[assembly manifest]
 5629,1,-,マニフェストデスティニー,[n],[Manifest Destiny]
-5630,,-,マーケティングマネジメント,[n],[marketing management]
+5630,1,-,マーケティングマネジメント,[n],[marketing management]
 5631,1,-,マネジメントゲーム,[n],[management game]
 5632,1,-,マネジメントサイクル,[n],[management cycle]
 5633,1,-,エアーマネジメント,[n],[air management]
@@ -6579,7 +6579,7 @@
 6579,1,香匙,こうすくい,[n],[incense scoop]
 6580,,香箸,こうばし,[n],[incense chopsticks]
 6581,,闕腋,けってき,[n],"[unstitched, open side of some traditional Japanese clothing, clothing with such an open side, robe worn by military officials with a round collar, unstitched open sides and no ran]"
-6582,,欠缺,けんけつ,[n],"[lacuna, gap where something is lacked]"
+6582,1,欠缺,けんけつ,[n],"[lacuna, gap where something is lacked]"
 6583,1,錐,きり,[n],"[drill, auger]"
 6584,1,奇利,きり,[n],"[unexpected benefit, sudden profit]"
 6585,,-,シャイフ,[n],"[sheikh, sheik]"
@@ -25356,7 +25356,7 @@
 25356,,世話になる,せわになる,"[exp, v5r]","[to receive favor (favour), to be much obliged to someone, to be indebted]"
 25357,1,変わっている,かわっている,"[exp, v1]","[to be unusual (of a person or of a thing), to be uncommon, to be peculiar, to be crazy, to be eccentric, to be different]"
 25358,,立ち込める,たちこめる,"[v1, vi]","[to hang over, to shroud, to enshroud, to envelop, to screen]"
-25359,,思い当たるふしがある,おもいあたるふしがある,"[exp, v5r-i]",[to have something (likely) come to mind]
+25359,1,思い当たるふしがある,おもいあたるふしがある,"[exp, v5r-i]",[to have something (likely) come to mind]
 25360,,身を翻す,みをひるがえす,"[exp, v5s]","[to turn aside adroitly, to dodge]"
 25361,,糸切り歯,いときりば,[n],[canine tooth]
 25362,,なしで済ます,なしですます,"[exp, v5s]",[to do without]
@@ -32153,7 +32153,7 @@
 32153,,漫録,まんろく,[n],[random comments]
 32154,,水しぶき,みずしぶき,[n],[sheet of spray]
 32155,,味噌っかす,みそっかす,[n],"[miso lees, miso strainings, miso dregs, child who is made light of, child who is left out of games, immature child or person, good-for-nothing]"
-32156,,三つ編み,みつあみ,[n],"[braid (hair, cord. etc.), plait]"
+32156,1,三つ編み,みつあみ,[n],"[braid (hair, cord. etc.), plait]"
 32157,,密意,みつい,[n],[hidden intention]
 32158,1,見尽くす,みつくす,[v5s],[to see everything]
 32159,,港区,みなとく,[n],[Harbour Ward (e.g. in Tokyo)]
@@ -34567,7 +34567,7 @@
 34567,,-,シグネチャー,[n],[signature]
 34568,,Σ,シグマ,[n],[sigma]
 34569,,-,シザーズ,[n],[scissors]
-34570,,-,シストリック,[adj-na],[systolic]
+34570,1,-,シストリック,[adj-na],[systolic]
 34571,,-,シックスティー,[n],[sixty]
 34572,,-,シッピング,"[n, adj-f]",[shipping]
 34573,,シフトＪＩＳ,シフトジス,[n],"[shift-JIS, shift_JIS, SJIS]"
@@ -36673,7 +36673,7 @@
 36673,,衆参両院,しゅうさんりょういん,[n],[both houses of Parliament (Diet)]
 36674,,被告席,ひこくせき,[n],"[defendant's seat, the dock]"
 36675,,規範的,きはんてき,[adj-na],[normative]
-36676,,観測所,かんそくじょ,[n],"[observatory, observation post]"
+36676,1,観測所,かんそくじょ,[n],"[observatory, observation post]"
 36677,,言われてみれば,いわれてみれば,[exp],"[now that you say that, now that you mention it]"
 36678,,販売元,はんばいもと,[n],[selling agency]
 36679,,逆輸出,ぎゃくゆしゅつ,[n],[reexportation]
