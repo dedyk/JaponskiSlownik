@@ -1752,7 +1752,7 @@
 1752,1,-,ソーダブレッド,[n],[soda bread]
 1753,1,-,ベーキングソーダ,[n],"[baking soda, sodium bicarbonate]"
 1754,1,-,ブラックタイ,[n],[black tie]
-1755,,-,ホワイトタイ,[n],[white tie]
+1755,1,-,ホワイトタイ,[n],[white tie]
 1756,1,-,ノータイ,[n],[tieless]
 1757,1,-,レジメンタルタイ,[n],[regimental tie]
 1758,1,-,ニットタイ,[n],"[knit tie, knitted tie, knitted necktie]"
@@ -1863,7 +1863,7 @@
 1863,1,-,テレビパソコン,[n],[PC using a TV as a monitor]
 1864,1,-,ローカルテレビ,[n],[local television]
 1865,1,-,テレビスクリーン,[n],"[television screen, TV screen, telescreen]"
-1866,,-,テレビスタジオ,[n],"[television studio, TV studio]"
+1866,1,-,テレビスタジオ,[n],"[television studio, TV studio]"
 1867,1,-,テレビスター,[n],"[television star, TV star, telly-celeb]"
 1868,1,-,テレビスポット,[n],"[place in a TV program, television spot]"
 1869,1,-,テレビアニメ,[n],"[animated TV show, cartoon]"
@@ -2509,7 +2509,7 @@
 2509,1,-,フリーソフトウェア,[n],[free software]
 2510,1,-,フリータックス,[adj-no],"[tax-free, free of tax]"
 2511,1,-,フリーダイヤル,[n],"[toll-free number, free dial (e.g. device or combination lock that can be set to any number)]"
-2512,,-,フリートレード,[n],[free trade]
+2512,1,-,フリートレード,[n],[free trade]
 2513,1,-,フリーバッティング,[n],[free batting]
 2514,1,-,フリートーキング,[n],"[unstructured conversation, free conversation]"
 2515,1,-,フリータイム,[n],[free time]
@@ -2717,7 +2717,7 @@
 2717,1,-,アウトポケット,[n],"[outside pocket, patch pocket]"
 2718,1,-,エアポケット,[n],[air pocket]
 2719,1,-,サイドポケット,[n],[side pocket]
-2720,,-,ポケットコンピューター,[n],"[pocket computer, pocket PC]"
+2720,1,-,ポケットコンピューター,[n],"[pocket computer, pocket PC]"
 2721,1,-,ポケット・チーフ,[n],[pocket square (decorative handkerchief used as an accessory to a suit)]
 2722,1,-,フットポケット,[n],[foot pocket portion of a diving fin]
 2723,1,-,ポケットモデム,[n],[pocket modem]
@@ -2924,7 +2924,7 @@
 2924,1,-,ビルドゥングスロマン,[n],"[novel about one's education, spiritual growth, etc,, coming-of-age story, Bildungsroman]"
 2925,1,-,ロム,[n],"[Rom, Romani person]"
 2926,1,-,マスクロム,[n],[mask ROM]
-2927,,-,ロムカセット,[n],[game cartridge]
+2927,1,-,ロムカセット,[n],[game cartridge]
 2928,1,Ρ,ロー,[n],[rho]
 2929,1,-,ローアブソーバー,[n],[low absorber]
 2930,1,-,ローアングル,[n],[low angle]
@@ -3349,7 +3349,7 @@
 3349,1,実行委,じっこうい,[n],"[action committee, executive committee]"
 3350,1,害す,がいす,"[v5s, vt]","[to injure, to damage, to harm, to hurt, to kill, to hinder, to obstruct]"
 3351,1,家父長,かふちょう,"[n, adj-na]","[patriarch, patriarchal, patriarchic]"
-3352,,宿泊料,しゅくはくりょう,[n],[hotel charges]
+3352,1,宿泊料,しゅくはくりょう,[n],[hotel charges]
 3353,1,寄木,よせぎ,[n],"[wooden mosaic, parquetry]"
 3354,1,寄書,きしょ,"[n, vs]",[contributed article]
 3355,1,寒心,かんしん,"[n, vs]","[deplorable, alarming]"
@@ -3636,7 +3636,7 @@
 3636,1,海産,かいさん,"[n, adj-no]","[marine product, marine (e.g. product, animal etc.)]"
 3637,1,消臭,しょうしゅう,[n],[deodorization]
 3638,1,混和,こんわ,"[n, vs]","[mixture, mingling]"
-3639,,清ら,きよら,"[n, adj-na]","[elegant beauty, dazzling beauty]"
+3639,1,清ら,きよら,"[n, adj-na]","[elegant beauty, dazzling beauty]"
 3640,1,清涼飲料,せいりょういんりょう,[n],"[soft drink, refreshing drink]"
 3641,1,測候,そっこう,"[n, vs]",[meteorological observation]
 3642,1,湯沸かし,ゆわかし,[n],"[teakettle, kettle]"
@@ -3944,7 +3944,7 @@
 3944,1,途切れ,とぎれ,[n],"[break, pause, interruption, intermission]"
 3945,1,途絶え,とだえ,[n],"[pause, intermission, break, interruption, suspension]"
 3946,1,蹌踉,そうろう,"[adj-t, adv-to]","[tottering, staggering, reeling]"
-3947,,身体障害,しんたいしょうがい,[n],[(physical) handicap]
+3947,1,身体障害,しんたいしょうがい,[n],[(physical) handicap]
 3948,1,身元不明,みもとふめい,"[n, adj-no]",[(a person or body being) unidentifiable (unidentified)]
 3949,1,身分証,みぶんしょう,[n],"[identification papers, ID]"
 3950,1,身分証明,みぶんしょうめい,[n],[identification]
@@ -4094,8 +4094,8 @@
 4094,1,主殿,しゅでん,[n],"[main building (of a villa, palace, etc.)]"
 4095,,俯伏,ふふく,"[n, vs]",[prostration]
 4096,1,甘酸,かんさん,[n],"[sweetness and bitterness, joys and sorrows]"
-4097,,花売り,はなうり,[n],[flower vendor]
-4098,,哀傷歌,あいしょうか,[n],"[lament, elegy, dirge, funeral song]"
+4097,1,花売り,はなうり,[n],[flower vendor]
+4098,1,哀傷歌,あいしょうか,[n],"[lament, elegy, dirge, funeral song]"
 4099,1,足が早い,あしがはやい,"[exp, adj-i]","[to be fast at walking and running, to be quick to spoil (of foodstuffs)]"
 4100,1,安全剃刀,あんぜんかみそり,[n],[safety razor]
 4101,1,医院長,いいんちょう,[n],[head doctor]
@@ -4150,7 +4150,7 @@
 4150,1,旧領,きゅうりょう,[n],[old fief]
 4151,1,休漁,きゅうりょう,"[n, vs]",[suspension of fishing]
 4152,1,休猟,きゅうりょう,"[n, vs]",[suspension of hunting]
-4153,,虬竜,きゅうりょう,[n],"[mizuchi, mythical dragon-like beast]"
+4153,1,虬竜,きゅうりょう,[n],"[mizuchi, mythical dragon-like beast]"
 4154,1,教育法,きょういくほう,[n],[teaching method]
 4155,1,匡救,きょうきゅう,"[n, vs]","[delivering from sin, succor, succour]"
 4156,1,京響,きょうきょう,[n],[Kyoto Symphony Orchestra]
@@ -4187,7 +4187,7 @@
 4187,1,刑事上,けいじじょう,[adj-no],"[penal, criminal]"
 4188,1,研究科,けんきゅうか,[n],[(post)graduate course]
 4189,1,県級市,けんきゅうし,[n],[county-level city (of China)]
-4190,,研究書,けんきゅうしょ,[n],"[monograph, study]"
+4190,1,研究書,けんきゅうしょ,[n],"[monograph, study]"
 4191,1,健康上,けんこうじょう,[adj-no],"[health (concerns, reasons, etc.)]"
 4192,1,研修医,けんしゅうい,[n],"[medical intern, resident]"
 4193,1,研修課,けんしゅうか,[n],[training section]
@@ -4291,7 +4291,7 @@
 4291,1,商略,しょうりゃく,"[n, vs]",[business policy]
 4292,1,正暦,しょうりゃく,[n],[Shouryaku era (990.11.7-995.2.22)]
 4293,1,商量,しょうりょう,"[n, vs]","[consideration, deliberation, discussion]"
-4294,,鷦鷯,みそさざい,[n],[winter wren (Troglodytes troglodytes)]
+4294,1,鷦鷯,みそさざい,[n],[winter wren (Troglodytes troglodytes)]
 4295,1,渉猟,しょうりょう,"[n, vs]","[ranging over or scouting out a territory, searching far and wide (for), reading extensively]"
 4296,1,青龍,せいりょう,[n],"[blue dragon (an auspicious creature in Chinese mythology), Azure Dragon (god said to rule over the eastern heavens)]"
 4297,1,蕭寥,しょうりょう,"[adj-t, adv-to]","[desolate, lonely, barren]"
@@ -4348,7 +4348,7 @@
 4348,1,精神界,せいしんかい,[n],"[spiritual world, mental world]"
 4349,1,精神病医,せいしんびょうい,[n],"[psychiatrist, mental specialist, alienist]"
 4350,1,生体学,せいたいがく,[n],[somatology]
-4351,,生態型,せいたいけい,[n],[ecotype]
+4351,1,生態型,せいたいけい,[n],[ecotype]
 4352,1,正当性,せいとうせい,"[n, adj-no]","[lawfulness, propriety, reasonableness, appropriateness, legality, legitimacy, justifiability, validity]"
 4353,1,石炭酸,せきたんさん,[n],"[phenol, carbolic acid]"
 4354,1,宣告書,せんこくしょ,[n],[(written) judgement or verdict (judgment)]
@@ -4488,7 +4488,7 @@
 4488,1,-,アカデミックディスカウント,[n],[academic discount]
 4489,1,-,アカデミックパッケージ,[n],[academic package]
 4490,,-,アカデミックハラスメント,[n],"[harassment, discrimination, bullying, etc. of staff and students at educational institutions]"
-4491,,-,アクティビティサンプリング,[n],[activity sampling]
+4491,1,-,アクティビティサンプリング,[n],[activity sampling]
 4492,1,-,システムアクティビティ,[n],[system activity]
 4493,1,-,アクロバットダンサー,[n],"[acrobatic dancer, contortionist]"
 4494,1,-,アコースティックサウンド,[n],[acoustic sound]
@@ -4591,7 +4591,7 @@
 4591,1,-,デプスインタビュー,[n],[depth interview]
 4592,,-,ヒーローインタービュー,[n],"[interview with leading player in a game (esp. baseball), player-of-the-game interview]"
 4593,1,-,インターネットアドレス,[n],[Internet address]
-4594,,-,インターネットオークション,[n],[Internet auction]
+4594,1,-,インターネットオークション,[n],[Internet auction]
 4595,1,-,インターネットカフェ,[n],"[Internet cafe, cybercafe]"
 4596,1,-,インターネットギャンブル,[n],[Internet gambling]
 4597,1,-,インターネットセキュリティ,[n],[Internet security]
@@ -4698,7 +4698,7 @@
 4698,1,-,カンパニーエコノミスト,[n],[company economist]
 4699,1,-,エコノミック,[adj-no],[economic]
 4700,1,-,カフェエスプレッソ,[n],[expresso coffee]
-4701,,-,パイレートエディション,[n],[pirated edition]
+4701,1,-,パイレートエディション,[n],[pirated edition]
 4702,1,-,エナジーセーブ,"[n, adj-f]","[energy save, energy saving, energy saver]"
 4703,1,ＮＰＯ,エヌピーオー,[n],"[nonprofit organization, Not-for-Profit Organization]"
 4704,,-,エマージェンシーランディング,[n],[emergency landing]
@@ -4739,7 +4739,7 @@
 4739,1,-,オペレーションシステム,[n],[operating system]
 4740,1,-,オペレーティング,[n],[operating]
 4741,1,-,オペレーティングマージン,[n],[operating margin]
-4742,,-,オペレーティングシステムイメージ,[n],[operating system image]
+4742,1,-,オペレーティングシステムイメージ,[n],[operating system image]
 4743,1,-,オペレーティングシステムファームウェア,[n],[operating system firmware]
 4744,1,-,ディスクオペレーティングシステム,[n],"[disk operating system, DOS]"
 4745,1,-,ネットワークオペレーティングシステム,[n],[network operating system]
@@ -4778,7 +4778,7 @@
 4778,1,-,カナディアンウイスキー,[n],[Canadian whisky]
 4779,1,-,アカプリッチオ,[n],[a capriccio]
 4780,1,-,コアカリキュラム,[n],[core curriculum]
-4781,,-,カリフォルニアロール,[n],[California roll]
+4781,1,-,カリフォルニアロール,[n],[California roll]
 4782,1,-,カリフォルニアコンドル,[n],[California condor (Gymnogyps californianus)]
 4783,1,-,カリフォルニアドチザメ,[n],"[leopard shark (Triakis semifasciata, species found along the Pacific coast of North America)]"
 4784,1,-,カリフォルニアスウェルシャーク,[n],"[swellshark (Cephaloscyllium ventriosum, species of catshark in the Eastern Pacific)]"
@@ -4909,7 +4909,7 @@
 4909,1,-,オーラルコミュニケーション,[n],[aural communication]
 4910,1,-,コミュニケーションギャップ,[n],[communications gap]
 4911,1,-,ノンバーバルコミュニケーション,[n],[non-verbal communication]
-4912,,-,パーソナルコミュニケーション,[n],[personal communication]
+4912,1,-,パーソナルコミュニケーション,[n],[personal communication]
 4913,,-,マスコミュニケーション,[n],"[mass communication, the media, mass collaboration, e.g. Wikipedia]"
 4914,,-,カスタムコミュニケーション,[n],"[customized communication, customised communication]"
 4915,1,-,リスクコミュニケーション,[n],[risk communication]
@@ -5442,7 +5442,7 @@
 5442,1,-,ファイルバックアップ,[n],[file backup]
 5443,1,-,フルバックアップ,[n],[full backup]
 5444,1,-,ホットバックアップ,[n],[hot backup]
-5445,,-,ログバックアップ,[n],[log backup]
+5445,1,-,ログバックアップ,[n],[log backup]
 5446,1,-,バックアップライト,[n],[backup light]
 5447,1,-,バックアップシステム,[n],[backup system]
 5448,1,-,バックアップセットカタログ,[n],[backup set catalog]
@@ -5687,7 +5687,7 @@
 5687,1,-,ソウルミュージック,[n],[soul music]
 5688,1,-,チェンバーミュージック,[n],[chamber music]
 5689,1,-,デスクトップミュージック,[n],"[desktop music, DTM]"
-5690,,-,ブラックミュージック,[n],[African-American music]
+5690,1,-,ブラックミュージック,[n],[African-American music]
 5691,1,-,ディスコミュージック,[n],[disco music]
 5692,1,-,フォークミュージック,[n],[folk music]
 5693,,-,ハウスミュージック,[n],[house music]
@@ -5747,8 +5747,8 @@
 5747,1,-,アフターレコーディング,[n],"[adding sounds to a soundtrack after a film has been made, postrecording, postsynchronization, postsynchronisation, postlooping, dubbing]"
 5748,1,-,レコーディングスタジオ,[n],[recording studio]
 5749,1,-,レコーディングダイエット,[n],[weight-loss diet accompanied by meticulous notes about when and what one has eaten]
-5750,,-,デジタルレコーディング,[n],[digital recording]
-5751,,-,レセプションルーム,[n],[reception room]
+5750,1,-,デジタルレコーディング,[n],[digital recording]
+5751,1,-,レセプションルーム,[n],[reception room]
 5752,1,-,レパートリーシステム,[n],[repertory system]
 5753,1,-,メモリロケーション,[n],[memory location]
 5754,1,-,ジョブローテーション,[n],[job rotation]
@@ -6001,7 +6001,7 @@
 6001,1,藪,やぶ,[n],"[thicket, bush, grove, scrub, (medical) quack]"
 6002,1,蜀,しょく,[n],"[Shu (one of the Three Kingdoms competing for control of China after the fall of the Han Dynasty), Shu Han]"
 6003,1,蜆,しじみ,[n],"[basket clam (Corbiculidae spp.), freshwater clam, freshwater mussel]"
-6004,,蛟,みずち,[n],"[mizuchi, mythical dragon-like beast]"
+6004,1,蛟,みずち,[n],"[mizuchi, mythical dragon-like beast]"
 6005,,蠱,まじ,[n],"[charmed and cursed, something that bewilders, something that leads one astray, the work of demons]"
 6006,1,赤古里,チョゴリ,[n],"[chogori, jeogori, short jacket traditionally worn by Koreans]"
 6007,1,覚,さとり,[n],"[Satori, folklore monster that can read minds]"
@@ -14114,7 +14114,7 @@
 14114,,属名,ぞくめい,[n],"[generic name, genus name, generic name]"
 14115,,俗名,ぞくみょう,[n],"[common name, popular name, secular name, bad reputation]"
 14116,,送信器,そうしんき,[n],[transmitter]
-14117,,奄奄,えんえん,"[adj-t, adv-to]",[gasping]
+14117,1,奄奄,えんえん,"[adj-t, adv-to]",[gasping]
 14118,,振起,しんき,"[n, vs]","[encouragement, stimulation]"
 14119,,神気,しんき,[n],"[the elements, spirit, mind, divinity]"
 14120,,新期,しんき,[n],"[new season (e.g. of TV programming), new term]"
@@ -16205,7 +16205,7 @@
 16205,,完飲,かんいん,"[n, vs]","[drinking everything (in one's glass, etc.)]"
 16206,,六処,ろくしょ,[n],"[six sense organs (eyes, ears, nose, tongue, body, and mind)]"
 16207,,治平,ちへい,[n],"[peace and tranquility, peace and tranquillity]"
-16208,,綿摘み,わたつみ,[n],[picking cotton]
+16208,1,綿摘み,わたつみ,[n],[picking cotton]
 16209,1,黄斑,おうはん,"[n, adj-no]","[macula, macule, macula lutea, yellow spot]"
 16210,,横帆,おうはん,[n],[square sail]
 16211,,黄飯,おうはん,[n],[yellow rice meal (coloured with essence of gardenia fruit)]
@@ -27948,7 +27948,7 @@
 27948,,一義的,いちぎてき,"[adj-na, n]","[unequivocable, unambiguous, unmistakable]"
 27949,,一毛,いちもう,[n],[one-tenth of a rin]
 27950,,違勅,いちょく,[n],[disobeying the emperor's order]
-27951,,一体となる,いったいとなる,"[exp, v5r]","[to accrete, to become whole, to come together]"
+27951,1,一体となる,いったいとなる,"[exp, v5r]","[to accrete, to become whole, to come together]"
 27952,,居続ける,いつづける,[v1],"[to stay on (e.g. at one's friends house), to remain in the same neighborhood]"
 27953,,鋳潰す,いつぶす,"[v5s, vt]",[to melt down]
 27954,1,夷狄,いてき,[n],"[barbarians, aliens]"
@@ -29209,7 +29209,7 @@
 29209,,尊意,そんい,[n],[your idea]
 29210,,村社,そんしゃ,[n],[township shrine]
 29211,,尊信,そんしん,"[n, vs]",[reverence]
-29212,,尊名,そんめい,[n],[your name]
+29212,1,尊名,そんめい,[n],[your name]
 29213,,尊命,そんめい,[n],[your order]
 29214,,増加率,ぞうかりつ,[n],[rate of increase]
 29215,,蔵する,ぞうする,[vs-s],"[to store, to contain]"
@@ -35162,7 +35162,7 @@
 35162,,-,リレーショナル,[n],[relational]
 35163,,-,リロケーション,[n],[relocation]
 35164,,-,リロケータブル,[n],[relocatable]
-35165,,-,リーガル,[n],[legal]
+35165,1,-,リーガル,[n],[legal]
 35166,,-,リーキー,[adj-no],[leaky]
 35167,,-,リージョナル,[n],[regional]
 35168,,-,リーゼント,[n],"[regent style, pompadour]"
