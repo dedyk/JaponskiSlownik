@@ -325,7 +325,7 @@
 325,1,紙価,しか,[n],[price of paper]
 326,1,私家,しか,[n],"[private house, one's own house]"
 327,1,糸価,しか,[n],[price of silk thread]
-328,,疵瑕,しか,[n],"[blemish, flaw, defect]"
+328,1,疵瑕,しか,[n],"[blemish, flaw, defect]"
 329,1,知客,しか,[n],[head monk in charge of the administrative section of a zendo (Zen)]
 330,1,詩化,しか,"[n, vs]",[poetization]
 331,1,詩家,しか,[n],[poet]
@@ -448,7 +448,7 @@
 448,1,長呼,ちょうこ,"[n, vs]","[lengthening a vowel (e.g. as in Kansai dialect), long sound (esp. long vowel)]"
 449,1,肇国,ちょうこく,"[n, vs]",[founding of a state]
 450,1,超克,ちょうこく,"[n, vs]","[overcoming, conquering, surmounting, getting over]"
-451,,彫刻師,ちょうこくし,[n],"[engraver, carver]"
+451,1,彫刻師,ちょうこくし,[n],"[engraver, carver]"
 452,1,稠度,ちょうど,[n],[consistency]
 453,1,-,ちり,[n],"[dish of fish (meat, etc.), tofu, vegetables boiled together and served with ponzu dipping sauce]"
 454,1,狆,ちん,[n],"[Japanese spaniel, Pekinese, chin]"
@@ -1061,7 +1061,7 @@
 1061,1,-,クラシックカー,[n],[classic car]
 1062,1,-,ケーブルカー,[n],[cable car]
 1063,1,-,コンパクトカー,[n],[compact car]
-1064,,-,サービスカー,[n],[service car]
+1064,1,-,サービスカー,[n],[service car]
 1065,1,-,スタントカー,[n],[stunt car]
 1066,1,-,ストックカー,[n],[stock car]
 1067,1,-,バキュームカー,[n],"[septic tank truck, honey wagon]"
@@ -1162,7 +1162,7 @@
 1162,1,-,キーアドバイザー,[n],"[key advisor, key adviser]"
 1163,1,-,キーインダストリー,[n],[key industry]
 1164,1,-,キーカレンシー,[n],[key currency]
-1165,,-,キークラブ,[n],[key club]
+1165,1,-,キークラブ,[n],[key club]
 1166,1,-,キーパンチ,[n],[key punch]
 1167,1,-,キーマーケット,[n],[key market]
 1168,1,-,シフトキー,[n],[shift key]
@@ -1338,7 +1338,7 @@
 1338,1,-,ウインナコーヒー,[n],[Vienna coffee]
 1339,,-,コーヒーシロップ,[n],[coffee syrup]
 1340,1,-,コーヒースタンド,[n],[coffee stand]
-1341,,-,コーヒーハウス,[n],[coffee house]
+1341,1,-,コーヒーハウス,[n],[coffee house]
 1342,1,-,コーヒーフロート,[n],[coffee float]
 1343,1,-,コーヒーブレーク,[n],[coffee break]
 1344,1,-,コーヒーミル,[n],"[coffee mill, coffee grinder]"
@@ -1441,7 +1441,7 @@
 1441,1,-,ミックスサンド,[n],[assorted sandwiches]
 1442,1,-,ハムサンド,[n],[ham sandwich]
 1443,1,-,サンドパイル,[n],[sand pile]
-1444,,-,タールサンド,[n],[tar sand]
+1444,1,-,タールサンド,[n],[tar sand]
 1445,1,-,サンドポンプ,[n],[sand pump]
 1446,1,-,ホットサンド,[n],"[toasted sandwich, hot sandwich]"
 1447,1,-,サンドタイガーシャーク,[n],"[sand tiger shark (Carcharias taurus), gray nurse shark]"
@@ -1537,7 +1537,7 @@
 1537,1,-,デジタルシグナルプロセッサ,[n],"[digital signal processor, DSP]"
 1538,1,紫蘇,しそ,[n],"[shiso (Perilla frutescens var. crispa), perilla, beefsteak plant]"
 1539,1,-,ラングドシャ,[n],"[cat tongue, thin cookie or chocolate shaped like a tongue]"
-1540,,-,シャブ,[n],"[stimulant, pep-pill, upper, speed]"
+1540,1,-,シャブ,[n],"[stimulant, pep-pill, upper, speed]"
 1541,1,高フルクトース・コーン・シロップ,こうフルクトースコーンシロップ,[n],"[high-fructose corn syrup, HFCS]"
 1542,1,-,コーンシロップ,[n],[corn syrup]
 1543,1,-,アクリルシロップ,[n],[acrylic syrup]
@@ -1764,10 +1764,10 @@
 1764,1,-,デーライトタイプ,[n],[daylight type]
 1765,1,-,ニュータイプ,[n],[new type]
 1766,1,-,タイプミス,[n],"[typographical error, typo]"
-1767,,-,ジャケットタイプ,[n],"[jacket type (e.g. a style of clothing), jacket-style buoyancy control device (BCD) shaped like a sleeveless coat]"
+1767,1,-,ジャケットタイプ,[n],"[jacket type (e.g. a style of clothing), jacket-style buoyancy control device (BCD) shaped like a sleeveless coat]"
 1768,1,-,ベストタイプ,[n],[best type]
 1769,1,-,アクションタイプ,[n],[action type]
-1770,,-,キャビネットタイプ,[n],[cabinet type]
+1770,1,-,キャビネットタイプ,[n],[cabinet type]
 1771,1,-,ジョブタイプ,[n],[job type]
 1772,1,-,タイプスタイル,[n],[type style]
 1773,,-,タイプファミリ,[n],[type family]
@@ -1949,7 +1949,7 @@
 1949,1,-,ホールトマト,[n],"[whole tomatoes (canned, etc.)]"
 1950,1,-,プチトマト,[n],[cherry tomato]
 1951,1,-,トマトジュース,[n],[tomato juice]
-1952,,-,トマトソース,[n],[tomato sauce]
+1952,1,-,トマトソース,[n],[tomato sauce]
 1953,1,-,チェリートマト,[n],[cherry tomato]
 1954,1,-,トマトペースト,[n],[tomato paste]
 1955,1,-,ミニトマト,[n],[cherry tomato]
@@ -2477,7 +2477,7 @@
 2477,1,-,ピンクムード,[n],"[pink mood, sexually charged atmosphere]"
 2478,1,-,ピンクレディー,[n],[pink lady]
 2479,1,-,ベビーピンク,[n],[baby pink]
-2480,,-,ローズピンク,[n],[rose pink]
+2480,1,-,ローズピンク,[n],[rose pink]
 2481,1,-,ピンクコンパニオン,[n],[female escort]
 2482,1,-,フラ,[n],[hula (dance)]
 2483,1,-,フライズ,[n],"[flies, area over the stage of a theater (containing overhead lights, drop curtains, etc.)]"
@@ -2721,7 +2721,7 @@
 2721,1,-,ポケット・チーフ,[n],[pocket square (decorative handkerchief used as an accessory to a suit)]
 2722,1,-,フットポケット,[n],[foot pocket portion of a diving fin]
 2723,1,-,ポケットモデム,[n],[pocket modem]
-2724,,-,ポケットモンキー,[n],[pocket monkey]
+2724,1,-,ポケットモンキー,[n],[pocket monkey]
 2725,1,-,パッチポケット,[n],[patch pocket]
 2726,1,-,ポケットパーク,[n],[pocket park]
 2727,1,-,ウオッチポケット,[n],[watch pocket]
@@ -2735,11 +2735,11 @@
 2735,1,-,ヘッドマウントディスプレイ,[n],"[head mounted display, HMD]"
 2736,1,-,ラックマウントサーバ,[n],[rack-mount server]
 2737,1,-,マグ,[n],[mug]
-2738,,-,マグカップ,[n],[mug]
+2738,1,-,マグカップ,[n],[mug]
 2739,1,-,タイトルマッチ,[n],[title match]
 2740,1,-,タッグマッチ,[n],[tag-team match (wrestling)]
 2741,1,-,パタンマッチ,[n],[pattern match]
-2742,,-,タグマッチ,[n],[tag match]
+2742,1,-,タグマッチ,[n],[tag match]
 2743,1,-,テストマッチ,[n],[test match]
 2744,1,-,マナ,[n],"[manna, mana]"
 2745,1,-,テーブルマナー,[n],[table manners]
@@ -2797,7 +2797,7 @@
 2797,1,-,ライフサイエンス,[n],[life science]
 2798,1,-,ライフサイクル,[n],[life cycle]
 2799,1,-,ライフジャケット,[n],"[life jacket, life vest]"
-2800,,-,ライフベスト,[n],"[life vest, life jacket]"
+2800,1,-,ライフベスト,[n],"[life vest, life jacket]"
 2801,1,-,ライフステージ,[n],[life stage]
 2802,1,-,セカンドライフ,[n],"[second life (esp. that of a retiree), SecondLife (online virtual world)]"
 2803,1,-,シングルライフ,[n],[single life]
@@ -2920,7 +2920,7 @@
 2920,1,-,ペットロス,[n],[emotional effect on pet owners from losing their pet]
 2921,1,-,チャンスロス,[n],"[opportunity loss, loss of sales opportunity]"
 2922,1,-,ロマ,[n],"[Roma, Rom]"
-2923,,-,ヌーヴォーロマン,[n],"[nouveau roman, experimental novel]"
+2923,1,-,ヌーヴォーロマン,[n],"[nouveau roman, experimental novel]"
 2924,1,-,ビルドゥングスロマン,[n],"[novel about one's education, spiritual growth, etc,, coming-of-age story, Bildungsroman]"
 2925,1,-,ロム,[n],"[Rom, Romani person]"
 2926,1,-,マスクロム,[n],[mask ROM]
@@ -2963,10 +2963,10 @@
 2963,1,-,ローカルルータ,[n],[local router]
 2964,1,-,ローカルループ,[n],[local loop]
 2965,1,-,ローカルコスト,[n],[local cost]
-2966,,-,ローカルフード,[n],"[regional cuisine, esp. using local ingredients]"
+2966,1,-,ローカルフード,[n],"[regional cuisine, esp. using local ingredients]"
 2967,1,-,ローカルエリアネットワーク,[n],"[local area network, LAN]"
 2968,1,-,ローカルタイムゾーン,[n],[local time zone]
-2969,,羅馬,ローマ,[n],[Rome]
+2969,1,羅馬,ローマ,[n],[Rome]
 2970,1,-,ワオ,[int],[wow]
 2971,1,輪尾狐猿,わおきつねざる,[n],[ring-tailed lemur (Lemur catta)]
 2972,1,-,ステーションワゴン,[n],[station wagon]
@@ -3218,7 +3218,7 @@
 3218,1,反比,はんぴ,[n],[inverse ratio]
 3219,1,取り,どり,[n-suf],"[samurai receiving this much rice as a fee, offering of rice cake containing this much rice, person receiving this amount of money as a salary]"
 3220,1,取り纏め,とりまとめ,[n],"[collecting, collection, collation, gathering, arrangement, coordination]"
-3221,,取り上げ,とりあげ,[n],"[adoption, acceptance, confiscation, midwifery, midwife]"
+3221,1,取り上げ,とりあげ,[n],"[adoption, acceptance, confiscation, midwifery, midwife]"
 3222,1,取り付け,とりつけ,[n],"[installation, mounting, furnishing, fitting, run (on a bank), bank run]"
 3223,1,取り入れ,とりいれ,[n],"[taking in, harvesting]"
 3224,1,取り合わせ,とりあわせ,[n],"[an assortment, combination]"
@@ -4028,7 +4028,7 @@
 4028,1,雲散,うんさん,"[n, vs]","[scatter, disperse]"
 4029,1,雲泥,うんでい,[n],[great difference]
 4030,1,電子音,でんしおん,[n],[electronic sound]
-4031,,電気工,でんきこう,[n],[electrician]
+4031,1,電気工,でんきこう,[n],[electrician]
 4032,1,電熱,でんねつ,"[n, adj-no]",[electric heat]
 4033,1,電話料,でんわりょう,[n],[telephone charge]
 4034,1,震え,ふるえ,[n],"[shivering, trembling]"
@@ -4272,7 +4272,7 @@
 4272,1,小職,しょうしょく,"[n, pn]","[lowly government servant, humble government servant, I, me]"
 4273,1,小身者,しょうしんもの,[n],"[person with a humble salary, person of a low condition]"
 4274,1,正直言って,しょうじきいって,[exp],"[to be honest, to be frank, honestly, if you want to know the truth]"
-4275,,昇順,しょうじゅん,"[adj-na, n]",[ascending order]
+4275,1,昇順,しょうじゅん,"[adj-na, n]",[ascending order]
 4276,1,召状,しょうじょう,[n],[letter of invitation]
 4277,1,商状,しょうじょう,[n],[market conditions]
 4278,1,霄壌,しょうじょう,[n],[heaven and earth]
@@ -4708,7 +4708,7 @@
 4708,1,-,エレベーターホール,[n],"[elevator landing, elevator hall]"
 4709,1,-,カントリーエレベーター,[n],[country elevator]
 4710,,-,エンカウンターグループ,[n],[encounter group]
-4711,,-,エンジニアリングプラスチック,[n],[engineering plastics]
+4711,1,-,エンジニアリングプラスチック,[n],[engineering plastics]
 4712,1,-,システムエンジニアリング,[n],[systems engineering]
 4713,1,-,ジーンエンジニアリング,[n],"[gene engineering, genetic engineering]"
 4714,,-,バリューエンジニアリング,[n],[value engineering]
@@ -5605,7 +5605,7 @@
 5605,1,-,セールスプロモーション,[n],[sales promotion]
 5606,1,-,デザインプロモーター,[n],[design promoter]
 5607,1,-,プロンプタースクリーン,[n],[prompter screen]
-5608,,-,エッグベネディクト,[n],[eggs Benedict]
+5608,1,-,エッグベネディクト,[n],[eggs Benedict]
 5609,1,-,フリンジベネフィット,[n],[fringe benefit]
 5610,1,-,ペナルティーキック,[n],[penalty kick]
 5611,1,-,ペナルティーゴール,[n],"[penalty goal, PG]"
@@ -5933,7 +5933,7 @@
 5933,,専,せん,"[n, n-pref]","[having a fetish for ..., specializing in ..., majoring in ..., first, foremost, number one priority, doing as one pleases, acting selfishly, fired brick]"
 5934,1,尖み,こすみ,[n],[diagonal move (in the game of go)]
 5935,1,尨,むく,[n],"[shaggy hair, shaggy dog]"
-5936,,巡,じゅん,"[suf, ctr]","[counter for tours, cycles, rounds, circuits, etc.]"
+5936,1,巡,じゅん,"[suf, ctr]","[counter for tours, cycles, rounds, circuits, etc.]"
 5937,1,巫,かんなぎ,[n],"[medium, diviner, shaman, oracle]"
 5938,1,帥,そち,[n],[director of the Dazaifu]
 5939,1,幼,いと,"[n, pref]","[young child (esp. a young girl), young]"
@@ -6048,7 +6048,7 @@
 6048,,ハードウェアＴ＆Ｌ,ハードウェアティーアンドエル,[n],"[hardware transform and lighting, hardware T&L]"
 6049,1,ＣＤ−Ｒ,シーディーアール,[n],[CD-R]
 6050,1,ＤＶＤ−Ｒ,ディーブイディーアール,[n],[DVD-R (digital versatile disc recordable)]
-6051,,Ｒ＆Ｄ,アールアンドディー,[n],"[research and development, R&D]"
+6051,1,Ｒ＆Ｄ,アールアンドディー,[n],"[research and development, R&D]"
 6052,,臼搗く,うすづく,"[v5k, vt]","[to pound (rice, etc.)]"
 6053,1,然然,しかじか,"[adv, n, adj-no]",[such and such]
 6054,,秘史,ひし,[n],[hidden or secret history]
@@ -10914,7 +10914,7 @@
 10914,,-,バリ,[n],[burr (e.g. on a machined edge)]
 10915,,特機,とっき,[n],"[specialized equipment, specialized machinery]"
 10916,,徳器,とっき,[n],"[one's talent and virtue, noble character]"
-10917,,総轄,そうかつ,"[n, vs]",[being in general control of]
+10917,1,総轄,そうかつ,"[n, vs]",[being in general control of]
 10918,,薬禍,やっか,[n],[harmful side effects of a medicine or drug]
 10919,,増勢,ぞうせい,[n],[increasing trend]
 10920,1,使令,しれい,"[n, vs]","[giving orders to someone and making use of him, servant]"
@@ -13522,7 +13522,7 @@
 13522,,禍源,かげん,[n],[source of misfortune]
 13523,,華言,かげん,[n],[flowery words]
 13524,,嘉元,かげん,[n],[Kagen era (1303.8.5-1306.12.14)]
-13525,,訛言,かげん,[n],"[non-standard pronunciation, dialect, mistaken rumor, baseless gossip]"
+13525,1,訛言,かげん,[n],"[non-standard pronunciation, dialect, mistaken rumor, baseless gossip]"
 13526,,画聖,がせい,[n],[master painter]
 13527,1,麕,のろ,[n],[European roe deer (Capreolus capreolus)]
 13528,,-,のろ,[n],[slag]
@@ -18948,7 +18948,7 @@
 18948,,-,アッパークラス,[n],[upper class]
 18949,,-,アップスタイル,[n],[upswept hairstyle]
 18950,,-,アップダウン,[n],"[ups and downs, up-and-down]"
-18951,,-,イメージアップ,"[n, vs]",[creating a better image]
+18951,1,-,イメージアップ,"[n, vs]",[creating a better image]
 18952,,-,クランクアップ,"[n, vs]",[finish shooting]
 18953,,-,グレードアップ,"[n, vs]","[upgrade, update]"
 18954,,-,コストアップ,"[n, vs]",[increase in cost]
@@ -26327,7 +26327,7 @@
 26327,,御嶽,うたき,[n],"[(Okinawa) sacred site, sacred grove]"
 26328,,御嶽,みたけ,[n],"[large, high mountain]"
 26329,1,押し手,おして,[n],"[seal, stamp, depressing the string of a zither with one's left hand, (in archery) left hand, obstinacy, stubbornness]"
-26330,,中宿,なかやど,[n],"[inn where one rests on the way, inn that serves as a meeting place for lovers, inn that introduces clients to prostitutes]"
+26330,1,中宿,なかやど,[n],"[inn where one rests on the way, inn that serves as a meeting place for lovers, inn that introduces clients to prostitutes]"
 26331,,福建土楼,ふっけんどろう,[n],"[type of circular or square earth building built from the 12th century in Fujian, China]"
 26332,1,湿電池,しつでんち,[n],[wet cell battery]
 26333,,器物損壊,きぶつそんかい,[n],"[property damage (not including ships, buildings, planes and documents)]"
@@ -30443,7 +30443,7 @@
 30443,,-,ギャザー,[n],[gather (dressmaking)]
 30444,,銀鮫,ぎんざめ,[n],"[silver chimaera (Chimaera phantasma, species of deep water cartilaginous ghost shark from the Western Pacific)]"
 30445,,-,ギー,[n],[ghee]
-30446,,-,ギーク,[n],[geek]
+30446,1,-,ギーク,[n],[geek]
 30447,,-,クエスト,[n],"[quest, pursuit, search]"
 30448,,Ξ,クサイ,[n],[xi]
 30449,,-,クチン,[n],[cutin]
