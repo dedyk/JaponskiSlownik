@@ -98,6 +98,7 @@ public class WordGenerator {
 				
 				// cat input/common_word.csv | egrep -E -e "^[0-9]*,," | cut -d, -f1 | shuf | head -1
 				// cat input/common_word.csv | egrep -E -e "^[0-9]*,," | cut -d, -f1 | wc -l
+				// cat input/common_word.csv | head -6051 | egrep -E -e "^[0-9]*,," | cut -d, -f1 | shuf | head -25 | sort -n
 				
 				if (args.length != 2) {
 					
