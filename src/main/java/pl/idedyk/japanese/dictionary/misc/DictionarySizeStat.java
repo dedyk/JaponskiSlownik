@@ -134,6 +134,7 @@ public class DictionarySizeStat {
 	private static int countWords(String repositoryPath) throws IOException {
 		
 		final String[] wordCsvs = new String[] { "word.csv", "word01.csv", "word02.csv" };
+		//final String[] wordCsvs = new String[] { "common_word.csv" };
 		
 		//
 		
@@ -151,6 +152,11 @@ public class DictionarySizeStat {
 			
 			while (csvReader.readRecord()) {
 				
+				/* Dla common_word
+				if (csvReader.get(1).equals("1") == true) {
+					continue;
+				}
+				*/
 				
 				counter++;
 			}
