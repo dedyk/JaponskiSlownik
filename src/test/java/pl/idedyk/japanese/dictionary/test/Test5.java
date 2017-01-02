@@ -1,10 +1,5 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.Map;
-
-import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
-
 public class Test5 {
 
 	public static void main(String[] args) throws Exception {
@@ -120,6 +115,7 @@ public class Test5 {
 		System.out.println(b + " - " + b.hashCode());
 		*/
 		
+		/*
 		KanaHelper kanaHelper = new KanaHelper();
 		
 		final Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
@@ -128,6 +124,22 @@ public class Test5 {
 				"ー", kanaCache, true));
 		
 		System.out.println(lhsRomaji);
+		*/
+		
+		/*
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
+		
+		List<DictionaryEntryGroup> generateWordGroupList = AndroidDictionaryGenerator.generateWordGroups(polishJapaneseEntries);
+		for (DictionaryEntryGroup dictionaryEntryGroup : generateWordGroupList) {
+			
+			System.out.println(dictionaryEntryGroup.getId() + " - " + dictionaryEntryGroup.getDictionaryEntryList());
+			
+		}
+		
+		FileOutputStream outputStream = new FileOutputStream(new File("/tmp/a/word_group.csv"));
+		
+		CsvReaderWriter.generateWordGroupCsv(outputStream, generateWordGroupList);
+		*/
 	}
 	
 	/*

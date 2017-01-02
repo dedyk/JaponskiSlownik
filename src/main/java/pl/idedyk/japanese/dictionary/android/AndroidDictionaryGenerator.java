@@ -16,10 +16,15 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import pl.idedyk.japanese.dictionary.api.dto.Attribute;
+import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryGroup;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
@@ -81,7 +86,7 @@ public class AndroidDictionaryGenerator {
 		@SuppressWarnings("unused")
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmeNewNameDictionary,
 				new String[] { "input/word01.csv", "input/word02.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word-power.csv",
-				"output/transitive_intransitive_pairs.csv");
+				"output/transitive_intransitive_pairs.csv", "output/word_group.csv");
 		
 		generateKanaEntries("../JapaneseDictionary_additional/kanjivg", "output/kana.csv");
 
@@ -106,7 +111,7 @@ public class AndroidDictionaryGenerator {
 			JMENewDictionary jmeNewDictionary, TreeMap<String, EDictEntry> jmedictCommon,
 			JMENewDictionary jmeNewNameDictionary, String[] sourceFileNames,
 			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationPowerFileName,
-			String transitiveIntransitivePairsOutputFile) throws Exception {
+			String transitiveIntransitivePairsOutputFile, String wordGroupOutputFile) throws Exception {
 
 		System.out.println("checkAndSavePolishJapaneseEntries");
 
@@ -168,9 +173,18 @@ public class AndroidDictionaryGenerator {
 
 		CsvReaderWriter.generateWordPowerCsv(outputPowerStream, jmeNewDictionary, result);
 		
+		// generowanie grup slow
+		System.out.println("checkAndSavePolishJapaneseEntries: generateWordGroupCsv");
+		
+		List<DictionaryEntryGroup> generateWordGroupList = generateWordGroups(result);
+		
+		FileOutputStream outputWordGroupStream = new FileOutputStream(new File(wordGroupOutputFile));
+		
+		CsvReaderWriter.generateWordGroupCsv(outputWordGroupStream, generateWordGroupList);
+		
 		return result;
 	}
-	
+
 	private static void generateExampleSentence(List<PolishJapaneseEntry> dictionary, String tatoebaSentencesDir, 
 			String sentencesDestinationFileName, String sentencesGroupsDestinationFileName) throws Exception {
 		
@@ -804,5 +818,76 @@ public class AndroidDictionaryGenerator {
 		csvReader.close();
 
 		return transitiveIntransitivePairList;
+	}
+	
+	private static List<DictionaryEntryGroup> generateWordGroups(List<PolishJapaneseEntry> polishJapaneseEntryList) {
+				
+		List<DictionaryEntryGroup> result = new ArrayList<DictionaryEntryGroup>();
+		
+		// utworz mape z id'kami
+		TreeMap<Integer, PolishJapaneseEntry> polishJapaneseEntryIdMap = new TreeMap<Integer, PolishJapaneseEntry>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+			polishJapaneseEntryIdMap.put(polishJapaneseEntry.getId(), polishJapaneseEntry);
+		}
+		
+		int dictionaryEntryGroupCounter = 1;
+		
+		while (true) {
+			
+			// pobieramy pierwszy wpis
+			Entry<Integer, PolishJapaneseEntry> firstEntry = polishJapaneseEntryIdMap.firstEntry();
+			
+			if (firstEntry == null) {
+				break; // wychodzimy
+			}
+			
+			// mamy slowo
+			PolishJapaneseEntry polishJapaneseEntry = firstEntry.getValue();
+			
+			polishJapaneseEntryIdMap.remove(polishJapaneseEntry.getId());
+			
+			// pobranie wszystkich innych alternatyw
+			List<Attribute> alternativeAttributeList = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.ALTERNATIVE);
+
+			List<DictionaryEntry> dictionaryEntryList = new ArrayList<DictionaryEntry>();
+			
+			dictionaryEntryList.add(polishJapaneseEntry);
+			
+			if (alternativeAttributeList.size() >  0) { // // to slowo ma alternatywy, dodajemy je
+				
+				for (Attribute alternativeAttribute : alternativeAttributeList) {
+					
+					// id alternatywy
+					Integer alternativeId = Integer.parseInt(alternativeAttribute.getAttributeValue().get(0));
+					
+					// pobranie alternatywy
+					PolishJapaneseEntry alternativePolishJapaneseEntry = polishJapaneseEntryIdMap.get(alternativeId);
+					
+					if (alternativePolishJapaneseEntry == null) {
+						continue;
+					}
+					
+					// usuniecie alternatywy z mapy
+					polishJapaneseEntryIdMap.remove(alternativeId);
+					
+					dictionaryEntryList.add(alternativePolishJapaneseEntry);					
+				}
+			}
+
+			// tworzymy grupe
+			DictionaryEntryGroup dictionaryEntryGroup = new DictionaryEntryGroup();
+			
+			dictionaryEntryGroup.setId(dictionaryEntryGroupCounter);
+			dictionaryEntryGroup.setDictionaryEntryList(dictionaryEntryList);
+
+			// dodajemy do wyniku
+			result.add(dictionaryEntryGroup);
+			
+			// zwiekszamy licznik
+			dictionaryEntryGroupCounter++;
+		}
+		
+		return result;
 	}
 }
