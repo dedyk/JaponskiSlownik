@@ -19,8 +19,6 @@ import java.util.Map.Entry;
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryGroup;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
@@ -455,6 +453,7 @@ public class CsvReaderWriter {
 		csvWriter.close();
 	}
 	
+	/*
 	public static void generateWordGroupCsv(OutputStream out, List<DictionaryEntryGroup> dictionaryEntryGroupList) throws IOException {
 		
 		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
@@ -478,6 +477,7 @@ public class CsvReaderWriter {
 		
 		csvWriter.close();
 	}
+	*/
 
 	public static List<PolishJapaneseEntry> parsePolishJapaneseEntriesFromCsv(String[] fileNames) throws IOException,
 			JapaneseDictionaryException {

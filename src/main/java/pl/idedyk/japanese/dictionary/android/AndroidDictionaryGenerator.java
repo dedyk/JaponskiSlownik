@@ -16,15 +16,10 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import pl.idedyk.japanese.dictionary.api.dto.Attribute;
-import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryGroup;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
@@ -176,11 +171,13 @@ public class AndroidDictionaryGenerator {
 		// generowanie grup slow
 		System.out.println("checkAndSavePolishJapaneseEntries: generateWordGroupCsv");
 		
+		/*
 		List<DictionaryEntryGroup> generateWordGroupList = generateWordGroups(result);
 		
 		FileOutputStream outputWordGroupStream = new FileOutputStream(new File(wordGroupOutputFile));
 		
 		CsvReaderWriter.generateWordGroupCsv(outputWordGroupStream, generateWordGroupList);
+		*/
 		
 		return result;
 	}
@@ -820,6 +817,7 @@ public class AndroidDictionaryGenerator {
 		return transitiveIntransitivePairList;
 	}
 	
+	/*
 	private static List<DictionaryEntryGroup> generateWordGroups(List<PolishJapaneseEntry> polishJapaneseEntryList) {
 				
 		List<DictionaryEntryGroup> result = new ArrayList<DictionaryEntryGroup>();
@@ -890,4 +888,5 @@ public class AndroidDictionaryGenerator {
 		
 		return result;
 	}
+	*/
 }
