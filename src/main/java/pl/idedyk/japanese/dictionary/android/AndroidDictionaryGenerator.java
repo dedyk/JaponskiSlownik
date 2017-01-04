@@ -81,7 +81,7 @@ public class AndroidDictionaryGenerator {
 		@SuppressWarnings("unused")
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmeNewNameDictionary,
 				new String[] { "input/word01.csv", "input/word02.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word-power.csv",
-				"output/transitive_intransitive_pairs.csv", "output/word_group.csv");
+				"output/transitive_intransitive_pairs.csv"); //, "output/word_group.csv");
 		
 		generateKanaEntries("../JapaneseDictionary_additional/kanjivg", "output/kana.csv");
 
@@ -106,7 +106,7 @@ public class AndroidDictionaryGenerator {
 			JMENewDictionary jmeNewDictionary, TreeMap<String, EDictEntry> jmedictCommon,
 			JMENewDictionary jmeNewNameDictionary, String[] sourceFileNames,
 			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationPowerFileName,
-			String transitiveIntransitivePairsOutputFile, String wordGroupOutputFile) throws Exception {
+			String transitiveIntransitivePairsOutputFile /*, String wordGroupOutputFile */) throws Exception {
 
 		System.out.println("checkAndSavePolishJapaneseEntries");
 
@@ -168,10 +168,10 @@ public class AndroidDictionaryGenerator {
 
 		CsvReaderWriter.generateWordPowerCsv(outputPowerStream, jmeNewDictionary, result);
 		
-		// generowanie grup slow
+		// generowanie grup slow - wylaczone
+		/*
 		System.out.println("checkAndSavePolishJapaneseEntries: generateWordGroupCsv");
 		
-		/*
 		List<DictionaryEntryGroup> generateWordGroupList = generateWordGroups(result);
 		
 		FileOutputStream outputWordGroupStream = new FileOutputStream(new File(wordGroupOutputFile));
