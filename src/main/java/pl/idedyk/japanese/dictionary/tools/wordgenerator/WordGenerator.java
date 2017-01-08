@@ -35,6 +35,8 @@ import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.store.Directory;
 
+import com.atilika.kuromoji.ipadic.Token;
+import com.atilika.kuromoji.ipadic.Tokenizer;
 import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
@@ -66,7 +68,7 @@ public class WordGenerator {
 				
 		String operationString = null;
 		Operation operation = null;
-		
+				
 		// wstepne sprawdzenie argumentow		
 		if (args.length == 0) {
 			
@@ -440,6 +442,144 @@ public class WordGenerator {
 				searchResultFileWriter.write(Utils.convertListToString(foundWordSearchList));
 				
 				searchResultFileWriter.close();
+				
+				break;
+			}
+			
+			case GENERATE_MISSING_WORD_LIST_FROM_TEXT: {
+								
+				if (args.length != 2) {
+					
+					System.err.println("Niepoprawna liczba argumentów");
+					
+					return;
+				}
+
+				// nazwa pliku do wczytania
+				String fileName = args[1];
+				
+				// wczytanie pliku
+				String text = readFullyFile(fileName);
+
+				// stworzenie tokenizer'a
+				Tokenizer tokenizer = new Tokenizer();
+				
+				// stokonowanie tekstu
+				List<Token> tokenList = tokenizer.tokenize(text);
+				
+				// lista slow do sprawdzenia
+				Set<String> wordsToCheck = new TreeSet<String>();
+								
+		        for (Token token : tokenList) {
+		        	
+		        	String surface = token.getSurface();
+		        	String baseForm = token.getBaseForm();
+		        	
+		        	if (surface != null && surface.trim().equals("") == false && surface.equals("*") == false) {
+		        		
+		        		if (Utils.isAllJapaneseChars(surface) == true) {
+			        		wordsToCheck.add(surface);
+		        			
+		        		}		        		
+		        	}
+		        	
+		        	if (baseForm != null && baseForm.trim().equals("") == false && baseForm.equals("*") == false) {
+		        		
+		        		if (Utils.isAllJapaneseChars(baseForm) == true) {
+		        			wordsToCheck.add(baseForm);
+		        			
+		        		}
+		        	}
+		        }
+		        
+				// cache'owanie slownika
+				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
+								
+				// wczytanie slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();				
+				
+				// tworzenie indeksu lucene
+				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
+								
+				// stworzenie wyszukiwacza
+				IndexReader reader = DirectoryReader.open(luceneIndex);
+
+				IndexSearcher searcher = new IndexSearcher(reader);
+		        
+				// zmienne pomocnicze
+				int csvId = 1;
+				
+				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
+				
+				Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
+				
+				// generowanie slow
+				System.out.println("Generowanie słów");
+				
+		        // sprawdzanie slow
+		        for (String word : wordsToCheck) {
+					
+					Query query = Helper.createLuceneDictionaryIndexTermQuery(word);
+
+					ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
+					
+					if (scoreDocs.length > 0) {
+						
+						for (ScoreDoc scoreDoc : scoreDocs) {
+							
+							Document foundDocument = searcher.doc(scoreDoc.doc);
+
+							// znaleziony obiekt od lucene
+							GroupEntry groupEntryFromLucene = Helper.createGroupEntry(foundDocument);
+							
+							Integer groupId = groupEntryFromLucene.getGroup().getId();
+							
+							// czy ta grupa byla juz sprawdzana
+							if (alreadyCheckedGroupId.contains(groupId) == true) {
+								continue;
+								
+							} else {
+								alreadyCheckedGroupId.add(groupId);
+								
+							}
+							
+							// szukamy pelnej grupy
+							Group groupInDictionary = jmeNewDictionary.getGroupById(groupId);
+							
+							List<GroupEntry> groupEntryList = groupInDictionary.getGroupEntryList();
+																
+							// grupujemy po tych samych tlumaczenia
+							List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
+										
+							for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
+								
+								GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
+
+								String groupEntryKanji = groupEntry.getKanji();
+								String groupEntryKana = groupEntry.getKana();
+																
+								List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+								
+								if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
+																		
+									CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
+									
+									if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
+									
+										newCommonWordMap.put(commonWord.getId(), commonWord);
+									
+										csvId++;
+									}
+								}
+							}
+						}													
+					}
+				}
+		        
+				reader.close();
+				
+				// zapisywanie slownika
+				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/text-word-new.csv");				
 				
 				break;
 			}
@@ -1509,18 +1649,8 @@ public class WordGenerator {
 								
 								String substring = currentCustomFileLine.substring(startIdx, endIdx);
 								
-								boolean isAllJapaneseChars = true;
-								
-								for (int substringIdx = 0; substringIdx < substring.length(); ++substringIdx) {
-									
-									if (Utils.isJapanaseChar(substring.charAt(substringIdx)) == false) {
-										
-										isAllJapaneseChars = false;
-										
-										break;
-									}									
-								}
-								
+								boolean isAllJapaneseChars = Utils.isAllJapaneseChars(substring);
+																
 								if (isAllJapaneseChars == true) {
 									allPrefixes.add(substring);									
 								}
@@ -2051,8 +2181,6 @@ public class WordGenerator {
 				int csvId = 1;
 				
 				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
-
-				// tutaj
 				
 				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 					
@@ -2203,6 +2331,36 @@ public class WordGenerator {
 			throw new RuntimeException(e);
 		}
 	}
+	
+	private static String readFullyFile(String fileName) {
+
+		StringBuffer result = new StringBuffer();
+		
+		try {
+
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File(fileName))));
+
+			while (true) {
+
+				String line = br.readLine();
+
+				if (line == null) {
+					break;
+				}
+				
+				result.append(line + "\n");
+			}
+
+			br.close();
+
+			return result.toString();
+
+		} catch (IOException e) {
+			
+			throw new RuntimeException(e);
+		}
+	}
+
 	
 	private static boolean existsInCommonWords(Map<Integer, CommonWord> commonWordMap, String kanji, String kana) {
 		
