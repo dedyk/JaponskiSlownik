@@ -20066,7 +20066,7 @@
 20066,,-,カンパニーペーパー,[n],[company paper]
 20067,1,-,カンパニーマガジン,[n],[company magazine]
 20068,,-,カンパニーユニオン,[n],[company union]
-20069,,-,トレーディングカンパニー,[n],[trading company]
+20069,1,-,トレーディングカンパニー,[n],[trading company]
 20070,,-,ペーパーカンパニー,[n],"[bogus company, dummy corporation, shell company]"
 20071,,-,オフショアカンパニー,[n],[offshore company]
 20072,,-,カース,[n],[curse]
@@ -21256,7 +21256,7 @@
 21256,,-,シェー,[int],"[holy moly, holy cow, whoa, wow]"
 21257,,-,ミルクセーキ,[n],[milk shake]
 21258,1,-,シェープ,"[n, vs]",[shape]
-21259,,-,アイブローシェープ,[n],[eyebrow shape]
+21259,1,-,アイブローシェープ,[n],[eyebrow shape]
 21260,,-,シスターボーイ,[n],[sissy]
 21261,,-,クローズドシステム,[n],[closed system]
 21262,,-,コーディングシステム,[n],[coding system]
@@ -24237,7 +24237,7 @@
 24237,1,-,ロイヤルペンギン,[n],[royal penguin (Eudyptes schlegeli)]
 24238,1,-,ガラパゴスペンギン,[n],[Galapagos penguin (Spheniscus mendiculus)]
 24239,,-,ペンシル,[n],[pencil]
-24240,,-,アイブローペンシル,[n],[eyebrow pencil]
+24240,1,-,アイブローペンシル,[n],[eyebrow pencil]
 24241,,-,ペンネ,[n],[penne]
 24242,,-,ページボーイ,[n],[page boy]
 24243,1,-,ホームページ,[n],"[web site, website, web page, webpage, home page, homepage]"
@@ -24942,7 +24942,7 @@
 24942,,-,レンタルルーム,[n],[rental room]
 24943,1,-,ロンパールーム,[n],"[romper room, children's play room]"
 24944,,-,ディーリングルーム,[n],[dealing room]
-24945,,-,トレーディングルーム,[n],[trading room]
+24945,1,-,トレーディングルーム,[n],[trading room]
 24946,,-,マキシミンルール,[n],[maximin rule]
 24947,,-,コンプリヘンシブレイアウト,[n],[comprehensive layout]
 24948,,-,レインジ,[n],[range]
@@ -29428,7 +29428,7 @@
 29428,,釣り手,つりて,[n],"[hanger (e.g. for mosquito net), hanging strap, fisherman, angler, lifting hand (judo)]"
 29429,,吊り手,つりて,[n],"[hanger (e.g. for mosquito net), hanging strap, fisherman, angler]"
 29430,,蔓金梅,つるきんばい,[n],[Potentilla yokusaiana (species of cinquefoil)]
-29431,,尽くし,づくし,[suf],"[all sorts of, all kinds of]"
+29431,1,尽くし,づくし,[suf],"[all sorts of, all kinds of]"
 29432,,手上げ,てあげ,[n],"[all over, given in, given up hope, bring to knees]"
 29433,,-,ていうか,[exp],[I mean (used at the beginning of a sentence)]
 29434,,定期業務,ていきぎょうむ,[n],"[fixed task, scheduled task]"
@@ -31881,7 +31881,7 @@
 31881,,手繰り寄せる,たぐりよせる,"[v1, vt]","[to haul in (e.g. rope, net, etc.), to pull in, to attract (e.g. stares)]"
 31882,,唯でさえ,ただでさえ,[adv],"[even at the best of times, already, (even) under normal circumstances, in addition to, as it is]"
 31883,1,-,ただでは,[exp],"[This isn't over, I will get my revenge]"
-31884,,-,ただじゃおかないぞ,[exp],"[You'll pay for this!, You'd better keep your mouth shut!]"
+31884,1,-,ただじゃおかないぞ,[exp],"[You'll pay for this!, You'd better keep your mouth shut!]"
 31885,,堪へる,たへる,"[v1, vi, vt]","[to bear, to stand, to endure, to put up with]"
 31886,1,矯め直す,ためなおす,[v5s],"[to set up again, to correct, to cure]"
 31887,,躊躇い,ためらい,"[n, vs]","[faltering, hesitation]"
@@ -32325,7 +32325,7 @@
 32325,,-,チープ,[adj-na],[cheap]
 32326,1,-,ティールーム,[n],[tearoom]
 32327,,天狗茸,てんぐたけ,[n],"[panther cap (species of poisonous mushroom, Amanita pantherina)]"
-32328,,ＤＩＮＫＳ,ディンクス,[n],"[dinks (double-income, no kids), childless working couple]"
+32328,1,ＤＩＮＫＳ,ディンクス,[n],"[dinks (double-income, no kids), childless working couple]"
 32329,,-,デフォルト,[n],[default]
 32330,,-,デブる,[v5r],"[to grow fat, to become fat]"
 32331,,-,トリコロール,[n],"[tricolor, tricolour, tricolore]"
@@ -33370,7 +33370,7 @@
 33370,,英仏,えいふつ,"[n, adj-no]","[Britain and France, Anglo-French]"
 33371,1,英仏海峡,えいふつかいきょう,[n],[the English Channel]
 33372,,英数,えいすう,[n],[ASCII coding]
-33373,,英検,えいけん,[n],[English proficiency test (esp. the STEP test)]
+33373,1,英検,えいけん,[n],[English proficiency test (esp. the STEP test)]
 33374,1,英語力,えいごりょく,[n],"[command of English, proficiency in English, knowledge of English]"
 33375,,英雄譚,えいゆうたん,[n],"[epic, heroic tale]"
 33376,,草食系,そうしょくけい,[n],"[man who is uninterested in aggressively pursuing women, peaceable men who don't approach women as potential partners, herbivore]"
@@ -33381,7 +33381,7 @@
 33381,1,著作物,ちょさくぶつ,[n],"[written thing (e.g. book, musical composition), works]"
 33382,1,蕁麻疹,じんましん,[n],"[hives, nettle rash, urticaria]"
 33383,,辣韮,らっきょう,[n],"[Japanese leek (Allium chinense), Chinese onion, sour-sweet pickle of Japanese leek]"
-33384,,薬学部,やくがくぶ,[n],"[pharmaceutical department, college of pharmacy]"
+33384,1,薬学部,やくがくぶ,[n],"[pharmaceutical department, college of pharmacy]"
 33385,,薬用植物,やくようしょくぶつ,[n],[medicinal plants or herbs]
 33386,,薬礼,やくれい,[n],[medical fee]
 33387,,虚ろ,うつろ,"[adj-na, n]","[blank, cavity, hollow, empty (space)]"
