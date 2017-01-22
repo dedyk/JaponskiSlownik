@@ -1,5 +1,10 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.List;
+
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+
 public class Test5 {
 
 	public static void main(String[] args) throws Exception {
@@ -140,6 +145,15 @@ public class Test5 {
 		
 		CsvReaderWriter.generateWordGroupCsv(outputStream, generateWordGroupList);
 		*/
+		
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
+		
+		for (int i = 0; i < 50; ++i) {
+			
+			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(i);
+			
+			System.out.format("\\entry{%s}{%s}{%s}{%s}\n\n", currentPolishJapaneseEntry.getKanji(), currentPolishJapaneseEntry.getKana(), "test", currentPolishJapaneseEntry.getTranslates().get(0));
+		}		
 	}
 	
 	/*

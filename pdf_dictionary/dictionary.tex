@@ -1,0 +1,113 @@
+% !TEX TS-program = XeLaTeX
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dictionary
+% LaTeX Template
+% Version 1.0 (20/12/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Vel (vel@latextemplates.com) inspired by a template by Marc Lavaud
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modified by Fryderyk Mazurek
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,twoside,titlepage]{report} % 10pt font size, A4 paper and two-sided margins
+
+\usepackage{polski}
+\usepackage[top=2.0cm,bottom=2.0cm,left=2.0cm,right=2.0cm,columnsep=20pt]{geometry} % Document margins and spacings
+\usepackage{palatino} % Use the Palatino font
+\usepackage{microtype} % Improves spacing
+\usepackage{multicol} % Required for splitting text into multiple columns
+\usepackage[bf,sf,center]{titlesec} % Required for modifying section titles - bold, sans-serif, centered
+\usepackage{fancyhdr} % Required for modifying headers and footers
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{xeCJK}
+
+\setCJKmainfont{BabelStoneHan}
+
+\fancyhead[L]{\textsf{\rightmark}} % Top left header
+\fancyhead[R]{\textsf{\leftmark}} % Top right header
+
+\renewcommand{\headrulewidth}{1.4pt} % Rule under the header
+
+\fancyfoot[C]{\textbf{\textsf{\thepage}}} % Bottom center footer
+
+\renewcommand{\footrulewidth}{1.4pt} % Rule under the footer
+
+\pagestyle{fancy} % Use the custom headers and footers throughout the document
+
+% http://tex.stackexchange.com/questions/180168/fontspec-xecjk-autofakebold-and-copyable-chinese-characters-in-pdf
+
+\def\xeCJKembold{0.4}
+
+% hack into xeCJK, you don't need to understand it
+\def\saveCJKnode{\dimen255\lastkern}
+\def\restoreCJKnode{\kern-\dimen255\kern\dimen255}
+
+% save old definition of \CJKsymbol and \CJKpunctsymbol for CJK output
+\let\CJKoldsymbol\CJKsymbol
+\let\CJKoldpunctsymbol\CJKpunctsymbol
+
+% apply pdf literal fake bold
+\def\CJKfakeboldsymbol#1{%
+  \special{pdf:literal direct 2 Tr \xeCJKembold\space w}%
+  \CJKoldsymbol{#1}%
+  \saveCJKnode
+  \special{pdf:literal direct 0 Tr}%
+  \restoreCJKnode}
+\def\CJKfakeboldpunctsymbol#1{%
+  \special{pdf:literal direct 2 Tr \xeCJKembold\space w}%
+  \CJKoldpunctsymbol{#1}%
+  \saveCJKnode
+  \special{pdf:literal direct 0 Tr}%
+  \restoreCJKnode}
+\newcommand\CJKfakebold[1]{%
+  \let\CJKsymbol\CJKfakeboldsymbol
+  \let\CJKpunctsymbol\CJKfakeboldpunctsymbol
+  #1%
+  \let\CJKsymbol\CJKoldsymbol
+  \let\CJKpunctsymbol\CJKoldpunctsymbol}
+
+% -------------------
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	\vspace*{6.5cm}
+	{\huge\bfseries Mały skromny japoński słownik\par}
+	\vspace{2cm}
+	{\Large\itshape Fryderyk Mazurek\par}
+	
+	\vfill
+
+% Bottom of the page
+	{\large Stan na dzień \today\par}
+\end{titlepage}
+
+\input{dictionary_entries.tex}
+
+\newpage
+\section*{Informacje dodatkowe}
+\markboth{}{}
+
+\noindent Słownik udostępniona na licencji \textit{Creative Commons Attribution-Share Alike 3.0 license}. \\ \\
+\noindent \url{https://www.japonski-pomocnik.pl} \\ \\
+\noindent \url{https://play.google.com/store/apps/details?id=pl.idedyk.android.japaneselearnhelper}
+
+%------------------------------------------------
+\end{document}
