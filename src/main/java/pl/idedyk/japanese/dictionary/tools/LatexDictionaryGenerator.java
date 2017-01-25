@@ -162,8 +162,7 @@ public class LatexDictionaryGenerator {
 		if (kanji.equals("-") == false) {
 		
 			// na gorze strony slowa kanji
-			//result.append(markBoth(kanji)).append(" ");
-			result.append(markBoth(kana)).append(" ");
+			// result.append(markBoth(kanji)).append(" ");
 			
 			// kanji
 			result.append(kanji).append(" ");
@@ -175,6 +174,7 @@ public class LatexDictionaryGenerator {
 		
 		// pogrubienie kana
 		result.append(cjkFakeBold(kana)).append(" ");
+		result.append(markBoth(kana)).append(" ");
 		
 		// pogrubienie romaji
 		result.append(textbf(romaji)).append(" ");
