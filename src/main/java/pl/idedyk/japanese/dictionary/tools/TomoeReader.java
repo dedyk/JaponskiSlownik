@@ -58,17 +58,21 @@ public class TomoeReader {
         			if (yValueStringDotIdx != -1) {
         				yValueString = yValueString.substring(0, yValueStringDotIdx);
         			}
-
+        			
+        			if (xValueString.equals("NaN") == true && yValueString.equals("NaN") == true) {
+        				continue;
+        			}
         			
         			int xValueInt = Integer.parseInt(xValueString);
         			int yValueInt = Integer.parseInt(yValueString);
-        			
         			
         			tomoeEntryStroke.getPointList().add(
         					new TomoeEntry.Stroke.Point(xValueInt, yValueInt));
 				}
         		
-        		tomoeEntry.getStrokeList().add(tomoeEntryStroke);
+        		if (tomoeEntryStroke.getPointList().size() > 0) {
+        			tomoeEntry.getStrokeList().add(tomoeEntryStroke);
+        		}
 			}
         	
         	result.add(tomoeEntry);
