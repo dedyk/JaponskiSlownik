@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -19,6 +20,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+
+import org.apache.commons.io.FileUtils;
 
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
@@ -45,6 +48,7 @@ import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 import pl.idedyk.japanese.dictionary.tools.KanjiUtils;
 import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
+import pl.idedyk.japanese.dictionary.tools.LatexDictionaryGenerator;
 import pl.idedyk.japanese.dictionary.tools.TatoebaSentencesParser;
 import pl.idedyk.japanese.dictionary.tools.TomoeReader;
 
@@ -78,7 +82,6 @@ public class AndroidDictionaryGenerator {
 		
 		JMENewDictionary jmeNewNameDictionary = jmedictNewReader.createJMENewDictionary(jmedictNameNativeList);
 		
-		@SuppressWarnings("unused")
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmeNewNameDictionary,
 				new String[] { "input/word01.csv", "input/word02.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word-power.csv",
 				"output/transitive_intransitive_pairs.csv"); //, "output/word_group.csv");
@@ -99,6 +102,7 @@ public class AndroidDictionaryGenerator {
 					"../JapaneseDictionary_additional/zinnia-0.06-app/bin/zinnia_learn",
 					"output/kanji_recognizer_handwriting-ja-slim.s", zinniaTomoeSlimBinaryFile);
 			
+			generatePdfDictionary(dictionary, "pdf_dictionary/dictionary.tex", "output");
 		}
 	}
 
@@ -889,4 +893,59 @@ public class AndroidDictionaryGenerator {
 		return result;
 	}
 	*/
+	
+	private static void generatePdfDictionary(List<PolishJapaneseEntry> polishJapaneseEntries, String mainTexFilename, String outputDir) throws IOException, InterruptedException {
+		
+		File mainTexFile = new File(mainTexFilename);
+		File outputMainTexFile = new File(outputDir, mainTexFile.getName()); 
+		
+		// kopiowanie glownego pliku slowniku
+		FileUtils.copyFile(mainTexFile, outputMainTexFile);
+		
+		// uruchomienie generatora slow
+		List<String> generatedLatexDictonaryEntries = LatexDictionaryGenerator.generateLatexDictonaryEntries(polishJapaneseEntries);
+		
+		// zapisanie wygenerowanych slow
+		FileWriter dictionaryEntriesFileWriter = new FileWriter(new File(outputDir, "dictionary_entries.tex"));
+		
+		for (String latexString : generatedLatexDictonaryEntries) {			
+			dictionaryEntriesFileWriter.write(latexString);
+		}		
+		
+		dictionaryEntriesFileWriter.close();
+		
+		// uruchomienie xelatex
+		Runtime runtime = Runtime.getRuntime();
+
+		Process process = runtime.exec(
+				new String[] { "xelatex", "dictionary.tex" }, null, new File(outputDir));
+
+		BufferedReader stream = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+		String line = null;
+
+		while ((line = stream.readLine()) != null) {
+			System.out.println(line);
+		}
+
+		stream = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+
+		line = null;
+
+		while ((line = stream.readLine()) != null) {
+			System.out.println(line);
+		}
+
+		int exitVal = process.waitFor();
+
+		System.out.println("xelatex exited with error code: " + exitVal);
+		
+		// kasowanie niepotrzebnych plikow
+		new File(outputDir, "dictionary.aux").delete();
+		new File(outputDir, "dictionary.log").delete();
+		new File(outputDir, "dictionary.out").delete();
+		new File(outputDir, "dictionary.tex").delete();
+		new File(outputDir, "dictionary_entries.tex").delete();
+		new File(outputDir, "dictionary.out").delete();
+	}
 }
