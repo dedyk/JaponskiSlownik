@@ -1242,9 +1242,14 @@ public class Validator {
 			
 			throw new DictionaryException("Error");
 		}
+	}
+	
+	public static void validateEdictGroupRomaji(List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
+		
+		// !!! INFO: aby to dzialalo prawidlowo, dane musza byc wzbogacone o metode Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries); !!!
 				
 		// walidowanie, czy wszystkie slowa w tej samej grupie sa pisane w taki sam sposob w romaji
-		validateResult = true;
+		boolean validateResult = true;
 		
 		List<DictionaryEntryGroup> dictionaryEntryGroupList = Helper.generateDictionaryEntryGroup(polishJapaneseEntries);
 				

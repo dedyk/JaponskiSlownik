@@ -126,9 +126,6 @@ public class AndroidDictionaryGenerator {
 
 		// parse csv
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileNames);
-
-		// generate additional data from edict
-		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries);
 		
 		// validate		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
@@ -149,6 +146,12 @@ public class AndroidDictionaryGenerator {
 
 		List<TransitiveIntransitivePair> readTransitiveIntransitivePair = readTransitiveIntransitivePair(transitiveIntransitivePairsFileName);
 
+		// generate additional data from edict
+		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries);
+		
+		// sprawdzenie, czy slowa w tych samych grupach, maja dokladnie to samo romaji
+		Validator.validateEdictGroupRomaji(polishJapaneseEntries);
+		
 		// generate transitive intransitive pairs
 		Helper.generateTransitiveIntransitivePairs(readTransitiveIntransitivePair, result,
 				transitiveIntransitivePairsOutputFile);
