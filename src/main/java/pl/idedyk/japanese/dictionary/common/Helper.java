@@ -10,6 +10,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -33,8 +34,11 @@ import org.apache.lucene.store.RAMDirectory;
 import org.apache.lucene.util.Version;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
+import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryGroup;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
@@ -1293,4 +1297,76 @@ public class Helper {
 
 		return groupEntry;
 	}
+	
+	public static List<DictionaryEntryGroup> generateDictionaryEntryGroup(List<PolishJapaneseEntry> polishJapaneseEntryList) {
+		
+		List<DictionaryEntryGroup> result = new ArrayList<DictionaryEntryGroup>();
+		
+		// utworz mape z id'kami
+		TreeMap<Integer, PolishJapaneseEntry> polishJapaneseEntryIdMap = new TreeMap<Integer, PolishJapaneseEntry>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+			polishJapaneseEntryIdMap.put(polishJapaneseEntry.getId(), polishJapaneseEntry);
+		}
+		
+		int dictionaryEntryGroupCounter = 1;
+		
+		while (true) {
+			
+			// pobieramy pierwszy wpis
+			Entry<Integer, PolishJapaneseEntry> firstEntry = polishJapaneseEntryIdMap.firstEntry();
+			
+			if (firstEntry == null) {
+				break; // wychodzimy
+			}
+			
+			// mamy slowo
+			PolishJapaneseEntry polishJapaneseEntry = firstEntry.getValue();
+			
+			polishJapaneseEntryIdMap.remove(polishJapaneseEntry.getId());
+			
+			// pobranie wszystkich innych alternatyw
+			List<Attribute> alternativeAttributeList = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.ALTERNATIVE);
+
+			List<DictionaryEntry> dictionaryEntryList = new ArrayList<DictionaryEntry>();
+			
+			dictionaryEntryList.add(polishJapaneseEntry);
+			
+			if (alternativeAttributeList.size() >  0) { // // to slowo ma alternatywy, dodajemy je
+				
+				for (Attribute alternativeAttribute : alternativeAttributeList) {
+					
+					// id alternatywy
+					Integer alternativeId = Integer.parseInt(alternativeAttribute.getAttributeValue().get(0));
+					
+					// pobranie alternatywy
+					PolishJapaneseEntry alternativePolishJapaneseEntry = polishJapaneseEntryIdMap.get(alternativeId);
+					
+					if (alternativePolishJapaneseEntry == null) {
+						continue;
+					}
+					
+					// usuniecie alternatywy z mapy
+					polishJapaneseEntryIdMap.remove(alternativeId);
+					
+					dictionaryEntryList.add(alternativePolishJapaneseEntry);					
+				}
+			}
+
+			// tworzymy grupe
+			DictionaryEntryGroup dictionaryEntryGroup = new DictionaryEntryGroup();
+			
+			dictionaryEntryGroup.setId(dictionaryEntryGroupCounter);
+			dictionaryEntryGroup.setDictionaryEntryList(dictionaryEntryList);
+
+			// dodajemy do wyniku
+			result.add(dictionaryEntryGroup);
+			
+			// zwiekszamy licznik
+			dictionaryEntryGroupCounter++;
+		}
+		
+		return result;
+	}
+
 }

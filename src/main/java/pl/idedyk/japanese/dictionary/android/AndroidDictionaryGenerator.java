@@ -125,13 +125,14 @@ public class AndroidDictionaryGenerator {
 		System.out.println("checkAndSavePolishJapaneseEntries: parsePolishJapaneseEntriesFromCsv");
 
 		// parse csv
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
-				.parsePolishJapaneseEntriesFromCsv(sourceFileNames);
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileNames);
 
+		// generate additional data from edict
+		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries);
+		
 		// validate		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries,
-				jmeNewDictionary, jmeNewNameDictionary);
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmeNewDictionary, jmeNewNameDictionary);
 
 		System.out.println("checkAndSavePolishJapaneseEntries: detectDuplicatePolishJapaneseKanjiEntries");
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries, "input/word-duplicate.csv");
@@ -147,9 +148,6 @@ public class AndroidDictionaryGenerator {
 		System.out.println("checkAndSavePolishJapaneseEntries: generateAdditionalInfoFromEdict");
 
 		List<TransitiveIntransitivePair> readTransitiveIntransitivePair = readTransitiveIntransitivePair(transitiveIntransitivePairsFileName);
-
-		// generate additional data from edict
-		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, result);
 
 		// generate transitive intransitive pairs
 		Helper.generateTransitiveIntransitivePairs(readTransitiveIntransitivePair, result,
@@ -820,80 +818,7 @@ public class AndroidDictionaryGenerator {
 
 		return transitiveIntransitivePairList;
 	}
-	
-	/*
-	private static List<DictionaryEntryGroup> generateWordGroups(List<PolishJapaneseEntry> polishJapaneseEntryList) {
-				
-		List<DictionaryEntryGroup> result = new ArrayList<DictionaryEntryGroup>();
 		
-		// utworz mape z id'kami
-		TreeMap<Integer, PolishJapaneseEntry> polishJapaneseEntryIdMap = new TreeMap<Integer, PolishJapaneseEntry>();
-		
-		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
-			polishJapaneseEntryIdMap.put(polishJapaneseEntry.getId(), polishJapaneseEntry);
-		}
-		
-		int dictionaryEntryGroupCounter = 1;
-		
-		while (true) {
-			
-			// pobieramy pierwszy wpis
-			Entry<Integer, PolishJapaneseEntry> firstEntry = polishJapaneseEntryIdMap.firstEntry();
-			
-			if (firstEntry == null) {
-				break; // wychodzimy
-			}
-			
-			// mamy slowo
-			PolishJapaneseEntry polishJapaneseEntry = firstEntry.getValue();
-			
-			polishJapaneseEntryIdMap.remove(polishJapaneseEntry.getId());
-			
-			// pobranie wszystkich innych alternatyw
-			List<Attribute> alternativeAttributeList = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.ALTERNATIVE);
-
-			List<DictionaryEntry> dictionaryEntryList = new ArrayList<DictionaryEntry>();
-			
-			dictionaryEntryList.add(polishJapaneseEntry);
-			
-			if (alternativeAttributeList.size() >  0) { // // to slowo ma alternatywy, dodajemy je
-				
-				for (Attribute alternativeAttribute : alternativeAttributeList) {
-					
-					// id alternatywy
-					Integer alternativeId = Integer.parseInt(alternativeAttribute.getAttributeValue().get(0));
-					
-					// pobranie alternatywy
-					PolishJapaneseEntry alternativePolishJapaneseEntry = polishJapaneseEntryIdMap.get(alternativeId);
-					
-					if (alternativePolishJapaneseEntry == null) {
-						continue;
-					}
-					
-					// usuniecie alternatywy z mapy
-					polishJapaneseEntryIdMap.remove(alternativeId);
-					
-					dictionaryEntryList.add(alternativePolishJapaneseEntry);					
-				}
-			}
-
-			// tworzymy grupe
-			DictionaryEntryGroup dictionaryEntryGroup = new DictionaryEntryGroup();
-			
-			dictionaryEntryGroup.setId(dictionaryEntryGroupCounter);
-			dictionaryEntryGroup.setDictionaryEntryList(dictionaryEntryList);
-
-			// dodajemy do wyniku
-			result.add(dictionaryEntryGroup);
-			
-			// zwiekszamy licznik
-			dictionaryEntryGroupCounter++;
-		}
-		
-		return result;
-	}
-	*/
-	
 	private static void generatePdfDictionary(List<PolishJapaneseEntry> polishJapaneseEntries, String mainTexFilename, String outputDir) throws IOException, InterruptedException {
 		
 		File mainTexFile = new File(mainTexFilename);

@@ -9,6 +9,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -18,6 +19,8 @@ import com.csvreader.CsvWriter;
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryGroup;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
@@ -1238,7 +1241,85 @@ public class Validator {
 		if (validateResult == false) { // jesli jest blad walidacji
 			
 			throw new DictionaryException("Error");
-		}		
+		}
+				
+		// walidowanie, czy wszystkie slowa w tej samej grupie sa pisane w taki sam sposob w romaji
+		validateResult = true;
+		
+		List<DictionaryEntryGroup> dictionaryEntryGroupList = Helper.generateDictionaryEntryGroup(polishJapaneseEntries);
+				
+		for (DictionaryEntryGroup dictionaryEntryGroup : dictionaryEntryGroupList) {
+			
+			// pobranie wszystkie slowa wchodzace w sklad grupy
+			List<DictionaryEntry> dictionaryEntryList = dictionaryEntryGroup.getDictionaryEntryList();
+			
+			Map<String, List<DictionaryEntry>> romajiWithoutSpaceToDictionaryEntryListMap = new HashMap<>();
+			
+			for (DictionaryEntry dictionaryEntry : dictionaryEntryList) {
+				
+				// pobranie romaji
+				String romaji = dictionaryEntry.getRomaji();
+				
+				// romaji bez spacji
+				String romajiWithoutSpace = romaji.replaceAll(" ", "");
+				
+				List<DictionaryEntry> romajiWithoutSpaceToDictionaryEntryList = romajiWithoutSpaceToDictionaryEntryListMap.get(romajiWithoutSpace);
+				
+				if (romajiWithoutSpaceToDictionaryEntryList == null) {
+					
+					romajiWithoutSpaceToDictionaryEntryList = new ArrayList<>();
+					
+					romajiWithoutSpaceToDictionaryEntryListMap.put(romajiWithoutSpace, romajiWithoutSpaceToDictionaryEntryList);
+				}
+				
+				romajiWithoutSpaceToDictionaryEntryList.add(dictionaryEntry);				
+			}
+			
+			// sprawdzamy, czy wszystkie romaji bez spacji sa takie same
+			Iterator<Entry<String, List<DictionaryEntry>>> romajiWithoutSpaceToDictionaryEntryListMapEntrySetIterator = romajiWithoutSpaceToDictionaryEntryListMap.entrySet().iterator();
+			
+			while (romajiWithoutSpaceToDictionaryEntryListMapEntrySetIterator.hasNext() == true) {
+				
+				Entry<String, List<DictionaryEntry>> romajiWithoutSpaceToDictionaryEntryListMapEntry = romajiWithoutSpaceToDictionaryEntryListMapEntrySetIterator.next();
+								
+				List<DictionaryEntry> romajiDictionaryEntryList = romajiWithoutSpaceToDictionaryEntryListMapEntry.getValue();
+				
+				//
+				
+				if (romajiDictionaryEntryList.size() > 1) {
+					
+					Set<String> uniqueRomaji = new HashSet<String>();
+					
+					for (DictionaryEntry dictionaryEntry : romajiDictionaryEntryList) {
+						uniqueRomaji.add(dictionaryEntry.getRomaji());
+					}
+					
+					if (uniqueRomaji.size() > 1) { // jest blad
+						
+						validateResult = false;
+						
+						System.out.println("Błąd walidacji romaji dla: \n");
+						
+						for (DictionaryEntry dictionaryEntry : romajiDictionaryEntryList) {
+							
+							System.out.println("id: " + dictionaryEntry.getId());
+							System.out.println("kanji: " + dictionaryEntry.getKanji());
+							System.out.println("kana: " + dictionaryEntry.getKana());
+							System.out.println("romaji: " + dictionaryEntry.getRomaji());
+							System.out.println("translate: " + dictionaryEntry.getTranslates());
+							System.out.println("info: " + dictionaryEntry.getInfo());
+							
+							System.out.println("---\n");							
+						}					
+					}
+				}
+			}			
+		}	
+		
+		if (validateResult == false) { // jesli jest blad walidacji
+			
+			throw new DictionaryException("Error");
+		}
 	}
 			
 	private static String toAttributeListString(AttributeList attributeList) {
