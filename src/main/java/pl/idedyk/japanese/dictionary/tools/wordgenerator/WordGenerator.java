@@ -178,9 +178,9 @@ public class WordGenerator {
 			
 			case GENERATE_MISSING_WORD_LIST: {
 				
-				if (args.length != 2 && args.length != 3 && args.length != 4) {
+				if (args.length != 2 && args.length != 3 && args.length != 4 && args.length != 5) {
 					
-					System.err.println("Niepoprawna liczba argumentów. Poprawne wywołanie: [plik z lista słów] [czy sprawdzać w jisho.org] [czy zapis w formacie common]");
+					System.err.println("Niepoprawna liczba argumentów. Poprawne wywołanie: [plik z lista słów] [czy sprawdzać w jisho.org] [czy zapis w formacie common] [czy dodawać tylko słowa, których nie ma w pliku common]");
 					
 					return;
 				}
@@ -189,6 +189,7 @@ public class WordGenerator {
 				
 				boolean checkInJishoOrg = true;
 				boolean saveInCommonFormat = false;
+				boolean addOnlyWordsWhichDoesntExistInCommonFile = false;
 				
 				if (args.length > 2) {
 					checkInJishoOrg = Boolean.parseBoolean(args[2]);
@@ -196,6 +197,10 @@ public class WordGenerator {
 				
 				if (args.length > 3) {
 					saveInCommonFormat = Boolean.parseBoolean(args[3]);
+				}
+				
+				if (args.length > 4) {
+					addOnlyWordsWhichDoesntExistInCommonFile = Boolean.parseBoolean(args[4]);
 				}
 								
 				// wczytywanie pliku z lista slow
@@ -206,6 +211,9 @@ public class WordGenerator {
 				// pobranie cache ze slowami
 				Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
 
+				// czytanie common'owego pliku
+				Map<Integer, CommonWord> commonWordMap = wordGeneratorHelper.getCommonWordMap();
+				
 				// wczytanie slownika jmedict
 				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
 				
@@ -294,9 +302,15 @@ public class WordGenerator {
 								
 								if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
 									
-									foundWordList.add(polishJapaneseEntry);
+									boolean existsInCommonWords = existsInCommonWords(commonWordMap, groupEntry.getKanji(), groupEntry.getKana());
 									
-									foundWordListInCommonWordMap.put(commonWord.getId(), commonWord);
+									if (addOnlyWordsWhichDoesntExistInCommonFile == false || existsInCommonWords == false) {
+										
+										foundWordList.add(polishJapaneseEntry);
+										
+										foundWordListInCommonWordMap.put(commonWord.getId(), commonWord);
+
+									}									
 									
 								} else {
 									alreadyAddedWordList.add(polishJapaneseEntry);
