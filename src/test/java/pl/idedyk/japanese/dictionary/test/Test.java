@@ -1,12 +1,9 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.List;
 
-import pl.idedyk.japanese.dictionary.dto.CommonWord;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
+import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector.JapaneseWord;
 
 public class Test {
 
@@ -347,6 +344,7 @@ public class Test {
 		
 		// System.out.println(jishoOrgConnector.isWordExists("猫義"));
 		
+		/*
 		Map<Integer, CommonWord> commonWordMap = CsvReaderWriter.readCommonWordFile("input/common_word.csv");
 		
 		Collection<CommonWord> commonWordValues = commonWordMap.values();
@@ -367,5 +365,22 @@ public class Test {
 		}		
 		
 		CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/test.csv");
+		*/
+		
+		JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
+		
+		//System.out.println(jishoOrgConnector.isWordExists("猫義"));
+		
+		List<JapaneseWord> japaneseWords = jishoOrgConnector.getJapaneseWords("karo");
+		
+		for (JapaneseWord japaneseWord : japaneseWords) {
+			//System.out.println(japaneseWord.kanji + " - " + japaneseWord.kana);
+			
+			if (japaneseWord.kanji != null) {
+				System.out.println(japaneseWord.kanji);
+			}
+			
+			System.out.println(japaneseWord.kana);
+		}
 	}
 }
