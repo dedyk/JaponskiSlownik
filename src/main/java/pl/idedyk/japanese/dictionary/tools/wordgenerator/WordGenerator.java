@@ -1005,6 +1005,8 @@ public class WordGenerator {
 				options.addOption("okn", "only-kanji", false, "Only kanji");
 				options.addOption("oka", "only-kana", false, "Only kana");
 				
+				options.addOption("aig", "all-in-group", false, "All in group");
+				
 				options.addOption("h", "help", false, "Help");
 				
 				//
@@ -1044,6 +1046,8 @@ public class WordGenerator {
 				Boolean onlyKanji = null;
 				Boolean onlyKana = null;
 				
+				boolean allInGroup = false;
+				
 				if (commandLine.hasOption("min-kanji-length") == true) {
 					minKanjiLength = Integer.parseInt(commandLine.getOptionValue("min-kanji-length"));
 				}
@@ -1066,6 +1070,10 @@ public class WordGenerator {
 
 				if (commandLine.hasOption("only-kana") == true) {
 					onlyKana = true;	
+				}
+				
+				if (commandLine.hasOption("all-in-group") == true) {
+					allInGroup = true;
 				}
 
 				//				
@@ -1091,54 +1099,61 @@ public class WordGenerator {
 								
 					for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
 						
-						GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0);
-																		
-						String groupEntryKanji = groupEntry.getKanji();
-						String groupEntryKana = groupEntry.getKana();
-						
-						// czy jest znak kanji
-						if (onlyKanji != null && onlyKanji.booleanValue() == true && groupEntryKanji == null) {
-							continue;
-						}
-						
-						// czy tylko kana
-						if (onlyKana != null && onlyKana.booleanValue() == true && groupEntryKanji != null) {
-							continue;
-						}
-
-						// filtrowanie po dlugosci												
-						if (minKanjiLength != null && groupEntryKanji != null && groupEntryKanji.length() < minKanjiLength) {
-							continue;
-						}
-						
-						if (minKanaLength != null && groupEntryKana != null && groupEntryKana.length() < minKanaLength) {
-							continue;
-						}
-
-						
-						if (maxKanjiLength != null && groupEntryKanji != null && groupEntryKanji.length() > maxKanjiLength) {
-							continue;
-						}
-
-						if (maxKanaLength != null && groupEntryKana.length() > maxKanaLength) {
-							continue;
-						}
-											
-						List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+						for (int groupEntryListTheSameTranslateIdx = 0; groupEntryListTheSameTranslateIdx < groupEntryListTheSameTranslate.size(); ++groupEntryListTheSameTranslateIdx) {
 							
-						if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
-								
-							System.out.println(groupEntry);
-							
-							CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
-							
-							if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
-							
-								newCommonWordMap.put(commonWord.getId(), commonWord);
-							
-								csvId++;
+							if (groupEntryListTheSameTranslateIdx == 1 && allInGroup == false) {
+								break;
 							}
-						}				
+							
+							GroupEntry groupEntry = groupEntryListTheSameTranslate.get(groupEntryListTheSameTranslateIdx);
+							
+							String groupEntryKanji = groupEntry.getKanji();
+							String groupEntryKana = groupEntry.getKana();
+							
+							// czy jest znak kanji
+							if (onlyKanji != null && onlyKanji.booleanValue() == true && groupEntryKanji == null) {
+								continue;
+							}
+							
+							// czy tylko kana
+							if (onlyKana != null && onlyKana.booleanValue() == true && groupEntryKanji != null) {
+								continue;
+							}
+
+							// filtrowanie po dlugosci												
+							if (minKanjiLength != null && groupEntryKanji != null && groupEntryKanji.length() < minKanjiLength) {
+								continue;
+							}
+							
+							if (minKanaLength != null && groupEntryKana != null && groupEntryKana.length() < minKanaLength) {
+								continue;
+							}
+
+							
+							if (maxKanjiLength != null && groupEntryKanji != null && groupEntryKanji.length() > maxKanjiLength) {
+								continue;
+							}
+
+							if (maxKanaLength != null && groupEntryKana.length() > maxKanaLength) {
+								continue;
+							}
+												
+							List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+								
+							if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
+									
+								System.out.println(groupEntry);
+								
+								CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
+								
+								if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
+								
+									newCommonWordMap.put(commonWord.getId(), commonWord);
+								
+									csvId++;
+								}
+							}				
+						}
 					}
 				}	
 				
