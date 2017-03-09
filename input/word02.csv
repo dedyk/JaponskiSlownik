@@ -636,15 +636,20 @@ wstęp
 100304,WORD_VERB_RU,,HIRAGANA,,,癒る,いる,,iru,uspokoić się,archaizm,,
 100305,"WORD_VERB_RU
 WORD_VERB_AUX",,HIRAGANA,,,-,しめる,,shimeru,"robić
-pozwalać",archaizm,,
+pozwalać",archaizm,,"DUPLICATE 489
+DUPLICATE 4294
+DUPLICATE 5130
+DUPLICATE 6100
+DUPLICATE 8362
+DUPLICATE 98979"
 100306,WORD_NOUN,,HIRAGANA,,,市報,しほう,,shihou,biuletyn miejski,,,
-100307,WORD_NOUN,,HIRAGANA,,,人証,じんしょう,,jinshou,zeznania świadka,,,
+100307,WORD_NOUN,,HIRAGANA,,,人証,じんしょう,,jinshou,zeznania świadka,,,DUPLICATE 100354
 100308,WORD_NOUN,,HIRAGANA,,,写象,しゃしょう,,shashou,"wizerunek
 obraz",,,
 100309,WORD_VERB_U,,HIRAGANA,,,徴す,しるす,,shirusu,pokazać znak,np. omen,,
 100310,WORD_NOUN,,HIRAGANA,,,上巳,じょうし,,joushi,"3 marca kalendarza księżycowego (jeden z pięciu corocznych świąt)
 festiwal lalek
-festiwal brzoskwini",,,
+festiwal brzoskwini",,,DUPLICATE 100355
 100311,WORD_NOUN,,HIRAGANA,,,天険,てんけん,,tenken,"naturalna obrona
 strome miejsce
 urwiste miejsce",,,
@@ -660,7 +665,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,親展,しんてん,,shinten,"poufny
 tajny",,,
 100317,WORD_NOUN,,HIRAGANA,,,刺創,しそう,,shisou,rana kłuta,,,
 100318,WORD_NOUN,,HIRAGANA,,,木槽,もくそう,,mokusou,"drewniana kadź (szczególnie do przygotowywania sake)
-drewniany zbiornik",,,
+drewniany zbiornik",,,DUPLICATE 100357
 100319,WORD_NOUN,,HIRAGANA,,,師部,しぶ,,shibu,"łyko
 floem
 wewnętrzna kora",,,
@@ -669,16 +674,17 @@ wewnętrzna kora",,,
 miejsce z pięknym krajobrazem
 niespodziewane zwycięstwo
 zwycięstwo poprzez niezwykły podstęp",,,
-100322,"WORD_VERB_AUX
-WORD_VERB_U",,HIRAGANA,,,-,まう,,mau,"skończyć …
-zrobić … kompletnie",,,
+100322,"WORD_VERB_U
+WORD_VERB_AUX",,HIRAGANA,,,-,まう,,mau,"skończyć …
+zrobić … kompletnie",,,"DUPLICATE 5797
+DUPLICATE 81702"
 100323,WORD_NOUN,,HIRAGANA,,,皆勤,かいきん,,kaikin,doskonała obsługa,,,
 100324,WORD_NOUN,,HIRAGANA,,,投函,とうかん,,toukan,wysyłanie pocztą,,,
 100325,WORD_NOUN,,HIRAGANA,,,能記,のうき,,nouki,element oznaczający,,,
 100326,WORD_NOUN,,HIRAGANA,,,生技,せいぎ,,seigi,inżynieria produkcji,skrót,,
 100327,"WORD_ADJECTIVE_TARU
-WORD_ADVERB_TO",,HIRAGANA,,,簇簇,そうそう,,sousou,???,,,
-100328,WORD_NOUN,,KATAKANA,,,-,ナットオイル,,natto oiru,olej orzechowy,ang: nut oil,,
+WORD_ADVERB_TO",,HIRAGANA,,,簇簇,そうそう,,sou sou,???,,,DUPLICATE 100360
+100328,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ナットオイル,,natto oiru,olej orzechowy,ang: nut oil,,
 100329,WORD_NOUN,,KATAKANA,,,-,スイートピー,,suiito pii,groszek pachnący,"lathyrus odoratus, ang: sweet pea",,
 100330,WORD_NOUN,,KATAKANA,,,-,コンベア,,konbea,"taśmociąg
 przenośnik taśmowy",ang: conveyor,,
@@ -727,3 +733,65 @@ niskiego stanu",,,
 100352,WORD_NOUN,,HIRAGANA,,,耕土,こうど,,koudo,"gleba orna
 gleba uprawna",,,
 100353,WORD_NOUN,,HIRAGANA,,,転句,てんく,,tenku,obracanie lub skręcanie części tekstu,,,
+100354,WORD_NOUN,,HIRAGANA,,,人証,にんしょう,,ninshou,zeznania świadka,,,DUPLICATE 100307
+100355,WORD_NOUN,,HIRAGANA,,,上巳,じょうみ,,joumi,"3 marca kalendarza księżycowego (jeden z pięciu corocznych świąt)
+festiwal lalek
+festiwal brzoskwini",,,DUPLICATE 100310
+100356,WORD_NOUN,,HIRAGANA,,,天嶮,てんけん,,tenken,"naturalna obrona
+strome miejsce
+urwiste miejsce",,,
+100357,WORD_NOUN,,HIRAGANA,,,木槽,きぶね,,kibune,"drewniana kadź (szczególnie do przygotowywania sake)
+drewniany zbiornik",,,DUPLICATE 100318
+100358,WORD_NOUN,,HIRAGANA,,,篩部,しぶ,,shibu,"łyko
+floem
+wewnętrzna kora",,,
+100359,WORD_NOUN,,HIRAGANA,,,投かん,とうかん,,toukan,wysyłanie pocztą,,,
+100360,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,簇簇,ぞくぞく,,zoku zoku,???,,,"DUPLICATE 22698
+DUPLICATE 100327"
+100361,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,簇々,そうそう,,sou sou,???,,,DUPLICATE 100362
+100362,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,簇々,ぞくぞく,,zokuzoku,???,,,"DUPLICATE 22698
+DUPLICATE 100361"
+100363,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ナット・オイル,,natto oiru,olej orzechowy,ang: nut oil,,
+100364,WORD_NOUN,,KATAKANA,,,-,スイート・ピー,,suiito pii,groszek pachnący,"lathyrus odoratus, ang: sweet pea",,
+100365,WORD_NOUN,,KATAKANA,,,-,コンベヤ,,konbeya,"taśmociąg
+przenośnik taśmowy",ang: conveyor,,
+100366,WORD_NOUN,,KATAKANA,,,-,コンベヤー,,konbeyaa,"taśmociąg
+przenośnik taśmowy",ang: conveyor,,
+100367,WORD_NOUN,,KATAKANA,,,-,コンベアー,,konbeaa,"taśmociąg
+przenośnik taśmowy",ang: conveyor,,
+100368,WORD_NOUN,,HIRAGANA,,,木槽天秤搾り,きぶねてんびんしぼり,,kibune tenbin shibori,warzenie sake w drewnianych kadziach,,,
+100369,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,転業,てんごう,,tengou,"figiel
+psikus
+kawał
+żart
+dowcip",,,
+100370,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,跡を付ける,あとをつける,,ato o tsukeru,"włóczyć się (za kimś)
+przyczepić się (do kogoś)
+zostawiać ślady",,,
+100371,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,後を付ける,あとをつける,,ato o tsukeru,"włóczyć się (za kimś)
+przyczepić się (do kogoś)
+zostawiać ślady",,,
+100372,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,後を尾ける,あとをつける,,ato o tsukeru,"włóczyć się (za kimś)
+przyczepić się (do kogoś)
+zostawiać ślady",,,
+100373,WORD_NOUN,,KATAKANA,,,-,オップアート,,oppu aato,"op art (kierunek w sztuce)
+optyczna sztuka",skrót,,
+100374,WORD_VERB_U,,HIRAGANA,,,印す,しるす,,shirusu,"zostawić (np. znak, ślad, archaizm)
+odciskać (archaizm)
+stemplować (archaizm)
+pokazać znak (np. omen)",,,
+100375,WORD_VERB_U,,HIRAGANA,,,標す,しるす,,shirusu,"zostawić (np. znak, ślad, archaizm)
+odciskać (archaizm)
+stemplować (archaizm)
+pokazać znak (np. omen)",,,
+100376,WORD_NOUN,,HIRAGANA,,,奇捷,きしょう,,kishou,"niespodziewane zwycięstwo
+zwycięstwo poprzez niezwykły podstęp",,,
+100377,WORD_NOUN,,KATAKANA,,,-,ラオチュー,,raochuu,sfermentowany chiński napój alkoholowy,szczególnie wino Shaoxing,,
+100378,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ラオチュウ,,raochuu,sfermentowany chiński napój alkoholowy,szczególnie wino Shaoxing,,
