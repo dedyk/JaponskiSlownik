@@ -803,7 +803,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,既述,きじゅつ,,kijutsu,"wyżej wspomniany
 wyżej wymieniony
 wyżej opisany",,,
 100382,WORD_NOUN,,HIRAGANA,,,磬,けい,,kei,"brzmienie kamieni
-qing",,,
+qing",,,DUPLICATE 100410
 100383,WORD_NOUN,,HIRAGANA,,,天賜,てんし,,tenshi,"niebiański prezent
 cesarski prezent",,,
 100384,WORD_NOUN,,HIRAGANA,,,文学士,ぶんがくし,,bungakushi,"Bachelor of Arts
@@ -819,7 +819,7 @@ wibracje fujarki",,,
 100390,WORD_NOUN,,HIRAGANA,,,地官,ちかん,,chikan,Ministerstwo Administracji Publicznej i Opieki Społecznej,podczas chińskiej dynastii Zhou,,
 100391,"WORD_NOUN
 WORD_NOUN_SUFFIX",,HIRAGANA,,,上綱,じょうこう,,joukou,"nadgromada (biologia)
-??? (archaizm, buddyzm)",,,
+??? (archaizm, buddyzm)",,,DUPLICATE 100443
 100392,WORD_NOUN,,HIRAGANA,,,万尋,ばんじん,,banjin,"10000 sążeń
 wielka głębia
 duża wysokość",,,
@@ -829,7 +829,7 @@ radości i smutki",,,
 odszyfrowywanie",,,
 100395,WORD_NOUN,,HIRAGANA,,,後架,こうか,,kouka,toaleta,,,
 100396,WORD_NOUN,,HIRAGANA,,,詩体,したい,,shitai,"forma poetycka
-forma wierszowana",,,
+forma wierszowana",,,DUPLICATE 94119
 100397,WORD_NOUN,,HIRAGANA,,,秋期,しゅうき,,shuuki,"okres jesieni
 jesienny okres",,,
 100398,"WORD_NOUN
@@ -842,11 +842,11 @@ sekwencja
 ciąg",,,
 100402,WORD_NOUN,,HIRAGANA,,,胸間,きょうかん,,kyoukan,"klatka piersiowa
 pierś",,,
-100403,WORD_NOUN,,HIRAGANA,,,楓糖,ふうとう,,fuutou,cukier klonowy,,,
+100403,WORD_NOUN,,HIRAGANA,,,楓糖,ふうとう,,fuutou,cukier klonowy,,,DUPLICATE 100433
 100404,WORD_NOUN,,KATAKANA,,,-,ストーリーテラー,,sutoorii teraa,"gawędziarz
 anegdociarz
 opowiadacz historii",ang: story teller,,
-100405,WORD_NOUN,,HIRAGANA,,,方向付け,ほうこうづけ,,houkouduke,"kierowanie
+100405,WORD_NOUN,,HIRAGANA,,,方向付け,ほうこうづけ,,houkou duke,"kierowanie
 skierowanie
 ukierunkowanie
 orientowanie
@@ -863,7 +863,7 @@ skierować
 prowadzić
 ukierunkować
 wyrównywać",,,
-100410,WORD_NOUN,,HIRAGANA,,,磬,きん,,kin,???,,,
+100410,WORD_NOUN,,HIRAGANA,,,磬,きん,,kin,???,,,DUPLICATE 100382
 100411,WORD_NOUN,,HIRAGANA,,,精原細胞,せいげんさいぼう,,seigensaibou,spermatogonium,,,
 100412,WORD_NOUN,,HIRAGANA,,,万尋の谷,ばんじんのたに,,banjin no tani,"otchłań
 przepaść
@@ -900,3 +900,35 @@ WORD_ADJECTIVE_NA",,KATAKANA,,,-,トホホ,,to ho ho,buu buu,odgłos wydawany po
 100430,WORD_NOUN,,HIRAGANA,,,孔版印刷,こうはんいんさつ,,kouhan' insatsu,???,,,
 100431,WORD_NOUN,,HIRAGANA,,,武芸百般,ぶげいひゃっぱん,,bugei hyappan,"wszystkie sztuki walki
 każda sztuka walki",,,
+100432,WORD_NOUN,,HIRAGANA,,,万仞,ばんじん,,banjin,"10000 sążeń
+wielka głębia
+duża wysokość",,,
+100433,WORD_NOUN,,HIRAGANA,,,楓糖,かえでとう,,kaedetou,cukier klonowy,,,DUPLICATE 100403
+100434,WORD_NOUN,,KATAKANA,,,-,ストーリー・テラー,,sutoorii teraa,"gawędziarz
+anegdociarz
+opowiadacz historii",ang: story teller,,
+100435,WORD_NOUN,,HIRAGANA,,,方向づけ,ほうこうづけ,,houkou duke,"kierowanie
+skierowanie
+ukierunkowanie
+orientowanie
+wyrównanie",,,
+100436,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,現在の所,げんざいのところ,,genzai no tokoro,"w chwili obecnej
+już teraz
+w tym czasie",,,
+100437,WORD_VERB_RU,,HIRAGANA,,,方向づける,ほうこうづける,,houkou dukeru,"kierować
+skierować
+prowadzić
+ukierunkować
+wyrównywać",,,
+100438,WORD_NOUN,,HIRAGANA,,,万仞の谷,ばんじんのたに,,banjin no tani,"otchłań
+przepaść
+czeluść",,,
+100439,WORD_NOUN,,HIRAGANA,,,端布,はぎれ,,hagire,"skrawek tkaniny
+drobiazgi",,,
+100440,WORD_NOUN,,KATAKANA,,,-,モッブ・シーン,,mobbu shiin,scena zbiorowa,ang: mob scene,,
+100441,"WORD_INTERJECTION
+WORD_ADJECTIVE_NA",,HIRAGANA,,,-,とほほ,,to ho ho,buu buu,odgłos wydawany podczas płaczu,,
+100442,"WORD_INTERJECTION
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,トホホホ,,to ho ho ho,buu buu,odgłos wydawany podczas płaczu,,
+100443,WORD_NOUN,,HIRAGANA,,,上綱,じょうごう,,jougou,???,"archaizm, buddyzm",,DUPLICATE 100391
