@@ -1006,6 +1006,7 @@ public class WordGenerator {
 				options.addOption("oka", "only-kana", false, "Only kana");
 				
 				options.addOption("aig", "all-in-group", false, "All in group");
+				options.addOption("dcicf", "dont-check-in-common-file", false, "Don't check in common file");
 				
 				options.addOption("h", "help", false, "Help");
 				
@@ -1047,6 +1048,7 @@ public class WordGenerator {
 				Boolean onlyKana = null;
 				
 				boolean allInGroup = false;
+				boolean dontCheckInCommonFile = false;
 				
 				if (commandLine.hasOption("min-kanji-length") == true) {
 					minKanjiLength = Integer.parseInt(commandLine.getOptionValue("min-kanji-length"));
@@ -1075,6 +1077,10 @@ public class WordGenerator {
 				if (commandLine.hasOption("all-in-group") == true) {
 					allInGroup = true;
 				}
+				
+				if (commandLine.hasOption("dont-check-in-common-file") == true) {
+					dontCheckInCommonFile = true;
+				}				
 
 				//				
 				
@@ -1146,7 +1152,7 @@ public class WordGenerator {
 								
 								CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
 								
-								if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
+								if (dontCheckInCommonFile == true || wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
 								
 									newCommonWordMap.put(commonWord.getId(), commonWord);
 								
