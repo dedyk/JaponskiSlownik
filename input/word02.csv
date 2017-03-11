@@ -752,7 +752,7 @@ DUPLICATE 100327"
 100361,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,簇々,そうそう,,sou sou,???,,,DUPLICATE 100362
 100362,"WORD_ADJECTIVE_TARU
-WORD_ADVERB_TO",,HIRAGANA,,,簇々,ぞくぞく,,zokuzoku,???,,,"DUPLICATE 22698
+WORD_ADVERB_TO",,HIRAGANA,,,簇々,ぞくぞく,,zoku zoku,???,,,"DUPLICATE 22698
 DUPLICATE 100361"
 100363,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ナット・オイル,,natto oiru,olej orzechowy,ang: nut oil,,
 100364,WORD_NOUN,,KATAKANA,,,-,スイート・ピー,,suiito pii,groszek pachnący,"lathyrus odoratus, ang: sweet pea",,
@@ -939,17 +939,17 @@ wiosna życia",,,
 100447,WORD_NOUN,,HIRAGANA,,,三革,さんかく,,sankaku,"zbroja, hełm i tarcza (mało znane słowo)
 kakurei, kakuun i kakumei (pierwszy, piąty i 58-my rok cyklu seksagonalnego, czasy niepokojów społecznych według Onmyōdō)",,,
 100448,WORD_NOUN,,HIRAGANA,,,田の面,たのも,,ta no mo,"powierzchnia ryżowa
-powierzchnia pola ryżowego",,,
+powierzchnia pola ryżowego",,,DUPLICATE 100497
 100449,WORD_NOUN,,HIRAGANA,,,井楼,せいろう,,seirou,"drewniana wieża strażnicza
 strażnicza wieża pola bitwy",,,
 100450,WORD_NOUN,,HIRAGANA,,,職印,しょくいん,,shokuin,pieczęć urzędowa,,,
 100451,WORD_NOUN,,HIRAGANA,,,奉体,ほうたい,,houtai,realizowani woli swojego pana,,,
 100452,WORD_NOUN,,HIRAGANA,,,西周,せいしゅう,,seishuu,zachodnie Zhou,dynastia Chin,,
 100453,WORD_NOUN,,HIRAGANA,,,宝位,ほうい,,houi,"godność cesarza
-cesarski tron",,,
+cesarski tron",,,DUPLICATE 98990
 100454,WORD_NOUN,,HIRAGANA,,,駄句,だく,,daku,"słaby wiersz
 kiepski wiersz",,,
-100455,WORD_NOUN,,HIRAGANA,,,燕巣,えんそう,,ensou,gniazda jadalne,"gniazda zbudowane z wydzieliny gruczołów ślinowych niektórych gatunków ptaków z rodziny jerzykowatych zwanych salanganami, które ze względu na swe właściwości są cenionym przysmakiem w krajach Azji Południowo-Wschodniej, mało znane słowo",,
+100455,WORD_NOUN,,HIRAGANA,,,燕巣,えんそう,,ensou,gniazda jadalne,"gniazda zbudowane z wydzieliny gruczołów ślinowych niektórych gatunków ptaków z rodziny jerzykowatych zwanych salanganami, które ze względu na swe właściwości są cenionym przysmakiem w krajach Azji Południowo-Wschodniej, mało znane słowo",,DUPLICATE 100498
 100456,WORD_NOUN,,HIRAGANA,,,真円,しんえん,,shin'en,"doskonałe koło
 perfekcyjny okręg",,,
 100457,WORD_NOUN,,HIRAGANA,,,大詔,たいしょう,,taishou,cesarski reskrypt,,,
@@ -960,7 +960,7 @@ karna ekspedycja",,,
 szala
 maszyna do ważenia",,,
 100460,WORD_NOUN,,HIRAGANA,,,鰓蓋,えらぶた,,erabuta,"osłona skrzeli
-operculum",,,
+operculum",,,DUPLICATE 100499
 100461,WORD_NOUN,,HIRAGANA,,,九星,きゅうせい,,kyuusei,"dziewięć tradycyjnych znaków astrologicznych w Onmyōdō, odpowiadających roku urodzenia i używany do tworzenia horoskopów",,,
 100462,WORD_NOUN,,HIRAGANA,,,漢学,かんがく,,kangaku,"sinologia
 nauka o Chinach",,,
@@ -999,12 +999,14 @@ pominąć
 wymigać się
 uniknąć
 zignorować",,,
-100484,WORD_ADJECTIVE_NO,,HIRAGANA,,,対艦,たいかん,,taikan,"przeciwko statkom
+100484,WORD_ADJECTIVE_NO,,HIRAGANA,,,対艦,たいかん,,taikan,"przeciwokrętowy
+przeciwko statkom
 skierowany przeciw siłom nawodnym",,,
 100485,WORD_NOUN,,HIRAGANA,,,弔砲,ちょうほう,,chouhou,pogrzebowy salut artyleryjski,,,
 100486,WORD_NOUN,,HIRAGANA,,,-,ゆた,,yuta,"szaman (Okinawa, Amami)
 medium
-egzorcysta",,,
+egzorcysta",dialekt Ryuukyuu,,"DUPLICATE 52734
+EDICT_DUPLICATE 44393"
 100487,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,身を起こす,みをおこす,,mi o okosu,"wstać (np. z łóżka)
 osiągnąć w życiu
@@ -1021,3 +1023,20 @@ trasa kolejowa",,,
 frekwencja",ang: attendance,,
 100495,WORD_NOUN,,KATAKANA_HIRAGANA,,,インストール後の作業,インストールごのさぎょう,,insutooru go no sagyou,krok po instalacyjny,,,
 100496,WORD_NOUN,,KATAKANA_HIRAGANA,,,対艦ミサイル,たいかんミサイル,,taikan misairu,pocisk przeciwokrętowy,,,
+100497,WORD_NOUN,,HIRAGANA,,,田の面,たのむ,,ta no mu,"powierzchnia ryżowa
+powierzchnia pola ryżowego",,,DUPLICATE 100448
+100498,WORD_NOUN,,HIRAGANA,,,燕巣,えんず,,enzu,gniazda jadalne,"gniazda zbudowane z wydzieliny gruczołów ślinowych niektórych gatunków ptaków z rodziny jerzykowatych zwanych salanganami, które ze względu na swe właściwości są cenionym przysmakiem w krajach Azji Południowo-Wschodniej, mało znane słowo",,DUPLICATE 100455
+100499,WORD_NOUN,,HIRAGANA,,,鰓蓋,さいがい,,saigai,"osłona skrzeli
+operculum",,,DUPLICATE 100460
+100500,WORD_ADJECTIVE_F,,KATAKANA,,,-,パンチ・ドランク,,panchi doranku,"zamroczony
+przytępiony
+zdezorientowany",ang: punch drunk,,
+100501,WORD_NOUN,,KATAKANA,,,-,リング・アウト,,ringu auto,bycie poza ringiem,"zapasy, wrestling, ang: ring out",,
+100502,WORD_VERB_U,,HIRAGANA,,,罷り通る,まかりとおる,,makari tooru,"mijać
+pomijać
+pominąć
+wymigać się
+uniknąć
+zignorować",,,
+100503,WORD_NOUN,,KATAKANA,,,-,インストール・プログラム,,insutooru puroguramu,program instalacyjny,ang: installation program,,
+100504,WORD_NOUN,,KATAKANA,,,-,インストール・ログ・ファイル,,insutooru rogu fairu,plik z logiem z instalacji,ang: installation log file,,
