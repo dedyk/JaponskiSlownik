@@ -1195,13 +1195,16 @@ WORD_ADVERB_TO",,HIRAGANA,,,陶然,とうぜん,,touzen,"upojony (alkoholem lub 
 urzeczony
 oczarowany
 zachwycony",,,
-100584,WORD_NOUN,,HIRAGANA,,,鉱滓,こうさい,,kousai,żużel,,,
-100585,WORD_NOUN,,HIRAGANA,,,呈示,ていし,,teishi,wystawa,,,
+100584,WORD_NOUN,,HIRAGANA,,,鉱滓,こうさい,,kousai,żużel,,,DUPLICATE 100632
+100585,WORD_NOUN,,HIRAGANA,,,呈示,ていし,,teishi,wystawa,,,DUPLICATE 100633
 100586,WORD_NOUN,,HIRAGANA,,,胆気,たんき,,tanki,"odwaga
 stalowe nerwy
 nerwy ze stali",,,
 100587,WORD_NOUN,,HIRAGANA,,,-,さび,,sabi,"punkt kulminacyjny piosenki
-wasabi (w sklepie sushi, skrót)",,,
+wasabi (w sklepie sushi, skrót)",,,"DUPLICATE 4153
+DUPLICATE 11954
+DUPLICATE 30881
+DUPLICATE 57562"
 100588,"WORD_ADVERBIAL_NOUN
 WORD_TEMPORAL_NOUN",,HIRAGANA,,,両度,りょうど,,ryoudo,oba razy,,,
 100589,WORD_NOUN,,HIRAGANA,,,管足,かんそく,,kansoku,nóżki ambulakralne,zakończenia rozgałęzień układu ambulakralnego (wodnego) szkarłupni (Echinodermata),,
@@ -1223,13 +1226,13 @@ wyleczenie (z choroby)",,,
 WORD_ADVERB_TO",,HIRAGANA,,,淙々,そうそう,,sousou,"bulgot
 bulgotanie
 szum",,,
-100596,WORD_NOUN,,HIRAGANA,,,印契,いんげい,,ingei,mudra,w hinduizmie i buddyzmie symboliczne gesty medytacyjne,,
+100596,WORD_NOUN,,HIRAGANA,,,印契,いんげい,,ingei,mudra,w hinduizmie i buddyzmie symboliczne gesty medytacyjne,,DUPLICATE 100635
 100597,WORD_NOUN,,HIRAGANA,,,鼠害,そがい,,sogai,szkody wyrządzone przez szczury i myszy,,,
-100598,WORD_NOUN,,HIRAGANA,,,補任,ほにん,,honin,mianowanie do biura,,,
+100598,WORD_NOUN,,HIRAGANA,,,補任,ほにん,,honin,mianowanie do biura,,,"DUPLICATE 100636
+DUPLICATE 100637"
 100599,WORD_NOUN,,HIRAGANA,,,兇悍,きょうかん,,kyoukan,"okrucieństwo
 dzikość
-srogość
-dzikość",mało znane słowo,,
+srogość",mało znane słowo,,
 100600,WORD_NOUN,,HIRAGANA,,,扮装,ふんそう,,funsou,"przebranie
 kostium
 strój",,,
@@ -1258,7 +1261,7 @@ słodkie słowa",,,
 100609,WORD_ADVERBIAL_NOUN,,HIRAGANA,,,呈示次第,ていじしだい,,teiji shidai,"po prezentacji
 po zaprezentowaniu",,,
 100610,WORD_NOUN,,HIRAGANA,,,花被片,かひへん,,kahihen,część okwiatu nieróżniący się od korony kwiatu oraz kielicha,,,
-100611,WORD_NOUN,,KATAKANA,,,搾菜,ザーサイ,,zaasai,zha cai,tradycyjny chiński dodatek do potraw charakterystyczny dla kuchni syczuańskiej,,
+100611,WORD_NOUN,,KATAKANA,,,搾菜,ザーサイ,,zaasai,zha cai,tradycyjny chiński dodatek do potraw charakterystyczny dla kuchni syczuańskiej,,DUPLICATE 100642
 100612,WORD_NOUN,,HIRAGANA,,,当事務所,とうじむしょ,,toujimusho,to biuro,,,
 100613,WORD_NOUN,,HIRAGANA,,,店屋物,てんやもの,,ten'yamono,jedzenie na wynos,,,
 100614,WORD_EXPRESSION,,HIRAGANA,,,言ったって,いったって,,ittatte,nawet gdybym ci powiedział,,,
@@ -1278,7 +1281,9 @@ ustatkować się
 zasiać się",,,
 100620,WORD_NOUN,,HIRAGANA,,,意生身,いしょうしん,,ishoushin,???,buddyzm,,
 100621,WORD_NOUN,,HIRAGANA,,,魚汁,いしる,,ishiru,"sos rybny wykonany z solonych, sfermentowanych sardynek, makreli lub kalmarów
-specjalność z półwyspu Noto prefektury Ishikawa",,,
+specjalność z półwyspu Noto prefektury Ishikawa",,,"DUPLICATE 100651
+DUPLICATE 100652
+DUPLICATE 100653"
 100622,WORD_NOUN,,HIRAGANA,,,歩廊,ほろう,,horou,"korytarz
 przejście
 galeria
@@ -1287,7 +1292,8 @@ platforma",,,
 100624,WORD_NOUN,,HIRAGANA,,,寝だめ,ねだめ,,nedame,"nadrobić swój sen
 zyskać dodatkowy sen, kiedy ma się okazję",,,
 100625,WORD_NOUN,,HIRAGANA,,,留守録,るすろく,,rusuroku,"bezobsługowe (wideo, audio) nagrywanie",,,
-100626,WORD_NOUN,,HIRAGANA,,,駅使,えきし,,ekishi,"urzędnik w okresie ritsuryo, który wolno mógł używać państwowych stajni i koni",archaizm,,
+100626,WORD_NOUN,,HIRAGANA,,,駅使,えきし,,ekishi,"urzędnik w okresie ritsuryo, który wolno mógł używać państwowych stajni i koni",archaizm,,"DUPLICATE 100656
+DUPLICATE 100657"
 100627,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,回腸,かいちょう,,kaichou,jelito kręte,,,
 100628,WORD_NOUN,,HIRAGANA,,,回腸炎,かいちょうえん,,kaichouen,zapalenie jelita krętego,,,
@@ -1300,3 +1306,72 @@ WORD_EXPRESSION",,HIRAGANA,,,果てしがない,はてしがない,,hateshi ga n
 bezgraniczny
 nieograniczony
 wieczny",,,
+100632,WORD_NOUN,,HIRAGANA,,,鉱滓,こうし,,koushi,żużel,,,DUPLICATE 100584
+100633,WORD_NOUN,,HIRAGANA,,,呈示,ていじ,,teiji,wystawa,,,DUPLICATE 100585
+100634,WORD_NOUN,,HIRAGANA,,,解錠,かいじょう,,kaijou,"otworzenie
+odblokowanie",,,
+100635,WORD_NOUN,,HIRAGANA,,,印契,いんけい,,inkei,mudra,w hinduizmie i buddyzmie symboliczne gesty medytacyjne,,DUPLICATE 100596
+100636,WORD_NOUN,,HIRAGANA,,,補任,ぶにん,,bunin,mianowanie do biura,,,"DUPLICATE 100598
+DUPLICATE 100637"
+100637,WORD_NOUN,,HIRAGANA,,,補任,ふにん,,funin,mianowanie do biura,,,"DUPLICATE 100598
+DUPLICATE 100636"
+100638,WORD_NOUN,,HIRAGANA,,,凶悍,きょうかん,,kyoukan,"okrucieństwo
+dzikość
+srogość",mało znane słowo,,
+100639,"WORD_ADVERB
+WORD_NOUN",,KATAKANA_HIRAGANA,,,-,ピタッと,,pitatto,"ciasno
+mocno
+szczelnie
+kurczowo
+blisko
+dokładnie
+precyzyjnie
+nagłe (zatrzymanie)
+niespodziewane (zatrzymanie)",,,
+100640,WORD_EXPRESSION,,HIRAGANA,,,巧言令色少なし仁,こうげんれいしょくすくなしじん,,kougen reishoku sukunashijin,???,archaizm,,
+100641,WORD_EXPRESSION,,HIRAGANA,,,巧言令色すくなし仁,こうげんれいしょくすくなしじん,,kougen reishoku sukunashijin,???,archaizm,,
+100642,WORD_NOUN,,KATAKANA,,,搾菜,ザーツァイ,,zaatsai,zha cai,tradycyjny chiński dodatek do potraw charakterystyczny dla kuchni syczuańskiej,,DUPLICATE 100611
+100643,WORD_NOUN,,KATAKANA,,,榨菜,ザーサイ,,zaasai,zha cai,tradycyjny chiński dodatek do potraw charakterystyczny dla kuchni syczuańskiej,,DUPLICATE 100644
+100644,WORD_NOUN,,KATAKANA,,,榨菜,ザーツァイ,,zaatsai,zha cai,tradycyjny chiński dodatek do potraw charakterystyczny dla kuchni syczuańskiej,,DUPLICATE 100643
+100645,WORD_EXPRESSION,,HIRAGANA,,,言たって,いったって,,ittatte,nawet gdybym ci powiedział,,,
+100646,WORD_NOUN,,HIRAGANA,,,讃歎,さんだん,,sandan,"pochwała Buddy
+kazanie
+???",,,
+100647,WORD_NOUN,,HIRAGANA,,,讚談,さんだん,,sandan,"pochwała Buddy
+kazanie
+???",,,
+100648,WORD_NOUN,,HIRAGANA,,,讚歎,さんだん,,sandan,"pochwała Buddy
+kazanie
+???",,,
+100649,WORD_NOUN,,KATAKANA,,,-,コンテンツ・クラス,,kontentsu kurasu,zawartość klasy,ang: content class,,
+100650,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,御輿を据える,みこしをすえる,,mikoshi o sueru,"ulokować się (np. w krześle)
+rozsiąść się (np. w krześle)
+rozlokować się (np. w krześle)
+ustatkować się
+zasiać się",,,
+100651,WORD_NOUN,,HIRAGANA,,,魚汁,いしり,,ishiri,"sos rybny wykonany z solonych, sfermentowanych sardynek, makreli lub kalmarów
+specjalność z półwyspu Noto prefektury Ishikawa",,,"DUPLICATE 100621
+DUPLICATE 100652
+DUPLICATE 100653"
+100652,WORD_NOUN,,HIRAGANA,,,魚汁,よしる,,yoshiru,"sos rybny wykonany z solonych, sfermentowanych sardynek, makreli lub kalmarów
+specjalność z półwyspu Noto prefektury Ishikawa",,,"DUPLICATE 100621
+DUPLICATE 100651
+DUPLICATE 100653"
+100653,WORD_NOUN,,HIRAGANA,,,魚汁,よしり,,yoshiri,"sos rybny wykonany z solonych, sfermentowanych sardynek, makreli lub kalmarów
+specjalność z półwyspu Noto prefektury Ishikawa",,,"DUPLICATE 100621
+DUPLICATE 100651
+DUPLICATE 100652"
+100654,WORD_NOUN,,HIRAGANA,,,御重,おじゅう,,ojuu,wielowarstwowe pudełko na jedzenie,,,
+100655,WORD_NOUN,,HIRAGANA,,,寝溜め,ねだめ,,nedame,"nadrobić swój sen
+zyskać dodatkowy sen, kiedy ma się okazję",,,
+100656,WORD_NOUN,,HIRAGANA,,,駅使,うまやづかい,,umayadukai,"urzędnik w okresie ritsuryo, który wolno mógł używać państwowych stajni i koni",archaizm,,"DUPLICATE 100626
+DUPLICATE 100657"
+100657,WORD_NOUN,,HIRAGANA,,,駅使,はゆまづかい,,hayumadukai,"urzędnik w okresie ritsuryo, który wolno mógł używać państwowych stajni i koni",archaizm,,"DUPLICATE 100626
+DUPLICATE 100656"
+100658,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,果てしが無い,はてしがない,,hateshi ga nai,"bezkresny
+bezgraniczny
+nieograniczony
+wieczny",,,
+100659,WORD_NOUN,,KATAKANA,,,-,サビ,,sabi,punkt kulminacyjny piosenki,,,
