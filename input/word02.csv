@@ -1402,7 +1402,7 @@ kształt zęba",,,
 100670,WORD_NOUN,,HIRAGANA,,,鶸,ひわ,,hiwa,łuskacze,podrodzina ptaków z rodziny łuszczakowatych,,
 100671,WORD_NOUN,,HIRAGANA,,,膏薬,こうやく,,kouyaku,"plaster
 łata
-maść",,,
+maść",,,DUPLICATE 100714
 100672,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,引赤,いんせき,,inseki,zaczerwienienie skóry,mało znane słowo,,
 100673,WORD_NOUN,,HIRAGANA,,,植皮,しょくひ,,shokuhi,przeszczepienie skóry,,,
@@ -1417,10 +1417,12 @@ drukowanie",,,
 rozwój
 ekspansja
 rozszerzenie",,,
-100679,"WORD_VERB_AUX
-WORD_VERB_RU",,HIRAGANA,,,-,せる,,seru,"czasownik posiłkowy do wskazywania przyczyny
+100679,"WORD_VERB_RU
+WORD_VERB_AUX",,HIRAGANA,,,-,せる,,seru,"czasownik posiłkowy do wskazywania przyczyny
 czasownik posiłkowy do wskazywania czyjeś zgodny na zrobienie czegoś (pokornie)
-czasownik posiłkowy używany jako grzecznościowe mówienie o działaniach innych",,,
+czasownik posiłkowy używany jako grzecznościowe mówienie o działaniach innych",,,"DUPLICATE 5537
+DUPLICATE 28862
+DUPLICATE 29109"
 100680,WORD_NOUN,,HIRAGANA,,,修斗,しゅうと,,shuuto,shooto,japońska organizacja promująca mieszane sztuki walki (MMA) założona w 1985 przez Sayamę Satoru.,,
 100681,WORD_NOUN,,HIRAGANA,,,譏笑,きしょう,,kishou,"chichotanie
 parskanie
@@ -1464,7 +1466,7 @@ nadymać się",kolokwializm,,
 100703,WORD_NOUN,,HIRAGANA,,,朱泥,しゅでい,,shudei,rudawa brązowa ceramika,pierwotnie pochodząca z Chin,,
 100704,WORD_NOUN,,HIRAGANA,,,酒呑童子,しゅてんどうじ,,shuten douji,oni,jeden z najbardziej złych i potężnych demonów w japońskiej mitologii,,
 100705,WORD_NOUN,,HIRAGANA,,,衆愚政治,しゅうぐせいじ,,shuugu seiji,"rządu motłochu
-ochlokracja",,,
+ochlokracja",,,DUPLICATE 100722
 100706,WORD_NOUN,,HIRAGANA,,,殊遇,しゅぐう,,shuguu,"specjalna przychylność
 specjalna życzliwość",,,
 100707,WORD_NOUN,,KATAKANA_HIRAGANA,,,シュグニー語,シュグニーご,,shugunii go,język szugnański,"pamirski język, którym posługuje się około 40000 osób w Tadżykistanie i 20000 osób w Afganistanie",,
@@ -1477,3 +1479,31 @@ mętnie",,,
 przechadzka",,,
 100710,WORD_NOUN,,HIRAGANA,,,漫ろ言,そぞろごと,,sozoro goto,"chaotyczna rozmowa
 niejasna uwaga",,,
+100711,WORD_NOUN,,HIRAGANA,,,附会,ふかい,,fukai,"dodanie
+połączenie
+złączenie
+???",,,
+100712,WORD_NOUN,,HIRAGANA,,,金翅雀,ひわ,,hiwa,łuskacze,podrodzina ptaków z rodziny łuszczakowatych,,
+100713,WORD_NOUN,,KATAKANA,,,-,ヒワ,,hiwa,łuskacze,podrodzina ptaków z rodziny łuszczakowatych,,
+100714,WORD_NOUN,,HIRAGANA,,,膏薬,あぶらぐすり,,aburagusuri,"plaster
+łata
+maść",,,DUPLICATE 100671
+100715,WORD_NOUN,,HIRAGANA,,,脂薬,あぶらぐすり,,aburagusuri,"plaster
+łata
+maść",,,
+100716,WORD_NOUN,,HIRAGANA,,,油薬,あぶらぐすり,,aburagusuri,"plaster
+łata
+maść",,,
+100717,"WORD_VERB_RU
+WORD_VERB_AUX",,HIRAGANA,,,-,させる,,saseru,"czasownik posiłkowy do wskazywania przyczyny
+czasownik posiłkowy do wskazywania czyjeś zgodny na zrobienie czegoś (pokornie)
+czasownik posiłkowy używany jako grzecznościowe mówienie o działaniach innych",,,DUPLICATE 67049
+100718,WORD_NOUN,,KATAKANA,,,-,マクロ・ウィンドウ,,makuro windou,okno makra,ang: macro window,,
+100719,WORD_NOUN,,KATAKANA,,,-,コード・ペンダント,,koodo pendanto,???,ang: cord pendant,,
+100720,WORD_EXPRESSION,,HIRAGANA,,,豈図らんや,あにはからんや,,ani hakaran'ya,"przeciwnie do czyjś oczekiwań
+czyjeś zaskoczenie",,,
+100721,WORD_NOUN,,HIRAGANA,,,廻章,かいしょう,,kaishou,???,,,
+100722,WORD_NOUN,,HIRAGANA,,,衆愚政治,しゅぐせいじ,,shugu seiji,"rządu motłochu
+ochlokracja",,,DUPLICATE 100705
+100723,WORD_NOUN,,HIRAGANA,,,漫ろ歩き,そぞろあるき,,sozoro aruki,"wolny, relaksacyjny spacer
+przechadzka",,,
