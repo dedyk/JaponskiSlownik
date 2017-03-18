@@ -2092,23 +2092,27 @@ to jest koniec",,,
 101003,WORD_NOUN,,KATAKANA,,,-,ヒズボッラー,,hizuborraa,Hezbollah,"libańska partia polityczna islamskich szyitów, która została utworzona w roku 1982",,
 101004,WORD_NOUN,,KATAKANA,,,-,ヘズボラ,,hezubora,Hezbollah,"libańska partia polityczna islamskich szyitów, która została utworzona w roku 1982",,
 101005,WORD_NOUN,,KATAKANA,,,-,ヘズボッラー,,hezuborraa,Hezbollah,"libańska partia polityczna islamskich szyitów, która została utworzona w roku 1982",,
-101006,WORD_NOUN,,KATAKANA,,,Ξ,クサイ,,kusai,xi,,,
-101007,WORD_NOUN,,KATAKANA,,,Υ,ウプシロン,,upushiron,ipsylon,"dwudziesta litera alfabetu greckiego, ang: upsilon",,
-101008,WORD_NOUN,,HIRAGANA,,,榾,ほた,,hota,podpałka,mało znane słowo,,
-101009,WORD_NOUN,,HIRAGANA,,,磔,はりつけ,,haritsuke,ukrzyżowanie,,,
-101010,WORD_NOUN,,HIRAGANA,,,菅,すげ,,suge,turzyca,roślina,,
+101006,WORD_NOUN,,KATAKANA,,,Ξ,クサイ,,kusai,xi,,,"DUPLICATE 101039
+DUPLICATE 101040"
+101007,WORD_NOUN,,KATAKANA,,,Υ,ウプシロン,,upushiron,ipsylon,"dwudziesta litera alfabetu greckiego, ang: upsilon",,"DUPLICATE 101044
+DUPLICATE 101045"
+101008,WORD_NOUN,,HIRAGANA,,,榾,ほた,,hota,podpałka,mało znane słowo,,DUPLICATE 101049
+101009,WORD_NOUN,,HIRAGANA,,,磔,はりつけ,,haritsuke,ukrzyżowanie,,,DUPLICATE 101052
+101010,WORD_NOUN,,HIRAGANA,,,菅,すげ,,suge,turzyca,roślina,,DUPLICATE 101054
 101011,WORD_NOUN,,HIRAGANA,,,△,さんかく,,sankaku,"przeciętny (np. jako zaznaczanie pracy domowej)
 słaby",,,
 101012,WORD_NOUN,,HIRAGANA,,,癰,よう,,you,"karbunkuł
-czyrak mnogi",rodzaj schorzenia,,
+czyrak mnogi",rodzaj schorzenia,,DUPLICATE 12400
 101013,WORD_NOUN,,HIRAGANA,,,粃,しいな,,shiina,"pusta łupina ziarna
 niedojrzały kłos (np. pszenicy)
 pusty przedmiot
-niedojrzały owoc",,,
+niedojrzały owoc",,,"DUPLICATE 101030
+DUPLICATE 101056
+DUPLICATE 101057"
 101014,WORD_NOUN,,KATAKANA,,,Ｔ,ティー,,tii,"T
-t",,,
+t",,,DUPLICATE 22021
 101015,WORD_NOUN,,HIRAGANA,,,癜,なまず,,namazu,łupież pstry,,,
-101016,WORD_NOUN,,HIRAGANA,,,蔕,へた,,heta,kielich kwiatu,,,
+101016,WORD_NOUN,,HIRAGANA,,,蔕,へた,,heta,kielich kwiatu,,,DUPLICATE 101060
 101017,WORD_NOUN,,HIRAGANA,,,綛,かせ,,kase,"motek
 kłębek wełny
 szpula wełny (skrót)",,,
@@ -2119,7 +2123,7 @@ szczypce (np. kraba, skorpiona i etc)
 pazur
 szpon",,,
 101021,WORD_NOUN,,HIRAGANA,,,魏,ぎ,,gi,królestwo Wei,Chiny,,
-101022,WORD_NOUN,,KATAKANA,,,Ε,イプシロン,,ipushiron,epsilon,ang: epsilon,,
+101022,WORD_NOUN,,KATAKANA,,,Ε,イプシロン,,ipushiron,epsilon,ang: epsilon,,DUPLICATE 101065
 101023,WORD_NOUN,,HIRAGANA,,,鮞,はららご,,hararago,ikra,szczególnie łososia,,
 101024,"WORD_NOUN
 WORD_NOUN_SUFFIX
@@ -2129,15 +2133,19 @@ kufer podróżny
 walizka
 waliza
 wiklinowy kufer
-bagaż",,,
+bagaż",,,DUPLICATE 80929
 101025,WORD_NOUN,,KATAKANA,,,Ｊ,ジェー,,jee,"J
 j
 Japan Professional Football League (skrót, kolokwializm)",,,
-101026,WORD_NOUN,,HIRAGANA,,,磔柱,はりつけばしら,,haritsukebashira,krzyż,używany podczas ukrzyżowania,,
+101026,WORD_NOUN,,HIRAGANA,,,磔柱,はりつけばしら,,haritsukebashira,krzyż,używany podczas ukrzyżowania,,"DUPLICATE 101069
+DUPLICATE 101070
+DUPLICATE 101071"
 101027,WORD_NOUN,,HIRAGANA,,,菅笠,すげがさ,,sugegasa,tkany kapelusz,"z turzycy, bambusa",,
 101028,WORD_NOUN,,HIRAGANA,,,菅藻,すがも,,sugamo,phyllospadix iwatensis,odmiana trawy morskiej,,
 101029,WORD_NOUN,,HIRAGANA,,,癰疽,ようそ,,youso,wszelkie poważne wysypki na skórze,,,
-101030,WORD_NOUN,,HIRAGANA,,,粃,みよさ,,miyosa,niedojrzały owoc,kolokwializm,,
+101030,WORD_NOUN,,HIRAGANA,,,粃,みよさ,,miyosa,niedojrzały owoc,kolokwializm,,"DUPLICATE 101013
+DUPLICATE 101056
+DUPLICATE 101057"
 101031,WORD_NOUN,,HIRAGANA,,,粃糠疹,ひこうしん,,hikoushin,łupież,,,
 101032,WORD_NOUN,,HIRAGANA,,,粃糠,ひこう,,hikou,"otręby
 łupina
@@ -2149,3 +2157,74 @@ Japan Professional Football League (skrót, kolokwializm)",,,
 101036,WORD_NOUN,,HIRAGANA,,,鱶の鰭,ふかのひれ,,fuka no hire,płetwa rekina,,,
 101037,WORD_NOUN,,HIRAGANA,,,鱶潤目,ふかうるめ,,fukaurume,płetwa rekina,mało znane słowo,,
 101038,WORD_NOUN,,HIRAGANA_KATAKANA,,,鱶鰭スープ,ふかひれスープ,,fukahire suupu,zupa z płetwy rekina,,,
+101039,WORD_NOUN,,KATAKANA,,,Ξ,クシー,,kushii,xi,,,"DUPLICATE 101006
+DUPLICATE 101040"
+101040,WORD_NOUN,,KATAKANA,,,Ξ,グザイ,,guzai,xi,,,"DUPLICATE 101006
+DUPLICATE 101039"
+101041,WORD_NOUN,,KATAKANA,,,ξ,クサイ,,kusai,xi,,,"DUPLICATE 101042
+DUPLICATE 101043"
+101042,WORD_NOUN,,KATAKANA,,,ξ,クシー,,kushii,xi,,,"DUPLICATE 101041
+DUPLICATE 101043"
+101043,WORD_NOUN,,KATAKANA,,,ξ,グザイ,,guzai,xi,,,"DUPLICATE 101041
+DUPLICATE 101042"
+101044,WORD_NOUN,,KATAKANA,,,Υ,ユプシロン,,yupushiron,ipsylon,"dwudziesta litera alfabetu greckiego, ang: upsilon",,"DUPLICATE 101007
+DUPLICATE 101045"
+101045,WORD_NOUN,,KATAKANA,,,Υ,オイプシロン,,oipushiron,ipsylon,"dwudziesta litera alfabetu greckiego, ang: upsilon",,"DUPLICATE 101007
+DUPLICATE 101044"
+101046,WORD_NOUN,,KATAKANA,,,υ,ウプシロン,,upushiron,ipsylon,"dwudziesta litera alfabetu greckiego, ang: upsilon",,"DUPLICATE 101047
+DUPLICATE 101048"
+101047,WORD_NOUN,,KATAKANA,,,υ,ユプシロン,,yupushiron,ipsylon,"dwudziesta litera alfabetu greckiego, ang: upsilon",,"DUPLICATE 101046
+DUPLICATE 101048"
+101048,WORD_NOUN,,KATAKANA,,,υ,オイプシロン,,oipushiron,ipsylon,"dwudziesta litera alfabetu greckiego, ang: upsilon",,"DUPLICATE 101046
+DUPLICATE 101047"
+101049,WORD_NOUN,,HIRAGANA,,,榾,ほだ,,hoda,podpałka,mało znane słowo,,DUPLICATE 101008
+101050,WORD_NOUN,,HIRAGANA,,,榾柮,ほた,,hota,podpałka,mało znane słowo,,DUPLICATE 101051
+101051,WORD_NOUN,,HIRAGANA,,,榾柮,ほだ,,hoda,podpałka,mało znane słowo,,DUPLICATE 101050
+101052,WORD_NOUN,,HIRAGANA,,,磔,はっつけ,,hattsuke,ukrzyżowanie,,,DUPLICATE 101009
+101053,WORD_NOUN,,HIRAGANA,,,礫刑,はりつけ,,haritsuke,ukrzyżowanie,,,
+101054,WORD_NOUN,,HIRAGANA,,,菅,すが,,suga,turzyca,roślina,,DUPLICATE 101010
+101055,WORD_NOUN,,KATAKANA,,,-,スゲ,,suge,turzyca,roślina,,
+101056,WORD_NOUN,,HIRAGANA,,,粃,しいだ,,shiida,"pusta łupina ziarna
+niedojrzały kłos (np. pszenicy)
+pusty przedmiot
+niedojrzały owoc",,,"DUPLICATE 101013
+DUPLICATE 101030
+DUPLICATE 101057"
+101057,WORD_NOUN,,HIRAGANA,,,粃,しいら,,shiira,"pusta łupina ziarna
+niedojrzały kłos (np. pszenicy)
+pusty przedmiot
+niedojrzały owoc",,,"DUPLICATE 101013
+DUPLICATE 101030
+DUPLICATE 101056"
+101058,WORD_NOUN,,HIRAGANA,,,秕,しいな,,shiina,"pusta łupina ziarna
+niedojrzały kłos (np. pszenicy)
+pusty przedmiot
+niedojrzały owoc",,,
+101059,WORD_NOUN,,KATAKANA,,,ｔ,ティー,,tii,"T
+t",,,DUPLICATE 22021
+101060,WORD_NOUN,,HIRAGANA,,,蔕,ほぞ,,hozo,kielich kwiatu,,,DUPLICATE 101016
+101061,WORD_NOUN,,HIRAGANA,,,桛,かせ,,kase,"motek
+kłębek wełny
+szpula wełny (skrót)",,,
+101062,WORD_NOUN,,KATAKANA,,,-,フカ,,fuka,rekin,duży,,
+101063,WORD_NOUN,,HIRAGANA,,,鶇,つぐみ,,tsugumi,drozd,"szczególnie: drozd rdzawoskrzydły, drozd rdzawy",,
+101064,WORD_NOUN,,KATAKANA,,,-,ツグミ,,tsugumi,drozd,"szczególnie: drozd rdzawoskrzydły, drozd rdzawy",,
+101065,WORD_NOUN,,KATAKANA,,,Ε,エプシロン,,epushiron,epsilon,ang: epsilon,,DUPLICATE 101022
+101066,WORD_NOUN,,KATAKANA,,,ε,イプシロン,,ipushiron,epsilon,ang: epsilon,,DUPLICATE 101067
+101067,WORD_NOUN,,KATAKANA,,,ε,エプシロン,,epushiron,epsilon,ang: epsilon,,DUPLICATE 101066
+101068,WORD_NOUN,,KATAKANA,,,ｊ,ジェー,,jee,"J
+j
+Japan Professional Football League (skrót, kolokwializm)",,,
+101069,WORD_NOUN,,HIRAGANA,,,磔柱,はっつけばしら,,hattsukebashira,krzyż,używany podczas ukrzyżowania,,"DUPLICATE 101026
+DUPLICATE 101070
+DUPLICATE 101071"
+101070,WORD_NOUN,,HIRAGANA,,,磔柱,たくちゅう,,takuchuu,krzyż,używany podczas ukrzyżowania,,"DUPLICATE 101026
+DUPLICATE 101069
+DUPLICATE 101071"
+101071,WORD_NOUN,,HIRAGANA,,,磔柱,はりき,,hariki,krzyż,używany podczas ukrzyżowania,,"DUPLICATE 101026
+DUPLICATE 101069
+DUPLICATE 101070"
+101072,WORD_NOUN,,KATAKANA,,,-,スガモ,,sugamo,phyllospadix iwatensis,odmiana trawy morskiej,,
+101073,WORD_NOUN,,HIRAGANA,,,綛糸,かせいと,,kase ito,szpula wełny,,,
+101074,WORD_NOUN,,HIRAGANA,,,桛糸,かせいと,,kase ito,szpula wełny,,,
+101075,WORD_NOUN,,KATAKANA,,,-,フカヒレ,,fukahire,płetwa rekina,,,
