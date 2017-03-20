@@ -2503,7 +2503,7 @@ przypadkowy",,,
 WORD_ADJECTIVE_NO",,HIRAGANA,,,対偶,たいぐう,,taiguu,"para
 przeciwstawienie",,,
 101194,WORD_NOUN,,HIRAGANA,,,渡海,とかい,,tokai,przekraczanie morza,,,
-101195,WORD_NOUN,,HIRAGANA,,,楽日,らくじつ,,rakujitsu,ostatni dzień turnieju,sumo,,
+101195,WORD_NOUN,,HIRAGANA,,,楽日,らくじつ,,rakujitsu,ostatni dzień turnieju,sumo,,DUPLICATE 101212
 101196,WORD_NOUN,,HIRAGANA,,,詩書,ししょ,,shisho,"tomik poezji
 Klasyczna Chińska Poezja i Historia (zbiór chińskich tekstów)",,,
 101197,WORD_NOUN,,HIRAGANA,,,声道,せいどう,,seidou,aparat głosowy,,,
@@ -2516,7 +2516,9 @@ stopniowe zmniejszanie się",,,
 101203,WORD_NOUN,,HIRAGANA,,,午餐,ごさん,,gosan,"lunch
 obiad",,,
 101204,WORD_NOUN,,HIRAGANA,,,-,おん,,on,"święte miejsce (Okinawa)
-święty gaj",,,
+święty gaj",,,"DUPLICATE 5700
+DUPLICATE 16827
+DUPLICATE 37605"
 101205,WORD_NOUN,,HIRAGANA,,,改製,かいせい,,kaisei,???,,,
 101206,WORD_NOUN,,HIRAGANA,,,皇嗣,こうし,,koushi,"następca tronu
 cesarski dziedzic",,,
@@ -2525,7 +2527,7 @@ cesarski dziedzic",,,
 101209,WORD_NOUN,,HIRAGANA,,,鱮,たなご,,tanago,różanka,rodzaj ryb,,
 101210,WORD_NOUN,,HIRAGANA,,,小花柄,しょうかへい,,shoukahei,szypułka,"u roślin nieulistniona część pędu, na której wyrasta kwiat, a następnie owoc",,
 101211,WORD_NOUN,,HIRAGANA,,,小花梗,しょうかこう,,shoukakou,szypułka,"u roślin nieulistniona część pędu, na której wyrasta kwiat, a następnie owoc",,
-101212,WORD_NOUN,,HIRAGANA,,,楽日,らくび,,rakubi,dzień zamknięcia pokazu,,,
+101212,WORD_NOUN,,HIRAGANA,,,楽日,らくび,,rakubi,dzień zamknięcia pokazu,,,DUPLICATE 101195
 101213,WORD_NOUN,,HIRAGANA,,,午餐会,ごさんかい,,gosankai,uroczysty obiad,,,
 101214,WORD_NOUN,,HIRAGANA,,,改製原戸籍,かいせいげんこせき,,kaiseigen koseki,???,,,
 101215,"WORD_ADVERB
@@ -2589,10 +2591,29 @@ niekompletny",,,
 sprawdzanie zasadności",,,
 101236,WORD_NOUN,,HIRAGANA,,,多角化の経済,たかくかのけいざい,,takakuka no keizai,ekonomia dywersyfikacji,,,
 101237,WORD_NOUN,,KATAKANA_HIRAGANA,,,ユネスコ憲章,ユネスコけんしょう,,yunesuko kenshou,karta UNESCO,,,
-101238,WORD_NOUN,,HIRAGANA,,,禊萩,みそはぎ,,misohagi,lythrum anceps,roślina,,
+101238,WORD_NOUN,,HIRAGANA,,,禊萩,みそはぎ,,misohagi,lythrum anceps,roślina,,DUPLICATE 101252
 101239,WORD_NOUN,,HIRAGANA,,,禊祓,みそぎはらえ,,misogiharae,forma oczyszczenia Shinto,,,
 101240,WORD_NOUN,,HIRAGANA,,,国際連合大量破壊兵器廃棄特別委員会,こくさいれんごうたいりょうはかいへいきはいきとくべついいんかい,,kokusai rengou tairyou hakai heiki haiki tokubetsu iinkai,"United Nations Special Commission
 UNSCOM",,,
 101241,WORD_NOUN,,KATAKANA,,,-,ピアストル,,piasutoru,"piastr
 piaster
 piastra",moneta używana w kilku krajach Bliskiego Wschodu,,
+101242,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,対遇,たいぐう,,taiguu,"para
+przeciwstawienie",,,
+101243,WORD_NOUN,,HIRAGANA,,,鰱,たなご,,tanago,różanka,rodzaj ryb,,
+101244,WORD_NOUN,,KATAKANA,,,-,タナゴ,,tanago,różanka,rodzaj ryb,,
+101245,WORD_NOUN,,KATAKANA,,,σ,シグマ,,shiguma,sigma,osiemnasta litera alfabetu greckiego,,
+101246,WORD_NOUN,,KATAKANA,,,ς,シグマ,,shiguma,sigma,osiemnasta litera alfabetu greckiego,,
+101247,WORD_NOUN,,HIRAGANA,,,貉,むじな,,mujina,"borsuk
+jenot azjatycki (nyctereutes procyonoides)",,,
+101248,WORD_NOUN,,KATAKANA,,,-,ムジナ,,mujina,"borsuk
+jenot azjatycki (nyctereutes procyonoides)",,,
+101249,WORD_NOUN,,KATAKANA,,,λ,ラムダ,,ramuda,lambda,jedenasta litera alfabetu greckiego,,
+101250,WORD_NOUN,,HIRAGANA,,,身滌,みそぎ,,misogi,ceremonia oczyszczenia,,,
+101251,WORD_NOUN,,KATAKANA,,,-,ムジナモ,,mujinamo,aldrowanda pęcherzykowata,"gatunek rośliny należący do rodziny rosiczkowatych, aldrovanda vesiculosa",,
+101252,WORD_NOUN,,HIRAGANA,,,禊萩,みぞはぎ,,mizohagi,lythrum anceps,roślina,,DUPLICATE 101238
+101253,WORD_NOUN,,HIRAGANA,,,溝萩,みそはぎ,,misohagi,lythrum anceps,roślina,,DUPLICATE 101254
+101254,WORD_NOUN,,HIRAGANA,,,溝萩,みぞはぎ,,mizohagi,lythrum anceps,roślina,,DUPLICATE 101253
+101255,WORD_NOUN,,KATAKANA,,,-,ミソハギ,,misohagi,lythrum anceps,roślina,,
+101256,WORD_NOUN,,KATAKANA,,,-,ミゾハギ,,mizohagi,lythrum anceps,roślina,,
