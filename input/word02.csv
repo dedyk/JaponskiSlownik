@@ -3073,7 +3073,7 @@ mała przydrożna świątynia",,,
 101462,WORD_NOUN,,HIRAGANA,,,祠宇,しう,,shiu,świątynia,archaizm,,
 101463,WORD_NOUN,,HIRAGANA,,,楡,にれ,,nire,ulmus davidiana,roślina,,
 101464,WORD_NOUN,,HIRAGANA,,,楡木茸,たもぎたけ,,tamogitake,boczniak lejkowaty,"grzyb, pleurotus cornucopiae",,
-101465,WORD_NOUN,,HIRAGANA,,,糒,ほしい,,hoshii,suszony gotowany ryż używany głównie jako prowiant dla samurajskich oddziałów i podróżnych,,,
+101465,WORD_NOUN,,HIRAGANA,,,糒,ほしい,,hoshii,suszony gotowany ryż używany głównie jako prowiant dla samurajskich oddziałów i podróżnych,,,DUPLICATE 101502
 101466,WORD_NOUN,,HIRAGANA,,,箍,たが,,taga,"obręcz
 obramowanie (np. beczki)
 listwa (np. beczki)",,,
@@ -3111,8 +3111,8 @@ zapięcie
 klamra",,,
 101479,WORD_NOUN,,HIRAGANA,,,眦,まなじり,,manajiri,kącik oka,,,
 101480,WORD_NOUN,,HIRAGANA,,,羹,あつもの,,atsumono,bulion z ryby i warzyw,,,
-101481,WORD_NOUN,,KATAKANA,,,＠,アットマーク,,atto maaku,znak “małpy”,"ang: ""at"" mark",,
-101482,WORD_NOUN,,HIRAGANA,,,鱓,うつぼ,,utsubo,murena,,,
+101481,WORD_NOUN,,KATAKANA,,,＠,アットマーク,,atto maaku,znak “małpy”,"ang: ""at"" mark",,DUPLICATE 101511
+101482,WORD_NOUN,,HIRAGANA,,,鱓,うつぼ,,utsubo,murena,,,DUPLICATE 75491
 101483,WORD_NOUN,,HIRAGANA,,,箙,えびら,,ebira,trzepotanie strzały,,,
 101484,WORD_NOUN,,HIRAGANA,,,長編映画,ちょうへんえいが,,chouhen' eiga,"film długometrażowy
 film pełnometrażowy",,,
@@ -3132,8 +3132,43 @@ pinezka
 ćwiek",,,
 101493,WORD_NOUN,,HIRAGANA,,,鋲打ち銃,びょううちじゅう,,byouuchijuu,pistolet do nitowania,,,
 101494,WORD_NOUN,,HIRAGANA,,,簓子,ささらこ,,sasarako,"drewniana belka pionowa
-???",,,
+???",,,DUPLICATE 101513
 101495,WORD_NOUN,,HIRAGANA,,,簓蜱,ささらだに,,sasaradani,???,,,
 101496,WORD_EXPRESSION,,HIRAGANA,,,まなじりを決して,まなじりをけっして,,manajiri o kesshite,???,,,
 101497,WORD_EXPRESSION,,HIRAGANA,,,羹に懲りて膾を吹く,あつものにこりてなますをふく,,atsumono ni korite namasu o fuku,"sparzony na zimne dmucha
 kto raz się sparzy, na zimne dmucha","idiom, mało znane słowo",,
+101498,WORD_NOUN,,HIRAGANA,,,桴,いかだ,,ikada,"tratwa
+ochraniacz przedramienia
+???",,,DUPLICATE 82048
+101499,WORD_NOUN,,HIRAGANA,,,叢祠,ほこら,,hokora,"hokora
+mała przydrożna świątynia",,,
+101500,WORD_NOUN,,KATAKANA,,,-,ニレ,,nire,ulmus davidiana,roślina,,
+101501,WORD_NOUN,,KATAKANA,,,-,タモギタケ,,tamogitake,boczniak lejkowaty,"grzyb, pleurotus cornucopiae",,
+101502,WORD_NOUN,,HIRAGANA,,,糒,ほしいい,,hoshiii,suszony gotowany ryż używany głównie jako prowiant dla samurajskich oddziałów i podróżnych,,,DUPLICATE 101465
+101503,WORD_NOUN,,HIRAGANA,,,干し飯,ほしいい,,hoshiii,suszony gotowany ryż używany głównie jako prowiant dla samurajskich oddziałów i podróżnych,,,
+101504,WORD_NOUN,,HIRAGANA,,,乾し飯,ほしいい,,hoshiii,suszony gotowany ryż używany głównie jako prowiant dla samurajskich oddziałów i podróżnych,,,
+101505,WORD_NOUN,,HIRAGANA,,,干飯,ほしいい,,hoshiii,suszony gotowany ryż używany głównie jako prowiant dla samurajskich oddziałów i podróżnych,,,
+101506,WORD_NOUN,,HIRAGANA,,,乾飯,ほしいい,,hoshiii,suszony gotowany ryż używany głównie jako prowiant dla samurajskich oddziałów i podróżnych,,,
+101507,"WORD_VERB_RU
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,タガが外れる,タガがはずれる,,taga ga hazureru,"stać się niepohamowany i przekraczać normę
+stracić wszelką powściągliwość
+stracić napięcie i zrelaksować się
+odpuszczać
+być chaotyczny
+stracić samokontrolę",,,
+101508,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,箍が外れる,たががはずれる,,taga ga hazureru,"stać się niepohamowany i przekraczać normę
+stracić wszelką powściągliwość
+stracić napięcie i zrelaksować się
+odpuszczać
+być chaotyczny
+stracić samokontrolę",,,
+101509,WORD_NOUN,,KATAKANA,,,-,ヒエ,,hie,"chwastnica jadalna (echinochloa esculenta)
+japońskie proso",,,
+101510,WORD_NOUN,,HIRAGANA,,,眥,まなじり,,manajiri,kącik oka,,,
+101511,WORD_NOUN,,HIRAGANA_KATAKANA,,,＠,あっとまーく,,atto maaku,znak “małpy”,"ang: ""at"" mark",,DUPLICATE 101481
+101512,WORD_NOUN,,KATAKANA,,,-,ウツボ,,utsubo,murena,,,
+101513,WORD_NOUN,,HIRAGANA,,,簓子,ささらのこ,,sasaranoko,"drewniana belka pionowa
+???",,,DUPLICATE 101494
+101514,WORD_NOUN,,KATAKANA,,,-,ササラダニ,,sasaradani,???,,,
+101515,WORD_EXPRESSION,,HIRAGANA,,,眦を決して,まなじりをけっして,,manajiri o kesshite,???,,,
