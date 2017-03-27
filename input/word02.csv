@@ -5053,8 +5053,8 @@ DUPLICATE 102229"
 102233,WORD_NOUN,,KATAKANA,,,-,メドハギ,,medohagi,lespedeza cuneata,roślina,,
 102234,WORD_NOUN,,HIRAGANA,,,奎宿,とかきぼし,,tokaki boshi,chiński gwiazdozbiór “nogi”,jeden z 28 domów,,DUPLICATE 102235
 102235,WORD_NOUN,,HIRAGANA,,,奎宿,けいしゅく,,keishuku,chiński gwiazdozbiór “nogi”,jeden z 28 domów,,DUPLICATE 102234
-102236,WORD_NOUN,,HIRAGANA,,,楸,きささげ,,kisasage,surmia żółtokwiatowa,catalpa ovata,,
-102237,WORD_NOUN,,HIRAGANA,,,楸,ひさぎ,,hisagi,nieznany gatunek roślin,archaizm,,
+102236,WORD_NOUN,,HIRAGANA,,,楸,きささげ,,kisasage,surmia żółtokwiatowa,catalpa ovata,,DUPLICATE 102237
+102237,WORD_NOUN,,HIRAGANA,,,楸,ひさぎ,,hisagi,nieznany gatunek roślin,archaizm,,DUPLICATE 102236
 102238,WORD_NOUN,,HIRAGANA,,,螠,ゆむし,,yumushi,urechis unicinctus,zwierzę,,
 102239,WORD_NOUN,,HIRAGANA,,,鶚,みさご,,misago,"rybołów
 rybołów zwyczajny (pandion haliaetus)",,,
@@ -5095,7 +5095,8 @@ zarejestrowana prostytucja",,,
 102259,WORD_NOUN,,HIRAGANA,,,九泉,きゅうせん,,kyuusen,"hades
 piekło",,,
 102260,WORD_NOUN,,HIRAGANA,,,千重,ちえ,,chie,wiele warstw,,,
-102261,WORD_NOUN,,HIRAGANA,,,後座,こうざ,,kouza,odrzut broni,,,
+102261,WORD_NOUN,,HIRAGANA,,,後座,こうざ,,kouza,odrzut broni,,,"DUPLICATE 102272
+DUPLICATE 102273"
 102262,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,公儀,こうぎ,,kougi,"cesarski dwór
 rząd szogunatu
@@ -5105,16 +5106,18 @@ rząd",,,
 piorun",,,
 102264,WORD_NOUN,,HIRAGANA,,,怪死,かいし,,kaishi,tajemnicza śmierć,,,
 102265,WORD_NOUN,,HIRAGANA,,,僧俗,そうぞく,,souzoku,kapłani i osoby świeckie,,,
-102266,WORD_NOUN,,HIRAGANA,,,熨斗,のし,,noshi,długi cienki kawałek papieru przyczepiany do prezentu,,,
+102266,WORD_NOUN,,HIRAGANA,,,熨斗,のし,,noshi,długi cienki kawałek papieru przyczepiany do prezentu,,,DUPLICATE 102304
 102267,WORD_NOUN,,HIRAGANA,,,阿菊虫,おきくむし,,okikumushi,atrophaneura alcinous,"owad, kolokwializm",,
 102268,WORD_NOUN,,HIRAGANA,,,等時性,とうじせい,,toujisei,izochroniczny,,,
 102269,WORD_NOUN,,HIRAGANA,,,等時性通信,とうじせいつうしん,,toujisei tsuushin,izochroniczna komunikacja,,,
 102270,WORD_NOUN,,HIRAGANA,,,等時性伝送,とうじせいでんそう,,toujisei densou,izochroniczna transmisja,,,
 102271,WORD_NOUN,,HIRAGANA,,,公娼全廃,こうしょうぜんぱい,,koushou zenpai,zniesienie licencjonowanej prostytucji,,,
-102272,WORD_NOUN,,HIRAGANA,,,後座,あとざ,,atoza,tylna część sceny w teatrze no,,,
+102272,WORD_NOUN,,HIRAGANA,,,後座,あとざ,,atoza,tylna część sceny w teatrze no,,,"DUPLICATE 102261
+DUPLICATE 102273"
 102273,WORD_NOUN,,HIRAGANA,,,後座,ござ,,goza,"gwóźdź programu
 gwiazda wieczoru
-druga część ceremonii herbacianej, w której herbata jest konsumowana",,,
+druga część ceremonii herbacianej, w której herbata jest konsumowana",,,"DUPLICATE 102261
+DUPLICATE 102272"
 102274,WORD_NOUN,,KATAKANA,,,-,ペストリー,,pesutorii,ciasto,ang: pastry,,
 102275,WORD_NOUN,,HIRAGANA,,,功労者,こうろうしゃ,,kourousha,"osoba, która świadczy usługi",,,
 102276,WORD_PREFIX,,HIRAGANA,,,鞣,なめし,,nameshi,garbarstwo,,,
@@ -5122,21 +5125,22 @@ druga część ceremonii herbacianej, w której herbata jest konsumowana",,,
 epoka
 szansa
 moment
-okazja",,,
+okazja",,,DUPLICATE 102310
 102278,WORD_NOUN,,KATAKANA,,,竏,キロリットル,,kirorittoru,kilolitr,,,
 102279,WORD_NOUN,,HIRAGANA,,,畷,なわて,,nawate,ścieżka pomiędzy polami ryżowymi,,,
 102280,WORD_NOUN,,HIRAGANA,,,中黒,なかぐろ,,nakaguro,"środkowa kropka (typograficzny znak używany pomiędzy równoległymi słowami, nazwami w katakanie i etc)
 kropka służąca do rozdzielania połączonych słów",,,
 102281,WORD_NOUN,,HIRAGANA,,,・,なかぽつ,,nakapotsu,"środkowa kropka (typograficzny znak używany pomiędzy równoległymi słowami, nazwami w katakanie i etc)
-kropka służąca do rozdzielania połączonych słów",,,
+kropka służąca do rozdzielania połączonych słów",,,"DUPLICATE 102311
+DUPLICATE 102312"
 102282,WORD_NOUN,,HIRAGANA,,,眇,すがめ,,sugame,"zez
 zez rozbieżny",,,
 102283,WORD_NOUN,,KATAKANA,,,-,ペストリーバッグ,,pesutorii baggu,woreczek do dekorowania,"ang: pastry bag, piping bag",,
 102284,WORD_NOUN,,KATAKANA_HIRAGANA,,,パンヤの木,パンヤのき,,pan'ya no ki,wełniak azjatycki,"drzewo z rodziny wełniakowatych, pochodzące z południowych Indii i Cejlonu, bombax ceiba",,
 102285,WORD_NOUN,,KATAKANA_HIRAGANA,,,パン焼き機,パンやきき,,pan' yakiki,maszyna do pieczenia chleba,,,
 102286,"WORD_ADJECTIVE_NA
-WORD_NOUN",,HIRAGANA,,,空下手,からへた,,karaheta,całkowity brak zdolności,,,
-102287,WORD_NOUN,,HIRAGANA,,,空返事,そらへんじ,,sora henji,nierozważna odpowiedź,,,
+WORD_NOUN",,HIRAGANA,,,空下手,からへた,,karaheta,całkowity brak zdolności,,,DUPLICATE 102317
+102287,WORD_NOUN,,HIRAGANA,,,空返事,そらへんじ,,sora henji,nierozważna odpowiedź,,,DUPLICATE 102318
 102288,WORD_NOUN,,HIRAGANA,,,研究心,けんきゅうしん,,kenkyuushin,"duch nauki
 mieć dociekliwy umysł",,,
 102289,WORD_ADJECTIVE_NA,,HIRAGANA,,,研究熱心,けんきゅうねっしん,,kenkyuu nesshin,"dociekliwy umysł
@@ -5159,3 +5163,66 @@ niewielki
 maleńki
 nieistotny
 mało znaczący",,,
+102295,WORD_NOUN,,HIRAGANA,,,木豇豆,きささげ,,kisasage,surmia żółtokwiatowa,catalpa ovata,,
+102296,WORD_NOUN,,KATAKANA,,,-,キササゲ,,kisasage,surmia żółtokwiatowa,catalpa ovata,,
+102297,WORD_NOUN,,HIRAGANA,,,久木,ひさぎ,,hisagi,nieznany gatunek roślin,archaizm,,
+102298,WORD_NOUN,,KATAKANA,,,-,ユムシ,,yumushi,urechis unicinctus,zwierzę,,
+102299,WORD_NOUN,,HIRAGANA,,,雎鳩,みさご,,misago,"rybołów
+rybołów zwyczajny (pandion haliaetus)",,,DUPLICATE 102300
+102300,WORD_NOUN,,HIRAGANA,,,雎鳩,しょきゅう,,shokyuu,"rybołów
+rybołów zwyczajny (pandion haliaetus)",,,DUPLICATE 102299
+102301,WORD_NOUN,,KATAKANA,,,-,ミサゴ,,misago,"rybołów
+rybołów zwyczajny (pandion haliaetus)",,,
+102302,WORD_NOUN,,KATAKANA,,,-,キョン,,kyon,mundżak chiński,"gatunek ssaka parzystokopytnego, jeden z najmniejszych przedstawicieli rodziny jeleniowatych, muntiacus reevesi",,
+102303,WORD_VERB_U,,HIRAGANA,,,糵す,もやす,,moyasu,???,,,
+102304,WORD_NOUN,,HIRAGANA,,,熨斗,ぬし,,nushi,długi cienki kawałek papieru przyczepiany do prezentu,,,DUPLICATE 102266
+102305,WORD_NOUN,,HIRAGANA,,,熨,のし,,noshi,długi cienki kawałek papieru przyczepiany do prezentu,,,DUPLICATE 102306
+102306,WORD_NOUN,,HIRAGANA,,,熨,ぬし,,nushi,długi cienki kawałek papieru przyczepiany do prezentu,,,DUPLICATE 102305
+102307,WORD_NOUN,,HIRAGANA,,,螠虫,おきくむし,,okikumushi,atrophaneura alcinous,"owad, kolokwializm",,
+102308,WORD_NOUN,,KATAKANA,,,-,ペイストリー,,peisutorii,ciasto,ang: pastry,,
+102309,WORD_NOUN,,KATAKANA,,,-,ペーストリー,,peesutorii,ciasto,ang: pastry,,
+102310,WORD_NOUN,,HIRAGANA,,,砌,みぎん,,migin,"czas
+epoka
+szansa
+moment
+okazja",,,DUPLICATE 102277
+102311,WORD_NOUN,,HIRAGANA,,,・,なかぐろ,,nakaguro,"środkowa kropka (typograficzny znak używany pomiędzy równoległymi słowami, nazwami w katakanie i etc)
+kropka służąca do rozdzielania połączonych słów",,,"DUPLICATE 102281
+DUPLICATE 102312"
+102312,WORD_NOUN,,HIRAGANA_KATAKANA,,,・,なかポツ,,nakapotsu,"środkowa kropka (typograficzny znak używany pomiędzy równoległymi słowami, nazwami w katakanie i etc)
+kropka służąca do rozdzielania połączonych słów",,,"DUPLICATE 102281
+DUPLICATE 102311"
+102313,WORD_NOUN,,HIRAGANA,,,中ぽつ,なかぽつ,,nakapotsu,"środkowa kropka (typograficzny znak używany pomiędzy równoległymi słowami, nazwami w katakanie i etc)
+kropka służąca do rozdzielania połączonych słów",,,
+102314,WORD_NOUN,,HIRAGANA_KATAKANA,,,中ポツ,なかポツ,,nakapotsu,"środkowa kropka (typograficzny znak używany pomiędzy równoległymi słowami, nazwami w katakanie i etc)
+kropka służąca do rozdzielania połączonych słów",,,
+102315,WORD_NOUN,,KATAKANA,,,-,ペストリー・バッグ,,pesutorii baggu,woreczek do dekorowania,"ang: pastry bag, piping bag",,
+102316,WORD_NOUN,,KATAKANA_HIRAGANA,,,パン焼き器,パンやきき,,pan'yakiki,maszyna do pieczenia chleba,,,
+102317,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,空下手,からっぺた,,karappeta,całkowity brak zdolności,,,DUPLICATE 102286
+102318,WORD_NOUN,,HIRAGANA,,,空返事,からへんじ,,karahenji,nierozważna odpowiedź,,,DUPLICATE 102287
+102319,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,なめし皮,なめしがわ,,nameshi gawa,"skóra
+garbowana skóra zwierząt
+zamsz
+element podstawowy kanji “skóra garbowana”",,,
+102320,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,鞣し革,なめしがわ,,nameshi gawa,"skóra
+garbowana skóra zwierząt
+zamsz
+element podstawowy kanji “skóra garbowana”",,,
+102321,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,鞣革,なめしがわ,,nameshi gawa,"skóra
+garbowana skóra zwierząt
+zamsz
+element podstawowy kanji “skóra garbowana”",,,
+102322,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,鞣皮,なめしがわ,,nameshi gawa,"skóra
+garbowana skóra zwierząt
+zamsz
+element podstawowy kanji “skóra garbowana”",,,
+102323,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,眇々,びょうびょう,,byou byou,"nieznaczny
+drobny
+mało znaczący
+nieistotny",,,
