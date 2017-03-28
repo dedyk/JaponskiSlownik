@@ -5233,10 +5233,10 @@ ostrzeliwanie kopca",,,
 102327,WORD_NOUN,,HIRAGANA,,,刖,げつ,,getsu,ucięcie nogi w kolanie,"forma kary w starożytnych Chinach, archaizm, mało znane słowo",,
 102328,WORD_NOUN,,HIRAGANA,,,蔀,しとみ,,shitomi,okiennica w formie kratownicy,tradycyjna japońska i chińska architektura,,
 102329,WORD_NOUN,,HIRAGANA,,,鮬,せいご,,seigo,młody japoński morski okoń,poniżej 2 lat i 25 cm długości,,
-102330,WORD_NOUN,,HIRAGANA,,,腴,つちすり,,tsuchisuri,tłuszcz podbrzusza ryby,archaizm,,
+102330,WORD_NOUN,,HIRAGANA,,,腴,つちすり,,tsuchisuri,tłuszcz podbrzusza ryby,archaizm,,DUPLICATE 102397
 102331,WORD_NOUN,,HIRAGANA,,,鯁,のぎ,,nogi,kość małej ryby zablokowana we własnym gardle,archaizm,,
-102332,WORD_NOUN,,HIRAGANA,,,肉醤,ししびしお,,shishibishio,solone i sfermentowane mięso lub ryba,archaizm,,
-102333,WORD_NOUN,,HIRAGANA,,,醢,ひしお,,hishio,solone mięso,np. ryby,,
+102332,WORD_NOUN,,HIRAGANA,,,肉醤,ししびしお,,shishibishio,solone i sfermentowane mięso lub ryba,archaizm,,DUPLICATE 102398
+102333,WORD_NOUN,,HIRAGANA,,,醢,ひしお,,hishio,solone mięso,np. ryby,,DUPLICATE 102399
 102334,WORD_NOUN,,HIRAGANA,,,鐺,こじり,,kojiri,"ozdobny koniuszek pochwy miecza
 dolna część deski szczytowej lub wspornika",,,
 102335,WORD_NOUN,,HIRAGANA,,,小尻,こじり,,kojiri,ozdobny koniuszek pochwy miecza,,,
@@ -5245,12 +5245,13 @@ dolna część deski szczytowej lub wspornika",,,
 p
 producent (skrót)",,,
 102338,WORD_NOUN,,KATAKANA,,,Ｑ,キュー,,kyuu,"Q
-q",,,
+q",,,DUPLICATE 21817
 102339,WORD_NOUN,,KATAKANA,,,Ｖ,ブイ,,bui,"V
 v
-zwycięstwo",,,
+zwycięstwo",,,"DUPLICATE 47197
+DUPLICATE 102403"
 102340,WORD_NOUN,,KATAKANA,,,Ｚ,ゼット,,zetto,"Z
-z",,,
+z",,,DUPLICATE 102406
 102341,WORD_NOUN,,HIRAGANA,,,不達,ふたつ,,futatsu,"niedoręczenie
 niedostarczenie",,,
 102342,WORD_NOUN,,HIRAGANA,,,斎行,さいこう,,saikou,przeprowadzenie religijnego festiwalu lub ceremonii,,,
@@ -5284,7 +5285,7 @@ spokojny",archaizm,,
 102358,WORD_NOUN,,HIRAGANA,,,部属,ぶぞく,,buzoku,"przypisanie do sekcji
 dział
 oddział",,,
-102359,WORD_NOUN,,HIRAGANA,,,特種,とくしゅ,,tokushu,specjalny rodzaj,,,
+102359,WORD_NOUN,,HIRAGANA,,,特種,とくしゅ,,tokushu,specjalny rodzaj,,,DUPLICATE 102416
 102360,WORD_NOUN,,HIRAGANA,,,壮者,そうしゃ,,sousha,"osoba w rozkwicie
 mężczyzna w rozkwicie
 kobieta w rozkwicie",,,
@@ -5296,12 +5297,12 @@ kobieta w rozkwicie",,,
 publiczny zysk",,,
 102366,WORD_NOUN,,HIRAGANA,,,蔀戸,しとみど,,shitomido,okiennica w formie kratownicy,tradycyjna japońska i chińska architektura,,
 102367,WORD_NOUN,,HIRAGANA,,,塩汁,しおじる,,shiojiru,"słony bulion
-słona woda",,,
-102368,WORD_NOUN,,HIRAGANA,,,塩汁,しょっつる,,shottsuru,słony i sfermentowany rybny sos z Akita,,,
+słona woda",,,DUPLICATE 102368
+102368,WORD_NOUN,,HIRAGANA,,,塩汁,しょっつる,,shottsuru,słony i sfermentowany rybny sos z Akita,,,DUPLICATE 102367
 102369,WORD_NOUN,,KATAKANA,,,ＰＣ,ピーシー,,pii shii,"PC
 komputer osobisty",,,
 102370,WORD_NOUN,,KATAKANA,,,ＰＤＡ,ピーディーエー,,pii dii ee,PDA,"rodzaj przenośnego komputera osobistego, ang: personal digital assistant",,
-102371,WORD_NOUN,,KATAKANA,,,ＱＲコード,キューアールコード,,kyuuaaru koodo,kod QR,,,
+102371,WORD_NOUN,,KATAKANA,,,ＱＲコード,キューアールコード,,kyuuaaru koodo,kod QR,,,DUPLICATE 102415
 102372,WORD_NOUN,,KATAKANA,,,ＱＯＬ,キューオーエル,,kyuuooeru,jakość życia,"ang: quality of life, QOL",,
 102373,WORD_NOUN,,KATAKANA_HIRAGANA,,,Ｑ熱,キューねつ,,kyuu netsu,gorączka Q,"bakteryjna, zakaźna choroba owiec i bydła",,
 102374,WORD_NOUN,,KATAKANA_HIRAGANA,,,Ｚ染色体,ゼットせんしょくたい,,zetto senshokutai,chromosom Z,,,
@@ -5336,3 +5337,63 @@ VHF",ang: very high frequency,,
 102391,WORD_NOUN,,HIRAGANA,,,二入四行論,ににゅうしぎょうろん,,ninyuushi gyouron,???,,,
 102392,WORD_NOUN,,KATAKANA,,,-,ブラウザ,,burauza,przeglądarka internetowa,ang: (web) browser,,
 102393,WORD_NOUN,,KATAKANA,,,-,ウェブブラウザー,,webu burauzaa,przeglądarka internetowa,ang: web browser,,
+102394,WORD_NOUN,,HIRAGANA,,,安土,あずち,,azuchi,"kopiec na którym umiejscowione są cele (w łucznictwie)
+ostrzeliwanie kopca",,,
+102395,WORD_NOUN,,HIRAGANA,,,堋,あずち,,azuchi,"kopiec na którym umiejscowione są cele (w łucznictwie)
+ostrzeliwanie kopca",,,
+102396,WORD_NOUN,,KATAKANA,,,-,セイゴ,,seigo,młody japoński morski okoń,poniżej 2 lat i 25 cm długości,,
+102397,WORD_NOUN,,HIRAGANA,,,腴,すなずり,,sunazuri,tłuszcz podbrzusza ryby,archaizm,,DUPLICATE 102330
+102398,WORD_NOUN,,HIRAGANA,,,肉醤,にくしょう,,nikushou,solone i sfermentowane mięso lub ryba,archaizm,,DUPLICATE 102332
+102399,WORD_NOUN,,HIRAGANA,,,醢,ししびしお,,shishibishio,solone i sfermentowane mięso lub ryba,archaizm,,DUPLICATE 102333
+102400,WORD_NOUN,,HIRAGANA,,,璫,こじり,,kojiri,"ozdobny koniuszek pochwy miecza
+dolna część deski szczytowej lub wspornika",,,
+102401,WORD_NOUN,,KATAKANA,,,ｐ,ピー,,pii,"P
+p
+producent (skrót)",,,
+102402,WORD_NOUN,,KATAKANA,,,ｑ,キュー,,kyuu,"Q
+q",,,DUPLICATE 21817
+102403,WORD_NOUN,,KATAKANA,,,Ｖ,ヴィー,,vii,"V
+v
+zwycięstwo",,,DUPLICATE 102339
+102404,WORD_NOUN,,KATAKANA,,,ｖ,ブイ,,bui,"V
+v
+zwycięstwo",,,"DUPLICATE 47197
+DUPLICATE 102405"
+102405,WORD_NOUN,,KATAKANA,,,ｖ,ヴィー,,vii,"V
+v
+zwycięstwo",,,DUPLICATE 102404
+102406,WORD_NOUN,,KATAKANA,,,Ｚ,ゼッド,,zeddo,"Z
+z",,,DUPLICATE 102340
+102407,WORD_NOUN,,KATAKANA,,,ｚ,ゼット,,zetto,"Z
+z",,,DUPLICATE 102408
+102408,WORD_NOUN,,KATAKANA,,,ｚ,ゼッド,,zeddo,"Z
+z",,,DUPLICATE 102407
+102409,WORD_NOUN,,HIRAGANA,,,斉行,さいこう,,saikou,przeprowadzenie religijnego festiwalu lub ceremonii,,,
+102410,WORD_NOUN,,HIRAGANA,,,小婢,しょうひ,,shouhi,młoda służąca,archaizm,,
+102411,WORD_NOUN,,HIRAGANA,,,貴簡,きかん,,kikan,twój list,uprzejmie,,
+102412,WORD_NOUN,,HIRAGANA,,,潰崩,かいほう,,kaihou,"zawalenie
+runięcie
+popadnięcie w ruinę",archaizm,,
+102413,WORD_NOUN,,HIRAGANA,,,潮汁,しおじる,,shiojiru,"słony bulion
+słona woda",,,
+102414,WORD_NOUN,,HIRAGANA,,,醢汁,しょっつる,,shottsuru,słony i sfermentowany rybny sos z Akita,,,
+102415,WORD_NOUN,,KATAKANA,,,ＱＲコード,キューアーコード,,kyuuaa koodo,kod QR,,,DUPLICATE 102371
+102416,WORD_NOUN,,HIRAGANA,,,特種,とくだね,,tokudane,"ekskluzywna wiadomość
+sensacyjny materiał",,,DUPLICATE 102359
+102417,WORD_NOUN,,HIRAGANA,,,入江,いりえ,,irie,"zatoka
+zatoczka
+dopływ",,,
+102418,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,えらい人,えらいひと,,eraihito,"osoba na wysokim stanowisku
+sławna postać
+gruba ryba",,,
+102419,WORD_NOUN,,HIRAGANA,,,闇打ち,やみうち,,yamiuchi,"atakowanie pod przykrywką ciemności
+atak z zaskoczenia
+zamach",,,
+102420,WORD_NOUN,,HIRAGANA,,,やみ討ち,やみうち,,yamiuchi,"atakowanie pod przykrywką ciemności
+atak z zaskoczenia
+zamach",,,
+102421,WORD_NOUN,,KATAKANA,,,-,ブラウザー,,burauzaa,przeglądarka internetowa,ang: (web) browser,,
+102422,WORD_NOUN,,KATAKANA,,,-,ウェブブラウザ,,webu burauza,przeglądarka internetowa,ang: web browser,,
+102423,WORD_NOUN,,KATAKANA,,,-,ウェブ・ブラウザー,,webu burauzaa,przeglądarka internetowa,ang: web browser,,
+102424,WORD_NOUN,,KATAKANA,,,-,ウェブ・ブラウザ,,webu burauza,przeglądarka internetowa,ang: web browser,,
