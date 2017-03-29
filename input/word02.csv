@@ -5503,7 +5503,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,尊兄,そんけい,,sonkei,"starszy brat
 starsza osoba",uprzejmie,,
 102486,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,俗世,ぞくせい,,zokusei,"ten świat
-ziemskie życie",,,
+ziemskie życie",,,DUPLICATE 102542
 102487,WORD_NOUN,,HIRAGANA,,,江山,こうざん,,kouzan,"rzeki i góry
 krajobraz
 pejzaż",,,
@@ -5533,7 +5533,7 @@ postawa
 zachowanie",,,
 102500,WORD_NOUN,,HIRAGANA,,,禅師,ぜんじ,,zenji,"mnich
 zakonnik
-mnich, szczególnie wysoki rangą mnich Zen zaszczycony przez cesarski dwór",honoryfikatywnie,,
+mnich, szczególnie wysoki rangą mnich Zen zaszczycony przez cesarski dwór",honoryfikatywnie,,DUPLICATE 102544
 102501,WORD_NOUN,,HIRAGANA,,,土産店,みやげてん,,miyageten,sklep z pamiątkami,,,
 102502,WORD_NOUN,,HIRAGANA,,,梓巫女,あずさみこ,,azusamiko,"kobiece medium, która przywołuje duchy poprzez ???",,,
 102503,WORD_NOUN,,HIRAGANA,,,腎石,じんせき,,jinseki,kamień nerkowy,,,
@@ -5555,11 +5555,11 @@ japońskie paciorkowe drzewo, które pachnie podczas rozwijania się pączków",
 pierwszy palec płazów",,,
 102513,WORD_NOUN,,HIRAGANA,,,栂桜,つがざくら,,tsugazakura,phyllodoce nipponica,roślina,,
 102514,WORD_NOUN,,HIRAGANA,,,鳰鳥,におどり,,niodori,"perkozek zwyczajny
-perkozek","gatunek niewielkiego wędrownego ptaka wodnego z rodziny perkozów, tachybaptus ruficollis, archaizm",,
+perkozek","gatunek niewielkiego wędrownego ptaka wodnego z rodziny perkozów, tachybaptus ruficollis, archaizm",,DUPLICATE 102551
 102515,WORD_NOUN,,HIRAGANA,,,おさ打ち,おさうち,,osauchi,"bicie
 lanie",,,
 102516,WORD_NOUN,,HIRAGANA,,,歩行虫,おさむし,,osamushi,"chrząszcz z rodziny biegaczy
-krocionóg (archaizm)",,,
+krocionóg (archaizm)",,,DUPLICATE 102555
 102517,WORD_NOUN,,HIRAGANA,,,芥虫,ごみむし,,gomimushi,chrząszcz z rodziny biegaczy,,,
 102518,WORD_NOUN,,HIRAGANA,,,筬象虫,おさぞうむし,,osazoumushi,"ryjkowcowate
 słoniki","curculionidae, rodzina owadów z rzędu chrząszczy",,
@@ -5589,8 +5589,8 @@ WORD_ADVERB_TO",,HIRAGANA,,,-,ぽっかり,,pokkari,"lekko
 szeroko otwarte",,,
 102531,WORD_NOUN,,HIRAGANA,,,恵贈,けいぞう,,keizou,"wręczenie
 wręczanie",,,
-102532,WORD_NOUN,,HIRAGANA,,,怪鳥,けちょう,,kechou,???,,,
-102533,WORD_NOUN,,HIRAGANA,,,拇指対向性,ぼしたいこうせい,,boshitai kousei,przeciwstawny kciuk,,,
+102532,WORD_NOUN,,HIRAGANA,,,怪鳥,けちょう,,kechou,???,,,DUPLICATE 102562
+102533,WORD_NOUN,,HIRAGANA,,,拇指対向性,ぼしたいこうせい,,boshitai kousei,przeciwstawny kciuk,,,DUPLICATE 102564
 102534,WORD_NOUN,,HIRAGANA,,,ほかほか弁当,ほかほかべんとう,,hoka hoka bentou,gorące bento,,,
 102535,WORD_ADJECTIVE_NA,,HIRAGANA,,,-,けちょんけちょん,,kechon kechon,"gruntowny
 kompletny
@@ -5602,8 +5602,6 @@ rozłożyć
 rozciągać
 powiększać
 rozszerzać
-rozszerzać
-rozkładać
 rozpakować
 rozpakowywać
 rozwijać
@@ -5614,3 +5612,61 @@ rozkwitać
 przyczynić się do powodzenia",,,
 102538,WORD_EXPRESSION,,HIRAGANA,,,敬啓,けいけい,,keikei,pozdrowienia na końcu formalnego listu,archaizm,,
 102539,WORD_NOUN,,HIRAGANA,,,怪鳥音,かいちょうおん,,kaichouon,???,,,
+102540,WORD_NOUN,,HIRAGANA,,,静坐,せいざ,,seiza,siedzieć spokojnie i w ciszy,np. podczas medytacji,,
+102541,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,偏芯,へんしん,,henshin,???,,,
+102542,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,俗世,ぞくせ,,zokuse,"ten świat
+ziemskie życie",,,DUPLICATE 102486
+102543,WORD_NOUN,,HIRAGANA,,,三士,さんし,,sanshi,"rekrut
+poborowy","dawny stopień w Japońskich Siłach Samoobrony, mało znane słowo",,
+102544,WORD_NOUN,,HIRAGANA,,,禅師,ぜんし,,zenshi,"mnich
+zakonnik
+mnich, szczególnie wysoki rangą mnich Zen zaszczycony przez cesarski dwór",honoryfikatywnie,,DUPLICATE 102500
+102545,WORD_NOUN,,HIRAGANA,,,糗粉,はったいこ,,hattaiko,"wysuszona mąka, szczególnie jęczmienna",może być pita w gorącej wodzie z cukrem,,
+102546,WORD_NOUN,,HIRAGANA,,,麨粉,はったいこ,,hattaiko,"wysuszona mąka, szczególnie jęczmienna",może być pita w gorącej wodzie z cukrem,,
+102547,WORD_NOUN,,KATAKANA,,,-,トガサワラ,,togasawara,pseudotsuga japonica,,,
+102548,WORD_NOUN,,HIRAGANA,,,母指,ぼし,,boshi,"kciuk
+pierwszy palec płazów",,,
+102549,WORD_NOUN,,HIRAGANA,,,栂指,ぼし,,boshi,"kciuk
+pierwszy palec płazów",,,
+102550,WORD_NOUN,,KATAKANA,,,-,ツガザクラ,,tsugazakura,phyllodoce nipponica,roślina,,
+102551,WORD_NOUN,,HIRAGANA,,,鳰鳥,みおどり,,miodori,"perkozek zwyczajny
+perkozek","gatunek niewielkiego wędrownego ptaka wodnego z rodziny perkozów, tachybaptus ruficollis, archaizm",,DUPLICATE 102514
+102552,WORD_NOUN,,HIRAGANA,,,筬打ち,おさうち,,osauchi,"bicie
+lanie",,,
+102553,WORD_NOUN,,HIRAGANA,,,筬虫,おさむし,,osamushi,"chrząszcz z rodziny biegaczy
+krocionóg (archaizm)",,,
+102554,WORD_NOUN,,HIRAGANA,,,塵芥虫,ごみむし,,gomimushi,chrząszcz z rodziny biegaczy,,,
+102555,WORD_NOUN,,HIRAGANA,,,歩行虫,ごみむし,,gomimushi,chrząszcz z rodziny biegaczy,,,DUPLICATE 102516
+102556,WORD_NOUN,,KATAKANA,,,-,ゴミムシ,,gomimushi,chrząszcz z rodziny biegaczy,,,
+102557,WORD_NOUN,,KATAKANA,,,-,オサゾウムシ,,osazoumushi,"ryjkowcowate
+słoniki","curculionidae, rodzina owadów z rzędu chrząszczy",,
+102558,WORD_NOUN,,HIRAGANA,,,筬通し,おさとおし,,osatooshi,???,,,
+102559,WORD_NOUN,,KATAKANA,,,-,オサシダ,,osashida,blechnum amabile,roślina,,
+102560,WORD_NOUN,,HIRAGANA,,,仮名草紙,かなぞうし,,kanazoushi,we wczesnym okresie Edo książka napisana w całości w kana lub poprzez jednoczesne użycie kana i kanji,głównie przeznaczone dla kobiet i dzieci,,
+102561,"WORD_ADJECTIVE_NA
+WORD_ADVERB
+WORD_NOUN
+WORD_ADJECTIVE_NO
+WORD_ADVERB_TO",,KATAKANA,,,-,ホカホカ,,hoka hoka,gorące (jedzenie),,,
+102562,WORD_NOUN,,HIRAGANA,,,怪鳥,かいちょう,,kaichou,???,,,DUPLICATE 102532
+102563,WORD_NOUN,,HIRAGANA,,,化鳥,けちょう,,kechou,???,,,
+102564,WORD_NOUN,,HIRAGANA,,,拇指対向性,おやゆびたいこうせい,,oyayubitai kousei,przeciwstawny kciuk,,,DUPLICATE 102533
+102565,WORD_NOUN,,HIRAGANA,,,母指対向性,ぼしたいこうせい,,boshitai kousei,przeciwstawny kciuk,,,DUPLICATE 102566
+102566,WORD_NOUN,,HIRAGANA,,,母指対向性,おやゆびたいこうせい,,oyayubitai kousei,przeciwstawny kciuk,,,DUPLICATE 102565
+102567,WORD_NOUN,,KATAKANA_HIRAGANA,,,ホカホカ弁当,ホカホカべんとう,,hoka hoka bentou,gorące bento,,,
+102568,WORD_NOUN,,HIRAGANA,,,ほか弁,ほかべん,,hokaben,gorące bento,,,
+102569,WORD_VERB_RU,,HIRAGANA,,,押っ広げる,おっぴろげる,,oppirogeru,"rozkładać
+rozłożyć
+rozciągać
+powiększać
+rozszerzać
+rozpakować
+rozpakowywać
+rozwijać
+odpakować
+odpakowywać
+rozprzestrzeniać się
+rozkwitać
+przyczynić się do powodzenia",,,
