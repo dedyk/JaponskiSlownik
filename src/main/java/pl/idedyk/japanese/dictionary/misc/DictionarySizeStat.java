@@ -30,7 +30,7 @@ public class DictionarySizeStat {
 		
 		final Calendar currentCheckDate = Calendar.getInstance();
 		
-		currentCheckDate.set(2012, 2, 10, 0, 0, 0);
+		currentCheckDate.set(2012, 2, 10, 23, 59, 59);
 		
 		//
 		
