@@ -99,7 +99,7 @@ public class JishoOrgConnector {
 				//
 				
 				String kanji = currentJapaneseObject.optString( "word", null);
-				String kana = currentJapaneseObject.getString("reading");
+				String kana = currentJapaneseObject.optString("reading", null);
 				
 				result.add(new JapaneseWord(kanji, kana));
 			}			

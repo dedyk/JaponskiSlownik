@@ -58,6 +58,7 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
+import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector.JapaneseWord;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 
@@ -247,6 +248,8 @@ public class WordGenerator {
 				
 				JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
 				
+				List<String> newCustomPrefixFileWordList = new ArrayList<String>();
+				
 				System.out.println("Szukanie...");
 				
 				for (String currentMissingWord : missingWords) {
@@ -330,7 +333,22 @@ public class WordGenerator {
 							
 							System.out.println("Szukanie w jisho.org: " + currentMissingWord);
 							
-							wordExistsInJishoOrg = jishoOrgConnector.isWordExists(currentMissingWord);
+							List<JapaneseWord> japaneseWords = jishoOrgConnector.getJapaneseWords(currentMissingWord);
+							
+							for (JapaneseWord japaneseWord : japaneseWords) {
+								
+								if (japaneseWord.kanji != null) {
+									newCustomPrefixFileWordList.add(japaneseWord.kanji);
+								}
+								
+								if (japaneseWord.kana != null) {
+									newCustomPrefixFileWordList.add(japaneseWord.kana);
+								}								
+							}
+							
+							//
+							
+							wordExistsInJishoOrg = japaneseWords.size() > 0;
 						}
 						
 						if (wordExistsInJishoOrg == true) {
@@ -377,6 +395,18 @@ public class WordGenerator {
 				searchResultFileWriter.write(Utils.convertListToString(notFoundWordSearchList));
 				
 				searchResultFileWriter.close();
+				
+				//
+				
+				File customPrefixFile = new File("input/custom_prefix_file");
+				
+				FileWriter customPrefixFileWriter = new FileWriter(customPrefixFile, true);
+				
+				for (String currentWord : newCustomPrefixFileWordList) {
+					customPrefixFileWriter.write(currentWord + "\n");
+				}
+				
+				customPrefixFileWriter.close();
 				
 				break;
 			}
@@ -2395,7 +2425,6 @@ public class WordGenerator {
 			throw new RuntimeException(e);
 		}
 	}
-
 	
 	private static boolean existsInCommonWords(Map<Integer, CommonWord> commonWordMap, String kanji, String kana) {
 		
