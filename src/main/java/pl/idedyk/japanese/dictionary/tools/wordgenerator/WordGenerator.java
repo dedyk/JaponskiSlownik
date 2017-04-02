@@ -248,7 +248,7 @@ public class WordGenerator {
 				
 				JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
 				
-				List<String> newCustomPrefixFileWordList = new ArrayList<String>();
+				List<String> newAdditionalWordToCheckWordList = new ArrayList<String>();
 				
 				System.out.println("Szukanie...");
 				
@@ -338,11 +338,11 @@ public class WordGenerator {
 							for (JapaneseWord japaneseWord : japaneseWords) {
 								
 								if (japaneseWord.kanji != null) {
-									newCustomPrefixFileWordList.add(japaneseWord.kanji);
+									newAdditionalWordToCheckWordList.add(japaneseWord.kanji);
 								}
 								
 								if (japaneseWord.kana != null) {
-									newCustomPrefixFileWordList.add(japaneseWord.kana);
+									newAdditionalWordToCheckWordList.add(japaneseWord.kana);
 								}								
 							}
 							
@@ -398,15 +398,15 @@ public class WordGenerator {
 				
 				//
 				
-				File customPrefixFile = new File("input/custom_prefix_file");
+				File additionalWordtoCheckFile = new File("input/additional_word_to_check");
 				
-				FileWriter customPrefixFileWriter = new FileWriter(customPrefixFile, true);
+				FileWriter additionalWordtoCheckFileWriter = new FileWriter(additionalWordtoCheckFile, true);
 				
-				for (String currentWord : newCustomPrefixFileWordList) {
-					customPrefixFileWriter.write(currentWord + "\n");
+				for (String currentWord : newAdditionalWordToCheckWordList) {
+					additionalWordtoCheckFileWriter.write(currentWord + "\n");
 				}
 				
-				customPrefixFileWriter.close();
+				additionalWordtoCheckFileWriter.close();
 				
 				break;
 			}
