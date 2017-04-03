@@ -6328,7 +6328,7 @@ przesada
 przesadzanie",,,
 102887,WORD_NOUN,,HIRAGANA,,,蒼梧,そうご,,sougo,firmiana simplex,gatunek rośliny z rodziny ślazowatych,,
 102888,WORD_NOUN,,HIRAGANA,,,体貌,たいぼう,,taibou,wygląd,,,
-102889,WORD_NOUN,,HIRAGANA,,,講会,こうかい,,koukai,???,,,
+102889,WORD_NOUN,,HIRAGANA,,,講会,こうかい,,koukai,???,,,DUPLICATE 102914
 102890,WORD_NOUN,,HIRAGANA,,,原状,げんじょう,,genjou,oryginalny stan,,,
 102891,WORD_NOUN,,HIRAGANA,,,帝釈,たいしゃく,,taishaku,Sakra devanam Indra,"bóstwo hinduizmu, dżinizmu i buddyzmu, skrót",,
 102892,WORD_NOUN,,HIRAGANA,,,准尉,じゅんい,,jun'i,chorąży,,,
@@ -6355,7 +6355,7 @@ nośność",,,
 102905,WORD_NOUN,,HIRAGANA,,,後戯,こうぎ,,kougi,"zachowanie po odbyciu stosunku płciowego
 czynności po odbyciu stosunku płciowego
 intymne rozmowy w łóżku",,,
-102906,WORD_NOUN,,HIRAGANA,,,鶏小屋,にわとりごや,,niwatorigoya,kurnik,,,
+102906,WORD_NOUN,,HIRAGANA,,,鶏小屋,にわとりごや,,niwatorigoya,kurnik,,,DUPLICATE 102950
 102907,WORD_NOUN,,HIRAGANA,,,拙稿,せっこう,,sekkou,"mój manuskrypt
 mój rękopis",pokornie,,
 102908,WORD_NOUN,,HIRAGANA,,,娘核,じょうかく,,joukaku,jądro komórkowe potomne,,,
@@ -6370,7 +6370,7 @@ szlifierka",,,
 dobra reputacja
 twoje imię",,,
 102913,WORD_NOUN,,HIRAGANA,,,焼売,しゅうまい,,shuumai,mięsne kluski na parze,w chińskim stylu,,
-102914,WORD_NOUN,,HIRAGANA,,,講会,こうえ,,koue,???,buddyzm,,
+102914,WORD_NOUN,,HIRAGANA,,,講会,こうえ,,koue,???,buddyzm,,DUPLICATE 102889
 102915,WORD_NOUN,,HIRAGANA,,,帝釈天,たいしゃくてん,,taishakuten,Sakra devanam Indra,"bóstwo hinduizmu, dżinizmu i buddyzmu, skrót",,
 102916,WORD_NOUN,,HIRAGANA,,,誓文払い,せいもんばらい,,seimon barai,"wyprzedaż
 sprzedaż okazyjna",,,
@@ -6446,12 +6446,61 @@ niewymowny
 niedający się określić
 nieokreślony
 nikt nie może powiedzieć",,,
-102944,WORD_EXPRESSION,,HIRAGANA,,,無くてはいけません,なくてはいけません,,nakute wa ikemasen,"nie można zrobić bez czegoś
+102944,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,無くてはいけません,なくてはいけません,,nakute wa ikemasen,"nie można zrobić bez czegoś
 nieodzowny
 niezbędny
 konieczny",,,
-102945,WORD_EXPRESSION,,HIRAGANA,,,-,べきではない,,bekide wa nai,"nie powinien
+102945,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,-,べきではない,,bekide wa nai,"nie powinien
 nie możesz",,,
 102946,WORD_NOUN,,KATAKANA,,,-,ノルマ,,noruma,"przydział
 określona ilość",słowo pochodzenia rosyjskiego,,
 102947,WORD_EXPRESSION,,HIRAGANA,,,-,ましょうか,,mashou ka,czy mogę?,,,
+102948,WORD_VERB_U,,HIRAGANA,,,炷く,たく,,taku,"palić
+płonąć",kadzidło,,
+102949,WORD_NOUN,,HIRAGANA,,,汗泡,かんぽう,,kanpou,"potnica
+dyshidroza
+choroba Hallopeau",,,
+102950,WORD_NOUN,,HIRAGANA,,,鶏小屋,とりごや,,torigoya,kurnik,,,DUPLICATE 102906
+102951,WORD_NOUN,,HIRAGANA,,,嬢核,じょうかく,,joukaku,jądro komórkowe potomne,,,
+102952,WORD_NOUN,,HIRAGANA,,,大歳,たいさい,,taisai,"Taisai
+jeden z ośmiu bogów koyomi
+Jowisz (planeta, archaizm)",,,
+102953,WORD_NOUN,,HIRAGANA,,,燒賣,しゅうまい,,shuumai,mięsne kluski na parze,w chińskim stylu,,
+102954,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,シュウマイ,,shuumai,mięsne kluski na parze,w chińskim stylu,,
+102955,WORD_NOUN,,KATAKANA,,,-,シューマイ,,shuumai,mięsne kluski na parze,w chińskim stylu,,
+102956,WORD_NOUN,,KATAKANA,,,-,サシバ,,sashiba,myszołap białobrewy,butastur indicus,,
+102957,WORD_NOUN,,KATAKANA,,,-,ロール・アウト,,rooru auto,???,ang: roll out,,
+102958,WORD_NOUN,,KATAKANA,,,断幺九,タンヤオチュー,,tan' yaochuu,???,,,
+102959,WORD_EXPRESSION,,HIRAGANA,,,-,どうしたん,,doushitan,"co się stało?
+o co chodzi?
+w czym rzecz?
+co jest nie tak?",,,
+102960,WORD_NOUN,,HIRAGANA,,,御詫び,おわび,,owabi,przeprosiny,,,
+102961,WORD_VERB_RU,,HIRAGANA,,,並びかえる,ならびかえる,,narabi kaeru,"reorganizować
+przestawiać
+układać (rzeczy) w kolejności",,,
+102962,WORD_VERB_RU,,HIRAGANA,,,並び変える,ならびかえる,,narabi kaeru,"reorganizować
+przestawiać
+układać (rzeczy) w kolejności",,,
+102963,WORD_VERB_RU,,HIRAGANA,,,並替える,ならびかえる,,narabi kaeru,"reorganizować
+przestawiać
+układać (rzeczy) w kolejności",,,
+102964,WORD_VERB_RU,,HIRAGANA,,,並変える,ならびかえる,,narabi kaeru,"reorganizować
+przestawiać
+układać (rzeczy) w kolejności",,,
+102965,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,なんとも言えない,なんともいえない,,nan to mo ie nai,"nie do opisania
+nieopisany
+niewysłowiony
+niewymowny
+niedający się określić
+nieokreślony
+nikt nie może powiedzieć",,,
+102966,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,何ともいえない,なんともいえない,,nan to mo ie nai,"nie do opisania
+nieopisany
+niewysłowiony
+niewymowny
+niedający się określić
+nieokreślony
+nikt nie może powiedzieć",,,
