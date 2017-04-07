@@ -336,14 +336,19 @@ public class WordGenerator {
 							List<JapaneseWord> japaneseWords = jishoOrgConnector.getJapaneseWords(currentMissingWord);
 							
 							for (JapaneseWord japaneseWord : japaneseWords) {
-								
-								if (japaneseWord.kanji != null) {
-									newAdditionalWordToCheckWordList.add(japaneseWord.kanji);
+																
+								if (	jmeNewDictionary.getGroupEntryList(japaneseWord.kanji, japaneseWord.kana) != null &&
+										Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, japaneseWord.kanji, japaneseWord.kana) == null &&
+										existsInCommonWords(commonWordMap, japaneseWord.kanji, japaneseWord.kana) == false) {
+									
+									if (japaneseWord.kanji != null) {
+										newAdditionalWordToCheckWordList.add(japaneseWord.kanji);
+									}
+									
+									if (japaneseWord.kana != null) {
+										newAdditionalWordToCheckWordList.add(japaneseWord.kana);
+									}
 								}
-								
-								if (japaneseWord.kana != null) {
-									newAdditionalWordToCheckWordList.add(japaneseWord.kana);
-								}								
 							}
 							
 							//
