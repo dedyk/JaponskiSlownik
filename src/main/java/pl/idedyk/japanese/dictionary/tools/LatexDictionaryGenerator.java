@@ -57,7 +57,7 @@ public class LatexDictionaryGenerator {
 			String sectionName = kana.substring(0, 1);
 			
 			if (Utils.isKana(sectionName.charAt(0)) == false || sectionName.equals("ゝ") == true || sectionName.equals("ゞ") == true
-					|| sectionName.equals("ヶ") == true || sectionName.equals("ー") == true) {
+					|| sectionName.equals("ヶ") == true || sectionName.equals("ー") == true || sectionName.equals("ヽ") == true) {
 				sectionName = otherSectionName;
 			}
 			
