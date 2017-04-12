@@ -7663,7 +7663,7 @@ mieszanie języka literalnego i potocznego",,,
 103584,WORD_NOUN,,HIRAGANA,,,松籟,しょうらい,,shourai,"odgłos wiatru przechodzącego przez sosnowe drzewa
 szum wiatru przechodzącego przez sosnowe drzewa
 (metaforycznie) dźwięk wrzącej wody w czajniku",,,
-103585,WORD_NOUN,,HIRAGANA,,,斎日,さいじつ,,saijitsu,dzień postu,,,
+103585,WORD_NOUN,,HIRAGANA,,,斎日,さいじつ,,saijitsu,dzień postu,,,DUPLICATE 103643
 103586,WORD_NOUN,,HIRAGANA,,,厳暑,げんしょ,,gensho,wyjątkowe gorąco,,,
 103587,WORD_NOUN,,HIRAGANA,,,樹梢,じゅしょう,,jushou,wierzchołek drzewa,,,
 103588,WORD_VERB_IRREGULAR,,HIRAGANA,,,緘する,かんする,,kan suru,"zamykać
@@ -7676,7 +7676,7 @@ wygłuszenie
 izolacja dźwiękowa",,,
 103590,WORD_NOUN,,HIRAGANA,,,法意,ほうい,,houi,"cel prawa
 przeznaczenie prawa
-intencja prawa",,,
+intencja prawa",,,DUPLICATE 98990
 103591,WORD_NOUN,,HIRAGANA,,,遊侠,ゆうきょう,,yuukyou,rycerska osoba,,,
 103592,WORD_NOUN,,HIRAGANA,,,機巧,きこう,,kikou,"podstęp
 trik
@@ -7692,14 +7692,14 @@ rygorystyczne środki działania",,,
 103598,WORD_NOUN,,HIRAGANA,,,旧製,きゅうせい,,kyuusei,"dawna produkcja
 była produkcja
 byłe wytwarzanie",,,
-103599,WORD_NOUN,,HIRAGANA,,,裳階,もこし,,mokoshi,mokoshi,rodzaj japońskiego dachu,,
+103599,WORD_NOUN,,HIRAGANA,,,裳階,もこし,,mokoshi,mokoshi,rodzaj japońskiego dachu,,DUPLICATE 103638
 103600,WORD_NOUN,,HIRAGANA,,,召命,しょうめい,,shoumei,???,,,
 103601,WORD_NOUN,,HIRAGANA,,,止揚,しよう,,shiyou,???,,,
 103602,WORD_NOUN,,HIRAGANA,,,当来,とうらい,,tourai,"życie pozagrobowe
 życie po życiu",,,
 103603,WORD_NOUN,,HIRAGANA,,,雄藩,ゆうはん,,yuuhan,"???
 wpływowy feudalny klan",,,
-103604,WORD_VERB_ZURU,,HIRAGANA,,,封ずる,ほうずる,,hou zuru,???,,,
+103604,WORD_VERB_ZURU,,HIRAGANA,,,封ずる,ほうずる,,hou zuru,???,,,DUPLICATE 103615
 103605,WORD_NOUN,,HIRAGANA,,,一項,いっこう,,ikkou,"przedmiot
 rzecz",,,
 103606,WORD_VERB_U,,HIRAGANA,,,賺す,すかす,,sukasu,"namawiać
@@ -7732,7 +7732,7 @@ bariera dźwięku",,,
 pieczętować (list)
 zapobiegać
 uniemożliwiać
-blokować",,,
+blokować",,,DUPLICATE 103604
 103616,WORD_NOUN,,HIRAGANA,,,選対本部,せんたいほんぶ,,sentai honbu,siedziba wyborcza,,,
 103617,WORD_NOUN,,HIRAGANA,,,着回し,きまわし,,kimawashi,"łączenie i dopasowywanie (np. ubrań, akcesoriów i etc)
 noszenie dodatków do ubrań w różnych kombinacjach",,,
@@ -7769,3 +7769,26 @@ zostawić z tyłu",,,
 WORD_EXPRESSION",,HIRAGANA,,,置いてきぼりを食らう,おいてきぼりをくらう,,oiteki bori o kurau,"pozostawić z tyłu
 zostawić z tyłu",,,
 103635,WORD_NOUN,,HIRAGANA,,,家族会議,かぞくかいぎ,,kazoku kaigi,rada rodzinna,,,
+103636,WORD_NOUN,,HIRAGANA,,,樹杪,じゅしょう,,jushou,wierzchołek drzewa,,,
+103637,WORD_NOUN,,HIRAGANA,,,游侠,ゆうきょう,,yuukyou,rycerska osoba,,,
+103638,WORD_NOUN,,HIRAGANA,,,裳階,しょうかい,,shoukai,mokoshi,rodzaj japońskiego dachu,,DUPLICATE 103599
+103639,WORD_NOUN,,HIRAGANA,,,裳層,もこし,,mokoshi,mokoshi,rodzaj japońskiego dachu,,DUPLICATE 103640
+103640,WORD_NOUN,,HIRAGANA,,,裳層,しょうかい,,shoukai,mokoshi,rodzaj japońskiego dachu,,DUPLICATE 103639
+103641,WORD_NOUN,,HIRAGANA,,,軍配うちわ,ぐんばいうちわ,,gunbai uchiwa,"wachlarz wojskowego przywódcy
+wachlarz sędziego (np. w sumo)
+godło w kształcie wachlarza",,,
+103642,WORD_NOUN,,HIRAGANA,,,忌日,いみび,,imibi,"pechowy dzień (według astrologii)
+rocznica śmierci
+oczyszczenie i dzień postu",,,
+103643,WORD_NOUN,,HIRAGANA,,,斎日,いみび,,imibi,"pechowy dzień (według astrologii)
+rocznica śmierci
+oczyszczenie i dzień postu",,,DUPLICATE 103585
+103644,WORD_NOUN,,HIRAGANA,,,着回,きまわし,,kimawashi,"łączenie i dopasowywanie (np. ubrań, akcesoriów i etc)
+noszenie dodatków do ubrań w różnych kombinacjach",,,
+103645,WORD_EXPRESSION,,HIRAGANA,,,置いてけぼり,おいてけぼり,,oite kebori,"pozostawienie kogoś za sobą
+pozostawienie kogoś styłu",,,
+103646,WORD_NOUN,,KATAKANA,,,-,オンチップ・キャッシュ,,on chippu kyasshu,on-chip cache,informatyka,,
+103647,WORD_NOUN,,KATAKANA,,,-,コンテナ・オブジェクト,,kontena obujekuto,obiekt kontenera,"informatyka, ang: container object",,
+103648,WORD_NOUN,,KATAKANA,,,-,クロマグロ,,kuromaguro,pacyficzny tuńczyk błękitnopłetwy,thunnus orientalis,,
+103649,WORD_NOUN,,HIRAGANA,,,眼間,まなかい,,manakai,"między oczami
+przed swoimi oczami",,,
