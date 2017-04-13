@@ -6815,7 +6815,8 @@ ty (używanie głównie przez mężczyzn w listach do starszych kobiet)",,,
 103141,WORD_NOUN,,HIRAGANA,,,層楼,そうろう,,sourou,wysoki budynek,,,
 103142,WORD_ADJECTIVE_F,,HIRAGANA,,,異方,いほう,,ihou,anizotropowy,wykazujący odmienne właściwości w zależności od kierunku,,
 103143,WORD_NOUN,,HIRAGANA,,,夜目,よめ,,yome,w ciemności,,,
-103144,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヽ,,,znak powtórzenia w katakana,,,"EDICT_DUPLICATE 58985
+103144,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヽ,,,"znak powtórzenia w katakana
+symbol powtórzenia w katakana",,,"EDICT_DUPLICATE 58985
 EDICT_DUPLICATE 77124"
 103145,WORD_ADJECTIVE_NO,,HIRAGANA,,,親水,しんすい,,shinsui,hydrofilowy,,,
 103146,WORD_NOUN,,HIRAGANA,,,畳語,じょうご,,jougo,powtórzenie sylaby,wskazując liczbę mnogą,,
@@ -6877,13 +6878,16 @@ rakietnica",,,
 103180,WORD_NOUN,,HIRAGANA,,,法性,ほうしょう,,houshou,dharmata,,,DUPLICATE 103132
 103181,WORD_NOUN,,KATAKANA,,,-,キチョウ,,kichou,"eurema hecabe (owad)
 żółty motyl",,,
-103182,WORD_NOUN,,HIRAGANA,,,-,くりかえし,,kurikaeshi,znak powtórzenia w katakana,,,"DUPLICATE 8882
+103182,WORD_NOUN,,HIRAGANA,,,-,くりかえし,,kurikaeshi,"znak powtórzenia w katakana
+symbol powtórzenia w katakana",,,"DUPLICATE 8882
 DUPLICATE 8883
 DUPLICATE 9884
 DUPLICATE 35324
 DUPLICATE 47756
 DUPLICATE 58985
-DUPLICATE 77124"
+DUPLICATE 77124
+DUPLICATE 103714
+EDICT_DUPLICATE 103674"
 103183,WORD_NOUN,,KATAKANA,,,-,ウイルス・チェック,,uirusu chekku,sprawdzanie wirusów,ang: virus check,,
 103184,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,夜目がきく,よめがきく,,yome ga kiku,"widzieć dobrze w ciemności
@@ -7794,7 +7798,7 @@ pozostawienie kogoś styłu",,,
 przed swoimi oczami",,,
 103650,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,肉桂,にっけい,,nikkei,"cynamon
-drzewo cynamonowe (cinnamomum sieboldii)",,,
+drzewo cynamonowe (cinnamomum sieboldii)",,,DUPLICATE 103709
 103651,WORD_NOUN,,HIRAGANA,,,中医,ちゅうい,,chuui,medycyna chińska,,,
 103652,WORD_NOUN,,HIRAGANA,,,諸天,しょてん,,shoten,"różne bóstwa
 bogowie",buddyzm,,
@@ -7808,9 +7812,9 @@ dbanie o siebie",,,
 WORD_PREFIX",,HIRAGANA,,,計約,けいやく,,keiyaku,przybliżona suma,,,
 103659,"WORD_PRONOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,貴官,きかん,,kikan,ty,"honoryfikatywnie, używane w stosunku do urzędników państwowych, wojskowych i etc",,
-103660,WORD_NOUN,,HIRAGANA,,,秋蝉,あきぜみ,,akizemi,"cykady, które cykają, kiedy przychodzi jesień",,,
+103660,WORD_NOUN,,HIRAGANA,,,秋蝉,あきぜみ,,akizemi,"cykady, które cykają, kiedy przychodzi jesień",,,DUPLICATE 103711
 103661,WORD_NOUN,,HIRAGANA,,,醴泉,れいせん,,reisen,wiosna słodkiej wody,mało znane słowo,,
-103662,WORD_NOUN,,HIRAGANA,,,両脚,りょうきゃく,,ryoukyaku,obie nogi,,,
+103662,WORD_NOUN,,HIRAGANA,,,両脚,りょうきゃく,,ryoukyaku,obie nogi,,,DUPLICATE 103712
 103663,WORD_NOUN,,HIRAGANA,,,印環,いんかん,,inkan,???,,,
 103664,WORD_NOUN,,HIRAGANA,,,消光,しょうこう,,shoukou,"przelotny czas
 przemijanie czasu",,,
@@ -7824,9 +7828,11 @@ duch rebelii",,,
 dalekowzroczna polityka",,,
 103670,WORD_NOUN,,HIRAGANA,,,艇長,ていちょう,,teichou,kapitan łodzi,,,
 103671,WORD_NOUN,,HIRAGANA,,,国喪,こくそう,,kokusou,żałoba narodowa,,,
-103672,WORD_NOUN,,HIRAGANA,,,挂冠,けいかん,,keikan,rezygnacja ze stanowiska rządowego,mało znane słowo,,
+103672,WORD_NOUN,,HIRAGANA,,,挂冠,けいかん,,keikan,rezygnacja ze stanowiska rządowego,mało znane słowo,,DUPLICATE 103713
 103673,WORD_NOUN,,HIRAGANA,,,波羅夷,はらい,,harai,???,,,
-103674,WORD_NOUN,,KATAKANA,,,-,ヾ,,,symbol powtórzenia w katakana,,,
+103674,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヾ,,-,dźwięczne powtórzenie znaku w katakana,,,"EDICT_DUPLICATE 58985
+EDICT_DUPLICATE 77124
+EDICT_DUPLICATE 103182"
 103675,WORD_NOUN,,HIRAGANA,,,勾欄,こうらん,,kouran,"balustrada
 poręcz",,,
 103676,WORD_NOUN,,KATAKANA,,,-,システムチャネル,,shisutemu chaneru,kanał systemowy,ang: system channel,,
@@ -7836,7 +7842,7 @@ skręcać
 przekręcać
 zniekształcić
 zniekształcać",,,
-103679,WORD_NOUN,,KATAKANA,,,ＳＮＰ,スニップ,,sunippu,polimorfizm pojedynczego nukleotydu,"zjawisko zmienności sekwencji DNA, która polega na zmianie pojedynczego nukleotydu (A, T, C lub G) pomiędzy osobnikami danego gatunku lub drugim, odpowiadającym chromosomem danego osobnika, ang: single nucleotide polymorphism, SNP",,
+103679,WORD_NOUN,,KATAKANA,,,ＳＮＰ,スニップ,,sunippu,polimorfizm pojedynczego nukleotydu,"zjawisko zmienności sekwencji DNA, która polega na zmianie pojedynczego nukleotydu (A, T, C lub G) pomiędzy osobnikami danego gatunku lub drugim, odpowiadającym chromosomem danego osobnika, ang: single nucleotide polymorphism, SNP",,DUPLICATE 103690
 103680,WORD_NOUN,,HIRAGANA,,,中医学,ちゅういがく,,chuuigaku,medycyna chińska,,,
 103681,WORD_EXPRESSION,,HIRAGANA,,,葷酒山門に入るを許さず,くんしゅさんもんにいるをゆるさず,,kunshu sanmon ni iru o yurusazu,przynoszenie ostrych warzyw lub alkoholu do świątyni jest zabronione,,,
 103682,WORD_NOUN,,HIRAGANA,,,両脚規,りょうきゃくき,,ryoukyakuki,cyrkiel,,,
@@ -7850,7 +7856,7 @@ denuklearyzowany",mało znane słowo,,
 103687,WORD_NOUN,,HIRAGANA,,,非核化,ひかくか,,hikakuka,denuklearyzacja,zakazanie posiadania lub produkcji broni nuklearnej,,
 103688,WORD_NOUN,,HIRAGANA,,,非核兵器国,ひかくへいきこく,,hikaku heiki koku,państwo nie posiadające broń atomową,,,
 103689,WORD_NOUN,,HIRAGANA,,,私怨私欲,しえんしよく,,shien shiyoku,osobisty uraz i egoistyczne pragnienia,,,
-103690,WORD_NOUN,,KATAKANA,,,ＳＮＰ,エスエヌピー,,esuenupii,Szkocka Partia Narodowa,"ang: Scottish National Party, SNP",,
+103690,WORD_NOUN,,KATAKANA,,,ＳＮＰ,エスエヌピー,,esuenupii,Szkocka Partia Narodowa,"ang: Scottish National Party, SNP",,DUPLICATE 103679
 103691,WORD_NOUN,,KATAKANA_HIRAGANA,,,ライン川,ラインがわ,,rain gawa,Ren,jedna z najdłuższych rzek w Europie,,
 103692,WORD_NOUN,,HIRAGANA,,,帰伏,きふく,,kifuku,poddanie się,,,
 103693,WORD_NOUN,,KATAKANA,,,-,ペールエール,,peeru eeru,piwo jasne,ang: pale ale,,
@@ -7869,7 +7875,67 @@ chemia ropy naftowej",,,
 103703,WORD_NOUN,,HIRAGANA,,,和三盆,わさんぼん,,wasanbon,wyrafinowany japoński cukier,,,
 103704,WORD_NOUN,,HIRAGANA,,,博引旁証,はくいんぼうしょう,,hakuin boushou,cytowanie obfitych odniesień,,,
 103705,WORD_NOUN,,KATAKANA,,,-,ボーランド,,boorando,Borland,,,
-103706,WORD_NOUN,,HIRAGANA,,,乙酉,きのととり,,kinototori,dwudziesty drugi cykl seksagonalny,,,
+103706,WORD_NOUN,,HIRAGANA,,,乙酉,きのととり,,kinototori,dwudziesty drugi cykl seksagonalny,,,"DUPLICATE 103733
+DUPLICATE 103734"
 103707,WORD_NOUN,,HIRAGANA,,,石油化学工業,せきゆかがくこうぎょう,,sekiyu kagaku kougyou,przemysł petrochemiczny,,,
 103708,WORD_NOUN,,HIRAGANA,,,石油化学製品,せきゆかがくせいひん,,sekiyu kagaku seihin,"produkty przemysłu petrochemicznego
 substancje chemiczne uzyskane z ropy naftowej lub gazu ziemnego",,,
+103709,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,肉桂,にっき,,nikki,"cynamon
+drzewo cynamonowe (cinnamomum sieboldii)",,,DUPLICATE 103650
+103710,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ニッケイ,,nikkei,"cynamon
+drzewo cynamonowe (cinnamomum sieboldii)",,,
+103711,WORD_NOUN,,HIRAGANA,,,秋蝉,しゅうせん,,shuusen,"cykady, które cykają, kiedy przychodzi jesień",,,DUPLICATE 103660
+103712,WORD_NOUN,,HIRAGANA,,,両脚,りょうあし,,ryouashi,obie nogi,,,DUPLICATE 103662
+103713,WORD_NOUN,,HIRAGANA,,,挂冠,かいかん,,kaikan,rezygnacja ze stanowiska rządowego,mało znane słowo,,DUPLICATE 103672
+103714,WORD_NOUN,,HIRAGANA,,,-,くりかえし,,kurikaeshi,dźwięczne powtórzenie znaku w katakana,,,"DUPLICATE 8882
+DUPLICATE 8883
+DUPLICATE 9884
+DUPLICATE 35324
+DUPLICATE 47756
+DUPLICATE 58985
+DUPLICATE 77124
+DUPLICATE 103182"
+103715,WORD_NOUN,,HIRAGANA,,,鉤欄,こうらん,,kouran,"balustrada
+poręcz",,,
+103716,WORD_NOUN,,KATAKANA,,,-,システム・チャネル,,shisutemu chaneru,kanał systemowy,ang: system channel,,
+103717,WORD_NOUN,,KATAKANA,,,-,ラフ・スケッチ,,rafu sukecchi,wstępny szkic,ang: rough sketch,,
+103718,WORD_VERB_RU,,HIRAGANA,,,ねじ曲げる,ねじまげる,,nejimageru,"skręcić
+skręcać
+przekręcać
+zniekształcić
+zniekształcać",,,
+103719,WORD_VERB_RU,,HIRAGANA,,,捩じ曲げる,ねじまげる,,nejimageru,"skręcić
+skręcać
+przekręcać
+zniekształcić
+zniekształcać",,,
+103720,WORD_VERB_RU,,HIRAGANA,,,捩曲げる,ねじまげる,,nejimageru,"skręcić
+skręcać
+przekręcać
+zniekształcić
+zniekształcać",,,
+103721,WORD_VERB_RU,,HIRAGANA,,,捻曲げる,ねじまげる,,nejimageru,"skręcić
+skręcać
+przekręcać
+zniekształcić
+zniekształcać",,,
+103722,WORD_NOUN,,HIRAGANA,,,両脚器,りょうきゃくき,,ryoukyakuki,cyrkiel,,,
+103723,WORD_NOUN,,HIRAGANA,,,帰服,きふく,,kifuku,poddanie się,,,
+103724,WORD_NOUN,,KATAKANA,,,-,ペイルエール,,peiru eeru,piwo jasne,ang: pale ale,,
+103725,WORD_NOUN,,KATAKANA,,,-,ペール・エール,,peeru eeru,piwo jasne,ang: pale ale,,
+103726,WORD_NOUN,,KATAKANA,,,-,ペイル・エール,,peiru eeru,piwo jasne,ang: pale ale,,
+103727,WORD_NOUN,,KATAKANA,,,-,メモリ・サイクル・タイム,,memori saikuru taimu,czas cyklu pamięci,ang: memory cycle time,,
+103728,WORD_NOUN,,KATAKANA,,,-,スーパー・スプレッダー,,suupaa supureddaa,super rozsiewacz wirusów,"osoba, która zaraża dużą liczbę osób, ang: super spreader",,
+103729,WORD_NOUN,,KATAKANA,,,-,パウダー・ルーム,,paudaa ruumu,toaleta damska,ang: powder room,,
+103730,WORD_NOUN,,HIRAGANA,,,夏越しの祓,なごしのはらえ,,nagoshi no harae,letni rytuał oczyszczania,"odbywa się w świątyniach, ostatniego dnia szóstego miesiąca księżycowego",,
+103731,WORD_NOUN,,HIRAGANA,,,名越しの祓,なごしのはらえ,,nagoshi no harae,letni rytuał oczyszczania,"odbywa się w świątyniach, ostatniego dnia szóstego miesiąca księżycowego",,
+103732,WORD_NOUN,,HIRAGANA,,,博引傍証,はくいんぼうしょう,,hakuin boushou,cytowanie obfitych odniesień,,,
+103733,WORD_NOUN,,HIRAGANA,,,乙酉,いつゆう,,itsuyuu,dwudziesty drugi cykl seksagonalny,,,"DUPLICATE 103706
+DUPLICATE 103734"
+103734,WORD_NOUN,,HIRAGANA,,,乙酉,おつゆう,,otsuyuu,dwudziesty drugi cykl seksagonalny,,,"DUPLICATE 103706
+DUPLICATE 103733"
+103735,WORD_NOUN,,HIRAGANA,,,高欄,こうらん,,kouran,"balustrada
+poręcz
+podłokietnik (krzesła)",,,
