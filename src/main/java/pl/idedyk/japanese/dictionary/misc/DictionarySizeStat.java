@@ -36,6 +36,8 @@ public class DictionarySizeStat {
 		
 		final Calendar currentDate = Calendar.getInstance();
 		
+		resetCalendar(currentDate, 23, 59, 59, 999);
+		
 		//
 		
 		List<DateStat> dateStatList = new ArrayList<DateStat>();
@@ -52,17 +54,17 @@ public class DictionarySizeStat {
 			
 			//
 			
-			int countWords = countWords(repositoryPath);
+			DateStat dateStat = countWords(repositoryPath, currentCheckDate.getTime());
 			
-			dateStatList.add(new DateStat(currentCheckDate.getTime(), countWords));
+			dateStatList.add(dateStat);
 			
-			System.out.println(gitDateFormat + ": " + countWords);			
+			System.out.println(gitDateFormat + ": " + dateStat.wordCounter + " - " + dateStat.commonWordCounter);
 			
 			//
 						
 			currentCheckDate.add(Calendar.DAY_OF_MONTH, 1);
 			
-			if (currentCheckDate.getTime().getTime() >= currentDate.getTime().getTime()) {
+			if (currentCheckDate.getTime().getTime() > currentDate.getTime().getTime()) {
 				break;
 			}
 		}
@@ -72,12 +74,21 @@ public class DictionarySizeStat {
 		for (DateStat dateStat : dateStatList) {
 			
 			csvWriter.write(formatDateToStat(dateStat.date));
-			csvWriter.write(String.valueOf(dateStat.stat));
+			csvWriter.write(String.valueOf(dateStat.wordCounter));
+			csvWriter.write(String.valueOf(dateStat.commonWordCounter));
 			
 			csvWriter.endRecord();
 		}
 		
 		csvWriter.close();
+	}
+	
+	private static void resetCalendar(Calendar calendar, int hour, int minute, int second, int millisecond) {
+		
+		calendar.set(Calendar.HOUR_OF_DAY, hour);
+		calendar.set(Calendar.MINUTE, minute);
+		calendar.set(Calendar.SECOND, second);
+		calendar.set(Calendar.MILLISECOND, millisecond);
 	}
 
 	private static String formatDateToGit(Calendar calendar) {
@@ -131,14 +142,14 @@ public class DictionarySizeStat {
         }
 	}
 	
-	private static int countWords(String repositoryPath) throws IOException {
+	private static DateStat countWords(String repositoryPath, Date date) throws IOException {
 		
+		// word.csv
 		final String[] wordCsvs = new String[] { "word.csv", "word01.csv", "word02.csv" };
-		//final String[] wordCsvs = new String[] { "common_word.csv" };
 		
 		//
 		
-		int counter = 0;
+		int wordCounter = 0;
 		
 		for (String currentWordCsv : wordCsvs) {
 			
@@ -150,33 +161,60 @@ public class DictionarySizeStat {
 			
 			CsvReader csvReader = new CsvReader(new FileReader(currentWordFile));
 			
-			while (csvReader.readRecord()) {
-				
-				/* Dla common_word
-				if (csvReader.get(1).equals("1") == true) {
-					continue;
-				}
-				*/
-				
-				counter++;
+			while (csvReader.readRecord()) {				
+				wordCounter++;
 			}
 			
 			csvReader.close();
 		}
+		
+		//
+		
+		// common_word.csv		
+		final String[] commonWordCsvs = new String[] { "common_word.csv" };
+		
+		int commonWordCounter = 0;
+		
+		for (String currentWordCsv : commonWordCsvs) {
+			
+			File currentWordFile = new File(repositoryPath + "/input", currentWordCsv);
+			
+			if (currentWordFile.exists() == false) {
+				continue;
+			}
+			
+			CsvReader csvReader = new CsvReader(new FileReader(currentWordFile));
+			
+			while (csvReader.readRecord()) {
 				
-		return counter;
+				if (csvReader.get(1).equals("1") == true) {
+					continue;
+				}
+				
+				commonWordCounter++;
+			}
+			
+			csvReader.close();
+		}
+		
+		//
+				
+		return new DateStat(date, wordCounter, commonWordCounter);
 	}
 	
 	private static class DateStat {
 		
 		private Date date;
 		
-		private int stat;
+		private int wordCounter;
+		
+		private int commonWordCounter;
 
-		public DateStat(Date date, int stat) {
+		public DateStat(Date date, int wordCounter, int commonWordCounter) {
 			super();
 			this.date = date;
-			this.stat = stat;
+			this.wordCounter = wordCounter;
+			this.commonWordCounter = commonWordCounter;
 		}		
 	}
 }
