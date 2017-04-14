@@ -8102,7 +8102,7 @@ WORD_NOUN",,HIRAGANA,,,斯様,かよう,,kayou,"w taki sposób
 w ten sposób",,,
 103833,WORD_NOUN,,HIRAGANA,,,糊精,こせい,,kosei,dekstryna,,,
 103834,WORD_NOUN,,HIRAGANA,,,新香,しんこう,,shinkou,"warzywa marynowane
-marynata",,,
+marynata",,,DUPLICATE 103887
 103835,WORD_NOUN,,HIRAGANA,,,刑吏,けいり,,keiri,"kat
 oprawca",,,
 103836,WORD_NOUN,,HIRAGANA,,,胸泳,きょうえい,,kyouei,"styl klasyczny
@@ -8117,7 +8117,7 @@ powszechnie znane gorące źródła",,,
 WORD_ADJECTIVE_NO",,HIRAGANA,,,貴台,きだい,,kidai,zwrot grzecznościowy używany w korespondencji firmy,,,
 103841,WORD_NOUN,,HIRAGANA,,,有色,ゆうしょく,,yuushoku,kolorowy,,,
 103842,WORD_NOUN,,HIRAGANA,,,火船,かせん,,kasen,"brander
-parowiec",,,
+parowiec",,,DUPLICATE 103904
 103843,WORD_NOUN,,HIRAGANA,,,懐剣,かいけん,,kaiken,sztylet,,,
 103844,WORD_NOUN,,HIRAGANA,,,沈吟,ちんぎん,,chingin,???,,,
 103845,WORD_NOUN,,HIRAGANA,,,皇紀,こうき,,kouki,cesarska era,,,
@@ -8129,7 +8129,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,筋炎,きんえん,,kin'en,zapalenie mięśni,,,
 103850,WORD_NOUN,,HIRAGANA,,,十字火,じゅうじか,,juujika,krzyżowy ogień,,,
 103851,WORD_NOUN,,HIRAGANA,,,球陽,きゅうよう,,kyuuyou,"historia królestwa Ryuukyuu (pisana w latach 1743-1745)
 wyspy Ryukyu",,,
-103852,WORD_NOUN,,HIRAGANA,,,甲辰,きのえたつ,,kinoetatsu,41-szy cykl seksagonalny,,,
+103852,WORD_NOUN,,HIRAGANA,,,甲辰,きのえたつ,,kinoetatsu,41-szy cykl seksagonalny,,,DUPLICATE 103888
 103853,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,開豁,かいかつ,,kaikatsu,"otwarty
 otwarty umysł",,,
@@ -8137,7 +8137,7 @@ otwarty umysł",,,
 103855,WORD_NOUN,,HIRAGANA,,,検真,けんしん,,kenshin,weryfikowanie autentyczności dokumentu,"np. przez pieczęć lub podpis, mało znane słowo",,
 103856,"WORD_AUX
 WORD_EXPRESSION",,HIRAGANA,,,-,ざり,,zari,"(używane po -nai czasownika w formie bez masu) nie … (przeczenie, archaizm)
-jest",,,
+jest",,,DUPLICATE 9387
 103857,WORD_NOUN,,HIRAGANA,,,施条,しじょう,,shijou,gwintowanie lufy pistoletu,,,
 103858,WORD_NOUN,,HIRAGANA,,,法語,ほうご,,hougo,buddyjskie kazanie,,,
 103859,WORD_NOUN,,HIRAGANA,,,行方向,ぎょうほうこう,,gyouhoukou,kierunek pisania linii,,,
@@ -8160,8 +8160,8 @@ niebiała rasa",,,
 103870,WORD_NOUN,,HIRAGANA,,,行方向奇偶検査,ぎょうほうこうきぐうけんさ,,gyouhoukou kiguu kensa,???,,,
 103871,WORD_NOUN,,HIRAGANA,,,内旨,ないし,,naishi,"tajne rozkazy cesarza
 sekretny rozkaz cesarza",,,
-103872,WORD_NOUN,,HIRAGANA,,,百日紅,さるすべり,,sarusuberi,lagerstremia indyjska,"gatunek rośliny należący do rodziny krwawnicowatych, lagerstroemia indica",,
-103873,WORD_NOUN,,HIRAGANA,,,古事記,こじき,,kojiki,Kojiki,"spisane w 712 roku przez Ō no Yasumaro na rozkaz cesarzowej Gemmei dzieło, mające stanowić oficjalną historię Japonii",,
+103872,WORD_NOUN,,HIRAGANA,,,百日紅,さるすべり,,sarusuberi,lagerstremia indyjska,"gatunek rośliny należący do rodziny krwawnicowatych, lagerstroemia indica",,DUPLICATE 103889
+103873,WORD_NOUN,,HIRAGANA,,,古事記,こじき,,kojiki,Kojiki,"spisane w 712 roku przez Ō no Yasumaro na rozkaz cesarzowej Gemmei dzieło, mające stanowić oficjalną historię Japonii",,DUPLICATE 103894
 103874,WORD_NOUN,,HIRAGANA,,,軍使,ぐんし,,gunshi,osoba niosąca flagę na znak zawieszenia broni,,,
 103875,WORD_NOUN,,HIRAGANA,,,成女,せいじょ,,seijo,"dorosła kobieta
 dojrzała kobieta",mało znane słowo,,
@@ -8181,6 +8181,54 @@ spiekać",,,
 masywne krwawienie",,,
 103884,WORD_NOUN,,HIRAGANA,,,昭陽舎,しょうようしゃ,,shouyousha,rezydencja pań dworu,wewnątrz pałacu Heian,,
 103885,WORD_NOUN,,HIRAGANA,,,出船,でふね,,defune,"podnoszenie kotwicy
+stawianie żagla
 ustawianie żagla
-wypływający statek",,,
+wypływający statek",,,"DUPLICATE 103902
+DUPLICATE 103903
+DUPLICATE 103905"
 103886,WORD_NOUN,,HIRAGANA,,,古事記伝,こじきでん,,kojiki den,komentarz do Kojiki,"przez Motoori Norinaga, 1798",,
+103887,WORD_NOUN,,HIRAGANA,,,新香,しんこ,,shinko,"warzywa marynowane
+marynata",,,DUPLICATE 103834
+103888,WORD_NOUN,,HIRAGANA,,,甲辰,こうしん,,koushin,41-szy cykl seksagonalny,,,DUPLICATE 103852
+103889,WORD_NOUN,,HIRAGANA,,,百日紅,ひゃくじつこう,,hyakujitsukou,lagerstremia indyjska,"gatunek rośliny należący do rodziny krwawnicowatych, lagerstroemia indica",,DUPLICATE 103872
+103890,WORD_NOUN,,HIRAGANA,,,猿滑,さるすべり,,sarusuberi,lagerstremia indyjska,"gatunek rośliny należący do rodziny krwawnicowatych, lagerstroemia indica",,DUPLICATE 103891
+103891,WORD_NOUN,,HIRAGANA,,,猿滑,しび,,shibi,lagerstremia indyjska,"gatunek rośliny należący do rodziny krwawnicowatych, lagerstroemia indica",,DUPLICATE 103890
+103892,WORD_NOUN,,HIRAGANA,,,猿滑り,さるすべり,,sarusuberi,lagerstremia indyjska,"gatunek rośliny należący do rodziny krwawnicowatych, lagerstroemia indica",,
+103893,WORD_NOUN,,KATAKANA,,,-,サルスベリ,,sarusuberi,lagerstremia indyjska,"gatunek rośliny należący do rodziny krwawnicowatych, lagerstroemia indica",,
+103894,WORD_NOUN,,HIRAGANA,,,古事記,ふることふみ,,furukotofumi,Kojiki,"spisane w 712 roku przez Ō no Yasumaro na rozkaz cesarzowej Gemmei dzieło, mające stanowić oficjalną historię Japonii",,DUPLICATE 103873
+103895,WORD_NOUN,,KATAKANA,,,-,メタリック・ケーブル,,metarikku keeburu,kabel metaliczny,ang: metallic cable,,
+103896,WORD_NOUN,,KATAKANA,,,-,スナップ・ゲージ,,sunappu geeji,sprawdzian szczękowy,"przyrząd pomiarowy, ang: snap gauge",,
+103897,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,イチイガシ,,ichiigashi,quercus gilva,odmiana dębu,,
+103898,WORD_NOUN,,HIRAGANA,,,色慾,しきよく,,shikiyoku,"pożądanie
+żądza
+seksualne pożądanie",,,
+103899,WORD_VERB_RU,,HIRAGANA,,,煎りつける,いりつける,,iri tsukeru,"opiekać
+przypiekać
+spiekać",,,
+103900,WORD_VERB_RU,,HIRAGANA,,,炒り付ける,いりつける,,iri tsukeru,"opiekać
+przypiekać
+spiekać",,,
+103901,WORD_VERB_RU,,HIRAGANA,,,煎り付ける,いりつける,,iri tsukeru,"opiekać
+przypiekać
+spiekać",,,
+103902,WORD_NOUN,,HIRAGANA,,,出船,でぶね,,debune,"podnoszenie kotwicy
+stawianie żagla
+ustawianie żagla
+wypływający statek",,,"DUPLICATE 103885
+DUPLICATE 103903
+DUPLICATE 103905"
+103903,WORD_NOUN,,HIRAGANA,,,出船,いでぶね,,idebune,"podnoszenie kotwicy
+stawianie żagla
+ustawianie żagla
+wypływający statek",,,"DUPLICATE 103885
+DUPLICATE 103902
+DUPLICATE 103905"
+103904,WORD_NOUN,,HIRAGANA,,,火船,ひぶね,,hibune,"brander
+statek z ogniem służący do wabienia ryb podczas nocnego łowienia ryb (w okresie przed wynalezieniem lamp elektrycznych)",,,DUPLICATE 103842
+103905,WORD_NOUN,,HIRAGANA,,,出船,しゅっせん,,shussen,"podnoszenie kotwicy
+stawianie żagla
+ustawianie żagla
+wypływający statek
+wypływanie na morze",,,"DUPLICATE 103885
+DUPLICATE 103902
+DUPLICATE 103903"
