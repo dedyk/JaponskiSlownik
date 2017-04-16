@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -248,7 +249,15 @@ public class WordGenerator {
 				
 				JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
 				
-				List<String> newAdditionalWordToCheckWordList = new ArrayList<String>();
+				//
+				
+				File additionalWordtoCheckFile = new File("input/additional_word_to_check");
+								
+				LinkedHashSet<String> newAdditionalWordToCheckWordList = new LinkedHashSet<String>();
+				
+				newAdditionalWordToCheckWordList.addAll(readFile(additionalWordtoCheckFile.getAbsolutePath()));
+				
+				//
 				
 				System.out.println("Szukanie...");
 				
@@ -425,11 +434,9 @@ public class WordGenerator {
 				
 				searchResultFileWriter.close();
 				
-				//
+				//				
 				
-				File additionalWordtoCheckFile = new File("input/additional_word_to_check");
-				
-				FileWriter additionalWordtoCheckFileWriter = new FileWriter(additionalWordtoCheckFile, true);
+				FileWriter additionalWordtoCheckFileWriter = new FileWriter(additionalWordtoCheckFile);
 				
 				for (String currentWord : newAdditionalWordToCheckWordList) {
 					additionalWordtoCheckFileWriter.write(currentWord + "\n");
