@@ -8613,8 +8613,8 @@ DUPLICATE 104080"
 komitet sterujący",ang: steering committee,,
 104102,WORD_NOUN,,HIRAGANA,,,刀自,とうじ,,touji,"pani
 matron
-gospodyni",,,
-104103,WORD_NOUN,,HIRAGANA,,,向拝,ごはい,,gohai,podtrzymywany dach zbudowany nad schodami do świątyni,,,
+gospodyni",,,DUPLICATE 104163
+104103,WORD_NOUN,,HIRAGANA,,,向拝,ごはい,,gohai,podtrzymywany dach zbudowany nad schodami do świątyni,,,DUPLICATE 104164
 104104,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,黄味,きみ,,kimi,"żółtko jajka
 żółty
@@ -8644,7 +8644,7 @@ styl
 moda",,,
 104116,WORD_NOUN,,HIRAGANA,,,弘安,こうあん,,kouan,epoka Kouan,1278.2.29-1288.4.28,,
 104117,WORD_NOUN,,HIRAGANA,,,前王,ぜんのう,,zennou,"były król
-zmarły król",,,
+zmarły król",,,DUPLICATE 104168
 104118,WORD_ADJECTIVE_NO,,HIRAGANA,,,書字,しょじ,,shoji,pisemna forma,,,
 104119,WORD_NOUN,,HIRAGANA,,,全心,ぜんしん,,zenshin,całe swoje serce,,,
 104120,WORD_NOUN,,HIRAGANA,,,全甲,ぜんこう,,zenkou,całe A,student,,
@@ -8686,12 +8686,12 @@ zwiastun",,,
 104137,WORD_NOUN,,HIRAGANA,,,刈り上げ,かりあげ,,kariage,"krótko ostrzyżone włosy
 krótko przycięte włosy
 ???",,,
-104138,WORD_NOUN,,KATAKANA,,,-,スタティックラム,,sutatikku ramu,statyczna pamięć o dostępie swobodnym,"informatyka, ang: static RAM",,
+104138,WORD_NOUN,,KATAKANA,,,-,スタティックラム,,sutatikku ramu,statyczna pamięć o dostępie swobodnym,"informatyka, ang: static RAM",,DUPLICATE 104156
 104139,WORD_NOUN,,HIRAGANA,,,確変,かくへん,,kakuhen,"przypadkowa zmienna
 zmienna losowa",skrót,,
 104140,WORD_ADVERB,,HIRAGANA,,,高が,たかが,,takaga,"to jest tylko … (coś)
 co najwyżej",,,
-104141,WORD_NOUN,,HIRAGANA,,,御奴,みやつこ,,miyatsuko,sługa na cesarskim dworze,archaizm,,
+104141,WORD_NOUN,,HIRAGANA,,,御奴,みやつこ,,miyatsuko,sługa na cesarskim dworze,archaizm,,DUPLICATE 104175
 104142,WORD_NOUN,,KATAKANA,,,-,コールバック,,koorubakku,"oddzwonienie
 wywołanie zwrotne
 wycofanie (wadliwego produktu)",ang: callback,,
@@ -8718,7 +8718,7 @@ podnajmowanie",,,
 104155,WORD_VERB_RU,,HIRAGANA,,,刈り上げる,かりあげる,,kariageru,"kosić kompletnie
 wyrównać (włosy)
 ???",,,
-104156,WORD_NOUN,,KATAKANA,,,スタティックＲＡＭ,スタティックラム,,sutatikku ramu,statyczna pamięć o dostępie swobodnym,ang: static Random Access Memory,,
+104156,WORD_NOUN,,KATAKANA,,,スタティックＲＡＭ,スタティックラム,,sutatikku ramu,statyczna pamięć o dostępie swobodnym,ang: static Random Access Memory,,DUPLICATE 104138
 104157,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,たかが知れている,たかがしれている,,taka ga shirete iru,"nie wynosić za dużo
 nie równać się za dużo",,,
@@ -8728,3 +8728,32 @@ WORD_EXPRESSION",,HIRAGANA,,,たかが知れる,たかがしれる,,taka ga shir
 104160,WORD_NOUN,,KATAKANA_HIRAGANA,,,コールバック機能,コールバックきのう,,kooru bakku kinou,funkcja callback,informatyka,,
 104161,WORD_NOUN,,KATAKANA,,,叉焼包,チャーシューバオ,,chaa shuu bao,cha siu bao,chińska potrawa,,
 104162,WORD_NOUN,,KATAKANA,,,チャーシュー麺,チャーシューメン,,chaashuu men,char siu,kantoński sposób przyrządzania pieczonego mięsa,,
+104163,WORD_NOUN,,HIRAGANA,,,刀自,とじ,,toji,"pani
+matron
+gospodyni",,,DUPLICATE 104102
+104164,WORD_NOUN,,HIRAGANA,,,向拝,こうはい,,kouhai,podtrzymywany dach zbudowany nad schodami do świątyni,,,DUPLICATE 104103
+104165,WORD_NOUN,,HIRAGANA,,,御拝,ごはい,,gohai,podtrzymywany dach zbudowany nad schodami do świątyni,,,
+104166,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,黄み,きみ,,kimi,"żółtko jajka
+żółty
+żółtawy",,,
+104167,WORD_NOUN,,HIRAGANA,,,里謡,りよう,,riyou,"ballada
+piosenka ludowa",,,
+104168,WORD_NOUN,,HIRAGANA,,,前王,ぜんおう,,zen'ou,"były król
+zmarły król",,,DUPLICATE 104117
+104169,WORD_NOUN,,KATAKANA,,,-,ホシクサ,,hoshikusa,eriocaulon cinereum,roślina,,
+104170,WORD_NOUN,,HIRAGANA,,,天魚,あまご,,amago,amago,,,
+104171,WORD_NOUN,,HIRAGANA,,,雨子,あまご,,amago,amago,,,
+104172,WORD_NOUN,,KATAKANA,,,-,アマゴ,,amago,amago,,,
+104173,WORD_NOUN,,HIRAGANA,,,公然猥褻罪,こうぜんわいせつざい,,kouzen waisetsu zai,"obraza moralności publicznej
+publiczne obnażanie się",,,
+104174,WORD_NOUN,,KATAKANA,,,-,スタティック・ラム,,sutatikku ramu,statyczna pamięć o dostępie swobodnym,"informatyka, ang: static RAM",,
+104175,WORD_NOUN,,HIRAGANA,,,御奴,みやづこ,,miyaduko,sługa na cesarskim dworze,archaizm,,DUPLICATE 104141
+104176,WORD_NOUN,,KATAKANA,,,-,アジェクテブ,,ajekutebu,przymiotnik,ang: adjective,,
+104177,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,高が知れている,たかがしれている,,taka ga shirete iru,"nie wynosić za dużo
+nie równać się za dużo",,,
+104178,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,高が知れる,たかがしれる,,taka ga shireru,nie mieć znaczenia,,,
+104179,WORD_NOUN,,KATAKANA,,,-,コールバック・モデム,,koorubakku modemu,modem zwrotny,ang: callback modem,,
+104180,WORD_NOUN,,KATAKANA,,,叉焼麺,チャーシューメン,,chaa shuu men,char siu,kantoński sposób przyrządzania pieczonego mięsa,,
