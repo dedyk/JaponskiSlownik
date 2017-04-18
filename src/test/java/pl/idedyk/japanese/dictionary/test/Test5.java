@@ -1,17 +1,24 @@
 package pl.idedyk.japanese.dictionary.test;
 
 import java.util.List;
+import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
+import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.EdictReader;
+import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 
 public class Test5 {
 
 	public static void main(String[] args) throws Exception {
 
-		// JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
+		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 
-		// List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
@@ -148,12 +155,24 @@ public class Test5 {
 		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 		
+		/*
 		for (int i = 0; i < 50; ++i) {
 			
 			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(i);
 			
 			System.out.format("\\entry{%s}{%s}{%s}{%s}\n\n", currentPolishJapaneseEntry.getKanji(), currentPolishJapaneseEntry.getKana(), "test", currentPolishJapaneseEntry.getTranslates().get(0));
-		}		
+		}
+		*/
+		
+		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
+		
+		//
+		
+		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
+
+		//
+		
+		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries);
 	}
 	
 	/*

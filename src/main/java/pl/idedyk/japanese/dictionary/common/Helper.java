@@ -15,6 +15,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.IntField;
@@ -249,8 +250,7 @@ public class Helper {
 		
 		// generowanie alternatyw
 		
-		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = 
-				cachePolishJapaneseEntryList(polishJapaneseEntries);
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryListKanjiKana = cachePolishJapaneseEntryList(polishJapaneseEntries);
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
@@ -269,7 +269,7 @@ public class Helper {
 					String groupEntryKana = groupEntry.getKana();
 																
 					PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntryWithEdictDuplicate(
-							polishJapaneseEntry, cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+							polishJapaneseEntry, cachePolishJapaneseEntryListKanjiKana, groupEntryKanji, groupEntryKana);
 					
 					if (findPolishJapaneseEntry != null) {
 						foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
@@ -306,7 +306,156 @@ public class Helper {
 					}
 				}				
 			}
-		}				
+		}
+		
+		// generowanie 'zobacz rowniez'
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryListKanjiOnly = cachePolishJapaneseEntryList(polishJapaneseEntries, new ICachePolishJapaneseEntryGetValue() {
+			
+			@Override
+			public String getKanji(PolishJapaneseEntry polishJapanaeseEntry) {
+				return polishJapanaeseEntry.getKanji();
+			}
+			
+			@Override
+			public String getKana(PolishJapaneseEntry polishJapanaeseEntry) {
+				return null;
+			}
+		});
+		
+		//
+		
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryListKanaOnly = cachePolishJapaneseEntryList(polishJapaneseEntries, new ICachePolishJapaneseEntryGetValue() {
+			
+			@Override
+			public String getKanji(PolishJapaneseEntry polishJapanaeseEntry) {
+				return null;
+			}
+			
+			@Override
+			public String getKana(PolishJapaneseEntry polishJapanaeseEntry) {
+				return polishJapanaeseEntry.getKana();
+			}
+		});
+		
+		//
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			String kanji = polishJapaneseEntry.getKanji();
+			String kana = polishJapaneseEntry.getKana();
+			
+			//
+			
+			List<PolishJapaneseEntry> relatedSimilarListForPolishJapaneseEntry = new ArrayList<>();
+			
+			//
+						
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
+
+			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+				
+				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
+					
+					List<String> similarRelatedList = groupEntry.getSimilarRelatedList();
+					
+					// chodzimy po wszystkich powiazanych slowach
+					for (String currentSimilarReleated : similarRelatedList) {
+												
+						String[] currentSimilarReleatedSplited = currentSimilarReleated.split("・");
+						
+						String kanjiToFound = null;
+						String kanaToFound = null;
+						
+						//
+						
+						if (currentSimilarReleatedSplited.length == 1 && Utils.isAllKanjiChars(currentSimilarReleatedSplited[0]) == true) {
+							kanjiToFound = currentSimilarReleatedSplited[0];
+														
+						} else if (currentSimilarReleatedSplited.length == 1 && Utils.isAllKanaChars(currentSimilarReleatedSplited[0]) == true) {
+							kanaToFound = currentSimilarReleatedSplited[0];
+							
+						} else if (currentSimilarReleatedSplited.length == 2 && Utils.isAllKanjiChars(currentSimilarReleatedSplited[0]) == true && 
+								StringUtils.isNumeric(currentSimilarReleatedSplited[1]) == true) {
+							
+							kanjiToFound = currentSimilarReleatedSplited[0];
+							
+						} else if (currentSimilarReleatedSplited.length == 2 && Utils.isAllKanaChars(currentSimilarReleatedSplited[0]) == true && 
+								StringUtils.isNumeric(currentSimilarReleatedSplited[1]) == true) {
+						
+							kanaToFound = currentSimilarReleatedSplited[0];
+							
+						} else if (currentSimilarReleatedSplited.length == 2 && Utils.isAllKanjiChars(currentSimilarReleatedSplited[0]) == true &&
+								Utils.isAllKanaChars(currentSimilarReleatedSplited[1]) == true) {
+							
+							kanjiToFound = currentSimilarReleatedSplited[0];
+							kanaToFound = currentSimilarReleatedSplited[1];
+							
+						} else if (currentSimilarReleatedSplited.length == 3) {
+							
+							kanjiToFound = currentSimilarReleatedSplited[0];
+							kanaToFound = currentSimilarReleatedSplited[1];
+							
+						} else if (currentSimilarReleatedSplited.length == 1 && Utils.isAllKanaChars(currentSimilarReleatedSplited[0]) == false &&
+								StringUtils.isNumeric(currentSimilarReleatedSplited[0]) == false) {
+							
+							kanjiToFound = currentSimilarReleatedSplited[0];
+							
+						} else if (currentSimilarReleatedSplited.length == 2 && Utils.isAllKanaChars(currentSimilarReleatedSplited[1]) == true) {
+							
+							kanjiToFound = currentSimilarReleatedSplited[0];
+							kanaToFound = currentSimilarReleatedSplited[1];
+														
+						} else if (currentSimilarReleatedSplited.length == 2 &&	StringUtils.isNumeric(currentSimilarReleatedSplited[1]) == true) {
+						
+							kanjiToFound = currentSimilarReleatedSplited[0];
+														
+						} else {
+							throw new DictionaryException("Unknown similar related word: " + currentSimilarReleated);
+						}
+						
+						//
+						
+						//tutaj();
+						
+						List<PolishJapaneseEntry> findPolishJapaneseEntry = null;
+						
+						if (kanjiToFound != null && kanaToFound == null) { // tylko kanji							
+							findPolishJapaneseEntry = findPolishJapaneseEntry(cachePolishJapaneseEntryListKanjiOnly, kanjiToFound, kanaToFound);
+							
+						} else if (kanjiToFound == null && kanaToFound != null) { // tylko kana							
+							findPolishJapaneseEntry = findPolishJapaneseEntry(cachePolishJapaneseEntryListKanaOnly, kanjiToFound, kanaToFound);
+														
+						} else if (kanjiToFound != null && kanaToFound != null) { // kanji i kana
+							findPolishJapaneseEntry = findPolishJapaneseEntry(cachePolishJapaneseEntryListKanjiKana, kanjiToFound, kanaToFound);
+							
+						}	
+						
+						//
+						
+						if (findPolishJapaneseEntry != null) {
+
+							for (PolishJapaneseEntry foundPolishJapaneseEntryRelatedSimilar : findPolishJapaneseEntry) {
+								
+								if (relatedSimilarListForPolishJapaneseEntry.contains(foundPolishJapaneseEntryRelatedSimilar) == false) {
+									relatedSimilarListForPolishJapaneseEntry.add(foundPolishJapaneseEntryRelatedSimilar);
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			if (relatedSimilarListForPolishJapaneseEntry.size() > 0) {
+				
+				//System.out.println(polishJapaneseEntry.getKanji() + " , " + polishJapaneseEntry.getKana() + " , " + polishJapaneseEntry.getTranslates());
+				
+				for (PolishJapaneseEntry currentRelatedSimilar : relatedSimilarListForPolishJapaneseEntry) {
+					//System.out.println("\t" + currentRelatedSimilar.getKanji() + " , " + currentRelatedSimilar.getKana() + " , " + currentRelatedSimilar.getTranslates());
+					
+					polishJapaneseEntry.getAttributeList().addAttributeValue(AttributeType.RELATED, "" + currentRelatedSimilar.getId());
+				}
+			}
+		}		
 	}
 
 	private static EDictEntry findEdictEntry(TreeMap<String, EDictEntry> jmedict,
@@ -939,15 +1088,37 @@ public class Helper {
 	
 	public static Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList(List<PolishJapaneseEntry> polishJapaneseEntries) {
 		
+		ICachePolishJapaneseEntryGetValue icachePolishJapaneseEntryGetValue = new ICachePolishJapaneseEntryGetValue() {
+			
+			@Override
+			public String getKanji(PolishJapaneseEntry polishJapanaeseEntry) {
+				return polishJapanaeseEntry.getKanji();
+			}
+			
+			@Override
+			public String getKana(PolishJapaneseEntry polishJapanaeseEntry) {
+				return polishJapanaeseEntry.getKana();
+			}
+		};
+		
+		return cachePolishJapaneseEntryList(polishJapaneseEntries, icachePolishJapaneseEntryGetValue);
+	}
+	
+	private static Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList(List<PolishJapaneseEntry> polishJapaneseEntries, ICachePolishJapaneseEntryGetValue icachePolishJapaneseEntryGetValue) {
+		
 		Map<String, List<PolishJapaneseEntry>> result = new TreeMap<String, List<PolishJapaneseEntry>>();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
-			String kanji = polishJapaneseEntry.getKanji();
-			String kana = polishJapaneseEntry.getKana();
+			String kanji = icachePolishJapaneseEntryGetValue.getKanji(polishJapaneseEntry); // polishJapaneseEntry.getKanji();
+			String kana = icachePolishJapaneseEntryGetValue.getKana(polishJapaneseEntry); // polishJapaneseEntry.getKana();
 			
 			if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
 				kanji = "$$$NULL$$$";
+			}
+			
+			if (kana == null) {
+				kana = "$$$NULL$$$";
 			}
 			
 			String key = kanji + "." + kana;
@@ -966,11 +1137,21 @@ public class Helper {
 		return result;
 	}
 	
+	public static interface ICachePolishJapaneseEntryGetValue {
+		
+		public String getKanji(PolishJapaneseEntry polishJapanaeseEntry);
+		public String getKana(PolishJapaneseEntry polishJapanaeseEntry);
+	}
+	
 	public static List<PolishJapaneseEntry> findPolishJapaneseEntry(
 			Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryMap, String findKanji, String findKana) {
 		
 		if (findKanji == null || findKanji.equals("") == true || findKanji.equals("-") == true) {
 			findKanji = "$$$NULL$$$";
+		}
+		
+		if (findKana == null) {
+			findKana = "$$$NULL$$$";
 		}
 
 		String foundKey = findKanji + "." + findKana;
@@ -1002,6 +1183,10 @@ public class Helper {
 		
 		if (findKanji == null || findKanji.equals("") == true || findKanji.equals("-") == true) {
 			findKanji = "$$$NULL$$$";
+		}
+		
+		if (findKana == null) {
+			findKana = "$$$NULL$$$";
 		}
 
 		String foundKey = findKanji + "." + findKana;
