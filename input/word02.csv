@@ -9044,7 +9044,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,垂下,すいか,,suika,"bycie zwisający
 zwisający
 wiszący",,,
 104327,WORD_NOUN,,HIRAGANA,,,古松,こしょう,,koshou,stara sosna,mało znane słowo,,
-104328,WORD_NOUN,,HIRAGANA,,,僧家,そうか,,souka,buddyjska świątynia,,,
+104328,WORD_NOUN,,HIRAGANA,,,僧家,そうか,,souka,buddyjska świątynia,,,DUPLICATE 2233
 104329,WORD_NOUN,,HIRAGANA,,,毀壊,きかい,,kikai,"łamanie
 rozbijanie
 wyburzanie
@@ -9060,10 +9060,10 @@ mochi dawane niemowlakom podczas swoich urodzin",,,
 104331,WORD_NOUN,,HIRAGANA,,,精銅,せいどう,,seidou,miedź rafinowana,,,
 104332,WORD_NOUN,,HIRAGANA,,,五穀,ごこく,,gokoku,pięć ziaren,"pszenica, ryż, fasola, proso (awa i kibi)",,
 104333,WORD_NOUN,,HIRAGANA,,,堅志,けんし,,kenshi,żelazny cel,,,
-104334,WORD_NOUN,,HIRAGANA,,,抱囲,ほうい,,houi,trzymanie czegoś obiema rękami,,,
+104334,WORD_NOUN,,HIRAGANA,,,抱囲,ほうい,,houi,trzymanie czegoś obiema rękami,,,DUPLICATE 98990
 104335,"WORD_NOUN
 WORD_ADVERB",,HIRAGANA,,,-,しんと,,shinto,"milczący (jak grób)
-śmiertelnie milczący",,,
+śmiertelnie milczący",,,DUPLICATE 5243
 104336,WORD_NOUN,,HIRAGANA,,,掲題,けいだい,,keidai,"temat (np. email)
 tytuł",,,
 104337,WORD_NOUN,,HIRAGANA,,,遊資,ゆうし,,yuushi,bezczynne fundusze lub kapitał,,,
@@ -9071,7 +9071,10 @@ tytuł",,,
 reguła",,,
 104339,WORD_NOUN,,HIRAGANA,,,身中,しんちゅう,,shinchuu,wnętrze swojego ciała,,,
 104340,WORD_NOUN,,HIRAGANA,,,稲架,はさ,,hasa,"suszący się ryż na stojaku
-stojak do suszenia ryżu",,,
+stojak do suszenia ryżu",,,"DUPLICATE 104365
+DUPLICATE 104366
+DUPLICATE 104367
+DUPLICATE 104368"
 104341,WORD_NOUN,,HIRAGANA,,,銘酒,めいしゅ,,meishu,"słynna marka sake
 najlepsza sake
 wyborna sake",,,
@@ -9080,11 +9083,11 @@ wyborna sake",,,
 rodzajnik",,,
 104344,WORD_NOUN,,HIRAGANA,,,政綱,せいこう,,seikou,"polityczne zasady, polityka lub platforma",,,
 104345,WORD_NOUN,,HIRAGANA,,,神品,しんぴん,,shinpin,natchnione dzieło,,,
-104346,WORD_NOUN,,HIRAGANA,,,肢帯,したい,,shitai,obręcz,"np. obręcz kończyny dolnej, obręcz miedniczna, obręcz barkowa",,
+104346,WORD_NOUN,,HIRAGANA,,,肢帯,したい,,shitai,obręcz,"np. obręcz kończyny dolnej, obręcz miedniczna, obręcz barkowa",,DUPLICATE 94119
 104347,WORD_NOUN,,HIRAGANA,,,芳枝,ほうし,,houshi,pachnąca gałąź kwiatów,,,
 104348,WORD_VERB_U,,HIRAGANA,,,漉く,すく,,suku,"rozczesywać
-rozczesać",np. włosy,,
-104349,WORD_VERB_U,,HIRAGANA,,,漉く,すく,,suku,"zrobić coś (np. papier) z mokrego, papkowatego materiału poprzez rozłożenie go na cienkie kawałki i wysuszenie go",,,
+rozczesać",np. włosy,,DUPLICATE 104349
+104349,WORD_VERB_U,,HIRAGANA,,,漉く,すく,,suku,"zrobić coś (np. papier) z mokrego, papkowatego materiału poprzez rozłożenie go na cienkie kawałki i wysuszenie go",,,DUPLICATE 104348
 104350,WORD_NOUN,,HIRAGANA,,,悲傷,ひしょう,,hishou,"żal
 smutek
 rozpacz",,,
@@ -9109,3 +9112,37 @@ oddany",,,
 dom publiczny (okres Meiji lub Taisho)
 burdel (okres Meiji lub Taisho)",,,
 104360,WORD_NOUN,,HIRAGANA,,,長汀曲浦,ちょうていきょくほ,,choutei kyokuho,długi odcinek krętej plaży,,,
+104361,WORD_NOUN,,HIRAGANA,,,水松,みる,,miru,codium fragile,roślina,,DUPLICATE 104362
+104362,WORD_NOUN,,HIRAGANA,,,水松,すいしょう,,suishou,codium fragile,roślina,,DUPLICATE 104361
+104363,WORD_NOUN,,KATAKANA,,,-,ミル,,miru,codium fragile,roślina,,DUPLICATE 104371
+104364,"WORD_NOUN
+WORD_ADVERB",,KATAKANA_HIRAGANA,,,-,シンと,,shinto,"milczący (jak grób)
+śmiertelnie milczący",,,
+104365,WORD_NOUN,,HIRAGANA,,,稲架,はざ,,haza,"suszący się ryż na stojaku
+stojak do suszenia ryżu",,,"DUPLICATE 104340
+DUPLICATE 104366
+DUPLICATE 104367
+DUPLICATE 104368"
+104366,WORD_NOUN,,HIRAGANA,,,稲架,はせ,,hase,"suszący się ryż na stojaku
+stojak do suszenia ryżu",,,"DUPLICATE 104340
+DUPLICATE 104365
+DUPLICATE 104367
+DUPLICATE 104368"
+104367,WORD_NOUN,,HIRAGANA,,,稲架,はぜ,,haze,"suszący się ryż na stojaku
+stojak do suszenia ryżu",,,"DUPLICATE 104340
+DUPLICATE 104365
+DUPLICATE 104366
+DUPLICATE 104368"
+104368,WORD_NOUN,,HIRAGANA,,,稲架,とうか,,touka,"suszący się ryż na stojaku
+stojak do suszenia ryżu",,,"DUPLICATE 104340
+DUPLICATE 104365
+DUPLICATE 104366
+DUPLICATE 104367"
+104369,WORD_NOUN,,HIRAGANA,,,名酒,めいしゅ,,meishu,"słynna marka sake
+najlepsza sake
+wyborna sake",,,
+104370,WORD_NOUN,,HIRAGANA,,,五穀豊饒,ごこくほうじょう,,gokoku houjou,"ogromne zbiory (z pięciu ziaren)
+rekordowy plon
+obfite plony",,,
+104371,WORD_NOUN,,KATAKANA,,,-,ミル,,miru,"mil (jedna tysięczna cala)
+młyn",ang: mill,,DUPLICATE 104363
