@@ -9086,7 +9086,9 @@ rodzajnik",,,
 104346,WORD_NOUN,,HIRAGANA,,,肢帯,したい,,shitai,obręcz,"np. obręcz kończyny dolnej, obręcz miedniczna, obręcz barkowa",,DUPLICATE 94119
 104347,WORD_NOUN,,HIRAGANA,,,芳枝,ほうし,,houshi,pachnąca gałąź kwiatów,,,
 104348,WORD_VERB_U,,HIRAGANA,,,漉く,すく,,suku,"rozczesywać
-rozczesać",np. włosy,,DUPLICATE 104349
+rozczesać
+rozplątywać (włosy)
+rozsupływać (włosy)",,,DUPLICATE 104349
 104349,WORD_VERB_U,,HIRAGANA,,,漉く,すく,,suku,"zrobić coś (np. papier) z mokrego, papkowatego materiału poprzez rozłożenie go na cienkie kawałki i wysuszenie go",,,DUPLICATE 104348
 104350,WORD_NOUN,,HIRAGANA,,,悲傷,ひしょう,,hishou,"żal
 smutek
@@ -9503,7 +9505,8 @@ obwód",,,
 104553,WORD_NOUN,,HIRAGANA,,,綱要,こうよう,,kouyou,???,,,
 104554,WORD_NOUN,,HIRAGANA,,,茶事,ちゃごと,,chagoto,"zebranie się w celu odbycia ceremonii herbaty
 kwestie dotyczące herbaty
-rodzinne spotkanie przy herbacie w celu wspominania zmarłych przodków",,,
+rodzinne spotkanie przy herbacie w celu wspominania zmarłych przodków",,,"DUPLICATE 104586
+DUPLICATE 104587"
 104555,WORD_NOUN,,HIRAGANA,,,聖都,せいと,,seito,święte miasto,"np. Jerozolima, Mekka",,
 104556,WORD_NOUN,,HIRAGANA,,,危地,きち,,kichi,"niebezpieczna pozycja
 zagrożenie
@@ -9516,7 +9519,7 @@ niezależność",,,
 104560,WORD_VERB_U,,HIRAGANA,,,梳く,すく,,suku,"rozczesywać
 rozczesać
 rozplątywać (włosy)
-rozsupływać (włosy)",,,
+rozsupływać (włosy)",,,DUPLICATE 104589
 104561,WORD_NOUN,,HIRAGANA,,,輿望,よぼう,,yobou,"szacunek
 poważanie
 estyma
@@ -9532,10 +9535,12 @@ werbunek
 rekrutacja",do wojska,,
 104566,WORD_NOUN,,HIRAGANA,,,光機,こうき,,kouki,przyrząd optyczny,skrót,,
 104567,WORD_NOUN,,HIRAGANA,,,市葬,しそう,,shisou,miejski pogrzeb,,,
-104568,WORD_NOUN,,HIRAGANA,,,金漆,きんしつ,,kinshitsu,lakier wykonany z soku z acanthopanax sciadophylloides,,,
+104568,WORD_NOUN,,HIRAGANA,,,金漆,きんしつ,,kinshitsu,lakier wykonany z soku z acanthopanax sciadophylloides,,,"DUPLICATE 104597
+DUPLICATE 104598"
 104569,WORD_NOUN,,HIRAGANA,,,婚期,こんき,,konki,"wiek zdolności do zawarcia małżeństwa
 możliwość zawarcia małżeństwa",,,
-104570,WORD_NOUN,,HIRAGANA,,,元結い,もとゆい,,motoyui,papierowy sznurek do wiązania włosów,,,
+104570,WORD_NOUN,,HIRAGANA,,,元結い,もとゆい,,motoyui,papierowy sznurek do wiązania włosów,,,"DUPLICATE 104590
+DUPLICATE 104591"
 104571,WORD_NOUN,,HIRAGANA,,,鍛工,たんこう,,tankou,rzemieślnik tworzący przedmioty z metalu,,,
 104572,WORD_NOUN,,HIRAGANA,,,考課,こうか,,kouka,"ocena
 oszacowanie",,,
@@ -9558,3 +9563,44 @@ WORD_EXPRESSION",,HIRAGANA,,,輿望を担う,よぼうをになう,,yobou o nina
 104584,WORD_NOUN,,HIRAGANA,,,漉油の木,こしあぶらのき,,koshiabura no ki,acanthopanax sciadophylloides,roślina,,
 104585,WORD_NOUN,,HIRAGANA,,,島嶼国,とうしょこく,,toushokoku,"kraj wyspiarski
 państwo wyspiarskie",,,
+104586,WORD_NOUN,,HIRAGANA,,,茶事,ちゃじ,,chaji,"zebranie się w celu odbycia ceremonii herbaty
+kwestie dotyczące herbaty
+rodzinne spotkanie przy herbacie w celu wspominania zmarłych przodków",,,"DUPLICATE 104554
+DUPLICATE 104587"
+104587,WORD_NOUN,,HIRAGANA,,,茶事,さじ,,saji,"zebranie się w celu odbycia ceremonii herbaty
+kwestie dotyczące herbaty
+rodzinne spotkanie przy herbacie w celu wspominania zmarłych przodków",,,"DUPLICATE 104554
+DUPLICATE 104586"
+104588,WORD_NOUN,,HIRAGANA,,,不羇,ふき,,fuki,"wolność
+swoboda
+niezależność",,,
+104589,WORD_VERB_U,,HIRAGANA,,,梳く,とく,,toku,"rozczesywać
+rozczesać
+rozplątywać (włosy)
+rozsupływać (włosy)",,,"DUPLICATE 94096
+DUPLICATE 104560"
+104590,WORD_NOUN,,HIRAGANA,,,元結い,もとい,,motoi,papierowy sznurek do wiązania włosów,,,"DUPLICATE 104570
+DUPLICATE 104591"
+104591,WORD_NOUN,,HIRAGANA,,,元結い,もっとい,,mottoi,papierowy sznurek do wiązania włosów,,,"DUPLICATE 104570
+DUPLICATE 104590"
+104592,WORD_NOUN,,HIRAGANA,,,元結,もとゆい,,motoyui,papierowy sznurek do wiązania włosów,,,"DUPLICATE 104593
+DUPLICATE 104594"
+104593,WORD_NOUN,,HIRAGANA,,,元結,もとい,,motoi,papierowy sznurek do wiązania włosów,,,"DUPLICATE 104592
+DUPLICATE 104594"
+104594,WORD_NOUN,,HIRAGANA,,,元結,もっとい,,mottoi,papierowy sznurek do wiązania włosów,,,"DUPLICATE 104592
+DUPLICATE 104593"
+104595,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,輿望をになう,よぼうをになう,,yobou o ninau,cieszyć się zaufaniem,,,
+104596,WORD_NOUN,,HIRAGANA,,,漉し油,こしあぶら,,koshiabura,acanthopanax sciadophylloides,roślina,,
+104597,WORD_NOUN,,HIRAGANA,,,金漆,こしあぶら,,koshiabura,acanthopanax sciadophylloides,roślina,,"DUPLICATE 104568
+DUPLICATE 104598"
+104598,WORD_NOUN,,HIRAGANA,,,金漆,ごんぜつ,,gonzetsu,acanthopanax sciadophylloides,roślina,,"DUPLICATE 104568
+DUPLICATE 104597"
+104599,WORD_NOUN,,KATAKANA,,,-,コシアブラ,,koshiabura,acanthopanax sciadophylloides,roślina,,
+104600,WORD_NOUN,,KATAKANA,,,-,コシアブラノキ,,koshiabura no ki,acanthopanax sciadophylloides,roślina,,
+104601,WORD_VERB_U,,HIRAGANA,,,引っかく,ひっかく,,hikkaku,"trzeć
+drapać
+rysować",,,
+104602,WORD_VERB_U,,HIRAGANA,,,引掻く,ひっかく,,hikkaku,"trzeć
+drapać
+rysować",,,
