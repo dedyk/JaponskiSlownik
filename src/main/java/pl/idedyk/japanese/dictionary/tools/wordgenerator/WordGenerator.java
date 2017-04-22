@@ -330,6 +330,7 @@ public class WordGenerator {
 							}								
 						}	
 						
+						/*
 						// dodatkowe sprawdzenie, w celu poszukiwania dodatkowych slow
 						if (checkInJishoOrg == true) {	
 							
@@ -353,6 +354,7 @@ public class WordGenerator {
 								}
 							}
 						}
+						*/
 						
 					} else {
 						
