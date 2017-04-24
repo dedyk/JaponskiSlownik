@@ -6177,7 +6177,7 @@ nabrzeże",archaizm,,
 kamerdyner
 opiekun",,,
 102810,WORD_VERB_U,,HIRAGANA,,,空かす,すかす,,sukasu,"czuć głód
-zgłodnieć",,,
+zgłodnieć",,,DUPLICATE 104782
 102811,WORD_NOUN,,HIRAGANA,,,常規,じょうき,,jouki,"standard
 powszechny standard
 standardowe zasady
@@ -7712,7 +7712,7 @@ nakłonić
 przymilać się
 przypochlebiać
 udobruchać
-ująć pochlebstwem",,,
+ująć pochlebstwem",,,DUPLICATE 104782
 103607,WORD_NOUN,,HIRAGANA,,,選対,せんたい,,sentai,"strategia kampanii wyborczej
 taktyka wyborcza",skrót,,
 103608,WORD_NOUN,,HIRAGANA,,,鉱害,こうがい,,kougai,zanieczyszczenie środowiska lub szkody wyrządzone przez górnictwo,,,
@@ -9941,9 +9941,9 @@ szpon",,,DUPLICATE 104759
 104763,WORD_NOUN,,HIRAGANA,,,選鉱,せんこう,,senkou,"przygotowywanie rudy
 wzbogacanie rudy",,,
 104764,WORD_NOUN,,HIRAGANA,,,雁下,がんか,,ganka,obszar poniżej mięśnia piersiowego,mało znane słowo,,
-104765,WORD_VERB_U,,HIRAGANA,,,老ゆ,おゆ,,oyu,"starzeć się
+104765,WORD_EMPTY,,HIRAGANA,,,老ゆ,おゆ,,oyu,"starzeć się
 postarzeć się
-zestarzeć się",archaizm,,
+zestarzeć się",archaizm,NO_TYPE_CHECK,
 104766,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,信実,しんじつ,,shinjitsu,"szczerość
 uczciwość
@@ -9995,7 +9995,9 @@ słowo pomocnicze
 słowo posiłkowe",,,
 104782,WORD_VERB_U,,HIRAGANA,,,-,すかす,,sukasu,"pozować
 udawać
-być nienaturalny",,,
+być nienaturalny",,,"DUPLICATE 8253
+DUPLICATE 102810
+DUPLICATE 103606"
 104783,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,二進,にしん,,nishin,"binarny
 zero-jedynkowy",,,
@@ -10059,7 +10061,7 @@ na przekór",,,
 seppuku
 wypatroszenie",,,
 104805,WORD_NOUN,,HIRAGANA,,,頓着,とんちゃく,,tonchaku,"być zaniepokojony o
-być świadomy (czegoś)",,,
+być świadomy (czegoś)",,,DUPLICATE 104821
 104806,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,暗澹,あんたん,,antan,"ciemny
 ponury
@@ -10070,12 +10072,58 @@ depresyjny",,,
 WORD_TEMPORAL_NOUN",,HIRAGANA,,,旧年,きゅうねん,,kyuunen,"stary rok
 ubiegły rok
 zeszły rok
-ostatni rok",,,
+ostatni rok",,,DUPLICATE 104823
 104808,WORD_NOUN,,HIRAGANA,,,漬けっぱなし,つけっぱなし,,tsukeppanashi,namoczenie czegoś,,,
 104809,WORD_NOUN,,HIRAGANA_KATAKANA,,,入眠時レム期,にゅうみんじレムき,,nyuuminji remu ki,???,"ang: sleep onset REM period, SOREMP",,
 104810,WORD_NOUN,,HIRAGANA,,,割腹,かっぷく,,kappuku,"wypatroszenie
 harakiri",,,
 104811,WORD_NOUN,,HIRAGANA,,,永日,えいじつ,,eijitsu,długi wiosenny dzień,,,
 104812,WORD_ADJECTIVE_I,,HIRAGANA,,,頓着ない,とんじゃくない,,tonjakunai,"obojętny
-niezainteresowany",,,
+niezainteresowany",,,DUPLICATE 104827
 104813,WORD_NOUN,,HIRAGANA,,,旧年末,きゅうねんまつ,,kyuunenmatsu,koniec zeszłego roku,,,
+104814,WORD_NOUN,,HIRAGANA,,,簇生,ぞくせい,,zokusei,"wzrost w gromadzie (o roślinach)
+rosnąć w gromadzie",,,
+104815,WORD_NOUN,,KATAKANA,,,-,ホーム・リザベーション,,hoomu rizabeeshon,rezerwacja domu,ang: home reservation,,
+104816,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,お老成,おませ,,omase,"przedwczesny
+przedwcześnie dojrzałe dziecko",,,
+104817,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA_KATAKANA,,,-,おマセ,,omase,"przedwczesny
+przedwcześnie dojrzałe dziecko",,,
+104818,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,傷弓之鳥,しょうきゅうのとり,,shoukyuu no tori,???,idiom,,
+104819,WORD_NOUN,,HIRAGANA,,,病褥,びょうじょく,,byoujoku,"łóżko chorego
+łoże boleści",mało znane słowo,,
+104820,WORD_VERB_U,,HIRAGANA,,,-,ぱくる,,pakuru,"kraść
+ukraść
+rąbnąć
+buchnąć
+zwędzić
+podwędzić
+zakosić
+aresztować
+przyłapać
+otwierać swoje usta szeroko i jeść z apetytem
+łypać jedzenie łapczywie",,,
+104821,WORD_NOUN,,HIRAGANA,,,頓着,とんじゃく,,tonjaku,"być zaniepokojony o
+być świadomy (czegoś)",,,DUPLICATE 104805
+104822,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,暗たん,あんたん,,antan,"ciemny
+ponury
+mroczny
+przygnębiający
+depresyjny",,,
+104823,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,旧年,ふるとし,,furutoshi,"stary rok
+ubiegły rok
+zeszły rok
+ostatni rok",,,DUPLICATE 104807
+104824,WORD_NOUN,,HIRAGANA,,,浸けっぱなし,つけっぱなし,,tsukeppanashi,namoczenie czegoś,,,
+104825,WORD_NOUN,,HIRAGANA,,,漬けっ放し,つけっぱなし,,tsukeppanashi,namoczenie czegoś,,,
+104826,WORD_NOUN,,HIRAGANA,,,浸けっ放し,つけっぱなし,,tsukeppanashi,namoczenie czegoś,,,
+104827,WORD_ADJECTIVE_I,,HIRAGANA,,,頓着ない,とんちゃくない,,tonchakunai,"obojętny
+niezainteresowany",,,DUPLICATE 104812
+104828,WORD_ADJECTIVE_I,,HIRAGANA,,,頓着無い,とんじゃくない,,tonjakunai,"obojętny
+niezainteresowany",,,DUPLICATE 104829
+104829,WORD_ADJECTIVE_I,,HIRAGANA,,,頓着無い,とんちゃくない,,tonchakunai,"obojętny
+niezainteresowany",,,DUPLICATE 104828
