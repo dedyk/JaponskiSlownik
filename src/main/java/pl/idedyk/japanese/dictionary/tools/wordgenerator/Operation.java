@@ -12,6 +12,8 @@ public enum Operation {
 	
 	GENERATE_MISSING_WORD_LIST("generate-missing-word-list", "Generuje brakujące znalezione słowa"),
 	
+	GENERATE_MISSING_WORD_LIST_NUMBER("generate-missing-word-list-number", "Genruje liczbę brakujących znalezionych słów, aby osiągnąć zamierzoną liczbę nowych słów"),
+	
 	GENERATE_MISSING_WORD_LIST_FROM_TEXT("generate-missing-word-list-from-text", "Generowanie brakujących słów z tekstu"),
 	
 	GENERATE_MISSING_WORD_LIST_IN_COMMON_WORDS("generate-missing-word-list-in-common-words", "Generuje słowa, krórych wyszukanie da wynik wśród common'owych słów"),

@@ -179,7 +179,7 @@ public class WordGenerator {
 			}
 			
 			case GENERATE_MISSING_WORD_LIST: {
-				
+								
 				if (args.length != 2 && args.length != 3 && args.length != 4 && args.length != 5) {
 					
 					System.err.println("Niepoprawna liczba argumentów. Poprawne wywołanie: [plik z lista słów] [czy sprawdzać w jisho.org] [czy zapis w formacie common] [czy dodawać tylko słowa, których nie ma w pliku common]");
@@ -449,6 +449,132 @@ public class WordGenerator {
 				break;
 			}
 			
+			case GENERATE_MISSING_WORD_LIST_NUMBER: {
+				
+				if (args.length != 3) {
+					
+					System.err.println("Niepoprawna liczba argumentów. Poprawne wywołanie: [plik z lista słów] [oczekiwana liczba nowych słów]");
+					
+					return;
+				}
+				
+				String fileName = args[1];
+				
+				Integer expectedNewWordSize = Integer.parseInt(args[2]);
+												
+				// wczytywanie pliku z lista slow
+				System.out.println("Wczytywanie brakujących słów...");
+				
+				List<String> missingWords = readFile(fileName);
+				
+				// pobranie cache ze slowami
+				Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
+				
+				// wczytanie slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				
+				// tworzenie indeksu lucene
+				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
+								
+				// stworzenie wyszukiwacza
+				IndexReader reader = DirectoryReader.open(luceneIndex);
+
+				IndexSearcher searcher = new IndexSearcher(reader);
+
+				// generowanie slow
+				List<PolishJapaneseEntry> newPolishJapaneseEntryList = new ArrayList<PolishJapaneseEntry>();
+				
+				int result = 0;
+				
+				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
+				
+				AtomicInteger counter = new AtomicInteger();
+				
+				//
+
+				System.out.println("Szukanie...");
+				
+				boolean reachedLimit = false;
+				
+				BEFORE_LOOP:
+				for (String currentMissingWord : missingWords) {
+					
+					if (currentMissingWord.equals("") == true) {
+						continue;
+					}
+					
+					result++;
+										
+					//
+					
+					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
+
+					ScoreDoc[] scoreDocs = searcher.search(query, null, 10).scoreDocs;
+					
+					if (scoreDocs.length > 0) {
+												
+						for (ScoreDoc scoreDoc : scoreDocs) {
+							
+							Document foundDocument = searcher.doc(scoreDoc.doc);
+
+							// znaleziony obiekt od lucene
+							GroupEntry groupEntryFromLucene = Helper.createGroupEntry(foundDocument);
+							
+							Integer groupId = groupEntryFromLucene.getGroup().getId();
+							
+							// czy ta grupa byla juz sprawdzana
+							if (alreadyCheckedGroupId.contains(groupId) == true) {
+								continue;
+								
+							} else {
+								alreadyCheckedGroupId.add(groupId);
+								
+							}
+							
+							// szukamy pelnej grupy
+							Group groupInDictionary = jmeNewDictionary.getGroupById(groupId);
+							
+							List<GroupEntry> groupEntryList = groupInDictionary.getGroupEntryList();
+																
+							// grupujemy po tych samych tlumaczenia
+							List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
+										
+							for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
+								
+								GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
+								
+								int counterValue = counter.incrementAndGet();
+								
+								CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counterValue, currentMissingWord);
+																
+								PolishJapaneseEntry polishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;					
+																
+								if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
+									
+									if (reachedLimit == true) {
+										result--;
+										
+										break BEFORE_LOOP;
+									}
+									
+									newPolishJapaneseEntryList.add(polishJapaneseEntry);																		
+								}								
+							}								
+						}
+					}
+					
+					if (newPolishJapaneseEntryList.size() >= expectedNewWordSize) {
+						reachedLimit = true;
+					}
+				}
+
+				reader.close();
+				
+				System.out.println("Liczba słów: " + result);	
+				
+				break;
+			}						
+						
 			case GENERATE_MISSING_WORD_LIST_IN_COMMON_WORDS: {
 				
 				if (args.length != 2) {
