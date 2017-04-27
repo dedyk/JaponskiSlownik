@@ -10743,9 +10743,12 @@ torpeda przerobiona jako samobójcza broń (używane w czasie II wojny światowe
 105130,WORD_ADVERB,,HIRAGANA,,,-,いと,,ito,"ogromnie
 znacznie
 naprawdę
-rzeczywiście",,,
+rzeczywiście",,,"DUPLICATE 2498
+DUPLICATE 3160
+DUPLICATE 79684
+DUPLICATE 91232"
 105131,WORD_NOUN,,HIRAGANA,,,叙賜,じょし,,joshi,"podział stopni, nagród i emerytur",,,
-105132,WORD_NOUN,,KATAKANA,,,ＬＡＭＰ,ランプ,,ranpu,"Linux, Apache, MySQL, PHP",informatyka,,
+105132,WORD_NOUN,,KATAKANA,,,ＬＡＭＰ,ランプ,,ranpu,"Linux, Apache, MySQL, PHP",informatyka,,DUPLICATE 3130
 105133,WORD_NOUN,,HIRAGANA,,,令望,れいぼう,,reibou,dobra reputacja,,,
 105134,WORD_NOUN,,HIRAGANA,,,填詞,てんし,,tenshi,ci,forma chińskiej poezji,,
 105135,WORD_NOUN,,HIRAGANA,,,閑職,かんしょく,,kanshoku,"spokojne stanowisko
@@ -10767,13 +10770,13 @@ antrakt
 włożony rozdział
 specjalny rodział",,,
 105143,WORD_NOUN,,HIRAGANA,,,内生,ないせい,,naisei,endogenność,mający swoje źródło wewnątrz,,
-105144,WORD_NOUN,,HIRAGANA,,,沙門,しゃもん,,shamon,shramana,wędrujący mnich,,
+105144,WORD_NOUN,,HIRAGANA,,,沙門,しゃもん,,shamon,shramana,wędrujący mnich,,DUPLICATE 105184
 105145,WORD_NOUN,,HIRAGANA,,,会飲,かいいん,,kaiin,picie i hulanie razem,,,
 105146,WORD_NOUN,,HIRAGANA,,,改印,かいいん,,kaiin,zmienianie pieczęci,,,
 105147,WORD_NOUN,,HIRAGANA,,,煙硝,えんしょう,,enshou,proch strzelniczy,,,
 105148,WORD_NOUN,,HIRAGANA,,,白道,はくどう,,hakudou,ścieżka księżyca,,,
 105149,WORD_NOUN,,HIRAGANA,,,古址,こし,,koshi,historyczne ruiny,,,
-105150,WORD_NOUN,,HIRAGANA,,,二親,ふたおや,,futaoya,oboje rodziców,,,
+105150,WORD_NOUN,,HIRAGANA,,,二親,ふたおや,,futaoya,oboje rodziców,,,DUPLICATE 105188
 105151,WORD_NOUN,,HIRAGANA,,,名妓,めいぎ,,meigi,"słynna gejsza
 utalentowana gejsza
 piękna gejsza",,,
@@ -10832,3 +10835,60 @@ pozorowanie dla efektu",,,
 105175,WORD_NOUN,,HIRAGANA,,,鍵っ子,かぎっこ,,kagikko,"dziecko ""z kluczem na szyi""",pozostawione po szkole bez opieki,,
 105176,WORD_NOUN,,KATAKANA,,,-,ピロシキ,,piroshiki,piroshki,rosyjskie pierogi,,
 105177,WORD_VERB_U,,HIRAGANA,,,執り行う,とりおこなう,,toriokonau,przeprowadzać ceremonię,,,
+105178,WORD_NOUN,,HIRAGANA_KATAKANA,,,日ロ,にちロ,,nichiro,"Japonia i Rosja
+rosyjsko-japoński",,,
+105179,WORD_VERB_RU,,HIRAGANA,,,借集める,かりあつめる,,kariatsumeru,pożyczać pieniądze,,,
+105180,WORD_NOUN,,KATAKANA,,,-,リーキバケット,,riiki baketto,leaky bucket,"cieknące wiadro, ang: leaky bucket, algorytm odpowiedzialny za kształtowanie przepływu ruchu",,
+105181,WORD_NOUN,,KATAKANA,,,-,リーキー・バケット,,riikii baketto,leaky bucket,"cieknące wiadro, ang: leaky bucket, algorytm odpowiedzialny za kształtowanie przepływu ruchu",,
+105182,WORD_NOUN,,KATAKANA,,,-,リーキ・バケット,,riiki baketto,leaky bucket,"cieknące wiadro, ang: leaky bucket, algorytm odpowiedzialny za kształtowanie przepływu ruchu",,
+105183,WORD_NOUN,,HIRAGANA,,,廻天,かいてん,,kaiten,"zmienianie świata
+odwracanie fali
+torpeda przerobiona jako samobójcza broń (używane w czasie II wojny światowej)",,,
+105184,WORD_NOUN,,HIRAGANA,,,沙門,さもん,,samon,shramana,wędrujący mnich,,DUPLICATE 105144
+105185,WORD_NOUN,,HIRAGANA,,,焔硝,えんしょう,,enshou,proch strzelniczy,,,
+105186,WORD_NOUN,,HIRAGANA,,,古趾,こし,,koshi,historyczne ruiny,,,
+105187,WORD_NOUN,,HIRAGANA,,,故址,こし,,koshi,historyczne ruiny,,,
+105188,WORD_NOUN,,HIRAGANA,,,二親,にしん,,nishin,oboje rodziców,,,DUPLICATE 105150
+105189,WORD_NOUN,,HIRAGANA,,,ふた親,ふたおや,,futaoya,oboje rodziców,,,
+105190,WORD_VERB_U,,HIRAGANA,,,捩込む,ねじこむ,,nejikomu,"wkręcać
+wepchnąć
+wpychać
+wsadzić
+protestować (i ubiegać się sprostowania)
+skarżyć się
+składać skargę",,,
+105191,WORD_VERB_U,,HIRAGANA,,,ねじ込む,ねじこむ,,nejikomu,"wkręcać
+wepchnąć
+wpychać
+wsadzić
+protestować (i ubiegać się sprostowania)
+skarżyć się
+składać skargę",,,
+105192,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,尻を叩く,しりをたたく,,shiri o tataku,"zachęcać do zrobienia (czegoś, idiom)
+przekonywać osobę na (idiom)
+żądać działania (idiom)
+dawać klapka
+uderzać kogoś w tyłek",,,
+105193,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,腰がひくい,こしがひくい,,koshi ga hikui,"skromny
+pokorny
+korny",,,
+105194,WORD_NOUN,,KATAKANA,,,-,カゲアナ,,kageana,"ogłoszenie za kulis (teatr, telewizja)",,,
+105195,WORD_NOUN,,HIRAGANA,,,思いいれ,おもいいれ,,omoiire,"przywiązanie emocjonalne
+postawa (wyrażanie emocji)
+zamyślona poza (np. aktora)
+pozorowanie dla efektu",,,
+105196,WORD_NOUN,,HIRAGANA,,,想い入れ,おもいいれ,,omoiire,"przywiązanie emocjonalne
+postawa (wyrażanie emocji)
+zamyślona poza (np. aktora)
+pozorowanie dla efektu",,,
+105197,WORD_NOUN,,HIRAGANA,,,思入れ,おもいいれ,,omoiire,"przywiązanie emocjonalne
+postawa (wyrażanie emocji)
+zamyślona poza (np. aktora)
+pozorowanie dla efektu",,,
+105198,WORD_NOUN,,HIRAGANA,,,想入れ,おもいいれ,,omoiire,"przywiązanie emocjonalne
+postawa (wyrażanie emocji)
+zamyślona poza (np. aktora)
+pozorowanie dla efektu",,,
+105199,WORD_NOUN,,KATAKANA,,,-,ビロシキ,,biroshiki,piroshki,rosyjskie pierogi,,
