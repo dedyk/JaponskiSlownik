@@ -10941,7 +10941,7 @@ imponujący",,,
 zmienianie kierunku",,,
 105220,WORD_NOUN,,HIRAGANA,,,把持,はじ,,haji,"chwyt
 uścisk",,,
-105221,WORD_NOUN,,HIRAGANA,,,偽印,ぎいん,,giin,sfałszowana pieczęć,,,
+105221,WORD_NOUN,,HIRAGANA,,,偽印,ぎいん,,giin,sfałszowana pieczęć,,,DUPLICATE 105287
 105222,WORD_NOUN,,HIRAGANA,,,継起,けいき,,keiki,występowanie kolejno,,,
 105223,WORD_NOUN,,HIRAGANA,,,霊亀,れいき,,reiki,"tajemniczy żółw (omen szczęścia, mało znane słowo)
 epoka Reiki (715.9.2-717.11.17)",,,
@@ -10964,7 +10964,8 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,耐食,たいしょく,,taishoku,odporny na koroz
 życzliwość
 życzliwy namysł",,,
 105234,WORD_NOUN,,HIRAGANA,,,都下,とか,,toka,"w stolicy
-w Tokio",,,
+w Tokio",,,"DUPLICATE 6846
+DUPLICATE 12482"
 105235,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,夜盗,やとう,,yatou,nocny włamywacz,,,
 105236,WORD_NOUN,,HIRAGANA,,,渡伊,とい,,toi,"jechać do Włoch
@@ -10981,11 +10982,12 @@ dawać i otrzymywać miłość",,,
 105243,WORD_NOUN,,HIRAGANA,,,黄口児,こうこうじ,,koukouji,niedojrzałość,,,
 105244,WORD_NOUN,,HIRAGANA,,,共販会社,きょうはんがいしゃ,,kyouhan gaisha,spółdzielnia sprzedaży (firma),,,
 105245,WORD_NOUN,,HIRAGANA,,,夜盗虫,やとうむし,,yatoumushi,"gąsienica
-larwa mola bawełnianego",,,
+larwa mola bawełnianego",,,DUPLICATE 105292
 105246,WORD_NOUN,,HIRAGANA,,,甲乙丙丁,こうおつへいてい,,kouotsuheitei,"A, B, C i D
 pierwszy, drugi, trzeci i czwarty",,,
 105247,WORD_NOUN,,HIRAGANA,,,筋板,きんばん,,kinban,miotom,"część somitów, stanowiąca zaczątek mięśni szkieletowych",,
-105248,WORD_NOUN,,HIRAGANA,,,乙卯,きのとう,,kinotou,52-gi cykl seksagonalny,,,
+105248,WORD_NOUN,,HIRAGANA,,,乙卯,きのとう,,kinotou,52-gi cykl seksagonalny,,,"DUPLICATE 105293
+DUPLICATE 105294"
 105249,WORD_NOUN,,KATAKANA,,,-,サブアド,,sabu ado,"drugorzędny adres email
 pod adres","skrót, ang: sub-address",,
 105250,WORD_VERB_U,,HIRAGANA,,,書き飛ばす,かきとばす,,kakitobasu,szybko coś napisać,,,
@@ -11057,6 +11059,89 @@ pod adres",ang: sub-address,,
 105278,WORD_NOUN,,HIRAGANA,,,接敵移動,せってきいどう,,setteki idou,???,,,
 105279,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,茶々を入れる,ちゃちゃをいれる,,cha cha o ireru,"droczyć
+drażnić
+kokietować
+nabijać się",,,
+105280,WORD_INTERJECTION,,KATAKANA,,,-,ウフフ,,ufufu,"chichot
+stłumiony śmiech
+podśmiewanie się",,,
+105281,WORD_NOUN,,KATAKANA,,,-,デス・メタル,,desu metaru,death metal,"gatunek muzyki heavymetalowej, ang: death metal",,
+105282,WORD_NOUN,,KATAKANA,,,-,デス・ヴォイス,,desu voisu,growl,"technika wokalna znana z bardziej ekstremalnych odmian muzyki metalowej, ang: death vocals",,
+105283,WORD_NOUN,,HIRAGANA,,,当りめ,あたりめ,,atarime,"suszona kałamarnica
+suszona mątwa",,,
+105284,WORD_NOUN,,KATAKANA,,,-,アタリメ,,atarime,"suszona kałamarnica
+suszona mątwa",,,
+105285,WORD_NOUN,,HIRAGANA,,,楊子,ようじ,,youji,"wykałaczka
+szpikulec do jedzenia wilgotnego wagashi (np. stalowy, bambusowy i etc)",,,
+105286,WORD_NOUN,,HIRAGANA,,,揚枝,ようじ,,youji,"wykałaczka
+szpikulec do jedzenia wilgotnego wagashi (np. stalowy, bambusowy i etc)",,,
+105287,WORD_NOUN,,HIRAGANA,,,偽印,にせいん,,nisein,sfałszowana pieczęć,,,DUPLICATE 105221
+105288,WORD_NOUN,,HIRAGANA,,,贋印,にせいん,,nisein,sfałszowana pieczęć,,,
+105289,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,耐蝕,たいしょく,,taishoku,odporny na korozję,,,
+105290,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,股にかける,またにかける,,mata ni kakeru,podróżować po całym świecie,,,
+105291,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,またに掛ける,またにかける,,mata ni kakeru,podróżować po całym świecie,,,
+105292,WORD_NOUN,,HIRAGANA,,,夜盗虫,よとうむし,,yotoumushi,"gąsienica
+larwa mola bawełnianego",,,DUPLICATE 105245
+105293,WORD_NOUN,,HIRAGANA,,,乙卯,いつぼう,,itsubou,52-gi cykl seksagonalny,,,"DUPLICATE 105248
+DUPLICATE 105294"
+105294,WORD_NOUN,,HIRAGANA,,,乙卯,おつぼう,,otsubou,52-gi cykl seksagonalny,,,"DUPLICATE 105248
+DUPLICATE 105293"
+105295,WORD_NOUN,,HIRAGANA,,,は虫類,はちゅうるい,,hachuurui,gad,,,
+105296,WORD_NOUN,,HIRAGANA,,,さる年,さるどし,,sarudoshi,rok małpy,,,
+105297,WORD_NOUN,,KATAKANA,,,-,イベント・ログ,,ibento rogu,dziennik zdarzeń,"informatyka, ang: event log",,
+105298,WORD_NOUN,,HIRAGANA,,,捻くれ者,ひねくれもの,,hinekuremono,"przekorna osoba
+krnąbrna osoba
+zrzęda
+maruda
+pies ogrodnika",,,
+105299,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,欠けがえのない,かけがえのない,,kake gae no nai,niezastąpiony,,,
+105300,WORD_NOUN,,HIRAGANA,,,茶茶,ちゃちゃ,,cha cha,"zamęt
+nieporządek
+zakłócenie",,,
+105301,WORD_NOUN,,HIRAGANA,,,とび工,とびこう,,tobikou,"pracownik budowlany pracujący na rusztowaniu
+monter
+instalator
+sztukmistrz
+takielarz",,,
+105302,WORD_NOUN,,KATAKANA_HIRAGANA,,,-,イタチごっこ,,itachi gokko,robienie tej samej rzeczy wielokrotnie,,,
+105303,WORD_NOUN,,KATAKANA,,,-,イタチゴッコ,,itachi gokko,robienie tej samej rzeczy wielokrotnie,,,
+105304,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,鼻に付く,はなにつく,,hana ni tsuku,"być obrzydliwy
+być zniesmaczony
+dotknąć nos językiem
+cuchnąć
+śmierdzieć",,,
+105305,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,痩せ型,やせがた,,yasegata,"szczupła budowa
+szczupła figura
+leptosom
+wychudzony
+leptosomiczny
+leptosomatyczny
+ektomorficzny",,,
+105306,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,やせ形,やせがた,,yasegata,"szczupła budowa
+szczupła figura
+leptosom
+wychudzony
+leptosomiczny
+leptosomatyczny
+ektomorficzny",,,
+105307,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,痩せ形,やせがた,,yasegata,"szczupła budowa
+szczupła figura
+leptosom
+wychudzony
+leptosomiczny
+leptosomatyczny
+ektomorficzny",,,
+105308,WORD_NOUN,,KATAKANA,,,-,イベント・ログ・エントリー,,ibento rogu entorii,wpis w dzienniku zdarzeń,ang: event log entry,,
+105309,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,茶茶を入れる,ちゃちゃをいれる,,cha cha o ireru,"droczyć
 drażnić
 kokietować
 nabijać się",,,
