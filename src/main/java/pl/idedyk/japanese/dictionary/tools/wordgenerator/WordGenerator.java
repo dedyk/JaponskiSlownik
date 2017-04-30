@@ -1485,9 +1485,10 @@ public class WordGenerator {
 								Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, currentCommonWord.getKanji(), currentCommonWord.getKana());
 						
 						// ta pozycja jej juz dodana
-						if (findPolishJapaneseEntry != null && findPolishJapaneseEntry.size() > 0) {
+						if (findPolishJapaneseEntry != null && findPolishJapaneseEntry.size() > 0) {							
+							newCommonWordMap.put(currentCommonWord.getId(), currentCommonWord);
 							
-							newCommonWordMap.put(currentCommonWord.getId(), currentCommonWord);				
+							System.out.println(currentCommonWord.getId());
 						}
 					}
 				}
