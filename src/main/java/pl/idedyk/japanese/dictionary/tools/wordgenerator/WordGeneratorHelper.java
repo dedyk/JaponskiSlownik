@@ -130,7 +130,7 @@ public class WordGeneratorHelper {
 			kanji = "-";
 		}
 		
-		return kanji + "." + commonWord.getKana() + "." + commonWord.getTranslate();		
+		return kanji + "." + commonWord.getKana(); // + "." + commonWord.getTranslate();
 	}
 	
 	public boolean isCommonWordExists(CommonWord commonWord) throws Exception {
