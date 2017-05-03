@@ -10,13 +10,10 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 
 public class LatexDictionaryGenerator {
@@ -52,15 +49,30 @@ public class LatexDictionaryGenerator {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
-			String kana = polishJapaneseEntry.getKana();
+			//String kana = polishJapaneseEntry.getKana();
+			String romaji = polishJapaneseEntry.getRomaji();
 			
-			String sectionName = kana.substring(0, 1);
+			//String sectionName = kana.substring(0, 1);
+			String sectionName = null;
 			
+			if (romaji.length() != 0) {
+				sectionName = romaji.substring(0, 1).toUpperCase();
+				
+			} else {
+				sectionName = otherSectionName;
+			}
+
+			/*
 			if (Utils.isKana(sectionName.charAt(0)) == false || sectionName.equals("ゝ") == true || sectionName.equals("ゞ") == true
 					|| sectionName.equals("ヶ") == true || sectionName.equals("ー") == true || sectionName.equals("ヽ") == true ||
 					sectionName.equals("ヾ") == true) {
 				sectionName = otherSectionName;
 			}
+			*/
+			
+			if (sectionName.matches("^[A-Z]+$") == false) {
+				sectionName = otherSectionName;
+			}			
 			
 			List<PolishJapaneseEntry> section = sectionMap.get(sectionName);
 			
@@ -103,16 +115,20 @@ public class LatexDictionaryGenerator {
 	
 	private static void generateSection(List<String> result, String key, List<PolishJapaneseEntry> keyList) {
 		
-		KanaHelper kanaHelper = new KanaHelper();
+		//KanaHelper kanaHelper = new KanaHelper();
 		
 		String sectionName = null;
 		
+		/*
 		if (key != otherSectionName) {
 			sectionName = key + " (" + convertToRomaji(key, kanaHelper) + ")";
 			
 		} else {
 			sectionName = otherSectionName;
 		}
+		*/
+		
+		sectionName = key;
 		
 		result.add("%----------------------------------------------------------------------------------------\n");
 		result.add(String.format("%s\tSekcja: %s\n", "%", sectionName));
@@ -127,7 +143,7 @@ public class LatexDictionaryGenerator {
 
 			@Override
 			public int compare(PolishJapaneseEntry o1, PolishJapaneseEntry o2) {
-				return o1.getKana().compareTo(o2.getKana());
+				return o1.getRomaji().compareToIgnoreCase(o2.getRomaji());
 			}
 		});
 		
@@ -170,12 +186,12 @@ public class LatexDictionaryGenerator {
 			
 		} else {
 			// na gorze slowa kana
-			result.append(markBoth(kana)).append(" ");
+			result.append(markBoth(romaji + " (" + kana + ")")).append(" ");
 		}
 		
 		// pogrubienie kana
-		result.append(cjkFakeBold(kana)).append(" ");
-		result.append(markBoth(kana)).append(" ");
+		result.append(cjkFakeBold(romaji + " (" + kana + ")")).append(" ");
+		result.append(markBoth(romaji + " (" + kana + ")")).append(" ");
 		
 		// pogrubienie romaji
 		result.append(textbf(romaji)).append(" ");
@@ -296,10 +312,12 @@ public class LatexDictionaryGenerator {
 		return "$\\bullet$";
 	}
 
+	/*
 	private static String convertToRomaji(String kana, KanaHelper kanaHelper) {
 		
 		KanaWord kanaWord = kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(true), false);
 		
 		return kanaHelper.createRomajiString(kanaWord);
 	}
+	*/
 }
