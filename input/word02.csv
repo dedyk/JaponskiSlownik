@@ -12355,7 +12355,8 @@ szczyt drabiny społecznej",,,
 105890,WORD_NOUN,,HIRAGANA,,,出京,しゅっきょう,,shukkyou,podążanie do stolicy,,,
 105891,WORD_NOUN,,HIRAGANA,,,出郷,しゅっきょう,,shukkyou,"opuszczanie swojego rodzinnego miasta
 kapłan wyruszający po nauki",,,
-105892,WORD_NOUN,,HIRAGANA,,,出挙,すいこ,,suiko,pożyczka z odsetkami od rolników,archaizm,,
+105892,WORD_NOUN,,HIRAGANA,,,出挙,すいこ,,suiko,pożyczka z odsetkami od rolników,archaizm,,"DUPLICATE 105918
+DUPLICATE 105919"
 105893,WORD_NOUN,,KATAKANA,,,-,メープル,,meepuru,"klon
 syrop klonowy (skrót)",ang: maple,,
 105894,WORD_NOUN,,HIRAGANA_KATAKANA,,,営業マン,えいぎょうマン,,eigyou man,"sprzedawca
@@ -12397,7 +12398,7 @@ bycie przygnębiony
 stracenie na wadze",,,
 105908,WORD_NOUN,,KATAKANA,,,-,サイコ,,saiko,"psychol
 wariat",ang: psycho,,
-105909,WORD_NOUN,,KATAKANA,,,-,サイコオンコロジー,,saiko onkorojii,psychoonkologia,ang: psycho-oncology,,
+105909,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,サイコオンコロジー,,saiko onkorojii,psychoonkologia,ang: psycho-oncology,,
 105910,WORD_NOUN,,KATAKANA,,,-,ストマック,,sutomakku,"brzuch
 żołądek",ang: stomach,,
 105911,WORD_NOUN,,HIRAGANA,,,胃の腑,いのふ,,i no fu,"brzuch
@@ -12405,3 +12406,24 @@ wariat",ang: psycho,,
 105912,WORD_NOUN,,HIRAGANA,,,胃がん,いがん,,i gan,rak żołądka,,,
 105913,WORD_NOUN,,HIRAGANA,,,利他主義,りたしゅぎ,,ritashugi,altruizm,,,
 105914,WORD_NOUN,,HIRAGANA,,,利他主義者,りたしゅぎしゃ,,ritashugisha,altruista,,,
+105915,"WORD_PRONOUN
+WORD_NOUN",,HIRAGANA,,,者共,ものども,,monodomo,"ty (poniżająco)
+ludzie",,,
+105916,WORD_NOUN,,KATAKANA,,,-,パスワード・エントリ,,pasuwaado entori,wpis z hasłem,ang: password entry,,
+105917,WORD_NOUN,,KATAKANA,,,-,パスワード・ファイル,,pasuwaado fairu,plik z hasłem,ang: password file,,
+105918,WORD_NOUN,,HIRAGANA,,,出挙,すいきょ,,suikyo,pożyczka z odsetkami od rolników,archaizm,,"DUPLICATE 105892
+DUPLICATE 105919"
+105919,WORD_NOUN,,HIRAGANA,,,出挙,しゅっきょ,,shukkyo,pożyczka z odsetkami od rolników,archaizm,,"DUPLICATE 105892
+DUPLICATE 105918"
+105920,WORD_NOUN,,KATAKANA,,,-,メイプル,,meipuru,"klon
+syrop klonowy (skrót)",ang: maple,,
+105921,WORD_NOUN,,KATAKANA,,,-,メープル・シュガー,,meepuru shugaa,cukier klonowy,ang: maple sugar,,
+105922,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,赤裸裸,せきらら,,sekirara,"nagość
+otwartość
+szczerość",,,
+105923,"WORD_ADJECTIVE_NA
+WORD_ADVERB",,HIRAGANA,,,-,もふもふ,,mofumofu,"miękki w dotyku (np. futro, pióro)
+puszysty",,,
+105924,WORD_NOUN,,HIRAGANA,,,胃癌,いがん,,i gan,rak żołądka,,,
+105925,WORD_NOUN,,HIRAGANA_KATAKANA,,,胃ガン,いガン,,i gan,rak żołądka,,,
