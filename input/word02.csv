@@ -8469,7 +8469,9 @@ DUPLICATE 21365
 DUPLICATE 30671
 DUPLICATE 40475
 DUPLICATE 48553
-DUPLICATE 105411"
+DUPLICATE 105411
+DUPLICATE 105785
+DUPLICATE 105863"
 104028,WORD_NOUN,,HIRAGANA,,,飛揚,ひよう,,hiyou,"lot
 latanie",,,
 104029,WORD_VERB_U,,HIRAGANA,,,芽ぐむ,めぐむ,,megumu,"pączkować
@@ -12121,7 +12123,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,耐風,たいふう,,taifuu,"przeciwwiatrowy
 odporny na wiatr",,,
 105785,WORD_NOUN,,HIRAGANA,,,砂州,さす,,sasu,"rafa
 mielizna
-ławica piaszczysta",,,
+ławica piaszczysta",,,DUPLICATE 104027
 105786,WORD_NOUN,,HIRAGANA,,,五葉,ごよう,,goyou,"japońska sosna biała
 goyoumatsu",skrót,,
 105787,"WORD_NOUN
@@ -12129,7 +12131,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,内用,ないよう,,naiyou,"użytek wewnętrzny
 biznes prywatny",,,
 105788,WORD_NOUN,,HIRAGANA,,,恩幸,おんこう,,onkou,cesarska osobista łaska,archaizm,,
 105789,WORD_NOUN,,HIRAGANA,,,正典,せいてん,,seiten,kanon,,,
-105790,WORD_NOUN,,HIRAGANA,,,後晋,こうしん,,koushin,późna dynastia Jin,w Chinach,,
+105790,WORD_NOUN,,HIRAGANA,,,後晋,こうしん,,koushin,późna dynastia Jin,w Chinach,,DUPLICATE 105865
 105791,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,橈骨,とうこつ,,toukotsu,kość promieniowa,,,
 105792,WORD_NOUN,,HIRAGANA,,,気功,きこう,,kikou,"ćwiczenia w oddychaniu
@@ -12227,9 +12229,11 @@ coś staje się problemem lub zagadnieniem",,,
 tablica do pisania kredą",ang: blackboard,,
 105836,WORD_NOUN,,HIRAGANA,,,塗板,ぬりいた,,nuriita,"czarna tablica
 tablica do pisania kredą
-tablica używana do lakierowania",,,
+tablica używana do lakierowania",,,"DUPLICATE 105837
+DUPLICATE 105868"
 105837,WORD_NOUN,,HIRAGANA,,,塗板,とばん,,toban,"czarna tablica
-tablica do pisania kredą",,,
+tablica do pisania kredą",,,"DUPLICATE 105836
+DUPLICATE 105868"
 105838,WORD_NOUN,,HIRAGANA,,,黒板拭き,こくばんふき,,kokubanfuki,"gąbka do ścierania tablicy (czarnej)
 ścierka do ścierania tablicy (czarnej)",,,
 105839,WORD_NOUN,,HIRAGANA,,,白墨,はくぼく,,hakuboku,kreda to pisania na czarnej tablicy,,,
@@ -12257,9 +12261,9 @@ bez trudu
 bez sprzeciwu
 z łatwością",,,
 105848,WORD_NOUN,,HIRAGANA,,,貞応,じょうおう,,jouou,epoka Jouou,1222.4.13-1224.11.20,,
-105849,WORD_NOUN,,HIRAGANA,,,承応,じょうおう,,jouou,epoka Jouou,1652.9.18-1655.4.13,,
+105849,WORD_NOUN,,HIRAGANA,,,承応,じょうおう,,jouou,epoka Jouou,1652.9.18-1655.4.13,,DUPLICATE 105850
 105850,WORD_NOUN,,HIRAGANA,,,承応,しょうおう,,shouou,"epoka Shouou
-epoka Jouou","1652.9.18-1655.4.13, mało znane słowo",,
+epoka Jouou","1652.9.18-1655.4.13, mało znane słowo",,DUPLICATE 105849
 105851,WORD_NOUN,,HIRAGANA,,,袋棚,ふくろだな,,fukurodana,"ceremonia herbaty z zamkniętą półką (wymyślone przez Takeno Jouou)
 mała szafka lub zamknięta półka po stronie tokonoma",,,
 105852,"WORD_NOUN
@@ -12285,3 +12289,27 @@ irytujący
 nieznośny
 denerwujący
 niecierpliwy",,,
+105863,WORD_NOUN,,HIRAGANA,,,砂洲,さす,,sasu,"rafa
+mielizna
+ławica piaszczysta",,,DUPLICATE 104027
+105864,WORD_NOUN,,HIRAGANA,,,恩倖,おんこう,,onkou,cesarska osobista łaska,archaizm,,
+105865,WORD_NOUN,,HIRAGANA,,,後晋,ごしん,,goshin,późna dynastia Jin,w Chinach,,DUPLICATE 105790
+105866,WORD_NOUN,,HIRAGANA,,,仔鳩,こばと,,kobato,"pękaty
+młody gołąb
+gołębie mięso",,,
+105867,WORD_NOUN,,HIRAGANA,,,塗り板,ぬりいた,,nuriita,"czarna tablica
+tablica do pisania kredą
+tablica używana do lakierowania",,,DUPLICATE 105869
+105868,WORD_NOUN,,HIRAGANA,,,塗板,ぬりばん,,nuriban,"czarna tablica
+tablica do pisania kredą",,,"DUPLICATE 105836
+DUPLICATE 105837"
+105869,WORD_NOUN,,HIRAGANA,,,塗り板,ぬりばん,,nuriban,"czarna tablica
+tablica do pisania kredą",,,DUPLICATE 105867
+105870,WORD_NOUN,,HIRAGANA_KATAKANA,,,家庭ゴミ,かていゴミ,,katei gomi,śmieci z gospodarstwa domowego,,,
+105871,WORD_NOUN,,HIRAGANA,,,家庭塵,かていごみ,,katei gomi,śmieci z gospodarstwa domowego,,,
+105872,WORD_NOUN,,KATAKANA_HIRAGANA,,,ボーリング場,ボーリングじょう,,booringu jou,"kręgielnia
+tor kręglarski",,,
+105873,WORD_NOUN,,KATAKANA,,,-,コズミック・ボーリング,,kozumikku booringu,"kosmiczne kręgle
+kręgielnia, która wygląda jak dyskoteka z dużą ilością świecących światełek",,,
+105874,WORD_NOUN,,HIRAGANA,,,楷樹,かいのき,,kai no ki,pistacja chińska,"roślina, pistacia chinensis",,
+105875,WORD_NOUN,,KATAKANA,,,-,カイノキ,,kai no ki,pistacja chińska,"roślina, pistacia chinensis",,
