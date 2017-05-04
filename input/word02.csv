@@ -121,7 +121,10 @@ szpic
 wierzchołek",,,
 100063,WORD_NOUN,,HIRAGANA,,,令旨,れいし,,reishi,"książęca wiadomość
 polecenie księcia",,,DUPLICATE 100019
-100064,WORD_NOUN,,KATAKANA,,,-,シャコ,,shako,przydacznia olbrzymia,największy małż świata,,DUPLICATE 8674
+100064,WORD_NOUN,,KATAKANA,,,-,シャコ,,shako,przydacznia olbrzymia,największy małż świata,,"DUPLICATE 8674
+DUPLICATE 106031
+EDICT_DUPLICATE 105941
+EDICT_DUPLICATE 106030"
 100065,WORD_NOUN,,HIRAGANA,,,柃,ひさぎ,,hisagi,eurya japonica,roślina,,"DUPLICATE 100033
 DUPLICATE 100066"
 100066,WORD_NOUN,,HIRAGANA,,,柃,いちさかき,,ichisakaki,eurya japonica,roślina,,"DUPLICATE 100033
@@ -11907,7 +11910,7 @@ WORD_NOUN",,HIRAGANA,,,細かい金,こまかいかね,,komakai kane,drobne pien
 105684,WORD_NOUN,,HIRAGANA,,,笑い川蝉,わらいかわせみ,,warai kawasemi,"kukabura chichotliwa
 kukabura","gatunek średniego ptaka z rodziny zimorodkowatych, dacelo novaeguineae",,
 105685,WORD_NOUN,,HIRAGANA,,,欄間,らんま,,ranma,???,japońska architektura,,
-105686,WORD_NOUN,,HIRAGANA,,,可燃ごみ,かねんごみ,,kanengomi,odpady palne,,,
+105686,WORD_NOUN,,HIRAGANA,,,可燃ごみ,かねんごみ,,kanen gomi,odpady palne,,,
 105687,WORD_NOUN,,HIRAGANA,,,正兵,せいへい,,seihei,regularni żołnierze,,,
 105688,WORD_NOUN,,HIRAGANA,,,精兵,せいびょう,,seibyou,"doborowi żołnierze
 elitarni żołnierze
@@ -11983,7 +11986,7 @@ podglądactwo",,,
 105713,WORD_NOUN,,KATAKANA,,,-,ゲストハウス,,gesutohausu,"domek gościnny
 pensjonat",ang: guesthouse,,
 105714,WORD_NOUN,,HIRAGANA,,,燐酸,りんさん,,rinsan,kwas fosforowy,H3PO4,,
-105715,WORD_NOUN,,HIRAGANA,,,冽冽,れつれつ,,retsuretsu,"niezwykłe zimno
+105715,WORD_NOUN,,HIRAGANA,,,冽冽,れつれつ,,retsu retsu,"niezwykłe zimno
 nadzwyczaj zimno",,,
 105716,WORD_NOUN,,HIRAGANA,,,笑い翡翠,わらいかわせみ,,warai kawasemi,"kukabura chichotliwa
 kukabura","gatunek średniego ptaka z rodziny zimorodkowatych, dacelo novaeguineae",,
@@ -12423,7 +12426,7 @@ WORD_NOUN",,HIRAGANA,,,赤裸裸,せきらら,,sekirara,"nagość
 otwartość
 szczerość",,,
 105923,"WORD_ADJECTIVE_NA
-WORD_ADVERB",,HIRAGANA,,,-,もふもふ,,mofumofu,"miękki w dotyku (np. futro, pióro)
+WORD_ADVERB",,HIRAGANA,,,-,もふもふ,,mofu mofu,"miękki w dotyku (np. futro, pióro)
 puszysty",,,
 105924,WORD_NOUN,,HIRAGANA,,,胃癌,いがん,,i gan,rak żołądka,,,
 105925,WORD_NOUN,,HIRAGANA_KATAKANA,,,胃ガン,いガン,,i gan,rak żołądka,,,
@@ -12437,7 +12440,7 @@ rozpoczęcie czytania sutry",,,
 dominujący element
 przeważający element
 główny punkt",,,
-105931,WORD_NOUN,,HIRAGANA,,,黄経,こうけい,,koukei,długość ekliptyczna,,,
+105931,WORD_NOUN,,HIRAGANA,,,黄経,こうけい,,koukei,długość ekliptyczna,,,DUPLICATE 106027
 105932,WORD_NOUN,,HIRAGANA,,,鐘声,しょうせい,,shousei,"odgłos dzwonu
 odgłos dzwonka",,,
 105933,WORD_NOUN,,HIRAGANA,,,情史,じょうし,,joushi,opowieść miłosna dynastii Ming,,,
@@ -12455,7 +12458,8 @@ równać
 robić gładko
 robić równo",,,
 105941,WORD_NOUN,,HIRAGANA,,,蝦蛄,しゃこ,,shako,"ustonogi
-ustonogie",rząd skorupiaków,,
+ustonogie",rząd skorupiaków,,"EDICT_DUPLICATE 8674
+EDICT_DUPLICATE 100064"
 105942,WORD_NOUN,,HIRAGANA,,,礦石,こうせき,,kouseki,"minerał
 ruda",,,
 105943,WORD_NOUN,,HIRAGANA,,,帰朝,きちょう,,kichou,"powrót z zagranicy
@@ -12509,7 +12513,7 @@ student międzynarodowy",,,
 105970,WORD_NOUN,,HIRAGANA,,,児童書,じどうしょ,,jidousho,"książka dla dzieci
 książeczka dla dzieci",,,
 105971,WORD_NOUN,,KATAKANA,,,-,ポロニウム,,poroniumu,polon,"pierwiastek, ang: polonium",,
-105972,WORD_NOUN,,KATAKANA,,,-,プライベートオファーリング,,puraibeeto ofaaringu,"prywatna oferta
+105972,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,プライベートオファーリング,,puraibeeto ofaaringu,"prywatna oferta
 prywatna propozycja",,,
 105973,WORD_EXPRESSION,,HIRAGANA,,,能面のような顔,のうめんのようなかお,,noumen no you na kao,"kamienna twarz
 biała twarz pozbawiona wyrazu
@@ -12576,7 +12580,7 @@ półrozpad",,,
 banicja
 wygnanie","kolokwializm, skrót",,
 106009,WORD_NOUN,,HIRAGANA,,,競輪場,けいりんじょう,,keirinjou,tor kolarski,szczególnie na keirin,,
-106010,WORD_NOUN,,HIRAGANA,,,上駒,かみごま,,kamigoma,część shamisen podtrzymująca drugą i trzecią strunę,,,
+106010,WORD_NOUN,,HIRAGANA,,,上駒,かみごま,,kamigoma,część shamisen podtrzymująca drugą i trzecią strunę,,,DUPLICATE 106050
 106011,WORD_NOUN,,KATAKANA,,,-,ワンダーランド,,wandaarando,"kraina czarów
 cudowna kraina",ang: wonderland,,
 106012,WORD_NOUN,,KATAKANA,,,-,ピップ,,pippu,"sygnał
@@ -12591,7 +12595,7 @@ nieznany",,,
 106015,WORD_NOUN,,HIRAGANA,,,二の腕,にのうで,,ni no ude,górne ramię,,,
 106016,"WORD_ADJECTIVE_NA
 WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,独り善がり,ひとりよがり,,hitoriyogari,"zadowolony z siebie
+WORD_ADJECTIVE_NO",,HIRAGANA,,,独り善がり,ひとりよがり,,hitori yogari,"zadowolony z siebie
 pełen samozadowolenia
 zarozumiały
 zadufany",,,
@@ -12602,7 +12606,7 @@ mobbing w miejscu pracy",,,
 mobbing w miejscu pracy",skrót,,
 106020,WORD_NOUN,,KATAKANA,,,-,メルマガ,,merumaga,"mail'owy magazyn
 e-zin",skrót,,
-106021,WORD_NOUN,,HIRAGANA,,,偏頭痛,へんずつう,,henzutsuu,migrena,,,
+106021,WORD_NOUN,,HIRAGANA,,,偏頭痛,へんずつう,,henzutsuu,migrena,,,DUPLICATE 106054
 106022,WORD_NOUN,,HIRAGANA,,,石打ち刑,いしうちけい,,ishiuchikei,"kamieniowanie
 ukamienowanie",rodzaj kary,,
 106023,"WORD_VERB_IRREGULAR
@@ -12618,3 +12622,85 @@ doprecyzować
 potwierdzać",,,
 106025,WORD_NOUN,,HIRAGANA,,,上腕二頭筋,じょうわんにとうきん,,jouwan nitoukin,dwugłowy muskuł ramienia,,,
 106026,WORD_NOUN,,HIRAGANA,,,大腿二頭筋,だいたいにとうきん,,daitai nitoukin,mięsień dwugłowy uda,,,
+106027,WORD_NOUN,,HIRAGANA,,,黄経,おうけい,,oukei,długość ekliptyczna,,,DUPLICATE 105931
+106028,WORD_NOUN,,HIRAGANA,,,世嗣,せいし,,seishi,"dziedzic
+następca
+sukcesor",,,DUPLICATE 83072
+106029,WORD_VERB_U,,HIRAGANA,,,平す,ならす,,narasu,"wygładzać
+równać
+robić gładko
+robić równo",,,
+106030,WORD_NOUN,,HIRAGANA,,,青竜蝦,しゃこ,,shako,"ustonogi
+ustonogie",rząd skorupiaków,,"EDICT_DUPLICATE 8674
+EDICT_DUPLICATE 100064"
+106031,WORD_NOUN,,KATAKANA,,,-,シャコ,,shako,"ustonogi
+ustonogie",rząd skorupiaków,,"DUPLICATE 8674
+DUPLICATE 100064"
+106032,WORD_NOUN,,HIRAGANA,,,旧趾,きゅうし,,kyuushi,"ruiny historyczne
+szczątki
+miejsce historyczne",,,
+106033,WORD_NOUN,,KATAKANA,,,-,ドミトリー,,domitorii,"akademik
+dom studencki
+pokój z wieloma łóżkami dla podróżników (np. nieoczekiwanych, niepowiązanych ze sobą, np. niedrogi pensjonat)",ang: dormitory,,
+106034,WORD_NOUN,,HIRAGANA,,,円天井,まるてんじょう,,marutenjou,"sklepienie łukowe
+sklepiony sufit",,,
+106035,WORD_NOUN,,KATAKANA,,,-,マヌカハニー,,manuka hanii,miód z manuka,ang: manuka honey,,
+106036,WORD_VERB_U,,HIRAGANA,,,言回す,いいまわす,,iimawasu,wyrazić w okrężny sposób,,,
+106037,WORD_NOUN,,HIRAGANA,,,御飯事,おままごと,,omamagoto,"dom gry
+dom zabaw",,,
+106038,WORD_NOUN,,HIRAGANA,,,おまま事,おままごと,,omamagoto,"dom gry
+dom zabaw",,,
+106039,WORD_NOUN,,HIRAGANA,,,範ちゅう,はんちゅう,,hanchuu,kategoria,,,
+106040,WORD_NOUN,,KATAKANA,,,-,クワバラクワバラ,,kuwabara kuwabara,odpukać w niemalowane drewno,,,
+106041,WORD_NOUN,,HIRAGANA,,,鼻すじ,はなすじ,,hanasuji,"nasada nosa
+grzbiet nosa",,,
+106042,WORD_NOUN,,HIRAGANA,,,鴉片窟,あへんくつ,,ahen kutsu,palarnia opium,,,
+106043,WORD_NOUN,,HIRAGANA,,,阿片中毒,あへんちゅうどく,,ahen chuudoku,narkomania opiatowa,,,
+106044,WORD_NOUN,,HIRAGANA,,,阿片戦争,あへんせんそう,,ahen sensou,wojna opiumowa,1840-42,,
+106045,WORD_NOUN,,HIRAGANA,,,鴉片戦争,あへんせんそう,,ahen sensou,wojna opiumowa,1840-42,,
+106046,WORD_NOUN,,HIRAGANA,,,阿片法,あへんほう,,ahen hou,prawo opium,1954,,
+106047,WORD_NOUN,,HIRAGANA,,,鴉片,あへん,,ahen,opium,,,
+106048,WORD_NOUN,,KATAKANA,,,-,アヘン,,ahen,opium,,,
+106049,WORD_NOUN,,HIRAGANA,,,ご廟,ごびょう,,gobyou,"mauzoleum
+świątynia
+(cesarski) dwór",honoryfikatywnie,,
+106050,WORD_NOUN,,HIRAGANA,,,上駒,かみこま,,kamikoma,część shamisen podtrzymująca drugą i trzecią strunę,,,DUPLICATE 106010
+106051,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,一人善がり,ひとりよがり,,hitori yogari,"zadowolony z siebie
+pełen samozadowolenia
+zarozumiały
+zadufany",,,
+106052,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,独りよがり,ひとりよがり,,hitori yogari,"zadowolony z siebie
+pełen samozadowolenia
+zarozumiały
+zadufany",,,
+106053,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,一人よがり,ひとりよがり,,hitori yogari,"zadowolony z siebie
+pełen samozadowolenia
+zarozumiały
+zadufany",,,
+106054,WORD_NOUN,,HIRAGANA,,,偏頭痛,へんとうつう,,hentoutsuu,migrena,,,DUPLICATE 106021
+106055,WORD_NOUN,,HIRAGANA,,,片頭痛,へんずつう,,henzutsuu,migrena,,,DUPLICATE 106056
+106056,WORD_NOUN,,HIRAGANA,,,片頭痛,へんとうつう,,hentoutsuu,migrena,,,DUPLICATE 106055
+106057,WORD_VERB_U,,HIRAGANA,,,聞き質す,ききただす,,kikitadasu,"dowiedzieć się prawdy
+upewnić się
+wyjaśnić
+wyjaśniać
+doprecyzować
+potwierdzać",,,
+106058,WORD_VERB_U,,HIRAGANA,,,聞き糺す,ききただす,,kikitadasu,"dowiedzieć się prawdy
+upewnić się
+wyjaśnić
+wyjaśniać
+doprecyzować
+potwierdzać",,,
+106059,WORD_VERB_U,,HIRAGANA,,,聞き正す,ききただす,,kikitadasu,"dowiedzieć się prawdy
+upewnić się
+wyjaśnić
+wyjaśniać
+doprecyzować
+potwierdzać",,,
