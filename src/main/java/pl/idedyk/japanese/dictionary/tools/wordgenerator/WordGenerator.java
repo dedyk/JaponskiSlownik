@@ -371,17 +371,35 @@ public class WordGenerator {
 							List<JapaneseWord> japaneseWords = jishoOrgConnector.getJapaneseWords(currentMissingWord);
 							
 							for (JapaneseWord japaneseWord : japaneseWords) {
-																
-								if (	jmeNewDictionary.getGroupEntryList(japaneseWord.kanji, japaneseWord.kana) != null &&
-										Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, japaneseWord.kanji, japaneseWord.kana) == null &&
-										existsInCommonWords(commonWordMap, japaneseWord.kanji, japaneseWord.kana) == false) {
+								
+								List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(japaneseWord.kanji, japaneseWord.kana);
+								
+								if (groupEntryList != null) {
 									
-									if (japaneseWord.kanji != null) {
-										newAdditionalWordToCheckWordList.add(japaneseWord.kanji);
+									groupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
+									
+									boolean isAdd = true;
+									
+									for (GroupEntry groupEntry : groupEntryList) {
+										
+										if (	Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry.getKanji(), groupEntry.getKana()) != null ||
+												existsInCommonWords(commonWordMap, groupEntry.getKanji(), groupEntry.getKana()) == true) {
+																						
+											isAdd = false;
+											
+											break;
+										}
 									}
 									
-									if (japaneseWord.kana != null) {
-										newAdditionalWordToCheckWordList.add(japaneseWord.kana);
+									if (isAdd == true) {
+																				
+										if (japaneseWord.kanji != null) {
+											newAdditionalWordToCheckWordList.add(japaneseWord.kanji);
+										}
+										
+										if (japaneseWord.kana != null) {
+											newAdditionalWordToCheckWordList.add(japaneseWord.kana);
+										}
 									}
 								}
 							}
