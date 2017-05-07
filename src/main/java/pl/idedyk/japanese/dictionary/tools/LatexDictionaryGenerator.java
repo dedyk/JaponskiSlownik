@@ -176,25 +176,25 @@ public class LatexDictionaryGenerator {
 		
 		//result.append("\\noindent ");
 		
+		// pogrubienie romaji
+		result.append(textbf(romaji)).append(" ");
+		
 		if (kanji.equals("-") == false) {
 		
 			// na gorze strony slowa kanji
 			// result.append(markBoth(kanji)).append(" ");
 			
 			// kanji
-			result.append(kanji).append(" ");
+			result.append(cjkFakeBold(kanji)).append(" ");
 			
 		} else {
 			// na gorze slowa kana
-			result.append(markBoth(romaji + " (" + kana + ")")).append(" ");
+			result.append(markBoth(textbf(romaji) + " (" + kana + ")")).append(" ");
 		}
 		
-		// pogrubienie kana
-		result.append(cjkFakeBold(romaji + " (" + kana + ")")).append(" ");
-		result.append(markBoth(romaji + " (" + kana + ")")).append(" ");
-		
-		// pogrubienie romaji
-		result.append(textbf(romaji)).append(" ");
+		// kana
+		result.append("(" + cjkFakeBold(kana) + ")").append(" ");
+		result.append(markBoth(textbf(romaji) + " (" + kana + ")")).append(" ");
 
 		// rodzaje slowa
 		List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
