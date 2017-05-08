@@ -14060,7 +14060,7 @@ drętwy",,,
 jaki masz tupek?",,,
 106687,WORD_NOUN,,HIRAGANA,,,歌舞伎十八番,かぶきじゅうはちばん,,kabuki juu hachi ban,repertuar 18 sztuk kabuki,,,
 106688,WORD_NOUN,,HIRAGANA,,,泣き味噌,なきみそ,,naki miso,beksa,,,
-106689,WORD_EXPRESSION,,HIRAGANA,,,親は無くても子は育つ,おやはなくてもこはそだつ,,oya wa nakute mo ko wa sodatsu,natura sama jest dobrą matką,idiom,,
+106689,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,親は無くても子は育つ,おやはなくてもこはそだつ,,oya wa nakute mo ko wa sodatsu,natura sama jest dobrą matką,idiom,,
 106690,WORD_NOUN,,KATAKANA_HIRAGANA,,,アドレス変換機構,アドレスへんかんきこう,,adoresu henkan kikou,"translator adresu
 translator adresowy",informatyka,,
 106691,WORD_NOUN,,HIRAGANA,,,窓枠,まどわく,,mado waku,"rama okienna
@@ -14070,9 +14070,13 @@ kraje skandynawskie",,,
 106693,WORD_VERB_U,,HIRAGANA,,,働き出す,はたらきだす,,hatarakidasu,"rozpocząć pracę
 zacząć pracę
 podjąć działanie",,,
-106694,WORD_NOUN,,HIRAGANA,,,貨客船,かきゃくせん,,kakyakusen,statek towarowy i pasażerski,łączony,,
+106694,WORD_NOUN,,HIRAGANA,,,貨客船,かきゃくせん,,kakyakusen,statek towarowy i pasażerski,łączony,,DUPLICATE 106697
 106695,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,片肌脱ぐ,かたはだぬぐ,,katahada nugu,"podać dłoń
 podać pomocną dłoń
 udzielić komuś pomocy
 odsłaniać swoje ramię",,,
+106696,WORD_VERB_U,,HIRAGANA,,,働きだす,はたらきだす,,hatarakidasu,"rozpocząć pracę
+zacząć pracę
+podjąć działanie",,,
+106697,WORD_NOUN,,HIRAGANA,,,貨客船,かかくせん,,kakakusen,statek towarowy i pasażerski,łączony,,DUPLICATE 106694
