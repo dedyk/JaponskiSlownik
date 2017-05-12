@@ -15178,9 +15178,11 @@ prześlizgnąć się",,,
 poddanie się chrztu",,,
 107198,WORD_NOUN,,HIRAGANA,,,偽札,ぎさつ,,gisatsu,"fałszywe papierowe pieniądze
 podrobione papierowe pieniądze
-fałszywy dokument",,,
+fałszywy dokument",,,"DUPLICATE 107199
+DUPLICATE 107301"
 107199,WORD_NOUN,,HIRAGANA,,,偽札,にせさつ,,nisesatsu,"fałszywe papierowe pieniądze
-podrobione papierowe pieniądze",,,
+podrobione papierowe pieniądze",,,"DUPLICATE 107198
+DUPLICATE 107301"
 107200,WORD_NOUN,,HIRAGANA,,,炊婦,すいふ,,suifu,"kucharka
 kuchenna pomoc (kobieta)",,,
 107201,WORD_NOUN,,HIRAGANA,,,遊具,ゆうぐ,,yuugu,"sprzęt do zabawy
@@ -15225,7 +15227,8 @@ wyjątkowy
 fenomenalny
 nadzwyczajny",,,
 107221,WORD_NOUN,,HIRAGANA,,,寄生蜂,きせいばち,,kiseibachi,"pasożytnicze osy
-parazytoidy",,,
+parazytoidy",,,"DUPLICATE 107313
+DUPLICATE 107314"
 107222,WORD_NOUN,,HIRAGANA,,,生菌,せいきん,,seikin,"żywa bakteria
 żywy wirus
 ???",,,
@@ -15331,7 +15334,8 @@ powitanie",,,
 107268,WORD_NOUN,,HIRAGANA,,,舗装道路,ほそうどうろ,,hosou douro,"utwardzona droga
 droga bita",,,
 107269,WORD_ADVERB,,HIRAGANA,,,-,ばんばん,,banban,"pif paf (odgłos uderzenia lub wystrzału)
-robienie czegoś w szalonym tempie (np. wydawać pieniądze, pracę)",,,
+robienie czegoś w szalonym tempie (np. wydawać pieniądze, pracę)",,,"DUPLICATE 74859
+DUPLICATE 74861"
 107270,WORD_NOUN,,HIRAGANA,,,催馬楽,さいばら,,saibara,rodzaj japońskiej dworskiej muzyki okresu Heian,,,
 107271,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,玲瓏,れいろう,,reirou,"przezroczysty
@@ -15343,7 +15347,7 @@ słodkie dzwonienie (np. dzwonki z nefrytu)",,,
 107272,WORD_NOUN,,HIRAGANA,,,離婚率,りこんりつ,,rikonritsu,odsetek rozwodów,,,
 107273,WORD_NOUN,,HIRAGANA,,,商店主,しょうてんしゅ,,shoutenshu,"właściciel sklepu
 sklepikarz",,,
-107274,WORD_NOUN,,HIRAGANA,,,野次馬,やじうま,,yajiuma,"ciekawski widz
+107274,WORD_NOUN,,HIRAGANA,,,野次馬,やじうま,,yaji uma,"ciekawski widz
 gap",wrażliwie,,
 107275,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,碌でもない,ろくでもない,,roku de mo nai,"do niczego
@@ -15370,7 +15374,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,博聞強記,はくぶんきょうき,,hakubun ky
 zwój","informatyka, ang: scroll",,
 107287,WORD_NOUN,,KATAKANA,,,-,ボクシンググローブ,,bokushingu guroobu,"rękawica bokserska
 rękawice bokserskie",ang: boxing glove,,
-107288,WORD_NOUN,,HIRAGANA,,,御新造,ごしんぞう,,goshinzou,żona,"szczególnie wybitnego, niedawno żonatego mężczyzny",,
+107288,WORD_NOUN,,HIRAGANA,,,御新造,ごしんぞう,,goshinzou,żona,"szczególnie wybitnego, niedawno żonatego mężczyzny",,DUPLICATE 107326
 107289,WORD_NOUN,,HIRAGANA,,,尖晶石,せんしょうせき,,senshouseki,spinel,minerał,,
 107290,WORD_NOUN,,HIRAGANA,,,鬱積,うっせき,,usseki,"narastanie (np. emocji)
 nasilanie się
@@ -15390,9 +15394,9 @@ drylowanie",,,
 szpikulec",,,
 107296,WORD_NOUN,,HIRAGANA,,,人足,にんそく,,ninsoku,"kulis
 robotnik
-pracownik fizyczny",,,
+pracownik fizyczny",,,DUPLICATE 107297
 107297,WORD_NOUN,,HIRAGANA,,,人足,ひとあし,,hitoashi,"ruch pieszy
-element podstawowy kanji “nogi”",,,
+element podstawowy kanji “nogi”",,,DUPLICATE 107296
 107298,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,機嫌を取る,きげんをとる,,kigen o toru,"podlizywać się
 przymilać się
@@ -15402,3 +15406,98 @@ dogadzać komuś
 wprowadzać w dobry nastrój (np. dziecko)",,,
 107299,WORD_NOUN,,HIRAGANA,,,座乗,ざじょう,,zajou,wejście na pokład,"np. dowódcy na okręt, samolot",,
 107300,WORD_NOUN,,HIRAGANA,,,人足寄場,にんそくよせば,,ninsoku yoseba,"obóz pracy dla włóczęgów, kryminalistów i etc",okres Edo,,
+107301,WORD_NOUN,,HIRAGANA,,,偽札,にせふだ,,nisefuda,"fałszywe papierowe pieniądze
+podrobione papierowe pieniądze",,,"DUPLICATE 107198
+DUPLICATE 107199"
+107302,WORD_NOUN,,HIRAGANA,,,贋札,にせさつ,,nisesatsu,"fałszywe papierowe pieniądze
+podrobione papierowe pieniądze",,,"DUPLICATE 107303
+DUPLICATE 107304"
+107303,WORD_NOUN,,HIRAGANA,,,贋札,がんさつ,,gansatsu,"fałszywe papierowe pieniądze
+podrobione papierowe pieniądze",,,"DUPLICATE 107302
+DUPLICATE 107304"
+107304,WORD_NOUN,,HIRAGANA,,,贋札,にせふだ,,nisefuda,"fałszywe papierowe pieniądze
+podrobione papierowe pieniądze",,,"DUPLICATE 107302
+DUPLICATE 107303"
+107305,WORD_NOUN,,HIRAGANA,,,にせ札,にせさつ,,nisesatsu,"fałszywe papierowe pieniądze
+podrobione papierowe pieniądze",,,DUPLICATE 107306
+107306,WORD_NOUN,,HIRAGANA,,,にせ札,にせふだ,,nisefuda,"fałszywe papierowe pieniądze
+podrobione papierowe pieniądze",,,DUPLICATE 107305
+107307,"WORD_NOUN
+WORD_ADVERB_TO",,HIRAGANA,,,-,ばたんきゅう,,batankyuu,natychmiast zasnąć,kolokwializm,,
+107308,WORD_VERB_U,,HIRAGANA,,,飛びのく,とびのく,,tobinoku,"odskoczyć
+skoczyć na bok",,,
+107309,WORD_VERB_U,,HIRAGANA,,,跳び退く,とびのく,,tobinoku,"odskoczyć
+skoczyć na bok",,,
+107310,WORD_VERB_U,,HIRAGANA,,,跳びのく,とびのく,,tobinoku,"odskoczyć
+skoczyć na bok",,,
+107311,"WORD_ADVERB
+WORD_NOUN",,KATAKANA,,,-,ウヨウヨ,,uyo uyo,"w roju
+roić się od",,,
+107312,WORD_NOUN,,HIRAGANA,,,悪だくみ,わるだくみ,,warudakumi,"podstęp
+fortel
+sztuczka
+złowieszczy zamiar
+spisek
+zmowa
+intryga",,,
+107313,WORD_NOUN,,HIRAGANA,,,寄生蜂,やどりばち,,yadoribachi,"pasożytnicze osy
+parazytoidy",,,"DUPLICATE 107221
+DUPLICATE 107314"
+107314,WORD_NOUN,,HIRAGANA,,,寄生蜂,きせいほう,,kiseihou,"pasożytnicze osy
+parazytoidy",,,"DUPLICATE 107221
+DUPLICATE 107313"
+107315,WORD_NOUN,,HIRAGANA,,,代え名,かえな,,kaena,"alternatywna nazwa
+alternatywne imię
+przybrane imię klienta w burdelu (dla zachowania anonimowości)
+pseudonim sceniczny",,,
+107316,WORD_NOUN,,HIRAGANA,,,替名,かえな,,kaena,"alternatywna nazwa
+alternatywne imię
+przybrane imię klienta w burdelu (dla zachowania anonimowości)
+pseudonim sceniczny",,,
+107317,WORD_VERB_U,,HIRAGANA,,,充つ,みつ,,mitsu,"być w pełni
+przybywać (np. o księżycu)
+wzrastać (np. o fali)
+dojrzewać",,,
+107318,WORD_NOUN,,HIRAGANA,,,高宜,こうぎ,,kougi,(twoja) życzliwość lub łaska,,,
+107319,WORD_NOUN,,HIRAGANA,,,やじ馬,やじうま,,yaji uma,"ciekawski widz
+gap",wrażliwie,,
+107320,WORD_NOUN,,KATAKANA_HIRAGANA,,,ヤジ馬,ヤジうま,,yaji uma,"ciekawski widz
+gap",wrażliwie,,
+107321,WORD_NOUN,,HIRAGANA,,,弥次馬,やじうま,,yaji uma,"ciekawski widz
+gap",wrażliwie,,
+107322,WORD_NOUN,,HIRAGANA,,,-,むずむず,,muzu muzu,"czucie swędzenia
+swędzenie
+przyprawianie o gęsią skórkę
+bycie niecierpliwym",,,
+107323,WORD_NOUN,,HIRAGANA,,,弥次馬根性,やじうまこんじょう,,yaji uma konjou,"duch ciekawości
+duch zaciekawienia",,,
+107324,WORD_NOUN,,KATAKANA,,,-,シロモジ,,shiromoji,lindera triloba,roślina,,
+107325,WORD_NOUN,,KATAKANA,,,-,ボクシング・グローブ,,bokushingu guroobu,"rękawica bokserska
+rękawice bokserskie",ang: boxing glove,,
+107326,WORD_NOUN,,HIRAGANA,,,御新造,ごしんぞ,,goshinzo,żona,"szczególnie wybitnego, niedawno żonatego mężczyzny",,DUPLICATE 107288
+107327,WORD_NOUN,,HIRAGANA,,,ご新造,ごしんぞう,,goshinzou,żona,"szczególnie wybitnego, niedawno żonatego mężczyzny",,DUPLICATE 107328
+107328,WORD_NOUN,,HIRAGANA,,,ご新造,ごしんぞ,,goshinzo,żona,"szczególnie wybitnego, niedawno żonatego mężczyzny",,DUPLICATE 107327
+107329,WORD_NOUN,,HIRAGANA,,,欝積,うっせき,,usseki,"narastanie (np. emocji)
+nasilanie się
+narastanie
+tłumienie (np. gniewu)",,,
+107330,WORD_NOUN,,HIRAGANA,,,酢漬,すづけ,,suduke,"marynata
+zalewa
+marynowanie",,,
+107331,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,襤褸を出す,ぼろをだす,,boro o dasu,"ujawnianie win
+ujawnianie błędów",,,
+107332,"WORD_NOUN
+WORD_NOUN_PREFIX",,HIRAGANA,,,穴開け,あなあけ,,anaake,"wiercenie
+drylowanie",,,
+107333,WORD_NOUN,,HIRAGANA,,,穴あけ器,あなあけき,,anaake ki,"dziurkacz
+szpikulec",,,
+107334,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,機嫌をとる,きげんをとる,,kigen o toru,"podlizywać się
+przymilać się
+schlebiać
+płaszczyć
+dogadzać komuś
+wprowadzać w dobry nastrój (np. dziecko)",,,
+107335,WORD_NOUN,,HIRAGANA,,,坐乗,ざじょう,,zajou,wejście na pokład,"np. dowódcy na okręt, samolot",,
+107336,WORD_NOUN,,HIRAGANA,,,人足寄せ場,にんそくよせば,,ninsoku yoseba,"obóz pracy dla włóczęgów, kryminalistów i etc",okres Edo,,
