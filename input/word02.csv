@@ -15934,7 +15934,8 @@ ufortyfikowane miasto",,,
 formowanie",,,
 107525,WORD_NOUN,,HIRAGANA,,,精習,せいしゅう,,seishuu,"(ostrożne, pilne, intensywne) praktyki lub ćwiczenia",,,
 107526,WORD_NOUN,,HIRAGANA,,,胞衣,えな,,ena,"popłód
-łożysko",,,
+łożysko",,,"DUPLICATE 107577
+DUPLICATE 107578"
 107527,WORD_NOUN,,HIRAGANA,,,咆哮,ほうこう,,houkou,"wrzask
 krzyk
 ryk
@@ -15952,7 +15953,7 @@ WORD_NOUN",,HIRAGANA,,,いい人,いいひと,,ii hito,"dobroduszny człowiek
 pogodny człowiek
 kochanek",,,
 107532,WORD_NOUN,,HIRAGANA,,,攀縁,はんえん,,han'en,"wspinaczka
-wspinanie się",archaizm,,
+wspinanie się",archaizm,,DUPLICATE 107583
 107533,WORD_NOUN,,HIRAGANA,,,支藩,しはん,,shihan,???,,,
 107534,WORD_NOUN,,HIRAGANA,,,風師,ふうし,,fuushi,bóg wiatru,,,
 107535,WORD_NOUN,,HIRAGANA,,,船医,せんい,,sen'i,lekarz okrętowy,,,
@@ -16013,7 +16014,8 @@ furigana",,,
 107559,WORD_NOUN,,HIRAGANA,,,放射能汚染,ほうしゃのうおせん,,houshanou osen,skażenie promieniotwórcze,,,
 107560,WORD_ADVERBIAL_NOUN,,HIRAGANA,,,この際,このさい,,kono sai,"przy tej okazji
 teraz",,,
-107561,WORD_NOUN,,KATAKANA,,,数牌,シューパイ,,shuupai,dopasowany kafelek,ang: suited tiles,,
+107561,WORD_NOUN,,KATAKANA,,,数牌,シューパイ,,shuupai,dopasowany kafelek,ang: suited tiles,,"DUPLICATE 107593
+DUPLICATE 107594"
 107562,WORD_VERB_U,,HIRAGANA,,,釣り込む,つりこむ,,tsurikomu,???,,,
 107563,WORD_NOUN,,HIRAGANA,,,勝着,しょうちゃく,,shouchaku,zwycięski ruch,"w go, shogi",,
 107564,"WORD_VERB_U
@@ -16047,3 +16049,84 @@ periodyk",,,
 zimne poty
 tłusty pot",,,
 107575,WORD_NOUN,,HIRAGANA,,,冷汗三斗,れいかんさんと,,reikan santo,???,,,
+107576,WORD_NOUN,,HIRAGANA,,,銷夏,しょうか,,shouka,spędzanie lata,,,
+107577,WORD_NOUN,,HIRAGANA,,,胞衣,ほうい,,houi,"popłód
+łożysko",,,"DUPLICATE 98990
+DUPLICATE 107526
+DUPLICATE 107578"
+107578,WORD_NOUN,,HIRAGANA,,,胞衣,ほうえ,,houe,"popłód
+łożysko",,,"DUPLICATE 107526
+DUPLICATE 107577"
+107579,WORD_NOUN,,HIRAGANA,,,咆吼,ほうこう,,houkou,"wrzask
+krzyk
+ryk
+wycie
+wrzeszczenie
+krzyczenie",,,
+107580,WORD_NOUN,,HIRAGANA,,,盗汗,ねあせ,,nease,"wydzielanie potu podczas snu
+pocenie się podczas spania
+nocne poty",,,DUPLICATE 107581
+107581,WORD_NOUN,,HIRAGANA,,,盗汗,とうかん,,toukan,"wydzielanie potu podczas snu
+pocenie się podczas spania
+nocne poty",,,DUPLICATE 107580
+107582,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,好い人,いいひと,,iihito,"dobroduszny człowiek
+pogodny człowiek
+kochanek",,,
+107583,WORD_NOUN,,HIRAGANA,,,攀縁,へんえん,,hen'en,"wspinaczka
+wspinanie się",archaizm,,DUPLICATE 107532
+107584,WORD_NOUN,,HIRAGANA,,,攀援,はんえん,,han'en,"wspinaczka
+wspinanie się",archaizm,,DUPLICATE 107585
+107585,WORD_NOUN,,HIRAGANA,,,攀援,へんえん,,hen'en,"wspinaczka
+wspinanie się",archaizm,,DUPLICATE 107584
+107586,WORD_VERB_U,,HIRAGANA,,,泣沈む,なきしずむ,,nakishizumu,"oddawać się żalowi
+oddawać się rozpaczy
+oddawać się smutku",,,
+107587,WORD_NOUN,,HIRAGANA,,,口取,くちとり,,kuchitori,"prowadzenie konia, krowy i etc
+???
+przystawka
+zakąska
+dodatek do dania głównego",,,
+107588,WORD_EXPRESSION,,HIRAGANA,,,間がない,まがない,,maganai,nie długo minęło od ...,poprzedzone formą te czasownika,,
+107589,WORD_NOUN,,HIRAGANA,,,道徳經,どうとくきょう,,doutokukyou,"Tao Te Ching
+Daodejing","najczęściej tłumaczona jako Księga Drogi i Cnoty, uznawana niekiedy za pierwszą filozoficzną księgę w języku chińskim",,
+107590,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,一寸見,ちょっとみ,,chottomi,"spojrzenie
+zerknięcie
+rzut okiem
+na pierwszy rzut oka",,,
+107591,WORD_NOUN,,HIRAGANA,,,読みがな,よみがな,,yomi gana,"kana wskazująca wymowę kanji
+furigana",,,
+107592,WORD_ADVERBIAL_NOUN,,HIRAGANA,,,此の際,このさい,,kono sai,"przy tej okazji
+teraz",,,
+107593,WORD_NOUN,,HIRAGANA_KATAKANA,,,数牌,すうパイ,,suupai,dopasowany kafelek,ang: suited tiles,,"DUPLICATE 107561
+DUPLICATE 107594"
+107594,WORD_NOUN,,KATAKANA_EXCEPTION,,,数牌,シュウパイ,,shuupai,dopasowany kafelek,ang: suited tiles,,"DUPLICATE 107561
+DUPLICATE 107593"
+107595,WORD_VERB_U,,HIRAGANA,,,釣込む,つりこむ,,tsurikomu,???,,,
+107596,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,盛りがつく,さかりがつく,,sakari ga tsuku,???,,,
+107597,WORD_NOUN,,KATAKANA,,,-,キユーピー,,kiyuupii,kewpie doll,rodzaj plastikowej lalki,,
+107598,WORD_NOUN,,HIRAGANA,,,冬仕度,ふゆじたく,,fuyujitaku,przygotowanie do zimy,,,
+107599,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,レディス,,redisu,"panie
+żeński gang motocyklowy (kolokwializm)",,,
+107600,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,レディーズ,,rediizu,"panie
+żeński gang motocyklowy (kolokwializm)",,,
+107601,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,レディズ,,redizu,"panie
+żeński gang motocyklowy (kolokwializm)",,,
+107602,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,レーディス,,reedisu,"panie
+żeński gang motocyklowy (kolokwializm)",,,
+107603,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,レーディース,,reediisu,"panie
+żeński gang motocyklowy (kolokwializm)",,,
+107604,WORD_NOUN,,KATAKANA,,,-,レディース・スーツ,,rediisu suutsu,garsonka,ang: lady's suit,,
+107605,WORD_NOUN,,HIRAGANA,,,膏汗,あぶらあせ,,aburaase,"zimny pot
+zimne poty
+tłusty pot",,,
+107606,WORD_NOUN,,HIRAGANA,,,油汗,あぶらあせ,,aburaase,"zimny pot
+zimne poty
+tłusty pot",,,
