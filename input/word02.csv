@@ -3559,7 +3559,8 @@ WORD_ADJECTIVE_NA",,HIRAGANA,,,高声,こうじょう,,koujou,"głośny głos
 wysoki głos",,,"DUPLICATE 101620
 DUPLICATE 101686
 DUPLICATE 101687"
-101689,WORD_NOUN,,HIRAGANA,,,各科,かっか,,kakka,każdy szkolny przedmiot,,,DUPLICATE 101623
+101689,WORD_NOUN,,HIRAGANA,,,各科,かっか,,kakka,każdy szkolny przedmiot,,,"DUPLICATE 101623
+DUPLICATE 108358"
 101690,WORD_NOUN,,HIRAGANA,,,瑣事,さじ,,saji,"coś małego lub drobnego
 drobiazg",,,
 101691,WORD_NOUN,,HIRAGANA,,,疫病の神,やくびょうのかみ,,yakubyou no kami,"bóg zarazy
@@ -17557,10 +17558,10 @@ rozwiązła kobieta",,,
 przedstawiciel klasy",,,
 108240,WORD_VERB_RU,,HIRAGANA,,,解れる,ほぐれる,,hogureru,"rozwiązać się
 odwiązać się
-rozstępować się",,,
+rozstępować się",,,DUPLICATE 108241
 108241,WORD_VERB_RU,,HIRAGANA,,,解れる,ほつれる,,hotsureru,"stać się wytarty
 stać się postrzępiony
-stać się luźny",,,
+stać się luźny",,,DUPLICATE 108240
 108242,WORD_EXPRESSION,,HIRAGANA,,,成れの果て,なれのはて,,nare no hate,"tylko cień dawnego bytu
 ruiny tego, co było kiedyś",,,
 108243,WORD_NOUN,,KATAKANA,,,-,サブノート,,sabu nooto,???,"skrót, ang: sub notebook",,
@@ -17588,7 +17589,7 @@ koszty utrzymania",,,
 108252,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,聞く耳,きくみみ,,kiku mimi,"dobre ucho
 przenikliwe ucho",,,
-108253,WORD_NOUN,,HIRAGANA,,,日本列島,にほんれっとう,,nihon rettou,japońskie wyspy,,,
+108253,WORD_NOUN,,HIRAGANA,,,日本列島,にほんれっとう,,nihon rettou,japońskie wyspy,,,DUPLICATE 108438
 108254,WORD_NOUN,,HIRAGANA,,,荒働き,あらばたらき,,arabataraki,"ciężka praca
 ciężka praca fizyczna",,,
 108255,WORD_NOUN,,HIRAGANA,,,尿器,にょうき,,nyouki,"urynał
@@ -17608,12 +17609,12 @@ piraci",ang: pirate,,
 nowo przybyły",,,
 108263,WORD_NOUN,,KATAKANA_HIRAGANA,,,メル友,メルとも,,meru tomo,internetowa przyjaźń,,,
 108264,WORD_NOUN,,HIRAGANA,,,人外,にんがい,,ningai,"nieludzkie zachowanie
-nieludzka osoba",,,
+nieludzka osoba",,,DUPLICATE 108265
 108265,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,人外,じんがい,,jingai,"niezamieszkały obszar
 nieludzkie zachowanie
 nieludzka osoba
-??? (slang)",,,
+??? (slang)",,,DUPLICATE 108264
 108266,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,膝を崩す,ひざをくずす,,hiza o kuzusu,"siedzieć zrelaksowany
 siedzieć odprężony",,,
@@ -17679,7 +17680,7 @@ nadejście
 nastanie
 pifania
 objawienie
-przybycie (ważnej osoby)",,,
+przybycie (ważnej osoby)",,,DUPLICATE 108443
 108295,WORD_NOUN,,KATAKANA_HIRAGANA,,,パン生地,パンきじ,,pan kiji,ciasto na chleb,,,
 108296,WORD_NOUN,,HIRAGANA,,,まんが喫茶,まんがきっさ,,manga kissa,manga'owa kawiarenka,,,
 108297,WORD_NOUN,,HIRAGANA,,,空狐,くうこ,,kuuko,drugorzędny duch lisa,,,
@@ -17731,7 +17732,7 @@ wysoka pojemność",,,
 108319,WORD_ADJECTIVE_NO,,HIRAGANA,,,男女別,だんじょべつ,,danjobetsu,"odseparowanie płci
 rozdzielenie płci",,,
 108320,WORD_NOUN,,HIRAGANA,,,お釈迦様,おしゃかさま,,oshakasama,"Budda
-Shakyamuni",,,
+Shakyamuni",,,DUPLICATE 108451
 108321,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,熱さまし,ねつさまし,,netsusamashi,przeciwgorączkowy,,,
 108322,WORD_VERB_U,,HIRAGANA,,,叩き切る,たたききる,,tatakikiru,"ciosać
@@ -17797,7 +17798,7 @@ sklep pamiątkarski",,,
 koszty zarządzania",,,
 108353,WORD_NOUN,,HIRAGANA,,,権衡,けんこう,,kenkou,balans,,,
 108354,WORD_NOUN,,HIRAGANA,,,大簇,たいそう,,taisou,"(w Chinach) 3-ta nuta w starożytnej chromatycznej skali (około E)
-pierwszy miesiąc księżycowy",,,
+pierwszy miesiąc księżycowy",,,DUPLICATE 108464
 108355,WORD_NOUN,,HIRAGANA,,,諸点,しょてん,,shoten,"różne punkty (dyskusji)
 różne miejsca
 różne sprawy",,,
@@ -17814,7 +17815,9 @@ płonąć gwałtownie
 palić się na czerwono
 stracić panowanie na sobą
 wściec się
-być zdenerwowany",,,
+być zdenerwowany",,,"DUPLICATE 2311
+DUPLICATE 22259
+DUPLICATE 101689"
 108359,WORD_NOUN,,HIRAGANA,,,岩床,がんしょう,,ganshou,podłoże skalne,,,
 108360,WORD_NOUN,,HIRAGANA,,,老躯,ろうく,,rouku,"swoje stare kości
 wiekowe ciało
@@ -17871,7 +17874,8 @@ nieomylny
 niezawodny",,,
 108386,WORD_EXPRESSION,,HIRAGANA,,,あの頃,あのころ,,ano koro,w tamtych dniach,,,
 108387,WORD_NOUN,,KATAKANA,,,-,シンブル,,shinburu,naparstek,ang: thimble,,
-108388,WORD_NOUN,,HIRAGANA,,,水蠆,やご,,yago,nimfa ważki,,,
+108388,WORD_NOUN,,HIRAGANA,,,水蠆,やご,,yago,nimfa ważki,,,"DUPLICATE 108471
+EDICT_DUPLICATE 96185"
 108389,WORD_NOUN,,HIRAGANA,,,震源地,しんげんち,,shingenchi,epicentrum,,,
 108390,WORD_NOUN,,HIRAGANA,,,天狗茸,てんぐたけ,,tengutake,muchomor plamisty,"gatunek grzybów należący do rodziny muchomorowatych, amanita pantherina",,
 108391,WORD_NOUN,,HIRAGANA,,,多調,たちょう,,tachou,"politonalność
@@ -17891,7 +17895,8 @@ grunt",,,
 108397,WORD_NOUN,,KATAKANA,,,-,トリム,,torimu,przycięcie,ang: trim,,
 108398,WORD_NOUN,,HIRAGANA,,,補酵素,ほこうそ,,hokouso,koenzym,,,
 108399,WORD_NOUN,,HIRAGANA_KATAKANA,,,温麺,うーめん,,uumen,"rodzaj sōmen wykonany bez dodatku oleju
-specjalność prefektury Miyagi, zwykle spożywane w bulionie, szczególnie ciepłe w czasie zimy",,,
+specjalność prefektury Miyagi, zwykle spożywane w bulionie, szczególnie ciepłe w czasie zimy",,,"DUPLICATE 108477
+DUPLICATE 108478"
 108400,WORD_NOUN,,HIRAGANA,,,中間報告,ちゅうかんほうこく,,chuukan houkoku,"sprawozdanie śródroczne
 sprawozdanie przejściowe
 sprawozdanie tymczasowe",,,
@@ -17925,10 +17930,10 @@ występek",,,
 zażyłość
 przyjaźń",,,
 108421,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,眼窩,がんか,,ganka,oczodół,,,
+WORD_ADJECTIVE_NO",,HIRAGANA,,,眼窩,がんか,,ganka,oczodół,,,DUPLICATE 108486
 108422,WORD_NOUN,,HIRAGANA,,,客舎,きゃくしゃ,,kyakusha,"hotel
 zajazd
-kwatera",,,
+kwatera",,,DUPLICATE 108488
 108423,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,予謀,よぼう,,yobou,"premedytacja
 rozmyślny",,,
@@ -17947,3 +17952,139 @@ nadskakiwanie",,,
 108430,WORD_NOUN,,HIRAGANA,,,事大思想,じだいしそう,,jidai shisou,"podziwianie silnych
 podziwianie potężnych",,,
 108431,WORD_NOUN,,HIRAGANA,,,眼窩底,がんかてい,,gankatei,cienka kość podłoża oczodołu,,,
+108432,WORD_NOUN,,HIRAGANA,,,目合,めあい,,meai,rozmiar oczka w sieci,,,
+108433,WORD_EXPRESSION,,HIRAGANA,,,なれの果て,なれのはて,,nare no hate,"tylko cień dawnego bytu
+ruiny tego, co było kiedyś",,,
+108434,WORD_NOUN,,KATAKANA,,,-,サブ・ノート,,sabu nooto,???,"skrót, ang: sub notebook",,
+108435,WORD_NOUN,,HIRAGANA,,,臍の緒,へそのお,,heso no o,pępowina,,,
+108436,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,恥を掻く,はじをかく,,haji o kaku,"być zakłopotany
+stracić twarz",,,
+108437,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,-,よれよれ,,yore yore,"zużyty
+zniszczony
+znoszony
+podniszczony",,,
+108438,WORD_NOUN,,HIRAGANA,,,日本列島,にっぽんれっとう,,nippon rettou,japońskie wyspy,,,DUPLICATE 108253
+108439,WORD_NOUN,,KATAKANA_HIRAGANA,,,メール友,メールとも,,meeru tomo,internetowa przyjaźń,,,
+108440,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,聞く耳をもたない,きくみみをもたない,,kiku mimi  o motanai,"udawać, że się nie słyszy czegoś
+nie słuchać",,,
+108441,WORD_EXPRESSION,,HIRAGANA,,,聞く耳をもたぬ,きくみみをもたぬ,,kiku mimi o motanu,"udawać, że się nie słyszy czegoś
+nie słuchać",,,
+108442,WORD_NOUN,,KATAKANA,,,-,パイレーツ・パンツ,,paireetsu pantsu,pirackie spodnie,ang: pirate's pants,,
+108443,WORD_NOUN,,HIRAGANA,,,降臨,ごうりん,,gourin,"zejście (na ziemię, szczególnie bogów)
+nadejście
+nastanie
+pifania
+objawienie
+przybycie (ważnej osoby)",,,DUPLICATE 108294
+108444,WORD_NOUN,,HIRAGANA,,,漫画喫茶,まんがきっさ,,manga kissa,manga'owa kawiarenka,,,
+108445,WORD_NOUN,,KATAKANA_HIRAGANA,,,マンガ喫茶,マンガきっさ,,manga kissa,manga'owa kawiarenka,,,
+108446,WORD_NOUN,,HIRAGANA,,,玄翁,げんのう,,gennou,młot kowalski,,,
+108447,WORD_NOUN,,HIRAGANA,,,気狂い沙汰,きちがいざた,,kichigai zata,"szalone zachowanie
+szaleństwo
+obłąkanie
+wariactwo",wrażliwie,,
+108448,WORD_NOUN,,HIRAGANA,,,きちがい沙汰,きちがいざた,,kichigai zata,"szalone zachowanie
+szaleństwo
+obłąkanie
+wariactwo",wrażliwie,,
+108449,WORD_VERB_RU,,HIRAGANA,,,仕兼ねる,しかねる,,shikaneru,"być niechętny zrobić
+zawahać się zrobić
+odmówić zrobienia czegoś
+niezdolny do zrobienia czegoś",,,
+108450,WORD_VERB_U,,HIRAGANA,,,握り潰す,にぎりつぶす,,nigirit subusu,"miażdżyć (swoimi rękoma)
+rozgnieść (swoimi rękoma)
+ubić propozycję
+odkładać na później
+???",,,
+108451,WORD_NOUN,,HIRAGANA,,,お釈迦様,おしゃかさん,,oshakasan,"Budda
+Shakyamuni",,,DUPLICATE 108320
+108452,WORD_NOUN,,HIRAGANA,,,御釈迦様,おしゃかさま,,oshakasama,"Budda
+Shakyamuni",,,DUPLICATE 108453
+108453,WORD_NOUN,,HIRAGANA,,,御釈迦様,おしゃかさん,,oshakasan,"Budda
+Shakyamuni",,,DUPLICATE 108452
+108454,WORD_NOUN,,HIRAGANA,,,お釈迦さん,おしゃかさん,,oshakasan,"Budda
+Shakyamuni",,,
+108455,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,熱冷まし,ねつさまし,,netsusa mashi,przeciwgorączkowy,,,
+108456,WORD_VERB_U,,HIRAGANA,,,叩き斬る,たたききる,,tataki kiru,"ciosać
+rąbać
+siekać
+ciąć
+szatkować
+odrąbać",,,
+108457,WORD_VERB_U,,HIRAGANA,,,たたき斬る,たたききる,,tataki kiru,"ciosać
+rąbać
+siekać
+ciąć
+szatkować
+odrąbać",,,
+108458,WORD_VERB_U,,HIRAGANA,,,たたき切る,たたききる,,tataki kiru,"ciosać
+rąbać
+siekać
+ciąć
+szatkować
+odrąbać",,,
+108459,WORD_NOUN,,KATAKANA,,,-,バンジー・ジャンプ,,banjii janpu,skoki na elastycznej linie,ang: bungee jump,,
+108460,WORD_NOUN,,HIRAGANA,,,火の見やぐら,ひのみやぐら,,hi no miyagura,przeciwpożarowa wieża obserwacyjna,,,
+108461,WORD_EXPRESSION,,HIRAGANA,,,御釈迦様の誕生日,おしゃかさまのたんじょうび,,oshakasama no tanjoubi,urodziny Buddy,,,
+108462,WORD_NOUN,,HIRAGANA,,,みやげ物屋,みやげものや,,miyage monoya,"sklep z pamiątkami
+sklep pamiątkarski",,,
+108463,WORD_NOUN,,HIRAGANA,,,みやげもの屋,みやげものや,,miyage monoya,"sklep z pamiątkami
+sklep pamiątkarski",,,
+108464,WORD_NOUN,,HIRAGANA,,,大簇,たいぞく,,taizoku,"(w Chinach) 3-ta nuta w starożytnej chromatycznej skali (około E)
+pierwszy miesiąc księżycowy",,,DUPLICATE 108354
+108465,WORD_NOUN,,HIRAGANA,,,太簇,たいそう,,taisou,"(w Chinach) 3-ta nuta w starożytnej chromatycznej skali (około E)
+pierwszy miesiąc księżycowy",,,DUPLICATE 108466
+108466,WORD_NOUN,,HIRAGANA,,,太簇,たいぞく,,taizoku,"(w Chinach) 3-ta nuta w starożytnej chromatycznej skali (około E)
+pierwszy miesiąc księżycowy",,,DUPLICATE 108465
+108467,WORD_NOUN,,HIRAGANA,,,１勝,いっしょう,,isshou,"jedna wygrana
+jedno zwycięstwo",,,
+108468,"WORD_NOUN
+WORD_ADVERB_TO
+WORD_ADVERB",,KATAKANA,,,-,カッカ,,kakka,"palić się gwałtownie
+płonąć gwałtownie
+palić się na czerwono
+stracić panowanie na sobą
+wściec się
+być zdenerwowany",,,
+108469,WORD_NOUN,,KATAKANA,,,-,ユスラヤシ,,yusura yashi,archontophoenix alexandrae,roślina palmowa,,
+108470,WORD_NOUN,,HIRAGANA,,,排熱,はいねつ,,hainetsu,"ciepło odlotowe
+pozostałe ciepło",,,
+108471,WORD_NOUN,,HIRAGANA,,,水蠆,やまめ,,yamame,nimfa ważki,,,"DUPLICATE 108388
+EDICT_DUPLICATE 96185"
+108472,WORD_NOUN,,HIRAGANA,,,水蟇,やご,,yago,nimfa ważki,,,"DUPLICATE 108473
+EDICT_DUPLICATE 96185"
+108473,WORD_NOUN,,HIRAGANA,,,水蟇,やまめ,,yamame,nimfa ważki,,,"DUPLICATE 108472
+EDICT_DUPLICATE 96185"
+108474,WORD_NOUN,,KATAKANA,,,-,ヤゴ,,yago,nimfa ważki,,,EDICT_DUPLICATE 96185
+108475,WORD_NOUN,,KATAKANA,,,-,ヤマメ,,yamame,nimfa ważki,,,DUPLICATE 96185
+108476,WORD_NOUN,,KATAKANA,,,-,テングタケ,,tengutake,muchomor plamisty,"gatunek grzybów należący do rodziny muchomorowatych, amanita pantherina",,
+108477,WORD_NOUN,,HIRAGANA,,,温麺,ううめん,,uumen,"rodzaj sōmen wykonany bez dodatku oleju
+specjalność prefektury Miyagi, zwykle spożywane w bulionie, szczególnie ciepłe w czasie zimy",,,"DUPLICATE 108399
+DUPLICATE 108478"
+108478,WORD_NOUN,,HIRAGANA,,,温麺,うんめん,,unmen,"rodzaj sōmen wykonany bez dodatku oleju
+specjalność prefektury Miyagi, zwykle spożywane w bulionie, szczególnie ciepłe w czasie zimy",,,"DUPLICATE 108399
+DUPLICATE 108477"
+108479,WORD_NOUN,,HIRAGANA_KATAKANA,,,雲麺,うーめん,,uumen,"rodzaj sōmen wykonany bez dodatku oleju
+specjalność prefektury Miyagi, zwykle spożywane w bulionie, szczególnie ciepłe w czasie zimy",,,"DUPLICATE 108480
+DUPLICATE 108481"
+108480,WORD_NOUN,,HIRAGANA,,,雲麺,ううめん,,uumen,"rodzaj sōmen wykonany bez dodatku oleju
+specjalność prefektury Miyagi, zwykle spożywane w bulionie, szczególnie ciepłe w czasie zimy",,,"DUPLICATE 108479
+DUPLICATE 108481"
+108481,WORD_NOUN,,HIRAGANA,,,雲麺,うんめん,,unmen,"rodzaj sōmen wykonany bez dodatku oleju
+specjalność prefektury Miyagi, zwykle spożywane w bulionie, szczególnie ciepłe w czasie zimy",,,"DUPLICATE 108479
+DUPLICATE 108480"
+108482,WORD_NOUN,,KATAKANA_HIRAGANA,,,インド大叛乱,インドだいはんらん,,indoda ihanran,powstanie sipajów,masowe antybrytyjskie wystąpienia zbrojne w Indiach w latach 1857-1858,,
+108483,WORD_NOUN,,KATAKANA_HIRAGANA,,,セポイの叛乱,セポイのはんらん,,sepoi no hanran,powstanie sipajów,masowe antybrytyjskie wystąpienia zbrojne w Indiach w latach 1857-1858,,
+108484,WORD_NOUN,,HIRAGANA,,,廃熱口,はいねつぐち,,hainetsuguchi,odpowietrznik,,,
+108485,WORD_NOUN,,KATAKANA,,,-,トリム・マーク,,torimu maaku,znaczniki przycinania,"zwykle na papierze, ang: trim mark",,
+108486,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,眼窩,がんわ,,ganwa,oczodół,,,DUPLICATE 108421
+108487,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,眼窠,がんか,,ganka,oczodół,,,
+108488,WORD_NOUN,,HIRAGANA,,,客舎,かくしゃ,,kakusha,"hotel
+zajazd
+kwatera",,,DUPLICATE 108422
