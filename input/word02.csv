@@ -18817,15 +18817,16 @@ tracić",,,
 108798,WORD_NOUN,,KATAKANA,,,-,アグリ,,aguri,"zgadzać się
 brzydki
 paskudny","ang:agree, ugly",,
-108799,WORD_NOUN,,HIRAGANA,,,-,けんけん,,ken ken,skakanie na jednej nodze,,,
+108799,WORD_NOUN,,HIRAGANA,,,-,けんけん,,ken ken,skakanie na jednej nodze,,,"DUPLICATE 108800
+DUPLICATE 108863"
 108800,WORD_ADVERB,,HIRAGANA,,,拳拳,けんけん,,kenken,"z szacunkiem
 z poważaniem
 z powagą
-czcigodnie",,,
+czcigodnie",,,DUPLICATE 108799
 108801,WORD_NOUN,,HIRAGANA,,,総角,あげまき,,agemaki,"staromodna fryzura dla chłopców
 kobieca fryzura w okresie Meiji
 sinonovacula constricta (skrót)
-???",,,
+???",,,DUPLICATE 108847
 108802,WORD_NOUN,,HIRAGANA,,,揚げ巻,あげまき,,agemaki,"staromodna fryzura dla chłopców
 kobieca fryzura w okresie Meiji
 rodzaj tańca w kabuki
@@ -18857,8 +18858,7 @@ klasowy chaos",,,
 WORD_ADVERB",,KATAKANA,,,-,ガッポリ,,gappori,w dużych ilościach,,,
 108811,WORD_NOUN,,HIRAGANA,,,豪遊,ごうゆう,,gouyuu,???,,,
 108812,WORD_NOUN,,KATAKANA,,,-,ライトスルー,,raito suruu,???,"informatyka, ang: write-through",,
-108813,WORD_VERB_U,,HIRAGANA,,,ぶち壊す,ぶちこわす,,buchi kowasu,"robić
-niszczyć
+108813,WORD_VERB_U,,HIRAGANA,,,ぶち壊す,ぶちこわす,,buchi kowasu,"niszczyć
 rozbić
 zepsuć
 rujnować",,,
@@ -18870,7 +18870,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,台風並み,たいふうなみ,,taifuu nami,sił
 108817,WORD_NOUN,,HIRAGANA,,,小倉百人一首,おぐらひゃくにんいっしゅ,,ogura hyakunin' isshu,Ogura Hyakunin-isshu,"zbiór stu najpiękniejszych wierszy japońskich, ułożony w XIII wieku przez poetę Fujiwara Teika, w czasie gdy zamieszkiwał on w Ogura",,
 108818,WORD_VERB_U,,HIRAGANA,,,謙る,へりくだる,,herikudaru,"umniejszać siebie i wychwalać słuchacza
 poniżyć się",,,
-108819,WORD_VERB_U,,HIRAGANA,,,守りきる,まもりきる,,mamorikiru,zachować coś,"np. sekret, prowadzenie w wyścigu i etc",,
+108819,WORD_VERB_U,,HIRAGANA,,,守りきる,まもりきる,,mamori kiru,zachować coś,"np. sekret, prowadzenie w wyścigu i etc",,
 108820,WORD_ADJECTIVE_NA,,HIRAGANA,,,職業的,しょくぎょうてき,,shokugyouteki,"zawodowy
 profesjonalny",,,
 108821,WORD_EXPRESSION,,HIRAGANA,,,全体で,ぜんたいで,,zentaide,"w sumie
@@ -18913,7 +18913,7 @@ zapytać
 szukać
 przeszukiwać
 badać
-dosiekać",archaizm,,
+dosiekać",archaizm,,DUPLICATE 108881
 108836,WORD_NOUN,,HIRAGANA,,,魚腹,ぎょふく,,gyofuku,rybie wnętrzności,,,
 108837,WORD_NOUN,,HIRAGANA,,,活発化,かっぱつか,,kappatsuka,"wzrost aktywności
 aktywacja",,,
@@ -18944,11 +18944,150 @@ niechlujny
 przypadkowy",,,
 108846,WORD_NOUN,,HIRAGANA,,,拳々服膺,けんけんふくよう,,ken ken fukuyou,"mocno zapaść w pamięci
 mieć coś wyrytego w swojej głowie (sercu)",,,
-108847,WORD_NOUN,,KATAKANA,,,総角,チョンガー,,chongaa,???,,,
+108847,WORD_NOUN,,KATAKANA,,,総角,チョンガー,,chongaa,???,,,DUPLICATE 108801
 108848,WORD_VERB_RU,,HIRAGANA,,,-,ぶっちゃける,,bucchakeru,"być szczery
 mówić szczerze",,,
 108849,WORD_NOUN,,KATAKANA,,,-,ライトスルーキャッシュ,,raito suruu kyasshu,???,"informatyka, ang: write-through cache",,
-108850,WORD_NOUN,,HIRAGANA,,,再従兄弟,はとこ,,hatoko,kuzyn w drugiej linii,,,
+108850,WORD_NOUN,,HIRAGANA,,,再従兄弟,はとこ,,hatoko,kuzyn w drugiej linii,,,DUPLICATE 108885
 108851,WORD_EXPRESSION,,HIRAGANA,,,不易流行,ふえきりゅうこう,,fueki ryuukou,"zasada płynności i niezmienności w haiku
 haiku jest zarówno ""płynny i chwilowy"" oraz ""wieczny i niezmienny""
 przeplatanie się przemijania i niezmienności jest centralnym elementem duszy haiku",,,
+108852,WORD_NOUN,,KATAKANA,,,-,マンマシンインタフェース,,man mashin' intafeesu,"interfejs człowiek-maszyna
+MMI (man-machine interface)",,,
+108853,WORD_NOUN,,KATAKANA,,,-,マンマシン・インターフェース,,man mashin' intaafeesu,"interfejs człowiek-maszyna
+MMI (man-machine interface)",,,
+108854,WORD_NOUN,,KATAKANA,,,-,マンマシン・インタフェース,,man mashin' intafeesu,"interfejs człowiek-maszyna
+MMI (man-machine interface)",,,
+108855,WORD_NOUN,,KATAKANA,,,-,キノア,,kinoa,komosa ryżowa,ang: quinoa,,
+108856,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,隆隆,りゅうりゅう,,ryuu ryuu,"dobrze prosperujący
+w rozkwicie
+kwitnący
+muskularny
+umięśniony
+krzepki",,,
+108857,WORD_VERB_U,,HIRAGANA,,,磨り潰す,すりつぶす,,suri tsubusu,"gnieść
+rozgniatać
+tłuc
+kruszyć
+proszkować
+rozwiać (fortunę)
+zużyć
+tracić",,,
+108858,WORD_VERB_U,,HIRAGANA,,,擂り潰す,すりつぶす,,suri tsubusu,"gnieść
+rozgniatać
+tłuc
+kruszyć
+proszkować
+rozwiać (fortunę)
+zużyć
+tracić",,,
+108859,WORD_VERB_U,,HIRAGANA,,,擂りつぶす,すりつぶす,,suri tsubusu,"gnieść
+rozgniatać
+tłuc
+kruszyć
+proszkować
+rozwiać (fortunę)
+zużyć
+tracić",,,
+108860,WORD_VERB_U,,HIRAGANA,,,磨りつぶす,すりつぶす,,suri tsubusu,"gnieść
+rozgniatać
+tłuc
+kruszyć
+proszkować
+rozwiać (fortunę)
+zużyć
+tracić",,,
+108861,WORD_VERB_U,,HIRAGANA,,,擂潰す,すりつぶす,,suri tsubusu,"gnieść
+rozgniatać
+tłuc
+kruszyć
+proszkować
+rozwiać (fortunę)
+zużyć
+tracić",,,
+108862,WORD_NOUN,,KATAKANA,,,-,アグリー,,agurii,"zgadzać się
+brzydki
+paskudny","ang:agree, ugly",,
+108863,WORD_ADVERB,,HIRAGANA,,,拳々,けんけん,,ken ken,"z szacunkiem
+z poważaniem
+z powagą
+czcigodnie",,,DUPLICATE 108799
+108864,WORD_NOUN,,HIRAGANA,,,揚巻,あげまき,,agemaki,"staromodna fryzura dla chłopców
+kobieca fryzura w okresie Meiji
+rodzaj tańca w kabuki
+węzły w kolorze czterech punktów kardynalnych zwisających z dachu
+sinonovacula constricta (skrót)
+???",,,
+108865,WORD_VERB_U,,HIRAGANA,,,聴きこむ,ききこむ,,kiki komu,"wsłuchać się
+wsłuchiwać się
+skupić się na (muzyce, rozmowie i etc)",,,
+108866,"WORD_ADVERB_TO
+WORD_ADVERB",,HIRAGANA,,,-,がっぽり,,gappori,w dużych ilościach,,,
+108867,WORD_VERB_U,,HIRAGANA,,,打ち壊す,ぶちこわす,,buchi kowasu,"niszczyć
+rozbić
+zepsuć
+rujnować",,,DUPLICATE 108868
+108868,WORD_VERB_U,,HIRAGANA,,,打ち壊す,うちこわす,,uchi kowasu,"niszczyć
+rozbić
+zepsuć
+rujnować",,,DUPLICATE 108867
+108869,WORD_VERB_U,,KATAKANA_HIRAGANA,,,ブチ壊す,ブチこわす,,buchi kowasu,"niszczyć
+rozbić
+zepsuć
+rujnować",,,
+108870,WORD_VERB_U,,HIRAGANA,,,打ちこわす,うちこわす,,uchi kowasu,"niszczyć
+rozbić
+zepsuć
+rujnować",,,
+108871,WORD_VERB_U,,HIRAGANA,,,打壊す,ぶちこわす,,buchi kowasu,"niszczyć
+rozbić
+zepsuć
+rujnować",,,DUPLICATE 108872
+108872,WORD_VERB_U,,HIRAGANA,,,打壊す,うちこわす,,uchi kowasu,"niszczyć
+rozbić
+zepsuć
+rujnować",,,DUPLICATE 108871
+108873,WORD_VERB_U,,HIRAGANA,,,打ち毀す,ぶちこわす,,buchi kowasu,"niszczyć
+rozbić
+zepsuć
+rujnować",,,DUPLICATE 108874
+108874,WORD_VERB_U,,HIRAGANA,,,打ち毀す,うちこわす,,uchi kowasu,"niszczyć
+rozbić
+zepsuć
+rujnować",,,DUPLICATE 108873
+108875,WORD_VERB_U,,HIRAGANA,,,遜る,へりくだる,,herikudaru,"umniejszać siebie i wychwalać słuchacza
+poniżyć się",,,
+108876,WORD_VERB_U,,HIRAGANA,,,守り切る,まもりきる,,mamori kiru,zachować coś,"np. sekret, prowadzenie w wyścigu i etc",,
+108877,WORD_NOUN,,HIRAGANA,,,揚出し豆腐,あげだしどうふ,,agedashi doufu,lekkie tofu smażone w głębokim tłuszczu,,,
+108878,WORD_NOUN,,KATAKANA,,,-,オルタネタ,,orutaneta,"alternator
+prądnica prądu zmiennego",,,
+108879,WORD_NOUN,,HIRAGANA,,,あく抜き,あくぬき,,akunuki,usunięcie cierpkiego smaku,np. poprzez gotowanie,,
+108880,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,取って置き,とっておき,,totte oki,"rezerwa
+rezerwowy
+zapas
+zapasowy
+cenny
+drogi
+atut",,,
+108881,WORD_VERB_U,,HIRAGANA,,,尋ぬ,たんぬ,,tannu,"pytać
+zapytać
+szukać
+przeszukiwać
+badać
+dosiekać",archaizm,,DUPLICATE 108835
+108882,WORD_NOUN,,HIRAGANA,,,爪痕,つめあと,,tsumeato,"ślad pazurów
+ślad zadrapania
+blizna
+skutki
+niszczące skutki
+następstwa",,,
+108883,WORD_NOUN,,HIRAGANA,,,拳拳服膺,けんけんふくよう,,ken ken fukuyou,"mocno zapaść w pamięci
+mieć coś wyrytego w swojej głowie (sercu)",,,
+108884,WORD_NOUN,,KATAKANA,,,-,ライトスルー・キャッシュ,,raitosuruu kyasshu,???,"informatyka, ang: write-through cache",,
+108885,WORD_NOUN,,HIRAGANA,,,再従兄弟,はいとこ,,haitoko,kuzyn w drugiej linii,,,DUPLICATE 108850
+108886,WORD_NOUN,,HIRAGANA,,,再従姉妹,はとこ,,hatoko,kuzyn w drugiej linii,,,DUPLICATE 108887
+108887,WORD_NOUN,,HIRAGANA,,,再従姉妹,さいじゅうけいてい,,saijuu keitei,kuzyn w drugiej linii,,,DUPLICATE 108886
+108888,WORD_NOUN,,HIRAGANA,,,再従姉弟,はとこ,,hatoko,kuzyn w drugiej linii,,,
+108889,WORD_NOUN,,HIRAGANA,,,再従兄妹,はとこ,,hatoko,kuzyn w drugiej linii,,,
