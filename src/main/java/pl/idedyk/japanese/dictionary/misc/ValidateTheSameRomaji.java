@@ -1,18 +1,10 @@
 package pl.idedyk.japanese.dictionary.misc;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 import java.util.TreeMap;
-import java.util.Map.Entry;
 
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryGroup;
 import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
@@ -28,23 +20,24 @@ public class ValidateTheSameRomaji {
 		// to jest klasa pomocnicza, tymczasowa
 		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
-		List<PolishJapaneseEntry> polishJapaneseEntriesSource = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
+		//List<PolishJapaneseEntry> polishJapaneseEntriesSource = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
 		
+		/*
 		// utworz mape z id'kami
 		TreeMap<Integer, PolishJapaneseEntry> polishJapaneseEntriesSourceIdMap = new TreeMap<Integer, PolishJapaneseEntry>();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesSource) {
 			polishJapaneseEntriesSourceIdMap.put(polishJapaneseEntry.getId(), polishJapaneseEntry);
 		}
+		*/
 		
 		//
 		
 		// read edict common
-		TreeMap<String, EDictEntry> jmedictCommon = EdictReader
-				.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
+		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
 
 		// read new jmedict
-		System.out.println("new jmedict");
+		//System.out.println("new jmedict");
 		
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 		
@@ -55,6 +48,11 @@ public class ValidateTheSameRomaji {
 		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries);
 		
 		//
+				
+		Validator.validateEdictGroupRomaji(polishJapaneseEntries);
+		
+		/*
+		Archiwum:
 		
 		List<PolishJapaneseEntry> result = new ArrayList<>();
 		
@@ -118,6 +116,6 @@ public class ValidateTheSameRomaji {
 		}
 
 		CsvReaderWriter.generateCsv(new String[] { "input/word01-te-same-romaji-wynik.csv", "input/word02-te-same-romaji-wynik.csv" }, result, true, true, false);
-
+		*/
 	}
 }
