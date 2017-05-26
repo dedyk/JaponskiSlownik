@@ -325,12 +325,12 @@ public class WordGenerator {
 									
 									//
 									
-									if (polishJapaneseEntry.isKanjiExists() == true) {
+									if (checkInJishoOrg == true && polishJapaneseEntry.isKanjiExists() == true) {
 										searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
 												"Szukanie w jisho.org (znaleziono kanji): " + polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKanji());
 									}
 
-									if (polishJapaneseEntry.getKana() != null) {
+									if (checkInJishoOrg == true && polishJapaneseEntry.getKana() != null) {
 										searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
 												"Szukanie w jisho.org (znaleziono kana): " + polishJapaneseEntry.getKana(), polishJapaneseEntry.getKana());
 									}
