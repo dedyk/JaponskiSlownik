@@ -321,8 +321,19 @@ public class WordGenerator {
 										foundWordList.add(polishJapaneseEntry);
 										
 										foundWordListInCommonWordMap.put(commonWord.getId(), commonWord);
+									}		
+									
+									//
+									
+									if (polishJapaneseEntry.isKanjiExists() == true) {
+										searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
+												"Szukanie w jisho.org (znaleziono kanji): " + polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKanji());
+									}
 
-									}									
+									if (polishJapaneseEntry.getKana() != null) {
+										searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
+												"Szukanie w jisho.org (znaleziono kana): " + polishJapaneseEntry.getKana(), polishJapaneseEntry.getKana());
+									}
 									
 								} else {
 									alreadyAddedWordList.add(polishJapaneseEntry);
@@ -330,31 +341,13 @@ public class WordGenerator {
 							}								
 						}	
 						
-						/*
 						// dodatkowe sprawdzenie, w celu poszukiwania dodatkowych slow
 						if (checkInJishoOrg == true) {	
 							
-							System.out.println("Szukanie w jisho.org (znaleziono): " + currentMissingWord);
+							searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
+									"Szukanie w jisho.org (znaleziono): " + currentMissingWord, currentMissingWord);
 							
-							List<JapaneseWord> japaneseWords = jishoOrgConnector.getJapaneseWords(currentMissingWord);
-							
-							for (JapaneseWord japaneseWord : japaneseWords) {
-																
-								if (	jmeNewDictionary.getGroupEntryList(japaneseWord.kanji, japaneseWord.kana) != null &&
-										Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, japaneseWord.kanji, japaneseWord.kana) == null &&
-										existsInCommonWords(commonWordMap, japaneseWord.kanji, japaneseWord.kana) == false) {
-									
-									if (japaneseWord.kanji != null) {
-										newAdditionalWordToCheckWordList.add(japaneseWord.kanji);
-									}
-									
-									if (japaneseWord.kana != null) {
-										newAdditionalWordToCheckWordList.add(japaneseWord.kana);
-									}
-								}
-							}
 						}
-						*/
 						
 					} else {
 						
@@ -364,49 +357,9 @@ public class WordGenerator {
 												
 						boolean wordExistsInJishoOrg = false;
 						
-						if (checkInJishoOrg == true) {	
-							
-							System.out.println("Szukanie w jisho.org: " + currentMissingWord);
-							
-							List<JapaneseWord> japaneseWords = jishoOrgConnector.getJapaneseWords(currentMissingWord);
-							
-							for (JapaneseWord japaneseWord : japaneseWords) {
-								
-								List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(japaneseWord.kanji, japaneseWord.kana);
-								
-								if (groupEntryList != null) {
-									
-									groupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
-									
-									boolean isAdd = true;
-									
-									for (GroupEntry groupEntry : groupEntryList) {
-										
-										if (	Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry.getKanji(), groupEntry.getKana()) != null ||
-												existsInCommonWords(commonWordMap, groupEntry.getKanji(), groupEntry.getKana()) == true) {
-																						
-											isAdd = false;
-											
-											break;
-										}
-									}
-									
-									if (isAdd == true) {
-																				
-										if (japaneseWord.kanji != null) {
-											newAdditionalWordToCheckWordList.add(japaneseWord.kanji);
-										}
-										
-										if (japaneseWord.kana != null) {
-											newAdditionalWordToCheckWordList.add(japaneseWord.kana);
-										}
-									}
-								}
-							}
-							
-							//
-							
-							wordExistsInJishoOrg = japaneseWords.size() > 0;
+						if (checkInJishoOrg == true) {								
+							wordExistsInJishoOrg = searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
+									"Szukanie w jisho.org (nie znaleziono): " + currentMissingWord, currentMissingWord);
 						}
 						
 						if (wordExistsInJishoOrg == true) {
@@ -2692,5 +2645,60 @@ public class WordGenerator {
 				polishJapaneseEntry.getTranslates().toString();
 		
 		return key;		
+	}
+	
+	private static boolean searchInJishoForAdditionalWords(WordGeneratorHelper wordGeneratorHelper, LinkedHashSet<String> newAdditionalWordToCheckWordList, JishoOrgConnector jishoOrgConnector, String messageTemplate, String word) throws Exception {
+		
+		JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+		
+		Map<Integer, CommonWord> commonWordMap = wordGeneratorHelper.getCommonWordMap();
+		
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
+		
+		//
+		
+		System.out.println(messageTemplate);
+		
+		//
+		
+		List<JapaneseWord> japaneseWords = jishoOrgConnector.getJapaneseWords(word);
+		
+		for (JapaneseWord japaneseWord : japaneseWords) {
+			
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(japaneseWord.kanji, japaneseWord.kana);
+			
+			if (groupEntryList != null) {
+				
+				groupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
+				
+				boolean isAdd = true;
+				
+				for (GroupEntry groupEntry : groupEntryList) {
+					
+					if (	Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry.getKanji(), groupEntry.getKana()) != null ||
+							existsInCommonWords(commonWordMap, groupEntry.getKanji(), groupEntry.getKana()) == true) {
+																	
+						isAdd = false;
+						
+						break;
+					}
+				}
+				
+				if (isAdd == true) {
+															
+					if (japaneseWord.kanji != null) {
+						newAdditionalWordToCheckWordList.add(japaneseWord.kanji);
+					}
+					
+					if (japaneseWord.kana != null) {
+						newAdditionalWordToCheckWordList.add(japaneseWord.kana);
+					}
+				}
+			}
+		}
+		
+		//
+		
+		return japaneseWords.size() > 0;
 	}
 }
