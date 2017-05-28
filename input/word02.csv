@@ -22021,7 +22021,7 @@ zarządzanie oparte na aktywności","ang: antiballistic missile, activity-based 
 edukacja “bezciśnieniowa”",japońska polityka edukacyjna polegająca na redukcji godzin i treści programu nauczania w szkole,,
 110178,WORD_NOUN,,HIRAGANA,,,金平糖,こんぺいとう,,konpeitou,"konpeitō
 kompeitō","japońskie cukierki, często barwione, ale niearomatyzowane",,
-110179,WORD_NOUN,,KATAKANA,,,-,ニセクロスジイソハゼ,,nisekurosujiisohaze,eviota cometa,zwierze,,
+110179,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ニセクロスジイソハゼ,,nisekurosujiisohaze,eviota cometa,zwierze,,
 110180,WORD_NOUN,,HIRAGANA,,,法的措置,ほうてきそち,,houteki sochi,droga sądowa,,,
 110181,WORD_NOUN,,KATAKANA,,,-,コーデ,,koode,"koordynacja
 dopasowanie (np. ubrań, akcesoriów, mebli, kolorów i etc)",skrót,,
@@ -22040,8 +22040,8 @@ WORD_ADJECTIVE_TARU
 WORD_ADJECTIVE_NO",,HIRAGANA,,,繚乱,りょうらん,,ryouran,"obficie
 bogato",szczególnie kwitnące kwiaty,,
 110188,WORD_NOUN,,HIRAGANA,,,小目,こもく,,komoku,"3-4 punkty (w go)
-komoku",,,
-110189,WORD_NOUN,,HIRAGANA,,,小目,しょうもく,,shoumoku,???,,,
+komoku",,,DUPLICATE 110189
+110189,WORD_NOUN,,HIRAGANA,,,小目,しょうもく,,shoumoku,???,,,DUPLICATE 110188
 110190,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,豪爽,ごうそう,,gousou,???,,,
 110191,WORD_NOUN,,HIRAGANA,,,奈良県,ならけん,,nara ken,prefektura Nara,,,
@@ -22052,7 +22052,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,貴兄,きけい,,kikei,ty,"używane przez mężc
 110194,WORD_NOUN,,HIRAGANA,,,毛顎動物門,もうがくどうぶつもん,,mougaku doubutsumon,"szczecioszczękie
 szczecioszczęki
 strzałki morskie","typ drobnych morskich, drapieżnych zwierząt bezkręgowych",,
-110195,WORD_NOUN,,HIRAGANA,,,兎座,うさぎざ,,usagiza,"Gwiazdozbiór Zająca
+110195,WORD_NOUN,,HIRAGANA,,,兎座,うさぎざ,,usagi za,"Gwiazdozbiór Zająca
 Zając","niewielki, 51. co do wielkości gwiazdozbiór położony na południe od Oriona i na wschód od Wielkiego Psa",,
 110196,WORD_NOUN,,HIRAGANA,,,糞袋,くそぶくろ,,kusobukuro,"brzuch (archaizm)
 jelita (archaizm)
@@ -22064,7 +22064,7 @@ torba na odchody (np. psa)",,,
 WORD_ADJECTIVE_NO",,HIRAGANA,,,現代風,げんだいふう,,gendaifuu,"nowoczesny styl
 w nowoczesnym stylu
 nowoczesność",,,
-110198,WORD_NOUN,,HIRAGANA,,,筋子,すじこ,,sujiko,solona ikra łososia,,,
+110198,WORD_NOUN,,HIRAGANA,,,筋子,すじこ,,sujiko,solona ikra łososia,,,DUPLICATE 110273
 110199,WORD_NOUN,,HIRAGANA,,,屠殺場,とさつじょう,,tosatsujou,"rzeźnia
 ubojnia",wrażliwie,,
 110200,WORD_NOUN,,HIRAGANA,,,日本的経営,にほんてきけいえい,,nihonteki keiei,"zarządzanie firmą w japońskim stylu
@@ -22087,7 +22087,8 @@ pochodzenie",,,
 110212,WORD_NOUN,,HIRAGANA,,,成因,せいいん,,seiin,"źródło
 przyczyna
 powód",,,
-110213,WORD_NOUN,,HIRAGANA,,,黄麻,おうま,,ouma,juta,włókno produkowane z łodyg rośliny juty oraz wytwarzana z niego tkanina o splocie płóciennym,,
+110213,WORD_NOUN,,HIRAGANA,,,黄麻,おうま,,ouma,juta,włókno produkowane z łodyg rośliny juty oraz wytwarzana z niego tkanina o splocie płóciennym,,"DUPLICATE 110276
+DUPLICATE 110277"
 110214,WORD_NOUN,,KATAKANA,,,-,ジュート,,juuto,juta,"włókno produkowane z łodyg rośliny juty oraz wytwarzana z niego tkanina o splocie płóciennym, ang: jute",,
 110215,WORD_NOUN,,HIRAGANA,,,麻袋,あさぶくろ,,asabukuro,"torba wykonany z juty
 torba z juty
@@ -22112,7 +22113,7 @@ usposobienie
 porywczość
 wybuchowość",,,
 110220,WORD_NOUN,,HIRAGANA,,,敗戦国,はいせんこく,,haisenkoku,pokonany kraj,,,
-110221,WORD_NOUN,,HIRAGANA,,,心付け,こころづけ,,kokoroduke,napiwek,,,
+110221,WORD_NOUN,,HIRAGANA,,,心付け,こころづけ,,kokoro duke,napiwek,,,
 110222,WORD_NOUN,,HIRAGANA,,,編笠茸,あみがさたけ,,amigasatake,smardz,rodzaj grzybów należący do rodziny smardzowatych,,
 110223,WORD_NOUN,,HIRAGANA,,,鱗茎菜類,りんけいさいるい,,rinkei sairui,warzywa cebulowe,,,
 110224,WORD_NOUN,,HIRAGANA,,,分葱,わけぎ,,wakegi,"czosnek dęty
@@ -22172,7 +22173,7 @@ nastawienie do małżeństwa
 stosunek do małżeństwa",,,
 110248,WORD_NOUN,,HIRAGANA,,,黄麻布,おうまふ,,oumafu,juta,rodzaj materiału,,
 110249,WORD_VERB_RU,,HIRAGANA,,,-,しみったれる,,shimittareru,być skąpy,,,
-110250,WORD_NOUN,,HIRAGANA,,,癇癪玉,かんしゃくだま,,kanshakudama,"przypływ złości
+110250,WORD_NOUN,,HIRAGANA,,,癇癪玉,かんしゃくだま,,kanshaku dama,"przypływ złości
 przypływ gniewu
 wściekłość
 furia
@@ -22187,3 +22188,103 @@ wybuchowa osoba",,,
 110254,WORD_NOUN,,HIRAGANA,,,音便形,おんびんけい,,onbinkei,eufoniczna zmiana formy,,,
 110255,WORD_NOUN,,HIRAGANA,,,介助犬,かいじょけん,,kaijoken,"pies pomocnik
 pies opiekun",typ psa towarzyszącego osobie niepełnosprawnej szkolony do wykonywania specyficznej pracy dla swojego opiekuna,,
+110256,WORD_VERB_U,,HIRAGANA,,,-,ひりつく,,hiritsuku,"zranić
+sprawić ból
+urazić
+boleć
+cierpieć
+ukłuć",,,
+110257,WORD_EXPRESSION,,HIRAGANA,,,幾ら何でも,いくらなんでも,,ikura nan demo,???,,,
+110258,WORD_NOUN,,HIRAGANA,,,笑い種,わらいぐさ,,warai gusa,pośmiewisko,,,
+110259,WORD_VERB_U,,HIRAGANA,,,言直す,いいなおす,,ii naosu,"poprawić się
+poprawiać się
+ponownie oświadczać
+ponownie przedstawiać",,,
+110260,WORD_VERB_U,,HIRAGANA,,,言いなおす,いいなおす,,ii naosu,"poprawić się
+poprawiać się
+ponownie oświadczać
+ponownie przedstawiać",,,
+110261,WORD_NOUN,,HIRAGANA,,,切字,きれじ,,kireji,"interpunkcyjne słowa w haiku, renga, jak np. “ya”, “kana”, “keri” i etc",,,
+110262,"WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,-,ちゃらちゃら,,chara chara,"brzęk
+dzwonek
+brzękanie
+pobrzękiwanie
+gadatliwie
+rozmownie
+paplanie
+kokieteryjny
+zalotny
+bałamutny
+na pokaz
+niestały
+pozorny
+pobieżny
+powierzchowny",,,
+110263,WORD_NOUN,,HIRAGANA,,,悪足掻き,わるあがき,,waru agaki,"bezużyteczny opór
+daremna walka",,,
+110264,WORD_NOUN,,HIRAGANA,,,止め針,とめばり,,tomebari,szpilka,,,
+110265,WORD_NOUN,,HIRAGANA,,,留針,とめばり,,tomebari,szpilka,,,
+110266,WORD_NOUN,,HIRAGANA,,,止針,とめばり,,tomebari,szpilka,,,
+110267,WORD_NOUN,,HIRAGANA,,,金米糖,こんぺいとう,,konpeitou,"konpeitō
+kompeitō","japońskie cukierki, często barwione, ale niearomatyzowane",,
+110268,WORD_NOUN,,KATAKANA,,,-,コンペイトー,,konpeitoo,"konpeitō
+kompeitō","japońskie cukierki, często barwione, ale niearomatyzowane",,
+110269,WORD_NOUN,,KATAKANA,,,-,コンペートー,,konpeetoo,"konpeitō
+kompeitō","japońskie cukierki, często barwione, ale niearomatyzowane",,
+110270,"WORD_ADVERB_TO
+WORD_ADJECTIVE_TARU
+WORD_ADJECTIVE_NO",,HIRAGANA,,,撩乱,りょうらん,,ryouran,"obficie
+bogato",szczególnie kwitnące kwiaty,,
+110271,WORD_NOUN,,HIRAGANA,,,うさぎ座,うさぎざ,,usagi za,"Gwiazdozbiór Zająca
+Zając","niewielki, 51. co do wielkości gwiazdozbiór położony na południe od Oriona i na wschód od Wielkiego Psa",,
+110272,WORD_NOUN,,HIRAGANA,,,糞嚢,くそぶくろ,,kusobukuro,"brzuch (archaizm)
+jelita (archaizm)
+istota ludzka (archaizm)
+ludzkie ciało (archaizm)
+torba na kupę
+torba na odchody (np. psa)",,,
+110273,WORD_NOUN,,HIRAGANA,,,筋子,すずこ,,suzuko,solona ikra łososia,,,DUPLICATE 110198
+110274,WORD_NOUN,,KATAKANA,,,-,フェタ・チーズ,,feta chiizu,ser feta,ang: feta cheese,,
+110275,WORD_NOUN,,KATAKANA,,,-,コーディネイション,,koodineishon,koordynacja,ang: coordination,,
+110276,WORD_NOUN,,HIRAGANA,,,黄麻,つなそ,,tsunaso,juta,włókno produkowane z łodyg rośliny juty oraz wytwarzana z niego tkanina o splocie płóciennym,,"DUPLICATE 110213
+DUPLICATE 110277"
+110277,WORD_NOUN,,HIRAGANA,,,黄麻,こうま,,kouma,juta,włókno produkowane z łodyg rośliny juty oraz wytwarzana z niego tkanina o splocie płóciennym,,"DUPLICATE 110213
+DUPLICATE 110276"
+110278,WORD_NOUN,,HIRAGANA,,,綱麻,つなそ,,tsunaso,juta,włókno produkowane z łodyg rośliny juty oraz wytwarzana z niego tkanina o splocie płóciennym,,
+110279,WORD_NOUN,,KATAKANA,,,-,ジュト,,juto,juta,"włókno produkowane z łodyg rośliny juty oraz wytwarzana z niego tkanina o splocie płóciennym, ang: jute",,
+110280,WORD_NOUN,,HIRAGANA,,,疳癪,かんしゃく,,kanshaku,"namiętność
+pasja
+temperament
+usposobienie
+porywczość
+wybuchowość",,,
+110281,WORD_NOUN,,HIRAGANA,,,心づけ,こころづけ,,kokoro duke,napiwek,,,
+110282,WORD_NOUN,,HIRAGANA,,,心付,こころづけ,,kokoro duke,napiwek,,,
+110283,WORD_NOUN,,KATAKANA,,,-,ワケギ,,wakegi,"czosnek dęty
+cebulka dymka",roślina,,
+110284,WORD_NOUN,,HIRAGANA,,,長葱,ながねぎ,,naganegi,"shallot
+cebula szalotka",roślina,,
+110285,WORD_NOUN,,KATAKANA,,,-,ポワロ,,powaro,por,allium porrum,,
+110286,WORD_NOUN,,HIRAGANA,,,つるし雲,つるしぐも,,tsurushi gumo,"roll cloud
+wał rotorowy","pozioma, kształtem przypominająca rurę, chmura towarzysząca frontowi szkwałowemu w burzy (czasami pojawia się też na chłodnym froncie atmosferycznym)",,
+110287,WORD_VERB_RU,,HIRAGANA,,,聞分ける,ききわける,,kiki wakeru,"rozpoznawać przez dźwięk
+identyfikacja dźwiękiem
+rozumieć
+być rozumny",,,
+110288,WORD_NOUN,,HIRAGANA,,,疳癪玉,かんしゃくだま,,kanshaku dama,"przypływ złości
+przypływ gniewu
+wściekłość
+furia
+petarda",,,
+110289,WORD_NOUN,,HIRAGANA,,,かんしゃく玉,かんしゃくだま,,kanshaku dama,"przypływ złości
+przypływ gniewu
+wściekłość
+furia
+petarda",,,
+110290,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,かんしゃくを起こす,かんしゃくをおこす,,kanshaku o okosu,"stracić panowanie nad sobą
+dostać napadu złości
+wpaść we wściekłość",,,
+110291,WORD_NOUN,,HIRAGANA,,,かんしゃく持ち,かんしゃくもち,,kanshaku mochi,"porywcza osoba
+wybuchowa osoba",,,
