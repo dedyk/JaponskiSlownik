@@ -22336,14 +22336,16 @@ metoda zarządzania
 lalecznik",,,
 110310,WORD_NOUN,,HIRAGANA,,,最終版,さいしゅうはん,,saishuuhan,"finalna wersja
 wersja ostateczna",,,
-110311,WORD_NOUN,,HIRAGANA,,,世間様,せけんさま,,sekensama,"świat
+110311,WORD_NOUN,,HIRAGANA,,,世間様,せけんさま,,seken sama,"świat
 społeczeństwo",honoryfikatywnie,,
 110312,WORD_NOUN,,HIRAGANA,,,理解力,りかいりょく,,rikairyoku,zdolność pojmowania,,,
 110313,WORD_NOUN,,HIRAGANA,,,引航,いんこう,,inkou,"holowanie
 pociąganie",,,
 110314,WORD_NOUN,,HIRAGANA,,,暁闇,あかつきやみ,,akatsukiyami,"bezksiężycowy świt
-bezksiężycowy brzask",,,
-110315,WORD_NOUN,,HIRAGANA,,,暁闇,ぎょうあん,,gyouan,mrok przed świtem,,,
+bezksiężycowy brzask",,,"DUPLICATE 110315
+DUPLICATE 110441"
+110315,WORD_NOUN,,HIRAGANA,,,暁闇,ぎょうあん,,gyouan,mrok przed świtem,,,"DUPLICATE 110314
+DUPLICATE 110441"
 110316,WORD_NOUN,,HIRAGANA,,,梵唄,ぼんばい,,bonbai,pieśń na cześć cnót Buddy,,,
 110317,WORD_NOUN,,HIRAGANA,,,置きっ放し,おきっぱなし,,okippanashi,"zostawienie czegoś tak gdzie jest
 porzucenie czegoś",,,
@@ -22351,7 +22353,7 @@ porzucenie czegoś",,,
 110319,WORD_NOUN,,HIRAGANA,,,枢木,くるるぎ,,kururugi,przesuwana drewniana zasuwa,do zamykania drzwi lub okna,,
 110320,WORD_NOUN,,HIRAGANA,,,概評,がいひょう,,gaihyou,"ogólny pogląd
 komentarz",,,
-110321,WORD_NOUN,,HIRAGANA,,,両忘,りょうぼう,,ryoubou,???,mało znane słowo,,
+110321,WORD_NOUN,,HIRAGANA,,,両忘,りょうぼう,,ryoubou,???,mało znane słowo,,DUPLICATE 110443
 110322,WORD_NOUN,,HIRAGANA,,,運動音痴,うんどうおんち,,undou onchi,"mieć słaby refleks
 być niewysportowany
 być nieatletyczny
@@ -22373,7 +22375,8 @@ język honoryfikatywny",,,
 110328,WORD_NOUN,,HIRAGANA,,,人種問題,じんしゅもんだい,,jinshu mondai,"kwestia rasowa
 kwestia rasy
 problem rasy",,,
-110329,WORD_NOUN,,HIRAGANA,,,麦飯,むぎめし,,mugimeshi,gotowany jęczmień i ryż,,,
+110329,WORD_NOUN,,HIRAGANA,,,麦飯,むぎめし,,mugimeshi,gotowany jęczmień i ryż,,,"DUPLICATE 110445
+DUPLICATE 110446"
 110330,WORD_NOUN,,HIRAGANA,,,伴食,ばんしょく,,banshoku,"jedzenie z gościem
 nominalny urzędnik (lekceważące określenie)",,,
 110331,WORD_EXPRESSION,,KATAKANA,,,-,ラジャ,,raja,"przyjąłem
@@ -22382,7 +22385,7 @@ zrozumiałem","używane w komunikacji radiotelefoniczne, ang: roger",,
 wbiec (np. do pokoju, budynku)
 pójść na bardzo długie biegi",,,
 110333,WORD_NOUN,,HIRAGANA,,,呼吸孔,こきゅうこう,,kokyuukou,otwór oddechowy,,,
-110334,WORD_NOUN,,HIRAGANA,,,大金持ち,おおがねもち,,ooganemochi,bardzo bogata osoba,,,
+110334,WORD_NOUN,,HIRAGANA,,,大金持ち,おおがねもち,,oogane mochi,bardzo bogata osoba,,,DUPLICATE 110449
 110335,WORD_NOUN,,HIRAGANA,,,無症状,むしょうじょう,,mushoujou,"bez objawów
 bez symptomów
 bezobjawowo",,,
@@ -22485,7 +22488,7 @@ pozbyć się",,,
 WORD_EXPRESSION",,HIRAGANA,,,風邪ひく,かぜひく,,kaze hiku,"przeziębić się
 złapać przeziębienie",,,
 110380,WORD_NOUN,,HIRAGANA,,,恵比寿顔,えびすがお,,ebisu gao,uśmiechnięta twarz,,,
-110381,WORD_NOUN,,HIRAGANA,,,黒檜,くろべ,,kurobe,żywotnik japoński,"roślina, thuja standishii",,
+110381,WORD_NOUN,,HIRAGANA,,,黒檜,くろべ,,kurobe,żywotnik japoński,"roślina, thuja standishii",,DUPLICATE 110476
 110382,WORD_NOUN,,HIRAGANA,,,時代祭,じだいまつり,,jidai matsuri,festiwal Jidai,"odbywa się w Kioto, 22 października",,
 110383,WORD_NOUN,,HIRAGANA,,,無価値,むかち,,mukachi,"bezwartościowość
 nieprzydatność",,,
@@ -22532,7 +22535,7 @@ niepozorny
 niedostrzegalny
 dyskretny
 cichy",,,
-110403,WORD_VERB_U,,HIRAGANA,,,呉れてやる,くれてやる,,kureteyaru,"dawać
+110403,WORD_VERB_U,,HIRAGANA,,,呉れてやる,くれてやる,,kurete yaru,"dawać
 robić (coś) dla",,,
 110404,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,粋狂,すいきょう,,suikyou,"kaprys
@@ -22551,7 +22554,7 @@ dziwaczność",,,
 WORD_ADJECTIVE_NO",,HIRAGANA,,,草莽,そうもう,,soumou,"człowiek z gminu
 plebejusz
 pokorny poddany
-w okresie późnego Edo opozycyjny obywatelski ruch",,,
+w okresie późnego Edo opozycyjny obywatelski ruch",,,DUPLICATE 110494
 110413,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,立体音響,りったいおんきょう,,rittai onkyou,stereofonia,,,
 110414,"WORD_ADJECTIVE_NA
@@ -22599,10 +22602,183 @@ powietrze z dodatkowym tlenem",ang: enriched air,,
 litościwy
 miłosierny
 dobroczynny
-litościwy
 ludzki",,,
 110431,WORD_NOUN,,HIRAGANA,,,結婚相談所,けっこんそうだんしょ,,kekkon soudansho,"agencja matrymonialna
 biuro matrymonialne",,,
 110432,WORD_ADJECTIVE_I,,HIRAGANA,,,青黒い,あおぐろい,,aoguroi,"czarny z odcieniem niebieskiego
 niebieskawo czarny",,,
 110433,WORD_NOUN,,HIRAGANA,,,反重力,はんじゅうりょく,,hanjuuryoku,antygrawitacja,hipotetyczne i nigdy niezaobserwowane w sposób potwierdzony naukowo oddziaływanie fizyczne,,
+110434,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,敬意をはらう,けいいをはらう,,keii o harau,oddać hołd,,,
+110435,WORD_NOUN,,HIRAGANA,,,尻たたき,しりたたき,,shiritataki,"lanie
+dawanie klapsa
+tradycyjna ceremonia, w której nowo poślubiona żona po wejściu do nowego domu, zostanie uderzona w tyłek pękiem słomy, w celu zapewnienia jej płodności",,,
+110436,WORD_ADJECTIVE_NO,,HIRAGANA,,,首石,おやいし,,oyaishi,"ważny kamień w konstrukcji
+istotny kamień w budowle",,,
+110437,WORD_NOUN,,KATAKANA,,,-,ロジン,,rojin,"kalafonia
+żywica",ang: rosin,,
+110438,"WORD_ADVERB_TO
+WORD_ADVERB",,HIRAGANA,,,何呉,なにくれ,,nani kure,na różne sposoby,,,
+110439,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,烱然,けいぜん,,keizen,"świecenie
+błyszczenie
+promieniujący
+jasny",,,
+110440,WORD_NOUN,,HIRAGANA,,,世間さま,せけんさま,,seken sama,"świat
+społeczeństwo",honoryfikatywnie,,
+110441,WORD_NOUN,,HIRAGANA,,,暁闇,あかときやみ,,akato kiyami,"bezksiężycowy świt
+bezksiężycowy brzask",,,"DUPLICATE 110314
+DUPLICATE 110315"
+110442,WORD_NOUN,,HIRAGANA,,,置きっぱなし,おきっぱなし,,okippanashi,"zostawienie czegoś tak gdzie jest
+porzucenie czegoś",,,
+110443,WORD_NOUN,,HIRAGANA,,,両忘,りょうもう,,ryoumou,???,mało znane słowo,,DUPLICATE 110321
+110444,WORD_VERB_RU,,HIRAGANA,,,遣り込める,やりこめる,,yarikomeru,"zapędzić do muru w argumentach
+przypierać do muru w argumentach",,,
+110445,WORD_NOUN,,HIRAGANA,,,麦飯,ばくはん,,bakuhan,gotowany jęczmień i ryż,,,"DUPLICATE 110329
+DUPLICATE 110446"
+110446,WORD_NOUN,,HIRAGANA,,,麦飯,むぎいい,,mugiii,gotowany jęczmień i ryż,,,"DUPLICATE 110329
+DUPLICATE 110445"
+110447,WORD_EXPRESSION,,KATAKANA,,,-,ラジャー,,rajaa,"przyjąłem
+zrozumiałem","używane w komunikacji radiotelefoniczne, ang: roger",,
+110448,WORD_VERB_U,,HIRAGANA,,,走りこむ,はしりこむ,,hashirikomu,"wpaść
+wbiec (np. do pokoju, budynku)
+pójść na bardzo długie biegi",,,
+110449,WORD_NOUN,,HIRAGANA,,,大金持ち,おおかねもち,,ookane mochi,bardzo bogata osoba,,,DUPLICATE 110334
+110450,WORD_NOUN,,HIRAGANA,,,大金持,おおがねもち,,oogane mochi,bardzo bogata osoba,,,DUPLICATE 110451
+110451,WORD_NOUN,,HIRAGANA,,,大金持,おおかねもち,,ookane mochi,bardzo bogata osoba,,,DUPLICATE 110450
+110452,WORD_ADVERB,,HIRAGANA,,,-,ちょきちょき,,choki choki,"dźwięk krojenia
+dźwięk cięcia
+ciąć",,,
+110453,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,時間が掛かる,じかんがかかる,,jikan ga kakaru,"wymagać czasu
+zabrać czasu",,,
+110454,WORD_VERB_U,,HIRAGANA,,,覚え込む,おぼえこむ,,oboekomu,"zapamiętać
+utrwalić w pamięci
+opanować (wiedzę)",,,
+110455,WORD_VERB_U,,HIRAGANA,,,覚込む,おぼえこむ,,oboekomu,"zapamiętać
+utrwalić w pamięci
+opanować (wiedzę)",,,
+110456,WORD_ADJECTIVE_I,,KATAKANA_HIRAGANA,,,ブス可愛い,ブスかわいい,,busu kawaii,"brzydki, ale słodki
+uroczo brzydki",slang,,
+110457,WORD_ADJECTIVE_NA,,HIRAGANA,,,根元的,こんげんてき,,kongenteki,"pierwotny
+prymitywny
+podstawowy
+fundamentalny",,,
+110458,WORD_NOUN,,KATAKANA,,,-,ビバーチェ,,bibaache,vivace,muzyka,,
+110459,WORD_NOUN,,KATAKANA,,,-,ヴィバーチェ,,vibaache,vivace,muzyka,,
+110460,WORD_ADJECTIVE_NA,,HIRAGANA,,,うり二つ,うりふたつ,,uri futatsu,podobne jak dwa melony,,,
+110461,WORD_NOUN,,KATAKANA,,,-,テーブル・チャージ,,teeburu chaaji,opłata za wstęp,table charge,,
+110462,WORD_NOUN,,KATAKANA,,,-,キタケバナウォンバット,,kitakebana wonbatto,"wombat australijski
+wombat szorstkonosym Kreffta
+wombatem północnym","krytycznie zagrożony wyginięciem gatunek torbacza z rodziny wombatowatych, lasiorhinus krefftii",,
+110463,WORD_NOUN,,KATAKANA,,,-,パンク・ロック,,panku rokku,punk rock,rodzaj muzyki,,
+110464,WORD_NOUN,,KATAKANA,,,-,ロジンバッグ,,rojin baggu,???,ang: rosin bag,,
+110465,WORD_NOUN,,KATAKANA,,,-,ロージン・バッグ,,roojin baggu,???,ang: rosin bag,,
+110466,WORD_NOUN,,KATAKANA,,,-,ロジン・バッグ,,rojin baggu,???,ang: rosin bag,,
+110467,WORD_ADVERB,,HIRAGANA,,,何呉と無く,なにくれとなく,,nani kure to naku,na różne sposoby,,,
+110468,WORD_ADVERB,,HIRAGANA,,,何呉となく,なにくれとなく,,nani kure to naku,na różne sposoby,,,
+110469,WORD_NOUN,,HIRAGANA,,,解れ髪,ほつれがみ,,hotsure gami,"rozczochrane włosy
+nieuczesane włosy",,,
+110470,WORD_VERB_AUX,,HIRAGANA,,,-,ざます,,zamasu,być,archaizm,,
+110471,WORD_ADVERB,,HIRAGANA,,,-,ごろりと,,gororito,"osunięcie
+zapadnięcie
+zawalenie się w dół
+mocne obracanie się",,,
+110472,WORD_VERB_U,,HIRAGANA,,,擲つ,なげうつ,,nageutsu,"porzucić
+opuścić
+wyrzucać
+pozbywać się
+pozbyć się",,,
+110473,WORD_VERB_U,,HIRAGANA,,,抛つ,なげうつ,,nageutsu,"porzucić
+opuścić
+wyrzucać
+pozbywać się
+pozbyć się",,,
+110474,WORD_VERB_U,,HIRAGANA,,,投打つ,なげうつ,,nageutsu,"porzucić
+opuścić
+wyrzucać
+pozbywać się
+pozbyć się",,,
+110475,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,風邪引く,かぜひく,,kaze hiku,"przeziębić się
+złapać przeziębienie",,,
+110476,WORD_NOUN,,HIRAGANA,,,黒檜,くろび,,kurobi,żywotnik japoński,"roślina, thuja standishii",,DUPLICATE 110381
+110477,WORD_NOUN,,HIRAGANA,,,黒桧,くろべ,,kurobe,żywotnik japoński,"roślina, thuja standishii",,DUPLICATE 110478
+110478,WORD_NOUN,,HIRAGANA,,,黒桧,くろび,,kurobi,żywotnik japoński,"roślina, thuja standishii",,DUPLICATE 110477
+110479,WORD_NOUN,,KATAKANA,,,-,クロベ,,kurobe,żywotnik japoński,"roślina, thuja standishii",,
+110480,WORD_NOUN,,HIRAGANA,,,時代祭り,じだいまつり,,jidai matsuri,festiwal Jidai,"odbywa się w Kioto, 22 października",,
+110481,WORD_ADVERB,,HIRAGANA_KATAKANA,,,-,ふーっと,,fuutto,???,,,
+110482,WORD_ADVERB,,KATAKANA_HIRAGANA,,,-,フーッと,,fuutto,???,,,
+110483,WORD_NOUN,,HIRAGANA,,,選取り,よりどり,,yoridori,zbieranie i wybieranie,,,
+110484,WORD_NOUN,,KATAKANA,,,-,ビニガ,,biniga,ocet,ang: vinegar,,
+110485,WORD_NOUN,,KATAKANA,,,-,ヴィネーグル,,vineeguru,ocet,ang: vinegar,,
+110486,WORD_NOUN,,KATAKANA,,,-,ヴィネガー,,vinegaa,ocet,ang: vinegar,,
+110487,WORD_NOUN,,HIRAGANA,,,伸び代,のびしろ,,nobishiro,???,,,
+110488,WORD_VERB_U,,HIRAGANA,,,呉れて遣る,くれてやる,,kurete yaru,"dawać
+robić (coś) dla",,,
+110489,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,酔狂,すいきょう,,suikyou,"kaprys
+zachcianka
+grymas
+kapryśność
+dziwaczność",,,
+110490,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,酔興,すいきょう,,suikyou,"kaprys
+zachcianka
+grymas
+kapryśność
+dziwaczność",,,
+110491,WORD_NOUN,,HIRAGANA,,,荒玉,あらたま,,ara tama,nieoszlifowany klejnot,,,
+110492,WORD_NOUN,,HIRAGANA,,,新玉,あらたま,,ara tama,nieoszlifowany klejnot,,,
+110493,WORD_NOUN,,HIRAGANA,,,璞,あらたま,,ara tama,nieoszlifowany klejnot,,,
+110494,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,草莽,そうぼう,,soubou,"człowiek z gminu
+plebejusz
+pokorny poddany
+w okresie późnego Edo opozycyjny obywatelski ruch",,,DUPLICATE 110412
+110495,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,クリアー,,kuriaa,???,ang: clear,,
+110496,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,クリヤー,,kuriyaa,???,ang: clear,,
+110497,WORD_NOUN,,KATAKANA,,,-,コダラ,,kodara,"plamiak
+łupacz
+wątłusz srebrzysty (gatunek morskiej ryby dorszokształtnej z rodziny dorszowatych, melanogrammus aeglefinus)
+ficus erecta (odmiana fikusa)",,,
+110498,WORD_ADJECTIVE_NA,,HIRAGANA,,,淋しげ,さびしげ,,sabishige,"wyglądać na samotnego
+wyglądać na samotną (osobę)",,,
+110499,WORD_ADJECTIVE_NA,,HIRAGANA,,,寂し気,さびしげ,,sabishige,"wyglądać na samotnego
+wyglądać na samotną (osobę)",,,
+110500,WORD_ADJECTIVE_NA,,HIRAGANA,,,淋し気,さびしげ,,sabishige,"wyglądać na samotnego
+wyglądać na samotną (osobę)",,,
+110501,WORD_NOUN,,HIRAGANA,,,鳩麦,はとむぎ,,hato mugi,"łzawnica ogrodowa
+łzawnica łzy Hioba
+koiks łzy Hioba
+proso jerozolimskie","gatunek rośliny z rodziny wiechlinowatych, coix lacryma-jobi",,
+110502,WORD_NOUN,,KATAKANA,,,-,ハトムギ,,hato mugi,"łzawnica ogrodowa
+łzawnica łzy Hioba
+koiks łzy Hioba
+proso jerozolimskie","gatunek rośliny z rodziny wiechlinowatych, coix lacryma-jobi",,
+110503,"WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,あく促,あくせく,,akuseku,"kapryśnie
+wybrednie
+pracowicie
+pilnie
+skrzętnie
+martwienie się o (małe rzeczy)",,,
+110504,"WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,偓促,あくせく,,akuseku,"kapryśnie
+wybrednie
+pracowicie
+pilnie
+skrzętnie
+martwienie się o (małe rzeczy)",,,
+110505,WORD_EXPRESSION,,HIRAGANA,,,御手柔らかに,おてやわらかに,,ote yawaraka ni,nie bądź zbyt twardy dla mnie,idiom,,
+110506,WORD_ADVERB,,HIRAGANA,,,御手柔らか,おてやわらか,,ote yawaraka,"delikatnie
+łagodnie
+umiarkowanie",,,
+110507,WORD_NOUN,,KATAKANA,,,-,エンリッチドエア,,enricchido ea,"powietrze wzbogacone
+powietrze z dodatkowym tlenem",ang: enriched air,,
+110508,WORD_ADJECTIVE_I,,HIRAGANA,,,黝い,あおぐろい,,aoguroi,"czarny z odcieniem niebieskiego
+niebieskawo czarny",,,
+110509,WORD_ADJECTIVE_I,,HIRAGANA,,,蒼黒い,あおぐろい,,aoguroi,"czarny z odcieniem niebieskiego
+niebieskawo czarny",,,
