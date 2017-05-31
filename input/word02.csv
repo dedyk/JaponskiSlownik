@@ -23346,7 +23346,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,調査中,ちょうさちゅう,,chousachuu,"być
 w trakcie dochodzenia",,,
 110752,WORD_NOUN,,KATAKANA,,,-,ステークホルダー,,suteekuhorudaa,"udziałowiec
 udziałowcy",ang: stakeholders,,
-110753,WORD_NOUN,,KATAKANA,,,ＮａＫ,ナック,,nakku,NaK,stop sodu i potasu,,
+110753,WORD_NOUN,,KATAKANA,,,ＮａＫ,ナック,,nakku,NaK,stop sodu i potasu,,DUPLICATE 110890
 110754,WORD_NOUN,,KATAKANA,,,-,クッパ,,kuppa,gukbap,koreańska ryżowa zupa,,
 110755,WORD_NOUN,,HIRAGANA,,,顔黒,がんぐろ,,ganguro,"ganguro
 młoda dziewczyna, która mocno opala swoją skórę, wybiela włosy i nosi ciężki makijaż",,,
@@ -23369,7 +23369,7 @@ sprzęt peryferyjny",,,
 110765,WORD_NOUN,,HIRAGANA,,,胸当て,むねあて,,muneate,"napierśnik (element zbroi)
 ochraniacz klatki piersiowej
 śliniak
-śliniaczek",,,
+śliniaczek",,,DUPLICATE 110894
 110766,WORD_NOUN,,HIRAGANA,,,指導教官,しどうきょうかん,,shidou kyoukan,"doradca naukowy
 doradca akademicki",,,
 110767,WORD_NOUN,,HIRAGANA,,,存在感,そんざいかん,,sonzaikan,prezencja,,,
@@ -23399,7 +23399,7 @@ WORD_EXPRESSION",,HIRAGANA,,,根を下ろす,ねをおろす,,ne o orosu,zakorze
 110781,WORD_NOUN,,HIRAGANA,,,会計疑惑,かいけいぎわく,,kaikei giwaku,"księgowa afera
 rachunkowa afera",,,
 110782,WORD_NOUN,,HIRAGANA,,,来邸,らいてい,,raitei,odwiedzanie czyjegoś mieszkania,,,
-110783,WORD_NOUN,,HIRAGANA,,,斎部,いみべ,,imibe,rodzina starożytnego kapłana Shinto,,,
+110783,WORD_NOUN,,HIRAGANA,,,斎部,いみべ,,imibe,rodzina starożytnego kapłana Shinto,,,DUPLICATE 110901
 110784,WORD_NOUN,,HIRAGANA,,,筆頭著者,ひっとうちょしゃ,,hittouchosha,pierwszy autor,,,
 110785,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,気にかける,きにかける,,ki ni kakeru,"ciążyć na swój umysł
@@ -23456,7 +23456,7 @@ kurcz
 skurcz
 spazm",,,
 110809,"WORD_ADVERB
-WORD_NOUN",,HIRAGANA,,,-,ざあっ,,zaa,odgłos wody,,,
+WORD_NOUN",,HIRAGANA_EXCEPTION,,,-,ざあっ,,zaa,odgłos wody,,,
 110810,WORD_NOUN,,KATAKANA,,,-,アンドラ,,andora,Andora,,,
 110811,WORD_NOUN,,HIRAGANA,,,角膜反射,かくまくはんしゃ,,kakumaku hansha,"odruch rogówki
 odruch rogówkowy",,,
@@ -23482,19 +23482,19 @@ rezerwat przyrody",,,
 kontrolować
 upływać
 mijać
-przemijać",,,
+przemijać",,,DUPLICATE 110917
 110819,WORD_VERB_IRREGULAR,,HIRAGANA,,,閲する,えっする,,essuru,"badać
 kontrolować
 upływać
 mijać
-przemijać",,,
+przemijać",,,DUPLICATE 110918
 110820,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,緋色,ひいろ,,hiiro,"lśniący czerwony
 szkarłatny",,,
 110821,WORD_NOUN,,HIRAGANA,,,市民活動,しみんかつどう,,shimin katsudou,"działalność obywatelska
 działania zapoczątkowane przez obywateli",,,
 110822,WORD_NOUN,,HIRAGANA,,,曲尺,かねじゃく,,kanejaku,"ekierka stolarza (do sprawdzania kątów)
-powszechny shaku (jednostka długości, około 30.3 cm)",,,
+powszechny shaku (jednostka długości, około 30.3 cm)",,,DUPLICATE 110919
 110823,WORD_NOUN,,HIRAGANA,,,白金族,はっきんぞく,,hakkin zoku,platynowce,chemia,,
 110824,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,折衷主義,せっちゅうしゅぎ,,secchuu shugi,eklektyzm,,,
@@ -23523,7 +23523,7 @@ zaciekły sprzeciw",,,
 chata pokryta strzechą
 chałupa
 moja skromna chata
-mój skromny dom",,,
+mój skromny dom",,,DUPLICATE 110927
 110837,WORD_NOUN,,HIRAGANA,,,公敵,こうてき,,kouteki,wróg publiczny,,,
 110838,WORD_NOUN,,HIRAGANA,,,庭いじり,にわいじり,,niwaijiri,"ogrodnictwo
 krzątanie się wokół ogrodu",,,
@@ -23557,7 +23557,7 @@ stać się nieodpowiedzialny (z powodu nadąsania)",,,
 WORD_EXPRESSION",,HIRAGANA,,,一籌を輸する,いっちゅうをゆする,,icchuu o yusuru,"być gorszy
 być prześcignięty
 być przewyższony
-porównać niekorzystnie z",,,
+porównać niekorzystnie z",,,DUPLICATE 110932
 110851,WORD_ADVERBIAL_NOUN,,HIRAGANA,,,宵の口,よいのくち,,yoi no kuchi,"zmierzch
 zmrok
 wczesny wieczór",,,
@@ -23619,7 +23619,8 @@ burza piaskowa",,,
 110874,WORD_NOUN,,HIRAGANA,,,国際経済,こくさいけいざい,,kokusai keizai,"ekonomia międzynarodowa
 gospodarka międzynarodowa",,,
 110875,WORD_NOUN,,HIRAGANA,,,粉炭,ふんたん,,funtan,"sproszkowany węgiel
-pył węgłowy",,,
+pył węgłowy",,,"DUPLICATE 110937
+DUPLICATE 110938"
 110876,WORD_EXPRESSION,,HIRAGANA,,,年ぶり,ねんぶり,,nenburi,"po upływie ... lat
 pierwszy raz od ... lat",,,
 110877,WORD_VERB_U,,HIRAGANA,,,やり合う,やりあう,,yariau,"konkurować z
@@ -23640,3 +23641,164 @@ rosnąć w skupisku",,,
 110886,WORD_NOUN,,HIRAGANA,,,原風景,げんふうけい,,genfuukei,"niezatarta scena z dzieciństwa
 najwcześniejsza zapamiętana scena
 najwcześniejszy zapamiętany obraz",,,
+110887,WORD_NOUN,,HIRAGANA,,,脂気,あぶらけ,,aburake,tłustość,,,
+110888,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,何のなにがし,なんのなにがし,,nan no nanigashi,"pewna osoba
+pewna kwota",,,
+110889,WORD_NOUN,,HIRAGANA,,,内見,ないけん,,naiken,"wstępna inspekcja
+wstępna kontrola
+wstępne badanie
+wstępne przeglądanie",,,
+110890,WORD_NOUN,,KATAKANA,,,ＮａＫ,ナク,,naku,NaK,stop sodu i potasu,,DUPLICATE 110753
+110891,WORD_NOUN,,HIRAGANA,,,がん黒,がんぐろ,,ganguro,"ganguro
+młoda dziewczyna, która mocno opala swoją skórę, wybiela włosy i nosi ciężki makijaż",,,
+110892,WORD_NOUN,,KATAKANA,,,-,ガングロ,,ganguro,"ganguro
+młoda dziewczyna, która mocno opala swoją skórę, wybiela włosy i nosi ciężki makijaż",,,
+110893,WORD_NOUN,,HIRAGANA,,,才智,さいち,,saichi,rozum i inteligencja,,,
+110894,WORD_NOUN,,HIRAGANA,,,胸当て,むなあて,,munaate,"napierśnik (element zbroi)
+ochraniacz klatki piersiowej
+śliniak
+śliniaczek",,,DUPLICATE 110765
+110895,WORD_NOUN,,HIRAGANA,,,胸あて,むねあて,,muneate,"napierśnik (element zbroi)
+ochraniacz klatki piersiowej
+śliniak
+śliniaczek",,,DUPLICATE 110896
+110896,WORD_NOUN,,HIRAGANA,,,胸あて,むなあて,,munaate,"napierśnik (element zbroi)
+ochraniacz klatki piersiowej
+śliniak
+śliniaczek",,,DUPLICATE 110895
+110897,WORD_NOUN,,HIRAGANA,,,胸当,むねあて,,muneate,"napierśnik (element zbroi)
+ochraniacz klatki piersiowej
+śliniak
+śliniaczek",,,DUPLICATE 110898
+110898,WORD_NOUN,,HIRAGANA,,,胸当,むなあて,,munaate,"napierśnik (element zbroi)
+ochraniacz klatki piersiowej
+śliniak
+śliniaczek",,,DUPLICATE 110897
+110899,WORD_NOUN,,KATAKANA,,,-,イヌグス,,inugusu,machilus thunbergii,roślina,,
+110900,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,-,ぎくしゃく,,gikushaku,"nienaturalność
+sztywność
+skrępowanie
+popsucie się (np. związku relacji)",,,
+110901,WORD_NOUN,,HIRAGANA,,,斎部,いんべ,,inbe,rodzina starożytnego kapłana Shinto,,,DUPLICATE 110783
+110902,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,気に掛ける,きにかける,,ki ni kakeru,"ciążyć na swój umysł
+kłopotać swoje serce
+niepokoić swoje serce
+być zaniepokojony przez
+martwić się",,,
+110903,WORD_INTERJECTION,,KATAKANA,,,-,ダメル,,dameru,"zamknij się!
+bądź cicho!",,,
+110904,WORD_INTERJECTION,,HIRAGANA,,,-,だめる,,dameru,"zamknij się!
+bądź cicho!",,,
+110905,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,横から口をはさむ,よこからくちをはさむ,,yokokara kuchi o hasamu,???,,,
+110906,WORD_NOUN,,KATAKANA,,,-,トンチャン,,tonchan,krowie lub świńskie podroby,,,
+110907,WORD_NOUN,,HIRAGANA,,,えり足,えりあし,,eriashi,"kark
+granica włosów na karku",,,
+110908,WORD_NOUN,,HIRAGANA,,,衿足,えりあし,,eriashi,"kark
+granica włosów na karku",,,
+110909,WORD_NOUN,,HIRAGANA,,,領脚,えりあし,,eriashi,"kark
+granica włosów na karku",,,
+110910,WORD_NOUN,,KATAKANA,,,-,アシロ,,ashiro,ophidion asiro,gatunek węgorza,,
+110911,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,気にさわる,きにさわる,,ki ni sawaru,"zranić uczucia
+skrzywić kogoś",,,
+110912,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,気に触る,きにさわる,,ki ni sawaru,"zranić uczucia
+skrzywić kogoś",,,
+110913,"WORD_ADVERB
+WORD_NOUN",,KATAKANA_EXCEPTION,,,-,ザーッ,,zaa,odgłos wody,,,
+110914,WORD_NOUN,,HIRAGANA_KATAKANA,,,資源ゴミ,しげんゴミ,,shigen gomi,śmieci nadające się do recyklingu,,,
+110915,WORD_NOUN,,HIRAGANA,,,資源塵,しげんごみ,,shigen gomi,śmieci nadające się do recyklingu,,,
+110916,WORD_NOUN,,KATAKANA,,,-,リリー・スカート,,ririi sukaato,spódnica lili,ang: lily skirt,,
+110917,WORD_VERB_U,,HIRAGANA,,,閲す,けみす,,kemisu,"badać
+kontrolować
+upływać
+mijać
+przemijać",,,DUPLICATE 110818
+110918,WORD_VERB_IRREGULAR,,HIRAGANA,,,閲する,けみする,,kemi suru,"badać
+kontrolować
+upływać
+mijać
+przemijać",,,DUPLICATE 110819
+110919,WORD_NOUN,,HIRAGANA,,,曲尺,きょくしゃく,,kyoku shaku,"ekierka stolarza (do sprawdzania kątów)
+powszechny shaku (jednostka długości, około 30.3 cm)",,,DUPLICATE 110822
+110920,WORD_NOUN,,HIRAGANA,,,矩尺,かねじゃく,,kanejaku,"ekierka stolarza (do sprawdzania kątów)
+powszechny shaku (jednostka długości, około 30.3 cm)",,,
+110921,WORD_NOUN,,HIRAGANA,,,聞耳,ききみみ,,kiki mimi,nastawianie uszu,,,
+110922,WORD_NOUN,,HIRAGANA,,,聴き耳,ききみみ,,kiki mimi,nastawianie uszu,,,
+110923,WORD_NOUN,,HIRAGANA,,,聴耳,ききみみ,,kiki mimi,nastawianie uszu,,,
+110924,WORD_NOUN,,HIRAGANA,,,もぐら打ち,もぐらうち,,mogurauchi,odstraszanie kreta poprzez uderzanie w ziemię za pomocą słomkowych wiązek przygotowanych przez dzieci,szczególnie 15 stycznia,,
+110925,WORD_VERB_U,,HIRAGANA,,,踏荒らす,ふみあらす,,fumi arasu,"deptać
+dewastować
+niszczyć",,,
+110926,WORD_VERB_U,,HIRAGANA,,,踏み荒す,ふみあらす,,fumi arasu,"deptać
+dewastować
+niszczyć",,,
+110927,WORD_NOUN,,HIRAGANA,,,茅屋,かやや,,kayaya,"dom kryty strzechą
+chata pokryta strzechą
+chałupa
+moja skromna chata
+mój skromny dom",,,DUPLICATE 110836
+110928,WORD_NOUN,,HIRAGANA,,,庭弄り,にわいじり,,niwaijiri,"ogrodnictwo
+krzątanie się wokół ogrodu",,,
+110929,WORD_VERB_RU,,HIRAGANA,,,関係付ける,かんけいづける,,kankei dukeru,"odnosić się
+dotyczyć
+powiązać z
+połączyć z",,,
+110930,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,目がたかい,めがたかい,,me ga takai,"mieć fachowe oko
+mieć wnikliwe oko",,,
+110931,WORD_VERB_RU,,HIRAGANA,,,不貞腐れる,ふてくされる,,fute kusareru,"stać się nadąsany
+stać się niezadowolony
+stać się nieodpowiedzialny (z powodu nadąsania)",,,
+110932,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,一籌を輸する,いっちゅうをしゅする,,icchuu o shu suru,"być gorszy
+być prześcignięty
+być przewyższony
+porównać niekorzystnie z",,,DUPLICATE 110850
+110933,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,鈴生り,すずなり,,suzunari,"kiść (np. owoców)
+zbitka
+zapełniony (np. ludźmi)
+zapchany (np. ludźmi)
+nadmiar",,,
+110934,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,恵まれた人人,めぐまれたひとびと,,megumareta hito bito,"pobłogosławiona osoba
+faworyzowana osoba
+uprzywilejowana osoba",,,
+110935,"WORD_NOUN
+WORD_ADVERB_TO
+WORD_ADVERB",,KATAKANA,,,-,グリグリ,,guri guri,"twardy guzek pod skórą
+mielenie
+naciskanie lub pocieranie obrotowym ruchem
+przewracanie oczami
+wytrzeszczanie oczu
+odgłos grzechotania
+odgłos stukania",,,
+110936,WORD_EXPRESSION,,HIRAGANA,,,計画どおり,けいかくどおり,,keikaku doori,"zgodnie z planem
+tak jak było zaplanowane",,,
+110937,WORD_NOUN,,HIRAGANA,,,粉炭,こなずみ,,konazumi,"sproszkowany węgiel
+pył węgłowy",,,"DUPLICATE 110875
+DUPLICATE 110938"
+110938,WORD_NOUN,,HIRAGANA,,,粉炭,こずみ,,kozumi,"sproszkowany węgiel
+pył węgłowy",,,"DUPLICATE 110875
+DUPLICATE 110937"
+110939,WORD_EXPRESSION,,HIRAGANA,,,年振り,ねんぶり,,nenburi,"po upływie ... lat
+pierwszy raz od ... lat",,,
+110940,WORD_VERB_U,,HIRAGANA,,,遣り合う,やりあう,,yariau,"konkurować z
+rywalizować z
+spierać się z
+sprzeczać się
+kłócić się",,,
+110941,WORD_VERB_U,,HIRAGANA,,,遣りあう,やりあう,,yariau,"konkurować z
+rywalizować z
+spierać się z
+sprzeczać się
+kłócić się",,,
+110942,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,鈴生りに生る,すずなりになる,,suzunari ni naru,"rosnąć w gromadzie
+rosnąć w skupisku",,,
