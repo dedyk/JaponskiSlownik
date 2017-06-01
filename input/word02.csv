@@ -23852,10 +23852,10 @@ odgłos jęków",,,
 szereg rozpadów promieniotwórczych",,,
 110969,WORD_NOUN,,HIRAGANA,,,種間雑種,しゅかんざっしゅ,,shukan zasshu,międzygatunkowa hybryda,,,
 110970,WORD_NOUN,,HIRAGANA,,,種間托卵,しゅかんたくらん,,shukan takuran,międzygatunkowe pasożytnicze potomstwo,,,
-110971,WORD_CONJUNCTION,,HIRAGANA,,,無くしては,なくしては,,nakushite wa,"w rzeczywistości, gdy nie istnieje
+110971,WORD_CONJUNCTION,,HIRAGANA_EXCEPTION,,,無くしては,なくしては,,nakushite wa,"w rzeczywistości, gdy nie istnieje
 bez",,,
 110972,WORD_EXPRESSION,,HIRAGANA,,,間もない,まもない,,mamonai,???,,,
-110973,WORD_VERB_U,,HIRAGANA,,,遊びまわる,あそびまわる,,asobimawaru,"kręcić się wokół
+110973,WORD_VERB_U,,HIRAGANA,,,遊びまわる,あそびまわる,,asobi mawaru,"kręcić się wokół
 odwiedzać bez efektu jedno miejscu po drugim
 pajacować
 wygłupiać się",,,
@@ -23894,7 +23894,7 @@ bezprawne stosunki międzyludzkie
 zakazane stosunki międzyludzkie
 romans",,,
 110987,WORD_NOUN,,HIRAGANA,,,砂石,させき,,saseki,"piasek i kamień
-kamyk",,,
+kamyk",,,DUPLICATE 111072
 110988,WORD_VERB_U,,HIRAGANA,,,討ち入る,うちいる,,uchiiru,"włamać się (do domu w celu zabicia mistrza)
 napaść",,,
 110989,WORD_EXPRESSION,,HIRAGANA,,,間もないころ,まもないころ,,ma mo nai koro,"we wczesnym okresie (czegoś)
@@ -23912,7 +23912,7 @@ nieustraszenie",,,
 zdobywca",,,
 110997,WORD_NOUN,,HIRAGANA,,,近在,きんざい,,kinzai,"sąsiednie wioski
 podmiejskie dzielnice",,,
-110998,WORD_NOUN,,KATAKANA,,,-,エーエムディーケーシックス,,eee mudii kee shikkusu,AMD-K6,,,
+110998,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,エーエムディーケーシックス,,eee mudii kee shikkusu,AMD-K6,,,
 110999,WORD_NOUN,,HIRAGANA,,,新訂,しんてい,,shintei,"nowa wersja
 nowa korekta",,,
 111000,WORD_NOUN,,HIRAGANA,,,互譲,ごじょう,,gojou,"pojednanie
@@ -23964,7 +23964,7 @@ sapanie
 gotowanie na parze
 uczucie gorąca",,,
 111024,WORD_NOUN,,KATAKANA,,,-,マッドサイエンティスト,,maddo saientisuto,szalony naukowiec,ang: mad scientist,,
-111025,WORD_NOUN,,KATAKANA,,,-,コレクトオンデリバリー,,korekuto on deribarii,"płatne przy odbiorze
+111025,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,コレクトオンデリバリー,,korekuto on deribarii,"płatne przy odbiorze
 płatność za pobraniem",ang: collect on delivery,,
 111026,WORD_NOUN,,KATAKANA,,,-,コレクトマニア,,korekutomania,kolektomania,ang: collectomania,,
 111027,WORD_NOUN,,HIRAGANA,,,眼瞼下垂,がんけんかすい,,ganken kasui,"ptoza
@@ -23997,15 +23997,15 @@ obcokrajowcy żyjący w Japonii",,,
 111039,WORD_NOUN,,HIRAGANA,,,萌え木,もえぎ,,moegi,"pęd młodego drzewa
 pąk młodego drzewa",,,
 111040,WORD_NOUN,,HIRAGANA,,,萌葱,もえぎ,,moegi,"jasno żółto-zielony
-kolor świeżo kiełkującej cebuli",,,
+kolor świeżo kiełkującej cebuli",,,DUPLICATE 111089
 111041,WORD_NOUN,,HIRAGANA,,,燃木,もえぎ,,moegi,"spalanie drewna
 drewno opałowe",mało znane słowo,,
 111042,WORD_NOUN,,HIRAGANA,,,夫婦別姓,ふうふべっせい,,fuufu bessei,mąż i żona zachowujący swoje nazwiska,,,
-111043,WORD_NOUN,,HIRAGANA,,,婿養子,むこようし,,mukoyoushi,zięć przyjęty do rodziny,,,
+111043,WORD_NOUN,,HIRAGANA,,,婿養子,むこようし,,muko youshi,zięć przyjęty do rodziny,,,
 111044,WORD_NOUN,,HIRAGANA,,,代入,だいにゅう,,dainyuu,"zastępstwo
 zastępowanie
 przeniesienie",,,
-111045,WORD_NOUN,,HIRAGANA,,,供米,くまい,,kumai,ryż ofiarowany bogu,,,
+111045,WORD_NOUN,,HIRAGANA,,,供米,くまい,,kumai,ryż ofiarowany bogu,,,DUPLICATE 111064
 111046,WORD_NOUN,,HIRAGANA,,,木栓,もくせん,,mokusen,"drewniany korek
 korek
 zatyczka zakładana na lufę działa",,,
@@ -24041,9 +24041,99 @@ WORD_NOUN",,HIRAGANA,,,身持ちの堅い女,みもちのかたいおんな,,mim
 111060,WORD_NOUN,,HIRAGANA,,,伏射濠,ふくしゃごう,,fukushagou,"wykop
 rów
 okop",,,
-111061,WORD_NOUN,,HIRAGANA,,,萌黄色,もえぎいろ,,moegiiro,"jasnozielony
+111061,WORD_NOUN,,HIRAGANA,,,萌黄色,もえぎいろ,,moegi iro,"jasnozielony
 żółtozielony",,,
 111062,WORD_NOUN,,HIRAGANA,,,代入文,だいにゅうぶん,,dainyuubun,instrukcja przypisania,informatyka,,
 111063,WORD_NOUN,,HIRAGANA,,,代入演算子,だいにゅうえんざんし,,dainyuuenzanshi,operator przypisania,,,
-111064,WORD_NOUN,,HIRAGANA,,,供米,きょうまい,,kyoumai,ryż doręczony rządowi,,,
+111064,WORD_NOUN,,HIRAGANA,,,供米,きょうまい,,kyoumai,ryż doręczony rządowi,,,DUPLICATE 111045
 111065,WORD_NOUN,,KATAKANA,,,-,フォント,,fonto,czcionka,ang: font,,
+111066,WORD_ADJECTIVE_I,,HIRAGANA,,,赭黒い,あかぐろい,,akaguroi,"ciemnoczerwony
+ciemnobrązowy
+czerwonobrązowy",,,
+111067,WORD_NOUN,,HIRAGANA,,,うめき声,うめきごえ,,umeki goe,"jęczenie
+wydawanie jęków
+odgłos jęków",,,
+111068,WORD_VERB_U,,HIRAGANA,,,遊び回る,あそびまわる,,asobi mawaru,"kręcić się wokół
+odwiedzać bez efektu jedno miejscu po drugim
+pajacować
+wygłupiać się",,,
+111069,WORD_VERB_U,,HIRAGANA,,,遊び廻る,あそびまわる,,asobi mawaru,"kręcić się wokół
+odwiedzać bez efektu jedno miejscu po drugim
+pajacować
+wygłupiać się",,,
+111070,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,身を屈める,みをかがめる,,mi o kagameru,"schylać się
+pochylać się",,,
+111071,WORD_NOUN,,HIRAGANA,,,なれ合い,なれあい,,nareai,"zmowa
+spisek
+niezalegalizowane małżeństwo
+konkubinat
+bezprawne stosunki międzyludzkie
+zakazane stosunki międzyludzkie
+romans",,,
+111072,WORD_NOUN,,HIRAGANA,,,砂石,しゃせき,,shaseki,"piasek i kamień
+kamyk",,,DUPLICATE 110987
+111073,WORD_NOUN,,HIRAGANA,,,沙石,させき,,saseki,"piasek i kamień
+kamyk",,,DUPLICATE 111074
+111074,WORD_NOUN,,HIRAGANA,,,沙石,しゃせき,,shaseki,"piasek i kamień
+kamyk",,,DUPLICATE 111073
+111075,WORD_EXPRESSION,,HIRAGANA,,,間も無いころ,まもないころ,,ma mo nai koro,"we wczesnym okresie (czegoś)
+na początku",,,
+111076,WORD_NOUN,,KATAKANA,,,-,ホロー・バック,,horoo bakku,pogłębienie lordozy lędźwiowej,ang: hollow back,,
+111077,WORD_NOUN,,HIRAGANA,,,なれ合い夫婦,なれあいふうふ,,nareai fuufu,"para żyjąca w konkubinacie
+para żyjąca w bezprawnym związku",,,
+111078,WORD_NOUN,,KATAKANA,,,-,ポッポ,,poppo,"dyszenie (np. parowozu)
+sapanie (np. parowozu)
+gruchanie (np. gołębia)
+gotowanie na parze
+uczucie gorąca",,,
+111079,WORD_NOUN,,KATAKANA_HIRAGANA,,,カニ蒲,カニかま,,kanikama,"paluszek krabowy
+imitacja mięsa krabowego",,,
+111080,WORD_NOUN,,KATAKANA,,,-,カニカマ,,kanikama,"paluszek krabowy
+imitacja mięsa krabowego",,,
+111081,WORD_NOUN,,HIRAGANA,,,縄ばしご,なわばしご,,nawabashigo,"drabina sznurowa
+drabinka sznurowa",,,
+111082,WORD_NOUN,,HIRAGANA,,,ご用商人,ごようしょうにん,,goyou shounin,???,,,
+111083,WORD_ADVERB,,KATAKANA_HIRAGANA,,,-,ポッポと,,poppoto,"dyszenie
+sapanie
+gotowanie na parze
+uczucie gorąca",,,
+111084,WORD_NOUN,,KATAKANA,,,-,マッド・サイエンティスト,,maddo saientisuto,szalony naukowiec,ang: mad scientist,,
+111085,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,コレクト・オン・デリバリー,,korekuto on deribarii,"płatne przy odbiorze
+płatność za pobraniem",ang: collect on delivery,,
+111086,WORD_NOUN,,HIRAGANA,,,身持,みもち,,mimochi,"prowadzenie się
+zachowanie
+bycie w ciąży",,,
+111087,WORD_NOUN,,HIRAGANA,,,腹這い,はらばい,,harabai,leżenie na brzuchu,,,
+111088,WORD_NOUN,,HIRAGANA,,,萌木,もえぎ,,moegi,"pęd młodego drzewa
+pąk młodego drzewa",,,
+111089,WORD_NOUN,,HIRAGANA,,,萌葱,もよぎ,,moyogi,"jasno żółto-zielony
+kolor świeżo kiełkującej cebuli",,,DUPLICATE 111040
+111090,WORD_NOUN,,HIRAGANA,,,萌黄,もえぎ,,moegi,"jasno żółto-zielony
+kolor świeżo kiełkującej cebuli",,,DUPLICATE 111091
+111091,WORD_NOUN,,HIRAGANA,,,萌黄,もよぎ,,moyogi,"jasno żółto-zielony
+kolor świeżo kiełkującej cebuli",,,DUPLICATE 111090
+111092,WORD_NOUN,,HIRAGANA,,,萠黄,もえぎ,,moegi,"jasno żółto-zielony
+kolor świeżo kiełkującej cebuli",,,DUPLICATE 111093
+111093,WORD_NOUN,,HIRAGANA,,,萠黄,もよぎ,,moyogi,"jasno żółto-zielony
+kolor świeżo kiełkującej cebuli",,,DUPLICATE 111092
+111094,WORD_NOUN,,KATAKANA_HIRAGANA,,,ムコ養子,ムコようし,,muko youshi,zięć przyjęty do rodziny,,,
+111095,WORD_ADJECTIVE_I,,HIRAGANA,,,出難い,でにくい,,denikui,"nie móc łatwo zdarzyć się
+nie móc łatwo wydarzyć się
+trudne do wydarzenia się
+trudne do zdarzenia się",,,
+111096,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,念頭にうかぶ,ねんとうにうかぶ,,nentou ni ukabu,"przyjść przez myśl
+przychodzić do głowy
+przychodzić na myśl",,,
+111097,WORD_VERB_U,,HIRAGANA,,,引続く,ひきつづく,,hikitsuduku,"trwać (przez długi czas)
+utrzymywać się (przez długi czas)
+występować kolejno",,,
+111098,WORD_NOUN,,HIRAGANA,,,萌葱色,もえぎいろ,,moegi iro,"jasnozielony
+żółtozielony",,,
+111099,WORD_NOUN,,HIRAGANA,,,萠黄色,もえぎいろ,,moegi iro,"jasnozielony
+żółtozielony",,,
+111100,WORD_NOUN,,HIRAGANA,,,萌木色,もえぎいろ,,moegi iro,"jasnozielony
+żółtozielony",,,
+111101,WORD_NOUN,,HIRAGANA,,,萌え黄色,もえぎいろ,,moegi iro,"jasnozielony
+żółtozielony",,,
