@@ -20217,7 +20217,7 @@ DUPLICATE 109392"
 109395,WORD_NOUN,,HIRAGANA,,,厂,がんだれ,,gandare,element podstawowy kanji “klif”,,,
 109396,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,息を吐く,いきをつく,,iki o tsuku,"wziąć oddech
-odpocząć na chwilę",,,
+odpocząć na chwilę",,,DUPLICATE 111623
 109397,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,息を付く,いきをつく,,iki o tsuku,"wziąć oddech
 odpocząć na chwilę",,,
@@ -25344,7 +25344,7 @@ wydobywać",,,DUPLICATE 111569
 111613,WORD_NOUN,,HIRAGANA,,,雪質,ゆきしつ,,yukishitsu,jakość śniegu,,,
 111614,WORD_NOUN,,HIRAGANA,,,地上げ,じあげ,,jiage,"spekulacje gruntami
 podnoszenie poziomu terenu
-podnoszenie poziomu gruntu",,,
+podnoszenie poziomu gruntu",,,DUPLICATE 111739
 111615,WORD_EXPRESSION,,HIRAGANA,,,-,だけでいい,,dake de ii,"wszystko co musisz zrobić
 to wszystko",,,
 111616,WORD_NOUN,,HIRAGANA,,,小欄,しょうらん,,shouran,"mała poręcz
@@ -25363,7 +25363,7 @@ wmieszanie
 wplątanie",,,
 111623,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,息を吐く,いきをはく,,iki o haku,"robić wydech
-wypuszczać powietrze",,,
+wypuszczać powietrze",,,DUPLICATE 109396
 111624,WORD_ADVERB,,HIRAGANA,,,行く行く,ゆくゆく,,yuku yuku,"w trakcie życia
 pewnego dnia
 kiedyś (w przyszłości)",,,
@@ -25400,7 +25400,7 @@ impulsywnie
 porywczo
 żywiołowo
 pośpiesznie
-pochopnie ",,,
+pochopnie",,,
 111641,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,命にかかわる,いのちにかかわる,,inochi ni kakawaru,być kwestią życia lub śmierci,,,
 111642,WORD_NOUN,,HIRAGANA,,,茶杓,ちゃしゃく,,chashaku,bambusowa łyżeczka służąca do tworzenia japońskiej herbaty,,,
@@ -25443,14 +25443,14 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,産学官,さんがくかん,,sangakukan,przemys�
 111658,WORD_NOUN,,HIRAGANA,,,産学協同体,さんがくきょうどうたい,,sangaku kyoudoutai,compleks edukacyjno-przemysłowy,,,
 111659,WORD_NOUN,,HIRAGANA,,,老荘思想,ろうそうしそう,,rousou shisou,"filozofia Lao-tse i Chuang-tse
 taoizm",,,
-111660,"WORD_EXPRESSION
-WORD_VERB_IRREGULAR",,HIRAGANA,,,蔑ろにする,ないがしろにする,,naigashiro ni suru,"lekceważy
+111660,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,蔑ろにする,ないがしろにする,,naigashiro ni suru,"lekceważy
 ignorować",,,
 111661,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,九回の腸,きゅうかいのちょう,,kyuukai no chou,"głęboki smutek
 złamane serce",,,
 111662,WORD_NOUN,,HIRAGANA,,,九回戦,きゅうかいせん,,kyuukaisen,9-ta runda w baseballu,,,
-111663,WORD_NOUN,,HIRAGANA,,,台割表,だいわりひょう,,daiwarihyou,projekt zawartości czasopisma,zwykle jest to tabela pokazująca przydział na każdą stronę,,
+111663,WORD_NOUN,,HIRAGANA,,,台割表,だいわりひょう,,daiwari hyou,projekt zawartości czasopisma,zwykle jest to tabela pokazująca przydział na każdą stronę,,
 111664,WORD_NOUN,,HIRAGANA,,,盗み足,ぬすみあし,,nusumi ashi,"skradające się kroki
 ukradkowe kroki",,,
 111665,WORD_NOUN,,HIRAGANA,,,温覚,おんかく,,onkaku,poczucie ciepła,,,
@@ -25464,7 +25464,7 @@ WORD_EXPRESSION",,HIRAGANA,,,お目にかける,おめにかける,,ome ni kaker
 111670,WORD_NOUN,,HIRAGANA,,,郵便箱,ゆうびんばこ,,yuubinbako,skrzynka na listy,,,
 111671,WORD_NOUN,,HIRAGANA,,,氷冠,ひょうかん,,hyoukan,"pokrywa lodowa
 wieczna zmarzlina",,,
-111672,WORD_INTERJECTION,,HIRAGANA,,,-,はあっ,,haa,"tak, ser
+111672,WORD_INTERJECTION,,HIRAGANA_EXCEPTION,,,-,はあっ,,haa,"tak, ser
 tak, proszę pani",,,
 111673,WORD_NOUN,,HIRAGANA_KATAKANA,,,洞爺湖サミット,とうやこサミット,,touyako samitto,34-ty szczyt grupy G8 (Hokkaido Toyako),,,
 111674,WORD_NOUN,,HIRAGANA,,,歩み合い,あゆみあい,,ayumiai,"kompromis
@@ -25486,7 +25486,8 @@ poręcz
 bariera",ang: parapet,,
 111681,WORD_NOUN,,KATAKANA,,,-,ウエートリフティング,,ueeto rifutingu,podnoszenie ciężarów,ang: weight lifting,,
 111682,WORD_NOUN,,HIRAGANA,,,うｐ,うぷ,,upu,"upload
-wysyłanie",slang,,
+wysyłanie",slang,,"DUPLICATE 111774
+DUPLICATE 111775"
 111683,WORD_ADJECTIVE_NO,,HIRAGANA,,,多言語,たげんご,,tagengo,wielojęzyczny,,,
 111684,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,虚ろ,うつろ,,utsuro,"jama
@@ -25534,7 +25535,7 @@ centrum badań nad rakiem",skrót,,
 111702,WORD_NOUN,,HIRAGANA,,,魔法薬,まほうやく,,mahouyaku,"czarodziejski napój
 magiczny napój",,,
 111703,WORD_NOUN,,HIRAGANA,,,水薬,すいやく,,suiyaku,"mikstura
-lekarstwo w płynie",,,
+lekarstwo w płynie",,,DUPLICATE 111786
 111704,WORD_NOUN,,HIRAGANA,,,惚れ薬,ほれぐすり,,horegusuri,"eliksir miłości
 napój miłosny
 afrodyzjak",,,
@@ -25620,3 +25621,187 @@ typ dokumentu bazowego",,,
 111737,WORD_NOUN,,HIRAGANA,,,基本文書要素,きほんぶんしょようそ,,kihon bunsho youso,"element dokumentu podstawowego
 element dokumentu bazowego",,,
 111738,WORD_NOUN,,KATAKANA,,,-,ペイガニズム,,peiganizumu,pogaństwo,ang: paganism,,
+111739,WORD_NOUN,,HIRAGANA,,,地上げ,ちあげ,,chiage,"spekulacje gruntami
+podnoszenie poziomu terenu
+podnoszenie poziomu gruntu",,,DUPLICATE 111614
+111740,WORD_NOUN,,HIRAGANA,,,地揚げ,じあげ,,jiage,"spekulacje gruntami
+podnoszenie poziomu terenu
+podnoszenie poziomu gruntu",,,DUPLICATE 111741
+111741,WORD_NOUN,,HIRAGANA,,,地揚げ,ちあげ,,chiage,"spekulacje gruntami
+podnoszenie poziomu terenu
+podnoszenie poziomu gruntu",,,DUPLICATE 111740
+111742,WORD_NOUN,,HIRAGANA,,,小闌,しょうらん,,shouran,"mała poręcz
+mała barierka
+mały płotek",mało znane słowo,,
+111743,WORD_EXPRESSION,,HIRAGANA,,,其の分,そのぶん,,sono bun,"do tego stopnia
+do tego zakresu
+z tego powodu
+w tym przypadku
+to znaczy, że ...
+ten stan
+ten warunek",,,
+111744,WORD_VERB_U,,HIRAGANA,,,取急ぐ,とりいそぐ,,toriisogu,spieszyć się,,,
+111745,WORD_NOUN,,HIRAGANA,,,鍋焼,なべやき,,nabeyaki,gotowany makaron serwowany w pojemniku z bulionem,,,
+111746,WORD_NOUN,,HIRAGANA,,,雌鶏,めんどり,,mendori,"ptak żeński
+kura",,,
+111747,WORD_NOUN,,HIRAGANA,,,牝鶏,めんどり,,mendori,"ptak żeński
+kura",,,
+111748,WORD_NOUN,,HIRAGANA,,,めん鶏,めんどり,,mendori,"ptak żeński
+kura",,,
+111749,WORD_NOUN,,HIRAGANA,,,めん鳥,めんどり,,mendori,"ptak żeński
+kura",,,
+111750,WORD_NOUN,,HIRAGANA,,,牝鳥,めんどり,,mendori,"ptak żeński
+kura",,,
+111751,WORD_NOUN,,KATAKANA,,,-,メンドリ,,mendori,"ptak żeński
+kura",,,
+111752,WORD_ADVERB,,HIRAGANA,,,驀地,まっしぐら,,masshigura,"na pełnej prędkości
+z pełną prędkością
+impulsywnie
+porywczo
+żywiołowo
+pośpiesznie
+pochopnie",,,"DUPLICATE 111753
+DUPLICATE 111754
+DUPLICATE 111755"
+111753,WORD_ADVERB,,HIRAGANA,,,驀地,ましぐら,,mashigura,"na pełnej prędkości
+z pełną prędkością
+impulsywnie
+porywczo
+żywiołowo
+pośpiesznie
+pochopnie",,,"DUPLICATE 111752
+DUPLICATE 111754
+DUPLICATE 111755"
+111754,WORD_ADVERB,,HIRAGANA,,,驀地,ましくら,,mashikura,"na pełnej prędkości
+z pełną prędkością
+impulsywnie
+porywczo
+żywiołowo
+pośpiesznie
+pochopnie",,,"DUPLICATE 111752
+DUPLICATE 111753
+DUPLICATE 111755"
+111755,WORD_ADVERB,,HIRAGANA,,,驀地,ばくち,,bakuchi,"na pełnej prędkości
+z pełną prędkością
+impulsywnie
+porywczo
+żywiołowo
+pośpiesznie
+pochopnie",,,"DUPLICATE 111752
+DUPLICATE 111753
+DUPLICATE 111754"
+111756,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,命に係わる,いのちにかかわる,,inochi ni kakawaru,być kwestią życia lub śmierci,,,
+111757,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,命に関わる,いのちにかかわる,,inochi ni kakawaru,być kwestią życia lub śmierci,,,
+111758,WORD_NOUN,,KATAKANA,,,-,ネイル・サロン,,neiru saron,salon kosmetyczny,ang: nail salon,,
+111759,WORD_NOUN,,HIRAGANA,,,台割,だいわり,,daiwari,projekt zawartości czasopisma,zwykle jest to tabela pokazująca przydział na każdą stronę,,
+111760,WORD_NOUN,,HIRAGANA,,,向かっ腹,むかっぱら,,mukappara,"złość
+gniew
+namiętność
+pasja
+zamiłowanie",,,
+111761,WORD_NOUN,,HIRAGANA,,,向っ腹,むかっぱら,,mukappara,"złość
+gniew
+namiętność
+pasja
+zamiłowanie",,,
+111762,WORD_NOUN,,HIRAGANA,,,台割り表,だいわりひょう,,daiwari hyou,projekt zawartości czasopisma,zwykle jest to tabela pokazująca przydział na każdą stronę,,
+111763,WORD_NOUN,,HIRAGANA,,,駄目人間,だめにんげん,,dame ningen,"bezużyteczny członek społeczeństwa
+beznadziejny przypadek
+porażka",,,
+111764,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,お目に掛ける,おめにかける,,ome ni kakeru,pokazywać,pokornie,,
+111765,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,御目に掛ける,おめにかける,,ome ni kakeru,pokazywać,pokornie,,
+111766,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,御目にかける,おめにかける,,ome ni kakeru,pokazywać,pokornie,,
+111767,WORD_INTERJECTION,,HIRAGANA_KATAKANA,,,-,はーッ,,haa,"tak, ser
+tak, proszę pani",,,
+111768,WORD_INTERJECTION,,KATAKANA_EXCEPTION,,,-,ハーッ,,haa,"tak, ser
+tak, proszę pani",,,
+111769,WORD_NOUN,,HIRAGANA,,,地蛍,つちぼたる,,tsuchibotaru,"świetlik
+robaczek świętojański",,,
+111770,WORD_NOUN,,HIRAGANA,,,蛍蛆,つちぼたる,,tsuchibotaru,"świetlik
+robaczek świętojański",,,
+111771,WORD_NOUN,,KATAKANA,,,-,ウエイトリフティング,,ueito rifutingu,podnoszenie ciężarów,ang: weight lifting,,
+111772,WORD_NOUN,,KATAKANA,,,-,ウェイトリフティング,,weito rifutingu,podnoszenie ciężarów,ang: weight lifting,,
+111773,WORD_NOUN,,KATAKANA,,,-,ウェートリフティング,,weeto rifutingu,podnoszenie ciężarów,ang: weight lifting,,
+111774,WORD_NOUN,,HIRAGANA,,,うｐ,あぷ,,apu,"upload
+wysyłanie",slang,,"DUPLICATE 111682
+DUPLICATE 111775"
+111775,WORD_NOUN,,HIRAGANA,,,うｐ,あっぷ,,appu,"upload
+wysyłanie",slang,,"DUPLICATE 111682
+DUPLICATE 111774"
+111776,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,空ろ,うつろ,,utsuro,"jama
+dziura
+dół
+pustka
+głuchy (dźwięk)
+puste (serce, oczy, twarz)",,,
+111777,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,洞ろ,うつろ,,utsuro,"jama
+dziura
+dół
+pustka
+głuchy (dźwięk)
+puste (serce, oczy, twarz)",,,
+111778,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,能が無い,のうがない,,nou ga nai,"niekompetentny
+nie mający zalet",,,
+111779,WORD_EXPRESSION,,HIRAGANA,,,ＵＰおつ,うぷおつ,,upuotsu,"podziękowanie za załadowanie (pliku)
+podziękowanie za upload
+wyrażenie wdzięczności używane w serwisach do udostępniania plików video (szczególnie Niconico)",slang,,
+111780,WORD_EXPRESSION,,HIRAGANA,,,うpおつ,うぷおつ,,upuotsu,"podziękowanie za załadowanie (pliku)
+podziękowanie za upload
+wyrażenie wdzięczności używane w serwisach do udostępniania plików video (szczególnie Niconico)",slang,,
+111781,WORD_EXPRESSION,,HIRAGANA,,,-,うぽつ,,upotsu,"podziękowanie za załadowanie (pliku)
+podziękowanie za upload
+wyrażenie wdzięczności używane w serwisach do udostępniania plików video (szczególnie Niconico)",slang,,
+111782,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,うつろな目,うつろなめ,,utsuro na me,puste oczy,,,
+111783,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,うつろな表情,うつろなひょうじょう,,utsuro na hyoujou,pusty wyraz twarzy,,,
+111784,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,空ろな表情,うつろなひょうじょう,,utsuro na hyoujou,pusty wyraz twarzy,,,
+111785,WORD_VERB_U,,HIRAGANA,,,阿ねる,おもねる,,omoneru,pochlebiać,,,
+111786,WORD_NOUN,,HIRAGANA,,,水薬,みずぐすり,,mizugusuri,"mikstura
+lekarstwo w płynie",,,DUPLICATE 111703
+111787,WORD_NOUN,,KATAKANA,,,-,デスペル,,desuperu,magia lub eliksir używany w grach RPG do przywracania postaci do normalnego stanu,ang: dispel,,
+111788,WORD_NOUN,,KATAKANA,,,-,オリジナル・シナリオ,,orijinaru shinario,oryginalny scenariusz,ang: original scenario,,
+111789,WORD_NOUN,,KATAKANA,,,-,オリジナル・プリント,,orijinaru purinto,oryginalny wydruk,ang: original print,,
+111790,WORD_VERB_U,,HIRAGANA,,,わき出す,わきだす,,wakidasu,wytrysnąć,,,
+111791,WORD_VERB_U,,HIRAGANA,,,沸き出す,わきだす,,wakidasu,wytrysnąć,,,
+111792,WORD_VERB_U,,HIRAGANA,,,涌き出す,わきだす,,wakidasu,wytrysnąć,,,
+111793,WORD_VERB_U,,HIRAGANA,,,嘘ぶく,うそぶく,,usobuku,"chwalić się
+przechwalać się
+recytować (piosenkę lub wiersz do siebie)
+szczekać
+ryczeć
+wyć",,,
+111794,"WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,-,ぴんと,,pinto,"w napięciu
+z napięciem
+ciasno
+mocno
+w pozycji wyprostowanej
+intuicyjnie
+instynktownie
+natychmiast
+od razu
+z pęknięciem",,,
+111795,WORD_NOUN,,KATAKANA,,,-,ジャクージ,,jakuuji,jacuzzi,,,
+111796,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,ぴんと来る,ぴんとくる,,pin to kuru,"dostać żart
+uzyskać wyjaśnienie
+trafić w dziesiątkę
+wiedzieć intuicyjnie",,,
+111797,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ピンと張る,ピンとはる,,pin to haru,"naciągnąć
+naprężyć
+naprężać
+napiąć
+napinać",,,
+111798,WORD_NOUN,,KATAKANA,,,-,アクスル・スタンド,,akusuru sutando,???,ang: axle stand,,
+111799,WORD_NOUN,,KATAKANA,,,-,アクスル・ハウジング,,akusuru haujingu,???,ang: axle housing,,
