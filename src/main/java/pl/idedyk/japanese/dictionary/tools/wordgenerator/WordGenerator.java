@@ -324,18 +324,15 @@ public class WordGenerator {
 									}		
 									
 									//
-									
-									/*
+																		
 									if (checkInJishoOrg == true && polishJapaneseEntry.isKanjiExists() == true) {
 										searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
 												"Szukanie w jisho.org (znaleziono kanji): " + polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKanji());
-									}
-
-									if (checkInJishoOrg == true && polishJapaneseEntry.getKana() != null) {
+										
+									} else if (checkInJishoOrg == true && polishJapaneseEntry.getKana() != null) {
 										searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
 												"Szukanie w jisho.org (znaleziono kana): " + polishJapaneseEntry.getKana(), polishJapaneseEntry.getKana());
 									}
-									*/
 									
 								} else {
 									alreadyAddedWordList.add(polishJapaneseEntry);
@@ -343,7 +340,6 @@ public class WordGenerator {
 							}								
 						}	
 						
-						/*
 						// dodatkowe sprawdzenie, w celu poszukiwania dodatkowych slow
 						if (checkInJishoOrg == true) {	
 							
@@ -351,7 +347,6 @@ public class WordGenerator {
 									"Szukanie w jisho.org (znaleziono): " + currentMissingWord, currentMissingWord);
 							
 						}
-						*/
 						
 					} else {
 						
@@ -2693,9 +2688,8 @@ public class WordGenerator {
 					
 					if (japaneseWord.kanji != null) {
 						newAdditionalWordToCheckWordList.add(japaneseWord.kanji);
-					}
-					
-					if (japaneseWord.kana != null) {
+						
+					} else if (japaneseWord.kana != null) {
 						newAdditionalWordToCheckWordList.add(japaneseWord.kana);
 					}
 				}
