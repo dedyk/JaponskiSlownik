@@ -248,17 +248,19 @@ public class WordGenerator {
 				System.out.println("Sprawdzanie w jisho.org: " + checkInJishoOrg);
 				
 				JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
-				
+
+				Map<String, Boolean> jishoOrgConnectorWordCheckCache = new TreeMap<String, Boolean>();
+
 				//
 				
 				File additionalWordtoCheckFile = new File("input/additional_word_to_check");
 								
 				LinkedHashSet<String> newAdditionalWordToCheckWordList = new LinkedHashSet<String>();
-				
+								
 				newAdditionalWordToCheckWordList.addAll(readFile(additionalWordtoCheckFile.getAbsolutePath()));
 				
 				//
-				
+								
 				System.out.println("Szukanie...");
 				
 				for (String currentMissingWord : missingWords) {
@@ -326,11 +328,11 @@ public class WordGenerator {
 									//
 																		
 									if (checkInJishoOrg == true && polishJapaneseEntry.isKanjiExists() == true) {
-										searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
+										searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
 												"Szukanie w jisho.org (znaleziono kanji): " + polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKanji());
 										
 									} else if (checkInJishoOrg == true && polishJapaneseEntry.getKana() != null) {
-										searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
+										searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
 												"Szukanie w jisho.org (znaleziono kana): " + polishJapaneseEntry.getKana(), polishJapaneseEntry.getKana());
 									}
 									
@@ -343,7 +345,7 @@ public class WordGenerator {
 						// dodatkowe sprawdzenie, w celu poszukiwania dodatkowych slow
 						if (checkInJishoOrg == true) {	
 							
-							searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
+							searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
 									"Szukanie w jisho.org (znaleziono): " + currentMissingWord, currentMissingWord);
 							
 						}
@@ -357,7 +359,7 @@ public class WordGenerator {
 						boolean wordExistsInJishoOrg = false;
 						
 						if (checkInJishoOrg == true) {								
-							wordExistsInJishoOrg = searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, 
+							wordExistsInJishoOrg = searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
 									"Szukanie w jisho.org (nie znaleziono): " + currentMissingWord, currentMissingWord);
 						}
 						
@@ -2647,7 +2649,16 @@ public class WordGenerator {
 	}
 	
 	private static boolean searchInJishoForAdditionalWords(WordGeneratorHelper wordGeneratorHelper, LinkedHashSet<String> newAdditionalWordToCheckWordList, 
-			JishoOrgConnector jishoOrgConnector, String messageTemplate, String word) throws Exception {
+			JishoOrgConnector jishoOrgConnector, Map<String, Boolean> jishoOrgConnectorWordCheckCache, 
+			String messageTemplate, String word) throws Exception {
+		
+		Boolean result = jishoOrgConnectorWordCheckCache.get(word);
+		
+		if (result != null) {
+			return result.booleanValue();
+		}
+		
+		//
 		
 		JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
 		
@@ -2698,6 +2709,10 @@ public class WordGenerator {
 		
 		//
 		
-		return japaneseWords.size() > 0;
+		result = japaneseWords.size() > 0;
+		
+		jishoOrgConnectorWordCheckCache.put(word, result);
+		
+		return result.booleanValue();
 	}
 }
