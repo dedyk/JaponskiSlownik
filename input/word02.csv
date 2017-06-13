@@ -27973,7 +27973,7 @@ dodatkowe wyposażenie",,,
 112684,WORD_NOUN,,HIRAGANA,,,里方,さとかた,,satokata,rodzina żony,,,
 112685,WORD_NOUN,,HIRAGANA,,,肉塊,にくかい,,nikukai,"kawałek mięsa
 kawał mięsa
-ludzkie ciało",,,
+ludzkie ciało",,,DUPLICATE 112781
 112686,WORD_ADJECTIVE_I,,HIRAGANA,,,忙しない,せわしない,,sewashinai,"niespokojny
 nerwowy
 niecierpliwy
@@ -27994,11 +27994,11 @@ osoba, do której można zwrócić się lub na którą można polegać",,,
 112693,WORD_NOUN,,HIRAGANA,,,剛の者,ごうのもの,,gou no mono,"bardzo silna osoba
 odważny wojownik
 dzielny wojownik
-weteran",,,
+weteran",,,DUPLICATE 112783
 112694,WORD_NOUN,,HIRAGANA,,,中書省,ちゅうしょしょう,,chuushoshou,sekretariat,podczas chińskiej dynastii Tang,,
 112695,WORD_NOUN,,HIRAGANA,,,体育祭,たいいくさい,,taiikusai,"sportowy festiwal
 festiwal sportu",,,
-112696,WORD_NOUN,,HIRAGANA,,,黄酒,おうしゅ,,oushu,huangjiu,"odmiana chińskich napojów alkoholowych, zazwyczaj produkowanych z ziaren ryżu, prosa lub pszenicy",,
+112696,WORD_NOUN,,HIRAGANA,,,黄酒,おうしゅ,,oushu,huangjiu,"odmiana chińskich napojów alkoholowych, zazwyczaj produkowanych z ziaren ryżu, prosa lub pszenicy",,DUPLICATE 112788
 112697,WORD_NOUN,,HIRAGANA,,,奈落の底,ならくのそこ,,naraku no soko,"otchłań
 przepaść
 czeluść",,,
@@ -28079,7 +28079,7 @@ rozjaśniać się (podczas świtu)",,,
 112731,WORD_EXPRESSION,,HIRAGANA,,,権兵衛が種蒔きゃ烏がほじくる,ごんべえがたねまきゃからすがほじくる,,gonbee ga tanemakya karasu ga hojikuru,"psucie czyjejś pracy
 nieprzydatny wysiłek
 praca na próżno",,,
-112732,WORD_NOUN,,KATAKANA,,,順子,シュンツ,,shuntsu,???,,,
+112732,WORD_NOUN,,KATAKANA,,,順子,シュンツ,,shuntsu,???,,,DUPLICATE 112804
 112733,WORD_NOUN,,HIRAGANA,,,葉裏,はうら,,haura,spód liścia,,,
 112734,WORD_NOUN,,HIRAGANA,,,主思い,しゅうおもい,,shuuomoi,martwienie się o sprawy swojego mistrza,,,
 112735,WORD_NOUN,,HIRAGANA,,,節欲,せつよく,,setsuyoku,"kontrolowanie swoich pragnień
@@ -28089,14 +28089,15 @@ powściągliwość",,,
 WORD_EXPRESSION",,HIRAGANA,,,あくを取る,あくをとる,,aku o toru,"usuwać kożucha z rosołu lub innego płynu
 usuwać osadu z rosołu lub innego płynu",,,
 112737,WORD_NOUN,,HIRAGANA,,,雪駄,せった,,setta,"skórzane sandały
-skórzane geta",,,
+skórzane geta",,,"DUPLICATE 112807
+DUPLICATE 112808"
 112738,WORD_NOUN,,KATAKANA,,,-,シティーホール,,shitii hooru,ratusz,ang: city hall,,
 112739,"WORD_NOUN
 WORD_ADJECTIVE_NA",,KATAKANA,,,-,ハイセンス,,haisensu,"wytworny smak
 dobry smak",ang: high sense,,
 112740,"WORD_ADJECTIVE_NO
 WORD_NOUN",,HIRAGANA,,,選り抜き,よりぬき,,yorinuki,"najlepszy
-elita",,,
+elita",,,DUPLICATE 112812
 112741,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,KATAKANA,,,-,イクナイ,,ikunai,"niedobry
 zły","slang, żartobliwie",,
@@ -28111,14 +28112,14 @@ zła wiara (termin prawniczy)",,,
 112745,WORD_NOUN,,KATAKANA,,,-,チャージャー,,chaajaa,"urządzenie do ładowania akumulatorów
 ładowarka
 rumak",ang: charger,,
-112746,WORD_NOUN,,HIRAGANA,,,殿内,どぅんち,,donchi,rezydencja urzędnika w królestwie Ryukyu,archaizm,,
+112746,WORD_NOUN,,HIRAGANA_EXCEPTION,,,殿内,どぅんち,,donchi,rezydencja urzędnika w królestwie Ryukyu,archaizm,,
 112747,WORD_NOUN,,HIRAGANA,,,尻目,しりめ,,shirime,"zerkanie za siebie
 rzut oka do tyłu
 ukradkowe spojrzenie
 bezimienny duch z okiem w odbycie",,,
 112748,WORD_NOUN,,KATAKANA_HIRAGANA,,,カリウムアルゴン法,カリウムアルゴンほう,,kariumu arugon hou,"matowanie metodą potasowo-argonową
 metoda potasowo-argonowa (K-Ar)",metoda stosowana do datowania skał o wieku setek tysięcy lub milionów lat,,
-112749,WORD_NOUN,,HIRAGANA,,,お食い初め,おくいぞめ,,okuizome,ceremonia odstawienia dziecka od piersi,,,
+112749,WORD_NOUN,,HIRAGANA,,,お食い初め,おくいぞめ,,okui zome,ceremonia odstawienia dziecka od piersi,,,
 112750,WORD_NOUN,,HIRAGANA,,,干ばつ,かんばつ,,kanbatsu,"susza
 długi okres suchej pogody",,,
 112751,WORD_ADVERB,,HIRAGANA,,,否応なく,いやおうなく,,iyaou naku,"czy ktoś chce czy nie
@@ -28150,7 +28151,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,-,こじつけ,,kojitsuke,???,,,
 112764,WORD_NOUN,,KATAKANA,,,-,カタルシス,,katarushisu,katharsis,,,
 112765,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,とは限らない,とはかぎらない,,to wa kagiranai,"niekoniecznie tak
 nie zawsze jest prawdą",,,
-112766,WORD_NOUN,,HIRAGANA,,,団子虫,だんごむし,,dangomushi,"kulanka (gatunek skorupiaka lądowego)
+112766,WORD_NOUN,,HIRAGANA,,,団子虫,だんごむし,,dango mushi,"kulanka (gatunek skorupiaka lądowego)
 stonoga",,,
 112767,WORD_NOUN,,HIRAGANA,,,借金取り,しゃっきんとり,,shakkintori,"inkasent
 poborca pieniędzy",,,
@@ -28161,7 +28162,7 @@ przykuwać uwagę",,,
 smok Azure (rządzący wschodnim niebem)
 siedem chińskich gwiazdozbiorów na wschodnim niebie
 ogromny koń o sinawej sierści
-kształt stare sosny",,,
+kształt stare sosny",,,DUPLICATE 112830
 112770,WORD_NOUN,,HIRAGANA,,,宣戦布告,せんせんふこく,,sensen fukoku,"wypowiedzenie wojny
 proklamacja wojny",,,
 112771,WORD_CONJUNCTION,,HIRAGANA,,,その癖,そのくせ,,sono kuse,"a jednak
@@ -28174,7 +28175,7 @@ mimo wszystko",,,
 112774,WORD_NOUN,,HIRAGANA,,,-,ちゃんちゃんこ,,chanchanko,"wyścielana bez rękawów kurtka do kimono
 japońska kamizelka",,,
 112775,WORD_NOUN,,HIRAGANA,,,放送用人工衛星,ほうそうようじんこうえいせい,,housouyou jinkou eisei,satelita komunikacyjny,,,
-112776,WORD_NOUN,,HIRAGANA,,,宣命,せんみょう,,senmyou,cesarski edykt,napisany klasyczny majestatycznym stylu,,
+112776,WORD_NOUN,,HIRAGANA,,,宣命,せんみょう,,senmyou,cesarski edykt,napisany klasyczny majestatycznym stylu,,DUPLICATE 112834
 112777,WORD_NOUN,,HIRAGANA,,,金入れ,かねいれ,,kaneire,"torebka
 portfel",,,
 112778,WORD_NOUN,,HIRAGANA,,,月火,げつか,,getsuka,poniedziałek i wtorek,,,
@@ -28186,3 +28187,156 @@ proces cywilny
 postępowanie cywilne
 procedura cywilna
 droga procesu cywilnego",,,
+112781,WORD_NOUN,,HIRAGANA,,,肉塊,にっかい,,nikkai,"kawałek mięsa
+kawał mięsa
+ludzkie ciało",,,DUPLICATE 112685
+112782,WORD_NOUN,,HIRAGANA,,,御暇,おいとま,,oitoma,"wychodzenie
+opuszczanie
+pójście do domu
+rzucanie pracy
+czas wolny",,,
+112783,WORD_NOUN,,HIRAGANA,,,剛の者,こうのもの,,kou no mono,"bardzo silna osoba
+odważny wojownik
+dzielny wojownik
+weteran",,,DUPLICATE 112693
+112784,WORD_NOUN,,HIRAGANA,,,豪の者,ごうのもの,,gou no mono,"bardzo silna osoba
+odważny wojownik
+dzielny wojownik
+weteran",,,DUPLICATE 112785
+112785,WORD_NOUN,,HIRAGANA,,,豪の者,こうのもの,,kou no mono,"bardzo silna osoba
+odważny wojownik
+dzielny wojownik
+weteran",,,DUPLICATE 112784
+112786,WORD_NOUN,,HIRAGANA,,,強の者,ごうのもの,,gou no mono,"bardzo silna osoba
+odważny wojownik
+dzielny wojownik
+weteran",,,DUPLICATE 112787
+112787,WORD_NOUN,,HIRAGANA,,,強の者,こうのもの,,kou no mono,"bardzo silna osoba
+odważny wojownik
+dzielny wojownik
+weteran",,,DUPLICATE 112786
+112788,WORD_NOUN,,HIRAGANA,,,黄酒,こうしゅ,,koushu,huangjiu,"odmiana chińskich napojów alkoholowych, zazwyczaj produkowanych z ziaren ryżu, prosa lub pszenicy",,DUPLICATE 112696
+112789,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ホワンチュウ,,howanchuu,huangjiu,"odmiana chińskich napojów alkoholowych, zazwyczaj produkowanych z ziaren ryżu, prosa lub pszenicy",,
+112790,WORD_NOUN,,KATAKANA,,,-,ホワンチュー,,howanchuu,huangjiu,"odmiana chińskich napojów alkoholowych, zazwyczaj produkowanych z ziaren ryżu, prosa lub pszenicy",,
+112791,WORD_NOUN,,HIRAGANA,,,奇巌,きがん,,kigan,"dziwnie ukształtowane kamienie
+masywna skała o niezwykłym kształcie",,,
+112792,WORD_NOUN,,HIRAGANA,,,金敷,かなしき,,kanashiki,kowadło,,,
+112793,WORD_NOUN,,HIRAGANA,,,鉄敷き,かなしき,,kanashiki,kowadło,,,
+112794,WORD_NOUN,,HIRAGANA,,,鉄敷,かなしき,,kanashiki,kowadło,,,
+112795,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,相談にのる,そうだんにのる,,soudan ni noru,"dać radę
+dawać radę
+udzielać rady
+doradzać
+brać udział w konsultacjach",,,
+112796,WORD_EXPRESSION,,HIRAGANA,,,完膚無きまで,かんぷなきまで,,kanpu naki made,"kompletnie
+całkowicie
+gruntownie
+dokładnie
+bez wyjątku",,,
+112797,WORD_EXPRESSION,,HIRAGANA,,,完膚無き迄,かんぷなきまで,,kanpu naki made,"kompletnie
+całkowicie
+gruntownie
+dokładnie
+bez wyjątku",,,
+112798,WORD_NOUN,,HIRAGANA,,,羊羮,ようかん,,youkan,yōkan,"tradycyjne japońskie słodycze w postaci mocno skondensowanej galaretki, wytwarzane z pasty ze słodkiej, czerwonej fasoli anko, agaru i cukru",,
+112799,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,ブレイヴ,,bureivu,"odważny
+dzielny
+mężny",ang: brave,,
+112800,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,ブレーブ,,bureebu,"odważny
+dzielny
+mężny",ang: brave,,
+112801,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,ブレーヴ,,bureevu,"odważny
+dzielny
+mężny",ang: brave,,
+112802,WORD_EXPRESSION,,HIRAGANA,,,権兵衛が種まきゃ烏がほじくる,ごんべえがたねまきゃからすがほじくる,,gonbee ga tanemakya karasu ga hojikuru,"psucie czyjejś pracy
+nieprzydatny wysiłek
+praca na próżno",,,
+112803,WORD_EXPRESSION,,HIRAGANA_KATAKANA,,,権兵衛が種まきゃカラスがほじくる,ごんべえがたねまきゃカラスがほじくる,,gonbee ga tanemakya karasu ga hojikuru,"psucie czyjejś pracy
+nieprzydatny wysiłek
+praca na próżno",,,
+112804,WORD_NOUN,,HIRAGANA_KATAKANA,,,順子,じゅんツ,,juntsu,???,,,DUPLICATE 112732
+112805,WORD_NOUN,,HIRAGANA,,,節慾,せつよく,,setsuyoku,"kontrolowanie swoich pragnień
+wstrzemięźliwość
+powściągliwość",,,
+112806,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,灰汁を取る,あくをとる,,aku o toru,"usuwać kożucha z rosołu lub innego płynu
+usuwać osadu z rosołu lub innego płynu",,,
+112807,WORD_NOUN,,HIRAGANA,,,雪駄,せきだ,,sekida,"skórzane sandały
+skórzane geta",,,"DUPLICATE 112737
+DUPLICATE 112808"
+112808,WORD_NOUN,,HIRAGANA,,,雪駄,せちだ,,sechida,"skórzane sandały
+skórzane geta",,,"DUPLICATE 112737
+DUPLICATE 112807"
+112809,WORD_NOUN,,HIRAGANA,,,雪踏,せった,,setta,"skórzane sandały
+skórzane geta",,,
+112810,WORD_NOUN,,HIRAGANA,,,席駄,せきだ,,sekida,"skórzane sandały
+skórzane geta",,,
+112811,WORD_NOUN,,KATAKANA,,,-,シティー・ホール,,shitii hooru,ratusz,ang: city hall,,
+112812,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,選り抜き,えりぬき,,erinuki,"najlepszy
+elita",,,DUPLICATE 112740
+112813,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,より抜き,よりぬき,,yorinuki,"najlepszy
+elita",,,
+112814,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,えり抜き,えりぬき,,erinuki,"najlepszy
+elita",,,
+112815,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,-,いくない,,ikunai,"niedobry
+zły","slang, żartobliwie",,
+112816,WORD_NOUN,,KATAKANA,,,-,チャージャ,,chaaja,"urządzenie do ładowania akumulatorów
+ładowarka
+rumak",ang: charger,,
+112817,WORD_NOUN,,HIRAGANA,,,後目,しりめ,,shirime,"zerkanie za siebie
+rzut oka do tyłu
+ukradkowe spojrzenie
+bezimienny duch z okiem w odbycie",,,
+112818,WORD_NOUN,,HIRAGANA,,,御食い初め,おくいぞめ,,okui zome,ceremonia odstawienia dziecka od piersi,,,
+112819,WORD_NOUN,,HIRAGANA,,,旱魃,かんばつ,,kanbatsu,"susza
+długi okres suchej pogody",,,
+112820,WORD_NOUN,,HIRAGANA,,,干魃,かんばつ,,kanbatsu,"susza
+długi okres suchej pogody",,,
+112821,WORD_ADVERB,,HIRAGANA,,,否応無く,いやおうなく,,iyaou naku,"czy ktoś chce czy nie
+bez wyboru",,,
+112822,WORD_VERB_U,,HIRAGANA,,,引っぱたく,ひっぱたく,,hippataku,"spoliczkować
+uderzyć
+dawać klapsa",,,
+112823,WORD_VERB_U,,HIRAGANA,,,引っ張たく,ひっぱたく,,hippataku,"spoliczkować
+uderzyć
+dawać klapsa",,,
+112824,WORD_NOUN,,KATAKANA,,,-,アイスティー,,aisu tii,herbata mrożona,ang: ice tea,,
+112825,WORD_NOUN,,KATAKANA,,,-,アイス・ティ,,aisu ti,herbata mrożona,ang: ice tea,,
+112826,WORD_NOUN,,KATAKANA,,,-,アイス・ティー,,aisu tii,herbata mrożona,ang: ice tea,,
+112827,WORD_NOUN,,KATAKANA,,,-,ダンゴムシ,,dango mushi,"kulanka (gatunek skorupiaka lądowego)
+stonoga",,,
+112828,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,目に止まる,めにとまる,,me ni tomaru,"przykuć uwagę
+przykuwać uwagę",,,
+112829,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,目にとまる,めにとまる,,me ni tomaru,"przykuć uwagę
+przykuwać uwagę",,,
+112830,WORD_NOUN,,HIRAGANA,,,蒼竜,そうりゅう,,souryuu,"niebieski smok
+smok Azure (rządzący wschodnim niebem)
+siedem chińskich gwiazdozbiorów na wschodnim niebie
+ogromny koń o sinawej sierści
+kształt stare sosny",,,DUPLICATE 112769
+112831,WORD_NOUN,,HIRAGANA,,,蒼龍,そうりょう,,souryou,"niebieski smok
+smok Azure (rządzący wschodnim niebem)
+siedem chińskich gwiazdozbiorów na wschodnim niebie
+ogromny koń o sinawej sierści
+kształt stare sosny",,,DUPLICATE 112832
+112832,WORD_NOUN,,HIRAGANA,,,蒼龍,そうりゅう,,souryuu,"niebieski smok
+smok Azure (rządzący wschodnim niebem)
+siedem chińskich gwiazdozbiorów na wschodnim niebie
+ogromny koń o sinawej sierści
+kształt stare sosny",,,DUPLICATE 112831
+112833,WORD_CONJUNCTION,,HIRAGANA,,,其の癖,そのくせ,,sono kuse,"a jednak
+nawet pomimo tego
+niemniej jednak
+jednakże
+mimo wszystko",,,
+112834,WORD_NOUN,,HIRAGANA,,,宣命,せみょう,,semyou,cesarski edykt,napisany klasyczny majestatycznym stylu,,DUPLICATE 112776
