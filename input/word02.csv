@@ -31847,13 +31847,13 @@ jest tak, jak (ktoś) powiedział",honoryfikatywnie,,
 ogrzewacz dłoni",,,
 114269,WORD_NOUN,,HIRAGANA,,,前作,ぜんさく,,zensaku,"poprzednia praca
 poprzednie miejsce pracy
-poprzednia uprawa",,,
+poprzednia uprawa",,,DUPLICATE 114365
 114270,WORD_NOUN,,HIRAGANA,,,-,でか,,deka,detektyw,slang,,
 114271,WORD_NOUN,,HIRAGANA,,,鉄鋼業,てっこうぎょう,,tekkougyou,przemysł stalowy,,,
 114272,WORD_NOUN,,HIRAGANA,,,宴楽,えんらく,,enraku,"uciecha
 zabawa
-impreza",,,
-114273,WORD_NOUN,,HIRAGANA,,,燕楽,えんがく,,engaku,starożytna chińska bankietowa muzyka,,,
+impreza",,,DUPLICATE 114368
+114273,WORD_NOUN,,HIRAGANA,,,燕楽,えんがく,,engaku,starożytna chińska bankietowa muzyka,,,DUPLICATE 114367
 114274,WORD_NOUN,,HIRAGANA_KATAKANA,,,南毛鼻ウォンバット,みなみけはなウォンバット,,minamike hana wonbatto,wombat szerokogłowy,"gatunek torbacza z rodziny wombatowatych, lasiorhinus latifrons",,
 114275,WORD_NOUN,,HIRAGANA,,,沢登り,さわのぼり,,sawanobori,wspinaczka na wąwóz,,,
 114276,WORD_NOUN,,HIRAGANA,,,近傍,きんぼう,,kinbou,"sąsiedztwo
@@ -31906,11 +31906,11 @@ podporządkowanie",,,
 114296,WORD_NOUN,,HIRAGANA,,,続柄,つづきがら,,tsudukigara,"relacja (rodzinna)
 pokrewieństwo (rodzinne)
 połączenie
-związek",,,
+związek",,,DUPLICATE 114378
 114297,WORD_VERB_U,,HIRAGANA,,,端折る,はしょる,,hashoru,"zakasywać
 podwijać (np. sukienkę)
 skrócić
-skracać",,,
+skracać",,,DUPLICATE 114380
 114298,WORD_NOUN,,HIRAGANA,,,春嵐,しゅんらん,,shunran,wiosenna burza,,,
 114299,WORD_NOUN,,HIRAGANA,,,復讐劇,ふくしゅうげき,,fukushuugeki,tragedia zemsty,,,
 114300,WORD_NOUN,,HIRAGANA,,,豚犬,とんけん,,tonken,"świnia i pies (archaizm, mało znane słowo)
@@ -31971,8 +31971,8 @@ robienie zdjęcia ukradkiem",,,
 114324,"WORD_ADJECTIVE_NA
 WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,-,びちゃびちゃ,,bicha bicha,plusk,,,
-114325,WORD_NOUN,,HIRAGANA,,,耳栓,みみせん,,mimisen,zatyczka do uszu,do ochronienia przed hałasem lub wodą,,
-114326,WORD_NOUN,,HIRAGANA,,,耳栓,じせん,,jisen,"tradycyjna biżuteria noszona w płatkach uszu, popularna w Japonii w okresie Jomon",archaizm,,
+114325,WORD_NOUN,,HIRAGANA,,,耳栓,みみせん,,mimisen,zatyczka do uszu,do ochronienia przed hałasem lub wodą,,DUPLICATE 114326
+114326,WORD_NOUN,,HIRAGANA,,,耳栓,じせん,,jisen,"tradycyjna biżuteria noszona w płatkach uszu, popularna w Japonii w okresie Jomon",archaizm,,DUPLICATE 114325
 114327,WORD_NOUN,,HIRAGANA,,,六つ切り,むつぎり,,mutsugiri,"dzielenie czegoś na sześć części
 coś podzielone na sześć części",,,
 114328,WORD_NOUN,,KATAKANA_HIRAGANA,,,ラテンアメリカ音楽,ラテンアメリカおんがく,,raten' amerika ongaku,latynoska muzyka,,,
@@ -32002,7 +32002,7 @@ ważny pisarz",,,
 denerwujący
 drażniący
 frustrujący",,,
-114340,WORD_NOUN,,KATAKANA,,,-,ルイビトン,,ruibiton,Louis Vuitton,,,
+114340,WORD_NOUN,,KATAKANA,,,-,ルイビトン,,rui biton,Louis Vuitton,,,
 114341,WORD_ADVERB,,KATAKANA,,,-,ズバズバ,,zuba zuba,"szczerze
 prosto
 w prosty sposób
@@ -32066,4 +32066,120 @@ twoja obserwacja",z szacunkiem,,
 114361,WORD_NOUN,,HIRAGANA,,,倒立,とうりつ,,touritsu,stanie na rękach,,,
 114362,WORD_NOUN,,HIRAGANA,,,異音,いおん,,ion,"alofon (głoska różniąca się od innej cechami fonetycznymi niewpływającymi na znaczenie wyrazu)
 dziwny hałas",,,
-114363,WORD_NOUN,,HIRAGANA,,,花酒,はなざけ,,hanazake,"silne awamori (60%) z wyspy Yonaguni, Okinawa",,,
+114363,WORD_NOUN,,HIRAGANA,,,花酒,はなざけ,,hana zake,"silne awamori (60%) z wyspy Yonaguni, Okinawa",,,DUPLICATE 114398
+114364,WORD_NOUN,,KATAKANA,,,-,カイロ,,kairo,"podgrzewacz kieszonkowy
+ogrzewacz dłoni",,,
+114365,WORD_NOUN,,HIRAGANA,,,前作,まえさく,,maesaku,"poprzednia praca
+poprzednie miejsce pracy
+poprzednia uprawa",,,DUPLICATE 114269
+114366,WORD_NOUN,,KATAKANA,,,-,デカ,,deka,detektyw,slang,,
+114367,WORD_NOUN,,HIRAGANA,,,燕楽,えんらく,,enraku,"uciecha
+zabawa
+impreza",,,DUPLICATE 114273
+114368,WORD_NOUN,,HIRAGANA,,,宴楽,えんがく,,engaku,starożytna chińska bankietowa muzyka,,,DUPLICATE 114272
+114369,WORD_NOUN,,KATAKANA,,,-,ミナミケバナウォンバット,,minamike bana wonbatto,wombat szerokogłowy,"gatunek torbacza z rodziny wombatowatych, lasiorhinus latifrons",,
+114370,WORD_NOUN,,HIRAGANA,,,お絵描き,おえかき,,oekaki,"rysunek
+rysowanie
+obrazek",język dzieci,,
+114371,WORD_NOUN,,HIRAGANA,,,お絵書き,おえかき,,oekaki,"rysunek
+rysowanie
+obrazek",język dzieci,,
+114372,WORD_NOUN,,HIRAGANA,,,御絵描き,おえかき,,oekaki,"rysunek
+rysowanie
+obrazek",język dzieci,,
+114373,WORD_NOUN,,HIRAGANA,,,御絵書き,おえかき,,oekaki,"rysunek
+rysowanie
+obrazek",język dzieci,,
+114374,"WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_NA",,HIRAGANA,,,苟且,かりそめ,,karisome,"chwilowy
+przejściowy
+tymczasowy
+przelotny
+błahy
+nieznaczny
+drobny",,,DUPLICATE 114375
+114375,"WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_NA",,HIRAGANA,,,苟且,こうしょ,,kousho,"chwilowy
+przejściowy
+tymczasowy
+przelotny
+błahy
+nieznaczny
+drobny",,,DUPLICATE 114374
+114376,"WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_NA",,HIRAGANA,,,仮初,かりそめ,,karisome,"chwilowy
+przejściowy
+tymczasowy
+przelotny
+błahy
+nieznaczny
+drobny",,,
+114377,WORD_ADVERB,,HIRAGANA,,,-,ぱぱっと,,papatto,szybko,,,
+114378,WORD_NOUN,,HIRAGANA,,,続柄,ぞくがら,,zokugara,"relacja (rodzinna)
+pokrewieństwo (rodzinne)
+połączenie
+związek",,,DUPLICATE 114296
+114379,WORD_NOUN,,HIRAGANA,,,続き柄,つづきがら,,tsudukigara,"relacja (rodzinna)
+pokrewieństwo (rodzinne)
+połączenie
+związek",,,
+114380,WORD_VERB_U,,HIRAGANA,,,端折る,はしおる,,hashioru,"zakasywać
+podwijać (np. sukienkę)
+skrócić
+skracać",,,DUPLICATE 114297
+114381,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,絹漉し,きぬごし,,kinu goshi,"filtrowanie przez jedwabną szmatkę
+odsączenie przez jedwabną szmatkę",,,
+114382,WORD_VERB_U,,HIRAGANA,,,経く,わなく,,wanaku,"powiesić się
+dusić się
+dławić się
+ściskać szyję
+dusić",archaizm,,
+114383,WORD_VERB_U,,HIRAGANA,,,絞く,わなく,,wanaku,"powiesić się
+dusić się
+dławić się
+ściskać szyję
+dusić",archaizm,,
+114384,WORD_NOUN,,KATAKANA,,,-,ベットタウン,,betto taun,miasto sypialnia,ang: bed town,,
+114385,WORD_NOUN,,KATAKANA,,,-,ベッド・タウン,,beddo taun,miasto sypialnia,ang: bed town,,
+114386,WORD_NOUN,,KATAKANA,,,-,ベット・タウン,,betto taun,miasto sypialnia,ang: bed town,,
+114387,WORD_ADJECTIVE_I,,HIRAGANA,,,いら立たしい,いらだたしい,,iradatashii,"irytujący
+denerwujący
+drażniący
+frustrujący",,,
+114388,WORD_NOUN,,KATAKANA,,,-,ルイ・ビトン,,rui biton,Louis Vuitton,,,
+114389,WORD_ADVERB,,HIRAGANA,,,-,ずばずば,,zuba zuba,"szczerze
+prosto
+w prosty sposób
+bycie szczery do bólu",,,
+114390,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,危機一発,ききいっぱつ,,kiki ippatsu,"o włos
+o mały włos
+w samą porę
+w ostatniej chwili",,,
+114391,WORD_VERB_U,,HIRAGANA,,,追散らす,おいちらす,,oichirasu,"odstraszać
+odpędzać
+wypędzać
+rozpraszać
+rozpędzać
+rozgromić",,,
+114392,WORD_NOUN,,HIRAGANA,,,痩せ我慢,やせがまん,,yase gaman,"fałszywy stoicyzm
+udawana wytrzymałość (ze względu na dumę)
+fałszywa odwaga",,,
+114393,WORD_NOUN,,HIRAGANA,,,痩我慢,やせがまん,,yase gaman,"fałszywy stoicyzm
+udawana wytrzymałość (ze względu na dumę)
+fałszywa odwaga",,,
+114394,"WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO
+WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,KATAKANA,,,-,グニャグニャ,,gunya gunya,"słaby
+wiotki
+miękki i giętki",,,
+114395,WORD_NOUN,,HIRAGANA,,,鰻飯,うなぎめし,,unagi meshi,węgorz kabayaki z ryżem,,,
+114396,WORD_VERB_U,,HIRAGANA,,,仕出す,しだす,,shidasu,"zacząć robić
+zaspokajać
+spełnić
+dostarczać jedzenie",,,
+114397,WORD_NOUN,,HIRAGANA,,,はしご車,はしごしゃ,,hashigosha,wóz strażacki,,,
+114398,WORD_NOUN,,HIRAGANA,,,花酒,はなさけ,,hana sake,"silne awamori (60%) z wyspy Yonaguni, Okinawa",,,DUPLICATE 114363
