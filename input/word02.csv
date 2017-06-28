@@ -33384,8 +33384,9 @@ odbierać (np. honor)",,,
 114887,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,期待外れ,きたいはずれ,,kitai hazure,"rozczarowanie
 zawód",,,
-114888,WORD_NOUN,,KATAKANA,,,-,クォーツ,,kuutsu,kwarc,ang: quartz,,
-114889,WORD_NOUN,,HIRAGANA,,,国造,くにのみやつこ,,kuninomiyatsuko,regionalny zarządca,dziedziczny tytuł z epoki sprzed Taika,,
+114888,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クォーツ,,kuutsu,kwarc,ang: quartz,,
+114889,WORD_NOUN,,HIRAGANA,,,国造,くにのみやつこ,,kuninomiyatsuko,regionalny zarządca,dziedziczny tytuł z epoki sprzed Taika,,"DUPLICATE 114987
+DUPLICATE 114988"
 114890,WORD_NOUN,,HIRAGANA,,,不夜城,ふやじょう,,fuyajou,"bezsenna gejowska dzielnica
 bezsenne miasto",,,
 114891,WORD_NOUN,,HIRAGANA,,,揺曳,ようえい,,youei,???,,,
@@ -33451,7 +33452,7 @@ piękna dziewczyna
 piękność
 ślicznotka",,,
 114922,WORD_NOUN,,HIRAGANA,,,麺汁,めんつゆ,,mentsuyu,sos mentsuyu,,,
-114923,WORD_VERB_U,,HIRAGANA,,,叩き起す,たたきおこす,,tatakiokosu,"budzić się
+114923,WORD_VERB_U,,HIRAGANA,,,叩き起す,たたきおこす,,tataki okosu,"budzić się
 wstać z łóżka
 zapukać do drzwi i obudzić kogoś",,,
 114924,WORD_NOUN,,HIRAGANA,,,酒代,さかだい,,sakadai,"wydatki na alkohol
@@ -33475,7 +33476,7 @@ plaża wystawiona na morski wiatr
 fontanna",,,
 114935,WORD_NOUN,,KATAKANA,,,-,デパガ,,depaga,"sprzedawczyni w domu towarowym
 ekspedientka w domu towarowym",skrót,,
-114936,WORD_VERB_RU,,HIRAGANA,,,順序だてる,じゅんじょだてる,,junjodateru,"ułożyć (w kolejności)
+114936,WORD_VERB_RU,,HIRAGANA,,,順序だてる,じゅんじょだてる,,junjo dateru,"ułożyć (w kolejności)
 porządkować (swoje myśli)",,,
 114937,WORD_NOUN,,HIRAGANA,,,神意,しんい,,shin'i,boska wola,,,
 114938,WORD_NOUN,,HIRAGANA,,,太鼓腹,たいこばら,,taikobara,"wystający brzuch
@@ -33487,7 +33488,7 @@ namiot",,,
 naród Han",,,
 114941,WORD_NOUN,,HIRAGANA,,,封入,ふうにゅう,,fuunyuu,"załączenie
 dołączenie",do listu,,
-114942,WORD_EXPRESSION,,HIRAGANA,,,訳にはいかない,わけにはいかない,,wake ni wa ikanai,"niemożliwe do zrobienia (chociaż chce się tego)
+114942,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,訳にはいかない,わけにはいかない,,wake ni wa ikanai,"niemożliwe do zrobienia (chociaż chce się tego)
 nie móc sobie pozwolić na
 nie wolno
 nie ma możliwości",,,
@@ -33497,7 +33498,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,無限軌道,むげんきどう,,mugen kidou,gąs
 114945,WORD_NOUN,,HIRAGANA,,,了解事項,りょうかいじこう,,ryoukai jikou,???,,,
 114946,WORD_NOUN,,HIRAGANA,,,岩層,がんそう,,gansou,formacja skalna,,,
 114947,WORD_VERB_U,,HIRAGANA,,,天翔る,あまがける,,amagakeru,"wznosić się
-szybować wysoko",szczególnie duchy i bogowie,,
+szybować wysoko",szczególnie duchy i bogowie,,DUPLICATE 115004
 114948,WORD_ADJECTIVE_I,,HIRAGANA,,,毳々しい,けばけばしい,,kebakebashii,"krzykliwy
 jaskrawy",,,
 114949,WORD_VERB_U,,HIRAGANA,,,貞はる,さだはる,,sadaharu,ględzić zbyt długo na temat,slang,,
@@ -33567,4 +33568,86 @@ bambusowa tarcza używana w walce do obrony przed pociskami",,,
 114982,WORD_NOUN,,HIRAGANA_KATAKANA,,,四コマ漫画,よんコマまんが,,yon koma manga,cztero okienkowy komiks,,,
 114983,WORD_NOUN,,HIRAGANA,,,納入会社,のうにゅうがいしゃ,,nounyuu gaisha,firma dostawcza,,,
 114984,WORD_NOUN,,HIRAGANA,,,操練,そうれん,,souren,"musztra (szczególnie wojskowa)
+trening",,,
+114985,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,期待はずれ,きたいはずれ,,kitai hazure,"rozczarowanie
+zawód",,,
+114986,WORD_NOUN,,KATAKANA,,,-,クオーツ,,kuootsu,kwarc,ang: quartz,,
+114987,WORD_NOUN,,HIRAGANA,,,国造,くにつこ,,kunitsuko,regionalny zarządca,dziedziczny tytuł z epoki sprzed Taika,,"DUPLICATE 114889
+DUPLICATE 114988"
+114988,WORD_NOUN,,HIRAGANA,,,国造,こくぞう,,kokuzou,regionalny zarządca,dziedziczny tytuł z epoki sprzed Taika,,"DUPLICATE 114889
+DUPLICATE 114987"
+114989,WORD_NOUN,,HIRAGANA,,,茶碗蒸,ちゃわんむし,,chawanmushi,chawanmushi,jajka gotowane na parze,,
+114990,WORD_NOUN,,HIRAGANA,,,虎狩,とらがり,,toragari,tygrysie polowanie,,,
+114991,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,叛乱を鎮める,はんらんをしずめる,,hanran o shizumeru,"tłumić rebelię
+dławić rebelię",,,
+114992,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,メエメエ,,mee mee,mee,odgłos wydawany przez owcę,,
+114993,WORD_NOUN,,HIRAGANA,,,色み,いろみ,,iromi,"odcień
+zabarwienie",,,
+114994,WORD_EXPRESSION,,HIRAGANA,,,誰ひとりとして,だれひとりとして,,dare hitori to shite,"nie jedna osoba (z czasownikiem w formie przeczącej)
+nie jeden",,,
+114995,WORD_EXPRESSION,,HIRAGANA,,,だれ一人として,だれひとりとして,,dare hitori to shite,"nie jedna osoba (z czasownikiem w formie przeczącej)
+nie jeden",,,
+114996,WORD_VERB_U,,HIRAGANA,,,叩き起こす,たたきおこす,,tataki okosu,"budzić się
+wstać z łóżka
+zapukać do drzwi i obudzić kogoś",,,
+114997,WORD_VERB_U,,HIRAGANA,,,たたき起こす,たたきおこす,,tataki okosu,"budzić się
+wstać z łóżka
+zapukać do drzwi i obudzić kogoś",,,
+114998,WORD_NOUN,,HIRAGANA,,,噴き上げ,ふきあげ,,fukiage,"miejsce wystawione na wiatr, który wieje od dołu (np. plaża)
+plaża wystawiona na morski wiatr
+fontanna",,,
+114999,WORD_NOUN,,HIRAGANA,,,吹上げ,ふきあげ,,fukiage,"miejsce wystawione na wiatr, który wieje od dołu (np. plaża)
+plaża wystawiona na morski wiatr
+fontanna",,,
+115000,WORD_NOUN,,HIRAGANA,,,噴上げ,ふきあげ,,fukiage,"miejsce wystawione na wiatr, który wieje od dołu (np. plaża)
+plaża wystawiona na morski wiatr
+fontanna",,,
+115001,WORD_VERB_RU,,HIRAGANA,,,順序立てる,じゅんじょだてる,,junjo dateru,"ułożyć (w kolejności)
+porządkować (swoje myśli)",,,
+115002,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,わけには行かない,わけにはいかない,,wake ni wa ikanai,"niemożliwe do zrobienia (chociaż chce się tego)
+nie móc sobie pozwolić na
+nie wolno
+nie ma możliwości",,,
+115003,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,訳には行かない,わけにはいかない,,wake ni wa ikanai,"niemożliwe do zrobienia (chociaż chce się tego)
+nie móc sobie pozwolić na
+nie wolno
+nie ma możliwości",,,
+115004,WORD_VERB_U,,HIRAGANA,,,天翔る,あまかける,,amakakeru,"wznosić się
+szybować wysoko",szczególnie duchy i bogowie,,DUPLICATE 114947
+115005,WORD_VERB_U,,HIRAGANA,,,天翔ける,あまがける,,amagakeru,"wznosić się
+szybować wysoko",szczególnie duchy i bogowie,,DUPLICATE 115006
+115006,WORD_VERB_U,,HIRAGANA,,,天翔ける,あまかける,,amakakeru,"wznosić się
+szybować wysoko",szczególnie duchy i bogowie,,DUPLICATE 115005
+115007,WORD_ADJECTIVE_I,,HIRAGANA,,,毳毳しい,けばけばしい,,kebakebashii,"krzykliwy
+jaskrawy",,,
+115008,WORD_NOUN,,HIRAGANA,,,成りすまし,なりすまし,,narisumashi,"kradzież tożsamości
+fałszerstwo
+imitowanie
+maskarada (szczególnie w złych celach)",,,
+115009,WORD_NOUN,,HIRAGANA,,,貢物,みつぎもの,,mitsugimono,"danina
+trybut",,,
+115010,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,息を飲む,いきをのむ,,iki o nomu,"złapać oddech
+dyszeć
+sapać",,,
+115011,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,息をのむ,いきをのむ,,iki o nomu,"złapać oddech
+dyszeć
+sapać",,,
+115012,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,息を嚥む,いきをのむ,,iki o nomu,"złapać oddech
+dyszeć
+sapać",,,
+115013,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,思いをはせる,おもいをはせる,,omoi o haseru,"myśleć o
+myśleć o czymś odległym
+myśleć nostalgicznie o (szczególnie swoim rodzinnym mieście)",,,
+115014,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,惜しげ,おしげ,,oshige,???,,,
+115015,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,惜気,おしげ,,oshige,???,,,
+115016,WORD_NOUN,,KATAKANA,,,-,ドゥルイド,,duruido,druid,,,
+115017,WORD_NOUN,,HIRAGANA,,,操錬,そうれん,,souren,"musztra (szczególnie wojskowa)
 trening",,,
