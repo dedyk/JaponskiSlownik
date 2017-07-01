@@ -1663,21 +1663,27 @@ public class WordGenerator {
 			
 			case GENERATE_PREFIX_WORD_LIST: {
 				
-				if (args.length != 3) {
+				if (args.length != 4) {
 					
 					System.err.println("Niepoprawna liczba argumentów");
 					
 					return;
 				}
 				
-				// sprawdzenie parametrow				
+				// sprawdzenie parametrow	
+				String additionalCustomFileName = null;
+				
 				Integer minKanjiPrefixLength = null;
 				Integer minKanaPrefixLength = null;
 				
 				if (args[1].equals("-") == false) {
+					additionalCustomFileName = args[1];
+				}
+				
+				if (args[2].equals("-") == false) {
 				
 					try {
-						minKanjiPrefixLength = Integer.parseInt(args[1]);
+						minKanjiPrefixLength = Integer.parseInt(args[2]);
 						
 					} catch (NumberFormatException e) {
 						
@@ -1694,10 +1700,10 @@ public class WordGenerator {
 					}
 				}
 				
-				if (args[2].equals("-") == false) {
+				if (args[3].equals("-") == false) {
 					
 					try {
-						minKanaPrefixLength = Integer.parseInt(args[2]);
+						minKanaPrefixLength = Integer.parseInt(args[3]);
 						
 					} catch (NumberFormatException e) {
 						
@@ -1831,40 +1837,43 @@ public class WordGenerator {
 				
 				// wczytywanie dodatkowego pliku
 				
-				File customFile = new File("input/custom_prefix_file");
-				
-				if (customFile.isFile() == true) {
+				if (additionalCustomFileName != null) {
 					
-					// wczytywanie dodatkowego pliku
+					File customFile = new File(additionalCustomFileName);
 					
-					List<String> customFileLines = readFile(customFile.getAbsolutePath());
-					
-					for (String currentCustomFileLine : customFileLines) {
-												
-						for (int startIdx = 0; startIdx < currentCustomFileLine.length(); ++startIdx) {
-							
-							for (int endIdx = 0; endIdx <= currentCustomFileLine.length(); ++endIdx) {
+					if (customFile.isFile() == true) {
+						
+						// wczytywanie dodatkowego pliku
+						
+						List<String> customFileLines = readFile(customFile.getAbsolutePath());
+						
+						for (String currentCustomFileLine : customFileLines) {
+													
+							for (int startIdx = 0; startIdx < currentCustomFileLine.length(); ++startIdx) {
 								
-								if (endIdx <= startIdx) {
-									continue;
-								}
-								
-								String substring = currentCustomFileLine.substring(startIdx, endIdx);
-								
-								boolean isAllJapaneseChars = Utils.isAllJapaneseChars(substring);
-																
-								if (isAllJapaneseChars == true) {
-									allPrefixes.add(substring);									
-								}
-							}			
+								for (int endIdx = 0; endIdx <= currentCustomFileLine.length(); ++endIdx) {
+									
+									if (endIdx <= startIdx) {
+										continue;
+									}
+									
+									String substring = currentCustomFileLine.substring(startIdx, endIdx);
+									
+									boolean isAllJapaneseChars = Utils.isAllJapaneseChars(substring);
+																	
+									if (isAllJapaneseChars == true) {
+										allPrefixes.add(substring);									
+									}
+								}			
+							}
 						}
+											
+					} else {					
+						System.out.println("Brak pliku: " + customFile);
+						
+						Thread.sleep(3000);					
 					}
-										
-				} else {					
-					System.out.println("Brak pliku: " + customFile);
-					
-					Thread.sleep(3000);					
-				}
+				}				
 				
 				// wczytanie pliku z cache'em juz sprawdzonych prefiksow
 				final File prefixCacheFile = new File("cache/prefix_word_list.cache");
