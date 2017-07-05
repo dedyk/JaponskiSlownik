@@ -35356,7 +35356,7 @@ być rozmokły",,,
 WORD_EXPRESSION",,HIRAGANA,,,要領がいい,ようりょうがいい,,youryou ga ii,"wiedzieć, jak płynąć z prądem
 dobrze radzić sobie z rzeczami",,,
 115792,"WORD_NOUN
-WORD_ADVERB",,HIRAGANA,,,有り丈,ありたけ,,aritake,???,,,
+WORD_ADVERB",,HIRAGANA,,,有り丈,ありたけ,,aritake,???,,,DUPLICATE 115875
 115793,WORD_NOUN,,HIRAGANA,,,領有権,りょうゆうけん,,ryouyuuken,"prawo terytorialne
 władza
 zwierzchnictwo",,,
@@ -35384,11 +35384,16 @@ półkolisty
 wycinek (koła)",,,
 115802,WORD_EXPRESSION,,HIRAGANA,,,-,げろげろ,,gero gero,"obrzydliwe!
 ohydne!
-wstrętne!",slang,,
+wstrętne!",slang,,"DUPLICATE 115885
+EDICT_DUPLICATE 115803
+EDICT_DUPLICATE 115883
+EDICT_DUPLICATE 115884
+EDICT_DUPLICATE 115886
+EDICT_DUPLICATE 115887"
 115803,"WORD_ADVERB
 WORD_ADVERB_TO",,KATAKANA,,,-,ケロケロ,,kero kero,"rechotanie
 kum kum
-odgłos żab",,,
+odgłos żab",,,EDICT_DUPLICATE 115802
 115804,WORD_VERB_U,,KATAKANA_HIRAGANA,,,-,ウィキる,,wikiru,"szukanie w Wikipedii
 sprawdzanie w Wikipedii",slang,,
 115805,WORD_NOUN,,HIRAGANA,,,再発防止,さいはつぼうし,,saihatsu boushi,"środek zapobiegawczy
@@ -35401,10 +35406,10 @@ czyste niebieskie jesienne niebo",,,
 utworzenie
 tworzenie
 utworzenie imperium",,,
-115809,WORD_NOUN,,HIRAGANA,,,門構え,かどがまえ,,kadogamae,element podstawowy kanji “brama”,,,
+115809,WORD_NOUN,,HIRAGANA,,,門構え,かどがまえ,,kadogamae,element podstawowy kanji “brama”,,,DUPLICATE 115810
 115810,WORD_NOUN,,HIRAGANA,,,門構え,もんがまえ,,mongamae,"styl lub konstrukcja bramy
 wyposażony w bramę (np. dom, sklep i etc)
-element podstawowy kanji “brama”",,,
+element podstawowy kanji “brama”",,,DUPLICATE 115809
 115811,WORD_NOUN,,HIRAGANA,,,軋轢,あつれき,,atsureki,"tarcie
 napięcie
 niezgoda
@@ -35412,12 +35417,12 @@ waśń
 konflikt
 spór",,,
 115812,WORD_NOUN,,HIRAGANA,,,訴訟法,そしょうほう,,soshouhou,prawo procesowe,,,
-115813,WORD_NOUN,,HIRAGANA,,,お前さん,おまえさん,,omaesan,"ty
+115813,WORD_NOUN,,HIRAGANA,,,お前さん,おまえさん,,omae san,"ty
 mój drogi
 hej",,,
 115814,WORD_NOUN,,HIRAGANA,,,国民所得,こくみんしょとく,,kokumin shotoku,dochód narodowy,,,
 115815,WORD_NOUN,,HIRAGANA,,,大腿骨,だいたいこつ,,daitaikotsu,kość udowa,,,
-115816,WORD_NOUN,,HIRAGANA,,,紙粘土,かみねんど,,kaminendo,masa papierowa z dodatkiem kleju,,,
+115816,WORD_NOUN,,HIRAGANA,,,紙粘土,かみねんど,,kami nendo,masa papierowa z dodatkiem kleju,,,
 115817,WORD_NOUN,,HIRAGANA,,,便座,べんざ,,benza,deska sedesowa,,,
 115818,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,無規律,むきりつ,,mukiritsu,"bezprawny
@@ -35464,7 +35469,7 @@ ekstaza
 trans",,,
 115838,"WORD_ADVERB
 WORD_NOUN
-WORD_ADVERB_TO",,HIRAGANA,,,冷え冷え,ひえひえ,,hie hie,???,,,
+WORD_ADVERB_TO",,HIRAGANA,,,冷え冷え,ひえひえ,,hie hie,???,,,DUPLICATE 115900
 115839,WORD_NOUN,,HIRAGANA,,,重音,じゅうおん,,juuon,"jednoczesne brzmienie dwóch nut na dwóch strunach
 dwudźwięk
 ???",,,
@@ -35522,3 +35527,110 @@ komornik",,,
 115869,WORD_NOUN,,HIRAGANA,,,手つき,てつき,,tetsuki,sposób używania swoich rąk,,,
 115870,WORD_NOUN,,HIRAGANA,,,全性愛,ぜんせいあい,,zenseiai,panseksualizm,"pogląd lub filozofia zakładający, że ludzki potencjał seksualny może i powinien być skierowany na każdego i wszystko",,
 115871,WORD_NOUN,,KATAKANA,,,-,パンセクシュアリティ,,pansekushuariti,panseksualizm,"pogląd lub filozofia zakładający, że ludzki potencjał seksualny może i powinien być skierowany na każdego i wszystko",,
+115872,WORD_NOUN,,KATAKANA,,,-,デパートメント・ストア,,depaatomento sutoa,dom towarowy,ang: department store,,
+115873,WORD_NOUN,,KATAKANA,,,-,メマツ,,mematsu,sosna gęstokwiatowa,"gatunek drzewa z rodziny sosnowatych, pinus densiflora",,
+115874,"WORD_ADVERB_TO
+WORD_ADVERB
+WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,グシャグシャ,,gusha gusha,"mokry
+rozmoknięty
+papkowaty
+gąbczasty
+zmięty",,,
+115875,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,有り丈,ありだけ,,aridake,???,,,DUPLICATE 115792
+115876,WORD_NOUN,,HIRAGANA,,,寄附金,きふきん,,kifukin,"datek
+wkład
+darowizna",,,
+115877,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,うぶ毛,うぶげ,,ubuge,"miękkie, meszkowate włosy (np. takie, jak na policzku)
+meszek
+słaby zarost
+włoski na owocach
+lanugo (meszek u noworodka, który zanika po urodzeniu)",,,
+115878,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,生毛,うぶげ,,ubuge,"miękkie, meszkowate włosy (np. takie, jak na policzku)
+meszek
+słaby zarost
+włoski na owocach
+lanugo (meszek u noworodka, który zanika po urodzeniu)",,,
+115879,WORD_NOUN,,HIRAGANA,,,垢擦り,あかすり,,akasuri,"szorowanie
+usuwanie brudu",,,
+115880,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,弓形,ゆみなり,,yuminari,"łukowaty
+łukowy
+w kształcie sierpa
+półkolisty
+wycinek (koła)",,,"DUPLICATE 115881
+DUPLICATE 115882"
+115881,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,弓形,ゆみがた,,yumigata,"łukowaty
+łukowy
+w kształcie sierpa
+półkolisty
+wycinek (koła)",,,"DUPLICATE 115880
+DUPLICATE 115882"
+115882,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,弓形,きゅうけい,,kyuukei,"łukowaty
+łukowy
+w kształcie sierpa
+półkolisty
+wycinek (koła)",,,"DUPLICATE 115880
+DUPLICATE 115881"
+115883,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,けろけろ,,kero kero,"rechotanie
+kum kum
+odgłos żab",,,EDICT_DUPLICATE 115802
+115884,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,ゲロゲロ,,gero gero,"rechotanie
+kum kum
+odgłos żab",,,EDICT_DUPLICATE 115802
+115885,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,げろげろ,,gero gero,"rechotanie
+kum kum
+odgłos żab",,,DUPLICATE 115802
+115886,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,ゲコゲコ,,geko geko,"rechotanie
+kum kum
+odgłos żab",,,EDICT_DUPLICATE 115802
+115887,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,げこげこ,,geko geko,"rechotanie
+kum kum
+odgłos żab",,,EDICT_DUPLICATE 115802
+115888,WORD_NOUN,,HIRAGANA,,,門がまえ,かどがまえ,,kadogamae,element podstawowy kanji “brama”,,,DUPLICATE 115890
+115889,WORD_NOUN,,HIRAGANA,,,門構,かどがまえ,,kadogamae,element podstawowy kanji “brama”,,,DUPLICATE 115891
+115890,WORD_NOUN,,HIRAGANA,,,門がまえ,もんがまえ,,mongamae,"styl lub konstrukcja bramy
+wyposażony w bramę (np. dom, sklep i etc)
+element podstawowy kanji “brama”",,,DUPLICATE 115888
+115891,WORD_NOUN,,HIRAGANA,,,門構,もんがまえ,,mongamae,"styl lub konstrukcja bramy
+wyposażony w bramę (np. dom, sklep i etc)
+element podstawowy kanji “brama”",,,DUPLICATE 115889
+115892,WORD_NOUN,,HIRAGANA,,,御前さん,おまえさん,,omae san,"ty
+mój drogi
+hej",,,
+115893,WORD_NOUN,,HIRAGANA,,,紙ねんど,かみねんど,,kami nendo,masa papierowa z dodatkiem kleju,,,
+115894,WORD_NOUN,,HIRAGANA,,,蠑螈,いもり,,imori,"tryton
+traszka","szczególnie traszka japońska, cynops pyrrhogaster",,
+115895,WORD_NOUN,,KATAKANA,,,-,イモリ,,imori,"tryton
+traszka","szczególnie traszka japońska, cynops pyrrhogaster",,
+115896,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,-,イキがいい,,iki ga ii,świeży,np. ryba,,
+115897,WORD_NOUN,,KATAKANA,,,-,ミジンコ,,mijinko,"wioślaki
+dafnia (rodzaj słodkowodnych stawonogów zaliczanych do grupy wioślarek)
+rozwielitka (rodzaj słodkowodnych stawonogów zaliczanych do grupy wioślarek)",,,
+115898,WORD_NOUN,,HIRAGANA,,,鉤括弧,かぎかっこ,,kagi kakko,"nawias kwadratowy
+cudzysłów w japońskim stylu",,,
+115899,WORD_NOUN,,HIRAGANA,,,鍵括弧,かぎかっこ,,kagi kakko,"nawias kwadratowy
+cudzysłów w japońskim stylu",,,
+115900,"WORD_ADVERB
+WORD_NOUN
+WORD_ADVERB_TO",,HIRAGANA,,,冷え冷え,ひえびえ,,hiebie,???,,,DUPLICATE 115838
+115901,WORD_ADJECTIVE_I,,HIRAGANA,,,見良い,みよい,,miyoi,"miło patrzeć na
+łatwy do zobaczenia",,,
+115902,WORD_NOUN,,KATAKANA_HIRAGANA,,,マブ達,マブだち,,mabudachi,"prawdziwy przyjaciel
+bliski przyjaciel",kolokwializm,,
+115903,WORD_NOUN,,KATAKANA,,,-,マブダチ,,mabudachi,"prawdziwy przyjaciel
+bliski przyjaciel",kolokwializm,,
+115904,WORD_NOUN,,KATAKANA,,,-,レーガノミクス,,reeganomikusu,Reaganomika,polityka gospodarcza prezydenta USA Ronalda Reagana z lat 80. XX wieku,,
+115905,WORD_NOUN,,KATAKANA,,,-,シュンギク,,shungiku,złocień wieńcowy,"gatunek rośliny z rodziny astrowatych, chrysanthemum coronarium",,
+115906,WORD_NOUN,,HIRAGANA,,,手付き,てつき,,tetsuki,sposób używania swoich rąk,,,
