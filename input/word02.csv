@@ -35639,7 +35639,7 @@ przenikać
 przesiąknąć",,,
 115908,WORD_NOUN,,HIRAGANA,,,正否,せいひ,,seihi,dobrze i źle,,,
 115909,WORD_NOUN,,HIRAGANA,,,薬物依存,やくぶついそん,,yakubutsu ison,"uzależnienie od narkotyków
-uzależnienie od lekarstw",,,
+uzależnienie od lekarstw",,,DUPLICATE 115969
 115910,WORD_NOUN,,HIRAGANA,,,外合,がいごう,,gaigou,koniunkcja górna,"rodzaj koniunkcji, w której planeta znajduje się za Słońcem w jednej linii z Ziemią",,
 115911,WORD_NOUN,,HIRAGANA,,,内合,ないごう,,naigou,koniunkcja dolna,"rodzaj koniunkcji, w które planeta znajduje się w jednej linii między Słońcem a Ziemią",,
 115912,WORD_NOUN,,HIRAGANA,,,五臓六腑,ごぞうろっぷ,,gozou roppu,"organy wewnętrzne
@@ -35661,7 +35661,7 @@ kolczuga",,,
 zapraszać
 zaprosić",,,
 115920,WORD_NOUN,,HIRAGANA,,,学監,がっかん,,gakkan,dziekan,,,
-115921,WORD_EXPRESSION,,HIRAGANA,,,未だかつて,いまだかつて,,ima dakatsute,"nie do tej poru (z czasownikiem w formie przeczącej)
+115921,WORD_EXPRESSION,,HIRAGANA,,,未だかつて,いまだかつて,,imada katsute,"nie do tej poru (z czasownikiem w formie przeczącej)
 nigdy dotąd",,,
 115922,WORD_NOUN,,HIRAGANA,,,写真写り,しゃしんうつり,,shashin' utsuri,fotogeniczność,,,
 115923,WORD_NOUN,,HIRAGANA,,,逮捕者,たいほしゃ,,taihosha,aresztowana osoba,,,
@@ -35717,7 +35717,7 @@ bycie oszołomiony",,,
 115947,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,痩身,そうしん,,soushin,"szczupła sylwetka
 szczupła figura
-obniżenie wagi",,,
+obniżenie wagi",,,EDICT_DUPLICATE 75121
 115948,WORD_NOUN,,HIRAGANA,,,衆説,しゅうせつ,,shuusetsu,różne teorie,,,
 115949,WORD_NOUN,,HIRAGANA,,,耳かき,みみかき,,mimikaki,"patyczki do czyszczenia uszu
 czyszczenie uszu (patyczkami)",,,
@@ -35726,9 +35726,9 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,胸郭,きょうかく,,kyoukaku,klatka piersiowa
 115951,WORD_NOUN,,HIRAGANA,,,胸板,むないた,,munaita,"pierś
 klatka piersiowa",,,
 115952,WORD_NOUN,,HIRAGANA,,,胸糞,むなくそ,,munakuso,"pierś
-klatka piersiowa",,,
-115953,WORD_VERB_U,,HIRAGANA,,,醂す,さわす,,sawasu,???,,,
-115954,WORD_VERB_U,,HIRAGANA,,,醂す,あわす,,awasu,???,,,
+klatka piersiowa",,,DUPLICATE 115980
+115953,WORD_VERB_U,,HIRAGANA,,,醂す,さわす,,sawasu,???,,,DUPLICATE 115954
+115954,WORD_VERB_U,,HIRAGANA,,,醂す,あわす,,awasu,???,,,DUPLICATE 115953
 115955,WORD_NOUN,,HIRAGANA,,,如是,にょぜ,,nyoze,???,,,
 115956,WORD_NOUN,,HIRAGANA,,,街着,まちぎ,,machigi,"ubranie na co dzień
 ubrania nadające się do noszenia po mieście",,,
@@ -35746,3 +35746,60 @@ ubrania nadające się do noszenia po mieście",,,
 115968,WORD_VERB_U,,HIRAGANA,,,賭す,とす,,tosu,"ryzykować
 zakładać się
 stawiać",,,
+115969,WORD_NOUN,,HIRAGANA,,,薬物依存,やくぶついぞん,,yakubutsu izon,"uzależnienie od narkotyków
+uzależnienie od lekarstw",,,DUPLICATE 115909
+115970,WORD_VERB_RU,,HIRAGANA,,,呼入れる,よびいれる,,yobiireru,"przywołać
+zapraszać
+zaprosić",,,
+115971,WORD_EXPRESSION,,HIRAGANA,,,未だ嘗て,いまだかつて,,imada katsute,"nie do tej poru (z czasownikiem w formie przeczącej)
+nigdy dotąd",,,
+115972,WORD_EXPRESSION,,HIRAGANA,,,未だ曾て,いまだかつて,,imada katsute,"nie do tej poru (z czasownikiem w formie przeczącej)
+nigdy dotąd",,,
+115973,WORD_NOUN,,HIRAGANA,,,写真うつり,しゃしんうつり,,shashin' utsuri,fotogeniczność,,,
+115974,WORD_VERB_RU,,HIRAGANA,,,赧らめる,あからめる,,akarameru,"rumienić się
+czerwienić się
+poczerwienieć",,,
+115975,WORD_ADJECTIVE_I,,HIRAGANA,,,遣る瀬ない,やるせない,,yarusenai,"bezradny
+bezsilny
+ponury
+posępny
+smętny
+smutny
+nieszczęśliwy
+zrozpaczony
+strapiony
+przygnębiony",,,
+115976,WORD_ADJECTIVE_I,,HIRAGANA,,,やる瀬ない,やるせない,,yarusenai,"bezradny
+bezsilny
+ponury
+posępny
+smętny
+smutny
+nieszczęśliwy
+zrozpaczony
+strapiony
+przygnębiony",,,
+115977,WORD_NOUN,,HIRAGANA,,,喪心,そうしん,,soushin,"roztargnienie
+nieuwaga
+osłupienie
+oszołomienie
+bycie oszołomiony",,,
+115978,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,そう身,そうしん,,soushin,"szczupła sylwetka
+szczupła figura
+obniżenie wagi",,,"DUPLICATE 75120
+DUPLICATE 75121"
+115979,WORD_NOUN,,HIRAGANA,,,耳掻き,みみかき,,mimikaki,"patyczki do czyszczenia uszu
+czyszczenie uszu (patyczkami)",,,
+115980,WORD_NOUN,,HIRAGANA,,,胸糞,むねくそ,,munekuso,"pierś
+klatka piersiowa",,,DUPLICATE 115952
+115981,WORD_NOUN,,HIRAGANA,,,胸くそ,むなくそ,,munakuso,"pierś
+klatka piersiowa",,,DUPLICATE 115982
+115982,WORD_NOUN,,HIRAGANA,,,胸くそ,むねくそ,,munekuso,"pierś
+klatka piersiowa",,,DUPLICATE 115981
+115983,WORD_VERB_U,,HIRAGANA,,,淡す,あわす,,awasu,???,,,
+115984,WORD_NOUN,,KATAKANA_HIRAGANA,,,シャピロ・ウィルク検定,シャピロウィルクけんてい,,shapiro wiruku kentei,test Shapiro-Wilka,standardowy test wykorzystywany do testowania normalności danych,,
+115985,WORD_NOUN,,KATAKANA_HIRAGANA,,,バイラス病,バイラスびょう,,bairasu byou,choroba wirusowa,,,
+115986,WORD_NOUN,,KATAKANA,,,-,マシマロ,,mashimaro,pianka cukrowa,ang: marshmallow,,
+115987,WORD_NOUN,,KATAKANA,,,-,ギモーブ,,gimoobu,pianka cukrowa,ang: marshmallow,,
+115988,WORD_NOUN,,KATAKANA,,,-,キャラクタ・マップ,,kyarakuta mappu,tablica znaków,"informatyka, ang: character map",,
