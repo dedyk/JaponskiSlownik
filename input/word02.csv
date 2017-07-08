@@ -36347,7 +36347,7 @@ niedola
 nieszczęście
 ból
 rozpacz",,,
-116199,WORD_NOUN,,HIRAGANA,,,観音様,かんのんさま,,kannonsama,"Avalokiteshvara (Bodhisattva)
+116199,WORD_NOUN,,HIRAGANA,,,観音様,かんのんさま,,kannon sama,"Avalokiteshvara (Bodhisattva)
 Avalokitesvara
 Kannon
 Kwannon
@@ -36360,7 +36360,7 @@ odgłos rozdzierania wzdłuż perforowanej linii",,,
 uzdolniony
 wirtuozerski
 mistrzowski",,,
-116202,WORD_NOUN,,HIRAGANA,,,梯梧,でいご,,deigo,erytryna zmienna,"gatunek rośliny z rodziny bobowatych, erythrina variegata",,
+116202,WORD_NOUN,,HIRAGANA,,,梯梧,でいご,,deigo,erytryna zmienna,"gatunek rośliny z rodziny bobowatych, erythrina variegata",,DUPLICATE 116259
 116203,WORD_NOUN,,KATAKANA,,,-,パプリカ,,papurika,papryka,ang: paprika,,
 116204,WORD_NOUN,,KATAKANA,,,-,ピピンアットマーク,,pipin' attomaaku,Pippin ATMARK,,,
 116205,WORD_NOUN,,HIRAGANA,,,営業時間,えいぎょうじかん,,eigyou jikan,"godziny pracy
@@ -36381,9 +36381,11 @@ manna z nieba",nieoczekiwane,,
 WORD_ADJECTIVE_NO",,HIRAGANA,,,半自治,はんじち,,hanjichi,półautonomia,,,
 116211,WORD_NOUN,,KATAKANA,,,-,デーツ,,deetsu,"data
 randka",ang: date,,
-116212,WORD_NOUN,,HIRAGANA,,,大輔,たいふ,,taifu,wiceminister,"podczas ritsuryo, archaizm",,
+116212,WORD_NOUN,,HIRAGANA,,,大輔,たいふ,,taifu,wiceminister,"podczas ritsuryo, archaizm",,"DUPLICATE 116213
+DUPLICATE 116268"
 116213,WORD_NOUN,,HIRAGANA,,,大輔,だゆう,,dayuu,"wiceminister (okres Meiji)
-podsekretarz",,,
+podsekretarz",,,"DUPLICATE 116212
+DUPLICATE 116268"
 116214,WORD_NOUN,,HIRAGANA,,,御庭番衆,おにわばんしゅう,,oniwabanshuu,Oniwaban,,,
 116215,"WORD_PARTICULE
 WORD_SUFFIX",,HIRAGANA,,,-,せず,,sezu,bez,,,
@@ -36421,13 +36423,13 @@ błędne ogłoszenie zwycięstwa bez wymaganych wszystkich płytek (Mahjong)",,,
 obłudnik
 obłudnica
 snob
-bufon",,,
+bufon",,,DUPLICATE 116274
 116231,WORD_NOUN,,HIRAGANA,,,痛嘆,つうたん,,tsuutan,"głęboki żal
 głęboki smutek
 głęboka rozpacz",,,
 116232,WORD_NOUN,,HIRAGANA,,,擬娩,ぎべん,,giben,kuwada,"występująca w niektórych kulturach instytucja oznaczająca zespół praktyk i wierzeń w okresie ciąży, obejmujących współdzielenie przez ojca pewnych działań uznawanych za kobiece, mało znane słowo",,
 116233,WORD_NOUN,,HIRAGANA,,,蝶番,ちょうつがい,,choutsugai,"zawias
-staw",,,
+staw",,,DUPLICATE 116276
 116234,WORD_NOUN,,HIRAGANA,,,切断機,せつだんき,,setsudanki,"krajalnica
 obcinarka
 maszyna tnąca
@@ -36450,7 +36452,7 @@ nie mający sobie równego",,,
 116239,WORD_NOUN,,HIRAGANA,,,埋もれ木,うもれぎ,,umoregi,"czarny dąb
 dąb kopalny
 ciemność
-figa (mało znane słowo)",,,
+figa (mało znane słowo)",,,DUPLICATE 116290
 116240,WORD_NOUN,,KATAKANA_HIRAGANA,,,イ調,イちょう,,ichou,klucz A,muzyka,,
 116241,WORD_NOUN,,HIRAGANA,,,合調,ごうちょう,,gouchou,strojenie,,,
 116242,WORD_NOUN,,KATAKANA_HIRAGANA,,,ニ長調,ニちょうちょう,,nichouchou,D-dur,,,
@@ -36471,9 +36473,137 @@ tworzyć owoce",,,
 nawet jako żart",,,
 116250,WORD_NOUN,,HIRAGANA,,,火先,ひさき,,hisaki,"płomienie
 czoło ognia
-czubek ognia",,,
+czubek ognia",,,DUPLICATE 116295
 116251,WORD_NOUN,,KATAKANA,,,-,エビデンス,,ebidensu,dowód,ang: evidence,,
 116252,WORD_NOUN,,HIRAGANA,,,間接証拠,かんせつしょうこ,,kansetsu shouko,"dowód pośredni
 poszlaka",,,
 116253,WORD_NOUN,,HIRAGANA,,,証拠固め,しょうこがため,,shouko gatame,"gromadzenie dowodów
+zbieranie dowodów",,,
+116254,WORD_NOUN,,KATAKANA,,,-,デフォールト,,defooruto,domyślny,ang: default,,
+116255,WORD_NOUN,,HIRAGANA,,,観音さま,かんのんさま,,kannon sama,"Avalokiteshvara (Bodhisattva)
+Avalokitesvara
+Kannon
+Kwannon
+Guanyin
+buddyjskie bóstwo współczucia
+łechtaczka (slang)",,,
+116256,WORD_NOUN,,HIRAGANA,,,觀音様,かんのんさま,,kannon sama,"Avalokiteshvara (Bodhisattva)
+Avalokitesvara
+Kannon
+Kwannon
+Guanyin
+buddyjskie bóstwo współczucia
+łechtaczka (slang)",,,
+116257,WORD_NOUN,,HIRAGANA,,,觀音さま,かんのんさま,,kannon sama,"Avalokiteshvara (Bodhisattva)
+Avalokitesvara
+Kannon
+Kwannon
+Guanyin
+buddyjskie bóstwo współczucia
+łechtaczka (slang)",,,
+116258,WORD_NOUN,,HIRAGANA,,,-,ぺりぺり,,peri peri,"odgłos lekkiego rozdzierania lub odrywania
+odgłos rozdzierania wzdłuż perforowanej linii",,,
+116259,WORD_NOUN,,HIRAGANA,,,梯梧,でいこ,,deiko,erytryna zmienna,"gatunek rośliny z rodziny bobowatych, erythrina variegata",,DUPLICATE 116202
+116260,WORD_NOUN,,HIRAGANA,,,梯姑,でいご,,deigo,erytryna zmienna,"gatunek rośliny z rodziny bobowatych, erythrina variegata",,DUPLICATE 116261
+116261,WORD_NOUN,,HIRAGANA,,,梯姑,でいこ,,deiko,erytryna zmienna,"gatunek rośliny z rodziny bobowatych, erythrina variegata",,DUPLICATE 116260
+116262,WORD_NOUN,,KATAKANA,,,-,デイゴ,,deigo,erytryna zmienna,"gatunek rośliny z rodziny bobowatych, erythrina variegata",,
+116263,WORD_NOUN,,KATAKANA,,,-,デイコ,,deiko,erytryna zmienna,"gatunek rośliny z rodziny bobowatych, erythrina variegata",,
+116264,WORD_NOUN,,KATAKANA,,,-,ピピン・アットマーク,,pipin' attomaaku,Pippin ATMARK,,,
+116265,WORD_VERB_U,,HIRAGANA,,,つけ上がる,つけあがる,,tsuke agaru,"stać się zarozumiały
+być pyszałkowaty
+wykorzystywać czyjąś dobroć lub cierpliwość",,,
+116266,WORD_VERB_U,,HIRAGANA,,,付け上る,つけあがる,,tsuke agaru,"stać się zarozumiały
+być pyszałkowaty
+wykorzystywać czyjąś dobroć lub cierpliwość",,,
+116267,WORD_VERB_U,,HIRAGANA,,,付上がる,つけあがる,,tsuke agaru,"stać się zarozumiały
+być pyszałkowaty
+wykorzystywać czyjąś dobroć lub cierpliwość",,,
+116268,WORD_NOUN,,HIRAGANA,,,大輔,たゆう,,tayuu,wiceminister,"podczas ritsuryo, archaizm",,"DUPLICATE 116212
+DUPLICATE 116213"
+116269,WORD_NOUN,,KATAKANA,,,-,トマス・カップ,,tomasu kappu,Thomas Cup,Międzynarodowe Mistrzowska w Badmintona,,
+116270,WORD_VERB_U,,HIRAGANA,,,遣って行く,やっていく,,yatte iku,???,,,
+116271,WORD_NOUN,,HIRAGANA,,,滝壺,たきつぼ,,takitsubo,"kocioł eworsyjny
+jezioro wodospadowe
+zlewisko pod wodospadem",,,
+116272,WORD_NOUN,,HIRAGANA,,,滝つぼ,たきつぼ,,takitsubo,"kocioł eworsyjny
+jezioro wodospadowe
+zlewisko pod wodospadem",,,
+116273,WORD_NOUN,,KATAKANA,,,-,チョンボ,,chonbo,"pomyłka
+błąd
+potknięcie
+błędne ogłoszenie zwycięstwa bez wymaganych wszystkich płytek (Mahjong)",,,
+116274,WORD_NOUN,,HIRAGANA,,,偽君子,にせくんし,,nisekunshi,"hipokryta
+obłudnik
+obłudnica
+snob
+bufon",,,DUPLICATE 116230
+116275,WORD_NOUN,,HIRAGANA,,,痛歎,つうたん,,tsuutan,"głęboki żal
+głęboki smutek
+głęboka rozpacz",,,
+116276,WORD_NOUN,,HIRAGANA,,,蝶番,ちょうばん,,chouban,"zawias
+staw",,,DUPLICATE 116233
+116277,WORD_NOUN,,HIRAGANA,,,蝶つがい,ちょうつがい,,choutsugai,"zawias
+staw",,,
+116278,WORD_NOUN,,HIRAGANA,,,蝶番い,ちょうつがい,,choutsugai,"zawias
+staw",,,
+116279,WORD_NOUN,,HIRAGANA,,,截断機,せつだんき,,setsudanki,"krajalnica
+obcinarka
+maszyna tnąca
+gilotyna",,,
+116280,WORD_ADJECTIVE_NA,,HIRAGANA,,,誇らし気,ほこらしげ,,hokorashige,"dumny
+triumfalny
+zwycięski
+chełpliwy",,,
+116281,WORD_VERB_U,,HIRAGANA,,,擦り剥く,すりむく,,surimuku,"obetrzeć (kolano)
+zadrasnąć
+obetrzeć
+zadrapać",,,
+116282,WORD_VERB_U,,HIRAGANA,,,擦剥く,すりむく,,surimuku,"obetrzeć (kolano)
+zadrasnąć
+obetrzeć
+zadrapać",,,
+116283,WORD_VERB_U,,HIRAGANA,,,擦り剝く,すりむく,,surimuku,"obetrzeć (kolano)
+zadrasnąć
+obetrzeć
+zadrapać",,,
+116284,WORD_VERB_U,,HIRAGANA,,,擦剝く,すりむく,,surimuku,"obetrzeć (kolano)
+zadrasnąć
+obetrzeć
+zadrapać",,,
+116285,WORD_NOUN,,HIRAGANA,,,鑽火,きりび,,kiribi,"uderzanie kamieniami lub pocieranie kijów (zwykle w celu rozpalenia ognia)
+ogień zapalony przez iskrę z krzemienia
+shintoistyczny ceremonialny ogień",,,
+116286,WORD_NOUN,,HIRAGANA,,,切り火,きりび,,kiribi,"uderzanie kamieniami lub pocieranie kijów (zwykle w celu rozpalenia ognia)
+ogień zapalony przez iskrę z krzemienia
+shintoistyczny ceremonialny ogień",,,
+116287,WORD_NOUN,,HIRAGANA,,,鑽り火,きりび,,kiribi,"uderzanie kamieniami lub pocieranie kijów (zwykle w celu rozpalenia ognia)
+ogień zapalony przez iskrę z krzemienia
+shintoistyczny ceremonialny ogień",,,
+116288,WORD_NOUN,,HIRAGANA,,,鑚火,きりび,,kiribi,"uderzanie kamieniami lub pocieranie kijów (zwykle w celu rozpalenia ognia)
+ogień zapalony przez iskrę z krzemienia
+shintoistyczny ceremonialny ogień",,,
+116289,WORD_NOUN,,HIRAGANA,,,鑚り火,きりび,,kiribi,"uderzanie kamieniami lub pocieranie kijów (zwykle w celu rozpalenia ognia)
+ogień zapalony przez iskrę z krzemienia
+shintoistyczny ceremonialny ogień",,,
+116290,WORD_NOUN,,HIRAGANA,,,埋もれ木,むもれぎ,,mumoregi,"czarny dąb
+dąb kopalny
+ciemność
+figa (mało znane słowo)",,,DUPLICATE 116239
+116291,WORD_NOUN,,HIRAGANA,,,埋れ木,うもれぎ,,umoregi,"czarny dąb
+dąb kopalny
+ciemność
+figa (mało znane słowo)",,,DUPLICATE 116292
+116292,WORD_NOUN,,HIRAGANA,,,埋れ木,むもれぎ,,mumoregi,"czarny dąb
+dąb kopalny
+ciemność
+figa (mało znane słowo)",,,DUPLICATE 116291
+116293,WORD_NOUN,,HIRAGANA,,,火焔放射器,かえんほうしゃき,,kaen houshaki,miotacz ognia,,,
+116294,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,実を付ける,みをつける,,mi o tsukeru,"przynosić owoce
+dawać owoce
+tworzyć owoce",,,
+116295,WORD_NOUN,,HIRAGANA,,,火先,ほさき,,hosaki,"płomienie
+czoło ognia
+czubek ognia",,,DUPLICATE 116250
+116296,WORD_NOUN,,HIRAGANA,,,証拠がため,しょうこがため,,shouko gatame,"gromadzenie dowodów
 zbieranie dowodów",,,
