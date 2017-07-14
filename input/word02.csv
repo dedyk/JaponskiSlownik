@@ -38298,14 +38298,14 @@ brak elegancji
 brak wytworności",,,
 117008,WORD_NOUN,,HIRAGANA,,,中空壁,ちゅうくうかべ,,chuukuukabe,"puste ściany
 pusty mór",,,
-117009,WORD_NOUN,,HIRAGANA,,,蚰蜒,げじげじ,,gejigeji,"scutigeromorpha (zwierze)
+117009,WORD_NOUN,,HIRAGANA,,,蚰蜒,げじげじ,,geji geji,"scutigeromorpha (zwierze)
 osoba zasługująca na pogardę
 kanalia
 świnia (o osobie)
 łajdak
 nikczemnik
-gnida (o osobie)",,,
-117010,WORD_NOUN,,HIRAGANA,,,蚰蜒,げじ,,geji,scutigeromorpha,zwierze,,
+gnida (o osobie)",,,DUPLICATE 117010
+117010,WORD_NOUN,,HIRAGANA,,,蚰蜒,げじ,,geji,scutigeromorpha,zwierze,,DUPLICATE 117009
 117011,WORD_NOUN,,HIRAGANA,,,団体行動,だんたいこうどう,,dantai koudou,"działanie jako grupa
 robienie czegoś razem (w grupie)
 działanie zbiorowe",,,
@@ -38316,14 +38316,14 @@ za dzień lub dwa",,,
 117014,WORD_NOUN,,HIRAGANA,,,気象衛星,きしょうえいせい,,kishou eisei,satelita meteorologiczny,,,
 117015,"WORD_NOUN
 WORD_ADJECTIVE_TARU
-WORD_ADVERB_TO",,HIRAGANA,,,黙然,もくねん,,mokunen,milczenie,,,
+WORD_ADVERB_TO",,HIRAGANA,,,黙然,もくねん,,mokunen,milczenie,,,DUPLICATE 117098
 117016,WORD_NOUN,,HIRAGANA,,,水道屋,すいどうや,,suidouya,hydraulik,,,
 117017,WORD_NOUN,,HIRAGANA,,,愚息,ぐそく,,gusoku,"syn (pokornie)
 głupi syn (wulgarnie)",,,
 117018,WORD_NOUN,,HIRAGANA,,,揚げ出し,あげだし,,agedashi,lekko smażone w głębokim tłuszczu,"np. jedzenie, szczególnie tofu",,
 117019,WORD_NOUN,,HIRAGANA,,,尽未来,じんみらい,,jinmirai,"wieczność
 na zawsze",,,
-117020,WORD_NOUN,,HIRAGANA,,,足運び,あしはこび,,ashihakobi,"chód
+117020,WORD_NOUN,,HIRAGANA,,,足運び,あしはこび,,ashi hakobi,"chód
 krok
 sposób chodzenia
 praca nóg (np. w sporcie)
@@ -38331,8 +38331,8 @@ charakterystyczny sposób poruszania się, utrzymujący środek ciężkości na 
 117021,WORD_ADJECTIVE_I,,HIRAGANA,,,ひ弱い,ひよわい,,hiyowai,"słaby
 słabowity",,,
 117022,WORD_VERB_U,,HIRAGANA,,,死す,しす,,shisu,umrzeć,archaizm,,
-117023,WORD_NOUN,,HIRAGANA,,,重恩,じゅうおん,,juuon,wielki obowiązek,,,
-117024,WORD_NOUN,,HIRAGANA,,,重恩,ちょうおん,,chouon,specjalne błogosławieństwo,,,
+117023,WORD_NOUN,,HIRAGANA,,,重恩,じゅうおん,,juuon,wielki obowiązek,,,DUPLICATE 117024
+117024,WORD_NOUN,,HIRAGANA,,,重恩,ちょうおん,,chouon,specjalne błogosławieństwo,,,DUPLICATE 117023
 117025,WORD_NOUN,,HIRAGANA,,,緊急事態,きんきゅうじたい,,kinkyuu jitai,stan wyjątkowy,,,
 117026,WORD_NOUN,,HIRAGANA,,,放射線障害,ほうしゃせんしょうがい,,houshasen shougai,"szkody wyrządzone przez promieniowanie
 uszkodzenie popromienne
@@ -38348,9 +38348,9 @@ pole kempingowe",,,
 117031,WORD_TEMPORAL_NOUN,,HIRAGANA,,,翌晩,よくばん,,yokuban,następny wieczór,,,
 117032,WORD_NOUN,,HIRAGANA,,,報道官,ほうどうかん,,houdoukan,"rzecznik prasowy
 sekretarz prasowy",,,
-117033,WORD_VERB_U,,HIRAGANA,,,擦れ合う,すれあう,,sureau,???,,,
+117033,WORD_VERB_U,,HIRAGANA,,,擦れ合う,すれあう,,sureau,???,,,DUPLICATE 117101
 117034,WORD_NOUN,,HIRAGANA,,,飲み代,のみしろ,,nomishiro,"pieniądze na picie (alkoholu)
-przepijanie pieniędzy",,,
+przepijanie pieniędzy",,,DUPLICATE 117105
 117035,WORD_NOUN,,HIRAGANA,,,事績,じせき,,jiseki,"osiągnięcie
 wyczyn
 zasługa",,,
@@ -38366,10 +38366,12 @@ ociężale",,,
 117039,WORD_NOUN,,HIRAGANA,,,遠離,おんり,,onri,"rozdzielenie przez dużą odległość (buddyzm)
 oderwanie
 odłączenie
-oddzielenie",,,
-117040,WORD_NOUN,,HIRAGANA,,,遠離,えんり,,enri,rozdzielenie przez dużą odległość,buddyzm,,
+oddzielenie",,,"DUPLICATE 117040
+DUPLICATE 117041"
+117040,WORD_NOUN,,HIRAGANA,,,遠離,えんり,,enri,rozdzielenie przez dużą odległość,buddyzm,,DUPLICATE 117039
 117041,WORD_NOUN,,HIRAGANA,,,-,おんり,,onri,"???
-wysiadać (z pojazdu)",język dzieci,,
+wysiadać (z pojazdu)",język dzieci,,"DUPLICATE 99147
+DUPLICATE 117039"
 117042,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,罪の無い,つみのない,,tsumi no nai,niewinny,,,
 117043,WORD_VERB_RU,,HIRAGANA,,,乗り損ねる,のりそこねる,,nori sokoneru,spóźnić się,"np. na samolot, pociąg",,
@@ -38412,7 +38414,7 @@ podszewka haori",,,
 WORD_NOUN",,HIRAGANA,,,自分の力,じぶんのちから,,jibun no chikara,"własna siła lub wysiłek
 samodzielnie
 bez niczyjej pomocy",,,
-117063,WORD_NOUN,,HIRAGANA,,,剣奴,けんど,,kendo,gladiator,,,
+117063,WORD_NOUN,,HIRAGANA,,,剣奴,けんど,,kendo,gladiator,,,DUPLICATE 26600
 117064,WORD_NOUN,,HIRAGANA,,,網闘士,あみとうし,,amitoushi,"retiarius (typ gladiatora)
 ???",,,
 117065,WORD_NOUN,,HIRAGANA,,,豚まん,ぶたまん,,butaman,gotowana na parze bułka z mielonym mięsem wieprzowym,,,
@@ -38428,7 +38430,7 @@ słupek i pręcik kwiatu",,,
 robienie zdjęć na zewnątrz",,,
 117073,WORD_NOUN,,HIRAGANA,,,児童画,じどうが,,jidouga,rysunek narysowany przez dziecko,,,
 117074,WORD_NOUN,,HIRAGANA,,,巻雲,けんうん,,ken'un,"chmura pierzasta
-cirrus",,,
+cirrus",,,DUPLICATE 117125
 117075,WORD_NOUN,,HIRAGANA,,,-,ぎいぎい,,gii gii,"skrzypienie
 trzeszczenie
 zgrzytanie
@@ -38447,7 +38449,7 @@ ATC",,,
 117082,WORD_NOUN,,HIRAGANA,,,航空管制,こうくうかんせい,,koukuu kansei,"kontrola ruchu lotniczego
 ATC (air traffic control)",skrót,,
 117083,WORD_NOUN,,HIRAGANA,,,霊異,れいい,,reii,"cud
-cudowna rzecz",,,
+cudowna rzecz",,,DUPLICATE 117129
 117084,WORD_NOUN,,HIRAGANA,,,霊威,れいい,,reii,tajemnicza moc,,,
 117085,WORD_NOUN,,HIRAGANA,,,国士無双,こくしむそう,,kokushi musou,"wybitna osoba
 ???",,,
@@ -38468,3 +38470,67 @@ obsługa procesu",,,
 117093,WORD_NOUN,,HIRAGANA,,,陸海空,りくかいくう,,rikukaikuu,"ziemia, morze i powietrze",,,
 117094,WORD_EXPRESSION,,HIRAGANA,,,恐れ入りますが,おそれいりますが,,osore irimasu ga,"przepraszam, że narzucam się, ale ...
 przepraszam, ale ...",uprzejmie,,
+117095,WORD_NOUN,,KATAKANA,,,-,ゲジゲジ,,geji geji,"scutigeromorpha (zwierze)
+osoba zasługująca na pogardę
+kanalia
+świnia (o osobie)
+łajdak
+nikczemnik
+gnida (o osobie)",,,
+117096,WORD_NOUN,,KATAKANA,,,-,ゲジ,,geji,scutigeromorpha,zwierze,,
+117097,WORD_NOUN,,KATAKANA,,,-,ハーフ・パイプ,,haafu paipu,half-pipe,"np. na snowboardzie lub deskorolce, ang: half-pipe",,
+117098,"WORD_NOUN
+WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,黙然,もくぜん,,mokuzen,milczenie,,,DUPLICATE 117015
+117099,WORD_NOUN,,HIRAGANA,,,揚出し,あげだし,,agedashi,lekko smażone w głębokim tłuszczu,"np. jedzenie, szczególnie tofu",,
+117100,WORD_NOUN,,HIRAGANA,,,足はこび,あしはこび,,ashi hakobi,"chód
+krok
+sposób chodzenia
+praca nóg (np. w sporcie)
+charakterystyczny sposób poruszania się, utrzymujący środek ciężkości na niskim poziomie (sumo)",,,
+117101,WORD_VERB_U,,HIRAGANA,,,擦れ合う,こすれあう,,kosureau,???,,,DUPLICATE 117033
+117102,WORD_VERB_U,,HIRAGANA,,,こすれ合う,こすれあう,,kosureau,???,,,
+117103,WORD_VERB_U,,HIRAGANA,,,すれ合う,すれあう,,sureau,???,,,
+117104,WORD_VERB_U,,HIRAGANA,,,摩れ合う,すれあう,,sureau,???,,,
+117105,WORD_NOUN,,HIRAGANA,,,飲み代,のみだい,,nomidai,"pieniądze na picie (alkoholu)
+przepijanie pieniędzy",,,DUPLICATE 117034
+117106,WORD_NOUN,,HIRAGANA,,,呑み代,のみしろ,,nomishiro,"pieniądze na picie (alkoholu)
+przepijanie pieniędzy",,,DUPLICATE 117107
+117107,WORD_NOUN,,HIRAGANA,,,呑み代,のみだい,,nomidai,"pieniądze na picie (alkoholu)
+przepijanie pieniędzy",,,DUPLICATE 117106
+117108,WORD_NOUN,,HIRAGANA,,,飲代,のみしろ,,nomishiro,"pieniądze na picie (alkoholu)
+przepijanie pieniędzy",,,DUPLICATE 117109
+117109,WORD_NOUN,,HIRAGANA,,,飲代,のみだい,,nomidai,"pieniądze na picie (alkoholu)
+przepijanie pieniędzy",,,DUPLICATE 117108
+117110,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,罪のない,つみのない,,tsumi no nai,niewinny,,,
+117111,WORD_VERB_RU,,HIRAGANA,,,乗りそこねる,のりそこねる,,nori sokoneru,spóźnić się,"np. na samolot, pociąg",,
+117112,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,ぺこり,,pekori,???,,,
+117113,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,ぺこりん,,pekorin,???,,,
+117114,WORD_NOUN,,KATAKANA,,,-,ネイティヴスピーカー,,neitivu supiikaa,rodzimy użytkownik języka,ang: native speaker,,
+117115,WORD_NOUN,,KATAKANA,,,-,ネーティブスピーカー,,neetibu supiikaa,rodzimy użytkownik języka,ang: native speaker,,
+117116,WORD_NOUN,,KATAKANA,,,-,ネーティヴスピーカー,,neetivu supiikaa,rodzimy użytkownik języka,ang: native speaker,,
+117117,WORD_NOUN,,KATAKANA,,,-,ネイティブ・スピーカー,,neitibu supiikaa,rodzimy użytkownik języka,ang: native speaker,,
+117118,WORD_NOUN,,KATAKANA,,,-,ネイティヴ・スピーカー,,neitivu supiikaa,rodzimy użytkownik języka,ang: native speaker,,
+117119,WORD_NOUN,,KATAKANA,,,-,ネーティブ・スピーカー,,neetibu supiikaa,rodzimy użytkownik języka,ang: native speaker,,
+117120,WORD_NOUN,,KATAKANA,,,-,ネーティヴ・スピーカー,,neetivu supiikaa,rodzimy użytkownik języka,ang: native speaker,,
+117121,WORD_VERB_U,,HIRAGANA,,,扱き使う,こきつかう,,koki tsukau,"pracować (dla kogoś) ciężko
+???",,,
+117122,WORD_VERB_U,,HIRAGANA,,,扱使う,こきつかう,,koki tsukau,"pracować (dla kogoś) ciężko
+???",,,
+117123,WORD_NOUN,,HIRAGANA,,,豚饅,ぶたまん,,butaman,gotowana na parze bułka z mielonym mięsem wieprzowym,,,
+117124,WORD_NOUN,,HIRAGANA,,,街街,まちまち,,machi machi,ulice,,,
+117125,WORD_NOUN,,HIRAGANA,,,巻雲,まきぐも,,makigumo,"chmura pierzasta
+cirrus",,,DUPLICATE 117074
+117126,WORD_NOUN,,HIRAGANA,,,巻き雲,まきぐも,,makigumo,"chmura pierzasta
+cirrus",,,
+117127,WORD_NOUN,,HIRAGANA,,,絹雲,けんうん,,ken'un,"chmura pierzasta
+cirrus",,,
+117128,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,ぎーぎー,,gii gii,"skrzypienie
+trzeszczenie
+zgrzytanie
+odgłos zgrzytania",,,
+117129,WORD_NOUN,,HIRAGANA,,,霊異,りょうい,,ryoui,"cud
+cudowna rzecz",,,DUPLICATE 117083
