@@ -42881,16 +42881,16 @@ opłata skarbowa",,,
 WORD_NOUN",,HIRAGANA,,,-,しゃきしゃき,,shakishaki,???,,,
 118999,WORD_NOUN,,HIRAGANA,,,衛生管理,えいせいかんり,,eisei kanri,zarządzanie higieną,,,
 119000,WORD_NOUN,,KATAKANA,,,ＩＣ,アイシー,,aishii,"układ scalony
-wymiana","ang: integrated circuit (IC), interchange",,
+wymiana","ang: integrated circuit (IC), interchange",,DUPLICATE 119025
 119001,WORD_VERB_RU,,HIRAGANA,,,手向ける,たむける,,tamukeru,"oferować coś bóstwu lub oferować czyjegoś ducha
 oddać hołd osobie, która ma odejść",,,
 119002,WORD_NOUN,,HIRAGANA,,,単数形,たんすうけい,,tansuukei,forma pojedyncza,rzeczownika,,
 119003,WORD_NOUN,,KATAKANA,,,-,リボルビング,,riborubingu,obracanie się,ang: revolving,,
 119004,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,睾丸,こうがん,,kougan,"jądro (u mężczyzny)
+WORD_ADJECTIVE_NO",,HIRAGANA,,,睾丸,こうがん,,kou gan,"jądro (u mężczyzny)
 jądra
 jaja",,,
-119005,WORD_NOUN,,HIRAGANA,,,蝦蟇口,がまぐち,,gamaguchi,"portmonetka z metalowym zapięciem
+119005,WORD_NOUN,,HIRAGANA,,,蝦蟇口,がまぐち,,gama guchi,"portmonetka z metalowym zapięciem
 torebka (z zapięciem)
 torba (z zapięciem)
 podkówka (rodzaj portmonetki, z zapięciem)",,,
@@ -42920,9 +42920,9 @@ specjalny administracyjny region Chin (np. Hong Kong, skrót)",,,
 wyróżnić
 wyodrębnić",,,
 119017,WORD_NOUN,,HIRAGANA,,,水菜,みずな,,mizuna,kapusta mizuna,,,
-119018,WORD_VERB_U,,HIRAGANA,,,報ゆ,むくゆ,,mukuyu,"nagradzać
+119018,WORD_EMPTY,,HIRAGANA,,,報ゆ,むくゆ,,mukuyu,"nagradzać
 wynagradzać
-spłacać",archaizm,,
+spłacać",archaizm,NO_TYPE_CHECK,
 119019,WORD_NOUN,,HIRAGANA,,,創業者,そうぎょうしゃ,,sougyousha,założyciel firmy,,,
 119020,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,闇雲,やみくも,,yamikumo,"lekkomyślnie
@@ -42939,7 +42939,7 @@ napój alkoholowy",,,
 119024,WORD_NOUN,,HIRAGANA,,,身体髪膚,しんたいはっぷ,,shintai happu,"całe ludzkie ciało
 każdy centymetr ciała",,,
 119025,WORD_ADJECTIVE_NA,,KATAKANA,,,-,アイシー,,aishii,"lodowaty
-lodowy",ang: icy,,
+lodowy",ang: icy,,DUPLICATE 119000
 119026,WORD_NOUN,,HIRAGANA_KATAKANA,,,企業トップ,きぎょうトップ,,kigyou toppu,członek ścisłego kierownictwa,,,
 119027,WORD_NOUN,,HIRAGANA,,,憂戚,ゆうせき,,yuuseki,"żal
 smutek
@@ -42976,7 +42976,7 @@ rozmyślać",,,
 119042,WORD_NOUN,,HIRAGANA,,,微増,びぞう,,bizou,niewielki wzrost,,,
 119043,WORD_NOUN,,HIRAGANA,,,人形使い,にんぎょうつかい,,ningyou tsukai,"lalkarz
 operator kukiełki
-osoba sterująca kukiełką",,,
+osoba sterująca kukiełką",,,DUPLICATE 119096
 119044,WORD_NOUN,,HIRAGANA,,,肝っ魂,きもったま,,kimottama,"odwaga
 śmiałość
 determinacja
@@ -43040,7 +43040,8 @@ przeraźliwy
 lodowaty
 lodowato zimny
 bardzo zimny
-ból głowy spowodowany szybkim zjedzeniem lub wypiciem czegoś zimnego",,,
+ból głowy spowodowany szybkim zjedzeniem lub wypiciem czegoś zimnego",,,"DUPLICATE 24955
+DUPLICATE 25113"
 119068,"WORD_ADVERB
 WORD_ADVERB_TO",,KATAKANA,,,-,ピコピコ,,piko piko,blip blop,np. odgłos z gry video,,
 119069,WORD_NOUN,,HIRAGANA,,,専門科目,せんもんかもく,,senmon kamoku,specjalny (wyspecjalizowany) przedmiot,,,
@@ -43066,7 +43067,7 @@ regulacja orbity",,,
 119079,"WORD_ADJECTIVE_NO
 WORD_ADJECTIVE_NA",,HIRAGANA,,,皺だらけ,しわだらけ,,shiwadarake,"pofałdowany
 pomarszczony",,,
-119080,WORD_NOUN,,HIRAGANA,,,預入,よにゅう,,yonyuu,depozyt,,,
+119080,WORD_NOUN,,HIRAGANA,,,預入,よにゅう,,yonyuu,depozyt,,,DUPLICATE 78501
 119081,WORD_NOUN,,KATAKANA,,,-,ショービニスト,,shoobinisuto,szowinista,ang: chauvinist,,
 119082,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,男性優位論者,だんせいゆういろんしゃ,,dansei yuuironsha,męski szowinista,,,
@@ -43076,3 +43077,103 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,女性優位論者,じょせいゆういろんし
 pompka do roweru",,,
 119085,WORD_NOUN,,HIRAGANA,,,機械工,きかいこう,,kikaikou,"operator maszyny
 mechanik",,,
+119086,WORD_NOUN,,HIRAGANA,,,足無し蜥蜴,あしなしとかげ,,ashinashi tokage,jaszczurka beznoga,,,
+119087,WORD_NOUN,,KATAKANA,,,-,アシナシトカゲ,,ashinashi tokage,jaszczurka beznoga,,,
+119088,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA_HIRAGANA,,,コウ丸,コウがん,,kou gan,"jądro (u mężczyzny)
+jądra
+jaja",,,
+119089,WORD_NOUN,,HIRAGANA,,,蟇口,がまぐち,,gama guchi,"portmonetka z metalowym zapięciem
+torebka (z zapięciem)
+torba (z zapięciem)
+podkówka (rodzaj portmonetki, z zapięciem)",,,
+119090,WORD_NOUN,,HIRAGANA,,,がま口,がまぐち,,gama guchi,"portmonetka z metalowym zapięciem
+torebka (z zapięciem)
+torba (z zapięciem)
+podkówka (rodzaj portmonetki, z zapięciem)",,,
+119091,WORD_ADVERBIAL_NOUN,,HIRAGANA,,,両方共,りょうほうとも,,ryouhou tomo,"oba
+obaj
+oboje",,,
+119092,WORD_NOUN,,HIRAGANA,,,みず菜,みずな,,mizuna,kapusta mizuna,,,
+119093,WORD_NOUN,,KATAKANA,,,-,ミズナ,,mizuna,kapusta mizuna,,,
+119094,WORD_EMPTY,,HIRAGANA,,,酬ゆ,むくゆ,,mukuyu,"nagradzać
+wynagradzać
+spłacać",archaizm,NO_TYPE_CHECK,
+119095,WORD_VERB_U,,HIRAGANA,,,思いめぐらす,おもいめぐらす,,omoi megurasu,"przemyśleć
+rozważać
+zastanawiać się
+rozmyślać",,,
+119096,WORD_NOUN,,HIRAGANA,,,人形使い,にんぎょうづかい,,ningyou dukai,"lalkarz
+operator kukiełki
+osoba sterująca kukiełką",,,DUPLICATE 119043
+119097,WORD_NOUN,,HIRAGANA,,,人形遣い,にんぎょうつかい,,ningyou tsukai,"lalkarz
+operator kukiełki
+osoba sterująca kukiełką",,,DUPLICATE 119098
+119098,WORD_NOUN,,HIRAGANA,,,人形遣い,にんぎょうづかい,,ningyou dukai,"lalkarz
+operator kukiełki
+osoba sterująca kukiełką",,,DUPLICATE 119097
+119099,WORD_NOUN,,HIRAGANA,,,肝ったま,きもったま,,kimottama,"odwaga
+śmiałość
+determinacja
+hard ducha",,,
+119100,WORD_NOUN,,HIRAGANA,,,肝魂,きもったま,,kimottama,"odwaga
+śmiałość
+determinacja
+hard ducha",,,DUPLICATE 119101
+119101,WORD_NOUN,,HIRAGANA,,,肝魂,きもだま,,kimodama,"odwaga
+śmiałość
+determinacja
+hard ducha",,,DUPLICATE 119100
+119102,WORD_NOUN,,HIRAGANA,,,肝玉,きもったま,,kimottama,"odwaga
+śmiałość
+determinacja
+hard ducha",,,DUPLICATE 119103
+119103,WORD_NOUN,,HIRAGANA,,,肝玉,きもだま,,kimodama,"odwaga
+śmiałość
+determinacja
+hard ducha",,,DUPLICATE 119102
+119104,WORD_NOUN,,HIRAGANA,,,肝っ玉,きもったま,,kimottama,"odwaga
+śmiałość
+determinacja
+hard ducha",,,
+119105,WORD_NOUN,,HIRAGANA,,,胆玉,きもったま,,kimottama,"odwaga
+śmiałość
+determinacja
+hard ducha",,,DUPLICATE 119106
+119106,WORD_NOUN,,HIRAGANA,,,胆玉,きもだま,,kimodama,"odwaga
+śmiałość
+determinacja
+hard ducha",,,DUPLICATE 119105
+119107,WORD_NOUN,,HIRAGANA,,,語い力,ごいりょく,,goiryoku,(zakres) swojego słownictwa,,,
+119108,WORD_EXPRESSION,,HIRAGANA,,,-,どうしたもん,,doushitamon,"co dzieje się z
+co z
+???",kolokwializm,,
+119109,WORD_NOUN,,KATAKANA,,,-,エクスキューズ・ミー,,ekusukyuuzu mii,przepraszam,ang: excuse me,,
+119110,WORD_EXPRESSION,,HIRAGANA,,,-,すまへん,,sumahen,"przepraszam
+dziękuję",dialekt Kansai,,
+119111,WORD_EXPRESSION,,HIRAGANA,,,-,すみまへん,,sumimahen,"przepraszam
+dziękuję",dialekt Kansai,,
+119112,WORD_VERB_U,,HIRAGANA,,,粧し込む,めかしこむ,,mekashikomu,"dekorować
+udekorować
+wystroić
+ozdobić
+upiększyć",,,
+119113,WORD_NOUN,,HIRAGANA,,,少食家,しょうしょくか,,shoushokuka,osoba jedząca niewiele,,,
+119114,WORD_NOUN,,KATAKANA,,,-,フード・ファイター,,fuudo faitaa,rywalizacja polegająca na jedzeniu,ang: food fighter,,
+119115,"WORD_ADVERB
+WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,キンキン,,kin kin,"piskliwy
+przenikliwy
+przeraźliwy
+lodowaty
+lodowato zimny
+bardzo zimny
+ból głowy spowodowany szybkim zjedzeniem lub wypiciem czegoś zimnego",,,
+119116,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,ぴこぴこ,,piko piko,blip blop,np. odgłos z gry video,,
+119117,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,目をまるくする,めをまるくする,,me o maruku suru,"gapić się w zdumieniu
+być zdumiony",,,
+119118,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,好い年,いいとし,,ii toshi,"dojrzałość
+dojrzały wiek",,,
