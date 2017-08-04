@@ -45092,7 +45092,7 @@ przestać palić",,,
 120039,WORD_VERB_U,,HIRAGANA,,,艶めく,つやめく,,tsuyameku,"być lśniący (o przedmiocie)
 być błyszczący (o przedmiocie)
 być urzekający (o kobiecie)
-wyglądać seksi (o kobiecie)",,,
+wyglądać seksi (o kobiecie)",,,DUPLICATE 120040
 120040,WORD_VERB_U,,HIRAGANA,,,艶めく,なまめく,,namameku,"wyglądać zniewalająco (o kobiecie)
 wyglądać urzekająco (o kobiecie)
 wyglądać seksi (o kobiecie)
@@ -45100,7 +45100,7 @@ być ponętny (o kobiecie)
 wyglądać młodo i świeżo
 być elegancki
 być wytworny
-mieć spokojny i wyciszony wygląd",,,
+mieć spokojny i wyciszony wygląd",,,DUPLICATE 120039
 120041,WORD_NOUN,,HIRAGANA,,,爆雷,ばくらい,,bakurai,"ładunek głębinowy
 bomba głębinowa",,,
 120042,WORD_NOUN,,HIRAGANA,,,賭け事,かけごと,,kakegoto,"zakłady
@@ -45144,13 +45144,15 @@ spadek",,,
 120059,WORD_NOUN,,HIRAGANA,,,魚の目,うおのめ,,uo no me,odcisk,na stopie,,
 120060,WORD_NOUN,,HIRAGANA,,,魔神,まじん,,majin,"zły duch
 diabeł
-dżin",,,
+dżin",,,DUPLICATE 120192
 120061,WORD_NOUN,,HIRAGANA,,,火山性地震,かざんせいじしん,,kazan sei jishin,wulkaniczne trzęsienie ziemi,,,
 120062,WORD_NOUN,,HIRAGANA,,,端唄,はうた,,hauta,krótka piosenka o miłości,popularna w późnym okresie Edo,,
 120063,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,救いようがない,すくいようがない,,sukui you ga nai,poza oszczędnościami,,,
 120064,WORD_VERB_U,,HIRAGANA,,,水漬く,みづく,,miduku,"być namoczony (w wodzie)
-być przemoczony",archaizm,,
+być przemoczony",archaizm,,"DUPLICATE 120194
+DUPLICATE 120195
+DUPLICATE 120196"
 120065,WORD_NOUN,,KATAKANA,,,-,レガシーシステム,,regashii shisutemu,legacy system,"informatyka, stary, dotychczasowy system",,
 120066,WORD_NOUN,,HIRAGANA,,,火の鳥,ひのとり,,hi no tori,feniks,"szczególnie: fenghuang, chiński feniks",,
 120067,WORD_NOUN,,HIRAGANA,,,天の助け,てんのたすけ,,ten no tasuke,"dar z niebios
@@ -45224,7 +45226,7 @@ piękna kobieta",,,
 atak serca
 mieć zawał serca
 mieć atak serca",,,
-120098,WORD_VERB_RU,,HIRAGANA,,,見咎める,みとがめる,,mito gameru,"krytykować
+120098,WORD_VERB_RU,,HIRAGANA,,,見咎める,みとがめる,,mitogameru,"krytykować
 wątpić
 kwestionować",,,
 120099,WORD_NOUN,,KATAKANA,,,-,エントランス,,entoransu,wejście,ang: entrance,,
@@ -45234,7 +45236,7 @@ kwestionować",,,
 uznanie
 względy
 korzyść
-pożytek",,,
+pożytek",,,DUPLICATE 120208
 120103,WORD_NOUN,,KATAKANA,,,-,ネトゲ,,neto ge,"gra sieciowa
 gra internetowa","slang, skrót",,
 120104,WORD_NOUN,,HIRAGANA,,,機会的浮動,きかいてきふどう,,kikaiteki fudou,"dryg losowy
@@ -45256,7 +45258,7 @@ poziom skażenia",,,
 120114,WORD_NOUN,,HIRAGANA,,,金詰まり,かねづまり,,kanedu mari,"kłopoty finansowe
 trudności finansowe
 braki finansowe",,,
-120115,WORD_NOUN,,HIRAGANA,,,不思議の国のアリス,ふしぎのくにのアリス,,fushigi no kuni no arisu,Alicja w Krainie Czarów,,,
+120115,WORD_NOUN,,HIRAGANA_EXCEPTION,,,不思議の国のアリス,ふしぎのくにのアリス,,fushigi no kuni no arisu,Alicja w Krainie Czarów,,,
 120116,WORD_NOUN,,HIRAGANA,,,湯室,ゆむろ,,yumuro,"pokój do gotowania wody
 łazienka
 wanna",,,
@@ -45287,7 +45289,7 @@ szczegółowy",,,
 120131,WORD_NOUN,,HIRAGANA,,,欲求不満,よっきゅうふまん,,yokkyuu fuman,frustracja,,,
 120132,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,男子用,だんしよう,,danshiyou,dla mężczyzn,,,
-120133,WORD_NOUN,,HIRAGANA,,,火炙り,ひあぶり,,hiaburi,"spalenie na stosie
+120133,WORD_NOUN,,HIRAGANA,,,火炙り,ひあぶり,,hi aburi,"spalenie na stosie
 spłonięcie żywcem",,,
 120134,WORD_NOUN,,KATAKANA_HIRAGANA,,,ユーラシア川獺,ユーラシアかわうそ,,yuurashia kawauso,"wydra europejska
 wydra","gatunek niewielkiego drapieżnego ssaka z rodziny łasicowatych, lutra lutra",,
@@ -45350,7 +45352,7 @@ szkaradnica",ryba,,
 120167,WORD_NOUN,,KATAKANA,,,-,スタートアップ,,sutaatoappu,"uruchomienie
 rozruch",ang: startup,,
 120168,WORD_NOUN,,HIRAGANA,,,船軍,ふないくさ,,funaikusa,"bitwa morska
-marynarka wojenna (archaizm)",,,
+marynarka wojenna (archaizm)",,,DUPLICATE 120222
 120169,WORD_NOUN,,KATAKANA_HIRAGANA,,,チタン酸,チタンさん,,chitan san,kwas tytanowy,,,
 120170,WORD_NOUN,,HIRAGANA,,,拡張性,かくちょうせい,,kakuchousei,???,,,
 120171,WORD_NOUN,,HIRAGANA,,,盲従,もうじゅう,,moujuu,ślepe posłuszeństwo,,,
@@ -45358,3 +45360,194 @@ marynarka wojenna (archaizm)",,,
 120173,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,力を入れる,ちからをいれる,,chikara o ireru,"włożyć wiele wysiłku w
 wkładać wiele siły w",,,
+120174,WORD_VERB_U,,HIRAGANA,,,艶く,なまめく,,namameku,"wyglądać zniewalająco (o kobiecie)
+wyglądać urzekająco (o kobiecie)
+wyglądać seksi (o kobiecie)
+być ponętny (o kobiecie)
+wyglądać młodo i świeżo
+być elegancki
+być wytworny
+mieć spokojny i wyciszony wygląd",,,
+120175,WORD_VERB_U,,HIRAGANA,,,生めく,なまめく,,namameku,"wyglądać zniewalająco (o kobiecie)
+wyglądać urzekająco (o kobiecie)
+wyglądać seksi (o kobiecie)
+być ponętny (o kobiecie)
+wyglądać młodo i świeżo
+być elegancki
+być wytworny
+mieć spokojny i wyciszony wygląd",,,
+120176,WORD_NOUN,,HIRAGANA,,,賭事,かけごと,,kakegoto,"zakłady
+obstawienie
+hazard",,,
+120177,WORD_VERB_U,,HIRAGANA,,,沸き上がる,わきあがる,,waki agaru,"gotować się
+kipieć
+powstać
+budzić się
+zerwać się
+wyrwać się
+ekscytować się
+być podekscytowanym",,,
+120178,WORD_VERB_U,,HIRAGANA,,,わき上がる,わきあがる,,waki agaru,"gotować się
+kipieć
+powstać
+budzić się
+zerwać się
+wyrwać się
+ekscytować się
+być podekscytowanym",,,
+120179,WORD_VERB_U,,HIRAGANA,,,湧きあがる,わきあがる,,waki agaru,"gotować się
+kipieć
+powstać
+budzić się
+zerwać się
+wyrwać się
+ekscytować się
+być podekscytowanym",,,
+120180,WORD_VERB_U,,HIRAGANA,,,沸きあがる,わきあがる,,waki agaru,"gotować się
+kipieć
+powstać
+budzić się
+zerwać się
+wyrwać się
+ekscytować się
+być podekscytowanym",,,
+120181,WORD_VERB_U,,HIRAGANA,,,湧き上る,わきあがる,,waki agaru,"gotować się
+kipieć
+powstać
+budzić się
+zerwać się
+wyrwać się
+ekscytować się
+być podekscytowanym",,,
+120182,WORD_VERB_U,,HIRAGANA,,,沸き上る,わきあがる,,waki agaru,"gotować się
+kipieć
+powstać
+budzić się
+zerwać się
+wyrwać się
+ekscytować się
+być podekscytowanym",,,
+120183,WORD_VERB_U,,HIRAGANA,,,涌き上る,わきあがる,,waki agaru,"gotować się
+kipieć
+powstać
+budzić się
+zerwać się
+wyrwać się
+ekscytować się
+być podekscytowanym",,,
+120184,WORD_VERB_U,,HIRAGANA,,,沸上がる,わきあがる,,waki agaru,"gotować się
+kipieć
+powstać
+budzić się
+zerwać się
+wyrwać się
+ekscytować się
+być podekscytowanym",,,
+120185,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,広濶,こうかつ,,koukatsu,"rozległość
+ogrom",,,
+120186,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,宏闊,こうかつ,,koukatsu,"rozległość
+ogrom",,,
+120187,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,宏濶,こうかつ,,koukatsu,"rozległość
+ogrom",,,
+120188,WORD_NOUN,,HIRAGANA,,,上がり症,あがりしょう,,agari shou,"trema
+fobia społeczna",,,
+120189,WORD_NOUN,,HIRAGANA,,,上がり性,あがりしょう,,agari shou,"trema
+fobia społeczna",,,
+120190,WORD_NOUN,,HIRAGANA,,,あがり性,あがりしょう,,agari shou,"trema
+fobia społeczna",,,
+120191,WORD_NOUN,,HIRAGANA,,,敵情,てきじょう,,tekijou,"ruchy wroga
+pozycja wroga",,,
+120192,WORD_NOUN,,HIRAGANA,,,魔神,ましん,,mashin,"zły duch
+diabeł
+dżin",,,DUPLICATE 120060
+120193,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,救い様がない,すくいようがない,,sukui you ga nai,poza oszczędnościami,,,
+120194,WORD_VERB_U,,HIRAGANA,,,水漬く,みずく,,mizuku,"być namoczony (w wodzie)
+być przemoczony",archaizm,,"DUPLICATE 120064
+DUPLICATE 120195
+DUPLICATE 120196"
+120195,WORD_VERB_U,,HIRAGANA,,,水漬く,みずつく,,mizutsuku,"być namoczony (w wodzie)
+być przemoczony",archaizm,,"DUPLICATE 120064
+DUPLICATE 120194
+DUPLICATE 120196"
+120196,WORD_VERB_U,,HIRAGANA,,,水漬く,みずづく,,mizuduku,"być namoczony (w wodzie)
+być przemoczony",archaizm,,"DUPLICATE 120064
+DUPLICATE 120194
+DUPLICATE 120195"
+120197,WORD_NOUN,,KATAKANA,,,-,レガシー・システム,,regashii shisutemu,legacy system,"informatyka, stary, dotychczasowy system",,
+120198,WORD_VERB_RU,,HIRAGANA,,,捏ち上げる,でっちあげる,,decchi ageru,"wymyślać
+zmyślać
+fabrykować
+oszukiwać
+???",,,
+120199,WORD_VERB_RU,,HIRAGANA,,,捏っち上げる,でっちあげる,,decchi ageru,"wymyślać
+zmyślać
+fabrykować
+oszukiwać
+???",,,
+120200,WORD_VERB_U,,HIRAGANA,,,斬り殺す,きりころす,,kiri korosu,"uśmiercać
+zgładzać
+mordować",,,
+120201,WORD_ADJECTIVE_NO,,HIRAGANA,,,涙乍ら,なみだながら,,namida nagara,"płacząc
+być zapłakanym
+we łzach",,,
+120202,WORD_NOUN,,HIRAGANA,,,のど元,のどもと,,nodomoto,gardło,,,
+120203,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,-,そんなもん,,sonna mon,"takie jest życie
+samo życie",,,
+120204,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,-,そういうもの,,souiu mono,"takie jest życie
+samo życie",,,
+120205,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,-,そういうもん,,souiu mon,"takie jest życie
+samo życie",,,
+120206,WORD_VERB_U,,KATAKANA_HIRAGANA,,,-,ブラつく,,buratsuku,"przechadzać się wokół
+spacerować wokół
+wędrować
+pałętać się
+kręcić się
+wymachiwać
+majtać
+kołysać",,,
+120207,WORD_VERB_RU,,HIRAGANA,,,見とがめる,みとがめる,,mitogameru,"krytykować
+wątpić
+kwestionować",,,
+120208,WORD_NOUN,,HIRAGANA,,,恩沢,おんだく,,ondaku,"przychylność
+uznanie
+względy
+korzyść
+pożytek",,,DUPLICATE 120102
+120209,WORD_NOUN,,KATAKANA,,,-,ネトゲー,,netogee,"gra sieciowa
+gra internetowa","slang, skrót",,
+120210,WORD_NOUN,,HIRAGANA,,,金詰り,かねづまり,,kanedu mari,"kłopoty finansowe
+trudności finansowe
+braki finansowe",,,
+120211,WORD_ADJECTIVE_NA,,HIRAGANA,,,審らか,つまびらか,,tsumabiraka,"dokładny
+szczegółowy",,,
+120212,WORD_NOUN,,HIRAGANA,,,火焙り,ひあぶり,,hi aburi,"spalenie na stosie
+spłonięcie żywcem",,,
+120213,WORD_NOUN,,HIRAGANA,,,火あぶり,ひあぶり,,hi aburi,"spalenie na stosie
+spłonięcie żywcem",,,
+120214,WORD_NOUN,,KATAKANA_HIRAGANA,,,ギックリ腰,ギックリごし,,gikkuri goshi,"naprężenie pleców
+ból pleców
+ból w krzyżu
+dyskopatia",,,
+120215,WORD_NOUN,,HIRAGANA,,,風しん,ふうしん,,fuushin,różyczka,choroba zakaźna,,
+120216,WORD_NOUN,,HIRAGANA,,,阿閦,あしゅく,,ashuku,Akszobhja,jeden z pięciu dhjanibuddów (Buddów medytacyjnych),,
+120217,WORD_NOUN,,HIRAGANA,,,置引き,おきびき,,oki biki,kradzież bagażu,,,
+120218,WORD_NOUN,,KATAKANA,,,-,セイヨウネズ,,seiyou nezu,jałowiec pospolity,"gatunek zawsze zielonego krzewu, rzadko niskiego drzewa, należący do rodziny cyprysowatych, juniperus communis",,
+120219,WORD_NOUN,,HIRAGANA,,,逆切れ,ぎゃくぎれ,,gyaku gire,"bycie zły na kogoś, kto powinien normalnie być zły na ciebie
+sytuacja, w której przestępca jest zły na ofiarę",slang,,
+120220,WORD_NOUN,,HIRAGANA,,,当てずっぽ,あてずっぽ,,ate zuppo,"przypuszczenie
+przypuszczenia
+domysł
+domysły
+strzał w ciemno",,,
+120221,WORD_NOUN,,HIRAGANA,,,鰧,おこぜ,,okoze,"skorpena
+szkaradnica",ryba,,
+120222,WORD_NOUN,,HIRAGANA,,,船軍,せんぐん,,sengun,"bitwa morska
+marynarka wojenna (archaizm)",,,DUPLICATE 120168
+120223,WORD_NOUN,,HIRAGANA,,,僧房,そうぼう,,soubou,buddyjskie świątynne kwatery,,,
