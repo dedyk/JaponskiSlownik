@@ -45558,7 +45558,7 @@ WORD_ADJECTIVE_NA",,HIRAGANA,,,孤弱,こじゃく,,kojaku,"młoda sierota
 być słaby i być sam nie mając gdzie pójść",archaizm,,
 120227,WORD_VERB_RU,,HIRAGANA,,,踏み越える,ふみこえる,,fumi koeru,"kroczyć przez
 pokonać",,,
-120228,WORD_NOUN,,HIRAGANA,,,黄熱病,おうねつびょう,,ounetsubyou,żółta febra,,,
+120228,WORD_NOUN,,HIRAGANA,,,黄熱病,おうねつびょう,,ounetsubyou,żółta febra,,,DUPLICATE 120284
 120229,WORD_NOUN,,HIRAGANA,,,熊啄木鳥,くまげら,,kuma gera,dzięcioł czarny,"gatunek średniej wielkości ptaka z rodziny dzięciołowatych, dryocopus martius",,
 120230,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,先を急ぐ,さきをいそぐ,,saki o isogu,spieszyć się,,,
@@ -45671,7 +45671,7 @@ zamieszanie
 zamęt",,,
 120276,WORD_NOUN,,HIRAGANA,,,流れ矢,ながれや,,nagareya,zabłąkana strzała,,,
 120277,WORD_NOUN,,HIRAGANA_KATAKANA,,,廃ガス,はいガス,,hai gasu,gaz odpadowy,,,
-120278,WORD_NOUN,,HIRAGANA,,,御花畑,おはなばたけ,,ohanabatake,pole alpejskich kwiatów,,,
+120278,WORD_NOUN,,HIRAGANA,,,御花畑,おはなばたけ,,ohana batake,pole alpejskich kwiatów,,,
 120279,WORD_NOUN,,HIRAGANA,,,電子工業,でんしこうぎょう,,denshi kougyou,przemysł elektroniczny,,,
 120280,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,不抜,ふばつ,,fubatsu,"stały
@@ -45682,6 +45682,83 @@ nieugięty
 niezwyciężony",,,
 120281,WORD_NOUN,,HIRAGANA,,,英王,えいおう,,eiou,Król Anglii,,,
 120282,WORD_EXPRESSION,,HIRAGANA,,,花より団子,はなよりだんご,,hana yori dango,???,,,
-120283,WORD_NOUN,,HIRAGANA,,,上部消化管内視鏡,じょうぶしょうかかんないしきょう,,joubu shoukakan naishikyo,"panendoskopia
+120283,WORD_NOUN,,HIRAGANA,,,上部消化管内視鏡,じょうぶしょうかかんないしきょう,,joubu shoukakan naishikyou,"panendoskopia
 gastroskopia
 gastrofiberoskopia",metoda diagnostyczna górnego odcinka przewodu pokarmowego polegająca na wprowadzeniu do niego giętkiego przewodu (endoskopu) zaopatrzonego w źródło światła i układ rejestrujący oraz przekazujący obraz,,
+120284,WORD_NOUN,,HIRAGANA,,,黄熱病,こうねつびょう,,kounetsubyou,żółta febra,,,DUPLICATE 120228
+120285,WORD_NOUN,,KATAKANA,,,-,クマゲラ,,kuma gera,dzięcioł czarny,"gatunek średniej wielkości ptaka z rodziny dzięciołowatych, dryocopus martius",,
+120286,WORD_NOUN,,HIRAGANA,,,抗癲癇薬,こうてんかんやく,,kouten kan'yaku,"lek przeciwdrgawkowy
+lek przeciwpadaczkowy",,,
+120287,WORD_NOUN,,HIRAGANA,,,棚牡丹,たなぼた,,tanabota,"dar niebios
+manna z nieba
+nieoczekiwany przypływ gotówki",skrót,,
+120288,WORD_NOUN,,KATAKANA,,,-,タナボタ,,tanabota,"dar niebios
+manna z nieba
+nieoczekiwany przypływ gotówki",skrót,,
+120289,WORD_VERB_RU,,HIRAGANA,,,繋ぎ合わせる,つなぎあわせる,,tsunagi awaseru,"połączyć
+złączyć
+przyłączyć
+dołączyć",,,
+120290,WORD_VERB_RU,,HIRAGANA,,,繋ぎあわせる,つなぎあわせる,,tsunagi awaseru,"połączyć
+złączyć
+przyłączyć
+dołączyć",,,
+120291,"WORD_EXPRESSION
+WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,愛想良く,あいそよく,,aisoyoku,"ujmująco
+czarująco
+serdecznie
+mile
+uprzejmie
+przyjaźnie",,,
+120292,WORD_NOUN,,HIRAGANA,,,顚末,てんまつ,,tenmatsu,"fakt
+okoliczność
+szczegóły",,,
+120293,WORD_ADJECTIVE_NO,,HIRAGANA,,,買い立て,かいたて,,kaitate,"nowiuteńki
+nowiutki
+zupełnie nowy",,,
+120294,WORD_NOUN,,HIRAGANA,,,歯ぎしり,はぎしり,,hagishiri,"mimowolne nocne zgrzytanie zębami
+mimowolne zaciskanie zębów
+bruksizm
+zgrzytanie zębami z gniewu lub złości",,,
+120295,WORD_NOUN,,HIRAGANA,,,胡頽子,ぐみ,,gumi,oliwnik,,,
+120296,WORD_NOUN,,KATAKANA,,,-,グミ,,gumi,oliwnik,,,
+120297,WORD_NOUN,,KATAKANA,,,-,カーマ,,kaama,Karma​,,,
+120298,WORD_VERB_RU,,HIRAGANA,,,寝醒める,ねざめる,,nezameru,obudzić się,,,
+120299,WORD_NOUN,,HIRAGANA,,,重言葉,かさねことば,,kasane kotoba,"powtórzone słowo lub fraza
+redundantne słowo
+kolejne słowa o podobnym znaczeniu
+pleonazm",,,
+120300,WORD_NOUN,,HIRAGANA,,,重ね詞,かさねことば,,kasane kotoba,"powtórzone słowo lub fraza
+redundantne słowo
+kolejne słowa o podobnym znaczeniu
+pleonazm",,,
+120301,WORD_NOUN,,HIRAGANA,,,重詞,かさねことば,,kasane kotoba,"powtórzone słowo lub fraza
+redundantne słowo
+kolejne słowa o podobnym znaczeniu
+pleonazm",,,
+120302,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,目の辺り,まのあたり,,ma no atari,"tuż przed oczami
+w obecności
+osobiście",,,
+120303,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,目のあたり,まのあたり,,ma no atari,"tuż przed oczami
+w obecności
+osobiście",,,
+120304,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,眼の当たり,まのあたり,,ma no atari,"tuż przed oczami
+w obecności
+osobiście",,,
+120305,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,目の当り,まのあたり,,ma no atari,"tuż przed oczami
+w obecności
+osobiście",,,
+120306,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,まの当り,まのあたり,,ma no atari,"tuż przed oczami
+w obecności
+osobiście",,,
+120307,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,眼の当り,まのあたり,,ma no atari,"tuż przed oczami
+w obecności
+osobiście",,,
+120308,WORD_NOUN,,HIRAGANA,,,お花畑,おはなばたけ,,ohana batake,pole alpejskich kwiatów,,,
