@@ -32831,7 +32831,7 @@ zniszczony
 rozpadający się
 popadający w ruinę",,,
 114652,WORD_NOUN,,HIRAGANA,,,緊急避妊薬,きんきゅうひにんやく,,kinkyuu hinin'yaku,"antykoncepcja awaryjna
-awaryjny środek antykoncepcyjny ",,,
+awaryjny środek antykoncepcyjny",,,
 114653,WORD_NOUN,,HIRAGANA,,,出仕事,でしごと,,deshigoto,"praca na zewnątrz
 praca w terenie",,,
 114654,WORD_NOUN,,HIRAGANA,,,晩食,ばんしょく,,banshoku,"kolacja
@@ -32911,7 +32911,7 @@ zmieszany",,,
 odpowiedzieć",archaizm,,
 114690,WORD_NOUN,,HIRAGANA,,,入内,じゅだい,,judai,cesarskie weselne przyjęcie z okazji wstąpienia na dwór,,,
 114691,WORD_NOUN,,HIRAGANA,,,赤日,あかび,,akabi,"miesiączkowanie
-menstruacja","slang, mało znane słowo",,
+menstruacja","slang, mało znane słowo",,DUPLICATE 120833
 114692,WORD_NOUN,,KATAKANA,,,-,ツイッター,,tsuittaa,Twitter,,,
 114693,"WORD_VERB_U
 WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,チューチュー鳴く,チューチューなく,,chuuchuu naku,"piszczeć
@@ -46870,7 +46870,7 @@ obawa",,,
 120817,WORD_NOUN,,KATAKANA,,,-,ビルダ,,biruda,"budowniczy
 konstruktor",ang: builder,,
 120818,WORD_NOUN,,HIRAGANA,,,緊急避妊,きんきゅうひにん,,kinkyuu hinin,"antykoncepcja awaryjna
-awaryjny środek antykoncepcyjny ",,,
+awaryjny środek antykoncepcyjny",,,
 120819,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,皮をむく,かわをむく,,kawa o muku,"obierać (ze skórki, np, owoc)
 obdzierać ze skóry
@@ -46906,9 +46906,9 @@ zły
 nieprzyjemny
 niestałość
 nieregularność
-zmienność",,,
+zmienność",,,DUPLICATE 120887
 120833,WORD_NOUN,,HIRAGANA,,,赤日,せきじつ,,sekijitsu,"czerwone słońce
-płonące słońce",,,
+płonące słońce",,,DUPLICATE 114691
 120834,WORD_NOUN,,KATAKANA,,,-,イアリング,,ia ringu,kolczyk,ang: ear-ring,,
 120835,WORD_NOUN,,HIRAGANA,,,保護金,ほごきん,,hogokin,"subwencja
 dotacja",,,
@@ -46941,7 +46941,7 @@ szlifowanie ryżu",,,
 120846,WORD_NOUN,,HIRAGANA,,,花貝,はながい,,hanagai,placamen tiara,zwierzę,,
 120847,WORD_NOUN,,KATAKANA,,,-,マセガキ,,masegaki,"przedwczesny smarkacz
 przedwcześnie dojrzały smarkacz",,,
-120848,WORD_NOUN,,KATAKANA,,,-,ティーチイン,,tiichiin,spotkanie dyskusyjne studentów z wykładowcami,ang: teach-in,,
+120848,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ティーチイン,,tiichiin,spotkanie dyskusyjne studentów z wykładowcami,ang: teach-in,,
 120849,WORD_NOUN,,KATAKANA,,,-,レディネス,,redinesu,"gotowość
 stan gotowości",ang: readiness,,
 120850,WORD_NOUN,,HIRAGANA,,,雷神,らいじん,,raijin,"bóg burzy
@@ -46952,8 +46952,8 @@ wspólny rozwój",,,
 120853,WORD_NOUN,,KATAKANA,,,-,アンジョ,,anjo,anioł,por: anjo,,
 120854,WORD_NOUN,,HIRAGANA,,,生検,せいけん,,seiken,biopsja,,,
 120855,WORD_NOUN,,HIRAGANA,,,外史,がいし,,gaishi,nieoficjalna historia,,,
-120856,WORD_NOUN,,HIRAGANA,,,山袴,やまばかま,,yama bakama,hakama do pracy,,,
-120857,WORD_NOUN,,HIRAGANA,,,山袴,さんぱく,,sanpaku,"hakama do pracy, które są luźne u góry i wąskie u dołu",mało znane słowo,,
+120856,WORD_NOUN,,HIRAGANA,,,山袴,やまばかま,,yama bakama,hakama do pracy,,,DUPLICATE 120857
+120857,WORD_NOUN,,HIRAGANA,,,山袴,さんぱく,,sanpaku,"hakama do pracy, które są luźne u góry i wąskie u dołu",mało znane słowo,,DUPLICATE 120856
 120858,WORD_EXPRESSION,,HIRAGANA,,,忙を厭わず,ぼうをいとわず,,bou o itowazu,???,,,
 120859,WORD_NOUN,,HIRAGANA,,,命中数,めいちゅうすう,,meichuusuu,liczba trafień,,,
 120860,"WORD_NOUN
@@ -46968,7 +46968,7 @@ szczęk",,,
 WORD_ADVERB_TO",,HIRAGANA,,,赫々,かくかく,,kaku kaku,"genialny
 znakomity
 cudowny
-wspaniały",,,
+wspaniały",,,DUPLICATE 120896
 120864,"WORD_NOUN
 WORD_PREFIX",,HIRAGANA,,,六方,ろっぽう,,roppou,"sześć kierunków (północ, południe, wschód, zachód, góra i dół)
 heksagonalny
@@ -47005,3 +47005,115 @@ dzierżawca",,,
 WORD_ADJECTIVE_NO",,HIRAGANA,,,冗言,じょうげん,,jougen,"paplanie
 trajkotanie
 bezużyteczne słowa",,,
+120879,"WORD_NOUN
+WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,百花撩乱,ひゃっかりょうらん,,hyakka ryouran,"wiele kwiatów rozkwita w obfitości
+zebranie wielu pięknych kobiet (utalentowanych osób)
+jednoczesne ujawnienie się wiele talentów i osiągnięć",,,
+120880,WORD_NOUN,,KATAKANA,,,-,ビルダー,,birudaa,"budowniczy
+konstruktor",ang: builder,,
+120881,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,皮を剥く,かわをむく,,kawa o muku,"obierać (ze skórki, np, owoc)
+obdzierać ze skóry
+zdejmować skórę",,,
+120882,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,皮を剝く,かわをむく,,kawa o muku,"obierać (ze skórki, np, owoc)
+obdzierać ze skóry
+zdejmować skórę",,,
+120883,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,丹塗,にぬり,,ninuri,"malowanie na czerwono
+lakierowane w kolorze cynober",,,
+120884,WORD_NOUN,,KATAKANA,,,-,ヒガラ,,higara,"sosnówka
+sikora sosnówka","gatunek niewielkiego ptaka z rodziny sikor, periparus ater",,
+120885,WORD_NOUN,,KATAKANA,,,-,ビデオ・デッキ,,bideo dekki,magnetowid kasetowy,ang: video deck,,
+120886,WORD_ADJECTIVE_F,,HIRAGANA,,,形式張った,けいしきばった,,keishiki batta,"formalny
+oficjalny
+uroczysty
+ceremonialny",,,
+120887,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,性悪,せいあく,,seiaku,"złośliwy
+zły
+nieprzyjemny
+niestałość
+nieregularność
+zmienność",,,DUPLICATE 120832
+120888,"WORD_ADJECTIVE_I
+WORD_INTERJECTION",,HIRAGANA,,,蘞い,えぐい,,egui,"nieprzyjemny
+uszczypliwy
+cierpki
+stanowczy
+zdecydowany
+bez serca
+nieczuły
+nietaktowny
+paskudny (slang)
+wstrętny (slang)
+zdumiewający (slang)
+niezwykły (slang)",,,
+120889,"WORD_ADJECTIVE_I
+WORD_INTERJECTION",,HIRAGANA,,,醶い,えぐい,,egui,"nieprzyjemny
+uszczypliwy
+cierpki
+stanowczy
+zdecydowany
+bez serca
+nieczuły
+nietaktowny
+paskudny (slang)
+wstrętny (slang)
+zdumiewający (slang)
+niezwykły (slang)",,,
+120890,WORD_NOUN,,KATAKANA,,,-,ドライ・ソーセージ,,dorai sooseeji,suszona kiełbasa,ang: dried sausage,,
+120891,WORD_NOUN,,HIRAGANA,,,ごろ寝,ごろね,,goro ne,"drzemka
+drzemanie (np. na podłodze w ubraniu lub w pociągu)",,,
+120892,WORD_NOUN,,HIRAGANA,,,転寝,うたたね,,utata ne,"drzemka
+drzemanie (np. na podłodze w ubraniu lub w pociągu)",,,DUPLICATE 120893
+120893,WORD_NOUN,,HIRAGANA,,,転寝,ごろね,,goro ne,"drzemka
+drzemanie (np. na podłodze w ubraniu lub w pociągu)",,,DUPLICATE 120892
+120894,WORD_NOUN,,HIRAGANA,,,転た寝,うたたね,,utata ne,"drzemka
+drzemanie (np. na podłodze w ubraniu lub w pociągu)",,,
+120895,WORD_NOUN,,KATAKANA,,,-,ハナガイ,,hanagai,placamen tiara,zwierzę,,
+120896,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,赫々,かっかく,,kakkaku,"genialny
+znakomity
+cudowny
+wspaniały",,,DUPLICATE 120863
+120897,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,赫赫,かくかく,,kaku kaku,"genialny
+znakomity
+cudowny
+wspaniały",,,DUPLICATE 120898
+120898,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,赫赫,かっかく,,kakkaku,"genialny
+znakomity
+cudowny
+wspaniały",,,DUPLICATE 120897
+120899,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,嚇嚇,かくかく,,kaku kaku,"genialny
+znakomity
+cudowny
+wspaniały",,,DUPLICATE 120900
+120900,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,嚇嚇,かっかく,,kakkaku,"genialny
+znakomity
+cudowny
+wspaniały",,,DUPLICATE 120899
+120901,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,嚇々,かくかく,,kaku kaku,"genialny
+znakomity
+cudowny
+wspaniały",,,DUPLICATE 120902
+120902,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,嚇々,かっかく,,kakkaku,"genialny
+znakomity
+cudowny
+wspaniały",,,DUPLICATE 120901
+120903,WORD_NOUN,,KATAKANA,,,-,オフィス・アワー,,ofisu awaa,"godziny pracy
+godziny urzędowania
+godziny przyjęć
+dzień roboczy
+dzień pracujący
+dzień powszedni",,,
+120904,WORD_NOUN,,HIRAGANA,,,あっ砕,あっさい,,assai,"miażdżenie
+kruszenie",,,
