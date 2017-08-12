@@ -30683,6 +30683,7 @@ dulce de leche","bardzo słodka, gęsta, ciągliwa, twardniejąca z czasem masa 
 113783,WORD_NOUN,,KATAKANA_HIRAGANA,,,タバコ・モザイク病,タバコモザイクびょう,,tabako mozaiku byou,mozaika tytoniowa,,,DUPLICATE 83473
 113784,WORD_NOUN,,KATAKANA,,,-,クライアント・サーバー・モデル,,kuraianto saabaa moderu,model klient-serwer,"informatyka, ang: client-server model",,
 113785,WORD_NOUN,,HIRAGANA,,,あおぞら市場,あおぞらいちば,,aozora ichiba,"targ
+plac targowy
 handel na powietrzu",,,
 113786,WORD_NOUN,,HIRAGANA,,,沖縄・北方対策担当大臣,おきなわほっぽうたいさくたんとうだいじん,,okinawa hoppou taisaku tantou daijin,Minister Stanu ds. Okinawy i Północnych Terytoriów,,,DUPLICATE 86520
 113787,WORD_NOUN,,HIRAGANA,,,たらい船,たらいぶね,,tarai bune,tradycyjna okrągła łódź,,,
@@ -48203,8 +48204,8 @@ wielozadaniowy",,,
 kategoryzowanie
 segregacja
 izolacja",,,
-121406,WORD_EXPRESSION,,HIRAGANA,,,水魚,すいぎょ,,suigyo,woda i ryba,,,
-121407,WORD_NOUN,,HIRAGANA,,,水魚,みずうお,,mizuuo,żaglon,"gatunek ryby skrzelokształtnej z rodziny żaglonowatych, alepisaurus ferox",,
+121406,WORD_EXPRESSION,,HIRAGANA,,,水魚,すいぎょ,,suigyo,woda i ryba,,,DUPLICATE 121407
+121407,WORD_NOUN,,HIRAGANA,,,水魚,みずうお,,mizuuo,żaglon,"gatunek ryby skrzelokształtnej z rodziny żaglonowatych, alepisaurus ferox",,DUPLICATE 121406
 121408,WORD_ADVERB,,KATAKANA,,,-,アクチュアリ,,akuchuari,"naprawdę
 rzeczywiście
 faktycznie",ang: actually,,
@@ -48215,7 +48216,7 @@ rachmistrz",ang: actuary,,
 121412,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,截然,せつぜん,,setsuzen,"wyraźny
 ostry
-klarowny",,,
+klarowny",,,DUPLICATE 121465
 121413,WORD_NOUN,,HIRAGANA,,,一般大衆,いっぱんたいしゅう,,ippan taishuu,"zwyczajni ludzie
 ogół społeczeństwa
 szeroki ogół",,,
@@ -48273,7 +48274,7 @@ słodki",,,
 121437,WORD_NOUN,,HIRAGANA,,,日本人会,にほんじんかい,,nihon jinkai,japońska organizacja osób mieszkających na obczyźnie,,,
 121438,WORD_NOUN,,HIRAGANA,,,鬼遣,おにやらい,,oniyarai,wypędzanie złych duchów,na nowy rok,,
 121439,WORD_NOUN,,HIRAGANA,,,鶏冠,とさか,,tosaka,"grzebień koguta
-grzebień ptaków",,,
+grzebień ptaków",,,DUPLICATE 121472
 121440,WORD_EXPRESSION,,HIRAGANA,,,解放運動,かいほううんどう,,kaihou undou,"ruch wyzwolenia
 ruch wyzwoleńczy
 ruch wolności
@@ -48298,3 +48299,45 @@ WORD_EXPRESSION",,HIRAGANA,,,熱が入る,ねつがはいる,,netsu ga hairu,???
 polityka światowa",,,
 121450,WORD_NOUN,,HIRAGANA,,,国際政治学,こくさいせいじがく,,kokusai seijigaku,polityka międzynarodowa,jako kierunek studiów,,
 121451,WORD_NOUN,,KATAKANA,,,-,ビジュアライザ,,bijuaraiza,wizualizacja,ang: visualizer,,
+121452,WORD_NOUN,,HIRAGANA,,,まっただ中,まっただなか,,mattadanaka,???,,,
+121453,WORD_NOUN,,HIRAGANA,,,真っただ中,まっただなか,,mattadanaka,???,,,
+121454,WORD_NOUN,,HIRAGANA,,,真っ直中,まっただなか,,mattadanaka,???,,,
+121455,WORD_NOUN,,HIRAGANA,,,まっ只中,まっただなか,,mattadanaka,???,,,
+121456,WORD_NOUN,,HIRAGANA,,,真っ唯中,まっただなか,,mattadanaka,???,,,
+121457,WORD_NOUN,,HIRAGANA,,,真只中,まっただなか,,mattadanaka,???,,,
+121458,WORD_NOUN,,HIRAGANA,,,-,めんそおれ,,mensoore,powitanie,dialekt Ryuukyuu,,
+121459,WORD_NOUN,,HIRAGANA,,,嘉魚,いわな,,iwana,palia,rodzaj ryb z rodziny łososiowatych,,
+121460,WORD_NOUN,,KATAKANA,,,-,イワナ,,iwana,palia,rodzaj ryb z rodziny łososiowatych,,
+121461,WORD_NOUN,,HIRAGANA,,,住み分け,すみわけ,,sumi wake,"izolacja siedlisk (środowisk życia, biologia)
+kategoryzowanie
+segregacja
+izolacja",,,
+121462,WORD_NOUN,,HIRAGANA,,,すみ分け,すみわけ,,sumi wake,"izolacja siedlisk (środowisk życia, biologia)
+kategoryzowanie
+segregacja
+izolacja",,,
+121463,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ミズウオ,,mizuuo,żaglon,"gatunek ryby skrzelokształtnej z rodziny żaglonowatych, alepisaurus ferox",,
+121464,WORD_ADVERB,,KATAKANA,,,-,アクチャリ,,akuchari,"naprawdę
+rzeczywiście
+faktycznie",ang: actually,,
+121465,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,截然,さいぜん,,saizen,"wyraźny
+ostry
+klarowny",,,DUPLICATE 121412
+121466,"WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,雨勝ち,あめがち,,amegachi,deszczowy,,,
+121467,WORD_NOUN,,HIRAGANA,,,横膈膜,おうかくまく,,oukakumaku,przepona,,,
+121468,WORD_NOUN,,KATAKANA,,,-,ゼロハン,,zero han,motocykl o pojemności 50cc,,,
+121469,WORD_NOUN,,HIRAGANA,,,味付玉子,あじつけたまご,,ajitsuke tamago,jajko gotowane na miękko marynowane w soi i marinie,,,
+121470,WORD_NOUN,,HIRAGANA,,,味付け卵,あじつけたまご,,ajitsuke tamago,jajko gotowane na miękko marynowane w soi i marinie,,,
+121471,WORD_NOUN,,HIRAGANA,,,味付卵,あじつけたまご,,ajitsuke tamago,jajko gotowane na miękko marynowane w soi i marinie,,,
+121472,WORD_NOUN,,HIRAGANA,,,鶏冠,けいかん,,keikan,"grzebień koguta
+grzebień ptaków",,,DUPLICATE 121439
+121473,WORD_NOUN,,KATAKANA,,,-,トサカ,,tosaka,"grzebień koguta
+grzebień ptaków",,,
+121474,WORD_NOUN,,KATAKANA,,,-,レッド・リスト,,reddo risuto,czerwona księga gatunków zagrożonych,ang: Red List,,
+121475,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,御出でになる,おいでになる,,oide ni naru,"być (honoryfikatywnie)
+przybyć
+iść",,,
