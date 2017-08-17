@@ -82,27 +82,23 @@ public class AndroidDictionaryGenerator {
 		
 		JMENewDictionary jmeNewNameDictionary = jmedictNewReader.createJMENewDictionary(jmedictNameNativeList);
 		
-		File kanjivgSingleXmlFile = new File("../JapaneseDictionary_additional/kanjivg/kanjivg.xml");
-		
-		Map<String, KanjivgEntry> kanjivgEntryMap = KanjivgReader.readKanjivgSingleXmlFile(kanjivgSingleXmlFile);
-		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmeNewNameDictionary,
 				new String[] { "input/word01.csv", "input/word02.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word-power.csv",
 				"output/transitive_intransitive_pairs.csv"); //, "output/word_group.csv");
 		
-		generateKanaEntries(kanjivgEntryMap, "output/kana.csv");
+		generateKanaEntries("../JapaneseDictionary_additional/kanjivg", "output/kana.csv");
 
 		generateKanjiRadical("../JapaneseDictionary_additional/radkfile", "output/radical.csv");
 
 		final String zinniaTomoeSlimBinaryFile = "output/kanji_recognizer.model.db";
 		
-		List<KanjiEntry> kanjiEntries = generateKanjiEntries(/* dictionary, jmedictCommon, */ kanjivgEntryMap, "input/kanji.csv",
+		List<KanjiEntry> kanjiEntries = generateKanjiEntries(/* dictionary, jmedictCommon, */ "input/kanji.csv",
 				"../JapaneseDictionary_additional/kanjidic2.xml", "../JapaneseDictionary_additional/kradfile",
-				"output/kanji.csv");
+				"../JapaneseDictionary_additional/kanjivg", "output/kanji.csv");
 
 		if (fullMode == true) {
 		
-			generateZinniaTomoeSlimBinaryFile(kanjiEntries, kanjivgSingleXmlFile, "output/kanjivgTomoeFile.xml",
+			generateZinniaTomoeSlimBinaryFile(kanjiEntries, "output/kanjivgTomoeFile.txt", "output/kanjivgTomoeFile.xml",
 					"../JapaneseDictionary_additional/zinnia-0.06-app/bin/zinnia_learn",
 					"output/kanji_recognizer_handwriting-ja-slim.s", zinniaTomoeSlimBinaryFile);
 			
@@ -270,7 +266,7 @@ public class AndroidDictionaryGenerator {
 		CsvReaderWriter.writeTatoebaSentenceGroupsList(sentencesGroupsDestinationFileName, uniqueSentencesWithGroupList);
 	}
 
-	private static void generateKanaEntries(Map<String, KanjivgEntry> kanjivgEntryMap, String destinationFileName) throws Exception {
+	private static void generateKanaEntries(String kanjivgDir, String destinationFileName) throws Exception {
 
 		System.out.println("generateKanaEntries");
 		
@@ -287,6 +283,8 @@ public class AndroidDictionaryGenerator {
 		// additional
 		kanaEntries.addAll(kanaHelper.getAllAdditionalKanaEntries());
 
+		Map<String, KanjivgEntry> kanaJapaneseKanjiEntryCache = new HashMap<String, KanjivgEntry>();
+
 		for (KanaEntry currentKanaEntry : kanaEntries) {
 
 			List<KanjivgEntry> kanaStrokePaths = new ArrayList<KanjivgEntry>();
@@ -297,10 +295,19 @@ public class AndroidDictionaryGenerator {
 
 				String currentKanaJapaneseChar = String.valueOf(kanaJapanese.charAt(kanaJapaneseCharIdx));
 
-				KanjivgEntry kanjivgEntryInCache = kanjivgEntryMap.get(currentKanaJapaneseChar);
+				KanjivgEntry kanjivgEntryInCache = kanaJapaneseKanjiEntryCache.get(currentKanaJapaneseChar);
 
 				if (kanjivgEntryInCache == null) {
-					throw new RuntimeException("kanjivgEntryInCache == null");
+
+					String kanjivgId = KanjivgReader.getKanjivgId(currentKanaJapaneseChar);
+
+					kanjivgEntryInCache = KanjivgReader.readKanjivgFile(new File(kanjivgDir, kanjivgId + ".svg"));
+
+					if (kanjivgEntryInCache == null) {
+						throw new RuntimeException("kanjivgEntryInCache == null");
+					}
+
+					kanaJapaneseKanjiEntryCache.put(currentKanaJapaneseChar, kanjivgEntryInCache);
 				}
 
 				kanaStrokePaths.add(kanjivgEntryInCache);
@@ -321,9 +328,8 @@ public class AndroidDictionaryGenerator {
 	}
 
 	private static List<KanjiEntry> generateKanjiEntries(/* List<PolishJapaneseEntry> dictionary,
-			TreeMap<String, EDictEntry> jmedictCommon, */ 
-			Map<String, KanjivgEntry> kanjivgEntryMap, String sourceKanjiName, String sourceKanjiDic2FileName,
-			String sourceKradFileName, String destinationFileName) throws Exception {
+			TreeMap<String, EDictEntry> jmedictCommon, */ String sourceKanjiName, String sourceKanjiDic2FileName,
+			String sourceKradFileName, String kanjivgDir, String destinationFileName) throws Exception {
 
 		System.out.println("generateKanjiEntries");
 
@@ -346,7 +352,9 @@ public class AndroidDictionaryGenerator {
 
 			String kanji = currentKanjiEntry.getKanji();
 
-			KanjivgEntry kanjivgEntry = kanjivgEntryMap.get(kanji);
+			String kanjivgId = KanjivgReader.getKanjivgId(kanji);
+
+			KanjivgEntry kanjivgEntry = KanjivgReader.readKanjivgFile(new File(kanjivgDir, kanjivgId + ".svg"));
 
 			currentKanjiEntry.setKanjivgEntry(kanjivgEntry);
 		}
@@ -624,7 +632,7 @@ public class AndroidDictionaryGenerator {
 	}
 	*/
 
-	private static void generateZinniaTomoeSlimBinaryFile(List<KanjiEntry> kanjiEntries, File kanjivgSingleXmlFile,
+	private static void generateZinniaTomoeSlimBinaryFile(List<KanjiEntry> kanjiEntries, String kvgToolFileFromKanjivg,
 			String tomoeFileFromKanjivg, String zinniaLearnPath, String zinniaTomoeLearnSlimFile,
 			String zinniaTomoeSlimBinaryFile) throws Exception {
 
@@ -639,7 +647,7 @@ public class AndroidDictionaryGenerator {
 			kanjiSet.add(kanji);
 		}
 
-		//File kvgToolFileFromKanjivgFile = new File(kvgToolFileFromKanjivg);
+		File kvgToolFileFromKanjivgFile = new File(kvgToolFileFromKanjivg);
 		File tomoeFileFromKanjivgFile = new File(tomoeFileFromKanjivg);
 
 		kanjiEntries = new ArrayList<KanjiEntry>(kanjiEntries);
@@ -652,7 +660,6 @@ public class AndroidDictionaryGenerator {
 			}
 		});
 
-		/*
 		BufferedWriter tomoeFileFromKanjivgWriter = new BufferedWriter(new FileWriter(kvgToolFileFromKanjivgFile));
 
 		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
@@ -677,12 +684,11 @@ public class AndroidDictionaryGenerator {
 		}
 
 		tomoeFileFromKanjivgWriter.close();
-		*/
 
 		Runtime runtime = Runtime.getRuntime();
 
 		Process process = runtime.exec(
-				new String[] { "ruby", "xml_all_kanji_fm.rb", kanjivgSingleXmlFile.getAbsolutePath(),
+				new String[] { "ruby", "xml_all_kanji.rb", kvgToolFileFromKanjivgFile.getAbsolutePath(),
 						tomoeFileFromKanjivgFile.getAbsolutePath() }, null, new File("../KVG-Tools/"));
 
 		BufferedReader stream = new BufferedReader(new InputStreamReader(process.getInputStream()));
@@ -775,10 +781,8 @@ public class AndroidDictionaryGenerator {
 
 		System.out.println("Generate zinnia tomoe db exited with error code: " + exitVal);
 
-		//kvgToolFileFromKanjivgFile.delete();
-		
+		kvgToolFileFromKanjivgFile.delete();
 		tomoeFileFromKanjivgFile.delete();
-		
 		new File(zinniaTomoeLearnSlimFile).delete();
 		new File(zinniaTomoeSlimBinaryFile + ".txt").delete();
 	}
