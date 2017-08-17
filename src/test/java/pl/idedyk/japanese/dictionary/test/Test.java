@@ -1,13 +1,10 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.util.List;
+import java.io.File;
+import java.util.Map;
 
-import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
-import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke;
-import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
-import pl.idedyk.japanese.dictionary.tools.TomoeReader;
+import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
+import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
 
 public class Test {
 
@@ -391,54 +388,19 @@ public class Test {
 		
 		/////////////
 		
-		String zinniaTomoeLearnSlimFile = "output/kanji_recognizer_handwriting-ja-slim.s";
+		/*
+		String kanjivgId = KanjivgReader.getKanjivgId("食"); // 0304b
+		// 26951
 		
-		List<TomoeEntry> tomoeEntries = TomoeReader.readTomoeXmlHandwritingDatabase("output/wynik.xml");
-
-		BufferedWriter zinniaTomoeSlimFileWriter = new BufferedWriter(new FileWriter(zinniaTomoeLearnSlimFile));
-
-		for (TomoeEntry currentTomoeEntry : tomoeEntries) {
-
-			String kanji = currentTomoeEntry.getKanji();
-			
-			/*
-			if (kanjiSet.contains(kanji) == false) {
-				continue;
-			}
-			*/
-
-			StringBuffer sb = new StringBuffer();
-
-			sb.append("(character (value ");
-
-			sb.append(kanji);
-
-			sb.append(")(width 1000)(height 1000)(strokes ");
-
-			List<Stroke> strokeList = currentTomoeEntry.getStrokeList();
-
-			for (Stroke currentStroke : strokeList) {
-
-				sb.append("(");
-
-				List<Point> pointList = currentStroke.getPointList();
-
-				for (Point currentPoint : pointList) {
-
-					sb.append("(").append(currentPoint.getX()).append(" ").append(currentPoint.getY()).append(")");
-				}
-
-				sb.append(")");
-			}
-
-			sb.append(")");
-
-			sb.append(")\n");
-
-			zinniaTomoeSlimFileWriter.write(sb.toString());
-		}
-
-		zinniaTomoeSlimFileWriter.close();
-
+		System.out.println(kanjivgId);
+		
+		String charValue = KanjivgReader.getChar(kanjivgId);
+		
+		System.out.println(charValue);
+		*/
+		
+		@SuppressWarnings("unused")
+		Map<String, KanjivgEntry> result = KanjivgReader.readKanjivgSingleXmlFile(new File("../JapaneseDictionary_additional/kanjivg/kanjivg.xml"));
+				
 	}
 }

@@ -2,11 +2,13 @@ package pl.idedyk.japanese.dictionary.tools;
 
 import java.io.File;
 import java.nio.ByteBuffer;
+import java.nio.charset.CharacterCodingException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import org.dom4j.Document;
 import org.dom4j.Element;
@@ -20,7 +22,7 @@ public class KanjivgReader {
 	
 	private static final String svgNamespace = "http://www.w3.org/2000/svg";
 	private static final String kvgNamespace = "http://kanjivg.tagaini.net";
-
+	
 	public static KanjivgEntry readKanjivgFile(File file) throws Exception {
 
 		if (file.isFile() == false) {
@@ -72,13 +74,71 @@ public class KanjivgReader {
 			
 			strokePaths.add(dValue);
 		}
-		
+				
 		KanjivgEntry kanjivgEntry = new KanjivgEntry();
 
 		kanjivgEntry.setKanji(kanji);
 		kanjivgEntry.setStrokePaths(strokePaths);
 		
 		return kanjivgEntry;
+	}
+	
+	public static Map<String, KanjivgEntry> readKanjivgSingleXmlFile(File file) throws Exception {
+		
+		Map<String, KanjivgEntry> result = new TreeMap<String, KanjivgEntry>();
+		
+		String feature = "http://apache.org/xml/features/nonvalidating/load-external-dtd";
+
+		SAXReader reader = new SAXReader();		
+		reader.setFeature(feature, false);
+
+		Document document = reader.read(file);
+
+		XPath kanjiXPath = createXPath(document, "/kanjivg/kanji");
+		
+		List<?> kanjiNodeList = kanjiXPath.selectNodes(document);
+
+		for (Object currentKanjiObject : kanjiNodeList) {
+			
+			Element currentKanjiElement = (Element)currentKanjiObject;
+			
+			String currentKanjiId = currentKanjiElement.attribute("id").getText();			
+			String currentKanjiCodepoint = currentKanjiId.split("_")[1];
+			
+			String currentKanjiKanji = getChar(currentKanjiCodepoint);
+			
+			//
+			
+			List<String> strokePaths = new ArrayList<String>();
+			
+			//
+			
+			XPath pathXPath = createXPath(document, "g//path");
+			
+			List<?> pathNodeList = pathXPath.selectNodes(currentKanjiElement);
+			
+			for (Object currentPathObject : pathNodeList) {
+				
+				Element currentPathElement = (Element)currentPathObject;
+				
+				String strokes = currentPathElement.attribute("d").getText();
+				
+				strokePaths.add(strokes);
+			}
+			
+			//
+			
+			KanjivgEntry kanjivgEntry = new KanjivgEntry();
+
+			kanjivgEntry.setKanji(currentKanjiKanji);
+			kanjivgEntry.setStrokePaths(strokePaths);
+			
+			//
+			
+			result.put(currentKanjiKanji, kanjivgEntry);
+		}
+		
+		return result;
 	}
 
 	private static XPath createXPath(Document document, String xpath) {
@@ -106,6 +166,7 @@ public class KanjivgReader {
 	*/
 	
 	public static String getKanjivgId(String kanji) {
+		
 		Charset unicodeCharset = Charset.forName("UNICODE");
 		
 		ByteBuffer unicodeByteBuffer = unicodeCharset.encode(kanji);
@@ -141,8 +202,18 @@ public class KanjivgReader {
 		if (u2.length() == 1) {
 			u2 = "0" + u2;
 		}
+		
 		result.append(u2);
 		
 		return result.toString();
+	}
+	
+	public static String getChar(String kanjivgId) throws CharacterCodingException {
+		
+		Integer kanjivgIdInteger = Integer.valueOf(kanjivgId, 16);
+				
+		char result = Character.toChars(kanjivgIdInteger)[0];
+				
+		return String.valueOf(result);
 	}
 }
