@@ -1,9 +1,13 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.util.List;
 
-import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
-import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector.JapaneseWord;
+import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
+import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke;
+import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
+import pl.idedyk.japanese.dictionary.tools.TomoeReader;
 
 public class Test {
 
@@ -367,6 +371,7 @@ public class Test {
 		CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/test.csv");
 		*/
 		
+		/*
 		JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
 		
 		//System.out.println(jishoOrgConnector.isWordExists("猫義"));
@@ -382,5 +387,58 @@ public class Test {
 			
 			System.out.println(japaneseWord.kana);
 		}
+		*/
+		
+		/////////////
+		
+		String zinniaTomoeLearnSlimFile = "output/kanji_recognizer_handwriting-ja-slim.s";
+		
+		List<TomoeEntry> tomoeEntries = TomoeReader.readTomoeXmlHandwritingDatabase("output/wynik.xml");
+
+		BufferedWriter zinniaTomoeSlimFileWriter = new BufferedWriter(new FileWriter(zinniaTomoeLearnSlimFile));
+
+		for (TomoeEntry currentTomoeEntry : tomoeEntries) {
+
+			String kanji = currentTomoeEntry.getKanji();
+			
+			/*
+			if (kanjiSet.contains(kanji) == false) {
+				continue;
+			}
+			*/
+
+			StringBuffer sb = new StringBuffer();
+
+			sb.append("(character (value ");
+
+			sb.append(kanji);
+
+			sb.append(")(width 1000)(height 1000)(strokes ");
+
+			List<Stroke> strokeList = currentTomoeEntry.getStrokeList();
+
+			for (Stroke currentStroke : strokeList) {
+
+				sb.append("(");
+
+				List<Point> pointList = currentStroke.getPointList();
+
+				for (Point currentPoint : pointList) {
+
+					sb.append("(").append(currentPoint.getX()).append(" ").append(currentPoint.getY()).append(")");
+				}
+
+				sb.append(")");
+			}
+
+			sb.append(")");
+
+			sb.append(")\n");
+
+			zinniaTomoeSlimFileWriter.write(sb.toString());
+		}
+
+		zinniaTomoeSlimFileWriter.close();
+
 	}
 }
