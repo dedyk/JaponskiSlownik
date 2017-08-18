@@ -398,9 +398,18 @@ public class Test {
 		
 		System.out.println(charValue);
 		*/
+
+		String kanjivgId = KanjivgReader.getKanjivgId("医");
 		
-		@SuppressWarnings("unused")
-		Map<String, KanjivgEntry> result = KanjivgReader.readKanjivgSingleXmlFile(new File("../JapaneseDictionary_additional/kanjivg/kanjivg.xml"));
+		System.out.println(kanjivgId);
+		
+		Map<String, KanjivgEntry> result = KanjivgReader.readKanjivgSingleXmlFile(new File("/tmp/a/kanjivg.xml"));
 				
+		KanjivgEntry kanjivgEntry = result.get("医"); //甑");
+		
+		for (String strokePath : kanjivgEntry.getStrokePaths()) {
+			System.out.println(strokePath);
+			//System.out.println("currentCharStrokePaths.add(\"" + strokePath + "\");");
+		}
 	}
 }

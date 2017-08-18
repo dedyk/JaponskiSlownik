@@ -43,18 +43,47 @@ public class TestParseSvgPath {
 		
 		//StrokePath strokePath = parsePath("M54.5,88 c -0.83,0 -1.5,0.67 -1.5,1.5 0,0.83 0.67,1.5 1.5,1.5 0.83,0 1.5,-0.67 1.5,-1.5 0,-0.83 -0.67,-1.5 -1.5,-1.5");
 		//StrokePath strokePath = parsePath("M54.5,88 c 0,0.83 0.67,1.5 1.5,1.5");
-		StrokePath strokePath = parsePath("M54.5,88 c 0,0.83,0.67,1.5,1.5,1.5");
+		//StrokePath strokePath = parsePath("M54.5,88 c 0,0.83,0.67,1.5,1.5,1.5");
 		
-		//StrokePath strokePath = parsePath("M 58.6 48.2 c 0.796567,0.398856 1.99342,0.319857 3.120988,0.180143 5.4,-0.66 13.08,-1.76 18.48,-2.24 1.157425,-0.08971 2.576567,0.01086 3.52342,0.330429");
+		List<String> strokePaths = new ArrayList<String>();
+
+		//strokePaths.add("M17.88,20.29c1.91,0.51,5.41,0.64,7.31,0.51c17.69-1.18,38.69-3.05,58.21-3.51c3.18-0.08,5.08,0.25,6.67,0.5");
 		
-		PointF startPoint = strokePath.getStartPoint();
+		strokePaths.add("M17.88,20.29c1.91,0.51,5.41,0.64,7.31,0.51c17.69-1.18,38.69-3.05,58.21-3.51c3.18-0.08,5.08,0.25,6.67,0.5");
+		strokePaths.add("M48.05,26.75c0.04,0.48,0.07,1.24-0.07,1.93c-0.85,4.08-6.22,14.11-11.57,17.82");
+		strokePaths.add("M47.12,38.02c1.17,0.28,3.33,0.41,4.48,0.28c6.77-0.8,13.54-1.92,21.98-3.32c1.9-0.32,3.64-0.32,4.61-0.18");
+		strokePaths.add("M32.39,56.74c2.47,0.48,5.17,0.4,7.67,0.17c10.06-0.92,26.6-2.98,38.22-3.8c2.76-0.19,5.72-0.24,8.33,0.07");
+		strokePaths.add("M57.92,40.43c0.58,1.07,0.81,2.39,0.81,3.53C58.75,61.25,52.25,74,36.06,81.18");
+		strokePaths.add("M61.03,60.17C70.29,63.76,83.25,74.25,87.25,81");
+		strokePaths.add("M21.83,21.46c0.67,1.54,1,3.26,1,5.79c0,14.77-0.33,47-1.5,60.48c-0.26,3,1.01,3.97,2.81,3.8c16.11-1.53,44.49-2.91,60.2-2.56c3.32,0.07,6.12,0.24,8.17,0.71");
 		
-		List<Curve> curveList = strokePath.getCurveList();
+		/ *
+		strokePaths.add("M 17.88,20.29 c 1.91,0.51 5.41,0.64 7.31,0.51 17.69,-1.18 38.69,-3.05 58.21,-3.51 3.18,-0.08 5.08,0.25 6.67,0.5");		
+		strokePaths.add("M 48.05,26.75 c 0.04,0.48 0.07,1.24 -0.07,1.93 -0.85,4.08 -6.22,14.11 -11.57,17.82");
+		strokePaths.add("M 47.12,38.02 c 1.17,0.28 3.33,0.41 4.48,0.28 6.77,-0.8 13.54,-1.92 21.98,-3.32 1.9,-0.32 3.64,-0.32 4.61,-0.18");
+		strokePaths.add("M 32.39,56.74 c 2.47,0.48 5.17,0.4 7.67,0.17 10.06,-0.92 26.6,-2.98 38.22,-3.8 2.76,-0.19 5.72,-0.24 8.33,0.07");
+		strokePaths.add("M 57.92,40.43 c 0.58,1.07 0.81,2.39 0.81,3.53 C 58.75,61.25 52.25,74 36.06,81.18");
+		strokePaths.add("M 61.03,60.17 C 66.83499,67.883722 79.23773,77.927914 87.25,81");
+		strokePaths.add("M 21.83,21.46 c 0.67,1.54 1,3.26 1,5.79 0,14.77 -0.33,47 -1.5,60.48 -0.26,3 1.01,3.97 2.81,3.8 16.11,-1.53 44.49,-2.91 60.2,-2.56 3.32,0.07 6.12,0.24 8.17,0.71");
+		* /
 		
-		System.out.println("Start point: " + startPoint);
+		// test
+		//strokePaths.add("M 17.88,20.29 c 1.91,0.51 5.41,0.64 7.31,0.51");
+		//strokePaths.add("M17.88,20.29 c 1.91,0.51,5.41,0.64,7.31,0.51");
 		
-		for (Curve curve : curveList) {
-			System.out.println("Curve: " + curve);
+		for (String currentStrokePathString : strokePaths) {
+			
+			StrokePath strokePath = parsePath(currentStrokePathString);
+			
+			PointF startPoint = strokePath.getStartPoint();
+			
+			List<Curve> curveList = strokePath.getCurveList();
+			
+			System.out.println("Start point: " + startPoint);
+			
+			for (Curve curve : curveList) {
+				System.out.println("Curve: " + curve);
+			}
 		}
 		*/
 	}
@@ -83,11 +112,12 @@ public class TestParseSvgPath {
                 isInMoveTo = true;
                 continue;
             }
-
+            
             if (Character.isDigit(c) || c == '.') {
                 buff.append(Character.toString(c));
             }
-
+            
+            BEFORE_IF:
             if (c == ',' || c == '-' || c == ' ' || c == 'c' || c == 'C' || c == 's'
                     || c == 'S' || i == (path.length() - 1)) {
             	
@@ -103,7 +133,7 @@ public class TestParseSvgPath {
                 }
 
                 if ("".equals(floatStr)) {
-                    continue;
+                    break BEFORE_IF;
                 }
 
                 try {
