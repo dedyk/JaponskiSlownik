@@ -1,17 +1,51 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+
+import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
+import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
 
 public class TestParseSvgPath {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
+		Map<String, KanjivgEntry> result = KanjivgReader.readKanjivgSingleXmlFile(new File("/tmp/a/kanjivg.xml"));
+		
+		for (KanjivgEntry kanjivgEntry : result.values()) {
+			
+			List<String> strokePaths = kanjivgEntry.getStrokePaths();
+			
+			for (String strokePath : strokePaths) {
+				
+				System.out.println(strokePath);
+				
+				//
+				
+				StrokePath strokePathPath = parsePath(strokePath);
+				
+				PointF startPoint = strokePathPath.getStartPoint();
+				
+				List<Curve> curveList = strokePathPath.getCurveList();
+				
+				System.out.println("Start point: " + startPoint);
+				
+				for (Curve curve : curveList) {
+					System.out.println("Curve: " + curve);
+				}
+			}
+		}
+		
+		/*
 		//StrokePath strokePath = parsePath("M54.89,15.5c-10.26,0-27.89,8.82-27.89,38.15c0,29.33,15.46,38.58,28.32,38.58c12.86,0,27.6-10.69,27.6-38.73c0.01-28.03-15.02-38-28.03-38");
 		
 		//StrokePath strokePath = parsePath("M54.5,88 c -0.83,0 -1.5,0.67 -1.5,1.5 0,0.83 0.67,1.5 1.5,1.5 0.83,0 1.5,-0.67 1.5,-1.5 0,-0.83 -0.67,-1.5 -1.5,-1.5");
-		StrokePath strokePath = parsePath("M54.5,88 c 0,0.83 0.67,1.5 1.5,1.5");
+		//StrokePath strokePath = parsePath("M54.5,88 c 0,0.83 0.67,1.5 1.5,1.5");
+		StrokePath strokePath = parsePath("M54.5,88 c 0,0.83,0.67,1.5,1.5,1.5");
 		
+		//StrokePath strokePath = parsePath("M 58.6 48.2 c 0.796567,0.398856 1.99342,0.319857 3.120988,0.180143 5.4,-0.66 13.08,-1.76 18.48,-2.24 1.157425,-0.08971 2.576567,0.01086 3.52342,0.330429");
 		
 		PointF startPoint = strokePath.getStartPoint();
 		
@@ -22,6 +56,7 @@ public class TestParseSvgPath {
 		for (Curve curve : curveList) {
 			System.out.println("Curve: " + curve);
 		}
+		*/
 	}
 	
     private static StrokePath parsePath(String path) {
@@ -53,7 +88,7 @@ public class TestParseSvgPath {
                 buff.append(Character.toString(c));
             }
 
-            if (c == ',' || c == '-' || c == 'c' || c == 'C' || c == 's'
+            if (c == ',' || c == '-' || c == ' ' || c == 'c' || c == 'C' || c == 's'
                     || c == 'S' || i == (path.length() - 1)) {
             	
                 String floatStr = buff.toString();
@@ -96,7 +131,10 @@ public class TestParseSvgPath {
                 y = null;
 
                 if (isInMoveTo) {
+                	isInMoveTo = false;
+                	
                     result = new StrokePath(p);
+                    
                 } else {
                     if (p1 == null) {
                         p1 = p;
@@ -129,7 +167,6 @@ public class TestParseSvgPath {
             if (c == 'c' || c == 'C' || c == 's' || c == 'S') {
                 relative = (c == 'c' || c == 's');
                 smooth = (c == 's' || c == 'S');
-                isInMoveTo = false;
             }
         }
 
@@ -170,10 +207,12 @@ public class TestParseSvgPath {
 			this.y = y;
 		}
 
+		@SuppressWarnings("unused")
 		public float getX() {
 			return x;
 		}
 
+		@SuppressWarnings("unused")
 		public float getY() {
 			return y;
 		}
@@ -203,22 +242,27 @@ public class TestParseSvgPath {
 			this.smooth = smooth;
 		}
 
+		@SuppressWarnings("unused")
 		public PointF getP1() {
 			return p1;
 		}
 
+		@SuppressWarnings("unused")
 		public PointF getP2() {
 			return p2;
 		}
 
+		@SuppressWarnings("unused")
 		public PointF getP3() {
 			return p3;
 		}
 
+		@SuppressWarnings("unused")
 		public boolean isRelative() {
 			return relative;
 		}
 
+		@SuppressWarnings("unused")
 		public boolean isSmooth() {
 			return smooth;
 		}
