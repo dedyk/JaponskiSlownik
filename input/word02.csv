@@ -50891,8 +50891,8 @@ być przerwany od
 być zawieszony od",,,
 122628,WORD_VERB_RU,,HIRAGANA,,,蹴り上げる,けりあげる,,keri ageru,???,,,
 122629,WORD_NOUN,,HIRAGANA,,,小手毬,こでまり,,kodemari,spiraea cantoniensis,roślina,,
-122630,WORD_NOUN,,HIRAGANA,,,黒炭,こくたん,,kokutan,węgiel kamienny,,,
-122631,WORD_NOUN,,HIRAGANA,,,黒炭,くろずみ,,kurozumi,czarny węgiel,,,
+122630,WORD_NOUN,,HIRAGANA,,,黒炭,こくたん,,kokutan,węgiel kamienny,,,DUPLICATE 122631
+122631,WORD_NOUN,,HIRAGANA,,,黒炭,くろずみ,,kurozumi,czarny węgiel,,,DUPLICATE 122630
 122632,WORD_NOUN,,HIRAGANA,,,黒檀,こくたん,,kokutan,heban,,,
 122633,WORD_NOUN,,HIRAGANA,,,知ったかぶり,しったかぶり,,shitta kaburi,"udawanie, że się wie",,,
 122634,WORD_VERB_U,,HIRAGANA,,,遣り返す,やりかえす,,yari kaesu,???,,,
@@ -50925,7 +50925,7 @@ nikt",,,
 WORD_PRE_NOUN_ADJECTIVAL",,HIRAGANA,,,芸無し,げいなし,,geinashi,"nieinteresująca osoba
 nikt",,,
 122647,WORD_NOUN,,HIRAGANA,,,何人も,なんびとも,,nanbito mo,"wszyscy
-nikt (z czasownikiem w formie przeczącej)",,,
+nikt (z czasownikiem w formie przeczącej)",,,DUPLICATE 122726
 122648,WORD_NOUN,,HIRAGANA,,,馬房,ばぼう,,babou,"kabina w stajni
 stanowisko dla konia w stajni",,,
 122649,WORD_NOUN,,HIRAGANA,,,禁薬,きんやく,,kin'yaku,"rzucanie narkotyków
@@ -51002,12 +51002,12 @@ kara za czynienie zła",,,
 stały temat żartów",,,
 122687,WORD_NOUN,,HIRAGANA,,,蓑虫,みのむし,,minomushi,"koszówkowate
 koszówki",rodzina motyli,,
-122688,WORD_VERB_RU,,HIRAGANA,,,綰ねる,たがねる,,taganeru,zbierać i pakować razem,,,
+122688,WORD_VERB_RU,,HIRAGANA,,,綰ねる,たがねる,,taganeru,zbierać i pakować razem,,,DUPLICATE 122742
 122689,WORD_NOUN,,HIRAGANA,,,軽風,けいふう,,keifuu,"słaby wiatr
 lekki wiatr
 lekki wiaterek",,,
 122690,WORD_NOUN,,HIRAGANA,,,水風呂,みずぶろ,,mizuburo,"zimna kąpiel
-kąpiel w zimnej wodzie",,,
+kąpiel w zimnej wodzie",,,DUPLICATE 122708
 122691,WORD_NOUN,,HIRAGANA,,,内祝言,ないしゅうげん,,naishuugen,prywatny ślub,,,
 122692,WORD_NOUN,,HIRAGANA,,,身元確認,みもとかくにん,,mimoto kakunin,"identyfikacja
 potwierdzenie tożsamości",,,
@@ -51041,11 +51041,97 @@ zawiniątko",,,
 najbardziej potężny w historii",,,
 122704,WORD_NOUN,,HIRAGANA,,,審神者,さにわ,,saniwa,???,"archaizm, mało znane słowo",,
 122705,WORD_NOUN,,HIRAGANA,,,言偏,ごんべん,,gonben,element podstawowy kanji “słowo” po lewej stronie,,,
-122706,WORD_NOUN,,HIRAGANA,,,無間地獄,むげんじごく,,mugen jigoku,buddyjskie piekło nieprzerwanego cierpienia,,,
+122706,WORD_NOUN,,HIRAGANA,,,無間地獄,むげんじごく,,mugen jigoku,buddyjskie piekło nieprzerwanego cierpienia,,,DUPLICATE 122744
 122707,WORD_NOUN,,HIRAGANA,,,邪淫,じゃいん,,jain,"wulgarność
 sprośność
 lubieżność
 obleśność",,,
-122708,WORD_NOUN,,HIRAGANA,,,水風呂,すいふろ,,suifuro,kąpiel w wannie z ogrzewaniem od spodu,,,
+122708,WORD_NOUN,,HIRAGANA,,,水風呂,すいふろ,,suifuro,kąpiel w wannie z ogrzewaniem od spodu,,,DUPLICATE 122690
 122709,WORD_NOUN,,HIRAGANA,,,妄語,もうご,,mougo,"kłamstwo
 fałsz",,,
+122710,WORD_NOUN,,KATAKANA,,,-,ヴェジマイト,,vejimaito,Vegemite,pasta do chleba na bazie drożdży,,
+122711,WORD_EXPRESSION,,KATAKANA_HIRAGANA,,,ツキが悪い,ツキがわるい,,tsuki ga warui,"???
+pechowy
+nieszczęśliwy",,,
+122712,WORD_ADJECTIVE_I,,HIRAGANA,,,書き難い,かきにくい,,kaki nikui,"trudny do napisania lub narysowania
+nie pisać dobrze (np. długopisem, pędzlem i etc)",,,
+122713,WORD_EXPRESSION,,HIRAGANA,,,-,してもいい,,shite mo ii,"nie przejmować się robiąc
+chętnie robić
+można robić",,,
+122714,WORD_VERB_U,,HIRAGANA,,,釣り下がる,つりさがる,,tsuri sagaru,"zwisać
+wisieć
+zawiesić",,,
+122715,WORD_VERB_RU,,HIRAGANA,,,つり下げる,つりさげる,,tsuri sageru,"przerwać od
+wstrzymać od
+być przerwany od
+być zawieszony od",,,
+122716,WORD_VERB_RU,,HIRAGANA,,,釣り下げる,つりさげる,,tsuri sageru,"przerwać od
+wstrzymać od
+być przerwany od
+być zawieszony od",,,
+122717,WORD_VERB_RU,,HIRAGANA,,,釣下げる,つりさげる,,tsuri sageru,"przerwać od
+wstrzymać od
+być przerwany od
+być zawieszony od",,,
+122718,WORD_VERB_RU,,HIRAGANA,,,蹴りあげる,けりあげる,,keri ageru,???,,,
+122719,WORD_NOUN,,HIRAGANA,,,黒壇,こくたん,,kokutan,heban,,,
+122720,WORD_NOUN,,HIRAGANA,,,知ったか振り,しったかぶり,,shitta kaburi,"udawanie, że się wie",,,
+122721,WORD_VERB_U,,HIRAGANA,,,やり返す,やりかえす,,yari kaesu,???,,,
+122722,WORD_VERB_U,,HIRAGANA,,,呆れ返る,あきれかえる,,akire kaeru,"być całkowicie zaskoczony
+być zaszokowany
+być zniesmaczony",,,
+122723,WORD_VERB_U,,HIRAGANA,,,呆れかえる,あきれかえる,,akire kaeru,"być całkowicie zaskoczony
+być zaszokowany
+być zniesmaczony",,,
+122724,WORD_ADVERB,,HIRAGANA,,,一も二も無く,いちもにもなく,,ichi mo ni mo naku,bez wahania,,,
+122725,"WORD_NOUN
+WORD_PRE_NOUN_ADJECTIVAL",,HIRAGANA,,,芸なし,げいなし,,geinashi,"nieinteresująca osoba
+nikt",,,
+122726,WORD_NOUN,,HIRAGANA,,,何人も,なんぴとも,,nanpito mo,"wszyscy
+nikt (z czasownikiem w formie przeczącej)",,,DUPLICATE 122647
+122727,WORD_NOUN,,HIRAGANA_KATAKANA,,,禁ヤク,きんヤク,,kin'yaku,"rzucanie narkotyków
+bycie czystym",,,
+122728,WORD_NOUN,,HIRAGANA,,,三角函数,さんかくかんすう,,sankaku kansuu,funkcja trygonometryczna,,,
+122729,WORD_NOUN,,KATAKANA,,,-,クレマティス,,kurematisu,klematis,"roślina, ang: clematis",,
+122730,WORD_NOUN,,HIRAGANA,,,阿呆垂れ,あほたれ,,ahotare,"głupek
+dureń
+idiota",,,
+122731,WORD_NOUN,,KATAKANA_HIRAGANA,,,-,アホたれ,,ahotare,"głupek
+dureń
+idiota",,,
+122732,WORD_NOUN,,KATAKANA,,,-,ホーム・ゲーム,,hoomu geemu,domowa gra,ang: home game,,
+122733,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,チュン,,chun,"ćwierkanie
+świergot
+cykanie
+pisk
+kwilenie",,,DUPLICATE 50903
+122734,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,ちゅんちゅん,,chun chun,"ćwierkanie
+świergot
+cykanie
+pisk
+kwilenie",,,
+122735,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,ちゅん,,chun,"ćwierkanie
+świergot
+cykanie
+pisk
+kwilenie",,,
+122736,WORD_NOUN,,HIRAGANA,,,柘植,つげ,,tsuge,bukszpan drobnolistny Japonica,"roślina, buxus microphylla var. japonica",,
+122737,WORD_NOUN,,KATAKANA,,,-,ツゲ,,tsuge,bukszpan drobnolistny Japonica,"roślina, buxus microphylla var. japonica",,
+122738,"WORD_NOUN
+WORD_ADVERBIAL_NOUN",,HIRAGANA,,,此れっ切り,これっきり,,korekkiri,"ostatni raz (od teraz)
+nigdy więcej
+tylko to",,,
+122739,"WORD_NOUN
+WORD_ADVERBIAL_NOUN",,HIRAGANA,,,是っ切り,これっきり,,korekkiri,"ostatni raz (od teraz)
+nigdy więcej
+tylko to",,,
+122740,WORD_NOUN,,HIRAGANA,,,簔虫,みのむし,,minomushi,"koszówkowate
+koszówki",rodzina motyli,,
+122741,WORD_NOUN,,KATAKANA,,,-,ミノムシ,,minomushi,"koszówkowate
+koszówki",rodzina motyli,,
+122742,WORD_VERB_RU,,HIRAGANA,,,綰ねる,たかねる,,takaneru,zbierać i pakować razem,,,DUPLICATE 122688
+122743,WORD_NOUN,,HIRAGANA,,,ひと抱え,ひとかかえ,,hitokakae,???,,,
+122744,WORD_NOUN,,HIRAGANA,,,無間地獄,むけんじごく,,muken jigoku,buddyjskie piekło nieprzerwanego cierpienia,,,DUPLICATE 122706
