@@ -51857,16 +51857,17 @@ kuter rybacki",,,
 WORD_ADJECTIVE_NO",,HIRAGANA,,,出目,でめ,,deme,"sterczące oczy
 wystające oczy
 liczba oczek widoczna po rzuceniu kością do gry",,,
-123089,WORD_NOUN,,HIRAGANA,,,酒槽,さかぶね,,sakabune,kadź do sake,,,
+123089,WORD_NOUN,,HIRAGANA,,,酒槽,さかぶね,,sakabune,kadź do sake,,,DUPLICATE 123166
 123090,WORD_NOUN,,HIRAGANA,,,来場者,らいじょうしゃ,,raijousha,???,,,
 123091,WORD_NOUN,,HIRAGANA,,,作り字,つくりじ,,tsukuriji,"rodziny japoński kanji (szczególnie używane podczas okresu Edo, archaizm)
 stworzony kanji
 chiński znak swojej własnej twórczości
 tworzenie znaków z grupą osób",,,
 123092,WORD_NOUN,,HIRAGANA,,,作字,さくじ,,sakuji,"projektowanie czcionki
-tworzenie nowego znaku obecnie niedostępnego",,,
+tworzenie nowego znaku obecnie niedostępnego",,,DUPLICATE 123167
 123093,WORD_NOUN,,HIRAGANA,,,炭酸水,たんさんすい,,tansansui,woda kwasowęglowa,,,
-123094,WORD_PRONOUN,,HIRAGANA,,,あなた達,あなたたち,,anatatachi,wy,,,
+123094,WORD_NOUN,,HIRAGANA,,,宇宙旅行,うちゅうりょこう,,uchuu ryokou,"podróż kosmiczna
+turystyka kosmiczna",,,
 123095,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,心が広い,こころがひろい,,kokoro ga hiroi,"hojny
 wspaniałomyślny
@@ -51929,7 +51930,7 @@ karabin Gatlinga",,,
 niezliczony",,,
 123130,WORD_NOUN,,HIRAGANA,,,君子蘭,くんしらん,,kunshiran,kliwia,"rodzaj roślin z rodziny amarylkowatych, szczególnie clivia nobilis",,
 123131,WORD_NOUN,,HIRAGANA,,,枯れ山水,かれさんすい,,kare sansui,tradycyjny (chiński lub japoński) kamienny ogród,,,
-123132,WORD_NOUN,,HIRAGANA,,,枯山水,こせんすい,,kosensui,tradycyjny (chiński lub japoński) kamienny ogród,mało znane słowo,,
+123132,WORD_NOUN,,HIRAGANA,,,枯山水,こせんすい,,kosensui,tradycyjny (chiński lub japoński) kamienny ogród,mało znane słowo,,DUPLICATE 123186
 123133,WORD_NOUN,,HIRAGANA,,,転入届,てんにゅうとどけ,,tennyuutodoke,???,,,
 123134,WORD_NOUN,,HIRAGANA,,,転換社債,てんかんしゃさい,,tenkan shasai,obligacja zamienna,,,
 123135,WORD_NOUN,,HIRAGANA,,,二粒,ふたつぶ,,futatsubu,"dwa ziarna
@@ -51941,9 +51942,9 @@ dwie kropelki",,,
 WORD_EXPRESSION",,HIRAGANA,,,区別がつく,くべつがつく,,kubetsu ga tsuku,"powiedzieć X od Y
 wiedzieć (rzecz) od (kogoś)",,,
 123139,WORD_NOUN,,HIRAGANA,,,粗塩,あらじお,,arajio,"sól gruboziarnista
-nierafinowana sól",,,
+nierafinowana sól",,,DUPLICATE 123188
 123140,WORD_NOUN,,HIRAGANA,,,荒潮,あらしお,,arashio,"gwałtowny przypływ
-gwałtowny pływowy prąd",,,
+gwałtowny pływowy prąd",,,EDICT_DUPLICATE 123192
 123141,WORD_NOUN,,HIRAGANA,,,代母,だいぼ,,daibo,matka chrzestna,,,
 123142,WORD_NOUN,,KATAKANA,,,-,ゴス,,gosu,subkultura gotycka,,,
 123143,WORD_NOUN,,HIRAGANA,,,雍菜,ようさい,,yousai,"wilec wodny
@@ -51983,3 +51984,99 @@ południowy wieloryb właściwy karłowaty","wieloryb biskajski karłowaty – s
 karczoch ostowy
 kard","gatunek roślin z rodziny astrowatych, cynara cardunculus, ang: cardoon",,
 123159,WORD_NOUN,,KATAKANA,,,-,サケツバタケ,,saketsu batake,pierścieniak uprawny,"gatunek grzyba z rodziny pierścieniakowatych, stropharia rugosoannulata",,
+123160,WORD_NOUN,,KATAKANA,,,-,エア・モザイク,,ea mozaiku,???,ang: Air Mosaic,,
+123161,WORD_NOUN,,KATAKANA,,,-,モザイク・ビュー,,mozaiku byuu,mozaikowy widok,ang: Mosaic View,,
+123162,WORD_NOUN,,KATAKANA,,,-,ダイニング・ルーム,,dainingu ruumu,"jadalnia
+sala restauracyjna",ang: dining room,,
+123163,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,手が無い,てがない,,te ga nai,"nie mieć wystarczająco dużo pracowników
+cierpienie na niedobór personelu
+nie mieć rąk do pracy
+nie mieć możliwości",,,
+123164,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,あかの他人,あかのたにん,,aka no tanin,"zupełnie obcy
+całkowicie obcy człowiek",,,
+123165,WORD_NOUN,,HIRAGANA,,,大日本帝國憲法,だいにっぽんていこくけんぽう,,dainippon teikoku kenpou,Konstytucja Meiji,Konstytucja Cesarstwa Japonii,,
+123166,WORD_NOUN,,HIRAGANA,,,酒槽,しゅそう,,shusou,kadź do sake,,,DUPLICATE 123089
+123167,WORD_NOUN,,HIRAGANA,,,作字,つくりじ,,tsukuriji,"rodziny japoński kanji (szczególnie używane podczas okresu Edo, archaizm)
+stworzony kanji
+chiński znak swojej własnej twórczości
+tworzenie znaków z grupą osób",,,DUPLICATE 123092
+123168,WORD_NOUN,,HIRAGANA,,,削字,さくじ,,sakuji,"projektowanie czcionki
+tworzenie nowego znaku obecnie niedostępnego",,,
+123169,WORD_PRONOUN,,HIRAGANA,,,貴方達,あなたたち,,anata tachi,wy,,,
+123170,WORD_PRONOUN,,HIRAGANA,,,貴方たち,あなたたち,,anata tachi,wy,,,
+123171,WORD_PRONOUN,,HIRAGANA,,,貴女達,あなたたち,,anata tachi,wy,,,
+123172,WORD_PRONOUN,,HIRAGANA,,,貴女たち,あなたたち,,anata tachi,wy,,,
+123173,WORD_NOUN,,HIRAGANA,,,体軀,たいく,,taiku,"ciało
+postura osoby
+budowa ciała
+konstrukcja ciała",,,
+123174,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,切線,せっせん,,sessen,linia styczna,,,
+123175,WORD_NOUN,,HIRAGANA,,,かませ犬,かませいぬ,,kamase inu,???,,,
+123176,WORD_NOUN,,HIRAGANA,,,捨駒,すてごま,,sute goma,"ofiarny pionek
+poświęcony pionek",w shogi,,
+123177,WORD_ADJECTIVE_NO,,HIRAGANA,,,太りぎみ,ふとりぎみ,,futori gimi,"pulchny
+puszysty
+nieco nadwagi",,,
+123178,WORD_NOUN,,HIRAGANA,,,ご三卿,ごさんきょう,,gosankyou,trzy poboczne gałęzie rodziny Tokugawa,"Tayasu, Shimizu i Hitotsubashi",,
+123179,WORD_NOUN,,HIRAGANA,,,尊皇攘夷,そんのうじょうい,,sonnou joui,XIX wieczne hasło opowiadające się za cesarzem i wydaleniem (barbarzyńskich) cudzoziemców,,,
+123180,WORD_NOUN,,HIRAGANA,,,尊王攘夷,そんのうじょうい,,sonnou joui,XIX wieczne hasło opowiadające się za cesarzem i wydaleniem (barbarzyńskich) cudzoziemców,,,
+123181,WORD_NOUN,,HIRAGANA,,,重箱読,じゅうばこよみ,,juuba koyomi,pomieszanie czytanie on-kun,,,
+123182,WORD_NOUN,,HIRAGANA,,,言々,げんげん,,gengen,każde słowo,,,
+123183,WORD_NOUN,,KATAKANA,,,-,アンズタケ,,anzutake,pieprznik jadalny,"gatunek grzybów z rodziny pieprznikowatych, cantharellus cibarius",,
+123184,WORD_NOUN,,HIRAGANA,,,先物取り引き,さきものとりひき,,sakimono torihiki,transakcje terminowe,,,
+123185,WORD_ADJECTIVE_I,,HIRAGANA,,,数かぎりない,かずかぎりない,,kazukagirinai,"niepoliczalny
+niezliczony",,,
+123186,WORD_NOUN,,HIRAGANA,,,枯山水,かれさんすい,,kare sansui,tradycyjny (chiński lub japoński) kamienny ogród,,,DUPLICATE 123132
+123187,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,区別が付く,くべつがつく,,kubetsu ga tsuku,"powiedzieć X od Y
+wiedzieć (rzecz) od (kogoś)",,,
+123188,WORD_NOUN,,HIRAGANA,,,粗塩,あらしお,,arashio,"sól gruboziarnista
+nierafinowana sól",,,DUPLICATE 123139
+123189,WORD_NOUN,,HIRAGANA,,,あら塩,あらじお,,arajio,"sól gruboziarnista
+nierafinowana sól",,,DUPLICATE 123190
+123190,WORD_NOUN,,HIRAGANA,,,あら塩,あらしお,,arashio,"sól gruboziarnista
+nierafinowana sól",,,DUPLICATE 123189
+123191,WORD_NOUN,,HIRAGANA,,,荒塩,あらじお,,arajio,"sól gruboziarnista
+nierafinowana sól",,,"DUPLICATE 123192
+DUPLICATE 123193"
+123192,WORD_NOUN,,HIRAGANA,,,荒塩,あらしお,,arashio,"sól gruboziarnista
+nierafinowana sól",,,"DUPLICATE 123191
+DUPLICATE 123193
+EDICT_DUPLICATE 123140"
+123193,WORD_NOUN,,HIRAGANA,,,荒塩,あらしお,,arashio,"gwałtowny przypływ
+gwałtowny pływowy prąd",,,"DUPLICATE 123191
+DUPLICATE 123192"
+123194,WORD_NOUN,,KATAKANA,,,-,ヨウサイ,,yousai,"wilec wodny
+szpinak wodny
+powój wodny
+chiński powój","gatunek rośliny z rodziny powojowatych, ipomoea aquatica",,
+123195,WORD_NOUN,,HIRAGANA,,,空心菜,くうしんさい,,kuushinsai,"wilec wodny
+szpinak wodny
+powój wodny
+chiński powój","gatunek rośliny z rodziny powojowatych, ipomoea aquatica",,
+123196,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クウシンサイ,,kuushinsai,"wilec wodny
+szpinak wodny
+powój wodny
+chiński powój","gatunek rośliny z rodziny powojowatych, ipomoea aquatica",,
+123197,WORD_NOUN,,KATAKANA,,,-,ソウメンカボチャ,,soumen kabocha,dynia makaronowa,odmiana dyni zwyczajnej należąca do rodziny dyniowatych,,
+123198,WORD_NOUN,,HIRAGANA,,,錦糸瓜,きんしうり,,kinshiuri,dynia makaronowa,odmiana dyni zwyczajnej należąca do rodziny dyniowatych,,
+123199,WORD_NOUN,,KATAKANA,,,-,キンシウリ,,kinshiuri,dynia makaronowa,odmiana dyni zwyczajnej należąca do rodziny dyniowatych,,
+123200,WORD_NOUN,,KATAKANA,,,-,ウエルカムドリンク,,uerukamu dorinku,drink powitalny,ang: welcome drink,,
+123201,WORD_NOUN,,KATAKANA,,,-,ウェルカム・ドリンク,,werukamu dorinku,drink powitalny,ang: welcome drink,,
+123202,WORD_NOUN,,KATAKANA,,,-,ウエルカム・ドリンク,,uerukamu dorinku,drink powitalny,ang: welcome drink,,
+123203,WORD_NOUN,,KATAKANA,,,-,キダチハッカ,,kidachi hakka,"cząber ogrodowy
+satureja","gatunek rośliny z rodziny jasnotowatych, satureja hortensis",,
+123204,WORD_NOUN,,KATAKANA,,,-,ケイパー,,keipaa,"kapary cierniste
+kapar ciernisty","gatunek roślin należący do rodziny kaparowatych, capparis spinosa, ang: caper",,
+123205,WORD_NOUN,,KATAKANA,,,-,ケーパー,,keepaa,"kapary cierniste
+kapar ciernisty","gatunek roślin należący do rodziny kaparowatych, capparis spinosa, ang: caper",,
+123206,WORD_NOUN,,KATAKANA,,,-,コセミクジラ,,kose mikujira,"walenik mały
+wieloryb mały
+wal karłowaty
+południowy wieloryb właściwy karłowaty","wieloryb biskajski karłowaty – słabo poznany gatunek ssaka z podrzędu fiszbinowców, caperea marginata",,
+123207,WORD_NOUN,,KATAKANA,,,-,アーティーチョーク,,aatiichooku,karczoch zwyczajny,"gatunek wieloletniej rośliny zielnej należący do rodziny astrowatych, cynara scolymus",,
+123208,WORD_NOUN,,KATAKANA,,,-,アーチチョーク,,aachichooku,karczoch zwyczajny,"gatunek wieloletniej rośliny zielnej należący do rodziny astrowatych, cynara scolymus",,
+123209,WORD_NOUN,,KATAKANA,,,-,アーティチョウク,,aatichouku,karczoch zwyczajny,"gatunek wieloletniej rośliny zielnej należący do rodziny astrowatych, cynara scolymus",,
