@@ -52410,14 +52410,17 @@ rudobrunatny (skrót)
 WORD_ADJECTIVE_NO",,HIRAGANA,,,山内,さんない,,sannai,"w górach
 na terenie świątyni",,,
 123354,WORD_NOUN,,HIRAGANA,,,山元派,やまもとは,,yamamoto ha,"sekta Yamamoto (Shin Buddyzm)
-sekta Sangen",,,
+sekta Sangen",,,DUPLICATE 123456
 123355,WORD_NOUN,,HIRAGANA,,,大頭,おおがしら,,oogashira,"lider (ogromnej) grupy
 duża ozdobna czarny pompon wykonany z ogona (np. końskiego) lub barwionych konopi
 drzymy (rodzina ptaków z rzędu dzięciołowych, bucconidae)
-pierwsze makushita rikishi słuchane na banzuke (sumo)",,,
-123356,WORD_NOUN,,HIRAGANA,,,大頭,だいがしら,,daigashira,szkoła tańca kowakamai założona przez Yamamoto Sirozaemon,,,
+pierwsze makushita rikishi słuchane na banzuke (sumo)",,,"DUPLICATE 123356
+DUPLICATE 123357"
+123356,WORD_NOUN,,HIRAGANA,,,大頭,だいがしら,,daigashira,szkoła tańca kowakamai założona przez Yamamoto Sirozaemon,,,"DUPLICATE 123355
+DUPLICATE 123357"
 123357,WORD_NOUN,,HIRAGANA,,,大頭,おおあたま,,ooatama,"ogromna głowa
-człowiek z ogromną głową",,,
+człowiek z ogromną głową",,,"DUPLICATE 123355
+DUPLICATE 123356"
 123358,WORD_NOUN,,HIRAGANA,,,迷い箸,まよいばし,,mayoibashi,"unoszenie swoich pałeczek i poruszanie nimi nad daniami nie mogąc zdecydować się, które danie spróbować",naruszenie etykiety,,
 123359,WORD_EXPRESSION,,HIRAGANA,,,-,からいうと,,karaiuto,z punktu widzenia,,,
 123360,WORD_NOUN,,HIRAGANA,,,湯桶,ゆとう,,yutou,drewniany pojemnik zazwyczaj lakierowany w japońskim stylu i służący do podawania gorących napojów,,,
@@ -52438,7 +52441,7 @@ dający się czytać",,,
 123369,WORD_NOUN,,KATAKANA,,,-,ナムル,,namuru,namul,koreańska potrawa,,
 123370,WORD_CONJUNCTION,,HIRAGANA,,,-,とあれば,,to areba,"jeśli tak jest
 jeśli w przypadku, że",,,
-123371,WORD_NOUN,,HIRAGANA,,,品揃え,しなぞろえ,,shinazoroe,"asortyment
+123371,WORD_NOUN,,HIRAGANA,,,品揃え,しなぞろえ,,shina zoroe,"asortyment
 wybór produktów
 linia produktów",,,
 123372,WORD_NOUN,,HIRAGANA,,,寮則,りょうそく,,ryousoku,"przepisy ds. akademika
@@ -52526,7 +52529,7 @@ zgodny
 kompatybilny",skrót,,
 123409,WORD_NOUN,,HIRAGANA,,,深鉢,ふかばち,,fukabachi,głębokie (gliniane) naczynie,,,
 123410,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,痩せすぎ,やせすぎ,,yasesugi,"zbyt chudy
+WORD_ADJECTIVE_NO",,HIRAGANA,,,痩せすぎ,やせすぎ,,yase sugi,"zbyt chudy
 niedowaga",,,
 123411,WORD_NOUN,,KATAKANA_HIRAGANA,,,ネコ科,ネコか,,neko ka,kotowate,rodzina obejmujący koty,,
 123412,WORD_NOUN,,KATAKANA,,,-,イントランス,,intoransu,wejście,ang: entrance,,
@@ -52545,7 +52548,7 @@ zdolny do zachowania tajemnicy",,,
 123419,WORD_NOUN,,KATAKANA,,,-,ロゴセラピー,,rogoserapii,logoterapia,ang: logotherapy,,
 123420,WORD_NOUN,,HIRAGANA,,,駄馬,だば,,daba,"koń juczny
 wół roboczy
-???",,,
+???",,,DUPLICATE 123481
 123421,WORD_ADJECTIVE_NO,,HIRAGANA,,,二値,にち,,nichi,"binarny
 dwuwartościowy",,,
 123422,WORD_ADVERB_TO,,HIRAGANA,,,-,じゅるり,,jururi,dźwięk siorbania nadmiaru śliny,np. jako efekt pobudzenia pragnieniem jedzenia,,
@@ -52611,10 +52614,84 @@ niskobudżetowy",,,
 123451,WORD_NOUN,,HIRAGANA,,,波波迦,ははか,,hahaka,czeremcha Graya,"roślina, prunus grayana, archaizm",,
 123452,WORD_NOUN,,HIRAGANA,,,金剛桜,こんごうざくら,,kongouzakura,czeremcha Graya,"roślina, prunus grayana, mało znane słowo",,
 123453,WORD_NOUN,,HIRAGANA,,,樺桜,かにわざくら,,kaniwazakura,"???
-czeremcha Graya (roślina, prunus grayana, archaizm)",,,
+czeremcha Graya (roślina, prunus grayana, archaizm)",,,DUPLICATE 123454
 123454,WORD_NOUN,,HIRAGANA,,,樺桜,かばざくら,,kabazakura,"???
-czeremcha Graya (roślina, prunus grayana, archaizm)",,,
+czeremcha Graya (roślina, prunus grayana, archaizm)",,,DUPLICATE 123453
 123455,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,生焼け,なまやけ,,namayake,"na pół upieczone
 krwisty
 niedosmażony",,,
+123456,WORD_NOUN,,HIRAGANA,,,山元派,さんげんは,,sangenha,"sekta Yamamoto (Shin Buddyzm)
+sekta Sangen",,,DUPLICATE 123354
+123457,WORD_NOUN,,HIRAGANA,,,巨頭,おおあたま,,ooatama,"ogromna głowa
+człowiek z ogromną głową",,,
+123458,WORD_EXPRESSION,,HIRAGANA,,,-,からいって,,karaitte,z punktu widzenia,,,
+123459,WORD_EXPRESSION,,HIRAGANA,,,-,からいえば,,karaieba,z punktu widzenia,,,
+123460,WORD_CONJUNCTION,,HIRAGANA,,,-,とあらば,,toaraba,"jeśli tak jest
+jeśli w przypadku, że",,,
+123461,WORD_NOUN,,HIRAGANA,,,品ぞろえ,しなぞろえ,,shina zoroe,"asortyment
+wybór produktów
+linia produktów",,,
+123462,"WORD_EXPRESSION
+WORD_ADJECTIVE_NO",,HIRAGANA,,,万にひとつ,まんにひとつ,,man ni hitotsu,"jedna na milion (np. szansa)
+jeden na dziesięć tysięcy
+bardzo mało prawdopodobne, że",,,
+123463,WORD_NOUN,,KATAKANA,,,-,ライチー,,raichii,nephelium litchi,gatunek liczi (owocu),,
+123464,WORD_NOUN,,KATAKANA,,,-,リダイヤル,,ridaiyaru,"powtórny wybór numeru
+powtórne wybranie numeru",ang: redial,,
+123465,WORD_VERB_RU,,HIRAGANA,,,聞きおぼえる,ききおぼえる,,kiki oboeru,"być znajomy
+być znany
+uczyć się przez ucho
+poznać wiedzę
+nauczyć się",,,
+123466,WORD_NOUN,,HIRAGANA,,,替地,かえち,,kaechi,"zastępcza ziemia
+substytucja gruntów
+wymiana gruntów",,,
+123467,WORD_NOUN,,HIRAGANA,,,かえ地,かえち,,kaechi,"zastępcza ziemia
+substytucja gruntów
+wymiana gruntów",,,
+123468,WORD_NOUN,,KATAKANA,,,-,テカリ,,tekari,"połysk
+świecenie
+refleks
+odblask",,,
+123469,WORD_NOUN,,HIRAGANA,,,鶍,いすか,,isuka,krzyżodziób świerkowy,"gatunek małego ptaka z rodziny łuszczakowatych, loxia curvirostra",,
+123470,WORD_NOUN,,KATAKANA,,,-,イスカ,,isuka,krzyżodziób świerkowy,"gatunek małego ptaka z rodziny łuszczakowatych, loxia curvirostra",,
+123471,WORD_NOUN,,KATAKANA,,,-,イエカ,,ieka,culex pipiens,gatunek komara,,
+123472,WORD_VERB_U,,HIRAGANA,,,引き千切る,ひきちぎる,,hiki chigiru,"zdzierać
+zedrzeć",,,
+123473,WORD_NOUN,,HIRAGANA_KATAKANA,,,野バラ,のバラ,,nobara,"dzika róża
+róża wielokwiatowa (gatunek krzewu z rodziny różowatych, rosa multiflora)",,,
+123474,WORD_NOUN,,HIRAGANA,,,野薔薇,のばら,,nobara,"dzika róża
+róża wielokwiatowa (gatunek krzewu z rodziny różowatych, rosa multiflora)",,,
+123475,WORD_NOUN,,KATAKANA,,,-,ノバラ,,nobara,"dzika róża
+róża wielokwiatowa (gatunek krzewu z rodziny różowatych, rosa multiflora)",,,
+123476,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,痩せ過ぎ,やせすぎ,,yase sugi,"zbyt chudy
+niedowaga",,,
+123477,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,やせ過ぎ,やせすぎ,,yase sugi,"zbyt chudy
+niedowaga",,,
+123478,WORD_NOUN,,HIRAGANA,,,猫科,ねこか,,neko ka,kotowate,rodzina obejmujący koty,,
+123479,WORD_NOUN,,HIRAGANA,,,糸屑,いとくず,,ito kuzu,???,,,
+123480,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,口がかたい,くちがかたい,,kuchi ga katai,"nie chcący nic powiedzieć
+z wodą w ustach
+zdolny do zachowania tajemnicy",,,
+123481,WORD_NOUN,,HIRAGANA,,,駄馬,だうま,,dauma,"koń juczny
+wół roboczy
+???",,,DUPLICATE 123420
+123482,WORD_NOUN,,HIRAGANA,,,炊き合せ,たきあわせ,,taki awase,"jedzenie (np. mięso, ryba, warzywa) gotowane oddzielnie, ale serwowane razem na jednym półmisku",,,
+123483,WORD_NOUN,,HIRAGANA,,,炊合わせ,たきあわせ,,taki awase,"jedzenie (np. mięso, ryba, warzywa) gotowane oddzielnie, ale serwowane razem na jednym półmisku",,,
+123484,WORD_ADJECTIVE_NA,,HIRAGANA,,,妙竹林,みょうちくりん,,myouchikurin,"dziwny
+dziwaczny",slang,,
+123485,WORD_NOUN,,KATAKANA,,,-,ブースター,,buusutaa,silnik startowy rakiety,ang: booster,,
+123486,WORD_NOUN,,HIRAGANA,,,提灯持,ちょうちんもち,,chouchin mochi,"???
+pochlebca
+lizus",,,
+123487,WORD_NOUN,,HIRAGANA,,,補助いす,ほじょいす,,hojoisu,"fotelik dziecięcy
+siedzenie dla dziecka",,,
+123488,WORD_NOUN,,HIRAGANA,,,波々迦,ははか,,hahaka,czeremcha Graya,"roślina, prunus grayana, archaizm",,
+123489,WORD_NOUN,,HIRAGANA,,,蒲桜,かにわざくら,,kaniwazakura,"???
+czeremcha Graya (roślina, prunus grayana, archaizm)",,,DUPLICATE 123490
+123490,WORD_NOUN,,HIRAGANA,,,蒲桜,かばざくら,,kabazakura,"???
+czeremcha Graya (roślina, prunus grayana, archaizm)",,,DUPLICATE 123489
