@@ -55758,7 +55758,7 @@ pełen animuszu
 pełen werwy",,,
 124855,"WORD_ADVERB
 WORD_ADVERB_TO
-WORD_NOUN",,HIRAGANA,,,-,しゃんしゃん,,shanshan,"dzwoniący
+WORD_NOUN",,HIRAGANA,,,-,しゃんしゃん,,shan shan,"dzwoniący
 brzęczący
 odgłos wielu ludzi razem klaszczących
 zdrowy
@@ -55791,7 +55791,7 @@ sympatyczny",,,
 124863,WORD_NOUN,,HIRAGANA,,,急接近,きゅうせっきん,,kyuusekkin,"szybkie zbliżanie się
 szybka zażyłość
 szybka bliskość",,,
-124864,WORD_NOUN,,HIRAGANA,,,鋸草,のこぎりそう,,nokogirisou,"achillea alpina
+124864,WORD_NOUN,,HIRAGANA,,,鋸草,のこぎりそう,,nokogi risou,"achillea alpina
 achillea sibirica",roślina,,
 124865,WORD_NOUN,,HIRAGANA,,,蛇の鬚,じゃのひげ,,ja no hige,konwalnik japoński,"roślina, ophiopogon japonicus",,
 124866,WORD_NOUN,,HIRAGANA,,,幸水,こうすい,,kousui,"grusza chińska
@@ -55811,7 +55811,7 @@ narzekać (ciągle) na coś",,,
 piosenka i taniec",,,
 124873,WORD_NOUN,,HIRAGANA,,,新石器時代,しんせっきじだい,,shinsekki jidai,"neolit
 neolityczny",,,
-124874,WORD_NOUN,,KATAKANA,,,-,ルブロンオオツチグモ,,ruburon' ootsuchigumo,"ptasznik goliat
+124874,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ルブロンオオツチグモ,,ruburon' ootsuchigumo,"ptasznik goliat
 ptasznik gigant","największy dotąd odkryty ptasznik, theraphosa blondi",,
 124875,WORD_NOUN,,KATAKANA,,,-,ゴライアスバードイーター,,goraiasu baadoiitaa,"ptasznik goliat
 ptasznik gigant","największy dotąd odkryty ptasznik, theraphosa blondi",,
@@ -55854,7 +55854,7 @@ szczere przeprosiny",,,
 124895,WORD_NOUN,,HIRAGANA,,,親炙,しんしゃ,,shinsha,wchodzenie w bliski kontakt i bycie pod wpływem tej osoby,,,
 124896,WORD_NOUN,,HIRAGANA,,,辰砂,しんしゃ,,shinsha,"cynober (minerał)
 cynabaryt (minerał)
-lakier cynobrowy",,,
+lakier cynobrowy",,,DUPLICATE 124978
 124897,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,本気を出す,ほんきをだす,,honki o dasu,zrobić wielki wysiłek,,,
 124898,WORD_NOUN,,HIRAGANA,,,亀の子たわし,かめのこたわし,,kame no kotawashi,szczotka do szorowania w kształcie żółwia,,,
@@ -55887,13 +55887,13 @@ jednogarbny wielbłąd",,,
 ponura osoba",,,
 124914,WORD_NOUN,,HIRAGANA,,,呑吐,どんと,,donto,"picie i wymiotowanie
 przybycie i odjazd
-nadejście i odejście",,,
+nadejście i odejście",,,DUPLICATE 124915
 124915,WORD_ADVERB,,HIRAGANA,,,-,どんと,,donto,"energicznie
 z wigorem
 z całą swoją siłą
 dużo
 mnóstwo
-wiele",,,
+wiele",,,DUPLICATE 124914
 124916,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,上を向く,うえをむく,,ue o muku,patrzyć w górę,,,
 124917,"WORD_VERB_U
@@ -55942,7 +55942,7 @@ sprawa Richardsona","napaść samurajów na obcokrajowców, do której doszło w
 WORD_ADJECTIVE_NA",,HIRAGANA,,,度なし,どなし,,donashi,bez optycznej korekcji,"np. okularów, szkieł kontaktowych i etc",,
 124937,WORD_NOUN,,HIRAGANA,,,身丈,みたけ,,mitake,długość ubrania,,,
 124938,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,計算ずく,けいさんずく,,keisanzuku,"wyrachowany
+WORD_ADJECTIVE_NO",,HIRAGANA,,,計算ずく,けいさんずく,,keisan zuku,"wyrachowany
 wykonany z premedytacją
 rozmyślny
 dokonany z premedytacją",,,
@@ -55985,11 +55985,11 @@ occella iburia (ryba)",,,
 pochlebstwo (uprzejmie)
 służba
 gościnność
-rachunek (w restauracji, dawniej, nie używane przez klientów)",,,
+rachunek (w restauracji, dawniej, nie używane przez klientów)",,,DUPLICATE 125008
 124957,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,意地張る,いじばる,,ijibaru,"być uparty
+WORD_EXPRESSION",,HIRAGANA,,,意地張る,いじばる,,iji baru,"być uparty
 być zawzięty
-nie poddawać się",,,
+nie poddawać się",,,DUPLICATE 125011
 124958,WORD_NOUN,,HIRAGANA,,,御茶子,おちゃこ,,ochako,???,,,
 124959,WORD_NOUN,,KATAKANA,,,-,ガザニア,,gazania,gazania,rodzaj roślin należący do rodziny astrowatych,,
 124960,WORD_NOUN,,KATAKANA_HIRAGANA,,,イグノーベル賞,イグノーベルしょう,,igu nooberu shou,"Nagrody Ig Nobla
@@ -55997,3 +55997,174 @@ Antynobel",humorystyczne odpowiedniki Nagród Nobla za prace naukowe,,
 124961,WORD_NOUN,,HIRAGANA,,,感嘆文,かんたんぶん,,kantanbun,"zdanie wykrzyknikowe
 wykrzyknienie",,,
 124962,WORD_NOUN,,HIRAGANA_KATAKANA,,,抗ヒスタミン剤,こうヒスタミンざい,,kou hisutamin zai,antyhistamina,,,
+124963,WORD_NOUN,,HIRAGANA,,,焼飯,やきめし,,yakimeshi,smażony ryż,,,
+124964,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,KATAKANA,,,-,ピンシャン,,pinshan,"aktywny pomimo podeszłego wieku
+w świetnej formie
+pełen animuszu
+pełen werwy",,,
+124965,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,-,びんしゃん,,binshan,"aktywny pomimo podeszłego wieku
+w świetnej formie
+pełen animuszu
+pełen werwy",,,
+124966,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,KATAKANA,,,-,シャンシャン,,shan shan,"dzwoniący
+brzęczący
+odgłos wielu ludzi razem klaszczących
+zdrowy
+aktywny
+w świetnej formie
+???
+gotowanie wody (archaizm)",,,
+124967,WORD_VERB_RU,,HIRAGANA,,,はい出る,はいでる,,hai deru,"wyskakiwać z
+wyłazić z
+wypełzać z",,,
+124968,WORD_NOUN,,KATAKANA,,,-,ノコギリソウ,,nokogi risou,"achillea alpina
+achillea sibirica",roślina,,
+124969,WORD_NOUN,,KATAKANA,,,-,ジャノヒゲ,,ja no hige,konwalnik japoński,"roślina, ophiopogon japonicus",,
+124970,WORD_VERB_U,,HIRAGANA,,,炙り出す,あぶりだす,,aburi dasu,"odsłonić
+odsłaniać
+odkrywać
+wydobyć na światło dzienne",,,
+124971,WORD_VERB_U,,HIRAGANA,,,焙り出す,あぶりだす,,aburi dasu,"odsłonić
+odsłaniać
+odkrywać
+wydobyć na światło dzienne",,,
+124972,WORD_NOUN,,KATAKANA,,,-,トレード・ショウ,,toreedo shou,targi,ang: trade show,,
+124973,WORD_NOUN,,KATAKANA,,,-,グチグチ,,guchi guchi,"mamrotać
+bełkotać
+narzekać (ciągle) na coś",,,
+124974,WORD_NOUN,,KATAKANA,,,-,ゴライアス・バード・イーター,,goraiasu baadoiitaa,"ptasznik goliat
+ptasznik gigant","największy dotąd odkryty ptasznik, theraphosa blondi",,
+124975,WORD_NOUN,,HIRAGANA,,,合口,あいくち,,aikuchi,"kumpel
+koleś
+sztylet
+???",,,
+124976,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,ゴホゴホ,,goho goho,"kaszlenie
+suchy kaszel",,,
+124977,WORD_NOUN,,HIRAGANA_KATAKANA,,,四路スイッチ,よんろスイッチ,,yonro suicchi,???,,,
+124978,WORD_NOUN,,HIRAGANA,,,辰砂,しんさ,,shinsa,"cynober (minerał)
+cynabaryt (minerał)
+lakier cynobrowy",,,DUPLICATE 124896
+124979,WORD_NOUN,,HIRAGANA,,,辰沙,しんしゃ,,shinsha,"cynober (minerał)
+cynabaryt (minerał)
+lakier cynobrowy",,,
+124980,WORD_NOUN,,HIRAGANA,,,亀の子束子,かめのこたわし,,kame no kotawashi,szczotka do szorowania w kształcie żółwia,,,
+124981,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,元の鞘に納まる,もとのさやにおさまる,,moto no saya ni osamaru,"zakopać topór wojenny
+pogodzić się
+być pogodzony",,,
+124982,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,元のさやに収まる,もとのさやにおさまる,,moto no saya ni osamaru,"zakopać topór wojenny
+pogodzić się
+być pogodzony",,,
+124983,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,元のさやに納まる,もとのさやにおさまる,,moto no saya ni osamaru,"zakopać topór wojenny
+pogodzić się
+być pogodzony",,,
+124984,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,もとの鞘に収まる,もとのさやにおさまる,,moto no saya ni osamaru,"zakopać topór wojenny
+pogodzić się
+być pogodzony",,,
+124985,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,もとのさやに収まる,もとのさやにおさまる,,moto no saya ni osamaru,"zakopać topór wojenny
+pogodzić się
+być pogodzony",,,
+124986,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,もとの鞘に納まる,もとのさやにおさまる,,moto no saya ni osamaru,"zakopać topór wojenny
+pogodzić się
+być pogodzony",,,
+124987,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,もとのさやに納まる,もとのさやにおさまる,,moto no saya ni osamaru,"zakopać topór wojenny
+pogodzić się
+być pogodzony",,,
+124988,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,アニヲタ,,aniwota,otaku anime,"slang, skrót",,
+124989,WORD_NOUN,,KATAKANA_HIRAGANA,,,-,アイドルおたく,,aidoru otaku,męski otaku mający obsesję na punkcie żeńskiej idolki,ang: idol otaku,,
+124990,WORD_NOUN,,KATAKANA,,,-,アイドル・オタク,,aidoru otaku,męski otaku mający obsesję na punkcie żeńskiej idolki,ang: idol otaku,,
+124991,WORD_NOUN,,KATAKANA,,,-,ホーム・センター,,hoomu sentaa,sklep z narzędziami,ang: home center,,
+124992,WORD_NOUN,,KATAKANA,,,-,ライオット・シールド,,raiotto shiirudo,tarcza używana w czasie tłumienia rozruchów,ang: riot shield,,
+124993,WORD_NOUN,,HIRAGANA,,,僮僕,どうぼく,,douboku,"młody służący
+giermek",,,
+124994,"WORD_EXPRESSION
+WORD_ADJECTIVE_NA",,HIRAGANA,,,度無し,どなし,,donashi,bez optycznej korekcji,"np. okularów, szkieł kontaktowych i etc",,
+124995,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,計算尽く,けいさんずく,,keisan zuku,"wyrachowany
+wykonany z premedytacją
+rozmyślny
+dokonany z premedytacją",,,DUPLICATE 124996
+124996,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,計算尽く,けいさんづく,,keisan duku,"wyrachowany
+wykonany z premedytacją
+rozmyślny
+dokonany z premedytacją",,,DUPLICATE 124995
+124997,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,計算づく,けいさんづく,,keisan duku,"wyrachowany
+wykonany z premedytacją
+rozmyślny
+dokonany z premedytacją",,,
+124998,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,計算尽,けいさんずく,,keisan zuku,"wyrachowany
+wykonany z premedytacją
+rozmyślny
+dokonany z premedytacją",,,DUPLICATE 124999
+124999,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,計算尽,けいさんづく,,keisan duku,"wyrachowany
+wykonany z premedytacją
+rozmyślny
+dokonany z premedytacją",,,DUPLICATE 124998
+125000,WORD_NOUN,,HIRAGANA,,,大とろ,おおとろ,,oo toro,tłuszcz pod brzuchem tuńczyka,uważany za wysokiej jakości,,
+125001,WORD_NOUN,,HIRAGANA,,,大海老,おおえび,,oo ebi,homar,,,
+125002,WORD_NOUN,,HIRAGANA,,,大蝦,おおえび,,oo ebi,homar,,,
+125003,"WORD_ADVERB_TO
+WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,-,ぐんなり,,gunnari,"apatyczny
+zmęczony
+ospały
+bez energii
+zwiotczały
+obwisły
+zmizernienie
+nie mieć kształtu",,,
+125004,WORD_VERB_U,,HIRAGANA,,,素っ転ぶ,すっころぶ,,sukkorobu,"dramatyczny upadek
+ponosić klęskę",,,
+125005,WORD_NOUN,,HIRAGANA,,,青あざ,あおあざ,,aoaza,"siniak
+stłuczenie",,,
+125006,WORD_NOUN,,KATAKANA,,,-,ハヌカー,,hanukaa,Chanuka,"doroczne święto żydowskie trwające osiem dni, począwszy od 25 dnia miesiąca kislew",,
+125007,WORD_NOUN,,KATAKANA,,,-,サブロウ,,saburou,"trzeci syn
+occella iburia (ryba)",,,
+125008,WORD_NOUN,,HIRAGANA,,,お愛想,おあいそう,,oaisou,"komplement (uprzejmie)
+pochlebstwo (uprzejmie)
+służba
+gościnność
+rachunek (w restauracji, dawniej, nie używane przez klientów)",,,DUPLICATE 124956
+125009,WORD_NOUN,,HIRAGANA,,,御愛想,おあいそ,,oaiso,"komplement (uprzejmie)
+pochlebstwo (uprzejmie)
+służba
+gościnność
+rachunek (w restauracji, dawniej, nie używane przez klientów)",,,DUPLICATE 125010
+125010,WORD_NOUN,,HIRAGANA,,,御愛想,おあいそう,,oaisou,"komplement (uprzejmie)
+pochlebstwo (uprzejmie)
+służba
+gościnność
+rachunek (w restauracji, dawniej, nie używane przez klientów)",,,DUPLICATE 125009
+125011,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,意地張る,いじはる,,iji haru,"być uparty
+być zawzięty
+nie poddawać się",,,DUPLICATE 124957
+125012,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,意地ばる,いじばる,,iji baru,"być uparty
+być zawzięty
+nie poddawać się",,,
+125013,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,意地はる,いじはる,,iji haru,"być uparty
+być zawzięty
+nie poddawać się",,,
+125014,WORD_NOUN,,HIRAGANA,,,うがい薬,うがいぐすり,,ugai gusuri,"płyn do płukania ust
+płyn do płukania jamy ustnej",,,
+125015,WORD_NOUN,,HIRAGANA,,,嗽薬,うがいぐすり,,ugai gusuri,"płyn do płukania ust
+płyn do płukania jamy ustnej",,,
