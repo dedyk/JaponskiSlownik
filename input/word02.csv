@@ -56964,12 +56964,12 @@ pole bitwy
 pole walki
 wojna",,,
 125391,WORD_NOUN,,HIRAGANA,,,望診,ぼうしん,,boushin,cztery badania w chińskiej medycynie,"widzenie, słyszenie, pytanie i dotykanie",,
-125392,WORD_NOUN,,HIRAGANA,,,蚕糞,こくそ,,kokuso,odchody larwy jedwabnika,,,
+125392,WORD_NOUN,,HIRAGANA,,,蚕糞,こくそ,,kokuso,odchody larwy jedwabnika,,,DUPLICATE 125438
 125393,WORD_NOUN,,HIRAGANA,,,衆寡,しゅうか,,shuuka,wiele i kilka,,,
 125394,WORD_NOUN,,HIRAGANA,,,調琴,ちょうきん,,choukin,granie na koto,,,
 125395,WORD_NOUN,,HIRAGANA,,,除霜,じょそう,,josou,"odmrażanie
 rozmrażanie",,,
-125396,WORD_NOUN,,HIRAGANA,,,町代,ちょうだい,,choudai,wspieranie urzędników miasta,w okresie Edo,,
+125396,WORD_NOUN,,HIRAGANA,,,町代,ちょうだい,,choudai,wspieranie urzędników miasta,w okresie Edo,,DUPLICATE 125439
 125397,WORD_NOUN,,HIRAGANA,,,同藩,どうはん,,douhan,ten sam klan,,,
 125398,WORD_NOUN,,HIRAGANA,,,転位,てんい,,ten'i,"przeniesienie
 przestawienie
@@ -56982,21 +56982,23 @@ osoba często odwiedzająca dzielnicę czerwonych latarni",,,
 125402,WORD_NOUN,,HIRAGANA,,,同道,どうどう,,doudou,"iść z
 towarzyszenie",,,
 125403,WORD_NOUN,,HIRAGANA,,,常座,じょうざ,,jouza,???,,,
-125404,WORD_NOUN,,HIRAGANA,,,お蔵,おくら,,okura,"odłożenie na półkę
-wstrzymanie
+125404,WORD_NOUN,,HIRAGANA,,,お蔵,おくら,,okura,"odkładanie
+odłożenie na półkę
+zaniechanie
 zamykanie
 anulowanie
-magazyn ryżu szogunatu z okresu Edo",,,
+magazyn ryżu szogunatu z okresu Edo",,,EDICT_DUPLICATE 46365
 125405,WORD_NOUN,,HIRAGANA,,,魔風,まかぜ,,makaze,"burza wywołana przez diabła
 zły wiatr
 diabelski wiatr
-upiorny wiatr",,,
-125406,WORD_NOUN,,HIRAGANA,,,溝鼠,どぶねずみ,,dobunezumi,"szczur wędrowny (gatunek gryzonia z rodziny myszowatych, rattus norvegicus)
+upiorny wiatr",,,DUPLICATE 125443
+125406,WORD_NOUN,,HIRAGANA,,,溝鼠,どぶねずみ,,dobu nezumi,"szczur wędrowny (gatunek gryzonia z rodziny myszowatych, rattus norvegicus)
 ciemnoszary
 tajemniczy złoczyńca",,,
 125407,"WORD_ADVERB_TO
 WORD_ADVERB",,HIRAGANA,,,-,かたり,,katari,"z trzaskiem
-brzęcząco",,,
+brzęcząco",,,"DUPLICATE 15674
+DUPLICATE 32116"
 125408,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,対戦相手,たいせんあいて,,taisen' aite,"przeciwnik
 oponent
@@ -57017,13 +57019,13 @@ przygotowanie",,,
 WORD_NOUN",,KATAKANA,,,-,イチャコラ,,ichakora,???,,,
 125416,WORD_NOUN,,HIRAGANA,,,怪聞,かいぶん,,kaibun,"dziwna plotka
 skandalizujące plotka",,,
-125417,WORD_NOUN,,HIRAGANA,,,天府,てんぷ,,tenpu,???,,,
+125417,WORD_NOUN,,HIRAGANA,,,天府,てんぷ,,tenpu,???,,,DUPLICATE 125418
 125418,WORD_NOUN,,HIRAGANA,,,天府,てんぷ,,tenpu,"balans
-kółko wahadłowe",w zegarku,,
+kółko wahadłowe",w zegarku,,DUPLICATE 125417
 125419,WORD_NOUN,,HIRAGANA,,,園地,えんち,,enchi,"park
 ogród",,,
 125420,WORD_EXPRESSION,,HIRAGANA,,,-,ません,,masen,sufiks używany do tworzenia przeczeń czasowników w czasie nieprzeszłym,uprzejmie,,
-125421,WORD_NOUN,,KATAKANA,,,-,ゴルフウイドー,,gorufu uidoo,???,ang: golf widow,,
+125421,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ゴルフウイドー,,gorufu uidoo,???,ang: golf widow,,
 125422,WORD_NOUN,,KATAKANA,,,-,デッドタイム,,deddo taimu,czas bezprądowy,"elektronika, ang: dead time",,
 125423,WORD_NOUN,,KATAKANA,,,-,エレクトロニックファイル,,erekutoronikku fairu,plik elektroniczny,ang: electronic file,,
 125424,WORD_NOUN,,KATAKANA,,,-,ワールドゲームズ,,waarudo geemuzu,World Games,"zwane również Igrzyskami Sportów Nieolimpijskich, to rozgrywana od 1981 międzynarodowa impreza, organizowana w rok po letnich igrzyskach olimpijskich przez International World Games Association (IWGA) pod patronatem Międzynarodowego Komitetu Olimpijskiego (MKOl)",,
@@ -57054,3 +57056,58 @@ nielogiczny",,,
 125436,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,恐悦至極,きょうえつしごく,,kyouetsu shigoku,"niezwykle zachwycony
 bardzo uszczęśliwiony",pokornie,,
+125437,WORD_NOUN,,HIRAGANA,,,吸烟,きゅうえん,,kyuuen,palenie papierosów,mało znane słowo,,
+125438,WORD_NOUN,,HIRAGANA,,,蚕糞,こぐそ,,koguso,odchody larwy jedwabnika,,,DUPLICATE 125392
+125439,WORD_NOUN,,HIRAGANA,,,町代,まちだい,,machidai,wspieranie urzędników miasta,w okresie Edo,,DUPLICATE 125396
+125440,WORD_NOUN,,HIRAGANA,,,お倉,おくら,,okura,"odkładanie
+odłożenie na półkę
+zaniechanie
+zamykanie
+anulowanie
+magazyn ryżu szogunatu z okresu Edo",,,EDICT_DUPLICATE 46365
+125441,WORD_NOUN,,HIRAGANA,,,御蔵,おくら,,okura,"odkładanie
+odłożenie na półkę
+zaniechanie
+zamykanie
+anulowanie
+magazyn ryżu szogunatu z okresu Edo",,,EDICT_DUPLICATE 46365
+125442,WORD_NOUN,,HIRAGANA,,,御倉,おくら,,okura,"odkładanie
+odłożenie na półkę
+zaniechanie
+zamykanie
+anulowanie
+magazyn ryżu szogunatu z okresu Edo",,,EDICT_DUPLICATE 46365
+125443,WORD_NOUN,,HIRAGANA,,,魔風,まふう,,mafuu,"burza wywołana przez diabła
+zły wiatr
+diabelski wiatr
+upiorny wiatr",,,DUPLICATE 125405
+125444,WORD_NOUN,,HIRAGANA,,,どぶ鼠,どぶねずみ,,dobu nezumi,"szczur wędrowny (gatunek gryzonia z rodziny myszowatych, rattus norvegicus)
+ciemnoszary
+tajemniczy złoczyńca",,,
+125445,WORD_NOUN,,KATAKANA,,,-,ドブネズミ,,dobu nezumi,"szczur wędrowny (gatunek gryzonia z rodziny myszowatych, rattus norvegicus)
+ciemnoszary
+tajemniczy złoczyńca",,,
+125446,"WORD_ADVERB_TO
+WORD_ADVERB",,HIRAGANA,,,-,かたん,,katan,"z trzaskiem
+brzęcząco",,,"DUPLICATE 10769
+DUPLICATE 30634"
+125447,"WORD_ADVERB_TO
+WORD_ADVERB",,KATAKANA,,,-,カタン,,katan,"z trzaskiem
+brzęcząco",,,
+125448,WORD_NOUN,,HIRAGANA,,,抱手,かかえて,,kakaete,"pracodawca (szczególnie gejszy, prostytutki i etc)
+mistrz
+kochanka",archaizm,,
+125449,"WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,-,いちゃこら,,ichakora,???,,,
+125450,WORD_NOUN,,HIRAGANA,,,苑地,えんち,,enchi,"park
+ogród",,,
+125451,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ゴルフ・ウイドー,,gorufu uidoo,???,ang: golf widow,,
+125452,WORD_NOUN,,KATAKANA,,,-,デッド・タイム,,deddo taimu,czas bezprądowy,"elektronika, ang: dead time",,
+125453,WORD_NOUN,,KATAKANA,,,-,エレクトロニック・ファイル,,erekutoronikku fairu,plik elektroniczny,ang: electronic file,,
+125454,WORD_NOUN,,KATAKANA,,,-,ワールド・ゲームズ,,waarudo geemuzu,World Games,"zwane również Igrzyskami Sportów Nieolimpijskich, to rozgrywana od 1981 międzynarodowa impreza, organizowana w rok po letnich igrzyskach olimpijskich przez International World Games Association (IWGA) pod patronatem Międzynarodowego Komitetu Olimpijskiego (MKOl)",,
+125455,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,辻褄が合わない,つじつまがあわない,,tsuji tsuma ga awanai,"niespójny
+nieskładny
+chaotyczny
+niezgodny
+nielogiczny",,,
