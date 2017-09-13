@@ -104,7 +104,7 @@ public class WordGenerator {
 				// cat input/common_word.csv | egrep -E -e "^[0-9]*,," | cut -d, -f1 | wc -l
 				// cat input/common_word.csv | head -6051 | egrep -E -e "^[0-9]*,," | cut -d, -f1 | shuf | head -25 | sort -n
 				
-				if (args.length != 2) {
+				if (args.length != 2 && args.length != 3) {
 					
 					System.err.println("Niepoprawna liczba argumentów");
 					
@@ -113,6 +113,13 @@ public class WordGenerator {
 				
 				// nazwa pliku z numerkami
 				String fileName = args[1];
+				
+				// czy sprawdzac w jisho.org
+				boolean checkInJishoOrg = true;
+				
+				if (args.length > 2) {
+					checkInJishoOrg = Boolean.parseBoolean(args[2]);
+				}
 				
 				// czytanie identyfikatorow common'owych slow
 				List<String> commonWordIds = readFile(fileName);
@@ -125,6 +132,22 @@ public class WordGenerator {
 				
 				// przygotowywane slownika jmedict
 				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				
+				System.out.println("Sprawdzanie w jisho.org: " + checkInJishoOrg);
+				
+				JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
+
+				Map<String, Boolean> jishoOrgConnectorWordCheckCache = new TreeMap<String, Boolean>();
+				
+				//
+				
+				File additionalWordtoCheckFile = new File("input/additional_word_to_check");
+				
+                LinkedHashSet<String> newAdditionalWordToCheckWordList = new LinkedHashSet<String>();
+				
+				newAdditionalWordToCheckWordList.addAll(readFile(additionalWordtoCheckFile.getAbsolutePath()));
+				
+				//
 				
 				List<PolishJapaneseEntry> newWordList = new ArrayList<PolishJapaneseEntry>();
 				
@@ -159,6 +182,18 @@ public class WordGenerator {
 							PolishJapaneseEntry polishJapaneseEntry = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, Integer.valueOf(currentCommonWordId), null).polishJapaneseEntry;
 											
 							newWordList.add(polishJapaneseEntry);
+							
+							//
+							
+							if (checkInJishoOrg == true && polishJapaneseEntry.isKanjiExists() == true) {
+								searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
+										"Szukanie w jisho.org (znaleziono kanji): " + polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKanji());
+								
+							} else if (checkInJishoOrg == true && polishJapaneseEntry.getKana() != null) {
+								searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
+										"Szukanie w jisho.org (znaleziono kana): " + polishJapaneseEntry.getKana(), polishJapaneseEntry.getKana());
+							}
+
 						}				
 						
 					} else {
@@ -174,6 +209,16 @@ public class WordGenerator {
 				
 				// zapis nowego pliku common
 				CsvReaderWriter.writeCommonWordFile(commonWordMap, "input/common_word-nowy.csv");
+				
+				// dodatkowa lista slow
+				
+				FileWriter additionalWordtoCheckFileWriter = new FileWriter(additionalWordtoCheckFile);
+				
+				for (String currentWord : newAdditionalWordToCheckWordList) {
+					additionalWordtoCheckFileWriter.write(currentWord + "\n");
+				}
+				
+				additionalWordtoCheckFileWriter.close();
 				
 				break;
 			}
@@ -316,7 +361,7 @@ public class WordGenerator {
 								
 								if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
 									
-									boolean existsInCommonWords = existsInCommonWords(commonWordMap, groupEntry.getKanji(), groupEntry.getKana());
+									boolean existsInCommonWords = existsInCommonWords(commonWordMap, groupEntry.getKanji(), groupEntry.getKana(), false);
 									
 									if (addOnlyWordsWhichDoesntExistInCommonFile == false || existsInCommonWords == false) {
 										
@@ -600,7 +645,7 @@ public class WordGenerator {
 							String groupEntryKanji = groupEntry.getKanji();
 							String groupEntryKana = groupEntry.getKana();
 							
-							boolean existsInCommonWords = existsInCommonWords(commonWordMap, groupEntryKanji, groupEntryKana);
+							boolean existsInCommonWords = existsInCommonWords(commonWordMap, groupEntryKanji, groupEntryKana, true);
 							
 							if (existsInCommonWords == false) {
 								continue;
@@ -2572,7 +2617,7 @@ public class WordGenerator {
 		}
 	}
 	
-	private static boolean existsInCommonWords(Map<Integer, CommonWord> commonWordMap, String kanji, String kana) {
+	private static boolean existsInCommonWords(Map<Integer, CommonWord> commonWordMap, String kanji, String kana, boolean checkIsDone) {
 		
 		if (kanji == null || kanji.equals("") == true) {
 			kanji = "-";
@@ -2586,20 +2631,34 @@ public class WordGenerator {
 			
 			CommonWord currentCommonWord = commonWordValuesIterator.next();
 			
-			if (currentCommonWord.isDone() == false) {
-				
-				String currentCommonWordKanji = currentCommonWord.getKanji();
-				
-				if (currentCommonWordKanji == null || currentCommonWordKanji.equals("") == true) {
-					currentCommonWordKanji = "-";
-				}
-				
-				String currentCommonWordKana = currentCommonWord.getKana();
+			//
+			
+			String currentCommonWordKanji = currentCommonWord.getKanji();
+			
+			if (currentCommonWordKanji == null || currentCommonWordKanji.equals("") == true) {
+				currentCommonWordKanji = "-";
+			}
+			
+			String currentCommonWordKana = currentCommonWord.getKana();
+
+			//
+			
+			if (checkIsDone == false) {
 				
 				if (kanji.equals(currentCommonWordKanji) == true && kana.equals(currentCommonWordKana) == true) {
 					return true;
 				}
+				
+			} else {
+
+				if (currentCommonWord.isDone() == false) {
+
+					if (kanji.equals(currentCommonWordKanji) == true && kana.equals(currentCommonWordKana) == true) {
+						return true;
+					}
+				}
 			}
+			
 		}
 		
 		return false;
@@ -2696,7 +2755,7 @@ public class WordGenerator {
 				for (GroupEntry groupEntry : groupEntryList) {
 					
 					if (	Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry.getKanji(), groupEntry.getKana()) != null ||
-							existsInCommonWords(commonWordMap, groupEntry.getKanji(), groupEntry.getKana()) == true) {
+							existsInCommonWords(commonWordMap, groupEntry.getKanji(), groupEntry.getKana(), false) == true) {
 																	
 						isAdd = false;
 						
