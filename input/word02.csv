@@ -10819,6 +10819,7 @@ samoczynny",,,
 105162,WORD_NOUN,,HIRAGANA,,,内生性,ないせいせい,,naiseisei,endogeniczność,,,
 105163,WORD_NOUN,,HIRAGANA,,,二親等,にしんとう,,nishintou,relacja w drugim stopniu,,,
 105164,WORD_VERB_U,,HIRAGANA,,,捩じ込む,ねじこむ,,nejikomu,"wkręcać
+wkręcić
 wepchnąć
 wpychać
 wsadzić
@@ -10873,6 +10874,7 @@ torpeda przerobiona jako samobójcza broń (używane w czasie II wojny światowe
 105188,WORD_NOUN,,HIRAGANA,,,二親,にしん,,nishin,oboje rodziców,,,DUPLICATE 105150
 105189,WORD_NOUN,,HIRAGANA,,,ふた親,ふたおや,,futaoya,oboje rodziców,,,
 105190,WORD_VERB_U,,HIRAGANA,,,捩込む,ねじこむ,,nejikomu,"wkręcać
+wkręcić
 wepchnąć
 wpychać
 wsadzić
@@ -10880,6 +10882,7 @@ protestować (i ubiegać się sprostowania)
 skarżyć się
 składać skargę",,,
 105191,WORD_VERB_U,,HIRAGANA,,,ねじ込む,ねじこむ,,nejikomu,"wkręcać
+wkręcić
 wepchnąć
 wpychać
 wsadzić
@@ -58610,7 +58613,7 @@ jabłko Sodomy",roślina,,
 126162,WORD_NOUN,,HIRAGANA,,,雷声,らいせい,,raisei,"odgłos grzmotu
 gruby, grzmiący głos",,,DUPLICATE 126125
 126163,WORD_NOUN,,HIRAGANA,,,熱さ,あつさ,,atsusa,ciepło,"rzeczy, obiektów",,
-126164,WORD_NOUN,,HIRAGANA,,,萱草,かんぞう,,kanzou,liliowiec,,,
+126164,WORD_NOUN,,HIRAGANA,,,萱草,かんぞう,,kanzou,liliowiec,,,DUPLICATE 94584
 126165,WORD_NOUN,,HIRAGANA,,,許否,きょひ,,kyohi,"aprobata i brak aprobaty
 zgoda i brak aprobaty",,,
 126166,WORD_NOUN,,HIRAGANA,,,危疑,きぎ,,kigi,"strach
@@ -58627,7 +58630,7 @@ rosły",,,
 126170,"WORD_NOUN
 WORD_ADJECTIVE_NA
 WORD_ADJECTIVE_TARU
-WORD_ADVERB_TO",,HIRAGANA,,,磽确,こうかく,,koukaku,kamienista zostawiona obłogiem ziemia,,,
+WORD_ADVERB_TO",,HIRAGANA,,,磽确,こうかく,,koukaku,kamienista zostawiona obłogiem ziemia,,,DUPLICATE 126220
 126171,WORD_NOUN,,HIRAGANA,,,争闘,そうとう,,soutou,"konflikt
 walka
 spór
@@ -58644,7 +58647,7 @@ państwo wasalne",,,
 126179,WORD_NOUN,,HIRAGANA,,,再嫁,さいか,,saika,powtórne małżeństwo,,,
 126180,WORD_NOUN,,HIRAGANA,,,唱題,しょうだい,,shoudai,śpiewanie tytułu sutry,szczególnie Lotus Sutra,,
 126181,WORD_NOUN,,HIRAGANA,,,心耳,しんじ,,shinji,"słuchać uważnie
-uszko serca (fragment przedsionka serca)",,,
+uszko serca (fragment przedsionka serca)",,,DUPLICATE 126241
 126182,WORD_NOUN,,HIRAGANA,,,無目,むめ,,mume,nadświetle,element konstrukcyjno-dekoracyjny w budownictwie i architekturze,,
 126183,WORD_NOUN,,HIRAGANA,,,売娼,ばいしょう,,baishou,prostytucja,,,
 126184,WORD_NOUN,,HIRAGANA,,,三曹,さんそう,,sansou,sierżant,w Japońskich Siłach Samoobrony,,
@@ -58653,7 +58656,7 @@ przestrzeń strony",,,
 126186,WORD_NOUN,,HIRAGANA,,,戦区,せんく,,senku,"teatr wojenny
 teatr działań wojennych
 strefa (np. militarna, wojenna)",,,
-126187,WORD_NOUN,,HIRAGANA,,,夜飯,やはん,,yahan,kolacja,,,
+126187,WORD_NOUN,,HIRAGANA,,,夜飯,やはん,,yahan,kolacja,,,DUPLICATE 126225
 126188,WORD_NOUN,,HIRAGANA,,,自衛隊員,じえいたいいん,,jieitaiin,kadra Sił Samoobrony,,,
 126189,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,お高くとまる,おたかくとまる,,otakaku tomaru,"posiadający wysokie mniemanie o sobie
@@ -58674,7 +58677,7 @@ gra odbywająca się na powietrzu",ang: outdoor game,,
 galowa uroczystość
 (na) światowej scenie",,,
 126201,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,ないでは居られない,ないではいられない,,nai de wa irarenai,"czuć się zmuszony do
+WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,ないでは居られない,ないではいられない,,nai de wa irarenai,"czuć się zmuszony do
 nie móc pomóc, ale czuć
 nie móc pomóc, ale robić",,,
 126202,WORD_NOUN,,HIRAGANA,,,一妻多夫,いっさいたふ,,issaitafu,"wielomęstwo
@@ -58712,3 +58715,50 @@ naruszać",,,
 126217,WORD_NOUN,,KATAKANA,,,-,セービング,,seebingu,oszczędność,ang: saving,,
 126218,WORD_NOUN,,HIRAGANA,,,空気銃,くうきじゅう,,kuukijuu,"wiatrówka
 broń wiatrowa",,,
+126219,WORD_NOUN,,KATAKANA,,,-,カンゾウ,,kanzou,liliowiec,,,
+126220,"WORD_NOUN
+WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,磽确,ぎょうかく,,gyoukaku,kamienista zostawiona obłogiem ziemia,,,DUPLICATE 126170
+126221,"WORD_NOUN
+WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,墝埆,こうかく,,koukaku,kamienista zostawiona obłogiem ziemia,,,DUPLICATE 126222
+126222,"WORD_NOUN
+WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,墝埆,ぎょうかく,,gyoukaku,kamienista zostawiona obłogiem ziemia,,,DUPLICATE 126221
+126223,WORD_NOUN,,HIRAGANA,,,附庸,ふよう,,fuyou,"podległe terytorium
+kraj podległy
+państwo wasalne",,,
+126224,WORD_NOUN,,HIRAGANA,,,売笑,ばいしょう,,baishou,prostytucja,,,
+126225,WORD_NOUN,,HIRAGANA,,,夜飯,よめし,,yomeshi,kolacja,,,DUPLICATE 126187
+126226,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,お高く止まる,おたかくとまる,,otakaku tomaru,"posiadający wysokie mniemanie o sobie
+pysznić się",,,
+126227,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,お高く留まる,おたかくとまる,,otakaku tomaru,"posiadający wysokie mniemanie o sobie
+pysznić się",,,
+126228,WORD_NOUN,,KATAKANA,,,-,ガメイ,,gamei,Gamay,odmiana winogron,,
+126229,WORD_NOUN,,KATAKANA,,,-,テーブル・ゲーム,,teeburu geemu,"gra planszowa
+gra, w której gra się na stole","ang: tabletop game, table game",,
+126230,WORD_NOUN,,KATAKANA,,,-,アウトドア・ゲーム,,autodoa geemu,"gra terenowa
+gra odbywająca się na powietrzu",ang: outdoor game,,
+126231,WORD_NOUN,,KATAKANA,,,-,インドア・ゲーム,,indoa geemu,gra odbywająca się w pomieszczeniu,ang: indoor game,,
+126232,WORD_NOUN,,KATAKANA,,,-,アサヒガニ,,asahigani,ranina ranina,zwierzę,,
+126233,WORD_NOUN,,HIRAGANA,,,晴舞台,はれぶたい,,hare butai,"wielka chwila (np. w wykonaniu, w świetle reflektorów)
+galowa uroczystość
+(na) światowej scenie",,,
+126234,WORD_NOUN,,HIRAGANA,,,一時凌ぎ,いちじしのぎ,,ichiji shinogi,"zastępczy środek
+tymczasowy środek doraźny
+środek tymczasowy",,,
+126235,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,居辛い,いづらい,,idurai,"trudno być (w miejscu)
+???",,,
+126236,"WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,道々,みちみち,,michi michi,wzdłuż drogi,,,
+126237,WORD_NOUN,,KATAKANA,,,-,シネマ・オルガン,,shinema orugan,organ kinowy,ang: cinema organ,,
+126238,WORD_NOUN,,KATAKANA,,,-,ビットレイト,,bitto reito,szybkość transmisji bitów,ang: bit rate,,
+126239,WORD_NOUN,,KATAKANA,,,-,ビット・レート,,bitto reeto,szybkość transmisji bitów,ang: bit rate,,
+126240,WORD_NOUN,,KATAKANA,,,-,ビット・レイト,,bitto reito,szybkość transmisji bitów,ang: bit rate,,
+126241,WORD_NOUN,,HIRAGANA,,,心耳,しんに,,shinni,słuchać uważnie,,,DUPLICATE 126181
