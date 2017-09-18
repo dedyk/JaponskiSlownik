@@ -3147,7 +3147,7 @@ kto raz się sparzy, na zimne dmucha","idiom, mało znane słowo",,
 ochraniacz przedramienia
 ???",,,DUPLICATE 82048
 101499,WORD_NOUN,,HIRAGANA,,,叢祠,ほこら,,hokora,"hokora
-mała przydrożna świątynia",,,
+mała przydrożna świątynia",,,DUPLICATE 126249
 101500,WORD_NOUN,,KATAKANA,,,-,ニレ,,nire,ulmus davidiana,roślina,,
 101501,WORD_NOUN,,KATAKANA,,,-,タモギタケ,,tamogitake,boczniak lejkowaty,"grzyb, pleurotus cornucopiae",,
 101502,WORD_NOUN,,HIRAGANA,,,糒,ほしいい,,hoshiii,suszony gotowany ryż używany głównie jako prowiant dla samurajskich oddziałów i podróżnych,,,DUPLICATE 101465
@@ -58062,7 +58062,8 @@ DUPLICATE 69460
 DUPLICATE 69462
 DUPLICATE 106499
 DUPLICATE 113654
-DUPLICATE 116758"
+DUPLICATE 116758
+DUPLICATE 126251"
 125906,WORD_NOUN,,HIRAGANA,,,巻纓,かんえい,,kan'ei,"zwijany ogon (tradycyjnego japońskiego kapelusza)
 skręcony ogon",,,"DUPLICATE 125860
 DUPLICATE 125907"
@@ -58780,16 +58781,16 @@ niewierność",,,
 WORD_ADJECTIVE_NO",,HIRAGANA,,,開架,かいか,,kaika,"otwarty dostęp
 otwarte półki
 wolny dostęp (do czegoś)","np. w bibliotece, w sklepie samoobsługowym",,
-126249,WORD_NOUN,,HIRAGANA,,,叢祠,そうし,,soushi,mała świątynia w zaroślach,,,
+126249,WORD_NOUN,,HIRAGANA,,,叢祠,そうし,,soushi,mała świątynia w zaroślach,,,DUPLICATE 101499
 126250,WORD_NOUN,,HIRAGANA,,,剛球,ごうきゅう,,goukyuu,szybka piłka,,,
 126251,WORD_NOUN,,HIRAGANA,,,嗣子,しし,,shishi,"spadkobierca
-dziedzic",,,
+dziedzic",,,DUPLICATE 125905
 126252,WORD_NOUN,,HIRAGANA,,,厚礼,こうれい,,kourei,"serdeczne podziękowania
 gorąca podziękowania",,,
 126253,WORD_NOUN,,HIRAGANA,,,全期,ぜんき,,zenki,cały okres,,,
 126254,WORD_NOUN,,HIRAGANA,,,建永,けんえい,,ken'ei,epoka Ken'ei,1206.4.27-1207.10.25,,
 126255,WORD_NOUN,,HIRAGANA,,,神具,しんぐ,,shingu,"wotywne przedmioty w domowej świątyni
-rytualny przedmiot",,,
+rytualny przedmiot",,,DUPLICATE 126299
 126256,WORD_VERB_U,,HIRAGANA,,,建て込む,たてこむ,,tate komu,"być wybudowane
 być natłoczone domami",,,
 126257,WORD_NOUN,,HIRAGANA,,,皇胤,こういん,,kouin,cesarski potomek,archaizm,,
@@ -58815,11 +58816,11 @@ system ogniowy
 gospodarka żarowa
 gospodarka łazowa
 trzebież żarowa","jeden z pierwszych rolniczych systemów użytkowania roli, wywodzący się z kopieniactwa i stosowany na terenach zalesionych. Polegał na tym, że las wypalano i w jego miejscu uprawiano przy pomocy prymitywnych narzędzi",,
-126267,WORD_NOUN,,HIRAGANA,,,取調室,とりしらべしつ,,torishirabeshitsu,"pokój przesłuchań
+126267,WORD_NOUN,,HIRAGANA,,,取調室,とりしらべしつ,,torishirabe shitsu,"pokój przesłuchań
 sala przesłuchań",,,
 126268,WORD_NOUN,,KATAKANA,,,-,マーシャルプラン,,maasharu puran,Plan Marshalla,ang: Marshall Plan,,
 126269,WORD_NOUN,,KATAKANA_HIRAGANA,,,マーシャル諸島,マーシャルしょとう,,maasharu shotou,Wyspy Marshalla,,,
-126270,WORD_NOUN,,KATAKANA,,,-,オモナガフタボシイソハゼ,,omonagafutaboshiisohaze,eviota partimacula,ryba,,
+126270,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オモナガフタボシイソハゼ,,omonagafutaboshiisohaze,eviota partimacula,ryba,,
 126271,WORD_VERB_RU,,HIRAGANA,,,捩じ上げる,ねじあげる,,neji ageru,"przekręcać dłoń
 przekręcić rękę",,,
 126272,WORD_NOUN,,KATAKANA_HIRAGANA,,,ロス市警,ロスしけい,,rosu shikei,Departament policji w Los Angeles,,,
@@ -58867,7 +58868,8 @@ poprawiony manuskrypt",,,
 126289,WORD_NOUN,,HIRAGANA,,,星宿,せいしゅく,,seishuku,"gwiazdozbiór
 konstelacja
 dom (dowolna chiński gwiazdozbiór używany do podziału ekliptyki na 28 części, archaizm)
-chińska konstelacja “gwiazda” (jeden z 28 domów)",,,
+chińska konstelacja “gwiazda” (jeden z 28 domów)",,,"DUPLICATE 126311
+DUPLICATE 126312"
 126290,WORD_NOUN,,KATAKANA,,,-,サーモインナー,,saamo innaa,???,,,
 126291,WORD_ADJECTIVE_F,,KATAKANA,,,-,オンデマンド,,on demando,na żądanie,ang: on demand,,
 126292,"WORD_VERB_RU
@@ -58880,3 +58882,58 @@ różniczkowy",ang: differential,,
 126296,WORD_NOUN,,HIRAGANA,,,地下活動,ちかかつどう,,chika katsudou,"podziemna działalność
 ruch podziemny",,,
 126297,WORD_NOUN,,HIRAGANA,,,血吸蛭,ちすいびる,,chisuibiru,hirudo nipponia,gatunek pijawki,,
+126298,WORD_NOUN,,HIRAGANA,,,附表,ふひょう,,fuhyou,"dołączona lista
+dołączony spis
+załączony wykres, tabela lub rysunek",,,
+126299,WORD_NOUN,,HIRAGANA,,,神具,じんぐ,,jingu,"wotywne przedmioty w domowej świątyni
+rytualny przedmiot",,,DUPLICATE 126255
+126300,WORD_VERB_U,,HIRAGANA,,,建込む,たてこむ,,tate komu,"być wybudowane
+być natłoczone domami",,,
+126301,WORD_NOUN,,HIRAGANA,,,取調べ室,とりしらべしつ,,torishirabe shitsu,"pokój przesłuchań
+sala przesłuchań",,,
+126302,WORD_NOUN,,KATAKANA,,,-,マーシャル・プラン,,maasharu puran,Plan Marshalla,ang: Marshall Plan,,
+126303,WORD_VERB_RU,,HIRAGANA,,,捩上げる,ねじあげる,,neji ageru,"przekręcać dłoń
+przekręcić rękę",,,
+126304,WORD_ADJECTIVE_I,,HIRAGANA,,,口汚ない,くちぎたない,,kuchi gitanai,"niewyparzony (język)
+obelżywy
+znieważający",,,
+126305,WORD_NOUN,,KATAKANA,,,-,クレッセント,,kuressento,"półksiężyc
+???",ang: crescent,,
+126306,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,胸がいたむ,むねがいたむ,,mune ga itamu,"doświadczyć bólu w klatce piersiowej
+mieć ból we własnej klatce piersiowej
+mieć ból serca
+być udręczony",,,
+126307,WORD_NOUN,,KATAKANA,,,-,タピオカ・ティー,,tapioka tii,"herbata bąbelkowa
+herbata z tapioki",ang: tapioca tea,,
+126308,WORD_NOUN,,HIRAGANA,,,内巻,うちまき,,uchimaki,zakręcać do środka,szczególnie końcówki włosów,,
+126309,WORD_NOUN,,KATAKANA_HIRAGANA,,,α化米,アルファかまい,,arufa kamai,"gotowany i pakowany suchy ryż (współczesna wersja ryżu hoshii)
+przetworzony ryż do szybkiego gotowania",,,
+126310,WORD_NOUN,,KATAKANA_HIRAGANA,,,α米,アルファまい,,arufa mai,"gotowany i pakowany suchy ryż (współczesna wersja ryżu hoshii)
+przetworzony ryż do szybkiego gotowania",,,
+126311,WORD_NOUN,,HIRAGANA,,,星宿,ほとおりぼし,,hotoori boshi,"gwiazdozbiór
+konstelacja
+dom (dowolna chiński gwiazdozbiór używany do podziału ekliptyki na 28 części, archaizm)
+chińska konstelacja “gwiazda” (jeden z 28 domów)",,,"DUPLICATE 126289
+DUPLICATE 126312"
+126312,WORD_NOUN,,HIRAGANA,,,星宿,ほとほりぼし,,hotohori boshi,"gwiazdozbiór
+konstelacja
+dom (dowolna chiński gwiazdozbiór używany do podziału ekliptyki na 28 części, archaizm)
+chińska konstelacja “gwiazda” (jeden z 28 domów)",,,"DUPLICATE 126289
+DUPLICATE 126311"
+126313,WORD_NOUN,,HIRAGANA,,,ほとおり星,ほとおりぼし,,hotoori boshi,"gwiazdozbiór
+konstelacja
+dom (dowolna chiński gwiazdozbiór używany do podziału ekliptyki na 28 części, archaizm)
+chińska konstelacja “gwiazda” (jeden z 28 domów)",,,
+126314,WORD_NOUN,,KATAKANA,,,-,サーモ・インナー,,saamo innaa,???,,,
+126315,WORD_ADJECTIVE_F,,KATAKANA,,,-,オン・デマンド,,on demando,na żądanie,ang: on demand,,
+126316,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,御里が知れる,おさとがしれる,,osato ga shireru,"zdradzić się
+zdradzić źródło",,,
+126317,WORD_ADJECTIVE_F,,KATAKANA,,,-,ディファレンシアル,,difarenshiaru,"zróżnicowany
+różniczkowy",ang: differential,,
+126318,WORD_NOUN,,HIRAGANA,,,袖がらみ,そでがらみ,,sodegarami,kolczasta metalowa broń służąca do łapania przestępców,okres Edo,,
+126319,WORD_NOUN,,HIRAGANA,,,袖搦み,そでがらみ,,sodegarami,kolczasta metalowa broń służąca do łapania przestępców,okres Edo,,
+126320,WORD_NOUN,,HIRAGANA,,,食いっぱぐれ,くいっぱぐれ,,kuippagure,brakujący posiłek,,,
+126321,WORD_NOUN,,HIRAGANA,,,血吸い蛭,ちすいびる,,chisuibiru,hirudo nipponia,gatunek pijawki,,
+126322,WORD_NOUN,,KATAKANA,,,-,チスイビル,,chisuibiru,hirudo nipponia,gatunek pijawki,,
