@@ -314,6 +314,10 @@ public class WordGenerator {
 						continue;
 					}
 					
+					if (currentMissingWord.length() > 512) {
+                        continue;
+                    }
+					
 					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
 
 					ScoreDoc[] scoreDocs = searcher.search(query, null, 10).scoreDocs;
@@ -520,6 +524,10 @@ public class WordGenerator {
 						continue;
 					}
 					
+					if (currentMissingWord.length() > 512) {
+                        continue;
+                    }
+					
 					result++;
 										
 					//
@@ -629,6 +637,10 @@ public class WordGenerator {
 					if (currentMissingWord.equals("") == true) {
 						continue;
 					}
+					
+					if (currentMissingWord.length() > 512) {
+                        continue;
+                    }
 					
 					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
 
@@ -1421,6 +1433,10 @@ public class WordGenerator {
 					if (currentMissingWord.equals("") == true) {
 						continue;
 					}
+					
+					if (currentMissingWord.length() > 512) {
+                        continue;
+                    }
 										
 					counter++;
 
