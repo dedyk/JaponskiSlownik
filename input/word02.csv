@@ -60531,7 +60531,7 @@ pędzenie",,,
 127123,WORD_NOUN,,HIRAGANA,,,農科,のうか,,nouka,"wydział rolnictwa
 dział rolnictwa
 kurs rolnictwa",,,
-127124,WORD_NOUN,,HIRAGANA,,,庭火,にわび,,niwabi,ogrodowe ognisko,archaizm,,
+127124,WORD_NOUN,,HIRAGANA,,,庭火,にわび,,niwabi,ogrodowe ognisko,archaizm,,DUPLICATE 127178
 127125,WORD_NOUN,,HIRAGANA,,,罵詈,ばり,,bari,???,,,
 127126,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,幽邃,ゆうすい,,yuusui,"ustronny
@@ -60574,10 +60574,13 @@ szypułka",,,
 127143,WORD_NOUN,,HIRAGANA,,,対語,たいご,,taigo,"kanji składające się z przeciwnych elementów
 antonim
 przeciwieństwo
-rozmowa (twarzą w twarz)",,,
+rozmowa (twarzą w twarz)",,,DUPLICATE 127210
 127144,WORD_NOUN,,HIRAGANA,,,児子,じし,,jishi,dziecko,archaizm,,
 127145,WORD_NOUN,,HIRAGANA,,,乾魚,かんぎょ,,kangyo,"suszona ryba
-sztokfisz",,,
+sztokfisz",,,"DUPLICATE 127182
+DUPLICATE 127183
+DUPLICATE 127184
+DUPLICATE 127185"
 127146,WORD_NOUN,,HIRAGANA,,,近侍,きんじ,,kinji,"towarzysz
 opiekun",,,
 127147,WORD_NOUN,,HIRAGANA,,,牛脂,ぎゅうし,,gyuushi,łój wołowy,,,
@@ -60592,8 +60595,9 @@ skłonność do wyrządzania zła
 buntowniczy umysł",,,
 127155,WORD_NOUN,,HIRAGANA,,,仙女,せんじょ,,senjo,"wróżka
 nimfa
-elf",,,
-127156,WORD_VERB_U,,HIRAGANA,,,唾く,つばく,,tsubaku,pluć,,,
+elf",,,"DUPLICATE 127194
+DUPLICATE 127195"
+127156,WORD_VERB_U,,HIRAGANA,,,唾く,つばく,,tsubaku,pluć,,,DUPLICATE 127196
 127157,WORD_NOUN,,KATAKANA,,,-,ページアウト,,peeji auto,???,ang: page out,,
 127158,WORD_NOUN,,KATAKANA,,,-,ランニングシューズ,,ranningu shuuzu,buty do biegania,ang: running shoes,,
 127159,WORD_NOUN,,KATAKANA,,,-,ボリュームセット,,boryuumu setto,"zbiór tomów
@@ -60603,7 +60607,8 @@ zmienianie",ang: switching,,
 127161,WORD_NOUN,,KATAKANA,,,ＬＩＤＡＲ,ライダー,,raidaa,"lidar
 LIDAR
 Laser Imaging Detection and Ranging
-Light Detection And Ranging",,,
+Light Detection And Ranging",,,"DUPLICATE 14158
+DUPLICATE 127202"
 127162,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,実空間,じつくうかん,,jitsukuukan,???,,,
 127163,WORD_NOUN,,KATAKANA,,,-,アナバプテスト,,anabaputesuto,anabaptysta,ang: anabaptist,,
@@ -60627,3 +60632,87 @@ wymyślony",,,
 127176,WORD_NOUN,,HIRAGANA,,,内閲,ないえつ,,naietsu,"prywatne przestudiowanie
 prywatne staranne czytanie",,,
 127177,WORD_NOUN,,HIRAGANA,,,埴瓮,はにべ,,hanibe,naczynie wykonane z gliny,archaizm,,
+127178,WORD_NOUN,,HIRAGANA,,,庭火,ていりょう,,teiryou,ogrodowe ognisko,archaizm,,DUPLICATE 127124
+127179,WORD_NOUN,,HIRAGANA,,,庭燎,にわび,,niwabi,ogrodowe ognisko,archaizm,,DUPLICATE 127180
+127180,WORD_NOUN,,HIRAGANA,,,庭燎,ていりょう,,teiryou,ogrodowe ognisko,archaizm,,DUPLICATE 127179
+127181,WORD_NOUN,,HIRAGANA,,,通交,つうこう,,tsuukou,"przyjazne stosunki
+przyjazne relacje",,,
+127182,WORD_NOUN,,HIRAGANA,,,乾魚,ひうお,,hiuo,"suszona ryba
+sztokfisz",,,"DUPLICATE 127145
+DUPLICATE 127183
+DUPLICATE 127184
+DUPLICATE 127185"
+127183,WORD_NOUN,,HIRAGANA,,,乾魚,ひざかな,,hizakana,"suszona ryba
+sztokfisz",,,"DUPLICATE 127145
+DUPLICATE 127182
+DUPLICATE 127184
+DUPLICATE 127185"
+127184,WORD_NOUN,,HIRAGANA,,,乾魚,ほしうお,,hoshiuo,"suszona ryba
+sztokfisz",,,"DUPLICATE 127145
+DUPLICATE 127182
+DUPLICATE 127183
+DUPLICATE 127185"
+127185,WORD_NOUN,,HIRAGANA,,,乾魚,ほしざかな,,hoshizakana,"suszona ryba
+sztokfisz",,,"DUPLICATE 127145
+DUPLICATE 127182
+DUPLICATE 127183
+DUPLICATE 127184"
+127186,WORD_NOUN,,HIRAGANA,,,干魚,かんぎょ,,kangyo,"suszona ryba
+sztokfisz",,,"DUPLICATE 127187
+DUPLICATE 127188
+DUPLICATE 127189
+DUPLICATE 127190"
+127187,WORD_NOUN,,HIRAGANA,,,干魚,ひうお,,hiuo,"suszona ryba
+sztokfisz",,,"DUPLICATE 127186
+DUPLICATE 127188
+DUPLICATE 127189
+DUPLICATE 127190"
+127188,WORD_NOUN,,HIRAGANA,,,干魚,ひざかな,,hizakana,"suszona ryba
+sztokfisz",,,"DUPLICATE 127186
+DUPLICATE 127187
+DUPLICATE 127189
+DUPLICATE 127190"
+127189,WORD_NOUN,,HIRAGANA,,,干魚,ほしうお,,hoshiuo,"suszona ryba
+sztokfisz",,,"DUPLICATE 127186
+DUPLICATE 127187
+DUPLICATE 127188
+DUPLICATE 127190"
+127190,WORD_NOUN,,HIRAGANA,,,干魚,ほしざかな,,hoshizakana,"suszona ryba
+sztokfisz",,,"DUPLICATE 127186
+DUPLICATE 127187
+DUPLICATE 127188
+DUPLICATE 127189"
+127191,WORD_NOUN,,HIRAGANA,,,干し魚,ほしうお,,hoshiuo,"suszona ryba
+sztokfisz",,,DUPLICATE 127192
+127192,WORD_NOUN,,HIRAGANA,,,干し魚,ほしざかな,,hoshizakana,"suszona ryba
+sztokfisz",,,DUPLICATE 127191
+127193,WORD_NOUN,,KATAKANA,,,-,シーザー・サラダ,,shiizaa sarada,Cezar sałatka,ang: Caesar salad,,
+127194,WORD_NOUN,,HIRAGANA,,,仙女,せんにょ,,sennyo,"wróżka
+nimfa
+elf",,,"DUPLICATE 127155
+DUPLICATE 127195"
+127195,WORD_NOUN,,HIRAGANA,,,仙女,せんにゅ,,sennyu,"wróżka
+nimfa
+elf",,,"DUPLICATE 127155
+DUPLICATE 127194"
+127196,WORD_VERB_U,,HIRAGANA,,,唾く,つはく,,tsuhaku,pluć,,,DUPLICATE 127156
+127197,WORD_VERB_U,,HIRAGANA,,,唾吐く,つばく,,tsubaku,pluć,,,DUPLICATE 127198
+127198,WORD_VERB_U,,HIRAGANA,,,唾吐く,つはく,,tsuhaku,pluć,,,DUPLICATE 127197
+127199,WORD_NOUN,,KATAKANA,,,-,ページ・アウト,,peeji auto,???,ang: page out,,
+127200,WORD_NOUN,,KATAKANA,,,-,ランニング・シューズ,,ranningu shuuzu,buty do biegania,ang: running shoes,,
+127201,WORD_NOUN,,KATAKANA,,,-,ボリューム・セット,,boryuumu setto,"zbiór tomów
+zbiór wolumenów",ang: volume set,,
+127202,WORD_NOUN,,KATAKANA,,,ＬＩＤＡＲ,ライダ,,raida,"lidar
+LIDAR
+Laser Imaging Detection and Ranging
+Light Detection And Ranging",,,DUPLICATE 127161
+127203,WORD_NOUN,,KATAKANA,,,-,アナバプティスト,,anabaputisuto,anabaptysta,ang: anabaptist,,
+127204,WORD_NOUN,,HIRAGANA,,,膝掛け,ひざかけ,,hiza kake,koc na kolana,,,
+127205,WORD_NOUN,,HIRAGANA,,,膝かけ,ひざかけ,,hiza kake,koc na kolana,,,
+127206,WORD_NOUN,,HIRAGANA,,,ひざ掛,ひざかけ,,hiza kake,koc na kolana,,,
+127207,WORD_NOUN,,HIRAGANA,,,膝掛,ひざかけ,,hiza kake,koc na kolana,,,
+127208,WORD_NOUN,,HIRAGANA,,,味噌御田,みそおでん,,miso oden,oden wykonany z haccho miso,,,
+127209,WORD_NOUN,,HIRAGANA,,,埴瓫,はにべ,,hanibe,naczynie wykonane z gliny,archaizm,,
+127210,WORD_NOUN,,HIRAGANA,,,対語,ついご,,tsuigo,"kanji składające się z przeciwnych elementów
+antonim
+przeciwieństwo",,,DUPLICATE 127143
