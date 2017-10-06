@@ -7801,7 +7801,8 @@ wachlarz sędziego (np. w sumo)
 godło w kształcie wachlarza",,,
 103642,WORD_NOUN,,HIRAGANA,,,忌日,いみび,,imibi,"pechowy dzień (według astrologii)
 rocznica śmierci
-oczyszczenie i dzień postu",,,
+oczyszczenie i dzień postu",,,"DUPLICATE 127678
+DUPLICATE 127713"
 103643,WORD_NOUN,,HIRAGANA,,,斎日,いみび,,imibi,"pechowy dzień (według astrologii)
 rocznica śmierci
 oczyszczenie i dzień postu",,,DUPLICATE 103585
@@ -61634,7 +61635,7 @@ rozbrajać",,,
 127625,WORD_NOUN,,KATAKANA,,,-,オキアミ,,okiami,kryl,skorupiak,,
 127626,WORD_NOUN,,KATAKANA,,,-,キッチン・ドリンカー,,kicchin dorinkaa,alkoholiczka (gospodyni domowa),ang: kitchen drinker,,
 127627,WORD_INTERJECTION,,HIRAGANA,,,-,いでや,,ideya,???,archaizm,,
-127628,WORD_NOUN,,HIRAGANA,,,弓場,ゆば,,yuba,???,archaizm,,
+127628,WORD_NOUN,,HIRAGANA,,,弓場,ゆば,,yuba,???,archaizm,,DUPLICATE 127689
 127629,WORD_NOUN,,HIRAGANA,,,後家蜘蛛,ごけぐも,,goke gumo,wdowa,"pająk, latrodectus, rodzaj jadowitych pająków z rodziny omatnikowatych",,
 127630,WORD_NOUN,,HIRAGANA,,,相伝,そうでん,,souden,dziedziczenie,,,
 127631,WORD_NOUN,,HIRAGANA,,,証拠金,しょうこきん,,shoukokin,"zaliczka
@@ -61646,8 +61647,8 @@ depozyt zabezpieczający",,,
 przeciwności losu
 smutne okoliczności",,,
 127633,WORD_NOUN,,HIRAGANA,,,社地,しゃち,,shachi,"teren należący do świątyni Shinto
-teren należący do firmy",,,
-127634,WORD_NOUN,,HIRAGANA,,,社地,しゃち,,shachi,tereny świątynii,,,
+teren należący do firmy",,,DUPLICATE 127634
+127634,WORD_NOUN,,HIRAGANA,,,社地,しゃち,,shachi,tereny świątynii,,,DUPLICATE 127633
 127635,WORD_NOUN,,HIRAGANA,,,文字読取り装置,もじよみとりそうち,,moji yomitori souchi,czytnik znaków,,,
 127636,WORD_NOUN,,HIRAGANA,,,懸想,けそう,,kesou,"zakochanie się
 przywiązanie do kogoś
@@ -61671,7 +61672,7 @@ groźna cecha
 mętny
 zmętniały
 niejasny
-niezrozumiały",,,
+niezrozumiały",,,DUPLICATE 35263
 127640,WORD_NOUN,,HIRAGANA,,,金箱,かねばこ,,kanebako,"kasetka (na pieniądze)
 źródło dochodu",,,
 127641,WORD_NOUN,,HIRAGANA,,,地肩,じがた,,jigata,siła ramion,,,
@@ -61730,9 +61731,13 @@ zrażać",,,
 127661,"WORD_ADJECTIVE_NA
 WORD_ADVERB",,KATAKANA,,,-,カツカツ,,katsu katsu,"ledwo
 z trudem
-prawie nie",,,
+prawie nie",,,"DUPLICATE 127711
+EDICT_DUPLICATE 127662
+EDICT_DUPLICATE 127708
+EDICT_DUPLICATE 127709
+EDICT_DUPLICATE 127710"
 127662,WORD_ADVERB_TO,,HIRAGANA,,,戛戛,かつかつ,,katsu katsu,"stuknięcie
-stukotanie",,,
+stukotanie",,,EDICT_DUPLICATE 127661
 127663,WORD_NOUN,,HIRAGANA,,,重液,じゅうえき,,juueki,ciężka ciecz,,,
 127664,WORD_NOUN,,HIRAGANA,,,汁液,じゅうえき,,juueki,sok,,,
 127665,WORD_NOUN,,HIRAGANA,,,養和,ようわ,,youwa,epoka Youwa,1181.7.14-1182.5.27,,
@@ -61765,7 +61770,8 @@ miłosny związek",,,
 lekceważenie miłością",,,
 127677,WORD_NOUN,,HIRAGANA,,,中東戦争,ちゅうとうせんそう,,chuutou sensou,wojny arabsko-izraelskie,"1948, 1956, 1967, 1973",,
 127678,WORD_NOUN,,HIRAGANA,,,忌日,きにち,,kinichi,"rocznica śmierci (na której wykonywane są obrządki buddyjskie ku jej chci)
-49 dzień po śmierci osoby, na której wykonywane są obrządki buddyjskie",,,
+49 dzień po śmierci osoby, na której wykonywane są obrządki buddyjskie",,,"DUPLICATE 103642
+DUPLICATE 127713"
 127679,WORD_NOUN,,HIRAGANA,,,内服,ないふく,,naifuku,"wewnętrzne użycie
 wewnętrznego użycia",,,
 127680,WORD_NOUN,,HIRAGANA,,,大なり,だいなり,,dainari,"znak większości
@@ -61785,5 +61791,97 @@ wisteria chińska","gatunek ozdobnego pnącza, należący do rodziny bobowatych,
 127687,WORD_NOUN,,HIRAGANA,,,野田藤,のだふじ,,nodafuji,"glicynia japońska
 glicynia kwiecista
 słodlin japoński
-wisteria japońska","gatunek wysokiego ozdobnego pnącza, należący do rodziny bobowatych, wisteria floribunda",,
+wisteria japońska","gatunek wysokiego ozdobnego pnącza, należący do rodziny bobowatych, wisteria floribunda",,DUPLICATE 127718
 127688,WORD_NOUN,,HIRAGANA,,,山藤,やまふじ,,yamafuji,glicynia kwiecista,"gatunek ozdobnego pnącza, należący do rodziny bobowatych, wisteria brachybotrys",,
+127689,WORD_NOUN,,HIRAGANA,,,弓場,ゆみば,,yumiba,???,archaizm,,DUPLICATE 127628
+127690,WORD_NOUN,,HIRAGANA,,,弓庭,ゆば,,yuba,???,archaizm,,"DUPLICATE 127691
+DUPLICATE 127692"
+127691,WORD_NOUN,,HIRAGANA,,,弓庭,ゆみば,,yumiba,???,archaizm,,"DUPLICATE 127690
+DUPLICATE 127692"
+127692,WORD_NOUN,,HIRAGANA,,,弓庭,ゆにわ,,yuniwa,???,archaizm,,"DUPLICATE 127690
+DUPLICATE 127691"
+127693,WORD_NOUN,,HIRAGANA,,,悲況,ひきょう,,hikyou,"niedola
+przeciwności losu
+smutne okoliczności",,,
+127694,WORD_NOUN,,HIRAGANA,,,麁物,そぶつ,,sobutsu,"ubranie
+ubrania",archaizm,,
+127695,WORD_NOUN,,HIRAGANA,,,道師,みちのし,,michinoshi,Michinoshi,"piąty z ośmiu najwyższych dziedzicznych tytułów, archaizm",,
+127696,WORD_NOUN,,HIRAGANA,,,請人,うけにん,,ukenin,"gwarant
+poręczyciel
+żyrant",,,
+127697,WORD_NOUN,,HIRAGANA,,,受け人,うけにん,,ukenin,"gwarant
+poręczyciel
+żyrant",,,
+127698,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,繊維腫,せんいしゅ,,sen'ishu,włókniak,łagodny nowotwór,,
+127699,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,紛紛,ふんぷん,,funpun,"zamieszanie
+zamęt
+nieład
+rozproszenie",,,
+127700,WORD_VERB_U,,HIRAGANA,,,もみ合う,もみあう,,momi au,"popchnąć
+popychać
+rozpychać
+zmagać się z innymi",,,
+127701,WORD_VERB_U,,HIRAGANA,,,揉合う,もみあう,,momi au,"popchnąć
+popychać
+rozpychać
+zmagać się z innymi",,,
+127702,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,平屋建,ひらやだて,,hiraya date,"dom jednopiętrowy
+budynek jednopiętrowy",,,
+127703,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,平家建て,ひらやだて,,hiraya date,"dom jednopiętrowy
+budynek jednopiętrowy",,,
+127704,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,平家建,ひらやだて,,hiraya date,"dom jednopiętrowy
+budynek jednopiętrowy",,,
+127705,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,決まりが悪い,きまりがわるい,,kimari ga warui,"zażenowany
+zakłopotany
+zawstydzony",,,
+127706,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,決りが悪い,きまりがわるい,,kimari ga warui,"zażenowany
+zakłopotany
+zawstydzony",,,
+127707,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,極りが悪い,きまりがわるい,,kimari ga warui,"zażenowany
+zakłopotany
+zawstydzony",,,
+127708,WORD_ADVERB_TO,,HIRAGANA,,,戛々,かつかつ,,katsu katsu,"stuknięcie
+stukotanie",,,EDICT_DUPLICATE 127661
+127709,WORD_ADVERB_TO,,HIRAGANA,,,戞戞,かつかつ,,katsu katsu,"stuknięcie
+stukotanie",,,EDICT_DUPLICATE 127661
+127710,WORD_ADVERB_TO,,HIRAGANA,,,戞々,かつかつ,,katsu katsu,"stuknięcie
+stukotanie",,,EDICT_DUPLICATE 127661
+127711,WORD_ADVERB_TO,,KATAKANA,,,-,カツカツ,,katsu katsu,"stuknięcie
+stukotanie",,,DUPLICATE 127661
+127712,WORD_NOUN,,HIRAGANA,,,思召,おぼしめし,,oboshimeshi,"myśli (honoryfikatywnie)
+opinie (honoryfikatywnie)
+rozwaga (honoryfikatywnie)
+tyle pieniędzy, ile chcesz ofiarować (np. jałmużna)
+czułość
+delikatność
+miłość",,,
+127713,WORD_NOUN,,HIRAGANA,,,忌日,きじつ,,kijitsu,"rocznica śmierci (na której wykonywane są obrządki buddyjskie ku jej chci)
+49 dzień po śmierci osoby, na której wykonywane są obrządki buddyjskie",,,"DUPLICATE 103642
+DUPLICATE 127678"
+127714,WORD_NOUN,,KATAKANA,,,-,ダイナリ,,dainari,"znak większości
+znak większej niż
+prawy nawias trójkątny",,,
+127715,WORD_NOUN,,HIRAGANA,,,母趾,ぼし,,boshi,duży palec,u nogi,,
+127716,WORD_NOUN,,KATAKANA_HIRAGANA,,,フジ棚,フジだな,,fujidana,"wisteria
+wistaria
+glicynia",roślina,,
+127717,WORD_NOUN,,KATAKANA,,,-,シナフジ,,shinafuji,"glicynia chińska
+słodlin chiński
+wisteria chińska","gatunek ozdobnego pnącza, należący do rodziny bobowatych, wisteria sinensis",,
+127718,WORD_NOUN,,HIRAGANA,,,野田藤,のだのふじ,,nodanofuji,"glicynia japońska
+glicynia kwiecista
+słodlin japoński
+wisteria japońska","gatunek wysokiego ozdobnego pnącza, należący do rodziny bobowatych, wisteria floribunda",,DUPLICATE 127687
+127719,WORD_NOUN,,KATAKANA,,,-,ノダフジ,,nodafuji,"glicynia japońska
+glicynia kwiecista
+słodlin japoński
+wisteria japońska","gatunek wysokiego ozdobnego pnącza, należący do rodziny bobowatych, wisteria floribunda",,
+127720,WORD_NOUN,,KATAKANA,,,-,ヤマフジ,,yamafuji,glicynia kwiecista,"gatunek ozdobnego pnącza, należący do rodziny bobowatych, wisteria brachybotrys",,
