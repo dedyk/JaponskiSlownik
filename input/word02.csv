@@ -62678,11 +62678,11 @@ zdolność mówienia",,,
 128059,WORD_NOUN,,HIRAGANA,,,画報,がほう,,gahou,magazyn ilustrowany,,,
 128060,WORD_NOUN,,KATAKANA,,,-,ピジャマ,,pijama,piżama,ang: pyjamas,,
 128061,WORD_VERB_U,,HIRAGANA,,,骨折る,ほねおる,,honeoru,dokładać starań,,,
-128062,WORD_EXPRESSION,,HIRAGANA,,,を通して,をとおして,,o tooshite,"na wskroś
+128062,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,を通して,をとおして,,o tooshite,"na wskroś
 przez
 poprzez",,,
 128063,"WORD_ADJECTIVE_NO
-WORD_NOUN",,HIRAGANA,,,大辛,おおから,,ookara,bardzo ostre,,,
+WORD_NOUN",,HIRAGANA,,,大辛,おおから,,ookara,bardzo ostre,,,DUPLICATE 128113
 128064,WORD_NOUN,,HIRAGANA,,,衆意,しゅうい,,shuui,opinia publiczna,,,
 128065,WORD_NOUN,,HIRAGANA,,,囚衣,しゅうい,,shuui,"więzienny strój
 więzienny uniform
@@ -62723,7 +62723,7 @@ mieć szlachetną naturę",,,
 128080,WORD_NOUN,,HIRAGANA,,,若衆,わかしゅ,,wakashu,"młody mężczyzna (w okresie Edo, szczególnie kto nie miał jeszcze ceremonii wejścia w dorosłość)
 młoda męska prostytutka
 młody aktor kabuki (który może grać homoseksualną prostytutkę)
-młody partner w homoseksualnym związku",,,
+młody partner w homoseksualnym związku",,,DUPLICATE 128125
 128081,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,五体満足,ごたいまんぞく,,gotai manzoku,"bez fizycznym wad
 w doskonałym zdrowiu
@@ -62746,7 +62746,7 @@ stałe zajęcie",,,
 128087,WORD_NOUN,,HIRAGANA,,,戦病死,せんびょうし,,senbyoushi,śmierć z powodu choroby nabytej na wojennym froncie,,,
 128088,WORD_EXPRESSION,,KATAKANA_HIRAGANA,,,パンツ一枚,パンツいちまい,,pantsu ichimai,"(noszenie) nic poza majtkami
 (założenie) nic poza majtkami",,,
-128089,WORD_NOUN,,HIRAGANA,,,幼心,おさなごころ,,osanagokoro,"dziecięcy umysł
+128089,WORD_NOUN,,HIRAGANA,,,幼心,おさなごころ,,osana gokoro,"dziecięcy umysł
 dziecięcy rozum
 dziecięce serce
 młody umysł",,,
@@ -62756,7 +62756,7 @@ młody umysł",,,
 128093,WORD_NOUN,,HIRAGANA,,,照明弾,しょうめいだん,,shoumeidan,"flara
 raca
 sygnał świetlny",,,
-128094,WORD_NOUN,,HIRAGANA,,,土埃,つちぼこり,,tsuchibokori,"kurz
+128094,WORD_NOUN,,HIRAGANA,,,土埃,つちぼこり,,tsuchi bokori,"kurz
 pył
 chmura kurzu
 chmura pyłu",,,
@@ -62797,3 +62797,82 @@ sportowy sedan
 łapacz (w baseballu)
 parowiec
 tajna służba","ang: speed-sensitive, suspended solids, Schutzstaffel, SS, service station, sporty sedan, shortstop, steamship, secret service",,
+128113,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,大辛,おおがら,,oogara,bardzo ostre,,,DUPLICATE 128063
+128114,WORD_ADVERB,,HIRAGANA,,,万遍無く,まんべんなく,,manben naku,"równo
+w całym
+po całym
+jednakowo
+bez wyjątku",,,
+128115,WORD_ADVERB,,HIRAGANA,,,万遍なく,まんべんなく,,manben naku,"równo
+w całym
+po całym
+jednakowo
+bez wyjątku",,,
+128116,WORD_ADVERB,,HIRAGANA,,,満遍無く,まんべんなく,,manben naku,"równo
+w całym
+po całym
+jednakowo
+bez wyjątku",,,
+128117,WORD_NOUN,,HIRAGANA,,,試し切り,ためしぎり,,tameshigiri,wypróbowanie nowego miecza lub ostrza,"pierwotnie na kimś, ale teraz na namoczonej słomianym celu",,
+128118,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,じょりじょり,,jori jori,odgłos zdrapywania,,,
+128119,WORD_TEMPORAL_NOUN,,HIRAGANA,,,此の期,このご,,kono go,"teraz (z niuansem w “ostatniej chwili”)
+???",,,
+128120,WORD_NOUN,,HIRAGANA,,,用達,ようたし,,youtashi,"wykonywanie spraw (do załatwienia)
+sprawy
+interesy
+robić swoją sprawę (np. w toalecie)
+pójść do toalety
+zaopatrywanie
+dostarczanie",,,DUPLICATE 128121
+128121,WORD_NOUN,,HIRAGANA,,,用達,ようたつ,,youtatsu,"wykonywanie spraw (do załatwienia)
+sprawy
+interesy
+robić swoją sprawę (np. w toalecie)
+pójść do toalety
+zaopatrywanie
+dostarczanie",,,DUPLICATE 128120
+128122,WORD_NOUN,,HIRAGANA,,,用足,ようたし,,youtashi,"wykonywanie spraw (do załatwienia)
+sprawy
+interesy
+robić swoją sprawę (np. w toalecie)
+pójść do toalety
+zaopatrywanie
+dostarczanie",,,
+128123,WORD_NOUN,,HIRAGANA,,,用たし,ようたし,,youtashi,"wykonywanie spraw (do załatwienia)
+sprawy
+interesy
+robić swoją sprawę (np. w toalecie)
+pójść do toalety
+zaopatrywanie
+dostarczanie",,,
+128124,WORD_NOUN,,HIRAGANA,,,用達し,ようたし,,youtashi,"wykonywanie spraw (do załatwienia)
+sprawy
+interesy
+robić swoją sprawę (np. w toalecie)
+pójść do toalety
+zaopatrywanie
+dostarczanie",,,
+128125,WORD_NOUN,,HIRAGANA,,,若衆,わかしゅう,,wakashuu,"młody mężczyzna (w okresie Edo, szczególnie kto nie miał jeszcze ceremonii wejścia w dorosłość)
+młoda męska prostytutka
+młody aktor kabuki (który może grać homoseksualną prostytutkę)
+młody partner w homoseksualnym związku",,,DUPLICATE 128080
+128126,WORD_NOUN,,KATAKANA,,,-,フェーザ,,feeza,???,"ang: phaser, phasor",,
+128127,WORD_NOUN,,HIRAGANA,,,おさな心,おさなごころ,,osana gokoro,"dziecięcy umysł
+dziecięcy rozum
+dziecięce serce
+młody umysł",,,
+128128,WORD_NOUN,,HIRAGANA,,,土ぼこり,つちぼこり,,tsuchi bokori,"kurz
+pył
+chmura kurzu
+chmura pyłu",,,
+128129,WORD_NOUN,,KATAKANA,,,-,バケツ・リレー,,baketsu riree,grupa osób przekazująca sobie wiadro np. w celu ugaszenia pożaru,ang: bucket relay,,
+128130,WORD_NOUN,,HIRAGANA,,,朝靄,あさもや,,asa moya,poranna mgła,,,
+128131,WORD_NOUN,,HIRAGANA,,,龜の甲,かめのこう,,kame no kou,skorupa żółwia,,,
+128132,WORD_NOUN,,HIRAGANA,,,檜舞台,ひのきぶたい,,hinokibutai,"scena wykonana z japońskich cyprysów
+jasno oświetlony przód sceny
+rozgłos",,,
+128133,WORD_NOUN,,HIRAGANA,,,奉持,ほうじ,,houji,???,,,
+128134,WORD_TEMPORAL_NOUN,,HIRAGANA,,,歿前,ぼつぜん,,botsuzen,"okres przed swoją śmiercią
+podczas swojego życia",,,
