@@ -5819,7 +5819,7 @@ gąbka roślinna
 coś bezużytecznego",,,
 102635,WORD_NOUN,,HIRAGANA,,,糸爪,へちま,,hechima,"trukwa egipska (roślina, luffa aegyptiaca)
 gąbka roślinna
-coś bezużytecznego",,,
+coś bezużytecznego",,,DUPLICATE 128251
 102636,WORD_NOUN,,KATAKANA,,,-,ヘチマ,,hechima,"trukwa egipska (roślina, luffa aegyptiaca)
 gąbka roślinna
 coś bezużytecznego",,,
@@ -40355,7 +40355,7 @@ WORD_ADVERBIAL_NOUN",,HIRAGANA,,,誰ひとり,だれひとり,,dare hitori,nikt,
 117915,"WORD_EXPRESSION
 WORD_ADVERBIAL_NOUN",,HIRAGANA,,,だれ一人,だれひとり,,dare hitori,nikt,,,
 117916,WORD_NOUN,,HIRAGANA,,,形許り,かたばかり,,katabakari,"dla formy sake
-???",,,
+???",,,DUPLICATE 128274
 117917,WORD_NOUN,,KATAKANA,,,-,シナノグルミ,,shinano gurumi,orzech włoski,juglans regia,,
 117918,WORD_ADVERB,,HIRAGANA,,,惟うに,おもうに,,omou ni,"przypuszczalnie
 prawdopodobnie
@@ -63034,11 +63034,12 @@ wędzony","np. śledź, ang: kipper",,
 WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,-,がくがく,,gaku gaku,"drżenie ciała
 stukot zębów
-???",,,
+???",,,"DUPLICATE 128209
+DUPLICATE 128260"
 128209,"WORD_ADJECTIVE_NA
 WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,諤々,がくがく,,gaku gaku,"szczery do bólu
-mówiący bez ogródek",,,
+mówiący bez ogródek",,,DUPLICATE 128208
 128210,"WORD_ADVERB_TO
 WORD_ADVERB
 WORD_NOUN
@@ -63054,9 +63055,9 @@ dostrajanie",,,
 podatek od papierosów",,,
 128213,WORD_NOUN,,HIRAGANA,,,実事,じつごと,,jitsugoto,"fakt
 prawda
-realistyczne opisanie zwykłego zdarzenia (przez mądrego człowieka)",,,
+realistyczne opisanie zwykłego zdarzenia (przez mądrego człowieka)",,,DUPLICATE 128214
 128214,WORD_NOUN,,HIRAGANA,,,実事,じつじ,,jitsuji,"fakt
-prawda",,,
+prawda",,,DUPLICATE 128213
 128215,WORD_NOUN,,HIRAGANA,,,索敵,さくてき,,sakuteki,poszukiwanie wroga,,,
 128216,WORD_EXPRESSION,,HIRAGANA,,,かく言う,かくいう,,kaku iu,"w ten sposób
 podobnie
@@ -63142,7 +63143,7 @@ różnica",,,
 128249,WORD_NOUN,,HIRAGANA,,,仮定法,かていほう,,kateihou,tryb łączący,,,
 128250,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,酪酸,らくさん,,rakusan,kwas masłowy,,,
-128251,WORD_NOUN,,HIRAGANA,,,糸爪,いとづめ,,itodume,rowki w palcach osoby grającej na shamisen spowodowane graniem na instrumencie,,,
+128251,WORD_NOUN,,HIRAGANA,,,糸爪,いとづめ,,itodume,rowki w palcach osoby grającej na shamisen spowodowane graniem na instrumencie,,,DUPLICATE 102635
 128252,WORD_NOUN,,KATAKANA,,,-,ミノ,,mino,"???
 krowi żwacz",,,
 128253,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル記述,ファイルきじゅつ,,fairu kijutsu,opis pliku,,,
@@ -63153,3 +63154,86 @@ uroczystość
 zabawa",,,
 128256,WORD_NOUN,,HIRAGANA,,,互市,ごし,,goshi,handel,,,
 128257,WORD_EXPRESSION,,HIRAGANA,,,何じゃ,なんじゃ,,nanja,co?,stanowczo,,
+128258,WORD_NOUN,,HIRAGANA,,,國章,こくしょう,,kokushou,"godło narodowe
+narodowa tarcza herbowa
+narodowy herb",,,
+128259,"WORD_ADJECTIVE_NA
+WORD_ADVERB
+WORD_NOUN",,KATAKANA,,,-,ガクガク,,gaku gaku,"drżenie ciała
+stukot zębów
+???",,,
+128260,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,諤諤,がくがく,,gaku gaku,"szczery do bólu
+mówiący bez ogródek",,,DUPLICATE 128208
+128261,"WORD_ADVERB_TO
+WORD_ADVERB
+WORD_NOUN
+WORD_INTERJECTION",,HIRAGANA,,,-,があん,,gaan,"bum
+huk
+trzask
+odgłos huku
+o mój Boże! (mangowy slang)",,,
+128262,"WORD_ADVERB_TO
+WORD_ADVERB
+WORD_NOUN
+WORD_INTERJECTION",,HIRAGANA_KATAKANA,,,-,がーん,,gaan,"bum
+huk
+trzask
+odgłos huku
+o mój Boże! (mangowy slang)",,,
+128263,WORD_NOUN,,KATAKANA_HIRAGANA,,,タバコ税,タバコぜい,,tabako zei,"podatek tytoniowy
+podatek od papierosów",,,
+128264,WORD_VERB_RU,,HIRAGANA,,,突き退ける,つきのける,,tsuki nokeru,"odepchnąć
+odpychać",,,
+128265,WORD_VERB_RU,,HIRAGANA,,,突き除ける,つきのける,,tsuki nokeru,"odepchnąć
+odpychać",,,
+128266,WORD_VERB_U,,HIRAGANA,,,消しとぶ,けしとぶ,,keshi tobu,"znikać
+rozpływać się",,,
+128267,WORD_NOUN,,HIRAGANA,,,安楽いす,あんらくいす,,anraku isu,wygodny fotel,,,
+128268,WORD_NOUN,,HIRAGANA,,,飲んべえ,のんべえ,,nonbee,"osoba pijąca duże ilości alkoholu
+alkoholik
+pijak",,,
+128269,WORD_NOUN,,HIRAGANA,,,呑ん兵衛,のんべえ,,nonbee,"osoba pijąca duże ilości alkoholu
+alkoholik
+pijak",,,
+128270,WORD_NOUN,,HIRAGANA,,,飲兵衛,のんべえ,,nonbee,"osoba pijąca duże ilości alkoholu
+alkoholik
+pijak",,,
+128271,WORD_NOUN,,HIRAGANA,,,呑兵衛,のんべえ,,nonbee,"osoba pijąca duże ilości alkoholu
+alkoholik
+pijak",,,
+128272,WORD_NOUN,,HIRAGANA,,,妙王,みょうおう,,myouou,Widjaradża,buddyzm,,
+128273,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,芽がでる,めがでる,,me ga deru,"pączkować
+puszczać pąki
+kiełkować
+puszczać pędy
+mieć szczęście
+mieć farta",,,
+128274,WORD_NOUN,,HIRAGANA,,,形許り,かたちばかり,,katachi bakari,???,,,DUPLICATE 117916
+128275,WORD_NOUN,,HIRAGANA,,,悔改め,くいあらため,,kui aratame,"skrucha
+żal",,,
+128276,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,依怙贔屓,えこひいき,,eko hiiki,"faworyzowanie
+stronniczość
+uprzedzenie
+tendencyjność",,,
+128277,WORD_NOUN,,HIRAGANA_KATAKANA,,,構造エンジニア,こうぞうエンジニア,,kouzou enjinia,"inżynier strukturalny
+inżynier konstruktor","analizuje, projektuje, planuje i bada elementy konstrukcji, jak i całe systemy konstrukcyjne w celu zapewnienia, że są one w stanie przenosić projektowane obciążenia i są bezpieczne dla użytkownika końcowego",,
+128278,WORD_NOUN,,HIRAGANA,,,構造力学,こうぞうりきがく,,kouzou rikigaku,mechanika konstrukcji,,,
+128279,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,えこ贔屓,えこひいき,,eko hiiki,"faworyzowanie
+stronniczość
+uprzedzenie
+tendencyjność",,,
+128280,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,依怙贔負,えこひいき,,eko hiiki,"faworyzowanie
+stronniczość
+uprzedzenie
+tendencyjność",,,
+128281,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,依估贔屓,えこひいき,,eko hiiki,"faworyzowanie
+stronniczość
+uprzedzenie
+tendencyjność",,,
