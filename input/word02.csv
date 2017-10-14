@@ -63247,9 +63247,9 @@ WORD_EXPRESSION",,HIRAGANA,,,雨が上がる,あめがあがる,,ame ga agaru,pr
 128286,WORD_EXPRESSION,,HIRAGANA,,,雨天中止,うてんちゅうし,,uten chuushi,odwołane z powodu deszczu,,,
 128287,WORD_NOUN,,HIRAGANA,,,雨降り星,あめふりぼし,,ame furi boshi,chiński gwiazdozbiór sieci,jeden z 28 domów,,
 128288,WORD_NOUN,,HIRAGANA,,,雨量計,うりょうけい,,uryoukei,deszczomierz,,,
-128289,WORD_NOUN,,HIRAGANA,,,雨燕,あまつばめ,,amatsubame,"jerzykowate (rodzina ptaków z rodziny Apodidae)
+128289,WORD_NOUN,,HIRAGANA,,,雨燕,あまつばめ,,ama tsubame,"jerzykowate (rodzina ptaków z rodziny Apodidae)
 jerzyk białorzytny (apus pacificus)",,,
-128290,WORD_NOUN,,HIRAGANA,,,雨傘蛇,あまがさへび,,amagasahebi,wąż jadowity z rodzaju Bungarus,szczególnie niemrawiec prążkowany,,
+128290,WORD_NOUN,,HIRAGANA,,,雨傘蛇,あまがさへび,,ama gasahebi,wąż jadowity z rodzaju Bungarus,szczególnie niemrawiec prążkowany,,
 128291,WORD_NOUN,,HIRAGANA,,,雨乞い,あまごい,,amagoi,"modlitwa o deszcz
 modlenie się o deszcz",,,
 128292,WORD_NOUN,,HIRAGANA,,,空手の型,からてのかた,,karate no kata,kata,w karate,,
@@ -63276,7 +63276,7 @@ koneser
 znawca
 ekspert",,,
 128305,WORD_NOUN,,HIRAGANA,,,円墳,えんぷん,,enpun,"okrągły kurhan
-okrągły kopiec pogrzebowy",,,
+okrągły kopiec pogrzebowy",,,DUPLICATE 128348
 128306,WORD_NOUN,,HIRAGANA,,,円借款,えんしゃっかん,,enshakkan,międzynarodowa pożyczka w jenach,,,
 128307,WORD_NOUN,,HIRAGANA,,,円椎,つぶらじい,,tsuburajii,castanopsis cuspidata,roślina,,
 128308,WORD_NOUN,,HIRAGANA,,,円軌道,えんきどう,,enkidou,orbita kołowa,,,
@@ -63310,7 +63310,7 @@ najnowsza produkcja",,,
 sytuacja, w której cudem unika się nieszczęścia",,,
 128323,WORD_NOUN,,HIRAGANA,,,間接喫煙,かんせつきつえん,,kansetsu kitsuen,"palenie bierne
 dym papierosowy, który wdychają osoby wokół palacza",,,
-128324,WORD_EXPRESSION,,HIRAGANA,,,間違いなし,まちがいなし,,machigainashi,"pewien
+128324,WORD_EXPRESSION,,HIRAGANA,,,間違いなし,まちがいなし,,machigai nashi,"pewien
 pewny
 niewątpliwie
 bez wątpienia",,,
@@ -63320,14 +63320,15 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,俺が俺が,おれがおれが,,ore ga ore ga,"j
 silne ego",,,
 128327,WORD_NOUN,,HIRAGANA,,,管理機能,かんりきのう,,kanri kinou,funkcja zarządzania,,,
 128328,WORD_NOUN,,HIRAGANA,,,-,もく,,moku,"papieros
-fajka",,,
+fajka",,,"DUPLICATE 60880
+DUPLICATE 68311"
 128329,WORD_NOUN,,HIRAGANA,,,東証,とうしょう,,toushou,Giełda Papierów Wartościowych w Tokio,skrót,,
 128330,WORD_NOUN,,HIRAGANA,,,唐戸,からど,,karado,"drzwi na zawiasach
 zawiasowe drzwi",,,
 128331,WORD_NOUN,,HIRAGANA,,,同一人,どういつにん,,douitsunin,ta sama osoba,,,
-128332,WORD_VERB_RU,,HIRAGANA,,,末枯れる,うらがれる,,uragareru,"znikać
+128332,WORD_VERB_RU,,HIRAGANA,,,末枯れる,うらがれる,,ura gareru,"znikać
 zniknąć
-gasnąć",szczególnie liści jako oznaka przyjścia zimy,,
+gasnąć",szczególnie liści jako oznaka przyjścia zimy,,DUPLICATE 90426
 128333,WORD_EXPRESSION,,HIRAGANA,,,壁に耳あり,かべにみみあり,,kabe ni mimi ari,ściany mają uszy,,,
 128334,WORD_NOUN,,HIRAGANA,,,増分,ぞうぶん,,zoubun,"przyrost
 wzrost
@@ -63337,3 +63338,32 @@ wzrost
 128337,WORD_NOUN,,HIRAGANA,,,画会,がかい,,gakai,stowarzyszenie patronu artystów,,,
 128338,WORD_NOUN,,HIRAGANA,,,宿命論,しゅくめいろん,,shukumeiron,fatalizm,,,
 128339,WORD_NOUN,,HIRAGANA,,,運命論,うんめいろん,,unmeiron,fatalizm,,,
+128340,WORD_NOUN,,HIRAGANA,,,雨どい,あまどい,,amadoi,rynna,,,
+128341,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,雨があがる,あめがあがる,,ame ga agaru,przestać padać,,,
+128342,WORD_NOUN,,HIRAGANA,,,雨降星,あめふりぼし,,ame furi boshi,chiński gwiazdozbiór sieci,jeden z 28 domów,,
+128343,WORD_NOUN,,HIRAGANA,,,畢宿,あめふりぼし,,ame furi boshi,chiński gwiazdozbiór sieci,jeden z 28 domów,,
+128344,WORD_NOUN,,KATAKANA,,,-,アマツバメ,,ama tsubame,"jerzykowate (rodzina ptaków z rodziny Apodidae)
+jerzyk białorzytny (apus pacificus)",,,
+128345,WORD_NOUN,,KATAKANA,,,-,アマガサヘビ,,ama gasahebi,wąż jadowity z rodzaju Bungarus,szczególnie niemrawiec prążkowany,,
+128346,WORD_NOUN,,HIRAGANA,,,雨請い,あまごい,,amagoi,"modlitwa o deszcz
+modlenie się o deszcz",,,
+128347,WORD_NOUN,,HIRAGANA,,,駅留め,えきどめ,,ekidome,"dostarczenie przesyłki do stacji
+przesyłka ładunku do stacji",,,
+128348,WORD_NOUN,,HIRAGANA,,,円墳,えんふん,,enfun,"okrągły kurhan
+okrągły kopiec pogrzebowy",,,DUPLICATE 128305
+128349,WORD_NOUN,,HIRAGANA,,,円ら椎,つぶらじい,,tsuburajii,castanopsis cuspidata,roślina,,
+128350,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ツブラジイ,,tsuburajii,castanopsis cuspidata,roślina,,
+128351,WORD_NOUN,,HIRAGANA,,,駅中,えきなか,,eki naka,"obszar sklepów na stacji kolejowej
+miejsce, gdzie znajdują się sklepy na dworcu kolejowym",,,
+128352,WORD_NOUN,,KATAKANA,,,-,エキナカ,,eki naka,"obszar sklepów na stacji kolejowej
+miejsce, gdzie znajdują się sklepy na dworcu kolejowym",,,
+128353,WORD_EXPRESSION,,HIRAGANA,,,間違い無し,まちがいなし,,machigai nashi,"pewien
+pewny
+niewątpliwie
+bez wątpienia",,,
+128354,WORD_VERB_RU,,HIRAGANA,,,うら枯れる,うらがれる,,ura gareru,"znikać
+zniknąć
+gasnąć",szczególnie liści jako oznaka przyjścia zimy,,
+128355,WORD_NOUN,,KATAKANA,,,-,タカナ,,takana,kapusta sitowata,brassica juncea var. integrifolia,,
+128356,WORD_NOUN,,HIRAGANA,,,泉貨,せんか,,senka,moneta,"szczególnie wschodnioazjatycka moneta, która ma dziurkę w środku",,
