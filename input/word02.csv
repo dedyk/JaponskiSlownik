@@ -6639,11 +6639,14 @@ DUPLICATE 103031"
 103031,WORD_NOUN,,HIRAGANA,,,監主,かんじ,,kanji,"jeden z sześciu administratorów świątyni Zen, którzy zastępują głównego kapłana",,,"DUPLICATE 103029
 DUPLICATE 103030"
 103032,WORD_NOUN,,HIRAGANA,,,監守,かんす,,kansu,"jeden z sześciu administratorów świątyni Zen, którzy zastępują głównego kapłana",,,"DUPLICATE 103033
-DUPLICATE 103034"
+DUPLICATE 103034
+DUPLICATE 128722"
 103033,WORD_NOUN,,HIRAGANA,,,監守,かんず,,kanzu,"jeden z sześciu administratorów świątyni Zen, którzy zastępują głównego kapłana",,,"DUPLICATE 103032
-DUPLICATE 103034"
+DUPLICATE 103034
+DUPLICATE 128722"
 103034,WORD_NOUN,,HIRAGANA,,,監守,かんじ,,kanji,"jeden z sześciu administratorów świątyni Zen, którzy zastępują głównego kapłana",,,"DUPLICATE 103032
-DUPLICATE 103033"
+DUPLICATE 103033
+DUPLICATE 128722"
 103035,WORD_NOUN,,HIRAGANA,,,龜鑑,きかん,,kikan,"wzór
 próbka
 przykład
@@ -64059,11 +64062,11 @@ dźwięk śmignięcia",,,
 128701,WORD_NOUN,,HIRAGANA,,,座標系,ざひょうけい,,zahyoukei,układ współrzędnych,,,
 128702,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,其処な,そこな,,sokona,tam,archaizm,,
 128703,WORD_NOUN,,HIRAGANA,,,増分量,ぞうぶんりょう,,zoubunryou,wielkość przyrostu,,,
-128704,WORD_NOUN,,KATAKANA,,,-,ヤオ,,yao,Yao,"lud mieszkający w Chinach i na Półwyspie Indochińskim w Wietnamie, Laosie i Tajlandii ",,
-128705,WORD_NOUN,,HIRAGANA,,,尖鼠,とがりねずみ,,togarinezumi,ryjówka,gatunek ssaka,,
+128704,WORD_NOUN,,KATAKANA,,,-,ヤオ,,yao,Yao,"lud mieszkający w Chinach i na Półwyspie Indochińskim w Wietnamie, Laosie i Tajlandii",,
+128705,WORD_NOUN,,HIRAGANA,,,尖鼠,とがりねずみ,,togari nezumi,ryjówka,gatunek ssaka,,
 128706,WORD_NOUN,,HIRAGANA,,,日不見,ひみず,,himizu,urotrichus talpoides,zwierzę,,
 128707,WORD_NOUN,,HIRAGANA,,,論理学,ろんりがく,,ronrigaku,logika,nauka,,
-128708,WORD_ADVERB,,HIRAGANA,,,を以て,をもって,,o motte,"za (pomocą)
+128708,WORD_ADVERB,,HIRAGANA_EXCEPTION,,,を以て,をもって,,o motte,"za (pomocą)
 z",,,
 128709,WORD_NOUN,,HIRAGANA,,,李下,りか,,rika,pod japońskim śliwkowym drzewem,,,
 128710,WORD_NOUN,,HIRAGANA,,,戯書き,ざれがき,,zaregaki,"coś napisanego dla zabawy
@@ -64090,10 +64093,12 @@ punkt widzenia
 perspektywa",,,
 128720,WORD_NOUN,,KATAKANA,,,-,モンク,,monku,"mnich
 zakonnik",ang: monk,,
-128721,WORD_EXPRESSION,,HIRAGANA,,,-,をも,,o mo,nawet,,,
+128721,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,-,をも,,o mo,nawet,,,
 128722,WORD_NOUN,,HIRAGANA,,,監守,かんしゅ,,kanshu,"opieka
 strzec
-czuwanie",,,
+czuwanie",,,"DUPLICATE 103032
+DUPLICATE 103033
+DUPLICATE 103034"
 128723,WORD_NOUN,,HIRAGANA,,,重言,じゅうごん,,juugon,"kolejne słowa o podobnych znaczeniu
 ciąg słów o podobnych znaczeniu",,,
 128724,WORD_NOUN,,HIRAGANA,,,躑躅,つつじ,,tsutsuji,azalia,,,
@@ -64107,7 +64112,7 @@ galop
 galop (taniec francuski)",,,
 128729,WORD_NOUN,,KATAKANA,,,-,ガロップ,,garoppu,galop,"taniec francuski, ang: galop",,
 128730,WORD_NOUN,,HIRAGANA,,,同構え,どうがまえ,,dougamae,element podstawowy kanji 13,,,
-128731,WORD_NOUN,,KATAKANA,,,-,ホームウエア,,hoomu uea,strój domowy,ang: home wear,,
+128731,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ホームウエア,,hoomu uea,strój domowy,ang: home wear,,
 128732,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,過去最高,かこさいこう,,kako saikou,"najlepszy wynik
 najwyższy rekord",,,
@@ -64129,7 +64134,7 @@ kreska pionowa
 belka pionowa
 ???",,,
 128741,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,円で囲む,まるでかこむ,,maru de kakomu,"otaczać (np. słowo, literę, symbol) kółkiem",,,
+WORD_EXPRESSION",,HIRAGANA,,,円で囲む,まるでかこむ,,maru de kakomu,"otaczać (np. słowo, literę, symbol) kółkiem",,,DUPLICATE 128766
 128742,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,一宇,いちう,,ichiu,"jeden dom
 jeden dach",,,
@@ -64166,3 +64171,31 @@ w imieniu",,,
 WORD_NOUN",,HIRAGANA,,,欽定,きんてい,,kintei,"upoważniony (przez cesarski lub królewski rozkaz)
 ustanowiony
 uchwalony",,,
+128756,WORD_NOUN,,KATAKANA,,,-,トガリネズミ,,togari nezumi,ryjówka,gatunek ssaka,,
+128757,WORD_NOUN,,HIRAGANA,,,日見ず,ひみず,,himizu,urotrichus talpoides,zwierzę,,
+128758,WORD_NOUN,,KATAKANA,,,-,ヒミズ,,himizu,urotrichus talpoides,zwierzę,,
+128759,WORD_ADVERB,,HIRAGANA_EXCEPTION,,,を以って,をもって,,o motte,"za (pomocą)
+z",,,
+128760,WORD_ADJECTIVE_I,,HIRAGANA,,,御安い,おやすい,,oyasui,"łatwy
+prosty
+nietrudny",,,
+128761,WORD_NOUN,,KATAKANA,,,-,ツツジ,,tsutsuji,azalia,,,
+128762,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ホーム・ウエア,,hoomu uea,strój domowy,ang: home wear,,
+128763,WORD_NOUN,,KATAKANA,,,-,ペーズリー,,peezurii,tureckie wzory,ang: paisley,,
+128764,WORD_NOUN,,KATAKANA,,,-,ファイラ,,faira,???,ang: filer,,
+128765,"WORD_PRONOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,誰某,だれそれ,,dare sore,pewna osoba,,,
+128766,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,円で囲む,えんでかこむ,,en de kakomu,"otaczać (np. słowo, literę, symbol) kółkiem",,,DUPLICATE 128741
+128767,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,丸で囲む,まるでかこむ,,maru de kakomu,"otaczać (np. słowo, literę, symbol) kółkiem",,,
+128768,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ユウル,,yuuru,okres Bożego Narodzenia,ang: yule,,
+128769,WORD_VERB_U,,HIRAGANA,,,書抜く,かきぬく,,kaki nuku,"wyciągać (np. fragment z książki)
+wykorzystać (np. fragment z książki)
+wybierać fragment
+wybierać ustęp",,,
+128770,WORD_VERB_RU,,HIRAGANA,,,罅ぜる,はぜる,,hazeru,"otworzyć nagle
+wpaść
+???",,,
+128771,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,-,フリをする,,furi o suru,pretendować,,,
