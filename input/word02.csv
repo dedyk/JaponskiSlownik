@@ -39963,7 +39963,7 @@ ciekawość
 dociekliwość",,,
 117725,WORD_NOUN,,HIRAGANA,,,地震対策,じしんたいさく,,jishin taisaku,"środki ostrożności przeciwko trzęsieniu ziemi
 środki zaradcze przeciwko trzęsieniu ziemi",,,
-117726,WORD_NOUN,,HIRAGANA,,,子ら,こら,,kora,dziecko,,,
+117726,WORD_NOUN,,HIRAGANA,,,子ら,こら,,kora,dziecko,,,DUPLICATE 129312
 117727,WORD_NOUN,,HIRAGANA,,,波来土,はらいど,,haraido,perlit,rodzaj skały,,
 117728,"WORD_EXPRESSION
 WORD_ADVERB",,HIRAGANA,,,早いこと,はやいこと,,hayai koto,szybko,,,
@@ -40108,7 +40108,7 @@ wyrób z metalu pokryty emalią (np. zlew, garnek i etc)",,,
 117783,WORD_NOUN,,HIRAGANA,,,冷奴,ひややっこ,,hiyayakko,"zimne tofu
 chłodne tofu",,,
 117784,WORD_NOUN,,KATAKANA,,,-,ニホンカワウソ,,nihon kawauso,japońska wydra rzeczna,lutra lutra whiteleyi,,
-117785,WORD_NOUN,,HIRAGANA,,,子等,こら,,kora,dziecko,,,
+117785,WORD_NOUN,,HIRAGANA,,,子等,こら,,kora,dziecko,,,DUPLICATE 129312
 117786,"WORD_EXPRESSION
 WORD_ADVERB",,HIRAGANA,,,早い事,はやいこと,,hayai koto,szybko,,,
 117787,WORD_NOUN,,HIRAGANA,,,田所,たどころ,,tadokoro,"pole uprawne
@@ -65475,7 +65475,8 @@ komisariat",,,
 129312,"WORD_CONJUNCTION
 WORD_INTERJECTION",,HIRAGANA,,,-,こら,,kora,"hej!
 używane w celu nakrzyczenia lub ganienia kogoś
-używane w celu wołania na kogoś",,,
+używane w celu wołania na kogoś",,,"DUPLICATE 117726
+DUPLICATE 117785"
 129313,WORD_NOUN,,KATAKANA_HIRAGANA,,,カビ臭,カビしゅう,,kabi shuu,zapach pleśni,,,
 129314,WORD_NOUN,,HIRAGANA,,,絶倒,ぜっとう,,zettou,"mocne podekscytowanie
 zrywanie bogów ze śmiechu",,,
@@ -65527,7 +65528,7 @@ położenie wyprostowane",,,
 literatka
 erudyta
 erudytka
-poeta",archaizm,,
+poeta",archaizm,,DUPLICATE 64515
 129335,WORD_NOUN,,HIRAGANA,,,紋白蝶,もんしろちょう,,monshirochou,bielinek rzepnik,"gatunek motyla dziennego z rodziny bielinkowatych, pieris rapae",,
 129336,WORD_NOUN,,HIRAGANA,,,大変身,だいへんしん,,daihenshin,"całkowita odmiana
 całkowita przemiana
@@ -65536,7 +65537,7 @@ znaczna zmiana",,,
 129338,WORD_NOUN,,HIRAGANA,,,成鶏,せいけい,,seikei,"dorosły kurczak
 dojrzały drób",,,
 129339,WORD_NOUN,,HIRAGANA,,,凱旋門,がいせんもん,,gaisenmon,łuk triumfalny,,,
-129340,WORD_NOUN,,HIRAGANA,,,芝海老,しばえび,,shibaebi,shiba shrimp,"zwierzę, metapenaeus joyneri",,
+129340,WORD_NOUN,,HIRAGANA,,,芝海老,しばえび,,shiba ebi,shiba shrimp,"zwierzę, metapenaeus joyneri",,
 129341,WORD_NOUN,,HIRAGANA,,,偏片,かたはら,,katahara,"jedna z par
 jedna strona",,,
 129342,"WORD_NOUN
@@ -65548,7 +65549,7 @@ słowo zapożyczone i przetłumaczone z innego języka",,,
 architektoniczny
 strukturalny",,,
 129345,WORD_NOUN,,HIRAGANA,,,戊辰,ぼしん,,boshin,piąty z cyklu seksagonalnego,,,
-129346,WORD_NOUN,,HIRAGANA,,,戊申,つちのえさる,,tsuchinoesaru,45-ty z cyklu seksagonalnego,,,
+129346,WORD_NOUN,,HIRAGANA,,,戊申,つちのえさる,,tsuchinoesaru,45-ty z cyklu seksagonalnego,,,DUPLICATE 129382
 129347,WORD_NOUN,,HIRAGANA,,,研究方法,けんきゅうほうほう,,kenkyuu houhou,"metoda badawcza
 metoda badań",,,
 129348,WORD_NOUN,,HIRAGANA,,,中継地,ちゅうけいじ,,chuukeiji,"postój
@@ -65563,7 +65564,7 @@ załącznik",,,
 malowidło ścienne na kafelkowej ścianie (szczególnie w łaźni publicznej)",,,
 129353,WORD_NOUN,,HIRAGANA,,,飯島虫喰,いいじまむしくい,,iijima mushikui,świstunka wyspowa,"ptak, phylloscopus ijimae",,
 129354,WORD_NOUN,,HIRAGANA,,,解析器,かいせきき,,kaisekiki,analizator,,,
-129355,WORD_NOUN,,HIRAGANA,,,卵割,らんかつ,,rankatsu,???,,,
+129355,WORD_NOUN,,HIRAGANA,,,卵割,らんかつ,,rankatsu,???,,,DUPLICATE 87864
 129356,WORD_NOUN,,HIRAGANA,,,画譜,がふ,,gafu,książka z obrazkami lub album,,,
 129357,WORD_NOUN,,HIRAGANA,,,訴人,そにん,,sonin,"strona (w procesie sądowym)
 oskarżający
@@ -65578,17 +65579,62 @@ para pracująca razem (archaizm)",,,
 129360,WORD_NOUN,,HIRAGANA,,,扶養控除,ふようこうじょ,,fuyou koujo,zwolnienie z podatku dla osób niesamodzielnych,,,
 129361,WORD_NOUN,,HIRAGANA,,,一双,いっそう,,issou,para,szczególnie składanego parawanu,,
 129362,WORD_NOUN,,HIRAGANA,,,法官,ほうかん,,houkan,sędzia,,,
-129363,WORD_NOUN,,HIRAGANA,,,-,のろ,,noro,żużel,,,
+129363,WORD_NOUN,,HIRAGANA,,,-,のろ,,noro,żużel,,,"DUPLICATE 28649
+DUPLICATE 59264
+DUPLICATE 59268
+DUPLICATE 75514
+DUPLICATE 75554
+DUPLICATE 75555
+DUPLICATE 98277"
 129364,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,開け広げ,あけひろげ,,ake hiroge,"niebaczny
 nierozważny
 szczery
 otwarty",mało znane słowo,,
 129365,WORD_NOUN,,KATAKANA,,,筒子,ピンズ,,pinzu,"kafelki z kropkami
-kafelki z kółkami",,,
+kafelki z kółkami",,,DUPLICATE 129386
 129366,WORD_NOUN,,HIRAGANA,,,糸楊枝,いとようじ,,itoyouji,nić dentystyczna,,,
 129367,WORD_NOUN,,KATAKANA,,,-,デンタルフロス,,dentaru furosu,nić dentystyczna,ang: dental floss,,
 129368,WORD_NOUN,,HIRAGANA,,,甚兵衛鮫,じんべえざめ,,jinbee zame,rekin wielorybi,"gatunek morskiej ryby chrzęstnoszkieletowej, jedyny przedstawiciel monotypowej rodziny Rhincodontidae, Rhincodon typus",,
 129369,WORD_NOUN,,HIRAGANA,,,甚平鮫,じんべいざめ,,jinbei zame,rekin wielorybi,"gatunek morskiej ryby chrzęstnoszkieletowej, jedyny przedstawiciel monotypowej rodziny Rhincodontidae, Rhincodon typus",,
 129370,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジンベエザメ属,ジンベエザメぞく,,jinbeezame zoku,Rhincodon,gatunek jedynego przedstawiciela rekina wielorybiego z rodziny Rhincodon,,
 129371,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジンベエザメ科,ジンベエザメか,,jinbeezame ka,Rhincodontidae,rodzina jedynego przedstawiciela rekina wielorybiego,,
+129372,"WORD_CONJUNCTION
+WORD_INTERJECTION",,KATAKANA,,,-,コラ,,kora,"hej!
+używane w celu nakrzyczenia lub ganienia kogoś
+używane w celu wołania na kogoś",,,
+129373,WORD_NOUN,,HIRAGANA,,,黴臭,かびしゅう,,kabi shuu,zapach pleśni,,,
+129374,WORD_VERB_U,,HIRAGANA,,,出かす,でかす,,dekasu,"robić
+popełnić
+osiągać
+zrealizować
+ukończyć",,,
+129375,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,道管,どうかん,,doukan,"rura
+kanał
+???",,,
+129376,WORD_NOUN,,HIRAGANA,,,絵付,えつけ,,etsuke,"obraz na ceramice
+rysunek na ceramice
+malowanie ceramiki",,,
+129377,WORD_NOUN,,KATAKANA,,,-,モンシロチョウ,,monshirochou,bielinek rzepnik,"gatunek motyla dziennego z rodziny bielinkowatych, pieris rapae",,
+129378,WORD_NOUN,,HIRAGANA,,,思う儘,おもうまま,,omou mama,zadowolone lub satysfakcja swojego serca,,,
+129379,WORD_NOUN,,HIRAGANA_KATAKANA,,,芝エビ,しばエビ,,shiba ebi,shiba shrimp,"zwierzę, metapenaeus joyneri",,
+129380,WORD_NOUN,,HIRAGANA,,,芝えび,しばえび,,shiba ebi,shiba shrimp,"zwierzę, metapenaeus joyneri",,
+129381,WORD_NOUN,,KATAKANA,,,-,シバエビ,,shiba ebi,shiba shrimp,"zwierzę, metapenaeus joyneri",,
+129382,WORD_NOUN,,HIRAGANA,,,戊申,ぼしん,,boshin,45-ty z cyklu seksagonalnego,,,DUPLICATE 129346
+129383,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,イイジマムシクイ,,iijima mushikui,świstunka wyspowa,"ptak, phylloscopus ijimae",,
+129384,WORD_NOUN,,HIRAGANA,,,鋳掛,いかけ,,ikake,"???
+mężczyzna i kobieta pracujący razem (archaizm)
+para pracująca razem (archaizm)",,,
+129385,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,明け広げ,あけひろげ,,ake hiroge,"niebaczny
+nierozważny
+szczery
+otwarty",mało znane słowo,,
+129386,WORD_NOUN,,KATAKANA,,,筒子,トンズ,,tonzu,"kafelki z kropkami
+kafelki z kółkami",,,DUPLICATE 129365
+129387,WORD_NOUN,,KATAKANA,,,餅子,ピンズ,,pinzu,"kafelki z kropkami
+kafelki z kółkami",,,
+129388,WORD_NOUN,,HIRAGANA,,,糸ようじ,いとようじ,,itoyouji,nić dentystyczna,,,
+129389,WORD_NOUN,,KATAKANA,,,-,デンタル・フロス,,dentaru furosu,nić dentystyczna,ang: dental floss,,
+129390,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ジンベエザメ,,jinbee zame,rekin wielorybi,"gatunek morskiej ryby chrzęstnoszkieletowej, jedyny przedstawiciel monotypowej rodziny Rhincodontidae, Rhincodon typus",,
