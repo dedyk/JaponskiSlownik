@@ -3011,8 +3011,10 @@ DUPLICATE 101422"
 101427,WORD_NOUN,,HIRAGANA,,,鯰号,なまずごう,,namazu gou,symulator trzęsienia ziemi,,,
 101428,WORD_NOUN,,KATAKANA,,,-,サワラ,,sawara,makrela królewska japońska,scomberomorus niphonius,,DUPLICATE 101176
 101429,WORD_NOUN,,HIRAGANA,,,燭魚,はたはた,,hatahata,wargowłos japoński,"ryba, arctoscopus japonicus",,
-101430,WORD_NOUN,,HIRAGANA,,,雷魚,はたはた,,hatahata,wargowłos japoński,"ryba, arctoscopus japonicus",,DUPLICATE 101431
-101431,WORD_NOUN,,HIRAGANA,,,雷魚,かみなりうお,,kaminariuo,wargowłos japoński,"ryba, arctoscopus japonicus",,DUPLICATE 101430
+101430,WORD_NOUN,,HIRAGANA,,,雷魚,はたはた,,hatahata,wargowłos japoński,"ryba, arctoscopus japonicus",,"DUPLICATE 101431
+DUPLICATE 129640"
+101431,WORD_NOUN,,HIRAGANA,,,雷魚,かみなりうお,,kaminariuo,wargowłos japoński,"ryba, arctoscopus japonicus",,"DUPLICATE 101430
+DUPLICATE 129640"
 101432,WORD_NOUN,,KATAKANA,,,-,ハタハタ,,hatahata,wargowłos japoński,"ryba, arctoscopus japonicus",,
 101433,WORD_NOUN,,HIRAGANA,,,螻蛄,おけら,,okera,"turkuć (szczególnie Gryllotalpa orientalis)
 być bez grosza (kolokwializm)
@@ -7312,7 +7314,7 @@ duży łuk (drogi)",,,
 103389,WORD_NOUN,,KATAKANA,,,-,グリースカップ,,guriisu kappu,smarownica kapturowa,ang: grease cup,,
 103390,WORD_NOUN,,KATAKANA,,,-,グリースアイス,,guriisu aisu,???,ang: grease ice,,
 103391,WORD_NOUN,,KATAKANA,,,-,マニッシュルック,,manisshu rukku,męski wygląd,"o kobiecie, ang: mannish look",,
-103392,WORD_NOUN,,HIRAGANA,,,截金,さいきん,,saikin,???,,,
+103392,WORD_NOUN,,HIRAGANA,,,截金,さいきん,,saikin,???,,,DUPLICATE 129700
 103393,WORD_NOUN,,HIRAGANA,,,杜氏,とじ,,toji,szef browaru sake,,,DUPLICATE 103324
 103394,WORD_NOUN,,HIRAGANA,,,えい航,えいこう,,eikou,holowanie,przez statek,,
 103395,WORD_NOUN,,HIRAGANA,,,後漢,こうかん,,koukan,"dynastia Han (w Chinach, 25-220 n.e., 947-950 n.e.)",,,DUPLICATE 103331
@@ -66201,7 +66203,8 @@ WORD_NOUN",,HIRAGANA,,,気まかせ,きまかせ,,kimakase,robienie jak się pod
 129638,WORD_NOUN,,HIRAGANA,,,十二月病,じゅうにがつびょう,,juunigatsu byou,bożonarodzeniowy stres,,,
 129639,WORD_NOUN,,KATAKANA,,,-,ソケイ,,sokei,jaśmin wielkokwiatowy,jasminum grandiflorum,,
 129640,WORD_NOUN,,HIRAGANA,,,雷魚,らいぎょ,,raigyo,"channa maculata (ryba)
-channa argus (gatunek słodkowodnej, drapieżnej ryby okoniokształtnej z rodziny żmijogłowowatych)",,,
+channa argus (gatunek słodkowodnej, drapieżnej ryby okoniokształtnej z rodziny żmijogłowowatych)",,,"DUPLICATE 101430
+DUPLICATE 101431"
 129641,WORD_NOUN,,KATAKANA,,,-,ライヒー,,raihii,channa maculata,ryba,,
 129642,WORD_NOUN,,HIRAGANA,,,嬥歌,かがい,,kagai,rytualne śpiewanie i tańczenie zebranej grupy młodych mężczyzn i kobiet,archaizm,,
 129643,WORD_NOUN,,KATAKANA,,,-,ニュートリノ,,nyuutorino,neutrino,,,
@@ -66317,3 +66320,51 @@ tradycyjna niechirurgiczna terapia",,,
 WORD_AUX",,HIRAGANA,,,-,ないで,,nai de,"bez robienia ...
 używane na końcu zdania jako niebezpośredni zakaz",,,
 129696,WORD_NOUN,,KATAKANA,,,-,フラグメント,,furagumento,fragment,,,
+129697,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ライヒイ,,raihii,channa maculata,ryba,,
+129698,WORD_NOUN,,HIRAGANA,,,截り金,きりかね,,kiri kane,"metaliczna folia cięta na paski lub inne kształt tworząc motywy dekoracyjne
+???",,,
+129699,WORD_NOUN,,HIRAGANA,,,切金,きりかね,,kiri kane,"metaliczna folia cięta na paski lub inne kształt tworząc motywy dekoracyjne
+???",,,
+129700,WORD_NOUN,,HIRAGANA,,,截金,きりかね,,kiri kane,"metaliczna folia cięta na paski lub inne kształt tworząc motywy dekoracyjne
+???",,,DUPLICATE 103392
+129701,WORD_CONJUNCTION,,HIRAGANA,,,仍って,よって,,yotte,"dlatego
+dlatego też
+zatem
+wskutek tego
+w rezultacie
+w konsekwencji
+z powodu
+z tego powodu",,,
+129702,WORD_CONJUNCTION,,HIRAGANA,,,依って,よって,,yotte,"dlatego
+dlatego też
+zatem
+wskutek tego
+w rezultacie
+w konsekwencji
+z powodu
+z tego powodu",,,
+129703,WORD_CONJUNCTION,,HIRAGANA,,,縁って,よって,,yotte,"dlatego
+dlatego też
+zatem
+wskutek tego
+w rezultacie
+w konsekwencji
+z powodu
+z tego powodu",,,
+129704,WORD_NOUN,,KATAKANA,,,-,トケイソウ,,tokeisou,"męczennica błękitna
+męczennica modra
+męczennica zwyczajna","gatunek pnącza należącego do rodziny męczennicowatych, passiflora caerulea",,
+129705,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,胸ぐらをつかむ,むなぐらをつかむ,,munagura o tsukamu,"złapać kogoś za kołnierz
+chwycić kogoś za kołnierz
+złapać kogoś za klapy
+chwycić kogoś za klapy",,,
+129706,WORD_NOUN,,HIRAGANA,,,木づち,きづち,,kiduchi,młotek drewniany,,,
+129707,WORD_ADJECTIVE_I,,HIRAGANA,,,分かりづらい,わかりづらい,,wakari durai,trudny do zrozumienia,,,
+129708,WORD_NOUN,,HIRAGANA,,,白浪,しらなみ,,shiranami,"grzywacze (duże fale)
+złodziej",,,
+129709,WORD_NOUN,,HIRAGANA,,,麻ひも,あさひも,,asahimo,"sznur konopny
+sznur z konopii
+lina konopna
+lina z konopii",,,
+129710,WORD_NOUN,,HIRAGANA,,,麻織り,あさおり,,asaori,tkanina z konopii,,,
