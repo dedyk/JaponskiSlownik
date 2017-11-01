@@ -409,6 +409,12 @@ public class Helper {
 						
 							kanjiToFound = currentSimilarReleatedSplited[0];
 														
+						} else if (	currentSimilarReleatedSplited.length == 2 && currentSimilarReleatedSplited[0].contains("、") == true &&
+									currentSimilarReleatedSplited[1].contains("、") == true) {
+							
+							kanjiToFound = currentSimilarReleatedSplited[0].substring(0, currentSimilarReleatedSplited[0].indexOf("、"));
+							kanaToFound = currentSimilarReleatedSplited[1].substring(0, currentSimilarReleatedSplited[1].indexOf("、"));							
+							
 						} else {
 							throw new DictionaryException("Unknown similar related word: " + currentSimilarReleated);
 						}
