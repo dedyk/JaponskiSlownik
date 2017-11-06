@@ -68407,8 +68407,10 @@ najwyższe oświecenie
 śmierć (buddyzm)
 śmierć Buddy (buddyzm)",,,
 130489,WORD_NOUN,,HIRAGANA,,,篠竹,しのだけ,,shinodake,"bambusowa trawa
-bambus",,,
-130490,WORD_NOUN,,HIRAGANA,,,篠竹,すずたけ,,suzutake,sasamorpha borealis,gatunek bambusowej trawy unikalny dla Japonii,,
+bambus",,,"DUPLICATE 75895
+DUPLICATE 130490"
+130490,WORD_NOUN,,HIRAGANA,,,篠竹,すずたけ,,suzutake,sasamorpha borealis,gatunek bambusowej trawy unikalny dla Japonii,,"DUPLICATE 75895
+DUPLICATE 130489"
 130491,WORD_NOUN,,KATAKANA,,,ＤＭＡ,ディーエムエー,,diiemuee,"Direct Memory Access
 DMA","z ang. bezpośredni dostęp do pamięci, technika, w której sprzęt komputerowy podłączony do płyty głównej, np. karta graficzna, karta dźwiękowa, karta sieciowa czy kontroler dysku twardego, mogą korzystać z pamięci operacyjnej RAM lub portów we-wy, pomijając przy tym CPU",,
 130492,WORD_NOUN,,HIRAGANA,,,花鶏,あとり,,atori,jer,"ptak, fringilla montifringilla",,
@@ -68446,7 +68448,7 @@ obok",,,
 130510,WORD_NOUN,,HIRAGANA,,,紅紫,こうし,,koushi,"szkarłat i purpura
 szkarłatny i purpurowy
 czerwono-purpurowy
-magenta",,,
+magenta",,,DUPLICATE 130548
 130511,WORD_NOUN,,KATAKANA,,,-,ツー,,tsuu,"dwa
 kreska (w alfabecie Morse'a, kolokwializm)",ang: two,,
 130512,WORD_NOUN,,HIRAGANA,,,お釈迦,おしゃか,,oshaka,"słabo wykonany przedmiot
@@ -68455,7 +68457,8 @@ Budda Siakjamuni (buddyzm, uprzejmie)",,,
 130513,WORD_NOUN,,HIRAGANA,,,肥厚性鼻炎,ひこうせいびえん,,hikousei bien,przerostowy nieżyt nosa,,,
 130514,WORD_NOUN,,HIRAGANA,,,複雑化,ふくざつか,,fukuzatsuka,komplikacja,,,
 130515,WORD_NOUN,,HIRAGANA,,,他念,たねん,,tanen,myślenie o czymś innym,,,
-130516,WORD_NOUN,,HIRAGANA,,,白象,しろぞう,,shirozou,biały słoń,,,
+130516,WORD_NOUN,,HIRAGANA,,,白象,しろぞう,,shirozou,biały słoń,,,"DUPLICATE 130550
+DUPLICATE 130551"
 130517,"WORD_ADVERB_TO
 WORD_ADVERB",,HIRAGANA,,,静々,しずしず,,shizu shizu,"cicho
 spokojnie
@@ -68470,7 +68473,7 @@ strata (np. w zdrapce na loterii)",,,
 130521,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,鎌を掛ける,かまをかける,,kama o kakeru,"oszukiwać kogoś (w zapewnieniu lub wyjawiania prawdy)
 ???",,,
-130522,WORD_VERB_RU,,HIRAGANA,,,かき交ぜる,かきまぜる,,kakimazeru,"mieszać
+130522,WORD_VERB_RU,,HIRAGANA,,,かき交ぜる,かきまぜる,,kaki mazeru,"mieszać
 zamieszać
 pomieszać",,,
 130523,WORD_NOUN,,HIRAGANA,,,後七日,ごしちにち,,goshichi nichi,8-14 styczeń,,,
@@ -68505,3 +68508,46 @@ wyprodukowany artykuł",,,
 130543,WORD_NOUN,,HIRAGANA,,,横着者,おうちゃくもの,,ouchakumono,"nierób
 obibok
 wałkoń",,,
+130544,WORD_NOUN,,KATAKANA,,,-,スズタケ,,suzutake,sasamorpha borealis,gatunek bambusowej trawy unikalny dla Japonii,,
+130545,WORD_NOUN,,HIRAGANA,,,獦子鳥,あとり,,atori,jer,"ptak, fringilla montifringilla",,
+130546,WORD_NOUN,,KATAKANA,,,-,アトリ,,atori,jer,"ptak, fringilla montifringilla",,
+130547,WORD_VERB_U,,HIRAGANA,,,戯す,じゃらす,,jarasu,"bawić się (czymś)
+bawić się z
+droczyć się
+dokuczać",,,
+130548,WORD_NOUN,,HIRAGANA,,,紅紫,べにむらさき,,beni murasaki,"szkarłat i purpura
+szkarłatny i purpurowy
+czerwono-purpurowy
+magenta",,,DUPLICATE 130510
+130549,WORD_NOUN,,HIRAGANA,,,御釈迦,おしゃか,,oshaka,"słabo wykonany przedmiot
+wybrakowany artykuł
+Budda Siakjamuni (buddyzm, uprzejmie)",,,
+130550,WORD_NOUN,,HIRAGANA,,,白象,はくぞう,,hakuzou,biały słoń,,,"DUPLICATE 130516
+DUPLICATE 130551"
+130551,WORD_NOUN,,HIRAGANA,,,白象,びゃくぞう,,byakuzou,biały słoń,,,"DUPLICATE 130516
+DUPLICATE 130550"
+130552,"WORD_ADVERB_TO
+WORD_ADVERB",,HIRAGANA,,,静静,しずしず,,shizu shizu,"cicho
+spokojnie
+powoli
+powabnie
+elegancko",,,
+130553,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,鎌をかける,かまをかける,,kama o kakeru,"oszukiwać kogoś (w zapewnieniu lub wyjawiania prawdy)
+???",,,
+130554,WORD_VERB_RU,,HIRAGANA,,,掻き混ぜる,かきまぜる,,kaki mazeru,"mieszać
+zamieszać
+pomieszać",,,
+130555,WORD_VERB_RU,,HIRAGANA,,,掻き交ぜる,かきまぜる,,kaki mazeru,"mieszać
+zamieszać
+pomieszać",,,
+130556,WORD_VERB_RU,,HIRAGANA,,,かき混ぜる,かきまぜる,,kaki mazeru,"mieszać
+zamieszać
+pomieszać",,,
+130557,WORD_NOUN,,HIRAGANA,,,八進数,はちしんすう,,hachi shinsuu,system ósemkowy,,,
+130558,WORD_NOUN,,KATAKANA_HIRAGANA,,,ＵＴＦ-８,ユーティーエフはち,,yuutiiefuhachi,UTF-8,system kodowania Unicode,,
+130559,WORD_NOUN,,KATAKANA,,,-,ユーティーエフエイト,,yuutiiefueito,UTF-8,system kodowania Unicode,,
+130560,WORD_NOUN,,HIRAGANA,,,照る照る坊主,てるてるぼうず,,teru teru bouzu,"papierowa lalka, do której dzieci modlą się o dobrą pogodę",zwykle biała i w kształcie buddyjskiego mnicha,,
+130561,WORD_NOUN,,HIRAGANA,,,照照坊主,てるてるぼうず,,teru teru bouzu,"papierowa lalka, do której dzieci modlą się o dobrą pogodę",zwykle biała i w kształcie buddyjskiego mnicha,,
+130562,WORD_NOUN,,HIRAGANA,,,照々坊主,てるてるぼうず,,teru teru bouzu,"papierowa lalka, do której dzieci modlą się o dobrą pogodę",zwykle biała i w kształcie buddyjskiego mnicha,,
+130563,WORD_NOUN,,HIRAGANA,,,居曲,いぐせ,,iguse,???,,,
