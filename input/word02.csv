@@ -68556,7 +68556,7 @@ pomieszać",,,
 WORD_ADJECTIVE_NO",,HIRAGANA,,,医用,いよう,,iyou,medyczne użycie,,,
 130566,WORD_NOUN,,HIRAGANA,,,戯け者,おどけもの,,odokemono,"idiota
 głupek
-dureń",,,
+dureń",,,DUPLICATE 83490
 130567,WORD_NOUN,,HIRAGANA,,,常灯,じょうとう,,joutou,"światełko płonące ciągle (np. na buddyjskim ołtarzu)
 przydrożna lampa, która świeci całą noc",,,
 130568,WORD_NOUN,,HIRAGANA,,,片肌,かたはだ,,katahada,nagie ramię,,,
@@ -68621,7 +68621,7 @@ przygotowywać",,,
 130592,WORD_EXPRESSION,,HIRAGANA,,,一本取られた,いっぽんとられた,,ippon torareta,właśnie!,,,
 130593,WORD_NOUN,,HIRAGANA,,,走査器,そうさき,,sousaki,skaner,,,
 130594,WORD_NOUN,,HIRAGANA,,,家捜し,やさがし,,yasagashi,"przeszukiwanie całego domu
-polowanie w domu",,,
+polowanie w domu",,,DUPLICATE 130629
 130595,WORD_NOUN,,HIRAGANA,,,冷製,れいせい,,reisei,danie na zimno,np. w restauracji,,
 130596,WORD_NOUN,,HIRAGANA,,,式台,しきだい,,shikidai,schodek przy wejściu w japońskim domu,,,
 130597,WORD_ADJECTIVE_NA,,HIRAGANA,,,気障り,きざわり,,kizawari,"niemiły
@@ -68652,12 +68652,14 @@ dogonienie
 nadganianie
 zrównanie",ang: catch-up,,
 130605,WORD_NOUN,,HIRAGANA,,,半幅,はんはば,,hanhaba,pół szerokości tkaniny,około 18 cm,,
-130606,WORD_NOUN,,KATAKANA,,,-,ルポライター,,ruporaitaa,"autor reportaży
-pisarz dokumentalny",skrót,,
+130606,WORD_NOUN,,KATAKANA,,,-,ルポライター,,rupo raitaa,"autor reportaży
+pisarz dokumentalny","skrót, ang: reporter writer",,
 130607,WORD_NOUN,,HIRAGANA,,,威張りん坊,いばりんぼう,,ibarin bou,"samochwała
 chwalipięta
 fanfaron
-apodyktyczna osoba",kolokwializm,,
+apodyktyczna osoba",kolokwializm,,"DUPLICATE 130640
+DUPLICATE 130641
+DUPLICATE 130642"
 130608,WORD_NOUN,,HIRAGANA,,,支援団体,しえんだんたい,,shien dantai,grupa wsparcia,,,
 130609,WORD_NOUN,,HIRAGANA,,,小法廷,しょうほうてい,,shouhoutei,"mała ława sędziów w sądzie najwyższym
 sąd rozpatrujący drobne wykroczenia
@@ -68681,3 +68683,86 @@ demonstrować
 maszerować
 iść w pochodzie",,,
 130619,WORD_NOUN,,HIRAGANA,,,洋本,ようほん,,youhon,książka zachodniego pochodzenia,,,
+130620,WORD_NOUN,,HIRAGANA,,,おどけ者,おどけもの,,odokemono,"idiota
+głupek
+dureń",,,
+130621,WORD_NOUN,,HIRAGANA,,,戲け者,おどけもの,,odokemono,"idiota
+głupek
+dureń",,,DUPLICATE 83492
+130622,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,輻湊,ふくそう,,fukusou,"korek (np. drogowy)
+zator (np. drogowy)
+przeludnienie
+zbieżność (szczególnie optyczna)
+konwergencja (szczególnie optyczna)",,,
+130623,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,曖々,あいあい,,ai ai,"przyćmiony
+słaby
+nikły
+niejasny",,,
+130624,WORD_NOUN,,KATAKANA,,,-,アセンブラー,,asenburaa,assembler,język programowania,,
+130625,WORD_NOUN,,KATAKANA,,,-,アプリケ,,apurike,"aplikacja
+naszywanie",ang: applique,,
+130626,WORD_EXPRESSION,,KATAKANA_HIRAGANA,,,ツキが良い,ツキがいい,,tsuki ga ii,"???
+mieć szczęście
+mający szczęście",,,
+130627,WORD_NOUN,,HIRAGANA,,,常燈明,じょうとうみょう,,joutoumyou,światełko płonące ciągle,np. na buddyjskim ołtarzu,,
+130628,WORD_VERB_IRREGULAR,,HIRAGANA,,,倶する,ぐする,,gu suru,"towarzyszyć
+odprowadzać
+iść za
+gromadzić (niezbędne przedmioty)
+zbierać (niezbędne przedmioty)
+przygotowywać",,,
+130629,WORD_NOUN,,HIRAGANA,,,家捜し,いえさがし,,iesagashi,"przeszukiwanie całego domu
+polowanie w domu",,,DUPLICATE 130594
+130630,WORD_NOUN,,HIRAGANA,,,家探し,やさがし,,yasagashi,"przeszukiwanie całego domu
+polowanie w domu",,,DUPLICATE 130631
+130631,WORD_NOUN,,HIRAGANA,,,家探し,いえさがし,,iesagashi,"przeszukiwanie całego domu
+polowanie w domu",,,DUPLICATE 130630
+130632,WORD_NOUN,,HIRAGANA,,,御墨付き,おすみつき,,osumitsuki,"pismo ręczne
+autograf
+upoważnienie
+certyfikat
+świadectwo
+zaświadczenie
+dokument z podpisem szoguna lub władcy",,,
+130633,WORD_NOUN,,HIRAGANA,,,黒丸,くろまる,,kuromaru,"czarny punkt
+środek tarczy
+kropka środkowa",,,
+130634,WORD_EXPRESSION,,HIRAGANA,,,目糞鼻糞を笑う,めくそはなくそをわらう,,mekuso hanakuso o warau,???,,,
+130635,WORD_EXPRESSION,,HIRAGANA,,,目糞鼻屎を笑う,めくそはなくそをわらう,,mekuso hanakuso o warau,???,,,
+130636,WORD_NOUN,,KATAKANA,,,-,ブラックスポットサージャンフィッシュ,,burakkusu potto saajan fisshu,acanthurus bariene,ryba,,
+130637,WORD_NOUN,,KATAKANA,,,-,ブラックスポットサージョンフィッシュ,,burakkusu potto saajon fisshu,acanthurus bariene,ryba,,
+130638,WORD_NOUN,,HIRAGANA,,,半巾,はんはば,,hanhaba,pół szerokości tkaniny,około 18 cm,,
+130639,WORD_NOUN,,KATAKANA,,,-,ルポ・ライター,,rupo raitaa,"autor reportaży
+pisarz dokumentalny","skrót, ang: reporter writer",,
+130640,WORD_NOUN,,HIRAGANA,,,威張りん坊,いばりんぼ,,ibarin bo,"samochwała
+chwalipięta
+fanfaron
+apodyktyczna osoba",kolokwializm,,"DUPLICATE 130607
+DUPLICATE 130641
+DUPLICATE 130642"
+130641,WORD_NOUN,,HIRAGANA,,,威張りん坊,えばりんぼ,,ebarin bo,"samochwała
+chwalipięta
+fanfaron
+apodyktyczna osoba",kolokwializm,,"DUPLICATE 130607
+DUPLICATE 130640
+DUPLICATE 130642"
+130642,WORD_NOUN,,HIRAGANA,,,威張りん坊,えばりんぼう,,ebarin bou,"samochwała
+chwalipięta
+fanfaron
+apodyktyczna osoba",kolokwializm,,"DUPLICATE 130607
+DUPLICATE 130640
+DUPLICATE 130641"
+130643,WORD_NOUN,,HIRAGANA,,,復原力,ふくげんりょく,,fukugen ryoku,"siła sprężystości
+równowaga",,,
+130644,WORD_NOUN,,KATAKANA,,,-,モビリティ,,mobiriti,"ruchliwość
+zdolność poruszania się",ang: mobility,,
+130645,WORD_VERB_U,,HIRAGANA,,,ねり歩く,ねりあるく,,neri aruku,"paradować
+demonstrować
+maszerować
+iść w pochodzie",,,
+130646,WORD_VERB_U,,HIRAGANA,,,練歩く,ねりあるく,,neri aruku,"paradować
+demonstrować
+maszerować
+iść w pochodzie",,,
