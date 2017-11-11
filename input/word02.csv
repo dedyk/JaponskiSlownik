@@ -69248,8 +69248,8 @@ mieć ciężko na żołądku",,,
 feudalizm",,,
 130892,WORD_NOUN,,HIRAGANA,,,故買,こばい,,kobai,kupowanie skradzionych towarów,,,
 130893,WORD_NOUN,,HIRAGANA,,,安居,あんきょ,,ankyo,"wygodne życie
-łatwe życie",,,
-130894,WORD_NOUN,,HIRAGANA,,,安居,あんご,,ango,???,buddyzm,,
+łatwe życie",,,DUPLICATE 130894
+130894,WORD_NOUN,,HIRAGANA,,,安居,あんご,,ango,???,buddyzm,,DUPLICATE 130893
 130895,WORD_NOUN,,HIRAGANA,,,活用表,かつようひょう,,katsuyouhyou,"tabele koniugacji
 tabela odmian
 tabela deklinacji",,,
@@ -69264,14 +69264,22 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,枯淡,こたん,,kotan,elegancka prostota,,,
 kategoryzacja",,,
 130901,WORD_NOUN,,HIRAGANA,,,夏越し,なつごし,,natsu goshi,"utrzymanie się przez lato
 utrzymywanie się przez lato",,,
-130902,WORD_EXPRESSION,,HIRAGANA,,,-,をして,,o shite,???,,,
-130903,WORD_NOUN,,HIRAGANA,,,幅跳び,はばとび,,habatobi,skok w dal,,,
-130904,WORD_NOUN,,KATAKANA,,,-,トン,,ton,kropka,"w alfabecie Morse'a, kolokwializm, ang: dot",,
+130902,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,-,をして,,o shite,???,,,
+130903,WORD_NOUN,,HIRAGANA,,,幅跳び,はばとび,,haba tobi,skok w dal,,,
+130904,WORD_NOUN,,KATAKANA,,,-,トン,,ton,kropka,"w alfabecie Morse'a, kolokwializm, ang: dot",,"DUPLICATE 22569
+DUPLICATE 26639
+DUPLICATE 26640
+DUPLICATE 130905"
 130905,WORD_NOUN,,KATAKANA,,,東,トン,,ton,"kafelek ze wschodnim wiatrem (Mahjong)
-???",,,
+???",,,"DUPLICATE 1329
+DUPLICATE 7143
+DUPLICATE 26878
+DUPLICATE 26879
+DUPLICATE 29347
+DUPLICATE 130904"
 130906,WORD_NOUN,,HIRAGANA,,,吏務,りむ,,rimu,praca urzędników,,,
 130907,WORD_NOUN,,KATAKANA,,,-,モジュール,,mojuuru,moduł,ang: module,,
-130908,WORD_VERB_U,,HIRAGANA,,,心ゆく,こころゆく,,kokoroyuku,być całkowicie zadowolonym,,,
+130908,WORD_VERB_U,,HIRAGANA,,,心ゆく,こころゆく,,kokoro yuku,być całkowicie zadowolonym,,,
 130909,WORD_ADJECTIVE_NA,,KATAKANA_HIRAGANA,,,プログラム可能,プログラムかのう,,puroguramu kanou,"programowalny
 dający się zaprogramować",,,
 130910,WORD_NOUN,,HIRAGANA,,,期内,きない,,kinai,"podczas okresu
@@ -69286,7 +69294,9 @@ w (miejscu, czasie)
 w (okresie czasu)",,,
 130912,WORD_VERB_U,,HIRAGANA,,,似寄る,による,,niyoru,przypominać,być podobnym do,,
 130913,WORD_NOUN,,KATAKANA,,,-,マングース,,manguusu,mangusta,ang: mongoose,,
-130914,WORD_NOUN,,HIRAGANA,,,-,どり,,dori,płuca ptaka,kolokwializm,,
+130914,WORD_NOUN,,HIRAGANA,,,-,どり,,dori,płuca ptaka,kolokwializm,,"DUPLICATE 77584
+DUPLICATE 77845
+DUPLICATE 77888"
 130915,WORD_NOUN,,HIRAGANA,,,報時,ほうじ,,houji,"ogłaszanie czasu
 anonsowanie czasu",,,
 130916,WORD_VERB_U,,HIRAGANA,,,引き摺り込む,ひきずりこむ,,hikizurikomu,???,,,
@@ -69308,7 +69318,7 @@ WORD_ADVERB_TO",,HIRAGANA,,,芬々,ふんぷん,,fun pun,silny,"zapach, szczegó
 130925,WORD_NOUN,,HIRAGANA,,,金閣,きんかく,,kinkaku,złoty pawilon,,,
 130926,WORD_NOUN,,KATAKANA,,,ＥＴＲ,イーティーアール,,iitiiaaru,inżynierski reaktor testowy,ang: ETR (engineering testing reactor),,
 130927,WORD_NOUN,,HIRAGANA,,,文字読み,もじよみ,,moji yomi,"czytanie czegoś (zwykle na głos) bez próby zrozumienia tego
-czytanie złożenia kanji z użyciem japońskiego czytania każdego znaku",,,
+czytanie złożenia kanji z użyciem japońskiego czytania każdego znaku",,,DUPLICATE 130966
 130928,"WORD_NOUN
 WORD_ADJECTIVE_F",,HIRAGANA,,,需品,じゅひん,,juhin,"zapas
 zaopatrzenie
@@ -69319,7 +69329,7 @@ sal (wysokie drzewo z rodziny dwuskrzydlcowatych występujące głównie na poł
 130930,WORD_NOUN,,HIRAGANA,,,現代文,げんだいぶん,,gendaibun,"współczesny japoński
 bieżący pisarski styl",,,
 130931,WORD_NOUN,,KATAKANA_HIRAGANA,,,ローマ法,ローマほう,,rooma hou,prawo rzymskie,,,
-130932,WORD_NOUN,,HIRAGANA,,,山烏,やまがらす,,yamagarasu,"wrona w górach
+130932,WORD_NOUN,,HIRAGANA,,,山烏,やまがらす,,yama garasu,"wrona w górach
 wrona wielkodzioba (gatunek ptaka z rodziny krukowatych, corvus macrorhynchos)
 gawron (corvus frugilegus)
 gapa (gatunek średniej wielkości ptaka synantropijnego z rodziny krukowatych, corvus frugilegus)
@@ -69328,7 +69338,7 @@ ciemnoskóra osoba (archaizm, poniżająco)",,,
 130934,WORD_NOUN,,HIRAGANA,,,臥龍,がりゅう,,garyuu,"niedoceniony geniusz
 nierozpoznany geniusz
 wyjątkowa osoba ukryta wśród mas
-leżący smok",,,
+leżący smok",,,DUPLICATE 130969
 130935,WORD_NOUN,,HIRAGANA,,,健胃,けんい,,ken'i,"wzmocnienie żołądka
 silny żołądek",,,
 130936,WORD_NOUN,,HIRAGANA,,,書目,しょもく,,shomoku,katalog książek,,,
@@ -69341,9 +69351,9 @@ droga do wzrostu",,,
 danina
 trybut",,,
 130941,WORD_NOUN,,HIRAGANA,,,経済水域,けいざいすいいき,,keizai suiiki,ekonomiczne wody lub strefa,,,
-130942,WORD_NOUN,,HIRAGANA,,,鳥屋,とや,,toya,kurnik,,,
+130942,WORD_NOUN,,HIRAGANA,,,鳥屋,とや,,toya,kurnik,,,DUPLICATE 130943
 130943,WORD_NOUN,,HIRAGANA,,,鳥屋,とりや,,toriya,"dystrybutor ptaków
-drobiarz",,,
+drobiarz",,,DUPLICATE 130942
 130944,WORD_NOUN,,KATAKANA_HIRAGANA,,,プリント配線,プリントはいせん,,purinto haisen,obwód drukowany,,,
 130945,WORD_NOUN,,HIRAGANA,,,取り扱い所,とりあつかいじょ,,tori atsukai jo,"agencja
 biuro",,,
@@ -69365,7 +69375,7 @@ ciągły
 trwałość
 ciągłość
 niezmienność",,,
-130951,WORD_NOUN,,HIRAGANA,,,歪曲,わいきょく,,waikyoku,"zniekształcenie
+130951,WORD_NOUN,,HIRAGANA,,,歪曲,わいきょく,,wai kyoku,"zniekształcenie
 przeinaczenie
 wypaczenie
 falsyfikacja
@@ -69384,3 +69394,47 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,普段から,ふだんから,,fudan kara,"rutynow
 regularnie
 zwyczajnie
 nawykowo",,,
+130955,WORD_NOUN,,HIRAGANA,,,幅とび,はばとび,,haba tobi,skok w dal,,,
+130956,WORD_NOUN,,HIRAGANA,,,幅飛び,はばとび,,haba tobi,skok w dal,,,
+130957,WORD_VERB_U,,HIRAGANA,,,心行く,こころゆく,,kokoro yuku,być całkowicie zadowolonym,,,
+130958,WORD_VERB_U,,HIRAGANA,,,引き摺りこむ,ひきずりこむ,,hikizurikomu,???,,,
+130959,WORD_VERB_U,,HIRAGANA,,,引きずり込む,ひきずりこむ,,hikizurikomu,???,,,
+130960,WORD_VERB_U,,HIRAGANA,,,引摺り込む,ひきずりこむ,,hikizurikomu,???,,,
+130961,WORD_NOUN,,KATAKANA,,,-,ウスイロコノマチョウ,,usuirokonomachou,melanitis leda,motyl,,
+130962,WORD_NOUN,,HIRAGANA,,,代わりばんこ,かわりばんこ,,kawari banko,"naprzemiennie
+robić na zmianę",,,
+130963,WORD_NOUN,,HIRAGANA,,,代り番こ,かわりばんこ,,kawari banko,"naprzemiennie
+robić na zmianę",,,
+130964,WORD_NOUN,,HIRAGANA,,,引き数,ひきすう,,hikisuu,argument,"np. funkcji, programu",,
+130965,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,芬芬,ふんぷん,,fun pun,silny,"zapach, szczególnie miły zapach",,
+130966,WORD_NOUN,,HIRAGANA,,,文字読み,もんじよみ,,monji yomi,"czytanie czegoś (zwykle na głos) bez próby zrozumienia tego
+czytanie złożenia kanji z użyciem japońskiego czytania każdego znaku",,,DUPLICATE 130927
+130967,WORD_NOUN,,HIRAGANA,,,山鴉,やまがらす,,yama garasu,"wrona w górach
+wrona wielkodzioba (gatunek ptaka z rodziny krukowatych, corvus macrorhynchos)
+gawron (corvus frugilegus)
+gapa (gatunek średniej wielkości ptaka synantropijnego z rodziny krukowatych, corvus frugilegus)
+ciemnoskóra osoba (archaizm, poniżająco)",,,
+130968,WORD_NOUN,,HIRAGANA,,,副司,ふうす,,fuusu,jeden z sześciu administratorów w świątyni Zen,odpowiedzialny za księgowość,,
+130969,WORD_NOUN,,HIRAGANA,,,臥龍,がりょう,,garyou,"niedoceniony geniusz
+nierozpoznany geniusz
+wyjątkowa osoba ukryta wśród mas
+leżący smok",,,DUPLICATE 130934
+130970,WORD_NOUN,,HIRAGANA,,,臥竜,がりゅう,,garyuu,"niedoceniony geniusz
+nierozpoznany geniusz
+wyjątkowa osoba ukryta wśród mas
+leżący smok",,,DUPLICATE 130971
+130971,WORD_NOUN,,HIRAGANA,,,臥竜,がりょう,,garyou,"niedoceniony geniusz
+nierozpoznany geniusz
+wyjątkowa osoba ukryta wśród mas
+leżący smok",,,DUPLICATE 130970
+130972,WORD_NOUN,,HIRAGANA,,,取扱い所,とりあつかいじょ,,tori atsukai jo,"agencja
+biuro",,,
+130973,WORD_NOUN,,HIRAGANA,,,わい曲,わいきょく,,wai kyoku,"zniekształcenie
+przeinaczenie
+wypaczenie
+falsyfikacja
+spaczenie",,,
+130974,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,腕がよい,うでがよい,,ude ga yoi,"zdolny
+zręczny",,,
