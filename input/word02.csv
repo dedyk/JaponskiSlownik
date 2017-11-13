@@ -69644,9 +69644,11 @@ węzeł chłonny",,,
 131065,WORD_NOUN,,HIRAGANA,,,衍字,えんじ,,enji,(nieumyślne) wstawienie znaku w tekście,,,
 131066,WORD_NOUN,,HIRAGANA,,,初参,しょさん,,shosan,"bycie w czyjeś służbie po raz pierwszy
 uczestnictwo po raz pierwszy
-odwiedzanie świątyni po raz pierwszy",,,
+odwiedzanie świątyni po raz pierwszy",,,"DUPLICATE 85806
+DUPLICATE 131067"
 131067,WORD_NOUN,,HIRAGANA,,,初参,ういざん,,uizan,"spotkanie ze swoich władcą po raz pierwszy (dla nowego służącego)
-ceremonia, w której nowy służący ma spotkanie ze swoimi nowym władcą",archaizm,,
+ceremonia, w której nowy służący ma spotkanie ze swoimi nowym władcą",archaizm,,"DUPLICATE 85806
+DUPLICATE 131066"
 131068,"WORD_VERB_U
 WORD_SUFFIX",,HIRAGANA,,,-,ばむ,,bamu,???,,,
 131069,WORD_NOUN,,HIRAGANA,,,画派,がは,,gaha,szkoła malarstwa,,,
@@ -69656,11 +69658,11 @@ deszczowe chodaki
 deszczowe drewniaki",,,
 131071,WORD_NOUN,,HIRAGANA,,,輻輳制御,ふくそうせいぎょ,,fukusou seigyo,kontrola przeciążenia,np. sieci,,
 131072,WORD_NOUN,,HIRAGANA_KATAKANA,,,牛ロース,ぎゅうロース,,gyuu roosu,pieczeń wołowa,,,
-131073,WORD_NOUN,,HIRAGANA,,,依估,いこ,,iko,???,,,
+131073,WORD_NOUN,,HIRAGANA,,,依估,いこ,,iko,???,,,DUPLICATE 131121
 131074,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,粗鬆,そそう,,sosou,"szorstki
 chropowaty
-nieokrzesany",,,
+nieokrzesany",,,DUPLICATE 131122
 131075,"WORD_ADVERBIAL_NOUN
 WORD_TEMPORAL_NOUN",,HIRAGANA,,,万古,ばんこ,,banko,wieczność,,,
 131076,WORD_NOUN,,HIRAGANA,,,召し換え,めしかえ,,meshi kae,zmiana ubrania,,,
@@ -69703,7 +69705,7 @@ fragmenty",,,
 131094,WORD_NOUN,,HIRAGANA,,,歴史的仮名遣い,れきしてきかなづかい,,rekishiteki kana dukai,"historyczna ortografia kana (przed reformą z 1946 roku)
 stara ortografia kana",,,
 131095,WORD_NOUN,,HIRAGANA,,,韻書,いんしょ,,insho,???,,,
-131096,WORD_NOUN,,HIRAGANA,,,浅緑,あさみどり,,asamidori,jasnozielony,,,
+131096,WORD_NOUN,,HIRAGANA,,,浅緑,あさみどり,,asamidori,jasnozielony,,,DUPLICATE 131128
 131097,WORD_NOUN,,HIRAGANA,,,検討会,けんとうかい,,kentoukai,"spotkanie zwołane w celu omówienia problemów
 konferencja ds. planowania
 spotkanie przeglądowe
@@ -69716,7 +69718,8 @@ bezustanny
 bez końca
 ciągle
 ciągły",,,
-131099,WORD_NOUN,,HIRAGANA,,,沈丁花,じんちょうげ,,jinchouge,wawrzynek wonny,"roślina, daphne odora",,
+131099,WORD_NOUN,,HIRAGANA,,,沈丁花,じんちょうげ,,jinchouge,wawrzynek wonny,"roślina, daphne odora",,"DUPLICATE 131129
+DUPLICATE 131130"
 131100,WORD_VERB_U,,HIRAGANA,,,読み下す,よみくだす,,yomi kudasu,transliterować klasyczny chiński na japoński,,,
 131101,WORD_ADJECTIVE_I,,HIRAGANA,,,艶っぽい,つやっぽい,,tsuyappoi,"romantyczny
 kokieteryjny
@@ -69765,3 +69768,46 @@ osoba bez zdolności prawnej",,,
 być zdolny ukrywać
 być zdolny skrywać",,,
 131119,WORD_NOUN,,HIRAGANA,,,無条件降伏,むじょうけんこうふく,,mujouken koufuku,bezwarunkowa kapitulacja,,,
+131120,WORD_NOUN,,HIRAGANA,,,-,けった,,ketta,rower,kolokwializm,,
+131121,WORD_NOUN,,HIRAGANA,,,依估,えこ,,eko,???,,,DUPLICATE 131073
+131122,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,粗鬆,そしょう,,soshou,"szorstki
+chropowaty
+nieokrzesany",,,DUPLICATE 131074
+131123,WORD_NOUN,,HIRAGANA,,,召し替え,めしかえ,,meshi kae,zmiana ubrania,,,
+131124,WORD_NOUN,,HIRAGANA,,,談林,だんりん,,danrin,"buddyjskie centrum do nauk i medytacji
+monaster
+monastyr
+klasztor
+świątynia
+poezja haikai w stylu Danrin (żartobliwy i zorientowany na zwykłą osobę, skrót)
+szkoła Danrin (poezji haikai, skrót)",,,
+131125,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,こま切れ,こまぎれ,,komagire,"małe kawałki
+fragmenty",,,
+131126,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,小間切れ,こまぎれ,,komagire,"małe kawałki
+fragmenty",,,
+131127,WORD_NOUN,,HIRAGANA,,,歴史的仮名遣,れきしてきかなづかい,,rekishiteki kana dukai,"historyczna ortografia kana (przed reformą z 1946 roku)
+stara ortografia kana",,,
+131128,WORD_NOUN,,HIRAGANA,,,浅緑,せんりょく,,senryoku,jasnozielony,,,DUPLICATE 131096
+131129,WORD_NOUN,,HIRAGANA,,,沈丁花,ちんちょうげ,,chinchouge,wawrzynek wonny,"roślina, daphne odora",,"DUPLICATE 131099
+DUPLICATE 131130"
+131130,WORD_NOUN,,HIRAGANA,,,沈丁花,ぢんちょうげ,,dinchouge,wawrzynek wonny,"roślina, daphne odora",,"DUPLICATE 131099
+DUPLICATE 131129"
+131131,WORD_NOUN,,KATAKANA,,,-,ジンチョウゲ,,jinchouge,wawrzynek wonny,"roślina, daphne odora",,
+131132,WORD_NOUN,,KATAKANA,,,-,チンチョウゲ,,chinchouge,wawrzynek wonny,"roślina, daphne odora",,
+131133,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヂンチョウゲ,,dinchouge,wawrzynek wonny,"roślina, daphne odora",,
+131134,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,けらけら,,kera kera,"rechot
+odgłos cichego śmiechu",,,
+131135,WORD_ADVERB,,HIRAGANA,,,並て,なべて,,nabete,"w ogóle
+ogólnie
+generalnie
+na ogół",,,
+131136,WORD_NOUN,,HIRAGANA,,,令外官,りょうげのかん,,ryouge no kan,rządowe stanowisko nieokreślone w administracyjnym kodzie ritsuryo,archaizm,,
+131137,"WORD_NOUN
+WORD_ADVERB_TO",,HIRAGANA,,,-,くにゃくにゃ,,kunya kunya,(wrażenie bycia) miękkim i elastycznym,,,
+131138,WORD_VERB_RU,,HIRAGANA,,,隠しきれる,かくしきれる,,kakushi kireru,"być zdolny ukryć
+być zdolny ukrywać
+być zdolny skrywać",,,
