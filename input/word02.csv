@@ -70321,7 +70321,7 @@ pomiar pozycji",,,
 branża budowlana",,,
 131333,WORD_NOUN,,HIRAGANA,,,墨客,ぼっかく,,bokkaku,"artysta
 pisarz
-autor",,,
+autor",,,DUPLICATE 131399
 131334,WORD_VERB_U,,HIRAGANA,,,礼す,らいす,,raisu,"oddawać cześć
 wielbić
 czcić",,,
@@ -70335,12 +70335,14 @@ test Manna-Whitneya",semi-nieparametryczny test do sprawdzenia czy wartości pr�
 poetycka forma “móc” w czasie przeszłym
 wskazuje na kontynuację z przeszłości aż do teraźniejszości
 koniec
-zakończenie",,,
+zakończenie",,,"DUPLICATE 56968
+DUPLICATE 56996
+DUPLICATE 61674"
 131341,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,不撓,ふとう,,futou,"nieugięty
 nieelastyczny
 nieustępliwy",,,
-131342,WORD_NOUN,,HIRAGANA,,,聞法,もんぼう,,monbou,słuchanie nauk Buddy,,,
+131342,WORD_NOUN,,HIRAGANA,,,聞法,もんぼう,,monbou,słuchanie nauk Buddy,,,DUPLICATE 131401
 131343,WORD_NOUN,,HIRAGANA,,,木所,きどころ,,kidokoro,klasyfikacja pachnącego drewna używanego jako kadzidło,,,
 131344,WORD_NOUN,,HIRAGANA,,,護摩,ごま,,goma,homa,"w hinduizmie, dźinizmie i buddyzmie – rodzaj ofiary, której centralnym elementem jest święty ogień",,
 131345,WORD_NOUN,,KATAKANA,,,-,シメ,,shime,"grubodziób zwyczajny
@@ -70403,9 +70405,9 @@ turniej (średniowieczny)",,,
 131371,WORD_NOUN,,HIRAGANA,,,自由都市,じゆうとし,,jiyuu toshi,"wolne miasto (Niemcy)
 gmina (średniowiecznej Europy)
 komuna (średniowiecznej Europy)",,,
-131372,WORD_NOUN,,HIRAGANA,,,吾妻鏡,あずまかがみ,,azumakagami,"japoński średniowieczny tekst, który kronikuje wydarzenia z szogunatu Kamakura",,,
+131372,WORD_NOUN,,HIRAGANA,,,吾妻鏡,あずまかがみ,,azumakagami,"japoński średniowieczny tekst, który kronikuje wydarzenia z szogunatu Kamakura",,,DUPLICATE 131404
 131373,WORD_NOUN,,HIRAGANA,,,神名,しんめい,,shinmei,"imię boga
-nazwa świątyni",,,
+nazwa świątyni",,,DUPLICATE 131407
 131374,WORD_ADJECTIVE_NA,,HIRAGANA,,,機動的,きどうてき,,kidouteki,"sprawny, elastyczny (np. w zarządzaniu przedsiębiorstwem)
 bystry
 lotny
@@ -70471,3 +70473,41 @@ plan renowacji","zwykle domu, ang: reform plan",,
 przebudować",mało znane słowo,,
 131397,WORD_VERB_U,,HIRAGANA,,,縫い直す,ぬいなおす,,nui naosu,???,,,
 131398,WORD_VERB_U,,HIRAGANA,,,漉き返す,すきかえす,,suki kaesu,???,,,
+131399,WORD_NOUN,,HIRAGANA,,,墨客,ぼっきゃく,,bokkyaku,"artysta
+pisarz
+autor",,,DUPLICATE 131333
+131400,WORD_NOUN,,KATAKANA_HIRAGANA,,,マン・ホイットニーのＵ検定,マンホイットニーのユーけんてい,,man hoittonii no yuu kentei,"test Manna-Whitneya-Wilcoxona
+test Manna-Whitneya",semi-nieparametryczny test do sprawdzenia czy wartości próbek pobranych z dwóch niezależnych populacji są jednakowo duże,,DUPLICATE 87101
+131401,WORD_NOUN,,HIRAGANA,,,聞法,もんぽう,,monpou,słuchanie nauk Buddy,,,DUPLICATE 131342
+131402,WORD_NOUN,,HIRAGANA,,,名づけ,なづけ,,naduke,"nazywanie
+nadawanie imienia
+narzeczony (skrót)
+narzeczona (skrót)",,,
+131403,WORD_NOUN,,HIRAGANA,,,御叱り,おしかり,,oshikari,"bura
+nagana
+łajanie",honoryfikatywnie,,
+131404,WORD_NOUN,,HIRAGANA,,,吾妻鏡,あづまかがみ,,adumakagami,"japoński średniowieczny tekst, który kronikuje wydarzenia z szogunatu Kamakura",,,DUPLICATE 131372
+131405,WORD_NOUN,,HIRAGANA,,,東鑑,あずまかがみ,,azumakagami,"japoński średniowieczny tekst, który kronikuje wydarzenia z szogunatu Kamakura",,,DUPLICATE 131406
+131406,WORD_NOUN,,HIRAGANA,,,東鑑,あづまかがみ,,adumakagami,"japoński średniowieczny tekst, który kronikuje wydarzenia z szogunatu Kamakura",,,DUPLICATE 131405
+131407,WORD_NOUN,,HIRAGANA,,,神名,じんみょう,,jinmyou,"imię boga
+nazwa świątyni",,,DUPLICATE 131373
+131408,WORD_NOUN,,HIRAGANA,,,御挨拶,ごあいさつ,,goaisatsu,"powitanie (uprzejmie)
+(używane jako część sarkastycznej odpowiedzi na nieuprzejmą uwagę)",,,
+131409,WORD_NOUN,,HIRAGANA,,,觀音菩薩,かんのんぼさつ,,kannon bosatsu,"Kannon (Bodhisattva)
+Kwannon
+Bogini Miłosierdzia
+Bodhisattva of Compassion
+Guan Yin
+Kuan Yin",buddyzm,,
+131410,WORD_NOUN,,KATAKANA,,,-,リノヴェーション,,rinoveeshon,"remont
+renowacja",ang: renovation,,
+131411,WORD_NOUN,,KATAKANA,,,-,レノベーション,,renobeeshon,"remont
+renowacja",ang: renovation,,
+131412,WORD_NOUN,,KATAKANA,,,-,レノヴェーション,,renoveeshon,"remont
+renowacja",ang: renovation,,
+131413,WORD_NOUN,,KATAKANA,,,-,プラント・リノベーション,,puranto rinobeeshon,"plan remontu
+plan renowacji",ang: plant renovation,,
+131414,WORD_NOUN,,KATAKANA,,,-,リフォーム・プラン,,rifoomu puran,"plan remontu
+plan renowacji","zwykle domu, ang: reform plan",,
+131415,WORD_VERB_U,,HIRAGANA,,,縫いなおす,ぬいなおす,,nui naosu,???,,,
+131416,WORD_VERB_U,,HIRAGANA,,,抄き返す,すきかえす,,suki kaesu,???,,,
