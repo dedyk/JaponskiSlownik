@@ -2543,6 +2543,44 @@ public class WordGenerator {
 				break;
 			}
 			
+			case SHOW_MISSING_WORDS_AND_COMPARE_TO_JMEDICT: {
+				
+				// przygotowywane slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				
+				// lista wszystkich slow
+				List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+				
+				// lista brakujacych slow
+				List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
+				
+				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+					
+					DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+					
+					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+						continue;
+					}					
+					
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
+					
+					if (groupEntryList == null || groupEntryList.size() == 0) {
+						
+						if (polishJapaneseEntry.getKnownDuplicatedList().size() > 0) {
+							result.add(polishJapaneseEntry);
+						}
+						
+						
+						
+					}					
+				}
+				
+				// zapis porcji slow
+				CsvReaderWriter.generateCsv(new String[] { "input/missing-words-and-compare-to-jmedict.csv" }, result, true, true, false);
+
+				break;
+			}
+			
 			case HELP: {
 				
 				// pobranie listy mozliwych operacji

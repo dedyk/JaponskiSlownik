@@ -3510,15 +3510,15 @@ molestowanie
 prześladowanie
 znęcanie się",ang: harassment,,
 101670,WORD_NOUN,,HIRAGANA,,,副木,ふくぼく,,fukuboku,"szyna unieruchamiająca złamaną kończynę
-szyna medyczna",,,DUPLICATE 101675
+szyna medyczna",,,
 101671,WORD_NOUN,,KATAKANA_HIRAGANA,,,テータ関数,テータかんすう,,teeta kansuu,funkcja teta,,,
 101672,WORD_NOUN,,HIRAGANA,,,邑落,ゆうらく,,yuuraku,"osada
 wioska",,,
 101673,WORD_NOUN,,HIRAGANA,,,良い男,よいおとこ,,yoi otoko,przystojny mężczyzna,,,
 101674,WORD_NOUN,,HIRAGANA,,,福木,ふくぎ,,fukugi,"fukugi (garcinia subelliptica, roślina)
 drzewo szczęścia",,,
-101675,WORD_NOUN,,HIRAGANA,,,副木,ふくぎ,,fukugi,"szyna unieruchamiająca złamaną kończynę
-szyna medyczna",,,DUPLICATE 101670
+101675,"WORD_INTERJECTION
+WORD_NOUN",,HIRAGANA,,,-,あかんべえ,,akan bee,gest twarzy polegający na ściągnięciu powieki i wystawieniu języka,,,
 101676,WORD_NOUN,,HIRAGANA,,,矢尻,やじり,,yajiri,grot strzały,,,
 101677,WORD_NOUN,,HIRAGANA,,,矢じり,やじり,,yajiri,grot strzały,,,
 101678,WORD_NOUN,,HIRAGANA,,,瘧,わらわやみ,,warawayami,"febra
@@ -4909,8 +4909,8 @@ płyta winylowa (skrót)",,,
 rumieniec","ang: brush, blush",,
 102148,WORD_NOUN,,KATAKANA,,,-,ブラシュ,,burashu,"szczotka (do włosów)
 rumieniec","ang: brush, blush",,
-102149,WORD_NOUN,,HIRAGANA_KATAKANA,,,序ノ口,じょノくち,,jonokuchi,"najniższa dywizja (sumo)
-najniższa liga (sumo)",,,DUPLICATE 113839
+102149,"WORD_INTERJECTION
+WORD_NOUN",,HIRAGANA_KATAKANA,,,-,あかんべー,,akan bee,gest twarzy polegający na ściągnięciu powieki i wystawieniu języka,,,
 102150,WORD_NOUN,,HIRAGANA,,,巻数,かんじゅ,,kanju,"ilość tomów
 ilość wolumenów
 ilość szpuli
@@ -25697,15 +25697,15 @@ typ dokumentu bazowego",,,
 111737,WORD_NOUN,,HIRAGANA,,,基本文書要素,きほんぶんしょようそ,,kihon bunsho youso,"element dokumentu podstawowego
 element dokumentu bazowego",,,
 111738,WORD_NOUN,,KATAKANA,,,-,ペイガニズム,,peiganizumu,pogaństwo,ang: paganism,,
-111739,WORD_NOUN,,HIRAGANA,,,地上げ,ちあげ,,chiage,"spekulacje gruntami
-podnoszenie poziomu terenu
-podnoszenie poziomu gruntu",,,DUPLICATE 111614
+111739,WORD_NOUN,,HIRAGANA,,,当腹,むかいばら,,mukai bara,dziecko urodzone przez swoją prawną żonę,"jako przeciwieństwo dziecka urodzoną przez swoją konkubinę, archaizm",,"DUPLICATE 131260
+DUPLICATE 131305"
 111740,WORD_NOUN,,HIRAGANA,,,地揚げ,じあげ,,jiage,"spekulacje gruntami
 podnoszenie poziomu terenu
-podnoszenie poziomu gruntu",,,DUPLICATE 111741
-111741,WORD_NOUN,,HIRAGANA,,,地揚げ,ちあげ,,chiage,"spekulacje gruntami
-podnoszenie poziomu terenu
-podnoszenie poziomu gruntu",,,DUPLICATE 111740
+podnoszenie poziomu gruntu",,,
+111741,WORD_NOUN,,HIRAGANA,,,仕舞屋,しもたや,,shimota ya,"sklep, który zakończył swoją działalność
+sklep, który zamknął swój biznes
+sklep, który zniknął z rynku
+gospodarstwo domowe, które żyje bez prowadzenia działalności gospodarczej",,,DUPLICATE 125610
 111742,WORD_NOUN,,HIRAGANA,,,小闌,しょうらん,,shouran,"mała poręcz
 mała barierka
 mały płotek",mało znane słowo,,
@@ -30562,7 +30562,7 @@ pozór",,,
 pretekst
 pozór",,,
 113707,WORD_VERB_U,,HIRAGANA,,,借切る,かりきる,,karikiru,rezerwować,,,
-113708,WORD_NOUN,,HIRAGANA,,,序ノ口格,じょのくちかく,,jo no kuchi kaku,sędzia sędziujący w najniższej dywizji (lidze),sumo,,
+113708,WORD_NOUN,,HIRAGANA,,,序ノ口格,じょのくちかく,,jonokuchi kaku,sędzia sędziujący w najniższej dywizji (lidze),sumo,,
 113709,WORD_NOUN,,HIRAGANA,,,地ひびき,じひびき,,jihibiki,"podziemne dudnienie
 wstrząs podziemny",,,
 113710,WORD_NOUN,,KATAKANA,,,ｓ,エス,,esu,"litera S
@@ -35284,10 +35284,10 @@ opaść na",,,
 górna powieka bez fałdy",,,
 115728,WORD_VERB_U,,HIRAGANA,,,騙し取る,だましとる,,damashi toru,zabierać coś poprzez oszustwo,,,
 115729,WORD_VERB_U,,HIRAGANA,,,騙しとる,だましとる,,damashi toru,zabierać coś poprzez oszustwo,,,
-115730,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,表意文字,ひょういもんじ,,hyoui monji,"ideogram
-hieroglif
-kaligrafia",,,DUPLICATE 115648
+115730,WORD_NOUN,,HIRAGANA,,,仕舞た屋,しもたや,,shimota ya,"sklep, który zakończył swoją działalność
+sklep, który zamknął swój biznes
+sklep, który zniknął z rynku
+gospodarstwo domowe, które żyje bez prowadzenia działalności gospodarczej",,,
 115731,WORD_NOUN,,HIRAGANA,,,ちゃぶ台,ちゃぶだい,,chabudai,"niski stół
 stolik do herbaty",,,
 115732,WORD_NOUN,,KATAKANA_HIRAGANA,,,チャブ台,チャブだい,,chabudai,"niski stół
@@ -42541,7 +42541,7 @@ jedna ramka
 pojedynczy strzał
 jedno wystawienie
 jedna komórka
-jeden panel (komiks)",,,DUPLICATE 131903
+jeden panel (komiks)",,,DUPLICATE 50107
 118825,WORD_NOUN,,HIRAGANA,,,一駒,ひとこま,,hito koma,"jedna scena
 jedna ramka
 pojedynczy strzał
@@ -51617,10 +51617,10 @@ nieludzkie zachowanie
 okropność
 okrucieństwo
 potworność",,,
-122929,WORD_NOUN,,HIRAGANA,,,新型うつ,しんがたうつ,,shingata utsu,"nowy typ depresji
-depresja, która objawia się wtedy, gdy ktoś jest w pracy",,,
-122930,WORD_NOUN,,HIRAGANA_EXCEPTION,,,新型うつ病,んがたうつびょう,,shingatautsu byou,"nowy typ depresji
-depresja, która objawia się wtedy, gdy ktoś jest w pracy",,,DUPLICATE 130810
+122929,WORD_NOUN,,HIRAGANA,,,新型うつ,しんがたうつ,,shingata utsu,"depresja nowego typu
+nowy typ depresji
+depresja, która pojawia się tylko w pracy",,,
+122930,WORD_NOUN,,HIRAGANA,,,一闋,ひとくさり,,hitokusari,???,,,
 122931,WORD_NOUN,,HIRAGANA,,,鳳仙花,ほうせんか,,housenka,"balsam (ogród)
 niecierpek balsamina (roślina)",,,
 122932,WORD_NOUN,,HIRAGANA,,,理事国,りじこく,,rijikoku,kraj członkowski w komitecie wykonawczym w organizacji międzynarodowej,,,
@@ -51810,10 +51810,12 @@ opinie są podzielone
 ???",,,
 123017,WORD_NOUN,,HIRAGANA,,,前十字靭帯,ぜんじゅうじじんたい,,zenjuuji jintai,więzadło krzyżowe przednie,stawu kolanowego,,
 123018,WORD_NOUN,,HIRAGANA,,,御触書,おふれがき,,ofuregaki,w okresie Edo orędzie wygłoszone przez szogunat (lub daimyo) zwykle do ogółu populacji,,,
-123019,WORD_NOUN,,HIRAGANA,,,新型鬱,しんがたうつ,,shingata utsu,"nowy typ depresji
-depresja, która objawia się wtedy, gdy ktoś jest w pracy",,,
-123020,WORD_NOUN,,HIRAGANA,,,新型欝,しんがたうつ,,shingata utsu,"nowy typ depresji
-depresja, która objawia się wtedy, gdy ktoś jest w pracy",,,
+123019,WORD_NOUN,,HIRAGANA,,,新型鬱,しんがたうつ,,shingata utsu,"depresja nowego typu
+nowy typ depresji
+depresja, która pojawia się tylko w pracy",,,
+123020,WORD_NOUN,,HIRAGANA,,,新型欝,しんがたうつ,,shingata utsu,"depresja nowego typu
+nowy typ depresji
+depresja, która pojawia się tylko w pracy",,,
 123021,WORD_NOUN,,KATAKANA,,,-,クロマルハナバチ,,kuromaru hanabachi,bombus ignitus,odmiana trzmiela,,
 123022,WORD_NOUN,,KATAKANA,,,-,キティブタバナコウモリ,,kiti butabana koumori,"świnionos malutki
 ryjkonos malutki","gatunek ssaka z rodziny świnionosowatych, najmniejszy nietoperz świata i jeden z najmniejszych ssaków, craseonycteris thonglongyai",,
@@ -57514,7 +57516,7 @@ antepedium",,,
 125610,WORD_NOUN,,HIRAGANA,,,仕舞屋,しもうたや,,shimouta ya,"sklep, który zakończył swoją działalność
 sklep, który zamknął swój biznes
 sklep, który zniknął z rynku
-gospodarstwo domowe, które żyje bez prowadzenia działalności gospodarczej",,,DUPLICATE 131906
+gospodarstwo domowe, które żyje bez prowadzenia działalności gospodarczej",,,DUPLICATE 111741
 125611,WORD_NOUN,,KATAKANA,,,-,ロード・ローラー,,roodo rooraa,"walec
 walec drogowy",ang: road roller,,
 125612,WORD_NOUN,,HIRAGANA,,,旬間,じゅんかん,,junkan,okres dziesięciu dni,,,
@@ -69102,6 +69104,7 @@ skromnie
 podniosłym tonem",,,
 130809,WORD_NOUN,,HIRAGANA,,,防止法,ぼうしほう,,boushihou,przeciw ... prawu,,,
 130810,WORD_NOUN,,HIRAGANA,,,新型うつ病,しんがたうつびょう,,shingata utsubyou,"depresja nowego typu
+nowy typ depresji
 depresja, która pojawia się tylko w pracy",,,DUPLICATE 122930
 130811,WORD_NOUN,,HIRAGANA,,,物取り,ものとり,,monotori,"złodziej
 rabuś",,,
@@ -69207,8 +69210,10 @@ pigwowiec chiński (chaenomeles sinensis, roślina)
 pigwa pospolita (cydonia oblonga, roślina)",,,
 130867,WORD_NOUN,,KATAKANA,,,-,キンモグラ,,kinmogura,złotokret,zwierzę,,
 130868,WORD_NOUN,,HIRAGANA,,,新型鬱病,しんがたうつびょう,,shingata utsubyou,"depresja nowego typu
+nowy typ depresji
 depresja, która pojawia się tylko w pracy",,,
 130869,WORD_NOUN,,HIRAGANA,,,新型欝病,しんがたうつびょう,,shingata utsubyou,"depresja nowego typu
+nowy typ depresji
 depresja, która pojawia się tylko w pracy",,,
 130870,WORD_NOUN,,HIRAGANA,,,物盗り,ものとり,,monotori,"złodziej
 rabuś",,,
@@ -70149,8 +70154,8 @@ przyćmić
 ściemniać",,,
 131259,WORD_NOUN,,HIRAGANA,,,倒伏,とうふく,,toufuku,"przewrócenie się
 upadek",,,
-131260,WORD_NOUN,,HIRAGANA,,,当腹,とうふく,,toufuku,dziecko urodzone przez swoją obecną żonę,,,"DUPLICATE 131305
-DUPLICATE 131907"
+131260,WORD_NOUN,,HIRAGANA,,,当腹,とうふく,,toufuku,dziecko urodzone przez swoją obecną żonę,,,"DUPLICATE 111739
+DUPLICATE 131305"
 131261,WORD_VERB_U,,HIRAGANA,,,問い直す,といなおす,,toi naosu,"pytać ponownie
 ponawiać pytanie
 ponawiać zapytanie",,,
@@ -70257,8 +70262,8 @@ sprężarka",,,
 131303,WORD_NOUN,,HIRAGANA,,,楽人,うたまいのひと,,utamai no hito,muzyk,szczególnie Gagaku,,"DUPLICATE 131255
 DUPLICATE 131871"
 131304,WORD_NOUN,,HIRAGANA,,,歌舞人,うたまいのひと,,utamai no hito,muzyk,szczególnie Gagaku,,
-131305,WORD_NOUN,,HIRAGANA,,,当腹,とうぶく,,toubuku,dziecko urodzone przez swoją obecną żonę,,,"DUPLICATE 131260
-DUPLICATE 131907"
+131305,WORD_NOUN,,HIRAGANA,,,当腹,とうぶく,,toubuku,dziecko urodzone przez swoją obecną żonę,,,"DUPLICATE 111739
+DUPLICATE 131260"
 131306,WORD_VERB_U,,HIRAGANA,,,問いなおす,といなおす,,toi naosu,"pytać ponownie
 ponawiać pytanie
 ponawiać zapytanie",,,
@@ -71638,31 +71643,3 @@ szczególnie
 w szczególności
 tym bardziej",,,
 131895,WORD_NOUN,,HIRAGANA,,,背びれ,せびれ,,sebire,płetwa grzbietowa,,,
-131896,"WORD_INTERJECTION
-WORD_NOUN",,HIRAGANA_KATAKANA,,,-,あかんべー,,akan bee,gest twarzy polegający na ściągnięciu powieki i wystawieniu języka,,,
-131897,"WORD_INTERJECTION
-WORD_NOUN",,HIRAGANA,,,-,あかんべえ,,akan bee,gest twarzy polegający na ściągnięciu powieki i wystawieniu języka,,,
-131898,"WORD_INTERJECTION
-WORD_NOUN",,HIRAGANA,,,-,あかんべ,,akan be,gest twarzy polegający na ściągnięciu powieki i wystawieniu języka,,,
-131899,"WORD_INTERJECTION
-WORD_NOUN",,HIRAGANA,,,-,あっかんべえ,,akkan bee,gest twarzy polegający na ściągnięciu powieki i wystawieniu języka,,,
-131900,"WORD_INTERJECTION
-WORD_NOUN",,HIRAGANA,,,-,あかんべい,,akan bei,gest twarzy polegający na ściągnięciu powieki i wystawieniu języka,,,
-131901,"WORD_INTERJECTION
-WORD_NOUN",,KATAKANA,,,-,アカンベー,,akan bee,gest twarzy polegający na ściągnięciu powieki i wystawieniu języka,,,
-131902,WORD_INTERJECTION,,HIRAGANA_KATAKANA,,,-,べーだ,,beeda,dźwięk wydawany podczas wykonywania akanbe (dziecinnego i obraźliwego) gestu,skrót,,
-131903,WORD_NOUN,,HIRAGANA,,,一齣,ひとくさり,,hitokusari,???,,,DUPLICATE 118824
-131904,WORD_NOUN,,HIRAGANA,,,一闋,ひとくさり,,hitokusari,???,,,
-131905,WORD_NOUN,,HIRAGANA,,,仕舞た屋,しもたや,,shimota ya,"sklep, który zakończył swoją działalność
-sklep, który zamknął swój biznes
-sklep, który zniknął z rynku
-gospodarstwo domowe, które żyje bez prowadzenia działalności gospodarczej",,,
-131906,WORD_NOUN,,HIRAGANA,,,仕舞屋,しもたや,,shimota ya,"sklep, który zakończył swoją działalność
-sklep, który zamknął swój biznes
-sklep, który zniknął z rynku
-gospodarstwo domowe, które żyje bez prowadzenia działalności gospodarczej",,,DUPLICATE 125610
-131907,WORD_NOUN,,HIRAGANA,,,当腹,むかいばら,,mukai bara,dziecko urodzone przez swoją prawną żonę,"jako przeciwieństwo dziecka urodzoną przez swoją konkubinę, archaizm",,"DUPLICATE 131260
-DUPLICATE 131305"
-131908,WORD_NOUN,,HIRAGANA,,,嫡腹,むかいばら,,mukai bara,dziecko urodzone przez swoją prawną żonę,"jako przeciwieństwo dziecka urodzoną przez swoją konkubinę, archaizm",,
-131909,WORD_NOUN,,HIRAGANA,,,黄瓜菜,にがな,,nigana,ixeris dentata,roślina,,
-131910,WORD_NOUN,,KATAKANA,,,-,ニガナ,,nigana,ixeris dentata,roślina,,
