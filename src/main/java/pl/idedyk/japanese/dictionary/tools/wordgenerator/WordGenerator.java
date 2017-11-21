@@ -2569,9 +2569,6 @@ public class WordGenerator {
 						if (polishJapaneseEntry.getKnownDuplicatedList().size() > 0) {
 							result.add(polishJapaneseEntry);
 						}
-						
-						
-						
 					}					
 				}
 				
