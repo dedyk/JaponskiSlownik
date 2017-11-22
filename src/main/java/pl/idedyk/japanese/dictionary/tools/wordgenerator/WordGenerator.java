@@ -2566,9 +2566,14 @@ public class WordGenerator {
 					
 					if (groupEntryList == null || groupEntryList.size() == 0) {
 						
-						if (polishJapaneseEntry.getKnownDuplicatedList().size() > 0) {
-							result.add(polishJapaneseEntry);
-						}
+						groupEntryList = jmeNewDictionary.getGroupEntryListInOnlyKana(polishJapaneseEntry.getKana());
+						
+						if (groupEntryList == null || groupEntryList.size() == 0) {
+
+							if (polishJapaneseEntry.getKnownDuplicatedList().size() > 0 && polishJapaneseEntry.getGroups().size() == 0) {
+								result.add(polishJapaneseEntry);
+							}							
+						}						
 					}					
 				}
 				
