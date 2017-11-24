@@ -72158,7 +72158,7 @@ WORD_ADJECTIVE_NO
 WORD_NOUN",,HIRAGANA,,,大陸性,たいりくせい,,tairikusei,"kontynentalny
 kontynentalność",,,
 132097,WORD_NOUN,,HIRAGANA,,,明礬,みょうばん,,myouban,ałun,chemia,,
-132098,WORD_ADVERB_TO,,HIRAGANA,,,-,にやっ,,niya,"z uśmiechem
+132098,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,にやっ,,niya,"z uśmiechem
 szeroko (uśmiechnięty)",,,
 132099,WORD_NOUN,,HIRAGANA,,,空撮,くうさつ,,kuusatsu,"fotografia lotnicza
 aerofotografia",,,
@@ -72166,7 +72166,9 @@ aerofotografia",,,
 132101,WORD_VERB_U,,KATAKANA_HIRAGANA,,,-,テンパる,,tenparu,"zostać jednym kafelkiem od zakończenia (Mahjong)
 być w kropce
 nie wiedzieć co zrobić",,,
-132102,WORD_NOUN,,HIRAGANA,,,寝所,しんじょ,,shinjo,sypialnia,,,
+132102,WORD_NOUN,,HIRAGANA,,,寝所,しんじょ,,shinjo,sypialnia,,,"DUPLICATE 132135
+DUPLICATE 132136
+DUPLICATE 132137"
 132103,WORD_NOUN,,HIRAGANA,,,納品書,のうひんしょ,,nouhinsho,"oświadczenie o dostawie
 potwierdzenie dostarczenia",,,
 132104,WORD_NOUN,,HIRAGANA,,,脇息,きょうそく,,kyousoku,podłokietnik,,,
@@ -72174,8 +72176,8 @@ potwierdzenie dostarczenia",,,
 132106,WORD_VERB_U,,HIRAGANA,,,売り歩く,うりあるく,,uriaruku,"uprawiać handel domokrążny
 prowadzić handel obnośny
 handlować na ulicy",,,
-132107,WORD_NOUN,,HIRAGANA,,,大原女,おはらめ,,oharame,handlarka w Kioto z Ohara,"zwykle z wiązką gałęzi, np. na głowie",,
-132108,WORD_NOUN,,HIRAGANA,,,店棚,みせだな,,misedana,"półka wystawowa (w sklepie, archaizm)
+132107,WORD_NOUN,,HIRAGANA,,,大原女,おはらめ,,oharame,handlarka w Kioto z Ohara,"zwykle z wiązką gałęzi, np. na głowie",,DUPLICATE 132139
+132108,WORD_NOUN,,HIRAGANA,,,店棚,みせだな,,mise dana,"półka wystawowa (w sklepie, archaizm)
 sklep",,,
 132109,WORD_NOUN,,HIRAGANA,,,占めた,しめた,,shimeta,"w porządku
 dobrze",,,
@@ -72206,8 +72208,8 @@ mieszać (w)",,,
 132123,WORD_NOUN,,HIRAGANA,,,貰い,もらい,,morai,"napiwek
 jałmużna",,,
 132124,WORD_NOUN,,HIRAGANA,,,たとう紙,たとうがみ,,tatou gami,"składane papierowe pudełko
-papier złożony i schowany w przedniej części kimono (szczególnie do użytku w czasie ceremonii herbacianej)",,,
-132125,WORD_NOUN,,HIRAGANA,,,白布,はくふ,,hakufu,biała tkanina,,,
+papier złożony i schowany w przedniej części kimono (szczególnie do użytku w czasie ceremonii herbacianej)",,,DUPLICATE 132146
+132125,WORD_NOUN,,HIRAGANA,,,白布,はくふ,,hakufu,biała tkanina,,,DUPLICATE 132151
 132126,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,身を引く,みをひく,,mi o hiku,"zrezygnować
 porzucać
@@ -72235,3 +72237,59 @@ w konsekwencji
 a co za tym idzie",,,
 132131,WORD_NOUN,,HIRAGANA,,,足利時代,あしかがじだい,,ashikaga jidai,okres Ashikaga,"np. okres Muromachi, 1333-1573",,
 132132,WORD_NOUN,,HIRAGANA,,,足利幕府,あしかがばくふ,,ashikaga bakufu,szogunat Ashikaga,"np. szogunat Muromachi, 1336-1573",,
+132133,WORD_NOUN,,HIRAGANA,,,水おけ,みずおけ,,mizuoke,"wiadro
+kubeł
+zbiornik na wodę
+cysterna",,,
+132134,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,ニヤッ,,niya,"z uśmiechem
+szeroko (uśmiechnięty)",,,
+132135,WORD_NOUN,,HIRAGANA,,,寝所,ねどこ,,nedoko,sypialnia,,,"DUPLICATE 132102
+DUPLICATE 132136
+DUPLICATE 132137"
+132136,WORD_NOUN,,HIRAGANA,,,寝所,ねどころ,,nedokoro,sypialnia,,,"DUPLICATE 132102
+DUPLICATE 132135
+DUPLICATE 132137"
+132137,WORD_NOUN,,HIRAGANA,,,寝所,ねど,,nedo,sypialnia,,,"DUPLICATE 132102
+DUPLICATE 132135
+DUPLICATE 132136"
+132138,WORD_VERB_U,,HIRAGANA,,,売歩く,うりあるく,,uriaruku,"uprawiać handel domokrążny
+prowadzić handel obnośny
+handlować na ulicy",,,
+132139,WORD_NOUN,,HIRAGANA,,,大原女,おおはらめ,,ooharame,handlarka w Kioto z Ohara,"zwykle z wiązką gałęzi, np. na głowie",,DUPLICATE 132107
+132140,WORD_NOUN,,HIRAGANA,,,見世棚,みせだな,,mise dana,"półka wystawowa (w sklepie, archaizm)
+sklep",,,
+132141,WORD_NOUN,,KATAKANA,,,-,センタライン,,senta rain,"linia środkowa
+linia centralna",ang: center line,,
+132142,WORD_NOUN,,KATAKANA,,,-,センター・ライン,,sentaa rain,"linia środkowa
+linia centralna",ang: center line,,
+132143,WORD_NOUN,,KATAKANA,,,-,センタ・ライン,,senta rain,"linia środkowa
+linia centralna",ang: center line,,
+132144,WORD_NOUN,,HIRAGANA,,,お祓い,おはらい,,oharai,"rytuał egzorcyzmów
+oczyszczenie",,,
+132145,WORD_NOUN,,HIRAGANA,,,御秡い,おはらい,,oharai,"rytuał egzorcyzmów
+oczyszczenie",,,
+132146,WORD_NOUN,,HIRAGANA,,,たとう紙,たとうし,,tatoushi,"składane papierowe pudełko
+papier złożony i schowany w przedniej części kimono (szczególnie do użytku w czasie ceremonii herbacianej)",,,DUPLICATE 132124
+132147,WORD_NOUN,,HIRAGANA,,,畳紙,たとうがみ,,tatou gami,"składane papierowe pudełko
+papier złożony i schowany w przedniej części kimono (szczególnie do użytku w czasie ceremonii herbacianej)",,,"DUPLICATE 132148
+DUPLICATE 132149
+DUPLICATE 132150"
+132148,WORD_NOUN,,HIRAGANA,,,畳紙,たとうし,,tatoushi,"składane papierowe pudełko
+papier złożony i schowany w przedniej części kimono (szczególnie do użytku w czasie ceremonii herbacianej)",,,"DUPLICATE 132147
+DUPLICATE 132149
+DUPLICATE 132150"
+132149,WORD_NOUN,,HIRAGANA,,,畳紙,たたんがみ,,tatangami,"składane papierowe pudełko
+papier złożony i schowany w przedniej części kimono (szczególnie do użytku w czasie ceremonii herbacianej)",,,"DUPLICATE 132147
+DUPLICATE 132148
+DUPLICATE 132150"
+132150,WORD_NOUN,,HIRAGANA,,,畳紙,たたみがみ,,tatamigami,"składane papierowe pudełko
+papier złożony i schowany w przedniej części kimono (szczególnie do użytku w czasie ceremonii herbacianej)",,,"DUPLICATE 132147
+DUPLICATE 132148
+DUPLICATE 132149"
+132151,WORD_NOUN,,HIRAGANA,,,白布,しろぬの,,shironuno,biała tkanina,,,DUPLICATE 132125
+132152,WORD_ADVERB,,HIRAGANA,,,延て,ひいて,,hiite,"nie tylko ..., ale również
+dodatkowo
+wskutek tego
+w rezultacie
+w konsekwencji
+a co za tym idzie",,,
