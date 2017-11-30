@@ -73421,13 +73421,13 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,防塵,ぼうじん,,boujin,"ochrona przed pyłem
 pyłoszczelny",,,
 132611,WORD_NOUN,,HIRAGANA,,,候補生,こうほせい,,kouhosei,kadet,,,
 132612,WORD_NOUN,,HIRAGANA,,,網漁,あみりょう,,amiryou,połów ryb siecią,,,
-132613,WORD_NOUN,,HIRAGANA,,,皇祖,こうそ,,kouso,"(boski, historyczny lub legendarny) założyciel cesarstwa",,,
-132614,WORD_NOUN,,HIRAGANA,,,皇祖,おおじのみこと,,oojinomikoto,dziadek cesarza,"archaizm, mało znane słowo",,
+132613,WORD_NOUN,,HIRAGANA,,,皇祖,こうそ,,kouso,"(boski, historyczny lub legendarny) założyciel cesarstwa",,,DUPLICATE 132614
+132614,WORD_NOUN,,HIRAGANA,,,皇祖,おおじのみこと,,oojinomikoto,dziadek cesarza,"archaizm, mało znane słowo",,DUPLICATE 132613
 132615,WORD_NOUN,,HIRAGANA,,,素っ破,すっぱ,,suppa,"szpieg
 złodziej
 kłamca",archaizm,,
 132616,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,麻疹,はしか,,hashika,odra,choroba zakażna,,
+WORD_ADJECTIVE_NO",,HIRAGANA,,,麻疹,はしか,,hashika,odra,choroba zakażna,,DUPLICATE 132676
 132617,WORD_NOUN,,HIRAGANA,,,南朝,なんちょう,,nanchou,Południowa Dynastia,,,
 132618,"WORD_ADJECTIVE_NO
 WORD_ADJECTIVE_NA
@@ -73484,7 +73484,7 @@ nędzny
 obskurny
 zabrudzony
 zapyziały",,,
-132642,WORD_ADJECTIVE_NA,,HIRAGANA,,,物憂げ,ものうげ,,monouge,"senny
+132642,WORD_ADJECTIVE_NA,,HIRAGANA,,,物憂げ,ものうげ,,mono uge,"senny
 leniwy
 ospały
 znużony
@@ -73508,7 +73508,7 @@ obszernie",,,
 132648,WORD_NOUN,,HIRAGANA,,,上奏,じょうそう,,jousou,"informować tron
 składać sprawozdanie do tronu",,,
 132649,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,てんこ盛り,てんこもり,,tenkomori,"sterta
+WORD_ADJECTIVE_NO",,HIRAGANA,,,てんこ盛り,てんこもり,,tenko mori,"sterta
 stos
 pełna łyżka
 pełna miska",,,
@@ -73543,14 +73543,14 @@ sprawozdanie","skrót, ang: report",,
 WORD_NOUN",,HIRAGANA,,,老成,ろうせい,,rousei,"dojrzały
 dorosły
 stać się przedwcześnie dojrzały",,,
-132661,"WORD_EXPRESSION
-WORD_VERB_IRREGULAR",,HIRAGANA,,,異にする,ことにする,,koto ni suru,"rozróżniać
+132661,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,異にする,ことにする,,koto ni suru,"rozróżniać
 odróżniać
 różnić się
 być różny",,,
 132662,WORD_NOUN,,HIRAGANA,,,非戦論,ひせんろん,,hisenron,pacyfizm,,,
 132663,WORD_NOUN,,KATAKANA,,,ＬＡＰ,ラップ,,rappu,"link access protocol
-LAP",informatyka,,
+LAP",informatyka,,DUPLICATE 17609
 132664,"WORD_NOUN
 WORD_ADJECTIVE_NA",,KATAKANA,,,-,エコ,,eko,"ekologia (skrót)
 ekologiczny",,,
@@ -73567,3 +73567,108 @@ spotkanie dyrektorów lub członków zarządu",,,
 132670,WORD_NOUN,,HIRAGANA,,,次数,じすう,,jisuu,???,,,
 132671,WORD_NOUN,,HIRAGANA,,,魚籠,びく,,biku,"wiklinowy kosz używany do przenoszenia ryb
 sadzyk (kosz na ryby)",,,
+132672,WORD_NOUN,,KATAKANA,,,-,ウルメ,,urume,śledź obły,"skrót, etrumeus teres",,
+132673,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,防じん,ぼうじん,,boujin,"ochrona przed pyłem
+pyłoszczelny",,,
+132674,WORD_NOUN,,HIRAGANA,,,透っ波,すっぱ,,suppa,"szpieg
+złodziej
+kłamca",archaizm,,
+132675,WORD_NOUN,,HIRAGANA,,,透波,すっぱ,,suppa,"szpieg
+złodziej
+kłamca",archaizm,,
+132676,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,麻疹,ましん,,mashin,odra,choroba zakażna,,DUPLICATE 132616
+132677,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,麻しん,ましん,,mashin,odra,choroba zakażna,,
+132678,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,見た所,みたところ,,mi tatokoro,"z wyglądu
+sądząc po wyglądzie
+oceniać z wyglądu",,,
+132679,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,謹勅,きんちょく,,kinchoku,"głęboka skromność
+głęboka dyskrecja
+głęboka powściągliwość",,,
+132680,WORD_VERB_U,,HIRAGANA,,,凭れ掛かる,もたれかかる,,motare kakaru,"oprzeć o
+opierać się o
+polegać na
+liczyć na",,,
+132681,WORD_VERB_U,,HIRAGANA,,,凭れかかる,もたれかかる,,motare kakaru,"oprzeć o
+opierać się o
+polegać na
+liczyć na",,,
+132682,WORD_VERB_U,,HIRAGANA,,,もたれ掛る,もたれかかる,,motare kakaru,"oprzeć o
+opierać się o
+polegać na
+liczyć na",,,
+132683,WORD_VERB_U,,HIRAGANA,,,凭れ掛る,もたれかかる,,motare kakaru,"oprzeć o
+opierać się o
+polegać na
+liczyć na",,,
+132684,WORD_VERB_U,,HIRAGANA,,,靠れ掛かる,もたれかかる,,motare kakaru,"oprzeć o
+opierać się o
+polegać na
+liczyć na",,,
+132685,WORD_VERB_U,,HIRAGANA,,,靠れ掛る,もたれかかる,,motare kakaru,"oprzeć o
+opierać się o
+polegać na
+liczyć na",,,
+132686,WORD_ADJECTIVE_NA,,HIRAGANA,,,もの憂げ,ものうげ,,mono uge,"senny
+leniwy
+ospały
+znużony
+zmęczony
+strudzony
+apatyczny
+ponury
+posępny
+przygnębiony
+zniechęcony",,,
+132687,WORD_ADJECTIVE_NA,,HIRAGANA,,,物うげ,ものうげ,,mono uge,"senny
+leniwy
+ospały
+znużony
+zmęczony
+strudzony
+apatyczny
+ponury
+posępny
+przygnębiony
+zniechęcony",,,
+132688,WORD_ADJECTIVE_NA,,HIRAGANA,,,懶げ,ものうげ,,mono uge,"senny
+leniwy
+ospały
+znużony
+zmęczony
+strudzony
+apatyczny
+ponury
+posępny
+przygnębiony
+zniechęcony",,,
+132689,WORD_VERB_RU,,HIRAGANA,,,仰見る,あおぎみる,,aogi miru,patrzeć w górę,,,
+132690,WORD_VERB_RU,,HIRAGANA,,,あおぎ見る,あおぎみる,,aogi miru,patrzeć w górę,,,
+132691,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,天こ盛り,てんこもり,,tenko mori,"sterta
+stos
+pełna łyżka
+pełna miska",,,
+132692,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,天こ盛,てんこもり,,tenko mori,"sterta
+stos
+pełna łyżka
+pełna miska",,,
+132693,WORD_NOUN,,HIRAGANA,,,野点て,のだて,,nodate,"ceremonia herbaciana na powietrzu
+w czasie podróży przerwa arystokraty w palankinie
+coś stojące na powietrzu",,,
+132694,WORD_NOUN,,HIRAGANA,,,野立て,のだて,,nodate,"ceremonia herbaciana na powietrzu
+w czasie podróży przerwa arystokraty w palankinie
+coś stojące na powietrzu",,,
+132695,WORD_NOUN,,HIRAGANA,,,十進数,じっしんすう,,jisshinsuu,"dziesiętny
+cyfra dziesiętna
+dziesiętna liczba",,,
+132696,WORD_NOUN,,KATAKANA,,,-,インターフェース,,intaafeesu,interfejs,ang: interface,,
+132697,WORD_NOUN,,KATAKANA,,,-,インターフェイス,,intaafeisu,interfejs,ang: interface,,
+132698,WORD_NOUN,,KATAKANA,,,-,インタフェイス,,intafeisu,interfejs,ang: interface,,
+132699,WORD_NOUN,,KATAKANA,,,-,インターフェス,,intaafesu,interfejs,ang: interface,,
+132700,WORD_NOUN,,KATAKANA,,,-,インタフェス,,intafesu,interfejs,ang: interface,,
