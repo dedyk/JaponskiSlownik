@@ -65,6 +65,6 @@ public class RemoveNames {
 			}			
 		}		
 		
-		CsvReaderWriter.generateCsv(new String[] { "input/word01-nowy.csv", "input/word02-nowy.csv" }, result, true, true, false);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-nowy.csv", "input/word02-nowy.csv" }, result, true, true, false, true, null);
 	}
 }

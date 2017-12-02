@@ -9,6 +9,7 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
+import pl.idedyk.japanese.dictionary.common.Helper;
 
 public class JMENewDictionary {
 
@@ -557,6 +558,29 @@ public class JMENewDictionary {
 		public String toString() {
 			return "GroupEntryTranslate [translate=" + translate + ", miscInfoList=" + miscInfoList
 					+ ", additionalInfoList=" + additionalInfoList + "]";
+		}
+		
+		public String toJmedictRawData() {
+			
+			List<String> result = new ArrayList<String>();
+			
+			result.add("Translate: " + translate);
+			
+			if (miscInfoList != null && miscInfoList.size() > 0) {
+				
+				for (String currentMiscInfo : miscInfoList) {
+					result.add("MiscInfo: " + currentMiscInfo);
+				}
+			}
+			
+			if (additionalInfoList != null && additionalInfoList.size() > 0) {
+				
+				for (String currentAdditionalInfo : additionalInfoList) {
+					result.add("AdditionalInfo: " + currentAdditionalInfo);
+				}
+			}
+			
+			return Helper.convertListToString(result);
 		}
 	}
 }

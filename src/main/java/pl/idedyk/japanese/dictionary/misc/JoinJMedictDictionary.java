@@ -61,7 +61,7 @@ public class JoinJMedictDictionary {
 			partialPolishJapaneseEntryList.add(polishJapaneseEntry);
 
 			if (partialPolishJapaneseEntryList.size() >= maxPos) {				
-				CsvReaderWriter.generateCsv(new String[] { "input_names/names.csv_" + counter }, partialPolishJapaneseEntryList, false);
+				CsvReaderWriter.generateCsv(new String[] { "input_names/names.csv_" + counter }, partialPolishJapaneseEntryList, true, false, true, false, null);
 				
 				partialPolishJapaneseEntryList.clear();
 				
@@ -70,7 +70,7 @@ public class JoinJMedictDictionary {
 		}
 		
 		if (partialPolishJapaneseEntryList.size() > 0) {
-			CsvReaderWriter.generateCsv(new String[] { "input_names/names.csv_" + counter }, partialPolishJapaneseEntryList, false);
+			CsvReaderWriter.generateCsv(new String[] { "input_names/names.csv_" + counter }, partialPolishJapaneseEntryList, true, false, true, false, null);
 		}		
 	}
 	

@@ -877,6 +877,8 @@ public class Helper {
 		
 		List<String> translateList2 = new ArrayList<String>();
 		
+		List<String> jmedictRawDataList = new ArrayList<String>();
+		
 		for (GroupEntryTranslate groupEntryTranslate : translateList) {
 			
 			StringBuffer translate = new StringBuffer(groupEntryTranslate.getTranslate());
@@ -917,6 +919,10 @@ public class Helper {
 			}
 			
 			translateList2.add(translate.toString());
+			
+			//
+			
+			jmedictRawDataList.add(groupEntryTranslate.toJmedictRawData());
 		}					
 		
 		List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
@@ -1007,9 +1013,11 @@ public class Helper {
 	    		translateList2.size() == 1) {
 	    	
 	    	additionalInfoSb.append("ang: " + translateList2.get(0));	    	
-	    }
+	    }	    
 		
 		polishJapaneseEntry.setInfo(additionalInfoSb.toString());		
+		
+		polishJapaneseEntry.setJmedictRawDataList(jmedictRawDataList);
 		
 		CreatePolishJapaneseEntryResult result = new CreatePolishJapaneseEntryResult();
 		
@@ -1559,5 +1567,22 @@ public class Helper {
 		
 		return result;
 	}
+	
+	public static String convertListToString(List<?> list) {
+		StringBuffer sb = new StringBuffer();
 
+		if (list == null) {
+			list = new ArrayList<String>();
+		}
+		
+		for (int idx = 0; idx < list.size(); ++idx) {
+			sb.append(list.get(idx));
+
+			if (idx != list.size() - 1) {
+				sb.append("\n");
+			}
+		}
+
+		return sb.toString();
+	}
 }

@@ -40,7 +40,7 @@ public class Merge2JMnedictWordPlaceCsv {
 			}
 		}
 		
-		CsvReaderWriter.generateCsv(new String[] { "input_names/WORD_PLACE.csv" }, newWordPlaceList, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names/WORD_PLACE.csv" }, newWordPlaceList, true, false, true, false, null);
 	}
 	
 	private static String getKey(PolishJapaneseEntry polishJapaneseEntry) {

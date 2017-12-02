@@ -36,6 +36,6 @@ public class ValidateTheSameRomajiFix {
 			}
 		}		
 		
-		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv" }, polishJapaneseEntries, true, true, false);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv" }, polishJapaneseEntries, true, true, false, true, null);
 	}
 }

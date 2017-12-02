@@ -37,6 +37,6 @@ public class MergeJMnedictWordPlaceCsv {
 			}
 		}
 		
-		CsvReaderWriter.generateCsv(new String[] { "input_names/miss4/WORD_ORGANIZATION_NAME.csv" }, newWordPlaceList, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names/miss4/WORD_ORGANIZATION_NAME.csv" }, newWordPlaceList, true, false, true, false, null);
 	}
 }

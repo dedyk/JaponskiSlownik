@@ -27,6 +27,6 @@ public class GenerateMultiTranslateNameList {
 			}
 		}
 		
-		CsvReaderWriter.generateCsv(new String[] { "input_names2/multiTranslateName.csv" }, multiName, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names2/multiTranslateName.csv" }, multiName, true, false, true, false, null);
 	}
 }

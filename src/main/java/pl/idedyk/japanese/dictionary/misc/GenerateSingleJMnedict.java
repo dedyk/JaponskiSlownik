@@ -17,6 +17,6 @@ public class GenerateSingleJMnedict {
 		
 		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(jmedictName);
 		
-		CsvReaderWriter.generateCsv(new String[] { "input_names2/names.csv" }, generatedNames, false, true, true);
+		CsvReaderWriter.generateCsv(new String[] { "input_names2/names.csv" }, generatedNames, true, false, true, false, null);
 	}
 }

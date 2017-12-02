@@ -50,7 +50,7 @@ public class FixJMnedictWordType {
 					currentPolishJapaneseEntry.setDictionaryEntryTypeList(allPolishJapaneseEntryListMap.get(key).getDictionaryEntryTypeList());					
 				} */
 				
-				CsvReaderWriter.generateCsv(new String[] { currentNameFile.getAbsolutePath() }, currentNameFilePolishJapaneseEntryList, false);
+				CsvReaderWriter.generateCsv(new String[] { currentNameFile.getAbsolutePath() }, currentNameFilePolishJapaneseEntryList, true, false, true, false, null);
 			}
 		}		
 	}

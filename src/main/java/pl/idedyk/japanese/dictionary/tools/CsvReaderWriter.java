@@ -28,6 +28,7 @@ import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
@@ -211,6 +212,7 @@ public class CsvReaderWriter {
 	}
 	*/
 
+	/*
 	public static void generateCsv(String[] outputFiles, List<PolishJapaneseEntry> polishJapaneseEntries,
 			boolean addKnownDupplicatedId) throws IOException {
 		
@@ -238,7 +240,9 @@ public class CsvReaderWriter {
 			csvWriter.close();
 		}		
 	}
+	*/
 
+	/*
 	public static void generateCsv(String[] outputFiles, List<PolishJapaneseEntry> polishJapaneseEntries,
 			boolean addKnownDupplicatedId, boolean addId, boolean addExampleSentenceGroupIds) throws IOException {
 
@@ -266,9 +270,10 @@ public class CsvReaderWriter {
 			csvWriter.close();
 		}
 	}
+	*/
 
 	public static void generateCsv(String[] outputFiles, List<PolishJapaneseEntry> polishJapaneseEntries,
-			boolean addKnownDupplicatedId, boolean addId, boolean addExampleSentenceGroupIds,
+			boolean addId, boolean addKnownDupplicatedId, boolean addExampleSentenceGroupIds, boolean addJmedictRawData,
 			ICustomAdditionalCsvWriter customAdditionalCsvWriter) throws IOException {
 
 		List<List<PolishJapaneseEntry>> polishJapaneseEntriesSplited = null;
@@ -290,7 +295,7 @@ public class CsvReaderWriter {
 			
 			CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFiles[idx]), ',');
 
-			writePolishJapaneseEntries(csvWriter, polishJapaneseEntriesSplited.get(idx), addKnownDupplicatedId, addId, addExampleSentenceGroupIds, customAdditionalCsvWriter);
+			writePolishJapaneseEntries(csvWriter, polishJapaneseEntriesSplited.get(idx), addKnownDupplicatedId, addId, addExampleSentenceGroupIds, addJmedictRawData, customAdditionalCsvWriter);
 
 			csvWriter.close();
 		}
@@ -334,7 +339,7 @@ public class CsvReaderWriter {
 	
 	private static void writePolishJapaneseEntries(CsvWriter csvWriter,
 			List<PolishJapaneseEntry> polishJapaneseEntries, boolean addKnownDupplicatedId,
-			boolean addId, boolean addExampleSentenceGroupIds,
+			boolean addId, boolean addExampleSentenceGroupIds, boolean addJmedictRawData,
 			ICustomAdditionalCsvWriter customAdditionalCsvWriter) throws IOException {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
@@ -343,19 +348,19 @@ public class CsvReaderWriter {
 				csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
 			}
 			
-			csvWriter.write(convertListToString(polishJapaneseEntry.getDictionaryEntryTypeList()));			
+			csvWriter.write(Helper.convertListToString(polishJapaneseEntry.getDictionaryEntryTypeList()));			
 			csvWriter.write(convertAttributeListToString(polishJapaneseEntry.getAttributeList()));
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
-			csvWriter.write(convertListToString(GroupEnum.convertToValues(polishJapaneseEntry.getGroups())));
+			csvWriter.write(Helper.convertListToString(GroupEnum.convertToValues(polishJapaneseEntry.getGroups())));
 			csvWriter.write(polishJapaneseEntry.getPrefixKana());
 			csvWriter.write(polishJapaneseEntry.getKanji());
 			csvWriter.write(polishJapaneseEntry.getKana());
 			csvWriter.write(polishJapaneseEntry.getPrefixRomaji());
 			csvWriter.write(polishJapaneseEntry.getRomaji());
-			csvWriter.write(convertListToString(polishJapaneseEntry.getTranslates()));
+			csvWriter.write(Helper.convertListToString(polishJapaneseEntry.getTranslates()));
 			csvWriter.write(polishJapaneseEntry.getInfo());
 			//csvWriter.write(polishJapaneseEntry.isUseEntry() == false ? "NO" : "");
-			csvWriter.write(convertListToString(polishJapaneseEntry.getParseAdditionalInfoList()));
+			csvWriter.write(Helper.convertListToString(polishJapaneseEntry.getParseAdditionalInfoList()));
 
 			if (addKnownDupplicatedId == true) {
 				
@@ -369,11 +374,15 @@ public class CsvReaderWriter {
 					knownDuplicateIdStringList.add(currentKnownDuplicate.getKnownDuplicateType() + " " + currentKnownDuplicate.getId());					
 				}
 								
-				csvWriter.write(convertListToString(knownDuplicateIdStringList));
+				csvWriter.write(Helper.convertListToString(knownDuplicateIdStringList));
 			}
 			
 			if (addExampleSentenceGroupIds == true) {
-				csvWriter.write(convertListToString(polishJapaneseEntry.getExampleSentenceGroupIdsList()));
+				csvWriter.write(Helper.convertListToString(polishJapaneseEntry.getExampleSentenceGroupIdsList()));
+			}
+			
+			if (addJmedictRawData == true) {
+				csvWriter.write(Helper.convertListToString(polishJapaneseEntry.getJmedictRawDataList()));
 			}
 			
 			if (customAdditionalCsvWriter != null) {
@@ -511,6 +520,7 @@ public class CsvReaderWriter {
 				String infoString = csvReader.get(11);
 				String parseAdditionalInfoListString = csvReader.get(12);
 				String knownDuplicatedListString = csvReader.get(13);
+				String jmedictRawDataListString = csvReader.get(14);
 
 				PolishJapaneseEntry entry = new PolishJapaneseEntry();
 
@@ -542,6 +552,8 @@ public class CsvReaderWriter {
 				entry.setKnownDuplicatedList(knownDuplicatedList);
 
 				entry.setInfo(infoString);
+				
+				entry.setJmedictRawDataList(parseStringIntoList(jmedictRawDataListString));
 
 				result.add(entry);
 			}
@@ -607,25 +619,7 @@ public class CsvReaderWriter {
 
 		return result;
 	}
-
-	private static String convertListToString(List<?> list) {
-		StringBuffer sb = new StringBuffer();
-
-		if (list == null) {
-			list = new ArrayList<String>();
-		}
-		
-		for (int idx = 0; idx < list.size(); ++idx) {
-			sb.append(list.get(idx));
-
-			if (idx != list.size() - 1) {
-				sb.append("\n");
-			}
-		}
-
-		return sb.toString();
-	}
-
+	
 	private static String convertAttributeListToString(AttributeList attributeList) {
 
 		StringBuffer sb = new StringBuffer();
@@ -655,19 +649,19 @@ public class CsvReaderWriter {
 		return sb.toString();
 	}
 
-	private static List<String> parseStringIntoList(String polishTranslateString) {
+	private static List<String> parseStringIntoList(String listString) {
 
 		List<String> result = new ArrayList<String>();
 
-		String[] splitedPolishTranslateString = polishTranslateString.split("\n");
+		String[] splitedString = listString.split("\n");
 
-		for (String currentPolishTranslateString : splitedPolishTranslateString) {
+		for (String currentSplitedtring : splitedString) {
 
-			if (currentPolishTranslateString.equals("") == true) {
+			if (currentSplitedtring.equals("") == true) {
 				continue;
 			}
 
-			result.add(currentPolishTranslateString);
+			result.add(currentSplitedtring);
 		}
 
 		return result;
@@ -726,7 +720,7 @@ public class CsvReaderWriter {
 			List<KanjivgEntry> strokePaths = kanaEntry.getStrokePaths();
 
 			for (KanjivgEntry currentKanjivgEntry : strokePaths) {
-				csvWriter.write(convertListToString(currentKanjivgEntry.getStrokePaths()));
+				csvWriter.write(Helper.convertListToString(currentKanjivgEntry.getStrokePaths()));
 			}
 
 			csvWriter.endRecord();
@@ -827,28 +821,28 @@ public class CsvReaderWriter {
 
 			if (kanjiDic2Entry != null) {
 				csvWriter.write(String.valueOf(kanjiDic2Entry.getStrokeCount()));
-				csvWriter.write(convertListToString(kanjiDic2Entry.getRadicals()));
-				csvWriter.write(convertListToString(kanjiDic2Entry.getOnReading()));
-				csvWriter.write(convertListToString(kanjiDic2Entry.getKunReading()));
+				csvWriter.write(Helper.convertListToString(kanjiDic2Entry.getRadicals()));
+				csvWriter.write(Helper.convertListToString(kanjiDic2Entry.getOnReading()));
+				csvWriter.write(Helper.convertListToString(kanjiDic2Entry.getKunReading()));
 			} else {
 				csvWriter.write(String.valueOf(""));
-				csvWriter.write(convertListToString(new ArrayList<String>()));
-				csvWriter.write(convertListToString(new ArrayList<String>()));
-				csvWriter.write(convertListToString(new ArrayList<String>()));
+				csvWriter.write(Helper.convertListToString(new ArrayList<String>()));
+				csvWriter.write(Helper.convertListToString(new ArrayList<String>()));
+				csvWriter.write(Helper.convertListToString(new ArrayList<String>()));
 			}
 
 			KanjivgEntry kanjivgEntry = kanjiEntry.getKanjivgEntry();
 
 			if (kanjivgEntry != null) {
-				csvWriter.write(convertListToString(kanjivgEntry.getStrokePaths()));
+				csvWriter.write(Helper.convertListToString(kanjivgEntry.getStrokePaths()));
 			} else {
-				csvWriter.write(convertListToString(new ArrayList<String>()));
+				csvWriter.write(Helper.convertListToString(new ArrayList<String>()));
 			}
 
-			csvWriter.write(convertListToString(kanjiEntry.getPolishTranslates()));
+			csvWriter.write(Helper.convertListToString(kanjiEntry.getPolishTranslates()));
 			csvWriter.write(kanjiEntry.getInfo());
 			csvWriter.write(String.valueOf(kanjiEntry.isUsed()));
-			csvWriter.write(convertListToString(GroupEnum.convertToValues(kanjiEntry.getGroups())));
+			csvWriter.write(Helper.convertListToString(GroupEnum.convertToValues(kanjiEntry.getGroups())));
 
 			csvWriter.endRecord();
 		}
@@ -861,9 +855,9 @@ public class CsvReaderWriter {
 			csvWriter.write(String.valueOf(kanjiEntry.getId()));
 			csvWriter.write(kanjiEntry.getKanji());
 
-			csvWriter.write(convertListToString(kanjiEntry.getPolishTranslates()));
+			csvWriter.write(Helper.convertListToString(kanjiEntry.getPolishTranslates()));
 			csvWriter.write(kanjiEntry.getInfo());
-			csvWriter.write(convertListToString(GroupEnum.convertToValues(kanjiEntry.getGroups())));
+			csvWriter.write(Helper.convertListToString(GroupEnum.convertToValues(kanjiEntry.getGroups())));
 			csvWriter.write(String.valueOf(kanjiEntry.isUsed()));			
 			
 			csvWriter.endRecord();
@@ -1022,7 +1016,7 @@ public class CsvReaderWriter {
 			}			
 			
 			csvWriter.write(currentGroupWithTatoebaSentenceList.getGroupId());			
-			csvWriter.write(convertListToString(groupSentencesIdList));
+			csvWriter.write(Helper.convertListToString(groupSentencesIdList));
 
 			csvWriter.endRecord();			
 		}

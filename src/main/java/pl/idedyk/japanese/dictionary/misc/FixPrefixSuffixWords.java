@@ -158,7 +158,7 @@ public class FixPrefixSuffixWords {
 			}
 		}
 
-		CsvReaderWriter.generateCsv(new String[] { "input/word01-new.csv", "input/word02-new.csv" }, polishJapaneseEntries, true, true, false);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-new.csv", "input/word02-new.csv" }, polishJapaneseEntries, true, true, false, true, null);
 	}
 	
 }

@@ -168,7 +168,7 @@ public class AndroidDictionaryGenerator {
 
 		System.out.println("checkAndSavePolishJapaneseEntries: generateCsv");
 
-		CsvReaderWriter.generateCsv(new String[] { destinationFileName }, result, false);
+		CsvReaderWriter.generateCsv(new String[] { destinationFileName }, result, true, false, true, false, null);
 		
 		// generowanie mocy slow
 		System.out.println("checkAndSavePolishJapaneseEntries: generateWordPowerCsv");

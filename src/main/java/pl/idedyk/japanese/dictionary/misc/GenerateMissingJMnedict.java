@@ -49,7 +49,7 @@ public class GenerateMissingJMnedict {
 			// zapis
 			File currentMissingFile = new File(differentDirFile, currentPreviousFile.getName());
 			
-			CsvReaderWriter.generateCsv(new String[] { currentMissingFile.getAbsolutePath() }, missingPolishJapaneseEntries, false);
+			CsvReaderWriter.generateCsv(new String[] { currentMissingFile.getAbsolutePath() }, missingPolishJapaneseEntries, true, false, true, false, null);
 		}
 	}
 	

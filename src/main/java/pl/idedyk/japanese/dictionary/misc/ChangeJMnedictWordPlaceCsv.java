@@ -692,6 +692,6 @@ public class ChangeJMnedictWordPlaceCsv {
 			newWordPlaceList.add(currentPolishJapaneseEntry);
 		}		
 		
-		CsvReaderWriter.generateCsv(new String[] { "input_names/miss2/WORD_PLACE.csv" }, newWordPlaceList, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names/miss2/WORD_PLACE.csv" }, newWordPlaceList, true, false, true, false, null);
 	}
 }

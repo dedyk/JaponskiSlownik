@@ -53,11 +53,11 @@ public class FixJMnedictMultiTranslate {
 					}					
 				}
 				
-				CsvReaderWriter.generateCsv(new String[] { currentNameFile.getAbsolutePath() }, currentNameFilePolishJapaneseEntryList, false);
+				CsvReaderWriter.generateCsv(new String[] { currentNameFile.getAbsolutePath() }, currentNameFilePolishJapaneseEntryList, true, false, true, false, null);
 			}
 		}
 		
-		CsvReaderWriter.generateCsv(new String[] { "input_names2/multiTranslateName-operation.csv" }, multiTranslateNameList, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names2/multiTranslateName-operation.csv" }, multiTranslateNameList, true, false, true, false, null);
 	}
 	
 	private static String getKey(PolishJapaneseEntry polishJapaneseEntry) {

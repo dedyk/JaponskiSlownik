@@ -17,6 +17,8 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 	private List<ParseAdditionalInfo> parseAdditionalInfoList;
 
 	private List<KnownDuplicate> knownDuplicatedList;
+	
+	private List<String> jmedictRawDataList;
 			
 	public String getRealPrefixRomaji() {
 		return realPrefixRomaji;
@@ -78,6 +80,14 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 		return getPrefixKana() + "." + getKanji() + "." + getKana().toString();
 	}
 	
+	public List<String> getJmedictRawDataList() {
+		return jmedictRawDataList;
+	}
+
+	public void setJmedictRawDataList(List<String> jmedictRawDataList) {
+		this.jmedictRawDataList = jmedictRawDataList;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

@@ -194,7 +194,7 @@ public class UnknownWord {
 			System.out.println();
 		}
 
-		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv" }, polishJapaneseEntries, true);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv" }, polishJapaneseEntries, true, true, true, true, null);
 	}
 
 	private static List<JMEDictEntry> findJMEdictEntry(TreeMap<String, List<JMEDictEntry>> jmedict,

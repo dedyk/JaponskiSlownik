@@ -239,7 +239,7 @@ public class SplitJMnedictWordPlaceCsv {
 			}
 		}		
 		
-		CsvReaderWriter.generateCsv(new String[] { "input_names/miss4/WORD_ORGANIZATION_NAME-gotowe.csv" }, readyWordPlaceList, false);
-		CsvReaderWriter.generateCsv(new String[] { "input_names/miss4/WORD_ORGANIZATION_NAME-oczekujace.csv" }, waitingWordPlaceList, false);
+		CsvReaderWriter.generateCsv(new String[] { "input_names/miss4/WORD_ORGANIZATION_NAME-gotowe.csv" }, readyWordPlaceList, true, false, true, false, null);
+		CsvReaderWriter.generateCsv(new String[] { "input_names/miss4/WORD_ORGANIZATION_NAME-oczekujace.csv" }, waitingWordPlaceList, true, false, true, false, null);
 	}
 }
