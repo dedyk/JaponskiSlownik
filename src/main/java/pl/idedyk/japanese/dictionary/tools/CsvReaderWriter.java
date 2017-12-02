@@ -295,7 +295,7 @@ public class CsvReaderWriter {
 			
 			CsvWriter csvWriter = new CsvWriter(new FileWriter(outputFiles[idx]), ',');
 
-			writePolishJapaneseEntries(csvWriter, polishJapaneseEntriesSplited.get(idx), addKnownDupplicatedId, addId, addExampleSentenceGroupIds, addJmedictRawData, customAdditionalCsvWriter);
+			writePolishJapaneseEntries(csvWriter, polishJapaneseEntriesSplited.get(idx), addId, addKnownDupplicatedId, addExampleSentenceGroupIds, addJmedictRawData, customAdditionalCsvWriter);
 
 			csvWriter.close();
 		}
@@ -338,8 +338,8 @@ public class CsvReaderWriter {
 	}
 	
 	private static void writePolishJapaneseEntries(CsvWriter csvWriter,
-			List<PolishJapaneseEntry> polishJapaneseEntries, boolean addKnownDupplicatedId,
-			boolean addId, boolean addExampleSentenceGroupIds, boolean addJmedictRawData,
+			List<PolishJapaneseEntry> polishJapaneseEntries, boolean addId, boolean addKnownDupplicatedId,
+			boolean addExampleSentenceGroupIds, boolean addJmedictRawData,
 			ICustomAdditionalCsvWriter customAdditionalCsvWriter) throws IOException {
 
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
