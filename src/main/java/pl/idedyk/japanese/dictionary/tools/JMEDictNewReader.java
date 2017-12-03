@@ -752,7 +752,7 @@ public class JMEDictNewReader {
 						
 			for (String currentGloss : gloss) {
 				
-				GroupEntryTranslate groupEntryTranslate = new GroupEntryTranslate();
+				GroupEntryTranslate groupEntryTranslate = new GroupEntryTranslate(groupEntry);
 				
 				groupEntryTranslate.setTranslate(currentGloss);
 				
@@ -792,7 +792,7 @@ public class JMEDictNewReader {
 			
 			for (String currentTransDet : trans_det) {
 				
-				GroupEntryTranslate groupEntryTranslate = new GroupEntryTranslate();
+				GroupEntryTranslate groupEntryTranslate = new GroupEntryTranslate(groupEntry);
 				
 				groupEntryTranslate.setTranslate(currentTransDet);
 				

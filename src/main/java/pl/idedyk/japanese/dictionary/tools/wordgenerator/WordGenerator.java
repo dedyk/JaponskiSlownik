@@ -2543,6 +2543,7 @@ public class WordGenerator {
 				break;
 			}
 			
+			/*
 			case SHOW_MISSING_WORDS_AND_COMPARE_TO_JMEDICT: {
 				
 				// przygotowywane slownika jmedict
@@ -2580,6 +2581,148 @@ public class WordGenerator {
 				// zapis porcji slow
 				CsvReaderWriter.generateCsv(new String[] { "input/missing-words-and-compare-to-jmedict.csv" }, result, true, true, false, true, null);
 
+				break;
+			}
+			*/
+			
+			case FIND_WORDS_WITH_JMEDICT_CHANGE: {
+				
+				CommandLineParser commandLineParser = new DefaultParser();
+				
+				//
+				
+				Integer findWordsSize = null;
+				Boolean ignoreJmedictEmptyRawData = false;
+				
+				//
+				
+				Options options = new Options();
+				
+				options.addOption("s", "size", true, "Size of find words");
+				options.addOption("ijerd", "ignore-jmedict-empty-raw-data", false, "Ignore jmedict empty raw data");
+				
+				options.addOption("h", "help", false, "Help");
+				
+				//
+				
+				CommandLine commandLine = null;
+				
+				try {
+					commandLine = commandLineParser.parse(options, args);
+					
+				} catch (UnrecognizedOptionException e) {
+					
+					System.out.println(e.getMessage() + "\n");
+					
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FIND_WORDS_WITH_JMEDICT_CHANGE.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				if (commandLine.hasOption("help") == true) {
+
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FIND_WORDS_WITH_JMEDICT_CHANGE.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				//
+				
+				if (commandLine.hasOption("size") == true) {
+					findWordsSize = Integer.parseInt(commandLine.getOptionValue("size"));
+				}
+				
+				if (commandLine.hasOption("ignore-jmedict-empty-raw-data") == true) {
+					ignoreJmedictEmptyRawData = true;
+				}
+
+				if (findWordsSize == null) {
+					System.err.println("No size of find words");
+					
+					System.exit(1);
+				}
+				
+				//
+				
+				// przygotowywane slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				
+				// lista wszystkich slow
+				List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+
+				List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
+				
+				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+					
+					DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+					
+					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+						continue;
+					}
+					
+					// szukanie slow
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
+					
+					if (groupEntryList != null && groupEntryList.size() != 0) {
+						
+						List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
+						
+						// ignorojemy puste wpisy
+						if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true) {							
+							continue;
+						}
+						
+						//
+						
+						boolean findGroupEntry = false;
+						
+						GROUP_ENTRY_FOR:
+						for (GroupEntry groupEntry : groupEntryList) {
+							
+							String groupIdString = groupEntry.getGroup().getGroupIdString();
+							
+							// czy ta sama grupa
+							if (jmedictRawDataList.contains(groupIdString) == true) {
+								
+								findGroupEntry = true;
+								
+								List<GroupEntryTranslate> groupEntryTranslateList = groupEntry.getTranslateList();
+								
+								List<String> newJmedictRawDataList = new ArrayList<String>();
+								
+								for (GroupEntryTranslate groupEntryTranslate : groupEntryTranslateList) {
+									groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
+								}
+								
+								//
+								
+								// porownanie tlumaczen
+								if (jmedictRawDataList.equals(newJmedictRawDataList) == false) { // jest roznica
+									
+									result.add(polishJapaneseEntry);
+									
+									break GROUP_ENTRY_FOR; 
+								}
+							}
+						}
+						
+						if (findGroupEntry == false) {							
+							result.add(polishJapaneseEntry);							
+						}
+						
+						if (result.size() >= findWordsSize) {
+							break;
+						}
+					}					
+				}
+				
+				// zapis
+				CsvReaderWriter.generateCsv(new String[] { "input/find-words-with-jmedict-change.csv" }, result, true, true, false, true, null);
+								
 				break;
 			}
 			

@@ -36,7 +36,9 @@ public enum Operation {
 	
 	SHOW_SIMILAR_RELATED_WORDS("show-similar-related-words", "Pokazuje podobne słowa"),
 	
-	SHOW_MISSING_WORDS_AND_COMPARE_TO_JMEDICT("show-missing-words-and-compare-to-jmedict", "Pokazuje słowa, których nie ma w jmedict"),
+	//SHOW_MISSING_WORDS_AND_COMPARE_TO_JMEDICT("show-missing-words-and-compare-to-jmedict", "Pokazuje słowa, których nie ma w jmedict"),
+	
+	FIND_WORDS_WITH_JMEDICT_CHANGE("find-words-with-jmedict-change", "Pokazuje słowa, które zmieniły swoje tłumaczenie w jmedict"),
 	
 	HELP("help", "Pokazuje pomoc");
 	

@@ -366,6 +366,10 @@ public class JMENewDictionary {
 		public void setId(Integer id) {
 			this.id = id;
 		}
+		
+		public String getGroupIdString() {			
+			return "GroupId: " + id;
+		}
 	}
 	
 	public static class GroupEntry {
@@ -524,11 +528,17 @@ public class JMENewDictionary {
 	
 	public static class GroupEntryTranslate {
 		
+		private GroupEntry groupEntry;
+		
 		private String translate;
 		
 		private List<String> miscInfoList;
 		
 		private List<String> additionalInfoList;
+		
+		public GroupEntryTranslate(GroupEntry groupEntry) {
+			this.groupEntry = groupEntry;
+		}
 
 		public String getTranslate() {
 			return translate;
@@ -554,15 +564,27 @@ public class JMENewDictionary {
 			this.additionalInfoList = additionalInfoList;
 		}
 
+		public GroupEntry getGroupEntry() {
+			return groupEntry;
+		}
+
+		public void setGroupEntry(GroupEntry groupEntry) {
+			this.groupEntry = groupEntry;
+		}
+
 		@Override
 		public String toString() {
 			return "GroupEntryTranslate [translate=" + translate + ", miscInfoList=" + miscInfoList
 					+ ", additionalInfoList=" + additionalInfoList + "]";
 		}
 		
-		public String toJmedictRawData() {
+		public String fillJmedictRawData(List<String> result) {
 			
-			List<String> result = new ArrayList<String>();
+			String groupId = groupEntry.getGroup().getGroupIdString();
+			
+			if (result.contains(groupId) == false) {
+				result.add(groupId);
+			}			
 			
 			result.add("Translate: " + translate);
 			

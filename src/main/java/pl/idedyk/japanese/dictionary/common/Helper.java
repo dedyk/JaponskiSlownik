@@ -922,7 +922,7 @@ public class Helper {
 			
 			//
 			
-			jmedictRawDataList.add(groupEntryTranslate.toJmedictRawData());
+			groupEntryTranslate.fillJmedictRawData(jmedictRawDataList);
 		}					
 		
 		List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
@@ -1483,7 +1483,7 @@ public class Helper {
 		
 		for (String currentTranslate : Arrays.asList(document.getValues("translateList"))) {
 			
-			GroupEntryTranslate translate = new GroupEntryTranslate();
+			GroupEntryTranslate translate = new GroupEntryTranslate(groupEntry);
 			
 			translate.setTranslate(currentTranslate);
 			
