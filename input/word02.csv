@@ -56867,7 +56867,7 @@ nieprawdopodobny",,,,
 WORD_ADJECTIVE_NA",,HIRAGANA,,,うその様,うそのよう,,uso no you,"trudny do uwierzenia
 niewiarygodny
 nieprawdopodobny",,,,
-125292,WORD_NOUN,,HIRAGANA,,,鍬入れ式,くわいれしき,,kuwaire shiki,przełomowa ceremonia,,,,
+125292,WORD_NOUN,,HIRAGANA,,,鍬入れ式,くわいれしき,,kuwaire shiki,ceremonia rozpoczęcia budowy,,,,
 125293,WORD_NOUN,,KATAKANA,,,-,デカンタ,,dekanta,"karafka
 odstojnik
 osadnik",ang: decanter,,,
@@ -74637,7 +74637,7 @@ Translate: numerical"
 chociaż
 chociażby
 mimo, że
-aczkolwiek",,,,"GroupId: 2713960
+aczkolwiek",,,DUPLICATE 47237,"GroupId: 2713960
 Translate: even though
 AdditionalInfo: after the -ba stem of a verb
 Translate: even if
@@ -74687,7 +74687,7 @@ Translate: beneficiary
 Translate: right holder"
 132965,WORD_NOUN,,KATAKANA,,,-,シックス,,shikkusu,sześć,ang: six,,,"GroupId: 2184100
 Translate: six"
-132966,WORD_NOUN,,HIRAGANA,,,草屋,そうおく,,souoku,pokryta strzechą chata,,,,"GroupId: 1650720
+132966,WORD_NOUN,,HIRAGANA,,,草屋,そうおく,,souoku,pokryta strzechą chata,,,DUPLICATE 133023,"GroupId: 1650720
 Translate: thatched hut"
 132967,WORD_NOUN,,KATAKANA,,,-,ディーディーエックスピー,,dii dii ekkusu pii,DDX-P,,,,"GroupId: 2311310
 Translate: DDX-P"
@@ -74799,7 +74799,7 @@ Translate: mendicant priest's begging bowl"
 ktoś kto lubi alkohol
 położenie swoich warg na brzegu filiżanki
 kształt ust podczas picia
-kran",,,,"GroupId: 1169790
+kran",,,DUPLICATE 133032,"GroupId: 1169790
 Translate: taste (of a liquid, esp. alcoholic beverages)
 AdditionalInfo: usu. のみくち
 Translate: someone who enjoys alcohol
@@ -74901,7 +74901,7 @@ Translate: somewhere (very vague)
 MiscInfo: uk
 Translate: someplace (very vague)
 MiscInfo: uk"
-133010,WORD_NOUN,,HIRAGANA,,,大豆油,だいずゆ,,daizuyu,olej sojowy,,,,"GroupId: 1785750
+133010,WORD_NOUN,,HIRAGANA,,,大豆油,だいずゆ,,daizuyu,olej sojowy,,,DUPLICATE 133045,"GroupId: 1785750
 Translate: soybean oil"
 133011,WORD_NOUN,,KATAKANA,,,-,フルーツサラダ,,furuutsu sarada,sałatka owocowa,ang: fruit salad,,,"GroupId: 1112060
 Translate: fruit salad"
@@ -74916,3 +74916,243 @@ MiscInfo: uk"
 szczęście do pieniędzy",,,,"GroupId: 2107730
 Translate: economic fortune
 Translate: luck with money"
+133016,WORD_EXPRESSION,,HIRAGANA,,,然る事ながら,さることながら,,saru koto nagara,"to oczywiste, ale także ...
+nie tylko to, ale ...",,,,"GroupId: 2112220
+Translate: that goes without saying but also ...
+MiscInfo: uk
+Translate: not only that but ...
+MiscInfo: uk"
+133017,WORD_EXPRESSION,,HIRAGANA,,,然ることながら,さることながら,,saru koto nagara,"to oczywiste, ale także ...
+nie tylko to, ale ...",,,,"GroupId: 2112220
+Translate: that goes without saying but also ...
+MiscInfo: uk
+Translate: not only that but ...
+MiscInfo: uk"
+133018,WORD_EXPRESSION,,HIRAGANA,,,然る事乍ら,さることながら,,saru koto nagara,"to oczywiste, ale także ...
+nie tylko to, ale ...",,,,"GroupId: 2112220
+Translate: that goes without saying but also ...
+MiscInfo: uk
+Translate: not only that but ...
+MiscInfo: uk"
+133019,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,葦毛,あしげ,,ashige,jabłkowity,o maści konia,,,"GroupId: 1152840
+Translate: dapple-grey (gray) (horse coat colour)"
+133020,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,あし毛,あしげ,,ashige,jabłkowity,o maści konia,,,"GroupId: 1152840
+Translate: dapple-grey (gray) (horse coat colour)"
+133021,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,蘆毛,あしげ,,ashige,jabłkowity,o maści konia,,,"GroupId: 1152840
+Translate: dapple-grey (gray) (horse coat colour)"
+133022,WORD_NOUN,,HIRAGANA,,,くわ入れ,くわいれ,,kuwaire,"rozpoczynanie budowy (ceremonia)
+noworoczna ceremonia, w której motyka jest używana do rozpoczęcia budowy",,,,"GroupId: 2131900
+Translate: breaking ground
+Translate: ground-breaking (ceremony)
+Translate: New Year's ceremony in which a hoe is used to break ground in a field lying in a lucky direction"
+133023,WORD_NOUN,,HIRAGANA,,,草屋,くさや,,kusaya,pokryta strzechą chata,,,DUPLICATE 132966,"GroupId: 1650720
+Translate: thatched hut"
+133024,WORD_NOUN,,HIRAGANA,,,磯目,いそめ,,isome,robak z rodziny Eunicidae,,,,"GroupId: 2212280
+Translate: eunicid (any worm of family Eunicidae)
+MiscInfo: uk"
+133025,WORD_NOUN,,KATAKANA,,,-,イソメ,,isome,robak z rodziny Eunicidae,,,,"GroupId: 2212280
+Translate: eunicid (any worm of family Eunicidae)
+MiscInfo: uk"
+133026,"WORD_NOUN
+WORD_ADVERB",,KATAKANA,,,-,コテンパン,,koten pan,czarny i niebieski,,,,"GroupId: 2112780
+Translate: black and blue (e.g. beaten ...)
+MiscInfo: on-mim"
+133027,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,-,こてんぱ,,koten pa,czarny i niebieski,,,,"GroupId: 2112780
+Translate: black and blue (e.g. beaten ...)
+MiscInfo: on-mim"
+133028,"WORD_NOUN
+WORD_ADVERB",,KATAKANA,,,-,コテンパ,,koten pa,czarny i niebieski,,,,"GroupId: 2112780
+Translate: black and blue (e.g. beaten ...)
+MiscInfo: on-mim"
+133029,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,-,こてんこてん,,koten koten,czarny i niebieski,,,,"GroupId: 2112780
+Translate: black and blue (e.g. beaten ...)
+MiscInfo: on-mim"
+133030,"WORD_NOUN
+WORD_ADVERB",,KATAKANA,,,-,コテンコテン,,koten koten,czarny i niebieski,,,,"GroupId: 2112780
+Translate: black and blue (e.g. beaten ...)
+MiscInfo: on-mim"
+133031,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,頭を抱える,あたまをかかえる,,atama o kakaeru,"być ogromnie zmieszany
+być zmartwiony
+być w kropce
+nie wiedzieć co zrobić",,,,"GroupId: 2275540
+Translate: to be greatly perplexed
+Translate: to be troubled
+Translate: to be at wits' end"
+133032,WORD_NOUN,,HIRAGANA,,,飲み口,のみぐち,,nomiguchi,"smakowanie (płynów, szczególnie napojów alkoholowych)
+ktoś kto lubi alkohol
+położenie swoich warg na brzegu filiżanki
+kształt ust podczas picia
+kran",,,DUPLICATE 132994,"GroupId: 1169790
+Translate: taste (of a liquid, esp. alcoholic beverages)
+AdditionalInfo: usu. のみくち
+Translate: someone who enjoys alcohol
+Translate: place one's lips touch on the rim of a cup
+Translate: shape of one's mouth when drinking
+Translate: tap
+AdditionalInfo: usu. のみぐち
+Translate: faucet
+AdditionalInfo: usu. のみぐち
+Translate: spigot
+AdditionalInfo: usu. のみぐち"
+133033,WORD_NOUN,,HIRAGANA,,,呑み口,のみくち,,nomikuchi,"smakowanie (płynów, szczególnie napojów alkoholowych)
+ktoś kto lubi alkohol
+położenie swoich warg na brzegu filiżanki
+kształt ust podczas picia
+kran",,,DUPLICATE 133034,"GroupId: 1169790
+Translate: taste (of a liquid, esp. alcoholic beverages)
+AdditionalInfo: usu. のみくち
+Translate: someone who enjoys alcohol
+Translate: place one's lips touch on the rim of a cup
+Translate: shape of one's mouth when drinking
+Translate: tap
+AdditionalInfo: usu. のみぐち
+Translate: faucet
+AdditionalInfo: usu. のみぐち
+Translate: spigot
+AdditionalInfo: usu. のみぐち"
+133034,WORD_NOUN,,HIRAGANA,,,呑み口,のみぐち,,nomiguchi,"smakowanie (płynów, szczególnie napojów alkoholowych)
+ktoś kto lubi alkohol
+położenie swoich warg na brzegu filiżanki
+kształt ust podczas picia
+kran",,,DUPLICATE 133033,"GroupId: 1169790
+Translate: taste (of a liquid, esp. alcoholic beverages)
+AdditionalInfo: usu. のみくち
+Translate: someone who enjoys alcohol
+Translate: place one's lips touch on the rim of a cup
+Translate: shape of one's mouth when drinking
+Translate: tap
+AdditionalInfo: usu. のみぐち
+Translate: faucet
+AdditionalInfo: usu. のみぐち
+Translate: spigot
+AdditionalInfo: usu. のみぐち"
+133035,WORD_NOUN,,HIRAGANA,,,呑口,のみくち,,nomikuchi,"smakowanie (płynów, szczególnie napojów alkoholowych)
+ktoś kto lubi alkohol
+położenie swoich warg na brzegu filiżanki
+kształt ust podczas picia
+kran",,,DUPLICATE 133036,"GroupId: 1169790
+Translate: taste (of a liquid, esp. alcoholic beverages)
+AdditionalInfo: usu. のみくち
+Translate: someone who enjoys alcohol
+Translate: place one's lips touch on the rim of a cup
+Translate: shape of one's mouth when drinking
+Translate: tap
+AdditionalInfo: usu. のみぐち
+Translate: faucet
+AdditionalInfo: usu. のみぐち
+Translate: spigot
+AdditionalInfo: usu. のみぐち"
+133036,WORD_NOUN,,HIRAGANA,,,呑口,のみぐち,,nomiguchi,"smakowanie (płynów, szczególnie napojów alkoholowych)
+ktoś kto lubi alkohol
+położenie swoich warg na brzegu filiżanki
+kształt ust podczas picia
+kran",,,DUPLICATE 133035,"GroupId: 1169790
+Translate: taste (of a liquid, esp. alcoholic beverages)
+AdditionalInfo: usu. のみくち
+Translate: someone who enjoys alcohol
+Translate: place one's lips touch on the rim of a cup
+Translate: shape of one's mouth when drinking
+Translate: tap
+AdditionalInfo: usu. のみぐち
+Translate: faucet
+AdditionalInfo: usu. のみぐち
+Translate: spigot
+AdditionalInfo: usu. のみぐち"
+133037,WORD_NOUN,,HIRAGANA,,,飲口,のみくち,,nomikuchi,"smakowanie (płynów, szczególnie napojów alkoholowych)
+ktoś kto lubi alkohol
+położenie swoich warg na brzegu filiżanki
+kształt ust podczas picia
+kran",,,DUPLICATE 133038,"GroupId: 1169790
+Translate: taste (of a liquid, esp. alcoholic beverages)
+AdditionalInfo: usu. のみくち
+Translate: someone who enjoys alcohol
+Translate: place one's lips touch on the rim of a cup
+Translate: shape of one's mouth when drinking
+Translate: tap
+AdditionalInfo: usu. のみぐち
+Translate: faucet
+AdditionalInfo: usu. のみぐち
+Translate: spigot
+AdditionalInfo: usu. のみぐち"
+133038,WORD_NOUN,,HIRAGANA,,,飲口,のみぐち,,nomiguchi,"smakowanie (płynów, szczególnie napojów alkoholowych)
+ktoś kto lubi alkohol
+położenie swoich warg na brzegu filiżanki
+kształt ust podczas picia
+kran",,,DUPLICATE 133037,"GroupId: 1169790
+Translate: taste (of a liquid, esp. alcoholic beverages)
+AdditionalInfo: usu. のみくち
+Translate: someone who enjoys alcohol
+Translate: place one's lips touch on the rim of a cup
+Translate: shape of one's mouth when drinking
+Translate: tap
+AdditionalInfo: usu. のみぐち
+Translate: faucet
+AdditionalInfo: usu. のみぐち
+Translate: spigot
+AdditionalInfo: usu. のみぐち"
+133039,WORD_ADJECTIVE_I,,HIRAGANA,,,差支え無い,さしつかえない,,sashi tsukaenai,"nie mieć zastrzeżeń
+dozwolony
+dopuszczalny",,,,"GroupId: 1789490
+Translate: (having) no objection
+Translate: allowable"
+133040,WORD_ADJECTIVE_I,,HIRAGANA,,,艶かしい,なまめかしい,,namamekashii,"czarujący
+uroczy
+zniewalający
+urzekający
+uwodzicielski
+ponętny
+kokieteryjny
+zalotny",,,,"GroupId: 1177690
+Translate: charming
+Translate: captivating
+Translate: bewitching
+Translate: seductive
+Translate: coquettish"
+133041,WORD_ADJECTIVE_I,,HIRAGANA,,,生めかしい,なまめかしい,,namamekashii,"czarujący
+uroczy
+zniewalający
+urzekający
+uwodzicielski
+ponętny
+kokieteryjny
+zalotny",,,,"GroupId: 1177690
+Translate: charming
+Translate: captivating
+Translate: bewitching
+Translate: seductive
+Translate: coquettish"
+133042,WORD_ADJECTIVE_I,,HIRAGANA,,,媚かしい,なまめかしい,,namamekashii,"czarujący
+uroczy
+zniewalający
+urzekający
+uwodzicielski
+ponętny
+kokieteryjny
+zalotny",,,,"GroupId: 1177690
+Translate: charming
+Translate: captivating
+Translate: bewitching
+Translate: seductive
+Translate: coquettish"
+133043,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオトカゲ,,ootokage,waran,zwierzę,,,"GroupId: 1787020
+Translate: monitor lizard
+MiscInfo: uk"
+133044,WORD_NOUN,,HIRAGANA,,,楽焼,らくやき,,raku yaki,ceramika raku,"rodzaj japońskiej ceramiki wypalanej w niekontrolowanej temperaturze w „żywym” ogniu, często w warunkach naturalnych (np. na ognisku w wykopanej jamie)",,,"GroupId: 1647890
+Translate: raku ware
+Translate: hand-moulded, lead glazed earthenware pottery fired at low temperatures, esp. used in tea ceremony (molded)"
+133045,WORD_NOUN,,HIRAGANA,,,大豆油,だいずあぶら,,daizuabura,olej sojowy,,,DUPLICATE 133010,"GroupId: 1785750
+Translate: soybean oil"
+133046,WORD_NOUN,,KATAKANA,,,-,フルーツ・サラダ,,furuutsu sarada,sałatka owocowa,ang: fruit salad,,,"GroupId: 1112060
+Translate: fruit salad"
+133047,WORD_NOUN,,KATAKANA,,,-,ボディボード,,bodi boodo,deska surfingowa,"do pływania w pozycji leżącej lub klęcząc, ang: body board",,,"GroupId: 2126590
+Translate: body board"
+133048,WORD_NOUN,,KATAKANA,,,-,ボディー・ボード,,bodii boodo,deska surfingowa,"do pływania w pozycji leżącej lub klęcząc, ang: body board",,,"GroupId: 2126590
+Translate: body board"
+133049,WORD_NOUN,,KATAKANA,,,-,ボディ・ボード,,bodi boodo,deska surfingowa,"do pływania w pozycji leżącej lub klęcząc, ang: body board",,,"GroupId: 2126590
+Translate: body board"
