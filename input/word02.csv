@@ -75192,7 +75192,7 @@ MiscInfo: uk"
 Translate: day on which prostitutes had to receive clients
 MiscInfo: arch"
 133056,WORD_NOUN,,HIRAGANA,,,四夷,しい,,shii,"Czterech Barbarzyńców
-poniżająca nazwa na różnych niechińskich ludów graniczącymi ze starożytnymi Chinami",poniżająco,,,"GroupId: 2028620
+poniżająca nazwa na różnych niechińskich ludów graniczącymi ze starożytnymi Chinami",poniżająco,,DUPLICATE 54156,"GroupId: 2028620
 Translate: Four Barbarians
 MiscInfo: derog
 Translate: derogative name for various ancient non-Chinese peoples bordering ancient China
@@ -75203,7 +75203,7 @@ Translate: diverticulum"
 133058,WORD_NOUN,,HIRAGANA,,,四囲,しい,,shii,"otoczenie
 okolica
 przestrzeń wokół
-obwód",,,,"GroupId: 1767160
+obwód",,,DUPLICATE 54156,"GroupId: 1767160
 Translate: surroundings
 Translate: circumference"
 133059,"WORD_NOUN
@@ -75220,11 +75220,11 @@ Translate: middle-school arithmetic
 MiscInfo: abbr
 AdditionalInfo: from 中学, 算数"
 133061,WORD_NOUN,,HIRAGANA,,,紊乱,びんらん,,binran,"choroba
-zburzenie",,,,"GroupId: 1663190
+zburzenie",,,DUPLICATE 133113,"GroupId: 1663190
 Translate: disorder"
 133062,WORD_NOUN,,HIRAGANA,,,変圧,へんあつ,,hen'atsu,transformacja (prądu),,,,"GroupId: 1510810
 Translate: transformation (of a current)"
-133063,WORD_VERB_U,,HIRAGANA,,,着直す,きなおす,,kinaosu,"przebrać się
+133063,WORD_VERB_U,,HIRAGANA,,,着直す,きなおす,,ki naosu,"przebrać się
 przebierać się
 zmieniać ubranie",,,,"GroupId: 1423190
 Translate: to change clothes"
@@ -75252,11 +75252,11 @@ Translate: in this way
 MiscInfo: uk"
 133070,WORD_NOUN,,HIRAGANA,,,尾鰭,おひれ,,ohire,"ogon i płetwy
 upiększenie (np. opowieści, plotek i etc)
-przesada",,,,"GroupId: 1643500
+przesada",,,DUPLICATE 133071,"GroupId: 1643500
 Translate: tail and fins
 Translate: embellishment (of a story, rumor, etc.)
 Translate: exaggeration"
-133071,WORD_NOUN,,HIRAGANA,,,尾鰭,おびれ,,obire,płetwa ogonowa,,,,"GroupId: 1643505
+133071,WORD_NOUN,,HIRAGANA,,,尾鰭,おびれ,,obire,płetwa ogonowa,,,DUPLICATE 133070,"GroupId: 1643505
 Translate: caudal fin
 AdditionalInfo: sometimes おひれ
 Translate: tail fin
@@ -75342,7 +75342,7 @@ Translate: strange to tell"
 133086,WORD_NOUN,,HIRAGANA,,,飲みで,のみで,,nomide,więcej niż wystarczająco (pić),,,,"GroupId: 1169740
 Translate: more than enough (to drink)"
 133087,WORD_NOUN,,HIRAGANA,,,白血球の数の低下,はっけっきゅうのかずのていか,,hakkekkyuu no kazu no teika,"agranulocytoza
-brak granulocytów",,,,"GroupId: 2037310
+brak granulocytów",,,DUPLICATE 133126,"GroupId: 2037310
 Translate: agranulocytosis (not enough white blood cells)"
 133088,WORD_NOUN,,HIRAGANA,,,鈍物,どんぶつ,,donbutsu,"dureń
 głupiec
@@ -75372,7 +75372,7 @@ Translate: after
 AdditionalInfo: often ...を経て
 Translate: via
 AdditionalInfo: often ...を経て"
-133093,WORD_EXPRESSION,,HIRAGANA,,,今日まで,きょうまで,,kyou made,do dzisiaj,,,,"GroupId: 1579120
+133093,WORD_EXPRESSION,,HIRAGANA,,,今日まで,きょうまで,,kyou made,do dzisiaj,,,DUPLICATE 133128,"GroupId: 1579120
 Translate: until today"
 133094,WORD_ADJECTIVE_NA,,KATAKANA,,,-,ガチムチ,,gachimuchi,"muskularny
 umięśniony
@@ -75428,3 +75428,132 @@ Translate: garnet"
 kamień szlachetny barwy czerwonej, szczególnie granat",ang: carbuncle,,,"GroupId: 2829788
 Translate: carbuncle
 Translate: red gemstone, esp. a garnet"
+133110,WORD_NOUN,,HIRAGANA,,,唐黍,もろこし,,morokoshi,"sorgo dwubarwne
+sorgo zwyczajne
+sorgo cukrowe
+sorgo murzyńskie
+sorgo japońskie
+sorgo zwisłe","gatunek roślin należący do rodziny wiechlinowatych, sorghum bicolor",,,"GroupId: 1571960
+Translate: sorghum (Sorghum bicolor)
+MiscInfo: uk
+Translate: Indian millet
+MiscInfo: uk"
+133111,WORD_NOUN,,KATAKANA,,,-,モロコシ,,morokoshi,"sorgo dwubarwne
+sorgo zwyczajne
+sorgo cukrowe
+sorgo murzyńskie
+sorgo japońskie
+sorgo zwisłe","gatunek roślin należący do rodziny wiechlinowatych, sorghum bicolor",,,"GroupId: 1571960
+Translate: sorghum (Sorghum bicolor)
+MiscInfo: uk
+Translate: Indian millet
+MiscInfo: uk"
+133112,WORD_NOUN,,HIRAGANA,,,売日,うりび,,uribi,"dzień, w którym prostytutki musiały przyjmować klientów",archaizm,,,"GroupId: 2601980
+Translate: day on which prostitutes had to receive clients
+MiscInfo: arch"
+133113,WORD_NOUN,,HIRAGANA,,,紊乱,ぶんらん,,bunran,"choroba
+zburzenie",,,DUPLICATE 133061,"GroupId: 1663190
+Translate: disorder"
+133114,WORD_VERB_U,,HIRAGANA,,,着なおす,きなおす,,ki naosu,"przebrać się
+przebierać się
+zmieniać ubranie",,,,"GroupId: 1423190
+Translate: to change clothes"
+133115,WORD_NOUN,,HIRAGANA,,,溜分,りゅうぶん,,ryuubun,???,,,,"GroupId: 2510340
+Translate: fraction (i.e. in distillation)
+Translate: cut"
+133116,WORD_NOUN,,HIRAGANA,,,尾ひれ,おひれ,,ohire,"ogon i płetwy
+upiększenie (np. opowieści, plotek i etc)
+przesada",,,,"GroupId: 1643500
+Translate: tail and fins
+Translate: embellishment (of a story, rumor, etc.)
+Translate: exaggeration"
+133117,WORD_NOUN,,HIRAGANA,,,尾びれ,おびれ,,obire,płetwa ogonowa,,,,"GroupId: 1643505
+Translate: caudal fin
+AdditionalInfo: sometimes おひれ
+Translate: tail fin
+AdditionalInfo: sometimes おひれ"
+133118,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,冱えない,さえない,,saenai,"ciemny
+pochmurny
+niesatysfakcjonujący
+niezadowalający
+budzenie niezadowolenia
+nieatrakcyjny
+nieprzyjemny
+odpychający
+nudny
+nieinteresujący",,,,"GroupId: 2576510
+Translate: dark
+Translate: dull
+Translate: sullen
+Translate: unsatisfactory
+Translate: dissatisfying
+Translate: unattractive
+Translate: unappealing
+Translate: boring
+Translate: uninteresting"
+133119,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,屑しとしない,いさぎよしとしない,,isagiyoshi to shinai,"zbyt dumny (aby zrobić)
+???",,,,"GroupId: 1858230
+Translate: find it against one's conscience (to do)
+Translate: too proud (to do)"
+133120,WORD_ADVERB,,HIRAGANA,,,幾許もなく,いくばくもなく,,ikubaku mo naku,"niedługo po tym
+wkrótce",,,,"GroupId: 1587160
+Translate: not long after
+MiscInfo: uk
+Translate: before long
+MiscInfo: uk"
+133121,WORD_ADVERB,,HIRAGANA,,,幾何もなく,いくばくもなく,,ikubaku mo naku,"niedługo po tym
+wkrótce",,,,"GroupId: 1587160
+Translate: not long after
+MiscInfo: uk
+Translate: before long
+MiscInfo: uk"
+133122,WORD_ADVERB,,HIRAGANA,,,幾ばくも無く,いくばくもなく,,ikubaku mo naku,"niedługo po tym
+wkrótce",,,,"GroupId: 1587160
+Translate: not long after
+MiscInfo: uk
+Translate: before long
+MiscInfo: uk"
+133123,WORD_ADVERB,,HIRAGANA,,,幾許も無く,いくばくもなく,,ikubaku mo naku,"niedługo po tym
+wkrótce",,,,"GroupId: 1587160
+Translate: not long after
+MiscInfo: uk
+Translate: before long
+MiscInfo: uk"
+133124,WORD_ADVERB,,HIRAGANA,,,幾何も無く,いくばくもなく,,ikubaku mo naku,"niedługo po tym
+wkrótce",,,,"GroupId: 1587160
+Translate: not long after
+MiscInfo: uk
+Translate: before long
+MiscInfo: uk"
+133125,WORD_NOUN,,HIRAGANA,,,飲み出,のみで,,nomide,więcej niż wystarczająco (pić),,,,"GroupId: 1169740
+Translate: more than enough (to drink)"
+133126,WORD_NOUN,,HIRAGANA,,,白血球の数の低下,はっけっきゅうのすうのていか,,hakkekkyuu no suu no teika,"agranulocytoza
+brak granulocytów",,,DUPLICATE 133087,"GroupId: 2037310
+Translate: agranulocytosis (not enough white blood cells)"
+133127,WORD_NOUN,,HIRAGANA,,,堅累,けんるい,,kenrui,"forteca
+twierdza
+fort
+ostoja
+bastion",,,,"GroupId: 1257220
+Translate: stronghold"
+133128,WORD_EXPRESSION,,HIRAGANA,,,今日まで,こんにちまで,,konnichi made,do dzisiaj,,,DUPLICATE 133093,"GroupId: 1579120
+Translate: until today"
+133129,WORD_NOUN,,HIRAGANA,,,足捌き,あしさばき,,ashisabaki,praca nóg,"np. w sztukach walki, w sporcie i etc",,,"GroupId: 2064870
+Translate: footwork (in martial arts, sports, etc.)"
+133130,WORD_NOUN,,HIRAGANA,,,英々辞典,えいえいじてん,,eiei jiten,słownik angielsko-angielski,,,,"GroupId: 1983890
+Translate: English-English dictionary"
+133131,WORD_NOUN,,HIRAGANA,,,痺れ鰻,しびれうなぎ,,shibire unagi,"węgorz elektryczny
+strętwa","gatunek słodkowodnej ryby, electrophorus electricus",,,"GroupId: 2228050
+Translate: electric eel (Electrophorus electricus)
+MiscInfo: uk
+MiscInfo: obsc"
+133132,WORD_NOUN,,KATAKANA,,,-,シビレウナギ,,shibire unagi,"węgorz elektryczny
+strętwa","gatunek słodkowodnej ryby, electrophorus electricus",,,"GroupId: 2228050
+Translate: electric eel (Electrophorus electricus)
+MiscInfo: uk
+MiscInfo: obsc"
+133133,WORD_NOUN,,HIRAGANA,,,電気鰻,でんきうなぎ,,denki unagi,"węgorz elektryczny
+strętwa","gatunek słodkowodnej ryby, electrophorus electricus",,,"GroupId: 2228040
+Translate: electric eel (Electrophorus electricus)"
