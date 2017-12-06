@@ -75778,7 +75778,7 @@ Translate: things prohibited by chopstick etiquette"
 133187,WORD_NOUN,,HIRAGANA,,,民主政治,みんしゅせいじ,,minshu seiji,rząd demokratyczny,,,,"GroupId: 1528850
 Translate: democratic government"
 133188,WORD_NOUN,,HIRAGANA,,,馬糞,ばふん,,bafun,"nawóz koński
-końskie łajno",,,,"GroupId: 1649410
+końskie łajno",,,DUPLICATE 133208,"GroupId: 1649410
 Translate: horse dung"
 133189,WORD_NOUN,,HIRAGANA,,,大冊,たいさつ,,taisatsu,duża lub nieporęczna książka (wolumen),,,,"GroupId: 1661080
 Translate: large or bulky book or volume"
@@ -75804,7 +75804,7 @@ Translate: kindling
 Translate: igniting
 Translate: pasteurization"
 133193,WORD_NOUN,,KATAKANA,,,ＵＨＴ,ユーエイチティー,,yuueichitii,"ultrahigh temperature
-UHT","sterylizacja (pasteryzacji) produktów żywnościowych, polegająca na błyskawicznym, trwającym 2–10sekund, podgrzaniu do temperatury ponad 100 °C i równie błyskawicznym ochłodzeniu do temperatury pokojowej",,,"GroupId: 2831453
+UHT","sterylizacja (pasteryzacji) produktów żywnościowych, polegająca na błyskawicznym, trwającym 2–10sekund, podgrzaniu do temperatury ponad 100 °C i równie błyskawicznym ochłodzeniu do temperatury pokojowej",,DUPLICATE 133209,"GroupId: 2831453
 Translate: ultrahigh temperature (e.g. pasteurization)
 Translate: UHT"
 133194,WORD_VERB_RU,,HIRAGANA,,,気触れる,かぶれる,,kabureru,"wywoływać wysypkę lub stan zapalny (np. w odpowiedzi na coś podrażniające skórę)
@@ -75818,7 +75818,85 @@ Translate: to be strongly influenced (usu. negative or critical nuance)
 MiscInfo: uk"
 133195,WORD_NOUN,,HIRAGANA,,,泥地,でいち,,deichi,"błoto
 bagno
-moczary",,,,"GroupId: 2025530
+moczary",,,DUPLICATE 133210,"GroupId: 2025530
 Translate: mud
 Translate: bog"
 133196,WORD_NOUN,,KATAKANA,,,-,パスチャライゼーション,,pasucharaizeeshon,pasteryzacja,ang: pasteurization,,,
+133197,WORD_NOUN,,HIRAGANA,,,長簀鯨,ながすくじら,,nagasukujira,"płetwal zwyczajny
+finwal","gatunek walenia z rodziny płetwalowate, balaenoptera physalus",,,"GroupId: 1797760
+Translate: fin whale
+MiscInfo: uk
+Translate: finback (whale)
+MiscInfo: uk
+Translate: razorback whale (Balaenoptera physalus)
+MiscInfo: uk"
+133198,WORD_NOUN,,KATAKANA,,,-,ナガスクジラ,,nagasukujira,"płetwal zwyczajny
+finwal","gatunek walenia z rodziny płetwalowate, balaenoptera physalus",,,"GroupId: 1797760
+Translate: fin whale
+MiscInfo: uk
+Translate: finback (whale)
+MiscInfo: uk
+Translate: razorback whale (Balaenoptera physalus)
+MiscInfo: uk"
+133199,WORD_EXPRESSION,,HIRAGANA,,,気も無い,けもない,,ke mo nai,"nie widać żadnych śladów ...
+nie ma śladu ...
+nie do pomyślenia (archaizm)
+nieprawdopodobne (archaizm)",,,,"GroupId: 2233700
+Translate: showing no signs of ~~
+Translate: there being no hint of ~~
+Translate: unthinkable
+MiscInfo: arch"
+133200,WORD_NOUN,,HIRAGANA,,,舟場,ふなば,,funaba,"przystań
+nabrzeże
+keja
+dok",archaizm,,,"GroupId: 2589060
+Translate: wharf
+MiscInfo: arch
+Translate: quay
+MiscInfo: arch
+Translate: dock
+MiscInfo: arch"
+133201,WORD_VERB_U,,HIRAGANA,,,押返す,おしかえす,,oshikaesu,"powstrzymywać
+rozpychać
+przepychać",,,,"GroupId: 1180390
+Translate: to force back
+Translate: to jostle"
+133202,WORD_VERB_U,,HIRAGANA,,,押しかえす,おしかえす,,oshikaesu,"powstrzymywać
+rozpychać
+przepychać",,,,"GroupId: 1180390
+Translate: to force back
+Translate: to jostle"
+133203,WORD_NOUN,,HIRAGANA,,,冥色,めいしょく,,meishoku,wieczorny zmierz,,,,"GroupId: 2575250
+Translate: evening twilight"
+133204,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,足がつく,あしがつく,,ashi ga tsuku,"być śledzony (przez kogoś)
+mieć kochanka (dla kobiety)",,,,"GroupId: 1404660
+Translate: to be traced
+Translate: to be tracked (by someone)
+Translate: to have a lover (for a woman)"
+133205,WORD_NOUN,,HIRAGANA,,,供廻り,ともまわり,,tomomawari,"orszak
+świta",,,,"GroupId: 1233620
+Translate: retinue
+Translate: suite"
+133206,WORD_ADVERB_TO,,KATAKANA,,,-,オメオメ,,ome ome,"bezwstydnie
+postępować bezwstydnie
+zrezygnować (z powodu hańby)",,,,"GroupId: 2068340
+Translate: shamelessly
+MiscInfo: on-mim
+Translate: acting brazenly unaffected
+MiscInfo: on-mim
+Translate: being resigned to (disgrace)"
+133207,WORD_NOUN,,HIRAGANA,,,箸まくら,はしまくら,,hashimakura,podstawka pod pałeczki,,,,"GroupId: 2410960
+Translate: chopstick rest"
+133208,WORD_NOUN,,HIRAGANA,,,馬糞,まぐそ,,maguso,"nawóz koński
+końskie łajno",,,DUPLICATE 133188,"GroupId: 1649410
+Translate: horse dung"
+133209,WORD_NOUN,,KATAKANA,,,ＵＨＴ,ユーエッチティー,,yuuecchitii,"ultrahigh temperature
+UHT","sterylizacja (pasteryzacji) produktów żywnościowych, polegająca na błyskawicznym, trwającym 2–10sekund, podgrzaniu do temperatury ponad 100 °C i równie błyskawicznym ochłodzeniu do temperatury pokojowej",,DUPLICATE 133193,"GroupId: 2831453
+Translate: ultrahigh temperature (e.g. pasteurization)
+Translate: UHT"
+133210,WORD_NOUN,,HIRAGANA,,,泥地,どろち,,dorochi,"błoto
+bagno
+moczary",,,DUPLICATE 133195,"GroupId: 2025530
+Translate: mud
+Translate: bog"
