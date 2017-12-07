@@ -75968,7 +75968,7 @@ Translate: converter"
 WORD_ADVERB_TO",,HIRAGANA,,,哀々,あいあい,,ai ai,głęboki smutek,archaizm,,,"GroupId: 2683800
 Translate: deeply sad
 MiscInfo: arch"
-133224,WORD_NOUN,,HIRAGANA,,,事力,じりき,,jiriki,siła robocza dostarczona urzędnikom państwowym w formie dorosłych mężczyzn lub jako forma podatku,system ritsuryo,,,"GroupId: 2829338
+133224,WORD_NOUN,,HIRAGANA,,,事力,じりき,,jiriki,siła robocza dostarczona urzędnikom państwowym w formie dorosłych mężczyzn lub jako forma podatku,system ritsuryo,,DUPLICATE 133290,"GroupId: 2829338
 Translate: manpower supplied by designated adult men to government officials, or tax in lieu (ritsuryo system)"
 133225,WORD_NOUN,,KATAKANA,,,-,ジストマ,,jisutoma,przywra,ang: distoma,,,"GroupId: 1064670
 Translate: distoma"
@@ -76109,7 +76109,7 @@ powietrze lub styl bezstronności",,,,"GroupId: 1802230
 Translate: the flavor of Zen
 Translate: the flavour of Zen
 Translate: air or style of disinterestedness"
-133258,WORD_ADJECTIVE_I,,HIRAGANA,,,御しやすい,ぎょしやすい,,gyoshiyasui,"uległy
+133258,WORD_ADJECTIVE_I,,HIRAGANA,,,御しやすい,ぎょしやすい,,gyoshi yasui,"uległy
 ustępliwy
 potulny
 posłuszny",,,,"GroupId: 2410600
@@ -76184,9 +76184,10 @@ Translate: tariff barrier"
 natrysk",,,,"GroupId: 1105350
 Translate: bidet
 Translate: douche"
-133274,WORD_INTERJECTION,,HIRAGANA,,,-,おっ,,o,"oo
+133274,WORD_INTERJECTION,,HIRAGANA_EXCEPTION,,,-,おっ,,o,"oo
 ojej
-ojejku",,,,"GroupId: 2770620
+ojejku",,,"DUPLICATE 72016
+DUPLICATE 72063","GroupId: 2770620
 Translate: oh
 Translate: oops"
 133275,"WORD_VERB_U
@@ -76241,5 +76242,111 @@ Translate: linguistic psychology
 Translate: psycholinguistics (esp. from a psychological standpoint)"
 133285,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,風呂上がり,ふろあがり,,furo agari,"zaraz po wyjściu z kąpieli
+zaraz po wyjściu z wanny",,,,"GroupId: 1906650
+Translate: just out of the bath"
+133286,WORD_NOUN,,KATAKANA,,,-,アワブキ,,awabuki,meliosma myriantha,,,,"GroupId: 2216390
+Translate: Meliosma myriantha"
+133287,WORD_NOUN,,HIRAGANA,,,手無し,てなし,,tenashi,"bez dłoni
+bez ręki
+???
+bielizna bez rękawów (archaizm)
+haori bez rękawów (archaizm)
+menstruacja (język kobiet, archaizm)
+miesiączkowanie (język kobiet, archaizm)
+okres (język kobiet, archaizm)",,,,"GroupId: 2747130
+Translate: handless
+Translate: armless
+Translate: vineless plant
+Translate: sleeveless undergarment
+MiscInfo: arch
+Translate: sleeveless haori
+MiscInfo: arch
+Translate: menstruation
+MiscInfo: fem
+MiscInfo: arch
+Translate: period
+MiscInfo: fem
+MiscInfo: arch"
+133288,WORD_NOUN,,HIRAGANA,,,貸料,かしりょう,,kashiryou,"opłata za wynajęcie
+opłata pożyczkowa",,,,"GroupId: 1825070
+Translate: rent
+Translate: loan charges"
+133289,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,哀哀,あいあい,,ai ai,głęboki smutek,archaizm,,,"GroupId: 2683800
+Translate: deeply sad
+MiscInfo: arch"
+133290,WORD_NOUN,,HIRAGANA,,,事力,じりょく,,jiryoku,siła robocza dostarczona urzędnikom państwowym w formie dorosłych mężczyzn lub jako forma podatku,system ritsuryo,,DUPLICATE 133224,"GroupId: 2829338
+Translate: manpower supplied by designated adult men to government officials, or tax in lieu (ritsuryo system)"
+133291,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,軽目,かるめ,,karume,lekka (waga),,,,"GroupId: 1831660
+Translate: light (weight)"
+133292,WORD_VERB_U,,HIRAGANA,,,突っつく,つっつく,,tsuttsuku,"szturchać (powtarzalnie, lekko)
+skubać (jedzenie)
+???",,,,"GroupId: 1456960
+Translate: to poke (repeatedly, lightly)
+MiscInfo: uk
+Translate: to nudge
+MiscInfo: uk
+Translate: to peck at (one's food)
+MiscInfo: uk
+Translate: to pick at
+MiscInfo: uk
+Translate: to peck at (someone's faults, etc.)
+MiscInfo: uk
+Translate: to egg on
+MiscInfo: uk
+Translate: to put up to
+MiscInfo: uk"
+133293,WORD_NOUN,,HIRAGANA,,,鴉天狗,からすてんぐ,,karasutengu,goblin z dziobem wrony,,,,"GroupId: 1845420
+Translate: crow-billed goblin"
+133294,WORD_ADJECTIVE_I,,HIRAGANA,,,御し易い,ぎょしやすい,,gyoshi yasui,"uległy
+ustępliwy
+potulny
+posłuszny",,,,"GroupId: 2410600
+Translate: tractable
+Translate: docile
+Translate: biddable"
+133295,WORD_EXPRESSION,,HIRAGANA,,,恐れ乍ら,おそれながら,,osore nagara,"pozwól mi pokornie powiedzieć
+najbardziej pokornie
+z pełnym szacunkiem",,,,"GroupId: 2543180
+Translate: let me humbly say
+Translate: most humbly
+Translate: with all due respect"
+133296,WORD_EXPRESSION,,HIRAGANA,,,畏れながら,おそれながら,,osore nagara,"pozwól mi pokornie powiedzieć
+najbardziej pokornie
+z pełnym szacunkiem",,,,"GroupId: 2543180
+Translate: let me humbly say
+Translate: most humbly
+Translate: with all due respect"
+133297,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,胡麻化し,ごまかし,,gomakashi,"figle-migle
+oszustwo
+podstęp
+pic na wodę",,,,"GroupId: 1004990
+Translate: hanky-panky
+MiscInfo: uk
+Translate: juggling
+MiscInfo: uk
+Translate: cheating
+MiscInfo: uk
+Translate: deception
+MiscInfo: uk
+Translate: smoke and mirrors
+MiscInfo: uk"
+133298,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,KATAKANA,,,-,グスグス,,gusu gusu,pociąganie nosem,,,,"GroupId: 2766790
+Translate: snuffling
+MiscInfo: on-mim
+Translate: sniffling
+MiscInfo: on-mim"
+133299,WORD_NOUN,,HIRAGANA,,,母形,ぼけい,,bokei,matryca,,,,"GroupId: 1603710
+Translate: matrix"
+133300,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,風呂上り,ふろあがり,,furo agari,"zaraz po wyjściu z kąpieli
+zaraz po wyjściu z wanny",,,,"GroupId: 1906650
+Translate: just out of the bath"
+133301,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,風呂あがり,ふろあがり,,furo agari,"zaraz po wyjściu z kąpieli
 zaraz po wyjściu z wanny",,,,"GroupId: 1906650
 Translate: just out of the bath"
