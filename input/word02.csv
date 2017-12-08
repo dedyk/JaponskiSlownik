@@ -5435,7 +5435,7 @@ DUPLICATE 102452",
 martyngałowy
 delfinbom",,,DUPLICATE 102454,
 102430,WORD_NOUN,,HIRAGANA,,,鰖,たかべ,,takabe,labracoglossa argentiventris,,,,
-102431,WORD_NOUN,,HIRAGANA,,,砰,ずり,,zuri,ziemia usunięta z kopalnii (lub tunelu),,,,
+102431,WORD_NOUN,,HIRAGANA,,,砰,ずり,,zuri,ziemia usunięta z kopalni (lub tunelu),,,DUPLICATE 133323,
 102432,WORD_INTERJECTION,,HIRAGANA,,,喃,のう,,nou,"przepraszam! (podczas wołania do kogoś)
 dobrze?
 nie zgadzasz się?",archaizm,,DUPLICATE 107338,
@@ -76448,12 +76448,13 @@ MiscInfo: abbr"
 133322,WORD_NOUN,,HIRAGANA,,,波数,はすう,,hasuu,liczba falowa,fizyka,,,"GroupId: 2027460
 Translate: wave number
 Translate: wavenumber"
-133323,WORD_NOUN,,HIRAGANA,,,-,ずり,,zuri,???,,,,"GroupId: 2647940
+133323,WORD_NOUN,,HIRAGANA,,,-,ずり,,zuri,???,,,"DUPLICATE 102431
+DUPLICATE 133324","GroupId: 2647940
 Translate: shear (wind, fluids)
 Translate: chicken gizzard
 MiscInfo: col
 MiscInfo: abbr"
-133324,WORD_NOUN,,HIRAGANA,,,尾類,ずり,,zuri,prostytutka,"archaizm, dialekt Riukiu",,,"GroupId: 2647950
+133324,WORD_NOUN,,HIRAGANA,,,尾類,ずり,,zuri,prostytutka,"archaizm, dialekt Riukiu",,DUPLICATE 133323,"GroupId: 2647950
 Translate: prostitute
 MiscInfo: arch"
 133325,WORD_NOUN,,HIRAGANA,,,弱勢,じゃくせい,,jakusei,"niższość
@@ -76472,7 +76473,7 @@ Translate: enthusiasm"
 swoje środki do życia",,,,"GroupId: 2121470
 Translate: one's living
 Translate: one's livelihood"
-133328,WORD_NOUN,,HIRAGANA,,,脇座,わきざ,,wakiza,"na przodzie sceny po lewej stronie (w teatrze no), gdzie drugoplanowy aktor często siedzi",,,,"GroupId: 2649370
+133328,WORD_NOUN,,HIRAGANA,,,脇座,わきざ,,waki za,"na przodzie sceny po lewej stronie (w teatrze no), gdzie drugoplanowy aktor często siedzi",,,,"GroupId: 2649370
 Translate: downstage left (in noh), where the secondary actor is often seated"
 133329,WORD_EXPRESSION,,HIRAGANA,,,突然だけど,とつぜんだけど,,totsuzen dakedo,"a propos niczego
 ni stąd, ni zowąd
@@ -76583,7 +76584,7 @@ MiscInfo: obs"
 133352,WORD_NOUN,,HIRAGANA,,,加配,かはい,,kahai,dodatkowa racja,,,,"GroupId: 1190500
 Translate: additional ration"
 133353,WORD_NOUN,,HIRAGANA,,,下輩,かはい,,kahai,"niższy rangą
-niskiej klasy osoba",,,,"GroupId: 1576970
+niskiej klasy osoba",,,DUPLICATE 133372,"GroupId: 1576970
 Translate: inferior
 Translate: low-class person"
 133354,WORD_NOUN,,HIRAGANA,,,夏虫,なつむし,,natsumushi,"letni owad
@@ -76599,3 +76600,87 @@ Translate: adventure story
 Translate: novel of adventure"
 133357,WORD_NOUN,,KATAKANA_HIRAGANA,,,東場,トンば,,tonba,???,Mahjong,,,"GroupId: 2750110
 Translate: east round"
+133358,WORD_NOUN,,HIRAGANA,,,焦げ茶,こげちゃ,,kogecha,"ciemny brąz
+oliwka z brązem",,,,"GroupId: 1350750
+Translate: dark brown
+Translate: olive brown"
+133359,WORD_NOUN,,HIRAGANA,,,焦茶,こげちゃ,,kogecha,"ciemny brąz
+oliwka z brązem",,,,"GroupId: 1350750
+Translate: dark brown
+Translate: olive brown"
+133360,WORD_NOUN,,HIRAGANA,,,野鼠,のねずみ,,no nezumi,"mysz polna
+mysz zaroślowa
+nornik łąkowy",,,,"GroupId: 1537540
+Translate: field mouse
+MiscInfo: uk
+Translate: meadow mouse
+MiscInfo: uk"
+133361,WORD_NOUN,,KATAKANA,,,-,ノネズミ,,no nezumi,"mysz polna
+mysz zaroślowa
+nornik łąkowy",,,,"GroupId: 1537540
+Translate: field mouse
+MiscInfo: uk
+Translate: meadow mouse
+MiscInfo: uk"
+133362,WORD_NOUN,,HIRAGANA,,,身すぎ,みすぎ,,misugi,"swoje utrzymanie
+swoje środki do życia",,,,"GroupId: 1705970
+Translate: one's living
+Translate: one's livelihood"
+133363,WORD_NOUN,,HIRAGANA,,,身すぎ世すぎ,みすぎよすぎ,,misugi yosugi,"swoje utrzymanie
+swoje środki do życia",,,,"GroupId: 2121470
+Translate: one's living
+Translate: one's livelihood"
+133364,WORD_NOUN,,KATAKANA_HIRAGANA,,,ワキ座,ワキざ,,waki za,"na przodzie sceny po lewej stronie (w teatrze no), gdzie drugoplanowy aktor często siedzi",,,,"GroupId: 2649370
+Translate: downstage left (in noh), where the secondary actor is often seated"
+133365,WORD_VERB_U,,HIRAGANA,,,突返す,つきかえす,,tsuki kaesu,"zadać powrotny cios
+nie pozostać dłużnym
+odpowiedzieć (na cios)
+odrzucać
+odsyłać
+odesłać",,,,"GroupId: 1456860
+Translate: to deal a blow in return
+Translate: to hit back
+Translate: to punch back
+Translate: to reject
+Translate: to send back"
+133366,WORD_NOUN,,HIRAGANA,,,祝酒,いわいざけ,,iwai zake,"uroczysty napój alkoholowy
+świąteczny radosny okrzyk",,,,"GroupId: 1771000
+Translate: celebratory drink
+Translate: celebratory spirits
+Translate: holiday cheer"
+133367,WORD_NOUN,,HIRAGANA,,,抑え込み,おさえこみ,,osae komi,"trzymanie (szczególnie w judo)
+technika trzymania
+przywieranie do muru
+doprowadzenie do kontroli na czymś",,,,"GroupId: 2060640
+Translate: holding down (esp. in judo)
+Translate: holding technique
+Translate: pinning down
+Translate: immobilizing
+Translate: bringing under control"
+133368,WORD_VERB_U,,HIRAGANA,,,沈みこむ,しずみこむ,,shizumi komu,???,,,,"GroupId: 2086690
+Translate: to sink"
+133369,WORD_VERB_RU,,HIRAGANA,,,脅し付ける,おどしつける,,odoshi tsukeru,"grozić
+straszyć
+przerazić
+przerażać",,,,"GroupId: 1238050
+Translate: to threaten
+Translate: to terrify
+Translate: to frighten"
+133370,WORD_VERB_RU,,HIRAGANA,,,嚇しつける,おどしつける,,odoshi tsukeru,"grozić
+straszyć
+przerazić
+przerażać",,,,"GroupId: 1238050
+Translate: to threaten
+Translate: to terrify
+Translate: to frighten"
+133371,WORD_VERB_RU,,HIRAGANA,,,嚇し付ける,おどしつける,,odoshi tsukeru,"grozić
+straszyć
+przerazić
+przerażać",,,,"GroupId: 1238050
+Translate: to threaten
+Translate: to terrify
+Translate: to frighten"
+133372,WORD_NOUN,,HIRAGANA,,,下輩,げはい,,gehai,"niższy rangą
+niskiej klasy osoba",,,DUPLICATE 133353,"GroupId: 1576970
+Translate: inferior
+Translate: low-class person"
