@@ -2600,6 +2600,8 @@ public class WordGenerator {
 				Boolean ignoreJmedictEmptyRawData = false;
 				Boolean randomWords = false;
 				
+				boolean setWords = false;
+				
 				//
 				
 				Options options = new Options();
@@ -2607,6 +2609,7 @@ public class WordGenerator {
 				options.addOption("s", "size", true, "Size of find words");
 				options.addOption("r", "random", false, "Random words");
 				options.addOption("ijerd", "ignore-jmedict-empty-raw-data", false, "Ignore jmedict empty raw data");
+				options.addOption("set", "set-words", false, "Set words");
 				
 				options.addOption("h", "help", false, "Help");
 				
@@ -2637,208 +2640,255 @@ public class WordGenerator {
 					System.exit(1);
 				}
 				
-				//
-				
-				if (commandLine.hasOption("size") == true) {
-					findWordsSize = Integer.parseInt(commandLine.getOptionValue("size"));
-				}
-				
-				if (commandLine.hasOption("ignore-jmedict-empty-raw-data") == true) {
-					ignoreJmedictEmptyRawData = true;
-				}
-				
-				if (commandLine.hasOption("random") == true) {
-					randomWords = true;
-				}				
-
-				if (findWordsSize == null) {
-					System.err.println("No size of find words");
-					
-					System.exit(1);
+				if (commandLine.hasOption("set-words") == true) {
+					setWords = true;
 				}
 				
 				//
 				
-				// przygotowywane slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
-				
-				// lista wszystkich slow
-				List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
-
-				// pobranie cache ze slowami
-				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-				
-				if (randomWords == true) {
-					polishJapaneseEntriesList = new ArrayList<>(polishJapaneseEntriesList);
-					
-					Collections.shuffle(polishJapaneseEntriesList);
-				}
+				final String findWordsWithJmedictChangeFilename = "input/find-words-with-jmedict-change.csv";
 				
 				//
 				
-				class PolishJapaneseEntryAndGroupEntryListWrapper {
-					
-					PolishJapaneseEntry polishJapaneseEntry;
-					
-					List<GroupEntry> groupEntryList;
-
-					public PolishJapaneseEntryAndGroupEntryListWrapper(PolishJapaneseEntry polishJapaneseEntry,
-							List<GroupEntry> groupEntryList) {
-						this.polishJapaneseEntry = polishJapaneseEntry;
-						this.groupEntryList = groupEntryList;
-					}
-				}
+				if (setWords == false) {
 				
-				//
-				
-				List<PolishJapaneseEntryAndGroupEntryListWrapper> result = new ArrayList<PolishJapaneseEntryAndGroupEntryListWrapper>();
-				
-				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+					//
 					
-					DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
-					
-					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
-						continue;
+					if (commandLine.hasOption("size") == true) {
+						findWordsSize = Integer.parseInt(commandLine.getOptionValue("size"));
 					}
 					
-					// szukanie slow
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
+					if (commandLine.hasOption("ignore-jmedict-empty-raw-data") == true) {
+						ignoreJmedictEmptyRawData = true;
+					}
 					
-					if (groupEntryList != null && groupEntryList.size() != 0) {
+					if (commandLine.hasOption("random") == true) {
+						randomWords = true;
+					}				
+	
+					if (findWordsSize == null) {
+						System.err.println("No size of find words");
 						
-						List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
+						System.exit(1);
+					}
+					
+					//
+										
+					// przygotowywane slownika jmedict
+					JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+					
+					// lista wszystkich slow
+					List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+	
+					// pobranie cache ze slowami
+					final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
+					
+					if (randomWords == true) {
+						polishJapaneseEntriesList = new ArrayList<>(polishJapaneseEntriesList);
 						
-						// ignorojemy puste wpisy
-						if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true) {							
+						Collections.shuffle(polishJapaneseEntriesList);
+					}
+					
+					//
+					
+					class PolishJapaneseEntryAndGroupEntryListWrapper {
+						
+						PolishJapaneseEntry polishJapaneseEntry;
+						
+						List<GroupEntry> groupEntryList;
+	
+						public PolishJapaneseEntryAndGroupEntryListWrapper(PolishJapaneseEntry polishJapaneseEntry,
+								List<GroupEntry> groupEntryList) {
+							this.polishJapaneseEntry = polishJapaneseEntry;
+							this.groupEntryList = groupEntryList;
+						}
+					}
+					
+					//
+					
+					List<PolishJapaneseEntryAndGroupEntryListWrapper> result = new ArrayList<PolishJapaneseEntryAndGroupEntryListWrapper>();
+					
+					for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+						
+						DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+						
+						if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
 							continue;
 						}
 						
-						//
-												
-						List<GroupEntry> groupEntryListForPolishJapaneseEntry = null;
+						// szukanie slow
+						List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
 						
-						// szukamy grupy na podstawie id
-						for (GroupEntry currentGroupEntry : groupEntryList) {
+						if (groupEntryList != null && groupEntryList.size() != 0) {
 							
-							String groupIdString = currentGroupEntry.getGroup().getGroupIdString();
+							List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
 							
-							// czy ta sama grupa
-							if (jmedictRawDataList.contains(groupIdString) == true) {
-								groupEntryListForPolishJapaneseEntry = Arrays.asList(currentGroupEntry);
-								
-								break;								
-							}
-						}
-						
-						// jezeli nie udalo sie znalezc grupy
-						if (groupEntryListForPolishJapaneseEntry == null) {
-							
-							if (JMENewDictionary.isMultiGroup(groupEntryList) == false) { // jezeli jest to pojedyncza grupa							
-								groupEntryListForPolishJapaneseEntry = Arrays.asList(groupEntryList.get(0));								
-								
-							} else { // jesli jest to multi grupa								
-								groupEntryListForPolishJapaneseEntry = groupEntryList;								
-								
-							}
-						}
-						
-						if (groupEntryListForPolishJapaneseEntry.size() == 1) {
-							
-							// porownujemy tlumaczenia
-							List<GroupEntryTranslate> groupEntryTranslateList = groupEntryListForPolishJapaneseEntry.get(0).getTranslateList();
-							
-							List<String> newJmedictRawDataList = new ArrayList<String>();
-							
-							for (GroupEntryTranslate groupEntryTranslate : groupEntryTranslateList) {
-								groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
+							// ignorojemy puste wpisy
+							if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true) {							
+								continue;
 							}
 							
-							if (jmedictRawDataList.equals(newJmedictRawDataList) == false) { // jest roznica								
+							//
+													
+							List<GroupEntry> groupEntryListForPolishJapaneseEntry = null;
+							
+							// szukamy grupy na podstawie id
+							for (GroupEntry currentGroupEntry : groupEntryList) {
+								
+								String groupIdString = currentGroupEntry.getGroup().getGroupIdString();
+								
+								// czy ta sama grupa
+								if (jmedictRawDataList.contains(groupIdString) == true) {
+									groupEntryListForPolishJapaneseEntry = Arrays.asList(currentGroupEntry);
+									
+									break;								
+								}
+							}
+							
+							// jezeli nie udalo sie znalezc grupy
+							if (groupEntryListForPolishJapaneseEntry == null) {
+								
+								if (JMENewDictionary.isMultiGroup(groupEntryList) == false) { // jezeli jest to pojedyncza grupa							
+									groupEntryListForPolishJapaneseEntry = Arrays.asList(groupEntryList.get(0));								
+									
+								} else { // jesli jest to multi grupa								
+									groupEntryListForPolishJapaneseEntry = groupEntryList;								
+									
+								}
+							}
+							
+							if (groupEntryListForPolishJapaneseEntry.size() == 1) {
+								
+								// porownujemy tlumaczenia
+								List<GroupEntryTranslate> groupEntryTranslateList = groupEntryListForPolishJapaneseEntry.get(0).getTranslateList();
+								
+								List<String> newJmedictRawDataList = new ArrayList<String>();
+								
+								for (GroupEntryTranslate groupEntryTranslate : groupEntryTranslateList) {
+									groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
+								}
+								
+								if (jmedictRawDataList.equals(newJmedictRawDataList) == false) { // jest roznica								
+									result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, groupEntryListForPolishJapaneseEntry));
+								}
+								
+							} else { // multi grupa
+								
+								// dodajemy do manualnego sprawdzenia
 								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, groupEntryListForPolishJapaneseEntry));
 							}
 							
-						} else { // multi grupa
-							
-							// dodajemy do manualnego sprawdzenia
-							result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, groupEntryListForPolishJapaneseEntry));
-						}
-						
-						// sprawdzamy ilosc znalezionych slow
-						if (result.size() >= findWordsSize) {
-							break;
-						}
-					}					
-				}
-				
-				Collections.sort(result, new Comparator<PolishJapaneseEntryAndGroupEntryListWrapper>() {
-
-					@Override
-					public int compare(PolishJapaneseEntryAndGroupEntryListWrapper o1, PolishJapaneseEntryAndGroupEntryListWrapper o2) {
-						return new Integer(o1.polishJapaneseEntry.getId()).compareTo(o2.polishJapaneseEntry.getId());
+							// sprawdzamy ilosc znalezionych slow
+							if (result.size() >= findWordsSize) {
+								break;
+							}
+						}					
 					}
-				});
-				
-				//
-				
-				final Map<Integer, PolishJapaneseEntryAndGroupEntryListWrapper> idPolishJapaneseEntryAndGroupEntryListWrapperMap = new TreeMap<Integer, PolishJapaneseEntryAndGroupEntryListWrapper>();
-				
-				List<PolishJapaneseEntry> resultAsPolishJapaneseEntryList = new ArrayList<PolishJapaneseEntry>();
-				
-				for (PolishJapaneseEntryAndGroupEntryListWrapper polishJapaneseEntryAndGroupEntryListWrapper : result) {					
-					idPolishJapaneseEntryAndGroupEntryListWrapperMap.put(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getId(), polishJapaneseEntryAndGroupEntryListWrapper);
 					
-					resultAsPolishJapaneseEntryList.add(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry);
-				}
-				
-				//
+					Collections.sort(result, new Comparator<PolishJapaneseEntryAndGroupEntryListWrapper>() {
+	
+						@Override
+						public int compare(PolishJapaneseEntryAndGroupEntryListWrapper o1, PolishJapaneseEntryAndGroupEntryListWrapper o2) {
+							return new Integer(o1.polishJapaneseEntry.getId()).compareTo(o2.polishJapaneseEntry.getId());
+						}
+					});
+					
+					//
+					
+					final Map<Integer, PolishJapaneseEntryAndGroupEntryListWrapper> idPolishJapaneseEntryAndGroupEntryListWrapperMap = new TreeMap<Integer, PolishJapaneseEntryAndGroupEntryListWrapper>();
+					
+					List<PolishJapaneseEntry> resultAsPolishJapaneseEntryList = new ArrayList<PolishJapaneseEntry>();
+					
+					for (PolishJapaneseEntryAndGroupEntryListWrapper polishJapaneseEntryAndGroupEntryListWrapper : result) {					
+						idPolishJapaneseEntryAndGroupEntryListWrapperMap.put(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getId(), polishJapaneseEntryAndGroupEntryListWrapper);
+						
+						resultAsPolishJapaneseEntryList.add(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry);
+					}
+					
+					//
+									
+					ICustomAdditionalCsvWriter customAdditionalCsvWriter = new ICustomAdditionalCsvWriter() {
+						
+						@Override
+						public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
+							
+							PolishJapaneseEntryAndGroupEntryListWrapper polishJapaneseEntryAndGroupEntryListWrapper = idPolishJapaneseEntryAndGroupEntryListWrapperMap.get(polishJapaneseEntry.getId());
+							
+							if (polishJapaneseEntryAndGroupEntryListWrapper.groupEntryList.size() == 1) {
+								csvWriter.write("SINGLEGROUP");
 								
-				ICustomAdditionalCsvWriter customAdditionalCsvWriter = new ICustomAdditionalCsvWriter() {
+							} else {
+								csvWriter.write("MULTIGROUP");
+							}
+							
+							for (GroupEntry groupEntry : polishJapaneseEntryAndGroupEntryListWrapper.groupEntryList) {
+								
+								CreatePolishJapaneseEntryResult newPolishJapaneseEntryResult = null;
+								
+								try {
+									newPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, -1, "<null>");
+									
+								} catch (DictionaryException e) {
+									
+									throw new IOException(e);
+								}
+								
+								//
+								
+								csvWriter.write(Helper.convertListToString(newPolishJapaneseEntryResult.polishJapaneseEntry.getTranslates()));
+								csvWriter.write(newPolishJapaneseEntryResult.polishJapaneseEntry.getInfo());
+	
+								//
+								
+								List<String> newJmedictRawDataList = new ArrayList<String>();
+								
+								for (GroupEntryTranslate groupEntryTranslate : groupEntry.getTranslateList()) {
+									groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
+								}
+								
+								csvWriter.write(Helper.convertListToString(newJmedictRawDataList));
+							}
+						}
+					};				
 					
-					@Override
-					public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
+					// zapis
+					CsvReaderWriter.generateCsv(new String[] { findWordsWithJmedictChangeFilename }, resultAsPolishJapaneseEntryList, true, true, false, true, customAdditionalCsvWriter);
+					
+				} else { // ustawienie slow
+					
+					// lista wszystkich slow
+					List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+										
+					// wczytanie zmienionych slow					
+					List<PolishJapaneseEntry> newChangedPolishJapaneseEntriesList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { findWordsWithJmedictChangeFilename });
+
+					// utworz mape z id'kami zmienionych slow
+					TreeMap<Integer, PolishJapaneseEntry> newChangedPolishJapaneseEntriesListIdMap = new TreeMap<Integer, PolishJapaneseEntry>();
+					
+					for (PolishJapaneseEntry newChangedPolishJapaneseEntry : newChangedPolishJapaneseEntriesList) {
+						newChangedPolishJapaneseEntriesListIdMap.put(newChangedPolishJapaneseEntry.getId(), newChangedPolishJapaneseEntry);
+					}
+					
+					// lista wynikowa
+					List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
+					
+					for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
 						
-						PolishJapaneseEntryAndGroupEntryListWrapper polishJapaneseEntryAndGroupEntryListWrapper = idPolishJapaneseEntryAndGroupEntryListWrapperMap.get(polishJapaneseEntry.getId());
+						// sprawdzamy, czy ten wpis jest na liscie zmienionych wpisow
+						PolishJapaneseEntry changedPolishJapaneseEntry = newChangedPolishJapaneseEntriesListIdMap.get(polishJapaneseEntry.getId());
 						
-						if (polishJapaneseEntryAndGroupEntryListWrapper.groupEntryList.size() == 1) {
-							csvWriter.write("SINGLEGROUP");
+						if (changedPolishJapaneseEntry == null) {
+							result.add(polishJapaneseEntry);
 							
 						} else {
-							csvWriter.write("MULTIGROUP");
+							result.add(changedPolishJapaneseEntry);
 						}
-						
-						for (GroupEntry groupEntry : polishJapaneseEntryAndGroupEntryListWrapper.groupEntryList) {
-							
-							CreatePolishJapaneseEntryResult newPolishJapaneseEntryResult = null;
-							
-							try {
-								newPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, -1, "<null>");
-								
-							} catch (DictionaryException e) {
-								
-								throw new IOException(e);
-							}
-							
-							//
-							
-							csvWriter.write(Helper.convertListToString(newPolishJapaneseEntryResult.polishJapaneseEntry.getTranslates()));
-							csvWriter.write(newPolishJapaneseEntryResult.polishJapaneseEntry.getInfo());
-
-							//
-							
-							List<String> newJmedictRawDataList = new ArrayList<String>();
-							
-							for (GroupEntryTranslate groupEntryTranslate : groupEntry.getTranslateList()) {
-								groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
-							}
-							
-							csvWriter.write(Helper.convertListToString(newJmedictRawDataList));
-						}
-					}
-				};				
+					}					
+					
+					// zapis docelowego slownika
+					CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv" }, result, true, true, false, true, null);
+				}
 				
-				// zapis
-				CsvReaderWriter.generateCsv(new String[] { "input/find-words-with-jmedict-change.csv" }, resultAsPolishJapaneseEntryList, true, true, false, true, customAdditionalCsvWriter);
-								
 				break;
 			}
 			
