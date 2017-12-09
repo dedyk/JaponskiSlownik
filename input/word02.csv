@@ -76824,7 +76824,7 @@ Translate: rubber boots"
 133406,WORD_VERB_U,,HIRAGANA,,,食い破る,くいやぶる,,kui yaburu,przegryzać dziurę w,,,,"GroupId: 2759160
 Translate: to bite and tear
 Translate: to bite a hole in"
-133407,WORD_NOUN,,HIRAGANA,,,水撒き,みずまき,,mizumaki,"polewanie
+133407,WORD_NOUN,,HIRAGANA,,,水撒き,みずまき,,mizu maki,"polewanie
 zraszanie
 nawadnianie
 tryskanie",,,,"GroupId: 1371500
@@ -76838,7 +76838,7 @@ Translate: head of the penis"
 133410,WORD_NOUN,,KATAKANA,,,-,ノーカン,,noo kan,nie licząc,ang: not counting,,,"GroupId: 2079650
 Translate: not counting (as anything significant)
 MiscInfo: abbr"
-133411,WORD_ADVERB,,HIRAGANA,,,道理で,どうりで,,douri de,???,,,,"GroupId: 1454270
+133411,WORD_ADVERB,,HIRAGANA,,,道理で,どうりで,,douri de,???,,,DUPLICATE 133438,"GroupId: 1454270
 Translate: indeed
 MiscInfo: uk
 Translate: it's no wonder
@@ -76914,7 +76914,7 @@ komisja techniczna
 komitet techniczny",,,,"GroupId: 2700510
 Translate: expert committee
 Translate: technical committee"
-133427,WORD_VERB_RU,,HIRAGANA,,,事足りる,ことたりる,,kototariru,"wystarczać
+133427,WORD_VERB_RU,,HIRAGANA,,,事足りる,ことたりる,,koto tariru,"wystarczać
 zadowalać
 służyć celowi
 być zadowolony
@@ -76941,3 +76941,62 @@ Translate: to bend
 Translate: to wind
 Translate: to twist
 Translate: to zig-zag"
+133431,WORD_NOUN,,KATAKANA,,,-,ベンダ,,benda,"bender
+sprzedawca","ang: bender, vendor",,,"GroupId: 1120250
+Translate: bender
+Translate: vendor"
+133432,WORD_NOUN,,HIRAGANA,,,鳴鳥,なきどり,,nakidori,"śpiew ptaku
+ptak śpiewający piękną melodię",,,DUPLICATE 133433,"GroupId: 2606190
+Translate: songbird
+Translate: bird with a beautiful song"
+133433,WORD_NOUN,,HIRAGANA,,,鳴鳥,めいちょう,,meichou,"śpiew ptaku
+ptak śpiewający piękną melodię",,,DUPLICATE 133432,"GroupId: 2606190
+Translate: songbird
+Translate: bird with a beautiful song"
+133434,WORD_NOUN,,HIRAGANA,,,枝振り,えだぶり,,edaburi,kształt drzewa,,,,"GroupId: 1624230
+Translate: shape of a tree"
+133435,WORD_VERB_U,,HIRAGANA,,,食破る,くいやぶる,,kui yaburu,przegryzać dziurę w,,,,"GroupId: 2759160
+Translate: to bite and tear
+Translate: to bite a hole in"
+133436,WORD_NOUN,,HIRAGANA,,,水まき,みずまき,,mizu maki,"polewanie
+zraszanie
+nawadnianie
+tryskanie",,,,"GroupId: 1371500
+Translate: watering
+Translate: sprinkling"
+133437,WORD_NOUN,,KATAKANA,,,-,カミング・アウト,,kamingu auto,"wyjawienie, że jest się homoseksualistą",ang: coming out,,,"GroupId: 2237410
+Translate: coming out (of the closet, etc.)"
+133438,WORD_ADVERB,,HIRAGANA,,,道理で,どおりで,,doori de,???,,,DUPLICATE 133411,"GroupId: 1454270
+Translate: indeed
+MiscInfo: uk
+Translate: it's no wonder
+MiscInfo: uk"
+133439,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,右づめ,みぎづめ,,migidume,"wyrównywanie do prawego marginesu
+wyrównanie do prawego",,,,"GroupId: 1171090
+Translate: right justification
+Translate: aligning to the right"
+133440,WORD_NOUN,,HIRAGANA,,,上澄,うわずみ,,uwazumi,"przezroczysta góra cieczy
+czysta warstwa cieczy na osadzie",,,,"GroupId: 1353580
+Translate: the clear top of a liquid
+Translate: the clear layer in a fluid, atop the sediment"
+133441,WORD_NOUN,,HIRAGANA,,,珪素,けいそ,,kei so,krzem,pierwiastek,,,"GroupId: 1592570
+Translate: silicon (Si)"
+133442,WORD_NOUN,,HIRAGANA,,,硅素,けいそ,,kei so,krzem,pierwiastek,,,"GroupId: 1592570
+Translate: silicon (Si)"
+133443,WORD_ADJECTIVE_NA,,HIRAGANA,,,眼深,まぶか,,mabuka,(nosić) nisko nad oczami,np. czapkę lekko zasłaniającą oczy,,,"GroupId: 1363990
+Translate: (wearing) low over one's eyes"
+133444,WORD_ADJECTIVE_NA,,HIRAGANA,,,真深,まぶか,,mabuka,(nosić) nisko nad oczami,np. czapkę lekko zasłaniającą oczy,,,"GroupId: 1363990
+Translate: (wearing) low over one's eyes"
+133445,WORD_NOUN,,KATAKANA,,,-,ボイス・チャット,,boisu chatto,czat głosowy,"np. w grach wideo, ang: voice chat",,,"GroupId: 2832459
+Translate: voice chat (e.g. in a video game)"
+133446,WORD_NOUN,,HIRAGANA,,,ご朱印,ごしゅいん,,goshuin,list ze szkarłatną pieczęcią szoguna,,,,"GroupId: 1694100
+Translate: letter bearing the shogun's scarlet seal"
+133447,WORD_VERB_RU,,HIRAGANA,,,こと足りる,ことたりる,,koto tariru,"wystarczać
+zadowalać
+służyć celowi
+być zadowolony
+być usatysfakcjonowany",,,,"GroupId: 1314150
+Translate: to suffice
+Translate: to serve the purpose
+Translate: to be satisfied"
