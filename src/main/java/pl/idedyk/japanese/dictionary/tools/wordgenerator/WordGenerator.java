@@ -13,8 +13,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -2706,10 +2706,12 @@ public class WordGenerator {
 					
 					//
 					
+					Set<Integer> alreadyAddPolishJapaneseEntriesId = new HashSet<Integer>();
+					
 					List<PolishJapaneseEntryAndGroupEntryListWrapper> result = new ArrayList<PolishJapaneseEntryAndGroupEntryListWrapper>();
 					
 					for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
-						
+																		
 						DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
 						
 						if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
@@ -2718,7 +2720,7 @@ public class WordGenerator {
 						
 						// szukanie slow
 						List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
-						
+												
 						if (groupEntryList != null && groupEntryList.size() != 0) {
 							
 							List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
@@ -2746,19 +2748,13 @@ public class WordGenerator {
 							}
 							
 							// jezeli nie udalo sie znalezc grupy
-							if (groupEntryListForPolishJapaneseEntry == null) {
-								
-								if (JMENewDictionary.isMultiGroup(groupEntryList) == false) { // jezeli jest to pojedyncza grupa							
-									groupEntryListForPolishJapaneseEntry = Arrays.asList(groupEntryList.get(0));								
-									
-								} else { // jesli jest to multi grupa								
-									groupEntryListForPolishJapaneseEntry = groupEntryList;								
-									
-								}
+							if (groupEntryListForPolishJapaneseEntry == null) {								
+								groupEntryListForPolishJapaneseEntry = groupEntryList;
 							}
 							
-							if (groupEntryListForPolishJapaneseEntry.size() == 1) {
+							if (JMENewDictionary.isMultiGroup(groupEntryListForPolishJapaneseEntry) == false) { // grupa pojedyncza
 								
+								/*
 								// porownujemy tlumaczenia
 								List<GroupEntryTranslate> groupEntryTranslateList = groupEntryListForPolishJapaneseEntry.get(0).getTranslateList();
 								
@@ -2771,7 +2767,51 @@ public class WordGenerator {
 								if (jmedictRawDataList.equals(newJmedictRawDataList) == false) { // jest roznica								
 									result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, groupEntryListForPolishJapaneseEntry));
 								}
+								*/
 								
+								// szukamy wszystkich slow w tej samej grupie tlumaczen
+								groupEntryListForPolishJapaneseEntry = groupEntryListForPolishJapaneseEntry.get(0).getGroup().getGroupEntryList(); // podmiana na wszystkie elementy z grupy
+								
+								List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryListForPolishJapaneseEntry);
+								
+								for (List<GroupEntry> theSameTranslateGroupEntryList : groupByTheSameTranslateGroupEntryList) {
+									
+									for (GroupEntry groupEntry : theSameTranslateGroupEntryList) {
+																				
+										String groupEntryKanji = groupEntry.getKanji();
+										String groupEntryKana = groupEntry.getKana();
+
+										PolishJapaneseEntry findPolishJapaneseEntry = 
+												Helper.findPolishJapaneseEntryWithEdictDuplicate(polishJapaneseEntry, cachePolishJapaneseEntryList, 
+												groupEntryKanji, groupEntryKana);
+
+										if (findPolishJapaneseEntry != null && alreadyAddPolishJapaneseEntriesId.contains(findPolishJapaneseEntry.getId()) == false) {
+											
+											jmedictRawDataList = findPolishJapaneseEntry.getJmedictRawDataList();
+											
+											// ignorojemy puste wpisy
+											if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true) {							
+												continue;
+											}											
+											
+											List<GroupEntryTranslate> groupEntryTranslateList = groupEntry.getTranslateList();
+											
+											List<String> newJmedictRawDataList = new ArrayList<String>();											
+											
+											for (GroupEntryTranslate groupEntryTranslate : groupEntryTranslateList) {
+												groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
+											}
+
+											if (jmedictRawDataList.equals(newJmedictRawDataList) == false) { // jest roznica
+												
+												result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(findPolishJapaneseEntry, Arrays.asList(groupEntry)));
+												
+												alreadyAddPolishJapaneseEntriesId.add(findPolishJapaneseEntry.getId());
+											}
+										}
+									}
+								}
+																
 							} else { // multi grupa
 								
 								// dodajemy do manualnego sprawdzenia
@@ -2785,6 +2825,7 @@ public class WordGenerator {
 						}					
 					}
 					
+					/*
 					Collections.sort(result, new Comparator<PolishJapaneseEntryAndGroupEntryListWrapper>() {
 	
 						@Override
@@ -2792,6 +2833,7 @@ public class WordGenerator {
 							return new Integer(o1.polishJapaneseEntry.getId()).compareTo(o2.polishJapaneseEntry.getId());
 						}
 					});
+					*/
 					
 					//
 					
