@@ -77405,9 +77405,10 @@ Translate: gust"
 duma ze swojego ojczystego miejsca",,,,"GroupId: 1746310
 Translate: national or local pride
 Translate: the pride of one's native place"
-133541,WORD_NOUN,,HIRAGANA,,,少輔,しょう,,shou,asystent wiceministra,"system ritsuryo, wczesny okres Meiji",,,"GroupId: 2830351
+133541,WORD_NOUN,,HIRAGANA,,,少輔,しょう,,shou,asystent wiceministra,"system ritsuryo, wczesny okres Meiji",,"DUPLICATE 133594
+DUPLICATE 133595","GroupId: 2830351
 Translate: assistant vice-minister (ritsuryo system, early Meiji period)"
-133542,WORD_NOUN,,HIRAGANA,,,行手,ゆきて,,yukite,ktoś kto idzie,,,,"GroupId: 2615250
+133542,WORD_NOUN,,HIRAGANA,,,行手,ゆきて,,yukite,ktoś kto idzie,,,DUPLICATE 133596,"GroupId: 2615250
 Translate: someone who is going"
 133543,WORD_NOUN,,HIRAGANA,,,お針,おはり,,ohari,"szycie
 robótki ręczne
@@ -77418,7 +77419,7 @@ Translate: sewing
 Translate: seamstress"
 133544,WORD_NOUN,,HIRAGANA,,,神使,しんし,,shinshi,"posłaniec boga
 posłaniec od boga
-boski posłaniec",,,,"GroupId: 2610850
+boski posłaniec",,,DUPLICATE 133600,"GroupId: 2610850
 Translate: messenger of god
 Translate: divine messenger"
 133545,WORD_NOUN,,HIRAGANA,,,外囲,がいい,,gaii,"peryferie
@@ -77525,7 +77526,7 @@ Translate: my mixi
 MiscInfo: abbr
 Translate: refers to the 'friend list' on mixi (or people on that list)
 MiscInfo: abbr"
-133571,WORD_NOUN,,KATAKANA,,,-,マイミクシィ,,maimikushii,"mój mixi
+133571,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,マイミクシィ,,maimikushii,"mój mixi
 odnosi się do “listy przyjaciół” na misi (albo ludzi na tej liście)",,,,"GroupId: 2248920
 Translate: my mixi
 Translate: refers to the 'friend list' on mixi (or people on that list)"
@@ -77609,6 +77610,113 @@ Tarcza Dawida",sześciopromienna gwiazda złożona z dwóch zachodzących na sie
 Translate: Star of David
 Translate: Magen David"
 133593,WORD_EXPRESSION,,HIRAGANA,,,此れまでで,これまでで,,kore made de,"do dzisiaj
+do teraz",,,,"GroupId: 2810720
+Translate: to date
+MiscInfo: uk
+AdditionalInfo: usu. used in superlative clauses together with 一番, 最も, 最悪, etc.
+Translate: as of now
+MiscInfo: uk
+AdditionalInfo: usu. used in superlative clauses together with 一番, 最も, 最悪, etc."
+133594,WORD_NOUN,,HIRAGANA,,,少輔,しょうゆう,,shouyuu,asystent wiceministra,"system ritsuryo, wczesny okres Meiji",,"DUPLICATE 133541
+DUPLICATE 133595","GroupId: 2830351
+Translate: assistant vice-minister (ritsuryo system, early Meiji period)"
+133595,WORD_NOUN,,HIRAGANA,,,少輔,すないすけ,,sunaisuke,asystent wiceministra,"system ritsuryo, wczesny okres Meiji",,"DUPLICATE 133541
+DUPLICATE 133594","GroupId: 2830351
+Translate: assistant vice-minister (ritsuryo system, early Meiji period)"
+133596,WORD_NOUN,,HIRAGANA,,,行手,いきて,,ikite,ktoś kto idzie,,,DUPLICATE 133542,"GroupId: 2615250
+Translate: someone who is going"
+133597,WORD_NOUN,,HIRAGANA,,,行き手,ゆきて,,yukite,ktoś kto idzie,,,DUPLICATE 133598,"GroupId: 2615250
+Translate: someone who is going"
+133598,WORD_NOUN,,HIRAGANA,,,行き手,いきて,,ikite,ktoś kto idzie,,,DUPLICATE 133597,"GroupId: 2615250
+Translate: someone who is going"
+133599,WORD_NOUN,,HIRAGANA,,,御針,おはり,,ohari,"szycie
+robótki ręczne
+szwaczka
+krawcowa",,,,"GroupId: 2425060
+Translate: needlework
+Translate: sewing
+Translate: seamstress"
+133600,WORD_NOUN,,HIRAGANA,,,神使,じんし,,jinshi,"posłaniec boga
+posłaniec od boga
+boski posłaniec",,,DUPLICATE 133544,"GroupId: 2610850
+Translate: messenger of god
+Translate: divine messenger"
+133601,WORD_NOUN,,HIRAGANA,,,抗鬱,こううつ,,kouutsu,"lek przeciwdepresyjny
+środek przeciwdepresyjny",,,,"GroupId: 1278850
+Translate: antidepressant"
+133602,WORD_NOUN,,HIRAGANA,,,掛け蕎麦,かけそば,,kake soba,makaron gryczany w gorącym bulionie,,,,"GroupId: 1821320
+Translate: buckwheat noodles in hot broth
+MiscInfo: uk"
+133603,WORD_NOUN,,HIRAGANA,,,掛けそば,かけそば,,kake soba,makaron gryczany w gorącym bulionie,,,,"GroupId: 1821320
+Translate: buckwheat noodles in hot broth
+MiscInfo: uk"
+133604,WORD_NOUN,,HIRAGANA,,,掛蕎麦,かけそば,,kake soba,makaron gryczany w gorącym bulionie,,,,"GroupId: 1821320
+Translate: buckwheat noodles in hot broth
+MiscInfo: uk"
+133605,"WORD_NOUN
+WORD_PREFIX",,KATAKANA,,,-,ガセ,,gase,"podróbka
+falsyfikat
+kłamstwo
+nonsens
+bzdura",,,,"GroupId: 2064730
+Translate: fake
+Translate: lie
+Translate: nonsense"
+133606,WORD_NOUN,,HIRAGANA,,,歩きはじめ,あるきはじめ,,aruki hajime,zaczynanie chodzić,,,,"GroupId: 2016770
+Translate: starting to walk"
+133607,WORD_INTERJECTION,,HIRAGANA_EXCEPTION,,,-,しぇえ,,shie,"ja nie mogę
+o kurczę
+o ja cię kręcę
+jasna cholera
+och
+ach
+łał",mówione w czasie przyjmowania określonej pozy,,,"GroupId: 2718800
+Translate: holy moly
+AdditionalInfo: said while holding a specific pose
+Translate: holy cow
+AdditionalInfo: said while holding a specific pose
+Translate: whoa
+AdditionalInfo: said while holding a specific pose
+Translate: wow
+AdditionalInfo: said while holding a specific pose"
+133608,WORD_NOUN,,KATAKANA,,,-,バナジン,,banajin,wanad,"pierwiastek chemiczny z grupy metali przejściowych w układzie okresowym, ang: vanadium (V)",,,"GroupId: 1099410
+Translate: vanadium (V)"
+133609,WORD_NOUN,,KATAKANA_HIRAGANA,,,ド根性,ドこんじょう,,dokonjou,"wielka odwaga
+dużo odwagi
+odwaga
+twardy charakter",,,,"GroupId: 2142680
+Translate: utter gutsiness
+Translate: plenty of guts
+Translate: grit"
+133610,WORD_NOUN,,HIRAGANA,,,土根性,どこんじょう,,dokonjou,"wielka odwaga
+dużo odwagi
+odwaga
+twardy charakter",,,,"GroupId: 2142680
+Translate: utter gutsiness
+Translate: plenty of guts
+Translate: grit"
+133611,WORD_VERB_RU,,HIRAGANA,,,着ぶくれる,きぶくれる,,kibukureru,być grubo ubrany,,,,"GroupId: 1639390
+Translate: to be thickly clad"
+133612,WORD_VERB_RU,,HIRAGANA,,,着脹れる,きぶくれる,,kibukureru,być grubo ubrany,,,,"GroupId: 1639390
+Translate: to be thickly clad"
+133613,WORD_NOUN,,HIRAGANA,,,剛腕,ごうわん,,gouwan,"silne ramię
+mocne ramię",,,,"GroupId: 2028790
+Translate: strong arm
+Translate: stout arm"
+133614,WORD_NOUN,,KATAKANA,,,-,ナルシスト,,narushisuto,"narcyz
+osoba zakochana w sobie",ang: narcissist,,,"GroupId: 1090720
+Translate: narcissist"
+133615,WORD_NOUN,,HIRAGANA,,,口溶け,くちどけ,,kuchi doke,uczucie rozpuszczania się w ustach,,,,"GroupId: 1275880
+Translate: melt-in-the-mouth feeling"
+133616,WORD_NOUN,,HIRAGANA,,,口解け,くちどけ,,kuchi doke,uczucie rozpuszczania się w ustach,,,,"GroupId: 1275880
+Translate: melt-in-the-mouth feeling"
+133617,WORD_NOUN,,HIRAGANA,,,梨地,なしじ,,nashiji,nashiji,technika lakiernicza z użyciem proszku lub płatków złota lub srebra,,,"GroupId: 2462570
+Translate: nashiji (lacquering technique using gold or silver powder or flakes)"
+133618,WORD_NOUN,,KATAKANA_HIRAGANA,,,ダヴィデの星,ダヴィデのほし,,davide no hoshi,"Gwiazda Dawida
+Tarcza Dawida",sześciopromienna gwiazda złożona z dwóch zachodzących na siebie trójkątów równoramiennych obróconych względem siebie,,,"GroupId: 2477150
+Translate: Star of David
+Translate: Magen David"
+133619,WORD_EXPRESSION,,HIRAGANA,,,此れ迄で,これまでで,,kore made de,"do dzisiaj
 do teraz",,,,"GroupId: 2810720
 Translate: to date
 MiscInfo: uk
