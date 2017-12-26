@@ -23,170 +23,98 @@ x,WORD_NOUN,,HIRAGANA,,,祖語,そご,,sogo,"prajęzyk
 rodzimy język",,,,"GroupId: 1696950
 Translate: protolanguage
 Translate: parent language"
-12,WORD_INTERJECTION,,HIRAGANA,,,-,おは,,oha,"_
------------
-おは
------------
-Good morning! (abbreviation)
-Hi! (abbreviation)",,,,"GroupId: 2140610
+x,WORD_INTERJECTION,,HIRAGANA,,,-,おは,,oha,"dzień dobry! (przed południem)
+cześć!",skrót,,,"GroupId: 2140610
 Translate: Good morning!
 MiscInfo: abbr
 Translate: Hi!
 MiscInfo: abbr"
-13,"WORD_ADJECTIVE_NA
+x,"WORD_ADJECTIVE_NA
 WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,格外,かくがい,,kakugai,"_
------------
-格外
------------
-nonstandard
-extraordinary
-special",,,,"GroupId: 1620670
+WORD_ADJECTIVE_NO",,HIRAGANA,,,格外,かくがい,,kakugai,"niestandardowy
+niezwykły
+specjalny
+wyjątkowy",,,,"GroupId: 1620670
 Translate: nonstandard
 Translate: extraordinary
 Translate: special"
-14,WORD_NOUN,,HIRAGANA,,,米搗き,こめつき,,kometsuki,"_
------------
-米搗き
------------
-rice polishing",,,,"GroupId: 1723810
+x,WORD_NOUN,,HIRAGANA,,,米搗き,こめつき,,kometsuki,polerowanie ryżu,,,,"GroupId: 1723810
 Translate: rice polishing"
-15,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,癒し,いやし,,iyashi,"_
------------
-癒し
------------
-healing
-soothing
-therapy
-comfort
-solace",,,,"GroupId: 2412340
+x,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,癒し,いやし,,iyashi,"leczenie
+uśmierzanie
+terapia
+pocieszenie
+ulga",,,,"GroupId: 2412340
 Translate: healing
 Translate: soothing
 Translate: therapy
 Translate: comfort
 Translate: solace"
-16,WORD_NOUN,,KATAKANA_HIRAGANA,,,キツネザル属,キツネザルぞく,,kitsunezaruzoku,"_
------------
-キツネザル属
------------
-Eulemur
-genus of true lemurs",,,,"GroupId: 2697160
+x,WORD_NOUN,,KATAKANA_HIRAGANA,,,キツネザル属,キツネザルぞく,,kitsunezaru zoku,lemuria,rodzaj ssaka z rodziny lemurowatych,,,"GroupId: 2697160
 Translate: Eulemur
 Translate: genus of true lemurs"
-17,WORD_EXPRESSION,,HIRAGANA,,,-,もた,,mota,"_
------------
-もた
------------
-having done ... by mistake ()
-having messed up ... ()",,,,"GroupId: 2718340
+x,WORD_EXPRESSION,,HIRAGANA,,,-,もた,,mota,???,dialekt z Osaki,,,"GroupId: 2718340
 Translate: having done ... by mistake
 AdditionalInfo: after the -te form of a verb
 Translate: having messed up ...
 AdditionalInfo: after the -te form of a verb"
-18,WORD_NOUN,,HIRAGANA,,,七仏,しちぶつ,,shichibutsu,"_
------------
-七仏
------------
-the seven previous incarnations of Buddha (abbreviation)",,,,"GroupId: 2135800
+x,WORD_NOUN,,HIRAGANA,,,七仏,しちぶつ,,shichibutsu,siedem poprzednich inkarnacji Buddy,skrót,,,"GroupId: 2135800
 Translate: the seven previous incarnations of Buddha
 MiscInfo: abbr"
-19,WORD_NOUN,,HIRAGANA,,,母様,かあさま,,kaasama,"_
------------
-母様
------------
-mother (honorific or respectful (sonkeigo) language)",,,,"GroupId: 2231150
+x,WORD_NOUN,,HIRAGANA,,,母様,かあさま,,kaasama,matka,honoryfikatywnie,,,"GroupId: 2231150
 Translate: mother
 MiscInfo: hon"
-20,WORD_NOUN,,HIRAGANA,,,沙弥,しゃみ,,shami,"_
------------
-沙弥
------------
-male Buddhist novice",,,,"GroupId: 1881760
+x,WORD_NOUN,,HIRAGANA,,,沙弥,しゃみ,,shami,męski buddyjski nowicjusz,,,,"GroupId: 1881760
 Translate: male Buddhist novice"
-22,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,日常性,にちじょうせい,,nichijousei,"_
------------
-日常性
------------
-ordinariness",,,,"GroupId: 2643870
+x,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,日常性,にちじょうせい,,nichijousei,"pospolitość
+zwyczajność",,,,"GroupId: 2643870
 Translate: ordinariness"
-25,WORD_NOUN,,HIRAGANA,,,開拓地,かいたくち,,kaitakuchi,"_
------------
-開拓地
------------
-reclaimed land
-cleared land
-area opened for development",,,,"GroupId: 1931790
+x,WORD_NOUN,,HIRAGANA,,,開拓地,かいたくち,,kaitakuchi,"zrekultywowana ziemia
+wykarczowana ziemia
+obszar otwarty na rozwój",,,,"GroupId: 1931790
 Translate: reclaimed land
 Translate: cleared land
 Translate: area opened for development"
-26,WORD_NOUN,,HIRAGANA,,,多売,たばい,,tabai,"_
------------
-多売
------------
-selling in quantity",,,,"GroupId: 1787800
+x,WORD_NOUN,,HIRAGANA,,,多売,たばい,,tabai,"sprzedaż w ilości
+sprzedawanie w ilości",,,,"GroupId: 1787800
 Translate: selling in quantity"
-27,WORD_NOUN,,KATAKANA,,,九蓮宝燈,チューレンポウトウ,,chuurenpoutou,"_
------------
-九蓮宝燈
------------
-nine gates
-winning hand composed of 1-1-1-2-3-4-5-6-7-8-9-9-9 of the same suit plus one additional tile of the same suit",,,,"GroupId: 2833011
+x,WORD_NOUN,,KATAKANA,,,九蓮宝燈,チューレンポウトウ,,chuuren poutou,???,​Mahjong,,,"GroupId: 2833011
 Translate: nine gates
 Translate: winning hand composed of 1-1-1-2-3-4-5-6-7-8-9-9-9 of the same suit plus one additional tile of the same suit"
-28,WORD_NOUN,,HIRAGANA,,,拭浄,しょくじょう,,shokujou,"_
------------
-拭浄
------------
-wiping and purifying
-wiping and cleansing",,,,"GroupId: 2832663
+x,WORD_NOUN,,HIRAGANA,,,拭浄,しょくじょう,,shokujou,wycieranie i oczyszczanie,,,,"GroupId: 2832663
 Translate: wiping and purifying
 Translate: wiping and cleansing"
-29,WORD_NOUN,,HIRAGANA,,,暗溝,あんこう,,ankou,"_
------------
-暗溝
------------
-subterranean drain
-culvert
-conduit",,,,"GroupId: 2833628
+x,WORD_NOUN,,HIRAGANA,,,暗溝,あんこう,,ankou,"podziemny drenaż
+podziemna rura kanalizacyjna
+przepust
+kanał sklepiony",,,,"GroupId: 2833628
 Translate: subterranean drain
 Translate: culvert
 Translate: conduit"
-30,WORD_NOUN,,HIRAGANA,,,晩歳,ばんさい,,bansai,"_
------------
-晩歳
------------
-one's later years
-final years
-old age",,,,"GroupId: 2833579
+x,WORD_NOUN,,HIRAGANA,,,晩歳,ばんさい,,bansai,"swoje ostatnie lata
+ostatnie lata
+podeszły wiek",,,,"GroupId: 2833579
 Translate: one's later years
 Translate: final years
 Translate: old age"
-31,WORD_NOUN,,HIRAGANA,,,下御,げぎょ,,gegyo,"_
------------
-下御
------------
-dismounting (polite (teineigo) language)",,,,"GroupId: 1184890
+x,WORD_NOUN,,HIRAGANA,,,下御,げぎょ,,gegyo,???,uprzejmie,,,"GroupId: 1184890
 Translate: dismounting
 MiscInfo: pol"
-32,WORD_NOUN,,HIRAGANA,,,包有,ほうゆう,,houyuu,"_
------------
-包有
------------
-inclusion
-to include
-to comprise",,,,"GroupId: 2833261
+x,WORD_NOUN,,HIRAGANA,,,包有,ほうゆう,,houyuu,"włączenie
+wliczanie
+zawieranie
+obejmowanie",,,,"GroupId: 2833261
 Translate: inclusion
 Translate: to include
 Translate: to comprise"
-33,WORD_ADVERB,,HIRAGANA,,,欠かさず,かかさず,,kakasazu,"_
------------
-欠かさず
------------
-without fail
-diligently
-without missing a single ...",,,,"GroupId: 2833537
+x,WORD_ADVERB,,HIRAGANA,,,欠かさず,かかさず,,kakasazu,"z całą pewnością
+niezawodnie
+pilnie
+starannie
+pracowicie
+nie tracąc ani jednego ...",,,,"GroupId: 2833537
 Translate: without fail
 Translate: diligently
 Translate: without missing a single ..."
