@@ -2602,6 +2602,8 @@ public class WordGenerator {
 				
 				boolean setWords = false;
 				
+				Set<Integer> wordsIdsSet = null;
+				
 				//
 				
 				Options options = new Options();
@@ -2610,6 +2612,7 @@ public class WordGenerator {
 				options.addOption("r", "random", false, "Random words");
 				options.addOption("ijerd", "ignore-jmedict-empty-raw-data", false, "Ignore jmedict empty raw data");
 				options.addOption("set", "set-words", false, "Set words");
+				options.addOption("wid", "word-ids", true, "Word ids");
 				
 				options.addOption("h", "help", false, "Help");
 				
@@ -2643,7 +2646,7 @@ public class WordGenerator {
 				if (commandLine.hasOption("set-words") == true) {
 					setWords = true;
 				}
-				
+								
 				//
 				
 				final String findWordsWithJmedictChangeFilename = "input/find-words-with-jmedict-change.csv";
@@ -2664,7 +2667,20 @@ public class WordGenerator {
 					
 					if (commandLine.hasOption("random") == true) {
 						randomWords = true;
-					}				
+					}
+					
+					if (commandLine.hasOption("word-ids") == true) {
+						
+						wordsIdsSet = new HashSet<>();
+						
+						String wordsIdsString = commandLine.getOptionValue("word-ids");
+						
+						String[] wordsIdsStringSplited = wordsIdsString.split(",");
+						
+						for (String currentWordId : wordsIdsStringSplited) {
+							wordsIdsSet.add(Integer.parseInt(currentWordId.trim()));							
+						}
+					}
 	
 					if (findWordsSize == null) {
 						System.err.println("No size of find words");
@@ -2711,7 +2727,11 @@ public class WordGenerator {
 					List<PolishJapaneseEntryAndGroupEntryListWrapper> result = new ArrayList<PolishJapaneseEntryAndGroupEntryListWrapper>();
 					
 					for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
-																		
+						
+						if (wordsIdsSet != null && wordsIdsSet.contains(polishJapaneseEntry.getId()) == false) {
+							continue;
+						}
+						
 						DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
 						
 						if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
