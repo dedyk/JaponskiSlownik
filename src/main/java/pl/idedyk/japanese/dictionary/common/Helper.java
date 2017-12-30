@@ -1195,6 +1195,8 @@ public class Helper {
 	public static PolishJapaneseEntry findPolishJapaneseEntryWithEdictDuplicate(PolishJapaneseEntry parentPolishJapaneseEntry,
 			Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryMap, String findKanji, String findKana) {
 		
+		// PolishJapaneseEntry result = null;
+		
 		if (findKanji == null || findKanji.equals("") == true || findKanji.equals("-") == true) {
 			findKanji = "$$$NULL$$$";
 		}
@@ -1219,8 +1221,24 @@ public class Helper {
 				continue;
 			}
 							
-			if (parentPolishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.EDICT_DUPLICATE, polishJapaneseEntry.getId()) == false) {
+			if (parentPolishJapaneseEntry.isKnownDuplicate(KnownDuplicateType.EDICT_DUPLICATE, polishJapaneseEntry.getId()) == false) {				
 				return polishJapaneseEntry;
+				
+				/*
+				if (result != null) {
+					//throw new RuntimeException("Please add EDICT_DUPLICATE to id: " + parentPolishJapaneseEntry.getId() + " or " + result.getId() + " or " + polishJapaneseEntry.getId() + " (check translates)");
+					
+					//System.err.println("Please add EDICT_DUPLICATE to id: " + parentPolishJapaneseEntry.getId() + " or " + result.getId() + " or " + polishJapaneseEntry.getId() + " (check translates)");
+					
+					// System.out.println(parentPolishJapaneseEntry.getId());
+					// System.out.println(result.getId());
+					// System.out.println(polishJapaneseEntry.getId());
+					
+					return result;
+				}
+				
+				result = polishJapaneseEntry;
+				*/
 			}			
 		}
 		

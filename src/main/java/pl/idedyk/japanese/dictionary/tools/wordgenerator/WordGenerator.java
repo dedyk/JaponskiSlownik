@@ -2731,7 +2731,7 @@ public class WordGenerator {
 						if (wordsIdsSet != null && wordsIdsSet.contains(polishJapaneseEntry.getId()) == false) {
 							continue;
 						}
-						
+												
 						DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
 						
 						if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
@@ -2794,18 +2794,52 @@ public class WordGenerator {
 								
 								List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryListForPolishJapaneseEntry);
 								
-								for (List<GroupEntry> theSameTranslateGroupEntryList : groupByTheSameTranslateGroupEntryList) {
+								//
+								
+								class PolishJapaneseEntryAndGroupEntry {
 									
+									PolishJapaneseEntry polishJapaneseEntry;
+									
+									GroupEntry groupEntry;
+
+									public PolishJapaneseEntryAndGroupEntry(PolishJapaneseEntry polishJapaneseEntry, GroupEntry groupEntry) {
+										this.polishJapaneseEntry = polishJapaneseEntry;
+										this.groupEntry = groupEntry;
+									}
+								}
+								
+								//
+								
+								List<PolishJapaneseEntryAndGroupEntry> allPolishJapaneseEntryListForGroupEntry = new ArrayList<>();
+								
+								boolean isDifferent = false;
+								
+								//
+								
+								for (List<GroupEntry> theSameTranslateGroupEntryList : groupByTheSameTranslateGroupEntryList) {
+																											
 									for (GroupEntry groupEntry : theSameTranslateGroupEntryList) {
-																				
+										
 										String groupEntryKanji = groupEntry.getKanji();
 										String groupEntryKana = groupEntry.getKana();
 
 										PolishJapaneseEntry findPolishJapaneseEntry = 
 												Helper.findPolishJapaneseEntryWithEdictDuplicate(polishJapaneseEntry, cachePolishJapaneseEntryList, 
 												groupEntryKanji, groupEntryKana);
-
-										if (findPolishJapaneseEntry != null && alreadyAddPolishJapaneseEntriesId.contains(findPolishJapaneseEntry.getId()) == false) {
+										
+										if (findPolishJapaneseEntry != null) {
+											allPolishJapaneseEntryListForGroupEntry.add(new PolishJapaneseEntryAndGroupEntry(findPolishJapaneseEntry, groupEntry));
+										}
+									}
+									
+									for (PolishJapaneseEntryAndGroupEntry polishJapaneseEntryAndGroupEntry : allPolishJapaneseEntryListForGroupEntry) {
+										
+										PolishJapaneseEntry findPolishJapaneseEntry = polishJapaneseEntryAndGroupEntry.polishJapaneseEntry;
+										GroupEntry groupEntry = polishJapaneseEntryAndGroupEntry.groupEntry;
+										
+										//
+										
+										if (alreadyAddPolishJapaneseEntriesId.contains(findPolishJapaneseEntry.getId()) == false) {
 											
 											jmedictRawDataList = findPolishJapaneseEntry.getJmedictRawDataList();
 											
@@ -2822,13 +2856,23 @@ public class WordGenerator {
 												groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
 											}
 
-											if (jmedictRawDataList.equals(newJmedictRawDataList) == false) { // jest roznica
-												
-												result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(findPolishJapaneseEntry, Arrays.asList(groupEntry)));
-												
-												alreadyAddPolishJapaneseEntriesId.add(findPolishJapaneseEntry.getId());
+											if (jmedictRawDataList.equals(newJmedictRawDataList) == false) { // jest roznica												
+												isDifferent = true;												
 											}
 										}
+									}									
+								}
+								
+								if (isDifferent == true) {
+									
+									for (PolishJapaneseEntryAndGroupEntry polishJapaneseEntryAndGroupEntry : allPolishJapaneseEntryListForGroupEntry) {
+										
+										PolishJapaneseEntry findPolishJapaneseEntry = polishJapaneseEntryAndGroupEntry.polishJapaneseEntry;
+										GroupEntry groupEntry = polishJapaneseEntryAndGroupEntry.groupEntry;
+
+										result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(findPolishJapaneseEntry, Arrays.asList(groupEntry)));
+										
+										alreadyAddPolishJapaneseEntriesId.add(findPolishJapaneseEntry.getId());
 									}
 								}
 																
