@@ -40,6 +40,8 @@ public enum Operation {
 	
 	FIND_WORDS_WITH_JMEDICT_CHANGE("find-words-with-jmedict-change", "Pokazuje słowa, które zmieniły swoje tłumaczenie w jmedict"),
 	
+	FIND_WORDS_NO_EXIST_IN_JMEDICT("find-words-no-exist-in-jmedict", "Pokazuje słowa, które nie istnieją już w słowniku jmedict"),
+	
 	HELP("help", "Pokazuje pomoc");
 	
 	private String operation;

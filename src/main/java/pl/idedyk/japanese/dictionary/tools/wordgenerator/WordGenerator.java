@@ -2998,6 +2998,36 @@ public class WordGenerator {
 				break;
 			}
 			
+			case FIND_WORDS_NO_EXIST_IN_JMEDICT: {
+				
+				// lista wszystkich slow
+				List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+
+				List<PolishJapaneseEntry> result = new ArrayList<>();
+				
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				
+				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+					
+					DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+					
+					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+						continue;
+					}
+					
+					// szukanie slow
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
+											
+					if (groupEntryList == null || groupEntryList.size() == 0) {						
+						result.add(polishJapaneseEntry);
+					}
+				}
+				
+				CsvReaderWriter.generateCsv(new String[] { "input/find-words-no-exist-in-jmedict.csv" }, result, true, true, false, true, null);
+				
+				break;
+			}
+			
 			case HELP: {
 				
 				// pobranie listy mozliwych operacji
