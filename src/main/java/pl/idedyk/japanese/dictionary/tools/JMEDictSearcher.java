@@ -67,7 +67,7 @@ public class JMEDictSearcher {
 
 			Query query = Helper.createLuceneDictionaryIndexTermQuery(searchWord);
 
-			ScoreDoc[] scoreDocs = searcher.search(query, null, 10).scoreDocs;
+			ScoreDoc[] scoreDocs = searcher.search(query, null, 30).scoreDocs;
 
 			System.out.println("=========================\n");
 			
