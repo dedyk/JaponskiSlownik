@@ -2712,11 +2712,13 @@ public class WordGenerator {
 						PolishJapaneseEntry polishJapaneseEntry;
 						
 						List<GroupEntry> groupEntryList;
+						
+						String additionalInfo;
 	
-						public PolishJapaneseEntryAndGroupEntryListWrapper(PolishJapaneseEntry polishJapaneseEntry,
-								List<GroupEntry> groupEntryList) {
+						public PolishJapaneseEntryAndGroupEntryListWrapper(PolishJapaneseEntry polishJapaneseEntry, List<GroupEntry> groupEntryList, String additionalInfo) {
 							this.polishJapaneseEntry = polishJapaneseEntry;
 							this.groupEntryList = groupEntryList;
+							this.additionalInfo = additionalInfo;
 						}
 					}
 					
@@ -2731,7 +2733,7 @@ public class WordGenerator {
 						if (wordsIdsSet != null && wordsIdsSet.contains(polishJapaneseEntry.getId()) == false) {
 							continue;
 						}
-												
+																		
 						DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
 						
 						if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
@@ -2870,16 +2872,49 @@ public class WordGenerator {
 										PolishJapaneseEntry findPolishJapaneseEntry = polishJapaneseEntryAndGroupEntry.polishJapaneseEntry;
 										GroupEntry groupEntry = polishJapaneseEntryAndGroupEntry.groupEntry;
 
-										result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(findPolishJapaneseEntry, Arrays.asList(groupEntry)));
+										result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(findPolishJapaneseEntry, Arrays.asList(groupEntry), null));
 										
 										alreadyAddPolishJapaneseEntriesId.add(findPolishJapaneseEntry.getId());
 									}
+									
+								} else {
+									
+									// sprawdzamy, czy aktualne slowo znajduje sie na liscie allPolishJapaneseEntryListForGroupEntry, jesli nie ma to mozliwy zbedny duplikat do sprawdzenia i usuniecia
+									boolean existsInAllPolishJapaneseEntryListForGroupEntry = false;
+									
+									for (PolishJapaneseEntryAndGroupEntry polishJapaneseEntryAndGroupEntry : allPolishJapaneseEntryListForGroupEntry) {
+										
+										if (polishJapaneseEntryAndGroupEntry.polishJapaneseEntry.getId() == polishJapaneseEntry.getId()) {
+											existsInAllPolishJapaneseEntryListForGroupEntry = true;
+											
+											break;
+										}										
+									}
+									
+									if (existsInAllPolishJapaneseEntryListForGroupEntry == false) {
+										
+										result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, null, "CHECK DUPLICATE ???"));
+										
+										alreadyAddPolishJapaneseEntriesId.add(polishJapaneseEntry.getId());
+										
+										//
+										
+										for (PolishJapaneseEntryAndGroupEntry polishJapaneseEntryAndGroupEntry : allPolishJapaneseEntryListForGroupEntry) {
+											
+											PolishJapaneseEntry findPolishJapaneseEntry = polishJapaneseEntryAndGroupEntry.polishJapaneseEntry;
+											GroupEntry groupEntry = polishJapaneseEntryAndGroupEntry.groupEntry;
+
+											result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(findPolishJapaneseEntry, Arrays.asList(groupEntry), "CHECK DUPLICATE, OK ???"));
+											
+											alreadyAddPolishJapaneseEntriesId.add(findPolishJapaneseEntry.getId());
+										}
+									}									
 								}
 																
 							} else { // multi grupa
 								
 								// dodajemy do manualnego sprawdzenia
-								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, groupEntryListForPolishJapaneseEntry));
+								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, groupEntryListForPolishJapaneseEntry, null));
 							}
 							
 						} else { // nie znaleziono GroupEntry
@@ -2887,7 +2922,9 @@ public class WordGenerator {
 							boolean ignoreNoJmedict = polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.IGNORE_NO_JMEDICT);
 							
 							if (ignoreNoJmedict == false) {
-								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, null));
+								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, null, "IGNORE_NO_JMEDICT ???"));
+								
+								alreadyAddPolishJapaneseEntriesId.add(polishJapaneseEntry.getId());
 							}
 						}
 						
@@ -2927,6 +2964,10 @@ public class WordGenerator {
 						public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
 							
 							PolishJapaneseEntryAndGroupEntryListWrapper polishJapaneseEntryAndGroupEntryListWrapper = idPolishJapaneseEntryAndGroupEntryListWrapperMap.get(polishJapaneseEntry.getId());
+							
+							if (polishJapaneseEntryAndGroupEntryListWrapper.additionalInfo != null) {
+								csvWriter.write(polishJapaneseEntryAndGroupEntryListWrapper.additionalInfo);
+							}
 							
 							if (polishJapaneseEntryAndGroupEntryListWrapper.groupEntryList != null) {
 								
