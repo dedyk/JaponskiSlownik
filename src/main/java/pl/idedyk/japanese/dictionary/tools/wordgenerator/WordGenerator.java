@@ -2882,11 +2882,19 @@ public class WordGenerator {
 								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, groupEntryListForPolishJapaneseEntry));
 							}
 							
-							// sprawdzamy ilosc znalezionych slow
-							if (result.size() >= findWordsSize) {
-								break;
+						} else { // nie znaleziono GroupEntry
+							
+							boolean ignoreNoJmedict = polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.IGNORE_NO_JMEDICT);
+							
+							if (ignoreNoJmedict == false) {
+								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, null));
 							}
-						}					
+						}
+						
+						// sprawdzamy ilosc znalezionych slow
+						if (result.size() >= findWordsSize) {
+							break;
+						}
 					}
 					
 					/*
@@ -2920,40 +2928,43 @@ public class WordGenerator {
 							
 							PolishJapaneseEntryAndGroupEntryListWrapper polishJapaneseEntryAndGroupEntryListWrapper = idPolishJapaneseEntryAndGroupEntryListWrapperMap.get(polishJapaneseEntry.getId());
 							
-							if (polishJapaneseEntryAndGroupEntryListWrapper.groupEntryList.size() == 1) {
-								csvWriter.write("SINGLEGROUP");
+							if (polishJapaneseEntryAndGroupEntryListWrapper.groupEntryList != null) {
 								
-							} else {
-								csvWriter.write("MULTIGROUP");
-							}
-							
-							for (GroupEntry groupEntry : polishJapaneseEntryAndGroupEntryListWrapper.groupEntryList) {
-								
-								CreatePolishJapaneseEntryResult newPolishJapaneseEntryResult = null;
-								
-								try {
-									newPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, -1, "<null>");
+								if (polishJapaneseEntryAndGroupEntryListWrapper.groupEntryList.size() == 1) {
+									csvWriter.write("SINGLEGROUP");
 									
-								} catch (DictionaryException e) {
-									
-									throw new IOException(e);
+								} else {
+									csvWriter.write("MULTIGROUP");
 								}
 								
-								//
-								
-								csvWriter.write(Helper.convertListToString(newPolishJapaneseEntryResult.polishJapaneseEntry.getTranslates()));
-								csvWriter.write(newPolishJapaneseEntryResult.polishJapaneseEntry.getInfo());
-	
-								//
-								
-								List<String> newJmedictRawDataList = new ArrayList<String>();
-								
-								for (GroupEntryTranslate groupEntryTranslate : groupEntry.getTranslateList()) {
-									groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
+								for (GroupEntry groupEntry : polishJapaneseEntryAndGroupEntryListWrapper.groupEntryList) {
+									
+									CreatePolishJapaneseEntryResult newPolishJapaneseEntryResult = null;
+									
+									try {
+										newPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, -1, "<null>");
+										
+									} catch (DictionaryException e) {
+										
+										throw new IOException(e);
+									}
+									
+									//
+									
+									csvWriter.write(Helper.convertListToString(newPolishJapaneseEntryResult.polishJapaneseEntry.getTranslates()));
+									csvWriter.write(newPolishJapaneseEntryResult.polishJapaneseEntry.getInfo());
+		
+									//
+									
+									List<String> newJmedictRawDataList = new ArrayList<String>();
+									
+									for (GroupEntryTranslate groupEntryTranslate : groupEntry.getTranslateList()) {
+										groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
+									}
+									
+									csvWriter.write(Helper.convertListToString(newJmedictRawDataList));
 								}
-								
-								csvWriter.write(Helper.convertListToString(newJmedictRawDataList));
-							}
+							}							
 						}
 					};				
 					

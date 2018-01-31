@@ -8,5 +8,7 @@ public enum ParseAdditionalInfo {
 	
 	NO_ALTERNATIVE,
 	
-	NO_JMEDICT_ALTERNATIVE;
+	NO_JMEDICT_ALTERNATIVE,
+	
+	IGNORE_NO_JMEDICT;
 }
