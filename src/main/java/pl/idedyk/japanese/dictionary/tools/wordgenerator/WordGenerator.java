@@ -1430,6 +1430,7 @@ public class WordGenerator {
 				
 				Map<Integer, CommonWord> missingPartialCommonMap = new TreeMap<>();
 				Map<Integer, CommonWord> missingFullCommonMap = new TreeMap<>();
+				Map<Integer, CommonWord> missingOverfullCommonMap = new TreeMap<>();
 				
 				int csvId = 1;
 				
@@ -1468,7 +1469,12 @@ public class WordGenerator {
 								
 								CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
 								
-								missingPartialCommonMap.put(commonWord.getId(), commonWord);
+								if (groupIdsAlreadyAddForGroupId < groupIdCount) {
+									missingPartialCommonMap.put(commonWord.getId(), commonWord);
+									
+								} else {
+									missingOverfullCommonMap.put(commonWord.getId(), commonWord);
+								}
 								
 								csvId++;
 							}
@@ -1483,7 +1489,9 @@ public class WordGenerator {
 				// zapis do pliku
 				CsvReaderWriter.writeCommonWordFile(missingPartialCommonMap, "input/all_missing_word_from_group_id_partial.csv");
 
-				CsvReaderWriter.writeCommonWordFile(missingFullCommonMap, "input/all_missing_word_from_group_id_full.csv");				
+				CsvReaderWriter.writeCommonWordFile(missingFullCommonMap, "input/all_missing_word_from_group_id_full.csv");
+				
+				CsvReaderWriter.writeCommonWordFile(missingOverfullCommonMap, "input/all_missing_word_from_group_id_overfull.csv");
 				
 				break;
 			}
