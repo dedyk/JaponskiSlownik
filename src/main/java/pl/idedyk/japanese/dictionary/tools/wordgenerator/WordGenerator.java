@@ -3024,6 +3024,11 @@ public class WordGenerator {
 					TreeMap<Integer, PolishJapaneseEntry> newChangedPolishJapaneseEntriesListIdMap = new TreeMap<Integer, PolishJapaneseEntry>();
 					
 					for (PolishJapaneseEntry newChangedPolishJapaneseEntry : newChangedPolishJapaneseEntriesList) {
+						
+						if (newChangedPolishJapaneseEntriesListIdMap.containsKey(newChangedPolishJapaneseEntry.getId()) == true) {
+							throw new RuntimeException("containsKey = " + newChangedPolishJapaneseEntry.getId());
+						}
+						
 						newChangedPolishJapaneseEntriesListIdMap.put(newChangedPolishJapaneseEntry.getId(), newChangedPolishJapaneseEntry);
 					}
 					
