@@ -28,6 +28,8 @@ public enum Operation {
 	
 	SHOW_ALL_MISSING_WORDS("show-all-missing-words", "Generuje wszystkie słowa, które są w słowniku jmedict, a których brakuje"),
 	
+	SHOW_ALL_MISSING_WORDS_FROM_GROUP_ID("show-all-missing-word-from-group-id", "Generuje wszystkie słowa, które są w słowniku jmedict, a których brakuje. Sprawdzanie odbywa się na podstawie badania groupId"),
+	
 	SHOW_ALREADY_ADD_WORDS("show-already-add-words", "Pokazuje słowa, które są już dodane do słownika"),
 	
 	SHOW_ALREADY_ADD_COMMON_WORDS("show-already-add-common-words", "Pokazuje common'owe słowa, które są już dodane do słownika"),

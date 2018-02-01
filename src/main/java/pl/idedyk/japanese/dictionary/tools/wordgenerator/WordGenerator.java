@@ -1396,6 +1396,98 @@ public class WordGenerator {
 				break;
 			}
 			
+			case SHOW_ALL_MISSING_WORDS_FROM_GROUP_ID: {
+				
+				// lista slow
+				List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+				
+				// wczytanie slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				
+				Map<Integer, Integer> groupIdsAlreadyAddCount = new TreeMap<Integer, Integer>();
+				
+				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+					
+					List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
+					
+					if (jmedictRawDataList != null && jmedictRawDataList.size() > 0) {
+						
+						String groupIdString = jmedictRawDataList.get(0).substring(9);
+						
+						Integer groupId = new Integer(groupIdString);
+						
+						Integer groupIdCount = groupIdsAlreadyAddCount.get(groupId);
+						
+						if (groupIdCount == null) {
+							groupIdCount = 0;
+						}
+						
+						groupIdCount = groupIdCount + 1;
+						
+						groupIdsAlreadyAddCount.put(groupId, groupIdCount);
+					}
+				}
+				
+				Map<Integer, CommonWord> missingPartialCommonMap = new TreeMap<>();
+				Map<Integer, CommonWord> missingFullCommonMap = new TreeMap<>();
+				
+				int csvId = 1;
+				
+				// generowanie brakujacych slow
+				List<Group> groupList = jmeNewDictionary.getGroupList();
+				
+				for (Group group : groupList) {
+					
+					Integer groupId = group.getId();
+					
+					int groupIdCount = group.getGroupEntryList().size();
+					
+					//
+					
+					Integer groupIdsAlreadyAddForGroupId = groupIdsAlreadyAddCount.get(groupId);
+					
+					if (groupIdsAlreadyAddForGroupId == null) { // nie ma takiego slowa w moim slowniku
+						
+						for (GroupEntry groupEntry : group.getGroupEntryList()) {
+							
+							CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
+							
+							missingFullCommonMap.put(commonWord.getId(), commonWord);
+							
+							csvId++;
+						}
+						
+					} else { // jest slowko, sprawdzamy ilosc
+
+						if (groupIdsAlreadyAddForGroupId == groupIdCount) { // jest ok
+							// noop
+							
+						} else { // nie zgadza sie ilosc, powinny byc wszystkie
+							
+							for (GroupEntry groupEntry : group.getGroupEntryList()) {
+								
+								CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
+								
+								missingPartialCommonMap.put(commonWord.getId(), commonWord);
+								
+								csvId++;
+							}
+						}
+
+					}
+					
+				}
+				
+				//System.out.println(groupIdsAlreadyAddCount);
+				
+				// zapis do pliku
+				CsvReaderWriter.writeCommonWordFile(missingPartialCommonMap, "input/all_missing_word_from_group_id_partial.csv");
+
+				CsvReaderWriter.writeCommonWordFile(missingFullCommonMap, "input/all_missing_word_from_group_id_full.csv");				
+				
+				break;
+			}
+			
 			case SHOW_ALREADY_ADD_WORDS: {
 				
 				if (args.length != 2) {
