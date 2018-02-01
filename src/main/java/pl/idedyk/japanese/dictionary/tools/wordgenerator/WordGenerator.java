@@ -2969,7 +2969,7 @@ public class WordGenerator {
 										alreadyAddPolishJapaneseEntriesId.add(findPolishJapaneseEntry.getId());
 									}
 									
-								} else {
+								} /*else {
 									
 									// sprawdzamy, czy aktualne slowo znajduje sie na liscie allPolishJapaneseEntryListForGroupEntry, jesli nie ma to mozliwy zbedny duplikat do sprawdzenia i usuniecia
 									boolean existsInAllPolishJapaneseEntryListForGroupEntry = false;
@@ -3001,7 +3001,7 @@ public class WordGenerator {
 											alreadyAddPolishJapaneseEntriesId.add(findPolishJapaneseEntry.getId());
 										}
 									}									
-								}
+								} */
 																
 							} else { // multi grupa
 								
@@ -3010,6 +3010,13 @@ public class WordGenerator {
 							}
 							
 						} else { // nie znaleziono GroupEntry
+							
+							List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
+							
+							// ignorojemy puste wpisy
+							if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true) {							
+								continue;
+							}
 							
 							boolean ignoreNoJmedict = polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.IGNORE_NO_JMEDICT);
 							
