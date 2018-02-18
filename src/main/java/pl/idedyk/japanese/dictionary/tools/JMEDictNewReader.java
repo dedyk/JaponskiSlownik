@@ -124,7 +124,7 @@ public class JMEDictNewReader {
 			reader.read(new File(fileName));
 			
 		} catch (Exception e) {			
-			throw new DictionaryException(e.toString());
+			throw new DictionaryException(e);
 		}
 
 		return result;

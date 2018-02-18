@@ -83,6 +83,7 @@ public class JMEDictEntityMapper {
 		addMap("proverb", "proverb");
 		addMap("prt", "particle");
 		addMap("physics", "physics terminology");
+		addMap("quote", "quotation");
 		addMap("rare", "rare");
 		addMap("sens", "sensitive");
 		addMap("sl", "slang");
