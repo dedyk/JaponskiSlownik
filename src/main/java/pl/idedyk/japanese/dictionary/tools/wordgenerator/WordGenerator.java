@@ -1431,9 +1431,7 @@ public class WordGenerator {
 				Map<Integer, CommonWord> missingPartialCommonMap = new TreeMap<>();
 				Map<Integer, CommonWord> missingFullCommonMap = new TreeMap<>();
 				Map<Integer, CommonWord> missingOverfullCommonMap = new TreeMap<>();
-				
-				int csvId = 1;
-				
+								
 				// generowanie brakujacych slow
 				List<Group> groupList = jmeNewDictionary.getGroupList();
 				
@@ -1449,13 +1447,17 @@ public class WordGenerator {
 					
 					if (groupIdsAlreadyAddForGroupId == null) { // nie ma takiego slowa w moim slowniku
 						
+						int counter = 0;
+						
 						for (GroupEntry groupEntry : group.getGroupEntryList()) {
+							
+							int csvId = (groupEntry.getGroup().getId() * 100) + counter;
 							
 							CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
 							
 							missingFullCommonMap.put(commonWord.getId(), commonWord);
 							
-							csvId++;
+							counter++;
 						}
 						
 					} else { // jest slowko, sprawdzamy ilosc
@@ -1465,7 +1467,11 @@ public class WordGenerator {
 							
 						} else { // nie zgadza sie ilosc, powinny byc wszystkie
 							
+							int counter = 0;
+							
 							for (GroupEntry groupEntry : group.getGroupEntryList()) {
+								
+								int csvId = (groupEntry.getGroup().getId() * 100) + counter;
 								
 								CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
 								
@@ -1476,7 +1482,7 @@ public class WordGenerator {
 									missingOverfullCommonMap.put(commonWord.getId(), commonWord);
 								}
 								
-								csvId++;
+								counter++;
 							}
 						}
 
