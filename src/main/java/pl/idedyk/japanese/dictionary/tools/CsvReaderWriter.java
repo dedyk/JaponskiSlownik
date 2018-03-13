@@ -447,16 +447,21 @@ public class CsvReaderWriter {
 		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
 		
 		for (Integer power : groupByPower.keySet()) {
-		
-			csvWriter.write(String.valueOf(power));
-			
+
 			List<PolishJapaneseEntry> polishJapaneseEntryListForPower = groupByPower.get(power);
 			
-			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryListForPower) {
-				csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
-			}
+			List<List<PolishJapaneseEntry>> polishJapaneseEntryListForPowerSplitedList = splitList(polishJapaneseEntryListForPower, 1000);
 			
-			csvWriter.endRecord();			
+			for (List<PolishJapaneseEntry> currentSmallList : polishJapaneseEntryListForPowerSplitedList) {
+
+				csvWriter.write(String.valueOf(power));
+				
+				for (PolishJapaneseEntry polishJapaneseEntry : currentSmallList) {
+					csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
+				}
+				
+				csvWriter.endRecord();			
+			}
 		}
 		
 		csvWriter.close();
