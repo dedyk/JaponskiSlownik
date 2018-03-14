@@ -432,6 +432,10 @@ public class CsvReaderWriter {
 				}
 			}
 			
+			if (polishJapaneseEntry.getTranslates().size() == 1 && polishJapaneseEntry.getTranslates().get(0).equals("???") == true) {				
+				power = 999;
+			}			
+			
 			List<PolishJapaneseEntry> polishJapaneseEntryListForPower = groupByPower.get(power);
 			
 			if (polishJapaneseEntryListForPower == null) {
