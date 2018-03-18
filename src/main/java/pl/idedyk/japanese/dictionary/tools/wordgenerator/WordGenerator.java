@@ -3198,6 +3198,141 @@ public class WordGenerator {
 				break;
 			}
 			
+			case GET_WORDS_BY_ID: {
+				
+				final String wordIdsFileName = "input/word-ids.csv";
+				
+				CommandLineParser commandLineParser = new DefaultParser();
+				
+				//
+								
+				boolean setWords = false;
+				
+				Set<Integer> wordsIdsSet = null;
+				
+				//
+				
+				Options options = new Options();
+				
+				options.addOption("wid", "word-ids", true, "Word ids");
+				options.addOption("set", "set-words", false, "Set words");
+				
+				options.addOption("h", "help", false, "Help");
+				
+				//
+				
+				CommandLine commandLine = null;
+				
+				try {
+					commandLine = commandLineParser.parse(options, args);
+					
+				} catch (UnrecognizedOptionException e) {
+					
+					System.out.println(e.getMessage() + "\n");
+					
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.GET_WORDS_BY_ID.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				if (commandLine.hasOption("help") == true) {
+
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.GET_WORDS_BY_ID.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				if (commandLine.hasOption("set-words") == true) {
+					setWords = true;
+					
+				}
+
+				if (setWords == false) {
+					
+					List<PolishJapaneseEntry> result = new ArrayList<>();
+					
+					//
+										
+					if (commandLine.hasOption("word-ids") == true) {
+						
+						wordsIdsSet = new HashSet<>();
+						
+						String wordsIdsString = commandLine.getOptionValue("word-ids");
+						
+						String[] wordsIdsStringSplited = wordsIdsString.split(",");
+						
+						for (String currentWordId : wordsIdsStringSplited) {
+							wordsIdsSet.add(Integer.parseInt(currentWordId.trim()));							
+						}
+						
+					} else {
+						
+						HelpFormatter formatter = new HelpFormatter();
+						
+						formatter.printHelp( Operation.GET_WORDS_BY_ID.getOperation(), options );
+						
+						System.exit(1);
+					}
+					
+					// lista wszystkich slow
+					List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+					
+					for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+						
+						if (wordsIdsSet.contains(polishJapaneseEntry.getId()) == true) {
+							result.add(polishJapaneseEntry);
+						}						
+					}
+					
+					CsvReaderWriter.generateCsv(new String[] { wordIdsFileName }, result, true, true, false, true, null);
+					
+				} else {
+					
+					// lista wszystkich slow
+					List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+										
+					// wczytanie zmienionych slow					
+					List<PolishJapaneseEntry> newChangedPolishJapaneseEntriesList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { wordIdsFileName });
+
+					// utworz mape z id'kami zmienionych slow
+					TreeMap<Integer, PolishJapaneseEntry> newChangedPolishJapaneseEntriesListIdMap = new TreeMap<Integer, PolishJapaneseEntry>();
+					
+					for (PolishJapaneseEntry newChangedPolishJapaneseEntry : newChangedPolishJapaneseEntriesList) {
+						
+						if (newChangedPolishJapaneseEntriesListIdMap.containsKey(newChangedPolishJapaneseEntry.getId()) == true) {
+							throw new RuntimeException("containsKey = " + newChangedPolishJapaneseEntry.getId());
+						}
+						
+						newChangedPolishJapaneseEntriesListIdMap.put(newChangedPolishJapaneseEntry.getId(), newChangedPolishJapaneseEntry);
+					}
+					
+					// lista wynikowa
+					List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
+					
+					for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+						
+						// sprawdzamy, czy ten wpis jest na liscie zmienionych wpisow
+						PolishJapaneseEntry changedPolishJapaneseEntry = newChangedPolishJapaneseEntriesListIdMap.get(polishJapaneseEntry.getId());
+						
+						if (changedPolishJapaneseEntry == null) {
+							result.add(polishJapaneseEntry);
+							
+						} else {
+							result.add(changedPolishJapaneseEntry);
+						}
+					}					
+					
+					// zapis docelowego slownika
+					CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv" }, result, true, true, false, true, null);
+				}
+								
+				break;
+			}
+			
 			case HELP: {
 				
 				// pobranie listy mozliwych operacji

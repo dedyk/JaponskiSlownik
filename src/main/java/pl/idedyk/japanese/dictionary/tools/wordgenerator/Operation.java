@@ -44,6 +44,8 @@ public enum Operation {
 	
 	FIND_WORDS_NO_EXIST_IN_JMEDICT("find-words-no-exist-in-jmedict", "Pokazuje słowa, które nie istnieją już w słowniku jmedict"),
 	
+	GET_WORDS_BY_ID("get-words-by-id", "Pobiera słowa o podanych id'kach"),
+	
 	HELP("help", "Pokazuje pomoc");
 	
 	private String operation;
