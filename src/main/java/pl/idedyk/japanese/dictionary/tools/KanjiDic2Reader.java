@@ -288,7 +288,7 @@ public class KanjiDic2Reader {
 		//addRadicalToCorrectRadicalMaps("尚","js04","尚"); // ⺌ - niepoprawne wyswietlanie znaku w utf8
 		addRadicalToCorrectRadicalMaps("老","js05","耂");
 		addRadicalToCorrectRadicalMaps("并","js07","丷");
-		// addRadicalToCorrectRadicalMaps("乞","js10","𠂉");
+		addRadicalToCorrectRadicalMaps("乞","js10","𠂉");
 		addRadicalToCorrectRadicalMaps("阡","kozatoL","阝_"); // brak znaku w utf8
 		addRadicalToCorrectRadicalMaps("邦","kozatoR","_阝"); // brak znaku w utf8
 	}
