@@ -3,8 +3,10 @@ package pl.idedyk.japanese.dictionary.misc;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
@@ -14,7 +16,7 @@ import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 public class GenerateCharHexCode {
 
 	public static void main(String[] args) throws Exception {
-		
+				
 		KanaHelper kanaHelper = new KanaHelper();
 		
 		// pobranie wszystkich znakow kana
@@ -39,6 +41,8 @@ public class GenerateCharHexCode {
 			}
 		}
 		
+		//
+		
 		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile("../JapaneseDictionary_additional/kradfile");
 		
 		Collection<List<String>> kradFileMapValues = kradFileMap.values();
@@ -48,7 +52,7 @@ public class GenerateCharHexCode {
 			for (String currentCurrentkradFileMapValues : currentkradFileMapValuesList) {
 				
 				currentCurrentkradFileMapValues = currentCurrentkradFileMapValues.replaceAll("_", "");
-				
+								
 				uniqueCharacters.add(currentCurrentkradFileMapValues);
 				
 				for (int currentCurrentkradFileMapValuesIdx = 0; currentCurrentkradFileMapValuesIdx < currentCurrentkradFileMapValues.length(); ++currentCurrentkradFileMapValuesIdx) {				
@@ -56,6 +60,25 @@ public class GenerateCharHexCode {
 				}				
 			}
 		}
+		
+		//
+				
+		Map<String, String> radicalToCorrectRadical = KanjiDic2Reader.getRadicalToCorrectRadical();
+		
+		Iterator<Entry<String, String>> radicalToCorrectRadicalIterator = radicalToCorrectRadical.entrySet().iterator();
+		
+		while (radicalToCorrectRadicalIterator.hasNext() == true) {
+			
+			Entry<String, String> radicalToCorrectRadicalEntry = radicalToCorrectRadicalIterator.next();
+			
+			String radicalToCorrectRadicalEntryKey = radicalToCorrectRadicalEntry.getKey().replaceAll("_", "");
+			String radicalToCorrectRadicalEntryValue = radicalToCorrectRadicalEntry.getValue().replaceAll("_", "");
+			
+			uniqueCharacters.add(radicalToCorrectRadicalEntryKey);
+			uniqueCharacters.add(radicalToCorrectRadicalEntryValue);			
+		}
+				
+		//
 		
 		StringBuffer result = new StringBuffer();
 		

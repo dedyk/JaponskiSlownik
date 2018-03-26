@@ -54,6 +54,10 @@ public class KanjiDic2Reader {
 			
 			for (String currentRadical : radicalsList) {
 				
+				if (currentRadical.length() == 0) {
+					continue;
+				}
+				
 				String mappedRadicalException = radicalToCorrectRadical.get(currentRadical);
 				
 				if (mappedRadicalException == null) {					
@@ -297,5 +301,19 @@ public class KanjiDic2Reader {
 		
 		radicalToCorrectRadical.put(radical, correctRadical);
 		radicalCodeToCorrectRadical.put(radicalCode, correctRadical);
+	}
+
+	public static Map<String, String> getRadicalToCorrectRadical() {
+		
+		createRadicalToCorrectRadicalMapIfNeeded();
+		
+		return radicalToCorrectRadical;
+	}
+
+	public static Map<String, String> getRadicalCodeToCorrectRadical() {
+		
+		createRadicalToCorrectRadicalMapIfNeeded();
+		
+		return radicalCodeToCorrectRadical;
 	}
 }
