@@ -14,9 +14,10 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
-import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 
 public class ShowAdditionalKanji {
@@ -36,11 +37,11 @@ public class ShowAdditionalKanji {
 		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(sourceKradFileName);
 
 		System.out.println("generateKanjiEntries: readKanjiDic2");
-		final Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName,
+		final Map<String, KanjiDic2EntryForDictionary> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName,
 				kradFileMap);
 
 		System.out.println("generateKanjiEntries: parseKanjiEntriesFromCsv");
-		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2, true);
+		List<KanjiEntryForDictionary> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2, true);
 
 		System.out.println("generateKanjiEntries: parsePolishJapaneseEntriesFromCsv");
 		// read polish japanese entries
@@ -119,7 +120,7 @@ public class ShowAdditionalKanji {
 		Set<String> alreadySetKanji = new HashSet<String>();
 		Set<String> alreadySetKanjiSource = new HashSet<String>();
 
-		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+		for (KanjiEntryForDictionary currentKanjiEntry : kanjiEntries) {
 			alreadySetKanji.add(currentKanjiEntry.getKanji());
 			alreadySetKanjiSource.add(currentKanjiEntry.getKanji());
 		}
@@ -134,7 +135,7 @@ public class ShowAdditionalKanji {
 
 				String currentKanjiChar = String.valueOf(kanji.charAt(kanjiCharIdx));
 
-				KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(currentKanjiChar);
+				KanjiDic2EntryForDictionary kanjiDic2Entry = readKanjiDic2.get(currentKanjiChar);
 
 				if (kanjiDic2Entry != null) {
 
@@ -169,7 +170,7 @@ public class ShowAdditionalKanji {
 
 			String readKanjiDic2KeySetIteratorCurrentKanji = readKanjiDic2KeySetIterator.next();
 
-			KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(readKanjiDic2KeySetIteratorCurrentKanji);
+			KanjiDic2EntryForDictionary kanjiDic2Entry = (KanjiDic2EntryForDictionary)readKanjiDic2.get(readKanjiDic2KeySetIteratorCurrentKanji);
 
 			Integer freq = kanjiDic2Entry.getFreq();
 

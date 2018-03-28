@@ -11,8 +11,8 @@ import java.util.Set;
 
 import javax.imageio.ImageIO;
 
-import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
-import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
@@ -32,9 +32,9 @@ public class TomoeKanjiImageGenerator {
 		
 		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(sourceKradFileName);
 		
-		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName, kradFileMap);
+		Map<String, KanjiDic2EntryForDictionary> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName, kradFileMap);
 		
-		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2, true);
+		List<KanjiEntryForDictionary> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2, true);
 		
 		List<TomoeEntry> tomoeEntries = TomoeReader.readTomoeXmlHandwritingDatabase(tomoeFile);
 		

@@ -23,8 +23,6 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
-import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
@@ -37,6 +35,8 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 
 import com.csvreader.CsvReader;
@@ -394,7 +394,8 @@ public class CsvReaderWriter {
 	}
 	
 	public static interface ICustomAdditionalCsvWriter {		
-		public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException;		
+		public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException;
+		public void write(CsvWriter csvWriter, KanjiEntryForDictionary kanjiEntry) throws IOException;
 	}
 	
 	public static void generateWordPowerCsv(OutputStream out, JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
@@ -740,10 +741,10 @@ public class CsvReaderWriter {
 		csvWriter.close();
 	}
 
-	public static List<KanjiEntry> parseKanjiEntriesFromCsv(String fileName, Map<String, KanjiDic2Entry> readKanjiDic2, boolean generateJlptGroup)
+	public static List<KanjiEntryForDictionary> parseKanjiEntriesFromCsv(String fileName, Map<String, KanjiDic2EntryForDictionary> readKanjiDic2, boolean generateJlptGroup)
 			throws IOException, JapaneseDictionaryException {
 
-		List<KanjiEntry> result = new ArrayList<KanjiEntry>();
+		List<KanjiEntryForDictionary> result = new ArrayList<KanjiEntryForDictionary>();
 
 		CsvReader csvReader = new CsvReader(new FileReader(fileName), ',');
 
@@ -763,8 +764,10 @@ public class CsvReaderWriter {
 			String groupsString = csvReader.get(4);
 			
 			String usedString = csvReader.get(5);
+			
+			String kanjiDic2RawDataString = csvReader.get(6);
 
-			KanjiEntry entry = new KanjiEntry();
+			KanjiEntryForDictionary entry = new KanjiEntryForDictionary();
 
 			entry.setId(id);
 			entry.setKanji(kanjiString);
@@ -775,7 +778,7 @@ public class CsvReaderWriter {
 
 			entry.setUsed(Boolean.parseBoolean(usedString));
 
-			KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(kanjiString);
+			KanjiDic2EntryForDictionary kanjiDic2Entry = readKanjiDic2.get(kanjiString);
 
 			entry.setKanjiDic2Entry(kanjiDic2Entry);
 
@@ -796,6 +799,8 @@ public class CsvReaderWriter {
 			*/
 
 			entry.setGroups(GroupEnum.convertToListGroupEnum(groupsList));
+			
+			entry.setKanjiDic2RawDataList(kanjiDic2RawDataString);
 
 			result.add(entry);
 		}
@@ -805,28 +810,29 @@ public class CsvReaderWriter {
 		return result;
 	}
 
-	public static void generateKanjiCsv(OutputStream out, List<KanjiEntry> kanjiEntries, boolean complex) throws IOException {
+	public static void generateKanjiCsv(OutputStream out, List<KanjiEntryForDictionary> kanjiEntries, boolean complex, 
+			ICustomAdditionalCsvWriter customAdditionalCsvWriter) throws IOException {
 
 		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
 
 		if (complex == true) {
-			writeComplexKanjiEntries(csvWriter, kanjiEntries);
+			writeComplexKanjiEntries(csvWriter, kanjiEntries, customAdditionalCsvWriter);
 			
 		} else {
-			writeSimpleKanjiEntries(csvWriter, kanjiEntries);
+			writeSimpleKanjiEntries(csvWriter, kanjiEntries, customAdditionalCsvWriter);
 		}
 
 		csvWriter.close();
 	}
 
-	private static void writeComplexKanjiEntries(CsvWriter csvWriter, List<KanjiEntry> kanjiEntries) throws IOException {
+	private static void writeComplexKanjiEntries(CsvWriter csvWriter, List<KanjiEntryForDictionary> kanjiEntries, ICustomAdditionalCsvWriter customAdditionalCsvWriter) throws IOException {
 
-		for (KanjiEntry kanjiEntry : kanjiEntries) {
+		for (KanjiEntryForDictionary kanjiEntry : kanjiEntries) {
 
 			csvWriter.write(String.valueOf(kanjiEntry.getId()));
 			csvWriter.write(kanjiEntry.getKanji());
 
-			KanjiDic2Entry kanjiDic2Entry = kanjiEntry.getKanjiDic2Entry();
+			KanjiDic2EntryForDictionary kanjiDic2Entry = (KanjiDic2EntryForDictionary)kanjiEntry.getKanjiDic2Entry();
 
 			if (kanjiDic2Entry != null) {
 				csvWriter.write(String.valueOf(kanjiDic2Entry.getStrokeCount()));
@@ -853,13 +859,17 @@ public class CsvReaderWriter {
 			csvWriter.write(String.valueOf(kanjiEntry.isUsed()));
 			csvWriter.write(Helper.convertListToString(GroupEnum.convertToValues(kanjiEntry.getGroups())));
 
+			if (customAdditionalCsvWriter != null) {
+				customAdditionalCsvWriter.write(csvWriter, kanjiEntry);
+			}
+			
 			csvWriter.endRecord();
 		}
 	}
 
-	private static void writeSimpleKanjiEntries(CsvWriter csvWriter, List<KanjiEntry> kanjiEntries) throws IOException {
+	private static void writeSimpleKanjiEntries(CsvWriter csvWriter, List<KanjiEntryForDictionary> kanjiEntries, ICustomAdditionalCsvWriter customAdditionalCsvWriter) throws IOException {
 
-		for (KanjiEntry kanjiEntry : kanjiEntries) {
+		for (KanjiEntryForDictionary kanjiEntry : kanjiEntries) {
 
 			csvWriter.write(String.valueOf(kanjiEntry.getId()));
 			csvWriter.write(kanjiEntry.getKanji());
@@ -867,12 +877,19 @@ public class CsvReaderWriter {
 			csvWriter.write(Helper.convertListToString(kanjiEntry.getPolishTranslates()));
 			csvWriter.write(kanjiEntry.getInfo());
 			csvWriter.write(Helper.convertListToString(GroupEnum.convertToValues(kanjiEntry.getGroups())));
-			csvWriter.write(String.valueOf(kanjiEntry.isUsed()));			
+			csvWriter.write(String.valueOf(kanjiEntry.isUsed()));	
+			
+			csvWriter.write(kanjiEntry.getKanjiDic2RawData());
+			
+			if (customAdditionalCsvWriter != null) {
+				customAdditionalCsvWriter.write(csvWriter, kanjiEntry);
+			}
 			
 			csvWriter.endRecord();
 		}
 	}
 	
+	/*
 	public static List<KanjiEntry> parseKanjiEntriesFromCsv(String fileName) throws IOException,
 			JapaneseDictionaryException {
 
@@ -939,6 +956,7 @@ public class CsvReaderWriter {
 
 		return result;
 	}
+	*/
 
 	public static void generateKanjiRadicalCsv(OutputStream out, List<RadicalInfo> radicalList) throws IOException {
 

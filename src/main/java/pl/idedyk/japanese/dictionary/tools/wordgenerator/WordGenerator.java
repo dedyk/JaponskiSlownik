@@ -59,6 +59,8 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
@@ -97,7 +99,7 @@ public class WordGenerator {
 		
 		// utworzenie helper'a
 		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv" }, "input/common_word.csv", 
-				"../JapaneseDictionary_additional/JMdict_e");
+				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
 		
 		// przetwarzanie operacji
 		switch (operation) {
@@ -1022,6 +1024,12 @@ public class WordGenerator {
 								
 								csvWriter.write(Utils.convertListToString(translateList2));						
 							}
+
+							@Override
+							public void write(CsvWriter csvWriter, KanjiEntryForDictionary kanjiEntry)
+									throws IOException {								
+								throw new UnsupportedOperationException();								
+							}
 						}
 				);				
 				
@@ -1143,6 +1151,12 @@ public class WordGenerator {
 														
 								csvWriter.write(Utils.convertListToString(sourcePolishJapaneseEntry.getTranslates()));
 								csvWriter.write(sourcePolishJapaneseEntry.getInfo());
+							}
+							
+							@Override
+							public void write(CsvWriter csvWriter, KanjiEntryForDictionary kanjiEntry)
+									throws IOException {								
+								throw new UnsupportedOperationException();								
 							}
 						}
 				);
@@ -3120,6 +3134,12 @@ public class WordGenerator {
 								}
 							}							
 						}
+						
+						@Override
+						public void write(CsvWriter csvWriter, KanjiEntryForDictionary kanjiEntry)
+								throws IOException {								
+							throw new UnsupportedOperationException();								
+						}
 					};				
 					
 					// zapis
@@ -3330,6 +3350,211 @@ public class WordGenerator {
 					CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv" }, result, true, true, false, true, null);
 				}
 								
+				break;
+			}
+			
+			case FIND_KANJIS_WITH_KANJIDIC2_CHANGE: {
+				
+				CommandLineParser commandLineParser = new DefaultParser();
+				
+				//
+				
+				Integer findKanjisSize = null;
+				
+				Boolean ignoreKanjiDic2EmptyRawData = false;
+				Boolean randomKanjis = false;
+				
+				boolean setKanjis = false;
+				
+				Set<Integer> kanjisIdsSet = null;
+				
+				//
+				
+				Options options = new Options();
+				
+				options.addOption("s", "size", true, "Size of find kanjis");
+				options.addOption("r", "random", false, "Random kanjis");
+				options.addOption("ijerd", "ignore-kanjidic2-empty-raw-data", false, "Ignore kanjidic2 empty raw data");
+				options.addOption("set", "set-kanjis", false, "Set kanjis");
+				options.addOption("kid", "kanji-ids", true, "Kanji ids");
+				
+				options.addOption("h", "help", false, "Help");
+				
+				//
+				
+				CommandLine commandLine = null;
+				
+				try {
+					commandLine = commandLineParser.parse(options, args);
+					
+				} catch (UnrecognizedOptionException e) {
+					
+					System.out.println(e.getMessage() + "\n");
+					
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FIND_KANJIS_WITH_KANJIDIC2_CHANGE.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				if (commandLine.hasOption("help") == true) {
+
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FIND_KANJIS_WITH_KANJIDIC2_CHANGE.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				if (commandLine.hasOption("set-kanjis") == true) {
+					setKanjis = true;
+				}
+								
+				//
+				
+				final String findKanjisWithKanjiDic2ChangeFilename = "input/find-kanjis-with-kanjidic2-change.csv";
+				
+				//
+				
+				if (setKanjis == false) {
+					
+					//
+					
+					if (commandLine.hasOption("size") == true) {
+						findKanjisSize = Integer.parseInt(commandLine.getOptionValue("size"));
+					}
+					
+					if (commandLine.hasOption("ignore-kanjidic2-empty-raw-data") == true) {
+						ignoreKanjiDic2EmptyRawData = true;
+					}
+					
+					if (commandLine.hasOption("random") == true) {
+						randomKanjis = true;
+					}
+					
+					if (commandLine.hasOption("kanji-ids") == true) {
+						
+						kanjisIdsSet = new HashSet<>();
+						
+						String kanjisIdsString = commandLine.getOptionValue("kanji-ids");
+						
+						String[] kanjisIdsStringSplited = kanjisIdsString.split(",");
+						
+						for (String currentKanjiId : kanjisIdsStringSplited) {
+							kanjisIdsSet.add(Integer.parseInt(currentKanjiId.trim()));							
+						}
+					}
+	
+					if (findKanjisSize == null) {
+						System.err.println("No size of find words");
+						
+						System.exit(1);
+					}
+					
+					List<KanjiEntryForDictionary> kanjiEntries = wordGeneratorHelper.getKanjiEntries();
+
+					if (randomKanjis == true) {
+						
+						kanjiEntries = new ArrayList<>(kanjiEntries);
+						
+						Collections.shuffle(kanjiEntries);
+					}
+					
+					List<KanjiEntryForDictionary> result = new ArrayList<KanjiEntryForDictionary>();
+					
+					for (KanjiEntryForDictionary kanjiEntry : kanjiEntries) {
+						
+						if (kanjisIdsSet != null && kanjisIdsSet.contains(kanjiEntry.getId()) == false) {
+							continue;
+						}
+						
+						KanjiDic2EntryForDictionary kanjiDic2Entry = (KanjiDic2EntryForDictionary)kanjiEntry.getKanjiDic2Entry();
+						
+						if (kanjiDic2Entry != null) {
+							
+							String kanjiDic2RawData = kanjiEntry.getKanjiDic2RawData();
+							
+							// ignorojemy puste wpisy
+							if ((kanjiDic2RawData == null || kanjiDic2RawData.trim().equals("") == true) && ignoreKanjiDic2EmptyRawData == true) {							
+								continue;
+							}
+							
+							String newKanjiDic2RawData = kanjiDic2Entry.getKanjiDic2RawData();
+							
+							if (kanjiDic2RawData.equals(newKanjiDic2RawData) == false) { // jest roznica												
+								
+								// dodajemy do listy								
+								result.add(kanjiEntry);
+							}							
+						}
+						
+						// sprawdzamy ilosc znalezionych slow
+						if (result.size() >= findKanjisSize) {
+							break;
+						}						
+					}
+					
+					FileOutputStream outputStream = new FileOutputStream(new File(findKanjisWithKanjiDic2ChangeFilename));
+					
+					CsvReaderWriter.generateKanjiCsv(outputStream, result, false, new ICustomAdditionalCsvWriter() {
+						
+						@Override
+						public void write(CsvWriter csvWriter, KanjiEntryForDictionary kanjiEntry) throws IOException {
+							
+							KanjiDic2EntryForDictionary kanjiDic2EntryForDictionary = (KanjiDic2EntryForDictionary)kanjiEntry.getKanjiDic2Entry();
+							
+							csvWriter.write(kanjiDic2EntryForDictionary.getKanjiDic2RawData());
+						}
+						
+						@Override
+						public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
+							throw new UnsupportedOperationException();
+						}
+					});
+				
+				} else {
+					
+					// lista wszystkich kanji
+					List<KanjiEntryForDictionary> kanjiEntries = wordGeneratorHelper.getKanjiEntries();
+					
+					// wczytanie zmienionych kanji
+					List<KanjiEntryForDictionary> newKanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(findKanjisWithKanjiDic2ChangeFilename, wordGeneratorHelper.getKanjiDic2EntryMap(), false);
+					
+					// utworz mape z id'kami zmienionych slow
+					TreeMap<Integer, KanjiEntryForDictionary> newChangedKanjiEntriesIdMap = new TreeMap<Integer, KanjiEntryForDictionary>();
+					
+					for (KanjiEntryForDictionary newChangedKanjiEntry : newKanjiEntries) {
+						
+						if (newChangedKanjiEntriesIdMap.containsKey(newChangedKanjiEntry.getId()) == true) {
+							throw new RuntimeException("containsKey = " + newChangedKanjiEntry.getId());
+						}
+						
+						newChangedKanjiEntriesIdMap.put(newChangedKanjiEntry.getId(), newChangedKanjiEntry);
+					}
+
+					// lista wynikowa
+					List<KanjiEntryForDictionary> result = new ArrayList<KanjiEntryForDictionary>();
+					
+					for (KanjiEntryForDictionary kanjiEntry : kanjiEntries) {
+						
+						// sprawdzamy, czy ten wpis jest na liscie zmienionych wpisow
+						KanjiEntryForDictionary changedKanjiEntry = newChangedKanjiEntriesIdMap.get(kanjiEntry.getId());
+						
+						if (changedKanjiEntry == null) {
+							result.add(kanjiEntry);
+							
+						} else {
+							result.add(changedKanjiEntry);
+						}
+					}					
+					
+					FileOutputStream outputStream = new FileOutputStream(new File("input/kanji-wynik.csv"));
+					
+					CsvReaderWriter.generateKanjiCsv(outputStream, result, false, null);
+				}
+				
+				
 				break;
 			}
 			

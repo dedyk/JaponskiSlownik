@@ -15,7 +15,7 @@ import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
-import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 
 public class KanjiDic2Reader {
@@ -76,11 +76,11 @@ public class KanjiDic2Reader {
 		return result;
 	}
 	
-	public static Map<String, KanjiDic2Entry> readKanjiDic2(String fileName, Map<String, List<String>> kradFileMap) throws Exception {
+	public static Map<String, KanjiDic2EntryForDictionary> readKanjiDic2(String fileName, Map<String, List<String>> kradFileMap) throws Exception {
 		
 		createRadicalToCorrectRadicalMapIfNeeded();
 		
-		Map<String, KanjiDic2Entry> result = new HashMap<String, KanjiDic2Entry>();
+		Map<String, KanjiDic2EntryForDictionary> result = new HashMap<String, KanjiDic2EntryForDictionary>();
 		
 		SAXReader reader = new SAXReader();
 		
@@ -128,7 +128,7 @@ public class KanjiDic2Reader {
         		freq = Integer.parseInt(freqElement.getText());
         	}
         	
-        	KanjiDic2Entry kanjiDic2Entry = new KanjiDic2Entry();
+        	KanjiDic2EntryForDictionary kanjiDic2Entry = new KanjiDic2EntryForDictionary();
         	
         	kanjiDic2Entry.setKanji(kanji);
         	kanjiDic2Entry.setStrokeCount(strokeCount);

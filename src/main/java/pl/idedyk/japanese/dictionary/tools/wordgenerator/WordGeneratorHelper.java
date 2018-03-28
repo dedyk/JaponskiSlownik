@@ -14,12 +14,15 @@ import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
+import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
 public class WordGeneratorHelper {
 	
@@ -27,6 +30,11 @@ public class WordGeneratorHelper {
 	private String wordCommonCsvFile;
 	
 	private String jmdicteFile;
+	
+	private String kanjiFile;
+	
+	private String kradFile;
+	private String kanjiDic2File;
 	
 	//
 	
@@ -48,12 +56,22 @@ public class WordGeneratorHelper {
 
 	private Directory index;
 	
-	public WordGeneratorHelper(String[] wordCsvFiles, String wordCommonCsvFile, String jmdicteFile) {
+	private List<KanjiEntryForDictionary> kanjiEntries;
+	
+	private Map<String, List<String>> kradFileMap;
+	private Map<String, KanjiDic2EntryForDictionary> kanjiDic2EntryMap;
+	
+	public WordGeneratorHelper(String[] wordCsvFiles, String wordCommonCsvFile, String jmdicteFile, String kanjiFile, String kradFile, String kanjiDic2File) {
 		
 		this.wordCsvFiles = wordCsvFiles;		
 		this.wordCommonCsvFile = wordCommonCsvFile;
 		
-		this.jmdicteFile = jmdicteFile;		
+		this.jmdicteFile = jmdicteFile;	
+		
+		this.kanjiFile = kanjiFile;
+		
+		this.kradFile = kradFile;
+		this.kanjiDic2File = kanjiDic2File;
 	}
 	
 	public List<PolishJapaneseEntry> getPolishJapaneseEntriesList() throws IOException, JapaneseDictionaryException {
@@ -204,4 +222,40 @@ public class WordGeneratorHelper {
 		
 		return index;
 	}
+	
+	public List<KanjiEntryForDictionary> getKanjiEntries() throws Exception {
+		
+		if (kanjiEntries == null) {
+			
+			System.out.println("Wczytywanie pliku kanji");
+			
+			kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(kanjiFile, getKanjiDic2EntryMap(), false);
+		}
+		
+		return kanjiEntries;
+	}
+	
+	public Map<String, KanjiDic2EntryForDictionary> getKanjiDic2EntryMap() throws Exception {
+		
+		if (kanjiDic2EntryMap == null) {
+			
+			System.out.println("Wczytywanie pliku kanjiDic2.xml");
+			
+			kanjiDic2EntryMap = KanjiDic2Reader.readKanjiDic2(kanjiDic2File, getKradFileMap());
+		}
+		
+		return kanjiDic2EntryMap;
+	}
+
+	public Map<String, List<String>> getKradFileMap() throws Exception {
+		
+		if (kanjiDic2EntryMap == null) {
+			
+			System.out.println("Wczytywanie pliku kradFile");
+			
+			kradFileMap = KanjiDic2Reader.readKradFile(kradFile);
+		}	
+		
+		return kradFileMap;
+	}	
 }

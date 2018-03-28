@@ -26,8 +26,6 @@ import org.apache.commons.io.FileUtils;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
-import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
@@ -36,6 +34,8 @@ import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry;
@@ -96,7 +96,7 @@ public class AndroidDictionaryGenerator {
 
 		final String zinniaTomoeSlimBinaryFile = "output/kanji_recognizer.model.db";
 		
-		List<KanjiEntry> kanjiEntries = generateKanjiEntries(/* dictionary, jmedictCommon, */ kanjivgEntryMap, "input/kanji.csv",
+		List<KanjiEntryForDictionary> kanjiEntries = generateKanjiEntries(/* dictionary, jmedictCommon, */ kanjivgEntryMap, "input/kanji.csv",
 				"../JapaneseDictionary_additional/kanjidic2.xml", "../JapaneseDictionary_additional/kradfile",
 				"output/kanji.csv");
 
@@ -320,7 +320,7 @@ public class AndroidDictionaryGenerator {
 
 	}
 
-	private static List<KanjiEntry> generateKanjiEntries(/* List<PolishJapaneseEntry> dictionary,
+	private static List<KanjiEntryForDictionary> generateKanjiEntries(/* List<PolishJapaneseEntry> dictionary,
 			TreeMap<String, EDictEntry> jmedictCommon, */ 
 			Map<String, KanjivgEntry> kanjivgEntryMap, String sourceKanjiName, String sourceKanjiDic2FileName,
 			String sourceKradFileName, String destinationFileName) throws Exception {
@@ -331,10 +331,10 @@ public class AndroidDictionaryGenerator {
 		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(sourceKradFileName);
 
 		System.out.println("generateKanjiEntries: readKanjiDic2");
-		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName, kradFileMap);
+		Map<String, KanjiDic2EntryForDictionary> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName, kradFileMap);
 
 		System.out.println("generateKanjiEntries: parseKanjiEntriesFromCsv");
-		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2, true);
+		List<KanjiEntryForDictionary> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2, true);
 
 		System.out.println("generateKanjiEntries: validateDuplicateKanjiEntriesList");
 		Validator.validateDuplicateKanjiEntriesList(kanjiEntries);
@@ -342,7 +342,7 @@ public class AndroidDictionaryGenerator {
 		// System.out.println("generateKanjiEntries: generateAdditionalKanjiEntries");
 		// generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2, "input/osjp.csv", jmedictCommon);
 
-		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+		for (KanjiEntryForDictionary currentKanjiEntry : kanjiEntries) {
 
 			String kanji = currentKanjiEntry.getKanji();
 
@@ -355,20 +355,20 @@ public class AndroidDictionaryGenerator {
 
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 
-		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, true);
+		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, true, null);
 
 		return kanjiEntries;
 	}
 
 	@SuppressWarnings("unused")
 	private static void generateAdditionalKanjiEntries(List<PolishJapaneseEntry> dictionary,
-			List<KanjiEntry> kanjiEntries, Map<String, KanjiDic2Entry> readKanjiDic2, String osjpFile,
+			List<KanjiEntryForDictionary> kanjiEntries, Map<String, KanjiDic2EntryForDictionary> readKanjiDic2, String osjpFile,
 			TreeMap<String, EDictEntry> jmedictCommon) throws Exception {
 
 		Set<String> alreadySetKanji = new HashSet<String>();
 		Set<String> alreadySetKanjiSource = new HashSet<String>();
 
-		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+		for (KanjiEntryForDictionary currentKanjiEntry : kanjiEntries) {
 			alreadySetKanji.add(currentKanjiEntry.getKanji());
 			alreadySetKanjiSource.add(currentKanjiEntry.getKanji());
 		}
@@ -385,7 +385,7 @@ public class AndroidDictionaryGenerator {
 
 				String currentKanjiChar = String.valueOf(kanji.charAt(kanjiCharIdx));
 
-				KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(currentKanjiChar);
+				KanjiDic2EntryForDictionary kanjiDic2Entry = readKanjiDic2.get(currentKanjiChar);
 
 				if (kanjiDic2Entry != null) {
 
@@ -411,7 +411,7 @@ public class AndroidDictionaryGenerator {
 
 					alreadySetKanji.add(currentKanjiChar);
 
-					KanjiEntry newKanjiEntry = generateKanjiEntry(currentKanjiChar, kanjiDic2Entry,
+					KanjiEntryForDictionary newKanjiEntry = generateKanjiEntry(currentKanjiChar, kanjiDic2Entry,
 							kanjiEntries.get(kanjiEntries.size() - 1).getId() + 1);
 
 					kanjiEntries.add(newKanjiEntry);
@@ -553,9 +553,9 @@ public class AndroidDictionaryGenerator {
 		System.out.println("\n---\n");
 	}
 
-	private static KanjiEntry generateKanjiEntry(String kanji, KanjiDic2Entry kanjiDic2Entry, int id) {
+	private static KanjiEntryForDictionary generateKanjiEntry(String kanji, KanjiDic2EntryForDictionary kanjiDic2Entry, int id) {
 
-		KanjiEntry newKanjiEntry = new KanjiEntry();
+		KanjiEntryForDictionary newKanjiEntry = new KanjiEntryForDictionary();
 
 		newKanjiEntry.setId(id);
 		newKanjiEntry.setKanji(kanji);
@@ -624,7 +624,7 @@ public class AndroidDictionaryGenerator {
 	}
 	*/
 
-	private static void generateZinniaTomoeSlimBinaryFile(List<KanjiEntry> kanjiEntries, File kanjivgSingleXmlFile,
+	private static void generateZinniaTomoeSlimBinaryFile(List<KanjiEntryForDictionary> kanjiEntries, File kanjivgSingleXmlFile,
 			String tomoeFileFromKanjivg, String zinniaLearnPath, String zinniaTomoeLearnSlimFile,
 			String zinniaTomoeSlimBinaryFile) throws Exception {
 
@@ -632,7 +632,7 @@ public class AndroidDictionaryGenerator {
 
 		Set<String> kanjiSet = new HashSet<String>();
 
-		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+		for (KanjiEntryForDictionary currentKanjiEntry : kanjiEntries) {
 
 			String kanji = currentKanjiEntry.getKanji();
 
@@ -642,12 +642,12 @@ public class AndroidDictionaryGenerator {
 		//File kvgToolFileFromKanjivgFile = new File(kvgToolFileFromKanjivg);
 		File tomoeFileFromKanjivgFile = new File(tomoeFileFromKanjivg);
 
-		kanjiEntries = new ArrayList<KanjiEntry>(kanjiEntries);
+		kanjiEntries = new ArrayList<KanjiEntryForDictionary>(kanjiEntries);
 
-		Collections.sort(kanjiEntries, new Comparator<KanjiEntry>() {
+		Collections.sort(kanjiEntries, new Comparator<KanjiEntryForDictionary>() {
 
 			@Override
-			public int compare(KanjiEntry o1, KanjiEntry o2) {
+			public int compare(KanjiEntryForDictionary o1, KanjiEntryForDictionary o2) {
 				return o1.getKanji().compareTo(o2.getKanji());
 			}
 		});

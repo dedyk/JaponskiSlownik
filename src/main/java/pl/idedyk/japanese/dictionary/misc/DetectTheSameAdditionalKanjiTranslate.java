@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.AdditionalKanjiEntry;
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
 import pl.idedyk.japanese.dictionary.tools.AdditionalKanjiReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
@@ -24,11 +24,11 @@ public class DetectTheSameAdditionalKanjiTranslate {
 		String additionalKanjiOuputFile = "input/additional_kanji_output.csv";
 		
 		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(kradfile);		
-		Map<String, KanjiDic2Entry> kanjiDic2Map = KanjiDic2Reader.readKanjiDic2(kanjidic2, kradFileMap);
+		Map<String, KanjiDic2EntryForDictionary> kanjiDic2Map = KanjiDic2Reader.readKanjiDic2(kanjidic2, kradFileMap);
 		
 		List<AdditionalKanjiEntry> additionalKanjiEntryList = AdditionalKanjiReaderWriter.readAdditionalKanjiEntry(additionalKanjiFile);
 		
-		Map<String, List<KanjiDic2Entry>> theSameEngMeaning = detectTheSameEngMeaning(kradFileMap, kanjiDic2Map);
+		Map<String, List<KanjiDic2EntryForDictionary>> theSameEngMeaning = detectTheSameEngMeaning(kradFileMap, kanjiDic2Map);
 
 		Iterator<String> theSameEngMeaningIterator = theSameEngMeaning.keySet().iterator();
 		
@@ -40,7 +40,7 @@ public class DetectTheSameAdditionalKanjiTranslate {
 				continue;
 			}
 			
-			List<KanjiDic2Entry> theSameEngMeaningKanjiDic2EntryList = theSameEngMeaning.get(key);
+			List<KanjiDic2EntryForDictionary> theSameEngMeaningKanjiDic2EntryList = theSameEngMeaning.get(key);
 
 			if (theSameEngMeaningKanjiDic2EntryList.size() <= 1) {
 				continue;
@@ -48,7 +48,7 @@ public class DetectTheSameAdditionalKanjiTranslate {
 						
 			List<AdditionalKanjiEntry> foundAdditionalKanjiEntryList = new ArrayList<AdditionalKanjiEntry>();
 			
-			for (KanjiDic2Entry currentKanjiDic2Entry : theSameEngMeaningKanjiDic2EntryList) {
+			for (KanjiDic2EntryForDictionary currentKanjiDic2Entry : theSameEngMeaningKanjiDic2EntryList) {
 				
 				AdditionalKanjiEntry additionalKanjiEntry = AdditionalKanjiReaderWriter.findAdditionalKanjiEntry(additionalKanjiEntryList, currentKanjiDic2Entry.getKanji());
 				
@@ -128,13 +128,13 @@ public class DetectTheSameAdditionalKanjiTranslate {
 		AdditionalKanjiReaderWriter.writeAdditionalKanjiList(additionalKanjiEntryList, additionalKanjiOuputFile);
 	}
 	
-	private static Map<String, List<KanjiDic2Entry>> detectTheSameEngMeaning(Map<String, List<String>> kradFileMap, Map<String, KanjiDic2Entry> readKanjiDic2) {
+	private static Map<String, List<KanjiDic2EntryForDictionary>> detectTheSameEngMeaning(Map<String, List<String>> kradFileMap, Map<String, KanjiDic2EntryForDictionary> readKanjiDic2) {
 		
-		Collection<KanjiDic2Entry> readKanjiDic2Values = readKanjiDic2.values();
+		Collection<KanjiDic2EntryForDictionary> readKanjiDic2Values = readKanjiDic2.values();
 		
-		Map<String, List<KanjiDic2Entry>> theSameEngMeaning = new TreeMap<String, List<KanjiDic2Entry>>();
+		Map<String, List<KanjiDic2EntryForDictionary>> theSameEngMeaning = new TreeMap<String, List<KanjiDic2EntryForDictionary>>();
 		
-		for (KanjiDic2Entry kanjiDic2Entry : readKanjiDic2Values) {
+		for (KanjiDic2EntryForDictionary kanjiDic2Entry : readKanjiDic2Values) {
 			
 			List<String> engMeaning = kanjiDic2Entry.getEngMeaning();
 			
@@ -142,10 +142,10 @@ public class DetectTheSameAdditionalKanjiTranslate {
 			
 			String key = engMeaning.toString();
 			
-			List<KanjiDic2Entry> list = theSameEngMeaning.get(key);
+			List<KanjiDic2EntryForDictionary> list = theSameEngMeaning.get(key);
 			
 			if (list == null) {
-				list = new ArrayList<KanjiDic2Entry>();
+				list = new ArrayList<KanjiDic2EntryForDictionary>();
 			}
 			
 			list.add(kanjiDic2Entry);

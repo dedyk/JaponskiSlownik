@@ -23,7 +23,6 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryGroup;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.example.ExampleManager;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
@@ -34,6 +33,7 @@ import pl.idedyk.japanese.dictionary.api.keigo.KeigoHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
@@ -1087,14 +1087,14 @@ public class Validator {
 	}
 	*/
 
-	public static void validateDuplicateKanjiEntriesList(List<KanjiEntry> kanjiEntries)
+	public static void validateDuplicateKanjiEntriesList(List<KanjiEntryForDictionary> kanjiEntries)
 			throws JapaneseDictionaryException {
 
-		Map<String, KanjiEntry> alreadyKanjiEntryMap = new HashMap<String, KanjiEntry>();
+		Map<String, KanjiEntryForDictionary> alreadyKanjiEntryMap = new HashMap<String, KanjiEntryForDictionary>();
 
-		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+		for (KanjiEntryForDictionary currentKanjiEntry : kanjiEntries) {
 
-			KanjiEntry kanjiEntryInMap = alreadyKanjiEntryMap.get(currentKanjiEntry.getKanji());
+			KanjiEntryForDictionary kanjiEntryInMap = alreadyKanjiEntryMap.get(currentKanjiEntry.getKanji());
 
 			if (kanjiEntryInMap == null) {
 

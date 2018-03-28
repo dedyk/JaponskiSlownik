@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
-import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
@@ -30,23 +30,23 @@ public class GenerateKanjiEntryUsed {
 		String destinationFileName = "input/kanji-new.csv";
 		
 		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile(sourceKradFileName);		
-		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName, kradFileMap);
+		Map<String, KanjiDic2EntryForDictionary> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2(sourceKanjiDic2FileName, kradFileMap);
 		
 		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 
-		List<KanjiEntry> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2, false);
+		List<KanjiEntryForDictionary> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2, false);
 		
-		Map<String, KanjiEntry> kanjiEntriesMap = new TreeMap<String, KanjiEntry>();
+		Map<String, KanjiEntryForDictionary> kanjiEntriesMap = new TreeMap<String, KanjiEntryForDictionary>();
 		
-		for (KanjiEntry kanjiEntry : kanjiEntries) {
+		for (KanjiEntryForDictionary kanjiEntry : kanjiEntries) {
 			
 			String kanji = kanjiEntry.getKanji();
 			
 			kanjiEntriesMap.put(kanji, kanjiEntry);
 		}
 		
-		for (KanjiEntry currentKanjiEntry : kanjiEntries) {
+		for (KanjiEntryForDictionary currentKanjiEntry : kanjiEntries) {
 
 			String kanji = currentKanjiEntry.getKanji();
 
@@ -58,11 +58,11 @@ public class GenerateKanjiEntryUsed {
 		}
 		
 		// top 2500
-		for (KanjiEntry kanjiEntry : kanjiEntries) {
+		for (KanjiEntryForDictionary kanjiEntry : kanjiEntries) {
 			
 			String kanji = kanjiEntry.getKanji();
 			
-			KanjiDic2Entry kanjiDic2Entry = readKanjiDic2.get(kanji);
+			KanjiDic2EntryForDictionary kanjiDic2Entry = readKanjiDic2.get(kanji);
 			
 			if (kanjiDic2Entry != null) {
 				
@@ -77,9 +77,9 @@ public class GenerateKanjiEntryUsed {
 		processJMEDictEntries(kanjiEntriesMap, jmedict);
 		processJMEDictEntries(kanjiEntriesMap, jmedictName);
 
-		for (KanjiEntry kanjiEntry : kanjiEntries) {
+		for (KanjiEntryForDictionary kanjiEntry : kanjiEntries) {
 						
-			KanjiDic2Entry kanjiDic2Entry = kanjiEntry.getKanjiDic2Entry();
+			KanjiDic2EntryForDictionary kanjiDic2Entry = (KanjiDic2EntryForDictionary)kanjiEntry.getKanjiDic2Entry();
 			
 			if (kanjiDic2Entry == null) {
 				kanjiEntry.setUsed(false);
@@ -98,11 +98,11 @@ public class GenerateKanjiEntryUsed {
 		
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 
-		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, false);
+		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, false, null);
 
 	}
 	
-	private static void processJMEDictEntries(Map<String, KanjiEntry> kanjiEntriesMap, TreeMap<String, List<JMEDictEntry>> jmedict) {
+	private static void processJMEDictEntries(Map<String, KanjiEntryForDictionary> kanjiEntriesMap, TreeMap<String, List<JMEDictEntry>> jmedict) {
 		
 		Collection<List<JMEDictEntry>> jmedictValues = jmedict.values();
 		Iterator<List<JMEDictEntry>> jmedictCommonValuesIterator = jmedictValues.iterator();
@@ -121,7 +121,7 @@ public class GenerateKanjiEntryUsed {
 
 						String currentKanjiChar = String.valueOf(kanji.charAt(kanjiCharIdx));
 
-						KanjiEntry kanjiEntry = kanjiEntriesMap.get(currentKanjiChar);
+						KanjiEntryForDictionary kanjiEntry = kanjiEntriesMap.get(currentKanjiChar);
 						
 						if (kanjiEntry != null) {
 							kanjiEntry.setUsed(true);

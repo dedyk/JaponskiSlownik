@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
+import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
 
@@ -103,13 +103,13 @@ public class Test2 {
 		
 		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile("../JapaneseDictionary_additional/kradfile");
 		
-		Map<String, KanjiDic2Entry> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2("../JapaneseDictionary_additional/kanjidic2.xml", kradFileMap);
+		Map<String, KanjiDic2EntryForDictionary> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2("../JapaneseDictionary_additional/kanjidic2.xml", kradFileMap);
 
-		Collection<KanjiDic2Entry> readKanjiDic2Values = readKanjiDic2.values();
+		Collection<KanjiDic2EntryForDictionary> readKanjiDic2Values = readKanjiDic2.values();
 		
-		Map<String, List<KanjiDic2Entry>> theSameEngMeaning = new TreeMap<String, List<KanjiDic2Entry>>();
+		Map<String, List<KanjiDic2EntryForDictionary>> theSameEngMeaning = new TreeMap<String, List<KanjiDic2EntryForDictionary>>();
 		
-		for (KanjiDic2Entry kanjiDic2Entry : readKanjiDic2Values) {
+		for (KanjiDic2EntryForDictionary kanjiDic2Entry : readKanjiDic2Values) {
 			
 			List<String> engMeaning = kanjiDic2Entry.getEngMeaning();
 			
@@ -117,10 +117,10 @@ public class Test2 {
 			
 			String key = engMeaning.toString();
 			
-			List<KanjiDic2Entry> list = theSameEngMeaning.get(key);
+			List<KanjiDic2EntryForDictionary> list = theSameEngMeaning.get(key);
 			
 			if (list == null) {
-				list = new ArrayList<KanjiDic2Entry>();
+				list = new ArrayList<KanjiDic2EntryForDictionary>();
 			}
 			
 			list.add(kanjiDic2Entry);
@@ -134,13 +134,13 @@ public class Test2 {
 			
 			String key = theSameEngMeaningIterator.next();
 			
-			List<KanjiDic2Entry> list = theSameEngMeaning.get(key);
+			List<KanjiDic2EntryForDictionary> list = theSameEngMeaning.get(key);
 			
 			if (list.size() > 1) {
 				
 				StringBuffer listKanji = new StringBuffer();
 				
-				for (KanjiDic2Entry kanjiDic2Entry : list) {
+				for (KanjiDic2EntryForDictionary kanjiDic2Entry : list) {
 					listKanji.append(kanjiDic2Entry.getKanji() + " ");
 				}
 				
