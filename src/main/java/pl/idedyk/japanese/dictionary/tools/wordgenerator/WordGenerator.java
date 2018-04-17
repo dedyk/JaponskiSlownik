@@ -2719,10 +2719,12 @@ public class WordGenerator {
 				
 				Boolean ignoreJmedictEmptyRawData = false;
 				Boolean randomWords = false;
+				Boolean force = false;
 				
 				boolean setWords = false;
 				
 				Set<Integer> wordsIdsSet = null;
+				Set<Integer> groupsIdsSet = null;
 				
 				//
 				
@@ -2733,6 +2735,8 @@ public class WordGenerator {
 				options.addOption("ijerd", "ignore-jmedict-empty-raw-data", false, "Ignore jmedict empty raw data");
 				options.addOption("set", "set-words", false, "Set words");
 				options.addOption("wid", "word-ids", true, "Word ids");
+				options.addOption("gid", "group-ids", true, "Group ids");
+				options.addOption("f", "force", false, "Force");
 				
 				options.addOption("h", "help", false, "Help");
 				
@@ -2801,6 +2805,24 @@ public class WordGenerator {
 							wordsIdsSet.add(Integer.parseInt(currentWordId.trim()));							
 						}
 					}
+					
+					if (commandLine.hasOption("group-ids") == true) {
+						
+						groupsIdsSet = new HashSet<>();
+						
+						String groupsIdsString = commandLine.getOptionValue("group-ids");
+						
+						String[] groupsIdsStringSplited = groupsIdsString.split(",");
+						
+						for (String currentGroupId : groupsIdsStringSplited) {
+							groupsIdsSet.add(Integer.parseInt(currentGroupId.trim()));							
+						}
+					}
+					
+					if (commandLine.hasOption("force") == true) {
+						force = true;
+					}
+					
 	
 					if (findWordsSize == null) {
 						System.err.println("No size of find words");
@@ -2853,6 +2875,25 @@ public class WordGenerator {
 						if (wordsIdsSet != null && wordsIdsSet.contains(polishJapaneseEntry.getId()) == false) {
 							continue;
 						}
+						
+						if (groupsIdsSet != null) {
+							
+							List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
+							
+							if (jmedictRawDataList != null && jmedictRawDataList.size() > 0) {
+								
+								String groupIdString = jmedictRawDataList.get(0).substring(9);
+								
+								Integer polishJapaneseEntryGroupId = new Integer(groupIdString);
+								
+								if (groupsIdsSet.contains(polishJapaneseEntryGroupId) == false) {
+									continue;
+								}								
+
+							} else {
+								continue;
+							}
+						}
 																		
 						DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
 						
@@ -2894,7 +2935,7 @@ public class WordGenerator {
 								groupEntryListForPolishJapaneseEntry = groupEntryList;
 							}
 							
-							if (JMENewDictionary.isMultiGroup(groupEntryListForPolishJapaneseEntry) == false) { // grupa pojedyncza
+							if (JMENewDictionary.isMultiGroup(groupEntryListForPolishJapaneseEntry) == false || force == true) { // grupa pojedyncza
 								
 								/*
 								// porownujemy tlumaczenia
@@ -2985,7 +3026,7 @@ public class WordGenerator {
 									}									
 								}
 								
-								if (isDifferent == true) {
+								if (isDifferent == true || force == true) {
 									
 									for (PolishJapaneseEntryAndGroupEntry polishJapaneseEntryAndGroupEntry : allPolishJapaneseEntryListForGroupEntry) {
 										
