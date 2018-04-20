@@ -15,6 +15,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -96,7 +97,7 @@ public class AndroidDictionaryGenerator {
 
 		final String zinniaTomoeSlimBinaryFile = "output/kanji_recognizer.model.db";
 		
-		List<KanjiEntryForDictionary> kanjiEntries = generateKanjiEntries(/* dictionary, jmedictCommon, */ kanjivgEntryMap, "input/kanji.csv",
+		List<KanjiEntryForDictionary> kanjiEntries = generateKanjiEntries(dictionary, jmedictCommon, kanjivgEntryMap, "input/kanji.csv",
 				"../JapaneseDictionary_additional/kanjidic2.xml", "../JapaneseDictionary_additional/kradfile",
 				"output/kanji.csv");
 
@@ -320,8 +321,8 @@ public class AndroidDictionaryGenerator {
 
 	}
 
-	private static List<KanjiEntryForDictionary> generateKanjiEntries(/* List<PolishJapaneseEntry> dictionary,
-			TreeMap<String, EDictEntry> jmedictCommon, */ 
+	private static List<KanjiEntryForDictionary> generateKanjiEntries(List<PolishJapaneseEntry> dictionary,
+			TreeMap<String, EDictEntry> jmedictCommon,
 			Map<String, KanjivgEntry> kanjivgEntryMap, String sourceKanjiName, String sourceKanjiDic2FileName,
 			String sourceKradFileName, String destinationFileName) throws Exception {
 
@@ -339,8 +340,8 @@ public class AndroidDictionaryGenerator {
 		System.out.println("generateKanjiEntries: validateDuplicateKanjiEntriesList");
 		Validator.validateDuplicateKanjiEntriesList(kanjiEntries);
 
-		// System.out.println("generateKanjiEntries: generateAdditionalKanjiEntries");
-		// generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2, "input/osjp.csv", jmedictCommon);
+		System.out.println("generateKanjiEntries: generateAdditionalKanjiEntries");
+		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2, "input/osjp.csv", jmedictCommon);
 
 		for (KanjiEntryForDictionary currentKanjiEntry : kanjiEntries) {
 
@@ -360,7 +361,6 @@ public class AndroidDictionaryGenerator {
 		return kanjiEntries;
 	}
 
-	@SuppressWarnings("unused")
 	private static void generateAdditionalKanjiEntries(List<PolishJapaneseEntry> dictionary,
 			List<KanjiEntryForDictionary> kanjiEntries, Map<String, KanjiDic2EntryForDictionary> readKanjiDic2, String osjpFile,
 			TreeMap<String, EDictEntry> jmedictCommon) throws Exception {
@@ -420,6 +420,37 @@ public class AndroidDictionaryGenerator {
 				}
 			}
 		}
+		
+		// generate all remaining kanjis
+		Iterator<String> readKanjiDic2KeySetIterator = readKanjiDic2.keySet().iterator();
+
+		while (readKanjiDic2KeySetIterator.hasNext()) {
+
+			String readKanjiDic2KeySetIteratorCurrentKanji = readKanjiDic2KeySetIterator.next();
+
+			KanjiDic2EntryForDictionary kanjiDic2Entry = readKanjiDic2.get(readKanjiDic2KeySetIteratorCurrentKanji);
+			
+			if (alreadySetKanji.contains(readKanjiDic2KeySetIteratorCurrentKanji)) {
+				continue;
+			}
+
+			alreadySetKanji.add(readKanjiDic2KeySetIteratorCurrentKanji);
+
+			KanjiEntryForDictionary newKanjiEntry = generateKanjiEntry(readKanjiDic2KeySetIteratorCurrentKanji, kanjiDic2Entry,
+					kanjiEntries.get(kanjiEntries.size() - 1).getId() + 1);
+
+			kanjiEntries.add(newKanjiEntry);
+
+			additionalKanjiIds.put(readKanjiDic2KeySetIteratorCurrentKanji, newKanjiEntry.getId());
+
+			Integer kanjiCountMapInteger = kanjiCountMap.get(readKanjiDic2KeySetIteratorCurrentKanji);
+
+			if (kanjiCountMapInteger == null) {
+				kanjiCountMapInteger = new Integer(0);
+			}
+
+			kanjiCountMap.put(readKanjiDic2KeySetIteratorCurrentKanji, kanjiCountMapInteger);
+		}		
 
 		// generate additional top 2500 kanji
 		/*
@@ -541,7 +572,7 @@ public class AndroidDictionaryGenerator {
 
 		System.out.println("\n---\n");
 
-		for (int kanjiArrayIdx = 0; kanjiArrayIdx < kanjiArray.length && kanjiArrayIdx < 10; ++kanjiArrayIdx) {
+		for (int kanjiArrayIdx = 0; kanjiArrayIdx < kanjiArray.length /* && kanjiArrayIdx < 10 */; ++kanjiArrayIdx) {
 
 			String currentKanji = kanjiArray[kanjiArrayIdx];
 
@@ -563,7 +594,7 @@ public class AndroidDictionaryGenerator {
 
 		List<String> polishTranslates = new ArrayList<String>();
 
-		polishTranslates.add("nieznane znaczenie");
+		polishTranslates.add("-");
 
 		newKanjiEntry.setPolishTranslates(polishTranslates);
 		newKanjiEntry.setInfo("");
