@@ -661,7 +661,7 @@ public class AndroidDictionaryGenerator {
 
 		System.out.println("generateZinniaTomoeSlimBinaryFile");
 
-		Set<String> kanjiSet = new HashSet<String>();
+		Set<String> kanjiSet = new TreeSet<String>();
 
 		for (KanjiEntryForDictionary currentKanjiEntry : kanjiEntries) {
 
@@ -745,7 +745,7 @@ public class AndroidDictionaryGenerator {
 
 			String kanji = currentTomoeEntry.getKanji();
 
-			if (kanjiSet.contains(kanji) == false) {
+			if (kanjiSet.contains(kanji) == false || Arrays.asList("𠂤", "𠮟", "𦥑").contains(kanji) == true) { // te znaki powoduja problemy
 				continue;
 			}
 
