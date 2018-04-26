@@ -745,7 +745,7 @@ public class AndroidDictionaryGenerator {
 
 			String kanji = currentTomoeEntry.getKanji();
 
-			if (kanjiSet.contains(kanji) == false || Arrays.asList("𠂤", "𠮟", "𦥑").contains(kanji) == true) { // te znaki powoduja problemy w Androidzie w wersji nizszej niz 6 oraz kilku innych miejscach, na razie niech te znaki beda wylaczone z rozpoznawania
+			if (kanjiSet.contains(kanji) == false) {
 				continue;
 			}
 
