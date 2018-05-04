@@ -57,6 +57,8 @@ public class Test {
 		System.out.println(romaji + " - " + romajiFromRomajiToKanaWord);
 		*/
 		
+		// UWAGA: Branch alternative_kana z API !!!
+		
 		/*
 		Map<String, List<KanaEntry>> allKanaListCacheKanaRomajiAsKey = kanaHelper.getAllKanaListCacheKanaRomajiAsKey();
 		
