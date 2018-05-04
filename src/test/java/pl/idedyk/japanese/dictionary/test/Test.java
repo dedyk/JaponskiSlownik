@@ -6,7 +6,6 @@ import java.util.Map;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 
 public class Test {
 
@@ -29,7 +28,7 @@ public class Test {
 			katakanaCache.put(kanaEntry.getKana(), kanaEntry);
 		}
 		
-		Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
+		// Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
 		
 		/*
 		KanaWord kanaWord = kanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, "Oosutoraria");
@@ -39,9 +38,10 @@ public class Test {
 		
 		//
 		
-		String kana = "スッゲエ";
-		String romaji = "suggee";
+		//String kana = "スッゲエ";
+		//String romaji = "suggee";
 		
+		/*
 		KanaWord kanaWordFromKana = kanaHelper.convertKanaStringIntoKanaWord(kana, kanaCache, false);
 		
 		String kanaWordToRomaji = kanaHelper.createKanaString(kanaWordFromKana);
@@ -55,6 +55,22 @@ public class Test {
 		String romajiFromRomajiToKanaWord = kanaHelper.createKanaString(romajiToKanaWord);
 		
 		System.out.println(romaji + " - " + romajiFromRomajiToKanaWord);
+		*/
+		
+		/*
+		Map<String, List<KanaEntry>> allKanaListCacheKanaRomajiAsKey = kanaHelper.getAllKanaListCacheKanaRomajiAsKey();
+		
+		KanaWordFromRomaji kanaWordFromRomaji = kanaHelper.convertRomajiIntoKanaWordFromRomaji(allKanaListCacheKanaRomajiAsKey, romaji);
+		
+		for (KanaWord kanaWord : kanaWordFromRomaji.kanaWordList) {
+			
+			for (KanaEntry kanaEntry : kanaWord.kanaEntries) {
+				System.out.print(kanaEntry.getKanaJapanese());
+			}
+			
+			System.out.println();			
+		}
+		*/
 		
 		/*
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
