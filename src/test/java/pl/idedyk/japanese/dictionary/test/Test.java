@@ -1,18 +1,21 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.io.File;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
-import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 
 public class Test {
 
 	public static void main(String[] args) throws Exception {
+		
+		KanaHelper kanaHelper = new KanaHelper();
 
-		/*
-		List<KanaEntry> hiraganaEntries = KanaHelper.getAllHiraganaKanaEntries();
-		List<KanaEntry> katakanaEntries = KanaHelper.getAllKatakanaKanaEntries();
+		List<KanaEntry> hiraganaEntries = kanaHelper.getAllHiraganaKanaEntries();
+		List<KanaEntry> katakanaEntries = kanaHelper.getAllKatakanaKanaEntries();
 
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
 
@@ -25,12 +28,54 @@ public class Test {
 		for (KanaEntry kanaEntry : katakanaEntries) {
 			katakanaCache.put(kanaEntry.getKana(), kanaEntry);
 		}
+		
+		Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
+		
+		/*
+		KanaWord kanaWord = kanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, "Oosutoraria");
 
-		KanaWord kanaWord = KanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, "Oosutoraria");
-
-		System.out.println(KanaHelper.createKanaString(kanaWord));
-		 */
-
+		System.out.println(kanaHelper.createKanaString(kanaWord));
+		*/
+		
+		//
+		
+		String kana = "スッゲエ";
+		String romaji = "suggee";
+		
+		KanaWord kanaWordFromKana = kanaHelper.convertKanaStringIntoKanaWord(kana, kanaCache, false);
+		
+		String kanaWordToRomaji = kanaHelper.createKanaString(kanaWordFromKana);
+		
+		System.out.println(romaji + " - " + kanaWordToRomaji);
+		
+		//
+		
+		KanaWord romajiToKanaWord = kanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, romaji);
+		
+		String romajiFromRomajiToKanaWord = kanaHelper.createKanaString(romajiToKanaWord);
+		
+		System.out.println(romaji + " - " + romajiFromRomajiToKanaWord);
+		
+		/*
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+		
+			WordType wordType = polishJapaneseEntry.getWordType();
+			
+			if (wordType == WordType.KATAKANA_EXCEPTION) { // tymczasowo !!!
+				
+				String kana = polishJapaneseEntry.getKana();
+				String romaji = polishJapaneseEntry.getRomaji();
+				
+				System.out.println(kana + " - " + romaji);
+				
+				
+				
+			}
+		}
+		*/
+		
 		// TreeMap<String, EDictEntry> jmedict = EdictReader.readEdict("../JaponskiSlownik_dodatki/edict-utf8");
 		/*
 		System.out.println(jmedict.get(EdictReader.getMapKey("食べる", "たべる")));
@@ -399,6 +444,7 @@ public class Test {
 		System.out.println(charValue);
 		*/
 
+		/*
 		String kanjivgId = KanjivgReader.getKanjivgId("医");
 		
 		System.out.println(kanjivgId);
@@ -411,5 +457,6 @@ public class Test {
 			System.out.println(strokePath);
 			//System.out.println("currentCharStrokePaths.add(\"" + strokePath + "\");");
 		}
+		*/
 	}
 }
