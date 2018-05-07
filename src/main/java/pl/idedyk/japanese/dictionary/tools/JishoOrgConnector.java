@@ -12,7 +12,7 @@ import org.json.JSONObject;
 
 public class JishoOrgConnector {
 
-	private static final String URL = "http://jisho.org/api/v1/search/words?keyword=";
+	private static final String URL = "https://jisho.org/api/v1/search/words?keyword=";
 	
 	private String getJsonString(String word) {
 
