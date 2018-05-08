@@ -2778,6 +2778,13 @@ public class WordGenerator {
 				//
 				
 				if (setWords == false) {
+					
+					if (new File(findWordsWithJmedictChangeFilename).exists() == true) {
+						
+						System.out.println("Plik " + findWordsWithJmedictChangeFilename + " już istnieje");
+						
+						System.exit(1);
+					}
 				
 					//
 					
@@ -2830,6 +2837,8 @@ public class WordGenerator {
 						System.exit(1);
 					}
 					
+					int wordsCounter = 0;
+					
 					//
 										
 					// przygotowywane slownika jmedict
@@ -2865,9 +2874,7 @@ public class WordGenerator {
 					}
 					
 					//
-					
-					Set<Integer> alreadyAddPolishJapaneseEntriesId = new HashSet<Integer>();
-					
+										
 					List<PolishJapaneseEntryAndGroupEntryListWrapper> result = new ArrayList<PolishJapaneseEntryAndGroupEntryListWrapper>();
 					
 					for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
@@ -2956,7 +2963,7 @@ public class WordGenerator {
 								groupEntryListForPolishJapaneseEntry = groupEntryListForPolishJapaneseEntry.get(0).getGroup().getGroupEntryList(); // podmiana na wszystkie elementy z grupy
 								
 								List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryListForPolishJapaneseEntry);
-								
+																
 								//
 								
 								class PolishJapaneseEntryAndGroupEntry {
@@ -2980,6 +2987,8 @@ public class WordGenerator {
 								//
 								
 								for (List<GroupEntry> theSameTranslateGroupEntryList : groupByTheSameTranslateGroupEntryList) {
+									
+									wordsCounter++;
 																											
 									for (GroupEntry groupEntry : theSameTranslateGroupEntryList) {
 										
@@ -3001,27 +3010,24 @@ public class WordGenerator {
 										GroupEntry groupEntry = polishJapaneseEntryAndGroupEntry.groupEntry;
 										
 										//
+																					
+										jmedictRawDataList = findPolishJapaneseEntry.getJmedictRawDataList();
 										
-										if (alreadyAddPolishJapaneseEntriesId.contains(findPolishJapaneseEntry.getId()) == false) {
-											
-											jmedictRawDataList = findPolishJapaneseEntry.getJmedictRawDataList();
-											
-											// ignorojemy puste wpisy
-											if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true) {							
-												continue;
-											}											
-											
-											List<GroupEntryTranslate> groupEntryTranslateList = groupEntry.getTranslateList();
-											
-											List<String> newJmedictRawDataList = new ArrayList<String>();											
-											
-											for (GroupEntryTranslate groupEntryTranslate : groupEntryTranslateList) {
-												groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
-											}
+										// ignorojemy puste wpisy
+										if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true) {							
+											continue;
+										}											
+										
+										List<GroupEntryTranslate> groupEntryTranslateList = groupEntry.getTranslateList();
+										
+										List<String> newJmedictRawDataList = new ArrayList<String>();											
+										
+										for (GroupEntryTranslate groupEntryTranslate : groupEntryTranslateList) {
+											groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
+										}
 
-											if (jmedictRawDataList.equals(newJmedictRawDataList) == false) { // jest roznica												
-												isDifferent = true;												
-											}
+										if (jmedictRawDataList.equals(newJmedictRawDataList) == false) { // jest roznica												
+											isDifferent = true;												
 										}
 									}									
 								}
@@ -3034,8 +3040,6 @@ public class WordGenerator {
 										GroupEntry groupEntry = polishJapaneseEntryAndGroupEntry.groupEntry;
 
 										result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(findPolishJapaneseEntry, Arrays.asList(groupEntry), null));
-										
-										alreadyAddPolishJapaneseEntriesId.add(findPolishJapaneseEntry.getId());
 									}
 									
 								} /*else {
@@ -3080,6 +3084,8 @@ public class WordGenerator {
 							
 						} else { // nie znaleziono GroupEntry
 							
+							wordsCounter++;
+							
 							List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
 							
 							// ignorojemy puste wpisy
@@ -3091,13 +3097,11 @@ public class WordGenerator {
 							
 							if (ignoreNoJmedict == false) {
 								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, null, "IGNORE_NO_JMEDICT ???"));
-								
-								alreadyAddPolishJapaneseEntriesId.add(polishJapaneseEntry.getId());
 							}
 						}
 						
 						// sprawdzamy ilosc znalezionych slow
-						if (result.size() >= findWordsSize) {
+						if (wordsCounter >= findWordsSize) {
 							break;
 						}
 					}
@@ -3117,11 +3121,15 @@ public class WordGenerator {
 					final Map<Integer, PolishJapaneseEntryAndGroupEntryListWrapper> idPolishJapaneseEntryAndGroupEntryListWrapperMap = new TreeMap<Integer, PolishJapaneseEntryAndGroupEntryListWrapper>();
 					
 					List<PolishJapaneseEntry> resultAsPolishJapaneseEntryList = new ArrayList<PolishJapaneseEntry>();
-					
-					for (PolishJapaneseEntryAndGroupEntryListWrapper polishJapaneseEntryAndGroupEntryListWrapper : result) {					
-						idPolishJapaneseEntryAndGroupEntryListWrapperMap.put(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getId(), polishJapaneseEntryAndGroupEntryListWrapper);
+										
+					for (PolishJapaneseEntryAndGroupEntryListWrapper polishJapaneseEntryAndGroupEntryListWrapper : result) {
 						
-						resultAsPolishJapaneseEntryList.add(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry);
+						if (idPolishJapaneseEntryAndGroupEntryListWrapperMap.containsKey(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getId()) == false) {
+
+							idPolishJapaneseEntryAndGroupEntryListWrapperMap.put(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getId(), polishJapaneseEntryAndGroupEntryListWrapper);
+							
+							resultAsPolishJapaneseEntryList.add(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry);
+						}						
 					}
 					
 					//
@@ -3459,6 +3467,13 @@ public class WordGenerator {
 				//
 				
 				if (setKanjis == false) {
+					
+					if (new File(findKanjisWithKanjiDic2ChangeFilename).exists() == true) {
+						
+						System.out.println("Plik " + findKanjisWithKanjiDic2ChangeFilename + " już istnieje");
+						
+						System.exit(1);
+					}
 					
 					//
 					
