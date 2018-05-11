@@ -2987,9 +2987,7 @@ public class WordGenerator {
 								//
 								
 								for (List<GroupEntry> theSameTranslateGroupEntryList : groupByTheSameTranslateGroupEntryList) {
-									
-									wordsCounter++;
-																											
+																																				
 									for (GroupEntry groupEntry : theSameTranslateGroupEntryList) {
 										
 										String groupEntryKanji = groupEntry.getKanji();
@@ -3034,6 +3032,8 @@ public class WordGenerator {
 								
 								if (isDifferent == true || force == true) {
 									
+									wordsCounter += groupByTheSameTranslateGroupEntryList.size();
+																		
 									for (PolishJapaneseEntryAndGroupEntry polishJapaneseEntryAndGroupEntry : allPolishJapaneseEntryListForGroupEntry) {
 										
 										PolishJapaneseEntry findPolishJapaneseEntry = polishJapaneseEntryAndGroupEntry.polishJapaneseEntry;
@@ -3080,12 +3080,12 @@ public class WordGenerator {
 								
 								// dodajemy do manualnego sprawdzenia
 								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, groupEntryListForPolishJapaneseEntry, null));
+								
+								wordsCounter++;
 							}
 							
 						} else { // nie znaleziono GroupEntry
-							
-							wordsCounter++;
-							
+														
 							List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
 							
 							// ignorojemy puste wpisy
@@ -3097,6 +3097,8 @@ public class WordGenerator {
 							
 							if (ignoreNoJmedict == false) {
 								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, null, "IGNORE_NO_JMEDICT ???"));
+								
+								wordsCounter++;
 							}
 						}
 						
