@@ -2809,7 +2809,25 @@ public class WordGenerator {
 						String[] wordsIdsStringSplited = wordsIdsString.split(",");
 						
 						for (String currentWordId : wordsIdsStringSplited) {
-							wordsIdsSet.add(Integer.parseInt(currentWordId.trim()));							
+							
+							currentWordId = currentWordId.trim();
+							
+							boolean containsColon = currentWordId.contains(":");
+							
+							if (containsColon == false) {
+								wordsIdsSet.add(Integer.parseInt(currentWordId));
+								
+							} else {
+								
+								String[] currentWordIdSplited = currentWordId.split(":");
+								
+								Integer startWordIdRange = Integer.parseInt(currentWordIdSplited[0]);
+								Integer stopWordIdRange = Integer.parseInt(currentWordIdSplited[1]);
+								
+								for (int id = startWordIdRange; id <= stopWordIdRange; ++id) {
+									wordsIdsSet.add(id);
+								}
+							}
 						}
 					}
 					
@@ -3500,7 +3518,25 @@ public class WordGenerator {
 						String[] kanjisIdsStringSplited = kanjisIdsString.split(",");
 						
 						for (String currentKanjiId : kanjisIdsStringSplited) {
-							kanjisIdsSet.add(Integer.parseInt(currentKanjiId.trim()));							
+							
+							currentKanjiId = currentKanjiId.trim();
+							
+							boolean containsColon = currentKanjiId.contains(":");
+							
+							if (containsColon == false) {
+								kanjisIdsSet.add(Integer.parseInt(currentKanjiId));
+								
+							} else {
+								
+								String[] currentKanjiIdSplited = currentKanjiId.split(":");
+								
+								Integer startKanjiIdRange = Integer.parseInt(currentKanjiIdSplited[0]);
+								Integer stopKanjiIdRange = Integer.parseInt(currentKanjiIdSplited[1]);
+								
+								for (int id = startKanjiIdRange; id <= stopKanjiIdRange; ++id) {
+									kanjisIdsSet.add(id);
+								}
+							}
 						}
 					}
 	
