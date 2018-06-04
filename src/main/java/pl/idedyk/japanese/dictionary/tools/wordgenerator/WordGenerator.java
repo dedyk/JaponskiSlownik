@@ -3107,13 +3107,13 @@ public class WordGenerator {
 							List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
 							
 							// ignorojemy puste wpisy
-							if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true) {							
+							if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true && force == false) {							
 								continue;
 							}
 							
 							boolean ignoreNoJmedict = polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.IGNORE_NO_JMEDICT);
 							
-							if (ignoreNoJmedict == false) {
+							if (ignoreNoJmedict == false || force == true) {
 								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, null, "IGNORE_NO_JMEDICT ???"));
 								
 								wordsCounter++;
