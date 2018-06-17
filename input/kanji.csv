@@ -9,7 +9,8 @@ Meaning: six"
 8,八,osiem,,Genki kanji 1-3,true,
 9,九,dziewięć,,Genki kanji 1-3,true,
 10,十,dziesięć,,Genki kanji 1-3,true,
-11,百,sto,,Genki kanji 1-3,true,
+11,百,sto,,Genki kanji 1-3,true,"Kanji: 百
+Meaning: hundred"
 12,千,tysiąc,,Genki kanji 1-3,true,
 13,万,"dziesięć tysięcy
 bardzo dużo
@@ -5068,7 +5069,12 @@ Meaning: lap"
 miasto wojewódzkie
 stolica prefektury
 magazyn",,,true,
-1206,党,partia,polityczna,,true,
+1206,党,"partia polityczna
+frakcja
+klika",,,true,"Kanji: 党
+Meaning: party
+Meaning: faction
+Meaning: clique"
 1207,策,"plan
 środki
 program",,,true,
@@ -5078,7 +5084,12 @@ uzdrawiać",,,true,
 podstawa ciała",,,true,"Kanji: 脊
 Meaning: stature
 Meaning: height"
-1210,椎,dąb,,,true,
+1210,椎,"kasztan karłowaty
+pobijak
+kręgosłup",,,true,"Kanji: 椎
+Meaning: chinquapin
+Meaning: mallet
+Meaning: spine"
 1211,幽,"ograniczanie
 izolowanie
 w obrębie pokoju
@@ -10620,11 +10631,21 @@ bystry
 inteligentny
 roztropny
 rozsądny",,,true,
-2711,馳,"galop
-bieg
-jechać
-płynąć
-szybować",,,true,
+2711,馳,"bieg
+galop
+cwał
+pływanie
+żeglowanie
+jechanie
+wygranie (sławy)
+meldunek
+depesza",,,true,"Kanji: 馳
+Meaning: run
+Meaning: gallop
+Meaning: sail
+Meaning: drive (a wagon)
+Meaning: win (fame)
+Meaning: despatch"
 2712,伎,"zdolność
 umiejętność
 zręczność",,,true,
@@ -11619,8 +11640,14 @@ nęcić
 zgięcie
 zginać
 falować",,,true,
-2985,這,"czołgać się
-pełzać",,,true,
+2985,這,"pełzanie
+raczkowanie
+czołganie się
+rozciągać się (o winorośli)",,,true,"Kanji: 這
+Meaning: crawl
+Meaning: creep
+Meaning: grovel
+Meaning: trail (vines)"
 2986,皰,"pryszcz
 krosta
 wyprysk",,,true,"Kanji: 皰
@@ -11940,9 +11967,11 @@ skręcenie
 obrót
 skrzywienie",,,true,
 3084,楓,klon,,,true,
-3085,腔,"dziura w ciele
+3085,腔,"jama w ciele
+dziura w ciele
 otwór w ciele
-wnęka w ciele",,,true,
+wnęka w ciele",,,true,"Kanji: 腔
+Meaning: body cavity"
 3086,虱,"wesz
 wsza
 robak
@@ -12500,12 +12529,15 @@ kolcobrzuchowate (rodzina ryb głównie morskich)",,,false,
 3241,鯸,rozdymkowate,gatunek ryb,,false,
 3242,鯺,rozdymkowate,gatunek ryb,,false,
 3243,麩,lekko pszenny glutaminowy chleb,,,true,
-3244,倩,"uważnie
+3244,倩,"ostrożnie
+starannie
+uważnie
 bacznie
 troskliwie
-ostrożnie
-starannie
-dokładnie",,,true,
+dokładnie",,,true,"Kanji: 倩
+Meaning: carefully
+Meaning: attentively
+Meaning: profoundly"
 3245,姥,stara kobieta,,,true,
 3246,抓,"cisnąć
 ściskać
@@ -18411,10 +18443,8 @@ wielki
 wspaniały",,,true,"Kanji: 鉅
 Meaning: big
 Meaning: great"
-5000,鉗,"zamknąć
-zamykać
-przymknąć
-uciszać",,,true,
+5000,鉗,zamykanie,,,true,"Kanji: 鉗
+Meaning: shut up"
 5001,鉚,złoto,,,true,
 5002,鎹,"zacisk
 klamra
@@ -29216,7 +29246,8 @@ Meaning: to injure"
 sakralny",,,false,
 9655,圥,grzyb,,,false,
 9656,鮆,ryba,,,false,
-9657,囅,uśmiech,,,false,
+9657,囅,uśmiech,,,false,"Kanji: 囅
+Meaning: smile"
 9658,鮀,żmijogłowowate,rodzina drapieżnych ryb okoniokształtnych,,false,
 9659,囌,"gadatliwy
 wielomówny
@@ -29869,7 +29900,9 @@ wulgarna osoba
 prostacka osoba",,,false,
 9838,傒,"osobiste imię
 służący
-sługa",,,false,
+sługa",,,false,"Kanji: 傒
+Meaning: personal name
+Meaning: servant"
 9839,僨,"obalić
 obalać
 przewracać
@@ -30494,10 +30527,12 @@ chaotyczny",,,false,
 trud
 znój
 harówka",,,false,
-10005,龥,"apelować o pomoc
-błagać
-prosić
-ubłagać",,,false,
+10005,龥,"błaganie
+proszenie
+ubłaganie
+apelować o pomoc",,,false,"Kanji: 龥
+Meaning: beg
+Meaning: appeal for help"
 10006,龠,"flet
 rowek
 żłobek",,,false,
@@ -35661,8 +35696,11 @@ element, na którym drzwi obracają się",,,false,"Kanji: 椳
 Meaning: the pivots
 Meaning: at the top and bottom of a Chinese door
 Meaning: on which the door turns"
-11428,椸,"stojak
-wieszak",,,false,
+11428,椸,"półka
+regał
+stojak
+wieszak",,,false,"Kanji: 椸
+Meaning: rack"
 11429,槎,"ukośne cięcie
 tratwa
 spław",,,false,
@@ -37742,7 +37780,8 @@ gęsty",,,false,
 12049,穭,dzikie ziarno,,,false,
 12050,穩,"spokój
 cisza
-uspokojenie",,,false,
+uspokojenie",,,false,"Kanji: 穩
+Meaning: calm"
 12051,穪,"chwalić
 wychwalać
 zachwalać",,,false,
@@ -38259,7 +38298,11 @@ Meaning: minced meat or fish"
 12223,蚝,-,,,false,
 12224,蛦,-,,,false,Kanji: 蛦
 12225,蝑,-,,,false,Kanji: 蝑
-12226,蝼,-,,,false,
+12226,蝼,"turkuciowate
+turkucie
+gryllotalpa africana",,,false,"Kanji: 蝼
+Meaning: a mole cricket
+Meaning: Gryllotalpa africana"
 12227,蟥,pijawka,,,false,"Kanji: 蟥
 Meaning: leech"
 12228,蟦,-,,,false,Kanji: 蟦
@@ -38850,7 +38893,14 @@ Meaning: strong and soft
 Meaning: pliable yet tough"
 12717,䐈,-,,,false,
 12718,䐗,-,,,false,
-12719,䐜,-,,,false,
+12719,䐜,"nabrzmiały brzuch
+opuchnięty
+powiększony
+nadęty",,,false,"Kanji: 䐜
+Meaning: a swelled belly
+Meaning: drop-sical
+Meaning: to swell
+Meaning: inflated"
 12720,䐢,-,,,false,
 12721,䑓,-,,,false,
 12722,䑛,-,,,false,
