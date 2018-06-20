@@ -128,6 +128,14 @@ public class KanjiDic2Reader {
         		freq = Integer.parseInt(freqElement.getText());
         	}
         	
+        	Element gradeElement = (Element)currentCharacterAsElement.selectSingleNode("misc/grade");
+        	
+        	Integer jouyouGrade = null;
+        	
+        	if (gradeElement != null) {
+        		jouyouGrade = Integer.parseInt(gradeElement.getText());
+        	}        	
+        	        	
         	KanjiDic2EntryForDictionary kanjiDic2Entry = new KanjiDic2EntryForDictionary();
         	
         	kanjiDic2Entry.setKanji(kanji);
@@ -165,6 +173,7 @@ public class KanjiDic2Reader {
         	
         	kanjiDic2Entry.setJlpt(jlpt);
         	kanjiDic2Entry.setFreq(freq);
+        	kanjiDic2Entry.setJouyouGrade(jouyouGrade);
         	
         	result.put(kanji, kanjiDic2Entry);
 		}
