@@ -487,35 +487,42 @@ public class Helper {
 		Iterator<List<JMEDictEntry>> jmedictNameValuesIterator = jmedictName.values().iterator();
 
 		/*
-		- company -
-		- product -
-		- organization -
+		company
+		product
+		organization
 		
-		+ fem +
-		+ given +
-		+ masc +		
-		+ person +
-		+ place +		
-		+ station +
-		+ surname +
-		+ unclass +
+		+ fem
+		given
+		masc		
+		person
+		place		
+		station
+		surname
+		unclass
+		work
+		
 		*/
 
 		// mapowanie typow
 		Map<String, DictionaryEntryType> nameTypeMapper = new HashMap<String, DictionaryEntryType>();
 		
 		nameTypeMapper.put("fem", DictionaryEntryType.WORD_FEMALE_NAME);
-		nameTypeMapper.put("masc", DictionaryEntryType.WORD_MALE_NAME);
-		nameTypeMapper.put("given", DictionaryEntryType.WORD_NAME);
-		nameTypeMapper.put("surname", DictionaryEntryType.WORD_SURNAME_NAME);
-		nameTypeMapper.put("person", DictionaryEntryType.WORD_PERSON);		
-		nameTypeMapper.put("station", DictionaryEntryType.WORD_STATION_NAME);
-		nameTypeMapper.put("place", DictionaryEntryType.WORD_PLACE);		
 		nameTypeMapper.put("unclass", DictionaryEntryType.WORD_UNCLASS_NAME);
-		
+		nameTypeMapper.put("place", DictionaryEntryType.WORD_PLACE);
+		nameTypeMapper.put("given", DictionaryEntryType.WORD_NAME);
 		nameTypeMapper.put("company", DictionaryEntryType.WORD_COMPANY_NAME);
+		nameTypeMapper.put("work", DictionaryEntryType.WORD_WORK);
+		nameTypeMapper.put("masc", DictionaryEntryType.WORD_MALE_NAME);
+		nameTypeMapper.put("person", DictionaryEntryType.WORD_PERSON);
+		nameTypeMapper.put("surname", DictionaryEntryType.WORD_SURNAME_NAME);
 		nameTypeMapper.put("product", DictionaryEntryType.WORD_PRODUCT_NAME);
 		nameTypeMapper.put("organization", DictionaryEntryType.WORD_ORGANIZATION_NAME);
+		nameTypeMapper.put("station", DictionaryEntryType.WORD_STATION_NAME);
+		
+		// informacje wygenerowane automatycznie !!!!!!!!!!!!!!!!!!11
+		// WORD_COMPANY_NAME
+		// WORD_PLACE
+		// albo wszystkie !!!!!!!!!!!!!!!!!!!!!!!
 		
 		int counter = 1;
 
@@ -527,10 +534,7 @@ public class Helper {
 
 			for (JMEDictEntry jmedictEntry : jmedictValueList) {
 				
-				if (jmedictEntry.getTrans().size() == 0) {
-					continue;
-				}
-								
+				// zamiana typow na nasze
 				List<DictionaryEntryType> nameDictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
 				
 				for (String currentTran : jmedictEntry.getTrans()) {
@@ -538,28 +542,33 @@ public class Helper {
 					DictionaryEntryType nameDictionaryEntryType = nameTypeMapper.get(currentTran);
 					
 					if (nameDictionaryEntryType == null) {
-						continue;
+						throw new RuntimeException("Unknown name type: " + currentTran);
 					}
 					
 					if (nameDictionaryEntryTypeList.contains(nameDictionaryEntryType) == false) {
 						nameDictionaryEntryTypeList.add(nameDictionaryEntryType);
 					}					
 				}
-				
+
 				if (nameDictionaryEntryTypeList.size() == 0) {
-					continue;
+					nameDictionaryEntryTypeList.add(DictionaryEntryType.WORD_EMPTY); 
 				}
 				
-				if (nameDictionaryEntryTypeList.contains(DictionaryEntryType.WORD_PERSON) == true) {
-					
-					nameDictionaryEntryTypeList.remove(DictionaryEntryType.WORD_FEMALE_NAME);					
-				}
+				//
+				
+				int fixme = 1; // !!!!!!!!!!!!!!!!!!!!!!!!1
+				
+				if (nameDictionaryEntryTypeList.contains(DictionaryEntryType.WORD_FEMALE_NAME) == false) {
+					continue;
+				}				
+				
+				//
 				
 				for (int idx = 0; idx < jmedictEntry.getKana().size(); ++idx) {
 					
 					String kanji = null;
 					
-					if (jmedictEntry.getKanji().size() > idx) {
+					if (idx < jmedictEntry.getKanji().size()) {
 						kanji = jmedictEntry.getKanji().get(idx);
 					}
 					
@@ -567,8 +576,10 @@ public class Helper {
 					
 					List<String> transDetList = jmedictEntry.getTransDet();					
 					
-					//System.out.println(kanji + " - " + kana + " - " + transDet);
-					
+					String romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true));
+
+					//
+										
 					PolishJapaneseEntry newPolishJapaneseEntry = new PolishJapaneseEntry();
 					
 					newPolishJapaneseEntry.setId(counter);
@@ -580,25 +591,17 @@ public class Helper {
 					
 					newPolishJapaneseEntry.setAttributeList(new AttributeList());
 					newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
-
 					newPolishJapaneseEntry.setKanji(kanji != null ? kanji : "-");
-
 					newPolishJapaneseEntry.setKana(kana);
-
-					String romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true));
-
 					newPolishJapaneseEntry.setRomaji(romaji);
-
 					newPolishJapaneseEntry.setTranslates(transDetList);
-
 					newPolishJapaneseEntry.setParseAdditionalInfoList(new ArrayList<ParseAdditionalInfo>());
-
-					//newPolishJapaneseEntry.setUseEntry(true);
-
 					newPolishJapaneseEntry.setExampleSentenceGroupIdsList(new ArrayList<String>());
 					
-					fixPolishJapaneseEntryName(newPolishJapaneseEntry);
+					newPolishJapaneseEntry.setInfo("pozycja wygenerowana automatycznie");
 					
+					fixPolishJapaneseEntryName(newPolishJapaneseEntry);
+										
 					result.add(newPolishJapaneseEntry);
 				}
 			}
@@ -620,6 +623,9 @@ public class Helper {
 			newPolishJapaneseEntry.setRomaji(fixRomajiForNames(romaji, translate));			
 		}
 		
+		// fixme !!!!!!!!!!!1
+		int fixme = 1;
+		/*
 		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_STATION_NAME) {
 			
 			String translate = newPolishJapaneseEntry.getTranslates().get(0);
@@ -631,6 +637,7 @@ public class Helper {
 			
 			newPolishJapaneseEntry.setTranslates(newTranslateList);
 		}
+		*/
 	}
 
 	private static String fixRomajiForNames(String romaji, String transDet) {
