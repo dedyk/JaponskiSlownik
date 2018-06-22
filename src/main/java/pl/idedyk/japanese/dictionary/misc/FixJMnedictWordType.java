@@ -1,20 +1,10 @@
 package pl.idedyk.japanese.dictionary.misc;
 
-import java.io.File;
-import java.io.FileFilter;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
-
-import pl.idedyk.japanese.dictionary.common.Helper;
-import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
-
 public class FixJMnedictWordType {
 
 	public static void main(String[] args) throws Exception {
+		
+		/*
 		
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
@@ -42,20 +32,23 @@ public class FixJMnedictWordType {
 				
 				List<PolishJapaneseEntry> currentNameFilePolishJapaneseEntryList = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { currentNameFile.getAbsolutePath() });
 				
-				/*
+				/ *
 				for (PolishJapaneseEntry currentPolishJapaneseEntry : currentNameFilePolishJapaneseEntryList) {
 					
 					String key = getKey(currentPolishJapaneseEntry);
 					
 					currentPolishJapaneseEntry.setDictionaryEntryTypeList(allPolishJapaneseEntryListMap.get(key).getDictionaryEntryTypeList());					
-				} */
+				} * /
 				
 				CsvReaderWriter.generateCsv(new String[] { currentNameFile.getAbsolutePath() }, currentNameFilePolishJapaneseEntryList, true, false, true, false, null);
 			}
-		}		
+		}	
+		 */
 	}
 	
+	/*
 	private static String getKey(PolishJapaneseEntry polishJapaneseEntry) {
 		return polishJapaneseEntry.getKanji() + "." + polishJapaneseEntry.getKana() + "." + polishJapaneseEntry.getRomaji();
 	}
+	*/
 }

@@ -90,7 +90,7 @@ public class AndroidDictionaryGenerator {
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmeNewNameDictionary,
 				new String[] { "input/word01.csv", "input/word02.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word-power.csv",
 				"output/transitive_intransitive_pairs.csv"); //, "output/word_group.csv");
-		
+				
 		generateKanaEntries(kanjivgEntryMap, "output/kana.csv");
 
 		generateKanjiRadical("../JapaneseDictionary_additional/radkfile", "output/radical.csv");
@@ -102,6 +102,8 @@ public class AndroidDictionaryGenerator {
 				"output/kanji.csv");
 
 		if (fullMode == true) {
+			
+			generateNamePolishJapaneseEntries(jmeNewNameDictionary, "output/names.csv");
 		
 			generateZinniaTomoeSlimBinaryFile(kanjiEntries, kanjivgSingleXmlFile, "output/kanjivgTomoeFile.xml",
 					"../JapaneseDictionary_additional/zinnia-0.06-app/bin/zinnia_learn",
@@ -902,5 +904,45 @@ public class AndroidDictionaryGenerator {
 		new File(outputDir, "dictionary.tex").delete();
 		new File(outputDir, "dictionary_entries.tex").delete();
 		new File(outputDir, "dictionary.out").delete();
+	}
+	
+	private static void generateNamePolishJapaneseEntries(JMENewDictionary jmeNewNameDictionary, String output) throws IOException {
+		
+		System.out.println("generateNamePolishJapaneseEntries");
+		
+		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(jmeNewNameDictionary);
+		
+		//
+		
+		int id = 1;
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : generatedNames) {
+			polishJapaneseEntry.setId(id);
+			
+			id++;
+		}
+		
+		final int maxPos = 300000;
+		
+		int counter = 1;
+				
+		List<PolishJapaneseEntry> partialPolishJapaneseEntryList = new ArrayList<PolishJapaneseEntry>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : generatedNames) {
+			
+			partialPolishJapaneseEntryList.add(polishJapaneseEntry);
+
+			if (partialPolishJapaneseEntryList.size() >= maxPos) {				
+				CsvReaderWriter.generateCsv(new String[] { output + "_" + counter }, partialPolishJapaneseEntryList, true, false, true, false, null);
+				
+				partialPolishJapaneseEntryList.clear();
+				
+				counter++;
+			}			
+		}
+		
+		if (partialPolishJapaneseEntryList.size() > 0) {
+			CsvReaderWriter.generateCsv(new String[] { output + "_" + counter }, partialPolishJapaneseEntryList, true, false, true, false, null);
+		}
 	}
 }

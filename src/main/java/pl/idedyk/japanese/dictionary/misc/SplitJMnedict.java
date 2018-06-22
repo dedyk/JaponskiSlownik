@@ -1,20 +1,10 @@
 package pl.idedyk.japanese.dictionary.misc;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.TreeMap;
-
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.common.Helper;
-import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
-
 public class SplitJMnedict {
 
 	public static void main(String[] args) throws Exception {
+		
+		/*
 		
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
@@ -46,6 +36,7 @@ public class SplitJMnedict {
 			List<PolishJapaneseEntry> dictionaryEntryTypeList = groupedPolishJapaneseEntryList.get(dictionaryEntryType);
 			
 			CsvReaderWriter.generateCsv(new String[] { "input_names3/" + dictionaryEntryType + ".csv" }, dictionaryEntryTypeList, true, false, true, false, null);		
-		}		
+		}	
+		*/	
 	}
 }

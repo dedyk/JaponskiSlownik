@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
@@ -47,7 +46,6 @@ import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
-import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
@@ -480,26 +478,24 @@ public class Helper {
 		return foundEdict;
 	}
 
-	public static List<PolishJapaneseEntry> generateNames(TreeMap<String, List<JMEDictEntry>> jmedictName) {
+	public static List<PolishJapaneseEntry> generateNames(JMENewDictionary jmeNewDictionary) {
 
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
-		Iterator<List<JMEDictEntry>> jmedictNameValuesIterator = jmedictName.values().iterator();
-
 		/*
-		company
-		product
-		organization
+		+ company
+		+ product
+		+ organization
 		
 		+ fem
-		given
-		masc		
-		person
-		place		
-		station
-		surname
-		unclass
-		work
+		+ given
+		+ masc		
+		+ person
+		+ place		
+		+ station
+		+ surname
+		+ unclass
+		+ work
 		
 		*/
 
@@ -528,21 +524,23 @@ public class Helper {
 
 		KanaHelper kanaHelper = new KanaHelper();
 		
-		while(jmedictNameValuesIterator.hasNext()) {
+		for (Group group : jmeNewDictionary.getGroupList()) {
 			
-			List<JMEDictEntry> jmedictValueList = jmedictNameValuesIterator.next();
-
-			for (JMEDictEntry jmedictEntry : jmedictValueList) {
+			List<GroupEntry> groupEntryList = group.getGroupEntryList();
+			
+			for (GroupEntry groupEntry : groupEntryList) {
 				
 				// zamiana typow na nasze
 				List<DictionaryEntryType> nameDictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
 				
-				for (String currentTran : jmedictEntry.getTrans()) {
+				Set<String> wordTypeList = groupEntry.getWordTypeList();
+				
+				for (String wordType : wordTypeList) {
 					
-					DictionaryEntryType nameDictionaryEntryType = nameTypeMapper.get(currentTran);
+					DictionaryEntryType nameDictionaryEntryType = nameTypeMapper.get(wordType);
 					
 					if (nameDictionaryEntryType == null) {
-						throw new RuntimeException("Unknown name type: " + currentTran);
+						throw new RuntimeException("Unknown name type: " + wordType);
 					}
 					
 					if (nameDictionaryEntryTypeList.contains(nameDictionaryEntryType) == false) {
@@ -554,57 +552,49 @@ public class Helper {
 					nameDictionaryEntryTypeList.add(DictionaryEntryType.WORD_EMPTY); 
 				}
 				
-				//
+				String kanji = groupEntry.getKanji();
 				
-				int fixme = 1; // !!!!!!!!!!!!!!!!!!!!!!!!1
-				
-				if (nameDictionaryEntryTypeList.contains(DictionaryEntryType.WORD_FEMALE_NAME) == false) {
-					continue;
-				}				
-				
-				//
-				
-				for (int idx = 0; idx < jmedictEntry.getKana().size(); ++idx) {
-					
-					String kanji = null;
-					
-					if (idx < jmedictEntry.getKanji().size()) {
-						kanji = jmedictEntry.getKanji().get(idx);
-					}
-					
-					String kana = jmedictEntry.getKana().get(idx);
-					
-					List<String> transDetList = jmedictEntry.getTransDet();					
-					
-					String romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true));
-
-					//
-										
-					PolishJapaneseEntry newPolishJapaneseEntry = new PolishJapaneseEntry();
-					
-					newPolishJapaneseEntry.setId(counter);
-					counter++;
-					
-					newPolishJapaneseEntry.setDictionaryEntryTypeList(nameDictionaryEntryTypeList);
-					
-					newPolishJapaneseEntry.setWordType(WordType.HIRAGANA_KATAKANA);
-					
-					newPolishJapaneseEntry.setAttributeList(new AttributeList());
-					newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
-					newPolishJapaneseEntry.setKanji(kanji != null ? kanji : "-");
-					newPolishJapaneseEntry.setKana(kana);
-					newPolishJapaneseEntry.setRomaji(romaji);
-					newPolishJapaneseEntry.setTranslates(transDetList);
-					newPolishJapaneseEntry.setParseAdditionalInfoList(new ArrayList<ParseAdditionalInfo>());
-					newPolishJapaneseEntry.setExampleSentenceGroupIdsList(new ArrayList<String>());
-					
-					newPolishJapaneseEntry.setInfo("pozycja wygenerowana automatycznie");
-					
-					fixPolishJapaneseEntryName(newPolishJapaneseEntry);
-										
-					result.add(newPolishJapaneseEntry);
+				if (kanji == null || kanji.equals("") == true) {
+					kanji = "-";
 				}
+								
+				String kana = groupEntry.getKana();
+								
+				String romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true));
+
+				List<GroupEntryTranslate> groupEntryTranslateList = groupEntry.getTranslateList();
+				
+				List<String> newPolishJapaneseEntryTranslates = new ArrayList<String>();
+				
+				for (GroupEntryTranslate groupEntryTranslate : groupEntryTranslateList) {
+					newPolishJapaneseEntryTranslates.add(groupEntryTranslate.getTranslate());
+				}
+				
+				//
+									
+				PolishJapaneseEntry newPolishJapaneseEntry = new PolishJapaneseEntry();
+				
+				newPolishJapaneseEntry.setId(counter);
+				counter++;
+				
+				newPolishJapaneseEntry.setDictionaryEntryTypeList(nameDictionaryEntryTypeList);
+				
+				newPolishJapaneseEntry.setWordType(WordType.HIRAGANA_KATAKANA);
+				
+				newPolishJapaneseEntry.setAttributeList(new AttributeList());
+				newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
+				newPolishJapaneseEntry.setKanji(kanji != null ? kanji : "-");
+				newPolishJapaneseEntry.setKana(kana);
+				newPolishJapaneseEntry.setRomaji(romaji);
+				newPolishJapaneseEntry.setTranslates(newPolishJapaneseEntryTranslates);
+				newPolishJapaneseEntry.setParseAdditionalInfoList(new ArrayList<ParseAdditionalInfo>());
+				newPolishJapaneseEntry.setExampleSentenceGroupIdsList(new ArrayList<String>());
+				
+				fixPolishJapaneseEntryName(newPolishJapaneseEntry);
+									
+				result.add(newPolishJapaneseEntry);
 			}
+			
 		}
 		
 		return result;
@@ -623,11 +613,9 @@ public class Helper {
 			newPolishJapaneseEntry.setRomaji(fixRomajiForNames(romaji, translate));			
 		}
 		
-		// fixme !!!!!!!!!!!1
-		int fixme = 1;
-		/*
 		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_STATION_NAME) {
 			
+			/*
 			String translate = newPolishJapaneseEntry.getTranslates().get(0);
 			
 			translate = translate.replaceAll("Station", "(nazwa stacji)");
@@ -636,8 +624,16 @@ public class Helper {
 			newTranslateList.add(translate);
 			
 			newPolishJapaneseEntry.setTranslates(newTranslateList);
+			*/
+			
+			String romaji = newPolishJapaneseEntry.getRomaji();
+			
+			if (romaji.endsWith("eki") == true) {
+				romaji = romaji.substring(0, romaji.length() - 3) + " eki";
+			}
+			
+			newPolishJapaneseEntry.setRomaji(romaji);
 		}
-		*/
 	}
 
 	private static String fixRomajiForNames(String romaji, String transDet) {

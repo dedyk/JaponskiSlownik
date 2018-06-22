@@ -1,19 +1,10 @@
 package pl.idedyk.japanese.dictionary.misc;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.TreeMap;
-
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.common.Helper;
-import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
-
 public class GenerateCompanyProductOrganizationNameList {
 	
 	public static void main(String[] args) throws Exception {
+		
+		/*
 		
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
@@ -61,5 +52,6 @@ public class GenerateCompanyProductOrganizationNameList {
 		CsvReaderWriter.generateCsv(new String[] { "input_names2/alreadyAddedCompanyName.csv" }, companyAddedCompanyProductOrganizationName, true, false, true, false, null);
 		CsvReaderWriter.generateCsv(new String[] { "input_names2/alreadyAddedProductName.csv" }, productAddedCompanyProductOrganizationName, true, false, true, false, null);
 		CsvReaderWriter.generateCsv(new String[] { "input_names2/alreadyAddedOrganizationName.csv" }, organizationAddedCompanyProductOrganizationName, true, false, true, false, null);
+		*/
 	}
 }
