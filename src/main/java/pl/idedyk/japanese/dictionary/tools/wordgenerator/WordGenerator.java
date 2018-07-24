@@ -326,7 +326,7 @@ public class WordGenerator {
 					
 					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
 
-					ScoreDoc[] scoreDocs = searcher.search(query, null, 30).scoreDocs;
+					ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
 					
 					if (scoreDocs.length > 0) {
 						
@@ -540,7 +540,7 @@ public class WordGenerator {
 					
 					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
 
-					ScoreDoc[] scoreDocs = searcher.search(query, null, 30).scoreDocs;
+					ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
 					
 					if (scoreDocs.length > 0) {
 												
@@ -650,7 +650,7 @@ public class WordGenerator {
 					
 					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
 
-					ScoreDoc[] scoreDocs = searcher.search(query, null, 30).scoreDocs;
+					ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
 					
 					if (scoreDocs.length > 0) {
 						
@@ -1566,7 +1566,7 @@ public class WordGenerator {
 
 					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
 
-					ScoreDoc[] scoreDocs = searcher.search(query, null, 30).scoreDocs;
+					ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
 					
 					if (scoreDocs.length > 0) {
 						
