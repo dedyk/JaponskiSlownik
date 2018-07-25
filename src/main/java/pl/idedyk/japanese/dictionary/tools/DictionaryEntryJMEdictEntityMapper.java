@@ -81,6 +81,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addMap(DictionaryEntryType.WORD_VERB_U, "v2t-s");
 		addMap(DictionaryEntryType.WORD_VERB_U, "v4m");
 		addMap(DictionaryEntryType.WORD_VERB_U, "v4k");
+		addMap(DictionaryEntryType.WORD_VERB_U, "v4g");
 		addMap(DictionaryEntryType.WORD_VERB_U, "v2n-s");
 		addMap(DictionaryEntryType.WORD_VERB_U, "v2y-s");
 		addMap(DictionaryEntryType.WORD_VERB_U, "v2m-s");
