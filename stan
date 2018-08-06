@@ -1,4 +1,4 @@
-kanji - 15
++ kanji - 15
 + word - 15
 25000 - 15
 small - 21
