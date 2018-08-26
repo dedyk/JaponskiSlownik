@@ -10,3 +10,6 @@ small2 - 10
 ludzie - 15
 -----------
 suma: 61
+
+-----
+sugestie - X
