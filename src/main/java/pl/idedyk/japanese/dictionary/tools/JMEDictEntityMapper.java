@@ -119,7 +119,7 @@ public class JMEDictEntityMapper {
 		addMap("vs", "noun or participle which takes the aux. verb suru");
 		addMap("vs-c", "su verb - precursor to the modern suru");
 		addMap("vs-s", "suru verb - special class");
-		addMap("vs-i", "suru verb - irregular");
+		addMap("vs-i", "suru verb - included");
 		addMap("kyb", "Kyoto-ben");
 		addMap("osb", "Osaka-ben");
 		addMap("ksb", "Kansai-ben");
