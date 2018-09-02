@@ -10,3 +10,7 @@ suma: 30
 ludzie - 15
 -----------
 suma: 61
+
+----
+sugestia - X
+
