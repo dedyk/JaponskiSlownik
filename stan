@@ -12,5 +12,5 @@ suma: 30
 suma: 61
 
 ----
-sugestia - X
++ sugestia - X
 
