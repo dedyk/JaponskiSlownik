@@ -1,4 +1,4 @@
-kanji - 20
++ kanji - 20
 word - 15
 ------------
 suma: 30
