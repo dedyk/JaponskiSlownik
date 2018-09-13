@@ -2197,7 +2197,7 @@ public class WordGenerator {
 				}
 				
 				// stworzenie watkow
-				GeneratePrefixWordListThread[] generatePrefixWordListThreads = new GeneratePrefixWordListThread[6];
+				GeneratePrefixWordListThread[] generatePrefixWordListThreads = new GeneratePrefixWordListThread[2];
 				
 				for (int idx = 0; idx < generatePrefixWordListThreads.length; ++idx) {
 					generatePrefixWordListThreads[idx] = new GeneratePrefixWordListThread();
