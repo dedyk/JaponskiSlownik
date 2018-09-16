@@ -1,5 +1,5 @@
 + kanji - 25
-word - 5
++ word - 5
 ------------
 suma: 30
 
