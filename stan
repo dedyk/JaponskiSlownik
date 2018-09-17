@@ -5,8 +5,8 @@ suma: 30
 
 ------------
 + 25000 - 20
-+ small - 10
++ small - 5
 + small2 - 5
-ludzie - 15
++ ludzie - 20
 -----------
 suma: 50
