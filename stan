@@ -1,12 +1,9 @@
-kanji - 25
-word - 5
++ kanji - 25
++ word - 5
 ------------
-suma: 30
-
-------------
-25000 - 20
-small - 5
-small2 - 5
-ludzie - 20
+25000 - 10
+small - 3
+small2 - 2
+ludzie - 15
 -----------
-suma: 50
+suma: 60
