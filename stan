@@ -7,5 +7,3 @@
 + ludzie - 15
 -----------
 suma: 65
-
-sugestia
