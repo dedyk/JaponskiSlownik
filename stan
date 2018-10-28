@@ -1,4 +1,4 @@
-kanji - 25 + 1
++ kanji - 25 + 2
 word - 5
 ----------
 25000 - 10
@@ -7,3 +7,5 @@ small2 - 5
 ludzie - 15
 -----------
 suma: 65
+
+sugestia
