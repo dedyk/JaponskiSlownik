@@ -1,4 +1,4 @@
-kanji - 25 + 25
++ kanji - 25 + 25
 + word - 5
 ----------
 * 25000 - 0
@@ -7,3 +7,5 @@ kanji - 25 + 25
 ludzie - 20
 -----------
 suma: 65
+
+sugestia
