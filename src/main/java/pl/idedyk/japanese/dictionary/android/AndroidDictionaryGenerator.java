@@ -341,6 +341,9 @@ public class AndroidDictionaryGenerator {
 
 		System.out.println("generateKanjiEntries: validateDuplicateKanjiEntriesList");
 		Validator.validateDuplicateKanjiEntriesList(kanjiEntries);
+		
+		System.out.println("generateKanjiEntries: validateDuplicateMeansKanjiEntriesList");
+		Validator.validateDuplicateMeansKanjiEntriesList(kanjiEntries);
 
 		System.out.println("generateKanjiEntries: generateAdditionalKanjiEntries");
 		generateAdditionalKanjiEntries(dictionary, kanjiEntries, readKanjiDic2, "input/osjp.csv", jmedictCommon);

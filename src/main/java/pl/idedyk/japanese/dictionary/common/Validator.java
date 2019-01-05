@@ -1107,6 +1107,30 @@ public class Validator {
 		}
 	}
 	
+	public static void validateDuplicateMeansKanjiEntriesList(List<KanjiEntryForDictionary> kanjiEntries)
+			throws DictionaryException {
+		
+		boolean wasDuplicateTranslateError = false;
+		
+		for (KanjiEntryForDictionary currentKanjiEntry : kanjiEntries) {
+			
+			List<String> translates = currentKanjiEntry.getPolishTranslates();
+			
+			Set<String> translatesSet = new TreeSet<String>(translates);
+			
+			if (translates.size() != translatesSet.size()) {
+				
+				wasDuplicateTranslateError = true;
+				
+				System.out.println("Duplicate translate: " + currentKanjiEntry + "\n");
+			}
+		}
+		
+		if (wasDuplicateTranslateError == true) {
+			throw new DictionaryException("Error");
+		}		
+	}
+	
 	public static void validateEdictGroup(JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
 		
 		boolean validateResult = true;

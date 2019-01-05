@@ -1,20 +1,15 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
-import java.util.TreeSet;
 
-import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
 public class Test3 {
@@ -28,8 +23,9 @@ public class Test3 {
 		Map<String, KanjiDic2EntryForDictionary> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2("../JapaneseDictionary_additional/kanjidic2.xml", kradFileMap);
 
 		System.out.println("generateKanjiEntries: parseKanjiEntriesFromCsv");
-		List<KanjiEntryForDictionary> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv("input/kanji.csv", readKanjiDic2, true);
+		List<KanjiEntryForDictionary> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv("input/kanji.csv", readKanjiDic2, false);
 		
+		/*
 		System.out.println("jmedictName");
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
@@ -85,8 +81,26 @@ public class Test3 {
 				System.out.println(kanjiChar);
 			}
 		}
+		*/
+		
+		// Validator.validateDuplicateMeansKanjiEntriesList(kanjiEntries);
+		
+		for (KanjiEntryForDictionary kanjiEntryForDictionary : kanjiEntries) {
+			
+			List<String> polishTranslates = kanjiEntryForDictionary.getPolishTranslates();
+			
+			polishTranslates = new ArrayList<String>(new LinkedHashSet<String>(polishTranslates));
+			
+			kanjiEntryForDictionary.setPolishTranslates(polishTranslates);			
+		}
+		
+		FileOutputStream outputStream = new FileOutputStream(new File("input/kanji-wynik.csv"));
+		
+		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, false, null);
+
 	}
 	
+	/*
 	private static void processJMEDict(Set<Character> alreadyKanjiSet, final Map<Character, Integer> charCounter, TreeMap<String, List<JMEDictEntry>> jmedict) throws Exception {
 		
 		Collection<List<JMEDictEntry>> values = jmedict.values();
@@ -119,4 +133,5 @@ public class Test3 {
 	private static boolean isKanji(Character c) {		
 		return (c>=0x4e00 && c<0xa000) || c == '\u3005';		
 	}
+	*/
 }
