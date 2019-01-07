@@ -1,9 +1,7 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -85,6 +83,7 @@ public class Test3 {
 		
 		// Validator.validateDuplicateMeansKanjiEntriesList(kanjiEntries);
 		
+		/*
 		for (KanjiEntryForDictionary kanjiEntryForDictionary : kanjiEntries) {
 			
 			List<String> polishTranslates = kanjiEntryForDictionary.getPolishTranslates();
@@ -97,7 +96,24 @@ public class Test3 {
 		FileOutputStream outputStream = new FileOutputStream(new File("input/kanji-wynik.csv"));
 		
 		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, false, null);
-
+		*/
+		
+		/*
+		List<String> kanjiDic2KanjiList = new ArrayList<>(readKanjiDic2.keySet());
+		
+		*/
+		
+		List<String> kanjiList = new ArrayList<>();
+		
+		for (KanjiEntryForDictionary kanjiEntryForDictionary : kanjiEntries) {
+			kanjiList.add(kanjiEntryForDictionary.getKanji());
+		}
+		
+		Collections.sort(kanjiList);
+		
+		for (String kanji : kanjiList) {
+			System.out.println(kanji);
+		}
 	}
 	
 	/*

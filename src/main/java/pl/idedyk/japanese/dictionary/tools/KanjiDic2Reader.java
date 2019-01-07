@@ -80,7 +80,7 @@ public class KanjiDic2Reader {
 		
 		createRadicalToCorrectRadicalMapIfNeeded();
 		
-		Map<String, KanjiDic2EntryForDictionary> result = new HashMap<String, KanjiDic2EntryForDictionary>();
+		Map<String, KanjiDic2EntryForDictionary> result = new TreeMap<String, KanjiDic2EntryForDictionary>();
 		
 		SAXReader reader = new SAXReader();
 		
