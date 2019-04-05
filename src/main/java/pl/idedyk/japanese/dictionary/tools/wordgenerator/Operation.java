@@ -34,6 +34,8 @@ public enum Operation {
 	
 	SHOW_ALREADY_ADD_COMMON_WORDS("show-already-add-common-words", "Pokazuje common'owe słowa, które są już dodane do słownika"),
 	
+	SHOW_EMPTY_COMMON_WORDS("show-empty-common-words", "Pokazuje identyfikatory common'owych słów, które już nie istnieją"),
+	
 	SHOW_MISSING_PRIORITY_WORDS("show-missing-priority-words", "Generuje brakujące słowa priorytetowe z grup jmedict"),
 	
 	SHOW_SIMILAR_RELATED_WORDS("show-similar-related-words", "Pokazuje podobne słowa"),

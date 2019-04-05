@@ -3652,6 +3652,40 @@ public class WordGenerator {
 				break;
 			}
 			
+			case SHOW_EMPTY_COMMON_WORDS: {
+				
+				// czytanie common'owego pliku
+				Map<Integer, CommonWord> commonWordMap = wordGeneratorHelper.getCommonWordMap();
+				
+				// przegladanie listy common'owych plikow i sprawdzanie, czy nie jest juz dodany
+				Collection<CommonWord> commonWordValues = commonWordMap.values();
+				
+				// przygotowywane slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				
+				Iterator<CommonWord> commonWordValuesIterator = commonWordValues.iterator();
+								
+				while (commonWordValuesIterator.hasNext() == true) {
+					
+					CommonWord currentCommonWord = commonWordValuesIterator.next();
+					
+					if (currentCommonWord.isDone() == false) {
+
+						String commonKanji = currentCommonWord.getKanji();
+						String commonKana = currentCommonWord.getKana();
+						
+						List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(commonKanji, commonKana);
+
+						if (groupEntryList == null || groupEntryList.size() == 0) {
+							System.out.println(currentCommonWord.getId());
+						}						
+					}
+				}
+				
+				
+				break;
+			}
+			
 			case HELP: {
 				
 				// pobranie listy mozliwych operacji
