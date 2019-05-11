@@ -5,6 +5,8 @@
 +++50000 - 20
 +++small - 5
 +++small2 - 5
-___ludzie - 20
++__ludzie - 20
 -----------
 suma: 65
+
+sugestia
