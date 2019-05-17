@@ -8,3 +8,5 @@
 ludzie - 20
 -----------
 suma: 65
+
+sugestia
