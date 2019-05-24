@@ -91,7 +91,7 @@ public class Test5 {
 		}
 		*/
 		
-		//List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
+		//List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
 		
 		/*
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true);
@@ -139,7 +139,7 @@ public class Test5 {
 		*/
 		
 		/*
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
 		
 		List<DictionaryEntryGroup> generateWordGroupList = AndroidDictionaryGenerator.generateWordGroups(polishJapaneseEntries);
 		for (DictionaryEntryGroup dictionaryEntryGroup : generateWordGroupList) {
@@ -153,7 +153,7 @@ public class Test5 {
 		CsvReaderWriter.generateWordGroupCsv(outputStream, generateWordGroupList);
 		*/
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
 		
 		/*
 		for (int i = 0; i < 50; ++i) {

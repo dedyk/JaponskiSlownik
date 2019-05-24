@@ -18,7 +18,7 @@ public class Test2 {
 
 		/*
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
-				.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv" });
+				.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
 
 		List<ResultItem> resultItemList = new ArrayList<ResultItem>();
 
