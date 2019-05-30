@@ -3,8 +3,8 @@
 + word - 15
 ----------
 + 50000 - 20
-small - 5
-small2 - 5
-ludzie - 20
++ small - 5
++ small2 - 5
+ludzie - 25
 -----------
-suma: 65
+suma: 70
