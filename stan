@@ -2,9 +2,11 @@
 ----------
 + word - 15
 ----------
-50000 - 20
-small - 5
-small2 - 5
-ludzie - 25
++ 50000 - 20
++ small - 5
++ small2 - 5
++ ludzie - 25
 -----------
 suma: 70
+
+sugestia
