@@ -17,6 +17,7 @@ import org.apache.lucene.store.Directory;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 
@@ -53,81 +54,124 @@ public class JMEDictSearcher {
 
 		while (true) {
 
-			System.out.print("Szukane słowo: ");
+			System.out.print("Szukane słowo lub numer grupy (format: grupa: [numer]): ");
 
 			String searchWord = consoleReader.readLine();
 
+			if (searchWord == null || searchWord.equals("koniec") == true) {
+				break;
+			}
+			
 			if (searchWord.equals("") == true) {
 				continue;
 			}
 			
-			if (searchWord.equals("koniec") == true) {
-				break;
-			}
-
-			Query query = Helper.createLuceneDictionaryIndexTermQuery(searchWord);
-
-			ScoreDoc[] scoreDocs = searcher.search(query, null, 30).scoreDocs;
-
-			System.out.println("=========================\n");
-			
-			for (ScoreDoc scoreDoc : scoreDocs) {
-
-				Document foundDocument = searcher.doc(scoreDoc.doc);
-
-				GroupEntry groupEntry = Helper.createGroupEntry(foundDocument);
-
-				Set<String> wordTypeList = groupEntry.getWordTypeList();
-
-				String kanji = groupEntry.getKanji();
-				List<String> kanjiInfoList = groupEntry.getKanjiInfoList();
-
-				String kana = groupEntry.getKana();
-				List<String> kanaInfoList = groupEntry.getKanaInfoList();
-
-				String romaji = groupEntry.getRomaji();
-
-				List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();			
-				List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
-
-				System.out.println("Czytanie:\n\t\t\t" + kanji + " - " + kana + " - " + romaji);
-
-				System.out.println("Rodzaj słowa:");
-
-				for (String currentWordTypeList : wordTypeList) {				
-					System.out.println("\t\t\t" + currentWordTypeList + " - " + entityMapper.getDesc(currentWordTypeList));				
+			if (searchWord.startsWith("grupa:") == true) {
+				
+				String groupNoString = searchWord.substring(6).trim();
+				
+				Integer groupNo;
+				
+				try {
+					groupNo = Integer.parseInt(groupNoString);
+					
+				} catch (NumberFormatException e) {
+					System.out.println("Niepoprawny numer grupy\n");
+					
+					continue;
 				}
-
-				System.out.println("Info do kanji:");
-
-				for (String currentKanjiInfo : kanjiInfoList) {				
-					System.out.println("\t\t\t" + currentKanjiInfo + " - " + entityMapper.getDesc(currentKanjiInfo));				
+				
+				Group group = jmeNewDictionary.getGroupById(groupNo);
+				
+				if (group == null) {
+					System.out.println("Brak grupy o podanym identyfikatorze");
+					
+					continue;
 				}
+				
+				System.out.println("=========================\n");
+				
+				List<GroupEntry> groupEntryList = group.getGroupEntryList();
+				
+				for (GroupEntry groupEntry : groupEntryList) {
+					printGroupEntry(entityMapper, groupEntry);
+				}				
+				
+			} else {
+				
+				Query query = Helper.createLuceneDictionaryIndexTermQuery(searchWord);
 
-				System.out.println("Info do kana:");
+				ScoreDoc[] scoreDocs = searcher.search(query, null, 30).scoreDocs;
 
-				for (String currentKanaInfo : kanaInfoList) {				
-					System.out.println("\t\t\t" + currentKanaInfo + " - " + entityMapper.getDesc(currentKanaInfo));				
+				System.out.println("=========================\n");
+				
+				for (ScoreDoc scoreDoc : scoreDocs) {
+
+					Document foundDocument = searcher.doc(scoreDoc.doc);
+
+					GroupEntry groupEntry = Helper.createGroupEntry(foundDocument);
+					
+					printGroupEntry(entityMapper, groupEntry);
 				}
-
-				System.out.println("Tłumaczenie:");
-
-				for (GroupEntryTranslate groupEntryTranslate : translateList) {
-					System.out.println("\t\t\t" + groupEntryTranslate.getTranslate());
-				}
-
-				System.out.println("Dodatkowe informacje:\t");
-
-				for (String currentAdditionalInfo : additionalInfoList) {
-					System.out.println("\t\t\t" + currentAdditionalInfo);
-				}
-
-				System.out.println("\n---\n\n");
 			}
 		}
 
 		consoleReader.close();
 
 		reader.close();
+	}
+	
+	private static void printGroupEntry(JMEDictEntityMapper entityMapper, GroupEntry groupEntry) {
+		
+		Set<String> wordTypeList = groupEntry.getWordTypeList();
+
+		Integer groupEntryGroupId = groupEntry.getGroup().getId();
+		
+		String kanji = groupEntry.getKanji();
+		List<String> kanjiInfoList = groupEntry.getKanjiInfoList() != null ? groupEntry.getKanjiInfoList() : new ArrayList<String>();
+
+		String kana = groupEntry.getKana();
+		List<String> kanaInfoList = groupEntry.getKanaInfoList() != null ? groupEntry.getKanaInfoList() : new ArrayList<String>();
+
+		String romaji = groupEntry.getRomaji();
+
+		List<GroupEntryTranslate> translateList = groupEntry.getTranslateList() != null ? groupEntry.getTranslateList() : new ArrayList<GroupEntryTranslate>();
+		List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
+
+		System.out.println("Czytanie:\n\t\t\t" + kanji + " - " + kana + " - " + romaji);
+
+		System.out.println("Rodzaj słowa:");
+
+		for (String currentWordTypeList : wordTypeList) {				
+			System.out.println("\t\t\t" + currentWordTypeList + " - " + entityMapper.getDesc(currentWordTypeList));				
+		}
+
+		System.out.println("Info do kanji:");
+
+		for (String currentKanjiInfo : kanjiInfoList) {				
+			System.out.println("\t\t\t" + currentKanjiInfo + " - " + entityMapper.getDesc(currentKanjiInfo));				
+		}
+
+		System.out.println("Info do kana:");
+
+		for (String currentKanaInfo : kanaInfoList) {				
+			System.out.println("\t\t\t" + currentKanaInfo + " - " + entityMapper.getDesc(currentKanaInfo));				
+		}
+
+		System.out.println("Tłumaczenie:");
+
+		for (GroupEntryTranslate groupEntryTranslate : translateList) {
+			System.out.println("\t\t\t" + groupEntryTranslate.getTranslate());
+		}
+
+		System.out.println("Dodatkowe informacje:\t");
+
+		for (String currentAdditionalInfo : additionalInfoList) {
+			System.out.println("\t\t\t" + currentAdditionalInfo);
+		}
+		
+		System.out.println("Identyfikator grupy:\t" + groupEntryGroupId); 
+
+		System.out.println("\n---\n\n");		
 	}
 }
