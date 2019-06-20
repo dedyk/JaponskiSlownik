@@ -50,6 +50,8 @@ public enum Operation {
 	
 	FIND_KANJIS_WITH_KANJIDIC2_CHANGE("find-kanjis-with-kanjidic2-change", "Pokazuje słowa, które zmieniły swoje tłumaczenie w kanjidic2"),
 	
+	FILTER_WORD_LIST("filter-word-list", "Filtruje listę słów"),
+	
 	HELP("help", "Pokazuje pomoc");
 	
 	private String operation;

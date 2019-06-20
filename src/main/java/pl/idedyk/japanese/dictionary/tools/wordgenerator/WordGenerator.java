@@ -3686,6 +3686,108 @@ public class WordGenerator {
 				break;
 			}
 			
+			case FILTER_WORD_LIST: {
+				
+				CommandLineParser commandLineParser = new DefaultParser();
+				
+				//
+								
+				Boolean onlyKanji = null;
+				Boolean onlyKana = null;
+				Boolean onlyJapanese = null;
+				
+				String fileName = null;
+				
+				//
+				
+				Options options = new Options();
+				
+				options.addOption("okanji", "only-kanji", false, "Only kanji");
+				options.addOption("okana", "only-kana", false, "Only kana");
+				options.addOption("ojap", "only-japanese-words", false, "Only japanese words");
+				
+				options.addOption("f", "file", true, "Word list file name");
+				
+				options.addOption("h", "help", false, "Help");
+				
+				//
+				
+				CommandLine commandLine = null;
+				
+				try {
+					commandLine = commandLineParser.parse(options, args);
+					
+				} catch (UnrecognizedOptionException e) {
+					
+					System.out.println(e.getMessage() + "\n");
+					
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FILTER_WORD_LIST.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				if (commandLine.hasOption("help") == true) {
+
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FILTER_WORD_LIST.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				if (commandLine.hasOption("only-kanji") == true) {
+					onlyKanji = true;
+				}
+
+				if (commandLine.hasOption("only-kana") == true) {
+					onlyKana = true;
+				}
+
+				if (commandLine.hasOption("only-japanese-words") == true) {
+					onlyJapanese = true;
+				}
+				
+				if (commandLine.hasOption("file") == true) {					
+					fileName = commandLine.getOptionValue("file");					
+				}
+				
+				if (fileName == null || (onlyKanji == null && onlyKana == null && onlyJapanese == null)) {
+
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FILTER_WORD_LIST.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				List<String> fileList = readFile(fileName);
+				
+				for (String currentWord : fileList) {
+					
+					boolean isAdd = false;
+					
+					if (onlyJapanese != null && onlyJapanese.booleanValue() == true && Utils.isAllJapaneseChars(currentWord) == true) {
+						isAdd = true;
+					}
+					
+					if (onlyKanji != null && onlyKanji.booleanValue() == true && Utils.isAllKanjiChars(currentWord) == true) {
+						isAdd = true;
+					}
+					
+					if (onlyKana != null && onlyKana.booleanValue() == true && Utils.isAllKanaChars(currentWord) == true) {
+						isAdd = true;
+					}
+					
+					if (isAdd == true) {
+						System.out.println(currentWord);
+					}					
+				}				
+				
+				break;
+			}
+			
 			case HELP: {
 				
 				// pobranie listy mozliwych operacji
