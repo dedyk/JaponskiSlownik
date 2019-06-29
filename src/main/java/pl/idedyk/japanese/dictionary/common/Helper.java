@@ -889,37 +889,13 @@ public class Helper {
 			List<String> miscInfoList = groupEntryTranslate.getMiscInfoList();
 			List<String> additionalInfoList = groupEntryTranslate.getAdditionalInfoList();
 			
-			boolean wasMiscOrAdditionalInfo = false;
-			
-			for (int idx = 0; miscInfoList != null && idx < miscInfoList.size(); ++idx) {
-				
-				if (wasMiscOrAdditionalInfo == false) {
-					translate.append(" (");
-					
-					wasMiscOrAdditionalInfo = true;
-					
-				} else {
-					translate.append(", ");
-				}
-				
-				translate.append(jmEDictEntityMapper.getDesc(miscInfoList.get(idx)));
+			for (int idx = 0; additionalInfoList != null && idx < additionalInfoList.size(); ++idx) {				
+				translate.append("\n     " + additionalInfoList.get(0));
 			}
-			
-			for (int idx = 0; additionalInfoList != null && idx < additionalInfoList.size(); ++idx) {
-				
-				if (wasMiscOrAdditionalInfo == false) {
-					translate.append(" (");
-					
-					wasMiscOrAdditionalInfo = true;
-					
-				} else {
-					translate.append(", ");
-				}
-			}
-			
-			if (wasMiscOrAdditionalInfo == true) {
-				translate.append(")");
-			}
+						
+			for (int idx = 0; miscInfoList != null && idx < miscInfoList.size(); ++idx) {				
+				translate.append("\n     " + jmEDictEntityMapper.getDesc(miscInfoList.get(idx)));
+			}			
 			
 			translateList2.add(translate.toString());
 			
