@@ -536,6 +536,8 @@ public class JMENewDictionary {
 		
 		private List<String> additionalInfoList;
 		
+		private List<String> dialectList;
+		
 		public GroupEntryTranslate(GroupEntry groupEntry) {
 			this.groupEntry = groupEntry;
 		}
@@ -564,6 +566,14 @@ public class JMENewDictionary {
 			this.additionalInfoList = additionalInfoList;
 		}
 
+		public List<String> getDialectList() {
+			return dialectList;
+		}
+
+		public void setDialectList(List<String> dialectList) {
+			this.dialectList = dialectList;
+		}
+
 		public GroupEntry getGroupEntry() {
 			return groupEntry;
 		}
@@ -574,8 +584,9 @@ public class JMENewDictionary {
 
 		@Override
 		public String toString() {
-			return "GroupEntryTranslate [translate=" + translate + ", miscInfoList=" + miscInfoList
-					+ ", additionalInfoList=" + additionalInfoList + "]";
+			return "GroupEntryTranslate [translate=" + translate + ", miscInfoList="
+					+ miscInfoList + ", additionalInfoList=" + additionalInfoList + ", dialectList=" + dialectList
+					+ "]";
 		}
 		
 		public String fillJmedictRawData(List<String> result) {
@@ -600,6 +611,12 @@ public class JMENewDictionary {
 				for (String currentAdditionalInfo : additionalInfoList) {
 					result.add("AdditionalInfo: " + currentAdditionalInfo);
 				}
+			}
+			
+			if (dialectList != null && dialectList.size() > 0) {
+				for (String currentDialect : dialectList) {
+					result.add("Dialect: " + currentDialect);
+				}				
 			}
 			
 			return Helper.convertListToString(result);

@@ -716,6 +716,8 @@ public class JMEDictNewReader {
 			
 			List<String> xref = currentSense.getXref();
 
+			List<String> dial = currentSense.getDial();
+			
 			boolean isKanjiRestricted = true;
 			
 			if (stagk.size() == 0) {
@@ -758,6 +760,7 @@ public class JMEDictNewReader {
 				
 				List<String> miscInfoList = new ArrayList<String>();
 				List<String> additionalInfoList = new ArrayList<String>();
+				List<String> dialectList = new ArrayList<String>();
 				
 				for (String currentMisc : misc) {				
 					miscInfoList.add(currentMisc);
@@ -766,9 +769,14 @@ public class JMEDictNewReader {
 				for (String currentSInf : s_inf) {
 					additionalInfoList.add(currentSInf);
 				}
+				
+				for (String currentDialect : dial) {
+					dialectList.add(currentDialect);
+				}
 
 				groupEntryTranslate.setMiscInfoList(miscInfoList);
 				groupEntryTranslate.setAdditionalInfoList(additionalInfoList);
+				groupEntryTranslate.setDialectList(dialectList);
 				
 				translateList.add(groupEntryTranslate);
 			}	

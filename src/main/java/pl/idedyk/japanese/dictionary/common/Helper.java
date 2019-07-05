@@ -888,6 +888,7 @@ public class Helper {
 			
 			List<String> miscInfoList = groupEntryTranslate.getMiscInfoList();
 			List<String> additionalInfoList = groupEntryTranslate.getAdditionalInfoList();
+			List<String> dialectList = groupEntryTranslate.getDialectList();
 			
 			for (int idx = 0; additionalInfoList != null && idx < additionalInfoList.size(); ++idx) {				
 				translate.append("\n     " + additionalInfoList.get(0));
@@ -895,6 +896,10 @@ public class Helper {
 						
 			for (int idx = 0; miscInfoList != null && idx < miscInfoList.size(); ++idx) {				
 				translate.append("\n     " + jmEDictEntityMapper.getDesc(miscInfoList.get(idx)));
+			}			
+
+			for (int idx = 0; dialectList != null && idx < dialectList.size(); ++idx) {				
+				translate.append("\n     " + dialectList.get(idx));
 			}			
 			
 			translateList2.add(translate.toString());
@@ -1290,6 +1295,7 @@ public class Helper {
 					
 					List<String> miscInfoList = groupEntryTranslate.getMiscInfoList();
 					List<String> additionalInfoList = groupEntryTranslate.getAdditionalInfoList();
+					List<String> dialectList = groupEntryTranslate.getDialectList();
 					
 					boolean wasMiscOrAdditionalInfo = false;
 					
@@ -1318,6 +1324,21 @@ public class Helper {
 							translate.append(", ");
 						}
 					}
+					
+					for (int idx = 0; dialectList != null && idx < dialectList.size(); ++idx) {
+						
+						if (wasMiscOrAdditionalInfo == false) {
+							translate.append(" (dialect: ");
+							
+							wasMiscOrAdditionalInfo = true;
+							
+						} else {
+							translate.append(", dialect: ");
+						}
+						
+						translate.append(dialectList.get(idx));
+					}
+
 					
 					if (wasMiscOrAdditionalInfo == true) {
 						translate.append(")");
