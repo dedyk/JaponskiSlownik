@@ -1241,7 +1241,7 @@ public class WordGenerator {
 				options.addOption("mnkaj", "min-kana-length", true, "Min kana length");
 				
 				options.addOption("maknj", "max-kanji-length", true, "Max kanji length");
-				options.addOption("makaj", "max-kana-length", true, "Max kanji length");
+				options.addOption("makaj", "max-kana-length", true, "Max kana length");
 				
 				options.addOption("okn", "only-kanji", false, "Only kanji");
 				options.addOption("oka", "only-kana", false, "Only kana");
