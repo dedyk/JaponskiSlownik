@@ -8,3 +8,5 @@ small2 - 5
 ludzie - 25
 -----------
 suma: 70
+
+sugestia
