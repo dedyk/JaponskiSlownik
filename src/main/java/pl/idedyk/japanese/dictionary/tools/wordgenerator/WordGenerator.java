@@ -2718,6 +2718,7 @@ public class WordGenerator {
 				Integer findWordsSize = null;
 				
 				Boolean ignoreJmedictEmptyRawData = false;
+				Boolean ignoreDictionaryFilledRawData = false;
 				Boolean randomWords = false;
 				Boolean force = false;
 				
@@ -2733,6 +2734,7 @@ public class WordGenerator {
 				options.addOption("s", "size", true, "Size of find words");
 				options.addOption("r", "random", false, "Random words");
 				options.addOption("ijerd", "ignore-jmedict-empty-raw-data", false, "Ignore jmedict empty raw data");
+				options.addOption("idfrd", "ignore-dictionary-filled-raw-data", false, "Ignore dictionary filled raw data");
 				options.addOption("set", "set-words", false, "Set words");
 				options.addOption("wid", "word-ids", true, "Word ids");
 				options.addOption("gid", "group-ids", true, "Group ids");
@@ -2794,6 +2796,10 @@ public class WordGenerator {
 					
 					if (commandLine.hasOption("ignore-jmedict-empty-raw-data") == true) {
 						ignoreJmedictEmptyRawData = true;
+					}
+
+					if (commandLine.hasOption("ignore-dictionary-filled-raw-data") == true) {
+						ignoreDictionaryFilledRawData = true;
 					}
 					
 					if (commandLine.hasOption("random") == true) {
@@ -2935,6 +2941,11 @@ public class WordGenerator {
 							
 							// ignorojemy puste wpisy
 							if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true) {							
+								continue;
+							}
+							
+							// ignorujemy wpisy w slowniku, ktore sa juz wypelnione
+							if (jmedictRawDataList != null && jmedictRawDataList.size() > 0 && ignoreDictionaryFilledRawData == true) {
 								continue;
 							}
 							
