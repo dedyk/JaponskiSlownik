@@ -11,11 +11,18 @@ import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
+import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 
 public class GenerateCharHexCode {
 
 	public static void main(String[] args) throws Exception {
+		
+		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
+				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
+
+		//
 				
 		KanaHelper kanaHelper = new KanaHelper();
 		
@@ -36,14 +43,12 @@ public class GenerateCharHexCode {
 			
 			String kanaJapanese = currentKanaEntry.getKanaJapanese();
 			
-			for (int kanaJapaneseIdx = 0; kanaJapaneseIdx < kanaJapanese.length(); ++kanaJapaneseIdx) {				
-				uniqueCharacters.add(new String("" + kanaJapanese.charAt(kanaJapaneseIdx)));
-			}
+			addUniqueChars(uniqueCharacters, kanaJapanese);
 		}
 		
 		//
 		
-		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile("../JapaneseDictionary_additional/kradfile");
+		Map<String, List<String>> kradFileMap = wordGeneratorHelper.getKradFileMap();
 		
 		Collection<List<String>> kradFileMapValues = kradFileMap.values();
 		
@@ -52,12 +57,10 @@ public class GenerateCharHexCode {
 			for (String currentCurrentkradFileMapValues : currentkradFileMapValuesList) {
 				
 				currentCurrentkradFileMapValues = currentCurrentkradFileMapValues.replaceAll("_", "");
-								
+				
 				uniqueCharacters.add(currentCurrentkradFileMapValues);
 				
-				for (int currentCurrentkradFileMapValuesIdx = 0; currentCurrentkradFileMapValuesIdx < currentCurrentkradFileMapValues.length(); ++currentCurrentkradFileMapValuesIdx) {				
-					uniqueCharacters.add("" + currentCurrentkradFileMapValues.charAt(currentCurrentkradFileMapValuesIdx));
-				}				
+				addUniqueChars(uniqueCharacters, currentCurrentkradFileMapValues);
 			}
 		}
 		
@@ -75,7 +78,93 @@ public class GenerateCharHexCode {
 			String radicalToCorrectRadicalEntryValue = radicalToCorrectRadicalEntry.getValue().replaceAll("_", "");
 			
 			uniqueCharacters.add(radicalToCorrectRadicalEntryKey);
-			uniqueCharacters.add(radicalToCorrectRadicalEntryValue);			
+			uniqueCharacters.add(radicalToCorrectRadicalEntryValue);
+			
+			addUniqueChars(uniqueCharacters, radicalToCorrectRadicalEntryKey);
+			addUniqueChars(uniqueCharacters, radicalToCorrectRadicalEntryValue);
+		}
+		
+		boolean full = false;
+		
+		if (full == true) {
+			
+			List<KanjiEntryForDictionary> kanjiEntries = wordGeneratorHelper.getKanjiEntries();
+			
+			for (KanjiEntryForDictionary kanjiEntryForDictionary : kanjiEntries) {
+				
+				String kanji = kanjiEntryForDictionary.getKanji();
+				
+				addUniqueChars(uniqueCharacters, kanji);				
+			}
+			
+			//
+			/*
+			List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+			
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+				
+				if (polishJapaneseEntry.isKanjiExists() == true) {
+					
+					String kanji = polishJapaneseEntry.getKanji();
+					
+					addUniqueChars(uniqueCharacters, kanji);
+				}
+				
+				addUniqueChars(uniqueCharacters, polishJapaneseEntry.getKana());
+				addUniqueChars(uniqueCharacters, polishJapaneseEntry.getRomaji());
+				
+				for (String translate : polishJapaneseEntry.getTranslates()) {
+					addUniqueChars(uniqueCharacters, translate);
+				}
+				
+				addUniqueChars(uniqueCharacters, polishJapaneseEntry.getInfo());
+			}
+			
+			//
+			
+			JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+			
+			List<Group> groupList = jmeNewDictionary.getGroupList();
+			
+			for (Group group : groupList) {
+				
+				List<GroupEntry> groupEntryList = group.getGroupEntryList();
+				
+				List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
+							
+				for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
+					
+					for (int groupEntryListTheSameTranslateIdx = 0; groupEntryListTheSameTranslateIdx < groupEntryListTheSameTranslate.size(); ++groupEntryListTheSameTranslateIdx) {
+						
+						if (groupEntryListTheSameTranslateIdx == 1) {
+							break;
+						}
+						
+						GroupEntry groupEntry = groupEntryListTheSameTranslate.get(groupEntryListTheSameTranslateIdx);
+						
+						String groupEntryKanji = groupEntry.getKanji();
+						String groupEntryKana = groupEntry.getKana();
+						String groupEntryRomaji = groupEntry.getRomaji();						
+						List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();
+						
+						addUniqueChars(uniqueCharacters, groupEntryKanji);
+						addUniqueChars(uniqueCharacters, groupEntryKana);
+						addUniqueChars(uniqueCharacters, groupEntryRomaji);
+						
+						for (GroupEntryTranslate groupEntryTranslate : translateList) {
+							
+							addUniqueChars(uniqueCharacters, groupEntryTranslate.getTranslate());
+							
+							List<String> additionalInfoList = groupEntryTranslate.getAdditionalInfoList();
+							
+							for (String currentAdditionalInfo : additionalInfoList) {
+								addUniqueChars(uniqueCharacters, currentAdditionalInfo);
+							}
+						}
+					}
+				}
+			}
+			*/			
 		}
 				
 		//
@@ -94,6 +183,17 @@ public class GenerateCharHexCode {
 		System.out.println("-----");
 		
 		System.out.println(result.toString());
+	}
+	
+	private static void addUniqueChars(TreeSet<String> uniqueCharacters, String text) {
+		
+		if (text == null) {
+			return;
+		}
+		
+		for (int i = 0; i < text.length(); ++i) {
+			uniqueCharacters.add(String.valueOf(text.charAt(i)));
+		}		
 	}
 
 	private static String getUTF32ByteHex(String text) throws UnsupportedEncodingException {
