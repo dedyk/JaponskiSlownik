@@ -917,12 +917,12 @@ public class AndroidDictionaryGenerator {
 		
 		//
 		
-		int id = 1;
+		int id = 0;
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : generatedNames) {
 			polishJapaneseEntry.setId(id);
 			
-			id++;
+			//id++;
 		}
 		
 		final int maxPos = 300000;
