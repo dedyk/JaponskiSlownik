@@ -12,7 +12,7 @@ public class TestParseSvgPath {
 
 	public static void main(String[] args) throws Exception {
 		
-		Map<String, KanjivgEntry> result = KanjivgReader.readKanjivgSingleXmlFile(new File("/tmp/a/kanjivg.xml"));
+		Map<String, KanjivgEntry> result = KanjivgReader.readKanjivgSingleXmlFile(new File("/tmp/a/kanjivg.xml"), new File("../JapaneseDictionary_additional/kanjivg/patch"));
 		
 		for (KanjivgEntry kanjivgEntry : result.values()) {
 			

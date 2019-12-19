@@ -26,6 +26,7 @@ public class GenerateKanjiEntryUsed {
 		String sourceKradFileName = "../JapaneseDictionary_additional/kradfile";
 		
 		File kanjivgSingleXmlFile = new File("../JapaneseDictionary_additional/kanjivg/kanjivg.xml");
+		File kanjivgPatchDirFile = new File("../JapaneseDictionary_additional/kanjivg/patch");
 		
 		String destinationFileName = "input/kanji-new.csv";
 		
@@ -35,7 +36,7 @@ public class GenerateKanjiEntryUsed {
 		TreeMap<String, List<JMEDictEntry>> jmedict = JMEDictReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		TreeMap<String, List<JMEDictEntry>> jmedictName = JMEDictReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
-		Map<String, KanjivgEntry> kanjivgEntryMap = KanjivgReader.readKanjivgSingleXmlFile(kanjivgSingleXmlFile);
+		Map<String, KanjivgEntry> kanjivgEntryMap = KanjivgReader.readKanjivgSingleXmlFile(kanjivgSingleXmlFile, kanjivgPatchDirFile);
 
 		List<KanjiEntryForDictionary> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv(sourceKanjiName, readKanjiDic2, false);
 		

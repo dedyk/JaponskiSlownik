@@ -83,7 +83,7 @@ public class KanjivgReader {
 		return kanjivgEntry;
 	}
 	
-	public static Map<String, KanjivgEntry> readKanjivgSingleXmlFile(File file) throws Exception {
+	public static Map<String, KanjivgEntry> readKanjivgSingleXmlFile(File file, File patchDirFile) throws Exception {
 		
 		Map<String, KanjivgEntry> result = new TreeMap<String, KanjivgEntry>();
 		
@@ -109,13 +109,29 @@ public class KanjivgReader {
 			
 			//
 			
+			List<?> pathNodeList;
+			
+			// sprawdzamy, czy moze jest patch na ten znak
+			File patchFile = new File(patchDirFile, currentKanjiCodepoint + ".svg");
+			
+			if (patchFile.exists() == true) { // jest ladka, wczytujemy
+				
+				Document patchDocument = reader.read(patchFile);
+				
+				XPath gPathXPath = createXPath(patchDocument, "/svg//svg:g//svg:path");
+				
+				pathNodeList = gPathXPath.selectNodes(patchDocument);
+				
+			} else {
+				
+				XPath gPathXPath = createXPath(document, "g//path");
+				
+				pathNodeList = gPathXPath.selectNodes(currentKanjiElement);
+			}			
+			
 			List<String> strokePaths = new ArrayList<String>();
 			
-			//
-			
-			XPath pathXPath = createXPath(document, "g//path");
-			
-			List<?> pathNodeList = pathXPath.selectNodes(currentKanjiElement);
+			//			
 			
 			for (Object currentPathObject : pathNodeList) {
 				

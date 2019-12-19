@@ -1,27 +1,34 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.io.File;
 import java.util.Map;
 
-import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
-import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
+import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
+import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
 
 public class Test3 {
 
 	public static void main(String[] args) throws Exception {
 		
-		System.out.println("generateKanjiEntries: readKradFile");
-		Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile("../JapaneseDictionary_additional/kradfile");
+		// System.out.println("generateKanjiEntries: readKradFile");
+		// Map<String, List<String>> kradFileMap = KanjiDic2Reader.readKradFile("../JapaneseDictionary_additional/kradfile");
 
-		System.out.println("generateKanjiEntries: readKanjiDic2");
-		Map<String, KanjiDic2EntryForDictionary> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2("../JapaneseDictionary_additional/kanjidic2.xml", kradFileMap);
+		// System.out.println("generateKanjiEntries: readKanjiDic2");
+		// Map<String, KanjiDic2EntryForDictionary> readKanjiDic2 = KanjiDic2Reader.readKanjiDic2("../JapaneseDictionary_additional/kanjidic2.xml", kradFileMap);
 
-		System.out.println("generateKanjiEntries: parseKanjiEntriesFromCsv");
-		List<KanjiEntryForDictionary> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv("input/kanji.csv", readKanjiDic2, false);
+		// System.out.println("generateKanjiEntries: parseKanjiEntriesFromCsv");
+		// List<KanjiEntryForDictionary> kanjiEntries = CsvReaderWriter.parseKanjiEntriesFromCsv("input/kanji.csv", readKanjiDic2, false);
+		
+		File kanjivgSingleXmlFile = new File("../JapaneseDictionary_additional/kanjivg/kanjivg.xml");
+		File kanjivgPatchDirFile = new File("../JapaneseDictionary_additional/kanjivg/patch");
+		
+		Map<String, KanjivgEntry> kanjivgEntryMap = KanjivgReader.readKanjivgSingleXmlFile(kanjivgSingleXmlFile, kanjivgPatchDirFile);
+
+		KanjivgEntry kanjivgEntry = kanjivgEntryMap.get("饗");
+		
+		for (String strokePath : kanjivgEntry.getStrokePaths()) {			
+			System.out.println(strokePath);			
+		}
 		
 		/*
 		System.out.println("jmedictName");
@@ -103,6 +110,7 @@ public class Test3 {
 		
 		*/
 		
+		/*
 		List<String> kanjiList = new ArrayList<>();
 		
 		for (KanjiEntryForDictionary kanjiEntryForDictionary : kanjiEntries) {
@@ -114,6 +122,7 @@ public class Test3 {
 		for (String kanji : kanjiList) {
 			System.out.println(kanji);
 		}
+		*/
 	}
 	
 	/*
