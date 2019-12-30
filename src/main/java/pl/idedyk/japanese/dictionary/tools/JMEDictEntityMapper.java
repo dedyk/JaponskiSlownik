@@ -190,6 +190,10 @@ public class JMEDictEntityMapper {
 		addMap("joc", "jocular, humorous term");
 		addMap("anat", "anatomical term");
 
+		addMap("dated", "dated term");
+		addMap("net-sl", "Internet slang");
+		addMap("Christn", "Christian term");
+		addMap("lit", "literary or formal term");
 
 		addMap("surname", "family or surname");
 		addMap("place", "place name");
@@ -203,7 +207,7 @@ public class JMEDictEntityMapper {
 		addMap("given", "given name or forename, gender not specified");
 		addMap("station", "railway station");
 		addMap("organization", "organization name");
-		addMap("oik", "old or irregular kana form");
+		addMap("oik", "old or irregular kana form");		
 	}
 
 	private void addMap(String entity, String desc) {
