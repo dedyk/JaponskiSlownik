@@ -3156,6 +3156,8 @@ public class WordGenerator {
 					for (PolishJapaneseEntryAndGroupEntryListWrapper polishJapaneseEntryAndGroupEntryListWrapper : result) {
 						
 						if (idPolishJapaneseEntryAndGroupEntryListWrapperMap.containsKey(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getId()) == false) {
+							
+							System.out.println(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getId());
 
 							idPolishJapaneseEntryAndGroupEntryListWrapperMap.put(polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getId(), polishJapaneseEntryAndGroupEntryListWrapper);
 							
