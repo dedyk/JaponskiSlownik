@@ -285,7 +285,7 @@ public class LatexDictionaryGenerator {
 		text = text.replaceAll("\\^", "\\\\^{}");
 		text = text.replaceAll("\\&", "\\\\&");
 		text = text.replaceAll("\\#", "\\\\#");
-		text = text.replaceAll("\\$", "\\\\$");
+		text = text.replaceAll("\\$", "\\\\\\$");
 		
 		return text;
 	}
