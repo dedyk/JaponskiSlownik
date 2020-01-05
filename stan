@@ -5,6 +5,6 @@
 ++60000 - 20
 ++small - 5
 ++small2 - 5
-__ludzie - 25
++_ludzie - 25
 -----------
 suma: 70
