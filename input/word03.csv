@@ -130,7 +130,7 @@ Translate: major bank
 Translate: big bank"
 200028,WORD_NOUN,,HIRAGANA,,,後処理,あとしょり,,atoshori,"po leczeniu
 po przetworzeniu
-radzenie sobie z następstwami",,,,"GroupId: 2825937
+radzenie sobie z następstwami",,,DUPLICATE 200132,"GroupId: 2825937
 Translate: after-treatment
 Translate: post-treatment
 Translate: post-processing
@@ -203,8 +203,8 @@ wabić
 kusić",,,,"GroupId: 1434070
 Translate: to pull out a fish
 Translate: to lure"
-200052,WORD_NOUN,,HIRAGANA,,,雲脚,くもあし,,kumoashi,"ruchy chmur
-zwisające chmury",,,,"GroupId: 1576500
+200052,WORD_NOUN,,HIRAGANA,,,雲脚,くもあし,,kumo ashi,"ruchy chmur
+zwisające chmury",,,DUPLICATE 200136,"GroupId: 1576500
 Translate: cloud movements
 Translate: overhanging clouds"
 200053,WORD_NOUN,,HIRAGANA,,,父権制,ふけんせい,,fukensei,patriarchat,,,,"GroupId: 2840671
@@ -224,7 +224,7 @@ wypracować plan",,,,"GroupId: 2840892
 Translate: to plan one's next moves
 Translate: to work out a plan"
 200059,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,腹に据えかねる,はらにすえかねる,,hara ni suekaneru,"nie można stłumić gniewu
+WORD_EXPRESSION",,HIRAGANA,,,腹に据えかねる,はらにすえかねる,,hara ni sue kaneru,"nie można stłumić gniewu
 nie móc znieść",,,,"GroupId: 2126260
 Translate: cannot suppress one's anger
 Translate: cannot stomach"
@@ -268,7 +268,7 @@ Translate: metal terminal"
 Translate: metal hydride"
 200074,WORD_NOUN,,HIRAGANA,,,金属化学種,きんぞくかがくしゅ,,kinzokukagakushu,specjacja metali,,,,"GroupId: 2689270
 Translate: metal speciation"
-200075,WORD_NOUN,,HIRAGANA,,,金属屑,きんぞくくず,,kinzokukuzu,złom,,,,"GroupId: 2698790
+200075,WORD_NOUN,,HIRAGANA,,,金属屑,きんぞくくず,,kinzoku kuzu,złom,,,,"GroupId: 2698790
 Translate: scrap metal"
 200076,WORD_NOUN,,KATAKANA,,,-,グラムメタル,,guramu metaru,glam metal,"styl muzyki metalowej, popularny w latach 80. XX w., obejmujący melodyjną i rytmiczną jego odmianę",,,"GroupId: 2841126
 Translate: glam metal (heavy-metal sub-genre)"
@@ -283,3 +283,355 @@ Translate: piece of metal"
 Translate: alkali earth metal"
 200081,WORD_NOUN,,HIRAGANA,,,金壺,かなつぼ,,kanatsubo,metalowy czajnik lub dzbanek,,,,"GroupId: 2085330
 Translate: metal jar or pot"
+200082,"WORD_ADVERBIAL_NOUN
+WORD_EXPRESSION
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,其の外,そのほか,,sono hoka,"inny
+zresztą
+ponadto
+oprócz tego
+w dodatku",,,DUPLICATE 200083,
+200083,"WORD_ADVERBIAL_NOUN
+WORD_EXPRESSION
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,其の外,そのた,,sono ta,"inny
+zresztą
+ponadto
+oprócz tego
+w dodatku",,,DUPLICATE 200082,
+200084,WORD_ADJECTIVE_I,,KATAKANA_HIRAGANA,,,-,ムゴい,,mugoi,"okrutny
+bezlitosny",,,,
+200085,WORD_NOUN,,HIRAGANA,,,１軍,いちぐん,,ichigun,"armia
+wojsko
+cała armia
+całe wojsko
+pierwszy zespół (w sporcie)",,,,
+200086,WORD_NOUN,,KATAKANA,,,-,ウンチ,,unchi,"gówno
+odchody
+kał
+stolec
+sranie",,,,
+200087,WORD_NOUN,,KATAKANA,,,-,エアーソフトガン,,eaasofuto gan,"ASG
+Airsoft gun",repliki broni palnej przeważnie w skali 1:1 strzelające najczęściej plastikowymi kulkami,,,
+200088,WORD_NOUN,,KATAKANA,,,-,エアソフト・ガン,,easofuto gan,"ASG
+Airsoft gun",repliki broni palnej przeważnie w skali 1:1 strzelające najczęściej plastikowymi kulkami,,,
+200089,WORD_NOUN,,KATAKANA,,,-,エアーソフト・ガン,,eaasofuto gan,"ASG
+Airsoft gun",repliki broni palnej przeważnie w skali 1:1 strzelające najczęściej plastikowymi kulkami,,,
+200090,WORD_PRONOUN,,KATAKANA,,,-,テメー,,temee,ty,"wulgarnie, używane przez młodych mężczyzn",,,
+200091,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,やぶの中,やぶのなか,,yabu no naka,niezdolność do dostrzeżenia prawdy z powodu sprzecznych zeznań,nazwa zaczerpnięta z opowiadania Akutagawa Ryuunosuke,,,
+200092,"WORD_NOUN
+WORD_COUNTER
+WORD_PARTICULE
+WORD_SUFFIX",,HIRAGANA,,,切,きり,,kiri,"koniec
+zakończenie
+zatrzymanie
+granica
+limity
+termin dostawy kontraktów terminowych
+finał (piosenki z teatru no)
+koniec aktu (w joruri lub kabuki)
+finałowe wykonanie (w wodewilu)
+klasyfikator na plasterki (szczególnie cienkie plasterki)
+klasyfikator na pokrojone kawałki (np. ryby, mięsa)
+tylko
+zaledwie
+od
+po
+pozostały (w szczególnej sytuacji)",,,DUPLICATE 50271,"GroupId: 1383800
+Translate: end
+Translate: finish
+Translate: stop
+Translate: bounds
+Translate: limits
+Translate: delivery date (of a futures contract)
+AdditionalInfo: esp. 限り,限
+Translate: finale (of a noh song)
+Translate: end of an act (in joruri or kabuki)
+Translate: final performance of the day (in vaudeville)
+Translate: counter for slices (esp. thick slices)
+Translate: counter for cuts (e.g. fish, meat)
+Translate: only
+MiscInfo: uk
+AdditionalInfo: senses 6-8 are sometimes pronounced ぎり, esp. in old-fashioned speech
+Translate: just
+MiscInfo: uk
+AdditionalInfo: senses 6-8 are sometimes pronounced ぎり, esp. in old-fashioned speech
+Translate: since
+MiscInfo: uk
+AdditionalInfo: usu. in a negative sentence
+Translate: after
+MiscInfo: uk
+AdditionalInfo: usu. in a negative sentence
+Translate: remaining (in a particular state)
+MiscInfo: uk"
+200093,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,頭角をあらわす,とうかくをあらわす,,toukaku o arawasu,"odróżnianie się
+wyróżnianie się",,,,
+200094,WORD_NOUN,,KATAKANA,,,-,ダンマリ,,danmari,"cisza
+małomówność
+odmawianie wyjaśnień
+pantomima (w kabuki)",,,,
+200095,WORD_NOUN,,HIRAGANA,,,遠近両用眼鏡,えんきんりょうようめがね,,enkin ryouyou megane,okulary dwuogniskowe,,,,
+200096,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,八百万神,やおよろずのかみ,,yao yorozu no kami,"wszyscy bogowie i boginie
+całe bóstwo",,,,
+200097,WORD_NOUN,,HIRAGANA,,,野ぐそ,のぐそ,,no guso,"wypróżnianie się na powietrzu
+wypróżnianie się pod gołym niebem
+kał leżący na ziemi",,,,
+200098,WORD_NOUN,,HIRAGANA_KATAKANA,,,野グソ,のグソ,,no guso,"wypróżnianie się na powietrzu
+wypróżnianie się pod gołym niebem
+kał leżący na ziemi",,,,
+200099,WORD_NOUN,,KATAKANA,,,-,ノグソ,,no guso,"wypróżnianie się na powietrzu
+wypróżnianie się pod gołym niebem
+kał leżący na ziemi",,,,
+200100,WORD_PRONOUN,,HIRAGANA,,,あの娘,あのこ,,ano ko,"ta dziewczyna
+to dziecko
+ty (głównie używanie przez właściciela burdelu lub starszą prostytutkę kiedy zwraca się do służących dziewczyn, archaizm)",,,,
+200101,WORD_PRONOUN,,HIRAGANA,,,彼の娘,あのこ,,ano ko,"ta dziewczyna
+to dziecko
+ty (głównie używanie przez właściciela burdelu lub starszą prostytutkę kiedy zwraca się do służących dziewczyn, archaizm)",,,,
+200102,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,KATAKANA,,,-,デレデレ,,dere dere,"leniwy
+próżny
+niechlujny
+niedbały
+flirtowanie
+romansowanie
+uganianie się na kobietami",,,,
+200103,WORD_ADJECTIVE_NA,,KATAKANA,,,-,エクセントリック,,ekusentorikku,"ekscentryk
+ekscentryczka
+dziwak
+dziwaczka",ang: eccentric,,,
+200104,WORD_NOUN,,HIRAGANA,,,綿津見,かいじん,,kaijin,"morski bóg
+Posejdon
+Neptun",,,"DUPLICATE 66138
+DUPLICATE 66139",
+200105,WORD_NOUN,,HIRAGANA,,,造苑,ぞうえん,,zouen,"ogrodnictwo krajobrazowe
+architektura krajobrazu",,,,"GroupId: 1818750
+Translate: landscape gardening
+Translate: landscape architecture"
+200106,WORD_NOUN,,HIRAGANA,,,御点前,おてまえ,,otemae,"umiejętność
+zręczność
+kunszt
+etykieta z ceremonii herbacianej",,,,
+200107,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,オッチョコチョイ,,occhokochoi,"nieostrożna osoba
+roztrzepaniec
+ptasi móżdżek",,,,
+200108,WORD_NOUN,,HIRAGANA,,,屍臭,ししゅう,,shishuu,zgniły zapach zwłok,,,,
+200109,WORD_VERB_U,,HIRAGANA,,,回らす,めぐらす,,megurasu,"otaczać
+otoczyć
+okrążać
+okrążyć
+odwrócić (np. swoją głowę)
+przemyśleć
+rozważać
+obmyślać
+powiadamiać (ustnie lub pisemnie, archaizm)",,,,
+200110,WORD_VERB_U,,HIRAGANA,,,廻らす,めぐらす,,megurasu,"otaczać
+otoczyć
+okrążać
+okrążyć
+odwrócić (np. swoją głowę)
+przemyśleć
+rozważać
+obmyślać
+powiadamiać (ustnie lub pisemnie, archaizm)",,,,
+200111,WORD_NOUN,,HIRAGANA,,,足扱き,あしこき,,ashi koki,stymulacja członka stopami,"slang, wulgarnie",,,
+200112,WORD_NOUN,,HIRAGANA,,,人間技,にんげんわざ,,ningenwaza,praca człowieka,,,,
+200113,WORD_ADJECTIVE_I,,KATAKANA_HIRAGANA,,,-,エグい,,egui,"nieprzyjemny
+uszczypliwy
+cierpki
+stanowczy
+zdecydowany
+bez serca
+nieczuły
+nietaktowny
+paskudny (slang)
+wstrętny (slang)
+zdumiewający (slang)
+niezwykły (slang)",,,,
+200114,WORD_NOUN,,HIRAGANA,,,立飲み,たちのみ,,tachi nomi,picie podczas stania,,,,
+200115,WORD_NOUN,,HIRAGANA,,,立呑み,たちのみ,,tachi nomi,picie podczas stania,,,,
+200116,WORD_NOUN,,HIRAGANA,,,立飲,たちのみ,,tachi nomi,picie podczas stania,,,,
+200117,WORD_NOUN,,HIRAGANA,,,立呑,たちのみ,,tachi nomi,picie podczas stania,,,,
+200118,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,KATAKANA,,,-,ボンボン,,bon bon,???,,,DUPLICATE 63751,
+200119,WORD_NOUN,,HIRAGANA,,,期日前投票,きじつぜんとうひょう,,kijitsuzen touhyou,wcześniejsze głosowanie,,,DUPLICATE 130152,
+200120,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,ポソリ,,posori,"szeptanie
+szmeranie
+szmer
+stłumiony głos",,,,"GroupId: 2244500
+Translate: whispering
+MiscInfo: on-mim
+Translate: murmuring
+MiscInfo: on-mim
+Translate: subdued
+MiscInfo: on-mim"
+200121,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,ぽそり,,posori,"szeptanie
+szmeranie
+szmer
+stłumiony głos",,,,"GroupId: 2244500
+Translate: whispering
+MiscInfo: on-mim
+Translate: murmuring
+MiscInfo: on-mim
+Translate: subdued
+MiscInfo: on-mim"
+200122,WORD_NOUN,,KATAKANA,,,-,ネーティブアメリカン,,neetibu amerikan,tubylczy amerykanie,ang: native American,,,"GroupId: 2149800
+Translate: native American"
+200123,WORD_NOUN,,KATAKANA,,,-,ネーティブ・アメリカン,,neetibu amerikan,tubylczy amerykanie,ang: native American,,,"GroupId: 2149800
+Translate: native American"
+200124,WORD_NOUN,,HIRAGANA,,,野焼,のやき,,noyaki,wypalanie pól,,,,"GroupId: 1712040
+Translate: burning off the fields"
+200125,"WORD_ADVERB_TO
+WORD_NOUN
+WORD_ADJECTIVE_TARU",,HIRAGANA,,,諜々,ちょうちょう,,chou chou,"rozmawianie gładko
+paplanie
+bełkotanie
+trajkotanie",,,,"GroupId: 2840437
+Translate: talking glibly
+Translate: chattering
+Translate: jabbering
+Translate: babbling"
+200126,"WORD_ADVERB_TO
+WORD_NOUN
+WORD_ADJECTIVE_TARU",,HIRAGANA,,,諜諜,ちょうちょう,,chou chou,"rozmawianie gładko
+paplanie
+bełkotanie
+trajkotanie",,,,"GroupId: 2840437
+Translate: talking glibly
+Translate: chattering
+Translate: jabbering
+Translate: babbling"
+200127,WORD_NOUN,,HIRAGANA,,,上げまん,あげまん,,ageman,"kobieta, która rzekomo przynosi szczęście mężczyźnie, z którym jest blisko lub z którym uprawia seks",kolokwializm,,,"GroupId: 2096110
+Translate: woman purported to bring good luck to the man she is near or has sex with
+MiscInfo: col"
+200128,WORD_NOUN,,HIRAGANA_KATAKANA,,,上げマン,あげマン,,ageman,"kobieta, która rzekomo przynosi szczęście mężczyźnie, z którym jest blisko lub z którym uprawia seks",kolokwializm,,,"GroupId: 2096110
+Translate: woman purported to bring good luck to the man she is near or has sex with
+MiscInfo: col"
+200129,WORD_NOUN,,HIRAGANA,,,あがり花,あがりばな,,agari bana,świeża zielona herbata,szczególnie w sklepach sushi,,,"GroupId: 2025090
+Translate: freshly-drawn green tea (esp. in sushi shops)"
+200130,WORD_NOUN,,KATAKANA_HIRAGANA,,,メクリ札,メクリふだ,,mekuri fuda,"dobrać ze stosu
+mekuri karuta (gra karciana popularna w późnym okresie Edo)",,,,"GroupId: 2836869
+Translate: draw pile
+Translate: mekuri karuta (card game popular in the late Edo period)"
+200131,WORD_NOUN,,KATAKANA,,,-,フランキスカ,,furankisuka,franciska,"używana od IV do VIII w. n.e. narodowa broń Franków, obok włóczni angon. Była to masywna siekierka przeznaczona do walki wręcz, ale przede wszystkim do miotania",,,"GroupId: 2561380
+Translate: francisca
+Translate: francesca
+Translate: type of throwing axe"
+200132,WORD_NOUN,,HIRAGANA,,,後処理,こうしょり,,koushori,"po leczeniu
+po przetworzeniu
+radzenie sobie z następstwami",,,DUPLICATE 200028,"GroupId: 2825937
+Translate: after-treatment
+Translate: post-treatment
+Translate: post-processing
+Translate: dealing with the aftermath"
+200133,WORD_VERB_U,,HIRAGANA,,,だまし込む,だましこむ,,damashi komu,"zwodzić
+mamić
+omotać",,,,"GroupId: 1852400
+Translate: to deceive
+Translate: to ensnare"
+200134,WORD_VERB_U,,HIRAGANA,,,騙しこむ,だましこむ,,damashi komu,"zwodzić
+mamić
+omotać",,,,"GroupId: 1852400
+Translate: to deceive
+Translate: to ensnare"
+200135,WORD_NOUN,,KATAKANA,,,-,イケチョウガイ,,ikechougai,Hyriopsis schlegelii,gatunek słodkowodnej małzy,,,"GroupId: 2673330
+Translate: Hyriopsis schlegelii (species of freshwater mussel)
+MiscInfo: uk"
+200136,WORD_NOUN,,HIRAGANA,,,雲脚,うんきゃく,,unkyaku,"ruchy chmur
+zwisające chmury",,,DUPLICATE 200052,"GroupId: 1576500
+Translate: cloud movements
+Translate: overhanging clouds"
+200137,WORD_NOUN,,HIRAGANA,,,雲足,くもあし,,kumo ashi,"ruchy chmur
+zwisające chmury",,,,"GroupId: 1576500
+Translate: cloud movements
+Translate: overhanging clouds"
+200138,WORD_NOUN,,HIRAGANA,,,釣書き,つりがき,,tsuri gaki,???,,,,"GroupId: 1434080
+Translate: family chart and personal history
+AdditionalInfo: esp. for お見合い"
+200139,WORD_NOUN,,HIRAGANA,,,釣り書,つりがき,,tsuri gaki,???,,,DUPLICATE 200140,"GroupId: 1434080
+Translate: family chart and personal history
+AdditionalInfo: esp. for お見合い"
+200140,WORD_NOUN,,HIRAGANA,,,釣り書,つりしょ,,tsuri sho,???,,,DUPLICATE 200139,"GroupId: 1434080
+Translate: family chart and personal history
+AdditionalInfo: esp. for お見合い"
+200141,WORD_NOUN,,HIRAGANA,,,釣書,つりがき,,tsuri gaki,???,,,DUPLICATE 200142,"GroupId: 1434080
+Translate: family chart and personal history
+AdditionalInfo: esp. for お見合い"
+200142,WORD_NOUN,,HIRAGANA,,,釣書,つりしょ,,tsuri sho,???,,,DUPLICATE 200141,"GroupId: 1434080
+Translate: family chart and personal history
+AdditionalInfo: esp. for お見合い"
+200143,WORD_NOUN,,HIRAGANA,,,吊り書き,つりがき,,tsuri gaki,???,,,,"GroupId: 1434080
+Translate: family chart and personal history
+AdditionalInfo: esp. for お見合い"
+200144,WORD_NOUN,,HIRAGANA,,,吊書き,つりがき,,tsuri gaki,???,,,,"GroupId: 1434080
+Translate: family chart and personal history
+AdditionalInfo: esp. for お見合い"
+200145,WORD_NOUN,,HIRAGANA,,,吊書,つりがき,,tsuri gaki,???,,,DUPLICATE 200146,"GroupId: 1434080
+Translate: family chart and personal history
+AdditionalInfo: esp. for お見合い"
+200146,WORD_NOUN,,HIRAGANA,,,吊書,つりしょ,,tsuri sho,???,,,DUPLICATE 200145,"GroupId: 1434080
+Translate: family chart and personal history
+AdditionalInfo: esp. for お見合い"
+200147,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,腹に据え兼ねる,はらにすえかねる,,hara ni sue kaneru,"nie można stłumić gniewu
+nie móc znieść",,,,"GroupId: 2126260
+Translate: cannot suppress one's anger
+Translate: cannot stomach"
+200148,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,腹にすえかねる,はらにすえかねる,,hara ni sue kaneru,"nie można stłumić gniewu
+nie móc znieść",,,,"GroupId: 2126260
+Translate: cannot suppress one's anger
+Translate: cannot stomach"
+200149,WORD_NOUN,,HIRAGANA,,,陣中見舞,じんちゅうみまい,,jinchuu mimai,"odwiedzanie żołnierzy na froncie, aby poprawić ich samopoczucie
+odwiedzanie osób ciężko pracujących jako wyraz ich wsparcia",,,,"GroupId: 1370230
+Translate: visiting soldiers at the front to provide comfort
+MiscInfo: yoji
+Translate: visit to (gift for) persons hard at work as a sign of support
+MiscInfo: yoji"
+200150,WORD_NOUN,,KATAKANA,,,-,パンチング・メタル,,panchingu metaru,"perforowany metal
+dziurkowany metal",,,,"GroupId: 2832292
+Translate: perforated metal
+Translate: punched metal"
+200151,WORD_NOUN,,HIRAGANA,,,金だらい,かなだらい,,kana darai,metalowa miska,,,,"GroupId: 1682580
+Translate: metal basin"
+200152,WORD_NOUN,,HIRAGANA,,,金盥,かなだらい,,kana darai,metalowa miska,,,,"GroupId: 1682580
+Translate: metal basin"
+200153,WORD_NOUN,,HIRAGANA,,,金属くず,きんぞくくず,,kinzoku kuzu,złom,,,,"GroupId: 2698790
+Translate: scrap metal"
+200154,WORD_NOUN,,KATAKANA,,,-,グラム・メタル,,guramu metaru,glam metal,"styl muzyki metalowej, popularny w latach 80. XX w., obejmujący melodyjną i rytmiczną jego odmianę",,,"GroupId: 2841126
+Translate: glam metal (heavy-metal sub-genre)"
+200155,WORD_NOUN,,HIRAGANA,,,立前,たてまえ,,tatemae,"publiczne stanowisko
+oficjalne stanowisko
+stanowisko publiczne lub postawa (w przeciwieństwie do prywatnych myśli)",,,DUPLICATE 15789,"GroupId: 1597110
+Translate: face
+Translate: official stance
+Translate: public position or attitude (as opposed to private thoughts)"
+200156,WORD_NOUN,,HIRAGANA,,,立て前,たてまえ,,tatemae,"publiczne stanowisko
+oficjalne stanowisko
+stanowisko publiczne lub postawa (w przeciwieństwie do prywatnych myśli)",,,DUPLICATE 15790,"GroupId: 1597110
+Translate: face
+Translate: official stance
+Translate: public position or attitude (as opposed to private thoughts)"
+200157,WORD_NOUN,,HIRAGANA,,,万年,よろずとせ,,yorozutose,"dziesięć tysięcy lat
+wieczność",,,DUPLICATE 22011,"GroupId: 1526310
+Translate: ten thousand years
+Translate: eternity"
+200158,WORD_NOUN,,HIRAGANA,,,万歳,よろずとせ,,yorozutose,"dziesięć tysięcy lat
+wieczność",,,"DUPLICATE 7459
+DUPLICATE 20388
+DUPLICATE 48892","GroupId: 1526310
+Translate: ten thousand years
+Translate: eternity"
+200159,WORD_NOUN,,KATAKANA,,,ＴＡＰＩ,ティーエーピーアイ,,tiieepiiai,"Telephony Application Programming Interface
+TAPI",informatyka,,DUPLICATE 148619,"GroupId: 2307130
+Translate: Telephony Application Programming Interface
+Translate: TAPI"
