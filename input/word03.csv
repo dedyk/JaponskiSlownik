@@ -635,7 +635,7 @@ Translate: eternity"
 TAPI",informatyka,,DUPLICATE 148619,"GroupId: 2307130
 Translate: Telephony Application Programming Interface
 Translate: TAPI"
-200160,WORD_NOUN,,HIRAGANA,,,埋扇蟹,うもれおうぎがに,,umoreougigani,Zosimus aeneus,gatunek trującego kraba,,,"GroupId: 2830961
+200160,WORD_NOUN,,HIRAGANA,,,埋扇蟹,うもれおうぎがに,,umore ougigani,Zosimus aeneus,gatunek trującego kraba,,,"GroupId: 2830961
 Translate: Zosimus aeneus (species of poisonous crab)
 MiscInfo: uk"
 200161,WORD_NOUN,,HIRAGANA,,,狂乱物価,きょうらんぶっか,,kyouran bukka,"rosnące ceny
@@ -711,7 +711,7 @@ Translate: white dog"
 biała klapa",,,,"GroupId: 2830742
 Translate: white collar
 Translate: white lapel"
-200185,WORD_NOUN,,HIRAGANA,,,お店,おみせ,,omise,sklep,uprzejmie,,,"GroupId: 2842661
+200185,WORD_NOUN,,HIRAGANA,,,お店,おみせ,,omise,sklep,uprzejmie,,DUPLICATE 40951,"GroupId: 2842661
 Translate: store
 MiscInfo: pol
 Translate: shop
@@ -720,7 +720,8 @@ MiscInfo: pol"
 rybak
 morski bóg
 Posejdon
-Neptun",archaizm,,,"GroupId: 2842668
+Neptun",archaizm,,"DUPLICATE 74073
+DUPLICATE 89050","GroupId: 2842668
 Translate: seashore dweller
 MiscInfo: arch
 Translate: fisherman
@@ -856,7 +857,52 @@ Translate: type of folding knife with metal handle"
 WORD_ADVERB_TO",,KATAKANA,,,-,キコキコ,,kiko kiko,z piszczącym dźwiękiem (metalu),,,,"GroupId: 2838244
 Translate: with a squeaking sound (of metal)
 MiscInfo: on-mim"
-200219,WORD_NOUN,,KATAKANA_HIRAGANA,,,ベタ踏み,ベタぶみ,,beta bumi,wbijanie w podłogę pedał gazu,kolokwializm,,,"GroupId: 2840644
+200219,WORD_NOUN,,KATAKANA_HIRAGANA,,,ベタ踏み,ベタぶみ,,beta bumi,wbijanie w podłogę pedał gazu,kolokwializm,,DUPLICATE 200230,"GroupId: 2840644
+Translate: flooring the gas pedal
+MiscInfo: col
+Translate: pedal to the metal
+MiscInfo: col"
+200220,WORD_NOUN,,HIRAGANA,,,埋もれ扇蟹,うもれおうぎがに,,umore ougigani,Zosimus aeneus,gatunek trującego kraba,,,"GroupId: 2830961
+Translate: Zosimus aeneus (species of poisonous crab)
+MiscInfo: uk"
+200221,WORD_NOUN,,KATAKANA,,,-,ウモレオウギガニ,,umore ougigani,Zosimus aeneus,gatunek trującego kraba,,,"GroupId: 2830961
+Translate: Zosimus aeneus (species of poisonous crab)
+MiscInfo: uk"
+200222,WORD_NOUN,,HIRAGANA,,,起き掛け,おきがけ,,oki gake,pierwsza rzecz po wstaniu,,,,"GroupId: 1795560
+Translate: first thing after rising"
+200223,WORD_NOUN,,HIRAGANA,,,起掛け,おきがけ,,oki gake,pierwsza rzecz po wstaniu,,,,"GroupId: 1795560
+Translate: first thing after rising"
+200224,WORD_NOUN,,KATAKANA,,,-,ウグイスガイ,,uguisugai,Pteria brevialata,,,,"GroupId: 2604020
+Translate: Pteria brevialata (species of wing oyster)
+MiscInfo: uk"
+200225,WORD_VERB_RU,,HIRAGANA,,,暮れ果てる,くれはてる,,kure hateru,zapadać całkowita ciemność,,,,"GroupId: 1670860
+Translate: to fall completely dark"
+200226,WORD_NOUN,,HIRAGANA,,,御店,おみせ,,omise,sklep,uprzejmie,,DUPLICATE 40997,"GroupId: 2842661
+Translate: store
+MiscInfo: pol
+Translate: shop
+MiscInfo: pol"
+200227,WORD_NOUN,,HIRAGANA,,,延棒,のべぼう,,nobe bou,"(metalowy) pręt
+(drewniany) wałek do ciasta",,,,"GroupId: 1600370
+Translate: (metal) bar
+Translate: (wooden) rolling pin"
+200228,WORD_NOUN,,HIRAGANA,,,面金,めんがね,,mengane,metalowe pręty chroniące twarz,w kendo,,,"GroupId: 2755300
+Translate: metal bars of a face guard (kendo)"
+200229,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,きこきこ,,kiko kiko,z piszczącym dźwiękiem (metalu),,,,"GroupId: 2838244
+Translate: with a squeaking sound (of metal)
+MiscInfo: on-mim"
+200230,WORD_NOUN,,KATAKANA_HIRAGANA,,,ベタ踏み,ベタふみ,,beta fumi,wbijanie w podłogę pedał gazu,kolokwializm,,DUPLICATE 200219,"GroupId: 2840644
+Translate: flooring the gas pedal
+MiscInfo: col
+Translate: pedal to the metal
+MiscInfo: col"
+200231,WORD_NOUN,,HIRAGANA,,,べた踏み,べたぶみ,,beta bumi,wbijanie w podłogę pedał gazu,kolokwializm,,DUPLICATE 200232,"GroupId: 2840644
+Translate: flooring the gas pedal
+MiscInfo: col
+Translate: pedal to the metal
+MiscInfo: col"
+200232,WORD_NOUN,,HIRAGANA,,,べた踏み,べたふみ,,beta fumi,wbijanie w podłogę pedał gazu,kolokwializm,,DUPLICATE 200231,"GroupId: 2840644
 Translate: flooring the gas pedal
 MiscInfo: col
 Translate: pedal to the metal
