@@ -986,7 +986,7 @@ Translate: depth of one's heart"
 200256,WORD_NOUN,,HIRAGANA,,,真正後生動物,しんせいこうせいどうぶつ,,shinsei kousei doubutsu,tkankowce,"zwierzęta wielokomórkowe zbudowane z tkanek, Eumetazoa",,,"GroupId: 2705060
 Translate: eumetazoa"
 200257,WORD_NOUN,,HIRAGANA_KATAKANA,,,直リン,ちょくリン,,choku rin,"bezpośredni link
-bezpośrednie linkowanie",informatyka,,,"GroupId: 2229060
+bezpośrednie linkowanie",informatyka,,DUPLICATE 200291,"GroupId: 2229060
 Translate: direct link
 Translate: direct linking"
 200258,WORD_COUNTER,,HIRAGANA,,,代目,だいめ,,daime,klasyfikator na pokolenia,,,,"GroupId: 2842624
@@ -1076,7 +1076,7 @@ AdditionalInfo: 本物 said backwards"
 200283,WORD_NOUN,,KATAKANA,,,-,ソラリス,,sorarisu,Solaris,ang: Solaris,,,"GroupId: 2306550
 Translate: Solaris"
 200284,WORD_NOUN,,HIRAGANA,,,庭造り,にわつくり,,niwa tsukuri,"ogrodnictwo
-ogrodnik",,,,"GroupId: 2220310
+ogrodnik",,,DUPLICATE 200302,"GroupId: 2220310
 Translate: gardening
 Translate: gardener"
 200285,WORD_NOUN,,HIRAGANA,,,庭づくり,にわづくり,,niwa dukuri,ogrodnictwo,,,,"GroupId: 2220310
@@ -1084,6 +1084,63 @@ Translate: gardening"
 200286,WORD_NOUN,,KATAKANA,,,-,フェイドアウト,,feidoauto,zanikanie,ang: fadeout,,,"GroupId: 2448190
 Translate: fadeout"
 200287,WORD_VERB_U,,HIRAGANA,,,握り込む,にぎりこむ,,nigiri komu,"ściskać
+chwytać
+łapać",,,,"GroupId: 2768170
+Translate: to grip
+Translate: to grasp
+Translate: to squeeze"
+200288,WORD_NOUN,,KATAKANA,,,-,モミジガイ,,momijigai,Astropecten scoparius,gatunek rozgwiazdy,,,"GroupId: 2606100
+Translate: Astropecten scoparius (species of starfish)
+MiscInfo: uk"
+200289,WORD_NOUN,,HIRAGANA,,,情況証拠,じょうきょうしょうこ,,joukyou shouko,"poszlaka
+poszlaki
+dowód pośredni",,,,"GroupId: 1750440
+Translate: circumstantial evidence
+MiscInfo: yoji"
+200290,WORD_NOUN,,KATAKANA,,,-,ブドウネアブラムシ,,budoune aburamushi,filoksera winiec,"mszyca, groźny szkodnik winnic, Daktulosphaira vitifoliae",,,"GroupId: 2786030
+Translate: phylloxera (Daktulosphaira vitifoliae)
+MiscInfo: uk"
+200291,WORD_NOUN,,HIRAGANA_KATAKANA,,,直リン,じかリン,,jika rin,"bezpośredni link
+bezpośrednie linkowanie",informatyka,,DUPLICATE 200257,"GroupId: 2229060
+Translate: direct link
+Translate: direct linking"
+200292,WORD_NOUN,,HIRAGANA,,,-,くうでれ,,kuudere,zachowywanie się obojętnie podczas zakochania,"od クール + デレデレ, mangowy slang",,,"GroupId: 2842646
+Translate: acting indifferent while lovestruck
+MiscInfo: m-sl
+AdditionalInfo: from クール + デレデレ"
+200293,WORD_NOUN,,KATAKANA,,,-,コープス・ペイント,,koopusu peinto,corpse paint,"rodzaj czarno-białego makijażu, szczególnie rozpowszechniony wśród grup muzycznych z gatunku black metal",,,"GroupId: 2836711
+Translate: corpse paint (style of face painting associated with black metal bands)
+Translate: corpsepaint"
+200294,WORD_NOUN,,HIRAGANA,,,蕎麦飯,そばめし,,soba meshi,"soba i ryż gotowany razem z mięsem, warzywami i etc w metalowym naczyniu",,,,"GroupId: 2639110
+Translate: soba and rice cooked together along with meat, vegetables, etc. on a metal plate
+MiscInfo: uk"
+200295,WORD_NOUN,,HIRAGANA,,,にげ溝,にげみぞ,,nige mizo,???,,,,"GroupId: 2659280
+Translate: clearance groove
+Translate: under cut"
+200296,WORD_NOUN,,HIRAGANA,,,逃げみぞ,にげみぞ,,nige mizo,???,,,,"GroupId: 2659280
+Translate: clearance groove
+Translate: under cut"
+200297,WORD_NOUN,,HIRAGANA,,,即乾,そっかん,,sokkan,szybkie suszenie,,,,"GroupId: 2276640
+Translate: drying quickly"
+200298,WORD_EXPRESSION,,HIRAGANA,,,口のきき方,くちのききかた,,kuchi no kiki kata,sposób mówienia,,,,"GroupId: 2254690
+Translate: the way one talks
+Translate: one's way of speaking"
+200299,WORD_EXPRESSION,,HIRAGANA,,,口の効き方,くちのききかた,,kuchi no kiki kata,sposób mówienia,,,,"GroupId: 2254690
+Translate: the way one talks
+Translate: one's way of speaking"
+200300,WORD_NOUN,,HIRAGANA,,,庭作り,にわつくり,,niwa tsukuri,"ogrodnictwo
+ogrodnik",,,DUPLICATE 200303,"GroupId: 2220310
+Translate: gardening
+Translate: gardener"
+200301,WORD_NOUN,,HIRAGANA,,,庭つくり,にわつくり,,niwa tsukuri,"ogrodnictwo
+ogrodnik",,,,"GroupId: 2220310
+Translate: gardening
+Translate: gardener"
+200302,WORD_NOUN,,HIRAGANA,,,庭造り,にわづくり,,niwa dukuri,ogrodnictwo,,,DUPLICATE 200284,"GroupId: 2220310
+Translate: gardening"
+200303,WORD_NOUN,,HIRAGANA,,,庭作り,にわづくり,,niwa dukuri,ogrodnictwo,,,DUPLICATE 200300,"GroupId: 2220310
+Translate: gardening"
+200304,WORD_VERB_U,,HIRAGANA,,,握りこむ,にぎりこむ,,nigiri komu,"ściskać
 chwytać
 łapać",,,,"GroupId: 2768170
 Translate: to grip
