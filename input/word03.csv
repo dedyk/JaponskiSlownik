@@ -1174,7 +1174,7 @@ WORD_ADJECTIVE_NA
 WORD_ADJECTIVE_NO
 WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,情緒纏綿,じょうしょてんめん,,jousho tenmen,"bycie ogarnięty emocjami
-???",,,,"GroupId: 1580520
+???",,,DUPLICATE 200367,"GroupId: 1580520
 Translate: tender sentiments
 MiscInfo: yoji
 Translate: being overcome with emotions
@@ -1187,7 +1187,7 @@ Translate: myotonic dystrophy"
 200315,WORD_NOUN,,HIRAGANA,,,前半国会,ぜんはんこっかい,,zenhan kokkai,sesja parlamentu przeznaczona do stworzenia budżetu,,,,"GroupId: 2827156
 Translate: Diet session up to the creation of the budget"
 200316,"WORD_EXPRESSION
-WORD_NOUN",,HIRAGANA,,,いいとこのお坊ちゃん,いいとこのおぼっちゃん,,ii tokono obocchan,"bogate dziecko
+WORD_NOUN",,HIRAGANA,,,いいとこのお坊ちゃん,いいとこのおぼっちゃん,,ii toko no obocchan,"bogate dziecko
 osoba, która dorastała w bogactwie",,,,"GroupId: 2717140
 Translate: rich kid
 Translate: person who grew up wealthy"
@@ -1223,7 +1223,7 @@ Translate: self-diagnosis"
 Translate: made by one's (own) company"
 200328,WORD_NOUN,,HIRAGANA,,,次々回,じじかい,,jijikai,???,,,,"GroupId: 2426230
 Translate: the time after next"
-200329,WORD_NOUN,,HIRAGANA,,,地水火風,ちすいかふう,,chisuikafuu,"ziemia, woda, ogień, wiatr","pięć żywiołów, buddyzm",,,"GroupId: 2271120
+200329,WORD_NOUN,,HIRAGANA,,,地水火風,ちすいかふう,,chisuikafuu,"ziemia, woda, ogień, wiatr","pięć żywiołów, buddyzm",,DUPLICATE 200374,"GroupId: 2271120
 Translate: earth, water, fire, and wind (the four elements)"
 200330,WORD_NOUN,,HIRAGANA,,,不定休,ふていきゅう,,futeikyuu,"bez ustalonych dni wolnych
 nie mających regularnych dni zamknięcia
@@ -1267,7 +1267,7 @@ Translate: punching"
 200338,WORD_NOUN,,KATAKANA,,,-,リカバー,,rikabaa,"odzyskiwanie
 powracanie do zdrowia",ang: recover,,,"GroupId: 1141080
 Translate: recover"
-200339,WORD_NOUN,,HIRAGANA,,,綿作,めんさく,,mensaku,produkcja bawełny,,,,"GroupId: 2410420
+200339,WORD_NOUN,,HIRAGANA,,,綿作,めんさく,,mensaku,produkcja bawełny,,,DUPLICATE 200378,"GroupId: 2410420
 Translate: cotton production"
 200340,WORD_NOUN,,HIRAGANA,,,履行遅滞,りこうちたい,,rikou chitai,???,prawo,,,"GroupId: 2828641
 Translate: delay in performance
@@ -1296,11 +1296,12 @@ Translate: proofreader"
 kobieta obsługująca windę",ang: elevator girl,,,"GroupId: 2837238
 Translate: female elevator operator
 Translate: female lift attendant"
-200348,WORD_NOUN,,KATAKANA,,,-,タイタンオオウスバカミキリ,,taitan'oousu bakamikiri,titanus giganteus,"gatunek chrząszcza z rodziny kózkowatych, spotykany w lasach Amazonii. Osobniki tego gatunku są jednymi z największych współcześnie żyjących chrząszczy",,,"GroupId: 2829792
+200348,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,タイタンオオウスバカミキリ,,taitan'oousu bakamikiri,titanus giganteus,"gatunek chrząszcza z rodziny kózkowatych, spotykany w lasach Amazonii. Osobniki tego gatunku są jednymi z największych współcześnie żyjących chrząszczy",,,"GroupId: 2829792
 Translate: titan beetle (Titanus giganteus)"
 200349,WORD_NOUN,,HIRAGANA,,,金蒔絵,きんまきえ,,kinmakie,złoty lakier,,,,"GroupId: 1951010
 Translate: gold lacquer"
-200350,WORD_NOUN,,HIRAGANA,,,文机,ふづくえ,,fudukue,biurko w japońskim stylu,,,,"GroupId: 2670220
+200350,WORD_NOUN,,HIRAGANA,,,文机,ふづくえ,,fu dukue,biurko w japońskim stylu,,,"DUPLICATE 200380
+DUPLICATE 200381","GroupId: 2670220
 Translate: Japanese-style writing desk"
 200351,WORD_NOUN,,HIRAGANA,,,裏鬼門,うらきもん,,urakimon,pechowa kwarta (południowo-wschodnia),,,,"GroupId: 1550230
 Translate: unlucky quarter (southwest)"
@@ -1354,3 +1355,121 @@ entuzjazm",,,,"GroupId: 1832370
 Translate: degree of heat
 Translate: temperature
 Translate: enthusiasm"
+200365,WORD_NOUN,,HIRAGANA,,,瓜実蝿,うりみばえ,,urimibae,Bactrocera cucurbitae,owad,,,"GroupId: 2240610
+Translate: melon fly (Bactrocera cucurbitae)
+MiscInfo: uk"
+200366,WORD_NOUN,,KATAKANA,,,-,ウリミバエ,,urimibae,Bactrocera cucurbitae,owad,,,"GroupId: 2240610
+Translate: melon fly (Bactrocera cucurbitae)
+MiscInfo: uk"
+200367,"WORD_NOUN
+WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,情緒纏綿,じょうちょてんめん,,joucho tenmen,"bycie ogarnięty emocjami
+???",,,DUPLICATE 200313,"GroupId: 1580520
+Translate: tender sentiments
+MiscInfo: yoji
+Translate: being overcome with emotions
+MiscInfo: yoji
+Translate: having a tender feeling (for a person)
+MiscInfo: yoji"
+200368,"WORD_NOUN
+WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,情緒てんめん,じょうしょてんめん,,jousho tenmen,"bycie ogarnięty emocjami
+???",,,DUPLICATE 200369,"GroupId: 1580520
+Translate: tender sentiments
+MiscInfo: yoji
+Translate: being overcome with emotions
+MiscInfo: yoji
+Translate: having a tender feeling (for a person)
+MiscInfo: yoji"
+200369,"WORD_NOUN
+WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,情緒てんめん,じょうちょてんめん,,joucho tenmen,"bycie ogarnięty emocjami
+???",,,DUPLICATE 200368,"GroupId: 1580520
+Translate: tender sentiments
+MiscInfo: yoji
+Translate: being overcome with emotions
+MiscInfo: yoji
+Translate: having a tender feeling (for a person)
+MiscInfo: yoji"
+200370,"WORD_NOUN
+WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,情緒纒綿,じょうしょてんめん,,jousho tenmen,"bycie ogarnięty emocjami
+???",,,DUPLICATE 200371,"GroupId: 1580520
+Translate: tender sentiments
+MiscInfo: yoji
+Translate: being overcome with emotions
+MiscInfo: yoji
+Translate: having a tender feeling (for a person)
+MiscInfo: yoji"
+200371,"WORD_NOUN
+WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,情緒纒綿,じょうちょてんめん,,joucho tenmen,"bycie ogarnięty emocjami
+???",,,DUPLICATE 200370,"GroupId: 1580520
+Translate: tender sentiments
+MiscInfo: yoji
+Translate: being overcome with emotions
+MiscInfo: yoji
+Translate: having a tender feeling (for a person)
+MiscInfo: yoji"
+200372,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,いい所のお坊ちゃん,いいとこのおぼっちゃん,,ii toko no obocchan,"bogate dziecko
+osoba, która dorastała w bogactwie",,,,"GroupId: 2717140
+Translate: rich kid
+Translate: person who grew up wealthy"
+200373,WORD_VERB_U,,HIRAGANA,,,向けなおす,むけなおす,,muke naosu,zmienić kierunek,,,,"GroupId: 1277120
+Translate: to change direction"
+200374,WORD_NOUN,,HIRAGANA,,,地水火風,じすいかふう,,jisuikafuu,"ziemia, woda, ogień, wiatr","pięć żywiołów, buddyzm",,DUPLICATE 200329,"GroupId: 2271120
+Translate: earth, water, fire, and wind (the four elements)"
+200375,WORD_NOUN,,HIRAGANA,,,廻雪,かいせつ,,kaisetsu,"śnieg wirujący na wietrze
+kunsztowny ruch rękawa podczas tańca (archaizm)",,,,"GroupId: 2842737
+Translate: snow whirling in the wind
+Translate: skillful twirling motion of sleeves while dancing
+MiscInfo: arch"
+200376,"WORD_INTERJECTION
+WORD_ADVERB",,HIRAGANA,,,-,ばぶう,,babuu,"łaa
+łaałaa
+buuhuu",reprezentacja dźwięku wydawana przez dziecko,,,"GroupId: 2842618
+Translate: waa
+MiscInfo: on-mim
+AdditionalInfo: represents sounds made by a baby
+Translate: waawaa
+MiscInfo: on-mim
+AdditionalInfo: represents sounds made by a baby
+Translate: boohoo
+MiscInfo: on-mim
+AdditionalInfo: represents sounds made by a baby"
+200377,"WORD_INTERJECTION
+WORD_ADVERB",,HIRAGANA_KATAKANA,,,-,ばぶー,,babuu,"łaa
+łaałaa
+buuhuu",reprezentacja dźwięku wydawana przez dziecko,,,"GroupId: 2842618
+Translate: waa
+MiscInfo: on-mim
+AdditionalInfo: represents sounds made by a baby
+Translate: waawaa
+MiscInfo: on-mim
+AdditionalInfo: represents sounds made by a baby
+Translate: boohoo
+MiscInfo: on-mim
+AdditionalInfo: represents sounds made by a baby"
+200378,WORD_NOUN,,HIRAGANA,,,綿作,わたさく,,watasaku,produkcja bawełny,,,DUPLICATE 200339,"GroupId: 2410420
+Translate: cotton production"
+200379,WORD_NOUN,,KATAKANA,,,-,エレベーター・ガール,,erebeetaa gaaru,"operator windy
+kobieta obsługująca windę",ang: elevator girl,,,"GroupId: 2837238
+Translate: female elevator operator
+Translate: female lift attendant"
+200380,WORD_NOUN,,HIRAGANA,,,文机,ふみづくえ,,fumi dukue,biurko w japońskim stylu,,,"DUPLICATE 200350
+DUPLICATE 200381","GroupId: 2670220
+Translate: Japanese-style writing desk"
+200381,WORD_NOUN,,HIRAGANA,,,文机,ふんづくえ,,fun dukue,biurko w japońskim stylu,,,"DUPLICATE 200350
+DUPLICATE 200380","GroupId: 2670220
+Translate: Japanese-style writing desk"
