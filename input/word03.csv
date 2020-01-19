@@ -1511,7 +1511,7 @@ DUPLICATE 200380","GroupId: 2670220
 Translate: Japanese-style writing desk"
 200382,WORD_EXPRESSION,,HIRAGANA,,,場合に応じて,ばあいにおうじて,,baai ni oujite,zgodnie z sytuacją,,,,"GroupId: 1903130
 Translate: in accordance with the situation"
-200383,WORD_NOUN,,KATAKANA_HIRAGANA,,,アジア蟇,アジアひきがえる,,ajia hikigaeru,Bufo gargarizans,gatunek ropuchy,,,"GroupId: 2199460
+200383,WORD_NOUN,,KATAKANA_HIRAGANA,,,アジア蟇,アジアひきがえる,,ajia hiki gaeru,Bufo gargarizans,gatunek ropuchy,,,"GroupId: 2199460
 Translate: Asiatic toad (Bufo gargarizans)
 MiscInfo: uk"
 200384,WORD_NOUN,,HIRAGANA,,,評価の尺度,ひょうかのしゃくど,,hyouka no shakudo,miara oceny,,,,"GroupId: 1921650
@@ -1557,7 +1557,7 @@ Translate: looking dumbfounded"
 Translate: SYMBIOS"
 200394,WORD_EXPRESSION,,HIRAGANA,,,三方よし,さんぽうよし,,sanpou yoshi,"wszyscy mają się dobrze (np. kupujący, sprzedający i społeczeństwo)
 trójstronna satysfakcja
-wszystkie trzy strony mają się dobrze",,,,"GroupId: 2830326
+wszystkie trzy strony mają się dobrze",,,DUPLICATE 200441,"GroupId: 2830326
 Translate: everybody doing well (e.g. purchaser, buyer and society)
 Translate: three-way satisfaction
 Translate: all three parties doing well"
@@ -1610,7 +1610,7 @@ Translate: battalion commander"
 zawsze będący o czasie",,,,"GroupId: 2842607
 Translate: never being late (for school, work, etc.)
 Translate: always being on time"
-200410,WORD_NOUN,,HIRAGANA,,,下げまん,さげまん,,sageman,"kobieta, która rzekomo przynosi pech mężczyźnie, z którym jest blisko lub z którym uprawia seks",kolokwializm,,,"GroupId: 2842701
+200410,WORD_NOUN,,HIRAGANA,,,下げまん,さげまん,,sage man,"kobieta, która rzekomo przynosi pech mężczyźnie, z którym jest blisko lub z którym uprawia seks",kolokwializm,,,"GroupId: 2842701
 Translate: woman purported to bring bad luck to the man she is near or has sex with
 MiscInfo: col
 MiscInfo: uk"
@@ -1645,10 +1645,10 @@ przebijanie otworów",np. matrycą,,,"GroupId: 2036030
 Translate: punching (e.g. with a die)"
 200419,WORD_NOUN,,HIRAGANA,,,不法投棄,ふほうとうき,,fuhou touki,nielegalne wysypisko,np. śmieci,,,"GroupId: 1946040
 Translate: unlawful dumping (e.g. of garbage)"
-200420,WORD_NOUN,,HIRAGANA,,,国音字母,ちゅうおんじぼ,,chuuon jibo,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,,"GroupId: 2833253
+200420,WORD_NOUN,,HIRAGANA,,,国音字母,ちゅうおんじぼ,,chuuon jibo,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,DUPLICATE 200451,"GroupId: 2833253
 Translate: Bopomofo
 Translate: Chinese transliteration system now used mainly in Taiwan"
-200421,WORD_NOUN,,HIRAGANA,,,注音符号,ちゅういんふごう,,chuuin fugou,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,,"GroupId: 2833220
+200421,WORD_NOUN,,HIRAGANA,,,注音符号,ちゅういんふごう,,chuuin fugou,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,DUPLICATE 200452,"GroupId: 2833220
 Translate: Bopomofo
 Translate: Zhuyin fuhao
 Translate: Chinese transliteration system now used mainly in Taiwan"
@@ -1725,3 +1725,139 @@ Translate: shearing machine"
 200437,WORD_EXPRESSION,,HIRAGANA,,,-,なめるな,,nameru na,"nie lekceważ mnie
 traktuj mnie serio
 nie patrz na mnie z góry",negacja oraz forma rozkazująca czasownika なめる,IGNORE_NO_JMEDICT,,
+200438,WORD_NOUN,,KATAKANA,,,-,アジアヒキガエル,,ajia hiki gaeru,Bufo gargarizans,gatunek ropuchy,,,"GroupId: 2199460
+Translate: Asiatic toad (Bufo gargarizans)
+MiscInfo: uk"
+200439,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,大人かわいい,おとなかわいい,,otona kawaii,"uroczy-dorosły
+dorosły, ale dziewczęcy
+modny styl dorosłych kobiet charakteryzujący się makijażem i ubraniem, które subtelnie podkreślają jej urok",,,,"GroupId: 2593500
+Translate: adult-cute
+Translate: grown-up but girlish
+Translate: fashion style of adult women characterized by makeup and clothing that subtly emphasizes cuteness"
+200440,WORD_NOUN,,HIRAGANA,,,あきれ顔,あきれがお,,akire gao,"wygląd zdumienia
+wyglądać zaskoczony",,,,"GroupId: 1748030
+Translate: look of amazement
+Translate: looking dumbfounded"
+200441,WORD_EXPRESSION,,HIRAGANA,,,三方よし,さんぼうよし,,sanbou yoshi,"wszyscy mają się dobrze (np. kupujący, sprzedający i społeczeństwo)
+trójstronna satysfakcja
+wszystkie trzy strony mają się dobrze",,,DUPLICATE 200394,"GroupId: 2830326
+Translate: everybody doing well (e.g. purchaser, buyer and society)
+Translate: three-way satisfaction
+Translate: all three parties doing well"
+200442,WORD_EXPRESSION,,HIRAGANA,,,三方良し,さんぽうよし,,sanpou yoshi,"wszyscy mają się dobrze (np. kupujący, sprzedający i społeczeństwo)
+trójstronna satysfakcja
+wszystkie trzy strony mają się dobrze",,,DUPLICATE 200443,"GroupId: 2830326
+Translate: everybody doing well (e.g. purchaser, buyer and society)
+Translate: three-way satisfaction
+Translate: all three parties doing well"
+200443,WORD_EXPRESSION,,HIRAGANA,,,三方良し,さんぼうよし,,sanbou yoshi,"wszyscy mają się dobrze (np. kupujący, sprzedający i społeczeństwo)
+trójstronna satysfakcja
+wszystkie trzy strony mają się dobrze",,,DUPLICATE 200442,"GroupId: 2830326
+Translate: everybody doing well (e.g. purchaser, buyer and society)
+Translate: three-way satisfaction
+Translate: all three parties doing well"
+200444,WORD_NOUN,,KATAKANA,,,-,ウスバカゲロウ,,usubaka gerou,"mrówkolwowate
+mrówkolwy","najliczniejsza w gatunki i najszerzej na świecie rozprzestrzeniona rodzina owadów z rzędu sieciarek, blisko spokrewniona z żupałkowatymi, od których różnią się krótszymi czułkami osobników dorosłych, szczególnie Hagenomyia micans",,,"GroupId: 2035920
+Translate: ant lion (esp. species Hagenomyia micans)
+MiscInfo: uk"
+200445,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,べろべろ舐める,べろべろなめる,,bero bero nameru,"wylizać
+chłeptać
+chlipać
+wychlipać",,,,"GroupId: 1011520
+Translate: to lick something up
+MiscInfo: uk
+Translate: to lap something up
+MiscInfo: uk"
+200446,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,べろべろ嘗める,べろべろなめる,,bero bero nameru,"wylizać
+chłeptać
+chlipać
+wychlipać",,,,"GroupId: 1011520
+Translate: to lick something up
+MiscInfo: uk
+Translate: to lap something up
+MiscInfo: uk"
+200447,WORD_NOUN,,HIRAGANA_KATAKANA,,,下げマン,さげマン,,sage man,"kobieta, która rzekomo przynosi pech mężczyźnie, z którym jest blisko lub z którym uprawia seks",kolokwializm,,,"GroupId: 2842701
+Translate: woman purported to bring bad luck to the man she is near or has sex with
+MiscInfo: col
+MiscInfo: uk"
+200448,WORD_NOUN,,KATAKANA,,,-,サゲマン,,sage man,"kobieta, która rzekomo przynosi pech mężczyźnie, z którym jest blisko lub z którym uprawia seks",kolokwializm,,,"GroupId: 2842701
+Translate: woman purported to bring bad luck to the man she is near or has sex with
+MiscInfo: col
+MiscInfo: uk"
+200449,WORD_NOUN,,HIRAGANA,,,鍋掴み,なべつかみ,,nabe tsukami,rękawica kuchenna,,,,"GroupId: 2426290
+Translate: potholder
+Translate: oven glove"
+200450,WORD_NOUN,,HIRAGANA,,,打抜き,うちぬき,,uchi nuki,"dziurkowanie
+przebijanie otworów",np. matrycą,,,"GroupId: 2036030
+Translate: punching (e.g. with a die)"
+200451,WORD_NOUN,,HIRAGANA,,,国音字母,ちゅういんじぼ,,chuuin jibo,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,DUPLICATE 200420,"GroupId: 2833253
+Translate: Bopomofo
+Translate: Chinese transliteration system now used mainly in Taiwan"
+200452,WORD_NOUN,,HIRAGANA,,,注音符号,ちゅうおんふごう,,chuuon fugou,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,DUPLICATE 200421,"GroupId: 2833220
+Translate: Bopomofo
+Translate: Zhuyin fuhao
+Translate: Chinese transliteration system now used mainly in Taiwan"
+200453,WORD_EXPRESSION,,HIRAGANA,,,有ろうことか,あろうことか,,arou koto ka,wszystkich rzeczy,,,,"GroupId: 2535860
+Translate: of all things
+MiscInfo: uk"
+200454,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,人目に付かない,ひとめにつかない,,hitome ni tsukanai,"niedostrzeżony
+niezauważony
+niewidoczny
+poza zasięgiem głosu
+nierzucający się w oczy
+prywatny",,,,"GroupId: 2827595
+Translate: unperceived
+Translate: unnoticed
+Translate: unnoted
+Translate: out-of-the-way
+Translate: out of sight
+Translate: inconspicuous
+Translate: private"
+200455,WORD_VERB_U,,HIRAGANA,,,買い煽る,かいあおる,,kai aoru,"podbijać cenę
+wykosić konkurencję (uzyskać monopol, zmonopolizować rynek)",,,,"GroupId: 1589640
+Translate: to bid up
+Translate: to corner the market"
+200456,WORD_NOUN,,HIRAGANA,,,-,へちむくれ,,hechi mukure,"nieatrakcyjna osoba
+tchórz
+słabeusz
+słaby człowiek",poniżająco,,,"GroupId: 2406700
+Translate: unattractive person
+MiscInfo: derog
+Translate: coward
+MiscInfo: derog
+Translate: weakling
+MiscInfo: derog"
+200457,WORD_NOUN,,HIRAGANA,,,-,へしむくれ,,heshi mukure,"nieatrakcyjna osoba
+tchórz
+słabeusz
+słaby człowiek",poniżająco,,,"GroupId: 2406700
+Translate: unattractive person
+MiscInfo: derog
+Translate: coward
+MiscInfo: derog
+Translate: weakling
+MiscInfo: derog"
+200458,WORD_NOUN,,HIRAGANA,,,-,へちゃもくれ,,hecha mokure,"nieatrakcyjna osoba
+tchórz
+słabeusz
+słaby człowiek",poniżająco,,,"GroupId: 2406700
+Translate: unattractive person
+MiscInfo: derog
+Translate: coward
+MiscInfo: derog
+Translate: weakling
+MiscInfo: derog"
+200459,WORD_NOUN,,HIRAGANA,,,-,へちむくり,,hechi mukuri,"nieatrakcyjna osoba
+tchórz
+słabeusz
+słaby człowiek",poniżająco,,,"GroupId: 2406700
+Translate: unattractive person
+MiscInfo: derog
+Translate: coward
+MiscInfo: derog
+Translate: weakling
+MiscInfo: derog"
