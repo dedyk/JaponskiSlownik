@@ -2744,7 +2744,7 @@ Translate: tightfisted
 Translate: stingy
 Translate: miserly
 Translate: small-minded"
-200667,WORD_NOUN,,HIRAGANA,,,逆換,ぎゃっかん,,gyakkan,(logiczna) inwersja,,,,"GroupId: 2160810
+200667,WORD_NOUN,,HIRAGANA,,,逆換,ぎゃっかん,,gyakkan,(logiczna) inwersja,,,DUPLICATE 200726,"GroupId: 2160810
 Translate: (logical) inversion"
 200668,WORD_NOUN,,KATAKANA,,,-,ギャッベ,,gyabbe,Gabbeh,rodzaj perskiego dywanu,,,"GroupId: 2534280
 Translate: Gabbeh (type of Persian carpet)
@@ -2898,7 +2898,7 @@ Translate: mochi with sansho (sichuan pepper)"
 Translate: mochi
 MiscInfo: fem
 MiscInfo: arch"
-200716,WORD_NOUN,,HIRAGANA,,,切山椒,きりざんしょう,,kirizanshou,słodzone mochi przyprawione japońską papryką,,,,"GroupId: 2624400
+200716,WORD_NOUN,,HIRAGANA,,,切山椒,きりざんしょう,,kiri zanshou,słodzone mochi przyprawione japońską papryką,,,,"GroupId: 2624400
 Translate: sweetened mochi flavoured with Japanese pepper"
 200717,WORD_NOUN,,HIRAGANA,,,鶴の子餅,つるのこもち,,tsuru no komochi,czerwone i białe mochi w kształcie jajka,,,,"GroupId: 2625800
 Translate: red and white egg-shaped mochi"
@@ -2912,7 +2912,7 @@ Translate: steamed unflavoured glutinous rice
 Translate: mochi rice"
 200721,WORD_NOUN,,HIRAGANA,,,水の餅,みずのもち,,mizu no mochi,mochi zaoferowane kiedy czerpie się pierwszą wodę w roku,,,,"GroupId: 2570430
 Translate: mochi offered when drawing the first water of the year"
-200722,WORD_NOUN,,HIRAGANA,,,黄金餅,こがねもち,,koganemochi,???,mało znane słowo,,,"GroupId: 2624580
+200722,WORD_NOUN,,HIRAGANA,,,黄金餅,こがねもち,,kogane mochi,???,mało znane słowo,,,"GroupId: 2624580
 Translate: millet dough cake
 MiscInfo: obsc
 Translate: millet mochi
@@ -2921,3 +2921,35 @@ MiscInfo: obsc"
 Translate: Day-of-the-Boar mochi (made with new grains)"
 200724,WORD_NOUN,,HIRAGANA,,,清元節,きよもとぶし,,kiyomotobushi,???,,,,"GroupId: 1607870
 Translate: style of jōruri narrative performance"
+200725,WORD_NOUN,,KATAKANA,,,-,モリアザミ,,moriazami,Cirsium dipsacolepis,roślina,,,"GroupId: 2640420
+Translate: Cirsium dipsacolepis (perennial plant of the thistle family)"
+200726,WORD_NOUN,,HIRAGANA,,,逆換,ぎゃくかん,,gyakukan,(logiczna) inwersja,,,DUPLICATE 200667,"GroupId: 2160810
+Translate: (logical) inversion"
+200727,WORD_NOUN,,KATAKANA,,,-,フクロモモンガダマシ,,fukuromomonga damashi,Lotopałanka Leadbeatera,"zwierzę, Gymnobelideus leadbeateri",,,"GroupId: 2768270
+Translate: Leadbeater's possum (Gymnobelideus leadbeateri)
+MiscInfo: uk"
+200728,WORD_NOUN,,HIRAGANA,,,調製豆乳,ちょうせいとうにゅう,,chousei tounyuu,"przetworzone mleko sojowe
+przygotowane mleko sojowe",,,,"GroupId: 2841003
+Translate: processed soy milk
+Translate: adjusted soy milk
+Translate: treated soy milk"
+200729,WORD_NOUN,,HIRAGANA,,,婚姻手続き,こんいんてつづき,,kon'in tetsuduki,małżeńskie procedury,,,,"GroupId: 2158700
+Translate: marriage procedures
+Translate: procedure of marriage"
+200730,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,小耳にはさむ,こみみにはさむ,,komimi ni hasamu,usłyszeć przypadkiem,wyrażenie idiomatyczne,,,"GroupId: 1348240
+Translate: to happen to hear
+MiscInfo: id
+Translate: to overhear
+MiscInfo: id"
+200731,WORD_NOUN,,HIRAGANA,,,男性徒,だんせいと,,danseito,"student (męski)
+uczeń (chłopak)",,,,"GroupId: 2104300
+Translate: male student
+Translate: schoolboy"
+200732,WORD_NOUN,,HIRAGANA,,,切り山椒,きりざんしょう,,kiri zanshou,słodzone mochi przyprawione japońską papryką,,,,"GroupId: 2624400
+Translate: sweetened mochi flavoured with Japanese pepper"
+200733,WORD_NOUN,,HIRAGANA,,,黄金餠,こがねもち,,kogane mochi,???,mało znane słowo,,,"GroupId: 2624580
+Translate: millet dough cake
+MiscInfo: obsc
+Translate: millet mochi
+MiscInfo: obsc"
