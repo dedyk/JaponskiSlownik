@@ -3226,7 +3226,7 @@ Translate: under the leadership of"
 wodorowęglan sodu",,,,"GroupId: 2654600
 Translate: baking soda
 Translate: bicarbonate of soda"
-200819,WORD_NOUN,,HIRAGANA,,,袋八目,ふくろやつめ,,fukuroyatsume,minóg południowy,"jedyny gatunek minoga z rodziny Geotriidae i rodzaju Geotria, dla których jest typem nomenklatorycznym, Geotria australis",,,"GroupId: 2743700
+200819,WORD_NOUN,,HIRAGANA,,,袋八目,ふくろやつめ,,fukuro yatsume,minóg południowy,"jedyny gatunek minoga z rodziny Geotriidae i rodzaju Geotria, dla których jest typem nomenklatorycznym, Geotria australis",,,"GroupId: 2743700
 Translate: pouched lamprey (Geotria australis)
 MiscInfo: uk
 Translate: wide-mouthed lamprey
@@ -3293,7 +3293,7 @@ MiscInfo: col
 Translate: bombarded with verbal abuse
 MiscInfo: col"
 200833,WORD_NOUN,,HIRAGANA,,,太上法皇,だいじょうほうおう,,daijou houou,"klasztorny cesarz
-były cesarza, która został mnichem",honoryfikatywnie,,,"GroupId: 2841970
+były cesarza, która został mnichem",honoryfikatywnie,,DUPLICATE 200867,"GroupId: 2841970
 Translate: cloistered emperor
 MiscInfo: hon
 Translate: ex-emperor who has become a monk
@@ -3366,7 +3366,7 @@ syn wolności",,,,"GroupId: 2039280
 Translate: free person
 Translate: free spirit
 Translate: son of freedom"
-200850,WORD_NOUN,,HIRAGANA,,,白鳥座,はくちょうざ,,hakuchouza,Gwiazdozbiór Łabędzia,jeden z bardziej wyrazistych gwiazdozbiorów nieba północnego,,,"GroupId: 1841520
+200850,WORD_NOUN,,HIRAGANA,,,白鳥座,はくちょうざ,,hakuchou za,Gwiazdozbiór Łabędzia,jeden z bardziej wyrazistych gwiazdozbiorów nieba północnego,,,"GroupId: 1841520
 Translate: Cygnus (constellation)
 Translate: the Swan"
 200851,WORD_VERB_RU,,HIRAGANA,,,浮び出る,うかびでる,,ukabi deru,"ujawniać się
@@ -3390,3 +3390,111 @@ Translate: karuta game in which players race to grab cards associated with a giv
 200858,WORD_NOUN,,KATAKANA_HIRAGANA,,,ペン字,ペンじ,,pen ji,znak napisany piórem,,,,"GroupId: 2427980
 Translate: pen writing
 Translate: character written with a pen"
+200859,WORD_EXPRESSION,,HIRAGANA,,,已むに已まれず,やむにやまれず,,yamu ni yamarezu,"bez możliwości pomocy sobie
+wbrew własnej woli
+???",,,,"GroupId: 2119080
+Translate: without being able to help oneself
+Translate: against one's will
+Translate: compelling
+Translate: pressing
+Translate: irresistible"
+200860,WORD_ADJECTIVE_I,,HIRAGANA,,,面当がましい,つらあてがましい,,tsura ate ga mashii,"złośliwy
+dokuczliwy
+uszczypliwy",,,,"GroupId: 2585490
+Translate: spiteful
+Translate: snide"
+200861,WORD_NOUN,,KATAKANA,,,-,フクロヤツメ,,fukuro yatsume,minóg południowy,"jedyny gatunek minoga z rodziny Geotriidae i rodzaju Geotria, dla których jest typem nomenklatorycznym, Geotria australis",,,"GroupId: 2743700
+Translate: pouched lamprey (Geotria australis)
+MiscInfo: uk
+Translate: wide-mouthed lamprey
+MiscInfo: uk"
+200862,WORD_NOUN,,HIRAGANA,,,舟人,ふなびと,,funabito,"marynarz
+przewoźnik (łodzią)
+pasażer",,,,"GroupId: 1653640
+Translate: sailor
+Translate: boatman
+Translate: passenger"
+200863,"WORD_NOUN
+WORD_EXPRESSION",,HIRAGANA,,,いろは順,いろはじゅん,,iroha jun,"kolejność iroha
+tradycyjna kolejność japońskiego sylabariusza (oparty na buddyjskim poemacie)",,,,"GroupId: 2099720
+Translate: iroha order
+Translate: traditional ordering of Japanese syllabaries (based on a Buddhist poem)"
+200864,"WORD_NOUN
+WORD_EXPRESSION",,HIRAGANA,,,色は順,いろはじゅん,,iroha jun,"kolejność iroha
+tradycyjna kolejność japońskiego sylabariusza (oparty na buddyjskim poemacie)",,,,"GroupId: 2099720
+Translate: iroha order
+Translate: traditional ordering of Japanese syllabaries (based on a Buddhist poem)"
+200865,"WORD_NOUN
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,イロハ順,イロハじゅん,,iroha jun,"kolejność iroha
+tradycyjna kolejność japońskiego sylabariusza (oparty na buddyjskim poemacie)",,,,"GroupId: 2099720
+Translate: iroha order
+Translate: traditional ordering of Japanese syllabaries (based on a Buddhist poem)"
+200866,WORD_ADJECTIVE_NA,,HIRAGANA,,,-,ぼっこぼこ,,bokko boko,"poważnie pobity (zwykle jako ボッコボコにする, ボッコボコにされる, stanowcza forma od ぼこぼこ)
+wielokrotnie uderzony i kopnięty (zwykle jako ボッコボコにする, ボッコボコにされる, stanowcza forma od ぼこぼこ)
+całkowicie pokonany (zwykle jako ボッコボコにする, ボッコボコにされる, stanowcza forma od ぼこぼこ)
+atakowany bezlitośnie (słowami)
+ostro krytykowany
+bombardowany zniewagami",kolokwializm,,,"GroupId: 2756750
+Translate: severely beaten up
+MiscInfo: col
+AdditionalInfo: usu. as ボッコボコにする, ボッコボコにされる, etc.; emphatic form of ぼこぼこ
+Translate: repeatedly punched and kicked
+MiscInfo: col
+AdditionalInfo: usu. as ボッコボコにする, ボッコボコにされる, etc.; emphatic form of ぼこぼこ
+Translate: thoroughly defeated
+MiscInfo: col
+AdditionalInfo: usu. as ボッコボコにする, ボッコボコにされる, etc.; emphatic form of ぼこぼこ
+Translate: attacked relentlessly (with words)
+MiscInfo: col
+Translate: fiercely criticised
+MiscInfo: col
+Translate: bombarded with verbal abuse
+MiscInfo: col"
+200867,WORD_NOUN,,HIRAGANA,,,太上法皇,だじょうほうおう,,dajou houou,"klasztorny cesarz
+były cesarza, która został mnichem",honoryfikatywnie,,DUPLICATE 200833,"GroupId: 2841970
+Translate: cloistered emperor
+MiscInfo: hon
+Translate: ex-emperor who has become a monk
+MiscInfo: hon"
+200868,WORD_ADVERB,,HIRAGANA,,,-,づんと,,dunto,"dużo
+wiele
+wielce
+wyraźnie
+wcale nie (z czasownikiem w formie przeczącej)
+zupełnie nie (z czasownikiem w formie przeczącej)
+szybko i energicznie
+bez wahania",,,,"GroupId: 2454120
+Translate: much
+Translate: remarkably
+Translate: noticeably
+Translate: not at all (with neg. verb)
+Translate: quickly and vigorously
+Translate: unhesitatingly"
+200869,WORD_NOUN,,HIRAGANA,,,新漬け,しんづけ,,shinduke,świeżo marynowane warzywa,,,,"GroupId: 2524350
+Translate: freshly pickled vegetables"
+200870,WORD_NOUN,,KATAKANA,,,-,ゾウガメ,,zougame,olbrzymi żółw,,,,"GroupId: 2464770
+Translate: giant tortoise
+MiscInfo: uk"
+200871,WORD_NOUN,,KATAKANA,,,-,セレンディピティ,,serendipiti,"szczęśliwy traf
+szczęśliwy zbieg okoliczności",ang: serendipity,,,"GroupId: 2473420
+Translate: serendipity"
+200872,WORD_NOUN,,HIRAGANA,,,蝦錠,えびじょう,,ebijou,kłódka,,,,"GroupId: 1772690
+Translate: padlock"
+200873,WORD_NOUN,,HIRAGANA,,,はくちょう座,はくちょうざ,,hakuchou za,Gwiazdozbiór Łabędzia,jeden z bardziej wyrazistych gwiazdozbiorów nieba północnego,,,"GroupId: 1841520
+Translate: Cygnus (constellation)
+Translate: the Swan"
+200874,WORD_VERB_RU,,HIRAGANA,,,浮かび出る,うかびでる,,ukabi deru,"ujawniać się
+wynurzać się",,,,"GroupId: 2462740
+Translate: to surface"
+200875,WORD_VERB_RU,,HIRAGANA,,,うかび出る,うかびでる,,ukabi deru,"ujawniać się
+wynurzać się",,,,"GroupId: 2462740
+Translate: to surface"
+200876,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,日が射す,ひがさす,,hi ga sasu,świecić,o słońcu,,,"GroupId: 2273190
+Translate: to shine (of the Sun)"
+200877,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,陽が差す,ひがさす,,hi ga sasu,świecić,o słońcu,,,"GroupId: 2273190
+Translate: to shine (of the Sun)"
+200878,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,陽が射す,ひがさす,,hi ga sasu,świecić,o słońcu,,,"GroupId: 2273190
+Translate: to shine (of the Sun)"
