@@ -3577,8 +3577,7 @@ Translate: ancestral character"
 200902,WORD_NOUN,,HIRAGANA,,,疏注,そちゅう,,sochuu,"notatki
 komentarz
 uwaga
-adnotacja
-uwaga",,,,"GroupId: 2826257
+adnotacja",,,,"GroupId: 2826257
 Translate: notes
 Translate: comment
 Translate: remark
@@ -3625,7 +3624,7 @@ Translate: dog sled"
 Translate: field ration (Sengoku period)"
 200912,WORD_NOUN,,HIRAGANA,,,馬防柵,ばぼうさく,,babousaku,palisada przeciw kawalerii,okres Sengoku,,,"GroupId: 2840095
 Translate: anti-cavalry palisade (Sengoku period)"
-200913,WORD_NOUN,,HIRAGANA,,,侍大将,さぶらいだいしょう,,saburai daishou,samurajski generał,szczególnie podczas okresu Sengoku,,,"GroupId: 2825861
+200913,WORD_NOUN,,HIRAGANA,,,侍大将,さぶらいだいしょう,,saburai daishou,samurajski generał,szczególnie podczas okresu Sengoku,,DUPLICATE 200943,"GroupId: 2825861
 Translate: samurai general (esp. during the Sengoku period)"
 200914,WORD_NOUN,,HIRAGANA,,,赤備え,あかぞなえ,,aka zonae,żołnierze ubrani w czerwone zbroje,okresy Sengoku i Edo,,,"GroupId: 2840165
 Translate: troops outfitted with red armor (Sengoku and Edo periods)"
@@ -3671,7 +3670,7 @@ Translate: dayflower"
 200928,WORD_NOUN,,HIRAGANA,,,一般原則,いっぱんげんそく,,ippan gensoku,zasady ogólne,,,,"GroupId: 2341410
 Translate: general principles
 Translate: broad principles"
-200929,WORD_NOUN,,HIRAGANA,,,翼幅,よくふく,,yokufuku,rozpiętość skrzydeł,,,,"GroupId: 2795660
+200929,WORD_NOUN,,HIRAGANA,,,翼幅,よくふく,,yokufuku,rozpiętość skrzydeł,,,DUPLICATE 200945,"GroupId: 2795660
 Translate: wingspan"
 200930,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,真向こう,まむこう,,mamu kou,"na przeciwko
@@ -3692,3 +3691,64 @@ Translate: Diet members' caucus
 MiscInfo: abbr
 Translate: caucus of the Diet
 MiscInfo: abbr"
+200934,WORD_NOUN,,KATAKANA,,,-,ノドアカハチドリ,,nodoaka hachidori,koliberek rubinobrody,"niewielki gatunek ptaka z rodziny kolibrowatych zamieszkujący wschodnią część USA i południowo-wschodnią Kanadę, Archilochus colubris",,,"GroupId: 2192000
+Translate: ruby-throated hummingbird (Archilochus colubris)
+MiscInfo: uk"
+200935,WORD_NOUN,,KATAKANA,,,-,コース・ライン,,koosu rain,linia toru,"np. bieżni, ang: course line",,,"GroupId: 2482120
+Translate: lane line (e.g. on a running track)
+Translate: lane marker"
+200936,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,意に適う,いにかなう,,i ni kanau,"zaspokajać (potrzeby, pragnienia)
+spełnić pragnienie",,,,"GroupId: 2249620
+Translate: to satisfy (one)
+Translate: to meet (one's) desire"
+200937,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,意に叶う,いにかなう,,i ni kanau,"zaspokajać (potrzeby, pragnienia)
+spełnić pragnienie",,,,"GroupId: 2249620
+Translate: to satisfy (one)
+Translate: to meet (one's) desire"
+200938,WORD_NOUN,,HIRAGANA,,,疏註,そちゅう,,sochuu,"notatki
+komentarz
+uwaga
+adnotacja",,,,"GroupId: 2826257
+Translate: notes
+Translate: comment
+Translate: remark
+Translate: annotation"
+200939,WORD_VERB_U,,HIRAGANA,,,反り立つ,そりたつ,,sori tatsu,"wzrastać (stromo)
+rosnąć","od そそり立つ, kolokwializm",,,"GroupId: 2834970
+Translate: to rise (steeply)
+MiscInfo: col
+AdditionalInfo: from そそり立つ
+Translate: to tower
+MiscInfo: col
+AdditionalInfo: from そそり立つ
+Translate: to soar
+MiscInfo: col
+AdditionalInfo: from そそり立つ"
+200940,WORD_NOUN,,HIRAGANA,,,産じょく期,さんじょくき,,sanjokuki,"połóg
+okres połogu","okres po ciąży i porodzie, w którym anatomiczne, morfologiczne i czynnościowe zmiany ciążowe stopniowo ustępują, a ustrój wraca do stanu sprzed ciąży",,,"GroupId: 1755000
+Translate: postpartum period
+Translate: postnatal period
+Translate: puerperal period
+Translate: puerperium"
+200941,WORD_NOUN,,KATAKANA,,,-,コッコリス,,kokkorisu,kokolit,ang: coccolith,,,"GroupId: 2481620
+Translate: coccolith"
+200942,WORD_NOUN,,HIRAGANA,,,犬橇,いぬぞり,,inu zori,"psie zaprzęgi
+sanie z psim zaprzęgiem",,,,"GroupId: 1845380
+Translate: dog sled"
+200943,WORD_NOUN,,HIRAGANA,,,侍大将,さむらいだいしょう,,samurai daishou,samurajski generał,szczególnie podczas okresu Sengoku,,DUPLICATE 200913,"GroupId: 2825861
+Translate: samurai general (esp. during the Sengoku period)"
+200944,WORD_NOUN,,KATAKANA,,,-,パッチギ,,pacchigi,uderzenie głową,kor: bakchigi,,,"GroupId: 2412180
+Translate: headbutt"
+200945,WORD_NOUN,,HIRAGANA,,,翼幅,よくはば,,yokuhaba,rozpiętość skrzydeł,,,DUPLICATE 200929,"GroupId: 2795660
+Translate: wingspan"
+200946,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,真向う,まむこう,,mamu kou,"na przeciwko
+bezpośrednio przez
+tuż przed
+twarzą w twarz",,,,"GroupId: 2701250
+Translate: right opposite
+Translate: directly across
+Translate: just in front of
+Translate: face to face"
