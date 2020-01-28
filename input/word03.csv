@@ -797,7 +797,8 @@ Translate: unripe
 MiscInfo: arch
 Translate: inexperienced
 MiscInfo: arch"
-200188,WORD_NOUN,,HIRAGANA,,,公開中,こうかいちゅう,,koukaichuu,"już dostępne (np. w sprzedaży)
+200188,"WORD_EXPRESSION
+WORD_ADJECTIVE_NO",,HIRAGANA,,,公開中,こうかいちゅう,,koukaichuu,"już dostępne (np. w sprzedaży)
 już pokazywane (np. film, wystawa)",,,,"GroupId: 2842746
 Translate: now available (e.g. for sale)
 Translate: now showing (e.g. film, exhibition)"
@@ -4109,7 +4110,7 @@ MiscInfo: yoji"
 201036,WORD_NOUN,,HIRAGANA,,,天井抜け,てんじょうぬけ,,tenjou nuke,"podskakiwanie (o cenach)
 szybki wzrost cen",,,,"GroupId: 1438380
 Translate: skyrocketing (prices)"
-201037,WORD_NOUN,,HIRAGANA,,,鼠麦,ねずみむぎ,,nezumimugi,"życica wielokwiatowa
+201037,WORD_NOUN,,HIRAGANA,,,鼠麦,ねずみむぎ,,nezumi mugi,"życica wielokwiatowa
 rajgras włoski
 kąkolnica","gatunek rośliny z rodziny wiechlinowatych, Lolium multiflorum",,,"GroupId: 2828683
 Translate: Italian rye-grass (Lolium multiflorum)
@@ -4178,7 +4179,7 @@ Translate: hiding"
 201053,WORD_NOUN,,HIRAGANA,,,聾唖学校,ろうあがっこう,,roua gakkou,szkoła dla osób niesłyszących,,,,"GroupId: 1561180
 Translate: school for the deaf"
 201054,WORD_NOUN,,HIRAGANA,,,大新聞,おおしんぶん,,ooshinbun,"rodzaj gazety z epoki Meiji (charakteryzujący się używaniem języka literackiego w komentowaniu kwestii politycznych)
-główna gazeta",,,,"GroupId: 2522690
+główna gazeta",,,DUPLICATE 201133,"GroupId: 2522690
 Translate: type of newspaper from the Meiji era (characterized by its use of political commentary written in literary language)
 Translate: major newspaper"
 201055,WORD_NOUN,,HIRAGANA,,,四国巡礼,しこくじゅんれい,,shikoku junrei,pielgrzym Shikoku,do 88 świątyń,,,"GroupId: 2269980
@@ -4316,3 +4317,247 @@ Translate: unseen
 Translate: inward"
 201086,WORD_NOUN,,HIRAGANA,,,木隠れ,こがくれ,,kogakure,ukryty za drzewami,,,,"GroupId: 1807670
 Translate: hidden behind trees"
+201087,WORD_NOUN,,HIRAGANA,,,虫めがね,むしめがね,,mushi megane,"szkło powiększające
+lupa",,,,
+201088,WORD_NOUN,,HIRAGANA,,,栄花,えいが,,eiga,"chwała
+wspaniałość
+bogactwo
+luksus",,,,
+201089,WORD_NOUN,,HIRAGANA,,,討死に,うちじに,,uchi ji ni,śmierć w boju,,,,
+201090,WORD_NOUN,,KATAKANA,,,-,イザコザ,,izakoza,"kłopot
+trudność
+problem
+komplikacja",,,,
+201091,WORD_NOUN,,HIRAGANA,,,でき上がり,できあがり,,deki agari,"finisz
+koniec
+ukończenie
+zakończenie
+przygotowane",,,,
+201092,WORD_NOUN,,HIRAGANA_KATAKANA,,,現ナマ,げんナマ,,gen nama,"rzeczywiste pieniądze
+realne pieniądze
+gotówka",,,,"GroupId: 1655520
+Translate: real money
+Translate: cash"
+201093,WORD_NOUN,,HIRAGANA,,,閂,かんのき,,kannoki,"rygiel
+sztaba
+zasuwa (np. w drzwiach)",,,DUPLICATE 36742,"GroupId: 2007710
+Translate: bar
+MiscInfo: uk
+Translate: bolt (e.g. on door)
+MiscInfo: uk
+Translate: latch
+MiscInfo: uk"
+201094,WORD_NOUN,,HIRAGANA,,,貫木,かんのき,,kannoki,"rygiel
+sztaba
+zasuwa (np. w drzwiach)",,,DUPLICATE 36768,"GroupId: 2007710
+Translate: bar
+MiscInfo: uk
+Translate: bolt (e.g. on door)
+MiscInfo: uk
+Translate: latch
+MiscInfo: uk"
+201095,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,ネクラ,,nekura,"ponury
+posępny
+mroczny
+pesymistyczny",,,,"GroupId: 1290080
+Translate: dark-natured
+Translate: gloomy
+Translate: dour
+Translate: moody
+Translate: insular
+Translate: glum
+Translate: pessimistic"
+201096,WORD_NOUN,,HIRAGANA,,,すし屋,すしや,,sushiya,"restauracja sushi
+sklep z sushi",,,,
+201097,WORD_NOUN,,KATAKANA,,,-,エログロ・ナンセンス,,eroguro nansensu,erotyczny i grotestowy nonsens,"skrót, ang: erotic and grotesque nonsense",,,
+201098,WORD_NOUN,,KATAKANA,,,-,ヘラ,,hera,"szpatułka
+(sztucznie hodowany) japoński karaś pospolity",,,DUPLICATE 157679,"GroupId: 1510300
+Translate: spatula
+Translate: (artificially cultured) Japanese crucian carp
+MiscInfo: uk"
+201099,WORD_NOUN,,HIRAGANA,,,暈,うん,,un,astronomiczny pierścień,,,"DUPLICATE 658
+DUPLICATE 74563
+DUPLICATE 89062",
+201100,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,さん然,さんぜん,,sanzen,"jasny
+olśniewający
+rozpromieniony
+promienny",,,,
+201101,WORD_NOUN,,HIRAGANA,,,仏国,ふつこく,,futsukoku,Francja,,,DUPLICATE 95274,
+201102,WORD_NOUN,,HIRAGANA,,,鉗口令,かんこうれい,,kankourei,"prawo ograniczające swobodę wypowiedzi w sprawie wciąż rozpatrywanej przez sąd
+zasada ograniczająca czas debaty
+prawo ograniczające swobodę wypowiedzi",,,,
+201103,WORD_NOUN,,HIRAGANA,,,出初式,でぞめしき,,dezome shiki,???,,,,
+201104,WORD_NOUN,,HIRAGANA,,,青草,せいそう,,seisou,zielona trawa,,,DUPLICATE 111627,
+201105,WORD_NOUN,,HIRAGANA,,,眠気ざまし,ねむけざまし,,nemuke zamashi,"zwalczanie senności
+metoda walki ze snem",,,,"GroupId: 1752810
+Translate: keeping oneself awake
+Translate: fighting off drowsiness
+Translate: method for keeping oneself awake"
+201106,WORD_INTERJECTION,,HIRAGANA_KATAKANA,,,-,がびーん,,gabiin,zasygnalizowanie szoku i rozczarowania,"nie mówione na głos, w mangach",,,"GroupId: 2202410
+Translate: indicates shock and disappointment (not actually said out loud)
+MiscInfo: m-sl
+AdditionalInfo: onom"
+201107,WORD_NOUN,,HIRAGANA,,,巻き軸,まきじく,,maki jiku,zwój,,,,
+201108,"WORD_ADVERB_TO
+WORD_ADVERB",,HIRAGANA,,,-,くにゃり,,kunyari,"wiotko
+bezwładnie
+giętko
+elastycznie
+???",,,,
+201109,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,-,くにゃっと,,kunyatto,???,,,,
+201110,WORD_NOUN,,HIRAGANA,,,手わざ,てわざ,,tewaza,"praca z użyciem rąk
+praca ręczna
+technika rzutu z użyciem ręki (judo)",,,,"GroupId: 1699230
+Translate: work using the hands
+Translate: handwork
+Translate: hand throwing technique (judo)
+AdditionalInfo: usu. 手技"
+201111,WORD_NOUN,,KATAKANA,,,-,ウインドシア,,uindo shia,uskok wiatru,ang: wind shear,,,"GroupId: 2475690
+Translate: wind shear"
+201112,WORD_NOUN,,KATAKANA,,,-,ウィンドシア,,windo shia,uskok wiatru,ang: wind shear,,,"GroupId: 2475690
+Translate: wind shear"
+201113,WORD_NOUN,,KATAKANA,,,-,ウインドシアー,,uindo shiaa,uskok wiatru,ang: wind shear,,,"GroupId: 2475690
+Translate: wind shear"
+201114,WORD_NOUN,,KATAKANA,,,-,ウインドシャー,,uindo shaa,uskok wiatru,ang: wind shear,,,"GroupId: 2475690
+Translate: wind shear"
+201115,WORD_NOUN,,KATAKANA,,,-,ウインド・シア,,uindo shia,uskok wiatru,ang: wind shear,,,"GroupId: 2475690
+Translate: wind shear"
+201116,WORD_NOUN,,KATAKANA,,,-,ウィンド・シア,,windo shia,uskok wiatru,ang: wind shear,,,"GroupId: 2475690
+Translate: wind shear"
+201117,WORD_NOUN,,KATAKANA,,,-,ウインド・シアー,,uindo shiaa,uskok wiatru,ang: wind shear,,,"GroupId: 2475690
+Translate: wind shear"
+201118,WORD_NOUN,,KATAKANA,,,-,ウインド・シャー,,uindo shaa,uskok wiatru,ang: wind shear,,,"GroupId: 2475690
+Translate: wind shear"
+201119,WORD_NOUN,,KATAKANA,,,-,スタープレイヤー,,sutaa pureiyaa,???,ang: star player,,,"GroupId: 1069410
+Translate: star player"
+201120,WORD_NOUN,,KATAKANA,,,-,スター・プレイヤー,,sutaa pureiyaa,???,ang: star player,,,"GroupId: 1069410
+Translate: star player"
+201121,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,揆を一にする,きをいつにする,,ki o itsu ni suru,"zbiegać się
+być takie same (np. myśli, opinie i etc)
+mieć taki sam sposób działania",,,,"GroupId: 1223960
+Translate: to concur
+Translate: to be the same (thought, opinion, etc.)
+Translate: to have the same way of doing"
+201122,WORD_NOUN,,HIRAGANA,,,せん方,せんかた,,sen kata,"sposób
+metoda
+środki
+zasób
+kierunek
+plan",,,,"GroupId: 1824260
+Translate: way
+Translate: method
+Translate: means
+Translate: resource
+Translate: course"
+201123,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,卒なく,そつなく,,sotsu naku,"bez (popełnienia) jakichkolwiek błędów
+bez wady
+bezbłędnie
+dokładnie",,,,"GroupId: 2123310
+Translate: without (making) any mistakes
+MiscInfo: uk
+Translate: flawlessly
+MiscInfo: uk
+Translate: accurately
+MiscInfo: uk"
+201124,WORD_EXPRESSION,,HIRAGANA,,,-,からとて,,karatote,"właśnie dlatego
+niemniej jednak
+jednakże
+niekoniecznie","kolokwializm, skrót",,,"GroupId: 2841254
+Translate: while it may be true that
+MiscInfo: col
+MiscInfo: abbr
+Translate: just because
+MiscInfo: col
+MiscInfo: abbr
+Translate: nevertheless
+MiscInfo: col
+MiscInfo: abbr
+Translate: not necessarily
+MiscInfo: col
+MiscInfo: abbr"
+201125,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ロビイング,,robiingu,lobbing,ang: lobbying,,,"GroupId: 1147810
+Translate: lobbying"
+201126,WORD_NOUN,,HIRAGANA,,,大山鳴動,たいざんめいどう,,taizan meidou,"wielkie zamieszanie o nic
+wiele hałasu o nic",,,,"GroupId: 2031840
+Translate: big fuss over nothing
+MiscInfo: yoji
+Translate: much cry and little wool
+MiscInfo: yoji
+Translate: much ado about nothing
+MiscInfo: yoji"
+201127,WORD_NOUN,,KATAKANA,,,-,ネズミムギ,,nezumi mugi,"życica wielokwiatowa
+rajgras włoski
+kąkolnica","gatunek rośliny z rodziny wiechlinowatych, Lolium multiflorum",,,"GroupId: 2828683
+Translate: Italian rye-grass (Lolium multiflorum)
+MiscInfo: uk
+Translate: annual ryegrass
+MiscInfo: uk
+Translate: Australian ryegrass
+MiscInfo: uk
+Translate: short rotation ryegrass
+MiscInfo: uk
+Translate: Westerwolds ryegrass
+MiscInfo: uk
+Translate: darnel
+MiscInfo: uk"
+201128,WORD_NOUN,,HIRAGANA,,,紫ご飯,ゆかりごはん,,yukari gohan,ryż posypany czerwoną perillą,,,,"GroupId: 2828925
+Translate: rice sprinkled with red perilla"
+201129,WORD_NOUN,,HIRAGANA,,,紫御飯,ゆかりごはん,,yukari gohan,ryż posypany czerwoną perillą,,,,"GroupId: 2828925
+Translate: rice sprinkled with red perilla"
+201130,WORD_VERB_U,,HIRAGANA,,,焚き出す,たきだす,,taki dasu,dystrybuować ryż w nagłych przypadkach,,,,"GroupId: 2841878
+Translate: to distribute emergency rice"
+201131,WORD_NOUN,,HIRAGANA,,,立行司,たてぎょうじ,,tate gyouji,główny sędzia,w sumo,,,"GroupId: 1837760
+Translate: head referee"
+201132,WORD_NOUN,,HIRAGANA,,,店立,たなだて,,tanadate,"eksmisja
+wyzucie z posiadania",,,,"GroupId: 2581370
+Translate: eviction"
+201133,WORD_NOUN,,HIRAGANA,,,大新聞,だいしんぶん,,daishinbun,"rodzaj gazety z epoki Meiji (charakteryzujący się używaniem języka literackiego w komentowaniu kwestii politycznych)
+główna gazeta",,,DUPLICATE 201054,"GroupId: 2522690
+Translate: type of newspaper from the Meiji era (characterized by its use of political commentary written in literary language)
+Translate: major newspaper"
+201134,WORD_NOUN,,HIRAGANA,,,四国順礼,しこくじゅんれい,,shikoku junrei,pielgrzym Shikoku,do 88 świątyń,,,"GroupId: 2269980
+Translate: Shikoku pilgrimage (to the 88 temples)
+Translate: Shikoku pilgrim"
+201135,WORD_ADVERB,,KATAKANA_HIRAGANA,,,-,ベタッと,,betatto,"obcisło
+przylegająco
+???",,,,"GroupId: 2840645
+Translate: clingingly
+Translate: (stuck) together
+Translate: (pressed) all the way down
+Translate: (attached) cleanly
+Translate: (flopping) down"
+201136,WORD_ADVERB,,KATAKANA_HIRAGANA,,,-,ベタっと,,betatto,"obcisło
+przylegająco
+???",,,,"GroupId: 2840645
+Translate: clingingly
+Translate: (stuck) together
+Translate: (pressed) all the way down
+Translate: (attached) cleanly
+Translate: (flopping) down"
+201137,WORD_NOUN,,KATAKANA,,,-,バカザメ,,bakazame,"długoszpar
+rekin olbrzymi
+żarłacz olbrzymi
+rekin gigantyczny
+rekin słoneczny","gatunek dużej, morskiej ryby chrzęstnoszkieletowej, jedyny żyjący przedstawiciel rodziny długoszparowatych zaliczanej do lamnokształtnych, Cetorhinus maximus",,,"GroupId: 2617020
+Translate: basking shark (Cetorhinus maximus)
+MiscInfo: uk"
+201138,WORD_NOUN,,HIRAGANA,,,外路地,そとろじ,,sotoroji,zewnętrzny herbaciany ogród,poza centralną bramą,,,"GroupId: 2587450
+Translate: outer teahouse garden (outside the central gate)"
+201139,WORD_NOUN,,HIRAGANA,,,三竦み,さんすくみ,,sansukumi,trylemat,"schemat wnioskowania, w którym obok trzech zdań warunkowych występuje potrójna alternatywa; od węża bojącego się ślimaka, ślimak żaby i żaba węż",,,"GroupId: 1814310
+Translate: three-way deadlock
+AdditionalInfo: from the snake fearing the slug, the slug the frog, and the frog the snake"
+201140,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,アオリイカ,,aoriika,Sepioteuthis lessoniana,zwierzę,,,"GroupId: 1352100
+Translate: bigfin reef squid
+Translate: oval squid (Sepioteuthis lessoniana)"
+201141,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,病膏肓に入る,やまいこうもうにいる,,yamai koumou ni iru,"poważnie zachorować
+złapać nieuleczalną chorobę
+stać się niewolnikiem nałogu",,,DUPLICATE 180696,"GroupId: 1913380
+Translate: to become seriously ill
+Translate: to catch an incurable illness
+Translate: to become a slave of a habit"
