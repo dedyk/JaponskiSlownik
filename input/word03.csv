@@ -4903,7 +4903,7 @@ Translate: intermediate rays"
 Translate: cultivator"
 201241,WORD_NOUN,,HIRAGANA,,,忠実度,ちゅうじつど,,chuujitsudo,wierność,,,,"GroupId: 1942560
 Translate: fidelity"
-201242,WORD_NOUN,,HIRAGANA,,,朝雲,あさぐも,,asagumo,poranne chmury,,,,"GroupId: 2840299
+201242,WORD_NOUN,,HIRAGANA,,,朝雲,あさぐも,,asagumo,poranne chmury,,,DUPLICATE 201287,"GroupId: 2840299
 Translate: morning clouds"
 201243,WORD_NOUN,,KATAKANA_HIRAGANA,,,アヘ顔,アヘがお,,ahe gao,"ahegao
 przesadna mikika (szczególnie kobiet) podczas seksu, zwykle ze skrzyżowanymi oczami i wystającym językiem",slang,,,"GroupId: 2842819
@@ -4913,8 +4913,8 @@ Translate: exaggerated facial expression (esp. of females) during sex, usu. with
 MiscInfo: sl"
 201244,WORD_NOUN,,HIRAGANA,,,克雪,こくせつ,,kokusetsu,opanowanie szkód i problemów wyrządzonych przez śnieg,,,,"GroupId: 2842863
 Translate: overcoming damage and problems caused by snow"
-201245,WORD_EXPRESSION,,HIRAGANA,,,口は災いの門,くちはわざわいのかど,,kuchi wa wazawai no kado,"słowa mogą doprowadzić do katastrofy
-język jest źródłem nieszczęść",przysłowie,,,"GroupId: 2842831
+201245,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,口は災いの門,くちはわざわいのかど,,kuchi wa wazawai no kado,"słowa mogą doprowadzić do katastrofy
+język jest źródłem nieszczęść",przysłowie,,DUPLICATE 201289,"GroupId: 2842831
 Translate: words can lead to disaster
 MiscInfo: proverb
 Translate: the tongue is the root of calamities
@@ -4923,7 +4923,9 @@ Translate: the more you open your mouth the more likely you are to put your foot
 MiscInfo: proverb"
 201246,WORD_NOUN,,HIRAGANA,,,潜伏期間,せんぷくきかん,,senpuku kikan,okres inkubacji,,,,"GroupId: 2842881
 Translate: incubation period"
-201247,WORD_NOUN,,HIRAGANA,,,極振り,きょくふり,,kyokufuri,koncentrowanie punktów na określonej umiejętności (w grze wideo),slang,,,"GroupId: 2842681
+201247,WORD_NOUN,,HIRAGANA,,,極振り,きょくふり,,kyokufuri,koncentrowanie punktów na określonej umiejętności (w grze wideo),slang,,"DUPLICATE 201292
+DUPLICATE 201293
+DUPLICATE 201294","GroupId: 2842681
 Translate: min-maxing
 MiscInfo: sl
 Translate: concentrating points on a specific ability (in a video game)
@@ -4998,7 +5000,7 @@ Translate: power relationships among factions
 MiscInfo: yoji
 Translate: factional power politics
 MiscInfo: yoji"
-201264,WORD_NOUN,,HIRAGANA,,,蜂蜜色,はちみついろ,,hachimitsuiro,"kolor miodu
+201264,WORD_NOUN,,HIRAGANA,,,蜂蜜色,はちみついろ,,hachimitsu iro,"kolor miodu
 w kolorze miodu",,,,"GroupId: 2842609
 Translate: color of honey (colour)
 Translate: honey-colored
@@ -5056,7 +5058,7 @@ AdditionalInfo: Cantonese dish"
 Translate: hyperplane"
 201279,WORD_NOUN,,HIRAGANA,,,勅願,ちょくがん,,chokugan,modlitwa cesarska,,,,"GroupId: 1430380
 Translate: imperial prayer"
-201280,WORD_EXPRESSION,,HIRAGANA,,,-,をよそに,,o yoso ni,"bez szacunku do
+201280,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,-,をよそに,,o yoso ni,"bez szacunku do
 niedbanie o
 obojętny do
 ignorowanie
@@ -5082,7 +5084,9 @@ moc obserwacji
 sedno
 istota sprawy (mało znane znaczenie)
 główny punkt (mało znane znaczenie)
-dziura (mało znane znaczenie)",,,,"GroupId: 2842931
+dziura (mało znane znaczenie)",,,"DUPLICATE 3062
+DUPLICATE 3063
+DUPLICATE 76324","GroupId: 2842931
 Translate: eye
 Translate: insight
 Translate: vision
@@ -5108,3 +5112,76 @@ Translate: composed poem"
 201285,WORD_NOUN,,HIRAGANA,,,懲戒免官,ちょうかいめんかん,,choukai menkan,zwolnienie dyscyplinarne,,,,"GroupId: 2711230
 Translate: disciplinary dismissal
 Translate: disciplinary discharge"
+201286,WORD_NOUN,,KATAKANA,,,-,ハリオアマツバメ,,hario amatsubame,igłosternik białogardły,"gatunek małego ptaka z rodziny jerzykowatych, Hirundapus caudacutus",,,"GroupId: 2174140
+Translate: white-throated needletail (species of swift, Hirundapus caudacutus)
+MiscInfo: uk"
+201287,WORD_NOUN,,HIRAGANA,,,朝雲,ちょううん,,chouun,poranne chmury,,,DUPLICATE 201242,"GroupId: 2840299
+Translate: morning clouds"
+201288,WORD_NOUN,,HIRAGANA,,,あへ顔,あへかお,,ahe kao,"ahegao
+przesadna mikika (szczególnie kobiet) podczas seksu, zwykle ze skrzyżowanymi oczami i wystającym językiem",slang,,,"GroupId: 2842819
+Translate: ahegao
+MiscInfo: sl
+Translate: exaggerated facial expression (esp. of females) during sex, usu. with crossed or rolled eyes and a protruding tongue
+MiscInfo: sl"
+201289,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,口は災いの門,くちはわざわいのもん,,kuchi wa wazawai no mon,"słowa mogą doprowadzić do katastrofy
+język jest źródłem nieszczęść",przysłowie,,DUPLICATE 201245,"GroupId: 2842831
+Translate: words can lead to disaster
+MiscInfo: proverb
+Translate: the tongue is the root of calamities
+MiscInfo: proverb
+Translate: the more you open your mouth the more likely you are to put your foot in it
+MiscInfo: proverb"
+201290,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,口は禍の門,くちはわざわいのかど,,kuchi wa wazawai no kado,"słowa mogą doprowadzić do katastrofy
+język jest źródłem nieszczęść",przysłowie,,DUPLICATE 201291,"GroupId: 2842831
+Translate: words can lead to disaster
+MiscInfo: proverb
+Translate: the tongue is the root of calamities
+MiscInfo: proverb
+Translate: the more you open your mouth the more likely you are to put your foot in it
+MiscInfo: proverb"
+201291,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,口は禍の門,くちはわざわいのもん,,kuchi wa wazawai no mon,"słowa mogą doprowadzić do katastrofy
+język jest źródłem nieszczęść",przysłowie,,DUPLICATE 201290,"GroupId: 2842831
+Translate: words can lead to disaster
+MiscInfo: proverb
+Translate: the tongue is the root of calamities
+MiscInfo: proverb
+Translate: the more you open your mouth the more likely you are to put your foot in it
+MiscInfo: proverb"
+201292,WORD_NOUN,,HIRAGANA,,,極振り,きょくぶり,,kyokuburi,koncentrowanie punktów na określonej umiejętności (w grze wideo),slang,,"DUPLICATE 201247
+DUPLICATE 201293
+DUPLICATE 201294","GroupId: 2842681
+Translate: min-maxing
+MiscInfo: sl
+Translate: concentrating points on a specific ability (in a video game)
+MiscInfo: sl"
+201293,WORD_NOUN,,HIRAGANA,,,極振り,ごくふり,,gokufuri,koncentrowanie punktów na określonej umiejętności (w grze wideo),slang,,"DUPLICATE 201247
+DUPLICATE 201292
+DUPLICATE 201294","GroupId: 2842681
+Translate: min-maxing
+MiscInfo: sl
+Translate: concentrating points on a specific ability (in a video game)
+MiscInfo: sl"
+201294,WORD_NOUN,,HIRAGANA,,,極振り,ごくぶり,,gokuburi,koncentrowanie punktów na określonej umiejętności (w grze wideo),slang,,"DUPLICATE 201247
+DUPLICATE 201292
+DUPLICATE 201293","GroupId: 2842681
+Translate: min-maxing
+MiscInfo: sl
+Translate: concentrating points on a specific ability (in a video game)
+MiscInfo: sl"
+201295,WORD_NOUN,,HIRAGANA,,,はちみつ色,はちみついろ,,hachimitsu iro,"kolor miodu
+w kolorze miodu",,,,"GroupId: 2842609
+Translate: color of honey (colour)
+Translate: honey-colored
+Translate: honey-coloured"
+201296,WORD_NOUN,,HIRAGANA,,,盛切り,もりきり,,mori kiri,pojedyncza pomoc,np. ryżu,,,"GroupId: 1764410
+Translate: single helping (e.g. of rice)"
+201297,WORD_NOUN,,HIRAGANA,,,咏,えい,,ei,"recytacja (poezji)
+intonowanie
+śpiewanie
+kompozycja (wiersza)
+skomponowany wiersz",,,,"GroupId: 2842897
+Translate: recitation (of a poem)
+Translate: chanting
+Translate: singing
+Translate: composition (of a poem)
+Translate: composed poem"
