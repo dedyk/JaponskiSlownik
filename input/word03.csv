@@ -5201,7 +5201,7 @@ Translate: absentee voting"
 cerata impregnowana
 materiał impregnowany",ang: oilskin,,,"GroupId: 1033960
 Translate: oilskin"
-201304,WORD_EXPRESSION,,HIRAGANA,,,ことゆえ無し,ことゆえなし,,kotoyue nashi,"bez żadnych incydentów
+201304,WORD_EXPRESSION,,HIRAGANA,,,ことゆえ無し,ことゆえなし,,koto yue nashi,"bez żadnych incydentów
 bez zakłóceń",archaizm,,,"GroupId: 2589010
 Translate: without incident
 MiscInfo: arch"
@@ -5279,7 +5279,7 @@ Translate: to spit"
 biały miąższ (owocu)",,,,"GroupId: 2842892
 Translate: white meat
 Translate: white flesh (of fruit)"
-201324,WORD_EXPRESSION,,KATAKANA,,,無問題,モウマンタイ,,moumantai,nie ma problemu,słowo pochodzenia chińskiego,,,"GroupId: 2842816
+201324,WORD_EXPRESSION,,KATAKANA,,,無問題,モウマンタイ,,moumantai,nie ma problemu,słowo pochodzenia chińskiego,,DUPLICATE 201361,"GroupId: 2842816
 Translate: no problem
 AdditionalInfo: from Cantonese"
 201325,WORD_NOUN,,HIRAGANA,,,黄連,おうれん,,ouren,Coptis japonica,roślina,,,"GroupId: 2842903
@@ -5377,5 +5377,36 @@ WORD_NOUN",,HIRAGANA,,,-,ええじゃないか,,ee janai ka,"czy to nie świetne
 karnawałowe uroczystości religijne (np. festiwale tańca), które miały miejsce w całej Japonii od czerwca 1867 r. do maja 1868 r",,,,"GroupId: 2583400
 Translate: isn't it great?
 Translate: carnival-like religious celebrations (e.g. dancing festivals) that occurred across Japan from June 1867 to May 1868"
-201352,WORD_NOUN,,KATAKANA,,,-,エイサア,,eisaa,eisa,okinawski taniec ludowy kończący festiwal Bon,,,"GroupId: 2692860
+201352,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,エイサア,,eisaa,eisa,okinawski taniec ludowy kończący festiwal Bon,,,"GroupId: 2692860
+Translate: eisa (Okinawan folk dance that marks the end of the Bon festival)"
+201353,WORD_EXPRESSION,,HIRAGANA,,,事故無し,ことゆえなし,,koto yue nashi,"bez żadnych incydentów
+bez zakłóceń",archaizm,,,"GroupId: 2589010
+Translate: without incident
+MiscInfo: arch"
+201354,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,レールウエー,,reeruuee,kolej,ang: railway,,,"GroupId: 2494270
+Translate: railway"
+201355,WORD_NOUN,,HIRAGANA,,,とら年,とらどし,,toradoshi,rok tygrysa,,,,"GroupId: 1457280
+Translate: year of the tiger"
+201356,WORD_NOUN,,KATAKANA_HIRAGANA,,,トラ年,トラどし,,toradoshi,rok tygrysa,,,,"GroupId: 1457280
+Translate: year of the tiger"
+201357,WORD_NOUN,,KATAKANA,,,-,リギル・ケンタウルス,,rigiru kentaurusu,Alfa Centauri,"gwiazda wielokrotna w gwiazdozbiorze Centaura, trzecia pod względem jasności gwiazda widoczna na nocnym niebie",,,"GroupId: 1141150
+Translate: Rigel Kentaurus (star in the constellation Centaurus)
+Translate: Alpha Centauri"
+201358,WORD_NOUN,,HIRAGANA,,,軸組,じくぐみ,,jikugumi,"struktura
+szkielet",,,,"GroupId: 2651210
+Translate: framework"
+201359,WORD_NOUN,,KATAKANA,,,-,フクロアリクイ,,fukuroarikui,mrówkożer workowaty,"gatunek ssaka z rodziny mrówkożerowatych, jedyny przedstawiciel rodzaju Myrmecobius i rodziny mrówkożerowatych, Myrmecobius fasciatus",,,"GroupId: 2239520
+Translate: numbat (Myrmecobius fasciatus)
+MiscInfo: uk
+Translate: banded anteater
+MiscInfo: uk"
+201360,WORD_NOUN,,KATAKANA,,,-,エゾボラモドキ,,ezoboramodoki,Neptunea intersculpta,rodzaj ślimaka morskiego,,,"GroupId: 2605100
+Translate: double-sculptured neptune (species of whelk, Neptunea intersculpta)
+MiscInfo: uk"
+201361,WORD_EXPRESSION,,KATAKANA,,,無問題,モーマンタイ,,moomantai,nie ma problemu,słowo pochodzenia chińskiego,,DUPLICATE 201324,"GroupId: 2842816
+Translate: no problem
+AdditionalInfo: from Cantonese"
+201362,WORD_NOUN,,KATAKANA,,,-,オウレン,,ouren,Coptis japonica,roślina,,,"GroupId: 2842903
+Translate: goldthread (Coptis japonica)"
+201363,WORD_NOUN,,KATAKANA,,,-,エイサー,,eisaa,eisa,okinawski taniec ludowy kończący festiwal Bon,,,"GroupId: 2692860
 Translate: eisa (Okinawan folk dance that marks the end of the Bon festival)"
