@@ -5816,7 +5816,7 @@ Translate: quickly adaptable
 MiscInfo: id
 Translate: pro-active
 MiscInfo: id"
-201465,WORD_NOUN,,HIRAGANA,,,緑葉甘藍,りょくようかんらん,,ryokuyoukanran,kapusta,Brassica oleracea var. acephala,,,"GroupId: 2063840
+201465,WORD_NOUN,,HIRAGANA,,,緑葉甘藍,りょくようかんらん,,ryokuyou kanran,kapusta,Brassica oleracea var. acephala,,,"GroupId: 2063840
 Translate: kale (Brassica oleracea var. acephala)
 MiscInfo: uk"
 201466,WORD_NOUN,,HIRAGANA,,,放射性同位体,ほうしゃせいどういたい,,houshaseidouitai,"radioizotop
@@ -5883,7 +5883,7 @@ Translate: knit stitch"
 Translate: playing mahjong all night
 MiscInfo: sl
 MiscInfo: abbr"
-201478,WORD_NOUN,,KATAKANA,,,-,レーゾンデートル,,reezon de etoru,"raison d'être
+201478,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,レーゾンデートル,,reezon de etoru,"raison d'être
 powód bycia
 powód, aby ktoś lub coś istniało",,,,"GroupId: 1144390
 Translate: raison d'être
@@ -5936,3 +5936,71 @@ Translate: 1st and 2nd century Christianity"
 tańczenie pustymi rękoma",,,,"GroupId: 1699440
 Translate: ""dancing"" with hands and arms from a seated position
 Translate: dancing empty-handed"
+201496,WORD_NOUN,,HIRAGANA,,,利き茶,ききちゃ,,kiki cha,"degustacja herbaty
+konkurs degustacji herbaty",,,,"GroupId: 2776640
+Translate: tea tasting
+Translate: tea-tasting
+Translate: tea-tasting contest"
+201497,WORD_NOUN,,HIRAGANA,,,聞茶,ききちゃ,,kiki cha,"degustacja herbaty
+konkurs degustacji herbaty",,,,"GroupId: 2776640
+Translate: tea tasting
+Translate: tea-tasting
+Translate: tea-tasting contest"
+201498,WORD_NOUN,,HIRAGANA,,,利茶,ききちゃ,,kiki cha,"degustacja herbaty
+konkurs degustacji herbaty",,,,"GroupId: 2776640
+Translate: tea tasting
+Translate: tea-tasting
+Translate: tea-tasting contest"
+201499,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,ことを起こす,ことをおこす,,koto o okosu,"powodować problemy
+powodować zakłócenia",,,,"GroupId: 1877100
+Translate: to cause trouble
+Translate: to cause a disturbance"
+201500,WORD_NOUN,,HIRAGANA,,,ちょん掛,ちょんがけ,,chon gake,???,sumo,,,"GroupId: 2138890
+Translate: pulling heel hook"
+201501,WORD_NOUN,,HIRAGANA,,,手ずれ,てずれ,,tezure,"zużycie lub pobrudzenie (ubrania) podczas uzytkowania
+bycie staromodny",,,,"GroupId: 1699500
+Translate: becoming worn or soiled with handling
+Translate: being old-fashioned"
+201502,WORD_NOUN,,KATAKANA,,,-,リョクヨウカンラン,,ryokuyou kanran,kapusta,Brassica oleracea var. acephala,,,"GroupId: 2063840
+Translate: kale (Brassica oleracea var. acephala)
+MiscInfo: uk"
+201503,WORD_NOUN,,HIRAGANA,,,胡椒入れ,こしょういれ,,koshou ire,pieprzniczka,,,,"GroupId: 1718080
+Translate: pepper shaker"
+201504,WORD_NOUN,,KATAKANA_HIRAGANA,,,コショウ入れ,コショウいれ,,koshou ire,pieprzniczka,,,,"GroupId: 1718080
+Translate: pepper shaker"
+201505,"WORD_VERB_U
+WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,身が引締まる,みがひきしまる,,mi ga hiki shimaru,"stać się napięty
+stać się spięty
+spoważnieć
+otrzeźwiający",,,,"GroupId: 2832111
+Translate: to become tense
+Translate: to become serious
+Translate: to become sober
+Translate: sobering
+Translate: bracing"
+201506,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,レゾンデートル,,rezon de etoru,"raison d'être
+powód bycia
+powód, aby ktoś lub coś istniało",,,,"GroupId: 1144390
+Translate: raison d'être
+Translate: reason for being
+Translate: reason for someone or something's existence"
+201507,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,レーゾン・デートル,,reezon de etoru,"raison d'être
+powód bycia
+powód, aby ktoś lub coś istniało",,,,"GroupId: 1144390
+Translate: raison d'être
+Translate: reason for being
+Translate: reason for someone or something's existence"
+201508,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,レゾン・デートル,,rezon de etoru,"raison d'être
+powód bycia
+powód, aby ktoś lub coś istniało",,,,"GroupId: 1144390
+Translate: raison d'être
+Translate: reason for being
+Translate: reason for someone or something's existence"
+201509,WORD_NOUN,,HIRAGANA,,,耆那教,じゃいなきょう,,jaina kyou,"dźinizm
+dżajnizm",nonteistyczny system filozoficzny i religijny który powstał w Indiach około VI wieku p.n.e. w reakcji na silnie zrytualizowany braminizm,,DUPLICATE 201510,"GroupId: 2163240
+Translate: Jainism"
+201510,WORD_NOUN,,HIRAGANA,,,耆那教,じなきょう,,jinakyou,"dźinizm
+dżajnizm",nonteistyczny system filozoficzny i religijny który powstał w Indiach około VI wieku p.n.e. w reakcji na silnie zrytualizowany braminizm,,DUPLICATE 201509,"GroupId: 2163240
+Translate: Jainism"
