@@ -6367,7 +6367,7 @@ Translate: inspection certificate"
 201610,WORD_NOUN,,HIRAGANA,,,超重核,ちょうじゅうかく,,choujuukaku,jądro superciężkie,,,,"GroupId: 2712760
 Translate: superheavy nucleus
 Translate: ultraheavy nucleus"
-201611,WORD_NOUN,,HIRAGANA_KATAKANA,,,大口バス,おおくちバス,,ookuchibasu,bass wielkogębowy,"niewłaściwie nazywany okoniopstrągiem – gatunek słodkowodnej, drapieżnej ryby okoniokształtnej z rodziny bassowatych, Micropterus salmoides",,,"GroupId: 2132400
+201611,WORD_NOUN,,HIRAGANA_KATAKANA,,,大口バス,おおくちバス,,ookuchi basu,bass wielkogębowy,"niewłaściwie nazywany okoniopstrągiem – gatunek słodkowodnej, drapieżnej ryby okoniokształtnej z rodziny bassowatych, Micropterus salmoides",,DUPLICATE 201682,"GroupId: 2132400
 Translate: largemouth bass (Micropterus salmoides)
 Translate: bigmouth bass"
 201612,WORD_NOUN,,HIRAGANA,,,もらい子,もらいご,,morai go,"adoptowane dziecko
@@ -6443,7 +6443,7 @@ MiscInfo: sl"
 201630,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,胴長,どうなが,,dounaga,posiadanie długiego torsu,,,,"GroupId: 1687900
 Translate: possessing a long torso"
-201631,WORD_NOUN,,HIRAGANA,,,貝多羅葉,ばいたらよう,,baitarayou,pattra,liście palmyry używane w starożytnych Indiach do pisania,,,"GroupId: 2235090
+201631,WORD_NOUN,,HIRAGANA,,,貝多羅葉,ばいたらよう,,baitarayou,pattra,liście palmyry używane w starożytnych Indiach do pisania,,DUPLICATE 201687,"GroupId: 2235090
 Translate: pattra (palmyra leaves used in Ancient India for writing upon)"
 201632,WORD_NOUN,,HIRAGANA,,,広域地図,こういきちず,,kouiki chizu,mapa małej skali,,,,"GroupId: 2839247
 Translate: small-scale map"
@@ -6462,7 +6462,7 @@ Translate: ink sac (in cephalopods)"
 Dzień Sądu Ostatecznego","wydarzenie eschatologiczne o skali światowej, stanowiące przedmiot wiary przede wszystkim w kręgu religii judeo-chrześcijańskiej",,,"GroupId: 2154800
 Translate: Last Judgment (judgment of mankind to take place when the world ends, according to various religious traditions)"
 201637,WORD_NOUN,,HIRAGANA,,,粥占,かゆうら,,kayuura,"wróżenie z kaszy ryżowej
-wróżenie ze zbiorów przeprowadzone podczas Koshogatsu",,,,"GroupId: 2770450
+wróżenie ze zbiorów przeprowadzone podczas Koshogatsu",,,DUPLICATE 201689,"GroupId: 2770450
 Translate: rice porridge divination
 Translate: harvest divination carried out during Koshogatsu"
 201638,WORD_NOUN,,KATAKANA,,,-,マドラサ,,madorasa,"medresa
@@ -6495,7 +6495,7 @@ smycz (np. na psa)",,,,"GroupId: 2448620
 Translate: drawstring
 Translate: release cord
 Translate: lead (e.g. for a dog)"
-201647,WORD_NOUN,,HIRAGANA,,,生き魚,いきざかな,,iki zakana,żywa ryba,,,,"GroupId: 2840536
+201647,WORD_NOUN,,HIRAGANA,,,生き魚,いきざかな,,iki zakana,żywa ryba,,,DUPLICATE 201694,"GroupId: 2840536
 Translate: live fish"
 201648,WORD_NOUN,,HIRAGANA,,,包丁人,ほうちょうにん,,houchounin,"kuchach
 szef kuchni",,,,"GroupId: 2651830
@@ -6535,12 +6535,12 @@ Translate: public records office
 Translate: archives"
 201656,WORD_NOUN,,HIRAGANA,,,雷雨細胞,らいうさいぼう,,raiu saibou,komórka burzowa,,,,"GroupId: 2683360
 Translate: thunderstorm cell"
-201657,WORD_NOUN,,KATAKANA_HIRAGANA,,,フッ化水素,フッかすいそ,,fukkasuiso,"fluorowodór
+201657,WORD_NOUN,,KATAKANA_HIRAGANA,,,フッ化水素,フッかすいそ,,fukka suiso,"fluorowodór
 HF",nieorganiczny związek chemiczny zbudowany z fluoru i wodoru,,,"GroupId: 2169720
 Translate: hydrogen fluoride
 Translate: HF"
 201658,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,鳩胸,はとむね,,hatomune,"kurza klatka piersiowa (z wypukłym mostkiem)
+WORD_ADJECTIVE_NO",,HIRAGANA,,,鳩胸,はとむね,,hato mune,"kurza klatka piersiowa (z wypukłym mostkiem)
 kobieta z dużymi piersiami (kolokwializm)",,,,"GroupId: 1626370
 Translate: pigeon chest (Pectus carinatum, deformity of the chest, protruding ribs and sternum)
 Translate: pigeon breast
@@ -6608,3 +6608,87 @@ Translate: triplet"
 Translate: live recording"
 201679,WORD_NOUN,,HIRAGANA,,,全面協力,ぜんめんきょうりょく,,zenmen kyouryoku,pełna współpraca,,,,"GroupId: 2831271
 Translate: full cooperation"
+201680,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,サワアジサイ,,sawaa jisai,hortensja ogrodowa,"gatunek krzewu z rodziny hortensjowatych, Hydrangea macrophylla serrata",,,"GroupId: 2705960
+Translate: tea-of-heaven (Hydrangea macrophylla subsp. serrata)
+MiscInfo: uk
+Translate: mountain hydrangea
+MiscInfo: uk"
+201681,WORD_NOUN,,KATAKANA,,,-,フクロタケ,,fukurotake,"pochwiak wielkopochwowy
+pochwiak pochwiasty","gatunek grzybów z rodziny łuskowcowatych, Volvariella volvacea",,,"GroupId: 2399900
+Translate: paddy straw mushroom
+Translate: straw mushroom
+Translate: Volvariella volvacea"
+201682,WORD_NOUN,,HIRAGANA_KATAKANA,,,大口バス,おおぐちバス,,ooguchi basu,bass wielkogębowy,"niewłaściwie nazywany okoniopstrągiem – gatunek słodkowodnej, drapieżnej ryby okoniokształtnej z rodziny bassowatych, Micropterus salmoides",,DUPLICATE 201611,"GroupId: 2132400
+Translate: largemouth bass (Micropterus salmoides)
+Translate: bigmouth bass"
+201683,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオクチバス,,ookuchi basu,bass wielkogębowy,"niewłaściwie nazywany okoniopstrągiem – gatunek słodkowodnej, drapieżnej ryby okoniokształtnej z rodziny bassowatych, Micropterus salmoides",,,"GroupId: 2132400
+Translate: largemouth bass (Micropterus salmoides)
+Translate: bigmouth bass"
+201684,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオグチバス,,ooguchi basu,bass wielkogębowy,"niewłaściwie nazywany okoniopstrągiem – gatunek słodkowodnej, drapieżnej ryby okoniokształtnej z rodziny bassowatych, Micropterus salmoides",,,"GroupId: 2132400
+Translate: largemouth bass (Micropterus salmoides)
+Translate: bigmouth bass"
+201685,WORD_NOUN,,HIRAGANA,,,貰い子,もらいご,,morai go,"adoptowane dziecko
+przybrane dziecko",,,,"GroupId: 1954970
+Translate: adopted child
+Translate: foster child"
+201686,WORD_VERB_RU,,HIRAGANA,,,覆いかぶせる,おおいかぶせる,,ooi kabuseru,"nakrywać czymś
+okrywać czymś",,,,"GroupId: 2039970
+Translate: to cover up with something"
+201687,WORD_NOUN,,HIRAGANA,,,貝多羅葉,ばいたらば,,baitaraba,pattra,liście palmyry używane w starożytnych Indiach do pisania,,DUPLICATE 201631,"GroupId: 2235090
+Translate: pattra (palmyra leaves used in Ancient India for writing upon)"
+201688,WORD_NOUN,,KATAKANA,,,αメチルトリプタミン,アルファメチルトリプタミン,,arufa mechirutoriputamin,"α-Metylotryptamina
+alfa-Metylotryptamina","organiczny związek chemiczny, psychodeliczna substancja psychoaktywna z rodziny tryptamin",,,"GroupId: 2831977
+Translate: alpha-methyltryptamine
+Translate: AMT"
+201689,WORD_NOUN,,HIRAGANA,,,粥占,じゅくせん,,jukusen,"wróżenie z kaszy ryżowej
+wróżenie ze zbiorów przeprowadzone podczas Koshogatsu",,,DUPLICATE 201637,"GroupId: 2770450
+Translate: rice porridge divination
+Translate: harvest divination carried out during Koshogatsu"
+201690,WORD_NOUN,,KATAKANA,,,-,メノーラー,,menooraa,menora,"w judaizmie nazwa świętego, złotego, siedmioramiennego świecznika, ustawionego w Pierwszym Przybytku, a także używanego później w Świątyni Jerozolimskiej",,,"GroupId: 2821520
+Translate: menorah"
+201691,WORD_NOUN,,KATAKANA,,,-,ビシュヌ,,bishunu,Wisznu,"jeden z najpopularniejszych dewów w hinduizmie, jedyny hinduski bóg czczony w wisznuizmie (największym wyznaniu hinduistycznym)",,,"GroupId: 2828259
+Translate: Vishnu (Hindu god)"
+201692,WORD_NOUN,,HIRAGANA,,,本味醂,ほんみりん,,hon mirin,"(prawdziwy) mirin
+mirin zawierający alkohol",,,,"GroupId: 2722380
+Translate: (true) mirin
+Translate: mirin containing alcohol"
+201693,WORD_NOUN,,HIRAGANA,,,引きひも,ひきひも,,hiki himo,"???
+smycz (np. na psa)",,,,"GroupId: 2448620
+Translate: drawstring
+Translate: release cord
+Translate: lead (e.g. for a dog)"
+201694,WORD_NOUN,,HIRAGANA,,,生き魚,いきうお,,iki uo,żywa ryba,,,DUPLICATE 201647,"GroupId: 2840536
+Translate: live fish"
+201695,"WORD_NOUN
+WORD_ADJECTIVE_F",,KATAKANA,,,-,アソシエート,,asoshieeto,"wspólnik
+współpracownik",ang: associate,,,"GroupId: 2168490
+Translate: associate"
+201696,"WORD_NOUN
+WORD_ADJECTIVE_F",,KATAKANA,,,-,アソーシエイト,,asooshieito,"wspólnik
+współpracownik",ang: associate,,,"GroupId: 2168490
+Translate: associate"
+201697,WORD_NOUN,,HIRAGANA,,,弗化水素,ふっかすいそ,,fukka suiso,"fluorowodór
+HF",nieorganiczny związek chemiczny zbudowany z fluoru i wodoru,,,"GroupId: 2169720
+Translate: hydrogen fluoride
+Translate: HF"
+201698,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA_HIRAGANA,,,ハト胸,ハトむね,,hato mune,"kurza klatka piersiowa (z wypukłym mostkiem)
+kobieta z dużymi piersiami (kolokwializm)",,,,"GroupId: 1626370
+Translate: pigeon chest (Pectus carinatum, deformity of the chest, protruding ribs and sternum)
+Translate: pigeon breast
+Translate: woman with big breasts
+MiscInfo: col"
+201699,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,はと胸,はとむね,,hato mune,"kurza klatka piersiowa (z wypukłym mostkiem)
+kobieta z dużymi piersiami (kolokwializm)",,,,"GroupId: 1626370
+Translate: pigeon chest (Pectus carinatum, deformity of the chest, protruding ribs and sternum)
+Translate: pigeon breast
+Translate: woman with big breasts
+MiscInfo: col"
+201700,WORD_NOUN,,KATAKANA,,,-,アカシタビラメ,,akashitabirame,Cynoglossus joyneri,gatunek ryby,,,"GroupId: 2635020
+Translate: red tonguesole (Cynoglossus joyneri)
+MiscInfo: uk"
+201701,WORD_NOUN,,KATAKANA,,,-,キタゾウアザラシ,,kitazou azarashi,"mirunga północna
+słoń morski północny","gatunek drapieżnego ssaka morskiego z rodziny fokowatych, Mirounga angustirostris",,,"GroupId: 2157870
+Translate: northern elephant seal (Mirounga angustirostris)
+MiscInfo: uk"
