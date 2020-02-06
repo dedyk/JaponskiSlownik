@@ -7127,7 +7127,7 @@ Translate: wittering on
 Translate: prattling on
 Translate: blathering on"
 201817,WORD_NOUN,,HIRAGANA,,,肉芽腫,にくがしゅ,,nikugashu,"ziarniak
-ziarniniak",,,,"GroupId: 2237190
+ziarniniak",,,DUPLICATE 201857,"GroupId: 2237190
 Translate: granuloma"
 201818,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,二穴,にけつ,,niketsu,"dwie dziury
@@ -7168,7 +7168,7 @@ Translate: dirty girl
 MiscInfo: sl
 MiscInfo: derog"
 201829,WORD_NOUN,,HIRAGANA,,,畜犬,ちくけん,,chikuken,"pies (domowy)
-trzymanie psa (w domu)",,,,"GroupId: 1697980
+trzymanie psa (w domu)",,,DUPLICATE 201862,"GroupId: 1697980
 Translate: pet dog
 Translate: keeping a dog"
 201830,WORD_NOUN,,KATAKANA,,,-,パンゲア,,pangea,Pangea,superkontynent istniejący na Ziemi w okresie pomiędzy 300 a 180 milionów lat temu,,,"GroupId: 2231800
@@ -7184,7 +7184,7 @@ MiscInfo: yoji"
 podstawowe operacje arytmetyczne",,,,"GroupId: 2062250
 Translate: four arithmetic operations
 Translate: basic arithmetic operations"
-201835,WORD_NOUN,,KATAKANA,,,-,ツーブロック,,tsuuburokku,undercut,rodzaj fryzury,,,"GroupId: 2836163
+201835,WORD_NOUN,,KATAKANA,,,-,ツーブロック,,tsuu burokku,undercut,rodzaj fryzury,,,"GroupId: 2836163
 Translate: undercut (hairstyle)"
 201836,WORD_NOUN,,HIRAGANA,,,転出先,てんしゅつさき,,tenshutsusaki,nowy adres,,,,"GroupId: 2210690
 Translate: new address"
@@ -7224,3 +7224,51 @@ Translate: instantiate"
 Translate: automobile"
 201852,WORD_NOUN,,KATAKANA_HIRAGANA,,,マーケティング戦略,マーケティングせんりゃく,,maaketingu senryaku,strategia marketingowa,,,,"GroupId: 1126350
 Translate: marketing strategy"
+201853,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,冱え冱えとした,さえざえとした,,sae zae toshita,"radosny (wygląd)
+pogodny (wygląd)
+zdrowa (cera)",,,,"GroupId: 1297085
+Translate: cheerful (look)
+Translate: healthy (complexion)"
+201854,WORD_NOUN,,KATAKANA,,,-,ラブカ,,rabuka,"płaszczak
+chlamida","gatunek prymitywnego rekina z rodziny płaszczakowatych, blisko spokrewniony z wymarłymi gatunkami znanymi w zapisie kopalnym z pokładów plioceńskich Antyli i mioceńskich Europy, Chlamydoselachus anguineus",,,"GroupId: 2137920
+Translate: frilled shark (Chlamydoselachus anguineus)
+MiscInfo: uk"
+201855,WORD_NOUN,,HIRAGANA,,,袞龍,こんりょう,,konryou,"cesarska szata
+cesarska toga",,,,"GroupId: 1572350
+Translate: imperial robes"
+201856,"WORD_ADVERB_TO
+WORD_ADJECTIVE_TARU",,HIRAGANA,,,喃喃,なんなん,,nannan,"gaworzenie
+ględzenie
+paplanie
+plecenie",,,,"GroupId: 2840433
+Translate: chatteringly
+Translate: wittering on
+Translate: prattling on
+Translate: blathering on"
+201857,WORD_NOUN,,HIRAGANA,,,肉芽腫,にくげしゅ,,nikugeshu,"ziarniak
+ziarniniak",,,DUPLICATE 201817,"GroupId: 2237190
+Translate: granuloma"
+201858,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオアラセイトウ,,ooaraseitou,Orychophragmus violaceus,roślina,,,"GroupId: 2831845
+Translate: Chinese violet cress (Orychophragmus violaceus)
+MiscInfo: uk"
+201859,WORD_NOUN,,KATAKANA,,,-,ブラ・キャミソール,,bura kyamisooru,halka z biustonoszem,ang: bra camisole,,,"GroupId: 2838688
+Translate: bra camisole
+Translate: bra cami
+Translate: camisole with built-in bra"
+201860,WORD_NOUN,,HIRAGANA,,,瓊瓊杵命,ににぎのみこと,,ninigi no mikoto,Ninigi no Mikoto,"japońskie bóstwo, wnuk Amaterasu",,,"GroupId: 2685840
+Translate: Ninigi no Mikoto (Japanese deity, grandson of Amaterasu)"
+201861,WORD_NOUN,,HIRAGANA,,,邇邇芸命,ににぎのみこと,,ninigi no mikoto,Ninigi no Mikoto,"japońskie bóstwo, wnuk Amaterasu",,,"GroupId: 2685840
+Translate: Ninigi no Mikoto (Japanese deity, grandson of Amaterasu)"
+201862,WORD_NOUN,,HIRAGANA,,,畜犬,ちっけん,,chikken,"pies (domowy)
+trzymanie psa (w domu)",,,DUPLICATE 201829,"GroupId: 1697980
+Translate: pet dog
+Translate: keeping a dog"
+201863,WORD_NOUN,,KATAKANA,,,-,ツー・ブロック,,tsuu burokku,undercut,rodzaj fryzury,,,"GroupId: 2836163
+Translate: undercut (hairstyle)"
+201864,WORD_NOUN,,HIRAGANA,,,ならし保育,ならしほいく,,narashi hoiku,"stopniowe wchodzenie (do przedszkola)
+sesja adaptowania się",,,,"GroupId: 2836988
+Translate: gradual entry (into preschool)
+Translate: settling-in session"
+201865,WORD_NOUN,,KATAKANA,,,-,オートモービル,,ootomoobiru,samochód,ang: automobile,,,"GroupId: 1032190
+Translate: automobile"
