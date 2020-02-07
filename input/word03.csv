@@ -7294,7 +7294,7 @@ Translate: highly regrettable
 MiscInfo: yoji
 Translate: utterly deplorable
 MiscInfo: yoji"
-201873,WORD_NOUN,,HIRAGANA,,,罅焼き,ひびやき,,hibiyaki,ceramika zdobiona krakelurą,,,,"GroupId: 1570610
+201873,WORD_NOUN,,HIRAGANA,,,罅焼き,ひびやき,,hibi yaki,ceramika zdobiona krakelurą,,,,"GroupId: 1570610
 Translate: crackleware"
 201874,WORD_NOUN,,HIRAGANA,,,障害追跡,しょうがいついせき,,shougai tsuiseki,ślady awarii,informatyka,,,"GroupId: 2365440
 Translate: fault trace"
@@ -7304,7 +7304,7 @@ niezgodny
 sprzeczny",,,,"GroupId: 2200730
 Translate: illogical
 Translate: inconsistent"
-201876,WORD_NOUN,,HIRAGANA,,,淑景舎,しげいしゃ,,shigeisha,rezydencja dam dworu,w wewnętrznym Pałacu Heian,,,"GroupId: 2594810
+201876,WORD_NOUN,,HIRAGANA,,,淑景舎,しげいしゃ,,shigeisha,rezydencja dam dworu,w wewnętrznym Pałacu Heian,,DUPLICATE 201926,"GroupId: 2594810
 Translate: court ladies' residence (in the inner Heian Palace)"
 201877,WORD_NOUN,,HIRAGANA,,,韓国街,かんこくがい,,kankokugai,koreańskie miasto,,,,"GroupId: 2750400
 Translate: Koreatown"
@@ -7320,12 +7320,12 @@ Translate: exercise using gymnastics equipment"
 Translate: love story"
 201881,WORD_NOUN,,KATAKANA,,,-,マジリカ,,majirika,majolika,ceramika pokryta nieprzezroczystą polewą ołowiowo-cynową o bogatej kolorystyce,,,"GroupId: 1127790
 Translate: majolica"
-201882,WORD_NOUN,,HIRAGANA,,,上げ底,あげぞこ,,agezoko,"podwójne dno
+201882,WORD_NOUN,,HIRAGANA,,,上げ底,あげぞこ,,age zoko,"podwójne dno
 fałszywe dno
 podniesione dno
 koturn (buta)
 przesada
-wyolbrzymienie",,,,"GroupId: 1774940
+wyolbrzymienie",,,DUPLICATE 201927,"GroupId: 1774940
 Translate: false bottom
 Translate: fake bottom
 Translate: raised bottom
@@ -7415,7 +7415,7 @@ Translate: archive of family registers"
 rebeck",instrument smyczkowy,,,"GroupId: 2453160
 Translate: rebec
 Translate: rebeck"
-201902,WORD_NOUN,,HIRAGANA,,,手続法,てつづきほう,,tetsudukihou,prawo procesowe,,,,"GroupId: 2595140
+201902,WORD_NOUN,,HIRAGANA,,,手続法,てつづきほう,,tetsuduki hou,prawo procesowe,,,,"GroupId: 2595140
 Translate: procedural law"
 201903,WORD_NOUN,,HIRAGANA,,,辰巳芸者,たつみげいしゃ,,tatsumi geisha,gejsza z dzielnicy czerwonych latarni Fukagawa w Edo,archaizm,,,"GroupId: 2592320
 Translate: geisha from the Fukagawa red-light district in Edo
@@ -7435,7 +7435,7 @@ MiscInfo: obsc"
 Translate: checklist"
 201909,WORD_EXPRESSION,,HIRAGANA,,,週一日,しゅういちにち,,shuuichinichi,jeden dzień w tygodniu,,,,"GroupId: 1983110
 Translate: one day a week"
-201910,WORD_NOUN,,HIRAGANA,,,放ち出,はなちいで,,hanachi ide,przedłużenie głównej sali domu (w tradycyjnej architekturze pałacowej),mało znane słowo,,,"GroupId: 2585830
+201910,WORD_NOUN,,HIRAGANA,,,放ち出,はなちいで,,hanachi ide,przedłużenie głównej sali domu (w tradycyjnej architekturze pałacowej),mało znane słowo,,DUPLICATE 201943,"GroupId: 2585830
 Translate: extension of the main room of a home (in traditional palatial-style architecture)
 MiscInfo: obsc"
 201911,WORD_NOUN,,KATAKANA,,,-,ズルナ,,zuruna,surma,"instrument muzyczny z grupy instrumentów dętych drewnianych, ang: zurna",,,"GroupId: 2230100
@@ -7476,7 +7476,7 @@ Translate: Okinawan pig breed"
 201920,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,禅宗様,ぜんしゅうよう,,zenshuuyou,tradycyjny styl architektury Zen,,,,"GroupId: 2567050
 Translate: traditional Zen-style architecture"
-201921,WORD_NOUN,,HIRAGANA,,,毛深雀蜂,けぶかすずめばち,,kebukasuzumebachi,"japoński szerszeń (Vespa simillima, szczególnie podgatunek Vespa simillima simillima)
+201921,WORD_NOUN,,HIRAGANA,,,毛深雀蜂,けぶかすずめばち,,kebuka suzumebachi,"japoński szerszeń (Vespa simillima, szczególnie podgatunek Vespa simillima simillima)
 żółty szerszeń",,,,"GroupId: 2566430
 Translate: Japanese hornet (Vespa simillima, esp. subspecies Vespa simillima simillima)
 MiscInfo: uk
@@ -7486,5 +7486,173 @@ MiscInfo: uk"
 Translate: sophist"
 201923,WORD_NOUN,,KATAKANA_HIRAGANA,,,スコラ哲学,スコラてつがく,,sukora tetsugaku,scholastyka,krytyczna metoda analityczna stosowana na średniowiecznych uniwersytetach,,,"GroupId: 2071270
 Translate: scholasticism"
-201924,WORD_NOUN,,HIRAGANA,,,天眼通,てんげんつう,,tengentsuu,jasnowidztwo,buddyzm,,,"GroupId: 1438660
+201924,WORD_NOUN,,HIRAGANA,,,天眼通,てんげんつう,,tengentsuu,jasnowidztwo,buddyzm,,DUPLICATE 201949,"GroupId: 1438660
+Translate: clairvoyance"
+201925,WORD_NOUN,,HIRAGANA,,,ひび焼き,ひびやき,,hibi yaki,ceramika zdobiona krakelurą,,,,"GroupId: 1570610
+Translate: crackleware"
+201926,WORD_NOUN,,HIRAGANA,,,淑景舎,しげいさ,,shigeisa,rezydencja dam dworu,w wewnętrznym Pałacu Heian,,DUPLICATE 201876,"GroupId: 2594810
+Translate: court ladies' residence (in the inner Heian Palace)"
+201927,WORD_NOUN,,HIRAGANA,,,上げ底,あげそこ,,age soko,"podwójne dno
+fałszywe dno
+podniesione dno
+koturn (buta)
+przesada
+wyolbrzymienie",,,DUPLICATE 201882,"GroupId: 1774940
+Translate: false bottom
+Translate: fake bottom
+Translate: raised bottom
+Translate: platform (shoes)
+Translate: kick (of a bottle)
+Translate: exaggeration
+Translate: overstatement"
+201928,WORD_NOUN,,HIRAGANA,,,揚げ底,あげぞこ,,age zoko,"podwójne dno
+fałszywe dno
+podniesione dno
+koturn (buta)
+przesada
+wyolbrzymienie",,,DUPLICATE 201929,"GroupId: 1774940
+Translate: false bottom
+Translate: fake bottom
+Translate: raised bottom
+Translate: platform (shoes)
+Translate: kick (of a bottle)
+Translate: exaggeration
+Translate: overstatement"
+201929,WORD_NOUN,,HIRAGANA,,,揚げ底,あげそこ,,age soko,"podwójne dno
+fałszywe dno
+podniesione dno
+koturn (buta)
+przesada
+wyolbrzymienie",,,DUPLICATE 201928,"GroupId: 1774940
+Translate: false bottom
+Translate: fake bottom
+Translate: raised bottom
+Translate: platform (shoes)
+Translate: kick (of a bottle)
+Translate: exaggeration
+Translate: overstatement"
+201930,WORD_NOUN,,HIRAGANA,,,上底,あげぞこ,,age zoko,"podwójne dno
+fałszywe dno
+podniesione dno
+koturn (buta)
+przesada
+wyolbrzymienie",,,DUPLICATE 201931,"GroupId: 1774940
+Translate: false bottom
+Translate: fake bottom
+Translate: raised bottom
+Translate: platform (shoes)
+Translate: kick (of a bottle)
+Translate: exaggeration
+Translate: overstatement"
+201931,WORD_NOUN,,HIRAGANA,,,上底,あげそこ,,age soko,"podwójne dno
+fałszywe dno
+podniesione dno
+koturn (buta)
+przesada
+wyolbrzymienie",,,DUPLICATE 201930,"GroupId: 1774940
+Translate: false bottom
+Translate: fake bottom
+Translate: raised bottom
+Translate: platform (shoes)
+Translate: kick (of a bottle)
+Translate: exaggeration
+Translate: overstatement"
+201932,WORD_NOUN,,HIRAGANA,,,揚底,あげぞこ,,age zoko,"podwójne dno
+fałszywe dno
+podniesione dno
+koturn (buta)
+przesada
+wyolbrzymienie",,,DUPLICATE 201933,"GroupId: 1774940
+Translate: false bottom
+Translate: fake bottom
+Translate: raised bottom
+Translate: platform (shoes)
+Translate: kick (of a bottle)
+Translate: exaggeration
+Translate: overstatement"
+201933,WORD_NOUN,,HIRAGANA,,,揚底,あげそこ,,age soko,"podwójne dno
+fałszywe dno
+podniesione dno
+koturn (buta)
+przesada
+wyolbrzymienie",,,DUPLICATE 201932,"GroupId: 1774940
+Translate: false bottom
+Translate: fake bottom
+Translate: raised bottom
+Translate: platform (shoes)
+Translate: kick (of a bottle)
+Translate: exaggeration
+Translate: overstatement"
+201934,WORD_NUMBER,,HIRAGANA,,,二十五,にじゅうご,,nijuugo,"dwadzieścia pięć
+godzina 1 (w nocy, kolokwializm)",,,,"GroupId: 2837150
+Translate: twenty-five
+Translate: 1 (AM)
+MiscInfo: col"
+201935,WORD_NOUN,,KATAKANA,,,-,ニセメンフクロウ,,nisemenfukurou,Phodilus badius,gatunek sowy,,,"GroupId: 2753090
+Translate: Oriental bay owl (Phodilus badius)
+MiscInfo: uk"
+201936,WORD_NOUN,,HIRAGANA,,,二〇〇〇年問題,にせんねんもんだい,,nisen nen mondai,"problem roku 2000
+Y2K
+pluskwa milenijna","potencjalnie katastroficzne skutki, jakie miał z nastaniem roku 2000 wywołać przyjęty kilkadziesiąt lat wcześniej sposób zapisu daty w programach komputerowych",,,"GroupId: 1624460
+Translate: Y2K bug
+Translate: year 2000 problem"
+201937,WORD_NOUN,,KATAKANA,,,-,ニホンジカ,,nihonjika,"jeleń wschodni
+sika","gatunek jeleniowatych – jego podgatunki zamieszkują wschodnią część Syberii, Mandżurię, wschodnie Chiny, Koreę, Japonię oraz Tajwan, Cervus nippon",,,"GroupId: 2111050
+Translate: sika deer (Cervus nippon)
+MiscInfo: uk
+Translate: sika
+MiscInfo: uk
+Translate: spotted deer
+MiscInfo: uk
+Translate: Japanese deer
+MiscInfo: uk"
+201938,WORD_NOUN,,HIRAGANA,,,瀬取船,せどりぶね,,sedori bune,mała łódź używana do rozładunku towarów z dużej łodzi zakotwiczonej w pobliżu,,,,"GroupId: 2593270
+Translate: small boat used for unloading goods from a large boat anchored nearby"
+201939,WORD_NOUN,,KATAKANA_HIRAGANA,,,アウストロネシア語族,アウストロネシアごぞく,,ausutoroneshia gozoku,języki austronezyjskie,"rodzina języków, którymi posługuje się ok. 350 mln rdzennych mieszkańców wysp Oceanii i Azji Południowo-Wschodniej oraz Madagaskaru",,,"GroupId: 1960530
+Translate: Austronesian languages"
+201940,WORD_EXPRESSION,,HIRAGANA,,,よろしくお付き合い下さい,よろしくおつきあいください,,yoroshiku otsuki ai kudasai,"proszę pamiętaj o mnie
+proszę pomóż mi
+proszę traktuj mnie dobrze
+nie mogę się doczekać by z tobą pracować",uprzejmie,,,"GroupId: 2840298
+Translate: please remember me
+MiscInfo: pol
+Translate: please help me
+MiscInfo: pol
+Translate: please treat me well
+MiscInfo: pol
+Translate: I look forward to working with you
+MiscInfo: pol"
+201941,WORD_NOUN,,HIRAGANA,,,手続き法,てつづきほう,,tetsuduki hou,prawo procesowe,,,,"GroupId: 2595140
+Translate: procedural law"
+201942,WORD_NOUN,,HIRAGANA,,,倭鏡,わきょう,,wakyou,lustro w japońskim stylu,,,,"GroupId: 2575720
+Translate: Japanese-style mirror"
+201943,WORD_NOUN,,HIRAGANA,,,放ち出,はなちで,,hanachi de,przedłużenie głównej sali domu (w tradycyjnej architekturze pałacowej),mało znane słowo,,DUPLICATE 201910,"GroupId: 2585830
+Translate: extension of the main room of a home (in traditional palatial-style architecture)
+MiscInfo: obsc"
+201944,WORD_NOUN,,HIRAGANA,,,放ち出で,はなちいで,,hanachi ide,przedłużenie głównej sali domu (w tradycyjnej architekturze pałacowej),mało znane słowo,,,"GroupId: 2585830
+Translate: extension of the main room of a home (in traditional palatial-style architecture)
+MiscInfo: obsc"
+201945,WORD_NOUN,,KATAKANA,,,-,バカチョンカメラ,,baka chon kamera,"automatyczny aparat
+aparat fotograficzny typu małpka","wrażliwie, uwaga, チョン jest częstym rasistowskim określeniem na Koreańczyków",,,"GroupId: 2095580
+Translate: automatic camera
+MiscInfo: uk
+MiscInfo: sens
+AdditionalInfo: note that チョン is often a racist term for Koreans"
+201946,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,話が分かる,はなしがわかる,,hanashi ga wakaru,"przyziemny
+praktyczny
+rozsądny
+w stanie sobie z tym poradzić",,,,"GroupId: 2136825
+Translate: down to earth
+Translate: reasonable
+Translate: able to deal with"
+201947,WORD_NOUN,,HIRAGANA,,,-,あぐう,,aguu,okinawska rasa świni,,,,"GroupId: 2708090
+Translate: Okinawan pig breed"
+201948,WORD_NOUN,,KATAKANA,,,-,ケブカスズメバチ,,kebuka suzumebachi,"japoński szerszeń (Vespa simillima, szczególnie podgatunek Vespa simillima simillima)
+żółty szerszeń",,,,"GroupId: 2566430
+Translate: Japanese hornet (Vespa simillima, esp. subspecies Vespa simillima simillima)
+MiscInfo: uk
+Translate: yellow hornet
+MiscInfo: uk"
+201949,WORD_NOUN,,HIRAGANA,,,天眼通,てんがんつう,,tengantsuu,jasnowidztwo,buddyzm,,DUPLICATE 201924,"GroupId: 1438660
 Translate: clairvoyance"
