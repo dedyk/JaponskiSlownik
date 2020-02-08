@@ -7661,7 +7661,7 @@ WORD_NOUN",,HIRAGANA,,,所得顔,ところえがお,,tokoroegao,"wygląd triumfu
 triumfalny wygląd",,,,"GroupId: 1798590
 Translate: look of triumph"
 201951,WORD_NOUN,,HIRAGANA,,,一言隻句,いちごんせきく,,ichigon sekiku,"każde pojedyncze słowo i wyrażenie
-każde słowo",,,,"GroupId: 2041310
+każde słowo",,,DUPLICATE 202006,"GroupId: 2041310
 Translate: every single word and phrase
 MiscInfo: yoji
 Translate: each and every word
@@ -7704,7 +7704,7 @@ obrońca
 zwolennik
 rzecznik",,,,"GroupId: 1325920
 Translate: advocate"
-201965,WORD_NOUN,,HIRAGANA,,,条件付採録,じょうけんつきさいろく,,joukentsuki sairoku,przyjęcie warunkowe,,,,"GroupId: 2397050
+201965,WORD_NOUN,,HIRAGANA,,,条件付採録,じょうけんつきさいろく,,jouken tsuki sairoku,przyjęcie warunkowe,,,,"GroupId: 2397050
 Translate: conditional acceptance"
 201966,WORD_NOUN,,HIRAGANA,,,遊泳生物,ゆうえいせいぶつ,,yuuei seibutsu,nekton,"wszystkie zwierzęta zdolne do poruszania się wbrew prądom wodnym, występujące w przybrzeżnych i w otwartych wodach jezior, mórz i oceanów",,,"GroupId: 2434610
 Translate: nekton"
@@ -7812,7 +7812,7 @@ Translate: to become weak
 Translate: to lose strength"
 201994,WORD_NOUN,,HIRAGANA,,,夕潮,ゆうしお,,yuushio,wieczorowa pora,,,,"GroupId: 2559490
 Translate: evening tide"
-201995,WORD_NOUN,,HIRAGANA,,,お手塩,おてしょ,,otesho,"małe, płytkie naczynie","język kobiet, mało znane słowo",,,"GroupId: 2164970
+201995,WORD_NOUN,,HIRAGANA,,,お手塩,おてしょ,,otesho,"małe, płytkie naczynie","język kobiet, mało znane słowo",,DUPLICATE 202014,"GroupId: 2164970
 Translate: small, shallow dish
 MiscInfo: fem
 MiscInfo: obsc"
@@ -7828,7 +7828,7 @@ MiscInfo: yoji"
 201998,WORD_NOUN,,KATAKANA_HIRAGANA,,,メタファイル記述子,メタファイルきじゅつし,,metafairu kijutsushi,deskryptor metapliku,informatyka,,,"GroupId: 2333580
 Translate: metafile descriptor
 Translate: MD"
-201999,WORD_NOUN,,HIRAGANA,,,編上靴,あみあげぐつ,,amiagegutsu,sznurowane buty,へんじょうか było głównie używane w Japońskiej Cesarskiej Armii na określenie wojskowych butów,,,"GroupId: 1732440
+201999,WORD_NOUN,,HIRAGANA,,,編上靴,あみあげぐつ,,amiage gutsu,sznurowane buty,へんじょうか było głównie używane w Japońskiej Cesarskiej Armii na określenie wojskowych butów,,DUPLICATE 202017,"GroupId: 1732440
 Translate: lace-up boots
 AdditionalInfo: へんじょうか was primarily an Imperial Japanese Army term for ""military boots"""
 202000,"WORD_VERB_RU
@@ -7853,5 +7853,74 @@ Translate: agrarian community
 Translate: farming area
 Translate: farming region"
 202005,WORD_ADJECTIVE_NO,,KATAKANA,,,-,テーラーメイド,,teeraa meido,"wykonany na zamówienie
+szyty na miarę",ang: tailor-made,,,"GroupId: 1078930
+Translate: tailor-made"
+202006,WORD_NOUN,,HIRAGANA,,,一言隻句,いちごんせっく,,ichigon sekku,"każde pojedyncze słowo i wyrażenie
+każde słowo",,,DUPLICATE 201951,"GroupId: 2041310
+Translate: every single word and phrase
+MiscInfo: yoji
+Translate: each and every word
+MiscInfo: yoji"
+202007,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,仕事にかかる,しごとにかかる,,shigoto ni kakaru,dostać się do pracy,,,,"GroupId: 1880290
+Translate: to get to work"
+202008,WORD_NOUN,,HIRAGANA,,,条件付き採録,じょうけんつきさいろく,,jouken tsuki sairoku,przyjęcie warunkowe,,,,"GroupId: 2397050
+Translate: conditional acceptance"
+202009,WORD_NOUN,,HIRAGANA,,,脱け,ぬけ,,nuke,"pominięcie
+przeoczenie
+pomyłka
+błąd
+wada
+rozdzielczość (fotografii)
+ostrość
+czystość (dźwięku)",,,,"GroupId: 2841555
+Translate: omission
+Translate: slip
+Translate: error
+Translate: fault
+Translate: definition (of photograph)
+Translate: sharpness
+Translate: clarity (sound)
+Translate: flow"
+202010,WORD_VERB_RU,,HIRAGANA,,,言合わせる,いいあわせる,,ii awaseru,"zgadzać się z góry
+uzgodnić z góry",,,,"GroupId: 1848280
+Translate: to agree in advance"
+202011,WORD_NOUN,,HIRAGANA,,,菓子折,かしおり,,kashi ori,"pudełko z ciastkami
+pudełko z ciasteczkami",,,,"GroupId: 1865190
+Translate: box of cakes"
+202012,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,身の置き場が無い,みのおきばがない,,mi no oki ba ga nai,"czucie się nie na miejscu
+czucie się, że nie należy się do miejsca
+uczucie zagubienia się w sytuacji",,,,"GroupId: 2778410
+Translate: feeling out of place
+Translate: feeling that one doesn't belong
+Translate: feeling at a loss in the situation"
+202013,WORD_NOUN,,HIRAGANA,,,夕汐,ゆうしお,,yuushio,wieczorowa pora,,,,"GroupId: 2559490
+Translate: evening tide"
+202014,WORD_NOUN,,HIRAGANA,,,お手塩,おてしょう,,oteshou,"małe, płytkie naczynie","język kobiet, mało znane słowo",,DUPLICATE 201995,"GroupId: 2164970
+Translate: small, shallow dish
+MiscInfo: fem
+MiscInfo: obsc"
+202015,WORD_NOUN,,HIRAGANA,,,御手塩,おてしょ,,otesho,"małe, płytkie naczynie","język kobiet, mało znane słowo",,DUPLICATE 202016,"GroupId: 2164970
+Translate: small, shallow dish
+MiscInfo: fem
+MiscInfo: obsc"
+202016,WORD_NOUN,,HIRAGANA,,,御手塩,おてしょう,,oteshou,"małe, płytkie naczynie","język kobiet, mało znane słowo",,DUPLICATE 202015,"GroupId: 2164970
+Translate: small, shallow dish
+MiscInfo: fem
+MiscInfo: obsc"
+202017,WORD_NOUN,,HIRAGANA,,,編上靴,へんじょうか,,henjouka,sznurowane buty,へんじょうか było głównie używane w Japońskiej Cesarskiej Armii na określenie wojskowych butów,,DUPLICATE 201999,"GroupId: 1732440
+Translate: lace-up boots
+AdditionalInfo: へんじょうか was primarily an Imperial Japanese Army term for ""military boots"""
+202018,WORD_NOUN,,HIRAGANA,,,編み上げ靴,あみあげぐつ,,amiage gutsu,sznurowane buty,へんじょうか było głównie używane w Japońskiej Cesarskiej Armii na określenie wojskowych butów,,,"GroupId: 1732440
+Translate: lace-up boots
+AdditionalInfo: へんじょうか was primarily an Imperial Japanese Army term for ""military boots"""
+202019,WORD_NOUN,,HIRAGANA,,,編上げ靴,あみあげぐつ,,amiage gutsu,sznurowane buty,へんじょうか było głównie używane w Japońskiej Cesarskiej Armii na określenie wojskowych butów,,,"GroupId: 1732440
+Translate: lace-up boots
+AdditionalInfo: へんじょうか was primarily an Imperial Japanese Army term for ""military boots"""
+202020,WORD_NOUN,,HIRAGANA,,,編み上靴,あみあげぐつ,,amiage gutsu,sznurowane buty,へんじょうか było głównie używane w Japońskiej Cesarskiej Armii na określenie wojskowych butów,,,"GroupId: 1732440
+Translate: lace-up boots
+AdditionalInfo: へんじょうか was primarily an Imperial Japanese Army term for ""military boots"""
+202021,WORD_ADJECTIVE_NO,,KATAKANA,,,-,テーラーメード,,teeraa meedo,"wykonany na zamówienie
 szyty na miarę",ang: tailor-made,,,"GroupId: 1078930
 Translate: tailor-made"
