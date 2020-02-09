@@ -601,7 +601,7 @@ public class WordGenerator {
 
 				reader.close();
 				
-				System.out.println("Liczba słów: " + result + " (liczba nowych słów: " + newPolishJapaneseEntryList.size() + ")");	
+				System.out.println("Liczba słów: " + result + " (liczba nowych słów: " + newPolishJapaneseEntryList.size() + ", brakuje: " + ( expectedNewWordSize - newPolishJapaneseEntryList.size()) + ")");	
 				
 				break;
 			}						
