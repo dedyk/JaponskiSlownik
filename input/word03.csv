@@ -7930,7 +7930,7 @@ bajeczka",,,,"GroupId: 2100880
 Translate: tall story
 Translate: tall tale
 Translate: cock-and-bull story"
-202023,WORD_NOUN,,HIRAGANA,,,角封筒,かくふうとう,,kakufuutou,koperta w zachodnim stylu,,,,"GroupId: 2742050
+202023,WORD_NOUN,,HIRAGANA,,,角封筒,かくふうとう,,kakufuutou,koperta w zachodnim stylu,,,DUPLICATE 202087,"GroupId: 2742050
 Translate: western-style envelope"
 202024,WORD_NOUN,,HIRAGANA,,,松手入れ,まつていれ,,matsute ire,"zajmowanie się sosnami
 doglądanie sosen",szczególnie jesienią,,,"GroupId: 2775910
@@ -7952,9 +7952,9 @@ Translate: surgical instrument"
 202029,WORD_NOUN,,HIRAGANA,,,事業再生融資,じぎょうさいせいゆうし,,jigyou saisei yuushi,???,,,,"GroupId: 1994400
 Translate: debtor-in-possession financing"
 202030,WORD_NOUN,,HIRAGANA,,,回り縁,まわりぶち,,mawari buchi,"gzyms
-karnisz",,,,"GroupId: 1981550
+karnisz",,,DUPLICATE 202089,"GroupId: 1981550
 Translate: cornice"
-202031,WORD_NOUN,,HIRAGANA,,,蕎麦がき,そばがき,,sobagaki,"gryczana kluska
+202031,WORD_NOUN,,HIRAGANA,,,蕎麦がき,そばがき,,soba gaki,"gryczana kluska
 gryczana kulka",,,,"GroupId: 2613340
 Translate: buckwheat dumpling
 Translate: buckwheat mash
@@ -8157,7 +8157,135 @@ kikongo","język z rodziny bantu, używany w Kongu, Demokratycznej Republice Kon
 Translate: Kongo (language)
 Translate: Kikongo
 Translate: Congolese"
-202083,WORD_NOUN,,HIRAGANA,,,四方反鉋,しほうそりかんな,,shihousorikanna,"drewniany hebel z wypukłą podstawą zakrzywioną w kierunku cięcia, jak i poprzek ostrza",,,,"GroupId: 2113670
+202083,WORD_NOUN,,HIRAGANA,,,四方反鉋,しほうそりかんな,,shihousori kanna,"drewniany hebel z wypukłą podstawą zakrzywioną w kierunku cięcia, jak i poprzek ostrza",,,,"GroupId: 2113670
 Translate: wooden plane with a convex base curved both along the direction of cutting and across the blade"
 202084,WORD_NOUN,,KATAKANA_HIRAGANA,,,カード穿孔機構,カードせんこうきこう,,kaado senkou kikou,dziurkarka kart,informatyka,,,"GroupId: 2290780
 Translate: card punch"
+202085,WORD_NOUN,,HIRAGANA,,,ほら話,ほらばなし,,hora banashi,"niewiarygodna historia
+nieprawdopodobna historia
+bajeczka",,,,"GroupId: 2100880
+Translate: tall story
+Translate: tall tale
+Translate: cock-and-bull story"
+202086,WORD_NOUN,,HIRAGANA,,,法螺話,ほらばなし,,hora banashi,"niewiarygodna historia
+nieprawdopodobna historia
+bajeczka",,,,"GroupId: 2100880
+Translate: tall story
+Translate: tall tale
+Translate: cock-and-bull story"
+202087,WORD_NOUN,,HIRAGANA,,,角封筒,かくぶうとう,,kakubuutou,koperta w zachodnim stylu,,,DUPLICATE 202023,"GroupId: 2742050
+Translate: western-style envelope"
+202088,WORD_CONJUNCTION,,HIRAGANA,,,しかるが故に,しかるがゆえに,,shikaru ga yue ni,"w tych okolicznościach
+wobec tego
+jako że
+z tego względu",,,,"GroupId: 2181710
+Translate: as such
+Translate: that being so
+Translate: for that reason"
+202089,WORD_NOUN,,HIRAGANA,,,回り縁,まわりえん,,mawari en,"gzyms
+karnisz",,,DUPLICATE 202030,"GroupId: 1981550
+Translate: cornice"
+202090,WORD_NOUN,,HIRAGANA,,,回縁,まわりぶち,,mawari buchi,"gzyms
+karnisz",,,DUPLICATE 202091,"GroupId: 1981550
+Translate: cornice"
+202091,WORD_NOUN,,HIRAGANA,,,回縁,まわりえん,,mawari en,"gzyms
+karnisz",,,DUPLICATE 202090,"GroupId: 1981550
+Translate: cornice"
+202092,WORD_NOUN,,HIRAGANA,,,廻縁,まわりぶち,,mawari buchi,"gzyms
+karnisz",,,DUPLICATE 202093,"GroupId: 1981550
+Translate: cornice"
+202093,WORD_NOUN,,HIRAGANA,,,廻縁,まわりえん,,mawari en,"gzyms
+karnisz",,,DUPLICATE 202092,"GroupId: 1981550
+Translate: cornice"
+202094,WORD_NOUN,,HIRAGANA,,,蕎麦掻き,そばがき,,soba gaki,"gryczana kluska
+gryczana kulka",,,,"GroupId: 2613340
+Translate: buckwheat dumpling
+Translate: buckwheat mash
+Translate: buckwheat dough ball"
+202095,WORD_NOUN,,HIRAGANA,,,蕎麦掻,そばがき,,soba gaki,"gryczana kluska
+gryczana kulka",,,,"GroupId: 2613340
+Translate: buckwheat dumpling
+Translate: buckwheat mash
+Translate: buckwheat dough ball"
+202096,WORD_NOUN,,HIRAGANA,,,黒色わい星,こくしょくわいせい,,kokushoku waisei,czarny karzeł,"hipotetyczna gwiazda zdegenerowana powstająca, kiedy biały karzeł wypala się całkowicie i nie może emitować już promieniowania elektromagnetycznego",,,"GroupId: 2167420
+Translate: black dwarf"
+202097,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,恥を曝す,はじをさらす,,haji o sarasu,"blamować się
+skalać się
+hańbić się
+ośmieszyć się",,,,"GroupId: 2836545
+Translate: to disgrace oneself
+Translate: to make a fool of oneself"
+202098,WORD_NOUN,,KATAKANA_HIRAGANA,,,レンズ付フィルム,レンズつきフィルム,,renzu tsuki firumu,"jednorazowy aparat fotograficzny
+???",,,,"GroupId: 2838904
+Translate: disposable camera
+Translate: single-use camera
+Translate: film with camera lens"
+202099,WORD_NOUN,,HIRAGANA,,,砂糖漬,さとうづけ,,satou duke,"konserwowanie w cukrze
+jedzenie zakonserwowane w cukrze",,,,"GroupId: 1754570
+Translate: preserving in sugar
+Translate: food preserved in sugar"
+202100,WORD_NOUN,,KATAKANA,,,-,セイヨウスモモ,,seiyou sumomo,śliwa domowa,"poliploidalny gatunek roślin wieloletnich należący do rodziny różowatych, nie występujący w stanie dzikim, Prunus domestica",,,"GroupId: 2812800
+Translate: common plum (Prunus domestica)
+MiscInfo: uk
+Translate: European plum
+MiscInfo: uk"
+202101,WORD_NOUN,,KATAKANA,,,-,ヒメビシ,,himebishi,Trapa incisa,gatunek rośliny,,,"GroupId: 2815370
+Translate: Trapa incisa (species of plant closely related to the water caltrop)
+MiscInfo: uk"
+202102,WORD_NOUN,,HIRAGANA,,,難波歩き,なんばあるき,,nanba aruki,"chodzenie nanba
+chodzenie z synchronizacją rąk i nóg po obu stronach ciała",,,,"GroupId: 2841665
+Translate: nanba walking
+Translate: walking with the arm and leg on each side of the body moving in sync"
+202103,WORD_NOUN,,HIRAGANA,,,難波走り,なんばはしり,,nanba hashiri,"bieg nanba
+bieganie z synchronizacją rąk i nóg po obu stronach ciała",,,,"GroupId: 2841679
+Translate: nanba running
+Translate: running with the arm and leg on each side of the body moving in sync"
+202104,WORD_VERB_RU,,HIRAGANA,,,抱き竦める,だきすくめる,,daki sukumeru,"przytulać mocno
+chwycić mocno
+objąć mocno",,,,"GroupId: 1847910
+Translate: to hug tight
+Translate: to grasp firmly
+Translate: to embrace tightly"
+202105,WORD_VERB_RU,,HIRAGANA,,,吠えたてる,ほえたてる,,hoe tateru,"szczekać
+ujadać
+wyć",,,,"GroupId: 2786960
+Translate: to bark
+Translate: to bay
+Translate: to howl"
+202106,WORD_VERB_RU,,HIRAGANA,,,ほえ立てる,ほえたてる,,hoe tateru,"szczekać
+ujadać
+wyć",,,,"GroupId: 2786960
+Translate: to bark
+Translate: to bay
+Translate: to howl"
+202107,WORD_VERB_RU,,HIRAGANA,,,吼え立てる,ほえたてる,,hoe tateru,"szczekać
+ujadać
+wyć",,,,"GroupId: 2786960
+Translate: to bark
+Translate: to bay
+Translate: to howl"
+202108,WORD_VERB_RU,,HIRAGANA,,,吼えたてる,ほえたてる,,hoe tateru,"szczekać
+ujadać
+wyć",,,,"GroupId: 2786960
+Translate: to bark
+Translate: to bay
+Translate: to howl"
+202109,WORD_NOUN,,KATAKANA,,,-,カラギナン,,karaginan,karagen,"rodzaj polisacharydów ekstrahowanych z czerwonych wodorostów zawierających w swej strukturze liczne grupy siarczanowe, ang: carrageenan",,,"GroupId: 2133390
+Translate: carrageenan (seaweed-based emulsifying agent)"
+202110,WORD_NOUN,,KATAKANA,,,-,カラゲナン,,karagenan,karagen,"rodzaj polisacharydów ekstrahowanych z czerwonych wodorostów zawierających w swej strukturze liczne grupy siarczanowe, ang: carrageenan",,,"GroupId: 2133390
+Translate: carrageenan (seaweed-based emulsifying agent)"
+202111,WORD_NOUN,,HIRAGANA,,,磯巻卵,いそまきたまご,,isomaki tamago,omlet zwinięty razem z wodorostem,,,,"GroupId: 2827526
+Translate: omelette rolled together with seaweed"
+202112,WORD_NOUN,,KATAKANA,,,-,ヨウジウオ,,youjiuo,igliczna,"gatunek ryby, szczególnie Syngnathus schlegeli",,,"GroupId: 2464850
+Translate: pipefish (esp. the seaweed pipefish, Syngnathus schlegeli)
+MiscInfo: uk"
+202113,WORD_NOUN,,KATAKANA,,,-,オニクサ,,onikusa,Gelidium japonicum,gatunek wodorostów,,,"GroupId: 2735710
+Translate: Gelidium japonicum (species of seaweed)
+MiscInfo: uk"
+202114,WORD_NOUN,,HIRAGANA,,,四方反り鉋,しほうそりかんな,,shihousori kanna,"drewniany hebel z wypukłą podstawą zakrzywioną w kierunku cięcia, jak i poprzek ostrza",,,,"GroupId: 2113670
+Translate: wooden plane with a convex base curved both along the direction of cutting and across the blade"
+202115,WORD_NOUN,,HIRAGANA,,,四方反りかんな,しほうそりかんな,,shihousori kanna,"drewniany hebel z wypukłą podstawą zakrzywioną w kierunku cięcia, jak i poprzek ostrza",,,,"GroupId: 2113670
+Translate: wooden plane with a convex base curved both along the direction of cutting and across the blade"
+202116,WORD_NOUN,,HIRAGANA,,,四方反かんな,しほうそりかんな,,shihousori kanna,"drewniany hebel z wypukłą podstawą zakrzywioną w kierunku cięcia, jak i poprzek ostrza",,,,"GroupId: 2113670
+Translate: wooden plane with a convex base curved both along the direction of cutting and across the blade"
