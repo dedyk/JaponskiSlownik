@@ -8495,7 +8495,7 @@ Translate: search word"
 202164,WORD_NOUN,,HIRAGANA,,,肝吸虫,かんきゅうちゅう,,kankyuuchuu,przywra chińska,"gatunek pasożytniczej przywry zaliczanej do podgromady wnętrzniaków, Clonorchis sinensis",,,"GroupId: 1979890
 Translate: Chinese liver fluke (Clonorchis sinensis)
 Translate: Oriental liver fluke"
-202165,WORD_NOUN,,KATAKANA,,,-,ヒメフウライチョウチョウウオ,,himefuuraichouchouuo,Chaetodon oxycephalus,gatunek ryby,,,"GroupId: 2542980
+202165,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヒメフウライチョウチョウウオ,,himefuuraichouchouuo,Chaetodon oxycephalus,"gatunek ryby, ang: spot-nape butterflyfish",,,"GroupId: 2542980
 Translate: spot-nape butterflyfish (Chaetodon oxycephalus)"
 202166,WORD_NOUN,,KATAKANA,,,-,ミルキーハット,,mirukii hatto,"nieformalny filcowy kapelusz (pierwotnie biały)
 Milky Hat (żeńska śpiewająca grupa)",,,,"GroupId: 1131980
@@ -8514,3 +8514,92 @@ Translate: distance in a straight line"
 WORD_EXPRESSION",,HIRAGANA,,,乱を起こす,らんをおこす,,ran o okosu,"rosnąć (o buncie)
 wzrost rebelii",,,,"GroupId: 1915470
 Translate: to rise in rebellion"
+202172,WORD_NOUN,,HIRAGANA,,,虎斑木兎,とらふずく,,torafu zuku,"uszatka zwyczajna
+sowa uszata
+uszatka","gatunek ptaka drapieżnego z rodziny puszczykowatych, Asio otus",,,"GroupId: 2464830
+Translate: long-eared owl (Asio otus)
+MiscInfo: uk
+Translate: northern long-eared owl
+MiscInfo: uk"
+202173,WORD_NOUN,,KATAKANA,,,-,トラフズク,,torafu zuku,"uszatka zwyczajna
+sowa uszata
+uszatka","gatunek ptaka drapieżnego z rodziny puszczykowatych, Asio otus",,,"GroupId: 2464830
+Translate: long-eared owl (Asio otus)
+MiscInfo: uk
+Translate: northern long-eared owl
+MiscInfo: uk"
+202174,WORD_NOUN,,HIRAGANA,,,靴下留め,くつしたどめ,,kutsushita dome,"podwiązka
+szelki",,,,"GroupId: 1664620
+Translate: garters
+Translate: suspenders"
+202175,WORD_NOUN,,HIRAGANA,,,靴下留,くつしたどめ,,kutsushita dome,"podwiązka
+szelki",,,,"GroupId: 1664620
+Translate: garters
+Translate: suspenders"
+202176,WORD_NOUN,,KATAKANA,,,-,ハマナ,,hamana,"modrak morski
+katran morski
+kapusta morska","gatunek rośliny z rodziny kapustowatych, Crambe maritima",,,"GroupId: 2826945
+Translate: sea kale (Crambe maritima)
+MiscInfo: uk"
+202177,WORD_NOUN,,HIRAGANA,,,ばら積貨物,ばらづみかもつ,,bara dumi kamotsu,ładunek masowy,,,,"GroupId: 2830628
+Translate: bulk cargo"
+202178,WORD_NOUN,,HIRAGANA,,,散積貨物,ばらづみかもつ,,bara dumi kamotsu,ładunek masowy,,,,"GroupId: 2830628
+Translate: bulk cargo"
+202179,WORD_NOUN,,KATAKANA,,,-,デメキン,,demekin,"teleskop (odmiana złotej ryby)
+teleskop
+demekin",,,,"GroupId: 1340380
+Translate: telescope (variety of goldfish)
+Translate: telescope eye
+Translate: demekin"
+202180,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,威張りや,いばりや,,ibari ya,"arogancka osoba
+apodyktyczna osoba
+zarozumiała osoba
+samochwała
+fanfaron",często jako 威張り屋さん,,,"GroupId: 2833605
+Translate: arrogant person
+AdditionalInfo: often as 威張り屋さん
+Translate: overbearing person
+AdditionalInfo: often as 威張り屋さん
+Translate: self-important person
+AdditionalInfo: often as 威張り屋さん
+Translate: braggart
+AdditionalInfo: often as 威張り屋さん
+Translate: boaster
+AdditionalInfo: often as 威張り屋さん"
+202181,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,対をなす,ついをなす,,tsui o nasu,"działać odwrotnie
+działać przeciwnie
+???",,,,"GroupId: 2180060
+Translate: to act as an opposite
+Translate: to form a counterpart
+Translate: to act as a twin"
+202182,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,と言ってきかない,といってきかない,,to itte kikanai,nalegający,,,,"GroupId: 2140520
+Translate: insisting"
+202183,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,といって聞かない,といってきかない,,to itte kikanai,nalegający,,,,"GroupId: 2140520
+Translate: insisting"
+202184,WORD_NOUN,,HIRAGANA,,,雇止め,やといどめ,,yatoi dome,"rozwiązanie umowy o pracę
+zakończenie pracowniczego kontraktu
+nieuczciwe wypowiedzenie",,,,"GroupId: 2425500
+Translate: termination of employment contract
+Translate: unfair termination"
+202185,WORD_VERB_U,,HIRAGANA,,,身動ぐ,みじろぐ,,mijirogu,"ruszać
+poruszać
+przenosić
+przesuwać",,,,"GroupId: 1365550
+Translate: to stir
+Translate: to move"
+202186,"WORD_ADVERB_TO
+WORD_ADVERB",,HIRAGANA,,,-,ぷかりぷかり,,pukari pukari,"zaciąganie się (np. dymem papierosowym)
+kołysanie (na powierzchni)
+falowanie (na wodzie)",,,,"GroupId: 2806040
+Translate: puffing (e.g. cigarette smoke)
+MiscInfo: on-mim
+Translate: bobbing (to the surface)
+MiscInfo: on-mim
+Translate: floating lightly
+MiscInfo: on-mim"
+202187,WORD_NOUN,,KATAKANA,,,-,スポットネイプバタフライフィッシュ,,supotto neipu batafuraifisshu,Chaetodon oxycephalus,"gatunek ryby, ang: spot-nape butterflyfish",,,"GroupId: 2542980
+Translate: spot-nape butterflyfish (Chaetodon oxycephalus)"
