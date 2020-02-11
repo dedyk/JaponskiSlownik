@@ -5276,7 +5276,7 @@ MiscInfo: obsc"
 201322,WORD_VERB_IRREGULAR,,HIRAGANA,,,唾する,つばする,,tsuba suru,pluć,,,,"GroupId: 2270840
 Translate: to spit"
 201323,WORD_NOUN,,HIRAGANA,,,白肉,はくにく,,hakuniku,"białe mięso
-biały miąższ (owocu)",,,,"GroupId: 2842892
+biały miąższ (owocu)",,,DUPLICATE 202326,"GroupId: 2842892
 Translate: white meat
 Translate: white flesh (of fruit)"
 201324,WORD_EXPRESSION,,KATAKANA,,,無問題,モウマンタイ,,moumantai,nie ma problemu,słowo pochodzenia chińskiego,,DUPLICATE 201361,"GroupId: 2842816
@@ -5323,7 +5323,7 @@ Translate: Sam-il Movement"
 WORD_NOUN",,HIRAGANA,,,文禄の役,ぶんろくのえき,,bunroku no eki,pierwsza japońska inwazja na Koreę (1592-93),,,,"GroupId: 2841815
 Translate: first Japanese invasion of Korea (1592-93)"
 201337,WORD_NOUN,,KATAKANA,,,密営,ミリョン,,miryon,"tajny obóz wojskowy (Korea)
-obóz partyzancki",kor: miryeong,,,"GroupId: 2841824
+obóz partyzancki",kor: miryeong,,DUPLICATE 202327,"GroupId: 2841824
 Translate: secret military camp (Korea)
 Translate: guerrilla camp"
 201338,WORD_EXPRESSION,,HIRAGANA,,,内鮮一体,ないせんいったい,,naisen' ittai,Japonia i Korea są jednością,hasło używane w epoce kolonizacji Korei,,,"GroupId: 1985380
@@ -8766,7 +8766,7 @@ japońskie obywatelstwo",,,,"GroupId: 2640370
 Translate: Japanese nationality
 Translate: Japanese citizenship"
 202232,WORD_NOUN,,HIRAGANA,,,冊立,さくりつ,,sakuritsu,"cesarska inwestytura
-cesarskie wprowadzenie na urząd",,,,"GroupId: 1298560
+cesarskie wprowadzenie na urząd",,,DUPLICATE 202342,"GroupId: 1298560
 Translate: imperial investiture
 Translate: installation"
 202233,WORD_NOUN,,HIRAGANA_EXCEPTION,,,衛星放送の受信アンテナ,えいせいほうそうのじゅしんアンテナ,,eisei housou no jushin antena,"antena satelitarna
@@ -8803,3 +8803,454 @@ cela odosobnienia",,,,"GroupId: 2837218
 Translate: solitary cell
 Translate: solitary confinement cell
 Translate: isolation cell"
+202244,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,横しま,よこしま,,yokoshima,"niesprawiedliwość
+nieuczciwość
+zło",,,,
+202245,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,希有,きゆう,,kiyuu,"rzadki
+niezwykły",,,DUPLICATE 5775,
+202246,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,稀有,きゆう,,kiyuu,"rzadki
+niezwykły",,,DUPLICATE 28932,
+202247,WORD_NOUN,,HIRAGANA,,,牙,き,,ki,kieł,,,DUPLICATE 6006,
+202248,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,肉慾,にくよく,,nikuyoku,cielesne pożądanie,,,,
+202249,WORD_NOUN,,HIRAGANA,,,柩,きゅう,,kyuu,"trumna
+kasetka
+szkatułka",,,"DUPLICATE 29726
+DUPLICATE 93182",
+202250,"WORD_ADVERB
+WORD_CONJUNCTION",,HIRAGANA,,,尚お,なお,,nao,"ponadto
+poza tym
+jeszcze bardziej
+jeszcze
+ciągle",,,,
+202251,"WORD_ADVERB
+WORD_CONJUNCTION",,HIRAGANA,,,猶お,なお,,nao,"ponadto
+poza tym
+jeszcze bardziej
+jeszcze
+ciągle",,,,
+202252,WORD_NOUN,,HIRAGANA,,,世捨人,よすてびと,,yosute bito,"pustelnik
+odludek",,,,
+202253,WORD_NOUN,,HIRAGANA,,,世捨てびと,よすてびと,,yosute bito,"pustelnik
+odludek",,,,
+202254,WORD_NOUN,,HIRAGANA,,,わり算,わりざん,,wari zan,dzielenie,matematyka,,,"GroupId: 1606880
+Translate: division"
+202255,WORD_NOUN,,HIRAGANA,,,𦜝,へそ,,heso,"pępek
+pępuszek",,,DUPLICATE 202256,
+202256,WORD_NOUN,,HIRAGANA,,,𦜝,ほぞ,,hozo,"pępek
+pępuszek",,,DUPLICATE 202255,
+202257,WORD_NOUN,,HIRAGANA,,,引下げ,ひきさげ,,hikisage,"redukcja
+skrócenie
+ucięcie",,,,
+202258,WORD_NOUN,,HIRAGANA,,,粥,かい,,kai,"cienki ryżowy kleik
+wodnisty gotowany ryż
+ryżowa papka",,,"DUPLICATE 19737
+DUPLICATE 43544
+DUPLICATE 202346","GroupId: 1209350
+Translate: thin rice porridge
+Translate: watery cooked rice
+Translate: rice gruel
+Translate: congee"
+202259,WORD_NOUN,,HIRAGANA,,,西陽,にしび,,nishibi,zachodzące słońce,,,,
+202260,WORD_NOUN,,HIRAGANA,,,見えかくれ,みえかくれ,,mie kakure,pojawienie się i zniknięcie,,,,
+202261,WORD_NOUN,,HIRAGANA,,,見えがくれ,みえがくれ,,mie gakure,pojawienie się i zniknięcie,,,,
+202262,WORD_NOUN,,HIRAGANA,,,錫杖,さくじょう,,sakujou,"buddyjskie berło
+khakkhara",,,DUPLICATE 25228,
+202263,WORD_NOUN,,KATAKANA,,,-,マチェット,,machetto,maczeta,,,,
+202264,WORD_NOUN,,KATAKANA,,,-,マシェット,,mashetto,maczeta,,,,
+202265,WORD_NOUN,,KATAKANA,,,-,マシェティ,,masheti,maczeta,,,,
+202266,WORD_NOUN,,HIRAGANA,,,掌,しょう,,shou,dłoń,wewnętrzna strona,,"DUPLICATE 35981
+DUPLICATE 36034",
+202267,WORD_NOUN,,HIRAGANA,,,颺言,ようげん,,yougen,"proklamacja
+ogłoszenie
+obwieszczenie
+oświadczenie",,,,
+202268,WORD_NOUN,,HIRAGANA,,,常夜燈,じょうやとう,,jouyatou,"światło nocne
+światełko nocne",,,,
+202269,WORD_NOUN,,KATAKANA,,,-,ヒンドゥ,,hindu,hinduski,ang: Hindu,,,
+202270,WORD_NOUN,,KATAKANA,,,-,ヒンズ,,hinzu,hinduski,ang: Hindu,,,
+202271,WORD_VERB_U,,HIRAGANA,,,切り割く,きりさく,,kiri saku,"odcinać
+pociąć
+drzeć na kawałki
+rozdzierać na kawałki",,,,
+202272,WORD_NOUN,,HIRAGANA,,,屠竜,とりゅう,,toryuu,"zgładzenie smoka
+Kawasaki Ki-45 (samolot z okresu II wojny światowej)",,,DUPLICATE 41998,
+202273,WORD_NOUN,,HIRAGANA,,,屠龍,とりょう,,toryou,"zgładzenie smoka
+Kawasaki Ki-45 (samolot z okresu II wojny światowej)",,,DUPLICATE 202274,
+202274,WORD_NOUN,,HIRAGANA,,,屠龍,とりゅう,,toryuu,"zgładzenie smoka
+Kawasaki Ki-45 (samolot z okresu II wojny światowej)",,,DUPLICATE 202273,
+202275,WORD_NOUN,,HIRAGANA,,,駟馬,しめ,,shime,karetka składająca się z czterech konii,,,DUPLICATE 44806,
+202276,WORD_NOUN,,HIRAGANA,,,四馬,しば,,shiba,karetka składająca się z czterech konii,,,DUPLICATE 202277,
+202277,WORD_NOUN,,HIRAGANA,,,四馬,しめ,,shime,karetka składająca się z czterech konii,,,DUPLICATE 202276,
+202278,WORD_VERB_U,,HIRAGANA,,,引下る,ひきさがる,,hiki sagaru,"wycofać się
+zrezygnować
+opuszczać",,,,
+202279,WORD_VERB_U,,HIRAGANA,,,引き下る,ひきさがる,,hiki sagaru,"wycofać się
+zrezygnować
+opuszczać",,,,
+202280,WORD_NOUN,,HIRAGANA,,,二言,にげん,,nigen,"dwulicowość
+podwójny język
+wracanie co ktoś powiedział
+powtarzanie się",,,"DUPLICATE 54602
+DUPLICATE 61721",
+202281,WORD_NOUN,,HIRAGANA,,,倭字,わじ,,waji,znak kanji stworzony w Japonii,,,,
+202282,WORD_NOUN,,HIRAGANA,,,言揚げ,ことあげ,,koto age,"wzmianka
+wspomnienie
+napomknienie",,,,
+202283,WORD_ADVERB,,HIRAGANA,,,裕に,ゆうに,,yuu ni,"z łatwością
+bez trudu
+wystarczająco
+dostatecznie
+dobrze
+umiejętnie
+zręcznie",,,,
+202284,WORD_NOUN,,HIRAGANA,,,艮,こん,,kon,???,,,"DUPLICATE 63921
+DUPLICATE 63922
+DUPLICATE 73182
+DUPLICATE 202285",
+202285,WORD_NOUN,,HIRAGANA,,,艮,え,,e,???,,,"DUPLICATE 12187
+DUPLICATE 63921
+DUPLICATE 63922
+DUPLICATE 202284",
+202286,WORD_NOUN,,HIRAGANA,,,やまと言葉,やまとことば,,yamato kotoba,starożytny lub pierwotny język japoński,,,,
+202287,WORD_NOUN,,HIRAGANA,,,大和ことば,やまとことば,,yamato kotoba,starożytny lub pierwotny język japoński,,,,
+202288,WORD_NOUN,,HIRAGANA,,,大和詞,やまとことば,,yamato kotoba,starożytny lub pierwotny język japoński,,,,
+202289,WORD_EXPRESSION,,HIRAGANA,,,１から,いちから,,ichi kara,"od początku
+od zera",,,,
+202290,WORD_NOUN,,HIRAGANA,,,手掛,てかけ,,tekake,"uchwyt
+rączka
+kochanka (również pisane jako 妾女, przestarzałe słowo)
+utrzymanka (również pisane jako 妾女, przestarzałe słowo)
+konkubina (również pisane jako 妾女, przestarzałe słowo)
+nałożnica (również pisane jako 妾女, przestarzałe słowo)",,,,"GroupId: 1699590
+Translate: handle
+Translate: mistress
+MiscInfo: dated
+AdditionalInfo: also written as 妾女
+Translate: kept woman
+MiscInfo: dated
+AdditionalInfo: also written as 妾女
+Translate: concubine
+MiscInfo: dated
+AdditionalInfo: also written as 妾女"
+202291,WORD_NOUN,,HIRAGANA,,,手懸,てかけ,,tekake,"uchwyt
+rączka
+kochanka (również pisane jako 妾女, przestarzałe słowo)
+utrzymanka (również pisane jako 妾女, przestarzałe słowo)
+konkubina (również pisane jako 妾女, przestarzałe słowo)
+nałożnica (również pisane jako 妾女, przestarzałe słowo)",,,,"GroupId: 1699590
+Translate: handle
+Translate: mistress
+MiscInfo: dated
+AdditionalInfo: also written as 妾女
+Translate: kept woman
+MiscInfo: dated
+AdditionalInfo: also written as 妾女
+Translate: concubine
+MiscInfo: dated
+AdditionalInfo: also written as 妾女"
+202292,WORD_NOUN,,HIRAGANA,,,猛火,みょうか,,myouka,rozszalałe lub huczące płomienie,,,DUPLICATE 82016,
+202293,"WORD_PRONOUN
+WORD_PRE_NOUN_ADJECTIVAL",,HIRAGANA,,,此ん,こん,,kon,ten,"wskazywanie przedmiotu blisko mówcy, akcji lub aktualnego tematu",,DUPLICATE 73182,
+202294,WORD_NOUN,,HIRAGANA,,,娘子軍,ろうしぐん,,roushigun,Amazonki,,,DUPLICATE 98205,
+202295,WORD_NOUN,,HIRAGANA,,,乾食,かんしょく,,kanshoku,???,,,,"GroupId: 1209870
+Translate: the rotting of lumber stored with poor air circulation"
+202296,WORD_NOUN,,HIRAGANA,,,やっこ凧,やっこだこ,,yakko dako,latawiec w kształcie piechura,,,,"GroupId: 1762250
+Translate: kite shaped like a footman"
+202297,WORD_NOUN,,HIRAGANA,,,奴だこ,やっこだこ,,yakko dako,latawiec w kształcie piechura,,,,"GroupId: 1762250
+Translate: kite shaped like a footman"
+202298,WORD_NOUN,,HIRAGANA,,,編棒,あみぼう,,ami bou,drut,do robienia na drutach,,,"GroupId: 1511930
+Translate: knitting needle"
+202299,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,頭が硬い,あたまがかたい,,atama ga katai,"tępy
+głupi
+zawzięty
+uparty
+nieugięty
+nieustępliwy",,,,
+202300,WORD_VERB_U,,HIRAGANA,,,屠る,ほぶる,,hoburu,"zarzynać
+zarżnąć
+ubijać
+szlachtować",,,"DUPLICATE 113854
+DUPLICATE 202301",
+202301,WORD_VERB_U,,HIRAGANA,,,屠る,はふる,,hafuru,"zarzynać
+zarżnąć
+ubijać
+szlachtować",,,"DUPLICATE 113854
+DUPLICATE 202300",
+202302,WORD_VERB_U,,HIRAGANA,,,宰る,ほふる,,hofuru,"zarzynać
+zarżnąć
+ubijać
+szlachtować",,,"DUPLICATE 202303
+DUPLICATE 202304",
+202303,WORD_VERB_U,,HIRAGANA,,,宰る,ほぶる,,hoburu,"zarzynać
+zarżnąć
+ubijać
+szlachtować",,,"DUPLICATE 202302
+DUPLICATE 202304",
+202304,WORD_VERB_U,,HIRAGANA,,,宰る,はふる,,hafuru,"zarzynać
+zarżnąć
+ubijać
+szlachtować",,,"DUPLICATE 202302
+DUPLICATE 202303",
+202305,WORD_INTERJECTION,,KATAKANA,,,加油,ジャヨウ,,jayou,"utrzymać się
+nie poddawaj się
+trzymaj się
+dawaj
+próbuj",,,"DUPLICATE 113870
+DUPLICATE 139816
+DUPLICATE 202306",
+202306,WORD_INTERJECTION,,KATAKANA,,,加油,ガーヤウ,,gaayau,"utrzymać się
+nie poddawaj się
+trzymaj się
+dawaj
+próbuj",,,"DUPLICATE 113870
+DUPLICATE 139816
+DUPLICATE 202305",
+202307,WORD_NOUN,,HIRAGANA_KATAKANA,,,雨ガッパ,あまガッパ,,ama gappa,płaszcz przeciwdeszczowy,,,,
+202308,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,掌を返す,しょうをかえす,,shou o kaesu,"???
+zrobić coś łatwo",wyrażenie idiomatyczne,,"DUPLICATE 123326
+DUPLICATE 123327","GroupId: 2068440
+Translate: to flip-flop
+MiscInfo: id
+Translate: to do an about-face
+MiscInfo: id
+Translate: to flip over one's hand
+MiscInfo: id
+Translate: to do something easy
+MiscInfo: id"
+202309,WORD_NOUN,,KATAKANA_HIRAGANA,,,タコ焼き器,タコやきき,,tako yaki ki,???,,,,"GroupId: 2171100
+Translate: takoyaki pan (cast iron with semi-spherical molds)"
+202310,WORD_NOUN,,HIRAGANA,,,江湖,ごうこ,,gouko,"społeczeństwo
+ludzie
+świat
+rzeki i jeziora (pierwotne znaczenie)
+ustronne miejsce (archaizm)
+siedziba pustelnika (archaizm)",,,"DUPLICATE 140276
+DUPLICATE 145710","GroupId: 1279910
+Translate: the public
+Translate: the world
+Translate: rivers and lakes
+AdditionalInfo: orig. meaning
+Translate: secluded place
+MiscInfo: arch
+Translate: hermit's residence
+MiscInfo: arch"
+202311,WORD_NOUN,,HIRAGANA,,,高来,こうらい,,kourai,twoja wizyta (obecność),,,,"GroupId: 1875820
+Translate: your visit (presence)"
+202312,WORD_NOUN,,HIRAGANA,,,厲精,れいせい,,reisei,"dbałość
+staranność
+pracowitość",,,,"GroupId: 1557430
+Translate: diligence"
+202313,WORD_NOUN,,KATAKANA,,,-,ポコチン,,pokochin,"penis
+członek",kolokwializm,,,"GroupId: 1011950
+Translate: penis
+MiscInfo: col"
+202314,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,純乎,じゅんこ,,junko,"czysty
+bez domieszek",,,,"GroupId: 1885690
+Translate: pure
+Translate: sheer"
+202315,WORD_NOUN,,HIRAGANA,,,諸人,しょにん,,shonin,"wielu ludzi
+wszyscy",,,"DUPLICATE 158119
+DUPLICATE 202316
+DUPLICATE 202317","GroupId: 1701390
+Translate: many people
+Translate: everyone"
+202316,WORD_NOUN,,HIRAGANA,,,諸人,しょじん,,shojin,"wielu ludzi
+wszyscy",,,"DUPLICATE 158119
+DUPLICATE 202315
+DUPLICATE 202317","GroupId: 1701390
+Translate: many people
+Translate: everyone"
+202317,WORD_NOUN,,HIRAGANA,,,諸人,もろひと,,morohito,"wielu ludzi
+wszyscy",,,"DUPLICATE 158119
+DUPLICATE 202315
+DUPLICATE 202316","GroupId: 1701390
+Translate: many people
+Translate: everyone"
+202318,WORD_NOUN,,HIRAGANA,,,編針,あみばり,,ami bari,drut,do robienia na drutach,,,"GroupId: 1511920
+Translate: knitting needle"
+202319,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,強情張,ごうじょうっぱり,,goujouppari,uparta osoba,,,,"GroupId: 2574750
+Translate: stubborn person
+Translate: obstinate person"
+202320,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,剛情張,ごうじょうっぱり,,goujouppari,uparta osoba,,,,"GroupId: 2574750
+Translate: stubborn person
+Translate: obstinate person"
+202321,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,香をたく,こうをたく,,kou o taku,"kadzić
+okadzać
+palić kadzidło",,,,"GroupId: 1876060
+Translate: to cense
+Translate: to burn incense"
+202322,WORD_ADVERB,,HIRAGANA,,,惜しげなく,おしげなく,,oshi ge naku,"hojnie
+szczodrze
+wspaniałomyślnie",,,,"GroupId: 1862350
+Translate: generously
+Translate: unsparingly
+Translate: lavishly"
+202323,WORD_ADVERB,,HIRAGANA,,,惜しげ無く,おしげなく,,oshi ge naku,"hojnie
+szczodrze
+wspaniałomyślnie",,,,"GroupId: 1862350
+Translate: generously
+Translate: unsparingly
+Translate: lavishly"
+202324,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,惜しげも無く,おしげもなく,,oshi ge mo naku,"szczodrze
+hojnie
+obficie",,,,"GroupId: 2011790
+Translate: freely
+Translate: generously
+Translate: liberally
+Translate: ungrudgingly"
+202325,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,惜し気も無く,おしげもなく,,oshi ge mo naku,"szczodrze
+hojnie
+obficie",,,,"GroupId: 2011790
+Translate: freely
+Translate: generously
+Translate: liberally
+Translate: ungrudgingly"
+202326,WORD_NOUN,,HIRAGANA,,,白肉,しろにく,,shironiku,"białe mięso
+biały miąższ (owocu)",,,DUPLICATE 201323,"GroupId: 2842892
+Translate: white meat
+Translate: white flesh (of fruit)"
+202327,WORD_NOUN,,HIRAGANA,,,密営,みつえい,,mitsuei,"tajny obóz wojskowy (Korea)
+obóz partyzancki",kor: miryeong,,DUPLICATE 201337,"GroupId: 2841824
+Translate: secret military camp (Korea)
+Translate: guerrilla camp"
+202328,WORD_EXPRESSION,,HIRAGANA,,,-,どうかしてる,,douka shiteru,"coś nie tak z (kimś)
+nieswój
+szalony
+zwariowany
+stuknięty
+szurnięty",,,,"GroupId: 2736180
+Translate: something wrong with (someone)
+Translate: not oneself
+Translate: crazy
+Translate: nuts"
+202329,WORD_NOUN,,HIRAGANA,,,子ども好き,こどもずき,,kodomo zuki,"bycie czuły dla dzieci
+osoba lubiąca dzieci",,,,"GroupId: 2812410
+Translate: being fond of children
+Translate: person fond of children"
+202330,WORD_NOUN,,HIRAGANA,,,こども好き,こどもずき,,kodomo zuki,"bycie czuły dla dzieci
+osoba lubiąca dzieci",,,,"GroupId: 2812410
+Translate: being fond of children
+Translate: person fond of children"
+202331,WORD_NOUN,,KATAKANA,,,-,アゴヒゲアザラシ,,agohigeazarashi,"fokowąs brodaty
+foka wąsata
+foka brodata","gatunek drapieżnego ssaka z rodziny fokowatych, jedyny przedstawiciel rodzaju Erignathus, Erignathus barbatus",,,"GroupId: 2165570
+Translate: bearded seal (Erignathus barbatus)
+MiscInfo: uk"
+202332,WORD_NOUN,,HIRAGANA,,,睡鱶,ねむりぶか,,nemuribuka,żarłacz gruby,"gatunek rekina, Triaenodon obesus",,,"GroupId: 2541620
+Translate: whitetip reef shark (Triaenodon obesus, species of Indo-Pacific requiem shark)
+MiscInfo: uk"
+202333,WORD_NOUN,,KATAKANA,,,-,ネムリブカ,,nemuribuka,żarłacz gruby,"gatunek rekina, Triaenodon obesus",,,"GroupId: 2541620
+Translate: whitetip reef shark (Triaenodon obesus, species of Indo-Pacific requiem shark)
+MiscInfo: uk"
+202334,WORD_NOUN,,HIRAGANA,,,玢岩,ひんがん,,hin gan,porfiryt,,,,"GroupId: 2841124
+Translate: porphyrite"
+202335,WORD_NOUN,,KATAKANA,,,-,ヒンガン,,hin gan,porfiryt,,,,"GroupId: 2841124
+Translate: porphyrite"
+202336,WORD_NOUN,,HIRAGANA,,,新仮名遣,しんかなづかい,,shin kana dukai,"nowa ortografia kana (reforma z 1946 roku, zniesiona w 1986 roku)
+współczesna ortografia kana",,,,"GroupId: 2595320
+Translate: new kana orthography (1946 reform, amended 1986)
+Translate: modern kana orthography"
+202337,WORD_NOUN,,HIRAGANA,,,新仮名使い,しんかなづかい,,shin kana dukai,"nowa ortografia kana (reforma z 1946 roku, zniesiona w 1986 roku)
+współczesna ortografia kana",,,,"GroupId: 2595320
+Translate: new kana orthography (1946 reform, amended 1986)
+Translate: modern kana orthography"
+202338,WORD_NOUN,,KATAKANA_HIRAGANA,,,リンゴ酒,リンゴしゅ,,ringo shu,"cydr
+jabłecznik","napój alkoholowy, przefermentowany sok z dojrzałych jabłek, o wyglądzie od mętnego po klarowny, o zawartości alkoholu 1,2–8,5%, ang: cider",,,"GroupId: 1838570
+Translate: apple cider (alcoholic)"
+202339,WORD_NOUN,,HIRAGANA,,,林檎酒,りんごしゅ,,ringo shu,"cydr
+jabłecznik","napój alkoholowy, przefermentowany sok z dojrzałych jabłek, o wyglądzie od mętnego po klarowny, o zawartości alkoholu 1,2–8,5%, ang: cider",,,"GroupId: 1838570
+Translate: apple cider (alcoholic)"
+202340,WORD_NOUN,,KATAKANA,,,-,グリューヴァイン,,guryuuvain,pikantne grzane wino,niem: glühwein,,,"GroupId: 2759880
+Translate: spiced mulled wine (Germany, Austria, etc.)"
+202341,WORD_NOUN,,KATAKANA,,,-,グリューバイン,,guryuubain,pikantne grzane wino,niem: glühwein,,,"GroupId: 2759880
+Translate: spiced mulled wine (Germany, Austria, etc.)"
+202342,WORD_NOUN,,HIRAGANA,,,冊立,さくりゅう,,sakuryuu,"cesarska inwestytura
+cesarskie wprowadzenie na urząd",,,DUPLICATE 202232,"GroupId: 1298560
+Translate: imperial investiture
+Translate: installation"
+202343,WORD_VERB_RU,,HIRAGANA,,,映える,ばえる,,baeru,"wyglądać atrakcyjnie
+wyglądać ładnie","ばえる, バエる to warianty kolokwialne",,DUPLICATE 7862,"GroupId: 1600620
+Translate: to look attractive
+AdditionalInfo: ばえる, バエる are colloquial
+Translate: to look nice
+AdditionalInfo: ばえる, バエる are colloquial
+Translate: to be set off (by)
+AdditionalInfo: ばえる, バエる are colloquial"
+202344,WORD_VERB_RU,,HIRAGANA,,,栄える,ばえる,,baeru,"wyglądać atrakcyjnie
+wyglądać ładnie","ばえる, バエる to warianty kolokwialne",,"DUPLICATE 5491
+DUPLICATE 5492","GroupId: 1600620
+Translate: to look attractive
+AdditionalInfo: ばえる, バエる are colloquial
+Translate: to look nice
+AdditionalInfo: ばえる, バエる are colloquial
+Translate: to be set off (by)
+AdditionalInfo: ばえる, バエる are colloquial"
+202345,WORD_VERB_RU,,KATAKANA_HIRAGANA,,,-,バエる,,baeru,"wyglądać atrakcyjnie
+wyglądać ładnie","ばえる, バエる to warianty kolokwialne",,,"GroupId: 1600620
+Translate: to look attractive
+AdditionalInfo: ばえる, バエる are colloquial
+Translate: to look nice
+AdditionalInfo: ばえる, バエる are colloquial
+Translate: to be set off (by)
+AdditionalInfo: ばえる, バエる are colloquial"
+202346,WORD_NOUN,,HIRAGANA,,,粥,しゅく,,shuku,"cienki ryżowy kleik
+wodnisty gotowany ryż
+ryżowa papka
+śniadanie (w świątyniach Zen)",,,"DUPLICATE 19737
+DUPLICATE 202258","GroupId: 1209350
+Translate: thin rice porridge
+Translate: watery cooked rice
+Translate: rice gruel
+Translate: congee
+Translate: breakfast (in Zen temples)"
+202347,"WORD_NOUN
+WORD_PRONOUN",,HIRAGANA,,,妾,てかけ,,tekake,"kochanka
+utrzymanka
+konkubina
+nałożnica","również pisane jako 妾女, przestarzałe słowo",,"DUPLICATE 55792
+DUPLICATE 55818
+DUPLICATE 61646","GroupId: 1699590
+Translate: mistress
+MiscInfo: dated
+AdditionalInfo: also written as 妾女
+Translate: kept woman
+MiscInfo: dated
+AdditionalInfo: also written as 妾女
+Translate: concubine
+MiscInfo: dated
+AdditionalInfo: also written as 妾女"
+202348,WORD_NOUN,,HIRAGANA,,,填まり役,はまりやく,,hamari yaku,dobrze dopasowana rola,,,,"GroupId: 1834000
+Translate: well-suited role"
+202349,WORD_NOUN,,HIRAGANA,,,はまり役,はまりやく,,hamari yaku,dobrze dopasowana rola,,,,"GroupId: 1834000
+Translate: well-suited role"
+202350,WORD_NOUN,,HIRAGANA,,,嵌り役,はまりやく,,hamari yaku,dobrze dopasowana rola,,,,"GroupId: 1834000
+Translate: well-suited role"
+202351,WORD_NOUN,,HIRAGANA,,,填り役,はまりやく,,hamari yaku,dobrze dopasowana rola,,,,"GroupId: 1834000
+Translate: well-suited role"
+202352,WORD_NOUN,,HIRAGANA,,,食,じき,,jiki,"jedzenie
+pożywienie
+artykuły żywnościowe",,,"DUPLICATE 7549
+DUPLICATE 165230
+DUPLICATE 202353","GroupId: 1956480
+Translate: food
+Translate: foodstuff"
+202353,WORD_NOUN,,HIRAGANA,,,食,し,,shi,"jedzenie
+pożywienie
+artykuły żywnościowe",,,"DUPLICATE 7549
+DUPLICATE 10785
+DUPLICATE 165230
+DUPLICATE 202352","GroupId: 1956480
+Translate: food
+Translate: foodstuff"
