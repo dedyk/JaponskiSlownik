@@ -9265,7 +9265,7 @@ oszacowana strata
 Translate: paper loss
 Translate: appraisal loss
 Translate: loss resulting from revised valuation"
-202357,WORD_NOUN,,HIRAGANA,,,仕方話,しかたばなし,,shikatabanashi,rozmowa za pomocą gestów,,,,"GroupId: 1305460
+202357,WORD_NOUN,,HIRAGANA,,,仕方話,しかたばなし,,shikata banashi,rozmowa za pomocą gestów,,,,"GroupId: 1305460
 Translate: talking with gestures"
 202358,WORD_NOUN,,HIRAGANA,,,画一思考,かくいつしこう,,kakuitsushikou,jednolitość myślenia,,,,"GroupId: 2042700
 Translate: uniformity of thought
@@ -9402,7 +9402,7 @@ kultura organizacyjna
 Translate: organizational climate
 Translate: organization culture
 Translate: organizational environment"
-202395,WORD_NOUN,,HIRAGANA,,,星取表,ほしとりひょう,,hoshitorihyou,tabela używana do śledzenia rekordów zawodnika sumo podczas turnieju,,,,"GroupId: 2022690
+202395,WORD_NOUN,,HIRAGANA,,,星取表,ほしとりひょう,,hoshi tori hyou,tabela używana do śledzenia rekordów zawodnika sumo podczas turnieju,,,,"GroupId: 2022690
 Translate: chart used to keep track of a wrestler's records during the tournament"
 202396,WORD_NOUN,,KATAKANA,,,-,スープレックス,,suupurekkusu,suples,"rodzaj rzutu w wrestlingu, ang: suplex",,,"GroupId: 2836457
 Translate: suplex (throw in pro wrestling)"
@@ -9429,7 +9429,7 @@ Translate: tractable
 Translate: easy to care for
 Translate: easy to deal with
 Translate: easy to handle"
-202402,WORD_NOUN,,KATAKANA,,,-,アイディーイー,,aidiiii,"zintegrowane środowisko programistyczne
+202402,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,アイディーイー,,aidiiii,"zintegrowane środowisko programistyczne
 IDE",,,,"GroupId: 2278300
 Translate: IDE"
 202403,WORD_NOUN,,KATAKANA,,,-,エコノマイザー,,ekonomaizaa,ekonomizer,"urządzenie służące do redukcji zużycia energii, które funkcjonalnie jest wymiennikiem ciepła",,,"GroupId: 2458420
@@ -9482,12 +9482,131 @@ Translate: springtail (wingless insect of the order Collembola)"
 202418,WORD_NOUN,,KATAKANA_HIRAGANA,,,メンデルの法則,メンデルのほうそく,,menderu no housoku,Prawa Mendla,"reguły przekazywania cech dziedzicznych. Zostały sformułowane w 1866 przez Gregora Mendla podczas jego badań nad krzyżowaniem roślin, głównie grochu zwyczajnego",,,"GroupId: 2195850
 Translate: Mendel's laws (of genetic inheritance)"
 202419,WORD_NOUN,,HIRAGANA,,,日雷,ひがみなり,,higaminari,"grzmot w pogodny dzień (szczególnie 日雷)
-błyskawica, która powoduje pożar (szczególnie 火雷, 火神鳴り)",,,,"GroupId: 2841656
+błyskawica, która powoduje pożar (szczególnie 火雷, 火神鳴り)",,,DUPLICATE 202436,"GroupId: 2841656
 Translate: thunder on a clear day
 AdditionalInfo: esp. 日雷
 Translate: lightning that starts a fire
 AdditionalInfo: esp. 火雷, 火神鳴り"
 202420,WORD_NOUN,,HIRAGANA_KATAKANA,,,発光ダイオド,はっこうダイオド,,hakkou daiodo,"dioda elektroluminescencyjna
+dioda świecąca
+dioda emitująca światło
+LED (ang: light-emitting diode)",dioda zaliczana do półprzewodnikowych przyrządów optoelektronicznych,,,"GroupId: 1477370
+Translate: light emitting diode
+Translate: LED"
+202421,WORD_NOUN,,HIRAGANA,,,仕方噺,しかたばなし,,shikata banashi,rozmowa za pomocą gestów,,,,"GroupId: 1305460
+Translate: talking with gestures"
+202422,WORD_NOUN,,HIRAGANA,,,仕形噺,しかたばなし,,shikata banashi,rozmowa za pomocą gestów,,,,"GroupId: 1305460
+Translate: talking with gestures"
+202423,"WORD_ADVERB
+WORD_NOUN",,KATAKANA_HIRAGANA,,,-,ボヤっと,,boyatto,"nieprzytomnie
+w oszołomieniu
+w osłupieniu",,,,"GroupId: 2119350
+Translate: absentmindedly
+MiscInfo: on-mim
+Translate: dazedly
+MiscInfo: on-mim
+Translate: vaguely
+MiscInfo: on-mim"
+202424,WORD_NOUN,,KATAKANA,,,-,ヒカンザカラ,,hikanzakara,wiśnia dzwonkowata,Prunus campanulata,,,"GroupId: 2782770
+Translate: Taiwan cherry (Prunus campanulata)
+MiscInfo: uk
+Translate: winter cherry tree
+MiscInfo: uk"
+202425,WORD_NOUN,,HIRAGANA,,,鶯餡,うぐいすあん,,uguisu an,słodka brązowo-zielona pasta z zielonego groszku,,,,"GroupId: 2835318
+Translate: sweet brownish-green paste made from green peas"
+202426,WORD_NOUN,,KATAKANA_HIRAGANA,,,ウグイス餡,ウグイスあん,,uguisu an,słodka brązowo-zielona pasta z zielonego groszku,,,,"GroupId: 2835318
+Translate: sweet brownish-green paste made from green peas"
+202427,WORD_INTERJECTION,,KATAKANA,,,-,ピエン,,pien,"sloch
+szlochanie",slang,,,"GroupId: 2842265
+Translate: boohoo
+MiscInfo: sl
+Translate: boo hoo
+MiscInfo: sl
+Translate: sniff sniff
+MiscInfo: sl
+Translate: sob sob
+MiscInfo: sl
+Translate: waa waa
+MiscInfo: sl"
+202428,WORD_NOUN,,HIRAGANA,,,飛魚座,とびうおざ,,tobiuo za,Ryba Latająca,mały gwiazdozbiór nieba południowego,,,"GroupId: 2717740
+Translate: Volans (constellation)
+Translate: the Flying Fish"
+202429,WORD_NOUN,,HIRAGANA,,,星取り表,ほしとりひょう,,hoshi tori hyou,tabela używana do śledzenia rekordów zawodnika sumo podczas turnieju,,,,"GroupId: 2022690
+Translate: chart used to keep track of a wrestler's records during the tournament"
+202430,WORD_ADJECTIVE_I,,HIRAGANA,,,扱い易い,あつかいやすい,,atsukai yasui,"posłuszny
+dający się kontrolować
+łatwy w utrzymaniu
+łatwy w obsłudze",,,,"GroupId: 2725180
+Translate: manageable
+Translate: tractable
+Translate: easy to care for
+Translate: easy to deal with
+Translate: easy to handle"
+202431,WORD_VERB_U,,HIRAGANA,,,押回す,おしまわす,,oshi mawasu,obracać coś (na siłę),,,,"GroupId: 2112050
+Translate: to turn something (forcefully)"
+202432,WORD_NOUN,,HIRAGANA,,,ふき寄せ,ふきよせ,,fuki yose,"mieszanka (np. jedzenia)
+składanka (np. piosenek,utworów muzycznych)
+zaspa (np. śnieżna)
+wydma",,,,"GroupId: 1713570
+Translate: medley (of food, songs, etc.)
+Translate: (snow or sand) drift"
+202433,WORD_NOUN,,HIRAGANA,,,吹寄せ,ふきよせ,,fuki yose,"mieszanka (np. jedzenia)
+składanka (np. piosenek,utworów muzycznych)
+zaspa (np. śnieżna)
+wydma",,,,"GroupId: 1713570
+Translate: medley (of food, songs, etc.)
+Translate: (snow or sand) drift"
+202434,WORD_NOUN,,HIRAGANA,,,吹きよせ,ふきよせ,,fuki yose,"mieszanka (np. jedzenia)
+składanka (np. piosenek,utworów muzycznych)
+zaspa (np. śnieżna)
+wydma",,,,"GroupId: 1713570
+Translate: medley (of food, songs, etc.)
+Translate: (snow or sand) drift"
+202435,WORD_NOUN,,HIRAGANA,,,跳虫,とびむし,,tobi mushi,skoczogonki,"gromada, podgromada lub rząd stawonogów z grupy sześcionogów, Collembola",,,"GroupId: 1648950
+Translate: springtail (wingless insect of the order Collembola)"
+202436,WORD_NOUN,,HIRAGANA,,,日雷,ひかみなり,,hikaminari,"grzmot w pogodny dzień (szczególnie 日雷)
+błyskawica, która powoduje pożar (szczególnie 火雷, 火神鳴り)",,,DUPLICATE 202419,"GroupId: 2841656
+Translate: thunder on a clear day
+AdditionalInfo: esp. 日雷
+Translate: lightning that starts a fire
+AdditionalInfo: esp. 火雷, 火神鳴り"
+202437,WORD_NOUN,,HIRAGANA,,,火雷,ひがみなり,,higaminari,"grzmot w pogodny dzień (szczególnie 日雷)
+błyskawica, która powoduje pożar (szczególnie 火雷, 火神鳴り)",,,DUPLICATE 202438,"GroupId: 2841656
+Translate: thunder on a clear day
+AdditionalInfo: esp. 日雷
+Translate: lightning that starts a fire
+AdditionalInfo: esp. 火雷, 火神鳴り"
+202438,WORD_NOUN,,HIRAGANA,,,火雷,ひかみなり,,hikaminari,"grzmot w pogodny dzień (szczególnie 日雷)
+błyskawica, która powoduje pożar (szczególnie 火雷, 火神鳴り)",,,DUPLICATE 202437,"GroupId: 2841656
+Translate: thunder on a clear day
+AdditionalInfo: esp. 日雷
+Translate: lightning that starts a fire
+AdditionalInfo: esp. 火雷, 火神鳴り"
+202439,WORD_NOUN,,HIRAGANA,,,火神鳴り,ひがみなり,,higaminari,"grzmot w pogodny dzień (szczególnie 日雷)
+błyskawica, która powoduje pożar (szczególnie 火雷, 火神鳴り)",,,DUPLICATE 202440,"GroupId: 2841656
+Translate: thunder on a clear day
+AdditionalInfo: esp. 日雷
+Translate: lightning that starts a fire
+AdditionalInfo: esp. 火雷, 火神鳴り"
+202440,WORD_NOUN,,HIRAGANA,,,火神鳴り,ひかみなり,,hikaminari,"grzmot w pogodny dzień (szczególnie 日雷)
+błyskawica, która powoduje pożar (szczególnie 火雷, 火神鳴り)",,,DUPLICATE 202439,"GroupId: 2841656
+Translate: thunder on a clear day
+AdditionalInfo: esp. 日雷
+Translate: lightning that starts a fire
+AdditionalInfo: esp. 火雷, 火神鳴り"
+202441,WORD_NOUN,,HIRAGANA,,,火神鳴,ひがみなり,,higaminari,"grzmot w pogodny dzień (szczególnie 日雷)
+błyskawica, która powoduje pożar (szczególnie 火雷, 火神鳴り)",,,DUPLICATE 202442,"GroupId: 2841656
+Translate: thunder on a clear day
+AdditionalInfo: esp. 日雷
+Translate: lightning that starts a fire
+AdditionalInfo: esp. 火雷, 火神鳴り"
+202442,WORD_NOUN,,HIRAGANA,,,火神鳴,ひかみなり,,hikaminari,"grzmot w pogodny dzień (szczególnie 日雷)
+błyskawica, która powoduje pożar (szczególnie 火雷, 火神鳴り)",,,DUPLICATE 202441,"GroupId: 2841656
+Translate: thunder on a clear day
+AdditionalInfo: esp. 日雷
+Translate: lightning that starts a fire
+AdditionalInfo: esp. 火雷, 火神鳴り"
+202443,WORD_NOUN,,HIRAGANA_KATAKANA,,,発光ダイオード,はっこうダイオード,,hakkou daioodo,"dioda elektroluminescencyjna
 dioda świecąca
 dioda emitująca światło
 LED (ang: light-emitting diode)",dioda zaliczana do półprzewodnikowych przyrządów optoelektronicznych,,,"GroupId: 1477370
