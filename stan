@@ -9,5 +9,3 @@
 + uzupełniacz - 17
 -----------
 suma: 70
-
-sugestia
