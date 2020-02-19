@@ -11400,7 +11400,7 @@ Translate: impact analysis"
 Translate: Gulf surgeonfish (Acanthurus randalli, species of tang found in Florida and northeastern Gulf of Mexico)"
 202942,WORD_NOUN,,HIRAGANA,,,一言半句,いちげんはんく,,ichigen hanku,"jedno słowo
 pojedyncze słowo
-???",,,,"GroupId: 1576000
+???",,,DUPLICATE 202997,"GroupId: 1576000
 Translate: a single word
 MiscInfo: yoji
 Translate: (not even) a word
@@ -11414,7 +11414,7 @@ Translate: baby face"
 202944,WORD_NOUN,,HIRAGANA,,,泥棒政治家,どろぼうせいじか,,dorobou seijika,kleptokrata,"osoba będąca częścią systemu, w którym władza wykorzystywana jest w celu wzbogacenia się",,,"GroupId: 2830969
 Translate: kleptocrat"
 202945,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,十把一絡げ,じっぱひとからげ,,jippa hitokarage,???,,,,"GroupId: 1745110
+WORD_ADJECTIVE_NO",,HIRAGANA,,,十把一絡げ,じっぱひとからげ,,jippa hitokarage,???,,,DUPLICATE 202998,"GroupId: 1745110
 Translate: lumping together all sorts of things
 Translate: making sweeping generalizations
 Translate: dealing with various things under one head"
@@ -11476,7 +11476,7 @@ Translate: yudane
 Translate: gelatinous paste made by heating a mixture of flour and water, used in breadmaking"
 202964,WORD_NOUN,,HIRAGANA,,,湯玉,ゆだま,,yudama,bąbelki we wrzącej wodzie,,,,"GroupId: 1774280
 Translate: bubbles in boiling water"
-202965,WORD_EXPRESSION,,HIRAGANA,,,かたいことは言いっこなし,かたいことはいいっこなし,,katai koto wa iikkonashi,"odłóżmy na bok formalności
+202965,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,かたいことは言いっこなし,かたいことはいいっこなし,,katai koto wa iikkonashi,"odłóżmy na bok formalności
 nie mówmy tak sztywno",,,,"GroupId: 2108910
 Translate: let's put formalities aside
 Translate: let's not speak so stiffly"
@@ -11487,7 +11487,7 @@ Translate: local telephone exchange number
 Translate: local exchange prefix"
 202968,WORD_NOUN,,HIRAGANA,,,滑昇風,かっしょうふう,,kasshoufuu,wiatr anabatyczny,,,,"GroupId: 2715610
 Translate: anabatic wind"
-202969,WORD_NOUN,,KATAKANA,,,-,イサザアミ,,isazaami,"Neomysis awatschensis (krewetka)
+202969,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,イサザアミ,,isazaami,"Neomysis awatschensis (krewetka)
 Neomysis intermedia (krewetka, przestarzałe słowo)",,,,"GroupId: 2556650
 Translate: Neomysis awatschensis (shrimp)
 Translate: Neomysis intermedia (shrimp)
@@ -11511,7 +11511,7 @@ moralizatorski
 świętoszkowaty",,,,"GroupId: 2840476
 Translate: preachy
 Translate: sanctimonious"
-202975,WORD_NOUN,,HIRAGANA,,,懐都合,ふところつごう,,futokorotsugou,"sytuacja finansowa
+202975,WORD_NOUN,,HIRAGANA,,,懐都合,ふところつごう,,futokoro tsugou,"sytuacja finansowa
 stan majątkowy",,,,"GroupId: 2573610
 Translate: financial situation
 Translate: financial standing"
@@ -11581,13 +11581,13 @@ miazga twórcza (tkanka roślinna)
 drewniana miazga",,,,"GroupId: 2273840
 Translate: vascular cambium
 Translate: wood cambium"
-202991,WORD_NOUN,,HIRAGANA,,,やりくり算段,やりくりさんだん,,yarikuri sandan,"znaleźć sposób (aby zebrać pieniądze, związać koniec z końcem itp.)
+202991,WORD_NOUN,,HIRAGANA,,,やりくり算段,やりくりさんだん,,yari kuri sandan,"znaleźć sposób (aby zebrać pieniądze, związać koniec z końcem itp.)
 obmyślanie
 wymyślanie
 kombinowanie",,,,"GroupId: 1716740
 Translate: managing to find a way (to raise money, make ends meet, etc.)
 Translate: contriving"
-202992,WORD_NOUN,,HIRAGANA,,,刷毛先,はけさき,,hakesaki,końcówka pędzla,,,,"GroupId: 1298710
+202992,WORD_NOUN,,HIRAGANA,,,刷毛先,はけさき,,hake saki,końcówka pędzla,,,,"GroupId: 1298710
 Translate: brush tip"
 202993,WORD_NOUN,,KATAKANA,,,-,シェークハンドグリップ,,sheeku hando gurippu,[rodzaj uchwytu w ping-pongu (tenisie stołowym)],ang: shake-hands grip,,,"GroupId: 2071120
 Translate: shake-hands grip (in ping-pong, table tennis)"
@@ -11595,3 +11595,124 @@ Translate: shake-hands grip (in ping-pong, table tennis)"
 Translate: ad banner"
 202995,WORD_NOUN,,KATAKANA_HIRAGANA,,,ポストコロニアル理論,ポストコロニアルりろん,,posutokoroniaru riron,"post-kolonializm
 postkolonializm","dyscyplina naukowa opierająca się na intelektualnym dyskursie, który służy do analizowania i wyjaśniania zarówno kulturowych pozostałości kolonializmu i imperializmu, jak i badania konsekwencji kontrolowania kraju i zasiedlania go w celu ekonomicznej eksploatacji ludności tubylczej i jej ziemi",IGNORE_NO_JMEDICT,,
+202996,WORD_NOUN,,KATAKANA,,,-,ガルフサージャンフィッシュ,,garufu saajanfisshu,Acanthurus randalli,"gatunek ryby, ang: Gulf surgeonfish",,,"GroupId: 2555980
+Translate: Gulf surgeonfish (Acanthurus randalli, species of tang found in Florida and northeastern Gulf of Mexico)"
+202997,WORD_NOUN,,HIRAGANA,,,一言半句,いちごんはんく,,ichigon hanku,"jedno słowo
+pojedyncze słowo
+???",,,DUPLICATE 202942,"GroupId: 1576000
+Translate: a single word
+MiscInfo: yoji
+Translate: (not even) a word
+MiscInfo: yoji
+Translate: (not even) a syllable
+MiscInfo: yoji"
+202998,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,十把一絡げ,じゅっぱひとからげ,,juppa hitokarage,???,,,DUPLICATE 202945,"GroupId: 1745110
+Translate: lumping together all sorts of things
+Translate: making sweeping generalizations
+Translate: dealing with various things under one head"
+202999,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,十把一絡,じっぱひとからげ,,jippa hitokarage,???,,,DUPLICATE 203000,"GroupId: 1745110
+Translate: lumping together all sorts of things
+Translate: making sweeping generalizations
+Translate: dealing with various things under one head"
+203000,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,十把一絡,じゅっぱひとからげ,,juppa hitokarage,???,,,DUPLICATE 202999,"GroupId: 1745110
+Translate: lumping together all sorts of things
+Translate: making sweeping generalizations
+Translate: dealing with various things under one head"
+203001,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,十把一からげ,じっぱひとからげ,,jippa hitokarage,???,,,DUPLICATE 203002,"GroupId: 1745110
+Translate: lumping together all sorts of things
+Translate: making sweeping generalizations
+Translate: dealing with various things under one head"
+203002,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,十把一からげ,じゅっぱひとからげ,,juppa hitokarage,???,,,DUPLICATE 203001,"GroupId: 1745110
+Translate: lumping together all sorts of things
+Translate: making sweeping generalizations
+Translate: dealing with various things under one head"
+203003,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,十把ひとからげ,じっぱひとからげ,,jippa hitokarage,???,,,DUPLICATE 203004,"GroupId: 1745110
+Translate: lumping together all sorts of things
+Translate: making sweeping generalizations
+Translate: dealing with various things under one head"
+203004,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,十把ひとからげ,じゅっぱひとからげ,,juppa hitokarage,???,,,DUPLICATE 203003,"GroupId: 1745110
+Translate: lumping together all sorts of things
+Translate: making sweeping generalizations
+Translate: dealing with various things under one head"
+203005,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,硬いことは言いっこなし,かたいことはいいっこなし,,katai koto wa iikkonashi,"odłóżmy na bok formalności
+nie mówmy tak sztywno",,,,"GroupId: 2108910
+Translate: let's put formalities aside
+Translate: let's not speak so stiffly"
+203006,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,固いことは言いっこなし,かたいことはいいっこなし,,katai koto wa iikkonashi,"odłóżmy na bok formalności
+nie mówmy tak sztywno",,,,"GroupId: 2108910
+Translate: let's put formalities aside
+Translate: let's not speak so stiffly"
+203007,WORD_NOUN,,KATAKANA,,,-,デキャンタージュ,,dekyantaaju,przelewanie (np. wina),fra: décantage,,,"GroupId: 2142540
+Translate: decanting (of wine, etc.)"
+203008,WORD_ADJECTIVE_I,,HIRAGANA,,,説教くさい,せっきょうくさい,,sekkyou kusai,"lubiący prawić morały
+moralizatorski
+świętoszkowaty",,,,"GroupId: 2840476
+Translate: preachy
+Translate: sanctimonious"
+203009,WORD_NOUN,,HIRAGANA,,,ふところ都合,ふところつごう,,futokoro tsugou,"sytuacja finansowa
+stan majątkowy",,,,"GroupId: 2573610
+Translate: financial situation
+Translate: financial standing"
+203010,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,嶮峻,けんしゅん,,kenshun,"stromy
+spadzisty
+urwisty",,,,"GroupId: 1838950
+Translate: steep
+Translate: precipitous"
+203011,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,剣峻,けんしゅん,,kenshun,"stromy
+spadzisty
+urwisty",,,,"GroupId: 1838950
+Translate: steep
+Translate: precipitous"
+203012,WORD_NOUN,,KATAKANA,,,-,ハッピー・ライフ,,happii raifu,szczęśliwe życie,ang: happy life,,,"GroupId: 2840009
+Translate: happy life"
+203013,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,糠味噌臭い,ぬかみそくさい,,nukamiso kusai,"nadmiernie zaniepokojony wewnętrznymi sprawami
+???",,,,"GroupId: 1810730
+Translate: overly concerned with domestic affairs
+Translate: having an air of domesticity"
+203014,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,ぬか味噌臭い,ぬかみそくさい,,nukamiso kusai,"nadmiernie zaniepokojony wewnętrznymi sprawami
+???",,,,"GroupId: 1810730
+Translate: overly concerned with domestic affairs
+Translate: having an air of domesticity"
+203015,WORD_NOUN,,HIRAGANA,,,山鼬,やまいたち,,yamaitachi,"gronostaj europejski
+gronostaj
+gronostaj łasica","gatunek małego drapieżnego ssaka z rodziny łasicowatych, Mustela erminea",,,"GroupId: 2839406
+Translate: stoat (Mustela erminea)
+MiscInfo: uk
+Translate: ermine
+MiscInfo: uk
+Translate: short-tailed weasel
+MiscInfo: uk"
+203016,WORD_NOUN,,KATAKANA,,,-,ヤマイタチ,,yamaitachi,"gronostaj europejski
+gronostaj
+gronostaj łasica","gatunek małego drapieżnego ssaka z rodziny łasicowatych, Mustela erminea",,,"GroupId: 2839406
+Translate: stoat (Mustela erminea)
+MiscInfo: uk
+Translate: ermine
+MiscInfo: uk
+Translate: short-tailed weasel
+MiscInfo: uk"
+203017,WORD_NOUN,,HIRAGANA,,,やり繰り算段,やりくりさんだん,,yari kuri sandan,"znaleźć sposób (aby zebrać pieniądze, związać koniec z końcem itp.)
+obmyślanie
+wymyślanie
+kombinowanie",,,,"GroupId: 1716740
+Translate: managing to find a way (to raise money, make ends meet, etc.)
+Translate: contriving"
+203018,WORD_NOUN,,HIRAGANA,,,遣り繰り算段,やりくりさんだん,,yari kuri sandan,"znaleźć sposób (aby zebrać pieniądze, związać koniec z końcem itp.)
+obmyślanie
+wymyślanie
+kombinowanie",,,,"GroupId: 1716740
+Translate: managing to find a way (to raise money, make ends meet, etc.)
+Translate: contriving"
+203019,WORD_NOUN,,HIRAGANA,,,はけ先,はけさき,,hake saki,końcówka pędzla,,,,"GroupId: 1298710
+Translate: brush tip"
