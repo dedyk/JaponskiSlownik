@@ -11722,7 +11722,7 @@ Translate: to get teary-eyed"
 203021,WORD_NOUN,,HIRAGANA,,,第一帝政,だいいちていせい,,daiichi teisei,I Cesarstwo Francuskie,,,,"GroupId: 2525860
 Translate: (French) First Empire"
 203022,WORD_NOUN,,HIRAGANA,,,一財産,いっざいさん,,izzaisan,"fortuna
-majątek",,,,"GroupId: 2066130
+majątek",,,DUPLICATE 203075,"GroupId: 2066130
 Translate: a fortune"
 203023,WORD_NOUN,,KATAKANA,,,-,ツジョン,,tsujon,tujon,"organiczny związek chemiczny, związek terpenowy, występujący w olejku eterycznym m.in. piołunu, bylicy pospolitej, wrotyczu pospolitego, szałwii lekarskiej, żywotnika zachodniego, a także w napoju alkoholowym z domieszką wyciągu z piołunu – absyncie i gorzkiej ziołowej wódce zwanej piołunówką, ang: thujone",,,"GroupId: 2746370
 Translate: thujone"
@@ -11740,7 +11740,7 @@ Translate: shore dotterel (Thinornis novaeseelandiae)
 MiscInfo: uk
 Translate: shore plover
 MiscInfo: uk"
-203027,WORD_NOUN,,HIRAGANA,,,側杖,そばづえ,,sobadue,"cios otrzymany przez osobę postronną
+203027,WORD_NOUN,,HIRAGANA,,,側杖,そばづえ,,soba due,"cios otrzymany przez osobę postronną
 bycie wciągnięty w czyjąś walkę",,,,"GroupId: 1596660
 Translate: blow received by a bystander
 Translate: getting dragged in to somebody else's fight"
@@ -11834,11 +11834,11 @@ Translate: lushly green
 Translate: verdant"
 203056,WORD_ADJECTIVE_I,,HIRAGANA,,,洒落臭い,しゃらくさい,,sharakusai,"bezczelny
 zuchwały
-impertynencki",,,,"GroupId: 1568690
+impertynencki",,,DUPLICATE 203085,"GroupId: 1568690
 Translate: impertinent
 Translate: impudent
 Translate: cheeky"
-203057,WORD_NOUN,,HIRAGANA_KATAKANA,,,西洋カボチャ,せいようカボチャ,,seiyouka bocha,dynia olbrzymia,"gatunek rośliny z rodziny dyniowatych, Cucurbita maxima",,,"GroupId: 2262950
+203057,WORD_NOUN,,HIRAGANA_KATAKANA,,,西洋カボチャ,せいようカボチャ,,seiyou kabocha,dynia olbrzymia,"gatunek rośliny z rodziny dyniowatych, Cucurbita maxima",,,"GroupId: 2262950
 Translate: buttercup squash (Cucurbita maxima)"
 203058,WORD_NOUN,,HIRAGANA,,,水際対策,みずぎわたいさく,,mizugiwa taisaku,środki ochronne w portach i lotniskach,"np. przed przemytem, chorobami i itd",,,"GroupId: 2842839
 Translate: protection measures at ports and airports (against smuggling, disease, etc.)"
@@ -11883,6 +11883,77 @@ Translate: speaking"
 203073,WORD_NOUN,,HIRAGANA_KATAKANA,,,管轄ポート,かんかつポート,,kankatsu pooto,administracyjny port,,,,"GroupId: 2347660
 Translate: administration port"
 203074,WORD_NOUN,,KATAKANA,,,-,セカンドレイプ,,sekando reipu,"drugi gwałt
+psychiczny i emocjonalny uraz wyrządzany ofierze gwałtu po samym gwałcie",,,,"GroupId: 2842485
+Translate: second rape
+Translate: psychological and emotional trauma inflicted on a rape victim following the rape itself"
+203075,WORD_NOUN,,HIRAGANA,,,一財産,ひとざいさん,,hito zaisan,"fortuna
+majątek",,,DUPLICATE 203022,"GroupId: 2066130
+Translate: a fortune"
+203076,WORD_NOUN,,HIRAGANA,,,ひと財産,ひとざいさん,,hito zaisan,"fortuna
+majątek",,,,"GroupId: 2066130
+Translate: a fortune"
+203077,WORD_NOUN,,HIRAGANA,,,火皿貝,ひざらがい,,hizaragai,"chiton (gromada morskich mięczaków z rodziny Polyplacophora)
+Acanthopleura japonica (gatunek chitona)",,,,"GroupId: 2088080
+Translate: chiton (any marine mollusk of the class Polyplacophora)
+MiscInfo: uk
+Translate: sea cradle
+MiscInfo: uk
+Translate: Japanese chiton (Acanthopleura japonica)"
+203078,WORD_NOUN,,HIRAGANA,,,石鼈,ひざらがい,,hizaragai,"chiton (gromada morskich mięczaków z rodziny Polyplacophora)
+Acanthopleura japonica (gatunek chitona)",,,DUPLICATE 203079,"GroupId: 2088080
+Translate: chiton (any marine mollusk of the class Polyplacophora)
+MiscInfo: uk
+Translate: sea cradle
+MiscInfo: uk
+Translate: Japanese chiton (Acanthopleura japonica)"
+203079,WORD_NOUN,,HIRAGANA,,,石鼈,じいがせ,,jiigase,"chiton (gromada morskich mięczaków z rodziny Polyplacophora)
+Acanthopleura japonica (gatunek chitona)",,,DUPLICATE 203078,"GroupId: 2088080
+Translate: chiton (any marine mollusk of the class Polyplacophora)
+MiscInfo: uk
+Translate: sea cradle
+MiscInfo: uk
+Translate: Japanese chiton (Acanthopleura japonica)"
+203080,WORD_NOUN,,HIRAGANA,,,爺が背,じいがせ,,jiigase,"chiton (gromada morskich mięczaków z rodziny Polyplacophora)
+Acanthopleura japonica (gatunek chitona)",,,,"GroupId: 2088080
+Translate: chiton (any marine mollusk of the class Polyplacophora)
+MiscInfo: uk
+Translate: sea cradle
+MiscInfo: uk
+Translate: Japanese chiton (Acanthopleura japonica)"
+203081,WORD_NOUN,,KATAKANA,,,-,ヒザラガイ,,hizaragai,"chiton (gromada morskich mięczaków z rodziny Polyplacophora)
+Acanthopleura japonica (gatunek chitona)",,,,"GroupId: 2088080
+Translate: chiton (any marine mollusk of the class Polyplacophora)
+MiscInfo: uk
+Translate: sea cradle
+MiscInfo: uk
+Translate: Japanese chiton (Acanthopleura japonica)"
+203082,WORD_NOUN,,KATAKANA,,,-,ノドグロチドリ,,nodoguro chidori,Thinornis novaeseelandiae,gatunek ptaka,,,"GroupId: 2751990
+Translate: shore dotterel (Thinornis novaeseelandiae)
+MiscInfo: uk
+Translate: shore plover
+MiscInfo: uk"
+203083,WORD_NOUN,,HIRAGANA,,,傍杖,そばづえ,,soba due,"cios otrzymany przez osobę postronną
+bycie wciągnięty w czyjąś walkę",,,,"GroupId: 1596660
+Translate: blow received by a bystander
+Translate: getting dragged in to somebody else's fight"
+203084,WORD_NOUN,,HIRAGANA,,,そば杖,そばづえ,,soba due,"cios otrzymany przez osobę postronną
+bycie wciągnięty w czyjąś walkę",,,,"GroupId: 1596660
+Translate: blow received by a bystander
+Translate: getting dragged in to somebody else's fight"
+203085,WORD_ADJECTIVE_I,,HIRAGANA,,,洒落臭い,しゃらくくさい,,sharakukusai,"bezczelny
+zuchwały
+impertynencki",,,DUPLICATE 203056,"GroupId: 1568690
+Translate: impertinent
+Translate: impudent
+Translate: cheeky"
+203086,WORD_NOUN,,HIRAGANA,,,西洋南瓜,せいようかぼちゃ,,seiyou kabocha,dynia olbrzymia,"gatunek rośliny z rodziny dyniowatych, Cucurbita maxima",,,"GroupId: 2262950
+Translate: buttercup squash (Cucurbita maxima)"
+203087,WORD_NOUN,,KATAKANA,,,-,センチコガネ,,senchikogane,"żuk gnojowy (z rodziny Geotrupidae)
+Geotrupes laevistriatus (gatunek żuka gnojowego)",,,,"GroupId: 2166190
+Translate: dor beetle (of family Geotrupidae)
+MiscInfo: uk
+Translate: Geotrupes laevistriatus (species of dor beetle)"
+203088,WORD_NOUN,,KATAKANA,,,-,セカンド・レイプ,,sekando reipu,"drugi gwałt
 psychiczny i emocjonalny uraz wyrządzany ofierze gwałtu po samym gwałcie",,,,"GroupId: 2842485
 Translate: second rape
 Translate: psychological and emotional trauma inflicted on a rape victim following the rape itself"
