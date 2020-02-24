@@ -12669,8 +12669,8 @@ pogłoska",,,,"GroupId: 2834956
 Translate: hearsay
 Translate: rumor
 Translate: grapevine"
-203299,"WORD_EXPRESSION
-WORD_ADJECTIVE_I",,HIRAGANA,,,可能性の低い,かのうせいのひくい,,kanousei no hikui,"niezwykły
+203299,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,可能性の低い,かのうせいのひくい,,kanousei no hikui,"niezwykły
 nieprawdopodobny
 mało prawdopodobny",,,,"GroupId: 2626150
 Translate: unlikely
@@ -12752,7 +12752,7 @@ Translate: to serve a master
 Translate: to serve one's employer faithfully"
 203325,WORD_NOUN,,KATAKANA,,,-,エンドース,,endoosu,???,ang: endorsement,,,"GroupId: 2804860
 Translate: endorsement (product, ticket, etc.)"
-203326,WORD_NOUN,,KATAKANA,,,-,リリースイベント,,ririisui bento,wydarzenie organizowane z okazji wydania,"np. płyty CD, DVD, książki i etc, ang: release event",,,"GroupId: 2842298
+203326,WORD_NOUN,,KATAKANA,,,-,リリースイベント,,ririisu ibento,wydarzenie organizowane z okazji wydania,"np. płyty CD, DVD, książki i etc, ang: release event",,,"GroupId: 2842298
 Translate: release event
 Translate: event held to release item for sale (e.g. CD, DVD, book)"
 203327,WORD_NOUN,,HIRAGANA,,,巻き脚絆,まききゃはん,,maki kyahan,owijacz (na łydkę),,,,"GroupId: 2838547
@@ -12777,7 +12777,7 @@ Translate: TV unit"
 wielka kontrowersja",,,,"GroupId: 2839427
 Translate: great debate
 Translate: great controversy"
-203334,WORD_NOUN,,HIRAGANA,,,泥棒猫,どろぼうねこ,,dorobouneko,"???
+203334,WORD_NOUN,,HIRAGANA,,,泥棒猫,どろぼうねこ,,dorobou neko,"???
 cudzołożnik (poniżająco)
 osoba, która rozbija rodzinę lub długoletni związek (poniżająco)",,,,"GroupId: 2162280
 Translate: thieving cat
@@ -12852,8 +12852,398 @@ Translate: to wrestle to the ground"
 wdówka dominikanka","gatunek średniego ptaka z rodziny wdówek, Vidua macroura",,,"GroupId: 2240800
 Translate: pin-tailed whydah (species of weaverbird, Vidua macroura)
 MiscInfo: uk"
-203355,WORD_NOUN,,KATAKANA,,,-,ピンプラグ,,pinpuragu,"(jedno pinowe) złącze (np. RCA, 3.5mm)
+203355,WORD_NOUN,,KATAKANA,,,-,ピンプラグ,,pin puragu,"(jedno pinowe) złącze (np. RCA, 3.5mm)
 wtyk jack
 złącze typu jack",,,,"GroupId: 2834900
 Translate: (single-pin) connector (e.g. RCA, 3.5mm audio)
 Translate: jack plug"
+203356,"WORD_NOUN
+WORD_NOUN_SUFFIX",,HIRAGANA,,,願,ねがい,,negai,"pragnienie
+marzenie
+nadzieja
+prośba
+życzenie
+wniosek
+podanie",,,DUPLICATE 21868,"GroupId: 1217900
+Translate: desire
+Translate: wish
+Translate: request
+Translate: prayer
+Translate: petition
+Translate: application"
+203357,WORD_NOUN,,HIRAGANA,,,読みもの,よみもの,,yomi mono,"lektura
+materiał do czytania",,,,
+203358,WORD_NOUN,,KATAKANA_HIRAGANA,,,基督教,キリストきょう,,kirisuto kyou,"chrześcijaństwo
+religia chrześcijańska",,,DUPLICATE 27414,
+203359,WORD_NOUN,,HIRAGANA,,,村,そん,,son,"wioska
+wieś",,,DUPLICATE 2549,
+203360,WORD_NOUN,,HIRAGANA,,,操,そう,,sou,"wierność
+honor
+lojalność
+czystość (kobiety)
+niewinność (kobiety)
+dziewictwo (kobiety)
+wierność (np. do swojego męża)",,,"DUPLICATE 4576
+DUPLICATE 11042","GroupId: 1399990
+Translate: fidelity
+Translate: honour
+Translate: honor
+Translate: constancy
+Translate: chastity (of a woman)
+Translate: faithfulness (e.g. to one's husband)"
+203361,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,洟をかむ,はなをかむ,,hana o kamu,"wycierać nos
+wydmuchiwać nos",,,,
+203362,WORD_NOUN,,HIRAGANA,,,出板,しゅっぱん,,shuppan,"wydawnictwo
+publikacja
+publikowanie",,,,
+203363,WORD_NOUN,,HIRAGANA,,,揺り籃,ゆりかご,,yuri kago,kołyska,,,,
+203364,WORD_NOUN,,HIRAGANA,,,揺籃,ゆりかご,,yuri kago,kołyska,,,DUPLICATE 80153,
+203365,WORD_NOUN,,HIRAGANA,,,淵藪,えんそう,,ensou,"centrum
+środek",,,,
+203366,WORD_NOUN,,HIRAGANA,,,蒐輯,しゅうしゅう,,shuushuu,"zbieranie
+kolekcjonowanie",,,,
+203367,WORD_NOUN,,KATAKANA,,,-,ボサノーヴァ,,bosa noova,bossa nova,styl muzyki brazylijskiej,,,
+203368,WORD_NOUN,,HIRAGANA,,,九重,きゅうちょう,,kyuuchou,"dziewięciokrotnie
+mający dziewięć elementów
+pałac cesarski",,,"DUPLICATE 15719
+DUPLICATE 203369",
+203369,WORD_NOUN,,HIRAGANA,,,九重,くじゅう,,kujuu,"dziewięciokrotnie
+mający dziewięć elementów
+pałac cesarski",,,"DUPLICATE 15719
+DUPLICATE 203368",
+203370,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,随意,ずい,,zui,"dobrowolny
+opcjonalny
+nieobowiązkowy",,,"DUPLICATE 23057
+DUPLICATE 73516",
+203371,WORD_NOUN,,HIRAGANA,,,戦捷,せんしょう,,senshou,"zwycięstwo
+wygrana
+wiktoria
+triumf",,,,
+203372,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,世々,せいせい,,sei sei,"od pokoleń
+dziedziczny
+sukcesyjny
+pokolenie po pokoleniu
+z pokolenia na pokolenie",,,"DUPLICATE 32841
+DUPLICATE 203373
+DUPLICATE 203374",
+203373,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,世々,せぜ,,se ze,"od pokoleń
+dziedziczny
+sukcesyjny
+pokolenie po pokoleniu
+z pokolenia na pokolenie",,,"DUPLICATE 32841
+DUPLICATE 203372
+DUPLICATE 203374",
+203374,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,世々,せせ,,se se,"od pokoleń
+dziedziczny
+sukcesyjny
+pokolenie po pokoleniu
+z pokolenia na pokolenie",,,"DUPLICATE 32841
+DUPLICATE 203372
+DUPLICATE 203373",
+203375,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,世世,せいせい,,sei sei,"od pokoleń
+dziedziczny
+sukcesyjny
+pokolenie po pokoleniu
+z pokolenia na pokolenie",,,"DUPLICATE 32842
+DUPLICATE 203376
+DUPLICATE 203377",
+203376,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,世世,せぜ,,se ze,"od pokoleń
+dziedziczny
+sukcesyjny
+pokolenie po pokoleniu
+z pokolenia na pokolenie",,,"DUPLICATE 32842
+DUPLICATE 203375
+DUPLICATE 203377",
+203377,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,世世,せせ,,se se,"od pokoleń
+dziedziczny
+sukcesyjny
+pokolenie po pokoleniu
+z pokolenia na pokolenie",,,"DUPLICATE 32842
+DUPLICATE 203375
+DUPLICATE 203376",
+203378,WORD_NOUN,,HIRAGANA,,,年棒,ねんぽう,,nenpou,"roczna pensja
+roczny zarobek
+roczne uposażenie",,,,
+203379,WORD_NOUN,,HIRAGANA,,,僊人,せんにん,,sennin,"nieśmiertelni (taoizm)
+człowiek gór
+pustelnik",,,,
+203380,WORD_NOUN,,HIRAGANA,,,３８度線,さんじゅうはちどせん,,san juu hachidosen,38 równoleżnik,miejsce oddzielające Koreą Północną od Południowej,,,
+203381,WORD_NOUN,,KATAKANA,,,-,ニャンコ,,nyanko,"kotek
+kiciuś
+kicia",,,,
+203382,WORD_NOUN,,HIRAGANA,,,白衣,しろきぬ,,shirokinu,"białe ubranie
+biała szata
+laik
+osoba świecka",,,"DUPLICATE 36657
+DUPLICATE 36684
+DUPLICATE 36685
+DUPLICATE 203383
+DUPLICATE 203428","GroupId: 1474990
+Translate: white clothes
+Translate: white robe
+Translate: layperson"
+203383,WORD_NOUN,,HIRAGANA,,,白衣,しろぎぬ,,shiroginu,"białe ubranie
+biała szata
+laik
+osoba świecka",,,"DUPLICATE 36657
+DUPLICATE 36684
+DUPLICATE 36685
+DUPLICATE 203382
+DUPLICATE 203428","GroupId: 1474990
+Translate: white clothes
+Translate: white robe
+Translate: layperson"
+203384,WORD_NOUN,,HIRAGANA,,,少女心,おとめごころ,,otome gokoro,"uczucia dziewczyn
+myśli panien",,,,
+203385,WORD_NOUN,,KATAKANA_HIRAGANA,,,モツ鍋,モツなべ,,motsu nabe,motsunabe,japońska potrawa,,,
+203386,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,旁若無人,ぼうじゃくぶじん,,boujaku bujin,"arogancki
+buty
+zuchwały
+bezczelny
+apodyktyczny
+arogancja
+buta
+zuchwałość
+bezczelność",,,,
+203387,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,斑々,むらむら,,mura mura,"nieodparcie
+przemożnie
+nagle
+niespodziewanie
+być napalony (kolokwializm)
+być podniecony (kolokwializm)",,,,
+203388,"WORD_ADVERB
+WORD_ADVERB_TO
+WORD_NOUN",,HIRAGANA,,,斑斑,むらむら,,mura mura,"nieodparcie
+przemożnie
+nagle
+niespodziewanie
+być napalony (kolokwializm)
+być podniecony (kolokwializm)",,,,
+203389,WORD_NOUN,,HIRAGANA,,,併吞,へいどん,,heidon,"aneksja
+wcielenie
+wchłonięcie",,,,
+203390,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,ひかえ目に言う,ひかえめにいう,,hikae me ni iu,"mówić z powściągliwością
+bagatelizować
+umniejszać
+pomniejszać
+delikatnie mówiąc
+mówiąc najdelikatniej",,,,"GroupId: 2759980
+Translate: to speak with restraint
+Translate: to understate
+Translate: to downplay
+Translate: to put it mildly
+Translate: to say the least"
+203391,WORD_NOUN,,KATAKANA,,,-,ユーザーマニュアル,,yuuzaa manyuaru,"instrukcja obsługi
+podręcznik użytkownika",ang: users' manual,,,"GroupId: 2335110
+Translate: users' manual
+Translate: users' guide"
+203392,WORD_NOUN,,HIRAGANA,,,消息通,しょうそくつう,,shousokutsuu,"osoba dobrze poinformowana
+osoba wtajemniczona",,,,"GroupId: 1660500
+Translate: well-informed person
+Translate: insider"
+203393,WORD_NOUN,,KATAKANA,,,-,モツ,,motsu,"wnętrzności
+bebechy
+organy wewnętrzne
+narządy wewnętrzne",skrót,,,
+203394,WORD_NOUN,,HIRAGANA,,,攷究,こうきゅう,,koukyuu,"badanie
+dochodzenie
+namysł
+rozwaga",,,,
+203395,WORD_NOUN,,HIRAGANA,,,偸盗,とうとう,,toutou,"złodziej
+rabuś
+kradzież",,,DUPLICATE 105948,
+203396,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ウキクサ,,ukikusa,"pływający chwast
+spirodela wielokorzeniowa (gatunek rośliny z rodziny obrazkowatych, spirodela polyrhiza)
+nietrwały
+niestabilny",,,,
+203397,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,寸詰り,すんづまり,,sundumari,???,,,,
+203398,WORD_VERB_RU,,HIRAGANA,,,聞きとどける,ききとどける,,kiki todokeru,"przyznać
+przyznawać",,,,
+203399,"WORD_ADJECTIVE_F
+WORD_NOUN",,HIRAGANA,,,全日本,ぜんにっぽん,,zennippon,cała Japonia,,,DUPLICATE 123067,
+203400,WORD_NOUN,,KATAKANA,,,-,ソーメン,,soomen,cienki biały makaron,,,,
+203401,WORD_NOUN,,HIRAGANA,,,骨張,こっちょう,,kocchou,"szczyt
+wierzchołek",,,,"GroupId: 1668140
+Translate: height
+Translate: pinnacle"
+203402,"WORD_ADVERB_TO
+WORD_ADJECTIVE_TARU",,HIRAGANA,,,濤々,とうとう,,tou tou,"rwąco (szczególnie o rzece)
+(mówić) elokwentnie
+(mówić) płynnie
+???
+prąd czasów",,,,"GroupId: 1717240
+Translate: torrentially
+Translate: swiftly flowing (water, esp. river)
+Translate: voluminously flowing
+Translate: (speak) eloquently
+Translate: fluently
+Translate: spout forth (a torrent of speech)
+Translate: flood of the times (moving strongly in one direction)
+Translate: current of the times"
+203403,"WORD_ADVERB_TO
+WORD_ADJECTIVE_TARU",,HIRAGANA,,,濤濤,とうとう,,tou tou,"rwąco (szczególnie o rzece)
+(mówić) elokwentnie
+(mówić) płynnie
+???
+prąd czasów",,,,"GroupId: 1717240
+Translate: torrentially
+Translate: swiftly flowing (water, esp. river)
+Translate: voluminously flowing
+Translate: (speak) eloquently
+Translate: fluently
+Translate: spout forth (a torrent of speech)
+Translate: flood of the times (moving strongly in one direction)
+Translate: current of the times"
+203404,WORD_NOUN,,HIRAGANA,,,醜男,しこお,,shikoo,"brzydki mężczyzna (poniżająco)
+brzydal (poniżająco)
+silny, krzepki mężczyzna",,,"DUPLICATE 138818
+DUPLICATE 138862","GroupId: 1333840
+Translate: ugly man
+MiscInfo: derog
+Translate: strong, brawny man"
+203405,WORD_NOUN,,HIRAGANA,,,大根脚,だいこんあし,,daikon' ashi,"grube nogi
+gruba kostka u osób otyłych",,,,"GroupId: 1786440
+Translate: thick legs
+Translate: fat legs
+Translate: cankle
+Translate: cankles"
+203406,WORD_NOUN,,KATAKANA,,,-,ケサディラ,,kesadira,quesadilla,"danie kuchni meksykańskiej, tortilla z masy kukurydzianej z roztopionym serem",,,"GroupId: 2600790
+Translate: quesadilla"
+203407,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,縦にする,ほしいままにする,,hoshiimama ni suru,"nadużywać
+dawać wolną rękę
+popuścić",,,,"GroupId: 2825110
+Translate: to abuse
+MiscInfo: uk
+Translate: to exploit to the full
+MiscInfo: uk
+Translate: to give free rein to
+MiscInfo: uk"
+203408,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,擅にする,ほしいままにする,,hoshiimama ni suru,"nadużywać
+dawać wolną rękę
+popuścić",,,,"GroupId: 2825110
+Translate: to abuse
+MiscInfo: uk
+Translate: to exploit to the full
+MiscInfo: uk
+Translate: to give free rein to
+MiscInfo: uk"
+203409,WORD_NOUN,,KATAKANA_HIRAGANA,,,ガリレオ衛星,ガリレオえいせい,,garireo eisei,galileuszowe księżyce Jowisza,"cztery największe księżyce Jowisza, z których trzy zostały odkryte przez Galileusza 7 stycznia 1610, a czwarty, Ganimedes, 11 stycznia przy pomocy skonstruowanej przez niego lunety",,,"GroupId: 1963080
+Translate: Galilean moons (four largest moons of Jupiter)
+Translate: Galilean satellites"
+203410,WORD_NOUN,,KATAKANA,,,-,リリース・イベント,,ririisu ibento,wydarzenie organizowane z okazji wydania,"np. płyty CD, DVD, książki i etc, ang: release event",,,"GroupId: 2842298
+Translate: release event
+Translate: event held to release item for sale (e.g. CD, DVD, book)"
+203411,WORD_NOUN,,HIRAGANA,,,巻脚絆,まききゃはん,,maki kyahan,owijacz (na łydkę),,,,"GroupId: 2838547
+Translate: puttee"
+203412,WORD_NOUN,,HIRAGANA_KATAKANA,,,泥棒ネコ,どろぼうネコ,,dorobou neko,"???
+cudzołożnik (poniżająco)
+osoba, która rozbija rodzinę lub długoletni związek (poniżająco)",,,,"GroupId: 2162280
+Translate: thieving cat
+Translate: adulterer
+MiscInfo: derog
+Translate: homewrecker
+MiscInfo: derog"
+203413,WORD_NOUN,,HIRAGANA,,,どろぼう猫,どろぼうねこ,,dorobou neko,"???
+cudzołożnik (poniżająco)
+osoba, która rozbija rodzinę lub długoletni związek (poniżająco)",,,,"GroupId: 2162280
+Translate: thieving cat
+Translate: adulterer
+MiscInfo: derog
+Translate: homewrecker
+MiscInfo: derog"
+203414,WORD_NOUN,,KATAKANA,,,-,キジツ,,kijitsu,suszona niedojrzała pomarańcza,używana w chińskiej medycynie tradycyjnej,,,"GroupId: 2842422
+Translate: dried immature orange (used in Chinese traditional medicine)"
+203415,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,物分かりが悪い,ものわかりがわるい,,mono wakari ga warui,???,,,,"GroupId: 2787120
+Translate: dense
+Translate: dim
+Translate: dull-witted"
+203416,WORD_NOUN,,KATAKANA,,,-,ピンバッチ,,pin bacchi,przypinka,ang: pin badge,,,"GroupId: 2831588
+Translate: lapel pin
+Translate: pin badge"
+203417,WORD_NOUN,,KATAKANA,,,-,ピン・バッジ,,pin bajji,przypinka,ang: pin badge,,,"GroupId: 2831588
+Translate: lapel pin
+Translate: pin badge"
+203418,WORD_NOUN,,KATAKANA,,,-,ピン・バッチ,,pin bacchi,przypinka,ang: pin badge,,,"GroupId: 2831588
+Translate: lapel pin
+Translate: pin badge"
+203419,WORD_NOUN,,HIRAGANA,,,待ち針,まちばり,,machi bari,szpilka,,,,"GroupId: 1769890
+Translate: marking pin"
+203420,WORD_NOUN,,HIRAGANA,,,待針,まちばり,,machi bari,szpilka,,,,"GroupId: 1769890
+Translate: marking pin"
+203421,WORD_NOUN,,KATAKANA,,,-,シヤー・ピン,,shiyaa pin,kołek bezpiecznikowy ścinany,ang: shear pin,,,"GroupId: 2842662
+Translate: shear pin"
+203422,WORD_NOUN,,HIRAGANA_KATAKANA,,,蟹目レンチ,かにめレンチ,,kani me renchi,"regulowany klucz trzpieniowy
+regulowany klucz oczkowy",,,,"GroupId: 2677080
+Translate: adjustable pin wrench
+Translate: adjustable pin spanner"
+203423,WORD_VERB_RU,,HIRAGANA,,,組伏せる,くみふせる,,kumi fuseru,"trzymać (kogoś) pod kontrolą
+uciskać (kogoś)
+przybierać do muru
+powalić na ziemię",,,,"GroupId: 1397560
+Translate: to hold (someone) down
+Translate: to pin down
+Translate: to wrestle to the ground"
+203424,WORD_NOUN,,KATAKANA,,,-,テンニンチョウ,,tenninchou,"wdówka białobrzucha
+wdówka dominikanka","gatunek średniego ptaka z rodziny wdówek, Vidua macroura",,,"GroupId: 2240800
+Translate: pin-tailed whydah (species of weaverbird, Vidua macroura)
+MiscInfo: uk"
+203425,WORD_NOUN,,KATAKANA,,,-,ピン・プラグ,,pin puragu,"(jedno pinowe) złącze (np. RCA, 3.5mm)
+wtyk jack
+złącze typu jack",,,,"GroupId: 2834900
+Translate: (single-pin) connector (e.g. RCA, 3.5mm audio)
+Translate: jack plug"
+203426,"WORD_NOUN
+WORD_NOUN_SUFFIX",,HIRAGANA,,,族,ぞう,,zou,"bractwo
+klan
+zespół
+grupa
+rodzina
+krewni",,,"DUPLICATE 6476
+DUPLICATE 6477","GroupId: 1405770
+Translate: tribe
+Translate: clan
+Translate: band
+Translate: family"
+203427,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,喪,そう,,sou,"żałoba
+lament",,,"DUPLICATE 8064
+DUPLICATE 11042","GroupId: 1399250
+Translate: mourning"
+203428,WORD_NOUN,,HIRAGANA,,,白衣,はくえ,,hakue,"białe ubranie
+biała szata
+obywatel bez rangi (w starożytnych Chinach)
+laik
+osoba świecka",,,"DUPLICATE 36657
+DUPLICATE 36684
+DUPLICATE 36685
+DUPLICATE 203382
+DUPLICATE 203383","GroupId: 1474990
+Translate: white clothes
+Translate: white robe
+Translate: commoner without rank (in ancient China)
+Translate: layperson"
+203429,WORD_NOUN,,HIRAGANA,,,所為,そい,,soi,"czyn
+uczynek",,,"DUPLICATE 12931
+DUPLICATE 31052
+DUPLICATE 58942","GroupId: 1343140
+Translate: act
+Translate: deed
+Translate: one's doing"

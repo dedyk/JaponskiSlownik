@@ -194,7 +194,8 @@ public class JMEDictEntityMapper {
 		addMap("net-sl", "Internet slang");
 		addMap("Christn", "Christian term");
 		addMap("lit", "literary or formal term");
-
+		addMap("hist", "historical term");
+		
 		addMap("surname", "family or surname");
 		addMap("place", "place name");
 		addMap("unclass", "unclassified name");
