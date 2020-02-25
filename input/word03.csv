@@ -13290,7 +13290,7 @@ Translate: spheroid"
 Translate: cayenne pepper"
 203444,WORD_NOUN,,HIRAGANA,,,谷偏,たにへん,,tanihen,element podstawowy kanji “dolina” po lewej stronie,,,,"GroupId: 2181420
 Translate: kanji ""valley"" radical at left"
-203445,WORD_NOUN,,HIRAGANA,,,二分音符,にぶおんぷ,,nibuonpu,półnuta,,,,"GroupId: 1463110
+203445,WORD_NOUN,,HIRAGANA,,,二分音符,にぶおんぷ,,nibuonpu,półnuta,,,DUPLICATE 203513,"GroupId: 1463110
 Translate: half note
 Translate: minim"
 203446,WORD_NOUN,,HIRAGANA,,,防衛戦,ぼうえいせん,,boueisen,obronna bitwa,,,,"GroupId: 2201350
@@ -13313,7 +13313,7 @@ Translate: harmonious cooperation
 MiscInfo: abbr
 Translate: close cooperation
 MiscInfo: abbr"
-203452,WORD_NOUN,,HIRAGANA,,,藁屋根,わらやね,,warayane,"dach kryty strzechą
+203452,WORD_NOUN,,HIRAGANA,,,藁屋根,わらやね,,wara yane,"dach kryty strzechą
 dach kryty słomą",,,,"GroupId: 1819520
 Translate: straw-thatched roof"
 203453,WORD_NOUN,,HIRAGANA,,,湾口,わんこう,,wankou,"wejście do zatoki
@@ -13465,7 +13465,13 @@ Translate: bamboo utensil (for holding food)
 Translate: bamboo dish"
 203496,"WORD_NUMBER
 WORD_NOUN",,HIRAGANA,,,一,いつ,,itsu,"jeden
-to samo (np. opinia, ścieżka i etc)",,,,"GroupId: 2843147
+to samo (np. opinia, ścieżka i etc)",,,"DUPLICATE 2
+DUPLICATE 26514
+DUPLICATE 47473
+DUPLICATE 47495
+DUPLICATE 47496
+DUPLICATE 52732
+DUPLICATE 61641","GroupId: 2843147
 Translate: one
 Translate: same (mind, path, etc.)"
 203497,"WORD_EXPRESSION
@@ -13482,7 +13488,7 @@ Translate: visiting card
 Translate: name card"
 203500,WORD_NOUN,,HIRAGANA,,,屋,おく,,oku,"dom
 budynek
-dach",,,,"GroupId: 2842899
+dach",,,DUPLICATE 3958,"GroupId: 2842899
 Translate: house
 Translate: building
 Translate: roof"
@@ -13490,7 +13496,7 @@ Translate: roof"
 skrzynia z zabawkami",,,,"GroupId: 2831506
 Translate: toy box
 Translate: toy chest"
-203502,WORD_NOUN,,HIRAGANA,,,お呼ばれ,およばれ,,oyobare,bycie zaproszonym,,,,"GroupId: 1694210
+203502,WORD_NOUN,,HIRAGANA,,,お呼ばれ,およばれ,,oyo bare,bycie zaproszonym,,,,"GroupId: 1694210
 Translate: being invited"
 203503,WORD_NOUN,,HIRAGANA,,,温故,おんこ,,onko,"studiowanie przeszłości
 badanie historii",archaizm,,,"GroupId: 2842781
@@ -13504,10 +13510,113 @@ efekciarstwo
 splendor
 wspaniałość
 kwiat
-kwiaty",,,,"GroupId: 2842901
+kwiaty",,,"DUPLICATE 769
+DUPLICATE 6200","GroupId: 2842901
 Translate: flashiness
 Translate: showiness
 Translate: brilliance
 Translate: splendor
 Translate: bloom
 Translate: flowers"
+203505,WORD_NOUN,,HIRAGANA,,,発条指,ばねゆび,,bane yubi,"palec zatrzaskujący
+zakleszczające zapalenie ścięgna",,,,"GroupId: 2593300
+Translate: trigger finger
+Translate: flexor tendinitis"
+203506,WORD_NOUN,,KATAKANA,,,-,シシバナザル,,shishi banazaru,Rhinopithecus,gatunek małpy,,,"GroupId: 2826177
+Translate: snub-nosed monkey (Rhinopithecus spp.)
+MiscInfo: uk"
+203507,WORD_NOUN,,KATAKANA,,,-,パランプセスト,,paranpusesuto,palimpsest,"starożytny lub średniowieczny rękopis zapisany na pergaminie, z którego został zeskrobany poprzedni tekst, ang: palimpsest",,,"GroupId: 2506620
+Translate: palimpsest"
+203508,WORD_NOUN,,KATAKANA,,,-,ゴクラクハゼ,,gokurakuhaze,Rhinogobius giurinus,gatunek ryby,,,"GroupId: 2635820
+Translate: barcheek goby (Rhinogobius giurinus)
+MiscInfo: uk"
+203509,WORD_NOUN,,KATAKANA,,,-,カナペ,,kanape,canapé,rodzaj francuskiej przystawki,,,"GroupId: 1037880
+Translate: canapé"
+203510,WORD_NOUN,,KATAKANA,,,-,カイエンヌペッパー,,kaiennu peppaa,pieprz cayenne,ang: cayenne pepper,,,"GroupId: 2466400
+Translate: cayenne pepper"
+203511,WORD_NOUN,,KATAKANA,,,-,カイエン・ペッパー,,kaien peppaa,pieprz cayenne,ang: cayenne pepper,,,"GroupId: 2466400
+Translate: cayenne pepper"
+203512,WORD_NOUN,,KATAKANA,,,-,カイエンヌ・ペッパー,,kaiennu peppaa,pieprz cayenne,ang: cayenne pepper,,,"GroupId: 2466400
+Translate: cayenne pepper"
+203513,WORD_NOUN,,HIRAGANA,,,二分音符,にぶんおんぷ,,nibun'onpu,półnuta,,,DUPLICATE 203445,"GroupId: 1463110
+Translate: half note
+Translate: minim"
+203514,WORD_NOUN,,HIRAGANA,,,わら屋根,わらやね,,wara yane,"dach kryty strzechą
+dach kryty słomą",,,,"GroupId: 1819520
+Translate: straw-thatched roof"
+203515,WORD_NOUN,,HIRAGANA,,,わん公,わんこう,,wan kou,pies,kolokwializm,,,"GroupId: 2582030
+Translate: dog
+MiscInfo: col"
+203516,WORD_PRONOUN,,HIRAGANA,,,貴方様,あなたさま,,anata sama,ty,honoryfikatywnie,,,"GroupId: 2843165
+Translate: you
+MiscInfo: hon"
+203517,WORD_PRONOUN,,HIRAGANA,,,彼方様,あなたさま,,anata sama,ty,honoryfikatywnie,,,"GroupId: 2843165
+Translate: you
+MiscInfo: hon"
+203518,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,闇々,あんあん,,an' an,"ciemny
+mroczny",archaizm,,,"GroupId: 2842562
+Translate: dark
+MiscInfo: arch
+Translate: gloomy
+MiscInfo: arch"
+203519,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,暗暗,あんあん,,an' an,"ciemny
+mroczny",archaizm,,,"GroupId: 2842562
+Translate: dark
+MiscInfo: arch
+Translate: gloomy
+MiscInfo: arch"
+203520,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,闇闇,あんあん,,an' an,"ciemny
+mroczny",archaizm,,,"GroupId: 2842562
+Translate: dark
+MiscInfo: arch
+Translate: gloomy
+MiscInfo: arch"
+203521,WORD_NOUN,,HIRAGANA,,,貸し剥がし,かしはがし,,kashi hagashi,"cofnięcie kredytu (np. przez bank)
+naciskanie na spłatę",,,,"GroupId: 2416510
+Translate: withdrawal of loan credit (e.g. by a bank)
+Translate: retraction of credit
+Translate: insistence on repayment"
+203522,WORD_NOUN,,HIRAGANA,,,貸し剥し,かしはがし,,kashi hagashi,"cofnięcie kredytu (np. przez bank)
+naciskanie na spłatę",,,,"GroupId: 2416510
+Translate: withdrawal of loan credit (e.g. by a bank)
+Translate: retraction of credit
+Translate: insistence on repayment"
+203523,WORD_NOUN,,HIRAGANA,,,貸し剝がし,かしはがし,,kashi hagashi,"cofnięcie kredytu (np. przez bank)
+naciskanie na spłatę",,,,"GroupId: 2416510
+Translate: withdrawal of loan credit (e.g. by a bank)
+Translate: retraction of credit
+Translate: insistence on repayment"
+203524,WORD_NOUN,,HIRAGANA,,,貸し剝し,かしはがし,,kashi hagashi,"cofnięcie kredytu (np. przez bank)
+naciskanie na spłatę",,,,"GroupId: 2416510
+Translate: withdrawal of loan credit (e.g. by a bank)
+Translate: retraction of credit
+Translate: insistence on repayment"
+203525,WORD_NOUN,,HIRAGANA,,,造面,ぞうめん,,zoumen,prostokątna maska bugaku wykonana z grubego papieru i białego jedwabiu z narysowanymi rysami twarzy,,,,"GroupId: 2567010
+Translate: rectangular bugaku mask made of thick paper and white silk with facial features drawn on it"
+203526,WORD_NOUN,,HIRAGANA,,,雑面,ぞうめん,,zoumen,prostokątna maska bugaku wykonana z grubego papieru i białego jedwabiu z narysowanymi rysami twarzy,,,,"GroupId: 2567010
+Translate: rectangular bugaku mask made of thick paper and white silk with facial features drawn on it"
+203527,WORD_NOUN,,HIRAGANA,,,荷い太鼓,にないだいこ,,ninai daiko,"ninai-daiko
+bęben noszony na kiju używany w czasie przedstawień bugaku i gagaku",,,,"GroupId: 2842698
+Translate: ninaidaiko
+Translate: drum carried on a pole, used in bugaku and gagaku performances"
+203528,WORD_NOUN,,HIRAGANA,,,一簞,いったん,,ittan,bambusowe naczynie,do przechowywania żywności,,,"GroupId: 2842983
+Translate: bamboo utensil (for holding food)
+Translate: bamboo dish"
+203529,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,何時の間に,いつのまに,,itsu no ma ni,"kiedy
+???",,,,"GroupId: 2842833
+Translate: when
+Translate: at what point"
+203530,WORD_NOUN,,HIRAGANA,,,玩具箱,おもちゃばこ,,omocha bako,"pudełko na zabawki
+skrzynia z zabawkami",,,,"GroupId: 2831506
+Translate: toy box
+Translate: toy chest"
+203531,WORD_NOUN,,HIRAGANA,,,翫具箱,おもちゃばこ,,omocha bako,"pudełko na zabawki
+skrzynia z zabawkami",,,,"GroupId: 2831506
+Translate: toy box
+Translate: toy chest"
+203532,WORD_NOUN,,HIRAGANA,,,御呼ばれ,およばれ,,oyo bare,bycie zaproszonym,,,,"GroupId: 1694210
+Translate: being invited"
