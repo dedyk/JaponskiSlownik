@@ -13656,7 +13656,7 @@ Translate: class action lawsuit
 Translate: class action"
 203543,WORD_NOUN,,HIRAGANA,,,団体協約,だんたいきょうやく,,dantai kyouyaku,układ zbiorowy,,,,"GroupId: 1704000
 Translate: collective agreement"
-203544,WORD_NOUN,,HIRAGANA,,,異議申立て,いぎもうしたて,,igi moushitate,"zarzut formalny
+203544,WORD_NOUN,,HIRAGANA,,,異議申立て,いぎもうしたて,,igi moushi tate,"zarzut formalny
 sprzeciw (np. patentowy)",,,,"GroupId: 2273640
 Translate: formal objection
 Translate: opposition (e.g. to a patent)"
@@ -13697,18 +13697,18 @@ Translate: italic typeface"
 kwadratowy styl
 blokowy styl
 standardowy styl
-pistacja chiński (roślina, Pistacia chinensis)",,,,"GroupId: 2842902
+pistacja chiński (roślina, Pistacia chinensis)",,,DUPLICATE 43544,"GroupId: 2842902
 Translate: regular script (of Chinese characters)
 Translate: square style
 Translate: block style
 Translate: standard style
 Translate: Chinese pistache (Pistacia chinensis)"
 203559,WORD_NOUN,,HIRAGANA,,,歌意,かい,,kai,"znaczenie piosenki
-znaczenie tanka",,,,"GroupId: 2842904
+znaczenie tanka",,,DUPLICATE 43544,"GroupId: 2842904
 Translate: meaning of a song
 Translate: meaning of a tanka"
 203560,WORD_NOUN,,HIRAGANA,,,解義,かいぎ,,kaigi,"wyjaśnienie (znaczenia)
-interpretacja",mało znane słowo,,,"GroupId: 2843036
+interpretacja",mało znane słowo,,DUPLICATE 203620,"GroupId: 2843036
 Translate: explanation (of the meaning)
 MiscInfo: obsc
 Translate: interpretation
@@ -13803,7 +13803,7 @@ Translate: snowshoe rabbit
 MiscInfo: uk"
 203588,WORD_VERB_U,,HIRAGANA,,,溺れ損なう,おぼれそこなう,,obore sokonau,zbliżać się do utonięcia,,,,"GroupId: 1862890
 Translate: to come near being drowned"
-203589,WORD_VERB_U,,HIRAGANA,,,言い破る,いいやぶる,,iiya buru,"pokonać w dyskusji
+203589,WORD_VERB_U,,HIRAGANA,,,言い破る,いいやぶる,,ii yaburu,"pokonać w dyskusji
 obalić
 obalać
 zbić
@@ -13843,11 +13843,18 @@ Translate: ultras (football fans)"
 203600,WORD_NOUN,,KATAKANA,,,-,エクスキューズ,,ekusukyuuzu,wymówka,ang: excuse,,,"GroupId: 2840317
 Translate: excuse"
 203601,WORD_NOUN,,HIRAGANA,,,褐,かち,,kachi,"ciemny indygo (prawie czarny)
-gruba tkanina",,,,"GroupId: 2842922
+gruba tkanina",,,"DUPLICATE 203632
+DUPLICATE 203633","GroupId: 2842922
 Translate: dark indigo (almost black)
 Translate: coarse cloth"
 203602,WORD_NOUN,,HIRAGANA,,,-,かぶ,,kabu,"dziewięć (w mekuri karuta)
-oicho-kabu (tradycyjnie japońska hazardowa karciana gra)",,,,"GroupId: 2842604
+oicho-kabu (tradycyjnie japońska hazardowa karciana gra)",,,"DUPLICATE 6707
+DUPLICATE 17674
+DUPLICATE 28185
+DUPLICATE 38851
+DUPLICATE 38854
+DUPLICATE 65539
+EDICT_DUPLICATE 17081","GroupId: 2842604
 Translate: nine (in mekuri karuta)
 Translate: oicho-kabu (traditional Japanese gambling card game)"
 203603,WORD_VERB_U,,HIRAGANA,,,被す,かぶす,,kabusu,"przykryć (czymś)
@@ -13855,7 +13862,8 @@ okryć (czymś)",,,,"GroupId: 2037050
 Translate: to cover (with something)"
 203604,WORD_NOUN,,HIRAGANA,,,紙店,かみてん,,kamiten,"sklep papierniczy
 sprzedawca papieru
-producent papieru",,,,"GroupId: 2842936
+producent papieru",,,"DUPLICATE 203635
+DUPLICATE 203636","GroupId: 2842936
 Translate: paper store
 Translate: paper merchant
 Translate: paper seller
@@ -13867,17 +13875,20 @@ Translate: Chinese painting
 Translate: painting with Chinese subject
 Translate: Chinese-style painting"
 203606,WORD_NOUN,,HIRAGANA,,,骭,かん,,kan,"goleń
-piszczel",mało znane słowo,,,"GroupId: 1574670
+piszczel",mało znane słowo,,"DUPLICATE 89063
+DUPLICATE 101360","GroupId: 1574670
 Translate: shin
 MiscInfo: obsc
 Translate: shinbone
 MiscInfo: obsc"
 203607,WORD_NOUN,,HIRAGANA,,,関,かん,,kan,"bariera
-grama",,,,"GroupId: 2842928
+grama",,,"DUPLICATE 3019
+DUPLICATE 66599
+DUPLICATE 89063","GroupId: 2842928
 Translate: barrier
 Translate: gate"
 203608,WORD_NOUN,,HIRAGANA,,,緘,かん,,kan,"pieczęć (np. na kopercie)
-pisanie na pieczęci koperty",,,,"GroupId: 2842929
+pisanie na pieczęci koperty",,,DUPLICATE 89063,"GroupId: 2842929
 Translate: seam
 Translate: seal (e.g. envelope)
 Translate: writing on the seal of an envelope"
@@ -13897,3 +13908,108 @@ Translate: strong spirit
 MiscInfo: obsc
 Translate: mettle
 MiscInfo: obsc"
+203611,WORD_NOUN,,KATAKANA,,,-,クーフィーヤ,,kuufiiya,kefija,tradycyjne arabskie nakrycie głowy,,,"GroupId: 2723510
+Translate: keffiyeh
+Translate: kufiya
+Translate: traditional Arab headdress"
+203612,WORD_NOUN,,KATAKANA,,,-,カフィエ,,kafie,kefija,tradycyjne arabskie nakrycie głowy,,,"GroupId: 2723510
+Translate: keffiyeh
+Translate: kufiya
+Translate: traditional Arab headdress"
+203613,WORD_NOUN,,KATAKANA,,,-,カフィーア,,kafiia,kefija,tradycyjne arabskie nakrycie głowy,,,"GroupId: 2723510
+Translate: keffiyeh
+Translate: kufiya
+Translate: traditional Arab headdress"
+203614,WORD_NOUN,,HIRAGANA,,,曖昧制御,あいまいせいぎょ,,aimai seigyo,rozmyta kontrola,,,,"GroupId: 2277250
+Translate: fuzzy control"
+203615,WORD_NOUN,,HIRAGANA,,,異議申し立て,いぎもうしたて,,igi moushi tate,"zarzut formalny
+sprzeciw (np. patentowy)",,,,"GroupId: 2273640
+Translate: formal objection
+Translate: opposition (e.g. to a patent)"
+203616,WORD_NOUN,,HIRAGANA,,,異議申立,いぎもうしたて,,igi moushi tate,"zarzut formalny
+sprzeciw (np. patentowy)",,,,"GroupId: 2273640
+Translate: formal objection
+Translate: opposition (e.g. to a patent)"
+203617,WORD_NOUN,,KATAKANA,,,-,コギノコ,,kogi no ko,Buckleya lanceolata,,,,"GroupId: 2625710
+Translate: Buckleya lanceolata (species of parasitic deciduous shrub)
+MiscInfo: uk"
+203618,WORD_NOUN,,HIRAGANA,,,甘鱰,あましいら,,amashiira,Luvarus imperialis,gatunek ryby,,,"GroupId: 2559460
+Translate: luvar (Luvarus imperialis, species of perciform fish closely related to the surgeonfish)"
+203619,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,アマシイラ,,amashiira,Luvarus imperialis,gatunek ryby,,,"GroupId: 2559460
+Translate: luvar (Luvarus imperialis, species of perciform fish closely related to the surgeonfish)"
+203620,WORD_NOUN,,HIRAGANA,,,解義,げぎ,,gegi,"wyjaśnienie (znaczenia)
+interpretacja",mało znane słowo,,DUPLICATE 203560,"GroupId: 2843036
+Translate: explanation (of the meaning)
+MiscInfo: obsc
+Translate: interpretation
+MiscInfo: obsc"
+203621,WORD_NOUN,,HIRAGANA,,,練味噌,ねりみそ,,neri miso,"miso zmieszane z cukrem i sake, zagęszczone przez mieszanie na małym ogniu",,,,"GroupId: 2703200
+Translate: miso mixed with sugar and sake, thickened by stirring over low heat"
+203622,WORD_NOUN,,HIRAGANA,,,煉り味噌,ねりみそ,,neri miso,"miso zmieszane z cukrem i sake, zagęszczone przez mieszanie na małym ogniu",,,,"GroupId: 2703200
+Translate: miso mixed with sugar and sake, thickened by stirring over low heat"
+203623,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,掃立て,はきたて,,haki tate,"bycie świeżo zamiecionym
+zbieranie jedwabników z papieru jajecznego",,,,"GroupId: 1399730
+Translate: being newly swept
+Translate: gathering silkworms from the egg paper"
+203624,WORD_NOUN,,KATAKANA,,,-,スイジガイ,,suijigai,Lambis chiragra,gatunek ślimaka morskiego,,,"GroupId: 2605240
+Translate: spider conch (Lambis chiragra)
+MiscInfo: uk"
+203625,WORD_NOUN,,KATAKANA,,,-,ゲーム・バランス,,geemu baransu,"balans gry
+balans między trudnością, a przyjemnością",,,,"GroupId: 2841755
+Translate: game balance
+Translate: balance between difficulty and enjoyability"
+203626,WORD_NOUN,,KATAKANA,,,-,カンジキウサギ,,kanjiki usagi,zając amerykański,"gatunek ssaka z rodziny zającowatych, Lepus americanus",,,"GroupId: 2206300
+Translate: snowshoe hare (Lepus americanus)
+MiscInfo: uk
+Translate: snowshoe rabbit
+MiscInfo: uk"
+203627,WORD_VERB_U,,HIRAGANA,,,言破る,いいやぶる,,ii yaburu,"pokonać w dyskusji
+obalić
+obalać
+zbić
+zbijać",,,,"GroupId: 1848360
+Translate: to argue down
+Translate: to confute"
+203628,WORD_NOUN,,KATAKANA_HIRAGANA,,,印度撞木鮫,インドしゅもくざめ,,indo shumoku zame,Eusphyra blochii,gatunek rekina,,,"GroupId: 2554650
+Translate: winghead shark (Eusphyra blochii, species of Indo-West Pacific hammerhead shark)
+MiscInfo: uk"
+203629,WORD_NOUN,,KATAKANA,,,-,インドシュモクザメ,,indo shumoku zame,Eusphyra blochii,gatunek rekina,,,"GroupId: 2554650
+Translate: winghead shark (Eusphyra blochii, species of Indo-West Pacific hammerhead shark)
+MiscInfo: uk"
+203630,WORD_NOUN,,KATAKANA,,,-,インヴァース,,invaasu,odwrotność,ang: inverse,,,"GroupId: 1023970
+Translate: inverse"
+203631,WORD_NOUN,,KATAKANA,,,-,シーランプリ,,shiiranpuri,"minóg morski
+minog morski","pasożytniczy gatunek bezżuchwowca z rodziny minogowatych, największy z minogów, Petromyzon marinus",,,"GroupId: 2551190
+Translate: sea lamprey (Petromyzon marinus)"
+203632,WORD_NOUN,,HIRAGANA,,,褐,かつ,,katsu,"ciemny indygo (prawie czarny)
+gruba tkanina",,,"DUPLICATE 203601
+DUPLICATE 203633","GroupId: 2842922
+Translate: dark indigo (almost black)
+Translate: coarse cloth"
+203633,WORD_NOUN,,HIRAGANA,,,褐,かちん,,kachin,"ciemny indygo (prawie czarny)
+gruba tkanina",,,"DUPLICATE 100109
+DUPLICATE 203601
+DUPLICATE 203632","GroupId: 2842922
+Translate: dark indigo (almost black)
+Translate: coarse cloth"
+203634,WORD_NOUN,,KATAKANA,,,-,カブ,,kabu,"dziewięć (w mekuri karuta)
+oicho-kabu (tradycyjnie japońska hazardowa karciana gra)",,,DUPLICATE 17081,"GroupId: 2842604
+Translate: nine (in mekuri karuta)
+Translate: oicho-kabu (traditional Japanese gambling card game)"
+203635,WORD_NOUN,,HIRAGANA,,,紙店,かみみせ,,kamimise,"sklep papierniczy
+sprzedawca papieru
+producent papieru",,,"DUPLICATE 203604
+DUPLICATE 203636","GroupId: 2842936
+Translate: paper store
+Translate: paper merchant
+Translate: paper seller
+Translate: paper maker"
+203636,WORD_NOUN,,HIRAGANA,,,紙店,かみだな,,kamidana,"sklep papierniczy
+sprzedawca papieru
+producent papieru",,,"DUPLICATE 203604
+DUPLICATE 203635","GroupId: 2842936
+Translate: paper store
+Translate: paper merchant
+Translate: paper seller
+Translate: paper maker"
