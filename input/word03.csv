@@ -14107,7 +14107,7 @@ Translate: reclining position
 Translate: decubitus"
 203663,WORD_NOUN,,HIRAGANA,,,楽,がく,,gaku,"muzyka
 stara japońska dworska muzyka
-gagaku",,,,"GroupId: 2842911
+gagaku",,,DUPLICATE 1537,"GroupId: 2842911
 Translate: music
 Translate: old Japanese court music
 Translate: gagaku"
@@ -14129,7 +14129,8 @@ MiscInfo: obsc
 Translate: elixir
 MiscInfo: obsc"
 203666,WORD_NOUN,,HIRAGANA,,,笈,きゅう,,kyuu,"pudełko noszone na plecach służące do przechowywania książek
-drewniane pudełko noszone na plecach służące do przechowywania przedmiotów podczas pielgrzymki",,,,"GroupId: 2842939
+drewniane pudełko noszone na plecach służące do przechowywania przedmiotów podczas pielgrzymki",,,"DUPLICATE 57515
+DUPLICATE 93182","GroupId: 2842939
 Translate: box carried on one's back to store books
 Translate: wooden box carried on one's back to store items for a pilgrimage"
 203667,WORD_NOUN,,HIRAGANA,,,手話通訳,しゅわつうやく,,shuwa tsuuyaku,"tłumaczenie na język migowy
@@ -14239,7 +14240,7 @@ Translate: NISO"
 Translate: seventh anniversary of a death"
 203693,WORD_NOUN,,HIRAGANA,,,依存状態,いぞんじょうたい,,izonjoutai,stan zależności,,,,"GroupId: 2132590
 Translate: state of dependence"
-203694,WORD_NOUN,,KATAKANA,,,ＡＦ,エーエフ,,eeefu,"autofokus
+203694,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＡＦ,エーエフ,,eeefu,"autofokus
 seks analny (slang)",,,,"GroupId: 2841521
 Translate: autofocus
 Translate: auto focus
@@ -14248,7 +14249,7 @@ MiscInfo: sl"
 203695,WORD_NOUN,,HIRAGANA,,,大鍬形,おおくわがた,,ookuwagata,Dorcus hopei,owad,,,"GroupId: 2732970
 Translate: giant stag beetle (Dorcus hopei)
 MiscInfo: uk"
-203696,WORD_NOUN,,KATAKANA,,,-,オオワニザメ,,oowanizame,rekin piaskowy,"gatunek dużego rekina z rodziny tawroszowatych, zamieszkujący tropikalne i umiarkowane wody wszystkich oceanów, Odontaspis ferox",,,"GroupId: 2550730
+203696,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオワニザメ,,oowanizame,rekin piaskowy,"gatunek dużego rekina z rodziny tawroszowatych, zamieszkujący tropikalne i umiarkowane wody wszystkich oceanów, Odontaspis ferox",,,"GroupId: 2550730
 Translate: smalltooth sand tiger (Odontaspis ferox)
 Translate: ragged-tooth shark"
 203697,WORD_NOUN,,KATAKANA,,,-,オクテット,,okutetto,oktet,"jednostka informacji składająca się z 8 bitów. Dla większości komputerów oktet jest również najmniejszą adresowalną jednostką pamięci, czyli bajtem, przez co pojęcia te często są używane zamiennie, ang: octet",,,"GroupId: 1034260
@@ -14276,7 +14277,7 @@ MiscInfo: obsc"
 Translate: lust for money
 Translate: hunger for money"
 203703,WORD_NOUN,,HIRAGANA,,,義解,ぎげ,,gige,"wyjaśnienie (znaczenia)
-interpretacja",archaizm,,,"GroupId: 2843037
+interpretacja",archaizm,,DUPLICATE 203718,"GroupId: 2843037
 Translate: explanation (of the meaning)
 MiscInfo: arch
 Translate: interpretation
@@ -14322,7 +14323,7 @@ Translate: silver bell"
 Translate: silvery, snow-capped mountain"
 203712,WORD_NOUN,,HIRAGANA,,,岫,くき,,kuki,"jaskinia
 pieczara
-szczyt",archaizm,,,"GroupId: 2843035
+szczyt",archaizm,,DUPLICATE 203713,"GroupId: 2843035
 Translate: cave
 MiscInfo: arch
 Translate: cavern
@@ -14332,8 +14333,33 @@ MiscInfo: arch
 Translate: summit
 MiscInfo: arch"
 203713,WORD_NOUN,,HIRAGANA,,,岫,しゅう,,shuu,"jaskinia
-pieczara",archaizm,,,"GroupId: 2843035
+pieczara",archaizm,,DUPLICATE 203712,"GroupId: 2843035
 Translate: cave
 MiscInfo: arch
 Translate: cavern
 MiscInfo: arch"
+203714,WORD_NOUN,,HIRAGANA,,,鯛飯,たいめし,,taimeshi,ryż z mielonym leszczem morskim (tai),,,,"GroupId: 1655570
+Translate: rice with minced sea bream (tai)"
+203715,WORD_NOUN,,HIRAGANA,,,舟宿,ふなやど,,funayado,"pośrednik spedycyjny
+hangar dla łodzi
+zajazd dla marynarzy",,,,"GroupId: 1624850
+Translate: shipping agent
+Translate: boathouse
+Translate: inn for sailors"
+203716,WORD_VERB_RU,,HIRAGANA,,,重ねかける,かさねかける,,kasane kakeru,???,,,,"GroupId: 1335840
+Translate: to lap
+Translate: to overlap"
+203717,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオクワガタ,,ookuwagata,Dorcus hopei,owad,,,"GroupId: 2732970
+Translate: giant stag beetle (Dorcus hopei)
+MiscInfo: uk"
+203718,WORD_NOUN,,HIRAGANA,,,義解,ぎかい,,gikai,"wyjaśnienie (znaczenia)
+interpretacja",archaizm,,DUPLICATE 203703,"GroupId: 2843037
+Translate: explanation (of the meaning)
+MiscInfo: arch
+Translate: interpretation
+MiscInfo: arch"
+203719,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,オール・シーズン,,ooru shiizun,"cały sezon
+całosezonowy (np. opony)","ang: all seasons, all-season",,,"GroupId: 2840972
+Translate: all seasons
+Translate: all-season"
