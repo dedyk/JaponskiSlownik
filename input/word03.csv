@@ -8823,7 +8823,8 @@ niezwykły",,,DUPLICATE 5775,
 202246,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,稀有,きゆう,,kiyuu,"rzadki
 niezwykły",,,DUPLICATE 28932,
-202247,WORD_NOUN,,HIRAGANA,,,牙,き,,ki,kieł,,,DUPLICATE 6006,
+202247,WORD_NOUN,,HIRAGANA,,,牙,き,,ki,kieł,,,"DUPLICATE 6006
+DUPLICATE 203749",
 202248,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,肉慾,にくよく,,nikuyoku,cielesne pożądanie,,,,
 202249,WORD_NOUN,,HIRAGANA,,,柩,きゅう,,kyuu,"trumna
@@ -14439,7 +14440,9 @@ Translate: unbalancing an opponent"
 203746,WORD_NOUN,,HIRAGANA,,,偶,ぐう,,guu,"liczba parzysta
 współmałżonek
 współmałżonka
-małżonek",mało znane słowo,,,"GroupId: 2842932
+małżonek",mało znane słowo,,"DUPLICATE 29002
+DUPLICATE 61693
+DUPLICATE 98059","GroupId: 2842932
 Translate: even number
 MiscInfo: obsc
 Translate: even
@@ -14448,14 +14451,16 @@ Translate: spouse
 MiscInfo: obsc
 Translate: mate
 MiscInfo: obsc"
-203747,WORD_NOUN,,HIRAGANA,,,笥,け,,ke,pojemnik (szczególnie na żywność),archaizm,,,"GroupId: 2842946
+203747,WORD_NOUN,,HIRAGANA,,,笥,け,,ke,pojemnik (szczególnie na żywność),archaizm,,DUPLICATE 86929,"GroupId: 2842946
 Translate: container (esp. for food)
 MiscInfo: arch"
 203748,WORD_NOUN,,HIRAGANA,,,妍,けん,,ken,"piękno
 uroda",,,,"GroupId: 2842950
 Translate: beauty"
 203749,WORD_NOUN,,HIRAGANA,,,牙,げ,,ge,"ząb
-kość",mało znane słowo,,,"GroupId: 2842947
+kość",mało znane słowo,,"DUPLICATE 6006
+DUPLICATE 69546
+DUPLICATE 202247","GroupId: 2842947
 Translate: tooth
 MiscInfo: obsc
 Translate: ivory
@@ -14494,7 +14499,7 @@ MiscInfo: yoji"
 liczebność pierwiastka chemicznego w skorupie ziemskiej, obliczona przez geochemika Franka Wiggleswortha Clarke'a",,,,"GroupId: 2830809
 Translate: Clarke number
 Translate: abundance of a chemical element in Earth's crust, as calculated by geochemist Frank Wigglesworth Clarke"
-203758,WORD_NOUN,,HIRAGANA,,,弘徽殿,こきでん,,kokiden,kobiecy pawilon,wewnętrznego Pałacu Heian,,,"GroupId: 2592830
+203758,WORD_NOUN,,HIRAGANA,,,弘徽殿,こきでん,,kokiden,kobiecy pawilon,wewnętrznego Pałacu Heian,,DUPLICATE 203801,"GroupId: 2592830
 Translate: ladies' pavilion (of the inner Heian Palace)"
 203759,WORD_NOUN,,HIRAGANA,,,添い臥し,そいぶし,,soi bushi,"spać ze sobą
 spać razem",,,,"GroupId: 1804830
@@ -14526,7 +14531,7 @@ Translate: Koga Faction (of the LDP)"
 podążanie przeciwną ścieżką",,,,"GroupId: 1693580
 Translate: reverse order
 Translate: following a contrary path"
-203769,WORD_NOUN,,HIRAGANA,,,立版古,たてばんこ,,tatebanko,rzeźba z papieru przedstawiająca scenę podobną do obrazu,,,,"GroupId: 2588990
+203769,WORD_NOUN,,HIRAGANA,,,立版古,たてばんこ,,tate banko,rzeźba z papieru przedstawiająca scenę podobną do obrazu,,,,"GroupId: 2588990
 Translate: papercraft sculpture representing a scene akin to a painting"
 203770,WORD_EXPRESSION,,HIRAGANA,,,何処から何処まで,どこからどこまで,,doko kara doko made,"w każdym miejscu
 wszędzie
@@ -14547,7 +14552,7 @@ Translate: from head to toe
 MiscInfo: uk
 Translate: from start to end
 MiscInfo: uk"
-203771,WORD_NOUN,,KATAKANA,,,-,ハイジャッンプ,,hai jannpu,skok wzwyż,ang: high jump,,,"GroupId: 1095110
+203771,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ハイジャッンプ,,hai jannpu,skok wzwyż,ang: high jump,,,"GroupId: 1095110
 Translate: high jump"
 203772,WORD_NOUN,,HIRAGANA,,,思想信条,しそうしんじょう,,shisou shinjou,własne myśli i przekonania,,,,"GroupId: 2046150
 Translate: one's thought and beliefs
@@ -14570,7 +14575,7 @@ Translate: quality control
 Translate: QC"
 203779,WORD_NOUN,,KATAKANA,,,-,キンシャサ,,kinshasa,Kinszasa,"stolica i największe miasto Demokratycznej Republiki Konga, ang: Kinshasa",,,"GroupId: 2839615
 Translate: Kinshasa (Democratic Republic of the Congo)"
-203780,WORD_NOUN,,KATAKANA,,,-,キーイング,,kiiingu,???,"grafika, ang: keying",,,"GroupId: 2836839
+203780,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,キーイング,,kiiingu,???,"grafika, ang: keying",,,"GroupId: 2836839
 Translate: keying (graphics)
 Translate: compositing"
 203781,WORD_NOUN,,KATAKANA_HIRAGANA,,,ギンザメ属,ギンザメぞく,,ginzame zoku,Chimaera,"rodzaj ryb chrzęstnoszkieletowych z rodziny chimerowatych, Chimaeridae",,,"GroupId: 2551250
@@ -14589,22 +14594,26 @@ MiscInfo: obsc"
 WORD_ADJECTIVE_NA",,HIRAGANA,,,孤,こ,,ko,"bycie sam
 samotność
 osamotnienie
-sierota (mało znane słowo)",,,,"GroupId: 2842951
+sierota (mało znane słowo)",,,"DUPLICATE 26664
+DUPLICATE 55974","GroupId: 2842951
 Translate: being alone
 Translate: solitude
 Translate: loneliness
 Translate: orphan
 MiscInfo: obsc"
-203787,UNKNOWN,,HIRAGANA,,,洪,こう,,kou,Węgry,,,,"GroupId: 2842507
+203787,UNKNOWN,,HIRAGANA,,,洪,こう,,kou,Węgry,,,DUPLICATE 11466,"GroupId: 2842507
 Translate: Hungary"
 203788,WORD_NOUN,,HIRAGANA,,,巧,こう,,kou,"umiejętność
 zręczność
-pomysłowość",,,,"GroupId: 2842968
+pomysłowość",,,DUPLICATE 11466,"GroupId: 2842968
 Translate: skilfulness
 Translate: skillfulness
 Translate: cleverness"
 203789,WORD_NOUN,,HIRAGANA,,,鵠,こく,,koku,"łabędź
-środek tarczy",,,,"GroupId: 2842972
+środek tarczy",,,"DUPLICATE 93716
+DUPLICATE 102441
+DUPLICATE 102470
+DUPLICATE 203811","GroupId: 2842972
 Translate: swan
 Translate: bullseye"
 203790,WORD_NOUN,,HIRAGANA,,,洪恩,こうおん,,kouon,"wielki dług wdzięczności
@@ -14642,7 +14651,7 @@ chwila
 limit
 czas śmierci
 ostatni moment
-północ w dzielnicach czerwonych latarni w okresie Edo (archaizm)",,,,"GroupId: 2842959
+północ w dzielnicach czerwonych latarni w okresie Edo (archaizm)",,,DUPLICATE 9958,"GroupId: 2842959
 Translate: time
 Translate: moment
 Translate: limit
@@ -14650,3 +14659,53 @@ Translate: time of death
 Translate: last moment
 Translate: midnight in red-light districts during the Edo period
 MiscInfo: arch"
+203795,WORD_NOUN,,HIRAGANA,,,大人にきび,おとなにきび,,otona nikibi,trądzik osób dorosłych,,,,"GroupId: 2799160
+Translate: adult acne"
+203796,WORD_NOUN,,HIRAGANA,,,大人面皰,おとなにきび,,otona nikibi,trądzik osób dorosłych,,,,"GroupId: 2799160
+Translate: adult acne"
+203797,WORD_NOUN,,KATAKANA,,,-,ニグリロ,,niguriro,Negryci,"niskorosłe ludy autochtoniczne, wykazujące cechy negroidalne, zamieszkujące trudno dostępne rejony Azji Południowo-Wschodniej, zwłaszcza Filipiny, Półwysep Malajski i Andamany, ang: Negrillo",,,"GroupId: 2215550
+Translate: Negrillo"
+203798,WORD_NOUN,,KATAKANA,,,-,ツノメドリ,,tsunomedori,maskonur pacyficzny,"gatunek średniej wielkości ptaka z rodziny alk, Fratercula corniculata",,,"GroupId: 1978480
+Translate: horned puffin (Fratercula corniculata)
+MiscInfo: uk"
+203799,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,走馬灯の様に駆け巡る,そうまとうのようにかけめぐる,,soumatou no you ni kake meguru,błyskać przed oczami,np. wspomnienia,,,"GroupId: 2824580
+Translate: to flash before one's eyes (of memories, etc.)"
+203800,WORD_NOUN,,KATAKANA,,,-,キート,,kiito,Quito,"stolica Ekwadoru, drugie co do wielkości miasto kraju",,,"GroupId: 2839571
+Translate: Quito (Ecuador)"
+203801,WORD_NOUN,,HIRAGANA,,,弘徽殿,こうきでん,,koukiden,kobiecy pawilon,wewnętrznego Pałacu Heian,,DUPLICATE 203758,"GroupId: 2592830
+Translate: ladies' pavilion (of the inner Heian Palace)"
+203802,WORD_VERB_U,,HIRAGANA,,,数えなおす,かぞえなおす,,kazoe naosu,liczyć ponownie,,,,"GroupId: 2077910
+Translate: to count again"
+203803,WORD_NOUN,,HIRAGANA,,,立て版古,たてばんこ,,tate banko,rzeźba z papieru przedstawiająca scenę podobną do obrazu,,,,"GroupId: 2588990
+Translate: papercraft sculpture representing a scene akin to a painting"
+203804,WORD_TEMPORAL_NOUN,,HIRAGANA,,,一殺那,いっせつな,,issetsuna,"moment
+chwila",,,,"GroupId: 1167490
+Translate: (a) moment
+Translate: an instant"
+203805,WORD_NOUN,,KATAKANA,,,-,キャプチャーカード,,kyapuchaa kaado,karta (urządzenie) do przechwytywania sygnału video,ang: (video) capture card,,,"GroupId: 2837730
+Translate: (video) capture card"
+203806,WORD_NOUN,,KATAKANA,,,-,キャプチャ・カード,,kyapucha kaado,karta (urządzenie) do przechwytywania sygnału video,ang: (video) capture card,,,"GroupId: 2837730
+Translate: (video) capture card"
+203807,WORD_NOUN,,KATAKANA,,,-,キャプチャー・カード,,kyapuchaa kaado,karta (urządzenie) do przechwytywania sygnału video,ang: (video) capture card,,,"GroupId: 2837730
+Translate: (video) capture card"
+203808,WORD_NOUN,,KATAKANA,,,-,キャプチャボード,,kyapucha boodo,karta (urządzenie) do przechwytywania sygnału video,ang: capture card,,,"GroupId: 2837731
+Translate: (video) capture board
+Translate: capture card"
+203809,WORD_NOUN,,KATAKANA,,,-,キャプチャー・ボード,,kyapuchaa boodo,karta (urządzenie) do przechwytywania sygnału video,ang: capture card,,,"GroupId: 2837731
+Translate: (video) capture board
+Translate: capture card"
+203810,WORD_NOUN,,KATAKANA,,,-,キャプチャ・ボード,,kyapucha boodo,karta (urządzenie) do przechwytywania sygnału video,ang: capture card,,,"GroupId: 2837731
+Translate: (video) capture board
+Translate: capture card"
+203811,WORD_NOUN,,HIRAGANA,,,鵠,こう,,kou,"łabędź
+środek tarczy",,,"DUPLICATE 11466
+DUPLICATE 102441
+DUPLICATE 102470
+DUPLICATE 203789","GroupId: 2842972
+Translate: swan
+Translate: bullseye"
+203812,WORD_NOUN,,HIRAGANA,,,鴻恩,こうおん,,kouon,"wielki dług wdzięczności
+wielkie zobowiązanie",,,,"GroupId: 2842536
+Translate: great debt of gratitude
+Translate: great obligation"
