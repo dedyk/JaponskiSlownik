@@ -14774,7 +14774,7 @@ Translate: globulin"
 Translate: keto"
 203835,WORD_NOUN,,KATAKANA,,,-,ケミスト,,kemisuto,chemik,ang: chemist,,,"GroupId: 1048180
 Translate: chemist"
-203836,WORD_NOUN,,KATAKANA,,,ＧｅＶ,ジェブ,,jebu,giga elektron wolt,ang: giga electron volt,,,"GroupId: 2841433
+203836,WORD_NOUN,,KATAKANA,,,ＧｅＶ,ジェブ,,jebu,giga elektron wolt,ang: giga electron volt,,DUPLICATE 203871,"GroupId: 2841433
 Translate: giga electron volt"
 203837,WORD_NOUN,,KATAKANA_HIRAGANA,,,ゲーム化,ゲームか,,geemu ka,"tworzenie gry komputerowej na podstawie filmu, komiksu i etc
 gamifikacja",,,,"GroupId: 2753600
@@ -14796,7 +14796,7 @@ Translate: defamation"
 203840,WORD_NOUN,,HIRAGANA,,,試,し,,shi,"testowanie
 eksperyment
 test
-egzamin",,,,"GroupId: 2842984
+egzamin",,,DUPLICATE 10785,"GroupId: 2842984
 Translate: testing
 Translate: experiment
 Translate: test
@@ -14808,7 +14808,7 @@ kapitał
 materiał
 podstawa
 baza
-???",,,,"GroupId: 2842985
+???",,,DUPLICATE 10785,"GroupId: 2842985
 Translate: funds
 Translate: capital
 Translate: material
@@ -14818,7 +14818,9 @@ Translate: qualities
 Translate: disposition"
 203842,WORD_NOUN,,HIRAGANA,,,歯,し,,shi,"ząb
 wiek
-rok",,,,"GroupId: 2842986
+rok",,,"DUPLICATE 206
+DUPLICATE 10785
+DUPLICATE 29221","GroupId: 2842986
 Translate: tooth
 Translate: age
 Translate: years"
@@ -14858,7 +14860,7 @@ Translate: job hunting
 Translate: job search"
 203851,WORD_NOUN,,KATAKANA,,,-,ジョブカフェ,,jobu kafe,centrum wsparcia dla młodzieży poszukującej pracy,"zazwyczaj utworzone przez agencję publiczną, ang: job café",,,"GroupId: 2838510
 Translate: support center for job-hunting youth (usu. established by a public agency)"
-203852,WORD_NOUN,,HIRAGANA,,,練絹,ねりぎぬ,,neriginu,błyszcząca jedwabna tkanina,,,,"GroupId: 1781490
+203852,WORD_NOUN,,HIRAGANA,,,練絹,ねりぎぬ,,neri ginu,błyszcząca jedwabna tkanina,,,,"GroupId: 1781490
 Translate: glossy silk cloth
 Translate: degummed silk cloth"
 203853,"WORD_NOUN
@@ -14917,3 +14919,26 @@ Translate: Osaka Conference
 Translate: meeting held by the leaders of the Meiji Restoration in Osaka to discuss the formation of a representative assembly (January-February, 1875)"
 203868,WORD_NOUN,,HIRAGANA_KATAKANA,,,報告対象メッセージ,ほうこくたいしょうメッセージ,,houkoku taishou messeeji,tematyczna wiadomość,,,,"GroupId: 2389080
 Translate: subject message"
+203869,WORD_NOUN,,HIRAGANA,,,長３度,ちょうさんど,,chousando,tercja wielka,muzyka,,,"GroupId: 2589620
+Translate: major third"
+203870,WORD_NOUN,,KATAKANA,,,-,アクアチント,,akuachinto,akwatinta,ang: aquatint,,,"GroupId: 2155770
+Translate: aquatint"
+203871,WORD_NOUN,,KATAKANA,,,ＧｅＶ,ゲブ,,gebu,giga elektron wolt,ang: giga electron volt,,DUPLICATE 203836,"GroupId: 2841433
+Translate: giga electron volt"
+203872,WORD_NOUN,,HIRAGANA,,,細註,さいちゅう,,saichuu,"szczegółowa adnotacja
+pełna adnotacja
+???",,,,"GroupId: 2842724
+Translate: detailed annotation
+Translate: full annotation
+Translate: annotation in small type"
+203873,WORD_NOUN,,KATAKANA,,,-,ジョブ・カフェ,,jobu kafe,centrum wsparcia dla młodzieży poszukującej pracy,"zazwyczaj utworzone przez agencję publiczną, ang: job café",,,"GroupId: 2838510
+Translate: support center for job-hunting youth (usu. established by a public agency)"
+203874,WORD_NOUN,,HIRAGANA_EXCEPTION,,,練り絹,ねりぎぬ,,neri ginu,błyszcząca jedwabna tkanina,,,,"GroupId: 1781490
+Translate: glossy silk cloth
+Translate: degummed silk cloth"
+203875,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,蝋纈染め,ろうけつぞめ,,rouketsu zome,batik,tkanina,,,"GroupId: 1013280
+Translate: batik (cloth)"
+203876,WORD_NOUN,,KATAKANA,,,-,コミチバシリ,,komichi bashiri,kukawka meksykańska,"gatunek nielotnego ptaka z rodziny kukułkowatych, występujący w Ameryce Środkowej, Geococcyx velox",,,"GroupId: 2699580
+Translate: lesser roadrunner (Geococcyx velox)
+MiscInfo: uk"
