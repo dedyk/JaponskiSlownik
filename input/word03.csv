@@ -15715,7 +15715,7 @@ Translate: destruction by fire
 MiscInfo: lit"
 204044,WORD_NOUN,,HIRAGANA,,,刺身包丁,さしみぼうちょう,,sashimi bouchou,nóż do sashimi,,,,"GroupId: 1306590
 Translate: sashimi knife"
-204045,WORD_NOUN,,HIRAGANA,,,晒木綿,さらしもめん,,sarashimomen,wybielona bawełniana tkanina,,,,"GroupId: 1299730
+204045,WORD_NOUN,,HIRAGANA,,,晒木綿,さらしもめん,,sarashi momen,wybielona bawełniana tkanina,,,,"GroupId: 1299730
 Translate: bleached cotton cloth"
 204046,WORD_NOUN,,KATAKANA_HIRAGANA,,,ガラクトース血症,ガラクトースけっしょう,,garakutoosu kesshou,galaktozemia,choroba genetyczna,,,"GroupId: 2460180
 Translate: galactosemia"
@@ -15740,7 +15740,7 @@ Translate: fault threshold"
 kategoryzacja",,,,"GroupId: 2710250
 Translate: grading
 Translate: classification"
-204052,WORD_NOUN,,HIRAGANA,,,金繕い,きんつくろい,,kintsukuroi,"naprawa ceramiki lakierem zmieszanym ze złotem, srebrem itp.",,,,"GroupId: 2815420
+204052,WORD_NOUN,,HIRAGANA,,,金繕い,きんつくろい,,kintsukuroi,"naprawa ceramiki lakierem zmieszanym ze złotem, srebrem itp.",,,DUPLICATE 204134,"GroupId: 2815420
 Translate: repairing pottery with a lacquer mixed with gold, silver, etc."
 204053,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,複雑多様,ふくざつたよう,,fukuzatsu tayou,złożony i różnorodny,,,,"GroupId: 2032460
@@ -15792,7 +15792,7 @@ Translate: hookah"
 204067,WORD_NOUN,,KATAKANA,,,-,シーム,,shiimu,szew,ang: seam,,,"GroupId: 2838712
 Translate: seam"
 204068,WORD_NOUN,,KATAKANA,,,ＪＩＴ,ジェイアイティー,,jeiaitii,"Just-in-time
-JIT",metoda zarządzania stosowana w celu redukcji pracy w toku i poziomu zapasów w całym procesie produkcyjno-magazynowym i związanych z tym kosztów,,,"GroupId: 2836674
+JIT",metoda zarządzania stosowana w celu redukcji pracy w toku i poziomu zapasów w całym procesie produkcyjno-magazynowym i związanych z tym kosztów,,DUPLICATE 204136,"GroupId: 2836674
 Translate: just-in-time (inventory strategy)
 Translate: JIT"
 204069,"WORD_NOUN
@@ -15817,7 +15817,7 @@ MiscInfo: sl
 Translate: prepubescent boy
 MiscInfo: sl"
 204071,WORD_NOUN,,HIRAGANA,,,諸他,しょた,,shota,"wiele innych
-różne inne rzeczy",,,,"GroupId: 2842647
+różne inne rzeczy",,,DUPLICATE 204137,"GroupId: 2842647
 Translate: many others
 Translate: various other things"
 204072,WORD_NOUN,,HIRAGANA,,,書舗,しょほ,,shoho,księgarnia,mało znane słowo,,,"GroupId: 2843038
@@ -15827,7 +15827,8 @@ Translate: bookshop
 MiscInfo: obsc"
 204073,WORD_NOUN,,HIRAGANA,,,施与,せよ,,seyo,"jałmużna
 jałmużnictwo
-rozdzielenie",,,,"GroupId: 2843084
+rozdzielenie",,,"DUPLICATE 119826
+DUPLICATE 204139","GroupId: 2843084
 Translate: charity
 Translate: almsgiving
 Translate: dispensation"
@@ -15888,7 +15889,7 @@ Translate: sound collection"
 Translate: fecal occult blood
 Translate: faecal occult blood
 Translate: FOB"
-204094,WORD_NOUN,,HIRAGANA,,,支え棒,ささえぼう,,sasae bou,???,,,,"GroupId: 2829164
+204094,WORD_NOUN,,HIRAGANA,,,支え棒,ささえぼう,,sasae bou,???,,,DUPLICATE 204142,"GroupId: 2829164
 Translate: stay bar
 Translate: bearer bar"
 204095,WORD_NOUN,,HIRAGANA,,,末梢神経系,まっしょうしんけいけい,,masshou shinkeikei,obwodowy układ nerwowy,,,,"GroupId: 2514520
@@ -15909,7 +15910,7 @@ Translate: to take the path of least resistance"
 204098,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,出鼻を折る,でばなをおる,,debana o oru,"zepsuć czyjś początek
 zabić czyjś entuzjazm
-zdjąć wiatr z czyiś żagli",mało znane słowo,,,"GroupId: 2836510
+zabrać wiatr z czyiś żagli",mało znane słowo,,DUPLICATE 204147,"GroupId: 2836510
 Translate: to spoil someone's start
 MiscInfo: obsc
 Translate: to kill someone's enthusiasm
@@ -15917,7 +15918,7 @@ MiscInfo: obsc
 Translate: to take the wind out of someone's sails
 MiscInfo: obsc"
 204099,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,出してくれる,だしてくれる,,dashi tekureru,"wynosić (np. śmieci)
+WORD_EXPRESSION",,HIRAGANA,,,出してくれる,だしてくれる,,dashite kureru,"wynosić (np. śmieci)
 serwować (np. posiłek)
 wyciągnąć (np. jedzenie z szafki)
 przedstawiać (np. pomysły, opinię)
@@ -15947,7 +15948,7 @@ MiscInfo: uk"
 Translate: parabolic reflector"
 204102,WORD_NOUN,,KATAKANA,,,-,バルコン,,barukon,balkon,słowo pochodzenia francuskiego,,,"GroupId: 2742810
 Translate: balcony"
-204103,WORD_EXPRESSION,,HIRAGANA,,,呆,ほう,,hou,jestem zszokowany,slang internetowy,,,"GroupId: 2842591
+204103,WORD_EXPRESSION,,HIRAGANA,,,呆,ほう,,hou,jestem zszokowany,slang internetowy,,DUPLICATE 82153,"GroupId: 2842591
 Translate: (I'm) shocked
 MiscInfo: net-sl"
 204104,WORD_NOUN,,HIRAGANA,,,持,じ,,ji,remis,"np. w go, konkursie poetyckim i etc",,,"GroupId: 2842989
@@ -15957,7 +15958,8 @@ Translate: tie"
 niegodziwość
 bezecność
 zło
-nikczemna osoba",,,,"GroupId: 2842999
+nikczemna osoba",,,"DUPLICATE 4301
+DUPLICATE 36839","GroupId: 2842999
 Translate: wickedness
 Translate: evil
 Translate: wicked person"
@@ -15968,7 +15970,7 @@ długotrwałość
 długie życie
 gratulacje
 uroczystość
-gratulacyjny prezent",,,,"GroupId: 2843030
+gratulacyjny prezent",,,DUPLICATE 3895,"GroupId: 2843030
 Translate: age
 Translate: years
 Translate: longevity
@@ -15997,19 +15999,21 @@ Translate: eruption
 Translate: ...id"
 204111,WORD_NOUN,,HIRAGANA,,,騅,すい,,sui,"koń jabłkowity
 koń srokaty
-Zhui (ulubiony koń Xiang Yu)",,,,"GroupId: 2843247
+Zhui (ulubiony koń Xiang Yu)",,,DUPLICATE 79660,"GroupId: 2843247
 Translate: dapple-grey horse (gray)
 Translate: piebald horse
 Translate: Zhui (favorite horse of Xiang Yu)"
-204112,WORD_NOUN,,HIRAGANA,,,膵,すい,,sui,trzustka,"skrót, mało znane słowo",,,"GroupId: 2843265
+204112,WORD_NOUN,,HIRAGANA,,,膵,すい,,sui,trzustka,"skrót, mało znane słowo",,DUPLICATE 79660,"GroupId: 2843265
 Translate: pancreas
 MiscInfo: abbr
 MiscInfo: obsc"
 204113,WORD_COUNTER,,HIRAGANA,,,石,せき,,seki,"klasyfikator na klejnoty w zagarku
-klasyfikator na tranzystory, dioty i etc w produkcie elektronicznym",,,,"GroupId: 2843288
+klasyfikator na tranzystory, dioty i etc w produkcie elektronicznym",,,"DUPLICATE 12749
+DUPLICATE 23933","GroupId: 2843288
 Translate: counter for jewels in a watch
 Translate: counter for transistors, diodes, etc. in an electronic product"
-204114,WORD_NOUN,,HIRAGANA,,,銭,ぜぜ,,zeze,pieniądze,język dzieci,,,"GroupId: 2843310
+204114,WORD_NOUN,,HIRAGANA,,,銭,ぜぜ,,zeze,pieniądze,język dzieci,,"DUPLICATE 6435
+DUPLICATE 6436","GroupId: 2843310
 Translate: money
 MiscInfo: chn"
 204115,WORD_NOUN,,HIRAGANA,,,疝,せん,,sen,"kolka
@@ -16026,13 +16030,14 @@ MiscInfo: obsc"
 Translate: Siam (former name of Thailand)
 MiscInfo: abbr"
 204118,WORD_NOUN,,HIRAGANA,,,氈,かも,,kamo,"dywan
-dywanik",szczególnie filcowy,,,"GroupId: 2843341
+dywanik",szczególnie filcowy,,"DUPLICATE 83507
+DUPLICATE 204151","GroupId: 2843341
 Translate: carpet
 Translate: rug (esp. felt)"
 204119,WORD_NOUN,,HIRAGANA,,,磚,せん,,sen,cegła,"używana w budynkach w chińskim stylu, mało znane słowo",,,"GroupId: 2843345
 Translate: brick (used in Chinese-style buildings)
 MiscInfo: obsc"
-204120,WORD_NOUN,,HIRAGANA,,,惣,そう,,sou,wiejski samorząd,historyczne określenie,,,"GroupId: 2843362
+204120,WORD_NOUN,,HIRAGANA,,,惣,そう,,sou,wiejski samorząd,historyczne określenie,,DUPLICATE 11042,"GroupId: 2843362
 Translate: rural local self-government (Muromachi period)
 MiscInfo: hist"
 204121,WORD_NOUN,,HIRAGANA,,,祚,そ,,so,"godność cesarza
@@ -16041,10 +16046,10 @@ Translate: rank of the emperor
 MiscInfo: arch
 Translate: imperial throne
 MiscInfo: arch"
-204122,WORD_NOUN,,HIRAGANA,,,奏,そう,,sou,raport do cesarza,,,,"GroupId: 2843386
+204122,WORD_NOUN,,HIRAGANA,,,奏,そう,,sou,raport do cesarza,,,DUPLICATE 11042,"GroupId: 2843386
 Translate: report to the emperor"
 204123,WORD_NOUN,,HIRAGANA,,,叟,そう,,sou,"starzec
-sędziwy pan",archaizm,,,"GroupId: 2843387
+sędziwy pan",archaizm,,DUPLICATE 11042,"GroupId: 2843387
 Translate: old man
 MiscInfo: arch
 Translate: venerable gentleman
@@ -16053,7 +16058,7 @@ MiscInfo: arch"
 członkowie (grupy)
 zbiór (osób)
 klan
-rodzina",przestarzałe słowo,,,"GroupId: 2843388
+rodzina",przestarzałe słowo,,DUPLICATE 11042,"GroupId: 2843388
 Translate: palace room for government officials
 MiscInfo: obs
 Translate: fellow
@@ -16065,11 +16070,11 @@ MiscInfo: obs
 Translate: family
 MiscInfo: obs"
 204125,"WORD_NOUN
-WORD_NOUN_SUFFIX",,HIRAGANA,,,葬,そう,,sou,pogrzeb,,,,"GroupId: 2843390
+WORD_NOUN_SUFFIX",,HIRAGANA,,,葬,そう,,sou,pogrzeb,,,DUPLICATE 11042,"GroupId: 2843390
 Translate: funeral"
 204126,WORD_NOUN,,HIRAGANA,,,躁,そう,,sou,"obłęd
 mania
-bzik",skrót,,,"GroupId: 2843391
+bzik",skrót,,DUPLICATE 11042,"GroupId: 2843391
 Translate: mania
 MiscInfo: abbr"
 204127,WORD_NOUN,,HIRAGANA,,,孫,そん,,son,"potomek (zwykle określonego pokolenia, mało znane słowo)
@@ -16078,7 +16083,7 @@ ród (archaizm)
 rodowód (archaizm)
 wnuk (archaizm)
 wnuczek (archaizm)
-wnuczka (archaizm)",,,,"GroupId: 2843407
+wnuczka (archaizm)",,,DUPLICATE 6873,"GroupId: 2843407
 Translate: descendant (usu. of a certain generation)
 MiscInfo: obsc
 Translate: lineage
@@ -16090,7 +16095,7 @@ MiscInfo: arch"
 204128,WORD_COUNTER,,HIRAGANA,,,朶,だ,,da,"gałąź (kwiatów)
 skupisko
 gromada
-masa (chmur)",mało znane słowo,,,"GroupId: 2843408
+masa (chmur)",mało znane słowo,,DUPLICATE 23750,"GroupId: 2843408
 Translate: branch (of flowers)
 MiscInfo: obsc
 Translate: cluster
@@ -16101,7 +16106,7 @@ MiscInfo: obsc"
 łaska
 przychylność
 korzyść
-pożytek",mało znane słowo,,,"GroupId: 2843433
+pożytek",mało znane słowo,,DUPLICATE 4503,"GroupId: 2843433
 Translate: blessing
 MiscInfo: obsc
 Translate: grace
@@ -16118,3 +16123,130 @@ w rzeczywistości","skrót, slang",,,"GroupId: 2837541
 Translate: for real
 MiscInfo: abbr
 MiscInfo: sl"
+204131,WORD_NOUN,,HIRAGANA,,,刺身庖丁,さしみぼうちょう,,sashimi bouchou,nóż do sashimi,,,,"GroupId: 1306590
+Translate: sashimi knife"
+204132,WORD_NOUN,,HIRAGANA,,,刺し身包丁,さしみぼうちょう,,sashimi bouchou,nóż do sashimi,,,,"GroupId: 1306590
+Translate: sashimi knife"
+204133,WORD_NOUN,,HIRAGANA,,,晒し木綿,さらしもめん,,sarashi momen,wybielona bawełniana tkanina,,,,"GroupId: 1299730
+Translate: bleached cotton cloth"
+204134,WORD_NOUN,,HIRAGANA,,,金繕い,きんづくろい,,kindukuroi,"naprawa ceramiki lakierem zmieszanym ze złotem, srebrem itp.",,,DUPLICATE 204052,"GroupId: 2815420
+Translate: repairing pottery with a lacquer mixed with gold, silver, etc."
+204135,WORD_NOUN,,HIRAGANA,,,牛飼座,うしかいざ,,ushikai za,Gwiazdozbiór Wolarza,"jeden z wyraźnych gwiazdozbiorów nieba północnego, 13. co do wielkości, znany już w starożytności",,,"GroupId: 2563190
+Translate: Boötes (constellation)
+Translate: the Herdsman"
+204136,WORD_NOUN,,KATAKANA,,,ＪＩＴ,ジェーアイティー,,jeeaitii,"Just-in-time
+JIT",metoda zarządzania stosowana w celu redukcji pracy w toku i poziomu zapasów w całym procesie produkcyjno-magazynowym i związanych z tym kosztów,,DUPLICATE 204068,"GroupId: 2836674
+Translate: just-in-time (inventory strategy)
+Translate: JIT"
+204137,WORD_NOUN,,HIRAGANA,,,-,しょた,,shota,"seksualne zainteresowanie młodymi chłopcami
+przedpokwitaniowy chłopiec",slang,,DUPLICATE 204071,"GroupId: 2842644
+Translate: sexual interest in young boys
+MiscInfo: abbr
+MiscInfo: sl
+Translate: boy love
+MiscInfo: abbr
+MiscInfo: sl
+Translate: prepubescent boy
+MiscInfo: sl"
+204138,WORD_NOUN,,HIRAGANA,,,書鋪,しょほ,,shoho,księgarnia,mało znane słowo,,,"GroupId: 2843038
+Translate: bookstore
+MiscInfo: obsc
+Translate: bookshop
+MiscInfo: obsc"
+204139,WORD_NOUN,,HIRAGANA,,,施与,しよ,,shiyo,"jałmużna
+jałmużnictwo
+rozdzielenie",,,DUPLICATE 204073,"GroupId: 2843084
+Translate: charity
+Translate: almsgiving
+Translate: dispensation"
+204140,WORD_VERB_U,,HIRAGANA,,,言い落す,いいおとす,,ii otosu,"zapomnieć powiedzieć
+zapomnieć wspomnieć
+pozostawić niepowiedziane",,,,"GroupId: 1848430
+Translate: to omit to say
+Translate: to forget to mention
+Translate: to leave unsaid"
+204141,WORD_VERB_U,,HIRAGANA,,,言落す,いいおとす,,ii otosu,"zapomnieć powiedzieć
+zapomnieć wspomnieć
+pozostawić niepowiedziane",,,,"GroupId: 1848430
+Translate: to omit to say
+Translate: to forget to mention
+Translate: to leave unsaid"
+204142,WORD_NOUN,,HIRAGANA,,,支え棒,つかえぼう,,tsukae bou,???,,,DUPLICATE 204094,"GroupId: 2829164
+Translate: stay bar
+Translate: bearer bar"
+204143,WORD_NOUN,,HIRAGANA,,,ささえ棒,ささえぼう,,sasae bou,???,,,,"GroupId: 2829164
+Translate: stay bar
+Translate: bearer bar"
+204144,WORD_NOUN,,HIRAGANA,,,つかえ棒,つかえぼう,,tsukae bou,???,,,,"GroupId: 2829164
+Translate: stay bar
+Translate: bearer bar"
+204145,WORD_VERB_U,,HIRAGANA,,,掴み出す,つかみだす,,tsukami dasu,"wyciągnąć
+brać garść z
+łapać i rzucać
+wyrzucić kogoś (np. z domu, pokoju i etc)",,,,"GroupId: 1433640
+Translate: to take out
+Translate: to take a handful of
+Translate: to grab and throw
+Translate: to turn someone out (of house, room, etc.)"
+204146,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,易きに付く,やすきにつく,,yasuki ni tsuku,"brać łatwe wyjście
+wybierać ścieżkę najmniejszego oporu",,,,"GroupId: 2793650
+Translate: to take the easy way out
+Translate: to take the path of least resistance"
+204147,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,出鼻を折る,ではなをおる,,dehana o oru,"zepsuć czyjś początek
+zabić czyjś entuzjazm
+zabrać wiatr z czyiś żagli",mało znane słowo,,DUPLICATE 204098,"GroupId: 2836510
+Translate: to spoil someone's start
+MiscInfo: obsc
+Translate: to kill someone's enthusiasm
+MiscInfo: obsc
+Translate: to take the wind out of someone's sails
+MiscInfo: obsc"
+204148,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,出端を折る,でばなをおる,,debana o oru,"zepsuć czyjś początek
+zabić czyjś entuzjazm
+zabrać wiatr z czyiś żagli",mało znane słowo,,DUPLICATE 204149,"GroupId: 2836510
+Translate: to spoil someone's start
+MiscInfo: obsc
+Translate: to kill someone's enthusiasm
+MiscInfo: obsc
+Translate: to take the wind out of someone's sails
+MiscInfo: obsc"
+204149,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,出端を折る,ではなをおる,,dehana o oru,"zepsuć czyjś początek
+zabić czyjś entuzjazm
+zabrać wiatr z czyiś żagli",mało znane słowo,,DUPLICATE 204148,"GroupId: 2836510
+Translate: to spoil someone's start
+MiscInfo: obsc
+Translate: to kill someone's enthusiasm
+MiscInfo: obsc
+Translate: to take the wind out of someone's sails
+MiscInfo: obsc"
+204150,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,出して呉れる,だしてくれる,,dashite kureru,"wynosić (np. śmieci)
+serwować (np. posiłek)
+wyciągnąć (np. jedzenie z szafki)
+przedstawiać (np. pomysły, opinię)
+dbać o
+płacić za
+zapłacić rachunek
+uregulować rachunek",,,,"GroupId: 2216000
+Translate: to take out (e.g. garbage)
+Translate: to put out (e.g. dishes on table)
+Translate: to serve (e.g. meal)
+Translate: to get out (e.g. food from cupboard)
+Translate: to submit (e.g. ideas, opinions)
+Translate: to provide for
+Translate: to pay for
+Translate: to foot the bill"
+204151,WORD_NOUN,,HIRAGANA,,,氈,せん,,sen,"dywan
+dywanik",szczególnie filcowy,,DUPLICATE 204118,"GroupId: 2843341
+Translate: carpet
+Translate: rug (esp. felt)"
+204152,WORD_NOUN,,HIRAGANA,,,塼,せん,,sen,cegła,"używana w budynkach w chińskim stylu, mało znane słowo",,,"GroupId: 2843345
+Translate: brick (used in Chinese-style buildings)
+MiscInfo: obsc"
+204153,WORD_NOUN,,HIRAGANA,,,甎,せん,,sen,cegła,"używana w budynkach w chińskim stylu, mało znane słowo",,,"GroupId: 2843345
+Translate: brick (used in Chinese-style buildings)
+MiscInfo: obsc"
