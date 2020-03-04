@@ -16252,7 +16252,7 @@ Translate: brick (used in Chinese-style buildings)
 MiscInfo: obsc"
 204154,WORD_NOUN,,KATAKANA,,,-,パリソン,,parison,szklana bańka,ang: parison,,,"GroupId: 2136590
 Translate: parison (first small bubble at the end of a blowpipe)"
-204155,WORD_NOUN,,KATAKANA,,,-,オビイソハゼ,,obiisohaze,Eviota latifasciata,gatunek ryby,,,"GroupId: 2548830
+204155,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オビイソハゼ,,obiisohaze,Eviota latifasciata,gatunek ryby,,,"GroupId: 2548830
 Translate: broad-banded pygmy goby (Eviota latifasciata)"
 204156,WORD_NOUN,,HIRAGANA,,,障害者職業能力開発校,しょうがいしゃしょくぎょうのうりょくかいはつこう,,shougaisha shokugyou nouryoku kaihatsukou,szkoła rozwoju umiejętności biznesowych dla osób niepełnosprawnych,,,,"GroupId: 2524720
 Translate: business skill development school for handicapped people"
@@ -16301,7 +16301,7 @@ Translate: direct relation"
 204168,WORD_NOUN,,HIRAGANA,,,獣弓類,じゅうきゅうるい,,juukyuurui,"terapsydy
 gady ssakokształtne","rząd synapsydów, który pojawił się we wczesnym permie i stał się dominującą grupą kręgowców lądowych w połowie tego okresu",,,"GroupId: 2441450
 Translate: therapsids"
-204169,WORD_EXPRESSION,,HIRAGANA,,,-,ざまぁ,,zama,dobrze Ci tak!,"slang, skrót",,,"GroupId: 2744850
+204169,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,-,ざまぁ,,zama,dobrze Ci tak!,"slang, skrót",,,"GroupId: 2744850
 Translate: serves you right!
 MiscInfo: sl
 MiscInfo: abbr"
@@ -16468,7 +16468,7 @@ MiscInfo: obsc"
 204210,WORD_NOUN,,HIRAGANA,,,親雪,しんせつ,,shinsetsu,"cieszenie się śniegiem
 czerpanie przyjemności ze śniegu",,,,"GroupId: 2842862
 Translate: enjoying the snow"
-204211,WORD_NOUN,,HIRAGANA,,,榛莽,しんぼう,,shinbou,bujna roślinność,archaizm,,,"GroupId: 2843048
+204211,WORD_NOUN,,HIRAGANA,,,榛莽,しんぼう,,shinbou,bujna roślinność,archaizm,,DUPLICATE 204229,"GroupId: 2843048
 Translate: luxuriant vegetation
 MiscInfo: arch"
 204212,WORD_NOUN,,HIRAGANA,,,心友,しんゆう,,shin'yuu,"bliski przyjaciel
@@ -16510,3 +16510,86 @@ Translate: sexual dream
 MiscInfo: obsc
 Translate: wet dream
 MiscInfo: obsc"
+204219,WORD_NOUN,,KATAKANA_HIRAGANA,,,コーサ語,コーサご,,koosa go,język xhosa,"jeden z ważniejszych języków z rodziny bantu. Posługuje się nim południowoafrykański lud Xhosa, liczbę użytkowników szacuje się na około 5,6 miliona",,,"GroupId: 2769860
+Translate: Xhosa (language)"
+204220,WORD_NOUN,,KATAKANA_HIRAGANA,,,ホサ語,ホサご,,hosa go,język xhosa,"jeden z ważniejszych języków z rodziny bantu. Posługuje się nim południowoafrykański lud Xhosa, liczbę użytkowników szacuje się na około 5,6 miliona",,,"GroupId: 2769860
+Translate: Xhosa (language)"
+204221,WORD_NOUN,,KATAKANA,,,-,ディステンパー,,disutenpaa,"nosówka psia
+zołzy (u koni)",ang: distemper,,,"GroupId: 1064660
+Translate: distemper"
+204222,WORD_NOUN,,KATAKANA,,,-,ジリ,,jiri,Dili,"stolica Timoru Wschodniego, położona na północnym wybrzeżu wyspy Timor, w archipelagu Małych Wysp Sundajskich, nad cieśniną Ombai",,,"GroupId: 2839699
+Translate: Díli (East Timor)"
+204223,WORD_NOUN,,HIRAGANA,,,嗜慾,しよく,,shiyoku,"upodobanie do
+żądza
+słabość
+sentyment
+zamiłowanie
+zaspokojenie
+oddanie się (namiętności)",,,,"GroupId: 2843127
+Translate: liking (for)
+Translate: appetite
+Translate: weakness
+Translate: fondness
+Translate: indulgence"
+204224,WORD_NOUN,,HIRAGANA,,,耆欲,しよく,,shiyoku,"upodobanie do
+żądza
+słabość
+sentyment
+zamiłowanie
+zaspokojenie
+oddanie się (namiętności)",,,,"GroupId: 2843127
+Translate: liking (for)
+Translate: appetite
+Translate: weakness
+Translate: fondness
+Translate: indulgence"
+204225,WORD_NOUN,,HIRAGANA,,,思慾,しよく,,shiyoku,"nadzieja
+pragnienie
+potrzeba",mało znane słowo,,,"GroupId: 2843128
+Translate: hope
+MiscInfo: obsc
+Translate: desire
+MiscInfo: obsc
+Translate: want
+MiscInfo: obsc"
+204226,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,距離をとる,きょりをとる,,kyori o toru,"zdystansować się (od)
+trzymać (coś lub kogoś) na odległość
+zachować odległość (od)",,,,"GroupId: 2840822
+Translate: to distance oneself (from)
+Translate: to keep (something or someone) at a distance
+Translate: to maintain a distance (from)"
+204227,WORD_VERB_U,,KATAKANA_HIRAGANA,,,ヤリ捲る,ヤリまくる,,yari makuru,"robić to w kółko
+uprawiać seks wielokrotnie (szczególnie ヤリまくる)",,,,"GroupId: 2842316
+Translate: to do over and over again
+MiscInfo: uk
+Translate: to have sex repeatedly
+MiscInfo: uk
+AdditionalInfo: esp. ヤリまくる"
+204228,WORD_NOUN,,HIRAGANA,,,人権蹂躙,じんけんじゅうりん,,jinken juurin,"naruszenie praw człowieka
+deptanie praw człowieka",,,,"GroupId: 1367240
+Translate: human rights violation
+MiscInfo: yoji
+Translate: trampling on human rights
+MiscInfo: yoji"
+204229,WORD_NOUN,,HIRAGANA,,,榛莽,しんもう,,shinmou,bujna roślinność,archaizm,,DUPLICATE 204211,"GroupId: 2843048
+Translate: luxuriant vegetation
+MiscInfo: arch"
+204230,WORD_VERB_RU,,HIRAGANA,,,好き過ぎる,すきすぎる,,suki sugiru,"lubić za mocno
+lubić nadmiernie
+uwielbiać",,,,"GroupId: 2832037
+Translate: to like too much
+Translate: to like to excess
+Translate: to adore"
+204231,WORD_NOUN,,HIRAGANA,,,菫科,すみれか,,sumire ka,fiołkowate,"rodzina roślin, Violaceae",,,"GroupId: 2264590
+Translate: Violaceae
+Translate: violet family of plants"
+204232,WORD_NOUN,,HIRAGANA,,,正置,せいち,,seichi,"ustawienie
+ułożenie
+wyrównanie
+regulacja
+nastawienie",,,,"GroupId: 2843077
+Translate: arrangement
+Translate: leveling up
+Translate: alignment
+Translate: adjustment"
