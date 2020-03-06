@@ -2,18 +2,13 @@ package pl.idedyk.japanese.dictionary.test;
 
 import java.io.File;
 import java.util.List;
-import java.util.TreeMap;
 
 import org.json.JSONArray;
-import org.json.JSONObject;
 
-import pl.idedyk.japanese.dictionary.common.Helper;
-import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 import pl.idedyk.japanese.dictionary.tools.JSONReaderWriter;
 
@@ -44,7 +39,7 @@ public class Test5 {
 		System.out.println();
 		*/
 		
-		// JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
+		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
 				
 		/*
 		List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList("水瓜", "すいか");
@@ -181,7 +176,7 @@ public class Test5 {
 		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries);
 		*/
 		
-		JSONArray jsonArray = JSONReaderWriter.createDictionaryOutputJSON(polishJapaneseEntries);
+		JSONArray jsonArray = JSONReaderWriter.createDictionaryOutputJSON(jmeNewDictionary, polishJapaneseEntries);
 				
 		JSONReaderWriter.writeJSONArrayToFile(new File("/tmp/a/test.json"), jsonArray);
 	}

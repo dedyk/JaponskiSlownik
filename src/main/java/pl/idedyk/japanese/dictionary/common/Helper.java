@@ -1587,6 +1587,10 @@ public class Helper {
 	}
 	
 	public static String convertListToString(List<?> list) {
+		return convertListToString(list, "\n");
+	}
+	
+	public static String convertListToString(List<?> list, String separator) {
 		StringBuffer sb = new StringBuffer();
 
 		if (list == null) {
@@ -1597,7 +1601,7 @@ public class Helper {
 			sb.append(list.get(idx));
 
 			if (idx != list.size() - 1) {
-				sb.append("\n");
+				sb.append(separator);
 			}
 		}
 

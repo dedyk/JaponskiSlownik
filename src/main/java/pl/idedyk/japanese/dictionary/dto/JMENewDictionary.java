@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary.dto;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -127,6 +128,42 @@ public class JMENewDictionary {
 		
 		return groupEntryCache.get(groupEntryKey);
 	}
+	
+	public List<GroupEntry> getGroupEntryList(PolishJapaneseEntry polishJapaneseEntry) {
+		
+		// najpierw pobieramy liste na podstawie kanji i kana
+		List<GroupEntry> groupEntryList = getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
+		
+		// pobieramy surowe dane (jesli sa wpisane)
+		List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
+		
+		// szukamy konkretnej grupy dla danego slowa
+		List<GroupEntry> groupEntryListForPolishJapaneseEntry = null;
+		
+		if (groupEntryList == null) {
+			return groupEntryList;
+		}
+		
+		// szukamy grupy na podstawie id zawartego w jmedict raw data (rozwiazuje to problem multigroup)
+		for (GroupEntry currentGroupEntry : groupEntryList) {
+			
+			String groupIdString = currentGroupEntry.getGroup().getGroupIdString();
+			
+			// czy ta sama grupa
+			if (jmedictRawDataList.contains(groupIdString) == true) {
+				groupEntryListForPolishJapaneseEntry = Arrays.asList(currentGroupEntry);
+				
+				break;								
+			}
+		}
+		
+		// jezeli nie udalo sie znalezc grupy, zwracamy, co wczesniej znaleslismy (moga byc multigroup)
+		if (groupEntryListForPolishJapaneseEntry == null) {								
+			groupEntryListForPolishJapaneseEntry = groupEntryList;
+		}
+
+		return groupEntryListForPolishJapaneseEntry;
+	}	
 
 	public List<GroupEntry> getGroupEntryListInOnlyKanji(String kanji) {
 		

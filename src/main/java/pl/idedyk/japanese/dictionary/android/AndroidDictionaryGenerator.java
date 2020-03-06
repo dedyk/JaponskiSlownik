@@ -176,7 +176,7 @@ public class AndroidDictionaryGenerator {
 
 		CsvReaderWriter.generateCsv(new String[] { destinationFileName }, result, true, false, true, false, null);
 		
-		JSONArray resultJSONArray = JSONReaderWriter.createDictionaryOutputJSON(polishJapaneseEntries);
+		JSONArray resultJSONArray = JSONReaderWriter.createDictionaryOutputJSON(jmeNewDictionary, polishJapaneseEntries);
 		
 		// zapisanie w formacie JSON
 		JSONReaderWriter.writeJSONArrayToFile(new File(destinationJSONFileName), resultJSONArray);

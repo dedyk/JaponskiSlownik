@@ -2933,7 +2933,7 @@ public class WordGenerator {
 						}
 						
 						// szukanie slow
-						List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
+						List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
 												
 						if (groupEntryList != null && groupEntryList.size() != 0) {
 							
@@ -2950,28 +2950,8 @@ public class WordGenerator {
 							}
 							
 							//
-													
-							List<GroupEntry> groupEntryListForPolishJapaneseEntry = null;
-							
-							// szukamy grupy na podstawie id
-							for (GroupEntry currentGroupEntry : groupEntryList) {
-								
-								String groupIdString = currentGroupEntry.getGroup().getGroupIdString();
-								
-								// czy ta sama grupa
-								if (jmedictRawDataList.contains(groupIdString) == true) {
-									groupEntryListForPolishJapaneseEntry = Arrays.asList(currentGroupEntry);
-									
-									break;								
-								}
-							}
-							
-							// jezeli nie udalo sie znalezc grupy
-							if (groupEntryListForPolishJapaneseEntry == null) {								
-								groupEntryListForPolishJapaneseEntry = groupEntryList;
-							}
-							
-							if (JMENewDictionary.isMultiGroup(groupEntryListForPolishJapaneseEntry) == false || force == true) { // grupa pojedyncza
+														
+							if (JMENewDictionary.isMultiGroup(groupEntryList) == false || force == true) { // grupa pojedyncza
 								
 								/*
 								// porownujemy tlumaczenia
@@ -2989,9 +2969,9 @@ public class WordGenerator {
 								*/
 								
 								// szukamy wszystkich slow w tej samej grupie tlumaczen
-								groupEntryListForPolishJapaneseEntry = groupEntryListForPolishJapaneseEntry.get(0).getGroup().getGroupEntryList(); // podmiana na wszystkie elementy z grupy
+								groupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList(); // podmiana na wszystkie elementy z grupy
 								
-								List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryListForPolishJapaneseEntry);
+								List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
 																
 								//
 								
@@ -3108,7 +3088,7 @@ public class WordGenerator {
 							} else { // multi grupa
 								
 								// dodajemy do manualnego sprawdzenia
-								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, groupEntryListForPolishJapaneseEntry, null));
+								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, groupEntryList, null));
 								
 								wordsCounter++;
 							}
