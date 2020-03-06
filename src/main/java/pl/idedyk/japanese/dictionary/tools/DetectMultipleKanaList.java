@@ -106,10 +106,28 @@ public class DetectMultipleKanaList {
 				
 				if (groupEntryList.size() > 1) { // mamy kandydatow
 					
+					Set<String> uniqueKanjiAndKanaSetInGroupEntry = new TreeSet<>();
+					
+					// sprawdzamy, co siedzi w tych grupach
 					for (GroupEntry groupEntry : groupEntryList) {
 						
-						if (groupIdSetInPolishJapaneseEntriesListSet.contains(groupEntry.getGroup().getId()) == false) { // mamy							
-							System.out.println(groupEntry.getGroup().getId() + " - " + groupEntry.getKanji() + " - " + groupEntry.getKana());			
+						// pobieramy pelna liste z grupy i sprawdzamy, co tam siedzi
+						List<GroupEntry> groupEntryList2 = groupEntry.getGroup().getGroupEntryList();
+						
+						for (GroupEntry groupEntry2 : groupEntryList2) {
+							
+							String key = groupEntry2.getKanji() + "." + groupEntry2.getKana();
+							
+							uniqueKanjiAndKanaSetInGroupEntry.add(key);							
+						}
+					}
+					
+					if (uniqueKanjiAndKanaSetInGroupEntry.size() == 1) {
+						
+						for (GroupEntry groupEntry : groupEntryList) {						
+							if (groupIdSetInPolishJapaneseEntriesListSet.contains(groupEntry.getGroup().getId()) == false) { // mamy							
+								System.out.println(groupEntry.getGroup().getId() + " - " + groupEntry.getKanji() + " - " + groupEntry.getKana());			
+							}
 						}
 					}
 				}
