@@ -16714,11 +16714,11 @@ Translate: besides"
 204261,WORD_NOUN,,HIRAGANA,,,素望,そぼう,,sobou,długo pielęgnowana nadzieja,archaizm,,,"GroupId: 2843057
 Translate: long-cherished hope
 MiscInfo: arch"
-204262,WORD_NOUN,,HIRAGANA,,,他紙,たし,,tashi,inna gazeta,szczególnie innego wydawcy,,,"GroupId: 2842500
+204262,WORD_NOUN,,HIRAGANA,,,他紙,たし,,tashi,inna gazeta,szczególnie innego wydawcy,,DUPLICATE 204289,"GroupId: 2842500
 Translate: different newspaper (esp. by a different publisher)
 Translate: another newspaper"
 204263,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,記憶力が良い,きおくりょくがよい,,kioku ryoku ga yoi,mający dobrą pamięć,,,,"GroupId: 1223200
+WORD_EXPRESSION",,HIRAGANA,,,記憶力が良い,きおくりょくがよい,,kiokuryoku ga yoi,mający dobrą pamięć,,,,"GroupId: 1223200
 Translate: having good memory"
 204264,WORD_NOUN,,HIRAGANA,,,じり高,じりだか,,jiri daka,stopniowy wzrost cen,,,,"GroupId: 1950060
 Translate: gradual rise in prices"
@@ -16821,7 +16821,12 @@ Translate: parasite"
 204288,WORD_NOUN,,HIRAGANA,,,副総裁,ふくそうさい,,fukusousai,wiceprezydent,,,,"GroupId: 2059460
 Translate: vice president"
 204289,WORD_AUX_ADJECTIVE_I,,HIRAGANA,,,-,たし,,tashi,"chcieć ... zrobić coś
-czy mógłbyś ...","po czasowniku w formie bez masu, literackie lub formalne określenie",,,"GroupId: 2842501
+czy mógłbyś ...","po czasowniku w formie bez masu, literackie lub formalne określenie",,"DUPLICATE 76917
+DUPLICATE 132432
+DUPLICATE 132572
+DUPLICATE 132594
+DUPLICATE 184087
+DUPLICATE 204262","GroupId: 2842501
 Translate: want to ... do something
 MiscInfo: lit
 AdditionalInfo: after the -masu stem of a verb
@@ -16863,7 +16868,7 @@ MiscInfo: arch
 Translate: butcher
 MiscInfo: arch"
 204298,WORD_NOUN,,HIRAGANA,,,屠人,とじん,,tojin,"rzeźnik (mało znane znaczenie)
-kuchach (archaizm)",,,,"GroupId: 2843199
+kuchach (archaizm)",,,DUPLICATE 204325,"GroupId: 2843199
 Translate: slaughterer
 MiscInfo: obsc
 Translate: butcher
@@ -16873,7 +16878,7 @@ MiscInfo: arch"
 204299,WORD_NOUN,,HIRAGANA,,,富魚,とみよ,,tomiyo,Pungitius sinensis,gatunek ryby,,,"GroupId: 2242430
 Translate: Amur stickleback (Pungitius sinensis)
 MiscInfo: uk"
-204300,WORD_NOUN,,HIRAGANA,,,同庚,どうこう,,doukou,ten sam wiek,archaizm,,,"GroupId: 2843054
+204300,WORD_NOUN,,HIRAGANA,,,同庚,どうこう,,doukou,ten sam wiek,archaizm,,DUPLICATE 141352,"GroupId: 2843054
 Translate: same age
 MiscInfo: arch"
 204301,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,ない訳にはいかない,ないわけにはいかない,,nai wake ni wa ikanai,"nie można uniknąć (robiąc)
@@ -16911,17 +16916,13 @@ Translate: to jump at the chance
 Translate: to accept an offer
 Translate: to show interest in
 Translate: to accept a proposal"
-204305,"WORD_ADVERB_TO
-WORD_ADVERB",,HIRAGANA,,,-,ばさり,,basari,z łomotem,,,,"GroupId: 1632420
-Translate: with a thud
-MiscInfo: on-mim"
-204306,WORD_NOUN,,HIRAGANA,,,秘図,ひず,,hizu,"cenny rysunek
+204305,WORD_NOUN,,HIRAGANA,,,秘図,ひず,,hizu,"cenny rysunek
 sekretny rysunek
 obsceniczny rysunek",,,,"GroupId: 2842472
 Translate: treasured picture
 Translate: secret picture
 Translate: obscene picture"
-204307,WORD_INTERJECTION,,HIRAGANA,,,-,びっくりした,,bikkuri shita,"o mój boże!
+204306,WORD_INTERJECTION,,HIRAGANA,,,-,びっくりした,,bikkuri shita,"o mój boże!
 masz mnie!
 wow!",wyrażanie zaskoczenia lub przerażenia,,,"GroupId: 2842937
 Translate: oh my god!
@@ -16932,7 +16933,7 @@ Translate: you got me!
 AdditionalInfo: used when surprised or frightened
 Translate: wow!
 AdditionalInfo: used when surprised or frightened"
-204308,WORD_NOUN,,HIRAGANA,,,微恙,びよう,,biyou,"niedomaganie
+204307,WORD_NOUN,,HIRAGANA,,,微恙,びよう,,biyou,"niedomaganie
 niedyspozycja
 drobna choroba",literackie lub formalne określenie,,,"GroupId: 2842821
 Translate: indisposition
@@ -16941,3 +16942,177 @@ Translate: ailment
 MiscInfo: lit
 Translate: slight illness
 MiscInfo: lit"
+204308,WORD_ADJECTIVE_F,,HIRAGANA,,,得も言われぬ,えもいわれぬ,,e mo iwarenu,"nie dający się opisać
+nieopisany
+nie do opisania
+znakomity
+wyborny
+wyśmienity
+niewysłowiony
+niedający się określić
+nieokreślony",,,,"GroupId: 2036540
+Translate: indescribable
+MiscInfo: uk
+Translate: exquisite
+MiscInfo: uk
+Translate: inexpressible
+MiscInfo: uk
+Translate: indefinable
+MiscInfo: uk"
+204309,WORD_NOUN,,KATAKANA,,,-,コパル,,koparu,kopal,"rodzaj żywicy, ang: copal",,,"GroupId: 2481970
+Translate: copal"
+204310,WORD_NOUN,,KATAKANA,,,-,ミヤコタナゴ,,miyako tanago,Tanakia tanago,gatunek ryby,,,"GroupId: 2263590
+Translate: Tokyo bitterling (species of cyprinid fish, Tanakia tanago)
+MiscInfo: uk"
+204311,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,閃々,せんせん,,sensen,"lśniący
+błyszczący
+połyskujący
+migocący
+mieniący się",mało znane słowo,,,"GroupId: 2843099
+Translate: sparkling
+MiscInfo: obsc
+Translate: glistening
+MiscInfo: obsc
+Translate: glittering
+MiscInfo: obsc
+Translate: fluttering
+MiscInfo: obsc
+Translate: flickering
+MiscInfo: obsc"
+204312,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,記憶力がよい,きおくりょくがよい,,kiokuryoku ga yoi,mający dobrą pamięć,,,,"GroupId: 1223200
+Translate: having good memory"
+204313,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジリ高,ジリだか,,jiri daka,stopniowy wzrost cen,,,,"GroupId: 1950060
+Translate: gradual rise in prices"
+204314,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジリ安,ジリやす,,jiri yasu,stopniowy spadek,cen na dziełdzie,,,"GroupId: 1635150
+Translate: gradual decline (of stock prices)"
+204315,WORD_EXPRESSION,,HIRAGANA,,,現金掛値なし,げんきんかけねなし,,genkin kake nenashi,"tylko gotówką, ceny jak obwieszczone",,,,"GroupId: 2590100
+Translate: cash only, prices as advertised"
+204316,WORD_NOUN,,HIRAGANA,,,瓦落落ち,がらおち,,gara ochi,"nagły spadek cen akcji
+krach na giełdzie",,,,"GroupId: 2834401
+Translate: sudden fall in stock prices
+Translate: stock market crash"
+204317,WORD_NOUN,,KATAKANA_HIRAGANA,,,シワ取り,シワとり,,shiwa tori,"redukcja zmarszczek
+rytidoplastyka",,,,"GroupId: 2829199
+Translate: wrinkle reduction
+Translate: rhytidoplasty"
+204318,WORD_NOUN,,HIRAGANA,,,皺取り,しわとり,,shiwa tori,"redukcja zmarszczek
+rytidoplastyka",,,,"GroupId: 2829199
+Translate: wrinkle reduction
+Translate: rhytidoplasty"
+204319,WORD_NOUN,,KATAKANA,,,-,シワトリ,,shiwa tori,"redukcja zmarszczek
+rytidoplastyka",,,,"GroupId: 2829199
+Translate: wrinkle reduction
+Translate: rhytidoplasty"
+204320,"WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,取っ換え引っ換え,とっかえひっかえ,,tokkae hikkae,"jeden po drugim
+kolejno
+na zmianę
+wymiana jeden po drugim",,,,"GroupId: 1326480
+Translate: one after another
+MiscInfo: uk
+Translate: one after the other
+MiscInfo: uk
+Translate: in rotation
+MiscInfo: uk
+Translate: exchanging one after the other
+MiscInfo: uk
+Translate: changing repeatedly
+MiscInfo: uk"
+204321,"WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,取っかえ引っかえ,とっかえひっかえ,,tokkae hikkae,"jeden po drugim
+kolejno
+na zmianę
+wymiana jeden po drugim",,,,"GroupId: 1326480
+Translate: one after another
+MiscInfo: uk
+Translate: one after the other
+MiscInfo: uk
+Translate: in rotation
+MiscInfo: uk
+Translate: exchanging one after the other
+MiscInfo: uk
+Translate: changing repeatedly
+MiscInfo: uk"
+204322,"WORD_ADJECTIVE_NA
+WORD_ADVERB",,KATAKANA,,,-,タユンタユン,,tayun tayun,sprężyste,szczególnie piersi,,,"GroupId: 2843191
+Translate: bouncy (esp. of breasts)
+MiscInfo: on-mim"
+204323,"WORD_EXPRESSION
+WORD_PARTICULE",,HIRAGANA,,,-,でよ,,deyo,"wyrażanie stanowczego poglądu lub uczucia (używane głównie przez kobiety)
+proszę ... (używane głównie przez nieformalnych próśb lub żądań)
+czy mógłbyś ... (używane głównie przez nieformalnych próśb lub żądań)",,,,"GroupId: 2841870
+Translate: expresses a firm view or feeling
+AdditionalInfo: used mainly by women
+Translate: please ...
+AdditionalInfo: used to make casual requests or demands
+Translate: would you ...
+AdditionalInfo: used to make casual requests or demands"
+204324,"WORD_EXPRESSION
+WORD_PARTICULE",,HIRAGANA,,,-,ってよ,,tteyo,"wyrażanie stanowczego poglądu lub uczucia (używane głównie przez kobiety)
+proszę ... (używane głównie przez nieformalnych próśb lub żądań)
+czy mógłbyś ... (używane głównie przez nieformalnych próśb lub żądań)",,,,"GroupId: 2841870
+Translate: expresses a firm view or feeling
+AdditionalInfo: used mainly by women
+Translate: please ...
+AdditionalInfo: used to make casual requests or demands
+Translate: would you ...
+AdditionalInfo: used to make casual requests or demands"
+204325,WORD_NOUN,,HIRAGANA,,,屠人,どじん,,dojin,"rzeźnik (mało znane znaczenie)
+kuchach (archaizm)",,,DUPLICATE 204298,"GroupId: 2843199
+Translate: slaughterer
+MiscInfo: obsc
+Translate: butcher
+MiscInfo: obsc
+Translate: cook
+MiscInfo: arch"
+204326,WORD_NOUN,,KATAKANA,,,-,トミヨ,,tomiyo,Pungitius sinensis,gatunek ryby,,,"GroupId: 2242430
+Translate: Amur stickleback (Pungitius sinensis)
+MiscInfo: uk"
+204327,WORD_NOUN,,HIRAGANA,,,同甲,どうこう,,doukou,ten sam wiek,archaizm,,DUPLICATE 141352,"GroupId: 2843054
+Translate: same age
+MiscInfo: arch"
+204328,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,ないわけには行かない,ないわけにはいかない,,nai wake ni wa ikanai,"nie można uniknąć (robiąc)
+nie można pomóc (robiąc)
+nie ma innego wyjścia, jak tylko
+musieć (zrobić)",po czasowniku w formie bez masu w formie przeczącej,,,"GroupId: 2842906
+Translate: cannot avoid (doing)
+MiscInfo: uk
+AdditionalInfo: after neg. verb stem
+Translate: cannot help (doing)
+MiscInfo: uk
+AdditionalInfo: after neg. verb stem
+Translate: have no other choice but to
+MiscInfo: uk
+AdditionalInfo: after neg. verb stem
+Translate: must (do)
+MiscInfo: uk
+AdditionalInfo: after neg. verb stem"
+204329,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,ない訳には行かない,ないわけにはいかない,,nai wake ni wa ikanai,"nie można uniknąć (robiąc)
+nie można pomóc (robiąc)
+nie ma innego wyjścia, jak tylko
+musieć (zrobić)",po czasowniku w formie bez masu w formie przeczącej,,,"GroupId: 2842906
+Translate: cannot avoid (doing)
+MiscInfo: uk
+AdditionalInfo: after neg. verb stem
+Translate: cannot help (doing)
+MiscInfo: uk
+AdditionalInfo: after neg. verb stem
+Translate: have no other choice but to
+MiscInfo: uk
+AdditionalInfo: after neg. verb stem
+Translate: must (do)
+MiscInfo: uk
+AdditionalInfo: after neg. verb stem"
+204330,WORD_INTERJECTION,,KATAKANA_HIRAGANA,,,-,ビックリした,,bikkuri shita,"o mój boże!
+masz mnie!
+wow!",wyrażanie zaskoczenia lub przerażenia,,,"GroupId: 2842937
+Translate: oh my god!
+AdditionalInfo: used when surprised or frightened
+Translate: oh my gosh!
+AdditionalInfo: used when surprised or frightened
+Translate: you got me!
+AdditionalInfo: used when surprised or frightened
+Translate: wow!
+AdditionalInfo: used when surprised or frightened"
