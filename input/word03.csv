@@ -17199,7 +17199,7 @@ Translate: soy sauce
 MiscInfo: abbr"
 204352,WORD_NOUN,,KATAKANA,,,ＳＯＧＩ,ソギ,,sogi,orientacja seksualna i tożsamość płciowa,ang: sexual orientation and gender identity,,,"GroupId: 2836837
 Translate: sexual orientation and gender identity"
-204353,WORD_NOUN,,KATAKANA,,,-,ソングライター,,songuraitaa,"kompozytor piosenek
+204353,WORD_NOUN,,KATAKANA,,,-,ソングライター,,songu raitaa,"kompozytor piosenek
 autor piosenek","ang: songwriter, song writer",,,"GroupId: 2839397
 Translate: songwriter
 Translate: song writer"
@@ -17214,7 +17214,11 @@ Translate: sproing
 MiscInfo: on-mim
 Translate: boing
 MiscInfo: on-mim"
-204357,WORD_NOUN,,HIRAGANA,,,-,ぶた,,buta,???,,,,"GroupId: 2842603
+204357,WORD_NOUN,,HIRAGANA,,,-,ぶた,,buta,???,,,"DUPLICATE 3861
+DUPLICATE 28222
+EDICT_DUPLICATE 3861
+EDICT_DUPLICATE 28222
+EDICT_DUPLICATE 28223","GroupId: 2842603
 Translate: hand with a total value of 10 or 20 points (in oicho-kabu; results in a loss)"
 204358,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,文弱,ぶんじゃく,,bunjaku,(męczący) pociąg do książek lub nauki,,,,"GroupId: 1723370
@@ -17377,7 +17381,8 @@ Translate: to see which way the cat jumps
 MiscInfo: proverb
 Translate: to wait and see at Horagatoge
 MiscInfo: proverb"
-204391,WORD_NOUN,,HIRAGANA,,,変易,へんえき,,hen'eki,zmiana,,,,"GroupId: 2843042
+204391,WORD_NOUN,,HIRAGANA,,,変易,へんえき,,hen'eki,zmiana,,,"DUPLICATE 204436
+DUPLICATE 204437","GroupId: 2843042
 Translate: change
 Translate: alteration"
 204392,WORD_NOUN,,HIRAGANA,,,墓上,ぼじょう,,bojou,na grobie,,,,"GroupId: 2843024
@@ -17393,7 +17398,7 @@ MiscInfo: on-mim
 Translate: bouncy
 MiscInfo: on-mim"
 204394,WORD_NOUN,,HIRAGANA,,,瞑眩,めいけん,,meiken,"zawroty głowy (mało znane znaczenie)
-tymczasowe skutki uboczne przyjmowania chińskiej medycyny",,,,"GroupId: 2843092
+tymczasowe skutki uboczne przyjmowania chińskiej medycyny",,,DUPLICATE 204439,"GroupId: 2843092
 Translate: dizziness
 MiscInfo: obsc
 Translate: temporary side-effects of taking Chinese herbal medicine"
@@ -17419,15 +17424,251 @@ Translate: drifter
 MiscInfo: arch"
 204399,WORD_NOUN,,HIRAGANA,,,遊糸,ゆうし,,yuushi,"???
 rozedrgane powietrze (archaizm)
-migotanie gorącego powietrza (archaizm)",,,,"GroupId: 2842767
+migotanie gorącego powietrza (archaizm)",,,DUPLICATE 204400,"GroupId: 2842767
 Translate: gossamer
 Translate: heat haze
 MiscInfo: arch
 Translate: shimmer of hot air
 MiscInfo: arch"
 204400,WORD_NOUN,,HIRAGANA,,,遊糸,あそぶいと,,asobuito,"rozedrgane powietrze
-migotanie gorącego powietrza",archaizm,,,"GroupId: 2842767
+migotanie gorącego powietrza",archaizm,,DUPLICATE 204399,"GroupId: 2842767
 Translate: heat haze
 MiscInfo: arch
 Translate: shimmer of hot air
+MiscInfo: arch"
+204401,WORD_ADVERB,,HIRAGANA,,,我にも非ず,われにもあらず,,ware ni mo arazu,"przez roztargnienie
+w roztargnieniu
+wbrew sobie",,,,"GroupId: 1975960
+Translate: absentmindedly
+Translate: in spite of oneself"
+204402,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,つきが回る,つきがまわる,,tsuki ga mawaru,"???
+mieć szczęście",,,,"GroupId: 2136940
+Translate: to have fortune come your way
+Translate: to become lucky"
+204403,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ツキが回る,ツキがまわる,,tsuki ga mawaru,"???
+mieć szczęście",,,,"GroupId: 2136940
+Translate: to have fortune come your way
+Translate: to become lucky"
+204404,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファジィ理論,ファジィりろん,,fajii riron,teoria rozmyta,,,,"GroupId: 1108140
+Translate: fuzzy theory"
+204405,WORD_VERB_U,,HIRAGANA,,,ゆり落とす,ゆりおとす,,yuri otosu,wstrząsnąć,np. orzechy z drzewa,,,"GroupId: 2017780
+Translate: to shake down (e.g. nuts from a tree)"
+204406,WORD_NOUN,,KATAKANA,,,-,ソング・ライター,,songu raitaa,"kompozytor piosenek
+autor piosenek","ang: songwriter, song writer",,,"GroupId: 2839397
+Translate: songwriter
+Translate: song writer"
+204407,WORD_NOUN,,KATAKANA,,,-,ターレー,,taaree,"wózek widłowy wąskokorytarzowy
+wózek wieżowy","skrót, ang: turret truck",,,"GroupId: 2836761
+Translate: turret truck
+MiscInfo: abbr"
+204408,WORD_ADVERB_TO,,KATAKANA,,,-,ビヨーン,,biyoon,???,,,,"GroupId: 2843192
+Translate: sproing
+MiscInfo: on-mim
+Translate: boing
+MiscInfo: on-mim"
+204409,WORD_ADVERB_TO,,HIRAGANA_KATAKANA,,,-,ぽよーん,,poyoon,???,,,,"GroupId: 2843192
+Translate: sproing
+MiscInfo: on-mim
+Translate: boing
+MiscInfo: on-mim"
+204410,WORD_ADVERB_TO,,KATAKANA,,,-,ポヨーン,,poyoon,???,,,,"GroupId: 2843192
+Translate: sproing
+MiscInfo: on-mim
+Translate: boing
+MiscInfo: on-mim"
+204411,WORD_NOUN,,KATAKANA,,,-,ブタ,,buta,???,,,DUPLICATE 28223,"GroupId: 2842603
+Translate: hand with a total value of 10 or 20 points (in oicho-kabu; results in a loss)"
+204412,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,口が利けない,くちがきけない,,kuchi ga kikenai,"niezdolny do mówienia
+niepotrafiący się wysłowić",,,,"GroupId: 2829405
+Translate: unable to speak
+Translate: inarticulate"
+204413,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,口が聞けない,くちがきけない,,kuchi ga kikenai,"niezdolny do mówienia
+niepotrafiący się wysłowić",,,,"GroupId: 2829405
+Translate: unable to speak
+Translate: inarticulate"
+204414,WORD_NOUN,,HIRAGANA,,,会社ごろ,かいしゃごろ,,kaisha goro,"szantażysta, którzy szantażuje korporacje (firmę)
+???",,,,"GroupId: 2785520
+Translate: extortionist that blackmail corporations
+Translate: corporate shakedown artist"
+204415,WORD_NOUN,,HIRAGANA,,,邪魔っ気,じゃまっけ,,jamakke,"utrapieniec
+niechętny do współpracy osoba
+nieznośna osoba",,,,"GroupId: 1693010
+Translate: nuisance
+Translate: obstructive (person)
+Translate: troublesome (person)"
+204416,WORD_NOUN,,HIRAGANA_KATAKANA,,,邪魔ッけ,じゃまッけ,,jamakke,"utrapieniec
+niechętny do współpracy osoba
+nieznośna osoba",,,,"GroupId: 1693010
+Translate: nuisance
+Translate: obstructive (person)
+Translate: troublesome (person)"
+204417,WORD_NOUN,,HIRAGANA_KATAKANA,,,邪魔ッ気,じゃまッけ,,jamakke,"utrapieniec
+niechętny do współpracy osoba
+nieznośna osoba",,,,"GroupId: 1693010
+Translate: nuisance
+Translate: obstructive (person)
+Translate: troublesome (person)"
+204418,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA_HIRAGANA,,,オシャレ上手,オシャレじょうず,,oshare jouzu,"bycie dobry w modnym ubieraniu się
+dobry garderobiany",,,,"GroupId: 2840737
+Translate: being good at dressing fashionably
+Translate: good dresser"
+204419,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,おしゃれ上手,おしゃれじょうず,,oshare jouzu,"bycie dobry w modnym ubieraniu się
+dobry garderobiany",,,,"GroupId: 2840737
+Translate: being good at dressing fashionably
+Translate: good dresser"
+204420,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ケンカが強い,ケンカがつよい,,kenka ga tsuyoi,"dobry w walce
+zazwyczaj wygrywający walkę",,,,"GroupId: 2837856
+Translate: good at fighting
+Translate: usually wins a fight"
+204421,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,けんかが強い,けんかがつよい,,kenka ga tsuyoi,"dobry w walce
+zazwyczaj wygrywający walkę",,,,"GroupId: 2837856
+Translate: good at fighting
+Translate: usually wins a fight"
+204422,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,話が上手い,はなしがうまい,,hanashi ga umai,"dobry w opowiadaniu historii
+dobry w opowiadaniu (zabawnych) historii",,,,"GroupId: 2840675
+Translate: good at storytelling
+Translate: good at telling (funny) stories
+Translate: having the gift of gab"
+204423,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,ほめ上手,ほめじょうず,,home jouzu,"bycie dobry w udzielaniu komplementów
+osoba, która jest dobra w udzielaniu komplementów
+ktoś, kto potrafi oczarować",,,,"GroupId: 2840732
+Translate: being good at giving compliments
+Translate: person who is good at giving compliments
+Translate: charmer"
+204424,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,気くばり上手,きくばりじょうず,,kikubari jouzu,"bycie dobry w trosce o innych
+miła i troskliwa osoba",,,,"GroupId: 2840746
+Translate: being good at thoughtfulness for others
+Translate: thoughtful and considerate person"
+204425,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,諦めの良い,あきらめのいい,,akirame no ii,"wiedzący, kiedy się poddać
+przyjmowanie porażki z gracją
+bycie dobrym przegranym",,,DUPLICATE 204426,"GroupId: 2842551
+Translate: knowing when to give up
+Translate: good at letting things go
+Translate: accepting failure with good grace
+Translate: being a good loser"
+204426,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,諦めの良い,あきらめのよい,,akirame no yoi,"wiedzący, kiedy się poddać
+przyjmowanie porażki z gracją
+bycie dobrym przegranym",,,DUPLICATE 204425,"GroupId: 2842551
+Translate: knowing when to give up
+Translate: good at letting things go
+Translate: accepting failure with good grace
+Translate: being a good loser"
+204427,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,あきらめの良い,あきらめのいい,,akirame no ii,"wiedzący, kiedy się poddać
+przyjmowanie porażki z gracją
+bycie dobrym przegranym",,,DUPLICATE 204428,"GroupId: 2842551
+Translate: knowing when to give up
+Translate: good at letting things go
+Translate: accepting failure with good grace
+Translate: being a good loser"
+204428,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,あきらめの良い,あきらめのよい,,akirame no yoi,"wiedzący, kiedy się poddać
+przyjmowanie porażki z gracją
+bycie dobrym przegranym",,,DUPLICATE 204427,"GroupId: 2842551
+Translate: knowing when to give up
+Translate: good at letting things go
+Translate: accepting failure with good grace
+Translate: being a good loser"
+204429,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,持てなし上手,もてなしじょうず,,motenashi jouzu,"bycie dobry w goszczeniu
+bycie dobrym gospodarzem
+dobry gospodarz
+osoba, która wie, jak zabawiać gości",,,,"GroupId: 2840947
+Translate: being good at hosting
+Translate: good host
+Translate: person who knows how to entertain guests"
+204430,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,持て成し上手,もてなしじょうず,,motenashi jouzu,"bycie dobry w goszczeniu
+bycie dobrym gospodarzem
+dobry gospodarz
+osoba, która wie, jak zabawiać gości",,,,"GroupId: 2840947
+Translate: being good at hosting
+Translate: good host
+Translate: person who knows how to entertain guests"
+204431,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,要領がよい,ようりょうがよい,,youryou ga yoi,"wiedzący, jak płynąć z prądem
+bycie dobry w radzeniu sobie z rzeczami",,,,"GroupId: 2827420
+Translate: knowing how to swim with the tide
+Translate: being good at dealing with things"
+204432,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,やり繰り上手,やりくりじょうず,,yarikuri jouzu,"zaradność (zwłaszcza w przypadku finansów gospodarstwa domowego)
+bycie dobry w zarządzaniu rzeczami",,,,"GroupId: 2840740
+Translate: being resourceful (esp. with household finances)
+Translate: being good at managing things"
+204433,WORD_EXPRESSION,,HIRAGANA,,,洞が峠を決め込む,ほらがとうげをきめこむ,,horagatouge o kime komu,"czekać na dobrą okazję
+???
+czekać i zobaczyć w Horagatoge",,,,"GroupId: 2832736
+Translate: to wait for a good opportunity
+MiscInfo: proverb
+Translate: to come down on the right side of the fence
+MiscInfo: proverb
+Translate: to see which way the cat jumps
+MiscInfo: proverb
+Translate: to wait and see at Horagatoge
+MiscInfo: proverb"
+204434,WORD_EXPRESSION,,HIRAGANA,,,洞ヶ峠をきめこむ,ほらがとうげをきめこむ,,horagatouge o kime komu,"czekać na dobrą okazję
+???
+czekać i zobaczyć w Horagatoge",,,,"GroupId: 2832736
+Translate: to wait for a good opportunity
+MiscInfo: proverb
+Translate: to come down on the right side of the fence
+MiscInfo: proverb
+Translate: to see which way the cat jumps
+MiscInfo: proverb
+Translate: to wait and see at Horagatoge
+MiscInfo: proverb"
+204435,WORD_EXPRESSION,,HIRAGANA,,,洞が峠をきめこむ,ほらがとうげをきめこむ,,horagatouge o kime komu,"czekać na dobrą okazję
+???
+czekać i zobaczyć w Horagatoge",,,,"GroupId: 2832736
+Translate: to wait for a good opportunity
+MiscInfo: proverb
+Translate: to come down on the right side of the fence
+MiscInfo: proverb
+Translate: to see which way the cat jumps
+MiscInfo: proverb
+Translate: to wait and see at Horagatoge
+MiscInfo: proverb"
+204436,WORD_NOUN,,HIRAGANA,,,変易,へんやく,,hen'yaku,zmiana,,,"DUPLICATE 204391
+DUPLICATE 204437","GroupId: 2843042
+Translate: change
+Translate: alteration"
+204437,WORD_NOUN,,HIRAGANA,,,変易,へんにゃく,,hennyaku,zmiana,,,"DUPLICATE 204391
+DUPLICATE 204436","GroupId: 2843042
+Translate: change
+Translate: alteration"
+204438,"WORD_ADJECTIVE_NO
+WORD_ADVERB
+WORD_NOUN",,KATAKANA,,,-,ポヨポヨ,,poyo poyo,"miękki
+sprężysty
+elastyczny",,,,"GroupId: 2843190
+Translate: soft
+MiscInfo: on-mim
+Translate: bouncy
+MiscInfo: on-mim"
+204439,WORD_NOUN,,HIRAGANA,,,瞑眩,めいげん,,meigen,"zawroty głowy (mało znane znaczenie)
+tymczasowe skutki uboczne przyjmowania chińskiej medycyny",,,DUPLICATE 204394,"GroupId: 2843092
+Translate: dizziness
+MiscInfo: obsc
+Translate: temporary side-effects of taking Chinese herbal medicine"
+204440,WORD_NOUN,,HIRAGANA,,,游士,ゆうし,,yuushi,"elegancki i wyrafinowany mężczyzna
+tułacz
+wędrowiec",archaizm,,,"GroupId: 2842766
+Translate: elegant and refined man
+MiscInfo: arch
+Translate: wanderer
+MiscInfo: arch
+Translate: drifter
 MiscInfo: arch"
