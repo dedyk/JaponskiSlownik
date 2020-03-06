@@ -1,16 +1,13 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.io.File;
 import java.util.List;
-
-import org.json.JSONArray;
 
 import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
-import pl.idedyk.japanese.dictionary.tools.JSONReaderWriter;
 
 public class Test5 {
 
@@ -176,9 +173,35 @@ public class Test5 {
 		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries);
 		*/
 		
+		/*
 		JSONArray jsonArray = JSONReaderWriter.createDictionaryOutputJSON(jmeNewDictionary, polishJapaneseEntries);
 				
 		JSONReaderWriter.writeJSONArrayToFile(new File("/tmp/a/test.json"), jsonArray);
+		*/
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			if (polishJapaneseEntry.getId() != 21817) {
+				continue;
+			}
+			
+			//Integer polishJapaneseEntryGroupIdFromJmedictRawDataList = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+			
+			String kana = polishJapaneseEntry.getKana();
+			
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryListInOnlyKana(kana);
+			
+			if (groupEntryList != null && groupEntryList.size() > 0 && JMENewDictionary.isMultiGroup(groupEntryList) == true) {
+				
+				for (GroupEntry groupEntry : groupEntryList) {
+					
+					System.out.println(groupEntry.getTranslateList());
+					
+				}
+			}
+			
+			
+		}
 	}
 	
 	/*

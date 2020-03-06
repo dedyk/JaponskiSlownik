@@ -87,6 +87,23 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 	public void setJmedictRawDataList(List<String> jmedictRawDataList) {
 		this.jmedictRawDataList = jmedictRawDataList;
 	}
+	
+	public Integer getGroupIdFromJmedictRawDataList() {
+		
+		if (jmedictRawDataList == null || jmedictRawDataList.size() == 0) {
+			return null; // jeszcze nie znane
+		}
+		
+		for (String currentJMEdictEntry : jmedictRawDataList) {
+			
+			if (currentJMEdictEntry.startsWith("GroupId: ") == true) { // mamy
+				return new Integer(currentJMEdictEntry.substring(9));
+				
+			}			
+		}
+		
+		throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie
+	}
 
 	@Override
 	public int hashCode() {
