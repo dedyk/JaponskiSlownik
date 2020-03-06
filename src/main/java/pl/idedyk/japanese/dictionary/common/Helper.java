@@ -1603,4 +1603,66 @@ public class Helper {
 
 		return sb.toString();
 	}
+	
+	public static List<String> convertListToListString(List<?> list) {
+
+		if (list == null) {
+			return null;
+		}
+		
+		List<String> result = new ArrayList<>();
+		
+		for (int idx = 0; idx < list.size(); ++idx) {
+			result.add(list.get(idx).toString());
+		}
+
+		return result;
+	}
+	
+	public static List<String> convertAttributeListToListString(AttributeList attributeList) {
+
+		List<String> result = new ArrayList<String>();
+
+		List<Attribute> attributeListList = attributeList.getAttributeList();
+
+		for (int idx = 0; idx < attributeListList.size(); ++idx) {
+			
+			StringBuffer sb = new StringBuffer();
+			
+			Attribute currentAttribute = attributeListList.get(idx);
+
+			sb.append(currentAttribute.getAttributeType().toString());
+
+			List<String> attributeValue = currentAttribute.getAttributeValue();
+
+			if (attributeValue != null && attributeValue.size() > 0) {
+
+				for (String currentSingleAttributeValue : attributeValue) {
+					sb.append(" ").append(currentSingleAttributeValue);
+				}
+			}
+			
+			result.add(sb.toString());
+		}
+
+		return result;
+	}
+	
+	public static String convertAttributeListToString(AttributeList attributeList) {
+	
+		StringBuffer sb = new StringBuffer();
+				
+		List<String> resultList = convertAttributeListToListString(attributeList);
+		
+		for (int idx = 0; idx < resultList.size(); ++idx) {
+			
+			sb.append(resultList.get(idx));
+			
+			if (idx != resultList.size() - 1) {
+				sb.append("\n");
+			}
+		}
+	
+		return sb.toString();
+	}
 }

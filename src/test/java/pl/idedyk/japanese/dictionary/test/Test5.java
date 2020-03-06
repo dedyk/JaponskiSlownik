@@ -1,7 +1,11 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.io.File;
 import java.util.List;
 import java.util.TreeMap;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
@@ -11,6 +15,7 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
+import pl.idedyk.japanese.dictionary.tools.JSONReaderWriter;
 
 public class Test5 {
 
@@ -164,6 +169,7 @@ public class Test5 {
 		}
 		*/
 		
+		/*
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
 		
 		//
@@ -173,6 +179,11 @@ public class Test5 {
 		//
 		
 		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries);
+		*/
+		
+		JSONArray jsonArray = JSONReaderWriter.createDictionaryOutputJSON(polishJapaneseEntries);
+				
+		JSONReaderWriter.writeJSONArrayToFile(new File("/tmp/a/test.json"), jsonArray);
 	}
 	
 	/*

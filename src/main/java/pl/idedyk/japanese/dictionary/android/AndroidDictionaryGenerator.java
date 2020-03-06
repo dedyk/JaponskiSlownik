@@ -23,6 +23,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import org.apache.commons.io.FileUtils;
+import org.json.JSONArray;
 
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
@@ -46,6 +47,7 @@ import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
+import pl.idedyk.japanese.dictionary.tools.JSONReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 import pl.idedyk.japanese.dictionary.tools.KanjiUtils;
 import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
@@ -89,7 +91,7 @@ public class AndroidDictionaryGenerator {
 		Map<String, KanjivgEntry> kanjivgEntryMap = KanjivgReader.readKanjivgSingleXmlFile(kanjivgSingleXmlFile, kanjivgPatchDirFile);
 		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmeNewNameDictionary,
-				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word-power.csv",
+				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word.json", "output/word-power.csv",
 				"output/transitive_intransitive_pairs.csv"); //, "output/word_group.csv");
 				
 		generateKanaEntries(kanjivgEntryMap, "output/kana.csv");
@@ -117,7 +119,7 @@ public class AndroidDictionaryGenerator {
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(
 			JMENewDictionary jmeNewDictionary, TreeMap<String, EDictEntry> jmedictCommon,
 			JMENewDictionary jmeNewNameDictionary, String[] sourceFileNames,
-			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationPowerFileName,
+			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationJSONFileName, String destinationPowerFileName,
 			String transitiveIntransitivePairsOutputFile /*, String wordGroupOutputFile */) throws Exception {
 
 		System.out.println("checkAndSavePolishJapaneseEntries");
@@ -173,6 +175,11 @@ public class AndroidDictionaryGenerator {
 		System.out.println("checkAndSavePolishJapaneseEntries: generateCsv");
 
 		CsvReaderWriter.generateCsv(new String[] { destinationFileName }, result, true, false, true, false, null);
+		
+		JSONArray resultJSONArray = JSONReaderWriter.createDictionaryOutputJSON(polishJapaneseEntries);
+		
+		// zapisanie w formacie JSON
+		JSONReaderWriter.writeJSONArrayToFile(new File(destinationJSONFileName), resultJSONArray);
 		
 		// generowanie mocy slow
 		System.out.println("checkAndSavePolishJapaneseEntries: generateWordPowerCsv");

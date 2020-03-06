@@ -349,7 +349,7 @@ public class CsvReaderWriter {
 			}
 			
 			csvWriter.write(Helper.convertListToString(polishJapaneseEntry.getDictionaryEntryTypeList()));			
-			csvWriter.write(convertAttributeListToString(polishJapaneseEntry.getAttributeList()));
+			csvWriter.write(Helper.convertAttributeListToString(polishJapaneseEntry.getAttributeList()));
 			csvWriter.write(polishJapaneseEntry.getWordType().toString());
 			csvWriter.write(Helper.convertListToString(GroupEnum.convertToValues(polishJapaneseEntry.getGroups())));
 			csvWriter.write(polishJapaneseEntry.getPrefixKana());
@@ -630,35 +630,6 @@ public class CsvReaderWriter {
 		return result;
 	}
 	
-	private static String convertAttributeListToString(AttributeList attributeList) {
-
-		StringBuffer sb = new StringBuffer();
-
-		List<Attribute> attributeListList = attributeList.getAttributeList();
-
-		for (int idx = 0; idx < attributeListList.size(); ++idx) {
-
-			Attribute currentAttribute = attributeListList.get(idx);
-
-			sb.append(currentAttribute.getAttributeType().toString());
-
-			List<String> attributeValue = currentAttribute.getAttributeValue();
-
-			if (attributeValue != null && attributeValue.size() > 0) {
-
-				for (String currentSingleAttributeValue : attributeValue) {
-					sb.append(" ").append(currentSingleAttributeValue);
-				}
-			}
-
-			if (idx != attributeListList.size() - 1) {
-				sb.append("\n");
-			}
-		}
-
-		return sb.toString();
-	}
-
 	private static List<String> parseStringIntoList(String listString) {
 
 		List<String> result = new ArrayList<String>();
