@@ -122,9 +122,18 @@ public class DetectMultipleKanaList {
 						}
 					}
 					
-					if (uniqueKanjiAndKanaSetInGroupEntry.size() == 1) {
+					if (uniqueKanjiAndKanaSetInGroupEntry.size() == 1) { // gdy cala zawartosc grupy jest taka sama w droch lub wiecej grupach
 						
 						for (GroupEntry groupEntry : groupEntryList) {						
+							if (groupIdSetInPolishJapaneseEntriesListSet.contains(groupEntry.getGroup().getId()) == false) { // mamy							
+								System.out.println("(*) " + groupEntry.getGroup().getId() + " - " + groupEntry.getKanji() + " - " + groupEntry.getKana());			
+							}
+						}
+						
+					} else {
+						
+						for (GroupEntry groupEntry : groupEntryList) {
+							
 							if (groupIdSetInPolishJapaneseEntriesListSet.contains(groupEntry.getGroup().getId()) == false) { // mamy							
 								System.out.println(groupEntry.getGroup().getId() + " - " + groupEntry.getKanji() + " - " + groupEntry.getKana());			
 							}
