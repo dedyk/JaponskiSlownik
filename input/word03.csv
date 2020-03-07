@@ -17672,11 +17672,15 @@ Translate: wanderer
 MiscInfo: arch
 Translate: drifter
 MiscInfo: arch"
-204441,WORD_NOUN,,KATAKANA,,,-,キュー,,kyuu,kolejka,,,EDICT_DUPLICATE 21817,"GroupId: 2842046
+204441,WORD_NOUN,,KATAKANA,,,-,キュー,,kyuu,kolejka,,,"DUPLICATE 21817
+DUPLICATE 102338
+DUPLICATE 102402
+EDICT_DUPLICATE 21817","GroupId: 2842046
 Translate: queue"
 204442,WORD_NOUN,,HIRAGANA,,,白眼,しろめ,,shirome,"białko oka
 białkówka oka
-zimne, niezachęcające oczy",,,"EDICT_DUPLICATE 109925
+zimne, niezachęcające oczy",,,"DUPLICATE 204443
+EDICT_DUPLICATE 109925
 EDICT_DUPLICATE 110024
 EDICT_DUPLICATE 110025
 EDICT_DUPLICATE 110026
@@ -17685,7 +17689,8 @@ Translate: white of the eye
 Translate: cold, unwelcoming eyes"
 204443,WORD_NOUN,,HIRAGANA,,,白眼,はくがん,,hakugan,"białko oka
 białkówka oka
-zimne, niezachęcające oczy",,,"EDICT_DUPLICATE 109925
+zimne, niezachęcające oczy",,,"DUPLICATE 204442
+EDICT_DUPLICATE 109925
 EDICT_DUPLICATE 110024
 EDICT_DUPLICATE 110025
 EDICT_DUPLICATE 110026
@@ -17730,7 +17735,7 @@ Translate: shopkeeper
 Translate: trader"
 204456,WORD_NOUN,,HIRAGANA,,,売買契約,ばいばいけいやく,,baibai keiyaku,umowa sprzedaży,,,,"GroupId: 1945260
 Translate: contract for (of) sale"
-204457,WORD_NOUN,,HIRAGANA,,,飯屋,めしや,,meshiya,"jadłodajnia
+204457,WORD_NOUN,,HIRAGANA,,,飯屋,めしや,,meshi ya,"jadłodajnia
 restauracja serwująca proste jedzenie",,,,"GroupId: 1732820
 Translate: eating house
 Translate: restaurant that serves simple food"
@@ -17773,9 +17778,10 @@ bycie mężem
 bycie żonaty",,,,"GroupId: 2842757
 Translate: having a wife
 Translate: being married"
-204470,WORD_ADJECTIVE_TARU,,HIRAGANA,,,呦呦,ようよう,,youyou,"ryk (jelenia)
+204470,WORD_ADJECTIVE_TARU,,HIRAGANA,,,呦呦,ようよう,,you you,"ryk (jelenia)
 płakanie
-łkanie",archaizm,,,"GroupId: 2842772
+łkanie",archaizm,,"DUPLICATE 140823
+DUPLICATE 204503","GroupId: 2842772
 Translate: crying (of a deer)
 MiscInfo: arch
 Translate: sobbing
@@ -17789,46 +17795,41 @@ MiscInfo: obsc"
 204472,WORD_NOUN,,HIRAGANA,,,連警,れんけい,,renkei,policja federalna,"np. USA, Brazylii, Australii, skrót",,,"GroupId: 2843089
 Translate: federal police (US, Brazil, Australia, etc.)
 MiscInfo: abbr"
-204473,WORD_NOUN,,KATAKANA,,,加加阿,カカオ,,kakao,kakao,,,,"GroupId: 1037050
-Translate: cacao
-MiscInfo: uk
-Translate: cocoa
-MiscInfo: uk"
-204474,WORD_NOUN,,HIRAGANA,,,万目,ばんもく,,banmoku,wiele oczu,,,,"GroupId: 1526500
+204473,WORD_NOUN,,HIRAGANA,,,万目,ばんもく,,banmoku,wiele oczu,,,,"GroupId: 1526500
 Translate: many eyes"
-204475,WORD_NOUN,,HIRAGANA,,,買いだめ,かいだめ,,kai dame,"zaopatrywanie się
+204474,WORD_NOUN,,HIRAGANA,,,買いだめ,かいだめ,,kai dame,"zaopatrywanie się
 robienie zapasów",,,,"GroupId: 1753000
 Translate: stocking up on
 Translate: hoarding"
-204476,WORD_VERB_RU,,HIRAGANA,,,-,はっちゃける,,hacchakeru,"weselić się i zapomnieć o kłopotach
+204475,WORD_VERB_RU,,HIRAGANA,,,-,はっちゃける,,hacchakeru,"weselić się i zapomnieć o kłopotach
 robić co się chce",kolokwializm,,,"GroupId: 2428090
 Translate: to make merry and forget one's troubles
 MiscInfo: col
 Translate: to do as one pleases
 MiscInfo: col"
-204477,WORD_NOUN,,HIRAGANA,,,海葡萄,うみぶどう,,umibudou,zielony kawior,"glony, Caulerpa lentillifera",,,"GroupId: 2198620
+204476,WORD_NOUN,,HIRAGANA,,,海葡萄,うみぶどう,,umi budou,zielony kawior,"glony, Caulerpa lentillifera",,,"GroupId: 2198620
 Translate: sea grapes (Caulerpa lentillifera)"
-204478,WORD_NOUN,,HIRAGANA,,,地蜂,じばち,,jibachi,Vespula flaviceps,gatunek osy,,,"GroupId: 1763920
+204477,WORD_NOUN,,HIRAGANA,,,地蜂,じばち,,jibachi,Vespula flaviceps,gatunek osy,,,"GroupId: 1763920
 Translate: Vespula flaviceps (species of yellowjacket)"
-204479,WORD_NOUN,,HIRAGANA,,,硬口蓋,こうこうがい,,koukougai,podniebienie twarde,,,,"GroupId: 1810650
+204478,WORD_NOUN,,HIRAGANA,,,硬口蓋,こうこうがい,,koukougai,podniebienie twarde,,,,"GroupId: 1810650
 Translate: hard palate"
-204480,WORD_NOUN,,HIRAGANA,,,歯根膜,しこんまく,,shikonmaku,"ozębna
+204479,WORD_NOUN,,HIRAGANA,,,歯根膜,しこんまく,,shikonmaku,"ozębna
 więzadło przyzębne","tkanka wypełniająca przestrzeń między cementem korzeniowym, a kością wyrostka zębodołowego, łącząca jednocześnie obie struktury",,,"GroupId: 2608110
 Translate: periodontal membrane
 Translate: periodontal ligament"
-204481,WORD_NOUN,,KATAKANA_HIRAGANA,,,セメント質,セメントしつ,,semento shitsu,"cement zęba
+204480,WORD_NOUN,,KATAKANA_HIRAGANA,,,セメント質,セメントしつ,,semento shitsu,"cement zęba
 kostniwo",swoista kość pokrywająca korzeń zęba,,,"GroupId: 1965450
 Translate: cementum (hard connective tissue covering the tooth root)
 Translate: cement"
-204482,WORD_NOUN,,HIRAGANA,,,眼疾患,がんしっかん,,ganshikkan,choroba oczu,,,,"GroupId: 2833156
+204481,WORD_NOUN,,HIRAGANA,,,眼疾患,がんしっかん,,ganshikkan,choroba oczu,,,,"GroupId: 2833156
 Translate: eye disease"
-204483,WORD_NOUN,,HIRAGANA,,,流涙症,りゅうるいしょう,,ryuuruishou,nadmierne łzawienie,,,,"GroupId: 2127180
+204482,WORD_NOUN,,HIRAGANA,,,流涙症,りゅうるいしょう,,ryuuruishou,nadmierne łzawienie,,,,"GroupId: 2127180
 Translate: epiphora (excessive watering of the eye)"
-204484,WORD_NOUN,,HIRAGANA,,,屈折異常,くっせついじょう,,kussetsu ijou,"ametropia
+204483,WORD_NOUN,,HIRAGANA,,,屈折異常,くっせついじょう,,kussetsu ijou,"ametropia
 niemiarowość (w okulistyce)",,,,"GroupId: 2837615
 Translate: refractive error
 Translate: ametropia"
-204485,WORD_NOUN,,HIRAGANA,,,精神修養,せいしんしゅうよう,,seishin shuuyou,"moralna (duchowa) poprawa
+204484,WORD_NOUN,,HIRAGANA,,,精神修養,せいしんしゅうよう,,seishin shuuyou,"moralna (duchowa) poprawa
 praktyka mentalnego treningu
 kształcenie umysłu (ducha)",,,,"GroupId: 2048180
 Translate: moral (spiritual) improvement
@@ -17837,17 +17838,17 @@ Translate: practice mental training
 MiscInfo: yoji
 Translate: cultivate one's mind (soul)
 MiscInfo: yoji"
-204486,WORD_NOUN,,HIRAGANA,,,使徒行伝,しとぎょうでん,,shitogyouden,Dzieje Apostolskie,"księga historyczna Nowego Testamentu, zajmująca w kanonie miejsce piąte",,,"GroupId: 1306080
+204485,WORD_NOUN,,HIRAGANA,,,使徒行伝,しとぎょうでん,,shitogyouden,Dzieje Apostolskie,"księga historyczna Nowego Testamentu, zajmująca w kanonie miejsce piąte",,,"GroupId: 1306080
 Translate: Acts of the Apostles (book of the Bible)"
-204487,WORD_NOUN,,HIRAGANA,,,撥ね荷,はねに,,hane ni,"odrzucone towary
+204486,WORD_NOUN,,HIRAGANA,,,撥ね荷,はねに,,hane ni,"odrzucone towary
 wyrzucony ładunek",,,,"GroupId: 2829831
 Translate: rejected goods
 Translate: sorted-out goods
 Translate: jettisoned cargo"
-204488,WORD_NOUN,,HIRAGANA,,,会陰切開,えいんせっかい,,einsekkai,nacięcie krocza,np. podczas porodu,,,"GroupId: 2741540
+204487,WORD_NOUN,,HIRAGANA,,,会陰切開,えいんせっかい,,einsekkai,nacięcie krocza,np. podczas porodu,,,"GroupId: 2741540
 Translate: episiotomy
 Translate: perineotomy"
-204489,"WORD_ADJECTIVE_NA
+204488,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,陋劣,ろうれつ,,rouretsu,"złośliwy
 wredny
 podły
@@ -17857,28 +17858,120 @@ niemiły",,,,"GroupId: 1840920
 Translate: mean
 Translate: base
 Translate: nasty"
-204490,WORD_NOUN,,HIRAGANA,,,武漢三鎮,ぶかんさんちん,,bukan sanchin,trzy Miasta Wuhan,,,,"GroupId: 1498440
+204489,WORD_NOUN,,HIRAGANA,,,武漢三鎮,ぶかんさんちん,,bukan sanchin,trzy Miasta Wuhan,,,,"GroupId: 1498440
 Translate: the three Wuhan Cities"
-204491,WORD_NOUN,,HIRAGANA,,,武漢肺炎,ぶかんはいえん,,bukan haien,"zapalenie płuc z Wuhan
+204490,WORD_NOUN,,HIRAGANA,,,武漢肺炎,ぶかんはいえん,,bukan haien,"zapalenie płuc z Wuhan
 zapalenie płuc spowodowane wirusem 2019-nCoV",,,,"GroupId: 2843009
 Translate: Wuhan pneumonia
 Translate: 2019-nCoV pneumonia"
-204492,WORD_NOUN,,KATAKANA_HIRAGANA,,,チゲ鍋,チゲなべ,,chige nabe,"koreański gulasz
+204491,WORD_NOUN,,KATAKANA_HIRAGANA,,,チゲ鍋,チゲなべ,,chige nabe,"koreański gulasz
 koreański huoguo",potrawa,,,"GroupId: 2835857
 Translate: Korean stew
 Translate: Korean hot pot"
-204493,WORD_NOUN,,KATAKANA_HIRAGANA,,,アフリカ人,アフリカじん,,afurika jin,Afrykanin,,,,"GroupId: 2584950
+204492,WORD_NOUN,,KATAKANA_HIRAGANA,,,アフリカ人,アフリカじん,,afurika jin,Afrykanin,,,,"GroupId: 2584950
 Translate: African"
-204494,WORD_NOUN,,HIRAGANA,,,国際条約,こくさいじょうやく,,kokusai jouyaku,umowa międzynarodowa,,,,"GroupId: 1935570
+204493,WORD_NOUN,,HIRAGANA,,,国際条約,こくさいじょうやく,,kokusai jouyaku,umowa międzynarodowa,,,,"GroupId: 1935570
 Translate: international treaty"
-204495,"WORD_VERB_U
+204494,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,因果の胤を宿す,いんがのたねをやどす,,inga no tane o yadosu,zajść w ciążę z nieślubnym dzieckiem,,,,"GroupId: 2828193
 Translate: to become pregnant with an illegitimate child"
-204496,WORD_NOUN,,HIRAGANA,,,大奥様,おおおくさま,,oooku sama,pani domu,,,,"GroupId: 1413110
+204495,WORD_NOUN,,HIRAGANA,,,大奥様,おおおくさま,,oooku sama,pani domu,,,,"GroupId: 1413110
 Translate: lady of the house"
-204497,WORD_NOUN,,HIRAGANA,,,昇り藤,のぼりふじ,,nobori fuji,łubin,rodzaj roślin,,,"GroupId: 1901100
+204496,WORD_NOUN,,HIRAGANA,,,昇り藤,のぼりふじ,,nobori fuji,łubin,rodzaj roślin,,,"GroupId: 1901100
 Translate: lupine"
-204498,WORD_NOUN,,HIRAGANA,,,屯食,とんじき,,tonjiki,"kleista ryżowa kulka w kształcie jajka (okresy Heian i Kamakura)
-taca lub pojemnik do serwowania ryżowych kulek",,,,"GroupId: 2839257
+204497,WORD_NOUN,,HIRAGANA,,,屯食,とんじき,,tonjiki,"kleista ryżowa kulka w kształcie jajka (okresy Heian i Kamakura)
+taca lub pojemnik do serwowania ryżowych kulek",,,DUPLICATE 204514,"GroupId: 2839257
 Translate: egg-shaped glutinous rice ball (Heian, Kamakura periods)
 Translate: tray or container for serving rice balls"
+204498,WORD_NOUN,,KATAKANA,,,-,レスベラトロル,,resuberatororu,resweratrol,"organiczny związek chemiczny, polifenolowa pochodna stilbenu, ang: resveratrol",,,"GroupId: 2819310
+Translate: resveratrol"
+204499,WORD_NOUN,,KATAKANA,,,-,アサヒラン,,asahiran,Eleorchis japonica,gatunek roślin z monotypowego rodzaju Eleorchis z rodziny storczykowatych,,,"GroupId: 2828487
+Translate: Eleorchis japonica (species of orchid)
+MiscInfo: uk"
+204500,WORD_NOUN,,HIRAGANA,,,めし屋,めしや,,meshi ya,"jadłodajnia
+restauracja serwująca proste jedzenie",,,,"GroupId: 1732820
+Translate: eating house
+Translate: restaurant that serves simple food"
+204501,WORD_NOUN,,KATAKANA_HIRAGANA,,,メシ屋,メシや,,meshi ya,"jadłodajnia
+restauracja serwująca proste jedzenie",,,,"GroupId: 1732820
+Translate: eating house
+Translate: restaurant that serves simple food"
+204502,WORD_NOUN,,KATAKANA,,,-,バイカラーバタフライフィッシュ,,baikaraa batafuraifisshu,Prognathodes dichrous,"gatunek ryby, ang: hedgehog butterflyfish",,,"GroupId: 2545270
+Translate: bicolor butterflyfish (Prognathodes dichrous)
+Translate: hedgehog butterflyfish"
+204503,WORD_ADJECTIVE_TARU,,HIRAGANA,,,呦呦,ゆうゆう,,yuu yuu,"ryk (jelenia)
+płakanie
+łkanie",archaizm,,DUPLICATE 204470,"GroupId: 2842772
+Translate: crying (of a deer)
+MiscInfo: arch
+Translate: sobbing
+MiscInfo: arch"
+204504,WORD_ADJECTIVE_TARU,,HIRAGANA,,,呦々,ようよう,,you you,"ryk (jelenia)
+płakanie
+łkanie",archaizm,,"DUPLICATE 140823
+DUPLICATE 204505","GroupId: 2842772
+Translate: crying (of a deer)
+MiscInfo: arch
+Translate: sobbing
+MiscInfo: arch"
+204505,WORD_ADJECTIVE_TARU,,HIRAGANA,,,呦々,ゆうゆう,,yuu yuu,"ryk (jelenia)
+płakanie
+łkanie",archaizm,,DUPLICATE 204504,"GroupId: 2842772
+Translate: crying (of a deer)
+MiscInfo: arch
+Translate: sobbing
+MiscInfo: arch"
+204506,WORD_NOUN,,HIRAGANA,,,買い溜め,かいだめ,,kai dame,"zaopatrywanie się
+robienie zapasów",,,,"GroupId: 1753000
+Translate: stocking up on
+Translate: hoarding"
+204507,WORD_NOUN,,HIRAGANA,,,買溜め,かいだめ,,kai dame,"zaopatrywanie się
+robienie zapasów",,,,"GroupId: 1753000
+Translate: stocking up on
+Translate: hoarding"
+204508,WORD_NOUN,,HIRAGANA,,,買だめ,かいだめ,,kai dame,"zaopatrywanie się
+robienie zapasów",,,,"GroupId: 1753000
+Translate: stocking up on
+Translate: hoarding"
+204509,WORD_NOUN,,HIRAGANA,,,買い駄目,かいだめ,,kai dame,"zaopatrywanie się
+robienie zapasów",,,,"GroupId: 1753000
+Translate: stocking up on
+Translate: hoarding"
+204510,WORD_NOUN,,HIRAGANA,,,海ぶどう,うみぶどう,,umi budou,zielony kawior,"glony, Caulerpa lentillifera",,,"GroupId: 2198620
+Translate: sea grapes (Caulerpa lentillifera)"
+204511,WORD_NOUN,,HIRAGANA,,,うみ葡萄,うみぶどう,,umi budou,zielony kawior,"glony, Caulerpa lentillifera",,,"GroupId: 2198620
+Translate: sea grapes (Caulerpa lentillifera)"
+204512,WORD_NOUN,,HIRAGANA,,,昇藤,のぼりふじ,,nobori fuji,łubin,rodzaj roślin,,,"GroupId: 1901100
+Translate: lupine"
+204513,WORD_NOUN,,HIRAGANA,,,上り藤,のぼりふじ,,nobori fuji,łubin,rodzaj roślin,,,"GroupId: 1901100
+Translate: lupine"
+204514,WORD_NOUN,,HIRAGANA,,,屯食,とじき,,tojiki,"kleista ryżowa kulka w kształcie jajka (okresy Heian i Kamakura)
+taca lub pojemnik do serwowania ryżowych kulek",,,DUPLICATE 204497,"GroupId: 2839257
+Translate: egg-shaped glutinous rice ball (Heian, Kamakura periods)
+Translate: tray or container for serving rice balls"
+204515,WORD_NOUN,,HIRAGANA,,,頓食,とんじき,,tonjiki,"kleista ryżowa kulka w kształcie jajka (okresy Heian i Kamakura)
+taca lub pojemnik do serwowania ryżowych kulek",,,DUPLICATE 204516,"GroupId: 2839257
+Translate: egg-shaped glutinous rice ball (Heian, Kamakura periods)
+Translate: tray or container for serving rice balls"
+204516,WORD_NOUN,,HIRAGANA,,,頓食,とじき,,tojiki,"kleista ryżowa kulka w kształcie jajka (okresy Heian i Kamakura)
+taca lub pojemnik do serwowania ryżowych kulek",,,DUPLICATE 204515,"GroupId: 2839257
+Translate: egg-shaped glutinous rice ball (Heian, Kamakura periods)
+Translate: tray or container for serving rice balls"
+204517,WORD_NOUN_SUFFIX,,HIRAGANA,,,-,ず,,zu,"s (przyrostek liczby mnogiej)
+es
+'s (przyrostek dopełniacza)
+s'
+es'","kolokwializm, pochodzi z języka angielskiego",,"DUPLICATE 3156
+DUPLICATE 12649
+DUPLICATE 28181
+DUPLICATE 65187","GroupId: 2731770
+Translate: s (pluralizing suffix)
+MiscInfo: col
+Translate: es
+MiscInfo: col
+Translate: 's (possessive suffix)
+MiscInfo: col
+Translate: s'
+MiscInfo: col
+Translate: es'
+MiscInfo: col"
