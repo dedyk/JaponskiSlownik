@@ -17999,9 +17999,9 @@ Translate: throw"
 sukienka","skrót, ang: frock",,,"GroupId: 2841800
 Translate: frock (coat)
 MiscInfo: abbr"
-204523,WORD_VERB_U,,HIRAGANA,,,抄く,すく,,suku,"zrobić coś (np. papier) z mokrego, papkowatego materiału poprzez rozłożenie go na cienkie kawałki i wysuszenie go",,,,"GroupId: 2117510
+204523,WORD_VERB_U,,HIRAGANA,,,抄く,すく,,suku,"zrobić coś (np. papier) z mokrego, papkowatego materiału poprzez rozłożenie go na cienkie kawałki i wysuszenie go",,,EDICT_DUPLICATE 104348,"GroupId: 2117510
 Translate: to make something (e.g. paper) from wet, pulpy material by spreading it thin and drying it"
-204524,WORD_EXPRESSION,,HIRAGANA,,,-,ゲロゲロ,,gero gero,"obrzydliwe!
+204524,WORD_EXPRESSION,,KATAKANA,,,-,ゲロゲロ,,gero gero,"obrzydliwe!
 ohydne!
 wstrętne!",slang,,,"GroupId: 1004290
 Translate: that's gross!
@@ -18034,7 +18034,7 @@ Translate: moralist"
 204531,WORD_NOUN,,HIRAGANA,,,蚯蚓鯊,みみずはぜ,,mimizuhaze,Luciogobius guttatus,gatunek ryby,,,"GroupId: 2637520
 Translate: flat-headed goby (Luciogobius guttatus)
 MiscInfo: uk"
-204532,WORD_EXPRESSION,,HIRAGANA,,,悪い事は出来ぬもの,わるいことはできぬもの,,warui koto wa dekinu mono,prawda wyjdzie na jaw,"przysłowie, archaizm",,,"GroupId: 2416580
+204532,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,悪い事は出来ぬもの,わるいことはできぬもの,,warui koto wa dekinu mono,prawda wyjdzie na jaw,"przysłowie, archaizm",,,"GroupId: 2416580
 Translate: murder will out
 MiscInfo: proverb
 MiscInfo: arch"
@@ -18265,7 +18265,52 @@ Translate: time of great change
 Translate: era of reform"
 204589,WORD_NOUN,,HIRAGANA,,,夏野菜,なつやさい,,natsuyasai,letnie warzywa,,,,"GroupId: 2843134
 Translate: summer vegetables"
-204590,WORD_ADJECTIVE_I,,HIRAGANA,,,定めない,さだめない,,sadamenai,"niepewny
+204590,WORD_ADJECTIVE_I,,HIRAGANA,,,定めない,さだめない,,sadame nai,"niepewny
+wątpliwy
+przelotny
+zmienny",,,,"GroupId: 2603820
+Translate: uncertain
+Translate: transient
+Translate: changeable"
+204591,WORD_NOUN,,HIRAGANA,,,野風増,のふうぞ,,nofuuzo,"drań
+łajdak
+łotr",,,,"GroupId: 2745800
+Translate: rascal"
+204592,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ノフウゾ,,nofuuzo,"drań
+łajdak
+łotr",,,,"GroupId: 2745800
+Translate: rascal"
+204593,WORD_NOUN,,KATAKANA,,,-,ミミズハゼ,,mimizuhaze,Luciogobius guttatus,gatunek ryby,,,"GroupId: 2637520
+Translate: flat-headed goby (Luciogobius guttatus)
+MiscInfo: uk"
+204594,WORD_NOUN,,KATAKANA,,,-,ツノダシ,,tsunodashi,"idolek mauretański
+idolek","gatunek morskiej, drapieżnej ryby okoniokształtnej z rodziny idolkowatych, której jest jedynym przedstawicielem, Zanclus cornutus",,,"GroupId: 2004760
+Translate: moorish idol (Zanclus cornutus, species of Indo-Pacific perciform fish)
+MiscInfo: uk"
+204595,WORD_NOUN,,HIRAGANA,,,種もみ,たねもみ,,tanemomi,nasiono ryżu,,,,"GroupId: 1952280
+Translate: seed rice"
+204596,WORD_ADJECTIVE_NA,,KATAKANA,,,-,バーティカル,,baatikaru,pionowy,ang: vertical,,,"GroupId: 2842051
+Translate: vertical"
+204597,WORD_NOUN,,KATAKANA,,,-,バーニャ,,baanya,bania,rosyjska odmiana sauny,,,"GroupId: 2829910
+Translate: banya
+Translate: Russian-style steam bath
+Translate: Russian sauna"
+204598,WORD_NOUN,,KATAKANA,,,-,リーオウ,,riiou,Gwiazdozbiór Lwa,12. co do wielkości konstelacja będąca jednym z 12 gwiazdozbiorów zodiaku,,,"GroupId: 2841434
+Translate: Leo (constellation)
+Translate: the Lion"
+204599,WORD_NOUN,,HIRAGANA,,,今世,こんぜ,,konze,"obecny świat
+obecny wiek",,,,"GroupId: 2843146
+Translate: present world
+Translate: present age"
+204600,WORD_ADJECTIVE_I,,HIRAGANA,,,住み易い,すみやすい,,sumi yasui,"komfortowy na zamieszkania (np. w sąsiedztwie)
+dogodny
+miły
+przyjemny",,,,"GroupId: 2839799
+Translate: comfortable to live in (of a neighborhood, etc.)
+Translate: convenient
+Translate: congenial
+Translate: agreeable"
+204601,WORD_ADJECTIVE_I,,HIRAGANA,,,定め無い,さだめない,,sadame nai,"niepewny
 wątpliwy
 przelotny
 zmienny",,,,"GroupId: 2603820
