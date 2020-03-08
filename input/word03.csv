@@ -17993,17 +17993,17 @@ MiscInfo: uk"
 204520,WORD_NOUN,,KATAKANA,,,-,レーザ,,reeza,laser,"urządzenie emitujące promieniowanie elektromagnetyczne z zakresu światła widzialnego, ultrafioletu lub podczerwieni, wykorzystujące zjawisko emisji wymuszonej",,,"GroupId: 1144310
 Translate: laser
 Translate: Light Amplification by Stimulated Emission of Radiation"
-204521,WORD_NOUN,,KATAKANA,,,-,スロー,,suroo,rzut,ang: throw,,,"GroupId: 2842034
+204521,WORD_NOUN,,KATAKANA,,,-,スロー,,suroo,rzut,ang: throw,,DUPLICATE 38930,"GroupId: 2842034
 Translate: throw"
 204522,WORD_NOUN,,KATAKANA,,,-,フロック,,furokku,"suknia
-sukienka","skrót, ang: frock",,,"GroupId: 2841800
+sukienka","skrót, ang: frock",,DUPLICATE 18208,"GroupId: 2841800
 Translate: frock (coat)
 MiscInfo: abbr"
 204523,WORD_VERB_U,,HIRAGANA,,,抄く,すく,,suku,"zrobić coś (np. papier) z mokrego, papkowatego materiału poprzez rozłożenie go na cienkie kawałki i wysuszenie go",,,EDICT_DUPLICATE 104348,"GroupId: 2117510
 Translate: to make something (e.g. paper) from wet, pulpy material by spreading it thin and drying it"
 204524,WORD_EXPRESSION,,KATAKANA,,,-,ゲロゲロ,,gero gero,"obrzydliwe!
 ohydne!
-wstrętne!",slang,,,"GroupId: 1004290
+wstrętne!",slang,,DUPLICATE 115884,"GroupId: 1004290
 Translate: that's gross!
 MiscInfo: sl
 Translate: disgusting!
@@ -18014,7 +18014,7 @@ stożek pasożytniczy",mały stożek wulkaniczny na skłonie dużego stożka gł
 Translate: parasite volcano"
 204526,WORD_NOUN,,HIRAGANA,,,野風増,のふうぞう,,nofuuzou,"drań
 łajdak
-łotr",,,,"GroupId: 2745800
+łotr",,,DUPLICATE 204591,"GroupId: 2745800
 Translate: rascal"
 204527,WORD_NOUN,,HIRAGANA,,,生毛体,せいもうたい,,seimoutai,"kinetosom
 ciałko podstawowe
@@ -18095,21 +18095,23 @@ farba klejowa (skrót)",,,,"GroupId: 1081060
 Translate: temper
 Translate: distemper
 MiscInfo: abbr"
-204550,WORD_NOUN,,KATAKANA,,,-,シア,,shia,masłosz Parka,"gatunek rośliny należący do rodziny sączyńcowatych, jedyny przedstawiciel monotypowego rodzaju masłosz, Vitellaria paradoxa, ang: shea tree",,,"GroupId: 2842419
+204550,WORD_NOUN,,KATAKANA,,,-,シア,,shia,masłosz Parka,"gatunek rośliny należący do rodziny sączyńcowatych, jedyny przedstawiciel monotypowego rodzaju masłosz, Vitellaria paradoxa, ang: shea tree",,"DUPLICATE 204551
+DUPLICATE 204603","GroupId: 2842419
 Translate: shea tree (Vitellaria paradoxa)"
-204551,WORD_NOUN,,KATAKANA,,,-,シア,,shia,uskok,"np. uskok wiatru, ang: shear",,,"GroupId: 2842659
+204551,WORD_NOUN,,KATAKANA,,,-,シア,,shia,uskok,"np. uskok wiatru, ang: shear",,"DUPLICATE 204550
+DUPLICATE 204603","GroupId: 2842659
 Translate: shear (e.g. wind shear)"
 204552,WORD_NOUN,,KATAKANA,,,-,シアー,,shiaa,"przezroczysty (materiał)
-zwiewny (o tkaninie)",ang: sheer,,,"GroupId: 2842663
+zwiewny (o tkaninie)",ang: sheer,,DUPLICATE 204602,"GroupId: 2842663
 Translate: sheer (fabric)"
-204553,WORD_NOUN,,KATAKANA,,,ＤＥＮ,デン,,den,mały pokój,,,,"GroupId: 2838471
+204553,WORD_NOUN,,KATAKANA,,,ＤＥＮ,デン,,den,mały pokój,,,DUPLICATE 204554,"GroupId: 2838471
 Translate: den
 Translate: small room"
 204554,WORD_NOUN,,KATAKANA,,,-,デン,,den,"legowisko
 nora
 kryjówka (np. złodzieja)
 miejsce do ukrywania się
-mały przytulny pokój",ang: den,,,"GroupId: 2838487
+mały przytulny pokój",ang: den,,DUPLICATE 204553,"GroupId: 2838487
 Translate: den
 Translate: wild animal dwelling
 Translate: den (e.g. of thieves)
@@ -18188,10 +18190,10 @@ MiscInfo: sl"
 204570,WORD_NOUN,,KATAKANA_HIRAGANA,,,ブラジル人,ブラジルじん,,burajiru jin,"Brazylijczyk
 Brazylijka",,,,"GroupId: 2843137
 Translate: Brazilian person"
-204571,WORD_NOUN,,KATAKANA,,,-,プラーナ,,puraana,prana,"w hinduizmie siła życiowa utrzymująca przy życiu wszystkie istoty, utożsamiana z oddechem",,,"GroupId: 2842970
+204571,WORD_NOUN,,KATAKANA,,,-,プラーナ,,puraana,prana,"w hinduizmie siła życiowa utrzymująca przy życiu wszystkie istoty, utożsamiana z oddechem",,DUPLICATE 204572,"GroupId: 2842970
 Translate: prana"
 204572,WORD_NOUN,,KATAKANA,,,-,プラーナ,,puraana,"Purana
-Purany",gatunek literacki świętych pism hinduizmu,,,"GroupId: 2842974
+Purany",gatunek literacki świętych pism hinduizmu,,DUPLICATE 204571,"GroupId: 2842974
 Translate: Purana (Hindu sacred writings)
 Translate: Puranas"
 204573,"WORD_ADJECTIVE_NO
@@ -18205,7 +18207,7 @@ Translate: second anniversary of a death"
 204576,WORD_ADVERB,,HIRAGANA,,,下方に,かほうに,,kahou ni,poniżej,,,,"GroupId: 1186390
 Translate: below"
 204577,WORD_NOUN,,HIRAGANA,,,今世,こんせ,,konse,"obecny świat
-obecny wiek",,,,"GroupId: 2843146
+obecny wiek",,,DUPLICATE 204599,"GroupId: 2843146
 Translate: present world
 Translate: present age"
 204578,WORD_ADJECTIVE_I,,HIRAGANA,,,住みやすい,すみやすい,,sumi yasui,"komfortowy na zamieszkania (np. w sąsiedztwie)
@@ -18219,7 +18221,7 @@ Translate: agreeable"
 204579,WORD_SUFFIX,,HIRAGANA,,,倒れ,だおれ,,daore,"robienie ... aż do bankructwa (po czasowniku w formie bez masu)
 robienie ... aż upadnie się (po czasowniku w formie bez masu)
 nie sprostać (swoim oczekiwaniom)
-upadek (np. swojego planu)",,,,"GroupId: 2842570
+upadek (np. swojego planu)",,,DUPLICATE 16898,"GroupId: 2842570
 Translate: doing ... until one goes bankrupt
 AdditionalInfo: after the -masu stem of a verb
 Translate: doing ... until one goes broke
@@ -18250,7 +18252,7 @@ bipolarny
 dwubiegunowy",,,,"GroupId: 2843164
 Translate: having two poles
 Translate: bipolar"
-204585,WORD_NOUN,,HIRAGANA,,,右眼,うがん,,ugan,prawe oko,,,,"GroupId: 2843046
+204585,WORD_NOUN,,HIRAGANA,,,右眼,うがん,,ugan,prawe oko,,,DUPLICATE 44468,"GroupId: 2843046
 Translate: right eye"
 204586,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,命の洗濯,いのちのせんたく,,inochi no sentaku,"odrzucenie harówki dnia codziennego i robienie co się podoba
@@ -18274,7 +18276,7 @@ Translate: transient
 Translate: changeable"
 204591,WORD_NOUN,,HIRAGANA,,,野風増,のふうぞ,,nofuuzo,"drań
 łajdak
-łotr",,,,"GroupId: 2745800
+łotr",,,DUPLICATE 204526,"GroupId: 2745800
 Translate: rascal"
 204592,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ノフウゾ,,nofuuzo,"drań
 łajdak
@@ -18299,7 +18301,7 @@ Translate: Russian sauna"
 Translate: Leo (constellation)
 Translate: the Lion"
 204599,WORD_NOUN,,HIRAGANA,,,今世,こんぜ,,konze,"obecny świat
-obecny wiek",,,,"GroupId: 2843146
+obecny wiek",,,DUPLICATE 204577,"GroupId: 2843146
 Translate: present world
 Translate: present age"
 204600,WORD_ADJECTIVE_I,,HIRAGANA,,,住み易い,すみやすい,,sumi yasui,"komfortowy na zamieszkania (np. w sąsiedztwie)
@@ -18317,3 +18319,9 @@ zmienny",,,,"GroupId: 2603820
 Translate: uncertain
 Translate: transient
 Translate: changeable"
+204602,WORD_NOUN,,KATAKANA,,,-,シアー,,shiaa,masłosz Parka,"gatunek rośliny należący do rodziny sączyńcowatych, jedyny przedstawiciel monotypowego rodzaju masłosz, Vitellaria paradoxa, ang: shea tree",,DUPLICATE 204552,"GroupId: 2842419
+Translate: shea tree (Vitellaria paradoxa)"
+204603,WORD_NOUN,,KATAKANA,,,-,シア,,shia,"przezroczysty (materiał)
+zwiewny (o tkaninie)",ang: sheer,,"DUPLICATE 204550
+DUPLICATE 204551","GroupId: 2842663
+Translate: sheer (fabric)"
