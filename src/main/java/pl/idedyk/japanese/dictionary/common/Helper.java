@@ -248,32 +248,100 @@ public class Helper {
 		
 		// generowanie alternatyw
 		
+		// generowanie cache'u po group id
+		Map<Integer, List<PolishJapaneseEntry>> cachePolishJapaneseEntryListByGroupIdFromJmedictRawDataList = new HashMap<>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+			
+			Integer groupIdFromJmedictRawDataList = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+			
+			if (groupIdFromJmedictRawDataList != null) {
+				
+				List<PolishJapaneseEntry> polishJapaneseEntryListInGroupId = cachePolishJapaneseEntryListByGroupIdFromJmedictRawDataList.get(groupIdFromJmedictRawDataList);
+				
+				if (polishJapaneseEntryListInGroupId == null) {
+					
+					polishJapaneseEntryListInGroupId = new ArrayList<>();
+					
+					cachePolishJapaneseEntryListByGroupIdFromJmedictRawDataList.put(groupIdFromJmedictRawDataList, polishJapaneseEntryListInGroupId);
+				}
+				
+				polishJapaneseEntryListInGroupId.add(polishJapaneseEntry);
+			}			
+		}
+
+		//
+		
 		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryListKanjiKana = cachePolishJapaneseEntryList(polishJapaneseEntries);
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			String kanji = polishJapaneseEntry.getKanji();
 			String kana = polishJapaneseEntry.getKana();
-			
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
-			
-			List<PolishJapaneseEntry> foundPolishJapaneseEntryGroupList = new ArrayList<PolishJapaneseEntry>();
-			
-			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
-								
-				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
 					
-					String groupEntryKanji = groupEntry.getKanji();
-					String groupEntryKana = groupEntry.getKana();
-																
-					PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntryWithEdictDuplicate(
-							polishJapaneseEntry, cachePolishJapaneseEntryListKanjiKana, groupEntryKanji, groupEntryKana);
+			//			
+			
+			List<PolishJapaneseEntry> foundPolishJapaneseEntryGroupList = null;
+			
+			//
+						
+			Integer groupIdFromJmedictRawDataList = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();			
+			
+			if (groupIdFromJmedictRawDataList != null) { // szukamy alternatyw z group	
+				
+				Group group = jmeNewDictionary.getGroupById(groupIdFromJmedictRawDataList);
+				
+				if (group != null) {  // to nie powinno zdarzyc sie, gdy nie bedzie zadnych roznic po danych surowych
 					
-					if (findPolishJapaneseEntry != null) {
-						foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
+					foundPolishJapaneseEntryGroupList = new ArrayList<>();
+					
+					//
+					
+					List<PolishJapaneseEntry> polishJapanaseEntryListForGroupId = cachePolishJapaneseEntryListByGroupIdFromJmedictRawDataList.get(groupIdFromJmedictRawDataList);
+					
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(group.getGroupEntryList(), kanji, kana);
+					
+					if (groupEntryList != null) { // to nie powinno zdarzyc sie, gdy nie bedzie zadnych roznic po danych surowych
+						
+						for (GroupEntry groupEntry : groupEntryList) {
+							
+							String groupEntryKanji = groupEntry.getKanji();
+							String groupEntryKana = groupEntry.getKana();
+							
+							PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntry(polishJapanaseEntryListForGroupId, groupEntryKanji, groupEntryKana);
+							
+							if (findPolishJapaneseEntry != null) {
+								foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
+							}					
+						}
 					}					
+				}								
+			} 
+			
+			if (foundPolishJapaneseEntryGroupList == null) { // dzialamy po staremu
+				
+				foundPolishJapaneseEntryGroupList = new ArrayList<>();
+				
+				//
+				
+				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
+				
+				if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+					
+					for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
+						
+						String groupEntryKanji = groupEntry.getKanji();
+						String groupEntryKana = groupEntry.getKana();
+																	
+						PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntryWithEdictDuplicate(
+								polishJapaneseEntry, cachePolishJapaneseEntryListKanjiKana, groupEntryKanji, groupEntryKana);
+						
+						if (findPolishJapaneseEntry != null) {
+							foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);
+						}					
+					}
 				}
-			}
+			}			
 			
 			if (foundPolishJapaneseEntryGroupList.size() > 1) {
 				
@@ -821,7 +889,7 @@ public class Helper {
 	private static PolishJapaneseEntry findPolishJapaneseEntry(List<PolishJapaneseEntry> polishJapaneseEntries,
 			String kanji, String kana) {
 
-		if (kanji.equals("") == true) {
+		if (kanji == null || kanji.equals("") == true) {
 			kanji = "-";
 		}
 

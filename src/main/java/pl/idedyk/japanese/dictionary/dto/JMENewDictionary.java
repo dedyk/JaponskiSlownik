@@ -201,6 +201,15 @@ public class JMENewDictionary {
 		
 		groupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
 		
+		return getTheSameTranslateInTheSameGroupGroupEntryList(groupEntryList, kanji, kana);
+	}	
+		
+	public List<GroupEntry> getTheSameTranslateInTheSameGroupGroupEntryList(List<GroupEntry> groupEntryList, String kanji, String kana) throws DictionaryException {
+		
+		if (kanji == null || kanji.equals("") == true || kanji.equals("-") == true) {
+			kanji = "$$$NULL$$$";
+		}
+		
 		Map<String, List<GroupEntry>> theSameTranslate = new TreeMap<String, List<GroupEntry>>(); 
 		
 		for (GroupEntry groupEntry : groupEntryList) {
