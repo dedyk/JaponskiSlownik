@@ -18393,7 +18393,7 @@ Translate: absently
 Translate: involuntarily"
 204613,WORD_NOUN,,HIRAGANA,,,銀行間取引,ぎんこうかんとりひき,,ginkou kantori hiki,transakcje międzybankowe,,,,"GroupId: 2415170
 Translate: interbank transactions"
-204614,WORD_NOUN,,HIRAGANA,,,十脚目,じっきゃくもく,,jikkyakumoku,Dziesięcionogi,rząd skorupiaków wyższych liczący ponad 6000 gatunków z nadrzędu raków właściwych u których zwykle pierwsza para odnóży krocznych jest przekształcona w duże szczypce,,,"GroupId: 2766320
+204614,WORD_NOUN,,HIRAGANA,,,十脚目,じっきゃくもく,,jikkyakumoku,Dziesięcionogi,rząd skorupiaków wyższych liczący ponad 6000 gatunków z nadrzędu raków właściwych u których zwykle pierwsza para odnóży krocznych jest przekształcona w duże szczypce,,DUPLICATE 204678,"GroupId: 2766320
 Translate: Decapoda (the order of crustaceans including shrimp and crabs)"
 204615,WORD_NOUN,,HIRAGANA,,,飾り切り,かざりぎり,,kazari giri,krojenie składników w ozdobne kształty,np. warzywa,,,"GroupId: 2828962
 Translate: cutting ingredients into decorative shapes (e.g. vegetables)"
@@ -18408,7 +18408,7 @@ Translate: test anxiety"
 Translate: test data"
 204619,WORD_ADJECTIVE_NO,,HIRAGANA,,,符号付き,ふごうつき,,fugou tsuki,podpisany,informatyka,,,"GroupId: 2436630
 Translate: signed"
-204620,WORD_NOUN,,KATAKANA,,,-,オオキバウスバカミキリ,,ookibausubakamikiri,Macrodontia cervicornis,gatunek chrząszcza z rodziny kózkowatych,,,"GroupId: 2829793
+204620,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオキバウスバカミキリ,,ookibausubakamikiri,Macrodontia cervicornis,gatunek chrząszcza z rodziny kózkowatych,,,"GroupId: 2829793
 Translate: Sabertooth Longhorn beetle (Macrodontia cervicornis)"
 204621,WORD_NOUN,,HIRAGANA,,,葱鮪鍋,ねぎまなべ,,negimanabe,gulasz oparty na cebulce dymce i tuńczyku,,,,"GroupId: 2619750
 Translate: stew based on spring onions and tuna"
@@ -18476,7 +18476,7 @@ WORD_NOUN",,HIRAGANA,,,家の人,いえのひと,,ie no hito,"swoja rodzina
 członek rodziny",,,,"GroupId: 2841214
 Translate: one's family
 Translate: family member"
-204635,WORD_VERB_U,,HIRAGANA,,,宿す,しゅくす,,shukusu,zatrzymywać się u,,,,"GroupId: 2842573
+204635,WORD_VERB_U,,HIRAGANA,,,宿す,しゅくす,,shukusu,zatrzymywać się u,,,DUPLICATE 3335,"GroupId: 2842573
 Translate: to stay (at)
 Translate: to stop (at)"
 204636,WORD_NOUN,,HIRAGANA,,,帰国者,きこくしゃ,,kikokusha,"repatriant
@@ -18504,7 +18504,7 @@ WORD_EXPRESSION",,HIRAGANA,,,身を削る,みをけずる,,mi o kezuru,"przechod
 mizernieć od wielkiego wysiłku i zamartwić się",,,,"GroupId: 2757410
 Translate: to undergo great hardships
 Translate: to waste away from great effort and worry"
-204642,WORD_NOUN,,HIRAGANA,,,牡丹雪,ぼたんゆき,,botan'yuki,duże płatki śniegu,,,,"GroupId: 1836120
+204642,WORD_NOUN,,HIRAGANA,,,牡丹雪,ぼたんゆき,,botan' yuki,duże płatki śniegu,,,,"GroupId: 1836120
 Translate: large snowflakes"
 204643,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,奇襲をかける,きしゅうをかける,,kishuu o kakeru,przeprowadzić niespodziewany atak,,,,"GroupId: 2831627
@@ -18558,7 +18558,7 @@ Translate: skin sensation"
 niezdecydowanie (mało znane znaczenie)
 wahanie (mało znane znaczenie)
 brak zdecydowania (mało znane znaczenie)
-azalia (Rhododendron)",,,,"GroupId: 2843015
+azalia (Rhododendron)",,,DUPLICATE 128724,"GroupId: 2843015
 Translate: hesitation
 MiscInfo: obsc
 Translate: indecision
@@ -18588,7 +18588,7 @@ Translate: pachinko player who wins using insider knowledge of the machines"
 powściągliwość
 wyobcowanie
 alienacja
-separacja",,,,"GroupId: 2843360
+separacja",,,DUPLICATE 204691,"GroupId: 2843360
 Translate: reserve
 Translate: alienation
 Translate: estrangement"
@@ -18617,23 +18617,29 @@ Translate: abruptly
 MiscInfo: obsc
 Translate: unexpectedly
 MiscInfo: obsc"
-204663,WORD_NOUN,,HIRAGANA,,,特牛,こというし,,kotoiushi,silny byk,archaizm,,,"GroupId: 2843412
+204663,WORD_NOUN,,HIRAGANA,,,特牛,こというし,,kotoiushi,silny byk,archaizm,,"DUPLICATE 204693
+DUPLICATE 204694
+DUPLICATE 204695
+DUPLICATE 204696
+DUPLICATE 204697
+DUPLICATE 204698
+DUPLICATE 204699","GroupId: 2843412
 Translate: strong bull
 MiscInfo: arch"
-204664,WORD_NOUN,,HIRAGANA,,,小花,こばな,,kobana,małą hanafuda,,,,"GroupId: 2843406
+204664,WORD_NOUN,,HIRAGANA,,,小花,こばな,,kobana,małą hanafuda,,,DUPLICATE 101190,"GroupId: 2843406
 Translate: small hanafuda"
 204665,WORD_NOUN,,HIRAGANA,,,心臓神経症,しんぞうしんけいしょう,,shinzou shinkeishou,nerwica serca,,,,"GroupId: 2608350
 Translate: cardiac neurosis"
 204666,WORD_NOUN,,HIRAGANA,,,緇衣,しえ,,shie,"czarna szata kapłana
 duchowny
-kapłan",buddyzm,,,"GroupId: 2843354
+kapłan",buddyzm,,DUPLICATE 204700,"GroupId: 2843354
 Translate: priest's black robe
 Translate: priest"
 204667,WORD_NOUN,,HIRAGANA,,,集議院,しゅうぎいん,,shuugiin,początkowy organ ustawodawczy z epoki Meiji (1869-1873),historyczny termin,,,"GroupId: 2843250
 Translate: initial Meiji-era legislative body (1869-1873)
 MiscInfo: hist"
 204668,WORD_NOUN,,HIRAGANA,,,庶人,しょじん,,shojin,"zwykli ludzie
-przeciętni ludzie",,,,"GroupId: 2843355
+przeciętni ludzie",,,DUPLICATE 204701,"GroupId: 2843355
 Translate: commoner
 Translate: common people"
 204669,WORD_NOUN,,HIRAGANA,,,辞謝,じしゃ,,jisha,"odmowa
@@ -18646,7 +18652,7 @@ Translate: turning down
 Translate: rejection
 Translate: nonacceptance"
 204670,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,ずには置かない,ずにはおかない,,zuni wa okanai,"nie można pomóc, ale
+WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,ずには置かない,ずにはおかない,,zuni wa okanai,"nie można pomóc, ale
 nie można uniknąć
 na pewno będzie",po czasowniku bez masu w formie przeczącej,,,"GroupId: 2843152
 Translate: can't help but
@@ -18691,7 +18697,185 @@ MiscInfo: arch
 AdditionalInfo: usu. in the negative, e.g. as 〜なく"
 204675,WORD_NOUN,,HIRAGANA,,,疎雨,そう,,sou,"mżawka
 kapuśniaczek
-deszczyk",archaizm,,,"GroupId: 2843365
+deszczyk",archaizm,,DUPLICATE 11042,"GroupId: 2843365
+Translate: drizzle
+MiscInfo: arch
+Translate: scattered rain
+MiscInfo: arch"
+204676,WORD_EXPRESSION,,HIRAGANA,,,持てるものと持たざるもの,もてるものともたざるもの,,moteru mono to motazaru mono,bogaci i biedni,,,,"GroupId: 2512000
+Translate: haves and have-nots"
+204677,WORD_ADVERB,,HIRAGANA,,,我にも無く,われにもなく,,ware ni mo naku,"wbrew sobie
+z roztargnieniem
+w zamyśleniu
+mimowolnie",,,,"GroupId: 2263640
+Translate: in spite of oneself
+Translate: absently
+Translate: involuntarily"
+204678,WORD_NOUN,,HIRAGANA,,,十脚目,じゅっきゃくもく,,jukkyakumoku,Dziesięcionogi,rząd skorupiaków wyższych liczący ponad 6000 gatunków z nadrzędu raków właściwych u których zwykle pierwsza para odnóży krocznych jest przekształcona w duże szczypce,,DUPLICATE 204614,"GroupId: 2766320
+Translate: Decapoda (the order of crustaceans including shrimp and crabs)"
+204679,WORD_NOUN,,KATAKANA,,,-,テスト・データ,,tesuto deeta,dane testowe,ang: test data,,,"GroupId: 2830072
+Translate: test data"
+204680,WORD_ADJECTIVE_NO,,HIRAGANA,,,符号付,ふごうつき,,fugou tsuki,podpisany,informatyka,,,"GroupId: 2436630
+Translate: signed"
+204681,"WORD_ADJECTIVE_NO
+WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,空々漠々,くうくうばくばく,,kuu kuu baku baku,"obszerny
+ogromny
+rozległy
+bezgraniczny
+bezkresny
+nieograniczony
+pusty
+mglisty
+niewyraźny",archaizm,,,"GroupId: 1675770
+Translate: vast
+MiscInfo: arch
+MiscInfo: yoji
+Translate: boundless
+MiscInfo: arch
+MiscInfo: yoji
+Translate: empty
+MiscInfo: arch
+MiscInfo: yoji
+Translate: vague
+MiscInfo: arch
+MiscInfo: yoji"
+204682,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,いえの人,いえのひと,,ie no hito,"swoja rodzina
+członek rodziny",,,,"GroupId: 2841214
+Translate: one's family
+Translate: family member"
+204683,WORD_NOUN,,HIRAGANA,,,こま送り,こまおくり,,koma okuri,"odtwarzanie klatka po klatce
+przewijanie klatek
+???",,,,"GroupId: 2714960
+Translate: frame-by-frame playback
+Translate: frame advance
+Translate: frame-by-frame advance
+Translate: film drive (camera)"
+204684,WORD_NOUN,,HIRAGANA,,,齣送り,こまおくり,,koma okuri,"odtwarzanie klatka po klatce
+przewijanie klatek
+???",,,,"GroupId: 2714960
+Translate: frame-by-frame playback
+Translate: frame advance
+Translate: frame-by-frame advance
+Translate: film drive (camera)"
+204685,WORD_NOUN,,HIRAGANA,,,ぼたん雪,ぼたんゆき,,botan' yuki,duże płatki śniegu,,,,"GroupId: 1836120
+Translate: large snowflakes"
+204686,WORD_NOUN,,KATAKANA_HIRAGANA,,,ボタン雪,ボタンゆき,,botan' yuki,duże płatki śniegu,,,,"GroupId: 1836120
+Translate: large snowflakes"
+204687,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,奇襲を掛ける,きしゅうをかける,,kishuu o kakeru,przeprowadzić niespodziewany atak,,,,"GroupId: 2831627
+Translate: to launch a surprise attack"
+204688,WORD_NOUN,,HIRAGANA,,,發兌,はつだ,,hatsuda,"publikacja
+drukowanie",literackie lub formalne określenie,,,"GroupId: 2843000
+Translate: publication
+MiscInfo: lit
+Translate: printing
+MiscInfo: lit"
+204689,WORD_ADVERB,,HIRAGANA,,,飜って,ひるがえって,,hirugaette,"odwrotnie
+na odwrót
+z innego kąta",,,,"GroupId: 2514580
+Translate: conversely
+Translate: from another angle"
+204690,WORD_NOUN,,HIRAGANA,,,１日目,いちにちめ,,ichinichime,"pierwszy dzień (np. w pracy, szkole)
+dzień pierwszy",,,,"GroupId: 2843430
+Translate: first day (e.g. at work, school)
+Translate: day one"
+204691,WORD_NOUN,,HIRAGANA,,,隔心,きゃくしん,,kyakushin,"rezerwa
+powściągliwość
+wyobcowanie
+alienacja
+separacja",,,DUPLICATE 204658,"GroupId: 2843360
+Translate: reserve
+Translate: alienation
+Translate: estrangement"
+204692,WORD_NOUN,,HIRAGANA,,,金闕,きんけつ,,kinketsu,"brama pałacowa
+cesarski pałac",,,,"GroupId: 2843275
+Translate: palace gate
+Translate: imperial palace"
+204693,WORD_NOUN,,HIRAGANA,,,特牛,こというじ,,kotoiuji,silny byk,archaizm,,"DUPLICATE 204663
+DUPLICATE 204694
+DUPLICATE 204695
+DUPLICATE 204696
+DUPLICATE 204697
+DUPLICATE 204698
+DUPLICATE 204699","GroupId: 2843412
+Translate: strong bull
+MiscInfo: arch"
+204694,WORD_NOUN,,HIRAGANA,,,特牛,こってい,,kottei,silny byk,archaizm,,"DUPLICATE 204663
+DUPLICATE 204693
+DUPLICATE 204695
+DUPLICATE 204696
+DUPLICATE 204697
+DUPLICATE 204698
+DUPLICATE 204699","GroupId: 2843412
+Translate: strong bull
+MiscInfo: arch"
+204695,WORD_NOUN,,HIRAGANA,,,特牛,こっていうし,,kotteiushi,silny byk,archaizm,,"DUPLICATE 204663
+DUPLICATE 204693
+DUPLICATE 204694
+DUPLICATE 204696
+DUPLICATE 204697
+DUPLICATE 204698
+DUPLICATE 204699","GroupId: 2843412
+Translate: strong bull
+MiscInfo: arch"
+204696,WORD_NOUN,,HIRAGANA,,,特牛,こってうし,,kotteushi,silny byk,archaizm,,"DUPLICATE 204663
+DUPLICATE 204693
+DUPLICATE 204694
+DUPLICATE 204695
+DUPLICATE 204697
+DUPLICATE 204698
+DUPLICATE 204699","GroupId: 2843412
+Translate: strong bull
+MiscInfo: arch"
+204697,WORD_NOUN,,HIRAGANA,,,特牛,こっとい,,kottoi,silny byk,archaizm,,"DUPLICATE 204663
+DUPLICATE 204693
+DUPLICATE 204694
+DUPLICATE 204695
+DUPLICATE 204696
+DUPLICATE 204698
+DUPLICATE 204699","GroupId: 2843412
+Translate: strong bull
+MiscInfo: arch"
+204698,WORD_NOUN,,HIRAGANA,,,特牛,ことい,,kotoi,silny byk,archaizm,,"DUPLICATE 204663
+DUPLICATE 204693
+DUPLICATE 204694
+DUPLICATE 204695
+DUPLICATE 204696
+DUPLICATE 204697
+DUPLICATE 204699","GroupId: 2843412
+Translate: strong bull
+MiscInfo: arch"
+204699,WORD_NOUN,,HIRAGANA,,,特牛,こといのうし,,kotoinoushi,silny byk,archaizm,,"DUPLICATE 204663
+DUPLICATE 204693
+DUPLICATE 204694
+DUPLICATE 204695
+DUPLICATE 204696
+DUPLICATE 204697
+DUPLICATE 204698","GroupId: 2843412
+Translate: strong bull
+MiscInfo: arch"
+204700,WORD_NOUN,,HIRAGANA,,,緇衣,しい,,shii,"czarna szata kapłana
+duchowny
+kapłan",buddyzm,,"DUPLICATE 54156
+DUPLICATE 204666","GroupId: 2843354
+Translate: priest's black robe
+Translate: priest"
+204701,WORD_NOUN,,HIRAGANA,,,庶人,しょにん,,shonin,"zwykli ludzie
+przeciętni ludzie",,,DUPLICATE 204668,"GroupId: 2843355
+Translate: commoner
+Translate: common people"
+204702,WORD_NOUN,,HIRAGANA,,,疏雨,そう,,sou,"mżawka
+kapuśniaczek
+deszczyk",archaizm,,DUPLICATE 11042,"GroupId: 2843365
+Translate: drizzle
+MiscInfo: arch
+Translate: scattered rain
+MiscInfo: arch"
+204703,WORD_NOUN,,HIRAGANA,,,踈雨,そう,,sou,"mżawka
+kapuśniaczek
+deszczyk",archaizm,,DUPLICATE 11042,"GroupId: 2843365
 Translate: drizzle
 MiscInfo: arch
 Translate: scattered rain
