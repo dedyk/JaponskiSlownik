@@ -23,7 +23,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import org.apache.commons.io.FileUtils;
-import org.json.JSONObject;
+import org.json.JSONArray;
 
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
@@ -176,10 +176,10 @@ public class AndroidDictionaryGenerator {
 
 		CsvReaderWriter.generateCsv(new String[] { destinationFileName }, result, true, false, true, false, null);
 		
-		JSONObject resultJSON = JSONReaderWriter.createDictionaryOutputJSON(jmeNewDictionary, polishJapaneseEntries);
+		JSONArray resultJSONArray = JSONReaderWriter.createDictionaryOutputJSON(jmeNewDictionary, polishJapaneseEntries);
 		
 		// zapisanie w formacie JSON		
-		JSONReaderWriter.writeJSONToFile(new File(destinationJSONFileName), resultJSON);
+		JSONReaderWriter.writeJSONArrayToFile(new File(destinationJSONFileName), resultJSONArray);
 		
 		// generowanie mocy slow
 		System.out.println("checkAndSavePolishJapaneseEntries: generateWordPowerCsv");

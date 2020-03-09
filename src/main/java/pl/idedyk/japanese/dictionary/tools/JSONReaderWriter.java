@@ -4,11 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.TreeMap;
 
 import org.apache.commons.lang.StringUtils;
 import org.json.JSONArray;
@@ -24,37 +20,32 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 
 public class JSONReaderWriter {
 	
-	public static JSONObject createDictionaryOutputJSON(JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) {
+	public static JSONArray createDictionaryOutputJSON(JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) {
 		
-		JSONObject result = new JSONObject();
-		
-		// naglowek
-		Map<String, String> headerMap = new TreeMap<>();
-		
-		List<JSONObject> jsonEntryListToAdd = new ArrayList<>();
+		JSONArray result = new JSONArray();
 				
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			JSONObject jsonEntry = new JSONObject();
 			
-			addJSONEntry(headerMap, jsonEntry, "id", polishJapaneseEntry.getId());
-			addJSONEntry(headerMap, jsonEntry, "dictionaryEntryTypeList", Helper.convertListToListString(polishJapaneseEntry.getDictionaryEntryTypeList()));
-			addJSONEntry(headerMap, jsonEntry, "attributeList", Helper.convertAttributeListToListString(polishJapaneseEntry.getAttributeList()));
-			addJSONEntry(headerMap, jsonEntry, "wordType", polishJapaneseEntry.getWordType().toString());
-			addJSONEntry(headerMap, jsonEntry, "groups", Helper.convertListToListString(GroupEnum.convertToValues(polishJapaneseEntry.getGroups())));	
-			addJSONEntry(headerMap, jsonEntry, "prefixKana", polishJapaneseEntry.getPrefixKana());
+			addJSONEntry(jsonEntry, "id", polishJapaneseEntry.getId());
+			addJSONEntry(jsonEntry, "dictionaryEntryTypeList", Helper.convertListToListString(polishJapaneseEntry.getDictionaryEntryTypeList()));
+			addJSONEntry(jsonEntry, "attributeList", Helper.convertAttributeListToListString(polishJapaneseEntry.getAttributeList()));
+			addJSONEntry(jsonEntry, "wordType", polishJapaneseEntry.getWordType().toString());
+			addJSONEntry(jsonEntry, "groups", Helper.convertListToListString(GroupEnum.convertToValues(polishJapaneseEntry.getGroups())));	
+			addJSONEntry(jsonEntry, "prefixKana", polishJapaneseEntry.getPrefixKana());
 			
 			if (polishJapaneseEntry.isKanjiExists() == true) {
-				addJSONEntry(headerMap, jsonEntry, "kanji", polishJapaneseEntry.getKanji());
+				addJSONEntry(jsonEntry, "kanji", polishJapaneseEntry.getKanji());
 			}
 			
-			addJSONEntry(headerMap, jsonEntry, "kana", polishJapaneseEntry.getKana());
-			addJSONEntry(headerMap, jsonEntry, "prefixRomaji", polishJapaneseEntry.getPrefixRomaji());
-			addJSONEntry(headerMap, jsonEntry, "romaji", polishJapaneseEntry.getRomaji());
-			addJSONEntry(headerMap, jsonEntry, "translates", polishJapaneseEntry.getTranslates());
-			addJSONEntry(headerMap, jsonEntry, "info", polishJapaneseEntry.getInfo());
-			addJSONEntry(headerMap, jsonEntry, "parseAdditionalInfoList", Helper.convertListToListString(polishJapaneseEntry.getParseAdditionalInfoList()));
-			addJSONEntry(headerMap, jsonEntry, "exampleSentenceGroupIdsList", Helper.convertListToListString(polishJapaneseEntry.getExampleSentenceGroupIdsList()));
+			addJSONEntry(jsonEntry, "kana", polishJapaneseEntry.getKana());
+			addJSONEntry(jsonEntry, "prefixRomaji", polishJapaneseEntry.getPrefixRomaji());
+			addJSONEntry(jsonEntry, "romaji", polishJapaneseEntry.getRomaji());
+			addJSONEntry(jsonEntry, "translates", polishJapaneseEntry.getTranslates());
+			addJSONEntry(jsonEntry, "info", polishJapaneseEntry.getInfo());
+			addJSONEntry(jsonEntry, "parseAdditionalInfoList", Helper.convertListToListString(polishJapaneseEntry.getParseAdditionalInfoList()));
+			addJSONEntry(jsonEntry, "exampleSentenceGroupIdsList", Helper.convertListToListString(polishJapaneseEntry.getExampleSentenceGroupIdsList()));
 			
 			DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
 			
@@ -93,10 +84,8 @@ public class JSONReaderWriter {
 						englishTranslateStringList.add(englishJSONEntryText.toString());
 					}
 					
-					addJSONEntry(headerMap, jsonEntry, "englishTranslates", englishTranslateStringList);
-				}	
-				
-				jsonEntryListToAdd.add(jsonEntry);
+					addJSONEntry(jsonEntry, "englishTranslates", englishTranslateStringList);
+				}				
 			}
 			
 			/*								
@@ -107,53 +96,18 @@ public class JSONReaderWriter {
 			
 			csvWriter.endRecord();
 			*/
+			
+			
+			result.put(jsonEntry);
 		}
-		
-		// dodajemy naglowek
-		Iterator<Entry<String, String>> headerMapIterator = headerMap.entrySet().iterator();
-		
-		JSONObject headerJSONObject = new JSONObject();
-		
-		while(headerMapIterator.hasNext() == true) {
-			
-			Entry<String, String> entry = headerMapIterator.next();
-			
-			headerJSONObject.put(entry.getKey(), entry.getValue());			
-		}		
-		
-		//
-		
-		JSONArray wordsJSONArray = new JSONArray();
-		
-		for (JSONObject jsonEntry : jsonEntryListToAdd) {
-			wordsJSONArray.put(jsonEntry);
-		}		
-		
-		result.put("header", headerJSONObject);
-		result.put("words", wordsJSONArray);
 				
 		return result;
 	}
 	
-	private static void addHeaderField(Map<String, String> headerMap, String fieldName) {
-		
-		char generatedFieldName = (char)('a' + headerMap.size());
-		
-		headerMap.put(fieldName, String.valueOf(generatedFieldName));
-	}
-	
-	private static void addJSONEntry(Map<String, String> headerMap, JSONObject jsonEntry, String key, Object data) {
+	private static void addJSONEntry(JSONObject jsonEntry, String key, Object data) {
 		
 		if (data == null) {
 			return;
-		}
-		
-		String fieldName = headerMap.get(key);
-		
-		if (fieldName == null) {
-			addHeaderField(headerMap, key);
-			
-			fieldName = headerMap.get(key);
 		}
 		
 		if (data instanceof String == true) {
@@ -164,11 +118,11 @@ public class JSONReaderWriter {
 				return;
 			}
 			
-			jsonEntry.put(fieldName, string);			
+			jsonEntry.put(key, string);			
 			
 		} else if (data instanceof Integer == true) {
 			
-			jsonEntry.put(fieldName, (Integer)data);
+			jsonEntry.put(key, (Integer)data);
 			
 		} else if (data instanceof List == true) { 
 			
@@ -178,18 +132,18 @@ public class JSONReaderWriter {
 				return;
 			}
 			
-			jsonEntry.put(fieldName, list);
+			jsonEntry.put(key, list);
 			
 		} else {
 			throw new RuntimeException(data.getClass().toString());
 		}		
 	}
 	
-	public static void writeJSONToFile(File outputFile, JSONObject json) {
+	public static void writeJSONArrayToFile(File outputFile, JSONArray jsonArray) {
 		
         try (FileWriter file = new FileWriter(outputFile)) {
         	 
-            file.write(json.toString(1));
+            file.write(jsonArray.toString(1));
             
             file.flush();
  
