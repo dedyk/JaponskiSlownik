@@ -1070,4 +1070,68 @@ public class CsvReaderWriter {
 		
 		csvWriter.close();
 	}	
+	
+	public static ICustomAdditionalCsvWriter getCustomAdditionaCsvWriterToAddEnglishTranslate(final JMENewDictionary jmeNewDictionary) {
+		
+		return new ICustomAdditionalCsvWriter() {
+			
+			@Override
+			public void write(CsvWriter csvWriter, KanjiEntryForDictionary kanjiEntry) throws IOException {
+				throw new UnsupportedOperationException();				
+			}
+			
+			@Override
+			public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
+				
+				/*
+				DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+				
+				if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+					csvWriter.write("");
+					
+				} else {
+										
+					// dodawanie angielskich tlumaczen
+					
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+					
+					if (groupEntryList != null && groupEntryList.size() == 1 && JMENewDictionary.isMultiGroup(groupEntryList) == false) { // tylko dla grup pojedynczych
+						
+						// dodajemy angielskie tlumaczenie
+						GroupEntry groupEntry = groupEntryList.get(0);
+						
+						List<GroupEntryTranslate> englishTranslateList = groupEntry.getTranslateList();
+						
+						List<String> englishTranslateStringList = new ArrayList<>();
+						
+						for (GroupEntryTranslate currentEnglishTranslateList : englishTranslateList) {
+							
+							String englishSingleTranslate = currentEnglishTranslateList.getTranslate();
+							
+							List<String> englishAdditionalInfoList = currentEnglishTranslateList.getAdditionalInfoList();
+							
+							//
+							
+							StringBuffer englishJSONEntryText = new StringBuffer(englishSingleTranslate);
+							
+							if (englishAdditionalInfoList.size() > 0) {
+								
+								englishJSONEntryText.append(" (");
+								englishJSONEntryText.append(Helper.convertListToString(englishAdditionalInfoList, ", "));
+								englishJSONEntryText.append(")");
+							}
+							
+							englishTranslateStringList.add(englishJSONEntryText.toString());
+						}
+						
+						csvWriter.write(Helper.convertListToString(englishTranslateStringList));
+						
+					} else {
+						csvWriter.write("");
+					}
+				}
+				*/				
+			}
+		};
+	}
 }
