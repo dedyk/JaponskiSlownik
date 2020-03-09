@@ -130,34 +130,28 @@ public class JMENewDictionary {
 	}
 	
 	public List<GroupEntry> getGroupEntryList(PolishJapaneseEntry polishJapaneseEntry) {
-		
+				
 		// najpierw pobieramy liste na podstawie kanji i kana
 		List<GroupEntry> groupEntryList = getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
 		
 		// pobieramy surowe dane (jesli sa wpisane)
-		List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
-		
+		Integer groupId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+
 		// szukamy konkretnej grupy dla danego slowa
 		List<GroupEntry> groupEntryListForPolishJapaneseEntry = null;
 		
-		if (groupEntryList == null) {
-			return groupEntryList;
-		}
-		
-		// szukamy grupy na podstawie id zawartego w jmedict raw data (rozwiazuje to problem multigroup)
-		for (GroupEntry currentGroupEntry : groupEntryList) {
+		if (groupId != null && groupEntryList != null) {
 			
-			String groupIdString = currentGroupEntry.getGroup().getGroupIdString();
-			
-			// czy ta sama grupa
-			if (jmedictRawDataList.contains(groupIdString) == true) {
-				groupEntryListForPolishJapaneseEntry = Arrays.asList(currentGroupEntry);
+			// szukamy grupy na podstawie id zawartego w jmedict raw data (rozwiazuje to problem multigroup)
+			for (GroupEntry currentGroupEntry : groupEntryList) {
 				
-				break;								
+				if (currentGroupEntry.getGroup().getId().intValue() == groupId.intValue()) {
+					groupEntryListForPolishJapaneseEntry = Arrays.asList(currentGroupEntry);
+				}				
 			}
 		}
 		
-		// jezeli nie udalo sie znalezc grupy, zwracamy, co wczesniej znaleslismy (moga byc multigroup)
+		// jezeli nie udalo sie znalezc grupy, zwracamy, co wczesniej znaleslismy (moga byc multigroup)		
 		if (groupEntryListForPolishJapaneseEntry == null) {								
 			groupEntryListForPolishJapaneseEntry = groupEntryList;
 		}

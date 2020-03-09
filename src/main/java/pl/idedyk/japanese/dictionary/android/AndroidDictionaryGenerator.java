@@ -178,7 +178,7 @@ public class AndroidDictionaryGenerator {
 		
 		JSONArray resultJSONArray = JSONReaderWriter.createDictionaryOutputJSON(jmeNewDictionary, polishJapaneseEntries);
 		
-		// zapisanie w formacie JSON
+		// zapisanie w formacie JSON		
 		JSONReaderWriter.writeJSONArrayToFile(new File(destinationJSONFileName), resultJSONArray);
 		
 		// generowanie mocy slow
