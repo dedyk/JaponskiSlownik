@@ -4410,7 +4410,8 @@ WORD_ADVERB_TO",,HIRAGANA,,,さん然,さんぜん,,sanzen,"jasny
 olśniewający
 rozpromieniony
 promienny",,,,
-201101,WORD_NOUN,,HIRAGANA,,,仏国,ふつこく,,futsukoku,Francja,,,DUPLICATE 95274,
+201101,WORD_NOUN,,HIRAGANA,,,仏国,ふつこく,,futsukoku,Francja,,,"DUPLICATE 95274
+DUPLICATE 204768",
 201102,WORD_NOUN,,HIRAGANA,,,鉗口令,かんこうれい,,kankourei,"prawo ograniczające swobodę wypowiedzi w sprawie wciąż rozpatrywanej przez sąd
 zasada ograniczająca czas debaty
 prawo ograniczające swobodę wypowiedzi",,,,
@@ -18956,7 +18957,8 @@ ulotna egzystencja",,,,"GroupId: 1637940
 Translate: transient life
 Translate: ephemeral existence"
 204724,WORD_NOUN,,KATAKANA,,,ＴＯＥＦＬ,トーフル,,toofuru,"Test of English as a Foreign Language
-TOEFL",egzamin sprawdzający umiejętność rozumienia i posługiwania się językiem angielskim w środowisku akademickim,,,"GroupId: 2207030
+TOEFL",egzamin sprawdzający umiejętność rozumienia i posługiwania się językiem angielskim w środowisku akademickim,,"DUPLICATE 204826
+DUPLICATE 204827","GroupId: 2207030
 Translate: Test of English as a Foreign Language
 Translate: TOEFL"
 204725,WORD_NOUN,,KATAKANA_HIRAGANA,,,トラザメ属,トラザメぞく,,torazame zoku,Scyliorhinus,rodzaj drapieżnych ryb chrzęstnoszkieletowych z rodziny rekinkowatych,,,"GroupId: 2552340
@@ -19018,7 +19020,7 @@ wygadany
 rozmowny
 bezbłędny w mowie
 osoba potrafiąca gładko mówić
-gładki mówca",,,,"GroupId: 1678290
+gładki mówca",,,DUPLICATE 204833,"GroupId: 1678290
 Translate: eloquent
 Translate: glib
 Translate: talkative
@@ -19098,7 +19100,7 @@ Translate: talking about oneself
 MiscInfo: col"
 204762,WORD_NOUN,,HIRAGANA,,,不覚の涙,ふかくのなみだ,,fukaku no namida,płakanie wbrew sobie,,,,"GroupId: 1491640
 Translate: crying in spite of oneself"
-204763,WORD_NOUN,,HIRAGANA,,,壁訴訟,かべそしょう,,kabesoshou,narzekanie lub mamrotanie do siebie,,,,"GroupId: 1663420
+204763,WORD_NOUN,,HIRAGANA,,,壁訴訟,かべそしょう,,kabesoshou,narzekanie lub mamrotanie do siebie,,,DUPLICATE 204838,"GroupId: 1663420
 Translate: grumbling or mumbling to oneself"
 204764,WORD_VERB_U,,HIRAGANA,,,殴りかかる,なぐりかかる,,naguri kakaru,"uderzyć pięścią w
 podnieść rękę na",,,,"GroupId: 2843282
@@ -19139,7 +19141,8 @@ Translate: sincerely
 Translate: profoundly"
 204768,WORD_NOUN,,HIRAGANA,,,仏国,ぶっこく,,bukkoku,"buddyjski kraj
 teren Buddy
-buddyjski raj",,,,"GroupId: 2843432
+buddyjski raj",,,"DUPLICATE 95274
+DUPLICATE 201101","GroupId: 2843432
 Translate: Buddhist country
 Translate: the land of Buddha
 Translate: Buddhist paradise"
@@ -19178,13 +19181,15 @@ Translate: as well as"
 204776,WORD_NOUN,,KATAKANA_HIRAGANA,,,独逸語,ドイツご,,doitsugo,język niemiecki,,,,
 204777,WORD_NOUN,,KATAKANA_HIRAGANA,,,独乙語,ドイツご,,doitsugo,język niemiecki,,,,
 204778,WORD_NOUN,,KATAKANA,,,-,インデキス,,indekisu,indeks,,,,
-204779,WORD_NOUN,,HIRAGANA,,,関心事,かんしんごと,,kanshin goto,kwestia sprawy i interesów,,,,
+204779,WORD_NOUN,,HIRAGANA,,,関心事,かんしんごと,,kanshin goto,kwestia sprawy i interesów,,,DUPLICATE 22378,
 204780,WORD_NOUN,,HIRAGANA,,,関心ごと,かんしんごと,,kanshin goto,kwestia sprawy i interesów,,,,
 204781,WORD_EXPRESSION,,KATAKANA,,,-,コギト・エルゴ・スム,,kogito erugo sumu,"cogito, ergo, sum
 myślę, więc jestem",,,,
 204782,WORD_NOUN,,HIRAGANA,,,途,ど,,do,"droga
 sposób
-kierunek",,,,
+kierunek",,,"DUPLICATE 8262
+DUPLICATE 36416
+DUPLICATE 93202",
 204783,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,云える,いえる,,ieru,"być możliwe do powiedzenia
 być zdolny powiedzieć",,,,
@@ -19202,18 +19207,20 @@ dzielny wojownik",,,,
 204788,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,マルウエア,,maruuea,złośliwe oprogramowanie,ang: malware,,,
 204789,WORD_NOUN,,HIRAGANA,,,貪,とん,,ton,"pragnienie
 pożądanie
-??? (buddyzm)",,,,
+??? (buddyzm)",,,"DUPLICATE 80041
+DUPLICATE 84421
+DUPLICATE 84475",
 204790,WORD_NOUN,,HIRAGANA,,,博打打,ばくちうち,,bakuchiuchi,"zawodowy hazardzista
 hazard",,,,
 204791,WORD_NOUN,,HIRAGANA,,,博奕打,ばくちうち,,bakuchiuchi,"zawodowy hazardzista
 hazard",,,,
 204792,WORD_NOUN,,HIRAGANA,,,閏日,じゅんじつ,,junjitsu,"dodatkowy dzień 29 lutego
-dzień przestępny",,,,
+dzień przestępny",,,DUPLICATE 90856,
 204793,WORD_ADJECTIVE_NA,,HIRAGANA,,,珍希,ちんき,,chinki,"niezwykły
 niespotykany
 rzadki",,,,
 204794,WORD_NOUN,,HIRAGANA,,,餞,せん,,sen,"prezent pożegnalny
-wiatyk (komunia podawana umierającemu)",czasami pisano jako 鼻向け,,,"GroupId: 1574440
+wiatyk (komunia podawana umierającemu)",czasami pisano jako 鼻向け,,DUPLICATE 100977,"GroupId: 1574440
 Translate: farewell gift
 AdditionalInfo: sometimes written 鼻向け
 Translate: parting gift
@@ -19245,12 +19252,14 @@ Translate: the ""ma"" column of the Japanese syllabary table (ma, mi, mu, me, mo
 204805,WORD_NOUN,,HIRAGANA,,,麻行,まぎょう,,ma gyou,kolumna “ma” w japońskim sylabariuszu kana,"ma, mi, mu, me, mo",,,"GroupId: 1130360
 Translate: the ""ma"" column of the Japanese syllabary table (ma, mi, mu, me, mo)"
 204806,WORD_ADVERB,,HIRAGANA,,,頓に,とにに,,tonini,"nagle
-gwałtownie",,,,"GroupId: 1954120
+gwałtownie",,,"DUPLICATE 152347
+DUPLICATE 204807","GroupId: 1954120
 Translate: suddenly
 Translate: all at once
 Translate: rapidly"
 204807,WORD_ADVERB,,HIRAGANA,,,頓に,とんに,,tonni,"nagle
-gwałtownie",,,,"GroupId: 1954120
+gwałtownie",,,"DUPLICATE 152347
+DUPLICATE 204806","GroupId: 1954120
 Translate: suddenly
 Translate: all at once
 Translate: rapidly"
@@ -19264,9 +19273,11 @@ Translate: the ""ha"" column of the Japanese syllabary table (ha, hi, fu, he, ho
 Translate: the ""na"" column of the Japanese syllabary table (na, ni, nu, ne, no)"
 204812,WORD_NOUN,,HIRAGANA,,,良行,らぎょう,,ra gyou,kolumna “ra” w japońskim sylabariuszu kana,"ra, ri, ru, re, ro",,,"GroupId: 1140420
 Translate: the ""ra"" column of the Japanese syllabary table (ra, ri, ru, re, ro)"
-204813,WORD_NOUN,,HIRAGANA,,,膿汁,うみしる,,umishiru,ropa,np. podczas zakażenia,,,"GroupId: 1827290
+204813,WORD_NOUN,,HIRAGANA,,,膿汁,うみしる,,umishiru,ropa,np. podczas zakażenia,,"DUPLICATE 165407
+DUPLICATE 204814","GroupId: 1827290
 Translate: pus"
-204814,WORD_NOUN,,HIRAGANA,,,膿汁,うみじる,,umijiru,ropa,np. podczas zakażenia,,,"GroupId: 1827290
+204814,WORD_NOUN,,HIRAGANA,,,膿汁,うみじる,,umijiru,ropa,np. podczas zakażenia,,"DUPLICATE 165407
+DUPLICATE 204813","GroupId: 1827290
 Translate: pus"
 204815,WORD_EXPRESSION,,HIRAGANA,,,治にいて乱を忘れず,ちにいてらんをわすれず,,chi ni ite ran o wasurezu,przezorny zawsze ubezpieczony,przysłowie,,,"GroupId: 2417740
 Translate: forewarned is forearmed
@@ -19307,11 +19318,13 @@ MiscInfo: uk
 Translate: titlark
 MiscInfo: uk"
 204826,WORD_NOUN,,KATAKANA,,,ＴＯＥＦＬ,トフル,,tofuru,"Test of English as a Foreign Language
-TOEFL",egzamin sprawdzający umiejętność rozumienia i posługiwania się językiem angielskim w środowisku akademickim,,,"GroupId: 2207030
+TOEFL",egzamin sprawdzający umiejętność rozumienia i posługiwania się językiem angielskim w środowisku akademickim,,"DUPLICATE 204724
+DUPLICATE 204827","GroupId: 2207030
 Translate: Test of English as a Foreign Language
 Translate: TOEFL"
 204827,WORD_NOUN,,KATAKANA,,,ＴＯＥＦＬ,トッフル,,toffuru,"Test of English as a Foreign Language
-TOEFL",egzamin sprawdzający umiejętność rozumienia i posługiwania się językiem angielskim w środowisku akademickim,,,"GroupId: 2207030
+TOEFL",egzamin sprawdzający umiejętność rozumienia i posługiwania się językiem angielskim w środowisku akademickim,,"DUPLICATE 204724
+DUPLICATE 204826","GroupId: 2207030
 Translate: Test of English as a Foreign Language
 Translate: TOEFL"
 204828,WORD_ADJECTIVE_F,,KATAKANA,,,-,トゥラジカル,,turajikaru,tragiczny,ang: tragical,,,"GroupId: 2179220
@@ -19331,7 +19344,7 @@ wygadany
 rozmowny
 bezbłędny w mowie
 osoba potrafiąca gładko mówić
-gładki mówca",,,,"GroupId: 1678290
+gładki mówca",,,DUPLICATE 204742,"GroupId: 1678290
 Translate: eloquent
 Translate: glib
 Translate: talkative
@@ -19356,7 +19369,7 @@ Translate: to seclude oneself
 MiscInfo: arch
 Translate: to shut oneself away
 MiscInfo: arch"
-204838,WORD_NOUN,,HIRAGANA,,,壁訴訟,かべぞしょう,,kabezoshou,narzekanie lub mamrotanie do siebie,,,,"GroupId: 1663420
+204838,WORD_NOUN,,HIRAGANA,,,壁訴訟,かべぞしょう,,kabezoshou,narzekanie lub mamrotanie do siebie,,,DUPLICATE 204763,"GroupId: 1663420
 Translate: grumbling or mumbling to oneself"
 204839,WORD_VERB_U,,HIRAGANA,,,殴り掛かる,なぐりかかる,,naguri kakaru,"uderzyć pięścią w
 podnieść rękę na",,,,"GroupId: 2843282
@@ -19393,7 +19406,8 @@ Translate: Netherlands"
 Niderlandia
 Niderlandy",ang: Netherlands,,,"GroupId: 2276150
 Translate: Netherlands"
-204844,WORD_NOUN,,HIRAGANA,,,膿,のう,,nou,ropa,podczas zakażenia,,,"GroupId: 1470560
+204844,WORD_NOUN,,HIRAGANA,,,膿,のう,,nou,ropa,podczas zakażenia,,"DUPLICATE 82993
+DUPLICATE 107338","GroupId: 1470560
 Translate: pus"
 204845,WORD_NOUN,,HIRAGANA,,,金融引締め,きんゆうひきしめ,,kin'yuu hiki shime,"zacieśnienie monetarne
 zamrożenie kredytów
@@ -19403,7 +19417,8 @@ Translate: monetary tightening
 Translate: credit squeeze
 Translate: credit crunch"
 204846,WORD_NOUN,,KATAKANA,,,-,シャチ,,shachi,"drewniany kołek
-???",,,EDICT_DUPLICATE 74735,"GroupId: 2603990
+???",,,"DUPLICATE 74735
+EDICT_DUPLICATE 74735","GroupId: 2603990
 Translate: wooden dowel
 MiscInfo: uk
 Translate: draw pin
@@ -19465,3 +19480,27 @@ dozownik sosu sojowego",,,,"GroupId: 2843232
 Translate: soy sauce bottle
 Translate: soy sauce dispenser
 Translate: soy sauce cruet"
+204860,WORD_NOUN,,HIRAGANA,,,為すすべ,なすすべ,,nasu sube,"środek
+sposób
+metoda",zwykle w przeczeniu,,,"GroupId: 2843428
+Translate: means
+MiscInfo: uk
+AdditionalInfo: usu. in negative
+Translate: method
+MiscInfo: uk
+AdditionalInfo: usu. in negative
+Translate: way
+MiscInfo: uk
+AdditionalInfo: usu. in negative"
+204861,WORD_NOUN,,HIRAGANA,,,為術,なすすべ,,nasu sube,"środek
+sposób
+metoda",zwykle w przeczeniu,,,"GroupId: 2843428
+Translate: means
+MiscInfo: uk
+AdditionalInfo: usu. in negative
+Translate: method
+MiscInfo: uk
+AdditionalInfo: usu. in negative
+Translate: way
+MiscInfo: uk
+AdditionalInfo: usu. in negative"
