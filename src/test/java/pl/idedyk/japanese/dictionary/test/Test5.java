@@ -2,20 +2,18 @@ package pl.idedyk.japanese.dictionary.test;
 
 import java.util.List;
 
-import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 
 public class Test5 {
 
 	public static void main(String[] args) throws Exception {
 
-		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
+		// JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		// List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
 		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
@@ -36,7 +34,7 @@ public class Test5 {
 		System.out.println();
 		*/
 		
-		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
+		// JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
 				
 		/*
 		List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList("水瓜", "すいか");
@@ -150,7 +148,7 @@ public class Test5 {
 		CsvReaderWriter.generateWordGroupCsv(outputStream, generateWordGroupList);
 		*/
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		// List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
 		
 		/*
 		for (int i = 0; i < 50; ++i) {
@@ -179,6 +177,7 @@ public class Test5 {
 		JSONReaderWriter.writeJSONArrayToFile(new File("/tmp/a/test.json"), jsonArray);
 		*/
 		
+		/*
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			if (polishJapaneseEntry.getId() != 21817) {
@@ -198,10 +197,31 @@ public class Test5 {
 					System.out.println(groupEntry.getTranslateList());
 					
 				}
+			}			
+		}
+		*/
+		
+		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
+				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
+		
+		List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+		
+		JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+			
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
+			
+			if (groupEntryList == null) {
+				continue;
 			}
 			
+			boolean multiGroup = JMENewDictionary.isMultiGroup(groupEntryList);
 			
-		}
+			if (multiGroup == true) {
+				System.out.println(polishJapaneseEntry.getId());
+			}			
+		}		
 	}
 	
 	/*
