@@ -20161,7 +20161,7 @@ korzyść
 pożytek
 pomoc
 wartość
-użytek",ateji,,,"GroupId: 2843339
+użytek",ateji,,DUPLICATE 40094,"GroupId: 2843339
 Translate: way
 AdditionalInfo: from 為む
 Translate: method
@@ -20183,7 +20183,7 @@ MiscInfo: obs"
 204991,WORD_NOUN,,HIRAGANA,,,川劇,せんげき,,sengeki,opera syczuańska,,,,"GroupId: 2843497
 Translate: Sichuan opera"
 204992,WORD_NOUN,,HIRAGANA,,,大害,たいがい,,taigai,"poważne uszkodzenie
-wielka krzywda",,,,"GroupId: 2843494
+wielka krzywda",,,DUPLICATE 205038,"GroupId: 2843494
 Translate: heavy damage
 Translate: great harm"
 204993,WORD_NOUN,,HIRAGANA,,,口馴らし,くちならし,,kuchi narashi,przyzwyczajanie się do określonego smaku,,,,"GroupId: 1664180
@@ -20323,7 +20323,7 @@ MiscInfo: yoji
 Translate: in an ecstasy of delight
 MiscInfo: yoji"
 205021,"WORD_NOUN
-WORD_ADVERBIAL_NOUN",,HIRAGANA,,,大死一番,だいしいちばん,,daishi ichiban,dołożenie wszelkich starań i umrzeć w razie potrzeby,,,,"GroupId: 2040590
+WORD_ADVERBIAL_NOUN",,HIRAGANA,,,大死一番,だいしいちばん,,daishi ichiban,dołożenie wszelkich starań i umrzeć w razie potrzeby,,,DUPLICATE 205048,"GroupId: 2040590
 Translate: exerting oneself to the utmost, prepared to die if necessary
 MiscInfo: yoji"
 205022,WORD_NOUN,,HIRAGANA,,,韜晦趣味,とうかいしゅみ,,toukai shumi,"skłonność do usuwania się w cień
@@ -20334,7 +20334,12 @@ Translate: being prone to conceal one's talent
 MiscInfo: yoji"
 205023,WORD_NOUN,,HIRAGANA,,,男,だん,,dan,"syn
 baron (skrót)
-mężczyzna",mało znane słowo,,,"GroupId: 2843485
+mężczyzna",mało znane słowo,,"DUPLICATE 2208
+DUPLICATE 27448
+DUPLICATE 49375
+DUPLICATE 51082
+DUPLICATE 63010
+DUPLICATE 67706","GroupId: 2843485
 Translate: son
 MiscInfo: obsc
 Translate: baron
@@ -20367,7 +20372,7 @@ MiscInfo: arch"
 205025,WORD_NOUN,,KATAKANA_HIRAGANA,,,チ吻,チふん,,chifun,Chiwen,chiński smok,,,"GroupId: 2843537
 Translate: Chiwen (Chinese dragon)"
 205026,WORD_NOUN,,HIRAGANA,,,疔,ちょう,,chou,"czyrak
-karbunkuł",,,,"GroupId: 2843450
+karbunkuł",,,DUPLICATE 82350,"GroupId: 2843450
 Translate: furuncle
 Translate: carbuncle"
 205027,WORD_NOUN,,HIRAGANA,,,徴,ちょう,,chou,"znak
@@ -20377,7 +20382,9 @@ objaw
 symptom
 wezwanie
 rekwirowanie
-konfiskata",,,,"GroupId: 2843451
+konfiskata",,,"DUPLICATE 6005
+DUPLICATE 61673
+DUPLICATE 82350","GroupId: 2843451
 Translate: sign
 Translate: indication
 Translate: symptom
@@ -20386,20 +20393,22 @@ Translate: summons
 Translate: requisition
 Translate: expropriation"
 205028,"WORD_SUFFIX
-WORD_COUNTER",,HIRAGANA,,,貼,ちょう,,chou,klasyfikator na dawki leku,,,,"GroupId: 2843452
+WORD_COUNTER",,HIRAGANA,,,貼,ちょう,,chou,klasyfikator na dawki leku,,,DUPLICATE 82350,"GroupId: 2843452
 Translate: counter for doses of medicine, etc."
 205029,WORD_NOUN,,HIRAGANA,,,糶糴,ちょうてき,,chouteki,skup i sprzedaż ziaren (np. ryżu),archaizm,,,"GroupId: 2843459
 Translate: buying and selling of grain (e.g. rice)
 MiscInfo: arch"
 205030,WORD_NOUN,,HIRAGANA,,,-,つとめて,,tsutomete,"wczesny poranek
-następnego dnia rano (zwłaszcza po nocy, w której coś się stało)",archaizm,,,"GroupId: 2843473
+następnego dnia rano (zwłaszcza po nocy, w której coś się stało)",archaizm,,"DUPLICATE 17848
+DUPLICATE 32766
+DUPLICATE 37596","GroupId: 2843473
 Translate: early morning
 MiscInfo: arch
 Translate: the next morning (esp. after a night where something happened)
 MiscInfo: arch"
 205031,WORD_NOUN,,HIRAGANA,,,堵,と,,to,"płot
 mur
-żywopłot",mało znane słowo,,,"GroupId: 2843466
+żywopłot",mało znane słowo,,DUPLICATE 374,"GroupId: 2843466
 Translate: fence
 MiscInfo: obsc
 Translate: wall
@@ -20412,3 +20421,81 @@ Translate: head
 MiscInfo: obs
 Translate: skull
 MiscInfo: obs"
+205033,WORD_NOUN,,HIRAGANA,,,出産手当て,しゅっさんてあて,,shussan teate,"zasiłek macierzyński
+zasiłek połogowy",,,,"GroupId: 2029290
+Translate: maternity allowance
+Translate: childbirth allowance"
+205034,WORD_NOUN,,KATAKANA,,,-,コイワシクジラ,,koiwashikujira,płetwal karłowaty,"gatunek ssaka z rodziny płetwalowatych, Balaenoptera acutorostrata, mało znane słowo",,,"GroupId: 2166630
+Translate: minke whale
+MiscInfo: uk
+MiscInfo: obsc
+Translate: piked whale (Balaenoptera acutorostrata)
+MiscInfo: uk
+MiscInfo: obsc"
+205035,WORD_NOUN,,KATAKANA,,,-,カジカエデ,,kajikaede,"klon diabelski
+klon kosmaty","gatunek drzewa z rodziny mydleńcowatych, Acer diabolicum",,,"GroupId: 2828590
+Translate: horned maple (Acer diabolicum)
+MiscInfo: uk"
+205036,WORD_NOUN,,KATAKANA,,,-,アカシュモクザメ,,akashu mokuzame,Sphyrna lewini,gatunek rekina,,,"GroupId: 2554870
+Translate: scalloped hammerhead (Sphyrna lewini)
+MiscInfo: uk
+Translate: bronze hammerhead shark
+MiscInfo: uk"
+205037,WORD_NOUN,,KATAKANA,,,-,ヌーク,,nuuku,kącik,"małe, zaciszne miejsce w domu, ang: nook",,,"GroupId: 2838568
+Translate: nook (small and oft. secluded space in a home)"
+205038,WORD_NOUN,,HIRAGANA,,,大害,だいがい,,daigai,"poważne uszkodzenie
+wielka krzywda",,,DUPLICATE 204992,"GroupId: 2843494
+Translate: heavy damage
+Translate: great harm"
+205039,WORD_NOUN,,HIRAGANA,,,口慣らし,くちならし,,kuchi narashi,przyzwyczajanie się do określonego smaku,,,,"GroupId: 1664180
+Translate: accustoming oneself to a certain taste
+Translate: oral drill"
+205040,WORD_EXPRESSION,,HIRAGANA,,,慚愧に堪えない,ざんきにたえない,,zanki ni taenai,"czuć się głęboko zawstydzonym
+przytłoczonym wstydem",,,,"GroupId: 2060740
+Translate: feeling deeply ashamed of oneself
+Translate: overwhelmed with shame"
+205041,WORD_VERB_U,,HIRAGANA,,,稼ぎだす,かせぎだす,,kasegi dasu,"osiągać
+zdobywać (dla siebie)
+wygrać",,,,"GroupId: 2462180
+Translate: to gain
+Translate: to earn (for oneself)
+Translate: to win"
+205042,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,我がものにする,わがものにする,,wa ga mono ni suru,"zrobić coś własnego
+???",,,,"GroupId: 2682250
+Translate: to make something one's own
+Translate: to appropriate for oneself"
+205043,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,我物にする,わがものにする,,wa ga mono ni suru,"zrobić coś własnego
+???",,,,"GroupId: 2682250
+Translate: to make something one's own
+Translate: to appropriate for oneself"
+205044,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,わが物にする,わがものにする,,wa ga mono ni suru,"zrobić coś własnego
+???",,,,"GroupId: 2682250
+Translate: to make something one's own
+Translate: to appropriate for oneself"
+205045,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,余念が無い,よねんがない,,yonen ga nai,"bycie skoncentrowany na jednej rzeczy
+poświęcanie się czemuś całkowicie",,,,"GroupId: 2744920
+Translate: being concentrated on one thing
+Translate: devoting oneself completely to something"
+205046,WORD_VERB_RU,,HIRAGANA,,,かき寄せる,かきよせる,,kaki yoseru,"zmieść razem
+zgrabić
+pozbierać
+pociągnąć do siebie
+ciągnąć do siebie",,,,"GroupId: 1851950
+Translate: to sweep together
+Translate: to rake up
+Translate: to gather up
+Translate: to drag towards oneself
+Translate: to pull nearer"
+205047,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,身を殺して仁を為す,みをころしてじんをなす,,mi o koroshite jin o nasu,czynić życzliwość poświęcając się dla innych,,,,"GroupId: 1911000
+Translate: to do an act of benevolence at the sacrifice of oneself"
+205048,"WORD_NOUN
+WORD_ADVERBIAL_NOUN",,HIRAGANA,,,大死一番,たいしいちばん,,taishi ichiban,dołożenie wszelkich starań i umrzeć w razie potrzeby,,,DUPLICATE 205021,"GroupId: 2040590
+Translate: exerting oneself to the utmost, prepared to die if necessary
+MiscInfo: yoji"
+205049,WORD_NOUN,,HIRAGANA,,,螭吻,ちふん,,chifun,Chiwen,chiński smok,,,"GroupId: 2843537
+Translate: Chiwen (Chinese dragon)"
