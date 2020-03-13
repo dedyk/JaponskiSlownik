@@ -2909,14 +2909,9 @@ public class WordGenerator {
 						
 						if (groupsIdsSet != null) {
 							
-							List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
+							Integer polishJapaneseEntryGroupId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
 							
-							if (jmedictRawDataList != null && jmedictRawDataList.size() > 0) {
-								
-								String groupIdString = jmedictRawDataList.get(0).substring(9);
-								
-								Integer polishJapaneseEntryGroupId = new Integer(groupIdString);
-								
+							if (polishJapaneseEntryGroupId != null) {																
 								if (groupsIdsSet.contains(polishJapaneseEntryGroupId) == false) {
 									continue;
 								}								
@@ -2931,7 +2926,7 @@ public class WordGenerator {
 						if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
 							continue;
 						}
-						
+												
 						// szukanie slow
 						List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
 												
@@ -3042,13 +3037,24 @@ public class WordGenerator {
 								if (isDifferent == true || force == true) {
 									
 									wordsCounter += groupByTheSameTranslateGroupEntryList.size();
+									
+									boolean currentPolishJapaneseEntryInAllPolishJapaneseEntryListForGroupEntry = false;
 																		
 									for (PolishJapaneseEntryAndGroupEntry polishJapaneseEntryAndGroupEntry : allPolishJapaneseEntryListForGroupEntry) {
 										
 										PolishJapaneseEntry findPolishJapaneseEntry = polishJapaneseEntryAndGroupEntry.polishJapaneseEntry;
 										GroupEntry groupEntry = polishJapaneseEntryAndGroupEntry.groupEntry;
+										
+										if (currentPolishJapaneseEntryInAllPolishJapaneseEntryListForGroupEntry == false && polishJapaneseEntry.getId() == findPolishJapaneseEntry.getId()) {
+											currentPolishJapaneseEntryInAllPolishJapaneseEntryListForGroupEntry = true;
+										}
 
 										result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(findPolishJapaneseEntry, Arrays.asList(groupEntry), null));
+									}
+									
+									// oznacza to, ze jest pewien problem z EDICT_DUPLICATE (brakuje) i slowo, z ktorego wszystko zaczelo sie nie zostalo dodane do listy, dodajemy je
+									if (currentPolishJapaneseEntryInAllPolishJapaneseEntryListForGroupEntry == false) { 
+										result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, null, "!!! EDICT_DUPLICATE !!!"));
 									}
 									
 								} /*else {
