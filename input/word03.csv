@@ -20502,7 +20502,9 @@ Translate: Chiwen (Chinese dragon)"
 205050,WORD_NOUN,,KATAKANA,,,-,ラップ,,rappu,"cienka przezroczysta folia (do opakowania, skrót)
 owijanie
 opakowanie
-zapakowanie",,,,"GroupId: 1139250
+zapakowanie",,,"DUPLICATE 17609
+DUPLICATE 132663
+DUPLICATE 205051","GroupId: 1139250
 Translate: cling film
 MiscInfo: abbr
 Translate: plastic wrap
@@ -20512,7 +20514,9 @@ MiscInfo: abbr
 Translate: wrapping (something up)"
 205051,WORD_NOUN,,KATAKANA,,,-,ラップ,,rappu,"okrążenie (np. na stadionie, na basenie)
 czas krążenia (skrót)
-narzędzie do wykańczania",ang: lap,,,"GroupId: 2841253
+narzędzie do wykańczania",ang: lap,,"DUPLICATE 17609
+DUPLICATE 132663
+DUPLICATE 205050","GroupId: 2841253
 Translate: lap (of stadium, pool, etc.)
 Translate: lap time
 MiscInfo: abbr
@@ -20520,11 +20524,19 @@ Translate: lap
 Translate: finishing tool"
 205052,"WORD_ADJECTIVE_F
 WORD_NOUN",,KATAKANA,,,-,ロー,,roo,"niski
-niski bieg",,,,"GroupId: 1146270
+niski bieg",,,"DUPLICATE 14874
+DUPLICATE 84529
+DUPLICATE 84590
+DUPLICATE 145902
+DUPLICATE 205053","GroupId: 1146270
 Translate: low
 Translate: low gear"
 205053,WORD_NOUN,,KATAKANA,,,-,ロー,,roo,"wiersz
-rząd",ang: row,,,"GroupId: 2842441
+rząd",ang: row,,"DUPLICATE 14874
+DUPLICATE 84529
+DUPLICATE 84590
+DUPLICATE 145902
+DUPLICATE 205052","GroupId: 2842441
 Translate: row"
 205054,WORD_VERB_U,,HIRAGANA,,,使い出す,つかいだす,,tsukai dasu,"zacząć używać
 zacząć korzystać
@@ -20620,7 +20632,11 @@ WORD_ADJECTIVE_NARI",,HIRAGANA,,,頓,とん,,ton,"nagły (archaizm)
 niespodziewany (archaizm)
 głupi (archaizm)
 durny (archaizm)
-osiągnięcie oświecenia jednym wysiłkiem (np. bez praktyk ascetycznych, buddyzm)",,,,"GroupId: 2843488
+osiągnięcie oświecenia jednym wysiłkiem (np. bez praktyk ascetycznych, buddyzm)",,,"DUPLICATE 33599
+DUPLICATE 33600
+DUPLICATE 80041
+DUPLICATE 205083
+DUPLICATE 205130","GroupId: 2843488
 Translate: sudden
 MiscInfo: arch
 Translate: abrupt
@@ -20634,14 +20650,17 @@ MiscInfo: arch
 Translate: attaining enlightenment in one effort (without ascetic practices, etc.)"
 205083,"WORD_NOUN
 WORD_ADJECTIVE_NARI",,HIRAGANA,,,頓,とみ,,tomi,"nagły
-niespodziewany",archaizm,,,"GroupId: 2843488
+niespodziewany",archaizm,,"DUPLICATE 33599
+DUPLICATE 33600
+DUPLICATE 205082
+DUPLICATE 205130","GroupId: 2843488
 Translate: sudden
 MiscInfo: arch
 Translate: abrupt
 MiscInfo: arch
 Translate: unexpected
 MiscInfo: arch"
-205084,WORD_NOUN,,HIRAGANA,,,飛び降り自殺,とびおりじさつ,,tobi oriji satsu,"zabicie się poprzez skok (np. z wysokiego budynku)
+205084,WORD_NOUN,,HIRAGANA,,,飛び降り自殺,とびおりじさつ,,tobi ori jisatsu,"zabicie się poprzez skok (np. z wysokiego budynku)
 rzucenie się i zabicie się",,,,"GroupId: 2065460
 Translate: killing oneself by jumping (e.g. from a tall building)
 Translate: plunging to one's death"
@@ -20717,7 +20736,7 @@ przedstawianie się w pozytywnym świetle",ang: self-produce,,,"GroupId: 2830853
 Translate: emphasizing one's good qualities
 Translate: presenting oneself in a favorable light"
 205097,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,雨露をしのぐ,あめつゆをしのぐ,,ametsuyu o shinogu,"chronić przed żywiołami
+WORD_EXPRESSION",,HIRAGANA,,,雨露をしのぐ,あめつゆをしのぐ,,ame tsuyu o shinogu,"chronić przed żywiołami
 schronić się przed pogodą",,,,"GroupId: 2832692
 Translate: to protect against the elements
 Translate: to shelter oneself from the weather"
@@ -20784,9 +20803,10 @@ Translate: frivolous
 MiscInfo: id"
 205109,WORD_NOUN,,HIRAGANA,,,吐蕃,とばん,,toban,Imperium Tybetańskie,"wczesny okres w historii Tybetu, który rozpoczął się wraz z powstaniem pierwszego państwa tybetańskiego w VII wieku n.e., i zakończył się jego późniejszym o dwieście lat rozpadem",,,"GroupId: 2843502
 Translate: Tibetan Empire (618-842 CE)"
-205110,WORD_NOUN,,HIRAGANA,,,弩,ど,,do,kusza,,,,"GroupId: 2843469
+205110,WORD_NOUN,,HIRAGANA,,,弩,ど,,do,kusza,,,"DUPLICATE 58394
+DUPLICATE 93202","GroupId: 2843469
 Translate: crossbow"
-205111,WORD_NOUN,,HIRAGANA,,,笯,ど,,do,cylindryczny bambusowy koszyk na ryby,,,,"GroupId: 2843470
+205111,WORD_NOUN,,HIRAGANA,,,笯,ど,,do,cylindryczny bambusowy koszyk na ryby,,,DUPLICATE 93202,"GroupId: 2843470
 Translate: cylindrical bamboo fishing basket"
 205112,WORD_NOUN,,HIRAGANA,,,二酉,にゆう,,niyuu,"ogromna kolekcja książek
 miejsce, w którym przechowywanych jest wiele książek",archaizm,,,"GroupId: 2843491
@@ -20796,7 +20816,7 @@ Translate: place where many books are stored
 MiscInfo: arch"
 205113,WORD_NOUN,,HIRAGANA,,,髪,はつ,,hatsu,"włosy (na głowie)
 pukiel
-lok",mało znane słowo,,,"GroupId: 2843553
+lok",mało znane słowo,,DUPLICATE 529,"GroupId: 2843553
 Translate: hair (on the head)
 MiscInfo: obsc
 Translate: tresses
@@ -20804,7 +20824,7 @@ MiscInfo: obsc
 Translate: locks
 MiscInfo: obsc"
 205114,WORD_NOUN,,HIRAGANA,,,馬医,ばい,,bai,"konował
-koński weterynarz",mało znane słowo,,,"GroupId: 2843548
+koński weterynarz",mało znane słowo,,DUPLICATE 93153,"GroupId: 2843548
 Translate: horse doctor
 MiscInfo: obsc
 Translate: horse veterinarian
@@ -20830,7 +20850,8 @@ Translate: vague
 Translate: obscure
 Translate: vast
 Translate: boundless"
-205117,WORD_NOUN,,HIRAGANA,,,火鍋,ひなべ,,hinabe,ognisty kociołek w chińskim stylu,,,,"GroupId: 2843500
+205117,WORD_NOUN,,HIRAGANA,,,火鍋,ひなべ,,hinabe,ognisty kociołek w chińskim stylu,,,"DUPLICATE 205143
+DUPLICATE 205144","GroupId: 2843500
 Translate: Chinese-style hot pot"
 205118,WORD_NOUN,,HIRAGANA,,,保命,ほうめい,,houmei,"chronienie życia
 długowieczność
@@ -20847,7 +20868,7 @@ Translate: to intermingle
 Translate: to commingle"
 205120,WORD_NOUN,,HIRAGANA,,,無人探査,むじんたんさ,,mujin tansa,bezzałogowa sonda,,,,"GroupId: 2843535
 Translate: unmanned probing"
-205121,WORD_NOUN,,HIRAGANA,,,-,めいぼ,,meibo,jęczmień (na powiece),dialekt Kansai,,,"GroupId: 2843574
+205121,WORD_NOUN,,HIRAGANA,,,-,めいぼ,,meibo,jęczmień (na powiece),dialekt Kansai,,DUPLICATE 10902,"GroupId: 2843574
 Translate: sty (on the eyelid)
 Dialect: kyb"
 205122,WORD_NOUN,,KATAKANA_HIRAGANA,,,オートマ車,オートマしゃ,,ootoma sha,samochód z automatyczną skrzynią biegów,,,,"GroupId: 2016830
@@ -20855,3 +20876,141 @@ Translate: automatic car
 Translate: car with automatic transmission"
 205123,WORD_NOUN,,KATAKANA,,,-,ジビエ,,jibie,dziczyzna,fra: gibier,,,"GroupId: 2183820
 Translate: wild game"
+205124,WORD_NOUN,,HIRAGANA,,,調子もの,ちょうしもの,,choushimono,"kwestia przypadku
+ryzykowny
+niepewny",,,DUPLICATE 175699,"GroupId: 2839171
+Translate: matter of chance
+Translate: touch and go"
+205125,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,機運が高まる,きうんがたかまる,,kiun ga takamaru,"nabrać rozpędu
+nabierać pędu
+nabrać siły
+osiągać szczyt",,,,"GroupId: 2828145
+Translate: to gather momentum
+Translate: to gather strength
+Translate: (for a trend) to reach a peak"
+205126,WORD_NOUN,,KATAKANA,,,-,カラスバト,,karasubato,gołąb czarny,"gatunek średniej wielkości ptaka z rodziny gołębiowatych, Columba janthina",,,"GroupId: 1845470
+Translate: Japanese wood pigeon (Columba janthina)
+MiscInfo: uk
+Translate: black wood pigeon
+MiscInfo: uk"
+205127,WORD_NOUN,,KATAKANA,,,-,オカチメンコ,,okachi menko,"brzydka kobieta
+brzydka kobieca twarz",,,,"GroupId: 2100890
+Translate: (woman's) ugly or homely face
+MiscInfo: uk
+Translate: old bag
+MiscInfo: uk"
+205128,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,液体に漬ける,えきたいにつける,,ekitai ni tsukeru,wsadzić,np. jedzenie w picie,,,"GroupId: 2550600
+Translate: to dunk (e.g. food in a drink)"
+205129,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,液体につける,えきたいにつける,,ekitai ni tsukeru,wsadzić,np. jedzenie w picie,,,"GroupId: 2550600
+Translate: to dunk (e.g. food in a drink)"
+205130,"WORD_NOUN
+WORD_ADJECTIVE_NARI",,HIRAGANA,,,頓,とに,,toni,"nagły
+niespodziewany",archaizm,,"DUPLICATE 33599
+DUPLICATE 33600
+DUPLICATE 205082
+DUPLICATE 205083","GroupId: 2843488
+Translate: sudden
+MiscInfo: arch
+Translate: abrupt
+MiscInfo: arch
+Translate: unexpected
+MiscInfo: arch"
+205131,WORD_NOUN,,HIRAGANA,,,飛降り自殺,とびおりじさつ,,tobi ori jisatsu,"zabicie się poprzez skok (np. z wysokiego budynku)
+rzucenie się i zabicie się",,,,"GroupId: 2065460
+Translate: killing oneself by jumping (e.g. from a tall building)
+Translate: plunging to one's death"
+205132,WORD_NOUN,,HIRAGANA,,,飛降自殺,とびおりじさつ,,tobi ori jisatsu,"zabicie się poprzez skok (np. z wysokiego budynku)
+rzucenie się i zabicie się",,,,"GroupId: 2065460
+Translate: killing oneself by jumping (e.g. from a tall building)
+Translate: plunging to one's death"
+205133,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,腹をこしらえる,はらをこしらえる,,hara o koshiraeru,"zjeść posiłek (przed zrobieniem czegoś)
+wzmocnić się posiłkiem",,,,"GroupId: 2126270
+Translate: to have a meal (before doing something)
+Translate: to fortify oneself with a meal"
+205134,WORD_NOUN,,HIRAGANA,,,精進落し,しょうじんおとし,,shoujin' otoshi,"pozwalanie sobie na mięso, ryby lub alkohol po okresie wstrzymania się od abstynencji",,,,"GroupId: 2128910
+Translate: allowing oneself meat, fish or alcohol after a period of abstaining"
+205135,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ハバを取る,ハバをとる,,haba o toru,"zajmować dużo miejsca
+mieć dużo powierzchni dla siebie",,,,"GroupId: 2641360
+Translate: to take up a lot of space
+Translate: to have a large space to oneself"
+205136,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,ぬれぎぬを晴らす,ぬれぎぬをはらす,,nure ginu o harasu,"udowodnić swoją niewinność
+oczyścić się z fałszywego oskarżenia",,,,"GroupId: 2798850
+Translate: to prove one's innocence
+Translate: to clear oneself of a false accusation"
+205137,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,雨露を凌ぐ,あめつゆをしのぐ,,ame tsuyu o shinogu,"chronić przed żywiołami
+schronić się przed pogodą",,,,"GroupId: 2832692
+Translate: to protect against the elements
+Translate: to shelter oneself from the weather"
+205138,WORD_VERB_RU,,HIRAGANA,,,刺しちがえる,さしちがえる,,sashi chigaeru,"???
+poświęcić się, aby skrzywdzić kogoś innego",,,,"GroupId: 2835122
+Translate: to stab each other
+Translate: to sacrifice oneself in order to harm someone else"
+205139,WORD_VERB_RU,,HIRAGANA,,,刺違える,さしちがえる,,sashi chigaeru,"???
+poświęcić się, aby skrzywdzić kogoś innego",,,,"GroupId: 2835122
+Translate: to stab each other
+Translate: to sacrifice oneself in order to harm someone else"
+205140,WORD_EXPRESSION,,HIRAGANA,,,矢も盾も堪らず,やもたてもたまらず,,ya mo tate mo tamarazu,"niezdolny do pozostania w miejscu
+niezdolny do opanowania swoich uczuć
+niezdolny do opanowania się",,,,"GroupId: 2840943
+Translate: unable to stay still
+Translate: unable to contain one's feelings
+Translate: unable to restrain oneself"
+205141,WORD_EXPRESSION,,HIRAGANA,,,足が地に付かない,あしがちにつかない,,ashi ga chi ni tsukanai,"zatracić się
+czuć się jak w niebie
+być w wniebowziętym
+być w siódmym niebie
+być lekkomyślny",wyrażenie idiomatyczne,,,"GroupId: 2119580
+Translate: losing oneself
+MiscInfo: id
+Translate: on top of the world
+MiscInfo: id
+Translate: walking on air
+MiscInfo: id
+Translate: frivolous
+MiscInfo: id"
+205142,WORD_EXPRESSION,,HIRAGANA,,,足が地につかない,あしがちにつかない,,ashi ga chi ni tsukanai,"zatracić się
+czuć się jak w niebie
+być w wniebowziętym
+być w siódmym niebie
+być lekkomyślny",wyrażenie idiomatyczne,,,"GroupId: 2119580
+Translate: losing oneself
+MiscInfo: id
+Translate: on top of the world
+MiscInfo: id
+Translate: walking on air
+MiscInfo: id
+Translate: frivolous
+MiscInfo: id"
+205143,WORD_NOUN,,KATAKANA,,,火鍋,ホーコー,,hookoo,ognisty kociołek w chińskim stylu,,,"DUPLICATE 205117
+DUPLICATE 205144","GroupId: 2843500
+Translate: Chinese-style hot pot"
+205144,WORD_NOUN,,KATAKANA_EXCEPTION,,,火鍋,フゥオグゥオ,,fuoguo,ognisty kociołek w chińskim stylu,,,"DUPLICATE 205117
+DUPLICATE 205143","GroupId: 2843500
+Translate: Chinese-style hot pot"
+205145,WORD_VERB_U,,HIRAGANA,,,まざり合う,まざりあう,,mazari au,"być zmieszany razem
+zmieszać",,,,"GroupId: 2843539
+Translate: to be mixed together
+Translate: to be blended
+Translate: to intermingle
+Translate: to commingle"
+205146,WORD_NOUN,,HIRAGANA,,,-,めぼ,,mebo,jęczmień (na powiece),dialekt Kansai,,,"GroupId: 2843574
+Translate: sty (on the eyelid)
+Dialect: kyb"
+205147,"WORD_ADJECTIVE_NA
+WORD_ADVERB",,HIRAGANA,,,-,かつかつ,,katsu katsu,"ledwo
+z trudem
+prawie nie",,,"DUPLICATE 127662
+DUPLICATE 127708
+DUPLICATE 127709
+DUPLICATE 127710","GroupId: 1002930
+Translate: barely
+MiscInfo: on-mim
+Translate: scraping by
+MiscInfo: on-mim"
