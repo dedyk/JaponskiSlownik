@@ -24,15 +24,12 @@ public class FixPrefixSuffixWords {
 		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-		
-			String kanji = polishJapaneseEntry.getKanji();
-			String kana = polishJapaneseEntry.getKana();
 			
 			//AttributeList attributeList = polishJapaneseEntry.getAttributeList();
 			
 			List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
 			
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
 			
 			boolean didOperation = false;
 			

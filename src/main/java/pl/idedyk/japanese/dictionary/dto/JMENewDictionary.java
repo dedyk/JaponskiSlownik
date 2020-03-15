@@ -173,6 +173,7 @@ public class JMENewDictionary {
 		return groupEntryOnlyKanaCache.get(groupEntryKey);
 	}
 	
+	/*
 	public List<GroupEntry> getTheSameTranslateInTheSameGroupGroupEntryList(String kanji, String kana) throws DictionaryException {
 		
 		String groupEntryKey = getKey(kanji, kana);
@@ -196,7 +197,8 @@ public class JMENewDictionary {
 		groupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
 		
 		return getTheSameTranslateInTheSameGroupGroupEntryList(groupEntryList, kanji, kana);
-	}	
+	}
+	*/
 		
 	public List<GroupEntry> getTheSameTranslateInTheSameGroupGroupEntryList(List<GroupEntry> groupEntryList, String kanji, String kana) throws DictionaryException {
 		
