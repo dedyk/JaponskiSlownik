@@ -887,13 +887,11 @@ public class WordGenerator {
 					String kanji = polishJapaneseEntry.getKanji();
 					String kana = polishJapaneseEntry.getKana();
 					
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 											
 					if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
-						
-						List<GroupEntry> fullGroupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
 										
-						for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(fullGroupEntryList, kanji, kana)) {
+						for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
 							
 							String groupEntryKanji = groupEntry.getKanji();
 							String groupEntryKana = groupEntry.getKana();
