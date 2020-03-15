@@ -5,8 +5,8 @@
 + 60000 - 20
 + small - 5
 + small2 - 5
-ludzie - 25
-uzupełniacz - 17
++ ludzie - 25
+* uzupełniacz - 0
 -----------
 suma: 70
 
