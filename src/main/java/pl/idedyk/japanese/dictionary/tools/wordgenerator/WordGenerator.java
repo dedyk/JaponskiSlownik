@@ -2947,7 +2947,11 @@ public class WordGenerator {
 							}
 							
 							//
-														
+							
+							if (JMENewDictionary.isMultiGroup(groupEntryList) == true && force == true) {
+								throw new RuntimeException("MultiGroup for: " + polishJapaneseEntry.getId() + " and force = true");
+							}
+							
 							if (JMENewDictionary.isMultiGroup(groupEntryList) == false || force == true) { // grupa pojedyncza
 								
 								/*
