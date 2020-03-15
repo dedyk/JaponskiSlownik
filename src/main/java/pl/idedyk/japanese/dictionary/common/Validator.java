@@ -252,8 +252,11 @@ public class Validator {
 					
 					continue;
 				}
-								
-				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(currentPolishJapaneseEntry);
+				
+				String kanji = currentPolishJapaneseEntry.getKanji();
+				String kana = currentPolishJapaneseEntry.getKana();
+				
+				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 				
 				if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 					
@@ -298,7 +301,10 @@ public class Validator {
 					continue;
 				}
 								
-				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(currentPolishJapaneseEntry);
+				String kanji = currentPolishJapaneseEntry.getKanji();
+				String kana = currentPolishJapaneseEntry.getKana();
+				
+				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 				
 				if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 
@@ -358,8 +364,11 @@ public class Validator {
 					
 					continue;
 				}
-				
-				List<GroupEntry> groupEntryList = jmeNewNameDictionary.getGroupEntryList(currentPolishJapaneseEntry);
+
+				String kanji = currentPolishJapaneseEntry.getKanji();
+				String kana = currentPolishJapaneseEntry.getKana();
+
+				List<GroupEntry> groupEntryList = jmeNewNameDictionary.getGroupEntryList(kanji, kana);
 				
 				if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 					
@@ -1135,15 +1144,13 @@ public class Validator {
 			String kanji = polishJapaneseEntry.getKanji();
 			String kana = polishJapaneseEntry.getKana();
 			
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 			
 			List<PolishJapaneseEntry> foundPolishJapaneseEntryGroupList = new ArrayList<PolishJapaneseEntry>();
 			
 			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
-				
-				List<GroupEntry> fullGroupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
 								
-				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(fullGroupEntryList, kanji, kana)) {
+				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
 					
 					String groupEntryKanji = groupEntry.getKanji();
 					String groupEntryKana = groupEntry.getKana();

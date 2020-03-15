@@ -403,9 +403,11 @@ public class CsvReaderWriter {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
+			String kanji = polishJapaneseEntry.getKanji();
+			String kana = polishJapaneseEntry.getKana();
 			List<GroupEnum> groups = polishJapaneseEntry.getGroups();
 						
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 			
 			int power = Integer.MAX_VALUE;
 			

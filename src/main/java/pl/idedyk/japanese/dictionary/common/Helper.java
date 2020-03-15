@@ -139,8 +139,11 @@ public class Helper {
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 
 			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
-						
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(currentPolishJapaneseEntry);
+			
+			String kanji = currentPolishJapaneseEntry.getKanji();
+			String kana = currentPolishJapaneseEntry.getKana();
+			
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 			
 			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 				
@@ -355,13 +358,11 @@ public class Helper {
 			
 			//
 						
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 
 			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 				
-				List<GroupEntry> fullGroupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
-				
-				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(fullGroupEntryList, kanji, kana)) {
+				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
 					
 					List<String> similarRelatedList = groupEntry.getSimilarRelatedList();
 					

@@ -887,13 +887,11 @@ public class WordGenerator {
 					String kanji = polishJapaneseEntry.getKanji();
 					String kana = polishJapaneseEntry.getKana();
 					
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 											
 					if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
-						
-						List<GroupEntry> fullGroupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
 										
-						for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(fullGroupEntryList, kanji, kana)) {
+						for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(kanji, kana)) {
 							
 							String groupEntryKanji = groupEntry.getKanji();
 							String groupEntryKana = groupEntry.getKana();
@@ -1085,8 +1083,11 @@ public class WordGenerator {
 					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
 						continue;
 					}
-										
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+								
+					String kanji = polishJapaneseEntry.getKanji();
+					String kana = polishJapaneseEntry.getKana();
+					
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 											
 					if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 						
@@ -2445,8 +2446,11 @@ public class WordGenerator {
 						
 						continue;
 					}
-										
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(currentPolishJapaneseEntry);
+					
+					String kanji = currentPolishJapaneseEntry.getKanji();
+					String kana = currentPolishJapaneseEntry.getKana();
+					
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 					
 					if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
 						
@@ -2575,8 +2579,11 @@ public class WordGenerator {
 				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
 				
 				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-										
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+					
+					String kanji = polishJapaneseEntry.getKanji();
+					String kana = polishJapaneseEntry.getKana();
+					
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(kanji, kana);
 					
 					if (groupEntryList != null && groupEntryList.size() > 0) {
 						
@@ -3267,7 +3274,7 @@ public class WordGenerator {
 					}
 					
 					// szukanie slow
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
 											
 					if (groupEntryList == null || groupEntryList.size() == 0) {						
 						result.add(polishJapaneseEntry);
