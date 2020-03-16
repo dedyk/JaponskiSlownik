@@ -1131,13 +1131,7 @@ public class Validator {
 		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(polishJapaneseEntries);
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-			
-			if (polishJapaneseEntry.getId() == 145102) {
-				int a = 0;
-				
-				a++;
-			}
-			
+						
 			String kanji = polishJapaneseEntry.getKanji();
 			String kana = polishJapaneseEntry.getKana();
 			
