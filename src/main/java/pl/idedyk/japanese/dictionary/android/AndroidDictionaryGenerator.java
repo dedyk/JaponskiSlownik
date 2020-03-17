@@ -172,7 +172,7 @@ public class AndroidDictionaryGenerator {
 
 		System.out.println("checkAndSavePolishJapaneseEntries: generateCsv");
 
-		CsvReaderWriter.generateCsv(new String[] { destinationFileName }, result, true, false, true, false, CsvReaderWriter.getCustomAdditionaCsvWriterToAddEnglishTranslate(jmeNewDictionary));
+		CsvReaderWriter.generateCsv(new String[] { destinationFileName }, result, true, false, true, false, CsvReaderWriter.getCustomAdditionaCsvWriterToAddEnglishTranslate(jmeNewDictionary, null));
 		
 		// zapisanie w formacie JSON		
 		//JSONArray resultJSONArray = JSONReaderWriter.createDictionaryOutputJSON(jmeNewDictionary, polishJapaneseEntries);		
@@ -367,7 +367,7 @@ public class AndroidDictionaryGenerator {
 
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 
-		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, true, null);
+		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, true, CsvReaderWriter.getCustomAdditionaCsvWriterToAddEnglishTranslate(null, readKanjiDic2));
 
 		return kanjiEntries;
 	}

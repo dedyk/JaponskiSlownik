@@ -34,6 +34,7 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
@@ -1069,13 +1070,25 @@ public class CsvReaderWriter {
 		csvWriter.close();
 	}	
 	
-	public static ICustomAdditionalCsvWriter getCustomAdditionaCsvWriterToAddEnglishTranslate(final JMENewDictionary jmeNewDictionary) {
+	public static ICustomAdditionalCsvWriter getCustomAdditionaCsvWriterToAddEnglishTranslate(final JMENewDictionary jmeNewDictionary, final Map<String, KanjiDic2EntryForDictionary> readKanjiDic2) {
 		
 		return new ICustomAdditionalCsvWriter() {
 			
 			@Override
 			public void write(CsvWriter csvWriter, KanjiEntryForDictionary kanjiEntry) throws IOException {
-				throw new UnsupportedOperationException();				
+				/*
+				KanjiDic2EntryForDictionary kanjiDic2EntryForDictionary = readKanjiDic2.get(kanjiEntry.getKanji());
+				
+				if (kanjiDic2EntryForDictionary != null) {
+					
+					List<String> engMeaning = kanjiDic2EntryForDictionary.getEngMeaning();
+					
+					csvWriter.write(Helper.convertListToString(engMeaning));
+					
+				} else {
+					csvWriter.write("");
+				}
+				*/
 			}
 			
 			@Override
@@ -1128,7 +1141,7 @@ public class CsvReaderWriter {
 						csvWriter.write("");
 					}
 				}
-				*/				
+				*/
 			}
 		};
 	}
