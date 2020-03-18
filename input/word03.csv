@@ -22984,7 +22984,7 @@ firma zajmująca się produkcją przemysłową",,,,"GroupId: 2368610
 Translate: manufacturing company"
 205513,WORD_NOUN,,HIRAGANA,,,注記様式,ちゅうきようしき,,chuuki youshiki,styl adnotacji,,,,"GroupId: 2375210
 Translate: annotation style"
-205514,WORD_NOUN,,KATAKANA,,,-,ランプウエー,,ranpuuee,"droga pomiędzy poziomami
+205514,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ランプウエー,,ranpuuee,"droga pomiędzy poziomami
 przejazd między poziomami",ang: rampway,,,"GroupId: 2472650
 Translate: rampway"
 205515,"WORD_ADJECTIVE_I
@@ -23168,7 +23168,7 @@ Translate: femtosecond"
 205559,"WORD_NOUN
 WORD_ADJECTIVE_NO",,KATAKANA_HIRAGANA,,,フェリ磁性,フェリじせい,,feri jisei,ferrimagnetyzm,,,,"GroupId: 2826334
 Translate: ferrimagnetism"
-205560,WORD_NOUN,,KATAKANA,,,ＦＥＮ,エフイーエヌ,,efuiienu,Far East Network,sieć amerykańskich wojskowych stacji radiowych i telewizyjnych w Azji Wschodniej,,,"GroupId: 2840424
+205560,WORD_NOUN,,KATAKANA,,,ＦＥＮ,エフイーエヌ,,efuiienu,Far East Network,sieć amerykańskich wojskowych stacji radiowych i telewizyjnych w Azji Wschodniej,,DUPLICATE 205585,"GroupId: 2840424
 Translate: Far East Network
 Translate: network of American military radio and television stations in East Asia"
 205561,WORD_NOUN,,KATAKANA,,,-,フットライト,,futtoraito,światła rampy,ang: footlights,,,"GroupId: 1110980
@@ -23181,7 +23181,7 @@ fulmar
 petrel","gatunek dużego ptaka morskiego z rodziny burzykowatych, zamieszkujący północny Atlantyk i Pacyfik, Fulmarus glacialis",,,"GroupId: 1967710
 Translate: northern fulmar (Fulmarus glacialis)
 MiscInfo: uk"
-205564,WORD_NOUN,,KATAKANA,,,ＶＥ,ブイイー,,buiii,inżynieria wartości,"metoda produkcji zmierzająca do zmniejszenia kosztów wyrobu produktu bez obniżania jego jakości, ang: value engineering",,,"GroupId: 2840614
+205564,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＶＥ,ブイイー,,buiii,inżynieria wartości,"metoda produkcji zmierzająca do zmniejszenia kosztów wyrobu produktu bez obniżania jego jakości, ang: value engineering",,,"GroupId: 2840614
 Translate: value engineering"
 205565,WORD_NOUN,,KATAKANA,,,ＶＡ,ブイエー,,buiee,"analiza wartości
 woltoamper
@@ -23194,3 +23194,109 @@ Translate: Brasilia (Brazil)"
 205567,WORD_NOUN,,KATAKANA,,,-,ブルゴーニュ,,burugoonyu,Burgundia,gatunek wina i kraina historyczna w centralnej Francji,,,"GroupId: 2832516
 Translate: Burgundy (wine)
 Translate: Bourgogne"
+205568,WORD_NOUN,,HIRAGANA_KATAKANA,,,一般ピーポー,いっぱんピーポー,,ippan piipoo,zwyczajni ludzie,"slang, poniżająco",,,"GroupId: 2153450
+Translate: ordinary people
+MiscInfo: sl
+MiscInfo: derog"
+205569,WORD_NOUN,,KATAKANA,,,-,ビクーニャ,,bikuunya,"wikunia andyjska
+wikunia (dawniej)
+wigoń (dawniej)","gatunek południowoamerykańskiego, roślinożernego ssaka parzystokopytnego, najmniejszy przedstawiciel rodziny wielbłądowatych, Vicugna vicugna",,,"GroupId: 1104670
+Translate: vicuña (Vicugna vicugna)"
+205570,WORD_NOUN,,HIRAGANA,,,爬竜,はありい,,haarii,okinawski wyścig smoczych łodzi,,,,"GroupId: 2452510
+Translate: Okinawan dragon boat race
+MiscInfo: uk"
+205571,WORD_NOUN,,KATAKANA,,,-,ハーリー,,haarii,okinawski wyścig smoczych łodzi,,,,"GroupId: 2452510
+Translate: Okinawan dragon boat race
+MiscInfo: uk"
+205572,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,能なし犬の高吠え,のうなしいぬのたかぼえ,,nounashi inu no takaboe,"???
+głośne szczekanie bezradnego psa",wyrażenie idiomatyczne,,,"GroupId: 2241760
+Translate: jealous complaint
+MiscInfo: id
+Translate: the loud bark of a talentless dog
+MiscInfo: id"
+205573,WORD_NOUN,,HIRAGANA,,,蝿叩き,はえたたき,,hae tataki,packa na muchy,,,,"GroupId: 2199720
+Translate: fly swatter
+MiscInfo: uk"
+205574,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,てこでも動かない,てこでもうごかない,,teko de mo ugokanai,"twardy
+stanowczy
+nieprzejednany
+nieugięty",,,,"GroupId: 2747170
+Translate: refusing to budge
+Translate: adamant
+Translate: intransigent
+Translate: unyielding"
+205575,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,梃子でも動かない,てこでもうごかない,,teko de mo ugokanai,"twardy
+stanowczy
+nieprzejednany
+nieugięty",,,,"GroupId: 2747170
+Translate: refusing to budge
+Translate: adamant
+Translate: intransigent
+Translate: unyielding"
+205576,WORD_NOUN,,KATAKANA,,,-,エゾウコギ,,ezoukogi,eleuterokok kolczasty,"gatunek rośliny należący do rodziny araliowatych, Eleutherococcus senticosus",,,"GroupId: 2828696
+Translate: Siberian ginseng (Eleutherococcus senticosus)
+MiscInfo: uk
+Translate: eleuthero
+MiscInfo: uk
+Translate: ciwujia
+MiscInfo: uk"
+205577,WORD_NOUN,,KATAKANA,,,-,セイヨウカリン,,seiyou karin,"nieszpułka zwyczajna
+nieszpułka jadalna","gatunek długowiecznych roślin należących do rodziny różowatych, Mespilus germanica",,,"GroupId: 2828763
+Translate: medlar (Mespilus germanica)
+MiscInfo: uk
+Translate: common medlar
+MiscInfo: uk
+Translate: Crataegus germanica
+MiscInfo: uk"
+205578,WORD_NOUN,,KATAKANA,,,-,カンキチク,,kankichiku,Homalocladium platycladum,roślina,,,"GroupId: 2828920
+Translate: centipede plant (Homalocladium platycladum)
+MiscInfo: uk
+Translate: tapeworm plant
+MiscInfo: uk
+Translate: ribbonbush
+MiscInfo: uk"
+205579,WORD_NOUN,,KATAKANA,,,-,イワナンテン,,iwananten,kiścień japoński,"gatunek krzewu, Leucothoe keiskei",,,"GroupId: 2828956
+Translate: keiskei fetterbush (Leucothoe keiskei)
+MiscInfo: uk
+Translate: doghobble
+MiscInfo: uk
+Translate: dog hobble
+MiscInfo: uk"
+205580,WORD_NOUN,,HIRAGANA,,,浜かんざし,はまかんざし,,hamakanzashi,"zawciąg pospolity
+zawciąg nadmorski","gatunek rośliny należący do rodziny ołownicowatych, Armeria maritima",,,"GroupId: 2829658
+Translate: thrift (Armeria maritima)
+MiscInfo: uk
+Translate: sea thrift
+MiscInfo: uk
+Translate: sea pink
+MiscInfo: uk"
+205581,WORD_NOUN,,KATAKANA,,,-,ハマカンザシ,,hamakanzashi,"zawciąg pospolity
+zawciąg nadmorski","gatunek rośliny należący do rodziny ołownicowatych, Armeria maritima",,,"GroupId: 2829658
+Translate: thrift (Armeria maritima)
+MiscInfo: uk
+Translate: sea thrift
+MiscInfo: uk
+Translate: sea pink
+MiscInfo: uk"
+205582,WORD_NOUN,,HIRAGANA,,,肉叩き,にくたたき,,niku tataki,tłuczek do mięsa,,,,"GroupId: 2760320
+Translate: meat tenderizer
+Translate: meat mallet"
+205583,WORD_NOUN,,KATAKANA,,,-,ナンキンマメ,,nankinmame,"orzech ziemny
+orzech arachidowy
+orzacha podziemna
+fistaszki","gatunek roślin z rodziny bobowatych, Arachis hypogaea",,,"GroupId: 1460140
+Translate: peanut (Arachis hypogaea)
+MiscInfo: uk"
+205584,WORD_NOUN,,HIRAGANA,,,おでん屋,おでんや,,oden' ya,sprzedawca oden (zupy),,,,"GroupId: 2590270
+Translate: oden vendor"
+205585,WORD_NOUN,,KATAKANA,,,ＦＥＮ,フェン,,fen,Far East Network,sieć amerykańskich wojskowych stacji radiowych i telewizyjnych w Azji Wschodniej,,DUPLICATE 205560,"GroupId: 2840424
+Translate: Far East Network
+Translate: network of American military radio and television stations in East Asia"
+205586,WORD_NOUN,,KATAKANA,,,-,フルマカモメ,,furuma kamome,"fulmar zwyczajny
+fulmar
+petrel","gatunek dużego ptaka morskiego z rodziny burzykowatych, zamieszkujący północny Atlantyk i Pacyfik, Fulmarus glacialis",,,"GroupId: 1967710
+Translate: northern fulmar (Fulmarus glacialis)
+MiscInfo: uk"
