@@ -24081,7 +24081,7 @@ Translate: nduja"
 Translate: wurst
 Translate: sausage"
 205776,"WORD_EXPRESSION
-WORD_ADJECTIVE_NO",,HIRAGANA,,,上を下へ,うえをしたへ,,ue o shita e,"pomieszany
+WORD_ADJECTIVE_NO",,HIRAGANA_EXCEPTION,,,上を下へ,うえをしたへ,,ue o shita e,"pomieszany
 pogmatwany
 chaotyczny
 bezładny
@@ -24100,8 +24100,8 @@ Translate: waist cloth"
 205779,"WORD_ADJECTIVE_NA
 WORD_NOUN",,KATAKANA,,,-,キッチュ,,kicchu,kicz,"utwór lub rzecz o miernej wartości, schlebiający popularnym gustom, który w opinii krytyków sztuki i innych artystów nie posiada wartości artystycznej, słowo pochodzenia niemieckiego",,,"GroupId: 1041140
 Translate: kitsch"
-205780,"WORD_EXPRESSION
-WORD_VERB_U",,KATAKANA_HIRAGANA,,,コミュニケーションを取る,コミュニケーションをとる,,komyunikeeshon o toru,"komunikować się
+205780,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,コミュニケーションを取る,コミュニケーションをとる,,komyunikeeshon o toru,"komunikować się
 kontaktować się",,,,"GroupId: 2826791
 Translate: to communicate
 MiscInfo: uk"
@@ -24246,25 +24246,26 @@ Translate: to be saved from death"
 205810,WORD_NOUN,,HIRAGANA,,,宿学,しゅくがく,,shukugaku,znany uczony,,,,"GroupId: 1881980
 Translate: renowned scholar"
 205811,WORD_NOUN,,HIRAGANA,,,山雲,さんうん,,san'un,"górskie chmury
-góry i chmury (archaizm)",ok,,,"GroupId: 2840331
+góry i chmury (archaizm)",ok,,DUPLICATE 205812,"GroupId: 2840331
 Translate: mountain clouds
 Translate: mountains and clouds
 MiscInfo: arch"
-205812,WORD_NOUN,,HIRAGANA,,,山雲,やまぐも,,yamagumo,górskie chmury,,,,"GroupId: 2840331
+205812,WORD_NOUN,,HIRAGANA,,,山雲,やまぐも,,yamagumo,górskie chmury,,,DUPLICATE 205811,"GroupId: 2840331
 Translate: mountain clouds"
 205813,WORD_NOUN,,HIRAGANA,,,新仏,しんぼとけ,,shinbotoke,"duch kogoś na pierwszym O-Bon po jego śmierci
-niedawno zmarli (i pochowani lub poddani kremacji itp.)",,,,"GroupId: 2427460
+niedawno zmarli (i pochowani lub poddani kremacji itp.)",,,"DUPLICATE 205843
+DUPLICATE 205844","GroupId: 2427460
 Translate: spirit of someone on the first O-Bon after their death
 Translate: the recently departed (and buried or cremated, etc.)"
 205814,WORD_NOUN,,HIRAGANA,,,来賓演説者,らいひんえんぜつしゃ,,raihin' enzetsusha,gościnny mówca,mało znane słowo,,,"GroupId: 2593120
 Translate: guest speaker
 MiscInfo: obsc"
-205815,WORD_NOUN,,HIRAGANA,,,母者,ははじゃ,,hahaja,matka,"skrót, archaizm, język poufały",,,"GroupId: 2838626
+205815,WORD_NOUN,,HIRAGANA,,,母者,ははじゃ,,hahaja,matka,"skrót, archaizm, język poufały",,DUPLICATE 205845,"GroupId: 2838626
 Translate: mother
 MiscInfo: abbr
 MiscInfo: arch
 MiscInfo: fam"
-205816,WORD_NOUN,,HIRAGANA,,,母者人,ははじゃひと,,hahajahito,matka,"archaizm, język poufały",,,"GroupId: 2838624
+205816,WORD_NOUN,,HIRAGANA,,,母者人,ははじゃひと,,hahaja hito,matka,"archaizm, język poufały",,DUPLICATE 205848,"GroupId: 2838624
 Translate: mother
 MiscInfo: arch
 MiscInfo: fam"
@@ -24294,7 +24295,145 @@ Translate: gregariousness"
 205823,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,肉細,にくぼそ,,nikuboso,o cienkich liniach (czcionka),,,,"GroupId: 1827450
 Translate: lightfaced (type)"
-205824,WORD_NOUN,,HIRAGANA,,,舞風,まいかぜ,,maikaze,"wicher
+205824,WORD_NOUN,,HIRAGANA,,,舞風,まいかぜ,,mai kaze,"wicher
+trąba powietrzna",mało znane słowo,,,"GroupId: 2840286
+Translate: whirlwind
+MiscInfo: obsc"
+205825,WORD_NOUN,,HIRAGANA,,,吊戸棚,つりとだな,,tsuri todana,"szafka wisząca
+szafka ścienna",,,,"GroupId: 2409440
+Translate: hanging cupboard
+Translate: wall cabinet"
+205826,WORD_NOUN,,HIRAGANA,,,釣り戸棚,つりとだな,,tsuri todana,"szafka wisząca
+szafka ścienna",,,,"GroupId: 2409440
+Translate: hanging cupboard
+Translate: wall cabinet"
+205827,WORD_NOUN,,HIRAGANA,,,釣戸棚,つりとだな,,tsuri todana,"szafka wisząca
+szafka ścienna",,,,"GroupId: 2409440
+Translate: hanging cupboard
+Translate: wall cabinet"
+205828,WORD_NOUN,,KATAKANA,,,-,アカイエカ,,akaieka,"komar brzęczący
+komar pospolity","występujący w krajach klimatu tropikalnego i subtropikalnego, także w klimacie umiarkowanym, gatunek owada z rodziny komarowatych, rzędu muchówek, Culex pipiens",,,"GroupId: 2430950
+Translate: common house mosquito (Culex pipiens)
+MiscInfo: uk
+Translate: northern house mosquito
+MiscInfo: uk"
+205829,WORD_NOUN,,KATAKANA,,,-,レッグ,,reggu,"noga
+??? (sport)",ang: leg,,,"GroupId: 2841228
+Translate: leg
+Translate: leg (of a race, competition, etc.)"
+205830,WORD_NOUN,,KATAKANA,,,-,レビューワー,,rebyuuwaa,"krytyk
+recenzent",ang: reviewer,,,"GroupId: 1145770
+Translate: reviewer"
+205831,WORD_NOUN,,KATAKANA,,,-,レビューアー,,rebyuuaa,"krytyk
+recenzent",ang: reviewer,,,"GroupId: 1145770
+Translate: reviewer"
+205832,WORD_NOUN,,KATAKANA,,,-,レモンザメ,,remonzame,Negaprion acutidens,gatunek rekina,,,"GroupId: 2637660
+Translate: sicklefin lemon shark (Negaprion acutidens)
+MiscInfo: uk
+Translate: sharptooth lemon shark
+MiscInfo: uk"
+205833,WORD_NOUN,,KATAKANA,,,-,ンドゥーヤ,,nduuya,"'nduja (salami do smarowania)
+nduja",słowo pochodzenia włoskiego,,,"GroupId: 2839534
+Translate: 'nduja (spreadable salami)
+Translate: nduja"
+205834,WORD_ADJECTIVE_I,,HIRAGANA,,,受け易い,うけやすい,,uke yasui,"podatny
+wrażliwy na
+czuły na",,,,"GroupId: 2833592
+Translate: susceptible
+Translate: vulnerable
+Translate: prone (to)"
+205835,WORD_ADJECTIVE_NO,,HIRAGANA,,,つる性,つるせい,,tsurusei,"podobny do winorośli
+wspinający się
+pnący się",,,,"GroupId: 2775550
+Translate: vine-like
+Translate: climbing
+Translate: creeping"
+205836,WORD_VERB_RU,,HIRAGANA,,,掛け合せる,かけあわせる,,kake awaseru,"mnożyć (matematyka)
+krzyżować
+hybrydyzować
+mieszać (np. dwa kolory farby)",,,,"GroupId: 1207630
+Translate: to multiply
+Translate: to crossbreed
+Translate: to cross-breed
+Translate: to cross
+Translate: to cross-fertilize
+Translate: to hybridize
+Translate: to mix (e.g. paint colours)"
+205837,WORD_NOUN,,HIRAGANA,,,尿々,しいしい,,shii shii,mocz,"archaizm, język dzieci",,,"GroupId: 2558810
+Translate: urine
+MiscInfo: arch
+MiscInfo: chn"
+205838,WORD_NUMBER,,HIRAGANA,,,八十万,はちじゅうまん,,hachi juu man,"800,000
+osiemset tysięcy",,,,"GroupId: 2220450
+Translate: 800,000
+Translate: eight hundred thousand"
+205839,WORD_NUMBER,,HIRAGANA,,,８０００００,はちじゅうまん,,hachi juu man,"800,000
+osiemset tysięcy",,,,"GroupId: 2220450
+Translate: 800,000
+Translate: eight hundred thousand"
+205840,WORD_NUMBER,,HIRAGANA,,,八〇〇〇〇〇,はちじゅうまん,,hachi juu man,"800,000
+osiemset tysięcy",,,,"GroupId: 2220450
+Translate: 800,000
+Translate: eight hundred thousand"
+205841,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,命をとりとめる,いのちをとりとめる,,inochi o tori tomeru,"uciec od śmierci
+być uratowanym od śmierci",,,,"GroupId: 2841105
+Translate: to escape death
+Translate: to be saved from death"
+205842,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,命を取りとめる,いのちをとりとめる,,inochi o tori tomeru,"uciec od śmierci
+być uratowanym od śmierci",,,,"GroupId: 2841105
+Translate: to escape death
+Translate: to be saved from death"
+205843,WORD_NOUN,,HIRAGANA,,,新仏,あらぼとけ,,arabotoke,"duch kogoś na pierwszym O-Bon po jego śmierci
+niedawno zmarli (i pochowani lub poddani kremacji itp.)",,,"DUPLICATE 205813
+DUPLICATE 205844","GroupId: 2427460
+Translate: spirit of someone on the first O-Bon after their death
+Translate: the recently departed (and buried or cremated, etc.)"
+205844,WORD_NOUN,,HIRAGANA,,,新仏,にいぼとけ,,niibotoke,"duch kogoś na pierwszym O-Bon po jego śmierci
+niedawno zmarli (i pochowani lub poddani kremacji itp.)",,,"DUPLICATE 205813
+DUPLICATE 205843","GroupId: 2427460
+Translate: spirit of someone on the first O-Bon after their death
+Translate: the recently departed (and buried or cremated, etc.)"
+205845,WORD_NOUN,,HIRAGANA,,,母者,はわじゃ,,hawaja,matka,"skrót, archaizm, język poufały",,DUPLICATE 205815,"GroupId: 2838626
+Translate: mother
+MiscInfo: abbr
+MiscInfo: arch
+MiscInfo: fam"
+205846,WORD_NOUN,,HIRAGANA,,,母じゃ,ははじゃ,,hahaja,matka,"skrót, archaizm, język poufały",,DUPLICATE 205847,"GroupId: 2838626
+Translate: mother
+MiscInfo: abbr
+MiscInfo: arch
+MiscInfo: fam"
+205847,WORD_NOUN,,HIRAGANA,,,母じゃ,はわじゃ,,hawaja,matka,"skrót, archaizm, język poufały",,DUPLICATE 205846,"GroupId: 2838626
+Translate: mother
+MiscInfo: abbr
+MiscInfo: arch
+MiscInfo: fam"
+205848,WORD_NOUN,,HIRAGANA,,,母者人,はわじゃひと,,hawaja hito,matka,"archaizm, język poufały",,DUPLICATE 205816,"GroupId: 2838624
+Translate: mother
+MiscInfo: arch
+MiscInfo: fam"
+205849,WORD_NOUN,,HIRAGANA,,,母じゃ人,ははじゃひと,,hahaja hito,matka,"archaizm, język poufały",,DUPLICATE 205850,"GroupId: 2838624
+Translate: mother
+MiscInfo: arch
+MiscInfo: fam"
+205850,WORD_NOUN,,HIRAGANA,,,母じゃ人,はわじゃひと,,hawaja hito,matka,"archaizm, język poufały",,DUPLICATE 205849,"GroupId: 2838624
+Translate: mother
+MiscInfo: arch
+MiscInfo: fam"
+205851,WORD_VERB_U,,HIRAGANA,,,突き回す,つつきまわす,,tsutsuki mawasu,"grzebać
+szperać",,,,"GroupId: 2161070
+Translate: to poke around
+MiscInfo: uk"
+205852,WORD_NOUN,,HIRAGANA,,,組物,くみもの,,kumi mono,"???
+warkocz
+belkowanie (architektura)",,,,"GroupId: 2773190
+Translate: set
+Translate: plait
+Translate: braid
+Translate: entablature"
+205853,WORD_NOUN,,HIRAGANA,,,舞い風,まいかぜ,,mai kaze,"wicher
 trąba powietrzna",mało znane słowo,,,"GroupId: 2840286
 Translate: whirlwind
 MiscInfo: obsc"
