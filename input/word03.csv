@@ -1671,7 +1671,7 @@ Translate: abnormal underarm odor (odour)"
 Translate: to drink bubble tea
 MiscInfo: sl"
 200418,WORD_NOUN,,HIRAGANA,,,打ち抜き,うちぬき,,uchi nuki,"dziurkowanie
-przebijanie otworów",np. matrycą,,,"GroupId: 2036030
+przebijanie otworów",np. matrycą,,DUPLICATE 206075,"GroupId: 2036030
 Translate: punching (e.g. with a die)"
 200419,WORD_NOUN,,HIRAGANA,,,不法投棄,ふほうとうき,,fuhou touki,nielegalne wysypisko,np. śmieci,,,"GroupId: 1946040
 Translate: unlawful dumping (e.g. of garbage)"
@@ -13575,7 +13575,7 @@ Translate: you
 MiscInfo: hon"
 203518,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,闇々,あんあん,,an' an,"ciemny
-mroczny",archaizm,,,"GroupId: 2842562
+mroczny",archaizm,,DUPLICATE 206076,"GroupId: 2842562
 Translate: dark
 MiscInfo: arch
 Translate: gloomy
@@ -13589,7 +13589,7 @@ Translate: gloomy
 MiscInfo: arch"
 203520,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,闇闇,あんあん,,an' an,"ciemny
-mroczny",archaizm,,,"GroupId: 2842562
+mroczny",archaizm,,DUPLICATE 205970,"GroupId: 2842562
 Translate: dark
 MiscInfo: arch
 Translate: gloomy
@@ -19215,7 +19215,7 @@ Translate: national customs and manners
 Translate: provincial song or ballad"
 204786,WORD_NOUN,,HIRAGANA,,,貔貅,ひきゅう,,hikyuu,"okrutny lampart, walczący jak bestia
 dzielny wojownik",,,,
-204787,WORD_NOUN,,HIRAGANA,,,椛,なぎ,,nagi,nageia nagi,roślina,,,
+204787,WORD_NOUN,,HIRAGANA,,,椛,なぎ,,nagi,nageia nagi,roślina,,DUPLICATE 206025,
 204788,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,マルウエア,,maruuea,złośliwe oprogramowanie,ang: malware,,,
 204789,WORD_NOUN,,HIRAGANA,,,貪,とん,,ton,"pragnienie
 pożądanie
@@ -24365,7 +24365,7 @@ Translate: urine
 MiscInfo: arch
 MiscInfo: chn"
 205838,WORD_NUMBER,,HIRAGANA,,,八十万,はちじゅうまん,,hachi juu man,"800,000
-osiemset tysięcy",,,,"GroupId: 2220450
+osiemset tysięcy",,,DUPLICATE 205971,"GroupId: 2220450
 Translate: 800,000
 Translate: eight hundred thousand"
 205839,WORD_NUMBER,,HIRAGANA,,,８０００００,はちじゅうまん,,hachi juu man,"800,000
@@ -24891,11 +24891,11 @@ prosto przez bez przerwy (kolokwializm)",,,,"GroupId: 2229950
 Translate: removing a partition (wall)
 Translate: straight through without interruption
 MiscInfo: col"
-205970,WORD_ADVERB,,HIRAGANA,,,闇闇,やみやみ,,yami yami,???,,,,"GroupId: 1684350
+205970,WORD_ADVERB,,HIRAGANA,,,闇闇,やみやみ,,yami yami,???,,,DUPLICATE 203520,"GroupId: 1684350
 Translate: without one's knowledge
 Translate: easily"
 205971,WORD_ADJECTIVE_NO,,HIRAGANA,,,八十万,やそよろず,,yasoyorozu,"dużo
-wiele",archaizm,,,"GroupId: 2760090
+wiele",archaizm,,DUPLICATE 205838,"GroupId: 2760090
 Translate: many
 MiscInfo: arch"
 205972,WORD_NOUN,,HIRAGANA,,,左眼,さがん,,sagan,lewe oko,,,,"GroupId: 2843045
@@ -24909,7 +24909,7 @@ chuligan
 gangster
 obibok
 leń
-wałkoń",,,,"GroupId: 1605950
+wałkoń",,,DUPLICATE 206077,"GroupId: 1605950
 Translate: hooligan
 MiscInfo: uk
 Translate: layabout
@@ -25064,30 +25064,36 @@ Translate: blood alcohol concentration
 Translate: BAC"
 206013,WORD_NOUN,,HIRAGANA,,,通信文個数,つうしんぶんこすう,,tsuushinbun kosuu,liczba wiadomości,,,,"GroupId: 2376220
 Translate: message count"
-206014,WORD_NOUN,,KATAKANA,,,伊太利亜,イタリア,,itaria,Włochy,,,,
-206015,WORD_NOUN,,KATAKANA,,,伊太利亜,イタリヤ,,itariya,Włochy,,,,
+206014,WORD_NOUN,,KATAKANA,,,伊太利亜,イタリア,,itaria,Włochy,,,DUPLICATE 206015,
+206015,WORD_NOUN,,KATAKANA,,,伊太利亜,イタリヤ,,itariya,Włochy,,,DUPLICATE 206014,
 206016,WORD_NOUN,,HIRAGANA,,,葉巻き,はまき,,hamaki,cygaro,,,,
 206017,WORD_NOUN,,HIRAGANA,,,馬車,うまぐるま,,umaguruma,"furmanka
 wóz
 bryczka
 powóz
-kareta",,,,"GroupId: 1471780
+kareta",,,DUPLICATE 3084,"GroupId: 1471780
 Translate: (horse-drawn) coach
 Translate: carriage
 Translate: wagon
 Translate: cart"
 206018,WORD_NOUN,,HIRAGANA,,,安否,あんぷ,,anpu,"bezpieczeństwo
 powodzenie
-miewanie się",,,,
+miewanie się",,,"DUPLICATE 6787
+DUPLICATE 206019
+DUPLICATE 206020",
 206019,WORD_NOUN,,HIRAGANA,,,安否,あんぶ,,anbu,"bezpieczeństwo
 powodzenie
-miewanie się",,,,
+miewanie się",,,"DUPLICATE 6787
+DUPLICATE 206018
+DUPLICATE 206020",
 206020,WORD_NOUN,,HIRAGANA,,,安否,あんび,,anbi,"bezpieczeństwo
 powodzenie
-miewanie się",,,,
+miewanie się",,,"DUPLICATE 6787
+DUPLICATE 206018
+DUPLICATE 206019",
 206021,WORD_NOUN,,HIRAGANA,,,洗濯,せんだく,,sendaku,"pranie
 relaksowanie się (często jako 命の洗濯)
-robienie sobie przerwy (często jako 命の洗濯)",,,,"GroupId: 1390980
+robienie sobie przerwy (często jako 命の洗濯)",,,DUPLICATE 12432,"GroupId: 1390980
 Translate: washing
 Translate: laundry
 Translate: relaxing
@@ -25115,7 +25121,7 @@ liście zmieniające kolor
 klon japoński (acer japonicum)
 sarnina (kolokwialnie)
 dziczyzna (kolokwializm)
-warstwy kolorów na ubraniach przypominające jesienne kolory",,,,"GroupId: 1578780
+warstwy kolorów na ubraniach przypominające jesienne kolory",,,DUPLICATE 204787,"GroupId: 1578780
 Translate: autumn colours
 Translate: fall colors
 Translate: leaves changing color (colour)
@@ -25128,15 +25134,16 @@ dzień meczu",ang: day game,,,
 206027,WORD_NOUN,,KATAKANA,,,-,デイ・ゲーム,,dei geemu,"dzień gry
 dzień meczu",ang: day game,,,
 206028,WORD_NOUN,,HIRAGANA,,,雨脚,うきゃく,,ukyaku,"przelotny deszcz
-chwilowy ulewny deszcz",,,,"GroupId: 1576430
+chwilowy ulewny deszcz",,,"DUPLICATE 38450
+DUPLICATE 38508","GroupId: 1576430
 Translate: passing shower
 Translate: streaks of pouring rain"
 206029,WORD_NOUN,,HIRAGANA,,,大徳,たいとく,,taitoku,"prawy kapłan
-kapłan",,,,
+kapłan",,,DUPLICATE 52087,
 206030,WORD_NOUN,,HIRAGANA,,,誹譏,ひき,,hiki,"zniesławienie
 oszczerstwo
 paszkwil",,,,
-206031,WORD_NOUN,,HIRAGANA,,,死生,ししょう,,shishou,życie i śmierć,,,,
+206031,WORD_NOUN,,HIRAGANA,,,死生,ししょう,,shishou,życie i śmierć,,,DUPLICATE 60875,
 206032,WORD_NOUN,,KATAKANA,,,-,ワル,,waru,"zła rzecz
 zła osoba",,,,
 206033,WORD_NOUN,,KATAKANA,,,-,エルニニョ,,eru ninyo,El Nino,,,,
@@ -25144,19 +25151,20 @@ zła osoba",,,,
 206035,WORD_NOUN,,KATAKANA,,,-,エル・ニニョ,,eru ninyo,El Nino,,,,
 206036,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,安穏,あんおん,,an'on,"spokój
-cisza",,,,"GroupId: 1153730
+cisza",,,DUPLICATE 62734,"GroupId: 1153730
 Translate: peace
 Translate: quiet
 Translate: tranquility
 Translate: tranquillity"
 206037,WORD_NOUN,,HIRAGANA,,,顰み,ひそみ,,hisomi,zmarszczenie brwi,,,,
-206038,WORD_NOUN,,HIRAGANA,,,顰,ひん,,hin,zmarszczenie brwi,,,,
+206038,WORD_NOUN,,HIRAGANA,,,顰,ひん,,hin,zmarszczenie brwi,,,DUPLICATE 78686,
 206039,WORD_ADJECTIVE_F,,KATAKANA,,,-,ソシャル,,sosharu,"społeczny
 socjalny",ang: social,,,"GroupId: 2496750
 Translate: social"
-206040,WORD_NOUN,,HIRAGANA,,,博奕,ばくよう,,bakuyou,hazard,,,,
-206041,WORD_NOUN,,HIRAGANA,,,博弈,ばくえき,,bakueki,hazard,,,,
-206042,WORD_NOUN,,HIRAGANA,,,博弈,ばくよう,,bakuyou,hazard,,,,
+206040,WORD_NOUN,,HIRAGANA,,,博奕,ばくよう,,bakuyou,hazard,,,"DUPLICATE 84558
+DUPLICATE 84613",
+206041,WORD_NOUN,,HIRAGANA,,,博弈,ばくえき,,bakueki,hazard,,,DUPLICATE 206042,
+206042,WORD_NOUN,,HIRAGANA,,,博弈,ばくよう,,bakuyou,hazard,,,DUPLICATE 206041,
 206043,WORD_ADJECTIVE_I,,HIRAGANA,,,-,しょっぼい,,shobboi,"???
 ponury
 posępny",,,,
@@ -25175,19 +25183,21 @@ Translate: irregular conjugation (inflection, declension) of s-stem verbs
 MiscInfo: abbr
 Translate: conjugation of the verb ""suru""
 MiscInfo: abbr"
-206047,WORD_NOUN,,HIRAGANA,,,磔刑,はりつけ,,haritsuke,ukrzyżowanie,,,,
-206048,WORD_NOUN,,HIRAGANA,,,植字,ちょくじ,,chokuji,skład,,,,
-206049,WORD_NOUN,,HIRAGANA,,,剕,ひ,,hi,ucięcie nogi w kolanie,"forma kary w starożytnych Chinach, archaizm",,,"GroupId: 2542150
+206047,WORD_NOUN,,HIRAGANA,,,磔刑,はりつけ,,haritsuke,ukrzyżowanie,,,"DUPLICATE 80972
+DUPLICATE 81015",
+206048,WORD_NOUN,,HIRAGANA,,,植字,ちょくじ,,chokuji,skład,,,DUPLICATE 101259,
+206049,WORD_NOUN,,HIRAGANA,,,剕,ひ,,hi,ucięcie nogi w kolanie,"forma kary w starożytnych Chinach, archaizm",,DUPLICATE 102326,"GroupId: 2542150
 Translate: cutting off the leg at the knee (form of punishment in ancient China)
 MiscInfo: arch"
 206050,WORD_NOUN,,HIRAGANA,,,往古,おうご,,ougo,"czasy antyczne
-czasy starożytne",,,,"GroupId: 1719260
+czasy starożytne",,,DUPLICATE 103278,"GroupId: 1719260
 Translate: ancient times"
-206051,WORD_NOUN,,HIRAGANA,,,斎日,さいにち,,sainichi,dzień postu,,,,
+206051,WORD_NOUN,,HIRAGANA,,,斎日,さいにち,,sainichi,dzień postu,,,"DUPLICATE 103585
+DUPLICATE 103643",
 206052,WORD_NOUN,,KATAKANA_HIRAGANA,,,良変,ラへん,,rahen,nieregularna odmiana czasowników kończących się na “ru”,"w języku japońskim, skrót",,,
 206053,WORD_NOUN,,KATAKANA_HIRAGANA,,,奈変,ナへん,,nahen,nieregularna odmiana czasowników zakończonych na “nu”,"w piśmie, skrót",,,
 206054,WORD_NOUN,,HIRAGANA,,,抽送,ちゅうそう,,chuusou,ruch wkładania i wyjmowania,"szczególnie podczas stosunku płciowego, kolokwializm",,,
-206055,WORD_NOUN,,HIRAGANA,,,美肌,びき,,biki,piękna skóra,,,,
+206055,WORD_NOUN,,HIRAGANA,,,美肌,びき,,biki,piękna skóra,,,DUPLICATE 121241,
 206056,WORD_NOUN,,HIRAGANA,,,美膚,びはだ,,bihada,piękna skóra,,,,
 206057,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,口が固い,くちがかたい,,kuchi ga katai,"nie chcący nic powiedzieć
@@ -25208,7 +25218,7 @@ krawędź przepaści
 niebezpieczna pozycja
 krytyczny moment
 skraj
-krawędź",,,,"GroupId: 2006250
+krawędź",,,DUPLICATE 206060,"GroupId: 2006250
 Translate: cliff edge
 Translate: edge of a precipice
 Translate: perilous position
@@ -25219,7 +25229,7 @@ krawędź przepaści
 niebezpieczna pozycja
 krytyczny moment
 skraj
-krawędź",,,,"GroupId: 2006250
+krawędź",,,DUPLICATE 206059,"GroupId: 2006250
 Translate: cliff edge
 Translate: edge of a precipice
 Translate: perilous position
@@ -25229,13 +25239,14 @@ Translate: brink"
 Translate: irregular conjugation (inflection, declension) of the verb ""kuru""
 MiscInfo: abbr"
 206062,WORD_NOUN,,HIRAGANA,,,石女,しゃくにょ,,shakunyo,"niepłodna kobieta
-bezpłodna kobieta",wraźliwie,,,"GroupId: 1951870
+bezpłodna kobieta",wrażliwie,,"DUPLICATE 138339
+DUPLICATE 138370","GroupId: 1951870
 Translate: barren woman
 MiscInfo: sens
 Translate: sterile woman
 MiscInfo: sens"
 206063,WORD_NOUN,,HIRAGANA,,,極熱,ごくねち,,gokunechi,"wyjątkowe gorące
-wyjątkowy upał",,,,"GroupId: 1760720
+wyjątkowy upał",,,DUPLICATE 143077,"GroupId: 1760720
 Translate: extreme heat"
 206064,WORD_ADJECTIVE_I,,HIRAGANA,,,-,いぢましい,,idimashii,"błahy
 mało znaczący
@@ -25248,7 +25259,7 @@ jai-alai","gra znana w kraju Basków w Hiszpanii, jest to rodzaj tenisa rozgrywa
 Translate: jai-alai"
 206066,WORD_ADJECTIVE_I,,HIRAGANA,,,そら恐ろしい,そらおそろしい,,sora osoroshii,mieć niejasne obawy,,,,"GroupId: 1245510
 Translate: having vague fears"
-206067,WORD_NOUN,,HIRAGANA,,,同宿,どうじゅく,,doujuku,zakwaterowanie w tym samym hotelu,,,,"GroupId: 1452650
+206067,WORD_NOUN,,HIRAGANA,,,同宿,どうじゅく,,doujuku,zakwaterowanie w tym samym hotelu,,,DUPLICATE 183228,"GroupId: 1452650
 Translate: lodging in the same hotel"
 206068,WORD_NOUN,,HIRAGANA,,,揚げかす,あげかす,,age kasu,"resztki jedzenia, pozostałe w oleju do głębokiego smażenia",,,,"GroupId: 2703390
 Translate: scraps of food, batter, etc. remaining in deep-frying oil"
@@ -25276,11 +25287,11 @@ Translate: common quail (Coturnix coturnix)
 MiscInfo: uk"
 206075,"WORD_NOUN
 WORD_ADVERB",,HIRAGANA,,,打ち抜き,ぶちぬき,,buchi nuki,"usunięcie ścianki działowej
-prosto przez bez przerwy (kolokwializm)",,,,"GroupId: 2229950
+prosto przez bez przerwy (kolokwializm)",,,DUPLICATE 200418,"GroupId: 2229950
 Translate: removing a partition (wall)
 Translate: straight through without interruption
 MiscInfo: col"
-206076,WORD_ADVERB,,HIRAGANA,,,闇々,やみやみ,,yami yami,???,,,,"GroupId: 1684350
+206076,WORD_ADVERB,,HIRAGANA,,,闇々,やみやみ,,yami yami,???,,,DUPLICATE 203518,"GroupId: 1684350
 Translate: without one's knowledge
 Translate: easily"
 206077,WORD_NOUN,,HIRAGANA,,,与太者,よたもん,,yotamon,"łobuz
@@ -25288,7 +25299,7 @@ chuligan
 gangster
 obibok
 leń
-wałkoń",,,,"GroupId: 1605950
+wałkoń",,,DUPLICATE 205974,"GroupId: 1605950
 Translate: hooligan
 MiscInfo: uk
 Translate: layabout
@@ -25302,7 +25313,7 @@ chuligan
 gangster
 obibok
 leń
-wałkoń",,,,"GroupId: 1605950
+wałkoń",,,DUPLICATE 206079,"GroupId: 1605950
 Translate: hooligan
 MiscInfo: uk
 Translate: layabout
@@ -25316,7 +25327,7 @@ chuligan
 gangster
 obibok
 leń
-wałkoń",,,,"GroupId: 1605950
+wałkoń",,,DUPLICATE 206078,"GroupId: 1605950
 Translate: hooligan
 MiscInfo: uk
 Translate: layabout
@@ -25379,19 +25390,21 @@ MiscInfo: uk"
 pamięć współdzielone","rodzaj pamięci, z której może jednocześnie korzystać wiele programów",,,"GroupId: 2350870
 Translate: shared memory"
 206090,WORD_NOUN,,HIRAGANA,,,発熱,ほつねつ,,hotsunetsu,"atak gorączki
-gorączka",,,,"GroupId: 1477790
+gorączka",,,DUPLICATE 24748,"GroupId: 1477790
 Translate: (attack of) fever
 Translate: pyrexia"
 206091,WORD_NOUN,,HIRAGANA,,,夕景,せっけい,,sekkei,"wieczorny widok
 wieczorny krajobraz
-światło zachodzącego słońca (przestarzałe znaczenie)",,,,"GroupId: 2408250
+światło zachodzącego słońca (przestarzałe znaczenie)",,,"DUPLICATE 56475
+DUPLICATE 206092","GroupId: 2408250
 Translate: evening scene
 Translate: evening landscape
 Translate: light of the setting sun
 MiscInfo: obs"
 206092,WORD_NOUN,,HIRAGANA,,,夕景,せきけい,,sekikei,"wieczorny widok
 wieczorny krajobraz
-światło zachodzącego słońca (przestarzałe znaczenie)",,,,"GroupId: 2408250
+światło zachodzącego słońca (przestarzałe znaczenie)",,,"DUPLICATE 56475
+DUPLICATE 206091","GroupId: 2408250
 Translate: evening scene
 Translate: evening landscape
 Translate: light of the setting sun
