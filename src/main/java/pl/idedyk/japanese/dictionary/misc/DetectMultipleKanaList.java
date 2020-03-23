@@ -1,4 +1,4 @@
-package pl.idedyk.japanese.dictionary.tools;
+package pl.idedyk.japanese.dictionary.misc;
 
 import java.util.ArrayList;
 import java.util.Iterator;
