@@ -25240,7 +25240,9 @@ Translate: irregular conjugation (inflection, declension) of the verb ""kuru""
 MiscInfo: abbr"
 206062,WORD_NOUN,,HIRAGANA,,,石女,しゃくにょ,,shakunyo,"niepłodna kobieta
 bezpłodna kobieta",wrażliwie,,"DUPLICATE 138339
-DUPLICATE 138370","GroupId: 1951870
+DUPLICATE 138370
+DUPLICATE 206105
+DUPLICATE 206106","GroupId: 1951870
 Translate: barren woman
 MiscInfo: sens
 Translate: sterile woman
@@ -25410,54 +25412,65 @@ Translate: evening landscape
 Translate: light of the setting sun
 MiscInfo: obs"
 206093,WORD_NOUN,,KATAKANA,,,-,キャッシュ,,kyasshu,"pieniądze
-gotówka",ang: cash,,,"GroupId: 2843626
+gotówka",ang: cash,,DUPLICATE 23454,"GroupId: 2843626
 Translate: cash"
 206094,WORD_NOUN,,KATAKANA,,,-,クリーク,,kuriiku,"dopływ
 droga wodna (w tym kanał irygacyjny lub drenażowy)
-kanał",,,,"GroupId: 2843627
+kanał",,,"DUPLICATE 40385
+DUPLICATE 206095","GroupId: 2843627
 Translate: creek
 Translate: waterway (including irrigation or drainage canal)"
-206095,WORD_NOUN,,KATAKANA,,,-,クリーク,,kuriiku,klika,ang: clique,,,"GroupId: 2843629
+206095,WORD_NOUN,,KATAKANA,,,-,クリーク,,kuriiku,klika,ang: clique,,"DUPLICATE 40385
+DUPLICATE 206094","GroupId: 2843629
 Translate: clique"
-206096,WORD_NOUN,,KATAKANA,,,-,ゴージ,,gooji,dłuto,ang: gouge,,,"GroupId: 2486290
+206096,WORD_NOUN,,KATAKANA,,,-,ゴージ,,gooji,dłuto,ang: gouge,,DUPLICATE 72383,"GroupId: 2486290
 Translate: gouge (tool)"
-206097,WORD_NOUN,,KATAKANA,,,-,サンデー,,sandee,niedziela,ang: Sunday,,,"GroupId: 2843687
+206097,WORD_NOUN,,KATAKANA,,,-,サンデー,,sandee,niedziela,ang: Sunday,,DUPLICATE 46367,"GroupId: 2843687
 Translate: Sunday"
-206098,WORD_NOUN,,KATAKANA,,,-,サンド,,sando,kanapka,"skrót, ang: sandwich",,,"GroupId: 2843688
+206098,WORD_NOUN,,KATAKANA,,,-,サンド,,sando,kanapka,"skrót, ang: sandwich",,DUPLICATE 20132,"GroupId: 2843688
 Translate: sandwich
 MiscInfo: abbr"
-206099,WORD_NOUN,,KATAKANA,,,-,スクラム,,sukuramu,scram,procedura wygaszenia łańcuchowej reakcji rozszczepienia w reaktorze jądrowym,,,"GroupId: 2843728
+206099,WORD_NOUN,,KATAKANA,,,-,スクラム,,sukuramu,scram,procedura wygaszenia łańcuchowej reakcji rozszczepienia w reaktorze jądrowym,,DUPLICATE 16105,"GroupId: 2843728
 Translate: scram (emergency nuclear reactor shut-down)"
 206100,WORD_NOUN,,KATAKANA,,,-,ソース,,soosu,"źródło
 program źródłowy (informatyka)
-kod źródłowy (informatyka)",ang: source,,,"GroupId: 2843727
+kod źródłowy (informatyka)",ang: source,,DUPLICATE 12674,"GroupId: 2843727
 Translate: source
 Translate: origin
 Translate: source program
 Translate: source code"
-206101,WORD_NOUN,,KATAKANA,,,-,ハム,,hamu,szum,"w TV, radiowy i etc, ang: ang: hum",,,"GroupId: 2843768
+206101,WORD_NOUN,,KATAKANA,,,-,ハム,,hamu,szum,"w TV, radiowy i etc, ang: ang: hum",,DUPLICATE 18865,"GroupId: 2843768
 Translate: hum (of a TV, radio, etc.)"
 206102,WORD_NOUN,,KATAKANA,,,-,バット,,batto,"kadź
 zbiornik
 taca
 tacka
-podajnik","ang: vat, tray",,,"GroupId: 2843630
+podajnik","ang: vat, tray",,DUPLICATE 19470,"GroupId: 2843630
 Translate: vat
 Translate: tray"
-206103,WORD_NOUN,,KATAKANA,,,-,レ,,re,real brazylijski,"skrót, jednostka monetarna Brazylii",,,"GroupId: 2843650
+206103,WORD_NOUN,,KATAKANA,,,-,レ,,re,real brazylijski,"skrót, jednostka monetarna Brazylii",,DUPLICATE 78929,"GroupId: 2843650
 Translate: real (Brazilian currency)
 MiscInfo: abbr"
 206104,WORD_NOUN,,HIRAGANA,,,瓢,ひょう,,hyou,"tykwa
 tykwa pospolita
 kalebasa
-butelka z tykwy","gatunek jednorocznych, pnących roślin tropikalnych z rodziny dyniowatych, Lagenaria siceraria",,,"GroupId: 2229440
+butelka z tykwy","gatunek jednorocznych, pnących roślin tropikalnych z rodziny dyniowatych, Lagenaria siceraria",,"DUPLICATE 36520
+DUPLICATE 36524
+DUPLICATE 36525
+DUPLICATE 49308","GroupId: 2229440
 Translate: Lagenaria siceraria var. gourda (variety of bottle gourd)
 MiscInfo: uk
 Translate: gourd (container) made from its fruit
 MiscInfo: uk"
-206105,WORD_NOUN,,HIRAGANA,,,石女,せきじょ,,sekijo,kamienny posąg kobiety,archaizm,,,"GroupId: 2843695
+206105,WORD_NOUN,,HIRAGANA,,,石女,せきじょ,,sekijo,kamienny posąg kobiety,archaizm,,"DUPLICATE 138339
+DUPLICATE 138370
+DUPLICATE 206062
+DUPLICATE 206106","GroupId: 2843695
 Translate: stone statue of a woman
 MiscInfo: arch"
-206106,WORD_NOUN,,HIRAGANA,,,石女,しゃくにょ,,shakunyo,kamienny posąg kobiety,archaizm,,,"GroupId: 2843695
+206106,WORD_NOUN,,HIRAGANA,,,石女,しゃくにょ,,shakunyo,kamienny posąg kobiety,archaizm,,"DUPLICATE 138339
+DUPLICATE 138370
+DUPLICATE 206062
+DUPLICATE 206105","GroupId: 2843695
 Translate: stone statue of a woman
 MiscInfo: arch"
