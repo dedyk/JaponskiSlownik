@@ -341,6 +341,17 @@ public class WordGenerator {
 							
 							Integer groupId = groupEntryFromLucene.getGroup().getId();
 							
+							/*
+							Set<Integer> filteringGroupIdSet = new HashSet<Integer>(Arrays.asList(
+							1111111,
+							2222222,
+							3333333));
+							
+							if (filteringGroupIdSet.contains(groupId) == false) {
+								continue;
+							}
+							*/
+							
 							// czy ta grupa byla juz sprawdzana
 							if (alreadyCheckedGroupId.contains(groupId) == true) {
 								continue;
