@@ -25565,7 +25565,7 @@ Translate: daily life of a writer
 AdditionalInfo: epistolary style"
 206131,WORD_NOUN,,HIRAGANA,,,菜類,なるい,,narui,"(jadalne) warzywa
 zielenina
-warzywa",,,,"GroupId: 2843297
+warzywa",,,DUPLICATE 206173,"GroupId: 2843297
 Translate: (edible) greens
 Translate: leafy greens
 Translate: vegetables"
@@ -25636,7 +25636,7 @@ WORD_EXPRESSION",,HIRAGANA,,,顔を付き合わせる,かおをつきあわせ�
 Translate: to meet face to face"
 206150,WORD_NOUN,,HIRAGANA,,,自社株買い,じしゃかぶがい,,jisha kabugai,skup akcji własnych,,,,"GroupId: 2633500
 Translate: stock buy-back"
-206151,WORD_NOUN,,KATAKANA,,,-,ドアストッパー,,doasutoppaa,podkładka pod drzwi (żeby się nie zamykały),ang: doorstop,,,"GroupId: 2483440
+206151,WORD_NOUN,,KATAKANA,,,-,ドアストッパー,,doa sutoppaa,podkładka pod drzwi (żeby się nie zamykały),ang: doorstop,,,"GroupId: 2483440
 Translate: doorstop
 Translate: door stopper"
 206152,WORD_VERB_U,,HIRAGANA,,,打ち続く,うちつづく,,uchi tsuduku,"kontynuować przez długi czas
@@ -25667,7 +25667,8 @@ Translate: fire tube (in a boiler)
 Translate: furnace flue
 Translate: smoke tube"
 206159,WORD_NOUN,,HIRAGANA,,,飲酒,おんじゅ,,onju,"spożywanie alkoholu (zabronione przez jedno z buddyjskich przykazań)
-buddyjska zasada zakazująca spożywania alkoholu (skrót)",,,,"GroupId: 2843615
+buddyjska zasada zakazująca spożywania alkoholu (skrót)",,,"DUPLICATE 16213
+DUPLICATE 206188","GroupId: 2843615
 Translate: consumption of alcohol (as prohibited by one of the Buddhist precepts)
 Translate: Buddhist precept prohibiting the consumption of alcohol
 MiscInfo: abbr"
@@ -25675,23 +25676,25 @@ MiscInfo: abbr"
 Translate: traditional Chinese clothing"
 206161,WORD_NOUN,,HIRAGANA,,,合葬,がっそう,,gassou,"wspólny pochówek
 grupowy pochówek
-pochowanie razem",,,,"GroupId: 2843751
+pochowanie razem",,,DUPLICATE 206189,"GroupId: 2843751
 Translate: joint burial
 Translate: group burial
 Translate: burying together"
 206162,WORD_NOUN,,HIRAGANA,,,生所,しょうじょ,,shoujo,"miejsce urodzenia (archaizm)
 miejsce odroczenia
-miejsce reinkarnacji",,,,"GroupId: 2843613
+miejsce reinkarnacji",,,"DUPLICATE 206190
+DUPLICATE 206191","GroupId: 2843613
 Translate: birthplace
 MiscInfo: arch
 Translate: place of rebirth
 Translate: place of reincarnation"
 206163,WORD_NOUN,,HIRAGANA,,,新葉,しんば,,shinba,"nowe liście
-świeża zieleń",,,,"GroupId: 2843786
+świeża zieleń",,,DUPLICATE 206195,"GroupId: 2843786
 Translate: new leaves
 Translate: fresh verdure"
 206164,WORD_NOUN,,HIRAGANA,,,定日,ていじつ,,teijitsu,"ustalona data
-wyznaczony dzień",,,,"GroupId: 2843645
+wyznaczony dzień",,,"DUPLICATE 206196
+DUPLICATE 206197","GroupId: 2843645
 Translate: fixed date
 Translate: appointed day"
 206165,WORD_NOUN,,HIRAGANA,,,水災,すいさい,,suisai,"zniszczenia spowodowane przez wodę
@@ -25700,3 +25703,155 @@ Translate: water damage
 Translate: flood disaster"
 206166,WORD_NOUN,,HIRAGANA,,,製函,せいかん,,seikan,produkcja kartonowych pudełek,,,,"GroupId: 2843657
 Translate: (cardboard) box manufacture"
+206167,WORD_NOUN,,HIRAGANA,,,蒐集癖,しゅうしゅうへき,,shuushuuheki,"mania kolekcjonowania
+mania zbierania
+kolekcjonizm",,,,"GroupId: 2642330
+Translate: collecting mania
+Translate: mania for collecting
+Translate: collectionism"
+206168,WORD_ADJECTIVE_I,,HIRAGANA,,,後ろぐらい,うしろぐらい,,ushiro gurai,"podejrzany
+oszukańczy
+podstępny",,,,"GroupId: 1678920
+Translate: shady
+Translate: underhanded
+Translate: questionable"
+206169,WORD_ADJECTIVE_I,,HIRAGANA,,,うしろ暗い,うしろぐらい,,ushiro gurai,"podejrzany
+oszukańczy
+podstępny",,,,"GroupId: 1678920
+Translate: shady
+Translate: underhanded
+Translate: questionable"
+206170,WORD_NOUN,,HIRAGANA,,,むしょ送り,むしょおくり,,musho okuri,bycie wysłany do więzienia,,,,"GroupId: 2402920
+Translate: being sent to prison"
+206171,WORD_NOUN,,KATAKANA,,,-,チチブコウモリ,,chichibu koumori,Barbastella leucomelas,zwierzę,,,"GroupId: 2800750
+Translate: Asian barbastelle (Barbastella leucomelas)
+MiscInfo: uk
+Translate: eastern barbastelle
+MiscInfo: uk"
+206172,WORD_NOUN,,HIRAGANA,,,筆研,ひっけん,,hikken,"pędzel do pisania i kamień pisarski
+utwór
+kompozycja
+codzienne życie pisarza (styl epistolarny)",,,,"GroupId: 2843019
+Translate: writing brush and inkstone
+Translate: writing
+Translate: composition
+Translate: daily life of a writer
+AdditionalInfo: epistolary style"
+206173,WORD_NOUN,,HIRAGANA,,,菜類,さいるい,,sairui,"(jadalne) warzywa
+zielenina
+warzywa",,,DUPLICATE 206131,"GroupId: 2843297
+Translate: (edible) greens
+Translate: leafy greens
+Translate: vegetables"
+206174,WORD_NOUN,,KATAKANA,,,-,イソシギ,,isoshigi,"brodziec piskliwy
+brodziec krzykliwy
+kuliczek piskliwy
+piskliwiec","gatunek średniego ptaka wędrownego z rodziny bekasowatych, Actitis hypoleucos",,,"GroupId: 1780330
+Translate: common sandpiper (Actitis hypoleucos)
+MiscInfo: uk"
+206175,WORD_NOUN,,KATAKANA,,,-,オンドル,,ondoru,ondol,tradycyjny koreański system ogrzewania podpodłogowego,,,"GroupId: 1781070
+Translate: Korean floor heater
+MiscInfo: uk"
+206176,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオハクチョウ,,oohakuchou,łabędź krzykliwy,"gatunek dużego ptaka wodnego z rodziny kaczkowatych, zamieszkujący Palearktykę od Islandii po Kamczatkę, Cygnus cygnus",,,"GroupId: 1785470
+Translate: whooper swan (Cygnus cygnus)
+MiscInfo: uk"
+206177,WORD_NOUN,,HIRAGANA,,,翅斑蚊,はまだらか,,hamadaraka,widliszek,"rodzaj muchówek z rodziny komarowatych, Anopheles",,,"GroupId: 1816080
+Translate: Anopheles (genus of mosquitoes)
+MiscInfo: uk"
+206178,WORD_NOUN,,KATAKANA,,,-,ハマダラカ,,hamadaraka,widliszek,"rodzaj muchówek z rodziny komarowatych, Anopheles",,,"GroupId: 1816080
+Translate: Anopheles (genus of mosquitoes)
+MiscInfo: uk"
+206179,WORD_NOUN,,KATAKANA,,,-,トックリバチ,,tokkuribachi,Eumenes mikado,gatunek osy,,,"GroupId: 2231540
+Translate: potter wasp (esp. species Eumenes mikado)
+MiscInfo: uk"
+206180,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,顔を突き合わせる,かおをつきあわせる,,kao o tsuki awaseru,spotkanie twarzą w twarz,,,,"GroupId: 2102790
+Translate: to meet face to face"
+206181,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,顔をつき合わせる,かおをつきあわせる,,kao o tsuki awaseru,spotkanie twarzą w twarz,,,,"GroupId: 2102790
+Translate: to meet face to face"
+206182,WORD_NOUN,,HIRAGANA,,,自社株買,じしゃかぶがい,,jisha kabugai,skup akcji własnych,,,,"GroupId: 2633500
+Translate: stock buy-back"
+206183,WORD_NOUN,,KATAKANA,,,-,ドア・ストッパー,,doa sutoppaa,podkładka pod drzwi (żeby się nie zamykały),ang: doorstop,,,"GroupId: 2483440
+Translate: doorstop
+Translate: door stopper"
+206184,WORD_VERB_U,,HIRAGANA,,,打続く,うちつづく,,uchi tsuduku,"kontynuować przez długi czas
+???",,,,"GroupId: 1849550
+Translate: to continue for a long time
+Translate: to undergo a repeated series"
+206185,WORD_VERB_U,,HIRAGANA,,,うち続く,うちつづく,,uchi tsuduku,"kontynuować przez długi czas
+???",,,,"GroupId: 1849550
+Translate: to continue for a long time
+Translate: to undergo a repeated series"
+206186,WORD_VERB_U,,HIRAGANA,,,打ちつづく,うちつづく,,uchi tsuduku,"kontynuować przez długi czas
+???",,,,"GroupId: 1849550
+Translate: to continue for a long time
+Translate: to undergo a repeated series"
+206187,WORD_NOUN,,KATAKANA,,,-,ブエノス・アイレス,,buenosu airesu,Buenos Aires,"stolica Argentyny, największe miasto tego kraju i jedno z największych w Ameryce Południowej",,,"GroupId: 2839576
+Translate: Buenos Aires (Argentina)"
+206188,WORD_NOUN,,HIRAGANA,,,飲酒,おんしゅ,,onshu,"spożywanie alkoholu (zabronione przez jedno z buddyjskich przykazań)
+buddyjska zasada zakazująca spożywania alkoholu (skrót)",,,"DUPLICATE 16213
+DUPLICATE 206159","GroupId: 2843615
+Translate: consumption of alcohol (as prohibited by one of the Buddhist precepts)
+Translate: Buddhist precept prohibiting the consumption of alcohol
+MiscInfo: abbr"
+206189,WORD_NOUN,,HIRAGANA,,,合葬,ごうそう,,gousou,"wspólny pochówek
+grupowy pochówek
+pochowanie razem",,,DUPLICATE 206161,"GroupId: 2843751
+Translate: joint burial
+Translate: group burial
+Translate: burying together"
+206190,WORD_NOUN,,HIRAGANA,,,生所,しょうしょ,,shousho,"miejsce urodzenia (archaizm)
+miejsce odroczenia
+miejsce reinkarnacji",,,"DUPLICATE 206162
+DUPLICATE 206191","GroupId: 2843613
+Translate: birthplace
+MiscInfo: arch
+Translate: place of rebirth
+Translate: place of reincarnation"
+206191,WORD_NOUN,,HIRAGANA,,,生所,うまれどころ,,umare dokoro,"miejsce urodzenia (archaizm)
+miejsce odroczenia
+miejsce reinkarnacji",,,"DUPLICATE 206162
+DUPLICATE 206190","GroupId: 2843613
+Translate: birthplace
+MiscInfo: arch
+Translate: place of rebirth
+Translate: place of reincarnation"
+206192,WORD_NOUN,,HIRAGANA,,,生処,しょうじょ,,shoujo,"miejsce urodzenia (archaizm)
+miejsce odroczenia
+miejsce reinkarnacji",,,"DUPLICATE 206193
+DUPLICATE 206194","GroupId: 2843613
+Translate: birthplace
+MiscInfo: arch
+Translate: place of rebirth
+Translate: place of reincarnation"
+206193,WORD_NOUN,,HIRAGANA,,,生処,しょうしょ,,shousho,"miejsce urodzenia (archaizm)
+miejsce odroczenia
+miejsce reinkarnacji",,,"DUPLICATE 206192
+DUPLICATE 206194","GroupId: 2843613
+Translate: birthplace
+MiscInfo: arch
+Translate: place of rebirth
+Translate: place of reincarnation"
+206194,WORD_NOUN,,HIRAGANA,,,生処,うまれどころ,,umare dokoro,"miejsce urodzenia (archaizm)
+miejsce odroczenia
+miejsce reinkarnacji",,,"DUPLICATE 206192
+DUPLICATE 206193","GroupId: 2843613
+Translate: birthplace
+MiscInfo: arch
+Translate: place of rebirth
+Translate: place of reincarnation"
+206195,WORD_NOUN,,HIRAGANA,,,新葉,にいは,,niiha,"nowe liście
+świeża zieleń",,,DUPLICATE 206163,"GroupId: 2843786
+Translate: new leaves
+Translate: fresh verdure"
+206196,WORD_NOUN,,HIRAGANA,,,定日,じょうにち,,jounichi,"ustalona data
+wyznaczony dzień",,,"DUPLICATE 206164
+DUPLICATE 206197","GroupId: 2843645
+Translate: fixed date
+Translate: appointed day"
+206197,WORD_NOUN,,HIRAGANA,,,定日,じょうじつ,,joujitsu,"ustalona data
+wyznaczony dzień",,,"DUPLICATE 206164
+DUPLICATE 206196","GroupId: 2843645
+Translate: fixed date
+Translate: appointed day"
