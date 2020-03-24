@@ -9,3 +9,5 @@
 uzupełniacz - 8
 -----------
 suma: 70
+
+sugestia
