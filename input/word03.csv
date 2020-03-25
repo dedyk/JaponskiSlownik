@@ -25956,7 +25956,7 @@ Translate: small profit
 MiscInfo: obsc"
 206221,WORD_NOUN,,HIRAGANA,,,軍種,ぐんしゅ,,gunshu,oddział wojskowy,,,,"GroupId: 2842808
 Translate: military branch"
-206222,WORD_NOUN,,HIRAGANA,,,古琴,こきん,,kokin,guqin,tradycyjny chiński instrument muzyczny z grupy chordofonów,,,"GroupId: 2842666
+206222,WORD_NOUN,,HIRAGANA,,,古琴,こきん,,kokin,guqin,tradycyjny chiński instrument muzyczny z grupy chordofonów,,DUPLICATE 206265,"GroupId: 2842666
 Translate: guqin (Chinese seven-string zither)"
 206223,WORD_NOUN,,HIRAGANA,,,玉鴫,たましぎ,,tamashigi,"złotosłonka bengalska
 dziobówka","gatunek średniego ptaka z rodziny złotosłonek, Rostratula benghalensis",,,"GroupId: 1828600
@@ -25973,7 +25973,7 @@ MiscInfo: uk"
 siwarnik","gatunek małego ptaka z rodziny pliszkowatych, Anthus spinoletta",,,"GroupId: 1833340
 Translate: water pipit (Anthus spinoletta)
 MiscInfo: uk"
-206227,WORD_NOUN,,HIRAGANA,,,岩雲雀,いわひばり,,iwahibari,płochacz halny,"gatunek małego, osiadłego ptaka z rodziny płochaczy, Prunella collaris",,,"GroupId: 1839110
+206227,WORD_NOUN,,HIRAGANA,,,岩雲雀,いわひばり,,iwahi bari,płochacz halny,"gatunek małego, osiadłego ptaka z rodziny płochaczy, Prunella collaris",,,"GroupId: 1839110
 Translate: alpine accentor (Prunella collaris)
 MiscInfo: uk"
 206228,WORD_NOUN,,HIRAGANA,,,不変化詞,ふへんかし,,fuhenkashi,"nieodmienna część mowy
@@ -26030,13 +26030,13 @@ Translate: multi-monitor
 Translate: multi-display"
 206245,WORD_NOUN,,HIRAGANA,,,人権救済機関,じんけんきゅうさいきかん,,jinken kyuusai kikan,organizacja monitorująca prawa człowieka,,,,"GroupId: 2427700
 Translate: organization to monitor human rights"
-206246,WORD_NOUN,,KATAKANA,,,-,セグロオオトカゲ,,seguro ootokage,Varanus yuwonoi,gatunek jaszczurki,,,"GroupId: 2556270
+206246,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,セグロオオトカゲ,,seguro ootokage,Varanus yuwonoi,gatunek jaszczurki,,,"GroupId: 2556270
 Translate: tricolored monitor (Varanus yuwonoi, species of carnivorous monitor lizard from Halmahera Island in North Maluku, Indonesia)
 Translate: Moluccan black-backed monitor"
-206247,WORD_NOUN,,KATAKANA,,,-,クジャクオオトカゲ,,kujaku ootokage,Varanus auffenbergi,gatunek jaszczurki,,,"GroupId: 2556280
+206247,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クジャクオオトカゲ,,kujaku ootokage,Varanus auffenbergi,gatunek jaszczurki,,,"GroupId: 2556280
 Translate: peacock monitor (Varanus auffenbergi, species of carnivorous monitor lizard native to the island of Roti in Indonesia)
 Translate: Auffenberg's monitor"
-206248,WORD_NOUN,,KATAKANA,,,-,ノドジロオオトカゲ,,nodojiro ootokage,Varanus albigularis,gatunek jaszczurki,,,"GroupId: 2556870
+206248,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ノドジロオオトカゲ,,nodojiro ootokage,Varanus albigularis,gatunek jaszczurki,,,"GroupId: 2556870
 Translate: rock monitor (Varanus albigularis, species of carnivorous monitor lizard found in southern Africa)
 Translate: legavaan
 Translate: white-throated monitor"
@@ -26055,13 +26055,13 @@ Translate: blood glucose meter
 Translate: glucose meter
 Translate: glucometer
 Translate: blood glucose monitor"
-206252,WORD_NOUN,,KATAKANA,,,-,キイロオオトカゲ,,kiiro ootokage,waran żółtawy,"gatunek gada z rodziny waranów, Varanus flavescens",,,"GroupId: 2556160
+206252,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,キイロオオトカゲ,,kiiro ootokage,waran żółtawy,"gatunek gada z rodziny waranów, Varanus flavescens",,,"GroupId: 2556160
 Translate: yellow monitor (Varanus flavescens, species of asian carnivorous monitor lizard found in India, Pakistan, Nepal and Bangladesh)"
-206253,WORD_NOUN,,KATAKANA,,,-,アオホソオオトカゲ,,aohoso ootokage,waran błękitny,Varanus macraei,,,"GroupId: 2556240
+206253,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,アオホソオオトカゲ,,aohoso ootokage,waran błękitny,Varanus macraei,,,"GroupId: 2556240
 Translate: blue-spotted tree monitor (Varanus macraei, species of carnivorous monitor lizard from the island of Batanta, Indonesia)"
-206254,WORD_NOUN,,KATAKANA,,,-,グレイオオトカゲ,,gurei ootokage,Varanus olivaceus,gatunek jaszczurki,,,"GroupId: 2556860
+206254,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,グレイオオトカゲ,,gurei ootokage,Varanus olivaceus,gatunek jaszczurki,,,"GroupId: 2556860
 Translate: Gray's monitor (Varanus olivaceus, species of carnivorous monitor lizard from Luzon and the Catanduanes Islands in the Philippines)"
-206255,WORD_NOUN,,KATAKANA_HIRAGANA,,,尼羅大蜥蜴,ナイルおおとかげ,,nairu ootokage,waran nilowy,"gatunek ziemnowodnego gada z rodziny waranów, Varanus niloticus",,,"GroupId: 2556890
+206255,WORD_NOUN,,KATAKANA_EXCEPTION,,,尼羅大蜥蜴,ナイルおおとかげ,,nairu ootokage,waran nilowy,"gatunek ziemnowodnego gada z rodziny waranów, Varanus niloticus",,,"GroupId: 2556890
 Translate: Nile monitor (Varanus niloticus, species of carnivorous monitor lizard native to sub-Saharan Africa)
 MiscInfo: uk
 Translate: water leguaan
@@ -26079,10 +26079,77 @@ MiscInfo: uk"
 206257,WORD_NOUN,,HIRAGANA,,,給食係,きゅうしょくがかり,,kyuushokugakari,uczeń odpowiedzialny za dystrybucję obiadu i sprzątanie po obiedzie w szkole,,,,"GroupId: 2832358
 Translate: lunch monitor
 Translate: student responsible for school lunch distribution and clean-up"
-206258,WORD_NOUN,,KATAKANA,,,-,スジメヒメオオトカゲ,,sujimehime ootokage,Varanus caudolineatus,gatunek jaszczurki,,,"GroupId: 2556290
+206258,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,スジメヒメオオトカゲ,,sujimehime ootokage,Varanus caudolineatus,gatunek jaszczurki,,,"GroupId: 2556290
 Translate: stripe-tailed goanna (Varanus caudolineatus, species of carnivorous monitor lizard native to the forests of Western Australian)"
 206259,WORD_EXPRESSION,,HIRAGANA,,,別封で,べっぷうで,,beppuu de,???,,,,"GroupId: 1510140
 Translate: under separate cover"
 206260,WORD_NOUN,,HIRAGANA,,,浜堤,ひんてい,,hintei,"grzbiet plaży
 plaża grzbiet",geologia,,,"GroupId: 2827816
 Translate: beach ridge"
+206261,WORD_NOUN,,HIRAGANA,,,鶴座,つるざ,,tsuru za,"Gwiazdozbiór Żurawia
+Żuraw","jedna z ptasich konstelacji nieba równikowego i południowego, oznaczona w 1595 roku przez Pietra Dirksza Keysera i Fredericka de Houtmana, w epoce wielkich odkryć geograficznych",,,"GroupId: 2717610
+Translate: Grus (constellation)
+Translate: the Crane"
+206262,WORD_NOUN,,KATAKANA,,,-,イボイノシシ,,iboinoshishi,"guziec pustynny
+fakoszer","gatunek afrykańskiej świni, zwierzę łowne, Phacochoerus aethiopicus",,,"GroupId: 2198800
+Translate: warthog (Phacochoerus aethiopicus)
+MiscInfo: uk"
+206263,WORD_VERB_U,,HIRAGANA,,,ぬぐい取る,ぬぐいとる,,nugui toru,wymazywać,,,,"GroupId: 2002510
+Translate: to wipe off
+Translate: to wipe out
+Translate: to expunge"
+206264,WORD_NOUN,,HIRAGANA,,,蝿頭,ようとう,,youtou,"małe litery
+małe pismo odręczne
+tak mały jak głowa muchy
+mały zysk",mało znane słowo,,,"GroupId: 2843447
+Translate: small characters
+MiscInfo: obsc
+Translate: tiny handwriting
+MiscInfo: obsc
+Translate: as small as the head of a fly
+MiscInfo: obsc
+Translate: small profit
+MiscInfo: obsc"
+206265,WORD_NOUN,,KATAKANA,,,古琴,クーチン,,kuuchin,guqin,tradycyjny chiński instrument muzyczny z grupy chordofonów,,DUPLICATE 206222,"GroupId: 2842666
+Translate: guqin (Chinese seven-string zither)"
+206266,WORD_NOUN,,KATAKANA,,,-,タマシギ,,tamashigi,"złotosłonka bengalska
+dziobówka","gatunek średniego ptaka z rodziny złotosłonek, Rostratula benghalensis",,,"GroupId: 1828600
+Translate: painted snipe (Rostratula benghalensis)
+MiscInfo: uk"
+206267,WORD_NOUN,,KATAKANA,,,-,アカウミガメ,,akaumigame,karetta,"gatunek gada z rodziny żółwi morskich, jedyny przedstawiciel rodzaju Caretta Rafinesque, Caretta caretta",,,"GroupId: 1829140
+Translate: loggerhead turtle (Caretta caretta)
+MiscInfo: uk"
+206268,WORD_NOUN,,HIRAGANA,,,赤苦津,あかぐつ,,akagutsu,Halieutaea stellata,,,,"GroupId: 1829280
+Translate: starry handfish (Halieutaea stellata)
+MiscInfo: uk"
+206269,WORD_NOUN,,KATAKANA,,,-,アカグツ,,akagutsu,Halieutaea stellata,,,,"GroupId: 1829280
+Translate: starry handfish (Halieutaea stellata)
+MiscInfo: uk"
+206270,WORD_NOUN,,KATAKANA,,,-,タヒバリ,,tahibari,"siwerniak
+świergotek górski
+siwarnik","gatunek małego ptaka z rodziny pliszkowatych, Anthus spinoletta",,,"GroupId: 1833340
+Translate: water pipit (Anthus spinoletta)
+MiscInfo: uk"
+206271,WORD_NOUN,,KATAKANA,,,-,イワヒバリ,,iwahi bari,płochacz halny,"gatunek małego, osiadłego ptaka z rodziny płochaczy, Prunella collaris",,,"GroupId: 1839110
+Translate: alpine accentor (Prunella collaris)
+MiscInfo: uk"
+206272,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,金を使う,かねをつかう,,kane o tsukau,wydawać pieniądze,,,,"GroupId: 1242620
+Translate: to spend money"
+206273,WORD_NOUN,,HIRAGANA_KATAKANA,,,一体型モニター,いったいがたモニター,,ittaigata monitaa,wbudowany monitor,,,,"GroupId: 2341280
+Translate: built-in monitor"
+206274,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ナイルオオトカゲ,,nairu ootokage,waran nilowy,"gatunek ziemnowodnego gada z rodziny waranów, Varanus niloticus",,,"GroupId: 2556890
+Translate: Nile monitor (Varanus niloticus, species of carnivorous monitor lizard native to sub-Saharan Africa)
+MiscInfo: uk
+Translate: water leguaan
+MiscInfo: uk"
+206275,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ハナブトオオトカゲ,,hanabuto ootokage,"waran papuaski
+waran krokodylowy","gatunek gada z rodziny waranów, Varanus salvadorii",,,"GroupId: 2556850
+Translate: crocodile monitor (Varanus salvadorii, species of carnivorous monitor lizard found in New Guinea)
+MiscInfo: uk
+Translate: Salvadori's monitor
+MiscInfo: uk
+Translate: Papua monitor
+MiscInfo: uk
+Translate: artellia
+MiscInfo: uk"
