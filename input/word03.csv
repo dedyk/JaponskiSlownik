@@ -25172,7 +25172,8 @@ kapłan",,,DUPLICATE 52087,
 206030,WORD_NOUN,,HIRAGANA,,,誹譏,ひき,,hiki,"zniesławienie
 oszczerstwo
 paszkwil",,,,
-206031,WORD_NOUN,,HIRAGANA,,,死生,ししょう,,shishou,życie i śmierć,,,DUPLICATE 60875,
+206031,WORD_NOUN,,HIRAGANA,,,死生,ししょう,,shishou,życie i śmierć,,,"DUPLICATE 60875
+DUPLICATE 206421",
 206032,WORD_NOUN,,KATAKANA,,,-,ワル,,waru,"zła rzecz
 zła osoba",,,,
 206033,WORD_NOUN,,KATAKANA,,,-,エルニニョ,,eru ninyo,El Nino,,,,
@@ -25214,7 +25215,8 @@ Translate: conjugation of the verb ""suru""
 MiscInfo: abbr"
 206047,WORD_NOUN,,HIRAGANA,,,磔刑,はりつけ,,haritsuke,ukrzyżowanie,,,"DUPLICATE 80972
 DUPLICATE 81015",
-206048,WORD_NOUN,,HIRAGANA,,,植字,ちょくじ,,chokuji,skład,,,DUPLICATE 101259,
+206048,WORD_NOUN,,HIRAGANA,,,植字,ちょくじ,,chokuji,skład,,,"DUPLICATE 101259
+DUPLICATE 206420",
 206049,WORD_NOUN,,HIRAGANA,,,剕,ひ,,hi,ucięcie nogi w kolanie,"forma kary w starożytnych Chinach, archaizm",,DUPLICATE 102326,"GroupId: 2542150
 Translate: cutting off the leg at the knee (form of punishment in ancient China)
 MiscInfo: arch"
@@ -25277,7 +25279,8 @@ MiscInfo: sens
 Translate: sterile woman
 MiscInfo: sens"
 206063,WORD_NOUN,,HIRAGANA,,,極熱,ごくねち,,gokunechi,"wyjątkowe gorące
-wyjątkowy upał",,,DUPLICATE 143077,"GroupId: 1760720
+wyjątkowy upał",,,"DUPLICATE 143077
+DUPLICATE 206398","GroupId: 1760720
 Translate: extreme heat"
 206064,WORD_ADJECTIVE_I,,HIRAGANA,,,-,いぢましい,,idimashii,"błahy
 mało znaczący
@@ -26511,7 +26514,7 @@ Translate: official dress"
 WORD_ADJECTIVE_NO",,HIRAGANA,,,無妻,むさい,,musai,"nie mający żony
 bycie stanu wolnego
 bycie nieżonaty
-niezamężny mężczyzna",,,,"GroupId: 2842764
+niezamężny mężczyzna",,,DUPLICATE 142065,"GroupId: 2842764
 Translate: having no wife
 Translate: being single
 Translate: being unmarried
@@ -26528,7 +26531,7 @@ Translate: as seen by an observer"
 206371,WORD_NOUN,,HIRAGANA,,,箪食,たんし,,tanshi,bambusowe naczynie na ryż,archaizm,,,"GroupId: 2842981
 Translate: bamboo dish of rice
 MiscInfo: arch"
-206372,WORD_NOUN,,HIRAGANA,,,羽隠,はねかくし,,hanekakushi,kusakowate,rodzina chrząszczy z podrzędu wielożernych i infrarzędu Staphyliniformia,,,"GroupId: 1972560
+206372,WORD_NOUN,,HIRAGANA,,,羽隠,はねかくし,,haneka kushi,kusakowate,rodzina chrząszczy z podrzędu wielożernych i infrarzędu Staphyliniformia,,,"GroupId: 1972560
 Translate: rove beetle
 MiscInfo: uk"
 206373,WORD_NOUN,,HIRAGANA,,,海鳩,うみばと,,umibato,nurnik aleucki,"gatunek ptaka z rodziny alk, Cepphus columba",,,"GroupId: 1976880
@@ -26623,7 +26626,7 @@ Translate: sharp
 Translate: smart
 Translate: clever"
 206392,WORD_NOUN,,HIRAGANA,,,梵本,ぼんぽん,,bonpon,"książka w sanskrycie
-książka z Indii",,,,"GroupId: 2843617
+książka z Indii",,,DUPLICATE 206418,"GroupId: 2843617
 Translate: book in Sanskrit characters (e.g. scripture)
 Translate: book from India"
 206393,"WORD_NOUN
@@ -26655,7 +26658,8 @@ MiscInfo: arch
 Translate: printing type
 MiscInfo: arch"
 206398,"WORD_ADJECTIVE_NA
-WORD_NOUN",,HIRAGANA,,,極熱,ごくあつ,,gokuatsu,bardzo gorący,"szczególnie sake, przestarzałe słowo",,,"GroupId: 2843624
+WORD_NOUN",,HIRAGANA,,,極熱,ごくあつ,,gokuatsu,bardzo gorący,"szczególnie sake, przestarzałe słowo",,"DUPLICATE 143077
+DUPLICATE 206063","GroupId: 2843624
 Translate: extremely hot (esp. of sake)
 MiscInfo: obs"
 206399,WORD_NOUN,,HIRAGANA,,,死に生き,しにいき,,shi ni iki,"śmierć i życie
@@ -26674,12 +26678,93 @@ Translate: travel history"
 206401,WORD_NOUN,,HIRAGANA,,,濃厚接触,のうこうせっしょく,,noukou sesshoku,bliski kontakt (z osobą zarażoną),,,,"GroupId: 2843625
 Translate: close contact (with someone who is infected)"
 206402,WORD_NOUN,,HIRAGANA,,,物名,ぶつめい,,butsumei,"nazwa rzeczy
-wiersz akrostatyczny, w którym kolejne mory tworzą ukrytą nazwę zwierzęcia, rośliny, miejsca itp.",,,,"GroupId: 2843634
+wiersz akrostatyczny, w którym kolejne mory tworzą ukrytą nazwę zwierzęcia, rośliny, miejsca itp.",,,DUPLICATE 206422,"GroupId: 2843634
 Translate: name of a thing
 Translate: acrostic poem in which consecutive morae form the disguised name of an animal, plant, place, etc."
 206403,WORD_NOUN,,HIRAGANA,,,獅子鼻,ししばな,,shishibana,perkaty nos,,,,"GroupId: 1846010
 Translate: pug nose"
 206404,WORD_NOUN,,HIRAGANA,,,生き死に,いきしに,,iki shi ni,"życie i śmierć
 życie lub śmierć",,,,"GroupId: 1829780
+Translate: life and death
+Translate: life or death"
+206405,WORD_NOUN,,KATAKANA,,,-,カワヒバリガイ,,kawahi barigai,Limnoperna fortunei,zwierzę,,,"GroupId: 2673860
+Translate: golden mussel (Limnoperna fortunei)
+MiscInfo: uk"
+206406,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA_KATAKANA,,,-,ぽかミス,,poka misu,błąd wynikający z nieuwagi,ang: careless mistake,,,"GroupId: 2068180
+Translate: careless mistake"
+206407,WORD_NOUN,,HIRAGANA,,,簞食,たんし,,tanshi,bambusowe naczynie na ryż,archaizm,,,"GroupId: 2842981
+Translate: bamboo dish of rice
+MiscInfo: arch"
+206408,WORD_NOUN,,HIRAGANA,,,隠翅虫,はねかくし,,haneka kushi,kusakowate,rodzina chrząszczy z podrzędu wielożernych i infrarzędu Staphyliniformia,,,"GroupId: 1972560
+Translate: rove beetle
+MiscInfo: uk"
+206409,WORD_NOUN,,HIRAGANA,,,羽隠虫,はねかくし,,haneka kushi,kusakowate,rodzina chrząszczy z podrzędu wielożernych i infrarzędu Staphyliniformia,,,"GroupId: 1972560
+Translate: rove beetle
+MiscInfo: uk"
+206410,WORD_NOUN,,HIRAGANA,,,羽隠し,はねかくし,,haneka kushi,kusakowate,rodzina chrząszczy z podrzędu wielożernych i infrarzędu Staphyliniformia,,,"GroupId: 1972560
+Translate: rove beetle
+MiscInfo: uk"
+206411,WORD_NOUN,,KATAKANA,,,-,ハネカクシ,,haneka kushi,kusakowate,rodzina chrząszczy z podrzędu wielożernych i infrarzędu Staphyliniformia,,,"GroupId: 1972560
+Translate: rove beetle
+MiscInfo: uk"
+206412,WORD_NOUN,,KATAKANA,,,-,ウミバト,,umibato,nurnik aleucki,"gatunek ptaka z rodziny alk, Cepphus columba",,,"GroupId: 1976880
+Translate: pigeon guillemot (Cepphus columba)
+MiscInfo: uk"
+206413,WORD_NOUN,,KATAKANA,,,-,ナメタガレイ,,nametagarei,Microstomus achne,gatunek ryby,,,"GroupId: 1978840
+Translate: slime flounder (Microstomus achne)
+MiscInfo: uk"
+206414,WORD_NOUN,,KATAKANA,,,-,サバヒー,,sabahii,chanos,"gatunek dwuśrodowiskowej ryby promieniopłetwej, nazywanej rybą mleczną z powodu białego koloru i delikatnej konsystencji mięsa, Chanos chanos",,,"GroupId: 1984200
+Translate: milkfish (Chanos chanos)
+MiscInfo: uk"
+206415,WORD_NOUN,,KATAKANA,,,-,ワライカモメ,,warai kamome,mewa karaibska,"gatunek ptaka z rodziny mewowatych, Leucophaeus atricilla",,,"GroupId: 2039250
+Translate: laughing gull (Leucophaeus atricilla)
+MiscInfo: uk"
+206416,WORD_EXPRESSION,,HIRAGANA,,,倦まずたゆまず,うまずたゆまず,,umazu tayumazu,"niestrudzenie
+niezmordowanie
+wytrwale
+bez odpuszczania",,,,"GroupId: 2523890
+Translate: tirelessly
+Translate: perseveringly
+Translate: without letting up"
+206417,WORD_NOUN,,HIRAGANA,,,盛砂,もりずな,,mori zuna,"uroczyste stosy piasku (umieszczone po obu stronach wejścia, aby przywitać ważną osobistość)",,,,"GroupId: 1764500
+Translate: ceremonial piles of sand (placed on both sides of an entrance to greet an important personage)"
+206418,WORD_NOUN,,HIRAGANA,,,梵本,ぼんぼん,,bonbon,"książka w sanskrycie
+książka z Indii",,,"DUPLICATE 126735
+DUPLICATE 206392","GroupId: 2843617
+Translate: book in Sanskrit characters (e.g. scripture)
+Translate: book from India"
+206419,WORD_NOUN,,HIRAGANA,,,擁護,おうご,,ougo,pomoc (wsparcie) Buddy,,,DUPLICATE 34389,"GroupId: 2843701
+Translate: the Buddha's help (aid, succour)"
+206420,WORD_NOUN,,HIRAGANA,,,植字,うえじ,,ueji,"skład tekstu
+składanie tekstu
+rodzaj druku",archaizm,,"DUPLICATE 101259
+DUPLICATE 206048","GroupId: 2843670
+Translate: typesetting
+MiscInfo: arch
+Translate: printing type
+MiscInfo: arch"
+206421,WORD_NOUN,,HIRAGANA,,,死生,しにいき,,shi ni iki,"śmierć i życie
+śmierć lub życie
+śmierć",archaizm,,"DUPLICATE 60875
+DUPLICATE 206031","GroupId: 2843700
+Translate: death and life
+MiscInfo: arch
+Translate: death or life
+MiscInfo: arch
+Translate: death
+MiscInfo: arch"
+206422,WORD_NOUN,,HIRAGANA,,,物名,もののな,,mono no na,"nazwa rzeczy
+wiersz akrostatyczny, w którym kolejne mory tworzą ukrytą nazwę zwierzęcia, rośliny, miejsca itp.",,,DUPLICATE 206402,"GroupId: 2843634
+Translate: name of a thing
+Translate: acrostic poem in which consecutive morae form the disguised name of an animal, plant, place, etc."
+206423,WORD_NOUN,,HIRAGANA,,,物の名,もののな,,mono no na,"nazwa rzeczy
+wiersz akrostatyczny, w którym kolejne mory tworzą ukrytą nazwę zwierzęcia, rośliny, miejsca itp.",,,,"GroupId: 2843634
+Translate: name of a thing
+Translate: acrostic poem in which consecutive morae form the disguised name of an animal, plant, place, etc."
+206424,WORD_NOUN,,HIRAGANA,,,生死,いきしに,,iki shi ni,"życie i śmierć
+życie lub śmierć",,,"DUPLICATE 46510
+DUPLICATE 46525
+DUPLICATE 46526","GroupId: 1829780
 Translate: life and death
 Translate: life or death"
