@@ -25100,8 +25100,10 @@ Translate: message count"
 wóz
 bryczka
 powóz
-kareta",,,DUPLICATE 3084,"GroupId: 1471780
-Translate: (horse-drawn) coach
+kareta
+karoca",ciągnięta przez konie,,"DUPLICATE 3084
+DUPLICATE 206467","GroupId: 1471780
+Translate: coach (horse-drawn)
 Translate: carriage
 Translate: wagon
 Translate: cart"
@@ -26828,7 +26830,7 @@ MiscInfo: abbr"
 WORD_ADVERB_TO",,HIRAGANA,,,兀然,こつぜん,,kotsuzen,"wysoki
 górujący
 stojący nieruchomo
-nieruchomy",mało znane słowo,,,"GroupId: 2843399
+nieruchomy",mało znane słowo,,DUPLICATE 206491,"GroupId: 2843399
 Translate: towering
 MiscInfo: obsc
 Translate: standing motionlessly
@@ -26927,9 +26929,13 @@ Translate: branch of a school"
 dom dla osób specjalnej troski",,,,"GroupId: 2843722
 Translate: facility for the disabled
 Translate: special needs home"
-206467,WORD_NOUN,,KATAKANA,,,馬車,マーチョ,,maacho,"kareta
-karoca
-powóz","ciągnięta przez konie, mało znane słowo",,,"GroupId: 2843693
+206467,WORD_NOUN,,KATAKANA,,,馬車,マーチョ,,maacho,"furmanka
+wóz
+bryczka
+powóz
+kareta
+karoca","ciągnięta przez konie, mało znane słowo",,"DUPLICATE 3084
+DUPLICATE 206017","GroupId: 2843693
 Translate: coach (horse-drawn)
 MiscInfo: obsc
 Translate: carriage
@@ -27021,3 +27027,84 @@ Translate: Castanopsis sieboldii (species of chinquapin)
 MiscInfo: uk"
 206489,WORD_NOUN,,KATAKANA,,,-,レンベルガー,,renberugaa,Lemberger,rodzaj wina,,,"GroupId: 2832699
 Translate: Lemberger (wine grape variety)"
+206490,WORD_NOUN,,HIRAGANA,,,十進演算,じっしんえんざん,,jisshin' enzan,arytmetyka dziesiętna,,,,"GroupId: 2276880
+Translate: decimal arithmetic"
+206491,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,兀然,ごつぜん,,gotsuzen,"wysoki
+górujący
+stojący nieruchomo
+nieruchomy",mało znane słowo,,DUPLICATE 206447,"GroupId: 2843399
+Translate: towering
+MiscInfo: obsc
+Translate: standing motionlessly
+MiscInfo: obsc
+Translate: still
+MiscInfo: obsc"
+206492,WORD_NOUN,,HIRAGANA,,,群游,ぐんゆう,,gun'yuu,"mieć zabawę w grupie
+pływanie w grupach
+formowanie się ryb w ławice",,,,"GroupId: 2843274
+Translate: having fun in groups
+Translate: swimming in groups
+Translate: shoaling
+Translate: forming a shoal"
+206493,WORD_ADVERB,,HIRAGANA,,,のべつ幕無し,のべつまくなし,,nobetsu makunashi,"bez przerwy
+bez zatrzymywania się
+nieustannie
+bezustannie
+nieprzerwanie",,,,"GroupId: 2061790
+Translate: without a break
+MiscInfo: uk
+Translate: without stopping
+MiscInfo: uk
+Translate: incessantly
+MiscInfo: uk
+Translate: ceaselessly
+MiscInfo: uk"
+206494,WORD_NOUN,,KATAKANA_HIRAGANA,,,亜米利加山法師,アメリカやまぼうし,,amerika yamaboushi,dereń kwiecisty,"gatunek krzewu z rodziny dereniowatych, Cornus florida",,,"GroupId: 2066180
+Translate: flowering dogwood (Cornus florida)
+MiscInfo: uk"
+206495,WORD_NOUN,,KATAKANA,,,-,アメリカヤマボウシ,,amerika yamaboushi,dereń kwiecisty,"gatunek krzewu z rodziny dereniowatych, Cornus florida",,,"GroupId: 2066180
+Translate: flowering dogwood (Cornus florida)
+MiscInfo: uk"
+206496,WORD_NOUN,,KATAKANA,,,-,ナツハゼ,,natsuhaze,Vaccinium oldhamii,roślina,,,"GroupId: 2066790
+Translate: oldham blueberry (Vaccinium oldhamii)
+MiscInfo: uk"
+206497,WORD_NOUN,,KATAKANA,,,-,エゾヤマザクラ,,ezoyama zakura,wiśnia Sargenta,Prunus sargentii,,,"GroupId: 2066800
+Translate: sargent cherry (Prunus sargentii)
+MiscInfo: uk"
+206498,WORD_NOUN,,KATAKANA,,,-,オニグルミ,,onigurumi,orzech mandżurski,"gatunek drzewa należący do rodziny orzechowatych, Juglans mandshurica",,,"GroupId: 2066850
+Translate: Manchurian walnut (Juglans mandshurica)
+MiscInfo: uk"
+206499,WORD_EXPRESSION,,KATAKANA_HIRAGANA,,,-,バイなら,,bainara,do widzenia,kolokwializm,,,"GroupId: 2789860
+Translate: good-bye
+MiscInfo: col"
+206500,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,虫に障る,むしにさわる,,mushi ni sawaru,"mieć ból brzucha
+działać na nerwy",mało znane słowo,,,"GroupId: 2843739
+Translate: to have a stomach ache
+MiscInfo: obsc
+Translate: to get on one's nerves
+MiscInfo: obsc
+Translate: to cause offence
+MiscInfo: obsc"
+206501,WORD_NOUN,,HIRAGANA,,,火掻き棒,ひかきぼう,,hikaki bou,"bosak pożarniczy
+pogrzebacz
+ożóg (kij do poprawiania ognia w piecu)",,,,"GroupId: 2510870
+Translate: fire hook
+Translate: poker
+Translate: slice bar"
+206502,WORD_NOUN,,KATAKANA,,,-,シルキー・バス,,shirukii basu,kąpiel bąbelkowa z bardzo małymi bąbelkami,ang: silky bath,,,"GroupId: 2837440
+Translate: bubble bath with very small bubbles"
+206503,WORD_NOUN,,HIRAGANA,,,潮溜り,しおだまり,,shiodamari,"zagłębienie z wodą w nadmorskich skałach
+skaliste miejsce, w którym woda morska pozostaje po odpływie",,,,"GroupId: 2397240
+Translate: tide pool
+Translate: rocky place where sea water remains after the tide draws out"
+206504,WORD_NOUN,,HIRAGANA,,,野ぶどう,のぶどう,,nobudou,"winnik
+winnik zmienny
+dzika winorośl",gatunek pnącza,,,"GroupId: 1643200
+Translate: wild grape
+Translate: wild grapevine
+Translate: ampelopsis"
+206505,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,スダジイ,,suda jii,Castanopsis sieboldii,roślina,,,"GroupId: 2664710
+Translate: Castanopsis sieboldii (species of chinquapin)
+MiscInfo: uk"
