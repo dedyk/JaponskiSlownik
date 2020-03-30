@@ -27425,16 +27425,17 @@ Translate: chipping (sound)"
 Translate: environmentally friendly computer (e.g. low power consumption)"
 206597,WORD_ADJECTIVE_NA,,HIRAGANA,,,唯心的,ゆいしんてき,,yuishinteki,spirytualistyczny,,,,"GroupId: 2614740
 Translate: spiritualistic"
-206598,WORD_NOUN,,HIRAGANA,,,温め酒,あたためざけ,,atatame zake,ciepłe sake,dawniej pite 9-go dnia 9-go miesiąca według kalendarza księżycowego w celu zapobiegania chorobom,,,"GroupId: 2570950
+206598,WORD_NOUN,,HIRAGANA,,,温め酒,あたためざけ,,atatame zake,ciepłe sake,dawniej pite 9-go dnia 9-go miesiąca według kalendarza księżycowego w celu zapobiegania chorobom,,DUPLICATE 206646,"GroupId: 2570950
 Translate: warm sake (formerly drunk on the 9th day of the 9th month of the lunar calendar to ward off illness)"
 206599,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,蝋引き,ろうびき,,roubiki,woskowanie,,,,"GroupId: 2454870
 Translate: waxing"
 206600,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,鱗形,うろこがた,,urokogata,"trójkątny wzór
+WORD_ADJECTIVE_NO",,HIRAGANA,,,鱗形,うろこがた,,uroko gata,"trójkątny wzór
 wzór podobny do wagi
 wzór, w którym poszczególne elementy zachodzą na siebie
-trójkątne godło",,,,"GroupId: 2842848
+trójkątne godło",,,"DUPLICATE 206649
+DUPLICATE 206650","GroupId: 2842848
 Translate: triangular pattern
 Translate: scalelike pattern
 Translate: imbricate pattern
@@ -27589,11 +27590,11 @@ Translate: antidiarrhoeal"
 206643,WORD_NOUN,,HIRAGANA,,,再抗弁,さいこうべん,,saikouben,???,,,,"GroupId: 1292670
 Translate: pleading"
 206644,WORD_NOUN,,KATAKANA,,,-,ビュザンティオン,,byuzantion,Bizancjum,"obecnie Stambuł, starożytne miasto leżące nad cieśniną Bosfor, łączącą morze Marmara z Morzem Czarnym, nad zatoką Złoty Róg",IGNORE_NO_JMEDICT,,
-206645,WORD_NOUN,,KATAKANA,,,-,マレーヤマネコ,,mareeyama neko,"kotek kusy
+206645,WORD_NOUN,,KATAKANA,,,-,マレーヤマネコ,,maree yamaneko,"kotek kusy
 kot kusy","słabo poznany gatunek drapieżnego ssaka z podrodziny kotów w rodzinie kotowatych, Prionailurus planiceps",,,"GroupId: 2696210
 Translate: flat-headed cat (Prionailurus planiceps)
 MiscInfo: uk"
-206646,WORD_NOUN,,HIRAGANA,,,温め酒,ぬくめざけ,,nukume zake,ciepłe sake,dawniej pite 9-go dnia 9-go miesiąca według kalendarza księżycowego w celu zapobiegania chorobom,,,"GroupId: 2570950
+206646,WORD_NOUN,,HIRAGANA,,,温め酒,ぬくめざけ,,nukume zake,ciepłe sake,dawniej pite 9-go dnia 9-go miesiąca według kalendarza księżycowego w celu zapobiegania chorobom,,DUPLICATE 206598,"GroupId: 2570950
 Translate: warm sake (formerly drunk on the 9th day of the 9th month of the lunar calendar to ward off illness)"
 206647,WORD_NOUN,,HIRAGANA,,,暖め酒,あたためざけ,,atatame zake,ciepłe sake,dawniej pite 9-go dnia 9-go miesiąca według kalendarza księżycowego w celu zapobiegania chorobom,,,"GroupId: 2570950
 Translate: warm sake (formerly drunk on the 9th day of the 9th month of the lunar calendar to ward off illness)"
@@ -27604,7 +27605,8 @@ Translate: waxing"
 WORD_ADJECTIVE_NO",,HIRAGANA,,,鱗形,りんけい,,rinkei,"trójkątny wzór
 wzór podobny do wagi
 wzór, w którym poszczególne elementy zachodzą na siebie
-trójkątne godło",,,,"GroupId: 2842848
+trójkątne godło",,,"DUPLICATE 206600
+DUPLICATE 206650","GroupId: 2842848
 Translate: triangular pattern
 Translate: scalelike pattern
 Translate: imbricate pattern
@@ -27614,7 +27616,8 @@ Translate: triangle emblem"
 WORD_ADJECTIVE_NO",,HIRAGANA,,,鱗形,いろこがた,,irokogata,"trójkątny wzór
 wzór podobny do wagi
 wzór, w którym poszczególne elementy zachodzą na siebie
-trójkątne godło",,,,"GroupId: 2842848
+trójkątne godło",,,"DUPLICATE 206600
+DUPLICATE 206649","GroupId: 2842848
 Translate: triangular pattern
 Translate: scalelike pattern
 Translate: imbricate pattern
@@ -27658,7 +27661,7 @@ MiscInfo: uk"
 słodka bazylia",,,,"GroupId: 2080010
 Translate: sweet basil
 MiscInfo: uk"
-206658,WORD_NOUN,,KATAKANA,,,-,メクラアブ,,mekuraabu,ślepak,Chrysops suavis,,,"GroupId: 2094390
+206658,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,メクラアブ,,mekuraabu,ślepak,Chrysops suavis,,,"GroupId: 2094390
 Translate: deerfly (Chrysops suavis)
 MiscInfo: uk"
 206659,WORD_NOUN,,HIRAGANA,,,第一輯,だいいっしゅう,,daiisshuu,pierwsza seria,,,,"GroupId: 1608300
