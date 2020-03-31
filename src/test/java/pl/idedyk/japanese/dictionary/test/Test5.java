@@ -1,9 +1,17 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 
@@ -204,6 +212,7 @@ public class Test5 {
 		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
 				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
 		
+		/*
 		List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
 		
 		JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
@@ -221,7 +230,43 @@ public class Test5 {
 			if (multiGroup == true) {
 				System.out.println(polishJapaneseEntry.getId());
 			}			
-		}		
+		}
+		*/
+		
+		List<KanjiEntryForDictionary> kanjiEntries = wordGeneratorHelper.getKanjiEntries();
+		
+		final Map<String, Integer> kanjiFreqMap = new TreeMap<String, Integer>();
+		
+		for (KanjiEntryForDictionary kanjiEntryForDictionary : kanjiEntries) {
+			
+			KanjiDic2Entry kanjiDic2Entry = kanjiEntryForDictionary.getKanjiDic2Entry();
+			
+			if (kanjiDic2Entry == null) {
+				continue;
+			}
+			
+			Integer freq = kanjiDic2Entry.getFreq();
+			
+			if (freq == null) {
+				continue;
+			}
+			
+			kanjiFreqMap.put(kanjiDic2Entry.getKanji(), freq);
+		}
+		
+		List<String> kanjiList = new ArrayList<String>(kanjiFreqMap.keySet());
+		
+		Collections.sort(kanjiList, new Comparator<String>() {
+
+			@Override
+			public int compare(String o1, String o2) {
+				return kanjiFreqMap.get(o1).compareTo(kanjiFreqMap.get(o2));
+			}
+		});	
+		
+		for (String kanji : kanjiList) {			
+			System.out.println(kanji + "," + kanjiFreqMap.get(kanji));			
+		}
 	}
 	
 	/*
