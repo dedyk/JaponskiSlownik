@@ -28195,7 +28195,7 @@ Translate: balance of power among factions (within a political party)
 MiscInfo: yoji
 Translate: factional balance
 MiscInfo: yoji"
-206801,WORD_EXPRESSION,,HIRAGANA,,,裏には裏がある,うらにはうらがある,,ura ni wa ura ga aru,"w tym jest coś więcej, niż się wydaje
+206801,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,裏には裏がある,うらにはうらがある,,ura ni wa ura ga aru,"w tym jest coś więcej, niż się wydaje
 kryje się za tym coś więcej
 kryje się w tym więcej niż widać na pierwszy rzut oka",przysłowie,,,"GroupId: 2121480
 Translate: there are wheels within wheels
@@ -28220,3 +28220,36 @@ Translate: infectious disease which by law a physician must report to the author
 Translate: to use within an inch of its life
 Translate: to use every little bit of
 Translate: to get the most out of"
+206807,WORD_NOUN,,KATAKANA,,,-,アカサンゴ,,akasango,czerwony koral,Corallium japonicum,,,"GroupId: 2155570
+Translate: red coral (Corallium japonicum)
+MiscInfo: uk"
+206808,WORD_NOUN,,KATAKANA,,,-,ハナミョウガ,,hanamyouga,Alpinia japonica,,,,"GroupId: 2451210
+Translate: peppermint stick (species of perennial evergreen, Alpinia japonica)
+MiscInfo: uk"
+206809,WORD_NOUN,,KATAKANA_HIRAGANA,,,ワサビ菜,ワサビな,,wasabi na,"warzywa wasabi
+liście wasabi",,,,"GroupId: 2782400
+Translate: wasabi greens
+Translate: wasabi leaves"
+206810,WORD_NOUN,,HIRAGANA,,,山葵菜,わさびな,,wasabi na,"warzywa wasabi
+liście wasabi",,,,"GroupId: 2782400
+Translate: wasabi greens
+Translate: wasabi leaves"
+206811,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,目の届く所に,めのとどくところに,,me no todoku tokoro ni,w zasięgu wzroku,,,,"GroupId: 2789770
+Translate: within eyeshot
+Translate: within sight
+Translate: in view"
+206812,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,裏には裏が有る,うらにはうらがある,,ura ni wa ura ga aru,"w tym jest coś więcej, niż się wydaje
+kryje się za tym coś więcej
+kryje się w tym więcej niż widać na pierwszy rzut oka",przysłowie,,,"GroupId: 2121480
+Translate: there are wheels within wheels
+MiscInfo: proverb
+Translate: there's more than meets the eye
+MiscInfo: proverb"
+206813,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,眼と鼻の間,めとはなのあいだ,,me to hana no aida,"przed oczami
+w pobliżu
+o rzut beretem",,,,"GroupId: 2747860
+Translate: in front of one's eyes
+Translate: just nearby
+Translate: within a stone's throw"
