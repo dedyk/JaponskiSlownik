@@ -28559,7 +28559,7 @@ fakultatywne beztlenowce",,,,"GroupId: 2687680
 Translate: facultative bacteria
 Translate: facultative anaerobic bacteria
 Translate: facultative anaerobe"
-206900,WORD_NOUN,,HIRAGANA,,,寄生蠅,やどりばえ,,yadoribae,rączycowate,"rodzina owadów z rzędu muchówek licząca ponad 8200 gatunków, Tachinidae",,,"GroupId: 2240640
+206900,WORD_NOUN,,HIRAGANA,,,寄生蠅,やどりばえ,,yadoribae,rączycowate,"rodzina owadów z rzędu muchówek licząca ponad 8200 gatunków, Tachinidae",,DUPLICATE 206954,"GroupId: 2240640
 Translate: tachina fly (any fly of family Tachinidae)
 MiscInfo: uk
 Translate: tachinid
@@ -28571,7 +28571,8 @@ Translate: falling short of the mark"
 206903,WORD_NOUN,,KATAKANA,,,-,クロイスター,,kuroisutaa,krużganek,ang: cloister,,,"GroupId: 2481490
 Translate: cloister"
 206904,WORD_NOUN,,KATAKANA,,,ＶＩＰ,ブイアイピー,,buiaipii,"bardzo ważna osobistość
-VIP",,,,"GroupId: 1105340
+VIP",,,"DUPLICATE 206958
+DUPLICATE 206959","GroupId: 1105340
 Translate: very important person
 Translate: VIP"
 206905,WORD_NOUN,,HIRAGANA,,,展望車,てんぼうしゃ,,tenbousha,wagon z oknami panoramicznymi,,,,"GroupId: 1802360
@@ -28744,7 +28745,7 @@ Translate: to contribute an article"
 WORD_EXPRESSION",,HIRAGANA,,,命令を下す,めいれいをくだす,,meirei o kudasu,wydać rozkaz,,,,"GroupId: 1883760
 Translate: to give an order"
 206948,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,隙を見つける,すきをみつける,,suki o mitsukeru,wykorzystać okazję,,,,"GroupId: 1886800
+WORD_EXPRESSION",,HIRAGANA,,,隙を見つける,すきをみつける,,suki o mi tsukeru,wykorzystać okazję,,,,"GroupId: 1886800
 Translate: to seize an opportunity"
 206949,WORD_NOUN,,HIRAGANA,,,象の鼻,ぞうのはな,,zou no hana,trąba słonia,,,,"GroupId: 1890410
 Translate: trunk of an elephant"
@@ -28759,3 +28760,169 @@ WORD_EXPRESSION",,HIRAGANA,,,兵を挙げる,へいをあげる,,hei o ageru,pod
 Translate: to raise an army"
 206953,WORD_NOUN,,HIRAGANA,,,方程式の一項,ほうていしきのいっこう,,houteishiki no ikkou,element równania,,,,"GroupId: 1907990
 Translate: member of an equation"
+206954,WORD_NOUN,,HIRAGANA,,,寄生蠅,きせいばえ,,kiseibae,rączycowate,"rodzina owadów z rzędu muchówek licząca ponad 8200 gatunków, Tachinidae",,DUPLICATE 206900,"GroupId: 2240640
+Translate: tachina fly (any fly of family Tachinidae)
+MiscInfo: uk
+Translate: tachinid
+MiscInfo: uk"
+206955,WORD_NOUN,,HIRAGANA,,,寄生蝿,やどりばえ,,yadoribae,rączycowate,"rodzina owadów z rzędu muchówek licząca ponad 8200 gatunków, Tachinidae",,DUPLICATE 206956,"GroupId: 2240640
+Translate: tachina fly (any fly of family Tachinidae)
+MiscInfo: uk
+Translate: tachinid
+MiscInfo: uk"
+206956,WORD_NOUN,,HIRAGANA,,,寄生蝿,きせいばえ,,kiseibae,rączycowate,"rodzina owadów z rzędu muchówek licząca ponad 8200 gatunków, Tachinidae",,DUPLICATE 206955,"GroupId: 2240640
+Translate: tachina fly (any fly of family Tachinidae)
+MiscInfo: uk
+Translate: tachinid
+MiscInfo: uk"
+206957,WORD_NOUN,,KATAKANA,,,-,ヤドリバエ,,yadoribae,rączycowate,"rodzina owadów z rzędu muchówek licząca ponad 8200 gatunków, Tachinidae",,,"GroupId: 2240640
+Translate: tachina fly (any fly of family Tachinidae)
+MiscInfo: uk
+Translate: tachinid
+MiscInfo: uk"
+206958,WORD_NOUN,,KATAKANA,,,ＶＩＰ,ビップ,,bippu,"bardzo ważna osobistość
+VIP",,,"DUPLICATE 206904
+DUPLICATE 206959","GroupId: 1105340
+Translate: very important person
+Translate: VIP"
+206959,WORD_NOUN,,KATAKANA,,,ＶＩＰ,ヴィップ,,vippu,"bardzo ważna osobistość
+VIP",,,"DUPLICATE 206904
+DUPLICATE 206958","GroupId: 1105340
+Translate: very important person
+Translate: VIP"
+206960,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,汚れのない,けがれのない,,kegare no nai,"czysty
+prawdziwy
+nietknięty
+niezmieniony",,,,"GroupId: 2463800
+Translate: pure
+Translate: clean
+Translate: untouched
+Translate: innocent"
+206961,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,汚れの無い,けがれのない,,kegare no nai,"czysty
+prawdziwy
+nietknięty
+niezmieniony",,,,"GroupId: 2463800
+Translate: pure
+Translate: clean
+Translate: untouched
+Translate: innocent"
+206962,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,穢れの無い,けがれのない,,kegare no nai,"czysty
+prawdziwy
+nietknięty
+niezmieniony",,,,"GroupId: 2463800
+Translate: pure
+Translate: clean
+Translate: untouched
+Translate: innocent"
+206963,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,連絡が付く,れんらくがつく,,renraku ga tsuku,nawiązać kontakt,,,,"GroupId: 2211080
+Translate: to make contact"
+206964,WORD_NOUN,,HIRAGANA,,,藁蒲団,わらぶとん,,wara buton,"słomiany futon
+słomiany materac
+materac ze słomy",,,,"GroupId: 1819500
+Translate: straw futon
+Translate: straw mattress
+Translate: palliasse"
+206965,WORD_NOUN,,HIRAGANA,,,噛付亀,かみつきがめ,,kami tsuki game,"skorpucha jaszczurowata
+żółw jaszczurowaty
+żółw kajmanowy","gatunek żółwia z rodziny skorpuchowatych z podrzędu żółwi skrytoszyjnych, Chelydra serpentina",,,"GroupId: 2158970
+Translate: snapping turtle (Chelydra serpentina)
+MiscInfo: uk"
+206966,WORD_NOUN,,KATAKANA,,,-,カミツキガメ,,kami tsuki game,"skorpucha jaszczurowata
+żółw jaszczurowaty
+żółw kajmanowy","gatunek żółwia z rodziny skorpuchowatych z podrzędu żółwi skrytoszyjnych, Chelydra serpentina",,,"GroupId: 2158970
+Translate: snapping turtle (Chelydra serpentina)
+MiscInfo: uk"
+206967,WORD_NOUN,,HIRAGANA,,,本飯匙倩,ほんはぶ,,hon habu,Trimeresurus flavoviridis,gatunek gada,,,"GroupId: 2160200
+Translate: Okinawan habu (Trimeresurus flavoviridis)
+MiscInfo: uk"
+206968,WORD_NOUN,,HIRAGANA,,,台湾飯匙倩,たいわんはぶ,,taiwan habu,Trimeresurus mucrosquamatus,gatunek gada,,,"GroupId: 2160210
+Translate: Taiwanese habu (Trimeresurus mucrosquamatus)
+MiscInfo: uk"
+206969,WORD_NOUN,,KATAKANA,,,-,ウェルシュ・コーギー,,werushu koogii,Welsh corgi,rasa psa,,,"GroupId: 2457490
+Translate: Welsh corgi"
+206970,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,蛻の殻,もぬけのから,,monuke no kara,"pusty
+opustoszały
+całkowicie pusty (np. mieszkanie)
+ciało, z którego odeszła dusza
+zwłoki
+zrzucona skóra (np. węża, owada i etc, pierwotne znaczenie)",,,,"GroupId: 1571980
+Translate: completely empty (of a residence, etc.)
+Translate: vacant
+Translate: deserted
+Translate: body from which the soul has left
+Translate: corpse
+Translate: shed skin (of a snake, insect, etc.)
+AdditionalInfo: orig. meaning"
+206971,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,藻抜けの殻,もぬけのから,,monuke no kara,"pusty
+opustoszały
+całkowicie pusty (np. mieszkanie)
+ciało, z którego odeszła dusza
+zwłoki
+zrzucona skóra (np. węża, owada i etc, pierwotne znaczenie)",,,,"GroupId: 1571980
+Translate: completely empty (of a residence, etc.)
+Translate: vacant
+Translate: deserted
+Translate: body from which the soul has left
+Translate: corpse
+Translate: shed skin (of a snake, insect, etc.)
+AdditionalInfo: orig. meaning"
+206972,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,蛻けの殻,もぬけのから,,monuke no kara,"pusty
+opustoszały
+całkowicie pusty (np. mieszkanie)
+ciało, z którego odeszła dusza
+zwłoki
+zrzucona skóra (np. węża, owada i etc, pierwotne znaczenie)",,,,"GroupId: 1571980
+Translate: completely empty (of a residence, etc.)
+Translate: vacant
+Translate: deserted
+Translate: body from which the soul has left
+Translate: corpse
+Translate: shed skin (of a snake, insect, etc.)
+AdditionalInfo: orig. meaning"
+206973,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,もぬけの空,もぬけのから,,monuke no kara,"pusty
+opustoszały
+całkowicie pusty (np. mieszkanie)
+ciało, z którego odeszła dusza
+zwłoki
+zrzucona skóra (np. węża, owada i etc, pierwotne znaczenie)",,,,"GroupId: 1571980
+Translate: completely empty (of a residence, etc.)
+Translate: vacant
+Translate: deserted
+Translate: body from which the soul has left
+Translate: corpse
+Translate: shed skin (of a snake, insect, etc.)
+AdditionalInfo: orig. meaning"
+206974,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,蛻の空,もぬけのから,,monuke no kara,"pusty
+opustoszały
+całkowicie pusty (np. mieszkanie)
+ciało, z którego odeszła dusza
+zwłoki
+zrzucona skóra (np. węża, owada i etc, pierwotne znaczenie)",,,,"GroupId: 1571980
+Translate: completely empty (of a residence, etc.)
+Translate: vacant
+Translate: deserted
+Translate: body from which the soul has left
+Translate: corpse
+Translate: shed skin (of a snake, insect, etc.)
+AdditionalInfo: orig. meaning"
+206975,WORD_NOUN,,HIRAGANA,,,椿説,ちんせつ,,chinsetsu,"nowatorski pomysł
+nowatorska idea
+dziwna teoria",,,,"GroupId: 1431910
+Translate: novel idea
+Translate: strange theory"
+206976,WORD_NOUN,,HIRAGANA,,,総浚い,そうざらい,,souzarai,"przegląd ogólny (np. lekcji)
+próba generalna",,,,"GroupId: 1708590
+Translate: general review (e.g. of one's lessons)
+Translate: dress rehearsal"
+206977,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,隙を見付ける,すきをみつける,,suki o mi tsukeru,wykorzystać okazję,,,,"GroupId: 1886800
+Translate: to seize an opportunity"
