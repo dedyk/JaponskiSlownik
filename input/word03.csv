@@ -28938,7 +28938,7 @@ Translate: error handling"
 206982,WORD_NOUN,,HIRAGANA,,,修正予算,しゅうせいよさん,,shuusei yosan,"znowelizowany budżet
 poprawiony budżet",,,,"GroupId: 1734710
 Translate: revised budget"
-206983,WORD_NOUN,,HIRAGANA,,,雨続き,あめつづき,,ame tsuduki,długi okres deszczu,,,,"GroupId: 1816240
+206983,WORD_NOUN,,HIRAGANA,,,雨続き,あめつづき,,ame tsuduki,długi okres deszczu,,,DUPLICATE 207034,"GroupId: 1816240
 Translate: long spell of rain"
 206984,WORD_NOUN,,HIRAGANA,,,動態統計,どうたいとうけい,,doutai toukei,"statystyki dynamiczne, istotne lub aktualne",,,,"GroupId: 1686430
 Translate: dynamic or vital or current statistics"
@@ -28980,7 +28980,7 @@ Translate: after efforts in vain"
 206997,WORD_NOUN,,HIRAGANA,,,葡萄状球菌,ぶどうじょうきゅうきん,,budoujou kyuukin,gronkowiec,,,,"GroupId: 1846060
 Translate: staphylococcus"
 206998,WORD_NOUN,,HIRAGANA,,,素本,すほん,,suhon,"chiński klasyczny tekst bez pomocy w czytaniu słów
-książka bez pomocy w czytaniu słów",,,,"GroupId: 2601820
+książka bez pomocy w czytaniu słów",,,DUPLICATE 207039,"GroupId: 2601820
 Translate: Chinese classic without reading aids
 Translate: book without reading aids"
 206999,WORD_NOUN,,HIRAGANA,,,防楯,ぼうじゅん,,boujun,osłona dział,szczególnie artyleria,,,"GroupId: 2841958
@@ -29086,3 +29086,62 @@ Translate: to have an excuse"
 Translate: concocting an alibi"
 207032,WORD_NOUN,,KATAKANA_HIRAGANA,,,アリバイ作り,アリバイづくり,,aribai dukuri,wymyślanie alibi,,,,"GroupId: 2837393
 Translate: concocting an alibi"
+207033,WORD_NOUN,,KATAKANA,,,-,エチゼンクラゲ,,echizen kurage,meduza Nomura,Nemopilema nomurai,,,"GroupId: 2165560
+Translate: Nomura's jellyfish (Nemopilema nomurai)
+MiscInfo: uk"
+207034,WORD_NOUN,,HIRAGANA,,,雨続き,あまつづき,,ama tsuduki,długi okres deszczu,,,DUPLICATE 206983,"GroupId: 1816240
+Translate: long spell of rain"
+207035,WORD_NOUN,,KATAKANA,,,-,ナースハウンドシャーク,,naasuhaundo shaaku,rekinek plamisty,"gatunek ryby chrzęstnoszkieletowej z rodziny rekinkowatych, znanej również pod nazwą rekinek panterka, Scyliorhinus stellaris, ang: nursehound",,,"GroupId: 2552430
+Translate: nursehound (Scyliorhinus stellaris, species of catshark in the Northeast Atlantic and Mediterranean)"
+207036,WORD_NOUN,,KATAKANA,,,-,スキリオライヌス・ステラリス,,sukiriorainusu suterarisu,rekinek plamisty,"gatunek ryby chrzęstnoszkieletowej z rodziny rekinkowatych, znanej również pod nazwą rekinek panterka, Scyliorhinus stellaris, ang: nursehound",,,"GroupId: 2552430
+Translate: nursehound (Scyliorhinus stellaris, species of catshark in the Northeast Atlantic and Mediterranean)"
+207037,WORD_NOUN,,KATAKANA,,,-,スキリオライヌスステラリス,,sukiriorainusu suterarisu,rekinek plamisty,"gatunek ryby chrzęstnoszkieletowej z rodziny rekinkowatych, znanej również pod nazwą rekinek panterka, Scyliorhinus stellaris, ang: nursehound",,,"GroupId: 2552430
+Translate: nursehound (Scyliorhinus stellaris, species of catshark in the Northeast Atlantic and Mediterranean)"
+207038,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,努力も空しく,どりょくもむなしく,,doryoku mo munashiku,po próżnych wysiłkach,,,,"GroupId: 1855680
+Translate: after efforts in vain"
+207039,WORD_NOUN,,HIRAGANA,,,素本,そほん,,sohon,"chiński klasyczny tekst bez pomocy w czytaniu słów
+książka bez pomocy w czytaniu słów",,,DUPLICATE 206998,"GroupId: 2601820
+Translate: Chinese classic without reading aids
+Translate: book without reading aids"
+207040,WORD_NOUN,,HIRAGANA,,,麁本,そほん,,sohon,"chiński klasyczny tekst bez pomocy w czytaniu słów
+książka bez pomocy w czytaniu słów",,,,"GroupId: 2601820
+Translate: Chinese classic without reading aids
+Translate: book without reading aids"
+207041,WORD_NOUN,,KATAKANA,,,-,ヤンバルクイナ,,yanbaru kuina,wodnik okinawski,"gatunek średniej wielkości ptaka z rodziny chruścieli, Gallirallus okinawae",,,"GroupId: 2165720
+Translate: Okinawa rail (Gallirallus okinawae)
+MiscInfo: uk"
+207042,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,アメリカアナグマ,,amerika anaguma,"borsucznik amerykański
+borsuk amerykański","gatunek drapieżnego ssaka z rodziny łasicowatych, jedyny przedstawiciel rodzaju Taxidea, Taxidea taxus",,,"GroupId: 2166010
+Translate: American badger (Taxidea taxus)
+MiscInfo: uk"
+207043,WORD_NOUN,,KATAKANA,,,-,ヒメコガネ,,himekogane,Anomala rufocuprea,gatunek chrząszcza,,,"GroupId: 2166310
+Translate: soybean beetle (Anomala rufocuprea)
+MiscInfo: uk"
+207044,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,スジイルカ,,sujiiruka,"delfinek pręgoboki
+delfin pręgoboki","gatunek ssaka z rodziny delfinowatych, Stenella coeruleoalba",,,"GroupId: 2166520
+Translate: striped dolphin (Stenella coeruleoalba)
+MiscInfo: uk"
+207045,WORD_NOUN,,KATAKANA,,,-,ジフテリヤ,,jifuteriya,"dyfteryt
+błonica","choroba zakaźna, ang: diphtheria",,,"GroupId: 1064820
+Translate: diphtheria"
+207046,WORD_NOUN,,KATAKANA,,,-,ジフトリア,,jifutoria,"dyfteryt
+błonica","choroba zakaźna, ang: diphtheria",,,"GroupId: 1064820
+Translate: diphtheria"
+207047,WORD_NOUN,,HIRAGANA,,,半裂,はんざき,,hanzaki,salamandra olbrzymia japońska,"płaz ogoniasty z rodziny skrytoskrzelnych, obok salamandry olbrzymiej chińskiej największy żyjący współcześnie płaz świata, Andrias japonicus",,,"GroupId: 2525750
+Translate: Japanese giant salamander (Andrias japonicus)
+MiscInfo: uk"
+207048,WORD_NOUN,,KATAKANA,,,-,ハンザキ,,hanzaki,salamandra olbrzymia japońska,"płaz ogoniasty z rodziny skrytoskrzelnych, obok salamandry olbrzymiej chińskiej największy żyjący współcześnie płaz świata, Andrias japonicus",,,"GroupId: 2525750
+Translate: Japanese giant salamander (Andrias japonicus)
+MiscInfo: uk"
+207049,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,詫びを入れる,わびをいれる,,wabi o ireru,"przepraszać
+składać przeprosiny",,,,"GroupId: 2203590
+Translate: to make an apology"
+207050,WORD_NOUN,,HIRAGANA,,,地域興し,ちいきおこし,,chiiki okoshi,rewitalizacja obszaru,,,,"GroupId: 2535960
+Translate: revitalization of an area"
+207051,WORD_NOUN,,HIRAGANA,,,地域起こし,ちいきおこし,,chiiki okoshi,rewitalizacja obszaru,,,,"GroupId: 2535960
+Translate: revitalization of an area"
+207052,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,言訳がたつ,いいわけがたつ,,ii wake ga tatsu,mieć wymówkę,,,,"GroupId: 2764210
+Translate: to have an excuse"
