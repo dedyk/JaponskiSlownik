@@ -8,6 +8,4 @@
 + ludzie - 25
 uzupełniacz - 3
 -----------
-suma: 70
-
-sugestie
+suma: 70\
