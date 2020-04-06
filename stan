@@ -27,3 +27,11 @@ główny (klucz)
 
 ドーサ
 ----
+
+ガリー
+parów
+wąwóz
+galera
+
+ジャバ
+Java (język programowania)
