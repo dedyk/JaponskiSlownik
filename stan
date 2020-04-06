@@ -8,4 +8,22 @@
 + ludzie - 25
 + uzupełniacz - x
 -----------
-suma: 70\
+suma: 70
+
+-----
+メジャー
+tak
+
+イエス
+ważny
+znaczny
+główny (ang: major)
+Major (firma naftowa)
+mierzenie (ang: measure)
+taśma miernicza (ang: tape measure)
+główna liga (ang: major league)
+główny (klucz)
+
+
+ドーサ
+----
