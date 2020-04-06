@@ -11,5 +11,3 @@ uzupełniacz - 3
 suma: 70
 
 sugestie
-
-141005
