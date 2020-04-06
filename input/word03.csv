@@ -4005,7 +4005,7 @@ Translate: beauty of a sculpted shape"
 201008,WORD_NOUN,,HIRAGANA_KATAKANA,,,歌ガルタ,うたガルタ,,uta garuta,utagaruta,"tradycyjna, japońska, towarzyska gra w karty, które zawierają wersety poezji",,,"GroupId: 2112530
 Translate: utagaruta
 Translate: traditional matching game played with cards with stanzas of waka written on them"
-201009,WORD_NOUN,,HIRAGANA,,,歌加留多,うたがるた,,uta garuta,utagaruta,"tradycyjna, japońska, towarzyska gra w karty, które zawierają wersety poezji",,,"GroupId: 2112530
+201009,WORD_NOUN,,HIRAGANA,,,歌加留多,うたがるた,,uta garuta,utagaruta,"tradycyjna, japońska, towarzyska gra w karty, które zawierają wersety poezji",,DUPLICATE 207253,"GroupId: 2112530
 Translate: utagaruta
 Translate: traditional matching game played with cards with stanzas of waka written on them"
 201010,WORD_VERB_U,,HIRAGANA,,,言損なう,いいそこなう,,ii sokonau,"mówić niepoprawnie
@@ -29467,7 +29467,7 @@ Translate: major multinational grain companies"
 Translate: checking"
 207132,WORD_NOUN,,KATAKANA_HIRAGANA,,,ポーツマス条約,ポーツマスじょうやく,,pootsumasu jouyaku,Traktat z Portsmouth,"traktat pokojowy pomiędzy Japonią a Imperium Rosyjskim, kończący wojnę rosyjsko-japońską zawarty 23 sierpnia/5 września 1905 roku",,,"GroupId: 2214510
 Translate: Treaty of Portsmouth (ending the Russo-Japanese War, 1905)"
-207133,WORD_NOUN,,HIRAGANA,,,体操座り,たいそうずわり,,taisou zuwari,siedzenie na podłodze i chwytanie się za kolana,,,,"GroupId: 2828807
+207133,WORD_NOUN,,HIRAGANA,,,体操座り,たいそうずわり,,taisou zuwari,siedzenie na podłodze i chwytanie się za kolana,,,DUPLICATE 207256,"GroupId: 2828807
 Translate: sitting on the floor grasping one's knees (as in a gym class)"
 207134,WORD_NOUN,,HIRAGANA,,,解離性同一性障害,かいりせいどういつせいしょうがい,,kairisei douitsusei shougai,zaburzenie dysocjacyjne tożsamości,,,,"GroupId: 2515220
 Translate: dissociative identity disorder"
@@ -29672,35 +29672,37 @@ Translate: to have an uneasy conscience"
 207188,WORD_NOUN,,HIRAGANA,,,肝臓学,かんぞうがく,,kanzougaku,hepatologia,"dziedzina medycyny zajmująca się schorzeniami, budową i funkcjonowaniem wątroby oraz pęcherzyka żółciowego i dróg żółciowych",IGNORE_NO_JMEDICT,,
 207189,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,灰色,かいしょく,,kaishoku,"szary
-popielaty",,,,"GroupId: 1201970
+popielaty",,,DUPLICATE 723,"GroupId: 1201970
 Translate: grey
 Translate: gray
 Translate: ashen"
 207190,WORD_NOUN,,KATAKANA,,,-,ドーサ,,doosa,"dōsa
-???",,,,"GroupId: 2632430
+???",,,DUPLICATE 106145,"GroupId: 2632430
 Translate: dōsa
 MiscInfo: uk
 Translate: sizing solution made of alum and glue for treating washi
 MiscInfo: uk"
-207191,WORD_NOUN,,HIRAGANA,,,舞い,まい,,mai,taniec,,,,
-207192,WORD_NOUN,,HIRAGANA,,,儛,まい,,mai,taniec,,,,
+207191,WORD_NOUN,,HIRAGANA,,,舞い,まい,,mai,taniec,,,DUPLICATE 94101,
+207192,WORD_NOUN,,HIRAGANA,,,儛,まい,,mai,taniec,,,DUPLICATE 94101,
 207193,WORD_NOUN,,HIRAGANA,,,忘れもの,わすれもの,,wasuremono,zguba,,,,
 207194,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,雌,めん,,men,"samica
-rodzaj żeński","np. zwierzęcia, rośliny",,,"GroupId: 1312880
+rodzaj żeński","np. zwierzęcia, rośliny",,"DUPLICATE 7837
+DUPLICATE 57994","GroupId: 1312880
 Translate: female (animal, plant)
 MiscInfo: uk"
 207195,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,牝,めん,,men,"samica
-rodzaj żeński","np. zwierzęcia, rośliny",,,"GroupId: 1312880
+rodzaj żeński","np. zwierzęcia, rośliny",,"DUPLICATE 51916
+DUPLICATE 58043","GroupId: 1312880
 Translate: female (animal, plant)
 MiscInfo: uk"
 207196,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,牸,めん,,men,"samica
-rodzaj żeński","np. zwierzęcia, rośliny",,,"GroupId: 1312880
+rodzaj żeński","np. zwierzęcia, rośliny",,DUPLICATE 184918,"GroupId: 1312880
 Translate: female (animal, plant)
 MiscInfo: uk"
-207197,WORD_COUNTER,,HIRAGANA,,,返,へん,,hen,ilość razy,,,,
+207197,WORD_COUNTER,,HIRAGANA,,,返,へん,,hen,ilość razy,,,DUPLICATE 101098,
 207198,WORD_NOUN,,KATAKANA,,,-,ナイト・クラブ,,naito kurabu,klub nocny,,,,
 207199,WORD_NOUN,,HIRAGANA,,,鎮主,ちんじゅ,,chinju,"lokalne shintoistyczne bóstwo
 opiekuńcze bóstwo",,,,
@@ -29727,21 +29729,28 @@ osiągnięcie
 podejmowanie lekcji (np. tańca, muzyki, ceremonii herbacianej, układania kwiatów i etc)",,,,
 207214,WORD_NOUN,,HIRAGANA,,,-,すさのお,,susanoo,"Susanoo (japońskie bóstwo)
 Susanoo-no-Mikoto",,,,
-207215,WORD_NOUN,,HIRAGANA,,,-,すさのを,,susanoo,"Susanoo (japońskie bóstwo)
+207215,WORD_NOUN,,HIRAGANA_EXCEPTION,,,-,すさのを,,susanoo,"Susanoo (japońskie bóstwo)
 Susanoo-no-Mikoto",,,,
 207216,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,秘蔵,ひそう,,hisou,"skarb
 zdobycz
 bardzo cenny
-wartościowy",,,,
+wartościowy",,,DUPLICATE 68574,
 207217,WORD_NOUN,,KATAKANA_HIRAGANA,,,ワン子,ワンこ,,wanko,"pies
 piesek
 psiaczek
-psinka",język dzieci,,,
-207218,WORD_NOUN,,HIRAGANA,,,わん子,わんこ,,wanko,"pies
-piesek
-psiaczek
-psinka",język dzieci,,,
+psinka",język dzieci,,,"GroupId: 2560520
+Translate: dog
+MiscInfo: chn
+MiscInfo: uk
+Translate: doggy
+MiscInfo: chn
+MiscInfo: uk
+Translate: bow-wow
+MiscInfo: chn
+MiscInfo: uk"
+207218,WORD_NOUN,,HIRAGANA,,,地震津波,じしんつなみ,,jishin tsunami,tsunami wywołane przez trzęsienie ziemi,,,,"GroupId: 2604640
+Translate: tsunami (caused by an earthquake)"
 207219,WORD_NOUN,,HIRAGANA,,,需め,もとめ,,motome,"prośba
 apel
 wezwanie
@@ -29764,7 +29773,7 @@ sapanie
 wzdychanie
 z głębokim oddechem",,,,
 207222,WORD_NOUN,,HIRAGANA,,,鼈,べつ,,betsu,"żółwiak chiński
-miękkoskóry żółw chiński","gatunek gada z podrzędu żółwi skrytoszyjnych z rodziny żółwiaków, pelodiscus sinensis",,,
+miękkoskóry żółw chiński","gatunek gada z podrzędu żółwi skrytoszyjnych z rodziny żółwiaków, pelodiscus sinensis",,DUPLICATE 97187,
 207223,WORD_NOUN,,HIRAGANA,,,亜片,あへん,,ahen,opium,substancja otrzymywana przez wysuszenie soku mlecznego z niedojrzałych makówek maku lekarskiego,,,"GroupId: 1586590
 Translate: opium
 MiscInfo: uk"
@@ -29778,7 +29787,7 @@ Translate: viola d'amore"
 WORD_ADJECTIVE_NO
 WORD_NOUN",,HIRAGANA,,,天下無双,てんかぶそう,,tenka busou,"niezrównany
 nie mający sobie równego
-niedościgły",,,,
+niedościgły",,,DUPLICATE 116908,
 207228,WORD_NOUN,,HIRAGANA,,,一蓮託生,いちれんたくしょう,,ichiren takushou,współdzielić swoją część z innymi,,,,
 207229,"WORD_ADVERB
 WORD_NOUN",,KATAKANA_HIRAGANA,,,-,スカッと,,sukatto,"odświeżony
@@ -29813,7 +29822,8 @@ oszukańczy
 zdradliwy
 obrzydliwy
 ohydny
-haniebny",,,,"GroupId: 1151660
+haniebny",,,"DUPLICATE 152352
+DUPLICATE 152390","GroupId: 1151660
 Translate: treacherous
 MiscInfo: yoji
 Translate: heinous
@@ -29829,7 +29839,8 @@ oszukańczy
 zdradliwy
 obrzydliwy
 ohydny
-haniebny",,,,"GroupId: 1151660
+haniebny",,,"DUPLICATE 152391
+DUPLICATE 152392","GroupId: 1151660
 Translate: treacherous
 MiscInfo: yoji
 Translate: heinous
@@ -29841,18 +29852,18 @@ MiscInfo: yoji"
 207238,WORD_NOUN,,HIRAGANA,,,賞玩,しょうかん,,shoukan,"uznanie
 zachwyt
 podziw
-przyjemność",,,,"GroupId: 1351920
+przyjemność",,,DUPLICATE 158415,"GroupId: 1351920
 Translate: appreciation
 Translate: admiration
 Translate: enjoyment"
 207239,WORD_NOUN,,HIRAGANA,,,賞翫,しょうかん,,shoukan,"uznanie
 zachwyt
 podziw
-przyjemność",,,,"GroupId: 1351920
+przyjemność",,,DUPLICATE 158447,"GroupId: 1351920
 Translate: appreciation
 Translate: admiration
 Translate: enjoyment"
-207240,WORD_NOUN,,KATAKANA,,,-,ガリー,,garii,galera,"rodzaj statku, ang: galley",,,"GroupId: 1040520
+207240,WORD_NOUN,,KATAKANA,,,-,ガリー,,garii,galera,"rodzaj statku, ang: galley",,DUPLICATE 57630,"GroupId: 1040520
 Translate: galley"
 207241,WORD_NOUN,,KATAKANA,,,-,ハンケツ,,han ketsu,"dżinsy noszone nisko, odsłaniając część pośladków",,,,"GroupId: 1639020
 Translate: jeans worn low, exposing part of buttocks"
@@ -29860,7 +29871,7 @@ Translate: jeans worn low, exposing part of buttocks"
 WORD_EXPRESSION",,HIRAGANA,,,紛う方なく,まごうかたなく,,magou kata naku,"niewątpliwie
 bez wątpienia
 definitywnie
-zdecydowanie",,,,"GroupId: 2690590
+zdecydowanie",,,DUPLICATE 185414,"GroupId: 2690590
 Translate: undoubtedly
 Translate: unmistakably
 Translate: definitely"
@@ -29868,7 +29879,7 @@ Translate: definitely"
 WORD_EXPRESSION",,HIRAGANA,,,紛うかたなく,まごうかたなく,,magou kata naku,"niewątpliwie
 bez wątpienia
 definitywnie
-zdecydowanie",,,,"GroupId: 2690590
+zdecydowanie",,,DUPLICATE 185477,"GroupId: 2690590
 Translate: undoubtedly
 Translate: unmistakably
 Translate: definitely"
@@ -29876,7 +29887,7 @@ Translate: definitely"
 WORD_EXPRESSION",,HIRAGANA,,,紛う方無く,まごうかたなく,,magou kata naku,"niewątpliwie
 bez wątpienia
 definitywnie
-zdecydowanie",,,,"GroupId: 2690590
+zdecydowanie",,,DUPLICATE 185478,"GroupId: 2690590
 Translate: undoubtedly
 Translate: unmistakably
 Translate: definitely"
@@ -29892,13 +29903,13 @@ Translate: definitely"
 WORD_EXPRESSION",,HIRAGANA,,,紛うかた無く,まごうかたなく,,magou kata naku,"niewątpliwie
 bez wątpienia
 definitywnie
-zdecydowanie",,,,"GroupId: 2690590
+zdecydowanie",,,DUPLICATE 185479,"GroupId: 2690590
 Translate: undoubtedly
 Translate: unmistakably
 Translate: definitely"
 207247,WORD_NOUN,,KATAKANA_EXCEPTION,,,姑娘,クウニャン,,kuunyan,"dziewczyna
 młoda niezamężna kobieta
-chińska dziewczyna",,,,"GroupId: 2727270
+chińska dziewczyna",,,DUPLICATE 186913,"GroupId: 2727270
 Translate: girl
 Translate: young unmarried woman
 Translate: Chinese girl"
@@ -29927,7 +29938,7 @@ Translate: traditional matching game played with cards with stanzas of waka writ
 207252,WORD_NOUN,,HIRAGANA_KATAKANA,,,歌カルタ,うたカルタ,,utakaruta,utagaruta,"tradycyjna, japońska, towarzyska gra w karty, które zawierają wersety poezji",,,"GroupId: 2112530
 Translate: utagaruta
 Translate: traditional matching game played with cards with stanzas of waka written on them"
-207253,WORD_NOUN,,HIRAGANA,,,歌加留多,うたかるた,,utakaruta,utagaruta,"tradycyjna, japońska, towarzyska gra w karty, które zawierają wersety poezji",,,"GroupId: 2112530
+207253,WORD_NOUN,,HIRAGANA,,,歌加留多,うたかるた,,utakaruta,utagaruta,"tradycyjna, japońska, towarzyska gra w karty, które zawierają wersety poezji",,DUPLICATE 201009,"GroupId: 2112530
 Translate: utagaruta
 Translate: traditional matching game played with cards with stanzas of waka written on them"
 207254,WORD_NOUN,,KATAKANA,,,-,ガチンガチン,,gachin gachin,"tik-tak
@@ -29938,7 +29949,7 @@ Translate: chipping (sound)"
 szew rękawa",,,,"GroupId: 1596610
 Translate: attaching a sleeve to the body of a shirt
 Translate: sleeve seam"
-207256,WORD_NOUN,,HIRAGANA,,,体操座り,たいそうすわり,,taisou suwari,siedzenie na podłodze i chwytanie się za kolana,,,,"GroupId: 2828807
+207256,WORD_NOUN,,HIRAGANA,,,体操座り,たいそうすわり,,taisou suwari,siedzenie na podłodze i chwytanie się za kolana,,,DUPLICATE 207133,"GroupId: 2828807
 Translate: sitting on the floor grasping one's knees (as in a gym class)"
 207257,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,無位無官,むいむかん,,mui mukan,niemający specjalnej rangi lub tytułu,,,,"GroupId: 2032700
@@ -29983,7 +29994,7 @@ Translate: sympetalous"
 WORD_ADJECTIVE_NO",,HIRAGANA,,,無双,ぶそう,,busou,"niezrównany
 nie mający sobie równego
 nie mający równych
-nieprześcigniony",,,,"GroupId: 1530490
+nieprześcigniony",,,DUPLICATE 64126,"GroupId: 1530490
 Translate: peerless
 Translate: unparalleled
 Translate: unparallelled
