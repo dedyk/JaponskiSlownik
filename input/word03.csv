@@ -29761,7 +29761,8 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,牸,めん,,men,"samica
 rodzaj żeński","np. zwierzęcia, rośliny",,DUPLICATE 184918,"GroupId: 1312880
 Translate: female (animal, plant)
 MiscInfo: uk"
-207197,WORD_COUNTER,,HIRAGANA,,,返,へん,,hen,ilość razy,,,DUPLICATE 101098,"GroupId: 2208060
+207197,WORD_COUNTER,,HIRAGANA,,,返,へん,,hen,ilość razy,,,"DUPLICATE 101098
+DUPLICATE 207282","GroupId: 2208060
 Translate: number of times"
 207198,WORD_NOUN,,KATAKANA,,,-,ナイト・クラブ,,naito kurabu,klub nocny,,,,
 207199,WORD_NOUN,,HIRAGANA,,,鎮主,ちんじゅ,,chinju,"lokalne shintoistyczne bóstwo
@@ -30062,7 +30063,8 @@ Translate: matchless"
 207268,WORD_VERB_AUX,,HIRAGANA,,,-,ん,,n,"prawdopodobnie (po -nai czasownika)
 zamiar
 wola
-chcieć coś zrobić (dla mnie)",archaizm,,,"GroupId: 2843960
+chcieć coś zrobić (dla mnie)",archaizm,,"DUPLICATE 39649
+DUPLICATE 39650","GroupId: 2843960
 Translate: probably
 MiscInfo: arch
 AdditionalInfo: after a -nai stem
@@ -30072,65 +30074,67 @@ Translate: intend to
 MiscInfo: arch
 Translate: would like to have done (for me)
 MiscInfo: arch"
-207269,WORD_INTERJECTION,,KATAKANA,,,-,イエス,,iesu,tak,ang: yes,,,"GroupId: 2843921
+207269,WORD_INTERJECTION,,KATAKANA,,,-,イエス,,iesu,tak,ang: yes,,DUPLICATE 19385,"GroupId: 2843921
 Translate: yes"
 207270,WORD_NOUN,,KATAKANA,,,-,スカラー,,sukaraa,"erudyta
 badacz
-uczony","mało znane słowo, ang: scholar",,,"GroupId: 2843953
+uczony","mało znane słowo, ang: scholar",,DUPLICATE 99371,"GroupId: 2843953
 Translate: scholar
 MiscInfo: obsc"
 207271,WORD_NOUN,,KATAKANA,,,-,ソール,,sooru,"zelówka
-podeszwa",ang: sole,,,"GroupId: 2027170
+podeszwa",ang: sole,,DUPLICATE 39633,"GroupId: 2027170
 Translate: sole (of a shoe, golf club, etc.)"
-207272,WORD_NOUN,,KATAKANA,,,-,トレッカー,,torekkaa,wózek holowniczy (dla samochodu),,,,"GroupId: 2843760
+207272,WORD_NOUN,,KATAKANA,,,-,トレッカー,,torekkaa,wózek holowniczy (dla samochodu),,,DUPLICATE 23273,"GroupId: 2843760
 Translate: tow dolly (for cars)"
 207273,WORD_NOUN,,KATAKANA,,,-,バッティング,,battingu,"uderzenie głową (np. w boksie)
 uderzenie głową (np. jak do robią koziołki)
 wtrącanie się
 wcinanie się
 przerywanie
-mieć czasowy lub rozkładowy konflikt",,,,"GroupId: 2843838
+mieć czasowy lub rozkładowy konflikt",,,DUPLICATE 40647,"GroupId: 2843838
 Translate: butting (e.g. in boxing)
 Translate: butting in
 Translate: interrupting
 Translate: intruding on someone else's turf
 Translate: having a time or schedule conflict"
 207274,WORD_NOUN,,KATAKANA,,,-,パ,,pa,"Pakistan
-Pacific League (japońska liga baseballa)",skrót,,,"GroupId: 2843851
+Pacific League (japońska liga baseballa)",skrót,,"DUPLICATE 90556
+DUPLICATE 183622","GroupId: 2843851
 Translate: Pakistan
 MiscInfo: abbr
 Translate: Pacific League (Japanese baseball league)
 MiscInfo: abbr"
 207275,WORD_NOUN,,KATAKANA,,,-,フライ,,furai,"piłka uderzona wysoko (baseball)
 mucha (szczególnie jako przynęta na rybę)
-latanie (skrót)",ang: fly,,,"GroupId: 2843891
+latanie (skrót)",ang: fly,,DUPLICATE 34097,"GroupId: 2843891
 Translate: fly ball
 Translate: fly (esp. in fishing bait)
 Translate: flying
 MiscInfo: abbr"
-207276,WORD_NOUN,,KATAKANA,,,-,プリン,,purin,puryna,"heterocykliczny, aromatyczny związek organiczny, zbudowany ze skondensowanych pierścieni pirymidyny i imidazolu, ang: purine",,,"GroupId: 2843837
+207276,WORD_NOUN,,KATAKANA,,,-,プリン,,purin,puryna,"heterocykliczny, aromatyczny związek organiczny, zbudowany ze skondensowanych pierścieni pirymidyny i imidazolu, ang: purine",,DUPLICATE 42441,"GroupId: 2843837
 Translate: purine"
 207277,WORD_NOUN,,KATAKANA,,,-,ボー,,boo,"łuk (broń)
 kokardka
-mucha (od garnituru, skrót)",ang: bow,,,"GroupId: 1123220
+mucha (od garnituru, skrót)",ang: bow,,DUPLICATE 14819,"GroupId: 1123220
 Translate: bow (weapon)
 Translate: bow
 Translate: bowknot
 Translate: bow tie
 MiscInfo: abbr"
-207278,WORD_NOUN,,KATAKANA,,,-,マラソン,,marason,malation,"organiczny związek chemiczny z grupy estrów kwasów fosforowych i pochodnych kwasu bursztynowego, ang: malathion",,,"GroupId: 2843817
+207278,WORD_NOUN,,KATAKANA,,,-,マラソン,,marason,malation,"organiczny związek chemiczny z grupy estrów kwasów fosforowych i pochodnych kwasu bursztynowego, ang: malathion",,DUPLICATE 13588,"GroupId: 2843817
 Translate: malathion (insecticide)
 AdditionalInfo: from Malathon (trademark)"
 207279,WORD_NOUN,,KATAKANA,,,-,メジャー,,mejaa,"mierzenie
-taśma miernicza",ang: measure,,,"GroupId: 2843842
+taśma miernicza",ang: measure,,DUPLICATE 36583,"GroupId: 2843842
 Translate: measure
 Translate: measuring tape
 Translate: measuring"
-207280,WORD_NOUN,,KATAKANA,,,-,ラガー,,ragaa,lager,rodzaj piwa,,,"GroupId: 2843819
+207280,WORD_NOUN,,KATAKANA,,,-,ラガー,,ragaa,lager,rodzaj piwa,,DUPLICATE 22180,"GroupId: 2843819
 Translate: lager"
-207281,WORD_NOUN,,KATAKANA,,,-,ラフ,,rafu,???,ang: ruff,,,"GroupId: 2843959
+207281,WORD_NOUN,,KATAKANA,,,-,ラフ,,rafu,???,ang: ruff,,DUPLICATE 46615,"GroupId: 2843959
 Translate: ruff"
-207282,WORD_NOUN,,HIRAGANA,,,返,へん,,hen,odpowiedź,"na telegram, skrót",,,"GroupId: 2843845
+207282,WORD_NOUN,,HIRAGANA,,,返,へん,,hen,odpowiedź,"na telegram, skrót",,"DUPLICATE 101098
+DUPLICATE 207197","GroupId: 2843845
 Translate: reply
 MiscInfo: abbr
 AdditionalInfo: in telegrams
@@ -30143,7 +30147,7 @@ szklana część skanera, kopiarki itp.",,,,"GroupId: 2353350
 Translate: copy holder
 Translate: stand for holding papers during typing, etc.
 Translate: glass part of a scanner, copier, etc."
-207284,WORD_NOUN,,HIRAGANA,,,発条秤,ばねばかり,,banebakari,waga sprężynowa,,,,"GroupId: 2105120
+207284,WORD_NOUN,,HIRAGANA,,,発条秤,ばねばかり,,bane bakari,waga sprężynowa,,,,"GroupId: 2105120
 Translate: spring balance
 Translate: spring scale
 Translate: pull tension gauge"
@@ -30162,7 +30166,7 @@ Translate: Chōtoku era (995.2.22-999.1.13)"
 207290,WORD_NOUN,,HIRAGANA,,,節会,せちえ,,sechie,sezonowy dworski bankiet,mało znane słowo,,,"GroupId: 1655960
 Translate: seasonal court banquet
 MiscInfo: obsc"
-207291,WORD_NOUN,,HIRAGANA,,,節振舞,せちぶるまい,,sechiburumai,"sezonowa uroczystość
+207291,WORD_NOUN,,HIRAGANA,,,節振舞,せちぶるまい,,sechiburu mai,"sezonowa uroczystość
 noworoczna uroczystość",mało znane słowo,,,"GroupId: 2843302
 Translate: seasonal feast
 MiscInfo: obsc
@@ -30234,7 +30238,7 @@ Translate: bill of material"
 207311,WORD_NOUN,,HIRAGANA,,,東一華,あずまいちげ,,azumaichige,Anemone raddeana,gatunek kwiatu,,,"GroupId: 2828638
 Translate: Anemone raddeana (species of anemone flower)
 MiscInfo: uk"
-207312,WORD_NOUN,,HIRAGANA,,,踏み板,ふみいた,,fumii ta,"deska (np. przez rów)
+207312,WORD_NOUN,,HIRAGANA,,,踏み板,ふみいた,,fumi ita,"deska (np. przez rów)
 podnóżek
 oparcie dla nóg
 stopień
@@ -30287,3 +30291,117 @@ Translate: plat du jour"
 sklep należący do sieci handlowej",,,,"GroupId: 1789080
 Translate: sole agent
 Translate: chain store"
+207324,WORD_NOUN,,KATAKANA,,,-,ソウル,,souru,"jedyny
+wyłączny
+dusza
+duch
+soul (gatunek muzyczny)","ang: sole, soul",,DUPLICATE 108016,"GroupId: 1075370
+Translate: soul
+Translate: soul music
+MiscInfo: abbr"
+207325,WORD_VERB_AUX,,HIRAGANA,,,-,む,,mu,"prawdopodobnie (po -nai czasownika)
+zamiar
+wola
+chcieć coś zrobić (dla mnie)",archaizm,,"DUPLICATE 11714
+DUPLICATE 25958
+DUPLICATE 25961
+DUPLICATE 25963
+DUPLICATE 30822
+DUPLICATE 81253","GroupId: 2843960
+Translate: probably
+MiscInfo: arch
+AdditionalInfo: after a -nai stem
+Translate: will
+MiscInfo: arch
+Translate: intend to
+MiscInfo: arch
+Translate: would like to have done (for me)
+MiscInfo: arch"
+207326,WORD_NOUN,,KATAKANA,,,-,ボウ,,bou,"łuk (broń)
+kokardka
+mucha (od garnituru, skrót)",ang: bow,,,"GroupId: 1123220
+Translate: bow (weapon)
+Translate: bow
+Translate: bowknot
+Translate: bow tie
+MiscInfo: abbr"
+207327,WORD_NOUN,,HIRAGANA,,,ばね秤,ばねばかり,,bane bakari,waga sprężynowa,,,,"GroupId: 2105120
+Translate: spring balance
+Translate: spring scale
+Translate: pull tension gauge"
+207328,WORD_NOUN,,KATAKANA,,,-,フサモ,,fusamo,wywłócznik okółkowy,"gatunek rośliny wodnej z rodziny wodnikowatych, Myriophyllum verticillatum",,,"GroupId: 2222280
+Translate: whorl-leaf water milfoil (Myriophyllum verticillatum)
+MiscInfo: uk"
+207329,WORD_NOUN,,HIRAGANA,,,節振る舞い,せちぶるまい,,sechiburu mai,"sezonowa uroczystość
+noworoczna uroczystość",mało znane słowo,,,"GroupId: 2843302
+Translate: seasonal feast
+MiscInfo: obsc
+Translate: New Year feast
+MiscInfo: obsc"
+207330,WORD_NOUN,,HIRAGANA,,,節振舞い,せちぶるまい,,sechiburu mai,"sezonowa uroczystość
+noworoczna uroczystość",mało znane słowo,,,"GroupId: 2843302
+Translate: seasonal feast
+MiscInfo: obsc
+Translate: New Year feast
+MiscInfo: obsc"
+207331,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,奇をてらう,きをてらう,,ki o terau,"pokazać swoją oryginalność (ekscentryczność)
+celowo działać dziwnie (np. aby zwrócić na siebie uwagę)",,,,"GroupId: 1870990
+Translate: to make a display of one's originality (eccentricity)
+Translate: to deliberately act oddly (e.g. to get attention)"
+207332,WORD_NOUN,,HIRAGANA,,,海蝲蛄,うみざりがに,,umi zarigani,homar,mało znane słowo,,,"GroupId: 2181170
+Translate: lobster
+MiscInfo: uk
+MiscInfo: obsc"
+207333,WORD_NOUN,,KATAKANA,,,-,ウミザリガニ,,umi zarigani,homar,mało znane słowo,,,"GroupId: 2181170
+Translate: lobster
+MiscInfo: uk
+MiscInfo: obsc"
+207334,WORD_NOUN,,KATAKANA,,,-,スマトラサイ,,sumatora sai,nosorożec sumatrzański,"ssak nieparzystokopytny z rodziny nosorożcowatych, Dicerorhinus sumatrensis",,,"GroupId: 2183950
+Translate: Sumatran rhinoceros (Dicerorhinus sumatrensis)
+MiscInfo: uk"
+207335,WORD_NOUN,,KATAKANA,,,-,サヤナガ,,sayanaga,Loligo bleekeri,zwierzę,,,"GroupId: 2184530
+Translate: spear squid (Loligo bleekeri)
+MiscInfo: uk"
+207336,WORD_NOUN,,HIRAGANA,,,山貘,やまばく,,yamabaku,tapir górski,"ssak należący do rzędu nieparzystokopytnych z rodziny tapirowatych, najmniejszy spośród czterech gatunków i jedyny który może żyć na wolności poza regionem lasów tropikalnych, Tapirus pinchaque",,,"GroupId: 2185450
+Translate: mountain tapir (Tapirus pinchaque)
+MiscInfo: uk"
+207337,WORD_NOUN,,KATAKANA,,,-,ヤマバク,,yamabaku,tapir górski,"ssak należący do rzędu nieparzystokopytnych z rodziny tapirowatych, najmniejszy spośród czterech gatunków i jedyny który może żyć na wolności poza regionem lasów tropikalnych, Tapirus pinchaque",,,"GroupId: 2185450
+Translate: mountain tapir (Tapirus pinchaque)
+MiscInfo: uk"
+207338,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ブチサンショウウオ,,buchisanshouuo,Hynobius naevius,gatunek salamandry,,,"GroupId: 2187290
+Translate: buchi salamander (Hynobius naevius)
+MiscInfo: uk"
+207339,WORD_NOUN,,KATAKANA,,,-,アズマイチゲ,,azumaichige,Anemone raddeana,gatunek kwiatu,,,"GroupId: 2828638
+Translate: Anemone raddeana (species of anemone flower)
+MiscInfo: uk"
+207340,WORD_NOUN,,HIRAGANA,,,踏板,ふみいた,,fumi ita,"deska (np. przez rów)
+podnóżek
+oparcie dla nóg
+stopień
+pedał (np. przy maszynie do szycia)",,,,"GroupId: 1745040
+Translate: board (across a ditch, etc.)
+Translate: step
+Translate: tread
+Translate: footboard
+Translate: running board
+Translate: pedal (of an organ, etc.)
+Translate: treadle"
+207341,WORD_NOUN,,HIRAGANA,,,煎餅蒲団,せんべいぶとん,,senbei buton,"cienka pościel
+twarde łóżko
+???",,,,"GroupId: 1391570
+Translate: thin bedding
+MiscInfo: yoji
+Translate: hard bed
+MiscInfo: yoji
+Translate: bedding worn flat and hard by usage
+MiscInfo: yoji"
+207342,WORD_NOUN,,KATAKANA,,,-,コート・デュ・ローヌ,,kooto dyu roonu,Côtes du Rhône,gatunek wina,,,"GroupId: 2832564
+Translate: Côtes du Rhône (wine)"
+207343,WORD_NOUN,,KATAKANA,,,-,シャトーヌフ・デュ・パプ,,shatoonufu dyu papu,Châteauneuf-du-Pape,gatunek wina,,,"GroupId: 2832747
+Translate: Châteauneuf-du-Pape (wine)"
+207344,WORD_NOUN,,HIRAGANA,,,日替り定食,ひがわりていしょく,,higawari teishoku,"danie dnia
+specjalność dnia (w restauracji)",,,,"GroupId: 1730460
+Translate: daily set meal
+Translate: daily special
+Translate: plat du jour"
