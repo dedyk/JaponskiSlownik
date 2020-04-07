@@ -1,6 +1,6 @@
 * kanji - 0
 ----------
-word - 15
++ word - 15
 ----------
 60000 - 20
 small - 5
@@ -35,3 +35,33 @@ galera
 
 ジャバ
 Java (język programowania)
+
+バッティング
+---------
+uderzanie piłki przez pałkarza (w baseballu)
+tryknięcie
+uderzenie głową (np. jak do robią koziołki)
+mieć czasowy lub rozkładowy konflikt
+
+プリン
+-----
+pudding (skrót)
+puryna
+
+む
+-----
+uuu (odgłos fizycznego wysiłku, archaizm)
+oo (archaizm)
+łał!
+tak
+jee
+prawdopodobnie (po -nai czasownika)
+zamiar
+wola
+chcieć coś zrobić (dla mnie)
+
+パ
+----
+pas (krok tańca)
+Pakistan (skrót)
+Pacific League (skrót)

@@ -286,19 +286,53 @@ Translate: metal jar or pot"
 200082,"WORD_ADVERBIAL_NOUN
 WORD_EXPRESSION
 WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,其の外,そのほか,,sono hoka,"inny
+WORD_ADJECTIVE_NO",,HIRAGANA,,,其の外,そのほか,,sono hoka,"reszta
+inny
 zresztą
 ponadto
 oprócz tego
-w dodatku",,,DUPLICATE 200083,
+w dodatku
+poza tym
+i tak dalej
+i tym podobne
+etc",,,DUPLICATE 200083,"GroupId: 1006900
+Translate: the rest
+AdditionalInfo: そのた is the more common reading when written
+Translate: the others
+AdditionalInfo: そのた is the more common reading when written
+Translate: in addition (to that)
+Translate: besides that
+Translate: other that that
+Translate: and other ...
+Translate: and so forth
+Translate: and the like
+Translate: and what have you
+Translate: et cetera"
 200083,"WORD_ADVERBIAL_NOUN
 WORD_EXPRESSION
 WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,其の外,そのた,,sono ta,"inny
+WORD_ADJECTIVE_NO",,HIRAGANA,,,其の外,そのた,,sono ta,"reszta
+inny
 zresztą
 ponadto
 oprócz tego
-w dodatku",,,DUPLICATE 200082,
+w dodatku
+poza tym
+i tak dalej
+i tym podobne
+etc",,,DUPLICATE 200082,"GroupId: 1006900
+Translate: the rest
+AdditionalInfo: そのた is the more common reading when written
+Translate: the others
+AdditionalInfo: そのた is the more common reading when written
+Translate: in addition (to that)
+Translate: besides that
+Translate: other that that
+Translate: and other ...
+Translate: and so forth
+Translate: and the like
+Translate: and what have you
+Translate: et cetera"
 200084,WORD_ADJECTIVE_I,,KATAKANA_HIRAGANA,,,-,ムゴい,,mugoi,"okrutny
 brutalny
 bezlitosny
@@ -337,11 +371,18 @@ Translate: ugly
 MiscInfo: uk
 Translate: horrifying
 MiscInfo: uk"
-200085,WORD_NOUN,,HIRAGANA,,,１軍,いちぐん,,ichigun,"armia
-wojsko
-cała armia
+200085,WORD_NOUN,,HIRAGANA,,,１軍,いちぐん,,ichigun,"cała armia
 całe wojsko
-pierwszy zespół (w sporcie)",,,,
+pierwszy zespół (w sporcie)
+fajne dzieciaki (kolokwializm)
+popularne dzieci (kolokwializm)",,,,"GroupId: 1162050
+Translate: one army
+Translate: whole army
+Translate: first string players
+Translate: the cool kids
+MiscInfo: col
+Translate: the popular kids
+MiscInfo: col"
 200086,WORD_NOUN,,KATAKANA,,,-,ウンチ,,unchi,"gówno
 odchody
 kał
@@ -366,9 +407,27 @@ Translate: airsoft gun"
 200089,WORD_NOUN,,KATAKANA,,,-,エアーソフト・ガン,,eaasofuto gan,"ASG
 Airsoft gun",repliki broni palnej przeważnie w skali 1:1 strzelające najczęściej plastikowymi kulkami,,,"GroupId: 2842602
 Translate: airsoft gun"
-200090,WORD_PRONOUN,,KATAKANA,,,-,テメー,,temee,ty,"wulgarnie, używane przez młodych mężczyzn",,,
+200090,WORD_PRONOUN,,KATAKANA,,,-,テメー,,temee,"ty (wulgarnie)
+ja
+mnie
+siebie",używane przez mężczyzn,,,"GroupId: 2076920
+Translate: you
+MiscInfo: uk
+MiscInfo: derog
+MiscInfo: male
+Translate: I
+MiscInfo: uk
+MiscInfo: male
+Translate: me
+MiscInfo: uk
+MiscInfo: male
+Translate: oneself
+MiscInfo: uk
+MiscInfo: male"
 200091,"WORD_EXPRESSION
-WORD_NOUN",,HIRAGANA,,,やぶの中,やぶのなか,,yabu no naka,niezdolność do dostrzeżenia prawdy z powodu sprzecznych zeznań,nazwa zaczerpnięta z opowiadania Akutagawa Ryuunosuke,,,
+WORD_NOUN",,HIRAGANA,,,やぶの中,やぶのなか,,yabu no naka,niezdolność do dostrzeżenia prawdy z powodu sprzecznych zeznań,nazwa zaczerpnięta z opowiadania Akutagawa Ryuunosuke,,,"GroupId: 2149240
+Translate: inability to discern the truth due to conflicting testimony
+AdditionalInfo: from the novel ""In a Grove"" by Akutagawa Ryūnosuke"
 200092,"WORD_NOUN
 WORD_COUNTER
 WORD_PARTICULE
@@ -29702,7 +29761,8 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,牸,めん,,men,"samica
 rodzaj żeński","np. zwierzęcia, rośliny",,DUPLICATE 184918,"GroupId: 1312880
 Translate: female (animal, plant)
 MiscInfo: uk"
-207197,WORD_COUNTER,,HIRAGANA,,,返,へん,,hen,ilość razy,,,DUPLICATE 101098,
+207197,WORD_COUNTER,,HIRAGANA,,,返,へん,,hen,ilość razy,,,DUPLICATE 101098,"GroupId: 2208060
+Translate: number of times"
 207198,WORD_NOUN,,KATAKANA,,,-,ナイト・クラブ,,naito kurabu,klub nocny,,,,
 207199,WORD_NOUN,,HIRAGANA,,,鎮主,ちんじゅ,,chinju,"lokalne shintoistyczne bóstwo
 opiekuńcze bóstwo",,,,
