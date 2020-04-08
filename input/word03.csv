@@ -30530,7 +30530,7 @@ Translate: sailing master"
 207378,WORD_NOUN,,KATAKANA_HIRAGANA,,,Ｖ字回復,ブイじかいふく,,bui jikaifuku,zwrot w kształcie litery V,np. na wykresie,,,"GroupId: 2836885
 Translate: V-shaped recovery
 Translate: sharp recovery"
-207379,WORD_NOUN,,HIRAGANA,,,篩絹,ふるいぎぬ,,furuiginu,gaza młynarska,,,,"GroupId: 2827872
+207379,WORD_NOUN,,HIRAGANA,,,篩絹,ふるいぎぬ,,furui ginu,gaza młynarska,,,,"GroupId: 2827872
 Translate: bolting cloth"
 207380,WORD_NOUN,,HIRAGANA,,,名誉心,めいよしん,,meiyoshin,pragnienie sławy,,,,"GroupId: 1531930
 Translate: desire for fame"
@@ -30565,7 +30565,7 @@ Translate: unity"
 Translate: unity of body and spirit
 MiscInfo: yoji"
 207389,WORD_NOUN,,HIRAGANA,,,心身一如,しんしんいちにょ,,shinshin' ichinyo,"ciało i umysł jako jedność
-jedność umysł-ciało",,,,"GroupId: 2040490
+jedność umysł-ciało",,,DUPLICATE 207424,"GroupId: 2040490
 Translate: body and mind as one
 MiscInfo: yoji
 Translate: mind-body unity
@@ -30583,7 +30583,7 @@ Translate: reschedule
 MiscInfo: abbr"
 207394,WORD_NOUN,,HIRAGANA,,,蓋置き,ふたおき,,futaoki,odpoczynek dla pokrywki od czajniczka,w czasie ceremonii parzenia herbaty,,,"GroupId: 2438470
 Translate: rest for the lid of a teakettle (tea ceremony)"
-207395,WORD_NOUN,,KATAKANA_HIRAGANA,,,プーアル茶,プーアルちゃ,,puuaru cha,herbata Pu'er,,,,"GroupId: 2064350
+207395,WORD_NOUN,,KATAKANA_HIRAGANA,,,プーアル茶,プーアルちゃ,,puu aru cha,herbata Pu'er,,,,"GroupId: 2064350
 Translate: Pu'er tea
 Translate: Pu-erh tea"
 207396,WORD_NOUN,,KATAKANA_HIRAGANA,,,パ行,パぎょう,,pa gyou,"klasyfikacja japońskiego czasownika w słownikowej formie kończącej się na “pu”
@@ -30611,7 +30611,9 @@ Translate: the deceased
 AdditionalInfo: usu. before names"
 207402,WORD_NOUN,,HIRAGANA,,,標,ひょう,,hyou,"???
 gładkie drewno przedstawiające kolejność miejsc siedzących na dworze (archaizm)
-tabliczka z imieniem i nazwiskiem (archaizm)",,,,"GroupId: 2843869
+tabliczka z imieniem i nazwiskiem (archaizm)",,,"DUPLICATE 4296
+DUPLICATE 59331
+DUPLICATE 65958","GroupId: 2843869
 Translate: mark
 MiscInfo: obsc
 Translate: sign
@@ -30684,7 +30686,7 @@ drobny
 maleńki
 niewielki
 nieistotny
-zez",przestarzałe słowo,,,"GroupId: 2843783
+zez",przestarzałe słowo,,DUPLICATE 102282,"GroupId: 2843783
 Translate: small
 MiscInfo: obs
 Translate: minute
@@ -30721,3 +30723,67 @@ Translate: feeling utterly mortified
 MiscInfo: yoji
 Translate: being deeply vexed
 MiscInfo: yoji"
+207413,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオウミガラス,,ooumigarasu,alka olbrzymia,"wymarły gatunek ptaka z rodziny alk, Pinguinus impennis",,,"GroupId: 2254490
+Translate: great auk (Pinguinus impennis)
+MiscInfo: uk"
+207414,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,どろんを決める,どろんをきめる,,doron o kimeru,"znikać
+uciekać
+zbiegać
+dawać nogę",,,,"GroupId: 2721300
+Translate: to make off
+Translate: to abscond
+Translate: to get away
+Translate: to pull a vanishing act"
+207415,WORD_NOUN,,KATAKANA,,,-,イネミズゾウムシ,,inemizu zoumushi,Lissorhoptrus oryzophilus,rodzaj chrząszcza,,,"GroupId: 2166870
+Translate: rice water weevil (Lissorhoptrus oryzophilus)
+MiscInfo: uk"
+207416,WORD_NOUN,,HIRAGANA,,,七宝繋ぎ,しっぽうつなぎ,,shippou tsunagi,wzór shippō,nachodzące na siebie kółka,,,"GroupId: 2842845
+Translate: shippō pattern (of overlapping circles)"
+207417,WORD_NOUN,,KATAKANA,,,-,オニカッコウ,,onikakkou,kukiel wielki,"gatunek średniej wielkości ptaka z rodziny kukułkowatych, podrodziny kukułek, Eudynamys scolopacea",,,"GroupId: 2189900
+Translate: Asian koel (Eudynamys scolopacea)
+MiscInfo: uk"
+207418,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ナベヅル,,nabeduru,żuraw białogłowy,gatunek dużego ptaka z rodziny żurawi,,,"GroupId: 2190100
+Translate: hooded crane (Grus monacha)
+MiscInfo: uk"
+207419,WORD_NOUN,,HIRAGANA,,,常鶲,じょうびたき,,joubitaki,pleszka chińska,"gatunek ptaka z rodziny muchołówkowatych, Phoenicurus auroreus",,,"GroupId: 2190130
+Translate: Daurian redstart (Phoenicurus auroreus)
+MiscInfo: uk"
+207420,WORD_NOUN,,HIRAGANA,,,上鶲,じょうびたき,,joubitaki,pleszka chińska,"gatunek ptaka z rodziny muchołówkowatych, Phoenicurus auroreus",,,"GroupId: 2190130
+Translate: Daurian redstart (Phoenicurus auroreus)
+MiscInfo: uk"
+207421,WORD_NOUN,,KATAKANA,,,-,ジョウビタキ,,joubitaki,pleszka chińska,"gatunek ptaka z rodziny muchołówkowatych, Phoenicurus auroreus",,,"GroupId: 2190130
+Translate: Daurian redstart (Phoenicurus auroreus)
+MiscInfo: uk"
+207422,WORD_NOUN,,KATAKANA,,,-,ハゴロモムシクイ,,hagoromo mushikui,lasówka szkarłatna,"gatunek ptaka z rodziny lasówek, Setophaga ruticilla",,,"GroupId: 2190140
+Translate: American redstart (Setophaga ruticilla)
+MiscInfo: uk"
+207423,WORD_NOUN,,HIRAGANA,,,ふるい絹,ふるいぎぬ,,furui ginu,gaza młynarska,,,,"GroupId: 2827872
+Translate: bolting cloth"
+207424,WORD_NOUN,,HIRAGANA,,,心身一如,しんじんいちにょ,,shinjin' ichinyo,"ciało i umysł jako jedność
+jedność umysł-ciało",,,DUPLICATE 207389,"GroupId: 2040490
+Translate: body and mind as one
+MiscInfo: yoji
+Translate: mind-body unity
+MiscInfo: yoji"
+207425,WORD_NOUN,,HIRAGANA,,,身心一如,しんしんいちにょ,,shinshin' ichinyo,"ciało i umysł jako jedność
+jedność umysł-ciało",,,DUPLICATE 207426,"GroupId: 2040490
+Translate: body and mind as one
+MiscInfo: yoji
+Translate: mind-body unity
+MiscInfo: yoji"
+207426,WORD_NOUN,,HIRAGANA,,,身心一如,しんじんいちにょ,,shinjin' ichinyo,"ciało i umysł jako jedność
+jedność umysł-ciało",,,DUPLICATE 207425,"GroupId: 2040490
+Translate: body and mind as one
+MiscInfo: yoji
+Translate: mind-body unity
+MiscInfo: yoji"
+207427,WORD_NOUN,,KATAKANA_HIRAGANA,,,普アル茶,プーアルちゃ,,puu aru cha,herbata Pu'er,,,,"GroupId: 2064350
+Translate: Pu'er tea
+Translate: Pu-erh tea"
+207428,WORD_NOUN,,KATAKANA_HIRAGANA,,,普洱茶,プーアルちゃ,,puu aru cha,herbata Pu'er,,,,"GroupId: 2064350
+Translate: Pu'er tea
+Translate: Pu-erh tea"
+207429,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,言葉を捩る,ことばをもじる,,kotoba o mojiru,uprawiać grę słów,,,,"GroupId: 2553130
+Translate: to make a pun on a word"
