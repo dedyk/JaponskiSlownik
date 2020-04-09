@@ -30804,7 +30804,7 @@ Translate: sickle cell disease
 Translate: sickle cell anemia (anaemia)"
 207433,WORD_NOUN,,HIRAGANA,,,学習機能,がくしゅうきのう,,gakushuu kinou,funkcja uczenia się,,,,"GroupId: 2346870
 Translate: learning function"
-207434,WORD_EXPRESSION,,HIRAGANA,,,もう一踏ん張り,もうひとふんばり,,mou hitofun bari,???,,,,"GroupId: 2128500
+207434,WORD_EXPRESSION,,HIRAGANA,,,もう一踏ん張り,もうひとふんばり,,mou hito funbari,???,,,,"GroupId: 2128500
 Translate: holding out a little longer"
 207435,WORD_NOUN,,HIRAGANA,,,族滅,ぞくめつ,,zokumetsu,uśmiercanie całej rodziny,,,,"GroupId: 1890450
 Translate: putting an entire family to death"
@@ -30820,7 +30820,7 @@ Translate: hydroxyl group (radical)"
 Translate: made-to-order production
 Translate: job order production
 Translate: production to order"
-207440,WORD_NOUN,,HIRAGANA,,,長亀,おさがめ,,osagame,żółw skórzasty,"gatunek gada z podrzędu żółwi skrytoszyjnych, jedyny współcześnie żyjący przedstawiciel rodziny żółwi skórzastych, Dermochelys coriacea",,,"GroupId: 2525790
+207440,WORD_NOUN,,HIRAGANA,,,長亀,おさがめ,,osa game,żółw skórzasty,"gatunek gada z podrzędu żółwi skrytoszyjnych, jedyny współcześnie żyjący przedstawiciel rodziny żółwi skórzastych, Dermochelys coriacea",,,"GroupId: 2525790
 Translate: leatherback turtle (Dermochelys coriacea)
 MiscInfo: uk"
 207441,WORD_NOUN,,HIRAGANA,,,泡箱,あわばこ,,awabako,komora pęcherzykowa,"urządzenie służące do obserwacji śladów cząstek elementarnych zaprojektowane w roku 1952 przez Donalda Glasera, za co został uhonorowany w 1960 Nagrodą Nobla w dziedzinie fizyki",,,"GroupId: 1954720
@@ -30951,7 +30951,7 @@ Translate: rude person
 Translate: insolent person"
 207472,WORD_NOUN,,KATAKANA,,,-,ネビュラ,,nebyura,mgławica,ang: nebula,,,"GroupId: 2471270
 Translate: nebula"
-207473,WORD_NOUN,,HIRAGANA,,,磯遊び,いそあそび,,isoasobi,"zbieranie skorupiaków, krabów itp. na brzegu morza",,,,"GroupId: 2776670
+207473,WORD_NOUN,,HIRAGANA,,,磯遊び,いそあそび,,iso asobi,"zbieranie skorupiaków, krabów itp. na brzegu morza",,,,"GroupId: 2776670
 Translate: gathering shellfish, crabs, etc. on the seashore"
 207474,WORD_NOUN,,HIRAGANA,,,種紙,たねがみ,,tanegami,karta z greną (zapłodnione i złożone jaja motyla jedwabnika),,,,"GroupId: 1686620
 Translate: silkworm egg card"
@@ -31016,54 +31016,39 @@ Translate: strong or bitter (green) tea"
 Translate: the death of a scholar
 MiscInfo: hon
 MiscInfo: obsc"
-207486,"WORD_VERB_AUX
-WORD_CONJUNCTION
-WORD_AUX
-WORD_SUFFIX",,HIRAGANA,,,可く,べく,,beku,"w celu
-dla (jakiegoś) celu
-musieć
-powinien",,,,"GroupId: 2130360
-Translate: in order to
-MiscInfo: uk
-Translate: for the purpose of
-MiscInfo: uk
-Translate: must
-MiscInfo: uk
-Translate: should
-MiscInfo: uk"
-207487,WORD_NOUN,,HIRAGANA,,,鼓楼,ころう,,korou,wieża świątynna z bębnem do oznaczania upływu czasu,,,,"GroupId: 2843934
+207486,WORD_NOUN,,HIRAGANA,,,鼓楼,ころう,,korou,wieża świątynna z bębnem do oznaczania upływu czasu,,,DUPLICATE 207520,"GroupId: 2843934
 Translate: temple tower housing a drum for marking the passing of time"
-207488,WORD_NOUN,,HIRAGANA,,,血汗,けっかん,,kekkan,"krew, pot i łzy
+207487,WORD_NOUN,,HIRAGANA,,,血汗,けっかん,,kekkan,"krew, pot i łzy
 pot krwi",,,,"GroupId: 2843994
 Translate: blood, sweat and tears
 Translate: sweat of blood"
-207489,WORD_NOUN,,HIRAGANA,,,霊示,れいじ,,reiji,objawienie,"przez Boga, ducha i etc",,,"GroupId: 2843912
+207488,WORD_NOUN,,HIRAGANA,,,霊示,れいじ,,reiji,objawienie,"przez Boga, ducha i etc",,,"GroupId: 2843912
 Translate: revelation (by God, spirits, etc.)"
-207490,WORD_NOUN,,HIRAGANA,,,小孔,しょうこう,,shoukou,"stomia (medycyna)
+207489,WORD_NOUN,,HIRAGANA,,,小孔,しょうこう,,shoukou,"stomia (medycyna)
 ostiola (biologia)",,,,"GroupId: 2843766
 Translate: stoma
 Translate: ostiole"
-207491,WORD_NOUN,,HIRAGANA,,,韶光,しょうこう,,shoukou,"piękny wiosenny krajobraz
+207490,WORD_NOUN,,HIRAGANA,,,韶光,しょうこう,,shoukou,"piękny wiosenny krajobraz
 spokojna wiosenna sceneria",archaizm,,,"GroupId: 2843868
 Translate: beautiful spring scenery
 MiscInfo: arch
 Translate: tranquil spring scenery
 MiscInfo: arch"
-207492,WORD_NOUN,,HIRAGANA,,,須佐之男命,すさのおのみこと,,susanoo no mikoto,Susanoo-no-Mikoto,"bóstwo, młodszy brat Amaterasu",,,"GroupId: 2843785
+207491,WORD_NOUN,,HIRAGANA,,,須佐之男命,すさのおのみこと,,susanoo no mikoto,Susanoo-no-Mikoto,"bóstwo, młodszy brat Amaterasu",,,"GroupId: 2843785
 Translate: Susanoo-no-Mikoto (deity, younger brother to Amaterasu)"
-207493,WORD_NOUN,,HIRAGANA,,,外出自粛,がいしゅつじじゅく,,gaishutsu jijuku,"powstrzymanie się od wyjścia na zewnątrz
+207492,WORD_NOUN,,HIRAGANA,,,外出自粛,がいしゅつじじゅく,,gaishutsu jijuku,"powstrzymanie się od wyjścia na zewnątrz
 pozostanie w domu",,,,"GroupId: 2843864
 Translate: refraining from going outside
 Translate: staying indoors"
-207494,"WORD_ADVERB_TO
+207493,"WORD_ADVERB_TO
 WORD_ADJECTIVE_TARU",,HIRAGANA,,,閣閣,かくかく,,kakukaku,rechotanie (żaby),"mało znane słowo, literacki lub formalny termin",,,"GroupId: 2843831
 Translate: (frogs) croaking
 MiscInfo: obsc
 MiscInfo: lit"
-207495,WORD_NOUN,,HIRAGANA,,,新馬,あらうま,,arauma,"roczniak (o zwierzęciu)
+207494,WORD_NOUN,,HIRAGANA,,,新馬,あらうま,,arauma,"roczniak (o zwierzęciu)
 jednoroczny koń
 pierwsza miesiączka
-podpaska higieniczna stosowana podczas pierwszej miesiączki",archaizm,,,"GroupId: 2843866
+podpaska higieniczna stosowana podczas pierwszej miesiączki",archaizm,,DUPLICATE 207495,"GroupId: 2843866
 Translate: yearling
 MiscInfo: arch
 Translate: one-year-old horse
@@ -31072,21 +31057,122 @@ Translate: first menstruation
 MiscInfo: arch
 Translate: sanitary napkin used during first menstruation
 MiscInfo: arch"
-207496,WORD_NOUN,,HIRAGANA,,,新馬,しんば,,shinba,"nowy koń (np. w końskich wyścigach)
-niepokonany koń",,,,"GroupId: 2843867
+207495,WORD_NOUN,,HIRAGANA,,,新馬,しんば,,shinba,"nowy koń (np. w końskich wyścigach)
+niepokonany koń",,,DUPLICATE 207494,"GroupId: 2843867
 Translate: new horse (in horse racing, etc.)
 Translate: unbroken horse
 Translate: remount"
-207497,WORD_NOUN,,HIRAGANA,,,高盛り,たかもり,,takamori,"porcja jedzenia ułożona wysoko
+207496,WORD_NOUN,,HIRAGANA,,,高盛り,たかもり,,takamori,"porcja jedzenia ułożona wysoko
 duża porcja",,,,"GroupId: 2843882
 Translate: serving (of food) piled high
 Translate: large serving"
-207498,WORD_NOUN,,HIRAGANA,,,通勤客,つうきんきゃく,,tsuukinkyaku,"dojeżdżający (np. do pracy)
+207497,WORD_NOUN,,HIRAGANA,,,通勤客,つうきんきゃく,,tsuukinkyaku,"dojeżdżający (np. do pracy)
 pasażer posiadający bilet okresowy",,,,"GroupId: 2843904
 Translate: commuter
 Translate: season-ticket passenger"
-207499,WORD_NOUN,,HIRAGANA,,,南京錠,なんきんじょう,,nankinjou,kłódka,,,,"GroupId: 1460100
-Translate: padlock"
-207500,WORD_ADJECTIVE_NO,,HIRAGANA,,,-,ゆるふわ,,yurufuwa,miękkie i puszyste,"np. włosy, slang",,,"GroupId: 2843813
+207498,WORD_ADJECTIVE_NO,,HIRAGANA,,,-,ゆるふわ,,yurufuwa,miękkie i puszyste,"np. włosy, slang",,,"GroupId: 2843813
 Translate: soft and fluffy (e.g. hair)
 MiscInfo: sl"
+207499,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ユキホオジロ,,yukihoojiro,"śnieguła
+śnieguła zwyczajna","gatunek małego ptaka wędrownego z rodziny poświerek, Plectrophenax nivalis",,,"GroupId: 2606370
+Translate: snow bunting (Plectrophenax nivalis)
+MiscInfo: uk"
+207500,WORD_ADJECTIVE_NO,,KATAKANA_HIRAGANA,,,-,イバラだらけ,,ibaradarake,"ciernisty
+kolczasty
+???",,,,"GroupId: 2761450
+Translate: thorny
+Translate: miserable"
+207501,WORD_EXPRESSION,,HIRAGANA,,,もうひと踏ん張り,もうひとふんばり,,mou hito funbari,???,,,,"GroupId: 2128500
+Translate: holding out a little longer"
+207502,WORD_NOUN,,HIRAGANA,,,革亀,おさがめ,,osa game,żółw skórzasty,"gatunek gada z podrzędu żółwi skrytoszyjnych, jedyny współcześnie żyjący przedstawiciel rodziny żółwi skórzastych, Dermochelys coriacea",,DUPLICATE 207503,"GroupId: 2525790
+Translate: leatherback turtle (Dermochelys coriacea)
+MiscInfo: uk"
+207503,WORD_NOUN,,HIRAGANA,,,革亀,かわがめ,,kawa game,żółw skórzasty,"gatunek gada z podrzędu żółwi skrytoszyjnych, jedyny współcześnie żyjący przedstawiciel rodziny żółwi skórzastych, Dermochelys coriacea",,DUPLICATE 207502,"GroupId: 2525790
+Translate: leatherback turtle (Dermochelys coriacea)
+MiscInfo: uk"
+207504,WORD_NOUN,,KATAKANA,,,-,オサガメ,,osa game,żółw skórzasty,"gatunek gada z podrzędu żółwi skrytoszyjnych, jedyny współcześnie żyjący przedstawiciel rodziny żółwi skórzastych, Dermochelys coriacea",,,"GroupId: 2525790
+Translate: leatherback turtle (Dermochelys coriacea)
+MiscInfo: uk"
+207505,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオバタン,,oobatan,kakadu molucka,"gatunek ptaka z rodziny kakaduowatych występujący w Indonezji w południowych Molukach, szczególnie na wyspie Seram, Cacatua moluccensis",,,"GroupId: 2447070
+Translate: Moluccan cockatoo (Cacatua moluccensis)
+MiscInfo: uk
+Translate: salmon-crested cockatoo
+MiscInfo: uk"
+207506,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,エッチュウバイ,,ecchuubai,Buccinum striatissimum,,,,"GroupId: 2605190
+Translate: finely-striate buccinum (species of whelk, Buccinum striatissimum)
+MiscInfo: uk"
+207507,WORD_NOUN,,HIRAGANA,,,其者,それしゃ,,soresha,"ekspert
+gejsza
+prostytutka",,,,"GroupId: 2600510
+Translate: expert
+Translate: geisha
+Translate: prostitute"
+207508,WORD_NOUN,,KATAKANA,,,-,ゲンゴロウブナ,,gengo roubuna,carassius cuvieri,gatunek karpia,,,"GroupId: 2635850
+Translate: Japanese crucian carp (Carassius cuvieri)
+MiscInfo: uk
+Translate: white crucian carp
+MiscInfo: uk"
+207509,WORD_NOUN,,KATAKANA,,,-,セグロカモメ,,segurokamome,mewa srebrzysta,"gatunek dużego ptaka wodnego z rodziny mewowatych, Larus argentatus",,,"GroupId: 2190160
+Translate: herring gull (Larus argentatus)
+MiscInfo: uk"
+207510,WORD_NOUN,,HIRAGANA,,,田鴫,たしぎ,,tashigi,"bekas kszyk
+kszyk
+bekas baranek","gatunek średniego ptaka wędrownego z rodziny bekasowatych, Gallinago gallinago",,,"GroupId: 2190250
+Translate: common snipe (Gallinago gallinago)
+MiscInfo: uk"
+207511,WORD_NOUN,,KATAKANA,,,-,タシギ,,tashigi,"bekas kszyk
+kszyk
+bekas baranek","gatunek średniego ptaka wędrownego z rodziny bekasowatych, Gallinago gallinago",,,"GroupId: 2190250
+Translate: common snipe (Gallinago gallinago)
+MiscInfo: uk"
+207512,WORD_NOUN,,KATAKANA,,,-,フエコチドリ,,fueko chidori,sieweczka blada,"gatunek ptaka z rodziny sieweczkowatych, Charadrius melodus",,,"GroupId: 2190390
+Translate: piping plover (Charadrius melodus)
+MiscInfo: uk"
+207513,WORD_NOUN,,KATAKANA,,,-,ヤマシギ,,yamashigi,"słonka zwyczajna
+słonka","gatunek średniego ptaka wędrownego z rodziny bekasowatych, Scolopax rusticola",,,"GroupId: 2190480
+Translate: Eurasian woodcock (Scolopax rusticola)
+MiscInfo: uk"
+207514,WORD_NOUN,,KATAKANA,,,-,コマツグミ,,komatsugumi,drozd wędrowny,"gatunek ptaka z rodziny drozdowatych, Turdus migratorius",,,"GroupId: 2190510
+Translate: American robin (Turdus migratorius)
+MiscInfo: uk"
+207515,WORD_NOUN,,HIRAGANA,,,燃えがら,もえがら,,moe gara,"żarzące się węgle
+zgliszcza
+żarzące się resztki ognia
+spalone resztki",,,,"GroupId: 1641900
+Translate: embers
+Translate: cinders
+Translate: burnt residue
+Translate: combustion residue"
+207516,WORD_NOUN,,HIRAGANA,,,磯あそび,いそあそび,,iso asobi,"zbieranie skorupiaków, krabów itp. na brzegu morza",,,,"GroupId: 2776670
+Translate: gathering shellfish, crabs, etc. on the seashore"
+207517,WORD_NOUN,,HIRAGANA,,,４月馬鹿,しがつばか,,shigatsu baka,prima aprilis,,,,"GroupId: 1767020
+Translate: April fool"
+207518,WORD_NOUN,,KATAKANA,,,-,ヒモパン,,himo pan,"string bikini
+stringi typu ""G""
+stringi",skrót,,,"GroupId: 2395520
+Translate: string bikini
+MiscInfo: abbr
+Translate: g-string
+MiscInfo: abbr
+Translate: thong
+MiscInfo: abbr"
+207519,WORD_NOUN,,KATAKANA,,,-,ペンシル・ケース,,penshiru keesu,piórnik,ang: pencil case,,,"GroupId: 2832917
+Translate: pencil case"
+207520,WORD_NOUN,,HIRAGANA,,,鼓楼,くろう,,kurou,wieża świątynna z bębnem do oznaczania upływu czasu,,,DUPLICATE 207486,"GroupId: 2843934
+Translate: temple tower housing a drum for marking the passing of time"
+207521,WORD_NOUN,,HIRAGANA,,,素戔嗚尊,すさのおのみこと,,susanoo no mikoto,Susanoo-no-Mikoto,"bóstwo, młodszy brat Amaterasu",,,"GroupId: 2843785
+Translate: Susanoo-no-Mikoto (deity, younger brother to Amaterasu)"
+207522,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,スサノオノミコト,,susanoo no mikoto,Susanoo-no-Mikoto,"bóstwo, młodszy brat Amaterasu",,,"GroupId: 2843785
+Translate: Susanoo-no-Mikoto (deity, younger brother to Amaterasu)"
+207523,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,スサノヲノミコト,,susanowo no mikoto,Susanoo-no-Mikoto,"bóstwo, młodszy brat Amaterasu",,,"GroupId: 2843785
+Translate: Susanoo-no-Mikoto (deity, younger brother to Amaterasu)"
+207524,WORD_NOUN,,HIRAGANA,,,高もり,たかもり,,takamori,"porcja jedzenia ułożona wysoko
+duża porcja",,,,"GroupId: 2843882
+Translate: serving (of food) piled high
+Translate: large serving"
+207525,WORD_NOUN,,HIRAGANA,,,高盛,たかもり,,takamori,"porcja jedzenia ułożona wysoko
+duża porcja",,,,"GroupId: 2843882
+Translate: serving (of food) piled high
+Translate: large serving"
+207526,WORD_NOUN,,KATAKANA_HIRAGANA,,,ナンキン錠,ナンキンじょう,,nankin jou,kłódka,,,,"GroupId: 1460100
+Translate: padlock"
