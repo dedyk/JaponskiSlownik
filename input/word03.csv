@@ -25268,8 +25268,15 @@ chwilowy ulewny deszcz",,,"DUPLICATE 38450
 DUPLICATE 38508","GroupId: 1576430
 Translate: passing shower
 Translate: streaks of pouring rain"
-206029,WORD_NOUN,,HIRAGANA,,,大徳,たいとく,,taitoku,"prawy kapłan
-kapłan",,,DUPLICATE 52087,
+206029,WORD_NOUN,,HIRAGANA,,,大徳,たいとく,,taitoku,"wielka cnota
+cnotliwy kapłan
+duchowny
+bogata osoba",,,"DUPLICATE 52087
+DUPLICATE 207645","GroupId: 1414720
+Translate: great virtue
+Translate: virtuous priest
+Translate: priest
+Translate: rich person"
 206030,WORD_NOUN,,HIRAGANA,,,誹譏,ひき,,hiki,"zniesławienie
 oszczerstwo
 paszkwil",,,,
@@ -31500,7 +31507,8 @@ Translate: executive positions in the civil service"
 207606,WORD_NOUN,,HIRAGANA,,,電気溶接,でんきようせつ,,denki yousetsu,spawanie elektryczne,,,,"GroupId: 1765830
 Translate: electric welding"
 207607,WORD_NOUN,,HIRAGANA,,,貰い乳,もらいぢち,,morai dichi,"sprawowanie opieki nad dzieckiem przez inną kobietę
-mleko z piersi uzyskane z innej kobiety",,,,"GroupId: 2267060
+mleko z piersi uzyskane z innej kobiety",,,"DUPLICATE 207660
+DUPLICATE 207661","GroupId: 2267060
 Translate: having one's baby nursed by another woman
 Translate: wet-nursing
 Translate: breast milk received from another woman"
@@ -31560,7 +31568,7 @@ MiscInfo: uk"
 207627,WORD_NOUN,,HIRAGANA,,,飛騨山椒魚,ひださんしょううお,,hida sanshouuo,Hynobius kimurae,płaz,,,"GroupId: 2192760
 Translate: Hida salamander (Hynobius kimurae)
 MiscInfo: uk"
-207628,WORD_NOUN,,HIRAGANA,,,臭鼠,においねずみ,,nioinezumi,"piżmak amerykański
+207628,WORD_NOUN,,HIRAGANA,,,臭鼠,においねずみ,,nioi nezumi,"piżmak amerykański
 piżmak
 piżmoszczur
 szczur piżmowy","gatunek ziemno-wodnego gryzonia z podrodziny karczowników w rodzinie chomikowatych, Ondatra zibethicus",,,"GroupId: 2194330
@@ -31599,7 +31607,7 @@ Translate: sounding someone out
 Translate: putting out a feeler
 Translate: testing the waters
 Translate: small jackpot (esp. pachinko)"
-207638,WORD_NOUN,,KATAKANA,,,Ｓｃａｌａ,スカラ,,sukara,Scala,język programowania,,,"GroupId: 2843954
+207638,WORD_NOUN,,KATAKANA,,,Ｓｃａｌａ,スカラ,,sukara,Scala,język programowania,,DUPLICATE 207681,"GroupId: 2843954
 Translate: Scala (programming language)"
 207639,WORD_NOUN,,HIRAGANA,,,択伐,たくばつ,,takubatsu,"selekcja cięcia (drzew)
 selekcyjne cięcie (drzew)",,,,"GroupId: 2843948
@@ -31622,12 +31630,13 @@ Translate: benjamin fig (Ficus benjamina)
 Translate: weeping fig
 Translate: ficus"
 207644,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,三国無双,さんごくぶそう,,sangoku busou,"niezrównany w Japonii, Chinach i Indiach",archaizm,,,"GroupId: 2843870
+WORD_ADJECTIVE_NO",,HIRAGANA,,,三国無双,さんごくぶそう,,sangoku busou,"niezrównany w Japonii, Chinach i Indiach",archaizm,,DUPLICATE 207682,"GroupId: 2843870
 Translate: unparalleled in Japan and China and India (unparallelled)
 MiscInfo: yoji
 MiscInfo: arch"
 207645,WORD_NOUN,,HIRAGANA,,,大徳,だいとこ,,daitoko,"cnotliwy kapłan
-duchowny",archaizm,,,"GroupId: 2843733
+duchowny",archaizm,,"DUPLICATE 52087
+DUPLICATE 206029","GroupId: 2843733
 Translate: virtuous priest
 MiscInfo: arch
 Translate: priest
@@ -31674,9 +31683,95 @@ Translate: rear tenement"
 207657,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,耳が肥えている,みみがこえている,,mimi ga koete iru,mieć ucho do muzyki,,,,"GroupId: 1604700
 Translate: to have an ear for music"
-207658,WORD_VERB_U,,HIRAGANA,,,行き悩む,ゆきなやむ,,yuki nayamu,osiągnąć impas,,,,"GroupId: 1686040
+207658,WORD_VERB_U,,HIRAGANA,,,行き悩む,ゆきなやむ,,yuki nayamu,osiągnąć impas,,,DUPLICATE 207683,"GroupId: 1686040
 Translate: to reach an impasse or deadlock"
 207659,WORD_NOUN,,HIRAGANA,,,仲介貿易,ちゅうかいぼうえき,,chuukai boueki,"handel pośredniczący
 handel prowadzony przez agencję",,,,"GroupId: 1695930
 Translate: intermediary trade
 Translate: trade conducted via an agency"
+207660,WORD_NOUN,,HIRAGANA,,,貰い乳,もらいちち,,morai chichi,"sprawowanie opieki nad dzieckiem przez inną kobietę
+mleko z piersi uzyskane z innej kobiety",,,"DUPLICATE 207607
+DUPLICATE 207661","GroupId: 2267060
+Translate: having one's baby nursed by another woman
+Translate: wet-nursing
+Translate: breast milk received from another woman"
+207661,WORD_NOUN,,HIRAGANA,,,貰い乳,もらいぢ,,morai di,"sprawowanie opieki nad dzieckiem przez inną kobietę
+mleko z piersi uzyskane z innej kobiety",,,"DUPLICATE 207607
+DUPLICATE 207660","GroupId: 2267060
+Translate: having one's baby nursed by another woman
+Translate: wet-nursing
+Translate: breast milk received from another woman"
+207662,WORD_VERB_RU,,HIRAGANA,,,寄せかける,よせかける,,yose kakeru,opieranie się o,,,,"GroupId: 1849630
+Translate: to rest or lean against"
+207663,WORD_ADJECTIVE_NO,,KATAKANA,,,-,ロイヤリティフリー,,roiyariti furii,"royalty-free
+wolne od tantiem","model licencjonowania różnych form własności intelektualnej, takich jak patenty, znaki towarowe, prawa autorskie, który polega na tym, że licencjobiorca płaci jednorazową opłatę licencjodawcy po czym zyskuje prawo do wielokrotnego, dowolnego użycia własności intelektualnej, bez konieczności wnoszenia kolejnych opłat",,,"GroupId: 2826968
+Translate: royalty-free"
+207664,WORD_ADJECTIVE_NO,,KATAKANA,,,-,ロイヤルティフリー,,roiyaruti furii,"royalty-free
+wolne od tantiem","model licencjonowania różnych form własności intelektualnej, takich jak patenty, znaki towarowe, prawa autorskie, który polega na tym, że licencjobiorca płaci jednorazową opłatę licencjodawcy po czym zyskuje prawo do wielokrotnego, dowolnego użycia własności intelektualnej, bez konieczności wnoszenia kolejnych opłat",,,"GroupId: 2826968
+Translate: royalty-free"
+207665,WORD_ADJECTIVE_NO,,KATAKANA,,,-,ロイヤルティーフリー,,roiyarutii furii,"royalty-free
+wolne od tantiem","model licencjonowania różnych form własności intelektualnej, takich jak patenty, znaki towarowe, prawa autorskie, który polega na tym, że licencjobiorca płaci jednorazową opłatę licencjodawcy po czym zyskuje prawo do wielokrotnego, dowolnego użycia własności intelektualnej, bez konieczności wnoszenia kolejnych opłat",,,"GroupId: 2826968
+Translate: royalty-free"
+207666,WORD_NOUN,,KATAKANA,,,-,ミツデカエデ,,mitsudekaede,"klon winnolistny
+klon cissolistny","gatunek z rodziny mydleńcowatych, Acer cissifolium",,,"GroupId: 2066950
+Translate: ivy-leaved maple (Acer cissifolium)
+MiscInfo: uk"
+207667,WORD_NOUN,,HIRAGANA,,,資産買入,しさんかいいれ,,shisan kaiire,zakup aktywów,,,,"GroupId: 2665170
+Translate: asset purchase"
+207668,WORD_NOUN,,KATAKANA,,,-,スカベンジャ,,sukabenja,???,ang: scavenger,,,"GroupId: 2830269
+Translate: scavenger"
+207669,WORD_NOUN,,KATAKANA,,,-,スキャベンジャー,,sukyabenjaa,???,ang: scavenger,,,"GroupId: 2830269
+Translate: scavenger"
+207670,WORD_NOUN,,KATAKANA,,,-,スキャベンジャ,,sukyabenja,???,ang: scavenger,,,"GroupId: 2830269
+Translate: scavenger"
+207671,WORD_NOUN,,KATAKANA,,,-,システム・コンポーネント,,shisutemu konpoonento,"system komponentów audio
+system komponentów stereo",ang: system component,,,"GroupId: 2842996
+Translate: audio component system
+Translate: stereo component system"
+207672,WORD_VERB_U,,HIRAGANA,,,相哀れむ,あいあわれむ,,aiawaremu,współczuć,,,,"GroupId: 2841163
+Translate: to pity (one another)
+Translate: to commiserate"
+207673,WORD_NOUN,,KATAKANA,,,-,オニカマス,,onikamasu,"barrakuda wielka
+barakuda wielka","gatunek dużej i drapieżnej, szeroko rozprzestrzenionej ryby morskiej z rodziny barrakudowatych, Sphyraena barracuda",,,"GroupId: 2192180
+Translate: great barracuda (Sphyraena barracuda)
+MiscInfo: uk"
+207674,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヒダサンショウウオ,,hida sanshouuo,Hynobius kimurae,płaz,,,"GroupId: 2192760
+Translate: Hida salamander (Hynobius kimurae)
+MiscInfo: uk"
+207675,WORD_NOUN,,KATAKANA,,,-,ニオイネズミ,,nioi nezumi,"piżmak amerykański
+piżmak
+piżmoszczur
+szczur piżmowy","gatunek ziemno-wodnego gryzonia z podrodziny karczowników w rodzinie chomikowatych, Ondatra zibethicus",,,"GroupId: 2194330
+Translate: muskrat (Ondatra zibethicus)
+MiscInfo: uk"
+207676,WORD_NOUN,,KATAKANA,,,-,ポンデローサマツ,,ponderoosa matsu,sosna żółta,"gatunek drzewa iglastego z rodziny sosnowatych, Pinus ponderosa",,,"GroupId: 2194660
+Translate: ponderosa pine (Pinus ponderosa)
+MiscInfo: uk"
+207677,WORD_NOUN,,KATAKANA,,,-,ヤマトゴキブリ,,yamato gokiburi,karaluch japoński,Periplaneta japonica,,,"GroupId: 2195530
+Translate: Japanese cockroach (Periplaneta japonica)
+MiscInfo: uk"
+207678,WORD_NOUN,,HIRAGANA,,,こん包材,こんぽうざい,,konpouzai,materiał opakowania,"np. pudełka, izolacja, opakowanie przeciwwstrząsowe i etc",,,"GroupId: 2077220
+Translate: packing material (boxes, insulation, shock resistance, etc.)"
+207679,WORD_NOUN,,HIRAGANA,,,お祖母ちゃん子,おばあちゃんこ,,obaachanko,"dziecko, które kocha swoją babcię
+dziecko, który zachwyca się babcia",,,,"GroupId: 2843814
+Translate: child who loves their grandmother
+Translate: child who is doted on by their grandmother"
+207680,WORD_NOUN,,HIRAGANA,,,小当り,こあたり,,koatari,"???
+mały jackpot (szczególnie w pachinko)",,,,"GroupId: 2843847
+Translate: sounding someone out
+Translate: putting out a feeler
+Translate: testing the waters
+Translate: small jackpot (esp. pachinko)"
+207681,WORD_NOUN,,KATAKANA,,,Ｓｃａｌａ,スケーラ,,sukeera,Scala,język programowania,,DUPLICATE 207638,"GroupId: 2843954
+Translate: Scala (programming language)"
+207682,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,三国無双,さんごくむそう,,sangoku musou,"niezrównany w Japonii, Chinach i Indiach",archaizm,,DUPLICATE 207644,"GroupId: 2843870
+Translate: unparalleled in Japan and China and India (unparallelled)
+MiscInfo: yoji
+MiscInfo: arch"
+207683,WORD_VERB_U,,HIRAGANA,,,行き悩む,いきなやむ,,iki nayamu,osiągnąć impas,,,DUPLICATE 207658,"GroupId: 1686040
+Translate: to reach an impasse or deadlock"
+207684,WORD_VERB_U,,HIRAGANA,,,行悩む,ゆきなやむ,,yuki nayamu,osiągnąć impas,,,DUPLICATE 207685,"GroupId: 1686040
+Translate: to reach an impasse or deadlock"
+207685,WORD_VERB_U,,HIRAGANA,,,行悩む,いきなやむ,,iki nayamu,osiągnąć impas,,,DUPLICATE 207684,"GroupId: 1686040
+Translate: to reach an impasse or deadlock"
