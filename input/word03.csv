@@ -32088,7 +32088,7 @@ Translate: prisoner under trial"
 207777,WORD_NOUN,,HIRAGANA,,,事実調査,じじつちょうさ,,jijitsu chousa,ustalanie faktów,,,,"GroupId: 1313980
 Translate: fact-finding"
 207778,WORD_NOUN,,HIRAGANA,,,中継貿易,なかつぎぼうえき,,nakatsugi boueki,"handel tranzytowy
-handel entrepôt",,,,"GroupId: 1695910
+handel entrepôt",,,DUPLICATE 207824,"GroupId: 1695910
 Translate: transit trade
 Translate: entrepôt trade"
 207779,WORD_NOUN,,KATAKANA_HIRAGANA,,,ヨーロッパ胸黒,ヨーロッパむなぐろ,,yooroppa munaguro,siewka złota,"gatunek średniej wielkości ptaka z rodziny sieweczkowatych, Pluvialis apricaria",,,"GroupId: 2190380
@@ -32234,3 +32234,61 @@ WORD_EXPRESSION",,HIRAGANA,,,議席を失う,ぎせきをうしなう,,giseki o 
 Translate: to lose a seat (in an election)"
 207823,WORD_NOUN,,HIRAGANA,,,高齢運転者標識,こうれいうんてんしゃひょうしき,,kourei untensha hyoushiki,symbol wskazujący starszego kierowcę,umieszczany na samochodzie,,,"GroupId: 2589360
 Translate: sign that indicates an older driver"
+207824,WORD_NOUN,,HIRAGANA,,,中継貿易,ちゅうけいぼうえき,,chuukei boueki,"handel tranzytowy
+handel entrepôt",,,DUPLICATE 207778,"GroupId: 1695910
+Translate: transit trade
+Translate: entrepôt trade"
+207825,WORD_NOUN,,HIRAGANA,,,中継ぎ貿易,なかつぎぼうえき,,nakatsugi boueki,"handel tranzytowy
+handel entrepôt",,,,"GroupId: 1695910
+Translate: transit trade
+Translate: entrepôt trade"
+207826,WORD_NOUN,,HIRAGANA,,,仲継貿易,なかつぎぼうえき,,nakatsugi boueki,"handel tranzytowy
+handel entrepôt",,,,"GroupId: 1695910
+Translate: transit trade
+Translate: entrepôt trade"
+207827,WORD_NOUN,,KATAKANA,,,-,ヨーロッパムナグロ,,yooroppa munaguro,siewka złota,"gatunek średniej wielkości ptaka z rodziny sieweczkowatych, Pluvialis apricaria",,,"GroupId: 2190380
+Translate: Eurasian golden plover (Pluvialis apricaria)
+MiscInfo: uk"
+207828,WORD_NOUN,,KATAKANA,,,-,ドラマ・クイーン,,dorama kuiin,"królowa dramatów
+histeryczka",ang: drama queen,,,"GroupId: 2830066
+Translate: drama queen"
+207829,WORD_NOUN,,KATAKANA,,,-,キタカワヒメマス,,kitakawa himemasu,Thymallus arcticus,gatunek ryby,,,"GroupId: 2667410
+Translate: Arctic grayling (Thymallus arcticus)
+MiscInfo: uk"
+207830,WORD_NOUN,,KATAKANA,,,-,シロモミ,,shiromomi,"jodła kalifornijska
+jodła jednobarwna","gatunek drzewa należący do rodziny sosnowatych, Abies concolor",,,"GroupId: 2197070
+Translate: white fir (Abies concolor)
+MiscInfo: uk"
+207831,WORD_NOUN,,KATAKANA,,,-,ゴシキノジコ,,goshikinojiko,"łuszczyk wielobarwny
+łuszcz papieski","gatunek małego ptaka z rodziny kardynałów, Passerina ciris",,,"GroupId: 2197770
+Translate: painted bunting (Passerina ciris)
+MiscInfo: uk"
+207832,WORD_NOUN,,KATAKANA,,,-,マツノキヒワ,,matsunokihiwa,czyż sosnowy,"gatunek małego ptaka z rodziny łuszczakowatych, Carduelis pinus, Spinus pinus",,,"GroupId: 2198880
+Translate: pine siskin (Carduelis pinus)
+MiscInfo: uk"
+207833,WORD_NOUN,,KATAKANA,,,-,アオカワラヒワ,,aokawa rahiwa,"dzwoniec zwyczajny
+dzwoniec","gatunek małego ptaka z rodziny łuszczakowatych, Carduelis chloris",,,"GroupId: 2198890
+Translate: European greenfinch (Carduelis chloris)
+MiscInfo: uk"
+207834,WORD_NOUN,,KATAKANA,,,-,ベニヒワ,,benihiwa,"czeczotka zwyczajna
+czeczotka","gatunek niewielkiego ptaka wędrownego z rodziny łuszczakowatych, Carduelis flammea",,,"GroupId: 2198940
+Translate: common redpoll (Carduelis flammea)
+MiscInfo: uk"
+207835,WORD_NOUN,,HIRAGANA,,,姐や,ねえや,,neeya,młoda dama,"w odniesieniu do panny, poufały język",,,"GroupId: 2454370
+Translate: young lady (in ref. to a maid, etc.)
+MiscInfo: uk
+MiscInfo: fam"
+207836,WORD_NOUN,,HIRAGANA,,,たし湯,たしゆ,,tashi yu,dodawanie więcej wody (do wanny),,,,"GroupId: 2835765
+Translate: adding more water (to a bath tub)"
+207837,WORD_NOUN,,KATAKANA,,,-,サイド・キック,,saido kikku,"kopnięcie wewnętrzną stroną stopy (np. w piłce nożnej)
+kopnięcie bokiem (w sztukach walki)
+pomocnik",ang: sidekick,,,"GroupId: 2833686
+Translate: side-foot (e.g. in soccer)
+Translate: kick with the side of the foot
+Translate: side kick (e.g. in martial arts)
+Translate: sidekick
+Translate: companion"
+207838,WORD_NOUN,,HIRAGANA,,,錨綱,いかりづな,,ikariduna,lina kotwiczna,,,,"GroupId: 1855400
+Translate: anchor cable"
+207839,WORD_NOUN,,HIRAGANA,,,土瓶蒸,どびんむし,,dobin mushi,jedzenie gotowane na parze w glinianym czajniku,,,,"GroupId: 2142600
+Translate: food steam-boiled in an earthenware teapot"
