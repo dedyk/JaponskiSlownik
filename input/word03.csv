@@ -32597,10 +32597,10 @@ Translate: heath family"
 207937,WORD_NOUN,,KATAKANA_HIRAGANA,,,アメリカ篠懸の木,アメリカすずかけのき,,amerika suzukake no ki,platan zachodni,"gatunek drzewa z rodziny platanowatych, naturalnie występujący na wschodnim wybrzeżu Stanów Zjednoczonych, Platanus occidentalis",,,"GroupId: 2263110
 Translate: American sycamore (Platanus occidentalis)
 MiscInfo: uk"
-207938,WORD_NOUN,,KATAKANA_HIRAGANA,,,リン酸肥料,リンさんひりょう,,rin sanhiryou,nawóz fosforowy,,,,"GroupId: 1757940
+207938,WORD_NOUN,,KATAKANA_HIRAGANA,,,リン酸肥料,リンさんひりょう,,rinsan hiryou,nawóz fosforowy,,,,"GroupId: 1757940
 Translate: phosphate fertilizer
 Translate: phosphate fertiliser"
-207939,WORD_NOUN,,HIRAGANA,,,夷草,えびすぐさ,,ebisugusa,Senna obtusifolia,roślina,,,"GroupId: 2201220
+207939,WORD_NOUN,,HIRAGANA,,,夷草,えびすぐさ,,ebisu gusa,Senna obtusifolia,roślina,,,"GroupId: 2201220
 Translate: sicklepod (Senna obtusifolia)
 MiscInfo: uk"
 207940,WORD_NOUN,,HIRAGANA,,,四国稗,しこくびえ,,shikokubie,"manneczka łękowata
@@ -32622,7 +32622,7 @@ MiscInfo: uk"
 207943,WORD_NOUN,,HIRAGANA,,,蓮華升麻,れんげしょうま,,rengeshouma,Anemonopsis macrophylla,gatunek roślin reprezentujący monotypowy rodzaj Anemonopsis należący do rodziny jaskrowatych,,,"GroupId: 2209320
 Translate: false anemone (Anemonopsis macrophylla)
 MiscInfo: uk"
-207944,WORD_VERB_U,,HIRAGANA,,,群れ立つ,むれだつ,,mure datsu,być usytuowanym (stać) dookoła,"np. bambus, sosna, trawa pampasowa",,,"GroupId: 2835009
+207944,WORD_VERB_U,,HIRAGANA,,,群れ立つ,むれだつ,,mure datsu,być usytuowanym (stać) dookoła,"np. bambus, sosna, trawa pampasowa",,DUPLICATE 207988,"GroupId: 2835009
 Translate: to stand all around (e.g. bamboo, pines, pampas grass)"
 207945,WORD_NOUN,,HIRAGANA,,,船食虫,ふなくいむし,,funakuimushi,"świdrak okrętowiec
 świdrak okrętowy","inwazyjny gatunek małża blaszkoskrzelnego z rodziny świdrakowatych charakteryzujący się zdolnością trawienia celulozy, Teredo navalis",,,"GroupId: 2464880
@@ -32698,7 +32698,7 @@ Translate: observer
 Translate: member of an inspection team"
 207965,WORD_NOUN,,HIRAGANA,,,一弾指,いちだんし,,ichidanshi,"krótka chwila
 mgnienie oka
-moment",,,,"GroupId: 2811260
+moment",,,DUPLICATE 207995,"GroupId: 2811260
 Translate: brief moment
 Translate: twinkling of an eye
 Translate: instant"
@@ -32718,6 +32718,114 @@ Translate: arrival chime (of an elevator, train, etc.)"
 207970,WORD_NOUN,,KATAKANA,,,-,オートロックマンション,,ootorokku manshon,budynek mieszkalny z automatycznie zamykanym wejściem,ang: apartment building with an automatically locked entrance,,,"GroupId: 2841437
 Translate: apartment building with an automatically locked entrance"
 207971,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,腹が減っては戦は出来ぬ,はらがへってはいくさはできぬ,,hara ga hette wa ikusa wa dekinu,"armia maszeruje na jego brzuchu
+nie można walczyć z pustym brzuchem",przysłowie,,,"GroupId: 2419570
+Translate: an army marches on its stomach
+MiscInfo: proverb
+Translate: you can't fight on an empty stomach
+MiscInfo: proverb"
+207972,WORD_NOUN,,KATAKANA,,,-,チゴハヤブサ,,chigohayabusa,"kobuz
+sokół kobuz
+sokół leśny
+sokolik drzewiec","gatunek średniej wielkości ptaka drapieżnego z rodziny sokołowatych, Falco subbuteo",,,"GroupId: 2222500
+Translate: northern hobby (Falco subbuteo)
+MiscInfo: uk"
+207973,WORD_NOUN,,HIRAGANA,,,憂事,うれいごと,,urei goto,"gorzkie doświadczenie
+cierpienie
+niedola
+rozpacz
+smutek
+smutne myśli",,,,"GroupId: 1588570
+Translate: bitter experience
+Translate: misery
+Translate: distress
+Translate: grief
+Translate: sad thoughts"
+207974,WORD_NOUN,,KATAKANA,,,-,カバーロール,,kabaarooru,kombinezon,ang: coverall,,,"GroupId: 2610250
+Translate: coverall"
+207975,WORD_NOUN,,HIRAGANA_KATAKANA,,,担がんマウス,たんがんマウス,,tangan mausu,mysz z guzem,,,,"GroupId: 2680670
+Translate: tumour-bearing mouse
+Translate: tumor-bearing mouse"
+207976,WORD_NOUN,,HIRAGANA_KATAKANA,,,担ガンマウス,たんガンマウス,,tangan mausu,mysz z guzem,,,,"GroupId: 2680670
+Translate: tumour-bearing mouse
+Translate: tumor-bearing mouse"
+207977,WORD_VERB_U,,HIRAGANA,,,駆下る,かけくだる,,kake kudaru,zbiegać,,,,"GroupId: 1864940
+Translate: to run down"
+207978,WORD_NOUN,,KATAKANA,,,-,セイヨウナシ,,seiyounashi,"grusza pospolita
+grusza polna","gatunek drzewa z rodziny różowatych, Pyrus communis",,,"GroupId: 2262970
+Translate: European pear (Pyrus communis)
+MiscInfo: uk"
+207979,WORD_NOUN,,KATAKANA,,,-,アメリカスズカケノキ,,amerika suzukake no ki,platan zachodni,"gatunek drzewa z rodziny platanowatych, naturalnie występujący na wschodnim wybrzeżu Stanów Zjednoczonych, Platanus occidentalis",,,"GroupId: 2263110
+Translate: American sycamore (Platanus occidentalis)
+MiscInfo: uk"
+207980,WORD_NOUN,,HIRAGANA,,,燐酸肥料,りんさんひりょう,,rinsan hiryou,nawóz fosforowy,,,,"GroupId: 1757940
+Translate: phosphate fertilizer
+Translate: phosphate fertiliser"
+207981,WORD_NOUN,,HIRAGANA,,,恵比須草,えびすぐさ,,ebisu gusa,Senna obtusifolia,roślina,,,"GroupId: 2201220
+Translate: sicklepod (Senna obtusifolia)
+MiscInfo: uk"
+207982,WORD_NOUN,,KATAKANA,,,-,エビスグサ,,ebisu gusa,Senna obtusifolia,roślina,,,"GroupId: 2201220
+Translate: sicklepod (Senna obtusifolia)
+MiscInfo: uk"
+207983,WORD_NOUN,,KATAKANA,,,-,シコクビエ,,shikokubie,"manneczka łękowata
+korakan
+dagussa
+dogussa
+tokussa
+ragi
+proso afrykańskie","gatunek rośliny jednorocznej z rodziny wiechlinowatych, Eleusine coracana",,,"GroupId: 2202300
+Translate: finger millet (Eleusine coracana)
+MiscInfo: uk"
+207984,WORD_NOUN,,KATAKANA,,,-,クビワペッカリー,,kubiwa pekkarii,"pekariowiec obrożny
+pekari obrożny (dawniej nazywany)","gatunek ssaka parzystokopytnego z rodziny pekariowatych, Tayassu tajacu",,,"GroupId: 2203270
+Translate: collared peccary (Tayassu tajacu)
+MiscInfo: uk"
+207985,WORD_NOUN,,HIRAGANA,,,伊吹虎尾,いぶきとらのお,,ibukitora no o,rdest wężownik,"roślina, Persicaria bistorta",,,"GroupId: 2209070
+Translate: common bistort (Persicaria bistorta)
+MiscInfo: uk"
+207986,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,イブキトラノオ,,ibukitora no o,rdest wężownik,"roślina, Persicaria bistorta",,,"GroupId: 2209070
+Translate: common bistort (Persicaria bistorta)
+MiscInfo: uk"
+207987,WORD_NOUN,,KATAKANA,,,-,レンゲショウマ,,rengeshouma,Anemonopsis macrophylla,gatunek roślin reprezentujący monotypowy rodzaj Anemonopsis należący do rodziny jaskrowatych,,,"GroupId: 2209320
+Translate: false anemone (Anemonopsis macrophylla)
+MiscInfo: uk"
+207988,WORD_VERB_U,,HIRAGANA,,,群れ立つ,むれたつ,,mure tatsu,być usytuowanym (stać) dookoła,"np. bambus, sosna, trawa pampasowa",,DUPLICATE 207944,"GroupId: 2835009
+Translate: to stand all around (e.g. bamboo, pines, pampas grass)"
+207989,WORD_VERB_U,,HIRAGANA,,,むれ立つ,むれだつ,,mure datsu,być usytuowanym (stać) dookoła,"np. bambus, sosna, trawa pampasowa",,DUPLICATE 207990,"GroupId: 2835009
+Translate: to stand all around (e.g. bamboo, pines, pampas grass)"
+207990,WORD_VERB_U,,HIRAGANA,,,むれ立つ,むれたつ,,mure tatsu,być usytuowanym (stać) dookoła,"np. bambus, sosna, trawa pampasowa",,DUPLICATE 207989,"GroupId: 2835009
+Translate: to stand all around (e.g. bamboo, pines, pampas grass)"
+207991,WORD_NOUN,,KATAKANA,,,-,フナクイムシ,,funakuimushi,"świdrak okrętowiec
+świdrak okrętowy","inwazyjny gatunek małża blaszkoskrzelnego z rodziny świdrakowatych charakteryzujący się zdolnością trawienia celulozy, Teredo navalis",,,"GroupId: 2464880
+Translate: shipworm (esp. naval shipworm, Teredo navalis)
+MiscInfo: uk
+Translate: teredo
+MiscInfo: uk"
+207992,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,危険に晒す,きけんにさらす,,kiken ni sarasu,"wystawiać na niebezpieczeństwo
+narazić na niebezpieczeństwo
+narażać na szwank",,,,"GroupId: 2841141
+Translate: to expose to danger
+Translate: to imperil
+Translate: to jeopardize"
+207993,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,危険に曝す,きけんにさらす,,kiken ni sarasu,"wystawiać na niebezpieczeństwo
+narazić na niebezpieczeństwo
+narażać na szwank",,,,"GroupId: 2841141
+Translate: to expose to danger
+Translate: to imperil
+Translate: to jeopardize"
+207994,WORD_NOUN,,HIRAGANA,,,意志決定過程,いしけっていかてい,,ishi kettei katei,"proces podejmowania decyzji
+proces decyzyjny",,,,"GroupId: 1988770
+Translate: decision-making process"
+207995,WORD_NOUN,,HIRAGANA,,,一弾指,いったんじ,,ittanji,"krótka chwila
+mgnienie oka
+moment",,,DUPLICATE 207965,"GroupId: 2811260
+Translate: brief moment
+Translate: twinkling of an eye
+Translate: instant"
+207996,WORD_NOUN,,KATAKANA,,,-,オートロック・マンション,,ootorokku manshon,budynek mieszkalny z automatycznie zamykanym wejściem,ang: apartment building with an automatically locked entrance,,,"GroupId: 2841437
+Translate: apartment building with an automatically locked entrance"
+207997,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,腹が減っては軍は出来ぬ,はらがへってはいくさはできぬ,,hara ga hette wa ikusa wa dekinu,"armia maszeruje na jego brzuchu
 nie można walczyć z pustym brzuchem",przysłowie,,,"GroupId: 2419570
 Translate: an army marches on its stomach
 MiscInfo: proverb
