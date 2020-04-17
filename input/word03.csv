@@ -33085,7 +33085,7 @@ Translate: renal impairment
 Translate: kidney damage"
 208070,WORD_NOUN,,HIRAGANA_KATAKANA,,,自律メッセージ,じりつメッセージ,,jiritsu messeeji,autonomiczna wiadomość,,,,"GroupId: 2361130
 Translate: autonomous message"
-208071,WORD_VERB_U,,HIRAGANA,,,知ろしめす,しろしめす,,shiroshimesu,"wiedzieć
+208071,WORD_VERB_U,,HIRAGANA,,,知ろしめす,しろしめす,,shiroshi mesu,"wiedzieć
 panować","honoryfikatywnie, archaizm",,,"GroupId: 1883540
 Translate: to know
 MiscInfo: hon
@@ -33145,7 +33145,7 @@ Translate: smoke detector"
 Translate: fire alarm or sensor"
 208091,WORD_NOUN,,HIRAGANA,,,昼職,ひるしょく,,hirushoku,praca w ciągu dnia (w przeciwieństwie do pracy w branży rozrywki nocnej lub branży seksu),,,,"GroupId: 2842689
 Translate: daytime work (as opposed to work in the nighttime entertainment business or sex industry)"
-208092,WORD_NOUN,,HIRAGANA,,,灰色蓬,はいいろよもぎ,,haiiroyomogi,Artemisia sieversiana,roślina,,,"GroupId: 2216640
+208092,WORD_NOUN,,HIRAGANA,,,灰色蓬,はいいろよもぎ,,haiiro yomogi,Artemisia sieversiana,roślina,,,"GroupId: 2216640
 Translate: Artemisia sieversiana
 MiscInfo: uk"
 208093,WORD_NOUN,,HIRAGANA,,,数咲き蓬,かずざきよもぎ,,kazuzaki yomogi,japońska bylica pospolita,,,,"GroupId: 2216650
@@ -33211,7 +33211,7 @@ Translate: red-light district"
 Translate: baptism
 MiscInfo: arch
 AdditionalInfo: early Japanese Christian term"
-208109,WORD_NOUN,,KATAKANA,,,-,ヒイデス,,hiidesu,wiara,"archaizm, łac: fides",,,"GroupId: 2453140
+208109,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヒイデス,,hiidesu,wiara,"archaizm, łac: fides",,,"GroupId: 2453140
 Translate: faith
 MiscInfo: arch"
 208110,WORD_NOUN,,KATAKANA,,,-,エゴサーチ,,egosaachi,szukanie w internecie swojego nazwiska,ang: egosearch,,,"GroupId: 2827688
@@ -33270,8 +33270,66 @@ Translate: cargo hold (of an aircraft, ship, etc.)
 Translate: cargo bay"
 208125,WORD_NOUN,,HIRAGANA,,,電車道相撲,でんしゃみちすもう,,densha michi sumou,"zmuszenie przeciwnika, aby wyleciał poza ring",w sumo,,,"GroupId: 2023950
 Translate: railroading an opponent straight out of the ring"
-208126,WORD_NOUN,,HIRAGANA,,,手取金,てどりきん,,tedorikin,zysk netto,np. po ofercie papierów wartościowych,,,"GroupId: 2029600
+208126,WORD_NOUN,,HIRAGANA,,,手取金,てどりきん,,tedori kin,zysk netto,np. po ofercie papierów wartościowych,,,"GroupId: 2029600
 Translate: net proceeds (e.g. after an offering of securities)"
-208127,WORD_NOUN,,HIRAGANA,,,一罰百戒,いちばつひゃっかい,,ichibatsu hyakkai,karanie przestępstwa za przykład dla innych,,,,"GroupId: 2030010
+208127,WORD_NOUN,,HIRAGANA,,,一罰百戒,いちばつひゃっかい,,ichibatsu hyakkai,karanie przestępcy za przykład dla innych,,,,"GroupId: 2030010
 Translate: punishing a crime to make an example for others
 MiscInfo: yoji"
+208128,WORD_VERB_U,,HIRAGANA,,,知ろし召す,しろしめす,,shiroshi mesu,"wiedzieć
+panować","honoryfikatywnie, archaizm",,,"GroupId: 1883540
+Translate: to know
+MiscInfo: hon
+MiscInfo: arch
+Translate: to reign
+MiscInfo: hon
+MiscInfo: arch"
+208129,WORD_VERB_U,,HIRAGANA,,,知ろし食す,しろしめす,,shiroshi mesu,"wiedzieć
+panować","honoryfikatywnie, archaizm",,,"GroupId: 1883540
+Translate: to know
+MiscInfo: hon
+MiscInfo: arch
+Translate: to reign
+MiscInfo: hon
+MiscInfo: arch"
+208130,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,寒気凛凛,かんきりんりん,,kanki rin rin,???,,,,"GroupId: 2040220
+Translate: it (the weather) being piercing (bitterly) cold
+MiscInfo: yoji"
+208131,WORD_NOUN,,HIRAGANA,,,２項式,にこうしき,,nikoushiki,dwumian,niedziela,,,"GroupId: 1461730
+Translate: binomial"
+208132,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ハイイロヨモギ,,haiiro yomogi,Artemisia sieversiana,roślina,,,"GroupId: 2216640
+Translate: Artemisia sieversiana
+MiscInfo: uk"
+208133,WORD_NOUN,,HIRAGANA,,,数咲き艾,かずざきよもぎ,,kazuzaki yomogi,japońska bylica pospolita,,,,"GroupId: 2216650
+Translate: Japanese mugwort
+MiscInfo: uk"
+208134,WORD_NOUN,,KATAKANA,,,-,カズザキヨモギ,,kazuzaki yomogi,japońska bylica pospolita,,,,"GroupId: 2216650
+Translate: Japanese mugwort
+MiscInfo: uk"
+208135,WORD_NOUN,,KATAKANA_HIRAGANA,,,タカ艾,タカよもぎ,,taka yomogi,Artemisia selengensis,roślina,,,"GroupId: 2216660
+Translate: Artemisia selengensis
+MiscInfo: uk"
+208136,WORD_NOUN,,KATAKANA,,,-,タカヨモギ,,taka yomogi,Artemisia selengensis,roślina,,,"GroupId: 2216660
+Translate: Artemisia selengensis
+MiscInfo: uk"
+208137,WORD_NOUN,,KATAKANA,,,-,セイタカヨモギ,,seitaka yomogi,Artemisia selengensis,roślina,,,"GroupId: 2216670
+Translate: Artemisia selengensis
+MiscInfo: uk"
+208138,WORD_NOUN,,KATAKANA,,,-,ホソバニンジン,,hosoba ninjin,bylica roczna,"gatunek roślin z rodziny astrowatych, Artemisia annua",,,"GroupId: 2216720
+Translate: Artemisia annua
+MiscInfo: uk"
+208139,WORD_NOUN,,KATAKANA,,,-,バプティズモ,,baputizumo,chrzest,"termin ze wczesnego japońskiego chrystianizmu, archaizm, por: bautismo",,,"GroupId: 2834817
+Translate: baptism
+MiscInfo: arch
+AdditionalInfo: early Japanese Christian term"
+208140,WORD_NOUN,,KATAKANA,,,-,バプチズモ,,bapuchizumo,chrzest,"termin ze wczesnego japońskiego chrystianizmu, archaizm, por: bautismo",,,"GroupId: 2834817
+Translate: baptism
+MiscInfo: arch
+AdditionalInfo: early Japanese Christian term"
+208141,WORD_NOUN,,KATAKANA,,,-,ヒーデス,,hiidesu,wiara,"archaizm, łac: fides",,,"GroupId: 2453140
+Translate: faith
+MiscInfo: arch"
+208142,WORD_NOUN,,HIRAGANA,,,繰上げ当選,くりあげとうせん,,kuri age tousen,wygrać wybory z powodu śmierci lub dyskwalifikacji kontrkandydata,,,,"GroupId: 1819330
+Translate: win an election due to another's death or disqualification"
+208143,WORD_NOUN,,HIRAGANA,,,手取り金,てどりきん,,tedori kin,zysk netto,np. po ofercie papierów wartościowych,,,"GroupId: 2029600
+Translate: net proceeds (e.g. after an offering of securities)"
