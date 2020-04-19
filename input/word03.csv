@@ -34206,26 +34206,37 @@ Translate: knot (nautical mile per hour)
 MiscInfo: uk"
 208380,WORD_COUNTER,,HIRAGANA,,,旒,りゅう,,ryuu,"klasyfikator na flagi, sztandary i etc",,,,"GroupId: 2844102
 Translate: counter for flags, banners, etc."
-208381,WORD_COUNTER,,HIRAGANA,,,腰,よう,,you,"klasyfikator na miecze, hakama, obi i etc noszone wokół pasa",archaizm,,,"GroupId: 2844070
+208381,WORD_COUNTER,,HIRAGANA,,,腰,よう,,you,"klasyfikator na miecze, hakama, obi i etc noszone wokół pasa",archaizm,,"DUPLICATE 8249
+DUPLICATE 12400
+DUPLICATE 68943
+DUPLICATE 208382","GroupId: 2844070
 Translate: counter for swords, hakama, obi, etc. worn around the waist
 MiscInfo: arch"
 208382,WORD_COUNTER,,HIRAGANA,,,腰,こし,,koshi,"klasyfikator na miecze, hakama, obi i etc noszone wokół pasa
-klasyfikator na kołczany strzał",archaizm,,,"GroupId: 2844070
+klasyfikator na kołczany strzał",archaizm,,"DUPLICATE 8249
+DUPLICATE 68943
+DUPLICATE 208381","GroupId: 2844070
 Translate: counter for swords, hakama, obi, etc. worn around the waist
 MiscInfo: arch
 Translate: counter for quivers of arrows
 MiscInfo: arch"
-208383,WORD_NOUN,,KATAKANA,,,-,スケーラー,,sukeeraa,skaler,"np. dentystyczny, ang: scaler",,,"GroupId: 2843956
+208383,WORD_NOUN,,KATAKANA,,,-,スケーラー,,sukeeraa,skaler,"np. dentystyczny, ang: scaler",,DUPLICATE 99345,"GroupId: 2843956
 Translate: scaler (dental, hand, air, etc.)"
 208384,WORD_NOUN,,KATAKANA,,,-,ファン,,fan,"zabawa
 fajny
-zabawny",ang: fun,,,"GroupId: 2844127
+zabawny",ang: fun,,"DUPLICATE 45782
+DUPLICATE 131797
+DUPLICATE 131799","GroupId: 2844127
 Translate: fun"
-208385,WORD_NOUN,,KATAKANA,,,-,マイナー,,mainaa,górnik,"szczególnie cryptowalut, ang: miner",,,"GroupId: 2844033
+208385,WORD_NOUN,,KATAKANA,,,-,マイナー,,mainaa,górnik,"szczególnie cryptowalut, ang: miner",,DUPLICATE 46719,"GroupId: 2844033
 Translate: miner (esp. of cryptocurrencies)"
-208386,WORD_NOUN,,KATAKANA,,,-,ミディ,,midi,bluzka z kołnierzem marynarskim,ang: middy,,,"GroupId: 2844038
+208386,WORD_NOUN,,KATAKANA,,,-,ミディ,,midi,bluzka z kołnierzem marynarskim,ang: middy,,"DUPLICATE 37986
+DUPLICATE 38057","GroupId: 2844038
 Translate: middy
 Translate: middy blouse
 Translate: blouse with a sailor collar"
-208387,WORD_NOUN,,KATAKANA,,,-,ライター,,raitaa,pisarz,ang: writer,,,"GroupId: 2844121
+208387,WORD_NOUN,,KATAKANA,,,-,ライター,,raitaa,pisarz,ang: writer,,DUPLICATE 12780,"GroupId: 2844121
 Translate: writer"
+208388,WORD_COUNTER,,HIRAGANA,,,流,りゅう,,ryuu,"klasyfikator na flagi, sztandary i etc",,,"DUPLICATE 46868
+DUPLICATE 61711","GroupId: 2844102
+Translate: counter for flags, banners, etc."
