@@ -9000,7 +9000,8 @@ zręcznie",,,,
 202284,WORD_NOUN,,HIRAGANA,,,艮,こん,,kon,???,,,"DUPLICATE 63921
 DUPLICATE 63922
 DUPLICATE 73182
-DUPLICATE 202285",
+DUPLICATE 202285
+DUPLICATE 208304",
 202285,WORD_NOUN,,HIRAGANA,,,艮,え,,e,???,,,"DUPLICATE 12187
 DUPLICATE 63921
 DUPLICATE 63922
@@ -9053,7 +9054,8 @@ MiscInfo: dated
 AdditionalInfo: also written as 妾女"
 202292,WORD_NOUN,,HIRAGANA,,,猛火,みょうか,,myouka,rozszalałe lub huczące płomienie,,,DUPLICATE 82016,
 202293,"WORD_PRONOUN
-WORD_PRE_NOUN_ADJECTIVAL",,HIRAGANA,,,此ん,こん,,kon,ten,"wskazywanie przedmiotu blisko mówcy, akcji lub aktualnego tematu",,DUPLICATE 73182,
+WORD_PRE_NOUN_ADJECTIVAL",,HIRAGANA,,,此ん,こん,,kon,ten,"wskazywanie przedmiotu blisko mówcy, akcji lub aktualnego tematu",,"DUPLICATE 73182
+DUPLICATE 208304",
 202294,WORD_NOUN,,HIRAGANA,,,娘子軍,ろうしぐん,,roushigun,Amazonki,,,DUPLICATE 98205,
 202295,WORD_NOUN,,HIRAGANA,,,乾食,かんしょく,,kanshoku,???,,,,"GroupId: 1209870
 Translate: the rotting of lumber stored with poor air circulation"
@@ -13007,7 +13009,8 @@ materiał do czytania",,,,
 203358,WORD_NOUN,,KATAKANA_HIRAGANA,,,基督教,キリストきょう,,kirisuto kyou,"chrześcijaństwo
 religia chrześcijańska",,,DUPLICATE 27414,
 203359,WORD_NOUN,,HIRAGANA,,,村,そん,,son,"wioska
-wieś",,,DUPLICATE 2549,
+wieś",,,"DUPLICATE 2549
+DUPLICATE 208375",
 203360,WORD_NOUN,,HIRAGANA,,,操,そう,,sou,"wierność
 honor
 lojalność
@@ -16240,7 +16243,8 @@ ród (archaizm)
 rodowód (archaizm)
 wnuk (archaizm)
 wnuczek (archaizm)
-wnuczka (archaizm)",,,DUPLICATE 6873,"GroupId: 2843407
+wnuczka (archaizm)",,,"DUPLICATE 6873
+DUPLICATE 208375","GroupId: 2843407
 Translate: descendant (usu. of a certain generation)
 MiscInfo: obsc
 Translate: lineage
@@ -33898,20 +33902,39 @@ Translate: overlaying an umbrella framework
 Translate: paper umbrella maker"
 208303,WORD_VERB_U,,HIRAGANA,,,言諭す,いいさとす,,ii satosu,wyjaśnić w łatwy do zrozumienia sposób,,,,"GroupId: 2709220
 Translate: to explain in an easy-to-understand manner"
-208304,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,-,こん,,kon,ten,blisko mówcy (z rzeczownikiem),,,"GroupId: 1582920
+208304,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,-,こん,,kon,ten,blisko mówcy (z rzeczownikiem),,"DUPLICATE 5543
+DUPLICATE 8040
+DUPLICATE 26908
+DUPLICATE 26910
+DUPLICATE 53213
+DUPLICATE 58502
+DUPLICATE 61644
+DUPLICATE 61652
+DUPLICATE 69854
+DUPLICATE 73182
+DUPLICATE 91292
+DUPLICATE 93152
+DUPLICATE 202284
+DUPLICATE 202293","GroupId: 1582920
 Translate: this (something or someone close to the speaker (including the speaker), or ideas expressed by the speaker)
 MiscInfo: uk"
 208305,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,-,あん,,an,"tam
 tamta
 tamto
-tamten",daleko od mówcy i osoby docelowej (z rzeczownikiem),,,"GroupId: 1000420
+tamten",daleko od mówcy i osoby docelowej (z rzeczownikiem),,"DUPLICATE 7071
+DUPLICATE 19951
+DUPLICATE 23166
+DUPLICATE 31797","GroupId: 1000420
 Translate: that (someone or something distant from both speaker and listener, or situation unfamiliar to both speaker and listener)
 MiscInfo: uk"
-208306,WORD_NOUN,,HIRAGANA,,,人数,にんじゅ,,ninju,ilość osób,,,,
+208306,WORD_NOUN,,HIRAGANA,,,人数,にんじゅ,,ninju,ilość osób,,,"DUPLICATE 2871
+DUPLICATE 27820
+DUPLICATE 64628",
 208307,WORD_NOUN,,HIRAGANA,,,隷,しもべ,,shimobe,"służący
 sługa
 poddany",,,,
-208308,WORD_NOUN,,HIRAGANA,,,後妻,こうさい,,kousai,druga żona,,,,
+208308,WORD_NOUN,,HIRAGANA,,,後妻,こうさい,,kousai,druga żona,,,"DUPLICATE 4045
+DUPLICATE 198101",
 208309,WORD_VERB_U,,HIRAGANA,,,酔う,えう,,eu,"upić się
 upijać się
 cierpieć na chorobę morską
@@ -33920,7 +33943,7 @@ mieć zawroty głowy
 być oczarowanym
 być urzeczonym
 być w zachwycie
-być w uniesieniu",,,,"GroupId: 1372650
+być w uniesieniu",,,DUPLICATE 4305,"GroupId: 1372650
 Translate: to get drunk
 Translate: to become intoxicated
 Translate: to feel sick (e.g. in a vehicle)
@@ -33931,7 +33954,11 @@ Translate: to be spellbound
 Translate: to be in raptures"
 208310,WORD_NOUN,,HIRAGANA,,,文,もん,,mon,"herb (rodzinny)
 tarcza herbowa
-wzór",,,,"GroupId: 1957010
+wzór",,,"DUPLICATE 1591
+DUPLICATE 7714
+DUPLICATE 7715
+DUPLICATE 32264
+DUPLICATE 64026","GroupId: 1957010
 Translate: (family) crest
 Translate: coat of arms
 Translate: pattern
@@ -33941,16 +33968,16 @@ obalać
 rozbijać
 rujnować
 burzyć",,,,
-208312,WORD_NOUN,,HIRAGANA,,,棉,めん,,men,bawełna,,,,
+208312,WORD_NOUN,,HIRAGANA,,,棉,めん,,men,bawełna,,,DUPLICATE 93559,
 208313,"WORD_NOUN
 WORD_NUMBER",,HIRAGANA,,,厘,り,,ri,"rin (jednostka monetarna 1/1000 jena)
-rin (jednostka długości ok. 0,3 mm)",,,,
+rin (jednostka długości ok. 0,3 mm)",,,DUPLICATE 8223,
 208314,"WORD_NOUN
 WORD_NUMBER",,HIRAGANA,,,釐,り,,ri,"rin (jednostka monetarna 1/1000 jena)
 rin (jednostka długości ok. 0,3 mm)",,,,
 208315,WORD_NOUN,,HIRAGANA_KATAKANA,,,１ミリ,いちミリ,,ichi miri,jeden milimetr,,,,
 208316,WORD_NOUN,,KATAKANA,,,留,ルーブリ,,ruuburi,"rubel
-ruble",rosyjska waluta,,,"GroupId: 2844189
+ruble",rosyjska waluta,,DUPLICATE 13658,"GroupId: 2844189
 Translate: ruble (Russian currency)
 MiscInfo: uk
 Translate: rouble
@@ -33972,13 +33999,14 @@ niezwykłość
 nadzwyczajność
 wybitność
 znakomitość
-wyjątkowość",,,,
-208321,WORD_NOUN,,KATAKANA,,,-,ルーブル,,ruuburu,Luwr,muzeum,,,"GroupId: 1143740
+wyjątkowość",,,"DUPLICATE 24194
+DUPLICATE 135043",
+208321,WORD_NOUN,,KATAKANA,,,-,ルーブル,,ruuburu,Luwr,muzeum,,DUPLICATE 13658,"GroupId: 1143740
 Translate: Louvre (Museum)"
 208322,WORD_NOUN,,KATAKANA,,,太々,タイタイ,,taitai,żona,,,,
 208323,WORD_NOUN,,HIRAGANA,,,進退,しんだい,,shindai,"ruch
 kierunek działania
-kierowanie się na przód lub wycofywanie się",,,,
+kierowanie się na przód lub wycofywanie się",,,DUPLICATE 44617,
 208324,WORD_EXPRESSION,,HIRAGANA,,,よみ人しらず,よみびとしらず,,yomibito shirazu,"autor nieznany
 anonimowy
 nieznany kompozytor waka",,,,
@@ -33993,13 +34021,16 @@ wspólne otaczać czcią",,,,
 208328,WORD_NOUN,,HIRAGANA,,,切瑳琢磨,せっさたくま,,sessa takuma,kształcenie własnego charakteru poprzez ciężkie uczenie się,,,,
 208329,"WORD_NOUN
 WORD_NOUN_PREFIX
-WORD_NOUN_SUFFIX",,HIRAGANA,,,魯,ろ,,ro,Rosja,skrót,,,"GroupId: 1147330
+WORD_NOUN_SUFFIX",,HIRAGANA,,,魯,ろ,,ro,Rosja,skrót,,DUPLICATE 165173,"GroupId: 1147330
 Translate: Russia
 MiscInfo: abbr"
-208330,WORD_NOUN,,HIRAGANA,,,螺,ら,,ra,mała spiralna skorupa ślimaka,,,,
+208330,WORD_NOUN,,HIRAGANA,,,螺,ら,,ra,mała spiralna skorupa ślimaka,,,"DUPLICATE 45123
+DUPLICATE 45164
+DUPLICATE 49356
+DUPLICATE 61707",
 208331,WORD_NOUN,,HIRAGANA,,,拉致,らっち,,racchi,"branie do niewoli
 porwanie
-uprowadzenie",,,,"GroupId: 1567330
+uprowadzenie",,,DUPLICATE 72229,"GroupId: 1567330
 Translate: taking captive
 Translate: carrying away
 Translate: kidnapping
@@ -34007,20 +34038,22 @@ Translate: kidnaping
 Translate: abduction"
 208332,"WORD_NOUN
 WORD_ADJECTIVE_TARU",,HIRAGANA,,,籠,ろう,,rou,"więzienie
-zakład karny",,,,
+zakład karny",,,"DUPLICATE 10924
+DUPLICATE 165207",
 208333,"WORD_NOUN
 WORD_ADJECTIVE_TARU",,HIRAGANA,,,篭,ろう,,rou,"więzienie
-zakład karny",,,,
+zakład karny",,,"DUPLICATE 10923
+DUPLICATE 165207",
 208334,WORD_NOUN,,HIRAGANA,,,釉,ゆう,,yuu,"polewa
 szkliwo
 glazura
-emalia",,,,
+emalia",,,DUPLICATE 74046,
 208335,WORD_NOUN,,HIRAGANA,,,埒,らっち,,racchi,"granica
-limit",,,,"GroupId: 2014290
+limit",,,DUPLICATE 75055,"GroupId: 2014290
 Translate: bounds
 Translate: limits"
 208336,WORD_NOUN,,HIRAGANA,,,埓,らっち,,racchi,"granica
-limit",,,,"GroupId: 2014290
+limit",,,DUPLICATE 75107,"GroupId: 2014290
 Translate: bounds
 Translate: limits"
 208337,WORD_NOUN,,KATAKANA,,,-,ペガスス,,pegasusu,Pegaz,ang: Pegasus,,,
@@ -34028,7 +34061,7 @@ Translate: limits"
 208339,WORD_NOUN,,HIRAGANA,,,坊ちゃん刈,ぼっちゃんがり,,bocchan gari,fryzura na garnek,,,,
 208340,WORD_NOUN,,HIRAGANA,,,了,りょう,,ryou,"prawda
 fakt
-zrozumienie",,,,"GroupId: 2511770
+zrozumienie",,,DUPLICATE 42585,"GroupId: 2511770
 Translate: fact
 Translate: truth
 Translate: understanding
@@ -34038,20 +34071,20 @@ kontrola pasji
 kontrola żądzy",,,,
 208342,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,口才,こうざい,,kouzai,"mądre przemówienie
-inteligentna mowa",,,,
-208343,WORD_NOUN,,HIRAGANA,,,須弥山,すみせん,,sumisen,góra Meru,"mityczna góra, stanowiąca oś świata według kosmologii hinduistycznej i buddyjskiej",,,
+inteligentna mowa",,,DUPLICATE 97824,
+208343,WORD_NOUN,,HIRAGANA,,,須弥山,すみせん,,sumisen,góra Meru,"mityczna góra, stanowiąca oś świata według kosmologii hinduistycznej i buddyjskiej",,DUPLICATE 104740,
 208344,WORD_NOUN,,HIRAGANA,,,利慾,りよく,,riyoku,"chciwość
 zachłanność",,,,
 208345,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,棚にあげる,たなにあげる,,tana ni ageru,"być ślepy na swoje wady
 być ślepy na swoje braki
 udawać niewiniątko",,,,
-208346,WORD_NOUN,,HIRAGANA,,,毫釐,ごうりん,,gourin,bardzo mała ilość,,,,
+208346,WORD_NOUN,,HIRAGANA,,,毫釐,ごうりん,,gourin,bardzo mała ilość,,,DUPLICATE 107517,
 208347,WORD_NOUN,,HIRAGANA,,,毫厘,ごうり,,gouri,bardzo mała ilość,,,,
 208348,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,角が立つ,つのがたつ,,tsuno ga tatsu,"pogorszyć się (np. relacje, stosunki)
-wzburzyć się",,,,
-208349,WORD_NOUN,,HIRAGANA,,,手摺り,てずり,,tezuri,ręcznie drukowanie,,,,"GroupId: 1698720
+wzburzyć się",,,DUPLICATE 108270,
+208349,WORD_NOUN,,HIRAGANA,,,手摺り,てずり,,tezuri,ręcznie drukowanie,,,DUPLICATE 22243,"GroupId: 1698720
 Translate: printing by hand"
 208350,WORD_NOUN,,KATAKANA,,,-,ウーロンチャ,,uuron cha,ulung,rodzaj herbaty,,,
 208351,WORD_EXPRESSION,,HIRAGANA,,,心做しか,こころなしか,,kokoro nashika,"jakoś
@@ -34060,21 +34093,21 @@ pozornie
 na pierwszy rzut oka",,,,
 208352,WORD_NOUN,,KATAKANA,,,-,ファベーラ,,fabeera,Fawela,dzielnica nędzy w Brazylii,IGNORE_NO_JMEDICT,,
 208353,WORD_NOUN,,KATAKANA,,,-,ファヴェラ,,favera,Fawela,dzielnica nędzy w Brazylii,IGNORE_NO_JMEDICT,,
-208354,WORD_NOUN,,HIRAGANA,,,御使い,みつかい,,mitsukai,anioł,,,,
+208354,WORD_NOUN,,HIRAGANA,,,御使い,みつかい,,mitsukai,anioł,,,DUPLICATE 28198,
 208355,WORD_NOUN,,HIRAGANA,,,我慾,がよく,,gayoku,"egoizm
 samolubstwo",,,,"GroupId: 1196980
 Translate: selfishness"
-208356,WORD_INTERJECTION,,KATAKANA,,,謝謝,シェシェ,,sheshe,dziękuję,chin: xiexie,,,"GroupId: 2216990
+208356,WORD_INTERJECTION,,KATAKANA,,,謝謝,シェシェ,,sheshe,dziękuję,chin: xiexie,,DUPLICATE 136027,"GroupId: 2216990
 Translate: thank you"
-208357,WORD_INTERJECTION,,KATAKANA,,,謝々,シェシェ,,sheshe,dziękuję,chin: xiexie,,,"GroupId: 2216990
+208357,WORD_INTERJECTION,,KATAKANA,,,謝々,シェシェ,,sheshe,dziękuję,chin: xiexie,,DUPLICATE 136057,"GroupId: 2216990
 Translate: thank you"
-208358,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジャージャー麺,ジャージャンめん,,jaajan men,zhajiangmian,chińska potrawa,,,"GroupId: 2195460
+208358,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジャージャー麺,ジャージャンめん,,jaajan men,zhajiangmian,chińska potrawa,,DUPLICATE 137097,"GroupId: 2195460
 Translate: zhajiangmian (Chinese dish of ground pork over wheat noodles)"
-208359,WORD_NOUN,,KATAKANA_HIRAGANA,,,炸醤麺,ジャージャンめん,,jaajan men,zhajiangmian,chińska potrawa,,,"GroupId: 2195460
+208359,WORD_NOUN,,KATAKANA_HIRAGANA,,,炸醤麺,ジャージャンめん,,jaajan men,zhajiangmian,chińska potrawa,,DUPLICATE 137136,"GroupId: 2195460
 Translate: zhajiangmian (Chinese dish of ground pork over wheat noodles)"
-208360,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジャージャン麺,ジャージャーめん,,jaajaa men,zhajiangmian,chińska potrawa,,,"GroupId: 2195460
+208360,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジャージャン麺,ジャージャーめん,,jaajaa men,zhajiangmian,chińska potrawa,,DUPLICATE 208361,"GroupId: 2195460
 Translate: zhajiangmian (Chinese dish of ground pork over wheat noodles)"
-208361,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジャージャン麺,ジャージャンめん,,jaajan men,zhajiangmian,chińska potrawa,,,"GroupId: 2195460
+208361,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジャージャン麺,ジャージャンめん,,jaajan men,zhajiangmian,chińska potrawa,,DUPLICATE 208360,"GroupId: 2195460
 Translate: zhajiangmian (Chinese dish of ground pork over wheat noodles)"
 208362,WORD_ADVERB,,HIRAGANA,,,いつなん時,いつなんどき,,itsu nan doki,"w dowolnym momencie
 o dowolnej porze",,,,"GroupId: 1188930
@@ -34086,13 +34119,13 @@ MiscInfo: uk"
 umierać chwalebną śmiercią",,,,"GroupId: 1618820
 Translate: falling as flowers do
 Translate: dying a glorious death"
-208364,WORD_NOUN,,HIRAGANA,,,末世,まっせい,,massei,ostatnie dni,,,,"GroupId: 1525470
+208364,WORD_NOUN,,HIRAGANA,,,末世,まっせい,,massei,ostatnie dni,,,DUPLICATE 148525,"GroupId: 1525470
 Translate: last days"
 208365,WORD_NOUN,,HIRAGANA,,,久痾,きゅうあ,,kyuua,przewlekła choroba,,,,"GroupId: 1231460
 Translate: persistent disease"
 208366,WORD_NOUN,,HIRAGANA,,,３密,さんみつ,,san mitsu,trzy tajemnice,"ciało Buddy, mowa i rozum",,,"GroupId: 2271630
 Translate: three mysteries (Buddha's body, speech and mind)"
-208367,WORD_NOUN,,HIRAGANA,,,同人雑誌,どうにんざっし,,dounin zasshi,magazyn o społeczeństwie,,,,"GroupId: 1452800
+208367,WORD_NOUN,,HIRAGANA,,,同人雑誌,どうにんざっし,,dounin zasshi,magazyn o społeczeństwie,,,DUPLICATE 165870,"GroupId: 1452800
 Translate: magazine of a society"
 208368,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,進退谷まる,しんたいきわまる,,shintai kiwamaru,"być w rozterce
@@ -34100,10 +34133,10 @@ nie wiedzieć co począć
 być w sytuacji bez wyjścia",,,,"GroupId: 1884050
 Translate: to be at a loss
 Translate: to be in a corner"
-208369,WORD_NOUN,,KATAKANA,,,火鍋子,ホーコーズ,,hookoozu,potrawa z jarzynami,"chińska potrawa, chin: huo guo zi",,,"GroupId: 2186000
+208369,WORD_NOUN,,KATAKANA,,,火鍋子,ホーコーズ,,hookoozu,potrawa z jarzynami,"chińska potrawa, chin: huo guo zi",,DUPLICATE 177587,"GroupId: 2186000
 Translate: hotpot (Chinese dish)"
 208370,WORD_NOUN,,KATAKANA,,,-,グロサリー,,gurosarii,"słowniczek
-glosariusz",ang: glossary,,,"GroupId: 1047810
+glosariusz",ang: glossary,,DUPLICATE 208374,"GroupId: 1047810
 Translate: glossary"
 208371,WORD_NOUN,,HIRAGANA,,,老々介護,ろうろうかいご,,rourou kaigo,osoby starsze sprawującą opiekę nad osobami starszymi,"np. rodzicami, rodzeństwem, teściami i etc",,,"GroupId: 2834071
 Translate: old people providing care for old people (parents, siblings, in-laws, etc.)"
@@ -34129,9 +34162,13 @@ Translate: quick understanding
 Translate: easy to understand
 Translate: handbook
 Translate: guidebook"
-208374,WORD_NOUN,,KATAKANA,,,-,グロサリー,,gurosarii,sklep spożywczy,ang: grocery,,,"GroupId: 2486430
+208374,WORD_NOUN,,KATAKANA,,,-,グロサリー,,gurosarii,sklep spożywczy,ang: grocery,,DUPLICATE 208370,"GroupId: 2486430
 Translate: grocery"
-208375,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,-,そん,,son,ten,blisko osoby docelowej (z rzeczownikiem),,,"GroupId: 1006830
+208375,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,-,そん,,son,ten,blisko osoby docelowej (z rzeczownikiem),,"DUPLICATE 5369
+DUPLICATE 15845
+DUPLICATE 69589
+DUPLICATE 203359
+DUPLICATE 204127","GroupId: 1006830
 Translate: that
 MiscInfo: uk
 AdditionalInfo: something or someone distant from the speaker, close to the listener; actions of the listener, or ideas expressed or understood by the listener
@@ -34141,20 +34178,29 @@ AdditionalInfo: something or someone distant from the speaker, close to the list
 208376,WORD_NOUN,,HIRAGANA,,,羽,は,,ha,"pióro
 pierze
 puch
-skrzydło (szczególnie 翅 odnoszące się do skrzydła owada)",,,,"GroupId: 1171680
+skrzydło (szczególnie 翅 odnoszące się do skrzydła owada)",,,"DUPLICATE 2520
+DUPLICATE 11859
+DUPLICATE 25493
+DUPLICATE 25565
+DUPLICATE 25566
+DUPLICATE 35471
+DUPLICATE 43335","GroupId: 1171680
 Translate: feather
 Translate: plume
 Translate: down
 Translate: wing
 AdditionalInfo: 翅 esp. refers to insect wings"
-208377,WORD_COUNTER,,HIRAGANA,,,粒,りゅう,,ryuu,"klasyfikator na małe, okrągłe przedmioty, jak np: ziarna, nasiona, pigułki, krople i etc",,,,"GroupId: 1552890
+208377,WORD_COUNTER,,HIRAGANA,,,粒,りゅう,,ryuu,"klasyfikator na małe, okrągłe przedmioty, jak np: ziarna, nasiona, pigułki, krople i etc",,,"DUPLICATE 8284
+DUPLICATE 29959
+DUPLICATE 29960","GroupId: 1552890
 Translate: counter for small round objects including grains, seeds, pills, drops"
-208378,WORD_NOUN,,HIRAGANA,,,簾,す,,su,bambusowa zasłona,ok,,,"GroupId: 1559100
+208378,WORD_NOUN,,HIRAGANA,,,簾,す,,su,bambusowa zasłona,ok,,"DUPLICATE 35678
+DUPLICATE 74016","GroupId: 1559100
 Translate: bamboo screen
 MiscInfo: uk
 Translate: rattan blind
 MiscInfo: uk"
-208379,"WORD_NOUN
-WORD_PREFIX",,KATAKANA,,,浬,ノット,,notto,węzeł,mil morskich na godzinę,,,"GroupId: 1386150
+208379,WORD_NOUN,,KATAKANA,,,浬,ノット,,notto,węzeł,mil morskich na godzinę,,"DUPLICATE 20867
+DUPLICATE 69470","GroupId: 1386150
 Translate: knot (nautical mile per hour)
 MiscInfo: uk"
