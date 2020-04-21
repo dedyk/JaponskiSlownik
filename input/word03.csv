@@ -34637,7 +34637,7 @@ Translate: panentheism"
 208496,WORD_NOUN,,KATAKANA_HIRAGANA,,,ウミグモ類,ウミグモるい,,umigumo rui,"kikutnice
 morskie pająki",Pycnogonida,,,"GroupId: 2530780
 Translate: sea spiders (Pycnogonida spp.)"
-208497,WORD_NOUN,,HIRAGANA,,,茅潜,かやくぐり,,kayakuguri,płochacz śniady,"gatunek ptaka, Prunella rubida",,,"GroupId: 2240980
+208497,WORD_NOUN,,HIRAGANA,,,茅潜,かやくぐり,,kayaku guri,płochacz śniady,"gatunek ptaka, Prunella rubida",,,"GroupId: 2240980
 Translate: Japanese accentor (Prunella rubida)
 MiscInfo: uk"
 208498,WORD_NOUN,,HIRAGANA,,,蠍擬,さそりもどき,,sasorimodoki,Thelyphonida,gatunek pajęczaków,,,"GroupId: 2241660
@@ -34731,16 +34731,24 @@ Translate: board thickness"
 Translate: visitor at hot springs resort"
 208525,WORD_EXPRESSION,,HIRAGANA,,,示しがつかない,しめしがつかない,,shimeshi ga tsukanai,dawanie innym złego przykładu,,,,"GroupId: 2125720
 Translate: setting a bad example to others"
-208526,WORD_COUNTER,,HIRAGANA,,,波,は,,ha,klasyfikator na fale (powtarzające się zjawiska),,,,"GroupId: 2844141
+208526,WORD_COUNTER,,HIRAGANA,,,波,は,,ha,klasyfikator na fale (powtarzające się zjawiska),,,"DUPLICATE 5903
+DUPLICATE 11859
+DUPLICATE 35471
+DUPLICATE 53340","GroupId: 2844141
 Translate: counter for waves (of a repeated occurrence)"
 208527,"WORD_NOUN
 WORD_NOUN_SUFFIX",,HIRAGANA,,,禍,か,,ka,"klęska
 katastrofa
-nieszczęście",,,,"GroupId: 2844158
+nieszczęście",,,"DUPLICATE 769
+DUPLICATE 8296
+DUPLICATE 53491","GroupId: 2844158
 Translate: disaster
 Translate: calamity
 Translate: misfortune"
-208528,WORD_NOUN,,HIRAGANA,,,霊,りょう,,ryou,mściwy duch,archaizm,,,"GroupId: 2844111
+208528,WORD_NOUN,,HIRAGANA,,,霊,りょう,,ryou,mściwy duch,archaizm,,"DUPLICATE 5853
+DUPLICATE 5854
+DUPLICATE 66381
+DUPLICATE 208546","GroupId: 2844111
 Translate: vengeful spirit
 MiscInfo: arch
 Translate: revengeful ghost
@@ -34748,7 +34756,8 @@ MiscInfo: arch"
 208529,WORD_NOUN,,HIRAGANA,,,幼,よう,,you,"wczesne dzieciństwo
 dzieciństwo
 niemowlę
-dziecko",zwykle jako 幼にして,,,"GroupId: 2844069
+dziecko",zwykle jako 幼にして,,"DUPLICATE 12400
+DUPLICATE 91232","GroupId: 2844069
 Translate: infancy
 AdditionalInfo: usu. as 幼にして
 Translate: childhood
@@ -34757,5 +34766,62 @@ Translate: infant
 AdditionalInfo: usu. as 幼にして
 Translate: child
 AdditionalInfo: usu. as 幼にして"
-208530,WORD_NOUN,,HIRAGANA,,,俑,よう,,you,figura terakotowa,w grobowcach dynastii Qin w Chinach,,,"GroupId: 2844074
+208530,WORD_NOUN,,HIRAGANA,,,俑,よう,,you,figura terakotowa,w grobowcach dynastii Qin w Chinach,,DUPLICATE 12400,"GroupId: 2844074
 Translate: terra-cotta figure (in Qin dynasty tombs in China)"
+208531,WORD_NOUN,,KATAKANA,,,-,チャイロサナギガイ,,chairo sanagigai,poczwarówka pospolita,"gatunek małego, lądowego ślimaka trzonkoocznego z rodziny poczwarkowatych, Pupilla muscorum",,,"GroupId: 2673290
+Translate: widespread column (species of land snail, Pupilla muscorum)
+MiscInfo: uk"
+208532,WORD_NOUN,,HIRAGANA_KATAKANA,,,１パイント,いちパイント,,ichi painto,jeden kufel,,,,"GroupId: 2396340
+Translate: one pint"
+208533,WORD_NOUN,,KATAKANA,,,-,センモウヒラムシ,,senmou hiramushi,Trichoplax adhaerens,"gatunek małego, wielokomórkowego, zwierzęcia morskiego",,,"GroupId: 2705090
+Translate: Trichoplax adhaerens
+MiscInfo: uk"
+208534,WORD_NOUN,,KATAKANA,,,大不列顚,グレートブリテン,,gureeto buriten,Wielka Brytania (wyspa),ang: Great Britain,,,"GroupId: 2274150
+Translate: Great Britain (island)
+MiscInfo: uk"
+208535,WORD_NOUN,,HIRAGANA,,,海蜘蛛類,うみぐもるい,,umigumo rui,"kikutnice
+morskie pająki",Pycnogonida,,,"GroupId: 2530780
+Translate: sea spiders (Pycnogonida spp.)"
+208536,WORD_NOUN,,HIRAGANA,,,茅潜り,かやくぐり,,kayaku guri,płochacz śniady,"gatunek ptaka, Prunella rubida",,,"GroupId: 2240980
+Translate: Japanese accentor (Prunella rubida)
+MiscInfo: uk"
+208537,WORD_NOUN,,KATAKANA,,,-,カヤクグリ,,kayaku guri,płochacz śniady,"gatunek ptaka, Prunella rubida",,,"GroupId: 2240980
+Translate: Japanese accentor (Prunella rubida)
+MiscInfo: uk"
+208538,WORD_NOUN,,KATAKANA,,,-,サソリモドキ,,sasorimodoki,Thelyphonida,gatunek pajęczaków,,,"GroupId: 2241660
+Translate: whip scorpion (Thelyphonida spp.)
+MiscInfo: uk"
+208539,WORD_NOUN,,KATAKANA,,,-,アシダカグモ,,ashidaka gumo,heteropoda venatoria,"gatunek dużego pająka z rodziny spachaczowatych, Heteropoda venatoria",,,"GroupId: 2241990
+Translate: huntsman spider (Heteropoda venatoria)
+MiscInfo: uk"
+208540,WORD_NOUN,,KATAKANA,,,-,アミメニシキヘビ,,amime nishikihebi,pyton siatkowy,"gatunek węża z rodziny Pythonidae, Python reticulatus",,,"GroupId: 2242220
+Translate: reticulated python (Python reticulatus)
+MiscInfo: uk"
+208541,WORD_NOUN,,KATAKANA,,,-,アメリカヒドリ,,amerika hidori,świstun amerykański,"gatunek ptaka z rodziny kaczkowatych, Anas americana",,,"GroupId: 2247160
+Translate: American wigeon (Anas americana)
+MiscInfo: uk"
+208542,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,曇った声,くぐもったこえ,,kugumotta koe,stłumiony głos,,,,"GroupId: 2056270
+Translate: muffled voice"
+208543,WORD_NOUN,,HIRAGANA,,,舫い綱,もやいづな,,moyai duna,"lina cumownicza
+cuma",,,,"GroupId: 2828955
+Translate: mooring line
+Translate: mooring rope
+Translate: painter"
+208544,WORD_VERB_U,,HIRAGANA,,,暮れ掛かる,くれかかる,,kure kakaru,"zacząć ściemniać się
+zacząć zachodzić słońce",,,,"GroupId: 2829387
+Translate: to begin to get dark
+Translate: to begin to set (the Sun)"
+208545,WORD_VERB_U,,HIRAGANA,,,暮れ懸る,くれかかる,,kure kakaru,"zacząć ściemniać się
+zacząć zachodzić słońce",,,,"GroupId: 2829387
+Translate: to begin to get dark
+Translate: to begin to set (the Sun)"
+208546,WORD_NOUN,,HIRAGANA,,,霊,ろう,,rou,mściwy duch,archaizm,,"DUPLICATE 5853
+DUPLICATE 5854
+DUPLICATE 66381
+DUPLICATE 165207
+DUPLICATE 208528","GroupId: 2844111
+Translate: vengeful spirit
+MiscInfo: arch
+Translate: revengeful ghost
+MiscInfo: arch"
