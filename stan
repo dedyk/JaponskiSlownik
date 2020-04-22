@@ -9,5 +9,3 @@
 * uzupełniacz - x
 -----------
 suma: 70
-
-sugestia
