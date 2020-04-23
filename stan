@@ -9,6 +9,3 @@
 uzupełniacz - 8
 -----------
 suma: 70
-
-208366
-mitsu
