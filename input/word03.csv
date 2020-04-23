@@ -33934,7 +33934,7 @@ DUPLICATE 27820
 DUPLICATE 64628",
 208307,WORD_NOUN,,HIRAGANA,,,隷,しもべ,,shimobe,"służący
 sługa
-poddany",,,,
+poddany",,,DUPLICATE 208673,
 208308,WORD_NOUN,,HIRAGANA,,,後妻,こうさい,,kousai,druga żona,,,"DUPLICATE 4045
 DUPLICATE 198101",
 208309,WORD_VERB_U,,HIRAGANA,,,酔う,えう,,eu,"upić się
@@ -33979,7 +33979,8 @@ WORD_NUMBER",,HIRAGANA,,,釐,り,,ri,"rin (jednostka monetarna 1/1000 jena)
 rin (jednostka długości ok. 0,3 mm)",,,,
 208315,WORD_NOUN,,HIRAGANA_KATAKANA,,,１ミリ,いちミリ,,ichi miri,jeden milimetr,,,,
 208316,WORD_NOUN,,KATAKANA,,,留,ルーブリ,,ruuburi,"rubel
-ruble",rosyjska waluta,,DUPLICATE 13658,"GroupId: 2844189
+ruble",rosyjska waluta,,"DUPLICATE 13658
+DUPLICATE 208669","GroupId: 2844189
 Translate: ruble (Russian currency)
 MiscInfo: uk
 Translate: rouble
@@ -35310,10 +35311,11 @@ Translate: futures price
 Translate: futures quotation"
 208668,WORD_NOUN,,HIRAGANA,,,腕先,うでさき,,udesaki,koniec ramienia,,,,"GroupId: 2833761
 Translate: end of arm"
-208669,WORD_NOUN,,HIRAGANA,,,留,りゅう,,ryuu,???,astronomia,,,"GroupId: 2844190
+208669,WORD_NOUN,,HIRAGANA,,,留,りゅう,,ryuu,???,astronomia,,"DUPLICATE 13658
+DUPLICATE 208316","GroupId: 2844190
 Translate: stationary"
 208670,WORD_NOUN,,HIRAGANA,,,欄,おばしま,,obashima,"poręcz
-balustrada",archaizm,,,"GroupId: 2844081
+balustrada",archaizm,,DUPLICATE 7968,"GroupId: 2844081
 Translate: handrail
 MiscInfo: arch
 Translate: railing
@@ -35327,7 +35329,7 @@ wielkie oświecenie
 bardzo przebudzona osoba
 rozumienie
 pojmowanie
-zrozumienie",,,,"GroupId: 2844103
+zrozumienie",,,DUPLICATE 208697,"GroupId: 2844103
 Translate: great awakening
 Translate: great enlightening
 Translate: greatly awakened person
@@ -35338,7 +35340,8 @@ WORD_NOUN_SUFFIX",,HIRAGANA,,,賃,ちん,,chin,"wynajem (opłata)
 opłata
 fracht (koszt przewozu)
 płatność
-opłacenie",,,,"GroupId: 2844192
+opłacenie",,,"DUPLICATE 87683
+DUPLICATE 87684","GroupId: 2844192
 Translate: hire (charge)
 Translate: rent
 Translate: charge
@@ -35347,7 +35350,7 @@ Translate: fee
 Translate: freight
 Translate: wages
 Translate: payment"
-208673,WORD_NOUN,,HIRAGANA,,,隷,れい,,rei,pismo urzędnicze,"starożytny, wysoce kanciasty styl kanji, skrót",,,"GroupId: 2844147
+208673,WORD_NOUN,,HIRAGANA,,,隷,れい,,rei,pismo urzędnicze,"starożytny, wysoce kanciasty styl kanji, skrót",,DUPLICATE 208307,"GroupId: 2844147
 Translate: clerical script (ancient, highly angular style of kanji)
 MiscInfo: abbr"
 208674,WORD_NOUN,,HIRAGANA,,,痢,り,,ri,biegunka,archaizm,,,"GroupId: 2844083
@@ -35376,7 +35379,8 @@ MiscInfo: obs
 Translate: endless
 MiscInfo: obs"
 208676,"WORD_NOUN
-WORD_COUNTER",,HIRAGANA,,,緡,さし,,sashi,???,,,,"GroupId: 2844196
+WORD_COUNTER",,HIRAGANA,,,緡,さし,,sashi,???,,,"DUPLICATE 69855
+DUPLICATE 208698","GroupId: 2844196
 Translate: slender rope that goes through the hole in a coin
 Translate: string of coins (usu. 100 mon)"
 208677,"WORD_NOUN
@@ -35391,3 +35395,113 @@ Translate: league
 Translate: administrative subdivision in Mongolia and Inner Mongolia"
 208678,WORD_NOUN,,HIRAGANA,,,酪,らく,,raku,kwaśny napój wykonany ze sfermentowanego mleka,"np. krowy, owcy, klaczy; jeden z pięciu smaków w buddyzmie",,,"GroupId: 2844079
 Translate: acidic drink made from fermented milk (cow, sheep, mare; one of the five flavors in Buddhism)"
+208679,WORD_EXPRESSION,,KATAKANA_HIRAGANA,,,ナメクジに塩,ナメクジにしお,,namekuji ni shio,"przybity
+przygnębiony
+strapiony
+zdeprymowany
+pomarszczony (jak ślimak posypany solą)",wyrażenie idiomatyczne,,,"GroupId: 2793610
+Translate: crestfallen
+MiscInfo: id
+Translate: dejected
+MiscInfo: id
+Translate: shriveled (like a slug sprinkled with salt)
+MiscInfo: id"
+208680,WORD_NOUN,,KATAKANA,,,-,ヒラクサ,,hirakusa,Ptilophora subcostata,gatunek krasnorostu (glonu),,,"GroupId: 2764590
+Translate: Ptilophora subcostata (species of red alga)
+MiscInfo: uk"
+208681,WORD_NOUN,,KATAKANA,,,-,フサオマキザル,,fusao makizaru,"kapucynka czubata
+płaksa","gatunek ssaka naczelnego z rodziny płaksowatych, Cebus apella",,,"GroupId: 2197870
+Translate: brown capuchin
+MiscInfo: uk
+Translate: tufted capuchin (Cebus apella)
+MiscInfo: uk"
+208682,WORD_ADVERB,,HIRAGANA,,,-,がちっと,,gachitto,z odgłosem stuknięcia lub brzęczenia,,,,"GroupId: 2160120
+Translate: with a clashing or clanging sound
+MiscInfo: on-mim"
+208683,WORD_NOUN,,HIRAGANA,,,反台鉋,そりだいかんな,,sori daikanna,drewniana płaszczyzna z wypukłą podstawą zakrzywioną w kierunku cięcia,,,,"GroupId: 2113650
+Translate: wooden plane with a convex base curved in the cutting direction"
+208684,WORD_NOUN,,HIRAGANA,,,反り台かんな,そりだいかんな,,sori daikanna,drewniana płaszczyzna z wypukłą podstawą zakrzywioną w kierunku cięcia,,,,"GroupId: 2113650
+Translate: wooden plane with a convex base curved in the cutting direction"
+208685,WORD_NOUN,,HIRAGANA,,,反台かんな,そりだいかんな,,sori daikanna,drewniana płaszczyzna z wypukłą podstawą zakrzywioną w kierunku cięcia,,,,"GroupId: 2113650
+Translate: wooden plane with a convex base curved in the cutting direction"
+208686,WORD_NOUN,,KATAKANA,,,-,コーレーグース,,kooreeguusu,"pieprz turecki
+papryka roczna
+papryka chili
+papryka cayenne
+pieprz cayenne",dialekt Ryuukyuu,,,"GroupId: 2262730
+Translate: capsicum
+MiscInfo: uk
+Dialect: rkb
+Translate: chili pepper (chile, chilli)
+MiscInfo: uk
+Dialect: rkb
+Translate: cayenne
+MiscInfo: uk
+Dialect: rkb
+Translate: red pepper
+MiscInfo: uk
+Dialect: rkb"
+208687,WORD_NOUN,,KATAKANA,,,-,コーレーグス,,kooreegusu,"pieprz turecki
+papryka roczna
+papryka chili
+papryka cayenne
+pieprz cayenne",dialekt Ryuukyuu,,,"GroupId: 2262730
+Translate: capsicum
+MiscInfo: uk
+Dialect: rkb
+Translate: chili pepper (chile, chilli)
+MiscInfo: uk
+Dialect: rkb
+Translate: cayenne
+MiscInfo: uk
+Dialect: rkb
+Translate: red pepper
+MiscInfo: uk
+Dialect: rkb"
+208688,WORD_NOUN,,KATAKANA,,,-,クルマバソウ,,kurumabasou,"przytulia wonna
+marzanka wonna","gatunek rośliny wieloletniej należący do rodziny marzanowatych, Asperula odorata",,,"GroupId: 2262940
+Translate: sweet woodruff (Asperula odorata)
+MiscInfo: uk"
+208689,WORD_NOUN,,KATAKANA,,,-,アメリカシロヒトリ,,amerika shirohitori,oprzędnica jesienna,"gatunek motyla z rodziny mrocznicowatych i podrodziny niedźwiedziówkowatych, Hyphantria cunea",,,"GroupId: 2263170
+Translate: fall webworm (Hyphantria cunea)
+MiscInfo: uk"
+208690,WORD_NOUN,,KATAKANA,,,-,キンバト,,kinbato,miedzianka szmaragdowa,"gatunek średniej wielkości ptaka z rodziny gołębiowatych, podrodziny treronów, Chalcophaps indica",,,"GroupId: 2263490
+Translate: emerald dove (Chalcophaps indica)
+MiscInfo: uk"
+208691,WORD_NOUN,,KATAKANA,,,-,トノサマバッタ,,tonosamabatta,szarańcza wędrowna,"szeroko rozprzestrzeniony gatunek owada prostoskrzydłego z rodziny szarańczowatych, znany z całej półkuli wschodniej, Locusta migratoria",,,"GroupId: 2269280
+Translate: migratory locust (Locusta migratoria)
+MiscInfo: uk"
+208692,WORD_ADJECTIVE_F,,HIRAGANA,,,忘れえぬ,わすれえぬ,,wasure enu,niezapomniany,,,,"GroupId: 2827699
+Translate: unforgettable"
+208693,WORD_NOUN,,HIRAGANA,,,のたれ死に,のたれじに,,notare ji ni,"umieranie przy drodze
+umieranie śmiercią psa",wrażliwie,,,"GroupId: 1711960
+Translate: dying by the roadside
+MiscInfo: sens
+Translate: dying a dog's death
+MiscInfo: sens"
+208694,WORD_NOUN,,HIRAGANA,,,四強,よんきょう,,yonkyou,"półfinaliści
+finałowa czwórka (w turnieju)",,,,"GroupId: 2595240
+Translate: semifinalists
+Translate: final four (in a tournament)"
+208695,WORD_NOUN,,HIRAGANA,,,荷送り,におくり,,niokuri,"wysyłka
+ekspedycja
+partia towaru
+przesyłka",,,,"GroupId: 1599790
+Translate: consignment"
+208696,WORD_NOUN,,HIRAGANA,,,合掌造,がっしょうづくり,,gasshoudukuri,tradycyjny styl japońskiej architektury ze stromy dachem pokryty strzechą,,,,"GroupId: 1683810
+Translate: traditional style of Japanese architecture with a steep thatched roof"
+208697,WORD_NOUN,,HIRAGANA,,,大覚,だいがく,,daigaku,"wielkie przebudzenie
+wielkie oświecenie
+bardzo przebudzona osoba
+rozumienie
+pojmowanie
+zrozumienie",,,DUPLICATE 208671,"GroupId: 2844103
+Translate: great awakening
+Translate: great enlightening
+Translate: greatly awakened person
+Translate: understanding
+Translate: comprehension"
+208698,"WORD_NOUN
+WORD_COUNTER",,HIRAGANA,,,緡,びん,,bin,???,,,DUPLICATE 208676,"GroupId: 2844196
+Translate: slender rope that goes through the hole in a coin
+Translate: string of coins (usu. 100 mon)"
