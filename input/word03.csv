@@ -34202,7 +34202,8 @@ DUPLICATE 29959
 DUPLICATE 29960","GroupId: 1552890
 Translate: counter for small round objects including grains, seeds, pills, drops"
 208378,WORD_NOUN,,HIRAGANA,,,簾,す,,su,bambusowa zasłona,ok,,"DUPLICATE 35678
-DUPLICATE 74016","GroupId: 1559100
+DUPLICATE 74016
+DUPLICATE 208748","GroupId: 1559100
 Translate: bamboo screen
 MiscInfo: uk
 Translate: rattan blind
@@ -35589,7 +35590,7 @@ MiscInfo: uk"
 208727,WORD_NOUN,,HIRAGANA,,,難波薔薇,なにわいばら,,naniwaibara,róża gładka,"kwiat, Rosa laevigata",,,"GroupId: 2400210
 Translate: Cherokee rose (Rosa laevigata)
 MiscInfo: uk"
-208728,WORD_NOUN,,HIRAGANA,,,本石楠花,ほんしゃくなげ,,honshaku nage,Rhododendron metternichii,roślina,,,"GroupId: 2400650
+208728,WORD_NOUN,,HIRAGANA,,,本石楠花,ほんしゃくなげ,,hon shakunage,Rhododendron metternichii,roślina,,,"GroupId: 2400650
 Translate: Rhododendron metternichii
 MiscInfo: uk"
 208729,WORD_NOUN,,HIRAGANA,,,原価計算,げんかけいさん,,genka keisan,"rachunek kosztów
@@ -35638,7 +35639,7 @@ Translate: tricky"
 208741,WORD_NOUN,,HIRAGANA,,,病垂れ,やまいだれ,,yamaidare,chorobowy rodnik,,,,"GroupId: 1913390
 Translate: illness radical"
 208742,WORD_NOUN,,HIRAGANA,,,御息所,みやすどころ,,miyasudokoro,"konkubina cesarza
-służąca na dworze, który służy w cesarskiej sypialni",,,,"GroupId: 2838272
+służąca na dworze, który służy w cesarskiej sypialni",,,DUPLICATE 208767,"GroupId: 2838272
 Translate: concubine of an emperor
 Translate: female court attendant who serves in the emperor's bedchamber"
 208743,WORD_NOUN,,HIRAGANA,,,洛,らく,,raku,stolica,"szczególnie Kioto, archaizm",,,"GroupId: 2844080
@@ -35647,7 +35648,7 @@ MiscInfo: arch"
 208744,WORD_NOUN,,HIRAGANA,,,悶,もん,,mon,"męczarnia
 udręka
 boleść
-cierpienie",mało znane słowo,,,"GroupId: 2844032
+cierpienie",mało znane słowo,,DUPLICATE 32264,"GroupId: 2844032
 Translate: agony
 MiscInfo: obsc
 Translate: anguish
@@ -35659,20 +35660,24 @@ MiscInfo: arch
 Translate: food held in one's mouth
 MiscInfo: arch"
 208746,WORD_NOUN,,HIRAGANA,,,廬,ろ,,ro,"mały dom
-chata pokryta strzechą",mało znane słowo,,,"GroupId: 2844156
+chata pokryta strzechą",mało znane słowo,,"DUPLICATE 31799
+DUPLICATE 31800
+DUPLICATE 165173","GroupId: 2844156
 Translate: small house
 MiscInfo: obsc
 Translate: thatched hut
 MiscInfo: obsc"
 208747,WORD_NOUN,,HIRAGANA,,,艫,ろ,,ro,"rufa (statku)
 dziób (statku)
-dziób okrętu",,,,"GroupId: 2844157
+dziób okrętu",,,"DUPLICATE 87092
+DUPLICATE 165173","GroupId: 2844157
 Translate: stern (of a ship)
 Translate: bow (of a ship)
 Translate: prow"
 208748,"WORD_NOUN
 WORD_COUNTER",,HIRAGANA,,,簾,れん,,ren,"bambusowa zasłona
-żaluzja rattanowa",mało znane słowo,,,"GroupId: 2844155
+żaluzja rattanowa",mało znane słowo,,"DUPLICATE 74016
+DUPLICATE 208378","GroupId: 2844155
 Translate: bamboo screen
 MiscInfo: obsc
 Translate: rattan blind
@@ -35721,13 +35726,45 @@ Translate: roadside
 MiscInfo: obsc"
 208754,WORD_NOUN,,HIRAGANA,,,羅衣,らい,,rai,cienka jedwabna odzież,,,,"GroupId: 2844076
 Translate: thin silk garment"
-208755,WORD_NOUN,,HIRAGANA,,,国名,くにな,,kunina,nazwa kraju lub regionu używana na ludzi,"na dworze w okresie Heian, historyczny termin",,,"GroupId: 2844167
+208755,WORD_NOUN,,HIRAGANA,,,国名,くにな,,kunina,nazwa kraju lub regionu używana na ludzi,"na dworze w okresie Heian, historyczny termin",,DUPLICATE 19657,"GroupId: 2844167
 Translate: country or region name used for people (in the Heian period court)
 MiscInfo: hist"
 208756,WORD_NOUN,,HIRAGANA,,,都道,とどう,,todou,tokijska gminna droga,,,,"GroupId: 2844021
 Translate: Tokyo municipal road"
 208757,WORD_NOUN,,HIRAGANA,,,感染拡大,かんせんかくだい,,kansen kakudai,rozprzestrzenianie się infekcji,,,,"GroupId: 2844168
 Translate: spread of infection"
-208758,WORD_NOUN,,HIRAGANA,,,全有機炭素,ぜんゆうきたんそ,,zenyuki tanso,"węgiel organiczny
+208758,WORD_NOUN,,HIRAGANA,,,全有機炭素,ぜんゆうきたんそ,,zen'yuuki tanso,"węgiel organiczny
 całkowity węgiel organiczny
 ogólny węgiel organiczny (OWO)",węgiel znajdujący się w związkach organicznych,IGNORE_NO_JMEDICT,,
+208759,WORD_NOUN,,HIRAGANA,,,寄植え,よせうえ,,yose ue,kwiaty posadzone razem,,,,"GroupId: 2799360
+Translate: flowers planted together"
+208760,WORD_NOUN,,HIRAGANA,,,仮鱗茎,ぎりんけい,,girinkei,"pseudobulwa
+nibybulwa",botanika,,,"GroupId: 2828488
+Translate: pseudobulb"
+208761,WORD_NOUN,,KATAKANA,,,-,ニチニチソウ,,nichi nichi sou,"katarantus różowy
+barwinek różowy","gatunek rośliny należący do rodziny toinowatych, endemicznie występujący na Madagaskarze, Catharanthus roseus",,,"GroupId: 2269860
+Translate: Madagascar periwinkle (Catharanthus roseus)
+MiscInfo: uk"
+208762,WORD_NOUN,,KATAKANA,,,-,ヒトクローン,,hito kuroon,ludzki klon,,,,"GroupId: 2270980
+Translate: human clone
+MiscInfo: uk"
+208763,WORD_NOUN,,KATAKANA,,,-,モヨウビユ,,moyoubiyu,Alternanthera ficoidea,roślina,,,"GroupId: 2273320
+Translate: calico plant (Alternanthera ficoidea)
+MiscInfo: uk"
+208764,WORD_NOUN,,KATAKANA,,,-,ナニワイバラ,,naniwaibara,róża gładka,"kwiat, Rosa laevigata",,,"GroupId: 2400210
+Translate: Cherokee rose (Rosa laevigata)
+MiscInfo: uk"
+208765,WORD_NOUN,,KATAKANA,,,-,ホンシャクナゲ,,hon shakunage,Rhododendron metternichii,roślina,,,"GroupId: 2400650
+Translate: Rhododendron metternichii
+MiscInfo: uk"
+208766,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,顎が干上がる,あごがひあがる,,ago ga hi agaru,stracić środki do życia,,,,"GroupId: 2249920
+Translate: to lose one's means of livelihood
+Translate: to become unable to earn a living"
+208767,WORD_NOUN,,HIRAGANA,,,御息所,みやすんどころ,,miyasundokoro,"konkubina cesarza
+służąca na dworze, który służy w cesarskiej sypialni",,,DUPLICATE 208742,"GroupId: 2838272
+Translate: concubine of an emperor
+Translate: female court attendant who serves in the emperor's bedchamber"
+208768,WORD_NOUN,,HIRAGANA,,,雒,らく,,raku,stolica,"szczególnie Kioto, archaizm",,,"GroupId: 2844080
+Translate: the capital (esp. Kyoto)
+MiscInfo: arch"
