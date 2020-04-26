@@ -9,7 +9,3 @@ ludzie - 25
 uzupełniacz - x
 -----------
 suma: 70
-
-=====
-バレッタ
-Valetta (stolica Malty)
