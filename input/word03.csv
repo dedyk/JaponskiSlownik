@@ -34182,7 +34182,7 @@ AdditionalInfo: something or someone distant from the speaker, close to the list
 Translate: the
 MiscInfo: uk
 AdditionalInfo: something or someone distant from the speaker, close to the listener; actions of the listener, or ideas expressed or understood by the listener"
-208376,WORD_NOUN,,KATAKANA,,,Ｊａｖａ,ジャバ,,jaba,Java,język programowania,,,"GroupId: 2843839
+208376,WORD_NOUN,,KATAKANA,,,Ｊａｖａ,ジャバ,,jaba,Java,język programowania,,DUPLICATE 74320,"GroupId: 2843839
 Translate: Java (programming language)
 AdditionalInfo: trademark"
 208377,WORD_COUNTER,,HIRAGANA,,,粒,りゅう,,ryuu,"klasyfikator na małe, okrągłe przedmioty, jak np: ziarna, nasiona, pigułki, krople i etc",,,"DUPLICATE 8284
@@ -36479,7 +36479,10 @@ Translate: sincerity"
 podróżny
 wędrowiec
 wędrownik
-turysta",,,,"GroupId: 1553210
+turysta",,,"DUPLICATE 7511
+DUPLICATE 29620
+DUPLICATE 55113
+DUPLICATE 208947","GroupId: 1553210
 Translate: traveller
 Translate: traveler
 Translate: wayfarer
@@ -36488,12 +36491,16 @@ Translate: tourist"
 podróżny
 wędrowiec
 wędrownik
-turysta",,,,"GroupId: 1553210
+turysta",,,"DUPLICATE 7511
+DUPLICATE 29620
+DUPLICATE 55113
+DUPLICATE 208946","GroupId: 1553210
 Translate: traveller
 Translate: traveler
 Translate: wayfarer
 Translate: tourist"
-208948,WORD_NOUN,,HIRAGANA,,,世論,せいろん,,seiron,opinia publiczna,,,,
+208948,WORD_NOUN,,HIRAGANA,,,世論,せいろん,,seiron,opinia publiczna,,,"DUPLICATE 11656
+DUPLICATE 30807",
 208949,WORD_NOUN,,HIRAGANA,,,羽子突き,はねつき,,hane tsuki,hanetsuki,tradycyjna japońska zabawa noworoczna,,,
 208950,WORD_NOUN,,HIRAGANA,,,成りゆき,なりゆき,,nari yuki,"wynik
 rezultat
@@ -36512,9 +36519,10 @@ Translate: hard-rock"
 208953,WORD_NOUN,,HIRAGANA,,,耳癈,みみしい,,mimishii,głuchota,,,,
 208954,WORD_NOUN,,KATAKANA,,,-,ポーラー・タイ,,pooraa tai,krawat bolo,,,,
 208955,WORD_NOUN,,HIRAGANA,,,太山,たいざん,,taizan,"wielka góra
-ogromna góra",,,,"GroupId: 1785260
+ogromna góra",,,DUPLICATE 208965,"GroupId: 1785260
 Translate: great mountain"
-208956,WORD_NOUN,,HIRAGANA,,,行幸,ぎょうごう,,gyougou,cesarska wizyta,,,,
+208956,WORD_NOUN,,HIRAGANA,,,行幸,ぎょうごう,,gyougou,cesarska wizyta,,,"DUPLICATE 51028
+DUPLICATE 51053",
 208957,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,怖い物見たさ,こわいものみたさ,,kowai mono mitasa,"gapienie się
 patrzenie z dreszczem na coś strasznego lub nieprzyjemnego i chcieć patrzeć na to więcej",,,,
@@ -36530,12 +36538,12 @@ wezbrane morze",,,,
 WORD_NOUN",,HIRAGANA,,,僭上,せんしょう,,senshou,"czelność
 bezczelność
 arogancja
-pewność siebie",,,,
+pewność siebie",,,DUPLICATE 72983,
 208962,WORD_EXPRESSION,,HIRAGANA,,,-,にゃあ,,nyaa,"jeśli nie … (przeczący tryb warunkowy, po czasowniku w formie przeczącej w formie bez masu, kolokwializm)
 musieć zrobić (po czasowniku w formie przeczącej w formie bez masu, kolokwializm)
 do (kolokwializm)
 dla (w odniesieniu do, kolokwializm)
-w celu (kolokwializm)",,,,"GroupId: 2264280
+w celu (kolokwializm)",,,DUPLICATE 62027,"GroupId: 2264280
 Translate: if not ...
 MiscInfo: col
 AdditionalInfo: after neg. verb stem
@@ -36571,7 +36579,7 @@ AdditionalInfo: orig. meaning"
 WORD_PROPER_NOUN",,HIRAGANA,,,太山,たいざん,,taizan,"duża góra
 ogromna góra
 góra Tai (w Chinach, pierwotne znaczenie)
-góra Taishan (pierwotne znaczenie)",,,,"GroupId: 1661190
+góra Taishan (pierwotne znaczenie)",,,DUPLICATE 208955,"GroupId: 1661190
 Translate: large mountain
 Translate: Mount Tai (China)
 AdditionalInfo: orig. meaning
@@ -36584,7 +36592,7 @@ zgniatanie
 chrupanie",,,,
 208967,WORD_NOUN,,HIRAGANA,,,厲行,れいこう,,reikou,"ścisłe egzekwowanie
 wprowadzanie w życie (regulacji, przepisów i etc)",,,,
-208968,WORD_NOUN,,HIRAGANA,,,一筆書き,いっぴつがき,,ippitsugaki,zagadnienie mostów królewieckich,"problem, nad którym rzekomo głowili się mieszkańcy Królewca, a który rozwiązał w XVIII wieku Leonhard Euler",,,"GroupId: 1166080
+208968,WORD_NOUN,,HIRAGANA,,,一筆書き,いっぴつがき,,ippitsugaki,zagadnienie mostów królewieckich,"problem, nad którym rzekomo głowili się mieszkańcy Królewca, a który rozwiązał w XVIII wieku Leonhard Euler",,DUPLICATE 137019,"GroupId: 1166080
 Translate: one-stroke sketch"
 208969,WORD_NOUN,,HIRAGANA,,,ことば遊び,ことばあそび,,kotoba asobi,"gra słowna
 gra w słowa
@@ -36621,3 +36629,5 @@ Translate: genius
 Translate: prodigy
 Translate: contaminant
 Translate: different material"
+208974,WORD_NOUN,,KATAKANA,,,Ｆｏｒｔｒａｎ,フォートラン,,footoran,Fortran,język programowania,,,"GroupId: 1110220
+Translate: Fortran (programming language)"
