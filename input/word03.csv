@@ -36684,7 +36684,7 @@ Translate: sideroblast"
 208986,WORD_NOUN,,HIRAGANA_KATAKANA,,,加速度センサー,かそくどセンサー,,kasokudo sensaa,"akcelerometr
 przyspieszeniomierz",,,,"GroupId: 2719530
 Translate: accelerometer"
-208987,WORD_NOUN,,KATAKANA,,,-,クロイサザアミ,,kuroisazaami,Neomysis awatschensis,"krewetka, przestarzałe słowo",,,"GroupId: 2556660
+208987,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クロイサザアミ,,kuroisazaami,Neomysis awatschensis,"krewetka, przestarzałe słowo",,,"GroupId: 2556660
 Translate: Neomysis awatschensis (shrimp)
 MiscInfo: obs"
 208988,WORD_NOUN,,HIRAGANA,,,預託証券,よたくしょうけん,,yotaku shouken,kwit depozytowy,"papier wartościowy emitowany przez instytucję finansową, będący przedmiotem obrotu na zagranicznych rynkach kapitałowych",,,"GroupId: 2737470
@@ -36718,7 +36718,7 @@ Translate: main faction"
 Translate: private jet"
 208999,WORD_NOUN,,HIRAGANA,,,等位接続詞,とういせつぞくし,,toui setsuzokushi,spójnik współrzędny,lingwistyka,,,"GroupId: 2253640
 Translate: coordinating conjunction"
-209000,WORD_NOUN,,HIRAGANA,,,肥桶,こえおけ,,koeoke,wiadro z fekaliami,,,,"GroupId: 2522180
+209000,WORD_NOUN,,HIRAGANA,,,肥桶,こえおけ,,koe oke,wiadro z fekaliami,,,,"GroupId: 2522180
 Translate: night-soil bucket
 Translate: honey bucket"
 209001,"WORD_VERB_U
@@ -36781,7 +36781,7 @@ Translate: to authorize"
 nadmierna podaż",,,,"GroupId: 1933190
 Translate: excessive supply
 Translate: oversupply"
-209014,WORD_NOUN,,KATAKANA,,,-,サイトトランスレーション,,saitot oransureeshon,???,ang: sight translation,,,"GroupId: 2843166
+209014,WORD_NOUN,,KATAKANA,,,-,サイトトランスレーション,,saito toransureeshon,???,ang: sight translation,,,"GroupId: 2843166
 Translate: sight translation"
 209015,WORD_NOUN,,HIRAGANA,,,記録文学,きろくぶんがく,,kiroku bungaku,"reportaż
 film dokumentalny",,,,"GroupId: 1795440
@@ -36826,8 +36826,8 @@ Translate: local horse race"
 209025,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,手をつかえる,てをつかえる,,te o tsukaeru,"położyć obie ręce na ziemi (aby wyrazić szacunek, przeprosiny lub prosić o coś)",,,,"GroupId: 2660800
 Translate: to place both hands on the ground (to express respect, apology or to present a request)"
-209026,"WORD_EXPRESSION
-WORD_VERB_U",,HIRAGANA,,,両手を突く,りょうてをつく,,ryoute o tsuku,"położyć obie ręce na ziemi (aby wyrazić szacunek, przeprosiny lub prosić o coś)",,,,"GroupId: 2836147
+209026,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,両手を突く,りょうてをつく,,ryoute o tsuku,"położyć obie ręce na ziemi (aby wyrazić szacunek, przeprosiny lub prosić o coś)",,,,"GroupId: 2836147
 Translate: to place both hands on the ground (to express respect, apology or to present a request)"
 209027,WORD_NOUN,,HIRAGANA,,,曇り声,くもりごえ,,kumori goe,przygnębiony głos,,,,"GroupId: 1769170
 Translate: depressed voice"
@@ -36892,10 +36892,72 @@ Translate: (in Song-period neo-Confucianism) the underlying principles and the m
 Translate: temperature and flavor (of tea)"
 209040,WORD_NOUN,,HIRAGANA,,,宗,そう,,sou,"źródło
 pochodzenie
-cnotliwy przodek",mało znane słowo,,,"GroupId: 2844287
+cnotliwy przodek",mało znane słowo,,"DUPLICATE 5722
+DUPLICATE 11042
+DUPLICATE 48960","GroupId: 2844287
 Translate: origin
 MiscInfo: obsc
 Translate: source
 MiscInfo: obsc
 Translate: virtuous ancestor
 MiscInfo: obsc"
+209041,WORD_NOUN,,HIRAGANA_KATAKANA,,,加速度センサ,かそくどセンサ,,kasokudo sensa,"akcelerometr
+przyspieszeniomierz",,,,"GroupId: 2719530
+Translate: accelerometer"
+209042,WORD_NOUN,,KATAKANA,,,-,プライベート・ジェット,,puraibeeto jetto,prywatny odrzutowiec,ang: private jet,,,"GroupId: 2842360
+Translate: private jet"
+209043,WORD_NOUN,,HIRAGANA,,,肥え桶,こえおけ,,koe oke,wiadro z fekaliami,,,,"GroupId: 2522180
+Translate: night-soil bucket
+Translate: honey bucket"
+209044,WORD_NOUN,,KATAKANA,,,-,ウェッデルアザラシ,,wedderu azarashi,"weddelka antarktyczna
+foka Weddella
+weddelka arktyczna","gatunek drapieżnego ssaka morskiego z rodziny fokowatych, Leptonychotes weddellii",,,"GroupId: 2440390
+Translate: Weddell seal (Leptonychotes weddellii)
+MiscInfo: uk"
+209045,WORD_NOUN,,KATAKANA,,,-,タテゴトアザラシ,,tategoto azarashi,"lodofoka grenlandzka
+foka grenlandzka
+foka siodlasta","gatunek drapieżnego ssaka morskiego z rodziny fokowatych, Phoca groenlandica",,,"GroupId: 2440400
+Translate: harp seal (Phoca groenlandica)
+MiscInfo: uk"
+209046,WORD_NOUN,,KATAKANA,,,-,カニクイアザラシ,,kanikui azarashi,"krabojad foczy
+krabojad
+foka krabojad","gatunek drapieżnego ssaka morskiego z rodziny fokowatych, Lobodon carcinophagus",,,"GroupId: 2440420
+Translate: crabeater seal (Lobodon carcinophagus)
+MiscInfo: uk"
+209047,WORD_NOUN,,KATAKANA,,,-,セグロセキレイ,,seguro sekirei,pliszka duża,"gatunek ptaka, Motacilla grandis",,,"GroupId: 2444670
+Translate: Japanese wagtail (Motacilla grandis)
+MiscInfo: uk"
+209048,WORD_NOUN,,KATAKANA,,,-,アキタガイ,,akitagai,Patinopecten yessoensis,,,,"GroupId: 2445450
+Translate: Japanese scallop (Patinopecten yessoensis)
+MiscInfo: uk"
+209049,WORD_NOUN,,KATAKANA,,,-,サイト・トランスレーション,,saito toransureeshon,???,ang: sight translation,,,"GroupId: 2843166
+Translate: sight translation"
+209050,WORD_NOUN,,KATAKANA,,,-,エビマヨ,,ebi mayo,krewetki z majonezem,,,,"GroupId: 2767570
+Translate: shrimp with mayonnaise
+MiscInfo: uk"
+209051,WORD_NOUN,,HIRAGANA,,,やけ気味,やけぎみ,,yake gimi,"uczucie desperacji
+poczucie desperacji",,,,"GroupId: 2054420
+Translate: reek of desperation
+Translate: feeling of desperation"
+209052,WORD_NOUN,,HIRAGANA,,,自棄気味,やけぎみ,,yake gimi,"uczucie desperacji
+poczucie desperacji",,,,"GroupId: 2054420
+Translate: reek of desperation
+Translate: feeling of desperation"
+209053,WORD_NOUN,,HIRAGANA,,,焼け気味,やけぎみ,,yake gimi,"uczucie desperacji
+poczucie desperacji",,,,"GroupId: 2054420
+Translate: reek of desperation
+Translate: feeling of desperation"
+209054,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,手を支える,てをつかえる,,te o tsukaeru,"położyć obie ręce na ziemi (aby wyrazić szacunek, przeprosiny lub prosić o coś)",,,,"GroupId: 2660800
+Translate: to place both hands on the ground (to express respect, apology or to present a request)"
+209055,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,両手をつく,りょうてをつく,,ryoute o tsuku,"położyć obie ręce na ziemi (aby wyrazić szacunek, przeprosiny lub prosić o coś)",,,,"GroupId: 2836147
+Translate: to place both hands on the ground (to express respect, apology or to present a request)"
+209056,WORD_NOUN,,HIRAGANA,,,人思い,ひとおもい,,hito omoi,"zrozumienie dla innych
+myślenie o innych",,,,"GroupId: 2844027
+Translate: consideration for others
+Translate: thinking about others"
+209057,WORD_NOUN,,KATAKANA,,,-,フリー・アナウンサー,,furii anaunsaa,"prezenter telewizyjny niebezpośrednio zatrudniony w sieci telewizyjnej
+niezależny prezenter telewizyjny",ang: freelance announcer,,,"GroupId: 2844116
+Translate: TV announcer not directly employed by a (single) TV network
+Translate: freelance announcer"
