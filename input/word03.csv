@@ -36981,7 +36981,7 @@ Translate: hospital waste"
 209065,WORD_VERB_U,,HIRAGANA,,,磨き込む,みがきこむ,,migaki komu,polerować,,,,"GroupId: 2761050
 Translate: to polish
 Translate: to rub up"
-209066,WORD_NOUN,,KATAKANA,,,-,ヨーロッパアナゴ,,yooroppaa nago,konger,"drapieżny gatunek morskiej ryby węgorzokształtnej z rodziny kongerowatych, Conger conger",,,"GroupId: 2788560
+209066,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヨーロッパアナゴ,,yooroppaa nago,konger,"drapieżny gatunek morskiej ryby węgorzokształtnej z rodziny kongerowatych, Conger conger",,,"GroupId: 2788560
 Translate: European conger (Conger conger)"
 209067,WORD_NOUN,,KATAKANA_HIRAGANA,,,デオキシコール酸,デオキシコールさん,,deokishikooru san,kwas dezoksycholowy,,,,"GroupId: 2713950
 Translate: deoxycholic acid"
@@ -36994,7 +36994,7 @@ WORD_ADVERBIAL_NOUN
 WORD_TEMPORAL_NOUN",,HIRAGANA,,,神武以来,じんむいらい,,jinmu irai,"od czasów Cesarza Jinmu
 (pierwszy w historii) od zarania dziejów Japonii
 bezprecedensowy
-niespotykany",,,,"GroupId: 2040520
+niespotykany",,,DUPLICATE 209117,"GroupId: 2040520
 Translate: since the era of the Emperor Jinmu
 MiscInfo: yoji
 Translate: (first ever) since the dawn of Japan's history
@@ -37129,11 +37129,11 @@ zwiewać",,,,"GroupId: 1450400
 Translate: to flee
 Translate: to run away"
 209099,"WORD_EXPRESSION
-WORD_ADJECTIVE_F",,HIRAGANA,,,変わり得る,かわりうる,,kawari uru,zdolny do zmiany,,,,"GroupId: 2561050
+WORD_ADJECTIVE_F",,HIRAGANA,,,変わり得る,かわりうる,,kawari uru,zdolny do zmiany,,,DUPLICATE 209132,"GroupId: 2561050
 Translate: able to change"
 209100,WORD_NOUN,,HIRAGANA,,,完熟堆肥,かんじゅくたいひ,,kanjuku taihi,w pełni dojrzały kompost,,,,"GroupId: 2829148
 Translate: fully matured compost"
-209101,WORD_NOUN,,HIRAGANA,,,自分事,じぶんごと,,jibungoto,"własny problem
+209101,WORD_NOUN,,HIRAGANA,,,自分事,じぶんごと,,jibun goto,"własny problem
 własne problemy",kolokwializm,,,"GroupId: 2836868
 Translate: one's own problem
 MiscInfo: col
@@ -37149,7 +37149,7 @@ mężczyzna (archaizm)
 młody mężczyzna (archaizm)
 mój mąż (archaizm, tytułowane przez kobietę)
 mój kochanek (archaizm, tytułowane przez kobietę)
-n-te dziecko (męski i żeńskie, archaizm)",,,,"GroupId: 2844238
+n-te dziecko (męski i żeńskie, archaizm)",,,DUPLICATE 165207,"GroupId: 2844238
 Translate: nth son
 AdditionalInfo: 太郎, 次郎, 三郎, etc., used in men's names
 Translate: lang
@@ -37166,12 +37166,12 @@ MiscInfo: arch
 AdditionalInfo: addressed by women
 Translate: nth child (male and female)
 MiscInfo: arch"
-209104,WORD_NOUN,,HIRAGANA,,,絞,こう,,kou,śmierć przez powieszeni,"kara w systemie ritsuryō, historyczny termin",,,"GroupId: 2844246
+209104,WORD_NOUN,,HIRAGANA,,,絞,こう,,kou,śmierć przez powieszeni,"kara w systemie ritsuryō, historyczny termin",,DUPLICATE 11466,"GroupId: 2844246
 Translate: death by hanging (punishment in the ritsuryō system)
 MiscInfo: hist"
 209105,WORD_NOUN,,HIRAGANA,,,惑,わく,,waku,klesha,buddyzm,,,"GroupId: 2844281
 Translate: klesha"
-209106,WORD_NOUN,,HIRAGANA,,,牧,ぼく,,boku,gubernator regionalny w starożytnych Chinach,historyczny termin,,,"GroupId: 2844214
+209106,WORD_NOUN,,HIRAGANA,,,牧,ぼく,,boku,gubernator regionalny w starożytnych Chinach,historyczny termin,,DUPLICATE 7306,"GroupId: 2844214
 Translate: regional governor in ancient China
 MiscInfo: hist"
 209107,WORD_NOUN,,HIRAGANA,,,籰,わく,,waku,"szpula (nici)
@@ -37181,13 +37181,13 @@ Translate: reel"
 209108,WORD_NOUN,,HIRAGANA,,,茗,めい,,mei,herbata,szczególnie późno zebrana,,,"GroupId: 2844251
 Translate: tea (esp. picked late)"
 209109,WORD_NOUN,,HIRAGANA,,,観者,かんしゃ,,kansha,"obserwator
-widz",,,,"GroupId: 2844263
+widz",,,DUPLICATE 209139,"GroupId: 2844263
 Translate: observer
 Translate: spectator"
 209110,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,陋,ろう,,rou,"???
 skromność
-pokora",przestarzałe słowo,,,"GroupId: 2844237
+pokora",przestarzałe słowo,,DUPLICATE 165207,"GroupId: 2844237
 Translate: narrowness
 MiscInfo: obs
 Translate: meanness
@@ -37196,17 +37196,18 @@ Translate: humbleness
 MiscInfo: obs
 Translate: lowliness
 MiscInfo: obs"
-209111,WORD_NOUN,,HIRAGANA,,,聾,ろう,,rou,głuchota,,,,"GroupId: 2844256
+209111,WORD_NOUN,,HIRAGANA,,,聾,ろう,,rou,głuchota,,,"DUPLICATE 10180
+DUPLICATE 30437
+DUPLICATE 165207","GroupId: 2844256
 Translate: deafness"
 209112,WORD_NOUN,,HIRAGANA,,,大山,おおやま,,ooyama,"duży hazard
 duża góra (pierwotne znaczenie)
-ogromna góra (pierwotne znaczenie)",,,,"GroupId: 2844277
+ogromna góra (pierwotne znaczenie)",,,DUPLICATE 39256,"GroupId: 2844277
 Translate: big gamble
 Translate: big plunge
 Translate: big mountain
 AdditionalInfo: orig. meaning"
-209113,WORD_EXPRESSION,,HIRAGANA,,,可からざる,べからざる,,bekarazaru,"nie móc
-nie potrafić
+209113,WORD_EXPRESSION,,HIRAGANA,,,可からざる,べからざる,,bekarazaru,"nie może
 nie wolno",,,,"GroupId: 2018300
 Translate: cannot
 MiscInfo: uk
@@ -37220,3 +37221,130 @@ Translate: domain
 Translate: territory
 Translate: field
 Translate: range"
+209115,WORD_NOUN,,KATAKANA,,,-,オニヒトデ,,onihitode,korona cierniowa,"gatunek żarłocznego, drapieżnego szkarłupnia z gromady rozgwiazd występującego pospolicie na rafach koralowych Morza Czerwonego, Oceanu Indyjskiego i Spokojnego, Acanthaster planci",,,"GroupId: 2075890
+Translate: crown-of-thorns starfish (Acanthaster planci)
+MiscInfo: uk"
+209116,WORD_VERB_U,,HIRAGANA,,,磨きこむ,みがきこむ,,migaki komu,polerować,,,,"GroupId: 2761050
+Translate: to polish
+Translate: to rub up"
+209117,"WORD_ADJECTIVE_NO
+WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,神武以来,じんむこのかた,,jinmu konokata,"od czasów Cesarza Jinmu
+(pierwszy w historii) od zarania dziejów Japonii
+bezprecedensowy
+niespotykany",,,DUPLICATE 209070,"GroupId: 2040520
+Translate: since the era of the Emperor Jinmu
+MiscInfo: yoji
+Translate: (first ever) since the dawn of Japan's history
+MiscInfo: yoji
+Translate: unprecedented
+MiscInfo: yoji"
+209118,WORD_NOUN,,HIRAGANA,,,橈脚類,かいあしるい,,kaiashi rui,widłonogi,"drobne, z reguły planktonowe, morskie i słodkowodne skorupiaki, Copepoda",,"DUPLICATE 209119
+DUPLICATE 209120","GroupId: 2242850
+Translate: copepods (small crustaceans of subclass Copepoda)"
+209119,WORD_NOUN,,HIRAGANA,,,橈脚類,とうきゃくるい,,toukyaku rui,widłonogi,"drobne, z reguły planktonowe, morskie i słodkowodne skorupiaki, Copepoda",,"DUPLICATE 209118
+DUPLICATE 209120","GroupId: 2242850
+Translate: copepods (small crustaceans of subclass Copepoda)"
+209120,WORD_NOUN,,HIRAGANA,,,橈脚類,じょうきゃくるい,,joukyaku rui,widłonogi,"drobne, z reguły planktonowe, morskie i słodkowodne skorupiaki, Copepoda",,"DUPLICATE 209118
+DUPLICATE 209119","GroupId: 2242850
+Translate: copepods (small crustaceans of subclass Copepoda)"
+209121,WORD_NOUN,,HIRAGANA,,,蔦蘿,つたかずら,,tsutakazura,"bluszcz i winorośl
+pnącze
+roślina pnącza",,,,"GroupId: 1796270
+Translate: ivy and vines
+Translate: creepers"
+209122,WORD_NOUN,,HIRAGANA,,,蔦葛,つたかずら,,tsutakazura,"bluszcz i winorośl
+pnącze
+roślina pnącza",,,,"GroupId: 1796270
+Translate: ivy and vines
+Translate: creepers"
+209123,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,一簞の食一瓢の飲,いったんのしいっぴょうのいん,,ittan no shiippyou no in,"proste jedzenie i picie
+bycie zadowolony z oszczędnego życia
+bambusowe naczynie z ryżem i tykwa napoju","z Dialogów Konfucjańskich, wyrażenie idiomatyczne",,,"GroupId: 2842978
+Translate: simple food and drink
+MiscInfo: id
+AdditionalInfo: from the Analects of Confucius
+Translate: being content with a frugal life
+MiscInfo: id
+AdditionalInfo: from the Analects of Confucius
+Translate: a bamboo dish of rice and a gourd of drink
+MiscInfo: id
+AdditionalInfo: from the Analects of Confucius"
+209124,WORD_NOUN,,KATAKANA,,,-,ムシガレイ,,mushigarei,Eopsetta grigorjewi,gatunek ryby,,,"GroupId: 2446380
+Translate: roundnose flounder (Eopsetta grigorjewi)
+MiscInfo: uk"
+209125,WORD_NOUN,,KATAKANA,,,-,ババガレイ,,babagarei,Microstomus achne,gatunek ryby,,,"GroupId: 2446400
+Translate: slime flounder (Microstomus achne)
+MiscInfo: uk"
+209126,WORD_NOUN,,KATAKANA,,,-,ゲットウ,,gettou,alpinia zwyczajna,"gatunek roślin z rodziny imbirowatych, Alpinia zerumbet",,,"GroupId: 2446660
+Translate: shell ginger (Alpinia zerumbet)
+MiscInfo: uk"
+209127,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオアナコンダ,,oo anakonda,anakonda zielona,"gatunek węża z rodziny dusicieli, podrodziny boidae, znany także jako anakonda olbrzymia, Eunectes murinus",,,"GroupId: 2447170
+Translate: green anaconda (Eunectes murinus)
+MiscInfo: uk"
+209128,WORD_NOUN,,KATAKANA,,,-,サンゴヘビ,,sangohebi,wąż korolowy,,,,"GroupId: 2447200
+Translate: coral snake
+MiscInfo: uk"
+209129,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,びょんびょん,,byon byon,"elastycznie
+sprężyście
+z rozciągnięciem
+???",,,,"GroupId: 2838242
+Translate: bouncily
+MiscInfo: on-mim
+Translate: with a stretch
+MiscInfo: on-mim
+Translate: with a boing
+MiscInfo: on-mim"
+209130,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,ビヨンビヨン,,biyon biyon,"elastycznie
+sprężyście
+z rozciągnięciem
+???",,,,"GroupId: 2838242
+Translate: bouncily
+MiscInfo: on-mim
+Translate: with a stretch
+MiscInfo: on-mim
+Translate: with a boing
+MiscInfo: on-mim"
+209131,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,びよんびよん,,biyon biyon,"elastycznie
+sprężyście
+z rozciągnięciem
+???",,,,"GroupId: 2838242
+Translate: bouncily
+MiscInfo: on-mim
+Translate: with a stretch
+MiscInfo: on-mim
+Translate: with a boing
+MiscInfo: on-mim"
+209132,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,変わり得る,かわりえる,,kawari eru,zdolny do zmiany,,,DUPLICATE 209099,"GroupId: 2561050
+Translate: able to change"
+209133,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,変わりうる,かわりうる,,kawari uru,zdolny do zmiany,,,,"GroupId: 2561050
+Translate: able to change"
+209134,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,かわり得る,かわりうる,,kawari uru,zdolny do zmiany,,,DUPLICATE 209135,"GroupId: 2561050
+Translate: able to change"
+209135,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,かわり得る,かわりえる,,kawari eru,zdolny do zmiany,,,DUPLICATE 209134,"GroupId: 2561050
+Translate: able to change"
+209136,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,変わりえる,かわりえる,,kawari eru,zdolny do zmiany,,,,"GroupId: 2561050
+Translate: able to change"
+209137,WORD_NOUN,,HIRAGANA,,,自分ごと,じぶんごと,,jibun goto,"własny problem
+własne problemy",kolokwializm,,,"GroupId: 2836868
+Translate: one's own problem
+MiscInfo: col
+Translate: one's own issues
+MiscInfo: col"
+209138,WORD_NOUN,,HIRAGANA,,,篗,わく,,waku,"szpula (nici)
+szpulka (nici)",,,,"GroupId: 2844254
+Translate: spool (of thread)
+Translate: reel"
+209139,WORD_NOUN,,HIRAGANA,,,観者,かんじゃ,,kanja,"obserwator
+widz",,,DUPLICATE 209109,"GroupId: 2844263
+Translate: observer
+Translate: spectator"
