@@ -37401,9 +37401,9 @@ aktualny punkt",,,,"GroupId: 2353660
 Translate: current point"
 209157,WORD_NOUN,,KATAKANA,,,-,グラスホッパー,,gurasuhoppaa,konik polny,ang: grasshopper,,,"GroupId: 2447520
 Translate: grasshopper"
-209158,WORD_NOUN,,HIRAGANA,,,鱗引き,うろこひき,,urokohiki,przyrząd do skrobania ryb,,,,"GroupId: 2564030
+209158,WORD_NOUN,,HIRAGANA,,,鱗引き,うろこひき,,uroko hiki,przyrząd do skrobania ryb,,,,"GroupId: 2564030
 Translate: fish scaler"
-209159,WORD_EXPRESSION,,HIRAGANA,,,世間の口に戸は立てられぬ,せけんのくちにとはたてられぬ,,seken no kuchi ni to wa taterarenu,ludzie będą mówić,przysłowie,,,"GroupId: 2418490
+209159,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,世間の口に戸は立てられぬ,せけんのくちにとはたてられぬ,,seken no kuchi ni to wa taterarenu,ludzie będą mówić,przysłowie,,,"GroupId: 2418490
 Translate: people will talk
 MiscInfo: proverb"
 209160,WORD_EXPRESSION,,HIRAGANA,,,殷鑑遠からず,いんかんとおからず,,inkan tookarazu,lekcje z historii nie są dalekie do poszukiwania,"przysłowie, cytat z Konfucjusza",,,"GroupId: 2842888
@@ -37440,7 +37440,7 @@ MiscInfo: uk"
 209170,WORD_NOUN,,HIRAGANA,,,天が下,あまがした,,ama ga shita,"cały kraj
 świat
 władza rządząca
-???",,,,"GroupId: 1582010
+???",,,DUPLICATE 209211,"GroupId: 1582010
 Translate: the whole country
 Translate: the public
 Translate: the world
@@ -37498,7 +37498,7 @@ MiscInfo: uk"
 209188,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,憲法違反,けんぽういはん,,kenpou ihan,niekonstytucyjność,,,,"GroupId: 1757630
 Translate: unconstitutionality"
-209189,WORD_NOUN,,KATAKANA,,,-,データアナリスト,,deeta anarisuto,analityk danych,ang: data analyst,,,"GroupId: 2837686
+209189,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,データアナリスト,,deeta anarisuto,analityk danych,ang: data analyst,,,"GroupId: 2837686
 Translate: data analyst"
 209190,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,沈黙を破る,ちんもくをやぶる,,chinmoku o yaburu,"przerwać ciszę
@@ -37524,7 +37524,7 @@ MiscInfo: id"
 209194,WORD_NOUN,,KATAKANA,,,-,ベンチマーキング,,benchimaakingu,benchmarking,"praktyka stosowana w zarządzaniu, polegająca na porównywaniu procesów i praktyk stosowanych przez własne przedsiębiorstwo, ze stosowanymi w przedsiębiorstwach uważanych za najlepsze w analizowanej dziedzinie",,,"GroupId: 2828970
 Translate: benchmarking"
 209195,WORD_NOUN,,HIRAGANA,,,世運,せいうん,,seiun,"los świata
-ciąg zdarzeń na świecie",mało znane słowo,,,"GroupId: 2844268
+ciąg zdarzeń na świecie",mało znane słowo,,DUPLICATE 209216,"GroupId: 2844268
 Translate: destiny of the world
 MiscInfo: obsc
 Translate: course of events in the world
@@ -37533,7 +37533,7 @@ MiscInfo: obsc"
 sieć optyczna",,,,"GroupId: 2844299
 Translate: optical communications line
 Translate: optical network"
-209197,WORD_NOUN,,HIRAGANA,,,上代特殊仮名遣い,じょうだいとくしゅかなづかい,,joudaitokushukanadukai,specjalne zasady użytkowania kana,okres Nara,,,"GroupId: 2844240
+209197,WORD_NOUN,,HIRAGANA,,,上代特殊仮名遣い,じょうだいとくしゅかなづかい,,joudai tokushu kanadukai,specjalne zasady użytkowania kana,okres Nara,,,"GroupId: 2844240
 Translate: special kana usage rules (Nara period)"
 209198,WORD_VERB_U,,KATAKANA_HIRAGANA,,,-,ブチる,,buchiru,"złamać obietnicę
 ignorować (np. połączenie, wiadomość tekstową i etc)",slang,,,"GroupId: 2844257
@@ -37541,9 +37541,87 @@ Translate: to break (a promise)
 MiscInfo: sl
 Translate: to ignore (a call, text message, etc.)
 MiscInfo: sl"
-209199,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,ない事には,ないことには,,nai koto ni wa,"jeśli nie (ty zrobisz)
-dopóki nie
-chyba że",z czasownikiem w formie bez masu,,,"GroupId: 2099850
+209199,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,ない事には,ないことには,,nai koto ni wa,"jeśli nie (zrobisz coś)
+dopóki nie (zrobisz coś)
+chyba że (zrobisz coś)",z czasownikiem w formie bez masu,,,"GroupId: 2099850
+Translate: unless (you do something)
+MiscInfo: uk
+AdditionalInfo: with verb stem"
+209200,WORD_NOUN,,HIRAGANA,,,河豚毒,ふぐどく,,fugu doku,trucizna z ryby fugu,,,,"GroupId: 2229030
+Translate: fugu poison"
+209201,WORD_NOUN,,KATAKANA,,,-,ウスイロセイブモグラ,,usuiroseibumogura,Scapanus latimanus,gatunek kreta,,,"GroupId: 2707730
+Translate: broad-footed mole (Scapanus latimanus)
+MiscInfo: uk"
+209202,WORD_VERB_RU,,HIRAGANA,,,ほとばしり出る,ほとばしりでる,,hotobashiri deru,"wytrysnąć
+trysnąć
+wylewać",,,,"GroupId: 2448810
+Translate: to gush out
+Translate: to gush forth
+Translate: to effuse"
+209203,WORD_NOUN,,HIRAGANA,,,うろこ引き,うろこひき,,uroko hiki,przyrząd do skrobania ryb,,,,"GroupId: 2564030
+Translate: fish scaler"
+209204,WORD_NOUN,,KATAKANA,,,-,オイチョカブ,,oicho kabu,oicho-kabu,tradycyjna japońska hazardowa gra karciana,,,"GroupId: 2535190
+Translate: oicho-kabu (traditional Japanese gambling card game)"
+209205,WORD_NOUN,,KATAKANA,,,-,アナル・ファック,,anaru fakku,seks analny,ang: anal fuck,,,"GroupId: 2841520
+Translate: anal sex
+MiscInfo: vulg"
+209206,WORD_NOUN,,KATAKANA,,,-,ミルクヘビ,,miruku hebi,"lancetogłów mleczny
+wąż królewski
+wąż królewski mleczny","gatunek węża z rodziny połozowatych, Lampropeltis triangulum",,,"GroupId: 2447220
+Translate: milk snake (Lampropeltis triangulum)
+MiscInfo: uk"
+209207,WORD_NOUN,,KATAKANA,,,-,オヒルギ,,ohirugi,Bruguiera gymnorhiza,roślina,,,"GroupId: 2447970
+Translate: black mangrove (Bruguiera gymnorrhiza)
+MiscInfo: uk"
+209208,WORD_NOUN,,KATAKANA,,,-,ムラサキベンケイソウ,,murasaki benkeisou,"rozchodnik karpacki
+rozchodnikowiec karpacki","gatunek rośliny należący do rodziny gruboszowatych, Hylotelephium telephium",,,"GroupId: 2449120
+Translate: orpine (Hylotelephium telephium)
+MiscInfo: uk"
+209209,WORD_NOUN,,KATAKANA,,,-,オノマンネングサ,,ono mannengusa,Rozchodnik liniowaty,roślina,,,"GroupId: 2449180
+Translate: needle stonecrop (Sedum lineare)
+MiscInfo: uk"
+209210,WORD_NOUN,,KATAKANA,,,-,クサスギカズラ,,kusasugi kazura,Asparagus cochinchinensis,roślina,,,"GroupId: 2451900
+Translate: Chinese asparagus (Asparagus cochinchinensis)
+MiscInfo: uk"
+209211,WORD_NOUN,,HIRAGANA,,,天が下,あめがした,,ame ga shita,"cały kraj
+świat
+władza rządząca
+???",,,DUPLICATE 209170,"GroupId: 1582010
+Translate: the whole country
+Translate: the public
+Translate: the world
+Translate: the ruling power
+Translate: having one's own way"
+209212,WORD_ADJECTIVE_I,,HIRAGANA,,,末若い,うらわかい,,ura wakai,"młody
+młodzieńczy",,,,"GroupId: 1525420
+Translate: young
+Translate: youthful"
+209213,WORD_ADJECTIVE_I,,HIRAGANA,,,裏若い,うらわかい,,ura wakai,"młody
+młodzieńczy",,,,"GroupId: 1525420
+Translate: young
+Translate: youthful"
+209214,WORD_NOUN,,KATAKANA,,,-,マチカネワニ,,machikanewani,Toyotamaphimeia machikanensis,"rodzaj krokodyla żyjącego w plejstocenie, około 400 tysięcy lat temu, na terenach dzisiejszej Japonii i Tajwanu",,,"GroupId: 2444610
+Translate: Toyotamaphimeia machikanensis (Japanese fossil species of crocodilian)
+MiscInfo: uk"
+209215,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,データ・アナリスト,,deeta anarisuto,analityk danych,ang: data analyst,,,"GroupId: 2837686
+Translate: data analyst"
+209216,WORD_NOUN,,HIRAGANA,,,世運,せうん,,seun,"los świata
+ciąg zdarzeń na świecie",mało znane słowo,,DUPLICATE 209195,"GroupId: 2844268
+Translate: destiny of the world
+MiscInfo: obsc
+Translate: course of events in the world
+MiscInfo: obsc"
+209217,WORD_NOUN,,HIRAGANA,,,上代特殊仮名遣,じょうだいとくしゅかなづかい,,joudai tokushu kanadukai,specjalne zasady użytkowania kana,okres Nara,,,"GroupId: 2844240
+Translate: special kana usage rules (Nara period)"
+209218,WORD_VERB_U,,HIRAGANA,,,-,ぶちる,,buchiru,"złamać obietnicę
+ignorować (np. połączenie, wiadomość tekstową i etc)",slang,,,"GroupId: 2844257
+Translate: to break (a promise)
+MiscInfo: sl
+Translate: to ignore (a call, text message, etc.)
+MiscInfo: sl"
+209219,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,無いことには,ないことには,,nai koto ni wa,"jeśli nie (zrobisz coś)
+dopóki nie (zrobisz coś)
+chyba że (zrobisz coś)",z czasownikiem w formie bez masu,,,"GroupId: 2099850
 Translate: unless (you do something)
 MiscInfo: uk
 AdditionalInfo: with verb stem"
