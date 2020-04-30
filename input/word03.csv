@@ -37625,7 +37625,7 @@ chyba że (zrobisz coś)",z czasownikiem w formie bez masu,,,"GroupId: 2099850
 Translate: unless (you do something)
 MiscInfo: uk
 AdditionalInfo: with verb stem"
-209220,WORD_NOUN,,HIRAGANA,,,紫片喰,むらさきかたばみ,,murasakikatabami,Oxalis corymbosa,roślina,,,"GroupId: 2790170
+209220,WORD_NOUN,,HIRAGANA,,,紫片喰,むらさきかたばみ,,murasaki katabami,Oxalis corymbosa,roślina,,,"GroupId: 2790170
 Translate: pink woodsorrel (Oxalis corymbosa)
 MiscInfo: uk"
 209221,WORD_NOUN,,KATAKANA,,,-,デシューツ,,deshuutsu,Deschutes,,,,"GroupId: 2312320
@@ -37803,7 +37803,7 @@ MiscInfo: fam"
 paragraf",,,,"GroupId: 2844239
 Translate: paragraph"
 209264,WORD_NOUN,,HIRAGANA,,,雑戸,ざっこ,,zakko,"kupiec
-handlowiec","w systemie ritsuryō, historyczny termin",,,"GroupId: 2844247
+handlowiec","w systemie ritsuryō, historyczny termin",,DUPLICATE 209293,"GroupId: 2844247
 Translate: tradesman (in the ritsuryō system)
 MiscInfo: hist"
 209265,WORD_NOUN,,HIRAGANA,,,窮鬼,きゅうき,,kyuuki,"bóg ubóstwa
@@ -37826,7 +37826,7 @@ MiscInfo: arch"
 Translate: legume
 Translate: legumen
 Translate: leguminous plant"
-209269,WORD_NOUN,,HIRAGANA,,,印鋪,いんぽ,,inpo,sklep z pieczątkami,,,,"GroupId: 2844296
+209269,WORD_NOUN,,HIRAGANA,,,印鋪,いんぽ,,inpo,sklep z pieczątkami,,,DUPLICATE 209294,"GroupId: 2844296
 Translate: seal shop
 Translate: stamp maker"
 209270,WORD_NOUN,,HIRAGANA,,,心傷,こころやぶれ,,kokoro yabure,"boleść
@@ -37836,21 +37836,110 @@ Translate: heartbreak
 MiscInfo: arch
 Translate: grief
 MiscInfo: arch"
-209271,WORD_NOUN,,HIRAGANA,,,大弯,だいわん,,daiwan,krzywizna większa żołądka,anatomia,,,"GroupId: 2004090
-Translate: greater curvature (of the stomach)
-Translate: curvatura ventriculi major"
-209272,WORD_NOUN,,HIRAGANA,,,瘻孔,ろうこう,,roukou,przetoka,kanał między narządami,,,"GroupId: 2843767
+209271,WORD_NOUN,,HIRAGANA,,,瘻孔,ろうこう,,roukou,przetoka,kanał między narządami,,,"GroupId: 2843767
 Translate: fistula"
-209273,WORD_NOUN,,HIRAGANA,,,泥象,でいしょう,,deishou,"gliniana figura (pochowana z umarłymi w starożytnych Chinach)
+209272,WORD_NOUN,,HIRAGANA,,,泥象,でいしょう,,deishou,"gliniana figura (pochowana z umarłymi w starożytnych Chinach)
 gliniany posąg",,,,"GroupId: 2844071
 Translate: clay figure (buried with the dead in ancient China)
 Translate: earthen statue"
-209274,WORD_NOUN,,HIRAGANA,,,側刻,そっこく,,sokkoku,erozja boczna,,,,"GroupId: 2844206
+209273,WORD_NOUN,,HIRAGANA,,,側刻,そっこく,,sokkoku,erozja boczna,,,,"GroupId: 2844206
 Translate: lateral erosion"
-209275,WORD_NOUN,,HIRAGANA,,,孔墨,こうぼく,,kouboku,Konfucjusz i Mozi,"starożytni chińscy filozofowie, mało znane słowo",,,"GroupId: 2843925
+209274,WORD_NOUN,,HIRAGANA,,,孔墨,こうぼく,,kouboku,Konfucjusz i Mozi,"starożytni chińscy filozofowie, mało znane słowo",,,"GroupId: 2843925
 Translate: Confucius and Mozi (ancient Chinese philosophers)
 MiscInfo: obsc"
-209276,WORD_NOUN,,HIRAGANA,,,軽症者,けいしょうしゃ,,keishousha,"osoba (pacjent) z niewielką chorobą
+209275,WORD_NOUN,,HIRAGANA,,,軽症者,けいしょうしゃ,,keishousha,"osoba (pacjent) z niewielką chorobą
 osoba wykazująca tylko niewielkie objawy (choroby)",,,,"GroupId: 2843942
 Translate: person (patient) with minor illness
 Translate: person showing only minor symptoms (of a disease)"
+209276,WORD_NOUN,,HIRAGANA,,,紫酢漿草,むらさきかたばみ,,murasaki katabami,Oxalis corymbosa,roślina,,,"GroupId: 2790170
+Translate: pink woodsorrel (Oxalis corymbosa)
+MiscInfo: uk"
+209277,WORD_NOUN,,KATAKANA,,,-,ムラサキカタバミ,,murasaki katabami,Oxalis corymbosa,roślina,,,"GroupId: 2790170
+Translate: pink woodsorrel (Oxalis corymbosa)
+MiscInfo: uk"
+209278,WORD_NOUN,,HIRAGANA,,,帆掛船,ほかけぶね,,hokake bune,"żaglówka
+łódź żaglowa",,,,"GroupId: 1804920
+Translate: sailboat"
+209279,WORD_NOUN,,HIRAGANA,,,帆かけ船,ほかけぶね,,hokake bune,"żaglówka
+łódź żaglowa",,,,"GroupId: 1804920
+Translate: sailboat"
+209280,WORD_NOUN,,HIRAGANA,,,雀𪀚,えっさい,,essai,muszkiet,męski japoński krogulec,,,"GroupId: 2222430
+Translate: musket (male Japanese sparrowhawk)"
+209281,WORD_NOUN,,HIRAGANA,,,嫁入り道中,よめいりどうちゅう,,yomeiri douchuu,ślubny pochód,,,,"GroupId: 2040860
+Translate: nuptial procession
+MiscInfo: yoji"
+209282,WORD_NOUN,,KATAKANA,,,-,モアッサナイト,,moassanaito,moissanit,"naturalnie występujący węglik krzemu, ang: moissanite",,,"GroupId: 2808280
+Translate: moissanite"
+209283,WORD_NOUN,,KATAKANA,,,-,キジカクシ,,kijikakushi,szparag sodówkowaty,"roślina, Asparagus schoberioides",,,"GroupId: 2451920
+Translate: Asparagus schoberioides
+MiscInfo: uk"
+209284,WORD_NOUN,,KATAKANA,,,-,アカヤガラ,,akayagara,fistulka czerwonawa,"gatunek morskiej ryby igliczniokształtnej z rodziny fistulkowatych, Fistularia petimba",,,"GroupId: 2452790
+Translate: red cornetfish (Fistularia petimba)
+MiscInfo: uk"
+209285,WORD_NOUN,,KATAKANA,,,-,アオヤガラ,,aoyagara,fistularia commersonii,gatunek ryby,,,"GroupId: 2452800
+Translate: bluespotted cornetfish (Fistularia commersonii)
+MiscInfo: uk"
+209286,WORD_NOUN,,KATAKANA,,,-,ギンリョウソウモドキ,,ginryousoumo doki,monotropa uniflora,roślina,,,"GroupId: 2452890
+Translate: Indian pipe (Monotropa uniflora)
+MiscInfo: uk"
+209287,WORD_VERB_U,,HIRAGANA,,,戯つく,じゃらつく,,jara tsuku,"brzęknąć
+brzękać
+pobrzękiwać
+dzwonić
+zabrzęczeć
+zachowywać się lubieżnie
+zachowywać się kokieteryjnie
+zachowywać się zalotnie",,,,"GroupId: 2454090
+Translate: to jingle
+MiscInfo: uk
+Translate: to jangle
+MiscInfo: uk
+Translate: to clink
+MiscInfo: uk
+Translate: to chink
+MiscInfo: uk
+Translate: to act lasciviously
+Translate: to act coquettishly"
+209288,WORD_VERB_U,,HIRAGANA,,,遣りこなす,やりこなす,,yari konasu,"zarządzać (i zrobić to skutecznie)
+przebrnąć przez
+przetrwać",,,,"GroupId: 2599980
+Translate: to manage (to do successfully)
+MiscInfo: uk
+Translate: to get through
+MiscInfo: uk"
+209289,WORD_NOUN,,KATAKANA,,,-,レディース・デー,,rediisu dee,"dzień dam
+promocyjny program, w którym kobietom przysługują zniżki w określone dni (np. w kinach)",,,,"GroupId: 2833745
+Translate: ladies' day
+Translate: promotional scheme where women are offered discounts on certain days (e.g. at cinemas)"
+209290,WORD_NOUN,,KATAKANA,,,-,スコアラ,,sukoara,sędzia prowadzący punktację,ang: scorer,,,"GroupId: 1069050
+Translate: scorer
+Translate: scorekeeper
+Translate: record keeper"
+209291,WORD_NOUN,,HIRAGANA,,,首回り,くびまわり,,kubi mawari,"wokół szyi
+rozmiar szyi",,,,"GroupId: 2181320
+Translate: around the neck
+Translate: neck size (measurement)"
+209292,WORD_INTERJECTION,,HIRAGANA,,,-,すまんかった,,sumankatta,"przepraszam
+mój błąd
+moja wina",poufały język,,,"GroupId: 2844144
+Translate: sorry
+MiscInfo: fam
+Translate: my bad
+MiscInfo: fam"
+209293,WORD_NOUN,,HIRAGANA,,,雑戸,ぞうこ,,zouko,"kupiec
+handlowiec","w systemie ritsuryō, historyczny termin",,DUPLICATE 209264,"GroupId: 2844247
+Translate: tradesman (in the ritsuryō system)
+MiscInfo: hist"
+209294,WORD_NOUN,,HIRAGANA,,,印鋪,いんほ,,inho,sklep z pieczątkami,,,DUPLICATE 209269,"GroupId: 2844296
+Translate: seal shop
+Translate: stamp maker"
+209295,WORD_NOUN,,HIRAGANA,,,心傷れ,こころやぶれ,,kokoro yabure,"boleść
+żal
+rozpacz",archaizm,,,"GroupId: 2844278
+Translate: heartbreak
+MiscInfo: arch
+Translate: grief
+MiscInfo: arch"
+209296,WORD_NOUN,,HIRAGANA,,,大彎,だいわん,,daiwan,krzywizna większa żołądka,anatomia,,,"GroupId: 2004090
+Translate: greater curvature (of the stomach)
+Translate: curvatura ventriculi major"
