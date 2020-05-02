@@ -38254,7 +38254,7 @@ Translate: sleeping away for the night (esp. in a red light district)"
 209380,WORD_NOUN,,HIRAGANA,,,治乱興亡,ちらんこうぼう,,chiran koubou,"narodu czasy pokoju i wojny, wzrostu i spadku",,,,"GroupId: 2031140
 Translate: nation's times of peace and war, rise and fall
 MiscInfo: yoji"
-209381,WORD_NOUN,,HIRAGANA,,,黄道吉日,おうどうきちにち,,oudou kichinichi,bardzo pomyślny dzień na każdy rodzaj okazji,,,,"GroupId: 1576790
+209381,WORD_NOUN,,HIRAGANA,,,黄道吉日,おうどうきちにち,,oudou kichinichi,bardzo pomyślny dzień na każdy rodzaj okazji,,,DUPLICATE 209447,"GroupId: 1576790
 Translate: very auspicious day for all types of occasions
 MiscInfo: yoji"
 209382,WORD_NOUN,,HIRAGANA,,,評価報告書,ひょうかほうこくしょ,,hyouka houkokusho,"raport z oceny
@@ -38483,4 +38483,85 @@ Translate: lid retractor"
 Translate: firm and upright (character)
 MiscInfo: obsc"
 209446,WORD_NOUN,,HIRAGANA,,,引き染め,ひきぞめ,,hiki zome,farbowanie pędzlem,,,,"GroupId: 2646840
+Translate: brush dyeing"
+209447,WORD_NOUN,,HIRAGANA,,,黄道吉日,こうどうきちにち,,koudou kichinichi,bardzo pomyślny dzień na każdy rodzaj okazji,,,DUPLICATE 209381,"GroupId: 1576790
+Translate: very auspicious day for all types of occasions
+MiscInfo: yoji"
+209448,WORD_NOUN,,KATAKANA,,,-,ウチワエビ,,uchiwa ebi,Ibacus,gatunek homara,,,"GroupId: 2573090
+Translate: fan lobster (Ibacus spp., esp. the Japanese fan lobster, Ibacus ciliatus)
+MiscInfo: uk
+Translate: sand crayfish
+MiscInfo: uk"
+209449,WORD_NOUN,,KATAKANA_HIRAGANA,,,ブドウの木,ブドウのき,,budou no ki,winorośl,,,,"GroupId: 2679760
+Translate: grapevine"
+209450,WORD_NOUN,,HIRAGANA,,,撥ね物,はねもの,,hane mono,odrzucone towary,,,,"GroupId: 1679830
+Translate: rejected goods"
+209451,WORD_NOUN,,KATAKANA,,,-,シアーバター,,shiaa bataa,tłuszcz masłosza,ang: shea butter,,,"GroupId: 2841414
+Translate: shea butter"
+209452,WORD_NOUN,,KATAKANA,,,-,シア・バター,,shia bataa,tłuszcz masłosza,ang: shea butter,,,"GroupId: 2841414
+Translate: shea butter"
+209453,WORD_NOUN,,KATAKANA,,,-,シアー・バター,,shiaa bataa,tłuszcz masłosza,ang: shea butter,,,"GroupId: 2841414
+Translate: shea butter"
+209454,WORD_NOUN,,KATAKANA,,,-,ミンククジラ,,minku kujira,płetwal karłowaty,"gatunek ssaka z rodziny płetwalowatych, Balaenoptera acutorostrata",,,"GroupId: 1968940
+Translate: minke whale
+MiscInfo: uk
+Translate: piked whale (Balaenoptera acutorostrata)
+MiscInfo: uk"
+209455,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオジュリン,,oojurin,"potrzos
+potrzos zwyczajny","gatunek małego ptaka z rodziny trznadli, Emberiza schoeniclus",,,"GroupId: 2459050
+Translate: reed bunting (Emberiza schoeniclus)
+MiscInfo: uk"
+209456,WORD_NOUN,,KATAKANA,,,-,ギンザンマシコ,,ginzan mashiko,"łuskowiec
+łuskowiec zwyczajny","gatunek niewielkiego ptaka z rodziny łuszczakowatych, Pinicola enucleator",,,"GroupId: 2460580
+Translate: pine grosbeak (Pinicola enucleator)
+MiscInfo: uk"
+209457,WORD_NOUN,,KATAKANA,,,-,クモノスカビ,,kumo no sukabi,Rhizopus,gatunek grzybów,,,"GroupId: 2460720
+Translate: Rhizopus (saprobic fungus)
+MiscInfo: uk"
+209458,WORD_NOUN,,KATAKANA,,,-,コトドリ,,kotodori,lirogon wspaniały,"gatunek ptaka z rodziny lirogonów, Menura novaehollandiae",,,"GroupId: 2461820
+Translate: superb lyrebird (Menura novaehollandiae)
+MiscInfo: uk"
+209459,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,はさみを入れる,はさみをいれる,,hasami o ireru,"przeciąć nożyczkami
+włożyć nożyczki do
+skasować (np. bilet)
+przedziurawić (np. bilet)
+przycinać (np. krzew)",,,,"GroupId: 2827090
+Translate: to cut with scissors
+Translate: to put scissors to
+Translate: to punch (e.g. ticket)
+Translate: to prune (e.g. shrub)"
+209460,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,鋏を入れる,はさみをいれる,,hasami o ireru,"przeciąć nożyczkami
+włożyć nożyczki do
+skasować (np. bilet)
+przedziurawić (np. bilet)
+przycinać (np. krzew)",,,,"GroupId: 2827090
+Translate: to cut with scissors
+Translate: to put scissors to
+Translate: to punch (e.g. ticket)
+Translate: to prune (e.g. shrub)"
+209461,WORD_NOUN,,HIRAGANA,,,簾頭,すだれあたま,,sudare atama,"zaczeska (robiona przez łysiejących mężczyzn)
+głowa okryta bambusową zasłoną (w przenośni, gdyż wygląda, jakby to były listwy bambusowej zasłony)",,,,"GroupId: 2648250
+Translate: combover
+Translate: comb-over
+Translate: bamboo screen head (due to looking like the slats of a bamboo screen)"
+209462,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,激むず,げきむず,,geki muzu,ekstremalnie trudny,slang,,,"GroupId: 2831235
+Translate: extremely difficult
+MiscInfo: sl"
+209463,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,御涙頂戴,おなみだちょうだい,,onamida choudai,"wyciskacz łez
+melodramat
+smutna historia",,,,"GroupId: 2026940
+Translate: tearjerker
+Translate: sob story
+Translate: maudlin tale"
+209464,WORD_NOUN,,HIRAGANA_KATAKANA,,,競技カルタ,きょうぎカルタ,,kyougi karuta,zawody w karuta (grę w karty),,,,"GroupId: 2765240
+Translate: competitive karuta"
+209465,WORD_NOUN,,HIRAGANA,,,引染め,ひきぞめ,,hiki zome,farbowanie pędzlem,,,,"GroupId: 2646840
+Translate: brush dyeing"
+209466,WORD_NOUN,,HIRAGANA,,,引き染,ひきぞめ,,hiki zome,farbowanie pędzlem,,,,"GroupId: 2646840
+Translate: brush dyeing"
+209467,WORD_NOUN,,HIRAGANA,,,引染,ひきぞめ,,hiki zome,farbowanie pędzlem,,,,"GroupId: 2646840
 Translate: brush dyeing"
