@@ -38604,7 +38604,7 @@ Translate: relay network"
 209481,WORD_NOUN,,HIRAGANA,,,保障措置,ほしょうそち,,hoshou sochi,"ochrona
 zabezpieczenie",,,,"GroupId: 2123600
 Translate: safeguard"
-209482,WORD_NOUN,,HIRAGANA,,,内膳司,ないぜんし,,naizenshi,urząd odpowiedzialny za cesarskie posiłki,"system ritsuryo, archaizm",,,"GroupId: 2558920
+209482,WORD_NOUN,,HIRAGANA,,,内膳司,ないぜんし,,naizenshi,urząd odpowiedzialny za cesarskie posiłki,"system ritsuryo, archaizm",,DUPLICATE 209526,"GroupId: 2558920
 Translate: office in charge of the Emperor's meals (ritsuryo system)
 MiscInfo: arch"
 209483,WORD_NOUN,,HIRAGANA,,,取引制限,とりひきせいげん,,torihiki seigen,ograniczenia handlu,,,,"GroupId: 2722990
@@ -38623,7 +38623,7 @@ Translate: very far away
 MiscInfo: yoji
 Translate: the heavenly shores
 MiscInfo: yoji"
-209487,WORD_NOUN,,HIRAGANA,,,一足違い,ひとあしちがい,,hitoashi chigai,ledwo przegapienie,"np. spotkania z kimś, złapanie pociągu i etc",,,"GroupId: 1727910
+209487,WORD_NOUN,,HIRAGANA,,,一足違い,ひとあしちがい,,hito ashi chigai,ledwo przegapienie,"np. spotkania z kimś, złapanie pociągu i etc",,,"GroupId: 1727910
 Translate: barely miss (meeting someone, catching a train, etc.)"
 209488,WORD_NOUN,,KATAKANA,,,-,スカラップハンマーヘッド,,sukarappu hanmaaheddo,głowomłot tropikalny,"gatunek rekina, Sphyrna lewini",,,"GroupId: 2618830
 Translate: scalloped hammerhead (Sphyrna lewini)
@@ -38704,15 +38704,16 @@ Translate: sliced deep-fried tofu"
 tofu w stylu okinawskim",,,,"GroupId: 2730180
 Translate: Okinawan-style tofu"
 209510,WORD_NOUN,,KATAKANA,,,豆腐脳,ドウフナオ,,doufu nao,"budyń z tofu
-budyń sojowy",,,,"GroupId: 2839351
+budyń sojowy",,,DUPLICATE 209538,"GroupId: 2839351
 Translate: tofu pudding
 Translate: soybean pudding"
 209511,WORD_NOUN,,HIRAGANA,,,腐乳,ふにゅう,,funyuu,"sfermentowane tofu
-furu",,,,"GroupId: 2842404
+furu",,,"DUPLICATE 209539
+DUPLICATE 209540","GroupId: 2842404
 Translate: fermented tofu
 Translate: furu"
 209512,WORD_NOUN,,HIRAGANA,,,凍豆腐,こおりどうふ,,koori doufu,"mrożone tofu
-suszony ser sojowy",,,,"GroupId: 1582230
+suszony ser sojowy",,,DUPLICATE 209541,"GroupId: 1582230
 Translate: frozen tofu
 Translate: dried bean curd"
 209513,WORD_NOUN,,HIRAGANA,,,精進うなぎ,しょうじんうなぎ,,shoujin' unagi,oparte na tofu sztuczne dane z węgorza,,,,"GroupId: 2843509
@@ -38721,14 +38722,15 @@ Translate: tofu-based mock eel dish"
 Translate: fried tofu (aburage) used for inarizushi"
 209515,WORD_NOUN,,HIRAGANA,,,餅いなり,もちいなり,,mochiinari,kleisty ryż owinięty w głęboko smażone tofu,,,,"GroupId: 2408460
 Translate: sticky rice wrapped in deep-fried tofu"
-209516,WORD_NOUN,,HIRAGANA,,,新豆腐,しんどうふ,,shin doufu,tofu ze świeżo zebranych ziaren soi,,,,"GroupId: 2775510
+209516,WORD_NOUN,,HIRAGANA,,,新豆腐,しんどうふ,,shin doufu,tofu ze świeżo zebranych ziaren soi,,,DUPLICATE 209546,"GroupId: 2775510
 Translate: tofu made from freshly harvested soy beans"
 209517,WORD_NOUN,,HIRAGANA,,,ごま豆腐,ごまどうふ,,goma doufu,zmiażdżone nasiona sezamu gotowane w wodzie i schładzane jak tofu,,,,"GroupId: 2187280
 Translate: crushed sesame seeds boiled in water and chilled like tofu"
-209518,WORD_NOUN,,HIRAGANA,,,白和え,しらあえ,,shiraae,"sałatka udekorowana tofu, białym sezamem i białym miso",,,,"GroupId: 2653080
+209518,WORD_NOUN,,HIRAGANA,,,白和え,しらあえ,,shira ae,"sałatka udekorowana tofu, białym sezamem i białym miso",,,DUPLICATE 209549,"GroupId: 2653080
 Translate: salad dressed with tofu, white sesame, and white miso"
 209519,WORD_NOUN,,HIRAGANA,,,飛竜頭,ひりょうず,,hiryouzu,"filhos (tradycyjny portugalski deser)
-głęboko smażone tofu zmieszane z cienko pokrojonymi warzywami (dialekt Kansai)",,,,"GroupId: 2221820
+głęboko smażone tofu zmieszane z cienko pokrojonymi warzywami (dialekt Kansai)",,,"DUPLICATE 209552
+DUPLICATE 209553","GroupId: 2221820
 Translate: filhos (traditional Portuguese dessert)
 Translate: deep-fried tofu mixed with thinly sliced vegetables
 Dialect: ksb"
@@ -38750,3 +38752,115 @@ Translate: bow maker
 Translate: bowyer"
 209525,WORD_ADJECTIVE_F,,HIRAGANA,,,産官学,さんかんがく,,sankangaku,"przemysł, rząd i środowisko akademickie",,,,"GroupId: 2449450
 Translate: industry, government and academia"
+209526,WORD_NOUN,,HIRAGANA,,,内膳司,うちのかしわでのつかさ,,uchinokashiwadenotsukasa,urząd odpowiedzialny za cesarskie posiłki,"system ritsuryo, archaizm",,DUPLICATE 209482,"GroupId: 2558920
+Translate: office in charge of the Emperor's meals (ritsuryo system)
+MiscInfo: arch"
+209527,WORD_NOUN,,HIRAGANA,,,苛められっ子,いじめられっこ,,ijimerarekko,"tyranizowane dziecko
+prześladowane dziecko
+zastraszane dziecko",,,,"GroupId: 2068970
+Translate: bullied child"
+209528,WORD_NOUN,,HIRAGANA,,,ひと足違い,ひとあしちがい,,hito ashi chigai,ledwo przegapienie,"np. spotkania z kimś, złapanie pociągu i etc",,,"GroupId: 1727910
+Translate: barely miss (meeting someone, catching a train, etc.)"
+209529,WORD_NOUN,,KATAKANA,,,-,スカラップ・ハンマーヘッド,,sukarappu hanmaaheddo,głowomłot tropikalny,"gatunek rekina, Sphyrna lewini",,,"GroupId: 2618830
+Translate: scalloped hammerhead (Sphyrna lewini)
+Translate: bronze hammerhead shark"
+209530,WORD_NOUN,,HIRAGANA,,,精霊飛蝗擬き,しょうりょうばったもどき,,shouryou battamodoki,Acrida cinerea,owad,,,"GroupId: 2166380
+Translate: Gonista bicolor (species of grasshopper resembling the Oriental longheaded locust)
+MiscInfo: uk"
+209531,WORD_NOUN,,KATAKANA,,,-,ショウリョウバッタモドキ,,shouryou battamodoki,Acrida cinerea,owad,,,"GroupId: 2166380
+Translate: Gonista bicolor (species of grasshopper resembling the Oriental longheaded locust)
+MiscInfo: uk"
+209532,WORD_NOUN,,KATAKANA,,,-,ツクリタケ,,tsukuri take,pieczarka dwuzarodnikowa,"gatunek grzybów z rodziny pieczarkowatych, Agaricus bisporus",,,"GroupId: 2464280
+Translate: common mushroom (Agaricus bisporus)
+MiscInfo: uk"
+209533,WORD_NOUN,,KATAKANA,,,-,スズメノヒエ,,suzume no hie,Paspalum thunbergii,roślina,,,"GroupId: 2464590
+Translate: Japanese paspalum (Paspalum thunbergii)
+MiscInfo: uk"
+209534,WORD_NOUN,,KATAKANA,,,-,ツチグリ,,tsuchiguri,promieniak wilgociomierz,"gatunek grzybów z rodziny Diplocystidiaceae, Astraeus hygrometricus",,,"GroupId: 2464690
+Translate: barometer earthstar (Astraeus hygrometricus)
+MiscInfo: uk"
+209535,WORD_NOUN,,KATAKANA,,,-,ノボロギク,,noboro giku,"starzec zwyczajny
+starzec pospolity","gatunek rośliny z rodziny astrowatych, Senecio vulgaris",,,"GroupId: 2464720
+Translate: common groundsel (Senecio vulgaris)
+MiscInfo: uk"
+209536,WORD_NOUN,,KATAKANA,,,-,ドクムギ,,dokumugi,życica roczna,"gatunek rośliny z rodziny wiechlinowatych, Lolium temulentum",,,"GroupId: 2464730
+Translate: darnel (Lolium temulentum)
+MiscInfo: uk"
+209537,WORD_VERB_U,,HIRAGANA,,,売りとばす,うりとばす,,uri tobasu,"pozbyć się
+pozbywać się
+wyprzedawać",,,,"GroupId: 1473900
+Translate: to dispose of
+Translate: to sell off"
+209538,WORD_NOUN,,KATAKANA,,,豆腐脳,トウフナオ,,toufu nao,"budyń z tofu
+budyń sojowy",,,DUPLICATE 209510,"GroupId: 2839351
+Translate: tofu pudding
+Translate: soybean pudding"
+209539,WORD_NOUN,,KATAKANA,,,腐乳,フールー,,fuuruu,"sfermentowane tofu
+furu",,,"DUPLICATE 209511
+DUPLICATE 209540","GroupId: 2842404
+Translate: fermented tofu
+Translate: furu"
+209540,WORD_NOUN,,KATAKANA_EXCEPTION,,,腐乳,フウルウ,,fuuruu,"sfermentowane tofu
+furu",,,"DUPLICATE 209511
+DUPLICATE 209539","GroupId: 2842404
+Translate: fermented tofu
+Translate: furu"
+209541,WORD_NOUN,,HIRAGANA,,,凍豆腐,しみどうふ,,shimi doufu,"mrożone tofu
+suszony ser sojowy",,,DUPLICATE 209512,"GroupId: 1582230
+Translate: frozen tofu
+Translate: dried bean curd"
+209542,WORD_NOUN,,HIRAGANA,,,氷豆腐,こおりどうふ,,koori doufu,"mrożone tofu
+suszony ser sojowy",,,,"GroupId: 1582230
+Translate: frozen tofu
+Translate: dried bean curd"
+209543,WORD_NOUN,,HIRAGANA,,,精進鰻,しょうじんうなぎ,,shoujin' unagi,oparte na tofu sztuczne dane z węgorza,,,,"GroupId: 2843509
+Translate: tofu-based mock eel dish"
+209544,WORD_NOUN,,HIRAGANA_KATAKANA,,,精進ウナギ,しょうじんウナギ,,shoujin' unagi,oparte na tofu sztuczne dane z węgorza,,,,"GroupId: 2843509
+Translate: tofu-based mock eel dish"
+209545,WORD_NOUN,,HIRAGANA,,,稲荷揚,いなりあげ,,inariage,smażone tofu (aburage) używane do inarizushi,,,,"GroupId: 2058400
+Translate: fried tofu (aburage) used for inarizushi"
+209546,WORD_NOUN,,HIRAGANA,,,新豆腐,しんとうふ,,shin toufu,tofu ze świeżo zebranych ziaren soi,,,DUPLICATE 209516,"GroupId: 2775510
+Translate: tofu made from freshly harvested soy beans"
+209547,WORD_NOUN,,KATAKANA_HIRAGANA,,,ゴマ豆腐,ゴマどうふ,,goma doufu,zmiażdżone nasiona sezamu gotowane w wodzie i schładzane jak tofu,,,,"GroupId: 2187280
+Translate: crushed sesame seeds boiled in water and chilled like tofu"
+209548,WORD_NOUN,,HIRAGANA,,,胡麻豆腐,ごまどうふ,,goma doufu,zmiażdżone nasiona sezamu gotowane w wodzie i schładzane jak tofu,,,,"GroupId: 2187280
+Translate: crushed sesame seeds boiled in water and chilled like tofu"
+209549,WORD_NOUN,,HIRAGANA,,,白和え,しろあえ,,shiro ae,"sałatka udekorowana tofu, białym sezamem i białym miso",,,DUPLICATE 209518,"GroupId: 2653080
+Translate: salad dressed with tofu, white sesame, and white miso"
+209550,WORD_NOUN,,HIRAGANA,,,白韲え,しらあえ,,shira ae,"sałatka udekorowana tofu, białym sezamem i białym miso",,,DUPLICATE 209551,"GroupId: 2653080
+Translate: salad dressed with tofu, white sesame, and white miso"
+209551,WORD_NOUN,,HIRAGANA,,,白韲え,しろあえ,,shiro ae,"sałatka udekorowana tofu, białym sezamem i białym miso",,,DUPLICATE 209550,"GroupId: 2653080
+Translate: salad dressed with tofu, white sesame, and white miso"
+209552,WORD_NOUN,,HIRAGANA,,,飛竜頭,ひりゅうず,,hiryuuzu,"filhos (tradycyjny portugalski deser)
+głęboko smażone tofu zmieszane z cienko pokrojonymi warzywami (dialekt Kansai)",,,"DUPLICATE 209519
+DUPLICATE 209553","GroupId: 2221820
+Translate: filhos (traditional Portuguese dessert)
+Translate: deep-fried tofu mixed with thinly sliced vegetables
+Dialect: ksb"
+209553,WORD_NOUN,,HIRAGANA,,,飛竜頭,ひろうす,,hirousu,"filhos (tradycyjny portugalski deser)
+głęboko smażone tofu zmieszane z cienko pokrojonymi warzywami (dialekt Kansai)",,,"DUPLICATE 209519
+DUPLICATE 209552","GroupId: 2221820
+Translate: filhos (traditional Portuguese dessert)
+Translate: deep-fried tofu mixed with thinly sliced vegetables
+Dialect: ksb"
+209554,WORD_NOUN,,HIRAGANA,,,飛竜子,ひりょうず,,hiryouzu,"filhos (tradycyjny portugalski deser)
+głęboko smażone tofu zmieszane z cienko pokrojonymi warzywami (dialekt Kansai)",,,"DUPLICATE 209555
+DUPLICATE 209556","GroupId: 2221820
+Translate: filhos (traditional Portuguese dessert)
+Translate: deep-fried tofu mixed with thinly sliced vegetables
+Dialect: ksb"
+209555,WORD_NOUN,,HIRAGANA,,,飛竜子,ひりゅうず,,hiryuuzu,"filhos (tradycyjny portugalski deser)
+głęboko smażone tofu zmieszane z cienko pokrojonymi warzywami (dialekt Kansai)",,,"DUPLICATE 209554
+DUPLICATE 209556","GroupId: 2221820
+Translate: filhos (traditional Portuguese dessert)
+Translate: deep-fried tofu mixed with thinly sliced vegetables
+Dialect: ksb"
+209556,WORD_NOUN,,HIRAGANA,,,飛竜子,ひろうす,,hirousu,"filhos (tradycyjny portugalski deser)
+głęboko smażone tofu zmieszane z cienko pokrojonymi warzywami (dialekt Kansai)",,,"DUPLICATE 209554
+DUPLICATE 209555","GroupId: 2221820
+Translate: filhos (traditional Portuguese dessert)
+Translate: deep-fried tofu mixed with thinly sliced vegetables
+Dialect: ksb"
+209557,WORD_NOUN,,HIRAGANA,,,矩差し,かねざし,,kanezashi,ekierka stolarska,mało znane słowo,,,"GroupId: 2243850
+Translate: carpenter's square
+MiscInfo: obsc"
