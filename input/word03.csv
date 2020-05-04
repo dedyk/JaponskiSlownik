@@ -38984,13 +38984,13 @@ Translate: to violate the law
 Translate: to have a brush with the law
 Translate: to have a run-in with the law"
 209595,WORD_NOUN,,HIRAGANA,,,行き場所,いきばしょ,,iki basho,"miejsce do odwiedzin
-miejsce, gdzie można pójść",,,,"GroupId: 2843861
+miejsce, gdzie można pójść",,,DUPLICATE 209627,"GroupId: 2843861
 Translate: place to go
 Translate: place one can go"
-209596,WORD_NOUN,,HIRAGANA,,,黒玉,くろだま,,kurodama,"czarna kula
+209596,WORD_NOUN,,HIRAGANA,,,黒玉,くろだま,,kuro dama,"czarna kula
 czarna, okrągła pieczęć
 źrenica
-czarny cukierek",,,,"GroupId: 2762350
+czarny cukierek",,,DUPLICATE 209628,"GroupId: 2762350
 Translate: black ball
 Translate: black, round sigil
 Translate: pupil
@@ -39058,3 +39058,100 @@ Translate: thiamin"
 ograniczenie",,,,"GroupId: 1374980
 Translate: limiting conditions
 Translate: constraint"
+209613,WORD_NOUN,,KATAKANA_HIRAGANA,,,ブレトン・ウッズ協定,ブレトンウッズきょうてい,,bureton'uzzu kyoutei,System z Bretton Woods,"system walutowy, który stworzył podstawy relacji międzynarodowych w sferze zarządzania systemami monetarnymi",,,"GroupId: 2741270
+Translate: Bretton Woods Agreement (1944)"
+209614,WORD_NOUN,,KATAKANA,,,-,フクロネコ,,fukuroneko,niełaz,"rodzaj ssaka z podrodziny niełazów w rodzinie niełazowatych, Dasyurus",,,"GroupId: 2750540
+Translate: quoll (Dasyurus spp.)
+MiscInfo: uk"
+209615,WORD_NOUN,,KATAKANA,,,-,インドアプレーグラウンド,,indoa pureeguraundo,"kryty plac zabaw
+plac zabaw w pomieszczeniu",ang: indoor playground,,,"GroupId: 2842879
+Translate: indoor playground"
+209616,WORD_NOUN,,KATAKANA,,,-,インドア・プレイグラウンド,,indoa pureiguraundo,"kryty plac zabaw
+plac zabaw w pomieszczeniu",ang: indoor playground,,,"GroupId: 2842879
+Translate: indoor playground"
+209617,WORD_NOUN,,KATAKANA,,,-,インドア・プレーグラウンド,,indoa pureeguraundo,"kryty plac zabaw
+plac zabaw w pomieszczeniu",ang: indoor playground,,,"GroupId: 2842879
+Translate: indoor playground"
+209618,WORD_NOUN,,KATAKANA,,,-,パイプ・スペース,,paipu supeesu,"szyb w budynku
+szacht w budynku",ang: pipe space,,,"GroupId: 2838465
+Translate: pipe shaft (in a building)
+Translate: riser shaft"
+209619,WORD_NOUN,,HIRAGANA,,,内輪揉め,うちわもめ,,uchiwamome,"wewnętrzny konflikt
+spór rodzinny
+kłopoty domowe",,,,"GroupId: 1459570
+Translate: internal conflict
+Translate: family quarrel
+Translate: domestic trouble"
+209620,WORD_NOUN,,KATAKANA,,,-,ヒメハギ,,himehagi,Polygala japonica,kwiat,,,"GroupId: 2464750
+Translate: dwarf milkwort (Polygala japonica)
+MiscInfo: uk"
+209621,WORD_NOUN,,HIRAGANA,,,手型千鳥,てがたちどり,,tegata chidori,"gółka długoostrogowa
+koślarek","gatunek rośliny należący do rodziny storczykowatych, Gymnadenia conopsea",,,"GroupId: 2464760
+Translate: fragrant orchid (Gymnadenia conopsea)
+MiscInfo: uk"
+209622,WORD_NOUN,,KATAKANA,,,-,テガタチドリ,,tegata chidori,"gółka długoostrogowa
+koślarek","gatunek rośliny należący do rodziny storczykowatych, Gymnadenia conopsea",,,"GroupId: 2464760
+Translate: fragrant orchid (Gymnadenia conopsea)
+MiscInfo: uk"
+209623,WORD_NOUN,,KATAKANA,,,-,ニオイスミレ,,nioisumire,"fiołek wonny
+fiołek pachnący","gatunek rośliny należący do rodziny fiołkowatych, Viola odorata",,,"GroupId: 2464920
+Translate: sweet violet (Viola odorata)
+MiscInfo: uk"
+209624,WORD_NOUN,,KATAKANA,,,-,エボシドリ,,eboshi dori,ptak z rodziny Musophagidae,"szczególnie turak niebieskozielony, Tauraco corythaix",,,"GroupId: 2464940
+Translate: turaco (any bird of family Musophagidae, esp. the Knysna turaco, Tauraco corythaix)
+MiscInfo: uk
+Translate: touraco
+MiscInfo: uk
+Translate: loerie
+MiscInfo: uk
+Translate: lourie
+MiscInfo: uk"
+209625,WORD_NOUN,,KATAKANA,,,-,シカクマメ,,shikakumame,łust głąbigroszek,Psophocarpus tetragonolobus,,,"GroupId: 2464950
+Translate: winged bean (Psophocarpus tetragonolobus)
+MiscInfo: uk"
+209626,WORD_VERB_U,,HIRAGANA,,,突抜く,つきぬく,,tsuki nuku,"przeszywać
+przenikać",,,,"GroupId: 1456810
+Translate: to pierce
+Translate: to shoot through
+Translate: to penetrate"
+209627,WORD_NOUN,,HIRAGANA,,,行き場所,ゆきばしょ,,yuki basho,"miejsce do odwiedzin
+miejsce, gdzie można pójść",,,DUPLICATE 209595,"GroupId: 2843861
+Translate: place to go
+Translate: place one can go"
+209628,WORD_NOUN,,HIRAGANA,,,黒玉,くろたま,,kuro tama,"czarna kula
+czarna, okrągła pieczęć
+źrenica
+czarny cukierek",,,DUPLICATE 209596,"GroupId: 2762350
+Translate: black ball
+Translate: black, round sigil
+Translate: pupil
+Translate: black candy"
+209629,WORD_ADVERB,,KATAKANA_HIRAGANA,,,-,ヌルっと,,nurutto,???,,,,"GroupId: 2837479
+Translate: oilily
+MiscInfo: on-mim
+Translate: slimily
+MiscInfo: on-mim
+Translate: slipperily
+MiscInfo: on-mim"
+209630,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ランサムウエア,,ransamuuea,ransomware,"typ szkodliwego oprogramowania, które blokuje dostęp do systemu komputerowego lub uniemożliwia odczyt zapisanych w nim danych, a następnie żąda od ofiary okupu za przywrócenie stanu pierwotnego",,,"GroupId: 2832151
+Translate: ransomware"
+209631,WORD_VERB_U,,HIRAGANA,,,禿げ上がる,はげあがる,,hage agaru,"łysienie od czoła
+cofanie się (linii włosów)",,,,"GroupId: 1600710
+Translate: to become bald from the forehead
+Translate: to recede (of one's hairline)"
+209632,WORD_VERB_U,,HIRAGANA,,,禿げあがる,はげあがる,,hage agaru,"łysienie od czoła
+cofanie się (linii włosów)",,,,"GroupId: 1600710
+Translate: to become bald from the forehead
+Translate: to recede (of one's hairline)"
+209633,WORD_VERB_U,,HIRAGANA,,,禿上がる,はげあがる,,hage agaru,"łysienie od czoła
+cofanie się (linii włosów)",,,,"GroupId: 1600710
+Translate: to become bald from the forehead
+Translate: to recede (of one's hairline)"
+209634,WORD_VERB_U,,HIRAGANA,,,禿げ上る,はげあがる,,hage agaru,"łysienie od czoła
+cofanie się (linii włosów)",,,,"GroupId: 1600710
+Translate: to become bald from the forehead
+Translate: to recede (of one's hairline)"
+209635,WORD_NOUN,,KATAKANA,,,-,チアミン,,chiamin,"tiamina
+witamina B₁","heterocykliczny związek chemiczny, złożony z pierścieni tiazolowego i pirymidynowego, połączonych mostkiem metinowym",,,"GroupId: 2502640
+Translate: thiamine
+Translate: thiamin"
