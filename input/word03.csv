@@ -39180,7 +39180,7 @@ Translate: to investigate the facts"
 209644,WORD_NOUN,,KATAKANA_HIRAGANA,,,データ完全性,データかんぜんせい,,deeta kanzensei,integralność danych,,,,"GroupId: 2310100
 Translate: data integrity"
 209645,WORD_NOUN,,HIRAGANA,,,抹茶塩,まっちゃじお,,macchajio,"sól matcha
-sól zmieszana ze sproszkowaną zieloną herbatą",,,,"GroupId: 2736270
+sól zmieszana ze sproszkowaną zieloną herbatą",,,DUPLICATE 209703,"GroupId: 2736270
 Translate: matcha salt
 Translate: salt mixed with powdered green tea"
 209646,"WORD_EXPRESSION
@@ -39322,7 +39322,7 @@ konceptualistyczny",,,,"GroupId: 1984960
 Translate: conceptual"
 209689,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,行きつ戻りつ,ゆきつもどりつ,,yukitsu modoritsu,"iść w górę i w dół
-chodzenie tam i z powrotem",,,,"GroupId: 1685950
+chodzenie tam i z powrotem",,,DUPLICATE 209718,"GroupId: 1685950
 Translate: going up and down
 Translate: going back and forth"
 209690,"WORD_NOUN
@@ -39363,6 +39363,65 @@ Translate: logotype (printing)"
 Translate: solar day"
 209700,WORD_NOUN,,HIRAGANA_KATAKANA,,,個人メドレー,こじんメドレー,,kojin medoree,styl zmienny (w pływaniu),,,,"GroupId: 2835452
 Translate: individual medley (swimming)"
-209701,WORD_NOUN,,HIRAGANA,,,墨刑,ぼっけい,,bokkei,tatuowanie,"forma kary w starożytnych Chinach, archaizm",,,"GroupId: 1584240
+209701,WORD_NOUN,,HIRAGANA,,,墨刑,ぼっけい,,bokkei,tatuowanie,"forma kary w starożytnych Chinach, archaizm",,DUPLICATE 209719,"GroupId: 1584240
+Translate: tattooing (form of punishment in ancient China)
+MiscInfo: arch"
+209702,WORD_NOUN,,KATAKANA_HIRAGANA,,,プリント基盤,プリントきばん,,purinto kiban,"płytka drukowana
+płytka obwodu drukowanego","płytka z materiału izolacyjnego z połączeniami elektrycznymi i punktami lutowniczymi, przeznaczona do montażu podzespołów elektronicznych",,,"GroupId: 1116320
+Translate: printed wiring board
+Translate: printed circuit board
+Translate: PCB"
+209703,WORD_NOUN,,HIRAGANA,,,抹茶塩,まっちゃしお,,macchashio,"sól matcha
+sól zmieszana ze sproszkowaną zieloną herbatą",,,DUPLICATE 209645,"GroupId: 2736270
+Translate: matcha salt
+Translate: salt mixed with powdered green tea"
+209704,WORD_NOUN,,KATAKANA,,,-,キタナキウサギ,,kitanaki usagi,Ochotona hyperborea,zwierzę,,,"GroupId: 2705560
+Translate: northern pika (Ochotona hyperborea)
+MiscInfo: uk"
+209705,WORD_NOUN,,KATAKANA,,,-,ソリハシシギ,,sorihashishigi,terekia,"gatunek średniego ptaka wędrownego z rodziny bekasowatych, jedyny przedstawiciel rodzaju Xenus, Xenus cinereus",,,"GroupId: 2476800
+Translate: Terek sandpiper (Xenus cinereus)
+MiscInfo: uk"
+209706,WORD_NOUN,,KATAKANA,,,-,ソリハシセイタカシギ,,sorihashiseitakashigi,"szablodziób zwyczajny
+szablodziób","gatunek średniej wielkości ptaka brodzącego z rodziny szczudłonogów, Recurvirostra avosetta",,,"GroupId: 2476810
+Translate: pied avocet (Recurvirostra avosetta)
+MiscInfo: uk"
+209707,WORD_NOUN,,KATAKANA,,,-,ヒエンソウ,,hiensou,ostróżeczka ogrodowa,"gatunek rośliny należący do rodziny jaskrowatych, Consolida ajacis",,,"GroupId: 2502500
+Translate: rocket larkspur (Consolida ajacis)
+MiscInfo: uk"
+209708,WORD_NOUN,,HIRAGANA,,,紋殻皮剝,もんがらかわはぎ,,mongara kawahagi,rogatnica jasnoplama,"ryba morska z rodziny rogatnicowatych, Balistoides conspicillum",,,"GroupId: 2504390
+Translate: clown triggerfish (Balistoides conspicillum)
+MiscInfo: uk"
+209709,WORD_NOUN,,KATAKANA,,,-,モンガラカワハギ,,mongara kawahagi,rogatnica jasnoplama,"ryba morska z rodziny rogatnicowatych, Balistoides conspicillum",,,"GroupId: 2504390
+Translate: clown triggerfish (Balistoides conspicillum)
+MiscInfo: uk"
+209710,WORD_NOUN,,KATAKANA,,,-,ハイガシラミツスイ,,haigashiramitsusui,koralicowiec kosnaty,"gatunek ptaka, Anthochaera chrysoptera",,,"GroupId: 2512710
+Translate: brush wattlebird (Anthochaera chrysoptera)
+MiscInfo: uk"
+209711,WORD_NOUN,,HIRAGANA,,,海無し県,うみなしけん,,uminashi ken,prefektura śródlądowa,,,,"GroupId: 2842827
+Translate: land-locked prefecture"
+209712,WORD_NOUN,,KATAKANA_HIRAGANA,,,チャグチャグ馬こ,チャグチャグうまこ,,chagu chagu umako,"koński festiwal Chagu Chagu (prefektura Iwate)
+mała drewniana końska zabawka z dzwoneczkami na szyi (wykonana w prefekturze Iwate)",,,,"GroupId: 2185590
+Translate: Chagu Chagu Horse Festival (of Iwate Prefecture)
+Translate: small wooden horse toy with bells on its neck (made in Iwate Prefecture)"
+209713,WORD_NOUN,,HIRAGANA,,,三河萬歳,みかわまんざい,,mikawa manzai,"Mikawa manzai
+styl manzai pochodzący z regionu Mikawa w prefekturze Aichi",,,,"GroupId: 2624900
+Translate: Mikawa manzai
+Translate: style of manzai originating in the Mikawa region in Aichi prefecture"
+209714,WORD_NOUN,,KATAKANA,,,-,ナツヒメ,,natsuhime,"ananas ananassoides (gatunek rośliny z rodziny bromeliowatych)
+natsuhime (odmiana gruszki z prefektury Tottori)",,,,"GroupId: 2828760
+Translate: cerrado pineapple (Ananas ananassoides)
+Translate: natsuhime (variety of pear from Tottori prefecture)"
+209715,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,せーまんどーまん,,seeman dooman,amulet tradycyjnie noszony przez poławiaczki pereł z prowincji Shima (obecnie w prefekturze Mie),,,,"GroupId: 2839091
+Translate: amulet traditionally worn by female pearl divers in Shima province (now in Mie prefecture)"
+209716,WORD_NOUN,,KATAKANA,,,-,ドーマンセーマン,,dooman seeman,amulet tradycyjnie noszony przez poławiaczki pereł z prowincji Shima (obecnie w prefekturze Mie),,,,"GroupId: 2839091
+Translate: amulet traditionally worn by female pearl divers in Shima province (now in Mie prefecture)"
+209717,WORD_NOUN,,KATAKANA,,,-,セーマンドーマン,,seeman dooman,amulet tradycyjnie noszony przez poławiaczki pereł z prowincji Shima (obecnie w prefekturze Mie),,,,"GroupId: 2839091
+Translate: amulet traditionally worn by female pearl divers in Shima province (now in Mie prefecture)"
+209718,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,行きつ戻りつ,いきつもどりつ,,ikitsu modoritsu,"iść w górę i w dół
+chodzenie tam i z powrotem",,,DUPLICATE 209689,"GroupId: 1685950
+Translate: going up and down
+Translate: going back and forth"
+209719,WORD_NOUN,,HIRAGANA,,,墨刑,ぼくけい,,bokukei,tatuowanie,"forma kary w starożytnych Chinach, archaizm",,DUPLICATE 209701,"GroupId: 1584240
 Translate: tattooing (form of punishment in ancient China)
 MiscInfo: arch"
