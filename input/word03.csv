@@ -39749,7 +39749,7 @@ Translate: slap-cheek (erythema infectiosum)"
 Translate: piano wire"
 209817,WORD_NOUN,,HIRAGANA_KATAKANA,,,四塩化ケイ素,しえんかケイそ,,shienka kei so,czterochlorek krzemu,SiCl4,,,"GroupId: 2171640
 Translate: silicon tetrachloride (SiCl4)"
-209818,WORD_NOUN,,KATAKANA,,,-,シューズインクローゼット,,shuuzuinkuroozetto,garderoba z miejscem na buty (przy wejściu do domu),ang: shoes-in closet,,,"GroupId: 2838453
+209818,WORD_NOUN,,KATAKANA,,,-,シューズインクローゼット,,shuuzu in kuroozetto,garderoba z miejscem na buty (przy wejściu do domu),ang: shoes-in closet,,,"GroupId: 2838453
 Translate: walk-in closet with space for shoes (by the entrance of a house)"
 209819,WORD_NOUN,,KATAKANA,,,-,アカマタ,,akamata,Dinodon semicarinatum,gatunek węża,,,"GroupId: 2262680
 Translate: Ryukyu odd-tooth snake (Dinodon semicarinatum)"
@@ -39850,7 +39850,7 @@ AdditionalInfo: short for 他人の不幸で今日も飯がうまい"
 czerwonawe mięso",,,,"GroupId: 2838065
 Translate: red meat
 Translate: reddish meat"
-209843,WORD_NOUN,,HIRAGANA,,,塊肉,かたまりにく,,katamariniku,"kawałek mięsa (np. do grillowania)
+209843,WORD_NOUN,,HIRAGANA_EXCEPTION,,,塊肉,かたまりにく,,katamari niku,"kawałek mięsa (np. do grillowania)
 sztuka mięsa",,,,"GroupId: 2834940
 Translate: chunk of meat (e.g. for grilling)
 Translate: joint of meat"
@@ -39859,8 +39859,8 @@ Translate: chicken wing"
 209845,WORD_NOUN,,KATAKANA,,,-,ホワイティング,,howaitingu,witlinek,"gatunek morskiej ryby dorszokształtnej z rodziny dorszowatych, Merlangius merlangus, ang: whiting",,,"GroupId: 2453000
 Translate: whiting (Merlangius merlangus)"
 209846,WORD_NOUN,,HIRAGANA,,,紋甲いか,もんごういか,,mongouika,"Sepia lycidas (mątwa)
-µątwa zwyczajna (Sepia officinalis)
-mątwa pospolita (Sepia officinalis)",,,,"GroupId: 2812300
+mątwa zwyczajna (Sepia officinalis)
+mątwa pospolita (Sepia officinalis)",,,DUPLICATE 209879,"GroupId: 2812300
 Translate: kisslip cuttlefish (Sepia lycidas)
 MiscInfo: uk
 Translate: common cuttlefish (Sepia officinalis)
@@ -39930,3 +39930,109 @@ Translate: vehicle
 Translate: vector
 Translate: fomite
 Translate: fomes"
+209860,WORD_NOUN,,HIRAGANA,,,刺魚,とげうお,,togeuo,ciernikowate,"rodzina ryb z rzędu ciernikokształtnych, Gasterosteidae",,,"GroupId: 2242420
+Translate: stickleback (Gasterosteidae spp.)
+MiscInfo: uk"
+209861,WORD_NOUN,,KATAKANA,,,-,トゲウオ,,togeuo,ciernikowate,"rodzina ryb z rzędu ciernikokształtnych, Gasterosteidae",,,"GroupId: 2242420
+Translate: stickleback (Gasterosteidae spp.)
+MiscInfo: uk"
+209862,WORD_NOUN,,KATAKANA,,,-,ナベコウ,,nabekou,bocian czarny,"gatunek dużego ptaka z rodziny bocianowatych, Ciconia nigra",,,"GroupId: 2830739
+Translate: black stork (Ciconia nigra)
+MiscInfo: uk"
+209863,WORD_NOUN,,KATAKANA,,,-,タイセイヨウダラ,,taiseiyoudara,dorsz atlantycki,"nazywany również dorszem lub wątłuszem – drapieżna ryba morska, największy z przedstawicieli rodziny dorszowatych, Gadus morhua",,,"GroupId: 2774470
+Translate: Atlantic cod (Gadus morhua)
+MiscInfo: uk"
+209864,WORD_NOUN,,KATAKANA,,,-,バイカラード・フォックスフェイス,,baikaraado fokkusufeisu,Siganus uspi,gatunek ryby,,,"GroupId: 2543520
+Translate: bicolored foxface (Siganus uspi, species of rabbitfish endemic to Fiji sometimes found in New Caledonia)"
+209865,WORD_NOUN,,KATAKANA,,,-,バイカラードフォックスフェイス,,baikaraado fokkusufeisu,Siganus uspi,gatunek ryby,,,"GroupId: 2543520
+Translate: bicolored foxface (Siganus uspi, species of rabbitfish endemic to Fiji sometimes found in New Caledonia)"
+209866,WORD_NOUN,,HIRAGANA,,,直示秤,ちょくじはかり,,chokuji hakari,waga odczytu bezpośredniego,,,,"GroupId: 2234690
+Translate: direct-reading balance
+Translate: direct-reading scales"
+209867,WORD_NOUN,,HIRAGANA,,,四塩化珪素,しえんかけいそ,,shienka kei so,czterochlorek krzemu,SiCl4,,,"GroupId: 2171640
+Translate: silicon tetrachloride (SiCl4)"
+209868,WORD_NOUN,,KATAKANA,,,-,シューズインクロゼット,,shuuzu in kurozetto,garderoba z miejscem na buty (przy wejściu do domu),ang: shoes-in closet,,,"GroupId: 2838453
+Translate: walk-in closet with space for shoes (by the entrance of a house)"
+209869,WORD_NOUN,,KATAKANA,,,-,シューズ・イン・クローゼット,,shuuzu in kuroozetto,garderoba z miejscem na buty (przy wejściu do domu),ang: shoes-in closet,,,"GroupId: 2838453
+Translate: walk-in closet with space for shoes (by the entrance of a house)"
+209870,WORD_NOUN,,KATAKANA,,,-,シューズ・イン・クロゼット,,shuuzu in kurozetto,garderoba z miejscem na buty (przy wejściu do domu),ang: shoes-in closet,,,"GroupId: 2838453
+Translate: walk-in closet with space for shoes (by the entrance of a house)"
+209871,WORD_NOUN,,HIRAGANA,,,-,あかまた,,akamata,Dinodon semicarinatum,gatunek węża,,,"GroupId: 2262680
+Translate: Ryukyu odd-tooth snake (Dinodon semicarinatum)"
+209872,WORD_NOUN,,KATAKANA,,,-,スキアシガエル,,sukiashigaeru,"grzebiuszkowate
+huczki","monotypowa rodzina płazów z rzędu płazów bezogonowych, Pelobatidae",,,"GroupId: 2525770
+Translate: spadefoot toad (Pelobatidae spp.)
+MiscInfo: uk"
+209873,WORD_NOUN,,KATAKANA,,,-,ハネジネズミ,,haneji nezumi,"ryjkonosowate
+ryjoskoczkowate
+ryjoskoczki","zwierzę, jedyna rodzina w obrębie rzędu ryjkonosowych, Macroscelididae",,,"GroupId: 2527120
+Translate: elephant shrew (Macroscelididae spp.)
+MiscInfo: uk"
+209874,WORD_NOUN,,KATAKANA,,,-,フクログマ,,fukuroguma,koala australijski,"gatunek torbacza z rodziny koalowatych, nadrzewne zwierzę roślinożerne, zamieszkujące wschodnią Australię, Phascolarctos cinereus",,,"GroupId: 2527830
+Translate: koala (Phascolarctos cinereus)
+MiscInfo: uk"
+209875,WORD_NOUN,,KATAKANA,,,-,キツネダイ,,kitsunedai,Bodianus oxycephalus,gatunek ryby,,,"GroupId: 2548370
+Translate: sharphead hogfish (Bodianus oxycephalus)
+MiscInfo: uk"
+209876,WORD_NOUN,,KATAKANA,,,-,トラフザメ,,torafuzame,zebra rekin,Stegostoma fasciatum,,,"GroupId: 2550700
+Translate: zebra shark (Stegostoma fasciatum)
+MiscInfo: uk"
+209877,"WORD_NOUN
+WORD_EXPRESSION",,HIRAGANA,,,-,めしうま,,meshiuma,radość z cudzego nieszczęścia,"slang, wulgarnie, skrót od  他人の不幸で今日も飯がうまい",,,"GroupId: 2705640
+Translate: schadenfreude
+MiscInfo: vulg
+MiscInfo: sl
+MiscInfo: abbr
+AdditionalInfo: short for 他人の不幸で今日も飯がうまい
+Translate: pleasure derived from the misfortunes of others
+MiscInfo: vulg
+MiscInfo: sl
+MiscInfo: abbr
+AdditionalInfo: short for 他人の不幸で今日も飯がうまい"
+209878,WORD_NOUN,,HIRAGANA,,,固まり肉,かたまりにく,,katamari niku,"kawałek mięsa (np. do grillowania)
+sztuka mięsa",,,,"GroupId: 2834940
+Translate: chunk of meat (e.g. for grilling)
+Translate: joint of meat"
+209879,WORD_NOUN,,HIRAGANA,,,紋甲いか,もんごいか,,mongoika,"Sepia lycidas (mątwa)
+mątwa zwyczajna (Sepia officinalis)
+mątwa pospolita (Sepia officinalis)",,,DUPLICATE 209846,"GroupId: 2812300
+Translate: kisslip cuttlefish (Sepia lycidas)
+MiscInfo: uk
+Translate: common cuttlefish (Sepia officinalis)
+MiscInfo: uk"
+209880,WORD_NOUN,,HIRAGANA,,,紋甲烏賊,もんごういか,,mongouika,"Sepia lycidas (mątwa)
+mątwa zwyczajna (Sepia officinalis)
+mątwa pospolita (Sepia officinalis)",,,DUPLICATE 209881,"GroupId: 2812300
+Translate: kisslip cuttlefish (Sepia lycidas)
+MiscInfo: uk
+Translate: common cuttlefish (Sepia officinalis)
+MiscInfo: uk"
+209881,WORD_NOUN,,HIRAGANA,,,紋甲烏賊,もんごいか,,mongoika,"Sepia lycidas (mątwa)
+mątwa zwyczajna (Sepia officinalis)
+mątwa pospolita (Sepia officinalis)",,,DUPLICATE 209880,"GroupId: 2812300
+Translate: kisslip cuttlefish (Sepia lycidas)
+MiscInfo: uk
+Translate: common cuttlefish (Sepia officinalis)
+MiscInfo: uk"
+209882,WORD_NOUN,,KATAKANA,,,-,モンゴウイカ,,mongouika,"Sepia lycidas (mątwa)
+mątwa zwyczajna (Sepia officinalis)
+mątwa pospolita (Sepia officinalis)",,,,"GroupId: 2812300
+Translate: kisslip cuttlefish (Sepia lycidas)
+MiscInfo: uk
+Translate: common cuttlefish (Sepia officinalis)
+MiscInfo: uk"
+209883,WORD_NOUN,,KATAKANA,,,-,モンゴイカ,,mongoika,"Sepia lycidas (mątwa)
+mątwa zwyczajna (Sepia officinalis)
+mątwa pospolita (Sepia officinalis)",,,,"GroupId: 2812300
+Translate: kisslip cuttlefish (Sepia lycidas)
+MiscInfo: uk
+Translate: common cuttlefish (Sepia officinalis)
+MiscInfo: uk"
+209884,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,遜色が無い,そんしょくがない,,sonshoku ga nai,"porównując korzystnie z
+w żadnym wypadku nie gorszy od
+równy do",,,,"GroupId: 1406890
+Translate: standing comparison with
+Translate: comparing favorably with
+Translate: by no means inferior to
+Translate: equal to"
