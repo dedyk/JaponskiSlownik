@@ -40084,7 +40084,7 @@ Translate: sand lance simmered in soy, mirin, etc."
 209902,WORD_NOUN,,KATAKANA_HIRAGANA,,,キンポウゲ科,キンポウゲか,,kinpouge ka,Jaskrowate,"rodzina roślin należąca do rzędu jaskrowców, Ranunculaceae",,,"GroupId: 2066020
 Translate: Ranunculaceae
 Translate: plant family containing the crowfoot"
-209903,WORD_NOUN,,HIRAGANA,,,１０進基数,じっしんきすう,,jisshinkisuu,podstawa dziesiętna,,,,"GroupId: 2276900
+209903,WORD_NOUN,,HIRAGANA,,,１０進基数,じっしんきすう,,jisshin kisuu,podstawa dziesiętna,,,,"GroupId: 2276900
 Translate: decimal radix"
 209904,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,善良の風俗,ぜんりょうのふうぞく,,zenryou no fuuzoku,"obyczajność
@@ -40147,7 +40147,7 @@ Translate: push scooter"
 umrzeć",,,,"GroupId: 1706000
 Translate: to pass away
 Translate: to die"
-209918,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,-,そがぁな,,sogana,"taki
+209918,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA_EXCEPTION,,,-,そがぁな,,sogana,"taki
 jak to
 tego rodzaju",dialekt z Hiroshima,,,"GroupId: 2750070
 Translate: such (about the actions of the listener, or about ideas expressed or understood by the listener)
@@ -40165,7 +40165,7 @@ Translate: light aircraft"
 209921,WORD_NOUN,,HIRAGANA,,,特別支援学校,とくべつしえんがっこう,,tokubetsu shien gakkou,szkoła specjalnej troski,,,,"GroupId: 2840325
 Translate: special needs school
 Translate: special support school"
-209922,WORD_NOUN,,HIRAGANA,,,百日鬘,ひゃくにちかずら,,hyakunichikazura,długowłosa peruka używana w kabuki,,,,"GroupId: 2510300
+209922,WORD_NOUN,,HIRAGANA,,,百日鬘,ひゃくにちかずら,,hyaku nichi kazura,długowłosa peruka używana w kabuki,,,DUPLICATE 209960,"GroupId: 2510300
 Translate: long-haired wig used in kabuki (used metaphorically to refer to a thick growth)"
 209923,WORD_ADJECTIVE_I,,HIRAGANA,,,人恋しい,ひとこいしい,,hito koishii,"tęsknota za innymi
 chcący towarzystwa",,,,"GroupId: 1730850
@@ -40202,7 +40202,7 @@ MiscInfo: proverb"
 209932,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,湯の盤銘,とうのばんめい,,tou no banmei,"napis na wannie Króla Tang („jeśli możesz odświeżyć się jednego dnia, możesz robić to codziennie i nadal robić to dzień w dzień”)",,,,"GroupId: 2578780
 Translate: inscription on the bathtub of King Tang (""If you can renovate yourself one day, then you can do so every day, and keep doing so day after day."")"
-209933,WORD_EXPRESSION,,HIRAGANA,,,人には添うてみよ馬には乗ってみよ,ひとにはそうてみようまにはのってみよ,,hito ni wa soute miyo uma ni wa notte miyo,"nie możesz osądzać kogoś, dopóki nie spędzasz z nim czasu
+209933,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,人には添うてみよ馬には乗ってみよ,ひとにはそうてみようまにはのってみよ,,hito ni wa soute mi yo uma ni wa notte mi yo,"nie możesz osądzać kogoś, dopóki nie spędzasz z nim czasu
 ocenianie kogoś jest jak wypróbowywanie konia jeżdżąc na nim",przysłowie,,,"GroupId: 2422970
 Translate: you can't judge someone until you've spent time with them
 MiscInfo: proverb
@@ -40210,7 +40210,7 @@ Translate: you can't judge something until you've tried it
 MiscInfo: proverb
 Translate: judge a man by living with him, and try a horse by riding him
 MiscInfo: proverb"
-209934,WORD_EXPRESSION,,HIRAGANA,,,馬には乗ってみよ人には添うてみよ,うまにはのってみよひとにはそうてみよ,,uma ni wa notte miyo hito ni wa soute miyo,"nie możesz osądzać kogoś, dopóki nie spędzasz z nim czasu
+209934,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,馬には乗ってみよ人には添うてみよ,うまにはのってみよひとにはそうてみよ,,uma ni wa notte mi yo hito ni wa soute mi yo,"nie możesz osądzać kogoś, dopóki nie spędzasz z nim czasu
 ocenianie kogoś jest jak wypróbowywanie konia jeżdżąc na nim",przysłowie,,,"GroupId: 2833500
 Translate: you can't judge someone until you've spent time with them
 MiscInfo: proverb
@@ -40224,7 +40224,7 @@ Translate: as you see
 MiscInfo: hon
 Translate: as you can see
 MiscInfo: hon"
-209936,WORD_EXPRESSION,,HIRAGANA,,,お前が言うな,おまえがいうな,,omae ga iuna,"i kto to mówi
+209936,WORD_EXPRESSION,,HIRAGANA,,,お前が言うな,おまえがいうな,,omae ga iu na,"i kto to mówi
 i ty to mówisz",język poufały,,,"GroupId: 2836636
 Translate: look who's talking
 MiscInfo: fam
@@ -40281,3 +40281,111 @@ Translate: progeria (disease characterized by symptoms suggestive of premature a
 Translate: Fauvism"
 209948,WORD_NOUN,,HIRAGANA,,,強制保険,きょうせいほけん,,kyousei hoken,obowiązkowe ubezpieczenie,np. dla pojazdów silnikowych,,,"GroupId: 1799750
 Translate: mandatory insurance (e.g. for motor vehicles)"
+209949,WORD_NOUN,,HIRAGANA,,,蕪蒸,かぶらむし,,kabura mushi,"ryba gotowana na parze z tartą rzepą na wierzchu
+wydrążona rzepa faszerowana kurczakiem, krewetkami, orzechami itp.",,,,"GroupId: 2673110
+Translate: steamed fish with grated turnip on top
+Translate: hollowed-out turnip stuffed with chicken, shrimp, gingko nuts, etc."
+209950,WORD_NOUN,,HIRAGANA,,,規則どおり,きそくどおり,,kisoku doori,według zasad,,,,"GroupId: 2103640
+Translate: by the rules"
+209951,WORD_NOUN,,HIRAGANA,,,赭ら顔,あからがお,,akara gao,czerwona twarz,,,,"GroupId: 1383300
+Translate: red face"
+209952,WORD_NOUN,,HIRAGANA,,,釘煮,くぎに,,kugini,"kugini
+dobijak (gatunek ryby) gotowany w soi, mirin i etc",potrawa,,,"GroupId: 2829186
+Translate: kugini
+Translate: sand lance simmered in soy, mirin, etc."
+209953,WORD_NOUN,,HIRAGANA,,,十進基数,じっしんきすう,,jisshin kisuu,podstawa dziesiętna,,,,"GroupId: 2276900
+Translate: decimal radix"
+209954,WORD_NOUN,,KATAKANA,,,-,モンスズメバチ,,monsuzumebachi,"szerszeń europejski
+szerszeń groźny","zwykle nazywany szerszeniem – gatunek owada z rodziny osowatych, z grupy żądłówek, Vespa crabro",,,"GroupId: 2566450
+Translate: European hornet (Vespa crabro)
+MiscInfo: uk"
+209955,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,キオビホオナガスズメバチ,,kiobi hoonaga suzumebachi,osa średnia,"palearktyczny gatunek owada z rodziny osowatych, Dolichovespula media",,,"GroupId: 2566490
+Translate: median wasp (Dolichovespula media)
+MiscInfo: uk"
+209956,WORD_NOUN,,KATAKANA,,,-,シマカンギク,,shimakangiku,złocień ogrodowy,"kwiat, Chrysanthemum indicum",,,"GroupId: 2575570
+Translate: chrysanthemum (Chrysanthemum indicum)
+MiscInfo: uk"
+209957,WORD_NOUN,,KATAKANA,,,-,アブラギク,,aburagiku,złocień ogrodowy,"kwiat, Chrysanthemum indicum",,,"GroupId: 2575580
+Translate: chrysanthemum (Chrysanthemum indicum)
+MiscInfo: uk"
+209958,WORD_NOUN,,KATAKANA,,,-,マルオアマガサ,,maruo amagasa,niemrawiec pospolity,"gatunek węża z rodziny zdradnicowatych, Bungarus fasciatus",,,"GroupId: 2595750
+Translate: banded krait (Bungarus fasciatus)
+MiscInfo: uk"
+209959,WORD_NOUN,,KATAKANA,,,-,キック・ボード,,kikku boodo,hulajnoga,ang: kick board,,,"GroupId: 2831247
+Translate: kick scooter
+Translate: push scooter"
+209960,WORD_NOUN,,HIRAGANA,,,百日鬘,ひゃくにちかつら,,hyaku nichi katsura,długowłosa peruka używana w kabuki,,,DUPLICATE 209922,"GroupId: 2510300
+Translate: long-haired wig used in kabuki (used metaphorically to refer to a thick growth)"
+209961,WORD_VERB_U,,HIRAGANA,,,引っ張りまわす,ひっぱりまわす,,hippari mawasu,"oprowadzać
+pokazywać",,,,"GroupId: 2830089
+Translate: to pull around
+Translate: to drag around
+Translate: to take around
+Translate: to show around"
+209962,WORD_VERB_U,,HIRAGANA,,,引っぱり回す,ひっぱりまわす,,hippari mawasu,"oprowadzać
+pokazywać",,,,"GroupId: 2830089
+Translate: to pull around
+Translate: to drag around
+Translate: to take around
+Translate: to show around"
+209963,WORD_VERB_U,,HIRAGANA,,,ひっぱり回す,ひっぱりまわす,,hippari mawasu,"oprowadzać
+pokazywać",,,,"GroupId: 2830089
+Translate: to pull around
+Translate: to drag around
+Translate: to take around
+Translate: to show around"
+209964,WORD_VERB_U,,HIRAGANA,,,引っぱりまわす,ひっぱりまわす,,hippari mawasu,"oprowadzać
+pokazywać",,,,"GroupId: 2830089
+Translate: to pull around
+Translate: to drag around
+Translate: to take around
+Translate: to show around"
+209965,WORD_NOUN,,HIRAGANA,,,しいの木,しいのき,,shii no ki,drzewu buku z rodziny Castanopsis,,,,"GroupId: 2183470
+Translate: any beech tree of genus Castanopsis
+MiscInfo: uk"
+209966,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,シイノキ,,shii no ki,drzewu buku z rodziny Castanopsis,,,,"GroupId: 2183470
+Translate: any beech tree of genus Castanopsis
+MiscInfo: uk"
+209967,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,ご覧の様に,ごらんのように,,goran no you ni,"jak widać
+jak można zobaczyć",,,,"GroupId: 2799770
+Translate: as you can see"
+209968,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,人には添うて見よ馬には乗って見よ,ひとにはそうてみようまにはのってみよ,,hito ni wa soute mi yo uma ni wa notte mi yo,"nie możesz osądzać kogoś, dopóki nie spędzasz z nim czasu
+ocenianie kogoś jest jak wypróbowywanie konia jeżdżąc na nim",przysłowie,,,"GroupId: 2422970
+Translate: you can't judge someone until you've spent time with them
+MiscInfo: proverb
+Translate: you can't judge something until you've tried it
+MiscInfo: proverb
+Translate: judge a man by living with him, and try a horse by riding him
+MiscInfo: proverb"
+209969,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,馬には乗って見よ人には添うて見よ,うまにはのってみよひとにはそうてみよ,,uma ni wa notte mi yo hito ni wa soute mi yo,"nie możesz osądzać kogoś, dopóki nie spędzasz z nim czasu
+ocenianie kogoś jest jak wypróbowywanie konia jeżdżąc na nim",przysłowie,,,"GroupId: 2833500
+Translate: you can't judge someone until you've spent time with them
+MiscInfo: proverb
+Translate: you can't judge something until you've tried it
+MiscInfo: proverb
+Translate: try a horse by riding him, and judge a man by living with him
+MiscInfo: proverb"
+209970,WORD_EXPRESSION,,HIRAGANA,,,おまえが言うな,おまえがいうな,,omae ga iu na,"i kto to mówi
+i ty to mówisz",język poufały,,,"GroupId: 2836636
+Translate: look who's talking
+MiscInfo: fam
+Translate: you're one to talk
+MiscInfo: fam
+Translate: you can talk
+MiscInfo: fam"
+209971,WORD_INTERJECTION,,KATAKANA,,,-,ファイティーン,,faitiin,"daj z siebie wszystko
+powodzenia
+możesz to zrobić",,,,"GroupId: 2844184
+Translate: do your best
+Translate: good luck
+Translate: you can do it
+Translate: go for it"
+209972,WORD_EXPRESSION,,HIRAGANA,,,何時迄もあると思うな親と金,いつまでもあるとおもうなおやとかね,,itsu made mo aru to omou na oya to kane,"nie możesz liczyć, że rodzice i pieniądze są na zawsze
+pieniądze przychodzą i odchodzą, tak jak rodzice",przysłowie,,,"GroupId: 2834029
+Translate: you can't rely on parents and money to stay around forever
+MiscInfo: proverb
+Translate: money comes and goes; so do parents
+MiscInfo: proverb"
+209973,WORD_NOUN,,KATAKANA,,,-,フォービスム,,foobisumu,Fowizm,"kierunek w malarstwie francuskim początku XX wieku o bardzo żywej i oderwanej od rzeczywistości kolorystyce dzieł, ang: Fauvism",,,"GroupId: 1110250
+Translate: Fauvism"
