@@ -40450,12 +40450,12 @@ Translate: to estimate
 Translate: to make a prediction"
 209994,WORD_ADVERB,,HIRAGANA,,,-,いっぺい,,ippei,"bardzo
 niezmiernie
-nadzwyczaj",dialekt Ryuukyuu,,,"GroupId: 2842636
+nadzwyczaj",dialekt Ryuukyuu,,DUPLICATE 209995,"GroupId: 2842636
 Translate: very
 Dialect: rkb
 Translate: exceedingly
 Dialect: rkb"
-209995,WORD_NOUN,,HIRAGANA,,,一兵,いっぺい,,ippei,jeden żołnierz,,,,"GroupId: 2842835
+209995,WORD_NOUN,,HIRAGANA,,,一兵,いっぺい,,ippei,jeden żołnierz,,,DUPLICATE 209994,"GroupId: 2842835
 Translate: one soldier"
 209996,WORD_NOUN,,HIRAGANA,,,移動体,いどうたい,,idoutai,poruszające się ciało,,,,"GroupId: 1158420
 Translate: moving body"
@@ -40620,6 +40620,183 @@ Translate: styrax
 Translate: storax (Liquidambar orientalis)
 Translate: styrax"
 210033,WORD_NOUN,,HIRAGANA,,,西洋かぶれ,せいようかぶれ,,seiyou kabure,"osoba nadmiernie udająca zachodnie zachowanie
+osoba chcąca zachowywać się, jak osoba z zachodu",poniżająco,,,"GroupId: 2842774
+Translate: Western affectations
+MiscInfo: derog
+Translate: excessively westernized person
+MiscInfo: derog
+Translate: wannabe Westerner
+MiscInfo: derog"
+210034,WORD_NOUN,,KATAKANA,,,-,オニボウズギス,,onibou zugisu,pożeracz czarny,"gatunek głębinowej, morskiej ryby okoniokształtnej z rodziny paszczękowatych, Chiasmodon niger",,,"GroupId: 2628860
+Translate: black swallower (Chiasmodon niger)
+MiscInfo: uk"
+210035,WORD_NOUN,,HIRAGANA,,,４つ打ち,よつうち,,yotsu uchi,cztery na piętrze,rytm w muzyce,,,"GroupId: 2800850
+Translate: four-on-the-floor
+Translate: four-to-the-floor"
+210036,WORD_NOUN,,HIRAGANA,,,さらし粉,さらしこ,,sarashi ko,proszek wybielający,,,,"GroupId: 1766880
+Translate: bleaching powder"
+210037,WORD_NOUN,,HIRAGANA,,,ぎゃん泣き,ぎゃんなき,,gyan naki,"histeryczny płacz dziecka
+krzycz dziecka",,,,"GroupId: 2700080
+Translate: screaming fit
+Translate: tantrum
+Translate: (baby) crying hysterically"
+210038,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,予測が付く,よそくがつく,,yosoku ga tsuku,"oszacować
+określić w przybliżeniu
+przewidywać",,,,"GroupId: 2791290
+Translate: to estimate
+Translate: to make a prediction"
+210039,WORD_ADVERB,,KATAKANA,,,-,イッペー,,ippee,"bardzo
+niezmiernie
+nadzwyczaj",dialekt Ryuukyuu,,,"GroupId: 2842636
+Translate: very
+Dialect: rkb
+Translate: exceedingly
+Dialect: rkb"
+210040,WORD_ADVERB,,KATAKANA,,,-,イッペイ,,ippei,"bardzo
+niezmiernie
+nadzwyczaj",dialekt Ryuukyuu,,,"GroupId: 2842636
+Translate: very
+Dialect: rkb
+Translate: exceedingly
+Dialect: rkb"
+210041,WORD_NOUN,,HIRAGANA,,,什麼,いんも,,inmo,"tego rodzaju
+w ten sposób
+jaki rodzaj",archaizm,,,"GroupId: 2843299
+Translate: this sort
+MiscInfo: arch
+AdditionalInfo: Song-era Chinese colloquialism, used among Zen monks
+Translate: this way
+MiscInfo: arch
+AdditionalInfo: Song-era Chinese colloquialism, used among Zen monks
+Translate: what sort
+MiscInfo: arch
+Translate: what kind
+MiscInfo: arch"
+210042,WORD_NOUN,,HIRAGANA,,,恁麽,いんも,,inmo,"tego rodzaju
+w ten sposób
+jaki rodzaj",archaizm,,,"GroupId: 2843299
+Translate: this sort
+MiscInfo: arch
+AdditionalInfo: Song-era Chinese colloquialism, used among Zen monks
+Translate: this way
+MiscInfo: arch
+AdditionalInfo: Song-era Chinese colloquialism, used among Zen monks
+Translate: what sort
+MiscInfo: arch
+Translate: what kind
+MiscInfo: arch"
+210043,WORD_NOUN,,HIRAGANA,,,什麽,いんも,,inmo,"tego rodzaju
+w ten sposób
+jaki rodzaj",archaizm,,,"GroupId: 2843299
+Translate: this sort
+MiscInfo: arch
+AdditionalInfo: Song-era Chinese colloquialism, used among Zen monks
+Translate: this way
+MiscInfo: arch
+AdditionalInfo: Song-era Chinese colloquialism, used among Zen monks
+Translate: what sort
+MiscInfo: arch
+Translate: what kind
+MiscInfo: arch"
+210044,WORD_NOUN,,KATAKANA,,,-,オヒシバ,,ohishiba,manneczka indyjska,"roślina, Eleusine indica",,,"GroupId: 2603400
+Translate: Indian goosegrass (Eleusine indica)
+MiscInfo: uk"
+210045,WORD_NOUN,,HIRAGANA,,,海筍貝,うみたけがい,,umitakegai,Barnea dilatata,,,,"GroupId: 2604320
+Translate: dilate piddock (Barnea dilatata)
+MiscInfo: uk"
+210046,WORD_NOUN,,HIRAGANA,,,海笋貝,うみたけがい,,umitakegai,Barnea dilatata,,,,"GroupId: 2604320
+Translate: dilate piddock (Barnea dilatata)
+MiscInfo: uk"
+210047,WORD_NOUN,,KATAKANA,,,-,ウミタケガイ,,umitakegai,Barnea dilatata,,,,"GroupId: 2604320
+Translate: dilate piddock (Barnea dilatata)
+MiscInfo: uk"
+210048,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオイトカケガイ,,ooito kakegai,Epitonium scalare,zwierzę,,,"GroupId: 2605150
+Translate: precious wentletrap (Epitonium scalare)
+MiscInfo: uk"
+210049,WORD_NOUN,,KATAKANA,,,-,ウスユキバト,,usuyukibato,gołąbek diamentowy,"gatunek małego ptaka z rodziny gołębiowatych, zamieszkujący endemicznie Australię, Geopelia cuneata",,,"GroupId: 2606760
+Translate: diamond dove (Geopelia cuneata)
+MiscInfo: uk"
+210050,WORD_NOUN,,KATAKANA,,,-,クラカケアザラシ,,kurakake azarashi,"kajgulik pręgowany
+kajgulik
+foka pręgowana","gatunek drapieżnego ssaka morskiego z rodziny fokowatych, jedyny przedstawiciel rodzaju Histriophoca, Histriophoca fasciata",,,"GroupId: 2607410
+Translate: ribbon seal (Histriophoca fasciata)
+MiscInfo: uk"
+210051,WORD_NOUN,,HIRAGANA,,,龍吐水,りゅうどすい,,ryuudosui,"ręczna pompa pożarowa
+pistolet na wodę",,,,"GroupId: 2843016
+Translate: hand-operated fire pump
+Translate: water pistol
+Translate: squirt gun
+Translate: water gun"
+210052,WORD_NOUN,,HIRAGANA,,,簞食壺漿,たんしこしょう,,tanshi koshou,"otrzymanie jedzenia i picia (np. żołnierze)
+kosz ryżu i pożegnalne naczynie","cytat z Mencjusza (chińskiego filozofa), mało znane słowo",,,"GroupId: 2842980
+Translate: receiving with food and drink (e.g. troops)
+MiscInfo: yoji
+MiscInfo: obsc
+AdditionalInfo: from Mencius
+Translate: baskets of rice and vessels of congee
+MiscInfo: yoji
+MiscInfo: obsc
+AdditionalInfo: from Mencius"
+210053,WORD_NOUN,,HIRAGANA,,,箪食瓠漿,たんしこしょう,,tanshi koshou,"otrzymanie jedzenia i picia (np. żołnierze)
+kosz ryżu i pożegnalne naczynie","cytat z Mencjusza (chińskiego filozofa), mało znane słowo",,,"GroupId: 2842980
+Translate: receiving with food and drink (e.g. troops)
+MiscInfo: yoji
+MiscInfo: obsc
+AdditionalInfo: from Mencius
+Translate: baskets of rice and vessels of congee
+MiscInfo: yoji
+MiscInfo: obsc
+AdditionalInfo: from Mencius"
+210054,WORD_NOUN,,HIRAGANA,,,簞食瓠漿,たんしこしょう,,tanshi koshou,"otrzymanie jedzenia i picia (np. żołnierze)
+kosz ryżu i pożegnalne naczynie","cytat z Mencjusza (chińskiego filozofa), mało znane słowo",,,"GroupId: 2842980
+Translate: receiving with food and drink (e.g. troops)
+MiscInfo: yoji
+MiscInfo: obsc
+AdditionalInfo: from Mencius
+Translate: baskets of rice and vessels of congee
+MiscInfo: yoji
+MiscInfo: obsc
+AdditionalInfo: from Mencius"
+210055,WORD_NOUN,,HIRAGANA,,,箪食壷漿,たんしこしょう,,tanshi koshou,"otrzymanie jedzenia i picia (np. żołnierze)
+kosz ryżu i pożegnalne naczynie","cytat z Mencjusza (chińskiego filozofa), mało znane słowo",,,"GroupId: 2842980
+Translate: receiving with food and drink (e.g. troops)
+MiscInfo: yoji
+MiscInfo: obsc
+AdditionalInfo: from Mencius
+Translate: baskets of rice and vessels of congee
+MiscInfo: yoji
+MiscInfo: obsc
+AdditionalInfo: from Mencius"
+210056,WORD_NOUN,,HIRAGANA,,,簞食壷漿,たんしこしょう,,tanshi koshou,"otrzymanie jedzenia i picia (np. żołnierze)
+kosz ryżu i pożegnalne naczynie","cytat z Mencjusza (chińskiego filozofa), mało znane słowo",,,"GroupId: 2842980
+Translate: receiving with food and drink (e.g. troops)
+MiscInfo: yoji
+MiscInfo: obsc
+AdditionalInfo: from Mencius
+Translate: baskets of rice and vessels of congee
+MiscInfo: yoji
+MiscInfo: obsc
+AdditionalInfo: from Mencius"
+210057,WORD_NOUN,,HIRAGANA,,,簞食瓢飲,たんしひょういん,,tanshi hyouin,"proste jedzenie i picie
+bycie zadowolony z prostego życia
+bambusowe naczynie z ryżem i tykwa z napojem","cytat z Dialogów Konfucjańskich, mało znane słowo",,,"GroupId: 2842979
+Translate: simple food and drink
+MiscInfo: obsc
+MiscInfo: yoji
+AdditionalInfo: from the Analects of Confucius
+Translate: being content with a frugal life
+MiscInfo: obsc
+MiscInfo: yoji
+AdditionalInfo: from the Analects of Confucius
+Translate: a bamboo dish of rice and a gourd of drink
+MiscInfo: obsc
+MiscInfo: yoji
+AdditionalInfo: from the Analects of Confucius"
+210058,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,リュウキュウサギソウ,,ryuukyuu sagisou,Habenaria longitentaculata,roślina,,,"GroupId: 2828509
+Translate: Habenaria longitentaculata (species of bog orchid)
+MiscInfo: uk"
+210059,WORD_NOUN,,HIRAGANA,,,西洋気触れ,せいようかぶれ,,seiyou kabure,"osoba nadmiernie udająca zachodnie zachowanie
 osoba chcąca zachowywać się, jak osoba z zachodu",poniżająco,,,"GroupId: 2842774
 Translate: Western affectations
 MiscInfo: derog
