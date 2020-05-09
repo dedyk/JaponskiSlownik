@@ -19338,7 +19338,8 @@ myślę, więc jestem",,,,
 sposób
 kierunek",,,"DUPLICATE 8262
 DUPLICATE 36416
-DUPLICATE 93202",
+DUPLICATE 93202
+DUPLICATE 210130",
 204783,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,云える,いえる,,ieru,"być możliwe do powiedzenia
 być zdolny powiedzieć",,,,
@@ -20947,9 +20948,11 @@ MiscInfo: id"
 205109,WORD_NOUN,,HIRAGANA,,,吐蕃,とばん,,toban,Imperium Tybetańskie,"wczesny okres w historii Tybetu, który rozpoczął się wraz z powstaniem pierwszego państwa tybetańskiego w VII wieku n.e., i zakończył się jego późniejszym o dwieście lat rozpadem",,,"GroupId: 2843502
 Translate: Tibetan Empire (618-842 CE)"
 205110,WORD_NOUN,,HIRAGANA,,,弩,ど,,do,kusza,,,"DUPLICATE 58394
-DUPLICATE 93202","GroupId: 2843469
+DUPLICATE 93202
+DUPLICATE 210130","GroupId: 2843469
 Translate: crossbow"
-205111,WORD_NOUN,,HIRAGANA,,,笯,ど,,do,cylindryczny bambusowy koszyk na ryby,,,DUPLICATE 93202,"GroupId: 2843470
+205111,WORD_NOUN,,HIRAGANA,,,笯,ど,,do,cylindryczny bambusowy koszyk na ryby,,,"DUPLICATE 93202
+DUPLICATE 210130","GroupId: 2843470
 Translate: cylindrical bamboo fishing basket"
 205112,WORD_NOUN,,HIRAGANA,,,二酉,にゆう,,niyuu,"ogromna kolekcja książek
 miejsce, w którym przechowywanych jest wiele książek",archaizm,,,"GroupId: 2843491
@@ -41179,7 +41182,8 @@ Translate: fistula
 Translate: artificial anus
 Translate: artificial urinary bladder"
 210129,"WORD_CONJUNCTION
-WORD_AUX",,HIRAGANA,,,-,で,,de,bez robienia,"archaizm, po temacie -nai",,,"GroupId: 2844355
+WORD_AUX",,HIRAGANA,,,-,で,,de,bez robienia,"archaizm, po temacie -nai",,"DUPLICATE 774
+DUPLICATE 21853","GroupId: 2844355
 Translate: without doing ...
 MiscInfo: arch
 AdditionalInfo: after a -nai stem"
@@ -41187,7 +41191,13 @@ AdditionalInfo: after a -nai stem"
 jednak (po temacie czasownika -ba)
 aczkolwiek (po temacie czasownika -ba)
 pomimo że
-nawet jeśli",archaizm,,,"GroupId: 2844284
+nawet jeśli",archaizm,,"DUPLICATE 923
+DUPLICATE 51622
+DUPLICATE 93202
+DUPLICATE 183682
+DUPLICATE 204782
+DUPLICATE 205110
+DUPLICATE 205111","GroupId: 2844284
 Translate: but
 MiscInfo: arch
 AdditionalInfo: after the -ba stem of a verb
@@ -41199,15 +41209,24 @@ MiscInfo: arch
 Translate: even if
 MiscInfo: arch"
 210131,WORD_NOUN,,KATAKANA,,,-,クーラント,,kuuranto,"courante
-kurant","taniec dworski z XVI wieku, ang: courante",,,"GroupId: 2844580
+kurant","taniec dworski z XVI wieku, ang: courante",,DUPLICATE 176259,"GroupId: 2844580
 Translate: courante"
-210132,WORD_NOUN,,KATAKANA,,,-,サイン,,sain,sinus,"matematyka, ang: sine",,,"GroupId: 2844545
+210132,WORD_NOUN,,KATAKANA,,,-,サイン,,sain,sinus,"matematyka, ang: sine",,DUPLICATE 10988,"GroupId: 2844545
 Translate: sine"
 210133,WORD_NOUN,,KATAKANA,,,-,バディー,,badii,"kolega
 kumpel
-koleś",ang: buddy,,,"GroupId: 2826458
+koleś",ang: buddy,,DUPLICATE 33027,"GroupId: 2826458
 Translate: buddy"
 210134,WORD_NOUN,,KATAKANA,,,-,リン,,rin,"dzwonek (dźwięk)
-ding (dźwięk dzwonka)",,,,"GroupId: 2844454
+ding (dźwięk dzwonka)",,,DUPLICATE 8714,"GroupId: 2844454
 Translate: ring (sound)
 Translate: ding"
+210135,"WORD_CONJUNCTION
+WORD_AUX",,HIRAGANA,,,-,いで,,ide,bez robienia,"archaizm, po temacie -nai",,DUPLICATE 127616,"GroupId: 2844355
+Translate: without doing ...
+MiscInfo: arch
+AdditionalInfo: after a -nai stem"
+210136,WORD_NOUN,,KATAKANA,,,-,バディ,,badi,"kolega
+kumpel
+koleś",ang: buddy,,DUPLICATE 33028,"GroupId: 2826458
+Translate: buddy"
