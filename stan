@@ -9,3 +9,9 @@ ludzie - 25
 uzupełniacz - 13
 -----------
 suma: 70
+
+buddy - ボディー
+
+kolega
+kumpel
+koleś
