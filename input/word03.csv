@@ -16113,7 +16113,7 @@ Translate: balcony"
 204103,WORD_EXPRESSION,,HIRAGANA,,,呆,ほう,,hou,jestem zszokowany,slang internetowy,,DUPLICATE 82153,"GroupId: 2842591
 Translate: (I'm) shocked
 MiscInfo: net-sl"
-204104,WORD_NOUN,,HIRAGANA,,,持,じ,,ji,remis,"np. w go, konkursie poetyckim i etc",,,"GroupId: 2842989
+204104,WORD_NOUN,,HIRAGANA,,,持,じ,,ji,remis,"np. w go, konkursie poetyckim i etc",,DUPLICATE 210188,"GroupId: 2842989
 Translate: draw (in go, poetry contest, etc.)
 Translate: tie"
 204105,WORD_NOUN,,HIRAGANA,,,邪,じゃ,,ja,"nikczemność
@@ -41230,7 +41230,7 @@ AdditionalInfo: after a -nai stem"
 kumpel
 koleś",ang: buddy,,DUPLICATE 33028,"GroupId: 2826458
 Translate: buddy"
-210137,WORD_NOUN,,HIRAGANA,,,原子力村,げんしりょくむら,,genshiryokumura,"wioska energii jądrowej
+210137,WORD_NOUN,,HIRAGANA,,,原子力村,げんしりょくむら,,genshiryoku mura,"wioska energii jądrowej
 zwarta społeczność ustawodawców, organów regulacyjnych i producentów zaangażowanych w promocję energii jądrowej",poniżająco,,,"GroupId: 2738380
 Translate: nuclear power village
 MiscInfo: derog
@@ -41288,7 +41288,7 @@ Translate: storage (device)"
 210157,WORD_NOUN,,HIRAGANA,,,烏鵲,うじゃく,,ujaku,"sroka zwyczajna
 sroka pospolita
 sroka (gatunek średniej wielkości ptaka z rodziny krukowatych, Pica pica)
-wrona (archaizm)",,,,"GroupId: 2842429
+wrona (archaizm)",,,DUPLICATE 210203,"GroupId: 2842429
 Translate: European magpie (Pica pica)
 Translate: crow
 MiscInfo: arch"
@@ -41377,7 +41377,7 @@ Translate: bargaining tool"
 210180,WORD_NOUN,,HIRAGANA,,,台本作家,だいほんさっか,,daihon sakka,scenarzysta,,,,"GroupId: 2137450
 Translate: scriptwriter"
 210181,WORD_NOUN,,HIRAGANA,,,座右銘,ざゆうめい,,zayuu mei,"ulubione motto
-???",,,,"GroupId: 1291830
+???",,,DUPLICATE 210211,"GroupId: 1291830
 Translate: favourite motto
 Translate: pet saying"
 210182,WORD_NOUN,,HIRAGANA,,,座左の銘,ざさのめい,,zasa no mei,"ulubione motto
@@ -41388,18 +41388,24 @@ Translate: pet saying"
 przerywać",,,,"GroupId: 2218070
 Translate: to stop midway
 Translate: to interrupt"
-210184,WORD_NOUN,,HIRAGANA,,,釜風呂,かまぶろ,,kamaburo,kąpiel parowa (często przy użyciu solanki),,,,"GroupId: 2591230
+210184,WORD_NOUN,,HIRAGANA,,,釜風呂,かまぶろ,,kama buro,kąpiel parowa (często przy użyciu solanki),,,,"GroupId: 2591230
 Translate: steam bath (often using brine)"
 210185,WORD_NOUN,,HIRAGANA,,,洞,どう,,dou,"zatoka
 jama
-sąsiedztwo (podział administracyjny w Korei Północnej)",,,,"GroupId: 2844351
+sąsiedztwo (podział administracyjny w Korei Północnej)",,,"DUPLICATE 8136
+DUPLICATE 63998
+DUPLICATE 63999
+DUPLICATE 64000
+DUPLICATE 87005
+DUPLICATE 87006
+DUPLICATE 113832","GroupId: 2844351
 Translate: sinus
 Translate: cavity
 Translate: antrum
 Translate: neighborhood (administrative division in North Korea)"
 210186,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,友,ゆう,,yuu,"przyjaciel
-uczucie (miłość) (do rodzeństwa)",archaizm,,,"GroupId: 2844332
+uczucie (miłość) (do rodzeństwa)",archaizm,,DUPLICATE 6546,"GroupId: 2844332
 Translate: friend
 MiscInfo: arch
 Translate: affection (for siblings)
@@ -41408,7 +41414,8 @@ MiscInfo: arch"
 WORD_PREFIX",,HIRAGANA,,,阿,あ,,a,"pierwsza litera sanskrytu
 Afryka (skrót)
 Awa (stara prowincja Japonii, skrót)
-prefiksy do imion, aby pokazać zażyłość (język poufały, archaizm)",,,,"GroupId: 2844412
+prefiksy do imion, aby pokazać zażyłość (język poufały, archaizm)",,,"DUPLICATE 10794
+DUPLICATE 29599","GroupId: 2844412
 Translate: first Sanskrit alphabet letter
 Translate: Africa
 MiscInfo: abbr
@@ -41420,7 +41427,21 @@ MiscInfo: arch"
 210188,WORD_AUX,,HIRAGANA,,,-,じ,,ji,"prawdopodobnie nie jest
 nie będzie
 nie możesz
-nie mam zamiaru",archaizm,,,"GroupId: 2844468
+nie mam zamiaru",archaizm,,"DUPLICATE 78
+DUPLICATE 3951
+DUPLICATE 7257
+DUPLICATE 7854
+DUPLICATE 11480
+DUPLICATE 49340
+DUPLICATE 49912
+DUPLICATE 50528
+DUPLICATE 62405
+DUPLICATE 62756
+DUPLICATE 66469
+DUPLICATE 66536
+DUPLICATE 67774
+DUPLICATE 79994
+DUPLICATE 204104","GroupId: 2844468
 Translate: probably isn't (doesn't, won't, etc.)
 MiscInfo: arch
 Translate: will not
@@ -41434,7 +41455,7 @@ smutek
 rozpacz
 cierpienie
 niedola
-nieszczęście",przestarzałe słowo,,,"GroupId: 2844413
+nieszczęście",przestarzałe słowo,,DUPLICATE 70276,"GroupId: 2844413
 Translate: pity
 MiscInfo: obs
 Translate: sorrow
@@ -41443,7 +41464,7 @@ Translate: grief
 MiscInfo: obs
 Translate: misery
 MiscInfo: obs"
-210190,WORD_NOUN,,HIRAGANA,,,滬,こ,,ko,Shanghai,"w Chinach, skrót, przestarzałe słowo",,,"GroupId: 2844354
+210190,WORD_NOUN,,HIRAGANA,,,滬,こ,,ko,Shanghai,"w Chinach, skrót, przestarzałe słowo",,DUPLICATE 55974,"GroupId: 2844354
 Translate: Shanghai (China)
 MiscInfo: abbr
 MiscInfo: obs"
@@ -41469,3 +41490,95 @@ MiscInfo: obsc"
 210194,WORD_NOUN,,HIRAGANA,,,皇基,こうき,,kouki,podstawa rządów cesarskich,przestarzałe słowo,,,"GroupId: 2844343
 Translate: foundation of imperial rule
 MiscInfo: obs"
+210195,WORD_NOUN,,HIRAGANA_KATAKANA,,,原子力ムラ,げんしりょくムラ,,genshiryoku mura,"wioska energii jądrowej
+zwarta społeczność ustawodawców, organów regulacyjnych i producentów zaangażowanych w promocję energii jądrowej",poniżająco,,,"GroupId: 2738380
+Translate: nuclear power village
+MiscInfo: derog
+Translate: tight-knit community of legislators, regulators and manufacturers involved in the promotion of nuclear power
+MiscInfo: derog"
+210196,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,事を分ける,ことをわける,,koto o wakeru,"przekonywać (osobę)
+namawiać (osobę)",,,,"GroupId: 1877130
+Translate: to reason with (a person)"
+210197,WORD_NOUN,,HIRAGANA,,,磯馴松,そなれまつ,,sonare matsu,smagany wiatrem sosny,,,,"GroupId: 1780310
+Translate: windswept pine trees"
+210198,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオバギボウシ,,oobagi boushi,Hosta montana,roślina,,,"GroupId: 2400820
+Translate: Hosta montana (species of plantain lily)
+MiscInfo: uk"
+210199,WORD_NOUN,,HIRAGANA,,,徳利椰子,とっくりやし,,tokkuri yashi,"hioforba butelkowa
+maskarena flaszowa","gatunek drzewa z rodziny arekowatych, pierwotnie występujący na Mauritiusie, Hyophorbe lagenicaulis",,,"GroupId: 2827854
+Translate: bottle palm (Hyophorbe lagenicaulis)
+MiscInfo: uk"
+210200,WORD_NOUN,,KATAKANA_HIRAGANA,,,トックリ椰子,トックリやし,,tokkuri yashi,"hioforba butelkowa
+maskarena flaszowa","gatunek drzewa z rodziny arekowatych, pierwotnie występujący na Mauritiusie, Hyophorbe lagenicaulis",,,"GroupId: 2827854
+Translate: bottle palm (Hyophorbe lagenicaulis)
+MiscInfo: uk"
+210201,WORD_NOUN,,KATAKANA,,,-,トックリヤシ,,tokkuri yashi,"hioforba butelkowa
+maskarena flaszowa","gatunek drzewa z rodziny arekowatych, pierwotnie występujący na Mauritiusie, Hyophorbe lagenicaulis",,,"GroupId: 2827854
+Translate: bottle palm (Hyophorbe lagenicaulis)
+MiscInfo: uk"
+210202,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,キュウリウオ,,kyuuriuo,Osmerus mordax dentex,gatunek ryby,,,"GroupId: 2192240
+Translate: rainbow smelt (Osmerus mordax dentex)
+MiscInfo: uk"
+210203,WORD_NOUN,,HIRAGANA,,,烏鵲,うしゃく,,ushaku,"sroka zwyczajna
+sroka pospolita
+sroka (gatunek średniej wielkości ptaka z rodziny krukowatych, Pica pica)
+wrona (archaizm)",,,DUPLICATE 210157,"GroupId: 2842429
+Translate: European magpie (Pica pica)
+Translate: crow
+MiscInfo: arch"
+210204,WORD_NOUN,,KATAKANA,,,-,ウシャク,,ushaku,"sroka zwyczajna
+sroka pospolita
+sroka (gatunek średniej wielkości ptaka z rodziny krukowatych, Pica pica)
+wrona (archaizm)",,,,"GroupId: 2842429
+Translate: European magpie (Pica pica)
+Translate: crow
+MiscInfo: arch"
+210205,WORD_NOUN,,KATAKANA,,,-,ウジャク,,ujaku,"sroka zwyczajna
+sroka pospolita
+sroka (gatunek średniej wielkości ptaka z rodziny krukowatych, Pica pica)
+wrona (archaizm)",,,,"GroupId: 2842429
+Translate: European magpie (Pica pica)
+Translate: crow
+MiscInfo: arch"
+210206,WORD_NOUN,,KATAKANA,,,-,コマクサ,,komakusa,Dicentra peregrina,roślina,,,"GroupId: 2611420
+Translate: dicentra (Dicentra peregrina)
+MiscInfo: uk"
+210207,WORD_NOUN,,KATAKANA,,,-,イワニガナ,,iwanigana,Ixeris stolonifera,roślina,,,"GroupId: 2612260
+Translate: creeping lettuce (Ixeris stolonifera)
+MiscInfo: uk"
+210208,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,マンジュウガニ,,manjuugani,Atergatis,,,,"GroupId: 2614830
+Translate: egg crab (Atergatis spp.)
+MiscInfo: uk"
+210209,WORD_NOUN,,KATAKANA,,,-,アカウソ,,akauso,Pyrrhula pyrrhula rosacea,gatunek ptaka,,,"GroupId: 2619830
+Translate: bullfinch (Pyrrhula pyrrhula rosacea)
+MiscInfo: uk"
+210210,WORD_ADJECTIVE_TARU,,HIRAGANA,,,奕奕,えきえき,,eki eki,"genialny
+błyskotliwy
+cudowny
+wspaniały
+piękny i prosperujący
+ułożone wysoko
+duży
+niezdecydowany ze strachu (mało znane słowo)",archaizm,,,"GroupId: 2708920
+Translate: brilliant
+MiscInfo: arch
+Translate: glorious
+MiscInfo: arch
+Translate: shining
+MiscInfo: arch
+Translate: beautiful and thriving
+MiscInfo: arch
+Translate: piled high
+MiscInfo: arch
+Translate: large
+MiscInfo: arch
+Translate: indecisive with fear
+MiscInfo: arch
+MiscInfo: obsc"
+210211,WORD_NOUN,,HIRAGANA,,,座右銘,ざうめい,,zau mei,"ulubione motto
+???",,,DUPLICATE 210181,"GroupId: 1291830
+Translate: favourite motto
+Translate: pet saying"
+210212,WORD_NOUN,,HIRAGANA,,,竈風呂,かまぶろ,,kama buro,kąpiel parowa (często przy użyciu solanki),,,,"GroupId: 2591230
+Translate: steam bath (often using brine)"
