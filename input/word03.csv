@@ -41756,7 +41756,7 @@ Translate: electrochemistry"
 Translate: plasticizer
 Translate: plasticiser"
 210264,WORD_NOUN,,HIRAGANA,,,日新,にっしん,,nisshin,"odnowienie z dnia na dzień
-szybki postęp",przestarzałe słowo,,,"GroupId: 2844406
+szybki postęp",przestarzałe słowo,,DUPLICATE 210290,"GroupId: 2844406
 Translate: day-by-day renewal
 MiscInfo: obs
 Translate: rapid progress
@@ -41771,7 +41771,7 @@ Translate: orpiment"
 210267,WORD_NOUN,,HIRAGANA,,,四季咲き,しきざき,,shiki zaki,kwitnienie o każdej porze roku,,,,"GroupId: 1767170
 Translate: blooming in each season"
 210268,"WORD_EXPRESSION
-WORD_PARTICULE",,HIRAGANA,,,-,へと,,e to,"do
+WORD_PARTICULE",,HIRAGANA_EXCEPTION,,,-,へと,,e to,"do
 w kierunku
 w stronę","へ z naciskiem na to, co następuje",,,"GroupId: 2844416
 Translate: to
@@ -41826,11 +41826,90 @@ MiscInfo: arch"
 210270,WORD_NOUN,,HIRAGANA,,,町丁,ちょうちょう,,chouchou,miasta i wsie (oficjalna klasyfikacja obszarów miejskich),,,,"GroupId: 2844353
 Translate: towns and villages (official urban area classification)"
 210271,WORD_SUFFIX,,HIRAGANA,,,-,りん,,rin,"sufiks formy zdrobniałej używany do wyrażenia słodkości
-wskazuje łagodny tryb rozkazujący (dialekt Mikawa)",,,,"GroupId: 2844215
+wskazuje łagodny tryb rozkazujący (dialekt Mikawa)",,,"DUPLICATE 8091
+DUPLICATE 8223
+DUPLICATE 9486
+DUPLICATE 41597
+DUPLICATE 41626
+DUPLICATE 63624","GroupId: 2844215
 Translate: diminutive suffix used to convey cuteness
 Translate: indicates a mild imperative
 AdditionalInfo: Mikawa dialect"
 210272,WORD_NOUN,,HIRAGANA,,,柚柑,ゆこう,,yukou,yukou,"japoński cytrus, Citrus yuko",,,"GroupId: 2828095
+Translate: yukou (Citrus yuko)
+MiscInfo: uk
+Translate: Japanese citrus variety
+MiscInfo: uk"
+210273,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,繖房花序,さんぼうかじょ,,sanbou kajo,"kwiatostan baldachogroniasty
+wiecha (typ kwiatostanu)",,,,"GroupId: 2225310
+Translate: corymbose inflorescence
+Translate: corymb"
+210274,WORD_NOUN,,HIRAGANA_KATAKANA,,,枠型アンテナ,わくがたアンテナ,,wakugata antena,antena ramowa,mało znane słowo,,,"GroupId: 2428430
+Translate: frame antenna
+MiscInfo: obsc"
+210275,WORD_NOUN,,HIRAGANA,,,薄葉剝,うすばはぎ,,usubahagi,Aluterus monoceros,gatunek ryby,,,"GroupId: 2635440
+Translate: unicorn leatherjacket (Aluterus monoceros)
+MiscInfo: uk"
+210276,WORD_NOUN,,KATAKANA,,,-,ウスバハギ,,usubahagi,Aluterus monoceros,gatunek ryby,,,"GroupId: 2635440
+Translate: unicorn leatherjacket (Aluterus monoceros)
+MiscInfo: uk"
+210277,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA_KATAKANA,,,大ノリ,おおノリ,,oonori,"podekscytowanie
+rodzaj rytmu piosenek w teatrze no",,,,"GroupId: 2520930
+Translate: excitedly
+Translate: type of rhythm for noh songs"
+210278,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,織地,おりじ,,ori ji,"tekstura
+materiał
+tkanina",,,,"GroupId: 1832650
+Translate: texture
+Translate: fabric"
+210279,WORD_NOUN,,KATAKANA,,,-,アユカケ,,ayukake,Cottus kazika,gatunek ryby,,,"GroupId: 2635150
+Translate: fourspine sculpin (Cottus kazika)
+MiscInfo: uk"
+210280,WORD_NOUN,,KATAKANA,,,-,イトマキフグ,,itomaki fugu,Kentrocapros aculeatus,gatunek ryby,,,"GroupId: 2635230
+Translate: basketfish (Kentrocapros aculeatus)
+MiscInfo: uk"
+210281,WORD_NOUN,,KATAKANA,,,-,イトヒキフエダイ,,itohiki fuedai,Symphorus nematophorus,"gatunek ryby z rodziny lucjanowatych, jedyny przedstawiciel rodzaju Symphorus, Symphorus nematophorus",,,"GroupId: 2635240
+Translate: chinamanfish (Symphorus nematophorus)
+MiscInfo: uk"
+210282,WORD_NOUN,,KATAKANA,,,-,イソマグロ,,isomaguro,Gymnosarda unicolor,gatunek ryby,,,"GroupId: 2635270
+Translate: dogtooth tuna (Gymnosarda unicolor)
+MiscInfo: uk"
+210283,WORD_NOUN,,KATAKANA,,,-,コーナー・キューブ,,koonaa kyuubu,reflektor rogowy,,,,"GroupId: 2840876
+Translate: corner cube (optics)
+Translate: corner reflector"
+210284,WORD_NOUN,,HIRAGANA,,,賽の目,さいのめ,,sai no me,"kropka (na kostce do gry)
+małą kostka (szczególnie jedzenia)
+kostka do gry",,,,"GroupId: 2228000
+Translate: pip (spot on a die)
+Translate: small cube (esp. of food)
+Translate: die
+Translate: dice"
+210285,WORD_NOUN,,HIRAGANA,,,采の目,さいのめ,,sai no me,"kropka (na kostce do gry)
+małą kostka (szczególnie jedzenia)
+kostka do gry",,,,"GroupId: 2228000
+Translate: pip (spot on a die)
+Translate: small cube (esp. of food)
+Translate: die
+Translate: dice"
+210286,WORD_NOUN,,HIRAGANA,,,蜜豆,みつまめ,,mitsu mame,"mieszanka gotowanej fasoli, kostek agaru, kawałków owoców i syropu",,,,"GroupId: 1731690
+Translate: mixture of boiled beans, agar cubes, fruit pieces and syrup"
+210287,WORD_VERB_U,,HIRAGANA,,,蹴り込む,けりこむ,,keri komu,???,,,,"GroupId: 1592640
+Translate: to kick in"
+210288,WORD_NOUN,,HIRAGANA,,,地士,じざむらい,,jizamurai,"prowincjonalny samuraj w średnim wieku, który zajmuje się rolnictwem w czasie pokoju",,,,"GroupId: 2414110
+Translate: provincial samurai in the middle ages, who engaged in agriculture in peacetime"
+210289,WORD_ADJECTIVE_NA,,HIRAGANA,,,考えぶかげ,かんがえぶかげ,,kangae bukage,???,,,,"GroupId: 2720640
+Translate: thoughtful
+Translate: speculative"
+210290,WORD_NOUN,,HIRAGANA,,,日新,じっしん,,jisshin,"odnowienie z dnia na dzień
+szybki postęp",przestarzałe słowo,,DUPLICATE 210264,"GroupId: 2844406
+Translate: day-by-day renewal
+MiscInfo: obs
+Translate: rapid progress
+MiscInfo: obs"
+210291,WORD_NOUN,,KATAKANA,,,-,ユコウ,,yukou,yukou,"japoński cytrus, Citrus yuko",,,"GroupId: 2828095
 Translate: yukou (Citrus yuko)
 MiscInfo: uk
 Translate: Japanese citrus variety
