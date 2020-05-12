@@ -31062,8 +31062,8 @@ Translate: tranquil spring scenery
 MiscInfo: arch"
 207491,WORD_NOUN,,HIRAGANA,,,須佐之男命,すさのおのみこと,,susanoo no mikoto,Susanoo-no-Mikoto,"bóstwo, młodszy brat Amaterasu",,,"GroupId: 2843785
 Translate: Susanoo-no-Mikoto (deity, younger brother to Amaterasu)"
-207492,WORD_NOUN,,HIRAGANA,,,外出自粛,がいしゅつじじゅく,,gaishutsu jijuku,"powstrzymanie się od wyjścia na zewnątrz
-pozostanie w domu",,,,"GroupId: 2843864
+207492,WORD_NOUN,,HIRAGANA,,,外出自粛,がいしゅつじしゅく,,gaishutsu jishuku,"powstrzymanie się od wyjścia na zewnątrz
+pozostanie w domach",,,,"GroupId: 2843864
 Translate: refraining from going outside
 Translate: staying indoors"
 207493,"WORD_ADVERB_TO
@@ -41963,7 +41963,7 @@ Translate: magnificent calligraphy
 Translate: vivid penmanship"
 210304,WORD_NOUN,,HIRAGANA,,,春田打ち,はるたうち,,harutauchi,"noworoczne wydarzenie, aby modlić się o bogate zbiory ryżu",,,,"GroupId: 2569360
 Translate: New Year event to pray for a rich rice harvest"
-210305,WORD_NOUN,,HIRAGANA,,,官官接待,かんかんせったい,,kankan settai,"biurokraci, którzy zabawiają się korzystając z publicznych funduszy",,,,"GroupId: 2530230
+210305,WORD_NOUN,,HIRAGANA,,,官官接待,かんかんせったい,,kan kan settai,"biurokraci, którzy zabawiają się korzystając z publicznych funduszy",,,,"GroupId: 2530230
 Translate: bureaucrats entertaining bureaucrats using public funds
 MiscInfo: yoji
 AdditionalInfo: often local bureaucrats entertaining central bureaucrats"
@@ -41985,7 +41985,7 @@ MiscInfo: uk"
 210311,WORD_NOUN,,HIRAGANA,,,文芸欄,ぶんげいらん,,bungeiran,"kolumna literacka
 kolumna artystyczna",np. w gazecie,,,"GroupId: 1723230
 Translate: literary (and the arts) column"
-210312,WORD_NOUN,,HIRAGANA,,,卸売り業,おろしうりぎょう,,oroshiuri gyou,handel hurtowy,,,,"GroupId: 2649710
+210312,WORD_NOUN,,HIRAGANA,,,卸売り業,おろしうりぎょう,,oroshiurigyou,handel hurtowy,,,,"GroupId: 2649710
 Translate: wholesale business
 Translate: wholesale trade"
 210313,WORD_NOUN,,HIRAGANA,,,音律,おんりつ,,onritsu,"metrum
@@ -42021,7 +42021,7 @@ Translate: Carassius buergeri
 MiscInfo: uk"
 210322,WORD_NOUN,,HIRAGANA,,,残菊,ざんぎく,,zangiku,późne chryzantemy,,,,"GroupId: 1754250
 Translate: late chrysanthemums"
-210323,WORD_NOUN,,HIRAGANA,,,河骨,こうほね,,kouhone,grążel japoński,"roślina, Nuphar japonica",,,"GroupId: 2269120
+210323,WORD_NOUN,,HIRAGANA,,,河骨,こうほね,,kouhone,grążel japoński,"roślina, Nuphar japonica",,DUPLICATE 210372,"GroupId: 2269120
 Translate: Japanese spatterdock (species of water lily, Nuphar japonica)
 MiscInfo: uk"
 210324,WORD_NOUN,,HIRAGANA,,,葉鶏頭,はげいとう,,hageitou,szarłat trójbarwny,"roślina, Amaranthus gangeticus",,,"GroupId: 1955100
@@ -42153,35 +42153,31 @@ Translate: Nihongi
 MiscInfo: abbr
 Translate: Chronicles of Japan
 MiscInfo: abbr"
-210349,WORD_NOUN,,HIRAGANA,,,外出自粛,がいしゅつじしゅく,,gaishutsu jishuku,"powstrzymanie się od wyjścia na zewnątrz
-pozostanie w domach",,,,"GroupId: 2843864
-Translate: refraining from going outside
-Translate: staying indoors"
-210350,WORD_NOUN,,HIRAGANA,,,重症化,じゅうしょうか,,juushouka,"zaostrzenie (choroby)
+210349,WORD_NOUN,,HIRAGANA,,,重症化,じゅうしょうか,,juushouka,"zaostrzenie (choroby)
 nasilenie (choroby)
 pogorszenie",,,,"GroupId: 2844382
 Translate: aggravation (of an illness)
 Translate: exacerbation
 Translate: worsening"
-210351,WORD_NOUN,,HIRAGANA,,,初稿,しょこう,,shokou,"wstępny szkic
+210350,WORD_NOUN,,HIRAGANA,,,初稿,しょこう,,shokou,"wstępny szkic
 pierwszy dowód",,,,"GroupId: 2844398
 Translate: first draft
 Translate: first proof"
-210352,WORD_NOUN,,HIRAGANA,,,皇妣,こうひ,,kouhi,"zmarła Królowa Matka
+210351,WORD_NOUN,,HIRAGANA,,,皇妣,こうひ,,kouhi,"zmarła Królowa Matka
 zmarła Cesarzowa Wdowa",archaizm,,,"GroupId: 2844386
 Translate: deceased Queen Mother
 MiscInfo: arch
 Translate: deceased Empress Dowager
 MiscInfo: arch"
-210353,WORD_NOUN,,HIRAGANA,,,考妣,こうひ,,kouhi,"zmarli rodzice
+210352,WORD_NOUN,,HIRAGANA,,,考妣,こうひ,,kouhi,"zmarli rodzice
 zmarła matka i ojciec",archaizm,,,"GroupId: 2844395
 Translate: deceased parents
 MiscInfo: arch
 Translate: one's late mother and father
 MiscInfo: arch"
-210354,WORD_NOUN_SUFFIX,,HIRAGANA,,,海尉,かいい,,kaii,oficer niższego stopnia,ranga wojskowa w Japońskich Morskich Siłach Samoobrony,,,"GroupId: 2844517
+210353,WORD_NOUN_SUFFIX,,HIRAGANA,,,海尉,かいい,,kaii,oficer niższego stopnia,ranga wojskowa w Japońskich Morskich Siłach Samoobrony,,,"GroupId: 2844517
 Translate: lower-grade officer rank (JMSDF)"
-210355,WORD_NOUN,,HIRAGANA,,,新知,しんち,,shinchi,"nowa znajomość
+210354,WORD_NOUN,,HIRAGANA,,,新知,しんち,,shinchi,"nowa znajomość
 nowo nabyte terytorium (skrót)
 nowe pomysły (skrót)
 zaawansowane informacje (skrót)",przestarzałe słowo,,,"GroupId: 2844383
@@ -42195,7 +42191,7 @@ MiscInfo: obs
 Translate: advanced information
 MiscInfo: abbr
 MiscInfo: obs"
-210356,WORD_NOUN,,HIRAGANA,,,禍乱,からん,,karan,"klęska
+210355,WORD_NOUN,,HIRAGANA,,,禍乱,からん,,karan,"klęska
 katastrofa
 nieszczęście
 zakłócenia
@@ -42211,6 +42207,115 @@ Translate: disorder
 MiscInfo: obs
 Translate: turmoil
 MiscInfo: obs"
-210357,WORD_NOUN,,HIRAGANA,,,配架,はいか,,haika,"ułożenie
+210356,WORD_NOUN,,HIRAGANA,,,配架,はいか,,haika,"ułożenie
+rozmieszczenie",książek w bibliotece,,,"GroupId: 2844409
+Translate: arrangement (of books in a library)"
+210357,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,元気溌剌,げんきはつらつ,,genki hatsuratsu,"pełen energii
+przepełniony energią",,,,"GroupId: 2044630
+Translate: full of energy
+MiscInfo: yoji
+Translate: full of liveliness
+MiscInfo: yoji
+Translate: full of pep
+MiscInfo: yoji"
+210358,WORD_NOUN,,HIRAGANA,,,送り引き落し,おくりひきおとし,,okuri hiki otoshi,spadek na plecy,w sumo,,,"GroupId: 2139300
+Translate: rear pull down"
+210359,WORD_NOUN,,HIRAGANA,,,篠懸の木,すずかけのき,,suzukake no ki,platan,"gatunek drzewa, szczególnie platan wschodni, Platanus orientalis",,,"GroupId: 2263090
+Translate: plane tree (esp. the Oriental plane, Platanus orientalis)"
+210360,WORD_NOUN,,KATAKANA,,,-,スズカケノキ,,suzukake no ki,platan,"gatunek drzewa, szczególnie platan wschodni, Platanus orientalis",,,"GroupId: 2263090
+Translate: plane tree (esp. the Oriental plane, Platanus orientalis)"
+210361,WORD_NOUN,,HIRAGANA,,,雲烟飛動,うんえんひどう,,un'en hidou,"latające chmury i dryfująca mgiełka
+wspaniała kaligrafia
+żywy charakter pisma",,,,"GroupId: 2113010
+Translate: flying clouds and drifting haze
+MiscInfo: yoji
+Translate: magnificent calligraphy
+Translate: vivid penmanship"
+210362,WORD_NOUN,,HIRAGANA,,,官々接待,かんかんせったい,,kan kan settai,"biurokraci, którzy zabawiają się korzystając z publicznych funduszy",,,,"GroupId: 2530230
+Translate: bureaucrats entertaining bureaucrats using public funds
+MiscInfo: yoji
+AdditionalInfo: often local bureaucrats entertaining central bureaucrats"
+210363,WORD_NOUN,,KATAKANA,,,-,アカビット,,akabitto,"akvavit
+aquavit","wódka gatunkowa produkowana ze spirytusu rektyfikowanego pochodzącego ze zboża albo ziemniaków oraz destylatów z nalewu na kminku zwyczajnym lub kminie rzymskim. Napój alkoholowy o mocy od 40 do 45% popularny w Skandynawii, szczególnie w okresie Bożego Narodzenia",,,"GroupId: 2155780
+Translate: aquavit
+Translate: akvavit"
+210364,WORD_NOUN,,KATAKANA,,,-,ダルマザメ,,darumazame,rekin foremkowy,"gatunek niewielkiego rekina z rodziny scymnowatych, zamieszkującego głębiny oceaniczne strefy zwrotnikowej, Isistius brasiliensis",,,"GroupId: 2636530
+Translate: cookie-cutter shark (Isistius brasiliensis)
+MiscInfo: uk
+Translate: cigar shark
+MiscInfo: uk"
+210365,WORD_NOUN,,HIRAGANA,,,卸売業,おろしうりぎょう,,oroshiurigyou,handel hurtowy,,,,"GroupId: 2649710
+Translate: wholesale business
+Translate: wholesale trade"
+210366,WORD_NOUN,,KATAKANA,,,-,オヤニラミ,,oyanirami,Coreoperca kawamebari,gatunek ryby,,,"GroupId: 2635470
+Translate: aucha perch (Coreoperca kawamebari)
+MiscInfo: uk"
+210367,WORD_NOUN,,KATAKANA,,,-,オニキンメ,,onikinme,Anoplogaster cornuta,"gatunek ryby z rodziny Anoplogastridae, żyjącej od 600 do 5 000 m poniżej poziomu morza",,,"GroupId: 2635490
+Translate: common fangtooth (Anoplogaster cornuta)
+MiscInfo: uk"
+210368,WORD_NOUN,,HIRAGANA,,,鬼虎魚,おにおこぜ,,oniokoze,Inimicus japonicus,gatunek ryby,,,"GroupId: 2635500
+Translate: devil stinger (Inimicus japonicus)
+MiscInfo: uk"
+210369,WORD_NOUN,,KATAKANA,,,-,オニオコゼ,,oniokoze,Inimicus japonicus,gatunek ryby,,,"GroupId: 2635500
+Translate: devil stinger (Inimicus japonicus)
+MiscInfo: uk"
+210370,WORD_NOUN,,KATAKANA,,,-,ギンブナ,,ginbuna,Carassius langsdorfii,gatunek ryby,,,"GroupId: 2635690
+Translate: Carassius langsdorfii
+MiscInfo: uk"
+210371,WORD_NOUN,,KATAKANA,,,-,キンブナ,,kinbuna,Carassius buergeri,gatunek ryby,,,"GroupId: 2635700
+Translate: Carassius buergeri
+MiscInfo: uk"
+210372,WORD_NOUN,,HIRAGANA,,,河骨,かわほね,,kawahone,grążel japoński,"roślina, Nuphar japonica",,DUPLICATE 210323,"GroupId: 2269120
+Translate: Japanese spatterdock (species of water lily, Nuphar japonica)
+MiscInfo: uk"
+210373,WORD_NOUN,,HIRAGANA,,,川骨,こうほね,,kouhone,grążel japoński,"roślina, Nuphar japonica",,DUPLICATE 210374,"GroupId: 2269120
+Translate: Japanese spatterdock (species of water lily, Nuphar japonica)
+MiscInfo: uk"
+210374,WORD_NOUN,,HIRAGANA,,,川骨,かわほね,,kawahone,grążel japoński,"roślina, Nuphar japonica",,DUPLICATE 210373,"GroupId: 2269120
+Translate: Japanese spatterdock (species of water lily, Nuphar japonica)
+MiscInfo: uk"
+210375,WORD_NOUN,,KATAKANA,,,-,コウホネ,,kouhone,grążel japoński,"roślina, Nuphar japonica",,,"GroupId: 2269120
+Translate: Japanese spatterdock (species of water lily, Nuphar japonica)
+MiscInfo: uk"
+210376,WORD_NOUN,,HIRAGANA,,,雁来紅,はげいとう,,hageitou,szarłat trójbarwny,"roślina, Amaranthus gangeticus",,DUPLICATE 210377,"GroupId: 1955100
+Translate: tampala
+Translate: Joseph's coat
+Translate: Amaranthus tricolor"
+210377,WORD_NOUN,,HIRAGANA,,,雁来紅,がんらいこう,,ganraikou,szarłat trójbarwny,"roślina, Amaranthus gangeticus",,DUPLICATE 210376,"GroupId: 1955100
+Translate: tampala
+Translate: Joseph's coat
+Translate: Amaranthus tricolor"
+210378,WORD_NOUN,,KATAKANA,,,-,カワラナデシコ,,kawarana deshiko,goździk pyszny,"gatunek rośliny należący do rodziny goździkowatych, Dianthus superbus odm. longicalycinus",,,"GroupId: 2265240
+Translate: large pink (Dianthus superbus var. longicalycinus)
+MiscInfo: uk"
+210379,WORD_EXPRESSION,,HIRAGANA,,,恨みっこ無し,うらみっこなし,,uramikko nashi,bez urazu,,,,"GroupId: 1289750
+Translate: with no hard feelings"
+210380,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,鼻息を窺う,はないきをうかがう,,hanaiki o ukagau,"zbadać uczucia danej osoby
+zbadać upodobanie danej osoby
+zbadać przyjemność danej osoby",,,,"GroupId: 2832439
+Translate: to sound out a person's feelings
+Translate: to consult a person's pleasure"
+210381,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,あたり構わず,あたりかまわず,,atari kamawazu,"bezmyślnie
+bez zastanowienia
+bez namysłu
+niezwracanie uwagi na uczucia lub oczekiwania innych osób",,,,"GroupId: 2738920
+Translate: indiscriminately
+Translate: without consideration
+Translate: irrespective of the occasion
+Translate: paying no attention to the feelings or expectations of those nearby"
+210382,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,本音と建て前,ほんねとたてまえ,,honne to tatemae,"własne uczucia i oficjalne stanowisko (które może być sprzeczne)
+prawdziwy motyw i ustalony powód",,,,"GroupId: 2842705
+Translate: one's true feelings and one's official stance (which may be at odds)
+Translate: one's real motive and one's stated reason"
+210383,"WORD_EXPRESSION
+WORD_NOUN",,KATAKANA_HIRAGANA,,,-,ホンネとタテマエ,,honne to tatemae,"własne uczucia i oficjalne stanowisko (które może być sprzeczne)
+prawdziwy motyw i ustalony powód",,,,"GroupId: 2842705
+Translate: one's true feelings and one's official stance (which may be at odds)
+Translate: one's real motive and one's stated reason"
+210384,WORD_NOUN,,HIRAGANA,,,排架,はいか,,haika,"ułożenie
 rozmieszczenie",książek w bibliotece,,,"GroupId: 2844409
 Translate: arrangement (of books in a library)"
