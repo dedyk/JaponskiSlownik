@@ -42642,8 +42642,8 @@ Translate: place of dispatch
 Translate: place of origin"
 210476,WORD_NOUN,,HIRAGANA,,,刑事司法制度,けいじしほうせいど,,keiji shihou seido,system sądownictwa karnego,,,,"GroupId: 2665290
 Translate: criminal justice system"
-210477,WORD_NOUN,,KATAKANA,,,３ＰＬ,スリーピーエル,,suriipiieru,"third Party Logistics
-3PL","metoda działania, w której jedną lub kilka funkcji logistycznych zleca się firmie zewnętrznej",,,"GroupId: 2829280
+210477,WORD_NOUN,,KATAKANA,,,３ＰＬ,スリーピーエル,,surii piieru,"third Party Logistics
+3PL","metoda działania, w której jedną lub kilka funkcji logistycznych zleca się firmie zewnętrznej",,DUPLICATE 210522,"GroupId: 2829280
 Translate: third-party logistics
 Translate: 3PL"
 210478,WORD_NOUN,,HIRAGANA,,,営業品目,えいぎょうひんもく,,eigyou hinmoku,"branża
@@ -42822,3 +42822,77 @@ MiscInfo: uk
 AdditionalInfo: used to lament a particularly undesirable outcome or choice"
 210521,WORD_ADJECTIVE_NA,,HIRAGANA,,,比較可能,ひかくかのう,,hikaku kanou,porównywalny,,,,"GroupId: 2844411
 Translate: comparable"
+210522,WORD_NOUN,,HIRAGANA_KATAKANA,,,３ＰＬ,さんピーエル,,san piieru,"third Party Logistics
+3PL","metoda działania, w której jedną lub kilka funkcji logistycznych zleca się firmie zewnętrznej",,DUPLICATE 210477,"GroupId: 2829280
+Translate: third-party logistics
+Translate: 3PL"
+210523,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,びっくりマーク,,bikkuri maaku,"wykrzyknik
+znak wykrzyknika",,,,"GroupId: 2646730
+Translate: exclamation mark
+Translate: exclamation point"
+210524,WORD_NOUN,,KATAKANA,,,-,シロカジキ,,shirokajiki,Makaira indica,gatunek ryby,,,"GroupId: 2636290
+Translate: black marlin (Makaira indica)
+MiscInfo: uk"
+210525,WORD_NOUN,,KATAKANA,,,-,シマフグ,,shimafugu,Takifugu xanthopterus,gatunek ryby,,,"GroupId: 2636320
+Translate: yellowfin puffer (Takifugu xanthopterus)
+MiscInfo: uk"
+210526,WORD_NOUN,,HIRAGANA,,,薔薇鰱,ばらたなご,,baratanago,Rhodeus ocellatus,gatunek ryby,,,"GroupId: 2636480
+Translate: rosy bitterling (Rhodeus ocellatus)
+MiscInfo: uk"
+210527,WORD_NOUN,,KATAKANA,,,-,バラタナゴ,,baratanago,Rhodeus ocellatus,gatunek ryby,,,"GroupId: 2636480
+Translate: rosy bitterling (Rhodeus ocellatus)
+MiscInfo: uk"
+210528,WORD_NOUN,,KATAKANA,,,-,タカノハダイ,,taka no hadai,Goniistius zonatus,gatunek ryby,,,"GroupId: 2636490
+Translate: spottedtail morwong (Goniistius zonatus)
+MiscInfo: uk"
+210529,WORD_NOUN,,KATAKANA,,,-,タカハヤ,,takahaya,Phoxinus oxycephalus,gatunek ryby,,,"GroupId: 2636500
+Translate: Chinese minnow (Phoxinus oxycephalus)
+MiscInfo: uk"
+210530,WORD_NOUN,,HIRAGANA,,,針の筵,はりのむしろ,,hari no mushiro,"łóżko gwoździ
+łóżko z igieł
+droga cierniowa",,,,"GroupId: 2159600
+Translate: bed of nails
+Translate: bed of thorns
+Translate: bed of needles"
+210531,WORD_NOUN,,HIRAGANA,,,ねずみ返し,ねずみがえし,,nezumi gaeshi,"ochraniacz przeciw szczurom
+drewniana tarcza na filarach magazynu, linach i etc",,,,"GroupId: 2832910
+Translate: rat guard
+Translate: disk of wood on storehouse pillars, ropes, etc."
+210532,WORD_NOUN,,HIRAGANA,,,鼠返し,ねずみがえし,,nezumi gaeshi,"ochraniacz przeciw szczurom
+drewniana tarcza na filarach magazynu, linach i etc",,,,"GroupId: 2832910
+Translate: rat guard
+Translate: disk of wood on storehouse pillars, ropes, etc."
+210533,WORD_NOUN,,HIRAGANA,,,鼠がえし,ねずみがえし,,nezumi gaeshi,"ochraniacz przeciw szczurom
+drewniana tarcza na filarach magazynu, linach i etc",,,,"GroupId: 2832910
+Translate: rat guard
+Translate: disk of wood on storehouse pillars, ropes, etc."
+210534,WORD_NOUN,,HIRAGANA,,,掘っ建て柱,ほったてばしら,,hottate bashira,filar wkopany w ziemię,,,,"GroupId: 2529940
+Translate: pillar sunk into the ground"
+210535,WORD_NOUN,,HIRAGANA,,,茨姫,いばらひめ,,ibara hime,"Śpiąca Królewna
+Cierniowa Księżniczka",,,,"GroupId: 2413070
+Translate: Sleeping Beauty
+Translate: Thorn Princess
+Translate: Briar Rose"
+210536,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,目の上の瘤,めのうえのこぶ,,me no ue no kobu,"być komuś solą w oku
+wrzód na tyłku (często ktoś o wyższej randze, zdolnościach i etc)
+utrapienie
+coś na drodze",wyrażenie idiomatyczne,,,"GroupId: 2153140
+Translate: a thorn in one's side
+MiscInfo: id
+Translate: a pain in the butt (often someone higher in rank, ability, etc.)
+MiscInfo: id
+Translate: nuisance
+MiscInfo: id
+Translate: something in the way
+MiscInfo: id"
+210537,WORD_EXPRESSION,,HIRAGANA,,,目の上のたん瘤,めのうえのたんこぶ,,me no ue no tankobu,"być komuś solą w oku
+wrzód na tyłku (często ktoś o wyższej randze, zdolnościach i etc)
+osoba stojąca na drodze
+przełożony, który utrudnia swobodę działania",,,,"GroupId: 2153150
+Translate: a thorn in one's side
+Translate: a pain in the butt (often someone higher in rank, ability, etc.)
+Translate: a person standing in one's way
+Translate: a superior who obstructs one's freedom of action"
+210538,WORD_NOUN,,HIRAGANA,,,耳なじみ,みみなじみ,,miminajimi,znajomość (np. dźwięku),,,,"GroupId: 2844475
+Translate: familiarity (of a sound, etc.)"
