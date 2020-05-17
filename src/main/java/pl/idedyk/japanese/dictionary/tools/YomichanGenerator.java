@@ -10,13 +10,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
+import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
@@ -88,6 +91,34 @@ public class YomichanGenerator {
 			
 			put(DictionaryEntryType.WORD_EMPTY, new DefinitionTag("", 999));
 			put(DictionaryEntryType.UNKNOWN, new DefinitionTag("", 999));
+		}
+	};
+	
+	private static Map<AttributeType, DefinitionTag> attributeTypeToDefinitionTagMap = new TreeMap<AttributeType, DefinitionTag>() {		
+		private static final long serialVersionUID = 1L;
+
+		{
+			put(AttributeType.SURU_VERB, new DefinitionTag("suru", 10));
+			
+			put(AttributeType.COMMON_WORD, new DefinitionTag("pow-uz", 11));
+			
+			put(AttributeType.VERB_TRANSITIVITY, new DefinitionTag("cz-prz", 12));
+			put(AttributeType.VERB_INTRANSITIVITY, new DefinitionTag("cz-nprz", 12));
+
+			put(AttributeType.KANJI_ALONE, new DefinitionTag("kanj-sam", 12));
+			put(AttributeType.KANA_ALONE, new DefinitionTag("kana-sam", 12));
+
+			put(AttributeType.ATEJI, new DefinitionTag("ate", 13));
+			
+			put(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD, new DefinitionTag("ono", 14));
+			
+			put(AttributeType.VERB_KEIGO_HIGH, new DefinitionTag("hon-wyw", 15));
+			put(AttributeType.VERB_KEIGO_LOW, new DefinitionTag("hon-unż", 15));
+			
+			put(AttributeType.OBSCURE, new DefinitionTag("mał-zna", 16));
+			
+			put(AttributeType.ARCHAISM, new DefinitionTag("arch", 17));
+			put(AttributeType.OBSOLETE, new DefinitionTag("przes", 17));
 		}
 	};
 	
@@ -275,16 +306,6 @@ public class YomichanGenerator {
 			}
 		}
 		
-		
-		int fixme = 1;
-		// skróty !!!!!!!!!!!!			
-		/*
-		
-		
-		for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {				
-			termBankEntry.addDdefinitionTag(dictionaryEntryType.getName());				
-		}
-		
 		AttributeList attributeList = polishJapaneseEntry.getAttributeList();
 		
 		if (attributeList != null) {
@@ -296,20 +317,26 @@ public class YomichanGenerator {
 				for (Attribute attribute : attributeListList) {
 					
 					if (attribute.getAttributeType().isShow() == true) {
-						termBankEntry.addDdefinitionTag(attribute.getAttributeType().getName());
+						
+						DefinitionTag tag = attributeTypeToDefinitionTagMap.get(attribute.getAttributeType());
+						
+						if (tag != null && tag.getTag().length() > 0) {
+							termBankEntry.addDefinitionTag(tag.getTag());
+							
+						} else if (tag == null) {				
+							throw new RuntimeException("Unknown value: " + dictionaryEntryTypeToDefinitionTagMap);
+						}
 					}
 				}
 			}				
 		}
-		*/
-
-		
-		
 	}
 
 	private static void generateTagBank(String outputDir) {
 				
 		JSONArray tagBankJSONArray = new JSONArray();
+		
+		Set<String> alreadyUsedTagsName = new TreeSet<>();
 		
 		Iterator<Entry<DictionaryEntryType, DefinitionTag>> dictionaryEntryTypeToDefinitionTagMapIterator = dictionaryEntryTypeToDefinitionTagMap.entrySet().iterator();
 		
@@ -319,23 +346,70 @@ public class YomichanGenerator {
 			
 			//
 			
-			JSONArray tagBankEntryJSONArray = new JSONArray();
+			if (dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag().length() == 0) {
+				continue;
+			}
 			
-			tagBankEntryJSONArray.put(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag());
-			tagBankEntryJSONArray.put("");
-			tagBankEntryJSONArray.put(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getSortingOrder());
-			tagBankEntryJSONArray.put(dictionaryEntryTypeToDefinitionTagMapEntry.getKey().getName());
-			tagBankEntryJSONArray.put(0);
+			if (alreadyUsedTagsName.contains(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag()) == true) {				
+				throw new RuntimeException(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag());
+			}
+
+			alreadyUsedTagsName.add(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag());
 			
 			//
 			
-			tagBankJSONArray.put(tagBankEntryJSONArray);			
+			JSONArray tagBankEntryJSONArray = createTagBankJSONArray(dictionaryEntryTypeToDefinitionTagMapEntry.getValue(), dictionaryEntryTypeToDefinitionTagMapEntry.getKey().getName());
+						
+			//
+			
+			tagBankJSONArray.put(tagBankEntryJSONArray);				
 		}
 		
+		//
+		
+		Iterator<Entry<AttributeType, DefinitionTag>> attributeTypeToDefinitionTagMapIterator = attributeTypeToDefinitionTagMap.entrySet().iterator();
+		
+		while (attributeTypeToDefinitionTagMapIterator.hasNext() == true) {
+			
+			Entry<AttributeType, DefinitionTag> attributeTypeToDefinitionTagMapEntry = attributeTypeToDefinitionTagMapIterator.next();
+			
+			//
+			
+			if (attributeTypeToDefinitionTagMapEntry.getValue().getTag().length() == 0) {
+				continue;
+			}
+			
+			if (alreadyUsedTagsName.contains(attributeTypeToDefinitionTagMapEntry.getValue().getTag()) == true) {				
+				throw new RuntimeException(attributeTypeToDefinitionTagMapEntry.getValue().getTag());
+			}
+
+			alreadyUsedTagsName.add(attributeTypeToDefinitionTagMapEntry.getValue().getTag());
+			
+			//
+			
+			JSONArray tagBankEntryJSONArray = createTagBankJSONArray(attributeTypeToDefinitionTagMapEntry.getValue(), attributeTypeToDefinitionTagMapEntry.getKey().getName());
+						
+			//
+			
+			tagBankJSONArray.put(tagBankEntryJSONArray);				
+		}		
 		
 		writeJSONArrayToFile(new File(outputDir, "tag_bank_1.json"), tagBankJSONArray);
 	}
 	
+	private static JSONArray createTagBankJSONArray(DefinitionTag tag, String description) {
+		
+		JSONArray tagBankEntryJSONArray = new JSONArray();
+		
+		tagBankEntryJSONArray.put(tag.getTag());
+		tagBankEntryJSONArray.put("");
+		tagBankEntryJSONArray.put(tag.getSortingOrder());
+		tagBankEntryJSONArray.put(description);
+		tagBankEntryJSONArray.put(0);
+		
+		return tagBankEntryJSONArray;
+	}
+
 	private static void writeJSONArrayToFile(File outputFile, JSONArray jsonArray) {
 		
         try (FileWriter file = new FileWriter(outputFile)) {
