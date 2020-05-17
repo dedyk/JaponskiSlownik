@@ -103,14 +103,34 @@ public class YomichanGenerator {
 			*/
 			
 			// generowanie inflectedTags
-			int fixme2 = 1;
-			/*
-			v1: ichidan verb; -> RU_VERB
-			v5: godan verb; -> U_VERB
-			vs: suru verb; -> SURU
-			vk: kuru verb; -> KURU
-			adj-i: i-adjective -> i-przymiotniki
-			*/
+			{
+				List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
+				
+				if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_I) == true) {
+					termBankEntry.addInflectedTags("adj-i");
+				}
+				
+				if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_U) == true) {
+					termBankEntry.addInflectedTags("v5");
+				}
+
+				if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_RU) == true) {
+					termBankEntry.addInflectedTags("v1");
+				}
+				
+				if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_IRREGULAR) == true) {
+					
+					if (polishJapaneseEntry.getKana().endsWith("する") == true) {
+						termBankEntry.addInflectedTags("vs");
+						
+					} else if (polishJapaneseEntry.getKana().endsWith("くる") == true) {
+						termBankEntry.addInflectedTags("vk");
+						
+					} else {
+						throw new RuntimeException();
+					}
+				}
+			}
 			
 			// generowanie popularity
 			int fixme3 = 1;
@@ -279,6 +299,15 @@ public class YomichanGenerator {
 			}
 
 			return getListAsString(definitionTags);
+		}
+		
+		public void addInflectedTags(String tag) {
+			
+			if (inflectedTags == null) {
+				inflectedTags = new ArrayList<>();
+			}
+			
+			inflectedTags.add(tag);			
 		}
 
 		public String getInflectedTagsAsString() {
