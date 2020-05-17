@@ -43480,7 +43480,8 @@ Translate: executable statement"
 Translate: gun control law"
 210707,WORD_NOUN,,HIRAGANA,,,夕化粧,ゆうげしょう,,yuugeshou,wieczorny makijaż,,,,"GroupId: 1739900
 Translate: evening makeup"
-210708,WORD_NOUN,,HIRAGANA,,,新嫁,しんよめ,,shin'yome,nowo poślubiona panna młoda,,,,"GroupId: 2770340
+210708,WORD_NOUN,,HIRAGANA,,,新嫁,しんよめ,,shin'yome,"świeżo poślubiona panna młoda
+nowo poślubiona panna młoda",,,DUPLICATE 210755,"GroupId: 2770340
 Translate: newly-wed bride"
 210709,WORD_NOUN,,HIRAGANA,,,世間の通り,せけんのとおり,,seken no toori,reputacja,,,,"GroupId: 1888370
 Translate: reputation"
@@ -43657,3 +43658,31 @@ Translate: to argue
 Translate: to contend
 Translate: to discuss
 Translate: to dispute"
+210754,WORD_NOUN,,KATAKANA,,,-,コウロエンカワヒバリガイ,,kouroenkawahibarigai,Xenostrobus securis,gatunek małży,,,"GroupId: 2673500
+Translate: Xenostrobus securis (species of saltwater mussel)
+MiscInfo: uk"
+210755,WORD_NOUN,,HIRAGANA,,,新嫁,にいよめ,,niiyome,"świeżo poślubiona panna młoda
+nowo poślubiona panna młoda",,,DUPLICATE 210708,"GroupId: 2770340
+Translate: newly-wed bride"
+210756,WORD_NOUN,,KATAKANA,,,-,ニグロイド,,niguroido,"czarna odmiana człowieka
+czarna rasa",ang: Negroid,,,"GroupId: 2072690
+Translate: Negroid
+Translate: black race"
+210757,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヨーロッパオオナマズ,,yooroppa oonamazu,"sum pospolity
+sum
+sum europejski","gatunek ryby z rodziny sumowatych, Silurus glanis",,,"GroupId: 2637680
+Translate: Wels catfish (Silurus glanis)
+MiscInfo: uk"
+210758,WORD_NOUN,,KATAKANA,,,-,ワニエソ,,wanieso,Saurida wanieso,gatunek ryby,,,"GroupId: 2637770
+Translate: wanieso lizardfish (Saurida wanieso)
+MiscInfo: uk"
+210759,WORD_NOUN,,KATAKANA,,,-,ゴムベラ,,gomu bera,gumowa szpatułka,,,,"GroupId: 2639900
+Translate: rubber spatula
+MiscInfo: uk"
+210760,WORD_NOUN,,KATAKANA,,,-,サツマスティック,,satsuma sutikku,frytki ze słodkich ziemniaków,,,,"GroupId: 2647740
+Translate: sweet potato fries
+MiscInfo: uk"
+210761,WORD_VERB_U,,HIRAGANA,,,けり飛ばす,けりとばす,,keri tobasu,kopnąć w powietrzu,"często osobę w sporcie, w sztukach walki i etc",,,"GroupId: 2709520
+Translate: to kick flying (often a person in sport, martial arts, etc.)"
+210762,WORD_VERB_RU,,HIRAGANA,,,言伏せる,いいふせる,,ii fuseru,???,,,,"GroupId: 1848270
+Translate: to argue down"
