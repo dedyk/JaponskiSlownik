@@ -23,11 +23,71 @@ import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 
 public class YomichanGenerator {
 	
-	private static Map<DictionaryEntryType, String> dictionaryEntryTypeToDefinitionTagMap = new TreeMap<DictionaryEntryType, String>() {		
+	private static Map<DictionaryEntryType, DefinitionTag> dictionaryEntryTypeToDefinitionTagMap = new TreeMap<DictionaryEntryType, DefinitionTag>() {		
 		private static final long serialVersionUID = 1L;
 
 		{
-			put(DictionaryEntryType.WORD_NOUN, "rz");
+			put(DictionaryEntryType.WORD_NOUN, new DefinitionTag("rz", 0));			
+			put(DictionaryEntryType.WORD_TEMPORAL_NOUN, new DefinitionTag("rz-cza", 1));
+			
+			put(DictionaryEntryType.WORD_NOUN_SUFFIX, new DefinitionTag("rz-suf", 1));
+			put(DictionaryEntryType.WORD_NOUN_PREFIX, new DefinitionTag("rz-pre", 1));
+			
+			put(DictionaryEntryType.WORD_NAME, new DefinitionTag("im", 2));
+			put(DictionaryEntryType.WORD_MALE_NAME, new DefinitionTag("me-im", 2));
+			put(DictionaryEntryType.WORD_FEMALE_NAME, new DefinitionTag("rz-im", 2));
+			
+			put(DictionaryEntryType.WORD_SURNAME_NAME, new DefinitionTag("nazw", 2));
+						
+			put(DictionaryEntryType.WORD_PROPER_NOUN, new DefinitionTag("naz-wl", 2));
+			
+			put(DictionaryEntryType.WORD_VERB_U, new DefinitionTag("u-cz", 0));
+			put(DictionaryEntryType.WORD_VERB_RU, new DefinitionTag("ru-cz", 0));
+			put(DictionaryEntryType.WORD_VERB_IRREGULAR, new DefinitionTag("ir-cz", 0));
+			put(DictionaryEntryType.WORD_VERB_ZURU, new DefinitionTag("zur-cz", 3));
+			put(DictionaryEntryType.WORD_VERB_AUX, new DefinitionTag("cz-pom", 2));
+			
+			put(DictionaryEntryType.WORD_ADJECTIVE_I, new DefinitionTag("i-prz", 0));
+			put(DictionaryEntryType.WORD_AUX_ADJECTIVE_I, new DefinitionTag("i-przy-pom", 2));
+			put(DictionaryEntryType.WORD_ADJECTIVE_NA, new DefinitionTag("na-prz", 0));
+			put(DictionaryEntryType.WORD_ADJECTIVE_NO, new DefinitionTag("rz-no", 1));
+			put(DictionaryEntryType.WORD_ADJECTIVE_F, new DefinitionTag("rz-pr", 1));
+			put(DictionaryEntryType.WORD_ADJECTIVE_KU, new DefinitionTag("ku-prz", 2));
+			put(DictionaryEntryType.WORD_ADJECTIVE_TARU, new DefinitionTag("tar-prz", 2));
+			put(DictionaryEntryType.WORD_ADJECTIVE_NARI, new DefinitionTag("nar-prz", 2));
+			put(DictionaryEntryType.WORD_ADJECTIVE_SHIKU, new DefinitionTag("shi-prz", 2));
+			
+			put(DictionaryEntryType.WORD_EXPRESSION, new DefinitionTag("wyr", 1));
+			
+			put(DictionaryEntryType.WORD_ADVERB, new DefinitionTag("przy", 0));
+			put(DictionaryEntryType.WORD_ADVERB_TO, new DefinitionTag("przy-to", 1));
+			put(DictionaryEntryType.WORD_ADVERBIAL_NOUN, new DefinitionTag("rz-prz", 2));
+			
+			put(DictionaryEntryType.WORD_PRE_NOUN_ADJECTIVAL, new DefinitionTag("pre-rz-prz", 2));
+			
+			put(DictionaryEntryType.WORD_PRONOUN, new DefinitionTag("zai", 1));
+			
+			put(DictionaryEntryType.WORD_PARTICULE, new DefinitionTag("par", 2));
+			
+			put(DictionaryEntryType.WORD_PREFIX, new DefinitionTag("pre", 2));
+			put(DictionaryEntryType.WORD_SUFFIX, new DefinitionTag("suf", 2));
+			
+			put(DictionaryEntryType.WORD_AUX, new DefinitionTag("aux", 2));
+			
+			put(DictionaryEntryType.WORD_CONJUNCTION, new DefinitionTag("spó", 2));
+			
+			put(DictionaryEntryType.WORD_INTERJECTION, new DefinitionTag("wyk", 2));
+			
+			put(DictionaryEntryType.WORD_COUNTER, new DefinitionTag("kla", 2));
+			
+			put(DictionaryEntryType.WORD_NIDAN_VERB, new DefinitionTag("nid-cz", 3));
+			
+			put(DictionaryEntryType.WORD_NUMBER, new DefinitionTag("lic", 2));
+			
+			put(DictionaryEntryType.WORD_COPULA_DA, new DefinitionTag("kop", 3));
+			
+			put(DictionaryEntryType.WORD_EMPTY, new DefinitionTag("", 999));
+			put(DictionaryEntryType.UNKNOWN, new DefinitionTag("", 999));
 		}
 	};
 	
@@ -205,18 +265,14 @@ public class YomichanGenerator {
 		
 		for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {	
 			
-			String tag = dictionaryEntryTypeToDefinitionTagMap.get(dictionaryEntryType);
+			DefinitionTag tag = dictionaryEntryTypeToDefinitionTagMap.get(dictionaryEntryType);
 			
-			if (tag != null) {
-				termBankEntry.addDefinitionTag(tag);
+			if (tag != null && tag.getTag().length() > 0) {
+				termBankEntry.addDefinitionTag(tag.getTag());
 				
-			} else {
-				
-				int fixme = 1;
-				
-				
+			} else if (tag == null) {				
+				throw new RuntimeException("Unknown value: " + dictionaryEntryTypeToDefinitionTagMap);
 			}
-
 		}
 		
 		
@@ -255,19 +311,19 @@ public class YomichanGenerator {
 				
 		JSONArray tagBankJSONArray = new JSONArray();
 		
-		Iterator<Entry<DictionaryEntryType, String>> dictionaryEntryTypeToDefinitionTagMapIterator = dictionaryEntryTypeToDefinitionTagMap.entrySet().iterator();
+		Iterator<Entry<DictionaryEntryType, DefinitionTag>> dictionaryEntryTypeToDefinitionTagMapIterator = dictionaryEntryTypeToDefinitionTagMap.entrySet().iterator();
 		
 		while (dictionaryEntryTypeToDefinitionTagMapIterator.hasNext() == true) {
 			
-			Entry<DictionaryEntryType, String> dictionaryEntryTypeToDefinitionTagMapEntry = dictionaryEntryTypeToDefinitionTagMapIterator.next();
+			Entry<DictionaryEntryType, DefinitionTag> dictionaryEntryTypeToDefinitionTagMapEntry = dictionaryEntryTypeToDefinitionTagMapIterator.next();
 			
 			//
 			
 			JSONArray tagBankEntryJSONArray = new JSONArray();
 			
-			tagBankEntryJSONArray.put(dictionaryEntryTypeToDefinitionTagMapEntry.getValue());
+			tagBankEntryJSONArray.put(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag());
 			tagBankEntryJSONArray.put("");
-			tagBankEntryJSONArray.put(0);
+			tagBankEntryJSONArray.put(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getSortingOrder());
 			tagBankEntryJSONArray.put(dictionaryEntryTypeToDefinitionTagMapEntry.getKey().getName());
 			tagBankEntryJSONArray.put(0);
 			
@@ -432,6 +488,26 @@ public class YomichanGenerator {
 			}			
 			
 			return result.toString();
+		}
+	}
+	
+	private static class DefinitionTag {
+		
+		private String tag;
+		
+		private int sortingOrder;
+		
+		public DefinitionTag(String tag, int sortingOrder) {
+			this.tag = tag;
+			this.sortingOrder = sortingOrder;
+		}
+
+		public String getTag() {
+			return tag;
+		}
+
+		public int getSortingOrder() {
+			return sortingOrder;
 		}
 	}
 	
