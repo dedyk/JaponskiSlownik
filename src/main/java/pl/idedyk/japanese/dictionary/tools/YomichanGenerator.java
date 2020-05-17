@@ -6,7 +6,11 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.TreeMap;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -18,6 +22,14 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 
 public class YomichanGenerator {
+	
+	private static Map<DictionaryEntryType, String> dictionaryEntryTypeToDefinitionTagMap = new TreeMap<DictionaryEntryType, String>() {		
+		private static final long serialVersionUID = 1L;
+
+		{
+			put(DictionaryEntryType.WORD_NOUN, "rz");
+		}
+	};
 	
 	public static void generate(List<PolishJapaneseEntry> polishJapaneseEntriesList, String outputDir) {
 		
@@ -74,33 +86,8 @@ public class YomichanGenerator {
 				termBankEntry.setKana("");				
 			}
 						
-			
-			int fixme = 1;
-			// skróty !!!!!!!!!!!!			
-			/*
-			List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
-			
-			for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {				
-				termBankEntry.addDdefinitionTag(dictionaryEntryType.getName());				
-			}
-			
-			AttributeList attributeList = polishJapaneseEntry.getAttributeList();
-			
-			if (attributeList != null) {
-				
-				List<Attribute> attributeListList = attributeList.getAttributeList();
-				
-				if (attributeListList != null && attributeListList.size() > 0) {
-					
-					for (Attribute attribute : attributeListList) {
-						
-						if (attribute.getAttributeType().isShow() == true) {
-							termBankEntry.addDdefinitionTag(attribute.getAttributeType().getName());
-						}
-					}
-				}				
-			}
-			*/
+			// generowanie definitionTag
+			generateDefinitionTag(polishJapaneseEntry, termBankEntry);			
 			
 			// generowanie inflectedTags
 			{
@@ -212,11 +199,83 @@ public class YomichanGenerator {
 		}
 	}
 	
-	private static void generateTagBank(String outputDir) {
+	private static void generateDefinitionTag(PolishJapaneseEntry polishJapaneseEntry, TermBankEntry termBankEntry) {
+		
+		List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
+		
+		for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {	
+			
+			String tag = dictionaryEntryTypeToDefinitionTagMap.get(dictionaryEntryType);
+			
+			if (tag != null) {
+				termBankEntry.addDefinitionTag(tag);
+				
+			} else {
+				
+				int fixme = 1;
+				
+				
+			}
+
+		}
+		
 		
 		int fixme = 1;
+		// skróty !!!!!!!!!!!!			
+		/*
 		
+		
+		for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {				
+			termBankEntry.addDdefinitionTag(dictionaryEntryType.getName());				
+		}
+		
+		AttributeList attributeList = polishJapaneseEntry.getAttributeList();
+		
+		if (attributeList != null) {
+			
+			List<Attribute> attributeListList = attributeList.getAttributeList();
+			
+			if (attributeListList != null && attributeListList.size() > 0) {
+				
+				for (Attribute attribute : attributeListList) {
+					
+					if (attribute.getAttributeType().isShow() == true) {
+						termBankEntry.addDdefinitionTag(attribute.getAttributeType().getName());
+					}
+				}
+			}				
+		}
+		*/
+
+		
+		
+	}
+
+	private static void generateTagBank(String outputDir) {
+				
 		JSONArray tagBankJSONArray = new JSONArray();
+		
+		Iterator<Entry<DictionaryEntryType, String>> dictionaryEntryTypeToDefinitionTagMapIterator = dictionaryEntryTypeToDefinitionTagMap.entrySet().iterator();
+		
+		while (dictionaryEntryTypeToDefinitionTagMapIterator.hasNext() == true) {
+			
+			Entry<DictionaryEntryType, String> dictionaryEntryTypeToDefinitionTagMapEntry = dictionaryEntryTypeToDefinitionTagMapIterator.next();
+			
+			//
+			
+			JSONArray tagBankEntryJSONArray = new JSONArray();
+			
+			tagBankEntryJSONArray.put(dictionaryEntryTypeToDefinitionTagMapEntry.getValue());
+			tagBankEntryJSONArray.put("");
+			tagBankEntryJSONArray.put(0);
+			tagBankEntryJSONArray.put(dictionaryEntryTypeToDefinitionTagMapEntry.getKey().getName());
+			tagBankEntryJSONArray.put(0);
+			
+			//
+			
+			tagBankJSONArray.put(tagBankEntryJSONArray);			
+		}
+		
 		
 		writeJSONArrayToFile(new File(outputDir, "tag_bank_1.json"), tagBankJSONArray);
 	}
@@ -283,13 +342,15 @@ public class YomichanGenerator {
 			this.kana = kana;
 		}		
 		
-		public void addDdefinitionTag(String tag) {
+		public void addDefinitionTag(String tag) {
 						
 			if (definitionTags == null) {
 				definitionTags = new ArrayList<>();
 			}
 			
-			definitionTags.add(tag);			
+			if (definitionTags.contains(tag) == false) {
+				definitionTags.add(tag);
+			}
 		}
 		
 		public String getDefinitionTagsAsString() {
