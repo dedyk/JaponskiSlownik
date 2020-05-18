@@ -287,7 +287,13 @@ public class YomichanGenerator {
 					termBankEntry.setPopularity(-4);
 					
 				} else {
-					termBankEntry.setPopularity(-1);
+					
+					if (names == false) {
+						termBankEntry.setPopularity(-1);
+						
+					} else {
+						termBankEntry.setPopularity(-5);						
+					}
 				}					
 			}
 			
