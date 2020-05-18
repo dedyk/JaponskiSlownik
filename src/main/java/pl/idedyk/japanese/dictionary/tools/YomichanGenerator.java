@@ -21,76 +21,100 @@ import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
+import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 
 public class YomichanGenerator {
 	
-	private static Map<DictionaryEntryType, DefinitionTag> dictionaryEntryTypeToDefinitionTagMap = new TreeMap<DictionaryEntryType, DefinitionTag>() {		
+	private static Map<DictionaryEntryType, DefinitionTag> dictionaryEntryTypeToDefinitionTagMap = new TreeMap<DictionaryEntryType, DefinitionTag>() {
+		
 		private static final long serialVersionUID = 1L;
 
 		{
-			put(DictionaryEntryType.WORD_NOUN, new DefinitionTag("rz", 0));			
-			put(DictionaryEntryType.WORD_TEMPORAL_NOUN, new DefinitionTag("rz-cza", 1));
-			
-			put(DictionaryEntryType.WORD_NOUN_SUFFIX, new DefinitionTag("rz-suf", 1));
-			put(DictionaryEntryType.WORD_NOUN_PREFIX, new DefinitionTag("rz-pre", 1));
-			
-			put(DictionaryEntryType.WORD_NAME, new DefinitionTag("im", 2));
-			put(DictionaryEntryType.WORD_MALE_NAME, new DefinitionTag("me-im", 2));
-			put(DictionaryEntryType.WORD_FEMALE_NAME, new DefinitionTag("rz-im", 2));
-			
-			put(DictionaryEntryType.WORD_SURNAME_NAME, new DefinitionTag("nazw", 2));
-						
-			put(DictionaryEntryType.WORD_PROPER_NOUN, new DefinitionTag("naz-wl", 2));
+			put(DictionaryEntryType.WORD_NOUN, new DefinitionTag("rz", 0));	
 			
 			put(DictionaryEntryType.WORD_VERB_U, new DefinitionTag("u-cz", 0));
 			put(DictionaryEntryType.WORD_VERB_RU, new DefinitionTag("ru-cz", 0));
 			put(DictionaryEntryType.WORD_VERB_IRREGULAR, new DefinitionTag("ir-cz", 0));
-			put(DictionaryEntryType.WORD_VERB_ZURU, new DefinitionTag("zur-cz", 3));
-			put(DictionaryEntryType.WORD_VERB_AUX, new DefinitionTag("cz-pom", 2));
-			
+
 			put(DictionaryEntryType.WORD_ADJECTIVE_I, new DefinitionTag("i-prz", 0));
-			put(DictionaryEntryType.WORD_AUX_ADJECTIVE_I, new DefinitionTag("i-przy-pom", 2));
 			put(DictionaryEntryType.WORD_ADJECTIVE_NA, new DefinitionTag("na-prz", 0));
+			
+			put(DictionaryEntryType.WORD_TEMPORAL_NOUN, new DefinitionTag("rz-cza", 1));
 			put(DictionaryEntryType.WORD_ADJECTIVE_NO, new DefinitionTag("rz-no", 1));
 			put(DictionaryEntryType.WORD_ADJECTIVE_F, new DefinitionTag("rz-pr", 1));
-			put(DictionaryEntryType.WORD_ADJECTIVE_KU, new DefinitionTag("ku-prz", 2));
-			put(DictionaryEntryType.WORD_ADJECTIVE_TARU, new DefinitionTag("tar-prz", 2));
-			put(DictionaryEntryType.WORD_ADJECTIVE_NARI, new DefinitionTag("nar-prz", 2));
-			put(DictionaryEntryType.WORD_ADJECTIVE_SHIKU, new DefinitionTag("shi-prz", 2));
-			
+
 			put(DictionaryEntryType.WORD_EXPRESSION, new DefinitionTag("wyr", 1));
 			
-			put(DictionaryEntryType.WORD_ADVERB, new DefinitionTag("przy", 0));
-			put(DictionaryEntryType.WORD_ADVERB_TO, new DefinitionTag("przy-to", 1));
-			put(DictionaryEntryType.WORD_ADVERBIAL_NOUN, new DefinitionTag("rz-prz", 2));
-			
-			put(DictionaryEntryType.WORD_PRE_NOUN_ADJECTIVAL, new DefinitionTag("pre-rz-prz", 2));
-			
-			put(DictionaryEntryType.WORD_PRONOUN, new DefinitionTag("zai", 1));
+			put(DictionaryEntryType.WORD_CONJUNCTION, new DefinitionTag("spó", 2));			
+			put(DictionaryEntryType.WORD_INTERJECTION, new DefinitionTag("wyk", 2));
 			
 			put(DictionaryEntryType.WORD_PARTICULE, new DefinitionTag("par", 2));
 			
-			put(DictionaryEntryType.WORD_PREFIX, new DefinitionTag("pre", 2));
-			put(DictionaryEntryType.WORD_SUFFIX, new DefinitionTag("suf", 2));
+			put(DictionaryEntryType.WORD_PRONOUN, new DefinitionTag("zai", 2));
 			
-			put(DictionaryEntryType.WORD_AUX, new DefinitionTag("aux", 2));
+			put(DictionaryEntryType.WORD_ADVERB, new DefinitionTag("przy", 2));
+			put(DictionaryEntryType.WORD_ADVERB_TO, new DefinitionTag("przy-to", 2));
+
+			put(DictionaryEntryType.WORD_NOUN_SUFFIX, new DefinitionTag("rz-suf", 3));
+			put(DictionaryEntryType.WORD_NOUN_PREFIX, new DefinitionTag("rz-pre", 3));
 			
-			put(DictionaryEntryType.WORD_CONJUNCTION, new DefinitionTag("spó", 2));
+			put(DictionaryEntryType.WORD_PREFIX, new DefinitionTag("pre", 3));
+			put(DictionaryEntryType.WORD_SUFFIX, new DefinitionTag("suf", 3));
+
+			put(DictionaryEntryType.WORD_NUMBER, new DefinitionTag("lic", 4));
 			
-			put(DictionaryEntryType.WORD_INTERJECTION, new DefinitionTag("wyk", 2));
+			put(DictionaryEntryType.WORD_COUNTER, new DefinitionTag("kla", 4));
 			
-			put(DictionaryEntryType.WORD_COUNTER, new DefinitionTag("kla", 2));
+			put(DictionaryEntryType.WORD_AUX_ADJECTIVE_I, new DefinitionTag("i-przy-pom", 5));
 			
-			put(DictionaryEntryType.WORD_NIDAN_VERB, new DefinitionTag("nid-cz", 3));
+			put(DictionaryEntryType.WORD_ADVERBIAL_NOUN, new DefinitionTag("rz-prz", 6));
+			put(DictionaryEntryType.WORD_PRE_NOUN_ADJECTIVAL, new DefinitionTag("pre-rz-prz", 6));
 			
-			put(DictionaryEntryType.WORD_NUMBER, new DefinitionTag("lic", 2));
+			put(DictionaryEntryType.WORD_AUX, new DefinitionTag("aux", 6));
 			
-			put(DictionaryEntryType.WORD_COPULA_DA, new DefinitionTag("kop", 3));
+			put(DictionaryEntryType.WORD_ADJECTIVE_KU, new DefinitionTag("ku-prz", 7));
+			put(DictionaryEntryType.WORD_ADJECTIVE_TARU, new DefinitionTag("tar-prz", 7));
+			put(DictionaryEntryType.WORD_ADJECTIVE_NARI, new DefinitionTag("nar-prz", 7));
+			put(DictionaryEntryType.WORD_ADJECTIVE_SHIKU, new DefinitionTag("shi-prz", 7));
+
+			put(DictionaryEntryType.WORD_VERB_ZURU, new DefinitionTag("zur-cz", 8));
+			put(DictionaryEntryType.WORD_VERB_AUX, new DefinitionTag("cz-pom", 8));
+			put(DictionaryEntryType.WORD_NIDAN_VERB, new DefinitionTag("nid-cz", 8));
 			
+			put(DictionaryEntryType.WORD_COPULA_DA, new DefinitionTag("kop", 9));
+			
+			put(DictionaryEntryType.WORD_PROPER_NOUN, new DefinitionTag("naz-wl", 10));
+			
+			put(DictionaryEntryType.WORD_NAME, new DefinitionTag("im", 10));
+			
+			put(DictionaryEntryType.WORD_MALE_NAME, new DefinitionTag("me-im", 11));
+			put(DictionaryEntryType.WORD_FEMALE_NAME, new DefinitionTag("rz-im", 11));
+			
+			put(DictionaryEntryType.WORD_SURNAME_NAME, new DefinitionTag("nazw", 12));
+			
+			put(DictionaryEntryType.WORD_PERSON, new DefinitionTag("oso", 13));
+			
+			put(DictionaryEntryType.WORD_WORK, new DefinitionTag("dzie", 14));
+			
+			put(DictionaryEntryType.WORD_PLACE, new DefinitionTag("miej", 15));
+			
+			put(DictionaryEntryType.WORD_STATION_NAME, new DefinitionTag("sta", 16));
+			
+			put(DictionaryEntryType.WORD_COMPANY_NAME, new DefinitionTag("fir", 17));
+			
+			put(DictionaryEntryType.WORD_ORGANIZATION_NAME, new DefinitionTag("org", 18));
+			
+			put(DictionaryEntryType.WORD_PRODUCT_NAME, new DefinitionTag("prod", 19));
+			
+			put(DictionaryEntryType.WORD_UNCLASS_NAME, new DefinitionTag("nies", 20));
+						
 			put(DictionaryEntryType.WORD_EMPTY, new DefinitionTag("", 999));
-			put(DictionaryEntryType.UNKNOWN, new DefinitionTag("", 999));
+			put(DictionaryEntryType.UNKNOWN, new DefinitionTag("", 999));			
 		}
 	};
 	
@@ -122,17 +146,21 @@ public class YomichanGenerator {
 		}
 	};
 	
-	public static void generate(List<PolishJapaneseEntry> polishJapaneseEntriesList, String outputDir) {
+	public static void generate(List<PolishJapaneseEntry> polishJapaneseEntriesList, List<PolishJapaneseEntry> namesList, String outputDir) {
 		
 		int fixme = 1;
 		// kanji
-		// slownik nazw
 		
 		// generowanie indeksu
 		generateIndex(outputDir);
 		
 		// generowanie slow (term_bank)
-		generateTermBank(outputDir, polishJapaneseEntriesList);
+		List<List<TermBankEntry>> termBankListList = new ArrayList<>();
+		
+		generateTermBank(termBankListList, polishJapaneseEntriesList, false);
+		generateTermBank(termBankListList, namesList, true);
+		
+		saveTermBank(outputDir, termBankListList);
 		
 		// generowanie tagow (tag_bank)
 		generateTagBank(outputDir);
@@ -156,9 +184,7 @@ public class YomichanGenerator {
 		writeJSONObjectToFile(new File(outputDir, "index.json"), indexJSON);		
 	}
 	
-	private static void generateTermBank(String outputDir, List<PolishJapaneseEntry> polishJapaneseEntriesList) {
-				
-		List<List<TermBankEntry>> termBankListList = new ArrayList<>();
+	private static void generateTermBank(List<List<TermBankEntry>> termBankListList, List<PolishJapaneseEntry> polishJapaneseEntriesList, boolean names) {
 		
 		List<TermBankEntry> currentTermBankList = null;
 		
@@ -211,14 +237,65 @@ public class YomichanGenerator {
 			}
 			
 			// generowanie popularity
-			int fixme3 = 1;
+			{
+				boolean isCommon = false;
+				boolean isArchaism = false;
+				boolean isObscure = false;
+				boolean isObsolete = false;
+				
+				//
+				
+				AttributeList attributeList = polishJapaneseEntry.getAttributeList();
+				
+				if (attributeList != null) {
+					
+					List<Attribute> attributeListList = attributeList.getAttributeList();
+					
+					if (attributeListList != null && attributeListList.size() > 0) {
+						
+						for (Attribute attribute : attributeListList) {
+														
+							if (attribute.getAttributeType() == AttributeType.COMMON_WORD) {
+								isCommon = true;
+							}
+							
+							if (attribute.getAttributeType() == AttributeType.ARCHAISM) {
+								isArchaism = true;
+							}
+							
+							if (attribute.getAttributeType() == AttributeType.OBSCURE) {
+								isObscure = true;
+							}
+							
+							if (attribute.getAttributeType() == AttributeType.OBSOLETE) {
+								isObsolete = true;
+							}
+						}
+					}
+				}
+				
+				if (isCommon == true) {
+					termBankEntry.setPopularity(0);
+					
+				} else if (isObscure == true) {
+					termBankEntry.setPopularity(-2);
+				
+				} else if (isObsolete == true) {
+					termBankEntry.setPopularity(-3);
+				
+				} else if (isArchaism == true) {
+					termBankEntry.setPopularity(-4);
+					
+				} else {
+					termBankEntry.setPopularity(-1);
+				}					
+			}
 			
 			// generowanie sequenceNumber
-			int fixme4 = 1;
-			termBankEntry.setSequenceNumber(polishJapaneseEntry.getId());
+			termBankEntry.setSequenceNumber(names == false ? polishJapaneseEntry.getId() : 1000000 + polishJapaneseEntry.getId());
 			
 			// generowanie termTag
-			int fixme5 = 5;
+			// noop
 			
 			//
 			
@@ -254,8 +331,9 @@ public class YomichanGenerator {
 			
 			currentTermBankList = null;
 		}		
-
-		//
+	}
+	
+	private static void saveTermBank(String outputDir, List<List<TermBankEntry>> termBankListList) {
 		
 		int bankNo = 1;
 		
@@ -301,8 +379,8 @@ public class YomichanGenerator {
 			if (tag != null && tag.getTag().length() > 0) {
 				termBankEntry.addDefinitionTag(tag.getTag());
 				
-			} else if (tag == null) {				
-				throw new RuntimeException("Unknown value: " + dictionaryEntryTypeToDefinitionTagMap);
+			} else if (tag == null) {
+				throw new RuntimeException("Unknown value: " + dictionaryEntryType);
 			}
 		}
 		
@@ -586,13 +664,32 @@ public class YomichanGenerator {
 	}
 	
 	public static void main(String[] args) throws Exception {
+
+		// read edict common
+		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
 		
 		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
 				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
 		
+		//
 		
-		List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+		List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();		
 
-		generate(polishJapaneseEntriesList, "/tmp/a");		
+		Helper.generateAdditionalInfoFromEdict(wordGeneratorHelper.getJMENewDictionary(), jmedictCommon, polishJapaneseEntriesList);
+
+		//
+		
+		List<PolishJapaneseEntry> namesList;
+		
+		{
+			JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
+			List<JMEDictNewNativeEntry> jmedictNameNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
+			
+			JMENewDictionary jmeNewNameDictionary = jmedictNewReader.createJMENewDictionary(jmedictNameNativeList);
+			
+			namesList = Helper.generateNames(jmeNewNameDictionary);
+		}
+		
+		generate(polishJapaneseEntriesList, namesList, "/tmp/a");		
 	}
 }
