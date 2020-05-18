@@ -39000,7 +39000,8 @@ Translate: place one can go"
 209596,WORD_NOUN,,HIRAGANA,,,黒玉,くろだま,,kuro dama,"czarna kula
 czarna, okrągła pieczęć
 źrenica
-czarny cukierek",,,DUPLICATE 209628,"GroupId: 2762350
+czarny cukierek",,,"DUPLICATE 209628
+DUPLICATE 210818","GroupId: 2762350
 Translate: black ball
 Translate: black, round sigil
 Translate: pupil
@@ -39131,7 +39132,8 @@ Translate: place one can go"
 209628,WORD_NOUN,,HIRAGANA,,,黒玉,くろたま,,kuro tama,"czarna kula
 czarna, okrągła pieczęć
 źrenica
-czarny cukierek",,,DUPLICATE 209596,"GroupId: 2762350
+czarny cukierek",,,"DUPLICATE 209596
+DUPLICATE 210818","GroupId: 2762350
 Translate: black ball
 Translate: black, round sigil
 Translate: pupil
@@ -43793,7 +43795,7 @@ co najmniej",,,,"GroupId: 1595620
 Translate: at least"
 210795,WORD_NOUN,,HIRAGANA,,,万馬券,まんばけん,,manbaken,bilet na zakład z wypłatą co najmniej 100 krotną (wyścigi konne),,,,"GroupId: 2715700
 Translate: betting ticket with a payout of at least 100 times (horse racing)"
-210796,WORD_NOUN,,KATAKANA,,,純全帯公九,ジュンチャンタイヤオチュウ,,junchantaiyaochuu,???,Mahjong,,,"GroupId: 2833075
+210796,WORD_NOUN,,KATAKANA_EXCEPTION,,,純全帯公九,ジュンチャンタイヤオチュウ,,junchantai yaochuu,???,Mahjong,,,"GroupId: 2833075
 Translate: winning hand with at least one terminal tile in each set and no honor tiles"
 210797,WORD_NOUN,,KATAKANA,,,純チャン,ジュンチャン,,jun chan,???,"skrót, Mahjong",,,"GroupId: 2833076
 Translate: winning hand with at least one terminal tile in each set and no honor tiles
@@ -43895,7 +43897,8 @@ MiscInfo: id
 AdditionalInfo: used prenominally as ～が服を着た（ような）"
 210817,WORD_NOUN,,KATAKANA,,,-,マイクロメーター,,maikuromeetaa,mikrometr,"przyrząd pomiarowy służący do mierzenia wymiarów geometrycznych przedmiotów z materiałów twardych z rozdzielczością rzędu 0,01 mm lub 0,001 mm, ang: micrometer",,,"GroupId: 1126840
 Translate: micrometer"
-210818,WORD_NOUN,,HIRAGANA,,,黒玉,こくぎょく,,kokugyoku,dżet (klejnot),,,,"GroupId: 2763200
+210818,WORD_NOUN,,HIRAGANA,,,黒玉,こくぎょく,,kokugyoku,dżet (klejnot),,,"DUPLICATE 209596
+DUPLICATE 209628","GroupId: 2763200
 Translate: jet (gemstone)"
 210819,WORD_NOUN,,HIRAGANA,,,祖考,そこう,,sokou,"zmarły dziadek
 zmarły ojciec i dziadek
@@ -43912,7 +43915,7 @@ MiscInfo: obsc"
 210820,WORD_NOUN,,HIRAGANA,,,聞見,ぶんけん,,bunken,"informacja
 doświadczenie
 wiedza
-obserwacja",przestarzałe słowo,,,"GroupId: 2844405
+obserwacja",przestarzałe słowo,,DUPLICATE 210841,"GroupId: 2844405
 Translate: information
 MiscInfo: obs
 Translate: experience
@@ -43943,3 +43946,76 @@ Translate: bioterrorism
 Translate: biological terrorism"
 210826,WORD_NOUN,,KATAKANA,,,-,キャロットケーキ,,kyarotto keeki,"ciasto z marchwi
 ciasto marchewkowe",ang: carrot cake,IGNORE_NO_JMEDICT,,
+210827,WORD_NOUN,,HIRAGANA,,,十進小数点,じっしんしょうすうてん,,jisshin shousuuten,kropka dziesiętna,,,,"GroupId: 2276920
+Translate: decimal point"
+210828,WORD_NOUN,,KATAKANA,,,-,タンバノリ,,tanbanori,Grateloupia elliptica,gatunek krasnorostu (glonu),,,"GroupId: 2738560
+Translate: Grateloupia elliptica (species of red alga)
+MiscInfo: uk"
+210829,WORD_NOUN,,KATAKANA,,,-,ホッキョクノウサギ,,hokkyoku no usagi,zając polarny,"gatunek ssaka z rodziny zającowatych, występującego w strefie tundry i tajgi, Lepus arcticus",,,"GroupId: 2655520
+Translate: Arctic hare (Lepus arcticus)
+MiscInfo: uk"
+210830,WORD_NOUN,,KATAKANA,,,-,ヤマビーバー,,yama biibaa,sewel górski,"gatunek gryzonia, jedyny żyjący przedstawiciel rodziny sewelowatych i rodzaju sewel, Aplodontia rufa",,,"GroupId: 2657880
+Translate: mountain beaver (Aplodontia rufa)
+MiscInfo: uk"
+210831,WORD_NOUN,,KATAKANA,,,-,シロハヤブサ,,shirohayabusa,"białozór
+sokół norweski","gatunek dużego ptaka drapieżnego z rodziny sokołowatych, największy przedstawiciel rodzaju Falco, Falco rusticolus",,,"GroupId: 2659380
+Translate: gyrfalcon (Falco rusticolus)
+MiscInfo: uk"
+210832,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,マリアアザミ,,mariaa zami,ostropest plamisty,"gatunek rośliny należący do rodziny astrowatych, Silybum marianum",,,"GroupId: 2664210
+Translate: milk thistle (Silybum marianum)
+MiscInfo: uk"
+210833,WORD_VERB_RU,,HIRAGANA,,,打っ倒れる,ぶったおれる,,buttaoreru,"upaść
+paść jak kłoda",,,,"GroupId: 2253610
+Translate: to fall flat
+Translate: to collapse in a heap"
+210834,WORD_ADVERB,,HIRAGANA,,,尠くも,すくなくも,,sukunakumo,"przynajmniej
+co najmniej",,,,"GroupId: 1595620
+Translate: at least"
+210835,WORD_NOUN,,KATAKANA_EXCEPTION,,,純全帯ヤオ九,ジュンチャンタイヤオチュウ,,junchantai yaochuu,???,Mahjong,,,"GroupId: 2833075
+Translate: winning hand with at least one terminal tile in each set and no honor tiles"
+210836,WORD_NOUN,,KATAKANA_EXCEPTION,,,純全帯么九,ジュンチャンタイヤオチュウ,,junchantai yaochuu,???,Mahjong,,,"GroupId: 2833075
+Translate: winning hand with at least one terminal tile in each set and no honor tiles"
+210837,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,-,ハンパじゃない,,hanpajanai,"znaczny
+niemały
+ogromny
+olbrzymi
+wyjątkowy
+imponujący
+robiący wrażenie",,,,"GroupId: 2842532
+Translate: considerable
+Translate: formidable
+Translate: tremendous
+Translate: really something else
+Translate: exceptional
+Translate: impressive"
+210838,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,揉み手で頼む,もみででたのむ,,momi de de tanomu,"błagać
+błagać pokornie",,,,"GroupId: 2462250
+Translate: to supplicate
+Translate: to implore humbly"
+210839,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,山を掛ける,やまをかける,,yama o kakeru,"spekulować
+rozważać teoretycznie
+postawić hipotezę
+ryzykując (np. zadając właściwe pytania)",wyrażenie idiomatycznie,,,"GroupId: 2526430
+Translate: to speculate
+MiscInfo: id
+Translate: to make an educated guess
+MiscInfo: id
+Translate: to gamble (e.g. on getting the right questions)
+MiscInfo: id"
+210840,WORD_NOUN,,KATAKANA,,,-,マイクロメータ,,maikuromeeta,mikrometr,"przyrząd pomiarowy służący do mierzenia wymiarów geometrycznych przedmiotów z materiałów twardych z rozdzielczością rzędu 0,01 mm lub 0,001 mm, ang: micrometer",,,"GroupId: 1126840
+Translate: micrometer"
+210841,WORD_NOUN,,HIRAGANA,,,聞見,もんけん,,monken,"informacja
+doświadczenie
+wiedza
+obserwacja",przestarzałe słowo,,DUPLICATE 210820,"GroupId: 2844405
+Translate: information
+MiscInfo: obs
+Translate: experience
+MiscInfo: obs
+Translate: knowledge
+MiscInfo: obs
+Translate: observation
+MiscInfo: obs"
