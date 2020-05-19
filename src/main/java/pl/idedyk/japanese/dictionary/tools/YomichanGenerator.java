@@ -147,12 +147,9 @@ public class YomichanGenerator {
 	};
 	
 	public static void generate(List<PolishJapaneseEntry> polishJapaneseEntriesList, List<PolishJapaneseEntry> namesList, String outputDir) {
-		
-		int fixme = 1;
-		// kanji
-		
+				
 		// generowanie indeksu
-		generateIndex(outputDir);
+		generateAndSaveIndex(outputDir);
 		
 		// generowanie slow (term_bank)
 		List<List<TermBankEntry>> termBankListList = new ArrayList<>();
@@ -163,11 +160,11 @@ public class YomichanGenerator {
 		saveTermBank(outputDir, termBankListList);
 		
 		// generowanie tagow (tag_bank)
-		generateTagBank(outputDir);
+		generateAndSaveTagBank(outputDir);
 		
 	}
 
-	private static void generateIndex(String outputDir) {
+	private static void generateAndSaveIndex(String outputDir) {
 				
 		JSONObject indexJSON = new JSONObject();
 
@@ -416,7 +413,7 @@ public class YomichanGenerator {
 		}
 	}
 
-	private static void generateTagBank(String outputDir) {
+	private static void generateAndSaveTagBank(String outputDir) {
 				
 		JSONArray tagBankJSONArray = new JSONArray();
 		
