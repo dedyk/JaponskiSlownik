@@ -44774,12 +44774,12 @@ MiscInfo: uk"
 Translate: geocaching"
 211031,WORD_NOUN,,HIRAGANA,,,七度,しちど,,shichi do,"siedem razy
 wiele razy
-septyma (interwał, muzyka)",,,,"GroupId: 2843105
+septyma (interwał, muzyka)",,,DUPLICATE 211032,"GroupId: 2843105
 Translate: seven times
 Translate: many times
 Translate: seventh (interval)"
 211032,WORD_NOUN,,HIRAGANA,,,七度,ななたび,,nana tabi,"siedem razy
-wiele razy",,,,"GroupId: 2843105
+wiele razy",,,DUPLICATE 211031,"GroupId: 2843105
 Translate: seven times
 Translate: many times"
 211033,WORD_NOUN,,HIRAGANA,,,遮熱,しゃねつ,,shanetsu,"termoizolacja
@@ -44812,8 +44812,8 @@ MiscInfo: uk"
 211041,WORD_EXPRESSION,,HIRAGANA,,,さっぱり分からない,さっぱりわからない,,sappari wakaranai,nie mieć bladego pojęcia,,IGNORE_NO_JMEDICT,,
 211042,WORD_NOUN,,KATAKANA_HIRAGANA,,,コマ割り,コマわり,,koma wari,układ ramek,np. w komiksie,,,"GroupId: 1050830
 Translate: panel layout"
-211043,WORD_NOUN,,HIRAGANA,,,茹蛸,ゆでだこ,,yudedako,"gotowana ośmiornica (potrawa)
-osoba czerwona jak homar (lub ośmiornica) (np. w skutek kąpieli lub upicia się, wyrażenie idiomatyczne)",,,,"GroupId: 1571480
+211043,WORD_NOUN,,HIRAGANA,,,茹蛸,ゆでだこ,,yude dako,"gotowana ośmiornica (potrawa)
+osoba czerwona jak homar (lub ośmiornica) (np. w skutek kąpieli lub upicia się, wyrażenie idiomatyczne)",,,DUPLICATE 211090,"GroupId: 1571480
 Translate: boiled octopus
 Translate: person as red as a lobster
 MiscInfo: id"
@@ -44923,6 +44923,141 @@ Translate: apartheid"
 211075,WORD_NOUN,,HIRAGANA,,,穴あき銭,あなあきせん,,ana aki sen,moneta z dziurką,,,,"GroupId: 1856900
 Translate: perforated coin"
 211076,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,穴あき,あなあき,,ana aki,"przebity
+przekuty
+wywiercony
+perforowany
+dziurkowany",,,,"GroupId: 2818320
+Translate: pierced
+Translate: drilled
+Translate: perforated
+Translate: hollow"
+211077,WORD_NOUN,,KATAKANA,,,-,チャンス・メーカー,,chansu meekaa,"osoba, która stwarza szanse (zdobyć punkt)","np. w baseballu, ang: chance maker",,,"GroupId: 2844481
+Translate: person who creates chances (to score)
+Translate: heads-up player
+Translate: table-setter (baseball)"
+211078,WORD_NOUN,,KATAKANA,,,-,オニノヤガラ,,oni no yagara,gastrodia wysoka,"roślina, Gastrodia elata",,,"GroupId: 2452860
+Translate: Gastrodia elata (species of saprophytic orchid)
+MiscInfo: uk"
+211079,WORD_NOUN,,KATAKANA,,,-,シロシュモクザメ,,shiroshu mokuzame,"głowomłot pospolity
+ryba młot
+młot
+kusza młot
+rekin młot","gatunek morskiej ryby żarłaczokształtnej z rodziny młotowatych, Sphyrna zygaena",,,"GroupId: 2554880
+Translate: smooth hammerhead (Sphyrna zygaena, species of hammerhead shark)
+MiscInfo: uk"
+211080,WORD_ADJECTIVE_I,,HIRAGANA,,,猥りがましい,みだりがましい,,midari gamashii,moralnie zepsuty,,,,"GroupId: 1638460
+Translate: morally corrupt"
+211081,WORD_ADJECTIVE_I,,HIRAGANA,,,妄りがましい,みだりがましい,,midari gamashii,moralnie zepsuty,,,,"GroupId: 1638460
+Translate: morally corrupt"
+211082,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,自由が利かない,じゆうがきかない,,jiyuu ga kikanai,"ograniczony
+niewolny",,,,"GroupId: 2773310
+Translate: restricted
+Translate: confined
+Translate: unfree"
+211083,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,自由が効かない,じゆうがきかない,,jiyuu ga kikanai,"ograniczony
+niewolny",,,,"GroupId: 2773310
+Translate: restricted
+Translate: confined
+Translate: unfree"
+211084,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオノガイ,,oonogai,Mya arenaria oonogai,podgatunek małży z miękką skorupą,,,"GroupId: 2459060
+Translate: Mya arenaria oonogai (subspecies of soft-shell clam)
+MiscInfo: uk"
+211085,WORD_NOUN,,KATAKANA,,,-,タイワンコマツナギ,,taiwan komatsunagi,"indygowiec farbiarski
+indygowiec","gatunek niskiego półkrzewu z rodziny bobowatych, Indigofera tinctoria",,,"GroupId: 2693900
+Translate: true indigo (Indigofera tinctoria)
+MiscInfo: uk"
+211086,WORD_NOUN,,KATAKANA,,,-,エゾスカシユリ,,ezosukashi yuri,Lilium pensylvanicum,gatunek lilii,,,"GroupId: 2694080
+Translate: Siberian lily (Lilium pensylvanicum)
+MiscInfo: uk"
+211087,WORD_NOUN,,KATAKANA,,,-,アカマングース,,aka manguusu,Herpestes smithii,gatunek mangusty,,,"GroupId: 2698590
+Translate: ruddy mongoose (Herpestes smithii)
+MiscInfo: uk"
+211088,WORD_NOUN,,KATAKANA,,,-,シママングース,,shima manguusu,"mungo pręgowany
+mangusta pręgowana","gatunek niedużego drapieżnego ssaka z rodziny mangustowatych, Mungos mungo",,,"GroupId: 2698650
+Translate: banded mongoose (Mungos mungo)
+MiscInfo: uk"
+211089,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオミチバシリ,,oomichibashiri,"kukawka kalifornijska
+kukawka srokata","gatunek nielotnego ptaka z rodziny kukułkowatych, Geococcyx californianus",,,"GroupId: 2699570
+Translate: greater roadrunner (Geococcyx californianus)
+MiscInfo: uk"
+211090,WORD_NOUN,,HIRAGANA,,,茹蛸,ゆでたこ,,yude tako,"gotowana ośmiornica (potrawa)
+osoba czerwona jak homar (lub ośmiornica) (np. w skutek kąpieli lub upicia się, wyrażenie idiomatyczne)",,,DUPLICATE 211043,"GroupId: 1571480
+Translate: boiled octopus
+Translate: person as red as a lobster
+MiscInfo: id"
+211091,WORD_NOUN,,HIRAGANA_KATAKANA,,,茹でタコ,ゆでタコ,,yude tako,"gotowana ośmiornica (potrawa)
+osoba czerwona jak homar (lub ośmiornica) (np. w skutek kąpieli lub upicia się, wyrażenie idiomatyczne)",,,,"GroupId: 1571480
+Translate: boiled octopus
+Translate: person as red as a lobster
+MiscInfo: id"
+211092,WORD_NOUN,,HIRAGANA_KATAKANA,,,茹でダコ,ゆでダコ,,yude dako,"gotowana ośmiornica (potrawa)
+osoba czerwona jak homar (lub ośmiornica) (np. w skutek kąpieli lub upicia się, wyrażenie idiomatyczne)",,,,"GroupId: 1571480
+Translate: boiled octopus
+Translate: person as red as a lobster
+MiscInfo: id"
+211093,WORD_NOUN,,HIRAGANA,,,茹で蛸,ゆでだこ,,yude dako,"gotowana ośmiornica (potrawa)
+osoba czerwona jak homar (lub ośmiornica) (np. w skutek kąpieli lub upicia się, wyrażenie idiomatyczne)",,,DUPLICATE 211094,"GroupId: 1571480
+Translate: boiled octopus
+Translate: person as red as a lobster
+MiscInfo: id"
+211094,WORD_NOUN,,HIRAGANA,,,茹で蛸,ゆでたこ,,yude tako,"gotowana ośmiornica (potrawa)
+osoba czerwona jak homar (lub ośmiornica) (np. w skutek kąpieli lub upicia się, wyrażenie idiomatyczne)",,,DUPLICATE 211093,"GroupId: 1571480
+Translate: boiled octopus
+Translate: person as red as a lobster
+MiscInfo: id"
+211095,WORD_NOUN,,HIRAGANA,,,茹だこ,ゆでだこ,,yude dako,"gotowana ośmiornica (potrawa)
+osoba czerwona jak homar (lub ośmiornica) (np. w skutek kąpieli lub upicia się, wyrażenie idiomatyczne)",,,,"GroupId: 1571480
+Translate: boiled octopus
+Translate: person as red as a lobster
+MiscInfo: id"
+211096,WORD_NOUN,,HIRAGANA_KATAKANA,,,茹ダコ,ゆでダコ,,yude dako,"gotowana ośmiornica (potrawa)
+osoba czerwona jak homar (lub ośmiornica) (np. w skutek kąpieli lub upicia się, wyrażenie idiomatyczne)",,,,"GroupId: 1571480
+Translate: boiled octopus
+Translate: person as red as a lobster
+MiscInfo: id"
+211097,WORD_NOUN,,HIRAGANA,,,頸髄,けいずい,,keizui,"rdzeń kręgowy szyjny
+rdzeń szyjny",,,,"GroupId: 2259890
+Translate: cervical spinal cord
+Translate: cervical cord"
+211098,WORD_NOUN,,HIRAGANA,,,鴇草,ときそう,,tokisou,Pogonia japonica,gatunek orchidei,,,"GroupId: 2828528
+Translate: pogonia (Pogonia japonica) (species of orchid)
+MiscInfo: uk"
+211099,WORD_NOUN,,KATAKANA,,,-,トキソウ,,tokisou,Pogonia japonica,gatunek orchidei,,,"GroupId: 2828528
+Translate: pogonia (Pogonia japonica) (species of orchid)
+MiscInfo: uk"
+211100,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,げらげら笑う,げらげらわらう,,gera gera warau,"śmiać się głośno
+rechotać
+ryczeć ze śmiechu",,,,"GroupId: 1004270
+Translate: to guffaw
+Translate: to roar with laughter
+Translate: to laugh heartily"
+211101,WORD_NOUN,,HIRAGANA,,,言違い,いいちがい,,ii chigai,"przejęzyczenie
+lapsus
+nieścisłość",,,,"GroupId: 2035270
+Translate: slip of the tongue
+Translate: misstatement"
+211102,WORD_NOUN,,HIRAGANA,,,真字文,まなぶみ,,manabumi,pisanie w całości w kanji,archaizm,,,"GroupId: 2844425
+Translate: writing entirely in kanji
+MiscInfo: arch"
+211103,WORD_NOUN,,HIRAGANA,,,１等陸曹,いっとうりくそう,,ittou rikusou,starszy sierżant,w Japońskich Lądowych Siłach Samoobrony,,,"GroupId: 2844547
+Translate: master sergeant (JGSDF)"
+211104,WORD_NOUN,,HIRAGANA,,,穴開き銭,あなあきせん,,ana aki sen,moneta z dziurką,,,,"GroupId: 1856900
+Translate: perforated coin"
+211105,WORD_NOUN,,HIRAGANA,,,穴明き銭,あなあきせん,,ana aki sen,moneta z dziurką,,,,"GroupId: 1856900
+Translate: perforated coin"
+211106,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,穴開き,あなあき,,ana aki,"przebity
+przekuty
+wywiercony
+perforowany
+dziurkowany",,,,"GroupId: 2818320
+Translate: pierced
+Translate: drilled
+Translate: perforated
+Translate: hollow"
+211107,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,穴明き,あなあき,,ana aki,"przebity
 przekuty
 wywiercony
 perforowany
