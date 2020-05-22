@@ -45102,7 +45102,7 @@ Translate: genus containing Selous' mongoose"
 211118,WORD_NOUN,,HIRAGANA,,,照合写真,しょうごうしゃしん,,shougou shashin,???,,,,"GroupId: 2532010
 Translate: portal film (e.g. in radiotherapy)"
 211119,"WORD_EXPRESSION
-WORD_NOUN",,HIRAGANA,,,がんばったで賞,がんばったでしょう,,ganbattade shou,"nagroda za próbę
+WORD_NOUN",,HIRAGANA,,,がんばったで賞,がんばったでしょう,,ganbatta de shou,"nagroda za próbę
 nagroda pocieszenia",,,,"GroupId: 2828814
 Translate: try-hard award
 Translate: consolation prize"
@@ -45141,7 +45141,7 @@ Translate: joypad"
 Translate: Bachelor of Commercial Science"
 211129,WORD_NOUN,,HIRAGANA,,,諸掛かり,しょがかり,,shoga kari,wydatki,,,,"GroupId: 1701500
 Translate: expenses"
-211130,WORD_NOUN,,HIRAGANA,,,触穢,しょくえ,,shokue,"nieczystość od kontaktu ze śmiercią, ciążą, miesiączką itp.",archaizm,,,"GroupId: 2843523
+211130,WORD_NOUN,,HIRAGANA,,,触穢,しょくえ,,shokue,"nieczystość od kontaktu ze śmiercią, ciążą, miesiączką itp.",archaizm,,DUPLICATE 211175,"GroupId: 2843523
 Translate: uncleanliness from contact with death, pregnancy, menstruation, etc.
 MiscInfo: arch"
 211131,WORD_NOUN,,HIRAGANA,,,触媒作用,しょくばいさよう,,shokubai sayou,"działanie katalityczne
@@ -45155,7 +45155,7 @@ Translate: modern kana orthography"
 211133,WORD_NOUN,,HIRAGANA,,,小海雀,こうみすずめ,,koumisuzume,nurniczek malutki,"gatunek małego ptaka z rodziny alek, Aethia pusilla",,,"GroupId: 2699740
 Translate: least auklet (Aethia pusilla)
 MiscInfo: uk"
-211134,WORD_NOUN,,HIRAGANA_KATAKANA,,,白カツオドリ,しろカツオドリ,,shiro katsuodori,"głuptak zwyczajny
+211134,WORD_NOUN,,HIRAGANA_KATAKANA,,,白カツオドリ,しろカツオドリ,,shiro katsuo dori,"głuptak zwyczajny
 głuptak
 głuptak biały","gatunek ptaka z rodziny głuptaków, Morus bassanus",,,"GroupId: 2700450
 Translate: northern gannet (Morus bassanus)
@@ -45269,3 +45269,78 @@ Translate: muskrat (Ondatra zibethicus)"
 Translate: 17C male hairstyle (shaved forehead, chignon, sideburns thinned to the size of a thread)"
 211167,WORD_NOUN,,HIRAGANA,,,表店,おもてだな,,omotedana,dom przy głównej ulicy,,,,"GroupId: 2839926
 Translate: house on a main street"
+211168,WORD_NOUN,,HIRAGANA_KATAKANA,,,黄色ブドウ球菌,おうしょくブドウきゅうきん,,oushoku budou kyuukin,gronkowiec złocisty,"Gram-dodatnia bakteria występująca w jamie nosowo-gardłowej oraz na skórze ludzi i zwierząt, Staphylococcus aureus",,,"GroupId: 2841020
+Translate: golden staph (Staphylococcus aureus)"
+211169,WORD_NOUN,,KATAKANA,,,-,エランヴィタル,,eran vitaru,élan vital,"twórcza siła, będąca motorem rozwoju świata istot żywych, nadająca mu dynamizm",,,"GroupId: 2198120
+Translate: élan vital (hypothetical driving force behind creative evolution)"
+211170,WORD_NOUN,,KATAKANA,,,-,エランビタル,,eran bitaru,élan vital,"twórcza siła, będąca motorem rozwoju świata istot żywych, nadająca mu dynamizm",,,"GroupId: 2198120
+Translate: élan vital (hypothetical driving force behind creative evolution)"
+211171,WORD_NOUN,,KATAKANA,,,-,アマミノクロウサギ,,amami no kuro usagi,Pentalagus furnessi,gatunek królika,,,"GroupId: 2258270
+Translate: Amami rabbit (Pentalagus furnessi)
+MiscInfo: uk
+Translate: Ryukyu rabbit
+MiscInfo: uk"
+211172,WORD_NOUN,,KATAKANA_HIRAGANA,,,ゴミ音,ゴミおん,,gomi on,hałas powodowany przez zanieczyszczenia,,,,"GroupId: 2444690
+Translate: contamination noise
+Translate: noise from contamination"
+211173,WORD_NOUN,,HIRAGANA,,,工々四,くんくんしい,,kunkunshii,system notacji dla sanshin,,,,"GroupId: 1607920
+Translate: notation system for the sanshin"
+211174,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,頑張ったで賞,がんばったでしょう,,ganbatta de shou,"nagroda za próbę
+nagroda pocieszenia",,,,"GroupId: 2828814
+Translate: try-hard award
+Translate: consolation prize"
+211175,WORD_NOUN,,HIRAGANA,,,触穢,そくえ,,sokue,"nieczystość od kontaktu ze śmiercią, ciążą, miesiączką itp.",archaizm,,DUPLICATE 211130,"GroupId: 2843523
+Translate: uncleanliness from contact with death, pregnancy, menstruation, etc.
+MiscInfo: arch"
+211176,WORD_NOUN,,HIRAGANA,,,新かな,しんかな,,shinkana,"nowa ortografia kana (reforma z 1946 roku, zniesiona w 1986 roku)
+współczesna ortografia kana",,,,"GroupId: 2668590
+Translate: new kana orthography (1946 reform, amended 1986)
+Translate: modern kana orthography"
+211177,WORD_NOUN,,KATAKANA,,,-,コウミスズメ,,koumisuzume,nurniczek malutki,"gatunek małego ptaka z rodziny alek, Aethia pusilla",,,"GroupId: 2699740
+Translate: least auklet (Aethia pusilla)
+MiscInfo: uk"
+211178,WORD_NOUN,,HIRAGANA,,,白鰹鳥,しろかつおどり,,shiro katsuo dori,"głuptak zwyczajny
+głuptak
+głuptak biały","gatunek ptaka z rodziny głuptaków, Morus bassanus",,,"GroupId: 2700450
+Translate: northern gannet (Morus bassanus)
+MiscInfo: uk"
+211179,WORD_NOUN,,KATAKANA,,,-,シロカツオドリ,,shiro katsuo dori,"głuptak zwyczajny
+głuptak
+głuptak biały","gatunek ptaka z rodziny głuptaków, Morus bassanus",,,"GroupId: 2700450
+Translate: northern gannet (Morus bassanus)
+MiscInfo: uk"
+211180,WORD_NOUN,,KATAKANA,,,-,シカイノシシ,,shikainoshishi,babirussa,"gatunek ssaka z rodziny świniowatych, Babyrousa babyrussa",,,"GroupId: 2701060
+Translate: babirusa (Babyrousa babyrussa)
+MiscInfo: uk"
+211181,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ケナガアルマジロ,,kenaga arumajiro,Chaetophractus vellerosus,gatunek zwierzęcia (pancernika),,,"GroupId: 2702390
+Translate: screaming hairy armadillo (Chaetophractus vellerosus)
+MiscInfo: uk
+Translate: small screaming armadillo
+MiscInfo: uk
+Translate: crying armadillo
+MiscInfo: uk
+Translate: small hairy armadillo
+MiscInfo: uk"
+211182,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオアルマジロ,,oo arumajiro,pancernik olbrzymi,"gatunek zwierzęcia, Priodontes maximus",,,"GroupId: 2702500
+Translate: giant armadillo (Priodontes maximus)
+MiscInfo: uk"
+211183,WORD_VERB_RU,,HIRAGANA,,,思い合せる,おもいあわせる,,omoi awaseru,"rozważać (wszystkie okoliczności)
+mieć na uwadze (wiele rzeczy)",,,,"GroupId: 1851360
+Translate: to consider (all the circumstances)
+Translate: to bear (a number of things) in mind"
+211184,WORD_NOUN,,HIRAGANA,,,楲殿,ひどの,,hidono,toaleta,archaizm,,,"GroupId: 2726570
+Translate: toilet
+MiscInfo: arch"
+211185,WORD_ADJECTIVE_I,,HIRAGANA,,,爺臭い,じじくさい,,jiji kusai,staro-męski,,,,"GroupId: 2838254
+Translate: old-mannish
+MiscInfo: uk"
+211186,WORD_ADJECTIVE_I,,HIRAGANA,,,爺くさい,じじくさい,,jiji kusai,staro-męski,,,,"GroupId: 2838254
+Translate: old-mannish
+MiscInfo: uk"
+211187,WORD_ADJECTIVE_I,,HIRAGANA,,,じじ臭い,じじくさい,,jiji kusai,staro-męski,,,,"GroupId: 2838254
+Translate: old-mannish
+MiscInfo: uk"
+211188,WORD_NOUN,,KATAKANA,,,-,キンチョーマット,,kinchoomatto,mata odstraszająca owady,słowo pochodzi od nazwy handlowej,,,"GroupId: 2732310
+Translate: insect-repellent mat
+AdditionalInfo: from brand-name"
