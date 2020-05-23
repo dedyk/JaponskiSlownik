@@ -22072,7 +22072,8 @@ MiscInfo: col
 AdditionalInfo: verb-negating suffix; may indicate question or invitation with rising intonation"
 205333,"WORD_ADJECTIVE_I
 WORD_SUFFIX",,HIRAGANA,,,-,ぽい,,poi,"[sufiks do tworzenia przymiotników]
--jak",kolokwializm,,DUPLICATE 49217,"GroupId: 2083720
+-jak",kolokwializm,,"DUPLICATE 49217
+DUPLICATE 211258","GroupId: 2083720
 Translate: -ish
 Translate: -like"
 205334,WORD_NOUN,,KATAKANA,,,-,ダイコン,,daikon,komputer nurkowy,"kolokwializm, skrót, ang: dive computer",,DUPLICATE 145773,"GroupId: 2210070
@@ -22437,7 +22438,9 @@ MiscInfo: abbr"
 205400,WORD_NOUN,,KATAKANA,,,-,チン,,chin,"podbródek (ang: chin)
 ching (z języka tajskiego)
 jing (koreański gong)",,,"DUPLICATE 17930
-DUPLICATE 83157","GroupId: 1078360
+DUPLICATE 83157
+DUPLICATE 211259
+DUPLICATE 211260","GroupId: 1078360
 Translate: chin
 Translate: ching
 Translate: Thai finger cymbals
@@ -22572,12 +22575,14 @@ Translate: complete"
 Translate: bora"
 205427,WORD_NOUN,,KATAKANA,,,-,ポイ,,poi,"poi
 narzędzie stosowane w sztukach scenicznych Maorysów",,,"DUPLICATE 127407
-DUPLICATE 205428","GroupId: 2841373
+DUPLICATE 205428
+DUPLICATE 211264","GroupId: 2841373
 Translate: poi
 Translate: implement used in Maori performing arts"
 205428,WORD_NOUN,,KATAKANA,,,-,ポイ,,poi,"poi
 podstawowe produkty spożywcze z Hawajów",,,"DUPLICATE 127407
-DUPLICATE 205427","GroupId: 2841374
+DUPLICATE 205427
+DUPLICATE 211264","GroupId: 2841374
 Translate: poi
 Translate: traditional staple food of Hawaii"
 205429,WORD_NOUN,,KATAKANA,,,-,ポン,,pon,metamfetamina,"skrót, slang",,"DUPLICATE 51936
@@ -45735,12 +45740,64 @@ Translate: flat knot
 Translate: square knot"
 211257,WORD_INTERJECTION,,HIRAGANA_KATAKANA,,,-,じゃじゃーん,,jajaan,"tadam!
 voila
-voilà",,,,"GroupId: 2844827
+voilà",,,DUPLICATE 108774,"GroupId: 2844827
 Translate: ta-dah!
 Translate: ta-da!
 Translate: tada!
 Translate: voilà"
 211258,WORD_ADVERB_TO,,HIRAGANA,,,-,ぽい,,poi,"niedbale
+nonszalancko
+beztrosko",,,"DUPLICATE 49217
+DUPLICATE 205333","GroupId: 2844633
+Translate: carelessly (throwing, tossing, etc.)
+MiscInfo: on-mim
+Translate: nonchalantly
+MiscInfo: on-mim
+Translate: casually
+MiscInfo: on-mim"
+211259,WORD_NOUN,,KATAKANA,,,-,チン,,chin,jing,koreański gong,,"DUPLICATE 17930
+DUPLICATE 83157
+DUPLICATE 205400
+DUPLICATE 211260","GroupId: 2844792
+Translate: jing (Korean gong)"
+211260,WORD_NOUN,,KATAKANA,,,-,チン,,chin,ching,tajskie falcowe talerze (instrument muzyczny),,"DUPLICATE 17930
+DUPLICATE 83157
+DUPLICATE 205400
+DUPLICATE 211259","GroupId: 2844793
+Translate: ching (Thai finger cymbals)"
+211261,WORD_INTERJECTION,,HIRAGANA,,,-,じゃじゃん,,jajan,"tadam!
+voila
+voilà",,,,"GroupId: 2844827
+Translate: ta-dah!
+Translate: ta-da!
+Translate: tada!
+Translate: voilà"
+211262,WORD_INTERJECTION,,KATAKANA,,,-,ジャジャン,,jajan,"tadam!
+voila
+voilà",,,,"GroupId: 2844827
+Translate: ta-dah!
+Translate: ta-da!
+Translate: tada!
+Translate: voilà"
+211263,WORD_INTERJECTION,,KATAKANA,,,-,ジャジャーン,,jajaan,"tadam!
+voila
+voilà",,,DUPLICATE 108775,"GroupId: 2844827
+Translate: ta-dah!
+Translate: ta-da!
+Translate: tada!
+Translate: voilà"
+211264,WORD_ADVERB_TO,,KATAKANA,,,-,ポイ,,poi,"niedbale
+nonszalancko
+beztrosko",,,"DUPLICATE 127407
+DUPLICATE 205427
+DUPLICATE 205428","GroupId: 2844633
+Translate: carelessly (throwing, tossing, etc.)
+MiscInfo: on-mim
+Translate: nonchalantly
+MiscInfo: on-mim
+Translate: casually
+MiscInfo: on-mim"
+211265,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,ぽいっ,,poi,"niedbale
 nonszalancko
 beztrosko",,,,"GroupId: 2844633
 Translate: carelessly (throwing, tossing, etc.)
@@ -45749,7 +45806,21 @@ Translate: nonchalantly
 MiscInfo: on-mim
 Translate: casually
 MiscInfo: on-mim"
-211259,WORD_NOUN,,KATAKANA,,,-,チン,,chin,jing,koreański gong,,,"GroupId: 2844792
-Translate: jing (Korean gong)"
-211260,WORD_NOUN,,KATAKANA,,,-,チン,,chin,ching,tajskie falcowe talerze (instrument muzyczny),,,"GroupId: 2844793
-Translate: ching (Thai finger cymbals)"
+211266,WORD_ADVERB_TO,,KATAKANA_HIRAGANA,,,-,ポイっ,,poi,"niedbale
+nonszalancko
+beztrosko",,,,"GroupId: 2844633
+Translate: carelessly (throwing, tossing, etc.)
+MiscInfo: on-mim
+Translate: nonchalantly
+MiscInfo: on-mim
+Translate: casually
+MiscInfo: on-mim"
+211267,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,ポイッ,,poi,"niedbale
+nonszalancko
+beztrosko",,,,"GroupId: 2844633
+Translate: carelessly (throwing, tossing, etc.)
+MiscInfo: on-mim
+Translate: nonchalantly
+MiscInfo: on-mim
+Translate: casually
+MiscInfo: on-mim"
