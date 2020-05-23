@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary.misc;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
@@ -19,6 +20,8 @@ public class DetectMultiGroup {
 		
 		JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
 		
+		List<Integer> idList = new ArrayList<>();
+		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
 			
 			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
@@ -30,8 +33,19 @@ public class DetectMultiGroup {
 			boolean multiGroup = JMENewDictionary.isMultiGroup(groupEntryList);
 			
 			if (multiGroup == true) {
+				
+				idList.add(polishJapaneseEntry.getId());
+				
 				System.out.println(polishJapaneseEntry.getId());
 			}			
-		}		
+		}
+		
+		System.out.print("./word-generator.sh find-words-with-jmedict-change -s 888888 --ignore-dictionary-filled-raw-data -wid ");
+		
+		for (Integer id : idList) {
+			System.out.print(id + ",");			
+		}
+		
+		System.out.println();
 	}
 }
