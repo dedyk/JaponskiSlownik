@@ -45828,8 +45828,8 @@ MiscInfo: on-mim"
 Translate: Barbados"
 211269,WORD_NOUN,,HIRAGANA,,,犯行現場,はんこうげんば,,hankou genba,miejsce zbrodni (przestępstwa),,,,"GroupId: 1945570
 Translate: scene of the crime (offense, offence)"
-211270,WORD_NOUN,,HIRAGANA,,,乾燥卵,かんそうらん,,kansouran,"sproszkowane jajko
-jaja w proszku",,,,"GroupId: 1210060
+211270,WORD_NOUN,,HIRAGANA,,,乾燥卵,かんそうらん,,kansou ran,"sproszkowane jajko
+jaja w proszku",,,DUPLICATE 211328,"GroupId: 1210060
 Translate: powdered eggs
 Translate: dehydrated eggs
 Translate: dried eggs"
@@ -45895,7 +45895,7 @@ cykl Krebsa",cykliczny szereg reakcji biochemicznych,,,"GroupId: 1966220
 Translate: tricarboxylic acid cycle
 Translate: TCA cycle"
 211286,WORD_NOUN,,HIRAGANA,,,天平感宝,てんぴょうかんぽう,,tenpyou kanpou,"epoka Tenpyō-kanpō (749.4.14-749.7.2)
-epoka Tenbyō-kanpō",,,,"GroupId: 2089970
+epoka Tenbyō-kanpō",,,DUPLICATE 211333,"GroupId: 2089970
 Translate: Tenpyō-kanpō era (749.4.14-749.7.2)
 Translate: Tenbyō-kanpō era"
 211287,WORD_NOUN,,HIRAGANA,,,穿孔翻訳機,せんこうほんやくき,,senkou hon'yakuki,program interpretujący,informatyka,,,"GroupId: 2369890
@@ -45930,7 +45930,7 @@ MiscInfo: uk"
 211295,WORD_NOUN,,HIRAGANA,,,神道尖鼠,しんとうとがりねずみ,,shintou togari nezumi,sorex shinto,zwierzę,,,"GroupId: 2704190
 Translate: shinto shrew (Sorex shinto)
 MiscInfo: uk"
-211296,WORD_NOUN,,HIRAGANA,,,刷毛箒,はけほうき,,hakehouki,miotła (z wikliny),,,,"GroupId: 2704770
+211296,WORD_NOUN,,HIRAGANA,,,刷毛箒,はけほうき,,hakehouki,miotła (z wikliny),,,DUPLICATE 211337,"GroupId: 2704770
 Translate: whisk broom
 MiscInfo: uk"
 211297,WORD_NOUN,,KATAKANA_HIRAGANA,,,ギニア狒狒,ギニアひひ,,ginia hihi,"pawian gwinejski
@@ -46006,8 +46006,8 @@ Translate: tax revenues"
 211318,WORD_NOUN,,KATAKANA_HIRAGANA,,,カノポス壺,カノポスつぼ,,kanoposu tsubo,kanopy,"w starożytnym Egipcie rytualne naczynia, w których umieszczano wnętrzności, wyjęte z ciała przed mumifikacją i zakonserwowane",,,"GroupId: 2206530
 Translate: Canopic jar
 Translate: Canopic vase (used to store the internal organs of an Egyptian mummy)"
-211319,"WORD_EXPRESSION
-WORD_ADJECTIVE_I",,KATAKANA_HIRAGANA,,,ケツが青い,ケツがあおい,,ketsu ga aoi,"mieć mleko pod nosem
+211319,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ケツが青い,ケツがあおい,,ketsu ga aoi,"mieć mleko pod nosem
 niedojrzały
 niedoświadczony","wyrażenie idiomatyczne, wyrażenie pochodzi od niebieckiego odcienia znajdującego się na dziecięcych pośladkach",,,"GroupId: 2753360
 Translate: wet behind the ears
@@ -46024,7 +46024,7 @@ Translate: bonesetting"
 211321,WORD_NOUN,,HIRAGANA,,,栽培種,さいばいしゅ,,saibaishu,gatunki rolnicze,,,,"GroupId: 1294920
 Translate: agricultural species"
 211322,"WORD_ADJECTIVE_NO
-WORD_ADVERB_TO",,HIRAGANA,,,上へ上へ,うえへうえへ,,ue e ue e,"co raz wyżej
+WORD_ADVERB_TO",,HIRAGANA_EXCEPTION,,,上へ上へ,うえへうえへ,,ue e ue e,"co raz wyżej
 wyższy i wyższy",,,,"GroupId: 2150510
 Translate: higher and higher"
 211323,"WORD_NOUN
@@ -46034,7 +46034,7 @@ rzeczywistość
 regularny
 stały
 trwały
-samadhi (stan intensywnej koncentracji osiągnięty poprzez medytację, buddyzm)",,,,"GroupId: 2844797
+samadhi (stan intensywnej koncentracji osiągnięty poprzez medytację, buddyzm)",,,DUPLICATE 91856,"GroupId: 2844797
 Translate: certainty
 Translate: reality
 Translate: actuality
@@ -46063,7 +46063,8 @@ MiscInfo: obs"
 WORD_NOUN",,HIRAGANA,,,粗,そ,,so,"szorstki
 chropowaty
 surowy
-nieoczyszczony",,,,"GroupId: 2844798
+nieoczyszczony",,,"DUPLICATE 34142
+DUPLICATE 58503","GroupId: 2844798
 Translate: coarse
 Translate: rough
 Translate: crude
@@ -46073,3 +46074,158 @@ Translate: unrefined"
 pismo pieczęci",,,,"GroupId: 2844766
 Translate: seal-engraving style (of writing Chinese characters)
 Translate: seal script"
+211328,WORD_NOUN,,HIRAGANA,,,乾燥卵,かんそうたまご,,kansou tamago,"sproszkowane jajko
+jaja w proszku",,,DUPLICATE 211270,"GroupId: 1210060
+Translate: powdered eggs
+Translate: dehydrated eggs
+Translate: dried eggs"
+211329,WORD_NOUN,,HIRAGANA,,,充塡文字,じゅうてんもじ,,juuten moji,znak wypełnienia,informatyka,,,"GroupId: 2363510
+Translate: fill character"
+211330,WORD_NOUN,,HIRAGANA,,,栓木,せんのき,,sen no ki,Kalopanax septemlobus,roślina,,,"GroupId: 2805840
+Translate: castor aralia (Kalopanax septemlobus)
+MiscInfo: uk
+Translate: prickly castor oil tree
+MiscInfo: uk"
+211331,WORD_NOUN,,KATAKANA,,,-,センノキ,,sen no ki,Kalopanax septemlobus,roślina,,,"GroupId: 2805840
+Translate: castor aralia (Kalopanax septemlobus)
+MiscInfo: uk
+Translate: prickly castor oil tree
+MiscInfo: uk"
+211332,WORD_NOUN,,HIRAGANA,,,茄子属,なすぞく,,nasu zoku,psianka,"rodzaj z rodziny psiankowatych, Solanum",,,"GroupId: 2565030
+Translate: Solanum (nightshade genus of plants)"
+211333,WORD_NOUN,,HIRAGANA,,,天平感宝,てんびょうかんぽう,,tenbyou kanpou,"epoka Tenpyō-kanpō (749.4.14-749.7.2)
+epoka Tenbyō-kanpō",,,DUPLICATE 211286,"GroupId: 2089970
+Translate: Tenpyō-kanpō era (749.4.14-749.7.2)
+Translate: Tenbyō-kanpō era"
+211334,WORD_NOUN,,KATAKANA,,,-,ニシゴリラ,,nishi gorira,goryl zachodni,"gatunek ssaka z rodziny człowiekowatych, Gorilla gorilla",,,"GroupId: 2703750
+Translate: western gorilla (Gorilla gorilla)
+MiscInfo: uk"
+211335,WORD_NOUN,,KATAKANA,,,-,ヒガシゴリラ,,higashi gorira,goryl wschodni,"gatunek ssaka z rodziny człowiekowatych, Gorilla beringei",,,"GroupId: 2703760
+Translate: eastern gorilla (Gorilla beringei)
+MiscInfo: uk"
+211336,WORD_NOUN,,KATAKANA,,,-,シントウトガリネズミ,,shintou togari nezumi,sorex shinto,zwierzę,,,"GroupId: 2704190
+Translate: shinto shrew (Sorex shinto)
+MiscInfo: uk"
+211337,WORD_NOUN,,HIRAGANA,,,刷毛箒,はけぼうき,,hakebouki,miotła (z wikliny),,,DUPLICATE 211296,"GroupId: 2704770
+Translate: whisk broom
+MiscInfo: uk"
+211338,WORD_NOUN,,KATAKANA,,,-,ギニアヒヒ,,ginia hihi,"pawian gwinejski
+pawian senegalski","gatunek ssaka z rodziny koczkodanowatych, najmniejszy z pawianów, Papio papio",,,"GroupId: 2707620
+Translate: Guinea baboon (Papio papio)
+MiscInfo: uk"
+211339,WORD_NOUN,,KATAKANA,,,-,コノハムシ,,ko no hamushi,liściec,"tropikalny roślinożerny owad, szczególnie Phyllium pulchrifolium",,,"GroupId: 2149920
+Translate: leaf insect (esp. species Phyllium pulchrifolium)
+MiscInfo: uk"
+211340,WORD_NOUN,,KATAKANA,,,-,イセリアカイガラムシ,,iseria kaigara mushi,Icerya purchasi,gatunek owada,,,"GroupId: 2218640
+Translate: cottony cushion scale (species of scale insect, Icerya purchasi)
+MiscInfo: uk"
+211341,WORD_NOUN,,HIRAGANA,,,刺亀虫,さしがめ,,sashigame,owad z rodziny zajadkowatych (Reduviidae),,,,"GroupId: 2222600
+Translate: assassin bug (any insect of family Reduviidae)
+MiscInfo: uk"
+211342,WORD_NOUN,,KATAKANA,,,-,サシガメ,,sashigame,owad z rodziny zajadkowatych (Reduviidae),,,,"GroupId: 2222600
+Translate: assassin bug (any insect of family Reduviidae)
+MiscInfo: uk"
+211343,WORD_NOUN,,HIRAGANA,,,茶柱虫,ちゃたてむし,,chatate mushi,owad z rodziny Psocoptera,,,,"GroupId: 2230980
+Translate: psocid (any insect of order Psocoptera, which includes booklice)
+MiscInfo: uk"
+211344,WORD_NOUN,,KATAKANA,,,-,チャタテムシ,,chatate mushi,owad z rodziny Psocoptera,,,,"GroupId: 2230980
+Translate: psocid (any insect of order Psocoptera, which includes booklice)
+MiscInfo: uk"
+211345,WORD_NOUN,,HIRAGANA,,,癭蜂,たまばち,,tama bachi,owad z rodziny Cynipidae,,,,"GroupId: 2231410
+Translate: gall wasp (any insect of family Cynipidae)
+MiscInfo: uk"
+211346,WORD_NOUN,,KATAKANA,,,-,タマバチ,,tama bachi,owad z rodziny Cynipidae,,,,"GroupId: 2231410
+Translate: gall wasp (any insect of family Cynipidae)
+MiscInfo: uk"
+211347,WORD_NOUN,,HIRAGANA,,,たま蝿,たまばえ,,tama bae,galasówka,owad z rodziny Cecidomyiidae,,,"GroupId: 2240730
+Translate: gall midge (any insect of family Cecidomyiidae)
+MiscInfo: uk"
+211348,WORD_NOUN,,HIRAGANA,,,癭蠅,たまばえ,,tama bae,galasówka,owad z rodziny Cecidomyiidae,,,"GroupId: 2240730
+Translate: gall midge (any insect of family Cecidomyiidae)
+MiscInfo: uk"
+211349,WORD_NOUN,,HIRAGANA,,,癭蝿,たまばえ,,tama bae,galasówka,owad z rodziny Cecidomyiidae,,,"GroupId: 2240730
+Translate: gall midge (any insect of family Cecidomyiidae)
+MiscInfo: uk"
+211350,WORD_NOUN,,KATAKANA,,,-,タマバエ,,tama bae,galasówka,owad z rodziny Cecidomyiidae,,,"GroupId: 2240730
+Translate: gall midge (any insect of family Cecidomyiidae)
+MiscInfo: uk"
+211351,WORD_NOUN,,KATAKANA,,,-,ラクダムシ,,rakuda mushi,owad z rodziny Inocelliidae,,,,"GroupId: 2242270
+Translate: inocelliid snakefly (any insect of family Inocelliidae)
+MiscInfo: uk"
+211352,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,カマアシムシ,,kamaashi mushi,bezskrzydły owad z rzędu Protura,,,,"GroupId: 2441490
+Translate: proturan (any wingless insect of order Protura)
+MiscInfo: uk"
+211353,WORD_NOUN,,KATAKANA,,,-,ホソクビゴミムシ,,hosokubi gomi mushi,owad z rodziny Brachininae,,,,"GroupId: 2477040
+Translate: bombardier beetle (any insect of subfamily Brachininae)
+MiscInfo: uk"
+211354,WORD_NOUN,,KATAKANA,,,-,ツノゼミ,,tsunozemi,"zgarbowate
+zgarbkowate","rodzina owadów z podrzędu piewików, rzędu pluskwiaków równoskrzydłych, Membracidae, szczególnie Orthobelus flavipes",,,"GroupId: 2195230
+Translate: treehopper (any insect of family Membracidae, esp. the species Orthobelus flavipes)
+MiscInfo: uk"
+211355,WORD_NOUN,,KATAKANA,,,-,アザミウマ,,azamiuma,owad z rzędu Thysanoptera,,,,"GroupId: 2455720
+Translate: thrips (any insect of order Thysanoptera)
+MiscInfo: uk
+Translate: thrip
+MiscInfo: uk"
+211356,WORD_NOUN,,KATAKANA,,,-,スカシバガ,,sukashibaga,przeziernikowate,"rodzina motyli obejmująca około 1000 gatunków, Sesiidae",,,"GroupId: 2834987
+Translate: clearwing (any insect of family Sesiidae)
+MiscInfo: uk
+Translate: clearwing moth
+MiscInfo: uk"
+211357,WORD_NOUN,,KATAKANA,,,-,ツノトンボ,,tsunotonbo,żupałkowate,"rodzina dużych lub średniej wielkości owadów z rzędu sieciarek blisko spokrewniona z mrówkolwowatymi, Ascalaphidae",,,"GroupId: 2835018
+Translate: owlfly (any insect of family Ascalaphidae)
+MiscInfo: uk
+Translate: owl fly
+MiscInfo: uk"
+211358,WORD_NOUN,,KATAKANA_HIRAGANA,,,カノプス壺,カノプスつぼ,,kanopusu tsubo,kanopy,"w starożytnym Egipcie rytualne naczynia, w których umieszczano wnętrzności, wyjęte z ciała przed mumifikacją i zakonserwowane",,,"GroupId: 2206530
+Translate: Canopic jar
+Translate: Canopic vase (used to store the internal organs of an Egyptian mummy)"
+211359,WORD_NOUN,,KATAKANA_HIRAGANA,,,カノープス壺,カノープスつぼ,,kanoopusu tsubo,kanopy,"w starożytnym Egipcie rytualne naczynia, w których umieszczano wnętrzności, wyjęte z ciała przed mumifikacją i zakonserwowane",,,"GroupId: 2206530
+Translate: Canopic jar
+Translate: Canopic vase (used to store the internal organs of an Egyptian mummy)"
+211360,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,尻が青い,けつがあおい,,ketsu ga aoi,"mieć mleko pod nosem
+niedojrzały
+niedoświadczony","wyrażenie idiomatyczne, wyrażenie pochodzi od niebieckiego odcienia znajdującego się na dziecięcych pośladkach",,DUPLICATE 211361,"GroupId: 2753360
+Translate: wet behind the ears
+MiscInfo: id
+AdditionalInfo: from the bluish tinge of children's buttocks
+Translate: inexperienced
+MiscInfo: id
+AdditionalInfo: from the bluish tinge of children's buttocks
+Translate: immature
+MiscInfo: id
+AdditionalInfo: from the bluish tinge of children's buttocks"
+211361,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,尻が青い,しりがあおい,,shiri ga aoi,"mieć mleko pod nosem
+niedojrzały
+niedoświadczony","wyrażenie idiomatyczne, wyrażenie pochodzi od niebieckiego odcienia znajdującego się na dziecięcych pośladkach",,DUPLICATE 211360,"GroupId: 2753360
+Translate: wet behind the ears
+MiscInfo: id
+AdditionalInfo: from the bluish tinge of children's buttocks
+Translate: inexperienced
+MiscInfo: id
+AdditionalInfo: from the bluish tinge of children's buttocks
+Translate: immature
+MiscInfo: id
+AdditionalInfo: from the bluish tinge of children's buttocks"
+211362,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,麁,そ,,so,"szorstki
+chropowaty
+surowy
+nieoczyszczony",,,,"GroupId: 2844798
+Translate: coarse
+Translate: rough
+Translate: crude
+Translate: raw
+Translate: unrefined"
+211363,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,麤,そ,,so,"szorstki
+chropowaty
+surowy
+nieoczyszczony",,,,"GroupId: 2844798
+Translate: coarse
+Translate: rough
+Translate: crude
+Translate: raw
+Translate: unrefined"
