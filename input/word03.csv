@@ -14312,8 +14312,7 @@ Translate: creative originality"
 203669,WORD_NOUN,,HIRAGANA,,,駆虫剤,くちゅうざい,,kuchuuzai,środek owadobójczy,,,,"GroupId: 1244890
 Translate: insecticide
 Translate: bug repellent"
-203670,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA_KATAKANA,,,高スペック,こうスペック,,kou supekku,"wysoka specjalizacja
+203670,WORD_ADJECTIVE_NO,,HIRAGANA_KATAKANA,,,高スペック,こうスペック,,kou supekku,"wysoka specjalizacja
 wysoce specjalistyczny",,,,"GroupId: 2723430
 Translate: high spec"
 203671,WORD_NOUN,,HIRAGANA,,,韋編三絶,いへんさんぜつ,,ihen sanzetsu,"powtarzanie czytanie
@@ -22072,18 +22071,10 @@ Translate: not
 MiscInfo: col
 AdditionalInfo: verb-negating suffix; may indicate question or invitation with rising intonation"
 205333,"WORD_ADJECTIVE_I
-WORD_SUFFIX
-WORD_NOUN",,HIRAGANA,,,-,ぽい,,poi,"[sufiks do tworzenia przymiotników] (kolokwializm)
--jak (kolokwializm)
-wyrzucenie czegoś",,,DUPLICATE 49217,"GroupId: 2083720
+WORD_SUFFIX",,HIRAGANA,,,-,ぽい,,poi,"[sufiks do tworzenia przymiotników]
+-jak",kolokwializm,,DUPLICATE 49217,"GroupId: 2083720
 Translate: -ish
-MiscInfo: col
-Translate: -like
-MiscInfo: col
-Translate: tossing something out
-MiscInfo: on-mim
-Translate: throwing something away
-MiscInfo: on-mim"
+Translate: -like"
 205334,WORD_NOUN,,KATAKANA,,,-,ダイコン,,daikon,komputer nurkowy,"kolokwializm, skrót, ang: dive computer",,DUPLICATE 145773,"GroupId: 2210070
 Translate: dive computer
 MiscInfo: col
@@ -27982,7 +27973,8 @@ Translate: to include in the number"
 HUP (sygnał)",informatyka,,,"GroupId: 2345060
 Translate: hang-up
 Translate: HUP (signal)"
-206709,WORD_EXPRESSION,,HIRAGANA,,,糠に釘,ぬかにくぎ,,nuka ni kugi,"bez skutku
+206709,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,糠に釘,ぬかにくぎ,,nuka ni kugi,"bez skutku
 niemający efektu
 strata wysiłku",wyrażenie idiomatyczne,,,"GroupId: 2727590
 Translate: having no effect
@@ -28089,7 +28081,8 @@ Translate: big nuisance
 Translate: royal pain in the behind"
 206734,WORD_NOUN,,HIRAGANA,,,果し状,はたしじょう,,hatashi jou,list z wyzwaniem,np. do pojedynku,,,"GroupId: 1600770
 Translate: letter of challenge (to a duel, etc.)"
-206735,WORD_EXPRESSION,,HIRAGANA,,,ぬかに釘,ぬかにくぎ,,nuka ni kugi,"bez skutku
+206735,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,ぬかに釘,ぬかにくぎ,,nuka ni kugi,"bez skutku
 niemający efektu
 strata wysiłku",wyrażenie idiomatyczne,,,"GroupId: 2727590
 Translate: having no effect
@@ -36254,7 +36247,8 @@ sekcja back-office
 Translate: internal division
 Translate: back-office section
 Translate: indirect department"
-208887,WORD_EXPRESSION,,HIRAGANA,,,豆腐に鎹,とうふにかすがい,,toufu ni kasugai,"bez skutku
+208887,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,豆腐に鎹,とうふにかすがい,,toufu ni kasugai,"bez skutku
 niepotrzebny wysiłek
 bezużyteczny wysiłek",,,,"GroupId: 2727600
 Translate: having no effect
@@ -36425,7 +36419,8 @@ Translate: good-for-nothing
 MiscInfo: uk
 Translate: loser
 MiscInfo: uk"
-208930,WORD_EXPRESSION,,HIRAGANA,,,豆腐にかすがい,とうふにかすがい,,toufu ni kasugai,"bez skutku
+208930,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,豆腐にかすがい,とうふにかすがい,,toufu ni kasugai,"bez skutku
 niepotrzebny wysiłek
 bezużyteczny wysiłek",,,,"GroupId: 2727600
 Translate: having no effect
