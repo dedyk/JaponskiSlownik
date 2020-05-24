@@ -46245,7 +46245,7 @@ Translate: Automatic answer Network System for Electrical Request"
 osoba przesłuchująca",,,,"GroupId: 1198520
 Translate: interviewer"
 211369,WORD_NOUN,,HIRAGANA,,,日本社会党,にっぽんしゃかいとう,,nippon shakaitou,"Socjalistyczna Partia Japonii (do 1996 roku)
-Socjaldemokratyczna Partia Japonii (od 1996 roku)",,,,"GroupId: 2685890
+Socjaldemokratyczna Partia Japonii (od 1996 roku)",,,DUPLICATE 211423,"GroupId: 2685890
 Translate: Socialist Party of Japan (until 1996, became the Social Democratic Party of Japan from 1996)"
 211370,WORD_NOUN,,HIRAGANA,,,通常口語,つうじょうこうご,,tsuujou kougo,"mowa potoczna
 codzienny język",,,,"GroupId: 1433300
@@ -46326,7 +46326,7 @@ MiscInfo: uk"
 Translate: eyelash extensions
 MiscInfo: uk
 MiscInfo: abbr"
-211393,WORD_NOUN,,HIRAGANA,,,畳みじわ,たたみじわ,,tatamijiwa,"zagięcie
+211393,WORD_NOUN,,HIRAGANA,,,畳みじわ,たたみじわ,,tatami jiwa,"zagięcie
 załamanie
 kant",od składania,,,"GroupId: 2721410
 Translate: crease (from folding)
@@ -46339,7 +46339,7 @@ Translate: production process
 Translate: industrial operation"
 211396,WORD_NOUN,,HIRAGANA_KATAKANA,,,人的ミス,じんてきミス,,jinteki misu,ludzki błąd,,,,"GroupId: 1368840
 Translate: human error"
-211397,WORD_NOUN,,HIRAGANA,,,堀割,ほりわり,,horiwari,"kanał
+211397,WORD_NOUN,,HIRAGANA,,,堀割,ほりわり,,hori wari,"kanał
 kanał wodny
 droga wodna
 rów",,,,"GroupId: 1603600
@@ -46389,7 +46389,7 @@ Translate: to make (grind) one's body into dust
 MiscInfo: id"
 211407,WORD_NOUN,,HIRAGANA,,,地上波放送,ちじょうはほうそう,,chijouha housou,naziemne nadawanie,,,,"GroupId: 1998210
 Translate: terrestrial broadcasting"
-211408,WORD_NOUN,,HIRAGANA,,,三善根,さんぜんごん,,sanzengon,trzy źródła zdrowia,"bez pożądania, bez gniewu, bez złudzeń, buddyzm",,,"GroupId: 2844654
+211408,WORD_NOUN,,HIRAGANA,,,三善根,さんぜんごん,,sanzengon,trzy źródła zdrowia,"bez pożądania, bez gniewu, bez złudzeń, buddyzm",,DUPLICATE 211440,"GroupId: 2844654
 Translate: three wholesome roots (no coveting, no anger, no delusion)"
 211409,WORD_VERB_RU,,HIRAGANA,,,語り伝える,かたりつたえる,,katari tsutaeru,przekazywanie,np. historii lub tradycji,,,"GroupId: 1636610
 Translate: to hand down
@@ -46401,7 +46401,8 @@ Translate: novelty (patentability requirement)"
 211412,WORD_NOUN,,HIRAGANA,,,地利,ちり,,chiri,"przewaga lokalizacyjna
 korzystna pozycja
 produkty z ziemi (produkcja rolna, drewno, minerały itp.)
-opłata za dzierżawę ziemi",,,,"GroupId: 2844693
+opłata za dzierżawę ziemi",,,"DUPLICATE 73612
+DUPLICATE 211441","GroupId: 2844693
 Translate: locational advantage
 Translate: advantageous position
 Translate: products from the land (farm output, timber, minerals, etc.)
@@ -46409,7 +46410,7 @@ Translate: land rent"
 211413,WORD_NOUN,,HIRAGANA,,,粟,ぞく,,zoku,"proso (przestarzałe znaczenie)
 ziarno (przestarzałe znaczenie)
 wynagrodzenie w ryżu (archaizm)
-10,000 shaku",,,,"GroupId: 2844752
+10,000 shaku",,,DUPLICATE 61240,"GroupId: 2844752
 Translate: millet
 MiscInfo: obs
 Translate: grain
@@ -46422,7 +46423,8 @@ Translate: boo! (as in ""peak-a-boo!"")"
 211415,WORD_NOUN,,HIRAGANA,,,無癡,むち,,muchi,bez złudzeń,buddyzm,,,"GroupId: 2844656
 Translate: no delusion"
 211416,WORD_NUMBER,,KATAKANA,,,１,ワン,,wan,"1
-jeden",ang: one,,,"GroupId: 1149130
+jeden",ang: one,,"DUPLICATE 27651
+DUPLICATE 40241","GroupId: 1149130
 Translate: one"
 211417,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,炳,へい,,hei,"jasny
@@ -46457,3 +46459,96 @@ Translate: unlisted (company, stock)"
 linia autobusu",,,,"GroupId: 2836071
 Translate: bus route
 Translate: bus line"
+211423,WORD_NOUN,,HIRAGANA,,,日本社会党,にほんしゃかいとう,,nihon shakaitou,"Socjalistyczna Partia Japonii (do 1996 roku)
+Socjaldemokratyczna Partia Japonii (od 1996 roku)",,,DUPLICATE 211369,"GroupId: 2685890
+Translate: Socialist Party of Japan (until 1996, became the Social Democratic Party of Japan from 1996)"
+211424,WORD_NOUN,,KATAKANA,,,-,オランダイチゴ,,oranda ichigo,poziomka truskawka,"roślina mieszaniec dwóch gatunków poziomki z rodziny różowatych, Fragaria x ananassa",,,"GroupId: 2452460
+Translate: garden strawberry (Fragaria x ananassa)
+MiscInfo: uk"
+211425,WORD_EXPRESSION,,HIRAGANA,,,家計の扶け,かけいのたすけ,,kakei no tasuke,pomoc we wspieraniu rodziny,,,,"GroupId: 1864900
+Translate: assistance in supporting a family"
+211426,WORD_NOUN,,KATAKANA,,,-,ジャコウアンテロープ,,jakou anteroopu,"antylopka piżmowa
+suni","ssak parzystokopytny z rodziny wołowatych, Neotragus moschatus",,,"GroupId: 2710430
+Translate: suni (Neotragus moschatus)
+MiscInfo: uk"
+211427,WORD_NOUN,,KATAKANA,,,-,ミミセンザンコウ,,mimisen zankou,"łuskowiec chiński
+łuskowiec pięciopalczasty
+pangolin chiński
+pangolin pięciopalczasty","gatunek ssaka z rodziny łuskowcowatych, Manis pentadactyla",,,"GroupId: 2715090
+Translate: Chinese pangolin (Manis pentadactyla)
+MiscInfo: uk"
+211428,WORD_NOUN,,HIRAGANA,,,たたみ皺,たたみじわ,,tatami jiwa,"zagięcie
+załamanie
+kant",od składania,,,"GroupId: 2721410
+Translate: crease (from folding)
+MiscInfo: uk"
+211429,WORD_NOUN,,HIRAGANA,,,畳み皺,たたみじわ,,tatami jiwa,"zagięcie
+załamanie
+kant",od składania,,,"GroupId: 2721410
+Translate: crease (from folding)
+MiscInfo: uk"
+211430,WORD_NOUN,,HIRAGANA,,,たたみ皴,たたみじわ,,tatami jiwa,"zagięcie
+załamanie
+kant",od składania,,,"GroupId: 2721410
+Translate: crease (from folding)
+MiscInfo: uk"
+211431,WORD_NOUN,,HIRAGANA,,,畳み皴,たたみじわ,,tatami jiwa,"zagięcie
+załamanie
+kant",od składania,,,"GroupId: 2721410
+Translate: crease (from folding)
+MiscInfo: uk"
+211432,WORD_NOUN,,HIRAGANA,,,堀り割り,ほりわり,,hori wari,"kanał
+kanał wodny
+droga wodna
+rów",,,,"GroupId: 1603600
+Translate: canal
+Translate: waterway
+Translate: ditch"
+211433,WORD_NOUN,,HIRAGANA,,,堀割り,ほりわり,,hori wari,"kanał
+kanał wodny
+droga wodna
+rów",,,,"GroupId: 1603600
+Translate: canal
+Translate: waterway
+Translate: ditch"
+211434,WORD_NOUN,,HIRAGANA,,,掘割,ほりわり,,hori wari,"kanał
+kanał wodny
+droga wodna
+rów",,,,"GroupId: 1603600
+Translate: canal
+Translate: waterway
+Translate: ditch"
+211435,WORD_NOUN,,HIRAGANA,,,掘り割り,ほりわり,,hori wari,"kanał
+kanał wodny
+droga wodna
+rów",,,,"GroupId: 1603600
+Translate: canal
+Translate: waterway
+Translate: ditch"
+211436,WORD_NOUN,,HIRAGANA,,,掘割り,ほりわり,,hori wari,"kanał
+kanał wodny
+droga wodna
+rów",,,,"GroupId: 1603600
+Translate: canal
+Translate: waterway
+Translate: ditch"
+211437,WORD_NOUN,,HIRAGANA,,,ご前会議,ごぜんかいぎ,,gozen kaigi,Rada Cesarska,,,,"GroupId: 1694350
+Translate: Imperial Council"
+211438,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,身体で覚える,からだでおぼえる,,karada de oboeru,opanować coś (poprzez osobiste doświadczenie),,,,"GroupId: 2139980
+Translate: to master something (through personal experience)"
+211439,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,躯で覚える,からだでおぼえる,,karada de oboeru,opanować coś (poprzez osobiste doświadczenie),,,,"GroupId: 2139980
+Translate: to master something (through personal experience)"
+211440,WORD_NOUN,,HIRAGANA,,,三善根,さんぜんこん,,sanzenkon,trzy źródła zdrowia,"bez pożądania, bez gniewu, bez złudzeń, buddyzm",,DUPLICATE 211408,"GroupId: 2844654
+Translate: three wholesome roots (no coveting, no anger, no delusion)"
+211441,WORD_NOUN,,HIRAGANA,,,地利,じり,,jiri,"przewaga lokalizacyjna
+korzystna pozycja
+produkty z ziemi (produkcja rolna, drewno, minerały itp.)
+opłata za dzierżawę ziemi",,,DUPLICATE 211412,"GroupId: 2844693
+Translate: locational advantage
+Translate: advantageous position
+Translate: products from the land (farm output, timber, minerals, etc.)
+Translate: land rent"
+211442,WORD_INTERJECTION,,HIRAGANA_KATAKANA,,,-,ばー,,baa,buu!,,,,"GroupId: 2844786
+Translate: boo! (as in ""peak-a-boo!"")"
