@@ -46558,7 +46558,7 @@ Translate: totally uninteresting
 MiscInfo: col"
 211444,WORD_ADJECTIVE_NO,,HIRAGANA,,,細胞外,さいぼうがい,,saibougai,zewnątrzkomórkowy,,,,"GroupId: 2743590
 Translate: extracellular"
-211445,WORD_NOUN,,KATAKANA,,,-,ハイイロネコ,,haiiro neko,kot tybetański,"gatunek drapieżnego ssaka z rodziny kotowatych, Felis bieti",,,"GroupId: 2696140
+211445,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ハイイロネコ,,hai iro neko,kot tybetański,"gatunek drapieżnego ssaka z rodziny kotowatych, Felis bieti",,,"GroupId: 2696140
 Translate: Chinese mountain cat (Felis bieti)
 Translate: Chinese desert cat"
 211446,WORD_NOUN,,HIRAGANA,,,表芸,おもてげい,,omotegei,"główne dokonanie
@@ -46573,7 +46573,7 @@ maska starego mężczyzny",,,,"GroupId: 1862220
 Translate: old man's mask"
 211450,WORD_NOUN,,HIRAGANA,,,連絡節,れんらくせつ,,renrakusetsu,sekcja powiązań,informatyka,,,"GroupId: 2392970
 Translate: linkage section"
-211451,WORD_NOUN,,HIRAGANA,,,唐芋,とういも,,touimo,wilec ziemniaczany,"gatunek byliny należący do rodziny powojowatych, znany pod nazwami: batat, patat, kūmara lub słodki ziemniak, Ipomoea batatas",,,"GroupId: 1774840
+211451,WORD_NOUN,,HIRAGANA,,,唐芋,とういも,,touimo,wilec ziemniaczany,"gatunek byliny należący do rodziny powojowatych, znany pod nazwami: batat, patat, kūmara lub słodki ziemniak, Ipomoea batatas",,DUPLICATE 211501,"GroupId: 1774840
 Translate: sweet potato (Ipomoea batatas)"
 211452,WORD_NOUN,,KATAKANA_HIRAGANA,,,エチオピア区,エチオピアく,,echiopia ku,kraina etiopska,kraina zoogeograficzna obejmująca kontynent afrykański na południe od zwrotnika Raka i przybrzeżny pas Półwyspu Arabskiego,,,"GroupId: 2456220
 Translate: Ethiopian (zoogeographical region)"
@@ -46603,7 +46603,7 @@ Translate: enabler"
 Translate: bus fare
 MiscInfo: col
 MiscInfo: abbr"
-211461,WORD_EXPRESSION,,HIRAGANA,,,苦は楽の種,くはらくのたね,,ku wa raku no tane,"nie można cieszyć się bez bólu
+211461,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,苦は楽の種,くはらくのたね,,ku wa raku no tane,"nie można cieszyć się bez bólu
 bez pracy nie ma kołaczy",przysłowie,,,"GroupId: 2152780
 Translate: one cannot have pleasure without pain
 MiscInfo: proverb
@@ -46657,7 +46657,7 @@ czarnoksięstwo
 magia",,,,"GroupId: 2637850
 Translate: evil ways
 Translate: sorcery"
-211474,WORD_NOUN,,HIRAGANA,,,鼻ちょうちん,はなちょうちん,,hanachouchin,smark bańka,u dziecka,,,"GroupId: 2714610
+211474,WORD_NOUN,,HIRAGANA,,,鼻ちょうちん,はなちょうちん,,hana chouchin,smark bańka,u dziecka,,,"GroupId: 2714610
 Translate: snot bubble"
 211475,WORD_NOUN,,KATAKANA,,,-,クソリプ,,kusoripu,bezsensowna lub obraźliwa odpowiedź (na Twitterze),"od クソ i リプライ, slang",,,"GroupId: 2842231
 Translate: nonsensical or offensive reply (on Twitter)
@@ -46773,8 +46773,81 @@ Translate: work in the same style
 Translate: same way of making"
 211500,WORD_NOUN,,HIRAGANA,,,断行,だんぎょう,,dangyou,"ascetyzm
 asceza
-praktyki eliminujące dolegliwości","mało znane słowo, buddyzm",,,"GroupId: 2844618
+praktyki eliminujące dolegliwości","mało znane słowo, buddyzm",,DUPLICATE 23082,"GroupId: 2844618
 Translate: asceticism
 MiscInfo: obsc
 Translate: practices that eliminate afflictions
 MiscInfo: obsc"
+211501,WORD_NOUN,,HIRAGANA,,,唐芋,からいも,,karaimo,wilec ziemniaczany,"gatunek byliny należący do rodziny powojowatych, znany pod nazwami: batat, patat, kūmara lub słodki ziemniak, Ipomoea batatas",,DUPLICATE 211451,"GroupId: 1774840
+Translate: sweet potato (Ipomoea batatas)"
+211502,WORD_NOUN,,HIRAGANA,,,唐薯,からいも,,karaimo,wilec ziemniaczany,"gatunek byliny należący do rodziny powojowatych, znany pod nazwami: batat, patat, kūmara lub słodki ziemniak, Ipomoea batatas",,,"GroupId: 1774840
+Translate: sweet potato (Ipomoea batatas)"
+211503,WORD_NOUN,,HIRAGANA,,,制御機,せいぎょき,,seigyoki,"kontroler
+urządzenie sterujące",,,,"GroupId: 1595980
+Translate: controller
+Translate: regulator"
+211504,WORD_NOUN,,KATAKANA,,,-,ウミオウム,,umioumu,Aethia psittacula,gatunek ptaka,,,"GroupId: 2733470
+Translate: parakeet auklet (Aethia psittacula)
+MiscInfo: uk"
+211505,WORD_NOUN,,KATAKANA,,,-,ナンジャモンジャ,,nanja monja,niezwykle duże drzewo,dialekt Kantou,,,"GroupId: 2733540
+Translate: unusually large tree
+MiscInfo: uk
+Dialect: ktb"
+211506,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オウシュウナラ,,oushuu nara,dąb szypułkowy,"gatunek typowy dla rodzaju dębów, obejmującego drzewa liściaste z rodziny bukowatych, Quercus robur",,,"GroupId: 2734870
+Translate: English oak (Quercus robur)
+MiscInfo: uk
+Translate: pedunculate oak
+MiscInfo: uk
+Translate: common oak
+MiscInfo: uk
+Translate: French oak
+MiscInfo: uk"
+211507,WORD_NOUN,,KATAKANA,,,-,ヨーロッパナラ,,yooroppa nara,dąb szypułkowy,"gatunek typowy dla rodzaju dębów, obejmującego drzewa liściaste z rodziny bukowatych, Quercus robur",,,"GroupId: 2734930
+Translate: English oak (Quercus robur)
+MiscInfo: uk
+Translate: pedunculate oak
+MiscInfo: uk
+Translate: common oak
+MiscInfo: uk
+Translate: French oak
+MiscInfo: uk"
+211508,WORD_NOUN,,KATAKANA,,,-,アメリカヌマジカ,,amerika numajika,"jeleniak bagienny
+jeleń bagienny","gatunek przeżuwacza z rodziny jeleniowatych, największy z południowoamerykańskich jeleniowatych, Blastocerus dichotomus",,,"GroupId: 2737130
+Translate: marsh deer (Blastocerus dichotomus)
+MiscInfo: uk"
+211509,WORD_NOUN,,HIRAGANA,,,鼻提灯,はなちょうちん,,hana chouchin,smark bańka,u dziecka,,DUPLICATE 211510,"GroupId: 2714610
+Translate: snot bubble"
+211510,WORD_NOUN,,HIRAGANA,,,鼻提灯,はなぢょうちん,,hana dyouchin,smark bańka,u dziecka,,DUPLICATE 211509,"GroupId: 2714610
+Translate: snot bubble"
+211511,WORD_NOUN,,HIRAGANA,,,洟提灯,はなちょうちん,,hana chouchin,smark bańka,u dziecka,,DUPLICATE 211512,"GroupId: 2714610
+Translate: snot bubble"
+211512,WORD_NOUN,,HIRAGANA,,,洟提灯,はなぢょうちん,,hana dyouchin,smark bańka,u dziecka,,DUPLICATE 211511,"GroupId: 2714610
+Translate: snot bubble"
+211513,WORD_ADVERB,,HIRAGANA,,,撤頭徹尾,てっとうてつび,,tettou tetsubi,"gruntownie
+dokładnie
+w każdym calu
+na wskroś",,,,"GroupId: 1437690
+Translate: thoroughly
+MiscInfo: yoji
+Translate: through and through
+MiscInfo: yoji"
+211514,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,放佚,ほういつ,,houitsu,"brak umiaru
+rozwiązłość
+rozpusta",,,,"GroupId: 1627180
+Translate: self-indulgence
+Translate: looseness
+Translate: dissoluteness"
+211515,WORD_NOUN,,HIRAGANA,,,豚とろ,とんとろ,,ton toro,tłusta wieprzowina,"z policzka, szyi lub łopatki",,,"GroupId: 2677740
+Translate: fatty pork (from cheek, neck or shoulder)"
+211516,WORD_NOUN,,HIRAGANA,,,跳び蹴り,とびげり,,tobi geri,kopnięcie w powietrzu,w sztukach walki,,,"GroupId: 2018100
+Translate: dropkick
+Translate: flying kick"
+211517,WORD_EXPRESSION,,HIRAGANA,,,に引き替え,にひきかえ,,ni hiki kae,"w przeciwieństwie do ...
+w kontraście do ...
+podczas ...
+w trakcie ...",,,,"GroupId: 2844640
+Translate: in contrast to ...
+Translate: unlike ...
+Translate: while ...
+Translate: whereas ..."
