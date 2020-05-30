@@ -48434,7 +48434,7 @@ Translate: plastic container (e.g. gas can, water can or similar)"
 Translate: rotating warning light similar to the one on a patrol car
 MiscInfo: abbr"
 211883,WORD_NOUN,,HIRAGANA,,,蔓性植物,まんせいしょくぶつ,,mansei shokubutsu,"roślina płożąca
-pnącze",,,,"GroupId: 2217570
+pnącze",,,DUPLICATE 211916,"GroupId: 2217570
 Translate: creeper (plant that grows along the ground, etc. similar to a vine)"
 211884,WORD_NOUN,,KATAKANA_HIRAGANA,,,アマシイラ科,アマシイラか,,amashiira ka,Luvaridae,rodzina ryb,,,"GroupId: 2559480
 Translate: Luvaridae
@@ -48520,7 +48520,7 @@ mapa koncepcyjna",,,,"GroupId: 2844621
 Translate: conceptual diagram
 Translate: schematic drawing
 Translate: concept map"
-211902,WORD_EXPRESSION,,HIRAGANA,,,我こそは,われこそは,,warekoso wa,"ja
+211902,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,我こそは,われこそは,,warekoso wa,"ja
 jeśli o mnie chodzi","pewny siebie, stanowczy",,,"GroupId: 2844687
 Translate: I
 AdditionalInfo: self-confident, emphatic
@@ -48534,6 +48534,97 @@ Translate: person who doesn't like to make an effort"
 Translate: alcohol disinfection
 Translate: disinfection with alcohol"
 211905,WORD_NOUN,,HIRAGANA,,,覗き穴,のぞきあな,,nozoki ana,"wizjer
+otwór do zaglądania
+otwór do podglądania
+otwór do inspekcji
+okno obserwacyjne",,,,"GroupId: 2844661
+Translate: peephole
+Translate: spyhole
+Translate: inspection hole
+Translate: observation window"
+211906,WORD_NOUN,,KATAKANA,,,-,ウメバチソウ,,umebachisou,dziewięciornik błotny,"gatunek rośliny wieloletniej należący do rodziny dziewięciornikowatych, Parnassia palustris",,,"GroupId: 2457630
+Translate: marsh grass of Parnassus (Parnassia palustris)
+MiscInfo: uk"
+211907,WORD_NOUN,,HIRAGANA,,,庶妹,ままいも,,mamaimo,przybrana siostra (młodsza),archaizm,,,"GroupId: 2584080
+Translate: step-sister (younger)
+MiscInfo: arch
+Translate: stepsister
+MiscInfo: arch"
+211908,"WORD_VERB_RU
+WORD_VERB_AUX",,HIRAGANA,,,-,っぱぐれる,,ppagureru,stracić (szansę na ...),po czasowniku w formie bez masu,,,"GroupId: 2843065
+Translate: to miss (one's chance to ...)
+AdditionalInfo: after the -masu stem of a verb"
+211909,WORD_NOUN,,KATAKANA,,,-,マボヤ,,maboya,Halocynthia roretzi,zwierzę,,,"GroupId: 2771520
+Translate: sea pineapple (Halocynthia roretzi)
+MiscInfo: uk"
+211910,WORD_NOUN,,KATAKANA,,,-,シラガマーモット,,shiraga maamotto,"świstak siwy
+świstak kanadyjski","gryzoń z rodziny wiewiórkowatych, jeden z przedstawicieli rodzaju Marmota, Marmota caligata",,,"GroupId: 2772150
+Translate: hoary marmot (Marmota caligata)
+MiscInfo: uk"
+211911,WORD_NOUN,,KATAKANA,,,-,コンゴウフグ,,kongou fugu,"kostera rogata
+kostera rogaczek","gatunek morskich ryb rozdymkokształtnych z rodziny kosterowatych i rodzaju Lactoria, Lactoria cornuta",,,"GroupId: 2774380
+Translate: longhorn cowfish (Lactoria cornuta)
+MiscInfo: uk"
+211912,WORD_NOUN,,KATAKANA,,,-,ヌマガレイ,,numagarei,gwódzica,"gatunek ryby, Platichthys stellatus",,,"GroupId: 2774530
+Translate: starry flounder (Platichthys stellatus)
+MiscInfo: uk"
+211913,WORD_NOUN,,HIRAGANA,,,惣太鰹,そうだがつお,,soudagatsuo,[gatunek tuńczyka z rodziny Auxis],,,,"GroupId: 2774550
+Translate: frigate tuna (Auxis spp.)
+MiscInfo: uk"
+211914,WORD_NOUN,,KATAKANA,,,-,ソウダガツオ,,soudagatsuo,[gatunek tuńczyka z rodziny Auxis],,,,"GroupId: 2774550
+Translate: frigate tuna (Auxis spp.)
+MiscInfo: uk"
+211915,WORD_NOUN,,HIRAGANA,,,舵棒,かじぼう,,kajibou,"uchwyt (rikszy lub podobnego pojazdu)
+rumpel
+???",,,,"GroupId: 1724190
+Translate: shafts (of rickshaws or similar vehicles)
+Translate: thills
+Translate: tiller
+Translate: yoke"
+211916,WORD_NOUN,,HIRAGANA,,,蔓性植物,つるせいしょくぶつ,,tsurusei shokubutsu,"roślina płożąca
+pnącze",,,DUPLICATE 211883,"GroupId: 2217570
+Translate: creeper (plant that grows along the ground, etc. similar to a vine)"
+211917,WORD_NOUN,,HIRAGANA,,,つる性植物,つるせいしょくぶつ,,tsurusei shokubutsu,"roślina płożąca
+pnącze",,,,"GroupId: 2217570
+Translate: creeper (plant that grows along the ground, etc. similar to a vine)"
+211918,WORD_NOUN,,KATAKANA,,,-,ニホントウキ,,nihon touki,dong dang gui,"rodzaj aromatycznego zioła, mało znane słowo, Angelica acutiloba",,,"GroupId: 2201540
+Translate: dong dang gui (aromatic herb similar to dong quai, Angelica acutiloba)
+MiscInfo: uk
+MiscInfo: obsc"
+211919,WORD_NOUN,,HIRAGANA,,,達磨さんがころんだ,だるまさんがころんだ,,darumasan ga koronda,"raz, dwa, trzy, Baba Jaga patrzy",dziecięca zabawa ruchowa,,,"GroupId: 2703480
+Translate: children's game similar to Statues or Red Light Green Light
+MiscInfo: uk
+Translate: Bodhidharma fell down
+MiscInfo: uk"
+211920,WORD_NOUN,,HIRAGANA,,,達磨さんが転んだ,だるまさんがころんだ,,darumasan ga koronda,"raz, dwa, trzy, Baba Jaga patrzy",dziecięca zabawa ruchowa,,,"GroupId: 2703480
+Translate: children's game similar to Statues or Red Light Green Light
+MiscInfo: uk
+Translate: Bodhidharma fell down
+MiscInfo: uk"
+211921,WORD_VERB_U,,HIRAGANA,,,入りなおす,はいりなおす,,hairi naosu,"ponownie wejść
+ponownie przyłączyć się
+ponownie bycie przyjęty do szkoły",,,,"GroupId: 2844587
+Translate: to re-enter
+Translate: to rejoin
+Translate: to re-enrol"
+211922,WORD_NOUN,,KATAKANA,,,-,サイド・メニュー,,saido menyuu,"dodatek do dania głównego
+menu boczne (informatyka)",,,,"GroupId: 2844795
+Translate: side dish
+Translate: side menu
+Translate: sidebar menu"
+211923,WORD_NOUN,,HIRAGANA,,,面倒くさがりや,めんどうくさがりや,,mendou kusagari ya,"osoba, która ma tendencję do znajdowania uciążliwych rzeczy
+osoba, która nie lubi się wysilać",,,,"GroupId: 2844674
+Translate: person who tends to find things bothersome
+Translate: person who doesn't like to make an effort"
+211924,WORD_NOUN,,HIRAGANA,,,面倒臭がり屋,めんどうくさがりや,,mendou kusagari ya,"osoba, która ma tendencję do znajdowania uciążliwych rzeczy
+osoba, która nie lubi się wysilać",,,,"GroupId: 2844674
+Translate: person who tends to find things bothersome
+Translate: person who doesn't like to make an effort"
+211925,WORD_NOUN,,HIRAGANA,,,面倒臭がりや,めんどうくさがりや,,mendou kusagari ya,"osoba, która ma tendencję do znajdowania uciążliwych rzeczy
+osoba, która nie lubi się wysilać",,,,"GroupId: 2844674
+Translate: person who tends to find things bothersome
+Translate: person who doesn't like to make an effort"
+211926,WORD_NOUN,,HIRAGANA,,,のぞき穴,のぞきあな,,nozoki ana,"wizjer
 otwór do zaglądania
 otwór do podglądania
 otwór do inspekcji
