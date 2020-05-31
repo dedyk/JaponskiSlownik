@@ -48660,7 +48660,7 @@ Translate: cleaner fish"
 211936,WORD_NOUN,,KATAKANA,,,-,ラビゴットソース,,rabigotto soosu,sos ravigote,ang: ravigote sauce,,,"GroupId: 2831146
 Translate: ravigote sauce
 Translate: sauce ravigote"
-211937,WORD_NOUN,,KATAKANA,,,-,スタンディングウエーブ,,sutandingu ueebu,fala stojąca,ang: standing wave,,,"GroupId: 2505300
+211937,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,スタンディングウエーブ,,sutandingu ueebu,fala stojąca,ang: standing wave,,,"GroupId: 2505300
 Translate: standing wave"
 211938,WORD_NOUN,,HIRAGANA,,,妄弁,ぼうべん,,bouben,"bezładna rozmowa
 chaotyczna rozmowa",,,,"GroupId: 1533800
@@ -48687,7 +48687,7 @@ Translate: miracle play"
 czek podróżny","rodzaj czeku, który wystawiany jest przez bank lub inną instytucję finansową na standardową kwotę w różnych walutach",,,"GroupId: 2110270
 Translate: traveler's check
 Translate: traveller's cheque"
-211946,WORD_NOUN,,HIRAGANA,,,歌歌い,うたうたい,,utautai,"śpiewak
+211946,WORD_NOUN,,HIRAGANA,,,歌歌い,うたうたい,,uta utai,"śpiewak
 piosenkarz
 wokalista
 śpiewak nagauta (w kabuki)
@@ -48696,7 +48696,7 @@ Translate: singer
 Translate: vocalist
 Translate: nagauta singer (in kabuki)
 Translate: singer of Noh chants"
-211947,WORD_NOUN,,HIRAGANA,,,弦鋸,つるのこ,,tsurunoko,"tradycyjna japońska piła do drewna
+211947,WORD_NOUN,,HIRAGANA,,,弦鋸,つるのこ,,tsuru noko,"tradycyjna japońska piła do drewna
 piła kabłąkowa",,,,"GroupId: 2067650
 Translate: traditional Japanese woodworking saw
 Translate: bow saw"
@@ -48722,7 +48722,7 @@ golec
 pstrąg alpejski","gatunek ryby z rodziny łososiowatych, Salvelinus alpinus",,,"GroupId: 2783710
 Translate: arctic char (Salvelinus alpinus)
 MiscInfo: uk"
-211955,WORD_NOUN,,HIRAGANA,,,冬尺,ふゆしゃく,,fuyushaku,zimowa ćma,Geometridae,,,"GroupId: 2786070
+211955,WORD_NOUN,,HIRAGANA,,,冬尺,ふゆしゃく,,fuyu shaku,zimowa ćma,Geometridae,,,"GroupId: 2786070
 Translate: winter moth (Geometridae spp.)
 MiscInfo: uk"
 211956,WORD_NOUN,,HIRAGANA,,,麝香連理草,じゃこうれんりそう,,jakourenrisou,groszek pachnący,"gatunek rośliny rocznej wywodzący się z rejonu śródziemnomorskiego, rozprzestrzeniający się także w innych rejonach i w wielu krajach uprawiany, Lathyrus odoratus",,,"GroupId: 2787140
@@ -48754,7 +48754,7 @@ Translate: period of revolution (e.g. of the Sun, of the Moon)
 Translate: orbital period"
 211964,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,体が空く,からだがあく,,karada ga aku,"stać się wolnym
-mieć wolne",wyrażenie idiomatyczne,,,"GroupId: 2840708
+mieć wolne",wyrażenie idiomatyczne,,DUPLICATE 211999,"GroupId: 2840708
 Translate: to become free
 MiscInfo: id
 Translate: to get time off
@@ -48777,7 +48777,7 @@ Translate: dissatisfied members
 Translate: malcontents"
 211970,WORD_NOUN,,HIRAGANA,,,古代文字,こだいもじ,,kodai moji,"starożytny skrypt
 starożytna postać
-starożytny alfabet",,,,"GroupId: 2844841
+starożytny alfabet",,,DUPLICATE 212000,"GroupId: 2844841
 Translate: ancient script
 Translate: ancient character
 Translate: ancient alphabet"
@@ -48799,7 +48799,7 @@ MiscInfo: obs"
 wyparcie się",buddyzm,,,"GroupId: 2844605
 Translate: renunciation
 Translate: self-abnegation"
-211973,WORD_NOUN,,HIRAGANA,,,総踊り,そうおどり,,souodori,"taniec masowy
+211973,WORD_NOUN,,HIRAGANA,,,総踊り,そうおどり,,souo dori,"taniec masowy
 taniec w dużej grupie
 taniec całą trupą",,,,"GroupId: 2844680
 Translate: mass dancing
@@ -48837,14 +48837,14 @@ MiscInfo: arch"
 211978,WORD_NOUN,,HIRAGANA,,,行法,ぎょうほう,,gyouhou,"wprowadzanie w życie reguł
 egzekwowanie prawa
 praktyka buddyzmu
-praktykowanie buddyzmu",,,,"GroupId: 2844603
+praktykowanie buddyzmu",,,DUPLICATE 211979,"GroupId: 2844603
 Translate: carrying out of rules
 Translate: enforcing the law
 Translate: execution
 Translate: practice of Buddhism
 Translate: Buddhist training"
 211979,WORD_NOUN,,HIRAGANA,,,行法,ぎょうぼう,,gyoubou,"praktyka buddyzmu
-praktykowanie buddyzmu",,,,"GroupId: 2844603
+praktykowanie buddyzmu",,,DUPLICATE 211978,"GroupId: 2844603
 Translate: practice of Buddhism
 Translate: Buddhist training"
 211980,WORD_NOUN,,HIRAGANA,,,泳力,えいりょく,,eiryoku,"zdolność pływania
@@ -48869,5 +48869,114 @@ bycie poganiaczem niewolników",,,,"GroupId: 2837842
 Translate: working one's employees hard
 Translate: being a slave-driver"
 211986,WORD_NOUN,,KATAKANA,,,-,ヴィオール,,viooru,"wiola
+instrument z rodziny skrzypiec",ang: viol,,,"GroupId: 2156780
+Translate: viol"
+211987,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,垂涎の的,すいえんのまと,,suien no mato,"obiekt gorliwego pożądania
+przedmiot zazdrości",,,DUPLICATE 146857,"GroupId: 2844698
+Translate: object of avid desire
+Translate: object of envy"
+211988,WORD_NOUN,,KATAKANA,,,-,ラヴィゴットソース,,ravigotto soosu,sos ravigote,ang: ravigote sauce,,,"GroupId: 2831146
+Translate: ravigote sauce
+Translate: sauce ravigote"
+211989,WORD_NOUN,,HIRAGANA,,,歌うたい,うたうたい,,uta utai,"śpiewak
+piosenkarz
+wokalista
+śpiewak nagauta (w kabuki)
+śpiewak w teatrze no",,,,"GroupId: 2831910
+Translate: singer
+Translate: vocalist
+Translate: nagauta singer (in kabuki)
+Translate: singer of Noh chants"
+211990,WORD_NOUN,,HIRAGANA,,,歌唄い,うたうたい,,uta utai,"śpiewak
+piosenkarz
+wokalista
+śpiewak nagauta (w kabuki)
+śpiewak w teatrze no",,,,"GroupId: 2831910
+Translate: singer
+Translate: vocalist
+Translate: nagauta singer (in kabuki)
+Translate: singer of Noh chants"
+211991,WORD_NOUN,,HIRAGANA,,,歌謡い,うたうたい,,uta utai,"śpiewak
+piosenkarz
+wokalista
+śpiewak nagauta (w kabuki)
+śpiewak w teatrze no",,,,"GroupId: 2831910
+Translate: singer
+Translate: vocalist
+Translate: nagauta singer (in kabuki)
+Translate: singer of Noh chants"
+211992,WORD_NOUN,,HIRAGANA,,,つる鋸,つるのこ,,tsuru noko,"tradycyjna japońska piła do drewna
+piła kabłąkowa",,,,"GroupId: 2067650
+Translate: traditional Japanese woodworking saw
+Translate: bow saw"
+211993,WORD_NOUN,,KATAKANA,,,-,フシギウオ,,fushigiuo,Gibberichthys pumilus,gatunek ryby,,,"GroupId: 2774590
+Translate: gibberfish (Gibberichthys pumilus)
+MiscInfo: uk"
+211994,WORD_NOUN,,KATAKANA,,,-,マガキガイ,,magakigai,Strombus luhuanus,zwierzę,,,"GroupId: 2774900
+Translate: strawberry conch (Strombus luhuanus)
+MiscInfo: uk"
+211995,WORD_NOUN,,KATAKANA,,,-,アルプスイワナ,,arupusu iwana,"golec zwyczajny
+golec
+pstrąg alpejski","gatunek ryby z rodziny łososiowatych, Salvelinus alpinus",,,"GroupId: 2783710
+Translate: arctic char (Salvelinus alpinus)
+MiscInfo: uk"
+211996,WORD_NOUN,,KATAKANA,,,-,フユシャク,,fuyu shaku,zimowa ćma,Geometridae,,,"GroupId: 2786070
+Translate: winter moth (Geometridae spp.)
+MiscInfo: uk"
+211997,WORD_NOUN,,KATAKANA,,,-,ジャコウレンリソウ,,jakourenrisou,groszek pachnący,"gatunek rośliny rocznej wywodzący się z rejonu śródziemnomorskiego, rozprzestrzeniający się także w innych rejonach i w wielu krajach uprawiany, Lathyrus odoratus",,,"GroupId: 2787140
+Translate: sweet pea (Lathyrus odoratus)
+MiscInfo: uk"
+211998,WORD_NOUN,,KATAKANA,,,-,シュー・アイス,,shuu aisu,???,ang: choux ice,,,"GroupId: 2836272
+Translate: ice cream puff
+AdditionalInfo: from 'choux ice'
+Translate: ice cream-filled choux pastry
+AdditionalInfo: from 'choux ice'"
+211999,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,体が空く,からだがすく,,karada ga suku,"stać się wolnym
+mieć wolne",wyrażenie idiomatyczne,,DUPLICATE 211964,"GroupId: 2840708
+Translate: to become free
+MiscInfo: id
+Translate: to get time off
+MiscInfo: id"
+212000,WORD_NOUN,,HIRAGANA,,,古代文字,こだいもんじ,,kodai monji,"starożytny skrypt
+starożytna postać
+starożytny alfabet",,,DUPLICATE 211970,"GroupId: 2844841
+Translate: ancient script
+Translate: ancient character
+Translate: ancient alphabet"
+212001,WORD_NOUN,,HIRAGANA,,,総おどり,そうおどり,,souo dori,"taniec masowy
+taniec w dużej grupie
+taniec całą trupą",,,,"GroupId: 2844680
+Translate: mass dancing
+Translate: large-group dancing
+Translate: dance with entire troupe"
+212002,WORD_NOUN,,HIRAGANA,,,狠戻,こんれい,,konrei,"działanie wbrew rozsądkowi
+naruszenie moralności, rozsądku lub sprawiedliwości",archaizm,,,"GroupId: 2844645
+Translate: acting contrary to reason
+MiscInfo: arch
+Translate: ruthless defiance
+MiscInfo: arch
+Translate: violation of morality, reason or justice
+MiscInfo: arch"
+212003,WORD_NOUN,,HIRAGANA,,,佷戻,こんれい,,konrei,"działanie wbrew rozsądkowi
+naruszenie moralności, rozsądku lub sprawiedliwości",archaizm,,,"GroupId: 2844645
+Translate: acting contrary to reason
+MiscInfo: arch
+Translate: ruthless defiance
+MiscInfo: arch
+Translate: violation of morality, reason or justice
+MiscInfo: arch"
+212004,WORD_NOUN,,HIRAGANA,,,並載,へいさい,,heisai,"???
+publikowanie pokrewnego artykułu",,,,"GroupId: 2844678
+Translate: carrying a related article (e.g. magazine)
+Translate: publishing a related article"
+212005,WORD_NOUN,,KATAKANA,,,-,ビオール,,biooru,"wiola
+instrument z rodziny skrzypiec",ang: viol,,,"GroupId: 2156780
+Translate: viol"
+212006,WORD_NOUN,,KATAKANA,,,-,ヴィオル,,vioru,"wiola
+instrument z rodziny skrzypiec",ang: viol,,,"GroupId: 2156780
+Translate: viol"
+212007,WORD_NOUN,,KATAKANA,,,-,ビオル,,bioru,"wiola
 instrument z rodziny skrzypiec",ang: viol,,,"GroupId: 2156780
 Translate: viol"
