@@ -31013,7 +31013,7 @@ Translate: desire for marriage
 Translate: marriage aspiration
 Translate: yearning for marriage"
 207481,WORD_EXPRESSION,,HIRAGANA,,,馬の耳に風,うまのみみにかぜ,,uma no mimi ni kaze,"wygłaszanie kazania głuchym
-wiatr (dmuchający) w ucho konia",wyrażenie idiomatyczne,,,"GroupId: 2834646
+wiatr (dmuchający) w ucho konia",wyrażenie idiomatyczne,,DUPLICATE 212088,"GroupId: 2834646
 Translate: preaching to the deaf
 MiscInfo: id
 Translate: wind (blowing) into a horse's ear
@@ -49190,7 +49190,7 @@ zniesławienie",,,,
 WORD_EXPRESSION",,HIRAGANA,,,脳みそを絞る,のうみそをしぼる,,noumiso o shiboru,"łamać swoją głowę
 dręczyć swój mózg",,,,
 212072,WORD_NOUN,,HIRAGANA,,,うぶ声,うぶごえ,,ubu goe,pierwszy płacz dziecka,,,,
-212073,WORD_NOUN,,HIRAGANA,,,大漁旗,たいりょうき,,tairyouki,rybacka flaga podniesiona na znak bogatego połowu,,,,
+212073,WORD_NOUN,,HIRAGANA,,,大漁旗,たいりょうき,,tairyouki,rybacka flaga podniesiona na znak bogatego połowu,,,DUPLICATE 68385,
 212074,"WORD_ADJECTIVE_NO
 WORD_ADJECTIVE_NA
 WORD_ADVERB
@@ -49202,7 +49202,7 @@ jedwabisty",,,,
 212076,WORD_NOUN,,KATAKANA,,,-,エアー・ギター,,eaa gitaa,gitara powietrzna,"udawanie, że gra się na gitarze, ang: air guitar",,,
 212077,WORD_INTERJECTION,,HIRAGANA,,,-,じゃん,,jan,"tadam!
 voila
-voilà",,,,"GroupId: 1984400
+voilà",,,DUPLICATE 73289,"GroupId: 1984400
 Translate: ta-dah!
 Translate: ta-da!
 Translate: tada!
@@ -49250,7 +49250,7 @@ MiscInfo: id
 Translate: person in a situation where they are rendered powerless
 MiscInfo: id"
 212088,WORD_EXPRESSION,,HIRAGANA,,,馬の耳に風,むまのみみにかぜ,,muma no mimi ni kaze,"wygłaszanie kazania głuchym
-wiatr (dmuchający) w ucho konia",wyrażenie idiomatyczne,,,"GroupId: 2834646
+wiatr (dmuchający) w ucho konia",wyrażenie idiomatyczne,,DUPLICATE 207481,"GroupId: 2834646
 Translate: preaching to the deaf
 MiscInfo: id
 Translate: wind (blowing) into a horse's ear
@@ -49389,3 +49389,25 @@ Translate: private second class"
 212117,WORD_NOUN,,HIRAGANA_KATAKANA,,,古代ギリシア語,こだいギリシアご,,kodai girishia go,"język starogrecki
 greka starożytna",,,,"GroupId: 2844647
 Translate: ancient Greek (language)"
+212118,WORD_NOUN,,HIRAGANA,,,いろは歌留多,いろはかるた,,iroha karuta,iroha karuta,japońska gra w karty składająca się z 47 kart polegająca na dopasowaniu czytań kart z 47 obrazkami,,DUPLICATE 43695,"GroupId: 2647680
+Translate: iroha karuta
+MiscInfo: uk
+Translate: matching card game usu. consisting of 47 reading cards and 47 picture cards
+MiscInfo: uk"
+212119,WORD_NOUN,,HIRAGANA,,,伊呂波歌留多,いろはかるた,,iroha karuta,iroha karuta,japońska gra w karty składająca się z 47 kart polegająca na dopasowaniu czytań kart z 47 obrazkami,,DUPLICATE 43742,"GroupId: 2647680
+Translate: iroha karuta
+MiscInfo: uk
+Translate: matching card game usu. consisting of 47 reading cards and 47 picture cards
+MiscInfo: uk"
+212120,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,いろはカルタ,,iroha karuta,iroha karuta,japońska gra w karty składająca się z 47 kart polegająca na dopasowaniu czytań kart z 47 obrazkami,,,"GroupId: 2647680
+Translate: iroha karuta
+MiscInfo: uk
+Translate: matching card game usu. consisting of 47 reading cards and 47 picture cards
+MiscInfo: uk"
+212121,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,いろはガルタ,,iroha garuta,iroha karuta,japońska gra w karty składająca się z 47 kart polegająca na dopasowaniu czytań kart z 47 obrazkami,,,"GroupId: 2647680
+Translate: iroha karuta
+MiscInfo: uk
+Translate: matching card game usu. consisting of 47 reading cards and 47 picture cards
+MiscInfo: uk"
+212122,WORD_NOUN,,HIRAGANA,,,２等陸尉,にとうりくい,,nitourikui,porucznik,w Japońskich Lądowych Siłach Samoobrony,,,"GroupId: 2844583
+Translate: first lieutenant (JGSDF)"
