@@ -50231,7 +50231,7 @@ MiscInfo: proverb"
 uprawianie pola ryżowego",,,,"GroupId: 2824790
 Translate: rice paddy plowing
 Translate: tilling a rice field"
-212320,WORD_NOUN,,HIRAGANA,,,青田売り,あおたうり,,aotauri,oszacowanie plonów i ceny sprzedaży pola ryżowego przed zbiorem,,,,"GroupId: 2254670
+212320,WORD_NOUN,,HIRAGANA,,,青田売り,あおたうり,,aota uri,oszacowanie plonów i ceny sprzedaży pola ryżowego przed zbiorem,,,,"GroupId: 2254670
 Translate: pre-harvest estimate of a rice field's yield and selling price"
 212321,WORD_NOUN,,HIRAGANA,,,代かき,しろかき,,shirokaki,przygotowanie pola ryżowego do sadzenia przez zalanie go wodą i obrobienie,,,,"GroupId: 2578640
 Translate: preparing a rice field for planting by flooding it and tilling the soil"
@@ -50249,7 +50249,7 @@ Translate: variation"
 analiza",,,,"GroupId: 2641250
 Translate: diagnosis
 Translate: analysis"
-212325,WORD_NOUN,,HIRAGANA,,,検問所,けんもんじょ,,kenmonjo,punkt kontrolny,,,,"GroupId: 1258060
+212325,WORD_NOUN,,HIRAGANA,,,検問所,けんもんじょ,,kenmonjo,punkt kontrolny,,,DUPLICATE 212356,"GroupId: 1258060
 Translate: check station
 Translate: checkpoint"
 212326,WORD_NOUN,,KATAKANA,,,-,ルーラル,,ruuraru,wiejski,ang: rural,,,"GroupId: 1143900
@@ -50303,3 +50303,77 @@ dygestorium
 wyciąg laboratoryjny",,,,"GroupId: 2833211
 Translate: laboratory bench
 Translate: fume hood"
+212337,WORD_NOUN,,KATAKANA,,,-,ブレイクスルー,,bureikusuruu,"punkt zwrotny
+przełom",ang: breakthrough,,,"GroupId: 2025840
+Translate: breakthrough"
+212338,WORD_NOUN,,HIRAGANA,,,笠鉾,かさぼこ,,kasaboko,rodzaj połączonej parasolki i halabardy używanej na niektórych festiwalach,,,,"GroupId: 2828624
+Translate: combined umbrella and halberd carried on floats in some festivals"
+212339,WORD_NOUN,,KATAKANA,,,-,ムギツク,,mugitsuku,Pungtungia herzi,gatunek ryby z rodziny karpiowatych,,,"GroupId: 2637540
+Translate: Pungtungia herzi (species of cyprinid)
+MiscInfo: uk"
+212340,WORD_NOUN,,KATAKANA,,,-,バシラス,,bashirasu,"bacillus (rodzaj bakterii Gram-dodatnich o walcowym kształcie, należących do typu Firmicutes)
+zarazek
+szkodnik (np. dla społeczeństwa)",,,,"GroupId: 1098720
+Translate: bacillus
+Translate: pest (e.g. to society)"
+212341,WORD_NOUN,,KATAKANA,,,-,ウチワヤンマ,,uchiwayanma,Sinictinogomphus clavatus,gatunek ważki z rodziny gadziogłówkowatych,,,"GroupId: 2231250
+Translate: Sinictinogomphus clavatus (species of clubtail dragonfly)
+MiscInfo: uk"
+212342,WORD_NOUN,,HIRAGANA,,,張番,はりばん,,hari ban,"straż
+czaty
+czuwanie",,,,"GroupId: 1797940
+Translate: lookout
+Translate: watch"
+212343,WORD_NOUN,,HIRAGANA,,,背戸茅,せとがや,,setogaya,Alopecurus japonicus,roślina,,,"GroupId: 2793030
+Translate: Japanese foxtail (Alopecurus japonicus)
+MiscInfo: uk"
+212344,WORD_NOUN,,KATAKANA,,,-,セトガヤ,,setogaya,Alopecurus japonicus,roślina,,,"GroupId: 2793030
+Translate: Japanese foxtail (Alopecurus japonicus)
+MiscInfo: uk"
+212345,WORD_NOUN,,KATAKANA,,,-,マツバイ,,matsubai,ponikło igłowate,"gatunek kosmopolitycznej rośliny z rodziny ciborowatych, Eleocharis acicularis",,,"GroupId: 2793040
+Translate: needle spikerush (Eleocharis acicularis)
+MiscInfo: uk"
+212346,WORD_NOUN,,KATAKANA,,,-,イエスズメ,,iesuzume,"wróbel zwyczajny
+wróbel
+wróbel domowy","gatunek małego ptaka osiadłego z rodziny wróbli, Passer domesticus",,,"GroupId: 2793570
+Translate: house sparrow (Passer domesticus)
+MiscInfo: uk"
+212347,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,チシマフウロ,,chishima fuuro,Geranium erianthum,gatunek kwiatu,,,"GroupId: 2794560
+Translate: woolly geranium (Geranium erianthum)
+MiscInfo: uk"
+212348,WORD_NOUN,,KATAKANA_HIRAGANA,,,ウルップ草,ウルップそう,,uruppusou,Lagotis glauca,roślina,,,"GroupId: 2794570
+Translate: weaselsnout (Lagotis glauca)
+MiscInfo: uk"
+212349,WORD_NOUN,,KATAKANA,,,-,ウルップソウ,,uruppusou,Lagotis glauca,roślina,,,"GroupId: 2794570
+Translate: weaselsnout (Lagotis glauca)
+MiscInfo: uk"
+212350,WORD_EXPRESSION,,HIRAGANA,,,理を以て非に落ちる,りをもってひにおちる,,ri o motte hi ni ochiru,"stracić argumenty pomimo, że ma się racje
+mieć prawo po swojej stronie, ale pomimo tego ulegać drugiej stronie",,,DUPLICATE 212351,"GroupId: 2838887
+Translate: to lose an argument despite being in the right
+Translate: to have the right on one's side, yet succumb to another"
+212351,WORD_EXPRESSION,,HIRAGANA,,,理を以て非に落ちる,りをもちてひにおちる,,ri o mochite hi ni ochiru,"stracić argumenty pomimo, że ma się racje
+mieć prawo po swojej stronie, ale pomimo tego ulegać drugiej stronie",,,DUPLICATE 212350,"GroupId: 2838887
+Translate: to lose an argument despite being in the right
+Translate: to have the right on one's side, yet succumb to another"
+212352,WORD_NOUN,,HIRAGANA,,,田起し,たおこし,,taokoshi,"oranie pola ryżowego
+uprawianie pola ryżowego",,,,"GroupId: 2824790
+Translate: rice paddy plowing
+Translate: tilling a rice field"
+212353,WORD_NOUN,,HIRAGANA,,,青田うり,あおたうり,,aota uri,oszacowanie plonów i ceny sprzedaży pola ryżowego przed zbiorem,,,,"GroupId: 2254670
+Translate: pre-harvest estimate of a rice field's yield and selling price"
+212354,WORD_NOUN,,HIRAGANA,,,代掻き,しろかき,,shirokaki,przygotowanie pola ryżowego do sadzenia przez zalanie go wodą i obrobienie,,,,"GroupId: 2578640
+Translate: preparing a rice field for planting by flooding it and tilling the soil"
+212355,WORD_NOUN,,HIRAGANA,,,代搔き,しろかき,,shirokaki,przygotowanie pola ryżowego do sadzenia przez zalanie go wodą i obrobienie,,,,"GroupId: 2578640
+Translate: preparing a rice field for planting by flooding it and tilling the soil"
+212356,WORD_NOUN,,HIRAGANA,,,検問所,けんもんしょ,,kenmonsho,punkt kontrolny,,,DUPLICATE 212325,"GroupId: 1258060
+Translate: check station
+Translate: checkpoint"
+212357,WORD_NOUN,,HIRAGANA,,,心組,こころぐみ,,kokoro gumi,"przygotowanie
+oczekiwanie
+przewidywanie",,,,"GroupId: 1793670
+Translate: preparation
+Translate: anticipation"
+212358,WORD_NOUN,,HIRAGANA,,,２等陸曹,にとうりくそう,,nitourikusou,sierżant pierwszego stopnia,w Japońskich Lądowych Siłach Samoobrony,,,"GroupId: 2844584
+Translate: sergeant first class (JGSDF)"
+212359,WORD_NOUN,,HIRAGANA,,,炭化珪素,たんかけいそ,,tanka kei so,węglik krzemu,materiał ceramiczny z grupy węglików o ogólnym wzorze SiC,,,"GroupId: 2171660
+Translate: silicon carbide (SiC)"
