@@ -50922,7 +50922,7 @@ Translate: distant future
 Translate: descendants
 Translate: lower classes"
 212515,WORD_NOUN,,HIRAGANA,,,救助網,きゅうじょあみ,,kyuujoami,"sieć zabezpieczająca
-odgarniacz (na przodzie lokomotywy pociągu lub tramwaju)",,,,"GroupId: 1650390
+odgarniacz (na przodzie lokomotywy pociągu lub tramwaju)",,,DUPLICATE 212571,"GroupId: 1650390
 Translate: safety net
 Translate: cowcatcher (train or streetcar)"
 212516,WORD_NOUN,,HIRAGANA,,,様子次第,ようすしだい,,yousu shidai,"w zależności od okoliczności
@@ -51034,7 +51034,7 @@ monopolowe przedsiębiorstwo",,,,"GroupId: 1455880
 Translate: monopoly business, enterprise"
 212549,WORD_NOUN,,HIRAGANA,,,芸達者,げいだっしゃ,,geidassha,"wszechstronny artysta estradowy
 wszechstronny wykonawca
-osoba wykwalifikowana w swoim rzemiośle",,,,"GroupId: 2844628
+osoba wykwalifikowana w swoim rzemiośle",,,DUPLICATE 212580,"GroupId: 2844628
 Translate: versatile entertainer
 Translate: all-round performer
 Translate: person skilled in their craft"
@@ -51114,8 +51114,80 @@ WORD_EXPRESSION",,HIRAGANA,,,変わり得ない,かわりえない,,kawari enai,
 Translate: not able to change"
 212566,WORD_NOUN,,KATAKANA,,,-,テトロドトキシン,,tetorodotokishin,tetrodotoksyna,"wielofunkcyjny związek chemiczny, silna trucizna znajdująca się w ciele niektórych gatunków ryb rozdymkokształtnych, w tym w rybach fugu wykorzystywanych w kuchni japońskiej, ang: tetrodotoxin",,,"GroupId: 1079950
 Translate: tetrodotoxin"
-212567,WORD_EXPRESSION,,HIRAGANA,,,人の口に戸は立てられず,ひとのくちにとはたてられず,,hito no kuchi ni to wa taterarezu,ludzie chcą rozmawiać,wyrażenie idiomatyczne,,,"GroupId: 2418220
+212567,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,人の口に戸は立てられず,ひとのくちにとはたてられず,,hito no kuchi ni to wa taterarezu,ludzie chcą rozmawiać,wyrażenie idiomatyczne,,,"GroupId: 2418220
 Translate: people will talk
 MiscInfo: id"
 212568,WORD_NOUN,,HIRAGANA,,,御太鼓結び,おたいこむすび,,otaiko musubi,bardzo powszechny sposób wiązania kobiecego kimono,,,,"GroupId: 2118570
+Translate: very common way of tying a woman's kimono sash"
+212569,WORD_NOUN,,KATAKANA,,,-,タンゼント,,tanzento,tangens,"funkcja trygonometryczna, ang: tangent",,,"GroupId: 1659990
+Translate: tangent (trigonometric function)"
+212570,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,末末,すえずえ,,sue zue,"odległa przyszłość
+daleka przyszłość
+potomstwo
+???",,,,"GroupId: 1595550
+Translate: distant future
+Translate: descendants
+Translate: lower classes"
+212571,WORD_NOUN,,HIRAGANA,,,救助網,きゅうじょもう,,kyuujomou,"sieć zabezpieczająca
+odgarniacz (na przodzie lokomotywy pociągu lub tramwaju)",,,DUPLICATE 212515,"GroupId: 1650390
+Translate: safety net
+Translate: cowcatcher (train or streetcar)"
+212572,WORD_NOUN,,HIRAGANA_KATAKANA,,,銀ムツ,ぎんムツ,,ginmutsu,"antar patagoński
+kłykacz","ryba z rodziny nototeniowatych, Dissostichus eleginoides",,,"GroupId: 2829617
+Translate: Patagonian toothfish (Dissostichus eleginoides)"
+212573,WORD_NOUN,,HIRAGANA,,,銀鯥,ぎんむつ,,ginmutsu,"antar patagoński
+kłykacz","ryba z rodziny nototeniowatych, Dissostichus eleginoides",,,"GroupId: 2829617
+Translate: Patagonian toothfish (Dissostichus eleginoides)"
+212574,WORD_NOUN,,KATAKANA,,,-,ギンムツ,,ginmutsu,"antar patagoński
+kłykacz","ryba z rodziny nototeniowatych, Dissostichus eleginoides",,,"GroupId: 2829617
+Translate: Patagonian toothfish (Dissostichus eleginoides)"
+212575,WORD_NOUN,,KATAKANA,,,-,ヒトリシズカ,,hitorishizuka,Chloranthus japonicus,roślina,,,"GroupId: 2816050
+Translate: Chloranthus japonicus
+MiscInfo: uk"
+212576,WORD_NOUN,,KATAKANA,,,-,ゴマリグナン,,goma rigunan,lignan sezamowy,,,,"GroupId: 2819320
+Translate: sesame lignan
+MiscInfo: uk"
+212577,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,フウトウカズラ,,fuutoukazura,Piper kadsura,"roślina, gatunek pieprzu",,,"GroupId: 2820010
+Translate: Japanese pepper (Piper kadsura)
+MiscInfo: uk"
+212578,WORD_NOUN,,KATAKANA,,,-,カビパン,,kabi pan,spleśniały chleb,,,,"GroupId: 2825840
+Translate: mouldy bread
+MiscInfo: uk"
+212579,WORD_NOUN,,KATAKANA,,,-,クロザル,,kurozaru,"makak czubaty
+czarny makak czubaty
+czubaty pawian","gatunek ssaka z rodziny koczkodanowatych, Macaca nigra",,,"GroupId: 2826169
+Translate: Celebes crested macaque (Macaca nigra)
+MiscInfo: uk
+Translate: crested black macaque
+MiscInfo: uk
+Translate: Sulawesi crested macaque
+MiscInfo: uk
+Translate: black ape
+MiscInfo: uk"
+212580,WORD_NOUN,,HIRAGANA,,,芸達者,げいたっしゃ,,geitassha,"wszechstronny artysta estradowy
+wszechstronny wykonawca
+osoba wykwalifikowana w swoim rzemiośle",,,DUPLICATE 212549,"GroupId: 2844628
+Translate: versatile entertainer
+Translate: all-round performer
+Translate: person skilled in their craft"
+212581,WORD_NOUN,,HIRAGANA,,,裏襟,うらえり,,uraeri,podszewka na szyję,,,,"GroupId: 1550250
+Translate: neckband lining"
+212582,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,要領良く,ようりょうよく,,youryou yoku,"szybko i umiejętnie
+w punkt
+treściwie
+krótko
+zwięźle",,,,"GroupId: 2840113
+Translate: quickly and skillfully
+Translate: to the point
+Translate: succinctly
+Translate: concisely"
+212583,WORD_NOUN,,HIRAGANA,,,お太鼓,おたいこ,,otaiko,bardzo powszechny sposób wiązania kobiecego kimono,skrót,,,"GroupId: 2118580
+Translate: very common way of tying a woman's kimono sash
+MiscInfo: abbr"
+212584,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,変わりえない,かわりえない,,kawari enai,nie być zdolny na zmianę,,,,"GroupId: 2564130
+Translate: not able to change"
+212585,WORD_NOUN,,HIRAGANA,,,お太鼓結び,おたいこむすび,,otaiko musubi,bardzo powszechny sposób wiązania kobiecego kimono,,,,"GroupId: 2118570
 Translate: very common way of tying a woman's kimono sash"
