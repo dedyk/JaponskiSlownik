@@ -52147,7 +52147,7 @@ Translate: polybasic acid"
 212827,WORD_NOUN,,KATAKANA_HIRAGANA,,,アジア競技大会,アジアきょうぎたいかい,,ajia kyougi taikai,Igrzyska azjatyckie,"międzynarodowa impreza sportowa organizowana w różnych krajach Azji co 4 lata, podobnie jak igrzyska olimpijskie",,,"GroupId: 1958700
 Translate: Asian Games"
 212828,WORD_NOUN,,HIRAGANA,,,百尺竿頭,ひゃくせきかんとう,,hyakuseki kantou,"najwyższy stan oświecenia
-najwyższy poziom, który można osiągnąć",,,,"GroupId: 2040720
+najwyższy poziom, który można osiągnąć",,,DUPLICATE 212884,"GroupId: 2040720
 Translate: the highest state of one's enlightenment
 MiscInfo: yoji
 Translate: the highest level one can attain
@@ -52334,7 +52334,7 @@ MiscInfo: uk"
 212874,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,世俗主義,せぞくしゅぎ,,sezoku shugi,sekularyzm,,,,"GroupId: 1374140
 Translate: secularism"
-212875,WORD_EXPRESSION,,HIRAGANA,,,楽は苦の種苦は楽の種,らくはくのたねくはらくのたね,,raku wa ku no taneku wa raku no tane,nie ma bólu bez przyjemności i nie ma przyjemności bez bólu,przysłowie,,,"GroupId: 2152790
+212875,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,楽は苦の種苦は楽の種,らくはくのたねくはらくのたね,,raku wa ku no tane ku wa raku no tane,nie ma bólu bez przyjemności i nie ma przyjemności bez bólu,przysłowie,,,"GroupId: 2152790
 Translate: there's no pain without pleasure, and there's no pleasure without pain
 MiscInfo: proverb"
 212876,WORD_NOUN,,KATAKANA,,,-,アペンディサイティス,,apendisaitisu,zapalenie wyrostka robaczkowego,ang: appendicitis,,,"GroupId: 2252320
@@ -52352,10 +52352,98 @@ Translate: second guest of honour (at a tea ceremony)
 Translate: second guest of honor"
 212881,WORD_NOUN,,HIRAGANA,,,舵柄,かじづか,,kajiduka,"drążek sterowy
 rumpel
-jarzmo",,,,"GroupId: 2572720
+jarzmo",,,DUPLICATE 212900,"GroupId: 2572720
 Translate: helm
 Translate: yoke"
 212882,WORD_NOUN,,HIRAGANA,,,社会的距離,しゃかいてききょり,,shakaiteki kyori,dystans społeczny,,,,"GroupId: 2843736
 Translate: social distance"
 212883,WORD_NOUN,,HIRAGANA,,,泳力認定,えいりょくにんてい,,eiryoku nintei,certyfikat potwierdzający zdolności pływackie,,,,"GroupId: 2723220
 Translate: swimming ability certification"
+212884,WORD_NOUN,,HIRAGANA,,,百尺竿頭,ひゃくしゃくかんとう,,hyakushaku kantou,"najwyższy stan oświecenia
+najwyższy poziom, który można osiągnąć",,,DUPLICATE 212828,"GroupId: 2040720
+Translate: the highest state of one's enlightenment
+MiscInfo: yoji
+Translate: the highest level one can attain
+MiscInfo: yoji"
+212885,WORD_NOUN,,HIRAGANA,,,更科升麻,さらしなしょうま,,sarashinashouma,"czerniec
+pluskwica
+pluskwica prosta","roślina, Cimicifuga simplex",,,"GroupId: 2828635
+Translate: bugbane (Cimicifuga simplex)
+MiscInfo: uk"
+212886,WORD_NOUN,,KATAKANA,,,-,サラシナショウマ,,sarashinashouma,"czerniec
+pluskwica
+pluskwica prosta","roślina, Cimicifuga simplex",,,"GroupId: 2828635
+Translate: bugbane (Cimicifuga simplex)
+MiscInfo: uk"
+212887,WORD_NOUN,,KATAKANA,,,-,ハリビユ,,haribiyu,Amaranthus spinosus,roślina,,,"GroupId: 2828678
+Translate: spiny amaranth (Amaranthus spinosus)
+MiscInfo: uk
+Translate: spiny pigweed
+MiscInfo: uk
+Translate: prickly amaranth
+MiscInfo: uk
+Translate: thorny amaranth
+MiscInfo: uk"
+212888,WORD_NOUN,,HIRAGANA,,,壷草,つぼくさ,,tsubokusa,wąkrotka azjatycka,"gatunek wieloletnich roślin z rodziny selerowatych, Centella asiatica",,,"GroupId: 2828694
+Translate: Asiatic pennywort (Centella asiatica)
+MiscInfo: uk
+Translate: centella
+MiscInfo: uk
+Translate: gotu kola
+MiscInfo: uk
+Translate: Indian pennywort
+MiscInfo: uk"
+212889,WORD_NOUN,,KATAKANA,,,-,ツボクサ,,tsubokusa,wąkrotka azjatycka,"gatunek wieloletnich roślin z rodziny selerowatych, Centella asiatica",,,"GroupId: 2828694
+Translate: Asiatic pennywort (Centella asiatica)
+MiscInfo: uk
+Translate: centella
+MiscInfo: uk
+Translate: gotu kola
+MiscInfo: uk
+Translate: Indian pennywort
+MiscInfo: uk"
+212890,WORD_NOUN,,KATAKANA,,,-,カミメボウキ,,kamimebouki,bazylia azjatycka,"gatunek rośliny z rodziny jasnotowatych, Ocimum tenuiflorum",,,"GroupId: 2828697
+Translate: holy basil (Ocimum tenuiflorum)
+MiscInfo: uk
+Translate: tulasi
+MiscInfo: uk
+Translate: thulasi
+MiscInfo: uk
+Translate: tulsi
+MiscInfo: uk"
+212891,WORD_NOUN,,KATAKANA,,,-,イワウメ,,iwaume,Diapensia lapponica,roślina,,,"GroupId: 2828713
+Translate: pincushion plant (Diapensia lapponica)
+MiscInfo: uk"
+212892,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,タンチョウヅル,,tanchouduru,żuraw mandżurski,"gatunek dużego ptaka z rodziny żurawi, Grus japonensis",,,"GroupId: 1837230
+Translate: red-crowned crane
+MiscInfo: uk
+Translate: Japanese crane (Grus japonensis)
+MiscInfo: uk"
+212893,WORD_NOUN,,HIRAGANA,,,丸優,まるゆう,,maru yuu,"zwolniony z podatku system oszczędnościowy
+bezpodatkowy plan małych oszczędności",,,,"GroupId: 2557590
+Translate: tax-free small-sum savings system (often used by the elderly and the disabled)
+Translate: non-tax plan for small savings"
+212894,WORD_NOUN,,KATAKANA,,,-,タイハイブーツ,,tai hai buutsu,wysokie buty sięgające do ud,ang: thigh-high boots,,,"GroupId: 2844321
+Translate: thigh-high boots"
+212895,WORD_NOUN,,KATAKANA,,,-,サイ・ハイ・ブーツ,,sai hai buutsu,wysokie buty sięgające do ud,ang: thigh-high boots,,,"GroupId: 2844321
+Translate: thigh-high boots"
+212896,WORD_NOUN,,KATAKANA,,,-,タイ・ハイ・ブーツ,,tai hai buutsu,wysokie buty sięgające do ud,ang: thigh-high boots,,,"GroupId: 2844321
+Translate: thigh-high boots"
+212897,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,褌一丁,ふんどしいっちょう,,fundoshi icchou,"(noszenie) samej przepaski biodrowej
+nic więcej niż przepaska biodrowa",,,,"GroupId: 2830557
+Translate: (wearing) a loincloth alone
+Translate: nothing but a loincloth"
+212898,WORD_NOUN,,KATAKANA,,,-,ハリギリ,,harigiri,Kalopanaks siedmioklapowy,"roślina, Kalopanax septemlobus",,,"GroupId: 2805900
+Translate: castor aralia (Kalopanax septemlobus)
+MiscInfo: uk
+Translate: prickly castor oil tree
+MiscInfo: uk"
+212899,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,楽は苦の種、苦は楽の種,らくはくのたねくはらくのたね,,raku wa ku no tane ku wa raku no tane,nie ma bólu bez przyjemności i nie ma przyjemności bez bólu,przysłowie,,,"GroupId: 2152790
+Translate: there's no pain without pleasure, and there's no pleasure without pain
+MiscInfo: proverb"
+212900,WORD_NOUN,,HIRAGANA,,,舵柄,だへい,,dahei,"drążek sterowy
+rumpel
+jarzmo",,,DUPLICATE 212881,"GroupId: 2572720
+Translate: helm
+Translate: yoke"
