@@ -52732,7 +52732,7 @@ MiscInfo: uk"
 212972,WORD_NOUN,,HIRAGANA_KATAKANA,,,花アナナス,はなアナナス,,hana ananasu,Tillandsia cyanea,"gatunek oplątwy, rośliny",,,"GroupId: 2828909
 Translate: pink quill (Tillandsia cyanea)
 MiscInfo: uk"
-212973,WORD_NOUN,,HIRAGANA,,,社会主義運動,しゃかいしゅぎうんどう,,shakaishugi undo,ruch socjalistyczny,,IGNORE_NO_JMEDICT,,
+212973,WORD_NOUN,,HIRAGANA,,,社会主義運動,しゃかいしゅぎうんどう,,shakaishugi undou,ruch socjalistyczny,,IGNORE_NO_JMEDICT,,
 212974,WORD_NOUN,,HIRAGANA,,,予備会議,よびかいぎ,,yobi kaigi,konferencja wstępna,,,,"GroupId: 1543360
 Translate: preliminary conference"
 212975,"WORD_EXPRESSION
@@ -52742,7 +52742,8 @@ najgorszy przypadek
 najgorszy scenariusz",,,,"GroupId: 2694530
 Translate: worst
 Translate: worst-case (scenario)"
-212976,WORD_NOUN,,HIRAGANA,,,山城,やましろ,,yamashiro,Yamashiro,dawna prowincja położona na południu dzisiejszej prefektury Kioto,,,"GroupId: 2845073
+212976,WORD_NOUN,,HIRAGANA,,,山城,やましろ,,yamashiro,Yamashiro,dawna prowincja położona na południu dzisiejszej prefektury Kioto,,"DUPLICATE 140779
+DUPLICATE 140839","GroupId: 2845073
 Translate: Yamashiro (former province located in the south of present-day Kyoto Prefecture)"
 212977,WORD_NOUN,,HIRAGANA,,,民俗舞踊,みんぞくぶよう,,minzoku buyou,"taniec ludowy
 taniec etniczny",,,,"GroupId: 1752710
@@ -52801,39 +52802,85 @@ Translate: the Health Insurance Act"
 212994,WORD_NOUN,,HIRAGANA,,,荷詰め,にづめ,,nidume,"pakowanie
 zapakowanie",np. w pudła,,,"GroupId: 2807160
 Translate: packing"
-212995,WORD_NOUN,,HIRAGANA,,,宮城,みやぎ,,miyagi,Miyagi (prefektura),,,,"GroupId: 2845116
+212995,WORD_NOUN,,HIRAGANA,,,宮城,みやぎ,,miyagi,Miyagi (prefektura),,,DUPLICATE 3273,"GroupId: 2845116
 Translate: Miyagi (prefecture)"
-212996,WORD_NOUN,,HIRAGANA,,,大分,おおいた,,ooita,"Ōita (miasto, prefektura)",,,,"GroupId: 2845086
+212996,WORD_NOUN,,HIRAGANA,,,大分,おおいた,,ooita,"Ōita (miasto, prefektura)",,,"DUPLICATE 7156
+DUPLICATE 18640","GroupId: 2845086
 Translate: Ōita (city, prefecture)"
-212997,WORD_NOUN,,KATAKANA,,,金糸雀,カナリア,,kanaria,kanarek,szczególnie jako wyspy kanaryjskie lub ptak (Serinus canaria),,,"GroupId: 1037910
-Translate: canary (esp. the island canary, Serinus canaria)
-MiscInfo: uk"
-212998,WORD_NOUN,,HIRAGANA,,,上野,こうずけ,,kouzuke,Kōzuke,dawna prowincja położona we współczesnej prefekturze Gunma,,,"GroupId: 2845041
+212997,WORD_NOUN,,HIRAGANA,,,上野,こうずけ,,kouzuke,Kōzuke,dawna prowincja położona we współczesnej prefekturze Gunma,,DUPLICATE 16347,"GroupId: 2845041
 Translate: Kōzuke (former province located in present-day Gunma Prefecture)"
-212999,WORD_NOUN,,HIRAGANA,,,日向,ひゅうが,,hyuuga,"Hyūga (dawna prowincja położona we współczesnej prefekturze Miyazaki)
-Hyūga (miasto)",,,,"GroupId: 2845072
+212998,WORD_NOUN,,HIRAGANA,,,日向,ひゅうが,,hyuuga,"Hyūga (dawna prowincja położona we współczesnej prefekturze Miyazaki)
+Hyūga (miasto)",,,DUPLICATE 19736,"GroupId: 2845072
 Translate: Hyūga (former province located in present-day Miyazaki Prefecture)
 Translate: Hyūga (city)"
-213000,"WORD_EXPRESSION
+212999,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,何かの縁,なにかのえん,,nanika no en,"przypadkowe spotkanie (warte skarbu)
 niespodziewane spotkanie (warte skarbu)
 związek z inną osobą uzyskany przez przypadek",,,,"GroupId: 2834196
 Translate: chance encounter (worth treasuring)
 Translate: a connection made with another person by chance"
-213001,WORD_NOUN,,HIRAGANA,,,河内,かわち,,kawachi,Kawachi,dawna prowincja położona na wschodzie dzisiejszej prefektury Osaka,,,"GroupId: 2845043
+213000,WORD_NOUN,,HIRAGANA,,,河内,かわち,,kawachi,Kawachi,dawna prowincja położona na wschodzie dzisiejszej prefektury Osaka,,DUPLICATE 82718,"GroupId: 2845043
 Translate: Kawachi (former province located in the east of present-day Osaka Prefecture)"
-213002,WORD_NOUN,,HIRAGANA,,,耐暑,たいしょ,,taisho,odporność na ciepło,,,,"GroupId: 2845031
+213001,WORD_NOUN,,HIRAGANA,,,耐暑,たいしょ,,taisho,odporność na ciepło,,,,"GroupId: 2845031
 Translate: resistance to heat
 AdditionalInfo: usu. prenom."
-213003,WORD_NOUN,,HIRAGANA,,,和泉,いずみ,,izumi,Izumi,dawna prowincja położona w południowo-zachodniej części dzisiejszej prefektury Osaka,,,"GroupId: 2845076
+213002,WORD_NOUN,,HIRAGANA,,,和泉,いずみ,,izumi,Izumi,dawna prowincja położona w południowo-zachodniej części dzisiejszej prefektury Osaka,,,"GroupId: 2845076
 Translate: Izumi (former province located in the southwest of present-day Osaka Prefecture)"
-213004,WORD_NOUN,,HIRAGANA,,,兵庫,ひょうご,,hyougo,"Hyogo (prefektura)
-arsenał",,,,"GroupId: 2845011
+213003,WORD_NOUN,,HIRAGANA,,,兵庫,ひょうご,,hyougo,"Hyogo (prefektura)
+arsenał",,,DUPLICATE 213004,"GroupId: 2845011
 Translate: Hyogo (prefecture)
 Translate: armory
 Translate: armoury
 Translate: arsenal"
-213005,WORD_NOUN,,HIRAGANA,,,兵庫,へいこ,,heiko,arsenał,,,,"GroupId: 2845011
+213004,WORD_NOUN,,HIRAGANA,,,兵庫,へいこ,,heiko,arsenał,,,DUPLICATE 213003,"GroupId: 2845011
 Translate: armory
 Translate: armoury
 Translate: arsenal"
+213005,WORD_NOUN,,KATAKANA,,,-,ハリモミ,,harimomi,"świerk szydlasty
+świerk tygrysi",Picea polita,,,"GroupId: 2263550
+Translate: tiger-tail spruce (Picea polita)
+MiscInfo: uk"
+213006,WORD_NOUN,,HIRAGANA,,,譬え歌,たとえうた,,tatoe uta,"poemat metaforyczny (z Man'yōshū)
+metaforyczna forma (waka)",,,,"GroupId: 2224540
+Translate: metaphorical poem (of the Man'yōshū)
+Translate: metaphorical form (of waka)"
+213007,WORD_NOUN,,HIRAGANA,,,喩え歌,たとえうた,,tatoe uta,"poemat metaforyczny (z Man'yōshū)
+metaforyczna forma (waka)",,,,"GroupId: 2224540
+Translate: metaphorical poem (of the Man'yōshū)
+Translate: metaphorical form (of waka)"
+213008,WORD_NOUN,,KATAKANA,,,-,オマキザル,,omakizaru,[małpa z rodziny Cebidae],,,,"GroupId: 2197860
+Translate: any monkey of family Cebidae (esp. the capuchin monkeys of genus Cebus, but also including marmosets, tamarins and squirrel monkeys)
+MiscInfo: uk"
+213009,WORD_NOUN,,KATAKANA,,,-,チシマギキョウ,,chishima gikyou,Campanula chamissonis,kwiat,,,"GroupId: 2828715
+Translate: hairyflower bellflower (Campanula chamissonis)
+MiscInfo: uk"
+213010,WORD_NOUN,,KATAKANA,,,-,スズメノコビエ,,suzume no kobie,Paspalum scrobiculatum,roślina,,,"GroupId: 2828853
+Translate: Kodo millet (Paspalum scrobiculatum)
+MiscInfo: uk"
+213011,WORD_NOUN,,KATAKANA,,,-,ヒトエグサ,,hitoegusa,hitoegusa,"roślina, Monostroma nitidum",,,"GroupId: 2828866
+Translate: hitoegusa (Monostroma nitidum)
+MiscInfo: uk"
+213012,WORD_NOUN,,HIRAGANA,,,籠目昆布,かごめこんぶ,,kagome konbu,kagome kombu,"glony, Saccharina sculpera",,,"GroupId: 2828870
+Translate: kagome kombu (Saccharina sculpera)
+MiscInfo: uk"
+213013,WORD_NOUN,,KATAKANA,,,-,ガゴメコンブ,,gagome konbu,kagome kombu,"glony, Saccharina sculpera",,,"GroupId: 2828870
+Translate: kagome kombu (Saccharina sculpera)
+MiscInfo: uk"
+213014,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ハナアナナス,,hana ananasu,Tillandsia cyanea,"gatunek oplątwy, rośliny",,,"GroupId: 2828909
+Translate: pink quill (Tillandsia cyanea)
+MiscInfo: uk"
+213015,WORD_NOUN,,HIRAGANA,,,包丁捌き,ほうちょうさばき,,houchou sabaki,umiejętne posługiwanie się nożem kuchennym,,,,"GroupId: 2842294
+Translate: skillful handling of a kitchen knife"
+213016,WORD_NOUN,,KATAKANA,,,-,ハリラヤ・ハジ,,hari raya haji,Id al-Adha,"najważniejsze święto muzułmańskie, rozpoczynające się 10. dnia miesiąca zu al-hidżdża i trwające 3–4 dni",,,"GroupId: 2840183
+Translate: Hari Raya Haji (Islamic holiday)
+Translate: Eid al-Adha
+Translate: Festival of the Sacrifice"
+213017,WORD_NOUN,,HIRAGANA,,,合挽き肉,あいびきにく,,ai biki niku,(mieszanka) mielonej wołowiny i wieprzowiny,,,,"GroupId: 2835189
+Translate: (mixture of) ground beef and pork"
+213018,WORD_NOUN,,HIRAGANA,,,合いびき肉,あいびきにく,,ai biki niku,(mieszanka) mielonej wołowiny i wieprzowiny,,,,"GroupId: 2835189
+Translate: (mixture of) ground beef and pork"
+213019,WORD_NOUN,,HIRAGANA,,,合挽肉,あいびきにく,,ai biki niku,(mieszanka) mielonej wołowiny i wieprzowiny,,,,"GroupId: 2835189
+Translate: (mixture of) ground beef and pork"
+213020,WORD_NOUN,,HIRAGANA,,,荷づめ,にづめ,,nidume,"pakowanie
+zapakowanie",np. w pudła,,,"GroupId: 2807160
+Translate: packing"
