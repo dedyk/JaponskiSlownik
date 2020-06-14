@@ -8993,7 +8993,6 @@ DUPLICATE 61721",
 oświadczenie
 proklamacja
 wzmianka
-wzmianka
 wspomnienie
 napomknienie",,,,"GroupId: 1756400
 Translate: declaration
@@ -11023,7 +11022,7 @@ Translate: soldier fly (any fly of family Stratiomyidae, esp. species Stratiomys
 MiscInfo: uk"
 202796,WORD_NOUN,,HIRAGANA,,,水部,みずのぶ,,mizunobu,element podstawowy kanji woda,,,,"GroupId: 1910170
 Translate: water radical"
-202797,WORD_NOUN,,HIRAGANA,,,-,みと,,mito,genitalia,"archaizm, honoryfikatywnie",,,"GroupId: 2841093
+202797,WORD_NOUN,,HIRAGANA,,,-,みと,,mito,genitalia,"archaizm, honoryfikatywnie",,DUPLICATE 213129,"GroupId: 2841093
 Translate: genitalia
 MiscInfo: arch
 MiscInfo: hon"
@@ -53119,7 +53118,7 @@ Translate: dullness"
 213090,WORD_NOUN,,KATAKANA,,,-,バセンジー,,basenjii,basenji,"jedna z ras psów, należąca do grupy szpiców i psów pierwotnych, zaklasyfikowana do sekcji ras pierwotnych",,,"GroupId: 2759270
 Translate: basenji (dog breed)
 Translate: Congo dog"
-213091,WORD_NOUN,,HIRAGANA,,,星口動物,ほしぐちどうぶつ,,hoshiguchi doubutsu,sikwiaki,"niewielka grupa wyłącznie morskich, pierwoustych zwierząt bezkręgowych zaliczanych do lofotrochorowców, klasyfikowana najczęściej w randze typu, blisko spokrewniona z pierścienicami, Sipuncula",,,"GroupId: 2265420
+213091,WORD_NOUN,,HIRAGANA,,,星口動物,ほしぐちどうぶつ,,hoshiguchi doubutsu,sikwiaki,"niewielka grupa wyłącznie morskich, pierwoustych zwierząt bezkręgowych zaliczanych do lofotrochorowców, klasyfikowana najczęściej w randze typu, blisko spokrewniona z pierścienicami, Sipuncula",,DUPLICATE 213145,"GroupId: 2265420
 Translate: sipunculan (any worm of phylum Sipuncula)
 Translate: sipunculid"
 213092,WORD_NOUN,,HIRAGANA,,,口凌ぎ,くちしのぎ,,kuchi shinogi,"dziadowanie
@@ -53228,7 +53227,7 @@ Translate: scuffle"
 213124,WORD_NOUN,,HIRAGANA,,,公共広告,こうきょうこうこく,,koukyou koukoku,"reklama społeczna
 kampania społeczna",,IGNORE_NO_JMEDICT,,
 213125,WORD_NOUN,,HIRAGANA,,,三天,さんてん,,santen,"trzy bóstwa (Marici, Mahakala, Sarasvati, buddyzm)
-trzy niebiańskie istoty (Shiva, Vishnu and Brahma)",,,,"GroupId: 2845037
+trzy niebiańskie istoty (Shiva, Vishnu and Brahma)",,,DUPLICATE 213159,"GroupId: 2845037
 Translate: the three deities (Marici, Mahakala, Sarasvati)
 Translate: the three celestials (Shiva, Vishnu and Brahma)"
 213126,WORD_NOUN,,HIRAGANA,,,福井,ふくい,,fukui,Fukui,miasto i prefektura,,,"GroupId: 2845102
@@ -53239,7 +53238,7 @@ Translate: Ehime (prefecture)"
 wysyłanie na północ",,,,"GroupId: 2844984
 Translate: sending to North Korea
 Translate: sending north"
-213129,WORD_NOUN,,HIRAGANA,,,水戸,みと,,mito,Mito,miasto w Ibaraki,,,"GroupId: 2845114
+213129,WORD_NOUN,,HIRAGANA,,,水戸,みと,,mito,Mito,miasto w Ibaraki,,DUPLICATE 202797,"GroupId: 2845114
 Translate: Mito (city in Ibaraki)"
 213130,WORD_NOUN,,HIRAGANA,,,彳亍,てきちょく,,tekichoku,"zatrzymanie się w trasie
 stanie nieruchomo
@@ -53308,3 +53307,78 @@ napastliwość
 wojowniczość",,,,"GroupId: 2789020
 Translate: aggressiveness
 Translate: combativeness"
+213145,WORD_NOUN,,HIRAGANA,,,星口動物,せいこうどうぶつ,,seikou doubutsu,sikwiaki,"niewielka grupa wyłącznie morskich, pierwoustych zwierząt bezkręgowych zaliczanych do lofotrochorowców, klasyfikowana najczęściej w randze typu, blisko spokrewniona z pierścienicami, Sipuncula",,DUPLICATE 213091,"GroupId: 2265420
+Translate: sipunculan (any worm of phylum Sipuncula)
+Translate: sipunculid"
+213146,WORD_NOUN,,HIRAGANA,,,名宣座,なのりざ,,nanori za,w głębi sceny po prawej stronie,"w teatrze no, mało znane słowo",,,"GroupId: 2649150
+Translate: upstage right (on a noh stage)
+MiscInfo: obsc"
+213147,WORD_NOUN,,HIRAGANA,,,段別,たんべつ,,tanbetsu,"powierzchnia
+areał
+obszar lądowy
+zaznaczanie pól w jednostkach tan",,,,"GroupId: 1480970
+Translate: acreage
+Translate: land area
+Translate: marking off fields in units of tan"
+213148,WORD_NOUN,,KATAKANA,,,-,キュー・カード,,kyuu kaado,"karta z notatkami
+karta ze wskazówkami",ang: cue card,,,"GroupId: 2842069
+Translate: cue card (television, etc.)"
+213149,WORD_NOUN,,KATAKANA,,,-,ドングリキツツキ,,dongurikitsutsuki,dzięciur żołędziowy,"gatunek średniej wielkości ptaka z podrodziny dzięciołów w rodzinie dzięciołowatych, Melanerpes formicivorus",,,"GroupId: 2829733
+Translate: acorn woodpecker (Melanerpes formicivorus)
+MiscInfo: uk"
+213150,WORD_NOUN,,KATAKANA,,,-,チョウノスケソウ,,chounosukesou,dębik ośmiopłatkowy,"gatunek roślin z rodziny różowatych, Dryas octopetala",,,"GroupId: 2830128
+Translate: mountain avens (Dryas octopetala)
+MiscInfo: uk
+Translate: eightpetal mountain-avens
+MiscInfo: uk
+Translate: white dryas
+MiscInfo: uk
+Translate: white dryad
+MiscInfo: uk"
+213151,WORD_NOUN,,HIRAGANA,,,犬辛子,いぬがらし,,inugarashi,Rorippa indica,roślina,,,"GroupId: 2830422
+Translate: variableleaf yellowcress (Rorippa indica)
+MiscInfo: uk"
+213152,WORD_NOUN,,KATAKANA,,,-,イヌガラシ,,inugarashi,Rorippa indica,roślina,,,"GroupId: 2830422
+Translate: variableleaf yellowcress (Rorippa indica)
+MiscInfo: uk"
+213153,WORD_NOUN,,KATAKANA,,,-,アブラガレイ,,aburagarei,Atheresthes evermanni,gatunek ryby,,,"GroupId: 2830424
+Translate: Kamchatka flounder (Atheresthes evermanni)
+MiscInfo: uk"
+213154,WORD_NOUN,,HIRAGANA,,,猩猩海老,しょうじょうえび,,shoujou ebi,Glyphus marsupialis,gatunek krewetki,,,"GroupId: 2830436
+Translate: kangaroo shrimp (Glyphus marsupialis)
+MiscInfo: uk"
+213155,WORD_NOUN,,HIRAGANA,,,猩々蝦,しょうじょうえび,,shoujou ebi,Glyphus marsupialis,gatunek krewetki,,,"GroupId: 2830436
+Translate: kangaroo shrimp (Glyphus marsupialis)
+MiscInfo: uk"
+213156,WORD_NOUN,,HIRAGANA,,,猩々海老,しょうじょうえび,,shoujou ebi,Glyphus marsupialis,gatunek krewetki,,,"GroupId: 2830436
+Translate: kangaroo shrimp (Glyphus marsupialis)
+MiscInfo: uk"
+213157,WORD_NOUN,,KATAKANA,,,-,ショウジョウエビ,,shoujou ebi,Glyphus marsupialis,gatunek krewetki,,,"GroupId: 2830436
+Translate: kangaroo shrimp (Glyphus marsupialis)
+MiscInfo: uk"
+213158,WORD_NOUN,,HIRAGANA,,,写生帳,しゃせいちょう,,shaseichou,szkicownik,,,,"GroupId: 1594670
+Translate: sketchbook"
+213159,WORD_NOUN,,HIRAGANA,,,三天,さんでん,,sanden,"trzy bóstwa (Marici, Mahakala, Sarasvati, buddyzm)
+trzy niebiańskie istoty (Shiva, Vishnu and Brahma)",,,DUPLICATE 213125,"GroupId: 2845037
+Translate: the three deities (Marici, Mahakala, Sarasvati)
+Translate: the three celestials (Shiva, Vishnu and Brahma)"
+213160,WORD_NOUN,,HIRAGANA,,,寸翰,すんかん,,sunkan,"krótki list
+krótka notatka
+mój list (pokornie)",mało znane słowo,,,"GroupId: 2844470
+Translate: short letter
+MiscInfo: obsc
+Translate: brief note
+MiscInfo: obsc
+Translate: (one's) letter
+MiscInfo: hum
+MiscInfo: obsc"
+213161,WORD_NOUN,,HIRAGANA,,,寸閑,すんかん,,sunkan,chwila wolnego czasu,przestarzałe słowo,,,"GroupId: 2844749
+Translate: moment's leisure
+MiscInfo: obs"
+213162,WORD_NOUN,,KATAKANA,,,-,キンシコウ,,kinshikou,"rokselana złocista
+rokselana","gatunek ssaka z rodziny koczkodanowatych, Rhinopithecus roxellana",,,"GroupId: 2826180
+Translate: golden snub-nosed monkey (Rhinopithecus roxellana)
+MiscInfo: uk"
+213163,WORD_NOUN,,KATAKANA_HIRAGANA,,,ブラジル・ポルトガル語,ブラジルポルトガルご,,burajiru porutogaru go,brazylijska odmiana języka portugalskiego,,,,"GroupId: 2838114
+Translate: Brazilian Portuguese
+Translate: form of Portuguese spoken in Brazil"
