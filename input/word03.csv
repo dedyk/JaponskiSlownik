@@ -53394,7 +53394,7 @@ MiscInfo: obsc"
 213168,WORD_NOUN,,HIRAGANA,,,自然人類学,しぜんじんるいがく,,shizen jinruigaku,antropologia fizyczna,,,,"GroupId: 2677310
 Translate: physical anthropology"
 213169,WORD_NOUN,,HIRAGANA,,,日本手話,にほんしゅわ,,nihon shuwa,"Japoński Język Migowy
-JSL (ang: Japanese Sign Language)",,,,"GroupId: 2536820
+JSL (ang: Japanese Sign Language)",,,DUPLICATE 213219,"GroupId: 2536820
 Translate: Japanese Sign Language
 Translate: JSL"
 213170,WORD_NOUN,,KATAKANA,,,-,マジコン,,majikon,"kopiarka gier
@@ -53405,7 +53405,7 @@ Translate: backup device
 AdditionalInfo: from マジックコンピューター"
 213171,WORD_NOUN,,KATAKANA,,,-,シムーン,,shimuun,???,ang: simoon,,,"GroupId: 1061250
 Translate: simoon"
-213172,WORD_NOUN,,HIRAGANA,,,三宝柑,さんぼうかん,,sanboukan,Citrus sulcata,japoński owoc cytrusowy,,,"GroupId: 2646620
+213172,WORD_NOUN,,HIRAGANA,,,三宝柑,さんぼうかん,,sanboukan,Citrus sulcata,japoński owoc cytrusowy,,DUPLICATE 213220,"GroupId: 2646620
 Translate: sanbokan sour orange (Citrus sulcata)"
 213173,WORD_NOUN,,HIRAGANA,,,試算表,しさんひょう,,shisanhyou,arkusz z bilansem próbnym,,,,"GroupId: 1312470
 Translate: trial balance sheet"
@@ -53511,7 +53511,7 @@ Translate: one of the six heavens of the desire realm"
 213206,WORD_NOUN,,HIRAGANA,,,横っ飛び,よこっとび,,yokottobi,"skok w bok
 odskoczenie na bok
 latanie na boki
-bieg w pośpiechu (z ciałem wygiętym ku przodowi) ",,,,"GroupId: 2842002
+bieg w pośpiechu (z ciałem wygiętym ku przodowi)",,,,"GroupId: 2842002
 Translate: jumping sideways
 Translate: flying sideways
 Translate: running hurriedly (with one's body bent forward)"
@@ -53529,7 +53529,7 @@ Translate: holy basil (Ocimum tenuiflorum)
 Translate: tulasi
 Translate: thulasi
 Translate: tulsi"
-213211,WORD_NOUN,,KATAKANA,,,-,ホーリーバジル,,hooriibajiru,bazylia azjatycka,"gatunek rośliny z rodziny jasnotowatych, Ocimum tenuiflorum",,,"GroupId: 2828816
+213211,WORD_NOUN,,KATAKANA,,,-,ホーリーバジル,,hoorii bajiru,bazylia azjatycka,"gatunek rośliny z rodziny jasnotowatych, Ocimum tenuiflorum",,,"GroupId: 2828816
 Translate: holy basil (Ocimum tenuiflorum)
 Translate: tulasi
 Translate: thulasi
@@ -53548,3 +53548,82 @@ Translate: Akita (city, prefecture)"
 Translate: Aichi (prefecture)"
 213218,WORD_NOUN,,HIRAGANA,,,石川,いしかわ,,ishikawa,Ishikawa,prefektura,,,"GroupId: 2845103
 Translate: Ishikawa (prefecture)"
+213219,WORD_NOUN,,HIRAGANA,,,日本手話,にっぽんしゅわ,,nippon shuwa,"Japoński Język Migowy
+JSL (ang: Japanese Sign Language)",,,DUPLICATE 213169,"GroupId: 2536820
+Translate: Japanese Sign Language
+Translate: JSL"
+213220,WORD_NOUN,,HIRAGANA,,,三宝柑,さんぽうかん,,sanpoukan,Citrus sulcata,japoński owoc cytrusowy,,DUPLICATE 213172,"GroupId: 2646620
+Translate: sanbokan sour orange (Citrus sulcata)"
+213221,WORD_NOUN,,KATAKANA,,,-,サンボウカン,,sanboukan,Citrus sulcata,japoński owoc cytrusowy,,,"GroupId: 2646620
+Translate: sanbokan sour orange (Citrus sulcata)"
+213222,WORD_NOUN,,KATAKANA,,,-,サンポウカン,,sanpoukan,Citrus sulcata,japoński owoc cytrusowy,,,"GroupId: 2646620
+Translate: sanbokan sour orange (Citrus sulcata)"
+213223,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオバヤナギ,,oobayanagi,Salix urbaniana,gatunek wierzby,,,"GroupId: 2693830
+Translate: Salix urbaniana (species of willow)
+MiscInfo: uk"
+213224,WORD_NOUN,,HIRAGANA,,,浴衣掛け,ゆかたがけ,,yukata gake,"noszenie yukaty
+swoje nieformalne letnie kimono",,,,"GroupId: 1676600
+Translate: wearing a yukata
+Translate: (in) one's informal summer kimono"
+213225,WORD_NOUN,,HIRAGANA,,,ゆかた掛け,ゆかたがけ,,yukata gake,"noszenie yukaty
+swoje nieformalne letnie kimono",,,,"GroupId: 1676600
+Translate: wearing a yukata
+Translate: (in) one's informal summer kimono"
+213226,WORD_NOUN,,KATAKANA,,,-,エンビコウ,,enbikou,bocian sinodzioby,"gatunek dużego ptaka z rodziny bocianów, zamieszkujący Amerykę Południową, Ciconia maguari",,,"GroupId: 2830743
+Translate: maguari stork (Ciconia maguari)
+MiscInfo: uk"
+213227,WORD_NOUN,,KATAKANA,,,-,ズグロハゲコウ,,zuguro hagekou,"żabiru amerykański
+żabiru argentyński",Jabiru mycteria,,,"GroupId: 2830744
+Translate: jabiru (Jabiru mycteria)
+MiscInfo: uk"
+213228,WORD_NOUN,,KATAKANA,,,-,コモンフグ,,komon fugu,Takifugu poecilonotus,gatunek ryby,,,"GroupId: 2830883
+Translate: finepatterned puffer (Takifugu poecilonotus)
+MiscInfo: uk"
+213229,WORD_NOUN,,KATAKANA,,,-,ヒガンフグ,,higan fugu,Takifugu pardalis,gatunek ryby,,,"GroupId: 2830884
+Translate: panther puffer (Takifugu pardalis)
+MiscInfo: uk"
+213230,WORD_NOUN,,KATAKANA,,,-,ラッパウニ,,rappauni,Toxopneustes pileolus,,,,"GroupId: 2830949
+Translate: flower urchin (Toxopneustes pileolus)
+MiscInfo: uk"
+213231,WORD_NOUN,,KATAKANA,,,-,アカニシ,,akanishi,Rapana venosa,"gatunek dużego, drapieżnego ślimaka z rodziny rozkolcowatych, występującego pierwotnie w Pacyfiku, u wybrzeży wschodniej i południowo-wschodniej Azji",,,"GroupId: 2439050
+Translate: veined rapa whelk (Rapana venosa)
+MiscInfo: uk"
+213232,WORD_NOUN,,HIRAGANA,,,３等親,さんとうしん,,santoushin,trzeci stopień pokrewieństwa,,,,"GroupId: 1814330
+Translate: third degree of kinship"
+213233,WORD_NOUN,,HIRAGANA,,,山立,やまだち,,yamadachi,"bandyta
+rozbójnik
+zbójnik
+łowca
+starożytne społeczności łowieckie w Tōhoku",,,,"GroupId: 2666280
+Translate: bandit
+Translate: brigand
+Translate: hunter
+Translate: ancient hunting communities in Tōhoku"
+213234,WORD_NOUN,,KATAKANA_HIRAGANA,,,ロウソク立て,ロウソクたて,,rousoku tate,"świecznik
+lichtarz",,,,"GroupId: 2831283
+Translate: candle holder"
+213235,WORD_NOUN,,HIRAGANA,,,蝋燭立て,ろうそくたて,,rousoku tate,"świecznik
+lichtarz",,,,"GroupId: 2831283
+Translate: candle holder"
+213236,WORD_NOUN,,HIRAGANA,,,蠟燭立て,ろうそくたて,,rousoku tate,"świecznik
+lichtarz",,,,"GroupId: 2831283
+Translate: candle holder"
+213237,WORD_NOUN,,HIRAGANA,,,横っ跳び,よこっとび,,yokottobi,"skok w bok
+odskoczenie na bok
+latanie na boki
+bieg w pośpiechu (z ciałem wygiętym ku przodowi)",,,,"GroupId: 2842002
+Translate: jumping sideways
+Translate: flying sideways
+Translate: running hurriedly (with one's body bent forward)"
+213238,WORD_NOUN,,HIRAGANA,,,横っとび,よこっとび,,yokottobi,"skok w bok
+odskoczenie na bok
+latanie na boki
+bieg w pośpiechu (z ciałem wygiętym ku przodowi)",,,,"GroupId: 2842002
+Translate: jumping sideways
+Translate: flying sideways
+Translate: running hurriedly (with one's body bent forward)"
+213239,WORD_NOUN,,KATAKANA,,,-,ホーリー・バジル,,hoorii bajiru,bazylia azjatycka,"gatunek rośliny z rodziny jasnotowatych, Ocimum tenuiflorum",,,"GroupId: 2828816
+Translate: holy basil (Ocimum tenuiflorum)
+Translate: tulasi
+Translate: thulasi
+Translate: tulsi"
