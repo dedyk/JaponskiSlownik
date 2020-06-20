@@ -54922,7 +54922,7 @@ Translate: number system"
 Translate: no-fly zone"
 213586,WORD_NOUN,,HIRAGANA,,,浸透圧,しんとうあつ,,shintouatsu,ciśnienie osmotyczne,,,,"GroupId: 1939120
 Translate: osmotic pressure"
-213587,WORD_NOUN,,HIRAGANA,,,熊蟻,くまあり,,kumaari,Camponotus japonicus,"gatunek japońskiej mrówki, mało znane słowo",,,"GroupId: 2231030
+213587,WORD_NOUN,,HIRAGANA,,,熊蟻,くまあり,,kuma ari,Camponotus japonicus,"gatunek japońskiej mrówki, mało znane słowo",,,"GroupId: 2231030
 Translate: Japanese carpenter ant (Camponotus japonicus)
 MiscInfo: obsc
 MiscInfo: uk"
@@ -54966,7 +54966,7 @@ Translate: snack (to have with a drink)
 MiscInfo: uk
 Translate: side dish
 MiscInfo: uk"
-213598,WORD_NOUN,,HIRAGANA,,,頭虱,あたまじらみ,,atamajirami,wesz głowowa,Pediculus humanus capitis,,,"GroupId: 1450960
+213598,WORD_NOUN,,HIRAGANA,,,頭虱,あたまじらみ,,atama jirami,wesz głowowa,Pediculus humanus capitis,,,"GroupId: 1450960
 Translate: head louse (Pediculus humanus capitis)
 MiscInfo: uk
 Translate: head lice
@@ -55033,7 +55033,7 @@ wspomnienie o",,,,"GroupId: 1618680
 Translate: mention
 Translate: reference to
 Translate: touching upon"
-213614,WORD_NOUN,,HIRAGANA,,,菊重,きくがさね,,kikugasane,"chryzantema
+213614,WORD_NOUN,,HIRAGANA,,,菊重,きくがさね,,kiku gasane,"chryzantema
 kolorystyka dla kasane",,,,"GroupId: 2775960
 Translate: chrysanthemum
 Translate: color scheme for a kasane"
@@ -55048,7 +55048,7 @@ zapoczątkowanie",,,,"GroupId: 2840204
 Translate: origin of an affair
 Translate: spark that lit the fuse
 Translate: beginning"
-213617,WORD_NOUN,,KATAKANA,,,-,ドアパンチ,,doapanchi,uderzenie w sąsiedni samochód drzwiami samochodu,"kolokwializm, ang: door punch",,,"GroupId: 2841284
+213617,WORD_NOUN,,KATAKANA,,,-,ドアパンチ,,doa panchi,uderzenie w sąsiedni samochód drzwiami samochodu,"kolokwializm, ang: door punch",,,"GroupId: 2841284
 Translate: hitting an adjacent car with a car door
 MiscInfo: col"
 213618,WORD_NOUN,,HIRAGANA,,,爆圧,ばくあつ,,bakuatsu,"ciśnienie z wybuchu
@@ -55059,12 +55059,12 @@ Translate: blast pressure
 Translate: shock wave"
 213619,WORD_NOUN,,HIRAGANA_KATAKANA,,,全ツッパ,ぜんツッパ,,zen tsuppa,???,Mahjong,,,"GroupId: 2841991
 Translate: going all out without regarding an opponent's hand"
-213620,WORD_NOUN,,HIRAGANA,,,櫛板,くしいた,,kushiita,???,,,,"GroupId: 2842216
+213620,WORD_NOUN,,HIRAGANA,,,櫛板,くしいた,,kushi ita,???,,,DUPLICATE 213644,"GroupId: 2842216
 Translate: pecten
 Translate: comb plate
 Translate: comb plate (of an escalator, etc.)"
 213621,WORD_NOUN,,HIRAGANA,,,野合戦,のがっせん,,nogassen,"bitwa na zewnątrz
-bitwa na otwartym polu",,,,"GroupId: 2842317
+bitwa na otwartym polu",,,DUPLICATE 213647,"GroupId: 2842317
 Translate: battle in the open
 Translate: battle on an open field"
 213622,WORD_EXPRESSION,,HIRAGANA,,,麒麟も老いぬれば駑馬に劣る,きりんもおいぬればどばにおとる,,kirin mo oinureba doba ni otoru,nawet wybitna osoba staje się gorsza z wiekiem,przysłowie,,,"GroupId: 2843476
@@ -55090,3 +55090,113 @@ Translate: government of convenience
 MiscInfo: yoji
 Translate: cabinet created through an unholy alliance
 MiscInfo: yoji"
+213626,WORD_NOUN,,KATAKANA,,,-,アトモスフェア,,atomosufea,atmosfera,ang: atmosphere,,,"GroupId: 1016870
+Translate: atmosphere"
+213627,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,繭を掛ける,まゆをかける,,mayu o kakeru,zakręcać kokon,,,,"GroupId: 1525700
+Translate: to spin a cocoon"
+213628,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クマアリ,,kuma ari,Camponotus japonicus,"gatunek japońskiej mrówki, mało znane słowo",,,"GroupId: 2231030
+Translate: Japanese carpenter ant (Camponotus japonicus)
+MiscInfo: obsc
+MiscInfo: uk"
+213629,WORD_EXPRESSION,,HIRAGANA,,,何時何時迄も,いついつまでも,,itsu itsu made mo,"na nieokreślony czas
+przez długi czas",,,,"GroupId: 1188940
+Translate: indefinitely
+MiscInfo: uk
+Translate: for a long time
+MiscInfo: uk"
+213630,WORD_NOUN,,HIRAGANA,,,摘まみ物,つまみもの,,tsumami mono,"przekąska (do picia)
+dodatek do dania głównego
+przystawka",,,,"GroupId: 1437050
+Translate: snack (to have with a drink)
+MiscInfo: uk
+Translate: side dish
+MiscInfo: uk"
+213631,WORD_NOUN,,HIRAGANA,,,撮み物,つまみもの,,tsumami mono,"przekąska (do picia)
+dodatek do dania głównego
+przystawka",,,,"GroupId: 1437050
+Translate: snack (to have with a drink)
+MiscInfo: uk
+Translate: side dish
+MiscInfo: uk"
+213632,WORD_NOUN,,HIRAGANA,,,頭じらみ,あたまじらみ,,atama jirami,wesz głowowa,Pediculus humanus capitis,,,"GroupId: 1450960
+Translate: head louse (Pediculus humanus capitis)
+MiscInfo: uk
+Translate: head lice
+MiscInfo: uk"
+213633,WORD_NOUN,,KATAKANA,,,-,アタマジラミ,,atama jirami,wesz głowowa,Pediculus humanus capitis,,,"GroupId: 1450960
+Translate: head louse (Pediculus humanus capitis)
+MiscInfo: uk
+Translate: head lice
+MiscInfo: uk"
+213634,WORD_ADVERB,,HIRAGANA,,,端無くも,はしなくも,,hashinakumo,"niespodziewanie
+nieoczekiwanie
+przypadkiem",,,,"GroupId: 1704800
+Translate: unexpectedly
+MiscInfo: uk
+Translate: by chance or accident
+MiscInfo: uk"
+213635,WORD_NOUN,,HIRAGANA,,,七星瓢虫,ななほしてんとう,,nanahoshi tentou,biedronka siedmiokropka,"gatunek chrząszcza z rodziny biedronkowatych, Coccinella septempunctata",,,"GroupId: 1721430
+Translate: seven-spot ladybird
+MiscInfo: uk
+Translate: seven-spotted ladybug (Coccinella septempunctata)
+MiscInfo: uk"
+213636,WORD_NOUN,,KATAKANA,,,-,ナナホシテントウ,,nanahoshi tentou,biedronka siedmiokropka,"gatunek chrząszcza z rodziny biedronkowatych, Coccinella septempunctata",,,"GroupId: 1721430
+Translate: seven-spot ladybird
+MiscInfo: uk
+Translate: seven-spotted ladybug (Coccinella septempunctata)
+MiscInfo: uk"
+213637,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,天下ご免,てんかごめん,,tenka gomen,"licencjonowany
+dyplomowany
+prawowity
+uprawniony",,,,"GroupId: 2032040
+Translate: licensed
+Translate: chartered
+Translate: officially allowed
+Translate: legitimate"
+213638,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,願をたてる,がんをたてる,,gan o tateru,"składać życzenia (do bogów)
+modlić się (o spełnienie życzenia)",,,,"GroupId: 2843420
+Translate: to make a wish (to a god)
+Translate: to pray (for the fulfilment of a wish)"
+213639,"WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,シーゾナル,,shiizonaru,sezonowy,ang: seasonal,,,"GroupId: 2791760
+Translate: seasonal"
+213640,WORD_NOUN,,HIRAGANA,,,菊襲,きくがさね,,kiku gasane,"chryzantema
+kolorystyka dla kasane",,,,"GroupId: 2775960
+Translate: chrysanthemum
+Translate: color scheme for a kasane"
+213641,WORD_NOUN,,HIRAGANA,,,菊重ね,きくがさね,,kiku gasane,"chryzantema
+kolorystyka dla kasane",,,,"GroupId: 2775960
+Translate: chrysanthemum
+Translate: color scheme for a kasane"
+213642,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,ことの発端,ことのほったん,,koto no hottan,"źródło sprawy
+iskra zapalająca lont
+zapoczątkowanie",,,,"GroupId: 2840204
+Translate: origin of an affair
+Translate: spark that lit the fuse
+Translate: beginning"
+213643,WORD_NOUN,,KATAKANA,,,-,ドア・パンチ,,doa panchi,uderzenie w sąsiedni samochód drzwiami samochodu,"kolokwializm, ang: door punch",,,"GroupId: 2841284
+Translate: hitting an adjacent car with a car door
+MiscInfo: col"
+213644,WORD_NOUN,,HIRAGANA,,,櫛板,くしばん,,kushi ban,???,,,DUPLICATE 213620,"GroupId: 2842216
+Translate: pecten
+Translate: comb plate
+Translate: comb plate (of an escalator, etc.)"
+213645,WORD_NOUN,,HIRAGANA,,,くし板,くしいた,,kushi ita,???,,,DUPLICATE 213646,"GroupId: 2842216
+Translate: pecten
+Translate: comb plate
+Translate: comb plate (of an escalator, etc.)"
+213646,WORD_NOUN,,HIRAGANA,,,くし板,くしばん,,kushi ban,???,,,DUPLICATE 213645,"GroupId: 2842216
+Translate: pecten
+Translate: comb plate
+Translate: comb plate (of an escalator, etc.)"
+213647,WORD_NOUN,,HIRAGANA,,,野合戦,のあわせいくさ,,noawaseikusa,"bitwa na zewnątrz
+bitwa na otwartym polu",,,DUPLICATE 213621,"GroupId: 2842317
+Translate: battle in the open
+Translate: battle on an open field"
+213648,WORD_EXPRESSION,,HIRAGANA,,,騏驎も老いぬれば駑馬に劣る,きりんもおいぬればどばにおとる,,kirin mo oinureba doba ni otoru,nawet wybitna osoba staje się gorsza z wiekiem,przysłowie,,,"GroupId: 2843476
+Translate: even an outstanding person becomes inferior when getting old
+MiscInfo: proverb"
