@@ -55647,7 +55647,7 @@ Translate: reported price"
 213737,WORD_NOUN,,HIRAGANA,,,算法言語,さんぽうげんご,,sanpou gengo,"język ALGOL
 język algorytmiczny",,,,"GroupId: 2358810
 Translate: algorithmic language"
-213738,WORD_NOUN,,HIRAGANA,,,後向き推論,うしろむきすいろん,,ushiromuki suiron,???,informatyka,,,"GroupId: 2354480
+213738,WORD_NOUN,,HIRAGANA,,,後向き推論,うしろむきすいろん,,ushiro muki suiron,???,informatyka,,,"GroupId: 2354480
 Translate: backward reasoning (AI)"
 213739,"WORD_ADJECTIVE_NO
 WORD_NOUN",,HIRAGANA,,,半建て,はんだて,,handate,na wpół zbudowany,np. budynek,,,"GroupId: 2673760
@@ -55707,7 +55707,7 @@ Translate: bracket fungus (Ganoderma lucidum)
 MiscInfo: uk
 Translate: reishi mushroom
 MiscInfo: uk"
-213757,WORD_ADVERB,,HIRAGANA,,,堆く,うずたかく,,uzutakaku,"ułożono w wysoki stos
+213757,WORD_ADVERB,,HIRAGANA,,,堆く,うずたかく,,uzu takaku,"ułożono w wysoki stos
 na stercie",,,,"GroupId: 2035950
 Translate: piled up high
 MiscInfo: uk
@@ -55773,7 +55773,7 @@ znak",,,,"GroupId: 1489560
 Translate: symbol
 Translate: emblem
 Translate: sign"
-213775,WORD_NOUN,,HIRAGANA,,,緑十字,りょくじゅうじ,,ryokujuuji,zielony krzyż,symbol bezpieczeństwa,,,"GroupId: 1820080
+213775,WORD_NOUN,,HIRAGANA,,,緑十字,りょくじゅうじ,,ryokujuuji,zielony krzyż,symbol bezpieczeństwa,,DUPLICATE 213801,"GroupId: 1820080
 Translate: green cross (safety symbol)"
 213776,WORD_NOUN,,HIRAGANA,,,通貨記号,つうかきごう,,tsuuka kigou,symbol waluty,,,,"GroupId: 2375850
 Translate: currency sign
@@ -55847,3 +55847,41 @@ amatorska stacja radiowa",,,,"GroupId: 1960980
 Translate: amateur radio station"
 213794,WORD_NOUN,,KATAKANA,,,-,ラクレット,,rakuretto,raclette,gatunek sera,,,"GroupId: 2676280
 Translate: raclette (cheese)"
+213795,WORD_NOUN,,HIRAGANA,,,後ろ向き推論,うしろむきすいろん,,ushiro muki suiron,???,informatyka,,,"GroupId: 2354480
+Translate: backward reasoning (AI)"
+213796,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,半建,はんだて,,handate,na wpół zbudowany,np. budynek,,,"GroupId: 2673760
+Translate: half-erect (e.g. building)"
+213797,WORD_NOUN,,KATAKANA,,,-,マンネンタケ,,mannentake,lakownica żółtawa,"gatunek grzybów należący do rodziny lakownicowatych, Ganoderma lucidum",,,"GroupId: 2034010
+Translate: bracket fungus (Ganoderma lucidum)
+MiscInfo: uk
+Translate: reishi mushroom
+MiscInfo: uk"
+213798,WORD_ADVERB,,HIRAGANA,,,うず高く,うずたかく,,uzu takaku,"ułożono w wysoki stos
+na stercie",,,,"GroupId: 2035950
+Translate: piled up high
+MiscInfo: uk
+Translate: in a heap
+MiscInfo: uk"
+213799,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,アカオオカミ,,akaookami,"cyjon rudy (gatunek ssaka z rodziny psowatych o wyglądzie przypominającym zarówno lisa jak psa, Cuon alpinus
+cyjon (gatunek ssaka z rodziny psowatych o wyglądzie przypominającym zarówno lisa jak psa, Cuon alpinus
+wilk rudy (gatunek drapieżnego ssaka z rodziny psowatych, Canis rufus)
+wilk czerwony (gatunek drapieżnego ssaka z rodziny psowatych, Canis rufus)",,,,"GroupId: 2062040
+Translate: dhole (Cuon alpinus)
+MiscInfo: uk
+Translate: red wolf (Canis rufus)
+MiscInfo: uk"
+213800,WORD_NOUN,,KATAKANA,,,-,ウダイカンバ,,udaikanba,"brzoza Maksimowicza
+japońska brzoza","gatunek drzewa z rodziny brzozowatych, Betula maximowicziana",,,"GroupId: 2066700
+Translate: monarch birch (Betula maximowicziana)
+MiscInfo: uk
+Translate: Japanese birch
+MiscInfo: uk"
+213801,WORD_NOUN,,HIRAGANA,,,緑十字,みどりじゅうじ,,midorijuuji,zielony krzyż,symbol bezpieczeństwa,,DUPLICATE 213775,"GroupId: 1820080
+Translate: green cross (safety symbol)"
+213802,WORD_NOUN,,HIRAGANA,,,繰返し符号,くりかえしふごう,,kuri kaeshi fugou,"symbol powtórzenia
+powtórzenie poprzedniego znaku",,,,"GroupId: 1247020
+Translate: repetition symbol
+Translate: repetition of the previous character"
+213803,WORD_NOUN,,HIRAGANA_KATAKANA,,,晴マーク,はれマーク,,hare maaku,symbol słońca,np. na prognozie pogody,,,"GroupId: 2834329
+Translate: sun symbol (e.g. in a weather forecast)"
