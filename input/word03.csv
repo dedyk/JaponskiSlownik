@@ -55945,7 +55945,7 @@ Translate: compression pump"
 Translate: plaything
 Translate: toy"
 213825,WORD_NOUN,,HIRAGANA,,,強塩,ごうじお,,goujio,"pokrycie w soli
-osłona w soli",,,,"GroupId: 2826568
+osłona w soli",,,DUPLICATE 213905,"GroupId: 2826568
 Translate: covering in salt"
 213826,WORD_NOUN,,HIRAGANA,,,御時,おおんとき,,oontoki,panowanie cesarza Japonii,honoryfikatywnie,,,"GroupId: 2682970
 Translate: reign of an emperor of Japan
@@ -55954,7 +55954,7 @@ MiscInfo: hon"
 Translate: polished rice"
 213828,WORD_NOUN,,HIRAGANA,,,物相,もっそう,,mossou,"cylindryczne pudełko do pomiaru ryżu
 kształt do formowania ryżu
-jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,,"GroupId: 2720210
+jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,DUPLICATE 213907,"GroupId: 2720210
 Translate: cylindrical box used to measure rice
 Translate: shape for forming rice
 Translate: single serving of rice (esp. as prison food)
@@ -56127,7 +56127,7 @@ Translate: midnight"
 szerokość
 z boku
 poziomo",,,,
-213873,WORD_NOUN,,HIRAGANA,,,憲法,けんぼう,,kenbou,konstytucja,,,,
+213873,WORD_NOUN,,HIRAGANA,,,憲法,けんぼう,,kenbou,konstytucja,,,DUPLICATE 5045,
 213874,"WORD_NOUN
 WORD_ADJECTIVE_NO",,KATAKANA,,,-,タテ,,tate,"pionowo
 podłużny
@@ -56138,7 +56138,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,膚色,はだいろ,,hada iro,"kolor cielisty
 kolor skóry",,,,
 213876,WORD_NOUN,,KATAKANA,,,-,ドラック,,dorakku,"lek
 lekarstwo
-narkotyk",ang: drug,,,"GroupId: 1088760
+narkotyk",ang: drug,,DUPLICATE 213937,"GroupId: 1088760
 Translate: drug
 Translate: medicine
 Translate: (illegal) drug
@@ -56146,18 +56146,18 @@ Translate: narcotics"
 213877,WORD_NOUN,,KATAKANA_HIRAGANA,,,ベタ褒め,ベタぼめ,,beta bome,"pochwała
 mowa pochwalna
 wysoka pochwała
-wysoki zachwyt",,,,
+wysoki zachwyt",,,DUPLICATE 213878,
 213878,WORD_NOUN,,KATAKANA_HIRAGANA,,,ベタ褒め,ベタほめ,,beta home,"pochwała
 mowa pochwalna
 wysoka pochwała
-wysoki zachwyt",,,,
+wysoki zachwyt",,,DUPLICATE 213877,
 213879,"WORD_ADJECTIVE_NA
 WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA_KATAKANA,,,金ピカ,きんピカ,,kin pika,"złocony przepych
 złocona wspaniałość",,,,
-213880,WORD_NOUN,,HIRAGANA,,,聖霊,しょうりょう,,shouryou,duch zmarłego,,,,
+213880,WORD_NOUN,,HIRAGANA,,,聖霊,しょうりょう,,shouryou,duch zmarłego,,,DUPLICATE 5414,
 213881,WORD_NOUN,,KATAKANA,,,新加坡,シンガポール,,shingapooru,Singapur,,,,
-213882,WORD_NOUN,,HIRAGANA,,,お母,おかあ,,okaa,matka,"uprzejmie, dialekt Kansai",,,
+213882,WORD_NOUN,,HIRAGANA,,,お母,おかあ,,okaa,matka,"uprzejmie, dialekt Kansai",,DUPLICATE 27295,
 213883,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,其の道,そのみち,,sono michi,"branża
 profesja",,,,
@@ -56190,14 +56190,16 @@ Translate: South America Common Market"
 przystojny (mężczyzna)",,,,"GroupId: 1792680
 Translate: manliness
 Translate: good-looking"
-213892,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,-,ばっちー,,bacchii,"brudny
-nieczysty",język dzieci,,,"GroupId: 2069120
+213892,WORD_EMPTY,,HIRAGANA_KATAKANA,,,-,ばっちー,,bacchii,"brudny
+nieczysty",język dzieci,"NO_TYPE_CHECK
+EDICT_TRANSLATE_INFO_GROUP_DIFF",,"GroupId: 2069120
 Translate: dirty
 MiscInfo: chn
 Translate: unclean
 MiscInfo: chn"
-213893,WORD_ADJECTIVE_I,,HIRAGANA_EXCEPTION,,,-,ばっちぃ,,bacchi,"brudny
-nieczysty",język dzieci,,,"GroupId: 2069120
+213893,WORD_EMPTY,,HIRAGANA_EXCEPTION,,,-,ばっちぃ,,bacchi,"brudny
+nieczysty",język dzieci,"NO_TYPE_CHECK
+EDICT_TRANSLATE_INFO_GROUP_DIFF",,"GroupId: 2069120
 Translate: dirty
 MiscInfo: chn
 Translate: unclean
@@ -56244,55 +56246,55 @@ Translate: toy"
 Translate: plaything
 Translate: toy"
 213905,WORD_NOUN,,HIRAGANA,,,強塩,ごうしお,,goushio,"pokrycie w soli
-osłona w soli",,,,"GroupId: 2826568
+osłona w soli",,,DUPLICATE 213825,"GroupId: 2826568
 Translate: covering in salt"
 213906,WORD_NOUN,,HIRAGANA,,,舂き米,つきごめ,,tsuki gome,polerowany ryż,,,,"GroupId: 2842230
 Translate: polished rice"
 213907,WORD_NOUN,,HIRAGANA,,,物相,もっそ,,mosso,"cylindryczne pudełko do pomiaru ryżu
 kształt do formowania ryżu
-jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,,"GroupId: 2720210
+jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,DUPLICATE 213828,"GroupId: 2720210
 Translate: cylindrical box used to measure rice
 Translate: shape for forming rice
 Translate: single serving of rice (esp. as prison food)
 MiscInfo: abbr"
 213908,WORD_NOUN,,HIRAGANA,,,盛相,もっそう,,mossou,"cylindryczne pudełko do pomiaru ryżu
 kształt do formowania ryżu
-jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,,"GroupId: 2720210
+jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,DUPLICATE 213909,"GroupId: 2720210
 Translate: cylindrical box used to measure rice
 Translate: shape for forming rice
 Translate: single serving of rice (esp. as prison food)
 MiscInfo: abbr"
 213909,WORD_NOUN,,HIRAGANA,,,盛相,もっそ,,mosso,"cylindryczne pudełko do pomiaru ryżu
 kształt do formowania ryżu
-jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,,"GroupId: 2720210
+jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,DUPLICATE 213908,"GroupId: 2720210
 Translate: cylindrical box used to measure rice
 Translate: shape for forming rice
 Translate: single serving of rice (esp. as prison food)
 MiscInfo: abbr"
 213910,WORD_NOUN,,HIRAGANA,,,盛っ相,もっそう,,mossou,"cylindryczne pudełko do pomiaru ryżu
 kształt do formowania ryżu
-jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,,"GroupId: 2720210
+jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,DUPLICATE 213911,"GroupId: 2720210
 Translate: cylindrical box used to measure rice
 Translate: shape for forming rice
 Translate: single serving of rice (esp. as prison food)
 MiscInfo: abbr"
 213911,WORD_NOUN,,HIRAGANA,,,盛っ相,もっそ,,mosso,"cylindryczne pudełko do pomiaru ryżu
 kształt do formowania ryżu
-jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,,"GroupId: 2720210
+jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,DUPLICATE 213910,"GroupId: 2720210
 Translate: cylindrical box used to measure rice
 Translate: shape for forming rice
 Translate: single serving of rice (esp. as prison food)
 MiscInfo: abbr"
 213912,WORD_NOUN,,HIRAGANA,,,盛糟,もっそう,,mossou,"cylindryczne pudełko do pomiaru ryżu
 kształt do formowania ryżu
-jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,,"GroupId: 2720210
+jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,DUPLICATE 213913,"GroupId: 2720210
 Translate: cylindrical box used to measure rice
 Translate: shape for forming rice
 Translate: single serving of rice (esp. as prison food)
 MiscInfo: abbr"
 213913,WORD_NOUN,,HIRAGANA,,,盛糟,もっそ,,mosso,"cylindryczne pudełko do pomiaru ryżu
 kształt do formowania ryżu
-jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,,"GroupId: 2720210
+jednorazowa porcja ryżu (szczególnie jako więzienny posiłek, skrót)",,,DUPLICATE 213912,"GroupId: 2720210
 Translate: cylindrical box used to measure rice
 Translate: shape for forming rice
 Translate: single serving of rice (esp. as prison food)
@@ -56387,7 +56389,7 @@ Translate: making no sound
 Translate: staying quiet
 Translate: lying low
 Translate: saying nothing and waiting for an opportunity"
-213932,WORD_NOUN,,HIRAGANA,,,本国,ほんこく,,honkoku,ten kraj,,,,"GroupId: 1522530
+213932,WORD_NOUN,,HIRAGANA,,,本国,ほんこく,,honkoku,ten kraj,,,DUPLICATE 20080,"GroupId: 1522530
 Translate: this country"
 213933,WORD_NOUN,,HIRAGANA,,,手貼り,てばり,,tebari,"wklejanie z użyciem rąk
 przyklejanie (np. naklejki) z użyciem rąk",,,,"GroupId: 1699060
@@ -56396,7 +56398,24 @@ Translate: attaching (sticker, etc.) by hand"
 213934,WORD_NOUN,,HIRAGANA,,,名号,めいごう,,meigou,"imię Buddy (szczególnie używane w modlitwie)
 sława
 renoma
-rozgłos",,,,"GroupId: 1752210
+rozgłos",,,DUPLICATE 157001,"GroupId: 1752210
 Translate: Buddha's name (esp. when used in prayer)
 Translate: fame
 Translate: renown"
+213935,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,大なたを振るう,おおなたをふるう,,oonata o furuu,"wykonać drastyczne cięcia
+brać siekierę do","archaizm, wyrażenie idiomatyczne",,,"GroupId: 2102450
+Translate: to make drastic cuts
+MiscInfo: arch
+MiscInfo: id
+Translate: to take an axe to
+MiscInfo: arch
+MiscInfo: id"
+213936,WORD_NOUN,,KATAKANA,,,-,ドラッグ,,doraggu,"przeciąganie (za pomocą kursora)
+drag (noszenie kobiecych ubrań)",ang: drag,,DUPLICATE 35276,"GroupId: 2845238
+Translate: dragging (with a cursor)
+Translate: drag (wearing female clothing)"
+213937,WORD_NOUN,,KATAKANA,,,-,ドラック,,dorakku,"przeciąganie (za pomocą kursora)
+drag (noszenie kobiecych ubrań)",ang: drag,,DUPLICATE 213876,"GroupId: 2845238
+Translate: dragging (with a cursor)
+Translate: drag (wearing female clothing)"
