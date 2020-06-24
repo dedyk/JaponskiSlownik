@@ -56541,7 +56541,7 @@ Translate: gathering speed"
 213956,WORD_NOUN,,KATAKANA_HIRAGANA,,,ブレント原油,ブレントげんゆ,,burento gen'yu,"ropa (naftowa) Brent
 ropa naftowa z Morza Północnego",,,,"GroupId: 2826132
 Translate: Brent crude"
-213957,WORD_NOUN,,KATAKANA,,,-,スポーツウーマン,,supootsuuuman,sportsmenka,ang: sportswoman,,,"GroupId: 1073230
+213957,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,スポーツウーマン,,supootsuuuman,sportsmenka,ang: sportswoman,,,"GroupId: 1073230
 Translate: sportswoman"
 213958,WORD_NOUN,,HIRAGANA,,,符号ひずみ,ふごうひずみ,,fugou hizumi,zniekształcenie sygnału,,,,"GroupId: 1918710
 Translate: signal distortion"
@@ -56587,7 +56587,7 @@ Translate: (principle of) birthright citizenship"
 Translate: expiration of term of a vow"
 213974,WORD_NOUN,,HIRAGANA,,,花薄,はなすすき,,hanasusuki,???,,,,"GroupId: 2842381
 Translate: Japanese pampas grass in ear"
-213975,WORD_NOUN,,KATAKANA,,,薬飯,ヤッパプ,,yappapu,yakbap,słodka koreańska potrawa z ryżem i orzechami,,,"GroupId: 2839065
+213975,WORD_NOUN,,KATAKANA,,,薬飯,ヤッパプ,,yappapu,yakbap,słodka koreańska potrawa z ryżem i orzechami,,DUPLICATE 214016,"GroupId: 2839065
 Translate: yakbap (sweet Korean dish with rice and nuts)"
 213976,WORD_NOUN,,HIRAGANA,,,轢殺,れきさつ,,rekisatsu,zabicie (kogoś) poprzez przejechanie go samochodem lub pociągiem,,,,"GroupId: 1796840
 Translate: killing by running over with a car or train"
@@ -56609,7 +56609,7 @@ Translate: walleye pollack
 MiscInfo: uk
 Translate: Alaska pollack (Theragra chalcogramma)
 MiscInfo: uk"
-213981,WORD_NOUN,,HIRAGANA,,,五色青海鸚哥,ごしきぜいがいいんこ,,goshikizeigaiinko,lorysa górska,"gatunek ptaka z rodziny papug wschodnich, zamieszkujący we wschodniej i południowo-wschodniej Australii, Nowej Gwinei i na wielu wyspach Indonezji, Trichoglossus haematodus",,,"GroupId: 2165470
+213981,WORD_NOUN,,HIRAGANA,,,五色青海鸚哥,ごしきぜいがいいんこ,,goshikizeigaiinko,lorysa górska,"gatunek ptaka z rodziny papug wschodnich, zamieszkujący we wschodniej i południowo-wschodniej Australii, Nowej Gwinei i na wielu wyspach Indonezji, Trichoglossus haematodus",,DUPLICATE 214020,"GroupId: 2165470
 Translate: rainbow lorikeet (Trichoglossus haematodus)
 MiscInfo: uk
 Translate: rainbow lory
@@ -56621,7 +56621,7 @@ Translate: European tortoise
 MiscInfo: uk
 Translate: Greek tortoise (Testudo graeca)
 MiscInfo: uk"
-213983,WORD_NOUN,,HIRAGANA,,,芝桜,しばざくら,,shibazakura,"floks szydlasty
+213983,WORD_NOUN,,HIRAGANA,,,芝桜,しばざくら,,shiba zakura,"floks szydlasty
 płomyk szydlasty","gatunek rośliny z rodziny wielosiłowatych, Phlox subulata",,,"GroupId: 2172870
 Translate: moss phlox (Phlox subulata)
 MiscInfo: uk
@@ -56637,7 +56637,7 @@ rozpoczęcie transmisji",,,,"GroupId: 2715020
 Translate: start of broadcast
 Translate: commencement of transmission
 Translate: sign-on"
-213986,WORD_NOUN,,HIRAGANA,,,草刈機,くさかりき,,kusakariki,"kosiarka do chwastów
+213986,WORD_NOUN,,HIRAGANA,,,草刈機,くさかりき,,kusakari ki,"kosiarka do chwastów
 kosiarka do trawy
 podkaszarka",,,,"GroupId: 2415040
 Translate: weed cutter
@@ -56649,11 +56649,12 @@ airshow",,,,"GroupId: 2518150
 Translate: aerial show
 Translate: air show
 Translate: airshow"
-213988,WORD_ADJECTIVE_NA,,HIRAGANA,,,言葉少な,ことばずくな,,kotobazukuna,"lakoniczny
+213988,WORD_ADJECTIVE_NA,,HIRAGANA,,,言葉少な,ことばずくな,,kotoba zukuna,"lakoniczny
 zwięzły
 w kilku słowach
 małomówny
-powściągliwy w słowach",,,,"GroupId: 2763780
+powściągliwy w słowach",,,"DUPLICATE 214026
+DUPLICATE 214027","GroupId: 2763780
 Translate: laconic
 Translate: of few words
 Translate: reticent
@@ -56711,10 +56712,10 @@ powierzchowny",,,,"GroupId: 2804250
 Translate: superficial
 Translate: shallow"
 214004,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,合点が行く,がてんがいく,,gaten ga iku,???,,,,"GroupId: 1285130
+WORD_EXPRESSION",,HIRAGANA,,,合点が行く,がてんがいく,,gaten ga iku,???,,,DUPLICATE 214031,"GroupId: 1285130
 Translate: to understand
 Translate: to make out"
-214005,WORD_NOUN,,HIRAGANA,,,胡桃油,くるみあぶら,,kurumiabura,olej z orzechów włoskich,,,,"GroupId: 2681490
+214005,WORD_NOUN,,HIRAGANA,,,胡桃油,くるみあぶら,,kurumi abura,olej z orzechów włoskich,,,DUPLICATE 214032,"GroupId: 2681490
 Translate: walnut oil"
 214006,WORD_NOUN,,KATAKANA_HIRAGANA,,,オリーブ油,オリーブゆ,,oriibu yu,oliwa z oliwek,,,,"GroupId: 1962400
 Translate: olive oil"
@@ -56730,3 +56731,117 @@ MiscInfo: obsc"
 Translate: recognition of an unborn child (for the purposes of claiming nationality)"
 214011,WORD_NOUN,,HIRAGANA_KATAKANA,,,空メール,からメール,,kara meeru,pusty email,np. w celu zapisania się na listę mailową,,,"GroupId: 2187300
 Translate: blank email (e.g. for signing up to an email list)"
+214012,WORD_NOUN,,KATAKANA,,,-,ムナグロ,,munaguro,"siewka złotawa
+siewka azjatycka","gatunek średniej wielkości ptaka wędrownego z rodziny sieweczkowatych, zamieszkującego północną i północno-wschodnią Syberię oraz zachodnią Alaskę, Pluvialis fulva",,,"GroupId: 2190270
+Translate: Pacific golden plover (Pluvialis fulva)
+MiscInfo: uk"
+214013,WORD_NOUN,,HIRAGANA,,,木登り蜥蜴,きのぼりとかげ,,kinobori tokage,Japalura polygonata,gatunek jaszczurki,,,"GroupId: 2439550
+Translate: Ryukyu tree lizard (Japalura polygonata)
+MiscInfo: uk"
+214014,WORD_NOUN,,KATAKANA,,,-,キノボリトカゲ,,kinobori tokage,Japalura polygonata,gatunek jaszczurki,,,"GroupId: 2439550
+Translate: Ryukyu tree lizard (Japalura polygonata)
+MiscInfo: uk"
+214015,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,全力を上げる,ぜんりょくをあげる,,zenryoku o ageru,używać całej swojej siły (zdolności),,,,"GroupId: 2188220
+Translate: to use all one's strength (ability)"
+214016,WORD_NOUN,,KATAKANA,,,薬飯,ヤクパプ,,yakupapu,yakbap,słodka koreańska potrawa z ryżem i orzechami,,DUPLICATE 213975,"GroupId: 2839065
+Translate: yakbap (sweet Korean dish with rice and nuts)"
+214017,WORD_NOUN,,KATAKANA,,,-,バカマツタケ,,baka matsutake,Tricholoma bakamatsutake,gatunek grzyba,,,"GroupId: 2153700
+Translate: Tricholoma bakamatsutake (mushroom)
+MiscInfo: uk
+Translate: false matsutake
+MiscInfo: uk"
+214018,WORD_NOUN,,HIRAGANA,,,助惣鱈,すけそうだら,,sukesoudara,"mintaj
+suketo
+rdzawiec pacyficzny","gatunek ryby dorszokształtnej z rodziny dorszowatych, Theragra chalcogramma",,,"GroupId: 2154050
+Translate: walleye pollack
+MiscInfo: uk
+Translate: Alaska pollack (Theragra chalcogramma)
+MiscInfo: uk"
+214019,WORD_NOUN,,KATAKANA,,,-,スケソウダラ,,sukesoudara,"mintaj
+suketo
+rdzawiec pacyficzny","gatunek ryby dorszokształtnej z rodziny dorszowatych, Theragra chalcogramma",,,"GroupId: 2154050
+Translate: walleye pollack
+MiscInfo: uk
+Translate: Alaska pollack (Theragra chalcogramma)
+MiscInfo: uk"
+214020,WORD_NOUN,,HIRAGANA,,,五色青海鸚哥,ごしきせいがいいんこ,,goshikiseigaiinko,lorysa górska,"gatunek ptaka z rodziny papug wschodnich, zamieszkujący we wschodniej i południowo-wschodniej Australii, Nowej Gwinei i na wielu wyspach Indonezji, Trichoglossus haematodus",,DUPLICATE 213981,"GroupId: 2165470
+Translate: rainbow lorikeet (Trichoglossus haematodus)
+MiscInfo: uk
+Translate: rainbow lory
+MiscInfo: uk"
+214021,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ゴシキセイガイインコ,,goshikiseigaiinko,lorysa górska,"gatunek ptaka z rodziny papug wschodnich, zamieszkujący we wschodniej i południowo-wschodniej Australii, Nowej Gwinei i na wielu wyspach Indonezji, Trichoglossus haematodus",,,"GroupId: 2165470
+Translate: rainbow lorikeet (Trichoglossus haematodus)
+MiscInfo: uk
+Translate: rainbow lory
+MiscInfo: uk"
+214022,WORD_NOUN,,KATAKANA_HIRAGANA,,,希臘陸亀,ギリシャりくがめ,,girisha rikugame,"żółw śródziemnomorski
+żółw mauretański
+żółw iberyjski","gatunek gada z rodziny żółwi lądowych z podrzędu żółwi skrytoszyjnych, Testudo graeca",,,"GroupId: 2166200
+Translate: European tortoise
+MiscInfo: uk
+Translate: Greek tortoise (Testudo graeca)
+MiscInfo: uk"
+214023,WORD_NOUN,,KATAKANA,,,-,ギリシャリクガメ,,girisha rikugame,"żółw śródziemnomorski
+żółw mauretański
+żółw iberyjski","gatunek gada z rodziny żółwi lądowych z podrzędu żółwi skrytoszyjnych, Testudo graeca",,,"GroupId: 2166200
+Translate: European tortoise
+MiscInfo: uk
+Translate: Greek tortoise (Testudo graeca)
+MiscInfo: uk"
+214024,WORD_NOUN,,KATAKANA,,,-,シバザクラ,,shiba zakura,"floks szydlasty
+płomyk szydlasty","gatunek rośliny z rodziny wielosiłowatych, Phlox subulata",,,"GroupId: 2172870
+Translate: moss phlox (Phlox subulata)
+MiscInfo: uk
+Translate: moss pink
+MiscInfo: uk"
+214025,WORD_NOUN,,HIRAGANA,,,草刈り機,くさかりき,,kusakari ki,"kosiarka do chwastów
+kosiarka do trawy
+podkaszarka",,,,"GroupId: 2415040
+Translate: weed cutter
+Translate: grass cutter
+Translate: brush cutter
+Translate: lawn mower"
+214026,WORD_ADJECTIVE_NA,,HIRAGANA,,,言葉少な,ことばすくな,,kotoba sukuna,"lakoniczny
+zwięzły
+w kilku słowach
+małomówny
+powściągliwy w słowach",,,"DUPLICATE 213988
+DUPLICATE 214027","GroupId: 2763780
+Translate: laconic
+Translate: of few words
+Translate: reticent
+Translate: quiet"
+214027,WORD_ADJECTIVE_NA,,HIRAGANA,,,言葉少な,ことばずけな,,kotoba zukena,"lakoniczny
+zwięzły
+w kilku słowach
+małomówny
+powściągliwy w słowach",,,"DUPLICATE 213988
+DUPLICATE 214026","GroupId: 2763780
+Translate: laconic
+Translate: of few words
+Translate: reticent
+Translate: quiet"
+214028,WORD_NOUN,,HIRAGANA,,,知恵競べ,ちえくらべ,,chiekurabe,walka na pomysły,,,,"GroupId: 2833999
+Translate: battle of wits
+Translate: contest of wits"
+214029,WORD_NOUN,,KATAKANA,,,-,クロメマメ,,kuromemame,fasola czarne oczko,,,,"GroupId: 2831816
+Translate: black-eyed pea
+Translate: black-eyed bean"
+214030,WORD_NOUN,,KATAKANA,,,-,フェニュグリーク,,fenyuguriiku,kozieradka,"gatunek rośliny zielnej, ang: fenugreek",,,"GroupId: 2446740
+Translate: fenugreek"
+214031,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,合点が行く,がてんがゆく,,gaten ga yuku,???,,,DUPLICATE 214004,"GroupId: 1285130
+Translate: to understand
+Translate: to make out"
+214032,WORD_NOUN,,HIRAGANA,,,胡桃油,くるみゆ,,kurumi yu,olej z orzechów włoskich,,,DUPLICATE 214005,"GroupId: 2681490
+Translate: walnut oil"
+214033,WORD_NOUN,,HIRAGANA,,,くるみ油,くるみあぶら,,kurumi abura,olej z orzechów włoskich,,,DUPLICATE 214034,"GroupId: 2681490
+Translate: walnut oil"
+214034,WORD_NOUN,,HIRAGANA,,,くるみ油,くるみゆ,,kurumi yu,olej z orzechów włoskich,,,DUPLICATE 214033,"GroupId: 2681490
+Translate: walnut oil"
+214035,WORD_NOUN,,KATAKANA_HIRAGANA,,,阿列布油,オリーブゆ,,oriibu yu,oliwa z oliwek,,,,"GroupId: 1962400
+Translate: olive oil"
+214036,WORD_NOUN,,HIRAGANA,,,決め出し,きめだし,,kime dashi,zablokowanie ramion przeciwnika i wypchnięcie go poza ring,w sumo,,,"GroupId: 2139320
+Translate: arm-barring force out
+Translate: locking arms around an opponent and pushing him out of the ring"
