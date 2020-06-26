@@ -57163,7 +57163,7 @@ Translate: functional beverage"
 Translate: multiplication table"
 214120,WORD_NOUN,,HIRAGANA,,,階段耕作,かいだんこうさく,,kaidan kousaku,uprawa tarasowa,,,,"GroupId: 1977500
 Translate: terrace culture"
-214121,WORD_NOUN,,HIRAGANA,,,天気相談所,てんきそうだんじょ,,tenkisou danjo,biuro meteorologiczne,,,,"GroupId: 1438740
+214121,WORD_NOUN,,HIRAGANA,,,天気相談所,てんきそうだんじょ,,tenkisou danjo,biuro meteorologiczne,,,DUPLICATE 214170,"GroupId: 1438740
 Translate: weather bureau"
 214122,WORD_NOUN,,KATAKANA,,,-,プログラマーズツールキット,,puroguramaazu tsuuru kitto,zestaw narzędzi programisty,ang: programmer's tool kit,,,"GroupId: 2327440
 Translate: programmer's tool kit"
@@ -57190,7 +57190,7 @@ Translate: FFP"
 214128,WORD_NOUN,,HIRAGANA,,,主席研究員,しゅせきけんきゅういん,,shuseki kenkyuuin,główny inżynier wykonawczy,,,,"GroupId: 1325760
 Translate: executive chief engineer"
 214129,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,肉付きの良い,にくづきのよい,,nikuduki no yoi,"tęgi
+WORD_EXPRESSION",,HIRAGANA,,,肉付きの良い,にくづきのよい,,niku duki no yoi,"tęgi
 korpulentny
 dobrze zbudowany
 przy kości
@@ -57214,12 +57214,12 @@ MiscInfo: abbr"
 Translate: Ryōhō (the two former provinces of Buzen and Bungo)"
 214133,WORD_NOUN,,HIRAGANA,,,尾張,おわり,,owari,Owari,dawna prowincja położona na zachodzie dzisiejszej prefektury Aichi,,,"GroupId: 2845162
 Translate: Owari (former province located in the west of present-day Aichi Prefecture)"
-214134,WORD_NOUN,,KATAKANA,,,済州,チェジュ,,cheju,Jeju,specjalna samorządowa prowincja i wyspa w Korei Południowej,,,"GroupId: 2845340
+214134,WORD_NOUN,,KATAKANA,,,済州,チェジュ,,cheju,Jeju,specjalna samorządowa prowincja i wyspa w Korei Południowej,,DUPLICATE 214176,"GroupId: 2845340
 Translate: Jeju (special self-governing province and island in South Korea)"
 214135,WORD_NOUN,,HIRAGANA,,,伯耆,ほうき,,houki,Hōki,dawna prowincja położona w środkowej i zachodniej części dzisiejszej prefektury Tottori,,,"GroupId: 2845192
 Translate: Hōki (former province located in the central and western parts of present-day Tottori Prefecture)"
 214136,WORD_NOUN,,HIRAGANA,,,隠岐,おき,,oki,"Oki (dawna prowincja położona na wyspie Oki we współczesnej prefekturze Shimane)
-Oki (wyspa)",,,,"GroupId: 2845158
+Oki (wyspa)",,,DUPLICATE 11154,"GroupId: 2845158
 Translate: Oki (former province located on Oki Island in present-day Shimane Prefecture)
 Translate: Oki (island)"
 214137,WORD_NOUN,,HIRAGANA,,,石千鳥,いしちどり,,ishichidori,"kulon zwyczajny
@@ -57228,7 +57228,7 @@ Translate: stone curlew
 MiscInfo: uk
 Translate: thick-knee (Burhinus oedicnemus)
 MiscInfo: uk"
-214138,WORD_NOUN,,HIRAGANA,,,灰色鰭足鷸,はいいろひれあししぎ,,haiiro hireashishigi,płatkonóg szydłodzioby,"gatunek małego ptaka wędrownego z rodziny bekasowatych, Phalaropus lobatus",,,"GroupId: 2190440
+214138,WORD_NOUN,,HIRAGANA,,,灰色鰭足鷸,はいいろひれあししぎ,,hai iro hireashishigi,płatkonóg szydłodzioby,"gatunek małego ptaka wędrownego z rodziny bekasowatych, Phalaropus lobatus",,,"GroupId: 2190440
 Translate: red phalarope
 MiscInfo: uk
 Translate: grey phalarope (Phalaropus lobatus)
@@ -57361,7 +57361,7 @@ Translate: bath which includes an electric current, allegedly for health reasons
 używanie alternatywnej odmiany ryby zamiast tradycyjnej",,,,"GroupId: 2786040
 Translate: substitute fish
 Translate: using an alternative fish variety instead of a traditional one"
-214167,WORD_NOUN,,KATAKANA,,,-,シガーソケット,,shigaasoketto,"gniazdo zapalniczki
+214167,WORD_NOUN,,KATAKANA,,,-,シガーソケット,,shigaa soketto,"gniazdo zapalniczki
 gniazdo zapalniczki samochodowej (w samochodzie)",skrót,,,"GroupId: 2791240
 Translate: cigarette lighter socket (in an automobile)
 MiscInfo: abbr
@@ -57373,3 +57373,109 @@ sprzedawanie więcej istniejącemu klientowi",,,,"GroupId: 2805630
 Translate: up-selling
 Translate: upselling
 Translate: selling more to an existing client or customer"
+214169,WORD_NOUN,,HIRAGANA,,,九々の表,くくのひょう,,kuku no hyou,tabliczka mnożenia,,,,"GroupId: 1592160
+Translate: multiplication table"
+214170,WORD_NOUN,,HIRAGANA,,,天気相談所,てんきそうだんしょ,,tenki soudansho,biuro meteorologiczne,,,DUPLICATE 214121,"GroupId: 1438740
+Translate: weather bureau"
+214171,WORD_NOUN,,KATAKANA,,,-,ヨーロッパヘダイ,,yooroppa hedai,"dorada
+sparus złotogłowy","gatunek ryby okoniokształtnej z rodziny prażmowatych, jedyny przedstawiciel rodzaju Sparus, Sparus aurata",,,"GroupId: 2676100
+Translate: gilt-head bream (Sparus aurata)
+MiscInfo: uk"
+214172,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,肉付きのよい,にくづきのよい,,niku duki no yoi,"tęgi
+korpulentny
+dobrze zbudowany
+przy kości
+pulchny
+puszysty",,,,"GroupId: 1463690
+Translate: stout
+Translate: well-fleshed
+Translate: well-built
+Translate: well-padded
+Translate: plump"
+214173,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,肉づきのよい,にくづきのよい,,niku duki no yoi,"tęgi
+korpulentny
+dobrze zbudowany
+przy kości
+pulchny
+puszysty",,,,"GroupId: 1463690
+Translate: stout
+Translate: well-fleshed
+Translate: well-built
+Translate: well-padded
+Translate: plump"
+214174,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,肉づきの良い,にくづきのよい,,niku duki no yoi,"tęgi
+korpulentny
+dobrze zbudowany
+przy kości
+pulchny
+puszysty",,,,"GroupId: 1463690
+Translate: stout
+Translate: well-fleshed
+Translate: well-built
+Translate: well-padded
+Translate: plump"
+214175,WORD_NOUN,,KATAKANA,,,-,コーパイ,,koopai,drugi pilot,"skrót, ang: copilot",,,"GroupId: 2795960
+Translate: copilot
+MiscInfo: abbr"
+214176,WORD_NOUN,,HIRAGANA,,,済州,さいしゅう,,saishuu,Jeju,specjalna samorządowa prowincja i wyspa w Korei Południowej,,DUPLICATE 214134,"GroupId: 2845340
+Translate: Jeju (special self-governing province and island in South Korea)"
+214177,WORD_NOUN,,KATAKANA,,,-,イシチドリ,,ishichidori,"kulon zwyczajny
+kulon","gatunek średniego ptaka wędrownego z rodziny kulonów, Burhinus oedicnemus",,,"GroupId: 2190180
+Translate: stone curlew
+MiscInfo: uk
+Translate: thick-knee (Burhinus oedicnemus)
+MiscInfo: uk"
+214178,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ハイイロヒレアシシギ,,hai iro hireashishigi,płatkonóg szydłodzioby,"gatunek małego ptaka wędrownego z rodziny bekasowatych, Phalaropus lobatus",,,"GroupId: 2190440
+Translate: red phalarope
+MiscInfo: uk
+Translate: grey phalarope (Phalaropus lobatus)
+MiscInfo: uk"
+214179,WORD_NOUN,,KATAKANA,,,-,エリマキシギ,,erimakishigi,"batalion
+bojownik batalion
+bojownik zmienny
+biegus bojownik
+bojownik odmienny","gatunek średniego ptaka wędrownego z rodziny bekasowatych, Philomachus pugnax",,,"GroupId: 2190460
+Translate: ruff
+MiscInfo: uk
+Translate: reeve (species of sandpiper, Philomachus pugnax)
+MiscInfo: uk"
+214180,WORD_NOUN,,KATAKANA,,,-,ムナジロテン,,munajiroten,"kuna domowa
+kamionka","synantropijny gatunek niewielkiego ssaka drapieżnego z rodziny łasicowatych, Martes foina",,,"GroupId: 2196980
+Translate: stone marten
+MiscInfo: uk
+Translate: beech marten (Martes foina)
+MiscInfo: uk"
+214181,WORD_NOUN,,HIRAGANA,,,火ともし,ひともし,,hitomoshi,"zapalenie pochodni
+zapalenie lampy
+osoba, która trzyma pochodnię i prowadzi kondukt pogrzebowy",,,,"GroupId: 2574920
+Translate: lighting a torch
+Translate: lighting up a lamp
+Translate: person who leads a funeral procession with a torch"
+214182,WORD_NOUN,,HIRAGANA,,,下瞼,したまぶた,,shita mabuta,dolna powieka,,,,"GroupId: 1186660
+Translate: lower eyelid"
+214183,WORD_NOUN,,HIRAGANA,,,轡虫,くつわむし,,kutsuwa mushi,Mecopoda nipponensis,gatunek dużego kolnika polnego,,,"GroupId: 1951090
+Translate: Mecopoda nipponensis (species of katydid)
+MiscInfo: uk"
+214184,WORD_NOUN,,KATAKANA,,,-,クツワムシ,,kutsuwa mushi,Mecopoda nipponensis,gatunek dużego kolnika polnego,,,"GroupId: 1951090
+Translate: Mecopoda nipponensis (species of katydid)
+MiscInfo: uk"
+214185,WORD_NOUN,,HIRAGANA_KATAKANA,,,白ＲＯＭ,しろロム,,shiro romu,"telefon komórkowy bez umowy
+telefon komórkowy bez przypisanego numeru",,,,"GroupId: 2640590
+Translate: contract-free mobile phone
+Translate: unprogrammed cellphone
+Translate: mobile telephone without an assigned number"
+214186,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,誤りをおかす,あやまりをおかす,,ayamari o okasu,"popełniać błąd
+robić błąd",,,,"GroupId: 2765040
+Translate: to make a mistake
+Translate: to commit an error
+Translate: to commit a fault"
+214187,WORD_NOUN,,KATAKANA,,,-,シガー・ソケット,,shigaa soketto,"gniazdo zapalniczki
+gniazdo zapalniczki samochodowej (w samochodzie)",skrót,,,"GroupId: 2791240
+Translate: cigarette lighter socket (in an automobile)
+MiscInfo: abbr
+Translate: cigarette lighter receptacle
+MiscInfo: abbr"
