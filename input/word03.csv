@@ -57502,7 +57502,7 @@ Translate: chevrotain (Tragulidae spp.)
 MiscInfo: uk
 Translate: mouse deer
 MiscInfo: uk"
-214195,WORD_NOUN,,HIRAGANA,,,河原蓬,かわらよもぎ,,kawarayomogi,bylica włosowata,"roślina, Artemisia capillaris",,,"GroupId: 2216680
+214195,WORD_NOUN,,HIRAGANA,,,河原蓬,かわらよもぎ,,kawara yomogi,bylica włosowata,"roślina, Artemisia capillaris",,,"GroupId: 2216680
 Translate: capillary artemisia (Artemisia capillaris)
 MiscInfo: uk
 Translate: yin-chen wormwood
@@ -57655,7 +57655,7 @@ Translate: in an unexpected turn of events
 Translate: by chance
 Translate: by accident"
 214233,WORD_NOUN,,HIRAGANA,,,小並感,しょうなみかん,,shounamikan,"dziecinna reakcja (jak reakcja ucznia szkoły podstawowej)
-niewyszukana reakcja","internetowy slang, skrót od 小学生並みの感想",,,"GroupId: 2836533
+niewyszukana reakcja","internetowy slang, skrót od 小学生並みの感想",,DUPLICATE 214259,"GroupId: 2836533
 Translate: childish reaction (like that of an elementary school student)
 MiscInfo: net-sl
 AdditionalInfo: abbr. of 小学生並みの感想
@@ -57706,3 +57706,90 @@ Translate: this case is an exception"
 ten przypadek jest wyjątkiem",,,,"GroupId: 2841609
 Translate: in this case, it does not apply
 Translate: this case is an exception"
+214244,WORD_NOUN,,KATAKANA,,,-,ヒメバチ,,himebachi,gąsieniczka,"gatunek muchy, Ichneumonidae",,,"GroupId: 2215480
+Translate: ichneumon wasp (Ichneumonidae spp.)
+MiscInfo: uk
+Translate: ichneumon fly
+MiscInfo: uk"
+214245,WORD_NOUN,,HIRAGANA,,,矮鹿,まめじか,,mamejika,"myszo-jeleń
+kanczyl","zwierzę, Tragulidae",,,"GroupId: 2215900
+Translate: chevrotain (Tragulidae spp.)
+MiscInfo: uk
+Translate: mouse deer
+MiscInfo: uk"
+214246,WORD_NOUN,,KATAKANA,,,-,マメジカ,,mamejika,"myszo-jeleń
+kanczyl","zwierzę, Tragulidae",,,"GroupId: 2215900
+Translate: chevrotain (Tragulidae spp.)
+MiscInfo: uk
+Translate: mouse deer
+MiscInfo: uk"
+214247,WORD_NOUN,,HIRAGANA,,,河原艾,かわらよもぎ,,kawara yomogi,bylica włosowata,"roślina, Artemisia capillaris",,,"GroupId: 2216680
+Translate: capillary artemisia (Artemisia capillaris)
+MiscInfo: uk
+Translate: yin-chen wormwood
+MiscInfo: uk"
+214248,WORD_NOUN,,KATAKANA,,,-,カワラヨモギ,,kawara yomogi,bylica włosowata,"roślina, Artemisia capillaris",,,"GroupId: 2216680
+Translate: capillary artemisia (Artemisia capillaris)
+MiscInfo: uk
+Translate: yin-chen wormwood
+MiscInfo: uk"
+214249,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,-,キリのいい,,kiri no ii,???,,,,"GroupId: 2238060
+Translate: good place (to leave off)
+MiscInfo: uk
+Translate: convenient
+MiscInfo: uk"
+214250,WORD_NOUN,,KATAKANA,,,-,ビワマス,,biwa masu,Oncorhynchus masou rhodurus,gatunek ryby,,,"GroupId: 2241270
+Translate: biwa trout (Oncorhynchus masou rhodurus)
+MiscInfo: uk
+Translate: biwa salmon
+MiscInfo: uk"
+214251,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,あごの骨,あごのほね,,ago no hone,"żuchwa
+żuwaczka
+szczęka dolna",,,,"GroupId: 2831495
+Translate: jawbone
+Translate: mandible"
+214252,WORD_NOUN,,HIRAGANA,,,鹹草,あしたば,,ashitaba,Angelica keiskei,"roślina, gatunek dzięgiel",,DUPLICATE 214253,"GroupId: 1532570
+Translate: Angelica keiskei (species of angelica, a herb of the parsley family)
+MiscInfo: uk"
+214253,WORD_NOUN,,HIRAGANA,,,鹹草,あしたぐさ,,ashitagusa,Angelica keiskei,"roślina, gatunek dzięgiel",,DUPLICATE 214252,"GroupId: 1532570
+Translate: Angelica keiskei (species of angelica, a herb of the parsley family)
+MiscInfo: uk"
+214254,WORD_NOUN,,KATAKANA,,,-,アシタバ,,ashitaba,Angelica keiskei,"roślina, gatunek dzięgiel",,,"GroupId: 1532570
+Translate: Angelica keiskei (species of angelica, a herb of the parsley family)
+MiscInfo: uk"
+214255,WORD_NOUN,,KATAKANA,,,-,ヨーロッパコマドリ,,yooroppa komadori,"rudzik
+rudzik zwyczajny
+raszka","gatunek małego ptaka wędrownego z rodziny muchołówkowatych, wcześniej zaliczany do drozdów, Erithacus rubecula, mało znane słowo",,,"GroupId: 1969440
+Translate: European robin (Erithacus rubecula)
+MiscInfo: uk
+MiscInfo: obsc"
+214256,WORD_NOUN,,HIRAGANA,,,ご飯蒸し,ごはんむし,,gohan mushi,naczynie do gotowania na parze ryżu,,,,"GroupId: 1694730
+Translate: a rice steamer"
+214257,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,かご落ち,かごおち,,kago ochi,pozostawienie sesji zakupów online bez zakupów towarów w koszyku,,,,"GroupId: 2828790
+Translate: leaving an online shopping session without purchasing the goods in the cart"
+214258,WORD_NOUN,,KATAKANA,,,-,インボランタリー・アップグレード,,inborantarii appugureedo,"mimowolne rozszerzenie
+darmowe przejście na pierwszą klasę lub klasę biznes w przypadku overbookingu",ang: involuntary upgrade,,,"GroupId: 2832924
+Translate: involuntary upgrade
+Translate: operational upgrade
+Translate: free upgrade to business or first class on an overbooked flight"
+214259,WORD_NOUN,,HIRAGANA,,,小並感,こなみかん,,konamikan,"dziecinna reakcja (jak reakcja ucznia szkoły podstawowej)
+niewyszukana reakcja","internetowy slang, skrót od 小学生並みの感想",,DUPLICATE 214233,"GroupId: 2836533
+Translate: childish reaction (like that of an elementary school student)
+MiscInfo: net-sl
+AdditionalInfo: abbr. of 小学生並みの感想
+Translate: unsophisticated reaction
+MiscInfo: net-sl
+AdditionalInfo: abbr. of 小学生並みの感想"
+214260,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,酒のお友,さけのおとも,,sake no otomo,"przekąska podawana z napojami
+dodatek do napoju (alkoholowego)",,,,"GroupId: 2837207
+Translate: appetizer or snack served with drinks
+Translate: accompaniment to an (alcoholic) drink"
+214261,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,線香を上げる,せんこうをあげる,,senkou o ageru,"ofiarować kadzidło (dla osoby zmarłej)
+zapalić kadzidełko",,,,"GroupId: 2840114
+Translate: to offer incense (for a departed person)
+Translate: to light an incense stick"
