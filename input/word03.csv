@@ -57869,10 +57869,10 @@ MiscInfo: yoji"
 Translate: Kii (former province located in present-day Wakayama and southern Mie prefectures)"
 214283,WORD_NOUN,,HIRAGANA,,,若狭,わかさ,,wakasa,Wakasa,dawna prowincja położona na południu dzisiejszej prefektury Fukui,,,"GroupId: 2845149
 Translate: Wakasa (former province located in the south of present-day Fukui Prefecture)"
-214284,WORD_NOUN,,HIRAGANA,,,陸奥,むつ,,mutsu,Mutsu,"dawna prowincja położona w dzisiejszych prefekturach Fukushima, Miyagi, Iwate i Aomori, po 1869 roku りくおく",,,"GroupId: 2845186
+214284,WORD_NOUN,,HIRAGANA,,,陸奥,むつ,,mutsu,Mutsu,"dawna prowincja położona w dzisiejszych prefekturach Fukushima, Miyagi, Iwate i Aomori, po 1869 roku りくおく",,DUPLICATE 214285,"GroupId: 2845186
 Translate: Mutsu (former province located in present-day Fukushima, Miyagi, Iwate, and Aomori prefectures)
 AdditionalInfo: after 1869 became りくおく"
-214285,WORD_NOUN,,HIRAGANA,,,陸奥,りくおく,,rikuoku,Rikuoku,dawna prowincja położona w części dzisiejszych prefektur Aomori i Iwate,,,"GroupId: 2845219
+214285,WORD_NOUN,,HIRAGANA,,,陸奥,りくおく,,rikuoku,Rikuoku,dawna prowincja położona w części dzisiejszych prefektur Aomori i Iwate,,DUPLICATE 214284,"GroupId: 2845219
 Translate: Rikuoku (former province located in parts of present-day Aomori and Iwate prefectures)"
 214286,WORD_NOUN,,HIRAGANA,,,伊予,いよ,,iyo,Iyo,dawna prowincja położona w dzisiejszej prefekturze Ehime,,,"GroupId: 2845148
 Translate: Iyo (former province located in present-day Ehime Prefecture)"
@@ -58026,3 +58026,89 @@ Translate: free food
 Translate: free meal"
 214324,WORD_NOUN,,HIRAGANA,,,戦争ごっこ,せんそうごっこ,,sensou gokko,grający żołnierze,,,,"GroupId: 2830438
 Translate: playing soldiers"
+214325,WORD_NOUN,,HIRAGANA,,,石榴鼻,ざくろばな,,zakuro bana,"rhinophyma
+guzowatość nosa",,,,"GroupId: 2565990
+Translate: rhinophyma
+Translate: red swollen nose (often associated with alcoholism)"
+214326,WORD_NOUN,,HIRAGANA,,,おおいぬ座,おおいぬざ,,ooinuza,Wielki Pies,gwiazdozbiór nieba zimowego półkuli południowej,,,"GroupId: 1659410
+Translate: Canis Major (constellation)
+Translate: the Greater Dog"
+214327,WORD_NOUN,,HIRAGANA,,,雨魚,あめのうお,,amenouo,Oncorhynchus masou rhodurus,gatunek ryby,,,"GroupId: 2241280
+Translate: biwa trout (Oncorhynchus masou rhodurus)
+MiscInfo: uk
+Translate: biwa salmon
+MiscInfo: uk"
+214328,WORD_NOUN,,KATAKANA,,,-,アメノウオ,,amenouo,Oncorhynchus masou rhodurus,gatunek ryby,,,"GroupId: 2241280
+Translate: biwa trout (Oncorhynchus masou rhodurus)
+MiscInfo: uk
+Translate: biwa salmon
+MiscInfo: uk"
+214329,WORD_NOUN,,HIRAGANA,,,擬蠍,かにむし,,kanimushi,zaleszczotek,pajączek z rodziny Pseudoscorpionida,,,"GroupId: 2241650
+Translate: pseudoscorpion (any arachnid of order Pseudoscorpionida)
+MiscInfo: uk
+Translate: false scorpion
+MiscInfo: uk"
+214330,WORD_NOUN,,KATAKANA,,,-,カニムシ,,kanimushi,zaleszczotek,pajączek z rodziny Pseudoscorpionida,,,"GroupId: 2241650
+Translate: pseudoscorpion (any arachnid of order Pseudoscorpionida)
+MiscInfo: uk
+Translate: false scorpion
+MiscInfo: uk"
+214331,WORD_NOUN,,KATAKANA,,,-,ハジロウミバト,,hajiro umibato,"nurnik zwyczajny
+nurnik
+nurnik białoskrzydły","gatunek średniego ptaka morskiego z rodziny alk, Cepphus grylle",,,"GroupId: 2254510
+Translate: black guillemot (Cepphus grylle)
+MiscInfo: uk
+Translate: tystie
+MiscInfo: uk"
+214332,WORD_NOUN,,KATAKANA,,,-,ハシブトウミガラス,,hashibuto umigarasu,"nurzyk polarny
+nurzyk grubodzioby","gatunek dużego ptaka wodnego z rodziny alk, zamieszkujący wybrzeża Morza Arktycznego, Uria lomvia",,,"GroupId: 2254530
+Translate: thick-billed murre (Uria lomvia)
+MiscInfo: uk
+Translate: Brunnich's guillemot
+MiscInfo: uk"
+214333,WORD_NOUN,,KATAKANA,,,-,ホシダカラガイ,,hoshidakaragai,Cypraea tigris,zwierzę,,,"GroupId: 2260140
+Translate: tiger cowrie (Cypraea tigris)
+MiscInfo: uk
+Translate: tiger cowry
+MiscInfo: uk"
+214334,WORD_NOUN,,HIRAGANA,,,触太鼓,ふれだいこ,,fure daiko,"bębnienie na ulicach, aby ogłosić turniej
+ogłoszenia wydarzenia chodzą po ulicach i waląc w bęben
+bęben używany do ogłaszania wydarzenie chodząc z nim po ulicach i waląc w niego",,,,"GroupId: 1691730
+Translate: drumming in the streets to announce a tournament
+Translate: announcing an event by walking around in the streets beating a drum
+Translate: drum used to announce an event by walking around in the streets"
+214335,WORD_NOUN,,KATAKANA,,,-,カタログ・レゾネ,,katarogu rezone,"katalog raisonné
+pełny katalog prac (artysty lub w posiadaniu muzeum lub galerii sztuki)",ang: catalogue raisonné,,,"GroupId: 2078220
+Translate: catalogue raisonné
+Translate: complete catalogue of works (by an artist or in the possession of a museum or art gallery)"
+214336,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,玉子に目鼻,たまごにめはな,,tamago ni mehana,"(śliczna) jajowata twarz
+oczy i nos na jajku","wyrażenie idiomatyczne, mało znane słowo",,,"GroupId: 2141500
+Translate: (cute) egg-like face
+MiscInfo: id
+MiscInfo: obsc
+Translate: eyes and nose on an egg
+MiscInfo: id
+MiscInfo: obsc"
+214337,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,床をあげる,とこをあげる,,toko o ageru,"wstać z łóżka
+wyzdrowieć z choroby",,,,"GroupId: 2210570
+Translate: to put away one's bedding
+Translate: to recover from an illness (and put away one's sickbed)"
+214338,WORD_NOUN,,HIRAGANA,,,艪臍,ろべそ,,robeso,kołek podporowy,"na którym osadza się tradycyjne wiosło, mało znane słowo",,,"GroupId: 2232730
+Translate: fulcrum peg (fitted into the cavity in an oar as part of a traditional oarlock)
+MiscInfo: obsc"
+214339,WORD_NOUN,,KATAKANA_HIRAGANA,,,南京玉簾,ナンキンたますだれ,,nankin tamasu dare,"przedstawienie uliczne, w którym artysta zamienia specjalnie przygotowany bambus w różne kształty śpiewając przy tym wiersz",,,,"GroupId: 2695130
+Translate: street performance in which the performer transforms a specially-made bamboo screen into various shapes while chanting an accompanying poem"
+214340,WORD_NOUN,,HIRAGANA,,,ただ飯,ただめし,,tada meshi,"darmowe jedzenie
+darmowy posiłek",,,,"GroupId: 2747280
+Translate: free food
+Translate: free meal"
+214341,WORD_NOUN,,HIRAGANA,,,只飯,ただめし,,tada meshi,"darmowe jedzenie
+darmowy posiłek",,,,"GroupId: 2747280
+Translate: free food
+Translate: free meal"
+214342,WORD_NOUN,,KATAKANA,,,-,タダメシ,,tada meshi,"darmowe jedzenie
+darmowy posiłek",,,,"GroupId: 2747280
+Translate: free food
+Translate: free meal"
