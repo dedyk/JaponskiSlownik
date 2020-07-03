@@ -59367,7 +59367,7 @@ Translate: sleeve-hole
 Translate: armhole"
 214651,WORD_NOUN,,HIRAGANA,,,練習船,れんしゅうせん,,renshuusen,szkoleniowy lub treningowy okręt,,,,"GroupId: 1781460
 Translate: school or training ship"
-214652,WORD_NOUN,,KATAKANA,,,-,シロオビイソハゼ,,shiroobiisohaze,Eviota pellucida,gatunek ryby,,,"GroupId: 2548770
+214652,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,シロオビイソハゼ,,shiroobiisohaze,Eviota pellucida,gatunek ryby,,,"GroupId: 2548770
 Translate: Pellucida pygmy goby (Eviota pellucida)
 Translate: neon pygmy goby"
 214653,WORD_NOUN,,HIRAGANA,,,予定価格,よていかかく,,yotei kakaku,"cena orientacyjna
@@ -59390,7 +59390,7 @@ Translate: SFTS"
 Translate: photojournalist"
 214660,WORD_NOUN,,HIRAGANA,,,補数器,ほすうき,,hosuuki,???,,,,"GroupId: 2388900
 Translate: complementer"
-214661,WORD_NOUN,,HIRAGANA,,,天気祭,てんきまつり,,tenkimatsuri,ceremonia odbywająca się w celu modlitwy o dobrą pogodę,podczas długich okresów deszczu,,,"GroupId: 2422950
+214661,WORD_NOUN,,HIRAGANA,,,天気祭,てんきまつり,,tenki matsuri,ceremonia odbywająca się w celu modlitwy o dobrą pogodę,podczas długich okresów deszczu,,,"GroupId: 2422950
 Translate: ceremony held to pray for good weather (during long periods of rain)"
 214662,WORD_NOUN,,KATAKANA_HIRAGANA,,,デルタ波,デルタは,,deruta ha,"fala delta
 fale delta",,,,"GroupId: 2639280
@@ -59433,7 +59433,7 @@ Translate: one scoop (of water)"
 Translate: broadband network"
 214674,WORD_NOUN,,KATAKANA_HIRAGANA,,,オフセット印刷,オフセットいんさつ,,ofusetto insatsu,druk offsetowy,,,,"GroupId: 2289180
 Translate: offset printing"
-214675,WORD_CONJUNCTION,,HIRAGANA,,,加之,しかのみならず,,shikanominarazu,"nie tylko ..., ale również
+214675,WORD_CONJUNCTION,,HIRAGANA,,,加之,しかのみならず,,shika no minarazu,"nie tylko ..., ale również
 również",,,,"GroupId: 2576170
 Translate: not only ... but also
 MiscInfo: uk
@@ -59523,8 +59523,7 @@ Translate: clattering
 MiscInfo: on-mim"
 214695,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,,,-,いけしゃあしゃあ,,ikeshaashaa,"bezwstydnie
-bezczelnie
-bezwstydnie",,,,"GroupId: 2199710
+bezczelnie",,,,"GroupId: 2199710
 Translate: shamelessly
 MiscInfo: on-mim
 Translate: brazenly
@@ -59559,7 +59558,7 @@ Translate: boom
 MiscInfo: on-mim
 Translate: kaboom
 MiscInfo: on-mim"
-214700,WORD_ADVERB_TO,,KATAKANA,,,-,ジューッ,,juu,???,,,,"GroupId: 2834238
+214700,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,ジューッ,,juu,???,,,,"GroupId: 2834238
 Translate: fizzlingly
 MiscInfo: on-mim
 Translate: sputteringly
@@ -59583,3 +59582,92 @@ MiscInfo: on-mim"
 214704,WORD_NOUN,,HIRAGANA,,,一字千金,いちじせんきん,,ichiji senkin,słowo o dużej wartości,,,,"GroupId: 1162910
 Translate: word of great value
 MiscInfo: yoji"
+214705,WORD_NOUN,,HIRAGANA,,,袖刳り,そでぐり,,sode guri,"otwór w rękawie
+wycięcie na ramię (w ubraniu)",,,,"GroupId: 1941560
+Translate: sleeve-hole
+Translate: armhole"
+214706,WORD_NOUN,,KATAKANA,,,-,ハートメール,,haato meeru,pocztówki związane z Dniem Szacunku dla Osób Starszych i sprzedawana co roku od września,ang: heart mail,,,"GroupId: 2112590
+Translate: postcards associated with Respect-for-the-Aged Day, and sold every year starting in September"
+214707,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,はあとめーる,,haato meeru,pocztówki związane z Dniem Szacunku dla Osób Starszych i sprzedawana co roku od września,ang: heart mail,,,"GroupId: 2112590
+Translate: postcards associated with Respect-for-the-Aged Day, and sold every year starting in September"
+214708,WORD_NOUN,,HIRAGANA,,,粉蜱,こなだに,,konadani,roztocz z rodziny Acaridae,,,,"GroupId: 2212370
+Translate: mold mite (any mite of family Acaridae)"
+214709,WORD_NOUN,,KATAKANA,,,-,コナダニ,,konadani,roztocz z rodziny Acaridae,,,,"GroupId: 2212370
+Translate: mold mite (any mite of family Acaridae)"
+214710,WORD_NOUN,,HIRAGANA,,,天気祭り,てんきまつり,,tenki matsuri,ceremonia odbywająca się w celu modlitwy o dobrą pogodę,podczas długich okresów deszczu,,,"GroupId: 2422950
+Translate: ceremony held to pray for good weather (during long periods of rain)"
+214711,WORD_NOUN,,KATAKANA,,,-,ネズミジカ,,nezumi jika,"myszo-jeleń
+kanczyl",,,,"GroupId: 2737170
+Translate: chevrotain (Tragulidae spp.)
+MiscInfo: uk
+Translate: mouse deer
+MiscInfo: uk"
+214712,WORD_NOUN,,KATAKANA,,,-,オーバーシューズ,,oobaashuuzu,kalosz zakładany na buty,ang: overshoes,,,"GroupId: 1638650
+Translate: overshoes (waterproof covers for shoes)
+Translate: galoshes"
+214713,WORD_NOUN,,HIRAGANA,,,２等親,にとうしん,,nitoushin,krewny drugiego stopnia,,,,"GroupId: 1462810
+Translate: second-degree relative"
+214714,WORD_CONJUNCTION,,HIRAGANA,,,然のみならず,しかのみならず,,shika no minarazu,"nie tylko ..., ale również
+również",,,,"GroupId: 2576170
+Translate: not only ... but also
+MiscInfo: uk
+Translate: also
+MiscInfo: uk"
+214715,"WORD_EXPRESSION
+WORD_NOUN",,KATAKANA_EXCEPTION,,,-,ハナトラノオ,,hanatora no o,odętka wirginijska,"roślina, Physostegia virginiana",,,"GroupId: 2603580
+Translate: false dragonhead (Physostegia virginiana)
+MiscInfo: uk
+Translate: obedient plant
+MiscInfo: uk"
+214716,WORD_NOUN,,KATAKANA,,,-,ヒマラヤグマ,,himaraya guma,"niedźwiedź himalajski
+niedźwiedź księżycowy
+niedźwiedź obrożny","gatunek drapieżnego ssaka z rodziny niedźwiedziowatych, blisko spokrewniony z baribalem, Ursus thibetanus",,,"GroupId: 2607350
+Translate: Himalayan black bear (Ursus thibetanus)
+MiscInfo: uk
+Translate: Asiatic black bear
+MiscInfo: uk"
+214717,WORD_NOUN,,KATAKANA,,,-,オジロジカ,,ojirojika,"mulak białoogonowy
+jeleń wirginijski
+jeleń wirgiński","gatunek ssaka parzystokopytnego z rodziny jeleniowatych, Odocoileus virginianus",,,"GroupId: 2607840
+Translate: white-tailed deer (Odocoileus virginianus)
+MiscInfo: uk
+Translate: whitetail deer
+MiscInfo: uk"
+214718,WORD_NOUN,,KATAKANA,,,-,ハマヒバリ,,hamahibari,"górniczek zwyczajny
+górniczek","gatunek małego ptaka z rodziny skowronków, Eremophila alpestris",,,"GroupId: 2621290
+Translate: shore lark (Eremophila alpestris)
+MiscInfo: uk
+Translate: horned lark
+MiscInfo: uk"
+214719,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,がたごと,,gatagoto,"brzęk
+grzechotanie
+terkot
+stukot",,,,"GroupId: 2101850
+Translate: rattling
+MiscInfo: on-mim
+Translate: clattering
+MiscInfo: on-mim"
+214720,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,いけしゃあしゃ,,ikeshaasha,"bezwstydnie
+bezczelnie",,,,"GroupId: 2199710
+Translate: shamelessly
+MiscInfo: on-mim
+Translate: brazenly
+MiscInfo: on-mim"
+214721,"WORD_ADVERB_TO
+WORD_ADVERB",,HIRAGANA_KATAKANA,,,-,どどーん,,dodoon,bum,odgłos eksplozji,,,"GroupId: 2728720
+Translate: boom
+MiscInfo: on-mim
+Translate: kaboom
+MiscInfo: on-mim"
+214722,WORD_ADVERB_TO,,HIRAGANA_KATAKANA,,,-,じゅーっ,,juu,???,,,,"GroupId: 2834238
+Translate: fizzlingly
+MiscInfo: on-mim
+Translate: sputteringly
+MiscInfo: on-mim"
+214723,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,じゅうっ,,juu,???,,,,"GroupId: 2834238
+Translate: fizzlingly
+MiscInfo: on-mim
+Translate: sputteringly
+MiscInfo: on-mim"
