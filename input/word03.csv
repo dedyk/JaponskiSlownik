@@ -59866,7 +59866,7 @@ MiscInfo: on-mim
 Translate: relaxed
 MiscInfo: on-mim"
 214766,"WORD_ADVERB
-WORD_NOUN",,KATAKANA_HIRAGANA,,,-,ガシッと,,gashitto,"mocno
+WORD_NOUN",,KATAKANA_EXCEPTION,,,-,ガシッと,,gashitto,"mocno
 pewnie
 solidnie
 serdecznie
@@ -59877,7 +59877,7 @@ Translate: solidly
 MiscInfo: on-mim
 Translate: heartily
 MiscInfo: on-mim"
-214767,WORD_NOUN,,KATAKANA,,,-,ムギュウ,,mugyuu,"ściskanie
+214767,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ムギュウ,,mugyuu,"ściskanie
 przytulanie
 uścisk",,,,"GroupId: 2464810
 Translate: squeezing
@@ -60035,3 +60035,90 @@ MiscInfo: on-mim"
 214782,WORD_NOUN,,HIRAGANA,,,-,てこてこ,,teko teko,dźwięk chodzenia,,,,"GroupId: 1008280
 Translate: sound of walking
 MiscInfo: on-mim"
+214783,WORD_NOUN,,KATAKANA,,,-,ツバメコノシロ,,tsubamekonoshiro,tropikalna morska ryba z rodziny Polynemidae,,,,"GroupId: 2672170
+Translate: threadfin (any fish of family Polynemidae, esp. the striped threadfin, Polydactylus plebeius)
+MiscInfo: uk"
+214784,WORD_NOUN,,KATAKANA,,,-,ハチジョウグワ,,hachijouguwa,Morus kagayamae,,,,"GroupId: 2685570
+Translate: Morus kagayamae (species of mulberry)
+MiscInfo: uk"
+214785,WORD_VERB_RU,,HIRAGANA,,,取っ捕まえる,とっつかまえる,,tottsukamaeru,"łapać
+chwytać
+złapać",,,,"GroupId: 2516830
+Translate: to catch"
+214786,WORD_VERB_U,,HIRAGANA,,,噛みちぎる,かみちぎる,,kami chigiru,odgryźć,,,,"GroupId: 2674840
+Translate: to bite off"
+214787,WORD_NOUN,,KATAKANA,,,-,ハルパゴルニスワシ,,harupagorunisu washi,orzeł Haasta,"gatunek dużego, wymarłego ptaka drapieżnego z rodziny jastrzębiowatych, zamieszkujący niegdyś Nową Zelandię, Harpagornis moorei",,,"GroupId: 2625970
+Translate: Haast's eagle (Harpagornis moorei)
+MiscInfo: uk
+Translate: Harpagornis eagle
+MiscInfo: uk"
+214788,WORD_NOUN,,KATAKANA,,,-,ガラパゴスゾウガメ,,garapagosu zougame,żółw słoniowy,"gatunek jednego z największych żółwi na świecie, Geochelone nigra",,,"GroupId: 2627810
+Translate: Galápagos tortoise (Geochelone nigra)
+MiscInfo: uk
+Translate: Galapagos giant tortoise
+MiscInfo: uk"
+214789,WORD_NOUN,,KATAKANA,,,-,アカヒレ,,akahire,"kardynałek chiński
+kardynałek","gatunek słodkowodnej ryby z rodziny karpiowatych, Tanichthys albonubes",,,"GroupId: 2635040
+Translate: white cloud mountain minnow (Tanichthys albonubes)
+MiscInfo: uk
+Translate: Canton danio
+MiscInfo: uk"
+214790,WORD_NOUN,,KATAKANA,,,-,イシガキダイ,,ishigakidai,Oplegnathus punctatus,gatunek ryby,,,"GroupId: 2635330
+Translate: rock porgy (Oplegnathus punctatus)
+MiscInfo: uk
+Translate: spotted knifejaw
+MiscInfo: uk"
+214791,WORD_NOUN,,KATAKANA,,,-,オキエソ,,okieso,traszyna,"gatunek drapieżnej głębinowej ryby skrzelokształtnej z rodziny jaszczurnikowatych, klasyfikowany w monotypowym rodzaju Trachinocephalus lub w rodzaju Synodus, Trachinocephalus myops",,,"GroupId: 2635540
+Translate: bluntnose lizardfish (Trachinocephalus myops)
+MiscInfo: uk
+Translate: snakefish
+MiscInfo: uk"
+214792,WORD_VERB_U,,HIRAGANA,,,押隠す,おしかくす,,oshi kakusu,"tuszować
+ukrywać
+skrywać",,,,"GroupId: 1862340
+Translate: to cover up
+Translate: to conceal"
+214793,WORD_ADVERB,,KATAKANA_HIRAGANA,,,-,ギラっと,,giratto,oślepiająco,,,,"GroupId: 2080370
+Translate: dazzlingly
+MiscInfo: on-mim"
+214794,WORD_ADVERB,,HIRAGANA,,,-,ぎらっと,,giratto,oślepiająco,,,,"GroupId: 2080370
+Translate: dazzlingly
+MiscInfo: on-mim"
+214795,"WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,-,がしっと,,gashitto,"mocno
+pewnie
+solidnie
+serdecznie
+z ochotą",,,,"GroupId: 2235730
+Translate: firmly
+MiscInfo: on-mim
+Translate: solidly
+MiscInfo: on-mim
+Translate: heartily
+MiscInfo: on-mim"
+214796,"WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,-,ぼてっと,,botetto,"pulchny
+pulchnie
+puszyście
+grubo",często ボテッとした,,,"GroupId: 2828778
+Translate: podgily
+MiscInfo: on-mim
+AdditionalInfo: often ボテッとした, etc.
+Translate: plumply
+MiscInfo: on-mim
+AdditionalInfo: often ボテッとした, etc.
+Translate: thickly
+MiscInfo: on-mim
+AdditionalInfo: often ボテッとした, etc."
+214797,"WORD_ADJECTIVE_NA
+WORD_ADVERB
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,カピカピ,,kapi kapi,???,kolokwializm,,,"GroupId: 2529520
+Translate: crusty
+MiscInfo: on-mim
+MiscInfo: col
+Translate: flaky
+MiscInfo: on-mim
+MiscInfo: col
+Translate: dried out
+MiscInfo: on-mim
+MiscInfo: col"
