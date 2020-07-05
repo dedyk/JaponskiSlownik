@@ -1,6 +1,6 @@
 * kanji - 0
 ----------
-word - 15
++ word - 15
 ----------
 60000 - 20
 small - 5
@@ -9,3 +9,7 @@ ludzie - 25
 uzupełniacz - x
 -----------
 suma: 70
+
+tatoeba.org
+sugestie
+
