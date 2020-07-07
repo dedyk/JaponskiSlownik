@@ -60710,7 +60710,7 @@ Translate: guaiacol"
 214948,WORD_NOUN,,KATAKANA,,,-,ジスルフィラム,,jisurufiramu,disulfiram,"organiczny związek chemiczny, lek stosowany w leczeniu alkoholizmu, którego działanie polega na wpływie na metabolizm alkoholu etylowego, ang: disulfiram",,,"GroupId: 2483350
 Translate: disulfiram"
 214949,"WORD_NOUN
-WORD_ADJECTIVE_F",,HIRAGANA,,,最小二乗,さいしょうにじょう,,saishou nijou,metoda najmniejszych kwadratów,matematyka,,,"GroupId: 2269710
+WORD_ADJECTIVE_F",,HIRAGANA,,,最小二乗,さいしょうにじょう,,saishou nijou,metoda najmniejszych kwadratów,matematyka,,DUPLICATE 215000,"GroupId: 2269710
 Translate: least-squares (method)"
 214950,WORD_NOUN,,KATAKANA_HIRAGANA,,,ハゲ具合,ハゲぐあい,,hage guai,"stopień łysienia
 stadium łysienia",,,,"GroupId: 2760520
@@ -60903,3 +60903,91 @@ Translate: military reserve force comprised of ex-servicemen"
 Translate: morning chill (of a summer's day)
 MiscInfo: arch
 MiscInfo: obsc"
+215000,"WORD_NOUN
+WORD_ADJECTIVE_F",,HIRAGANA,,,最小二乗,さいしょうじじょう,,saishou jijou,metoda najmniejszych kwadratów,matematyka,,DUPLICATE 214949,"GroupId: 2269710
+Translate: least-squares (method)"
+215001,"WORD_NOUN
+WORD_ADJECTIVE_F",,HIRAGANA,,,最小２乗,さいしょうにじょう,,saishou nijou,metoda najmniejszych kwadratów,matematyka,,DUPLICATE 215002,"GroupId: 2269710
+Translate: least-squares (method)"
+215002,"WORD_NOUN
+WORD_ADJECTIVE_F",,HIRAGANA,,,最小２乗,さいしょうじじょう,,saishou jijou,metoda najmniejszych kwadratów,matematyka,,DUPLICATE 215001,"GroupId: 2269710
+Translate: least-squares (method)"
+215003,WORD_NOUN,,HIRAGANA,,,禿げ具合,はげぐあい,,hage guai,"stopień łysienia
+stadium łysienia",,,,"GroupId: 2760520
+Translate: degree of baldness
+Translate: stage of balding"
+215004,WORD_NOUN,,HIRAGANA,,,はげ具合,はげぐあい,,hage guai,"stopień łysienia
+stadium łysienia",,,,"GroupId: 2760520
+Translate: degree of baldness
+Translate: stage of balding"
+215005,WORD_NOUN,,HIRAGANA,,,大地鴫,おおじしぎ,,oojishigi,bekas japoński,"gatunek ptaka, Gallinago hardwickii",,,"GroupId: 2190090
+Translate: Latham's snipe (Gallinago hardwickii)
+MiscInfo: uk"
+215006,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオジシギ,,oojishigi,bekas japoński,"gatunek ptaka, Gallinago hardwickii",,,"GroupId: 2190090
+Translate: Latham's snipe (Gallinago hardwickii)
+MiscInfo: uk"
+215007,WORD_NOUN,,HIRAGANA,,,鳴砂,なきすな,,naki suna,"śpiewający piasek (który po nadepnięciu wydaje dźwięk)
+gwiżdżący piasek
+piszczący piasek
+szczekający piasek",,,DUPLICATE 215008,"GroupId: 2607040
+Translate: singing sand (which produces sound when stepped on)
+Translate: whistling sand
+Translate: squeaking sand
+Translate: barking sand"
+215008,WORD_NOUN,,HIRAGANA,,,鳴砂,なりすな,,narisuna,"śpiewający piasek (który po nadepnięciu wydaje dźwięk)
+gwiżdżący piasek
+piszczący piasek
+szczekający piasek",,,DUPLICATE 215007,"GroupId: 2607040
+Translate: singing sand (which produces sound when stepped on)
+Translate: whistling sand
+Translate: squeaking sand
+Translate: barking sand"
+215009,WORD_NOUN,,KATAKANA,,,-,ホウライチク,,houraichiku,Bambusa multiplex,roślina,,,"GroupId: 2685280
+Translate: hedge bamboo (Bambusa multiplex)
+MiscInfo: uk
+Translate: golden goddess bamboo
+MiscInfo: uk"
+215010,WORD_NOUN,,KATAKANA,,,-,コアマモ,,koamamo,Nanozostera japonica,roślina,,,"GroupId: 2693680
+Translate: dwarf eelgrass (Nanozostera japonica)
+MiscInfo: uk
+Translate: Japanese eelgrass
+MiscInfo: uk"
+215011,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ハイイロマングース,,haiiro manguusu,mangusta indyjska,"zwierzę, Herpestes edwardsii",,,"GroupId: 2698530
+Translate: Indian gray mongoose (Herpestes edwardsii)
+MiscInfo: uk
+Translate: common grey mongoose
+MiscInfo: uk"
+215012,WORD_NOUN,,KATAKANA,,,-,カツオドリ,,katsuodori,głuptak białobrzuchy,"gatunek dużego ptaka morskiego z rodziny głuptaków, Sula leucogaster",,,"GroupId: 2700500
+Translate: booby (esp. the brown booby, Sula leucogaster)
+MiscInfo: uk
+Translate: gannet
+MiscInfo: uk"
+215013,WORD_NOUN,,KATAKANA,,,-,モウコノウマ,,moukonouma,koń Przewalskiego,"ssak z rodziny koniowatych, współcześnie jedyny dziko żyjący gatunek koni, Equus ferus przewalskii",,,"GroupId: 2702160
+Translate: Przewalski's horse (Equus ferus przewalskii)
+MiscInfo: uk
+Translate: Dzungarian horse
+MiscInfo: uk"
+215014,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,傍に置く,わきにおく,,waki ni oku,"odkładać na bok
+kłaść na bok",,,,"GroupId: 1917310
+Translate: to lay aside
+Translate: to set aside"
+215015,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,脇におく,わきにおく,,waki ni oku,"odkładać na bok
+kłaść na bok",,,,"GroupId: 1917310
+Translate: to lay aside
+Translate: to set aside"
+215016,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,わきに置く,わきにおく,,waki ni oku,"odkładać na bok
+kłaść na bok",,,,"GroupId: 1917310
+Translate: to lay aside
+Translate: to set aside"
+215017,WORD_NOUN,,KATAKANA,,,-,ピアサー,,piasaa,przebijak do uszu,ang: ear piercer,,,"GroupId: 1980390
+Translate: ear piercer"
+215018,WORD_NOUN,,HIRAGANA_KATAKANA,,,改頁,かいページ,,kai peeji,"repaginacja
+nowa strona
+podział strony",,,,"GroupId: 2345370
+Translate: repagination
+Translate: new page
+Translate: form feed
+Translate: page break"
