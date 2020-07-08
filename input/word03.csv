@@ -61004,7 +61004,7 @@ największej skali",,,,"GroupId: 2810730
 Translate: biggest
 Translate: largest scale"
 215022,WORD_EXPRESSION,,HIRAGANA,,,乳母日傘,おんばひがさ,,onba higasa,"(wychowanie dziecka) rozpieszczając materialnie dziecko w bogatej rodzinie
-(wychowanie dziecka) w domowej atmosferze",,,,"GroupId: 2032170
+(wychowanie dziecka) w domowej atmosferze",,,DUPLICATE 215079,"GroupId: 2032170
 Translate: (bringing up a child) with greatest care pampering (him, her) with material comforts of a rich family
 MiscInfo: yoji
 Translate: (being brought up) in a hothouse atmosphere
@@ -61175,7 +61175,7 @@ Translate: dressing room
 Translate: locker room"
 215067,WORD_VERB_U,,HIRAGANA,,,-,ひくつく,,hikutsuku,drgać,,,,"GroupId: 2065050
 Translate: to twitch"
-215068,WORD_NOUN,,KATAKANA,,,-,シェフコート,,shefukooto,"kurtka szefa kuchni
+215068,WORD_NOUN,,KATAKANA,,,-,シェフコート,,shefu kooto,"kurtka szefa kuchni
 strój szefa kuchni",,,,"GroupId: 2840086
 Translate: chef coat
 Translate: chef's whites"
@@ -61204,4 +61204,116 @@ Translate: biennial plant"
 215076,WORD_NOUN,,HIRAGANA,,,吹き物,ふきもの,,fukimono,instrument dęty,szczególnie w gagaku,,,"GroupId: 2394920
 Translate: wind instrument (esp. in gagaku)"
 215077,WORD_EXPRESSION,,HIRAGANA,,,手の届かないところ,てのとどかないところ,,te no todokanai tokoro,(miejsce) poza zasięgiem,,,,"GroupId: 2400060
+Translate: (a place) out of one's reach"
+215078,WORD_NOUN,,HIRAGANA,,,麝香猫科,じゃこうねこか,,jakouneko ka,"wiwerowate
+łaszowate
+łasze","rodzina ssaków z podrzędu kotokształtnych w rzędzie drapieżnych, występująca głównie w leśnych ekosystemach południowej i południowo-wschodniej Azji, w Afryce i w południowo-zachodniej Europie, głównie poprzez lasy tropikalne, aż do RPA, Viverridae",,,"GroupId: 2695980
+Translate: Viverridae
+Translate: family of viverrids (e.g. civets)"
+215079,WORD_EXPRESSION,,HIRAGANA,,,乳母日傘,おんばひからかさ,,onba hikarakasa,"(wychowanie dziecka) rozpieszczając materialnie dziecko w bogatej rodzinie
+(wychowanie dziecka) w domowej atmosferze",,,DUPLICATE 215022,"GroupId: 2032170
+Translate: (bringing up a child) with greatest care pampering (him, her) with material comforts of a rich family
+MiscInfo: yoji
+Translate: (being brought up) in a hothouse atmosphere
+MiscInfo: yoji"
+215080,WORD_ADJECTIVE_F,,HIRAGANA,,,巌々とした,がんがんとした,,gangan to shita,"urwisty
+spadzisty (jak góra)",,,,"GroupId: 1868490
+Translate: craggy
+Translate: steep (as of a mountain)"
+215081,WORD_NOUN,,HIRAGANA,,,垂れ梅,しだれうめ,,shidare ume,"morela japońska
+ume
+mume","gatunek drzewa należący do rodziny różowatych, Prunus mume",,,"GroupId: 2609710
+Translate: weeping plum (Prunus mume f. pendula)
+Translate: weeping Japanese apricot"
+215082,WORD_NOUN,,KATAKANA,,,-,ヒダレウメ,,hidare ume,"morela japońska
+ume
+mume","gatunek drzewa należący do rodziny różowatych, Prunus mume",,,"GroupId: 2609710
+Translate: weeping plum (Prunus mume f. pendula)
+Translate: weeping Japanese apricot"
+215083,WORD_NOUN,,HIRAGANA,,,御三時,おさんじ,,osanji,"popołudniowa przekąska (zjedzona około 3 godziny)
+popołudniowa herbata",,,,"GroupId: 1001940
+Translate: afternoon snack (eaten around 3 o'clock)
+Translate: afternoon tea"
+215084,WORD_NOUN,,HIRAGANA,,,しゃんしゃん大会,しゃんしゃんたいかい,,shanshan taikai,???,,,,"GroupId: 2815100
+Translate: rigged convention"
+215085,WORD_NOUN,,KATAKANA,,,-,ラムダ・ファージ,,ramuda faaji,bakteriofag lambda,"bakteriofag zawierający dwuniciowy DNA, infekujący pałeczkę okrężnicy, ang: lambda phage",,,"GroupId: 2488340
+Translate: lambda phage"
+215086,"WORD_ADVERB_TO
+WORD_ADVERB",,KATAKANA,,,-,ゴトン,,goton,"dźwięk uderzenia
+brzęk
+szczęk",,,,"GroupId: 2845354
+Translate: thump
+MiscInfo: on-mim
+Translate: clang
+MiscInfo: on-mim
+Translate: clank
+MiscInfo: on-mim"
+215087,WORD_NOUN,,KATAKANA,,,-,チビトガリネズミ,,chibitogari nezumi,ryjówka najmniejsza,"gatunek ssaka z rodziny ryjówkowatych, występujący w północnej Eurazji i Ameryce Północnej, Sorex minutissimus",,,"GroupId: 2704140
+Translate: Eurasian least shrew (Sorex minutissimus)
+MiscInfo: uk
+Translate: lesser pygmy shrew
+MiscInfo: uk"
+215088,WORD_NOUN,,KATAKANA,,,-,ワタセジネズミ,,wataseji nezumi,Crocidura watasei,zwierzę,,,"GroupId: 2704240
+Translate: lesser Ryukyu shrew (Crocidura watasei)
+MiscInfo: uk
+Translate: Watase's shrew
+MiscInfo: uk"
+215089,WORD_NOUN,,KATAKANA,,,-,ニホンジネズミ,,nihonji nezumi,zębiełek japoński,"gatunek owadożernego ssaka z rodziny ryjówkowatych, Crocidura dsinezumi",,,"GroupId: 2704250
+Translate: Dsinezumi shrew (Crocidura dsinezumi)
+MiscInfo: uk
+Translate: Japanese white-toothed shrew
+MiscInfo: uk"
+215090,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オリイジネズミ,,oriiji nezumi,Crocidura orii,zwierzę,,,"GroupId: 2704260
+Translate: Ryukyu shrew (Crocidura orii)
+MiscInfo: uk
+Translate: Orii's shrew
+MiscInfo: uk"
+215091,WORD_NOUN,,KATAKANA,,,-,ナンカイニセツノヒラムシ,,nankainise tsunohira mushi,Pseudobiceros bedfordi,zwierzę,,,"GroupId: 2704930
+Translate: Persian carpet flatworm (Pseudobiceros bedfordi)
+MiscInfo: uk
+Translate: Bedford's flatworm
+MiscInfo: uk"
+215092,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,-,ちげぇ,,chige,"zły
+błędny
+różny
+nie tak",dialekt Kantou,,,"GroupId: 2840556
+Translate: wrong
+Dialect: ktb
+Translate: different
+Dialect: ktb
+Translate: not like that
+Dialect: ktb"
+215093,WORD_EXPRESSION,,HIRAGANA,,,-,ちげえ,,chigee,"zły
+błędny
+różny
+nie tak",dialekt Kantou,,,"GroupId: 2840556
+Translate: wrong
+Dialect: ktb
+Translate: different
+Dialect: ktb
+Translate: not like that
+Dialect: ktb"
+215094,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,弥な明後日,やなあさって,,yana asatte,"trzy dni od dzisiaj
+cztery dni od dzisiaj",,,,"GroupId: 2826692
+Translate: three days from today
+MiscInfo: uk
+Translate: four days from today
+MiscInfo: uk"
+215095,WORD_VERB_U,,KATAKANA_HIRAGANA,,,-,ヒクつく,,hikutsuku,drgać,,,,"GroupId: 2065050
+Translate: to twitch"
+215096,WORD_NOUN,,KATAKANA,,,-,シェフ・コート,,shefu kooto,"kurtka szefa kuchni
+strój szefa kuchni",,,,"GroupId: 2840086
+Translate: chef coat
+Translate: chef's whites"
+215097,WORD_NOUN,,HIRAGANA,,,謎染,なぞぞめ,,nazozome,wzór barwienia zawierający w sobie zagadkę,,,,"GroupId: 2837478
+Translate: dyeing pattern incorporating a riddle"
+215098,WORD_EXPRESSION,,HIRAGANA,,,古きよき日々,ふるきよきにちにち,,furuki yoki nichi nichi,"stare dobre czasy
+cudowne czasy
+czasy świetności",,,,"GroupId: 2015870
+Translate: the good old days
+Translate: halcyon days"
+215099,WORD_NOUN,,HIRAGANA,,,吹物,ふきもの,,fukimono,instrument dęty,szczególnie w gagaku,,,"GroupId: 2394920
+Translate: wind instrument (esp. in gagaku)"
+215100,WORD_EXPRESSION,,HIRAGANA,,,手の届かない所,てのとどかないところ,,te no todokanai tokoro,(miejsce) poza zasięgiem,,,,"GroupId: 2400060
 Translate: (a place) out of one's reach"
