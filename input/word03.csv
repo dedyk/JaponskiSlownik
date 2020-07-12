@@ -62506,7 +62506,7 @@ Translate: food industry"
 WORD_EXPRESSION",,HIRAGANA,,,鐘を突く,かねをつく,,kane o tsuku,uderzać w dzwon,,,,"GroupId: 1866370
 Translate: to strike a bell"
 215402,WORD_NOUN,,HIRAGANA,,,骨油,こつゆ,,kotsuyu,"olej kostny
-klarowany materiał kostny",,,,"GroupId: 2627500
+klarowany materiał kostny",,,DUPLICATE 215447,"GroupId: 2627500
 Translate: bone oil
 Translate: clarified bone stock"
 215403,WORD_NOUN,,HIRAGANA,,,保安設備,ほあんせつび,,hoan setsubi,"urządzenie zabezpieczające
@@ -62537,19 +62537,19 @@ kwiaty w formie liter",,,,"GroupId: 1803100
 Translate: ornate initial
 Translate: capital letters
 Translate: flowers planted to form characters"
-215411,WORD_EXPRESSION,,HIRAGANA,,,芸は身を助ける,げいはみをたすける,,gei wa mi o tasukeru,sztuka przynosi chleb,przysłowie,,,"GroupId: 2845250
+215411,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,芸は身を助ける,げいはみをたすける,,gei wa mi o tasukeru,sztuka przynosi chleb,przysłowie,,,"GroupId: 2845250
 Translate: art brings bread
 MiscInfo: proverb"
 215412,WORD_NOUN,,HIRAGANA,,,因幡,いなば,,inaba,Inaba,była prowincja położona na wschodzie dzisiejszej prefektury Tottori,,,"GroupId: 2845194
 Translate: Inaba (former province located in the east of present-day Tottori Prefecture)"
-215413,WORD_NOUN,,HIRAGANA,,,大隅,おおすみ,,oosumi,Ōsumi,"była prowincja położona na wschodzie dzisiejszej prefektury Kagoshima, w tym wyspy Amami",,,"GroupId: 2835609
-Translate: Ōsumi (former province located in the east of present-day Kagoshima Prefecture, including the Amami Islands)"
+215413,WORD_NOUN,,HIRAGANA,,,因子集合,いんししゅうごう,,inshi shuugou,zestaw czynników,,,,"GroupId: 2341770
+Translate: factor set"
 215414,WORD_NOUN,,HIRAGANA,,,南海道,なんかいどう,,nankaidou,Nankaidō,inna nazwa na region Shikoku,,,"GroupId: 2845298
 Translate: Nankaidō (alt. name for the Shikoku region)"
 215415,WORD_ADJECTIVE_I,,HIRAGANA,,,分別臭い,ふんべつくさい,,funbetsu kusai,"ostrożnie wyglądający
 roztropny wyglądający",,,,"GroupId: 2845225
 Translate: prudent-looking"
-215416,WORD_NOUN,,HIRAGANA,,,毛足鵟,けあしのすり,,keashinosuri,myszołów włochaty,"gatunek dużego ptaka drapieżnego z rodziny jastrzębiowatych, Buteo lagopus",,,"GroupId: 2752370
+215416,WORD_NOUN,,HIRAGANA,,,毛足鵟,けあしのすり,,keashi nosuri,myszołów włochaty,"gatunek dużego ptaka drapieżnego z rodziny jastrzębiowatych, Buteo lagopus",,,"GroupId: 2752370
 Translate: rough-legged buzzard (Buteo lagopus)
 MiscInfo: uk
 Translate: rough-legged hawk
@@ -62592,7 +62592,7 @@ siła trawienia",,,,"GroupId: 2275330
 Translate: digestive capacity
 Translate: digestive power
 Translate: digestive strength"
-215426,WORD_NOUN,,HIRAGANA,,,金地金本位制度,きんじきんほんいせいど,,kinji kinhon'i seido,system waluty złotej,,,,"GroupId: 1682050
+215426,WORD_NOUN,,HIRAGANA,,,金地金本位制度,きんじきんほんいせいど,,kinji kinhon'i seido,system waluty złotej,,,DUPLICATE 215453,"GroupId: 1682050
 Translate: gold bullion standard"
 215427,WORD_NOUN,,HIRAGANA_KATAKANA,,,制御コード,せいぎょコード,,seigyo koodo,"kod kontrolny
 kod sterujący",informatyka,,,"GroupId: 1374750
@@ -62662,3 +62662,38 @@ Translate: unexpected story development
 MiscInfo: col
 Translate: story development from out of left field
 MiscInfo: col"
+215446,WORD_NOUN,,HIRAGANA,,,一夜干,いちやぼし,,ichiya boshi,ryba solona i suszona przez noc,,,,"GroupId: 2175400
+Translate: fish salted and dried overnight"
+215447,WORD_NOUN,,HIRAGANA,,,骨油,ほねあぶら,,honeabura,"olej kostny
+klarowany materiał kostny",,,DUPLICATE 215402,"GroupId: 2627500
+Translate: bone oil
+Translate: clarified bone stock"
+215448,WORD_NOUN,,KATAKANA,,,-,ケアシノスリ,,keashi nosuri,myszołów włochaty,"gatunek dużego ptaka drapieżnego z rodziny jastrzębiowatych, Buteo lagopus",,,"GroupId: 2752370
+Translate: rough-legged buzzard (Buteo lagopus)
+MiscInfo: uk
+Translate: rough-legged hawk
+MiscInfo: uk"
+215449,WORD_NOUN,,KATAKANA,,,-,ヘビクイワシ,,hebikuiwashi,sekretarz,"gatunek dużego ptaka drapieżnego, będący jedynym przedstawicielem rodziny sekretarzy, Sagittarius serpentarius",,,"GroupId: 2752400
+Translate: secretarybird (Sagittarius serpentarius)
+MiscInfo: uk
+Translate: secretary bird
+MiscInfo: uk"
+215450,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオメンフクロウ,,oomenfukurou,płomykówka duża,"gatunek dużego ptaka z rodziny płomykówkowatych, Tyto novaehollandiae",,,"GroupId: 2753140
+Translate: masked owl (Tyto novaehollandiae)
+MiscInfo: uk
+Translate: Australian masked owl
+MiscInfo: uk"
+215451,WORD_NOUN,,KATAKANA,,,-,ヒガシメンフクロウ,,higashimenfukurou,płomykówka długonoga,"gatunek ptaka, Tyto longimembris",,,"GroupId: 2753180
+Translate: eastern grass owl (Tyto longimembris)
+MiscInfo: uk
+Translate: Australian grass owl
+MiscInfo: uk"
+215452,WORD_NOUN,,KATAKANA,,,-,カンムリウミスズメ,,kanmuriumisuzume,morzyk japoński,"gatunek ptaka, Synthliboramphus wumizusume",,,"GroupId: 2753960
+Translate: Japanese murrelet (Synthliboramphus wumizusume)
+MiscInfo: uk
+Translate: crested murrelet
+MiscInfo: uk"
+215453,WORD_NOUN,,HIRAGANA,,,金地金本位制度,きんじがねほんいせいど,,kinji ganehon'i seido,system waluty złotej,,,DUPLICATE 215426,"GroupId: 1682050
+Translate: gold bullion standard"
+215454,WORD_NOUN,,KATAKANA,,,-,アカモミタケ,,akamomitake,Lactarius laeticolorus,gatunek jadalnych grzybów,,,"GroupId: 2196960
+Translate: Lactarius laeticolorus (edible species of lactarius mushroom)"
