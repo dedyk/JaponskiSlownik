@@ -62721,8 +62721,8 @@ Translate: heavy bombardment
 MiscInfo: yoji"
 215463,WORD_NOUN,,HIRAGANA,,,火山砕屑岩,かざんさいせつがん,,kazansai setsugan,skała wulkaniczna,,,,"GroupId: 2217830
 Translate: volcaniclastic rock"
-215464,"WORD_EXPRESSION
-WORD_ADJECTIVE_I",,HIRAGANA,,,教養のない,きょうようのない,,kyouyou no nai,"surowy
+215464,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,教養のない,きょうようのない,,kyouyou no nai,"surowy
 nieokrzesany
 prosty
 niewykształcony
@@ -62822,7 +62822,7 @@ WORD_NOUN",,HIRAGANA,,,激越,げきえつ,,gekietsu,"gwałtowny
 porywczy",,,,"GroupId: 1615310
 Translate: violent
 Translate: vehement"
-215487,WORD_NOUN,,KATAKANA_HIRAGANA,,,ＩＳＯ感度,アイエスオーかんど,,aiesuoo kando,czułość ISO,fotografia,,,"GroupId: 2834151
+215487,WORD_NOUN,,KATAKANA_HIRAGANA,,,ＩＳＯ感度,アイエスオーかんど,,aiesuoo kando,czułość ISO,fotografia,,DUPLICATE 215517,"GroupId: 2834151
 Translate: ISO speed
 Translate: ISO sensitivity"
 215488,WORD_NOUN,,HIRAGANA,,,酢酸繊維素,さくさんせんいそ,,sakusan sen'iso,"acetyloceluloza
@@ -62914,3 +62914,42 @@ Translate: hydrothermal discharge zone"
 Translate: basic objective"
 215510,WORD_NOUN,,HIRAGANA,,,杖柱,つえはしら,,tsuehashira,osoba od której to zależy,,,,"GroupId: 1797950
 Translate: person upon whom one relies"
+215511,WORD_NOUN,,HIRAGANA,,,小実,こざね,,kozane,płytka zbroi,,,,"GroupId: 2793820
+Translate: armor platelet"
+215512,WORD_NOUN,,KATAKANA,,,-,アザミゲシ,,azamigeshi,argemon meksykański,"gatunek rośliny z rodziny makowatych, Argemone mexicana",,,"GroupId: 2154640
+Translate: Mexican prickly poppy (Argemone mexicana)
+MiscInfo: uk"
+215513,WORD_NOUN,,KATAKANA,,,-,ダウリアチョウザメ,,dauria chouzame,kaługa,"gatunek wędrownej, anadromicznej ryby z rodziny jesiotrowatych, blisko spokrewniony z bieługą, Huso dauricus",,,"GroupId: 2766520
+Translate: kaluga (Huso dauricus)
+MiscInfo: uk
+Translate: river beluga
+MiscInfo: uk"
+215514,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヨロイイタチウオ,,yoroiitachiuo,Hoplobrotula armata,gatunek ryby,,,"GroupId: 2774430
+Translate: snubnose brotula
+MiscInfo: uk
+Translate: armoured cusk (Hoplobrotula armata)
+MiscInfo: uk"
+215515,WORD_NOUN,,KATAKANA,,,-,ヨロイザメ,,yoroizame,liksa,"gatunek rekina z rzędu koleniokształtnych w rodzinie scymnowatych, będący jedynym przedstawicielem swojego rodzaju, Dalatias licha",,,"GroupId: 2774440
+Translate: kitefin shark (Dalatias licha)
+MiscInfo: uk
+Translate: seal shark
+MiscInfo: uk"
+215516,WORD_NOUN,,KATAKANA,,,-,サラサハタ,,sarasahata,panterka,"gatunek ryby okoniokształtnej z rodziny strzępielowatych, jedyny przedstawiciel rodzaju Chromileptes, Chromileptes altivelis",,,"GroupId: 2774600
+Translate: humpback grouper (Chromileptes altivelis)
+MiscInfo: uk
+Translate: panther grouper
+MiscInfo: uk"
+215517,WORD_NOUN,,KATAKANA_HIRAGANA,,,ＩＳＯ感度,イソかんど,,iso kando,czułość ISO,fotografia,,DUPLICATE 215487,"GroupId: 2834151
+Translate: ISO speed
+Translate: ISO sensitivity"
+215518,WORD_NOUN,,KATAKANA,,,-,エグゼクティブ・スイート,,eguzekutibu suiito,"apartament reprezentacyjny
+apartament typu executive
+pokoje zarządu",ang: executive suite,,,"GroupId: 2837531
+Translate: executive suite"
+215519,WORD_NOUN,,HIRAGANA,,,枝尺取,えだしゃくとり,,edashakutori,gąsienica z podrodziny Ennominae,mało znane słowo,,,"GroupId: 2158770
+Translate: geometer moth caterpillar
+MiscInfo: uk
+MiscInfo: obsc
+Translate: geometrid caterpillar (of subfamily Ennominae)
+MiscInfo: uk
+MiscInfo: obsc"
