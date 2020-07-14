@@ -62965,7 +62965,7 @@ Translate: armlifter (e.g. on a gramophone turntable)"
 Translate: theatre of the absurd (theater)"
 215525,WORD_NOUN,,HIRAGANA,,,揃え箸,そろえばし,,soroe bashi,"wyrównywanie pałeczek poprzez stukanie nimi w stół, talerz itp.",naruszenie etykiety,,,"GroupId: 2161200
 Translate: aligning one's chopsticks by tapping them on the table, a dish, etc. (a breach of etiquette)"
-215526,WORD_NOUN,,HIRAGANA,,,御父つぁん,おとっつぁん,,otottsun,"ojciec
+215526,WORD_NOUN,,HIRAGANA_EXCEPTION,,,御父つぁん,おとっつぁん,,otottsun,"ojciec
 tata",powszechnie stosowane do końca okresu Meiji,,,"GroupId: 2017130
 Translate: father
 MiscInfo: uk
@@ -63081,7 +63081,7 @@ Translate: at odd moments"
 ostatnie momenty przed śmiercią",,,,"GroupId: 2150200
 Translate: verge of death
 Translate: dying moments"
-215557,WORD_NOUN,,HIRAGANA,,,死絵,しにえ,,shinie,druk ukiyo-e przedstawiający kogoś w jego ostatnich chwilach,,,,"GroupId: 2842018
+215557,WORD_NOUN,,HIRAGANA,,,死絵,しにえ,,shi ni e,druk ukiyo-e przedstawiający kogoś w jego ostatnich chwilach,,,,"GroupId: 2842018
 Translate: ukiyo-e print depicting somebody in their final moments"
 215558,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,死に水を取る,しにみずをとる,,shi ni mizu o toru,"zwilżać usta umierającej osoby
@@ -63123,7 +63123,7 @@ Translate: unsociable
 Translate: unfriendly
 Translate: cold
 Translate: indifferent"
-215563,WORD_NOUN,,HIRAGANA,,,大熊座,おおぐまざ,,oogumaza,Wielka Niedźwiedzica,"gwiazdozbiór okołobiegunowy nieba północnego, a zarazem trzecia co do wielkości konstelacja nieba",,,"GroupId: 1787040
+215563,WORD_NOUN,,HIRAGANA,,,大熊座,おおぐまざ,,ooguma za,Wielka Niedźwiedzica,"gwiazdozbiór okołobiegunowy nieba północnego, a zarazem trzecia co do wielkości konstelacja nieba",,,"GroupId: 1787040
 Translate: Ursa Major (constellation)"
 215564,WORD_NOUN,,HIRAGANA,,,物案じ,ものあんじ,,monoanji,"niepokój
 obawa
@@ -63197,3 +63197,104 @@ MiscInfo: vulg"
 wrastać",,,,"GroupId: 2673740
 Translate: to stand
 Translate: to rise"
+215577,WORD_NOUN,,HIRAGANA,,,御父つあん,おとっつあん,,otottsuan,"ojciec
+tata",powszechnie stosowane do końca okresu Meiji,,,"GroupId: 2017130
+Translate: father
+MiscInfo: uk
+AdditionalInfo: commonly used until the end of the Meiji period
+Translate: Dad
+MiscInfo: uk
+AdditionalInfo: commonly used until the end of the Meiji period"
+215578,WORD_NOUN,,HIRAGANA,,,荷送人,におくりにん,,niokurinin,"nadawca towaru
+wysyłający towar",,,,"GroupId: 1714540
+Translate: consignor"
+215579,WORD_EXPRESSION,,HIRAGANA,,,怒涛の勢い,どとうのいきおい,,dotou no ikioi,"z wielką energią
+z wielkim wigorem
+w poskokach
+z siłą wzrastających fal",,,,"GroupId: 2274300
+Translate: with great vigour
+Translate: in leaps and bounds
+Translate: with the force of surging waves"
+215580,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,ガタンゴトン,,gatan goton,klik-klak,,,,"GroupId: 2845355
+Translate: clickety-clack
+MiscInfo: on-mim"
+215581,WORD_NOUN,,KATAKANA,,,-,スクミリンゴガイ,,sukumirin gogai,ampularie,"potoczna, powszechna w kręgach akwarystycznych, a także handlowa nazwa ślimaków przodoskrzelnych z rodziny Ampullariidae, zwłaszcza z rodzaju Pila i Pomacea, Pomacea canaliculata",,,"GroupId: 2774950
+Translate: channeled apple snail (Pomacea canaliculata)
+MiscInfo: uk
+Translate: golden apple snail
+MiscInfo: uk"
+215582,WORD_NOUN,,KATAKANA,,,-,イシマテガイ,,ishimategai,Lithophaga curta,,,,"GroupId: 2775000
+Translate: date shell (Lithophaga curta)
+MiscInfo: uk
+Translate: date mussel
+MiscInfo: uk"
+215583,WORD_NOUN,,HIRAGANA,,,兜海老,かぶとえび,,kabuto ebi,???,Triopsidae,,,"GroupId: 2784310
+Translate: tadpole shrimp (Triopsidae spp.)
+MiscInfo: uk
+Translate: shield shrimp
+MiscInfo: uk"
+215584,WORD_NOUN,,KATAKANA,,,-,カブトエビ,,kabuto ebi,???,Triopsidae,,,"GroupId: 2784310
+Translate: tadpole shrimp (Triopsidae spp.)
+MiscInfo: uk
+Translate: shield shrimp
+MiscInfo: uk"
+215585,WORD_NOUN,,KATAKANA,,,-,ケツルアズキ,,ketsuru azuki,fasola mungo,"gatunek rośliny z rodziny bobowatych, Vigna mungo",,,"GroupId: 2788240
+Translate: black gram (Vigna mungo)
+MiscInfo: uk
+Translate: black lentil
+MiscInfo: uk"
+215586,WORD_NOUN,,KATAKANA,,,-,クロミンククジラ,,kurominkuku jira,płetwal antarktyczny,"gatunek ssaka z rodziny płetwalowatych występujący we wszystkich oceanach na południe od równika, Balaenoptera bonaerensis",,,"GroupId: 2789440
+Translate: Antarctic minke whale (Balaenoptera bonaerensis)
+MiscInfo: uk
+Translate: southern minke whale
+MiscInfo: uk"
+215587,WORD_NOUN,,HIRAGANA,,,賭射,のりゆみ,,noriyumi,"nagroda dla łucznika
+cesarskie łucznicze wydarzenie odbywające się corocznie 18-go dnia pierwszego miesiąca księżycowego (okres Heian)",,,,"GroupId: 2612960
+Translate: prize archery
+Translate: imperial archery event held annually on the 18th day of the first lunar month (Heian period)"
+215588,WORD_NOUN,,HIRAGANA,,,今わの際,いまわのきわ,,imawa no kiwa,"skraj śmierci
+ostatnie momenty przed śmiercią",,,,"GroupId: 2150200
+Translate: verge of death
+Translate: dying moments"
+215589,WORD_NOUN,,HIRAGANA,,,死に絵,しにえ,,shi ni e,druk ukiyo-e przedstawiający kogoś w jego ostatnich chwilach,,,,"GroupId: 2842018
+Translate: ukiyo-e print depicting somebody in their final moments"
+215590,WORD_NOUN,,HIRAGANA,,,おおぐま座,おおぐまざ,,ooguma za,Wielka Niedźwiedzica,"gwiazdozbiór okołobiegunowy nieba północnego, a zarazem trzecia co do wielkości konstelacja nieba",,,"GroupId: 1787040
+Translate: Ursa Major (constellation)"
+215591,WORD_NOUN,,HIRAGANA,,,掛構い,かけかまい,,kake kamai,"relacja (używane w przeczeniach)
+związek (używane w przeczeniach)
+niepokój
+obawa
+lęk
+zmartwienie",archaizm,,,"GroupId: 2583140
+Translate: involvement
+MiscInfo: arch
+AdditionalInfo: used in the negative
+Translate: relation
+MiscInfo: arch
+AdditionalInfo: used in the negative
+Translate: anxiety
+MiscInfo: arch
+Translate: worries
+MiscInfo: arch
+Translate: concerns
+MiscInfo: arch
+Translate: troubles
+MiscInfo: arch"
+215592,"WORD_ADJECTIVE_F
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ケツの穴が小さい,ケツのあながちいさい,,ketsu no ana ga chiisai,"małostkowy
+drobiazgowy
+tchórzliwy
+strachliwy","wyrażenie idiomatyczne, wulgarnie",,,"GroupId: 2581200
+Translate: small-minded
+MiscInfo: id
+MiscInfo: vulg
+Translate: petty
+MiscInfo: id
+MiscInfo: vulg
+Translate: cowardly
+MiscInfo: id
+MiscInfo: vulg
+Translate: chicken-hearted
+MiscInfo: id
+MiscInfo: vulg"
