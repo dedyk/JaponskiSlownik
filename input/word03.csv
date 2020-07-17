@@ -63906,7 +63906,7 @@ kolumna lub wiersz “ga” w sylabariuszu kana",,,,"GroupId: 1040670
 Translate: classification for Japanese verb with the dictionary form ending in ""gu""
 Translate: ""ga"" column or row of the kana syllabary"
 215758,WORD_NOUN,,HIRAGANA,,,悪言,あくげん,,akugen,"niepochlebne uwagi
-szkalowanie",,,,"GroupId: 1151730
+szkalowanie",,,DUPLICATE 215791,"GroupId: 1151730
 Translate: uncomplimentary remarks
 Translate: slander"
 215759,WORD_NOUN,,HIRAGANA,,,悪水,あくすい,,akusui,"woda niezdatna do picia
@@ -63995,8 +63995,8 @@ Translate: to grasp at straws
 AdditionalInfo: incorrect variant of 藁にもすがる
 Translate: to resort to desperate measures
 AdditionalInfo: incorrect variant of 藁にもすがる"
-215778,"WORD_EXPRESSION
-WORD_VERB_RU",,KATAKANA_HIRAGANA,,,ツボを押さえる,ツボをおさえる,,tsubo o osaeru,"uchwycić ważne punkty
+215778,"WORD_VERB_RU
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ツボを押さえる,ツボをおさえる,,tsubo o osaeru,"uchwycić ważne punkty
 trafić we właściwe punkty",,,,"GroupId: 2844044
 Translate: to grasp the important points
 Translate: to hit the right points"
@@ -64040,3 +64040,75 @@ Dialect: osb"
 215790,WORD_NOUN,,HIRAGANA,,,国際貿易,こくさいぼうえき,,kokusai boueki,handel międzynarodowy,,,,"GroupId: 2405460
 Translate: international trade
 Translate: international trading"
+215791,WORD_NOUN,,HIRAGANA,,,悪言,あくごん,,akugon,"niepochlebne uwagi
+szkalowanie",,,DUPLICATE 215758,"GroupId: 1151730
+Translate: uncomplimentary remarks
+Translate: slander"
+215792,WORD_NOUN,,KATAKANA,,,-,ポチャコ,,pochako,"pulchna dziewczyna
+pucołowata dziewczyna",slang,,,"GroupId: 2806970
+Translate: chubby girl
+MiscInfo: uk
+MiscInfo: sl
+Translate: plump girl
+MiscInfo: uk
+MiscInfo: sl"
+215793,WORD_NOUN,,KATAKANA,,,-,ヒメコンドル,,hime kondoru,"sępnik różowogłowy
+urubu różowogłowy","gatunek dużego ptaka z rodziny kondorowatych, Cathartes aura",,,"GroupId: 2815280
+Translate: turkey vulture (Cathartes aura)
+MiscInfo: uk
+Translate: turkey buzzard
+MiscInfo: uk"
+215794,WORD_NOUN,,KATAKANA,,,-,テングザル,,tenguzaru,"nosacz sundajski
+nosacz","gatunek ssaka z rodziny koczkodanowatych wyróżniający się charakterystycznym nosem, Nasalis larvatus",,,"GroupId: 2826173
+Translate: proboscis monkey (Nasalis larvatus)
+MiscInfo: uk
+Translate: long-nosed monkey
+MiscInfo: uk"
+215795,WORD_NOUN,,KATAKANA,,,-,アオギス,,aogisu,Sillago parvisquamis,gatunek ryby,,,"GroupId: 2827985
+Translate: small-scale whiting (Sillago parvisquamis)
+MiscInfo: uk
+Translate: blue whiting
+MiscInfo: uk"
+215796,WORD_NOUN,,KATAKANA,,,-,カワノナツダイダイ,,kawano natsudaidai,amanatsu,"gatunek cytrusa, Citrus natsudaidai",,,"GroupId: 2828091
+Translate: amanatsu (Citrus natsudaidai)
+MiscInfo: uk
+Translate: sweet form of Chinese citron
+MiscInfo: uk"
+215797,WORD_NOUN,,HIRAGANA,,,弱輩者,じゃくはいもの,,jakuhaimono,"niedoświadczona osoba
+młoda osoba
+nowicjusz
+żółtodziób",,,,"GroupId: 1324420
+Translate: inexperienced person
+Translate: young person
+Translate: novice
+Translate: greenhorn"
+215798,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,運が無い,うんがない,,un ga nai,"pechowy
+nieszczęśliwy",,,,"GroupId: 2830567
+Translate: unlucky"
+215799,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,空をつかむ,くうをつかむ,,kuu o tsukamu,chwycić w powietrzu,,,,"GroupId: 1871780
+Translate: to grasp at the air"
+215800,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,藁にもすがる,わらにもすがる,,wara ni mo sugaru,"chwytać się brzytwy
+uciekać się do desperackich środków",,,,"GroupId: 2779480
+Translate: to grasp at straws
+Translate: to resort to desperate measures"
+215801,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,-,ワラにもすがる,,wara ni mo sugaru,"chwytać się brzytwy
+uciekać się do desperackich środków",,,,"GroupId: 2779480
+Translate: to grasp at straws
+Translate: to resort to desperate measures"
+215802,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,つぼを押さえる,つぼをおさえる,,tsubo o osaeru,"uchwycić ważne punkty
+trafić we właściwe punkty",,,,"GroupId: 2844044
+Translate: to grasp the important points
+Translate: to hit the right points"
+215803,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,壺を押さえる,つぼをおさえる,,tsubo o osaeru,"uchwycić ważne punkty
+trafić we właściwe punkty",,,,"GroupId: 2844044
+Translate: to grasp the important points
+Translate: to hit the right points"
+215804,WORD_NOUN,,KATAKANA,,,-,レブンソウ,,rebunsou,Oxytropis megalantha,roślina,,,"GroupId: 2794520
+Translate: Oxytropis megalantha (species of locoweed)
+MiscInfo: uk"
