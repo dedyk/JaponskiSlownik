@@ -65479,7 +65479,7 @@ Translate: Byzantine"
 Translate: quantum biology"
 216155,WORD_NOUN,,HIRAGANA,,,文字参照,もじさんしょう,,moji sanshou,???,,,,"GroupId: 2387050
 Translate: character reference"
-216156,WORD_NOUN,,HIRAGANA,,,声かけ運動,こえかけうんどう,,koekake undou,kampania zachęcająca ludzi do wymiany pozdrowień,,,,"GroupId: 2653320
+216156,WORD_NOUN,,HIRAGANA,,,声かけ運動,こえかけうんどう,,koe kake undou,kampania zachęcająca ludzi do wymiany pozdrowień,,,,"GroupId: 2653320
 Translate: friendly-greeting campaign
 Translate: campaign for people to exchange greetings"
 216157,WORD_NOUN,,HIRAGANA,,,手戻り,てもどり,,temodori,"przerabianie
@@ -65502,7 +65502,7 @@ Translate: catarrhine (primate of infraorder Catarrhini having nostrils that are
 216161,WORD_NOUN,,HIRAGANA,,,木走,きばしり,,kibashiri,pełzacz leśny,"gatunek ptaka, Certhia familiaris",,,"GroupId: 2232020
 Translate: common treecreeper (species of songbird, Certhia familiaris)
 MiscInfo: uk"
-216162,WORD_NOUN,,KATAKANA,,,-,クラカケチョウチョウウオ,,kurakakechouchouuo,Chaetodon adiergastos,gatunek ryby,,,"GroupId: 2542740
+216162,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クラカケチョウチョウウオ,,kurakakechouchouuo,Chaetodon adiergastos,gatunek ryby,,,"GroupId: 2542740
 Translate: Philippine butterflyfish (Chaetodon adiergastos)
 Translate: panda butterflyfish"
 216163,"WORD_EXPRESSION
@@ -65613,8 +65613,8 @@ Translate: unimaginable"
 niemożliwy do zmierzenia",,,,"GroupId: 2755790
 Translate: unmeasurable
 Translate: impossible to measure"
-216184,"WORD_EXPRESSION
-WORD_VERB_IRREGULAR",,HIRAGANA,,,不可能を可能にする,ふかのうをかのうにする,,fukanou o kanou ni suru,"uczynić niemożliwe możliwym
+216184,"WORD_VERB_IRREGULAR
+WORD_EXPRESSION",,HIRAGANA,,,不可能を可能にする,ふかのうをかのうにする,,fukanou o kanou ni suru,"uczynić niemożliwe możliwym
 osiągnąć niemożliwe",,,,"GroupId: 2716640
 Translate: to make the impossible possible
 Translate: to accomplish the impossible"
@@ -65633,7 +65633,7 @@ Translate: unthinkable
 Translate: impossible
 Translate: ridiculous"
 216186,WORD_EXPRESSION,,HIRAGANA_KATAKANA,,,微レ存,びレぞん,,bire zon,"nie do końca nie do pomyślenia
-nie niemożliwe","slang internetowy, zwykle jako 可能性が微レ存, skrót od 微粒子レベルで存在している",,,"GroupId: 2832925
+nie niemożliwe","slang internetowy, zwykle jako 可能性が微レ存, skrót od 微粒子レベルで存在している",,DUPLICATE 216220,"GroupId: 2832925
 Translate: not completely unthinkable
 MiscInfo: net-sl
 AdditionalInfo: usu. as 可能性が微レ存; abbr. of 微粒子レベルで存在している
@@ -65676,9 +65676,9 @@ MiscInfo: obs
 Translate: Chink
 MiscInfo: derog
 MiscInfo: obs"
-216191,"WORD_EXPRESSION
-WORD_VERB_RU",,HIRAGANA,,,瓢箪から駒が出る,ひょうたんからこまがでる,,hyoutan kara koma ga deru,"pojawienie się czegoś z miejsca, którego nie można było spodziewać się
-coś, co zostało powiedziane jako żart, faktycznie dzieje się 
+216191,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,瓢箪から駒が出る,ひょうたんからこまがでる,,hyoutan kara koma ga deru,"pojawienie się czegoś z miejsca, którego nie można było spodziewać się
+coś, co zostało powiedziane jako żart, faktycznie dzieje się
 koń wychodzą z tykwy
 coś niemożliwego
 coś absurdalnego",wyrażenie idiomatyczne,,,"GroupId: 2844537
@@ -65699,7 +65699,7 @@ Translate: default"
 Translate: ruthenium (Ru)"
 216194,WORD_NOUN,,KATAKANA_HIRAGANA,,,アヒル口,アヒルぐち,,ahiru guchi,"twarz kaczki
 zrobienie dziubka (np. do zdjęcia)
-wyraz twarzy, gdzie usta są ściągnięte, a kąciki ust podniesione",,,,"GroupId: 2837694
+wyraz twarzy, gdzie usta są ściągnięte, a kąciki ust podniesione",,,DUPLICATE 216225,"GroupId: 2837694
 Translate: duck face
 Translate: duck lips
 Translate: facial expression where the lips are pursed and corners of the mouth raised"
@@ -65741,3 +65741,206 @@ Translate: sense of location
 Translate: sense of the geography of a place"
 216205,WORD_NOUN,,HIRAGANA,,,出港停止,しゅっこうていし,,shukkou teishi,embargo (na statku),,,,"GroupId: 1338910
 Translate: embargo (on a ship)"
+216206,WORD_NOUN,,HIRAGANA,,,声掛け運動,こえかけうんどう,,koe kake undou,kampania zachęcająca ludzi do wymiany pozdrowień,,,,"GroupId: 2653320
+Translate: friendly-greeting campaign
+Translate: campaign for people to exchange greetings"
+216207,WORD_NOUN,,HIRAGANA,,,木走り,きばしり,,kibashiri,pełzacz leśny,"gatunek ptaka, Certhia familiaris",,,"GroupId: 2232020
+Translate: common treecreeper (species of songbird, Certhia familiaris)
+MiscInfo: uk"
+216208,WORD_NOUN,,KATAKANA,,,-,キバシリ,,kibashiri,pełzacz leśny,"gatunek ptaka, Certhia familiaris",,,"GroupId: 2232020
+Translate: common treecreeper (species of songbird, Certhia familiaris)
+MiscInfo: uk"
+216209,WORD_NOUN,,KATAKANA,,,-,リコメンド,,rikomendo,"rekomendowanie
+polecanie
+rekomendacja
+zalecanie",,,,"GroupId: 2801750
+Translate: recommending
+Translate: recommendation"
+216210,WORD_NOUN,,KATAKANA,,,-,オトメアゼナ,,otome azena,"bakopa drobnolistna
+bakopa Monniera",gatunek rośliny z rodziny babkowatych,,,"GroupId: 2828692
+Translate: waterhyssop (Bacopa monnieri)
+MiscInfo: uk
+Translate: brahmi
+MiscInfo: uk
+Translate: thyme-leafed gratiola
+MiscInfo: uk
+Translate: water hyssop
+MiscInfo: uk
+Translate: herb of grace
+MiscInfo: uk
+Translate: Indian pennywort
+MiscInfo: uk"
+216211,WORD_NOUN,,KATAKANA,,,-,セイヨウスノキ,,seiyousu no ki,borówka czarna,"gatunek rośliny wieloletniej z rodziny wrzosowatych, Vaccinium myrtillus",,,"GroupId: 2828943
+Translate: common bilberry (Vaccinium myrtillus)
+MiscInfo: uk
+Translate: blue whortleberry
+MiscInfo: uk
+Translate: European blueberry
+MiscInfo: uk
+Translate: bilberry
+MiscInfo: uk
+Translate: whortleberry
+MiscInfo: uk
+Translate: blueberry
+MiscInfo: uk"
+216212,WORD_NOUN,,KATAKANA,,,-,ヒトジラミ,,hito jirami,wesz ludzka,"gatunek wszy, Pediculus humanus",,,"GroupId: 1369610
+Translate: Pediculus humanus (species of louse that infests humans)
+MiscInfo: uk
+Translate: body louse
+MiscInfo: uk
+Translate: body lice
+MiscInfo: uk
+Translate: head louse
+MiscInfo: uk
+Translate: head lice
+MiscInfo: uk"
+216213,WORD_NOUN,,HIRAGANA,,,毛蜱,けだに,,ke dani,roztocz z gatunku Trombidiidae,,,,"GroupId: 2212320
+Translate: hairy mite (esp. red velvet mite, Trombidiidae spp.)
+MiscInfo: uk"
+216214,WORD_NOUN,,HIRAGANA,,,毛壁蝨,けだに,,ke dani,roztocz z gatunku Trombidiidae,,,,"GroupId: 2212320
+Translate: hairy mite (esp. red velvet mite, Trombidiidae spp.)
+MiscInfo: uk"
+216215,WORD_NOUN,,KATAKANA,,,-,ケダニ,,ke dani,roztocz z gatunku Trombidiidae,,,,"GroupId: 2212320
+Translate: hairy mite (esp. red velvet mite, Trombidiidae spp.)
+MiscInfo: uk"
+216216,WORD_NOUN,,HIRAGANA,,,鉛筆柏槇,えんぴつびゃくしん,,enpitsu byakushin,jałowiec wirginijski,"gatunek drzewa iglastego z rodziny cyprysowatych, Juniperus virginiana",,,"GroupId: 2221420
+Translate: eastern red cedar (Juniperus virginiana)
+MiscInfo: uk
+Translate: red cedar
+MiscInfo: uk
+Translate: red juniper
+MiscInfo: uk
+Translate: pencil cedar
+MiscInfo: uk
+Translate: aromatic cedar
+MiscInfo: uk"
+216217,WORD_NOUN,,KATAKANA,,,-,エンピツビャクシン,,enpitsu byakushin,jałowiec wirginijski,"gatunek drzewa iglastego z rodziny cyprysowatych, Juniperus virginiana",,,"GroupId: 2221420
+Translate: eastern red cedar (Juniperus virginiana)
+MiscInfo: uk
+Translate: red cedar
+MiscInfo: uk
+Translate: red juniper
+MiscInfo: uk
+Translate: pencil cedar
+MiscInfo: uk
+Translate: aromatic cedar
+MiscInfo: uk"
+216218,WORD_ADJECTIVE_NA,,KATAKANA,,,-,インポッシブル,,inposshiburu,niemożliwy,"kolokwializm, ang: impossible",,,"GroupId: 1024780
+Translate: impossible
+MiscInfo: col"
+216219,"WORD_EXPRESSION
+WORD_PRE_NOUN_ADJECTIVAL",,HIRAGANA,,,有り得べからざる,ありうべからざる,,ari ube karazaru,"niemożliwy
+nie do pomyślenia
+nieprawdopodobny
+niewyobrażalny",,,,"GroupId: 2575640
+Translate: impossible
+Translate: unthinkable
+Translate: unimaginable"
+216220,WORD_EXPRESSION,,HIRAGANA_KATAKANA,,,微レ存,びレそん,,bire son,"nie do końca nie do pomyślenia
+nie niemożliwe","slang internetowy, zwykle jako 可能性が微レ存, skrót od 微粒子レベルで存在している",,DUPLICATE 216186,"GroupId: 2832925
+Translate: not completely unthinkable
+MiscInfo: net-sl
+AdditionalInfo: usu. as 可能性が微レ存; abbr. of 微粒子レベルで存在している
+Translate: not impossible
+MiscInfo: net-sl
+AdditionalInfo: usu. as 可能性が微レ存; abbr. of 微粒子レベルで存在している"
+216221,WORD_NOUN,,HIRAGANA_KATAKANA,,,空聴,からテン,,kara ten,???,Mahjong,,,"GroupId: 2837636
+Translate: tenpai with all potential winning tiles visible on table (impossible to win)"
+216222,"WORD_INTERJECTION
+WORD_NOUN",,KATAKANA,,,不够本,ポコペン,,pokopen,"niemożliwy (chin: bùgòuběn)
+daremny (chin: bùgòuběn)
+próżny (chin: bùgòuběn)
+rodzaj gry dla dzieci
+chińska osoba (obrażliwie, przestarzałe znaczenie)
+żółtek (obraźliwe określenie na osobę z Chin, przestarzałe znaczenie)",,,,"GroupId: 2095510
+Translate: impossible
+MiscInfo: uk
+Translate: futile
+MiscInfo: uk
+Translate: type of children's game
+Translate: Chinese person
+MiscInfo: derog
+MiscInfo: obs
+Translate: Chink
+MiscInfo: derog
+MiscInfo: obs"
+216223,"WORD_INTERJECTION
+WORD_NOUN",,KATAKANA,,,不コ本,ポコペン,,pokopen,"niemożliwy (chin: bùgòuběn)
+daremny (chin: bùgòuběn)
+próżny (chin: bùgòuběn)
+rodzaj gry dla dzieci
+chińska osoba (obrażliwie, przestarzałe znaczenie)
+żółtek (obraźliwe określenie na osobę z Chin, przestarzałe znaczenie)",,,,"GroupId: 2095510
+Translate: impossible
+MiscInfo: uk
+Translate: futile
+MiscInfo: uk
+Translate: type of children's game
+Translate: Chinese person
+MiscInfo: derog
+MiscInfo: obs
+Translate: Chink
+MiscInfo: derog
+MiscInfo: obs"
+216224,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,ひょうたんから駒が出る,ひょうたんからこまがでる,,hyoutan kara koma ga deru,"pojawienie się czegoś z miejsca, którego nie można było spodziewać się
+coś, co zostało powiedziane jako żart, faktycznie dzieje się
+koń wychodzą z tykwy
+coś niemożliwego
+coś absurdalnego",wyrażenie idiomatyczne,,,"GroupId: 2844537
+Translate: something appearing from a place you wouldn't expect
+MiscInfo: id
+Translate: something said as a joke actually happening
+MiscInfo: id
+Translate: a horse comes out from a gourd
+MiscInfo: id
+Translate: something impossible
+MiscInfo: id
+Translate: something ridiculous
+MiscInfo: id"
+216225,WORD_NOUN,,KATAKANA_HIRAGANA,,,アヒル口,アヒルくち,,ahiru kuchi,"twarz kaczki
+zrobienie dziubka (np. do zdjęcia)
+wyraz twarzy, gdzie usta są ściągnięte, a kąciki ust podniesione",,,DUPLICATE 216194,"GroupId: 2837694
+Translate: duck face
+Translate: duck lips
+Translate: facial expression where the lips are pursed and corners of the mouth raised"
+216226,WORD_NOUN,,HIRAGANA,,,あひる口,あひるぐち,,ahiru guchi,"twarz kaczki
+zrobienie dziubka (np. do zdjęcia)
+wyraz twarzy, gdzie usta są ściągnięte, a kąciki ust podniesione",,,DUPLICATE 216227,"GroupId: 2837694
+Translate: duck face
+Translate: duck lips
+Translate: facial expression where the lips are pursed and corners of the mouth raised"
+216227,WORD_NOUN,,HIRAGANA,,,あひる口,あひるくち,,ahiru kuchi,"twarz kaczki
+zrobienie dziubka (np. do zdjęcia)
+wyraz twarzy, gdzie usta są ściągnięte, a kąciki ust podniesione",,,DUPLICATE 216226,"GroupId: 2837694
+Translate: duck face
+Translate: duck lips
+Translate: facial expression where the lips are pursed and corners of the mouth raised"
+216228,WORD_NOUN,,HIRAGANA,,,家鴨口,あひるぐち,,ahiru guchi,"twarz kaczki
+zrobienie dziubka (np. do zdjęcia)
+wyraz twarzy, gdzie usta są ściągnięte, a kąciki ust podniesione",,,DUPLICATE 216229,"GroupId: 2837694
+Translate: duck face
+Translate: duck lips
+Translate: facial expression where the lips are pursed and corners of the mouth raised"
+216229,WORD_NOUN,,HIRAGANA,,,家鴨口,あひるくち,,ahiru kuchi,"twarz kaczki
+zrobienie dziubka (np. do zdjęcia)
+wyraz twarzy, gdzie usta są ściągnięte, a kąciki ust podniesione",,,DUPLICATE 216228,"GroupId: 2837694
+Translate: duck face
+Translate: duck lips
+Translate: facial expression where the lips are pursed and corners of the mouth raised"
+216230,WORD_NOUN,,KATAKANA,,,-,アヒルグチ,,ahiru guchi,"twarz kaczki
+zrobienie dziubka (np. do zdjęcia)
+wyraz twarzy, gdzie usta są ściągnięte, a kąciki ust podniesione",,,,"GroupId: 2837694
+Translate: duck face
+Translate: duck lips
+Translate: facial expression where the lips are pursed and corners of the mouth raised"
+216231,WORD_NOUN,,KATAKANA,,,-,アヒルクチ,,ahiru kuchi,"twarz kaczki
+zrobienie dziubka (np. do zdjęcia)
+wyraz twarzy, gdzie usta są ściągnięte, a kąciki ust podniesione",,,,"GroupId: 2837694
+Translate: duck face
+Translate: duck lips
+Translate: facial expression where the lips are pursed and corners of the mouth raised"
+216232,WORD_NOUN,,HIRAGANA,,,頭頸部がん,とうけいぶがん,,toukei bugan,"rak głowy i szyi
+nowotwór głowy i szyi",,,,"GroupId: 2609970
+Translate: head and neck carcinoma
+Translate: cancer of the head and neck"
