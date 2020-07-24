@@ -65981,7 +65981,7 @@ Translate: grey bambooshark (Chiloscyllium griseum, species from the Indo-West P
 Translate: sharpening with a rough grindstone
 Translate: rough sharpening"
 216244,WORD_NOUN,,HIRAGANA,,,一夜妻,いちやづま,,ichiyaduma,"tymczasowa żona
-prostytutka",,,,"GroupId: 1576320
+prostytutka",,,DUPLICATE 216291,"GroupId: 1576320
 Translate: temporary consort
 Translate: prostitute"
 216245,WORD_NOUN,,HIRAGANA,,,大域変数,たいいきへんすう,,taiiki hensuu,zmienna globalna,informatyka,,,"GroupId: 2437970
@@ -66144,12 +66144,13 @@ podniesiony głos","kolokwializm, mało znane słowo",,,"GroupId: 2430430
 Translate: loud voice
 MiscInfo: col
 MiscInfo: obsc"
-216282,WORD_NOUN,,HIRAGANA,,,宇牟須牟骨牌,うんすんかるた,,unsun karuta,unsun karuta,gra w karty popularna w okresach Muromachi i początku Edo,,,"GroupId: 2033870
+216282,WORD_NOUN,,HIRAGANA,,,宇牟須牟骨牌,うんすんかるた,,unsun karuta,unsun karuta,gra w karty popularna w okresach Muromachi i początku Edo,,"DUPLICATE 216302
+DUPLICATE 216303","GroupId: 2033870
 Translate: unsun karuta (card game popular in the Muromachi and early Edo periods)
 MiscInfo: uk"
 216283,WORD_NOUN,,HIRAGANA_KATAKANA,,,化膿レンサ球菌,かのうレンサきゅうきん,,kanou rensa kyuukin,Streptococcus pyogenes,"paciorkowiec beta-hemolizujący zaliczany do ziarniaków, będący czynnikiem etiologicznym anginy oraz kilku innych zespołów chorobowych",,,"GroupId: 2687450
 Translate: Streptococcus pyogenes (bacterium that causes group A streptococcal infections)"
-216284,WORD_NOUN,,HIRAGANA,,,薦僧,こもそう,,komosou,żebrzący mnisi Zen z sekty Fuke,archaizm,,,"GroupId: 2245170
+216284,WORD_NOUN,,HIRAGANA,,,薦僧,こもそう,,komosou,żebrzący mnisi Zen z sekty Fuke,archaizm,,DUPLICATE 216304,"GroupId: 2245170
 Translate: mendicant Zen priest of the Fuke sect
 MiscInfo: arch"
 216285,WORD_NOUN,,HIRAGANA,,,順序数,じゅんじょすう,,junjosuu,liczba porządkowa,,,,"GroupId: 2167990
@@ -66158,3 +66159,118 @@ Translate: ordinal number"
 Translate: full of lies"
 216287,WORD_NOUN,,HIRAGANA,,,職務給,しょくむきゅう,,shokumukyuu,płace na podstawie oceny pracy,,,,"GroupId: 1832790
 Translate: wages based on job evaluation"
+216288,WORD_NOUN,,KATAKANA,,,-,ゼンタイ,,zentai,"zentai
+obcisły kombinezon, który zakrywa całe ciało",skrót od 全身タイツ,,,"GroupId: 2795100
+Translate: zentai
+MiscInfo: abbr
+MiscInfo: uk
+AdditionalInfo: from 全身タイツ
+Translate: skin-tight suit that covers the entire body
+MiscInfo: abbr
+MiscInfo: uk
+AdditionalInfo: from 全身タイツ"
+216289,WORD_NOUN,,KATAKANA,,,-,ヒョウモンダコ,,hyoumondako,Hapalochlaena fasciata,zwierzę,,,"GroupId: 2167650
+Translate: blue-ringed octopus (esp. one species, the blue-lined octopus, Hapalochlaena fasciata)
+MiscInfo: uk"
+216290,WORD_NOUN,,HIRAGANA,,,荒研ぎ,あらとぎ,,aratogi,ostrzenie szorstkim kamieniem szlifierskim,,,,"GroupId: 2565500
+Translate: sharpening with a rough grindstone
+Translate: rough sharpening"
+216291,WORD_NOUN,,HIRAGANA,,,一夜妻,ひとよづま,,hitoyoduma,"tymczasowa żona
+prostytutka",,,DUPLICATE 216244,"GroupId: 1576320
+Translate: temporary consort
+Translate: prostitute"
+216292,WORD_NOUN,,HIRAGANA,,,仮綴じ,かりとじ,,karitoji,tymczasowa (papierowa) okładka,,,,"GroupId: 1187850
+Translate: temporary (paper) binding"
+216293,WORD_NOUN,,HIRAGANA,,,仮葺き,かりぶき,,karibuki,tymczasowe zadaszenie,,,,"GroupId: 1188020
+Translate: temporary roofing"
+216294,WORD_NOUN,,KATAKANA,,,-,ヤイトハタ,,yaitohata,Epinephelus malabaricus,gatunek ryby,,,"GroupId: 2637620
+Translate: malabar grouper (Epinephelus malabaricus)
+MiscInfo: uk
+Translate: estuary cod
+MiscInfo: uk
+Translate: greasy cod
+MiscInfo: uk
+Translate: spotted river cod
+MiscInfo: uk
+Translate: estuary rock cod
+MiscInfo: uk"
+216295,WORD_NOUN,,KATAKANA,,,-,ミツバゼリ,,mitsubazeri,japońska pietruszka mitsuba,Cryptotaenia japonica,,,"GroupId: 2664180
+Translate: mitsuba (Cryptotaenia japonica)
+MiscInfo: uk
+Translate: Japanese honewort
+MiscInfo: uk
+Translate: Japanese honeywort
+MiscInfo: uk
+Translate: Japanese chervil
+MiscInfo: uk
+Translate: Japanese parsley
+MiscInfo: uk"
+216296,WORD_NOUN,,KATAKANA,,,-,ヌマワニ,,numawani,krokodyl błotny,"gatunek gada z rodziny krokodylowatych, Crocodylus palustris",,,"GroupId: 2705620
+Translate: mugger crocodile (Crocodylus palustris)
+MiscInfo: uk
+Translate: marsh crocodile
+MiscInfo: uk
+Translate: Indian crocodile
+MiscInfo: uk
+Translate: Indus crocodile
+MiscInfo: uk
+Translate: Persian crocodile
+MiscInfo: uk"
+216297,WORD_NOUN,,KATAKANA,,,-,ヨツユビリクガメ,,yotsuyubi rikugame,żółw stepowy,"gatunek gada z podrzędu żółwi skrytoszyjnych z rodziny żółwi lądowych, Agrionemys horsfieldii",,,"GroupId: 2749160
+Translate: Russian tortoise (Agrionemys horsfieldii)
+MiscInfo: uk
+Translate: Horsfield's tortoise
+MiscInfo: uk
+Translate: Central Asian tortoise
+MiscInfo: uk
+Translate: steppe tortoise
+MiscInfo: uk
+Translate: four-toed tortoise
+MiscInfo: uk"
+216298,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クロヒラアジ,,kurohiraaji,Carangoides ferdau,gatunek ryby,,,"GroupId: 2828014
+Translate: blue trevally (Carangoides ferdau)
+MiscInfo: uk
+Translate: banded trevally
+MiscInfo: uk
+Translate: barred trevally
+MiscInfo: uk
+Translate: Ferdau's trevally
+MiscInfo: uk
+Translate: Forskaal's jackfish
+MiscInfo: uk"
+216299,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,足並みをそろえる,あしなみをそろえる,,ashi nami o soroeru,"dotrzymywać kroku
+poruszać się krokiem marszowym
+wyrównać (z myślami lub działaniami innej osoby)",,,,"GroupId: 2841276
+Translate: to keep step (with)
+Translate: to keep pace (with)
+Translate: to move in lockstep
+Translate: to align (with another's thoughts or actions)"
+216300,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,腹に溜まる,はらにたまる,,hara ni tamaru,"syty (posiłek)
+ciężki
+solidny
+obfity",,,,"GroupId: 2836405
+Translate: filling (meal)
+Translate: heavy
+Translate: solid
+Translate: substantial"
+216301,WORD_NOUN,,KATAKANA,,,-,サン・ホセ,,san hose,San José,"stolica Kostaryki, położona w środkowej części kraju około 110 km od wybrzeża pacyficznego i 160 km od wybrzeża karaibskiego",,,"GroupId: 2839547
+Translate: San José (Costa Rica)"
+216302,WORD_NOUN,,KATAKANA,,,宇牟須牟骨牌,ウンスンカルタ,,unsun karuta,unsun karuta,gra w karty popularna w okresach Muromachi i początku Edo,,"DUPLICATE 216282
+DUPLICATE 216303","GroupId: 2033870
+Translate: unsun karuta (card game popular in the Muromachi and early Edo periods)
+MiscInfo: uk"
+216303,WORD_NOUN,,HIRAGANA_KATAKANA,,,宇牟須牟骨牌,うんすんカルタ,,unsun karuta,unsun karuta,gra w karty popularna w okresach Muromachi i początku Edo,,"DUPLICATE 216282
+DUPLICATE 216302","GroupId: 2033870
+Translate: unsun karuta (card game popular in the Muromachi and early Edo periods)
+MiscInfo: uk"
+216304,WORD_NOUN,,HIRAGANA,,,薦僧,こもぞう,,komozou,żebrzący mnisi Zen z sekty Fuke,archaizm,,DUPLICATE 216284,"GroupId: 2245170
+Translate: mendicant Zen priest of the Fuke sect
+MiscInfo: arch"
+216305,WORD_NOUN,,HIRAGANA,,,菰僧,こもそう,,komosou,żebrzący mnisi Zen z sekty Fuke,archaizm,,DUPLICATE 216306,"GroupId: 2245170
+Translate: mendicant Zen priest of the Fuke sect
+MiscInfo: arch"
+216306,WORD_NOUN,,HIRAGANA,,,菰僧,こもぞう,,komozou,żebrzący mnisi Zen z sekty Fuke,archaizm,,DUPLICATE 216305,"GroupId: 2245170
+Translate: mendicant Zen priest of the Fuke sect
+MiscInfo: arch"
