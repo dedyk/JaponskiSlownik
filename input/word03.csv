@@ -66989,14 +66989,14 @@ Translate: collaboration"
 216491,WORD_NOUN,,HIRAGANA_KATAKANA,,,大域モデリング変換,だいいきモデリングへんかん,,daiiki moderingu henkan,globalna transformacja modelowania,,,,"GroupId: 2373200
 Translate: global modelling transformation"
 216492,WORD_NOUN,,HIRAGANA,,,柚味噌,ゆずみそ,,yuzu miso,"miso z cukrem, sake, sokiem z yuzu i skórką
-wydrążone w yuzu nadziewane miso i sokiem z yuzu, a następnie pieczone",szczególnie ゆずみそ,,,"GroupId: 2775810
+wydrążone w yuzu nadziewane miso i sokiem z yuzu, a następnie pieczone",szczególnie ゆずみそ,,DUPLICATE 216539,"GroupId: 2775810
 Translate: miso with sugar, sake, yuzu juice and skin
 AdditionalInfo: esp. ゆずみそ
 Translate: hollowed out yuzu stuffed with miso and yuzu juice then baked
 AdditionalInfo: esp. ゆみそ"
 216493,WORD_NOUN,,HIRAGANA,,,餅網,もちあみ,,mochiami,grill lub ruszt do opiekania ryżowych ciastek,,,,"GroupId: 1752110
 Translate: grill or grate for toasting rice cakes"
-216494,WORD_NOUN,,HIRAGANA,,,刈払機,かりはらいき,,kariharaiki,"ręczna kosiarka do trawy
+216494,WORD_NOUN,,HIRAGANA,,,刈払機,かりはらいき,,kari harai ki,"ręczna kosiarka do trawy
 podkaszarka
 podkaszarka żyłkowa",,,,"GroupId: 2415050
 Translate: string trimmer
@@ -67039,7 +67039,7 @@ Translate: forged handwriting
 Translate: plagiarism"
 216505,WORD_NOUN,,HIRAGANA,,,戯絵,ざれえ,,zaree,rysunek narysowany dla żartu,,,,"GroupId: 1225000
 Translate: picture drawn in fun"
-216506,WORD_NOUN,,HIRAGANA,,,吸口,すいくち,,suikuchi,"ustnik
+216506,WORD_NOUN,,HIRAGANA,,,吸口,すいくち,,sui kuchi,"ustnik
 cygarniczka
 fifka
 filtr papierosowy
@@ -67096,7 +67096,7 @@ MiscInfo: uk"
 216513,WORD_NOUN,,HIRAGANA,,,順位表,じゅんいひょう,,jun'ihyou,tabela rankingowa,np. w lidze sportowej,,,"GroupId: 2413720
 Translate: ranking table (e.g. sports league)"
 216514,WORD_NOUN,,HIRAGANA,,,武士気質,ぶしかたぎ,,bushi katagi,"samurajski duch
-duch samuraja",,,,"GroupId: 1583690
+duch samuraja",,,DUPLICATE 216550,"GroupId: 1583690
 Translate: samurai spirit
 MiscInfo: yoji"
 216515,WORD_EXPRESSION,,HIRAGANA,,,赤貧洗うが如し,せきひんあらうがごとし,,sekihin' arau ga gotoshi,"skrajnie ubogi
@@ -67186,3 +67186,96 @@ Translate: barhopping
 Translate: pub crawl"
 216538,WORD_NOUN,,HIRAGANA,,,鉛筆書き,えんぴつがき,,enpitsu gaki,rysowanie lub pisanie ołówkiem,,,,"GroupId: 2081320
 Translate: drawing or writing in pencil"
+216539,WORD_NOUN,,HIRAGANA,,,柚味噌,ゆみそ,,yumiso,"miso z cukrem, sake, sokiem z yuzu i skórką
+wydrążone w yuzu nadziewane miso i sokiem z yuzu, a następnie pieczone",szczególnie ゆずみそ,,DUPLICATE 216492,"GroupId: 2775810
+Translate: miso with sugar, sake, yuzu juice and skin
+AdditionalInfo: esp. ゆずみそ
+Translate: hollowed out yuzu stuffed with miso and yuzu juice then baked
+AdditionalInfo: esp. ゆみそ"
+216540,WORD_NOUN,,HIRAGANA,,,餠網,もちあみ,,mochiami,grill lub ruszt do opiekania ryżowych ciastek,,,,"GroupId: 1752110
+Translate: grill or grate for toasting rice cakes"
+216541,WORD_NOUN,,HIRAGANA,,,刈り払い機,かりはらいき,,kari harai ki,"ręczna kosiarka do trawy
+podkaszarka
+podkaszarka żyłkowa",,,,"GroupId: 2415050
+Translate: string trimmer
+Translate: line trimmer
+Translate: weed whacker
+Translate: strimmer"
+216542,WORD_NOUN,,HIRAGANA,,,刈払い機,かりはらいき,,kari harai ki,"ręczna kosiarka do trawy
+podkaszarka
+podkaszarka żyłkowa",,,,"GroupId: 2415050
+Translate: string trimmer
+Translate: line trimmer
+Translate: weed whacker
+Translate: strimmer"
+216543,WORD_NOUN,,HIRAGANA,,,刈り払機,かりはらいき,,kari harai ki,"ręczna kosiarka do trawy
+podkaszarka
+podkaszarka żyłkowa",,,,"GroupId: 2415050
+Translate: string trimmer
+Translate: line trimmer
+Translate: weed whacker
+Translate: strimmer"
+216544,WORD_VERB_RU,,HIRAGANA,,,逃げうせる,にげうせる,,nige useru,"uciekać
+zwiewać",,,,"GroupId: 1450380
+Translate: to escape
+Translate: to run away"
+216545,WORD_NOUN,,HIRAGANA,,,吸い口,すいくち,,sui kuchi,"ustnik
+cygarniczka
+fifka
+filtr papierosowy
+aromatyczny dodatek (do zupy)",,,,"GroupId: 1228320
+Translate: mouthpiece
+Translate: cigarette holder
+Translate: cigarette filter (tip)
+Translate: fragrant garnish (for soup)"
+216546,WORD_NOUN,,KATAKANA,,,-,ニュージーランドチドリ,,nyuu jiirando chidori,sieweczka nowozelandzka,"gatunek średniej wielkości ptaka z rodziny sieweczkowatych, Charadrius obscurus",,,"GroupId: 2751900
+Translate: New Zealand dotterel (Charadrius obscurus)
+MiscInfo: uk
+Translate: New Zealand plover
+MiscInfo: uk
+Translate: red-breasted plover
+MiscInfo: uk"
+216547,WORD_NOUN,,KATAKANA,,,-,スラメンフクロウ,,sura menfukurou,płomykówka brunatna,"gatunek sowy, Tyto nigrobrunnea",,,"GroupId: 2753130
+Translate: Taliabu owl (Tyto nigrobrunnea)
+MiscInfo: uk
+Translate: Taliabu masked owl
+MiscInfo: uk
+Translate: Sula Islands barn owl
+MiscInfo: uk"
+216548,WORD_NOUN,,KATAKANA,,,-,ヨーロッパオウギハクジラ,,yooroppa ougihakujira,"dziobowal dwuzębny
+wal dwuzębny
+delfin Soverby’ego","gatunek walenia z rodziny zyfiowatych, Mesoplodon bidens",,,"GroupId: 2788590
+Translate: Sowerby's beaked whale (Mesoplodon bidens)
+MiscInfo: uk
+Translate: North Atlantic beaked whale
+MiscInfo: uk
+Translate: North Sea beaked whale
+MiscInfo: uk"
+216549,WORD_NOUN,,KATAKANA,,,-,ピグミーオウギハクジラ,,pigumii ougihakujira,dziobowal karłowaty,Mesoplodon peruvianus,,,"GroupId: 2788630
+Translate: pygmy beaked whale (Mesoplodon peruvianus)
+MiscInfo: uk
+Translate: Peruvian beaked whale
+MiscInfo: uk
+Translate: lesser beaked whale
+MiscInfo: uk"
+216550,WORD_NOUN,,HIRAGANA,,,武士気質,ぶしきしつ,,bushi kishitsu,"samurajski duch
+duch samuraja",,,DUPLICATE 216514,"GroupId: 1583690
+Translate: samurai spirit
+MiscInfo: yoji"
+216551,WORD_EXPRESSION,,HIRAGANA,,,赤貧洗うがごとし,せきひんあらうがごとし,,sekihin' arau ga gotoshi,"skrajnie ubogi
+skrajnie biedny
+w skrajnej nędzy
+biedny jak mysz kościelna",,,,"GroupId: 2843326
+Translate: extremely indigent
+Translate: extremely poor
+Translate: in dire poverty
+Translate: as poor as a church mouse"
+216552,WORD_NOUN,,KATAKANA,,,-,ドッジ・ライン,,dojji rain,"linia Dodge
+plan Dodge
+polityka finansowa opracowana przez Josepha Dodge'a dla powojennej Japonii",ang: Dodge line,,,"GroupId: 2833948
+Translate: Dodge line
+Translate: Dodge plan
+Translate: financial policy drafted by Joseph Dodge for post-war Japan"
+216553,WORD_NOUN,,HIRAGANA,,,梯子飲み,はしごのみ,,hashigo nomi,robienie rundki po pubach,,,,"GroupId: 2842542
+Translate: barhopping
+Translate: pub crawl"
