@@ -67429,7 +67429,7 @@ Translate: to seize"
 216594,WORD_NOUN,,HIRAGANA,,,技術料,ぎじゅつりょう,,gijutsuryou,opłata techniczna,,,,"GroupId: 1932890
 Translate: technical fee"
 216595,WORD_VERB_U,,HIRAGANA,,,凍え死ぬ,こごえしぬ,,kogoe shinu,"zamarznąć na śmierć
-umrzeć z zimna",wrażliwie,,,"GroupId: 1582220
+umrzeć z zimna",wrażliwie,,DUPLICATE 216675,"GroupId: 1582220
 Translate: to freeze to death
 MiscInfo: sens
 Translate: to die of cold
@@ -67489,11 +67489,13 @@ Translate: slow neutron"
 Translate: next-month delivery"
 216611,WORD_NOUN,,HIRAGANA,,,﨑,さき,,saki,"przylądek
 cypel
-mały półwysep",,,,
-216612,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,彼,かの,,kano,ten dobrze znany ...,,,,"GroupId: 2845746
+mały półwysep",,,DUPLICATE 125811,
+216612,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,彼,かの,,kano,ten dobrze znany ...,,,"DUPLICATE 126
+DUPLICATE 882
+DUPLICATE 48139","GroupId: 2845746
 Translate: that well-known ...
 MiscInfo: uk"
-216613,WORD_NOUN,,HIRAGANA,,,右足,うそく,,usoku,prawa noga,,,,
+216613,WORD_NOUN,,HIRAGANA,,,右足,うそく,,usoku,prawa noga,,,DUPLICATE 12930,
 216614,WORD_NOUN,,HIRAGANA,,,右脚,みぎあし,,migi ashi,prawa noga,,,,
 216615,WORD_NOUN,,HIRAGANA,,,本調子,ほんじょうし,,honjoushi,"normalny stan
 normalna kondycja
@@ -67501,7 +67503,7 @@ normalna sytuacja
 myśl przewodnia (archaizm)
 motyw przewodni (archaizm)
 właściwy klucz (archaizm)
-odpowiedni klucz (archaizm)",,,,
+odpowiedni klucz (archaizm)",,,DUPLICATE 20366,
 216616,WORD_NOUN,,KATAKANA,,,-,ダンサ,,dansa,"tancerz
 tancerka",,,,
 216617,WORD_NOUN,,HIRAGANA,,,火つけ役,ひつけやく,,hitsuke yaku,"prowokator
@@ -67513,17 +67515,17 @@ warchoł
 awanturnik",,,,
 216618,WORD_NOUN,,HIRAGANA,,,真っ最中,まっさなか,,massanaka,"środek
 po środku
-pośród",,,,
+pośród",,,DUPLICATE 35519,
 216619,WORD_NOUN,,HIRAGANA,,,まっ最中,まっさなか,,massanaka,"środek
 po środku
-pośród",,,,
+pośród",,,DUPLICATE 101854,
 216620,WORD_NOUN,,HIRAGANA,,,真最中,まっさなか,,massanaka,"środek
 po środku
-pośród",,,,
+pośród",,,DUPLICATE 35546,
 216621,WORD_NOUN,,HIRAGANA,,,喝さい,かっさい,,kassai,"owacja
 aplauz",,,,
 216622,WORD_NOUN,,HIRAGANA,,,骨子,さいころ,,saikoro,"kostka (do gry)
-kości (do gry)",シャイツ pochodzi z języka chińskiego,,,"GroupId: 1574680
+kości (do gry)",シャイツ pochodzi z języka chińskiego,,DUPLICATE 19122,"GroupId: 1574680
 Translate: dice
 MiscInfo: uk
 AdditionalInfo: シャイツ is from Chinese
@@ -67534,12 +67536,16 @@ AdditionalInfo: シャイツ is from Chinese"
 Translate: blotting paper"
 216624,"WORD_ADVERB
 WORD_CONJUNCTION",,HIRAGANA,,,傍,かたがた,,katagata,"przypadkowo
-w tym samym czasie",,,,
+w tym samym czasie",,,"DUPLICATE 10791
+DUPLICATE 29022
+DUPLICATE 29061",
 216625,WORD_NOUN,,HIRAGANA,,,持場,もちば,,mochiba,"praca
 pozycja
 stanowisko
 posada",,,,
-216626,WORD_PARTICULE,,HIRAGANA,,,-,さけ,,sake,ponieważ,,,,
+216626,WORD_PARTICULE,,HIRAGANA,,,-,さけ,,sake,ponieważ,,,"DUPLICATE 2588
+DUPLICATE 12071
+DUPLICATE 53175",
 216627,WORD_NOUN,,HIRAGANA,,,亜媽港,あまこう,,amakou,Makau,,,,
 216628,WORD_EXPRESSION,,HIRAGANA,,,とゆう所,とゆうところ,,to yuu tokoro,"stan nazywany
 pozycja opisywana jako
@@ -67562,9 +67568,9 @@ Translate: the place named"
 216629,WORD_VERB_U,,HIRAGANA,,,勝抜く,かちぬく,,kachi nuku,zwyciężyć,,,,
 216630,WORD_NOUN,,HIRAGANA,,,まな娘,まなむすめ,,mana musume,"swoja ukochana córka
 swoja droga córka",,,,
-216631,WORD_NOUN,,HIRAGANA,,,丼もの,どんもの,,donmono,miska ryżu z jedzeniem na górze,,,,"GroupId: 1563000
+216631,WORD_NOUN,,HIRAGANA,,,丼もの,どんもの,,donmono,miska ryżu z jedzeniem na górze,,,DUPLICATE 100205,"GroupId: 1563000
 Translate: bowl of rice with food on top"
-216632,WORD_NOUN,,HIRAGANA,,,丼物,どんもの,,donmono,miska ryżu z jedzeniem na górze,,,,"GroupId: 1563000
+216632,WORD_NOUN,,HIRAGANA,,,丼物,どんもの,,donmono,miska ryżu z jedzeniem na górze,,,DUPLICATE 100239,"GroupId: 1563000
 Translate: bowl of rice with food on top"
 216633,WORD_NOUN,,HIRAGANA,,,覊束,きそく,,kisoku,"skrępowanie
 ograniczenie
@@ -67572,13 +67578,15 @@ powściągliwość",,,,
 216634,WORD_NOUN,,HIRAGANA,,,闇討,やみうち,,yamiuchi,"atakowanie pod przykrywką ciemności
 atak z zaskoczenia
 zamach",,,,
-216635,WORD_ADJECTIVE_I,,HIRAGANA,,,口寂しい,くちざみしい,,kuchi zamishii,"pragnienie za tym, aby mieć lub włożyć coś we własne usta",,,,"GroupId: 1678170
+216635,WORD_ADJECTIVE_I,,HIRAGANA,,,口寂しい,くちざみしい,,kuchi zamishii,"pragnienie za tym, aby mieć lub włożyć coś we własne usta",,,"DUPLICATE 109628
+DUPLICATE 216636","GroupId: 1678170
 Translate: longing to have or put something in one's mouth"
-216636,WORD_ADJECTIVE_I,,HIRAGANA,,,口寂しい,くちさみしい,,kuchi samishii,"pragnienie za tym, aby mieć lub włożyć coś we własne usta",,,,"GroupId: 1678170
+216636,WORD_ADJECTIVE_I,,HIRAGANA,,,口寂しい,くちさみしい,,kuchi samishii,"pragnienie za tym, aby mieć lub włożyć coś we własne usta",,,"DUPLICATE 109628
+DUPLICATE 216635","GroupId: 1678170
 Translate: longing to have or put something in one's mouth"
-216637,WORD_ADJECTIVE_I,,HIRAGANA,,,口淋しい,くちざみしい,,kuchi zamishii,"pragnienie za tym, aby mieć lub włożyć coś we własne usta",,,,"GroupId: 1678170
+216637,WORD_ADJECTIVE_I,,HIRAGANA,,,口淋しい,くちざみしい,,kuchi zamishii,"pragnienie za tym, aby mieć lub włożyć coś we własne usta",,,DUPLICATE 216638,"GroupId: 1678170
 Translate: longing to have or put something in one's mouth"
-216638,WORD_ADJECTIVE_I,,HIRAGANA,,,口淋しい,くちさみしい,,kuchi samishii,"pragnienie za tym, aby mieć lub włożyć coś we własne usta",,,,"GroupId: 1678170
+216638,WORD_ADJECTIVE_I,,HIRAGANA,,,口淋しい,くちさみしい,,kuchi samishii,"pragnienie za tym, aby mieć lub włożyć coś we własne usta",,,DUPLICATE 216637,"GroupId: 1678170
 Translate: longing to have or put something in one's mouth"
 216639,WORD_ADJECTIVE_NA,,HIRAGANA,,,朧ろ気,おぼろげ,,oboro ge,"niejasny
 niewyraźny
@@ -67601,7 +67609,7 @@ przesiadka (lot)",,,,"GroupId: 2011410
 Translate: transit (passenger)
 Translate: connecting (flight)"
 216643,WORD_NOUN,,KATAKANA,,,明太,メンタイ,,mentai,"theragra chalcogramma
-[japońska potrawa] (skrót)",,,,"GroupId: 2154000
+[japońska potrawa] (skrót)",,,DUPLICATE 133218,"GroupId: 2154000
 Translate: walleye pollack (Theragra chalcogramma)
 Translate: Alaska pollack
 Translate: walleye pollack roe (generally served salted and spiced with red pepper)
@@ -67668,19 +67676,19 @@ stan majątkowy",,,,"GroupId: 1670490
 Translate: one's financial standing"
 216653,WORD_NOUN,,KATAKANA,,,-,スカルプチャ,,sukarupucha,rzeźba,ang: sculpture,,,"GroupId: 1067720
 Translate: sculpture"
-216654,WORD_NOUN,,HIRAGANA,,,大八洲国,おおやしまのくに,,ooyashima no kuni,Japonia,archaizm,,,"GroupId: 2244090
+216654,WORD_NOUN,,HIRAGANA,,,大八洲国,おおやしまのくに,,ooyashima no kuni,Japonia,archaizm,,DUPLICATE 180713,"GroupId: 2244090
 Translate: Japan
 MiscInfo: arch"
-216655,WORD_NOUN,,HIRAGANA,,,大八島国,おおやしまぐに,,ooyashima guni,Japonia,archaizm,,,"GroupId: 2244090
+216655,WORD_NOUN,,HIRAGANA,,,大八島国,おおやしまぐに,,ooyashima guni,Japonia,archaizm,,DUPLICATE 216656,"GroupId: 2244090
 Translate: Japan
 MiscInfo: arch"
-216656,WORD_NOUN,,HIRAGANA,,,大八島国,おおやしまのくに,,ooyashima no kuni,Japonia,archaizm,,,"GroupId: 2244090
+216656,WORD_NOUN,,HIRAGANA,,,大八島国,おおやしまのくに,,ooyashima no kuni,Japonia,archaizm,,DUPLICATE 216655,"GroupId: 2244090
 Translate: Japan
 MiscInfo: arch"
-216657,WORD_NOUN,,HIRAGANA,,,大八嶋国,おおやしまぐに,,ooyashima guni,Japonia,archaizm,,,"GroupId: 2244090
+216657,WORD_NOUN,,HIRAGANA,,,大八嶋国,おおやしまぐに,,ooyashima guni,Japonia,archaizm,,DUPLICATE 216658,"GroupId: 2244090
 Translate: Japan
 MiscInfo: arch"
-216658,WORD_NOUN,,HIRAGANA,,,大八嶋国,おおやしまのくに,,ooyashima no kuni,Japonia,archaizm,,,"GroupId: 2244090
+216658,WORD_NOUN,,HIRAGANA,,,大八嶋国,おおやしまのくに,,ooyashima no kuni,Japonia,archaizm,,DUPLICATE 216657,"GroupId: 2244090
 Translate: Japan
 MiscInfo: arch"
 216659,WORD_NOUN,,HIRAGANA,,,怪談噺,かいだんばなし,,kaidan banashi,opowiadanie historii o duchach,,,,"GroupId: 2838778
@@ -67759,7 +67767,7 @@ MiscInfo: uk"
 Translate: Alnus firma (species of alder)
 MiscInfo: uk"
 216675,WORD_VERB_U,,HIRAGANA,,,凍え死ぬ,こごえじぬ,,kogoe jinu,"zamarznąć na śmierć
-umrzeć z zimna",wrażliwie,,,"GroupId: 1582220
+umrzeć z zimna",wrażliwie,,DUPLICATE 216595,"GroupId: 1582220
 Translate: to freeze to death
 MiscInfo: sens
 Translate: to die of cold
@@ -67822,3 +67830,7 @@ Translate: American sauce"
 amerykański sos","przepis z klasycznej francuskiej kuchni, zawierający posiekaną cebulę, pomidory, białe wino, brandy, sól, pieprz kajeński, masło i bulion rybny",,,"GroupId: 2831263
 Translate: sauce américaine
 Translate: American sauce"
+216685,WORD_NOUN,,KATAKANA_HIRAGANA,,,プレミアムつき商品券,プレミアムつきしょうひんけん,,puremiamu tsuki shouhinken,"kupon premium (jako narzędzie polityczne w celu zwiększenia popytu konsumentów)
+kupon na zakupy",,,,"GroupId: 2837485
+Translate: premium voucher (issued as a political tool to increase consumer demand)
+Translate: shopping coupon"
