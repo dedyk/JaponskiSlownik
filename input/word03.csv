@@ -54371,8 +54371,8 @@ w momencie wyjazdu",,,,"GroupId: 2844989
 Translate: when I leave
 Translate: (on) departing
 Translate: _roznica_tlumaczenia_"
-213452,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,習わぬ経は読めぬ,ならわぬきょうはよまぬ,,narawanu kyou wa yomanu,"nie możesz czegoś zrobić, jeśli nie wiesz, jak to zrobić
-nie możesz czytać sutry, jeśli się jej nie uczyłeś",przysłowie,,,"GroupId: 2844870
+213452,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,習わぬ経は読めぬ,ならわぬきょうはよめぬ,,narawanu kyou wa yomenu,"nie możesz czegoś zrobić, jeśli nie wiesz, jak to zrobić
+nie możesz czytać sutry, jeśli się jej nie nauczyłeś",przysłowie,,,"GroupId: 2844870
 Translate: you can't do something if you don't know how to do it
 MiscInfo: proverb
 Translate: you can't read a sutra (by heart) if you haven't learned it
@@ -57875,8 +57875,8 @@ Translate: Wakasa (former province located in the south of present-day Fukui Pre
 214284,WORD_NOUN,,HIRAGANA,,,陸奥,むつ,,mutsu,Mutsu,"dawna prowincja położona w dzisiejszych prefekturach Fukushima, Miyagi, Iwate i Aomori, po 1869 roku りくおく",,DUPLICATE 214285,"GroupId: 2845186
 Translate: Mutsu (former province located in present-day Fukushima, Miyagi, Iwate, and Aomori prefectures)
 AdditionalInfo: after 1869 became りくおく"
-214285,WORD_NOUN,,HIRAGANA,,,陸奥,りくおく,,rikuoku,Rikuoku,dawna prowincja położona w części dzisiejszych prefektur Aomori i Iwate,,DUPLICATE 214284,"GroupId: 2845219
-Translate: Rikuoku (former province located in parts of present-day Aomori and Iwate prefectures)"
+214285,WORD_NOUN,,HIRAGANA,,,陸奥,りくおう,,rikuou,Rikuō,była prowincja położona w części dzisiejszych prefektur Aomori i Iwate,,,"GroupId: 2845219
+Translate: Rikuō (former province located in parts of present-day Aomori and Iwate prefectures)"
 214286,WORD_NOUN,,HIRAGANA,,,伊予,いよ,,iyo,Iyo,dawna prowincja położona w dzisiejszej prefekturze Ehime,,,"GroupId: 2845148
 Translate: Iyo (former province located in present-day Ehime Prefecture)"
 214287,WORD_NOUN,,HIRAGANA,,,江鮭,あめのうお,,amenouo,Oncorhynchus masou rhodurus,gatunek ryby,,,"GroupId: 2241280
@@ -62611,7 +62611,8 @@ Translate: deception tactics
 MiscInfo: yoji"
 215429,WORD_NOUN,,HIRAGANA,,,赤樅茸,あかもみたけ,,akamomitake,Lactarius laeticolorus,gatunek jadalnych grzybów,,,"GroupId: 2196960
 Translate: Lactarius laeticolorus (edible species of lactarius mushroom)"
-215430,WORD_NOUN,,HIRAGANA,,,売却基準価額,ばいきゃききじゅんがく,,baikyakikijungaku,???,,,,"GroupId: 2840767
+215430,WORD_NOUN,,HIRAGANA,,,売却基準価額,ばいきゃくきじゅんかがく,,baikyaku kijun kagaku,"standardowa cena sprzedaży
+wyceniona wartość nieruchomości poddanej przymusowej licytacji (minimalna cena zakupu to zazwyczaj 80% tej ceny)",,,,"GroupId: 2840767
 Translate: standard sales price
 Translate: appraised value of a real property subject to compulsory auction (minimum purchase price is usually set at 80% of this price)"
 215431,WORD_NOUN,,KATAKANA,,,-,セダカスズメダイ,,sedakasuzumedai,Stegastes altus,gatunek ryby,,,"GroupId: 2546760
@@ -68079,7 +68080,6 @@ kontrola narzucona przez samego siebie",,,,"GroupId: 2842566
 Translate: self-management
 Translate: self-imposed control"
 216746,WORD_NOUN,,HIRAGANA,,,虜,りょ,,ryo,"jeniec
-niewolnik
 więzień
 obcokrajowiec
 barbarzyńca
@@ -68125,18 +68125,13 @@ MiscInfo: uk"
 praktykujący mnich",,,,"GroupId: 2517650
 Translate: ascetic monk
 Translate: trainee monk"
-216752,WORD_EXPRESSION,,HIRAGANA,,,習わぬ経は読めぬ,ならわぬきょうはよめぬ,,narawanu kyou wa yomenu,"nie możesz czegoś zrobić, jeśli nie wiesz, jak to zrobić
-nie możesz czytać sutry, jeśli się jej nie nauczyłeś",przysłowie,,,"GroupId: 2844870
-Translate: you can't do something if you don't know how to do it
-MiscInfo: proverb
-Translate: you can't read a sutra (by heart) if you haven't learned it
-MiscInfo: proverb"
-216753,WORD_NOUN,,HIRAGANA,,,陸奥,りくおう,,rikuou,Rikuō,była prowincja położona w części dzisiejszych prefektur Aomori i Iwate,,,"GroupId: 2845219
-Translate: Rikuō (former province located in parts of present-day Aomori and Iwate prefectures)"
-216754,WORD_NOUN,,HIRAGANA,,,売却基準価額,ばいきゃくきじゅんかがく,,baikyaku kijun kagaku,"standardowa cena sprzedaży
-wyceniona wartość nieruchomości poddanej przymusowej licytacji (minimalna cena zakupu to zazwyczaj 80% tej ceny)",,,,"GroupId: 2840767
-Translate: standard sales price
-Translate: appraised value of a real property subject to compulsory auction (minimum purchase price is usually set at 80% of this price)"
+216752,WORD_NOUN,,HIRAGANA_KATAKANA,,,雑音バースト信号,ざつおんバーストしんごう,,zatsuon baasuto shingou,???,,,,"GroupId: 2358410
+Translate: noise burst signal"
+216753,WORD_NOUN,,HIRAGANA,,,推奨株,すいしょうかぶ,,suishoukabu,rekomendowane akcje (kapitał akcyjny),,,,"GroupId: 2127730
+Translate: recommended stock"
+216754,WORD_NOUN,,HIRAGANA,,,仕訳帳,しわけちょう,,shiwakechou,"dziennik księgowy
+dziennik księgowości",,,,"GroupId: 1305480
+Translate: book-keeping journal"
 216755,WORD_NOUN,,HIRAGANA,,,蝉声,せんせい,,sensei,śpiew cykady,,,,"GroupId: 2845423
 Translate: cicada singing"
 216756,WORD_NOUN,,HIRAGANA,,,覆,ふく,,fuku,"skrywać (swoją wadę, buddyzm)
