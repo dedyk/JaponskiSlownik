@@ -57875,7 +57875,7 @@ Translate: Wakasa (former province located in the south of present-day Fukui Pre
 214284,WORD_NOUN,,HIRAGANA,,,陸奥,むつ,,mutsu,Mutsu,"dawna prowincja położona w dzisiejszych prefekturach Fukushima, Miyagi, Iwate i Aomori, po 1869 roku りくおく",,DUPLICATE 214285,"GroupId: 2845186
 Translate: Mutsu (former province located in present-day Fukushima, Miyagi, Iwate, and Aomori prefectures)
 AdditionalInfo: after 1869 became りくおく"
-214285,WORD_NOUN,,HIRAGANA,,,陸奥,りくおう,,rikuou,Rikuō,była prowincja położona w części dzisiejszych prefektur Aomori i Iwate,,,"GroupId: 2845219
+214285,WORD_NOUN,,HIRAGANA,,,陸奥,りくおう,,rikuou,Rikuō,była prowincja położona w części dzisiejszych prefektur Aomori i Iwate,,DUPLICATE 214284,"GroupId: 2845219
 Translate: Rikuō (former province located in parts of present-day Aomori and Iwate prefectures)"
 214286,WORD_NOUN,,HIRAGANA,,,伊予,いよ,,iyo,Iyo,dawna prowincja położona w dzisiejszej prefekturze Ehime,,,"GroupId: 2845148
 Translate: Iyo (former province located in present-day Ehime Prefecture)"
@@ -68083,7 +68083,8 @@ Translate: self-imposed control"
 więzień
 obcokrajowiec
 barbarzyńca
-niewolnik",archaizm,,,"GroupId: 2845719
+niewolnik",archaizm,,"DUPLICATE 8172
+DUPLICATE 125034","GroupId: 2845719
 Translate: captive
 MiscInfo: arch
 Translate: prisoner
@@ -68096,7 +68097,7 @@ Translate: slave
 MiscInfo: arch"
 216747,WORD_NOUN,,KATAKANA,,,主体,チュチェ,,chuche,"Dżucze (doktryna polityczna sformułowana przez przywódcę Korei Północnej Kim Ir Sena i wprowadzona w Korei Północnej)
 samodzielność
-Dżucze (północnokoreański kalendarz)",,,,"GroupId: 2845675
+Dżucze (północnokoreański kalendarz)",,,DUPLICATE 17150,"GroupId: 2845675
 Translate: Juche (North Korean political ideology)
 MiscInfo: uk
 Translate: self-reliance
@@ -68106,7 +68107,8 @@ MiscInfo: uk"
 216748,WORD_NOUN,,KATAKANA_HIRAGANA,,,コミットログ記録,コミットログきろく,,komitto rogu kiroku,wpis w logu z zatwierdzeniem (commit'em),informatyka,,,"GroupId: 2296900
 Translate: log-commit record"
 216749,WORD_NOUN,,HIRAGANA,,,種子,しゅうじ,,shuuji,"??? (szczególnie しゅうじ, buddyzm)
-??? (szczególnie しゅじ, buddyzm)",,,,"GroupId: 2845711
+??? (szczególnie しゅじ, buddyzm)",,,"DUPLICATE 39937
+DUPLICATE 216769","GroupId: 2845711
 Translate: seed
 AdditionalInfo: esp. しゅうじ
 Translate: bija
@@ -68141,7 +68143,14 @@ MiscInfo: obsc
 Translate: toppling
 MiscInfo: obsc"
 216757,WORD_AUX,,HIRAGANA,,,-,みそ,,miso,"śmiało i spróbuj
-dlaczego nie spróbujesz","po formie te czasownika, kolokwializm",,,"GroupId: 2845532
+dlaczego nie spróbujesz","po formie te czasownika, kolokwializm",,"DUPLICATE 1953
+DUPLICATE 31893
+DUPLICATE 31895
+DUPLICATE 32421
+DUPLICATE 180529
+DUPLICATE 180531
+DUPLICATE 188895
+DUPLICATE 188897","GroupId: 2845532
 Translate: go ahead and try
 MiscInfo: col
 AdditionalInfo: after te form verb
@@ -68214,7 +68223,8 @@ MiscInfo: uk
 Translate: Comanthus japonica (species of feather star)
 MiscInfo: uk"
 216769,WORD_NOUN,,HIRAGANA,,,種子,しゅじ,,shuji,"??? (szczególnie しゅうじ, buddyzm)
-??? (szczególnie しゅじ, buddyzm)",,,,"GroupId: 2845711
+??? (szczególnie しゅじ, buddyzm)",,,"DUPLICATE 39937
+DUPLICATE 216749","GroupId: 2845711
 Translate: seed
 AdditionalInfo: esp. しゅうじ
 Translate: bija
