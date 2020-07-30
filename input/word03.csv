@@ -33963,7 +33963,8 @@ tamto
 tamten",daleko od mówcy i osoby docelowej (z rzeczownikiem),,"DUPLICATE 7071
 DUPLICATE 19951
 DUPLICATE 23166
-DUPLICATE 31797","GroupId: 1000420
+DUPLICATE 31797
+DUPLICATE 216816","GroupId: 1000420
 Translate: that (someone or something distant from both speaker and listener, or situation unfamiliar to both speaker and listener)
 MiscInfo: uk"
 208306,WORD_NOUN,,HIRAGANA,,,人数,にんじゅ,,ninju,ilość osób,,,"DUPLICATE 2871
@@ -68322,14 +68323,14 @@ Translate: one by one
 MiscInfo: uk
 Translate: going over with a fine-tooth comb
 MiscInfo: uk"
-216800,WORD_NOUN,,HIRAGANA,,,掛かりきり,かかりきり,,kakarikiri,"bycie oddanym
+216800,WORD_NOUN,,HIRAGANA,,,掛かりきり,かかりきり,,kakari kiri,"bycie oddanym
 poświęcanie całego swojego czasu i energii",,,,"GroupId: 2076570
 Translate: being devoted
 MiscInfo: uk
 Translate: spending all one's time and energy on
 MiscInfo: uk"
 216801,WORD_NOUN,,HIRAGANA_KATAKANA,,,盲パス,めくらパス,,mekura pasu,"ślepe podanie
-podanie (piłki) bez patrzenia",wrażliwie,,,"GroupId: 2094430
+podanie (piłki) bez patrzenia",wrażliwie,,DUPLICATE 216834,"GroupId: 2094430
 Translate: blind pass
 MiscInfo: uk
 MiscInfo: sens
@@ -68403,7 +68404,7 @@ Translate: seeking temporary ease
 MiscInfo: obs"
 216816,WORD_NOUN,,HIRAGANA,,,暗,あん,,an,"ciemność
 mrok
-zaciemnienie",mało znane słowo,,,"GroupId: 2845752
+zaciemnienie",mało znane słowo,,DUPLICATE 208305,"GroupId: 2845752
 Translate: darkness
 MiscInfo: obsc"
 216817,WORD_NOUN,,HIRAGANA,,,口針,こうしん,,koushin,sztylet,,,,"GroupId: 2845412
@@ -68415,26 +68416,9 @@ Translate: stiff bow"
 216819,WORD_NOUN,,HIRAGANA,,,大転子,だいてんし,,daitenshi,krętarz większy,anatomia,,,"GroupId: 2845667
 Translate: greater trochanter
 Translate: trochanter major"
-216820,"WORD_NOUN
-WORD_ADJECTIVE_NO
-WORD_NOUN_SUFFIX",,KATAKANA,,,ＯＦＦ,オフ,,ofu,"wyłączenie (np. prądu)
-zakręcenie (np. wody)
-martwy sezon (skrót, ang: off-season)
-offset (skrót)
-terenowy (skrót, ang: off-road)
-off-line (skrót)
-od (ceny)",,,,"GroupId: 1034600
-Translate: switching off (e.g. electricity)
-Translate: turning off (e.g. water)
-Translate: off-season
-MiscInfo: abbr
-Translate: offset
-MiscInfo: abbr
-Translate: off-road
-MiscInfo: abbr
-Translate: off-line
-MiscInfo: abbr
-Translate: off (the price)"
+216820,WORD_NOUN,,HIRAGANA,,,深夜業,しんやぎょう,,shin'yagyou,"nocna praca
+praca nocna",,,,"GroupId: 2718380
+Translate: night work"
 216821,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,厚々,あつあつ,,atsu atsu,"gęsty
 zbity",archaizm,,,"GroupId: 2845748
@@ -68445,7 +68429,7 @@ MiscInfo: arch"
 216822,WORD_NOUN,,HIRAGANA,,,両丹,りょうたん,,ryoutan,Ryōtan,region w Kansai odpowiadający dwóm historycznym prowincjom Tanba i Tango,,,"GroupId: 2845389
 Translate: Ryōtan (region in Kansai corresponding to the two historical provinces of Tanba and Tango)"
 216823,"WORD_ADJECTIVE_NO
-WORD_ADVERB_TO",,HIRAGANA,,,大大,だいだい,,daidai,"bardzo duży
+WORD_ADVERB_TO",,HIRAGANA,,,大大,だいだい,,dai dai,"bardzo duży
 bardzo ogromny
 zajmujący dużo miejsca",,,,"GroupId: 2845551
 Translate: very big
@@ -68454,38 +68438,99 @@ Translate: taking up a lot of space"
 216824,WORD_NOUN,,HIRAGANA,,,冷感,れいかん,,reikan,czucie zimna,,,,"GroupId: 2845640
 Translate: cold feeling
 Translate: psychroesthesia"
-216825,"WORD_NOUN
-WORD_ADJECTIVE_F
-UNKNOWN
-WORD_ADJECTIVE_NA",,KATAKANA,,,ＯＵＴ,アウト,,auto,"out (piłki, np. w tenisie)
-poza linią
-out (w baseballu)
-zewnętrzny
-poza
-wyjście (znak wyjścia na parkingu)
-wyjście tutaj (znak wyjścia na parkingu)
-??? (golf)
-niedobry
-nie do przyjęcia
-niezgodny
-???",,,,"GroupId: 1014680
-Translate: out (of a ball, in tennis, etc.)
-Translate: outside the line
-Translate: out
-Translate: putout
-Translate: outer
-Translate: external
-Translate: outside
-Translate: exit
-AdditionalInfo: on (parking) exit signs
-Translate: exit here
-AdditionalInfo: on (parking) exit signs
-Translate: front nine (golf)
-Translate: no good
-Translate: unacceptable
-Translate: out of line
-Translate: over
-Translate: finished
-Translate: disqualified"
+216825,WORD_NOUN,,HIRAGANA,,,渦巻星雲,うずまきせいうん,,uzumaki seiun,mgławica spiralna,przestarzałe słowo,,,"GroupId: 1972640
+Translate: spiral nebula
+MiscInfo: obs"
 216826,WORD_NOUN,,HIRAGANA,,,内孔,ないこう,,naikou,otwór wewnętrzny,,,,"GroupId: 2845405
 Translate: inner hole"
+216827,WORD_NOUN,,KATAKANA,,,-,コタマガイ,,kotamagai,Gomphina melanegis,gatunek małzy,,,"GroupId: 2673390
+Translate: Gomphina melanegis (species of Venus clam)
+MiscInfo: uk"
+216828,WORD_NOUN,,HIRAGANA,,,炬燵掛,こたつがけ,,kotatsu gake,"futon lub materiał przymocowany do ramy kotatsu
+pokrowiec na kotatsu",,,,"GroupId: 1004440
+Translate: futon or cloth attached to the kotatsu's frame
+MiscInfo: uk
+Translate: cover for kotatsu
+MiscInfo: uk"
+216829,WORD_NOUN,,HIRAGANA,,,火燵掛,こたつがけ,,kotatsu gake,"futon lub materiał przymocowany do ramy kotatsu
+pokrowiec na kotatsu",,,,"GroupId: 1004440
+Translate: futon or cloth attached to the kotatsu's frame
+MiscInfo: uk
+Translate: cover for kotatsu
+MiscInfo: uk"
+216830,WORD_NOUN,,KATAKANA,,,-,シマヘビ,,shimahebi,Elaphe quadrivirgata,gatunek węża,,,"GroupId: 1321680
+Translate: Japanese four-lined ratsnake (Elaphe quadrivirgata)
+MiscInfo: uk
+Translate: Japanese striped snake
+MiscInfo: uk"
+216831,WORD_ADVERB,,HIRAGANA,,,蝨潰しに,しらみつぶしに,,shiramitsu bushi ni,"jeden po drugim
+???",,,,"GroupId: 1812890
+Translate: one by one
+MiscInfo: uk
+Translate: going over with a fine-tooth comb
+MiscInfo: uk"
+216832,WORD_NOUN,,HIRAGANA,,,掛かり切り,かかりきり,,kakari kiri,"bycie oddanym
+poświęcanie całego swojego czasu i energii",,,,"GroupId: 2076570
+Translate: being devoted
+MiscInfo: uk
+Translate: spending all one's time and energy on
+MiscInfo: uk"
+216833,WORD_NOUN,,HIRAGANA,,,掛り切り,かかりきり,,kakari kiri,"bycie oddanym
+poświęcanie całego swojego czasu i energii",,,,"GroupId: 2076570
+Translate: being devoted
+MiscInfo: uk
+Translate: spending all one's time and energy on
+MiscInfo: uk"
+216834,WORD_NOUN,,HIRAGANA_KATAKANA,,,盲パス,もうパス,,mou pasu,"ślepe podanie
+podanie (piłki) bez patrzenia",wrażliwie,,DUPLICATE 216801,"GroupId: 2094430
+Translate: blind pass
+MiscInfo: uk
+MiscInfo: sens
+Translate: passing (a ball) without looking
+MiscInfo: uk
+MiscInfo: sens"
+216835,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,鼻を啜る,はなをすする,,hana o susuru,"pociągać nosem
+łkać
+mazgaić
+chlipać",,,,"GroupId: 2613260
+Translate: to sniffle
+Translate: to snivel"
+216836,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,洟をすする,はなをすする,,hana o susuru,"pociągać nosem
+łkać
+mazgaić
+chlipać",,,,"GroupId: 2613260
+Translate: to sniffle
+Translate: to snivel"
+216837,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,洟を啜る,はなをすする,,hana o susuru,"pociągać nosem
+łkać
+mazgaić
+chlipać",,,,"GroupId: 2613260
+Translate: to sniffle
+Translate: to snivel"
+216838,WORD_NOUN,,HIRAGANA,,,はり薬,はりぐすり,,hari gusuri,"samoprzylepny plaster na skórę
+plaster przezskórny
+plaster medyczny",,,,"GroupId: 2835600
+Translate: adhesive skin patch
+Translate: transdermal patch
+Translate: medical patch"
+216839,WORD_NOUN,,HIRAGANA,,,彊弩,きょうど,,kyoudo,"mocny łuk
+sztywny łuk",,,,"GroupId: 2845666
+Translate: strong bow
+Translate: stiff bow"
+216840,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,厚厚,あつあつ,,atsu atsu,"gęsty
+zbity",archaizm,,,"GroupId: 2845748
+Translate: thick
+MiscInfo: arch
+Translate: dense
+MiscInfo: arch"
+216841,"WORD_ADJECTIVE_NO
+WORD_ADVERB_TO",,HIRAGANA,,,大々,だいだい,,dai dai,"bardzo duży
+bardzo ogromny
+zajmujący dużo miejsca",,,,"GroupId: 2845551
+Translate: very big
+Translate: very large
+Translate: taking up a lot of space"
