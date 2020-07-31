@@ -68624,7 +68624,8 @@ MiscInfo: abbr
 Translate: digital SLR camera
 MiscInfo: uk
 MiscInfo: abbr"
-216868,WORD_NOUN,,KATAKANA,,,青椒肉絲,チンジャオロース,,chinjao roosu,qīngjiāo ròusī,chińska potrawa,,,"GroupId: 2142660
+216868,WORD_NOUN,,KATAKANA,,,青椒肉絲,チンジャオロース,,chinjao roosu,qīngjiāo ròusī,chińska potrawa,,"DUPLICATE 216899
+DUPLICATE 216900","GroupId: 2142660
 Translate: Chinese-style stir-fry containing green peppers and meat
 MiscInfo: uk
 Translate: pepper steak (US)
@@ -68635,7 +68636,7 @@ Translate: even if that isn't the case
 MiscInfo: uk
 Translate: even though that isn't the case
 MiscInfo: uk"
-216870,WORD_NOUN,,KATAKANA,,,吠舎,バイシャ,,baisha,wajśja,"w tradycyjnym społeczeństwie hinduskim: członek trzeciego, według hierarchii, stanu, zajmującego się rolnictwem, rzemiosłem i handlem",,,"GroupId: 2185410
+216870,WORD_NOUN,,KATAKANA,,,吠舎,バイシャ,,baisha,wajśja,"w tradycyjnym społeczeństwie hinduskim: członek trzeciego, według hierarchii, stanu, zajmującego się rolnictwem, rzemiosłem i handlem",,DUPLICATE 216901,"GroupId: 2185410
 Translate: Vaishya
 MiscInfo: uk
 Translate: Vaisya (member of India's merchant-and-farmer caste)
@@ -68738,3 +68739,45 @@ Translate: young woman who dresses in outdoor clothing
 Translate: young woman who enjoys mountain climbing"
 216896,WORD_NOUN,,HIRAGANA_KATAKANA,,,青年イタリア,せいねんイタリア,,seinen' itaria,Młode Włochy,radykalny ruch założony wiosną 1831 przez Giuseppe Mazziniego. Dążył do zjednoczenia państwa poprzez powstanie ludowe i powołania liberalnej republiki,,,"GroupId: 2839384
 Translate: Young Italy (19th century political movement)"
+216897,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ミヤマホオジロ,,miyama hoojiro,trznadel żółtogardły,"gatunek małego ptaka z rodziny trznadli, Emberiza elegans",,,"GroupId: 2197750
+Translate: yellow-throated bunting (Emberiza elegans)
+MiscInfo: uk"
+216898,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,デジイチ,,dejiichi,cyfrowa lustrzanka jednoobiektywowa,skrót,,,"GroupId: 2141240
+Translate: digital single lens reflex camera
+MiscInfo: uk
+MiscInfo: abbr
+Translate: digital SLR camera
+MiscInfo: uk
+MiscInfo: abbr"
+216899,WORD_NOUN,,KATAKANA,,,青椒肉絲,チンジャオロースー,,chinjao roosuu,qīngjiāo ròusī,chińska potrawa,,"DUPLICATE 216868
+DUPLICATE 216900","GroupId: 2142660
+Translate: Chinese-style stir-fry containing green peppers and meat
+MiscInfo: uk
+Translate: pepper steak (US)
+MiscInfo: uk"
+216900,WORD_NOUN,,KATAKANA,,,青椒肉絲,チンジャオロウスー,,chinjao rousuu,qīngjiāo ròusī,chińska potrawa,,"DUPLICATE 216868
+DUPLICATE 216899","GroupId: 2142660
+Translate: Chinese-style stir-fry containing green peppers and meat
+MiscInfo: uk
+Translate: pepper steak (US)
+MiscInfo: uk"
+216901,WORD_NOUN,,KATAKANA,,,吠舎,ヴァイシャ,,vaisha,wajśja,"w tradycyjnym społeczeństwie hinduskim: członek trzeciego, według hierarchii, stanu, zajmującego się rolnictwem, rzemiosłem i handlem",,DUPLICATE 216870,"GroupId: 2185410
+Translate: Vaishya
+MiscInfo: uk
+Translate: Vaisya (member of India's merchant-and-farmer caste)
+MiscInfo: uk"
+216902,WORD_NOUN,,KATAKANA,,,-,ハタオリドリ,,hataori dori,"wikłacz (gatunek ptaka)
+wikłaczowate (rodzina niedużych ptaków z rzędu wróblowych, Ploceidae)
+wikłacze (rodzina niedużych ptaków z rzędu wróblowych, Ploceidae)",,,,"GroupId: 2198990
+Translate: weaverbird
+MiscInfo: uk
+Translate: weaver (any of a number of birds in family Ploceidae that weave elaborate nests)
+MiscInfo: uk"
+216903,WORD_ADJECTIVE_I,,HIRAGANA,,,感じ易い,かんじやすい,,kanji yasui,"wrażliwy
+czuły
+podatny na wpływ",,,,"GroupId: 2087190
+Translate: sensitive
+Translate: susceptible
+Translate: impressionable"
+216904,WORD_NOUN,,HIRAGANA,,,不思議君,ふしぎくん,,fushigi kun,ekscentryczny młody człowiek,,,,"GroupId: 2701480
+Translate: eccentric young man"
