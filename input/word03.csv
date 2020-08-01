@@ -68884,7 +68884,7 @@ Translate: common muntjac (species of barking deer, Muntiacus muntjak)
 MiscInfo: uk
 Translate: Indian muntjac
 MiscInfo: uk"
-216935,WORD_NOUN,,KATAKANA_HIRAGANA,,,ＡＹＡ世代,アヤせだい,,aya sedai,młodociany i młode dorosłe osoby (AYA) z rakiem,,,,"GroupId: 2839493
+216935,WORD_NOUN,,KATAKANA_HIRAGANA,,,ＡＹＡ世代,アヤせだい,,aya sedai,młodociany i młode dorosłe osoby (AYA) z rakiem,,,DUPLICATE 216971,"GroupId: 2839493
 Translate: adolescents and young adults (AYAs) with cancer"
 216936,WORD_NOUN,,KATAKANA,,,-,ジベタリアン,,jibetarian,młodzi ludzie siedzący na ziemi lub chodniku,,,,"GroupId: 1923790
 Translate: young people who sit on the ground or sidewalk (footpath)"
@@ -68949,7 +68949,7 @@ Translate: young man innocent of the ways of the world"
 216949,WORD_NOUN,,HIRAGANA,,,白け世代,しらけせだい,,shirake sedai,pokolenie młodych ludzi (zwłaszcza w latach 70.) apatycznie podchodzących do kwestii społecznych,,,,"GroupId: 1474930
 Translate: generation of young people (esp. of the 1970s) apathetic about social issues"
 216950,WORD_NOUN,,HIRAGANA,,,老少不定,ろうしょうふてい,,roushou futei,"śmierć przychodzi zarówno do starych, jak i do młodych
-niepewność życia",,,,"GroupId: 1840470
+niepewność życia",,,DUPLICATE 216977,"GroupId: 1840470
 Translate: Death comes to old and young alike
 MiscInfo: yoji
 Translate: uncertainty of life
@@ -68958,7 +68958,7 @@ MiscInfo: yoji"
 Translate: writing system using unconventional characters and symbols, esp. used by young women in texting"
 216952,WORD_NOUN,,HIRAGANA,,,手弱女,たおやめ,,taoyame,"pełna gracji młoda kobieta
 pełen wdzięku młoda kobieta
-zgrabna kobieta",ateji,,,"GroupId: 2569590
+zgrabna kobieta",ateji,,DUPLICATE 216978,"GroupId: 2569590
 Translate: graceful young woman
 MiscInfo: uk
 Translate: sylph
@@ -68968,7 +68968,8 @@ młodzi ludzie z Kioto, którzy są hałaśliwi i plotkują pod najmniejszym pre
 Translate: Kyoto's children
 Translate: Kyoto's young people, who are noisy and gossiping on the least pretext"
 216954,WORD_NOUN,,HIRAGANA,,,京童,きょうわらべ,,kyouwarabe,"dzieci z Kioto
-młodzi ludzie z Kioto, którzy są hałaśliwi i plotkują pod najmniejszym pretekstem",,,,"GroupId: 2592020
+młodzi ludzie z Kioto, którzy są hałaśliwi i plotkują pod najmniejszym pretekstem",,,"DUPLICATE 216979
+DUPLICATE 216980","GroupId: 2592020
 Translate: Kyoto's children
 Translate: Kyoto's young people, who are noisy and gossiping on the least pretext"
 216955,WORD_NOUN,,HIRAGANA,,,山椒の皮,さんしょうのかわ,,sanshou no kawa,kawałki gałęzi młodego pieprzu (używane leczniczo lub do marynowania),,,,"GroupId: 2776310
@@ -69003,3 +69004,139 @@ produkt (lub projekt), który ma przynieść duże zyski",,,,"GroupId: 2841698
 Translate: golden egg
 Translate: hard-to-come-by young talent with great promise
 Translate: product (or project) expected to bring large profits"
+216960,WORD_NOUN,,KATAKANA,,,-,ヒメウミツバメ,,himeumitsubame,nawałnik burzowy,"gatunek niewielkiego ptaka oceanicznego z rodziny nawałników, Hydrobates pelagicus",,,"GroupId: 2174030
+Translate: European storm petrel (Hydrobates pelagicus)
+MiscInfo: uk"
+216961,WORD_NOUN,,KATAKANA,,,-,オグロメジロザメ,,oguro mejirozame,rekin szary rafowy,Carcharhinus amblyrhynchos,,,"GroupId: 2553930
+Translate: blacktail reef shark (Carcharhinus amblyrhynchos, species of Indo-Pacific requiem shark)
+MiscInfo: uk
+Translate: grey reef shark
+MiscInfo: uk"
+216962,WORD_NOUN,,HIRAGANA,,,焼き餅焼き,やきもちやき,,yaki mochi yaki,zazdrosna osoba,,,,"GroupId: 1350580
+Translate: jealous person"
+216963,WORD_NOUN,,HIRAGANA,,,焼き餅やき,やきもちやき,,yaki mochi yaki,zazdrosna osoba,,,,"GroupId: 1350580
+Translate: jealous person"
+216964,WORD_NOUN,,KATAKANA_HIRAGANA,,,ヤキモチ焼き,ヤキモチやき,,yaki mochi yaki,zazdrosna osoba,,,,"GroupId: 1350580
+Translate: jealous person"
+216965,WORD_NOUN,,KATAKANA,,,-,ホソウミニナ,,hosouminina,Batillaria cumingii,,,,"GroupId: 2774910
+Translate: Japanese false cerith (Batillaria cumingii)
+MiscInfo: uk"
+216966,WORD_NOUN,,KATAKANA,,,-,スナヤツメ,,sunayatsume,minóg dalekowschodni,"euroazjatycki gatunek słodkowodnego bezżuchwowca z rodziny minogowatych, Lethenteron reissneri",,,"GroupId: 2228090
+Translate: Far Eastern brook lamprey (Lethenteron reissneri)
+MiscInfo: uk
+Translate: sand lamprey (species found in the Northwest Pacific)
+MiscInfo: uk"
+216967,WORD_NOUN,,KATAKANA,,,-,シリアゲムシ,,shiriage mushi,wojsiłki,"stara ewolucyjnie grupa prawie 1000 gatunków owadów o charakterystycznym, ryjkowatym kształcie głowy, tradycyjnie klasyfikowana w randze rzędu Mecoptera, szczególnie Panorpa japonica",,,"GroupId: 2231480
+Translate: scorpionfly (esp. the Japanese scorpionfly, Panorpa japonica)
+MiscInfo: uk
+Translate: scorpion fly
+MiscInfo: uk"
+216968,WORD_NOUN,,KATAKANA,,,-,キジハタ,,kijihata,Epinephelus akaara,gatunek ryby,,,"GroupId: 2242710
+Translate: red-spotted grouper (species of fish, Epinephelus akaara)
+MiscInfo: uk
+Translate: Hong Kong grouper
+MiscInfo: uk"
+216969,WORD_NOUN,,KATAKANA,,,-,リビアネコ,,ribia neko,afrykański żbik,"mało znane słowo, Felis lybica",,,"GroupId: 2263200
+Translate: African wildcat (Felis lybica)
+MiscInfo: uk
+MiscInfo: obsc"
+216970,WORD_NOUN,,KATAKANA,,,-,ホエジカ,,hoejika,"mundżak indyjski
+mundżak","gatunek ssaka z rodziny jeleniowatych zamieszkujący w Indiach, na półwyspie Indochońskim i archipelagu Sundajskim, Muntiacus muntjak",,,"GroupId: 2421350
+Translate: common muntjac (species of barking deer, Muntiacus muntjak)
+MiscInfo: uk
+Translate: Indian muntjac
+MiscInfo: uk"
+216971,WORD_NOUN,,KATAKANA_HIRAGANA,,,ＡＹＡ世代,エーワイエーせだい,,eewaiee sedai,młodociany i młode dorosłe osoby (AYA) z rakiem,,,DUPLICATE 216935,"GroupId: 2839493
+Translate: adolescents and young adults (AYAs) with cancer"
+216972,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,嘴が黄色い,くちばしがきいろい,,kuchibashi ga kiiroi,"żółtodziób
+młody i niedoświadczony
+mający mleko pod nosem",,,,"GroupId: 2761760
+Translate: fledgling
+Translate: young and inexperienced
+Translate: green
+Translate: wet behind the ears"
+216973,WORD_NOUN,,KATAKANA,,,-,ワカナゴ,,wakanago,młoda japońska seriola,"gatunek ryby, Seriola quinqueradiata",,,"GroupId: 2832244
+Translate: young Japanese amberjack (species of yellowtail, Seriola quinqueradiata)"
+216974,WORD_NOUN,,HIRAGANA,,,お坊っちゃま,おぼっちゃま,,obocchama,"(czyjś) syn (honoryfikatywnie)
+chłopiec (honoryfikatywnie)
+młody mistrz (honoryfikatywnie)
+zielony młody człowiek z zamożnej rodziny
+???",,,,"GroupId: 2836112
+Translate: son (of others)
+MiscInfo: hon
+Translate: boy
+MiscInfo: hon
+Translate: young master
+MiscInfo: hon
+Translate: green young man from a well-to-do family
+Translate: young man innocent of the ways of the world"
+216975,WORD_NOUN,,HIRAGANA,,,御坊ちゃま,おぼっちゃま,,obocchama,"(czyjś) syn (honoryfikatywnie)
+chłopiec (honoryfikatywnie)
+młody mistrz (honoryfikatywnie)
+zielony młody człowiek z zamożnej rodziny
+???",,,,"GroupId: 2836112
+Translate: son (of others)
+MiscInfo: hon
+Translate: boy
+MiscInfo: hon
+Translate: young master
+MiscInfo: hon
+Translate: green young man from a well-to-do family
+Translate: young man innocent of the ways of the world"
+216976,WORD_NOUN,,HIRAGANA,,,御坊っちゃま,おぼっちゃま,,obocchama,"(czyjś) syn (honoryfikatywnie)
+chłopiec (honoryfikatywnie)
+młody mistrz (honoryfikatywnie)
+zielony młody człowiek z zamożnej rodziny
+???",,,,"GroupId: 2836112
+Translate: son (of others)
+MiscInfo: hon
+Translate: boy
+MiscInfo: hon
+Translate: young master
+MiscInfo: hon
+Translate: green young man from a well-to-do family
+Translate: young man innocent of the ways of the world"
+216977,WORD_NOUN,,HIRAGANA,,,老少不定,ろうしょうふじょう,,roushoufujou,"śmierć przychodzi zarówno do starych, jak i do młodych
+niepewność życia",,,DUPLICATE 216950,"GroupId: 1840470
+Translate: Death comes to old and young alike
+MiscInfo: yoji
+Translate: uncertainty of life
+MiscInfo: yoji"
+216978,WORD_NOUN,,HIRAGANA,,,手弱女,たわやめ,,tawayame,"pełna gracji młoda kobieta
+pełen wdzięku młoda kobieta
+zgrabna kobieta",ateji,,DUPLICATE 216952,"GroupId: 2569590
+Translate: graceful young woman
+MiscInfo: uk
+Translate: sylph
+MiscInfo: uk"
+216979,WORD_NOUN,,HIRAGANA,,,京童,きょうわらんべ,,kyouwaranbe,"dzieci z Kioto
+młodzi ludzie z Kioto, którzy są hałaśliwi i plotkują pod najmniejszym pretekstem",,,"DUPLICATE 216954
+DUPLICATE 216980","GroupId: 2592020
+Translate: Kyoto's children
+Translate: Kyoto's young people, who are noisy and gossiping on the least pretext"
+216980,WORD_NOUN,,HIRAGANA,,,京童,きょうわらわ,,kyouwarawa,"dzieci z Kioto
+młodzi ludzie z Kioto, którzy są hałaśliwi i plotkują pod najmniejszym pretekstem",,,"DUPLICATE 216954
+DUPLICATE 216979","GroupId: 2592020
+Translate: Kyoto's children
+Translate: Kyoto's young people, who are noisy and gossiping on the least pretext"
+216981,WORD_NOUN,,HIRAGANA,,,さんしょうの皮,さんしょうのかわ,,sanshou no kawa,kawałki gałęzi młodego pieprzu (używane leczniczo lub do marynowania),,,,"GroupId: 2776310
+Translate: pieces of young pepper tree branch (used medicinally or for pickling)"
+216982,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,人馴れ,ひとなれ,,hitonare,"bycie przyzwyczajony do ludzie (np. dla młodych dzieci)
+bycie towarzyski
+bycie przyzwyczajony do ludzi (szczególnie o zwierzętach)
+bycie oswojony",,,,"GroupId: 1368950
+Translate: being used to people (e.g. of a young child)
+Translate: being sociable
+Translate: being used to humans (esp. animals)
+Translate: being tame"
+216983,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,人なれ,ひとなれ,,hitonare,"bycie przyzwyczajony do ludzie (np. dla młodych dzieci)
+bycie towarzyski
+bycie przyzwyczajony do ludzi (szczególnie o zwierzętach)
+bycie oswojony",,,,"GroupId: 1368950
+Translate: being used to people (e.g. of a young child)
+Translate: being sociable
+Translate: being used to humans (esp. animals)
+Translate: being tame"
