@@ -30503,8 +30503,11 @@ Translate: radio clock"
 Translate: berberine"
 207352,WORD_NOUN,,HIRAGANA,,,行動圏,こうどうけん,,koudouken,areał osobniczy,,,,"GroupId: 2813830
 Translate: home range"
-207353,WORD_NOUN,,KATAKANA,,,-,エスジス,,esujisu,sjis,,,,"GroupId: 2286040
-Translate: sjis"
+207353,WORD_NOUN,,KATAKANA,,,ＳＪＩＳ,エスジス,,esujisu,"SJIS
+Shift_JIS",system kodowania znaków w języku japońskim,,,"GroupId: 2286040
+Translate: SJIS
+Translate: Shift_JIS
+Translate: encoding system for JIS X 0208 characters"
 207354,WORD_NOUN,,KATAKANA_HIRAGANA,,,パソコン通信,パソコンつうしん,,pasokon tsuushin,"komunikacja online
 komunikacja z użyciem komputera osobistego (szczególnie z epoki sprzed internetu)
 usługa online z epoki sprzed internetu",,,,"GroupId: 1101580
@@ -69519,7 +69522,7 @@ Translate: quick to warm up (e.g. of a kettle)"
 217067,WORD_NOUN,,HIRAGANA,,,日本語文字,にほんごもじ,,nihongo moji,"japoński znak
 japońskie znaki",,,,"GroupId: 1464570
 Translate: Japanese character"
-217068,WORD_NOUN,,HIRAGANA,,,桑鳲千鳥,いかるちどり,,ikaru chidori,sieweczka długodzioba,"gatunek małego ptaka z rodziny sieweczkowatych, Charadrius placidus",,,"GroupId: 2751920
+217068,WORD_NOUN,,HIRAGANA,,,桑鳲千鳥,いかるちどり,,ikaruchi dori,sieweczka długodzioba,"gatunek małego ptaka z rodziny sieweczkowatych, Charadrius placidus",,,"GroupId: 2751920
 Translate: long-billed plover (Charadrius placidus)
 MiscInfo: uk"
 217069,WORD_NOUN,,HIRAGANA,,,蟄居,ちっきょ,,chikkyo,"prowadzenie domu
@@ -69585,7 +69588,7 @@ Translate: silk floss"
 Translate: Yuan-Dynasty Chinese-Mongolian military
 MiscInfo: obsc"
 217087,WORD_NOUN,,HIRAGANA,,,元三,がんざん,,ganzan,"noworoczny okres
-okres nowego roku",1-3 stycznia,,,"GroupId: 1260830
+okres nowego roku",1-3 stycznia,,DUPLICATE 217125,"GroupId: 1260830
 Translate: New Year's period (January 1 to 3)"
 217088,WORD_NOUN,,HIRAGANA,,,厳封,げんぷう,,genpuu,hermetyczne uszczelnienie,,,,"GroupId: 1262820
 Translate: sealing hermetically"
@@ -69630,7 +69633,7 @@ Translate: rashie"
 Translate: reminding
 Translate: reminder"
 217097,WORD_NOUN,,HIRAGANA,,,むっつり助平,むっつりすけべい,,muttsuri sukebei,"lubieżnik ze cichą powierzchownością
-lubieżnik, który nie wygląda na taką osobę",,,,"GroupId: 2646520
+lubieżnik, który nie wygląda na taką osobę",,,DUPLICATE 217132,"GroupId: 2646520
 Translate: lecher with a quiet exterior
 Translate: lecher who doesn't seem it and doesn't talk about it"
 217098,WORD_NOUN,,KATAKANA,,,-,トラブルメーカー,,toraburumeekaa,osoba sprawiająca kłopoty,ang: troublemaker,,,"GroupId: 1085950
@@ -69656,7 +69659,7 @@ Translate: inside a police station, fire station, tax office etc."
 217105,WORD_NOUN,,HIRAGANA,,,備州,びしゅう,,bishuu,Bishū,"trzy byłe prowincje Bizen, Bitchū i Bingo",,,"GroupId: 2845384
 Translate: Bishū (the three former provinces of Bizen, Bitchū and Bingo)"
 217106,WORD_NOUN,,KATAKANA,,,加農,カノン,,kanon,"działo
-armata",skrót,,,"GroupId: 2845740
+armata",skrót,,DUPLICATE 133733,"GroupId: 2845740
 Translate: cannon
 MiscInfo: abbr
 MiscInfo: uk"
@@ -69680,11 +69683,11 @@ Translate: kinsatsu (Edo period paper money)
 MiscInfo: hist
 Translate: kinsatsu (early Meiji period paper money)
 Translate: golden tablet belonging to Yama that is inscribed with the names of souls to be sent to paradise"
-217111,WORD_NOUN,,KATAKANA,,,ＰＲＩＣＥＤＯＷＮ,プライスダウン,,puraisu daun,"upust od ceny
-obniżenie ceny
-discount",,,,"GroupId: 2507090
-Translate: reduction in price
-Translate: discount"
+217111,WORD_NOUN,,HIRAGANA,,,古顔,ふるがお,,furugao,"znajoma osoba
+znajoma twarz
+???",,,,"GroupId: 1265240
+Translate: familiar face
+Translate: old timer"
 217112,WORD_NOUN,,HIRAGANA,,,蝶道,ちょうどう,,choudou,tor lotu motyla,,,,"GroupId: 2845429
 Translate: flight path of a butterfly"
 217113,WORD_NOUN,,HIRAGANA,,,答電,とうでん,,touden,"telegraficzna odpowiedź
@@ -69699,11 +69702,8 @@ Translate: excessive praise
 MiscInfo: obsc
 Translate: undeserved praise
 MiscInfo: obsc"
-217115,WORD_NOUN,,KATAKANA,,,ＳＪＩＳ,エスジス,,esujisu,"SJIS
-Shift_JIS",system kodowania znaków w języku japońskim,,,"GroupId: 2286040
-Translate: SJIS
-Translate: Shift_JIS
-Translate: encoding system for JIS X 0208 characters"
+217115,WORD_NOUN,,HIRAGANA,,,後金,あときん,,atokin,odpoczynek od płatności,,,,"GroupId: 1269580
+Translate: rest of the payment"
 217116,WORD_NOUN,,HIRAGANA,,,髐骨,ぎょうこつ,,gyoukotsu,"suszone kości
 szkielet
 marnienie",archaizm,,,"GroupId: 2841076
@@ -69723,3 +69723,61 @@ Translate: guard of honor
 Translate: guard of honour"
 217119,WORD_NOUN,,HIRAGANA,,,呼出側,よびだしがわ,,yobidashi gawa,strona wywołująca,informatyka,,,"GroupId: 2354020
 Translate: calling side"
+217120,WORD_NOUN,,KATAKANA,,,-,セラック,,serakku,szelak,"bezbarwny lakier, ang: shellac",,,"GroupId: 2017100
+Translate: shellac"
+217121,WORD_NOUN,,KATAKANA,,,-,イカルチドリ,,ikaruchi dori,sieweczka długodzioba,"gatunek małego ptaka z rodziny sieweczkowatych, Charadrius placidus",,,"GroupId: 2751920
+Translate: long-billed plover (Charadrius placidus)
+MiscInfo: uk"
+217122,WORD_NOUN,,KATAKANA,,,-,トリクイグモ,,torikui gumo,tarantula,"pająk z rodziny Theraphosidae, mało znane słowo",,,"GroupId: 2241860
+Translate: tarantula (any spider of family Theraphosidae)
+MiscInfo: uk
+MiscInfo: obsc"
+217123,WORD_NOUN,,KATAKANA,,,-,アシナガグモ,,ashinaga gumo,Tetragnatha praedonia,,,,"GroupId: 2241980
+Translate: Tetragnatha praedonia (species of long-jawed orb weaver)
+MiscInfo: uk"
+217124,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,屁を放る,へをひる,,he o hiru,puścić bąka,,,,"GroupId: 2727880
+Translate: to fart
+Translate: to break wind"
+217125,WORD_NOUN,,HIRAGANA,,,元三,がんさん,,gansan,"noworoczny okres
+okres nowego roku",1-3 stycznia,,DUPLICATE 217087,"GroupId: 1260830
+Translate: New Year's period (January 1 to 3)"
+217126,WORD_NOUN,,KATAKANA,,,-,クロウミガメ,,kuroumi game,Chelonia mydas agassizii,gatunek żółwia,,,"GroupId: 2703620
+Translate: East Pacific green turtle (Chelonia mydas agassizii)
+MiscInfo: uk
+Translate: black sea turtle
+MiscInfo: uk"
+217127,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヤマアジサイ,,yama ajisai,hortensja ogrodowa podgat. serrata,Hydrangea macrophylla podgat. serrata,,,"GroupId: 2705830
+Translate: tea-of-heaven (Hydrangea macrophylla subsp. serrata)
+MiscInfo: uk
+Translate: mountain hydrangea
+MiscInfo: uk"
+217128,WORD_NOUN,,KATAKANA,,,-,オキナワトゲネズミ,,okinawa toge nezumi,kolcoszczurek okinawski,"endemiczny gatunek gryzonia z rodziny myszowatych, Tokudaia muenninki",,,"GroupId: 2753980
+Translate: Muennink's spiny rat (Tokudaia muenninki)
+MiscInfo: uk
+Translate: Okinawa spinous country-rat
+MiscInfo: uk"
+217129,WORD_NOUN,,KATAKANA,,,-,コキクガシラコウモリ,,kokikugashirakoumori,podkowiec rogaty,"gatunek nietoperza, Rhinolophus cornutus",,,"GroupId: 2754020
+Translate: little Japanese horseshoe bat (Rhinolophus cornutus)
+MiscInfo: uk
+Translate: Japanese lesser horseshoe bat
+MiscInfo: uk"
+217130,WORD_NOUN,,KATAKANA,,,-,コマユバチ,,komayubachi,męczelkowaty,"owad należący do rodziny męczelkowatych, Braconidae",,,"GroupId: 2775330
+Translate: braconid
+MiscInfo: uk
+Translate: member of the Braconidae (family of parasitic wasps)
+MiscInfo: uk"
+217131,WORD_NOUN,,KATAKANA,,,-,ラッシュ・ガード,,rasshu gaado,"przylegająca do ciała koszulka sportowa, chroniąca przed wysypką od słońca oraz otarciami",ang: rash guard,,,"GroupId: 2830592
+Translate: rash guard
+Translate: rash vest
+Translate: rashie"
+217132,WORD_NOUN,,HIRAGANA,,,むっつり助平,むっつりすけべ,,muttsuri sukebe,"lubieżnik ze cichą powierzchownością
+lubieżnik, który nie wygląda na taką osobę",,,DUPLICATE 217097,"GroupId: 2646520
+Translate: lecher with a quiet exterior
+Translate: lecher who doesn't seem it and doesn't talk about it"
+217133,WORD_NOUN,,HIRAGANA,,,煎り煮,いりに,,iri ni,gotowanie na wolnym ogniu po usmażeniu,,,,"GroupId: 2845643
+Translate: simmering after frying"
+217134,WORD_NOUN,,HIRAGANA,,,いり煮,いりに,,iri ni,gotowanie na wolnym ogniu po usmażeniu,,,,"GroupId: 2845643
+Translate: simmering after frying"
+217135,WORD_NOUN,,HIRAGANA,,,古靴,ふるぐつ,,furugutsu,stare buty,,,,"GroupId: 1265310
+Translate: old shoes"
