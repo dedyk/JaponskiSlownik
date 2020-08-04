@@ -69957,7 +69957,7 @@ WORD_NOUN",,HIRAGANA,,,申の刻,さるのこく,,saru no koku,godzina małpy,"o
 Translate: hour of the Monkey (around 4pm, 3-5pm, or 4-6pm)"
 217185,WORD_NOUN,,KATAKANA,,,-,ヴァルキリー,,varukirii,Walkiria,"bogini z mitologii nordyckiej, ang: Valkyrie",,,"GroupId: 1929500
 Translate: Valkyrie"
-217186,WORD_NOUN,,HIRAGANA,,,宿曜,すくよう,,sukuyou,forma astrologii oparta na Xiuyaojing,,,,"GroupId: 2177870
+217186,WORD_NOUN,,HIRAGANA,,,宿曜,すくよう,,sukuyou,forma astrologii oparta na Xiuyaojing,,,DUPLICATE 217201,"GroupId: 2177870
 Translate: form of astrology based on the Xiuyaojing"
 217187,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,午の刻,うまのこく,,uma no koku,godzina konia,"około południa, 11-13 lub 12-14 godzina, archaizm",,,"GroupId: 2844884
@@ -69977,3 +69977,50 @@ MiscInfo: arch"
 WORD_NOUN",,HIRAGANA,,,戌の刻,いぬのこく,,inu no koku,godzina psa,"około 20, 19-21 lub 20-22 godzina, archaizm",,,"GroupId: 2844888
 Translate: hour of the Dog (around 8pm, 7-9pm, or 8-10pm)
 MiscInfo: arch"
+217191,WORD_VERB_RU,,HIRAGANA,,,結び合わせる,むすびあわせる,,musubi awaseru,"wiązać
+związać
+łączyć
+złączyć
+korelować",,,,"GroupId: 1254620
+Translate: to tie
+Translate: to link
+Translate: to connect
+Translate: to correlate"
+217192,WORD_NOUN,,HIRAGANA,,,金銭登録器,きんせんとうろくき,,kinsen tourokuki,kasa fiskalna,,,,"GroupId: 1682510
+Translate: cash register"
+217193,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,秋蒔き,あきまき,,aki maki,jesienny siew,,,,"GroupId: 1734130
+Translate: autumn sowing
+Translate: fall sowing"
+217194,WORD_NOUN,,KATAKANA,,,-,カリフォルニアネコザメ,,kariforunia neko zame,Heterodontus francisci,gatunek morskiej ryby spodoustej z rodziny rogatkowatych,,,"GroupId: 2785210
+Translate: horn shark (Heterodontus francisci, bullhead shark from the Eastern Pacific)
+MiscInfo: uk
+Translate: Californian bullhead shark
+MiscInfo: uk"
+217195,WORD_NOUN,,KATAKANA,,,-,コブハクジラ,,kobuhakujira,"dziobowal zwartopyski
+wal Blainville’a","gatunek ssaka z rodziny zyfiowatych, Mesoplodon densirostris",,,"GroupId: 2788580
+Translate: Blainville's beaked whale (Mesoplodon densirostris)
+MiscInfo: uk
+Translate: dense-beaked whale
+MiscInfo: uk"
+217196,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,バハモンドオウギハクジラ,,bahamondo ougihakujira,dziobowal łopatozębny,"gatunek wieloryba, Mesoplodon traversii",,,"GroupId: 2788680
+Translate: spade-toothed whale (Mesoplodon traversii)
+MiscInfo: uk
+Translate: Bahamonde's beaked whale
+MiscInfo: uk"
+217197,WORD_NOUN,,KATAKANA,,,-,イリオモテキクガシラコウモリ,,iriomoteki kugashira koumori,Rhinolophus imaizumii,gatunek nietoperza,,,"GroupId: 2800610
+Translate: Imaizumi's horseshoe bat (Rhinolophus imaizumii)
+MiscInfo: uk
+Translate: Iriomote horseshoe bat
+MiscInfo: uk"
+217198,WORD_NOUN,,HIRAGANA,,,立箸,たてばし,,tate bashi,wbijanie pałeczek prosto do miski z ryżem,naruszenie etykiety,,,"GroupId: 2770590
+Translate: sticking chopsticks upright into a bowl of rice (a breach of etiquette)"
+217199,WORD_EXPRESSION,,HIRAGANA,,,有り難うございました,ありがとうございました,,arigatou gozaimashita,dziękuję,"używane za przeszłe działania, uprzejmie",,,"GroupId: 2845468
+Translate: thank you
+MiscInfo: pol
+MiscInfo: uk
+AdditionalInfo: used for past actions"
+217200,WORD_NOUN,,KATAKANA,,,-,バルキリー,,barukirii,Walkiria,"bogini z mitologii nordyckiej, ang: Valkyrie",,,"GroupId: 1929500
+Translate: Valkyrie"
+217201,WORD_NOUN,,HIRAGANA,,,宿曜,しゅくよう,,shukuyou,forma astrologii oparta na Xiuyaojing,,,DUPLICATE 217186,"GroupId: 2177870
+Translate: form of astrology based on the Xiuyaojing"
