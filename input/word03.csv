@@ -70074,7 +70074,7 @@ Translate: persuasiveness
 MiscInfo: yoji
 Translate: skilled in the art of persuasion
 MiscInfo: yoji"
-217217,WORD_NOUN,,HIRAGANA,,,片袖机,かたそでづくえ,,katasodedukue,biurko z szeregiem szuflad po jednej stronie,,,,"GroupId: 1511730
+217217,WORD_NOUN,,HIRAGANA,,,片袖机,かたそでづくえ,,katasodedukue,biurko z szeregiem szuflad po jednej stronie,,,DUPLICATE 217259,"GroupId: 1511730
 Translate: desk with a tier of drawers on one side"
 217218,WORD_NOUN,,HIRAGANA,,,魂不死説,たましいふしせつ,,tamashii fushisetsu,(teoria) nieśmiertelności duszy,mało znane słowo,,,"GroupId: 2608840
 Translate: (theory of) the immortality of the soul
@@ -70160,7 +70160,7 @@ MiscInfo: hist
 Translate: Heian period poetry, paintings, etc. comparison game
 MiscInfo: hist"
 217237,WORD_NOUN,,HIRAGANA,,,末孫,まっそん,,masson,"potomek
-zstępny",,,,"GroupId: 1832920
+zstępny",,,DUPLICATE 217274,"GroupId: 1832920
 Translate: descendant"
 217238,WORD_NOUN,,HIRAGANA,,,防舷材,ぼうげんざい,,bougenzai,odbijacz,przedmiot zabezpieczający burtę i nabrzeże przed uszkodzeniami na skutek tarcia statku o nabrzeże,,,"GroupId: 2845704
 Translate: fender (on a boat)"
@@ -70190,9 +70190,9 @@ Translate: man"
 Translate: kami of the three main Kumano shrines"
 217246,WORD_NOUN,,HIRAGANA,,,湯疲れ,ゆづかれ,,yudukare,zmęczenie spowodowane długotrwałą gorącą kąpielą,,,,"GroupId: 1774370
 Translate: weariness caused by prolonged hot bath"
-217247,WORD_NOUN,,HIRAGANA,,,床店,とこみせ,,tokomise,budka lub stragan przed domem,,,,"GroupId: 1799300
+217247,WORD_NOUN,,HIRAGANA,,,床店,とこみせ,,toko mise,budka lub stragan przed domem,,,,"GroupId: 1799300
 Translate: booth or stall in front of a home"
-217248,WORD_NOUN,,KATAKANA_HIRAGANA,,,ブラウザ拡張機能,ブラウザかくちょうきのう,,burauza kakuchoukinou,rozszerzenie do przeglądarki internetowej,,,,"GroupId: 2830672
+217248,WORD_NOUN,,KATAKANA_HIRAGANA,,,ブラウザ拡張機能,ブラウザかくちょうきのう,,burauza kakuchou kinou,rozszerzenie do przeglądarki internetowej,,,,"GroupId: 2830672
 Translate: (web) browser extension"
 217249,WORD_NOUN,,HIRAGANA,,,相対運動,そうたいうんどう,,soutai undou,ruch względny,,,,"GroupId: 2105730
 Translate: relative motion"
@@ -70217,5 +70217,97 @@ Translate: GPT"
 Translate: (being a) fan of a single member of a music group (esp. idol group)
 MiscInfo: sl"
 217256,WORD_NOUN,,HIRAGANA,,,片山貝,かたやまがい,,katayamagai,Oncomelania hupensis nosophora,gatunek słodkowodnego ślimaka,,,"GroupId: 2828441
+Translate: Oncomelania hupensis nosophora (species of tropical freshwater snail)
+MiscInfo: uk"
+217257,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,睨みがきく,にらみがきく,,nirami ga kiku,mieć władzę (nad),mało znane słowo,,,"GroupId: 2223700
+Translate: to have authority (over)
+MiscInfo: obsc"
+217258,WORD_NOUN,,HIRAGANA,,,天盃,てんぱい,,tenpai,"cesarski puchar
+puchar od cesarza",,,,"GroupId: 1598480
+Translate: emperor's gift cup"
+217259,WORD_NOUN,,HIRAGANA,,,片袖机,かたそでつくえ,,katasodetsukue,biurko z szeregiem szuflad po jednej stronie,,,DUPLICATE 217217,"GroupId: 1511730
+Translate: desk with a tier of drawers on one side"
+217260,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,シナノホオヒゲコウモリ,,shinano hoohige koumori,Myotis ikonnikovi hosonoi,gatunek nietoperza,,,"GroupId: 2800730
+Translate: Shinano whiskered bat (Myotis ikonnikovi hosonoi)
+MiscInfo: uk
+Translate: Hosono's myotis
+MiscInfo: uk"
+217261,WORD_NOUN,,KATAKANA,,,-,ヒメダカ,,himedaka,"himedaka
+ryżanka japońska
+ryżówka japońska
+medaka, ryżówka","euryhaliczny i amfidromiczny gatunek małej ryby belonokształtnej z rodziny kaczorkowatych, Oryzias latipes",,,"GroupId: 2815350
+Translate: himedaka
+MiscInfo: uk
+Translate: gold-colored breed of the Japanese rice fish (Oryzias latipes)
+MiscInfo: uk"
+217262,WORD_NOUN,,KATAKANA,,,-,ヒカゲヘゴ,,hika gehego,Cyathea lepifera,roślina,,,"GroupId: 2828332
+Translate: brush pot tree (Cyathea lepifera)
+MiscInfo: uk
+Translate: flying spider-monkey tree fern
+MiscInfo: uk"
+217263,WORD_NOUN,,HIRAGANA,,,不喰芋,くわずいも,,kuwazu imo,alokazja wonna,"roślina, Alocasia odora",,,"GroupId: 2828921
+Translate: night-scented lily (Alocasia odora)
+MiscInfo: uk
+Translate: giant upright elephant ear
+MiscInfo: uk"
+217264,WORD_NOUN,,KATAKANA,,,-,クワズイモ,,kuwazu imo,alokazja wonna,"roślina, Alocasia odora",,,"GroupId: 2828921
+Translate: night-scented lily (Alocasia odora)
+MiscInfo: uk
+Translate: giant upright elephant ear
+MiscInfo: uk"
+217265,WORD_EXPRESSION,,KATAKANA,,,-,ノーブレスオブリージュ,,nooburesu oburiiju,szlachectwo zobowiązuje,ang: noblesse oblige,,,"GroupId: 2829781
+Translate: noblesse oblige"
+217266,WORD_EXPRESSION,,KATAKANA,,,-,ノブレスオブリージ,,noburesu oburiiji,szlachectwo zobowiązuje,ang: noblesse oblige,,,"GroupId: 2829781
+Translate: noblesse oblige"
+217267,WORD_EXPRESSION,,KATAKANA,,,-,ノーブレスオブリージ,,nooburesu oburiiji,szlachectwo zobowiązuje,ang: noblesse oblige,,,"GroupId: 2829781
+Translate: noblesse oblige"
+217268,WORD_EXPRESSION,,KATAKANA,,,-,ノブレス・オブリージュ,,noburesu oburiiju,szlachectwo zobowiązuje,ang: noblesse oblige,,,"GroupId: 2829781
+Translate: noblesse oblige"
+217269,WORD_EXPRESSION,,KATAKANA,,,-,ノーブレス・オブリージュ,,nooburesu oburiiju,szlachectwo zobowiązuje,ang: noblesse oblige,,,"GroupId: 2829781
+Translate: noblesse oblige"
+217270,WORD_EXPRESSION,,KATAKANA,,,-,ノブレス・オブリージ,,noburesu oburiiji,szlachectwo zobowiązuje,ang: noblesse oblige,,,"GroupId: 2829781
+Translate: noblesse oblige"
+217271,WORD_EXPRESSION,,KATAKANA,,,-,ノーブレス・オブリージ,,nooburesu oburiiji,szlachectwo zobowiązuje,ang: noblesse oblige,,,"GroupId: 2829781
+Translate: noblesse oblige"
+217272,WORD_NOUN,,HIRAGANA,,,物合せ,ものあわせ,,mono awase,"mono-awase
+z okresu Heian konkurs poezji, malarstwa i etc",,,,"GroupId: 2845534
+Translate: mono-awase
+MiscInfo: hist
+Translate: Heian period poetry, paintings, etc. comparison game
+MiscInfo: hist"
+217273,WORD_NOUN,,HIRAGANA,,,物合,ものあわせ,,mono awase,"mono-awase
+z okresu Heian konkurs poezji, malarstwa i etc",,,,"GroupId: 2845534
+Translate: mono-awase
+MiscInfo: hist
+Translate: Heian period poetry, paintings, etc. comparison game
+MiscInfo: hist"
+217274,WORD_NOUN,,HIRAGANA,,,末孫,ばっそん,,basson,"potomek
+zstępny",,,DUPLICATE 217237,"GroupId: 1832920
+Translate: descendant"
+217275,WORD_NOUN,,KATAKANA,,,-,アメリカンソース,,amerikan soosu,"sauce américaine
+amerykański sos","przepis z klasycznej francuskiej kuchni, zawierający posiekaną cebulę, pomidory, białe wino, brandy, sól, pieprz kajeński, masło i bulion rybny",,,"GroupId: 1925940
+Translate: sauce américaine
+Translate: American sauce"
+217276,WORD_NOUN,,KATAKANA,,,-,アメリケーヌ・ソース,,amerikeenu soosu,"sauce américaine
+amerykański sos","przepis z klasycznej francuskiej kuchni, zawierający posiekaną cebulę, pomidory, białe wino, brandy, sól, pieprz kajeński, masło i bulion rybny",,,"GroupId: 1925940
+Translate: sauce américaine
+Translate: American sauce"
+217277,WORD_NOUN,,KATAKANA,,,-,アメリカン・ソース,,amerikan soosu,"sauce américaine
+amerykański sos","przepis z klasycznej francuskiej kuchni, zawierający posiekaną cebulę, pomidory, białe wino, brandy, sól, pieprz kajeński, masło i bulion rybny",,,"GroupId: 1925940
+Translate: sauce américaine
+Translate: American sauce"
+217278,WORD_NOUN,,KATAKANA,,,-,ハリラヤ・プアサ,,hari raya puasa,"Hari Raya Pausa
+Id al-Fitr",święto dziękczynienia obchodzone w islamie na zakończenie świętego miesiąca postu – ramadanu,,,"GroupId: 2840182
+Translate: Hari Raya Pausa (Islamic holiday)
+Translate: Eid al-Fitr
+Translate: Festival of Breaking the Fast"
+217279,WORD_NOUN,,HIRAGANA,,,とこ店,とこみせ,,toko mise,budka lub stragan przed domem,,,,"GroupId: 1799300
+Translate: booth or stall in front of a home"
+217280,WORD_NOUN,,HIRAGANA,,,床見世,とこみせ,,toko mise,budka lub stragan przed domem,,,,"GroupId: 1799300
+Translate: booth or stall in front of a home"
+217281,WORD_NOUN,,KATAKANA_HIRAGANA,,,ブラウザー拡張機能,ブラウザーかくちょうきのう,,burauzaa kakuchou kinou,rozszerzenie do przeglądarki internetowej,,,,"GroupId: 2830672
+Translate: (web) browser extension"
+217282,WORD_NOUN,,KATAKANA,,,-,カタヤマガイ,,katayamagai,Oncomelania hupensis nosophora,gatunek słodkowodnego ślimaka,,,"GroupId: 2828441
 Translate: Oncomelania hupensis nosophora (species of tropical freshwater snail)
 MiscInfo: uk"
