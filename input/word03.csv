@@ -70661,13 +70661,13 @@ Translate: Syriac (language)
 Translate: Syriac Aramaic"
 217371,WORD_NOUN,,HIRAGANA,,,接続要求,せつぞくようきゅう,,setsuzoku youkyuu,żądanie połączenia,informatyka,,,"GroupId: 2369150
 Translate: connection request"
-217372,WORD_NOUN,,HIRAGANA,,,姿造り,すがたづくり,,sugatadukuri,"sashimi przygotowane z żywej ryby, ułożone w oryginalnym kształcie",,,,"GroupId: 1307750
+217372,WORD_NOUN,,HIRAGANA,,,姿造り,すがたづくり,,sugata dukuri,"sashimi przygotowane z żywej ryby, ułożone w oryginalnym kształcie",,,,"GroupId: 1307750
 Translate: sashimi prepared from live fish, arranged in its original shape"
 217373,WORD_NOUN,,HIRAGANA,,,靴脱ぎ,くつぬぎ,,kutsunugi,"miejsce, w którym można zdjąć buty przed wejściem do domu",,,,"GroupId: 1845950
 Translate: place where one can remove one's shoes before entering a house"
 217374,WORD_NOUN,,HIRAGANA,,,住民投票条例,じゅうみんとうひょうじょうれい,,juumin touhyou jourei,zarządzenie o publicznym referendum,,,,"GroupId: 2660960
 Translate: public referendum ordinance"
-217375,WORD_ADJECTIVE_I,,HIRAGANA,,,坊主くさい,ぼうずくさい,,bouzukusai,"zbyt pobożny
+217375,WORD_ADJECTIVE_I,,HIRAGANA,,,坊主くさい,ぼうずくさい,,bouzu kusai,"zbyt pobożny
 świętoszkowaty
 kapłański
 mniszy",,,,"GroupId: 2720180
@@ -70727,16 +70727,16 @@ Translate: miscellaneous news"
 217394,WORD_NOUN,,HIRAGANA,,,傘屋,かさや,,kasaya,sklep z parasolkami,,,,"GroupId: 1301950
 Translate: umbrella shop"
 217395,WORD_NOUN,,HIRAGANA,,,笑い茸,わらいたけ,,warai take,"kołpaczek mierzwiowy
-kołpaczek motylkowaty","gatunek grzybów z rzędu pieczarkowców, Panaeolus papilionaceus",,,"GroupId: 1351330
+kołpaczek motylkowaty","gatunek grzybów z rzędu pieczarkowców, Panaeolus papilionaceus",,DUPLICATE 217430,"GroupId: 1351330
 Translate: Panaeolus papilionaceus (species of poisonous mushroom)
 MiscInfo: uk"
-217396,WORD_NOUN,,HIRAGANA,,,弁慶蟹,べんけいがに,,benkeigani,Sesarmops intermedium,gatunek kraba,,,"GroupId: 1512790
+217396,WORD_NOUN,,HIRAGANA,,,弁慶蟹,べんけいがに,,benkei gani,Sesarmops intermedium,gatunek kraba,,,"GroupId: 1512790
 Translate: Sesarmops intermedium (species of grapsoid crab)
 MiscInfo: uk"
 217397,WORD_NOUN,,HIRAGANA,,,鸚鵡貝,おうむがい,,oumugai,Nautilus pompilius,,,,"GroupId: 1575150
 Translate: chambered nautilus (esp. species Nautilus pompilius)
 MiscInfo: uk"
-217398,WORD_NOUN,,HIRAGANA,,,麝香鼠,じゃこうねずみ,,jakounezumi,"ryjówek domowy
+217398,WORD_NOUN,,HIRAGANA,,,麝香鼠,じゃこうねずみ,,jakou nezumi,"ryjówek domowy
 ryjówka domowa","gatunek owadożernego ssaka z rodziny ryjówkowatych, Suncus murinus",,,"GroupId: 1575240
 Translate: Asian house shrew (Suncus murinus)
 MiscInfo: uk"
@@ -70826,3 +70826,96 @@ Translate: global variable"
 Translate: supersymmetric particle"
 217424,WORD_NOUN,,HIRAGANA_KATAKANA,,,天正カルタ,てんしょうカルタ,,tenshou karuta,portugalska gra w karty popularna w Japonii pod koniec 16-go wieku,,,,"GroupId: 2430390
 Translate: Portuguese card game popular in Japan during the late 16th century"
+217425,WORD_NOUN,,HIRAGANA,,,姿作り,すがたづくり,,sugata dukuri,"sashimi przygotowane z żywej ryby, ułożone w oryginalnym kształcie",,,,"GroupId: 1307750
+Translate: sashimi prepared from live fish, arranged in its original shape"
+217426,WORD_NOUN,,HIRAGANA,,,沓脱ぎ,くつぬぎ,,kutsunugi,"miejsce, w którym można zdjąć buty przed wejściem do domu",,,,"GroupId: 1845950
+Translate: place where one can remove one's shoes before entering a house"
+217427,WORD_NOUN,,HIRAGANA,,,沓脱,くつぬぎ,,kutsunugi,"miejsce, w którym można zdjąć buty przed wejściem do domu",,,,"GroupId: 1845950
+Translate: place where one can remove one's shoes before entering a house"
+217428,WORD_ADJECTIVE_I,,HIRAGANA,,,坊主臭い,ぼうずくさい,,bouzu kusai,"zbyt pobożny
+świętoszkowaty
+kapłański
+mniszy",,,,"GroupId: 2720180
+Translate: overly pious
+Translate: sanctimonious
+Translate: priestly
+Translate: monkish"
+217429,WORD_NOUN,,HIRAGANA,,,井宿,ちちりぼし,,chichiri boshi,chiński gwiazdozbiór “studni”,jeden z 28 domów,,,"GroupId: 2248010
+Translate: Chinese ""Well"" constellation (one of the 28 mansions)"
+217430,WORD_NOUN,,HIRAGANA,,,笑い茸,わらいだけ,,warai dake,"kołpaczek mierzwiowy
+kołpaczek motylkowaty","gatunek grzybów z rzędu pieczarkowców, Panaeolus papilionaceus",,DUPLICATE 217395,"GroupId: 1351330
+Translate: Panaeolus papilionaceus (species of poisonous mushroom)
+MiscInfo: uk"
+217431,WORD_NOUN,,HIRAGANA,,,笑い蕈,わらいたけ,,warai take,"kołpaczek mierzwiowy
+kołpaczek motylkowaty","gatunek grzybów z rzędu pieczarkowców, Panaeolus papilionaceus",,DUPLICATE 217432,"GroupId: 1351330
+Translate: Panaeolus papilionaceus (species of poisonous mushroom)
+MiscInfo: uk"
+217432,WORD_NOUN,,HIRAGANA,,,笑い蕈,わらいだけ,,warai dake,"kołpaczek mierzwiowy
+kołpaczek motylkowaty","gatunek grzybów z rzędu pieczarkowców, Panaeolus papilionaceus",,DUPLICATE 217431,"GroupId: 1351330
+Translate: Panaeolus papilionaceus (species of poisonous mushroom)
+MiscInfo: uk"
+217433,WORD_NOUN,,HIRAGANA,,,笑茸,わらいたけ,,warai take,"kołpaczek mierzwiowy
+kołpaczek motylkowaty","gatunek grzybów z rzędu pieczarkowców, Panaeolus papilionaceus",,DUPLICATE 217434,"GroupId: 1351330
+Translate: Panaeolus papilionaceus (species of poisonous mushroom)
+MiscInfo: uk"
+217434,WORD_NOUN,,HIRAGANA,,,笑茸,わらいだけ,,warai dake,"kołpaczek mierzwiowy
+kołpaczek motylkowaty","gatunek grzybów z rzędu pieczarkowców, Panaeolus papilionaceus",,DUPLICATE 217433,"GroupId: 1351330
+Translate: Panaeolus papilionaceus (species of poisonous mushroom)
+MiscInfo: uk"
+217435,WORD_NOUN,,KATAKANA,,,-,ワライタケ,,warai take,"kołpaczek mierzwiowy
+kołpaczek motylkowaty","gatunek grzybów z rzędu pieczarkowców, Panaeolus papilionaceus",,,"GroupId: 1351330
+Translate: Panaeolus papilionaceus (species of poisonous mushroom)
+MiscInfo: uk"
+217436,WORD_NOUN,,KATAKANA,,,-,ワライダケ,,warai dake,"kołpaczek mierzwiowy
+kołpaczek motylkowaty","gatunek grzybów z rzędu pieczarkowców, Panaeolus papilionaceus",,,"GroupId: 1351330
+Translate: Panaeolus papilionaceus (species of poisonous mushroom)
+MiscInfo: uk"
+217437,WORD_NOUN,,KATAKANA,,,-,ベンケイガニ,,benkei gani,Sesarmops intermedium,gatunek kraba,,,"GroupId: 1512790
+Translate: Sesarmops intermedium (species of grapsoid crab)
+MiscInfo: uk"
+217438,WORD_NOUN,,KATAKANA,,,-,オウムガイ,,oumugai,Nautilus pompilius,,,,"GroupId: 1575150
+Translate: chambered nautilus (esp. species Nautilus pompilius)
+MiscInfo: uk"
+217439,WORD_NOUN,,KATAKANA,,,-,ジャコウネズミ,,jakou nezumi,"ryjówek domowy
+ryjówka domowa","gatunek owadożernego ssaka z rodziny ryjówkowatych, Suncus murinus",,,"GroupId: 1575240
+Translate: Asian house shrew (Suncus murinus)
+MiscInfo: uk"
+217440,WORD_NOUN,,KATAKANA,,,-,ウスユキソウ,,usuyukisou,Leontopodium japonicum,roślina,,,"GroupId: 1690560
+Translate: Leontopodium japonicum (species of perennial closely related to edelweiss)
+MiscInfo: uk"
+217441,WORD_NOUN,,HIRAGANA,,,超っ早,ちょっぱや,,choppaya,"bardzo szybki
+bardzo wcześnie",slang,,,"GroupId: 2118750
+Translate: very fast
+MiscInfo: sl
+MiscInfo: uk
+Translate: very early
+MiscInfo: sl
+MiscInfo: uk"
+217442,WORD_NOUN,,KATAKANA,,,-,チョッパヤ,,choppaya,"bardzo szybki
+bardzo wcześnie",slang,,,"GroupId: 2118750
+Translate: very fast
+MiscInfo: sl
+MiscInfo: uk
+Translate: very early
+MiscInfo: sl
+MiscInfo: uk"
+217443,WORD_NOUN,,HIRAGANA,,,蝋燭の心,ろうそくのしん,,rousoku no shin,knot świecy,,,,"GroupId: 1916930
+Translate: wick of a candle"
+217444,WORD_NOUN,,KATAKANA_HIRAGANA,,,ローソクの芯,ローソクのしん,,roosoku no shin,knot świecy,,,,"GroupId: 1916930
+Translate: wick of a candle"
+217445,WORD_NOUN,,KATAKANA,,,-,エコーロケーション,,ekoorokeeshon,echolokacja,"sposób ustalania przez niektóre organizmy żywe swego położenia względem otaczających je przedmiotów, ang: echolocation",,,"GroupId: 2610170
+Translate: echolocation"
+217446,WORD_NOUN,,HIRAGANA,,,沖縄蕎麦,おきなわそば,,okinawa soba,soba z Okinawy,gruby makaron podawany w zupie wieprzowej,,,"GroupId: 2678700
+Translate: Okinawa soba (thick noodles served in a pork soup)"
+217447,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,勘のよい,かんのよい,,kan no yoi,"szybki w pojmowaniu
+spostrzegawczy
+wnikliwy
+intuicyjny",,,,"GroupId: 2827723
+Translate: quick on the uptake
+Translate: perceptive
+Translate: intuitive"
+217448,WORD_NOUN,,KATAKANA,,,-,ジュセイトウ,,juseitou,"brzoskwinia zwyczajna
+brzoskwinia właściwa","gatunek drzewa należący do rodziny różowatych, Prunus persica odm. densa",,,"GroupId: 2444510
+Translate: Prunus persica var. densa (Chinese variety of peach)
+MiscInfo: uk"
