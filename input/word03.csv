@@ -71245,7 +71245,7 @@ MiscInfo: obsc"
 Translate: audience participation program (programme)"
 217528,WORD_NOUN,,HIRAGANA,,,箱枕,はこまくら,,hakomakura,poduszka z drewnianą podstawą w kształcie pudełka,,,,"GroupId: 1749340
 Translate: pillow with a box-shaped wooden base"
-217529,WORD_NOUN,,HIRAGANA,,,包み金,つつみがね,,tsutsumi gane,napiwek pieniężny owinięty w papier,,,,"GroupId: 1598010
+217529,WORD_NOUN,,HIRAGANA,,,包み金,つつみがね,,tsutsumi gane,napiwek pieniężny owinięty w papier,,,DUPLICATE 217588,"GroupId: 1598010
 Translate: money tip wrapped in paper"
 217530,WORD_NOUN,,HIRAGANA,,,選択状態,せんたくじょうたい,,sentaku joutai,"warunek wyboru
 warunki wyboru",,,,"GroupId: 1392340
@@ -71274,7 +71274,7 @@ Translate: automobile mechanic
 Translate: auto mechanic
 Translate: car mechanic
 Translate: garage mechanic"
-217537,WORD_NOUN,,KATAKANA,,,メッセンジャーＲＮＡ,メッセンジャーアールエヌエー,,messenjaa aaruenuee,"mRNA
+217537,WORD_NOUN,,KATAKANA_EXCEPTION,,,メッセンジャーＲＮＡ,メッセンジャーアールエヌエー,,messenjaa aaruenuee,"mRNA
 informacyjny RNA
 matrycowy RNA
 przekaźnikowy RNA","rodzaj kwasu rybonukleinowego, którego funkcją jest przenoszenie informacji genetycznej o sekwencji poszczególnych polipeptydów z genów do aparatu translacyjnego, ang: messenger RNA",,,"GroupId: 2196240
@@ -71291,7 +71291,7 @@ Translate: mouse
 MiscInfo: arch
 AdditionalInfo: euph. used during the first three days of the year"
 217541,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,遠慮会釈もない,えんりょえしゃくもない,,enryoeshakumonai,"nieliczący się z innymi
+WORD_EXPRESSION",,HIRAGANA,,,遠慮会釈もない,えんりょえしゃくもない,,enryoe shaku mo nai,"nieliczący się z innymi
 bezlitosny
 bezwzględny
 okrutny
@@ -71317,7 +71317,7 @@ Translate: document holder"
 217546,WORD_NOUN,,HIRAGANA,,,現地着,げんちちゃく,,genchichaku,przybycie na miejsce,skrót,,,"GroupId: 2118950
 Translate: arrival on location
 MiscInfo: abbr"
-217547,WORD_NOUN,,HIRAGANA,,,借越,かりこし,,karikoshi,"niespłacony dług
+217547,WORD_NOUN,,HIRAGANA,,,借越,かりこし,,kari koshi,"niespłacony dług
 debet",,,,"GroupId: 1323580
 Translate: outstanding debt
 Translate: overdraft"
@@ -71458,7 +71458,7 @@ Translate: to pierce deep inside (e.g. cold)"
 kobieta wojownik",historyczny termin,,,"GroupId: 2845712
 Translate: female warrior
 MiscInfo: hist"
-217579,WORD_NOUN,,HIRAGANA,,,敷引,しきびき,,shikibiki,"bezzwrotna opłata restauracyjna (przy wyprowadzaniu się z lokalu)
+217579,WORD_NOUN,,HIRAGANA,,,敷引,しきびき,,shiki biki,"bezzwrotna opłata restauracyjna (przy wyprowadzaniu się z lokalu)
 pieniądze pobrane z depozytu",,,,"GroupId: 2845494
 Translate: non-refundable restoration fee (when moving out of a property)
 Translate: money withheld from a deposit"
@@ -71500,6 +71500,126 @@ niemający wspomnień z",,,,"GroupId: 2842023
 Translate: not in one's recollection
 Translate: having no recollection (of)
 Translate: having no memory (of)"
-217587,WORD_NOUN,,HIRAGANA,,,羯磨,かつま,,katsuma,karma,"buddyzm, czytane jako かつま w sekcie Tendai i こんま w Shingon, Ritsu",,,"GroupId: 2845680
+217587,WORD_NOUN,,HIRAGANA,,,羯磨,かつま,,katsuma,karma,"buddyzm, czytane jako かつま w sekcie Tendai i こんま w Shingon, Ritsu",,DUPLICATE 217611,"GroupId: 2845680
+Translate: karma
+AdditionalInfo: read as かつま in the Tendai sect, etc.; as こんま in Shingon, Ritsu, etc."
+217588,WORD_NOUN,,HIRAGANA,,,包み金,つつみきん,,tsutsumi kin,napiwek pieniężny owinięty w papier,,,DUPLICATE 217529,"GroupId: 1598010
+Translate: money tip wrapped in paper"
+217589,WORD_NOUN,,HIRAGANA,,,包金,つつみがね,,tsutsumi gane,napiwek pieniężny owinięty w papier,,,DUPLICATE 217590,"GroupId: 1598010
+Translate: money tip wrapped in paper"
+217590,WORD_NOUN,,HIRAGANA,,,包金,つつみきん,,tsutsumi kin,napiwek pieniężny owinięty w papier,,,DUPLICATE 217589,"GroupId: 1598010
+Translate: money tip wrapped in paper"
+217591,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,遠慮会釈も無い,えんりょえしゃくもない,,enryoe shaku mo nai,"nieliczący się z innymi
+bezlitosny
+bezwzględny
+okrutny
+niemający skrupułów",często jako 遠慮会釈もなく,,,"GroupId: 2766460
+Translate: inconsiderate
+AdditionalInfo: often as 遠慮会釈もなく
+Translate: ruthless
+AdditionalInfo: often as 遠慮会釈もなく
+Translate: merciless
+AdditionalInfo: often as 遠慮会釈もなく
+Translate: lacking compunction
+AdditionalInfo: often as 遠慮会釈もなく"
+217592,WORD_NOUN,,KATAKANA,,,-,アイタデ,,aitade,rdest barwierski,"gatunek roślin jednorocznych z rodziny rdestowatych, Persicaria tinctoria, używany do produkcji barwnika indygo",,,"GroupId: 2691370
+Translate: dyer's knotweed (Persicaria tinctoria, used to produce indigo dye)
+MiscInfo: uk"
+217593,WORD_NOUN,,HIRAGANA,,,借り越し,かりこし,,kari koshi,"niespłacony dług
+debet",,,,"GroupId: 1323580
+Translate: outstanding debt
+Translate: overdraft"
+217594,WORD_NOUN,,HIRAGANA,,,借越し,かりこし,,kari koshi,"niespłacony dług
+debet",,,,"GroupId: 1323580
+Translate: outstanding debt
+Translate: overdraft"
+217595,WORD_NOUN,,KATAKANA,,,-,アカゲラ,,akagera,"dzięcioł duży
+dzięcioł pstry większy","gatunek średniego ptaka z rodziny dzięciołowatych, Dendrocopos major",,,"GroupId: 1829200
+Translate: great spotted woodpecker (Dendrocopos major)
+MiscInfo: uk"
+217596,WORD_NOUN,,KATAKANA,,,-,ベニマシコ,,benimashiko,giluszek,"gatunek ptaka, Uragus sibiricus",,,"GroupId: 1837100
+Translate: long-tailed rosefinch (Uragus sibiricus)
+MiscInfo: uk"
+217597,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,コガタアカイエカ,,kogataakaieka,Culex tritaeniorhynchus,gatunek owada,,,"GroupId: 1876180
+Translate: Culex tritaeniorhynchus (species of mosquito)
+MiscInfo: uk"
+217598,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,序でが有る,ついでがある,,tsuide ga aru,mieć okazję do zrobienia,,,,"GroupId: 1894270
+Translate: to have occasion to do
+MiscInfo: uk"
+217599,WORD_NOUN,,KATAKANA,,,-,アメリカグマ,,amerika guma,"niedźwiedź czarny
+baribal
+niedźwiedź amerykański","gatunek drapieżnego ssaka z rodziny niedźwiedziowatych, Ursus americanus",,,"GroupId: 1961050
+Translate: American black bear (Ursus americanus)
+MiscInfo: uk"
+217600,WORD_NOUN,,KATAKANA,,,-,インフォテインメント,,infoteinmento,infotainment,"gatunek dziennikarstwa, łączący w sobie informację (ang. information) i rozrywkę (ang. entertainment), termin używany jest również na określenie systemów (elektronika + software) dostarczających informację połączoną z rozrywką",,,"GroupId: 2283980
+Translate: infotainment"
+217601,WORD_NOUN,,KATAKANA,,,-,リング・アナ,,ringu ana,konferansjer ringowy,"skrót, ang: ring announcer",,,"GroupId: 2845481
+Translate: ring announcer
+MiscInfo: abbr"
+217602,WORD_NOUN,,KATAKANA,,,-,アピール・ポイント,,apiiru pointo,"mocny punkt
+silny punkt
+mocna strona
+specjalność",ang: appeal point,,,"GroupId: 2845442
+Translate: strong point
+Translate: selling point
+Translate: forte
+Translate: specialty
+Translate: attraction"
+217603,WORD_NOUN,,KATAKANA,,,-,ギンリョウソウ,,ginryousou,Monotropastrum humile,roślina,,,"GroupId: 2452880
+Translate: Monotropastrum humile (species of saprophytic plant)
+MiscInfo: uk"
+217604,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,骨身に染みる,ほねみにしみる,,honemi ni shimiru,???,,,,"GroupId: 2845727
+Translate: to feel keenly
+Translate: to strike to the core
+Translate: to touch to the quick
+Translate: to hit home to one
+Translate: to pierce deep inside (e.g. cold)"
+217605,WORD_NOUN,,HIRAGANA,,,敷引き,しきびき,,shiki biki,"bezzwrotna opłata restauracyjna (przy wyprowadzaniu się z lokalu)
+pieniądze pobrane z depozytu",,,,"GroupId: 2845494
+Translate: non-refundable restoration fee (when moving out of a property)
+Translate: money withheld from a deposit"
+217606,WORD_NOUN,,HIRAGANA,,,敷き引き,しきびき,,shiki biki,"bezzwrotna opłata restauracyjna (przy wyprowadzaniu się z lokalu)
+pieniądze pobrane z depozytu",,,,"GroupId: 2845494
+Translate: non-refundable restoration fee (when moving out of a property)
+Translate: money withheld from a deposit"
+217607,WORD_NOUN,,HIRAGANA_KATAKANA,,,好きピ,すきピ,,suki pi,"miłość (osoba, w której się podkochujemy)
+obiekt westchnień
+osoba, którą ktoś jest zainteresowany romantycznie","slang, język kobiet",,,"GroupId: 2840170
+Translate: (one's) crush
+MiscInfo: fem
+MiscInfo: sl
+Translate: (one's) love interest
+MiscInfo: fem
+MiscInfo: sl
+Translate: person one is romantically interested in
+MiscInfo: fem
+MiscInfo: sl"
+217608,WORD_NOUN,,KATAKANA,,,-,スキピ,,suki pi,"miłość (osoba, w której się podkochujemy)
+obiekt westchnień
+osoba, którą ktoś jest zainteresowany romantycznie","slang, język kobiet",,,"GroupId: 2840170
+Translate: (one's) crush
+MiscInfo: fem
+MiscInfo: sl
+Translate: (one's) love interest
+MiscInfo: fem
+MiscInfo: sl
+Translate: person one is romantically interested in
+MiscInfo: fem
+MiscInfo: sl"
+217609,WORD_NOUN,,KATAKANA,,,-,ボックス・シーツ,,bokkusu shiitsu,"prześcieradło z gumką
+prześcieradło na materac",ang: box sheet,,,"GroupId: 2845690
+Translate: fitted sheet
+Translate: box sheet"
+217610,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,記憶に無い,きおくにない,,kioku ni nai,"nie w pamięci
+bez wspomnień
+niemający wspomnień z",,,,"GroupId: 2842023
+Translate: not in one's recollection
+Translate: having no recollection (of)
+Translate: having no memory (of)"
+217611,WORD_NOUN,,HIRAGANA,,,羯磨,こんま,,konma,karma,"buddyzm, czytane jako かつま w sekcie Tendai i こんま w Shingon, Ritsu",,DUPLICATE 217587,"GroupId: 2845680
 Translate: karma
 AdditionalInfo: read as かつま in the Tendai sect, etc.; as こんま in Shingon, Ritsu, etc."
