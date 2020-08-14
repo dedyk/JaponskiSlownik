@@ -72619,10 +72619,10 @@ wal Cuviera (gatunek ssaka z rodziny zyfiowatych, Ziphius cavirostris)",,,,"Grou
 Translate: beaked whale
 MiscInfo: uk
 Translate: Cuvier's beaked whale (Ziphius cavirostris)"
-217907,WORD_NOUN,,HIRAGANA,,,小豆象虫,あずきぞうむし,,azuki zoumushi,Callosobruchus chinensis,"gatunek chrząszcza z rodziny stonkowatych, znany jako szkodnik przechowywanych zbiorów wielu roślin strączkowych",,,"GroupId: 2166840
+217907,WORD_NOUN,,HIRAGANA,,,小豆象虫,あずきぞうむし,,azu kizou mushi,Callosobruchus chinensis,"gatunek chrząszcza z rodziny stonkowatych, znany jako szkodnik przechowywanych zbiorów wielu roślin strączkowych",,,"GroupId: 2166840
 Translate: adzuki bean weevil (Callosobruchus chinensis)
 MiscInfo: uk"
-217908,WORD_NOUN,,HIRAGANA,,,擬蟻象虫,ありもどきぞうむし,,arimodokizou mushi,Cylas formicarius,owad,,,"GroupId: 2166850
+217908,WORD_NOUN,,HIRAGANA,,,擬蟻象虫,ありもどきぞうむし,,arimodo kizou mushi,Cylas formicarius,owad,,,"GroupId: 2166850
 Translate: sweet potato weevil (Cylas formicarius)
 MiscInfo: uk"
 217909,WORD_NOUN,,HIRAGANA,,,竹の節,たけのふし,,take no fushi,złączenie bambusa,,,,"GroupId: 1891150
@@ -72632,7 +72632,7 @@ Translate: State Minister in Charge of Science and Technology Policy
 MiscInfo: abbr"
 217911,WORD_NOUN,,HIRAGANA,,,秘蔵っ子,ひぞっこ,,hizokko,"ulubione dziecko
 ulubiony uczeń
-oczko w czyjeś głowie",,,,"GroupId: 2837037
+oczko w czyjeś głowie",,,DUPLICATE 217941,"GroupId: 2837037
 Translate: favourite child
 Translate: favourite student
 Translate: apple of one's eye"
@@ -72725,3 +72725,55 @@ Translate: second-year ice"
 Translate: living space"
 217934,WORD_NOUN,,HIRAGANA,,,軽四輪,けいよんりん,,keiyonrin,lekki pojazd czterokołowy,,,,"GroupId: 2833248
 Translate: four-wheeled light vehicle"
+217935,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ミヤマアズマギク,,miyama azumagiku,Erigeron thunbergii,roślina,,,"GroupId: 2828717
+Translate: Thunberg's fleabane (Erigeron thunbergii)
+MiscInfo: uk"
+217936,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオツノヒツジ,,ootsunohitsuji,"owca kanadyjska
+owca gruboroga
+muflon kanadyjski","jeden z dwóch gatunków górskiej owcy z rzędu parzystokopytnych żyjących w Ameryce Północnej, Ovis canadensis, mało znane słowo",,,"GroupId: 2166470
+Translate: bighorn sheep (Ovis canadensis)
+MiscInfo: uk
+MiscInfo: obsc"
+217937,WORD_NOUN,,KATAKANA,,,-,ヒレナガゴンドウ,,hirena gagondou,"grindwal długopłetwy
+grindwal","gatunek ssaka z rodziny delfinowatych, Globicephala melas",,,"GroupId: 2166550
+Translate: long-finned pilot whale (Globicephala melas)
+MiscInfo: uk"
+217938,WORD_NOUN,,KATAKANA,,,-,アカボウクジラ,,akaboukujira,"zyfiowate (rodzina ssaków morskich z kladu zębowców w obrębie kladu waleni)
+wale dziobogłowe (rodzina ssaków morskich z kladu zębowców w obrębie kladu waleni)
+zyfia gęsiogłowa (gatunek ssaka z rodziny zyfiowatych, Ziphius cavirostris)
+wal Cuviera (gatunek ssaka z rodziny zyfiowatych, Ziphius cavirostris)",,,,"GroupId: 2166610
+Translate: beaked whale
+MiscInfo: uk
+Translate: Cuvier's beaked whale (Ziphius cavirostris)"
+217939,WORD_NOUN,,KATAKANA,,,-,アズキゾウムシ,,azu kizou mushi,Callosobruchus chinensis,"gatunek chrząszcza z rodziny stonkowatych, znany jako szkodnik przechowywanych zbiorów wielu roślin strączkowych",,,"GroupId: 2166840
+Translate: adzuki bean weevil (Callosobruchus chinensis)
+MiscInfo: uk"
+217940,WORD_NOUN,,KATAKANA,,,-,アリモドキゾウムシ,,arimodo kizou mushi,Cylas formicarius,owad,,,"GroupId: 2166850
+Translate: sweet potato weevil (Cylas formicarius)
+MiscInfo: uk"
+217941,WORD_NOUN,,HIRAGANA,,,秘蔵っ子,ひぞうっこ,,hizoukko,"ulubione dziecko
+ulubiony uczeń
+oczko w czyjeś głowie",,,DUPLICATE 217911,"GroupId: 2837037
+Translate: favourite child
+Translate: favourite student
+Translate: apple of one's eye"
+217942,WORD_NOUN,,KATAKANA,,,-,アゲチン,,agechin,"mężczyzna rzekomo przynosił szczęście kobiecie, z którą jest blisko lub z którą uprawia seks","wulgarnie, żartobliwie",,,"GroupId: 2840690
+Translate: man purported to bring good luck to the woman he is near or has sex with
+MiscInfo: vulg
+MiscInfo: joc"
+217943,WORD_VERB_RU,,HIRAGANA,,,編みあげる,あみあげる,,ami ageru,"skończyć robić na drutach
+???
+skończyć opracowywać (np. słownik)
+zakończyć edytować",,,,"GroupId: 2222920
+Translate: to finish knitting
+Translate: to lace from bottom to top
+Translate: to finish compiling (e.g. a dictionary)
+Translate: to finish editing"
+217944,WORD_VERB_RU,,HIRAGANA,,,編上げる,あみあげる,,ami ageru,"skończyć robić na drutach
+???
+skończyć opracowywać (np. słownik)
+zakończyć edytować",,,,"GroupId: 2222920
+Translate: to finish knitting
+Translate: to lace from bottom to top
+Translate: to finish compiling (e.g. a dictionary)
+Translate: to finish editing"
