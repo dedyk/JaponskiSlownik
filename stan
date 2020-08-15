@@ -1,11 +1,11 @@
 * kanji - 0
 ----------
-word - 15
++_word - 15
 ----------
-70000 - 20
-small - 5
-small2 - 5
-ludzie - 25
-uzupełniacz - x
+__70000 - 20
+__small - 5
+__small2 - 5
+__ludzie - 25
+__uzupełniacz - x
 -----------
 suma: 70
