@@ -5,7 +5,7 @@
 ++70000 - 20
 ++small - 5
 ++small2 - 5
-__ludzie - 25 -> 50
-__uzupełniacz - x
+__ludzie - 25 -> 50 -> 43
+**uzupełniacz - x
 -----------
 suma: 70
