@@ -5,7 +5,7 @@
 70000 - 140 -> 120
 small - 5 -> 35 -> 25
 small2 - 5 -> 35 -> 30
-ludzie - 25 -> 175 -> 160
-uzupełniacz - 15
+ludzie - 25 -> 175 -> 160 -> 145
+uzupełniacz - x
 -----------
 suma: 70
