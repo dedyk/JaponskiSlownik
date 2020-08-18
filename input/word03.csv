@@ -73816,7 +73816,7 @@ Translate: relational algebra"
 218205,WORD_ADJECTIVE_I,,HIRAGANA,,,止みがたい,やみがたい,,yami gatai,"nieodparty
 przemożny",,,,"GroupId: 1770170
 Translate: irresistible"
-218206,WORD_NOUN,,HIRAGANA,,,麻実油,あさみゆ,,asamiyu,olej z nasion konopi,,,,"GroupId: 1671570
+218206,WORD_NOUN,,HIRAGANA,,,麻実油,あさみゆ,,asamiyu,olej z nasion konopi,,,DUPLICATE 218263,"GroupId: 1671570
 Translate: hempseed oil"
 218207,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,練習不足,れんしゅうぶそく,,renshuu busoku,brak treningu,,,,"GroupId: 1948800
@@ -73831,7 +73831,7 @@ MiscInfo: arch
 Translate: using make-up
 MiscInfo: arch"
 218210,WORD_NOUN,,HIRAGANA,,,一丁字,いっていじ,,itteiji,"pojedyncza litera
-pojedynczy znak",,,,"GroupId: 1164790
+pojedynczy znak",,,DUPLICATE 218265,"GroupId: 1164790
 Translate: single letter
 Translate: single character"
 218211,WORD_NOUN,,HIRAGANA,,,昼光色電球,ちゅうこうしょくでんきゅう,,chuukoushokudenkyuu,"lampa o świetle dziennym
@@ -73907,7 +73907,7 @@ MiscInfo: abbr"
 218233,WORD_NOUN,,HIRAGANA,,,救済組織,きゅうさいそしき,,kyuusai soshiki,organizacja humanitarna,,,,"GroupId: 2626480
 Translate: relief organisation"
 218234,"WORD_EXPRESSION
-WORD_ADVERB",,HIRAGANA,,,藁にもすがる思いで,わらにもすがるおもいで,,wara ni mosugaru omoide,"desperacka nadzieja
+WORD_ADVERB",,HIRAGANA,,,藁にもすがる思いで,わらにもすがるおもいで,,wara ni mo sugaru omoide,"desperacka nadzieja
 jako ostatnia nadzieja",,,,"GroupId: 2779470
 Translate: hoping against hope
 Translate: desperately hoping
@@ -73990,5 +73990,90 @@ Translate: variational principle"
 218258,WORD_NOUN,,HIRAGANA,,,内政不干渉,ないせいふかんしょう,,naisei fukanshou,brak interwencji w sprawy wewnętrzne innego narodu,,,,"GroupId: 1791960
 Translate: non-intervention in the domestic affairs of another nation"
 218259,WORD_VERB_U,,HIRAGANA,,,甘えかかる,あまえかかる,,amae kakaru,polegać na czyjejś dobroci,mało znane słowo,,,"GroupId: 2741090
+Translate: to come to depend on someone's kindness
+MiscInfo: obsc"
+218260,WORD_NOUN,,HIRAGANA,,,弓張,ゆみはり,,yumi hari,"naciąganie łuku
+napinanie łuku
+osoba, która naciąga łuk
+księżyc między nowiem a pierwszą lub trzecią kwadrą (skrót)
+papierowa latarnia z uchwytem w kształcie łuku (skrót)",,,,"GroupId: 1840070
+Translate: stringing a bow
+Translate: person who strings bows
+Translate: crescent moon
+MiscInfo: abbr
+Translate: paper lantern with a bow-shaped handle
+MiscInfo: abbr"
+218261,WORD_NOUN,,HIRAGANA,,,あれ性,あれしょう,,are shou,sucha lub spierzchnięta skóra,,,,"GroupId: 1671340
+Translate: dry or chapped skin"
+218262,WORD_ADJECTIVE_I,,HIRAGANA,,,止み難い,やみがたい,,yami gatai,"nieodparty
+przemożny",,,,"GroupId: 1770170
+Translate: irresistible"
+218263,WORD_NOUN,,HIRAGANA,,,麻実油,まじつゆ,,majitsuyu,olej z nasion konopi,,,DUPLICATE 218206,"GroupId: 1671570
+Translate: hempseed oil"
+218264,WORD_NOUN,,HIRAGANA,,,顔作り,かおづくり,,kao dukuri,"kształt głowy
+użycie makijażu",archaizm,,,"GroupId: 1756210
+Translate: shape of the head
+MiscInfo: arch
+Translate: using make-up
+MiscInfo: arch"
+218265,WORD_NOUN,,HIRAGANA,,,一丁字,いっちょうじ,,icchouji,"pojedyncza litera
+pojedynczy znak",,,DUPLICATE 218210,"GroupId: 1164790
+Translate: single letter
+Translate: single character"
+218266,WORD_NOUN,,HIRAGANA,,,吊り棚,つりだな,,tsuri dana,podwieszana półka,,,,"GroupId: 1773820
+Translate: suspended shelf"
+218267,WORD_NOUN,,KATAKANA,,,-,クロアシアホウドリ,,kuroashi ahoudori,albatros czarnonogi,"gatunek dużego ptaka morskiego z rodziny albatrosów, Diomedea nigripes",,,"GroupId: 2174120
+Translate: black-footed albatross (Diomedea nigripes)
+MiscInfo: uk"
+218268,WORD_NOUN,,HIRAGANA,,,大水凪鳥,おおみずなぎどり,,oomizu nagidori,burzyk kreskowany,Calonectris leucomelas,,,"GroupId: 2174150
+Translate: streaked shearwater (species of seabird, Calonectris leucomelas)
+MiscInfo: uk"
+218269,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,オオミズナギドリ,,oomizu nagidori,burzyk kreskowany,Calonectris leucomelas,,,"GroupId: 2174150
+Translate: streaked shearwater (species of seabird, Calonectris leucomelas)
+MiscInfo: uk"
+218270,WORD_NOUN,,KATAKANA,,,-,アフリカコシジロアマツバメ,,afurika koshijiro amatsubame,jerzyk widłosterny,"gatunek małego ptaka z rodziny jerzykowatych, Apus caffer",,,"GroupId: 2174200
+Translate: white-rumped swift (Apus caffer)
+MiscInfo: uk"
+218271,WORD_NOUN,,KATAKANA,,,-,ヒロズコガ,,hirozukoga,ćma z rodziny Tineidae,,,,"GroupId: 2178530
+Translate: tineid (any moth of family Tineidae)
+MiscInfo: uk"
+218272,WORD_EXPRESSION,,HIRAGANA,,,物の序で,もののついで,,mono no tsuide,skorzystać z okazji (aby zrobić coś innego),,,,"GroupId: 2179480
+Translate: take the opportunity to (do something else)
+MiscInfo: uk"
+218273,WORD_EXPRESSION,,HIRAGANA,,,事の序で,ことのついで,,koto no tsuide,skorzystać z okazji (aby zrobić coś innego),,,,"GroupId: 2179490
+Translate: take the opportunity to (do something else)
+MiscInfo: uk"
+218274,WORD_NOUN,,KATAKANA,,,-,ヤクシカ,,yakushika,Cervus nippon yakushimae,,,,"GroupId: 2183750
+Translate: Yakushima sika (Cervus nippon yakushimae)
+MiscInfo: uk"
+218275,WORD_NOUN,,KATAKANA,,,-,グレビーシマウマ,,gurebii shimauma,"zebra pręgowana
+zebra Grevy'ego
+zebra Grevyego","gatunek ssaka z rodziny koniowatych, należący do grupy zebr, Equus grevyi",,,"GroupId: 2183850
+Translate: Grevy's zebra (Equus grevyi)
+MiscInfo: uk"
+218276,WORD_NOUN,,KATAKANA,,,-,アメショ,,amesho,kot amerykański krótkowłosy,"skrót, naturalna rasa kota, wywodząca się z Ameryki Północnej",,,"GroupId: 2203000
+Translate: American Shorthair (cat breed)
+MiscInfo: abbr"
+218277,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,藁にも縋る思いで,わらにもすがるおもいで,,wara ni mo sugaru omoide,"desperacka nadzieja
+jako ostatnia nadzieja",,,,"GroupId: 2779470
+Translate: hoping against hope
+Translate: desperately hoping
+Translate: as a last hope"
+218278,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,わらにもすがる思いで,わらにもすがるおもいで,,wara ni mo sugaru omoide,"desperacka nadzieja
+jako ostatnia nadzieja",,,,"GroupId: 2779470
+Translate: hoping against hope
+Translate: desperately hoping
+Translate: as a last hope"
+218279,"WORD_EXPRESSION
+WORD_ADVERB",,KATAKANA_HIRAGANA,,,ワラにもすがる思いで,ワラにもすがるおもいで,,wara ni mo sugaru omoide,"desperacka nadzieja
+jako ostatnia nadzieja",,,,"GroupId: 2779470
+Translate: hoping against hope
+Translate: desperately hoping
+Translate: as a last hope"
+218280,WORD_ADJECTIVE_I,,HIRAGANA,,,乗り悪い,のりにくい,,nori nikui,trudny do jazdy,,,,"GroupId: 1354740
+Translate: hard to ride"
+218281,WORD_VERB_U,,HIRAGANA,,,甘え掛かる,あまえかかる,,amae kakaru,polegać na czyjejś dobroci,mało znane słowo,,,"GroupId: 2741090
 Translate: to come to depend on someone's kindness
 MiscInfo: obsc"
