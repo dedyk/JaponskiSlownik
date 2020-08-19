@@ -74098,8 +74098,7 @@ Translate: British Guiana"
 Translate: regional stock exchange"
 218290,WORD_NOUN,,HIRAGANA,,,化粧直し,けしょうなおし,,keshou naoshi,"poprawianie makijażu
 remont
-renowacja
-",,,,"GroupId: 1639330
+renowacja",,,,"GroupId: 1639330
 Translate: adjusting one's makeup
 Translate: renovation
 Translate: remodeling
@@ -74153,7 +74152,7 @@ podlegający zwrotowi","np. butelka, ang: returnable",,,"GroupId: 2448540
 Translate: returnable"
 218303,WORD_NOUN,,HIRAGANA,,,中間国,ちゅうかんこく,,chuukankoku,państwo buforowe,"pomiędzy dwoma skonfliktowanymi krajami, osłabia ich skłonność do wojny",,,"GroupId: 1423710
 Translate: buffer state"
-218304,WORD_NOUN,,HIRAGANA,,,代替療法,だいたいりょうほう,,daitai ryouhou,leczenie alternatywne,,,,"GroupId: 1997830
+218304,WORD_NOUN,,HIRAGANA,,,代替療法,だいたいりょうほう,,daitai ryouhou,leczenie alternatywne,,,DUPLICATE 218364,"GroupId: 1997830
 Translate: alternative therapy"
 218305,WORD_NOUN,,HIRAGANA,,,兄妹交配,きょうだいこうはい,,kyoudai kouhai,"chów wsobny brat-siostra
 krzyżowanie rodzeństwa",,,,"GroupId: 2689240
@@ -74304,7 +74303,7 @@ Translate: conflict
 MiscInfo: col
 Translate: war
 MiscInfo: col"
-218349,WORD_NOUN,,KATAKANA_HIRAGANA,,,ウオノエ科,ウオノエか,,uonoe ka,"Cymothoidae
+218349,WORD_NOUN,,KATAKANA_HIRAGANA,,,ウオノエ科,ウオノエか,,uo no eka,"Cymothoidae
 rodzina równonóg (skorupiaków)",,,,"GroupId: 2622120
 Translate: Cymothoidae
 Translate: family of isopods"
@@ -74327,10 +74326,114 @@ Translate: Liberal Party of Canada"
 218356,WORD_NOUN,,HIRAGANA,,,着床前死亡,ちゃくしょうぜんしぼう,,chakushou zenshibou,???,mało znane słowo,,,"GroupId: 2165170
 Translate: preimplantation death
 MiscInfo: obsc"
-218357,WORD_NOUN,,HIRAGANA,,,空引き機,そらびきばた,,sorabikibata,"rodzaj krosna używanego w dawnych czasach (archaizm)
+218357,WORD_NOUN,,HIRAGANA,,,空引き機,そらびきばた,,sorabiki bata,"rodzaj krosna używanego w dawnych czasach (archaizm)
 krosno
 tradycyjne krosno",,,,"GroupId: 2104450
 Translate: type of loom used in olden times
 MiscInfo: arch
 Translate: loom
 Translate: traditional loom"
+218358,WORD_NOUN,,KATAKANA,,,-,ドロワーズ,,dorowaazu,"kalesony
+pumpy",,,,"GroupId: 1926760
+Translate: drawers
+Translate: knickers
+Translate: bloomers"
+218359,WORD_NOUN,,KATAKANA,,,-,ドロワース,,dorowaasu,"kalesony
+pumpy",,,,"GroupId: 1926760
+Translate: drawers
+Translate: knickers
+Translate: bloomers"
+218360,WORD_NOUN,,KATAKANA,,,-,ドロワ,,dorowa,"kalesony
+pumpy",,,,"GroupId: 1926760
+Translate: drawers
+Translate: knickers
+Translate: bloomers"
+218361,WORD_NOUN,,KATAKANA_HIRAGANA,,,バラ戦争,バラせんそう,,bara sensou,Wojna Dwóch Róż,"wojna domowa, tocząca się w Anglii w latach 1455–1485",,,"GroupId: 2208040
+Translate: War of the Roses"
+218362,WORD_NOUN,,HIRAGANA,,,多門天,たもんてん,,tamonten,Wajśrawana,"bóstwo buddyjskie, jeden tzw. Czterech Niebiańskich Królów, strażnik północy i główny obrońca",,,"GroupId: 2265870
+Translate: Vaisravana (Buddhist deity)"
+218363,WORD_NOUN,,KATAKANA,,,-,コライト,,koraito,"półkoks
+koks półkarbonizowany",ang: coalite,,,"GroupId: 2628460
+Translate: coalite
+Translate: semi-carbonized coke
+Translate: semi-coke"
+218364,WORD_NOUN,,HIRAGANA,,,代替療法,だいがえりょうほう,,daigae ryouhou,leczenie alternatywne,,,DUPLICATE 218304,"GroupId: 1997830
+Translate: alternative therapy"
+218365,WORD_NOUN,,HIRAGANA,,,代替え療法,だいがえりょうほう,,daigae ryouhou,leczenie alternatywne,,,,"GroupId: 1997830
+Translate: alternative therapy"
+218366,WORD_NOUN,,KATAKANA,,,-,ヤクザル,,yakuzaru,Macaca fuscata yakui,gatunek japońskiej mataki,,,"GroupId: 2184710
+Translate: Yakushima macaque (Macaca fuscata yakui)
+MiscInfo: uk"
+218367,WORD_NOUN,,KATAKANA,,,-,スズシロソウ,,suzushirosou,Arabis flagellosa,roślina,,,"GroupId: 2186210
+Translate: Arabis flagellosa (species of rockcress)
+MiscInfo: uk"
+218368,WORD_NOUN,,KATAKANA,,,-,アメリカワシミミズク,,amerika washimimizuku,puchacz wirginijski,"gatunek ptaka z rodziny puszczykowatych, zamieszkujący Amerykę Północną, Środkową i Południową, Bubo virginianus",,,"GroupId: 2186270
+Translate: great horned owl (Bubo virginianus)
+MiscInfo: uk"
+218369,WORD_NOUN,,KATAKANA,,,-,ヨツバシオガマ,,yotsuba shiogama,Pedicularis chamissonis odm. japonica,roślina,,,"GroupId: 2187780
+Translate: Chamisso's lousewort (Pedicularis chamissonis var. japonica)
+MiscInfo: uk"
+218370,WORD_NOUN,,HIRAGANA,,,眉白秧鶏,まみじろくいな,,mamijiro kuina,bagiewnik białobrewy,"gatunek ptaka, Porzana cinerea",,,"GroupId: 2190000
+Translate: white-browed crake (species of rail, Porzana cinerea)
+MiscInfo: uk"
+218371,WORD_NOUN,,KATAKANA,,,-,マミジロクイナ,,mamijiro kuina,bagiewnik białobrewy,"gatunek ptaka, Porzana cinerea",,,"GroupId: 2190000
+Translate: white-browed crake (species of rail, Porzana cinerea)
+MiscInfo: uk"
+218372,WORD_NOUN,,KATAKANA,,,-,セルフィー・スティック,,serufii sutikku,"kijek do selfie
+selfie stick","rodzaj ręcznego statywu, monopodu, pomagającego w wykonywaniu zdjęć typu selfie",,,"GroupId: 2834716
+Translate: selfie stick"
+218373,WORD_NOUN,,KATAKANA,,,-,セルカ・スティック,,seruka sutikku,"kijek do selfie
+selfie stick","rodzaj ręcznego statywu, monopodu, pomagającego w wykonywaniu zdjęć typu selfie",,,"GroupId: 2834717
+Translate: selfie stick"
+218374,WORD_NOUN,,KATAKANA,,,-,コンタス,,kontasu,różaniec,"wczesnochrześcijański japoński termin, archaizm",,,"GroupId: 2834834
+Translate: rosary
+MiscInfo: arch
+AdditionalInfo: early Japanese Christian term"
+218375,WORD_NOUN,,HIRAGANA,,,空引,そらびき,,sora biki,"rodzaj krosna używanego w dawnych czasach (archaizm)
+krosno
+tradycyjne krosno",,,,"GroupId: 2104440
+Translate: type of loom used in olden times
+MiscInfo: arch
+Translate: loom
+Translate: traditional loom"
+218376,WORD_NOUN,,KATAKANA,,,-,アイ・バンク,,ai banku,bank tkanki ocznej,ang: eye bank,,,"GroupId: 1014420
+Translate: eye bank"
+218377,WORD_NOUN,,KATAKANA,,,-,アンチエイジング,,anchi eijingu,przeciwdziałający starzeniu się,ang: anti-aging,,,"GroupId: 2127370
+Translate: anti-aging"
+218378,WORD_NOUN,,KATAKANA,,,-,マイハギ,,maihagi,"aturi
+roślina telegraf
+tańcząca roślina","gatunek rośliny wieloletniej pochodzący z tropikalnej Azji, Codariocalyx motorius",,,"GroupId: 2830022
+Translate: telegraph plant (Codariocalyx motorius)
+Translate: semaphore plant
+Translate: dancing plant"
+218379,WORD_NOUN,,HIRAGANA,,,糸織,いとおり,,ito ori,materiał utkany ze skręconej przędzy jedwabnej,,,,"GroupId: 1825610
+Translate: cloth woven from twisted silk yarn"
+218380,WORD_NOUN,,HIRAGANA,,,まわし打ち,まわしうち,,mawashi uchi,???,Mahjong,,,"GroupId: 2752720
+Translate: discarding somewhat safe tiles while still trying to win a hand"
+218381,"WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,-,どんぱち,,donpachi,"dźwięk wystrzału z pistoletu
+dźwięk wybuchającego prochu
+wymiana ognia (kolokwializm)
+strzelanina (kolokwializm)
+konflikt (kolokwializm)
+wojna (kolokwializm)",,,,"GroupId: 1089570
+Translate: sound of pistol fire
+MiscInfo: on-mim
+Translate: sound of exploding gunpowder
+MiscInfo: on-mim
+Translate: exchange of (pistol) fire
+MiscInfo: col
+Translate: shootout
+MiscInfo: col
+Translate: conflict
+MiscInfo: col
+Translate: war
+MiscInfo: col"
+218382,WORD_NOUN,,HIRAGANA,,,魚の餌科,うおのえか,,uo no eka,"Cymothoidae
+rodzina równonóg (skorupiaków)",,,,"GroupId: 2622120
+Translate: Cymothoidae
+Translate: family of isopods"
+218383,WORD_NOUN,,KATAKANA,,,-,ビーチ・サッカー,,biichi sakkaa,piłka plażowa,ang: beach soccer,,,"GroupId: 2835457
+Translate: beach soccer
+Translate: beach football
+Translate: beasal"
