@@ -75437,7 +75437,7 @@ Translate: demonstration"
 Translate: National Safety Week"
 218674,WORD_NOUN,,HIRAGANA,,,遅払い,ちはらい,,chi harai,zwłoka w płatności,,,,"GroupId: 1953730
 Translate: delay in payment"
-218675,WORD_NOUN,,KATAKANA_HIRAGANA,,,カニ殻,カニがら,,kanigara,"skorupa kraba (często mielona lub kruszona i używana jako nawóz)
+218675,WORD_NOUN,,KATAKANA_HIRAGANA,,,カニ殻,カニがら,,kani gara,"skorupa kraba (często mielona lub kruszona i używana jako nawóz)
 mączka ze skorupek kraba",,,,"GroupId: 2682390
 Translate: crab shell (often ground or crushed and used as fertilizer)
 Translate: crab shell meal"
@@ -75459,10 +75459,11 @@ Translate: direct tax"
 Translate: direct delivery"
 218682,WORD_NOUN,,HIRAGANA,,,直覧,じきらん,,jikiran,patrzenie z szacunkiem na (coś),,,,"GroupId: 1431560
 Translate: respectfully looking at (something)"
-218683,WORD_NOUN,,HIRAGANA,,,瓶,へい,,hei,słoik lub wazon z długą wąską szyjką,archaizm,,,"GroupId: 2845755
+218683,WORD_NOUN,,HIRAGANA,,,瓶,へい,,hei,słoik lub wazon z długą wąską szyjką,archaizm,,"DUPLICATE 1762
+DUPLICATE 8528","GroupId: 2845755
 Translate: jar or vase with a long narrow neck
 MiscInfo: arch"
-218684,WORD_NOUN,,HIRAGANA,,,会者,かいしゃ,,kaisha,"osoba, która uczestniczy w spotkaniu renga",archaizm,,,"GroupId: 2845789
+218684,WORD_NOUN,,HIRAGANA,,,会者,かいしゃ,,kaisha,"osoba, która uczestniczy w spotkaniu renga",archaizm,,DUPLICATE 218720,"GroupId: 2845789
 Translate: person who attends a renga meeting
 MiscInfo: arch"
 218685,WORD_ADJECTIVE_TARU,,HIRAGANA,,,滉瀁,こうよう,,kouyou,szeroki i głęboki (zbiornik wody),,,,"GroupId: 2845830
@@ -75571,3 +75572,111 @@ Translate: to leave"
 Translate: rubbing in a vinegar, etc. dressing"
 218712,WORD_NOUN,,HIRAGANA,,,人笑い,ひとわらい,,hito warai,"coś, z czego ludzie by się śmiali",,,,"GroupId: 1368140
 Translate: something people would laugh at"
+218713,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,益々以て,ますますもって,,masu masu motte,"coraz więcej
+coraz bardziej
+coraz częściej
+coraz mniej (gdy spada)
+coraz mniej i mniej","stanowczo, np. grubszy, piękniejszy",,,"GroupId: 2845493
+Translate: increasingly
+MiscInfo: uk
+AdditionalInfo: emphatic
+Translate: more and more
+MiscInfo: uk
+AdditionalInfo: emphatic
+Translate: decreasingly (when declining)
+MiscInfo: uk
+AdditionalInfo: emphatic
+Translate: less and less
+MiscInfo: uk
+AdditionalInfo: emphatic"
+218714,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,益益以て,ますますもって,,masu masu motte,"coraz więcej
+coraz bardziej
+coraz częściej
+coraz mniej (gdy spada)
+coraz mniej i mniej","stanowczo, np. grubszy, piękniejszy",,,"GroupId: 2845493
+Translate: increasingly
+MiscInfo: uk
+AdditionalInfo: emphatic
+Translate: more and more
+MiscInfo: uk
+AdditionalInfo: emphatic
+Translate: decreasingly (when declining)
+MiscInfo: uk
+AdditionalInfo: emphatic
+Translate: less and less
+MiscInfo: uk
+AdditionalInfo: emphatic"
+218715,WORD_EXPRESSION,,HIRAGANA,,,りゅう天に登る,りゅうてんにのぼる,,ryuuten ni noboru,powstanie smoka,przynoszący deszcz w czasie wiosennej równonocy,,,"GroupId: 2596090
+Translate: rise of the dragon (bringing rain around the time of the spring equinox)"
+218716,WORD_NOUN,,HIRAGANA,,,庭の訓え,にわのおしえ,,niwa no oshie,"edukacja domowa
+nauczanie w domu",archaizm,,,"GroupId: 2255360
+Translate: homeschooling
+MiscInfo: arch
+Translate: home-schooling
+MiscInfo: arch"
+218717,WORD_NOUN,,HIRAGANA,,,蟹殻,かにがら,,kani gara,"skorupa kraba (często mielona lub kruszona i używana jako nawóz)
+mączka ze skorupek kraba",,,,"GroupId: 2682390
+Translate: crab shell (often ground or crushed and used as fertilizer)
+Translate: crab shell meal"
+218718,WORD_NOUN,,KATAKANA,,,-,カニガラ,,kani gara,"skorupa kraba (często mielona lub kruszona i używana jako nawóz)
+mączka ze skorupek kraba",,,,"GroupId: 2682390
+Translate: crab shell (often ground or crushed and used as fertilizer)
+Translate: crab shell meal"
+218719,WORD_NOUN,,KATAKANA,,,-,パネットーネ,,panettoone,panettone,rodzaj babki pochodzącej z Mediolanu i spożywanej tradycyjnie w okresie Bożego Narodzenia i Nowego Roku,,,"GroupId: 2622290
+Translate: panettone"
+218720,WORD_NOUN,,HIRAGANA,,,会者,かいじゃ,,kaija,"osoba, która uczestniczy w spotkaniu renga",archaizm,,DUPLICATE 218684,"GroupId: 2845789
+Translate: person who attends a renga meeting
+MiscInfo: arch"
+218721,WORD_INTERJECTION,,KATAKANA,,,-,ホーホー,,hoo hoo,"huu huu
+uhu-uhu (dźwięk wydawany przez sowę)
+o!
+he!",,,,"GroupId: 2845957
+Translate: hoot hoot
+MiscInfo: on-mim
+Translate: tu-whit tu-whoo
+MiscInfo: on-mim
+Translate: oh!
+Translate: I see
+Translate: huh!"
+218722,WORD_INTERJECTION,,HIRAGANA,,,-,ほうほう,,hou hou,"huu huu
+uhu-uhu (dźwięk wydawany przez sowę)
+o!
+he!",,,"DUPLICATE 3053
+DUPLICATE 105314
+DUPLICATE 105380","GroupId: 2845957
+Translate: hoot hoot
+MiscInfo: on-mim
+Translate: tu-whit tu-whoo
+MiscInfo: on-mim
+Translate: oh!
+Translate: I see
+Translate: huh!"
+218723,WORD_VERB_RU,,HIRAGANA,,,はえ出る,はえでる,,hae deru,"wyrastać
+pojawiać się
+ukazywać się",,,,"GroupId: 2832677
+Translate: to sprout
+Translate: to spring up
+Translate: to come out"
+218724,WORD_VERB_RU,,HIRAGANA,,,生えでる,はえでる,,hae deru,"wyrastać
+pojawiać się
+ukazywać się",,,,"GroupId: 2832677
+Translate: to sprout
+Translate: to spring up
+Translate: to come out"
+218725,WORD_NOUN,,KATAKANA,,,-,ディジボル,,dijiboru,"woltomierz cyfrowy
+cyfrowy woltomierz",skrót od デジタル i ボルトメーター,,,"GroupId: 2755880
+Translate: digital voltmeter
+MiscInfo: abbr
+AdditionalInfo: from デジタル and ボルトメーター"
+218726,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,はるの川,はるのかわ,,haru no kawa,rzeka w okresie wiosennym,,,,"GroupId: 2776170
+Translate: river in springtime"
+218727,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,尻を上げる,しりをあげる,,shiri o ageru,"podnosić (pośladki, tyłek)
+???",,,,"GroupId: 2210600
+Translate: to stand up
+Translate: to leave"
+218728,WORD_NOUN,,HIRAGANA,,,酢揉み,すもみ,,sumomi,???,,,,"GroupId: 2821550
+Translate: rubbing in a vinegar, etc. dressing"
