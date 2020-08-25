@@ -76067,7 +76067,7 @@ Translate: Russia and China (Qing dynasty)
 MiscInfo: hist
 Translate: Sino-Russian
 MiscInfo: hist"
-218843,WORD_NOUN,,HIRAGANA,,,擢用,てきよう,,tekiyou,wybór,,,,"GroupId: 2846002
+218843,WORD_NOUN,,HIRAGANA,,,擢用,てきよう,,tekiyou,wybór,,,DUPLICATE 218874,"GroupId: 2846002
 Translate: selection"
 218844,WORD_NOUN,,HIRAGANA,,,傾心,けいしん,,keishin,metacentrum,,,,"GroupId: 2846183
 Translate: metacenter (e.g. of a ship)
@@ -76099,7 +76099,7 @@ Translate: Wellington boots"
 218855,WORD_NOUN,,HIRAGANA,,,生権力,せいけんりょく,,seikenryoku,biowładza,politologia,,,"GroupId: 2826808
 Translate: biopower
 Translate: Foucault's term for the regulation by modern states of their subjects"
-218856,WORD_NOUN,,HIRAGANA,,,合冊,がっさつ,,gassatsu,zbiór w jednym tomie,,,,"GroupId: 1578930
+218856,WORD_NOUN,,HIRAGANA,,,合冊,がっさつ,,gassatsu,zbiór w jednym tomie,,,DUPLICATE 218881,"GroupId: 1578930
 Translate: collection in one volume"
 218857,WORD_NOUN,,HIRAGANA,,,固有肝動脈,こゆうかんどうみゃく,,koyuu kandoumyaku,tętnica wątrobowa właściwa,łać: arteria hepatica propria,,,"GroupId: 2650920
 Translate: arteria hepatica propria
@@ -76125,7 +76125,7 @@ Translate: Battle of Kamakura (Genkō War, 1333)
 Translate: Siege of Kamakura"
 218863,WORD_NOUN,,HIRAGANA,,,弁護士会,べんごしかい,,bengo shikai,izba adwokacka,,,,"GroupId: 1512860
 Translate: bar association"
-218864,WORD_NOUN,,HIRAGANA,,,鰭脚類,ききゃくるい,,kikyakurui,płetwonogie,"zróżnicowany klad szeroko rozpowszechnionych ssaków morskich wyposażonych w płetwy, prowadzących częściowo wodny tryb życia",,,"GroupId: 1490530
+218864,WORD_NOUN,,HIRAGANA,,,鰭脚類,ききゃくるい,,kikyakurui,płetwonogie,"zróżnicowany klad szeroko rozpowszechnionych ssaków morskich wyposażonych w płetwy, prowadzących częściowo wodny tryb życia",,DUPLICATE 218882,"GroupId: 1490530
 Translate: pinnipeds (seals and walruses)"
 218865,WORD_NOUN,,HIRAGANA,,,結合情報量,けつごうじょうほうりょう,,ketsugou jouhouryou,wspólne treści informacyjne,,,,"GroupId: 2352880
 Translate: joint information content"
@@ -76149,3 +76149,36 @@ MiscInfo: arch"
 218870,"WORD_EXPRESSION
 WORD_NOUN",,KATAKANA_HIRAGANA,,,ストークスの法則,ストークスのほうそく,,sutookusu no housoku,prawo Stokesa,"fizyka, prawo określające siłę oporu ciała w kształcie kuli poruszającego się w płynie",,,"GroupId: 1965070
 Translate: Stokes' law"
+218871,WORD_NOUN,,KATAKANA_HIRAGANA,,,タヌキ丼,タヌキどん,,tanuki don,gorący ryż podawany z sosem tenkasu i tempurą na wierzchu,,,,"GroupId: 2780350
+Translate: hot rice served with tenkasu and tempura dipping sauce on top"
+218872,WORD_NOUN,,HIRAGANA,,,狸丼,たぬきどん,,tanuki don,gorący ryż podawany z sosem tenkasu i tempurą na wierzchu,,,,"GroupId: 2780350
+Translate: hot rice served with tenkasu and tempura dipping sauce on top"
+218873,WORD_NOUN,,KATAKANA,,,-,ドクゼリ,,dokuzeri,szalej jadowity,"gatunek silnie trującej rośliny wieloletniej należący do rodziny selerowatych, Cicuta virosa",,,"GroupId: 2603360
+Translate: Mackenzie's water hemlock (Cicuta virosa)
+MiscInfo: uk"
+218874,WORD_NOUN,,HIRAGANA,,,擢用,たくよう,,takuyou,wybór,,,DUPLICATE 218843,"GroupId: 2846002
+Translate: selection"
+218875,WORD_VERB_RU,,HIRAGANA,,,練りあわせる,ねりあわせる,,neri awaseru,ugniatać razem,,,,"GroupId: 1559110
+Translate: to knead together"
+218876,WORD_VERB_RU,,HIRAGANA,,,練り合せる,ねりあわせる,,neri awaseru,ugniatać razem,,,,"GroupId: 1559110
+Translate: to knead together"
+218877,WORD_NOUN,,KATAKANA,,,-,カドリーユ,,kadoriiyu,kadryl,"XVIII-wieczny taniec salonowy w metrum przemiennym 6/8 i 2/4, ang: quadrille",,,"GroupId: 2039890
+Translate: quadrille"
+218878,WORD_NOUN,,KATAKANA,,,-,カドリユ,,kadoriyu,kadryl,"XVIII-wieczny taniec salonowy w metrum przemiennym 6/8 i 2/4, ang: quadrille",,,"GroupId: 2039890
+Translate: quadrille"
+218879,WORD_NOUN,,KATAKANA,,,-,エンパワメント,,enpawamento,empowerment,"proces angażowania pracowników w podejmowanie decyzji dotyczących organizacji i umożliwienie im brania odpowiedzialności za swoje działania, co przekłada się na świadomość kosztów, poczucie przynależności, wzrost wydajności oraz poprawę relacji w zespole dzięki poczuciu, że pracownicy posiadają realną władzę decyzyjną",,,"GroupId: 2010260
+Translate: empowerment"
+218880,WORD_NOUN,,KATAKANA,,,-,ウェリントン・ブーツ,,werinton buutsu,"kalosze
+gumiaki",ang: Wellington boots,,,"GroupId: 2842387
+Translate: Wellington boots"
+218881,WORD_NOUN,,HIRAGANA,,,合冊,ごうさつ,,gousatsu,zbiór w jednym tomie,,,DUPLICATE 218856,"GroupId: 1578930
+Translate: collection in one volume"
+218882,WORD_NOUN,,HIRAGANA,,,鰭脚類,ひれあしるい,,hireashirui,płetwonogie,"zróżnicowany klad szeroko rozpowszechnionych ssaków morskich wyposażonych w płetwy, prowadzących częściowo wodny tryb życia",,DUPLICATE 218864,"GroupId: 1490530
+Translate: pinnipeds (seals and walruses)"
+218883,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,未練未酌が無い,みれんみしゃくがない,,miren mishaku ga nai,"antypatyczny i nieliczący się z innymi
+nieczuły",archaizm,,,"GroupId: 2607120
+Translate: unsympathetic and inconsiderate
+MiscInfo: arch
+Translate: coldhearted
+MiscInfo: arch"
