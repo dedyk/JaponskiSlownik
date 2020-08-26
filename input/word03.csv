@@ -76206,7 +76206,7 @@ Translate: flapper"
 218893,WORD_NOUN,,KATAKANA_HIRAGANA,,,ビート族,ビートぞく,,biito zoku,"beatnicy
 bitnicy","nieformalny awangardowy ruch literacko-kulturowy, propagujący idee anarchistycznego indywidualizmu, nonkonformizmu i swobody twórczej, który powstał w latach 50. XX w. w USA",,,"GroupId: 2465710
 Translate: beatniks"
-218894,WORD_VERB_U,,HIRAGANA,,,眺めやる,ながめやる,,nagameyaru,wpatrywać się na,,,,"GroupId: 2678910
+218894,WORD_VERB_U,,HIRAGANA,,,眺めやる,ながめやる,,nagame yaru,wpatrywać się na,,,,"GroupId: 2678910
 Translate: to gaze out at
 Translate: to look out over"
 218895,"WORD_NOUN
@@ -76262,7 +76262,7 @@ Translate: government order"
 218911,WORD_NOUN,,HIRAGANA,,,真那伽,まなか,,manaka,odmiana kadzideł używana w kōdō,pierwotnie od Malakka,,,"GroupId: 2846093
 Translate: incense variety used in kōdō (orig. from Malacca)"
 218912,WORD_EXPRESSION,,HIRAGANA,,,８８,ぱちぱち,,pachi pachi,"klap klap
-dobra robota",slang internetowy,,,"GroupId: 2845959
+dobra robota",slang internetowy,,DUPLICATE 29486,"GroupId: 2845959
 Translate: clap clap
 MiscInfo: net-sl
 Translate: good job
@@ -76343,7 +76343,7 @@ Translate: to commit suicide
 Translate: to end one's life
 Translate: to choose death"
 218931,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,尻の毛まで抜かれる,けつのけまでぬかれる,,ketsu no ke made nukareru,???,wyrażenie idiomatyczne,,,"GroupId: 2425510
+WORD_EXPRESSION",,HIRAGANA,,,尻の毛まで抜かれる,けつのけまでぬかれる,,ketsu no ke made nukareru,???,wyrażenie idiomatyczne,,DUPLICATE 218946,"GroupId: 2425510
 Translate: to get ripped off for every last penny
 MiscInfo: id"
 218932,WORD_NOUN,,KATAKANA_HIRAGANA,,,オンラインテスト制御プログラム,オンラインテストせいぎょプログラム,,onrain tesuto seigyo puroguramu,program kontroli testów online,informatyka,,,"GroupId: 2290060
@@ -76365,3 +76365,35 @@ WORD_NOUN",,HIRAGANA,,,大祓の詞,おおはらえのことば,,ooharae no koto
 Translate: norito read at a great purification event"
 218938,WORD_NOUN,,HIRAGANA,,,政治的指導者,せいじてきしどうしゃ,,seijiteki shidousha,lider polityczny,,,,"GroupId: 1996560
 Translate: political leader"
+218939,WORD_VERB_U,,HIRAGANA,,,眺め遣る,ながめやる,,nagame yaru,wpatrywać się na,,,,"GroupId: 2678910
+Translate: to gaze out at
+Translate: to look out over"
+218940,WORD_NOUN,,HIRAGANA,,,突角,とっかく,,tokkaku,kąt wypukły,,,,"GroupId: 1456510
+Translate: convex angle"
+218941,WORD_NOUN,,KATAKANA,,,-,ウィンドカーム,,windo kaamu,"spokojny wiatr
+brak wiatru",,,,"GroupId: 2838641
+Translate: wind calm
+Translate: absence of wind"
+218942,WORD_NOUN,,KATAKANA,,,-,ウインド・カーム,,uindo kaamu,"spokojny wiatr
+brak wiatru",,,,"GroupId: 2838641
+Translate: wind calm
+Translate: absence of wind"
+218943,WORD_NOUN,,KATAKANA,,,-,ウィンド・カーム,,windo kaamu,"spokojny wiatr
+brak wiatru",,,,"GroupId: 2838641
+Translate: wind calm
+Translate: absence of wind"
+218944,WORD_VERB_U,,HIRAGANA,,,遊び暮す,あそびくらす,,asobi kurasu,"próżnować
+marnować swój czas",,,,"GroupId: 1851470
+Translate: to idle away one's time"
+218945,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,目を掠める,めをかすめる,,me o kasumeru,"robić w tajemnicy
+robić w sekrecie",,,,"GroupId: 2662100
+Translate: to do in secret"
+218946,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,尻の毛まで抜かれる,しりのけまでぬかれる,,shiri no ke made nukareru,???,wyrażenie idiomatyczne,,DUPLICATE 218931,"GroupId: 2425510
+Translate: to get ripped off for every last penny
+MiscInfo: id"
+218947,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,行水をつかう,ぎょうずいをつかう,,gyouzui o tsukau,"brać kąpiel na otwartym powietrzu
+wykąpać się na otwartym powietrzu",,,,"GroupId: 2559040
+Translate: to have a bath in the open air"
