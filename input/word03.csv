@@ -76482,9 +76482,9 @@ Translate: secret investigation"
 Translate: go player
 MiscInfo: obsc"
 218974,"WORD_ADJECTIVE_TARU
-WORD_ADVERB_TO",,HIRAGANA,,,嘖々,さくさく,,saku saku,wysoko,"np. renomowany, chwalony",,,"GroupId: 2845776
+WORD_ADVERB_TO",,HIRAGANA,,,嘖々,さくさく,,saku saku,wysoko,"np. renomowany, chwalony",,DUPLICATE 49790,"GroupId: 2845776
 Translate: highly (renowned, praised, reputed, etc.)"
-218975,WORD_NOUN,,HIRAGANA,,,絹張り,きぬばり,,kinubari,jedwabne wykończenie,,,,"GroupId: 1934400
+218975,WORD_NOUN,,HIRAGANA,,,絹張り,きぬばり,,kinu bari,jedwabne wykończenie,,,,"GroupId: 1934400
 Translate: silk finish"
 218976,WORD_NOUN,,HIRAGANA,,,段碁,だんご,,dan go,gracz go o randze dan,mało znane słowo,,,"GroupId: 2845842
 Translate: dan-ranked go player
@@ -76493,7 +76493,7 @@ MiscInfo: obsc"
 Translate: deva (being with god-like characteristics)
 MiscInfo: obsc"
 218978,WORD_NOUN,,HIRAGANA,,,漏斗胸,ろうときょう,,routokyou,"klatka piersiowa szewska
-klatka piersiowa lejkowata (z wklęsłym mostkiem)",,,,"GroupId: 2444550
+klatka piersiowa lejkowata (z wklęsłym mostkiem)",,,DUPLICATE 219011,"GroupId: 2444550
 Translate: funnel chest
 Translate: pectus excavatum"
 218979,WORD_NOUN,,KATAKANA,,,-,メンタリング,,mentaringu,"bycie mentorem
@@ -76582,14 +76582,81 @@ kryształowa kula",,,,"GroupId: 2831119
 Translate: crystal ball"
 218997,WORD_ADJECTIVE_NO,,HIRAGANA,,,高精細度,こうせいさいど,,kousei saido,wysoka rozdzielczość,,,,"GroupId: 2690350
 Translate: high definition"
-218998,WORD_NOUN,,HIRAGANA,,,石櫃,いしびつ,,ishibitsu,kamienna urna w kształcie pudełka,,,,"GroupId: 2119650
+218998,WORD_NOUN,,HIRAGANA,,,石櫃,いしびつ,,ishibitsu,kamienna urna w kształcie pudełka,,,DUPLICATE 219016,"GroupId: 2119650
 Translate: box-shaped funerary urn made of stone"
 218999,WORD_NOUN,,KATAKANA,,,-,チャタリング,,chataringu,???,ang: chattering,,,"GroupId: 1077920
 Translate: chattering
 Translate: key-bounce (in keyboards)"
-219000,WORD_NOUN,,HIRAGANA,,,七大州,ななだいしゅう,,nanadaishuu,siedem kontynentów,,,,"GroupId: 2831280
+219000,WORD_NOUN,,HIRAGANA,,,七大州,ななだいしゅう,,nana daishuu,siedem kontynentów,,,DUPLICATE 219017,"GroupId: 2831280
 Translate: the seven continents"
 219001,WORD_NOUN,,HIRAGANA,,,交差検定,こうさけんてい,,kousa kentei,sprawdzian krzyżowy,"metoda statystyczna, polegająca na podziale próby statystycznej na podzbiory, a następnie przeprowadzaniu wszelkich analiz na niektórych z nich, podczas gdy pozostałe służą do potwierdzenia wiarygodności jej wyników",,,"GroupId: 2716410
 Translate: cross-validation"
 219002,WORD_NOUN,,HIRAGANA,,,回転磁場,かいてんじば,,kaiten jiba,wirujące pole,np. magnetyczne,,,"GroupId: 1976310
 Translate: rotating field"
+219003,WORD_NOUN,,HIRAGANA,,,とう嚢炎,とうのうえん,,tounouen,syndrom trzeszczkowy,"przewlekła choroba końskich nóg obejmująca deformację w okolicy tzw. trzeszczki kopytowej oraz jej więzadeł, kaletki oraz ścięgna zginacza głębokiego",,,"GroupId: 2111930
+Translate: navicular disease
+Translate: navicular syndrome"
+219004,WORD_NOUN,,KATAKANA,,,-,ホット・ハッチ,,hotto hacchi,hot hatch,termin określający sportowe wersje kompaktowych i subkompaktowych samochodów osobowych z 3- lub 5-drzwiowym nadwoziem typu hatchback,,,"GroupId: 2831754
+Translate: hot hatch (car)"
+219005,WORD_NOUN,,KATAKANA,,,-,ベニハシガラス,,benihashigarasu,wrończyk,"gatunek średniej wielkości ptaka z rodziny krukowatych, Pyrrhocorax pyrrhocorax",,,"GroupId: 2514890
+Translate: red-billed chough (Pyrrhocorax pyrrhocorax)
+MiscInfo: uk"
+219006,WORD_NOUN,,KATAKANA,,,-,モノティス,,monotisu,Monotis,,,,"GroupId: 2673630
+Translate: Monotis (genus of Late Triassic bivalve)"
+219007,WORD_NOUN,,KATAKANA_HIRAGANA,,,ザラ場,ザラば,,zara ba,"sesja ciągła (np. handlu na giełdzie)
+zaraba",,,,"GroupId: 2189510
+Translate: continuous session (e.g. trading in a stock exchange)
+Translate: zaraba"
+219008,WORD_NOUN,,HIRAGANA,,,刈り払い,かりはらい,,kari harai,pielenie (przed sadzeniem drzew),,,,"GroupId: 2415060
+Translate: weeding (prior to tree-planting)"
+219009,"WORD_ADJECTIVE_TARU
+WORD_ADVERB_TO",,HIRAGANA,,,嘖嘖,さくさく,,saku saku,wysoko,"np. renomowany, chwalony",,DUPLICATE 49790,"GroupId: 2845776
+Translate: highly (renowned, praised, reputed, etc.)"
+219010,WORD_NOUN,,HIRAGANA,,,絹ばり,きぬばり,,kinu bari,jedwabne wykończenie,,,,"GroupId: 1934400
+Translate: silk finish"
+219011,WORD_NOUN,,HIRAGANA,,,漏斗胸,ろときょう,,rotokyou,"klatka piersiowa szewska
+klatka piersiowa lejkowata (z wklęsłym mostkiem)",,,DUPLICATE 218978,"GroupId: 2444550
+Translate: funnel chest
+Translate: pectus excavatum"
+219012,WORD_EXPRESSION,,KATAKANA_HIRAGANA,,,ブタもおだてりゃ木に登る,ブタもおだてりゃきにのぼる,,buta mo odaterya ki ni noboru,"pochlebstwa zmotywują każdego
+pochlebstwa potrafią zdziałać cuda
+nawet świnia potrafi wejść na drzewo, kiedy jest chwalona",przysłowie,,,"GroupId: 2791100
+Translate: flattery will motivate anyone
+MiscInfo: proverb
+Translate: flattery can do wonders
+MiscInfo: proverb
+Translate: even a pig will climb up a tree if flattered
+MiscInfo: proverb"
+219013,WORD_EXPRESSION,,HIRAGANA,,,豚も煽てりゃ木に登る,ぶたもおだてりゃきにのぼる,,buta mo odaterya ki ni noboru,"pochlebstwa zmotywują każdego
+pochlebstwa potrafią zdziałać cuda
+nawet świnia potrafi wejść na drzewo, kiedy jest chwalona",przysłowie,,,"GroupId: 2791100
+Translate: flattery will motivate anyone
+MiscInfo: proverb
+Translate: flattery can do wonders
+MiscInfo: proverb
+Translate: even a pig will climb up a tree if flattered
+MiscInfo: proverb"
+219014,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,いま一歩,いまいっぽ,,ima ippo,"jeden więcej
+inny
+kolejny
+nie bardzo
+nie całkiem
+???",,,,"GroupId: 2069740
+Translate: one more
+Translate: another
+Translate: the other
+Translate: not quite
+Translate: close run
+Translate: just falling short of success"
+219015,WORD_NOUN,,KATAKANA,,,-,サブチャンネル,,sabuchanneru,podkanał,ang: subchannel,,,"GroupId: 2451390
+Translate: subchannel
+Translate: sub-channel"
+219016,WORD_NOUN,,HIRAGANA,,,石櫃,せきひつ,,sekihitsu,kamienna urna w kształcie pudełka,,,DUPLICATE 218998,"GroupId: 2119650
+Translate: box-shaped funerary urn made of stone"
+219017,WORD_NOUN,,HIRAGANA,,,七大州,しちだいしゅう,,shichi daishuu,siedem kontynentów,,,DUPLICATE 219000,"GroupId: 2831280
+Translate: the seven continents"
+219018,WORD_NOUN,,HIRAGANA,,,七大洲,ななだいしゅう,,nana daishuu,siedem kontynentów,,,DUPLICATE 219019,"GroupId: 2831280
+Translate: the seven continents"
+219019,WORD_NOUN,,HIRAGANA,,,七大洲,しちだいしゅう,,shichi daishuu,siedem kontynentów,,,DUPLICATE 219018,"GroupId: 2831280
+Translate: the seven continents"
