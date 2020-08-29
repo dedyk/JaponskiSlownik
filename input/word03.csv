@@ -1733,7 +1733,7 @@ przebijanie otworów",np. matrycą,,DUPLICATE 206075,"GroupId: 2036030
 Translate: punching (e.g. with a die)"
 200419,WORD_NOUN,,HIRAGANA,,,不法投棄,ふほうとうき,,fuhou touki,nielegalne wysypisko,np. śmieci,,,"GroupId: 1946040
 Translate: unlawful dumping (e.g. of garbage)"
-200420,WORD_NOUN,,HIRAGANA,,,国音字母,ちゅうおんじぼ,,chuuon jibo,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,DUPLICATE 200451,"GroupId: 2833253
+200420,WORD_NOUN,,HIRAGANA,,,注音字母,ちゅうおんじぼ,,chuuon jibo,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,DUPLICATE 200451,"GroupId: 2833253
 Translate: Bopomofo
 Translate: Chinese transliteration system now used mainly in Taiwan"
 200421,WORD_NOUN,,HIRAGANA,,,注音符号,ちゅういんふごう,,chuuin fugou,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,DUPLICATE 200452,"GroupId: 2833220
@@ -1881,7 +1881,7 @@ Translate: oven glove"
 200450,WORD_NOUN,,HIRAGANA,,,打抜き,うちぬき,,uchi nuki,"dziurkowanie
 przebijanie otworów",np. matrycą,,,"GroupId: 2036030
 Translate: punching (e.g. with a die)"
-200451,WORD_NOUN,,HIRAGANA,,,国音字母,ちゅういんじぼ,,chuuin jibo,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,DUPLICATE 200420,"GroupId: 2833253
+200451,WORD_NOUN,,HIRAGANA,,,注音字母,ちゅういんじぼ,,chuuin jibo,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,DUPLICATE 200420,"GroupId: 2833253
 Translate: Bopomofo
 Translate: Chinese transliteration system now used mainly in Taiwan"
 200452,WORD_NOUN,,HIRAGANA,,,注音符号,ちゅうおんふごう,,chuuon fugou,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,DUPLICATE 200421,"GroupId: 2833220
@@ -77023,11 +77023,10 @@ MiscInfo: vulg
 Translate: grool
 MiscInfo: sl
 MiscInfo: vulg"
-219120,WORD_EXPRESSION,,HIRAGANA,,,何なりとも,なんなりとも,,nannaritomo,"cokolwiek
-cokolwiek co lubi się",,,,"GroupId: 2826370
-Translate: anything
-Translate: whatever
-Translate: whatever one likes"
+219120,WORD_NOUN,,HIRAGANA,,,入牢,にゅうろう,,nyuurou,"uwięzienie
+więzienie
+kara więzienna",,,,"GroupId: 1466900
+Translate: imprisonment"
 219121,WORD_PRONOUN,,HIRAGANA,,,我儕,わなみ,,wanami,"ja (używane do mówienia do osoby równej sobie, archaizm)
 mnie (używane do mówienia do osoby równej sobie, archaizm)
 ty (używane do mówienia do osoby równej lub niższej sobie, archaizm, rzadko używane)",,,,"GroupId: 2845778
@@ -77041,9 +77040,8 @@ Translate: you
 MiscInfo: arch
 MiscInfo: rare
 AdditionalInfo: referring to an equal or inferior"
-219122,WORD_NOUN,,HIRAGANA,,,注音字母,ちゅうおんじぼ,,chuuon jibo,Bopomofo,"właściwie zhuyin fuhao czyli „znaki do zapisywania dźwięków” lub zhuyin zimu, czyli „litery opisujące dźwięki” – oparte na piśmie chińskim pismo fonetyczne służące do zapisywania wymowy znaków języka chińskiego, stosowane zwłaszcza do zapisu wymowy tzw. dialektów chińskich oraz niechińskich języków Chin",,,"GroupId: 2833253
-Translate: Bopomofo
-Translate: Chinese transliteration system now used mainly in Taiwan"
+219122,WORD_NOUN,,HIRAGANA,,,年税,ねんぜい,,nenzei,podatek roczny,,,,"GroupId: 1468920
+Translate: annual tax"
 219123,WORD_NOUN,,HIRAGANA,,,肝不全,かんふぜん,,kanfuzen,niewydolność wątroby,,,,"GroupId: 1990080
 Translate: liver failure"
 219124,"WORD_ADJECTIVE_I
@@ -77142,3 +77140,102 @@ Translate: sulphate
 Translate: sulfate"
 219148,WORD_NOUN,,HIRAGANA,,,文書概要,ぶんしょがいよう,,bunsho gaiyou,zarys dokumentu,,,,"GroupId: 2387390
 Translate: document profile"
+219149,WORD_NOUN,,HIRAGANA,,,十進二進変換,じっしんにしんへんかん,,jisshin nishin henkan,konwersja dziesiętna na binarną,,,,"GroupId: 2276870
+Translate: decimal to binary conversion"
+219150,WORD_NOUN,,HIRAGANA,,,糸毬体,しきゅうたい,,shikyuutai,kłębuszek nerkowy,anatomia,,,"GroupId: 2236080
+Translate: glomerulus"
+219151,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,黴が生える,かびがはえる,,kabi ga haeru,"spleśniały
+stęchły
+wyjść z mody (wyrażenie idiomatyczne)",,,,"GroupId: 2168510
+Translate: to get moldy
+Translate: to get mouldy
+Translate: to get out-of-fashion
+MiscInfo: id"
+219152,WORD_NOUN,,KATAKANA,,,-,イタチウオ,,itachiuo,Brotula multibarbata,gatunek ryby,,,"GroupId: 2199650
+Translate: goatsbeard brotula (species of ophidiiform fish, Brotula multibarbata)
+MiscInfo: uk"
+219153,WORD_NOUN,,HIRAGANA,,,まん汁,まんじる,,man jiru,wydzielina z pochwy,"slang, wulgarnie",,,"GroupId: 2845939
+Translate: pussy juice
+MiscInfo: sl
+MiscInfo: vulg
+Translate: grool
+MiscInfo: sl
+MiscInfo: vulg"
+219154,WORD_PRONOUN,,HIRAGANA,,,吾儕,わなみ,,wanami,"ja (używane do mówienia do osoby równej sobie, archaizm)
+mnie (używane do mówienia do osoby równej sobie, archaizm)
+ty (używane do mówienia do osoby równej lub niższej sobie, archaizm, rzadko używane)",,,,"GroupId: 2845778
+Translate: I
+MiscInfo: arch
+AdditionalInfo: used when speaking to one's equals
+Translate: me
+MiscInfo: arch
+AdditionalInfo: used when speaking to one's equals
+Translate: you
+MiscInfo: arch
+MiscInfo: rare
+AdditionalInfo: referring to an equal or inferior"
+219155,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,能筆,のうひつ,,nouhitsu,"wprawna kaligrafia
+wykwalifikowany kaligraf",,,,"GroupId: 1470240
+Translate: skillful penmanship
+Translate: skilled calligrapher"
+219156,WORD_NOUN,,HIRAGANA,,,漢字字典,かんじじてん,,kanji jiten,"słownik kanji
+słownik znaków",,,,"GroupId: 2845984
+Translate: kanji dictionary
+Translate: character dictionary"
+219157,WORD_EXPRESSION,,HIRAGANA,,,脇目もふらず,わきめもふらず,,wakime mo furazu,"bez patrzenia na boki
+bez patrzenia na prawo i lewo
+z całego serca
+z determinacją",,,,"GroupId: 2514790
+Translate: without looking aside
+Translate: looking neither right nor left
+Translate: wholeheartedly
+Translate: single-mindedly"
+219158,WORD_EXPRESSION,,HIRAGANA,,,わき目もふらず,わきめもふらず,,wakime mo furazu,"bez patrzenia na boki
+bez patrzenia na prawo i lewo
+z całego serca
+z determinacją",,,,"GroupId: 2514790
+Translate: without looking aside
+Translate: looking neither right nor left
+Translate: wholeheartedly
+Translate: single-mindedly"
+219159,WORD_EXPRESSION,,HIRAGANA,,,わき目も振らず,わきめもふらず,,wakime mo furazu,"bez patrzenia na boki
+bez patrzenia na prawo i lewo
+z całego serca
+z determinacją",,,,"GroupId: 2514790
+Translate: without looking aside
+Translate: looking neither right nor left
+Translate: wholeheartedly
+Translate: single-mindedly"
+219160,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,幽闇,ゆうあん,,yuuan,"ciemność
+mrok
+odosobnienie
+osamotnienie",,,,"GroupId: 1540280
+Translate: gloom
+Translate: darkness
+Translate: seclusion"
+219161,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,留守をあずかる,るすをあずかる,,rusu o azukaru,przejmować kontrolę podczas czyjeś nieobecności,,,,"GroupId: 2130950
+Translate: to take charge during someone's absence"
+219162,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,はるの雲,はるのくも,,haru no kumo,chmura unosząca się na wiosennym niebie,,,,"GroupId: 2627910
+Translate: cloud floating in a spring sky"
+219163,WORD_NOUN,,KATAKANA,,,-,ビワヒガイ,,biwahigai,Sarcocheilichthys variegatus microoculus,gatunek ryby,,,"GroupId: 2637020
+Translate: Biwa oily gudgeon (Sarcocheilichthys variegatus microoculus)
+MiscInfo: uk"
+219164,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,歴史の無い,れきしのない,,rekishi no nai,bez historii,,,,"GroupId: 2727720
+Translate: without a history
+Translate: historyless
+Translate: unhistoried
+Translate: unstoried"
+219165,WORD_NOUN,,HIRAGANA,,,吞酸,どんさん,,donsan,"refluks kwasowy
+zarzucanie kwasu żołądkowego
+zgaga",,,,"GroupId: 2019930
+Translate: acid reflux
+Translate: heart-burn"
+219166,WORD_NOUN,,KATAKANA,,,-,フリソデウオ,,furisodeuo,Desmodema polystictum,gatunek ryby z rodziny wstęgorowatych,,,"GroupId: 2637180
+Translate: polka-dot ribbonfish (Desmodema polystictum)
+MiscInfo: uk"
