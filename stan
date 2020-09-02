@@ -9,6 +9,3 @@ ludzie - 25
 uzupełniacz - x
 -----------
 suma: 70
-
-sugestie
-
