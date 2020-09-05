@@ -10,160 +10,76 @@ x,WORD_NOUN,,HIRAGANA,,,何期も,なんきも,,nankimo,wiele okresów,,,,"Group
 Translate: many periods"
 x,WORD_NOUN,,HIRAGANA,,,製薬業界,せいやくぎょうかい,,seiyaku gyoukai,przemysł farmaceutyczny,,,,"GroupId: 2098390
 Translate: pharmaceutical industry"
-611,WORD_NOUN,,HIRAGANA,,,乾湿計,かんしつけい,,kanshitsukei,"_
------------
-humidity
------------
-humidity meter",,,,"GroupId: 1209830
+x,WORD_NOUN,,HIRAGANA,,,乾湿計,かんしつけい,,kanshitsukei,miernik wilgotności,,,,"GroupId: 1209830
 Translate: humidity meter"
-612,WORD_NOUN,,HIRAGANA,,,絶対湿度,ぜったいしつど,,zettaishitsudo,"_
------------
-humidity
------------
-absolute humidity",,,,"GroupId: 1386880
+x,WORD_NOUN,,HIRAGANA,,,絶対湿度,ぜったいしつど,,zettai shitsudo,wilgotność bezwzględna,,,,"GroupId: 1386880
 Translate: absolute humidity"
-613,WORD_NOUN,,HIRAGANA,,,相対湿度,そうたいしつど,,soutaishitsudo,"_
------------
-humidity
------------
-relative humidity",,,,"GroupId: 1401140
+x,WORD_NOUN,,HIRAGANA,,,相対湿度,そうたいしつど,,soutai shitsudo,wilgotność względna,,,,"GroupId: 1401140
 Translate: relative humidity"
-671,WORD_NOUN,,HIRAGANA,,,特殊部落,とくしゅぶらく,,tokushuburaku,"_
------------
-特殊部落
------------
-burakumin area
-     sensitive",,,,"GroupId: 2095390
+x,WORD_NOUN,,HIRAGANA,,,特殊部落,とくしゅぶらく,,tokushu buraku,obszar burakumin,wrażliwie,,,"GroupId: 2095390
 Translate: burakumin area
 MiscInfo: sens"
-678,WORD_NOUN,,HIRAGANA,,,新平民,しんへいみん,,shinheimin,"_
------------
-新平民
------------
-name given to the lowest rank of the Japanese caste system after its abolition
-     obsolete term
-     derogatory",,,,"GroupId: 2142100
+x,WORD_NOUN,,HIRAGANA,,,新平民,しんへいみん,,shinheimin,nazwa nadana najniższej randze japońskiego systemu kastowego po jego zniesieniu,"przestarzałe słowo, poniżająco",,,"GroupId: 2142100
 Translate: name given to the lowest rank of the Japanese caste system after its abolition
 MiscInfo: obs
 MiscInfo: derog"
-723,"WORD_ADJECTIVE_NO
+x,"WORD_ADJECTIVE_NO
 WORD_ADJECTIVE_NA
-WORD_NOUN",,HIRAGANA,,,礼儀知らず,れいぎしらず,,reigishirazu,"_
------------
-礼儀知らず
------------
-rude
-impolite
-mannerless
-snotty",,,,"GroupId: 2789830
+WORD_NOUN",,HIRAGANA,,,礼儀知らず,れいぎしらず,,reigi shirazu,"niegrzeczny
+nieuprzejmy
+niewychowany
+źle wychowany
+zasmarkany",,,,"GroupId: 2789830
 Translate: rude
 Translate: impolite
 Translate: mannerless
 Translate: snotty"
-727,WORD_NOUN,,HIRAGANA,,,自然言語処理,しぜんげんごしょり,,shizengengoshori,"_
------------
-自然言語処理
------------
-natural language processing
-NLP",,,,"GroupId: 2445590
+x,WORD_NOUN,,HIRAGANA,,,自然言語処理,しぜんげんごしょり,,shizen gengo shori,przetwarzanie języka naturalnego,,,,"GroupId: 2445590
 Translate: natural language processing
 Translate: NLP"
-827,WORD_NOUN,,HIRAGANA,,,預金残高,よきんざんだか,,yokinzandaka,"_
------------
-預金残高
------------
-account balance",,,,"GroupId: 2620130
+x,WORD_NOUN,,HIRAGANA,,,預金残高,よきんざんだか,,yokin zandaka,saldo konta,,,,"GroupId: 2620130
 Translate: account balance"
-1061,"WORD_EXPRESSION
-WORD_ADVERB",,HIRAGANA,,,意のままに,いのままに,,inomamani,"_
------------
-意のままに
------------
-at will",,,,"GroupId: 2394480
+x,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,意のままに,いのままに,,i no mama ni,"na życzenie
+do woli
+na zawołanie",,,,"GroupId: 2394480
 Translate: at will"
-1159,WORD_NOUN,,HIRAGANA,,,有形無形,ゆうけいむけい,,yuukeimukei,"_
------------
-有形無形
------------
-tangible and intangible
-     yojijukugo
-material and spiritual
-     yojijukugo",,,,"GroupId: 1745410
+x,WORD_NOUN,,HIRAGANA,,,有形無形,ゆうけいむけい,,yuukei mukei,"rzeczy materialne i niematerialne
+materialne i duchowe",,,,"GroupId: 1745410
 Translate: tangible and intangible
 MiscInfo: yoji
 Translate: material and spiritual
 MiscInfo: yoji"
-1221,WORD_NOUN,,HIRAGANA,,,対面販売,たいめんはんばい,,taimenhanbai,"_
------------
-対面販売
------------
-counter selling
-face-to-face selling
-person-to-person selling",,,,"GroupId: 2558600
+x,WORD_NOUN,,HIRAGANA,,,対面販売,たいめんはんばい,,taimen hanbai,sprzedaż bezpośrednia,,,,"GroupId: 2558600
 Translate: counter selling
 Translate: face-to-face selling
 Translate: person-to-person selling"
-1412,WORD_NOUN,,HIRAGANA,,,曲想,きょくそう,,kyokusou,"_
------------
-曲想
------------
-musical theme
-motif",,,,"GroupId: 2107620
+x,WORD_NOUN,,HIRAGANA,,,曲想,きょくそう,,kyokusou,"temat muzyczny
+motyw",,,,"GroupId: 2107620
 Translate: musical theme
 Translate: motif"
-1458,"WORD_EXPRESSION
-WORD_VERB_U",,HIRAGANA,,,朱で描く,あかでえがく,,akadeegaku,"_
------------
-to paint
------------
-to miniate
-to paint red",,,,"GroupId: 2438430
+x,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,朱で描く,あかでえがく,,aka de egaku,"???
+pomalować na czerowno",,,,"GroupId: 2438430
 Translate: to miniate
 Translate: to paint red"
-1459,WORD_VERB_U,,HIRAGANA,,,塗り直す,ぬりなおす,,nurinaosu,"_
------------
-to paint
------------
-to repaint
-to paint again",,,,"GroupId: 2845827
+x,WORD_VERB_U,,HIRAGANA,,,塗り直す,ぬりなおす,,nuri naosu,"przemalować
+odmalować
+pomalować ponownie",,,,"GroupId: 2845827
 Translate: to repaint
 Translate: to paint again"
-1469,WORD_VERB_RU,,HIRAGANA,,,塗り分ける,ぬりわける,,nuriwakeru,"_
------------
-to paint
------------
-to paint in different colors (for different purposes) (colours)",,,,"GroupId: 2013170
+x,WORD_VERB_RU,,HIRAGANA,,,塗り分ける,ぬりわける,,nuri wakeru,malować w różnych kolorach (do różnych celów),,,,"GroupId: 2013170
 Translate: to paint in different colors (for different purposes) (colours)"
-1520,WORD_NOUN,,HIRAGANA,,,爆粉,ばくふん,,bakufun,"_
------------
-bakufun
------------
-detonating powder",,,,"GroupId: 2841841
+x,WORD_NOUN,,HIRAGANA,,,爆粉,ばくふん,,bakufun,proch detonujący,,,,"GroupId: 2841841
 Translate: detonating powder"
-1567,WORD_ADJECTIVE_NA,,HIRAGANA,,,因習的,いんしゅうてき,,inshuuteki,"_
------------
-因習的
------------
-conventional",,,,"GroupId: 2520510
+x,WORD_ADJECTIVE_NA,,HIRAGANA,,,因習的,いんしゅうてき,,inshuuteki,konwencjonalny,,,,"GroupId: 2520510
 Translate: conventional"
-1578,WORD_NOUN,,HIRAGANA,,,人造宝石,じんぞうほうせき,,jinzouhouseki,"_
------------
-人造宝石
------------
-artificial jewels",,,,"GroupId: 1368640
+x,WORD_NOUN,,HIRAGANA,,,人造宝石,じんぞうほうせき,,jinzou houseki,sztuczne klejnoty,,,,"GroupId: 1368640
 Translate: artificial jewels"
-1588,"WORD_ADVERBIAL_NOUN
-WORD_TEMPORAL_NOUN",,HIRAGANA,,,朝な夕な,あさなゆうな,,asanayuuna,"_
------------
-朝な夕な
------------
-morning and evening",,,,"GroupId: 2024910
+x,"WORD_ADVERBIAL_NOUN
+WORD_TEMPORAL_NOUN",,HIRAGANA,,,朝な夕な,あさなゆうな,,asa na yuu na,"rano i wieczorem
+poranek i wieczór",,,,"GroupId: 2024910
 Translate: morning and evening"
-1595,WORD_NOUN,,HIRAGANA,,,飛蚊症,ひぶんしょう,,hibunshou,"_
------------
-飛蚊症
------------
-myodesopsia
-seeing floaters in one's eye",,,,"GroupId: 1626600
+x,WORD_NOUN,,HIRAGANA,,,飛蚊症,ひぶんしょう,,hibunshou,myodesopsia,zjawisko postrzegania mętów ciała szklistego w oku,,,"GroupId: 1626600
 Translate: myodesopsia
 Translate: seeing floaters in one's eye"
