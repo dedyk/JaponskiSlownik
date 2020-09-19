@@ -3,9 +3,9 @@
 + word - 15
 ----------
 + 70000 - 20
-small - 5
-small2 - 5
-ludzie - 25
++ small - 5
++ small2 - 5
+ludzie - 25 + 2
 uzupełniacz - x
 -----------
 suma: 70
