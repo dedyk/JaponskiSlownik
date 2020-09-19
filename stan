@@ -11,4 +11,4 @@ uzupełniacz - x
 suma: 70
 
 =================
-
+od (łącznie): 220732
