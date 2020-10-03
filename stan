@@ -9,3 +9,7 @@ ludzie - 25
 uzupełniacz - x
 -----------
 suma: 70
+
+================
+ルックス
+spojrzenie wzrok mina wygląd	ang: looks
