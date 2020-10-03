@@ -11,5 +11,7 @@ uzupełniacz - x
 suma: 70
 
 ================
+221825: pierwszy nowy
+
 ルックス
 spojrzenie wzrok mina wygląd	ang: looks
