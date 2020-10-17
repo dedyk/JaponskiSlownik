@@ -11,6 +11,4 @@ uzupełniacz - x
 suma: 70
 =====
 
-gid: 1321800
-
 pierwszy nowy: 222932
