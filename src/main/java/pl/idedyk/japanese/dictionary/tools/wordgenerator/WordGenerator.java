@@ -442,6 +442,13 @@ public class WordGenerator {
 							notFoundWordList.add(polishJapaneseEntry);
 						}
 					}
+					
+					if (checkInJishoOrg == false) {
+						
+						float percent = 100.0f * (counter.floatValue() / (float)missingWords.size());
+						
+						System.out.println("Postęp: " + counter + " / " + missingWords.size() + " (" + percent + "%)");
+					}					
 				}
 
 				reader.close();
