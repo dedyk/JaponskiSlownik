@@ -9,5 +9,3 @@ ludzie - 25
 uzupełniacz - x
 -----------
 suma: 70
-
-pierwszy: 224060
