@@ -10,4 +10,4 @@ uzupełniacz - x
 -----------
 suma: 70
 
-pierwszy: 24060
+pierwszy: 224060
