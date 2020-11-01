@@ -6,6 +6,6 @@
 + small - 5
 + small2 - 5
 * ludzie - 25
-uzupełniacz - 23
+uzupełniacz - 23 -> 13
 -----------
 suma: 70
