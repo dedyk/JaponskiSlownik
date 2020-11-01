@@ -314,7 +314,15 @@ public class WordGenerator {
 								
 				System.out.println("Szukanie...");
 				
-				for (String currentMissingWord : missingWords) {
+				for (int idxMissingWords = 0; idxMissingWords < missingWords.size(); ++idxMissingWords) {
+					
+					String currentMissingWord = missingWords.get(idxMissingWords);					
+						
+					float percent = 100.0f * ((idxMissingWords + 1) / (float)missingWords.size());
+					
+					System.out.println("Postęp: " + (idxMissingWords + 1) + " / " + missingWords.size() + " (" + percent + "%)");
+					
+					//										
 					
 					if (currentMissingWord.equals("") == true) {
 						continue;
@@ -441,13 +449,6 @@ public class WordGenerator {
 							
 							notFoundWordList.add(polishJapaneseEntry);
 						}
-					}
-					
-					if (checkInJishoOrg == false) {
-						
-						float percent = 100.0f * (counter.floatValue() / (float)missingWords.size());
-						
-						System.out.println("Postęp: " + counter + " / " + missingWords.size() + " (" + percent + "%)");
 					}					
 				}
 
@@ -542,7 +543,15 @@ public class WordGenerator {
 				boolean reachedLimit = false;
 				
 				BEFORE_LOOP:
-				for (String currentMissingWord : missingWords) {
+				for (int idxMissingWords = 0; idxMissingWords < missingWords.size(); ++idxMissingWords) {
+					
+					String currentMissingWord = missingWords.get(idxMissingWords);					
+											
+					float percent = 100.0f * ((idxMissingWords + 1) / (float)missingWords.size());
+					
+					System.out.println("Postęp: " + (idxMissingWords + 1) + " / " + missingWords.size() + " (" + percent + "%)");
+
+					//
 					
 					if (currentMissingWord.equals("") == true) {
 						continue;
@@ -656,8 +665,16 @@ public class WordGenerator {
 				
 				System.out.println("Szukanie...");
 				
-				for (String currentMissingWord : missingWords) {
+				for (int idxMissingWords = 0; idxMissingWords < missingWords.size(); ++idxMissingWords) {
 					
+					String currentMissingWord = missingWords.get(idxMissingWords);					
+											
+					float percent = 100.0f * ((idxMissingWords + 1) / (float)missingWords.size());
+					
+					System.out.println("Postęp: " + (idxMissingWords + 1) + " / " + missingWords.size() + " (" + percent + "%)");
+
+					//
+						
 					if (currentMissingWord.equals("") == true) {
 						continue;
 					}
@@ -1569,7 +1586,15 @@ public class WordGenerator {
 								
 				System.out.println("Szukanie...");
 								
-				for (String currentMissingWord : missingWords) {
+				for (int idxMissingWords = 0; idxMissingWords < missingWords.size(); ++idxMissingWords) {
+					
+					String currentMissingWord = missingWords.get(idxMissingWords);					
+											
+					float percent = 100.0f * ((idxMissingWords + 1) / (float)missingWords.size());
+					
+					System.out.println("Postęp: " + (idxMissingWords + 1) + " / " + missingWords.size() + " (" + percent + "%)");
+
+					//
 					
 					if (currentMissingWord.equals("") == true) {
 						continue;
