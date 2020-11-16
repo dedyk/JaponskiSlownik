@@ -9,3 +9,5 @@ ludzie - 25
 uzupełniacz - x
 -----------
 suma: 70
+
+pierwszy nowy: 225340
