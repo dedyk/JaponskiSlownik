@@ -511,7 +511,6 @@ public class Helper {
 		// mapowanie typow
 		Map<String, DictionaryEntryType> nameTypeMapper = new HashMap<String, DictionaryEntryType>();
 		
-		nameTypeMapper.put("fem", DictionaryEntryType.WORD_FEMALE_NAME);
 		nameTypeMapper.put("unclass", DictionaryEntryType.WORD_UNCLASS_NAME);
 		nameTypeMapper.put("place", DictionaryEntryType.WORD_PLACE);
 		nameTypeMapper.put("given", DictionaryEntryType.WORD_NAME);
@@ -523,6 +522,18 @@ public class Helper {
 		nameTypeMapper.put("product", DictionaryEntryType.WORD_PRODUCT_NAME);
 		nameTypeMapper.put("organization", DictionaryEntryType.WORD_ORGANIZATION_NAME);
 		nameTypeMapper.put("station", DictionaryEntryType.WORD_STATION_NAME);
+		nameTypeMapper.put("char", DictionaryEntryType.WORD_CHARACTER);
+		nameTypeMapper.put("creat", DictionaryEntryType.WORD_CREATURE);
+		nameTypeMapper.put("dei", DictionaryEntryType.WORD_DEITY);
+		nameTypeMapper.put("ev", DictionaryEntryType.WORD_EVENT);
+		nameTypeMapper.put("fem", DictionaryEntryType.WORD_FEMALE_NAME);
+		nameTypeMapper.put("fict", DictionaryEntryType.WORD_FICT);
+		nameTypeMapper.put("leg", DictionaryEntryType.WORD_LEGEND);
+		nameTypeMapper.put("myth", DictionaryEntryType.WORD_MYTHOLOGY);
+		nameTypeMapper.put("obj", DictionaryEntryType.WORD_OBJECT);
+		nameTypeMapper.put("oth", DictionaryEntryType.WORD_OTHER);
+		nameTypeMapper.put("relig", DictionaryEntryType.WORD_RELIGION);
+		nameTypeMapper.put("serv", DictionaryEntryType.WORD_SERVICE);
 		
 		// informacje wygenerowane automatycznie !!!!!!!!!!!!!!!!!!11
 		// WORD_COMPANY_NAME
