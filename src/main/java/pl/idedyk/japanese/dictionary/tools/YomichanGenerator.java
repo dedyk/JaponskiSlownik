@@ -86,7 +86,8 @@ public class YomichanGenerator {
 			put(DictionaryEntryType.WORD_VERB_AUX, new DefinitionTag("cz-pom", 8));
 			put(DictionaryEntryType.WORD_NIDAN_VERB, new DefinitionTag("nid-cz", 8));
 			
-			put(DictionaryEntryType.WORD_COPULA_DA, new DefinitionTag("kop", 9));
+			put(DictionaryEntryType.WORD_COPULA, new DefinitionTag("kop", 9));
+			put(DictionaryEntryType.WORD_COPULA_DA, new DefinitionTag("kop_da", 9));
 			
 			put(DictionaryEntryType.WORD_PROPER_NOUN, new DefinitionTag("naz-wl", 10));
 			
@@ -112,6 +113,28 @@ public class YomichanGenerator {
 			put(DictionaryEntryType.WORD_PRODUCT_NAME, new DefinitionTag("prod", 19));
 			
 			put(DictionaryEntryType.WORD_UNCLASS_NAME, new DefinitionTag("nies", 20));
+			
+			put(DictionaryEntryType.WORD_CHARACTER, new DefinitionTag("post", 21));
+			
+			put(DictionaryEntryType.WORD_CREATURE, new DefinitionTag("stwo", 22));
+			
+			put(DictionaryEntryType.WORD_DEITY, new DefinitionTag("bóst", 23));
+			
+			put(DictionaryEntryType.WORD_EVENT, new DefinitionTag("wydarz", 24));
+			
+			put(DictionaryEntryType.WORD_FICT, new DefinitionTag("fikc", 25));
+			
+			put(DictionaryEntryType.WORD_LEGEND, new DefinitionTag("lege", 26));
+			
+			put(DictionaryEntryType.WORD_MYTHOLOGY, new DefinitionTag("mito", 27));
+			
+			put(DictionaryEntryType.WORD_OBJECT, new DefinitionTag("obie", 28));
+			
+			put(DictionaryEntryType.WORD_OTHER, new DefinitionTag("inny", 29));
+			
+			put(DictionaryEntryType.WORD_RELIGION, new DefinitionTag("reli", 30));
+			
+			put(DictionaryEntryType.WORD_SERVICE, new DefinitionTag("usłu", 31));
 						
 			put(DictionaryEntryType.WORD_EMPTY, new DefinitionTag("", 999));
 			put(DictionaryEntryType.UNKNOWN, new DefinitionTag("", 999));			
