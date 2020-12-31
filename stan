@@ -9,3 +9,5 @@ ludzie - 25 + 1
 uzupełniacz - x
 -----------
 suma: 70
+
+TO_DELETE
