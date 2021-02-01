@@ -3307,8 +3307,73 @@ public class WordGenerator {
 			
 			case FIND_WORDS_NO_EXIST_IN_JMEDICT: {
 				
+				CommandLineParser commandLineParser = new DefaultParser();
+				
+				//
+				
+				Integer findWordsSize = null;
+				Boolean randomWords = false;
+				Boolean respectIgnoreNoJmedict = false;
+				
+				//
+				
+				Options options = new Options();
+				
+				options.addOption("s", "size", true, "Size of find words");
+				options.addOption("r", "random", false, "Random words");
+				options.addOption("rinj", "respect-ignore-no-jmedict", false, "Ignore jmedict empty raw data");
+				
+				options.addOption("h", "help", false, "Help");
+				
+				//
+				
+				CommandLine commandLine = null;
+				
+				try {
+					commandLine = commandLineParser.parse(options, args);
+					
+				} catch (UnrecognizedOptionException e) {
+					
+					System.out.println(e.getMessage() + "\n");
+					
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FIND_WORDS_NO_EXIST_IN_JMEDICT.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				if (commandLine.hasOption("help") == true) {
+
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FIND_WORDS_NO_EXIST_IN_JMEDICT.getOperation(), options );
+					
+					System.exit(1);
+				}			
+				
+				if (commandLine.hasOption("random") == true) {
+					randomWords = true;
+				}
+				
+				if (commandLine.hasOption("size") == true) {
+					findWordsSize = Integer.parseInt(commandLine.getOptionValue("size"));
+				}
+				
+				if (commandLine.hasOption("respect-ignore-no-jmedict") == true) {
+					respectIgnoreNoJmedict = true;
+				}
+
+				//
+				
 				// lista wszystkich slow
 				List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+				
+				if (randomWords == true) {
+					polishJapaneseEntriesList = new ArrayList<>(polishJapaneseEntriesList);
+					
+					Collections.shuffle(polishJapaneseEntriesList);
+				}
 
 				List<PolishJapaneseEntry> result = new ArrayList<>();
 				
@@ -3322,11 +3387,21 @@ public class WordGenerator {
 						continue;
 					}
 					
+					if (respectIgnoreNoJmedict == true && polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.IGNORE_NO_JMEDICT) == true) {
+						continue;
+					}
+					
 					// szukanie slow
 					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
 											
 					if (groupEntryList == null || groupEntryList.size() == 0) {						
 						result.add(polishJapaneseEntry);
+					}
+					
+					//
+					
+					if (findWordsSize != null && result.size() >= findWordsSize) {
+						break;
 					}
 				}
 				
