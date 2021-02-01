@@ -3410,6 +3410,65 @@ public class WordGenerator {
 				break;
 			}
 			
+			case FIND_WORDS_WITH_JMEDICT_GROUP_CHANGE: {
+								
+				// lista wszystkich slow
+				List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+				
+				List<Integer> result = new ArrayList<>();
+				
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				
+				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+					
+					DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+					
+					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+						continue;
+					}
+					
+					Integer polishJapaneseEntryGroupIdFromJmedictRawDataList = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+					
+					if (polishJapaneseEntryGroupIdFromJmedictRawDataList == null) {
+						continue;
+					}
+					
+					// szukanie slow
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+																
+					if (groupEntryList != null && groupEntryList.size() > 0) {
+						
+						if (JMENewDictionary.isMultiGroup(groupEntryList) == true) {
+							throw new RuntimeException("MultiGroup for: " + polishJapaneseEntry.getId());
+						}
+
+						if (groupEntryList.get(0).getGroup().getId().intValue() != polishJapaneseEntryGroupIdFromJmedictRawDataList.intValue()) {						
+							if (result.contains(polishJapaneseEntryGroupIdFromJmedictRawDataList) == false) {
+								result.add(polishJapaneseEntryGroupIdFromJmedictRawDataList);
+							}
+						}
+					}					
+				}
+				
+				if (result.size() > 0) {
+					
+					System.out.print("./word-generator.sh find-words-with-jmedict-change -s 88888 -f -gid ");
+					
+					for (int i = 0; i < result.size(); ++i) {
+						
+						if (i != 0) {
+							System.out.print(",");
+						}
+						
+						System.out.print(result.get(i));
+					}
+					
+					System.out.println();
+				}				
+				
+				break;
+			}
+			
 			case GET_WORDS_BY_ID: {
 				
 				final String wordIdsFileName = "input/word-ids.csv";

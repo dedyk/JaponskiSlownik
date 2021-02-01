@@ -46,6 +46,8 @@ public enum Operation {
 	
 	FIND_WORDS_NO_EXIST_IN_JMEDICT("find-words-no-exist-in-jmedict", "Pokazuje słowa, które nie istnieją już w słowniku jmedict"),
 	
+	FIND_WORDS_WITH_JMEDICT_GROUP_CHANGE("find-words-with-jmedict-group-change", "Podaje listę identyfikatorów grup w słowniku, które zmieniły swoją grupę"),
+	
 	GET_WORDS_BY_ID("get-words-by-id", "Pobiera słowa o podanych id'kach"),
 	
 	FIND_KANJIS_WITH_KANJIDIC2_CHANGE("find-kanjis-with-kanjidic2-change", "Pokazuje słowa, które zmieniły swoje tłumaczenie w kanjidic2"),
