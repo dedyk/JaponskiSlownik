@@ -54,6 +54,8 @@ public enum Operation {
 	
 	FILTER_WORD_LIST("filter-word-list", "Filtruje listę słów"),
 	
+	FIND_PARTIAL_TRANSLATE_WORDS("find-partial-translate-words", "Pokazuje słowa niewpełni przetłumaczone"),
+	
 	HELP("help", "Pokazuje pomoc");
 	
 	private String operation;

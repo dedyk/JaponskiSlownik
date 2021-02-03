@@ -3970,6 +3970,124 @@ public class WordGenerator {
 				break;
 			}
 			
+			case FIND_PARTIAL_TRANSLATE_WORDS: {
+				
+				// wczytanie slownika
+				List<PolishJapaneseEntry> polishJapaneseEntries = wordGeneratorHelper.getPolishJapaneseEntriesList();
+
+				// cache'owanie slownika
+				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
+				
+				// wczytanie slownika jmedict
+				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();	
+				
+				class PolishJapaneseEntryAndGroupEntryWrapper {
+					
+					PolishJapaneseEntry polishJapaneseEntry;
+					
+					GroupEntry groupEntry;
+					
+					public PolishJapaneseEntryAndGroupEntryWrapper(PolishJapaneseEntry polishJapaneseEntry, GroupEntry groupEntry) {
+						this.polishJapaneseEntry = polishJapaneseEntry;
+						this.groupEntry = groupEntry;
+					}
+				}
+				
+				//
+
+				final Map<Integer, PolishJapaneseEntryAndGroupEntryWrapper> result = new TreeMap<>();			
+				
+				BEFORE_MAIN_FOR:
+				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
+										
+					DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+					
+					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+						continue;
+					}
+										
+					// szukanie slow
+					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+					
+					if (groupEntryList == null && checkForPartialTranslates(polishJapaneseEntry) == true && result.containsKey(polishJapaneseEntry.getId()) == false) {
+												
+						result.put(polishJapaneseEntry.getId(), new PolishJapaneseEntryAndGroupEntryWrapper(polishJapaneseEntry, null));
+						
+						continue BEFORE_MAIN_FOR;			
+					}
+					
+					if (groupEntryList != null && groupEntryList.size() > 0) {
+						
+						List<GroupEntry> groupEntryListForGroupEntry = groupEntryList.get(0).getGroup().getGroupEntryList(); // podmiana na wszystkie elementy z grupy
+						
+						// grupujemy po tych samych tlumaczeniach
+						List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryListForGroupEntry);
+										
+						// chodzimy po tych samych tlumaczeniach
+						for (List<GroupEntry> theSameTranslateGroupEntryList : groupByTheSameTranslateGroupEntryList) {
+								
+							GroupEntry groupEntry = theSameTranslateGroupEntryList.get(0); // pierwszy element z grupy
+
+							String groupEntryKanji = groupEntry.getKanji();
+							String groupEntryKana = groupEntry.getKana();
+															
+							PolishJapaneseEntry polishJapaneseEntryInGroup = Helper.findPolishJapaneseEntryWithEdictDuplicate(
+									polishJapaneseEntry, cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+
+							if (polishJapaneseEntryInGroup == null) {								
+								throw new RuntimeException(); // to nigdy nie powinno zdazyc sie
+							}
+							
+							if (result.containsKey(polishJapaneseEntryInGroup.getId()) == false && checkForPartialTranslates(polishJapaneseEntryInGroup) == true) {								
+								
+								result.put(polishJapaneseEntryInGroup.getId(), new PolishJapaneseEntryAndGroupEntryWrapper(polishJapaneseEntryInGroup, groupEntry));
+																
+								continue BEFORE_MAIN_FOR;								
+							}							
+						}
+					}
+				}
+				
+				// zapis slownika
+				List<PolishJapaneseEntry> polishJapaneseEntryList = new ArrayList<>();
+				
+				for (PolishJapaneseEntryAndGroupEntryWrapper polishJapaneseEntryAndGroupEntryWrapper : result.values()) {
+					polishJapaneseEntryList.add(polishJapaneseEntryAndGroupEntryWrapper.polishJapaneseEntry);
+				}
+				
+				CsvReaderWriter.generateCsv(new String[] { "input/word-partial-translates.csv" }, polishJapaneseEntryList, true, true, false, true,
+					new ICustomAdditionalCsvWriter() {
+						
+						@Override
+						public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
+							
+							PolishJapaneseEntryAndGroupEntryWrapper polishJapaneseEntryAndGroupEntryWrapper = result.get(polishJapaneseEntry.getId());
+							
+							if (polishJapaneseEntryAndGroupEntryWrapper.groupEntry == null) {
+								return;
+							}
+							
+							List<GroupEntryTranslate> translateList = polishJapaneseEntryAndGroupEntryWrapper.groupEntry.getTranslateList();
+							
+							List<String> translateList2 = new ArrayList<>();
+							
+							for (GroupEntryTranslate groupEntryTranslate : translateList) {								
+								translateList2.add(groupEntryTranslate.getTranslate());								
+							}
+														
+							csvWriter.write(Utils.convertListToString(translateList2));							
+						}
+						
+						@Override
+						public void write(CsvWriter csvWriter, KanjiEntryForDictionary kanjiEntry)
+								throws IOException {								
+							throw new UnsupportedOperationException();								
+						}
+				});
+				
+				break;
+			}
+			
 			case HELP: {
 				
 				// pobranie listy mozliwych operacji
@@ -3988,6 +4106,24 @@ public class WordGenerator {
 				
 				throw new Exception("Brak implementacji dla operacji: " + operation);				
 		}		
+	}
+	
+	private static boolean checkForPartialTranslates(PolishJapaneseEntry polishJapaneseEntry) {
+		
+		List<String> translates = polishJapaneseEntry.getTranslates();
+		
+		// do wyboru
+		/*
+		if (translates.contains("???") == false) {
+			return false;
+		}
+		*/
+
+		if (translates.size() != 1 || translates.get(0).equals("???") == false) {
+			return false;
+		}
+		
+		return true;
 	}
 	
 	private static List<String> readFile(String fileName) {
