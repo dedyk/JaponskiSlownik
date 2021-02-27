@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xml="http://www.w3.org/XML/1998/namespace" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xml="http://www.w3.org/XML/1998/namespace" elementFormDefault="qualified" attributeFormDefault="unqualified"
+	version="1.0">
 
-	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="https://www.w3.org/2009/01/xml.xsd" />
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd" />
 
-<!-- DOKONCZYC !!! => Test6 -->
+	<!-- DOKONCZYC !!! => Test6 -->
 
 	<xsd:element name="JMdict">
 		<xsd:complexType>
@@ -25,11 +26,11 @@
 													<xsd:enumeration value="word containing irregular kana usage" />
 													<xsd:enumeration value="word containing irregular kanji usage" />
 													<xsd:enumeration value="irregular okurigana usage" />
-													<xsd:enumeration value="word containing out-dated kanji" />																										
+													<xsd:enumeration value="word containing out-dated kanji" />
 												</xsd:restriction>
 											</xsd:simpleType>
 										</xsd:element>
-										
+
 										<xsd:element name="ke_pri" minOccurs="0" maxOccurs="unbounded">
 											<xsd:simpleType>
 												<xsd:restriction base="xsd:string">
@@ -89,9 +90,9 @@
 													<xsd:enumeration value="nf45"></xsd:enumeration>
 													<xsd:enumeration value="nf46"></xsd:enumeration>
 													<xsd:enumeration value="nf47"></xsd:enumeration>
-													<xsd:enumeration value="nf48"></xsd:enumeration>											
-												</xsd:restriction>											
-											</xsd:simpleType>										
+													<xsd:enumeration value="nf48"></xsd:enumeration>
+												</xsd:restriction>
+											</xsd:simpleType>
 										</xsd:element>
 									</xsd:sequence>
 								</xsd:complexType>
@@ -101,7 +102,8 @@
 							<xsd:element name="r_ele" minOccurs="1" maxOccurs="unbounded">
 								<xsd:complexType>
 									<xsd:sequence>
-
+										<xsd:element name="reb" minOccurs="1" maxOccurs="1" type="xsd:string" />
+										<xsd:element name="re_nokanji" minOccurs="0" maxOccurs="1" />
 									</xsd:sequence>
 								</xsd:complexType>
 							</xsd:element>
@@ -109,6 +111,123 @@
 							<xsd:element name="sense" minOccurs="1" maxOccurs="unbounded">
 								<xsd:complexType>
 									<xsd:sequence>
+										<xsd:element name="pos" minOccurs="0" maxOccurs="unbounded">
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:enumeration value="noun or verb acting prenominally" />
+													<xsd:enumeration value="adjective (keiyoushi)" />
+													<xsd:enumeration value="adjective (keiyoushi) - yoi/ii class" />
+													<xsd:enumeration value="'kari' adjective (archaic)" />
+													<xsd:enumeration value="'ku' adjective (archaic)" />
+													<xsd:enumeration value="adjectival nouns or quasi-adjectives (keiyodoshi)" />
+													<xsd:enumeration value="archaic/formal form of na-adjective" />
+													<xsd:enumeration value="nouns which may take the genitive case particle 'no'" />
+													<xsd:enumeration value="pre-noun adjectival (rentaishi)" />
+													<xsd:enumeration value="'shiku' adjective (archaic)" />
+													<xsd:enumeration value="'taru' adjective" />
+													<xsd:enumeration value="adverb (fukushi)" />
+													<xsd:enumeration value="adverb taking the 'to' particle" />
+													<xsd:enumeration value="auxiliary" />
+													<xsd:enumeration value="auxiliary adjective" />
+													<xsd:enumeration value="auxiliary verb" />
+													<xsd:enumeration value="conjunction" />
+													<xsd:enumeration value="copula" />
+													<xsd:enumeration value="counter" />
+													<xsd:enumeration value="expressions (phrases, clauses, etc.)" />
+													<xsd:enumeration value="interjection (kandoushi)" />
+													<xsd:enumeration value="noun (common) (futsuumeishi)" />
+													<xsd:enumeration value="adverbial noun (fukushitekimeishi)" />
+													<xsd:enumeration value="proper noun" />
+													<xsd:enumeration value="noun, used as a prefix" />
+													<xsd:enumeration value="noun, used as a suffix" />
+													<xsd:enumeration value="noun (temporal) (jisoumeishi)" />
+													<xsd:enumeration value="numeric" />
+													<xsd:enumeration value="pronoun" />
+													<xsd:enumeration value="prefix" />
+													<xsd:enumeration value="particle" />
+													<xsd:enumeration value="suffix" />
+													<xsd:enumeration value="unclassified" />
+													<xsd:enumeration value="verb unspecified" />
+													<xsd:enumeration value="Ichidan verb" />
+													<xsd:enumeration value="Ichidan verb - kureru special class" />
+													<xsd:enumeration value="Nidan verb with 'u' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (upper class) with 'bu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'bu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (upper class) with 'dzu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'dzu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (upper class) with 'gu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'gu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (upper class) with 'hu/fu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'hu/fu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (upper class) with 'ku' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'ku' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (upper class) with 'mu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'mu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'nu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (upper class) with 'ru' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'ru' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'su' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (upper class) with 'tsu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'tsu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'u' ending and 'we' conjugation (archaic)" />
+													<xsd:enumeration value="Nidan verb (upper class) with 'yu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'yu' ending (archaic)" />
+													<xsd:enumeration value="Nidan verb (lower class) with 'zu' ending (archaic)" />
+													<xsd:enumeration value="Yodan verb with 'bu' ending (archaic)" />
+													<xsd:enumeration value="Yodan verb with 'gu' ending (archaic)" />
+													<xsd:enumeration value="Yodan verb with 'hu/fu' ending (archaic)" />
+													<xsd:enumeration value="Yodan verb with 'ku' ending (archaic)" />
+													<xsd:enumeration value="Yodan verb with 'mu' ending (archaic)" />
+													<xsd:enumeration value="Yodan verb with 'nu' ending (archaic)" />
+													<xsd:enumeration value="Yodan verb with 'ru' ending (archaic)" />
+													<xsd:enumeration value="Yodan verb with 'su' ending (archaic)" />
+													<xsd:enumeration value="Yodan verb with 'tsu' ending (archaic)" />
+													<xsd:enumeration value="Godan verb - -aru special class" />
+													<xsd:enumeration value="Godan verb with 'bu' ending" />
+													<xsd:enumeration value="Godan verb with 'gu' ending" />
+													<xsd:enumeration value="Godan verb with 'ku' ending" />
+													<xsd:enumeration value="Godan verb - Iku/Yuku special class" />
+													<xsd:enumeration value="Godan verb with 'mu' ending" />
+													<xsd:enumeration value="Godan verb with 'nu' ending" />
+													<xsd:enumeration value="Godan verb with 'ru' ending" />
+													<xsd:enumeration value="Godan verb with 'ru' ending (irregular verb)" />
+													<xsd:enumeration value="Godan verb with 'su' ending" />
+													<xsd:enumeration value="Godan verb with 'tsu' ending" />
+													<xsd:enumeration value="Godan verb with 'u' ending" />
+													<xsd:enumeration value="Godan verb with 'u' ending (special class)" />
+													<xsd:enumeration value="Godan verb - Uru old class verb (old form of Eru)" />
+													<xsd:enumeration value="intransitive verb" />
+													<xsd:enumeration value="Kuru verb - special class" />
+													<xsd:enumeration value="irregular nu verb" />
+													<xsd:enumeration value="irregular ru verb, plain form ends with -ri" />
+													<xsd:enumeration value="noun or participle which takes the aux. verb suru" />
+													<xsd:enumeration value="su verb - precursor to the modern suru" />
+													<xsd:enumeration value="suru verb - included" />
+													<xsd:enumeration value="suru verb - special class" />
+													<xsd:enumeration value="transitive verb" />
+													<xsd:enumeration value="Ichidan verb - zuru verb (alternative form of -jiru verbs)" />
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="xref" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
+										
+										<xsd:element name="gloss" minOccurs="0" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:simpleContent>
+													<xsd:extension base="xsd:string">
+														<xsd:attribute name="g_type" use="optional">
+															<xsd:simpleType>
+																<xsd:restriction base="xsd:string">
+																	<xsd:enumeration value="expl" />
+																</xsd:restriction>
+															</xsd:simpleType>												
+														</xsd:attribute>
+														<xsd:attribute ref="xml:lang" use="optional" />
+													</xsd:extension>
+												</xsd:simpleContent>
+											</xsd:complexType>
+										</xsd:element>
+										
 
 									</xsd:sequence>
 								</xsd:complexType>

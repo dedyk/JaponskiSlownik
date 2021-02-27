@@ -14,6 +14,15 @@
 		<jxb:bindings node="//xsd:element[@name='k_ele']/xsd:complexType/xsd:sequence/xsd:element[@name='ke_pri']/xsd:simpleType">
 			<jxb:typesafeEnumClass name="KePriEnum" />
 		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='sense']/xsd:complexType/xsd:sequence/xsd:element[@name='pos']/xsd:simpleType">
+			<jxb:typesafeEnumClass name="KePriEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='gloss']/xsd:complexType/xsd:simpleContent/xsd:extension/xsd:attribute[@name='g_type']/xsd:simpleType">
+			<jxb:typesafeEnumClass name="GlossGType" />
+		</jxb:bindings>
+
 	</jxb:bindings>
 
 </jxb:bindings>
