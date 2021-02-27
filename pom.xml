@@ -146,6 +146,30 @@
 					<target>${maven.compiler.target}</target>
 				</configuration>
 			</plugin>
+
+            <plugin>
+                <groupId>org.jvnet.jaxb2.maven2</groupId>
+                <artifactId>maven-jaxb2-plugin</artifactId>
+                <version>0.14.0</version>
+                <configuration>
+                    <strict>false</strict>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>jmdict-generate</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <extension>true</extension>
+                            <encoding>UTF-8</encoding>
+                            <schemaDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary2/jmdict/xsd</schemaDirectory>
+                            <generatePackage>pl.idedyk.japanese.dictionary2.jmdict.xsd</generatePackage>
+                            <generateDirectory>${project.build.directory}/generated-sources/jmdict/xsd</generateDirectory>
+                        </configuration>
+                    </execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
