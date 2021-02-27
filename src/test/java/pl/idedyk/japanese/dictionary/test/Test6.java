@@ -1,12 +1,19 @@
 package pl.idedyk.japanese.dictionary.test;
 
 import java.io.File;
+import java.io.FileInputStream;
 
 import javax.xml.XMLConstants;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Unmarshaller;
+import javax.xml.stream.XMLEventReader;
+import javax.xml.stream.XMLInputFactory;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
+
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 
 public class Test6 {
 
@@ -30,9 +37,6 @@ public class Test6 {
 		// wczytywanie
 
 		/*
-		JAXBContext jaxbContext = JAXBContext.newInstance(JMdict.class);              
-
-		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
 		JMdict jmdict = (JMdict) jaxbUnmarshaller.unmarshal(jmdictFile);
 
@@ -42,5 +46,29 @@ public class Test6 {
 			
 		}
 		*/
+
+		JAXBContext jaxbContext = JAXBContext.newInstance(JMdict.class);              
+
+		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+		
+		//
+		
+		FileInputStream jmdictFileInputStream = new FileInputStream(jmdictFile);
+		
+		XMLInputFactory xmlInputFactory = XMLInputFactory.newFactory();
+		
+		XMLEventReader xmlEventReader = xmlInputFactory.createXMLEventReader(jmdictFileInputStream);
+				
+		while(xmlEventReader.peek() != null) {
+			
+			if (xmlEventReader.peek().isStartElement() && xmlEventReader.peek().asStartElement().getName().getLocalPart().equals("entry")) {
+				
+				System.out.println(jaxbUnmarshaller.unmarshal(xmlEventReader, JMdict.Entry.class));
+			
+			
+			} else {
+				xmlEventReader.next();
+			}
+		}
 	}
 }
