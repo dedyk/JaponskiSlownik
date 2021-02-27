@@ -3,14 +3,10 @@ package pl.idedyk.japanese.dictionary.test;
 import java.io.File;
 
 import javax.xml.XMLConstants;
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
-
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 
 public class Test6 {
 
@@ -40,7 +36,11 @@ public class Test6 {
 
 		JMdict jmdict = (JMdict) jaxbUnmarshaller.unmarshal(jmdictFile);
 
-		jmdict.toString();
+		for (JMdict.Entry entry : jmdict.getEntry()) {
+			
+			System.out.println(entry.getEntSeq());
+			
+		}
 		*/
 	}
 }

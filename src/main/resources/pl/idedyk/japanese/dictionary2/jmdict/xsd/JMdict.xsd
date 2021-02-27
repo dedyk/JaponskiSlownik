@@ -1,17 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
 
-	<xs:element name="JMdict">
-		<xs:complexType>
-			<xs:sequence>			
-				<xs:element name="entry" maxOccurs="unbounded">
-					<xs:complexType>
-						<xs:sequence>
-						
-						</xs:sequence>					
-					</xs:complexType>		
-				</xs:element>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-</xs:schema>
+<!-- DOKONCZYC !!! => Test6 -->
+
+	<xsd:element name="JMdict">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="entry" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ent_seq" type="xsd:integer" />
+
+							<xsd:element name="k_ele" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="keb" minOccurs="0" maxOccurs="1" type="xsd:string" />
+
+										<xsd:element name="ke_inf" minOccurs="0" maxOccurs="unbounded">
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:enumeration value="ateji (phonetic) reading" />
+													<xsd:enumeration value="word containing irregular kana usage" />
+													<xsd:enumeration value="word containing irregular kanji usage" />
+													<xsd:enumeration value="irregular okurigana usage" />
+													<xsd:enumeration value="word containing out-dated kanji" />																										
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										
+										<xsd:element name="ke_pri" minOccurs="0" maxOccurs="unbounded">
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:enumeration value="news1"></xsd:enumeration>
+													<xsd:enumeration value="news2"></xsd:enumeration>
+													<xsd:enumeration value="ichi1"></xsd:enumeration>
+													<xsd:enumeration value="ichi2"></xsd:enumeration>
+													<xsd:enumeration value="spec1"></xsd:enumeration>
+													<xsd:enumeration value="spec2"></xsd:enumeration>
+													<xsd:enumeration value="gai1"></xsd:enumeration>
+													<xsd:enumeration value="gai2"></xsd:enumeration>
+													<xsd:enumeration value="nf01"></xsd:enumeration>
+													<xsd:enumeration value="nf01"></xsd:enumeration>
+													<xsd:enumeration value="nf02"></xsd:enumeration>
+													<xsd:enumeration value="nf03"></xsd:enumeration>
+													<xsd:enumeration value="nf04"></xsd:enumeration>
+													<xsd:enumeration value="nf05"></xsd:enumeration>
+													<xsd:enumeration value="nf06"></xsd:enumeration>
+													<xsd:enumeration value="nf07"></xsd:enumeration>
+													<xsd:enumeration value="nf08"></xsd:enumeration>
+													<xsd:enumeration value="nf09"></xsd:enumeration>
+													<xsd:enumeration value="nf10"></xsd:enumeration>
+													<xsd:enumeration value="nf11"></xsd:enumeration>
+													<xsd:enumeration value="nf12"></xsd:enumeration>
+													<xsd:enumeration value="nf13"></xsd:enumeration>
+													<xsd:enumeration value="nf14"></xsd:enumeration>
+													<xsd:enumeration value="nf15"></xsd:enumeration>
+													<xsd:enumeration value="nf16"></xsd:enumeration>
+													<xsd:enumeration value="nf17"></xsd:enumeration>
+													<xsd:enumeration value="nf18"></xsd:enumeration>
+													<xsd:enumeration value="nf19"></xsd:enumeration>
+													<xsd:enumeration value="nf20"></xsd:enumeration>
+													<xsd:enumeration value="nf21"></xsd:enumeration>
+													<xsd:enumeration value="nf22"></xsd:enumeration>
+													<xsd:enumeration value="nf23"></xsd:enumeration>
+													<xsd:enumeration value="nf24"></xsd:enumeration>
+													<xsd:enumeration value="nf25"></xsd:enumeration>
+													<xsd:enumeration value="nf26"></xsd:enumeration>
+													<xsd:enumeration value="nf27"></xsd:enumeration>
+													<xsd:enumeration value="nf28"></xsd:enumeration>
+													<xsd:enumeration value="nf29"></xsd:enumeration>
+													<xsd:enumeration value="nf30"></xsd:enumeration>
+													<xsd:enumeration value="nf31"></xsd:enumeration>
+													<xsd:enumeration value="nf32"></xsd:enumeration>
+													<xsd:enumeration value="nf33"></xsd:enumeration>
+													<xsd:enumeration value="nf34"></xsd:enumeration>
+													<xsd:enumeration value="nf35"></xsd:enumeration>
+													<xsd:enumeration value="nf36"></xsd:enumeration>
+													<xsd:enumeration value="nf37"></xsd:enumeration>
+													<xsd:enumeration value="nf38"></xsd:enumeration>
+													<xsd:enumeration value="nf39"></xsd:enumeration>
+													<xsd:enumeration value="nf40"></xsd:enumeration>
+													<xsd:enumeration value="nf41"></xsd:enumeration>
+													<xsd:enumeration value="nf42"></xsd:enumeration>
+													<xsd:enumeration value="nf43"></xsd:enumeration>
+													<xsd:enumeration value="nf44"></xsd:enumeration>
+													<xsd:enumeration value="nf45"></xsd:enumeration>
+													<xsd:enumeration value="nf46"></xsd:enumeration>
+													<xsd:enumeration value="nf47"></xsd:enumeration>
+													<xsd:enumeration value="nf48"></xsd:enumeration>											
+												</xsd:restriction>											
+											</xsd:simpleType>										
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+
+							</xsd:element>
+
+							<xsd:element name="r_ele" minOccurs="1" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+
+							<xsd:element name="sense" minOccurs="1" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

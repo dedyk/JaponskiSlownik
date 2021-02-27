@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance" jxb:extensionBindingPrefixes="xjc">
+
+	<jxb:globalBindings>
+		<jxb:serializable uid="1" />
+	</jxb:globalBindings>
+
+	<jxb:bindings schemaLocation="JMdict.xsd">
+		<jxb:bindings node="//xsd:element[@name='k_ele']/xsd:complexType/xsd:sequence/xsd:element[@name='ke_inf']/xsd:simpleType">
+			<jxb:typesafeEnumClass name="KeInfEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='k_ele']/xsd:complexType/xsd:sequence/xsd:element[@name='ke_pri']/xsd:simpleType">
+			<jxb:typesafeEnumClass name="KePriEnum" />
+		</jxb:bindings>
+	</jxb:bindings>
+
+</jxb:bindings>
