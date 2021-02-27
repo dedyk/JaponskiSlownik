@@ -46,6 +46,8 @@ public class Test6 {
 			
 		}
 		*/
+		
+		/*
 
 		JAXBContext jaxbContext = JAXBContext.newInstance(JMdict.class);              
 
@@ -70,5 +72,6 @@ public class Test6 {
 				xmlEventReader.next();
 			}
 		}
+		*/
 	}
 }
