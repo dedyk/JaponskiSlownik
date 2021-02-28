@@ -7,20 +7,20 @@
 	</jxb:globalBindings>
 
 	<jxb:bindings schemaLocation="JMdict.xsd">
-		<jxb:bindings node="//xsd:element[@name='k_ele']/xsd:complexType/xsd:sequence/xsd:element[@name='ke_inf']/xsd:simpleType">
-			<jxb:typesafeEnumClass name="KeInfEnum" />
+		<jxb:bindings node="//xsd:simpleType[@name='kanjiInfo']">
+			<jxb:typesafeEnumClass name="KanjiInfoEnum" />
 		</jxb:bindings>
 
-		<jxb:bindings node="//xsd:element[@name='k_ele']/xsd:complexType/xsd:sequence/xsd:element[@name='ke_pri']/xsd:simpleType">
-			<jxb:typesafeEnumClass name="KePriEnum" />
+		<jxb:bindings node="//xsd:simpleType[@name='relativePriority']">
+			<jxb:typesafeEnumClass name="RelativePriorityEnum" />
 		</jxb:bindings>
 
-		<jxb:bindings node="//xsd:element[@name='sense']/xsd:complexType/xsd:sequence/xsd:element[@name='pos']/xsd:simpleType">
-			<jxb:typesafeEnumClass name="KePriEnum" />
+		<jxb:bindings node="//xsd:simpleType[@name='partOfSpeech']">
+			<jxb:typesafeEnumClass name="PartOfSpeechEnum" />
 		</jxb:bindings>
 
-		<jxb:bindings node="//xsd:element[@name='gloss']/xsd:complexType/xsd:simpleContent/xsd:extension/xsd:attribute[@name='g_type']/xsd:simpleType">
-			<jxb:typesafeEnumClass name="GlossGType" />
+		<jxb:bindings node="//xsd:simpleType[@name='misc']">
+			<jxb:typesafeEnumClass name="MiscEnum" />
 		</jxb:bindings>
 
 	</jxb:bindings>
