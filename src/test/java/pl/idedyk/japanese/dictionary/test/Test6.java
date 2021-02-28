@@ -31,12 +31,19 @@ public class Test6 {
 		
 		Validator validator = schema.newValidator();
 		
+		System.out.println("Validate");
+		
 		validator.validate(new StreamSource(jmdictFile));
 
+		System.out.println("Load");
 
 		// wczytywanie
+		
+		JAXBContext jaxbContext = JAXBContext.newInstance(JMdict.class);              
 
-		/*
+		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+
+		//
 
 		JMdict jmdict = (JMdict) jaxbUnmarshaller.unmarshal(jmdictFile);
 
@@ -45,14 +52,11 @@ public class Test6 {
 			System.out.println(entry.getEntSeq());
 			
 		}
-		*/
 		
-		/*
-
-		JAXBContext jaxbContext = JAXBContext.newInstance(JMdict.class);              
-
-		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+		//
 		
+		System.out.println("Load 2");
+				
 		//
 		
 		FileInputStream jmdictFileInputStream = new FileInputStream(jmdictFile);
@@ -65,13 +69,14 @@ public class Test6 {
 			
 			if (xmlEventReader.peek().isStartElement() && xmlEventReader.peek().asStartElement().getName().getLocalPart().equals("entry")) {
 				
-				System.out.println(jaxbUnmarshaller.unmarshal(xmlEventReader, JMdict.Entry.class));
+				JMdict.Entry entry = jaxbUnmarshaller.unmarshal(xmlEventReader, JMdict.Entry.class).getValue();
+				
+				System.out.println(entry.getEntSeq());
 			
 			
 			} else {
 				xmlEventReader.next();
 			}
 		}
-		*/
 	}
 }

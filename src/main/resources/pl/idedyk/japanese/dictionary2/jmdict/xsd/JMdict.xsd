@@ -44,12 +44,15 @@
 							<xsd:element name="sense" minOccurs="1" maxOccurs="unbounded">
 								<xsd:complexType>
 									<xsd:sequence>
+										<xsd:element name="stagk" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
 										<xsd:element name="stagr" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
 										<xsd:element name="pos" minOccurs="0" maxOccurs="unbounded" type="partOfSpeech" />
 										<xsd:element name="xref" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
+										<xsd:element name="ant" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
 										<xsd:element name="field" minOccurs="0" maxOccurs="unbounded" type="field" />
 										<xsd:element name="misc" minOccurs="0" maxOccurs="unbounded" type="misc" />
 										<xsd:element name="s_inf" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
+										<xsd:element name="lsource" minOccurs="0" maxOccurs="unbounded" type="languageSource" />										
 										<xsd:element name="dial" minOccurs="0" maxOccurs="unbounded" type="dialect" />
 										<xsd:element name="gloss" minOccurs="0" maxOccurs="unbounded" type="gtype" />
 									</xsd:sequence>
@@ -78,6 +81,29 @@
 			</xsd:extension>
 		</xsd:simpleContent>
 	</xsd:complexType>
+
+	<xsd:complexType name="languageSource">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="ls_type" use="optional">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="part" />
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:attribute>
+				<xsd:attribute name="ls_wasei" use="optional">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="y" />
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:attribute>
+				<xsd:attribute ref="xml:lang" use="optional" />
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
 
 	<xsd:simpleType name="kanjiInfo">
 		<xsd:restriction base="xsd:string">
