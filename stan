@@ -9,3 +9,6 @@ ludzie - 25
 uzupełniacz - x
 -----------
 suma: 70
+----
+
+od 232855
