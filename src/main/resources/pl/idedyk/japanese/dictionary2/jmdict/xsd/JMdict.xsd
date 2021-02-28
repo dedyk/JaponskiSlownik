@@ -44,27 +44,14 @@
 							<xsd:element name="sense" minOccurs="1" maxOccurs="unbounded">
 								<xsd:complexType>
 									<xsd:sequence>
+										<xsd:element name="stagr" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
 										<xsd:element name="pos" minOccurs="0" maxOccurs="unbounded" type="partOfSpeech" />
 										<xsd:element name="xref" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
+										<xsd:element name="field" minOccurs="0" maxOccurs="unbounded" type="field" />
 										<xsd:element name="misc" minOccurs="0" maxOccurs="unbounded" type="misc" />
 										<xsd:element name="s_inf" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
 										<xsd:element name="dial" minOccurs="0" maxOccurs="unbounded" type="dialect" />
-										<xsd:element name="gloss" minOccurs="0" maxOccurs="unbounded">
-											<xsd:complexType>
-												<xsd:simpleContent>
-													<xsd:extension base="xsd:string">
-														<xsd:attribute name="g_type" use="optional">
-															<xsd:simpleType>
-																<xsd:restriction base="xsd:string">
-																	<xsd:enumeration value="expl" />
-																</xsd:restriction>
-															</xsd:simpleType>
-														</xsd:attribute>
-														<xsd:attribute ref="xml:lang" use="optional" />
-													</xsd:extension>
-												</xsd:simpleContent>
-											</xsd:complexType>
-										</xsd:element>
+										<xsd:element name="gloss" minOccurs="0" maxOccurs="unbounded" type="gtype" />
 									</xsd:sequence>
 								</xsd:complexType>
 							</xsd:element>
@@ -74,6 +61,23 @@
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
+
+	<xsd:complexType name="gtype">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="g_type" use="optional">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="expl" />
+							<xsd:enumeration value="lit" />
+							<xsd:enumeration value="fig" />
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:attribute>
+				<xsd:attribute ref="xml:lang" use="optional" />
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
 
 	<xsd:simpleType name="kanjiInfo">
 		<xsd:restriction base="xsd:string">
@@ -323,6 +327,80 @@
 			<xsd:enumeration value="word containing irregular kana usage" />
 			<xsd:enumeration value="out-dated or obsolete kana usage" />
 			<xsd:enumeration value="word usually written using kanji alone" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="field">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="agriculture" />
+			<xsd:enumeration value="anatomy" />
+			<xsd:enumeration value="archeology" />
+			<xsd:enumeration value="architecture, building" />
+			<xsd:enumeration value="art, aesthetics" />
+			<xsd:enumeration value="astronomy" />
+			<xsd:enumeration value="audio-visual" />
+			<xsd:enumeration value="aviation" />
+			<xsd:enumeration value="baseball" />
+			<xsd:enumeration value="biochemistry" />
+			<xsd:enumeration value="biology" />
+			<xsd:enumeration value="botany" />
+			<xsd:enumeration value="Buddhism" />
+			<xsd:enumeration value="business" />
+			<xsd:enumeration value="chemistry" />
+			<xsd:enumeration value="Christianity" />
+			<xsd:enumeration value="computing" />
+			<xsd:enumeration value="crystallography" />
+			<xsd:enumeration value="ecology" />
+			<xsd:enumeration value="economics" />
+			<xsd:enumeration value="electricity, elec. eng." />
+			<xsd:enumeration value="electronics" />
+			<xsd:enumeration value="embryology" />
+			<xsd:enumeration value="engineering" />
+			<xsd:enumeration value="entomology" />
+			<xsd:enumeration value="finance" />
+			<xsd:enumeration value="fishing" />
+			<xsd:enumeration value="food, cooking" />
+			<xsd:enumeration value="gardening, horticulture" />
+			<xsd:enumeration value="genetics" />
+			<xsd:enumeration value="geography" />
+			<xsd:enumeration value="geology" />
+			<xsd:enumeration value="geometry" />
+			<xsd:enumeration value="go (game)" />
+			<xsd:enumeration value="golf" />
+			<xsd:enumeration value="grammar" />
+			<xsd:enumeration value="Greek mythology" />
+			<xsd:enumeration value="hanafuda" />
+			<xsd:enumeration value="horse-racing" />
+			<xsd:enumeration value="law" />
+			<xsd:enumeration value="linguistics" />
+			<xsd:enumeration value="logic" />
+			<xsd:enumeration value="martial arts" />
+			<xsd:enumeration value="mahjong" />
+			<xsd:enumeration value="mathematics" />
+			<xsd:enumeration value="mechanical engineering" />
+			<xsd:enumeration value="medicine" />
+			<xsd:enumeration value="climate, weather" />
+			<xsd:enumeration value="military" />
+			<xsd:enumeration value="music" />
+			<xsd:enumeration value="ornithology" />
+			<xsd:enumeration value="paleontology" />
+			<xsd:enumeration value="pathology" />
+			<xsd:enumeration value="pharmacy" />
+			<xsd:enumeration value="philosophy" />
+			<xsd:enumeration value="photography" />
+			<xsd:enumeration value="physics" />
+			<xsd:enumeration value="physiology" />
+			<xsd:enumeration value="printing" />
+			<xsd:enumeration value="psychology, psychiatry" />
+			<xsd:enumeration value="Shinto" />
+			<xsd:enumeration value="shogi" />
+			<xsd:enumeration value="sports" />
+			<xsd:enumeration value="statistics" />
+			<xsd:enumeration value="sumo" />
+			<xsd:enumeration value="telecommunications" />
+			<xsd:enumeration value="trademark" />
+			<xsd:enumeration value="video game" />
+			<xsd:enumeration value="zoology" />
 		</xsd:restriction>
 	</xsd:simpleType>
 </xsd:schema>

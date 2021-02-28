@@ -23,6 +23,10 @@
 			<jxb:typesafeEnumClass name="MiscEnum" />
 		</jxb:bindings>
 
+		<jxb:bindings node="//xsd:simpleType[@name='field']">
+			<jxb:typesafeEnumClass name="FieldEnum" />
+		</jxb:bindings>
+
 	</jxb:bindings>
 
 </jxb:bindings>
