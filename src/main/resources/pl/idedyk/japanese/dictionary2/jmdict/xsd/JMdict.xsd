@@ -16,21 +16,9 @@
 						<xsd:sequence>
 							<xsd:element name="ent_seq" type="xsd:integer" /> <!-- identyfikator wpisu -->
 
-							<xsd:element name="k_ele" minOccurs="0" maxOccurs="unbounded" type="KanjiInfo" />
+							<xsd:element name="k_ele" minOccurs="0" maxOccurs="unbounded" type="kanjiInfo" /> <!-- informacja o kanji -->
 
-							<xsd:element name="r_ele" minOccurs="1" maxOccurs="unbounded">
-								<xsd:complexType>
-									<xsd:sequence>
-										<xsd:element name="reb" minOccurs="1" maxOccurs="1" type="xsd:string" />
-										<xsd:element name="re_nokanji" minOccurs="0" maxOccurs="1">
-											<xsd:complexType />
-										</xsd:element>
-										<xsd:element name="re_restr" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
-										<xsd:element name="re_inf" minOccurs="0" maxOccurs="unbounded" type="readingInfo" />
-										<xsd:element name="re_pri" minOccurs="0" maxOccurs="unbounded" type="relativePriority" />
-									</xsd:sequence>
-								</xsd:complexType>
-							</xsd:element>
+							<xsd:element name="r_ele" minOccurs="1" maxOccurs="unbounded" type="readingInfo" /> <!-- informacja o czytaniu -->
 
 							<xsd:element name="sense" minOccurs="1" maxOccurs="unbounded">
 								<xsd:complexType>
@@ -56,11 +44,23 @@
 		</xsd:complexType>
 	</xsd:element>
 
-	<xsd:complexType name="KanjiInfo">
+	<xsd:complexType name="kanjiInfo">
 		<xsd:sequence>
 			<xsd:element name="keb" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- znak kanji -->
 			<xsd:element name="ke_inf" minOccurs="0" maxOccurs="unbounded" type="kanjiAdditionalInfo" /> <!-- dodatkowe informacje do kanji -->
 			<xsd:element name="ke_pri" minOccurs="0" maxOccurs="unbounded" type="relativePriority" /> <!-- czestotliwosc wystepowania -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="readingInfo">
+		<xsd:sequence>
+			<xsd:element name="reb" minOccurs="1" maxOccurs="1" type="xsd:string" />
+			<xsd:element name="re_nokanji" minOccurs="0" maxOccurs="1">
+				<xsd:complexType />
+			</xsd:element>
+			<xsd:element name="re_restr" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
+			<xsd:element name="re_inf" minOccurs="0" maxOccurs="unbounded" type="readingAdditionalInfo" />
+			<xsd:element name="re_pri" minOccurs="0" maxOccurs="unbounded" type="relativePriority" />
 		</xsd:sequence>
 	</xsd:complexType>
 
@@ -346,7 +346,7 @@
 		</xsd:restriction>
 	</xsd:simpleType>
 
-	<xsd:simpleType name="readingInfo">
+	<xsd:simpleType name="readingAdditionalInfo">
 		<xsd:restriction base="xsd:string">
 			<xsd:enumeration value="gikun (meaning as reading) or jukujikun (special kanji reading)" />
 			<xsd:enumeration value="word containing irregular kana usage" />

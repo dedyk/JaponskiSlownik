@@ -17,19 +17,19 @@
 			<jxb:property name="kanjiInfoList" />
 		</jxb:bindings>
 
-		<jxb:bindings node="//xsd:complexType[@name='KanjiInfo']">
+		<jxb:bindings node="//xsd:complexType[@name='kanjiInfo']">
 			<jxb:class name="KanjiInfo" />
 		</jxb:bindings>
 
-		<jxb:bindings node="//xsd:complexType[@name='KanjiInfo']/xsd:sequence/xsd:element[@name='keb']">
+		<jxb:bindings node="//xsd:complexType[@name='kanjiInfo']/xsd:sequence/xsd:element[@name='keb']">
 			<jxb:property name="kanji" />
 		</jxb:bindings>
 
-		<jxb:bindings node="//xsd:complexType[@name='KanjiInfo']/xsd:sequence/xsd:element[@name='ke_inf']">
+		<jxb:bindings node="//xsd:complexType[@name='kanjiInfo']/xsd:sequence/xsd:element[@name='ke_inf']">
 			<jxb:property name="kanjiAdditionalInfoList" />
 		</jxb:bindings>
 
-		<jxb:bindings node="//xsd:complexType[@name='KanjiInfo']/xsd:sequence/xsd:element[@name='ke_pri']">
+		<jxb:bindings node="//xsd:complexType[@name='kanjiInfo']/xsd:sequence/xsd:element[@name='ke_pri']">
 			<jxb:property name="relativePriorityList" />
 		</jxb:bindings>
 
