@@ -2,6 +2,7 @@ package pl.idedyk.japanese.dictionary.test;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.List;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
@@ -14,6 +15,7 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 
 public class Test6 {
 
@@ -49,8 +51,14 @@ public class Test6 {
 
 		for (JMdict.Entry entry : jmdict.getEntry()) {
 			
-			if (entry.getEntSeq().intValue() == 2841636) {
-				System.out.println(entry.getEntSeq());
+			List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
+			
+			for (KanjiInfo kanjiInfo : kanjiInfoList) {
+				System.out.println(kanjiInfo.getKanji() + " - " + kanjiInfo.getKanjiAdditionalInfoList() + " - " + kanjiInfo.getRelativePriorityList());
+			}
+			
+			if (entry.getEntryId().intValue() == 2841636) {
+				System.out.println(entry.getEntryId());
 			}
 		}
 		
@@ -72,7 +80,9 @@ public class Test6 {
 				
 				JMdict.Entry entry = jaxbUnmarshaller.unmarshal(xmlEventReader, JMdict.Entry.class).getValue();
 				
-				System.out.println(entry.getEntSeq());
+				entry.toString();
+				
+				// System.out.println(entry.getEntryId());
 			
 			
 			} else {
