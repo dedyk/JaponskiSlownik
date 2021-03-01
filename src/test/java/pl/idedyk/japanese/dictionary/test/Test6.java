@@ -49,8 +49,9 @@ public class Test6 {
 
 		for (JMdict.Entry entry : jmdict.getEntry()) {
 			
-			System.out.println(entry.getEntSeq());
-			
+			if (entry.getEntSeq().intValue() == 2841636) {
+				System.out.println(entry.getEntSeq());
+			}
 		}
 		
 		//
@@ -78,5 +79,6 @@ public class Test6 {
 				xmlEventReader.next();
 			}
 		}
+		
 	}
 }
