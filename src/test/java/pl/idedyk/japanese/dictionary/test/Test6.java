@@ -16,6 +16,7 @@ import javax.xml.validation.Validator;
 
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 
 public class Test6 {
 
@@ -51,15 +52,26 @@ public class Test6 {
 
 		for (JMdict.Entry entry : jmdict.getEntry()) {
 			
-			List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
+			if (entry.getEntryId().intValue() == 2848204) {
 			
-			for (KanjiInfo kanjiInfo : kanjiInfoList) {
-				System.out.println(kanjiInfo.getKanji() + " - " + kanjiInfo.getKanjiAdditionalInfoList() + " - " + kanjiInfo.getRelativePriorityList());
-			}
-			
-			if (entry.getEntryId().intValue() == 2841636) {
-				System.out.println(entry.getEntryId());
-			}
+				List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
+				
+				for (KanjiInfo kanjiInfo : kanjiInfoList) {
+					System.out.println("Kanji: " + kanjiInfo.getKanji() + " - " + kanjiInfo.getKanjiAdditionalInfoList() + " - " + kanjiInfo.getRelativePriorityList());
+				}
+				
+				
+				
+				List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
+
+				/*
+				for (ReadingInfo readingInfo : readingInfoList) {				
+					//System.out.println(readingInfo.getKana());
+				}
+				*/		
+				
+				System.out.println(kanjiInfoList.size() + " - " + readingInfoList.size());
+			}			
 		}
 		
 		//

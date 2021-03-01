@@ -16,11 +16,7 @@
 		<jxb:bindings node="//xsd:element[@name='k_ele']">
 			<jxb:property name="kanjiInfoList" />
 		</jxb:bindings>
-
-		<jxb:bindings node="//xsd:complexType[@name='kanjiInfo']">
-			<jxb:class name="KanjiInfo" />
-		</jxb:bindings>
-
+		
 		<jxb:bindings node="//xsd:complexType[@name='kanjiInfo']/xsd:sequence/xsd:element[@name='keb']">
 			<jxb:property name="kanji" />
 		</jxb:bindings>
@@ -31,6 +27,18 @@
 
 		<jxb:bindings node="//xsd:complexType[@name='kanjiInfo']/xsd:sequence/xsd:element[@name='ke_pri']">
 			<jxb:property name="relativePriorityList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='r_ele']">
+			<jxb:property name="ReadingInfoList" />
+		</jxb:bindings>		
+
+		<jxb:bindings node="//xsd:complexType[@name='readingInfo']/xsd:sequence/xsd:element[@name='reb']">
+			<jxb:property name="kana" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='readingInfo']/xsd:sequence/xsd:element[@name='re_nokanji']">
+			<jxb:property name="noKanji" />
 		</jxb:bindings>
 
 		<jxb:bindings node="//xsd:simpleType[@name='kanjiAdditionalInfo']">
