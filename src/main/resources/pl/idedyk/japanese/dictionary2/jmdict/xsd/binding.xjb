@@ -41,6 +41,18 @@
 			<jxb:property name="noKanji" />
 		</jxb:bindings>
 
+		<jxb:bindings node="//xsd:complexType[@name='readingInfo']/xsd:sequence/xsd:element[@name='re_restr']">
+			<jxb:property name="kanjiRestrictionList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='readingInfo']/xsd:sequence/xsd:element[@name='re_inf']">
+			<jxb:property name="readingAdditionalInfoList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='readingInfo']/xsd:sequence/xsd:element[@name='re_pri']">
+			<jxb:property name="relativePriorityList" />
+		</jxb:bindings>
+
 		<jxb:bindings node="//xsd:simpleType[@name='kanjiAdditionalInfo']">
 			<jxb:typesafeEnumClass name="KanjiAdditionalInfoEnum" />
 		</jxb:bindings>

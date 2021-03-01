@@ -55,12 +55,12 @@
 	<xsd:complexType name="readingInfo">
 		<xsd:sequence>
 			<xsd:element name="reb" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- kana -->
-			<xsd:element name="re_nokanji" minOccurs="0" maxOccurs="1"> <!-- element wskazujacy, ze kana nie zawiera kanji -->
+			<xsd:element name="re_nokanji" minOccurs="0" maxOccurs="1"> <!-- element wskazujacy, ze kana nie ma zapisu w kanji -->
 				<xsd:complexType />
 			</xsd:element>
-			<xsd:element name="re_restr" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
-			<xsd:element name="re_inf" minOccurs="0" maxOccurs="unbounded" type="readingAdditionalInfo" />
-			<xsd:element name="re_pri" minOccurs="0" maxOccurs="unbounded" type="relativePriority" />
+			<xsd:element name="re_restr" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- list kanji ze zbioru kanji do ktorej dane czytanie odnosi sie. Jesli jest puste to wtedy czytanie odnosi sie do wszystkich kanji  -->
+			<xsd:element name="re_inf" minOccurs="0" maxOccurs="unbounded" type="readingAdditionalInfo" />  <!-- dodatkowe informacje do czytania -->
+			<xsd:element name="re_pri" minOccurs="0" maxOccurs="unbounded" type="relativePriority" /> <!-- czestotliwosc wystepowania -->
 		</xsd:sequence>
 	</xsd:complexType>
 

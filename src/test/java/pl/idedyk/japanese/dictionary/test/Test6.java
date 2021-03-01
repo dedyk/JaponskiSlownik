@@ -52,7 +52,7 @@ public class Test6 {
 
 		for (JMdict.Entry entry : jmdict.getEntry()) {
 			
-			if (entry.getEntryId().intValue() == 2848204) {
+			if (entry.getEntryId().intValue() == 1000110) {
 			
 				List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
 				
@@ -60,18 +60,15 @@ public class Test6 {
 					System.out.println("Kanji: " + kanjiInfo.getKanji() + " - " + kanjiInfo.getKanjiAdditionalInfoList() + " - " + kanjiInfo.getRelativePriorityList());
 				}
 				
-				
-				
 				List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
 
-				/*
 				for (ReadingInfo readingInfo : readingInfoList) {				
-					//System.out.println(readingInfo.getKana());
+					System.out.println("Reading: " + readingInfo.getKana() + " - " + readingInfo.getNoKanji() + " - " + readingInfo.getKanjiRestrictionList() +
+							" - " + readingInfo.getReadingAdditionalInfoList() + " - " + readingInfo.getRelativePriorityList());
 				}
-				*/		
-				
-				System.out.println(kanjiInfoList.size() + " - " + readingInfoList.size());
-			}			
+			}	
+			
+			//System.out.println("--------");
 		}
 		
 		//
