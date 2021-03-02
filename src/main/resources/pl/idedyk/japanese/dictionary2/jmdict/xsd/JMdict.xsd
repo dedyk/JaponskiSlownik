@@ -15,28 +15,9 @@
 					<xsd:complexType>
 						<xsd:sequence>
 							<xsd:element name="ent_seq" type="xsd:integer" /> <!-- identyfikator wpisu -->
-
 							<xsd:element name="k_ele" minOccurs="0" maxOccurs="unbounded" type="kanjiInfo" /> <!-- informacja o kanji -->
-
 							<xsd:element name="r_ele" minOccurs="1" maxOccurs="unbounded" type="readingInfo" /> <!-- informacja o czytaniu -->
-
-							<xsd:element name="sense" minOccurs="1" maxOccurs="unbounded">
-								<xsd:complexType>
-									<xsd:sequence>
-										<xsd:element name="stagk" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
-										<xsd:element name="stagr" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
-										<xsd:element name="pos" minOccurs="0" maxOccurs="unbounded" type="partOfSpeech" />
-										<xsd:element name="xref" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
-										<xsd:element name="ant" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
-										<xsd:element name="field" minOccurs="0" maxOccurs="unbounded" type="field" />
-										<xsd:element name="misc" minOccurs="0" maxOccurs="unbounded" type="misc" />
-										<xsd:element name="s_inf" minOccurs="0" maxOccurs="unbounded" type="xsd:string" />
-										<xsd:element name="lsource" minOccurs="0" maxOccurs="unbounded" type="languageSource" />
-										<xsd:element name="dial" minOccurs="0" maxOccurs="unbounded" type="dialect" />
-										<xsd:element name="gloss" minOccurs="0" maxOccurs="unbounded" type="gtype" />
-									</xsd:sequence>
-								</xsd:complexType>
-							</xsd:element>
+							<xsd:element name="sense" minOccurs="1" maxOccurs="unbounded" type="sense" /> <!-- tlumaczenie -->
 						</xsd:sequence>
 					</xsd:complexType>
 				</xsd:element>
@@ -58,51 +39,67 @@
 			<xsd:element name="re_nokanji" minOccurs="0" maxOccurs="1"> <!-- element wskazujacy, ze kana nie ma zapisu w kanji -->
 				<xsd:complexType />
 			</xsd:element>
-			<xsd:element name="re_restr" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- list kanji ze zbioru kanji do ktorej dane czytanie odnosi sie. Jesli jest puste to wtedy czytanie odnosi sie do wszystkich kanji  -->
+			<xsd:element name="re_restr" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- list kanji ze zbioru kanji do ktorej dane czytanie odnosi sie. Jesli jest puste to wtedy czytanie odnosi sie do wszystkich kanji -->
 			<xsd:element name="re_inf" minOccurs="0" maxOccurs="unbounded" type="readingAdditionalInfo" />  <!-- dodatkowe informacje do czytania -->
 			<xsd:element name="re_pri" minOccurs="0" maxOccurs="unbounded" type="relativePriority" /> <!-- czestotliwosc wystepowania -->
 		</xsd:sequence>
 	</xsd:complexType>
 
-	<xsd:complexType name="gtype">
-		<xsd:simpleContent>
-			<xsd:extension base="xsd:string">
-				<xsd:attribute name="g_type" use="optional">
-					<xsd:simpleType>
-						<xsd:restriction base="xsd:string">
-							<xsd:enumeration value="expl" />
-							<xsd:enumeration value="lit" />
-							<xsd:enumeration value="fig" />
-						</xsd:restriction>
-					</xsd:simpleType>
-				</xsd:attribute>
-				<xsd:attribute ref="xml:lang" use="optional" />
-			</xsd:extension>
-		</xsd:simpleContent>
+	<xsd:complexType name="sense">
+		<xsd:sequence>
+			<xsd:element name="stagk" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- lista kanji do ktorych dane tlumaczenie odnosi sie. Jesli jest puste to wtedy czytanie odnosi sie do wszystkich kanji -->
+			<xsd:element name="stagr" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- lista kana do ktorych dane tlumaczenie odnosi sie. Jesli jest puste to wtedy czytanie odnosi sie do wszystkich kana -->
+			<xsd:element name="pos" minOccurs="0" maxOccurs="unbounded" type="partOfSpeech" /> <!-- rzecz mowy -->
+			<xsd:element name="xref" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- referencja do innego kanji/kana -->
+			<xsd:element name="ant" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- referencja do antonimu (przeciwienstwa) -->
+			<xsd:element name="field" minOccurs="0" maxOccurs="unbounded" type="field" /> <!-- dziedzina nauki do ktorego tlumaczenie odnosi sie -->
+			<xsd:element name="misc" minOccurs="0" maxOccurs="unbounded" type="misc" /> <!-- dodatkowe informacje do tlumaczenia -->
+			<xsd:element name="s_inf" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- dodatkowe opisowe informacje do tlumaczenia -->
+			<xsd:element name="lsource" minOccurs="0" maxOccurs="unbounded" type="languageSource" /> <!-- informacja z jakiego zrodlowego jezyka dane slowo pochodzi -->
+			<xsd:element name="dial" minOccurs="0" maxOccurs="unbounded" type="dialect" /> <!-- informacja, ze dane tlumaczenie dotyczy dialektu jezyka japonskiego -->
+			<xsd:element name="gloss" minOccurs="0" maxOccurs="unbounded" type="gloss" /> <!-- tlumaczenie -->
+		</xsd:sequence>
 	</xsd:complexType>
 
 	<xsd:complexType name="languageSource">
 		<xsd:simpleContent>
 			<xsd:extension base="xsd:string">
-				<xsd:attribute name="ls_type" use="optional">
-					<xsd:simpleType>
-						<xsd:restriction base="xsd:string">
-							<xsd:enumeration value="part" />
-						</xsd:restriction>
-					</xsd:simpleType>
-				</xsd:attribute>
-				<xsd:attribute name="ls_wasei" use="optional">
-					<xsd:simpleType>
-						<xsd:restriction base="xsd:string">
-							<xsd:enumeration value="y" />
-						</xsd:restriction>
-					</xsd:simpleType>
-				</xsd:attribute>
-				<xsd:attribute ref="xml:lang" use="optional" />
+				<xsd:attribute name="ls_type" use="optional" type="languageSourceLsType" /> <!-- informacja, ze slowo odnosi sie do czesci lub do pelnego slowa w jezyku zrodlowym -->
+				<xsd:attribute name="ls_wasei" use="optional" type="languageSourceLsWasei" /> <!-- informacja, ze slowo zostalo skonstruowane ze slow w jezyku xrodlowym, a nie z sensu tych slow. Najczesciej jest to waseieigo. -->
+				<xsd:attribute ref="xml:lang" use="optional" />  <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie -->
 			</xsd:extension>
 		</xsd:simpleContent>
 	</xsd:complexType>
 
+	<xsd:simpleType name="languageSourceLsType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="part" />
+			<xsd:enumeration value="full" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="languageSourceLsWasei">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="y" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="gloss">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="g_type" use="optional" type="gtype" /> <!-- dodatkowa informacja do tlumaczenia -->
+				<xsd:attribute ref="xml:lang" use="optional" /> <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie -->
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:simpleType name="gtype">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="expl" /> <!--  wyjasnienie -->
+			<xsd:enumeration value="lit" /> <!-- doslowne znaczenie -->
+			<xsd:enumeration value="fig" /> <!-- symboliczne -->
+		</xsd:restriction>
+	</xsd:simpleType>
 
 	<xsd:simpleType name="kanjiAdditionalInfo">
 		<xsd:restriction base="xsd:string">

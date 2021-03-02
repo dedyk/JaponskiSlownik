@@ -53,6 +53,54 @@
 			<jxb:property name="relativePriorityList" />
 		</jxb:bindings>
 
+		<jxb:bindings node="//xsd:element[@name='sense']">
+			<jxb:property name="senseList" />
+		</jxb:bindings>		
+
+		<jxb:bindings node="//xsd:complexType[@name='sense']/xsd:sequence/xsd:element[@name='stagk']">
+			<jxb:property name="restrictedToKanjiList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='sense']/xsd:sequence/xsd:element[@name='stagr']">
+			<jxb:property name="restrictedToKanaList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='sense']/xsd:sequence/xsd:element[@name='pos']">
+			<jxb:property name="partOfSpeechList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='sense']/xsd:sequence/xsd:element[@name='xref']">
+			<jxb:property name="referenceToAnotherKanjiKanaList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='sense']/xsd:sequence/xsd:element[@name='ant']">
+			<jxb:property name="antonymList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='sense']/xsd:sequence/xsd:element[@name='field']">
+			<jxb:property name="fieldList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='sense']/xsd:sequence/xsd:element[@name='misc']">
+			<jxb:property name="miscList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='sense']/xsd:sequence/xsd:element[@name='s_inf']">
+			<jxb:property name="additionalInfoList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='sense']/xsd:sequence/xsd:element[@name='lsource']">
+			<jxb:property name="languageSourceList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='sense']/xsd:sequence/xsd:element[@name='dial']">
+			<jxb:property name="dialectList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='sense']/xsd:sequence/xsd:element[@name='gloss']">
+			<jxb:property name="glossList" />
+		</jxb:bindings>
+
 		<jxb:bindings node="//xsd:simpleType[@name='kanjiAdditionalInfo']">
 			<jxb:typesafeEnumClass name="KanjiAdditionalInfoEnum" />
 		</jxb:bindings>
@@ -71,6 +119,26 @@
 
 		<jxb:bindings node="//xsd:simpleType[@name='field']">
 			<jxb:typesafeEnumClass name="FieldEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='languageSourceLsType']">
+			<jxb:typesafeEnumClass name="LanguageSourceLsTypeEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='languageSourceLsWasei']">
+			<jxb:typesafeEnumClass name="LanguageSourceLsWaseiEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='readingAdditionalInfo']">
+			<jxb:typesafeEnumClass name="ReadingAdditionalInfoEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='dialect']">
+			<jxb:typesafeEnumClass name="DialectEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='gtype']">
+			<jxb:typesafeEnumClass name="GTypeEnum" />
 		</jxb:bindings>
 
 	</jxb:bindings>
