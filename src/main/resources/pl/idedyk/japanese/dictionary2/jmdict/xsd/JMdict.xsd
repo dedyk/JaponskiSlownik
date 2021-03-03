@@ -54,7 +54,7 @@
 			<xsd:element name="ant" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- referencja do antonimu (przeciwienstwa) -->
 			<xsd:element name="field" minOccurs="0" maxOccurs="unbounded" type="field" /> <!-- dziedzina nauki do ktorego tlumaczenie odnosi sie -->
 			<xsd:element name="misc" minOccurs="0" maxOccurs="unbounded" type="misc" /> <!-- dodatkowe informacje do tlumaczenia -->
-			<xsd:element name="s_inf" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- dodatkowe opisowe informacje do tlumaczenia -->
+			<xsd:element name="s_inf" minOccurs="0" maxOccurs="unbounded" type="senseAdditionalInfo" /> <!-- dodatkowe opisowe informacje do tlumaczenia, (modyfikacja do orginalnego schematu) -->
 			<xsd:element name="lsource" minOccurs="0" maxOccurs="unbounded" type="languageSource" /> <!-- informacja z jakiego zrodlowego jezyka dane slowo pochodzi -->
 			<xsd:element name="dial" minOccurs="0" maxOccurs="unbounded" type="dialect" /> <!-- informacja, ze dane tlumaczenie dotyczy dialektu jezyka japonskiego -->
 			<xsd:element name="gloss" minOccurs="0" maxOccurs="unbounded" type="gloss" /> <!-- tlumaczenie -->
@@ -66,7 +66,7 @@
 			<xsd:extension base="xsd:string">
 				<xsd:attribute name="ls_type" use="optional" type="languageSourceLsType" /> <!-- informacja, ze slowo odnosi sie do czesci lub do pelnego slowa w jezyku zrodlowym -->
 				<xsd:attribute name="ls_wasei" use="optional" type="languageSourceLsWasei" /> <!-- informacja, ze slowo zostalo skonstruowane ze slow w jezyku xrodlowym, a nie z sensu tych slow. Najczesciej jest to waseieigo. -->
-				<xsd:attribute ref="xml:lang" use="optional" />  <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie -->
+				<xsd:attribute ref="xml:lang" use="optional" />  <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie, domyslne eng oznacza jezyk angielski  -->
 			</xsd:extension>
 		</xsd:simpleContent>
 	</xsd:complexType>
@@ -84,18 +84,27 @@
 		</xsd:restriction>
 	</xsd:simpleType>
 
+	<xsd:complexType name="senseAdditionalInfo">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute ref="xml:lang" use="optional" /> <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie, domyslne eng oznacza jezyk angielski -->
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+
 	<xsd:complexType name="gloss">
 		<xsd:simpleContent>
 			<xsd:extension base="xsd:string">
 				<xsd:attribute name="g_type" use="optional" type="gtype" /> <!-- dodatkowa informacja do tlumaczenia -->
-				<xsd:attribute ref="xml:lang" use="optional" /> <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie -->
+				<xsd:attribute ref="xml:lang" use="optional" /> <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie, domyslne eng oznacza jezyk angielski -->
 			</xsd:extension>
 		</xsd:simpleContent>
 	</xsd:complexType>
 
 	<xsd:simpleType name="gtype">
 		<xsd:restriction base="xsd:string">
-			<xsd:enumeration value="expl" /> <!--  wyjasnienie -->
+			<xsd:enumeration value="expl" /> <!-- wyjasnienie -->
 			<xsd:enumeration value="lit" /> <!-- doslowne znaczenie -->
 			<xsd:enumeration value="fig" /> <!-- symboliczne -->
 		</xsd:restriction>

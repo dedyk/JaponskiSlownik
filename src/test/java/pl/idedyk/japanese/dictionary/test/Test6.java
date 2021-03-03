@@ -1,14 +1,15 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.util.List;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLInputFactory;
+import javax.xml.namespace.QName;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -45,14 +46,18 @@ public class Test6 {
 		JAXBContext jaxbContext = JAXBContext.newInstance(JMdict.class);              
 
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+		
+		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
+		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		
 		//
 
 		JMdict jmdict = (JMdict) jaxbUnmarshaller.unmarshal(jmdictFile);
 
 		for (JMdict.Entry entry : jmdict.getEntry()) {
 			
-			if (entry.getEntryId().intValue() == 1000110) {
+			if (entry.getEntryId().intValue() == 1000260) {
 			
 				List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
 				
@@ -66,11 +71,24 @@ public class Test6 {
 					System.out.println("Reading: " + readingInfo.getKana() + " - " + readingInfo.getNoKanji() + " - " + readingInfo.getKanjiRestrictionList() +
 							" - " + readingInfo.getReadingAdditionalInfoList() + " - " + readingInfo.getRelativePriorityList());
 				}
-			}	
+				
+				ByteArrayOutputStream baos = new ByteArrayOutputStream();
+				
+			    QName qName = new QName("local", "SingleEntry");
+			    
+			    JAXBElement<JMdict.Entry> entryRoot = new JAXBElement<JMdict.Entry>(qName, JMdict.Entry.class, entry);
+				
+				jaxbMarshaller.marshal(entryRoot, baos);
+				
+				//
+				
+				System.out.println(baos.toString());
+			}				
 			
 			//System.out.println("--------");
 		}
 		
+		/*
 		//
 		
 		System.out.println("Load 2");
@@ -98,6 +116,6 @@ public class Test6 {
 				xmlEventReader.next();
 			}
 		}
-		
+		*/		
 	}
 }
