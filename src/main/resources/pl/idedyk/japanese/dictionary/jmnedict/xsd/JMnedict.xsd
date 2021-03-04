@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd" />
+
+	<xsd:element name="JMnedict">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="entry" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ent_seq" type="xsd:integer" /> <!-- identyfikator wpisu -->
+							<xsd:element name="k_ele" minOccurs="0" maxOccurs="unbounded" type="kanjiInfo" /> <!-- informacja o kanji -->
+							<xsd:element name="r_ele" minOccurs="1" maxOccurs="unbounded" type="readingInfo" /> <!-- informacja o czytaniu -->
+							<xsd:element name="trans" minOccurs="1" maxOccurs="unbounded" type="translationalInfo" /> <!-- informacja o znaczeniu -->
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="kanjiInfo">
+		<xsd:sequence>
+			<xsd:element name="keb" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- znak kanji -->
+			<xsd:element name="ke_inf" minOccurs="0" maxOccurs="unbounded" type="kanjiAdditionalInfo" /> <!-- dodatkowe informacje do kanji -->
+			<xsd:element name="ke_pri" minOccurs="0" maxOccurs="unbounded" type="relativePriority" /> <!-- czestotliwosc wystepowania -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="kanjiAdditionalInfo">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="-mock-" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="relativePriority">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="-mock-" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="readingInfo">
+		<xsd:sequence>
+			<xsd:element name="reb" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- kana -->
+			<xsd:element name="re_restr" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- list kanji ze zbioru kanji do ktorej dane czytanie odnosi sie. Jesli jest puste to wtedy czytanie odnosi sie do wszystkich kanji -->
+			<xsd:element name="re_inf" minOccurs="0" maxOccurs="unbounded" type="readingAdditionalInfo" />  <!-- dodatkowe informacje do czytania -->
+			<xsd:element name="re_pri" minOccurs="0" maxOccurs="unbounded" type="relativePriority" /> <!-- czestotliwosc wystepowania -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="readingAdditionalInfo">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="-mock-" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="translationalInfo">
+		<xsd:sequence>
+			<xsd:element name="name_type" minOccurs="0" maxOccurs="unbounded" type="translationalInfoNameType" /> <!-- rodzaj znaczenia, np. nazwa firmy -->
+			<xsd:element name="xref" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- referencja do innego kanji/kana -->
+			<xsd:element name="trans_det" minOccurs="0" maxOccurs="unbounded" type="translationalInfoTransDet" /> <!-- znaczenie -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="translationalInfoNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="character" />
+			<xsd:enumeration value="company name" />
+			<xsd:enumeration value="creature" />
+			<xsd:enumeration value="deity" />
+			<xsd:enumeration value="event" />
+			<xsd:enumeration value="female given name or forename" />
+			<xsd:enumeration value="fiction" />
+			<xsd:enumeration value="given name or forename, gender not specified" />
+			<xsd:enumeration value="legend" />
+			<xsd:enumeration value="male given name or forename" />
+			<xsd:enumeration value="mythology" />
+			<xsd:enumeration value="object" />
+			<xsd:enumeration value="organization name" />
+			<xsd:enumeration value="other" />
+			<xsd:enumeration value="full name of a particular person" />
+			<xsd:enumeration value="place name" />
+			<xsd:enumeration value="product name" />
+			<xsd:enumeration value="religion" />
+			<xsd:enumeration value="service" />
+			<xsd:enumeration value="railway station" />
+			<xsd:enumeration value="family or surname" />
+			<xsd:enumeration value="unclassified name" />
+			<xsd:enumeration value="work of art, literature, music, etc. name" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="translationalInfoTransDet">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute ref="xml:lang" use="optional" /> <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie, domyslne eng oznacza jezyk angielski -->
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

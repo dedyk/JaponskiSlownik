@@ -172,6 +172,24 @@
                             <generateDirectory>${project.build.directory}/generated-sources/jmdict/xsd</generateDirectory>
                         </configuration>
                     </execution>
+
+                    <execution>
+                        <id>jmnedict-generate</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <extension>true</extension>
+                            <encoding>UTF-8</encoding>
+                            <bindingDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/jmnedict/xsd</bindingDirectory>
+                            <bindingIncludes>
+                                <include>binding.xjb</include>
+                            </bindingIncludes>
+                            <schemaDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/jmnedict/xsd</schemaDirectory>
+                            <generatePackage>pl.idedyk.japanese.dictionary.jmnedict.xsd</generatePackage>
+                            <generateDirectory>${project.build.directory}/generated-sources/jmnedict/xsd</generateDirectory>
+                        </configuration>
+                    </execution>
 				</executions>
 			</plugin>
 		</plugins>

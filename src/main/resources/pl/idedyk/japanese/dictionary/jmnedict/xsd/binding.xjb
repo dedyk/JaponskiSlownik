@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+	jxb:extensionBindingPrefixes="xjc">
+
+	<jxb:globalBindings>
+		<jxb:serializable uid="1" />
+	</jxb:globalBindings>
+
+	<jxb:bindings schemaLocation="JMnedict.xsd">
+
+		<jxb:bindings node="//xsd:element[@name='ent_seq']">
+			<jxb:property name="entryId" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='k_ele']">
+			<jxb:property name="kanjiInfoList" />
+		</jxb:bindings>
+		
+		<jxb:bindings node="//xsd:complexType[@name='kanjiInfo']/xsd:sequence/xsd:element[@name='keb']">
+			<jxb:property name="kanji" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='kanjiInfo']/xsd:sequence/xsd:element[@name='ke_inf']">
+			<jxb:property name="kanjiAdditionalInfoList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='kanjiInfo']/xsd:sequence/xsd:element[@name='ke_pri']">
+			<jxb:property name="relativePriorityList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='r_ele']">
+			<jxb:property name="ReadingInfoList" />
+		</jxb:bindings>		
+
+		<jxb:bindings node="//xsd:element[@name='trans']">
+			<jxb:property name="translationInfo" />
+		</jxb:bindings>		
+
+		<jxb:bindings node="//xsd:complexType[@name='readingInfo']/xsd:sequence/xsd:element[@name='reb']">
+			<jxb:property name="kana" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='readingInfo']/xsd:sequence/xsd:element[@name='re_restr']">
+			<jxb:property name="kanjiRestrictionList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='readingInfo']/xsd:sequence/xsd:element[@name='re_inf']">
+			<jxb:property name="readingAdditionalInfoList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='readingInfo']/xsd:sequence/xsd:element[@name='re_pri']">
+			<jxb:property name="relativePriorityList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='kanjiAdditionalInfo']">
+			<jxb:typesafeEnumClass name="KanjiAdditionalInfoEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='relativePriority']">
+			<jxb:typesafeEnumClass name="RelativePriorityEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='readingAdditionalInfo']">
+			<jxb:typesafeEnumClass name="ReadingAdditionalInfoEnum" />
+		</jxb:bindings>
+
+	</jxb:bindings>
+
+</jxb:bindings>

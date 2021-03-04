@@ -25,13 +25,21 @@ public class Test6 {
 
 		// PAMIETAJ: // -Djdk.xml.entityExpansionLimit=0 !!!!
 		
+		// testJMdict();
+		
+		testJMnedict();		
+	}
+	
+	@SuppressWarnings("unused")
+	private static void testJMdict() throws Exception {
+		
 		File jmdictFile = new File("../JapaneseDictionary_additional/JMdict");
 
 		// walidacja xsd
 
 		SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 		
-		Schema schema = factory.newSchema(new File("src/main/resources/pl/idedyk/japanese/dictionary2/jmdict/xsd/JMdict.xsd"));
+		Schema schema = factory.newSchema(new File("src/main/resources/pl/idedyk/japanese/dictionary/jmdict/xsd/JMdict.xsd"));
 		
 		Validator validator = schema.newValidator();
 		
@@ -116,6 +124,24 @@ public class Test6 {
 				xmlEventReader.next();
 			}
 		}
-		*/		
+		*/				
+	}
+	
+	private static void testJMnedict() throws Exception {
+		
+		File jmnedict = new File("../JapaneseDictionary_additional/JMnedict.xml");
+
+		// walidacja xsd
+
+		SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+		
+		Schema schema = factory.newSchema(new File("src/main/resources/pl/idedyk/japanese/dictionary/jmnedict/xsd/JMnedict.xsd"));
+		
+		Validator validator = schema.newValidator();
+		
+		System.out.println("Validate");
+		
+		validator.validate(new StreamSource(jmnedict));
+		
 	}
 }

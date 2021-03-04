@@ -4,10 +4,6 @@
 
 	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd" />
 
-	<!-- DOKONCZYC !!! => Test6 -->
-	<!-- POZMIENIAC NAZWY W BINDING -->
-	<!-- SPRAWDZIC< CZY WSZYSTKIE POLA SA OBECNE -->
-
 	<xsd:element name="JMdict">
 		<xsd:complexType>
 			<xsd:sequence>
