@@ -163,12 +163,12 @@
                         <configuration>
                             <extension>true</extension>
                             <encoding>UTF-8</encoding>
-                            <bindingDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary2/jmdict/xsd</bindingDirectory>
+                            <bindingDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/jmdict/xsd</bindingDirectory>
                             <bindingIncludes>
                                 <include>binding.xjb</include>
                             </bindingIncludes>
-                            <schemaDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary2/jmdict/xsd</schemaDirectory>
-                            <generatePackage>pl.idedyk.japanese.dictionary2.jmdict.xsd</generatePackage>
+                            <schemaDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/jmdict/xsd</schemaDirectory>
+                            <generatePackage>pl.idedyk.japanese.dictionary.jmdict.xsd</generatePackage>
                             <generateDirectory>${project.build.directory}/generated-sources/jmdict/xsd</generateDirectory>
                         </configuration>
                     </execution>
