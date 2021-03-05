@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
 	jxb:extensionBindingPrefixes="xjc">
@@ -11,6 +11,22 @@
 
 		<jxb:bindings node="//xsd:element[@name='literal']">
 			<jxb:property name="kanji" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='character']">
+			<jxb:property name="characterList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='codepoint']">
+			<jxb:property name="codePoint" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='cp_value']">
+			<jxb:property name="codePointValueList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:attribute[@name='cp_type']">
+			<jxb:property name="type" />
 		</jxb:bindings>
 
 	</jxb:bindings>

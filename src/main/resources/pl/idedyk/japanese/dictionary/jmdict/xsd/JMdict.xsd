@@ -88,7 +88,6 @@
 		</xsd:simpleContent>
 	</xsd:complexType>
 
-
 	<xsd:complexType name="gloss">
 		<xsd:simpleContent>
 			<xsd:extension base="xsd:string">

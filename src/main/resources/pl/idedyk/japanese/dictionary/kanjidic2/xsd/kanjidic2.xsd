@@ -22,7 +22,31 @@
 	<xsd:complexType name="characterInfo">
 		<xsd:sequence>
 			<xsd:element name="literal" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- znak kanji -->
-
+			<xsd:element name="codepoint" minOccurs="1" maxOccurs="1" type="codePointInfo" /> <!-- informacja o kodowaniu w wybranych standardach -->
 		</xsd:sequence>
 	</xsd:complexType>
+
+	<xsd:complexType name="codePointInfo">
+		<xsd:sequence>
+			<xsd:element name="cp_value" minOccurs="1" maxOccurs="unbounded" type="codePointValueInfo" /> <!-- kodowanie znaku -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="codePointValueInfo">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="cp_type" use="required" type="codePointValueType" /> <!-- rodzaj kodowania -->
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:simpleType name="codePointValueType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="jis208" />
+			<xsd:enumeration value="jis212" />
+			<xsd:enumeration value="jis213" />
+			<xsd:enumeration value="ucs" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
 </xsd:schema>
