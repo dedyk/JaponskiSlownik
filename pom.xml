@@ -190,6 +190,24 @@
                             <generateDirectory>${project.build.directory}/generated-sources/jmnedict/xsd</generateDirectory>
                         </configuration>
                     </execution>
+
+                    <execution>
+                        <id>kanjidic2-generate</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <extension>true</extension>
+                            <encoding>UTF-8</encoding>
+                            <bindingDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/kanjidic2/xsd</bindingDirectory>
+                            <bindingIncludes>
+                                <include>binding.xjb</include>
+                            </bindingIncludes>
+                            <schemaDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/kanjidic2/xsd</schemaDirectory>
+                            <generatePackage>pl.idedyk.japanese.dictionary.kanjidic2.xsd</generatePackage>
+                            <generateDirectory>${project.build.directory}/generated-sources/kanjidic2/xsd</generateDirectory>
+                        </configuration>
+                    </execution>
 				</executions>
 			</plugin>
 		</plugins>

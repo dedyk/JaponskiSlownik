@@ -27,7 +27,9 @@ public class Test6 {
 		
 		// testJMdict();
 		
-		testJMnedict();		
+		// testJMnedict();
+		
+		testKanjiDict2();
 	}
 	
 	@SuppressWarnings("unused")
@@ -127,6 +129,7 @@ public class Test6 {
 		*/				
 	}
 	
+	@SuppressWarnings("unused")
 	private static void testJMnedict() throws Exception {
 		
 		File jmnedict = new File("../JapaneseDictionary_additional/JMnedict.xml");
@@ -141,7 +144,24 @@ public class Test6 {
 		
 		System.out.println("Validate");
 		
-		validator.validate(new StreamSource(jmnedict));
+		validator.validate(new StreamSource(jmnedict));		
+	}
+	
+	private static void testKanjiDict2() throws Exception {
+		
+		File kanjidic2 = new File("../JapaneseDictionary_additional/kanjidic2.xml");
+		
+		// walidacja xsd
+
+		SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+		
+		Schema schema = factory.newSchema(new File("src/main/resources/pl/idedyk/japanese/dictionary/kanjidic2/xsd/kanjidic2.xsd"));
+		
+		Validator validator = schema.newValidator();
+		
+		System.out.println("Validate");
+		
+		validator.validate(new StreamSource(kanjidic2));		
 		
 	}
 }

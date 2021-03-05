@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+
+	<xsd:element name="kanjidic2">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="header" minOccurs="1" maxOccurs="1" type="headerInfo" /> <!-- naglowek slownika -->
+
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="headerInfo">
+		<xsd:sequence>
+			<xsd:element name="file_version" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- wersja pliku -->
+			<xsd:element name="database_version" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- wersja slownika -->
+			<xsd:element name="date_of_creation" minOccurs="1" maxOccurs="1" type="xsd:date" /> <!-- data slownika -->
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>
