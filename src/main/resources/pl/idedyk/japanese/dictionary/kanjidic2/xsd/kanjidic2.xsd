@@ -6,7 +6,7 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="header" minOccurs="1" maxOccurs="1" type="headerInfo" /> <!-- naglowek slownika -->
-
+				<xsd:element name="character" minOccurs="0" maxOccurs="unbounded" type="characterInfo" /> <!-- lista znakow kanji -->
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
@@ -16,6 +16,13 @@
 			<xsd:element name="file_version" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- wersja pliku -->
 			<xsd:element name="database_version" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- wersja slownika -->
 			<xsd:element name="date_of_creation" minOccurs="1" maxOccurs="1" type="xsd:date" /> <!-- data slownika -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="characterInfo">
+		<xsd:sequence>
+			<xsd:element name="literal" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- znak kanji -->
+
 		</xsd:sequence>
 	</xsd:complexType>
 </xsd:schema>

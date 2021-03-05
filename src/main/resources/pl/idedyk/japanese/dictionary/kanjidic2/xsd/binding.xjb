@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+	jxb:extensionBindingPrefixes="xjc">
+
+	<jxb:globalBindings>
+		<jxb:serializable uid="1" />
+	</jxb:globalBindings>
+
+	<jxb:bindings schemaLocation="kanjidic2.xsd">
+
+		<jxb:bindings node="//xsd:element[@name='literal']">
+			<jxb:property name="kanji" />
+		</jxb:bindings>
+
+	</jxb:bindings>
+
+</jxb:bindings>
