@@ -23,6 +23,8 @@
 		<xsd:sequence>
 			<xsd:element name="literal" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- znak kanji -->
 			<xsd:element name="codepoint" minOccurs="1" maxOccurs="1" type="codePointInfo" /> <!-- informacja o kodowaniu w wybranych standardach -->
+			<xsd:element name="radical" minOccurs="1" maxOccurs="1" type="radicalInfo" /> <!-- ??? -->
+			<xsd:element name="misc" minOccurs="1" maxOccurs="1" type="miscInfo" /> <!-- rozne informacje -->
 		</xsd:sequence>
 	</xsd:complexType>
 
@@ -48,5 +50,45 @@
 			<xsd:enumeration value="ucs" />
 		</xsd:restriction>
 	</xsd:simpleType>
+
+	<xsd:complexType name="radicalInfo">
+		<xsd:sequence>
+			<xsd:element name="rad_value" minOccurs="1" maxOccurs="unbounded" type="radicalInfoValue" /> <!-- ??? -->
+		</xsd:sequence>
+	</xsd:complexType>
 	
+	<xsd:complexType name="radicalInfoValue">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="rad_type" use="required" type="radicalInfoValueType" /> <!-- ??? -->
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:simpleType name="radicalInfoValueType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="classical" />
+			<xsd:enumeration value="nelson_c" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="miscInfo">
+		<xsd:sequence>
+			<xsd:element name="grade" minOccurs="1" maxOccurs="1" type="gradeType" /> <!-- numer stopnia w szkole, gdzie uczniowie ucza sie znaku -->
+		</xsd:sequence>
+	</xsd:complexType>	
+
+	<xsd:simpleType name="gradeType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:enumeration value="1" />
+			<xsd:enumeration value="2" />
+			<xsd:enumeration value="3" />
+			<xsd:enumeration value="4" />
+			<xsd:enumeration value="5" />
+			<xsd:enumeration value="6" />
+			<xsd:enumeration value="7" />
+			<xsd:enumeration value="8" />
+			<xsd:enumeration value="9" />
+		</xsd:restriction>
+	</xsd:simpleType>
 </xsd:schema>

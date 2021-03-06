@@ -5,6 +5,7 @@
 
 	<jxb:globalBindings>
 		<jxb:serializable uid="1" />
+		<jxb:javaType xmlType="xsd:integer" name="java.lang.Integer"/>
 	</jxb:globalBindings>
 
 	<jxb:bindings schemaLocation="kanjidic2.xsd">
@@ -29,6 +30,14 @@
 			<jxb:property name="type" />
 		</jxb:bindings>
 
+		<jxb:bindings node="//xsd:element[@name='rad_value']">
+			<jxb:property name="radicalValueList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:attribute[@name='rad_type']">
+			<jxb:property name="radicalValueType" />
+		</jxb:bindings>
+		
 	</jxb:bindings>
 
 </jxb:bindings>
