@@ -74,7 +74,12 @@
 
 	<xsd:complexType name="miscInfo">
 		<xsd:sequence>
-			<xsd:element name="grade" minOccurs="1" maxOccurs="1" type="gradeType" /> <!-- numer stopnia w szkole, gdzie uczniowie ucza sie znaku -->
+			<xsd:element name="grade" minOccurs="0" maxOccurs="1" type="gradeType" /> <!-- numer stopnia w szkole, gdzie uczniowie ucza sie znaku -->
+			<xsd:element name="stroke_count" minOccurs="1" maxOccurs="1" type="xsd:integer" /> <!-- liczba kresek -->
+			<xsd:element name="variant" minOccurs="0" maxOccurs="unbounded" type="miscInfoVariant" /> <!-- ??? -->
+			<xsd:element name="freq" minOccurs="0" maxOccurs="1" type="xsd:integer" /> <!-- czestotliwosc wystepowania, im nizsza wartosc tym znak czesciej wystepuje w jezyku -->
+			<xsd:element name="rad_name" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- jezeli znak kanji jest elementem podstawowym, element z nazwa tego elementu -->
+			<xsd:element name="jlpt" minOccurs="0" maxOccurs="1" type="xsd:integer" /> <!-- numer JLPT, w ktorym znak wystepuje  -->
 		</xsd:sequence>
 	</xsd:complexType>	
 
@@ -91,4 +96,27 @@
 			<xsd:enumeration value="9" />
 		</xsd:restriction>
 	</xsd:simpleType>
+
+	<xsd:complexType name="miscInfoVariant">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="var_type" use="required" type="miscInfoVariantType" /> <!-- ??? -->
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:simpleType name="miscInfoVariantType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="jis208" />
+			<xsd:enumeration value="jis212" />
+			<xsd:enumeration value="jis213" />
+			<xsd:enumeration value="deroo" />
+			<xsd:enumeration value="njecd" />
+			<xsd:enumeration value="s_h" />
+			<xsd:enumeration value="nelson_c" />
+			<xsd:enumeration value="oneill" />
+			<xsd:enumeration value="ucs" />			
+		</xsd:restriction>
+	</xsd:simpleType>
+
 </xsd:schema>
