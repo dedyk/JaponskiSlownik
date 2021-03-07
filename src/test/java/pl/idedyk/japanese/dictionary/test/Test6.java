@@ -15,9 +15,9 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
-import pl.idedyk.japanese.dictionary.jmdict.xsd.JMdict;
-import pl.idedyk.japanese.dictionary.jmdict.xsd.KanjiInfo;
-import pl.idedyk.japanese.dictionary.jmdict.xsd.ReadingInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 
 public class Test6 {
 

@@ -163,12 +163,12 @@
                         <configuration>
                             <extension>true</extension>
                             <encoding>UTF-8</encoding>
-                            <bindingDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/jmdict/xsd</bindingDirectory>
+                            <bindingDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary2/jmdict/xsd</bindingDirectory>
                             <bindingIncludes>
                                 <include>binding.xjb</include>
                             </bindingIncludes>
-                            <schemaDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/jmdict/xsd</schemaDirectory>
-                            <generatePackage>pl.idedyk.japanese.dictionary.jmdict.xsd</generatePackage>
+                            <schemaDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary2/jmdict/xsd</schemaDirectory>
+                            <generatePackage>pl.idedyk.japanese.dictionary2.jmdict.xsd</generatePackage>
                             <generateDirectory>${project.build.directory}/generated-sources/jmdict/xsd</generateDirectory>
                         </configuration>
                     </execution>
@@ -181,12 +181,12 @@
                         <configuration>
                             <extension>true</extension>
                             <encoding>UTF-8</encoding>
-                            <bindingDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/jmnedict/xsd</bindingDirectory>
+                            <bindingDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary2/jmnedict/xsd</bindingDirectory>
                             <bindingIncludes>
                                 <include>binding.xjb</include>
                             </bindingIncludes>
-                            <schemaDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/jmnedict/xsd</schemaDirectory>
-                            <generatePackage>pl.idedyk.japanese.dictionary.jmnedict.xsd</generatePackage>
+                            <schemaDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary2/jmnedict/xsd</schemaDirectory>
+                            <generatePackage>pl.idedyk.japanese.dictionary2.jmnedict.xsd</generatePackage>
                             <generateDirectory>${project.build.directory}/generated-sources/jmnedict/xsd</generateDirectory>
                         </configuration>
                     </execution>
@@ -199,12 +199,12 @@
                         <configuration>
                             <extension>true</extension>
                             <encoding>UTF-8</encoding>
-                            <bindingDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/kanjidic2/xsd</bindingDirectory>
+                            <bindingDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary2/kanjidic2/xsd</bindingDirectory>
                             <bindingIncludes>
                                 <include>binding.xjb</include>
                             </bindingIncludes>
-                            <schemaDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary/kanjidic2/xsd</schemaDirectory>
-                            <generatePackage>pl.idedyk.japanese.dictionary.kanjidic2.xsd</generatePackage>
+                            <schemaDirectory>${basedir}/src/main/resources/pl/idedyk/japanese/dictionary2/kanjidic2/xsd</schemaDirectory>
+                            <generatePackage>pl.idedyk.japanese.dictionary2.kanjidic2.xsd</generatePackage>
                             <generateDirectory>${project.build.directory}/generated-sources/kanjidic2/xsd</generateDirectory>
                         </configuration>
                     </execution>
