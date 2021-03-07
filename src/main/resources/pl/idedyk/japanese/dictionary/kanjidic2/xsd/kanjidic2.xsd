@@ -25,6 +25,7 @@
 			<xsd:element name="codepoint" minOccurs="1" maxOccurs="1" type="codePointInfo" /> <!-- informacja o kodowaniu w wybranych standardach -->
 			<xsd:element name="radical" minOccurs="1" maxOccurs="1" type="radicalInfo" /> <!-- ??? -->
 			<xsd:element name="misc" minOccurs="1" maxOccurs="1" type="miscInfo" /> <!-- rozne informacje -->
+			<xsd:element name="dic_number" minOccurs="0" maxOccurs="1" type="dictionaryNumberInfo" /> <!-- odnosniki do innych slownikow -->
 		</xsd:sequence>
 	</xsd:complexType>
 
@@ -56,7 +57,7 @@
 			<xsd:element name="rad_value" minOccurs="1" maxOccurs="unbounded" type="radicalInfoValue" /> <!-- ??? -->
 		</xsd:sequence>
 	</xsd:complexType>
-	
+
 	<xsd:complexType name="radicalInfoValue">
 		<xsd:simpleContent>
 			<xsd:extension base="xsd:string">
@@ -79,9 +80,9 @@
 			<xsd:element name="variant" minOccurs="0" maxOccurs="unbounded" type="miscInfoVariant" /> <!-- ??? -->
 			<xsd:element name="freq" minOccurs="0" maxOccurs="1" type="xsd:integer" /> <!-- czestotliwosc wystepowania, im nizsza wartosc tym znak czesciej wystepuje w jezyku -->
 			<xsd:element name="rad_name" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- jezeli znak kanji jest elementem podstawowym, element z nazwa tego elementu -->
-			<xsd:element name="jlpt" minOccurs="0" maxOccurs="1" type="xsd:integer" /> <!-- numer JLPT, w ktorym znak wystepuje  -->
+			<xsd:element name="jlpt" minOccurs="0" maxOccurs="1" type="xsd:integer" /> <!-- numer JLPT, w ktorym znak wystepuje -->
 		</xsd:sequence>
-	</xsd:complexType>	
+	</xsd:complexType>
 
 	<xsd:simpleType name="gradeType">
 		<xsd:restriction base="xsd:integer">
@@ -115,8 +116,52 @@
 			<xsd:enumeration value="s_h" />
 			<xsd:enumeration value="nelson_c" />
 			<xsd:enumeration value="oneill" />
-			<xsd:enumeration value="ucs" />			
+			<xsd:enumeration value="ucs" />
 		</xsd:restriction>
 	</xsd:simpleType>
 
+	<xsd:complexType name="dictionaryNumberInfo">
+		<xsd:sequence>
+			<xsd:element name="dic_ref" minOccurs="1" maxOccurs="unbounded" type="dictionaryNumberInfoReference" /> <!-- referencja do innego slownika -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="dictionaryNumberInfoReference">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="dr_type" use="required" type="dictionaryNumberInfoReferenceType" /> <!-- identyfikator slownika -->
+				<xsd:attribute name="m_vol" use="optional" type="xsd:string" /> <!-- numer wolumenu mono -->
+				<xsd:attribute name="m_page" use="optional" type="xsd:string" /> <!-- numer strony mono -->
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:simpleType name="dictionaryNumberInfoReferenceType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="nelson_c" />
+			<xsd:enumeration value="nelson_n" />
+			<xsd:enumeration value="halpern_njecd" />
+			<xsd:enumeration value="halpern_kkd" />
+			<xsd:enumeration value="halpern_kkld" />
+			<xsd:enumeration value="halpern_kkld_2ed" />
+			<xsd:enumeration value="heisig" />
+			<xsd:enumeration value="heisig6" />
+			<xsd:enumeration value="gakken" />
+			<xsd:enumeration value="oneill_names" />
+			<xsd:enumeration value="oneill_kk" />
+			<xsd:enumeration value="moro" />
+			<xsd:enumeration value="henshall" />
+			<xsd:enumeration value="sh_kk" />
+			<xsd:enumeration value="sh_kk2" />
+			<xsd:enumeration value="sakade" />
+			<xsd:enumeration value="jf_cards" />
+			<xsd:enumeration value="henshall3" />
+			<xsd:enumeration value="tutt_cards" />
+			<xsd:enumeration value="crowley" />
+			<xsd:enumeration value="kanji_in_context" />
+			<xsd:enumeration value="busy_people" />
+			<xsd:enumeration value="kodansha_compact" />
+			<xsd:enumeration value="maniette" />
+		</xsd:restriction>
+	</xsd:simpleType>
 </xsd:schema>

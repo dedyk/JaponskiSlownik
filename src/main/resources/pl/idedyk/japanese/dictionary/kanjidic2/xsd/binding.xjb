@@ -49,6 +49,42 @@
 		<jxb:bindings node="//xsd:element[@name='rad_name']">
 			<jxb:property name="radicalNameList" />
 		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='dic_number']">
+			<jxb:property name="dictionaryNumber" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='dic_ref']">
+			<jxb:property name="dictionaryReferenceList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:attribute[@name='dr_type']">
+			<jxb:property name="dictionaryType" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:attribute[@name='m_vol']">
+			<jxb:property name="monoVolume" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:attribute[@name='m_page']">
+			<jxb:property name="monoPage" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='codePointValueType']">
+			<jxb:typesafeEnumClass name="CodePointValueTypeEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='radicalInfoValueType']">
+			<jxb:typesafeEnumClass name="RadicalInfoValueTypeEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='miscInfoVariantType']">
+			<jxb:typesafeEnumClass name="MiscInfoVariantTypeEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='dictionaryNumberInfoReferenceType']">
+			<jxb:typesafeEnumClass name="DictionaryNumberInfoReferenceTypeEnum" />
+		</jxb:bindings>
 		
 	</jxb:bindings>
 
