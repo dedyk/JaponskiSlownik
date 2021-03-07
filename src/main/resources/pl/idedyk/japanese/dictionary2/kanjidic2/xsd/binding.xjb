@@ -82,6 +82,30 @@
 			<jxb:property name="type" />
 		</jxb:bindings>
 
+		<jxb:bindings node="//xsd:element[@name='rmgroup']">
+			<jxb:property name="readingMeaningGroup" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='nanori']">
+			<jxb:property name="nanoriList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='reading']">
+			<jxb:property name="readingList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:element[@name='meaning']">
+			<jxb:property name="meaningList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:attribute[@name='r_type']">
+			<jxb:property name="type" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:attribute[@name='m_lang']">
+			<jxb:property name="lang" />
+		</jxb:bindings>
+
 		<jxb:bindings node="//xsd:simpleType[@name='codePointValueType']">
 			<jxb:typesafeEnumClass name="CodePointValueTypeEnum" />
 		</jxb:bindings>
@@ -100,6 +124,18 @@
 
 		<jxb:bindings node="//xsd:simpleType[@name='queryCodeInfoCodeType']">
 			<jxb:typesafeEnumClass name="QueryCodeInfoCodeType" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='queryCodeInfoCodeSkipMisClass']">
+			<jxb:typesafeEnumClass name="QueryCodeInfoCodeSkipMisClassEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='readingMeaningInfoReadingMeaningGroupReadingType']">
+			<jxb:typesafeEnumClass name="ReadingMeaningInfoReadingMeaningGroupReadingTypeEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='readingMeaningInfoReadingMeaningGroupMeaningLang']">
+			<jxb:typesafeEnumClass name="ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum" />
 		</jxb:bindings>
 		
 	</jxb:bindings>
