@@ -18,6 +18,10 @@ import javax.xml.validation.Validator;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaning;
 
 public class Test6 {
 
@@ -149,7 +153,7 @@ public class Test6 {
 	
 	private static void testKanjiDict2() throws Exception {
 		
-		File kanjidic2 = new File("../JapaneseDictionary_additional/kanjidic2.xml");
+		File kanjidic2File = new File("../JapaneseDictionary_additional/kanjidic2.xml");
 		
 		// walidacja xsd
 
@@ -161,7 +165,34 @@ public class Test6 {
 		
 		System.out.println("Validate");
 		
-		validator.validate(new StreamSource(kanjidic2));		
+		validator.validate(new StreamSource(kanjidic2File));
 		
+		//
+		
+		// wczytywanie
+		
+		JAXBContext jaxbContext = JAXBContext.newInstance(Kanjidic2.class);              
+
+		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+		
+		Kanjidic2 kanjidic2 = (Kanjidic2) jaxbUnmarshaller.unmarshal(kanjidic2File);
+		
+		List<CharacterInfo> characterList = kanjidic2.getCharacterList();
+		
+		for (CharacterInfo characterInfo : characterList) {
+			
+			System.out.println(characterInfo.getKanji());
+			
+			ReadingMeaningInfo readingMeaning = characterInfo.getReadingMeaning();
+			
+			if (readingMeaning != null) {
+				
+				List<ReadingMeaningInfoReadingMeaningGroupMeaning> meaningList = readingMeaning.getReadingMeaningGroup().getMeaningList();
+				
+				for (ReadingMeaningInfoReadingMeaningGroupMeaning meaning : meaningList) {				
+					System.out.println("\t" + meaning.getLang() + " - " + meaning.getValue());				
+				}				
+			}			
+		}		
 	}
 }
