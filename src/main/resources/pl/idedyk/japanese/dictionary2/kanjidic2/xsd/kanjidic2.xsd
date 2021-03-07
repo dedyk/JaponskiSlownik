@@ -27,6 +27,7 @@
 			<xsd:element name="misc" minOccurs="1" maxOccurs="1" type="miscInfo" /> <!-- rozne informacje -->
 			<xsd:element name="dic_number" minOccurs="0" maxOccurs="1" type="dictionaryNumberInfo" /> <!-- odnosniki do innych slownikow -->
 			<xsd:element name="query_code" minOccurs="0" maxOccurs="1" type="queryCodeInfo" /> <!-- informacje pomocne do wyszukiwania znakow -->
+			<xsd:element name="reading_meaning" minOccurs="0" maxOccurs="1" type="readingMeaningInfo" /> <!-- informacje o czytaniu i znaczeniu -->
 		</xsd:sequence>
 	</xsd:complexType>
 
@@ -77,7 +78,7 @@
 	<xsd:complexType name="miscInfo">
 		<xsd:sequence>
 			<xsd:element name="grade" minOccurs="0" maxOccurs="1" type="gradeType" /> <!-- numer stopnia w szkole, gdzie uczniowie ucza sie znaku -->
-			<xsd:element name="stroke_count" minOccurs="1" maxOccurs="1" type="xsd:integer" /> <!-- liczba kresek -->
+			<xsd:element name="stroke_count" minOccurs="1" maxOccurs="unbounded" type="xsd:integer" /> <!-- liczba kresek -->
 			<xsd:element name="variant" minOccurs="0" maxOccurs="unbounded" type="miscInfoVariant" /> <!-- ??? -->
 			<xsd:element name="freq" minOccurs="0" maxOccurs="1" type="xsd:integer" /> <!-- czestotliwosc wystepowania, im nizsza wartosc tym znak czesciej wystepuje w jezyku -->
 			<xsd:element name="rad_name" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- jezeli znak kanji jest elementem podstawowym, element z nazwa tego elementu -->
@@ -96,6 +97,7 @@
 			<xsd:enumeration value="7" />
 			<xsd:enumeration value="8" />
 			<xsd:enumeration value="9" />
+			<xsd:enumeration value="10" />
 		</xsd:restriction>
 	</xsd:simpleType>
 
@@ -176,6 +178,7 @@
 		<xsd:simpleContent>
 			<xsd:extension base="xsd:string">
 				<xsd:attribute name="qc_type" use="required" type="queryCodeInfoCodeType" /> <!-- rodzaj wyszukiwania -->
+				<xsd:attribute name="skip_misclass" use="optional" type="queryCodeInfoCodeSkipMisClass" />	<!-- ??? -->			
 			</xsd:extension>
 		</xsd:simpleContent>
 	</xsd:complexType>
@@ -187,6 +190,66 @@
 			<xsd:enumeration value="four_corner" />
 			<xsd:enumeration value="deroo" />
 			<xsd:enumeration value="misclass" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="queryCodeInfoCodeSkipMisClass">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="posn" />
+			<xsd:enumeration value="stroke_count" />
+			<xsd:enumeration value="stroke_and_posn" />
+			<xsd:enumeration value="stroke_diff" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="readingMeaningInfo">
+		<xsd:sequence>
+			<xsd:element name="rmgroup" minOccurs="0" maxOccurs="1" type="readingMeaningInfoReadingMeaningGroup" /> <!-- element grupujacy czytania i znaczenia -->
+			<xsd:element name="nanori" minOccurs="0" maxOccurs="unbounded" type="xsd:string" /> <!-- japonskie czytania, ktore teraz sa tylko powiazane z nazwami -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="readingMeaningInfoReadingMeaningGroup">
+		<xsd:sequence>
+			<xsd:element name="reading" minOccurs="0" maxOccurs="unbounded" type="readingMeaningInfoReadingMeaningGroupReading" /> <!-- element grupujacy czytania -->
+			<xsd:element name="meaning" minOccurs="0" maxOccurs="unbounded" type="readingMeaningInfoReadingMeaningGroupMeaning" /> <!-- znaczenie znaku -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="readingMeaningInfoReadingMeaningGroupReading">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="r_type" use="required" type="readingMeaningInfoReadingMeaningGroupReadingType" /> <!-- rodzaj czytania -->
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:simpleType name="readingMeaningInfoReadingMeaningGroupReadingType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="pinyin" />
+			<xsd:enumeration value="korean_r" />
+			<xsd:enumeration value="korean_h" />
+			<xsd:enumeration value="vietnam" />
+			<xsd:enumeration value="ja_on" />
+			<xsd:enumeration value="ja_kun" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="readingMeaningInfoReadingMeaningGroupMeaning">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="m_lang" use="optional" type="readingMeaningInfoReadingMeaningGroupMeaningLang" /> <!-- jezyk znaczenia -->
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:simpleType name="readingMeaningInfoReadingMeaningGroupMeaningLang">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="en" />
+			<xsd:enumeration value="fr" />
+			<xsd:enumeration value="es" />
+			<xsd:enumeration value="pt" />
+			<xsd:enumeration value="pl" />
 		</xsd:restriction>
 	</xsd:simpleType>
 

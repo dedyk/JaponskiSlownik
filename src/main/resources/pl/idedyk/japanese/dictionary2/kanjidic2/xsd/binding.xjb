@@ -50,6 +50,10 @@
 			<jxb:property name="radicalNameList" />
 		</jxb:bindings>
 
+		<jxb:bindings node="//xsd:element[@name='stroke_count']">
+			<jxb:property name="strokeCountList" />
+		</jxb:bindings>
+
 		<jxb:bindings node="//xsd:element[@name='dic_number']">
 			<jxb:property name="dictionaryNumber" />
 		</jxb:bindings>
