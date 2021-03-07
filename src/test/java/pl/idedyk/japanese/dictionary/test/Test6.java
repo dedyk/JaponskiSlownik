@@ -41,7 +41,7 @@ public class Test6 {
 
 		SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 		
-		Schema schema = factory.newSchema(new File("src/main/resources/pl/idedyk/japanese/dictionary/jmdict/xsd/JMdict.xsd"));
+		Schema schema = factory.newSchema(new File("src/main/resources/pl/idedyk/japanese/dictionary2/jmdict/xsd/JMdict.xsd"));
 		
 		Validator validator = schema.newValidator();
 		
@@ -138,7 +138,7 @@ public class Test6 {
 
 		SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 		
-		Schema schema = factory.newSchema(new File("src/main/resources/pl/idedyk/japanese/dictionary/jmnedict/xsd/JMnedict.xsd"));
+		Schema schema = factory.newSchema(new File("src/main/resources/pl/idedyk/japanese/dictionary2/jmnedict/xsd/JMnedict.xsd"));
 		
 		Validator validator = schema.newValidator();
 		
@@ -155,7 +155,7 @@ public class Test6 {
 
 		SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 		
-		Schema schema = factory.newSchema(new File("src/main/resources/pl/idedyk/japanese/dictionary/kanjidic2/xsd/kanjidic2.xsd"));
+		Schema schema = factory.newSchema(new File("src/main/resources/pl/idedyk/japanese/dictionary2/kanjidic2/xsd/kanjidic2.xsd"));
 		
 		Validator validator = schema.newValidator();
 		

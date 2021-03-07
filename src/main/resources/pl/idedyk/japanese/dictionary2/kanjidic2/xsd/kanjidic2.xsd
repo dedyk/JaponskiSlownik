@@ -26,6 +26,7 @@
 			<xsd:element name="radical" minOccurs="1" maxOccurs="1" type="radicalInfo" /> <!-- ??? -->
 			<xsd:element name="misc" minOccurs="1" maxOccurs="1" type="miscInfo" /> <!-- rozne informacje -->
 			<xsd:element name="dic_number" minOccurs="0" maxOccurs="1" type="dictionaryNumberInfo" /> <!-- odnosniki do innych slownikow -->
+			<xsd:element name="query_code" minOccurs="0" maxOccurs="1" type="queryCodeInfo" /> <!-- informacje pomocne do wyszukiwania znakow -->
 		</xsd:sequence>
 	</xsd:complexType>
 
@@ -164,4 +165,29 @@
 			<xsd:enumeration value="maniette" />
 		</xsd:restriction>
 	</xsd:simpleType>
+
+	<xsd:complexType name="queryCodeInfo">
+		<xsd:sequence>
+			<xsd:element name="q_code" minOccurs="1" maxOccurs="unbounded" type="queryCodeInfoCode" /> <!-- element zawierajace informacje pomocne do wyszukiwania wedle podanego typu kryterium -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="queryCodeInfoCode">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="qc_type" use="required" type="queryCodeInfoCodeType" /> <!-- rodzaj wyszukiwania -->
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:simpleType name="queryCodeInfoCodeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="skip" />
+			<xsd:enumeration value="sh_desc" />
+			<xsd:enumeration value="four_corner" />
+			<xsd:enumeration value="deroo" />
+			<xsd:enumeration value="misclass" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
 </xsd:schema>

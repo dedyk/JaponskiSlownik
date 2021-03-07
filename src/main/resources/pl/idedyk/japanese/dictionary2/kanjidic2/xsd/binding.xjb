@@ -70,6 +70,14 @@
 			<jxb:property name="monoPage" />
 		</jxb:bindings>
 
+		<jxb:bindings node="//xsd:element[@name='q_code']">
+			<jxb:property name="queryCodeList" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:attribute[@name='qc_type']">
+			<jxb:property name="type" />
+		</jxb:bindings>
+
 		<jxb:bindings node="//xsd:simpleType[@name='codePointValueType']">
 			<jxb:typesafeEnumClass name="CodePointValueTypeEnum" />
 		</jxb:bindings>
@@ -84,6 +92,10 @@
 
 		<jxb:bindings node="//xsd:simpleType[@name='dictionaryNumberInfoReferenceType']">
 			<jxb:typesafeEnumClass name="DictionaryNumberInfoReferenceTypeEnum" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:simpleType[@name='queryCodeInfoCodeType']">
+			<jxb:typesafeEnumClass name="QueryCodeInfoCodeType" />
 		</jxb:bindings>
 		
 	</jxb:bindings>
