@@ -72,7 +72,7 @@ public class GenerateMissingWordListApp {
 		}
 		
 		// wczytywanie zawartosci pliku		
-		System.out.println("Reading word list file name...");		
+		System.out.println("Reading word list file name");
 		
 		List<String> wordList = Helper.readFile(wordListFileName, true);
 		

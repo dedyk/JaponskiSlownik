@@ -69,7 +69,7 @@ public class Test6 {
 
 		JMdict jmdict = (JMdict) jaxbUnmarshaller.unmarshal(jmdictFile);
 
-		for (JMdict.Entry entry : jmdict.getEntry()) {
+		for (JMdict.Entry entry : jmdict.getEntryList()) {
 			
 			if (entry.getEntryId().intValue() == 1000260) {
 			

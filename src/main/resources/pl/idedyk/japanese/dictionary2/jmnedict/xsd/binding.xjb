@@ -5,9 +5,14 @@
 
 	<jxb:globalBindings>
 		<jxb:serializable uid="1" />
+		<jxb:javaType xmlType="xsd:integer" name="java.lang.Integer"/>
 	</jxb:globalBindings>
 
 	<jxb:bindings schemaLocation="JMnedict.xsd">
+
+		<jxb:bindings node="//xsd:element[@name='entry']">
+			<jxb:property name="entryList" />
+		</jxb:bindings>
 
 		<jxb:bindings node="//xsd:element[@name='ent_seq']">
 			<jxb:property name="entryId" />

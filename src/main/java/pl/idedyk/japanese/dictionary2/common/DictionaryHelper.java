@@ -1,6 +1,9 @@
 package pl.idedyk.japanese.dictionary2.common;
 
 import java.io.File;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
@@ -11,6 +14,7 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class DictionaryHelper {
 	
@@ -34,6 +38,8 @@ public class DictionaryHelper {
 	
 	private File jmdictFile;	
 	private JMdict jmdict = null;
+	
+	private Map<Integer, JMdict.Entry> jmdictEntryIdCache;
 	
 	public JMdict getJMdict() throws Exception {
 		
@@ -62,5 +68,33 @@ public class DictionaryHelper {
 		}
 		
 		return jmdict;
-	}	
+	}
+	
+	private void initJMdictEntryIdCache() throws Exception {
+		
+		// inicjalizacja jmdict
+		getJMdict();
+		
+		//
+		
+		if (jmdictEntryIdCache == null) {
+			
+			System.out.println("Caching JMdict");
+			
+			jmdictEntryIdCache = new TreeMap<>();
+			
+			List<Entry> entryList = jmdict.getEntryList();
+			
+			for (Entry entry : entryList) {
+				jmdictEntryIdCache.put(entry.getEntryId(), entry);
+			}
+		}		
+	}
+	
+	public JMdict.Entry getJMdictEntry(Integer entryId) throws Exception {
+		
+		initJMdictEntryIdCache();
+		
+		return jmdictEntryIdCache.get(entryId);		
+	}
 }
