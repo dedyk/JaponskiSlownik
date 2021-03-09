@@ -1,7 +1,6 @@
 package pl.idedyk.japanese.dictionary2.common;
 
 import java.io.File;
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -141,7 +140,7 @@ public class DictionaryHelper {
 		
 		if (jmdictLuceneIndex == null) {
 			
-			System.out.println("Init JMdict lucene index");
+			System.out.println("Initializing JMdict lucene index");
 			
 			// analizator lucynkowy
 			SimpleAnalyzer analyzer = new SimpleAnalyzer(Version.LUCENE_47);
