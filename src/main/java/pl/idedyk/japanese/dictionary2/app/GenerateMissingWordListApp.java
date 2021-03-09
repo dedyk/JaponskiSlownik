@@ -82,6 +82,8 @@ public class GenerateMissingWordListApp {
 		JMdict jmdict = dictionaryHelper.getJMdict();
 
 		// stworzenie indeksu lucene i wyszukiwacza
+		
+		dictionaryHelper.findInJMdict("neko");
 
 	}
 	
