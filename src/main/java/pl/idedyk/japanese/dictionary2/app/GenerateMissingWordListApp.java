@@ -1,6 +1,8 @@
 package pl.idedyk.japanese.dictionary2.app;
 
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -81,17 +83,35 @@ public class GenerateMissingWordListApp {
 		// wczytywanie pomocnika slownikowego
 		DictionaryHelper dictionaryHelper = DictionaryHelper.init();
 		
-		JMdict jmdict = dictionaryHelper.getJMdict();
-
-		// wyszukiwanie (tymczasowo)
-		List<Entry> jmdictResult = dictionaryHelper.findInJMdict("かおあわせ");
+		Set<Integer> alreadyMetEntrySet = new TreeSet<Integer>();
 		
-		for (Entry entry : jmdictResult) {
+		// wyszukiwanie slow
+		for (String currentWord : wordList) {
 			
-			List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
+			List<Entry> jmdictResult = dictionaryHelper.findInJMdict(currentWord);
 			
-			for (KanjiInfo kanjiInfo : kanjiInfoList) {
-				System.out.println("KKKK: " + kanjiInfo.getKanji());
+			if (jmdictResult.size() > 0) { // cos zostalo odnalezione
+								
+				for (Entry entry : jmdictResult) {
+					
+					if (alreadyMetEntrySet.contains(entry.getEntryId()) == true) { // to slowo juz odwiedzalismy
+						continue;
+						
+					} else {
+						alreadyMetEntrySet.add(entry.getEntryId());
+					}
+					
+					// sprawdzenie, czy takie slowo juz wystepuje w moim slowniku
+					int fixme3 = 1;
+					
+					// dokonczyc !!!!!!!!!!!!!!!
+					int fixme4 = 1;
+				}				
+				
+			} else { // nic nie znaleziono
+				
+				int fixme2 = 1;
+				
 			}
 		}
 		
