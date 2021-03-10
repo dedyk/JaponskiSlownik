@@ -11,6 +11,8 @@ import org.apache.commons.cli.Options;
 import pl.idedyk.japanese.dictionary2.common.DictionaryHelper;
 import pl.idedyk.japanese.dictionary2.common.Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 
 public class GenerateMissingWordListApp {
 
@@ -81,10 +83,20 @@ public class GenerateMissingWordListApp {
 		
 		JMdict jmdict = dictionaryHelper.getJMdict();
 
-		// stworzenie indeksu lucene i wyszukiwacza
+		// wyszukiwanie (tymczasowo)
+		List<Entry> jmdictResult = dictionaryHelper.findInJMdict("かおあわせ");
 		
-		dictionaryHelper.findInJMdict("neko");
-
+		for (Entry entry : jmdictResult) {
+			
+			List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
+			
+			for (KanjiInfo kanjiInfo : kanjiInfoList) {
+				System.out.println("KKKK: " + kanjiInfo.getKanji());
+			}
+		}
+		
+		// zakonczenie
+		dictionaryHelper.close();
 	}
 	
 	private static void printHelp(Options options) {
