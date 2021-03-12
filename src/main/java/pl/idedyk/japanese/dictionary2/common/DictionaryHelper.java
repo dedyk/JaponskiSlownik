@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary2.common;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -38,13 +39,18 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.RAMDirectory;
 import org.apache.lucene.util.Version;
 
+import com.csvreader.CsvWriter;
+
+import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfoKanaType;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 
@@ -67,6 +73,8 @@ public class DictionaryHelper {
 		
 		return dictionaryHelper;
 	}
+	
+	private KanaHelper kanaHelper = new KanaHelper();
 	
 	private File jmdictFile;	
 	private JMdict jmdict = null;
@@ -170,9 +178,7 @@ public class DictionaryHelper {
 			IndexWriter indexWriter = new IndexWriter(jmdictLuceneIndex, indexWriterConfig);			
 			
 			List<Entry> entryList = jmdict.getEntryList();
-			
-			KanaHelper kanaHelper = new KanaHelper();
-			
+						
 			// indeksowanie
 			for (Entry entry : entryList) {
 				
@@ -195,16 +201,22 @@ public class DictionaryHelper {
 				List<ReadingInfo> entryReadingInfoList = entry.getReadingInfoList();
 				
 				for (ReadingInfo readingInfo : entryReadingInfoList) {
-					addStringFieldToDocument(document, JMdictLuceneFields.KANA, readingInfo.getKana());
+					addStringFieldToDocument(document, JMdictLuceneFields.KANA, readingInfo.getKana().getValue());
 				}
 
 				for (ReadingInfo readingInfo : entryReadingInfoList) {
 					
-					try {
-						addStringFieldToDocument(document, JMdictLuceneFields.ROMAJI, kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana(), kanaHelper.getKanaCache(), true)));					
-					} catch (Exception e) {
-						// noop
+					String romaji = readingInfo.getKana().getRomaji();
+					
+					if (romaji == null) {
+						try {
+							romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana().getValue(), kanaHelper.getKanaCache(), true));
+						} catch (Exception e) {
+							// noop
+						}
 					}
+					
+					addStringFieldToDocument(document, JMdictLuceneFields.ROMAJI, romaji);
 				}
 
 				//
@@ -375,6 +387,124 @@ public class DictionaryHelper {
 		}
 	}
 	
+	public void saveEntryListAsHumanCsv(String fileName, List<Entry> entryList) throws Exception {
+		
+		CsvWriter csvWriter = new CsvWriter(new FileWriter(fileName), ',');
+		
+		for (Entry entry : entryList) {
+			saveEntryAsHumanCsv(csvWriter, entry);
+		}		
+		
+		csvWriter.close();
+	}
+	
+	private void saveEntryAsHumanCsv(CsvWriter csvWriter, Entry entry) throws Exception {
+		
+		// rekord poczatkowy
+		csvWriter.write(EntryHumanCsvFieldType.BEGIN.name());		
+		csvWriter.write(String.valueOf(entry.getEntryId()));
+		csvWriter.endRecord();
+		
+		// kanji
+		List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
+		
+		for (KanjiInfo kanjiInfo : kanjiInfoList) {
+
+			csvWriter.write(EntryHumanCsvFieldType.KANJI.name());		
+			csvWriter.write(String.valueOf(entry.getEntryId()));
+
+			csvWriter.write(kanjiInfo.getKanji());
+			csvWriter.write(Helper.convertListToString(kanjiInfo.getKanjiAdditionalInfoList()));
+			csvWriter.write(Helper.convertListToString(kanjiInfo.getRelativePriorityList()));
+			
+			csvWriter.endRecord();
+		}
+				
+		// reading
+		List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
+		
+		for (ReadingInfo readingInfo : readingInfoList) {
+			
+			csvWriter.write(EntryHumanCsvFieldType.READING.name());		
+			csvWriter.write(String.valueOf(entry.getEntryId()));
+
+			csvWriter.write(readingInfo.getNoKanji() != null ? ReadingInfoNoKanji.NO_KANJI.name() : "");			
+			csvWriter.write(Helper.convertListToString(readingInfo.getKanjiRestrictionList()));
+						
+			ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
+			
+			if (kanaType == null) {
+				kanaType = getKanaType(readingInfo.getKana().getValue());
+			}
+
+			csvWriter.write(kanaType.name());
+
+			csvWriter.write(readingInfo.getKana().getValue());
+			
+			String romaji = readingInfo.getKana().getRomaji();
+			
+			if (romaji == null) {
+				
+				if (romaji == null) {
+					try {
+						romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana().getValue(), kanaHelper.getKanaCache(), true));
+					} catch (Exception e) {
+						romaji = "FIXME";
+					}
+				}				
+			}			
+			
+			csvWriter.write(romaji);
+			
+			csvWriter.write(Helper.convertListToString(readingInfo.getReadingAdditionalInfoList()));
+			csvWriter.write(Helper.convertListToString(readingInfo.getRelativePriorityList()));
+			
+			csvWriter.endRecord();
+		}
+		
+		// rekord koncowy
+		csvWriter.write(EntryHumanCsvFieldType.END.name());
+		csvWriter.write(String.valueOf(entry.getEntryId()));
+		csvWriter.endRecord();		
+	}
+	
+	private static ReadingInfoKanaType getKanaType(String kana) {
+		
+		ReadingInfoKanaType kanaType = null;
+				
+		for (int idx = 0; idx < kana.length(); ++idx) {
+			
+			char c = kana.charAt(idx);
+			
+			boolean currentCIsHiragana = Utils.isHiragana(c);
+			boolean currentCIsKatakana = Utils.isKatakana(c);
+			
+			if (currentCIsHiragana == true) {
+				
+				if (kanaType == null) {
+					kanaType = ReadingInfoKanaType.HIRAGANA;
+					
+				} else if (kanaType == ReadingInfoKanaType.KATAKANA) {
+					kanaType = ReadingInfoKanaType.KATAKANA_HIRAGANA;					
+				}				
+			}
+
+			if (currentCIsKatakana == true) {
+				
+				if (kanaType == null) {
+					kanaType = ReadingInfoKanaType.KATAKANA;
+					
+				} else if (kanaType == ReadingInfoKanaType.HIRAGANA) {
+					kanaType = ReadingInfoKanaType.HIRAGANA_KATAKANA;					
+				}				
+			}			
+		}	
+		
+		return kanaType;
+	}
+	
+	//
+	
 	private static class JMdictLuceneFields {
 		
 		private static final String ENTRY_ID = "entryId";
@@ -386,5 +516,22 @@ public class DictionaryHelper {
 		private static final String TRANSLATE = "translate";		
 		private static final String SENSE_ADDITIONAL_INFO = "senseAdditionalInfo";		
 		private static final String LANGUAGE_SOURCE = "languageSource";		
+	}
+	
+	//
+	
+	private static enum EntryHumanCsvFieldType {
+		
+		BEGIN,
+		
+		KANJI,
+		READING,
+		
+		END;		
+	}
+	
+	private static enum ReadingInfoNoKanji {
+		
+		NO_KANJI;		
 	}
 }

@@ -31,7 +31,7 @@
 
 	<xsd:complexType name="readingInfo">
 		<xsd:sequence>
-			<xsd:element name="reb" minOccurs="1" maxOccurs="1" type="xsd:string" /> <!-- kana -->
+			<xsd:element name="reb" minOccurs="1" maxOccurs="1" type="readingInfoKana" /> <!-- kana (modyfikacja do orginalnego schematu) -->
 			<xsd:element name="re_nokanji" minOccurs="0" maxOccurs="1"> <!-- element wskazujacy, ze kana nie ma zapisu w kanji -->
 				<xsd:complexType />
 			</xsd:element>
@@ -57,12 +57,32 @@
 		</xsd:sequence>
 	</xsd:complexType>
 
+	<xsd:complexType name="readingInfoKana">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="kana_type" use="optional" type="readingInfoKanaType" /> <!-- typ kana -->
+				<xsd:attribute name="romaji" use="optional" type="xsd:string" /> <!-- romaji -->
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:simpleType name="readingInfoKanaType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="HIRAGANA" />
+			<xsd:enumeration value="KATAKANA" />
+			<xsd:enumeration value="HIRAGANA_KATAKANA" />
+			<xsd:enumeration value="HIRAGANA_EXCEPTION" />
+			<xsd:enumeration value="KATAKANA_HIRAGANA" />
+			<xsd:enumeration value="KATAKANA_EXCEPTION" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
 	<xsd:complexType name="languageSource">
 		<xsd:simpleContent>
 			<xsd:extension base="xsd:string">
 				<xsd:attribute name="ls_type" use="optional" type="languageSourceLsType" /> <!-- informacja, ze slowo odnosi sie do czesci lub do pelnego slowa w jezyku zrodlowym -->
 				<xsd:attribute name="ls_wasei" use="optional" type="languageSourceLsWasei" /> <!-- informacja, ze slowo zostalo skonstruowane ze slow w jezyku xrodlowym, a nie z sensu tych slow. Najczesciej jest to waseieigo. -->
-				<xsd:attribute ref="xml:lang" use="optional" />  <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie, domyslne eng oznacza jezyk angielski  -->
+				<xsd:attribute ref="xml:lang" use="optional" />  <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie, domyslne eng oznacza jezyk angielski -->
 			</xsd:extension>
 		</xsd:simpleContent>
 	</xsd:complexType>

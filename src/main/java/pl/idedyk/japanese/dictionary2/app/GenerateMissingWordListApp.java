@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary2.app;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -85,6 +86,9 @@ public class GenerateMissingWordListApp {
 		
 		Set<Integer> alreadyMetEntrySet = new TreeSet<Integer>();
 		
+		// lista wynikowa
+		List<Entry> result = new ArrayList<>();
+		
 		// wyszukiwanie slow
 		for (String currentWord : wordList) {
 			
@@ -104,8 +108,8 @@ public class GenerateMissingWordListApp {
 					// sprawdzenie, czy takie slowo juz wystepuje w moim slowniku
 					int fixme3 = 1;
 					
-					// dokonczyc !!!!!!!!!!!!!!!
-					int fixme4 = 1;
+					// dodanie do listy wynikowej
+					result.add(entry);
 				}				
 				
 			} else { // nic nie znaleziono
@@ -114,6 +118,9 @@ public class GenerateMissingWordListApp {
 				
 			}
 		}
+		
+		// zapisanie wyniku pod postacia csv
+		dictionaryHelper.saveEntryListAsHumanCsv("input/word-new-test.csv", result);
 		
 		// zakonczenie
 		dictionaryHelper.close();
