@@ -2,6 +2,7 @@ package pl.idedyk.japanese.dictionary2.common;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -400,72 +401,19 @@ public class DictionaryHelper {
 	
 	private void saveEntryAsHumanCsv(CsvWriter csvWriter, Entry entry) throws Exception {
 		
+		new IEntryPartConverterBegin();
+		
 		// rekord poczatkowy
-		csvWriter.write(EntryHumanCsvFieldType.BEGIN.name());		
-		csvWriter.write(String.valueOf(entry.getEntryId()));
-		csvWriter.endRecord();
+		new IEntryPartConverterBegin().writeToCsv(csvWriter, entry);
 		
 		// kanji
-		List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
+		new IEntryPartConverterKanji().writeToCsv(csvWriter, entry);
 		
-		for (KanjiInfo kanjiInfo : kanjiInfoList) {
-
-			csvWriter.write(EntryHumanCsvFieldType.KANJI.name());		
-			csvWriter.write(String.valueOf(entry.getEntryId()));
-
-			csvWriter.write(kanjiInfo.getKanji());
-			csvWriter.write(Helper.convertListToString(kanjiInfo.getKanjiAdditionalInfoList()));
-			csvWriter.write(Helper.convertListToString(kanjiInfo.getRelativePriorityList()));
-			
-			csvWriter.endRecord();
-		}
-				
 		// reading
-		List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
-		
-		for (ReadingInfo readingInfo : readingInfoList) {
-			
-			csvWriter.write(EntryHumanCsvFieldType.READING.name());		
-			csvWriter.write(String.valueOf(entry.getEntryId()));
-
-			csvWriter.write(readingInfo.getNoKanji() != null ? ReadingInfoNoKanji.NO_KANJI.name() : "");			
-			csvWriter.write(Helper.convertListToString(readingInfo.getKanjiRestrictionList()));
-						
-			ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
-			
-			if (kanaType == null) {
-				kanaType = getKanaType(readingInfo.getKana().getValue());
-			}
-
-			csvWriter.write(kanaType.name());
-
-			csvWriter.write(readingInfo.getKana().getValue());
-			
-			String romaji = readingInfo.getKana().getRomaji();
-			
-			if (romaji == null) {
-				
-				if (romaji == null) {
-					try {
-						romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana().getValue(), kanaHelper.getKanaCache(), true));
-					} catch (Exception e) {
-						romaji = "FIXME";
-					}
-				}				
-			}			
-			
-			csvWriter.write(romaji);
-			
-			csvWriter.write(Helper.convertListToString(readingInfo.getReadingAdditionalInfoList()));
-			csvWriter.write(Helper.convertListToString(readingInfo.getRelativePriorityList()));
-			
-			csvWriter.endRecord();
-		}
+		new IEntryPartConverterReading().writeToCsv(csvWriter, entry);
 		
 		// rekord koncowy
-		csvWriter.write(EntryHumanCsvFieldType.END.name());
-		csvWriter.write(String.valueOf(entry.getEntryId()));
-		csvWriter.endRecord();		
+		new IEntryPartConverterEnd().writeToCsv(csvWriter, entry);
 	}
 	
 	private static ReadingInfoKanaType getKanaType(String kana) {
@@ -520,18 +468,116 @@ public class DictionaryHelper {
 	
 	//
 	
-	private static enum EntryHumanCsvFieldType {
+	private enum EntryHumanCsvFieldType {
 		
 		BEGIN,
 		
 		KANJI,
 		READING,
 		
-		END;		
+		END;
 	}
 	
-	private static enum ReadingInfoNoKanji {
-		
+	private static enum ReadingInfoNoKanji {		
 		NO_KANJI;		
+	}
+	
+	//
+	
+	private interface IEntryPartConverter {		
+		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException;		
+	}
+	
+	private class IEntryPartConverterBegin implements IEntryPartConverter {
+
+		@Override
+		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException {
+			
+			csvWriter.write(EntryHumanCsvFieldType.BEGIN.name());		
+			csvWriter.write(String.valueOf(entry.getEntryId()));
+			csvWriter.endRecord();
+			
+		}
+	}
+	
+	private class IEntryPartConverterEnd implements IEntryPartConverter {
+
+		@Override
+		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException {
+			
+			csvWriter.write(EntryHumanCsvFieldType.END.name());
+			csvWriter.write(String.valueOf(entry.getEntryId()));
+			csvWriter.endRecord();		
+			
+		}
+	}
+	
+	private class IEntryPartConverterKanji implements IEntryPartConverter {
+
+		@Override
+		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException {
+			
+			List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
+			
+			for (KanjiInfo kanjiInfo : kanjiInfoList) {
+
+				csvWriter.write(EntryHumanCsvFieldType.KANJI.name());		
+				csvWriter.write(String.valueOf(entry.getEntryId()));
+
+				csvWriter.write(kanjiInfo.getKanji());
+				csvWriter.write(Helper.convertListToString(kanjiInfo.getKanjiAdditionalInfoList()));
+				csvWriter.write(Helper.convertListToString(kanjiInfo.getRelativePriorityList()));
+				
+				csvWriter.endRecord();
+			}
+		}
+	}
+	
+	private class IEntryPartConverterReading implements IEntryPartConverter {
+
+		@Override
+		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException {
+			
+			List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
+			
+			for (ReadingInfo readingInfo : readingInfoList) {
+				
+				csvWriter.write(EntryHumanCsvFieldType.READING.name());		
+				csvWriter.write(String.valueOf(entry.getEntryId()));
+
+				csvWriter.write(readingInfo.getNoKanji() != null ? ReadingInfoNoKanji.NO_KANJI.name() : "");			
+				csvWriter.write(Helper.convertListToString(readingInfo.getKanjiRestrictionList()));
+							
+				ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
+				
+				if (kanaType == null) {
+					kanaType = getKanaType(readingInfo.getKana().getValue());
+				}
+
+				csvWriter.write(kanaType.name());
+
+				csvWriter.write(readingInfo.getKana().getValue());
+				
+				String romaji = readingInfo.getKana().getRomaji();
+				
+				if (romaji == null) {
+					
+					if (romaji == null) {
+						try {
+							romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana().getValue(), kanaHelper.getKanaCache(), true));
+						} catch (Exception e) {
+							romaji = "FIXME";
+						}
+					}				
+				}			
+				
+				csvWriter.write(romaji);
+				
+				csvWriter.write(Helper.convertListToString(readingInfo.getReadingAdditionalInfoList()));
+				csvWriter.write(Helper.convertListToString(readingInfo.getRelativePriorityList()));
+				
+				csvWriter.endRecord();
+			}
+		}
 	}
 }

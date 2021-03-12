@@ -13,9 +13,7 @@ import org.apache.commons.cli.Options;
 
 import pl.idedyk.japanese.dictionary2.common.DictionaryHelper;
 import pl.idedyk.japanese.dictionary2.common.Helper;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 
 public class GenerateMissingWordListApp {
 
