@@ -1719,6 +1719,24 @@ public class Helper {
 
 		return result;
 	}
+		
+	public static String convertListListToString(List<List<String>> listList, String listSeparator, String elementSeparator) {
+
+		StringBuffer result = new StringBuffer();
+		
+		for (int idx = 0; idx < listList.size(); ++idx) {
+			
+			List<String> currentList = listList.get(idx);
+			
+			result.append(convertListToString(currentList, elementSeparator));
+			
+			if (idx != listList.size() - 1) {
+				result.append("\n").append(listSeparator).append("\n");
+			}
+		}
+		
+		return result.toString();
+	}
 	
 	public static String convertAttributeListToString(AttributeList attributeList) {
 	

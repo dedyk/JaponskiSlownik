@@ -486,8 +486,8 @@ public class DictionaryHelper {
 		KANJI,
 		READING,
 		
-		SENSE1,
-		SENSE2,
+		SENSE_COMMON,
+		SENSE_ENG,
 		
 		END;
 	}
@@ -618,7 +618,7 @@ public class DictionaryHelper {
 				csvWriter.write(Helper.convertEnumListToString(sense.getFieldList()));
 				csvWriter.write(Helper.convertEnumListToString(sense.getMiscList()));
 				
-				List<String> languageSourceListString = new ArrayList<>();
+				List<List<String>> languageSourceListListString = new ArrayList<>();
 				
 				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
 				
@@ -629,21 +629,17 @@ public class DictionaryHelper {
 					String languageSourceLang = languageSource.getLang() != null ? languageSource.getLang() : "-";
 					String languageSourceValue = languageSource.getValue() != null ? languageSource.getValue() : "-";
 					
+					List<String> currentLanguageSourceListString = new ArrayList<>();
 					
+					currentLanguageSourceListString.add(languageSourceLsType);
+					currentLanguageSourceListString.add(languageSourceWasei);
+					currentLanguageSourceListString.add(languageSourceLang);
+					currentLanguageSourceListString.add(languageSourceValue);
 					
-					languageSourceCsvWriter.write(languageSourceLsType);
-					languageSourceCsvWriter.write(languageSourceWasei);
-					languageSourceCsvWriter.write(languageSourceLang);
-					languageSourceCsvWriter.write(languageSourceValue);
-					
-					languageSourceCsvWriter.close();
-					
-					//
-					
-					languageSourceListString.add(languageSourceString.toString());
+					languageSourceListListString.add(currentLanguageSourceListString);
 				}
 				
-				csvWriter.write(Helper.convertListToString(languageSourceListString));
+				csvWriter.write(Helper.convertListListToString(languageSourceListListString, "---", "\n"));
 				
 				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList()));
 
@@ -655,7 +651,7 @@ public class DictionaryHelper {
 				csvWriter.write(EntryHumanCsvFieldType.SENSE_ENG.name());		
 				csvWriter.write(String.valueOf(entry.getEntryId()));
 				
-				List<String> glossListString = new ArrayList<>();
+				List<List<String>> glossListString = new ArrayList<>();
 				
 				List<Gloss> glossList = sense.getGlossList();
 				
@@ -668,19 +664,19 @@ public class DictionaryHelper {
 					String glossValue = gloss.getValue();
 					
 					//
-					
+										
 					if (glossLang == null || glossLang.equals("eng") == true) {
 						
-						if (glossListString.length() > 0) {
-							glossListString.append("\n---\n");
-						}
+						List<String> currentGlossListString = new ArrayList<>();
 						
-						glossListString.append(glossType != null ? glossType.value() : "-").append("\n");
-						glossListString.append(glossValue != null ? glossValue : "-");	
+						currentGlossListString.add(glossType != null ? glossType.value() : "-");
+						currentGlossListString.add(glossValue != null ? glossValue : "-");
+						
+						glossListString.add(currentGlossListString);
 					}
 				}		
 				
-				csvWriter.write(glossListString.toString());	
+				csvWriter.write(Helper.convertListListToString(glossListString, "---", "\n"));	
 				
 				//
 				
