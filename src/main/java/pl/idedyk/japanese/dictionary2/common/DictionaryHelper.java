@@ -3,6 +3,7 @@ package pl.idedyk.japanese.dictionary2.common;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -11,6 +12,8 @@ import java.util.TreeMap;
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -45,11 +48,17 @@ import com.csvreader.CsvWriter;
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSourceLsTypeEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSourceLsWaseiEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfoKanaType;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
@@ -412,6 +421,9 @@ public class DictionaryHelper {
 		// reading
 		new IEntryPartConverterReading().writeToCsv(csvWriter, entry);
 		
+		// sense
+		new IEntryPartConverterSense().writeToCsv(csvWriter, entry);
+		
 		// rekord koncowy
 		new IEntryPartConverterEnd().writeToCsv(csvWriter, entry);
 	}
@@ -474,6 +486,7 @@ public class DictionaryHelper {
 		
 		KANJI,
 		READING,
+		SENSE,
 		
 		END;
 	}
@@ -574,6 +587,90 @@ public class DictionaryHelper {
 				
 				csvWriter.write(Helper.convertListToString(readingInfo.getReadingAdditionalInfoList()));
 				csvWriter.write(Helper.convertListToString(readingInfo.getRelativePriorityList()));
+				
+				csvWriter.endRecord();
+			}
+		}
+	}
+	
+	private class IEntryPartConverterSense implements IEntryPartConverter {
+
+		@Override
+		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException {
+			
+			List<Sense> senseList = entry.getSenseList();
+			
+			for (Sense sense : senseList) {
+				
+				csvWriter.write(EntryHumanCsvFieldType.SENSE.name());		
+				csvWriter.write(String.valueOf(entry.getEntryId()));
+
+				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanjiList()));
+				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanaList()));
+				
+				csvWriter.write(Helper.convertListToString(sense.getPartOfSpeechList()));
+				
+				csvWriter.write(Helper.convertListToString(sense.getReferenceToAnotherKanjiKanaList()));
+				
+				csvWriter.write(Helper.convertListToString(sense.getAntonymList()));
+				
+				csvWriter.write(Helper.convertListToString(sense.getFieldList()));
+				csvWriter.write(Helper.convertListToString(sense.getMiscList()));
+				
+				//
+				
+				List<SenseAdditionalInfo> additionalInfoList = sense.getAdditionalInfoList();
+				
+				List<String> senseAdditionalInfoStringList = new ArrayList<>();
+				
+				for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {
+					
+					String senseAdditionalInfoLang = senseAdditionalInfo.getLang();
+					
+					if (senseAdditionalInfoLang == null || senseAdditionalInfoLang.equals("eng") == true) {						
+						senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+					}
+				}
+				
+				csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList));
+				
+				//
+				
+				List<String> languageSourceListString = new ArrayList<>();
+				
+				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
+				
+				for (LanguageSource languageSource : languageSourceList) {
+					
+					String languageSourceLsType = languageSource.getLsType() != null ? languageSource.getLsType().name() : "";
+					String languageSourceWasei = languageSource.getLsWasei() != null ? languageSource.getLsWasei().name() : "";
+					String languageSourceLang = languageSource.getLang() != null ? languageSource.getLang() : "";
+					String languageSourceValue = languageSource.getValue() != null ? languageSource.getValue() : "";
+					
+					StringWriter languageSourceString = new StringWriter();
+					
+					CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceString, ',');
+					
+					languageSourceCsvWriter.write(languageSourceLsType);
+					languageSourceCsvWriter.write(languageSourceWasei);
+					languageSourceCsvWriter.write(languageSourceLang);
+					languageSourceCsvWriter.write(languageSourceValue);
+					
+					languageSourceCsvWriter.close();
+					
+					//
+					
+					languageSourceListString.add(languageSourceString.toString());
+				}
+				
+				csvWriter.write(Helper.convertListToString(languageSourceListString));
+				
+				csvWriter.write(Helper.convertListToString(sense.getDialectList()));
+				
+				/*
+			    @XmlElement(name = "gloss")
+			    protected List<Gloss> glossList;
+			    */
 				
 				csvWriter.endRecord();
 			}
