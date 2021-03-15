@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
@@ -603,6 +604,14 @@ public class DictionaryHelper {
 			
 			for (Sense sense : senseList) {
 				
+				List<Gloss> glossList = sense.getGlossList();
+				
+				List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang() == null || gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+
+				if (glossEngList.size() == 0) {
+					continue;
+				}
+				
 				csvWriter.write(EntryHumanCsvFieldType.SENSE_COMMON.name());		
 				csvWriter.write(String.valueOf(entry.getEntryId()));
 
@@ -618,28 +627,32 @@ public class DictionaryHelper {
 				csvWriter.write(Helper.convertEnumListToString(sense.getFieldList()));
 				csvWriter.write(Helper.convertEnumListToString(sense.getMiscList()));
 				
-				List<List<String>> languageSourceListListString = new ArrayList<>();
+				//
 				
 				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
+
+				StringWriter languageSourceCsvWriterString = new StringWriter();
+				
+				CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceCsvWriterString, '|');
 				
 				for (LanguageSource languageSource : languageSourceList) {
-					
+										
 					String languageSourceLsType = languageSource.getLsType() != null ? languageSource.getLsType().value() : "-";
 					String languageSourceWasei = languageSource.getLsWasei() != null ? languageSource.getLsWasei().value() : "-";
 					String languageSourceLang = languageSource.getLang() != null ? languageSource.getLang() : "-";
 					String languageSourceValue = languageSource.getValue() != null ? languageSource.getValue() : "-";
+																				
+					languageSourceCsvWriter.write(languageSourceLsType);
+					languageSourceCsvWriter.write(languageSourceWasei);
+					languageSourceCsvWriter.write(languageSourceLang);
+					languageSourceCsvWriter.write(languageSourceValue);
 					
-					List<String> currentLanguageSourceListString = new ArrayList<>();
-					
-					currentLanguageSourceListString.add(languageSourceLsType);
-					currentLanguageSourceListString.add(languageSourceWasei);
-					currentLanguageSourceListString.add(languageSourceLang);
-					currentLanguageSourceListString.add(languageSourceValue);
-					
-					languageSourceListListString.add(currentLanguageSourceListString);
+					languageSourceCsvWriter.endRecord();
 				}
 				
-				csvWriter.write(Helper.convertListListToString(languageSourceListListString, "---", "\n"));
+				languageSourceCsvWriter.close();
+				
+				csvWriter.write(languageSourceCsvWriterString.toString());
 				
 				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList()));
 
@@ -647,56 +660,51 @@ public class DictionaryHelper {
 				csvWriter.endRecord();
 				
 				//
-				
+								
 				csvWriter.write(EntryHumanCsvFieldType.SENSE_ENG.name());		
 				csvWriter.write(String.valueOf(entry.getEntryId()));
-				
-				List<List<String>> glossListString = new ArrayList<>();
-				
-				List<Gloss> glossList = sense.getGlossList();
-				
-				for (int idx = 0; idx < glossList.size(); ++idx) {
-										
-					Gloss gloss = glossList.get(idx);
-					
+
+				StringWriter glossListCsvWriterString = new StringWriter();
+
+				CsvWriter glossListCsvWriter = new CsvWriter(glossListCsvWriterString, '|');
+
+				for (Gloss gloss : glossEngList) {
+
 					GTypeEnum glossType = gloss.getGType();
-					String glossLang = gloss.getLang();
 					String glossValue = gloss.getValue();
-					
-					//
-										
-					if (glossLang == null || glossLang.equals("eng") == true) {
-						
-						List<String> currentGlossListString = new ArrayList<>();
-						
-						currentGlossListString.add(glossType != null ? glossType.value() : "-");
-						currentGlossListString.add(glossValue != null ? glossValue : "-");
-						
-						glossListString.add(currentGlossListString);
+
+					glossListCsvWriter.write(glossValue);
+
+					if (glossType != null) {
+						glossListCsvWriter.write(glossType.value());
 					}
-				}		
-				
-				csvWriter.write(Helper.convertListListToString(glossListString, "---", "\n"));	
-				
+
+					glossListCsvWriter.endRecord();
+				}					
+
+				glossListCsvWriter.close();
+
+				csvWriter.write(glossListCsvWriterString.toString());
+
 				//
-				
+
 				List<SenseAdditionalInfo> additionalInfoList = sense.getAdditionalInfoList();
-				
+
 				List<String> senseAdditionalInfoStringList = new ArrayList<>();
-				
+
 				for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {
-					
+
 					String senseAdditionalInfoLang = senseAdditionalInfo.getLang();
-					
+
 					if (senseAdditionalInfoLang == null || senseAdditionalInfoLang.equals("eng") == true) {						
 						senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
 					}
 				}
-				
+
 				csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList));
-								
+
 				csvWriter.endRecord();
-			}
+			}			
 		}
 	}
 }
