@@ -12,8 +12,6 @@ import java.util.TreeMap;
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -537,8 +535,8 @@ public class DictionaryHelper {
 				csvWriter.write(String.valueOf(entry.getEntryId()));
 
 				csvWriter.write(kanjiInfo.getKanji());
-				csvWriter.write(Helper.convertListToString(kanjiInfo.getKanjiAdditionalInfoList()));
-				csvWriter.write(Helper.convertListToString(kanjiInfo.getRelativePriorityList()));
+				csvWriter.write(Helper.convertEnumListToString(kanjiInfo.getKanjiAdditionalInfoList()));
+				csvWriter.write(Helper.convertEnumListToString(kanjiInfo.getRelativePriorityList()));
 				
 				csvWriter.endRecord();
 			}
@@ -585,8 +583,8 @@ public class DictionaryHelper {
 				
 				csvWriter.write(romaji);
 				
-				csvWriter.write(Helper.convertListToString(readingInfo.getReadingAdditionalInfoList()));
-				csvWriter.write(Helper.convertListToString(readingInfo.getRelativePriorityList()));
+				csvWriter.write(Helper.convertEnumListToString(readingInfo.getReadingAdditionalInfoList()));
+				csvWriter.write(Helper.convertEnumListToString(readingInfo.getRelativePriorityList()));
 				
 				csvWriter.endRecord();
 			}
@@ -608,14 +606,14 @@ public class DictionaryHelper {
 				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanjiList()));
 				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanaList()));
 				
-				csvWriter.write(Helper.convertListToString(sense.getPartOfSpeechList()));
+				csvWriter.write(Helper.convertEnumListToString(sense.getPartOfSpeechList()));
 				
 				csvWriter.write(Helper.convertListToString(sense.getReferenceToAnotherKanjiKanaList()));
 				
 				csvWriter.write(Helper.convertListToString(sense.getAntonymList()));
 				
-				csvWriter.write(Helper.convertListToString(sense.getFieldList()));
-				csvWriter.write(Helper.convertListToString(sense.getMiscList()));
+				csvWriter.write(Helper.convertEnumListToString(sense.getFieldList()));
+				csvWriter.write(Helper.convertEnumListToString(sense.getMiscList()));
 				
 				//
 				
@@ -642,8 +640,8 @@ public class DictionaryHelper {
 				
 				for (LanguageSource languageSource : languageSourceList) {
 					
-					String languageSourceLsType = languageSource.getLsType() != null ? languageSource.getLsType().name() : "";
-					String languageSourceWasei = languageSource.getLsWasei() != null ? languageSource.getLsWasei().name() : "";
+					String languageSourceLsType = languageSource.getLsType() != null ? languageSource.getLsType().value() : "";
+					String languageSourceWasei = languageSource.getLsWasei() != null ? languageSource.getLsWasei().value() : "";
 					String languageSourceLang = languageSource.getLang() != null ? languageSource.getLang() : "";
 					String languageSourceValue = languageSource.getValue() != null ? languageSource.getValue() : "";
 					
@@ -665,7 +663,7 @@ public class DictionaryHelper {
 				
 				csvWriter.write(Helper.convertListToString(languageSourceListString));
 				
-				csvWriter.write(Helper.convertListToString(sense.getDialectList()));
+				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList()));
 				
 				/*
 			    @XmlElement(name = "gloss")

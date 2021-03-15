@@ -10,6 +10,9 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+
+import javax.xml.bind.annotation.XmlEnumValue;
+
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -1636,6 +1639,42 @@ public class Helper {
 
 		return sb.toString();
 	}
+	
+	public static String convertEnumListToString(List<? extends Enum<?>> list) {
+		return convertEnumListToString(list, "\n");
+	}
+	
+	public static String convertEnumListToString(List<? extends Enum<?>> list, String separator) {
+		
+		StringBuffer sb = new StringBuffer();
+
+		if (list == null) {
+			list = new ArrayList<Enum<?>>();
+		}
+		
+		for (int idx = 0; idx < list.size(); ++idx) {
+			
+			Enum<?> enum_ = list.get(idx);
+			
+			String enumXmlEnumValue;
+			
+			try {
+				enumXmlEnumValue = enum_.getDeclaringClass().getField(enum_.name()).getAnnotation(XmlEnumValue.class).value();
+				
+			} catch (Exception e) {
+				throw new RuntimeException(e);
+			}
+						
+			sb.append(enumXmlEnumValue);
+
+			if (idx != list.size() - 1) {
+				sb.append(separator);
+			}
+		}
+
+		return sb.toString();
+	}
+
 	
 	public static List<String> convertListToListString(List<?> list) {
 
