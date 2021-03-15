@@ -496,7 +496,6 @@ public class DictionaryHelper {
 			csvWriter.write(EntryHumanCsvFieldType.BEGIN.name());		
 			csvWriter.write(String.valueOf(entry.getEntryId()));
 			csvWriter.endRecord();
-			
 		}
 	}
 	
@@ -507,8 +506,8 @@ public class DictionaryHelper {
 			
 			csvWriter.write(EntryHumanCsvFieldType.END.name());
 			csvWriter.write(String.valueOf(entry.getEntryId()));
-			csvWriter.endRecord();		
-			
+			csvWriter.endRecord();
+			csvWriter.endRecord();
 		}
 	}
 	
