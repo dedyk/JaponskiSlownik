@@ -48,6 +48,7 @@ import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.GTypeEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
@@ -484,7 +485,9 @@ public class DictionaryHelper {
 		
 		KANJI,
 		READING,
-		SENSE,
+		
+		SENSE1,
+		SENSE2,
 		
 		END;
 	}
@@ -555,7 +558,7 @@ public class DictionaryHelper {
 				csvWriter.write(EntryHumanCsvFieldType.READING.name());		
 				csvWriter.write(String.valueOf(entry.getEntryId()));
 
-				csvWriter.write(readingInfo.getNoKanji() != null ? ReadingInfoNoKanji.NO_KANJI.name() : "");			
+				csvWriter.write(readingInfo.getNoKanji() != null ? ReadingInfoNoKanji.NO_KANJI.name() : "-");			
 				csvWriter.write(Helper.convertListToString(readingInfo.getKanjiRestrictionList()));
 							
 				ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
@@ -600,7 +603,7 @@ public class DictionaryHelper {
 			
 			for (Sense sense : senseList) {
 				
-				csvWriter.write(EntryHumanCsvFieldType.SENSE.name());		
+				csvWriter.write(EntryHumanCsvFieldType.SENSE_COMMON.name());		
 				csvWriter.write(String.valueOf(entry.getEntryId()));
 
 				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanjiList()));
@@ -614,6 +617,70 @@ public class DictionaryHelper {
 				
 				csvWriter.write(Helper.convertEnumListToString(sense.getFieldList()));
 				csvWriter.write(Helper.convertEnumListToString(sense.getMiscList()));
+				
+				List<String> languageSourceListString = new ArrayList<>();
+				
+				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
+				
+				for (LanguageSource languageSource : languageSourceList) {
+					
+					String languageSourceLsType = languageSource.getLsType() != null ? languageSource.getLsType().value() : "-";
+					String languageSourceWasei = languageSource.getLsWasei() != null ? languageSource.getLsWasei().value() : "-";
+					String languageSourceLang = languageSource.getLang() != null ? languageSource.getLang() : "-";
+					String languageSourceValue = languageSource.getValue() != null ? languageSource.getValue() : "-";
+					
+					
+					
+					languageSourceCsvWriter.write(languageSourceLsType);
+					languageSourceCsvWriter.write(languageSourceWasei);
+					languageSourceCsvWriter.write(languageSourceLang);
+					languageSourceCsvWriter.write(languageSourceValue);
+					
+					languageSourceCsvWriter.close();
+					
+					//
+					
+					languageSourceListString.add(languageSourceString.toString());
+				}
+				
+				csvWriter.write(Helper.convertListToString(languageSourceListString));
+				
+				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList()));
+
+				
+				csvWriter.endRecord();
+				
+				//
+				
+				csvWriter.write(EntryHumanCsvFieldType.SENSE_ENG.name());		
+				csvWriter.write(String.valueOf(entry.getEntryId()));
+				
+				List<String> glossListString = new ArrayList<>();
+				
+				List<Gloss> glossList = sense.getGlossList();
+				
+				for (int idx = 0; idx < glossList.size(); ++idx) {
+										
+					Gloss gloss = glossList.get(idx);
+					
+					GTypeEnum glossType = gloss.getGType();
+					String glossLang = gloss.getLang();
+					String glossValue = gloss.getValue();
+					
+					//
+					
+					if (glossLang == null || glossLang.equals("eng") == true) {
+						
+						if (glossListString.length() > 0) {
+							glossListString.append("\n---\n");
+						}
+						
+						glossListString.append(glossType != null ? glossType.value() : "-").append("\n");
+						glossListString.append(glossValue != null ? glossValue : "-");	
+					}
+				}		
+				
+				csvWriter.write(glossListString.toString());	
 				
 				//
 				
@@ -631,45 +698,7 @@ public class DictionaryHelper {
 				}
 				
 				csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList));
-				
-				//
-				
-				List<String> languageSourceListString = new ArrayList<>();
-				
-				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
-				
-				for (LanguageSource languageSource : languageSourceList) {
-					
-					String languageSourceLsType = languageSource.getLsType() != null ? languageSource.getLsType().value() : "";
-					String languageSourceWasei = languageSource.getLsWasei() != null ? languageSource.getLsWasei().value() : "";
-					String languageSourceLang = languageSource.getLang() != null ? languageSource.getLang() : "";
-					String languageSourceValue = languageSource.getValue() != null ? languageSource.getValue() : "";
-					
-					StringWriter languageSourceString = new StringWriter();
-					
-					CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceString, ',');
-					
-					languageSourceCsvWriter.write(languageSourceLsType);
-					languageSourceCsvWriter.write(languageSourceWasei);
-					languageSourceCsvWriter.write(languageSourceLang);
-					languageSourceCsvWriter.write(languageSourceValue);
-					
-					languageSourceCsvWriter.close();
-					
-					//
-					
-					languageSourceListString.add(languageSourceString.toString());
-				}
-				
-				csvWriter.write(Helper.convertListToString(languageSourceListString));
-				
-				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList()));
-				
-				/*
-			    @XmlElement(name = "gloss")
-			    protected List<Gloss> glossList;
-			    */
-				
+								
 				csvWriter.endRecord();
 			}
 		}
