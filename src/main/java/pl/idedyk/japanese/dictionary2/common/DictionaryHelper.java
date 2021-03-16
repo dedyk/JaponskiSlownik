@@ -500,6 +500,7 @@ public class DictionaryHelper {
 		
 		SENSE_COMMON,
 		SENSE_ENG,
+		SENSE_POL,
 		
 		END;
 	}
@@ -623,6 +624,7 @@ public class DictionaryHelper {
 					continue;
 				}
 				
+				// czesc wspolna dla wszystkich jezykow
 				csvWriter.write(EntryHumanCsvFieldType.SENSE_COMMON.name());		
 				csvWriter.write(String.valueOf(entry.getEntryId()));
 
@@ -666,56 +668,67 @@ public class DictionaryHelper {
 				csvWriter.write(languageSourceCsvWriterString.toString());
 				
 				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList()));
-
 				
 				csvWriter.endRecord();
 				
-				//
-								
-				csvWriter.write(EntryHumanCsvFieldType.SENSE_ENG.name());		
-				csvWriter.write(String.valueOf(entry.getEntryId()));
+				// czesc specyficzna dla jezyka angielskiego i polskiego (tlumaczenia)
+				
+				List<Gloss> glossPolList = glossList.stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+				
+				writeToCsvLangSense(csvWriter, entry, sense, EntryHumanCsvFieldType.SENSE_ENG, glossEngList);
+				writeToCsvLangSense(csvWriter, entry, sense, EntryHumanCsvFieldType.SENSE_POL, glossPolList);								
+			}			
+		}
+		
+		private void writeToCsvLangSense(CsvWriter csvWriter, Entry entry, Sense sense, EntryHumanCsvFieldType entryHumanCsvFieldType, List<Gloss> glossLangList) throws IOException {
+			
+			if (glossLangList.size() == 0) {
+				return;
+			}
+			
+			csvWriter.write(entryHumanCsvFieldType.name());		
+			csvWriter.write(String.valueOf(entry.getEntryId()));
 
-				StringWriter glossListCsvWriterString = new StringWriter();
+			StringWriter glossListCsvWriterString = new StringWriter();
 
-				CsvWriter glossListCsvWriter = new CsvWriter(glossListCsvWriterString, '|');
+			CsvWriter glossListCsvWriter = new CsvWriter(glossListCsvWriterString, '|');
 
-				for (Gloss gloss : glossEngList) {
+			for (Gloss gloss : glossLangList) {
 
-					GTypeEnum glossType = gloss.getGType();
-					String glossValue = gloss.getValue();
+				GTypeEnum glossType = gloss.getGType();
+				String glossValue = gloss.getValue();
 
-					glossListCsvWriter.write(glossValue);
+				glossListCsvWriter.write(glossValue);
 
-					if (glossType != null) {
-						glossListCsvWriter.write(glossType.value());
-					}
-
-					glossListCsvWriter.endRecord();
-				}					
-
-				glossListCsvWriter.close();
-
-				csvWriter.write(glossListCsvWriterString.toString());
-
-				//
-
-				List<SenseAdditionalInfo> additionalInfoList = sense.getAdditionalInfoList();
-
-				List<String> senseAdditionalInfoStringList = new ArrayList<>();
-
-				for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {
-
-					String senseAdditionalInfoLang = senseAdditionalInfo.getLang();
-
-					if (senseAdditionalInfoLang.equals("eng") == true) {						
-						senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
-					}
+				if (glossType != null) {
+					glossListCsvWriter.write(glossType.value());
 				}
 
-				csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList));
+				glossListCsvWriter.endRecord();
+			}					
 
-				csvWriter.endRecord();
-			}			
+			glossListCsvWriter.close();
+
+			csvWriter.write(glossListCsvWriterString.toString());
+
+			//
+
+			List<SenseAdditionalInfo> additionalInfoList = sense.getAdditionalInfoList();
+
+			List<String> senseAdditionalInfoStringList = new ArrayList<>();
+
+			for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {
+
+				String senseAdditionalInfoLang = senseAdditionalInfo.getLang();
+
+				if (senseAdditionalInfoLang.equals(entryHumanCsvFieldType == EntryHumanCsvFieldType.SENSE_ENG ? "eng" : "pol") == true) {						
+					senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+				}
+			}
+
+			csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList));
+			
+			csvWriter.endRecord();
 		}
 	}
 }
