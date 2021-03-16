@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -238,6 +239,11 @@ public class DictionaryHelper {
 					List<Gloss> senseGloss = sense.getGlossList();
 					
 					for (Gloss gloss : senseGloss) {
+						
+						if (Arrays.asList("eng", "pol").contains(gloss.getLang()) == false) {
+							continue;
+						}
+						
 						addTextFieldToDocument(document, JMdictLuceneFields.TRANSLATE, gloss.getValue());
 					}
 					
@@ -246,6 +252,11 @@ public class DictionaryHelper {
 					List<SenseAdditionalInfo> senseAdditionalInfoList = sense.getAdditionalInfoList();
 					
 					for (SenseAdditionalInfo senseAdditionalInfo : senseAdditionalInfoList) {
+
+						if (Arrays.asList("eng", "pol").contains(senseAdditionalInfo.getLang()) == false) {
+							continue;
+						}
+						
 						addTextFieldToDocument(document, JMdictLuceneFields.SENSE_ADDITIONAL_INFO, senseAdditionalInfo.getValue());
 					}
 					
