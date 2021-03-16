@@ -675,7 +675,10 @@ public class DictionaryHelper {
 				// czesc specyficzna dla jezyka angielskiego i polskiego (tlumaczenia)
 				
 				writeToCsvLangSense(csvWriter, entry, sense, EntryHumanCsvFieldType.SENSE_ENG, glossEngList);
-				writeToCsvLangSense(csvWriter, entry, sense, EntryHumanCsvFieldType.SENSE_POL, glossPolList);								
+				writeToCsvLangSense(csvWriter, entry, sense, EntryHumanCsvFieldType.SENSE_POL, glossPolList);	
+				
+				int fixme = 1;
+				// dla jezyka polskiego generowac aktualne tlumaczenie, w celu kontroli zmiany tlumaczenia
 			}			
 		}
 		
