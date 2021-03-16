@@ -103,7 +103,7 @@
 	<xsd:complexType name="senseAdditionalInfo">
 		<xsd:simpleContent>
 			<xsd:extension base="xsd:string">
-				<xsd:attribute ref="xml:lang" use="optional" /> <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie, domyslne eng oznacza jezyk angielski -->
+				<xsd:attribute ref="xml:lang" use="optional" default="eng" /> <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie, domyslne eng oznacza jezyk angielski -->
 			</xsd:extension>
 		</xsd:simpleContent>
 	</xsd:complexType>
@@ -112,7 +112,7 @@
 		<xsd:simpleContent>
 			<xsd:extension base="xsd:string">
 				<xsd:attribute name="g_type" use="optional" type="gtype" /> <!-- dodatkowa informacja do tlumaczenia -->
-				<xsd:attribute ref="xml:lang" use="optional" /> <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie, domyslne eng oznacza jezyk angielski -->
+				<xsd:attribute ref="xml:lang" use="optional" default="eng" /> <!-- identyfikator jezyka dla ktorego tlumaczenie odnosi sie, domyslne eng oznacza jezyk angielski -->
 			</xsd:extension>
 		</xsd:simpleContent>
 	</xsd:complexType>

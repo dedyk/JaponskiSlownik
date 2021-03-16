@@ -606,7 +606,7 @@ public class DictionaryHelper {
 				
 				List<Gloss> glossList = sense.getGlossList();
 				
-				List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang() == null || gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+				List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
 
 				if (glossEngList.size() == 0) {
 					continue;
@@ -696,7 +696,7 @@ public class DictionaryHelper {
 
 					String senseAdditionalInfoLang = senseAdditionalInfo.getLang();
 
-					if (senseAdditionalInfoLang == null || senseAdditionalInfoLang.equals("eng") == true) {						
+					if (senseAdditionalInfoLang.equals("eng") == true) {						
 						senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
 					}
 				}
