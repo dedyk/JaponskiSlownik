@@ -619,6 +619,7 @@ public class DictionaryHelper {
 				List<Gloss> glossList = sense.getGlossList();
 				
 				List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+				List<Gloss> glossPolList = glossList.stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
 
 				if (glossEngList.size() == 0) {
 					continue;
@@ -672,8 +673,6 @@ public class DictionaryHelper {
 				csvWriter.endRecord();
 				
 				// czesc specyficzna dla jezyka angielskiego i polskiego (tlumaczenia)
-				
-				List<Gloss> glossPolList = glossList.stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
 				
 				writeToCsvLangSense(csvWriter, entry, sense, EntryHumanCsvFieldType.SENSE_ENG, glossEngList);
 				writeToCsvLangSense(csvWriter, entry, sense, EntryHumanCsvFieldType.SENSE_POL, glossPolList);								

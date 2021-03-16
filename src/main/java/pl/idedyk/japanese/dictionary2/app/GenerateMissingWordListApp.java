@@ -106,6 +106,9 @@ public class GenerateMissingWordListApp {
 					// sprawdzenie, czy takie slowo juz wystepuje w moim slowniku
 					int fixme3 = 1;
 					
+					// uzupelnienie o puste polskie tlumaczenie
+					int fixme4 = 1;
+					
 					// dodanie do listy wynikowej
 					result.add(entry);
 				}				
