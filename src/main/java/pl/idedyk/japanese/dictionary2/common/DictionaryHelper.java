@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary2.common;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringWriter;
@@ -13,6 +14,7 @@ import java.util.stream.Collectors;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
@@ -43,6 +45,7 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.RAMDirectory;
 import org.apache.lucene.util.Version;
 
+import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
@@ -80,7 +83,10 @@ public class DictionaryHelper {
 		
 		//
 		
-		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict");
+		int fixme = 1; // ok !!!!!!!!!!!!!1
+		
+		//dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict");
+		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
 		
 		return dictionaryHelper;
 	}
@@ -474,6 +480,65 @@ public class DictionaryHelper {
 		return kanaType;
 	}
 	
+	public List<Entry> readEntryListFromHumanCsv(String fileName) throws Exception {
+		
+		IEntryPartConverterBegin entryPartConverterBegin = new IEntryPartConverterBegin();
+		IEntryPartConverterEnd entryPartConverterEnd = new IEntryPartConverterEnd();
+		
+		//
+		
+		CsvReader csvReader = new CsvReader(new FileReader(fileName), ',');
+				
+		//
+		
+		List<Entry> result = new ArrayList<>();
+		
+		Entry newEntry = null;
+		
+		while (csvReader.readRecord()) {
+
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType == EntryHumanCsvFieldType.BEGIN) { // nowy rekord
+				
+				newEntry = new Entry();
+				
+				entryPartConverterBegin.parseCsv(csvReader, newEntry);
+				
+			} else if (fieldType == EntryHumanCsvFieldType.END) { // zakonczenie rekordu
+				
+				entryPartConverterEnd.parseCsv(csvReader, newEntry);
+				
+				result.add(newEntry);
+				
+			} else {
+				
+				int fixme = 1;
+				// ok !!!!!!!!!!!!!!!!!
+				
+				//throw new RuntimeException(fieldType.name());
+			}			
+		}
+		
+		csvReader.close();
+		
+		return result;
+	}
+	
+	public void saveJMdictAsXml(JMdict newJMdict, String fileNane) throws Exception {
+		
+		JAXBContext jaxbContext = JAXBContext.newInstance(JMdict.class);              
+
+		//
+				
+		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+		//
+		
+		jaxbMarshaller.marshal(newJMdict, new File(fileNane));
+	}
+	
 	//
 	
 	private static class JMdictLuceneFields {
@@ -488,7 +553,7 @@ public class DictionaryHelper {
 		private static final String SENSE_ADDITIONAL_INFO = "senseAdditionalInfo";		
 		private static final String LANGUAGE_SOURCE = "languageSource";		
 	}
-	
+		
 	//
 	
 	private enum EntryHumanCsvFieldType {
@@ -512,7 +577,8 @@ public class DictionaryHelper {
 	//
 	
 	private interface IEntryPartConverter {		
-		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException;		
+		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException;	
+		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException;
 	}
 	
 	private class IEntryPartConverterBegin implements IEntryPartConverter {
@@ -523,6 +589,18 @@ public class DictionaryHelper {
 			csvWriter.write(EntryHumanCsvFieldType.BEGIN.name());		
 			csvWriter.write(String.valueOf(entry.getEntryId()));
 			csvWriter.endRecord();
+		}
+
+		@Override
+		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.BEGIN) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			entry.setEntryId(Integer.parseInt(csvReader.get(1)));			
 		}
 	}
 	
@@ -535,6 +613,18 @@ public class DictionaryHelper {
 			csvWriter.write(String.valueOf(entry.getEntryId()));
 			csvWriter.endRecord();
 			csvWriter.endRecord();
+		}
+
+		@Override
+		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.END) {
+				throw new RuntimeException(fieldType.name());
+			}
+
+			// noop
 		}
 	}
 	
@@ -556,6 +646,11 @@ public class DictionaryHelper {
 				
 				csvWriter.endRecord();
 			}
+		}
+		
+		@Override
+		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
+			int fixme = 1;
 		}
 	}
 	
@@ -604,6 +699,11 @@ public class DictionaryHelper {
 				
 				csvWriter.endRecord();
 			}
+		}
+		
+		@Override
+		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
+			int fixme = 1;
 		}
 	}
 	
@@ -679,7 +779,7 @@ public class DictionaryHelper {
 				
 				int fixme = 1;
 				// dla jezyka polskiego generowac aktualne tlumaczenie, w celu kontroli zmiany tlumaczenia
-			}			
+			}				
 		}
 		
 		private void writeToCsvLangSense(CsvWriter csvWriter, Entry entry, Sense sense, EntryHumanCsvFieldType entryHumanCsvFieldType, List<Gloss> glossLangList) throws IOException {
@@ -731,6 +831,11 @@ public class DictionaryHelper {
 			csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList));
 			
 			csvWriter.endRecord();
+		}
+		
+		@Override
+		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
+			int fixme = 1;
 		}
 	}
 }
