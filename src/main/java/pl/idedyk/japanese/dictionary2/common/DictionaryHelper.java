@@ -57,6 +57,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.GTypeEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSourceLsTypeEnum;
@@ -65,6 +66,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfoKanaType;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 
@@ -484,6 +486,7 @@ public class DictionaryHelper {
 		
 		IEntryPartConverterBegin entryPartConverterBegin = new IEntryPartConverterBegin();
 		IEntryPartConverterEnd entryPartConverterEnd = new IEntryPartConverterEnd();
+		IEntryPartConverterKanji entryPartConverterKanji = new IEntryPartConverterKanji();
 		
 		//
 		
@@ -510,6 +513,10 @@ public class DictionaryHelper {
 				entryPartConverterEnd.parseCsv(csvReader, newEntry);
 				
 				result.add(newEntry);
+				
+			} else if (fieldType == EntryHumanCsvFieldType.KANJI) { // kanji
+				
+				entryPartConverterKanji.parseCsv(csvReader, newEntry);				
 				
 			} else {
 				
@@ -650,7 +657,36 @@ public class DictionaryHelper {
 		
 		@Override
 		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
-			int fixme = 1;
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.KANJI) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			KanjiInfo kanjiInfo = new KanjiInfo();
+			
+			kanjiInfo.setKanji(csvReader.get(2));
+			
+			//
+			
+			List<String> kanjiAdditionalInfoStringList = Helper.convertStringToList(csvReader.get(3));
+			
+			for (String currentKanjiAdditionalInfoStringList : kanjiAdditionalInfoStringList) {
+				kanjiInfo.getKanjiAdditionalInfoList().add(KanjiAdditionalInfoEnum.fromValue(currentKanjiAdditionalInfoStringList));
+			}
+			
+			//
+			
+			List<String> relativePriorityEnumStringList = Helper.convertStringToList(csvReader.get(4));
+			
+			for (String currentRelativePriorityEnumStringList : relativePriorityEnumStringList) {
+				kanjiInfo.getRelativePriorityList().add(RelativePriorityEnum.fromValue(currentRelativePriorityEnumStringList));
+			}
+			
+			//
+			
+			entry.getKanjiInfoList().add(kanjiInfo);
 		}
 	}
 	

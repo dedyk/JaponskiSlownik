@@ -1674,7 +1674,6 @@ public class Helper {
 
 		return sb.toString();
 	}
-
 	
 	public static List<String> convertListToListString(List<?> list) {
 
@@ -1754,5 +1753,18 @@ public class Helper {
 		}
 	
 		return sb.toString();
+	}
+
+	public static List<String> convertStringToList(String stringList) {		
+		return convertStringToList(stringList, "\n");
+	}
+	
+	public static List<String> convertStringToList(String stringList, String separator) {
+		
+		if (stringList.equals("") == true) {
+			return new ArrayList<>();
+		}
+		
+		return new ArrayList<String>(Arrays.asList(stringList.split(separator)));
 	}
 }
