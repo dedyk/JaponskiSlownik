@@ -64,7 +64,9 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSourceLsTypeEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSourceLsWaseiEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfoKana;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfoKanaType;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
@@ -487,6 +489,7 @@ public class DictionaryHelper {
 		IEntryPartConverterBegin entryPartConverterBegin = new IEntryPartConverterBegin();
 		IEntryPartConverterEnd entryPartConverterEnd = new IEntryPartConverterEnd();
 		IEntryPartConverterKanji entryPartConverterKanji = new IEntryPartConverterKanji();
+		IEntryPartConverterReading entryPartConverterReading = new IEntryPartConverterReading();
 		
 		//
 		
@@ -517,6 +520,10 @@ public class DictionaryHelper {
 			} else if (fieldType == EntryHumanCsvFieldType.KANJI) { // kanji
 				
 				entryPartConverterKanji.parseCsv(csvReader, newEntry);				
+				
+			} else if (fieldType == EntryHumanCsvFieldType.READING) { // reading
+				
+				entryPartConverterReading.parseCsv(csvReader, newEntry);
 				
 			} else {
 				
@@ -670,9 +677,9 @@ public class DictionaryHelper {
 			
 			//
 			
-			List<String> kanjiAdditionalInfoStringList = Helper.convertStringToList(csvReader.get(3));
+			List<String> kanjiAdditionalInfoEnumStringList = Helper.convertStringToList(csvReader.get(3));
 			
-			for (String currentKanjiAdditionalInfoStringList : kanjiAdditionalInfoStringList) {
+			for (String currentKanjiAdditionalInfoStringList : kanjiAdditionalInfoEnumStringList) {
 				kanjiInfo.getKanjiAdditionalInfoList().add(KanjiAdditionalInfoEnum.fromValue(currentKanjiAdditionalInfoStringList));
 			}
 			
@@ -739,7 +746,50 @@ public class DictionaryHelper {
 		
 		@Override
 		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.READING) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			ReadingInfo readingInfo = new ReadingInfo();
+			
+			String noKanji = csvReader.get(2);
+			
+			if (noKanji.equals(ReadingInfoNoKanji.NO_KANJI.name()) == true) {
+				readingInfo.setNoKanji(new ReadingInfo.ReNokanji());
+			}
+			
+			readingInfo.getKanjiRestrictionList().addAll(Helper.convertStringToList(csvReader.get(3)));
+			
+			readingInfo.setKana(new ReadingInfoKana());
+			
 			int fixme = 1;
+			// readingInfo.getKana().setKanaType(ReadingInfoKanaType.fromValue(csvReader.get(4))); // moja modyfikacja
+			readingInfo.getKana().setValue(csvReader.get(5));
+			
+			int fixme2 = 1;
+			// readingInfo.getKana().setRomaji(csvReader.get(6)); // moja modyfikacja
+			
+			//
+			
+			List<String> readingAdditionalInfoEnumStringList = Helper.convertStringToList(csvReader.get(7));
+			
+			for (String currentReadingAdditionalInfoList : readingAdditionalInfoEnumStringList) {
+				readingInfo.getReadingAdditionalInfoList().add(ReadingAdditionalInfoEnum.fromValue(currentReadingAdditionalInfoList));
+			}
+			
+			//
+			
+			List<String> relativePriorityEnumStringList = Helper.convertStringToList(csvReader.get(8));
+			
+			for (String currentRelativePriorityEnumStringList : relativePriorityEnumStringList) {
+				readingInfo.getRelativePriorityList().add(RelativePriorityEnum.fromValue(currentRelativePriorityEnumStringList));
+			}
+
+
+			entry.getReadingInfoList().add(readingInfo);
 		}
 	}
 	
