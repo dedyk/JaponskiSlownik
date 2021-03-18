@@ -531,12 +531,12 @@ public class DictionaryHelper {
 				
 				entryPartConverterSense.parseCsv(csvReader, newEntry);
 			
-			} else {
+			} else if (fieldType == EntryHumanCsvFieldType.SENSE_ENG || fieldType == EntryHumanCsvFieldType.SENSE_POL) { // sense eng/pol 
+			
+				entryPartConverterSense.parseCsv(csvReader, newEntry);
 				
-				int fixme = 1;
-				// ok !!!!!!!!!!!!!!!!!
-				
-				//throw new RuntimeException(fieldType.name());
+			} else {				
+				throw new RuntimeException(fieldType.name());
 			}			
 		}
 		
@@ -993,6 +993,50 @@ public class DictionaryHelper {
 				//
 			
 				entry.getSenseList().add(sense);
+				
+			} else if (fieldType == EntryHumanCsvFieldType.SENSE_ENG || fieldType == EntryHumanCsvFieldType.SENSE_POL) {
+				
+				Sense sense = entry.getSenseList().get(entry.getSenseList().size() - 1);
+				
+				{
+					String glossListString = csvReader.get(2);
+					
+					CsvReader glossListStringCsvReader = new CsvReader(new StringReader(glossListString), '|');
+					
+					while (glossListStringCsvReader.readRecord()) {
+						
+						String glossValue = glossListStringCsvReader.get(0);
+						String glossTypeString = glossListStringCsvReader.get(1).equals("") == false ? glossListStringCsvReader.get(1) : null;
+						
+						//
+						
+						Gloss gloss = new Gloss();
+						
+						gloss.setLang(fieldType == EntryHumanCsvFieldType.SENSE_ENG ? "eng" : "pol");
+						gloss.setValue(glossValue);
+						gloss.setGType(glossTypeString != null ? GTypeEnum.fromValue(glossTypeString) : null);
+												
+						//
+						
+						sense.getGlossList().add(gloss);
+					}
+					
+					glossListStringCsvReader.close();
+				}
+				
+				//
+				
+				List<String> additionalInfoStringList = Helper.convertStringToList(csvReader.get(3));
+								
+				for (String currentAdditionalInfoString : additionalInfoStringList) {
+					
+					SenseAdditionalInfo senseAdditionalInfo = new SenseAdditionalInfo();
+					
+					senseAdditionalInfo.setLang(fieldType == EntryHumanCsvFieldType.SENSE_ENG ? "eng" : "pol");
+					senseAdditionalInfo.setValue(currentAdditionalInfoString);
+					
+					sense.getAdditionalInfoList().add(senseAdditionalInfo);
+				}
 				
 			} else {
 				throw new RuntimeException(fieldType.name());
