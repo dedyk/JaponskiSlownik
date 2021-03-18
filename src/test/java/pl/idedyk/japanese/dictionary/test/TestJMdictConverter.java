@@ -20,7 +20,7 @@ public class TestJMdictConverter {
 		//
 		
 		dictionaryHelper.saveEntryListAsHumanCsv(csvFile.getAbsolutePath(), jmdict.getEntryList());
-		dictionaryHelper.saveJMdictAsXml(jmdict, "/tmp/a/org-entry-list-test.xml");
+		dictionaryHelper.saveJMdictAsXml(jmdict, "/tmp/a/orginal-entry-list.xml");
 		
 		//
 		
@@ -32,6 +32,6 @@ public class TestJMdictConverter {
 		
 		//
 		
-		dictionaryHelper.saveJMdictAsXml(newJMdict, "/tmp/a/entry-list-test.xml");
+		dictionaryHelper.saveJMdictAsXml(newJMdict, "/tmp/a/new-entry-list-test.xml");
 	}
 }

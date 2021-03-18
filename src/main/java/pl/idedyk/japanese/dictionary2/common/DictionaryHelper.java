@@ -145,6 +145,31 @@ public class DictionaryHelper {
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			
 			jmdict = (JMdict) jaxbUnmarshaller.unmarshal(jmdictFile);
+			
+			//
+			
+			// uzupelnienie o jezyk domyslny
+			List<Entry> entryList = jmdict.getEntryList();
+			
+			for (Entry entry : entryList) {
+				
+				for (Sense sense : entry.getSenseList()) {
+					
+					for (Gloss gloss : sense.getGlossList()) {
+						
+						if (gloss.getLang() == null) {
+							gloss.setLang("eng");
+						}
+					}
+					
+					for (SenseAdditionalInfo senseAdditionalInfo : sense.getAdditionalInfoList()) {
+						
+						if (senseAdditionalInfo.getLang() == null) {
+							senseAdditionalInfo.setLang("eng");
+						}
+					}					
+				}
+			}
 		}
 		
 		return jmdict;
