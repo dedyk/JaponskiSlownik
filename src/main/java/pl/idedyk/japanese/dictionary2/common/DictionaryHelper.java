@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -951,7 +952,43 @@ public class DictionaryHelper {
 				}
 				
 				//
+								
+				{
+					String languageSourceListString = csvReader.get(9);
+					
+					CsvReader languageSourceCsvReader = new CsvReader(new StringReader(languageSourceListString), '|');
+					
+					while (languageSourceCsvReader.readRecord()) {
+						
+						LanguageSourceLsTypeEnum languageSourceLsType = languageSourceCsvReader.get(0).equals("-") == false ? LanguageSourceLsTypeEnum.fromValue(languageSourceCsvReader.get(0)) : null;
+						LanguageSourceLsWaseiEnum languageSourceWasei = languageSourceCsvReader.get(1).equals("-") == false ? LanguageSourceLsWaseiEnum.fromValue(languageSourceCsvReader.get(1)) : null;
+						String languageSourceLang = languageSourceCsvReader.get(2).equals("-") == false ? languageSourceCsvReader.get(2) : null;
+						String languageSourceValue = languageSourceCsvReader.get(3);
+
+						//
+						
+						LanguageSource languageSource = new LanguageSource();
+						
+						languageSource.setLsType(languageSourceLsType);
+						languageSource.setLsWasei(languageSourceWasei);
+						languageSource.setLang(languageSourceLang);
+						languageSource.setValue(languageSourceValue);						
+						
+						//
+						
+						sense.getLanguageSourceList().add(languageSource);
+					}
+					
+					languageSourceCsvReader.close();
+				}
 				
+				//
+				
+				List<String> dialectList = Helper.convertStringToList(csvReader.get(10));
+				
+				for (String currentDialetList : dialectList) {
+					sense.getDialectList().add(DialectEnum.fromValue(currentDialetList));
+				}
 				
 				//
 			
