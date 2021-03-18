@@ -529,6 +529,12 @@ public class DictionaryHelper {
 		Entry newEntry = null;
 		
 		while (csvReader.readRecord()) {
+			
+			String fieldTypeString = csvReader.get(0);
+			
+			if (fieldTypeString.equals("") == true) {
+				continue;
+			}
 
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
