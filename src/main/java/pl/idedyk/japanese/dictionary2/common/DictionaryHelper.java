@@ -431,22 +431,22 @@ public class DictionaryHelper {
 	
 	private void saveEntryAsHumanCsv(CsvWriter csvWriter, Entry entry) throws Exception {
 		
-		new IEntryPartConverterBegin();
+		new EntryPartConverterBegin();
 		
 		// rekord poczatkowy
-		new IEntryPartConverterBegin().writeToCsv(csvWriter, entry);
+		new EntryPartConverterBegin().writeToCsv(csvWriter, entry);
 		
 		// kanji
-		new IEntryPartConverterKanji().writeToCsv(csvWriter, entry);
+		new EntryPartConverterKanji().writeToCsv(csvWriter, entry);
 		
 		// reading
-		new IEntryPartConverterReading().writeToCsv(csvWriter, entry);
+		new EntryPartConverterReading().writeToCsv(csvWriter, entry);
 		
 		// sense
-		new IEntryPartConverterSense().writeToCsv(csvWriter, entry);
+		new EntryPartConverterSense().writeToCsv(csvWriter, entry);
 		
 		// rekord koncowy
-		new IEntryPartConverterEnd().writeToCsv(csvWriter, entry);
+		new EntryPartConverterEnd().writeToCsv(csvWriter, entry);
 	}
 	
 	private static ReadingInfoKanaType getKanaType(String kana) {
@@ -486,10 +486,11 @@ public class DictionaryHelper {
 	
 	public List<Entry> readEntryListFromHumanCsv(String fileName) throws Exception {
 		
-		IEntryPartConverterBegin entryPartConverterBegin = new IEntryPartConverterBegin();
-		IEntryPartConverterEnd entryPartConverterEnd = new IEntryPartConverterEnd();
-		IEntryPartConverterKanji entryPartConverterKanji = new IEntryPartConverterKanji();
-		IEntryPartConverterReading entryPartConverterReading = new IEntryPartConverterReading();
+		EntryPartConverterBegin entryPartConverterBegin = new EntryPartConverterBegin();
+		EntryPartConverterEnd entryPartConverterEnd = new EntryPartConverterEnd();
+		EntryPartConverterKanji entryPartConverterKanji = new EntryPartConverterKanji();
+		EntryPartConverterReading entryPartConverterReading = new EntryPartConverterReading();
+		EntryPartConverterSense entryPartConverterSense = new EntryPartConverterSense();
 		
 		//
 		
@@ -525,6 +526,10 @@ public class DictionaryHelper {
 				
 				entryPartConverterReading.parseCsv(csvReader, newEntry);
 				
+			} else if (fieldType == EntryHumanCsvFieldType.SENSE_COMMON) { // sense common 
+				
+				entryPartConverterSense.parseCsv(csvReader, newEntry);
+			
 			} else {
 				
 				int fixme = 1;
@@ -589,15 +594,9 @@ public class DictionaryHelper {
 	}
 	
 	//
-	
-	private interface IEntryPartConverter {		
-		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException;	
-		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException;
-	}
-	
-	private class IEntryPartConverterBegin implements IEntryPartConverter {
+		
+	private class EntryPartConverterBegin {
 
-		@Override
 		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException {
 			
 			csvWriter.write(EntryHumanCsvFieldType.BEGIN.name());		
@@ -605,7 +604,6 @@ public class DictionaryHelper {
 			csvWriter.endRecord();
 		}
 
-		@Override
 		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
@@ -618,9 +616,8 @@ public class DictionaryHelper {
 		}
 	}
 	
-	private class IEntryPartConverterEnd implements IEntryPartConverter {
+	private class EntryPartConverterEnd {
 
-		@Override
 		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException {
 			
 			csvWriter.write(EntryHumanCsvFieldType.END.name());
@@ -629,7 +626,6 @@ public class DictionaryHelper {
 			csvWriter.endRecord();
 		}
 
-		@Override
 		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
@@ -642,9 +638,8 @@ public class DictionaryHelper {
 		}
 	}
 	
-	private class IEntryPartConverterKanji implements IEntryPartConverter {
+	private class EntryPartConverterKanji {
 
-		@Override
 		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException {
 			
 			List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
@@ -662,7 +657,6 @@ public class DictionaryHelper {
 			}
 		}
 		
-		@Override
 		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
@@ -697,9 +691,8 @@ public class DictionaryHelper {
 		}
 	}
 	
-	private class IEntryPartConverterReading implements IEntryPartConverter {
+	private class EntryPartConverterReading {
 
-		@Override
 		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException {
 			
 			List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
@@ -744,7 +737,6 @@ public class DictionaryHelper {
 			}
 		}
 		
-		@Override
 		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
@@ -793,9 +785,8 @@ public class DictionaryHelper {
 		}
 	}
 	
-	private class IEntryPartConverterSense implements IEntryPartConverter {
+	private class EntryPartConverterSense {
 
-		@Override
 		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException {
 			
 			List<Sense> senseList = entry.getSenseList();
@@ -919,9 +910,56 @@ public class DictionaryHelper {
 			csvWriter.endRecord();
 		}
 		
-		@Override
 		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
-			int fixme = 1;
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType == EntryHumanCsvFieldType.SENSE_COMMON) {
+				
+				Sense sense = new Sense();
+				
+				sense.getRestrictedToKanjiList().addAll(Helper.convertStringToList(csvReader.get(2)));
+				sense.getRestrictedToKanaList().addAll(Helper.convertStringToList(csvReader.get(3)));
+				
+				//
+				
+				List<String> partOfSpeechStringList = Helper.convertStringToList(csvReader.get(4));
+				
+				for (String currentPartOfSpeechString : partOfSpeechStringList) {
+					sense.getPartOfSpeechList().add(PartOfSpeechEnum.fromValue(currentPartOfSpeechString));
+				}
+
+				//
+				
+				sense.getReferenceToAnotherKanjiKanaList().addAll(Helper.convertStringToList(csvReader.get(5)));
+				sense.getAntonymList().addAll(Helper.convertStringToList(csvReader.get(6)));
+				
+				//
+				
+				List<String> fieldStringList = Helper.convertStringToList(csvReader.get(7));
+				
+				for (String currentFieldString : fieldStringList) {
+					sense.getFieldList().add(FieldEnum.fromValue(currentFieldString));
+				}
+				
+				//
+				
+				List<String> miscStringList = Helper.convertStringToList(csvReader.get(8));
+				
+				for (String currentMiscString : miscStringList) {
+					sense.getMiscList().add(MiscEnum.fromValue(currentMiscString));
+				}
+				
+				//
+				
+				
+				//
+			
+				entry.getSenseList().add(sense);
+				
+			} else {
+				throw new RuntimeException(fieldType.name());
+			}			
 		}
 	}
 }

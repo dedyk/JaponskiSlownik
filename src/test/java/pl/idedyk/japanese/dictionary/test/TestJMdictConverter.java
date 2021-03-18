@@ -13,7 +13,7 @@ public class TestJMdictConverter {
 		
 		DictionaryHelper dictionaryHelper = DictionaryHelper.init();
 
-		File csvFile = new File("/tmp/a/entry-list-test");
+		File csvFile = new File("/tmp/a/entry-list-test.csv");
 		
 		JMdict jmdict = dictionaryHelper.getJMdict();
 		
