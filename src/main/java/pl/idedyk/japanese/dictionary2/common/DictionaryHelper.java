@@ -87,11 +87,8 @@ public class DictionaryHelper {
 		DictionaryHelper dictionaryHelper = new DictionaryHelper();
 		
 		//
-		
-		int fixme = 1; // ok !!!!!!!!!!!!!1
-		
-		//dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict");
-		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+				
+		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict");
 		
 		return dictionaryHelper;
 	}
@@ -789,12 +786,9 @@ public class DictionaryHelper {
 			
 			readingInfo.setKana(new ReadingInfoKana());
 			
-			int fixme = 1;
-			// readingInfo.getKana().setKanaType(ReadingInfoKanaType.fromValue(csvReader.get(4))); // moja modyfikacja
+			readingInfo.getKana().setKanaType(ReadingInfoKanaType.fromValue(csvReader.get(4))); // moja modyfikacja
 			readingInfo.getKana().setValue(csvReader.get(5));
-			
-			int fixme2 = 1;
-			// readingInfo.getKana().setRomaji(csvReader.get(6)); // moja modyfikacja
+			readingInfo.getKana().setRomaji(csvReader.get(6)); // moja modyfikacja
 			
 			//
 			
@@ -1072,6 +1066,105 @@ public class DictionaryHelper {
 			} else {
 				throw new RuntimeException(fieldType.name());
 			}			
+		}
+	}
+	
+	public void createEmptyPolishSense(Entry entry) {
+		
+		List<Sense> senseList = entry.getSenseList();
+		
+		for (Sense sense : senseList) {
+						
+			List<Gloss> glossList = sense.getGlossList();
+			
+			List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+
+			if (glossEngList.size() == 0) {
+				continue;
+			}
+			
+			List<Gloss> newPolishGlossList = new ArrayList<>();
+			
+			Gloss newPolishGlossStart1 = new Gloss();
+			
+			newPolishGlossStart1.setLang("pol");
+			newPolishGlossStart1.setGType(null);
+			newPolishGlossStart1.setValue("UZUPEŁNIENIE");
+
+			newPolishGlossList.add(newPolishGlossStart1);
+			
+			//
+			
+			Gloss newPolishGlossStart2 = new Gloss();
+			
+			newPolishGlossStart2.setLang("pol");
+			newPolishGlossStart2.setGType(null);
+			newPolishGlossStart2.setValue("---");
+
+			newPolishGlossList.add(newPolishGlossStart2);
+			
+			//
+			
+			for (Gloss currentGlossEng : glossEngList) {
+				
+				Gloss newPolishGloss = new Gloss();
+				
+				newPolishGloss.setLang("pol");
+				newPolishGloss.setGType(currentGlossEng.getGType());
+				newPolishGloss.setValue(currentGlossEng.getValue());
+				
+				newPolishGlossList.add(newPolishGloss);				
+			}
+			
+			//
+			
+			glossList.addAll(newPolishGlossList);
+			
+			//
+			
+			List<SenseAdditionalInfo> additionalInfoList = sense.getAdditionalInfoList();
+			
+			List<SenseAdditionalInfo> additionalInfoEngList = additionalInfoList.stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+			
+			if (additionalInfoEngList.size() == 0) {
+				continue;
+			}
+						
+			List<SenseAdditionalInfo> newAdditionalInfoPolishList = new ArrayList<>();
+			
+			//
+			
+			SenseAdditionalInfo senseAdditionalInfoStart1 = new SenseAdditionalInfo();
+			
+			senseAdditionalInfoStart1.setLang("pol");
+			senseAdditionalInfoStart1.setValue("UZUPEŁNIENIE");
+			
+			newAdditionalInfoPolishList.add(senseAdditionalInfoStart1);
+			
+			//
+			
+			SenseAdditionalInfo senseAdditionalInfoStart2 = new SenseAdditionalInfo();
+			
+			senseAdditionalInfoStart2.setLang("pol");
+			senseAdditionalInfoStart2.setValue("---");
+			
+			newAdditionalInfoPolishList.add(senseAdditionalInfoStart2);
+			
+			//
+			
+			for (SenseAdditionalInfo currentSenseAdditionalInfoEng : additionalInfoEngList) {
+				
+				SenseAdditionalInfo newSenseAdditionalInfoPolish = new SenseAdditionalInfo();
+				
+				newSenseAdditionalInfoPolish.setLang("pol");
+				newSenseAdditionalInfoPolish.setValue(currentSenseAdditionalInfoEng.getValue());
+				
+				newAdditionalInfoPolishList.add(newSenseAdditionalInfoPolish);
+			}
+			
+			//
+			
+			additionalInfoList.addAll(newAdditionalInfoPolishList);
 		}
 	}
 }

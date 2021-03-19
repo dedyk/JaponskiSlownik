@@ -107,7 +107,7 @@ public class GenerateMissingWordListApp {
 					int fixme3 = 1;
 					
 					// uzupelnienie o puste polskie tlumaczenie
-					int fixme4 = 1;
+					dictionaryHelper.createEmptyPolishSense(entry);					
 					
 					// dodanie do listy wynikowej
 					result.add(entry);
