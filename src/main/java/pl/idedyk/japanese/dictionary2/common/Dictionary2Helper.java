@@ -73,22 +73,22 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 
-public class DictionaryHelper {
+public class Dictionary2Helper {
 	
-	private DictionaryHelper() { }
+	private Dictionary2Helper() { }
 	
-	public static DictionaryHelper init() {
+	public static Dictionary2Helper init() {
 		
 		// init
 		System.setProperty("jdk.xml.entityExpansionLimit", "0");
 
 		//
 		
-		DictionaryHelper dictionaryHelper = new DictionaryHelper();
+		Dictionary2Helper dictionaryHelper = new Dictionary2Helper();
 		
 		//
 				
-		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict");
+		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
 		
 		//
 		
@@ -148,7 +148,7 @@ public class DictionaryHelper {
 			// walidacja xsd
 			SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 			
-			Schema schema = factory.newSchema(DictionaryHelper.class.getResource("/pl/idedyk/japanese/dictionary2/jmdict/xsd/JMdict.xsd"));
+			Schema schema = factory.newSchema(Dictionary2Helper.class.getResource("/pl/idedyk/japanese/dictionary2/jmdict/xsd/JMdict.xsd"));
 			
 			Validator validator = schema.newValidator();
 						
@@ -549,7 +549,7 @@ public class DictionaryHelper {
 			
 			String fieldTypeString = csvReader.get(0);
 			
-			if (fieldTypeString.equals("") == true) {
+			if (fieldTypeString.equals("") == true || fieldTypeString.startsWith("//////") == true) {
 				continue;
 			}
 
@@ -672,6 +672,8 @@ public class DictionaryHelper {
 			csvWriter.write(EntryHumanCsvFieldType.END.name());
 			csvWriter.write(String.valueOf(entry.getEntryId()));
 			csvWriter.endRecord();
+			
+			csvWriter.write("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 			csvWriter.endRecord();
 		}
 
@@ -1122,6 +1124,7 @@ public class DictionaryHelper {
 			newPolishGlossStart2.setValue("---");
 
 			newPolishGlossList.add(newPolishGlossStart2);
+			newPolishGlossList.add(newPolishGlossStart2);
 			
 			//
 			
@@ -1168,6 +1171,7 @@ public class DictionaryHelper {
 			senseAdditionalInfoStart2.setLang("pol");
 			senseAdditionalInfoStart2.setValue("---");
 			
+			newAdditionalInfoPolishList.add(senseAdditionalInfoStart2);
 			newAdditionalInfoPolishList.add(senseAdditionalInfoStart2);
 			
 			//

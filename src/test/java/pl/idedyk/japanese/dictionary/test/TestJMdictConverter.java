@@ -3,7 +3,7 @@ package pl.idedyk.japanese.dictionary.test;
 import java.io.File;
 import java.util.List;
 
-import pl.idedyk.japanese.dictionary2.common.DictionaryHelper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
@@ -11,7 +11,7 @@ public class TestJMdictConverter {
 
 	public static void main(String[] args) throws Exception {
 		
-		DictionaryHelper dictionaryHelper = DictionaryHelper.init();
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.init();
 
 		File csvFile = new File("/tmp/a/entry-list-test.csv");
 		

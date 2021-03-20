@@ -11,7 +11,7 @@ import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 
-import pl.idedyk.japanese.dictionary2.common.DictionaryHelper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
@@ -80,7 +80,7 @@ public class GenerateMissingWordListApp {
 		List<String> wordList = Helper.readFile(wordListFileName, true);
 		
 		// wczytywanie pomocnika slownikowego
-		DictionaryHelper dictionaryHelper = DictionaryHelper.init();
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.init();
 		
 		Set<Integer> alreadyMetEntrySet = new TreeSet<Integer>();
 		
