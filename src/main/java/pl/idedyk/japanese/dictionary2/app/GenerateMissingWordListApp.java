@@ -124,6 +124,9 @@ public class GenerateMissingWordListApp {
 			}
 		}
 		
+		// postep
+		int fixme3 = 1;
+		
 		// zapisanie wyniku pod postacia csv
 		dictionaryHelper.saveEntryListAsHumanCsv("input/word-new-test.csv", result);
 		
