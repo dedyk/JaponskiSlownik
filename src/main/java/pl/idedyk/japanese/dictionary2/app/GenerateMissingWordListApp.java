@@ -111,6 +111,10 @@ public class GenerateMissingWordListApp {
 					}
 										
 					// uzupelnienie o puste polskie tlumaczenie
+					
+					// proba znalezienia tlumaczenia w starym slowniku
+					int fixme2 = 1;
+					
 					dictionaryHelper.createEmptyPolishSense(entry);					
 					
 					// dodanie do listy wynikowej
