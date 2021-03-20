@@ -104,8 +104,12 @@ public class GenerateMissingWordListApp {
 					}
 					
 					// sprawdzenie, czy takie slowo juz wystepuje w moim slowniku
-					int fixme3 = 1;
+					Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(entry);
 					
+					if (entryFromPolishDictionary != null) { // taki wpis juz jest
+						continue;
+					}
+										
 					// uzupelnienie o puste polskie tlumaczenie
 					dictionaryHelper.createEmptyPolishSense(entry);					
 					

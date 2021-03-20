@@ -90,15 +90,35 @@ public class DictionaryHelper {
 				
 		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict");
 		
+		//
+		
+		dictionaryHelper.polishDictionaryFiles = new File[] {
+				new File("input/word2-test01.csv"),
+				new File("input/word2-test02.csv"),
+				new File("input/word2-test03.csv"),
+				new File("input/word2-test04.csv")
+		};
+		
 		return dictionaryHelper;
 	}
 	
 	private KanaHelper kanaHelper = new KanaHelper();
 	
+	//
+	
 	private File jmdictFile;	
 	private JMdict jmdict = null;
 	
 	private Map<Integer, JMdict.Entry> jmdictEntryIdCache;
+	
+	//
+	
+	private File[] polishDictionaryFiles;	
+	private List<JMdict.Entry> polishDictionaryEntryList;
+	
+	private Map<Integer, JMdict.Entry> polishDictionaryEntryListCache;
+	
+	//
 	
 	// analizator lucynkowy
 	private SimpleAnalyzer jmdictLuceneAnalyzer = new SimpleAnalyzer(Version.LUCENE_47);
@@ -1166,5 +1186,52 @@ public class DictionaryHelper {
 			
 			additionalInfoList.addAll(newAdditionalInfoPolishList);
 		}
+	}
+	
+	private void readPolishDictionary() throws Exception {
+		
+		// wczytywanie slownika
+		if (polishDictionaryEntryList == null) {
+			
+			polishDictionaryEntryList = new ArrayList<>();
+			
+			//
+			
+			for (File currentPolishDictionaryFile : polishDictionaryFiles) {
+				
+				if (currentPolishDictionaryFile.exists() == true) {
+					
+					System.out.println("Reading polish dictionary file: " + currentPolishDictionaryFile);
+					
+					List<Entry> currentPolishDictionaryFileEntryList = readEntryListFromHumanCsv(currentPolishDictionaryFile.getAbsolutePath());
+					
+					polishDictionaryEntryList.addAll(currentPolishDictionaryFileEntryList);					
+				}
+			}
+		}		
+	}
+	
+	private void cachePolishDictionary() throws Exception {
+		
+		readPolishDictionary();
+		
+		// cachoe'owanie encji z polskiego slownika
+		if (polishDictionaryEntryListCache == null) {
+			
+			System.out.println("Caching polish dictionary");
+			
+			polishDictionaryEntryListCache = new TreeMap<>();
+						
+			for (Entry entry : polishDictionaryEntryList) {
+				polishDictionaryEntryListCache.put(entry.getEntryId(), entry);
+			}
+		}		
+	}
+
+	public Entry getEntryFromPolishDictionary(Entry entry) throws Exception {
+		
+		cachePolishDictionary();
+		
+		return polishDictionaryEntryListCache.get(entry.getEntryId());
 	}
 }
