@@ -549,7 +549,7 @@ public class Dictionary2Helper {
 			
 			String fieldTypeString = csvReader.get(0);
 			
-			if (fieldTypeString.equals("") == true || fieldTypeString.startsWith("//////") == true) {
+			if (fieldTypeString.equals("") == true) {
 				continue;
 			}
 
@@ -671,9 +671,8 @@ public class Dictionary2Helper {
 			
 			csvWriter.write(EntryHumanCsvFieldType.END.name());
 			csvWriter.write(String.valueOf(entry.getEntryId()));
+			csvWriter.endRecord();			
 			csvWriter.endRecord();
-			
-			csvWriter.write("////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 			csvWriter.endRecord();
 		}
 
