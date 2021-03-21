@@ -1237,4 +1237,128 @@ public class Dictionary2Helper {
 		
 		return polishDictionaryEntryListCache.get(entry.getEntryId());
 	}
+
+	public void testMethod(Entry entry) {
+		
+		// generowanie wszystkich kanji i ich czytan
+		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+		
+		int a = 0;
+		
+		a++;
+		
+		System.out.println(entry.getEntryId() + " - " + kanjiKanaPairListforEntry);
+		
+		// dokonczyc
+		int fixme = 1;
+		
+		
+	}
+	
+	private List<KanjiKanaPair> getKanjiKanaPairList(Entry entry) {
+		
+		List<KanjiKanaPair> result = new ArrayList<>();
+		
+		//
+		
+		List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
+		List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
+		
+		// jesli nie ma kanji
+		if (kanjiInfoList.size() == 0) {
+			
+			// wszystkie czytania do listy wynikowej
+			for (ReadingInfo readingInfo : readingInfoList) {
+				
+				ReadingInfo.ReNokanji noKanji = readingInfo.getNoKanji();
+				
+				if (noKanji == null) {
+										
+					String kana = readingInfo.getKana().getValue();
+					
+					//
+					
+					result.add(new KanjiKanaPair(null, kana));
+				}
+			}
+			
+		} else {			
+			// zlaczenie kanji z kana
+			
+			for (KanjiInfo kanjiInfo : kanjiInfoList) {
+				for (ReadingInfo readingInfo : readingInfoList) {
+					
+					// pobierz kanji
+					String kanji = kanjiInfo.getKanji();
+											
+					ReadingInfo.ReNokanji noKanji = readingInfo.getNoKanji();
+					
+					// jest pozycja kana nie laczy sie ze znakiem kanji
+					if (noKanji != null) { 
+						continue;
+					}
+					
+					// pobierz kana
+					String kana = readingInfo.getKana().getValue();
+					List<String> kanjiRestrictedListForKana = readingInfo.getKanjiRestrictionList();
+					
+					boolean isRestricted = true;
+					
+					// sprawdzanie, czy dany kana laczy sie z kanji
+					if (kanjiRestrictedListForKana.size() == 0) { // brak restrykcji						
+						isRestricted = false;
+						
+					} else { // sa jakies restrykcje, sprawdzamy, czy kanji znajduje sie na tej liscie					
+						if (kanjiRestrictedListForKana.contains(kanji) == true) {
+							isRestricted = false;
+						}							
+					}
+					
+					// to zlaczenie nie znajduje sie na liscie, omijamy je
+					if (isRestricted == true) {
+						continue; // omijamy to zlaczenie
+					}
+					
+					// mamy pare
+					result.add(new KanjiKanaPair(kanji, kana));					
+				}				
+			}
+		}
+		
+		// szukanie kana z no kanji
+		for (ReadingInfo readingInfo : readingInfoList) {
+			
+			ReadingInfo.ReNokanji noKanji = readingInfo.getNoKanji();
+			
+			if (noKanji != null) {
+								
+				String kana = readingInfo.getKana().getValue();
+				
+				//
+				
+				result.add(new KanjiKanaPair(null, kana));
+			}
+		}
+		
+		//
+		
+		return result;
+	}
+	
+	private static class KanjiKanaPair {
+		
+		private String kanji;
+		
+		private String kana;
+
+		public KanjiKanaPair(String kanji, String kana) {
+			this.kanji = kanji;
+			this.kana = kana;
+		}
+
+		@Override
+		public String toString() {
+			return "KanjiKanaPair [kanji=" + kanji + ", kana=" + kana + "]";
+		}
+	}
 }

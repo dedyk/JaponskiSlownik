@@ -118,7 +118,11 @@ public class GenerateMissingWordListApp {
 					// zmiana wygenerowanego romaji na to, ktore znajduje sie w starym slowniku
 					int fixme3 = 1;					
 					
-					dictionaryHelper.createEmptyPolishSense(entry);					
+					dictionaryHelper.createEmptyPolishSense(entry);
+					
+					// metoda testowa (tymczasowa)
+					int fixme4 = 1;
+					dictionaryHelper.testMethod(entry);
 					
 					// dodanie do listy wynikowej
 					result.add(entry);
