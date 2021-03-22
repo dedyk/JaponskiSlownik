@@ -1313,9 +1313,17 @@ public class Dictionary2Helper {
 		
 		if (allPolishJapaneseEntriesForEntry.size() > 0) { // jezeli dany wpis juz jest w starym slowniku, mozemy przetworzyc te dane
 			
-			// romaji
-			int fixme2 = 1;
+			// aktualizacja romaji
+			List<ReadingInfo> entryReadingInfoList = entry.getReadingInfoList();
 			
+			for (ReadingInfo readingInfo : entryReadingInfoList) {
+				
+				PolishJapaneseEntry polishJapaneseEntryForReadingKana = allPolishJapaneseEntriesForEntry.stream().filter((p) -> p.getKana().equals(readingInfo.getKana().getValue())).findFirst().get();
+				
+				readingInfo.getKana().setKanaType(ReadingInfoKanaType.fromValue(polishJapaneseEntryForReadingKana.getWordType().name()));
+				readingInfo.getKana().setRomaji(polishJapaneseEntryForReadingKana.getRomaji());
+			}
+						
 			// istniejace tlumaczenie
 			int fixme3 = 1;
 		}		
