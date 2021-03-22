@@ -1250,10 +1250,7 @@ public class Dictionary2Helper {
 
 	public void fillDataFromOldPolishJapaneseDictionary(Entry entry) throws Exception {
 		
-		// wczytanie starego slownika
-		List<PolishJapaneseEntry> polishJapaneseEntriesList = oldWordGeneratorHelper.getPolishJapaneseEntriesList();
-		
-		// wczytanie cache ze starym slownikiem
+		// wczytanie starego slownika i sche'owanie go		
 		Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache = oldWordGeneratorHelper.getPolishJapaneseEntriesCache();
 		
 		//
@@ -1262,7 +1259,7 @@ public class Dictionary2Helper {
 		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
 		
 		// szukamy wszystkich slow ze starego slownika
-		List<PolishJapaneseEntry> polishJapaneseEntryList = new ArrayList<>();		
+		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = new ArrayList<>();		
 		
 		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
 			
@@ -1308,9 +1305,20 @@ public class Dictionary2Helper {
 			}
 			
 			if (polishJapaneseEntryForKanjiKanaPair == null) { // nie udalo sie znalexc slowa w starym slowniku				
-				throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana);
+				throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // to chyba nigdy nie powinno zdarzyc sie
 			}
+			
+			allPolishJapaneseEntriesForEntry.add(polishJapaneseEntryForKanjiKanaPair);
 		}
+		
+		if (allPolishJapaneseEntriesForEntry.size() > 0) { // jezeli dany wpis juz jest w starym slowniku, mozemy przetworzyc te dane
+			
+			// romaji
+			int fixme2 = 1;
+			
+			// istniejace tlumaczenie
+			int fixme3 = 1;
+		}		
 		
 		// dokonczyc
 		int fixme = 1;		

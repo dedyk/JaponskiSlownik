@@ -111,17 +111,9 @@ public class GenerateMissingWordListApp {
 					}
 										
 					// uzupelnienie o puste polskie tlumaczenie
-					
-					// proba znalezienia tlumaczenia w starym slowniku
-					int fixme2 = 1;
-					
-					// zmiana wygenerowanego romaji na to, ktore znajduje sie w starym slowniku
-					int fixme3 = 1;					
-					
 					dictionaryHelper.createEmptyPolishSense(entry);
 					
-					// metoda testowa (tymczasowa)
-					int fixme4 = 1;
+					// pobranie ze starego slownika interesujacych danych (np. romaji)
 					dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry);
 					
 					// dodanie do listy wynikowej
