@@ -17,7 +17,7 @@ public class Test7 {
 		List<Entry> entryList = jmdict.getEntryList();
 		
 		for (Entry entry : entryList) {
-			dictionaryHelper.testMethod(entry);
+			dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry);
 		}
 	}
 

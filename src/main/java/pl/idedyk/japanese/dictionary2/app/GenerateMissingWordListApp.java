@@ -122,7 +122,7 @@ public class GenerateMissingWordListApp {
 					
 					// metoda testowa (tymczasowa)
 					int fixme4 = 1;
-					dictionaryHelper.testMethod(entry);
+					dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry);
 					
 					// dodanie do listy wynikowej
 					result.add(entry);

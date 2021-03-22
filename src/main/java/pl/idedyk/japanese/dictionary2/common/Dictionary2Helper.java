@@ -52,6 +52,8 @@ import com.csvreader.CsvWriter;
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.GTypeEnum;
@@ -99,6 +101,11 @@ public class Dictionary2Helper {
 				new File("input/word2-test04.csv")
 		};
 		
+		// stary pomocnik		
+		dictionaryHelper.oldWordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
+				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
+
+		
 		return dictionaryHelper;
 	}
 	
@@ -126,6 +133,8 @@ public class Dictionary2Helper {
 	private Directory jmdictLuceneIndex; 
 	private IndexReader jmdictLuceneIndexReader; 
 	private IndexSearcher jmdictLuceneIndexReaderSearcher;
+	
+	private WordGeneratorHelper oldWordGeneratorHelper;
 	
 	public void close() throws Exception {
 		
@@ -1238,21 +1247,70 @@ public class Dictionary2Helper {
 		return polishDictionaryEntryListCache.get(entry.getEntryId());
 	}
 
-	public void testMethod(Entry entry) {
+	public void fillDataFromOldPolishJapaneseDictionary(Entry entry) throws Exception {
 		
+		// wczytanie starego slownika
+		List<PolishJapaneseEntry> polishJapaneseEntriesList = oldWordGeneratorHelper.getPolishJapaneseEntriesList();
+		
+		// wczytanie cache ze starym slownikiem
+		Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache = oldWordGeneratorHelper.getPolishJapaneseEntriesCache();
+		
+		//
+				
 		// generowanie wszystkich kanji i ich czytan
 		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
 		
-		int a = 0;
+		// szukamy wszystkich slow ze starego slownika
+		List<PolishJapaneseEntry> polishJapaneseEntryList = new ArrayList<>();		
 		
-		a++;
-		
-		System.out.println(entry.getEntryId() + " - " + kanjiKanaPairListforEntry);
+		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
+			
+			// szukamy slowa ze starego slownika
+			List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(polishJapaneseEntriesCache, kanjiKanaPair.kanji, kanjiKanaPair.kana);
+			
+			if (findPolishJapaneseEntryList == null) { // nie znaleziono
+				continue;
+			}
+			
+			PolishJapaneseEntry polishJapaneseEntryForKanjiKanaPair = null;
+			
+			if (findPolishJapaneseEntryList.size() == 1) {
+				
+				polishJapaneseEntryForKanjiKanaPair = findPolishJapaneseEntryList.get(0);
+				
+				// pobieramy identyfikator grupy ze slowa
+				Integer polishJapaneseEntryForKanjiKanaPairEntryId = polishJapaneseEntryForKanjiKanaPair.getGroupIdFromJmedictRawDataList();
+				
+				if (polishJapaneseEntryForKanjiKanaPairEntryId != null && polishJapaneseEntryForKanjiKanaPairEntryId.intValue() != entry.getEntryId().intValue()) { // sprawdzamy grupe
+					throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // jezeli to wydarzylo sie, oznacza to, ze dane slowo zmienilo swoja grupe, mozna to poprawic
+				}
+			}
+			
+			if (findPolishJapaneseEntryList.size() > 1) { // jezeli mamy kilka takich smaych slow, szukamy tego konkretnego
+				
+				for (PolishJapaneseEntry currentFindPolishJapaneseEntryList : findPolishJapaneseEntryList) {
+					
+					if (currentFindPolishJapaneseEntryList.getGroupIdFromJmedictRawDataList() == null) {
+						throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // jezeli to wydarzylo sie, oznacza to, ze dane slowo jest potencjalnym duplikatem i powinien zostac recznie usuniety
+					}
+					
+					if (currentFindPolishJapaneseEntryList.getGroupIdFromJmedictRawDataList().intValue() == entry.getEntryId().intValue()) { // mamy kandydata z naszej grup
+						polishJapaneseEntryForKanjiKanaPair = currentFindPolishJapaneseEntryList;
+						
+						break;
+					}
+				}				
+			}
+			
+			if (polishJapaneseEntryForKanjiKanaPair == null) { // nie udalo sie znalexc slowa w starym slowniku				
+				System.out.println("AAAA: " + kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana);
+				
+				int fixme2 = 1;
+			}
+		}
 		
 		// dokonczyc
-		int fixme = 1;
-		
-		
+		int fixme = 1;		
 	}
 	
 	private List<KanjiKanaPair> getKanjiKanaPairList(Entry entry) {
