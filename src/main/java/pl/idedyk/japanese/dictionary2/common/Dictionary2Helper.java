@@ -52,6 +52,7 @@ import com.csvreader.CsvWriter;
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
@@ -1290,6 +1291,10 @@ public class Dictionary2Helper {
 				
 				for (PolishJapaneseEntry currentFindPolishJapaneseEntryList : findPolishJapaneseEntryList) {
 					
+					if (currentFindPolishJapaneseEntryList.getParseAdditionalInfoList().contains(ParseAdditionalInfo.IGNORE_NO_JMEDICT) == true) {
+						continue;
+					}
+					
 					if (currentFindPolishJapaneseEntryList.getGroupIdFromJmedictRawDataList() == null) {
 						throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // jezeli to wydarzylo sie, oznacza to, ze dane slowo jest potencjalnym duplikatem i powinien zostac recznie usuniety
 					}
@@ -1303,9 +1308,7 @@ public class Dictionary2Helper {
 			}
 			
 			if (polishJapaneseEntryForKanjiKanaPair == null) { // nie udalo sie znalexc slowa w starym slowniku				
-				System.out.println("AAAA: " + kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana);
-				
-				int fixme2 = 1;
+				throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana);
 			}
 		}
 		
