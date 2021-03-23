@@ -783,16 +783,15 @@ public class Dictionary2Helper {
 				
 				csvWriter.write(EntryHumanCsvFieldType.READING.name());		
 				csvWriter.write(String.valueOf(entry.getEntryId()));
-
-				csvWriter.write(readingInfo.getNoKanji() != null ? ReadingInfoNoKanji.NO_KANJI.name() : "-");			
-				csvWriter.write(Helper.convertListToString(readingInfo.getKanjiRestrictionList()));
-							
+				
+				//
+				
 				ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
 				
 				if (kanaType == null) {
 					kanaType = getKanaType(readingInfo.getKana().getValue());
 				}
-
+				
 				csvWriter.write(kanaType.name());
 
 				csvWriter.write(readingInfo.getKana().getValue());
@@ -812,6 +811,9 @@ public class Dictionary2Helper {
 				
 				csvWriter.write(romaji);
 				
+				csvWriter.write(readingInfo.getNoKanji() != null ? ReadingInfoNoKanji.NO_KANJI.name() : "-");			
+				csvWriter.write(Helper.convertListToString(readingInfo.getKanjiRestrictionList()));
+								
 				csvWriter.write(Helper.convertEnumListToString(readingInfo.getReadingAdditionalInfoList()));
 				csvWriter.write(Helper.convertEnumListToString(readingInfo.getRelativePriorityList()));
 				
@@ -829,20 +831,20 @@ public class Dictionary2Helper {
 			
 			ReadingInfo readingInfo = new ReadingInfo();
 			
-			String noKanji = csvReader.get(2);
+			readingInfo.setKana(new ReadingInfoKana());
+			
+			readingInfo.getKana().setKanaType(ReadingInfoKanaType.fromValue(csvReader.get(2))); // moja modyfikacja
+			readingInfo.getKana().setValue(csvReader.get(3));
+			readingInfo.getKana().setRomaji(csvReader.get(4)); // moja modyfikacja
+			
+			String noKanji = csvReader.get(5);
 			
 			if (noKanji.equals(ReadingInfoNoKanji.NO_KANJI.name()) == true) {
 				readingInfo.setNoKanji(new ReadingInfo.ReNokanji());
 			}
 			
-			readingInfo.getKanjiRestrictionList().addAll(Helper.convertStringToList(csvReader.get(3)));
-			
-			readingInfo.setKana(new ReadingInfoKana());
-			
-			readingInfo.getKana().setKanaType(ReadingInfoKanaType.fromValue(csvReader.get(4))); // moja modyfikacja
-			readingInfo.getKana().setValue(csvReader.get(5));
-			readingInfo.getKana().setRomaji(csvReader.get(6)); // moja modyfikacja
-			
+			readingInfo.getKanjiRestrictionList().addAll(Helper.convertStringToList(csvReader.get(6)));
+						
 			//
 			
 			List<String> readingAdditionalInfoEnumStringList = Helper.convertStringToList(csvReader.get(7));
