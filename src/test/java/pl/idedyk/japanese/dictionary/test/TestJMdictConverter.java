@@ -19,7 +19,11 @@ public class TestJMdictConverter {
 		
 		//
 		
-		dictionaryHelper.saveEntryListAsHumanCsv(csvFile.getAbsolutePath(), jmdict.getEntryList());
+		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
+		
+		saveEntryListAsHumanCsvConfig.addOldPolishTranslates = false;
+		
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, csvFile.getAbsolutePath(), jmdict.getEntryList());
 		dictionaryHelper.saveJMdictAsXml(jmdict, "/tmp/a/orginal-entry-list.xml");
 		
 		//

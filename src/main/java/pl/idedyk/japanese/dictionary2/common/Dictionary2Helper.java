@@ -8,9 +8,11 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 import javax.xml.XMLConstants;
@@ -92,6 +94,7 @@ public class Dictionary2Helper {
 		//
 				
 		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+		dictionaryHelper.jmdictEntryAdditionalDataMap = new TreeMap<>();
 		
 		//
 		
@@ -118,6 +121,8 @@ public class Dictionary2Helper {
 	private JMdict jmdict = null;
 	
 	private Map<Integer, JMdict.Entry> jmdictEntryIdCache;
+	
+	private Map<Integer, EntryAdditionalData> jmdictEntryAdditionalDataMap;
 	
 	//
 	
@@ -471,18 +476,18 @@ public class Dictionary2Helper {
 		}
 	}
 	
-	public void saveEntryListAsHumanCsv(String fileName, List<Entry> entryList) throws Exception {
+	public void saveEntryListAsHumanCsv(SaveEntryListAsHumanCsvConfig config, String fileName, List<Entry> entryList) throws Exception {
 		
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(fileName), ',');
 		
 		for (Entry entry : entryList) {
-			saveEntryAsHumanCsv(csvWriter, entry);
+			saveEntryAsHumanCsv(config, csvWriter, entry);
 		}		
 		
 		csvWriter.close();
 	}
 	
-	private void saveEntryAsHumanCsv(CsvWriter csvWriter, Entry entry) throws Exception {
+	private void saveEntryAsHumanCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws Exception {
 		
 		new EntryPartConverterBegin();
 		
@@ -497,6 +502,10 @@ public class Dictionary2Helper {
 		
 		// sense
 		new EntryPartConverterSense().writeToCsv(csvWriter, entry);
+		
+		if (config.addOldPolishTranslates == true) {
+			new EntryPartConverterOldPolishTranslate().writeToCsv(csvWriter, entry);
+		}
 		
 		// rekord koncowy
 		new EntryPartConverterEnd().writeToCsv(csvWriter, entry);
@@ -544,6 +553,7 @@ public class Dictionary2Helper {
 		EntryPartConverterKanji entryPartConverterKanji = new EntryPartConverterKanji();
 		EntryPartConverterReading entryPartConverterReading = new EntryPartConverterReading();
 		EntryPartConverterSense entryPartConverterSense = new EntryPartConverterSense();
+		EntryPartConverterOldPolishTranslate entryPartConverterOldPolishTranslate = new EntryPartConverterOldPolishTranslate();
 		
 		//
 		
@@ -593,6 +603,10 @@ public class Dictionary2Helper {
 			
 				entryPartConverterSense.parseCsv(csvReader, newEntry);
 				
+			} else if (fieldType == EntryHumanCsvFieldType.OLD_POLISH_TRANSLATE) {
+				
+				entryPartConverterOldPolishTranslate.parseCsv(csvReader, newEntry);
+				
 			} else {				
 				throw new RuntimeException(fieldType.name());
 			}			
@@ -634,6 +648,12 @@ public class Dictionary2Helper {
 		
 	//
 	
+	public static class SaveEntryListAsHumanCsvConfig {
+		
+		public boolean addOldPolishTranslates = false;
+		
+	}
+	
 	private enum EntryHumanCsvFieldType {
 		
 		BEGIN,
@@ -644,6 +664,8 @@ public class Dictionary2Helper {
 		SENSE_COMMON,
 		SENSE_ENG,
 		SENSE_POL,
+		
+		OLD_POLISH_TRANSLATE,
 		
 		END;
 	}
@@ -1100,6 +1122,64 @@ public class Dictionary2Helper {
 		}
 	}
 	
+	private class EntryPartConverterOldPolishTranslate {
+		
+		public void writeToCsv(CsvWriter csvWriter, Entry entry) throws IOException {
+			
+			// sprawdzamy, czy cos zostalo przygotowane
+			EntryAdditionalData entryAdditionalData = jmdictEntryAdditionalDataMap.get(entry.getEntryId());
+			
+			if (entryAdditionalData == null || entryAdditionalData.oldPolishJapaneseEntryList == null) {
+				return;
+			}
+			
+			// grupujemy po unikalnym tlumaczeniu
+			Map<String, String> uniqueOldPolishJapaneseTranslates = new TreeMap<>();
+			
+			for (PolishJapaneseEntry polishJapaneseEntry : entryAdditionalData.oldPolishJapaneseEntryList) {
+				
+				String polishJapaneseEntryTranslate = Helper.convertListToString(polishJapaneseEntry.getTranslates());
+				String polishJapaneseEntryInfo = polishJapaneseEntry.getInfo() != null ? polishJapaneseEntry.getInfo() : "";
+				
+				//
+				
+				String infoForPolishJapaneseEntryTranslate = uniqueOldPolishJapaneseTranslates.get(polishJapaneseEntryTranslate);
+				
+				if (infoForPolishJapaneseEntryTranslate == null) {
+					uniqueOldPolishJapaneseTranslates.put(polishJapaneseEntryTranslate, polishJapaneseEntryInfo);
+					
+				}
+			}
+			
+			if (uniqueOldPolishJapaneseTranslates.size() == 0) {
+				return;
+			}
+			
+			// dodajemy unikaln tlumaczenia i informacje dodatkowe
+			Iterator<java.util.Map.Entry<String, String>> uniqueOldPolishJapaneseTranslatesEntryIterator = uniqueOldPolishJapaneseTranslates.entrySet().iterator();
+			
+			while (uniqueOldPolishJapaneseTranslatesEntryIterator.hasNext() == true) {
+				
+				csvWriter.write(EntryHumanCsvFieldType.OLD_POLISH_TRANSLATE.name());
+				csvWriter.write(String.valueOf(entry.getEntryId()));
+				
+				java.util.Map.Entry<String, String> currentPolishJapaneseTranslateAndInfo = uniqueOldPolishJapaneseTranslatesEntryIterator.next();
+								
+				csvWriter.write(currentPolishJapaneseTranslateAndInfo.getKey());
+				csvWriter.write(currentPolishJapaneseTranslateAndInfo.getValue());	
+				
+				csvWriter.endRecord();
+			}
+		}
+		
+		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			throw new RuntimeException(fieldType.name()); // tego pola nie powinno byc w pliku csv
+		}
+	}
+	
 	public void createEmptyPolishSense(Entry entry) {
 		
 		List<Sense> senseList = entry.getSenseList();
@@ -1324,12 +1404,17 @@ public class Dictionary2Helper {
 				readingInfo.getKana().setRomaji(polishJapaneseEntryForReadingKana.getRomaji());
 			}
 						
-			// istniejace tlumaczenie
-			int fixme3 = 1;
+			// istniejace tlumaczenie (przygotowanie danych)
+			EntryAdditionalData entryAdditionalData = jmdictEntryAdditionalDataMap.get(entry.getEntryId());
+			
+			if (entryAdditionalData == null) {
+				entryAdditionalData = new EntryAdditionalData();
+				
+				jmdictEntryAdditionalDataMap.put(entry.getEntryId(), entryAdditionalData);
+			}
+			
+			entryAdditionalData.oldPolishJapaneseEntryList = allPolishJapaneseEntriesForEntry;
 		}		
-		
-		// dokonczyc
-		int fixme = 1;		
 	}
 	
 	private List<KanjiKanaPair> getKanjiKanaPairList(Entry entry) {
@@ -1437,5 +1522,11 @@ public class Dictionary2Helper {
 		public String toString() {
 			return "KanjiKanaPair [kanji=" + kanji + ", kana=" + kana + "]";
 		}
+	}
+	
+	private static class EntryAdditionalData {
+		
+		private List<PolishJapaneseEntry> oldPolishJapaneseEntryList;
+				
 	}
 }

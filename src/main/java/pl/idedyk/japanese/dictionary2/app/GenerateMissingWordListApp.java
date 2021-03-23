@@ -131,7 +131,11 @@ public class GenerateMissingWordListApp {
 		int fixme3 = 1;
 		
 		// zapisanie wyniku pod postacia csv
-		dictionaryHelper.saveEntryListAsHumanCsv("input/word-new-test.csv", result);
+		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
+		
+		saveEntryListAsHumanCsvConfig.addOldPolishTranslates = true;
+		
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word-new-test.csv", result);
 		
 		// zakonczenie
 		dictionaryHelper.close();
