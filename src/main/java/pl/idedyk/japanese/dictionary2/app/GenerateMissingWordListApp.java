@@ -29,8 +29,9 @@ public class GenerateMissingWordListApp {
 		// opcje
 		Options options = new Options();
 		
-		options.addOption("cijo", "check-in-jisho-org", false, "Only kanji");		
-		options.addOption("f", "file", true, "Word list file name");		
+		options.addOption("cijo", "check-in-jisho-org", false, "Only kanji");			
+		options.addOption("f", "file", true, "Word list file name");
+		options.addOption("awdeiod", "add-words-doesnt-exist-in-old-dictionary", false, "Only kanji");
 		options.addOption("h", "help", false, "Help");
 		
 		// parsowanie opcji		
@@ -58,6 +59,7 @@ public class GenerateMissingWordListApp {
 		String wordListFileName = null;
 		
 		boolean checkInJishoOrg = false;
+		boolean addWordsDoesntExistInOldDictionary = false;
 		
 		//
 		
@@ -67,6 +69,10 @@ public class GenerateMissingWordListApp {
 		
 		if (commandLine.hasOption("check-in-jisho-org") == true) {
 			checkInJishoOrg = true;
+		}
+		
+		if (commandLine.hasOption("add-words-doesnt-exist-in-old-dictionary") == true) {
+			addWordsDoesntExistInOldDictionary = true;
 		}
 		
 		// plik nie zostal podany		
@@ -129,6 +135,15 @@ public class GenerateMissingWordListApp {
 					
 					if (entryFromPolishDictionary != null) { // taki wpis juz jest
 						continue;
+					}
+					
+					if (addWordsDoesntExistInOldDictionary == true) { // sprawdzamy, czy takie slowa juz wystepuje w starym slowniku, jesli wystepuje nie dodajemy go
+						
+						boolean existsInOldPolishJapaneseDictionary = dictionaryHelper.isExistsInOldPolishJapaneseDictionary(entry);
+						
+						if (existsInOldPolishJapaneseDictionary == true) {
+							continue;
+						}
 					}
 										
 					// uzupelnienie o puste polskie tlumaczenie

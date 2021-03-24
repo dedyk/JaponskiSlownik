@@ -12,7 +12,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
-import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 import javax.xml.XMLConstants;
@@ -1329,6 +1328,36 @@ public class Dictionary2Helper {
 
 	public void fillDataFromOldPolishJapaneseDictionary(Entry entry) throws Exception {
 		
+		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry);		
+		
+		if (allPolishJapaneseEntriesForEntry.size() > 0) { // jezeli dany wpis juz jest w starym slowniku, mozemy przetworzyc te dane
+			
+			// aktualizacja romaji
+			List<ReadingInfo> entryReadingInfoList = entry.getReadingInfoList();
+			
+			for (ReadingInfo readingInfo : entryReadingInfoList) {
+				
+				PolishJapaneseEntry polishJapaneseEntryForReadingKana = allPolishJapaneseEntriesForEntry.stream().filter((p) -> p.getKana().equals(readingInfo.getKana().getValue())).findFirst().get();
+				
+				readingInfo.getKana().setKanaType(ReadingInfoKanaType.fromValue(polishJapaneseEntryForReadingKana.getWordType().name()));
+				readingInfo.getKana().setRomaji(polishJapaneseEntryForReadingKana.getRomaji());
+			}
+						
+			// istniejace tlumaczenie (przygotowanie danych)
+			EntryAdditionalData entryAdditionalData = jmdictEntryAdditionalDataMap.get(entry.getEntryId());
+			
+			if (entryAdditionalData == null) {
+				entryAdditionalData = new EntryAdditionalData();
+				
+				jmdictEntryAdditionalDataMap.put(entry.getEntryId(), entryAdditionalData);
+			}
+			
+			entryAdditionalData.oldPolishJapaneseEntryList = allPolishJapaneseEntriesForEntry;
+		}		
+	}
+	
+	private List<PolishJapaneseEntry> getPolishJapaneseEntryListFromOldDictionary(Entry entry) throws Exception {
+		
 		// wczytanie starego slownika i sche'owanie go		
 		Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache = oldWordGeneratorHelper.getPolishJapaneseEntriesCache();
 		
@@ -1389,31 +1418,21 @@ public class Dictionary2Helper {
 			
 			allPolishJapaneseEntriesForEntry.add(polishJapaneseEntryForKanjiKanaPair);
 		}
+
+		return allPolishJapaneseEntriesForEntry;
+	}
+	
+	public boolean isExistsInOldPolishJapaneseDictionary(Entry entry) throws Exception {
 		
-		if (allPolishJapaneseEntriesForEntry.size() > 0) { // jezeli dany wpis juz jest w starym slowniku, mozemy przetworzyc te dane
+		List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry);
+		
+		if (polishJapaneseEntryListFromOldDictionary != null && polishJapaneseEntryListFromOldDictionary.size() > 0) {
+			return true;
 			
-			// aktualizacja romaji
-			List<ReadingInfo> entryReadingInfoList = entry.getReadingInfoList();
+		} else {
+			return false;
 			
-			for (ReadingInfo readingInfo : entryReadingInfoList) {
-				
-				PolishJapaneseEntry polishJapaneseEntryForReadingKana = allPolishJapaneseEntriesForEntry.stream().filter((p) -> p.getKana().equals(readingInfo.getKana().getValue())).findFirst().get();
-				
-				readingInfo.getKana().setKanaType(ReadingInfoKanaType.fromValue(polishJapaneseEntryForReadingKana.getWordType().name()));
-				readingInfo.getKana().setRomaji(polishJapaneseEntryForReadingKana.getRomaji());
-			}
-						
-			// istniejace tlumaczenie (przygotowanie danych)
-			EntryAdditionalData entryAdditionalData = jmdictEntryAdditionalDataMap.get(entry.getEntryId());
-			
-			if (entryAdditionalData == null) {
-				entryAdditionalData = new EntryAdditionalData();
-				
-				jmdictEntryAdditionalDataMap.put(entry.getEntryId(), entryAdditionalData);
-			}
-			
-			entryAdditionalData.oldPolishJapaneseEntryList = allPolishJapaneseEntriesForEntry;
-		}		
+		}
 	}
 	
 	private List<KanjiKanaPair> getKanjiKanaPairList(Entry entry) {
