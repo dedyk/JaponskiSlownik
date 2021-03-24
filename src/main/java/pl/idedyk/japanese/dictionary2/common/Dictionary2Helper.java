@@ -1357,7 +1357,10 @@ public class Dictionary2Helper {
 
 	public void fillDataFromOldPolishJapaneseDictionary(Entry entry) throws Exception {
 		
-		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry);		
+		// generowanie wszystkich kanji i ich czytan
+		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+		
+		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry);		
 		
 		if (allPolishJapaneseEntriesForEntry.size() > 0) { // jezeli dany wpis juz jest w starym slowniku, mozemy przetworzyc te dane
 			
@@ -1385,19 +1388,16 @@ public class Dictionary2Helper {
 		}		
 	}
 	
-	private List<PolishJapaneseEntry> getPolishJapaneseEntryListFromOldDictionary(Entry entry) throws Exception {
+	private List<PolishJapaneseEntry> getPolishJapaneseEntryListFromOldDictionary(Entry entry, List<KanjiKanaPair> kanjiKanaPairListforEntry) throws Exception {
 		
 		// wczytanie starego slownika i sche'owanie go		
 		Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache = oldWordGeneratorHelper.getPolishJapaneseEntriesCache();
 		
 		//
 				
-		// generowanie wszystkich kanji i ich czytan
-		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
-		
 		// szukamy wszystkich slow ze starego slownika
 		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = new ArrayList<>();		
-		
+				
 		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
 			
 			// szukamy slowa ze starego slownika
@@ -1453,7 +1453,10 @@ public class Dictionary2Helper {
 		
 	public boolean isExistsInOldPolishJapaneseDictionary(Entry entry) throws Exception {
 		
-		List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry);
+		// generowanie wszystkich kanji i ich czytan
+		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+		
+		List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry);
 		
 		if (polishJapaneseEntryListFromOldDictionary != null && polishJapaneseEntryListFromOldDictionary.size() > 0) {
 			return true;
@@ -1549,9 +1552,71 @@ public class Dictionary2Helper {
 			}
 		}
 		
-		//
+		// dopasowanie listy sense do danego kanji i kana
+		List<Sense> entrySenseList = entry.getSenseList();
+				
+		for (KanjiKanaPair kanjiKanaPair : result) {
+			
+			String kanji = kanjiKanaPair.kanji;
+			String kana = kanjiKanaPair.kana;
+			
+			// chodzimy po wszystkich sense i sprawdzamy, czy mozemy je dodac do naszej pary kanji i kana
+			for (Sense sense : entrySenseList) {
+				
+				boolean isKanjiRestricted = true;
+				
+				if (sense.getRestrictedToKanjiList().size() == 0) {
+					isKanjiRestricted = false;
+					
+				} else {
+					if (sense.getRestrictedToKanjiList().contains(kanji) == true) {
+						isKanjiRestricted = false;
+					}
+				}
+				
+				if (isKanjiRestricted == true) {
+					continue; // ten sens nie bedzie wchodzil w sklad tej pary
+				}	
+				
+				boolean isKanaRestricted = true;
+				
+				if (sense.getRestrictedToKanaList().size() == 0) {
+					isKanaRestricted = false;
+					
+				} else {
+					if (sense.getRestrictedToKanaList().contains(kana) == true) {
+						isKanaRestricted = false;
+					}
+				}
+				
+				if (isKanaRestricted == true) {
+					continue; // ten sens nie bedzie wchodzil w sklad tej pary
+				}
+				
+				// dodajemy ten sens do danej pary				
+				kanjiKanaPair.getSenseList().add(sense);
+			}
+		}
 		
 		return result;
+	}
+	
+	public void updatePolishJapaneseEntryInOldDictionary(Entry entry) throws Exception {
+
+		// generowanie wszystkich kanji i ich czytan
+		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+		
+		// pobieramy liste 
+		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry);		
+		
+		
+
+		
+		// dokonczyc !!!!!!!!!!1
+		int fixme = 1;
+		
+		// test generowania GroupId
+		int fixme2 = 1;
 	}
 	
 	private static class KanjiKanaPair {
@@ -1559,10 +1624,16 @@ public class Dictionary2Helper {
 		private String kanji;
 		
 		private String kana;
+		
+		private List<Sense> senseList = new ArrayList<>();
 
 		public KanjiKanaPair(String kanji, String kana) {
 			this.kanji = kanji;
 			this.kana = kana;
+		}
+
+		public List<Sense> getSenseList() {
+			return senseList;
 		}
 
 		@Override
