@@ -1179,7 +1179,7 @@ public class Dictionary2Helper {
 
 			if (glossEngList.size() == 0) {
 				continue;
-			}
+			}			
 			
 			List<Gloss> newPolishGlossList = new ArrayList<>();
 			
@@ -1201,6 +1201,19 @@ public class Dictionary2Helper {
 			newPolishGlossStart2.setValue("UZUPEŁNIENIE");
 
 			newPolishGlossList.add(newPolishGlossStart2);
+			
+			boolean glossTypeAnyExists = glossEngList.stream().anyMatch(gloss -> (gloss.getGType() != null));
+			
+			if (glossTypeAnyExists == true) {
+				
+				Gloss newPolishGlossTypeInfo = new Gloss();
+				
+				newPolishGlossTypeInfo.setLang("pol");
+				newPolishGlossTypeInfo.setGType(null);
+				newPolishGlossTypeInfo.setValue("!!! UWAGA NA DODATKOWY TYP !!!");
+
+				newPolishGlossList.add(newPolishGlossTypeInfo);
+			}
 			
 			//
 			
@@ -1225,7 +1238,7 @@ public class Dictionary2Helper {
 				
 				newPolishGlossList.add(newPolishGloss);				
 			}
-			
+						
 			//
 			
 			glossList.addAll(newPolishGlossList);

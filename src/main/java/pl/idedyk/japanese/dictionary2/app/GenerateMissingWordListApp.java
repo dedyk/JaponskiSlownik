@@ -151,10 +151,7 @@ public class GenerateMissingWordListApp {
 					
 					// pobranie ze starego slownika interesujacych danych (np. romaji)
 					dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry);
-					
-					// uszkodzenie romaji, aby zwracało uwage
-					//dictionaryHelper.breakRomaji(entry);
-					
+										
 					// dodanie do listy wynikowej
 					result.add(entry);
 				}				
