@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary2.app;
 
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -11,6 +12,9 @@ import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 
+import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
+import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
+import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector.JapaneseWord;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
@@ -53,8 +57,7 @@ public class GenerateMissingWordListApp {
 		
 		String wordListFileName = null;
 		
-		int fixme = 1;
-		boolean checkInJishoOrg = true;
+		boolean checkInJishoOrg = false;
 		
 		//
 		
@@ -84,15 +87,33 @@ public class GenerateMissingWordListApp {
 		
 		Set<Integer> alreadyMetEntrySet = new TreeSet<Integer>();
 		
+		// konektor do jisho.org
+		JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
+		
+		// rozne listy
+		List<String> foundWordSearchList = new ArrayList<>();
+		List<String> notFoundJishoFoundWordSearchList = new ArrayList<>();
+		List<String> notFoundWordSearchList = new ArrayList<>();
+		
 		// lista wynikowa
 		List<Entry> result = new ArrayList<>();
 		
 		// wyszukiwanie slow
-		for (String currentWord : wordList) {
+		for (int currentWordIdx = 0; currentWordIdx < wordList.size(); ++currentWordIdx) {
+			
+			float percent = 100.0f * ((currentWordIdx + 1) / (float)wordList.size());
+			
+			System.out.println("Progress: " + (currentWordIdx + 1) + " / " + wordList.size() + " (" + percent + "%)");
+
+			//
+			
+			String currentWord = wordList.get(currentWordIdx);
 			
 			List<Entry> jmdictResult = dictionaryHelper.findInJMdict(currentWord);
 			
 			if (jmdictResult.size() > 0) { // cos zostalo odnalezione
+				
+				foundWordSearchList.add(currentWord);
 								
 				for (Entry entry : jmdictResult) {
 					
@@ -122,20 +143,42 @@ public class GenerateMissingWordListApp {
 				
 			} else { // nic nie znaleziono
 				
-				int fixme2 = 1;
-				
+				// ewentualnie sprawdzamy w jisho
+				if (checkInJishoOrg == true) {
+					
+					System.out.println("Checking in jisho.org: " + currentWord);
+					List<JapaneseWord> jishoJapaneseWordList = jishoOrgConnector.getJapaneseWords(currentWord);
+					
+					if (jishoJapaneseWordList.size() > 0) {
+						notFoundJishoFoundWordSearchList.add(currentWord);
+						
+					} else {
+						notFoundWordSearchList.add(currentWord);	
+					}
+					
+				} else {
+					notFoundWordSearchList.add(currentWord);
+				}
 			}
 		}
-		
-		// postep
-		int fixme3 = 1;
-		
+				
 		// zapisanie wyniku pod postacia csv
 		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
 		
 		saveEntryListAsHumanCsvConfig.addOldPolishTranslates = true;
 		
 		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word-new-test.csv", result);
+		
+		// zapisywanie list
+		FileWriter searchResultFileWriter = new FileWriter(wordListFileName + "-new");
+		
+		searchResultFileWriter.write(Utils.convertListToString(foundWordSearchList));
+		searchResultFileWriter.write("\n---------\n");
+		searchResultFileWriter.write(Utils.convertListToString(notFoundJishoFoundWordSearchList));
+		searchResultFileWriter.write("\n---------\n");
+		searchResultFileWriter.write(Utils.convertListToString(notFoundWordSearchList));
+		
+		searchResultFileWriter.close();
 		
 		// zakonczenie
 		dictionaryHelper.close();
