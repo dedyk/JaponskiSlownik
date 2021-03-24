@@ -131,7 +131,7 @@ public class GenerateMissingWordListApp {
 					}
 					
 					// sprawdzenie, czy takie slowo juz wystepuje w moim slowniku
-					Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(entry);
+					Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(entry.getEntryId());
 					
 					if (entryFromPolishDictionary != null) { // taki wpis juz jest
 						continue;
@@ -151,6 +151,9 @@ public class GenerateMissingWordListApp {
 					
 					// pobranie ze starego slownika interesujacych danych (np. romaji)
 					dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry);
+					
+					// uszkodzenie romaji, aby zwracało uwage
+					//dictionaryHelper.breakRomaji(entry);
 					
 					// dodanie do listy wynikowej
 					result.add(entry);
@@ -181,6 +184,7 @@ public class GenerateMissingWordListApp {
 		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
 		
 		saveEntryListAsHumanCsvConfig.addOldPolishTranslates = true;
+		saveEntryListAsHumanCsvConfig.markRomaji = true;
 		
 		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word-new-test.csv", result);
 		

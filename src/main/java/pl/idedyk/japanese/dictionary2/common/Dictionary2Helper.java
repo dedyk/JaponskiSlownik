@@ -607,7 +607,7 @@ public class Dictionary2Helper {
 		return result;
 	}
 	
-	public void saveJMdictAsXml(JMdict newJMdict, String fileNane) throws Exception {
+	public void saveJMdictAsXml(JMdict newJMdict, String fileName) throws Exception {
 		
 		JAXBContext jaxbContext = JAXBContext.newInstance(JMdict.class);              
 
@@ -618,7 +618,7 @@ public class Dictionary2Helper {
 
 		//
 		
-		jaxbMarshaller.marshal(newJMdict, new File(fileNane));
+		jaxbMarshaller.marshal(newJMdict, new File(fileName));
 	}
 	
 	//
@@ -641,6 +641,8 @@ public class Dictionary2Helper {
 	public static class SaveEntryListAsHumanCsvConfig {
 		
 		public boolean addOldPolishTranslates = false;
+		
+		public boolean markRomaji = false;
 		
 	}
 	
@@ -795,7 +797,11 @@ public class Dictionary2Helper {
 							romaji = "FIXME";
 						}
 					}				
-				}			
+				}
+				
+				if (config.markRomaji == true) {
+					romaji = romaji + " --- !!! SPRAWDŹ !!!";
+				}
 				
 				csvWriter.write(romaji);
 				
@@ -1184,6 +1190,7 @@ public class Dictionary2Helper {
 			newPolishGlossStart1.setValue("-");
 
 			newPolishGlossList.add(newPolishGlossStart1);
+			newPolishGlossList.add(newPolishGlossStart1);
 			
 			//
 			
@@ -1242,6 +1249,7 @@ public class Dictionary2Helper {
 			senseAdditionalInfoStart1.setLang("pol");
 			senseAdditionalInfoStart1.setValue("-");
 			
+			newAdditionalInfoPolishList.add(senseAdditionalInfoStart1);
 			newAdditionalInfoPolishList.add(senseAdditionalInfoStart1);
 			
 			SenseAdditionalInfo senseAdditionalInfoStart2 = new SenseAdditionalInfo();
@@ -1319,11 +1327,19 @@ public class Dictionary2Helper {
 		}		
 	}
 
-	public Entry getEntryFromPolishDictionary(Entry entry) throws Exception {
+	public Entry getEntryFromPolishDictionary(Integer entryId) throws Exception {
 		
 		cachePolishDictionary();
 		
-		return polishDictionaryEntryListCache.get(entry.getEntryId());
+		return polishDictionaryEntryListCache.get(entryId);
+	}
+	
+	public List<JMdict.Entry> getAllPolishDictionaryEntryList() throws Exception {
+		
+		// wczytywanie slownika
+		readPolishDictionary();
+		
+		return polishDictionaryEntryList;
 	}
 
 	public void fillDataFromOldPolishJapaneseDictionary(Entry entry) throws Exception {
@@ -1421,7 +1437,7 @@ public class Dictionary2Helper {
 
 		return allPolishJapaneseEntriesForEntry;
 	}
-	
+		
 	public boolean isExistsInOldPolishJapaneseDictionary(Entry entry) throws Exception {
 		
 		List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry);
