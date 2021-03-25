@@ -19,5 +19,9 @@ public class UpdateOldPolishJapaneseDictionary {
 		for (Entry entry : allPolishDictionaryEntryList) {
 			dictionaryHelper.updatePolishJapaneseEntryInOldDictionary(entry);
 		}
+		
+		int fixme = 1;
+		// walidacja, np. romaji, duplikat w ramach jednego sense
+		// inne walidacje, sprawdz w starym jakie
 	}
 }
