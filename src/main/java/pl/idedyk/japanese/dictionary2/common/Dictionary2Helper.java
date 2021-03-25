@@ -1609,8 +1609,17 @@ public class Dictionary2Helper {
 		// pobieramy liste 
 		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry);		
 		
-		
+		int fixme3 = 1; // co bierzemy pod uwage
+		// field
+		// misc
+		// senseAdditionalInfo
+		// languageSource
+		// dialect
+		// gloss
+		// gloss[pol]/gType
+		// gloss[pol]/value
 
+		// aktualizacja romaji
 		
 		// dokonczyc !!!!!!!!!!1
 		int fixme = 1;
