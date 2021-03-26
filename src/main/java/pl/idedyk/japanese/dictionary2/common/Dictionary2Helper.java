@@ -644,6 +644,8 @@ public class Dictionary2Helper {
 		
 		public boolean markRomaji = false;
 		
+		public boolean shiftCells = false;
+		
 	}
 	
 	private enum EntryHumanCsvFieldType {
@@ -670,6 +672,10 @@ public class Dictionary2Helper {
 
 		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
 			
+			if (config.shiftCells == true) {
+				csvWriter.write("");
+			}
+			
 			csvWriter.write(EntryHumanCsvFieldType.BEGIN.name());		
 			csvWriter.write(String.valueOf(entry.getEntryId()));
 			csvWriter.endRecord();
@@ -690,6 +696,10 @@ public class Dictionary2Helper {
 	private class EntryPartConverterEnd {
 
 		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
+			
+			if (config.shiftCells == true) {
+				csvWriter.write("");
+			}
 			
 			csvWriter.write(EntryHumanCsvFieldType.END.name());
 			csvWriter.write(String.valueOf(entry.getEntryId()));
@@ -717,6 +727,10 @@ public class Dictionary2Helper {
 			List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
 			
 			for (KanjiInfo kanjiInfo : kanjiInfoList) {
+				
+				if (config.shiftCells == true) {
+					csvWriter.write("");
+				}
 
 				csvWriter.write(EntryHumanCsvFieldType.KANJI.name());		
 				csvWriter.write(String.valueOf(entry.getEntryId()));
@@ -770,6 +784,10 @@ public class Dictionary2Helper {
 			List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
 			
 			for (ReadingInfo readingInfo : readingInfoList) {
+				
+				if (config.shiftCells == true) {
+					csvWriter.write("");
+				}
 				
 				csvWriter.write(EntryHumanCsvFieldType.READING.name());		
 				csvWriter.write(String.valueOf(entry.getEntryId()));
@@ -877,6 +895,10 @@ public class Dictionary2Helper {
 					continue;
 				}
 				
+				if (config.shiftCells == true) {
+					csvWriter.write("");
+				}
+				
 				// czesc wspolna dla wszystkich jezykow
 				csvWriter.write(EntryHumanCsvFieldType.SENSE_COMMON.name());		
 				csvWriter.write(String.valueOf(entry.getEntryId()));
@@ -938,6 +960,10 @@ public class Dictionary2Helper {
 			
 			if (glossLangList.size() == 0) {
 				return;
+			}
+			
+			if (config.shiftCells == true) {
+				csvWriter.write("");
 			}
 			
 			csvWriter.write(entryHumanCsvFieldType.name());		
