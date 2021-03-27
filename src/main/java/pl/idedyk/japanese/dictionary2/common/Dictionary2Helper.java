@@ -1758,14 +1758,77 @@ public class Dictionary2Helper {
 					String currentPolGlossType = translateToPolishGlossType(currentPolGloss.getGType());
 					String currentPolGlossValue = currentPolGloss.getValue();
 					
+					//
+					
+					List<String> currentPolGlossPolishTranslate = new ArrayList<>();
+					
+					// dodajemy tlumaczenie
+					currentPolGlossPolishTranslate.add(currentPolGlossValue);
+					
+					// podtyp tlumaczenia
+					if (currentPolGlossType != null) {
+						currentPolGlossPolishTranslate.add(currentPolGlossType);
+					}
+					
+					// dziedzina
+					if (fieldEnumListUniqueForCurrentSense.size() > 0) {
+						currentPolGlossPolishTranslate.addAll(translateToPolishFieldEnumList(fieldEnumListUniqueForCurrentSense));						
+					}
+					
+					// rozne informacje
+					if (miscEnumListUniqueForCurrentSense.size() > 0) {
+						currentPolGlossPolishTranslate.addAll(translateToPolishMiscEnumList(miscEnumListUniqueForCurrentSense));
+					}
+					
+					// dialekt
+					if (dialectEnumListUniqueForCurrentSense.size() > 0) {
+						currentPolGlossPolishTranslate.addAll(translateToPolishDialectEnumList(dialectEnumListUniqueForCurrentSense));
+					}
+					
+					// jezyk zrodlowy
+					if (languageSourceListUniqueForCurrentSense.size() > 0) {
+						currentPolGlossPolishTranslate.addAll(languageSourceListUniqueForCurrentSense);
+					}
+					
 					// generowanie tlumaczenia dla slowka
-					StringBuffer currentPolGlossPolishTranslate = new StringBuffer();
+					StringBuffer currentPolGlossPolishTranslateStringBuffer = new StringBuffer();
+					
+					for (int idx = 0; idx < currentPolGlossPolishTranslate.size(); ++idx) {
+						
+						String currentPolGlossPolishTranslateElement = currentPolGlossPolishTranslate.get(idx);
+						
+						if (idx == 0) {
+							currentPolGlossPolishTranslateStringBuffer.append(currentPolGlossPolishTranslateElement);
+							
+						} else if (idx == 1) {
+							currentPolGlossPolishTranslateStringBuffer.append(" (");
+							currentPolGlossPolishTranslateStringBuffer.append(currentPolGlossPolishTranslateElement);
+							
+						} else if (idx >= 2) {
+							currentPolGlossPolishTranslateStringBuffer.append("; ");
+							currentPolGlossPolishTranslateStringBuffer.append(currentPolGlossPolishTranslateElement);
+							
+						}
+						
+						if (idx != 0 && idx == currentPolGlossPolishTranslate.size() - 1) {
+							currentPolGlossPolishTranslateStringBuffer.append(")");
+						}
+					}
+					
+					System.out.println(currentPolGlossPolishTranslateStringBuffer.toString());
+					
+					/*
+					
+					
+					
+					 
 					
 					currentPolGlossPolishTranslate.append(currentPolGlossValue);
 					
 					//
 					
-					System.out.println(currentPolGlossPolishTranslate.toString());
+					
+					*/
 				}
 			}
 			
@@ -1773,6 +1836,11 @@ public class Dictionary2Helper {
 			
 			// informacje dodatkowe
 			int fixme3 = 1; // !!!!!!!!!!!
+			
+			// czesc wspolna
+			
+			// informacje dodatkowe (do czesci wspolnej) ????
+			
 			/*
 			List<SenseAdditionalInfo> additionalPolInfoList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
 			
@@ -1844,6 +1912,12 @@ public class Dictionary2Helper {
 				
 			case ABBREVIATION:
 				result.add("skrót"); break;
+				
+			case COLLOQUIALISM:
+				result.add("kolokwializm"); break;
+				
+			case DEROGATORY:
+				result.add("poniżająco"); break;
 				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
