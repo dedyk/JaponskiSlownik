@@ -8,6 +8,7 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -1643,22 +1644,64 @@ public class Dictionary2Helper {
 			List<Sense> kanjiKanaPairSenseList = kanjiKanaPair.getSenseList();
 			
 			int fixme = 1;
-			// czesc wspolna
+			// czesc wspolna	
 			
+			Collection<FieldEnum> fieldCommonList = null;
+			Collection<MiscEnum> miscCommonList = null;
+			Collection<DialectEnum> dialectCommonList = null;
+						
 			// generowanie wspolnej czesci dla wszystkich znaczen
 			for (Sense currentSense : kanjiKanaPairSenseList) {
+
+				if (fieldCommonList == null) {
+					fieldCommonList = currentSense.getFieldList();
+					
+				} else {
+					fieldCommonList = CollectionUtils.intersection(fieldCommonList, currentSense.getFieldList());
+				}
 				
-				List<FieldEnum> fieldList = currentSense.getFieldList();
-				List<MiscEnum> miscList = currentSense.getMiscList();
+				//
 				
-				List<LanguageSource> languageSourceList = currentSense.getLanguageSourceList();
-				List<DialectEnum> dialectList = currentSense.getDialectList();
+				if (miscCommonList == null) {
+					miscCommonList = currentSense.getMiscList();
+					
+				} else {
+					miscCommonList = CollectionUtils.intersection(miscCommonList, currentSense.getMiscList());
+				}
 				
-				List<SenseAdditionalInfo> additionalPolInfoList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
-				List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+				//
 				
-				//CollectionUtils.intersection(arg0, arg1)
+				if (dialectCommonList == null) {
+					dialectCommonList = currentSense.getDialectList();
+					
+				} else {
+					dialectCommonList = CollectionUtils.intersection(dialectCommonList, currentSense.getDialectList());
+				}				
 			}
+			
+			// lista wspolnych przetlumaczonych na jezyk polski pol dla wszystkich znaczen
+			List<String> commonPolishSenseFieldsList = new ArrayList<>();
+			
+			// dziedzina slowa
+			List<String> translateToPolishCommonFieldEnumList = translateToPolishFieldEnumList(fieldCommonList);
+			
+			// rozne informacje
+			List<String> translateToPolishCommonMiscEnumList = translateToPolishMiscEnumList(miscCommonList);
+			
+			// dialekt
+			List<String> translateToPolishCommonDialectEnumList = translateToPolishDialectEnumList(dialectCommonList);
+			
+			//
+			
+			/*
+			List<LanguageSource> languageSourceList = currentSense.getLanguageSourceList();
+			List<SenseAdditionalInfo> additionalPolInfoList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+			List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+			*/
+			
+			int a = 0;
+			
+			a++;
 			
 		}
 
@@ -1682,6 +1725,76 @@ public class Dictionary2Helper {
 		// test generowania GroupId
 		int fixme2 = 1;
 	}
+	
+	private List<String> translateToPolishFieldEnumList(Collection<FieldEnum> fieldEnumList) {
+		
+		List<String> result = new ArrayList<>();
+
+		for (FieldEnum fieldEnum : fieldEnumList) {
+			
+			switch (fieldEnum) {
+			
+			case COMPUTING:
+				result.add("informatyka"); break;
+			
+			default:
+				throw new RuntimeException("Unknown field enum: " + fieldEnum);
+			
+			}
+		}
+		
+		return result;
+	}
+
+	private List<String> translateToPolishMiscEnumList(Collection<MiscEnum> miscEnumList) {
+		
+		List<String> result = new ArrayList<>();
+
+		for (MiscEnum miscEnum : miscEnumList) {
+			
+			switch (miscEnum) {
+			
+			case WORD_USUALLY_WRITTEN_USING_KANA_ALONE:
+				result.add("pisanie zwykle z użyciem kana"); break;			
+			
+			case OBSCURE_TERM:
+				result.add("mało znane słowo"); break;
+				
+			case YOJIJUKUGO:
+				result.add("słowo składające się z czterech znaków"); break;
+				
+			case ABBREVIATION:
+				result.add("skrót"); break;
+				
+			default:
+				throw new RuntimeException("Unknown misc enum: " + miscEnum);
+			
+			}
+		}
+		
+		return result;
+	}
+	
+	private List<String> translateToPolishDialectEnumList(Collection<DialectEnum> dialectEnumList) {
+		
+		List<String> result = new ArrayList<>();
+
+		for (DialectEnum dialectEnum : dialectEnumList) {
+			
+			switch (dialectEnum) {
+			
+			case KANSAI_BEN:
+				result.add("dialekt Kansai"); break;
+				
+			default:
+				throw new RuntimeException("Unknown dialect enum: " + dialectEnum);
+			
+			}
+		}
+		
+		return result;
+	}
+
 	
 	private static class KanjiKanaPair {
 		
