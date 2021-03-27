@@ -1676,6 +1676,7 @@ public class Dictionary2Helper {
 			Collection<MiscEnum> miscCommonList = null;
 			Collection<DialectEnum> dialectCommonList = null;
 			Collection<String> languageSourceCommonList = null;
+			Collection<String> additionalInfoCommonList = null;
 			
 			// generowanie wspolnej czesci dla wszystkich znaczen
 			for (Sense currentSense : kanjiKanaPairSenseList) {
@@ -1713,41 +1714,40 @@ public class Dictionary2Helper {
 				} else {
 					languageSourceCommonList = CollectionUtils.intersection(languageSourceCommonList, translateToPolishLanguageSourceList(currentSense.getLanguageSourceList()));
 				}
+				
+				//
+				
+				List<SenseAdditionalInfo> additionalPolInfoList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+				
+				if (additionalInfoCommonList == null) {
+					additionalInfoCommonList = translateToPolishSenseAdditionalInfoList(additionalPolInfoList);
+					
+				} else {
+					additionalInfoCommonList = CollectionUtils.intersection(additionalInfoCommonList, translateToPolishSenseAdditionalInfoList(additionalPolInfoList));
+				}
 			}
-			
-			int fixme4 = 1; // !!!!!!!!!!!!!!1
-			/*
-			// lista wspolnych przetlumaczonych na jezyk polski pol dla wszystkich znaczen
-			List<String> commonPolishSenseFieldsList = new ArrayList<>();
-			
-			// dziedzina slowa
-			List<String> translateToPolishCommonFieldEnumList = translateToPolishFieldEnumList(fieldCommonList);
-			
-			// rozne informacje
-			List<String> translateToPolishCommonMiscEnumList = translateToPolishMiscEnumList(miscCommonList);
-			
-			// dialekt
-			List<String> translateToPolishCommonDialectEnumList = translateToPolishDialectEnumList(dialectCommonList);
-			
-			// jezyk zrodlowy
-			// languageSourceCommonList.getClass();
-			*/
-			
+						
 			// generowanie docelowego tlumaczenia i info dla starej pozycji w starym slowniku
-			List<String> polishTranslateList = new ArrayList<>();			
+			List<String> newPolishTranslateList = new ArrayList<>();			
 			
 			for (Sense currentSense : kanjiKanaPairSenseList) {
+				
+				List<SenseAdditionalInfo> additionalPolInfoList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+				
+				//
 
 				List<FieldEnum> currentSenseFieldList = currentSense.getFieldList();
 				List<MiscEnum> currentSenseMiscList = currentSense.getMiscList();
 				List<DialectEnum> currentSenseDialectList = currentSense.getDialectList();
 				List<String> currentSenseLanguageSourceList = translateToPolishLanguageSourceList(currentSense.getLanguageSourceList());
+				List<String> currentSenseAdditionalInfoList = translateToPolishSenseAdditionalInfoList(additionalPolInfoList);
 				
 				// wyliczenie roznic miedzy obecnym znaczeniem, a czescia wspolna dla wszystkich znaczen
 				Collection<FieldEnum> fieldEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseFieldList, fieldCommonList);
 				Collection<MiscEnum> miscEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseMiscList, miscCommonList);
 				Collection<DialectEnum> dialectEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseDialectList, dialectCommonList);
 				Collection<String> languageSourceListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseLanguageSourceList, languageSourceCommonList);
+				Collection<String> senseAdditionalInfoListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseAdditionalInfoList, additionalInfoCommonList);
 				
 				//
 				
@@ -1785,6 +1785,11 @@ public class Dictionary2Helper {
 						currentPolGlossPolishTranslate.addAll(translateToPolishDialectEnumList(dialectEnumListUniqueForCurrentSense));
 					}
 					
+					// informacje dodatkowe dla znaczenia
+					if (senseAdditionalInfoListUniqueForCurrentSense.size() > 0) {
+						currentPolGlossPolishTranslate.addAll(senseAdditionalInfoListUniqueForCurrentSense);
+					}
+					
 					// jezyk zrodlowy
 					if (languageSourceListUniqueForCurrentSense.size() > 0) {
 						currentPolGlossPolishTranslate.addAll(languageSourceListUniqueForCurrentSense);
@@ -1815,20 +1820,11 @@ public class Dictionary2Helper {
 						}
 					}
 					
-					System.out.println(currentPolGlossPolishTranslateStringBuffer.toString());
-					
-					/*
-					
-					
-					
-					 
-					
-					currentPolGlossPolishTranslate.append(currentPolGlossValue);
-					
-					//
-					
-					
-					*/
+					// nowa pozycja w tlumaczeniu
+					newPolishTranslateList.add(currentPolGlossPolishTranslateStringBuffer.toString());
+
+					// informacje dodatkowe !!!!!!!!!1
+					int fixme5 = 1;
 				}
 			}
 			
@@ -1842,7 +1838,7 @@ public class Dictionary2Helper {
 			// informacje dodatkowe (do czesci wspolnej) ????
 			
 			/*
-			List<SenseAdditionalInfo> additionalPolInfoList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+			
 			
 			*/
 			
@@ -1962,6 +1958,18 @@ public class Dictionary2Helper {
 		
 		return result;
 	}
+	
+	private List<String> translateToPolishSenseAdditionalInfoList(List<SenseAdditionalInfo> additionalPolInfoList) {
+				
+		List<String> result = new ArrayList<>();
+		
+		for (SenseAdditionalInfo senseAdditionalInfo : additionalPolInfoList) {
+			result.add(senseAdditionalInfo.getValue());
+		}
+		
+		return result;
+	}
+
 	
 	private String translateToPolishLanguageCode(String language) {
 		
