@@ -23,6 +23,7 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.core.SimpleAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
@@ -1631,9 +1632,37 @@ public class Dictionary2Helper {
 
 		// generowanie wszystkich kanji i ich czytan
 		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
-		
+				
 		// pobieramy liste 
 		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry);		
+
+		// chodzenie po wszystkich kombinacjach kanji i kana
+		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
+			
+			// pobieranie wszystkich znaczen
+			List<Sense> kanjiKanaPairSenseList = kanjiKanaPair.getSenseList();
+			
+			int fixme = 1;
+			// czesc wspolna
+			
+			// generowanie wspolnej czesci dla wszystkich znaczen
+			for (Sense currentSense : kanjiKanaPairSenseList) {
+				
+				List<FieldEnum> fieldList = currentSense.getFieldList();
+				List<MiscEnum> miscList = currentSense.getMiscList();
+				
+				List<LanguageSource> languageSourceList = currentSense.getLanguageSourceList();
+				List<DialectEnum> dialectList = currentSense.getDialectList();
+				
+				List<SenseAdditionalInfo> additionalPolInfoList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+				List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+				
+				//CollectionUtils.intersection(arg0, arg1)
+			}
+			
+		}
+
+		
 		
 		int fixme3 = 1; // co bierzemy pod uwage
 		// field
