@@ -1689,6 +1689,8 @@ public class Dictionary2Helper {
 				}
 			}
 			
+			int fixme4 = 1; // !!!!!!!!!!!!!!1
+			/*
 			// lista wspolnych przetlumaczonych na jezyk polski pol dla wszystkich znaczen
 			List<String> commonPolishSenseFieldsList = new ArrayList<>();
 			
@@ -1703,13 +1705,37 @@ public class Dictionary2Helper {
 			
 			// jezyk zrodlowy
 			// languageSourceCommonList.getClass();
+			*/
 			
-			//
+			// generowanie docelowego tlumaczenia i info dla starej pozycji w starym slowniku
+			StringBuffer polishTranslate = new StringBuffer();
 			
+			
+			for (Sense currentSense : kanjiKanaPairSenseList) {
+
+				List<FieldEnum> currentSenseFieldList = currentSense.getFieldList();
+				List<MiscEnum> currentSenseMiscList = currentSense.getMiscList();
+				List<DialectEnum> currentSenseDialectList = currentSense.getDialectList();
+				List<String> currentSenseLanguageSourceList = translateToPolishLanguageSourceList(currentSense.getLanguageSourceList());
+				
+				// wyliczenie roznic miedzy obecnym znaczeniem, a czescia wspolna dla wszystkich znaczen
+				Collection<FieldEnum> fieldEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseFieldList, fieldCommonList);
+				Collection<MiscEnum> miscEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseMiscList, miscCommonList);
+				Collection<DialectEnum> dialectEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseDialectList, dialectCommonList);
+				
+				
+				
+				List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+				
+				
+			}
+			
+			
+			
+			int fixme3 = 1; // !!!!!!!!!!!
 			/*
-			List<LanguageSource> languageSourceList = currentSense.getLanguageSourceList();
 			List<SenseAdditionalInfo> additionalPolInfoList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
-			List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+			
 			*/
 			
 			int a = 0;
