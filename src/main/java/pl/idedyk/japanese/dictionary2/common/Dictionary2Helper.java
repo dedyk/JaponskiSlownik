@@ -1729,6 +1729,7 @@ public class Dictionary2Helper {
 						
 			// generowanie docelowego tlumaczenia i info dla starej pozycji w starym slowniku
 			List<String> newPolishTranslateList = new ArrayList<>();			
+			List<String> newPolishAdditionalInfoList = new ArrayList<>();
 			
 			for (Sense currentSense : kanjiKanaPairSenseList) {
 				
@@ -1796,56 +1797,47 @@ public class Dictionary2Helper {
 					}
 					
 					// generowanie tlumaczenia dla slowka
-					StringBuffer currentPolGlossPolishTranslateStringBuffer = new StringBuffer();
-					
-					for (int idx = 0; idx < currentPolGlossPolishTranslate.size(); ++idx) {
-						
-						String currentPolGlossPolishTranslateElement = currentPolGlossPolishTranslate.get(idx);
-						
-						if (idx == 0) {
-							currentPolGlossPolishTranslateStringBuffer.append(currentPolGlossPolishTranslateElement);
-							
-						} else if (idx == 1) {
-							currentPolGlossPolishTranslateStringBuffer.append(" (");
-							currentPolGlossPolishTranslateStringBuffer.append(currentPolGlossPolishTranslateElement);
-							
-						} else if (idx >= 2) {
-							currentPolGlossPolishTranslateStringBuffer.append("; ");
-							currentPolGlossPolishTranslateStringBuffer.append(currentPolGlossPolishTranslateElement);
-							
-						}
-						
-						if (idx != 0 && idx == currentPolGlossPolishTranslate.size() - 1) {
-							currentPolGlossPolishTranslateStringBuffer.append(")");
-						}
-					}
 					
 					// nowa pozycja w tlumaczeniu
-					newPolishTranslateList.add(currentPolGlossPolishTranslateStringBuffer.toString());
-
-					// informacje dodatkowe !!!!!!!!!1
-					int fixme5 = 1;
+					newPolishTranslateList.add(joinStringForOldPolishJapaneseEntry(currentPolGlossPolishTranslate));
 				}
 			}
 			
-			
-			
 			// informacje dodatkowe
-			int fixme3 = 1; // !!!!!!!!!!!
+						
+			// dziedzina
+			if (fieldCommonList.size() > 0) {
+				newPolishAdditionalInfoList.addAll(translateToPolishFieldEnumList(fieldCommonList));						
+			}
 			
-			// czesc wspolna
+			// rozne informacje
+			if (miscCommonList.size() > 0) {
+				newPolishAdditionalInfoList.addAll(translateToPolishMiscEnumList(miscCommonList));
+			}
 			
-			// informacje dodatkowe (do czesci wspolnej) ????
+			// dialekt
+			if (dialectCommonList.size() > 0) {
+				newPolishAdditionalInfoList.addAll(translateToPolishDialectEnumList(dialectCommonList));
+			}
 			
-			/*
+			// informacje dodatkowe dla znaczenia
+			if (additionalInfoCommonList.size() > 0) {
+				newPolishAdditionalInfoList.addAll(additionalInfoCommonList);
+			}
 			
+			// jezyk zrodlowy
+			if (languageSourceCommonList.size() > 0) {
+				newPolishAdditionalInfoList.addAll(languageSourceCommonList);
+			}
+
+			String newPolishAdditionalInfo = joinStringForOldPolishJapaneseEntry(newPolishAdditionalInfoList);
+
+			//
 			
-			*/
-			
-			int a = 0;
-			
-			a++;
-			
+			System.out.println(newPolishTranslateList.toString() + " - " + newPolishAdditionalInfo);
+						
+			// uaktualnienie wpisu
+			int fixme1 = 1;
 		}
 
 		
@@ -2003,6 +1995,35 @@ public class Dictionary2Helper {
 			default:
 				throw new RuntimeException("Unknown gloss type: " + glossType);
 		}
+	}
+	
+	private String joinStringForOldPolishJapaneseEntry(List<String> list) {
+		
+		StringBuffer result = new StringBuffer();
+		
+		for (int idx = 0; idx < list.size(); ++idx) {
+			
+			String currentListElement = list.get(idx);
+			
+			if (idx == 0) {
+				result.append(currentListElement);
+				
+			} else if (idx == 1) {
+				result.append(" (");
+				result.append(currentListElement);
+				
+			} else if (idx >= 2) {
+				result.append("; ");
+				result.append(currentListElement);
+				
+			}
+			
+			if (idx != 0 && idx == list.size() - 1) {
+				result.append(")");
+			}
+		}
+
+		return result.toString();
 	}
 	
 	private static class KanjiKanaPair {
