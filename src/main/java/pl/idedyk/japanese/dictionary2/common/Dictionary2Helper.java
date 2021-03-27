@@ -1649,7 +1649,8 @@ public class Dictionary2Helper {
 			Collection<FieldEnum> fieldCommonList = null;
 			Collection<MiscEnum> miscCommonList = null;
 			Collection<DialectEnum> dialectCommonList = null;
-						
+			Collection<String> languageSourceCommonList = null;
+			
 			// generowanie wspolnej czesci dla wszystkich znaczen
 			for (Sense currentSense : kanjiKanaPairSenseList) {
 
@@ -1676,7 +1677,16 @@ public class Dictionary2Helper {
 					
 				} else {
 					dialectCommonList = CollectionUtils.intersection(dialectCommonList, currentSense.getDialectList());
-				}				
+				}	
+				
+				//
+				
+				if (languageSourceCommonList == null) {
+					languageSourceCommonList = translateToPolishLanguageSourceList(currentSense.getLanguageSourceList());
+					
+				} else {
+					languageSourceCommonList = CollectionUtils.intersection(languageSourceCommonList, translateToPolishLanguageSourceList(currentSense.getLanguageSourceList()));
+				}
 			}
 			
 			// lista wspolnych przetlumaczonych na jezyk polski pol dla wszystkich znaczen
@@ -1690,6 +1700,9 @@ public class Dictionary2Helper {
 			
 			// dialekt
 			List<String> translateToPolishCommonDialectEnumList = translateToPolishDialectEnumList(dialectCommonList);
+			
+			// jezyk zrodlowy
+			// languageSourceCommonList.getClass();
 			
 			//
 			
@@ -1788,13 +1801,37 @@ public class Dictionary2Helper {
 				
 			default:
 				throw new RuntimeException("Unknown dialect enum: " + dialectEnum);
-			
+				
 			}
 		}
 		
 		return result;
 	}
-
+	
+	private List<String> translateToPolishLanguageSourceList(Collection<LanguageSource> languageSourceList) {
+		
+		List<String> result = new ArrayList<>();
+		
+		for (LanguageSource languageSource : languageSourceList) {
+			
+			String languageCodeInPolish = translateToPolishLanguageCode(languageSource.getLang());
+			String languageValue = languageSource.getValue();
+			
+			result.add(languageCodeInPolish + ": " + languageValue);			
+		}
+		
+		return result;
+	}
+	
+	private String translateToPolishLanguageCode(String language) {
+		
+		switch (language) {
+			
+			
+			default:
+				throw new RuntimeException("Unknown language: " + language);
+		}
+	}
 	
 	private static class KanjiKanaPair {
 		
