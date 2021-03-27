@@ -12,6 +12,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
@@ -1640,6 +1641,31 @@ public class Dictionary2Helper {
 		// chodzenie po wszystkich kombinacjach kanji i kana
 		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
 			
+			// szukamy docelowego slowka
+			Optional<PolishJapaneseEntry> polishJapaneseEntryOptional = allPolishJapaneseEntriesForEntry.stream().filter(polishJapaneseEntry -> {
+				
+				String polishJapaneseEntryKanji = polishJapaneseEntry.getKanji();
+				String polishJapaneseEntryKana = polishJapaneseEntry.getKana();
+				
+				String searchKanji = kanjiKanaPair.kanji;
+				
+				if (searchKanji == null) {
+					searchKanji = "-";
+				}
+				
+				String searchKana = kanjiKanaPair.kana;
+				
+				return polishJapaneseEntryKanji.equals(searchKanji) == true && polishJapaneseEntryKana.equals(searchKana) == true;				
+			}).findFirst();
+			
+			if (polishJapaneseEntryOptional.isPresent() == false) { // to nigdy nie powinno zdarzyc sie
+				throw new RuntimeException(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana);
+			}
+			
+			PolishJapaneseEntry polishJapaneseEntry = polishJapaneseEntryOptional.get();
+			
+			//
+			
 			// pobieranie wszystkich znaczen
 			List<Sense> kanjiKanaPairSenseList = kanjiKanaPair.getSenseList();
 			
@@ -1708,8 +1734,7 @@ public class Dictionary2Helper {
 			*/
 			
 			// generowanie docelowego tlumaczenia i info dla starej pozycji w starym slowniku
-			StringBuffer polishTranslate = new StringBuffer();
-			
+			List<String> polishTranslateList = new ArrayList<>();			
 			
 			for (Sense currentSense : kanjiKanaPairSenseList) {
 
@@ -1722,16 +1747,31 @@ public class Dictionary2Helper {
 				Collection<FieldEnum> fieldEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseFieldList, fieldCommonList);
 				Collection<MiscEnum> miscEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseMiscList, miscCommonList);
 				Collection<DialectEnum> dialectEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseDialectList, dialectCommonList);
+				Collection<String> languageSourceListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseLanguageSourceList, languageSourceCommonList);
 				
-				
+				//
 				
 				List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
 				
-				
+				for (Gloss currentPolGloss : glossPolList) {
+					
+					String currentPolGlossType = translateToPolishGlossType(currentPolGloss.getGType());
+					String currentPolGlossValue = currentPolGloss.getValue();
+					
+					// generowanie tlumaczenia dla slowka
+					StringBuffer currentPolGlossPolishTranslate = new StringBuffer();
+					
+					currentPolGlossPolishTranslate.append(currentPolGlossValue);
+					
+					//
+					
+					System.out.println(currentPolGlossPolishTranslate.toString());
+				}
 			}
 			
 			
 			
+			// informacje dodatkowe
 			int fixme3 = 1; // !!!!!!!!!!!
 			/*
 			List<SenseAdditionalInfo> additionalPolInfoList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
@@ -1852,10 +1892,34 @@ public class Dictionary2Helper {
 	private String translateToPolishLanguageCode(String language) {
 		
 		switch (language) {
-			
+		
+		case "eng":
+			return "ang";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
+		}
+	}
+	
+	private String translateToPolishGlossType(GTypeEnum glossType) {
+		
+		if (glossType == null) {
+			return null;
+		}
+		
+		switch (glossType) {
+		
+		case EXPL:
+			return "wyrażenie";
+			
+		case FIG:
+			return "przenośna";
+			
+		case LIT:
+			return "literacko";
+		
+			default:
+				throw new RuntimeException("Unknown gloss type: " + glossType);
 		}
 	}
 	
