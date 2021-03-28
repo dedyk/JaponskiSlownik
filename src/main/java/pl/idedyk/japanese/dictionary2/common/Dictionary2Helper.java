@@ -1799,7 +1799,7 @@ public class Dictionary2Helper {
 					// generowanie tlumaczenia dla slowka
 					
 					// nowa pozycja w tlumaczeniu
-					newPolishTranslateList.add(joinStringForOldPolishJapaneseEntry(currentPolGlossPolishTranslate));
+					newPolishTranslateList.add(joinStringForOldPolishJapaneseEntry(currentPolGlossPolishTranslate, true));
 				}
 			}
 			
@@ -1830,7 +1830,7 @@ public class Dictionary2Helper {
 				newPolishAdditionalInfoList.addAll(languageSourceCommonList);
 			}
 
-			String newPolishAdditionalInfo = joinStringForOldPolishJapaneseEntry(newPolishAdditionalInfoList);
+			String newPolishAdditionalInfo = joinStringForOldPolishJapaneseEntry(newPolishAdditionalInfoList, false);
 
 			//
 			
@@ -1906,6 +1906,9 @@ public class Dictionary2Helper {
 				
 			case DEROGATORY:
 				result.add("poniżająco"); break;
+				
+			case SLANG:
+				result.add("slang"); break;
 				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
@@ -1997,7 +2000,7 @@ public class Dictionary2Helper {
 		}
 	}
 	
-	private String joinStringForOldPolishJapaneseEntry(List<String> list) {
+	private String joinStringForOldPolishJapaneseEntry(List<String> list, boolean addBracket) {
 		
 		StringBuffer result = new StringBuffer();
 		
@@ -2008,17 +2011,19 @@ public class Dictionary2Helper {
 			if (idx == 0) {
 				result.append(currentListElement);
 				
-			} else if (idx == 1) {
+			} else if (idx == 1 && addBracket == true) {
 				result.append(" (");
 				result.append(currentListElement);
 				
-			} else if (idx >= 2) {
+			} else if (idx >= 2 || addBracket == false) {
 				result.append("; ");
 				result.append(currentListElement);
 				
+			} else {
+				throw new RuntimeException();
 			}
 			
-			if (idx != 0 && idx == list.size() - 1) {
+			if (idx != 0 && idx == list.size() - 1 && addBracket == true) {
 				result.append(")");
 			}
 		}
