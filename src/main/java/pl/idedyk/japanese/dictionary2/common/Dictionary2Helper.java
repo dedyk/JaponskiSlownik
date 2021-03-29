@@ -647,7 +647,9 @@ public class Dictionary2Helper {
 		
 		public boolean markRomaji = false;
 		
-		public boolean shiftCells = false;
+		public boolean shiftCells = false;		
+		public boolean shiftCellsGenerateIds = false;
+		public Integer shiftCellsGenerateIdsId = 1;
 		
 	}
 	
@@ -676,7 +678,15 @@ public class Dictionary2Helper {
 		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
 			
 			if (config.shiftCells == true) {
-				csvWriter.write("");
+				
+				if (config.shiftCellsGenerateIds == false) {
+					csvWriter.write("");
+					
+				} else {
+					csvWriter.write(String.valueOf(config.shiftCellsGenerateIdsId));
+					
+					config.shiftCellsGenerateIdsId++;
+				}
 			}
 			
 			csvWriter.write(EntryHumanCsvFieldType.BEGIN.name());		
@@ -1909,6 +1919,9 @@ public class Dictionary2Helper {
 				
 			case SLANG:
 				result.add("slang"); break;
+			
+			case ONOMATOPOEIC_OR_MIMETIC_WORD:
+				result.add("onomatopeiczne lub mimetyczne słowo"); break; 
 				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);

@@ -183,6 +183,7 @@ public class GenerateMissingWordListApp {
 		saveEntryListAsHumanCsvConfig.addOldPolishTranslates = true;
 		saveEntryListAsHumanCsvConfig.markRomaji = true;
 		saveEntryListAsHumanCsvConfig.shiftCells = true;
+		saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
 		
 		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word-new-test.csv", result);
 		
