@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -58,7 +59,9 @@ import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -967,9 +970,6 @@ public class Dictionary2Helper {
 				
 				writeToCsvLangSense(config, csvWriter, entry, sense, EntryHumanCsvFieldType.SENSE_ENG, glossEngList);
 				writeToCsvLangSense(config, csvWriter, entry, sense, EntryHumanCsvFieldType.SENSE_POL, glossPolList);	
-				
-				int fixme = 1;
-				// dla jezyka polskiego generowac aktualne tlumaczenie, w celu kontroli zmiany tlumaczenia
 			}				
 		}
 		
@@ -1399,11 +1399,28 @@ public class Dictionary2Helper {
 	}
 	
 	public void validateAllPolishDictionaryEntryList() throws Exception {
-		
+				
 		// wczytywanie slownika
 		readPolishDictionary();
 
 		boolean wasError = false;
+		
+		// hiragana i katakana cache		
+		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
+
+		for (KanaEntry kanaEntry : kanaHelper.getAllHiraganaKanaEntries()) {
+			hiraganaCache.put(kanaEntry.getKana(), kanaEntry);
+		}
+
+		Map<String, KanaEntry> katakanaCache = new HashMap<String, KanaEntry>();
+
+		for (KanaEntry kanaEntry : kanaHelper.getAllKatakanaKanaEntries()) {
+			katakanaCache.put(kanaEntry.getKana(), kanaEntry);
+		}
+				
+		final Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache();
+
+		//
 		
 		// walidacja wpisow
 		for (Entry entry : polishDictionaryEntryList) {
@@ -1453,17 +1470,161 @@ public class Dictionary2Helper {
 					wasError = true;
 				}
 			}
-			
-			
-			
+						
 			// walidacja romaji
+			List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
 			
-		}
+			// walidacja typow hiragana i katakana
+			for (ReadingInfo currentReadingInfo : readingInfoList) {
+				
+				String kana = currentReadingInfo.getKana().getValue().replaceAll("・", "");
+				String romaji = currentReadingInfo.getKana().getRomaji();
+				
+				ReadingInfoKanaType kanaType = currentReadingInfo.getKana().getKanaType();
+				
+				boolean ignoreError = false;
+
+				KanaWord currentKanaAsKanaAsKanaWord = null;
+				
+				if (kanaType != ReadingInfoKanaType.HIRAGANA_EXCEPTION && kanaType != ReadingInfoKanaType.KATAKANA_EXCEPTION) {
+					
+					try {
+						currentKanaAsKanaAsKanaWord = kanaHelper.convertKanaStringIntoKanaWord(kana, kanaCache, false);
+						
+					} catch (Exception e) {
+						
+						System.out.println("[Error] Romaji validate (1) for " + entry.getEntryId() + " - " + kana + " - " + romaji);
+						
+						wasError = true;
+						
+						continue;
+					}
+				}			
+
+				KanaWord kanaWord = createKanaWord(kanaHelper, romaji, kanaType, hiraganaCache, katakanaCache);
+
+				if (kanaWord == null) {
+					ignoreError = true;
+				}
+
+				if (ignoreError == true || (kana).equals(kanaHelper.createKanaString(kanaWord)) == false) {
+					
+					kanaWord = createKanaWord(kanaHelper, romaji, kanaType, hiraganaCache, katakanaCache);
+
+					if (ignoreError == true || (kana).equals(kanaHelper.createKanaString(kanaWord)) == false) {
+
+						romaji = romaji.replaceAll(" o ", " wo ");
+						romaji = romaji.replaceAll(" e ", " he ");
+						
+						kanaWord = createKanaWord(kanaHelper, romaji, kanaType, hiraganaCache, katakanaCache);
+
+						if (ignoreError == false && (kana).equals(kanaHelper.createKanaString(kanaWord)) == false) {
+							
+							System.out.println("[Error] Romaji validate (2) for " + entry.getEntryId() + " - " + kana + " - " + romaji + " - " + kanaHelper.createKanaString(kanaWord));
+							
+							wasError = true;
+							
+							continue;
+						}
+					}
+				}
+
+				if (kanaType != ReadingInfoKanaType.HIRAGANA_EXCEPTION && kanaType != ReadingInfoKanaType.KATAKANA_EXCEPTION) {
+
+					String currentKanaAsRomaji = kanaHelper.createRomajiString(currentKanaAsKanaAsKanaWord);
+					
+					// is hiragana word
+					KanaWord currentKanaAsRomajiAsHiraganaWord = kanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, currentKanaAsRomaji);
+					String currentKanaAsRomajiAsHiraganaWordAsAgainKana = kanaHelper.createKanaString(currentKanaAsRomajiAsHiraganaWord);
+
+					// is katakana word
+					KanaWord currentKanaAsRomajiAsKatakanaWord = kanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, currentKanaAsRomaji);
+					String currentKanaAsRomajiAsKatakanaWordAsAgainKana = kanaHelper.createKanaString(currentKanaAsRomajiAsKatakanaWord);
+
+					if (ignoreError == false && kana.equals(currentKanaAsRomajiAsHiraganaWordAsAgainKana) == false
+							&& kana.equals(currentKanaAsRomajiAsKatakanaWordAsAgainKana) == false) {
+						
+						System.out.println("[Error] Romaji validate (3) for " + entry.getEntryId() + " - " + kana + " - " + romaji + " - " + currentKanaAsRomajiAsHiraganaWordAsAgainKana +
+								" vs " + currentKanaAsRomajiAsKatakanaWordAsAgainKana);
+						
+						wasError = true;
+						
+						continue;
+					}
+				}
+
+				// walidacja typow hiragana_katakana i katakana_hiragana
+				if (kanaType == ReadingInfoKanaType.HIRAGANA_KATAKANA || kanaType == ReadingInfoKanaType.KATAKANA_HIRAGANA) {
+
+					kanaWord = kanaHelper.convertKanaStringIntoKanaWord(kana, kanaCache, false);
+
+					String createdRomaji = kanaHelper.createRomajiString(kanaWord);
+
+					if (romaji.replaceAll(" ", "").equals(createdRomaji) == true) {
+
+						// ok
+
+					} else {
+
+						romaji = romaji.replaceAll(" o ", " wo ");
+						romaji = romaji.replaceAll(" e ", " he ");
+
+						if (romaji.replaceAll(" ", "").equals(createdRomaji) == true) {
+							// ok 2
+
+						} else {
+							
+							System.out.println("[Error] Romaji validate (4) for " + entry.getEntryId() + " - " + kana + " - " + romaji);
+							
+							wasError = true;
+							
+							continue;
+						}
+					}		
+				}				
+			}
+		}				
 		
 		if (wasError == true) { // byl jakis blad			
 			throw new Exception("Error");			
 		}
 	}
+	
+	private static KanaWord createKanaWord(KanaHelper kanaHelper, String romaji, ReadingInfoKanaType readingInfoKanaType, Map<String, KanaEntry> hiraganaCache,
+			Map<String, KanaEntry> katakanaCache) throws Exception {
+
+		KanaWord kanaWord = null;
+
+		if (readingInfoKanaType == ReadingInfoKanaType.HIRAGANA) {
+			kanaWord = kanaHelper.convertRomajiIntoHiraganaWord(hiraganaCache, romaji);
+			
+		} else if (readingInfoKanaType == ReadingInfoKanaType.KATAKANA) {
+			kanaWord = kanaHelper.convertRomajiIntoKatakanaWord(katakanaCache, romaji);
+			
+		} else if (readingInfoKanaType == ReadingInfoKanaType.HIRAGANA_KATAKANA) {
+			return null;
+			
+		} else if (readingInfoKanaType == ReadingInfoKanaType.KATAKANA_HIRAGANA) {
+			return null;
+			
+		} else if (readingInfoKanaType == ReadingInfoKanaType.HIRAGANA_EXCEPTION) {
+			return null;
+			
+		} else if (readingInfoKanaType == ReadingInfoKanaType.KATAKANA_EXCEPTION) {
+			return null;
+			
+		} else {
+			throw new RuntimeException("Bad word type");
+		}
+
+		if (kanaWord.remaingRestChars.equals("") == false) {
+			throw new Exception("Validate error for word: " + romaji + ", remaining: "
+					+ kanaWord.remaingRestChars);
+		}
+
+		return kanaWord;
+	}
+
 	
 	private Set<String> getGlossTypeListForValidate(List<Gloss> glossList) {
 		
@@ -1773,7 +1934,6 @@ public class Dictionary2Helper {
 			// pobieranie wszystkich znaczen
 			List<Sense> kanjiKanaPairSenseList = kanjiKanaPair.getSenseList();
 			
-			int fixme = 1;
 			// czesc wspolna	
 			
 			Collection<FieldEnum> fieldCommonList = null;

@@ -24,11 +24,7 @@ public class UpdateOldPolishJapaneseDictionary {
 			dictionaryHelper.updatePolishJapaneseEntryInOldDictionary(entry);
 		}
 				
-		// zapisanie 
+		// zapisanie starego slownika
 		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv", "input/word03-wynik.csv" }, dictionaryHelper.getOldPolishJapaneseEntriesList(), true, true, false, true, null);
-		
-		int fixme = 1;
-		// walidacja, np. romaji, duplikat w ramach jednego sense
-		// inne walidacje, sprawdz w starym jakie
 	}
 }
