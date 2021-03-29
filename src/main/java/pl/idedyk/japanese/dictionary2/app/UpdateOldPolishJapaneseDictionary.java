@@ -16,6 +16,9 @@ public class UpdateOldPolishJapaneseDictionary {
 		// pobieramy wszystkie slowa, ktore sa w nowym slowniku
 		List<Entry> allPolishDictionaryEntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
 		
+		// walidacja slow
+		dictionaryHelper.validateAllPolishDictionaryEntryList();
+		
 		// uaktualniamy tlumaczenia w starym slowniku
 		for (Entry entry : allPolishDictionaryEntryList) {
 			dictionaryHelper.updatePolishJapaneseEntryInOldDictionary(entry);

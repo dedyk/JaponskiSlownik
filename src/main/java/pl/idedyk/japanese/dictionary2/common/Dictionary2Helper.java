@@ -9,11 +9,14 @@ import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 import javax.xml.XMLConstants;
@@ -1392,6 +1395,56 @@ public class Dictionary2Helper {
 		readPolishDictionary();
 		
 		return polishDictionaryEntryList;
+	}
+	
+	public void validateAllPolishDictionaryEntryList() throws Exception {
+		
+		// wczytywanie slownika
+		readPolishDictionary();
+
+		boolean wasError = false;
+		
+		// walidacja wpisow
+		for (Entry entry : polishDictionaryEntryList) {
+			
+			// walidacja duplikow tlumaczen w jednym sensie
+			List<Sense> senseList = entry.getSenseList();
+			
+			for (Sense currentSense : senseList) {
+				
+				// pobieramy wszyskie polskie tlumaczenia z tego sensu
+				List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+				
+				Set<String> uniqueGlossPolSet = new TreeSet<>();
+				List<String> allGlossPolList = new ArrayList<>();
+				
+				for (Gloss currentGlossPol : glossPolList) {					
+					uniqueGlossPolSet.add(currentGlossPol.getValue());
+					allGlossPolList.add(currentGlossPol.getValue());
+				}
+				
+				if (uniqueGlossPolSet.size() != glossPolList.size()) { // mamy duplikat
+					
+					Collections.sort(allGlossPolList);
+					
+					System.out.println("[Error] Sense gloss duplicate for " + entry.getEntryId() + " - " + allGlossPolList);
+					
+					wasError = true;
+				}
+			}
+			
+			// walidacja glossType: jesli jest w angielskim to musi byc w polskim
+			int fixme = 1;
+			
+			
+			
+			// walidacja romaji
+			
+		}
+		
+		if (wasError == true) { // byl jakis blad			
+			throw new Exception("Error");			
+		}
 	}
 
 	public void fillDataFromOldPolishJapaneseDictionary(Entry entry) throws Exception {
