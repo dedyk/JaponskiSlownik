@@ -11,6 +11,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -1434,7 +1435,24 @@ public class Dictionary2Helper {
 			}
 			
 			// walidacja glossType: jesli jest w angielskim to musi byc w polskim
-			int fixme = 1;
+			for (Sense currentSense : senseList) {
+				
+				// pobieramy wszyskie polskie tlumaczenia z tego sensu
+				List<Gloss> glossEngList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+				List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+
+				// wyliczenie liczby glossType dla angielskiej i polskiej wersji
+				Set<String> glossTypeForEngList = getGlossTypeListForValidate(glossEngList);
+				Set<String> glossTypeForPolList = getGlossTypeListForValidate(glossPolList);
+				
+				if (	CollectionUtils.containsAll(glossTypeForEngList, glossTypeForPolList) == false ||
+						CollectionUtils.containsAll(glossTypeForPolList, glossTypeForEngList) == false) {
+					
+					System.out.println("[Error] Gloss type list different for " + entry.getEntryId() + " - " + glossTypeForEngList + " vs " + glossTypeForPolList);
+					
+					wasError = true;
+				}
+			}
 			
 			
 			
@@ -1445,6 +1463,25 @@ public class Dictionary2Helper {
 		if (wasError == true) { // byl jakis blad			
 			throw new Exception("Error");			
 		}
+	}
+	
+	private Set<String> getGlossTypeListForValidate(List<Gloss> glossList) {
+		
+		Set<String> result = new LinkedHashSet<>();
+		
+		for (Gloss gloss : glossList) {
+			
+			GTypeEnum glossType = gloss.getGType();
+			
+			if (glossType == null) {
+				result.add("null");
+				
+			} else {
+				result.add(glossType.name());
+			}
+		}
+		
+		return result;
 	}
 
 	public void fillDataFromOldPolishJapaneseDictionary(Entry entry) throws Exception {
