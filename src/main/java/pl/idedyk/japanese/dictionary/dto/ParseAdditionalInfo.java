@@ -10,5 +10,7 @@ public enum ParseAdditionalInfo {
 	
 	NO_JMEDICT_ALTERNATIVE,
 	
-	IGNORE_NO_JMEDICT;
+	IGNORE_NO_JMEDICT,
+	
+	DICTIONARY2_SOURCE;
 }

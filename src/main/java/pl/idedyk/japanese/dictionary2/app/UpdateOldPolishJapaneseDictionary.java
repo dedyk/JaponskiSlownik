@@ -2,6 +2,7 @@ package pl.idedyk.japanese.dictionary2.app;
 
 import java.util.List;
 
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
@@ -19,6 +20,9 @@ public class UpdateOldPolishJapaneseDictionary {
 		for (Entry entry : allPolishDictionaryEntryList) {
 			dictionaryHelper.updatePolishJapaneseEntryInOldDictionary(entry);
 		}
+				
+		// zapisanie 
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv", "input/word03-wynik.csv" }, dictionaryHelper.getOldPolishJapaneseEntriesList(), true, true, false, true, null);
 		
 		int fixme = 1;
 		// walidacja, np. romaji, duplikat w ramach jednego sense

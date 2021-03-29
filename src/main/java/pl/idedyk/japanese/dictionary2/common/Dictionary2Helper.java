@@ -1526,10 +1526,11 @@ public class Dictionary2Helper {
 				if (noKanji == null) {
 										
 					String kana = readingInfo.getKana().getValue();
+					String romaji = readingInfo.getKana().getRomaji();
 					
 					//
 					
-					result.add(new KanjiKanaPair(null, kana));
+					result.add(new KanjiKanaPair(null, kana, romaji));
 				}
 			}
 			
@@ -1551,6 +1552,8 @@ public class Dictionary2Helper {
 					
 					// pobierz kana
 					String kana = readingInfo.getKana().getValue();
+					String romaji = readingInfo.getKana().getRomaji();
+					
 					List<String> kanjiRestrictedListForKana = readingInfo.getKanjiRestrictionList();
 					
 					boolean isRestricted = true;
@@ -1571,7 +1574,7 @@ public class Dictionary2Helper {
 					}
 					
 					// mamy pare
-					result.add(new KanjiKanaPair(kanji, kana));					
+					result.add(new KanjiKanaPair(kanji, kana, romaji));					
 				}				
 			}
 		}
@@ -1584,10 +1587,11 @@ public class Dictionary2Helper {
 			if (noKanji != null) {
 								
 				String kana = readingInfo.getKana().getValue();
+				String romaji = readingInfo.getKana().getRomaji();
 				
 				//
 				
-				result.add(new KanjiKanaPair(null, kana));
+				result.add(new KanjiKanaPair(null, kana, romaji));
 			}
 		}
 		
@@ -1842,33 +1846,19 @@ public class Dictionary2Helper {
 
 			String newPolishAdditionalInfo = joinStringForOldPolishJapaneseEntry(newPolishAdditionalInfoList, false);
 
-			//
+			// aktualizacja wpisu
+			polishJapaneseEntry.setRomaji(kanjiKanaPair.romaji);
 			
-			System.out.println(newPolishTranslateList.toString() + " - " + newPolishAdditionalInfo);
-						
-			// uaktualnienie wpisu
-			int fixme1 = 1;
+			polishJapaneseEntry.setTranslates(newPolishTranslateList);
+			polishJapaneseEntry.setInfo(newPolishAdditionalInfo);
+			
+			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.DICTIONARY2_SOURCE) == false) {
+				polishJapaneseEntry.getParseAdditionalInfoList().add(ParseAdditionalInfo.DICTIONARY2_SOURCE);
+			}
+			
+			// generowanie chudego GroupId
+			polishJapaneseEntry.setJmedictRawDataList(Arrays.asList("GroupId: " + entry.getEntryId()));			
 		}
-
-		
-		
-		int fixme3 = 1; // co bierzemy pod uwage
-		// field
-		// misc
-		// senseAdditionalInfo
-		// languageSource
-		// dialect
-		// gloss
-		// gloss[pol]/gType
-		// gloss[pol]/value
-
-		// aktualizacja romaji
-		
-		// dokonczyc !!!!!!!!!!1
-		int fixme = 1;
-		
-		// test generowania GroupId
-		int fixme2 = 1;
 	}
 	
 	private List<String> translateToPolishFieldEnumList(Collection<FieldEnum> fieldEnumList) {
@@ -2044,17 +2034,23 @@ public class Dictionary2Helper {
 		return result.toString();
 	}
 	
+	public List<PolishJapaneseEntry> getOldPolishJapaneseEntriesList() throws Exception {
+		return oldWordGeneratorHelper.getPolishJapaneseEntriesList();
+	}
+	
 	private static class KanjiKanaPair {
 		
 		private String kanji;
 		
 		private String kana;
+		private String romaji;
 		
 		private List<Sense> senseList = new ArrayList<>();
 
-		public KanjiKanaPair(String kanji, String kana) {
+		public KanjiKanaPair(String kanji, String kana, String romaji) {
 			this.kanji = kanji;
 			this.kana = kana;
+			this.romaji = romaji;
 		}
 
 		public List<Sense> getSenseList() {

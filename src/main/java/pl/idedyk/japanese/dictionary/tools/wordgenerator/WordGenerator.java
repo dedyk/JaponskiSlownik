@@ -3078,7 +3078,7 @@ public class WordGenerator {
 											groupEntryTranslate.fillJmedictRawData(newJmedictRawDataList);
 										}
 
-										if (jmedictRawDataList.equals(newJmedictRawDataList) == false) { // jest roznica												
+										if (jmedictRawDataList.equals(newJmedictRawDataList) == false && findPolishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.DICTIONARY2_SOURCE) == false) { // jest roznica i to slowo nie ma swojego zrodla w nowym slowniku
 											isDifferent = true;												
 										}
 									}									
