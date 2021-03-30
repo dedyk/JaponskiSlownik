@@ -29,6 +29,7 @@ public class GetEntryFromDictionary {
 		options.addOption("e", "entry-ids", true, "Entry ids");
 		options.addOption("p", "polish-dictionary", false, "Use polish dictionary");
 		options.addOption("j", "jmdict-dictionary", false, "Use JMdict dictionary");
+		options.addOption("awwadeiod", "add-words-which-also-doesnt-exist-in-old-dictionary", false, "Add words which also doesn't exist in old dictionary");
 		options.addOption("h", "help", false, "Help");
 		
 		// parsowanie opcji		
@@ -58,7 +59,9 @@ public class GetEntryFromDictionary {
 		Set<Integer> entryIds = new HashSet<>();
 				
 		boolean usePolishDictionary = false;
-		boolean useJMdictDictionary = false;		
+		boolean useJMdictDictionary = false;
+		
+		boolean addWordsWithAlsoDoesntExistInOldDictionary = false;
 		
 		//
 		
@@ -92,6 +95,10 @@ public class GetEntryFromDictionary {
 			printHelp(options);
 			
 			System.exit(1);	
+		}
+		
+		if (commandLine.hasOption("add-words-which-also-doesnt-exist-in-old-dictionary") == true) {
+			addWordsWithAlsoDoesntExistInOldDictionary = true;
 		}
 		
 		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
@@ -154,6 +161,14 @@ public class GetEntryFromDictionary {
 					System.out.println("[Error] Entry already exists in polish dictionary: " + currentEntryId);
 					
 					continue;					
+				}
+				
+				boolean existsInOldPolishJapaneseDictionary = dictionaryHelper.isExistsInOldPolishJapaneseDictionary(jmdictEntry);
+
+				if (existsInOldPolishJapaneseDictionary == false && addWordsWithAlsoDoesntExistInOldDictionary == false) { // kiedys to zmieni sie, ale obecnie kazde slowo juz byc rowniez w starym slowniku (no chyba ze zdecydowano inaczej)
+					System.out.println("{Warning} Entry id " + jmdictEntry.getEntryId() + " doesn't exist in old polish dictionary!");
+					
+					continue;
 				}
 				
 				// uzupelnienie o puste polskie tlumaczenie
