@@ -1423,12 +1423,26 @@ public class Dictionary2Helper {
 		//
 		
 		// walidacja wpisow
+		Set<Integer> alreadyCheckedEntryId = new TreeSet<>();
+		
 		for (Entry entry : polishDictionaryEntryList) {
+			
+			// sprawdzamy, czy taki wpis juz nie wystepu
+			if (alreadyCheckedEntryId.contains(entry.getEntryId()) == true) {
+				
+				System.out.println("[Error] Duplicate entry id for " + entry.getEntryId());
+				
+				wasError = true;
+				
+				continue;
+			}
+			
+			alreadyCheckedEntryId.add(entry.getEntryId());
 			
 			// walidacja duplikow tlumaczen w jednym sensie
 			List<Sense> senseList = entry.getSenseList();
 			
-			for (Sense currentSense : senseList) {
+			for (Sense currentSense : senseList) {				
 				
 				// pobieramy wszyskie polskie tlumaczenia z tego sensu
 				List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());

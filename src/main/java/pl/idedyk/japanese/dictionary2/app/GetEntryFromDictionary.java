@@ -9,7 +9,7 @@ import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 
-public class GetEntryFromJMdict {
+public class GetEntryFromDictionary {
 
 	public static void main(String[] args) throws Exception {
 		
@@ -20,7 +20,8 @@ public class GetEntryFromJMdict {
 		Options options = new Options();
 		
 		options.addOption("e", "entry-ids", true, "Entry ids");
-		options.addOption("gewaeipd", "get-entry-which-also-exists-in-polish-dictionary", false, "Get entry which also exists in polish dictionary");
+		options.addOption("p", "polish-dictionary", false, "Use polish dictionary");
+		options.addOption("j", "jmdict-dictionary", false, "Use JMdict dictionary");
 		options.addOption("h", "help", false, "Help");
 		
 		// parsowanie opcji		
@@ -49,7 +50,8 @@ public class GetEntryFromJMdict {
 		
 		Set<Integer> entryIds = new HashSet<>();
 		
-		boolean getEntryWhichAlsoExistsInPolishDictionary = false;
+		boolean usePolishDictionary = false;
+		boolean useJMdictDictionary = false;		
 		
 		//
 		
@@ -70,10 +72,20 @@ public class GetEntryFromJMdict {
 			System.exit(1);			
 		}
 		
-		if (commandLine.hasOption("get-entry-which-also-exists-in-polish-dictionary") == true) {
-			getEntryWhichAlsoExistsInPolishDictionary = true;			
+		if (commandLine.hasOption("polish-dictionary") == true) {
+			usePolishDictionary = true;			
 		}
 		
+		if (commandLine.hasOption("jmdict-dictionary") == true) {
+			useJMdictDictionary = true;			
+		}
+		
+		if ((usePolishDictionary == false && useJMdictDictionary == false) || (usePolishDictionary == true && useJMdictDictionary == true)) {
+			
+			printHelp(options);
+			
+			System.exit(1);	
+		}
 		
 
 
