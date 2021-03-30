@@ -166,7 +166,7 @@ public class GetEntryFromDictionary {
 				boolean existsInOldPolishJapaneseDictionary = dictionaryHelper.isExistsInOldPolishJapaneseDictionary(jmdictEntry);
 
 				if (existsInOldPolishJapaneseDictionary == false && addWordsWithAlsoDoesntExistInOldDictionary == false) { // kiedys to zmieni sie, ale obecnie kazde slowo juz byc rowniez w starym slowniku (no chyba ze zdecydowano inaczej)
-					System.out.println("{Warning} Entry id " + jmdictEntry.getEntryId() + " doesn't exist in old polish dictionary!");
+					System.out.println("[Warning] Entry id " + jmdictEntry.getEntryId() + " doesn't exist in old polish dictionary!");
 					
 					continue;
 				}
