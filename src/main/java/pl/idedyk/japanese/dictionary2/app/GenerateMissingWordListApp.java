@@ -17,6 +17,7 @@ import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
 import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector.JapaneseWord;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Helper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class GenerateMissingWordListApp {
@@ -104,6 +105,9 @@ public class GenerateMissingWordListApp {
 		// lista wynikowa
 		List<Entry> result = new ArrayList<>();
 		
+		// dodatkowe informacje
+		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+		
 		// wyszukiwanie slow
 		for (int currentWordIdx = 0; currentWordIdx < wordList.size(); ++currentWordIdx) {
 			
@@ -116,7 +120,7 @@ public class GenerateMissingWordListApp {
 			String currentWord = wordList.get(currentWordIdx);
 			
 			List<Entry> jmdictResult = dictionaryHelper.findInJMdict(currentWord);
-			
+									
 			if (jmdictResult.size() > 0) { // cos zostalo odnalezione
 				
 				foundWordSearchList.add(currentWord);
@@ -150,7 +154,7 @@ public class GenerateMissingWordListApp {
 					dictionaryHelper.createEmptyPolishSense(entry);
 					
 					// pobranie ze starego slownika interesujacych danych (np. romaji)
-					dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry);
+					dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry, entryAdditionalData);
 										
 					// dodanie do listy wynikowej
 					result.add(entry);
@@ -185,7 +189,7 @@ public class GenerateMissingWordListApp {
 		saveEntryListAsHumanCsvConfig.shiftCells = true;
 		saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
 		
-		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word-new-test.csv", result);
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word-new-test.csv", result, entryAdditionalData);
 		
 		// zapisywanie list
 		FileWriter searchResultFileWriter = new FileWriter(wordListFileName + "-new");

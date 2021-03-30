@@ -3,6 +3,7 @@ package pl.idedyk.japanese.dictionary.test;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
@@ -16,8 +17,10 @@ public class Test7 {
 		
 		List<Entry> entryList = jmdict.getEntryList();
 		
+		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+		
 		for (Entry entry : entryList) {
-			dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry);
+			dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry, entryAdditionalData);
 		}
 	}
 

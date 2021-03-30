@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
@@ -23,7 +24,9 @@ public class TestJMdictConverter {
 		
 		saveEntryListAsHumanCsvConfig.addOldPolishTranslates = false;
 		
-		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, csvFile.getAbsolutePath(), jmdict.getEntryList());
+		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+		
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, csvFile.getAbsolutePath(), jmdict.getEntryList(), entryAdditionalData);
 		dictionaryHelper.saveJMdictAsXml(jmdict, "/tmp/a/orginal-entry-list.xml");
 		
 		//
