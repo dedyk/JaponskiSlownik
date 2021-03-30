@@ -32,7 +32,7 @@ public class GenerateMissingWordListApp {
 		
 		options.addOption("cijo", "check-in-jisho-org", false, "Only kanji");			
 		options.addOption("f", "file", true, "Word list file name");
-		options.addOption("awdeiod", "add-words-doesnt-exist-in-old-dictionary", false, "Add words doesn't exist in old dictionary");
+		options.addOption("awwdeiod", "add-words-which-also-doesnt-exist-in-old-dictionary", false, "Add words which also doesn't exist in old dictionary");
 		options.addOption("h", "help", false, "Help");
 		
 		// parsowanie opcji		
@@ -60,7 +60,7 @@ public class GenerateMissingWordListApp {
 		String wordListFileName = null;
 		
 		boolean checkInJishoOrg = false;
-		boolean addWordsDoesntExistInOldDictionary = false;
+		boolean addWordsWithAlsoDoesntExistInOldDictionary = false;
 		
 		//
 		
@@ -72,8 +72,8 @@ public class GenerateMissingWordListApp {
 			checkInJishoOrg = true;
 		}
 		
-		if (commandLine.hasOption("add-words-doesnt-exist-in-old-dictionary") == true) {
-			addWordsDoesntExistInOldDictionary = true;
+		if (commandLine.hasOption("add-words-which-also-doesnt-exist-in-old-dictionary") == true) {
+			addWordsWithAlsoDoesntExistInOldDictionary = true;
 		}
 		
 		// plik nie zostal podany		
@@ -140,16 +140,15 @@ public class GenerateMissingWordListApp {
 					if (entryFromPolishDictionary != null) { // taki wpis juz jest
 						continue;
 					}
-					
-					if (addWordsDoesntExistInOldDictionary == true) { // sprawdzamy, czy takie slowa juz wystepuje w starym slowniku, jesli wystepuje nie dodajemy go
-						
-						boolean existsInOldPolishJapaneseDictionary = dictionaryHelper.isExistsInOldPolishJapaneseDictionary(entry);
-						
-						if (existsInOldPolishJapaneseDictionary == true) {
-							continue;
-						}
-					}
+
+					boolean existsInOldPolishJapaneseDictionary = dictionaryHelper.isExistsInOldPolishJapaneseDictionary(entry);
 										
+					if (existsInOldPolishJapaneseDictionary == false && addWordsWithAlsoDoesntExistInOldDictionary == false) { // kiedys to zmieni sie, ale obecnie kazde slowo juz byc rowniez w starym slowniku (no chyba ze zdecydowano inaczej)
+						System.out.println("Warning entry id " + entry.getEntryId() + " doesn't exist in old polish dictionary!");
+						
+						continue;
+					}
+					
 					// uzupelnienie o puste polskie tlumaczenie
 					dictionaryHelper.createEmptyPolishSense(entry);
 					
