@@ -12,6 +12,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
@@ -89,6 +90,8 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 
 public class Dictionary2Helper {
 	
+	private static final int CSV_COLUMNS = 11; 
+	
 	private Dictionary2Helper() { }
 	
 	public static Dictionary2Helper init() {
@@ -106,12 +109,7 @@ public class Dictionary2Helper {
 		
 		//
 		
-		dictionaryHelper.polishDictionaryFiles = new File[] {
-				new File("input/word2-test01.csv"),
-				new File("input/word2-test02.csv"),
-				new File("input/word2-test03.csv"),
-				new File("input/word2-test04.csv")
-		};
+		dictionaryHelper.polishDictionaryFile = new File("input/word2-test01.csv");
 		
 		// stary pomocnik		
 		dictionaryHelper.oldWordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
@@ -132,10 +130,8 @@ public class Dictionary2Helper {
 		
 	//
 	
-	private File[] polishDictionaryFiles;	
-	private List<JMdict.Entry> polishDictionaryEntryList;
-	
-	private Map<Integer, JMdict.Entry> polishDictionaryEntryListCache;
+	private File polishDictionaryFile;		
+	private Map<Integer, JMdict.Entry> polishDictionaryEntryListMap;
 	
 	//
 	
@@ -487,16 +483,48 @@ public class Dictionary2Helper {
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(fileName), ',');
 		
 		for (Entry entry : entryList) {
+			
+			// zapisz rekord
 			saveEntryAsHumanCsv(config, csvWriter, entry, entryAdditionalData);
+			
+			// rozdzielenie, aby zawartosc byla zabrdziej przjerzysta
+			if (entry != entryList.get(entryList.size() - 1)) {
+				
+				boolean useTextQualifier = csvWriter.getUseTextQualifier();
+				
+				int columnsNo = 0;
+				
+				// wypelniacz 2
+				csvWriter.setUseTextQualifier(false); // takie obejscie dziwnego zachowania
+				
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write("");
+				}
+				
+				csvWriter.endRecord();
+				
+				//
+				
+				columnsNo = 0;
+				
+				// wypelniacz 3			
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write(null);
+				}
+				
+				csvWriter.endRecord();
+				
+				//
+				
+				csvWriter.setUseTextQualifier(useTextQualifier);
+			}			
 		}		
 		
 		csvWriter.close();
 	}
 	
 	private void saveEntryAsHumanCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry, EntryAdditionalData entryAdditionalData) throws Exception {
-		
-		new EntryPartConverterBegin();
-		
+				
 		// rekord poczatkowy
 		new EntryPartConverterBegin().writeToCsv(config, csvWriter, entry);
 		
@@ -510,7 +538,7 @@ public class Dictionary2Helper {
 		new EntryPartConverterSense().writeToCsv(config, csvWriter, entry, entryAdditionalData);
 				
 		// rekord koncowy
-		new EntryPartConverterEnd().writeToCsv(config, csvWriter, entry);
+		new EntryPartConverterEnd().writeToCsv(config, csvWriter, entry);		
 	}
 	
 	private static ReadingInfoKanaType getKanaType(String kana) {
@@ -676,25 +704,33 @@ public class Dictionary2Helper {
 	}
 	
 	//
-		
+			
 	private class EntryPartConverterBegin {
 
 		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
 			
+			int columnsNo = 0;
+			
 			if (config.shiftCells == true) {
 				
 				if (config.shiftCellsGenerateIds == false) {
-					csvWriter.write("");
+					csvWriter.write(""); columnsNo++;
 					
 				} else {
-					csvWriter.write(String.valueOf(config.shiftCellsGenerateIdsId));
+					csvWriter.write(String.valueOf(config.shiftCellsGenerateIdsId)); columnsNo++;
 					
 					config.shiftCellsGenerateIdsId++;
 				}
 			}
 			
-			csvWriter.write(EntryHumanCsvFieldType.BEGIN.name());		
-			csvWriter.write(String.valueOf(entry.getEntryId()));
+			csvWriter.write(EntryHumanCsvFieldType.BEGIN.name()); columnsNo++;
+			csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
+			
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
 			csvWriter.endRecord();
 		}
 
@@ -714,15 +750,21 @@ public class Dictionary2Helper {
 
 		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
 			
+			int columnsNo = 0;
+			
 			if (config.shiftCells == true) {
-				csvWriter.write("");
+				csvWriter.write(""); columnsNo++;
 			}
 			
-			csvWriter.write(EntryHumanCsvFieldType.END.name());
-			csvWriter.write(String.valueOf(entry.getEntryId()));
+			csvWriter.write(EntryHumanCsvFieldType.END.name()); columnsNo++;
+			csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
+			
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
 			csvWriter.endRecord();			
-			csvWriter.endRecord();
-			csvWriter.endRecord();
 		}
 
 		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
@@ -740,21 +782,28 @@ public class Dictionary2Helper {
 	private class EntryPartConverterKanji {
 
 		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
-			
+						
 			List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
 			
 			for (KanjiInfo kanjiInfo : kanjiInfoList) {
 				
+				int columnsNo = 0;
+				
 				if (config.shiftCells == true) {
-					csvWriter.write("");
+					csvWriter.write(""); columnsNo++;
 				}
 
-				csvWriter.write(EntryHumanCsvFieldType.KANJI.name());		
-				csvWriter.write(String.valueOf(entry.getEntryId()));
+				csvWriter.write(EntryHumanCsvFieldType.KANJI.name()); columnsNo++;		
+				csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
 
-				csvWriter.write(kanjiInfo.getKanji());
-				csvWriter.write(Helper.convertEnumListToString(kanjiInfo.getKanjiAdditionalInfoList()));
-				csvWriter.write(Helper.convertEnumListToString(kanjiInfo.getRelativePriorityList()));
+				csvWriter.write(kanjiInfo.getKanji()); columnsNo++;
+				csvWriter.write(Helper.convertEnumListToString(kanjiInfo.getKanjiAdditionalInfoList())); columnsNo++;
+				csvWriter.write(Helper.convertEnumListToString(kanjiInfo.getRelativePriorityList())); columnsNo++;
+				
+				// wypelniacz			
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write(null);
+				}
 				
 				csvWriter.endRecord();
 			}
@@ -797,17 +846,19 @@ public class Dictionary2Helper {
 	private class EntryPartConverterReading {
 
 		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
-			
+						
 			List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
 			
 			for (ReadingInfo readingInfo : readingInfoList) {
 				
+				int columnsNo = 0;
+				
 				if (config.shiftCells == true) {
-					csvWriter.write("");
+					csvWriter.write(""); columnsNo++;
 				}
 				
-				csvWriter.write(EntryHumanCsvFieldType.READING.name());		
-				csvWriter.write(String.valueOf(entry.getEntryId()));
+				csvWriter.write(EntryHumanCsvFieldType.READING.name()); columnsNo++;		
+				csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
 				
 				//
 				
@@ -817,9 +868,9 @@ public class Dictionary2Helper {
 					kanaType = getKanaType(readingInfo.getKana().getValue());
 				}
 				
-				csvWriter.write(kanaType.name());
+				csvWriter.write(kanaType.name()); columnsNo++;
 
-				csvWriter.write(readingInfo.getKana().getValue());
+				csvWriter.write(readingInfo.getKana().getValue()); columnsNo++;
 				
 				String romaji = readingInfo.getKana().getRomaji();
 				
@@ -838,13 +889,18 @@ public class Dictionary2Helper {
 					romaji = romaji + " --- !!! SPRAWDŹ !!!";
 				}
 				
-				csvWriter.write(romaji);
+				csvWriter.write(romaji); columnsNo++;
 				
-				csvWriter.write(readingInfo.getNoKanji() != null ? ReadingInfoNoKanji.NO_KANJI.name() : "-");			
-				csvWriter.write(Helper.convertListToString(readingInfo.getKanjiRestrictionList()));
+				csvWriter.write(readingInfo.getNoKanji() != null ? ReadingInfoNoKanji.NO_KANJI.name() : "-"); columnsNo++;			
+				csvWriter.write(Helper.convertListToString(readingInfo.getKanjiRestrictionList())); columnsNo++;
 								
-				csvWriter.write(Helper.convertEnumListToString(readingInfo.getReadingAdditionalInfoList()));
-				csvWriter.write(Helper.convertEnumListToString(readingInfo.getRelativePriorityList()));
+				csvWriter.write(Helper.convertEnumListToString(readingInfo.getReadingAdditionalInfoList())); columnsNo++;
+				csvWriter.write(Helper.convertEnumListToString(readingInfo.getRelativePriorityList())); columnsNo++;
+				
+				// wypelniacz			
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write(null);
+				}
 				
 				csvWriter.endRecord();
 			}
@@ -903,6 +959,8 @@ public class Dictionary2Helper {
 			
 			for (Sense sense : senseList) {
 				
+				int columnsNo = 0;
+				
 				List<Gloss> glossList = sense.getGlossList();
 				
 				List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
@@ -913,24 +971,24 @@ public class Dictionary2Helper {
 				}
 				
 				if (config.shiftCells == true) {
-					csvWriter.write("");
+					csvWriter.write(""); columnsNo++;
 				}
 				
 				// czesc wspolna dla wszystkich jezykow
-				csvWriter.write(EntryHumanCsvFieldType.SENSE_COMMON.name());		
-				csvWriter.write(String.valueOf(entry.getEntryId()));
+				csvWriter.write(EntryHumanCsvFieldType.SENSE_COMMON.name());  columnsNo++;
+				csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
 
-				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanjiList()));
-				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanaList()));
+				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanjiList())); columnsNo++;
+				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanaList())); columnsNo++;
 				
-				csvWriter.write(Helper.convertEnumListToString(sense.getPartOfSpeechList()));
+				csvWriter.write(Helper.convertEnumListToString(sense.getPartOfSpeechList())); columnsNo++;
 				
-				csvWriter.write(Helper.convertListToString(sense.getReferenceToAnotherKanjiKanaList()));
+				csvWriter.write(Helper.convertListToString(sense.getReferenceToAnotherKanjiKanaList())); columnsNo++;
 				
-				csvWriter.write(Helper.convertListToString(sense.getAntonymList()));
+				csvWriter.write(Helper.convertListToString(sense.getAntonymList())); columnsNo++;
 				
-				csvWriter.write(Helper.convertEnumListToString(sense.getFieldList()));
-				csvWriter.write(Helper.convertEnumListToString(sense.getMiscList()));
+				csvWriter.write(Helper.convertEnumListToString(sense.getFieldList())); columnsNo++;
+				csvWriter.write(Helper.convertEnumListToString(sense.getMiscList())); columnsNo++;
 				
 				//
 				
@@ -957,11 +1015,16 @@ public class Dictionary2Helper {
 				
 				languageSourceCsvWriter.close();
 				
-				csvWriter.write(languageSourceCsvWriterString.toString());
+				csvWriter.write(languageSourceCsvWriterString.toString()); columnsNo++;
 				
-				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList()));
+				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList())); columnsNo++;
 				
 				csvWriter.endRecord();
+				
+				// wypelniacz			
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write(null);
+				}
 				
 				// czesc specyficzna dla jezyka angielskiego i polskiego (tlumaczenia)
 				
@@ -976,12 +1039,14 @@ public class Dictionary2Helper {
 				return;
 			}
 			
+			int columnsNo = 0;
+			
 			if (config.shiftCells == true) {
-				csvWriter.write("");
+				csvWriter.write(""); columnsNo++;
 			}
 			
-			csvWriter.write(entryHumanCsvFieldType.name());		
-			csvWriter.write(String.valueOf(entry.getEntryId()));
+			csvWriter.write(entryHumanCsvFieldType.name()); columnsNo++;		
+			csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
 
 			StringWriter glossListCsvWriterString = new StringWriter();
 
@@ -1003,7 +1068,7 @@ public class Dictionary2Helper {
 
 			glossListCsvWriter.close();
 
-			csvWriter.write(glossListCsvWriterString.toString());
+			csvWriter.write(glossListCsvWriterString.toString()); columnsNo++;
 
 			//
 
@@ -1020,7 +1085,7 @@ public class Dictionary2Helper {
 				}
 			}
 
-			csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList));
+			csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
 			
 			//
 			
@@ -1063,12 +1128,17 @@ public class Dictionary2Helper {
 										
 					java.util.Map.Entry<String, String> currentPolishJapaneseTranslateAndInfo = uniqueOldPolishJapaneseTranslatesEntryIterator.next();
 									
-					csvWriter.write("STARE_TŁUMACZENIE\n" + "---\n---\n" + currentPolishJapaneseTranslateAndInfo.getKey());
+					csvWriter.write("STARE_TŁUMACZENIE\n" + "---\n---\n" + currentPolishJapaneseTranslateAndInfo.getKey()); columnsNo++;
 					
 					if (currentPolishJapaneseTranslateAndInfo.getValue().equals("") == false) {
-						csvWriter.write("STARE_INFO\n" + "---\n---\n" + currentPolishJapaneseTranslateAndInfo.getValue());
+						csvWriter.write("STARE_INFO\n" + "---\n---\n" + currentPolishJapaneseTranslateAndInfo.getValue()); columnsNo++;
 					}
 				}
+			}
+			
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
 			}
 			
 			csvWriter.endRecord();
@@ -1343,48 +1413,47 @@ public class Dictionary2Helper {
 	private void readPolishDictionary() throws Exception {
 		
 		// wczytywanie slownika
-		if (polishDictionaryEntryList == null) {
+		if (polishDictionaryEntryListMap == null) {
 			
-			polishDictionaryEntryList = new ArrayList<>();
+			System.out.println("Reading polish dictionary file: " + polishDictionaryFile);
 			
-			//
+			polishDictionaryEntryListMap = new LinkedHashMap<>();
 			
-			for (File currentPolishDictionaryFile : polishDictionaryFiles) {
-				
-				if (currentPolishDictionaryFile.exists() == true) {
-					
-					System.out.println("Reading polish dictionary file: " + currentPolishDictionaryFile);
-					
-					List<Entry> currentPolishDictionaryFileEntryList = readEntryListFromHumanCsv(currentPolishDictionaryFile.getAbsolutePath());
-					
-					polishDictionaryEntryList.addAll(currentPolishDictionaryFileEntryList);					
-				}
+			List<Entry> polishDictionaryEntryList = readEntryListFromHumanCsv(polishDictionaryFile.getAbsolutePath());
+						
+			for (Entry entry : polishDictionaryEntryList) {
+				polishDictionaryEntryListMap.put(entry.getEntryId(), entry);
 			}
 		}		
 	}
 	
-	private void cachePolishDictionary() throws Exception {
+	public Entry getEntryFromPolishDictionary(Integer entryId) throws Exception {
 		
 		readPolishDictionary();
 		
-		// cachoe'owanie encji z polskiego slownika
-		if (polishDictionaryEntryListCache == null) {
-			
-			System.out.println("Caching polish dictionary");
-			
-			polishDictionaryEntryListCache = new TreeMap<>();
-						
-			for (Entry entry : polishDictionaryEntryList) {
-				polishDictionaryEntryListCache.put(entry.getEntryId(), entry);
-			}
-		}		
+		return polishDictionaryEntryListMap.get(entryId);
 	}
-
-	public Entry getEntryFromPolishDictionary(Integer entryId) throws Exception {
+	
+	public void addEntryToPolishDictionary(Entry newEntry) throws Exception {
 		
-		cachePolishDictionary();
+		readPolishDictionary();
 		
-		return polishDictionaryEntryListCache.get(entryId);
+		if (polishDictionaryEntryListMap.get(newEntry.getEntryId()) != null) {
+			throw new Exception("Can't add already added entry with id: " + newEntry.getEntryId());
+		}
+				
+		polishDictionaryEntryListMap.put(newEntry.getEntryId(), newEntry);
+	}
+	
+	public void updateEntryInPolishDictionary(Entry entry) throws Exception {
+		
+		readPolishDictionary();
+		
+		if (polishDictionaryEntryListMap.get(entry.getEntryId()) == null) {
+			throw new Exception("Can't update entry with id: " + entry.getEntryId());
+		}
+		
+		polishDictionaryEntryListMap.put(entry.getEntryId(), entry);
 	}
 	
 	public List<JMdict.Entry> getAllPolishDictionaryEntryList() throws Exception {
@@ -1392,7 +1461,7 @@ public class Dictionary2Helper {
 		// wczytywanie slownika
 		readPolishDictionary();
 		
-		return polishDictionaryEntryList;
+		return new ArrayList<>(polishDictionaryEntryListMap.values());
 	}
 	
 	public void validateAllPolishDictionaryEntryList() throws Exception {
@@ -1422,7 +1491,7 @@ public class Dictionary2Helper {
 		// walidacja wpisow
 		Set<Integer> alreadyCheckedEntryId = new TreeSet<>();
 		
-		for (Entry entry : polishDictionaryEntryList) {
+		for (Entry entry : polishDictionaryEntryListMap.values()) {
 			
 			// sprawdzamy, czy taki wpis juz nie wystepu
 			if (alreadyCheckedEntryId.contains(entry.getEntryId()) == true) {

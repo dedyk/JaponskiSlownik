@@ -189,6 +189,6 @@ public class GetEntryFromDictionary {
 		
 		HelpFormatter formatter = new HelpFormatter();
 		
-		formatter.printHelp(GenerateMissingWordListApp.class.getSimpleName(), options);
+		formatter.printHelp(GetEntryFromDictionary.class.getSimpleName(), options);
 	}
 }
