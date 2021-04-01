@@ -72,7 +72,7 @@ public class Validator {
 			
 			Set<String> translatesSet = new TreeSet<String>(translates);
 			
-			if (translates.size() != translatesSet.size()) {
+			if (translates.size() != translatesSet.size() && polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.DICTIONARY2_SOURCE) == false) {
 				
 				wasDuplicateTranslateError = true;
 				
