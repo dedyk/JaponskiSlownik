@@ -283,7 +283,7 @@ public class WordGenerator {
 					saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
 											
 					// zapisanie slow w nowym formacie
-					dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word-new-test.csv", resultDictionary2EntryList, entryAdditionalData);
+					dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", resultDictionary2EntryList, entryAdditionalData);
 				}					
 				
 				//
@@ -357,6 +357,9 @@ public class WordGenerator {
 				AtomicInteger counter = new AtomicInteger();
 				
 				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
+				
+				// lista identyfikatorow group (entry id): potrzebne dla zapisu w nowym formacie
+				Set<Integer> entryIdSet = new LinkedHashSet<>();
 				
 				System.out.println("Sprawdzanie w jisho.org: " + checkInJishoOrg);
 				
@@ -459,6 +462,8 @@ public class WordGenerator {
 										foundWordList.add(polishJapaneseEntry);
 										
 										foundWordListInCommonWordMap.put(commonWord.getId(), commonWord);
+										
+										entryIdSet.add(groupEntry.getGroup().getId());
 									}		
 									
 									//
@@ -557,6 +562,57 @@ public class WordGenerator {
 				}
 				
 				additionalWordtoCheckFileWriter.close();
+				
+				// zapis w nowym formacie
+				{						
+					// wczytywanie pomocnika slownikowego
+					Dictionary2Helper dictionaryHelper = Dictionary2Helper.init(wordGeneratorHelper);
+
+					// lista wynikowa
+					List<Entry> resultDictionary2EntryList = new ArrayList<>();
+					
+					// dodatkowe informacje
+					EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+					
+					// chodzimy po wszystkich elementach
+					for (Integer currentEntryId : entryIdSet) {
+						
+						Entry jmdictEntry = dictionaryHelper.getJMdictEntry(currentEntryId);
+						
+						if (jmdictEntry == null) { // nie znaleziono
+							throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie
+						}
+						
+						Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(jmdictEntry.getEntryId());
+						
+						if (entryFromPolishDictionary != null) { // taki wpis juz jest w polskim slowniku
+							
+							System.out.println("[Error] Entry already exists in polish dictionary: " + currentEntryId);
+							
+							continue;					
+						}
+						
+						// uzupelnienie o puste polskie tlumaczenie
+						dictionaryHelper.createEmptyPolishSense(jmdictEntry);
+						
+						// pobranie ze starego slownika interesujacych danych (np. romaji)
+						dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(jmdictEntry, entryAdditionalData);
+
+						// dodajemy do listy
+						resultDictionary2EntryList.add(jmdictEntry);
+					}
+
+					Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
+					
+						
+					saveEntryListAsHumanCsvConfig.addOldPolishTranslates = true;
+					saveEntryListAsHumanCsvConfig.markRomaji = true;
+					saveEntryListAsHumanCsvConfig.shiftCells = true;
+					saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
+											
+					// zapisanie slow w nowym formacie
+					dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", resultDictionary2EntryList, entryAdditionalData);
+				}
 				
 				break;
 			}
@@ -3385,7 +3441,7 @@ public class WordGenerator {
 						saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
 												
 						// zapisanie slow w nowym formacie
-						dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word-new-test.csv", resultDictionary2EntryList, entryAdditionalData);
+						dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", resultDictionary2EntryList, entryAdditionalData);
 					}					
 					
 				} else { // ustawienie slow
