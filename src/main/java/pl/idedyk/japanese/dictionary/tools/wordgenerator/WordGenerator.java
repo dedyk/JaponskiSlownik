@@ -66,6 +66,9 @@ import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
 import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector.JapaneseWord;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 
@@ -2926,6 +2929,9 @@ public class WordGenerator {
 						Collections.shuffle(polishJapaneseEntriesList);
 					}
 					
+					// lista identyfikatorow group (entry id): potrzebne dla zapisu w nowym formacie
+					Set<Integer> entryIdSet = new LinkedHashSet<>();
+					
 					//
 					
 					class PolishJapaneseEntryAndGroupEntryListWrapper {
@@ -2995,6 +3001,10 @@ public class WordGenerator {
 							if (JMENewDictionary.isMultiGroup(groupEntryList) == true && force == true) {
 								throw new RuntimeException("MultiGroup for: " + polishJapaneseEntry.getId() + " and force = true");
 							}
+							
+							for (GroupEntry currentGroupEntry : groupEntryList) {
+								entryIdSet.add(currentGroupEntry.getGroup().getId());
+							}							
 							
 							if (JMENewDictionary.isMultiGroup(groupEntryList) == false || force == true) { // grupa pojedyncza
 								
@@ -3261,10 +3271,63 @@ public class WordGenerator {
 								throws IOException {								
 							throw new UnsupportedOperationException();								
 						}
-					};				
+					};
 					
-					// zapis
+					// zapis (stary format)
 					CsvReaderWriter.generateCsv(new String[] { findWordsWithJmedictChangeFilename }, resultAsPolishJapaneseEntryList, true, true, false, true, customAdditionalCsvWriter);
+
+					//
+					
+					// przefiltrowanie listy, aby uzyskac tylko nieznane elementy, pozostale elementy beda w nowym formacie
+					{						
+						// wczytywanie pomocnika slownikowego
+						Dictionary2Helper dictionaryHelper = Dictionary2Helper.init(wordGeneratorHelper);
+
+						// lista wynikowa
+						List<Entry> resultDictionary2EntryList = new ArrayList<>();
+						
+						// dodatkowe informacje
+						EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+						
+						// chodzimy po wszystkich elementach
+						for (Integer currentEntryId : entryIdSet) {
+							
+							Entry jmdictEntry = dictionaryHelper.getJMdictEntry(currentEntryId);
+							
+							if (jmdictEntry == null) { // nie znaleziono
+								throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie
+							}
+							
+							Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(jmdictEntry.getEntryId());
+							
+							if (entryFromPolishDictionary != null) { // taki wpis juz jest w polskim slowniku
+								
+								System.out.println("[Error] Entry already exists in polish dictionary: " + currentEntryId);
+								
+								continue;					
+							}
+							
+							// uzupelnienie o puste polskie tlumaczenie
+							dictionaryHelper.createEmptyPolishSense(jmdictEntry);
+							
+							// pobranie ze starego slownika interesujacych danych (np. romaji)
+							dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(jmdictEntry, entryAdditionalData);
+
+							// dodajemy do listy
+							resultDictionary2EntryList.add(jmdictEntry);
+						}
+
+						Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
+						
+							
+						saveEntryListAsHumanCsvConfig.addOldPolishTranslates = true;
+						saveEntryListAsHumanCsvConfig.markRomaji = true;
+						saveEntryListAsHumanCsvConfig.shiftCells = true;
+						saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
+												
+						// zapisanie slow w nowym formacie
+						dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word-new-test.csv", resultDictionary2EntryList, entryAdditionalData);
+					}					
 					
 				} else { // ustawienie slow
 					

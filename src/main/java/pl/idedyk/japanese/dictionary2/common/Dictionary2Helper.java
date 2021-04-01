@@ -94,7 +94,18 @@ public class Dictionary2Helper {
 	
 	private Dictionary2Helper() { }
 	
+	
+	
 	public static Dictionary2Helper init() {
+				
+		// stary pomocnik		
+		WordGeneratorHelper oldWordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
+				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
+
+		return init(oldWordGeneratorHelper);
+	}
+	
+	public static Dictionary2Helper init(WordGeneratorHelper oldWordGeneratorHelper) {
 		
 		// init
 		System.setProperty("jdk.xml.entityExpansionLimit", "0");
@@ -110,11 +121,10 @@ public class Dictionary2Helper {
 		//
 		
 		dictionaryHelper.polishDictionaryFile = new File("input/word2-test01.csv");
-		
-		// stary pomocnik		
-		dictionaryHelper.oldWordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
-				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
 
+		dictionaryHelper.oldWordGeneratorHelper = oldWordGeneratorHelper;
+		
+		//
 		
 		return dictionaryHelper;
 	}
