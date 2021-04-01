@@ -1739,10 +1739,15 @@ public class Dictionary2Helper {
 			
 			for (ReadingInfo readingInfo : entryReadingInfoList) {
 				
-				PolishJapaneseEntry polishJapaneseEntryForReadingKana = allPolishJapaneseEntriesForEntry.stream().filter((p) -> p.getKana().equals(readingInfo.getKana().getValue())).findFirst().get();
+				Optional<PolishJapaneseEntry> polishJapaneseEntryForReadingKanaOptional = allPolishJapaneseEntriesForEntry.stream().filter((p) -> p.getKana().equals(readingInfo.getKana().getValue())).findFirst();
 				
-				readingInfo.getKana().setKanaType(ReadingInfoKanaType.fromValue(polishJapaneseEntryForReadingKana.getWordType().name()));
-				readingInfo.getKana().setRomaji(polishJapaneseEntryForReadingKana.getRomaji());
+				if (polishJapaneseEntryForReadingKanaOptional.isPresent() == true) {
+					
+					PolishJapaneseEntry polishJapaneseEntryForReadingKana = polishJapaneseEntryForReadingKanaOptional.get();
+					
+					readingInfo.getKana().setKanaType(ReadingInfoKanaType.fromValue(polishJapaneseEntryForReadingKana.getWordType().name()));
+					readingInfo.getKana().setRomaji(polishJapaneseEntryForReadingKana.getRomaji());					
+				}				
 			}
 						
 			// istniejace tlumaczenie (przygotowanie danych)

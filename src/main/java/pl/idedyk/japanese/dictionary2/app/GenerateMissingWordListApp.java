@@ -30,7 +30,7 @@ public class GenerateMissingWordListApp {
 		// opcje
 		Options options = new Options();
 		
-		options.addOption("cijo", "check-in-jisho-org", false, "Only kanji");			
+		options.addOption("cijo", "check-in-jisho-org", false, "Check in jisho org");			
 		options.addOption("f", "file", true, "Word list file name");
 		options.addOption("awwdeiod", "add-words-which-also-doesnt-exist-in-old-dictionary", false, "Add words which also doesn't exist in old dictionary");
 		options.addOption("h", "help", false, "Help");
