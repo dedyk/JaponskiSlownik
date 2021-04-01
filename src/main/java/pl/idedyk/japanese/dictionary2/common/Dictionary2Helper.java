@@ -2018,8 +2018,8 @@ public class Dictionary2Helper {
 				return polishJapaneseEntryKanji.equals(searchKanji) == true && polishJapaneseEntryKana.equals(searchKana) == true;				
 			}).findFirst();
 			
-			if (polishJapaneseEntryOptional.isPresent() == false) { // to nigdy nie powinno zdarzyc sie
-				throw new RuntimeException(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana);
+			if (polishJapaneseEntryOptional.isPresent() == false) { // tego elementu nie ma w starym slowniku, trzeba uruchomic generowanie alternatyw
+				continue;
 			}
 			
 			PolishJapaneseEntry polishJapaneseEntry = polishJapaneseEntryOptional.get();
@@ -2219,6 +2219,9 @@ public class Dictionary2Helper {
 			
 			case SUMO:
 				result.add("sumo"); break;
+				
+			case SPORTS:
+				result.add("sport"); break;
 				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
