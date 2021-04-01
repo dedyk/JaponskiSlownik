@@ -120,7 +120,7 @@ public class Dictionary2Helper {
 		
 		//
 		
-		dictionaryHelper.polishDictionaryFile = new File("input/word2-test01.csv");
+		dictionaryHelper.polishDictionaryFile = new File("input/word2.csv");
 
 		dictionaryHelper.oldWordGeneratorHelper = oldWordGeneratorHelper;
 		
