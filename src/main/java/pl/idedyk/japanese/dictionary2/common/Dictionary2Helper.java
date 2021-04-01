@@ -2202,6 +2202,9 @@ public class Dictionary2Helper {
 			case COMPUTING:
 				result.add("informatyka"); break;
 			
+			case SUMO:
+				result.add("sumo"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
