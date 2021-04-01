@@ -2264,6 +2264,9 @@ public class Dictionary2Helper {
 			case IDIOMATIC_EXPRESSION:
 				result.add("wyrażenie idiomatyczne"); break;
 				
+			case ARCHAISM:
+				result.add("archaizm"); break;
+				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
