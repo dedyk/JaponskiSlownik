@@ -2251,6 +2251,9 @@ public class Dictionary2Helper {
 			case ONOMATOPOEIC_OR_MIMETIC_WORD:
 				result.add("onomatopeiczne lub mimetyczne słowo"); break; 
 				
+			case IDIOMATIC_EXPRESSION:
+				result.add("wyrażenie idiomatyczne"); break;
+				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
