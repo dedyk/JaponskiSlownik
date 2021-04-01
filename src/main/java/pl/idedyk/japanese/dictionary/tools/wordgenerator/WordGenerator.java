@@ -3278,7 +3278,7 @@ public class WordGenerator {
 
 					//
 					
-					// przefiltrowanie listy, aby uzyskac tylko nieznane elementy, pozostale elementy beda w nowym formacie
+					// zapis w nowym formacie
 					{						
 						// wczytywanie pomocnika slownikowego
 						Dictionary2Helper dictionaryHelper = Dictionary2Helper.init(wordGeneratorHelper);
