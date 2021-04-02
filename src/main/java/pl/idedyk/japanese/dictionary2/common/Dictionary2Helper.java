@@ -2270,6 +2270,9 @@ public class Dictionary2Helper {
 			case ARCHAISM:
 				result.add("archaizm"); break;
 				
+			case HONORIFIC_OR_RESPECTFUL_SONKEIGO_LANGUAGE:
+				result.add("honoryfikatywnie"); break;
+				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
