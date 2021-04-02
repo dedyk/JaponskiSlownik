@@ -2518,6 +2518,10 @@ public class Dictionary2Helper {
 		
 		// pozniej
 		
+		int fixme4 = 1;
+		// a moze uzyc
+		// saveEntryAsHumanCsv bez polskiego znaczenia i porownac, czy sa jednakowe ???
+		
 		for (int jmdictEntrySenseListIdx = 0; jmdictEntrySenseListIdx < jmdictEntrySenseList.size(); ++jmdictEntrySenseListIdx) {
 			
 			// stary sense
