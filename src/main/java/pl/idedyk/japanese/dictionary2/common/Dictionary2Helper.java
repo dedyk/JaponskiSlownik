@@ -124,8 +124,8 @@ public class Dictionary2Helper {
 		int fixme = 1;
 		// !!!!!!!!!!!!!!!!!!!!!1
 		
-		//dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
-		dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
+		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+		//dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
 		System.out.println("FIXME !!!!!!!!!!");
 		
 		//
@@ -2504,7 +2504,20 @@ public class Dictionary2Helper {
 		// czyscimy stary sense
 		polishJapaneseEntry.getSenseList().clear();
 		
-		// sprawdzamy, czy sens nie zmienily sie
+		// sprawdzamy, czy sens nie zmienily sie w starym i nowym
+		
+		// jesli tak to
+		
+		// uzupelnienie o puste polskie tlumaczenie
+		// dictionaryHelper.createEmptyPolishSense(entry);
+		
+		// pobranie ze starego slownika interesujacych danych (np. romaji)
+		// dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry, entryAdditionalData);
+
+		// i uzupelniamy ze starego slownika
+		
+		// pozniej
+		
 		for (int jmdictEntrySenseListIdx = 0; jmdictEntrySenseListIdx < jmdictEntrySenseList.size(); ++jmdictEntrySenseListIdx) {
 			
 			// stary sense
@@ -2552,8 +2565,9 @@ public class Dictionary2Helper {
 		// dokonczyc !!!!
 	}
 	
-	private String getHashForSense(Sense sense, List<Gloss> glossList, List<SenseAdditionalInfo> additionalInfoList) {
+	private String getHashForSenseList(List<Sense> senseList, List<Gloss> glossList, List<SenseAdditionalInfo> additionalInfoList) {
 		
+		/*
 		StringWriter stringWriter = new StringWriter();
 		
 		// liczymy hash		
@@ -2589,6 +2603,9 @@ public class Dictionary2Helper {
 		
 		
 		return DigestUtils.sha256Hex(stringWriter.toString());
+		*/
+		
+		return null;
 	}
 
 	//
