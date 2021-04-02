@@ -120,8 +120,9 @@ public class Dictionary2Helper {
 		int fixme = 1;
 		// !!!!!!!!!!!!!!!!!!!!!1
 		
-		//dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
-		dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
+		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+		//dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
+		System.out.println("FIXME !!!!!!!!!!");
 		
 		//
 		
@@ -877,32 +878,14 @@ public class Dictionary2Helper {
 				
 				//
 				
-				ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
+				generateKanaTypeAndRomaji(readingInfo, config.markRomaji);
 				
-				if (kanaType == null) {
-					kanaType = getKanaType(readingInfo.getKana().getValue());
-				}
-				
+				ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();				
 				csvWriter.write(kanaType.name()); columnsNo++;
 
 				csvWriter.write(readingInfo.getKana().getValue()); columnsNo++;
 				
 				String romaji = readingInfo.getKana().getRomaji();
-				
-				if (romaji == null) {
-					
-					if (romaji == null) {
-						try {
-							romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana().getValue(), kanaHelper.getKanaCache(), true));
-						} catch (Exception e) {
-							romaji = "FIXME";
-						}
-					}				
-				}
-				
-				if (config.markRomaji == true) {
-					romaji = romaji + " --- !!! SPRAWDŹ !!!";
-				}
 				
 				csvWriter.write(romaji); columnsNo++;
 				
@@ -920,7 +903,7 @@ public class Dictionary2Helper {
 				csvWriter.endRecord();
 			}
 		}
-		
+				
 		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
@@ -1290,6 +1273,36 @@ public class Dictionary2Helper {
 				throw new RuntimeException(fieldType.name());
 			}			
 		}
+	}
+	
+	private void generateKanaTypeAndRomaji(ReadingInfo readingInfo, boolean markRomaji) {
+		
+		ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
+		
+		if (kanaType == null) {
+			kanaType = getKanaType(readingInfo.getKana().getValue());
+		}
+		
+		readingInfo.getKana().setKanaType(kanaType);
+
+		String romaji = readingInfo.getKana().getRomaji();
+		
+		if (romaji == null) {
+			
+			if (romaji == null) {
+				try {
+					romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana().getValue(), kanaHelper.getKanaCache(), true));
+				} catch (Exception e) {
+					romaji = "FIXME";
+				}
+			}				
+		}
+		
+		if (markRomaji == true) {
+			romaji = romaji + " --- !!! SPRAWDŹ !!!";
+		}
+		
+		readingInfo.getKana().setRomaji(romaji);
 	}
 		
 	public void createEmptyPolishSense(Entry entry) {
@@ -2472,16 +2485,16 @@ public class Dictionary2Helper {
 				
 			} else {
 				
-				throw new RuntimeException();
+				// generujemy kana type i romaji
+				generateKanaTypeAndRomaji(jmdictEntryReadingInfo, true);
 			}
-			
-
-			
 			
 			// i dodajemy
 			polishJapaneseEntry.getReadingInfoList().add(jmdictEntryReadingInfo);			
 		}
 		
+		int fixme = 1;
+		// dokonczyc !!!!
 	}
 
 	//
