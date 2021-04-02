@@ -32,6 +32,7 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang.StringUtils;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.core.SimpleAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
@@ -2223,6 +2224,15 @@ public class Dictionary2Helper {
 			case SPORTS:
 				result.add("sport"); break;
 				
+			case LINGUISTICS:
+				result.add("lingwistyka"); break;
+				
+			case ASTRONOMY:
+				result.add("astronomia"); break;
+				
+			case BUDDHISM:
+				result.add("buddyzm"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
@@ -2317,7 +2327,12 @@ public class Dictionary2Helper {
 			String languageCodeInPolish = translateToPolishLanguageCode(languageSource.getLang());
 			String languageValue = languageSource.getValue();
 			
-			result.add(languageCodeInPolish + ": " + languageValue);			
+			if (StringUtils.isBlank(languageValue) == false) {
+				result.add(languageCodeInPolish + ": " + languageValue);
+				
+			} else {
+				result.add(translateToPolishLanguageCodeWithoutValue(languageSource.getLang()));
+			}
 		}
 		
 		return result;
@@ -2341,6 +2356,24 @@ public class Dictionary2Helper {
 		
 		case "eng":
 			return "ang";
+			
+		case "ita":
+			return "wło";
+			
+			default:
+				throw new RuntimeException("Unknown language: " + language);
+		}
+	}
+	
+	private String translateToPolishLanguageCodeWithoutValue(String language) {
+		
+		switch (language) {
+		
+		case "eng":
+			return "słowo pochodzenia angielskiego";
+			
+		case "ita":
+			return "słowo pochodzenia włoskiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
