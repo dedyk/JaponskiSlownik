@@ -89,7 +89,7 @@ public class SetEntryToPolishDictionary {
 		// zapisanie docelowej postaci
 		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
 				
-		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig,  "input/word2-new.csv", dictionaryHelper.getAllPolishDictionaryEntryList(), new EntryAdditionalData());
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig,  "input/word2-new-set.csv", dictionaryHelper.getAllPolishDictionaryEntryList(), new EntryAdditionalData());
 	}
 	
 	private static void printHelp(Options options) {
