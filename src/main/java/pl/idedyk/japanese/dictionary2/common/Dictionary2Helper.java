@@ -16,6 +16,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 import java.util.TreeMap;
@@ -26,11 +27,14 @@ import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.lucene.analysis.TokenStream;
@@ -120,8 +124,8 @@ public class Dictionary2Helper {
 		int fixme = 1;
 		// !!!!!!!!!!!!!!!!!!!!!1
 		
-		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
-		//dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
+		//dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+		dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
 		System.out.println("FIXME !!!!!!!!!!");
 		
 		//
@@ -2493,8 +2497,98 @@ public class Dictionary2Helper {
 			polishJapaneseEntry.getReadingInfoList().add(jmdictEntryReadingInfo);			
 		}
 		
+		// aktualizacja sense
+		List<Sense> polishJapaneseEntrySenseList = new ArrayList<>(polishJapaneseEntry.getSenseList());
+		List<Sense> jmdictEntrySenseList = jmdictEntry.getSenseList();
+		
+		// czyscimy stary sense
+		polishJapaneseEntry.getSenseList().clear();
+		
+		// sprawdzamy, czy sens nie zmienily sie
+		for (int jmdictEntrySenseListIdx = 0; jmdictEntrySenseListIdx < jmdictEntrySenseList.size(); ++jmdictEntrySenseListIdx) {
+			
+			// stary sense
+			Sense polishJapaneseEntrySense = jmdictEntrySenseListIdx < polishJapaneseEntrySenseList.size() ? 
+					polishJapaneseEntrySenseList.get(jmdictEntrySenseListIdx) : null;
+					
+			// nowy sens
+			Sense jmdictEntrySense = jmdictEntrySenseList.get(jmdictEntrySenseListIdx);
+			
+			if (polishJapaneseEntrySense == null) {
+				System.out.println("AAAAAAA: " + jmdictEntry.getEntryId());
+			}
+			
+			// sprawdzamy, czy sens w obu sa jednakowe
+			
+			
+			
+			int fixme = 1;
+			// dokonczyc !!!!!
+		}
+		
+		
+		
+		for (Sense jmdictEntrySense : jmdictEntrySenseList) {
+			
+			// liczymy sume kontrolna dla sense'ow
+			
+			
+			
+			/*
+			List<Gloss> glossList = sense.getGlossList();
+			
+			List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+			List<Gloss> glossPolList = glossList.stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+			*/
+			
+			//getHashForSense(sense, glossList, additionalInfoList)
+			
+			
+			// dodajemy
+			polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
+		}		
+		
 		int fixme = 1;
 		// dokonczyc !!!!
+	}
+	
+	private String getHashForSense(Sense sense, List<Gloss> glossList, List<SenseAdditionalInfo> additionalInfoList) {
+		
+		StringWriter stringWriter = new StringWriter();
+		
+		// liczymy hash		
+		stringWriter.write(sense.getRestrictedToKanjiList().toString());
+		stringWriter.write(sense.getRestrictedToKanaList().toString());
+		stringWriter.write(sense.getPartOfSpeechList().toString());
+		stringWriter.write(sense.getReferenceToAnotherKanjiKanaList().toString());
+		stringWriter.write(sense.getAntonymList().toString());
+		stringWriter.write(sense.getFieldList().toString());
+		stringWriter.write(sense.getMiscList().toString());
+				
+		for (LanguageSource languageSource : sense.getLanguageSourceList()) {
+			
+			stringWriter.write(languageSource.getLang());
+			stringWriter.write(languageSource.getLsType() != null ? languageSource.getLsType().name() : "");
+			stringWriter.write(languageSource.getLsWasei() != null ? languageSource.getLsWasei().name() : "");
+			stringWriter.write(languageSource.getValue());			
+		}
+		
+		stringWriter.write(sense.getDialectList().toString());
+		
+		for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {			
+			stringWriter.write(senseAdditionalInfo.getValue());			
+		}
+
+		for (Gloss gloss : glossList) {
+			
+			stringWriter.write(gloss.getGType() != null ? gloss.getGType().name() : ""); 
+			stringWriter.write(gloss.getValue());
+		}
+		
+		System.out.println(stringWriter.toString());
+		
+		
+		return DigestUtils.sha256Hex(stringWriter.toString());
 	}
 
 	//

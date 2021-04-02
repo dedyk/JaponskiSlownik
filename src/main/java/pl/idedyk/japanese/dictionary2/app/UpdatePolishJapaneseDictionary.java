@@ -33,6 +33,8 @@ public class UpdatePolishJapaneseDictionary {
 			// wykonanie malej aktualizacji (kanji i reading)
 			dictionaryHelper.updatePolishJapaneseEntry(currentPolishEntry, jmdictEntry);
 			
+			int fixme = 1;
+			// !!!!!!!!!!!!			
 		}
 		
 		// zapisanie polskiego slownika
