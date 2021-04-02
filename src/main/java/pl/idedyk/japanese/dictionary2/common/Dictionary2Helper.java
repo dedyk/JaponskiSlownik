@@ -117,7 +117,11 @@ public class Dictionary2Helper {
 		
 		//
 				
-		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+		int fixme = 1;
+		// !!!!!!!!!!!!!!!!!!!!!1
+		
+		//dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+		dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
 		
 		//
 		
@@ -2436,6 +2440,51 @@ public class Dictionary2Helper {
 	public List<PolishJapaneseEntry> getOldPolishJapaneseEntriesList() throws Exception {
 		return oldWordGeneratorHelper.getPolishJapaneseEntriesList();
 	}
+	
+	public void updatePolishJapaneseEntry(Entry polishJapaneseEntry, Entry jmdictEntry) {
+		
+		// kanji mozna zaktualizowac bezwarunkowo		
+		polishJapaneseEntry.getKanjiInfoList().clear();
+		
+		polishJapaneseEntry.getKanjiInfoList().addAll(jmdictEntry.getKanjiInfoList());
+		
+		// aktualizacja czytania
+		List<ReadingInfo> polishJapaneseEntryReadingInfoList = new ArrayList<>(polishJapaneseEntry.getReadingInfoList());
+		
+		List<ReadingInfo> jmdictEntryReadingInfoList = jmdictEntry.getReadingInfoList();
+	
+		// czyscimy stare czytania
+		polishJapaneseEntry.getReadingInfoList().clear();
+		
+		// chodzimy po nowych czytaniach
+		for (ReadingInfo jmdictEntryReadingInfo : jmdictEntryReadingInfoList) {
+			
+			// szukamy odpowiednika w polskiej wersji
+			Optional<ReadingInfo> readingInfoInPolishJapaneseEntryOptional = polishJapaneseEntryReadingInfoList.stream().filter((r) -> r.getKana().getValue().equals(jmdictEntryReadingInfo.getKana().getValue())).findFirst();
+			
+			if (readingInfoInPolishJapaneseEntryOptional.isPresent() == true) {
+				
+				ReadingInfo readingInfoInPolishJapaneseEntry = readingInfoInPolishJapaneseEntryOptional.get();
+				
+				// aktualizujemy je z polskiego czytania
+				jmdictEntryReadingInfo.getKana().setKanaType(readingInfoInPolishJapaneseEntry.getKana().getKanaType());
+				jmdictEntryReadingInfo.getKana().setRomaji(readingInfoInPolishJapaneseEntry.getKana().getRomaji());
+				
+			} else {
+				
+				throw new RuntimeException();
+			}
+			
+
+			
+			
+			// i dodajemy
+			polishJapaneseEntry.getReadingInfoList().add(jmdictEntryReadingInfo);			
+		}
+		
+	}
+
+	//
 	
 	private static class KanjiKanaPair {
 		
