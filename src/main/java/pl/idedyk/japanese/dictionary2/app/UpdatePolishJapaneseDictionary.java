@@ -34,10 +34,14 @@ public class UpdatePolishJapaneseDictionary {
 			dictionaryHelper.updatePolishJapaneseEntry(currentPolishEntry, jmdictEntry);
 			
 			int fixme = 1;
-			// !!!!!!!!!!!!			
+			// !!!!!!!!!!!!		
+			
+			int fixme2 = 1;
+			// generowanie listy zmienionych elementow
 		}
 		
+		int fixme3 = 1;
 		// zapisanie polskiego slownika
-		dictionaryHelper.saveEntryListAsHumanCsv(new SaveEntryListAsHumanCsvConfig(), "input/word2-update-test.csv", allPolishDictionaryEntryList, new EntryAdditionalData());
+		//dictionaryHelper.saveEntryListAsHumanCsv(new SaveEntryListAsHumanCsvConfig(), "input/word2-update-test.csv", allPolishDictionaryEntryList, new EntryAdditionalData());
 	}
 }
