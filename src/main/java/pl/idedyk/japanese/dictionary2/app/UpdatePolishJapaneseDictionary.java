@@ -42,6 +42,6 @@ public class UpdatePolishJapaneseDictionary {
 		
 		int fixme3 = 1;
 		// zapisanie polskiego slownika
-		//dictionaryHelper.saveEntryListAsHumanCsv(new SaveEntryListAsHumanCsvConfig(), "input/word2-update-test.csv", allPolishDictionaryEntryList, new EntryAdditionalData());
+		dictionaryHelper.saveEntryListAsHumanCsv(new SaveEntryListAsHumanCsvConfig(), "input/word2-update-test.csv", allPolishDictionaryEntryList, new EntryAdditionalData());
 	}
 }

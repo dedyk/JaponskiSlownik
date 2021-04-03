@@ -2504,6 +2504,68 @@ public class Dictionary2Helper {
 		// czyscimy stary sense
 		polishJapaneseEntry.getSenseList().clear();
 		
+		// sprawdzamy, czy ilosc sense jest taka sama
+		if (polishJapaneseEntrySenseList.size() == jmdictEntrySenseList.size()) { // ilosc jest taka sama, porownujemy zawartosc
+			
+			for (int jmdictEntrySenseListIdx = 0; jmdictEntrySenseListIdx < jmdictEntrySenseList.size(); ++jmdictEntrySenseListIdx) {
+				
+				// stary sense
+				Sense polishJapaneseEntrySense = polishJapaneseEntrySenseList.get(jmdictEntrySenseListIdx);
+
+				// bierzmy angielskie tlumaczenia i informacje dodatkowe ze starego sense
+				List<Gloss> polishJapaneseEntrySenseGlossEngList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+				List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoEngList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+				
+				// liczymy hash dla znaczenia
+				String polishJapaneseEntrySenseHash = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(polishJapaneseEntrySense, polishJapaneseEntrySenseGlossEngList, polishJapaneseEntrySenseAdditionalInfoEngList);
+								
+				// nowy sens
+				Sense jmdictEntrySense = jmdictEntrySenseList.get(jmdictEntrySenseListIdx);
+				
+				// bierzmy angielskie tlumaczenia i informacje dodatkowe z nowego sense
+				List<Gloss> jmdictEntrySenseGlossEngList = jmdictEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+				List<SenseAdditionalInfo> jmdictEntrySenseAdditionalInfoEngList = jmdictEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+				
+				// liczymy hash dla znaczenia
+				String jmdictEntrySenseHash = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(jmdictEntrySense, jmdictEntrySenseGlossEngList, jmdictEntrySenseAdditionalInfoEngList);
+				
+				// porownujemy hash
+				if (polishJapaneseEntrySenseHash.equals(jmdictEntrySenseHash) == true) { // hash ten sam, nie bylo zmiany znaczenia w nowym slowniku
+					
+					// bierzemy nowy + aktualizuje polskie znaczenie
+					List<Gloss> polishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+					List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+					
+					jmdictEntrySense.getGlossList().addAll(polishJapaneseEntrySenseGlossPolList);
+					jmdictEntrySense.getAdditionalInfoList().addAll(polishJapaneseEntrySenseAdditionalInfoPolList);
+					
+					polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
+					
+				} else { // jest jakas zmiana
+					
+					int fixme4 = 1;
+					
+				}
+				
+				
+				
+			}
+			
+		} else { // ilosc sense jest rozna
+			
+			
+			int fixme5 = 1;
+			
+			System.out.println("BBBBBB: " + jmdictEntry.getEntryId());
+		}
+		
+		
+		
+		
+		
+		
+		//////////////////
+		
 		// sprawdzamy, czy sens nie zmienily sie w starym i nowym
 		
 		// jesli tak to
@@ -2518,6 +2580,9 @@ public class Dictionary2Helper {
 		
 		// pozniej
 		
+		////////////////////
+		
+		/*
 		int fixme4 = 1;
 		// a moze uzyc
 		// saveEntryAsHumanCsv bez polskiego znaczenia i porownac, czy sa jednakowe ???
@@ -2542,47 +2607,42 @@ public class Dictionary2Helper {
 			int fixme = 1;
 			// dokonczyc !!!!!
 		}
+		*/
+		
+		/////////////////
 		
 		
-		
+		/*
 		for (Sense jmdictEntrySense : jmdictEntrySenseList) {
 			
 			// liczymy sume kontrolna dla sense'ow
 			
 			
 			
-			/*
+			/ *
 			List<Gloss> glossList = sense.getGlossList();
 			
 			List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
 			List<Gloss> glossPolList = glossList.stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
-			*/
+			* /
 			
 			//getHashForSense(sense, glossList, additionalInfoList)
 			
 			
 			// dodajemy
 			polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
-		}		
+		}	
+		 */
 		
 		int fixme = 1;
 		// dokonczyc !!!!
 	}
 	
-	private String getHashForSenseList(List<Sense> senseList, List<Gloss> glossList, List<SenseAdditionalInfo> additionalInfoList) {
+	private String getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(Sense sense, List<Gloss> glossList, List<SenseAdditionalInfo> additionalInfoList) {
 		
-		/*
 		StringWriter stringWriter = new StringWriter();
 		
-		// liczymy hash		
-		stringWriter.write(sense.getRestrictedToKanjiList().toString());
-		stringWriter.write(sense.getRestrictedToKanaList().toString());
-		stringWriter.write(sense.getPartOfSpeechList().toString());
-		stringWriter.write(sense.getReferenceToAnotherKanjiKanaList().toString());
-		stringWriter.write(sense.getAntonymList().toString());
-		stringWriter.write(sense.getFieldList().toString());
-		stringWriter.write(sense.getMiscList().toString());
-				
+		// liczymy hash				
 		for (LanguageSource languageSource : sense.getLanguageSourceList()) {
 			
 			stringWriter.write(languageSource.getLang());
@@ -2590,9 +2650,7 @@ public class Dictionary2Helper {
 			stringWriter.write(languageSource.getLsWasei() != null ? languageSource.getLsWasei().name() : "");
 			stringWriter.write(languageSource.getValue());			
 		}
-		
-		stringWriter.write(sense.getDialectList().toString());
-		
+				
 		for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {			
 			stringWriter.write(senseAdditionalInfo.getValue());			
 		}
@@ -2602,14 +2660,8 @@ public class Dictionary2Helper {
 			stringWriter.write(gloss.getGType() != null ? gloss.getGType().name() : ""); 
 			stringWriter.write(gloss.getValue());
 		}
-		
-		System.out.println(stringWriter.toString());
-		
-		
+						
 		return DigestUtils.sha256Hex(stringWriter.toString());
-		*/
-		
-		return null;
 	}
 
 	//
