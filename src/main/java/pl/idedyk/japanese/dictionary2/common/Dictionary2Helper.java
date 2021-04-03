@@ -1848,7 +1848,7 @@ public class Dictionary2Helper {
 				}				
 			}
 			
-			if (polishJapaneseEntryForKanjiKanaPair == null) { // nie udalo sie znalexc slowa w starym slowniku				
+			if (polishJapaneseEntryForKanjiKanaPair == null) { // nie udalo sie znalesc slowa w starym slowniku				
 				throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // to chyba nigdy nie powinno zdarzyc sie
 			}
 			
@@ -2041,6 +2041,9 @@ public class Dictionary2Helper {
 			}).findFirst();
 			
 			if (polishJapaneseEntryOptional.isPresent() == false) { // tego elementu nie ma w starym slowniku, trzeba uruchomic generowanie alternatyw
+				
+				System.out.println("[Warning] Can't find polish japanese entry for " + entry.getEntryId() + " - " + kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana);
+				
 				continue;
 			}
 			
