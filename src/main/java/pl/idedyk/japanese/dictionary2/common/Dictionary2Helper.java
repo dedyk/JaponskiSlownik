@@ -2634,7 +2634,7 @@ public class Dictionary2Helper {
 			
 			int fixme5 = 1;
 			
-			//System.out.println("BBBBBB: " + jmdictEntry.getEntryId());
+			System.out.println("BBBBBB: " + jmdictEntry.getEntryId());
 		}
 		
 		
