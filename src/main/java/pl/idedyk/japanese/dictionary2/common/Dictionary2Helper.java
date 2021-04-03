@@ -2257,6 +2257,18 @@ public class Dictionary2Helper {
 			case BUDDHISM:
 				result.add("buddyzm"); break;
 				
+			case MATHEMATICS:
+				result.add("matematyka"); break;
+				
+			case MUSIC:
+				result.add("muzyka"); break;
+				
+			case MARTIAL_ARTS:
+				result.add("sztuki walki"); break;
+				
+			case MEDICINE:
+				result.add("medycyna"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
@@ -2306,6 +2318,9 @@ public class Dictionary2Helper {
 				
 			case HONORIFIC_OR_RESPECTFUL_SONKEIGO_LANGUAGE:
 				result.add("honoryfikatywnie"); break;
+				
+			case OBSOLETE_TERM:
+				result.add("przestarzałe słowo"); break;
 				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
