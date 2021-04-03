@@ -2663,6 +2663,9 @@ public class Dictionary2Helper {
 			stringWriter.write(gloss.getGType() != null ? gloss.getGType().name() : ""); 
 			stringWriter.write(gloss.getValue());
 		}
+		
+		int fixme1 = 1;
+		// jeszcze fieldList i miscList
 						
 		return DigestUtils.sha256Hex(stringWriter.toString());
 	}
