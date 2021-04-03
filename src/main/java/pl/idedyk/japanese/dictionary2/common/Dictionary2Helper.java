@@ -66,6 +66,7 @@ import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.common.Helper;
@@ -1896,9 +1897,11 @@ public class Dictionary2Helper {
 					String kana = readingInfo.getKana().getValue();
 					String romaji = readingInfo.getKana().getRomaji();
 					
+					ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
+					
 					//
 					
-					result.add(new KanjiKanaPair(null, kana, romaji));
+					result.add(new KanjiKanaPair(null, kana, kanaType, romaji));
 				}
 			}
 			
@@ -1922,6 +1925,8 @@ public class Dictionary2Helper {
 					String kana = readingInfo.getKana().getValue();
 					String romaji = readingInfo.getKana().getRomaji();
 					
+					ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
+					
 					List<String> kanjiRestrictedListForKana = readingInfo.getKanjiRestrictionList();
 					
 					boolean isRestricted = true;
@@ -1942,7 +1947,7 @@ public class Dictionary2Helper {
 					}
 					
 					// mamy pare
-					result.add(new KanjiKanaPair(kanji, kana, romaji));					
+					result.add(new KanjiKanaPair(kanji, kana, kanaType, romaji));					
 				}				
 			}
 		}
@@ -1957,9 +1962,11 @@ public class Dictionary2Helper {
 				String kana = readingInfo.getKana().getValue();
 				String romaji = readingInfo.getKana().getRomaji();
 				
+				ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
+				
 				//
 				
-				result.add(new KanjiKanaPair(null, kana, romaji));
+				result.add(new KanjiKanaPair(null, kana, kanaType, romaji));
 			}
 		}
 		
@@ -2217,6 +2224,7 @@ public class Dictionary2Helper {
 			String newPolishAdditionalInfo = joinStringForOldPolishJapaneseEntry(newPolishAdditionalInfoList, false);
 
 			// aktualizacja wpisu
+			polishJapaneseEntry.setWordType(WordType.valueOf(kanjiKanaPair.kanaType.name()));			
 			polishJapaneseEntry.setRomaji(kanjiKanaPair.romaji);
 			
 			polishJapaneseEntry.setTranslates(newPolishTranslateList);
@@ -2692,13 +2700,16 @@ public class Dictionary2Helper {
 		private String kanji;
 		
 		private String kana;
+		private ReadingInfoKanaType kanaType;
+		
 		private String romaji;
 		
 		private List<Sense> senseList = new ArrayList<>();
 
-		public KanjiKanaPair(String kanji, String kana, String romaji) {
+		public KanjiKanaPair(String kanji, String kana, ReadingInfoKanaType kanaType, String romaji) {
 			this.kanji = kanji;
 			this.kana = kana;
+			this.kanaType = kanaType;
 			this.romaji = romaji;
 		}
 
