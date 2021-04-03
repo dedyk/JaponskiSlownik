@@ -17,6 +17,8 @@ public class UpdatePolishJapaneseDictionary {
 		// wczytanie polskiego slownika
 		List<Entry> allPolishDictionaryEntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
 
+		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+		
 		// chodzimy po wszystkich elementach
 		for (Entry currentPolishEntry : allPolishDictionaryEntryList) {
 			
@@ -31,7 +33,7 @@ public class UpdatePolishJapaneseDictionary {
 			}
 			
 			// wykonanie malej aktualizacji (kanji i reading)
-			dictionaryHelper.updatePolishJapaneseEntry(currentPolishEntry, jmdictEntry);
+			dictionaryHelper.updatePolishJapaneseEntry(currentPolishEntry, jmdictEntry, entryAdditionalData);
 			
 			int fixme = 1;
 			// !!!!!!!!!!!!		
@@ -40,8 +42,13 @@ public class UpdatePolishJapaneseDictionary {
 			// generowanie listy zmienionych elementow
 		}
 		
+		SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new SaveEntryListAsHumanCsvConfig();
+		
+		// dodajemy stare znaczenia
+		saveEntryListAsHumanCsvConfig.addOldPolishTranslatesDuringDictionaryUpdate = true;
+		
 		int fixme3 = 1;
 		// zapisanie polskiego slownika
-		dictionaryHelper.saveEntryListAsHumanCsv(new SaveEntryListAsHumanCsvConfig(), "input/word2-update-test.csv", allPolishDictionaryEntryList, new EntryAdditionalData());
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update-test.csv", allPolishDictionaryEntryList, entryAdditionalData);
 	}
 }

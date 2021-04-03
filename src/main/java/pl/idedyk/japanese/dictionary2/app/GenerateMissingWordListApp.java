@@ -188,7 +188,7 @@ public class GenerateMissingWordListApp {
 		saveEntryListAsHumanCsvConfig.shiftCells = true;
 		saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
 		
-		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new-test.csv", result, entryAdditionalData);
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", result, entryAdditionalData);
 		
 		// zapisywanie list
 		FileWriter searchResultFileWriter = new FileWriter(wordListFileName + "-new");
