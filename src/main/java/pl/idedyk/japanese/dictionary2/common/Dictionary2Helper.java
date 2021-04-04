@@ -2307,6 +2307,9 @@ public class Dictionary2Helper {
 			case MEDICINE:
 				result.add("medycyna"); break;
 				
+			case BASEBALL:
+				result.add("baseball"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
@@ -2385,6 +2388,9 @@ public class Dictionary2Helper {
 				
 			case RYUUKYUU_BEN:
 				result.add("dialekt Ryuukyuu"); break;
+				
+			case KYUUSHUU_BEN:
+				result.add("dialekt Kyuushuu"); break;
 				
 			default:
 				throw new RuntimeException("Unknown dialect enum: " + dialectEnum);
