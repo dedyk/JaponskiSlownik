@@ -167,6 +167,41 @@ public class Helper {
 					}
 				}
 				
+				// priorytet słowa
+				{
+					int power = Integer.MAX_VALUE;
+					
+					List<GroupEnum> groups = currentPolishJapaneseEntry.getGroups();
+					
+					for (GroupEnum groupEnum : groups) {
+
+						if (groupEnum.getPower() < power) {
+							power = groupEnum.getPower();
+						}				
+					}
+					
+					List<String> groupEntryPriorityList = groupEntryList.get(0).getPriority();
+					
+					for (String priority : groupEntryPriorityList) {
+						
+						int priorityPower = JMENewDictionary.mapPriorityToPower(priority, 100);
+						
+						if (priorityPower < power) {
+							power = priorityPower;
+						}
+					}
+
+					if (currentPolishJapaneseEntry.getTranslates().size() == 1 && currentPolishJapaneseEntry.getTranslates().get(0).equals("???") == true) {				
+						power = 999;
+					}
+					
+					//
+					
+					if (attributeList.contains(AttributeType.PRIORITY) == false) {						
+						attributeList.addAttributeValue(AttributeType.PRIORITY, String.valueOf(power));
+					}
+				}
+				
 				// suru verb
 				List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
 

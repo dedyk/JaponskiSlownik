@@ -16,6 +16,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.Map.Entry;
 
+import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
@@ -33,7 +34,6 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.dto.RadicalInfo;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
@@ -403,37 +403,14 @@ public class CsvReaderWriter {
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
-			List<GroupEnum> groups = polishJapaneseEntry.getGroups();
-						
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
-			
 			int power = Integer.MAX_VALUE;
 			
-			for (GroupEnum groupEnum : groups) {
-
-				if (groupEnum.getPower() < power) {
-					power = groupEnum.getPower();
-				}				
+			List<Attribute> priorityAttributeList = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.PRIORITY);
+			
+			for (Attribute attribute : priorityAttributeList) {
+				power = Integer.parseInt(attribute.getAttributeValue().get(0));
 			}
-			
-			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
-				
-				List<String> groupEntryPriorityList = groupEntryList.get(0).getPriority();
-				
-				for (String priority : groupEntryPriorityList) {
-					
-					int priorityPower = JMENewDictionary.mapPriorityToPower(priority, 100);
-					
-					if (priorityPower < power) {
-						power = priorityPower;
-					}
-				}
-			}
-			
-			if (polishJapaneseEntry.getTranslates().size() == 1 && polishJapaneseEntry.getTranslates().get(0).equals("???") == true) {				
-				power = 999;
-			}			
-			
+						
 			List<PolishJapaneseEntry> polishJapaneseEntryListForPower = groupByPower.get(power);
 			
 			if (polishJapaneseEntryListForPower == null) {
