@@ -127,8 +127,8 @@ public class Dictionary2Helper {
 		int fixme = 1;
 		// !!!!!!!!!!!!!!!!!!!!!1
 		
-		//dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
-		dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
+		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+		//dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
 		System.out.println("FIXME !!!!!!!!!!");
 		
 		//
@@ -1036,7 +1036,45 @@ public class Dictionary2Helper {
 				
 				writeToCsvLangSense(config, csvWriter, entry, entryAdditionalData, sense, EntryHumanCsvFieldType.SENSE_ENG, glossEngList);
 				writeToCsvLangSense(config, csvWriter, entry, entryAdditionalData, sense, EntryHumanCsvFieldType.SENSE_POL, glossPolList);	
-			}				
+			}	
+			
+			// sprawdzamy, czy cos zostalo przygotowane
+			EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(entry.getEntryId());
+			
+			// podczas aktualizacji slownika jakis sens zostal skasowany, tymczasowo wpisanie starych sense'ow
+			if (config.addOldPolishTranslatesDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary != null) { 				
+								
+				for (EntryAdditionalDataEntry$UpdateDictionarySense entryAdditionalDataEntry$UpdateDictionarySense : entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary) {
+					
+					int columnsNo = 0;
+					
+					if (config.shiftCells == true) {
+						csvWriter.write(""); columnsNo++;
+					}
+					
+					csvWriter.write(EntryHumanCsvFieldType.SENSE_POL.name() + "_DELETE"); columnsNo++;		
+					csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
+					
+					csvWriter.write("USUNIETE_TŁUMACZENIE\n" + "---\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldPolishGlossList)); columnsNo++;
+
+					//
+					
+					List<String> senseAdditionalInfoStringList = new ArrayList<>();
+
+					for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldPolishSenseAdditionalInfoList) {
+						senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+					}
+
+					csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
+					
+					// wypelniacz			
+					for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+						csvWriter.write(null);
+					}
+
+					csvWriter.endRecord();
+				}				
+			}
 		}
 		
 		private void writeToCsvLangSense(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry, EntryAdditionalData entryAdditionalData, Sense sense, EntryHumanCsvFieldType entryHumanCsvFieldType, List<Gloss> glossLangList) throws IOException {
@@ -1122,7 +1160,7 @@ public class Dictionary2Helper {
 				
 				//
 				
-				if (config.addOldPolishTranslatesDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.updateDictionarySenseMap != null) {
+				if (config.addOldPolishTranslatesDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.updateDictionarySenseMap != null) { // podczas aktualizacji slownika jakis sens zmienil sie
 					
 					EntryAdditionalDataEntry$UpdateDictionarySense entryAdditionalDataEntry$UpdateDictionarySense = entryAdditionalDataEntry.updateDictionarySenseMap.get(System.identityHashCode(sense));
 					
@@ -1140,7 +1178,7 @@ public class Dictionary2Helper {
 
 						csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;						
 					}
-				}
+				}				
 			}			
 			
 			//////
@@ -2838,33 +2876,70 @@ public class Dictionary2Helper {
 				// dodajemy nowe znaczenie					
 				
 				// uzupelniamy o puste polskie tlumaczenie
-				createEmptyPolishSense(jmdictEntrySense);
 				
+				if (jmdictEntrySense != null) {
+					createEmptyPolishSense(jmdictEntrySense);
+					
+				} else {
+					int fixme3 = 1;
+					
+					System.out.println("EEEEEEEEEEE");
+				}
+									
 				// uzupelniamy o stare tlumaczenie
-				EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(jmdictEntry.getEntryId());
-				
-				if (entryAdditionalDataEntry == null) {
-					
-					entryAdditionalDataEntry = new EntryAdditionalDataEntry();
-					
-					entryAdditionalData.jmdictEntryAdditionalDataEntryMap.put(jmdictEntry.getEntryId(), entryAdditionalDataEntry);
-				}
-				
-				if (entryAdditionalDataEntry.updateDictionarySenseMap == null) {		
-					entryAdditionalDataEntry.updateDictionarySenseMap = new TreeMap<>();
-				}
-				
 				if (polishJapaneseEntrySense != null) {
 
 					// bierzemy stare polskie znaczenia
 					List<Gloss> polishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
 					List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
 					
-					entryAdditionalDataEntry.updateDictionarySenseMap.put(System.identityHashCode(jmdictEntrySense), 
-							new EntryAdditionalDataEntry$UpdateDictionarySense(polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));
+					// tworzenie struktury pomocniczej
+					EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(jmdictEntry.getEntryId());
+					
+					if (entryAdditionalDataEntry == null) {
+						
+						entryAdditionalDataEntry = new EntryAdditionalDataEntry();
+						
+						entryAdditionalData.jmdictEntryAdditionalDataEntryMap.put(jmdictEntry.getEntryId(), entryAdditionalDataEntry);
+					}
+					
+					if (jmdictEntrySense != null) {
+												
+						if (entryAdditionalDataEntry.updateDictionarySenseMap == null) {		
+							entryAdditionalDataEntry.updateDictionarySenseMap = new TreeMap<>();
+						}
+						
+						entryAdditionalDataEntry.updateDictionarySenseMap.put(System.identityHashCode(jmdictEntrySense), 
+								new EntryAdditionalDataEntry$UpdateDictionarySense(polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));
+						
+					} else {
+						
+						if (entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary == null) {
+							entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary = new ArrayList<>();
+						}
+						
+						// wpisanie dodatkowych znaczen z polskiego slownika
+						entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary.add(
+								new EntryAdditionalDataEntry$UpdateDictionarySense(polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));						
+						
+						//tutaj();
+						
+						int fixme2 = 1;
+						
+						System.out.println("CCCCCCCCCCCCC");
+						
+					}					
 				}
 				
-				polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
+				if (jmdictEntrySense != null) {
+					polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
+					
+				} else {
+					
+					int fixme2 = 1;
+					
+					System.out.println("DDDDDDDDDDDD");					
+				}
 			}
 		}
 			
@@ -3021,6 +3096,8 @@ public class Dictionary2Helper {
 		private List<PolishJapaneseEntry> oldPolishJapaneseEntryList;
 		
 		private Map<Integer, EntryAdditionalDataEntry$UpdateDictionarySense> updateDictionarySenseMap;
+		
+		private List<EntryAdditionalDataEntry$UpdateDictionarySense> deleteDictionarySenseListDuringUpdateDictionary;
 		
 	}
 	
