@@ -127,8 +127,8 @@ public class Dictionary2Helper {
 		int fixme = 1;
 		// !!!!!!!!!!!!!!!!!!!!!1
 		
-		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
-		//dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
+		//dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+		dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
 		System.out.println("FIXME !!!!!!!!!!");
 		
 		//
@@ -2770,85 +2770,104 @@ public class Dictionary2Helper {
 		// czyscimy stary sense
 		polishJapaneseEntry.getSenseList().clear();
 		
-		// sprawdzamy, czy ilosc sense jest taka sama
-		if (polishJapaneseEntrySenseList.size() == jmdictEntrySenseList.size()) { // ilosc jest taka sama, porownujemy zawartosc
+		// 
+		int maxSenseLength = jmdictEntrySenseList.size();
+		
+		if (polishJapaneseEntrySenseList.size() > maxSenseLength) {
+			maxSenseLength = polishJapaneseEntrySenseList.size();
+		}
 			
-			for (int jmdictEntrySenseListIdx = 0; jmdictEntrySenseListIdx < jmdictEntrySenseList.size(); ++jmdictEntrySenseListIdx) {
-				
-				// stary sense
-				Sense polishJapaneseEntrySense = polishJapaneseEntrySenseList.get(jmdictEntrySenseListIdx);
+		for (int senseIdx = 0; senseIdx < maxSenseLength; ++senseIdx) {
+			
+			// stary sense
+			Sense polishJapaneseEntrySense = senseIdx < polishJapaneseEntrySenseList.size() ? polishJapaneseEntrySenseList.get(senseIdx) : null;
 
-				// bierzmy angielskie tlumaczenia i informacje dodatkowe ze starego sense
-				List<Gloss> polishJapaneseEntrySenseGlossEngList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
-				List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoEngList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+			List<Gloss> polishJapaneseEntrySenseGlossEngList = null;
+			List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoEngList = null;
+			
+			// bierzmy angielskie tlumaczenia i informacje dodatkowe ze starego sense
+			if (polishJapaneseEntrySense != null) {
 				
-				// liczymy hash dla znaczenia
-				String polishJapaneseEntrySenseHash = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(polishJapaneseEntrySense, polishJapaneseEntrySenseGlossEngList, polishJapaneseEntrySenseAdditionalInfoEngList);
-								
-				// nowy sens
-				Sense jmdictEntrySense = jmdictEntrySenseList.get(jmdictEntrySenseListIdx);
+				polishJapaneseEntrySenseGlossEngList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+				polishJapaneseEntrySenseAdditionalInfoEngList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+				
+			}
+			
+			// liczymy hash dla znaczenia
+			String polishJapaneseEntrySenseHash = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(polishJapaneseEntrySense, polishJapaneseEntrySenseGlossEngList, polishJapaneseEntrySenseAdditionalInfoEngList);
+													
+			// nowy sens
+			Sense jmdictEntrySense = senseIdx < jmdictEntrySenseList.size() ? jmdictEntrySenseList.get(senseIdx) : null;
+			
+			List<Gloss> jmdictEntrySenseGlossEngList = null;
+			List<SenseAdditionalInfo> jmdictEntrySenseAdditionalInfoEngList = null;
+			
+			if (jmdictEntrySense != null) {
 				
 				// bierzmy angielskie tlumaczenia i informacje dodatkowe z nowego sense
-				List<Gloss> jmdictEntrySenseGlossEngList = jmdictEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
-				List<SenseAdditionalInfo> jmdictEntrySenseAdditionalInfoEngList = jmdictEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+				jmdictEntrySenseGlossEngList = jmdictEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+				jmdictEntrySenseAdditionalInfoEngList = jmdictEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
 				
-				// liczymy hash dla znaczenia
-				String jmdictEntrySenseHash = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(jmdictEntrySense, jmdictEntrySenseGlossEngList, jmdictEntrySenseAdditionalInfoEngList);
+			}	
+			
+			// liczymy hash dla znaczenia
+			String jmdictEntrySenseHash = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(jmdictEntrySense, jmdictEntrySenseGlossEngList, jmdictEntrySenseAdditionalInfoEngList);
+			
+			// porownujemy hash
+			if (polishJapaneseEntrySenseHash.equals(jmdictEntrySenseHash) == true) { // hash ten sam, nie bylo zmiany znaczenia w nowym slowniku
 				
-				// porownujemy hash
-				if (polishJapaneseEntrySenseHash.equals(jmdictEntrySenseHash) == true) { // hash ten sam, nie bylo zmiany znaczenia w nowym slowniku
+				if (polishJapaneseEntrySense == null || jmdictEntrySense == null) {
+					throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie
+				}
+				
+				// bierzemy nowy + aktualizuje polskie znaczenie
+				List<Gloss> polishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+				List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+				
+				jmdictEntrySense.getGlossList().addAll(polishJapaneseEntrySenseGlossPolList);
+				jmdictEntrySense.getAdditionalInfoList().addAll(polishJapaneseEntrySenseAdditionalInfoPolList);
+				
+				polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
+				
+			} else { // jest jakas zmiana
+				
+				int fixme = 1; //// !!!!!!!!!!!!!!!!
+				// co zrobic, gdy jmdictEntrySense == null, czyli gdy jakis sens zostal usuniety ????
+				
+								
+				// dodajemy nowe znaczenie					
+				
+				// uzupelniamy o puste polskie tlumaczenie
+				createEmptyPolishSense(jmdictEntrySense);
+				
+				// uzupelniamy o stare tlumaczenie
+				EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(jmdictEntry.getEntryId());
+				
+				if (entryAdditionalDataEntry == null) {
 					
-					// bierzemy nowy + aktualizuje polskie znaczenie
-					List<Gloss> polishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
-					List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+					entryAdditionalDataEntry = new EntryAdditionalDataEntry();
 					
-					jmdictEntrySense.getGlossList().addAll(polishJapaneseEntrySenseGlossPolList);
-					jmdictEntrySense.getAdditionalInfoList().addAll(polishJapaneseEntrySenseAdditionalInfoPolList);
-					
-					polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
-					
-				} else { // jest jakas zmiana
-					
+					entryAdditionalData.jmdictEntryAdditionalDataEntryMap.put(jmdictEntry.getEntryId(), entryAdditionalDataEntry);
+				}
+				
+				if (entryAdditionalDataEntry.updateDictionarySenseMap == null) {		
+					entryAdditionalDataEntry.updateDictionarySenseMap = new TreeMap<>();
+				}
+				
+				if (polishJapaneseEntrySense != null) {
+
 					// bierzemy stare polskie znaczenia
 					List<Gloss> polishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
 					List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
 					
-					// dodajemy nowe znaczenie					
-					
-					// uzupelniamy o puste polskie tlumaczenie
-					createEmptyPolishSense(jmdictEntrySense);
-					
-					// uzupelniamy o stare tlumaczenie
-					EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(jmdictEntry.getEntryId());
-					
-					if (entryAdditionalDataEntry == null) {
-						
-						entryAdditionalDataEntry = new EntryAdditionalDataEntry();
-						
-						entryAdditionalData.jmdictEntryAdditionalDataEntryMap.put(jmdictEntry.getEntryId(), entryAdditionalDataEntry);
-					}
-					
-					if (entryAdditionalDataEntry.updateDictionarySenseMap == null) {		
-						entryAdditionalDataEntry.updateDictionarySenseMap = new TreeMap<>();
-					}
-					
 					entryAdditionalDataEntry.updateDictionarySenseMap.put(System.identityHashCode(jmdictEntrySense), 
 							new EntryAdditionalDataEntry$UpdateDictionarySense(polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));
-										
-					polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
 				}
+				
+				polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
 			}
-			
-		} else { // ilosc sense jest rozna
-			
-			
-			int fixme5 = 1;
-			
-			System.out.println("BBBBBB: " + jmdictEntry.getEntryId());
 		}
-		
-		
-		
+			
 		
 		
 		
@@ -2930,27 +2949,35 @@ public class Dictionary2Helper {
 		
 		StringWriter stringWriter = new StringWriter();
 		
-		// liczymy hash				
-		for (LanguageSource languageSource : sense.getLanguageSourceList()) {
-			
-			stringWriter.write(languageSource.getLang());
-			stringWriter.write(languageSource.getLsType() != null ? languageSource.getLsType().name() : "");
-			stringWriter.write(languageSource.getLsWasei() != null ? languageSource.getLsWasei().name() : "");
-			stringWriter.write(languageSource.getValue());			
+		// liczymy hash	
+		if (sense != null) {
+			for (LanguageSource languageSource : sense.getLanguageSourceList()) {
+				
+				stringWriter.write(languageSource.getLang());
+				stringWriter.write(languageSource.getLsType() != null ? languageSource.getLsType().name() : "");
+				stringWriter.write(languageSource.getLsWasei() != null ? languageSource.getLsWasei().name() : "");
+				stringWriter.write(languageSource.getValue());			
+			}
 		}
 				
-		for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {			
-			stringWriter.write(senseAdditionalInfo.getValue());			
+		if (additionalInfoList != null) {
+			for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {			
+				stringWriter.write(senseAdditionalInfo.getValue());			
+			}
 		}
 
-		for (Gloss gloss : glossList) {
-			
-			stringWriter.write(gloss.getGType() != null ? gloss.getGType().name() : ""); 
-			stringWriter.write(gloss.getValue());
+		if (glossList != null) {
+			for (Gloss gloss : glossList) {
+				
+				stringWriter.write(gloss.getGType() != null ? gloss.getGType().name() : ""); 
+				stringWriter.write(gloss.getValue());
+			}
 		}
 		
-		stringWriter.write(sense.getFieldList().toString());
-		stringWriter.write(sense.getMiscList().toString());
+		if (sense != null) {
+			stringWriter.write(sense.getFieldList().toString());
+			stringWriter.write(sense.getMiscList().toString());
+		}
 								
 		return DigestUtils.sha256Hex(stringWriter.toString());
 	}

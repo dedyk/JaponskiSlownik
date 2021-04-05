@@ -32,7 +32,7 @@ public class UpdatePolishJapaneseDictionary {
 				continue;
 			}
 			
-			// wykonanie malej aktualizacji (kanji i reading)
+			// wykonanie aktualizacji wpisu
 			dictionaryHelper.updatePolishJapaneseEntry(currentPolishEntry, jmdictEntry, entryAdditionalData);
 			
 			int fixme = 1;
