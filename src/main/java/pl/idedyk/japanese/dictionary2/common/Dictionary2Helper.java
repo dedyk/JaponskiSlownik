@@ -2411,6 +2411,31 @@ public class Dictionary2Helper {
 				}				
 			}			
 		}
+		
+		// mala popraweczka kolejnosci typow
+		if (	dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_U) == true && 
+				dictionaryEntryTypeList.get(0) != DictionaryEntryType.WORD_VERB_U) {
+			
+			dictionaryEntryTypeList.remove(DictionaryEntryType.WORD_VERB_U);
+			
+			dictionaryEntryTypeList.add(0, DictionaryEntryType.WORD_VERB_U);
+		}
+		
+		if (	dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_RU) == true && 
+				dictionaryEntryTypeList.get(0) != DictionaryEntryType.WORD_VERB_RU) {
+			
+			dictionaryEntryTypeList.remove(DictionaryEntryType.WORD_VERB_RU);
+			
+			dictionaryEntryTypeList.add(0, DictionaryEntryType.WORD_VERB_RU);
+		}
+
+		if (	dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_I) == true && 
+				dictionaryEntryTypeList.get(0) != DictionaryEntryType.WORD_ADJECTIVE_I) {
+			
+			dictionaryEntryTypeList.remove(DictionaryEntryType.WORD_ADJECTIVE_I);
+			
+			dictionaryEntryTypeList.add(0, DictionaryEntryType.WORD_ADJECTIVE_I);
+		}
 								
 		polishJapaneseEntry.setDictionaryEntryTypeList(dictionaryEntryTypeList);
 		
