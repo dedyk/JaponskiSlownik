@@ -86,6 +86,9 @@ public class SetEntryToPolishDictionary {
 			}
 		}
 		
+		// walidacja slow
+		dictionaryHelper.validateAllPolishDictionaryEntryList();
+		
 		// zapisanie docelowej postaci
 		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
 				
