@@ -2694,6 +2694,9 @@ public class Dictionary2Helper {
 		case "ger":
 			return "niem";
 			
+		case "por":
+			return "por";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
@@ -2711,6 +2714,9 @@ public class Dictionary2Helper {
 			
 		case "ger":
 			return "słowo pochodzenia niemieckiego";
+			
+		case "por":
+			return "słowo pochodzenia portugalskiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
