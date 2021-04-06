@@ -2552,6 +2552,9 @@ public class Dictionary2Helper {
 			case PHYSICS:
 				result.add("fizyka"); break;
 				
+			case BIOLOGY:
+				result.add("biologia"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
@@ -2604,6 +2607,9 @@ public class Dictionary2Helper {
 				
 			case OBSOLETE_TERM:
 				result.add("przestarzałe słowo"); break;
+				
+			case JOCULAR_HUMOROUS_TERM:
+				result.add("żartobliwie"); break;
 				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
