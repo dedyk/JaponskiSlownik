@@ -593,26 +593,28 @@ END,1010340,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1851980,,,,,,,,,
+KANJI,1851980,かき暮れる,,,,,,,,
 KANJI,1851980,掻き暮れる,,,,,,,,
+KANJI,1851980,掻き暗れる,,,,,,,,
+KANJI,1851980,搔き暮れる,word containing out-dated kanji,,,,,,,
+KANJI,1851980,搔き暗れる,word containing out-dated kanji,,,,,,,
 READING,1851980,HIRAGANA,かきくれる,kaki kureru,-,,,,,
-SENSE_COMMON,1851980,,,Ichidan verb,,,,"word usually written using kana alone
-obscure term",,
-SENSE_ENG,1851980,to be sad,,,,,,,,
-SENSE_POL,1851980,być smutny,,,,,,,,
+SENSE_COMMON,1851980,,,"Ichidan verb
+intransitive verb",,,,word usually written using kana alone,,
+SENSE_ENG,1851980,to weep bitterly,as 涙にかきくれる,,,,,,,
+SENSE_POL,1851980,"gorzko szlochać
+gorzko płakać",jak 涙にかきくれる,,,,,,,
+SENSE_COMMON,1851980,,,"Ichidan verb
+intransitive verb",,,,word usually written using kana alone,,
+SENSE_ENG,1851980,to suddenly grow dark,,,,,,,,
+SENSE_POL,1851980,nagle pociemnieć,,,,,,,,
 END,1851980,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
-BEGIN,2373430,,,,,,,,,
-KANJI,2373430,第一種電気通信事業者,,,,,,,,
-READING,2373430,HIRAGANA,だいいっしゅでんきつうしんじぎょうしゃ,daiisshu denki tsuushinji gyousha,-,,,,,
-SENSE_COMMON,2373430,,,noun (common) (futsuumeishi),,,computing,,,
-SENSE_ENG,2373430,type I carriers,,,,,,,,
-SENSE_POL,2373430,???,,,,,,,,
-END,2373430,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
 BEGIN,2827753,,,,,,,,,
+KANJI,2827753,かき撫でる,,,,,,,,
 KANJI,2827753,掻き撫でる,,,,,,,,
+KANJI,2827753,搔き撫でる,word containing out-dated kanji,,,,,,,
 READING,2827753,HIRAGANA,かきなでる,kaki naderu,-,,,,,
 SENSE_COMMON,2827753,,,"Ichidan verb
 transitive verb",,,,,,
@@ -624,18 +626,19 @@ głaskać
 oczyścić zgrzebłem (o koniu)",,,,,,,,
 SENSE_COMMON,2827753,,,"Ichidan verb
 transitive verb",,,,,,
-SENSE_ENG,2827753,to pluck a stringed instrument,,,,,,,,
+SENSE_ENG,2827753,"to strum (a stringed instrument)
+to pluck",,,,,,,,
 SENSE_POL,2827753,"brzdąkać (o instrumencie strunowym)
 poruszać strunami",,,,,,,,
 END,2827753,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1152890,,,,,,,,,
-KANJI,1152890,圧し殺す,,,,,,,,
 KANJI,1152890,押し殺す,,,,,,,,
-KANJI,1152890,押殺す,,,,,,,,
-KANJI,1152890,圧しころす,,,,,,,,
+KANJI,1152890,圧し殺す,,,,,,,,
 KANJI,1152890,押しころす,,,,,,,,
+KANJI,1152890,圧しころす,,,,,,,,
+KANJI,1152890,押殺す,,,,,,,,
 READING,1152890,HIRAGANA,おしころす,oshi korosu,-,,,,,
 SENSE_COMMON,1152890,,,"Godan verb with 'su' ending
 transitive verb",,,,,,
@@ -675,29 +678,49 @@ END,2848624,,,,,,,,,
 BEGIN,1343800,,,,,,,,,
 KANJI,1343800,書き出す,,"news2
 nf37",,,,,,
+KANJI,1343800,書出す,,,,,,,,
+KANJI,1343800,書きだす,,,,,,,,
 READING,1343800,HIRAGANA,かきだす,kaki dasu,-,,,"news2
 nf37",,
 SENSE_COMMON,1343800,,,"Godan verb with 'su' ending
 transitive verb",,,,,,
 SENSE_ENG,1343800,"to begin to write
-to write out
-to export (file)
-to extract",,,,,,,,
+to start writing",,,,,,,,
 SENSE_POL,1343800,"zacząć pisać
 zaczynać pisać
-rozpoczynać pisać
-wypisać
-wypisywać
-eksportować (do pliku)
-wyciągać",,,,,,,,
+rozpoczynać pisać",,,,,,,,
+SENSE_COMMON,1343800,,,"Godan verb with 'su' ending
+transitive verb",,,,,,
+SENSE_ENG,1343800,to write out (e.g. on a blackboard),,,,,,,,
+SENSE_POL,1343800,"wypisać
+wypisywać",np. na tablicy,,,,,,,
+SENSE_COMMON,1343800,,,"Godan verb with 'su' ending
+transitive verb",,,,,,
+SENSE_ENG,1343800,"to extract (and write down)
+to write down (the important parts)",,,,,,,,
+SENSE_POL,1343800,"wyciągać (i zapisywać)
+zapisywać (ważniejsze części)",,,,,,,,
+SENSE_COMMON,1343800,,,"Godan verb with 'su' ending
+transitive verb",,,computing,,,
+SENSE_ENG,1343800,"to export
+to write (to file)",,,,,,,,
+SENSE_POL,1343800,"eksportować
+zapisywać (do pliku)",,,,,,,,
 END,1343800,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2098030,,,,,,,,,
+KANJI,2098030,かき氷機,,,,,,,,
+KANJI,2098030,カキ氷機,,,,,,,,
+KANJI,2098030,かきごおり機,,,,,,,,
 KANJI,2098030,掻き氷機,,,,,,,,
-READING,2098030,HIRAGANA,かきごおりき,kaki gooriki,-,,,,,
-SENSE_COMMON,2098030,,,noun (common) (futsuumeishi),掻き氷,,,,,
-SENSE_ENG,2098030,shaved ice machine,,,,,,,,
+READING,2098030,HIRAGANA,かきごおりき,kaki gooriki,-,"かき氷機
+かきごおり機
+掻き氷機",,,,
+READING,2098030,KATAKANA_HIRAGANA,カキごおりき,kaki gooriki,-,カキ氷機,,,,
+SENSE_COMMON,2098030,,,noun (common) (futsuumeishi),かき氷,,,,,
+SENSE_ENG,2098030,"ice shaver
+shaved ice machine",,,,,,,,
 SENSE_POL,2098030,maszyna do kruszenia lodu,,,,,,,,
 END,2098030,,,,,,,,,
 ,,,,,,,,,,
@@ -2050,10 +2073,16 @@ END,2499390,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1603410,,,,,,,,,
 KANJI,1603410,ほうれん草,,ichi1,,,,,,
-KANJI,1603410,菠薐草,,,,,,,,
+KANJI,1603410,ホウレン草,,,,,,,,
 KANJI,1603410,法蓮草,,,,,,,,
+KANJI,1603410,菠薐草,,,,,,,,
 KANJI,1603410,鳳蓮草,,,,,,,,
-READING,1603410,HIRAGANA,ほうれんそう,houren sou,-,,,ichi1,,
+READING,1603410,HIRAGANA,ほうれんそう,houren sou,-,"ほうれん草
+法蓮草
+菠薐草
+鳳蓮草",,ichi1,,
+READING,1603410,KATAKANA_HIRAGANA,ホウレンそう,houren sou,-,ホウレン草,,,,
+READING,1603410,KATAKANA,ホウレンソウ,houren sou,NO_KANJI,,,,,
 SENSE_COMMON,1603410,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1603410,spinach,,,,,,,,
 SENSE_POL,1603410,szpinak,,,,,,,,
@@ -3062,7 +3091,8 @@ READING,1547520,HIRAGANA,よくねん,yoku nen,-,,,"ichi1
 news1
 nf05",,
 READING,1547520,HIRAGANA,よくとし,yoku toshi,-,,,,,
-SENSE_COMMON,1547520,,,noun (temporal) (jisoumeishi),,,,,,
+SENSE_COMMON,1547520,,,"noun (common) (futsuumeishi)
+adverb (fukushi)",,,,,,
 SENSE_ENG,1547520,following year,,,,,,,,
 SENSE_POL,1547520,"następny rok
 przyszyły rok",,,,,,,,
