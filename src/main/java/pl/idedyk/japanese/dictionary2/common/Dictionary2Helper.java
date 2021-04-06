@@ -124,12 +124,7 @@ public class Dictionary2Helper {
 		
 		//
 				
-		int fixme = 1;
-		// !!!!!!!!!!!!!!!!!!!!!1
-		
-		//dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
-		dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
-		System.out.println("FIXME !!!!!!!!!!");
+		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
 		
 		//
 		
@@ -1539,6 +1534,13 @@ public class Dictionary2Helper {
 		readPolishDictionary();
 		
 		return polishDictionaryEntryListMap.get(entryId);
+	}
+	
+	public void deleteEntryFromPolishDictionary(Integer entryId) throws Exception {
+		
+		readPolishDictionary();
+		
+		polishDictionaryEntryListMap.remove(entryId);
 	}
 	
 	public void addEntryToPolishDictionary(Entry newEntry) throws Exception {

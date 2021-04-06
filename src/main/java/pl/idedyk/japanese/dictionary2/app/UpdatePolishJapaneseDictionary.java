@@ -21,6 +21,9 @@ public class UpdatePolishJapaneseDictionary {
 		// lista zmienionych elementow
 		List<Entry> entryManuallyChangeList = new ArrayList<>();
 		
+		// lista skasowanych elementow
+		List<Entry> entryDeletedList = new ArrayList<>();
+		
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
 		
 		// chodzimy po wszystkich elementach
@@ -31,7 +34,11 @@ public class UpdatePolishJapaneseDictionary {
 			
 			if (jmdictEntry == null) { // ten element zostal skasowany
 				
-				System.out.println("Please delete entry: " + currentPolishEntry.getEntryId());
+				System.out.println("Deleted entry: " + currentPolishEntry.getEntryId());
+				
+				dictionaryHelper.deleteEntryFromPolishDictionary(currentPolishEntry.getEntryId());
+				
+				entryDeletedList.add(currentPolishEntry);
 				
 				continue;
 			}
@@ -43,6 +50,8 @@ public class UpdatePolishJapaneseDictionary {
 				entryManuallyChangeList.add(currentPolishEntry);
 			}
 		}
+		
+		allPolishDictionaryEntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
 		
 		SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new SaveEntryListAsHumanCsvConfig();
 		
@@ -60,5 +69,8 @@ public class UpdatePolishJapaneseDictionary {
 		
 		// zapisanie elementow, ktore nalezy manualnie zmodyfikowac
 		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update-manually.csv", entryManuallyChangeList, entryAdditionalData);
+		
+		// zapisanie elementow, ktore zostaly skasowane
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update-delete.csv", entryDeletedList, entryAdditionalData);
 	}
 }
