@@ -127,8 +127,8 @@ public class Dictionary2Helper {
 		int fixme = 1;
 		// !!!!!!!!!!!!!!!!!!!!!1
 		
-		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
-		//dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
+		//dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+		dictionaryHelper.jmdictFile = new File("/tmp/a/JMdict_e");
 		System.out.println("FIXME !!!!!!!!!!");
 		
 		//
@@ -700,6 +700,7 @@ public class Dictionary2Helper {
 		
 		public boolean addOldPolishTranslates = false;
 		public boolean addOldPolishTranslatesDuringDictionaryUpdate = false;
+		public boolean addDeleteSenseDuringDictionaryUpdate = false;
 		
 		public boolean markRomaji = false;
 		
@@ -1042,7 +1043,7 @@ public class Dictionary2Helper {
 			EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(entry.getEntryId());
 			
 			// podczas aktualizacji slownika jakis sens zostal skasowany, tymczasowo wpisanie starych sense'ow
-			if (config.addOldPolishTranslatesDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary != null) { 				
+			if (config.addDeleteSenseDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary != null) { 				
 								
 				for (EntryAdditionalDataEntry$UpdateDictionarySense entryAdditionalDataEntry$UpdateDictionarySense : entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary) {
 					
@@ -2762,7 +2763,9 @@ public class Dictionary2Helper {
 		return oldWordGeneratorHelper.getPolishJapaneseEntriesList();
 	}
 	
-	public void updatePolishJapaneseEntry(Entry polishJapaneseEntry, Entry jmdictEntry, EntryAdditionalData entryAdditionalData) {
+	public boolean updatePolishJapaneseEntry(Entry polishJapaneseEntry, Entry jmdictEntry, EntryAdditionalData entryAdditionalData) {
+		
+		boolean needManuallyChange = false;
 		
 		// kanji mozna zaktualizowac bezwarunkowo		
 		polishJapaneseEntry.getKanjiInfoList().clear();
@@ -2793,13 +2796,15 @@ public class Dictionary2Helper {
 				
 			} else {
 				
+				needManuallyChange = true;
+				
 				// generujemy kana type i romaji
 				generateKanaTypeAndRomaji(jmdictEntryReadingInfo, true);
 			}
 			
 			// i dodajemy
 			polishJapaneseEntry.getReadingInfoList().add(jmdictEntryReadingInfo);			
-		}
+		}		
 		
 		// aktualizacja sense
 		List<Sense> polishJapaneseEntrySenseList = new ArrayList<>(polishJapaneseEntry.getSenseList());
@@ -2851,14 +2856,16 @@ public class Dictionary2Helper {
 			// liczymy hash dla znaczenia
 			String jmdictEntrySenseHash = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(jmdictEntrySense, jmdictEntrySenseGlossEngList, jmdictEntrySenseAdditionalInfoEngList);
 			
+			//
+			
+			if (polishJapaneseEntrySense == null && jmdictEntrySense == null) {
+				throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie
+			}
+			
 			// porownujemy hash
 			if (polishJapaneseEntrySenseHash.equals(jmdictEntrySenseHash) == true) { // hash ten sam, nie bylo zmiany znaczenia w nowym slowniku
-				
-				if (polishJapaneseEntrySense == null || jmdictEntrySense == null) {
-					throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie
-				}
-				
-				// bierzemy nowy + aktualizuje polskie znaczenie
+								
+				// bierzemy nowy sense + aktualizuje polskie znaczenie
 				List<Gloss> polishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
 				List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
 				
@@ -2869,21 +2876,11 @@ public class Dictionary2Helper {
 				
 			} else { // jest jakas zmiana
 				
-				int fixme = 1; //// !!!!!!!!!!!!!!!!
-				// co zrobic, gdy jmdictEntrySense == null, czyli gdy jakis sens zostal usuniety ????
+				needManuallyChange = true;
 				
-								
-				// dodajemy nowe znaczenie					
-				
-				// uzupelniamy o puste polskie tlumaczenie
-				
-				if (jmdictEntrySense != null) {
-					createEmptyPolishSense(jmdictEntrySense);
-					
-				} else {
-					int fixme3 = 1;
-					
-					System.out.println("EEEEEEEEEEE");
+				// uzupelniamy o puste polskie tlumaczenie (jesli istnieje)				
+				if (jmdictEntrySense != null) {					
+					createEmptyPolishSense(jmdictEntrySense);					
 				}
 									
 				// uzupelniamy o stare tlumaczenie
@@ -2921,103 +2918,16 @@ public class Dictionary2Helper {
 						// wpisanie dodatkowych znaczen z polskiego slownika
 						entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary.add(
 								new EntryAdditionalDataEntry$UpdateDictionarySense(polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));						
-						
-						//tutaj();
-						
-						int fixme2 = 1;
-						
-						System.out.println("CCCCCCCCCCCCC");
-						
 					}					
 				}
 				
 				if (jmdictEntrySense != null) {
-					polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
-					
-				} else {
-					
-					int fixme2 = 1;
-					
-					System.out.println("DDDDDDDDDDDD");					
+					polishJapaneseEntry.getSenseList().add(jmdictEntrySense);					
 				}
 			}
 		}
-			
 		
-		
-		
-		//////////////////
-		
-		// sprawdzamy, czy sens nie zmienily sie w starym i nowym
-		
-		// jesli tak to
-		
-		// uzupelnienie o puste polskie tlumaczenie
-		// dictionaryHelper.createEmptyPolishSense(entry);
-		
-		// pobranie ze starego slownika interesujacych danych (np. romaji)
-		// dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry, entryAdditionalData);
-
-		// i uzupelniamy ze starego slownika
-		
-		// pozniej
-		
-		////////////////////
-		
-		/*
-		int fixme4 = 1;
-		// a moze uzyc
-		// saveEntryAsHumanCsv bez polskiego znaczenia i porownac, czy sa jednakowe ???
-		
-		for (int jmdictEntrySenseListIdx = 0; jmdictEntrySenseListIdx < jmdictEntrySenseList.size(); ++jmdictEntrySenseListIdx) {
-			
-			// stary sense
-			Sense polishJapaneseEntrySense = jmdictEntrySenseListIdx < polishJapaneseEntrySenseList.size() ? 
-					polishJapaneseEntrySenseList.get(jmdictEntrySenseListIdx) : null;
-					
-			// nowy sens
-			Sense jmdictEntrySense = jmdictEntrySenseList.get(jmdictEntrySenseListIdx);
-			
-			if (polishJapaneseEntrySense == null) {
-				System.out.println("AAAAAAA: " + jmdictEntry.getEntryId());
-			}
-			
-			// sprawdzamy, czy sens w obu sa jednakowe
-			
-			
-			
-			int fixme = 1;
-			// dokonczyc !!!!!
-		}
-		*/
-		
-		/////////////////
-		
-		
-		/*
-		for (Sense jmdictEntrySense : jmdictEntrySenseList) {
-			
-			// liczymy sume kontrolna dla sense'ow
-			
-			
-			
-			/ *
-			List<Gloss> glossList = sense.getGlossList();
-			
-			List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
-			List<Gloss> glossPolList = glossList.stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
-			* /
-			
-			//getHashForSense(sense, glossList, additionalInfoList)
-			
-			
-			// dodajemy
-			polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
-		}	
-		 */
-		
-		int fixme = 1;
-		// dokonczyc !!!!
+		return needManuallyChange;
 	}
 	
 	private String getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(Sense sense, List<Gloss> glossList, List<SenseAdditionalInfo> additionalInfoList) {

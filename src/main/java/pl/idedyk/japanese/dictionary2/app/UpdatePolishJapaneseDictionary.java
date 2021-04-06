@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary2.app;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
@@ -17,6 +18,9 @@ public class UpdatePolishJapaneseDictionary {
 		// wczytanie polskiego slownika
 		List<Entry> allPolishDictionaryEntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
 
+		// lista zmienionych elementow
+		List<Entry> entryManuallyChangeList = new ArrayList<>();
+		
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
 		
 		// chodzimy po wszystkich elementach
@@ -33,22 +37,28 @@ public class UpdatePolishJapaneseDictionary {
 			}
 			
 			// wykonanie aktualizacji wpisu
-			dictionaryHelper.updatePolishJapaneseEntry(currentPolishEntry, jmdictEntry, entryAdditionalData);
+			boolean needManuallyChange = dictionaryHelper.updatePolishJapaneseEntry(currentPolishEntry, jmdictEntry, entryAdditionalData);
 			
-			int fixme = 1;
-			// !!!!!!!!!!!!		
-			
-			int fixme2 = 1;
-			// generowanie listy zmienionych elementow
+			if (needManuallyChange == true) {
+				entryManuallyChangeList.add(currentPolishEntry);
+			}
 		}
 		
 		SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new SaveEntryListAsHumanCsvConfig();
 		
 		// dodajemy stare znaczenia
 		saveEntryListAsHumanCsvConfig.addOldPolishTranslatesDuringDictionaryUpdate = true;
+		saveEntryListAsHumanCsvConfig.addDeleteSenseDuringDictionaryUpdate = false;
 		
-		int fixme3 = 1;
-		// zapisanie polskiego slownika
-		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update-test.csv", allPolishDictionaryEntryList, entryAdditionalData);
+		// zapisanie czesciowo zmienionego polskiego slownika
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update.csv", allPolishDictionaryEntryList, entryAdditionalData);
+		
+		saveEntryListAsHumanCsvConfig.shiftCells = true;
+		saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
+		
+		saveEntryListAsHumanCsvConfig.addDeleteSenseDuringDictionaryUpdate = true;
+		
+		// zapisanie elementow, ktore nalezy manualnie zmodyfikowac
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update-manually.csv", entryManuallyChangeList, entryAdditionalData);
 	}
 }
