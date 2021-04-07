@@ -3211,7 +3211,11 @@ public class WordGenerator {
 								
 								if ((isDifferent == true || force == true) && onlyNotFoundInJmedict == false) {
 									
-									wordsCounter += groupByTheSameTranslateGroupEntryList.size();
+									// liczenie roznych tlumaczen
+									//wordsCounter += groupByTheSameTranslateGroupEntryList.size();
+									
+									// liczba slow wybrana przez uzytkownika
+									wordsCounter++;
 									
 									boolean currentPolishJapaneseEntryInAllPolishJapaneseEntryListForGroupEntry = false;
 																		
