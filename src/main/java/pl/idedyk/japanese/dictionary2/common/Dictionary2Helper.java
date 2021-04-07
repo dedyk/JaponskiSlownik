@@ -2555,6 +2555,9 @@ public class Dictionary2Helper {
 			case BIOLOGY:
 				result.add("biologia"); break;
 				
+			case FOOD_COOKING:
+				result.add("jedzenie, gotowanie"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
