@@ -2558,6 +2558,12 @@ public class Dictionary2Helper {
 			case FOOD_COOKING:
 				result.add("jedzenie, gotowanie"); break;
 				
+			case ARCHEOLOGY:
+				result.add("archeologia"); break;
+				
+			case CHRISTIANITY:
+				result.add("chrześcijaństwo"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
@@ -2613,6 +2619,18 @@ public class Dictionary2Helper {
 				
 			case JOCULAR_HUMOROUS_TERM:
 				result.add("żartobliwie"); break;
+				
+			case PROVERB:
+				result.add("przysłowie"); break;
+				
+			case VULGAR_EXPRESSION_OR_WORD:
+				result.add("wulgarnie"); break;
+				
+			case MANGA_SLANG:
+				result.add("slang mangowy"); break;
+				
+			case LITERARY_OR_FORMAL_TERM:
+				result.add("literacki lub formalny termin"); break;
 				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
