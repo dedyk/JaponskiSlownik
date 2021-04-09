@@ -2570,6 +2570,12 @@ public class Dictionary2Helper {
 			case GEOLOGY:
 				result.add("geologia"); break;
 				
+			case ANATOMY:
+				result.add("anatomia"); break;
+				
+			case BOTANY:
+				result.add("botanika"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
@@ -2637,6 +2643,12 @@ public class Dictionary2Helper {
 				
 			case LITERARY_OR_FORMAL_TERM:
 				result.add("literacki lub formalny termin"); break;
+				
+			case HISTORICAL_TERM:
+				result.add("termin historyczny"); break;
+				
+			case CHILDREN_S_LANGUAGE:
+				result.add("język dzieci"); break;
 				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
