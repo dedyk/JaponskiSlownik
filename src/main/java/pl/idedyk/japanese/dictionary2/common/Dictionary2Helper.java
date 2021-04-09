@@ -2564,6 +2564,12 @@ public class Dictionary2Helper {
 			case CHRISTIANITY:
 				result.add("chrześcijaństwo"); break;
 				
+			case CHEMISTRY:
+				result.add("chemia"); break;
+			
+			case GEOLOGY:
+				result.add("geologia"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
