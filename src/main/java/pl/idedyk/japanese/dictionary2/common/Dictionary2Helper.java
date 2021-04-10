@@ -2650,6 +2650,9 @@ public class Dictionary2Helper {
 			case CHILDREN_S_LANGUAGE:
 				result.add("język dzieci"); break;
 				
+			case POLITE_TEINEIGO_LANGUAGE:
+				result.add("uprzejmie"); break;
+				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
