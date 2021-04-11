@@ -2582,6 +2582,9 @@ public class Dictionary2Helper {
 			case MILITARY:
 				result.add("wojskowość"); break;
 				
+			case LAW:
+				result.add("prawo"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
@@ -2745,6 +2748,9 @@ public class Dictionary2Helper {
 		case "por":
 			return "por";
 			
+		case "rus":
+			return "ros";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
@@ -2765,6 +2771,9 @@ public class Dictionary2Helper {
 			
 		case "por":
 			return "słowo pochodzenia portugalskiego";
+			
+		case "rus":
+			return "słowo pochodzenia rosyjskiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
