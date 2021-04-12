@@ -1625,7 +1625,7 @@ public class Dictionary2Helper {
 				Set<String> uniqueGlossPolSet = new TreeSet<>();
 				List<String> allGlossPolList = new ArrayList<>();
 				
-				for (Gloss currentGlossPol : glossPolList) {					
+				for (Gloss currentGlossPol : glossPolList) {
 					uniqueGlossPolSet.add(currentGlossPol.getValue());
 					allGlossPolList.add(currentGlossPol.getValue());
 				}
