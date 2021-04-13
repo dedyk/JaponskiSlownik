@@ -2591,6 +2591,9 @@ public class Dictionary2Helper {
 			case ZOOLOGY:
 				result.add("zoologia"); break;
 				
+			case ECONOMICS:
+				result.add("ekonomia"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
