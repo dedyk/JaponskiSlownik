@@ -2760,6 +2760,9 @@ public class Dictionary2Helper {
 		case "rus":
 			return "ros";
 			
+		case "fre":
+			return "fra";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
@@ -2783,6 +2786,9 @@ public class Dictionary2Helper {
 			
 		case "rus":
 			return "słowo pochodzenia rosyjskiego";
+			
+		case "fre":
+			return "słowo pochodzenia francuskiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
