@@ -2763,6 +2763,9 @@ public class Dictionary2Helper {
 		case "fre":
 			return "fra";
 			
+		case "lat":
+			return "łać";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
@@ -2789,6 +2792,9 @@ public class Dictionary2Helper {
 			
 		case "fre":
 			return "słowo pochodzenia francuskiego";
+			
+		case "lat":
+			return "słowo pochodzenia łacińskiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
