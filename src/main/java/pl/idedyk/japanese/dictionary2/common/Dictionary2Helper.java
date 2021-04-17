@@ -2470,6 +2470,14 @@ public class Dictionary2Helper {
 			dictionaryEntryTypeList.add(0, DictionaryEntryType.WORD_VERB_RU);
 		}
 
+		if (	dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_IRREGULAR) == true && 
+				dictionaryEntryTypeList.get(0) != DictionaryEntryType.WORD_VERB_IRREGULAR) {
+			
+			dictionaryEntryTypeList.remove(DictionaryEntryType.WORD_VERB_IRREGULAR);
+			
+			dictionaryEntryTypeList.add(0, DictionaryEntryType.WORD_VERB_IRREGULAR);
+		}
+		
 		if (	dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_I) == true && 
 				dictionaryEntryTypeList.get(0) != DictionaryEntryType.WORD_ADJECTIVE_I) {
 			
