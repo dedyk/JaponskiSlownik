@@ -2682,6 +2682,15 @@ public class Dictionary2Helper {
 			case POLITE_TEINEIGO_LANGUAGE:
 				result.add("uprzejmie"); break;
 				
+			case FAMILIAR_LANGUAGE:
+				result.add("język poufały"); break;
+				
+			case MALE_TERM_OR_LANGUAGE:
+				result.add("język męski"); break;
+				
+			case DATED_TERM:
+				result.add("przestarzałe słowo"); break;
+				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
