@@ -182,7 +182,7 @@ public class GetEntryFromDictionary {
 		}
 		
 		// zapisanie wyniku pod postacia csv		
-		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word-new-test.csv", result, entryAdditionalData);
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", result, entryAdditionalData);
 	}
 	
 	private static void printHelp(Options options) {
