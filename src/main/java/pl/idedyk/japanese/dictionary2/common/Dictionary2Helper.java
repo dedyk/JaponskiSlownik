@@ -1839,7 +1839,7 @@ public class Dictionary2Helper {
 		// generowanie wszystkich kanji i ich czytan
 		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
 		
-		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry);		
+		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, false);		
 		
 		if (allPolishJapaneseEntriesForEntry.size() > 0) { // jezeli dany wpis juz jest w starym slowniku, mozemy przetworzyc te dane
 			
@@ -1872,7 +1872,7 @@ public class Dictionary2Helper {
 		}		
 	}
 	
-	private List<PolishJapaneseEntry> getPolishJapaneseEntryListFromOldDictionary(Entry entry, List<KanjiKanaPair> kanjiKanaPairListforEntry) throws Exception {
+	private List<PolishJapaneseEntry> getPolishJapaneseEntryListFromOldDictionary(Entry entry, List<KanjiKanaPair> kanjiKanaPairListforEntry, boolean throwErrorWhenDifferentGroup) throws Exception {
 		
 		// wczytanie starego slownika i sche'owanie go		
 		Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache = oldWordGeneratorHelper.getPolishJapaneseEntriesCache();
@@ -1901,7 +1901,13 @@ public class Dictionary2Helper {
 				Integer polishJapaneseEntryForKanjiKanaPairEntryId = polishJapaneseEntryForKanjiKanaPair.getGroupIdFromJmedictRawDataList();
 				
 				if (polishJapaneseEntryForKanjiKanaPairEntryId != null && polishJapaneseEntryForKanjiKanaPairEntryId.intValue() != entry.getEntryId().intValue()) { // sprawdzamy grupe
-					throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // jezeli to wydarzylo sie, oznacza to, ze dane slowo zmienilo swoja grupe, mozna to poprawic
+					
+					if (throwErrorWhenDifferentGroup == true) {
+						throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // jezeli to wydarzylo sie, oznacza to, ze dane slowo zmienilo swoja grupe, mozna to poprawic
+						
+					} else {
+						continue;
+					}
 				}
 			}
 			
@@ -1940,7 +1946,7 @@ public class Dictionary2Helper {
 		// generowanie wszystkich kanji i ich czytan
 		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
 		
-		List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry);
+		List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, true);
 		
 		if (polishJapaneseEntryListFromOldDictionary != null && polishJapaneseEntryListFromOldDictionary.size() > 0) {
 			return true;
@@ -2104,7 +2110,7 @@ public class Dictionary2Helper {
 		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
 				
 		// pobieramy liste 
-		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry);		
+		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, true);		
 
 		// chodzenie po wszystkich kombinacjach kanji i kana
 		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
@@ -2795,6 +2801,12 @@ public class Dictionary2Helper {
 		case "dut":
 			return "hol";
 			
+		case "tur":
+			return "tur";
+			
+		case "gre":
+			return "gre";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
@@ -2827,6 +2839,12 @@ public class Dictionary2Helper {
 			
 		case "dut":
 			return "słowo pochodzenia holenderskiego";
+			
+		case "tur":
+			return "słowo pochodzenia tureckiego";
+			
+		case "gre":
+			return "słowo pochodzenia greckiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
