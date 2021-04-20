@@ -1896,7 +1896,7 @@ public class Dictionary2Helper {
 			if (findPolishJapaneseEntryList.size() == 1) {
 				
 				polishJapaneseEntryForKanjiKanaPair = findPolishJapaneseEntryList.get(0);
-				
+
 				// pobieramy identyfikator grupy ze slowa
 				Integer polishJapaneseEntryForKanjiKanaPairEntryId = polishJapaneseEntryForKanjiKanaPair.getGroupIdFromJmedictRawDataList();
 				
