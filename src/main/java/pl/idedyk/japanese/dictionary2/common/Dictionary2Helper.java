@@ -2807,6 +2807,9 @@ public class Dictionary2Helper {
 		case "gre":
 			return "gre";
 			
+		case "chi":
+			return "chin";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
@@ -2845,6 +2848,9 @@ public class Dictionary2Helper {
 			
 		case "gre":
 			return "słowo pochodzenia greckiego";
+			
+		case "chi":
+			return "słowo pochodzenia chińskiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
