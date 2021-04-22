@@ -2703,6 +2703,9 @@ public class Dictionary2Helper {
 			case DATED_TERM:
 				result.add("przestarzałe słowo"); break;
 				
+			case INTERNET_SLANG:
+				result.add("slang internetowy"); break;
+				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
