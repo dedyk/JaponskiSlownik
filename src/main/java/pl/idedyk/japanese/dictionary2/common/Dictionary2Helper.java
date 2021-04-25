@@ -2617,6 +2617,12 @@ public class Dictionary2Helper {
 			case STATISTICS:
 				result.add("statystyka"); break;
 				
+			case BUSINESS:
+				result.add("biznes"); break;
+				
+			case PHOTOGRAPHY:
+				result.add("fotografia"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
