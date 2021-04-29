@@ -2,4 +2,4 @@
 
 . common.sh
 
-java -Xmx4096m -cp $CLASSPATH:target/JapaneseDictionary-1.0-SNAPSHOT.jar:target/test-classes pl.idedyk.japanese.dictionary2.app.UpdateOldPolishJapaneseDictionary $1
+java -Xmx4096m -cp $CLASSPATH:target/JapaneseDictionary-1.0-SNAPSHOT.jar:target/test-classes pl.idedyk.japanese.dictionary2.app.UpdateOldPolishJapaneseDictionary $@
