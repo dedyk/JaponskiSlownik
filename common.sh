@@ -22,3 +22,5 @@ export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-analyzers-common/
 export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-queries/$LUCENE_VERSION/lucene-queries-$LUCENE_VERSION.jar:$CLASSPATH
 export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-queryparser/$LUCENE_VERSION/lucene-queryparser-$LUCENE_VERSION.jar:$CLASSPATH
 export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-sandbox/$LUCENE_VERSION/lucene-sandbox-$LUCENE_VERSION.jar:$CLASSPATH
+
+export CLASSPATH=$HOME/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:$CLASSPATH
