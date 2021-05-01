@@ -2715,6 +2715,9 @@ public class Dictionary2Helper {
 			case INTERNET_SLANG:
 				result.add("slang internetowy"); break;
 				
+			case FEMALE_TERM_OR_LANGUAGE:
+				result.add("kobiecy termin lub język"); break;
+				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
@@ -2743,6 +2746,9 @@ public class Dictionary2Helper {
 				
 			case KYUUSHUU_BEN:
 				result.add("dialekt Kyuushuu"); break;
+
+			case TOUHOKU_BEN:
+				result.add("dialekt Touhoku"); break;
 				
 			default:
 				throw new RuntimeException("Unknown dialect enum: " + dialectEnum);
