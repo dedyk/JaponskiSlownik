@@ -3,6 +3,8 @@ package pl.idedyk.japanese.dictionary2.app;
 import java.util.ArrayList;
 import java.util.List;
 
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.SaveEntryListAsHumanCsvConfig;
@@ -51,6 +53,11 @@ public class UpdatePolishJapaneseDictionary {
 			}
 		}
 		
+		// chodzenie po starym slowniku i szukanie, czy jakies slowo nie powinno juz byc w tym slowniku
+		List<PolishJapaneseEntry> wordListFromOldDictionaryWhichCanBeReplaced = dictionaryHelper.detectEntriesWhichShouldBeDeletedInOldPolishJapaneseDictionary();
+		
+		// zapis
+		
 		allPolishDictionaryEntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
 		
 		SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new SaveEntryListAsHumanCsvConfig();
@@ -72,5 +79,8 @@ public class UpdatePolishJapaneseDictionary {
 		
 		// zapisanie elementow, ktore zostaly skasowane
 		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update-delete.csv", entryDeletedList, entryAdditionalData);
+		
+		// zapisanie pozycji ze starego slownika, ktore moga byc nadpisane, gdyz zostaly skasowane podczas aktualizacji
+		CsvReaderWriter.generateCsv(new String[] { "input/word-can-be-replaced.csv" }, wordListFromOldDictionaryWhichCanBeReplaced, true, true, false, true, null);
 	}
 }

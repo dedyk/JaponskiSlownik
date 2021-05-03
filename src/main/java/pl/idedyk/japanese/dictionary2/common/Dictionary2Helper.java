@@ -3147,6 +3147,63 @@ public class Dictionary2Helper {
 								
 		return DigestUtils.sha256Hex(stringWriter.toString());
 	}
+	
+	public List<PolishJapaneseEntry> detectEntriesWhichShouldBeDeletedInOldPolishJapaneseDictionary() throws Exception {
+		
+		List<PolishJapaneseEntry> entriesWhichShouldBeDeletedInOldPolishJapanaeseList = new ArrayList<>();
+		
+		//
+		
+		// wczytanie starego slownika
+		List<PolishJapaneseEntry> polishJapaneseEntriesList = oldWordGeneratorHelper.getPolishJapaneseEntriesList();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+			
+			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.DICTIONARY2_SOURCE) == false) {
+				continue;
+			}
+			
+			// pobranie numeru wpisu
+			Integer groupIdFromJmedictRawDataList = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+			
+			// pobranie slowa w nowym slowniku
+			Entry entry = getEntryFromPolishDictionary(groupIdFromJmedictRawDataList);
+			
+			if (entry == null) { // nie znaleziono
+				entriesWhichShouldBeDeletedInOldPolishJapanaeseList.add(polishJapaneseEntry);
+				
+				continue;
+			}			
+			
+			// generowanie wszystkich kanji i ich czytan
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+
+			// sprawdzenie, czy stary wpis w starym slowniku znajduje sie na liscie			
+			Optional<KanjiKanaPair> kanjiKanaPairForPolishJapaneseEntry = kanjiKanaPairListforEntry.stream().filter(kanjiKanaPair -> {
+				
+				String polishJapaneseEntryKanji = polishJapaneseEntry.getKanji();
+				String polishJapaneseEntryKana = polishJapaneseEntry.getKana();
+				
+				String searchKanji = kanjiKanaPair.kanji;
+				
+				if (searchKanji == null) {
+					searchKanji = "-";
+				}
+				
+				String searchKana = kanjiKanaPair.kana;
+				
+				return polishJapaneseEntryKanji.equals(searchKanji) == true && polishJapaneseEntryKana.equals(searchKana) == true;				
+			}).findFirst();
+			
+			if (kanjiKanaPairForPolishJapaneseEntry.isPresent() == false) { // nie ma, zostal skasowany
+				entriesWhichShouldBeDeletedInOldPolishJapanaeseList.add(polishJapaneseEntry);
+				
+				continue;
+			}
+		}
+		
+		return entriesWhichShouldBeDeletedInOldPolishJapanaeseList;
+	}
 
 	//
 	
