@@ -2625,6 +2625,9 @@ public class Dictionary2Helper {
 			
 			case PHILOSOPHY:
 				result.add("filozofia"); break;
+				
+			case ARCHITECTURE_BUILDING:
+				result.add("architektura"); break;
 			
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
