@@ -2843,6 +2843,9 @@ public class Dictionary2Helper {
 		case "spa":
 			return "hisz";
 			
+		case "kor":
+			return "kor";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
@@ -2893,6 +2896,9 @@ public class Dictionary2Helper {
 			
 		case "spa":
 			return "słowo pochodzenia hiszpańskiego";
+			
+		case "kor":
+			return "słowo pochodzenia koreańskiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
