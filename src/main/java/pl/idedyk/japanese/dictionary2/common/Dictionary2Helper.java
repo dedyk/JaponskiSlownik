@@ -2846,6 +2846,12 @@ public class Dictionary2Helper {
 		case "kor":
 			return "kor";
 			
+		case "may":
+			return "mal";
+			
+		case "tha":
+			return "taj";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
@@ -2899,6 +2905,12 @@ public class Dictionary2Helper {
 			
 		case "kor":
 			return "słowo pochodzenia koreańskiego";
+			
+		case "may":
+			return "słowo pochodzenia malajskiego";
+			
+		case "tha":
+			return "słowo pochodzenia tajskiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
