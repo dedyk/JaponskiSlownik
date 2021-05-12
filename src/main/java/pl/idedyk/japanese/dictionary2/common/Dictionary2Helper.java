@@ -2721,6 +2721,9 @@ public class Dictionary2Helper {
 			case FEMALE_TERM_OR_LANGUAGE:
 				result.add("kobiecy termin lub język"); break;
 				
+			case SENSITIVE:
+				result.add("wrażliwie"); break;
+				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
