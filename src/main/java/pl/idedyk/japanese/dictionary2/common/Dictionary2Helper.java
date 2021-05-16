@@ -1903,7 +1903,7 @@ public class Dictionary2Helper {
 				if (polishJapaneseEntryForKanjiKanaPairEntryId != null && polishJapaneseEntryForKanjiKanaPairEntryId.intValue() != entry.getEntryId().intValue()) { // sprawdzamy grupe
 					
 					if (throwErrorWhenDifferentGroup == true) {
-						throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // jezeli to wydarzylo sie, oznacza to, ze dane slowo zmienilo swoja grupe, mozna to poprawic
+						throw new Exception(polishJapaneseEntryForKanjiKanaPair.getId() + " - " + kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // jezeli to wydarzylo sie, oznacza to, ze dane slowo zmienilo swoja grupe, mozna to poprawic
 						
 					} else {
 						continue;
