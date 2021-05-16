@@ -2626,7 +2626,7 @@ public class Dictionary2Helper {
 			case PHILOSOPHY:
 				result.add("filozofia"); break;
 				
-			case ARCHITECTURE_BUILDING:
+			case ARCHITECTURE:
 				result.add("architektura"); break;
 			
 			default:

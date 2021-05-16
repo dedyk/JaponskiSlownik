@@ -381,10 +381,10 @@
 			<xsd:enumeration value="agriculture" />
 			<xsd:enumeration value="anatomy" />
 			<xsd:enumeration value="archeology" />
-			<xsd:enumeration value="architecture, building" />
+			<xsd:enumeration value="architecture" />
 			<xsd:enumeration value="art, aesthetics" />
 			<xsd:enumeration value="astronomy" />
-			<xsd:enumeration value="audio-visual" />
+			<xsd:enumeration value="audiovisual" />
 			<xsd:enumeration value="aviation" />
 			<xsd:enumeration value="baseball" />
 			<xsd:enumeration value="biochemistry" />
@@ -416,7 +416,7 @@
 			<xsd:enumeration value="grammar" />
 			<xsd:enumeration value="Greek mythology" />
 			<xsd:enumeration value="hanafuda" />
-			<xsd:enumeration value="horse-racing" />
+			<xsd:enumeration value="horse racing" />
 			<xsd:enumeration value="law" />
 			<xsd:enumeration value="linguistics" />
 			<xsd:enumeration value="logic" />
@@ -425,7 +425,7 @@
 			<xsd:enumeration value="mathematics" />
 			<xsd:enumeration value="mechanical engineering" />
 			<xsd:enumeration value="medicine" />
-			<xsd:enumeration value="climate, weather" />
+			<xsd:enumeration value="meteorology" />
 			<xsd:enumeration value="military" />
 			<xsd:enumeration value="music" />
 			<xsd:enumeration value="ornithology" />
@@ -436,8 +436,10 @@
 			<xsd:enumeration value="photography" />
 			<xsd:enumeration value="physics" />
 			<xsd:enumeration value="physiology" />
-			<xsd:enumeration value="printing" />
-			<xsd:enumeration value="psychology, psychiatry" />
+			<xsd:enumeration value="printing" />			
+			<xsd:enumeration value="psychiatry" />			
+			<xsd:enumeration value="psychology" />
+			<xsd:enumeration value="railways" />
 			<xsd:enumeration value="Shinto" />
 			<xsd:enumeration value="shogi" />
 			<xsd:enumeration value="sports" />
@@ -445,7 +447,7 @@
 			<xsd:enumeration value="sumo" />
 			<xsd:enumeration value="telecommunications" />
 			<xsd:enumeration value="trademark" />
-			<xsd:enumeration value="video game" />
+			<xsd:enumeration value="video games" />
 			<xsd:enumeration value="zoology" />
 		</xsd:restriction>
 	</xsd:simpleType>
