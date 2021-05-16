@@ -30,10 +30,10 @@ public class JMEDictEntityMapper {
 		addMap("agric", "agriculture");
 		addMap("anat", "anatomy");
 		addMap("archeol", "archeology");
-		addMap("archit", "architecture, building");
+		addMap("archit", "architecture");
 		addMap("art", "art, aesthetics");
 		addMap("astron", "astronomy");
-		addMap("audvid", "audio-visual");
+		addMap("audvid", "audiovisual");
 		addMap("aviat", "aviation");
 		addMap("baseb", "baseball");
 		addMap("biochem", "biochemistry");
@@ -65,7 +65,7 @@ public class JMEDictEntityMapper {
 		addMap("gramm", "grammar");
 		addMap("grmyth", "Greek mythology");
 		addMap("hanaf", "hanafuda");
-		addMap("horse", "horse-racing");
+		addMap("horse", "horse racing");
 		addMap("law", "law");
 		addMap("ling", "linguistics");
 		addMap("logic", "logic");
@@ -74,7 +74,7 @@ public class JMEDictEntityMapper {
 		addMap("math", "mathematics");
 		addMap("mech", "mechanical engineering");
 		addMap("med", "medicine");
-		addMap("met", "climate, weather");
+		addMap("met", "meteorology");
 		addMap("mil", "military");
 		addMap("music", "music");		
 		addMap("ornith", "ornithology");		
@@ -86,7 +86,9 @@ public class JMEDictEntityMapper {
 		addMap("physics", "physics");
 		addMap("physiol", "physiology");
 		addMap("print", "printing");
-		addMap("psych", "psychology, psychiatry");
+		addMap("psy", "psychiatry");
+		addMap("psych", "psychology");
+		addMap("rail", "railways");
 		addMap("Shinto", "Shinto");
 		addMap("shogi", "shogi");
 		addMap("sports", "sports");
@@ -94,7 +96,7 @@ public class JMEDictEntityMapper {
 		addMap("sumo", "sumo");
 		addMap("telec", "telecommunications");
 		addMap("tradem", "trademark");
-		addMap("vidg", "video game");
+		addMap("vidg", "video games");
 		addMap("zool", "zoology");
 		addMap("ateji", "ateji (phonetic) reading");
 		addMap("ik", "word containing irregular kana usage");
