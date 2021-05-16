@@ -2724,6 +2724,9 @@ public class Dictionary2Helper {
 			case SENSITIVE:
 				result.add("wrażliwie"); break;
 				
+			case HUMBLE_KENJOUGO_LANGUAGE:
+				result.add("pokornie"); break;
+				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
