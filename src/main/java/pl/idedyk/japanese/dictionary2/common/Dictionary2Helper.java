@@ -2632,6 +2632,9 @@ public class Dictionary2Helper {
 			case HORSE_RACING:
 				result.add("wyścigi konne"); break;
 			
+			case SHINTO:
+				result.add("shinto"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
