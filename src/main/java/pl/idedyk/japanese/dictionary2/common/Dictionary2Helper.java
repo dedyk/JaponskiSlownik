@@ -2860,6 +2860,9 @@ public class Dictionary2Helper {
 			
 		case "tha":
 			return "taj";
+		
+		case "san":
+			return "san";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
@@ -2920,6 +2923,9 @@ public class Dictionary2Helper {
 			
 		case "tha":
 			return "słowo pochodzenia tajskiego";
+			
+		case "san":
+			return "sanskryt";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
