@@ -2635,6 +2635,9 @@ public class Dictionary2Helper {
 			case SHINTO:
 				result.add("shinto"); break;
 				
+			case ENGINEERING:
+				result.add("inżynieria"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
