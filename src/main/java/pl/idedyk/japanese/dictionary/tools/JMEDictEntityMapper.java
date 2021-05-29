@@ -43,6 +43,7 @@ public class JMEDictEntityMapper {
 		addMap("bus", "business");
 		addMap("chem", "chemistry");
 		addMap("Christn", "Christianity");
+		addMap("cloth", "clothing");
 		addMap("comp", "computing");
 		addMap("cryst", "crystallography");
 		addMap("ecol", "ecology");
@@ -88,7 +89,7 @@ public class JMEDictEntityMapper {
 		addMap("print", "printing");
 		addMap("psy", "psychiatry");
 		addMap("psych", "psychology");
-		addMap("rail", "railways");
+		addMap("rail", "railway");
 		addMap("Shinto", "Shinto");
 		addMap("shogi", "shogi");
 		addMap("sports", "sports");
