@@ -11474,6 +11474,7 @@ END,2831351,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2644950,,,,,,,,,
 KANJI,2644950,ソーダ石鹸,,,,,,,,
+KANJI,2644950,ソーダ石鹼,word containing out-dated kanji,,,,,,,
 READING,2644950,KATAKANA_HIRAGANA,ソーダせっけん,sooda sekken,-,,,,,
 SENSE_COMMON,2644950,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2644950,soda soap,,,,,,,,
@@ -12339,6 +12340,7 @@ END,1855260,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1643640,,,,,,,,,
 KANJI,1643640,思い描く,,spec1,,,,,,
+KANJI,1643640,想い描く,,,,,,,,
 READING,1643640,HIRAGANA,おもいえがく,omoi egaku,-,,,spec1,,
 SENSE_COMMON,1643640,,,"Godan verb with 'ku' ending
 transitive verb",,,,,,
@@ -14970,13 +14972,17 @@ END,1019220,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1324200,,,,,,,,,
 KANJI,1324200,酌み交わす,,,,,,,,
+KANJI,1324200,酌み交す,,,,,,,,
 KANJI,1324200,酌みかわす,,,,,,,,
+KANJI,1324200,酌交す,,,,,,,,
 KANJI,1324200,酌交わす,,,,,,,,
 READING,1324200,HIRAGANA,くみかわす,kumi kawasu,-,,,,,
 SENSE_COMMON,1324200,,,"Godan verb with 'su' ending
 transitive verb",,,,,,
-SENSE_ENG,1324200,to drink together,,,,,,,,
-SENSE_POL,1324200,pić razem,,,,,,,,
+SENSE_ENG,1324200,"to pour drinks for each other
+to drink together",,,,,,,,
+SENSE_POL,1324200,"nalewać sobie drinki
+pić razem",,,,,,,,
 END,1324200,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -28389,11 +28395,19 @@ END,2840663,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2840749,,,,,,,,,
 KANJI,2840749,櫨蝋,,,,,,,,
-READING,2840749,HIRAGANA,はぜろう,hazerou,-,,,,,
+KANJI,2840749,ハゼ蝋,,,,,,,,
+KANJI,2840749,はぜ蝋,,,,,,,,
+KANJI,2840749,櫨蠟,word containing out-dated kanji,,,,,,,
+READING,2840749,HIRAGANA,はぜろう,haze rou,-,"櫨蝋
+はぜ蝋
+櫨蠟",,,,
+READING,2840749,KATAKANA_HIRAGANA,ハゼろう,haze rou,-,ハゼ蝋,,,,
 SENSE_COMMON,2840749,,,noun (common) (futsuumeishi),木蝋,,,,,
-SENSE_ENG,2840749,"Japan wax
+SENSE_ENG,2840749,"vegetable wax
+Japan wax
 sumac wax",,,,,,,,
-SENSE_POL,2840749,"japoński wosk
+SENSE_POL,2840749,"wosk roślinny
+japoński wosk
 wosk sumakowy",,,,,,,,
 END,2840749,,,,,,,,,
 ,,,,,,,,,,
@@ -28720,12 +28734,14 @@ END,2689320,,,,,,,,,
 BEGIN,2339310,,,,,,,,,
 KANJI,2339310,ローマ字化,,,,,,,,
 READING,2339310,KATAKANA_HIRAGANA,ローマじか,rooma jika,-,,,,,
-SENSE_COMMON,2339310,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,2339310,,,"noun (common) (futsuumeishi)
+noun or participle which takes the aux. verb suru",,,,,,
 SENSE_ENG,2339310,"romanisation
 romanization
-transcribing into romaji",,,,,,,,
+transcribing into the Latin script",,,,,,,,
 SENSE_POL,2339310,"romanizacja
-transkrypcja na romaji",,,,,,,,
+transkrypcja na romaji
+transkrypcja na alfabet łaciński",,,,,,,,
 END,2339310,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -37729,7 +37745,7 @@ END,1803240,,,,,,,,,
 BEGIN,2112450,,,,,,,,,
 KANJI,2112450,魚醤油,,,,,,,,
 KANJI,2112450,魚しょうゆ,,,,,,,,
-READING,2112450,HIRAGANA,うおじょうゆ,uo jouyu,-,,,,,
+READING,2112450,HIRAGANA,うおじょうゆ,uo jouyu,-,魚醤油,,,,
 READING,2112450,HIRAGANA,うおしょうゆ,uo shouyu,-,,,,,
 SENSE_COMMON,2112450,,,noun (common) (futsuumeishi),魚醤,,,,,
 SENSE_ENG,2112450,fish sauce (made from fermented salted fish),,,,,,,,
@@ -46599,7 +46615,7 @@ END,2843726,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2838326,,,,,,,,,
 KANJI,2838326,植物性ミルク,,,,,,,,
-READING,2838326,HIRAGANA,しょくぶつせいみるく,shokubutsusei miruku,-,,,,,
+READING,2838326,HIRAGANA_KATAKANA,しょくぶつせいミルク,shokubutsusei miruku,-,,,,,
 SENSE_COMMON,2838326,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2838326,"plant milk
 non-dairy milk",,,,,,,,
@@ -47259,6 +47275,7 @@ END,2838134,,,,,,,,,
 BEGIN,2831036,,,,,,,,,
 KANJI,2831036,自力救済,,,,,,,,
 READING,2831036,HIRAGANA,じりききゅうさい,jiriki kyuusai,-,,,,,
+READING,2831036,HIRAGANA,じりょくきゅうさい,jiryoku kyuusai,-,,,,,
 SENSE_COMMON,2831036,,,noun (common) (futsuumeishi),,,law,,,
 SENSE_ENG,2831036,self-help,,,,,,,,
 SENSE_POL,2831036,samopomoc,,,,,,,,
@@ -47487,10 +47504,15 @@ nf35",,,,,,
 READING,1323040,HIRAGANA,しゃじ,shaji,-,,,"news2
 nf35",,
 SENSE_COMMON,1323040,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1323040,"thanks
-apology",,,,,,,,
+SENSE_ENG,1323040,"words of thanks
+words of gratitude
+acknowledgements",,,,,,,,
 SENSE_POL,1323040,"podziękowanie
-przeprosiny",,,,,,,,
+słowa podziękowania
+słowa wdzięczności",,,,,,,,
+SENSE_COMMON,1323040,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1323040,apology,,,,,,,,
+SENSE_POL,1323040,przeprosiny,,,,,,,,
 END,1323040,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
