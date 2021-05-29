@@ -2638,6 +2638,9 @@ public class Dictionary2Helper {
 			case ENGINEERING:
 				result.add("inżynieria"); break;
 				
+			case TELECOMMUNICATIONS:
+				result.add("telekomunikacja"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
