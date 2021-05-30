@@ -2,10 +2,10 @@
 ----------
 + word - 15
 ----------
-80000 - 20
-small - 5
-small2 - 5
++ 80000 - 20
++ small - 5
++ small2 - 5
 ludzie - 25
-uzupełniacz - x
+uzupełniacz - x -> -10
 -----------
 suma: 70
