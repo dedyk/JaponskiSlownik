@@ -2641,6 +2641,9 @@ public class Dictionary2Helper {
 			case TELECOMMUNICATIONS:
 				result.add("telekomunikacja"); break;
 				
+			case HANAFUDA:
+				result.add("hanafuda"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
