@@ -2644,6 +2644,9 @@ public class Dictionary2Helper {
 			case HANAFUDA:
 				result.add("hanafuda"); break;
 				
+			case TRADEMARK:
+				result.add("znak towarowy"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
