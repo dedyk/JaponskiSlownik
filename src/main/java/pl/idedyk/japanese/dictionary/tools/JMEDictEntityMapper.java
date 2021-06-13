@@ -16,6 +16,7 @@ public class JMEDictEntityMapper {
 
 	private void fillMaps() {
 
+		addMap("bra", "Brazilian");
 		addMap("hob", "Hokkaido-ben");
 		addMap("ksb", "Kansai-ben");
 		addMap("ktb", "Kantou-ben");
@@ -103,7 +104,8 @@ public class JMEDictEntityMapper {
 		addMap("ik", "word containing irregular kana usage");
 		addMap("iK", "word containing irregular kanji usage");
 		addMap("io", "irregular okurigana usage");
-		addMap("oK", "word containing out-dated kanji");
+		addMap("oK", "word containing out-dated kanji or kanji usage");
+		addMap("rK", "rarely-used kanji form");
 		addMap("abbr", "abbreviation");
 		addMap("arch", "archaism");
 		addMap("char", "character");
@@ -114,18 +116,20 @@ public class JMEDictEntityMapper {
 		addMap("dated", "dated term");
 		addMap("dei", "deity");
 		addMap("derog", "derogatory");
+		addMap("doc", "document");
 		addMap("ev", "event");
 		addMap("fam", "familiar language");
 		addMap("fem", "female term or language");
 		addMap("fict", "fiction");
+		addMap("form", "formal or literary term");
 		addMap("given", "given name or forename, gender not specified");
+		addMap("group", "group");
 		addMap("hist", "historical term");
 		addMap("hon", "honorific or respectful (sonkeigo) language");
 		addMap("hum", "humble (kenjougo) language");
 		addMap("id", "idiomatic expression");
 		addMap("joc", "jocular, humorous term");
 		addMap("leg", "legend");
-		addMap("litf", "literary or formal term");
 		addMap("m-sl", "manga slang");
 		addMap("male", "male term or language");
 		addMap("myth", "mythology");
