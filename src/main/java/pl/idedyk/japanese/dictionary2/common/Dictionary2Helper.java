@@ -2647,6 +2647,9 @@ public class Dictionary2Helper {
 			case TRADEMARK:
 				result.add("znak towarowy"); break;
 				
+			case CLOTHING:
+				result.add("odzież"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
