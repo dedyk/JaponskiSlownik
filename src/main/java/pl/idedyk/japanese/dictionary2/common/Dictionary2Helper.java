@@ -2712,8 +2712,8 @@ public class Dictionary2Helper {
 			case MANGA_SLANG:
 				result.add("slang mangowy"); break;
 				
-			case LITERARY_OR_FORMAL_TERM:
-				result.add("literacki lub formalny termin"); break;
+			case FORMAL_OR_LITERARY_TERM:
+				result.add("formalny lub literacki termin"); break;
 				
 			case HISTORICAL_TERM:
 				result.add("termin historyczny"); break;

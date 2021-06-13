@@ -122,6 +122,7 @@
 			<xsd:enumeration value="expl" /> <!-- wyjasnienie -->
 			<xsd:enumeration value="lit" /> <!-- doslowne znaczenie -->
 			<xsd:enumeration value="fig" /> <!-- symboliczne -->
+			<xsd:enumeration value="tm" /> <!-- ??? -->
 		</xsd:restriction>
 	</xsd:simpleType>
 
@@ -131,7 +132,8 @@
 			<xsd:enumeration value="word containing irregular kana usage" />
 			<xsd:enumeration value="word containing irregular kanji usage" />
 			<xsd:enumeration value="irregular okurigana usage" />
-			<xsd:enumeration value="word containing out-dated kanji" />
+			<xsd:enumeration value="word containing out-dated kanji or kanji usage" />
+			<xsd:enumeration value="rarely-used kanji form" />
 		</xsd:restriction>
 	</xsd:simpleType>
 
@@ -306,18 +308,20 @@
 			<xsd:enumeration value="dated term" />
 			<xsd:enumeration value="deity" />
 			<xsd:enumeration value="derogatory" />
+			<xsd:enumeration value="document" />
 			<xsd:enumeration value="event" />
 			<xsd:enumeration value="familiar language" />
 			<xsd:enumeration value="female term or language" />
 			<xsd:enumeration value="fiction" />
+			<xsd:enumeration value="formal or literary term" />
 			<xsd:enumeration value="given name or forename, gender not specified" />
+			<xsd:enumeration value="group" />
 			<xsd:enumeration value="historical term" />
 			<xsd:enumeration value="honorific or respectful (sonkeigo) language" />
 			<xsd:enumeration value="humble (kenjougo) language" />
 			<xsd:enumeration value="idiomatic expression" />
 			<xsd:enumeration value="jocular, humorous term" />
 			<xsd:enumeration value="legend" />
-			<xsd:enumeration value="literary or formal term" />
 			<xsd:enumeration value="manga slang" />
 			<xsd:enumeration value="male term or language" />
 			<xsd:enumeration value="mythology" />
@@ -353,6 +357,7 @@
 
 	<xsd:simpleType name="dialect">
 		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Brazilian" />
 			<xsd:enumeration value="Hokkaido-ben" />
 			<xsd:enumeration value="Kansai-ben" />
 			<xsd:enumeration value="Kantou-ben" />
