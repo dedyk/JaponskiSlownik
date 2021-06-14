@@ -3116,11 +3116,7 @@ public class WordGenerator {
 							if (JMENewDictionary.isMultiGroup(groupEntryList) == true && force == true) {
 								throw new RuntimeException("MultiGroup for: " + polishJapaneseEntry.getId() + " and force = true");
 							}
-							
-							for (GroupEntry currentGroupEntry : groupEntryList) {
-								entryIdSet.add(currentGroupEntry.getGroup().getId());
-							}							
-							
+														
 							if (JMENewDictionary.isMultiGroup(groupEntryList) == false || force == true) { // grupa pojedyncza
 								
 								/*
@@ -3217,6 +3213,10 @@ public class WordGenerator {
 									// liczba slow wybrana przez uzytkownika
 									wordsCounter++;
 									
+									for (GroupEntry currentGroupEntry : groupEntryList) {
+										entryIdSet.add(currentGroupEntry.getGroup().getId());
+									}							
+									
 									boolean currentPolishJapaneseEntryInAllPolishJapaneseEntryListForGroupEntry = false;
 																		
 									for (PolishJapaneseEntryAndGroupEntry polishJapaneseEntryAndGroupEntry : allPolishJapaneseEntryListForGroupEntry) {
@@ -3278,6 +3278,10 @@ public class WordGenerator {
 									result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, groupEntryList, null));
 									
 									wordsCounter++;
+									
+									for (GroupEntry currentGroupEntry : groupEntryList) {
+										entryIdSet.add(currentGroupEntry.getGroup().getId());
+									}							
 								}
 							}
 							
@@ -3296,6 +3300,10 @@ public class WordGenerator {
 								result.add(new PolishJapaneseEntryAndGroupEntryListWrapper(polishJapaneseEntry, null, "IGNORE_NO_JMEDICT ???"));
 								
 								wordsCounter++;
+								
+								for (GroupEntry currentGroupEntry : groupEntryList) {
+									entryIdSet.add(currentGroupEntry.getGroup().getId());
+								}
 							}
 						}
 						
