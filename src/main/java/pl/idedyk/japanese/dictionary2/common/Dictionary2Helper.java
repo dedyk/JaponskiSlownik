@@ -2885,6 +2885,9 @@ public class Dictionary2Helper {
 		case "san":
 			return "san";
 			
+		case "chn":
+			return "chin";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
