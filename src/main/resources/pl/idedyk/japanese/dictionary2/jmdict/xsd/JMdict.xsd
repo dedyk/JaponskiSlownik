@@ -122,7 +122,7 @@
 			<xsd:enumeration value="expl" /> <!-- wyjasnienie -->
 			<xsd:enumeration value="lit" /> <!-- doslowne znaczenie -->
 			<xsd:enumeration value="fig" /> <!-- symboliczne -->
-			<xsd:enumeration value="tm" /> <!-- ??? -->
+			<xsd:enumeration value="tm" /> <!-- znak towarowy -->
 		</xsd:restriction>
 	</xsd:simpleType>
 

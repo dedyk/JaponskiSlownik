@@ -2973,6 +2973,9 @@ public class Dictionary2Helper {
 		case LIT:
 			return "literacko";
 		
+		case TM:
+			return "znak towarowy";
+			
 			default:
 				throw new RuntimeException("Unknown gloss type: " + glossType);
 		}
