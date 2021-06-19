@@ -2785,6 +2785,9 @@ public class Dictionary2Helper {
 				
 			case BRAZILIAN:
 				result.add("dialekt brazyliński"); break;
+			
+			case KANTOU_BEN:
+				result.add("dialekt Kantou"); break;
 				
 			default:
 				throw new RuntimeException("Unknown dialect enum: " + dialectEnum);
