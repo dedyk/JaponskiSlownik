@@ -2968,7 +2968,7 @@ public class Dictionary2Helper {
 		switch (glossType) {
 		
 		case EXPL:
-			return "wyrażenie";
+			return "wyjaśnienie";
 			
 		case FIG:
 			return "przenośna";
