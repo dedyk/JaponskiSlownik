@@ -3301,9 +3301,11 @@ public class WordGenerator {
 								
 								wordsCounter++;
 								
-								for (GroupEntry currentGroupEntry : groupEntryList) {
-									entryIdSet.add(currentGroupEntry.getGroup().getId());
-								}
+								if (groupEntryList != null) {
+                                    for (GroupEntry currentGroupEntry : groupEntryList) {
+                                        entryIdSet.add(currentGroupEntry.getGroup().getId());
+                                    }
+                                }
 							}
 						}
 						
