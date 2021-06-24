@@ -2650,6 +2650,9 @@ public class Dictionary2Helper {
 			case CLOTHING:
 				result.add("odzież"); break;
 				
+			case GO_GAME:
+				result.add("go (gra)"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
