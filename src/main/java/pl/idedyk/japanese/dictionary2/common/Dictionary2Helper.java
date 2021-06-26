@@ -2653,6 +2653,9 @@ public class Dictionary2Helper {
 			case GO_GAME:
 				result.add("go (gra)"); break;
 				
+			case LOGIC:
+				result.add("logika"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
