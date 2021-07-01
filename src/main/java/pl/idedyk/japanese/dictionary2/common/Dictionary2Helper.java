@@ -2658,6 +2658,9 @@ public class Dictionary2Helper {
 				
 			case ELECTRICITY_ELEC_ENG:
 				result.add("elektryczność"); break;
+			
+			case METEOROLOGY:
+				result.add("meteorologia"); break;
 				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
