@@ -2905,6 +2905,9 @@ public class Dictionary2Helper {
 			
 		case "vie":
 			return "wiet";
+
+		case "hun":
+			return "węg";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
@@ -2968,6 +2971,15 @@ public class Dictionary2Helper {
 			
 		case "san":
 			return "sanskryt";
+			
+		case "chn":
+			return "słowo pochodzenia chińskiego";
+			
+		case "vie":
+			return "słowo pochodzenia wietnamskiego";
+
+		case "hun":
+			return "słowo pochodzenia węgierskiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
