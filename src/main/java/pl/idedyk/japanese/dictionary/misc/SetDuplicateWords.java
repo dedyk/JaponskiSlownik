@@ -40,7 +40,7 @@ public class SetDuplicateWords {
 								
 				String ids = csvReader.get(3);
 				
-				List<String> idsList = Utils.parseStringIntoList(ids, false);
+				List<String> idsList = Utils.parseStringIntoList(ids /*, false */ );
 				
 				for (String currentId : idsList) {
 					
