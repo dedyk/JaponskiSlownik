@@ -1415,9 +1415,11 @@ KANJI,1692740,投資信託,,"news1
 nf13",,,,,,
 READING,1692740,HIRAGANA,とうししんたく,toushi shintaku,-,,,"news1
 nf13",,
-SENSE_COMMON,1692740,,,noun (common) (futsuumeishi),投信,,,,,
-SENSE_ENG,1692740,investment trust,,,,,,,,
-SENSE_POL,1692740,fundusz inwestycyjny,,,,,,,,
+SENSE_COMMON,1692740,,,noun (common) (futsuumeishi),投信,,finance,,,
+SENSE_ENG,1692740,"investment trust
+mutual fund",,,,,,,,
+SENSE_POL,1692740,"fundusz inwestycyjny
+fundusz powierniczy",,,,,,,,
 END,1692740,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -4743,12 +4745,14 @@ BEGIN,1306310,,,,,,,,,
 KANJI,1306310,使用法,,,,,,,,
 READING,1306310,HIRAGANA,しようほう,shiyouhou,-,,,,,
 SENSE_COMMON,1306310,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1306310,"usage method
-directions",,,,,,,,
-SENSE_POL,1306310,"sposób użycia
-metoda użycia
-wskazówki
-kierunek",,,,,,,,
+SENSE_ENG,1306310,"directions
+instructions
+usage method",,,,,,,,
+SENSE_POL,1306310,"wskazówki
+kierunki
+instrukcje
+sposób użycia
+metoda użycia",,,,,,,,
 END,1306310,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -29752,7 +29756,8 @@ KANJI,1596700,珠盤,,,,,,,,
 READING,1596700,HIRAGANA,そろばん,soroban,-,,,ichi1,,
 READING,1596700,KATAKANA,ソロバン,soroban,NO_KANJI,,,,,
 SENSE_COMMON,1596700,,,noun (common) (futsuumeishi),,,,word usually written using kana alone,,
-SENSE_ENG,1596700,abacus,,,,,,,,
+SENSE_ENG,1596700,"abacus
+soroban",,,,,,,,
 SENSE_POL,1596700,"soroban (japoński odpowiednik europejskiego abakusa (liczydła))
 abakus
 liczydło",,,,,,,,
@@ -45730,7 +45735,7 @@ END,2841196,,,,,,,,,
 BEGIN,2837375,,,,,,,,,
 KANJI,2837375,黄禍論,,,,,,,,
 READING,2837375,HIRAGANA,こうかろん,koukaron,-,,,,,
-SENSE_COMMON,2837375,,,noun (common) (futsuumeishi),黄禍,,,,,
+SENSE_COMMON,2837375,,,noun (common) (futsuumeishi),黄禍・1,,,,,
 SENSE_ENG,2837375,"Yellow Peril (argument)
 theory that East Asians are a danger to the Western world|expl",,,,,,,,
 SENSE_POL,2837375,"Żółte niebezpieczeństwo
@@ -79295,6 +79300,7 @@ END,2848247,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2785000,,,,,,,,,
 KANJI,2785000,人作り,,,,,,,,
+KANJI,2785000,人づくり,,,,,,,,
 READING,2785000,HIRAGANA,ひとづくり,hito dukuri,-,,,,,
 READING,2785000,HIRAGANA,ひとつくり,hito tsukuri,-,,,,,
 SENSE_COMMON,2785000,,,noun (common) (futsuumeishi),,,,,,
