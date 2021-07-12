@@ -1772,7 +1772,7 @@ public class Dictionary2Helper {
 					}		
 				}
 				
-				if (romaji.contains("!") == true || romaji.contains("SPRA") == true) { // !!! SPRAWDŹ !!!
+				if (romaji.contains("!") == true || romaji.contains("-") == true || romaji.contains("SPRA") == true) { // !!! SPRAWDŹ !!!
 					
 					System.out.println("[Error] Romaji validate (5) for " + entry.getEntryId() + " - " + kana + " - " + romaji);
 					
