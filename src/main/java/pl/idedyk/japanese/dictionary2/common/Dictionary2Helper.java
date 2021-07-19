@@ -2669,6 +2669,9 @@ public class Dictionary2Helper {
 			case METEOROLOGY:
 				result.add("meteorologia"); break;
 				
+			case GENETICS:
+				result.add("genetyka"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
