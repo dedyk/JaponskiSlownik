@@ -2916,6 +2916,9 @@ public class Dictionary2Helper {
 		case "hun":
 			return "węg";
 			
+		case "heb":
+			return "heb";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
@@ -2987,6 +2990,9 @@ public class Dictionary2Helper {
 
 		case "hun":
 			return "słowo pochodzenia węgierskiego";
+			
+		case "heb":
+			return "słowo pochodzenia hebrajskiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
