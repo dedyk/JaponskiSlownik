@@ -572,6 +572,7 @@ public class Helper {
 		nameTypeMapper.put("oth", DictionaryEntryType.WORD_OTHER);
 		nameTypeMapper.put("relig", DictionaryEntryType.WORD_RELIGION);
 		nameTypeMapper.put("serv", DictionaryEntryType.WORD_SERVICE);
+		nameTypeMapper.put("group", DictionaryEntryType.WORD_GROUP);
 		
 		// informacje wygenerowane automatycznie !!!!!!!!!!!!!!!!!!11
 		// WORD_COMPANY_NAME
