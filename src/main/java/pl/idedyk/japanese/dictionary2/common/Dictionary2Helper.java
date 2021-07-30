@@ -1910,7 +1910,7 @@ public class Dictionary2Helper {
 				if (polishJapaneseEntryForKanjiKanaPairEntryId != null && polishJapaneseEntryForKanjiKanaPairEntryId.intValue() != entry.getEntryId().intValue()) { // sprawdzamy grupe
 					
 					if (throwErrorWhenDifferentGroup == true) {
-						throw new Exception(polishJapaneseEntryForKanjiKanaPair.getId() + " - " + kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // jezeli to wydarzylo sie, oznacza to, ze dane slowo zmienilo swoja grupe, mozna to poprawic
+						throw new Exception(polishJapaneseEntryForKanjiKanaPair.getId() + " - " + kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana + " - " + entry.getEntryId().intValue()); // jezeli to wydarzylo sie, oznacza to, ze dane slowo zmienilo swoja grupe, mozna to poprawic; ewentualnie jest multi group dla podanego kanji i kana
 						
 					} else {
 						continue;
@@ -1939,7 +1939,7 @@ public class Dictionary2Helper {
 			}
 			
 			if (polishJapaneseEntryForKanjiKanaPair == null) { // nie udalo sie znalesc slowa w starym slowniku				
-				throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // to chyba nigdy nie powinno zdarzyc sie
+				throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana + " - " + entry.getEntryId().intValue()); // to chyba nigdy nie powinno zdarzyc sie
 			}
 			
 			allPolishJapaneseEntriesForEntry.add(polishJapaneseEntryForKanjiKanaPair);
