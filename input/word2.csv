@@ -1110,11 +1110,16 @@ END,2347710,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1029840,,,,,,,,,
-READING,1029840,KATAKANA,エポックメーキング,epokku meekingu,-,,,,,
 READING,1029840,KATAKANA,エポックメイキング,epokku meikingu,-,,,,,
+READING,1029840,KATAKANA,エポックメーキング,epokku meekingu,-,,,,,
+READING,1029840,KATAKANA,エポック・メイキング,epokku meikingu,-,,,,,
+READING,1029840,KATAKANA,エポック・メーキング,epokku meekingu,-,,,,,
 SENSE_COMMON,1029840,,,adjectival nouns or quasi-adjectives (keiyodoshi),,,,,,
-SENSE_ENG,1029840,epoch-making,,,,,,,,
-SENSE_POL,1029840,epokowy,ang: epoch-making,,,,,,,
+SENSE_ENG,1029840,"epoch-making
+pivotal",,,,,,,,
+SENSE_POL,1029840,"epokowy
+kluczowy
+decydujący",ang: epoch-making,,,,,,,
 END,1029840,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2841,11 +2846,14 @@ END,2621740,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1693500,,,,,,,,,
 KANJI,1693500,逆剃り,,,,,,,,
-READING,1693500,HIRAGANA,さかぞり,sakazori,-,,,,,
+KANJI,1693500,逆ぞり,,,,,,,,
+READING,1693500,HIRAGANA,さかぞり,saka zori,-,,,,,
 SENSE_COMMON,1693500,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru",,,,,,
-SENSE_ENG,1693500,shaving against the grain,,,,,,,,
-SENSE_POL,1693500,golenie pod włos,,,,,,,,
+SENSE_ENG,1693500,"shaving against the grain
+shaving upwards",,,,,,,,
+SENSE_POL,1693500,"golenie pod włos
+golenie w górę",,,,,,,,
 END,1693500,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -19600,16 +19608,6 @@ main cause",,,,,,,,
 SENSE_POL,2104100,"główny czynnik
 główny powód",,,,,,,,
 END,2104100,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-BEGIN,2296990,,,,,,,,,
-KANJI,2296990,コメント化,,,,,,,,
-READING,2296990,KATAKANA_HIRAGANA,コメントか,komento ka,-,,,,,
-SENSE_COMMON,2296990,,,"noun (common) (futsuumeishi)
-noun or participle which takes the aux. verb suru",,,computing,,,
-SENSE_ENG,2296990,to comment,,,,,,,,
-SENSE_POL,2296990,komentować,,,,,,,,
-END,2296990,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2391400,,,,,,,,,
@@ -49778,8 +49776,10 @@ BEGIN,2845126,,,,,,,,,
 KANJI,2845126,コロナ疲れ,,,,,,,,
 READING,2845126,KATAKANA_HIRAGANA,コロナづかれ,korona dukare,-,,,,,
 SENSE_COMMON,2845126,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,2845126,being tired of dealing with (or worrying over) the COVID-19 pandemic,,,,,,,,
-SENSE_POL,2845126,bycie zmęczony pandemią COVID-19,,,,,,,,
+SENSE_ENG,2845126,"being tired of dealing with (or worrying over) the COVID-19 pandemic
+pandemic fatigue",,,,,,,,
+SENSE_POL,2845126,"bycie zmęczony pandemią COVID-19
+zmęczenie pandemiczne",,,,,,,,
 END,2845126,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -50203,8 +50203,9 @@ END,2621060,,,,,,,,,
 BEGIN,2512240,,,,,,,,,
 KANJI,2512240,流行風邪,,,,,,,,
 KANJI,2512240,流行り風邪,,,,,,,,
+KANJI,2512240,はやり風邪,,,,,,,,
 READING,2512240,HIRAGANA,はやりかぜ,hayari kaze,-,,,,,
-SENSE_COMMON,2512240,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,2512240,,,noun (common) (futsuumeishi),インフルエンザ,,,dated term,,
 SENSE_ENG,2512240,influenza,,,,,,,,
 SENSE_POL,2512240,grypa,,,,,,,,
 END,2512240,,,,,,,,,
@@ -65048,16 +65049,15 @@ nf07",,,,,,
 READING,1472610,HIRAGANA,はいぼく,haiboku,-,,,"ichi1
 news1
 nf07",,
-SENSE_COMMON,1472610,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1472610,defeat,,,,,,,,
+SENSE_COMMON,1472610,,,"noun (common) (futsuumeishi)
+noun or participle which takes the aux. verb suru",,,,,,
+SENSE_ENG,1472610,"defeat
+loss
+reverse
+setback",,,,,,,,
 SENSE_POL,1472610,"porażka
 przegrana
 klęska",,,,,,,,
-SENSE_COMMON,1472610,,,"noun or participle which takes the aux. verb suru
-intransitive verb",,,,,,
-SENSE_ENG,1472610,to be defeated,,,,,,,,
-SENSE_POL,1472610,"zostać pokonany
-być pokonany",,,,,,,,
 END,1472610,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -83497,11 +83497,19 @@ END,1154880,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2405970,,,,,,,,,
 KANJI,2405970,息が合う,,,,,,,,
+KANJI,2405970,息があう,,,,,,,,
 READING,2405970,HIRAGANA,いきがあう,iki ga au,-,,,,,
 SENSE_COMMON,2405970,,,"expressions (phrases, clauses, etc.)
-Godan verb with 'u' ending",,,,,,
-SENSE_ENG,2405970,"to (work, talk, etc.) together smoothly",,,,,,,,
-SENSE_POL,2405970,"(pracować, rozmawiać, współpracować i etc) razem płynnie",,,,,,,,
+Godan verb with 'u' ending",,,,idiomatic expression,,
+SENSE_ENG,2405970,"to perform in tune with each other
+to get along well
+to be in perfect harmony
+to make a perfect pair (team, etc.)",,,,,,,,
+SENSE_POL,2405970,"działać razem w harmonii
+współpracować razem w zgodzie
+dobrze dogadywać się
+być w perfekcyjnej harmonii
+tworzyć perfekcyjną parę (zespół i etc)",,,,,,,,
 END,2405970,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -86840,8 +86848,10 @@ BEGIN,2095280,,,,,,,,,
 KANJI,2095280,特殊学校,,,,,,,,
 READING,2095280,HIRAGANA,とくしゅがっこう,tokushu gakkou,-,,,,,
 SENSE_COMMON,2095280,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,2095280,special school for handicapped children,,,,,,,,
-SENSE_POL,2095280,szkoła specjalna dla dzieci niepełnosprawnych,,,,,,,,
+SENSE_ENG,2095280,"special school
+special needs school",,,,,,,,
+SENSE_POL,2095280,"szkoła specjalna
+szkoła specjalna dla dzieci niepełnosprawnych",,,,,,,,
 END,2095280,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
