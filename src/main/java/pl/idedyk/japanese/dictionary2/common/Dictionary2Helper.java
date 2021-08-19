@@ -2675,6 +2675,9 @@ public class Dictionary2Helper {
 			case PSYCHOLOGY:
 				result.add("psychologia"); break;
 				
+			case VIDEO_GAMES:
+				result.add("gry wideo"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
