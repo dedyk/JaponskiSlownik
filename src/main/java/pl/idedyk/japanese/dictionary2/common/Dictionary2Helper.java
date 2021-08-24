@@ -2934,6 +2934,9 @@ public class Dictionary2Helper {
 		case "afr":
 			return "afr";
 			
+		case "grc":
+			return "grk";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
@@ -3014,6 +3017,9 @@ public class Dictionary2Helper {
 			
 		case "afr":
 			return "słowo pochodzenia afrykanerski";
+			
+		case "grc":
+			return "słowo pochodzenia greckiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
