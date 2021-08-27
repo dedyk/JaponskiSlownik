@@ -2145,9 +2145,44 @@ public class Dictionary2Helper {
 				
 				System.out.println("[Warning] Can't find polish japanese entry for " + entry.getEntryId() + " - " + kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana);
 				
-				polishJapaneseEntry = generateNewEmptyOldPolishJapaneseEntry(kanjiKanaPair);
+				// szukamy, czy wystepuje jakis element, ktory zostal zaznaczony do skasowania
+				PolishJapaneseEntry polishJapaneseEntryToDelete = getPolishJapaneseEntryToDelete();
 				
-				newOldPolishJapaneseEntryList.add(polishJapaneseEntry);
+				if (polishJapaneseEntryToDelete == null) { // nie znaleziono, dodajemy nowy
+					
+					polishJapaneseEntry = generateNewEmptyOldPolishJapaneseEntry(kanjiKanaPair);
+					
+					newOldPolishJapaneseEntryList.add(polishJapaneseEntry);
+					
+				} else { // resetujemy pozycje
+					
+					// tworzenie nowej pustej pozycji
+					PolishJapaneseEntry newPolishJapaneseEntry = generateNewEmptyOldPolishJapaneseEntry(kanjiKanaPair);
+					
+					// resetowanie wpisudo skasowania na podstawie nowego pustego wpisu 
+					polishJapaneseEntryToDelete.setKanji(newPolishJapaneseEntry.getKanji());
+					polishJapaneseEntryToDelete.setKana(newPolishJapaneseEntry.getKana());
+					polishJapaneseEntryToDelete.setRomaji(newPolishJapaneseEntry.getRomaji());
+
+					polishJapaneseEntryToDelete.setTranslates(newPolishJapaneseEntry.getTranslates());		
+					polishJapaneseEntryToDelete.setInfo(newPolishJapaneseEntry.getInfo());	
+					
+					polishJapaneseEntryToDelete.setWordType(newPolishJapaneseEntry.getWordType());						
+					polishJapaneseEntryToDelete.setDictionaryEntryTypeList(newPolishJapaneseEntry.getDictionaryEntryTypeList());						
+
+					polishJapaneseEntryToDelete.setAttributeList(newPolishJapaneseEntry.getAttributeList());						
+					polishJapaneseEntryToDelete.setParseAdditionalInfoList(newPolishJapaneseEntry.getParseAdditionalInfoList());				
+
+					polishJapaneseEntryToDelete.setGroups(newPolishJapaneseEntry.getGroups());										
+					polishJapaneseEntryToDelete.setKnownDuplicatedList(newPolishJapaneseEntry.getKnownDuplicatedList());					
+					
+					polishJapaneseEntryToDelete.setJmedictRawDataList(newPolishJapaneseEntry.getJmedictRawDataList());
+
+					//
+										
+					polishJapaneseEntry = polishJapaneseEntryToDelete;
+				}
+				
 								
 			} else {
 				polishJapaneseEntry = polishJapaneseEntryOptional.get();
@@ -2527,6 +2562,20 @@ public class Dictionary2Helper {
 		polishJapaneseEntry.setJmedictRawDataList(new ArrayList<String>()); // zaraz wpisze sie poprawna wartosc
 				
 		return polishJapaneseEntry;
+	}
+	
+	private PolishJapaneseEntry getPolishJapaneseEntryToDelete() throws Exception {	
+		
+		List<PolishJapaneseEntry> polishJapaneseEntriesList = oldWordGeneratorHelper.getPolishJapaneseEntriesList();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+			
+			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.TO_DELETE) == true) {
+				return polishJapaneseEntry;
+			}			
+		}
+		
+		return null;
 	}
 
 	private List<String> translateToPolishFieldEnumList(Collection<FieldEnum> fieldEnumList) {
