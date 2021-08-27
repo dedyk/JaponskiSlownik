@@ -12,5 +12,7 @@ public enum ParseAdditionalInfo {
 	
 	IGNORE_NO_JMEDICT,
 	
-	DICTIONARY2_SOURCE;
+	DICTIONARY2_SOURCE,
+	
+	TO_DELETE;
 }
