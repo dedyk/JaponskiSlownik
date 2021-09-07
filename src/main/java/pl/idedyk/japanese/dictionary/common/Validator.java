@@ -87,6 +87,10 @@ public class Validator {
 		
 		// walidacja typow hiragana i katakana
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.TO_DELETE) == true) {
+				continue;
+			}
 
 			/*
 			String kanji = polishJapaneseEntry.getKanji();
