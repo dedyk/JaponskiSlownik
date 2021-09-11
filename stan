@@ -2,11 +2,11 @@
 ----------
 + word - 15
 ----------
-90000 - 20
-small - 10
-small2 - 10
-ludzie - 15
-uzupełniacz - x
++ 90000 - 20
++ small - 10
++ small2 - 10
+* ludzie - 15
++ uzupełniacz - 16
 -----------
 suma: 70
 
