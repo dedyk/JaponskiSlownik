@@ -2730,6 +2730,9 @@ public class Dictionary2Helper {
 			case PRINTING:
 				result.add("drukarstwo"); break;
 				
+			case ELECTRONICS:
+				result.add("elektronika"); break;
+								
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
