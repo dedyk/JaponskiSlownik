@@ -203,6 +203,10 @@ public class Validator {
 
 		// walidacja typow hiragana_katakana i katakana_hiragana
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseKanjiEntries) {
+			
+			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.TO_DELETE) == true) {
+				continue;
+			}
 
 			WordType wordType = polishJapaneseEntry.getWordType();
 
