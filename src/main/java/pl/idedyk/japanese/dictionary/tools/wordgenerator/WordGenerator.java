@@ -293,9 +293,9 @@ public class WordGenerator {
 			
 			case GENERATE_MISSING_WORD_LIST: {
 								
-				if (args.length != 2 && args.length != 3 && args.length != 4 && args.length != 5) {
+				if (args.length != 2 && args.length != 3 && args.length != 4 && args.length != 5 && args.length != 6) {
 					
-					System.err.println("Niepoprawna liczba argumentów. Poprawne wywołanie: [plik z lista słów] [czy sprawdzać w jisho.org] [czy zapis w formacie common] [czy dodawać tylko słowa, których nie ma w pliku common]");
+					System.err.println("Niepoprawna liczba argumentów. Poprawne wywołanie: [plik z lista słów] [czy sprawdzać w jisho.org] [czy zapis w formacie common] [czy dodawać tylko słowa, których nie ma w pliku common] [czy dodać wszystkie (również istniejące słowa w starym słowniku) do słownika w nowym formacie]");
 					
 					return;
 				}
@@ -305,6 +305,7 @@ public class WordGenerator {
 				boolean checkInJishoOrg = true;
 				boolean saveInCommonFormat = false;
 				boolean addOnlyWordsWhichDoesntExistInCommonFile = false;
+				boolean addAllFoundWordsToWordDictionary2 = false;
 				
 				if (args.length > 2) {
 					checkInJishoOrg = Boolean.parseBoolean(args[2]);
@@ -317,7 +318,11 @@ public class WordGenerator {
 				if (args.length > 4) {
 					addOnlyWordsWhichDoesntExistInCommonFile = Boolean.parseBoolean(args[4]);
 				}
-								
+
+				if (args.length > 5) {
+					addAllFoundWordsToWordDictionary2 = Boolean.parseBoolean(args[5]);
+				}
+
 				// wczytywanie pliku z lista slow
 				System.out.println("Wczytywanie brakujących słów...");
 				
@@ -480,8 +485,14 @@ public class WordGenerator {
 									*/
 									
 								} else {
-									alreadyAddedWordList.add(polishJapaneseEntry);
-								}								
+									alreadyAddedWordList.add(polishJapaneseEntry);									
+								}
+								
+								//
+								
+								if (addAllFoundWordsToWordDictionary2 == true) {
+									entryIdSet.add(groupEntry.getGroup().getId());
+								}
 							}								
 						}	
 						
