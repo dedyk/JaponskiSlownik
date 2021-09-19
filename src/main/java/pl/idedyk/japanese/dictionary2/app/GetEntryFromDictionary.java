@@ -1,7 +1,12 @@
 package pl.idedyk.japanese.dictionary2.app;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -26,7 +31,9 @@ public class GetEntryFromDictionary {
 		// opcje
 		Options options = new Options();
 		
+		options.addOption("c", "check-only-max-ids", true, "Check only max ids");
 		options.addOption("e", "entry-ids", true, "Entry ids");
+		options.addOption("f", "file-entry-ids", true, "File entry ids");
 		options.addOption("p", "polish-dictionary", false, "Use polish dictionary");
 		options.addOption("j", "jmdict-dictionary", false, "Use JMdict dictionary");
 		//options.addOption("awwadeiod", "add-words-which-also-doesnt-exist-in-old-dictionary", false, "Add words which also doesn't exist in old dictionary");
@@ -56,16 +63,24 @@ public class GetEntryFromDictionary {
 		
 		//
 		
-		Set<Integer> entryIds = new HashSet<>();
+		Set<Integer> entryIds = new LinkedHashSet<>();
 				
 		boolean usePolishDictionary = false;
 		boolean useJMdictDictionary = false;
+		
+		Integer checkOnlyMaxIds = null;
 		
 		//boolean addWordsWithAlsoDoesntExistInOldDictionary = false;
 		
 		//
 		
-		if (commandLine.hasOption("entry-ids") == true) {
+		if (commandLine.hasOption("entry-ids") == true && commandLine.hasOption("file-entry-ids") == true) {
+			
+			printHelp(options);
+			
+			System.exit(1);			
+			
+		} else if (commandLine.hasOption("entry-ids") == true) {
 			
 			String entryIdsValue = commandLine.getOptionValue("entry-ids");
 			
@@ -75,6 +90,16 @@ public class GetEntryFromDictionary {
 				entryIds.add(new Integer(currentEntryId));
 			}
 			
+		} else if (commandLine.hasOption("file-entry-ids") == true) { 
+			
+			String fileNameEntryIds = commandLine.getOptionValue("file-entry-ids");
+			
+			List<String> fileEntryIds = readFile(fileNameEntryIds);
+
+			for (String currentEntryId : fileEntryIds) {
+				entryIds.add(new Integer(currentEntryId));
+			}
+		
 		} else {
 			
 			printHelp(options);
@@ -88,6 +113,10 @@ public class GetEntryFromDictionary {
 		
 		if (commandLine.hasOption("jmdict-dictionary") == true) {
 			useJMdictDictionary = true;			
+		}
+		
+		if (commandLine.hasOption("check-only-max-ids") == true) {			
+			checkOnlyMaxIds = new Integer(commandLine.getOptionValue("check-only-max-ids"));			
 		}
 		
 		if ((usePolishDictionary == false && useJMdictDictionary == false) || (usePolishDictionary == true && useJMdictDictionary == true)) {
@@ -122,7 +151,11 @@ public class GetEntryFromDictionary {
 		// dodatkowe informacje
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
 		
+		int entryIdsCounter = 0;
+		
 		for (Integer currentEntryId : entryIds) {
+			
+			entryIdsCounter++;
 			
 			if (alreadyMetEntrySet.contains(currentEntryId) == true) { // to slowo juz odwiedzalismy
 				continue;
@@ -182,11 +215,24 @@ public class GetEntryFromDictionary {
 				dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(jmdictEntry, entryAdditionalData);
 				
 				result.add(jmdictEntry);
+				
+				if (checkOnlyMaxIds != null && result.size() >= checkOnlyMaxIds) {
+					break;
+				}
 			}
 		}
 		
-		// zapisanie wyniku pod postacia csv		
-		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", result, entryAdditionalData);
+		if (checkOnlyMaxIds == null) {
+			
+			// zapisanie wyniku pod postacia csv		
+			dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", result, entryAdditionalData);
+			
+		} else {
+			
+			// liczba pozycji do pobrania
+			System.out.println("Ids number: " + entryIdsCounter + " (new ids: " + result.size() + ", missing: " + ( checkOnlyMaxIds - result.size()) + ")");
+						
+		}		
 	}
 	
 	private static void printHelp(Options options) {
@@ -195,4 +241,36 @@ public class GetEntryFromDictionary {
 		
 		formatter.printHelp(GetEntryFromDictionary.class.getSimpleName(), options);
 	}
+	
+	private static List<String> readFile(String fileName) {
+
+		List<String> result = new ArrayList<String>();
+		
+		try {
+
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File(fileName))));
+
+			while (true) {
+
+				String line = br.readLine();
+
+				if (line == null) {
+					break;
+				}
+				
+				line = line.trim();
+
+				result.add(line);
+			}
+
+			br.close();
+
+			return result;
+
+		} catch (IOException e) {
+			
+			throw new RuntimeException(e);
+		}
+	}
+
 }
