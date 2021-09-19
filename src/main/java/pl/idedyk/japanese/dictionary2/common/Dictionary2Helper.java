@@ -2732,7 +2732,10 @@ public class Dictionary2Helper {
 				
 			case ELECTRONICS:
 				result.add("elektronika"); break;
-								
+				
+			case PALEONTOLOGY:
+				result.add("paleontologia"); break;				
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
