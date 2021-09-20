@@ -56,7 +56,12 @@ public class GroupIdsWithMultipleKanjiOrKana {
 				// System.out.println(currentKanjiOdKana + " - " + listForKanjiOrKana);
 				
 				for (Entry entry : listForKanjiOrKana) {
-					result.add(entry.getEntryId());
+					
+					Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(entry.getEntryId());
+					
+					if (entryFromPolishDictionary == null) {
+						result.add(entry.getEntryId());
+					}					
 				}
 			}
 		}
