@@ -5,7 +5,7 @@
 + 90000 - 20
 + small - 10
 + small2 - 10
-ludzie - 15 + 3
++ ludzie - 15 + 3
 + uzupełniacz - 14
 -----------
 suma: 70
