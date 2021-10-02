@@ -2739,6 +2739,9 @@ public class Dictionary2Helper {
 			case CRYSTALLOGRAPHY:
 				result.add("krystalografia"); break;
 				
+			case ENTOMOLOGY:
+				result.add("entomologia"); break;
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
