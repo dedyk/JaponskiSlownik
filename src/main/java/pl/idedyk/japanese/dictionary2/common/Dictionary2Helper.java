@@ -2840,6 +2840,9 @@ public class Dictionary2Helper {
 			case HUMBLE_KENJOUGO_LANGUAGE:
 				result.add("pokornie"); break;
 				
+			case FULL_NAME_OF_A_PARTICULAR_PERSON:
+				result.add("imię i nazwisko osoby"); break;	
+			
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
