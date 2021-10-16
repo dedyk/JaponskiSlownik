@@ -461,7 +461,9 @@ public class Helper {
 							kanaToFound = currentSimilarReleatedSplited[1].substring(0, currentSimilarReleatedSplited[1].indexOf("、"));							
 							
 						} else {
-							throw new DictionaryException("Unknown similar related word: " + currentSimilarReleated);
+							kanjiToFound = currentSimilarReleated;
+							
+							//throw new DictionaryException("Unknown similar related word: " + currentSimilarReleated);
 						}
 						
 						//
