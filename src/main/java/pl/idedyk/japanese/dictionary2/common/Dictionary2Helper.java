@@ -2845,7 +2845,10 @@ public class Dictionary2Helper {
 				
 			case FULL_NAME_OF_A_PARTICULAR_PERSON:
 				result.add("imię i nazwisko osoby"); break;	
-			
+
+			case QUOTATION:
+				result.add("cytat"); break;
+				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
