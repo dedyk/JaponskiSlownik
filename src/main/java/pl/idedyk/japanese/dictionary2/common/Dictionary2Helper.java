@@ -2745,6 +2745,9 @@ public class Dictionary2Helper {
 			case ART_AESTHETICS:
 				result.add("estetyka sztuki"); break;
 				
+			case AGRICULTURE:
+				result.add("rolnictwo"); break;				
+				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
 			
