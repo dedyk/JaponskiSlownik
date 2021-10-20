@@ -3085,6 +3085,10 @@ public class WordGenerator {
 							continue;
 						}
 						
+						if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.TO_DELETE) == true) {
+							continue;
+						}
+						
 						if (groupsIdsSet != null) {
 							
 							Integer polishJapaneseEntryGroupId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
