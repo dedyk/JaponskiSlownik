@@ -3015,6 +3015,9 @@ public class Dictionary2Helper {
 			
 		case "grc":
 			return "grk";
+
+		case "mnc":
+			return "mar";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
@@ -3099,6 +3102,9 @@ public class Dictionary2Helper {
 			
 		case "grc":
 			return "słowo pochodzenia greckiego";
+			
+		case "mnc":
+			return "słowo pochodzenia mandżurskiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
