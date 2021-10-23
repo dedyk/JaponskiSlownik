@@ -3025,6 +3025,12 @@ public class Dictionary2Helper {
 		case "mnc":
 			return "mar";
 			
+		case "swe":
+			return "swe";
+			
+		case "ice":
+			return "isl";
+			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
 		}
@@ -3111,6 +3117,12 @@ public class Dictionary2Helper {
 			
 		case "mnc":
 			return "słowo pochodzenia mandżurskiego";
+			
+		case "swe":
+			return "słowo pochodzenia szwedzkiego";
+			
+		case "ice":
+			return "słowo pochodzenia isladzkiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
