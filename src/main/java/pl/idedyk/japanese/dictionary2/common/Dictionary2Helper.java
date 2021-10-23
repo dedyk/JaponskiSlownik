@@ -3122,7 +3122,7 @@ public class Dictionary2Helper {
 			return "słowo pochodzenia szwedzkiego";
 			
 		case "ice":
-			return "słowo pochodzenia isladzkiego";
+			return "słowo pochodzenia islandzkiego";
 			
 			default:
 				throw new RuntimeException("Unknown language: " + language);
