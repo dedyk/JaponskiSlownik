@@ -2855,6 +2855,9 @@ public class Dictionary2Helper {
 			case QUOTATION:
 				result.add("cytat"); break;
 				
+			case POETICAL_TERM:
+				result.add("poetycki termin"); break;
+				
 			default:
 				throw new RuntimeException("Unknown misc enum: " + miscEnum);
 			
