@@ -2750,6 +2750,9 @@ public class Dictionary2Helper {
 				
 			case RAILWAY:
 				result.add("kolejnictwo"); break;
+
+			case AVIATION:
+				result.add("lotnictwo"); break;
 				
 			default:
 				throw new RuntimeException("Unknown field enum: " + fieldEnum);
