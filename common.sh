@@ -24,3 +24,4 @@ export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-queryparser/$LUCE
 export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-sandbox/$LUCENE_VERSION/lucene-sandbox-$LUCENE_VERSION.jar:$CLASSPATH
 
 export CLASSPATH=$HOME/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:$CLASSPATH
+export CLASSPATH=$HOME/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:$CLASSPATH
