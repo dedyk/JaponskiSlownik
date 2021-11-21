@@ -1177,13 +1177,36 @@ public class Dictionary2Helper {
 						}
 						
 						{
-							csvWriter.write("STARE_ANGIELSKIE_TŁUMACZENIE\n" + "---\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishGlossList)); columnsNo++;
-	
+							StringWriter sb = new StringWriter();
+							
+							sb.append("STARE_ANGIELSKIE_TŁUMACZENIE\n" + "---\n---\n");
+							
+							if (entryAdditionalDataEntry$UpdateDictionarySense.englishGlossListEquals == true) {
+								sb.append("IDENTYCZNE\n");
+							} else {
+								sb.append("RÓŻNICA\n");
+							}
+							
+							sb.append("---\n---\n");							
+							
+							sb.append(generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishGlossList)); columnsNo++;							
+							
+							csvWriter.write(sb.toString());
+							
 							//
 							
 							if (entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList != null) {
+								
 								senseAdditionalInfoStringList = new ArrayList<>();
 		
+								if (entryAdditionalDataEntry$UpdateDictionarySense.englishAdditionalInfoListEquals == true) {
+									senseAdditionalInfoStringList.add("IDENTYCZNE");
+								} else {
+									senseAdditionalInfoStringList.add("RÓŻNICA\n");
+								}
+								
+								senseAdditionalInfoStringList.add("---\n---\n");
+								
 								for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList) {
 									senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
 								}
@@ -3359,6 +3382,8 @@ public class Dictionary2Helper {
 						
 						entryAdditionalDataEntry.updateDictionarySenseMap.put(System.identityHashCode(jmdictEntrySense), 
 								new EntryAdditionalDataEntry$UpdateDictionarySense(
+										equalsGlossList(jmdictEntrySenseGlossEngList, englishJapaneseEntrySenseGlossPolList),
+										equalsAdditionalInfoList(jmdictEntrySenseAdditionalInfoEngList, englishJapaneseEntrySenseAdditionalInfoPolList),
 										englishJapaneseEntrySenseGlossPolList, englishJapaneseEntrySenseAdditionalInfoPolList,
 										polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));
 						
@@ -3370,7 +3395,10 @@ public class Dictionary2Helper {
 						
 						// wpisanie dodatkowych znaczen z polskiego slownika
 						entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary.add(
-								new EntryAdditionalDataEntry$UpdateDictionarySense(englishJapaneseEntrySenseGlossPolList, englishJapaneseEntrySenseAdditionalInfoPolList,
+								new EntryAdditionalDataEntry$UpdateDictionarySense(
+										equalsGlossList(jmdictEntrySenseGlossEngList, englishJapaneseEntrySenseGlossPolList),
+										equalsAdditionalInfoList(jmdictEntrySenseAdditionalInfoEngList, englishJapaneseEntrySenseAdditionalInfoPolList),
+										englishJapaneseEntrySenseGlossPolList, englishJapaneseEntrySenseAdditionalInfoPolList,
 										polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));						
 					}					
 				}
@@ -3398,21 +3426,9 @@ public class Dictionary2Helper {
 				stringWriter.write(languageSource.getValue());			
 			}
 		}
-				
-		if (additionalInfoList != null) {
-			for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {			
-				stringWriter.write(senseAdditionalInfo.getValue());			
-			}
-		}
-
-		if (glossList != null) {
-			for (Gloss gloss : glossList) {
-				
-				stringWriter.write(gloss.getGType() != null ? gloss.getGType().name() : ""); 
-				stringWriter.write(gloss.getValue());
-			}
-		}
 		
+		stringWriter.append(joinGlossListAndAdditionalInfoList(glossList, additionalInfoList));
+				
 		if (sense != null) {
 			stringWriter.write(sense.getFieldList().toString());
 			stringWriter.write(sense.getMiscList().toString());
@@ -3421,6 +3437,52 @@ public class Dictionary2Helper {
 		return DigestUtils.sha256Hex(stringWriter.toString());
 	}
 	
+	private String joinGlossListAndAdditionalInfoList(List<Gloss> glossList, List<SenseAdditionalInfo> additionalInfoList) {
+		
+		StringWriter stringWriter = new StringWriter();
+		
+		stringWriter.append(joinAdditionalInfoList(additionalInfoList));
+		stringWriter.append(joinGlossList(glossList));
+		
+		return stringWriter.toString();
+	}
+	
+	private String joinAdditionalInfoList(List<SenseAdditionalInfo> additionalInfoList) {
+		
+		StringWriter stringWriter = new StringWriter();
+		
+		if (additionalInfoList != null) {
+			for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {			
+				stringWriter.write(senseAdditionalInfo.getValue());			
+			}
+		}
+		
+		return stringWriter.toString();
+	}
+	
+	private String joinGlossList(List<Gloss> glossList) {
+		
+		StringWriter stringWriter = new StringWriter();
+		
+		if (glossList != null) {
+			for (Gloss gloss : glossList) {
+				
+				stringWriter.write(gloss.getGType() != null ? gloss.getGType().name() : ""); 
+				stringWriter.write(gloss.getValue());
+			}
+		}
+		
+		return stringWriter.toString();
+	}
+	
+	private boolean equalsGlossList(List<Gloss> glossList1, List<Gloss> glossList2) {		
+		return joinGlossList(glossList1).equals(joinGlossList(glossList2));		
+	}
+
+	private boolean equalsAdditionalInfoList(List<SenseAdditionalInfo> additionalInfoList1, List<SenseAdditionalInfo> additionalInfoList2) {
+		return joinAdditionalInfoList(additionalInfoList1).equals(joinAdditionalInfoList(additionalInfoList2));		
+	}
+
 	public List<PolishJapaneseEntry> detectEntriesWhichShouldBeDeletedInOldPolishJapaneseDictionary() throws Exception {
 		
 		List<PolishJapaneseEntry> entriesWhichShouldBeDeletedInOldPolishJapanaeseList = new ArrayList<>();
@@ -3523,6 +3585,9 @@ public class Dictionary2Helper {
 	}
 	
 	private static class EntryAdditionalDataEntry$UpdateDictionarySense {
+		
+		private boolean englishGlossListEquals;
+		private boolean englishAdditionalInfoListEquals;
 
 		private List<Gloss> oldEnglishGlossList;		
 		private List<SenseAdditionalInfo> oldEnglishSenseAdditionalInfoList;
@@ -3530,9 +3595,12 @@ public class Dictionary2Helper {
 		private List<Gloss> oldPolishGlossList;		
 		private List<SenseAdditionalInfo> oldPolishSenseAdditionalInfoList;
 
-		public EntryAdditionalDataEntry$UpdateDictionarySense(
+		public EntryAdditionalDataEntry$UpdateDictionarySense(boolean englishGlossListEquals,  boolean englishAdditionalInfoListEquals,
 				List<Gloss> oldEnglishGlossList, List<SenseAdditionalInfo> oldEnglishSenseAdditionalInfoList,
 				List<Gloss> oldPolishGlossList, List<SenseAdditionalInfo> oldPolishSenseAdditionalInfoList) {
+			
+			this.englishGlossListEquals = englishGlossListEquals;
+			this.englishAdditionalInfoListEquals = englishAdditionalInfoListEquals;
 			
 			this.oldEnglishGlossList = oldEnglishGlossList;
 			this.oldPolishSenseAdditionalInfoList = oldPolishSenseAdditionalInfoList;
