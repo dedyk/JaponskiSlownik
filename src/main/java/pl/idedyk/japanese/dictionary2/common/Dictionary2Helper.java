@@ -1162,58 +1162,42 @@ public class Dictionary2Helper {
 					
 					if (entryAdditionalDataEntry$UpdateDictionarySense != null) { // podczas aktualizacji slownika, jakis sense zmienil sie, wpisanie starego polskiego znaczenia
 						
-						{
-							csvWriter.write("STARE_TŁUMACZENIE\n" + "---\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldPolishGlossList)); columnsNo++;
-	
-							//
-							
-							senseAdditionalInfoStringList = new ArrayList<>();
-	
-							for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldPolishSenseAdditionalInfoList) {
-								senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
-							}
-	
-							csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
+						StringWriter sb = new StringWriter();
+						
+						// dodajemy stare polskie tlumaczenie
+						sb.append("STARE_TŁUMACZENIE\n" + "---\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldPolishGlossList));
+						
+						// dodajemy stare angielskie tlumaczenie
+						sb.append("---\n---\nSTARE_ANGIELSKIE_TŁUMACZENIE (" +
+								(entryAdditionalDataEntry$UpdateDictionarySense.englishGlossListEquals == true ? "IDENTYCZNE" : "RÓŻNICA") + ")\n---\n---\n");
+												
+						sb.append(generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishGlossList));							
+						
+						csvWriter.write(sb.toString()); columnsNo++;
+						
+						// dodajemy stare polskie informacje dodatkowe						
+						senseAdditionalInfoStringList = new ArrayList<>();
+
+						for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldPolishSenseAdditionalInfoList) {
+							senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+						}
+
+						//
+						
+						// stare angielskie informacje dodatkowe
+						if (entryAdditionalDataEntry$UpdateDictionarySense.englishAdditionalInfoListEquals == true) {
+							senseAdditionalInfoStringList.add("IDENTYCZNE");
+						} else {
+							senseAdditionalInfoStringList.add("RÓŻNICA\n");
 						}
 						
-						{
-							StringWriter sb = new StringWriter();
-							
-							sb.append("STARE_ANGIELSKIE_TŁUMACZENIE\n" + "---\n---\n");
-							
-							if (entryAdditionalDataEntry$UpdateDictionarySense.englishGlossListEquals == true) {
-								sb.append("IDENTYCZNE\n");
-							} else {
-								sb.append("RÓŻNICA\n");
-							}
-							
-							sb.append("---\n---\n");							
-							
-							sb.append(generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishGlossList)); columnsNo++;							
-							
-							csvWriter.write(sb.toString());
-							
-							//
-							
-							if (entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList != null) {
-								
-								senseAdditionalInfoStringList = new ArrayList<>();
-		
-								if (entryAdditionalDataEntry$UpdateDictionarySense.englishAdditionalInfoListEquals == true) {
-									senseAdditionalInfoStringList.add("IDENTYCZNE");
-								} else {
-									senseAdditionalInfoStringList.add("RÓŻNICA\n");
-								}
-								
-								senseAdditionalInfoStringList.add("---\n---\n");
-								
-								for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList) {
-									senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
-								}
-		
-								csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
-							}
+						senseAdditionalInfoStringList.add("---\n---\n");
+						
+						for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList) {
+							senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
 						}
+						
+						csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
 					}
 				}				
 			}			
@@ -3603,7 +3587,7 @@ public class Dictionary2Helper {
 			this.englishAdditionalInfoListEquals = englishAdditionalInfoListEquals;
 			
 			this.oldEnglishGlossList = oldEnglishGlossList;
-			this.oldPolishSenseAdditionalInfoList = oldPolishSenseAdditionalInfoList;
+			this.oldEnglishSenseAdditionalInfoList = oldEnglishSenseAdditionalInfoList;
 			
 			this.oldPolishGlossList = oldPolishGlossList;
 			this.oldPolishSenseAdditionalInfoList = oldPolishSenseAdditionalInfoList;
