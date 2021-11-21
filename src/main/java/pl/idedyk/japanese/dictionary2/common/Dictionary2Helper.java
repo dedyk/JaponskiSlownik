@@ -694,7 +694,7 @@ public class Dictionary2Helper {
 	public static class SaveEntryListAsHumanCsvConfig {
 		
 		public boolean addOldPolishTranslates = false;
-		public boolean addOldPolishTranslatesDuringDictionaryUpdate = false;
+		public boolean addOldEnglishPolishTranslatesDuringDictionaryUpdate = false;
 		public boolean addDeleteSenseDuringDictionaryUpdate = false;
 		
 		public boolean markRomaji = false;
@@ -1156,23 +1156,41 @@ public class Dictionary2Helper {
 				
 				//
 				
-				if (config.addOldPolishTranslatesDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.updateDictionarySenseMap != null) { // podczas aktualizacji slownika jakis sens zmienil sie
+				if (config.addOldEnglishPolishTranslatesDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.updateDictionarySenseMap != null) { // podczas aktualizacji slownika jakis sens zmienil sie
 					
 					EntryAdditionalDataEntry$UpdateDictionarySense entryAdditionalDataEntry$UpdateDictionarySense = entryAdditionalDataEntry.updateDictionarySenseMap.get(System.identityHashCode(sense));
 					
 					if (entryAdditionalDataEntry$UpdateDictionarySense != null) { // podczas aktualizacji slownika, jakis sense zmienil sie, wpisanie starego polskiego znaczenia
 						
-						csvWriter.write("STARE_TŁUMACZENIE\n" + "---\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldPolishGlossList)); columnsNo++;
-
-						//
-						
-						senseAdditionalInfoStringList = new ArrayList<>();
-
-						for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldPolishSenseAdditionalInfoList) {
-							senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+						{
+							csvWriter.write("STARE_TŁUMACZENIE\n" + "---\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldPolishGlossList)); columnsNo++;
+	
+							//
+							
+							senseAdditionalInfoStringList = new ArrayList<>();
+	
+							for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldPolishSenseAdditionalInfoList) {
+								senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+							}
+	
+							csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
 						}
-
-						csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;						
+						
+						{
+							csvWriter.write("STARE_ANGIELSKIE_TŁUMACZENIE\n" + "---\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishGlossList)); columnsNo++;
+	
+							//
+							
+							if (entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList != null) {
+								senseAdditionalInfoStringList = new ArrayList<>();
+		
+								for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList) {
+									senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+								}
+		
+								csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
+							}
+						}
 					}
 				}				
 			}			
@@ -3314,7 +3332,11 @@ public class Dictionary2Helper {
 									
 				// uzupelniamy o stare tlumaczenie
 				if (polishJapaneseEntrySense != null) {
-
+					
+					// bierzmy stare angielskie znaczenia
+					List<Gloss> englishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+					List<SenseAdditionalInfo> englishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+					
 					// bierzemy stare polskie znaczenia
 					List<Gloss> polishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
 					List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
@@ -3336,7 +3358,9 @@ public class Dictionary2Helper {
 						}
 						
 						entryAdditionalDataEntry.updateDictionarySenseMap.put(System.identityHashCode(jmdictEntrySense), 
-								new EntryAdditionalDataEntry$UpdateDictionarySense(polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));
+								new EntryAdditionalDataEntry$UpdateDictionarySense(
+										englishJapaneseEntrySenseGlossPolList, englishJapaneseEntrySenseAdditionalInfoPolList,
+										polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));
 						
 					} else {
 						
@@ -3346,7 +3370,8 @@ public class Dictionary2Helper {
 						
 						// wpisanie dodatkowych znaczen z polskiego slownika
 						entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary.add(
-								new EntryAdditionalDataEntry$UpdateDictionarySense(polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));						
+								new EntryAdditionalDataEntry$UpdateDictionarySense(englishJapaneseEntrySenseGlossPolList, englishJapaneseEntrySenseAdditionalInfoPolList,
+										polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));						
 					}					
 				}
 				
@@ -3498,12 +3523,20 @@ public class Dictionary2Helper {
 	}
 	
 	private static class EntryAdditionalDataEntry$UpdateDictionarySense {
+
+		private List<Gloss> oldEnglishGlossList;		
+		private List<SenseAdditionalInfo> oldEnglishSenseAdditionalInfoList;
 		
-		private List<Gloss> oldPolishGlossList;
-		
+		private List<Gloss> oldPolishGlossList;		
 		private List<SenseAdditionalInfo> oldPolishSenseAdditionalInfoList;
 
-		public EntryAdditionalDataEntry$UpdateDictionarySense(List<Gloss> oldPolishGlossList, List<SenseAdditionalInfo> oldPolishSenseAdditionalInfoList) {
+		public EntryAdditionalDataEntry$UpdateDictionarySense(
+				List<Gloss> oldEnglishGlossList, List<SenseAdditionalInfo> oldEnglishSenseAdditionalInfoList,
+				List<Gloss> oldPolishGlossList, List<SenseAdditionalInfo> oldPolishSenseAdditionalInfoList) {
+			
+			this.oldEnglishGlossList = oldEnglishGlossList;
+			this.oldPolishSenseAdditionalInfoList = oldPolishSenseAdditionalInfoList;
+			
 			this.oldPolishGlossList = oldPolishGlossList;
 			this.oldPolishSenseAdditionalInfoList = oldPolishSenseAdditionalInfoList;
 		}

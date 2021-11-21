@@ -63,7 +63,7 @@ public class UpdatePolishJapaneseDictionary {
 		SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new SaveEntryListAsHumanCsvConfig();
 		
 		// dodajemy stare znaczenia
-		saveEntryListAsHumanCsvConfig.addOldPolishTranslatesDuringDictionaryUpdate = true;
+		saveEntryListAsHumanCsvConfig.addOldEnglishPolishTranslatesDuringDictionaryUpdate = true;
 		saveEntryListAsHumanCsvConfig.addDeleteSenseDuringDictionaryUpdate = false;
 		
 		// zapisanie czesciowo zmienionego polskiego slownika
