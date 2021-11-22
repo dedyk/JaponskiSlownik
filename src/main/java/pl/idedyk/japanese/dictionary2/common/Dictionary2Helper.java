@@ -1175,29 +1175,34 @@ public class Dictionary2Helper {
 						
 						csvWriter.write(sb.toString()); columnsNo++;
 						
-						// dodajemy stare polskie informacje dodatkowe						
-						senseAdditionalInfoStringList = new ArrayList<>();
+						// dodajemy stare polskie informacje dodatkowe
+						if (entryAdditionalDataEntry$UpdateDictionarySense.oldPolishSenseAdditionalInfoList.size() > 0 || entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList.size() > 0) {
+							
+							senseAdditionalInfoStringList = new ArrayList<>();
+							
+							for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldPolishSenseAdditionalInfoList) {
+								senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+							}
 
-						for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldPolishSenseAdditionalInfoList) {
-							senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
-						}
-
-						//
-						
-						// stare angielskie informacje dodatkowe
-						if (entryAdditionalDataEntry$UpdateDictionarySense.englishAdditionalInfoListEquals == true) {
-							senseAdditionalInfoStringList.add("IDENTYCZNE");
-						} else {
-							senseAdditionalInfoStringList.add("RÓŻNICA\n");
-						}
-						
-						senseAdditionalInfoStringList.add("---\n---\n");
-						
-						for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList) {
-							senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
-						}
-						
-						csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
+							senseAdditionalInfoStringList.add("---");
+							
+							//
+							
+							// stare angielskie informacje dodatkowe						
+							if (entryAdditionalDataEntry$UpdateDictionarySense.englishAdditionalInfoListEquals == true) {
+								senseAdditionalInfoStringList.add("IDENTYCZNE");
+							} else {
+								senseAdditionalInfoStringList.add("RÓŻNICA");
+							}
+							
+							senseAdditionalInfoStringList.add("---\n---\n");
+							
+							for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList) {
+								senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+							}
+							
+							csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
+						}						
 					}
 				}				
 			}			
