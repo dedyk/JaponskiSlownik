@@ -9,5 +9,3 @@
 + uzupełniacz - x
 -----------
 suma: 70
-
-_17 stycznia
