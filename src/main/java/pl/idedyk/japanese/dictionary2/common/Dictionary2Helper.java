@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -658,6 +659,17 @@ public class Dictionary2Helper {
 		csvReader.close();
 		
 		return result;
+	}
+	
+	public void sortJMdict(JMdict newJMdict) {
+		
+		Collections.sort(newJMdict.getEntryList(), new Comparator<JMdict.Entry>() {
+
+			@Override
+			public int compare(Entry o1, Entry o2) {
+				return o1.getEntryId().compareTo(o2.getEntryId());
+			}
+		});
 	}
 	
 	public void saveJMdictAsXml(JMdict newJMdict, String fileName) throws Exception {

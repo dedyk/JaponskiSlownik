@@ -52,6 +52,9 @@ import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
 import pl.idedyk.japanese.dictionary.tools.LatexDictionaryGenerator;
 import pl.idedyk.japanese.dictionary.tools.TatoebaSentencesParser;
 import pl.idedyk.japanese.dictionary.tools.TomoeReader;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 import com.csvreader.CsvReader;
 
@@ -90,7 +93,7 @@ public class AndroidDictionaryGenerator {
 		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmeNewNameDictionary,
 				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word.json", "output/word-power.csv",
-				"output/transitive_intransitive_pairs.csv"); //, "output/word_group.csv");
+				"output/transitive_intransitive_pairs.csv", "output/word2.xml"); //, "output/word_group.csv");
 				
 		generateKanaEntries(kanjivgEntryMap, "output/kana.csv");
 
@@ -118,7 +121,7 @@ public class AndroidDictionaryGenerator {
 			JMENewDictionary jmeNewDictionary, TreeMap<String, EDictEntry> jmedictCommon,
 			JMENewDictionary jmeNewNameDictionary, String[] sourceFileNames,
 			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationJSONFileName, String destinationPowerFileName,
-			String transitiveIntransitivePairsOutputFile /*, String wordGroupOutputFile */) throws Exception {
+			String transitiveIntransitivePairsOutputFile, String word2XmlFile /*, String wordGroupOutputFile */) throws Exception {
 
 		System.out.println("checkAndSavePolishJapaneseEntries");
 
@@ -196,6 +199,21 @@ public class AndroidDictionaryGenerator {
 		
 		CsvReaderWriter.generateWordGroupCsv(outputWordGroupStream, generateWordGroupList);
 		*/
+		
+		// word 2 - dictionary
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.init();
+		
+		dictionaryHelper.validateAllPolishDictionaryEntryList();
+		
+		// pobieramy wszystkie slowa, ktore sa w nowym slowniku
+		List<Entry> allPolishDictionary2EntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
+
+		JMdict newJmdict = new JMdict();
+		
+		newJmdict.getEntryList().addAll(allPolishDictionary2EntryList);
+		
+		dictionaryHelper.sortJMdict(newJmdict);
+		dictionaryHelper.saveJMdictAsXml(newJmdict, word2XmlFile);
 		
 		return result;
 	}
