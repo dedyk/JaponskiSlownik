@@ -76,6 +76,7 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.GTypeEnum;
@@ -97,7 +98,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 
-public class Dictionary2Helper {
+public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	private static final int CSV_COLUMNS = 11; 
 	
@@ -2005,151 +2006,7 @@ public class Dictionary2Helper {
 			
 		}
 	}
-	
-	private List<KanjiKanaPair> getKanjiKanaPairList(Entry entry) {
 		
-		List<KanjiKanaPair> result = new ArrayList<>();
-		
-		//
-		
-		List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
-		List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
-		
-		// jesli nie ma kanji
-		if (kanjiInfoList.size() == 0) {
-			
-			// wszystkie czytania do listy wynikowej
-			for (ReadingInfo readingInfo : readingInfoList) {
-				
-				ReadingInfo.ReNokanji noKanji = readingInfo.getNoKanji();
-				
-				if (noKanji == null) {
-										
-					String kana = readingInfo.getKana().getValue();
-					String romaji = readingInfo.getKana().getRomaji();
-					
-					ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
-					
-					//
-					
-					result.add(new KanjiKanaPair(null, kana, kanaType, romaji));
-				}
-			}
-			
-		} else {			
-			// zlaczenie kanji z kana
-			
-			for (KanjiInfo kanjiInfo : kanjiInfoList) {
-				for (ReadingInfo readingInfo : readingInfoList) {
-					
-					// pobierz kanji
-					String kanji = kanjiInfo.getKanji();
-											
-					ReadingInfo.ReNokanji noKanji = readingInfo.getNoKanji();
-					
-					// jest pozycja kana nie laczy sie ze znakiem kanji
-					if (noKanji != null) { 
-						continue;
-					}
-					
-					// pobierz kana
-					String kana = readingInfo.getKana().getValue();
-					String romaji = readingInfo.getKana().getRomaji();
-					
-					ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
-					
-					List<String> kanjiRestrictedListForKana = readingInfo.getKanjiRestrictionList();
-					
-					boolean isRestricted = true;
-					
-					// sprawdzanie, czy dany kana laczy sie z kanji
-					if (kanjiRestrictedListForKana.size() == 0) { // brak restrykcji						
-						isRestricted = false;
-						
-					} else { // sa jakies restrykcje, sprawdzamy, czy kanji znajduje sie na tej liscie					
-						if (kanjiRestrictedListForKana.contains(kanji) == true) {
-							isRestricted = false;
-						}							
-					}
-					
-					// to zlaczenie nie znajduje sie na liscie, omijamy je
-					if (isRestricted == true) {
-						continue; // omijamy to zlaczenie
-					}
-					
-					// mamy pare
-					result.add(new KanjiKanaPair(kanji, kana, kanaType, romaji));					
-				}				
-			}
-		}
-		
-		// szukanie kana z no kanji
-		for (ReadingInfo readingInfo : readingInfoList) {
-			
-			ReadingInfo.ReNokanji noKanji = readingInfo.getNoKanji();
-			
-			if (noKanji != null) {
-								
-				String kana = readingInfo.getKana().getValue();
-				String romaji = readingInfo.getKana().getRomaji();
-				
-				ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
-				
-				//
-				
-				result.add(new KanjiKanaPair(null, kana, kanaType, romaji));
-			}
-		}
-		
-		// dopasowanie listy sense do danego kanji i kana
-		List<Sense> entrySenseList = entry.getSenseList();
-				
-		for (KanjiKanaPair kanjiKanaPair : result) {
-			
-			String kanji = kanjiKanaPair.kanji;
-			String kana = kanjiKanaPair.kana;
-			
-			// chodzimy po wszystkich sense i sprawdzamy, czy mozemy je dodac do naszej pary kanji i kana
-			for (Sense sense : entrySenseList) {
-				
-				boolean isKanjiRestricted = true;
-				
-				if (sense.getRestrictedToKanjiList().size() == 0) {
-					isKanjiRestricted = false;
-					
-				} else {
-					if (sense.getRestrictedToKanjiList().contains(kanji) == true) {
-						isKanjiRestricted = false;
-					}
-				}
-				
-				if (isKanjiRestricted == true) {
-					continue; // ten sens nie bedzie wchodzil w sklad tej pary
-				}	
-				
-				boolean isKanaRestricted = true;
-				
-				if (sense.getRestrictedToKanaList().size() == 0) {
-					isKanaRestricted = false;
-					
-				} else {
-					if (sense.getRestrictedToKanaList().contains(kana) == true) {
-						isKanaRestricted = false;
-					}
-				}
-				
-				if (isKanaRestricted == true) {
-					continue; // ten sens nie bedzie wchodzil w sklad tej pary
-				}
-				
-				// dodajemy ten sens do danej pary				
-				kanjiKanaPair.getSenseList().add(sense);
-			}
-		}
-		
-		return result;
-	}
-	
 	public List<PolishJapaneseEntry> updatePolishJapaneseEntryInOldDictionary(Entry entry) throws Exception {
 
 		// lista nowych wpisow do dodania do starego slownika
@@ -3542,35 +3399,7 @@ public class Dictionary2Helper {
 	}
 
 	//
-	
-	private static class KanjiKanaPair {
-		
-		private String kanji;
-		
-		private String kana;
-		private ReadingInfoKanaType kanaType;
-		
-		private String romaji;
-		
-		private List<Sense> senseList = new ArrayList<>();
-
-		public KanjiKanaPair(String kanji, String kana, ReadingInfoKanaType kanaType, String romaji) {
-			this.kanji = kanji;
-			this.kana = kana;
-			this.kanaType = kanaType;
-			this.romaji = romaji;
-		}
-
-		public List<Sense> getSenseList() {
-			return senseList;
-		}
-
-		@Override
-		public String toString() {
-			return "KanjiKanaPair [kanji=" + kanji + ", kana=" + kana + "]";
-		}
-	}
-		
+			
 	public static class EntryAdditionalData {		
 		private Map<Integer, EntryAdditionalDataEntry> jmdictEntryAdditionalDataEntryMap = new TreeMap<>();
 	}
