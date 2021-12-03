@@ -279,6 +279,15 @@ public class Helper {
 					attributeList.add(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD);
 				}
 			}
+			
+			if (currentPolishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.DICTIONARY2_SOURCE) == true) {
+				
+				Integer groupId = currentPolishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+				
+				if (groupId != null) {
+					currentPolishJapaneseEntry.getAttributeList().addAttributeValue(AttributeType.JMDICT_ENTRY_ID, groupId.toString());
+				}
+			}
 		}
 		
 		// generowanie alternatyw		
