@@ -3030,32 +3030,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				throw new RuntimeException("Unknown language: " + language);
 		}
 	}
-	
-	private String translateToPolishGlossType(GTypeEnum glossType) {
 		
-		if (glossType == null) {
-			return null;
-		}
-		
-		switch (glossType) {
-		
-		case EXPL:
-			return "wyjaśnienie";
-			
-		case FIG:
-			return "przenośna";
-			
-		case LIT:
-			return "literacko";
-		
-		case TM:
-			return "znak towarowy";
-			
-			default:
-				throw new RuntimeException("Unknown gloss type: " + glossType);
-		}
-	}
-	
 	private String joinStringForOldPolishJapaneseEntry(List<String> list, boolean addBracket) {
 		
 		StringBuffer result = new StringBuffer();
