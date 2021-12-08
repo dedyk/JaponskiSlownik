@@ -434,6 +434,8 @@ public class JMENewDictionary {
 		
 		private List<String> similarRelatedList;
 		
+		private List<String> antonymList;
+		
 		private List<String> priority;
 		
 		public GroupEntry(JMEDictNewNativeEntry nativeEntry, Group group) {
@@ -527,6 +529,14 @@ public class JMENewDictionary {
 
 		public void setSimilarRelatedList(List<String> similarRelatedList) {
 			this.similarRelatedList = similarRelatedList;
+		}
+
+		public List<String> getAntonymList() {
+			return antonymList;
+		}
+
+		public void setAntonymList(List<String> antonymList) {
+			this.antonymList = antonymList;
 		}
 
 		public boolean containsAttribute(String attribute) {

@@ -399,6 +399,7 @@ public class Helper {
 			//
 			
 			List<PolishJapaneseEntry> relatedSimilarListForPolishJapaneseEntry = new ArrayList<>();
+			List<PolishJapaneseEntry> antonymListForPolishJapaneseEntry = new ArrayList<>();
 			
 			//
 						
@@ -411,66 +412,72 @@ public class Helper {
 				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(fullGroupEntryList, kanji, kana)) {
 					
 					List<String> similarRelatedList = groupEntry.getSimilarRelatedList();
+					List<String> antonymList = groupEntry.getAntonymList();
+					
+					List<String> similarRelatedListAndAntonymList = new ArrayList<>();
+					
+					similarRelatedListAndAntonymList.addAll(similarRelatedList);
+					similarRelatedListAndAntonymList.addAll(antonymList);
 					
 					// chodzimy po wszystkich powiazanych slowach
-					for (String currentSimilarReleated : similarRelatedList) {
+					for (String currentSimilarReleatedOrAntonym : similarRelatedListAndAntonymList) {
 												
-						String[] currentSimilarReleatedSplited = currentSimilarReleated.split("・");
+						String[] currentSimilarReleatedOrAntonymSplited = currentSimilarReleatedOrAntonym.split("・");
 						
 						String kanjiToFound = null;
 						String kanaToFound = null;
 						
 						//
 						
-						if (currentSimilarReleatedSplited.length == 1 && Utils.isAllKanjiChars(currentSimilarReleatedSplited[0]) == true) {
-							kanjiToFound = currentSimilarReleatedSplited[0];
+						if (currentSimilarReleatedOrAntonymSplited.length == 1 && Utils.isAllKanjiChars(currentSimilarReleatedOrAntonymSplited[0]) == true) {
+							kanjiToFound = currentSimilarReleatedOrAntonymSplited[0];
 														
-						} else if (currentSimilarReleatedSplited.length == 1 && Utils.isAllKanaChars(currentSimilarReleatedSplited[0]) == true) {
-							kanaToFound = currentSimilarReleatedSplited[0];
+						} else if (currentSimilarReleatedOrAntonymSplited.length == 1 && Utils.isAllKanaChars(currentSimilarReleatedOrAntonymSplited[0]) == true) {
+							kanaToFound = currentSimilarReleatedOrAntonymSplited[0];
 							
-						} else if (currentSimilarReleatedSplited.length == 2 && Utils.isAllKanjiChars(currentSimilarReleatedSplited[0]) == true && 
-								StringUtils.isNumeric(currentSimilarReleatedSplited[1]) == true) {
+						} else if (currentSimilarReleatedOrAntonymSplited.length == 2 && Utils.isAllKanjiChars(currentSimilarReleatedOrAntonymSplited[0]) == true && 
+								StringUtils.isNumeric(currentSimilarReleatedOrAntonymSplited[1]) == true) {
 							
-							kanjiToFound = currentSimilarReleatedSplited[0];
+							kanjiToFound = currentSimilarReleatedOrAntonymSplited[0];
 							
-						} else if (currentSimilarReleatedSplited.length == 2 && Utils.isAllKanaChars(currentSimilarReleatedSplited[0]) == true && 
-								StringUtils.isNumeric(currentSimilarReleatedSplited[1]) == true) {
+						} else if (currentSimilarReleatedOrAntonymSplited.length == 2 && Utils.isAllKanaChars(currentSimilarReleatedOrAntonymSplited[0]) == true && 
+								StringUtils.isNumeric(currentSimilarReleatedOrAntonymSplited[1]) == true) {
 						
-							kanaToFound = currentSimilarReleatedSplited[0];
+							kanaToFound = currentSimilarReleatedOrAntonymSplited[0];
 							
-						} else if (currentSimilarReleatedSplited.length == 2 && Utils.isAllKanjiChars(currentSimilarReleatedSplited[0]) == true &&
-								Utils.isAllKanaChars(currentSimilarReleatedSplited[1]) == true) {
+						} else if (currentSimilarReleatedOrAntonymSplited.length == 2 && Utils.isAllKanjiChars(currentSimilarReleatedOrAntonymSplited[0]) == true &&
+								Utils.isAllKanaChars(currentSimilarReleatedOrAntonymSplited[1]) == true) {
 							
-							kanjiToFound = currentSimilarReleatedSplited[0];
-							kanaToFound = currentSimilarReleatedSplited[1];
+							kanjiToFound = currentSimilarReleatedOrAntonymSplited[0];
+							kanaToFound = currentSimilarReleatedOrAntonymSplited[1];
 							
-						} else if (currentSimilarReleatedSplited.length == 3) {
+						} else if (currentSimilarReleatedOrAntonymSplited.length == 3) {
 							
-							kanjiToFound = currentSimilarReleatedSplited[0];
-							kanaToFound = currentSimilarReleatedSplited[1];
+							kanjiToFound = currentSimilarReleatedOrAntonymSplited[0];
+							kanaToFound = currentSimilarReleatedOrAntonymSplited[1];
 							
-						} else if (currentSimilarReleatedSplited.length == 1 && Utils.isAllKanaChars(currentSimilarReleatedSplited[0]) == false &&
-								StringUtils.isNumeric(currentSimilarReleatedSplited[0]) == false) {
+						} else if (currentSimilarReleatedOrAntonymSplited.length == 1 && Utils.isAllKanaChars(currentSimilarReleatedOrAntonymSplited[0]) == false &&
+								StringUtils.isNumeric(currentSimilarReleatedOrAntonymSplited[0]) == false) {
 							
-							kanjiToFound = currentSimilarReleatedSplited[0];
+							kanjiToFound = currentSimilarReleatedOrAntonymSplited[0];
 							
-						} else if (currentSimilarReleatedSplited.length == 2 && Utils.isAllKanaChars(currentSimilarReleatedSplited[1]) == true) {
+						} else if (currentSimilarReleatedOrAntonymSplited.length == 2 && Utils.isAllKanaChars(currentSimilarReleatedOrAntonymSplited[1]) == true) {
 							
-							kanjiToFound = currentSimilarReleatedSplited[0];
-							kanaToFound = currentSimilarReleatedSplited[1];
+							kanjiToFound = currentSimilarReleatedOrAntonymSplited[0];
+							kanaToFound = currentSimilarReleatedOrAntonymSplited[1];
 														
-						} else if (currentSimilarReleatedSplited.length == 2 &&	StringUtils.isNumeric(currentSimilarReleatedSplited[1]) == true) {
+						} else if (currentSimilarReleatedOrAntonymSplited.length == 2 &&	StringUtils.isNumeric(currentSimilarReleatedOrAntonymSplited[1]) == true) {
 						
-							kanjiToFound = currentSimilarReleatedSplited[0];
+							kanjiToFound = currentSimilarReleatedOrAntonymSplited[0];
 														
-						} else if (	currentSimilarReleatedSplited.length == 2 && currentSimilarReleatedSplited[0].contains("、") == true &&
-									currentSimilarReleatedSplited[1].contains("、") == true) {
+						} else if (	currentSimilarReleatedOrAntonymSplited.length == 2 && currentSimilarReleatedOrAntonymSplited[0].contains("、") == true &&
+									currentSimilarReleatedOrAntonymSplited[1].contains("、") == true) {
 							
-							kanjiToFound = currentSimilarReleatedSplited[0].substring(0, currentSimilarReleatedSplited[0].indexOf("、"));
-							kanaToFound = currentSimilarReleatedSplited[1].substring(0, currentSimilarReleatedSplited[1].indexOf("、"));							
+							kanjiToFound = currentSimilarReleatedOrAntonymSplited[0].substring(0, currentSimilarReleatedOrAntonymSplited[0].indexOf("、"));
+							kanaToFound = currentSimilarReleatedOrAntonymSplited[1].substring(0, currentSimilarReleatedOrAntonymSplited[1].indexOf("、"));							
 							
 						} else {
-							kanjiToFound = currentSimilarReleated;
+							kanjiToFound = currentSimilarReleatedOrAntonym;
 							
 							//throw new DictionaryException("Unknown similar related word: " + currentSimilarReleated);
 						}
@@ -498,9 +505,14 @@ public class Helper {
 
 							for (PolishJapaneseEntry foundPolishJapaneseEntryRelatedSimilar : findPolishJapaneseEntry) {
 								
-								if (relatedSimilarListForPolishJapaneseEntry.contains(foundPolishJapaneseEntryRelatedSimilar) == false) {
+								if (similarRelatedList.contains(currentSimilarReleatedOrAntonym) == true && relatedSimilarListForPolishJapaneseEntry.contains(foundPolishJapaneseEntryRelatedSimilar) == false) {
 									relatedSimilarListForPolishJapaneseEntry.add(foundPolishJapaneseEntryRelatedSimilar);
 								}
+								
+								if (antonymList.contains(currentSimilarReleatedOrAntonym) == true && antonymListForPolishJapaneseEntry.contains(foundPolishJapaneseEntryRelatedSimilar) == false) {
+									antonymListForPolishJapaneseEntry.add(foundPolishJapaneseEntryRelatedSimilar);
+								}
+
 							}
 						}
 					}
@@ -517,6 +529,13 @@ public class Helper {
 					polishJapaneseEntry.getAttributeList().addAttributeValue(AttributeType.RELATED, "" + currentRelatedSimilar.getId());
 				}
 			}
+			
+			if (antonymListForPolishJapaneseEntry.size() > 0) {
+								
+				for (PolishJapaneseEntry currentRelatedSimilar : antonymListForPolishJapaneseEntry) {					
+					polishJapaneseEntry.getAttributeList().addAttributeValue(AttributeType.ANTONYM, "" + currentRelatedSimilar.getId());
+				}
+			}			
 		}		
 	}
 

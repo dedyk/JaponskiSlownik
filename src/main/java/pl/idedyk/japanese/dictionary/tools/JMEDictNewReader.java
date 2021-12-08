@@ -701,6 +701,8 @@ public class JMEDictNewReader {
 		
 		List<String> similarRelatedList = new ArrayList<String>();
 		
+		List<String> antonymList = new ArrayList<String>();
+		
 		for (Sense currentSense : senseList) {
 			
 			List<String> stagk = currentSense.getStagk();
@@ -717,6 +719,8 @@ public class JMEDictNewReader {
 			List<String> xref = currentSense.getXref();
 
 			List<String> dial = currentSense.getDial();
+			
+			List<String> ant = currentSense.getAnt();
 			
 			boolean isKanjiRestricted = true;
 			
@@ -784,6 +788,8 @@ public class JMEDictNewReader {
 			for (String currentSimilarRelated : xref) {
 				similarRelatedList.add(currentSimilarRelated);
 			}
+			
+			antonymList.addAll(ant);
 		}
 		
 		List<Trans> transList = jmeDictNewNativeEntry.getTrans();
@@ -813,5 +819,7 @@ public class JMEDictNewReader {
 		groupEntry.setTranslateList(translateList);
 		
 		groupEntry.setSimilarRelatedList(similarRelatedList);
+		
+		groupEntry.setAntonymList(antonymList);
 	}
 }
