@@ -2164,6 +2164,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				List<DialectEnum> currentSenseDialectList = currentSense.getDialectList();
 				List<String> currentSenseLanguageSourceList = translateToPolishLanguageSourceList(currentSense.getLanguageSourceList());
 				List<String> currentSenseAdditionalInfoList = translateToPolishSenseAdditionalInfoList(additionalPolInfoList);
+				List<PartOfSpeechEnum> partOfSpeechList = currentSense.getPartOfSpeechList();
+				
 				
 				// wyliczenie roznic miedzy obecnym znaczeniem, a czescia wspolna dla wszystkich znaczen
 				Collection<FieldEnum> fieldEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseFieldList, fieldCommonList);
@@ -2173,7 +2175,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				Collection<String> senseAdditionalInfoListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseAdditionalInfoList, additionalInfoCommonList);
 				
 				//
-				
+								
 				List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
 				
 				for (Gloss currentPolGloss : glossPolList) {
@@ -2217,11 +2219,16 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					if (languageSourceListUniqueForCurrentSense.size() > 0) {
 						currentPolGlossPolishTranslate.addAll(languageSourceListUniqueForCurrentSense);
 					}
-					
+										
 					// generowanie tlumaczenia dla slowka
 					
 					// nowa pozycja w tlumaczeniu
 					newPolishTranslateList.add(joinStringForOldPolishJapaneseEntry(currentPolGlossPolishTranslate, true));
+				}
+				
+				// czesc mowy - tylko sprawdzenie
+				if (partOfSpeechList.size() > 0) {
+					translateToPolishPartOfSpeechEnum(partOfSpeechList);
 				}
 			}
 			
@@ -2251,7 +2258,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			if (languageSourceCommonList.size() > 0) {
 				newPolishAdditionalInfoList.addAll(languageSourceCommonList);
 			}
-
+			
 			String newPolishAdditionalInfo = joinStringForOldPolishJapaneseEntry(newPolishAdditionalInfoList, false);
 
 			// aktualizacja wpisu
