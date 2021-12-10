@@ -1935,7 +1935,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
 			
 			// szukamy slowa ze starego slownika
-			List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(polishJapaneseEntriesCache, kanjiKanaPair.kanji, kanjiKanaPair.kana);
+			List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(polishJapaneseEntriesCache, kanjiKanaPair.getKanji(), kanjiKanaPair.getKana());
 			
 			if (findPolishJapaneseEntryList == null) { // nie znaleziono
 				continue;
@@ -1953,7 +1953,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				if (polishJapaneseEntryForKanjiKanaPairEntryId != null && polishJapaneseEntryForKanjiKanaPairEntryId.intValue() != entry.getEntryId().intValue()) { // sprawdzamy grupe
 					
 					if (throwErrorWhenDifferentGroup == true) {
-						throw new Exception(polishJapaneseEntryForKanjiKanaPair.getId() + " - " + kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana + " - " + entry.getEntryId().intValue()); // jezeli to wydarzylo sie, oznacza to, ze dane slowo zmienilo swoja grupe, mozna to poprawic; ewentualnie jest multi group dla podanego kanji i kana
+						throw new Exception(polishJapaneseEntryForKanjiKanaPair.getId() + " - " + kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue()); // jezeli to wydarzylo sie, oznacza to, ze dane slowo zmienilo swoja grupe, mozna to poprawic; ewentualnie jest multi group dla podanego kanji i kana
 						
 					} else {
 						continue;
@@ -1970,7 +1970,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					}
 					
 					if (currentFindPolishJapaneseEntryList.getGroupIdFromJmedictRawDataList() == null) {
-						throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana); // jezeli to wydarzylo sie, oznacza to, ze dane slowo jest potencjalnym duplikatem i powinien zostac recznie usuniety
+						throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana()); // jezeli to wydarzylo sie, oznacza to, ze dane slowo jest potencjalnym duplikatem i powinien zostac recznie usuniety
 					}
 					
 					if (currentFindPolishJapaneseEntryList.getGroupIdFromJmedictRawDataList().intValue() == entry.getEntryId().intValue()) { // mamy kandydata z naszej grup
@@ -1982,7 +1982,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}
 			
 			if (polishJapaneseEntryForKanjiKanaPair == null) { // nie udalo sie znalesc slowa w starym slowniku				
-				throw new Exception(kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana + " - " + entry.getEntryId().intValue()); // to chyba nigdy nie powinno zdarzyc sie
+				throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue()); // to chyba nigdy nie powinno zdarzyc sie
 			}
 			
 			allPolishJapaneseEntriesForEntry.add(polishJapaneseEntryForKanjiKanaPair);
@@ -2027,13 +2027,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				String polishJapaneseEntryKanji = polishJapaneseEntry.getKanji();
 				String polishJapaneseEntryKana = polishJapaneseEntry.getKana();
 				
-				String searchKanji = kanjiKanaPair.kanji;
+				String searchKanji = kanjiKanaPair.getKanji();
 				
 				if (searchKanji == null) {
 					searchKanji = "-";
 				}
 				
-				String searchKana = kanjiKanaPair.kana;
+				String searchKana = kanjiKanaPair.getKana();
 				
 				return polishJapaneseEntryKanji.equals(searchKanji) == true && polishJapaneseEntryKana.equals(searchKana) == true;				
 			}).findFirst();
@@ -2042,7 +2042,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			if (polishJapaneseEntryOptional.isPresent() == false) { // tego elementu nie ma w starym slowniku, generowanie elementu
 				
-				System.out.println("[Warning] Can't find polish japanese entry for " + entry.getEntryId() + " - " + kanjiKanaPair.kanji + " - " + kanjiKanaPair.kana);
+				System.out.println("[Warning] Can't find polish japanese entry for " + entry.getEntryId() + " - " + kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana());
 				
 				// szukamy, czy wystepuje jakis element, ktory zostal zaznaczony do skasowania
 				PolishJapaneseEntry polishJapaneseEntryToDelete = getPolishJapaneseEntryToDelete();
@@ -2262,8 +2262,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			String newPolishAdditionalInfo = joinStringForOldPolishJapaneseEntry(newPolishAdditionalInfoList, false);
 
 			// aktualizacja wpisu
-			polishJapaneseEntry.setWordType(WordType.valueOf(kanjiKanaPair.kanaType.name()));			
-			polishJapaneseEntry.setRomaji(kanjiKanaPair.romaji);
+			polishJapaneseEntry.setWordType(WordType.valueOf(kanjiKanaPair.getKanaType().name()));			
+			polishJapaneseEntry.setRomaji(kanjiKanaPair.romaji());
 			
 			polishJapaneseEntry.setTranslates(newPolishTranslateList);
 			polishJapaneseEntry.setInfo(newPolishAdditionalInfo);
@@ -2387,7 +2387,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
 		
-		for (Sense sense : kanjiKanaPair.senseList) {
+		for (Sense sense : kanjiKanaPair.getSenseList()) {
 			
 			List<PartOfSpeechEnum> partOfSpeechList = sense.getPartOfSpeechList();
 			
@@ -2448,8 +2448,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		polishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
 		
-		String kanji = kanjiKanaPair.kanji;
-		String kana = kanjiKanaPair.kana;
+		String kanji = kanjiKanaPair.getKanji();
+		String kana = kanjiKanaPair.getKana();
 		
 		if (kanji == null || kanji.equals("") == true) {
 			kanji = "-";
@@ -2837,13 +2837,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				String polishJapaneseEntryKanji = polishJapaneseEntry.getKanji();
 				String polishJapaneseEntryKana = polishJapaneseEntry.getKana();
 				
-				String searchKanji = kanjiKanaPair.kanji;
+				String searchKanji = kanjiKanaPair.getKanji();
 				
 				if (searchKanji == null) {
 					searchKanji = "-";
 				}
 				
-				String searchKana = kanjiKanaPair.kana;
+				String searchKana = kanjiKanaPair.getKana();
 				
 				return polishJapaneseEntryKanji.equals(searchKanji) == true && polishJapaneseEntryKana.equals(searchKana) == true;				
 			}).findFirst();
