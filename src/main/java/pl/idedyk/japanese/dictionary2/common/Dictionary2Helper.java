@@ -2021,6 +2021,14 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		// chodzenie po wszystkich kombinacjach kanji i kana
 		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
 			
+			// sprawdzenie informacji dodatkowych przy kanji
+			if (kanjiKanaPair.getKanjiInfo() != null) {				
+				translateToPolishKanjiAdditionalInfoEnum(kanjiKanaPair.getKanjiInfo().getKanjiAdditionalInfoList());
+			}
+			
+			// sprawdzenie informacji dodatkowych przy kana
+			translateToPolishReadingAdditionalInfoEnum(kanjiKanaPair.getReadingInfo().getReadingAdditionalInfoList());
+			
 			// szukamy docelowego slowka
 			Optional<PolishJapaneseEntry> polishJapaneseEntryOptional = allPolishJapaneseEntriesForEntry.stream().filter(polishJapaneseEntry -> {
 				
