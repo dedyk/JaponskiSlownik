@@ -1953,7 +1953,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				if (polishJapaneseEntryForKanjiKanaPairEntryId != null && polishJapaneseEntryForKanjiKanaPairEntryId.intValue() != entry.getEntryId().intValue()) { // sprawdzamy grupe
 					
 					if (throwErrorWhenDifferentGroup == true) {
-						throw new Exception(polishJapaneseEntryForKanjiKanaPair.getId() + " - " + kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue()); // jezeli to wydarzylo sie, oznacza to, ze dane slowo zmienilo swoja grupe, mozna to poprawic; ewentualnie jest multi group dla podanego kanji i kana
+						throw new Exception(polishJapaneseEntryForKanjiKanaPair.getId() + " - " + kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + polishJapaneseEntryForKanjiKanaPairEntryId + " (obecnie przy pozycji) - " + entry.getEntryId().intValue() + " (wymagany, nowy)"); // jezeli to wydarzylo sie, oznacza to, ze dane slowo zmienilo swoja grupe, mozna to poprawic; ewentualnie jest multi group dla podanego kanji i kana
 						
 					} else {
 						continue;
