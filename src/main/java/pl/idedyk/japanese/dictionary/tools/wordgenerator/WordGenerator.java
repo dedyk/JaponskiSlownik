@@ -3309,6 +3309,11 @@ public class WordGenerator {
 								continue;
 							}
 							
+							// ignorujemy wpisy w slowniku, ktore sa juz wypelnione
+							if (jmedictRawDataList != null && jmedictRawDataList.size() > 0 && ignoreDictionaryFilledRawData == true) {
+								continue;
+							}
+							
 							boolean ignoreNoJmedict = polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.IGNORE_NO_JMEDICT);
 							
 							if (ignoreNoJmedict == false || force == true) {
