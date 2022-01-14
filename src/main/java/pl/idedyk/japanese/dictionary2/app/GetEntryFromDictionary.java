@@ -6,7 +6,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -63,7 +62,7 @@ public class GetEntryFromDictionary {
 		
 		//
 		
-		Set<Integer> entryIds = new LinkedHashSet<>();
+		List<Integer> entryIds = new ArrayList<>();
 				
 		boolean usePolishDictionary = false;
 		boolean useJMdictDictionary = false;
@@ -154,6 +153,8 @@ public class GetEntryFromDictionary {
 		int entryIdsCounter = 0;
 		
 		for (Integer currentEntryId : entryIds) {
+			
+			entryIdsCounter++;
 						
 			if (alreadyMetEntrySet.contains(currentEntryId) == true) { // to slowo juz odwiedzalismy
 				continue;
@@ -205,9 +206,7 @@ public class GetEntryFromDictionary {
 					continue;
 				}
 				*/
-				
-				entryIdsCounter++;
-				
+								
 				// uzupelnienie o puste polskie tlumaczenie
 				dictionaryHelper.createEmptyPolishSense(jmdictEntry);
 				
