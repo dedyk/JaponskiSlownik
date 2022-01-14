@@ -154,9 +154,7 @@ public class GetEntryFromDictionary {
 		int entryIdsCounter = 0;
 		
 		for (Integer currentEntryId : entryIds) {
-			
-			entryIdsCounter++;
-			
+						
 			if (alreadyMetEntrySet.contains(currentEntryId) == true) { // to slowo juz odwiedzalismy
 				continue;
 				
@@ -207,6 +205,8 @@ public class GetEntryFromDictionary {
 					continue;
 				}
 				*/
+				
+				entryIdsCounter++;
 				
 				// uzupelnienie o puste polskie tlumaczenie
 				dictionaryHelper.createEmptyPolishSense(jmdictEntry);
