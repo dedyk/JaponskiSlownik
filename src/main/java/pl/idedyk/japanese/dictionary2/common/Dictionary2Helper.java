@@ -2280,6 +2280,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				polishJapaneseEntry.getParseAdditionalInfoList().add(ParseAdditionalInfo.DICTIONARY2_SOURCE);
 			}
 			
+			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.IGNORE_NO_JMEDICT) == true) {
+				polishJapaneseEntry.getParseAdditionalInfoList().remove(ParseAdditionalInfo.IGNORE_NO_JMEDICT);
+			}
+			
 			// generowanie chudego GroupId
 			polishJapaneseEntry.setJmedictRawDataList(Arrays.asList("GroupId: " + entry.getEntryId()));			
 		}
