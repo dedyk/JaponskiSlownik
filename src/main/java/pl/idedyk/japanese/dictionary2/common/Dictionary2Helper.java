@@ -1682,6 +1682,29 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					wasError = true;
 				}
 			}
+
+			for (Sense currentSense : senseList) {				
+				
+				// pobieramy wszyskie polskie informacje dodatkowe z tego sensu
+				List<SenseAdditionalInfo> senseAdditionalInfoList = currentSense.getAdditionalInfoList().stream().filter(additionalInfo -> (additionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+				
+				Set<String> uniqueSenseAdditionalInfoSet = new TreeSet<>();
+				List<String> allSenseAdditionalInfoList = new ArrayList<>();
+				
+				for (SenseAdditionalInfo senseAdditionalInfo : senseAdditionalInfoList) {
+					uniqueSenseAdditionalInfoSet.add(senseAdditionalInfo.getValue());
+					allSenseAdditionalInfoList.add(senseAdditionalInfo.getValue());
+				}
+				
+				if (uniqueSenseAdditionalInfoSet.size() != allSenseAdditionalInfoList.size()) { // mamy duplikat
+					
+					Collections.sort(allSenseAdditionalInfoList);
+					
+					System.out.println("[Error] Sense gloss duplicate for " + entry.getEntryId() + " - " + allSenseAdditionalInfoList);
+					
+					wasError = true;
+				}
+			}
 			
 			// walidacja glossType: jesli jest w angielskim to musi byc w polskim
 			for (Sense currentSense : senseList) {
