@@ -2,10 +2,12 @@
 ----------
 + word - 20
 ---------
-100000 - 20
-small - 10
-small2 - 10
+_ 100000 - 20
+_ small - 10
+_ small2 - 10
 ludzie - 20
 uzupełniacz - x
 -----------
 suma: 70
+
++ 17
