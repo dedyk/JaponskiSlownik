@@ -2233,7 +2233,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					
 					// rozne informacje
 					if (miscEnumListUniqueForCurrentSense.size() > 0) {
-						currentPolGlossPolishTranslate.addAll(translateToPolishMiscEnumList(miscEnumListUniqueForCurrentSense));
+						currentPolGlossPolishTranslate.addAll(translateToPolishMiscEnumList(filterPolishMiscEnumList(miscEnumListUniqueForCurrentSense)));
 					}
 					
 					// dialekt
