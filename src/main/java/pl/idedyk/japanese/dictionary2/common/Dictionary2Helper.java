@@ -1993,7 +1993,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					}
 					
 					if (currentFindPolishJapaneseEntryList.getGroupIdFromJmedictRawDataList() == null) {
-						throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana()); // jezeli to wydarzylo sie, oznacza to, ze dane slowo jest potencjalnym duplikatem i powinien zostac recznie usuniety
+						throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - no group id from jmedict raw data for: " + currentFindPolishJapaneseEntryList.getId()); // moze jednak nie -> // jezeli to wydarzylo sie, oznacza to, ze dane slowo jest potencjalnym duplikatem i powinien zostac recznie usuniety
 					}
 					
 					if (currentFindPolishJapaneseEntryList.getGroupIdFromJmedictRawDataList().intValue() == entry.getEntryId().intValue()) { // mamy kandydata z naszej grup
@@ -2005,7 +2005,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}
 			
 			if (polishJapaneseEntryForKanjiKanaPair == null) { // nie udalo sie znalesc slowa w starym slowniku				
-				throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue()); // to chyba nigdy nie powinno zdarzyc sie
+				throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue() + " - please add manually"); // to chyba nigdy nie powinno zdarzyc sie
 			}
 			
 			allPolishJapaneseEntriesForEntry.add(polishJapaneseEntryForKanjiKanaPair);
