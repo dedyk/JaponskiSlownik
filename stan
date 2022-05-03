@@ -6,10 +6,10 @@ word - 20
 small - 10
 small2 - 10
 ludzie - 20
-uzupełniacz - x+18
+uzupełniacz - 15 -> 18
 -----------
-suma: 80
+suma: 75
 
 ======
-powt - 20 -> 10
++ powt - 20 -> 10 -> 0
 nowe - 75
