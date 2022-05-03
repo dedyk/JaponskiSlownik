@@ -6,6 +6,10 @@ word - 20
 small - 10
 small2 - 10
 ludzie - 20
-uzupełniacz - x
+uzupełniacz - x+18
 -----------
 suma: 80
+
+======
+powt - 20
+nowe - 75
