@@ -15,7 +15,7 @@ public class UpdatePolishJapaneseDictionary {
 	public static void main(String[] args) throws Exception {
 		
 		// wczytywanie pomocnika slownikowego
-		Dictionary2Helper dictionaryHelper = Dictionary2Helper.init();
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 
 		// wczytanie polskiego slownika
 		List<Entry> allPolishDictionaryEntryList = dictionaryHelper.getAllPolishDictionaryEntryList();

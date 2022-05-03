@@ -62,7 +62,7 @@ public class SetEntryToPolishDictionary {
 		}
 		
 		// wczytywanie pomocnika slownikowego
-		Dictionary2Helper dictionaryHelper = Dictionary2Helper.init();
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
 		// wczytywanie listy zmienionych elementow
 		List<Entry> entryListFromFileName = dictionaryHelper.readEntryListFromHumanCsv(fileName.getAbsolutePath());

@@ -15,6 +15,8 @@ import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 
 public class LatexDictionaryGenerator {
 	
@@ -38,7 +40,7 @@ public class LatexDictionaryGenerator {
 		fileWriter.close();
 	}
 	
-	public static List<String> generateLatexDictonaryEntries(List<PolishJapaneseEntry> polishJapaneseEntries) {
+	public static List<String> generateLatexDictonaryEntries(List<PolishJapaneseEntry> polishJapaneseEntries) throws Exception {
 		
 		List<String> result = new ArrayList<String>();
 		
@@ -113,7 +115,7 @@ public class LatexDictionaryGenerator {
 		return result;
 	}
 	
-	private static void generateSection(List<String> result, String key, List<PolishJapaneseEntry> keyList) {
+	private static void generateSection(List<String> result, String key, List<PolishJapaneseEntry> keyList) throws Exception {
 		
 		//KanaHelper kanaHelper = new KanaHelper();
 		
@@ -149,13 +151,30 @@ public class LatexDictionaryGenerator {
 		
 		//int counter = 0;
 		
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
+		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
 			
 			//if (counter > 10) {
 			//	break;
 			//}
 			
-			result.add(generateDictionaryEntry(polishJapaneseEntry));
+			JMdict.Entry jmdictEntry = null;
+			
+			// sprawdzenie, czy wystepuje slowo w formacie JMdict
+			List<Attribute> jmdictEntryIdAttributeList = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.JMDICT_ENTRY_ID);
+			
+			if (jmdictEntryIdAttributeList != null && jmdictEntryIdAttributeList.size() > 0) { // cos jest
+				
+				// pobieramy entry id
+				Integer entryId = Integer.parseInt(jmdictEntryIdAttributeList.get(0).getAttributeValue().get(0));
+				
+				// pobieramy z bazy danych
+				jmdictEntry = dictionaryHelper.getEntryFromPolishDictionary(entryId);				
+			}
+
+			
+			result.add(generateDictionaryEntry(polishJapaneseEntry, jmdictEntry));
 			
 			//counter++;			
 		}			
@@ -163,7 +182,7 @@ public class LatexDictionaryGenerator {
 		result.add("\\end{multicols}\n\n");
 	}
 	
-	private static String generateDictionaryEntry(PolishJapaneseEntry polishJapaneseEntry) {
+	private static String generateDictionaryEntry(PolishJapaneseEntry polishJapaneseEntry, JMdict.Entry jmdictEntry) {
 		
 		StringBuffer result = new StringBuffer();
 		

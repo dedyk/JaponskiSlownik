@@ -13,7 +13,7 @@ public class UpdateOldPolishJapaneseDictionary {
 	public static void main(String[] args) throws Exception {
 		
 		// wczytywanie pomocnika slownikowego
-		Dictionary2Helper dictionaryHelper = Dictionary2Helper.init();
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 
 		// pobieramy wszystkie slowa, ktore sa w nowym slowniku
 		List<Entry> allPolishDictionaryEntryList = dictionaryHelper.getAllPolishDictionaryEntryList();

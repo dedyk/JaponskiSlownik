@@ -17,7 +17,7 @@ public class GroupIdsWithMultipleKanjiOrKana {
 
 	public static void main(String[] args) throws Exception {
 		
-		Dictionary2Helper dictionaryHelper = Dictionary2Helper.init();
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
 		JMdict jmdict = dictionaryHelper.getJMdict();
 		

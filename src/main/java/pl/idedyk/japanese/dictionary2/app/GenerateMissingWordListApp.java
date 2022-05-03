@@ -90,7 +90,7 @@ public class GenerateMissingWordListApp {
 		List<String> wordList = Helper.readFile(wordListFileName, true);
 		
 		// wczytywanie pomocnika slownikowego
-		Dictionary2Helper dictionaryHelper = Dictionary2Helper.init();
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
 		Set<Integer> alreadyMetEntrySet = new TreeSet<Integer>();
 		

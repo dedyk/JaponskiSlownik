@@ -141,7 +141,7 @@ public class GetEntryFromDictionary {
 		}		
 		
 		// wczytywanie pomocnika slownikowego
-		Dictionary2Helper dictionaryHelper = Dictionary2Helper.init();
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
 		List<Entry> result = new ArrayList<>();
 		

@@ -201,7 +201,7 @@ public class AndroidDictionaryGenerator {
 		*/
 		
 		// word 2 - dictionary
-		Dictionary2Helper dictionaryHelper = Dictionary2Helper.init();
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
 		dictionaryHelper.validateAllPolishDictionaryEntryList();
 		
@@ -878,7 +878,7 @@ public class AndroidDictionaryGenerator {
 		return transitiveIntransitivePairList;
 	}
 		
-	private static void generatePdfDictionary(List<PolishJapaneseEntry> polishJapaneseEntries, String mainTexFilename, String outputDir) throws IOException, InterruptedException {
+	private static void generatePdfDictionary(List<PolishJapaneseEntry> polishJapaneseEntries, String mainTexFilename, String outputDir) throws Exception {
 		
 		File mainTexFile = new File(mainTexFilename);
 		File outputMainTexFile = new File(outputDir, mainTexFile.getName()); 

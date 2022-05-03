@@ -102,17 +102,22 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	private static final int CSV_COLUMNS = 11; 
 	
+	private static Dictionary2Helper dictionary2Helper;
+	
 	private Dictionary2Helper() { }
 	
-	
-	
-	public static Dictionary2Helper init() {
-				
-		// stary pomocnik		
-		WordGeneratorHelper oldWordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
-				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
+	public static Dictionary2Helper getOrInit() {
+		
+		if (dictionary2Helper == null) {
+			
+			// stary pomocnik		
+			WordGeneratorHelper oldWordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
+					"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
 
-		return init(oldWordGeneratorHelper);
+			dictionary2Helper =  init(oldWordGeneratorHelper);
+		}
+		
+		return dictionary2Helper;				
 	}
 	
 	public static Dictionary2Helper init(WordGeneratorHelper oldWordGeneratorHelper) {
