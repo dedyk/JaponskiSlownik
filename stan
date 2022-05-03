@@ -11,5 +11,5 @@ uzupełniacz - x+18
 suma: 80
 
 ======
-powt - 20
+powt - 20 -> 10
 nowe - 75
