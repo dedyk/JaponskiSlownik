@@ -14,9 +14,17 @@ import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
+import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 
 public class LatexDictionaryGenerator {
 	
@@ -26,6 +34,18 @@ public class LatexDictionaryGenerator {
 		
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
 		
+		//
+		
+		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
+		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
+		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
+		
+        TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
+
+        Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries);
+		
+        //
+        
 		List<String> latexDictonaryEntries = generateLatexDictonaryEntries(polishJapaneseEntries);
 				
 		FileWriter fileWriter = new FileWriter("pdf_dictionary/dictionary_entries.tex");
@@ -185,114 +205,158 @@ public class LatexDictionaryGenerator {
 	private static String generateDictionaryEntry(PolishJapaneseEntry polishJapaneseEntry, JMdict.Entry jmdictEntry) {
 		
 		StringBuffer result = new StringBuffer();
-		
-		// translates, info
-		
-		String kanji = polishJapaneseEntry.getKanji();
-		
-		String kana = polishJapaneseEntry.getKana();
-		String romaji = polishJapaneseEntry.getRomaji();
-		
-		//result.append("\\noindent ");
-		
-		// pogrubienie romaji
-		result.append(textbf(romaji)).append(" ");
-		
-		if (kanji.equals("-") == false) {
-		
-			// na gorze strony slowa kanji
-			// result.append(markBoth(kanji)).append(" ");
-			
-			// kanji
-			result.append(cjkFakeBold(kanji)).append(" ");
-			
-		} else {
-			// na gorze slowa kana
-			result.append(markBoth(textbf(romaji) + " (" + kana + ")")).append(" ");
-		}
-		
-		// kana
-		result.append("(" + cjkFakeBold(kana) + ")").append(" ");
-		result.append(markBoth(textbf(romaji) + " (" + kana + ")")).append(" ");
 
-		// rodzaje slowa
-		List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
+		// FIXME: tymczasowo
+		jmdictEntry = null;
 		
-		boolean wasAddableDictionaryEntryType = false;
-		
-		for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {
+		if (jmdictEntry == null) { // stary sposob generowania
 			
-			if (DictionaryEntryType.isAddableDictionaryEntryTypeInfo(dictionaryEntryType) == false) {
-				continue;
-			}
+			// FIXME: to jest ok !!!!!!!!!!!!!!!!!!!!!!!!
+						
+			// translates, info
 			
-			if (wasAddableDictionaryEntryType == true) {
-				result.append(textit(", "));
-			}
+			String kanji = polishJapaneseEntry.getKanji();
 			
-			result.append(textit(dictionaryEntryType.getName()));
+			String kana = polishJapaneseEntry.getKana();
+			String romaji = polishJapaneseEntry.getRomaji();
 			
-			wasAddableDictionaryEntryType = true;
-		}
-		
-		// pobranie atrybutów
-		AttributeList attributeList = polishJapaneseEntry.getAttributeList();
-		
-		List<Attribute> attributeListList = attributeList.getAttributeList();
-		
-		boolean wasShowAttribute = false;
-		
-		for (Attribute attribute : attributeListList) {
+			//result.append("\\noindent ");
 			
-			AttributeType attributeType = attribute.getAttributeType();
+			// pogrubienie romaji
+			result.append(textbf(romaji)).append(" ");
 			
-			if (attributeType.isShow() == false) {
-				continue;
-			}
+			if (kanji.equals("-") == false) {
 			
-			if (wasShowAttribute == false) {
-				result.append(" ").append(cdot()).append(" ");
+				// na gorze strony slowa kanji
+				// result.append(markBoth(kanji)).append(" ");
+				
+				// kanji
+				result.append(cjkFakeBold(kanji)).append(" ");
 				
 			} else {
-				result.append(textit(", "));
+				// na gorze strony kana
+				result.append(markBoth(textbf(romaji) + " (" + kana + ")")).append(" ");
 			}
 			
-			result.append(textit(attributeType.getName()));
+			// kana
+			result.append("(" + cjkFakeBold(kana) + ")").append(" ");
 			
-			wasShowAttribute = true;
-		}
-		
-		if (wasShowAttribute == true) {
-			result.append(" ");
-		}
-		
-		// tlumaczenie
-		result.append(" ").append(bullet()).append(" ");
-		
-		List<String> translates = polishJapaneseEntry.getTranslates();
-		
-		boolean wasTranslate = false;
-		
-		for (String translate : translates) {
+			// na gorze strony romaji + kana
+			result.append(markBoth(textbf(romaji) + " (" + kana + ")")).append(" ");
+
+			// rodzaje slowa
+			List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
 			
-			if (wasTranslate == true) {
-				result.append(", ");
+			boolean wasAddableDictionaryEntryType = false;
+			
+			for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {
+				
+				if (DictionaryEntryType.isAddableDictionaryEntryTypeInfo(dictionaryEntryType) == false) {
+					continue;
+				}
+				
+				if (wasAddableDictionaryEntryType == true) {
+					result.append(textit(", "));
+				}
+				
+				result.append(textit(dictionaryEntryType.getName()));
+				
+				wasAddableDictionaryEntryType = true;
 			}
 			
-			result.append(escapeLatexChars(translate));
+			// pobranie atrybutów
+			AttributeList attributeList = polishJapaneseEntry.getAttributeList();
 			
-			wasTranslate = true;
+			List<Attribute> attributeListList = attributeList.getAttributeList();
+			
+			boolean wasShowAttribute = false;
+			
+			for (Attribute attribute : attributeListList) {
+				
+				AttributeType attributeType = attribute.getAttributeType();
+				
+				if (attributeType.isShow() == false) {
+					continue;
+				}
+				
+				if (wasShowAttribute == false) {
+					result.append(" ").append(cdot()).append(" ");
+					
+				} else {
+					result.append(textit(", "));
+				}
+				
+				result.append(textit(attributeType.getName()));
+				
+				wasShowAttribute = true;
+			}
+			
+			if (wasShowAttribute == true) {
+				result.append(" ");
+			}
+			
+			// tlumaczenie
+			result.append(" ").append(bullet()).append(" ");
+			
+			List<String> translates = polishJapaneseEntry.getTranslates();
+			
+			boolean wasTranslate = false;
+			
+			for (String translate : translates) {
+				
+				if (wasTranslate == true) {
+					result.append(", ");
+				}
+				
+				result.append(escapeLatexChars(translate));
+				
+				wasTranslate = true;
+			}
+			
+			// informacje dodatkowe
+			String info = polishJapaneseEntry.getInfo();
+			
+			if (info != null && info.equals("") == false) {
+				
+				result.append(" ").append(cdot()).append(" ");
+				
+				result.append(escapeLatexChars(info));			
+			}		
+			
+		} else if (jmdictEntry != null) { // nowy sposob generowania
+			
+			// laczenie kanji, kana i znaczen w pary
+			List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(jmdictEntry);
+			
+			// wyszukanie konkretnego znaczenia dla naszeo slowka
+			KanjiKanaPair kanjiKanaPair = Dictionary2HelperCommon.findKanjiKanaPair(kanjiKanaPairList, polishJapaneseEntry);
+
+			// generowanie znaczenia
+			KanjiInfo kanjiInfo = kanjiKanaPair.getKanjiInfo();
+			ReadingInfo readingInfo = kanjiKanaPair.getReadingInfo();
+			
+			// pogrubienie romaji
+			result.append(textbf(readingInfo.getKana().getRomaji())).append(" ");
+
+			if (kanjiInfo != null && kanjiInfo.getKanji() != null) {
+								
+				// kanji
+				result.append(cjkFakeBold(kanjiInfo.getKanji())).append(" ");
+				
+			} else {
+				// na gorze strony kana
+				result.append(markBoth(textbf(readingInfo.getKana().getRomaji()) + " (" + readingInfo.getKana().getValue() + ")")).append(" ");
+			}
+
+			// kana
+			result.append("(" + cjkFakeBold(readingInfo.getKana().getValue()) + ")").append(" ");
+			
+			// na gorze strony romaji + kana
+			result.append(markBoth(textbf(readingInfo.getKana().getRomaji()) + " (" + readingInfo.getKana().getValue() + ")")).append(" ");
+
+			
+			
 		}
-		
-		// informacje dodatkowe
-		String info = polishJapaneseEntry.getInfo();
-		
-		if (info != null && info.equals("") == false) {
-			
-			result.append(" ").append(cdot()).append(" ");
-			
-			result.append(escapeLatexChars(info));			
-		}		
 		
 		result.append("\\vspace{0.3cm} \n\n");
 		
