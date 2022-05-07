@@ -25,6 +25,7 @@ import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 
 public class LatexDictionaryGenerator {
 	
@@ -207,10 +208,10 @@ public class LatexDictionaryGenerator {
 		StringBuffer result = new StringBuffer();
 
 		// FIXME: tymczasowo
-		jmdictEntry = null;
+		// jmdictEntry = null;
 		
 		if (jmdictEntry == null) { // stary sposob generowania
-			
+			/*
 			// FIXME: to jest ok !!!!!!!!!!!!!!!!!!!!!!!!
 						
 			// translates, info
@@ -321,7 +322,7 @@ public class LatexDictionaryGenerator {
 				result.append(" ").append(cdot()).append(" ");
 				
 				result.append(escapeLatexChars(info));			
-			}		
+			}		*/
 			
 		} else if (jmdictEntry != null) { // nowy sposob generowania
 			
@@ -341,7 +342,27 @@ public class LatexDictionaryGenerator {
 			if (kanjiInfo != null && kanjiInfo.getKanji() != null) {
 								
 				// kanji
-				result.append(cjkFakeBold(kanjiInfo.getKanji())).append(" ");
+				result.append(cdot()).append(cjkFakeBold(kanjiInfo.getKanji())).append(" ");
+				
+				// informacje dodatkowe do kanji
+				List<String> kanjiAdditionalInfoPolishList = Dictionary2Helper.translateToPolishKanjiAdditionalInfoEnum(kanjiInfo.getKanjiAdditionalInfoList());
+				
+				for (int idx = 0; idx < kanjiAdditionalInfoPolishList.size(); ++idx) {
+					
+					if (idx == 0) {
+						result.append("(");
+					}
+					
+					result.append(textit(kanjiAdditionalInfoPolishList.get(idx)));
+					
+					if (idx != kanjiAdditionalInfoPolishList.size() - 1) {
+						result.append("; ");
+					}
+					
+					if (idx == kanjiAdditionalInfoPolishList.size() - 1) {
+						result.append(") ");
+					}
+				}
 				
 			} else {
 				// na gorze strony kana
@@ -349,12 +370,44 @@ public class LatexDictionaryGenerator {
 			}
 
 			// kana
-			result.append("(" + cjkFakeBold(readingInfo.getKana().getValue()) + ")").append(" ");
+			result.append(cdot()).append(cjkFakeBold(readingInfo.getKana().getValue())).append(" ");
+			
+			// informacje dodatkowe do kana
+			List<String> kanaReadingAdditionalInfoPolishList = Dictionary2Helper.translateToPolishReadingAdditionalInfoEnum(readingInfo.getReadingAdditionalInfoList());
+			
+			for (int idx = 0; idx < kanaReadingAdditionalInfoPolishList.size(); ++idx) {
+				
+				if (idx == 0) {
+					result.append("(");
+				}
+				
+				result.append(textit(kanaReadingAdditionalInfoPolishList.get(idx)));
+				
+				if (idx != kanaReadingAdditionalInfoPolishList.size() - 1) {
+					result.append("; ");
+				}
+				
+				if (idx == kanaReadingAdditionalInfoPolishList.size() - 1) {
+					result.append(") ");
+				}
+			}
 			
 			// na gorze strony romaji + kana
 			result.append(markBoth(textbf(readingInfo.getKana().getRomaji()) + " (" + readingInfo.getKana().getValue() + ")")).append(" ");
 
+			// znaczenie
+			result.append(" ").append(bullet()).append(" ");
+
+			List<Sense> senseList = kanjiKanaPair.getSenseList();
 			
+			for (int idx = 0; idx < senseList.size(); ++idx) {
+				
+				if ((idx == 0 && senseList.size() > 1) || idx > 0) {
+					result.append("\\circled{" + (idx + 1) + "}\\ ");
+				}
+				
+				result.append("test ");				
+			}
 			
 		}
 		

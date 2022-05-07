@@ -32,6 +32,7 @@
 \usepackage[bf,sf,center]{titlesec} % Required for modifying section titles - bold, sans-serif, centered
 \usepackage{fancyhdr} % Required for modifying headers and footers
 \usepackage[hidelinks]{hyperref}
+\usepackage{tikz}   % tikz
 
 \usepackage{xeCJK}
 
@@ -45,6 +46,9 @@
 \fancyfoot[C]{\textbf{\textsf{\thepage}}} % Bottom center footer
 
 \renewcommand{\footrulewidth}{1.4pt} % Rule under the footer
+
+\newcommand*\circled[1]{{\tiny \tikz[baseline={([yshift=-1.2ex]current bounding box.center)}]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}}
 
 \pagestyle{fancy} % Use the custom headers and footers throughout the document
 
