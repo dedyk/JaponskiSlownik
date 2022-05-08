@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.stream.Collectors;
 import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
@@ -22,8 +23,10 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 
@@ -206,7 +209,7 @@ public class LatexDictionaryGenerator {
 	private static String generateDictionaryEntry(PolishJapaneseEntry polishJapaneseEntry, JMdict.Entry jmdictEntry) {
 		
 		StringBuffer result = new StringBuffer();
-
+				
 		// FIXME: tymczasowo
 		// jmdictEntry = null;
 		
@@ -396,21 +399,74 @@ public class LatexDictionaryGenerator {
 			result.append(markBoth(textbf(readingInfo.getKana().getRomaji()) + " (" + readingInfo.getKana().getValue() + ")")).append(" ");
 
 			// znaczenie
-			result.append(" ").append(bullet()).append(" ");
+			//result.append(" ").append(bullet()).append(" ");
 
 			List<Sense> senseList = kanjiKanaPair.getSenseList();
 			
 			for (int idx = 0; idx < senseList.size(); ++idx) {
 				
-				if ((idx == 0 && senseList.size() > 1) || idx > 0) {
-					result.append("\\circled{" + (idx + 1) + "}\\ ");
+				Sense sense = senseList.get(idx);
+				
+				result.append("\\circled{" + (idx + 1) + "}\\ ");
+				
+				// czesc mowy				
+				List<String> polishPartOfSpeechEnumPolishList = Dictionary2Helper.translateToPolishPartOfSpeechEnum(sense.getPartOfSpeechList());
+				
+				for (int polishPartOfSpeechEnumPolishListIdx = 0; polishPartOfSpeechEnumPolishListIdx < polishPartOfSpeechEnumPolishList.size(); ++polishPartOfSpeechEnumPolishListIdx) {
+										
+					result.append(textit(polishPartOfSpeechEnumPolishList.get(polishPartOfSpeechEnumPolishListIdx)));
+					
+					if (polishPartOfSpeechEnumPolishListIdx != polishPartOfSpeechEnumPolishList.size() - 1) {
+						result.append("; ");
+					}
+					
+					if (polishPartOfSpeechEnumPolishListIdx == polishPartOfSpeechEnumPolishList.size() - 1) {
+						result.append(" ").append(cdot()).append(" ");
+					}
 				}
 				
-				result.append("test ");				
-			}
-			
+				// dziedzina nauki
+				List<String> fieldPolishList = Dictionary2Helper.translateToPolishFieldEnumList(sense.getFieldList());
+
+				for (int fieldPolishListIdx = 0; fieldPolishListIdx < fieldPolishList.size(); ++fieldPolishListIdx) {
+										
+					result.append(textit(fieldPolishList.get(fieldPolishListIdx)));
+					
+					if (fieldPolishListIdx != fieldPolishList.size() - 1) {
+						result.append("; ");
+					}
+					
+					if (fieldPolishListIdx == fieldPolishList.size() - 1) {
+						result.append(" ").append(cdot()).append(" ");
+					}
+				}
+
+				// tlumaczenie polskie
+				List<Gloss> glossPolList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+				
+				for (int glossPolListIdx = 0; glossPolListIdx < glossPolList.size(); ++glossPolListIdx) {
+					
+					Gloss currentGloss = glossPolList.get(glossPolListIdx);
+					
+					result.append(textbf(escapeLatexChars(currentGloss.getValue())));
+					
+					if (currentGloss.getGType() != null) {
+						result.append(" (").append(Dictionary2Helper.translateToPolishGlossType(currentGloss.getGType())).append(")");
+					}
+					
+					if (glossPolListIdx != glossPolList.size() - 1) {
+						result.append("; ");
+					}
+					
+					if (glossPolListIdx == glossPolList.size() - 1) {
+						result.append(" ").append(cdot()).append(" ");
+					}
+				}
+				
+				//result.append("test ");				
+			}	
 		}
-		
+				
 		result.append("\\vspace{0.3cm} \n\n");
 		
 		return result.toString();
@@ -423,6 +479,7 @@ public class LatexDictionaryGenerator {
 		text = text.replaceAll("\\#", "\\\\#");
 		text = text.replaceAll("\\$", "\\\\\\$");
 		text = text.replaceAll("\\_", "\\\\_");
+		text = text.replaceAll("\\%", "\\\\%");
 		
 		return text;
 	}
