@@ -457,7 +457,23 @@ public class LatexDictionaryGenerator {
 					if (miscPolishListIdx == miscPolishList.size() - 1) {
 						result.append(" ").append(cdot()).append(" ");
 					}
-				}				
+				}
+				
+				// dialekt
+				List<String> dialectPolishList = Dictionary2Helper.translateToPolishDialectEnumList(sense.getDialectList());
+
+				for (int dialectPolishListIdx = 0; dialectPolishListIdx < dialectPolishList.size(); ++dialectPolishListIdx) {
+					
+					result.append(textit(dialectPolishList.get(dialectPolishListIdx)));
+					
+					if (dialectPolishListIdx != dialectPolishList.size() - 1) {
+						result.append("; ");
+					}
+					
+					if (dialectPolishListIdx == dialectPolishList.size() - 1) {
+						result.append(" ").append(cdot()).append(" ");
+					}
+				}
 
 				// tlumaczenie polskie
 				List<Gloss> glossPolList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
@@ -527,6 +543,50 @@ public class LatexDictionaryGenerator {
 					}
 				}
 				
+				// referencja do innego slowa
+				List<String> referenceToAnotherKanjiKanaList = sense.getReferenceToAnotherKanjiKanaList();
+				
+				for (int referenceToAnotherKanjiKanaListIdx = 0; referenceToAnotherKanjiKanaListIdx < referenceToAnotherKanjiKanaList.size(); ++referenceToAnotherKanjiKanaListIdx) {
+					
+					String referenceToAnotherKanjiKana = referenceToAnotherKanjiKanaList.get(referenceToAnotherKanjiKanaListIdx);
+					
+					if (referenceToAnotherKanjiKanaListIdx == 0) {
+						result.append(" ").append(cdot()).append(" ").append(rightarrow()).append(" ");
+					}
+					
+					result.append(referenceToAnotherKanjiKana);
+
+					if (referenceToAnotherKanjiKanaListIdx != referenceToAnotherKanjiKanaList.size() - 1) {
+						result.append("; ");
+					}
+					
+					if (referenceToAnotherKanjiKanaListIdx == referenceToAnotherKanjiKanaList.size() - 1) {
+						result.append(" ");
+					}
+				}
+				
+				// przeciwienstwo
+				List<String> antonymList = sense.getAntonymList();
+				
+				for (int antonymListIdx = 0; antonymListIdx < antonymList.size(); ++antonymListIdx) {
+					
+					String antonym = antonymList.get(antonymListIdx);
+					
+					if (antonymListIdx == 0) {
+						result.append(" ").append(cdot()).append(" ").append(leftRightArrow()).append(" ");
+					}
+					
+					result.append(antonym);
+
+					if (antonymListIdx != antonymList.size() - 1) {
+						result.append("; ");
+					}
+					
+					if (antonymListIdx == antonymList.size() - 1) {
+						result.append(" ");
+					}
+				}				
+				
 				//result.append("test ");				
 			}	
 		}
@@ -570,6 +630,14 @@ public class LatexDictionaryGenerator {
 
 	private static String bullet() {
 		return "$\\bullet$";
+	}
+	
+	private static String rightarrow() {
+		return "$\\rightarrow$";
+	}
+
+	private static String leftRightArrow() {
+		return "$\\leftrightarrow$";
 	}
 
 	/*
