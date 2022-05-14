@@ -26,6 +26,7 @@ import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
@@ -487,8 +488,43 @@ public class LatexDictionaryGenerator {
 					
 					SenseAdditionalInfo senseAdditionalInfo = senseAdditionalInfoList.get(senseAdditionalInfoListIdx);
 					
-					result.append(" ").append(cdot()).append(" ");					
+					result.append(" ").append(cdot()).append(" ");
 					result.append(escapeLatexChars(senseAdditionalInfo.getValue())).append(" ");
+				}
+				
+				// informacja o pochodzeniu slowa z innego jezyka
+				List<LanguageSource> senseLanguageSourceList = sense.getLanguageSourceList();
+				
+				for (int senseLanguageSourceListIdx = 0; senseLanguageSourceListIdx < senseLanguageSourceList.size(); ++senseLanguageSourceListIdx) {
+					
+					LanguageSource languageSource = senseLanguageSourceList.get(senseLanguageSourceListIdx);
+					
+					if (senseLanguageSourceListIdx == 0) {
+						result.append(" ").append(cdot()).append(" ");
+					}
+					
+					String languageCodeInPolish = Dictionary2HelperCommon.translateToPolishLanguageCode(languageSource.getLang());
+					String languageValue = languageSource.getValue();
+					String languageLsWasei = Dictionary2HelperCommon.translateToPolishLanguageSourceLsWaseiEnum(languageSource.getLsWasei());
+					
+					if (languageValue != null && languageValue.trim().equals("") == false) {
+						result.append(escapeLatexChars(languageCodeInPolish + ": " + languageValue));
+						
+					} else {
+						result.append(escapeLatexChars(Dictionary2HelperCommon.translateToPolishLanguageCodeWithoutValue(languageSource.getLang())));
+					}
+					
+					if (languageLsWasei != null) {
+						result.append(" ").append(cdot()).append(" ").append(textit(languageLsWasei));
+					}
+					
+					if (senseLanguageSourceListIdx != senseLanguageSourceList.size() - 1) {
+						result.append("; ");
+					}
+					
+					if (senseLanguageSourceListIdx == senseLanguageSourceList.size() - 1) {
+						result.append(" ");
+					}
 				}
 				
 				//result.append("test ");				
