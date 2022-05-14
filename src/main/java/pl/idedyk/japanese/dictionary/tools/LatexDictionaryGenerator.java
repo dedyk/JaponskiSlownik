@@ -27,7 +27,6 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
@@ -212,12 +211,7 @@ public class LatexDictionaryGenerator {
 		
 		StringBuffer result = new StringBuffer();
 				
-		// FIXME: tymczasowo
-		// jmdictEntry = null;
-		
 		if (jmdictEntry == null) { // stary sposob generowania
-			/*
-			// FIXME: to jest ok !!!!!!!!!!!!!!!!!!!!!!!!
 						
 			// translates, info
 			
@@ -314,7 +308,7 @@ public class LatexDictionaryGenerator {
 					result.append(", ");
 				}
 				
-				result.append(escapeLatexChars(translate));
+				result.append(textbf(escapeLatexChars(translate)));
 				
 				wasTranslate = true;
 			}
@@ -327,7 +321,7 @@ public class LatexDictionaryGenerator {
 				result.append(" ").append(cdot()).append(" ");
 				
 				result.append(escapeLatexChars(info));			
-			}		*/
+			}
 			
 		} else if (jmdictEntry != null) { // nowy sposob generowania
 			
@@ -586,8 +580,6 @@ public class LatexDictionaryGenerator {
 						result.append(" ");
 					}
 				}				
-				
-				//result.append("test ");				
 			}	
 		}
 				
