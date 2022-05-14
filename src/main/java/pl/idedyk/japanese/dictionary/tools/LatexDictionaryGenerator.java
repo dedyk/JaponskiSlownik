@@ -29,6 +29,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 
 public class LatexDictionaryGenerator {
 	
@@ -440,6 +441,22 @@ public class LatexDictionaryGenerator {
 						result.append(" ").append(cdot()).append(" ");
 					}
 				}
+				
+				// rozne informacje
+				List<String> miscPolishList = Dictionary2Helper.translateToPolishMiscEnumList(sense.getMiscList());
+
+				for (int miscPolishListIdx = 0; miscPolishListIdx < miscPolishList.size(); ++miscPolishListIdx) {
+										
+					result.append(textit(miscPolishList.get(miscPolishListIdx)));
+					
+					if (miscPolishListIdx != miscPolishList.size() - 1) {
+						result.append("; ");
+					}
+					
+					if (miscPolishListIdx == miscPolishList.size() - 1) {
+						result.append(" ").append(cdot()).append(" ");
+					}
+				}				
 
 				// tlumaczenie polskie
 				List<Gloss> glossPolList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
@@ -459,8 +476,19 @@ public class LatexDictionaryGenerator {
 					}
 					
 					if (glossPolListIdx == glossPolList.size() - 1) {
-						result.append(" ").append(cdot()).append(" ");
+						result.append(" ");
 					}
+				}
+				
+				// informacje dodatkowe do tlumaczenia
+				List<SenseAdditionalInfo> senseAdditionalInfoList = sense.getAdditionalInfoList().stream().filter(additionalInfo -> (additionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+
+				for (int senseAdditionalInfoListIdx = 0; senseAdditionalInfoListIdx < senseAdditionalInfoList.size(); ++senseAdditionalInfoListIdx) {
+					
+					SenseAdditionalInfo senseAdditionalInfo = senseAdditionalInfoList.get(senseAdditionalInfoListIdx);
+					
+					result.append(" ").append(cdot()).append(" ");					
+					result.append(escapeLatexChars(senseAdditionalInfo.getValue())).append(" ");
 				}
 				
 				//result.append("test ");				
