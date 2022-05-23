@@ -27,10 +27,16 @@ import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 
 public class YomichanGenerator {
 	
-	private static Map<DictionaryEntryType, DefinitionTag> dictionaryEntryTypeToDefinitionTagMap = new TreeMap<DictionaryEntryType, DefinitionTag>() {
+	private static Map<DictionaryEntryType, DefinitionTag> oldDictionaryEntryTypeToDefinitionTagMap = new TreeMap<DictionaryEntryType, DefinitionTag>() {
 		
 		private static final long serialVersionUID = 1L;
 
@@ -135,13 +141,15 @@ public class YomichanGenerator {
 			put(DictionaryEntryType.WORD_RELIGION, new DefinitionTag("reli", 30));
 			
 			put(DictionaryEntryType.WORD_SERVICE, new DefinitionTag("usłu", 31));
-						
+			
+			put(DictionaryEntryType.WORD_GROUP, new DefinitionTag("grup", 32));
+			
 			put(DictionaryEntryType.WORD_EMPTY, new DefinitionTag("", 999));
 			put(DictionaryEntryType.UNKNOWN, new DefinitionTag("", 999));			
 		}
 	};
 	
-	private static Map<AttributeType, DefinitionTag> attributeTypeToDefinitionTagMap = new TreeMap<AttributeType, DefinitionTag>() {		
+	private static Map<AttributeType, DefinitionTag> oldDictionaryAttributeTypeToDefinitionTagMap = new TreeMap<AttributeType, DefinitionTag>() {		
 		private static final long serialVersionUID = 1L;
 
 		{
@@ -169,7 +177,7 @@ public class YomichanGenerator {
 		}
 	};
 	
-	public static void generate(List<PolishJapaneseEntry> polishJapaneseEntriesList, List<PolishJapaneseEntry> namesList, String outputDir) {
+	public static void generate(List<PolishJapaneseEntry> polishJapaneseEntriesList, List<PolishJapaneseEntry> namesList, String outputDir) throws Exception {
 				
 		// generowanie indeksu
 		generateAndSaveIndex(outputDir);
@@ -204,137 +212,195 @@ public class YomichanGenerator {
 		writeJSONObjectToFile(new File(outputDir, "index.json"), indexJSON);		
 	}
 	
-	private static void generateTermBank(List<List<TermBankEntry>> termBankListList, List<PolishJapaneseEntry> polishJapaneseEntriesList, boolean names) {
+	private static void generateTermBank(List<List<TermBankEntry>> termBankListList, List<PolishJapaneseEntry> polishJapaneseEntriesList, boolean names) throws Exception {
 		
 		List<TermBankEntry> currentTermBankList = null;
 		
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
+		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
 			
-			TermBankEntry termBankEntry = new TermBankEntry();
+			JMdict.Entry jmdictEntry = null;
 			
-			if (polishJapaneseEntry.isKanjiExists() == true) {
+			if (names == false) {				
 				
-				termBankEntry.setKanji(polishJapaneseEntry.getKanji());
-				termBankEntry.setKana(polishJapaneseEntry.getKana());
+				// sprawdzenie, czy wystepuje slowo w formacie JMdict
+				List<Attribute> jmdictEntryIdAttributeList = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.JMDICT_ENTRY_ID);
 				
-			} else {
-				
-				termBankEntry.setKanji(polishJapaneseEntry.getKana());
-				termBankEntry.setKana("");				
-			}
-						
-			// generowanie definitionTag
-			generateDefinitionTag(polishJapaneseEntry, termBankEntry);			
-			
-			// generowanie inflectedTags
-			{
-				List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
-				
-				if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_I) == true) {
-					termBankEntry.addInflectedTags("adj-i");
-				}
-				
-				if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_U) == true) {
-					termBankEntry.addInflectedTags("v5");
-				}
-
-				if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_RU) == true) {
-					termBankEntry.addInflectedTags("v1");
-				}
-				
-				if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_IRREGULAR) == true) {
+				if (jmdictEntryIdAttributeList != null && jmdictEntryIdAttributeList.size() > 0) { // cos jest
 					
-					if (polishJapaneseEntry.getKana().endsWith("する") == true) {
-						termBankEntry.addInflectedTags("vs");
-						
-					} else if (polishJapaneseEntry.getKana().endsWith("くる") == true) {
-						termBankEntry.addInflectedTags("vk");
-						
-					} else {
-						throw new RuntimeException();
+					// pobieramy entry id
+					Integer entryId = Integer.parseInt(jmdictEntryIdAttributeList.get(0).getAttributeValue().get(0));
+					
+					// pobieramy z bazy danych
+					jmdictEntry = dictionaryHelper.getEntryFromPolishDictionary(entryId);				
+				}
+			}
+			
+			TermBankEntry termBankEntry = null;
+			
+			if (jmdictEntry == null) { // stary sposob generowania
+				
+				int fixme = 1; // !!!!!!!!!!!!!!!!
+				
+				/*
+				termBankEntry = new TermBankEntry();
+				
+				if (polishJapaneseEntry.isKanjiExists() == true) {
+					
+					termBankEntry.setKanji(polishJapaneseEntry.getKanji());
+					termBankEntry.setKana(polishJapaneseEntry.getKana());
+					
+				} else {
+					
+					termBankEntry.setKanji(polishJapaneseEntry.getKana());
+					termBankEntry.setKana("");				
+				}
+							
+				// generowanie definitionTag
+				generateDefinitionTag(polishJapaneseEntry, termBankEntry);			
+				
+				// generowanie inflectedTags
+				{
+					List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
+					
+					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_ADJECTIVE_I) == true) {
+						termBankEntry.addInflectedTags("adj-i");
 					}
-				}
-			}
-			
-			// generowanie popularity
-			{
-				boolean isCommon = false;
-				boolean isArchaism = false;
-				boolean isObscure = false;
-				boolean isObsolete = false;
-				
-				//
-				
-				AttributeList attributeList = polishJapaneseEntry.getAttributeList();
-				
-				if (attributeList != null) {
 					
-					List<Attribute> attributeListList = attributeList.getAttributeList();
+					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_U) == true) {
+						termBankEntry.addInflectedTags("v5");
+					}
+
+					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_RU) == true) {
+						termBankEntry.addInflectedTags("v1");
+					}
 					
-					if (attributeListList != null && attributeListList.size() > 0) {
+					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_VERB_IRREGULAR) == true) {
 						
-						for (Attribute attribute : attributeListList) {
-														
-							if (attribute.getAttributeType() == AttributeType.COMMON_WORD) {
-								isCommon = true;
-							}
+						if (polishJapaneseEntry.getKana().endsWith("する") == true) {
+							termBankEntry.addInflectedTags("vs");
 							
-							if (attribute.getAttributeType() == AttributeType.ARCHAISM) {
-								isArchaism = true;
-							}
+						} else if (polishJapaneseEntry.getKana().endsWith("くる") == true) {
+							termBankEntry.addInflectedTags("vk");
 							
-							if (attribute.getAttributeType() == AttributeType.OBSCURE) {
-								isObscure = true;
-							}
-							
-							if (attribute.getAttributeType() == AttributeType.OBSOLETE) {
-								isObsolete = true;
-							}
+						} else {
+							throw new RuntimeException();
 						}
 					}
 				}
 				
-				if (isCommon == true) {
-					termBankEntry.setPopularity(0);
+				// generowanie popularity
+				{
+					boolean isCommon = false;
+					boolean isArchaism = false;
+					boolean isObscure = false;
+					boolean isObsolete = false;
 					
-				} else if (isObscure == true) {
-					termBankEntry.setPopularity(-2);
+					//
+					
+					AttributeList attributeList = polishJapaneseEntry.getAttributeList();
+					
+					if (attributeList != null) {
+						
+						List<Attribute> attributeListList = attributeList.getAttributeList();
+						
+						if (attributeListList != null && attributeListList.size() > 0) {
+							
+							for (Attribute attribute : attributeListList) {
+															
+								if (attribute.getAttributeType() == AttributeType.COMMON_WORD) {
+									isCommon = true;
+								}
+								
+								if (attribute.getAttributeType() == AttributeType.ARCHAISM) {
+									isArchaism = true;
+								}
+								
+								if (attribute.getAttributeType() == AttributeType.OBSCURE) {
+									isObscure = true;
+								}
+								
+								if (attribute.getAttributeType() == AttributeType.OBSOLETE) {
+									isObsolete = true;
+								}
+							}
+						}
+					}
+					
+					if (isCommon == true) {
+						termBankEntry.setPopularity(0);
+						
+					} else if (isObscure == true) {
+						termBankEntry.setPopularity(-2);
+					
+					} else if (isObsolete == true) {
+						termBankEntry.setPopularity(-3);
+					
+					} else if (isArchaism == true) {
+						termBankEntry.setPopularity(-4);
+						
+					} else {
+						
+						if (names == false) {
+							termBankEntry.setPopularity(-1);
+							
+						} else {
+							termBankEntry.setPopularity(-5);						
+						}
+					}					
+				}
 				
-				} else if (isObsolete == true) {
-					termBankEntry.setPopularity(-3);
+				// generowanie sequenceNumber
+				termBankEntry.setSequenceNumber(names == false ? polishJapaneseEntry.getId() : 1000000 + polishJapaneseEntry.getId());
 				
-				} else if (isArchaism == true) {
-					termBankEntry.setPopularity(-4);
+				// generowanie termTag
+				// noop
+				
+				//
+				
+				List<String> translates = polishJapaneseEntry.getTranslates();
+				
+				for (String currentTranslate : translates) {				
+					termBankEntry.addTranslate(currentTranslate);				
+				}
+				
+				if (polishJapaneseEntry.getInfo() != null && polishJapaneseEntry.getInfo().length() > 0) {
+					termBankEntry.addTranslate("Informacja dodatkowa: " + polishJapaneseEntry.getInfo());
+				}
+				*/
+				
+			} else if (jmdictEntry != null) { // nowy sposob generowania
+				
+				termBankEntry = new TermBankEntry();
+				
+				// laczenie kanji, kana i znaczen w pary
+				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(jmdictEntry);
+				
+				// wyszukanie konkretnego znaczenia dla naszeo slowka
+				KanjiKanaPair kanjiKanaPair = Dictionary2HelperCommon.findKanjiKanaPair(kanjiKanaPairList, polishJapaneseEntry);
+
+				// generowanie znaczenia
+				KanjiInfo kanjiInfo = kanjiKanaPair.getKanjiInfo();
+				ReadingInfo readingInfo = kanjiKanaPair.getReadingInfo();
+				
+				if (kanjiInfo.getKanji() != null) {
+					
+					termBankEntry.setKanji(kanjiInfo.getKanji());
+					termBankEntry.setKana(polishJapaneseEntry.getKana());
 					
 				} else {
 					
-					if (names == false) {
-						termBankEntry.setPopularity(-1);
-						
-					} else {
-						termBankEntry.setPopularity(-5);						
-					}
-				}					
+					termBankEntry.setKanji(polishJapaneseEntry.getKana());
+					termBankEntry.setKana("");				
+				}
+				
+				// informacje dodatkowe do kanji
+				List<String> kanjiAdditionalInfoPolishList = Dictionary2Helper.translateToPolishKanjiAdditionalInfoEnum(kanjiInfo.getKanjiAdditionalInfoList());
+
+
+				
 			}
-			
-			// generowanie sequenceNumber
-			termBankEntry.setSequenceNumber(names == false ? polishJapaneseEntry.getId() : 1000000 + polishJapaneseEntry.getId());
-			
-			// generowanie termTag
-			// noop
-			
-			//
-			
-			List<String> translates = polishJapaneseEntry.getTranslates();
-			
-			for (String currentTranslate : translates) {				
-				termBankEntry.addTranslate(currentTranslate);				
-			}
-			
-			if (polishJapaneseEntry.getInfo() != null && polishJapaneseEntry.getInfo().length() > 0) {
-				termBankEntry.addTranslate("Informacja dodatkowa: " + polishJapaneseEntry.getInfo());
-			}
-			
 			
 			//
 			
@@ -342,7 +408,9 @@ public class YomichanGenerator {
 				currentTermBankList = new ArrayList<>();
 			}
 			
-			currentTermBankList.add(termBankEntry);
+			if (termBankEntry != null) {
+				currentTermBankList.add(termBankEntry);
+			}
 			
 			if (currentTermBankList.size() >= 10000) {
 				termBankListList.add(currentTermBankList);
@@ -400,7 +468,7 @@ public class YomichanGenerator {
 		
 		for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {	
 			
-			DefinitionTag tag = dictionaryEntryTypeToDefinitionTagMap.get(dictionaryEntryType);
+			DefinitionTag tag = oldDictionaryEntryTypeToDefinitionTagMap.get(dictionaryEntryType);
 			
 			if (tag != null && tag.getTag().length() > 0) {
 				termBankEntry.addDefinitionTag(tag.getTag());
@@ -422,13 +490,13 @@ public class YomichanGenerator {
 					
 					if (attribute.getAttributeType().isShow() == true) {
 						
-						DefinitionTag tag = attributeTypeToDefinitionTagMap.get(attribute.getAttributeType());
+						DefinitionTag tag = oldDictionaryAttributeTypeToDefinitionTagMap.get(attribute.getAttributeType());
 						
 						if (tag != null && tag.getTag().length() > 0) {
 							termBankEntry.addDefinitionTag(tag.getTag());
 							
 						} else if (tag == null) {				
-							throw new RuntimeException("Unknown value: " + dictionaryEntryTypeToDefinitionTagMap);
+							throw new RuntimeException("Unknown value: " + oldDictionaryEntryTypeToDefinitionTagMap);
 						}
 					}
 				}
@@ -442,7 +510,7 @@ public class YomichanGenerator {
 		
 		Set<String> alreadyUsedTagsName = new TreeSet<>();
 		
-		Iterator<Entry<DictionaryEntryType, DefinitionTag>> dictionaryEntryTypeToDefinitionTagMapIterator = dictionaryEntryTypeToDefinitionTagMap.entrySet().iterator();
+		Iterator<Entry<DictionaryEntryType, DefinitionTag>> dictionaryEntryTypeToDefinitionTagMapIterator = oldDictionaryEntryTypeToDefinitionTagMap.entrySet().iterator();
 		
 		while (dictionaryEntryTypeToDefinitionTagMapIterator.hasNext() == true) {
 			
@@ -471,7 +539,7 @@ public class YomichanGenerator {
 		
 		//
 		
-		Iterator<Entry<AttributeType, DefinitionTag>> attributeTypeToDefinitionTagMapIterator = attributeTypeToDefinitionTagMap.entrySet().iterator();
+		Iterator<Entry<AttributeType, DefinitionTag>> attributeTypeToDefinitionTagMapIterator = oldDictionaryAttributeTypeToDefinitionTagMap.entrySet().iterator();
 		
 		while (attributeTypeToDefinitionTagMapIterator.hasNext() == true) {
 			
