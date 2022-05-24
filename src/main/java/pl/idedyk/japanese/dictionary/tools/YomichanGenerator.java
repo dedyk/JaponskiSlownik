@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
@@ -32,7 +33,10 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKa
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 
 public class YomichanGenerator {
 	
@@ -199,7 +203,8 @@ public class YomichanGenerator {
 				
 		JSONObject indexJSON = new JSONObject();
 
-		indexJSON.put("title", "Mały skromny japoński słownik");
+		int fixme = 1; // test !!!!!!!!!!!
+		indexJSON.put("title", "Mały skromny japoński słownik - test");
 		indexJSON.put("format", 3);
 				
 		indexJSON.put("revision", new SimpleDateFormat("yyyyMMdd").format(new Date()));
@@ -237,14 +242,15 @@ public class YomichanGenerator {
 				}
 			}
 			
-			TermBankEntry termBankEntry = null;
+			List<TermBankEntry> termBankEntryList = null;
 			
 			if (jmdictEntry == null) { // stary sposob generowania
 				
-				int fixme = 1; // !!!!!!!!!!!!!!!!
+				termBankEntryList = new ArrayList<>();
+								
+				TermBankEntry termBankEntry = new TermBankEntry();
 				
-				/*
-				termBankEntry = new TermBankEntry();
+				termBankEntryList.add(termBankEntry);
 				
 				if (polishJapaneseEntry.isKanjiExists() == true) {
 					
@@ -368,12 +374,15 @@ public class YomichanGenerator {
 				if (polishJapaneseEntry.getInfo() != null && polishJapaneseEntry.getInfo().length() > 0) {
 					termBankEntry.addTranslate("Informacja dodatkowa: " + polishJapaneseEntry.getInfo());
 				}
-				*/
+				
+				// !!!!!!!!!!!!!!!!!!
+				int fixme = 1;
+				termBankEntryList.clear();
 				
 			} else if (jmdictEntry != null) { // nowy sposob generowania
 				
-				termBankEntry = new TermBankEntry();
-				
+				termBankEntryList = new ArrayList<>();
+								
 				// laczenie kanji, kana i znaczen w pary
 				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(jmdictEntry);
 				
@@ -383,22 +392,49 @@ public class YomichanGenerator {
 				// generowanie znaczenia
 				KanjiInfo kanjiInfo = kanjiKanaPair.getKanjiInfo();
 				ReadingInfo readingInfo = kanjiKanaPair.getReadingInfo();
+				List<Sense> senseList = kanjiKanaPair.getSenseList();
 				
-				if (kanjiInfo.getKanji() != null) {
+				// chodzimy po wszystkich znaczeniach
+				for (Sense currentSense : senseList) {
 					
-					termBankEntry.setKanji(kanjiInfo.getKanji());
-					termBankEntry.setKana(polishJapaneseEntry.getKana());
+					// tworzymy nowy wpis
+					TermBankEntry termBankEntry = new TermBankEntry();
 					
-				} else {
+					termBankEntryList.add(termBankEntry);
 					
-					termBankEntry.setKanji(polishJapaneseEntry.getKana());
-					termBankEntry.setKana("");				
+					if (kanjiInfo != null && kanjiInfo.getKanji() != null) {
+						
+						termBankEntry.setKanji(kanjiInfo.getKanji());
+						termBankEntry.setKana(readingInfo.getKana().getValue());
+						
+					} else {
+						
+						termBankEntry.setKanji(readingInfo.getKana().getValue());
+						termBankEntry.setKana("");				
+					}
+					
+					// generowanie definitionTag
+					generateDefinitionTag(kanjiInfo, readingInfo, currentSense, termBankEntry);
+					
+					// generowanie sequenceNumber
+					termBankEntry.setSequenceNumber(jmdictEntry.getEntryId());
+					
+					// generowanie termTag
+					// noop
+
+					
+					////////// !!!!!!!!!!!!!!!!!!!!
+					
+					// informacje dodatkowe do kanji
+					if (kanjiInfo != null) {
+						int fixme = 1; // !!!!!!!!!!!1
+						
+						List<String> kanjiAdditionalInfoPolishList = Dictionary2Helper.translateToPolishKanjiAdditionalInfoEnum(kanjiInfo.getKanjiAdditionalInfoList());
+						List<RelativePriorityEnum> relativePriorityList = kanjiInfo.getRelativePriorityList();
+						
+						
+					}
 				}
-				
-				// informacje dodatkowe do kanji
-				List<String> kanjiAdditionalInfoPolishList = Dictionary2Helper.translateToPolishKanjiAdditionalInfoEnum(kanjiInfo.getKanjiAdditionalInfoList());
-
-
 				
 			}
 			
@@ -408,8 +444,8 @@ public class YomichanGenerator {
 				currentTermBankList = new ArrayList<>();
 			}
 			
-			if (termBankEntry != null) {
-				currentTermBankList.add(termBankEntry);
+			if (termBankEntryList != null) {
+				currentTermBankList.addAll(termBankEntryList);
 			}
 			
 			if (currentTermBankList.size() >= 10000) {
@@ -427,6 +463,7 @@ public class YomichanGenerator {
 		}		
 	}
 	
+
 	private static void saveTermBank(String outputDir, List<List<TermBankEntry>> termBankListList) {
 		
 		int bankNo = 1;
@@ -503,6 +540,22 @@ public class YomichanGenerator {
 			}				
 		}
 	}
+	
+	private static void generateDefinitionTag(KanjiInfo kanjiInfo, ReadingInfo readingInfo, Sense sense, TermBankEntry termBankEntry) {
+		
+		// pobieranie czesci mowy
+		List<PartOfSpeechEnum> partOfSpeechList = sense.getPartOfSpeechList();
+		
+		// przetlumaczone czesci mowy
+		List<String> polishPartOfSpeechEnumPolishList = Dictionary2Helper.translateToPolishPartOfSpeechEnum(partOfSpeechList);
+		
+		// dodanie czesci mowy
+		int fixme = 1; // !!!!!!!!!!!!!!! sprawdzic, czy to bedzie dobrze
+		
+		for (String currentPolishPartOfSpeech : polishPartOfSpeechEnumPolishList) {
+			termBankEntry.addDefinitionTag(currentPolishPartOfSpeech);
+		}
+	}
 
 	private static void generateAndSaveTagBank(String outputDir) {
 				
@@ -510,76 +563,100 @@ public class YomichanGenerator {
 		
 		Set<String> alreadyUsedTagsName = new TreeSet<>();
 		
-		Iterator<Entry<DictionaryEntryType, DefinitionTag>> dictionaryEntryTypeToDefinitionTagMapIterator = oldDictionaryEntryTypeToDefinitionTagMap.entrySet().iterator();
-		
-		while (dictionaryEntryTypeToDefinitionTagMapIterator.hasNext() == true) {
-			
-			Entry<DictionaryEntryType, DefinitionTag> dictionaryEntryTypeToDefinitionTagMapEntry = dictionaryEntryTypeToDefinitionTagMapIterator.next();
-			
-			//
-			
-			if (dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag().length() == 0) {
-				continue;
-			}
-			
-			if (alreadyUsedTagsName.contains(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag()) == true) {				
-				throw new RuntimeException(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag());
+		// generowanie dla starej postaci slownika
+		{
+			Iterator<Entry<DictionaryEntryType, DefinitionTag>> dictionaryEntryTypeToDefinitionTagMapIterator = oldDictionaryEntryTypeToDefinitionTagMap.entrySet().iterator();
+
+			while (dictionaryEntryTypeToDefinitionTagMapIterator.hasNext() == true) {
+
+				Entry<DictionaryEntryType, DefinitionTag> dictionaryEntryTypeToDefinitionTagMapEntry = dictionaryEntryTypeToDefinitionTagMapIterator.next();
+
+				if (dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag().length() == 0) {
+					continue;
+				}
+
+				if (alreadyUsedTagsName.contains(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag()) == true) {				
+					throw new RuntimeException(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag());
+				}
+
+				alreadyUsedTagsName.add(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag());
+
+				JSONArray tagBankEntryJSONArray = createTagBankJSONArray(dictionaryEntryTypeToDefinitionTagMapEntry.getValue(), dictionaryEntryTypeToDefinitionTagMapEntry.getKey().getName());
+
+				tagBankJSONArray.put(tagBankEntryJSONArray);				
 			}
 
-			alreadyUsedTagsName.add(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag());
-			
 			//
-			
-			JSONArray tagBankEntryJSONArray = createTagBankJSONArray(dictionaryEntryTypeToDefinitionTagMapEntry.getValue(), dictionaryEntryTypeToDefinitionTagMapEntry.getKey().getName());
-						
-			//
-			
-			tagBankJSONArray.put(tagBankEntryJSONArray);				
+
+			Iterator<Entry<AttributeType, DefinitionTag>> attributeTypeToDefinitionTagMapIterator = oldDictionaryAttributeTypeToDefinitionTagMap.entrySet().iterator();
+
+			while (attributeTypeToDefinitionTagMapIterator.hasNext() == true) {
+
+				Entry<AttributeType, DefinitionTag> attributeTypeToDefinitionTagMapEntry = attributeTypeToDefinitionTagMapIterator.next();
+
+				if (attributeTypeToDefinitionTagMapEntry.getValue().getTag().length() == 0) {
+					continue;
+				}
+
+				if (alreadyUsedTagsName.contains(attributeTypeToDefinitionTagMapEntry.getValue().getTag()) == true) {				
+					throw new RuntimeException(attributeTypeToDefinitionTagMapEntry.getValue().getTag());
+				}
+
+				alreadyUsedTagsName.add(attributeTypeToDefinitionTagMapEntry.getValue().getTag());
+
+				JSONArray tagBankEntryJSONArray = createTagBankJSONArray(attributeTypeToDefinitionTagMapEntry.getValue(), attributeTypeToDefinitionTagMapEntry.getKey().getName());
+
+				tagBankJSONArray.put(tagBankEntryJSONArray);				
+			}	
 		}
 		
-		//
-		
-		Iterator<Entry<AttributeType, DefinitionTag>> attributeTypeToDefinitionTagMapIterator = oldDictionaryAttributeTypeToDefinitionTagMap.entrySet().iterator();
-		
-		while (attributeTypeToDefinitionTagMapIterator.hasNext() == true) {
+		// generowanie dla nowej postaci slownika
+		{
+			PartOfSpeechEnum[] partOfSpeechValues = PartOfSpeechEnum.values();
 			
-			Entry<AttributeType, DefinitionTag> attributeTypeToDefinitionTagMapEntry = attributeTypeToDefinitionTagMapIterator.next();
-			
-			//
-			
-			if (attributeTypeToDefinitionTagMapEntry.getValue().getTag().length() == 0) {
-				continue;
-			}
-			
-			if (alreadyUsedTagsName.contains(attributeTypeToDefinitionTagMapEntry.getValue().getTag()) == true) {				
-				throw new RuntimeException(attributeTypeToDefinitionTagMapEntry.getValue().getTag());
-			}
+			for (int idx = 0; idx < partOfSpeechValues.length; ++idx) {
+				
+				PartOfSpeechEnum partOfSpeechEnum = partOfSpeechValues[idx];
+				
+				String partOfSpeechEnumInPolish;
+				
+				// przetlumaczymy czesc mowy
+				try {
+					partOfSpeechEnumInPolish = Dictionary2Helper.translateToPolishPartOfSpeechEnum(Arrays.asList(partOfSpeechEnum)).get(0);
+					
+				} catch (Exception e) {
+					// jezeli wystapil wyjatek oznacza to, ze dana czesc mowy nie ma polskiego znaczenia
+					// ale oznacza tez, ze na razie nie ma zadnego slowka, ktore by mialo ta czesc mowy
+					// inaczej nie mozna byloby wygenerowac starej postaci slownika
+					// i dlatego ignorujemy ten wyjatek
+					continue;					
+				}
+				
+				// dodajemy do listy tagow
+				JSONArray tagBankEntryJSONArray = createTagBankJSONArray(partOfSpeechEnumInPolish, 1000 + idx, partOfSpeechEnumInPolish);
 
-			alreadyUsedTagsName.add(attributeTypeToDefinitionTagMapEntry.getValue().getTag());
-			
-			//
-			
-			JSONArray tagBankEntryJSONArray = createTagBankJSONArray(attributeTypeToDefinitionTagMapEntry.getValue(), attributeTypeToDefinitionTagMapEntry.getKey().getName());
-						
-			//
-			
-			tagBankJSONArray.put(tagBankEntryJSONArray);				
-		}		
+				tagBankJSONArray.put(tagBankEntryJSONArray);				
+			}
+		}				
 		
 		writeJSONArrayToFile(new File(outputDir, "tag_bank_1.json"), tagBankJSONArray);
 	}
-	
-	private static JSONArray createTagBankJSONArray(DefinitionTag tag, String description) {
+
+	private static JSONArray createTagBankJSONArray(String tag, int sortingOrder, String description) {
 		
 		JSONArray tagBankEntryJSONArray = new JSONArray();
 		
-		tagBankEntryJSONArray.put(tag.getTag());
+		tagBankEntryJSONArray.put(tag);
 		tagBankEntryJSONArray.put("");
-		tagBankEntryJSONArray.put(tag.getSortingOrder());
+		tagBankEntryJSONArray.put(sortingOrder);
 		tagBankEntryJSONArray.put(description);
 		tagBankEntryJSONArray.put(0);
 		
 		return tagBankEntryJSONArray;
+	}
+	
+	private static JSONArray createTagBankJSONArray(DefinitionTag tag, String description) {
+		return createTagBankJSONArray(tag.getTag(), tag.getSortingOrder(), description);
 	}
 
 	private static void writeJSONArrayToFile(File outputFile, JSONArray jsonArray) {
