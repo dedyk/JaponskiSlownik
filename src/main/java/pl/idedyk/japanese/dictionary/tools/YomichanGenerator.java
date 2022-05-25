@@ -40,19 +40,41 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 
 public class YomichanGenerator {
 	
+	private static enum DefinitionTagCommonDef {
+
+		noun(new DefinitionTag("rz", 0)),
+		
+		u_verb(new DefinitionTag("u-cz", 0)),		
+		ru_verb(new DefinitionTag("ru-cz", 0)),		
+		ir_verb(new DefinitionTag("ir-cz", 0)),
+		
+		i_adjective(new DefinitionTag("i-prz", 0)),		
+		na_adjective(new DefinitionTag("na-prz", 0)),
+		
+		;
+		
+		private DefinitionTag definitionTag;
+		
+		DefinitionTagCommonDef(DefinitionTag definitionTag) {
+			this.definitionTag = definitionTag;
+		}		
+	}
+	
 	private static Map<DictionaryEntryType, DefinitionTag> oldDictionaryEntryTypeToDefinitionTagMap = new TreeMap<DictionaryEntryType, DefinitionTag>() {
 		
 		private static final long serialVersionUID = 1L;
 
 		{
-			put(DictionaryEntryType.WORD_NOUN, new DefinitionTag("rz", 0));	
+			int fixme = 1; // !!!!!!!!!!!!!1 dokonczyc
 			
-			put(DictionaryEntryType.WORD_VERB_U, new DefinitionTag("u-cz", 0));
-			put(DictionaryEntryType.WORD_VERB_RU, new DefinitionTag("ru-cz", 0));
-			put(DictionaryEntryType.WORD_VERB_IRREGULAR, new DefinitionTag("ir-cz", 0));
+			put(DictionaryEntryType.WORD_NOUN, DefinitionTagCommonDef.noun.definitionTag);	
+			
+			put(DictionaryEntryType.WORD_VERB_U, DefinitionTagCommonDef.u_verb.definitionTag);
+			put(DictionaryEntryType.WORD_VERB_RU, DefinitionTagCommonDef.ru_verb.definitionTag);
+			put(DictionaryEntryType.WORD_VERB_IRREGULAR, DefinitionTagCommonDef.ir_verb.definitionTag);
 
-			put(DictionaryEntryType.WORD_ADJECTIVE_I, new DefinitionTag("i-prz", 0));
-			put(DictionaryEntryType.WORD_ADJECTIVE_NA, new DefinitionTag("na-prz", 0));
+			put(DictionaryEntryType.WORD_ADJECTIVE_I, DefinitionTagCommonDef.i_adjective.definitionTag);
+			put(DictionaryEntryType.WORD_ADJECTIVE_NA, DefinitionTagCommonDef.na_adjective.definitionTag);
 			
 			put(DictionaryEntryType.WORD_TEMPORAL_NOUN, new DefinitionTag("rz-cza", 1));
 			put(DictionaryEntryType.WORD_ADJECTIVE_NO, new DefinitionTag("rz-no", 1));
@@ -157,6 +179,8 @@ public class YomichanGenerator {
 		private static final long serialVersionUID = 1L;
 
 		{
+			int fixme = 1; // !!!!!!!!!!!!!1 dokonczyc
+			
 			put(AttributeType.SURU_VERB, new DefinitionTag("suru", 10));
 			
 			put(AttributeType.COMMON_WORD, new DefinitionTag("pow-uz", 11));
@@ -416,6 +440,37 @@ public class YomichanGenerator {
 					// generowanie definitionTag
 					generateDefinitionTag(kanjiInfo, readingInfo, currentSense, termBankEntry);
 					
+					// generowanie inflectedTags
+					{						
+						List<PartOfSpeechEnum> partOfSpeechList = currentSense.getPartOfSpeechList();
+						
+						for (PartOfSpeechEnum partOfSpeechEnum : partOfSpeechList) {
+							
+							if (Arrays.asList(PartOfSpeechEnum.ADJECTIVE_KEIYOUSHI, PartOfSpeechEnum.ADJECTIVE_KEIYOUSHI_YOI_II_CLASS).contains(partOfSpeechEnum) == true) {
+								termBankEntry.addInflectedTags("adj-i");
+							}
+
+							if (Arrays.asList(PartOfSpeechEnum.ICHIDAN_VERB, PartOfSpeechEnum.ICHIDAN_VERB_KURERU_SPECIAL_CLASS).contains(partOfSpeechEnum) == true) {
+								termBankEntry.addInflectedTags("v1");
+							}
+							
+							if (partOfSpeechEnum.name().startsWith("GODAN_VERB") == true && partOfSpeechEnum != PartOfSpeechEnum.GODAN_VERB_URU_OLD_CLASS_VERB_OLD_FORM_OF_ERU) {
+								termBankEntry.addInflectedTags("v5");
+							}
+							
+							if (partOfSpeechEnum == PartOfSpeechEnum.KURU_VERB_SPECIAL_CLASS || readingInfo.getKana().getValue().endsWith("くる") == true) {
+								termBankEntry.addInflectedTags("vk");
+							}
+							
+							if (Arrays.asList(PartOfSpeechEnum.SURU_VERB_SPECIAL_CLASS, PartOfSpeechEnum.NOUN_OR_PARTICIPLE_WHICH_TAKES_THE_AUX_VERB_SURU, PartOfSpeechEnum.SURU_VERB_INCLUDED).contains(partOfSpeechEnum) == true || 
+									readingInfo.getKana().getValue().endsWith("する") == true) {
+								
+								termBankEntry.addInflectedTags("vs");
+							}
+						}
+					}
+
+					
 					// generowanie sequenceNumber
 					termBankEntry.setSequenceNumber(jmdictEntry.getEntryId());
 					
@@ -543,6 +598,8 @@ public class YomichanGenerator {
 	
 	private static void generateDefinitionTag(KanjiInfo kanjiInfo, ReadingInfo readingInfo, Sense sense, TermBankEntry termBankEntry) {
 		
+		int fixme2 = 1; // trzeba to poprawic, uzywajac DefinitionTagCommonDef !!!!!!!!!!!!!!!
+		
 		// pobieranie czesci mowy
 		List<PartOfSpeechEnum> partOfSpeechList = sense.getPartOfSpeechList();
 		
@@ -562,6 +619,10 @@ public class YomichanGenerator {
 		JSONArray tagBankJSONArray = new JSONArray();
 		
 		Set<String> alreadyUsedTagsName = new TreeSet<>();
+		
+		int fixme = 1; // !!!!!!!!!!!!
+		// chodzenie po DefinitionTagCommonDef,
+		// ponizszy kod zakomentowac
 		
 		// generowanie dla starej postaci slownika
 		{
@@ -610,7 +671,8 @@ public class YomichanGenerator {
 			}	
 		}
 		
-		// generowanie dla nowej postaci slownika
+		// generowanie dla nowej postaci slownika - to jest zly kod
+		/*
 		{
 			PartOfSpeechEnum[] partOfSpeechValues = PartOfSpeechEnum.values();
 			
@@ -637,7 +699,8 @@ public class YomichanGenerator {
 
 				tagBankJSONArray.put(tagBankEntryJSONArray);				
 			}
-		}				
+		}
+		*/				
 		
 		writeJSONArrayToFile(new File(outputDir, "tag_bank_1.json"), tagBankJSONArray);
 	}
@@ -747,7 +810,9 @@ public class YomichanGenerator {
 				inflectedTags = new ArrayList<>();
 			}
 			
-			inflectedTags.add(tag);			
+			if (inflectedTags.contains(tag) == false) {
+				inflectedTags.add(tag);
+			}
 		}
 
 		public String getInflectedTagsAsString() {
