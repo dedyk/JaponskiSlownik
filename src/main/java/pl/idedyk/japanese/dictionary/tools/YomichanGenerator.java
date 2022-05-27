@@ -49,14 +49,18 @@ public class YomichanGenerator {
 		nounAdverbial(new DefinitionTag("rz-prz", 6)),
 		preNounAdverbial(new DefinitionTag("pre-rz-prz", 6)),
 		properNoun(new DefinitionTag("naz-wl", 10)),
+		nounSuru(new DefinitionTag("suru", 10)),
 		
-		u_verb(new DefinitionTag("u-cz", 0)),		
+		u_verbU(new DefinitionTag("u-cz", 0)),		
 		ru_verb(new DefinitionTag("ru-cz", 0)),		
 		ir_verb(new DefinitionTag("ir-cz", 0)),
 		
 		aux_verb(new DefinitionTag("cz-pom", 8)),
 		zuru_verb(new DefinitionTag("zur-cz", 8)),						
 		nidan_verb(new DefinitionTag("nid-cz", 8)),
+		
+		verbTransitivity(new DefinitionTag("cz-prz", 12)),
+		verbIntransitivity(new DefinitionTag("cz-nprz", 12)),
 		
 		i_adjective(new DefinitionTag("i-prz", 0)),	
 		i_adjectiveAux(new DefinitionTag("i-przy-pom", 5)),
@@ -118,7 +122,21 @@ public class YomichanGenerator {
 		other(new DefinitionTag("inny", 29)),
 		religion(new DefinitionTag("reli", 30)),
 		service(new DefinitionTag("usłu", 31)),
-		group(new DefinitionTag("grup", 32)),	
+		group(new DefinitionTag("grup", 32)),
+		
+		kanjiAlone(new DefinitionTag("kanj-sam", 12)),
+		kanaAlone(new DefinitionTag("kana-sam", 12)),
+		
+		commonWord(new DefinitionTag("pow-uz", 11)),
+		ateji(new DefinitionTag("ate", 13)),
+		onamatopoeicMimeticWord(new DefinitionTag("ono", 14)),
+		
+		verbKeigoHigh(new DefinitionTag("hon-wyw", 15)),
+		verbKeigoLow(new DefinitionTag("hon-unż", 15)),
+		
+		obscure(new DefinitionTag("mał-zna", 16)),
+		archaism(new DefinitionTag("arch", 17)),
+		obsolete( new DefinitionTag("przes", 17)),
 		
 		empty(new DefinitionTag("", 999)),
 		unknown(new DefinitionTag("", 999)),
@@ -143,7 +161,7 @@ public class YomichanGenerator {
 		{			
 			put(DictionaryEntryType.WORD_NOUN, DefinitionTagCommonDef.noun);	
 			
-			put(DictionaryEntryType.WORD_VERB_U, DefinitionTagCommonDef.u_verb);
+			put(DictionaryEntryType.WORD_VERB_U, DefinitionTagCommonDef.u_verbU);
 			put(DictionaryEntryType.WORD_VERB_RU, DefinitionTagCommonDef.ru_verb);
 			put(DictionaryEntryType.WORD_VERB_IRREGULAR, DefinitionTagCommonDef.ir_verb);
 
@@ -228,33 +246,31 @@ public class YomichanGenerator {
 		}
 	};
 	
-	private static Map<AttributeType, DefinitionTag> oldDictionaryAttributeTypeToDefinitionTagMap = new TreeMap<AttributeType, DefinitionTag>() {		
+	private static Map<AttributeType, DefinitionTagCommonDef> oldDictionaryAttributeTypeToDefinitionTagMap = new TreeMap<AttributeType, DefinitionTagCommonDef>() {		
 		private static final long serialVersionUID = 1L;
 
-		{
-			int fixme = 1; // !!!!!!!!!!!!!1 dokonczyc
+		{			
+			put(AttributeType.SURU_VERB, DefinitionTagCommonDef.nounSuru);
 			
-			put(AttributeType.SURU_VERB, new DefinitionTag("suru", 10));
+			put(AttributeType.COMMON_WORD, DefinitionTagCommonDef.commonWord);
 			
-			put(AttributeType.COMMON_WORD, new DefinitionTag("pow-uz", 11));
-			
-			put(AttributeType.VERB_TRANSITIVITY, new DefinitionTag("cz-prz", 12));
-			put(AttributeType.VERB_INTRANSITIVITY, new DefinitionTag("cz-nprz", 12));
+			put(AttributeType.VERB_TRANSITIVITY, DefinitionTagCommonDef.verbTransitivity);
+			put(AttributeType.VERB_INTRANSITIVITY, DefinitionTagCommonDef.verbIntransitivity);
 
-			put(AttributeType.KANJI_ALONE, new DefinitionTag("kanj-sam", 12));
-			put(AttributeType.KANA_ALONE, new DefinitionTag("kana-sam", 12));
+			put(AttributeType.KANJI_ALONE, DefinitionTagCommonDef.kanjiAlone);
+			put(AttributeType.KANA_ALONE, DefinitionTagCommonDef.kanaAlone);
 
-			put(AttributeType.ATEJI, new DefinitionTag("ate", 13));
+			put(AttributeType.ATEJI, DefinitionTagCommonDef.ateji);
 			
-			put(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD, new DefinitionTag("ono", 14));
+			put(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD, DefinitionTagCommonDef.onamatopoeicMimeticWord);
 			
-			put(AttributeType.VERB_KEIGO_HIGH, new DefinitionTag("hon-wyw", 15));
-			put(AttributeType.VERB_KEIGO_LOW, new DefinitionTag("hon-unż", 15));
+			put(AttributeType.VERB_KEIGO_HIGH, DefinitionTagCommonDef.verbKeigoHigh);
+			put(AttributeType.VERB_KEIGO_LOW, DefinitionTagCommonDef.verbKeigoLow);
 			
-			put(AttributeType.OBSCURE, new DefinitionTag("mał-zna", 16));
+			put(AttributeType.OBSCURE, DefinitionTagCommonDef.obscure);
 			
-			put(AttributeType.ARCHAISM, new DefinitionTag("arch", 17));
-			put(AttributeType.OBSOLETE, new DefinitionTag("przes", 17));
+			put(AttributeType.ARCHAISM, DefinitionTagCommonDef.archaism);
+			put(AttributeType.OBSOLETE, DefinitionTagCommonDef.obsolete);
 		}
 	};
 	
@@ -635,10 +651,10 @@ public class YomichanGenerator {
 					
 					if (attribute.getAttributeType().isShow() == true) {
 						
-						DefinitionTag tag = oldDictionaryAttributeTypeToDefinitionTagMap.get(attribute.getAttributeType());
+						DefinitionTagCommonDef tag = oldDictionaryAttributeTypeToDefinitionTagMap.get(attribute.getAttributeType());
 						
-						if (tag != null && tag.getTag().length() > 0) {
-							termBankEntry.addDefinitionTag(tag.getTag());
+						if (tag != null && tag.getDefinitionTag().getTag().length() > 0) {
+							termBankEntry.addDefinitionTag(tag.getDefinitionTag().getTag());
 							
 						} else if (tag == null) {				
 							throw new RuntimeException("Unknown value: " + oldDictionaryEntryTypeToDefinitionTagMap);
@@ -702,23 +718,23 @@ public class YomichanGenerator {
 
 			//
 
-			Iterator<Entry<AttributeType, DefinitionTag>> attributeTypeToDefinitionTagMapIterator = oldDictionaryAttributeTypeToDefinitionTagMap.entrySet().iterator();
+			Iterator<Entry<AttributeType, DefinitionTagCommonDef>> attributeTypeToDefinitionTagMapIterator = oldDictionaryAttributeTypeToDefinitionTagMap.entrySet().iterator();
 
 			while (attributeTypeToDefinitionTagMapIterator.hasNext() == true) {
 
-				Entry<AttributeType, DefinitionTag> attributeTypeToDefinitionTagMapEntry = attributeTypeToDefinitionTagMapIterator.next();
+				Entry<AttributeType, DefinitionTagCommonDef> attributeTypeToDefinitionTagMapEntry = attributeTypeToDefinitionTagMapIterator.next();
 
-				if (attributeTypeToDefinitionTagMapEntry.getValue().getTag().length() == 0) {
+				if (attributeTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag().length() == 0) {
 					continue;
 				}
 
-				if (alreadyUsedTagsName.contains(attributeTypeToDefinitionTagMapEntry.getValue().getTag()) == true) {				
-					throw new RuntimeException(attributeTypeToDefinitionTagMapEntry.getValue().getTag());
+				if (alreadyUsedTagsName.contains(attributeTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag()) == true) {				
+					throw new RuntimeException(attributeTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag());
 				}
 
-				alreadyUsedTagsName.add(attributeTypeToDefinitionTagMapEntry.getValue().getTag());
+				alreadyUsedTagsName.add(attributeTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag());
 
-				JSONArray tagBankEntryJSONArray = createTagBankJSONArray(attributeTypeToDefinitionTagMapEntry.getValue(), attributeTypeToDefinitionTagMapEntry.getKey().getName());
+				JSONArray tagBankEntryJSONArray = createTagBankJSONArray(attributeTypeToDefinitionTagMapEntry.getValue().getDefinitionTag(), attributeTypeToDefinitionTagMapEntry.getKey().getName());
 
 				tagBankJSONArray.put(tagBankEntryJSONArray);				
 			}	
