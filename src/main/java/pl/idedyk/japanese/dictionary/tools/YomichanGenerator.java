@@ -43,13 +43,85 @@ public class YomichanGenerator {
 	private static enum DefinitionTagCommonDef {
 
 		noun(new DefinitionTag("rz", 0)),
+		nounTemporal(new DefinitionTag("rz-cza", 1)),
+		nounPrefix(new DefinitionTag("rz-pre", 3)),
+		nounSuffix(new DefinitionTag("rz-suf", 3)),
+		nounAdverbial(new DefinitionTag("rz-prz", 6)),
+		preNounAdverbial(new DefinitionTag("pre-rz-prz", 6)),
+		properNoun(new DefinitionTag("naz-wl", 10)),
 		
 		u_verb(new DefinitionTag("u-cz", 0)),		
 		ru_verb(new DefinitionTag("ru-cz", 0)),		
 		ir_verb(new DefinitionTag("ir-cz", 0)),
 		
-		i_adjective(new DefinitionTag("i-prz", 0)),		
+		aux_verb(new DefinitionTag("cz-pom", 8)),
+		zuru_verb(new DefinitionTag("zur-cz", 8)),						
+		nidan_verb(new DefinitionTag("nid-cz", 8)),
+		
+		i_adjective(new DefinitionTag("i-prz", 0)),	
+		i_adjectiveAux(new DefinitionTag("i-przy-pom", 5)),
 		na_adjective(new DefinitionTag("na-prz", 0)),
+		no_adjective(new DefinitionTag("rz-no", 1)),
+		f_adjective(new DefinitionTag("rz-pr", 1)),
+		
+		ku_adjective(new DefinitionTag("ku-prz", 7)),
+		taru_adjective(new DefinitionTag("tar-prz", 7)),
+		nari_adjective(new DefinitionTag("nar-prz", 7)),
+		shiku_adjective(new DefinitionTag("shi-prz", 7)),
+		
+		expression(new DefinitionTag("wyr", 1)),
+		
+		conjunction(new DefinitionTag("spó", 2)),
+		
+		interjection(new DefinitionTag("wyk", 2)),
+		
+		particule(new DefinitionTag("par", 2)),
+		
+		pronoun(new DefinitionTag("zai", 2)),
+		
+		adverb(new DefinitionTag("przy", 2)),
+		adverb_to(new DefinitionTag("przy-to", 2)),
+		
+		prefix(new DefinitionTag("pre", 3)),
+		suffix(new DefinitionTag("suf", 3)),
+		
+		number(new DefinitionTag("lic", 4)),
+		counter(new DefinitionTag("kla", 4)),
+		
+		aux(new DefinitionTag("aux", 6)),
+		
+		copula(new DefinitionTag("kop", 9)),
+		copula_da(new DefinitionTag("kop_da", 9)),
+		
+		name(new DefinitionTag("im", 10)),
+		
+		maleName(new DefinitionTag("me-im", 11)),
+		femaleName(new DefinitionTag("rz-im", 11)),
+		surnameName(new DefinitionTag("nazw", 12)),
+
+		person(new DefinitionTag("oso", 13)),
+		work(new DefinitionTag("dzie", 14)),
+		place(new DefinitionTag("miej", 15)),
+		stationName(new DefinitionTag("sta", 16)),
+		companyName(new DefinitionTag("fir", 17)),
+		organizationName(new DefinitionTag("org", 18)),
+		productName(new DefinitionTag("prod", 19)),
+		unclassName(new DefinitionTag("nies", 20)),
+		character(new DefinitionTag("post", 21)),
+		creature(new DefinitionTag("stwo", 22)),
+		deity(new DefinitionTag("bóst", 23)),
+		event(new DefinitionTag("wydarz", 24)),
+		fict(new DefinitionTag("fikc", 25)),
+		legend(new DefinitionTag("lege", 26)),
+		mythology(new DefinitionTag("mito", 27)),
+		object(new DefinitionTag("obie", 28)),
+		other(new DefinitionTag("inny", 29)),
+		religion(new DefinitionTag("reli", 30)),
+		service(new DefinitionTag("usłu", 31)),
+		group(new DefinitionTag("grup", 32)),	
+		
+		empty(new DefinitionTag("", 999)),
+		unknown(new DefinitionTag("", 999)),
 		
 		;
 		
@@ -57,121 +129,102 @@ public class YomichanGenerator {
 		
 		DefinitionTagCommonDef(DefinitionTag definitionTag) {
 			this.definitionTag = definitionTag;
-		}		
+		}
+
+		public DefinitionTag getDefinitionTag() {
+			return definitionTag;
+		}
 	}
 	
-	private static Map<DictionaryEntryType, DefinitionTag> oldDictionaryEntryTypeToDefinitionTagMap = new TreeMap<DictionaryEntryType, DefinitionTag>() {
+	private static Map<DictionaryEntryType, DefinitionTagCommonDef> oldDictionaryEntryTypeToDefinitionTagMap = new TreeMap<DictionaryEntryType, DefinitionTagCommonDef>() {
 		
 		private static final long serialVersionUID = 1L;
 
-		{
-			int fixme = 1; // !!!!!!!!!!!!!1 dokonczyc
+		{			
+			put(DictionaryEntryType.WORD_NOUN, DefinitionTagCommonDef.noun);	
 			
-			put(DictionaryEntryType.WORD_NOUN, DefinitionTagCommonDef.noun.definitionTag);	
-			
-			put(DictionaryEntryType.WORD_VERB_U, DefinitionTagCommonDef.u_verb.definitionTag);
-			put(DictionaryEntryType.WORD_VERB_RU, DefinitionTagCommonDef.ru_verb.definitionTag);
-			put(DictionaryEntryType.WORD_VERB_IRREGULAR, DefinitionTagCommonDef.ir_verb.definitionTag);
+			put(DictionaryEntryType.WORD_VERB_U, DefinitionTagCommonDef.u_verb);
+			put(DictionaryEntryType.WORD_VERB_RU, DefinitionTagCommonDef.ru_verb);
+			put(DictionaryEntryType.WORD_VERB_IRREGULAR, DefinitionTagCommonDef.ir_verb);
 
-			put(DictionaryEntryType.WORD_ADJECTIVE_I, DefinitionTagCommonDef.i_adjective.definitionTag);
-			put(DictionaryEntryType.WORD_ADJECTIVE_NA, DefinitionTagCommonDef.na_adjective.definitionTag);
+			put(DictionaryEntryType.WORD_ADJECTIVE_I, DefinitionTagCommonDef.i_adjective);
+			put(DictionaryEntryType.WORD_ADJECTIVE_NA, DefinitionTagCommonDef.na_adjective);
 			
-			put(DictionaryEntryType.WORD_TEMPORAL_NOUN, new DefinitionTag("rz-cza", 1));
-			put(DictionaryEntryType.WORD_ADJECTIVE_NO, new DefinitionTag("rz-no", 1));
-			put(DictionaryEntryType.WORD_ADJECTIVE_F, new DefinitionTag("rz-pr", 1));
+			put(DictionaryEntryType.WORD_TEMPORAL_NOUN, DefinitionTagCommonDef.nounTemporal);
+			put(DictionaryEntryType.WORD_ADJECTIVE_NO, DefinitionTagCommonDef.no_adjective);
+			put(DictionaryEntryType.WORD_ADJECTIVE_F, DefinitionTagCommonDef.f_adjective);
 
-			put(DictionaryEntryType.WORD_EXPRESSION, new DefinitionTag("wyr", 1));
+			put(DictionaryEntryType.WORD_EXPRESSION, DefinitionTagCommonDef.expression);
 			
-			put(DictionaryEntryType.WORD_CONJUNCTION, new DefinitionTag("spó", 2));			
-			put(DictionaryEntryType.WORD_INTERJECTION, new DefinitionTag("wyk", 2));
+			put(DictionaryEntryType.WORD_CONJUNCTION, DefinitionTagCommonDef.conjunction);			
+			put(DictionaryEntryType.WORD_INTERJECTION, DefinitionTagCommonDef.interjection);
 			
-			put(DictionaryEntryType.WORD_PARTICULE, new DefinitionTag("par", 2));
+			put(DictionaryEntryType.WORD_PARTICULE,DefinitionTagCommonDef.particule);
 			
-			put(DictionaryEntryType.WORD_PRONOUN, new DefinitionTag("zai", 2));
+			put(DictionaryEntryType.WORD_PRONOUN, DefinitionTagCommonDef.pronoun);
 			
-			put(DictionaryEntryType.WORD_ADVERB, new DefinitionTag("przy", 2));
-			put(DictionaryEntryType.WORD_ADVERB_TO, new DefinitionTag("przy-to", 2));
+			put(DictionaryEntryType.WORD_ADVERB, DefinitionTagCommonDef.adverb);
+			put(DictionaryEntryType.WORD_ADVERB_TO, DefinitionTagCommonDef.adverb_to);
 
-			put(DictionaryEntryType.WORD_NOUN_SUFFIX, new DefinitionTag("rz-suf", 3));
-			put(DictionaryEntryType.WORD_NOUN_PREFIX, new DefinitionTag("rz-pre", 3));
+			put(DictionaryEntryType.WORD_NOUN_PREFIX, DefinitionTagCommonDef.nounPrefix);
+			put(DictionaryEntryType.WORD_NOUN_SUFFIX, DefinitionTagCommonDef.nounSuffix);			
 			
-			put(DictionaryEntryType.WORD_PREFIX, new DefinitionTag("pre", 3));
-			put(DictionaryEntryType.WORD_SUFFIX, new DefinitionTag("suf", 3));
+			put(DictionaryEntryType.WORD_PREFIX, DefinitionTagCommonDef.prefix);
+			put(DictionaryEntryType.WORD_SUFFIX, DefinitionTagCommonDef.suffix);
 
-			put(DictionaryEntryType.WORD_NUMBER, new DefinitionTag("lic", 4));
+			put(DictionaryEntryType.WORD_NUMBER, DefinitionTagCommonDef.number);
 			
-			put(DictionaryEntryType.WORD_COUNTER, new DefinitionTag("kla", 4));
+			put(DictionaryEntryType.WORD_COUNTER, DefinitionTagCommonDef.counter);
 			
-			put(DictionaryEntryType.WORD_AUX_ADJECTIVE_I, new DefinitionTag("i-przy-pom", 5));
+			put(DictionaryEntryType.WORD_AUX_ADJECTIVE_I, DefinitionTagCommonDef.i_adjectiveAux);
 			
-			put(DictionaryEntryType.WORD_ADVERBIAL_NOUN, new DefinitionTag("rz-prz", 6));
-			put(DictionaryEntryType.WORD_PRE_NOUN_ADJECTIVAL, new DefinitionTag("pre-rz-prz", 6));
+			put(DictionaryEntryType.WORD_ADVERBIAL_NOUN, DefinitionTagCommonDef.nounAdverbial);
+			put(DictionaryEntryType.WORD_PRE_NOUN_ADJECTIVAL, DefinitionTagCommonDef.preNounAdverbial);
 			
-			put(DictionaryEntryType.WORD_AUX, new DefinitionTag("aux", 6));
+			put(DictionaryEntryType.WORD_AUX, DefinitionTagCommonDef.aux);
 			
-			put(DictionaryEntryType.WORD_ADJECTIVE_KU, new DefinitionTag("ku-prz", 7));
-			put(DictionaryEntryType.WORD_ADJECTIVE_TARU, new DefinitionTag("tar-prz", 7));
-			put(DictionaryEntryType.WORD_ADJECTIVE_NARI, new DefinitionTag("nar-prz", 7));
-			put(DictionaryEntryType.WORD_ADJECTIVE_SHIKU, new DefinitionTag("shi-prz", 7));
+			put(DictionaryEntryType.WORD_ADJECTIVE_KU, DefinitionTagCommonDef.ku_adjective);
+			put(DictionaryEntryType.WORD_ADJECTIVE_TARU, DefinitionTagCommonDef.taru_adjective);
+			put(DictionaryEntryType.WORD_ADJECTIVE_NARI, DefinitionTagCommonDef.nari_adjective);
+			put(DictionaryEntryType.WORD_ADJECTIVE_SHIKU, DefinitionTagCommonDef.shiku_adjective);
 
-			put(DictionaryEntryType.WORD_VERB_ZURU, new DefinitionTag("zur-cz", 8));
-			put(DictionaryEntryType.WORD_VERB_AUX, new DefinitionTag("cz-pom", 8));
-			put(DictionaryEntryType.WORD_NIDAN_VERB, new DefinitionTag("nid-cz", 8));
+			put(DictionaryEntryType.WORD_VERB_AUX, DefinitionTagCommonDef.aux_verb);
+			put(DictionaryEntryType.WORD_VERB_ZURU, DefinitionTagCommonDef.zuru_verb);						
+			put(DictionaryEntryType.WORD_NIDAN_VERB, DefinitionTagCommonDef.nidan_verb);
 			
-			put(DictionaryEntryType.WORD_COPULA, new DefinitionTag("kop", 9));
-			put(DictionaryEntryType.WORD_COPULA_DA, new DefinitionTag("kop_da", 9));
+			put(DictionaryEntryType.WORD_COPULA, DefinitionTagCommonDef.copula);
+			put(DictionaryEntryType.WORD_COPULA_DA, DefinitionTagCommonDef.copula_da);
 			
-			put(DictionaryEntryType.WORD_PROPER_NOUN, new DefinitionTag("naz-wl", 10));
+			put(DictionaryEntryType.WORD_PROPER_NOUN, DefinitionTagCommonDef.properNoun);
 			
-			put(DictionaryEntryType.WORD_NAME, new DefinitionTag("im", 10));
+			put(DictionaryEntryType.WORD_NAME, DefinitionTagCommonDef.name);
 			
-			put(DictionaryEntryType.WORD_MALE_NAME, new DefinitionTag("me-im", 11));
-			put(DictionaryEntryType.WORD_FEMALE_NAME, new DefinitionTag("rz-im", 11));
+			put(DictionaryEntryType.WORD_MALE_NAME, DefinitionTagCommonDef.maleName);
+			put(DictionaryEntryType.WORD_FEMALE_NAME, DefinitionTagCommonDef.femaleName);
+			put(DictionaryEntryType.WORD_SURNAME_NAME, DefinitionTagCommonDef.surnameName);			
+			put(DictionaryEntryType.WORD_PERSON, DefinitionTagCommonDef.person);			
+			put(DictionaryEntryType.WORD_WORK, DefinitionTagCommonDef.work);			
+			put(DictionaryEntryType.WORD_PLACE, DefinitionTagCommonDef.place);			
+			put(DictionaryEntryType.WORD_STATION_NAME, DefinitionTagCommonDef.stationName);			
+			put(DictionaryEntryType.WORD_COMPANY_NAME, DefinitionTagCommonDef.companyName);			
+			put(DictionaryEntryType.WORD_ORGANIZATION_NAME, DefinitionTagCommonDef.organizationName);			
+			put(DictionaryEntryType.WORD_PRODUCT_NAME, DefinitionTagCommonDef.productName);			
+			put(DictionaryEntryType.WORD_UNCLASS_NAME, DefinitionTagCommonDef.unclassName);			
+			put(DictionaryEntryType.WORD_CHARACTER, DefinitionTagCommonDef.character);			
+			put(DictionaryEntryType.WORD_CREATURE, DefinitionTagCommonDef.creature);
+			put(DictionaryEntryType.WORD_DEITY, DefinitionTagCommonDef.deity);			
+			put(DictionaryEntryType.WORD_EVENT, DefinitionTagCommonDef.event);			
+			put(DictionaryEntryType.WORD_FICT, DefinitionTagCommonDef.fict);			
+			put(DictionaryEntryType.WORD_LEGEND, DefinitionTagCommonDef.legend);
+			put(DictionaryEntryType.WORD_MYTHOLOGY, DefinitionTagCommonDef.mythology);			
+			put(DictionaryEntryType.WORD_OBJECT, DefinitionTagCommonDef.object);			
+			put(DictionaryEntryType.WORD_OTHER, DefinitionTagCommonDef.other);			
+			put(DictionaryEntryType.WORD_RELIGION, DefinitionTagCommonDef.religion);			
+			put(DictionaryEntryType.WORD_SERVICE, DefinitionTagCommonDef.service);			
+			put(DictionaryEntryType.WORD_GROUP, DefinitionTagCommonDef.group);
 			
-			put(DictionaryEntryType.WORD_SURNAME_NAME, new DefinitionTag("nazw", 12));
-			
-			put(DictionaryEntryType.WORD_PERSON, new DefinitionTag("oso", 13));
-			
-			put(DictionaryEntryType.WORD_WORK, new DefinitionTag("dzie", 14));
-			
-			put(DictionaryEntryType.WORD_PLACE, new DefinitionTag("miej", 15));
-			
-			put(DictionaryEntryType.WORD_STATION_NAME, new DefinitionTag("sta", 16));
-			
-			put(DictionaryEntryType.WORD_COMPANY_NAME, new DefinitionTag("fir", 17));
-			
-			put(DictionaryEntryType.WORD_ORGANIZATION_NAME, new DefinitionTag("org", 18));
-			
-			put(DictionaryEntryType.WORD_PRODUCT_NAME, new DefinitionTag("prod", 19));
-			
-			put(DictionaryEntryType.WORD_UNCLASS_NAME, new DefinitionTag("nies", 20));
-			
-			put(DictionaryEntryType.WORD_CHARACTER, new DefinitionTag("post", 21));
-			
-			put(DictionaryEntryType.WORD_CREATURE, new DefinitionTag("stwo", 22));
-			
-			put(DictionaryEntryType.WORD_DEITY, new DefinitionTag("bóst", 23));
-			
-			put(DictionaryEntryType.WORD_EVENT, new DefinitionTag("wydarz", 24));
-			
-			put(DictionaryEntryType.WORD_FICT, new DefinitionTag("fikc", 25));
-			
-			put(DictionaryEntryType.WORD_LEGEND, new DefinitionTag("lege", 26));
-			
-			put(DictionaryEntryType.WORD_MYTHOLOGY, new DefinitionTag("mito", 27));
-			
-			put(DictionaryEntryType.WORD_OBJECT, new DefinitionTag("obie", 28));
-			
-			put(DictionaryEntryType.WORD_OTHER, new DefinitionTag("inny", 29));
-			
-			put(DictionaryEntryType.WORD_RELIGION, new DefinitionTag("reli", 30));
-			
-			put(DictionaryEntryType.WORD_SERVICE, new DefinitionTag("usłu", 31));
-			
-			put(DictionaryEntryType.WORD_GROUP, new DefinitionTag("grup", 32));
-			
-			put(DictionaryEntryType.WORD_EMPTY, new DefinitionTag("", 999));
-			put(DictionaryEntryType.UNKNOWN, new DefinitionTag("", 999));			
+			put(DictionaryEntryType.WORD_EMPTY, DefinitionTagCommonDef.empty);
+			put(DictionaryEntryType.UNKNOWN, DefinitionTagCommonDef.unknown);			
 		}
 	};
 	
@@ -560,12 +613,12 @@ public class YomichanGenerator {
 		
 		for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {	
 			
-			DefinitionTag tag = oldDictionaryEntryTypeToDefinitionTagMap.get(dictionaryEntryType);
+			DefinitionTagCommonDef tagDef = oldDictionaryEntryTypeToDefinitionTagMap.get(dictionaryEntryType);
 			
-			if (tag != null && tag.getTag().length() > 0) {
-				termBankEntry.addDefinitionTag(tag.getTag());
+			if (tagDef != null && tagDef.getDefinitionTag().getTag().length() > 0) {
+				termBankEntry.addDefinitionTag(tagDef.getDefinitionTag().getTag());
 				
-			} else if (tag == null) {
+			} else if (tagDef == null) {
 				throw new RuntimeException("Unknown value: " + dictionaryEntryType);
 			}
 		}
@@ -626,23 +679,23 @@ public class YomichanGenerator {
 		
 		// generowanie dla starej postaci slownika
 		{
-			Iterator<Entry<DictionaryEntryType, DefinitionTag>> dictionaryEntryTypeToDefinitionTagMapIterator = oldDictionaryEntryTypeToDefinitionTagMap.entrySet().iterator();
+			Iterator<Entry<DictionaryEntryType, DefinitionTagCommonDef>> dictionaryEntryTypeToDefinitionTagMapIterator = oldDictionaryEntryTypeToDefinitionTagMap.entrySet().iterator();
 
 			while (dictionaryEntryTypeToDefinitionTagMapIterator.hasNext() == true) {
 
-				Entry<DictionaryEntryType, DefinitionTag> dictionaryEntryTypeToDefinitionTagMapEntry = dictionaryEntryTypeToDefinitionTagMapIterator.next();
+				Entry<DictionaryEntryType, DefinitionTagCommonDef> dictionaryEntryTypeToDefinitionTagMapEntry = dictionaryEntryTypeToDefinitionTagMapIterator.next();
 
-				if (dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag().length() == 0) {
+				if (dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag().length() == 0) {
 					continue;
 				}
 
-				if (alreadyUsedTagsName.contains(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag()) == true) {				
-					throw new RuntimeException(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag());
+				if (alreadyUsedTagsName.contains(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag()) == true) {				
+					throw new RuntimeException(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag());
 				}
 
-				alreadyUsedTagsName.add(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getTag());
+				alreadyUsedTagsName.add(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag());
 
-				JSONArray tagBankEntryJSONArray = createTagBankJSONArray(dictionaryEntryTypeToDefinitionTagMapEntry.getValue(), dictionaryEntryTypeToDefinitionTagMapEntry.getKey().getName());
+				JSONArray tagBankEntryJSONArray = createTagBankJSONArray(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getDefinitionTag(), dictionaryEntryTypeToDefinitionTagMapEntry.getKey().getName());
 
 				tagBankJSONArray.put(tagBankEntryJSONArray);				
 			}
