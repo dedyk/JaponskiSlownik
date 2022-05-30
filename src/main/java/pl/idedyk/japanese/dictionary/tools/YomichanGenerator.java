@@ -11,6 +11,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -32,8 +33,10 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
@@ -99,6 +102,8 @@ public class YomichanGenerator {
 		
 		name(new DefinitionTag("im", 10)),
 		
+		commonWord(new DefinitionTag("pow-uz", 11)),
+		
 		maleName(new DefinitionTag("me-im", 11)),
 		femaleName(new DefinitionTag("rz-im", 11)),
 		surnameName(new DefinitionTag("nazw", 12)),
@@ -127,8 +132,15 @@ public class YomichanGenerator {
 		kanjiAlone(new DefinitionTag("kanj-sam", 12)),
 		kanaAlone(new DefinitionTag("kana-sam", 12)),
 		
-		commonWord(new DefinitionTag("pow-uz", 11)),
+		kanjiIrregularUsage(new DefinitionTag("kanj-niere-uzy", 13)),
+		kanaIrregularUsage(new DefinitionTag("kana-niere-uzy", 13)),
+		kanjiOkuriganaUsage(new DefinitionTag("kanj-okuri-uzy", 13)),
+		kanjiOutDatedUsage(new DefinitionTag("kanj-przes-uzy", 13)),
+		kanaOutDatedUsage(new DefinitionTag("kana-przes-uzy", 13)),
+		kanjiRarelyUsage(new DefinitionTag("kanj-rzad-uzy", 13)),		
 		ateji(new DefinitionTag("ate", 13)),
+		kanaGikunMeaningJikujikunSpecialKanjiReading(new DefinitionTag("kana-gik-jiku", 13)),
+		
 		onamatopoeicMimeticWord(new DefinitionTag("ono", 14)),
 		
 		verbKeigoHigh(new DefinitionTag("hon-wyw", 15)),
@@ -667,8 +679,66 @@ public class YomichanGenerator {
 	
 	private static void generateDefinitionTag(KanjiInfo kanjiInfo, ReadingInfo readingInfo, Sense sense, TermBankEntry termBankEntry) {
 		
+		// pobieranie informacji z kanji info
+		List<KanjiAdditionalInfoEnum> kanjiAdditionalInfoList = kanjiInfo.getKanjiAdditionalInfoList();
+		
+		for (KanjiAdditionalInfoEnum kanjiAdditionalInfoEnum : kanjiAdditionalInfoList) {
+			
+			switch (kanjiAdditionalInfoEnum) {
+			
+			case ATEJI_PHONETIC_READING:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.ateji.getDefinitionTag().getTag());
+			
+			case WORD_CONTAINING_IRREGULAR_KANJI_USAGE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiIrregularUsage.getDefinitionTag().getTag());
+				
+			case WORD_CONTAINING_IRREGULAR_KANA_USAGE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaIrregularUsage.getDefinitionTag().getTag());
+				
+			case IRREGULAR_OKURIGANA_USAGE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiOkuriganaUsage.getDefinitionTag().getTag());
+				
+			case WORD_CONTAINING_OUT_DATED_KANJI_OR_KANJI_USAGE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiOutDatedUsage.getDefinitionTag().getTag());
+				
+			case RARELY_USED_KANJI_FORM:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiRarelyUsage.getDefinitionTag().getTag());
+								
+			default:
+				throw new RuntimeException("Unknown kanji additional info enum: " + kanjiAdditionalInfoEnum);
+			
+			}
+		}
+		
+		List<ReadingAdditionalInfoEnum> readingAdditionalInfoList = readingInfo.getReadingAdditionalInfoList();
+		
+		for (ReadingAdditionalInfoEnum readingAdditionalInfoEnum : readingAdditionalInfoList) {
+			
+			switch (readingAdditionalInfoEnum) {
+			
+			case GIKUN_MEANING_AS_READING_OR_JUKUJIKUN_SPECIAL_KANJI_READING:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaGikunMeaningJikujikunSpecialKanjiReading.getDefinitionTag().getTag());
+			
+			case WORD_CONTAINING_IRREGULAR_KANA_USAGE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaIrregularUsage.getDefinitionTag().getTag());
+
+			case OUT_DATED_OR_OBSOLETE_KANA_USAGE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaOutDatedUsage.getDefinitionTag().getTag());
+				
+			case WORD_USUALLY_WRITTEN_USING_KANJI_ALONE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiAlone.getDefinitionTag().getTag());
+				
+			default:
+				throw new RuntimeException("Unknown reading additional info enum: " + readingAdditionalInfoEnum);
+			}			
+		}
+		
+		// tutaj !!!!!!
+				
 		int fixme2 = 1; // trzeba to poprawic, uzywajac DefinitionTagCommonDef !!!!!!!!!!!!!!!
 		
+		
+		/*
 		// pobieranie czesci mowy
 		List<PartOfSpeechEnum> partOfSpeechList = sense.getPartOfSpeechList();
 		
@@ -681,6 +751,9 @@ public class YomichanGenerator {
 		for (String currentPolishPartOfSpeech : polishPartOfSpeechEnumPolishList) {
 			termBankEntry.addDefinitionTag(currentPolishPartOfSpeech);
 		}
+		*/
+		
+		
 	}
 
 	private static void generateAndSaveTagBank(String outputDir) {
