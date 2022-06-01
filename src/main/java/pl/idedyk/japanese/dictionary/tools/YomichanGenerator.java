@@ -54,7 +54,7 @@ public class YomichanGenerator {
 		properNoun(new DefinitionTag("naz-wl", 10)),
 		nounSuru(new DefinitionTag("suru", 10)),
 		
-		u_verbU(new DefinitionTag("u-cz", 0)),		
+		u_verb(new DefinitionTag("u-cz", 0)),		
 		ru_verb(new DefinitionTag("ru-cz", 0)),		
 		ir_verb(new DefinitionTag("ir-cz", 0)),
 		
@@ -173,7 +173,7 @@ public class YomichanGenerator {
 		{			
 			put(DictionaryEntryType.WORD_NOUN, DefinitionTagCommonDef.noun);	
 			
-			put(DictionaryEntryType.WORD_VERB_U, DefinitionTagCommonDef.u_verbU);
+			put(DictionaryEntryType.WORD_VERB_U, DefinitionTagCommonDef.u_verb);
 			put(DictionaryEntryType.WORD_VERB_RU, DefinitionTagCommonDef.ru_verb);
 			put(DictionaryEntryType.WORD_VERB_IRREGULAR, DefinitionTagCommonDef.ir_verb);
 
@@ -688,21 +688,33 @@ public class YomichanGenerator {
 			
 			case ATEJI_PHONETIC_READING:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.ateji.getDefinitionTag().getTag());
+				
+				break;
 			
 			case WORD_CONTAINING_IRREGULAR_KANJI_USAGE:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiIrregularUsage.getDefinitionTag().getTag());
 				
+				break;
+				
 			case WORD_CONTAINING_IRREGULAR_KANA_USAGE:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaIrregularUsage.getDefinitionTag().getTag());
 				
+				break;
+				
 			case IRREGULAR_OKURIGANA_USAGE:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiOkuriganaUsage.getDefinitionTag().getTag());
+
+				break;
 				
 			case WORD_CONTAINING_OUT_DATED_KANJI_OR_KANJI_USAGE:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiOutDatedUsage.getDefinitionTag().getTag());
 				
+				break;
+				
 			case RARELY_USED_KANJI_FORM:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiRarelyUsage.getDefinitionTag().getTag());
+				
+				break;
 								
 			default:
 				throw new RuntimeException("Unknown kanji additional info enum: " + kanjiAdditionalInfoEnum);
@@ -710,6 +722,7 @@ public class YomichanGenerator {
 			}
 		}
 		
+		// pobranie informacji z czytania
 		List<ReadingAdditionalInfoEnum> readingAdditionalInfoList = readingInfo.getReadingAdditionalInfoList();
 		
 		for (ReadingAdditionalInfoEnum readingAdditionalInfoEnum : readingAdditionalInfoList) {
@@ -718,19 +731,126 @@ public class YomichanGenerator {
 			
 			case GIKUN_MEANING_AS_READING_OR_JUKUJIKUN_SPECIAL_KANJI_READING:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaGikunMeaningJikujikunSpecialKanjiReading.getDefinitionTag().getTag());
+				
+				break;
 			
 			case WORD_CONTAINING_IRREGULAR_KANA_USAGE:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaIrregularUsage.getDefinitionTag().getTag());
+				
+				break;
 
 			case OUT_DATED_OR_OBSOLETE_KANA_USAGE:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaOutDatedUsage.getDefinitionTag().getTag());
 				
+				break;
+				
 			case WORD_USUALLY_WRITTEN_USING_KANJI_ALONE:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiAlone.getDefinitionTag().getTag());
+				
+				break;
 				
 			default:
 				throw new RuntimeException("Unknown reading additional info enum: " + readingAdditionalInfoEnum);
 			}			
+		}
+		
+		// pobieranie czesci mowy
+		List<PartOfSpeechEnum> partOfSpeechList = sense.getPartOfSpeechList();
+		
+		int fixme = 1; // !!!!!!!!!!!!!!!!!!!! dokonczyc
+		
+		for (PartOfSpeechEnum partOfSpeechEnum : partOfSpeechList) {
+			
+			switch (partOfSpeechEnum) {
+			
+			case NOUN_COMMON_FUTSUUMEISHI:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.noun.getDefinitionTag().getTag());
+			
+				break;
+				
+			case NOUN_TEMPORAL_JISOUMEISHI:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.nounTemporal.getDefinitionTag().getTag());
+				
+				break;	
+				
+			case GODAN_VERB_WITH_U_ENDING:
+			case GODAN_VERB_WITH_U_ENDING_SPECIAL_CLASS:
+			case GODAN_VERB_WITH_KU_ENDING:
+			case GODAN_VERB_WITH_TSU_ENDING:
+			case GODAN_VERB_WITH_SU_ENDING:
+			case GODAN_VERB_WITH_RU_ENDING:
+			case GODAN_VERB_WITH_RU_ENDING_IRREGULAR_VERB:
+			case GODAN_VERB_WITH_BU_ENDING:
+			case GODAN_VERB_WITH_GU_ENDING:
+			case GODAN_VERB_WITH_MU_ENDING:
+			case GODAN_VERB_WITH_NU_ENDING:
+			case GODAN_VERB_ARU_SPECIAL_CLASS:
+			case GODAN_VERB_IKU_YUKU_SPECIAL_CLASS:
+			case GODAN_VERB_URU_OLD_CLASS_VERB_OLD_FORM_OF_ERU:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.u_verb.getDefinitionTag().getTag());
+				
+				break;	
+
+			case TRANSITIVE_VERB:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.verbTransitivity.getDefinitionTag().getTag());
+				
+				break;
+				
+			case INTRANSITIVE_VERB:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.verbIntransitivity.getDefinitionTag().getTag());
+				
+				break;
+				
+			case COUNTER:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.counter.getDefinitionTag().getTag());
+				
+				break;
+				
+			case NUMERIC:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.number.getDefinitionTag().getTag());
+				
+				break;
+				
+			case PRONOUN:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.pronoun.getDefinitionTag().getTag());
+				
+				break;
+				
+			case CONJUNCTION:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.conjunction.getDefinitionTag().getTag());
+				
+				break;
+								
+			case PARTICLE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.particule.getDefinitionTag().getTag());
+				
+				break;
+			
+			case COPULA:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.copula.getDefinitionTag().getTag());
+				
+				break;
+				
+			case PREFIX:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.prefix.getDefinitionTag().getTag());
+				
+				break;
+
+			case SUFFIX:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.suffix.getDefinitionTag().getTag());
+				
+				break;
+				
+			case AUXILIARY:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.aux.getDefinitionTag().getTag());
+				
+				break;
+
+			default:				
+				throw new RuntimeException("Unknown sense part of speech enum: " + partOfSpeechEnum);
+
+			}
+			
 		}
 		
 		// tutaj !!!!!!
