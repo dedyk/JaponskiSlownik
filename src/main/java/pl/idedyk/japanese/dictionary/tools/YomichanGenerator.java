@@ -72,9 +72,10 @@ public class YomichanGenerator {
 		f_adjective(new DefinitionTag("rz-pr", 1)),
 		
 		ku_adjective(new DefinitionTag("ku-prz", 7)),
-		taru_adjective(new DefinitionTag("tar-prz", 7)),
-		nari_adjective(new DefinitionTag("nar-prz", 7)),
-		shiku_adjective(new DefinitionTag("shi-prz", 7)),
+		taru_adjective(new DefinitionTag("taru-prz", 7)),
+		nari_adjective(new DefinitionTag("nari-prz", 7)),
+		shiku_adjective(new DefinitionTag("shiku-prz", 7)),
+		kari_adjective(new DefinitionTag("kari-prz", 7)),
 		
 		expression(new DefinitionTag("wyr", 1)),
 		
@@ -773,6 +774,52 @@ public class YomichanGenerator {
 				
 				break;	
 				
+			case NOUN_USED_AS_A_PREFIX:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.nounPrefix.getDefinitionTag().getTag());
+				
+				break;	
+
+			case NOUN_USED_AS_A_SUFFIX:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.nounSuffix.getDefinitionTag().getTag());
+				
+				break;	
+				
+			case PRE_NOUN_ADJECTIVAL_RENTAISHI:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.preNounAdverbial.getDefinitionTag().getTag());
+				
+				break;	
+				
+			case PROPER_NOUN:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.properNoun.getDefinitionTag().getTag());
+				
+				break;	
+
+			case ADJECTIVE_KEIYOUSHI:
+			case ADJECTIVE_KEIYOUSHI_YOI_II_CLASS:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.i_adjective.getDefinitionTag().getTag());
+				
+				break;	
+				
+			case TARU_ADJECTIVE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.taru_adjective.getDefinitionTag().getTag());
+				
+				break;	
+				
+			case KU_ADJECTIVE_ARCHAIC:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.ku_adjective.getDefinitionTag().getTag());
+				
+				break;	
+				
+			case SHIKU_ADJECTIVE_ARCHAIC:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.shiku_adjective.getDefinitionTag().getTag());
+				
+				break;	
+				
+			case KARI_ADJECTIVE_ARCHAIC:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kari_adjective.getDefinitionTag().getTag());
+				
+				break;	
+				
 			case GODAN_VERB_WITH_U_ENDING:
 			case GODAN_VERB_WITH_U_ENDING_SPECIAL_CLASS:
 			case GODAN_VERB_WITH_KU_ENDING:
@@ -790,7 +837,13 @@ public class YomichanGenerator {
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.u_verb.getDefinitionTag().getTag());
 				
 				break;	
-
+				
+			case ICHIDAN_VERB:
+			case ICHIDAN_VERB_KURERU_SPECIAL_CLASS:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.ru_verb.getDefinitionTag().getTag());
+				
+				break;
+				
 			case TRANSITIVE_VERB:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.verbTransitivity.getDefinitionTag().getTag());
 				
@@ -800,6 +853,16 @@ public class YomichanGenerator {
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.verbIntransitivity.getDefinitionTag().getTag());
 				
 				break;
+				
+			case ADVERB_FUKUSHI:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.adverb.getDefinitionTag().getTag());
+				
+				break;
+				
+			case ADVERB_TAKING_THE_TO_PARTICLE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.adverb_to.getDefinitionTag().getTag());
+				
+				break;				
 				
 			case COUNTER:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.counter.getDefinitionTag().getTag());
