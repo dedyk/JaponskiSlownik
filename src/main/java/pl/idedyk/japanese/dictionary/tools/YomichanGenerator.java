@@ -52,15 +52,24 @@ public class YomichanGenerator {
 		nounAdverbial(new DefinitionTag("rz-prz", 6)),
 		preNounAdverbial(new DefinitionTag("pre-rz-prz", 6)),
 		properNoun(new DefinitionTag("naz-wl", 10)),
-		nounSuru(new DefinitionTag("suru", 10)),
+		nounSuru(new DefinitionTag("rz-suru", 10)),
 		
 		u_verb(new DefinitionTag("u-cz", 0)),		
 		ru_verb(new DefinitionTag("ru-cz", 0)),		
 		ir_verb(new DefinitionTag("ir-cz", 0)),
+
+		ichidan_verb(new DefinitionTag("ich-cz", 0)),
+		nidan_verb(new DefinitionTag("nid-cz", 0)),
+		yodan_verb(new DefinitionTag("yod-cz", 0)),
+		godan_verb(new DefinitionTag("yod-cz", 0)),
 		
 		aux_verb(new DefinitionTag("cz-pom", 8)),
-		zuru_verb(new DefinitionTag("zur-cz", 8)),						
-		nidan_verb(new DefinitionTag("nid-cz", 8)),
+		suru_verb(new DefinitionTag("suru-cz", 8)),
+		zuru_verb(new DefinitionTag("zuru-cz", 8)),
+		kuru_verb(new DefinitionTag("kuru-cz", 8)),
+		unclassified_verb(new DefinitionTag("niesk-cz", 17)),
+		
+		su_verb_precursor_suru(new DefinitionTag("su-cz-prek-suru", 8)),
 		
 		verbTransitivity(new DefinitionTag("cz-prz", 12)),
 		verbIntransitivity(new DefinitionTag("cz-nprz", 12)),
@@ -76,6 +85,7 @@ public class YomichanGenerator {
 		nari_adjective(new DefinitionTag("nari-prz", 7)),
 		shiku_adjective(new DefinitionTag("shiku-prz", 7)),
 		kari_adjective(new DefinitionTag("kari-prz", 7)),
+		na_adjective_archaic_formal(new DefinitionTag("na-prz-arch-form", 7)),
 		
 		expression(new DefinitionTag("wyr", 1)),
 		
@@ -149,7 +159,9 @@ public class YomichanGenerator {
 		
 		obscure(new DefinitionTag("mał-zna", 16)),
 		archaism(new DefinitionTag("arch", 17)),
-		obsolete( new DefinitionTag("przes", 17)),
+		obsolete(new DefinitionTag("przes", 17)),
+		
+		unclassified(new DefinitionTag("niesk", 17)),
 		
 		empty(new DefinitionTag("", 999)),
 		unknown(new DefinitionTag("", 999)),
@@ -263,7 +275,7 @@ public class YomichanGenerator {
 		private static final long serialVersionUID = 1L;
 
 		{			
-			put(AttributeType.SURU_VERB, DefinitionTagCommonDef.nounSuru);
+			put(AttributeType.SURU_VERB, DefinitionTagCommonDef.suru_verb);
 			
 			put(AttributeType.COMMON_WORD, DefinitionTagCommonDef.commonWord);
 			
@@ -532,7 +544,7 @@ public class YomichanGenerator {
 								termBankEntry.addInflectedTags("adj-i");
 							}
 
-							if (Arrays.asList(PartOfSpeechEnum.ICHIDAN_VERB, PartOfSpeechEnum.ICHIDAN_VERB_KURERU_SPECIAL_CLASS).contains(partOfSpeechEnum) == true) {
+							if (Arrays.asList(PartOfSpeechEnum.ICHIDAN_VERB, PartOfSpeechEnum.ICHIDAN_VERB_KURERU_SPECIAL_CLASS, PartOfSpeechEnum.ICHIDAN_VERB_ZURU_VERB_ALTERNATIVE_FORM_OF_JIRU_VERBS).contains(partOfSpeechEnum) == true) {
 								termBankEntry.addInflectedTags("v1");
 							}
 							
@@ -784,6 +796,11 @@ public class YomichanGenerator {
 				
 				break;	
 				
+			case ADVERBIAL_NOUN_FUKUSHITEKIMEISHI:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.nounAdverbial.getDefinitionTag().getTag());
+				
+				break;					
+				
 			case PRE_NOUN_ADJECTIVAL_RENTAISHI:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.preNounAdverbial.getDefinitionTag().getTag());
 				
@@ -793,12 +810,47 @@ public class YomichanGenerator {
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.properNoun.getDefinitionTag().getTag());
 				
 				break;	
-
+				
+			case NOUNS_WHICH_MAY_TAKE_THE_GENITIVE_CASE_PARTICLE_NO:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.no_adjective.getDefinitionTag().getTag());
+				
+				break;	
+				
+			case NOUN_OR_PARTICIPLE_WHICH_TAKES_THE_AUX_VERB_SURU:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.nounSuru.getDefinitionTag().getTag());
+				
+				break;					
+				
 			case ADJECTIVE_KEIYOUSHI:
 			case ADJECTIVE_KEIYOUSHI_YOI_II_CLASS:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.i_adjective.getDefinitionTag().getTag());
 				
 				break;	
+				
+			case ADJECTIVAL_NOUNS_OR_QUASI_ADJECTIVES_KEIYODOSHI:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.na_adjective.getDefinitionTag().getTag());
+				
+				break;	
+				
+			case NOUN_OR_VERB_ACTING_PRENOMINALLY:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.f_adjective.getDefinitionTag().getTag());
+				
+				break;					
+				
+			case AUXILIARY_ADJECTIVE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.i_adjectiveAux.getDefinitionTag().getTag());
+				
+				break;
+
+			case AUXILIARY:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.aux.getDefinitionTag().getTag());
+				
+				break;
+				
+			case AUXILIARY_VERB:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.aux_verb.getDefinitionTag().getTag());
+				
+				break;
 				
 			case TARU_ADJECTIVE:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.taru_adjective.getDefinitionTag().getTag());
@@ -834,15 +886,83 @@ public class YomichanGenerator {
 			case GODAN_VERB_ARU_SPECIAL_CLASS:
 			case GODAN_VERB_IKU_YUKU_SPECIAL_CLASS:
 			case GODAN_VERB_URU_OLD_CLASS_VERB_OLD_FORM_OF_ERU:
-				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.u_verb.getDefinitionTag().getTag());
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.godan_verb.getDefinitionTag().getTag());
 				
 				break;	
 				
+			case NIDAN_VERB_LOWER_CLASS_WITH_BU_ENDING_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_DZU_ENDING_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_GU_ENDING_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_HU_FU_ENDING_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_KU_ENDING_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_MU_ENDING_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_NU_ENDING_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_RU_ENDING_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_SU_ENDING_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_TSU_ENDING_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_U_ENDING_AND_WE_CONJUGATION_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_YU_ENDING_ARCHAIC:
+			case NIDAN_VERB_LOWER_CLASS_WITH_ZU_ENDING_ARCHAIC:
+			case NIDAN_VERB_UPPER_CLASS_WITH_BU_ENDING_ARCHAIC:
+			case NIDAN_VERB_UPPER_CLASS_WITH_DZU_ENDING_ARCHAIC:
+			case NIDAN_VERB_UPPER_CLASS_WITH_GU_ENDING_ARCHAIC:
+			case NIDAN_VERB_UPPER_CLASS_WITH_HU_FU_ENDING_ARCHAIC:
+			case NIDAN_VERB_UPPER_CLASS_WITH_KU_ENDING_ARCHAIC:
+			case NIDAN_VERB_UPPER_CLASS_WITH_MU_ENDING_ARCHAIC:
+			case NIDAN_VERB_UPPER_CLASS_WITH_RU_ENDING_ARCHAIC:
+			case NIDAN_VERB_UPPER_CLASS_WITH_TSU_ENDING_ARCHAIC:
+			case NIDAN_VERB_UPPER_CLASS_WITH_YU_ENDING_ARCHAIC:
+			case NIDAN_VERB_WITH_U_ENDING_ARCHAIC:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.nidan_verb.getDefinitionTag().getTag());
+				
+				break;	
+				
+			case YODAN_VERB_WITH_BU_ENDING_ARCHAIC:
+			case YODAN_VERB_WITH_GU_ENDING_ARCHAIC:
+			case YODAN_VERB_WITH_HU_FU_ENDING_ARCHAIC:
+			case YODAN_VERB_WITH_KU_ENDING_ARCHAIC:
+			case YODAN_VERB_WITH_MU_ENDING_ARCHAIC:
+			case YODAN_VERB_WITH_NU_ENDING_ARCHAIC:
+			case YODAN_VERB_WITH_RU_ENDING_ARCHAIC:
+			case YODAN_VERB_WITH_SU_ENDING_ARCHAIC:
+			case YODAN_VERB_WITH_TSU_ENDING_ARCHAIC:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.yodan_verb.getDefinitionTag().getTag());
+				
+				break;					
+
 			case ICHIDAN_VERB:
 			case ICHIDAN_VERB_KURERU_SPECIAL_CLASS:
-				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.ru_verb.getDefinitionTag().getTag());
+			case ICHIDAN_VERB_ZURU_VERB_ALTERNATIVE_FORM_OF_JIRU_VERBS:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.ichidan_verb.getDefinitionTag().getTag());
 				
 				break;
+				
+			case SURU_VERB_INCLUDED:
+			case SURU_VERB_SPECIAL_CLASS:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.suru_verb.getDefinitionTag().getTag());
+				
+				break;
+				
+			case SU_VERB_PRECURSOR_TO_THE_MODERN_SURU:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.su_verb_precursor_suru.getDefinitionTag().getTag());
+				
+				break;
+				
+			case KURU_VERB_SPECIAL_CLASS:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kuru_verb.getDefinitionTag().getTag());
+				
+				break;
+				
+			case VERB_UNSPECIFIED:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.unclassified_verb.getDefinitionTag().getTag());
+				
+				break;
+				
+			case IRREGULAR_NU_VERB:
+			case IRREGULAR_RU_VERB_PLAIN_FORM_ENDS_WITH_RI:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.ir_verb.getDefinitionTag().getTag());
+				
+				break;				
 				
 			case TRANSITIVE_VERB:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.verbTransitivity.getDefinitionTag().getTag());
@@ -903,12 +1023,27 @@ public class YomichanGenerator {
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.suffix.getDefinitionTag().getTag());
 				
 				break;
-				
-			case AUXILIARY:
-				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.aux.getDefinitionTag().getTag());
+								
+			case EXPRESSIONS_PHRASES_CLAUSES_ETC:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.expression.getDefinitionTag().getTag());
 				
 				break;
-
+				
+			case INTERJECTION_KANDOUSHI:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.interjection.getDefinitionTag().getTag());
+				
+				break;
+				
+			case ARCHAIC_FORMAL_FORM_OF_NA_ADJECTIVE:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.na_adjective_archaic_formal.getDefinitionTag().getTag());
+				
+				break;	
+				
+			case UNCLASSIFIED:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.unclassified.getDefinitionTag().getTag());
+				
+				break;
+			
 			default:				
 				throw new RuntimeException("Unknown sense part of speech enum: " + partOfSpeechEnum);
 
