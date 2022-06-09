@@ -45,14 +45,14 @@ public class YomichanGenerator {
 	
 	private static enum DefinitionTagCommonDef {
 
-		noun(new DefinitionTag("rz", 0)),
-		nounTemporal(new DefinitionTag("rz-cza", 1)),
-		nounPrefix(new DefinitionTag("rz-pre", 3)),
-		nounSuffix(new DefinitionTag("rz-suf", 3)),
-		nounAdverbial(new DefinitionTag("rz-prz", 6)),
-		preNounAdverbial(new DefinitionTag("pre-rz-prz", 6)),
-		properNoun(new DefinitionTag("naz-wl", 10)),
-		nounSuru(new DefinitionTag("rz-suru", 10)),
+		noun(new DefinitionTag("rz", 0, "rzeczownik")),
+		nounTemporal(new DefinitionTag("rz-cza", 1, "rzeczownik czasowy")),
+		nounPrefix(new DefinitionTag("rz-pre", 3, "rzeczownikowy prefiks")),
+		nounSuffix(new DefinitionTag("rz-suf", 3, "rzeczownikowy sufiks")),
+		nounAdverbial(new DefinitionTag("rz-prz", 6, "rzeczownik przysłówkowy")),
+		preNounAdverbial(new DefinitionTag("pre-rz-prz", 6, "pre-rzeczownik przymiotnikowy")),
+		properNoun(new DefinitionTag("naz-wl", 10, "nazwa własna")),
+		nounSuru(new DefinitionTag("rz-suru", 10, "rzeczownik łączący się z czasownikiem suru")),
 		
 		u_verb(new DefinitionTag("u-cz", 0)),		
 		ru_verb(new DefinitionTag("ru-cz", 0)),		
@@ -769,9 +769,7 @@ public class YomichanGenerator {
 		
 		// pobieranie czesci mowy
 		List<PartOfSpeechEnum> partOfSpeechList = sense.getPartOfSpeechList();
-		
-		int fixme = 1; // !!!!!!!!!!!!!!!!!!!! dokonczyc
-		
+				
 		for (PartOfSpeechEnum partOfSpeechEnum : partOfSpeechList) {
 			
 			switch (partOfSpeechEnum) {
@@ -1046,121 +1044,28 @@ public class YomichanGenerator {
 			
 			default:				
 				throw new RuntimeException("Unknown sense part of speech enum: " + partOfSpeechEnum);
-
-			}
-			
-		}
-		
-		// tutaj !!!!!!
-				
-		int fixme2 = 1; // trzeba to poprawic, uzywajac DefinitionTagCommonDef !!!!!!!!!!!!!!!
-		
-		
-		/*
-		// pobieranie czesci mowy
-		List<PartOfSpeechEnum> partOfSpeechList = sense.getPartOfSpeechList();
-		
-		// przetlumaczone czesci mowy
-		List<String> polishPartOfSpeechEnumPolishList = Dictionary2Helper.translateToPolishPartOfSpeechEnum(partOfSpeechList);
-		
-		// dodanie czesci mowy
-		int fixme = 1; // !!!!!!!!!!!!!!! sprawdzic, czy to bedzie dobrze
-		
-		for (String currentPolishPartOfSpeech : polishPartOfSpeechEnumPolishList) {
-			termBankEntry.addDefinitionTag(currentPolishPartOfSpeech);
-		}
-		*/
-		
-		
+			}			
+		}		
 	}
 
 	private static void generateAndSaveTagBank(String outputDir) {
+		
+		int fixme = 1;
+		// wpisanie opisow !!!!!!!!!!!
 				
 		JSONArray tagBankJSONArray = new JSONArray();
-		
-		Set<String> alreadyUsedTagsName = new TreeSet<>();
-		
-		int fixme = 1; // !!!!!!!!!!!!
-		// chodzenie po DefinitionTagCommonDef,
-		// ponizszy kod zakomentowac
-		
-		// generowanie dla starej postaci slownika
-		{
-			Iterator<Entry<DictionaryEntryType, DefinitionTagCommonDef>> dictionaryEntryTypeToDefinitionTagMapIterator = oldDictionaryEntryTypeToDefinitionTagMap.entrySet().iterator();
-
-			while (dictionaryEntryTypeToDefinitionTagMapIterator.hasNext() == true) {
-
-				Entry<DictionaryEntryType, DefinitionTagCommonDef> dictionaryEntryTypeToDefinitionTagMapEntry = dictionaryEntryTypeToDefinitionTagMapIterator.next();
-
-				if (dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag().length() == 0) {
-					continue;
-				}
-
-				if (alreadyUsedTagsName.contains(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag()) == true) {				
-					throw new RuntimeException(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag());
-				}
-
-				alreadyUsedTagsName.add(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag());
-
-				JSONArray tagBankEntryJSONArray = createTagBankJSONArray(dictionaryEntryTypeToDefinitionTagMapEntry.getValue().getDefinitionTag(), dictionaryEntryTypeToDefinitionTagMapEntry.getKey().getName());
-
-				tagBankJSONArray.put(tagBankEntryJSONArray);				
-			}
-
-			//
-
-			Iterator<Entry<AttributeType, DefinitionTagCommonDef>> attributeTypeToDefinitionTagMapIterator = oldDictionaryAttributeTypeToDefinitionTagMap.entrySet().iterator();
-
-			while (attributeTypeToDefinitionTagMapIterator.hasNext() == true) {
-
-				Entry<AttributeType, DefinitionTagCommonDef> attributeTypeToDefinitionTagMapEntry = attributeTypeToDefinitionTagMapIterator.next();
-
-				if (attributeTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag().length() == 0) {
-					continue;
-				}
-
-				if (alreadyUsedTagsName.contains(attributeTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag()) == true) {				
-					throw new RuntimeException(attributeTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag());
-				}
-
-				alreadyUsedTagsName.add(attributeTypeToDefinitionTagMapEntry.getValue().getDefinitionTag().getTag());
-
-				JSONArray tagBankEntryJSONArray = createTagBankJSONArray(attributeTypeToDefinitionTagMapEntry.getValue().getDefinitionTag(), attributeTypeToDefinitionTagMapEntry.getKey().getName());
-
-				tagBankJSONArray.put(tagBankEntryJSONArray);				
-			}	
-		}
-		
-		// generowanie dla nowej postaci slownika - to jest zly kod
-		/*
-		{
-			PartOfSpeechEnum[] partOfSpeechValues = PartOfSpeechEnum.values();
+				
+		// generowanie tag'ow z DefinitionTagCommonDef		
+		for (DefinitionTagCommonDef definitionTagCommonDef : DefinitionTagCommonDef.values()) {
 			
-			for (int idx = 0; idx < partOfSpeechValues.length; ++idx) {
-				
-				PartOfSpeechEnum partOfSpeechEnum = partOfSpeechValues[idx];
-				
-				String partOfSpeechEnumInPolish;
-				
-				// przetlumaczymy czesc mowy
-				try {
-					partOfSpeechEnumInPolish = Dictionary2Helper.translateToPolishPartOfSpeechEnum(Arrays.asList(partOfSpeechEnum)).get(0);
-					
-				} catch (Exception e) {
-					// jezeli wystapil wyjatek oznacza to, ze dana czesc mowy nie ma polskiego znaczenia
-					// ale oznacza tez, ze na razie nie ma zadnego slowka, ktore by mialo ta czesc mowy
-					// inaczej nie mozna byloby wygenerowac starej postaci slownika
-					// i dlatego ignorujemy ten wyjatek
-					continue;					
-				}
-				
-				// dodajemy do listy tagow
-				JSONArray tagBankEntryJSONArray = createTagBankJSONArray(partOfSpeechEnumInPolish, 1000 + idx, partOfSpeechEnumInPolish);
-
-				tagBankJSONArray.put(tagBankEntryJSONArray);				
+			if (definitionTagCommonDef.getDefinitionTag().getTag().length() == 0) {
+				continue;
 			}
+
+			JSONArray tagBankEntryJSONArray = createTagBankJSONArray(definitionTagCommonDef.getDefinitionTag());
+
+			tagBankJSONArray.put(tagBankEntryJSONArray);				
 		}
-		*/				
 		
 		writeJSONArrayToFile(new File(outputDir, "tag_bank_1.json"), tagBankJSONArray);
 	}
@@ -1178,8 +1083,8 @@ public class YomichanGenerator {
 		return tagBankEntryJSONArray;
 	}
 	
-	private static JSONArray createTagBankJSONArray(DefinitionTag tag, String description) {
-		return createTagBankJSONArray(tag.getTag(), tag.getSortingOrder(), description);
+	private static JSONArray createTagBankJSONArray(DefinitionTag tag) {
+		return createTagBankJSONArray(tag.getTag(), tag.getSortingOrder(), tag.getDescription());
 	}
 
 	private static void writeJSONArrayToFile(File outputFile, JSONArray jsonArray) {
@@ -1345,10 +1250,19 @@ public class YomichanGenerator {
 		
 		private int sortingOrder;
 		
+		private String description;
+		
 		public DefinitionTag(String tag, int sortingOrder) {
 			this.tag = tag;
 			this.sortingOrder = sortingOrder;
 		}
+		
+		public DefinitionTag(String tag, int sortingOrder, String description) {
+			this.tag = tag;
+			this.sortingOrder = sortingOrder;
+			this.description = description;
+		}
+
 
 		public String getTag() {
 			return tag;
@@ -1356,6 +1270,10 @@ public class YomichanGenerator {
 
 		public int getSortingOrder() {
 			return sortingOrder;
+		}
+
+		public String getDescription() {
+			return description;
 		}
 	}
 	
