@@ -7,14 +7,10 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 
-import java.util.Set;
 import java.util.TreeMap;
-import java.util.TreeSet;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -54,117 +50,117 @@ public class YomichanGenerator {
 		properNoun(new DefinitionTag("naz-wl", 10, "nazwa własna")),
 		nounSuru(new DefinitionTag("rz-suru", 10, "rzeczownik łączący się z czasownikiem suru")),
 		
-		u_verb(new DefinitionTag("u-cz", 0)),		
-		ru_verb(new DefinitionTag("ru-cz", 0)),		
-		ir_verb(new DefinitionTag("ir-cz", 0)),
+		u_verb(new DefinitionTag("u-cz", 0, "u-czasownik")),		
+		ru_verb(new DefinitionTag("ru-cz", 0, "ru-czasownik")),		
+		ir_verb(new DefinitionTag("ir-cz", 0, "czasownik nieregularny")),
 
-		ichidan_verb(new DefinitionTag("ich-cz", 0)),
-		nidan_verb(new DefinitionTag("nid-cz", 0)),
-		yodan_verb(new DefinitionTag("yod-cz", 0)),
-		godan_verb(new DefinitionTag("yod-cz", 0)),
+		ichidan_verb(new DefinitionTag("ich-cz", 0, "czasownik ichidan")),
+		nidan_verb(new DefinitionTag("nid-cz", 0, "czasownik nidan")),
+		yodan_verb(new DefinitionTag("yod-cz", 0, "czasownik yodan")),
+		godan_verb(new DefinitionTag("yod-cz", 0, "czasownik godan")),
 		
-		aux_verb(new DefinitionTag("cz-pom", 8)),
-		suru_verb(new DefinitionTag("suru-cz", 8)),
-		zuru_verb(new DefinitionTag("zuru-cz", 8)),
-		kuru_verb(new DefinitionTag("kuru-cz", 8)),
-		unclassified_verb(new DefinitionTag("niesk-cz", 17)),
+		aux_verb(new DefinitionTag("cz-pom", 8, "czasownik pomocniczy")),
+		suru_verb(new DefinitionTag("suru-cz", 8, "czasownik suru")),
+		zuru_verb(new DefinitionTag("zuru-cz", 8, "czasownik zuru")),
+		kuru_verb(new DefinitionTag("kuru-cz", 8, "czasownik kuru")),
+		unclassified_verb(new DefinitionTag("niesk-cz", 17, "czasownik nieskalsyfikowany")),
 		
-		su_verb_precursor_suru(new DefinitionTag("su-cz-prek-suru", 8)),
+		su_verb_precursor_suru(new DefinitionTag("su-cz-prek-suru", 8, "czasownik su, prekursor suru")),
 		
-		verbTransitivity(new DefinitionTag("cz-prz", 12)),
-		verbIntransitivity(new DefinitionTag("cz-nprz", 12)),
+		verbTransitivity(new DefinitionTag("cz-prz", 12, "czasownik przechodni")),
+		verbIntransitivity(new DefinitionTag("cz-nprz", 12, "czasownik nieprzechodni")),
 		
-		i_adjective(new DefinitionTag("i-prz", 0)),	
-		i_adjectiveAux(new DefinitionTag("i-przy-pom", 5)),
-		na_adjective(new DefinitionTag("na-prz", 0)),
-		no_adjective(new DefinitionTag("rz-no", 1)),
-		f_adjective(new DefinitionTag("rz-pr", 1)),
+		i_adjective(new DefinitionTag("i-prz", 0, "i-przymiotnik")),	
+		i_adjectiveAux(new DefinitionTag("i-przy-pom", 5, "i-przymiotnik pomocniczy")),
+		na_adjective(new DefinitionTag("na-prz", 0, "na-przymiotnik")),
+		no_adjective(new DefinitionTag("rz-no", 1, "no-przymiotnik")),
+		f_adjective(new DefinitionTag("rz-pr", 1, "f-przymiotnik")),
 		
-		ku_adjective(new DefinitionTag("ku-prz", 7)),
-		taru_adjective(new DefinitionTag("taru-prz", 7)),
-		nari_adjective(new DefinitionTag("nari-prz", 7)),
-		shiku_adjective(new DefinitionTag("shiku-prz", 7)),
-		kari_adjective(new DefinitionTag("kari-prz", 7)),
-		na_adjective_archaic_formal(new DefinitionTag("na-prz-arch-form", 7)),
+		ku_adjective(new DefinitionTag("ku-prz", 7, "ku-przymiotnik")),
+		taru_adjective(new DefinitionTag("taru-prz", 7, "taru-przymiotnik")),
+		nari_adjective(new DefinitionTag("nari-prz", 7, "nari-przymiotnik")),
+		shiku_adjective(new DefinitionTag("shiku-prz", 7, "shiku-przymiotnik")),
+		kari_adjective(new DefinitionTag("kari-prz", 7, "kiri-przymiotnik")),
+		na_adjective_archaic_formal(new DefinitionTag("na-prz-arch-form", 7, "na-przymiotnik, archaiczna/formalna forma")),
 		
-		expression(new DefinitionTag("wyr", 1)),
+		expression(new DefinitionTag("wyr", 1, "wyrażenie")),
 		
-		conjunction(new DefinitionTag("spó", 2)),
+		conjunction(new DefinitionTag("spó", 2, "spójnik")),
 		
-		interjection(new DefinitionTag("wyk", 2)),
+		interjection(new DefinitionTag("wyk", 2, "wykrzyknik")),
 		
-		particule(new DefinitionTag("par", 2)),
+		particule(new DefinitionTag("par", 2, "partykuła")),
 		
-		pronoun(new DefinitionTag("zai", 2)),
+		pronoun(new DefinitionTag("zai", 2, "zaimek")),
 		
-		adverb(new DefinitionTag("przy", 2)),
-		adverb_to(new DefinitionTag("przy-to", 2)),
+		adverb(new DefinitionTag("przy", 2, "przysłówek")),
+		adverb_to(new DefinitionTag("przy-to", 2, "to-przysłówek")),
 		
-		prefix(new DefinitionTag("pre", 3)),
-		suffix(new DefinitionTag("suf", 3)),
+		prefix(new DefinitionTag("pre", 3, "prefiks")),
+		suffix(new DefinitionTag("suf", 3, "sufiks")),
 		
-		number(new DefinitionTag("lic", 4)),
-		counter(new DefinitionTag("kla", 4)),
+		number(new DefinitionTag("lic", 4, "liczba")),
+		counter(new DefinitionTag("kla", 4, "klasyfikator")),
 		
-		aux(new DefinitionTag("aux", 6)),
+		aux(new DefinitionTag("aux", 6, "słowo pomocnicze")),
 		
-		copula(new DefinitionTag("kop", 9)),
-		copula_da(new DefinitionTag("kop_da", 9)),
+		copula(new DefinitionTag("kop", 9, "kopula")),
+		copula_da(new DefinitionTag("kop_da", 9, "da-kopula")),
 		
-		name(new DefinitionTag("im", 10)),
+		name(new DefinitionTag("naz", 10, "nazwa")),
 		
-		commonWord(new DefinitionTag("pow-uz", 11)),
+		commonWord(new DefinitionTag("pow-uz", 11, "słowo powszechne")),
 		
-		maleName(new DefinitionTag("me-im", 11)),
-		femaleName(new DefinitionTag("rz-im", 11)),
-		surnameName(new DefinitionTag("nazw", 12)),
+		maleName(new DefinitionTag("me-im", 11, "imię męskie")),
+		femaleName(new DefinitionTag("rz-im", 11, "imię żeńskie")),
+		surnameName(new DefinitionTag("nazw", 12, "nazwisko")),
 
-		person(new DefinitionTag("oso", 13)),
-		work(new DefinitionTag("dzie", 14)),
-		place(new DefinitionTag("miej", 15)),
-		stationName(new DefinitionTag("sta", 16)),
-		companyName(new DefinitionTag("fir", 17)),
-		organizationName(new DefinitionTag("org", 18)),
-		productName(new DefinitionTag("prod", 19)),
-		unclassName(new DefinitionTag("nies", 20)),
-		character(new DefinitionTag("post", 21)),
-		creature(new DefinitionTag("stwo", 22)),
-		deity(new DefinitionTag("bóst", 23)),
-		event(new DefinitionTag("wydarz", 24)),
-		fict(new DefinitionTag("fikc", 25)),
-		legend(new DefinitionTag("lege", 26)),
-		mythology(new DefinitionTag("mito", 27)),
-		object(new DefinitionTag("obie", 28)),
-		other(new DefinitionTag("inny", 29)),
-		religion(new DefinitionTag("reli", 30)),
-		service(new DefinitionTag("usłu", 31)),
-		group(new DefinitionTag("grup", 32)),
+		person(new DefinitionTag("oso", 13, "osoba")),
+		work(new DefinitionTag("dzie", 14, "praca")),
+		place(new DefinitionTag("miej", 15, "miejsce")),
+		stationName(new DefinitionTag("sta", 16, "nazwa stacji")),
+		companyName(new DefinitionTag("fir", 17, "nazwa firmy")),
+		organizationName(new DefinitionTag("org", 18, "nazwa organizacji")),
+		productName(new DefinitionTag("prod", 19, "nazwa produktu")),
+		unclassName(new DefinitionTag("nies", 20, "nazwa niesklasyfikowana")),
+		character(new DefinitionTag("post", 21, "postać")),
+		creature(new DefinitionTag("ist", 22, "istota")),
+		deity(new DefinitionTag("bóst", 23, "bóstwo")),
+		event(new DefinitionTag("wydarz", 24, "wydarzenie")),
+		fict(new DefinitionTag("fikc", 25, "fikcja")),
+		legend(new DefinitionTag("lege", 26, "legenda")),
+		mythology(new DefinitionTag("mito", 27, "mitologia")),
+		object(new DefinitionTag("obie", 28, "obiekt")),
+		other(new DefinitionTag("inny", 29, "inny")),
+		religion(new DefinitionTag("reli", 30, "religia")),
+		service(new DefinitionTag("usłu", 31, "usługa")),
+		group(new DefinitionTag("grup", 32, "grupa")),
 		
-		kanjiAlone(new DefinitionTag("kanj-sam", 12)),
-		kanaAlone(new DefinitionTag("kana-sam", 12)),
+		kanjiAlone(new DefinitionTag("kanj-sam", 12, "kanji występujący zwykle samodzielnie")),
+		kanaAlone(new DefinitionTag("kana-sam", 12, "kana występująca zwykle samodzielnie")),
 		
-		kanjiIrregularUsage(new DefinitionTag("kanj-niere-uzy", 13)),
-		kanaIrregularUsage(new DefinitionTag("kana-niere-uzy", 13)),
-		kanjiOkuriganaUsage(new DefinitionTag("kanj-okuri-uzy", 13)),
-		kanjiOutDatedUsage(new DefinitionTag("kanj-przes-uzy", 13)),
-		kanaOutDatedUsage(new DefinitionTag("kana-przes-uzy", 13)),
-		kanjiRarelyUsage(new DefinitionTag("kanj-rzad-uzy", 13)),		
-		ateji(new DefinitionTag("ate", 13)),
-		kanaGikunMeaningJikujikunSpecialKanjiReading(new DefinitionTag("kana-gik-jiku", 13)),
+		kanjiIrregularUsage(new DefinitionTag("kanj-niere-uzy", 13, "nieregularne użycie kanji")),
+		kanaIrregularUsage(new DefinitionTag("kana-niere-uzy", 13, "nieregularne użycie kana")),
+		kanjiOkuriganaUsage(new DefinitionTag("kanj-okuri-uzy", 13, "użycie okurigana kanji")),
+		kanjiOutDatedUsage(new DefinitionTag("kanj-przes-uzy", 13, "przestarzałe użycie kanji")),
+		kanaOutDatedUsage(new DefinitionTag("kana-przes-uzy", 13, "przestarzałe użycie kana")),
+		kanjiRarelyUsage(new DefinitionTag("kanj-rzad-uzy", 13, "kanji rzadko używane")),		
+		ateji(new DefinitionTag("ate", 13, "ateji")),
+		kanaGikunMeaningJikujikunSpecialKanjiReading(new DefinitionTag("kana-gik-jiku", 13, "gikun (znaczenie jako czytanie) lub jukujikun (specjalne czytanie kanji)")),
 		
-		onamatopoeicMimeticWord(new DefinitionTag("ono", 14)),
+		onamatopoeicMimeticWord(new DefinitionTag("ono", 14, "onomatopeja")),
 		
-		verbKeigoHigh(new DefinitionTag("hon-wyw", 15)),
-		verbKeigoLow(new DefinitionTag("hon-unż", 15)),
+		verbKeigoHigh(new DefinitionTag("hon-wyw", 15, "czasownik wywyższający")),
+		verbKeigoLow(new DefinitionTag("hon-unż", 15, "czasownik uniżający")),
 		
-		obscure(new DefinitionTag("mał-zna", 16)),
-		archaism(new DefinitionTag("arch", 17)),
-		obsolete(new DefinitionTag("przes", 17)),
+		obscure(new DefinitionTag("mał-zna", 16, "mało znane słowo")),
+		archaism(new DefinitionTag("arch", 17, "archaizm")),
+		obsolete(new DefinitionTag("przes", 17, "przestarzałe słowo")),
 		
-		unclassified(new DefinitionTag("niesk", 17)),
+		unclassified(new DefinitionTag("niesk", 17, "słowo nieskalsyfikowane")),
 		
-		empty(new DefinitionTag("", 999)),
-		unknown(new DefinitionTag("", 999)),
+		empty(new DefinitionTag("", 999, "pusty")),
+		unknown(new DefinitionTag("", 999, "nieznany")),
 		
 		;
 		
@@ -1252,10 +1248,12 @@ public class YomichanGenerator {
 		
 		private String description;
 		
+		/*
 		public DefinitionTag(String tag, int sortingOrder) {
 			this.tag = tag;
 			this.sortingOrder = sortingOrder;
 		}
+		*/
 		
 		public DefinitionTag(String tag, int sortingOrder, String description) {
 			this.tag = tag;
