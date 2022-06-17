@@ -135,6 +135,7 @@ public class YomichanGenerator {
 		religion(new DefinitionTag("reli", 30, "religia")),
 		service(new DefinitionTag("usłu", 31, "usługa")),
 		group(new DefinitionTag("grup", 32, "grupa")),
+		document(new DefinitionTag("grup", 33, "dokument")),
 		
 		kanjiAlone(new DefinitionTag("kanj-sam", 12, "kanji występujący zwykle samodzielnie")),
 		kanaAlone(new DefinitionTag("kana-sam", 12, "kana występująca zwykle samodzielnie")),
@@ -261,6 +262,7 @@ public class YomichanGenerator {
 			put(DictionaryEntryType.WORD_RELIGION, DefinitionTagCommonDef.religion);			
 			put(DictionaryEntryType.WORD_SERVICE, DefinitionTagCommonDef.service);			
 			put(DictionaryEntryType.WORD_GROUP, DefinitionTagCommonDef.group);
+			put(DictionaryEntryType.WORD_DOCUMENT, DefinitionTagCommonDef.document);
 			
 			put(DictionaryEntryType.WORD_EMPTY, DefinitionTagCommonDef.empty);
 			put(DictionaryEntryType.UNKNOWN, DefinitionTagCommonDef.unknown);			
@@ -559,13 +561,15 @@ public class YomichanGenerator {
 							}
 						}
 					}
-
 					
 					// generowanie sequenceNumber
 					termBankEntry.setSequenceNumber(jmdictEntry.getEntryId());
 					
 					// generowanie termTag
 					// noop
+					
+					// generowanie popularity
+					generatePopularity(kanjiInfo, readingInfo, termBankEntry);
 
 					
 					////////// !!!!!!!!!!!!!!!!!!!!
@@ -607,7 +611,6 @@ public class YomichanGenerator {
 			currentTermBankList = null;
 		}		
 	}
-	
 
 	private static void saveTermBank(String outputDir, List<List<TermBankEntry>> termBankListList) {
 		
@@ -689,45 +692,47 @@ public class YomichanGenerator {
 	private static void generateDefinitionTag(KanjiInfo kanjiInfo, ReadingInfo readingInfo, Sense sense, TermBankEntry termBankEntry) {
 		
 		// pobieranie informacji z kanji info
-		List<KanjiAdditionalInfoEnum> kanjiAdditionalInfoList = kanjiInfo.getKanjiAdditionalInfoList();
-		
-		for (KanjiAdditionalInfoEnum kanjiAdditionalInfoEnum : kanjiAdditionalInfoList) {
+		if (kanjiInfo != null) {
+			List<KanjiAdditionalInfoEnum> kanjiAdditionalInfoList = kanjiInfo.getKanjiAdditionalInfoList();
 			
-			switch (kanjiAdditionalInfoEnum) {
-			
-			case ATEJI_PHONETIC_READING:
-				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.ateji.getDefinitionTag().getTag());
+			for (KanjiAdditionalInfoEnum kanjiAdditionalInfoEnum : kanjiAdditionalInfoList) {
 				
-				break;
-			
-			case WORD_CONTAINING_IRREGULAR_KANJI_USAGE:
-				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiIrregularUsage.getDefinitionTag().getTag());
+				switch (kanjiAdditionalInfoEnum) {
 				
-				break;
+				case ATEJI_PHONETIC_READING:
+					termBankEntry.addDefinitionTag(DefinitionTagCommonDef.ateji.getDefinitionTag().getTag());
+					
+					break;
 				
-			case WORD_CONTAINING_IRREGULAR_KANA_USAGE:
-				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaIrregularUsage.getDefinitionTag().getTag());
+				case WORD_CONTAINING_IRREGULAR_KANJI_USAGE:
+					termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiIrregularUsage.getDefinitionTag().getTag());
+					
+					break;
+					
+				case WORD_CONTAINING_IRREGULAR_KANA_USAGE:
+					termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaIrregularUsage.getDefinitionTag().getTag());
+					
+					break;
+					
+				case IRREGULAR_OKURIGANA_USAGE:
+					termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiOkuriganaUsage.getDefinitionTag().getTag());
+	
+					break;
+					
+				case WORD_CONTAINING_OUT_DATED_KANJI_OR_KANJI_USAGE:
+					termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiOutDatedUsage.getDefinitionTag().getTag());
+					
+					break;
+					
+				case RARELY_USED_KANJI_FORM:
+					termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiRarelyUsage.getDefinitionTag().getTag());
+					
+					break;
+									
+				default:
+					throw new RuntimeException("Unknown kanji additional info enum: " + kanjiAdditionalInfoEnum);
 				
-				break;
-				
-			case IRREGULAR_OKURIGANA_USAGE:
-				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiOkuriganaUsage.getDefinitionTag().getTag());
-
-				break;
-				
-			case WORD_CONTAINING_OUT_DATED_KANJI_OR_KANJI_USAGE:
-				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiOutDatedUsage.getDefinitionTag().getTag());
-				
-				break;
-				
-			case RARELY_USED_KANJI_FORM:
-				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiRarelyUsage.getDefinitionTag().getTag());
-				
-				break;
-								
-			default:
-				throw new RuntimeException("Unknown kanji additional info enum: " + kanjiAdditionalInfoEnum);
-			
+				}
 			}
 		}
 		
@@ -1042,6 +1047,46 @@ public class YomichanGenerator {
 				throw new RuntimeException("Unknown sense part of speech enum: " + partOfSpeechEnum);
 			}			
 		}		
+	}
+	
+	private static void generatePopularity(KanjiInfo kanjiInfo, ReadingInfo readingInfo, TermBankEntry termBankEntry) {
+		
+		List<RelativePriorityEnum> allRelativePriorityEnumList = new ArrayList<>();
+		
+		if (kanjiInfo != null) {
+			allRelativePriorityEnumList.addAll(kanjiInfo.getRelativePriorityList());
+		}
+		
+		allRelativePriorityEnumList.addAll(readingInfo.getRelativePriorityList());
+		
+		//
+		
+		Integer popularity = null;
+		
+		for (RelativePriorityEnum relativePriorityEnum : allRelativePriorityEnumList) {
+		    
+			Integer newPopularity = null;
+			
+		    if (Arrays.asList(RelativePriorityEnum.NEWS_1, RelativePriorityEnum.ICHI_1, RelativePriorityEnum.SPEC_1, RelativePriorityEnum.SPEC_2, RelativePriorityEnum.GAI_1).contains(relativePriorityEnum) == true) {
+		    	newPopularity = 0;
+		    	
+		    } else if (Arrays.asList(RelativePriorityEnum.NEWS_2, RelativePriorityEnum.ICHI_2, RelativePriorityEnum.GAI_2).contains(relativePriorityEnum) == true) {
+		    	newPopularity = -1;
+		    	
+		    } else if (relativePriorityEnum.value().startsWith("nf") == true) {
+		    	newPopularity = -2;
+		    }
+
+			if (newPopularity != null && (popularity == null || newPopularity.intValue() > popularity.intValue())) {
+				popularity = newPopularity;
+			}			
+		}
+		
+		if (popularity == null) {
+			popularity = -3;
+		}
+		
+		termBankEntry.setPopularity(popularity);
 	}
 
 	private static void generateAndSaveTagBank(String outputDir) {

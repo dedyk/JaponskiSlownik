@@ -559,23 +559,6 @@ public class Helper {
 
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
-		/*
-		+ company
-		+ product
-		+ organization
-		
-		+ fem
-		+ given
-		+ masc		
-		+ person
-		+ place		
-		+ station
-		+ surname
-		+ unclass
-		+ work
-		
-		*/
-
 		// mapowanie typow
 		Map<String, DictionaryEntryType> nameTypeMapper = new HashMap<String, DictionaryEntryType>();
 		
@@ -603,6 +586,7 @@ public class Helper {
 		nameTypeMapper.put("relig", DictionaryEntryType.WORD_RELIGION);
 		nameTypeMapper.put("serv", DictionaryEntryType.WORD_SERVICE);
 		nameTypeMapper.put("group", DictionaryEntryType.WORD_GROUP);
+		nameTypeMapper.put("doc", DictionaryEntryType.WORD_DOCUMENT);
 		
 		// informacje wygenerowane automatycznie !!!!!!!!!!!!!!!!!!11
 		// WORD_COMPANY_NAME
