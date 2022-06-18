@@ -4372,8 +4372,11 @@ public class WordGenerator {
 					if (kanjiKanaAndEntryListMapEntrySetEntry.getValue().size() > 1) {
 						
 						for (Entry entry : kanjiKanaAndEntryListMapEntrySetEntry.getValue()) {
-							System.out.println("ENTRY_ID: " + entry.getEntryId());
-							System.out.println("KANJI: " + kanjiKanaAndEntryListMapEntrySetEntry.getKey());
+							
+							if (dictionaryHelper.getEntryFromPolishDictionary(entry.getEntryId()) == null) {
+								System.out.println("ENTRY_ID: " + entry.getEntryId());
+								System.out.println("KANJI: " + kanjiKanaAndEntryListMapEntrySetEntry.getKey());								
+							}
 						}
 					}
 				}				
@@ -4388,8 +4391,11 @@ public class WordGenerator {
 					if (kanaAndEntryListMapEntrySetEntry.getValue().size() > 1) {
 						
 						for (Entry entry : kanaAndEntryListMapEntrySetEntry.getValue()) {
-							System.out.println("ENTRY_ID: " + entry.getEntryId());
-							System.out.println("KANA: " + kanaAndEntryListMapEntrySetEntry.getKey());
+							
+							if (dictionaryHelper.getEntryFromPolishDictionary(entry.getEntryId()) == null) {
+								System.out.println("ENTRY_ID: " + entry.getEntryId());
+								System.out.println("KANA: " + kanaAndEntryListMapEntrySetEntry.getKey());
+							}
 						}
 					}
 				}				
