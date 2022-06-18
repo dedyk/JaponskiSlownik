@@ -69,6 +69,8 @@ import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector.JapaneseWord;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 
@@ -4300,6 +4302,98 @@ public class WordGenerator {
 							throw new UnsupportedOperationException();								
 						}
 				});
+				
+				break;
+			}
+			
+			case SHOW_ALL_MULTIPLE_KANJI_KANA: {
+								
+				Map<String, List<Entry>> kanjiAndEntryListMap = new TreeMap<>();
+				Map<String, List<Entry>> kanaAndEntryListMap = new TreeMap<>();
+				
+				// wczytywanie pomocnika slownikowego
+				Dictionary2Helper dictionaryHelper = Dictionary2Helper.init(wordGeneratorHelper);
+				
+				// pobieramy wszystkie wpisy ze slownika JMdict
+				List<Entry> entryList = dictionaryHelper.getJMdict().getEntryList();
+
+				// dla kazdego wpisu
+				for (Entry entry : entryList) {
+					
+					// pobieramy liste kanji
+					List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
+					
+					for (KanjiInfo kanjiInfo : kanjiInfoList) {
+						
+						// pobieramy kanji
+						String kanji = kanjiInfo.getKanji();
+						
+						List<Entry> entryListForKanji = kanjiAndEntryListMap.get(kanji);
+						
+						if (entryListForKanji == null) {
+							entryListForKanji = new ArrayList<>();
+							
+							kanjiAndEntryListMap.put(kanji, entryListForKanji);
+						}
+						
+						if (entryListForKanji.contains(entry) == false) {
+							entryListForKanji.add(entry);
+						}						
+					}
+					
+					// pobieramy liste czytan
+					List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
+					
+					for (ReadingInfo readingInfo : readingInfoList) {
+						
+						// pobieramy kana
+						String kana = readingInfo.getKana().getValue();
+						
+						List<Entry> entryListForKana = kanaAndEntryListMap.get(kana);
+						
+						if (entryListForKana == null) {
+							entryListForKana = new ArrayList<>();
+							
+							kanaAndEntryListMap.put(kana, entryListForKana);
+						}
+						
+						if (entryListForKana.contains(entry) == false) {
+							entryListForKana.add(entry);
+						}						
+					}
+				}
+				
+				// pobieranie listy pogrupowanych kanji	
+				Set<java.util.Map.Entry<String, List<Entry>>> kanjiKanaAndEntryListMapEntrySet = kanjiAndEntryListMap.entrySet();
+				
+				for (java.util.Map.Entry<String, List<Entry>> kanjiKanaAndEntryListMapEntrySetEntry : kanjiKanaAndEntryListMapEntrySet) {
+					
+					// mamy kanji, ktore wystepuje w kilku grupach
+					if (kanjiKanaAndEntryListMapEntrySetEntry.getValue().size() > 1) {
+						
+						for (Entry entry : kanjiKanaAndEntryListMapEntrySetEntry.getValue()) {
+							System.out.println("ENTRY_ID: " + entry.getEntryId());
+							System.out.println("KANJI: " + kanjiKanaAndEntryListMapEntrySetEntry.getKey());
+						}
+					}
+				}				
+				
+				System.out.println("--------------");
+				
+				Set<java.util.Map.Entry<String, List<Entry>>> kanaAndEntryListMapEntrySet = kanaAndEntryListMap.entrySet();
+				
+				for (java.util.Map.Entry<String, List<Entry>> kanaAndEntryListMapEntrySetEntry : kanaAndEntryListMapEntrySet) {
+					
+					// mamy kana, ktore wystepuje w kilku grupach
+					if (kanaAndEntryListMapEntrySetEntry.getValue().size() > 1) {
+						
+						for (Entry entry : kanaAndEntryListMapEntrySetEntry.getValue()) {
+							System.out.println("ENTRY_ID: " + entry.getEntryId());
+							System.out.println("KANA: " + kanaAndEntryListMapEntrySetEntry.getKey());
+						}
+					}
+				}				
+				
 				
 				break;
 			}

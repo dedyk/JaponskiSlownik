@@ -56,6 +56,8 @@ public enum Operation {
 	
 	FIND_PARTIAL_TRANSLATE_WORDS("find-partial-translate-words", "Pokazuje słowa niewpełni przetłumaczone"),
 	
+	SHOW_ALL_MULTIPLE_KANJI_KANA("show-all-multiple-kanji-kana", "Podaje listę kanji i kana, które występują w kilku różnych słowach"),
+	
 	HELP("help", "Pokazuje pomoc");
 	
 	private String operation;
