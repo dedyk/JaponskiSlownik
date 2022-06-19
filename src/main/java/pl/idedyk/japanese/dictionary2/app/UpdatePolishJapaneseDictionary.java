@@ -3,6 +3,8 @@ package pl.idedyk.japanese.dictionary2.app;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang.SerializationUtils;
+
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
@@ -45,10 +47,17 @@ public class UpdatePolishJapaneseDictionary {
 				continue;
 			}
 			
+			// stworzenie kopii aktualnego wpisu
+			Entry currentPolishEntryCloned = (Entry)SerializationUtils.clone(currentPolishEntry);
+			
 			// wykonanie aktualizacji wpisu
 			boolean needManuallyChange = dictionaryHelper.updatePolishJapaneseEntry(currentPolishEntry, jmdictEntry, entryAdditionalData);
 			
 			if (needManuallyChange == true) {
+				// przywrocenie kopii wpisu do glownego slownika
+				dictionaryHelper.updateEntryInPolishDictionary(currentPolishEntryCloned);
+				
+				// zapisanie zmodyfikowanego wpisu do pliku recznej obslugi
 				entryManuallyChangeList.add(currentPolishEntry);
 			}
 		}
