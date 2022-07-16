@@ -9,4 +9,3 @@ ludzie - 20
 uzupełniacz - 20
 -----------
 suma: 80
-
