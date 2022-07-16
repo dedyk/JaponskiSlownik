@@ -2891,6 +2891,7 @@ public class WordGenerator {
 				Boolean ignoreJmedictEmptyRawData = false;
 				Boolean ignoreDictionaryFilledRawData = false;
 				Boolean onlyNotFoundInJmedict = false;
+				Boolean onlyAlreadyIgnoredButExistsInJmedict = false;
 				Boolean randomWords = false;
 				Boolean force = false;
 				
@@ -2908,6 +2909,7 @@ public class WordGenerator {
 				options.addOption("ijerd", "ignore-jmedict-empty-raw-data", false, "Ignore jmedict empty raw data");
 				options.addOption("idfrd", "ignore-dictionary-filled-raw-data", false, "Ignore dictionary filled raw data");
 				options.addOption("ontij", "only-not-found-in-jmedict", false, "Only not found in jmedict");
+				options.addOption("oaibeij", "only-already-ignored-but-exists-in-jmedict", false, "Only already ignored but exists in jmedict");
 				options.addOption("set", "set-words", false, "Set words");
 				options.addOption("wid", "word-ids", true, "Word ids");
 				options.addOption("gid", "group-ids", true, "Group ids");
@@ -2979,10 +2981,14 @@ public class WordGenerator {
 						onlyNotFoundInJmedict = true;
 					}
 					
+					if (commandLine.hasOption("only-already-ignored-but-exists-in-jmedict") == true) {
+						onlyAlreadyIgnoredButExistsInJmedict = true;
+					}
+					
 					if (commandLine.hasOption("random") == true) {
 						randomWords = true;
 					}
-					
+										
 					if (commandLine.hasOption("word-ids") == true) {
 						
 						wordsIdsSet = new HashSet<>();
@@ -3088,6 +3094,10 @@ public class WordGenerator {
 						}
 						
 						if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.TO_DELETE) == true) {
+							continue;
+						}
+						
+						if (onlyAlreadyIgnoredButExistsInJmedict == true && polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.IGNORE_NO_JMEDICT) == false) {
 							continue;
 						}
 						
