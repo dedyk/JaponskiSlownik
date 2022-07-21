@@ -25,13 +25,23 @@ public class JMDictFixer {
 		
 		// naprawa
 		for (Entry entry : allPolishDictionaryEntryList) {
-			for (Sense sense : entry.getSenseList()) {
-				sense.getMiscList().remove(MiscEnum.OBSCURE_TERM);
-				
+			for (Sense sense : entry.getSenseList()) {				
 				int archaismIndex = sense.getMiscList().indexOf(MiscEnum.ARCHAISM);
 				
 				if (archaismIndex != -1) {
 					sense.getMiscList().set(archaismIndex, MiscEnum.ARCHAIC);
+				}
+				
+				int colloquialism = sense.getMiscList().indexOf(MiscEnum.COLLOQUIALISM);
+				
+				if (colloquialism != -1) {
+					sense.getMiscList().set(colloquialism, MiscEnum.COLLOQUIAL);
+				}
+
+				int obscureTermIndex = sense.getMiscList().indexOf(MiscEnum.OBSCURE_TERM);
+				
+				if (obscureTermIndex != -1) {
+					sense.getMiscList().set(obscureTermIndex, MiscEnum.RARE_TERM);
 				}
 			}
 		}
