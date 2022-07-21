@@ -235,10 +235,10 @@ public class Helper {
 					attributeList.add(AttributeType.KANA_ALONE);
 				}
 
-				// archaism
+				// archaiczny
 				/*
-				if (attributeList.contains(AttributeType.ARCHAISM) == false && groupEntryWordTypeList.contains("arch") == true) {
-					attributeList.add(AttributeType.ARCHAISM);
+				if (attributeList.contains(AttributeType.ARCHAIC) == false && groupEntryWordTypeList.contains("arch") == true) {
+					attributeList.add(AttributeType.ARCHAIC);
 				}
 				*/
 

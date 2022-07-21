@@ -107,16 +107,17 @@ public class JMEDictEntityMapper {
 		addMap("oK", "word containing out-dated kanji or kanji usage");
 		addMap("rK", "rarely-used kanji form");
 		addMap("abbr", "abbreviation");
-		addMap("arch", "archaism");
+		addMap("arch", "archaic");
 		addMap("char", "character");
 		addMap("chn", "children's language");
-		addMap("col", "colloquialism");
+		addMap("col", "colloquial");
 		addMap("company", "company name");
 		addMap("creat", "creature");		
 		addMap("dated", "dated term");
 		addMap("dei", "deity");
 		addMap("derog", "derogatory");
 		addMap("doc", "document");
+		addMap("euph", "euphemistic");
 		addMap("ev", "event");
 		addMap("fam", "familiar language");
 		addMap("fem", "female term or language");
@@ -136,7 +137,6 @@ public class JMEDictEntityMapper {
 		addMap("net-sl", "Internet slang");
 		addMap("obj", "object");
 		addMap("obs", "obsolete term");
-		addMap("obsc", "obscure term");
 		addMap("on-mim", "onomatopoeic or mimetic word");
 		addMap("organization", "organization name");
 		addMap("oth", "other");
@@ -147,7 +147,7 @@ public class JMEDictEntityMapper {
 		addMap("product", "product name");
 		addMap("proverb", "proverb");
 		addMap("quote", "quotation");
-		addMap("rare", "rare");
+		addMap("rare", "rare term");
 		addMap("relig", "religion");
 		addMap("sens", "sensitive");
 		addMap("serv", "service");

@@ -155,7 +155,7 @@ public class YomichanGenerator {
 		verbKeigoLow(new DefinitionTag("hon-unż", 15, "czasownik uniżający")),
 		
 		obscure(new DefinitionTag("mał-zna", 16, "mało znane słowo")),
-		archaism(new DefinitionTag("arch", 17, "archaizm")),
+		archaic(new DefinitionTag("arch", 17, "archaiczny")),
 		obsolete(new DefinitionTag("przes", 17, "przestarzałe słowo")),
 		
 		unclassified(new DefinitionTag("niesk", 17, "słowo nieskalsyfikowane")),
@@ -292,7 +292,7 @@ public class YomichanGenerator {
 			
 			put(AttributeType.OBSCURE, DefinitionTagCommonDef.obscure);
 			
-			put(AttributeType.ARCHAISM, DefinitionTagCommonDef.archaism);
+			put(AttributeType.ARCHAIC, DefinitionTagCommonDef.archaic);
 			put(AttributeType.OBSOLETE, DefinitionTagCommonDef.obsolete);
 		}
 	};
@@ -415,7 +415,7 @@ public class YomichanGenerator {
 				// generowanie popularity
 				{
 					boolean isCommon = false;
-					boolean isArchaism = false;
+					boolean isArchaic = false;
 					boolean isObscure = false;
 					boolean isObsolete = false;
 					
@@ -435,8 +435,8 @@ public class YomichanGenerator {
 									isCommon = true;
 								}
 								
-								if (attribute.getAttributeType() == AttributeType.ARCHAISM) {
-									isArchaism = true;
+								if (attribute.getAttributeType() == AttributeType.ARCHAIC) {
+									isArchaic = true;
 								}
 								
 								if (attribute.getAttributeType() == AttributeType.OBSCURE) {
@@ -459,7 +459,7 @@ public class YomichanGenerator {
 					} else if (isObsolete == true) {
 						termBankEntry.setPopularity(-3);
 					
-					} else if (isArchaism == true) {
+					} else if (isArchaic == true) {
 						termBankEntry.setPopularity(-4);
 						
 					} else {
