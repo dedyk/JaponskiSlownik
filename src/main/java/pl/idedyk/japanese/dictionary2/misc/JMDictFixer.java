@@ -6,7 +6,6 @@ import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.SaveEntryListAsHumanCsvConfig;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 
 public class JMDictFixer {
@@ -25,7 +24,8 @@ public class JMDictFixer {
 		
 		// naprawa
 		for (Entry entry : allPolishDictionaryEntryList) {
-			for (Sense sense : entry.getSenseList()) {				
+			for (@SuppressWarnings("unused") Sense sense : entry.getSenseList()) {	
+				/*
 				int archaismIndex = sense.getMiscList().indexOf(MiscEnum.ARCHAISM);
 				
 				if (archaismIndex != -1) {
@@ -43,6 +43,7 @@ public class JMDictFixer {
 				if (obscureTermIndex != -1) {
 					sense.getMiscList().set(obscureTermIndex, MiscEnum.RARE_TERM);
 				}
+				*/
 			}
 		}
 		
