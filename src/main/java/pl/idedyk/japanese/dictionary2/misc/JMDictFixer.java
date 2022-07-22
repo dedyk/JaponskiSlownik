@@ -44,6 +44,14 @@ public class JMDictFixer {
 					sense.getMiscList().set(obscureTermIndex, MiscEnum.RARE_TERM);
 				}
 				*/
+				
+				/*
+				int pharmacyIdx = sense.getFieldList().indexOf(FieldEnum.PHARMACY);
+				
+				if (pharmacyIdx != -1) {
+					sense.getFieldList().set(pharmacyIdx, FieldEnum.PHARMACOLOGY);
+				}
+				*/
 			}
 		}
 		
