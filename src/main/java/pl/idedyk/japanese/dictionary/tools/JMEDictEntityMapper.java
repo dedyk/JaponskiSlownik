@@ -42,7 +42,7 @@ public class JMEDictEntityMapper {
 		addMap("bot", "botany");
 		addMap("Buddh", "Buddhism");
 		addMap("bus", "business");
-		addMap("cards", "cards");
+		addMap("cards", "card games");
 		addMap("chem", "chemistry");
 		addMap("Christn", "Christianity");
 		addMap("cloth", "clothing");
