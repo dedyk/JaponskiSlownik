@@ -585,6 +585,7 @@ public class Helper {
 		nameTypeMapper.put("oth", DictionaryEntryType.WORD_OTHER);
 		nameTypeMapper.put("relig", DictionaryEntryType.WORD_RELIGION);
 		nameTypeMapper.put("serv", DictionaryEntryType.WORD_SERVICE);
+		nameTypeMapper.put("ship", DictionaryEntryType.WORD_SHIP_NAME);
 		nameTypeMapper.put("group", DictionaryEntryType.WORD_GROUP);
 		nameTypeMapper.put("doc", DictionaryEntryType.WORD_DOCUMENT);
 		

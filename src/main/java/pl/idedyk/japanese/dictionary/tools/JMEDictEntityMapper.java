@@ -162,6 +162,7 @@ public class JMEDictEntityMapper {
 		addMap("relig", "religion");
 		addMap("sens", "sensitive");
 		addMap("serv", "service");
+		addMap("ship", "ship name");
 		addMap("sl", "slang");
 		addMap("station", "railway station");
 		addMap("surname", "family or surname");
