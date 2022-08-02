@@ -93,6 +93,7 @@ public class JMEDictEntityMapper {
 		addMap("photo", "photography");
 		addMap("physics", "physics");
 		addMap("physiol", "physiology");
+		addMap("politics", "politics");
 		addMap("print", "printing");
 		addMap("psy", "psychiatry");
 		addMap("psyanal", "psychoanalysis");
