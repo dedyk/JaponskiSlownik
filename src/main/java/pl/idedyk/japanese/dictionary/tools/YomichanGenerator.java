@@ -137,7 +137,7 @@ public class YomichanGenerator {
 		group(new DefinitionTag("grup", 32, "grupa")),
 		document(new DefinitionTag("grup", 33, "dokument")),
 		
-		kanjiAlone(new DefinitionTag("kanj-sam", 12, "kanji występujący zwykle samodzielnie")),
+		// kanjiAlone(new DefinitionTag("kanj-sam", 12, "kanji występujący zwykle samodzielnie")),
 		kanaAlone(new DefinitionTag("kana-sam", 12, "kana występująca zwykle samodzielnie")),
 		
 		kanjiIrregularUsage(new DefinitionTag("kanj-niere-uzy", 13, "nieregularne użycie kanji")),
@@ -280,7 +280,7 @@ public class YomichanGenerator {
 			put(AttributeType.VERB_TRANSITIVITY, DefinitionTagCommonDef.verbTransitivity);
 			put(AttributeType.VERB_INTRANSITIVITY, DefinitionTagCommonDef.verbIntransitivity);
 
-			put(AttributeType.KANJI_ALONE, DefinitionTagCommonDef.kanjiAlone);
+			// put(AttributeType.KANJI_ALONE, DefinitionTagCommonDef.kanjiAlone);
 			put(AttributeType.KANA_ALONE, DefinitionTagCommonDef.kanaAlone);
 
 			put(AttributeType.ATEJI, DefinitionTagCommonDef.ateji);
@@ -758,10 +758,12 @@ public class YomichanGenerator {
 				
 				break;
 				
+			/*	
 			case WORD_USUALLY_WRITTEN_USING_KANJI_ALONE:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiAlone.getDefinitionTag().getTag());
 				
 				break;
+			*/
 				
 			default:
 				throw new RuntimeException("Unknown reading additional info enum: " + readingAdditionalInfoEnum);

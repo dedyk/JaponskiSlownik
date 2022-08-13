@@ -270,6 +270,9 @@ public class JMEDictEntityMapper {
 		addMap("ok", "out-dated or obsolete kana usage");
 		addMap("uK", "word usually written using kanji alone");
 		
+		addMap("sK", "search-only kanji form");
+		addMap("sk", "search-only kana form");
+		
 		addMap("fem", "female given name or forename");
 		addMap("masc", "male given name or forename");
 	}
