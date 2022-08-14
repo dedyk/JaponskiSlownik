@@ -40,12 +40,13 @@ import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 
 public class Validator {
 
 	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries,
 			List<KanaEntry> hiraganaEntries, List<KanaEntry> katakanaEntries,
-			JMENewDictionary jmeNewDictionary, JMENewDictionary jmeNewNameDictionary)
+			JMENewDictionary jmeNewNameDictionary)
 			throws DictionaryException {
 
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
@@ -246,13 +247,14 @@ public class Validator {
 				}
 			}		
 		}
+		
+		// wczytywanie pomocnika slownikowego
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 						
-		if (jmeNewDictionary != null) {
+		if (dictionaryHelper != null) {
 			
 			boolean wasError = false;
-			
-			DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
-			
+						
 			for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseKanjiEntries) {
 			
 				if (currentPolishJapaneseEntry.getParseAdditionalInfoList().contains(
@@ -260,6 +262,11 @@ public class Validator {
 					
 					continue;
 				}
+				
+				
+				// FIXME: szukanie entry wedlug PolishJapaneseEntry
+				
+				tutaj();
 								
 				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(currentPolishJapaneseEntry);
 				

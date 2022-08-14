@@ -28,7 +28,6 @@ import pl.idedyk.japanese.dictionary.api.dto.TatoebaSentence;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
@@ -397,7 +396,7 @@ public class CsvReaderWriter {
 		public void write(CsvWriter csvWriter, KanjiEntryForDictionary kanjiEntry) throws IOException;
 	}
 	
-	public static void generateWordPowerCsv(OutputStream out, JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
+	public static void generateWordPowerCsv(OutputStream out, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
 		
 		TreeMap<Integer, List<PolishJapaneseEntry>> groupByPower = new TreeMap<>();
 		
@@ -1046,13 +1045,14 @@ public class CsvReaderWriter {
 		csvWriter.close();
 	}	
 	
+	/*
 	public static ICustomAdditionalCsvWriter getCustomAdditionaCsvWriterToAddEnglishTranslate(final JMENewDictionary jmeNewDictionary, final Map<String, KanjiDic2EntryForDictionary> readKanjiDic2) {
 		
 		return new ICustomAdditionalCsvWriter() {
 			
 			@Override
 			public void write(CsvWriter csvWriter, KanjiEntryForDictionary kanjiEntry) throws IOException {
-				/*
+				/ *
 				KanjiDic2EntryForDictionary kanjiDic2EntryForDictionary = readKanjiDic2.get(kanjiEntry.getKanji());
 				
 				if (kanjiDic2EntryForDictionary != null) {
@@ -1064,13 +1064,13 @@ public class CsvReaderWriter {
 				} else {
 					csvWriter.write("");
 				}
-				*/
+				* /
 			}
 			
 			@Override
 			public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
 				
-				/*
+				/ *
 				DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
 				
 				if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
@@ -1117,8 +1117,9 @@ public class CsvReaderWriter {
 						csvWriter.write("");
 					}
 				}
-				*/
+				* /
 			}
 		};
 	}
+	*/
 }

@@ -136,7 +136,7 @@ public class Helper {
 		return result;
 	}
 
-	public static void generateAdditionalInfoFromEdict(JMENewDictionary jmeNewDictionary,
+	public static void generateAdditionalInfoFromEdict(
 			TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
 
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {

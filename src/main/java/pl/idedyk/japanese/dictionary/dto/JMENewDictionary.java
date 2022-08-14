@@ -12,6 +12,7 @@ import java.util.TreeMap;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.common.Helper;
 
+@Deprecated
 public class JMENewDictionary {
 
 	private List<Group> groupList = new ArrayList<Group>();

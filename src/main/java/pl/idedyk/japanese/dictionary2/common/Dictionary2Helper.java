@@ -152,6 +152,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	private JMdict jmdict = null;
 	
 	private Map<Integer, JMdict.Entry> jmdictEntryIdCache;
+	private Map<String, List<JMdict.Entry>> jmdictEntryKanjiKanaCache;
 		
 	//
 	
@@ -692,6 +693,113 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		jaxbMarshaller.marshal(newJMdict, new File(fileName));
 	}
 	
+	public List<JMdict.Entry> findEntryListInJmdict(PolishJapaneseEntry polishJapaneseEntry) throws Exception {
+		
+		List<JMdict.Entry> result = new ArrayList<>();
+		
+		if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.TO_DELETE) == true) {
+			return result;
+		}
+		
+		DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+		
+		if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+			return result;
+		}
+
+		// pobieramy identyfikator entry
+		Integer entryId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+		
+		// jezeli to slowko ma podane identyfikator grupy
+		if (entryId != null) {			
+			Entry jmdictEntry = getJMdictEntry(entryId);
+			
+			if (jmdictEntry != null) {
+				result.add(jmdictEntry);
+			}
+			
+		} else { // proba odnalezienie wlasciwej grupy
+			
+			String kanji = polishJapaneseEntry.getKanji();
+			
+			if (kanji != null && kanji.equals("-") == true) {
+				kanji = null;
+			}
+			
+			String kana = polishJapaneseEntry.getKana();
+			
+			if (kana != null && kana.equals("-") == true) {
+				kana = null;
+			}
+			
+			List<Entry> entryListForKanjiAndKana = findEntryListByKanjiAndKana(kanji, kana);
+			
+			if (entryListForKanjiAndKana != null) {
+				result.addAll(entryListForKanjiAndKana);
+			}
+		}
+		
+		return result;
+	}
+	
+	private List<Entry> findEntryListByKanjiAndKana(String kanji, String kana) throws Exception {
+		
+		// inicjalizacja cache
+		initJmdictEntryKanjiKanaCache();
+		
+		// wyliczenie klucza
+		String key = getKanjiKanaKeyForCache(kanji, kana);
+		
+		return jmdictEntryKanjiKanaCache.get(key);
+	}
+
+	private void initJmdictEntryKanjiKanaCache() throws Exception {
+		
+		// inicjalizacja jmdict
+		getJMdict();
+
+		if (jmdictEntryKanjiKanaCache == null) {
+			
+			System.out.println("Caching JMdict by kanji and kana");
+			
+			jmdictEntryKanjiKanaCache = new TreeMap<>();
+			
+			List<Entry> entryList = jmdict.getEntryList();
+			
+			for (Entry entry : entryList) {
+				
+				// generowanie wszystkich kanji i ich czytan
+				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+				
+				// chodzenie po wszystkich kanji i kana
+				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
+					
+					String kanji = kanjiKanaPair.getKanji();
+					String kana = kanjiKanaPair.getKana();
+					
+					String kanjiKanaKey = getKanjiKanaKeyForCache(kanji, kana);
+					
+					// sprawdzamy, czy taki klucz juz wystepuje w cache'u
+					List<Entry> entryListForKanjiKanaKey = jmdictEntryKanjiKanaCache.get(kanjiKanaKey);
+					
+					if (entryListForKanjiKanaKey == null) {
+						entryListForKanjiKanaKey = new ArrayList<>();
+						
+						jmdictEntryKanjiKanaCache.put(kanjiKanaKey, entryListForKanjiKanaKey);
+					}
+					
+					if (entryListForKanjiKanaKey.contains(entry) == false) {
+						entryListForKanjiKanaKey.add(entry);
+					}
+				}				
+			}			
+		}
+	}
+	
+	private String getKanjiKanaKeyForCache(String kanji, String kana) {
+		return kanji + "." + kana;
+	}
+
 	//
 	
 	private static class JMdictLuceneFields {

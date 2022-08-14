@@ -26,6 +26,7 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 
+@Deprecated
 public class JMEDictNewReader {
 	
 	private JMEDictEntityMapper entityMapper = new JMEDictEntityMapper();

@@ -8,6 +8,7 @@ import java.util.TreeMap;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 
+@Deprecated
 public class DictionaryEntryJMEdictEntityMapper {
 
 	private Map<DictionaryEntryType, List<String>> dictionaryEntryToEntityMapper;

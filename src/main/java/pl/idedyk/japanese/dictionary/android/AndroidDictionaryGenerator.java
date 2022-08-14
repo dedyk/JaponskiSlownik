@@ -76,12 +76,9 @@ public class AndroidDictionaryGenerator {
 
 		// read new jmedict
 		System.out.println("new jmedict");
-		
-		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
-		
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
-		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
 				
+		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
+						
 		List<JMEDictNewNativeEntry> jmedictNameNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
 		
 		JMENewDictionary jmeNewNameDictionary = jmedictNewReader.createJMENewDictionary(jmedictNameNativeList);
@@ -91,7 +88,7 @@ public class AndroidDictionaryGenerator {
 		
 		Map<String, KanjivgEntry> kanjivgEntryMap = KanjivgReader.readKanjivgSingleXmlFile(kanjivgSingleXmlFile, kanjivgPatchDirFile);
 		
-		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmeNewDictionary, jmedictCommon, jmeNewNameDictionary,
+		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedictCommon, jmeNewNameDictionary,
 				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word.json", "output/word-power.csv",
 				"output/transitive_intransitive_pairs.csv", "output/word2.xml"); //, "output/word_group.csv");
 				
@@ -118,7 +115,7 @@ public class AndroidDictionaryGenerator {
 	}
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(
-			JMENewDictionary jmeNewDictionary, TreeMap<String, EDictEntry> jmedictCommon,
+			TreeMap<String, EDictEntry> jmedictCommon,
 			JMENewDictionary jmeNewNameDictionary, String[] sourceFileNames,
 			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationJSONFileName, String destinationPowerFileName,
 			String transitiveIntransitivePairsOutputFile, String word2XmlFile /*, String wordGroupOutputFile */) throws Exception {
@@ -140,7 +137,7 @@ public class AndroidDictionaryGenerator {
 		
 		// validate		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmeNewDictionary, jmeNewNameDictionary);
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmeNewNameDictionary);
 
 		System.out.println("checkAndSavePolishJapaneseEntries: detectDuplicatePolishJapaneseKanjiEntries");
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries, "input/word-duplicate.csv");
@@ -158,7 +155,7 @@ public class AndroidDictionaryGenerator {
 		List<TransitiveIntransitivePair> readTransitiveIntransitivePair = readTransitiveIntransitivePair(transitiveIntransitivePairsFileName);
 
 		// generate additional data from edict
-		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries);
+		Helper.generateAdditionalInfoFromEdict(jmedictCommon, polishJapaneseEntries);
 		
 		// sprawdzenie, czy slowa w tych samych grupach, maja dokladnie to samo romaji
 		Validator.validateEdictGroupRomaji(polishJapaneseEntries);
@@ -175,7 +172,7 @@ public class AndroidDictionaryGenerator {
 
 		System.out.println("checkAndSavePolishJapaneseEntries: generateCsv");
 
-		CsvReaderWriter.generateCsv(new String[] { destinationFileName }, result, true, false, true, false, CsvReaderWriter.getCustomAdditionaCsvWriterToAddEnglishTranslate(jmeNewDictionary, null));
+		CsvReaderWriter.generateCsv(new String[] { destinationFileName }, result, true, false, true, false, null);
 		
 		// zapisanie w formacie JSON		
 		//JSONArray resultJSONArray = JSONReaderWriter.createDictionaryOutputJSON(jmeNewDictionary, polishJapaneseEntries);		
@@ -187,7 +184,7 @@ public class AndroidDictionaryGenerator {
 
 		FileOutputStream outputPowerStream = new FileOutputStream(new File(destinationPowerFileName));
 
-		CsvReaderWriter.generateWordPowerCsv(outputPowerStream, jmeNewDictionary, result);
+		CsvReaderWriter.generateWordPowerCsv(outputPowerStream, result);
 		
 		// generowanie grup slow - wylaczone
 		/*
@@ -385,7 +382,7 @@ public class AndroidDictionaryGenerator {
 
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 
-		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, true, CsvReaderWriter.getCustomAdditionaCsvWriterToAddEnglishTranslate(null, readKanjiDic2));
+		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, true, null);
 
 		return kanjiEntries;
 	}

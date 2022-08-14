@@ -3,6 +3,7 @@ package pl.idedyk.japanese.dictionary.dto;
 import java.util.ArrayList;
 import java.util.List;
 
+@Deprecated
 public class JMEDictNewNativeEntry {
 
 	private Integer ent_seq;
