@@ -10,22 +10,22 @@ import java.util.TreeSet;
 
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class DetectMultipleKanaList {
 
 	public static void main(String[] args) throws Exception {
 		
-		do_zmiany();
-		
-		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
-				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
+		// word 2 - dictionary
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
 		//
 		
 		Set<Integer> groupIdSetInPolishJapaneseEntriesListSet = new TreeSet<>();
 		
-		List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+		List<PolishJapaneseEntry> polishJapaneseEntriesList = dictionaryHelper.getOldPolishJapaneseEntriesList();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
 			
@@ -38,25 +38,25 @@ public class DetectMultipleKanaList {
 		
 		//
 		
-		JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+		List<Entry> jmdictEntryList = dictionaryHelper.getJMdict().getEntryList();
 		
-		List<Group> groupList = jmeNewDictionary.getGroupList();
+		Map<String, Map<String, List<Entry>>> kanjiSet = new TreeMap<>();
 		
-		Map<String, Map<String, List<GroupEntry>>> kanjiSet = new TreeMap<>();
-		
-		for (Group group : groupList) {
-						
-			List<GroupEntry> groupEntryList = group.getGroupEntryList();
+		// chodzimy po wszystkich entry
+		for (Entry entry : jmdictEntryList) {
 			
-			for (GroupEntry groupEntry : groupEntryList) {
+			// wyliczamy pary
+			List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+			
+			for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 				
-				String kanji = groupEntry.getKanji();
+				String kanji = kanjiKanaPair.getKanji();
 				
 				if (kanji == null) {
 					kanji = "-";
 				}
 				
-				Map<String, List<GroupEntry>> kanaMap = kanjiSet.get(kanji);
+				Map<String, List<Entry>> kanaMap = kanjiSet.get(kanji);
 				
 				if (kanaMap == null) {
 					kanaMap = new TreeMap<>();
@@ -66,9 +66,9 @@ public class DetectMultipleKanaList {
 				
 				//
 				
-				String kana = groupEntry.getKana();
+				String kana = kanjiKanaPair.getKana();
 				
-				List<GroupEntry> kanaGroupEntryList = kanaMap.get(kana);
+				List<Entry> kanaGroupEntryList = kanaMap.get(kana);
 				
 				if (kanaGroupEntryList == null) {
 					kanaGroupEntryList = new ArrayList<>();
@@ -78,8 +78,8 @@ public class DetectMultipleKanaList {
 				
 				//
 				
-				kanaGroupEntryList.add(groupEntry);
-			}			
+				kanaGroupEntryList.add(entry);
+			}
 		}
 		
 		//
@@ -92,7 +92,7 @@ public class DetectMultipleKanaList {
 			
 			//
 			
-			Map<String, List<GroupEntry>> kanaMap = kanjiSet.get(kanji);
+			Map<String, List<Entry>> kanaMap = kanjiSet.get(kanji);
 			
 			//
 			
@@ -102,21 +102,30 @@ public class DetectMultipleKanaList {
 				
 				String kana = kanaMapIterator.next();
 				
-				List<GroupEntry> groupEntryList = kanaMap.get(kana);
+				List<Entry> groupEntryList = kanaMap.get(kana);
 				
 				if (groupEntryList.size() > 1) { // mamy kandydatow
 					
 					Set<String> uniqueKanjiAndKanaSetInGroupEntry = new TreeSet<>();
 					
-					// sprawdzamy, co siedzi w tych grupach
-					for (GroupEntry groupEntry : groupEntryList) {
+					// sprawdzamy, co siedzi w tych grupach - INFO: ponizszy kod jest troche nadmiarowy, ale niech zostanie
+					// wystarczylo jedynie
+					// for (Entry entry : groupEntryList) {							
+					//	if (groupIdSetInPolishJapaneseEntriesListSet.contains(entry.getEntryId()) == false) { // czy nie mamy							
+					//		System.out.println(entry.getEntryId() + " - " + kanji + " - " + kana);			
+					//	}
+					// }
+					for (Entry entry : groupEntryList) {
 						
-						// pobieramy pelna liste z grupy i sprawdzamy, co tam siedzi
-						List<GroupEntry> groupEntryList2 = groupEntry.getGroup().getGroupEntryList();
+						// wyliczamy pary
+						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
 						
-						for (GroupEntry groupEntry2 : groupEntryList2) {
+						for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 							
-							String key = groupEntry2.getKanji() + "." + groupEntry2.getKana();
+							String kanjiKanaPairKanji = kanjiKanaPair.getKanji();					
+							String kanjiKanaPairKana = kanjiKanaPair.getKana();
+							
+							String key = kanjiKanaPairKanji + "." + kanjiKanaPairKana;
 							
 							uniqueKanjiAndKanaSetInGroupEntry.add(key);							
 						}
@@ -124,18 +133,17 @@ public class DetectMultipleKanaList {
 					
 					if (uniqueKanjiAndKanaSetInGroupEntry.size() == 1) { // gdy cala zawartosc grupy jest taka sama w droch lub wiecej grupach
 						
-						for (GroupEntry groupEntry : groupEntryList) {						
-							if (groupIdSetInPolishJapaneseEntriesListSet.contains(groupEntry.getGroup().getId()) == false) { // mamy							
-								System.out.println("(*) " + groupEntry.getGroup().getId() + " - " + groupEntry.getKanji() + " - " + groupEntry.getKana());			
+						for (Entry entry : groupEntryList) {			
+							if (groupIdSetInPolishJapaneseEntriesListSet.contains(entry.getEntryId()) == false) { // czy nie mamy							
+								System.out.println("(*) " + entry.getEntryId() + " - " + kanji + " - " + kana);			
 							}
 						}
 						
 					} else {
 						
-						for (GroupEntry groupEntry : groupEntryList) {
-							
-							if (groupIdSetInPolishJapaneseEntriesListSet.contains(groupEntry.getGroup().getId()) == false) { // mamy							
-								System.out.println(groupEntry.getGroup().getId() + " - " + groupEntry.getKanji() + " - " + groupEntry.getKana());			
+						for (Entry entry : groupEntryList) {							
+							if (groupIdSetInPolishJapaneseEntriesListSet.contains(entry.getEntryId()) == false) { // czy nie mamy							
+								System.out.println(entry.getEntryId() + " - " + kanji + " - " + kana);			
 							}
 						}
 					}
