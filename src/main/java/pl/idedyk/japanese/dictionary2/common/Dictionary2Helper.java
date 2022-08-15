@@ -2518,105 +2518,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	}
 	
 	public List<DictionaryEntryType> getOldDictionaryEntryTypeFromKanjiKanaPair(KanjiKanaPair kanjiKanaPair) throws Exception {
-		
-		// mapa z typami i ich odpowiednika w encjach
-		Map<String, String> partOfSpeechValueAndEntityMap = new TreeMap<>();
-		
-		partOfSpeechValueAndEntityMap.put("noun or verb acting prenominally", "adj-f");
-		partOfSpeechValueAndEntityMap.put("adjective (keiyoushi)", "adj-i");
-		partOfSpeechValueAndEntityMap.put("adjective (keiyoushi) - yoi/ii class", "adj-ix");
-		partOfSpeechValueAndEntityMap.put("'kari' adjective (archaic)", "adj-kari");
-		partOfSpeechValueAndEntityMap.put("'ku' adjective (archaic)", "adj-ku");
-		partOfSpeechValueAndEntityMap.put("adjectival nouns or quasi-adjectives (keiyodoshi)", "adj-na");
-		partOfSpeechValueAndEntityMap.put("archaic/formal form of na-adjective", "adj-nari");
-		partOfSpeechValueAndEntityMap.put("nouns which may take the genitive case particle 'no'", "adj-no");
-		partOfSpeechValueAndEntityMap.put("pre-noun adjectival (rentaishi)", "adj-pn");
-		partOfSpeechValueAndEntityMap.put("'shiku' adjective (archaic)", "adj-shiku");
-		partOfSpeechValueAndEntityMap.put("'taru' adjective", "adj-t");
-		partOfSpeechValueAndEntityMap.put("adverb (fukushi)", "adv");
-		partOfSpeechValueAndEntityMap.put("adverb taking the 'to' particle", "adv-to");
-		partOfSpeechValueAndEntityMap.put("auxiliary", "aux");
-		partOfSpeechValueAndEntityMap.put("auxiliary adjective", "aux-adj");
-		partOfSpeechValueAndEntityMap.put("auxiliary verb", "aux-v");
-		partOfSpeechValueAndEntityMap.put("conjunction", "conj");
-		partOfSpeechValueAndEntityMap.put("copula", "cop");
-		partOfSpeechValueAndEntityMap.put("counter", "ctr");
-		partOfSpeechValueAndEntityMap.put("expressions (phrases, clauses, etc.)", "exp");
-		partOfSpeechValueAndEntityMap.put("interjection (kandoushi)", "int");
-		partOfSpeechValueAndEntityMap.put("noun (common) (futsuumeishi)", "n");
-		partOfSpeechValueAndEntityMap.put("adverbial noun (fukushitekimeishi)", "n-adv");
-		partOfSpeechValueAndEntityMap.put("proper noun", "n-pr");
-		partOfSpeechValueAndEntityMap.put("noun, used as a prefix", "n-pref");
-		partOfSpeechValueAndEntityMap.put("noun, used as a suffix", "n-suf");
-		partOfSpeechValueAndEntityMap.put("noun (temporal) (jisoumeishi)", "n-t");
-		partOfSpeechValueAndEntityMap.put("numeric", "num");
-		partOfSpeechValueAndEntityMap.put("pronoun", "pn");
-		partOfSpeechValueAndEntityMap.put("prefix", "pref");
-		partOfSpeechValueAndEntityMap.put("particle", "prt");
-		partOfSpeechValueAndEntityMap.put("suffix", "suf");
-		partOfSpeechValueAndEntityMap.put("unclassified", "unc");
-		partOfSpeechValueAndEntityMap.put("verb unspecified", "v-unspec");
-		partOfSpeechValueAndEntityMap.put("Ichidan verb", "v1");
-		partOfSpeechValueAndEntityMap.put("Ichidan verb - kureru special class", "v1-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb with 'u' ending (archaic)", "v2a-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (upper class) with 'bu' ending (archaic)", "v2b-k");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'bu' ending (archaic)", "v2b-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (upper class) with 'dzu' ending (archaic)", "v2d-k");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'dzu' ending (archaic)", "v2d-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (upper class) with 'gu' ending (archaic)", "v2g-k");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'gu' ending (archaic)", "v2g-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (upper class) with 'hu/fu' ending (archaic)", "v2h-k");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'hu/fu' ending (archaic)", "v2h-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (upper class) with 'ku' ending (archaic)", "v2k-k");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'ku' ending (archaic)", "v2k-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (upper class) with 'mu' ending (archaic)", "v2m-k");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'mu' ending (archaic)", "v2m-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'nu' ending (archaic)", "v2n-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (upper class) with 'ru' ending (archaic)", "v2r-k");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'ru' ending (archaic)", "v2r-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'su' ending (archaic)", "v2s-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (upper class) with 'tsu' ending (archaic)", "v2t-k");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'tsu' ending (archaic)", "v2t-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'u' ending and 'we' conjugation (archaic)", "v2w-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (upper class) with 'yu' ending (archaic)", "v2y-k");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'yu' ending (archaic)", "v2y-s");
-		partOfSpeechValueAndEntityMap.put("Nidan verb (lower class) with 'zu' ending (archaic)", "v2z-s");
-		partOfSpeechValueAndEntityMap.put("Yodan verb with 'bu' ending (archaic)", "v4b");
-		partOfSpeechValueAndEntityMap.put("Yodan verb with 'gu' ending (archaic)", "v4g");
-		partOfSpeechValueAndEntityMap.put("Yodan verb with 'hu/fu' ending (archaic)", "v4h");
-		partOfSpeechValueAndEntityMap.put("Yodan verb with 'ku' ending (archaic)", "v4k");
-		partOfSpeechValueAndEntityMap.put("Yodan verb with 'mu' ending (archaic)", "v4m");
-		partOfSpeechValueAndEntityMap.put("Yodan verb with 'nu' ending (archaic)", "v4n");
-		partOfSpeechValueAndEntityMap.put("Yodan verb with 'ru' ending (archaic)", "v4r");
-		partOfSpeechValueAndEntityMap.put("Yodan verb with 'su' ending (archaic)", "v4s");
-		partOfSpeechValueAndEntityMap.put("Yodan verb with 'tsu' ending (archaic)", "v4t");
-		partOfSpeechValueAndEntityMap.put("Godan verb - -aru special class", "v5aru");
-		partOfSpeechValueAndEntityMap.put("Godan verb with 'bu' ending", "v5b");
-		partOfSpeechValueAndEntityMap.put("Godan verb with 'gu' ending", "v5g");
-		partOfSpeechValueAndEntityMap.put("Godan verb with 'ku' ending", "v5k");
-		partOfSpeechValueAndEntityMap.put("Godan verb - Iku/Yuku special class", "v5k-s");
-		partOfSpeechValueAndEntityMap.put("Godan verb with 'mu' ending", "v5m");
-		partOfSpeechValueAndEntityMap.put("Godan verb with 'nu' ending", "v5n");
-		partOfSpeechValueAndEntityMap.put("Godan verb with 'ru' ending", "v5r");
-		partOfSpeechValueAndEntityMap.put("Godan verb with 'ru' ending (irregular verb)", "v5r-i");
-		partOfSpeechValueAndEntityMap.put("Godan verb with 'su' ending", "v5s");
-		partOfSpeechValueAndEntityMap.put("Godan verb with 'tsu' ending", "v5t");
-		partOfSpeechValueAndEntityMap.put("Godan verb with 'u' ending", "v5u");
-		partOfSpeechValueAndEntityMap.put("Godan verb with 'u' ending (special class)", "v5u-s");
-		partOfSpeechValueAndEntityMap.put("Godan verb - Uru old class verb (old form of Eru)", "v5uru");
-		partOfSpeechValueAndEntityMap.put("intransitive verb", "vi");
-		partOfSpeechValueAndEntityMap.put("Kuru verb - special class", "vk");
-		partOfSpeechValueAndEntityMap.put("irregular nu verb", "vn");
-		partOfSpeechValueAndEntityMap.put("irregular ru verb, plain form ends with -ri", "vr");
-		partOfSpeechValueAndEntityMap.put("noun or participle which takes the aux. verb suru", "vs");
-		partOfSpeechValueAndEntityMap.put("su verb - precursor to the modern suru", "vs-c");
-		partOfSpeechValueAndEntityMap.put("suru verb - included", "vs-i");
-		partOfSpeechValueAndEntityMap.put("suru verb - special class", "vs-s");
-		partOfSpeechValueAndEntityMap.put("transitive verb", "vt");
-		partOfSpeechValueAndEntityMap.put("Ichidan verb - zuru verb (alternative form of -jiru verbs)", "vz");
-		
-		//
-		
+				
 		List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
 		
 		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
@@ -2626,14 +2528,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			List<PartOfSpeechEnum> partOfSpeechList = sense.getPartOfSpeechList();
 			
 			for (PartOfSpeechEnum partOfSpeechEnum : partOfSpeechList) {
-				
-				String partOfSpeechEnumAsEntity = partOfSpeechValueAndEntityMap.get(partOfSpeechEnum.value());
-				
-				if (partOfSpeechEnumAsEntity == null) {
-					throw new RuntimeException("partOfSpeechEnumAsEntity: " + partOfSpeechEnumAsEntity);
-				}
-				
-				DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(partOfSpeechEnumAsEntity);
+								
+				DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(partOfSpeechEnum);
 				
 				if (dictionaryEntryType != null && dictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
 					dictionaryEntryTypeList.add(dictionaryEntryType);

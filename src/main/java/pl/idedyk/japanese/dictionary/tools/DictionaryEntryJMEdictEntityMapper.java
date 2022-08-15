@@ -7,6 +7,7 @@ import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 
 public class DictionaryEntryJMEdictEntityMapper {
 
@@ -14,11 +15,14 @@ public class DictionaryEntryJMEdictEntityMapper {
 	
 	private Map<String, DictionaryEntryType> entityToDictionaryEntryMapper;
 	
+	private Map<PartOfSpeechEnum, String> partOfSpeechEnumToEntityMapper;
+	
 	public DictionaryEntryJMEdictEntityMapper() {
 		
 		dictionaryEntryToEntityMapper = new TreeMap<DictionaryEntryType, List<String>>();
 		entityToDictionaryEntryMapper = new TreeMap<String, DictionaryEntryType>();
-
+		partOfSpeechEnumToEntityMapper = new TreeMap<>();
+		
 		fillMaps();
 	}
 
@@ -162,6 +166,104 @@ public class DictionaryEntryJMEdictEntityMapper {
 		addNullMap("joc");
 		addNullMap("vr");
 		addNullMap("poet");
+		
+		//
+		
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NOUN_OR_VERB_ACTING_PRENOMINALLY, "adj-f");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ADJECTIVE_KEIYOUSHI, "adj-i");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ADJECTIVE_KEIYOUSHI_YOI_II_CLASS, "adj-ix");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.KARI_ADJECTIVE_ARCHAIC, "adj-kari");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.KU_ADJECTIVE_ARCHAIC, "adj-ku");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ADJECTIVAL_NOUNS_OR_QUASI_ADJECTIVES_KEIYODOSHI, "adj-na");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ARCHAIC_FORMAL_FORM_OF_NA_ADJECTIVE, "adj-nari");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NOUNS_WHICH_MAY_TAKE_THE_GENITIVE_CASE_PARTICLE_NO, "adj-no");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.PRE_NOUN_ADJECTIVAL_RENTAISHI, "adj-pn");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.SHIKU_ADJECTIVE_ARCHAIC, "adj-shiku");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.TARU_ADJECTIVE, "adj-t");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ADVERB_FUKUSHI, "adv");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ADVERB_TAKING_THE_TO_PARTICLE, "adv-to");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.AUXILIARY, "aux");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.AUXILIARY_ADJECTIVE, "aux-adj");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.AUXILIARY_VERB, "aux-v");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.CONJUNCTION, "conj");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.COPULA, "cop");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.COUNTER, "ctr");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.EXPRESSIONS_PHRASES_CLAUSES_ETC, "exp");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.INTERJECTION_KANDOUSHI, "int");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NOUN_COMMON_FUTSUUMEISHI, "n");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ADVERBIAL_NOUN_FUKUSHITEKIMEISHI, "n-adv");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.PROPER_NOUN, "n-pr");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NOUN_USED_AS_A_PREFIX, "n-pref");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NOUN_USED_AS_A_SUFFIX, "n-suf");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NOUN_TEMPORAL_JISOUMEISHI, "n-t");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NUMERIC, "num");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.PRONOUN, "pn");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.PREFIX, "pref");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.PARTICLE, "prt");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.SUFFIX, "suf");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.UNCLASSIFIED, "unc");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.VERB_UNSPECIFIED, "v-unspec");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ICHIDAN_VERB, "v1");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ICHIDAN_VERB_KURERU_SPECIAL_CLASS, "v1-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_WITH_U_ENDING_ARCHAIC, "v2a-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_UPPER_CLASS_WITH_BU_ENDING_ARCHAIC, "v2b-k");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_BU_ENDING_ARCHAIC, "v2b-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_UPPER_CLASS_WITH_DZU_ENDING_ARCHAIC, "v2d-k");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_DZU_ENDING_ARCHAIC, "v2d-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_UPPER_CLASS_WITH_GU_ENDING_ARCHAIC, "v2g-k");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_GU_ENDING_ARCHAIC, "v2g-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_UPPER_CLASS_WITH_HU_FU_ENDING_ARCHAIC, "v2h-k");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_HU_FU_ENDING_ARCHAIC, "v2h-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_UPPER_CLASS_WITH_KU_ENDING_ARCHAIC, "v2k-k");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_KU_ENDING_ARCHAIC, "v2k-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_UPPER_CLASS_WITH_MU_ENDING_ARCHAIC, "v2m-k");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_MU_ENDING_ARCHAIC, "v2m-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_NU_ENDING_ARCHAIC, "v2n-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_UPPER_CLASS_WITH_RU_ENDING_ARCHAIC, "v2r-k");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_RU_ENDING_ARCHAIC, "v2r-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_SU_ENDING_ARCHAIC, "v2s-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_UPPER_CLASS_WITH_TSU_ENDING_ARCHAIC, "v2t-k");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_TSU_ENDING_ARCHAIC, "v2t-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_U_ENDING_AND_WE_CONJUGATION_ARCHAIC, "v2w-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_UPPER_CLASS_WITH_YU_ENDING_ARCHAIC, "v2y-k");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_YU_ENDING_ARCHAIC, "v2y-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NIDAN_VERB_LOWER_CLASS_WITH_ZU_ENDING_ARCHAIC, "v2z-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.YODAN_VERB_WITH_BU_ENDING_ARCHAIC, "v4b");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.YODAN_VERB_WITH_GU_ENDING_ARCHAIC, "v4g");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.YODAN_VERB_WITH_HU_FU_ENDING_ARCHAIC, "v4h");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.YODAN_VERB_WITH_KU_ENDING_ARCHAIC, "v4k");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.YODAN_VERB_WITH_MU_ENDING_ARCHAIC, "v4m");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.YODAN_VERB_WITH_NU_ENDING_ARCHAIC, "v4n");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.YODAN_VERB_WITH_RU_ENDING_ARCHAIC, "v4r");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.YODAN_VERB_WITH_SU_ENDING_ARCHAIC, "v4s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.YODAN_VERB_WITH_TSU_ENDING_ARCHAIC, "v4t");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_ARU_SPECIAL_CLASS, "v5aru");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_WITH_BU_ENDING, "v5b");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_WITH_GU_ENDING, "v5g");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_WITH_KU_ENDING, "v5k");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_IKU_YUKU_SPECIAL_CLASS, "v5k-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_WITH_MU_ENDING, "v5m");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_WITH_NU_ENDING, "v5n");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_WITH_RU_ENDING, "v5r");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_WITH_RU_ENDING_IRREGULAR_VERB, "v5r-i");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_WITH_SU_ENDING, "v5s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_WITH_TSU_ENDING, "v5t");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_WITH_U_ENDING, "v5u");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_WITH_U_ENDING_SPECIAL_CLASS, "v5u-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.GODAN_VERB_URU_OLD_CLASS_VERB_OLD_FORM_OF_ERU, "v5uru");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.INTRANSITIVE_VERB, "vi");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.KURU_VERB_SPECIAL_CLASS, "vk");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.IRREGULAR_NU_VERB, "vn");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.IRREGULAR_RU_VERB_PLAIN_FORM_ENDS_WITH_RI, "vr");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.NOUN_OR_PARTICIPLE_WHICH_TAKES_THE_AUX_VERB_SURU, "vs");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.SU_VERB_PRECURSOR_TO_THE_MODERN_SURU, "vs-c");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.SURU_VERB_INCLUDED, "vs-i");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.SURU_VERB_SPECIAL_CLASS, "vs-s");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.TRANSITIVE_VERB, "vt");
+		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ICHIDAN_VERB_ZURU_VERB_ALTERNATIVE_FORM_OF_JIRU_VERBS, "vz");
+		
+		//
+
 	}
 
 	private void addMap(DictionaryEntryType dictionaryEntryType, String entity) {
@@ -212,6 +314,19 @@ public class DictionaryEntryJMEdictEntityMapper {
 			return null;
 		}
 		
+		return dictionaryEntryType;
+	}
+	
+	public DictionaryEntryType getDictionaryEntryType(PartOfSpeechEnum partOfSpeech) throws DictionaryException {
+		
+		String partOfSpeechEnumAsEntity = partOfSpeechEnumToEntityMapper.get(partOfSpeech);
+		
+		if (partOfSpeechEnumAsEntity == null) {
+			throw new RuntimeException("partOfSpeechEnumAsEntity: " + partOfSpeechEnumAsEntity);
+		}
+		
+		DictionaryEntryType dictionaryEntryType = getDictionaryEntryType(partOfSpeechEnumAsEntity);
+
 		return dictionaryEntryType;
 	}
 }
