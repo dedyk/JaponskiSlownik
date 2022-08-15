@@ -3010,24 +3010,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return entriesWhichShouldBeDeletedInOldPolishJapanaeseList;
 	}
 	
-	public static KanjiKanaPair findKanjiKanaPair(List<KanjiKanaPair> kanjiKanaPairList, DictionaryEntry dictionaryEntry) {
-		
-		String dictionaryEntry$Kanji = dictionaryEntry.isKanjiExists() == true ? dictionaryEntry.getKanji() : "";
-		String dictionaryEntry$Kana = dictionaryEntry.getKana() != null ? dictionaryEntry.getKana() : "";
-		
-		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
-			
-			String kanjiKanaPair$Kanji = kanjiKanaPair.getKanji() != null ? kanjiKanaPair.getKanji() : "";
-			String kanjiKanaPair$Kana = kanjiKanaPair.getKana() != null ? kanjiKanaPair.getKana() : "";
-			
-			if (dictionaryEntry$Kanji.equals(kanjiKanaPair$Kanji) == true && dictionaryEntry$Kana.equals(kanjiKanaPair$Kana) == true) {
-				return kanjiKanaPair;
-			}			
-		}
-
-		return null;
-	}
-	
 	public static List<List<KanjiKanaPair>> groupByTheSameTranslate(List<KanjiKanaPair> kanjiKanaPairList) {
 		
 		Map<String, List<KanjiKanaPair>> theSameTranslate = new TreeMap<String, List<KanjiKanaPair>>(); 
