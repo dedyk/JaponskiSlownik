@@ -64,6 +64,7 @@ import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
@@ -71,12 +72,15 @@ import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.GTypeEnum;
@@ -3004,6 +3008,83 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 		
 		return entriesWhichShouldBeDeletedInOldPolishJapanaeseList;
+	}
+	
+	public static KanjiKanaPair findKanjiKanaPair(List<KanjiKanaPair> kanjiKanaPairList, DictionaryEntry dictionaryEntry) {
+		
+		String dictionaryEntry$Kanji = dictionaryEntry.isKanjiExists() == true ? dictionaryEntry.getKanji() : "";
+		String dictionaryEntry$Kana = dictionaryEntry.getKana() != null ? dictionaryEntry.getKana() : "";
+		
+		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+			
+			String kanjiKanaPair$Kanji = kanjiKanaPair.getKanji() != null ? kanjiKanaPair.getKanji() : "";
+			String kanjiKanaPair$Kana = kanjiKanaPair.getKana() != null ? kanjiKanaPair.getKana() : "";
+			
+			if (dictionaryEntry$Kanji.equals(kanjiKanaPair$Kanji) == true && dictionaryEntry$Kana.equals(kanjiKanaPair$Kana) == true) {
+				return kanjiKanaPair;
+			}			
+		}
+
+		return null;
+	}
+	
+	public static List<List<KanjiKanaPair>> groupByTheSameTranslate(List<KanjiKanaPair> kanjiKanaPairList) {
+		
+		Map<String, List<KanjiKanaPair>> theSameTranslate = new TreeMap<String, List<KanjiKanaPair>>(); 
+		
+		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+			
+			StringBuffer groupEntryTranslate = new StringBuffer();
+			
+			for (Sense sense : kanjiKanaPair.getSenseList()) {
+				
+				List<Gloss> glossEngList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+				List<SenseAdditionalInfo> additionalInfoEngList = sense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+				
+				for (Gloss gloss : glossEngList) {
+					groupEntryTranslate.append(gloss.getValue()).append("\n");
+				}
+				
+				for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoEngList) {
+					groupEntryTranslate.append(senseAdditionalInfo.getValue()).append("\n");
+				}
+			}			
+						
+			List<KanjiKanaPair> kanjiKanaPairForTheSameTranslateList = theSameTranslate.get(groupEntryTranslate.toString());
+			
+			if (kanjiKanaPairForTheSameTranslateList == null) {
+				kanjiKanaPairForTheSameTranslateList = new ArrayList<KanjiKanaPair>();
+				
+				theSameTranslate.put(groupEntryTranslate.toString(), kanjiKanaPairForTheSameTranslateList);
+			}			
+			
+			kanjiKanaPairForTheSameTranslateList.add(kanjiKanaPair);
+		}
+		
+		return new ArrayList<List<KanjiKanaPair>>(theSameTranslate.values());
+	}
+	
+	public static CommonWord convertKanjiKanaPairToCommonWord(int id, KanjiKanaPair kanjiKanaPair) {
+		
+		List<String> partOfSpeechList = new ArrayList<String>();
+		List<String> translateStringList = new ArrayList<String>();
+		
+		for (Sense sense : kanjiKanaPair.getSenseList()) {	
+			
+			for (PartOfSpeechEnum partOfSpeech : sense.getPartOfSpeechList()) {
+				partOfSpeechList.add(partOfSpeech.value());
+			}
+			
+			List<Gloss> glossEngList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+
+			for (Gloss gloss : glossEngList) {
+				translateStringList.add(gloss.getValue());
+			}		
+		}
+				
+		CommonWord commonWord = new CommonWord(id, false, kanjiKanaPair.getKanji(), kanjiKanaPair.getKana(), partOfSpeechList.toString(), translateStringList.toString());
+		
+		return commonWord;
 	}
 
 	//

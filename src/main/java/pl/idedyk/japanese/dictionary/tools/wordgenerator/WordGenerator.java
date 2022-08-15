@@ -66,8 +66,10 @@ import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
 import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector.JapaneseWord;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
@@ -1497,23 +1499,26 @@ public class WordGenerator {
 				// wczytanie i cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
 				
+				Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
+				
 				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				JMdict jmdict = dictionaryHelper.getJMdict();
 				
 				// generowanie brakujacych slow
-				List<Group> groupList = jmeNewDictionary.getGroupList();
+				List<Entry> entryList = jmdict.getEntryList();
 				
 				Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
 				
 				int csvId = 1;
 
-				for (Group group : groupList) {
+				for (Entry entry : entryList) {
 					
-					List<GroupEntry> groupEntryList = group.getGroupEntryList();
-					
-					List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
+					// wyliczamy pary
+					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+										
+					List<List<KanjiKanaPair>> groupByTheSameTranslateGroupEntryList = Dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
 								
-					for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
+					for (List<KanjiKanaPair> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
 						
 						for (int groupEntryListTheSameTranslateIdx = 0; groupEntryListTheSameTranslateIdx < groupEntryListTheSameTranslate.size(); ++groupEntryListTheSameTranslateIdx) {
 							
@@ -1521,10 +1526,10 @@ public class WordGenerator {
 								break;
 							}
 							
-							GroupEntry groupEntry = groupEntryListTheSameTranslate.get(groupEntryListTheSameTranslateIdx);
+							KanjiKanaPair kanjiKanaPair = groupEntryListTheSameTranslate.get(groupEntryListTheSameTranslateIdx);
 							
-							String groupEntryKanji = groupEntry.getKanji();
-							String groupEntryKana = groupEntry.getKana();
+							String groupEntryKanji = kanjiKanaPair.getKanji();
+							String groupEntryKana = kanjiKanaPair.getKana();
 							
 							// czy jest znak kanji
 							if (onlyKanji != null && onlyKanji.booleanValue() == true && groupEntryKanji == null) {
@@ -1558,9 +1563,9 @@ public class WordGenerator {
 								
 							if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
 									
-								System.out.println(groupEntry);
+								System.out.println(kanjiKanaPairList);
 								
-								CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
+								CommonWord commonWord = Dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, kanjiKanaPair);
 								
 								if (dontCheckInCommonFile == true || wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
 								
