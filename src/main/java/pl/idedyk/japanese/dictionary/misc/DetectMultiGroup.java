@@ -3,37 +3,26 @@ package pl.idedyk.japanese.dictionary.misc;
 import java.util.ArrayList;
 import java.util.List;
 
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 
 public class DetectMultiGroup {
 	
 	public static void main(String[] args) throws Exception {
 		
-		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
-				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
-		List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
-		
-		JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+		List<PolishJapaneseEntry> polishJapaneseEntriesList = dictionaryHelper.getOldPolishJapaneseEntriesList();
 		
 		List<Integer> idList = new ArrayList<>();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
 			
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
+			List<Entry> foundEntryList = dictionaryHelper.findEntryListInJmdict(polishJapaneseEntry, false);
 			
-			if (groupEntryList == null) {
-				continue;
-			}
-			
-			boolean multiGroup = JMENewDictionary.isMultiGroup(groupEntryList);
-			
-			if (multiGroup == true) {
-				
+			if (foundEntryList.size() > 1) {				
 				idList.add(polishJapaneseEntry.getId());
 				
 				System.out.println(polishJapaneseEntry.getId());

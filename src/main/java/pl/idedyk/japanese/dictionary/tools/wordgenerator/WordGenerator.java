@@ -3644,13 +3644,13 @@ public class WordGenerator {
 			}
 			
 			case FIND_WORDS_WITH_JMEDICT_GROUP_CHANGE: {
+				
+				Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 								
 				// lista wszystkich slow
-				List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
+				List<PolishJapaneseEntry> polishJapaneseEntriesList = dictionaryHelper.getOldPolishJapaneseEntriesList();
 				
 				List<Integer> result = new ArrayList<>();
-				
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
 				
 				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
 					
@@ -3665,22 +3665,21 @@ public class WordGenerator {
 					if (polishJapaneseEntryGroupIdFromJmedictRawDataList == null) {
 						continue;
 					}
-					
+										
 					// szukanie slow
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
-																
-					if (groupEntryList != null && groupEntryList.size() > 0) {
+					List<Entry> entryListForPolishJapaneseEntry = dictionaryHelper.findEntryListInJmdict(polishJapaneseEntry, true);
+					
+					if (entryListForPolishJapaneseEntry.size() == 1) {
 						
-						if (JMENewDictionary.isMultiGroup(groupEntryList) == true) {
-							throw new RuntimeException("MultiGroup for: " + polishJapaneseEntry.getId());
-						}
-
-						if (groupEntryList.get(0).getGroup().getId().intValue() != polishJapaneseEntryGroupIdFromJmedictRawDataList.intValue()) {						
+						if (entryListForPolishJapaneseEntry.get(0).getEntryId().intValue() != polishJapaneseEntryGroupIdFromJmedictRawDataList.intValue()) {						
 							if (result.contains(polishJapaneseEntryGroupIdFromJmedictRawDataList) == false) {
 								result.add(polishJapaneseEntryGroupIdFromJmedictRawDataList);
 							}
 						}
-					}					
+
+					} else if (entryListForPolishJapaneseEntry.size() > 1) {
+						throw new RuntimeException("MultiGroup for: " + polishJapaneseEntry.getId());
+					}
 				}
 				
 				if (result.size() > 0) {

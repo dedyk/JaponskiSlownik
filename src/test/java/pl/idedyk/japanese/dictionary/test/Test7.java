@@ -27,7 +27,7 @@ public class Test7 {
 		List<PolishJapaneseEntry> oldPolishJapaneseEntriesList = dictionaryHelper.getOldPolishJapaneseEntriesList();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : oldPolishJapaneseEntriesList) {
-			List<Entry> foundEntryList = dictionaryHelper.findEntryListInJmdict(polishJapaneseEntry);
+			List<Entry> foundEntryList = dictionaryHelper.findEntryListInJmdict(polishJapaneseEntry, false);
 			
 			if (foundEntryList.size() > 1) {
 				System.out.println("ID: " + polishJapaneseEntry.getId() + " - " + foundEntryList);

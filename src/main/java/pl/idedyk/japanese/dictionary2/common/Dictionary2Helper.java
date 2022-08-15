@@ -64,7 +64,6 @@ import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
@@ -80,7 +79,6 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
-import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.GTypeEnum;
@@ -697,7 +695,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		jaxbMarshaller.marshal(newJMdict, new File(fileName));
 	}
 	
-	public List<JMdict.Entry> findEntryListInJmdict(PolishJapaneseEntry polishJapaneseEntry) throws Exception {
+	public List<JMdict.Entry> findEntryListInJmdict(PolishJapaneseEntry polishJapaneseEntry, boolean addFoundNotMatchedEntries) throws Exception {
 		
 		List<JMdict.Entry> result = new ArrayList<>();
 		
@@ -710,33 +708,46 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
 			return result;
 		}
+		
+		// pobieramy kanji i kana
+		String kanji = polishJapaneseEntry.getKanji();
+		
+		if (kanji != null && kanji.equals("-") == true) {
+			kanji = null;
+		}
+		
+		String kana = polishJapaneseEntry.getKana();
+		
+		if (kana != null && kana.equals("-") == true) {
+			kana = null;
+		}
+		
+		// najpierw pobieramy liste na podstawie kanji i kana
+		List<Entry> entryListForKanjiAndKana = findEntryListByKanjiAndKana(kanji, kana);
 
 		// pobieramy identyfikator entry
-		Integer entryId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+		Integer polishJapaneseEntryEntryId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
 		
-		// jezeli to slowko ma podane identyfikator grupy
-		if (entryId != null) {			
-			Entry jmdictEntry = getJMdictEntry(entryId);
+		// na znalezionej liscie entry list pobieramy ten, ktory jest wskazany przy slowku
+		if (polishJapaneseEntryEntryId != null && entryListForKanjiAndKana != null && entryListForKanjiAndKana.size() > 0) {
 			
-			if (jmdictEntry != null) {
-				result.add(jmdictEntry);
+			// szukamy grupy na podstawie id zawartego w jmedict raw data (rozwiazuje to problem multigroup)
+			for (Entry entry : entryListForKanjiAndKana) {
+				
+				if (entry.getEntryId().intValue() == polishJapaneseEntryEntryId.intValue()) {
+					result.add(entry);
+				}				
 			}
 			
-		} else { // proba odnalezienie wlasciwej grupy
+		} else { // zwrocenie wszystkich znalezionych elementow
 			
-			String kanji = polishJapaneseEntry.getKanji();
-			
-			if (kanji != null && kanji.equals("-") == true) {
-				kanji = null;
+			if (entryListForKanjiAndKana != null) {
+				result.addAll(entryListForKanjiAndKana);
 			}
-			
-			String kana = polishJapaneseEntry.getKana();
-			
-			if (kana != null && kana.equals("-") == true) {
-				kana = null;
-			}
-			
-			List<Entry> entryListForKanjiAndKana = findEntryListByKanjiAndKana(kanji, kana);
+		}
+		
+		// jezeli nic nie znalezlismy, ale jakis entry id jest podany przy slowie to znaczy, ze to slowo albo powinno zostac skasowane ze starego slownika albo zmienilo swoj numer entry id
+		if (result.size() == 0 && polishJapaneseEntryEntryId != null && addFoundNotMatchedEntries == true) {
 			
 			if (entryListForKanjiAndKana != null) {
 				result.addAll(entryListForKanjiAndKana);
