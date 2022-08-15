@@ -2,6 +2,7 @@ package pl.idedyk.japanese.dictionary.tools;
 
 import java.util.HashMap;
 
+@Deprecated
 public class JMEDictEntityMapper {
 
 	private final HashMap<String, String> entityToDescMap;

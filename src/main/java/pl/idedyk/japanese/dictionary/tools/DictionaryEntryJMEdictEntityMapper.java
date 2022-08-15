@@ -317,7 +317,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 		return dictionaryEntryType;
 	}
 	
-	public DictionaryEntryType getDictionaryEntryType(PartOfSpeechEnum partOfSpeech) throws DictionaryException {
+	public String getPartOfSpeechAsEntity(PartOfSpeechEnum partOfSpeech) throws DictionaryException {
 		
 		String partOfSpeechEnumAsEntity = partOfSpeechEnumToEntityMapper.get(partOfSpeech);
 		
@@ -325,7 +325,13 @@ public class DictionaryEntryJMEdictEntityMapper {
 			throw new RuntimeException("partOfSpeechEnumAsEntity: " + partOfSpeechEnumAsEntity);
 		}
 		
-		DictionaryEntryType dictionaryEntryType = getDictionaryEntryType(partOfSpeechEnumAsEntity);
+		return partOfSpeechEnumAsEntity;
+	}
+
+	
+	public DictionaryEntryType getDictionaryEntryType(PartOfSpeechEnum partOfSpeech) throws DictionaryException {
+				
+		DictionaryEntryType dictionaryEntryType = getDictionaryEntryType(getPartOfSpeechAsEntity(partOfSpeech));
 
 		return dictionaryEntryType;
 	}

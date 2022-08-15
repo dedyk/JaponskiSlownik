@@ -68,14 +68,12 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
-import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
@@ -2997,15 +2995,21 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return new ArrayList<List<KanjiKanaPair>>(theSameTranslate.values());
 	}
 	
-	public static CommonWord convertKanjiKanaPairToCommonWord(int id, KanjiKanaPair kanjiKanaPair) {
+	public static CommonWord convertKanjiKanaPairToCommonWord(int id, KanjiKanaPair kanjiKanaPair) throws Exception {
 		
 		List<String> partOfSpeechList = new ArrayList<String>();
 		List<String> translateStringList = new ArrayList<String>();
 		
+		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
+		
 		for (Sense sense : kanjiKanaPair.getSenseList()) {	
 			
 			for (PartOfSpeechEnum partOfSpeech : sense.getPartOfSpeechList()) {
-				partOfSpeechList.add(partOfSpeech.value());
+				String partOfSpeechAsEntity = dictionaryEntryJMEdictEntityMapper.getPartOfSpeechAsEntity(partOfSpeech);
+				
+				if (partOfSpeechList.contains(partOfSpeechAsEntity) == false) {
+					partOfSpeechList.add(partOfSpeechAsEntity);
+				}
 			}
 			
 			List<Gloss> glossEngList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
