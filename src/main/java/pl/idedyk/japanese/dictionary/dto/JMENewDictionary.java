@@ -373,6 +373,7 @@ public class JMENewDictionary {
 		return start + power;		
 	}
 
+	@Deprecated
 	public static class Group {
 		
 		private Integer id;
@@ -415,6 +416,7 @@ public class JMENewDictionary {
 		}
 	}
 	
+	@Deprecated
 	public static class GroupEntry {
 		
 		private JMEDictNewNativeEntry nativeEntry;
@@ -579,6 +581,7 @@ public class JMENewDictionary {
 		}
 	}
 	
+	@Deprecated
 	public static class GroupEntryTranslate {
 		
 		private GroupEntry groupEntry;

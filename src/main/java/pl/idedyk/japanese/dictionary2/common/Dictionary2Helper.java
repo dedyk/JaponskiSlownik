@@ -68,6 +68,7 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
+import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.common.Helper;
@@ -415,6 +416,43 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 		
 		return result;
+	}
+	
+	public KanjiKanaPair findKanjiKanaPair(PolishJapaneseEntry polishJapaneseEntry) throws Exception {
+		
+		List<Entry> entryList = findEntryListInJmdict(polishJapaneseEntry, false);
+		
+		if (entryList.size() == 1) {
+			
+			// generowanie wszystkich kanji i ich czytan
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entryList.get(0));
+
+			// odnalezienie wlaciwej pary
+			
+			Optional<KanjiKanaPair> KanjiKanaPairOptional = kanjiKanaPairListforEntry.stream().filter(kanjiKanaPair -> {
+				
+				String kanjiKanaPairKanji = kanjiKanaPair.getKanji();
+				
+				if (kanjiKanaPairKanji == null) {
+					kanjiKanaPairKanji = "-";
+				}
+
+				String kanjiKanaPairKana = kanjiKanaPair.getKana();
+								
+				//
+				
+				String polishJapaneseEntryKanji = polishJapaneseEntry.getKanji();
+				String polishJapaneseEntryKana = polishJapaneseEntry.getKana();
+								
+				return polishJapaneseEntryKanji.equals(kanjiKanaPairKanji) == true && polishJapaneseEntryKana.equals(kanjiKanaPairKana) == true;				
+			}).findFirst();
+			
+			if (KanjiKanaPairOptional.isPresent() == true) {
+				return KanjiKanaPairOptional.get();
+			}			
+		}
+		
+		return null;
 	}
 	
 	private Query createLuceneDictionaryIndexTermQuery(String word) throws Exception {
@@ -2443,6 +2481,43 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	}
 	
 	private PolishJapaneseEntry generateNewEmptyOldPolishJapaneseEntry(KanjiKanaPair kanjiKanaPair) throws Exception {
+						
+		// generowanie wpisu
+		PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
+		
+		polishJapaneseEntry.setId(-1);
+				
+		polishJapaneseEntry.setDictionaryEntryTypeList(getOldDictionaryEntryTypeFromKanjiKanaPair(kanjiKanaPair));
+		
+		polishJapaneseEntry.setAttributeList(new AttributeList());
+		
+		polishJapaneseEntry.setWordType(WordType.HIRAGANA); // zaraz wpisze sie poprawna wartosc
+		
+		polishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
+		
+		String kanji = kanjiKanaPair.getKanji();
+		String kana = kanjiKanaPair.getKana();
+		
+		if (kanji == null || kanji.equals("") == true) {
+			kanji = "-";
+		}
+		
+		polishJapaneseEntry.setKanji(kanji);
+		polishJapaneseEntry.setKana(kana);
+		polishJapaneseEntry.setRomaji(""); // zaraz wpisze sie poprawna wartosc
+		
+		polishJapaneseEntry.setKnownDuplicatedList(new ArrayList<KnownDuplicate>());
+		polishJapaneseEntry.setParseAdditionalInfoList(new ArrayList<>());				
+		
+		polishJapaneseEntry.setTranslates(new ArrayList<String>());		
+		polishJapaneseEntry.setInfo("");		
+		
+		polishJapaneseEntry.setJmedictRawDataList(new ArrayList<String>()); // zaraz wpisze sie poprawna wartosc
+				
+		return polishJapaneseEntry;
+	}
+	
+	public List<DictionaryEntryType> getOldDictionaryEntryTypeFromKanjiKanaPair(KanjiKanaPair kanjiKanaPair) throws Exception {
 		
 		// mapa z typami i ich odpowiednika w encjach
 		Map<String, String> partOfSpeechValueAndEntityMap = new TreeMap<>();
@@ -2539,12 +2614,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		partOfSpeechValueAndEntityMap.put("suru verb - special class", "vs-s");
 		partOfSpeechValueAndEntityMap.put("transitive verb", "vt");
 		partOfSpeechValueAndEntityMap.put("Ichidan verb - zuru verb (alternative form of -jiru verbs)", "vz");
-				
-		// generowanie wpisu
 		
-		PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
-		
-		polishJapaneseEntry.setId(-1);
+		//
 		
 		List<DictionaryEntryType> dictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
 		
@@ -2602,35 +2673,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			dictionaryEntryTypeList.add(0, DictionaryEntryType.WORD_ADJECTIVE_I);
 		}
-								
-		polishJapaneseEntry.setDictionaryEntryTypeList(dictionaryEntryTypeList);
-		
-		polishJapaneseEntry.setAttributeList(new AttributeList());
-		
-		polishJapaneseEntry.setWordType(WordType.HIRAGANA); // zaraz wpisze sie poprawna wartosc
-		
-		polishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
-		
-		String kanji = kanjiKanaPair.getKanji();
-		String kana = kanjiKanaPair.getKana();
-		
-		if (kanji == null || kanji.equals("") == true) {
-			kanji = "-";
-		}
-		
-		polishJapaneseEntry.setKanji(kanji);
-		polishJapaneseEntry.setKana(kana);
-		polishJapaneseEntry.setRomaji(""); // zaraz wpisze sie poprawna wartosc
-		
-		polishJapaneseEntry.setKnownDuplicatedList(new ArrayList<KnownDuplicate>());
-		polishJapaneseEntry.setParseAdditionalInfoList(new ArrayList<>());				
-		
-		polishJapaneseEntry.setTranslates(new ArrayList<String>());		
-		polishJapaneseEntry.setInfo("");		
-		
-		polishJapaneseEntry.setJmedictRawDataList(new ArrayList<String>()); // zaraz wpisze sie poprawna wartosc
-				
-		return polishJapaneseEntry;
+
+		return dictionaryEntryTypeList;		
 	}
 	
 	private PolishJapaneseEntry getPolishJapaneseEntryToDelete() throws Exception {	

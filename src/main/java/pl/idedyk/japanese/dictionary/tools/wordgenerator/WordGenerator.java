@@ -108,6 +108,9 @@ public class WordGenerator {
 		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
 				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
 		
+		// wczytywanie pomocnika slownikowego
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.init(wordGeneratorHelper);
+		
 		// przetwarzanie operacji
 		switch (operation) {
 			
@@ -241,9 +244,6 @@ public class WordGenerator {
 				
 				// zapis w nowym formacie
 				{						
-					// wczytywanie pomocnika slownikowego
-					Dictionary2Helper dictionaryHelper = Dictionary2Helper.init(wordGeneratorHelper);
-
 					// lista wynikowa
 					List<Entry> resultDictionary2EntryList = new ArrayList<>();
 					
@@ -580,9 +580,6 @@ public class WordGenerator {
 				
 				// zapis w nowym formacie
 				{						
-					// wczytywanie pomocnika slownikowego
-					Dictionary2Helper dictionaryHelper = Dictionary2Helper.init(wordGeneratorHelper);
-
 					// lista wynikowa
 					List<Entry> resultDictionary2EntryList = new ArrayList<>();
 					
@@ -1498,9 +1495,7 @@ public class WordGenerator {
 				
 				// wczytanie i cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-				
-				Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
-				
+								
 				// wczytanie slownika jmedict
 				JMdict jmdict = dictionaryHelper.getJMdict();
 				
@@ -2611,16 +2606,10 @@ public class WordGenerator {
 			}
 			
 			case FIX_DICTIONARY_WORD_TYPE: {
-				
+								
 				// wczytanie slownika
 				List<PolishJapaneseEntry> polishJapaneseEntries = wordGeneratorHelper.getPolishJapaneseEntriesList();
-
-				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
-				
-				// klasa do mapowania typow
-				DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = wordGeneratorHelper.getDictionaryEntryJMEdictEntityMapper();
-				
+								
 				for (PolishJapaneseEntry currentPolishJapaneseEntry : polishJapaneseEntries) {
 					
 					if (currentPolishJapaneseEntry.getParseAdditionalInfoList().contains(
@@ -2628,16 +2617,14 @@ public class WordGenerator {
 						
 						continue;
 					}
-										
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(currentPolishJapaneseEntry);
 					
-					if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+					KanjiKanaPair kanjiKanaPairForPolishJapaneseEntry = dictionaryHelper.findKanjiKanaPair(currentPolishJapaneseEntry);
+															
+					if (kanjiKanaPairForPolishJapaneseEntry != null) {
 						
-						GroupEntry groupEntry = groupEntryList.get(0);
-						
-						Set<String> groupEntryWordTypeList = groupEntry.getWordTypeList();
-						
-						if (groupEntryWordTypeList.size() == 0) {
+						List<DictionaryEntryType> allDictionaryEntryTypeList = dictionaryHelper.getOldDictionaryEntryTypeFromKanjiKanaPair(kanjiKanaPairForPolishJapaneseEntry);
+												
+						if (allDictionaryEntryTypeList.size() == 0) {
 							continue;
 						}
 						
@@ -2648,35 +2635,15 @@ public class WordGenerator {
 						
 						// czy nalezy usunac jakis typ
 						for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntryDictionaryEntryTypeList) {
-
-							List<String> entityList = dictionaryEntryJMEdictEntityMapper.getEntity(currentDictionaryEntryType);
 							
-							boolean isOneContains = false;
-							
-							for (String currentEntity : entityList) {
-								
-								if (groupEntryWordTypeList.contains(currentEntity) == true) {
-									
-									isOneContains = true;
-									
-									break;
-								}
-							}
-							
-							if (isOneContains == false) {
+							if (allDictionaryEntryTypeList.contains(currentDictionaryEntryType) == false) {
 								dictionaryEntryTypeToDelete.add(currentDictionaryEntryType);
 							}
 						}						
 						
 						// czy nalezy dodac jakis typ
-						for (String currentEntity : groupEntryWordTypeList) {
-							
-							DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(currentEntity);
-							
-							if (dictionaryEntryType == null) {
-								continue;
-							}
-							
+						for (DictionaryEntryType dictionaryEntryType : allDictionaryEntryTypeList) {
+														
 							if (polishJapaneseEntryDictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
 								dictionaryEntryTypeToAdd.add(dictionaryEntryType);
 							}
@@ -3445,10 +3412,7 @@ public class WordGenerator {
 					//
 					
 					// zapis w nowym formacie
-					{						
-						// wczytywanie pomocnika slownikowego
-						Dictionary2Helper dictionaryHelper = Dictionary2Helper.init(wordGeneratorHelper);
-
+					{
 						// lista wynikowa
 						List<Entry> resultDictionary2EntryList = new ArrayList<>();
 						
@@ -3644,9 +3608,7 @@ public class WordGenerator {
 			}
 			
 			case FIND_WORDS_WITH_JMEDICT_GROUP_CHANGE: {
-				
-				Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
-								
+												
 				// lista wszystkich slow
 				List<PolishJapaneseEntry> polishJapaneseEntriesList = dictionaryHelper.getOldPolishJapaneseEntriesList();
 				
@@ -4324,10 +4286,7 @@ public class WordGenerator {
 								
 				Map<String, List<Entry>> kanjiAndEntryListMap = new TreeMap<>();
 				Map<String, List<Entry>> kanaAndEntryListMap = new TreeMap<>();
-				
-				// wczytywanie pomocnika slownikowego
-				Dictionary2Helper dictionaryHelper = Dictionary2Helper.init(wordGeneratorHelper);
-				
+								
 				// pobieramy wszystkie wpisy ze slownika JMdict
 				List<Entry> entryList = dictionaryHelper.getJMdict().getEntryList();
 
