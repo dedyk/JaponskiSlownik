@@ -68,6 +68,7 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
+import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.common.Helper;
@@ -421,36 +422,49 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		List<Entry> entryList = findEntryListInJmdict(polishJapaneseEntry, false);
 		
 		if (entryList.size() == 1) {
-			
+						
 			// generowanie wszystkich kanji i ich czytan
 			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entryList.get(0));
 
-			// odnalezienie wlaciwej pary
-			
-			Optional<KanjiKanaPair> KanjiKanaPairOptional = kanjiKanaPairListforEntry.stream().filter(kanjiKanaPair -> {
-				
-				String kanjiKanaPairKanji = kanjiKanaPair.getKanji();
-				
-				if (kanjiKanaPairKanji == null) {
-					kanjiKanaPairKanji = "-";
-				}
-
-				String kanjiKanaPairKana = kanjiKanaPair.getKana();
-								
-				//
-				
-				String polishJapaneseEntryKanji = polishJapaneseEntry.getKanji();
-				String polishJapaneseEntryKana = polishJapaneseEntry.getKana();
-								
-				return polishJapaneseEntryKanji.equals(kanjiKanaPairKanji) == true && polishJapaneseEntryKana.equals(kanjiKanaPairKana) == true;				
-			}).findFirst();
-			
-			if (KanjiKanaPairOptional.isPresent() == true) {
-				return KanjiKanaPairOptional.get();
-			}			
+			return findKanjiKanaPair(kanjiKanaPairListforEntry, polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());			
 		}
 		
 		return null;
+	}
+	
+	public KanjiKanaPair findKanjiKanaPair(List<KanjiKanaPair> kanjiKanaPairListforEntry, final String kanji, final String kana) {
+				
+		// odnalezienie wlaciwej pary			
+		Optional<KanjiKanaPair> KanjiKanaPairOptional = kanjiKanaPairListforEntry.stream().filter(kanjiKanaPair -> {
+			
+			String kanjiKanaPairKanji = kanjiKanaPair.getKanji();
+			
+			if (kanjiKanaPairKanji == null) {
+				kanjiKanaPairKanji = "-";
+			}
+
+			String kanjiKanaPairKana = kanjiKanaPair.getKana();
+							
+			//
+			
+			String kanji2 = kanji;
+			
+			if (kanji2 == null) {
+				kanji2 = "-";
+			}
+			
+			//
+										
+			return kanji2.equals(kanjiKanaPairKanji) == true && kana.equals(kanjiKanaPairKana) == true;
+			
+		}).findFirst();
+		
+		if (KanjiKanaPairOptional.isPresent() == true) {
+			return KanjiKanaPairOptional.get();
+			
+		} else {
+			return null;
+		}
 	}
 	
 	private Query createLuceneDictionaryIndexTermQuery(String word) throws Exception {
@@ -2478,7 +2492,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return newOldPolishJapaneseEntryList;
 	}
 	
-	private PolishJapaneseEntry generateNewEmptyOldPolishJapaneseEntry(KanjiKanaPair kanjiKanaPair) throws Exception {
+	public PolishJapaneseEntry generateNewEmptyOldPolishJapaneseEntry(KanjiKanaPair kanjiKanaPair) throws Exception {
 						
 		// generowanie wpisu
 		PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();
@@ -2959,7 +2973,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return entriesWhichShouldBeDeletedInOldPolishJapanaeseList;
 	}
 	
-	public static List<List<KanjiKanaPair>> groupByTheSameTranslate(List<KanjiKanaPair> kanjiKanaPairList) {
+	public List<List<KanjiKanaPair>> groupByTheSameTranslate(List<KanjiKanaPair> kanjiKanaPairList) {
 		
 		Map<String, List<KanjiKanaPair>> theSameTranslate = new TreeMap<String, List<KanjiKanaPair>>(); 
 		
@@ -2995,7 +3009,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return new ArrayList<List<KanjiKanaPair>>(theSameTranslate.values());
 	}
 	
-	public static CommonWord convertKanjiKanaPairToCommonWord(int id, KanjiKanaPair kanjiKanaPair) throws Exception {
+	public CommonWord convertKanjiKanaPairToCommonWord(int id, KanjiKanaPair kanjiKanaPair) throws Exception {
 		
 		List<String> partOfSpeechList = new ArrayList<String>();
 		List<String> translateStringList = new ArrayList<String>();
@@ -3023,6 +3037,54 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		return commonWord;
 	}
+	
+	public String fillJmedictRawDataInOldFormat(Entry entry, KanjiKanaPair kanjiKanaPair, List<String> result) throws Exception {
+		
+		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
+		
+		String groupId = "GroupId: " + entry.getEntryId();
+		
+		if (result.contains(groupId) == false) {
+			result.add(groupId);
+		}
+		
+		for (Sense sense : kanjiKanaPair.getSenseList()) {
+			
+			List<Gloss> glossEngList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+			List<SenseAdditionalInfo> additionalInfoEngList = sense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+			
+			for (Gloss gloss : glossEngList) {
+				
+				result.add("Translate: " + gloss.getValue());
+				
+				List<MiscEnum> miscList = sense.getMiscList();
+				
+				if (miscList != null && miscList.size() > 0) {
+					
+					for (MiscEnum miscEnum : miscList) {
+						result.add("MiscInfo: " + dictionaryEntryJMEdictEntityMapper.getMiscEnumAsEntity(miscEnum));
+					}
+				}
+								
+				if (additionalInfoEngList != null && additionalInfoEngList.size() > 0) {
+					
+					for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoEngList) {
+						result.add("AdditionalInfo: " + senseAdditionalInfo.getValue());
+					}
+				}
+				
+				List<DialectEnum> dialectList = sense.getDialectList();
+				
+				if (dialectList != null && dialectList.size() > 0) {
+					for (DialectEnum dialectEnum : dialectList) {
+						result.add("Dialect: " + dictionaryEntryJMEdictEntityMapper.getDialectEnumAsEntity(dialectEnum));
+					}				
+				}
+			}
+		}
+				
+		return Helper.convertListToString(result);
+	} 
 
 	//
 			

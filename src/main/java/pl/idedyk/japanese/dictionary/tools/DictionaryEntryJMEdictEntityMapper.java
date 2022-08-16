@@ -7,6 +7,8 @@ import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 
 public class DictionaryEntryJMEdictEntityMapper {
@@ -16,12 +18,17 @@ public class DictionaryEntryJMEdictEntityMapper {
 	private Map<String, DictionaryEntryType> entityToDictionaryEntryMapper;
 	
 	private Map<PartOfSpeechEnum, String> partOfSpeechEnumToEntityMapper;
+	private Map<MiscEnum, String> miscEnumToEntityMapper;
+	private Map<DialectEnum, String> dialectEnumToEntityMapper;
 	
 	public DictionaryEntryJMEdictEntityMapper() {
 		
 		dictionaryEntryToEntityMapper = new TreeMap<DictionaryEntryType, List<String>>();
 		entityToDictionaryEntryMapper = new TreeMap<String, DictionaryEntryType>();
+		
 		partOfSpeechEnumToEntityMapper = new TreeMap<>();
+		miscEnumToEntityMapper = new TreeMap<>();
+		dialectEnumToEntityMapper = new TreeMap<>();
 		
 		fillMaps();
 	}
@@ -263,7 +270,78 @@ public class DictionaryEntryJMEdictEntityMapper {
 		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ICHIDAN_VERB_ZURU_VERB_ALTERNATIVE_FORM_OF_JIRU_VERBS, "vz");
 		
 		//
+		
+		miscEnumToEntityMapper.put(MiscEnum.ABBREVIATION, "abbr");
+		miscEnumToEntityMapper.put(MiscEnum.ARCHAIC, "arch");
+		miscEnumToEntityMapper.put(MiscEnum.CHARACTER, "char");
+		miscEnumToEntityMapper.put(MiscEnum.CHILDREN_S_LANGUAGE, "chn");
+		miscEnumToEntityMapper.put(MiscEnum.COLLOQUIAL, "col");
+		miscEnumToEntityMapper.put(MiscEnum.COMPANY_NAME, "company");
+		miscEnumToEntityMapper.put(MiscEnum.CREATURE, "creat");
+		miscEnumToEntityMapper.put(MiscEnum.DATED_TERM, "dated");
+		miscEnumToEntityMapper.put(MiscEnum.DEITY, "dei");
+		miscEnumToEntityMapper.put(MiscEnum.DEROGATORY, "derog");
+		miscEnumToEntityMapper.put(MiscEnum.DOCUMENT, "doc");
+		miscEnumToEntityMapper.put(MiscEnum.EUPHEMISTIC, "euph");
+		miscEnumToEntityMapper.put(MiscEnum.EVENT, "ev");
+		miscEnumToEntityMapper.put(MiscEnum.FAMILIAR_LANGUAGE, "fam");
+		miscEnumToEntityMapper.put(MiscEnum.FEMALE_TERM_OR_LANGUAGE, "fem");
+		miscEnumToEntityMapper.put(MiscEnum.FICTION, "fict");
+		miscEnumToEntityMapper.put(MiscEnum.FORMAL_OR_LITERARY_TERM, "form");
+		miscEnumToEntityMapper.put(MiscEnum.GIVEN_NAME_OR_FORENAME_GENDER_NOT_SPECIFIED, "given");
+		miscEnumToEntityMapper.put(MiscEnum.GROUP, "group");
+		miscEnumToEntityMapper.put(MiscEnum.HISTORICAL_TERM, "hist");
+		miscEnumToEntityMapper.put(MiscEnum.HONORIFIC_OR_RESPECTFUL_SONKEIGO_LANGUAGE, "hon");
+		miscEnumToEntityMapper.put(MiscEnum.HUMBLE_KENJOUGO_LANGUAGE, "hum");
+		miscEnumToEntityMapper.put(MiscEnum.IDIOMATIC_EXPRESSION, "id");
+		miscEnumToEntityMapper.put(MiscEnum.JOCULAR_HUMOROUS_TERM, "joc");
+		miscEnumToEntityMapper.put(MiscEnum.LEGEND, "leg");
+		miscEnumToEntityMapper.put(MiscEnum.MANGA_SLANG, "m-sl");
+		miscEnumToEntityMapper.put(MiscEnum.MALE_TERM_OR_LANGUAGE, "male");
+		miscEnumToEntityMapper.put(MiscEnum.MYTHOLOGY, "myth");
+		miscEnumToEntityMapper.put(MiscEnum.INTERNET_SLANG, "net-sl");
+		miscEnumToEntityMapper.put(MiscEnum.OBJECT, "obj");
+		miscEnumToEntityMapper.put(MiscEnum.OBSOLETE_TERM, "obs");
+		miscEnumToEntityMapper.put(MiscEnum.ONOMATOPOEIC_OR_MIMETIC_WORD, "on-mim");
+		miscEnumToEntityMapper.put(MiscEnum.ORGANIZATION_NAME, "organization");
+		miscEnumToEntityMapper.put(MiscEnum.OTHER, "oth");
+		miscEnumToEntityMapper.put(MiscEnum.FULL_NAME_OF_A_PARTICULAR_PERSON, "person");
+		miscEnumToEntityMapper.put(MiscEnum.PLACE_NAME, "place");
+		miscEnumToEntityMapper.put(MiscEnum.POETICAL_TERM, "poet");
+		miscEnumToEntityMapper.put(MiscEnum.POLITE_TEINEIGO_LANGUAGE, "pol");
+		miscEnumToEntityMapper.put(MiscEnum.PRODUCT_NAME, "product");
+		miscEnumToEntityMapper.put(MiscEnum.PROVERB, "proverb");
+		miscEnumToEntityMapper.put(MiscEnum.QUOTATION, "quote");
+		miscEnumToEntityMapper.put(MiscEnum.RARE_TERM, "rare");
+		miscEnumToEntityMapper.put(MiscEnum.RELIGION, "relig");
+		miscEnumToEntityMapper.put(MiscEnum.SENSITIVE, "sens");
+		miscEnumToEntityMapper.put(MiscEnum.SERVICE, "serv");
+		miscEnumToEntityMapper.put(MiscEnum.SHIP_NAME, "ship");
+		miscEnumToEntityMapper.put(MiscEnum.SLANG, "sl");
+		miscEnumToEntityMapper.put(MiscEnum.RAILWAY_STATION, "station");
+		miscEnumToEntityMapper.put(MiscEnum.FAMILY_OR_SURNAME, "surname");
+		miscEnumToEntityMapper.put(MiscEnum.WORD_USUALLY_WRITTEN_USING_KANA_ALONE, "uk");
+		miscEnumToEntityMapper.put(MiscEnum.UNCLASSIFIED_NAME, "unclass");
+		miscEnumToEntityMapper.put(MiscEnum.VULGAR_EXPRESSION_OR_WORD, "vulg");
+		miscEnumToEntityMapper.put(MiscEnum.WORK_OF_ART_LITERATURE_MUSIC_ETC_NAME, "work");
+		miscEnumToEntityMapper.put(MiscEnum.RUDE_OR_X_RATED_TERM_NOT_DISPLAYED_IN_EDUCATIONAL_SOFTWARE, "X");
+		miscEnumToEntityMapper.put(MiscEnum.YOJIJUKUGO, "yoji");
 
+		//
+		
+		dialectEnumToEntityMapper.put(DialectEnum.BRAZILIAN, "bra");
+		dialectEnumToEntityMapper.put(DialectEnum.HOKKAIDO_BEN, "hob");
+		dialectEnumToEntityMapper.put(DialectEnum.KANSAI_BEN, "ksb");
+		dialectEnumToEntityMapper.put(DialectEnum.KANTOU_BEN, "ktb");
+		dialectEnumToEntityMapper.put(DialectEnum.KYOTO_BEN, "kyb");
+		dialectEnumToEntityMapper.put(DialectEnum.KYUUSHUU_BEN, "kyu");
+		dialectEnumToEntityMapper.put(DialectEnum.NAGANO_BEN, "nab");
+		dialectEnumToEntityMapper.put(DialectEnum.OSAKA_BEN, "osb");
+		dialectEnumToEntityMapper.put(DialectEnum.RYUUKYUU_BEN, "rkb");
+		dialectEnumToEntityMapper.put(DialectEnum.TOUHOKU_BEN, "thb");
+		dialectEnumToEntityMapper.put(DialectEnum.TOSA_BEN, "tsb");
+		dialectEnumToEntityMapper.put(DialectEnum.TSUGARU_BEN, "tsug");
+		
 	}
 
 	private void addMap(DictionaryEntryType dictionaryEntryType, String entity) {
@@ -326,6 +404,28 @@ public class DictionaryEntryJMEdictEntityMapper {
 		}
 		
 		return partOfSpeechEnumAsEntity;
+	}
+
+	public String getMiscEnumAsEntity(MiscEnum miscEnum) throws DictionaryException {
+		
+		String miscEnumAsEntity = miscEnumToEntityMapper.get(miscEnum);
+		
+		if (miscEnumAsEntity == null) {
+			throw new RuntimeException("miscEnumAsEntity: " + miscEnumAsEntity);
+		}
+		
+		return miscEnumAsEntity;
+	}
+
+	public String getDialectEnumAsEntity(DialectEnum dialectEnum) throws DictionaryException {
+		
+		String dialectEnumAsEntity = dialectEnumToEntityMapper.get(dialectEnum);
+		
+		if (dialectEnumAsEntity == null) {
+			throw new RuntimeException("dialectEnumAsEntity: " + dialectEnumAsEntity);
+		}
+		
+		return dialectEnumAsEntity;
 	}
 
 	
