@@ -3370,12 +3370,13 @@ public class WordGenerator {
 										KanjiKanaPair kanjiKanaPair = dictionary2Helper.findKanjiKanaPair(kanjiKanaPairList, 
 												polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getKanji(), polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getKana());
 										
-										PolishJapaneseEntry newTempOldPolishJapaneseEntry = dictionary2Helper.generateNewEmptyOldPolishJapaneseEntry(kanjiKanaPair);
-																			
+										List<String> newTranslatesInOldFormat = dictionary2Helper.generateTranslatesInOldFormat(kanjiKanaPair, null);
+										List<String> additionalInfoInOldFormat = dictionary2Helper.generateAdditionalInfoInOldFormat(kanjiKanaPair, polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getWordType());
+										
 										//
 										
-										csvWriter.write(Helper.convertListToString(newTempOldPolishJapaneseEntry.getTranslates()));
-										csvWriter.write(newTempOldPolishJapaneseEntry.getInfo());
+										csvWriter.write(Helper.convertListToString(newTranslatesInOldFormat));
+										csvWriter.write(Helper.convertListToString(additionalInfoInOldFormat));
 			
 										//
 										

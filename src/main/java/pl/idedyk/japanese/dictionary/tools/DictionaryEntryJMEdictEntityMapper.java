@@ -8,8 +8,10 @@ import java.util.TreeMap;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 
 public class DictionaryEntryJMEdictEntityMapper {
 
@@ -20,6 +22,8 @@ public class DictionaryEntryJMEdictEntityMapper {
 	private Map<PartOfSpeechEnum, String> partOfSpeechEnumToEntityMapper;
 	private Map<MiscEnum, String> miscEnumToEntityMapper;
 	private Map<DialectEnum, String> dialectEnumToEntityMapper;
+	private Map<KanjiAdditionalInfoEnum, String> kanjiAdditionalInfoEnumToEntityMapper;
+	private Map<ReadingAdditionalInfoEnum, String> readingAdditionalInfoEnumToEntityMapper;
 	
 	public DictionaryEntryJMEdictEntityMapper() {
 		
@@ -29,6 +33,8 @@ public class DictionaryEntryJMEdictEntityMapper {
 		partOfSpeechEnumToEntityMapper = new TreeMap<>();
 		miscEnumToEntityMapper = new TreeMap<>();
 		dialectEnumToEntityMapper = new TreeMap<>();
+		kanjiAdditionalInfoEnumToEntityMapper = new TreeMap<>();
+		readingAdditionalInfoEnumToEntityMapper = new TreeMap<>();
 		
 		fillMaps();
 	}
@@ -342,6 +348,22 @@ public class DictionaryEntryJMEdictEntityMapper {
 		dialectEnumToEntityMapper.put(DialectEnum.TOSA_BEN, "tsb");
 		dialectEnumToEntityMapper.put(DialectEnum.TSUGARU_BEN, "tsug");
 		
+		//
+		
+		kanjiAdditionalInfoEnumToEntityMapper.put(KanjiAdditionalInfoEnum.ATEJI_PHONETIC_READING, "ateji");
+		kanjiAdditionalInfoEnumToEntityMapper.put(KanjiAdditionalInfoEnum.WORD_CONTAINING_IRREGULAR_KANA_USAGE, "ik");
+		kanjiAdditionalInfoEnumToEntityMapper.put(KanjiAdditionalInfoEnum.WORD_CONTAINING_IRREGULAR_KANJI_USAGE, "iK");
+		kanjiAdditionalInfoEnumToEntityMapper.put(KanjiAdditionalInfoEnum.IRREGULAR_OKURIGANA_USAGE, "io");
+		kanjiAdditionalInfoEnumToEntityMapper.put(KanjiAdditionalInfoEnum.WORD_CONTAINING_OUT_DATED_KANJI_OR_KANJI_USAGE, "oK");
+		kanjiAdditionalInfoEnumToEntityMapper.put(KanjiAdditionalInfoEnum.RARELY_USED_KANJI_FORM, "rK");
+		kanjiAdditionalInfoEnumToEntityMapper.put(KanjiAdditionalInfoEnum.SEARCH_ONLY_KANJI_FORM, "sK");
+		
+		//
+		
+		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.GIKUN_MEANING_AS_READING_OR_JUKUJIKUN_SPECIAL_KANJI_READING, "gikun");
+		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.WORD_CONTAINING_IRREGULAR_KANA_USAGE, "ik");
+		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.OUT_DATED_OR_OBSOLETE_KANA_USAGE, "ok");
+		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.SEARCH_ONLY_KANA_FORM, "sk");
 	}
 
 	private void addMap(DictionaryEntryType dictionaryEntryType, String entity) {
@@ -428,7 +450,28 @@ public class DictionaryEntryJMEdictEntityMapper {
 		return dialectEnumAsEntity;
 	}
 
-	
+	public String getKanjiAdditionalInfoEnumAsEntity(KanjiAdditionalInfoEnum kanjiAdditionalInfoEnum) throws DictionaryException {
+		
+		String kanjiAdditionalInfoEnumAsEntity = kanjiAdditionalInfoEnumToEntityMapper.get(kanjiAdditionalInfoEnum);
+		
+		if (kanjiAdditionalInfoEnumAsEntity == null) {
+			throw new RuntimeException("kanjiAdditionalInfoEnumAsEntity: " + kanjiAdditionalInfoEnumAsEntity);
+		}
+		
+		return kanjiAdditionalInfoEnumAsEntity;
+	}
+
+	public String getReadingAdditionalInfoEnumAsEntity(ReadingAdditionalInfoEnum readingAdditionalInfoEnum) throws DictionaryException {
+		
+		String readingAdditionalInfoEnumAsEntity = readingAdditionalInfoEnumToEntityMapper.get(readingAdditionalInfoEnum);
+		
+		if (readingAdditionalInfoEnumAsEntity == null) {
+			throw new RuntimeException("readingAdditionalInfoEnumAsEntity: " + readingAdditionalInfoEnumAsEntity);
+		}
+		
+		return readingAdditionalInfoEnumAsEntity;
+	}
+
 	public DictionaryEntryType getDictionaryEntryType(PartOfSpeechEnum partOfSpeech) throws DictionaryException {
 				
 		DictionaryEntryType dictionaryEntryType = getDictionaryEntryType(getPartOfSpeechAsEntity(partOfSpeech));

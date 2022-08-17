@@ -79,6 +79,7 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.GTypeEnum;
@@ -3085,6 +3086,141 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 		return Helper.convertListToString(result);
 	} 
+	
+	public List<String> generateTranslatesInOldFormat(KanjiKanaPair kanjiKanaPair, String missingWord) throws Exception {
+		
+		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
+		
+		List<String> translateList = new ArrayList<String>();
+		
+		translateList.add("_");
+		translateList.add("-----------");
+
+		// wczytanie starego slownika i sche'owanie go		
+		Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache = oldWordGeneratorHelper.getPolishJapaneseEntriesCache();
+		
+		List<PolishJapaneseEntry> findPolishJapaneseEntry = Helper.findPolishJapaneseEntry(polishJapaneseEntriesCache, kanjiKanaPair.getKanji(), kanjiKanaPair.getKana());;
+				
+		if (findPolishJapaneseEntry != null && findPolishJapaneseEntry.size() > 0) {
+			translateList.add("JUZ JEST");
+			translateList.add("-----------");
+		}
+		
+		translateList.add(missingWord == null ? "<null>" : missingWord);
+		translateList.add("-----------");
+		
+		for (Sense sense : kanjiKanaPair.getSenseList()) {
+			
+			List<Gloss> glossEngList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+			List<SenseAdditionalInfo> additionalInfoEngList = sense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+			
+			for (Gloss gloss : glossEngList) {
+
+				StringBuffer translate = new StringBuffer(gloss.getValue());
+				
+				if (additionalInfoEngList != null && additionalInfoEngList.size() > 0) {
+					
+					for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoEngList) {
+						translate.append("\n     " + senseAdditionalInfo.getValue());
+					}
+				}
+				
+				List<MiscEnum> miscList = sense.getMiscList();
+				
+				if (miscList != null && miscList.size() > 0) {
+					
+					for (MiscEnum miscEnum : miscList) {
+						translate.append("\n     " + miscEnum.value());
+					}
+				}
+								
+				List<DialectEnum> dialectList = sense.getDialectList();
+				
+				if (dialectList != null && dialectList.size() > 0) {
+					for (DialectEnum dialectEnum : dialectList) {
+						translate.append("\n     " + dictionaryEntryJMEdictEntityMapper.getDialectEnumAsEntity(dialectEnum));
+					}				
+				}
+				
+				translateList.add(translate.toString());
+			}
+		}
+						
+		return translateList;
+	}
+	
+	public List<String> generateAdditionalInfoInOldFormat(KanjiKanaPair kanjiKanaPair, WordType wordType) throws Exception {
+
+		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
+		
+		List<String> additionalInfoList = new ArrayList<>();
+		
+		KanjiInfo kanjiInfo = kanjiKanaPair.getKanjiInfo();
+		
+		if (kanjiInfo != null) {
+			List<KanjiAdditionalInfoEnum> kanjiAdditionalInfoList = kanjiInfo.getKanjiAdditionalInfoList();
+			
+			for (KanjiAdditionalInfoEnum kanjiAdditionalInfoEnum : kanjiAdditionalInfoList) {
+				additionalInfoList.add(dictionaryEntryJMEdictEntityMapper.getKanjiAdditionalInfoEnumAsEntity(kanjiAdditionalInfoEnum));
+			}
+		}
+		
+		List<ReadingAdditionalInfoEnum> readingAdditionalInfoList = kanjiKanaPair.getReadingInfo().getReadingAdditionalInfoList();
+		
+		for (ReadingAdditionalInfoEnum readingAdditionalInfoEnum : readingAdditionalInfoList) {
+			additionalInfoList.add(dictionaryEntryJMEdictEntityMapper.getReadingAdditionalInfoEnumAsEntity(readingAdditionalInfoEnum));
+		}
+		
+		// w stosunku do starej implementacji wystepuje drobna roznica, ale jest to malo istotna zmiana, zmiana ta wynika najprawdopodobniej z lekko innej implementacji wczytywania jmdict
+		/*
+		if (kanjiKanaPair.getSenseList().size() == 1) {
+			for (Sense sense : kanjiKanaPair.getSenseList()) {	
+					
+				List<SenseAdditionalInfo> additionalInfoEngList = sense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+
+				if (additionalInfoEngList != null && additionalInfoEngList.size() > 0) {
+					
+					for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoEngList) {
+						additionalInfoList.add("     " + senseAdditionalInfo.getValue());
+					}
+				}
+				
+				List<MiscEnum> miscList = sense.getMiscList();
+				
+				if (miscList != null && miscList.size() > 0) {
+					
+					for (MiscEnum miscEnum : miscList) {
+						String addText = "     " + miscEnum.value();
+						
+						if (additionalInfoList.contains(addText) == false) {
+							additionalInfoList.add(addText);
+						}
+					}
+				}
+			}
+		}
+		*/
+		
+		//
+		
+		List<String> translateList = new ArrayList<>();
+		
+		for (Sense sense : kanjiKanaPair.getSenseList()) {			
+			List<Gloss> glossEngList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+			
+			for (Gloss gloss : glossEngList) {
+				translateList.add(gloss.getValue());
+			}
+		}
+		
+	    if (	(wordType == WordType.KATAKANA || wordType == WordType.KATAKANA_EXCEPTION) &&
+	    		translateList.size() == 1) {
+	    	
+	    	additionalInfoList.add("ang: " + translateList.get(0));	    	
+	    }
+		
+		return additionalInfoList;
+	}
 
 	//
 			
