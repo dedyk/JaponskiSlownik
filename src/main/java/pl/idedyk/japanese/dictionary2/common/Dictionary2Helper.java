@@ -326,7 +326,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 						}
 					}
 					
-					addStringFieldToDocument(document, JMdictLuceneFields.ROMAJI, romaji);
+					addTextFieldToDocument(document, JMdictLuceneFields.ROMAJI, romaji);
 				}
 
 				//
@@ -1076,7 +1076,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				generateKanaTypeAndRomaji(readingInfo, config.markRomaji);
 				
-				ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();				
+				ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
 				csvWriter.write(kanaType.name()); columnsNo++;
 
 				csvWriter.write(readingInfo.getKana().getValue()); columnsNo++;
@@ -2503,8 +2503,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		polishJapaneseEntry.setDictionaryEntryTypeList(getOldDictionaryEntryTypeFromKanjiKanaPair(kanjiKanaPair));
 		
 		polishJapaneseEntry.setAttributeList(new AttributeList());
-		
-		polishJapaneseEntry.setWordType(WordType.HIRAGANA); // zaraz wpisze sie poprawna wartosc
+				
+		polishJapaneseEntry.setWordType(WordType.valueOf(getKanaType(kanjiKanaPair.getReadingInfo().getKana().getValue()).name()));
 		
 		polishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
 		
