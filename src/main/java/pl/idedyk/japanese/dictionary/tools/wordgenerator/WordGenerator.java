@@ -466,7 +466,7 @@ public class WordGenerator {
 								// sprawdzenie, czy to slowo juz wystepuje
 								List<PolishJapaneseEntry> alreadyExistsPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(wordGeneratorHelper.getPolishJapaneseEntriesCache(), kanjiKanaPair.getKanji(), kanjiKanaPair.getKana());;
 								
-								if (alreadyExistsPolishJapaneseEntryList != null && alreadyExistsPolishJapaneseEntryList.size() > 0) {
+								if (alreadyExistsPolishJapaneseEntryList == null || alreadyExistsPolishJapaneseEntryList.size() == 0) {
 																		
 									if (	addOnlyWordsWhichDoesntExistInCommonFile == false || 
 											existsInCommonWords(commonWordMap, kanjiKanaPair.getKanji(), kanjiKanaPair.getKana(), false) == false) {
