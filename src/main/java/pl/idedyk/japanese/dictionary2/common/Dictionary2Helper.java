@@ -37,7 +37,6 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
-import org.apache.lucene.analysis.core.SimpleAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -69,7 +68,6 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
-import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
 import pl.idedyk.japanese.dictionary.common.Helper;
@@ -81,7 +79,6 @@ import pl.idedyk.japanese.dictionary.lucene.LuceneAnalyzer;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
-import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.GTypeEnum;
@@ -478,8 +475,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 
 		BooleanQuery wordBooleanQuery = new BooleanQuery();
 
-		wordBooleanQuery.add(createTermQuery(wordSplited, JMdictLuceneFields.KANJI), Occur.SHOULD);
-		wordBooleanQuery.add(createTermQuery(wordSplited, JMdictLuceneFields.KANA), Occur.SHOULD);
+		wordBooleanQuery.add(createTermQuery(new String[] { word }, JMdictLuceneFields.KANJI), Occur.SHOULD);
+		wordBooleanQuery.add(createTermQuery(new String[] { word }, JMdictLuceneFields.KANA), Occur.SHOULD);
 		wordBooleanQuery.add(createTermQuery(wordSplited, JMdictLuceneFields.ROMAJI), Occur.SHOULD);
 
 		wordBooleanQuery.add(createTermQuery(wordSplited, JMdictLuceneFields.TRANSLATE), Occur.SHOULD);
@@ -810,7 +807,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return result;
 	}
 	
-	private List<Entry> findEntryListByKanjiAndKana(String kanji, String kana) throws Exception {
+	public List<Entry> findEntryListByKanjiAndKana(String kanji, String kana) throws Exception {
 		
 		// inicjalizacja cache
 		initJmdictEntryKanjiKanaCache();
@@ -2495,7 +2492,29 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return newOldPolishJapaneseEntryList;
 	}
 	
-	public PolishJapaneseEntry generateNewEmptyOldPolishJapaneseEntry(KanjiKanaPair kanjiKanaPair) throws Exception {
+	public PolishJapaneseEntry generateOldPolishJapaneseEntry(Entry entry, KanjiKanaPair kanjiKanaPair, int id, String missingWord) throws Exception {
+		
+		// generowanie pustego wpisu
+		PolishJapaneseEntry polishJapaneseEntry = generateNewEmptyOldPolishJapaneseEntry(kanjiKanaPair);
+		
+		// i uzupelniamy o kilka danych
+		List<String> newTranslatesInOldFormat = generateTranslatesInOldFormat(kanjiKanaPair, missingWord);
+		List<String> additionalInfoInOldFormat = generateAdditionalInfoInOldFormat(kanjiKanaPair, polishJapaneseEntry.getWordType());
+		
+		List<String> rawDataInOldFormat = new ArrayList<>(); 
+		fillJmedictRawDataInOldFormat(entry, kanjiKanaPair, rawDataInOldFormat);
+		
+		polishJapaneseEntry.setId(id);
+		polishJapaneseEntry.setRomaji(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kanjiKanaPair.getReadingInfo().getKana().getValue(), 
+				kanaHelper.getKanaCache(), true)));
+		polishJapaneseEntry.setTranslates(newTranslatesInOldFormat);
+		polishJapaneseEntry.setInfo(Helper.convertListToString(additionalInfoInOldFormat));
+		polishJapaneseEntry.setJmedictRawDataList(rawDataInOldFormat);
+
+		return polishJapaneseEntry;
+	}
+	
+	private PolishJapaneseEntry generateNewEmptyOldPolishJapaneseEntry(KanjiKanaPair kanjiKanaPair) throws Exception {
 						
 		// generowanie wpisu
 		PolishJapaneseEntry polishJapaneseEntry = new PolishJapaneseEntry();

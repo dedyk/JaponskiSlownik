@@ -10,7 +10,6 @@ import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
@@ -47,7 +46,6 @@ import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
-import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
@@ -141,15 +139,9 @@ public class WordGenerator {
 				// czytanie identyfikatorow common'owych slow
 				List<String> commonWordIds = readFile(fileName);
 				
-				// pobranie cache ze slowami
-				Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-
 				// czytanie common'owego pliku
 				Map<Integer, CommonWord> commonWordMap = wordGeneratorHelper.getCommonWordMap();
-				
-				// przygotowywane slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
-				
+								
 				System.out.println("Sprawdzanie w jisho.org: " + checkInJishoOrg);
 				
 				JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
@@ -179,15 +171,15 @@ public class WordGenerator {
 					String commonKanji = null;
 					String commonKana = null;
 					
-					List<GroupEntry> groupEntryList = null;
+					List<Entry> entryList = null;
 					
 					if (commonWord != null) {
 						
 						commonKanji = commonWord.getKanji();
 						commonKana = commonWord.getKana();
 						
-						groupEntryList = jmeNewDictionary.getGroupEntryList(commonKanji, commonKana);
-						
+						entryList = dictionary2Helper.findEntryListByKanjiAndKana(commonKanji, commonKana);
+												
 						commonWord.setDone(true);
 						
 					} else {
@@ -195,11 +187,13 @@ public class WordGenerator {
 						System.out.println("Nie znaleziono slowa o identyfikatorze: " + currentCommonWordId);
 					}
 								
-					if (groupEntryList != null && groupEntryList.size() > 0) {
+					if (entryList != null && entryList.size() > 0) {
 						
-						for (GroupEntry groupEntry : groupEntryList) {
+						for (Entry entry : entryList) {
 							
-							PolishJapaneseEntry polishJapaneseEntry = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, Integer.valueOf(currentCommonWordId), null).polishJapaneseEntry;
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+							
+							PolishJapaneseEntry polishJapaneseEntry = dictionary2Helper.generateOldPolishJapaneseEntry(entry, kanjiKanaPairList.get(0), Integer.valueOf(currentCommonWordId), null);
 											
 							newWordList.add(polishJapaneseEntry);
 							
@@ -214,7 +208,7 @@ public class WordGenerator {
 										"Szukanie w jisho.org (znaleziono kana): " + polishJapaneseEntry.getKana(), polishJapaneseEntry.getKana());
 							}
 							
-							entryIdSet.add(groupEntry.getGroup().getId());
+							entryIdSet.add(entry.getEntryId());
 						}
 						
 					} else {
@@ -333,9 +327,6 @@ public class WordGenerator {
 				
 				List<String> missingWords = readFile(fileName);
 				
-				// pobranie cache ze slowami
-				Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-
 				// czytanie common'owego pliku
 				Map<Integer, CommonWord> commonWordMap = wordGeneratorHelper.getCommonWordMap();
 				
@@ -373,11 +364,7 @@ public class WordGenerator {
 				LinkedHashSet<String> newAdditionalWordToCheckWordList = new LinkedHashSet<String>();
 								
 				newAdditionalWordToCheckWordList.addAll(readFile(additionalWordtoCheckFile.getAbsolutePath()));
-				
-				//
-				
-				KanaHelper kanaHelper = new KanaHelper();
-				
+								
 				//
 								
 				System.out.println("Szukanie...");
@@ -442,23 +429,9 @@ public class WordGenerator {
 								
 								int counterValue = counter.incrementAndGet();
 								
-								// generujemy pusty wpis
-								PolishJapaneseEntry polishJapaneseEntry = dictionary2Helper.generateNewEmptyOldPolishJapaneseEntry(kanjiKanaPair);
-								
-								// i uzupelniamy o kilka danych
-								List<String> newTranslatesInOldFormat = dictionary2Helper.generateTranslatesInOldFormat(kanjiKanaPair, currentMissingWord);
-								List<String> additionalInfoInOldFormat = dictionary2Helper.generateAdditionalInfoInOldFormat(kanjiKanaPair, polishJapaneseEntry.getWordType());
-								
-								List<String> rawDataInOldFormat = new ArrayList<>(); 
-								dictionary2Helper.fillJmedictRawDataInOldFormat(foundEntry, kanjiKanaPair, rawDataInOldFormat);
-								
-								polishJapaneseEntry.setId(counterValue);
-								polishJapaneseEntry.setRomaji(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kanjiKanaPair.getReadingInfo().getKana().getValue(), 
-										kanaHelper.getKanaCache(), true)));
-								polishJapaneseEntry.setTranslates(newTranslatesInOldFormat);
-								polishJapaneseEntry.setInfo(Helper.convertListToString(additionalInfoInOldFormat));
-								polishJapaneseEntry.setJmedictRawDataList(rawDataInOldFormat);
-								
+								// generujemy wpis
+								PolishJapaneseEntry polishJapaneseEntry = dictionary2Helper.generateOldPolishJapaneseEntry(foundEntry, kanjiKanaPair, counterValue, currentMissingWord);
+																
 								//
 								
 								CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(counterValue, kanjiKanaPair);					
@@ -647,30 +620,14 @@ public class WordGenerator {
 				System.out.println("Wczytywanie brakujących słów...");
 				
 				List<String> missingWords = readFile(fileName);
-				
-				// pobranie cache ze slowami
-				Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-				
-				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
-				
-				// tworzenie indeksu lucene
-				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
 								
-				// stworzenie wyszukiwacza
-				IndexReader reader = DirectoryReader.open(luceneIndex);
-
-				IndexSearcher searcher = new IndexSearcher(reader);
-
 				// generowanie slow
 				List<PolishJapaneseEntry> newPolishJapaneseEntryList = new ArrayList<PolishJapaneseEntry>();
 				
 				int result = 0;
 				
-				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
-				
-				AtomicInteger counter = new AtomicInteger();
-				
+				Set<Integer> alreadyCheckedEntryIds = new TreeSet<Integer>();
+								
 				//
 
 				System.out.println("Szukanie...");
@@ -700,49 +657,40 @@ public class WordGenerator {
 										
 					//
 					
-					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
-
-					ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
-					
-					if (scoreDocs.length > 0) {
+					List<Entry> foundEntryList = dictionary2Helper.findInJMdict(currentMissingWord);
+										
+					if (foundEntryList.size() > 0) {
 												
-						for (ScoreDoc scoreDoc : scoreDocs) {
-							
-							Document foundDocument = searcher.doc(scoreDoc.doc);
-
-							// znaleziony obiekt od lucene
-							GroupEntry groupEntryFromLucene = Helper.createGroupEntry(foundDocument);
-							
-							Integer groupId = groupEntryFromLucene.getGroup().getId();
+						for (Entry foundEntry : foundEntryList) {
+														
+							Integer entryId = foundEntry.getEntryId();
 							
 							// czy ta grupa byla juz sprawdzana
-							if (alreadyCheckedGroupId.contains(groupId) == true) {
+							if (alreadyCheckedEntryIds.contains(entryId) == true) {
 								continue;
 								
 							} else {
-								alreadyCheckedGroupId.add(groupId);
+								alreadyCheckedEntryIds.add(entryId);
 								
 							}
 							
-							// szukamy pelnej grupy
-							Group groupInDictionary = jmeNewDictionary.getGroupById(groupId);
-							
-							List<GroupEntry> groupEntryList = groupInDictionary.getGroupEntryList();
+							// generowanie par kanji, kana na entry
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(foundEntry);
 																
 							// grupujemy po tych samych tlumaczenia
-							List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
-										
-							for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
+							List<List<KanjiKanaPair>> groupByTheSameTranslate = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
+																	
+							for (List<KanjiKanaPair> kanjiKanaPairListTheSameTranslate : groupByTheSameTranslate) {
 								
-								GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
-								
-								int counterValue = counter.incrementAndGet();
-								
-								CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counterValue, currentMissingWord);
+								KanjiKanaPair kanjiKanaPair = kanjiKanaPairListTheSameTranslate.get(0); // pierwszy element z grupy
 																
-								PolishJapaneseEntry polishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;					
-																
-								if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
+								// generujemy wpis
+								PolishJapaneseEntry polishJapaneseEntry = dictionary2Helper.generateOldPolishJapaneseEntry(foundEntry, kanjiKanaPair, -1, null);
+
+								// sprawdzenie, czy to slowo juz wystepuje
+								List<PolishJapaneseEntry> alreadyExistsPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(wordGeneratorHelper.getPolishJapaneseEntriesCache(), kanjiKanaPair.getKanji(), kanjiKanaPair.getKana());;
+								
+								if (alreadyExistsPolishJapaneseEntryList == null || alreadyExistsPolishJapaneseEntryList.size() == 0) {
 									
 									if (reachedLimit == true) {
 										result--;
@@ -760,8 +708,6 @@ public class WordGenerator {
 						reachedLimit = true;
 					}
 				}
-
-				reader.close();
 				
 				System.out.println("Liczba słów: " + result + " (liczba nowych słów: " + newPolishJapaneseEntryList.size() + ", brakuje: " + ( expectedNewWordSize - newPolishJapaneseEntryList.size()) + ")");	
 				
