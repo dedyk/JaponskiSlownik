@@ -1584,10 +1584,7 @@ public class WordGenerator {
 				
 				// lista slow
 				List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
-				
-				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
-				
+												
 				Map<Integer, Integer> groupIdsAlreadyAddCount = new TreeMap<Integer, Integer>();
 				
 				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
@@ -1611,33 +1608,37 @@ public class WordGenerator {
 						groupIdsAlreadyAddCount.put(groupId, groupIdCount);
 					}
 				}
-				
+								
 				Map<Integer, CommonWord> missingPartialCommonMap = new TreeMap<>();
 				Map<Integer, CommonWord> missingFullCommonMap = new TreeMap<>();
 				Map<Integer, CommonWord> missingOverfullCommonMap = new TreeMap<>();
-								
-				// generowanie brakujacych slow
-				List<Group> groupList = jmeNewDictionary.getGroupList();
 				
-				for (Group group : groupList) {
+				// wczytanie slownika jmedict
+				List<Entry> entryList = dictionary2Helper.getJMdict().getEntryList();
+				
+				// generowanie brakujacych slow				
+				for (Entry entry : entryList) {
 					
-					Integer groupId = group.getId();
+					Integer entryId = entry.getEntryId();
 					
-					int groupIdCount = group.getGroupEntryList().size();
+					// generowanie wszystkich slow
+					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+					
+					int kanjiKanaPairListCount = kanjiKanaPairList.size();
 					
 					//
 					
-					Integer groupIdsAlreadyAddForGroupId = groupIdsAlreadyAddCount.get(groupId);
+					Integer entryIdsAlreadyAddForEntryId = groupIdsAlreadyAddCount.get(entryId);
 					
-					if (groupIdsAlreadyAddForGroupId == null) { // nie ma takiego slowa w moim slowniku
+					if (entryIdsAlreadyAddForEntryId == null) { // nie ma takiego slowa w moim slowniku
 						
 						int counter = 0;
 						
-						for (GroupEntry groupEntry : group.getGroupEntryList()) {
+						for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 							
-							int csvId = (groupEntry.getGroup().getId() * 100) + counter;
+							int csvId = (entryId * 100) + counter;
 							
-							CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
+							CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, kanjiKanaPair);
 							
 							missingFullCommonMap.put(commonWord.getId(), commonWord);
 							
@@ -1646,20 +1647,20 @@ public class WordGenerator {
 						
 					} else { // jest slowko, sprawdzamy ilosc
 
-						if (groupIdsAlreadyAddForGroupId == groupIdCount) { // jest ok
+						if (entryIdsAlreadyAddForEntryId == kanjiKanaPairListCount) { // jest ok
 							// noop
 							
 						} else { // nie zgadza sie ilosc, powinny byc wszystkie
 							
 							int counter = 0;
 							
-							for (GroupEntry groupEntry : group.getGroupEntryList()) {
+							for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 								
-								int csvId = (groupEntry.getGroup().getId() * 100) + counter;
+								int csvId = (entryId * 100) + counter;
 								
-								CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
+								CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, kanjiKanaPair);
 								
-								if (groupIdsAlreadyAddForGroupId < groupIdCount) {
+								if (entryIdsAlreadyAddForEntryId < kanjiKanaPairListCount) {
 									missingPartialCommonMap.put(commonWord.getId(), commonWord);
 									
 								} else {
