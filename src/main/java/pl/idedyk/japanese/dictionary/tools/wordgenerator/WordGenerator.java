@@ -732,15 +732,7 @@ public class WordGenerator {
 				
 				// czytanie common'owego pliku
 				Map<Integer, CommonWord> commonWordMap = wordGeneratorHelper.getCommonWordMap();
-				
-				// tworzenie indeksu lucene
-				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
 								
-				// stworzenie wyszukiwacza
-				IndexReader reader = DirectoryReader.open(luceneIndex);
-
-				IndexSearcher searcher = new IndexSearcher(reader);
-				
 				// tworzenie listy wynikowej				
 				List<String> foundWordSearchList = new ArrayList<String>();
 				
@@ -764,35 +756,33 @@ public class WordGenerator {
                         continue;
                     }
 					
-					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
-
-					ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
+					List<Entry> foundEntryList = dictionary2Helper.findInJMdict(currentMissingWord);
 					
-					if (scoreDocs.length > 0) {
+					if (foundEntryList != null && foundEntryList.size() > 0) {
 						
-						for (ScoreDoc scoreDoc : scoreDocs) {
+						for (Entry foundEntry : foundEntryList) {
 							
-							Document foundDocument = searcher.doc(scoreDoc.doc);
-
-							GroupEntry groupEntry = Helper.createGroupEntry(foundDocument);
-							
-							String groupEntryKanji = groupEntry.getKanji();
-							String groupEntryKana = groupEntry.getKana();
-							
-							boolean existsInCommonWords = existsInCommonWords(commonWordMap, groupEntryKanji, groupEntryKana, true);
-							
-							if (existsInCommonWords == false) {
-								continue;
-							}
-							
-							if (foundWordSearchList.contains(currentMissingWord) == false) {
-								foundWordSearchList.add(currentMissingWord);
-							}
+							// generowanie par kanji, kana na entry
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(foundEntry);
+									
+							BEFORE_KANJI_KANA_PAIR_LIST:
+							for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+																
+								boolean existsInCommonWords = existsInCommonWords(commonWordMap, kanjiKanaPair.getKanji(), kanjiKanaPair.getKana(), true);
+								
+								if (existsInCommonWords == false) {
+									continue;
+								}
+								
+								if (foundWordSearchList.contains(currentMissingWord) == false) {
+									foundWordSearchList.add(currentMissingWord);
+									
+									break BEFORE_KANJI_KANA_PAIR_LIST;
+								}
+							}							
 						}				
 					}
 				}
-
-				reader.close();
 				
 				System.out.println("Zapisywanie pliku...");
 						
