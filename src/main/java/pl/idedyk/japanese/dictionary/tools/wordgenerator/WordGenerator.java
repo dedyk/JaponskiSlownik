@@ -72,6 +72,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 
@@ -1259,41 +1260,48 @@ public class WordGenerator {
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
 				
 				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
-				
-				// generowanie priorytetowych slow
-				List<Group> groupList = jmeNewDictionary.getGroupList();
-				
+				List<Entry> entryList = dictionary2Helper.getJMdict().getEntryList();
+								
+				// generowanie priorytetowych slow				
 				Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
 				
 				int csvId = 1;
 				
-				for (Group group : groupList) {
+				for (Entry entry : entryList) {
 					
-					List<GroupEntry> groupEntryList = group.getGroupEntryList();
+					// generowanie par kanji, kana na entry
+					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry);
 					
-					List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
-								
-					for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
+					List<List<KanjiKanaPair>> groupByTheSameTranslateKanjiKanaList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
+													
+					for (List<KanjiKanaPair> groupByTheSameTranslateKanjiKana : groupByTheSameTranslateKanjiKanaList) {
 						
-						GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0);
-										
-						List<String> priority = groupEntry.getPriority();
+						KanjiKanaPair kanjiKanaPair = groupByTheSameTranslateKanjiKana.get(0);
 						
-						if (priority.size() == 0) {
+						//
+						
+						List<RelativePriorityEnum> allPriority = new ArrayList<>();
+						
+						if (kanjiKanaPair.getKanjiInfo() != null) {
+							allPriority.addAll(kanjiKanaPair.getKanjiInfo().getRelativePriorityList());
+						}
+						
+						allPriority.addAll(kanjiKanaPair.getReadingInfo().getRelativePriorityList());
+												
+						if (allPriority.size() == 0) {
 							continue;
 						}
 														
-						String groupEntryKanji = groupEntry.getKanji();
-						String groupEntryKana = groupEntry.getKana();
+						String entryKanji = kanjiKanaPair.getKanji();
+						String entryKana = kanjiKanaPair.getKana();
 											
-						List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+						List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, entryKanji, entryKana);
 							
 						if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
 								
-							System.out.println(groupEntry);
+							System.out.println(entry);
 							
-							CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
+							CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, kanjiKanaPair);
 							
 							if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
 								
