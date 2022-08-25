@@ -843,22 +843,11 @@ public class WordGenerator {
 		        
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-								
-				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();				
-				
-				// tworzenie indeksu lucene
-				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
-								
-				// stworzenie wyszukiwacza
-				IndexReader reader = DirectoryReader.open(luceneIndex);
-
-				IndexSearcher searcher = new IndexSearcher(reader);
-		        
+		        		        
 				// zmienne pomocnicze
 				int csvId = 1;
 				
-				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
+				Set<Integer> alreadyCheckedEntryId = new TreeSet<Integer>();
 				
 				Map<Integer, CommonWord> newCommonWordMap = new TreeMap<>();
 				
@@ -867,51 +856,41 @@ public class WordGenerator {
 				
 		        // sprawdzanie slow
 		        for (String word : wordsToCheck) {
+		        	
+					List<Entry> foundEntryList = dictionary2Helper.findInJMdict(word);
 					
-					Query query = Helper.createLuceneDictionaryIndexTermQuery(word);
-
-					ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
-					
-					if (scoreDocs.length > 0) {
+					if (foundEntryList != null && foundEntryList.size() > 0) {
 						
-						for (ScoreDoc scoreDoc : scoreDocs) {
-							
-							Document foundDocument = searcher.doc(scoreDoc.doc);
-
-							// znaleziony obiekt od lucene
-							GroupEntry groupEntryFromLucene = Helper.createGroupEntry(foundDocument);
-							
-							Integer groupId = groupEntryFromLucene.getGroup().getId();
+						for (Entry foundEntry : foundEntryList) {
+														
+							Integer entryId = foundEntry.getEntryId();
 							
 							// czy ta grupa byla juz sprawdzana
-							if (alreadyCheckedGroupId.contains(groupId) == true) {
+							if (alreadyCheckedEntryId.contains(entryId) == true) {
 								continue;
 								
 							} else {
-								alreadyCheckedGroupId.add(groupId);
-								
+								alreadyCheckedEntryId.add(entryId);								
 							}
 							
-							// szukamy pelnej grupy
-							Group groupInDictionary = jmeNewDictionary.getGroupById(groupId);
+							// generowanie par kanji, kana na entry
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(foundEntry);
 							
-							List<GroupEntry> groupEntryList = groupInDictionary.getGroupEntryList();
-																
 							// grupujemy po tych samych tlumaczenia
-							List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
-										
-							for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
+							List<List<KanjiKanaPair>> groupByTheSameTranslate = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
+							
+							for (List<KanjiKanaPair>  kanjiKanaPairListTheSameTranslate : groupByTheSameTranslate) {
 								
-								GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
+								KanjiKanaPair kanjiKanaPair = kanjiKanaPairListTheSameTranslate.get(0); // pierwszy element z grupy
 
-								String groupEntryKanji = groupEntry.getKanji();
-								String groupEntryKana = groupEntry.getKana();
+								String groupEntryKanji = kanjiKanaPair.getKanji();
+								String groupEntryKana = kanjiKanaPair.getKana();
 																
 								List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
 								
 								if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
 																		
-									CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
+									CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, kanjiKanaPair);
 									
 									if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
 									
@@ -924,9 +903,7 @@ public class WordGenerator {
 						}													
 					}
 				}
-		        
-				reader.close();
-				
+		        				
 				// zapisywanie slownika
 				CsvReaderWriter.writeCommonWordFile(newCommonWordMap, "input/text-word-new.csv");				
 				
