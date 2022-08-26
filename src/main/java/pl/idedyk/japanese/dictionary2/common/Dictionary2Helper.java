@@ -155,6 +155,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	private Map<Integer, JMdict.Entry> jmdictEntryIdCache;
 	private Map<String, List<JMdict.Entry>> jmdictEntryKanjiKanaCache;
+	
+	private Map<String, List<JMdict.Entry>> jmdictEntryKanjiOnlyCache;
+	private Map<String, List<JMdict.Entry>> jmdictEntryKanaOnlyCache;
 		
 	//
 	
@@ -861,6 +864,106 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 	}
 	
+	public List<Entry> findEntryListByKanjiOnly(String kanji) throws Exception {
+		
+		// inicjalizacja cache
+		initJmdictEntryKanjiOnlyCache();
+				
+		return jmdictEntryKanjiOnlyCache.get(kanji);
+	}
+
+	private void initJmdictEntryKanjiOnlyCache() throws Exception {
+		
+		// inicjalizacja jmdict
+		getJMdict();
+
+		if (jmdictEntryKanjiOnlyCache == null) {
+			
+			System.out.println("Caching JMdict by kanji only");
+			
+			jmdictEntryKanjiOnlyCache = new TreeMap<>();
+			
+			List<Entry> entryList = jmdict.getEntryList();
+			
+			for (Entry entry : entryList) {
+				
+				// generowanie wszystkich kanji i ich czytan
+				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+				
+				// chodzenie po wszystkich kanji i kana
+				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
+					
+					String kanji = kanjiKanaPair.getKanji();
+					
+					if (kanji == null) {
+						continue;
+					}					
+										
+					// sprawdzamy, czy taki klucz juz wystepuje w cache'u
+					List<Entry> entryListForKanjiOnly = jmdictEntryKanjiOnlyCache.get(kanji);
+					
+					if (entryListForKanjiOnly == null) {
+						entryListForKanjiOnly = new ArrayList<>();
+						
+						jmdictEntryKanjiOnlyCache.put(kanji, entryListForKanjiOnly);
+					}
+					
+					if (entryListForKanjiOnly.contains(entry) == false) {
+						entryListForKanjiOnly.add(entry);
+					}
+				}				
+			}			
+		}
+	}
+	
+	public List<Entry> findEntryListByKanaOnly(String kana) throws Exception {
+		
+		// inicjalizacja cache
+		initJmdictEntryKanaOnlyCache();
+				
+		return jmdictEntryKanaOnlyCache.get(kana);
+	}
+
+	private void initJmdictEntryKanaOnlyCache() throws Exception {
+		
+		// inicjalizacja jmdict
+		getJMdict();
+
+		if (jmdictEntryKanaOnlyCache == null) {
+			
+			System.out.println("Caching JMdict by kana only");
+			
+			jmdictEntryKanaOnlyCache = new TreeMap<>();
+			
+			List<Entry> entryList = jmdict.getEntryList();
+			
+			for (Entry entry : entryList) {
+				
+				// generowanie wszystkich kanji i ich czytan
+				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+				
+				// chodzenie po wszystkich kanji i kana
+				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
+					
+					String kana = kanjiKanaPair.getKana();
+															
+					// sprawdzamy, czy taki klucz juz wystepuje w cache'u
+					List<Entry> entryListForKanaOnly = jmdictEntryKanaOnlyCache.get(kana);
+					
+					if (entryListForKanaOnly == null) {
+						entryListForKanaOnly = new ArrayList<>();
+						
+						jmdictEntryKanaOnlyCache.put(kana, entryListForKanaOnly);
+					}
+					
+					if (entryListForKanaOnly.contains(entry) == false) {
+						entryListForKanaOnly.add(entry);
+					}
+				}				
+			}			
+		}
+	}
+
 	private String getKanjiKanaKeyForCache(String kanji, String kana) {
 		return kanji + "." + kana;
 	}

@@ -994,7 +994,9 @@ public class WordGenerator {
 								
 							} else {
 								
-								String keyForGroupEntry = getKeyForAlreadyAddedGroupEntrySet(groupEntry);
+								System.out.println("FIXME!!!!!!!");								
+								String keyForGroupEntry = null;
+								//String keyForGroupEntry = getKeyForAlreadyAddedGroupEntrySet(groupEntry);
 								
 								if (alreadyAddedGroupEntry.contains(keyForGroupEntry) == false) {
 									
@@ -1191,7 +1193,9 @@ public class WordGenerator {
 
 								if (findPolishJapaneseEntry == null) {
 									
-									String keyForGroupEntry = getKeyForAlreadyAddedGroupEntrySet(groupEntry);
+									System.out.println("FIXME!!!!!!!");
+									String keyForGroupEntry = null;									
+									//String keyForGroupEntry = getKeyForAlreadyAddedGroupEntrySet(groupEntry);
 									
 									if (alreadyAddedGroupEntry.contains(keyForGroupEntry) == false) {
 										
@@ -1746,8 +1750,8 @@ public class WordGenerator {
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
 				
-				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();				
+				// wczytanie slownika jmedict - FIXME !!!!
+				JMENewDictionary jmeNewDictionary = null; //wordGeneratorHelper.getJMENewDictionary();				
 				
 				// walidacja slownika
 				System.out.println("Walidowanie słownika...");
@@ -1778,42 +1782,45 @@ public class WordGenerator {
 					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
 						continue;
 					}
-								
-					String kanji = polishJapaneseEntry.getKanji();
 					
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryListInOnlyKanji(kanji);
-					
-					if (groupEntryList == null) {
+					if (polishJapaneseEntry.isKanjiExists() == false) {
 						continue;
 					}
 					
-					for (GroupEntry groupEntry : groupEntryList) {
+					String kanji = polishJapaneseEntry.getKanji();
+					
+					List<Entry> entryListForKanji = dictionary2Helper.findEntryListByKanjiOnly(kanji);					
+					
+					if (entryListForKanji == null) {
+						continue;
+					}
+					
+					for (Entry entry : entryListForKanji) {
 						
-						List<GroupEntry> groupEntryListForGroupEntry = groupEntry.getGroup().getGroupEntryList(); // podmiana na wszystkie elementy z grupy
+						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
 						
-						List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryListForGroupEntry);
-										
-						for (List<GroupEntry> theSameTranslateGroupEntryList : groupByTheSameTranslateGroupEntryList) {
+						List<List<KanjiKanaPair>> groupByTheSameTranslateListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
+																
+						for (List<KanjiKanaPair> theSameTranslateGroupKanjiKanaList : groupByTheSameTranslateListList) {
 							
-							GroupEntry groupEntryInGroup = theSameTranslateGroupEntryList.get(0);
+							KanjiKanaPair kanjiKanaPair = theSameTranslateGroupKanjiKanaList.get(0);
 													
-							String groupEntryKanji = groupEntryInGroup.getKanji();
-							String groupEntryKana = groupEntryInGroup.getKana();
+							String kanjiKanaPairKanji = kanjiKanaPair.getKanji();
+							String kanjiKanaPairKana = kanjiKanaPair.getKana();
 							
 							List<PolishJapaneseEntry> findPolishJapaneseEntryList = 
-									Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+									Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, kanjiKanaPairKanji, kanjiKanaPairKana);
 			
 							if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
 								
-								String keyForGroupEntry = getKeyForAlreadyAddedGroupEntrySet(groupEntryInGroup);
+								String keyForGroupEntry = getKeyForAlreadyAddedEntryKanjiKanaPairSet(entry, kanjiKanaPair);
 								
-								if (alreadyAddedGroupEntry.contains(keyForGroupEntry) == false) {
-									
+								if (alreadyAddedGroupEntry.contains(keyForGroupEntry) == false) {									
 									alreadyAddedGroupEntry.add(keyForGroupEntry);
 									
 									//
 									
-									CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntryInGroup);
+									CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, kanjiKanaPair);
 									
 									if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
 									
@@ -1840,12 +1847,9 @@ public class WordGenerator {
 
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-				
-				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();				
-				
-				// walidacja slownika
-				System.out.println("Walidowanie słownika...");
+								
+				// wczytanie slownika jmedict - FIXME !!!!
+				JMENewDictionary jmeNewDictionary = null; //wordGeneratorHelper.getJMENewDictionary();				
 				
 				Validator.validateEdictGroup(jmeNewDictionary, polishJapaneseEntries);
 
@@ -1876,39 +1880,38 @@ public class WordGenerator {
 								
 					String kana = polishJapaneseEntry.getKana();
 					
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryListInOnlyKana(kana);
+					List<Entry> entryListForKana = dictionary2Helper.findEntryListByKanaOnly(kana);					
 					
-					if (groupEntryList == null) {
+					if (entryListForKana == null) {
 						continue;
 					}
 					
-					for (GroupEntry groupEntry : groupEntryList) {
+					for (Entry entry : entryListForKana) {
 						
-						List<GroupEntry> groupEntryListForGroupEntry = groupEntry.getGroup().getGroupEntryList(); // podmiana na wszystkie elementy z grupy
+						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
 						
-						List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryListForGroupEntry);
-										
-						for (List<GroupEntry> theSameTranslateGroupEntryList : groupByTheSameTranslateGroupEntryList) {
+						List<List<KanjiKanaPair>> groupByTheSameTranslateListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
+																
+						for (List<KanjiKanaPair> theSameTranslateGroupKanjiKanaList : groupByTheSameTranslateListList) {
 							
-							GroupEntry groupEntryInGroup = theSameTranslateGroupEntryList.get(0);
+							KanjiKanaPair kanjiKanaPair = theSameTranslateGroupKanjiKanaList.get(0);
 													
-							String groupEntryKanji = groupEntryInGroup.getKanji();
-							String groupEntryKana = groupEntryInGroup.getKana();
+							String kanjiKanaPairKanji = kanjiKanaPair.getKanji();
+							String kanjiKanaPairKana = kanjiKanaPair.getKana();
 							
 							List<PolishJapaneseEntry> findPolishJapaneseEntryList = 
-									Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+									Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, kanjiKanaPairKanji, kanjiKanaPairKana);
 			
 							if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
 								
-								String keyForGroupEntry = getKeyForAlreadyAddedGroupEntrySet(groupEntryInGroup);
+								String keyForGroupEntry = getKeyForAlreadyAddedEntryKanjiKanaPairSet(entry, kanjiKanaPair);
 								
-								if (alreadyAddedGroupEntry.contains(keyForGroupEntry) == false) {
-									
+								if (alreadyAddedGroupEntry.contains(keyForGroupEntry) == false) {									
 									alreadyAddedGroupEntry.add(keyForGroupEntry);
 									
 									//
 									
-									CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntryInGroup);
+									CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, kanjiKanaPair);
 									
 									if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
 
@@ -4466,10 +4469,9 @@ public class WordGenerator {
 		return wordType;
 	}
 		
-	private static String getKeyForAlreadyAddedGroupEntrySet(GroupEntry groupEntry) {
+	private static String getKeyForAlreadyAddedEntryKanjiKanaPairSet(Entry entry, KanjiKanaPair kanjiKanaPair) {
 		
-		String key = groupEntry.getGroup().getId() + "." + groupEntry.getWordTypeList().toString() + "." + groupEntry.getKanji() + "." + groupEntry.getKana() + "." + 
-				groupEntry.getTranslateList().toString();
+		String key = entry.getEntryId() + "." + "." + kanjiKanaPair.getKanji() + "." + kanjiKanaPair.getKana();
 		
 		return key;
 	}
