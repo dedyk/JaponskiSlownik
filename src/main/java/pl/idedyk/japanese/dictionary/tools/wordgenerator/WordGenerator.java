@@ -1624,22 +1624,9 @@ public class WordGenerator {
 				
 				List<String> missingWords = readFile(fileName);
 				
-				// pobranie cache ze slowami
-				Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-
-				// tworzenie indeksu lucene
-				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
-								
-				// stworzenie wyszukiwacza
-				IndexReader reader = DirectoryReader.open(luceneIndex);
-
-				IndexSearcher searcher = new IndexSearcher(reader);
-
 				// generowanie slow				
 				List<String> foundWordSearchList = new ArrayList<String>();		
 								
-				int counter = 0;
-				
 				Set<Integer> alreadyFoundDocument = new TreeSet<Integer>();
 								
 				System.out.println("Szukanie...");
@@ -1662,37 +1649,34 @@ public class WordGenerator {
                         continue;
                     }
 										
-					counter++;
-
-					Query query = Helper.createLuceneDictionaryIndexTermQuery(currentMissingWord);
-
-					ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
+					List<Entry> foundEntryList = dictionary2Helper.findInJMdict(currentMissingWord);
 					
-					if (scoreDocs.length > 0) {
+					if (foundEntryList != null && foundEntryList.size() > 0) {
 						
 						Boolean currentMissingWordAlreadyFound = null;
 						
-						for (ScoreDoc scoreDoc : scoreDocs) {
+						for (Entry entry : foundEntryList) {
 							
-							if (alreadyFoundDocument.contains(scoreDoc.doc) == true) {
+							if (alreadyFoundDocument.contains(entry.getEntryId()) == true) {
 								continue;
 								
 							} else {
-								alreadyFoundDocument.add(scoreDoc.doc);
+								alreadyFoundDocument.add(entry.getEntryId());
 								
 							}
 							
 							if (currentMissingWordAlreadyFound == null) {
 								currentMissingWordAlreadyFound = true;
 							}							
-
-							Document foundDocument = searcher.doc(scoreDoc.doc);
-
-							GroupEntry groupEntry = Helper.createGroupEntry(foundDocument);
 							
-							CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, counter, currentMissingWord);
+							// generowanie par kanji, kana na entry
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry);
+														
+							// sprawdzenie, czy to slowo juz wystepuje
+							List<PolishJapaneseEntry> alreadyExistsPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(wordGeneratorHelper.getPolishJapaneseEntriesCache(), 
+									kanjiKanaPairList.get(0).getKanji(), kanjiKanaPairList.get(0).getKana());;
 																			
-							if (createPolishJapaneseEntryResult.alreadyAddedPolishJapaneseEntry == false) {
+							if (alreadyExistsPolishJapaneseEntryList == null || alreadyExistsPolishJapaneseEntryList.size() == 0) {
 								currentMissingWordAlreadyFound = false;
 								
 								break;								
@@ -1704,8 +1688,6 @@ public class WordGenerator {
 						}
 					}
 				}
-
-				reader.close();
 				
 				System.out.println("Zapisywanie słownika...");
 								
