@@ -3090,7 +3090,7 @@ public class WordGenerator {
 										jmedictRawDataList = findPolishJapaneseEntry.getJmedictRawDataList();
 										
 										// ignorojemy puste wpisy
-										if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true) {							
+										if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0 || jmedictRawDataList.contains("xxx") == true) && ignoreJmedictEmptyRawData == true) {							
 											continue;
 										}											
 																				
@@ -3188,12 +3188,12 @@ public class WordGenerator {
 							List<String> jmedictRawDataList = polishJapaneseEntry.getJmedictRawDataList();
 							
 							// ignorojemy puste wpisy
-							if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0) && ignoreJmedictEmptyRawData == true && force == false) {							
+							if ((jmedictRawDataList == null || jmedictRawDataList.size() == 0 || jmedictRawDataList.contains("xxx") == true) && ignoreJmedictEmptyRawData == true && force == false) {							
 								continue;
 							}
 							
 							// ignorujemy wpisy w slowniku, ktore sa juz wypelnione
-							if (jmedictRawDataList != null && jmedictRawDataList.size() > 0 && ignoreDictionaryFilledRawData == true) {
+							if (jmedictRawDataList != null && jmedictRawDataList.size() > 0 && jmedictRawDataList.contains("xxx") == false && ignoreDictionaryFilledRawData == true) {
 								continue;
 							}
 							
