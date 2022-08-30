@@ -3217,8 +3217,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		List<String> translateList = new ArrayList<String>();
 		
-		translateList.add("_");
-		translateList.add("-----------");
+		if (missingWord != null) {
+			translateList.add("_");
+			translateList.add("-----------");
+		}
 
 		// wczytanie starego slownika i sche'owanie go		
 		Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache = oldWordGeneratorHelper.getPolishJapaneseEntriesCache();
@@ -3230,9 +3232,11 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			translateList.add("-----------");
 		}
 		
-		translateList.add(missingWord == null ? "<null>" : missingWord);
-		translateList.add("-----------");
-		
+		if (missingWord != null) {
+			translateList.add(missingWord);
+			translateList.add("-----------");
+		}
+			
 		for (Sense sense : kanjiKanaPair.getSenseList()) {
 			
 			List<Gloss> glossEngList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
