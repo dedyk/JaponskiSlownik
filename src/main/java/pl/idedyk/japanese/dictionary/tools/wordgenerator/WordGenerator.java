@@ -1017,7 +1017,7 @@ public class WordGenerator {
 									alreadyAddedEntryKanjiKanaPair.add(keyForAlreadyAddedEntryKanjiKanaPair);
 																		
 									// generujemy nowy wpis
-									PolishJapaneseEntry newPolishJapaneseEntry = dictionary2Helper.generateOldPolishJapaneseEntry(entry, kanjiKanaPair, polishJapaneseEntry.getId(), null);
+									PolishJapaneseEntry newPolishJapaneseEntry = dictionary2Helper.generateOldPolishJapaneseEntry(entry, kanjiKanaPair, polishJapaneseEntry.getId(), "");
 									
 									// i podmieniamy tlumaczenie i informacje dodatkowe z naszego wyjsciowego slowka
 									newPolishJapaneseEntry.setTranslates(new ArrayList<String>(polishJapaneseEntry.getTranslates()));
@@ -1091,7 +1091,7 @@ public class WordGenerator {
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
 				
 				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
+				JMENewDictionary jmeNewDictionary = null; // wordGeneratorHelper.getJMENewDictionary();				
 								
 				// walidacja slownika
 				System.out.println("Walidowanie słownika...");
@@ -1105,7 +1105,7 @@ public class WordGenerator {
 				
 				final Map<String, PolishJapaneseEntry> newWordListAndPolishJapaneseEntryMap = new HashMap<String, PolishJapaneseEntry>();
 				
-				Set<String> alreadyAddedGroupEntry = new TreeSet<String>();
+				Set<String> alreadyAddedEntryKanjiKanaPair = new TreeSet<String>();
 										
 				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 					
@@ -1123,42 +1123,40 @@ public class WordGenerator {
 						continue;
 					}
 										
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+					KanjiKanaPair kanjiKanaPairForPolishJapaneseEntry = dictionary2Helper.findKanjiKanaPair(polishJapaneseEntry);
 											
-					if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+					if (kanjiKanaPairForPolishJapaneseEntry != null) {
 						
-						groupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList(); // podmiana na wszystkie elementy z grupy
+						Entry entry = dictionary2Helper.getJMdictEntry(polishJapaneseEntry.getGroupIdFromJmedictRawDataList());
 						
-						List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
+						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
 						
-						for (List<GroupEntry> theSameTranslateGroupEntryList : groupByTheSameTranslateGroupEntryList) {
+						List<List<KanjiKanaPair>> kanjiKanaPairListGroupByTheSameTranslateListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
+						
+						for (List<KanjiKanaPair> kanjiKanaPairListForTheSameTranslateList : kanjiKanaPairListGroupByTheSameTranslateListList) {
 							
-							for (GroupEntry groupEntry : theSameTranslateGroupEntryList) {
+							for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListForTheSameTranslateList) {
 								
-								String groupEntryKanji = groupEntry.getKanji();
-								String groupEntryKana = groupEntry.getKana();
-
+								String kanjiKanaPairKanji = kanjiKanaPair.getKanji();
+								String kanjiKanaPairKana = kanjiKanaPair.getKana();
+														
 								PolishJapaneseEntry findPolishJapaneseEntry = 
 										Helper.findPolishJapaneseEntryWithEdictDuplicate(polishJapaneseEntry, cachePolishJapaneseEntryList, 
-										groupEntryKanji, groupEntryKana);
+												kanjiKanaPairKanji, kanjiKanaPairKana);
 
 								if (findPolishJapaneseEntry == null) {
 									
-									System.out.println("FIXME!!!!!!!");
-									String keyForGroupEntry = null;									
-									//String keyForGroupEntry = getKeyForAlreadyAddedGroupEntrySet(groupEntry);
+									String keyForAlreadyAddedEntryKanjiKanaPair = getKeyForAlreadyAddedEntryKanjiKanaPairSet(entry, kanjiKanaPair);
 									
-									if (alreadyAddedGroupEntry.contains(keyForGroupEntry) == false) {
+									if (alreadyAddedEntryKanjiKanaPair.contains(keyForAlreadyAddedEntryKanjiKanaPair) == false) {
 										
-										alreadyAddedGroupEntry.add(keyForGroupEntry);
+										alreadyAddedEntryKanjiKanaPair.add(keyForAlreadyAddedEntryKanjiKanaPair);
 
 										//
 										
-										CreatePolishJapaneseEntryResult createPolishJapaneseEntryResult = Helper.createPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry, 
-												polishJapaneseEntry.getId(), null);
-										
-										PolishJapaneseEntry newPolishJapaneseEntry = createPolishJapaneseEntryResult.polishJapaneseEntry;								
-
+										// generujemy nowy wpis
+										PolishJapaneseEntry newPolishJapaneseEntry = dictionary2Helper.generateOldPolishJapaneseEntry(entry, kanjiKanaPair, polishJapaneseEntry.getId(), "");
+																				
 										newWordList.add(newPolishJapaneseEntry);
 										
 										newWordListAndPolishJapaneseEntryMap.put(getKeyForNewWordListAndGroupEntry(newPolishJapaneseEntry), polishJapaneseEntry);
