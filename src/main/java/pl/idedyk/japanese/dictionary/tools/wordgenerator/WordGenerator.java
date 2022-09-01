@@ -73,6 +73,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 
@@ -2561,9 +2562,6 @@ public class WordGenerator {
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
 								
-				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();				
-				
 				// tworzenie indeksu lucene
 				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
 								
@@ -2582,75 +2580,70 @@ public class WordGenerator {
 				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
 				
 				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-										
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
 					
-					if (groupEntryList != null && groupEntryList.size() > 0) {
+					List<Entry> entryListForPolishJapaneseEntry = dictionary2Helper.findEntryListInJmdict(polishJapaneseEntry, true);
+					
+					if (entryListForPolishJapaneseEntry != null && entryListForPolishJapaneseEntry.size() > 0) {
 						
-						for (GroupEntry groupEntry : groupEntryList) {
+						for (Entry entry : entryListForPolishJapaneseEntry) {
 							
-							List<String> similarRelatedList = groupEntry.getSimilarRelatedList();
+							List<Sense> senseList = entry.getSenseList();
 							
-							for (String currentSimilarRelated : similarRelatedList) {
+							for (Sense currentSense : senseList) {
 								
-								int pointIdx = currentSimilarRelated.indexOf("・");
+								List<String> referenceToAnotherKanjiKanaList = currentSense.getReferenceToAnotherKanjiKanaList();
 								
-								if (pointIdx != -1) {
-									currentSimilarRelated = currentSimilarRelated.substring(0, pointIdx);
-								}
+								for (String currentSimilarRelated : referenceToAnotherKanjiKanaList) {
 								
-								Query query = Helper.createLuceneDictionaryIndexTermQuery(currentSimilarRelated);
-
-								ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
-								
-								if (scoreDocs.length > 0) {
-																
-									for (ScoreDoc scoreDoc : scoreDocs) {
-										
-										Document foundDocument = searcher.doc(scoreDoc.doc);
-
-										// znaleziony obiekt od lucene
-										GroupEntry groupEntryFromLucene = Helper.createGroupEntry(foundDocument);
-										
-										Integer groupId = groupEntryFromLucene.getGroup().getId();
-										
-										// czy ta grupa byla juz sprawdzana
-										if (alreadyCheckedGroupId.contains(groupId) == true) {
-											continue;
+									int pointIdx = currentSimilarRelated.indexOf("・");
+									
+									if (pointIdx != -1) {
+										currentSimilarRelated = currentSimilarRelated.substring(0, pointIdx);
+									}
+									
+									List<Entry> foundSimilarRelatedEntryList = dictionary2Helper.findInJMdict(currentSimilarRelated);
+																		
+									if (foundSimilarRelatedEntryList != null && foundSimilarRelatedEntryList.size() > 0) {
+																	
+										for (Entry currentFoundEntry : foundSimilarRelatedEntryList) {
+																						
+											Integer foundEntryId = currentFoundEntry.getEntryId();
 											
-										} else {
-											alreadyCheckedGroupId.add(groupId);
+											// czy ta grupa byla juz sprawdzana
+											if (alreadyCheckedGroupId.contains(foundEntryId) == true) {
+												continue;
+												
+											} else {
+												alreadyCheckedGroupId.add(foundEntryId);
+												
+											}
 											
-										}
-										
-										// szukamy pelnej grupy
-										Group foundGroupInDictionary = jmeNewDictionary.getGroupById(groupId);
-										
-										List<GroupEntry> foundGroupEntryList = foundGroupInDictionary.getGroupEntryList();
-																			
-										// grupujemy po tych samych tlumaczenia
-										List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(foundGroupEntryList);
+											List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(currentFoundEntry);
+																															
+											// grupujemy po tych samych tlumaczenia
+											List<List<KanjiKanaPair>> groupByTheSameTranslateKanjiKanaListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
+																									
+											for (List<KanjiKanaPair> foundGroupByTheSameTranslateKanjiKanaList : groupByTheSameTranslateKanjiKanaListList) {
+												
+												KanjiKanaPair foundKanjiKanaPair = foundGroupByTheSameTranslateKanjiKanaList.get(0); // pierwszy element z grupy
+	
+												String foundKanjiKanaPairKanji = foundKanjiKanaPair.getKanji();
+												String foundKanjiKanaPairKana = foundKanjiKanaPair.getKana();
+																				
+												List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, foundKanjiKanaPairKanji, foundKanjiKanaPairKana);
+												
+												if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
 													
-										for (List<GroupEntry> foundGroupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
-											
-											GroupEntry foundGroupEntry = foundGroupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
-
-											String foundGroupEntryKanji = foundGroupEntry.getKanji();
-											String foundGroupEntryKana = foundGroupEntry.getKana();
-																			
-											List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, foundGroupEntryKanji, foundGroupEntryKana);
-											
-											if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
-												
-												//System.out.println(groupEntry);
-												
-												CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, foundGroupEntry);
-												
-												if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
-
-													newCommonWordMap.put(commonWord.getId(), commonWord);
+													//System.out.println(groupEntry);
 													
-													csvId++;										
+													CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, foundKanjiKanaPair); 
+													
+													if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
+	
+														newCommonWordMap.put(commonWord.getId(), commonWord);
+														
+														csvId++;										
+													}
 												}
 											}
 										}
