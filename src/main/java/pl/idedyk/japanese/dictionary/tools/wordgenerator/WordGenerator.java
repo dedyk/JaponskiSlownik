@@ -4414,6 +4414,53 @@ public class WordGenerator {
 				break;
 			}
 			
+			case SHOW_ALL_MISSING_WORDS2: {
+				
+				// wczytywanie pomocnika slownikowego
+				Dictionary2Helper dictionaryHelper = Dictionary2Helper.init(wordGeneratorHelper);
+				
+				// pobieramy wszystkie wpisy ze slownika JMdict
+				List<Entry> entryList = dictionaryHelper.getJMdict().getEntryList();
+
+				// lista wynikowa
+				List<Entry> resultDictionary2EntryList = new ArrayList<>();
+				
+				// dodatkowe informacje
+				EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+				
+				for (Entry entry : entryList) {
+					
+					// pobieramy polski wpis
+					Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(entry.getEntryId());
+					
+					// tego slowka nie ma, dodajemy
+					if (entryFromPolishDictionary == null) {
+						
+						// uzupelnienie o puste polskie tlumaczenie
+						dictionaryHelper.createEmptyPolishSense(entry);
+						
+						// pobranie ze starego slownika interesujacych danych (np. romaji)
+						dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry, entryAdditionalData);
+						
+						// dodajemy do listy
+						resultDictionary2EntryList.add(entry);
+					}
+				}
+				
+				// zapisujemy
+				Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
+								
+				saveEntryListAsHumanCsvConfig.addOldPolishTranslates = true;
+				saveEntryListAsHumanCsvConfig.markRomaji = true;
+				saveEntryListAsHumanCsvConfig.shiftCells = true;
+				saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
+										
+				// zapisanie slow w nowym formacie
+				dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", resultDictionary2EntryList, entryAdditionalData);				
+				
+				break;
+			}
+			
 			case HELP: {
 				
 				// pobranie listy mozliwych operacji
