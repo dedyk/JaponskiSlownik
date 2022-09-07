@@ -2242,6 +2242,8 @@ public class WordGenerator {
 			
 			case GENERATE_PREFIX2_WORD_LIST: {
 				
+				fixme();
+				
 				if (args.length != 3) {
 					
 					System.err.println("Niepoprawna liczba argumentów");
@@ -2313,18 +2315,7 @@ public class WordGenerator {
 
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-				
-				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();				
-				
-				// tworzenie indeksu lucene
-				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
 								
-				// stworzenie wyszukiwacza
-				IndexReader reader = DirectoryReader.open(luceneIndex);
-
-				IndexSearcher searcher = new IndexSearcher(reader);
-				
 				// generowanie slow
 				System.out.println("Generowanie słów...");
 				
@@ -2332,7 +2323,7 @@ public class WordGenerator {
 
 				int csvId = 1;
 								
-				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
+				Set<Integer> alreadyCheckedEntryId = new TreeSet<Integer>();
 				
 				Set<String> allPrefixes = new TreeSet<String>();
 				
@@ -2358,70 +2349,59 @@ public class WordGenerator {
 					System.out.format("%s - %d / %d / %d\n", currentPrefix, currentPrefixCounter, allPrefixes.size(), newCommonWordMap.size());
 					
 					currentPrefixCounter++;
-						
-					Query query = Helper.createLuceneDictionaryIndexPrefixQuery(currentPrefix);
-
-					ScoreDoc[] scoreDocs = searcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
 					
-					if (scoreDocs.length > 0) {
+					List<Entry> entryList = dictionary2Helper.findInJMdict(currentPrefix);
+										
+					if (entryList != null && entryList.size() > 0) {
 													
-						for (ScoreDoc scoreDoc : scoreDocs) {
-							
-							Document foundDocument = searcher.doc(scoreDoc.doc);
-
-							// znaleziony obiekt od lucene
-							GroupEntry groupEntryFromLucene = Helper.createGroupEntry(foundDocument);
-							
-							Integer groupId = groupEntryFromLucene.getGroup().getId();
+						for (Entry entry : entryList) {
+														
+							Integer entryId = entry.getEntryId();
 							
 							// czy ta grupa byla juz sprawdzana
-							if (alreadyCheckedGroupId.contains(groupId) == true) {
+							if (alreadyCheckedEntryId.contains(entryId) == true) {
 								continue;
 								
 							} else {
-								alreadyCheckedGroupId.add(groupId);
+								alreadyCheckedEntryId.add(entryId);
 								
 							}
 							
-							// szukamy pelnej grupy
-							Group groupInDictionary = jmeNewDictionary.getGroupById(groupId);
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
 							
-							List<GroupEntry> groupEntryList = groupInDictionary.getGroupEntryList();
-																
 							// grupujemy po tych samych tlumaczenia
-							List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryList);
+							List<List<KanjiKanaPair>> groupByTheSameTranslateEntryList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
 										
-							for (List<GroupEntry> groupEntryListTheSameTranslate : groupByTheSameTranslateGroupEntryList) {
+							for (List<KanjiKanaPair> groupEntryListTheSameTranslate : groupByTheSameTranslateEntryList) {
 								
-								GroupEntry groupEntry = groupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
+								KanjiKanaPair kanjiKanaPair = groupEntryListTheSameTranslate.get(0); // pierwszy element z grupy
 
-								String groupEntryKanji = groupEntry.getKanji();
-								String groupEntryKana = groupEntry.getKana();
+								String kanjiKanaPairKanji = kanjiKanaPair.getKanji();							
+								String kanjiKanaPairKana = kanjiKanaPair.getKana();
 								
-								if (minKanjiLength != null && groupEntryKanji != null && groupEntryKanji.length() < minKanjiLength) {
+								if (minKanjiLength != null && kanjiKanaPairKanji != null && kanjiKanaPairKanji.length() < minKanjiLength) {
 									continue;
 								}
 								
-								if (minKanaLength != null && groupEntryKana != null && groupEntryKana.length() < minKanaLength) {
+								if (minKanaLength != null && kanjiKanaPairKana != null && kanjiKanaPairKana.length() < minKanaLength) {
+									continue;
+								}
+								
+								if (maxKanjiLength != null && kanjiKanaPairKanji != null && kanjiKanaPairKanji.length() > maxKanjiLength) {
 									continue;
 								}
 
-								
-								if (maxKanjiLength != null && groupEntryKanji != null && groupEntryKanji.length() > maxKanjiLength) {
-									continue;
-								}
-
-								if (maxKanaLength != null && groupEntryKana.length() > maxKanaLength) {
+								if (maxKanaLength != null && kanjiKanaPairKana.length() > maxKanaLength) {
 									continue;
 								}
 								
-								List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+								List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, kanjiKanaPairKanji, kanjiKanaPairKana);
 								
 								if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
 										
 									//System.out.println(groupEntry);
 									
-									CommonWord commonWord = Helper.convertGroupEntryToCommonWord(csvId, groupEntry);
+									CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, kanjiKanaPair);
 									
 									if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
 									
