@@ -51,6 +51,7 @@ import org.apache.lucene.index.IndexWriterConfig.OpenMode;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.PrefixQuery;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TermQuery;
@@ -379,7 +380,15 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 	}
 	
-	public List<JMdict.Entry> findInJMdict(String word) throws Exception {
+	public List<JMdict.Entry> findInJMdict(String word) throws Exception {		
+		return findInJMdict(word, 0);
+	}
+
+	public List<JMdict.Entry> findInJMdictPrefix(String word) throws Exception {		
+		return findInJMdict(word, 1);
+	}
+
+	private List<JMdict.Entry> findInJMdict(String word, int queryMode) throws Exception {
 		
 		// tworzenie cache'u
 		initJMdictEntryIdCache();
@@ -396,7 +405,17 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 		
 		// tworzymy zapytanie
-		Query query = createLuceneDictionaryIndexTermQuery(word);
+		Query query;
+		
+		if (queryMode == 0) {
+			query = createLuceneDictionaryIndexTermQuery(word);
+			
+		} else if (queryMode == 1) {
+			query = createLuceneDictionaryIndexPrefixQuery(word);
+			
+		} else {
+			throw new RuntimeException();
+		}
 		
 		// wyszukujemy
 		ScoreDoc[] scoreDocs = jmdictLuceneIndexReaderSearcher.search(query, null, Integer.MAX_VALUE).scoreDocs;
@@ -491,6 +510,27 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return query;
 	}
 	
+	private Query createLuceneDictionaryIndexPrefixQuery(String word) throws Exception {
+
+		BooleanQuery query = new BooleanQuery();
+
+		String[] wordSplited = word.split("\\s+");
+
+		BooleanQuery wordBooleanQuery = new BooleanQuery();
+		
+		wordBooleanQuery.add(createPrefixQuery(new String[] { word }, JMdictLuceneFields.KANJI), Occur.SHOULD);
+		wordBooleanQuery.add(createPrefixQuery(new String[] { word }, JMdictLuceneFields.KANA), Occur.SHOULD);
+		wordBooleanQuery.add(createPrefixQuery(wordSplited, JMdictLuceneFields.ROMAJI), Occur.SHOULD);
+
+		wordBooleanQuery.add(createPrefixQuery(wordSplited, JMdictLuceneFields.TRANSLATE), Occur.SHOULD);
+		wordBooleanQuery.add(createPrefixQuery(wordSplited, JMdictLuceneFields.LANGUAGE_SOURCE), Occur.SHOULD);
+		wordBooleanQuery.add(createPrefixQuery(wordSplited, JMdictLuceneFields.SENSE_ADDITIONAL_INFO), Occur.SHOULD);
+
+		query.add(wordBooleanQuery, Occur.MUST);
+
+		return query;
+	}
+	
 	private String[] getTokenizedWords(String text) throws Exception {
 		
 		List<String> tokenizedWordsList = new ArrayList<String>();
@@ -536,7 +576,17 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 
 		return booleanQuery;
 	}
+	
+	private static Query createPrefixQuery(String[] wordSplited, String fieldName) {
 
+		BooleanQuery booleanQuery = new BooleanQuery();
+
+		for (String currentWord : wordSplited) {
+			booleanQuery.add(new PrefixQuery(new Term(fieldName, currentWord)), Occur.MUST);
+		}
+
+		return booleanQuery;
+	}
 	
 	private void addTextFieldToDocument(Document document, String fieldName, String value) {
 

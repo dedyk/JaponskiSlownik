@@ -2241,9 +2241,7 @@ public class WordGenerator {
 			}
 			
 			case GENERATE_PREFIX2_WORD_LIST: {
-				
-				fixme();
-				
+								
 				if (args.length != 3) {
 					
 					System.err.println("Niepoprawna liczba argumentów");
@@ -2350,7 +2348,7 @@ public class WordGenerator {
 					
 					currentPrefixCounter++;
 					
-					List<Entry> entryList = dictionary2Helper.findInJMdict(currentPrefix);
+					List<Entry> entryList = dictionary2Helper.findInJMdictPrefix(currentPrefix);
 										
 					if (entryList != null && entryList.size() > 0) {
 													
@@ -2366,7 +2364,7 @@ public class WordGenerator {
 								alreadyCheckedEntryId.add(entryId);
 								
 							}
-							
+														
 							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
 							
 							// grupujemy po tych samych tlumaczenia
