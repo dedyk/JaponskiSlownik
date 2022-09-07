@@ -4015,25 +4015,22 @@ public class WordGenerator {
 
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-				
-				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();	
-				
-				class PolishJapaneseEntryAndGroupEntryWrapper {
+								
+				class PolishJapaneseEntryAndKanjiKanaPairWrapper {
 					
 					PolishJapaneseEntry polishJapaneseEntry;
 					
-					GroupEntry groupEntry;
+					KanjiKanaPair kanjiKanaPair;
 					
-					public PolishJapaneseEntryAndGroupEntryWrapper(PolishJapaneseEntry polishJapaneseEntry, GroupEntry groupEntry) {
+					public PolishJapaneseEntryAndKanjiKanaPairWrapper(PolishJapaneseEntry polishJapaneseEntry, KanjiKanaPair kanjiKanaPair) {
 						this.polishJapaneseEntry = polishJapaneseEntry;
-						this.groupEntry = groupEntry;
+						this.kanjiKanaPair = kanjiKanaPair;
 					}
 				}
 				
 				//
 
-				final Map<Integer, PolishJapaneseEntryAndGroupEntryWrapper> result = new TreeMap<>();			
+				final Map<Integer, PolishJapaneseEntryAndKanjiKanaPairWrapper> result = new TreeMap<>();			
 				
 				BEFORE_MAIN_FOR:
 				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
@@ -4045,32 +4042,38 @@ public class WordGenerator {
 					}
 										
 					// szukanie slow
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
-					
-					if (groupEntryList == null && checkForPartialTranslates(polishJapaneseEntry) == true && result.containsKey(polishJapaneseEntry.getId()) == false) {
+					List<Entry> entryList = dictionary2Helper.findEntryListInJmdict(polishJapaneseEntry, false);
+										
+					if ((entryList == null | entryList.size() == 0) && checkForPartialTranslates(polishJapaneseEntry) == true && result.containsKey(polishJapaneseEntry.getId()) == false) {
 												
-						result.put(polishJapaneseEntry.getId(), new PolishJapaneseEntryAndGroupEntryWrapper(polishJapaneseEntry, null));
+						result.put(polishJapaneseEntry.getId(), new PolishJapaneseEntryAndKanjiKanaPairWrapper(polishJapaneseEntry, null));
 						
 						continue BEFORE_MAIN_FOR;			
 					}
 					
-					if (groupEntryList != null && groupEntryList.size() > 0) {
+					if (entryList != null && entryList.size() > 0) {
 						
-						List<GroupEntry> groupEntryListForGroupEntry = groupEntryList.get(0).getGroup().getGroupEntryList(); // podmiana na wszystkie elementy z grupy
+						if (entryList.size() > 1) {
+							throw new RuntimeException(); // to raczej nie powinno zdarzyc sie
+						}
 						
-						// grupujemy po tych samych tlumaczeniach
-						List<List<GroupEntry>> groupByTheSameTranslateGroupEntryList = JMENewDictionary.groupByTheSameTranslate(groupEntryListForGroupEntry);
-										
-						// chodzimy po tych samych tlumaczeniach
-						for (List<GroupEntry> theSameTranslateGroupEntryList : groupByTheSameTranslateGroupEntryList) {
-								
-							GroupEntry groupEntry = theSameTranslateGroupEntryList.get(0); // pierwszy element z grupy
+						Entry entry = entryList.get(0);
+						
+						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
 
-							String groupEntryKanji = groupEntry.getKanji();
-							String groupEntryKana = groupEntry.getKana();
+						// grupujemy po tych samych tlumaczeniach
+						List<List<KanjiKanaPair>> groupByTheSameTranslateKanjiKanaList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
+																
+						// chodzimy po tych samych tlumaczeniach
+						for (List<KanjiKanaPair> theSameTranslateKanjiKanaList : groupByTheSameTranslateKanjiKanaList) {
+								
+							KanjiKanaPair kanjiKanaPair = theSameTranslateKanjiKanaList.get(0); // pierwszy element z grupy
+
+							String kanjiKanaPairKanji = kanjiKanaPair.getKanji();
+							String kanjiKanaPairKana = kanjiKanaPair.getKana();
 															
 							PolishJapaneseEntry polishJapaneseEntryInGroup = Helper.findPolishJapaneseEntryWithEdictDuplicate(
-									polishJapaneseEntry, cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+									polishJapaneseEntry, cachePolishJapaneseEntryList, kanjiKanaPairKanji, kanjiKanaPairKana);
 
 							if (polishJapaneseEntryInGroup == null) {								
 								continue;
@@ -4078,7 +4081,7 @@ public class WordGenerator {
 							
 							if (result.containsKey(polishJapaneseEntryInGroup.getId()) == false && checkForPartialTranslates(polishJapaneseEntryInGroup) == true) {								
 								
-								result.put(polishJapaneseEntryInGroup.getId(), new PolishJapaneseEntryAndGroupEntryWrapper(polishJapaneseEntryInGroup, groupEntry));
+								result.put(polishJapaneseEntryInGroup.getId(), new PolishJapaneseEntryAndKanjiKanaPairWrapper(polishJapaneseEntryInGroup, kanjiKanaPair));
 																
 								continue BEFORE_MAIN_FOR;								
 							}							
@@ -4089,7 +4092,7 @@ public class WordGenerator {
 				// zapis slownika
 				List<PolishJapaneseEntry> polishJapaneseEntryList = new ArrayList<>();
 				
-				for (PolishJapaneseEntryAndGroupEntryWrapper polishJapaneseEntryAndGroupEntryWrapper : result.values()) {
+				for (PolishJapaneseEntryAndKanjiKanaPairWrapper polishJapaneseEntryAndGroupEntryWrapper : result.values()) {
 					polishJapaneseEntryList.add(polishJapaneseEntryAndGroupEntryWrapper.polishJapaneseEntry);
 				}
 				
@@ -4099,21 +4102,20 @@ public class WordGenerator {
 						@Override
 						public void write(CsvWriter csvWriter, PolishJapaneseEntry polishJapaneseEntry) throws IOException {
 							
-							PolishJapaneseEntryAndGroupEntryWrapper polishJapaneseEntryAndGroupEntryWrapper = result.get(polishJapaneseEntry.getId());
+							PolishJapaneseEntryAndKanjiKanaPairWrapper polishJapaneseEntryAndGroupEntryWrapper = result.get(polishJapaneseEntry.getId());
 							
-							if (polishJapaneseEntryAndGroupEntryWrapper.groupEntry == null) {
+							if (polishJapaneseEntryAndGroupEntryWrapper.kanjiKanaPair == null) {
 								return;
 							}
 							
-							List<GroupEntryTranslate> translateList = polishJapaneseEntryAndGroupEntryWrapper.groupEntry.getTranslateList();
-							
-							List<String> translateList2 = new ArrayList<>();
-							
-							for (GroupEntryTranslate groupEntryTranslate : translateList) {								
-								translateList2.add(groupEntryTranslate.getTranslate());								
+							try {
+								List<String> generateTranslatesInOldFormat = dictionary2Helper.generateTranslatesInOldFormat(polishJapaneseEntryAndGroupEntryWrapper.kanjiKanaPair, null);
+															
+								csvWriter.write(Utils.convertListToString(generateTranslatesInOldFormat));
+								
+							} catch (Exception e) {
+								throw new RuntimeException("" + polishJapaneseEntry.getId());
 							}
-														
-							csvWriter.write(Utils.convertListToString(translateList2));							
 						}
 						
 						@Override
