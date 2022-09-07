@@ -3879,10 +3879,7 @@ public class WordGenerator {
 				
 				// przegladanie listy common'owych plikow i sprawdzanie, czy nie jest juz dodany
 				Collection<CommonWord> commonWordValues = commonWordMap.values();
-				
-				// przygotowywane slownika jmedict
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
-				
+								
 				Iterator<CommonWord> commonWordValuesIterator = commonWordValues.iterator();
 								
 				while (commonWordValuesIterator.hasNext() == true) {
@@ -3892,16 +3889,20 @@ public class WordGenerator {
 					if (currentCommonWord.isDone() == false) {
 
 						String commonKanji = currentCommonWord.getKanji();
+						
+						if (commonKanji.equals("-") == true) {
+							commonKanji = null;
+						}
+						
 						String commonKana = currentCommonWord.getKana();
 						
-						List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(commonKanji, commonKana);
-
-						if (groupEntryList == null || groupEntryList.size() == 0) {
+						List<Entry> entryList = dictionary2Helper.findEntryListByKanjiAndKana(commonKanji, commonKana);
+						
+						if (entryList == null || entryList.size() == 0) {
 							System.out.println(currentCommonWord.getId());
 						}						
 					}
 				}
-				
 				
 				break;
 			}
