@@ -4073,7 +4073,7 @@ public class WordGenerator {
 									polishJapaneseEntry, cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
 
 							if (polishJapaneseEntryInGroup == null) {								
-								throw new RuntimeException(); // to nigdy nie powinno zdazyc sie
+								continue;
 							}
 							
 							if (result.containsKey(polishJapaneseEntryInGroup.getId()) == false && checkForPartialTranslates(polishJapaneseEntryInGroup) == true) {								
@@ -4251,12 +4251,20 @@ public class WordGenerator {
 			return false;
 		}
 		*/
-
+		
+		/*
 		if (translates.size() != 1 || translates.get(0).equals("???") == false) {
 			return false;
 		}
+		*/
 		
-		return true;
+		for (String currentTranslate : translates) {
+			if (currentTranslate.contains("??") == true) {
+				return true;
+			}
+		}
+		
+		return false;
 	}
 	
 	private static List<String> readFile(String fileName) {
