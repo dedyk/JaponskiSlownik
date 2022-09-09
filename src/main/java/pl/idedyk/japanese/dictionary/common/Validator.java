@@ -1137,7 +1137,7 @@ public class Validator {
 		}		
 	}
 	
-	public static void validateEdictGroup(JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
+	public static void validateEdictGroup(Dictionary2Helper dictionary2Helper, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
 		
 		System.out.println("FIXME !!!!!!");
 		

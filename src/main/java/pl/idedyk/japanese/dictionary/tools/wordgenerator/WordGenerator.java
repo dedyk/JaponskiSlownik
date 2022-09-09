@@ -37,20 +37,14 @@ import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
 import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector.JapaneseWord;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
@@ -914,14 +908,11 @@ public class WordGenerator {
 
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-				
-				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = null; // wordGeneratorHelper.getJMENewDictionary();				
-				
+								
 				// walidacja slownika
 				System.out.println("Walidowanie słownika...");
 				
-				Validator.validateEdictGroup(jmeNewDictionary, polishJapaneseEntries);
+				Validator.validateEdictGroup(dictionary2Helper, polishJapaneseEntries);
 
 				// generowanie slow
 				System.out.println("Generowanie słów...");
@@ -1078,14 +1069,11 @@ public class WordGenerator {
 
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-				
-				// wczytanie slownika jmedict
-				JMENewDictionary jmeNewDictionary = null; // wordGeneratorHelper.getJMENewDictionary();				
-								
+												
 				// walidacja slownika
 				System.out.println("Walidowanie słownika...");
 				
-				Validator.validateEdictGroup(jmeNewDictionary, polishJapaneseEntries);
+				Validator.validateEdictGroup(dictionary2Helper, polishJapaneseEntries);
 
 				// generowanie slow
 				System.out.println("Generowanie słów...");
@@ -1687,14 +1675,11 @@ public class WordGenerator {
 
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
-				
-				// wczytanie slownika jmedict - FIXME !!!!
-				JMENewDictionary jmeNewDictionary = null; //wordGeneratorHelper.getJMENewDictionary();				
-				
+								
 				// walidacja slownika
 				System.out.println("Walidowanie słownika...");
 				
-				Validator.validateEdictGroup(jmeNewDictionary, polishJapaneseEntries);
+				Validator.validateEdictGroup(dictionary2Helper, polishJapaneseEntries);
 
 				// generowanie slow
 				System.out.println("Generowanie słów...");
@@ -1786,10 +1771,7 @@ public class WordGenerator {
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
 								
-				// wczytanie slownika jmedict - FIXME !!!!
-				JMENewDictionary jmeNewDictionary = null; //wordGeneratorHelper.getJMENewDictionary();				
-				
-				Validator.validateEdictGroup(jmeNewDictionary, polishJapaneseEntries);
+				Validator.validateEdictGroup(dictionary2Helper, polishJapaneseEntries);
 
 				// generowanie slow
 				System.out.println("Generowanie słów...");
@@ -3359,9 +3341,7 @@ public class WordGenerator {
 				}
 
 				List<PolishJapaneseEntry> result = new ArrayList<>();
-				
-				JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
-				
+								
 				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
 					
 					DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
@@ -3375,9 +3355,9 @@ public class WordGenerator {
 					}
 					
 					// szukanie slow
-					List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
-											
-					if (groupEntryList == null || groupEntryList.size() == 0) {						
+					List<Entry> entryList = dictionary2Helper.findEntryListInJmdict(polishJapaneseEntry, true);
+																
+					if (entryList == null || entryList.size() == 0) {						
 						result.add(polishJapaneseEntry);
 					}
 					
@@ -4329,6 +4309,7 @@ public class WordGenerator {
 		return false;
 	}
 	
+	/*
 	private static WordType getWordType(String kana) {
 		
 		WordType wordType = null;
@@ -4363,6 +4344,7 @@ public class WordGenerator {
 		
 		return wordType;
 	}
+	*/
 		
 	private static String getKeyForAlreadyAddedEntryKanjiKanaPairSet(Entry entry, KanjiKanaPair kanjiKanaPair) {
 		
