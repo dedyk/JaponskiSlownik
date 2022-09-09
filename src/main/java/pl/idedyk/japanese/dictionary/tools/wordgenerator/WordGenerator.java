@@ -30,13 +30,6 @@ import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.UnrecognizedOptionException;
-import org.apache.lucene.document.Document;
-import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.Query;
-import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.store.Directory;
 
 import com.atilika.kuromoji.ipadic.Token;
 import com.atilika.kuromoji.ipadic.Tokenizer;
@@ -197,11 +190,11 @@ public class WordGenerator {
 							//
 							
 							if (checkInJishoOrg == true && polishJapaneseEntry.isKanjiExists() == true) {
-								searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
+								searchInJishoForAdditionalWords(wordGeneratorHelper, dictionary2Helper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
 										"Szukanie w jisho.org (znaleziono kanji): " + polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKanji());
 								
 							} else if (checkInJishoOrg == true && polishJapaneseEntry.getKana() != null) {
-								searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
+								searchInJishoForAdditionalWords(wordGeneratorHelper, dictionary2Helper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
 										"Szukanie w jisho.org (znaleziono kana): " + polishJapaneseEntry.getKana(), polishJapaneseEntry.getKana());
 							}
 							
@@ -492,7 +485,7 @@ public class WordGenerator {
 						boolean wordExistsInJishoOrg = false;
 						
 						if (checkInJishoOrg == true) {								
-							wordExistsInJishoOrg = searchInJishoForAdditionalWords(wordGeneratorHelper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
+							wordExistsInJishoOrg = searchInJishoForAdditionalWords(wordGeneratorHelper, dictionary2Helper, newAdditionalWordToCheckWordList, jishoOrgConnector, jishoOrgConnectorWordCheckCache,
 									"Szukanie w jisho.org (nie znaleziono): " + currentMissingWord, currentMissingWord);
 						}
 						
@@ -2519,14 +2512,6 @@ public class WordGenerator {
 				// cache'owanie slownika
 				final Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
 								
-				// tworzenie indeksu lucene
-				Directory luceneIndex = wordGeneratorHelper.getLuceneIndex();
-								
-				// stworzenie wyszukiwacza
-				IndexReader reader = DirectoryReader.open(luceneIndex);
-
-				IndexSearcher searcher = new IndexSearcher(reader);
-				
 				// generowanie slow
 				System.out.println("Generowanie słów...");
 								
@@ -4395,7 +4380,7 @@ public class WordGenerator {
 		return key;		
 	}
 	
-	private static boolean searchInJishoForAdditionalWords(WordGeneratorHelper wordGeneratorHelper, LinkedHashSet<String> newAdditionalWordToCheckWordList, 
+	private static boolean searchInJishoForAdditionalWords(WordGeneratorHelper wordGeneratorHelper, Dictionary2Helper dictionary2Helper, LinkedHashSet<String> newAdditionalWordToCheckWordList, 
 			JishoOrgConnector jishoOrgConnector, Map<String, Boolean> jishoOrgConnectorWordCheckCache, 
 			String messageTemplate, String word) throws Exception {
 		
@@ -4406,9 +4391,7 @@ public class WordGenerator {
 		}
 		
 		//
-		
-		JMENewDictionary jmeNewDictionary = wordGeneratorHelper.getJMENewDictionary();
-		
+				
 		Map<Integer, CommonWord> commonWordMap = wordGeneratorHelper.getCommonWordMap();
 		
 		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = wordGeneratorHelper.getPolishJapaneseEntriesCache();
@@ -4423,23 +4406,27 @@ public class WordGenerator {
 		
 		for (JapaneseWord japaneseWord : japaneseWords) {
 			
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(japaneseWord.kanji, japaneseWord.kana);
-			
-			if (groupEntryList != null) {
-				
-				groupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
-				
+			List<Entry> foundEntryList = dictionary2Helper.findEntryListByKanjiAndKana(japaneseWord.kanji, japaneseWord.kana);
+						
+			if (foundEntryList != null) {
+								
 				boolean isAdd = true;
 				
-				for (GroupEntry groupEntry : groupEntryList) {
+				BEFORE_FOR:
+				for (Entry entry : foundEntryList) {
 					
-					if (	Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, groupEntry.getKanji(), groupEntry.getKana()) != null ||
-							existsInCommonWords(commonWordMap, groupEntry.getKanji(), groupEntry.getKana(), false) == true) {
-																	
-						isAdd = false;
+					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+					
+					for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 						
-						break;
-					}
+						if (	Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, kanjiKanaPair.getKanji(), kanjiKanaPair.getKana()) != null ||
+								existsInCommonWords(commonWordMap, kanjiKanaPair.getKanji(), kanjiKanaPair.getKana(), false) == true) {
+																		
+							isAdd = false;
+							
+							break BEFORE_FOR;
+						}
+					}					
 				}
 								
 				if (isAdd == true) {
