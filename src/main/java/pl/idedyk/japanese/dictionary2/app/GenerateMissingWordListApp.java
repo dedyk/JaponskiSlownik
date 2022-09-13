@@ -13,8 +13,6 @@ import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
-import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector;
-import pl.idedyk.japanese.dictionary.tools.JishoOrgConnector.JapaneseWord;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
@@ -30,9 +28,11 @@ public class GenerateMissingWordListApp {
 		// opcje
 		Options options = new Options();
 		
-		options.addOption("cijo", "check-in-jisho-org", false, "Check in jisho org");			
+		//options.addOption("cijo", "check-in-jisho-org", false, "Check in jisho org");			
 		options.addOption("f", "file", true, "Word list file name");
-		options.addOption("awwdeiod", "add-words-which-also-doesnt-exist-in-old-dictionary", false, "Add words which also doesn't exist in old dictionary");
+		options.addOption("dnaeweod", "do-not-add-entries-which-exists-in-old-dictionary", false, "Do not add entries which exists in old dictionary");
+		options.addOption("aops", "add-only-polish-entries", false, "Add only polish entries");
+		options.addOption("aojs", "add-only-jmdict-entries", false, "Add only jmdict entries");
 		options.addOption("h", "help", false, "Help");
 		
 		// parsowanie opcji		
@@ -59,8 +59,12 @@ public class GenerateMissingWordListApp {
 		
 		String wordListFileName = null;
 		
-		boolean checkInJishoOrg = false;
-		boolean addWordsWithAlsoDoesntExistInOldDictionary = false;
+		// boolean checkInJishoOrg = false;
+		// boolean addWordsWithAlsoDoesntExistInOldDictionary = false;
+		
+		boolean doNotAddEntriesWhichExistsInOldDictionary = false;
+		boolean addOnlyPolishEntries = false;
+		boolean addOnlyJmdictEntries = false;
 		
 		//
 		
@@ -68,12 +72,28 @@ public class GenerateMissingWordListApp {
 			wordListFileName = commandLine.getOptionValue("file");					
 		}
 		
+		/*
 		if (commandLine.hasOption("check-in-jisho-org") == true) {
 			checkInJishoOrg = true;
 		}
+		*/
 		
+		/*
 		if (commandLine.hasOption("add-words-which-also-doesnt-exist-in-old-dictionary") == true) {
 			addWordsWithAlsoDoesntExistInOldDictionary = true;
+		}
+		*/
+
+		if (commandLine.hasOption("do-not-add-entries-which-exists-in-old-dictionary") == true) {
+			doNotAddEntriesWhichExistsInOldDictionary = true;
+		}
+		
+		if (commandLine.hasOption("add-only-polish-entries") == true) {
+			addOnlyPolishEntries = true;
+		}
+
+		if (commandLine.hasOption("add-only-jmdict-entries") == true) {
+			addOnlyJmdictEntries = true;
 		}
 		
 		// plik nie zostal podany		
@@ -95,7 +115,7 @@ public class GenerateMissingWordListApp {
 		Set<Integer> alreadyMetEntrySet = new TreeSet<Integer>();
 		
 		// konektor do jisho.org
-		JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
+		// JishoOrgConnector jishoOrgConnector = new JishoOrgConnector();
 		
 		// rozne listy
 		List<String> foundWordSearchList = new ArrayList<>();
@@ -107,6 +127,16 @@ public class GenerateMissingWordListApp {
 		
 		// dodatkowe informacje
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+		
+		// zapisanie wyniku pod postacia csv
+		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
+		
+		saveEntryListAsHumanCsvConfig.addOldPolishTranslates = true;
+		saveEntryListAsHumanCsvConfig.markRomaji = true;
+		saveEntryListAsHumanCsvConfig.shiftCells = true;
+		saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
+
+		//
 		
 		// wyszukiwanie slow
 		for (int currentWordIdx = 0; currentWordIdx < wordList.size(); ++currentWordIdx) {
@@ -134,21 +164,32 @@ public class GenerateMissingWordListApp {
 						alreadyMetEntrySet.add(entry.getEntryId());
 					}
 					
+					//
+					
+					boolean existsInOldPolishJapaneseDictionary = dictionaryHelper.isExistsInOldPolishJapaneseDictionary(entry);
+					
+					if (existsInOldPolishJapaneseDictionary == true && doNotAddEntriesWhichExistsInOldDictionary == true) {
+						continue;
+					}
+					
 					// sprawdzenie, czy takie slowo juz wystepuje w moim slowniku
 					Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(entry.getEntryId());
 					
-					if (entryFromPolishDictionary != null) { // taki wpis juz jest
-						continue;
-					}
-
-					boolean existsInOldPolishJapaneseDictionary = dictionaryHelper.isExistsInOldPolishJapaneseDictionary(entry);
-										
-					if (existsInOldPolishJapaneseDictionary == false && addWordsWithAlsoDoesntExistInOldDictionary == false) { // kiedys to zmieni sie, ale obecnie kazde slowo juz byc rowniez w starym slowniku (no chyba ze zdecydowano inaczej)
-						System.out.println("Warning entry id " + entry.getEntryId() + " doesn't exist in old polish dictionary!");
+					if (entryFromPolishDictionary != null) {
 						
+						if (addOnlyJmdictEntries == false) {
+							result.add(entryFromPolishDictionary);
+						}
+						
+						saveEntryListAsHumanCsvConfig.markAsPolishEntry(entryFromPolishDictionary);
+												
 						continue;
 					}
 					
+					if (addOnlyPolishEntries == true) {
+						continue;
+					}
+										
 					// uzupelnienie o puste polskie tlumaczenie
 					dictionaryHelper.createEmptyPolishSense(entry);
 					
@@ -157,9 +198,19 @@ public class GenerateMissingWordListApp {
 										
 					// dodanie do listy wynikowej
 					result.add(entry);
+					
+					/*
+					boolean existsInOldPolishJapaneseDictionary = dictionaryHelper.isExistsInOldPolishJapaneseDictionary(entry);
+										
+					if (existsInOldPolishJapaneseDictionary == false && addWordsWithAlsoDoesntExistInOldDictionary == false) { // kiedys to zmieni sie, ale obecnie kazde slowo juz byc rowniez w starym slowniku (no chyba ze zdecydowano inaczej)
+						System.out.println("Warning entry id " + entry.getEntryId() + " doesn't exist in old polish dictionary!");
+						
+						continue;
+					}
+					*/
 				}				
 				
-			} else { // nic nie znaleziono
+			} /* else { // nic nie znaleziono
 				
 				// ewentualnie sprawdzamy w jisho
 				if (checkInJishoOrg == true) {
@@ -178,16 +229,9 @@ public class GenerateMissingWordListApp {
 					notFoundWordSearchList.add(currentWord);
 				}
 			}
+			*/
 		}
 				
-		// zapisanie wyniku pod postacia csv
-		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
-		
-		saveEntryListAsHumanCsvConfig.addOldPolishTranslates = true;
-		saveEntryListAsHumanCsvConfig.markRomaji = true;
-		saveEntryListAsHumanCsvConfig.shiftCells = true;
-		saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
-		
 		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", result, entryAdditionalData);
 		
 		// zapisywanie list
