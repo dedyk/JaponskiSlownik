@@ -949,30 +949,8 @@ public class WordGenerator {
 						
 						Entry entry = dictionary2Helper.getJMdictEntry(polishJapaneseEntry.getGroupIdFromJmedictRawDataList());
 						
-						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
-						
-						List<List<KanjiKanaPair>> kanjiKanaPairListGroupByTheSameTranslateListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
-						
-						// szukanie, do ktorej list nalezy nasza kanjiKanaPairForPolishJapaneseEntry
-						List<KanjiKanaPair> kanjiKanaPairListGroupByTheSameTranslateListForPolishJapanaeseEntry = kanjiKanaPairListGroupByTheSameTranslateListList.stream().filter(
-								list -> {
-									for (KanjiKanaPair currentKanjiKanaPair : list) {
-										
-										String currentKanjiKanaPairKanji = currentKanjiKanaPair.getKanji() != null ? currentKanjiKanaPair.getKanji() : "-";
-										String currentKanjiKanaPairKana = currentKanjiKanaPair.getKana();
-										
-										String kanjiKanaPairForPolishJapaneseEntryKanji = kanjiKanaPairForPolishJapaneseEntry.getKanji() != null ? kanjiKanaPairForPolishJapaneseEntry.getKanji() : "-";
-										String kanjiKanaPairForPolishJapaneseEntryKana = kanjiKanaPairForPolishJapaneseEntry.getKana();
-										
-										if (	currentKanjiKanaPairKanji.equals(kanjiKanaPairForPolishJapaneseEntryKanji) == true &&
-												currentKanjiKanaPairKana.equals(kanjiKanaPairForPolishJapaneseEntryKana) == true) {
-											return true;
-										}
-									}
-									
-									return false;									
-								}).findFirst().get();
-													
+						List<KanjiKanaPair> kanjiKanaPairListGroupByTheSameTranslateListForPolishJapanaeseEntry = dictionary2Helper.getAllKanjiKanaPairListWithTheSameTranslate(entry, kanjiKanaPairForPolishJapaneseEntry.getKanji(), kanjiKanaPairForPolishJapaneseEntry.getKana());
+																			
 						for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListGroupByTheSameTranslateListForPolishJapanaeseEntry) {
 						
 							String kanjiKanaPairKanji = kanjiKanaPair.getKanji();

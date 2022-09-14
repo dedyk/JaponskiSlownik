@@ -40,6 +40,7 @@ import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 
 public class Validator {
@@ -1137,14 +1138,8 @@ public class Validator {
 		}		
 	}
 	
-	public static void validateEdictGroup(Dictionary2Helper dictionary2Helper, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
-		
-		System.out.println("FIXME !!!!!!");
-		
-		if (1 == 1) {
-			return;
-		}
-		
+	public static void validateEdictGroup(Dictionary2Helper dictionary2Helper, List<PolishJapaneseEntry> polishJapaneseEntries) throws Exception {
+				
 		boolean validateResult = true;
 		
 		Set<String> alreadyValidateErrorResultGroupIds = new HashSet<String>();
@@ -1156,21 +1151,23 @@ public class Validator {
 			String kanji = polishJapaneseEntry.getKanji();
 			String kana = polishJapaneseEntry.getKana();
 			
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
-			
+			List<pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry> entryList = dictionary2Helper.findEntryListInJmdict(polishJapaneseEntry, false);
+						
 			List<PolishJapaneseEntry> foundPolishJapaneseEntryGroupList = new ArrayList<PolishJapaneseEntry>();
 			
-			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+			if (entryList != null && entryList.size() == 1) {
 				
-				List<GroupEntry> fullGroupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
-								
-				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(fullGroupEntryList, kanji, kana)) {
+				pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry entry = entryList.get(0);
+				
+				List<KanjiKanaPair> kanjiKanaPairListWithTheSameTranslate = dictionary2Helper.getAllKanjiKanaPairListWithTheSameTranslate(entry, kanji, kana);
+												
+				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListWithTheSameTranslate) {
 					
-					String groupEntryKanji = groupEntry.getKanji();
-					String groupEntryKana = groupEntry.getKana();
+					String kanjiKanaPairKanji = kanjiKanaPair.getKanji();
+					String kanjiKanaPairKana = kanjiKanaPair.getKana();
 																
 					PolishJapaneseEntry findPolishJapaneseEntry = Helper.findPolishJapaneseEntryWithEdictDuplicate(
-							polishJapaneseEntry, cachePolishJapaneseEntryList, groupEntryKanji, groupEntryKana);
+							polishJapaneseEntry, cachePolishJapaneseEntryList, kanjiKanaPairKanji, kanjiKanaPairKana);
 					
 					if (findPolishJapaneseEntry != null) {
 						foundPolishJapaneseEntryGroupList.add(findPolishJapaneseEntry);

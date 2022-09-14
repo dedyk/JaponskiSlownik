@@ -1,13 +1,8 @@
 package pl.idedyk.japanese.dictionary.misc;
 
-import java.util.List;
-
 import pl.idedyk.japanese.dictionary.common.Validator;
-import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
+import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 
 public class ValidateDictionary {
 
@@ -15,21 +10,21 @@ public class ValidateDictionary {
 		
 		System.out.println("Wczytywanie słownika...");
 				
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		// utworzenie helper'a
+		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
+				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
+		
+		// wczytywanie pomocnika slownikowego
+		Dictionary2Helper dictionary2Helper = Dictionary2Helper.init(wordGeneratorHelper);
 		
 		System.out.println("Wczytywanie słownika edict...");
-		
-		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
-		
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");		
-		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);		
-		
+				
 		System.out.println("Walidacja edict...");
 		
-		Validator.validateEdictGroup(jmeNewDictionary, polishJapaneseEntries);		
+		Validator.validateEdictGroup(dictionary2Helper, wordGeneratorHelper.getPolishJapaneseEntriesList());		
 		
 		System.out.println("Walidacja duplikatów...");
 		
-		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries, "input/word-duplicate.csv");		
+		Validator.detectDuplicatePolishJapaneseKanjiEntries(wordGeneratorHelper.getPolishJapaneseEntriesList(), "input/word-duplicate.csv");		
 	}
 }

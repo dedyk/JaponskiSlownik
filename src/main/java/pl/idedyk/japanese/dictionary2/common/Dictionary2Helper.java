@@ -80,6 +80,7 @@ import pl.idedyk.japanese.dictionary.lucene.LuceneAnalyzer;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGeneratorHelper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.GTypeEnum;
@@ -487,6 +488,38 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		} else {
 			return null;
 		}
+	}
+	
+	public List<KanjiKanaPair> getAllKanjiKanaPairListWithTheSameTranslate(Entry entry, String kanji, String kana) {
+		
+		// pobieramy wszystkie mozliwosci
+		List<KanjiKanaPair> kanjiKanaPairList = getKanjiKanaPairListStatic(entry);
+		
+		// grupujemy po tych samyc tlumaczeniach
+		List<List<KanjiKanaPair>> kanjiKanaPairListGroupByTheSameTranslateListList = groupByTheSameTranslate(kanjiKanaPairList);
+		
+		// szukanie, do ktorej list nalezy nasza kanji i kana
+		List<KanjiKanaPair> kanjiKanaPairListGroupByTheSameTranslateListForPolishJapanaeseEntry = kanjiKanaPairListGroupByTheSameTranslateListList.stream().filter(
+				list -> {
+					for (KanjiKanaPair currentKanjiKanaPair : list) {
+						
+						String currentKanjiKanaPairKanji = currentKanjiKanaPair.getKanji() != null ? currentKanjiKanaPair.getKanji() : "-";
+						String currentKanjiKanaPairKana = currentKanjiKanaPair.getKana();
+						
+						String kanjiKanaPairForPolishJapaneseEntryKanji = kanji != null ? kanji : "-";
+						String kanjiKanaPairForPolishJapaneseEntryKana = kana;
+						
+						if (	currentKanjiKanaPairKanji.equals(kanjiKanaPairForPolishJapaneseEntryKanji) == true &&
+								currentKanjiKanaPairKana.equals(kanjiKanaPairForPolishJapaneseEntryKana) == true) {
+							return true;
+						}
+					}
+					
+					return false;									
+				}).findFirst().get();
+
+		// zwracamy liste wszystkich kanji i kana, ktore maja te samo tlumaczenie, co kanji i kana
+		return kanjiKanaPairListGroupByTheSameTranslateListForPolishJapanaeseEntry;		
 	}
 	
 	private Query createLuceneDictionaryIndexTermQuery(String word) throws Exception {
