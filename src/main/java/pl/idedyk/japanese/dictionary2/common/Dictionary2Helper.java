@@ -1037,6 +1037,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	public static class SaveEntryListAsHumanCsvConfig {
 		
+		public Set<Integer> polishEntrySet = null;
+		
 		public boolean addOldPolishTranslates = false;
 		public boolean addOldEnglishPolishTranslatesDuringDictionaryUpdate = false;
 		public boolean addDeleteSenseDuringDictionaryUpdate = false;
@@ -1047,6 +1049,14 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		public boolean shiftCellsGenerateIds = false;
 		public Integer shiftCellsGenerateIdsId = 1;
 		
+		public void markAsPolishEntry(Entry polishEntry) {
+			
+			if (polishEntrySet == null) {
+				polishEntrySet = new TreeSet<>();
+			}
+			
+			polishEntrySet.add(polishEntry.getEntryId());
+		}		
 	}
 	
 	private enum EntryHumanCsvFieldType {
@@ -1226,7 +1236,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				//
 				
-				generateKanaTypeAndRomaji(readingInfo, config.markRomaji);
+				generateKanaTypeAndRomaji(readingInfo, config.markRomaji && (config.polishEntrySet == null || config.polishEntrySet.contains(entry.getEntryId()) == false));
 				
 				ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
 				csvWriter.write(kanaType.name()); columnsNo++;
@@ -1459,7 +1469,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(entry.getEntryId());
 
 				BEFORE_IF:
-				if (config.addOldPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.oldPolishJapaneseEntryList != null) { // dodawanie tlumaczenia ze starego slownika
+				if (config.addOldPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.oldPolishJapaneseEntryList != null &&
+					(config.polishEntrySet == null || config.polishEntrySet.contains(entry.getEntryId()) == false)) { // dodawanie tlumaczenia ze starego slownika
 
 					// grupujemy po unikalnym tlumaczeniu
 					Map<String, String> uniqueOldPolishJapaneseTranslates = new TreeMap<>();
