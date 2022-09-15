@@ -2,9 +2,11 @@ package pl.idedyk.japanese.dictionary.test;
 
 import java.util.List;
 
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class Test7 {
 
@@ -24,6 +26,7 @@ public class Test7 {
 		}
 		*/
 		
+		/*
 		List<PolishJapaneseEntry> oldPolishJapaneseEntriesList = dictionaryHelper.getOldPolishJapaneseEntriesList();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : oldPolishJapaneseEntriesList) {
@@ -33,6 +36,16 @@ public class Test7 {
 				System.out.println("ID: " + polishJapaneseEntry.getId() + " - " + foundEntryList);
 			}
 		}
+		*/
+		
+		KanaHelper kanaHelper = new KanaHelper();
+		
+		List<KanaEntry> hiraganaEntries = kanaHelper.getAllHiraganaKanaEntries();
+		List<KanaEntry> katakanaEntries = kanaHelper.getAllKatakanaKanaEntries();
+		
+		List<PolishJapaneseEntry> polishJapaneseKanjiEntries = dictionaryHelper.getOldPolishJapaneseEntriesList();
+		
+		Validator.validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries, katakanaEntries, dictionaryHelper, null, false);
 	}
 
 }

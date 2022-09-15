@@ -135,9 +135,12 @@ public class AndroidDictionaryGenerator {
 		// parse csv
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(sourceFileNames);
 		
+		// word 2 - dictionary
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
+		
 		// validate		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmeNewNameDictionary);
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, dictionaryHelper, jmeNewNameDictionary, true);
 
 		System.out.println("checkAndSavePolishJapaneseEntries: detectDuplicatePolishJapaneseKanjiEntries");
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries, "input/word-duplicate.csv");
@@ -196,10 +199,7 @@ public class AndroidDictionaryGenerator {
 		
 		CsvReaderWriter.generateWordGroupCsv(outputWordGroupStream, generateWordGroupList);
 		*/
-		
-		// word 2 - dictionary
-		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
-		
+				
 		dictionaryHelper.validateAllPolishDictionaryEntryList();
 		
 		// pobieramy wszystkie slowa, ktore sa w nowym slowniku

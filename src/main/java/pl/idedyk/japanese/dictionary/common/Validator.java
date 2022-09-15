@@ -39,7 +39,6 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
-import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 
@@ -47,9 +46,9 @@ public class Validator {
 
 	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries,
 			List<KanaEntry> hiraganaEntries, List<KanaEntry> katakanaEntries,
-			JMENewDictionary jmeNewNameDictionary)
-			throws DictionaryException {
-
+			Dictionary2Helper dictionary2Helper, JMENewDictionary jmeNewNameDictionary, boolean countExamples)
+			throws Exception {
+				
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
 
 		for (KanaEntry kanaEntry : hiraganaEntries) {
@@ -248,11 +247,8 @@ public class Validator {
 				}
 			}		
 		}
-		
-		// wczytywanie pomocnika slownikowego
-		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
-						
-		if (dictionaryHelper != null) {
+								
+		if (dictionary2Helper != null) {
 			
 			boolean wasError = false;
 						
@@ -264,43 +260,33 @@ public class Validator {
 					continue;
 				}
 				
-				
-				// FIXME: szukanie entry wedlug PolishJapaneseEntry
-				
-				tutaj();
-								
-				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(currentPolishJapaneseEntry);
-				
-				if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+				KanjiKanaPair kanjiKanaPair = dictionary2Helper.findKanjiKanaPair(currentPolishJapaneseEntry);
+												
+				if (kanjiKanaPair != null) {
 					
-					GroupEntry groupEntry = groupEntryList.get(0);
+					// pobranie aktualnej listy typow w starym slowniku
+					List<DictionaryEntryType> polishJapaneseEntryDictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
 					
-					Set<String> groupEntryWordTypeList = groupEntry.getWordTypeList();
+					// pobranie listy typow w slowniku jmdict, przekonwertowanie na stare typy
+					List<DictionaryEntryType> jmdictDictionaryEntryTypeList = dictionary2Helper.getOldDictionaryEntryTypeFromKanjiKanaPair(kanjiKanaPair);
 					
-					if (groupEntryWordTypeList.size() == 0) {
+					if (jmdictDictionaryEntryTypeList.size() == 0) {
 						continue;
 					}
 					
-					List<DictionaryEntryType> polishJapaneseEntryDictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
-					
 					for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntryDictionaryEntryTypeList) {
-
-						List<String> entityList = dictionaryEntryJMEdictEntityMapper.getEntity(currentDictionaryEntryType);
 						
 						boolean wasOk = false;
-						
-						for (String currentEntity : entityList) {
-							
-							if (groupEntryWordTypeList.contains(currentEntity) == true) {
-								wasOk = true;
-							}
+
+						if (jmdictDictionaryEntryTypeList.contains(currentDictionaryEntryType) == true) {
+							wasOk = true;
 						}
 						
 						if (wasOk == false) {						
 							
 							wasError = true;
 																					
-							System.out.println("Błąd walidacji typów(1) dla: " + currentPolishJapaneseEntry + " - " + groupEntryWordTypeList + "\n");																												
+							System.out.println("Błąd walidacji typów(1) dla: " + currentPolishJapaneseEntry + " - " + currentDictionaryEntryType + "\n");																												
 						}					
 					}
 				}
@@ -313,34 +299,24 @@ public class Validator {
 					
 					continue;
 				}
-								
-				List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(currentPolishJapaneseEntry);
 				
-				if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
-
-					GroupEntry groupEntry = groupEntryList.get(0);
+				KanjiKanaPair kanjiKanaPair = dictionary2Helper.findKanjiKanaPair(currentPolishJapaneseEntry);
+								
+				if (kanjiKanaPair != null) {
 					
-					Set<String> groupEntryWordTypeList = groupEntry.getWordTypeList();
-					
-					if (groupEntryWordTypeList.size() == 0) {
-						continue;
-					}
-					
+					// pobranie aktualnej listy typow w starym slowniku
 					List<DictionaryEntryType> polishJapaneseEntryDictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
 					
-					for (String currentEntity : groupEntryWordTypeList) {
-						
-						DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(currentEntity);
-						
-						if (dictionaryEntryType == null) {
-							continue;
-						}
-						
-						if (polishJapaneseEntryDictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
+					// pobranie listy typow w slowniku jmdict, przekonwertowanie na stare typy
+					List<DictionaryEntryType> jmdictDictionaryEntryTypeList = dictionary2Helper.getOldDictionaryEntryTypeFromKanjiKanaPair(kanjiKanaPair);
+					
+					for (DictionaryEntryType currentJmdictDictionaryEntryType : jmdictDictionaryEntryTypeList) {
+												
+						if (polishJapaneseEntryDictionaryEntryTypeList.contains(currentJmdictDictionaryEntryType) == false) {
 														
 							wasError = true;
 							
-							System.out.println("Błąd walidacji typów(2) dla: " + currentPolishJapaneseEntry + " - " + groupEntryWordTypeList + "\n");
+							System.out.println("Błąd walidacji typów(2) dla: " + currentPolishJapaneseEntry + " - " + currentJmdictDictionaryEntryType + "\n");
 														
 						}
 					}					
@@ -427,13 +403,13 @@ public class Validator {
 			}
 		}
 		
-		if (jmeNewDictionary != null) {
+		if (dictionary2Helper != null) {
 			
 			// walidacja grup edict
-			validateEdictGroup(jmeNewDictionary, polishJapaneseKanjiEntries);
+			validateEdictGroup(dictionary2Helper, polishJapaneseKanjiEntries);
 		}
 		
-		if (jmeNewDictionary != null) {
+		if (countExamples == true) {
 			
 			// wyliczanie form gramatycznych i przykladow
 			countGrammaFormAndExamples(polishJapaneseKanjiEntries);				
