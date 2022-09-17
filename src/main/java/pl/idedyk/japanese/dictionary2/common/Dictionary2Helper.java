@@ -913,7 +913,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				generateKanaTypeAndRomaji(readingInfo, config.markRomaji && (config.polishEntrySet == null || config.polishEntrySet.contains(entry.getEntryId()) == false));
 				
 				ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();				
-				csvWriter.write(kanaType.name()); columnsNo++;
+				csvWriter.write(kanaType != null ? kanaType.name() : "FIXME"); columnsNo++;
 
 				csvWriter.write(readingInfo.getKana().getValue()); columnsNo++;
 				
