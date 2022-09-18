@@ -7,6 +7,7 @@ import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 
 public class Test7 {
 
@@ -38,6 +39,8 @@ public class Test7 {
 		}
 		*/
 		
+		Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
+				
 		KanaHelper kanaHelper = new KanaHelper();
 		
 		List<KanaEntry> hiraganaEntries = kanaHelper.getAllHiraganaKanaEntries();
@@ -45,7 +48,7 @@ public class Test7 {
 		
 		List<PolishJapaneseEntry> polishJapaneseKanjiEntries = dictionaryHelper.getOldPolishJapaneseEntriesList();
 		
-		Validator.validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries, katakanaEntries, dictionaryHelper, null, false);
+		Validator.validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries, katakanaEntries, dictionaryHelper, dictionary2NameHelper, false);
 	}
 
 }

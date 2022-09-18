@@ -32,21 +32,23 @@ import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateResultTyp
 import pl.idedyk.japanese.dictionary.api.keigo.KeigoHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper.KanaWord;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper.NameKanjiKanaPair;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfo;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoNameType;
 
 public class Validator {
 
 	public static void validatePolishJapaneseEntries(List<PolishJapaneseEntry> polishJapaneseKanjiEntries,
 			List<KanaEntry> hiraganaEntries, List<KanaEntry> katakanaEntries,
-			Dictionary2Helper dictionary2Helper, JMENewDictionary jmeNewNameDictionary, boolean countExamples)
+			Dictionary2Helper dictionary2Helper, Dictionary2NameHelper dictionary2NameHelper, boolean countExamples)
 			throws Exception {
 				
 		Map<String, KanaEntry> hiraganaCache = new HashMap<String, KanaEntry>();
@@ -328,7 +330,7 @@ public class Validator {
 			}
 		}
 		
-		if (jmeNewNameDictionary != null) {
+		if (dictionary2NameHelper != null) {
 			
 			boolean wasError = false;
 
@@ -351,39 +353,40 @@ public class Validator {
 					continue;
 				}
 				
-				List<GroupEntry> groupEntryList = jmeNewNameDictionary.getGroupEntryList(currentPolishJapaneseEntry);
-				
-				if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+				NameKanjiKanaPair nameKanjiKanaPair = dictionary2NameHelper.findNameKanjiKanaPair(currentPolishJapaneseEntry);
+								
+				if (nameKanjiKanaPair != null) {
 					
 					boolean wasOk = false;
 					
-					GroupEntry groupEntry = groupEntryList.get(0);
-					
-					Set<String> groupEntryWordTypeList = groupEntry.getWordTypeList();
-					
-					if (groupEntryWordTypeList.size() == 0) {
-						continue;
-					}
-					
-					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NAME) == true
-							&& (	groupEntryWordTypeList.contains("given") == true || 
-									groupEntryWordTypeList.contains("masc") == true || 
-									groupEntryWordTypeList.contains("fem") == true)) {
+					for (TranslationalInfo translationalInfo : nameKanjiKanaPair.getTranslationalInfoList()) {
 						
-						wasOk = true;
-					}
+						List<TranslationalInfoNameType> translationalInfoNameTypeList = translationalInfo.getNameType();
+						
+						if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_NAME) == true
+								&& (	translationalInfoNameTypeList.contains(TranslationalInfoNameType.GIVEN_NAME_OR_FORENAME_GENDER_NOT_SPECIFIED) == true || 
+										translationalInfoNameTypeList.contains(TranslationalInfoNameType.MALE_GIVEN_NAME_OR_FORENAME) == true || 
+										translationalInfoNameTypeList.contains(TranslationalInfoNameType.FEMALE_GIVEN_NAME_OR_FORENAME) == true)) {
+							
+							wasOk = true;
+						}
 
-					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_MALE_NAME) == true
-							&& (groupEntryWordTypeList.contains("given") == true || groupEntryWordTypeList.contains("masc") == true)) {
-						
-						wasOk = true;
-					}
+						if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_MALE_NAME) == true
+								&& (	translationalInfoNameTypeList.contains(TranslationalInfoNameType.GIVEN_NAME_OR_FORENAME_GENDER_NOT_SPECIFIED) == true || 
+										translationalInfoNameTypeList.contains(TranslationalInfoNameType.MALE_GIVEN_NAME_OR_FORENAME) == true)
+								) {
+							
+							wasOk = true;
+						}
 
-					if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_FEMALE_NAME) == true
-							&& (groupEntryWordTypeList.contains("given") == true || groupEntryWordTypeList.contains("fem") == true)) {
-						
-						wasOk = true;
-					}
+						if (dictionaryEntryTypeList.contains(DictionaryEntryType.WORD_FEMALE_NAME) == true
+								&& (
+										translationalInfoNameTypeList.contains(TranslationalInfoNameType.GIVEN_NAME_OR_FORENAME_GENDER_NOT_SPECIFIED) == true || 
+										translationalInfoNameTypeList.contains(TranslationalInfoNameType.FEMALE_GIVEN_NAME_OR_FORENAME) == true)) {
+							
+							wasOk = true;
+						}
+					}					
 
 					if (wasOk == false) {
 						
@@ -394,7 +397,7 @@ public class Validator {
 					}					
 					
 				} else {					
-					//System.out.println("Name not found or multi group: " + currentPolishJapaneseEntry);					
+					// System.out.println("Name not found or multi group: " + currentPolishJapaneseEntry);					
 				}
 			}
 			
