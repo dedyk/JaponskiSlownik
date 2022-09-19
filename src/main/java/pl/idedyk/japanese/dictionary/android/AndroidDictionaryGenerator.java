@@ -53,6 +53,7 @@ import pl.idedyk.japanese.dictionary.tools.LatexDictionaryGenerator;
 import pl.idedyk.japanese.dictionary.tools.TatoebaSentencesParser;
 import pl.idedyk.japanese.dictionary.tools.TomoeReader;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
@@ -71,8 +72,7 @@ public class AndroidDictionaryGenerator {
 		System.out.println("readEdictCommon");
 
 		// read edict common
-		TreeMap<String, EDictEntry> jmedictCommon = EdictReader
-				.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
+		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
 
 		// read new jmedict
 		System.out.println("new jmedict");
@@ -138,9 +138,12 @@ public class AndroidDictionaryGenerator {
 		// word 2 - dictionary
 		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
+		// word 2 name - dictionary
+		Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
+		
 		// validate		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, dictionaryHelper, jmeNewNameDictionary, true);
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, dictionaryHelper, dictionary2NameHelper, true);
 
 		System.out.println("checkAndSavePolishJapaneseEntries: detectDuplicatePolishJapaneseKanjiEntries");
 		Validator.detectDuplicatePolishJapaneseKanjiEntries(polishJapaneseEntries, "input/word-duplicate.csv");
@@ -158,7 +161,7 @@ public class AndroidDictionaryGenerator {
 		List<TransitiveIntransitivePair> readTransitiveIntransitivePair = readTransitiveIntransitivePair(transitiveIntransitivePairsFileName);
 
 		// generate additional data from edict
-		Helper.generateAdditionalInfoFromEdict(jmedictCommon, polishJapaneseEntries);
+		Helper.generateAdditionalInfoFromEdict(dictionaryHelper, jmedictCommon, polishJapaneseEntries);
 		
 		// sprawdzenie, czy slowa w tych samych grupach, maja dokladnie to samo romaji
 		Validator.validateEdictGroupRomaji(polishJapaneseEntries);

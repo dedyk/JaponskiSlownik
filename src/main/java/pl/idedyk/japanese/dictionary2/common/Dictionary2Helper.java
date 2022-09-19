@@ -3442,6 +3442,94 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		return additionalInfoList;
 	}
+	
+	public int mapRelativePriorityToPower(RelativePriorityEnum relativePriorityEnum, int start) {
+		
+		Map<RelativePriorityEnum, Integer> jmedictPriorityMap = new HashMap<RelativePriorityEnum, Integer>();
+				
+		jmedictPriorityMap.put(RelativePriorityEnum.GAI_1, 1);
+		jmedictPriorityMap.put(RelativePriorityEnum.ICHI_1, 2);
+		jmedictPriorityMap.put(RelativePriorityEnum.NEWS_1, 3);
+		jmedictPriorityMap.put(RelativePriorityEnum.SPEC_1, 4);
+		
+		jmedictPriorityMap.put(RelativePriorityEnum.GAI_2, 5);
+		jmedictPriorityMap.put(RelativePriorityEnum.ICHI_2, 6);
+		jmedictPriorityMap.put(RelativePriorityEnum.NEWS_2, 7);
+		jmedictPriorityMap.put(RelativePriorityEnum.SPEC_2, 8);
+
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_01, 9);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_02, 10);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_03, 11);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_04, 12);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_05, 13);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_06, 14);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_07, 15);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_08, 16);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_09, 17);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_10, 18);
+
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_11, 19);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_12, 20);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_13, 21);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_14, 22);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_15, 23);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_16, 24);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_17, 25);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_18, 26);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_19, 27);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_20, 28);
+		
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_21, 29);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_22, 30);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_23, 31);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_24, 32);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_25, 33);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_26, 34);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_27, 35);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_28, 36);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_29, 37);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_30, 38);
+
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_31, 39);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_32, 40);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_33, 41);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_34, 42);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_35, 43);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_36, 44);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_37, 45);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_38, 46);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_39, 47);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_40, 48);
+
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_41, 49);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_42, 50);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_43, 51);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_44, 52);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_45, 53);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_46, 54);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_47, 55);
+		jmedictPriorityMap.put(RelativePriorityEnum.NF_48, 56);
+		
+		Integer power = jmedictPriorityMap.get(relativePriorityEnum);
+		
+		if (power == null) {
+			throw new RuntimeException("Can't find power for: " + relativePriorityEnum);
+		}
+		
+		return start + power;		
+	}
+	
+	public boolean containsPartOfSpeechInSenseList(List<Sense> senseList, PartOfSpeechEnum partOfSpeech) {
+		
+		for (Sense sense : senseList) {
+			
+			if (sense.getPartOfSpeechList().contains(partOfSpeech) == true) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
 
 	//
 			

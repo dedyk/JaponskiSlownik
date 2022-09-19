@@ -62,6 +62,10 @@ import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 
 import com.csvreader.CsvWriter;
 
@@ -136,25 +140,16 @@ public class Helper {
 		return result;
 	}
 
-	public static void generateAdditionalInfoFromEdict(
-			TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
+	public static void generateAdditionalInfoFromEdict(Dictionary2Helper dictionaryHelper, TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
 
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 
 			PolishJapaneseEntry currentPolishJapaneseEntry = polishJapaneseEntries.get(idx);
 						
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(currentPolishJapaneseEntry);
+			KanjiKanaPair kanjiKanaPair = dictionaryHelper.findKanjiKanaPair(currentPolishJapaneseEntry);
 			
-			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+			if (kanjiKanaPair != null) {
 				
-				GroupEntry groupEntry = groupEntryList.get(0);
-				
-				Set<String> groupEntryWordTypeList = groupEntry.getWordTypeList();
-				
-				if (groupEntryWordTypeList.size() == 0) {
-					continue;
-				}
-
 				EDictEntry foundEdictCommon = findEdictEntry(jmedictCommon, currentPolishJapaneseEntry);
 
 				AttributeList attributeList = currentPolishJapaneseEntry.getAttributeList();
@@ -180,11 +175,17 @@ public class Helper {
 						}				
 					}
 					
-					List<String> groupEntryPriorityList = groupEntryList.get(0).getPriority();
+					List<RelativePriorityEnum> allPriority = new ArrayList<>();
 					
-					for (String priority : groupEntryPriorityList) {
+					if (kanjiKanaPair.getKanjiInfo() != null) {
+						allPriority.addAll(kanjiKanaPair.getKanjiInfo().getRelativePriorityList());
+					}
+					
+					allPriority.addAll(kanjiKanaPair.getReadingInfo().getRelativePriorityList());
+										
+					for (RelativePriorityEnum relativePriorityEnum : allPriority) {
 						
-						int priorityPower = JMENewDictionary.mapPriorityToPower(priority, 100);
+						int priorityPower = dictionaryHelper.mapRelativePriorityToPower(relativePriorityEnum, 100);
 						
 						if (priorityPower < power) {
 							power = priorityPower;
@@ -205,7 +206,11 @@ public class Helper {
 				// suru verb
 				List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
 
-				if (groupEntry.containsAttribute("vs") == true && attributeList.contains(AttributeType.SURU_VERB) == false) {					
+				if (	(	dictionaryHelper.containsPartOfSpeechInSenseList(kanjiKanaPair.getSenseList(), PartOfSpeechEnum.NOUN_OR_PARTICIPLE_WHICH_TAKES_THE_AUX_VERB_SURU) == true ||
+							dictionaryHelper.containsPartOfSpeechInSenseList(kanjiKanaPair.getSenseList(), PartOfSpeechEnum.SURU_VERB_INCLUDED) == true ||
+							dictionaryHelper.containsPartOfSpeechInSenseList(kanjiKanaPair.getSenseList(), PartOfSpeechEnum.SURU_VERB_SPECIAL_CLASS) == true) && 						
+						attributeList.contains(AttributeType.SURU_VERB) == false) {
+					
 					attributeList.add(AttributeType.SURU_VERB);
 				}
 				

@@ -297,6 +297,7 @@ public class JMENewDictionary {
 		return new ArrayList<List<GroupEntry>>(theSameTranslate.values());
 	}
 	
+	@Deprecated
 	public static int mapPriorityToPower(String priority, int start) {
 		
 		Map<String, Integer> jmedictPriorityMap = new HashMap<String, Integer>();
