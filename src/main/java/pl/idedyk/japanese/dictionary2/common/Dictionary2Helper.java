@@ -3519,11 +3519,23 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return start + power;		
 	}
 	
-	public boolean containsPartOfSpeechInSenseList(List<Sense> senseList, PartOfSpeechEnum partOfSpeech) {
+	public boolean containsInPartOfSpeechInSenseList(List<Sense> senseList, PartOfSpeechEnum partOfSpeech) {
 		
 		for (Sense sense : senseList) {
 			
 			if (sense.getPartOfSpeechList().contains(partOfSpeech) == true) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
+	public boolean containsInMiscList(List<Sense> senseList, MiscEnum misc) {
+		
+		for (Sense sense : senseList) {
+			
+			if (sense.getMiscList().contains(misc) == true) {
 				return true;
 			}
 		}

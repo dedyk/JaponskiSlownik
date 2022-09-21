@@ -64,8 +64,12 @@ import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 
 import com.csvreader.CsvWriter;
 
@@ -140,7 +144,7 @@ public class Helper {
 		return result;
 	}
 
-	public static void generateAdditionalInfoFromEdict(Dictionary2Helper dictionaryHelper, TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) throws DictionaryException {
+	public static void generateAdditionalInfoFromEdict(Dictionary2Helper dictionaryHelper, TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) throws Exception {
 
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 
@@ -206,9 +210,9 @@ public class Helper {
 				// suru verb
 				List<DictionaryEntryType> dictionaryEntryTypeList = currentPolishJapaneseEntry.getDictionaryEntryTypeList();
 
-				if (	(	dictionaryHelper.containsPartOfSpeechInSenseList(kanjiKanaPair.getSenseList(), PartOfSpeechEnum.NOUN_OR_PARTICIPLE_WHICH_TAKES_THE_AUX_VERB_SURU) == true ||
-							dictionaryHelper.containsPartOfSpeechInSenseList(kanjiKanaPair.getSenseList(), PartOfSpeechEnum.SURU_VERB_INCLUDED) == true ||
-							dictionaryHelper.containsPartOfSpeechInSenseList(kanjiKanaPair.getSenseList(), PartOfSpeechEnum.SURU_VERB_SPECIAL_CLASS) == true) && 						
+				if (	(	dictionaryHelper.containsInPartOfSpeechInSenseList(kanjiKanaPair.getSenseList(), PartOfSpeechEnum.NOUN_OR_PARTICIPLE_WHICH_TAKES_THE_AUX_VERB_SURU) == true ||
+							dictionaryHelper.containsInPartOfSpeechInSenseList(kanjiKanaPair.getSenseList(), PartOfSpeechEnum.SURU_VERB_INCLUDED) == true ||
+							dictionaryHelper.containsInPartOfSpeechInSenseList(kanjiKanaPair.getSenseList(), PartOfSpeechEnum.SURU_VERB_SPECIAL_CLASS) == true) && 						
 						attributeList.contains(AttributeType.SURU_VERB) == false) {
 					
 					attributeList.add(AttributeType.SURU_VERB);
@@ -222,21 +226,25 @@ public class Helper {
 					if (attributeList.contains(AttributeType.VERB_TRANSITIVITY) == false
 							&& attributeList.contains(AttributeType.VERB_INTRANSITIVITY) == false) {
 
-						if (groupEntry.containsAttribute("vt") == true) {
+						if (dictionaryHelper.containsInPartOfSpeechInSenseList(kanjiKanaPair.getSenseList(), PartOfSpeechEnum.TRANSITIVE_VERB) == true) {
 							attributeList.add(AttributeType.VERB_TRANSITIVITY);
 
-						} else if (groupEntry.containsAttribute("vi") == true) {
+						} else if (dictionaryHelper.containsInPartOfSpeechInSenseList(kanjiKanaPair.getSenseList(), PartOfSpeechEnum.INTRANSITIVE_VERB) == true) {
 							attributeList.add(AttributeType.VERB_INTRANSITIVITY);
 						}
 					}
 				}
 				
 				// kanji/kana alone
+				/*
+				// kanji alone juz nie wystepuje
+				 * 
 				if (attributeList.contains(AttributeType.KANJI_ALONE) == false && groupEntry.containsAttribute("uK") == true) {
 					attributeList.add(AttributeType.KANJI_ALONE);
 				}
+				*/
 
-				if (attributeList.contains(AttributeType.KANA_ALONE) == false && groupEntry.containsAttribute("uk") == true) {
+				if (attributeList.contains(AttributeType.KANA_ALONE) == false && dictionaryHelper.containsInMiscList(kanjiKanaPair.getSenseList(), MiscEnum.WORD_USUALLY_WRITTEN_USING_KANA_ALONE) == true) {
 					attributeList.add(AttributeType.KANA_ALONE);
 				}
 
@@ -248,14 +256,21 @@ public class Helper {
 				*/
 
 				// obsolete
-				if (attributeList.contains(AttributeType.OBSOLETE) == false && (groupEntry.containsAttribute("obs") == true || groupEntry.containsAttribute("ok") == true)) {
+				if (attributeList.contains(AttributeType.OBSOLETE) == false && (
+						dictionaryHelper.containsInMiscList(kanjiKanaPair.getSenseList(), MiscEnum.OBSOLETE_TERM) == true ||
+						kanjiKanaPair.getReadingInfo().getReadingAdditionalInfoList().contains(ReadingAdditionalInfoEnum.OUT_DATED_OR_OBSOLETE_KANA_USAGE) == true)) {
+					
 					attributeList.add(AttributeType.OBSOLETE);
 				}
 
 				// obsure
+				/*
+				 * juz nie wystepuje
+				 * 
 				if (attributeList.contains(AttributeType.OBSCURE) == false && groupEntry.containsAttribute("obsc") == true) {
 					attributeList.add(AttributeType.OBSCURE);
 				}
+				*/
 				
 				/*
 				// suffix
@@ -280,7 +295,7 @@ public class Helper {
 				*/
 									
 				// onamatopoeic or mimetic word
-				if (attributeList.contains(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD) == false && groupEntry.containsAttribute("on-mim") == true) {
+				if (attributeList.contains(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD) == false && dictionaryHelper.containsInMiscList(kanjiKanaPair.getSenseList(), MiscEnum.ONOMATOPOEIC_OR_MIMETIC_WORD) == true) {
 					attributeList.add(AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD);
 				}
 			}
@@ -309,23 +324,25 @@ public class Helper {
 			
 			//
 			
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
-			
-			if (groupEntryList != null && groupEntryList.size() > 0 && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+			List<JMdict.Entry> entryList = dictionaryHelper.findEntryListInJmdict(polishJapaneseEntry, false);
+						
+			if (entryList != null && entryList.size() == 1) {
+								
+				List<KanjiKanaPair> kanjiKanaPairListGroupByTheSameTranslateListForPolishJapanaeseEntry = dictionaryHelper.getAllKanjiKanaPairListWithTheSameTranslate(entryList.get(0), kanji, kana);
 				
-				List<GroupEntry> fullGroupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
-				
-				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(fullGroupEntryList, kanji, kana)) {
+				////
+								
+				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListGroupByTheSameTranslateListForPolishJapanaeseEntry) {
 					
-					String groupEntryKanji = groupEntry.getKanji();
-					String groupEntryKana = groupEntry.getKana();
+					String kanjiKanaPairKanji = kanjiKanaPair.getKanji();
+					String kanjiKanaPairKana = kanjiKanaPair.getKana();
 										
 					PolishJapaneseEntry findPolishJapaneseEntry = findPolishJapaneseEntryWithEdictDuplicate(
-							polishJapaneseEntry, cachePolishJapaneseEntryListKanjiKana, groupEntryKanji, groupEntryKana);							
+							polishJapaneseEntry, cachePolishJapaneseEntryListKanjiKana, kanjiKanaPairKanji, kanjiKanaPairKana);							
 					
 					if (findPolishJapaneseEntry == null) {
 						findPolishJapaneseEntry = findPolishJapaneseEntryWithEdictDuplicate(
-								polishJapaneseEntry, cachePolishJapaneseEntryListKanjiKana, groupEntryKanji, groupEntryKana);
+								polishJapaneseEntry, cachePolishJapaneseEntryListKanjiKana, kanjiKanaPairKanji, kanjiKanaPairKana);
 					}
 					
 					if (findPolishJapaneseEntry != null) {
@@ -408,16 +425,16 @@ public class Helper {
 			
 			//
 						
-			List<GroupEntry> groupEntryList = jmeNewDictionary.getGroupEntryList(polishJapaneseEntry);
+			List<JMdict.Entry> entryList = dictionaryHelper.findEntryListInJmdict(polishJapaneseEntry, false);
 
-			if (groupEntryList != null && JMENewDictionary.isMultiGroup(groupEntryList) == false) {
+			if (entryList != null && entryList.size() == 1) {
 				
-				List<GroupEntry> fullGroupEntryList = groupEntryList.get(0).getGroup().getGroupEntryList();
+				List<KanjiKanaPair> kanjiKanaPairListGroupByTheSameTranslateListForPolishJapanaeseEntry = dictionaryHelper.getAllKanjiKanaPairListWithTheSameTranslate(entryList.get(0), kanji, kana);
 				
-				for (GroupEntry groupEntry : jmeNewDictionary.getTheSameTranslateInTheSameGroupGroupEntryList(fullGroupEntryList, kanji, kana)) {
+				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListGroupByTheSameTranslateListForPolishJapanaeseEntry) {
 					
-					List<String> similarRelatedList = groupEntry.getSimilarRelatedList();
-					List<String> antonymList = groupEntry.getAntonymList();
+					List<String> similarRelatedList = getAllReferenceToAnotherKanjiKanaList(kanjiKanaPair);
+					List<String> antonymList = getAntonymList(kanjiKanaPair);
 					
 					List<String> similarRelatedListAndAntonymList = new ArrayList<>();
 					
@@ -543,6 +560,28 @@ public class Helper {
 			}			
 		}		
 	}
+	
+	private static List<String> getAllReferenceToAnotherKanjiKanaList(KanjiKanaPair kanjiKanaPair) {
+		
+		List<String> result = new ArrayList<>();
+		
+		for (Sense sense : kanjiKanaPair.getSenseList()) {
+			result.addAll(sense.getReferenceToAnotherKanjiKanaList());
+		}
+		
+		return result;
+	}
+
+	private static List<String> getAntonymList(KanjiKanaPair kanjiKanaPair) {
+		
+		List<String> result = new ArrayList<>();
+		
+		for (Sense sense : kanjiKanaPair.getSenseList()) {
+			result.addAll(sense.getAntonymList());
+		}
+		
+		return result;
+	}
 
 	private static EDictEntry findEdictEntry(TreeMap<String, EDictEntry> jmedict,
 			PolishJapaneseEntry polishJapaneseEntry) {
@@ -560,6 +599,7 @@ public class Helper {
 		return foundEdict;
 	}
 
+	@Deprecated
 	public static List<PolishJapaneseEntry> generateNames(JMENewDictionary jmeNewDictionary) {
 
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
@@ -932,14 +972,17 @@ public class Helper {
 		public boolean alreadyAddedPolishJapaneseEntry;
 	}
 	
+	@Deprecated
 	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(GroupEntry groupEntry) throws DictionaryException {		
 		return createPolishJapaneseEntry(null, groupEntry, 0, null);
 	}	
 	
+	@Deprecated
 	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(GroupEntry groupEntry, int id) throws DictionaryException {
 		return createPolishJapaneseEntry(null, groupEntry, id, null);
 	}
 	
+	@Deprecated
 	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList, GroupEntry groupEntry, int id, String missingWord) throws DictionaryException {
 		
 		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
@@ -1317,6 +1360,7 @@ public class Helper {
 		return null;
 	}
 		
+	@Deprecated
 	public static CommonWord convertGroupEntryToCommonWord(int id, GroupEntry groupEntry) {
 				
 		List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();
@@ -1339,6 +1383,7 @@ public class Helper {
 		return commonWord;		
 	}
 	
+	@Deprecated
 	public static Directory createLuceneDictionaryIndex(JMENewDictionary jmeNewDictionary) throws IOException {
 		
 		JMEDictEntityMapper jmEDictEntityMapper = new JMEDictEntityMapper();
@@ -1569,6 +1614,7 @@ public class Helper {
 		return booleanQuery;
 	}
 	
+	@Deprecated
 	public static GroupEntry createGroupEntry(Document document) {
 
 		Group fakeGroup = new Group(Integer.parseInt(document.get("groupId")), null);
