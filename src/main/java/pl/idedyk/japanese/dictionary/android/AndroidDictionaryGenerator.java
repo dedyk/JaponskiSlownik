@@ -33,8 +33,6 @@ import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
-import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
@@ -45,7 +43,6 @@ import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
 import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
-import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 import pl.idedyk.japanese.dictionary.tools.KanjiUtils;
 import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
@@ -77,18 +74,12 @@ public class AndroidDictionaryGenerator {
 		// read new jmedict
 		System.out.println("new jmedict");
 				
-		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
-						
-		List<JMEDictNewNativeEntry> jmedictNameNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
-		
-		JMENewDictionary jmeNewNameDictionary = jmedictNewReader.createJMENewDictionary(jmedictNameNativeList);
-		
 		File kanjivgSingleXmlFile = new File("../JapaneseDictionary_additional/kanjivg/kanjivg.xml");
 		File kanjivgPatchDirFile = new File("../JapaneseDictionary_additional/kanjivg/patch");
 		
 		Map<String, KanjivgEntry> kanjivgEntryMap = KanjivgReader.readKanjivgSingleXmlFile(kanjivgSingleXmlFile, kanjivgPatchDirFile);
 		
-		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedictCommon, jmeNewNameDictionary,
+		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedictCommon,
 				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word.json", "output/word-power.csv",
 				"output/transitive_intransitive_pairs.csv", "output/word2.xml"); //, "output/word_group.csv");
 				
@@ -104,7 +95,7 @@ public class AndroidDictionaryGenerator {
 
 		if (fullMode == true) {
 			
-			generateNamePolishJapaneseEntries(jmeNewNameDictionary, "output/names.csv");
+			generateNamePolishJapaneseEntries("output/names.csv");
 		
 			generateZinniaTomoeSlimBinaryFile(kanjiEntries, kanjivgSingleXmlFile, "output/kanjivgTomoeFile.xml",
 					"../JapaneseDictionary_additional/zinnia-0.06-app/bin/zinnia_learn",
@@ -116,7 +107,7 @@ public class AndroidDictionaryGenerator {
 
 	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(
 			TreeMap<String, EDictEntry> jmedictCommon,
-			JMENewDictionary jmeNewNameDictionary, String[] sourceFileNames,
+			String[] sourceFileNames,
 			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationJSONFileName, String destinationPowerFileName,
 			String transitiveIntransitivePairsOutputFile, String word2XmlFile /*, String wordGroupOutputFile */) throws Exception {
 
@@ -933,11 +924,13 @@ public class AndroidDictionaryGenerator {
 		new File(outputDir, "dictionary.out").delete();
 	}
 	
-	private static void generateNamePolishJapaneseEntries(JMENewDictionary jmeNewNameDictionary, String output) throws IOException {
+	private static void generateNamePolishJapaneseEntries(String output) throws IOException {
 		
 		System.out.println("generateNamePolishJapaneseEntries");
 		
-		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(jmeNewNameDictionary);
+		Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
+		
+		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(dictionary2NameHelper);
 		
 		//
 		

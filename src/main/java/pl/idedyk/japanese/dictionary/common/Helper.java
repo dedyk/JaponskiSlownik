@@ -64,6 +64,7 @@ import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
@@ -599,8 +600,7 @@ public class Helper {
 		return foundEdict;
 	}
 
-	@Deprecated
-	public static List<PolishJapaneseEntry> generateNames(JMENewDictionary jmeNewDictionary) {
+	public static List<PolishJapaneseEntry> generateNames(Dictionary2NameHelper dictionary2NameHelper) {
 
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 		
@@ -972,17 +972,14 @@ public class Helper {
 		public boolean alreadyAddedPolishJapaneseEntry;
 	}
 	
-	@Deprecated
 	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(GroupEntry groupEntry) throws DictionaryException {		
 		return createPolishJapaneseEntry(null, groupEntry, 0, null);
 	}	
 	
-	@Deprecated
 	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(GroupEntry groupEntry, int id) throws DictionaryException {
 		return createPolishJapaneseEntry(null, groupEntry, id, null);
 	}
 	
-	@Deprecated
 	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList, GroupEntry groupEntry, int id, String missingWord) throws DictionaryException {
 		
 		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
@@ -1360,7 +1357,6 @@ public class Helper {
 		return null;
 	}
 		
-	@Deprecated
 	public static CommonWord convertGroupEntryToCommonWord(int id, GroupEntry groupEntry) {
 				
 		List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();
@@ -1383,7 +1379,6 @@ public class Helper {
 		return commonWord;		
 	}
 	
-	@Deprecated
 	public static Directory createLuceneDictionaryIndex(JMENewDictionary jmeNewDictionary) throws IOException {
 		
 		JMEDictEntityMapper jmEDictEntityMapper = new JMEDictEntityMapper();
@@ -1614,7 +1609,6 @@ public class Helper {
 		return booleanQuery;
 	}
 	
-	@Deprecated
 	public static GroupEntry createGroupEntry(Document document) {
 
 		Group fakeGroup = new Group(Integer.parseInt(document.get("groupId")), null);
