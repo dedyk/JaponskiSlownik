@@ -6,20 +6,17 @@ import java.util.TreeMap;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
-import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
-import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 
 public class ValidateTheSameRomaji {
 
 	public static void main(String[] args) throws Exception {
 		
-		// to jest klasa pomocnicza, tymczasowa
-		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
+				
+		List<PolishJapaneseEntry> polishJapaneseEntries = dictionary2Helper.getOldPolishJapaneseEntriesList();
 		//List<PolishJapaneseEntry> polishJapaneseEntriesSource = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
 		
 		/*
@@ -38,14 +35,8 @@ public class ValidateTheSameRomaji {
 
 		// read new jmedict
 		//System.out.println("new jmedict");
-		
-		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
-		
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
-		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
-
-		
-		Helper.generateAdditionalInfoFromEdict(jmeNewDictionary, jmedictCommon, polishJapaneseEntries);
+				
+		Helper.generateAdditionalInfoFromEdict(dictionary2Helper, jmedictCommon, polishJapaneseEntries);
 		
 		//
 				

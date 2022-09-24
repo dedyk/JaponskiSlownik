@@ -9,13 +9,12 @@ import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
-import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 import pl.idedyk.japanese.dictionary.tools.KanjiImageWriter;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 
 public class J2MEDictionaryGenerator {
 
@@ -33,24 +32,17 @@ public class J2MEDictionaryGenerator {
 		// katakana
 		List<KanaEntry> katakanaEntries = kanaHelper.getAllKatakanaKanaEntries();
 		generateKatakanaImages(katakanaEntries, charsCache, kanjiOutputDir);
-
-		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 		
-		// read name edict
-		List<JMEDictNewNativeEntry> jmedictNameNativeList = jmedictNewReader.readJMnedict("../JapaneseDictionary_additional/JMnedict.xml");
-		
-		JMENewDictionary jmeNewNameDictionary = jmedictNewReader.createJMENewDictionary(jmedictNameNativeList);
+		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
+		Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
 
 		// read new jmedict
 		System.out.println("new jmedict");
-		
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");		
-		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
-		
+				
 		// Słowniczek
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		List<PolishJapaneseEntry> polishJapaneseEntries = dictionary2Helper.getOldPolishJapaneseEntriesList();
 		
-		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, jmeNewDictionary, jmeNewNameDictionary);
+		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, dictionary2Helper, dictionary2NameHelper, false);
 		
 		generateKanjiImages(polishJapaneseEntries, charsCache, kanjiOutputDir);
 
