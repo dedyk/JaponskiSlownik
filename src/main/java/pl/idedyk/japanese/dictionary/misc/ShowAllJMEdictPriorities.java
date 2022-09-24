@@ -9,6 +9,7 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 
+@Deprecated
 public class ShowAllJMEdictPriorities {
 
 	public static void main(String[] args) throws Exception {

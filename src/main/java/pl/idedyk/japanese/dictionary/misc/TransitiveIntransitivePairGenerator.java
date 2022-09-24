@@ -11,6 +11,7 @@ import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
+@Deprecated
 public class TransitiveIntransitivePairGenerator {
 
 	public static void main(String[] args) throws Exception {

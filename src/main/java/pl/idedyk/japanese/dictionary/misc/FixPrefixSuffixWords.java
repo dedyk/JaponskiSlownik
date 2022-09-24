@@ -11,6 +11,7 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 
+@Deprecated
 public class FixPrefixSuffixWords {
 
 	public static void main(String[] args) throws Exception {

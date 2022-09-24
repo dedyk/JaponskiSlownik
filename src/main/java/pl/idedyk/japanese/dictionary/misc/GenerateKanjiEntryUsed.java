@@ -17,6 +17,7 @@ import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 import pl.idedyk.japanese.dictionary.tools.KanjivgReader;
 
+@Deprecated
 public class GenerateKanjiEntryUsed {
 
 	public static void main(String[] args) throws Exception {

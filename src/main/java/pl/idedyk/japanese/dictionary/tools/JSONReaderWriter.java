@@ -18,6 +18,7 @@ import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
 import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 
+@Deprecated
 public class JSONReaderWriter {
 	
 	public static JSONArray createDictionaryOutputJSON(JMENewDictionary jmeNewDictionary, List<PolishJapaneseEntry> polishJapaneseEntries) {

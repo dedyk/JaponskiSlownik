@@ -13,6 +13,7 @@ import org.dom4j.io.SAXReader;
 
 import pl.idedyk.japanese.dictionary.dto.JMEDictEntry;
 
+@Deprecated
 public class JMEDictReader {
 
 	public static TreeMap<String, List<JMEDictEntry>> readJMEdict(String fileName) throws Exception {

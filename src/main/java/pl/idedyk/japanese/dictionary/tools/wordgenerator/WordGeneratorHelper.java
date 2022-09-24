@@ -12,16 +12,12 @@ import org.apache.lucene.store.Directory;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
-import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
-import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
-import pl.idedyk.japanese.dictionary.tools.JMEDictNewReader;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 
 public class WordGeneratorHelper {
@@ -38,7 +34,8 @@ public class WordGeneratorHelper {
 	
 	//
 	
-	private JMEDictNewReader jmedictNewReader;
+	@Deprecated
+	private pl.idedyk.japanese.dictionary.tools.JMEDictNewReader jmedictNewReader;
 	
 	private List<PolishJapaneseEntry> polishJapaneseEntries;	
 	private Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList;
@@ -46,13 +43,16 @@ public class WordGeneratorHelper {
 	private Map<Integer, CommonWord> commonWordMap;
 	private Map<String, List<CommonWord>> commonWordExistsMap;
 	
-	private List<JMEDictNewNativeEntry> jmedictNativeList;
+	@Deprecated
+	private List<pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry> jmedictNativeList;
 	
-	private JMEDictEntityMapper jmedictEntityMapper;
+	@Deprecated
+	private pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper jmedictEntityMapper;
 	
 	private DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper;
 	
-	private JMENewDictionary jmeNewDictionary;
+	@Deprecated
+	private pl.idedyk.japanese.dictionary.dto.JMENewDictionary jmeNewDictionary;
 
 	private Directory index;
 	
@@ -160,16 +160,18 @@ public class WordGeneratorHelper {
 		return commonWordExistsMap.containsKey(key);
 	}
 	
-	public JMEDictNewReader getJMEDictNewReader() {
+	@Deprecated
+	public pl.idedyk.japanese.dictionary.tools.JMEDictNewReader getJMEDictNewReader() {
 		
 		if (jmedictNewReader == null) {
-			jmedictNewReader = new JMEDictNewReader();
+			jmedictNewReader = new pl.idedyk.japanese.dictionary.tools.JMEDictNewReader();
 		}
 		
 		return jmedictNewReader;
 	}
 	
-	public List<JMEDictNewNativeEntry> getJmedictNativeList() throws DictionaryException {
+	@Deprecated
+	public List<pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry> getJmedictNativeList() throws DictionaryException {
 		
 		if (jmedictNativeList == null) {
 			
@@ -181,10 +183,11 @@ public class WordGeneratorHelper {
 		return jmedictNativeList;
 	}
 	
-	public JMEDictEntityMapper getJmedictEntityMapper() {
+	@Deprecated
+	public pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper getJmedictEntityMapper() {
 		
 		if (jmedictEntityMapper == null) {
-			jmedictEntityMapper = new JMEDictEntityMapper();
+			jmedictEntityMapper = new pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper();
 		}
 		
 		return jmedictEntityMapper;
@@ -199,7 +202,8 @@ public class WordGeneratorHelper {
 		return dictionaryEntryJMEdictEntityMapper;		
 	}
 	
-	public JMENewDictionary getJMENewDictionary() throws DictionaryException {
+	@Deprecated
+	public pl.idedyk.japanese.dictionary.dto.JMENewDictionary getJMENewDictionary() throws DictionaryException {
 		
 		if (jmeNewDictionary == null) {
 			
@@ -211,6 +215,7 @@ public class WordGeneratorHelper {
 		return jmeNewDictionary;		
 	}
 	
+	@Deprecated
 	public Directory getLuceneIndex() throws IOException, DictionaryException {
 		
 		if (index == null) {

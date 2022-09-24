@@ -46,13 +46,9 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
-import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.dto.CommonWord;
 import pl.idedyk.japanese.dictionary.dto.EDictEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
+import pl.idedyk.japanese.dictionary.dto.*;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicate;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry.KnownDuplicateType;
 import pl.idedyk.japanese.dictionary.lucene.LuceneAnalyzer;
@@ -61,7 +57,6 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
-import pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
@@ -779,18 +774,22 @@ public class Helper {
 		public boolean alreadyAddedPolishJapaneseEntry;
 	}
 	
-	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(GroupEntry groupEntry) throws DictionaryException {		
+	@Deprecated
+	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry groupEntry) throws DictionaryException {		
 		return createPolishJapaneseEntry(null, groupEntry, 0, null);
 	}	
 	
-	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(GroupEntry groupEntry, int id) throws DictionaryException {
+	@Deprecated
+	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry groupEntry, int id) throws DictionaryException {
 		return createPolishJapaneseEntry(null, groupEntry, id, null);
 	}
 	
-	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList, GroupEntry groupEntry, int id, String missingWord) throws DictionaryException {
+	@Deprecated
+	public static CreatePolishJapaneseEntryResult createPolishJapaneseEntry(Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList, 
+			pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry groupEntry, int id, String missingWord) throws DictionaryException {
 		
 		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
-		JMEDictEntityMapper jmEDictEntityMapper = new JMEDictEntityMapper();
+		pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper jmEDictEntityMapper = new pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper();
 		
 		Set<String> wordTypeList = groupEntry.getWordTypeList();
 		
@@ -802,13 +801,13 @@ public class Helper {
 
 		String romaji = groupEntry.getRomaji();
 
-		List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();			
+		List<pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate> translateList = groupEntry.getTranslateList();			
 		
 		List<String> translateList2 = new ArrayList<String>();
 		
 		List<String> jmedictRawDataList = new ArrayList<String>();
 		
-		for (GroupEntryTranslate groupEntryTranslate : translateList) {
+		for (pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate groupEntryTranslate : translateList) {
 			
 			StringBuffer translate = new StringBuffer(groupEntryTranslate.getTranslate());
 			
@@ -1163,14 +1162,15 @@ public class Helper {
 		
 		return null;
 	}
-		
-	public static CommonWord convertGroupEntryToCommonWord(int id, GroupEntry groupEntry) {
+	
+	@Deprecated
+	public static CommonWord convertGroupEntryToCommonWord(int id, pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry groupEntry) {
 				
-		List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();
+		List<pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate> translateList = groupEntry.getTranslateList();
 		
 		List<String> translateStringList = new ArrayList<String>();
 		
-		for (GroupEntryTranslate groupEntryTranslate : translateList) {
+		for (pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate groupEntryTranslate : translateList) {
 			translateStringList.add(groupEntryTranslate.getTranslate());
 		}
 		
@@ -1186,9 +1186,10 @@ public class Helper {
 		return commonWord;		
 	}
 	
+	@Deprecated
 	public static Directory createLuceneDictionaryIndex(JMENewDictionary jmeNewDictionary) throws IOException {
 		
-		JMEDictEntityMapper jmEDictEntityMapper = new JMEDictEntityMapper();
+		pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper jmEDictEntityMapper = new pl.idedyk.japanese.dictionary.tools.JMEDictEntityMapper();
 		
 		Directory index = new RAMDirectory();
 
@@ -1200,11 +1201,11 @@ public class Helper {
 
 		IndexWriter indexWriter = new IndexWriter(index, indexWriterConfig);
 
-		for (Group group : jmeNewDictionary.getGroupList()) {
+		for (pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group group : jmeNewDictionary.getGroupList()) {
 
-			List<GroupEntry> groupEntryList = group.getGroupEntryList();
+			List<pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry> groupEntryList = group.getGroupEntryList();
 
-			for (GroupEntry groupEntry : groupEntryList) {
+			for (pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry groupEntry : groupEntryList) {
 
 				Document document = new Document();
 
@@ -1220,11 +1221,11 @@ public class Helper {
 
 				String romaji = groupEntry.getRomaji();
 
-				List<GroupEntryTranslate> translateList = groupEntry.getTranslateList();
+				List<pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate> translateList = groupEntry.getTranslateList();
 				
 				List<String> translateList2 = new ArrayList<String>();
 				
-				for (GroupEntryTranslate groupEntryTranslate : translateList) {
+				for (pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate groupEntryTranslate : translateList) {
 					
 					StringBuffer translate = new StringBuffer(groupEntryTranslate.getTranslate());
 					
@@ -1416,11 +1417,12 @@ public class Helper {
 		return booleanQuery;
 	}
 	
-	public static GroupEntry createGroupEntry(Document document) {
+	@Deprecated
+	public static pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry createGroupEntry(Document document) {
 
-		Group fakeGroup = new Group(Integer.parseInt(document.get("groupId")), null);
+		pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group fakeGroup = new pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group(Integer.parseInt(document.get("groupId")), null);
 		
-		GroupEntry groupEntry = new GroupEntry(null, fakeGroup);		
+		pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry groupEntry = new pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry(null, fakeGroup);		
 		
 		groupEntry.setWordTypeList(new LinkedHashSet<String>(Arrays.asList(document.getValues("wordTypeList"))));
 
@@ -1432,11 +1434,11 @@ public class Helper {
 
 		groupEntry.setRomaji(document.get("romaji"));
 		
-		List<GroupEntryTranslate> translateList = new ArrayList<GroupEntryTranslate>();
+		List<pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate> translateList = new ArrayList<pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate>();
 		
 		for (String currentTranslate : Arrays.asList(document.getValues("translateList"))) {
 			
-			GroupEntryTranslate translate = new GroupEntryTranslate(groupEntry);
+			pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate translate = new pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate(groupEntry);
 			
 			translate.setTranslate(currentTranslate);
 			

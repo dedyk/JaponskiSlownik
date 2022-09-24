@@ -12,6 +12,7 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary.tools.JMEDictReader;
 
+@Deprecated
 public class UnknownWord {
 
 	public static void main(String[] args) throws Exception {
