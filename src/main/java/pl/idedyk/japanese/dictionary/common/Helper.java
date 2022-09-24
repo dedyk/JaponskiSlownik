@@ -71,6 +71,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
 
 import com.csvreader.CsvWriter;
 
@@ -600,218 +601,24 @@ public class Helper {
 		return foundEdict;
 	}
 
-	public static List<PolishJapaneseEntry> generateNames(Dictionary2NameHelper dictionary2NameHelper) {
+	public static List<PolishJapaneseEntry> generateNames(Dictionary2NameHelper dictionary2NameHelper) throws Exception {
 
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
-		
-		// mapowanie typow
-		Map<String, DictionaryEntryType> nameTypeMapper = new HashMap<String, DictionaryEntryType>();
-		
-		nameTypeMapper.put("unclass", DictionaryEntryType.WORD_UNCLASS_NAME);
-		nameTypeMapper.put("place", DictionaryEntryType.WORD_PLACE);
-		nameTypeMapper.put("given", DictionaryEntryType.WORD_NAME);
-		nameTypeMapper.put("company", DictionaryEntryType.WORD_COMPANY_NAME);
-		nameTypeMapper.put("work", DictionaryEntryType.WORD_WORK);
-		nameTypeMapper.put("masc", DictionaryEntryType.WORD_MALE_NAME);
-		nameTypeMapper.put("person", DictionaryEntryType.WORD_PERSON);
-		nameTypeMapper.put("surname", DictionaryEntryType.WORD_SURNAME_NAME);
-		nameTypeMapper.put("product", DictionaryEntryType.WORD_PRODUCT_NAME);
-		nameTypeMapper.put("organization", DictionaryEntryType.WORD_ORGANIZATION_NAME);
-		nameTypeMapper.put("station", DictionaryEntryType.WORD_STATION_NAME);
-		nameTypeMapper.put("char", DictionaryEntryType.WORD_CHARACTER);
-		nameTypeMapper.put("creat", DictionaryEntryType.WORD_CREATURE);
-		nameTypeMapper.put("dei", DictionaryEntryType.WORD_DEITY);
-		nameTypeMapper.put("ev", DictionaryEntryType.WORD_EVENT);
-		nameTypeMapper.put("fem", DictionaryEntryType.WORD_FEMALE_NAME);
-		nameTypeMapper.put("fict", DictionaryEntryType.WORD_FICT);
-		nameTypeMapper.put("leg", DictionaryEntryType.WORD_LEGEND);
-		nameTypeMapper.put("myth", DictionaryEntryType.WORD_MYTHOLOGY);
-		nameTypeMapper.put("obj", DictionaryEntryType.WORD_OBJECT);
-		nameTypeMapper.put("oth", DictionaryEntryType.WORD_OTHER);
-		nameTypeMapper.put("relig", DictionaryEntryType.WORD_RELIGION);
-		nameTypeMapper.put("serv", DictionaryEntryType.WORD_SERVICE);
-		nameTypeMapper.put("ship", DictionaryEntryType.WORD_SHIP_NAME);
-		nameTypeMapper.put("group", DictionaryEntryType.WORD_GROUP);
-		nameTypeMapper.put("doc", DictionaryEntryType.WORD_DOCUMENT);
-		
+				
 		// informacje wygenerowane automatycznie !!!!!!!!!!!!!!!!!!11
 		// WORD_COMPANY_NAME
 		// WORD_PLACE
 		// albo wszystkie !!!!!!!!!!!!!!!!!!!!!!!
 		
-		int counter = 1;
-
-		KanaHelper kanaHelper = new KanaHelper();
+		List<JMnedict.Entry> nameEntryList = dictionary2NameHelper.getJMnedict().getEntryList();
 		
-		for (Group group : jmeNewDictionary.getGroupList()) {
-			
-			List<GroupEntry> groupEntryList = group.getGroupEntryList();
-			
-			for (GroupEntry groupEntry : groupEntryList) {
-				
-				// zamiana typow na nasze
-				List<DictionaryEntryType> nameDictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
-				
-				Set<String> wordTypeList = groupEntry.getWordTypeList();
-				
-				for (String wordType : wordTypeList) {
-					
-					DictionaryEntryType nameDictionaryEntryType = nameTypeMapper.get(wordType);
-					
-					if (nameDictionaryEntryType == null) {
-						throw new RuntimeException("Unknown name type: " + wordType);
-					}
-					
-					if (nameDictionaryEntryTypeList.contains(nameDictionaryEntryType) == false) {
-						nameDictionaryEntryTypeList.add(nameDictionaryEntryType);
-					}					
-				}
-
-				if (nameDictionaryEntryTypeList.size() == 0) {
-					nameDictionaryEntryTypeList.add(DictionaryEntryType.WORD_EMPTY); 
-				}
-				
-				String kanji = groupEntry.getKanji();
-				
-				if (kanji == null || kanji.equals("") == true) {
-					kanji = "-";
-				}
-								
-				String kana = groupEntry.getKana();
-								
-				String romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true));
-
-				List<GroupEntryTranslate> groupEntryTranslateList = groupEntry.getTranslateList();
-				
-				List<String> newPolishJapaneseEntryTranslates = new ArrayList<String>();
-				
-				for (GroupEntryTranslate groupEntryTranslate : groupEntryTranslateList) {
-					newPolishJapaneseEntryTranslates.add(groupEntryTranslate.getTranslate());
-				}
-				
-				//
-									
-				PolishJapaneseEntry newPolishJapaneseEntry = new PolishJapaneseEntry();
-				
-				newPolishJapaneseEntry.setId(counter);
-				counter++;
-				
-				newPolishJapaneseEntry.setDictionaryEntryTypeList(nameDictionaryEntryTypeList);
-				
-				newPolishJapaneseEntry.setWordType(WordType.HIRAGANA_KATAKANA);
-				
-				newPolishJapaneseEntry.setAttributeList(new AttributeList());
-				newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
-				newPolishJapaneseEntry.setKanji(kanji != null ? kanji : "-");
-				newPolishJapaneseEntry.setKana(kana);
-				newPolishJapaneseEntry.setRomaji(romaji);
-				newPolishJapaneseEntry.setTranslates(newPolishJapaneseEntryTranslates);
-				newPolishJapaneseEntry.setParseAdditionalInfoList(new ArrayList<ParseAdditionalInfo>());
-				newPolishJapaneseEntry.setExampleSentenceGroupIdsList(new ArrayList<String>());
-				
-				fixPolishJapaneseEntryName(newPolishJapaneseEntry);
-									
-				result.add(newPolishJapaneseEntry);
-			}
-			
+		for (JMnedict.Entry nameEntry : nameEntryList) {			
+			result.addAll(dictionary2NameHelper.generatePolishJapanaeseEntries(nameEntry, result.size() + 1));			
 		}
 		
 		return result;
 	}
 	
-	private static void fixPolishJapaneseEntryName(PolishJapaneseEntry newPolishJapaneseEntry) {
-				
-		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_FEMALE_NAME ||
-				newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_MALE_NAME ||
-				newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_PERSON) {
-			
-			String translate = newPolishJapaneseEntry.getTranslates().get(0);
-			
-			String romaji = newPolishJapaneseEntry.getRomaji();
-						
-			newPolishJapaneseEntry.setRomaji(fixRomajiForNames(romaji, translate));			
-		}
-		
-		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_STATION_NAME) {
-			
-			/*
-			String translate = newPolishJapaneseEntry.getTranslates().get(0);
-			
-			translate = translate.replaceAll("Station", "(nazwa stacji)");
-			
-			List<String> newTranslateList = new ArrayList<String>();
-			newTranslateList.add(translate);
-			
-			newPolishJapaneseEntry.setTranslates(newTranslateList);
-			*/
-			
-			String romaji = newPolishJapaneseEntry.getRomaji();
-			
-			if (romaji.endsWith("eki") == true) {
-				romaji = romaji.substring(0, romaji.length() - 3) + " eki";
-			}
-			
-			newPolishJapaneseEntry.setRomaji(romaji);
-		}
-	}
-
-	private static String fixRomajiForNames(String romaji, String transDet) {
-				
-		int transAdd = 0;
-		
-		StringBuffer result = new StringBuffer();
-		
-		for (int romajiIdx = 0; romajiIdx < romaji.length(); ++romajiIdx) {
-			
-			String currentRomajiChar = ("" + romaji.charAt(romajiIdx)).toLowerCase();
-			
-			String currentTransDetChar = null;
-			
-			if (romajiIdx + transAdd < transDet.length()) {
-				currentTransDetChar = ("" + transDet.charAt(romajiIdx + transAdd)).toLowerCase();
-			}
-			
-			if (currentTransDetChar == null) {
-				result = null;
-				
-				break;
-			}
-			
-			if (currentTransDetChar.equals(" ") == true || currentTransDetChar.equals("-") == true) {
-				
-				result.append(" ");
-				
-				transAdd++;
-				
-				if (romajiIdx + transAdd < transDet.length()) {
-					currentTransDetChar = ("" + transDet.charAt(romajiIdx + transAdd)).toLowerCase();
-				}				
-			}
-			
-			if (currentTransDetChar == null) {
-				result = null;
-				
-				break;
-			}
-			
-			if (currentRomajiChar.equals(currentTransDetChar) == true) {
-				result.append(currentRomajiChar);
-				
-			} else {
-				result = null;
-				
-				break;
-			}
-		}
-		
-		if (result != null) {
-			return result.toString();
-			
-		} else {
-			return romaji;
-		}		
-	}
-
 	public static void generateTransitiveIntransitivePairs(
 			List<TransitiveIntransitivePair> transitiveIntransitivePairList,
 			List<PolishJapaneseEntry> polishJapaneseEntryList, String transitiveIntransitivePairsOutputFile)

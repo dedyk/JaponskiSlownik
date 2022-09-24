@@ -1,19 +1,10 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.util.List;
-
-import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
-import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.common.Validator;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
-import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
-
 public class Test7 {
 
 	public static void main(String[] args) throws Exception {
 		
-		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
+		// Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 
 		/*
 		JMdict jmdict = dictionaryHelper.getJMdict();
@@ -39,8 +30,9 @@ public class Test7 {
 		}
 		*/
 		
-		Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
-				
+		// Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
+		
+		/*
 		KanaHelper kanaHelper = new KanaHelper();
 		
 		List<KanaEntry> hiraganaEntries = kanaHelper.getAllHiraganaKanaEntries();
@@ -49,6 +41,10 @@ public class Test7 {
 		List<PolishJapaneseEntry> polishJapaneseKanjiEntries = dictionaryHelper.getOldPolishJapaneseEntriesList();
 		
 		Validator.validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries, katakanaEntries, dictionaryHelper, dictionary2NameHelper, false);
+		*/
+		
+		// AndroidDictionaryGenerator.generateNamePolishJapaneseEntries("output/n/names.csv");
+		
 	}
 
 }

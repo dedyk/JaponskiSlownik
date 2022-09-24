@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
@@ -15,12 +16,19 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
+import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
+import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
+import pl.idedyk.japanese.dictionary.api.dto.WordType;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfo;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoNameType;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoTransDet;
 
 public class Dictionary2NameHelper {
@@ -329,6 +337,188 @@ public class Dictionary2NameHelper {
 		} else {
 			return null;
 		}
+	}
+	
+	public List<PolishJapaneseEntry> generatePolishJapanaeseEntries(JMnedict.Entry entry, int counter) {
+		
+		List<PolishJapaneseEntry> result = new ArrayList<>();
+		
+		//
+		
+		KanaHelper kanaHelper = new KanaHelper();
+		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
+		
+		List<NameKanjiKanaPair> nameKanjiKanaPairList = getNameKanjiKanaPairList(entry);
+		
+		for (NameKanjiKanaPair nameKanjiKanaPair : nameKanjiKanaPairList) {
+			
+			String kanji = nameKanjiKanaPair.getKanji();
+			
+			if (kanji == null || kanji.equals("") == true) {
+				kanji = "-";
+			}
+							
+			String kana = nameKanjiKanaPair.getKana();							
+			String romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true));
+			
+			// zamiana typow na nasze
+			List<DictionaryEntryType> nameDictionaryEntryTypeList = new ArrayList<DictionaryEntryType>();
+			
+			// znaczenia
+			List<String> newPolishJapaneseEntryTranslates = new ArrayList<String>();			
+			
+			for (TranslationalInfo translationalInfo : nameKanjiKanaPair.getTranslationalInfoList()) {
+				
+				List<TranslationalInfoNameType> translationalInfoNameTypeList = translationalInfo.getNameType();
+				
+				for (TranslationalInfoNameType translationalInfoName : translationalInfoNameTypeList) {
+					
+					DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(translationalInfoName);
+					
+					if (dictionaryEntryType == null) {
+						throw new RuntimeException("Unknown name type: " + translationalInfoName);
+					}
+					
+					if (nameDictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
+						nameDictionaryEntryTypeList.add(dictionaryEntryType);
+					}
+				}				
+			}
+			
+			if (nameDictionaryEntryTypeList.size() == 0) {
+				nameDictionaryEntryTypeList.add(DictionaryEntryType.WORD_EMPTY); 
+			}
+			
+			for (TranslationalInfo translationalInfo : nameKanjiKanaPair.getTranslationalInfoList()) {
+				
+				List<TranslationalInfoTransDet> translationalInfoTransDetList = translationalInfo.getTransDet().stream().filter(transDet -> (transDet.getLang().equals("eng") == true)).collect(Collectors.toList());
+				
+				for (TranslationalInfoTransDet translationalInfoTransDet : translationalInfoTransDetList) {
+					newPolishJapaneseEntryTranslates.add(translationalInfoTransDet.getValue());
+				}				
+			}
+						
+			//
+			
+			PolishJapaneseEntry newPolishJapaneseEntry = new PolishJapaneseEntry();
+			
+			newPolishJapaneseEntry.setId(counter);
+			counter++;
+			
+			newPolishJapaneseEntry.setDictionaryEntryTypeList(nameDictionaryEntryTypeList);
+			
+			newPolishJapaneseEntry.setWordType(WordType.HIRAGANA_KATAKANA);
+			
+			newPolishJapaneseEntry.setAttributeList(new AttributeList());
+			newPolishJapaneseEntry.setGroups(new ArrayList<GroupEnum>());
+			newPolishJapaneseEntry.setKanji(kanji != null ? kanji : "-");
+			newPolishJapaneseEntry.setKana(kana);
+			newPolishJapaneseEntry.setRomaji(romaji);
+			newPolishJapaneseEntry.setTranslates(newPolishJapaneseEntryTranslates);
+			newPolishJapaneseEntry.setParseAdditionalInfoList(new ArrayList<ParseAdditionalInfo>());
+			newPolishJapaneseEntry.setExampleSentenceGroupIdsList(new ArrayList<String>());
+			
+			fixPolishJapaneseEntryName(newPolishJapaneseEntry);
+								
+			result.add(newPolishJapaneseEntry);
+		}
+		
+		//
+		
+		return result;
+	}
+	
+	private static void fixPolishJapaneseEntryName(PolishJapaneseEntry newPolishJapaneseEntry) {
+		
+		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_FEMALE_NAME ||
+				newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_MALE_NAME ||
+				newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_PERSON) {
+			
+			String translate = newPolishJapaneseEntry.getTranslates().get(0);
+			
+			String romaji = newPolishJapaneseEntry.getRomaji();
+						
+			newPolishJapaneseEntry.setRomaji(fixRomajiForNames(romaji, translate));			
+		}
+		
+		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_STATION_NAME) {
+			
+			/*
+			String translate = newPolishJapaneseEntry.getTranslates().get(0);
+			
+			translate = translate.replaceAll("Station", "(nazwa stacji)");
+			
+			List<String> newTranslateList = new ArrayList<String>();
+			newTranslateList.add(translate);
+			
+			newPolishJapaneseEntry.setTranslates(newTranslateList);
+			*/
+			
+			String romaji = newPolishJapaneseEntry.getRomaji();
+			
+			if (romaji.endsWith("eki") == true) {
+				romaji = romaji.substring(0, romaji.length() - 3) + " eki";
+			}
+			
+			newPolishJapaneseEntry.setRomaji(romaji);
+		}
+	}
+
+	private static String fixRomajiForNames(String romaji, String transDet) {
+				
+		int transAdd = 0;
+		
+		StringBuffer result = new StringBuffer();
+		
+		for (int romajiIdx = 0; romajiIdx < romaji.length(); ++romajiIdx) {
+			
+			String currentRomajiChar = ("" + romaji.charAt(romajiIdx)).toLowerCase();
+			
+			String currentTransDetChar = null;
+			
+			if (romajiIdx + transAdd < transDet.length()) {
+				currentTransDetChar = ("" + transDet.charAt(romajiIdx + transAdd)).toLowerCase();
+			}
+			
+			if (currentTransDetChar == null) {
+				result = null;
+				
+				break;
+			}
+			
+			if (currentTransDetChar.equals(" ") == true || currentTransDetChar.equals("-") == true) {
+				
+				result.append(" ");
+				
+				transAdd++;
+				
+				if (romajiIdx + transAdd < transDet.length()) {
+					currentTransDetChar = ("" + transDet.charAt(romajiIdx + transAdd)).toLowerCase();
+				}				
+			}
+			
+			if (currentTransDetChar == null) {
+				result = null;
+				
+				break;
+			}
+			
+			if (currentRomajiChar.equals(currentTransDetChar) == true) {
+				result.append(currentRomajiChar);
+				
+			} else {
+				result = null;
+				
+				break;
+			}
+		}
+		
+		if (result != null) {
+			return result.toString();
+			
+		} else {
+			return romaji;
+		}		
 	}
 
 	//

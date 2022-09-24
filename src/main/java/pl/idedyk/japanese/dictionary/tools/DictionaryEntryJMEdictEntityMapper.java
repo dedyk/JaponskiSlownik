@@ -12,6 +12,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoNameType;
 
 public class DictionaryEntryJMEdictEntityMapper {
 
@@ -25,6 +26,8 @@ public class DictionaryEntryJMEdictEntityMapper {
 	private Map<KanjiAdditionalInfoEnum, String> kanjiAdditionalInfoEnumToEntityMapper;
 	private Map<ReadingAdditionalInfoEnum, String> readingAdditionalInfoEnumToEntityMapper;
 	
+	private Map<TranslationalInfoNameType, DictionaryEntryType> translationalInfoNameTypeToDictionaryEntryMapper;
+	
 	public DictionaryEntryJMEdictEntityMapper() {
 		
 		dictionaryEntryToEntityMapper = new TreeMap<DictionaryEntryType, List<String>>();
@@ -35,6 +38,8 @@ public class DictionaryEntryJMEdictEntityMapper {
 		dialectEnumToEntityMapper = new TreeMap<>();
 		kanjiAdditionalInfoEnumToEntityMapper = new TreeMap<>();
 		readingAdditionalInfoEnumToEntityMapper = new TreeMap<>();
+		
+		translationalInfoNameTypeToDictionaryEntryMapper = new TreeMap<>();
 		
 		fillMaps();
 	}
@@ -364,6 +369,35 @@ public class DictionaryEntryJMEdictEntityMapper {
 		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.WORD_CONTAINING_IRREGULAR_KANA_USAGE, "ik");
 		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.OUT_DATED_OR_OBSOLETE_KANA_USAGE, "ok");
 		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.SEARCH_ONLY_KANA_FORM, "sk");
+		
+		//
+		
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.UNCLASSIFIED_NAME, DictionaryEntryType.WORD_UNCLASS_NAME);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.PLACE_NAME, DictionaryEntryType.WORD_PLACE);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.GIVEN_NAME_OR_FORENAME_GENDER_NOT_SPECIFIED, DictionaryEntryType.WORD_NAME);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.COMPANY_NAME, DictionaryEntryType.WORD_COMPANY_NAME);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.WORK_OF_ART_LITERATURE_MUSIC_ETC_NAME, DictionaryEntryType.WORD_WORK);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.MALE_GIVEN_NAME_OR_FORENAME, DictionaryEntryType.WORD_MALE_NAME);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.FULL_NAME_OF_A_PARTICULAR_PERSON, DictionaryEntryType.WORD_PERSON);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.FAMILY_OR_SURNAME, DictionaryEntryType.WORD_SURNAME_NAME);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.PRODUCT_NAME, DictionaryEntryType.WORD_PRODUCT_NAME);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.ORGANIZATION_NAME, DictionaryEntryType.WORD_ORGANIZATION_NAME);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.RAILWAY_STATION, DictionaryEntryType.WORD_STATION_NAME);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.CHARACTER, DictionaryEntryType.WORD_CHARACTER);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.CREATURE, DictionaryEntryType.WORD_CREATURE);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.DEITY, DictionaryEntryType.WORD_DEITY);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.EVENT, DictionaryEntryType.WORD_EVENT);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.FEMALE_GIVEN_NAME_OR_FORENAME, DictionaryEntryType.WORD_FEMALE_NAME);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.FICTION, DictionaryEntryType.WORD_FICT);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.LEGEND, DictionaryEntryType.WORD_LEGEND);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.MYTHOLOGY, DictionaryEntryType.WORD_MYTHOLOGY);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.OBJECT, DictionaryEntryType.WORD_OBJECT);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.OTHER, DictionaryEntryType.WORD_OTHER);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.RELIGION, DictionaryEntryType.WORD_RELIGION);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.SERVICE, DictionaryEntryType.WORD_SERVICE);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.SHIP_NAME, DictionaryEntryType.WORD_SHIP_NAME);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.GROUP, DictionaryEntryType.WORD_GROUP);
+		translationalInfoNameTypeToDictionaryEntryMapper.put(TranslationalInfoNameType.DOCUMENT, DictionaryEntryType.WORD_DOCUMENT);
 	}
 
 	private void addMap(DictionaryEntryType dictionaryEntryType, String entity) {
@@ -477,5 +511,16 @@ public class DictionaryEntryJMEdictEntityMapper {
 		DictionaryEntryType dictionaryEntryType = getDictionaryEntryType(getPartOfSpeechAsEntity(partOfSpeech));
 
 		return dictionaryEntryType;
+	}
+
+	public DictionaryEntryType getDictionaryEntryType(TranslationalInfoNameType translationalInfoName) {
+
+		DictionaryEntryType dictionaryEntryType = translationalInfoNameTypeToDictionaryEntryMapper.get(translationalInfoName);
+		
+		if (dictionaryEntryType == null) {
+			throw new RuntimeException("getDictionaryEntryType: " + translationalInfoName);
+		}
+		
+		return dictionaryEntryType;		
 	}
 }

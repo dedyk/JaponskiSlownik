@@ -6,7 +6,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -924,8 +923,8 @@ public class AndroidDictionaryGenerator {
 		new File(outputDir, "dictionary.out").delete();
 	}
 	
-	private static void generateNamePolishJapaneseEntries(String output) throws IOException {
-		
+	private static void generateNamePolishJapaneseEntries(String output) throws Exception {
+				
 		System.out.println("generateNamePolishJapaneseEntries");
 		
 		Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
