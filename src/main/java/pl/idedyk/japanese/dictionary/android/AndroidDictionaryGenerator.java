@@ -92,9 +92,9 @@ public class AndroidDictionaryGenerator {
 				"../JapaneseDictionary_additional/kanjidic2.xml", "../JapaneseDictionary_additional/kradfile",
 				"output/kanji.csv");
 
+		generateNamePolishJapaneseEntries("output/names.csv");
+		
 		if (fullMode == true) {
-			
-			generateNamePolishJapaneseEntries("output/names.csv");
 		
 			generateZinniaTomoeSlimBinaryFile(kanjiEntries, kanjivgSingleXmlFile, "output/kanjivgTomoeFile.xml",
 					"../JapaneseDictionary_additional/zinnia-0.06-app/bin/zinnia_learn",

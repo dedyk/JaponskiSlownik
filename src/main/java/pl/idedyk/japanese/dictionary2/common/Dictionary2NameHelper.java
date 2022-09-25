@@ -234,8 +234,14 @@ public class Dictionary2NameHelper {
 		List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
 		
 		// jesli nie ma kanji
-		if (kanjiInfoList.size() > 0) {
+		if (kanjiInfoList.size() == 0) {
 			
+			// wszystkie czytania do listy wynikowej
+			for (ReadingInfo readingInfo : readingInfoList) {				
+				result.add(new NameKanjiKanaPair(null, readingInfo));
+			}
+			
+		} else {	
 			// zlaczenie kanji z kana
 			
 			for (KanjiInfo kanjiInfo : kanjiInfoList) {

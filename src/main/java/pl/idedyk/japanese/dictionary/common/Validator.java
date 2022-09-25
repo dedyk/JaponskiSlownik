@@ -288,7 +288,7 @@ public class Validator {
 							
 							wasError = true;
 																					
-							System.out.println("Błąd walidacji typów(1) dla: " + currentPolishJapaneseEntry + " - " + currentDictionaryEntryType + "\n");																												
+							System.out.println("Błąd walidacji typów(1) dla: " + currentPolishJapaneseEntry + " - " + currentDictionaryEntryType + " - usunąć\n");																												
 						}					
 					}
 				}
@@ -318,7 +318,7 @@ public class Validator {
 														
 							wasError = true;
 							
-							System.out.println("Błąd walidacji typów(2) dla: " + currentPolishJapaneseEntry + " - " + currentJmdictDictionaryEntryType + "\n");
+							System.out.println("Błąd walidacji typów(2) dla: " + currentPolishJapaneseEntry + " - " + currentJmdictDictionaryEntryType + " - dodać\n");
 														
 						}
 					}					
