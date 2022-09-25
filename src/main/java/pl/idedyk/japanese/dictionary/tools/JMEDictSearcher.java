@@ -14,42 +14,35 @@ import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.store.Directory;
 
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.common.Helper;
-import pl.idedyk.japanese.dictionary.dto.JMEDictNewNativeEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.Group;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntry;
-import pl.idedyk.japanese.dictionary.dto.JMENewDictionary.GroupEntryTranslate;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 
 public class JMEDictSearcher {
+	
+	private static Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
+	
+	private static KanaHelper kanaHelper = new KanaHelper();
+	
+	//
 
 	public static void main(String[] args) throws Exception {
 
 		System.out.println("Wczytywanie slownika...");
-
-		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
-
-		//List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e-TEST");
-		List<JMEDictNewNativeEntry> jmedictNativeList = jmedictNewReader.readJMEdict("../JapaneseDictionary_additional/JMdict_e");
-
-		JMENewDictionary jmeNewDictionary = jmedictNewReader.createJMENewDictionary(jmedictNativeList);
-
-		JMEDictEntityMapper entityMapper = new JMEDictEntityMapper();
-
+		
 		System.out.println("Indeksowanie...");
 
 		// tworzenie indeksu lucene
-		Directory index = Helper.createLuceneDictionaryIndex(jmeNewDictionary);
+		dictionary2Helper.findInJMdict("indexing");
 
 		System.out.println("Gotowe...");
 
 		System.out.println();
-
-		// stworzenie wyszukiwacza
-		IndexReader reader = DirectoryReader.open(index);
-
-		IndexSearcher searcher = new IndexSearcher(reader);
-
+		
 		BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
 
 		while (true) {
@@ -81,9 +74,9 @@ public class JMEDictSearcher {
 					continue;
 				}
 				
-				Group group = jmeNewDictionary.getGroupById(groupNo);
-				
-				if (group == null) {
+				Entry entry = dictionary2Helper.getEntryFromPolishDictionary(groupNo);
+								
+				if (entry == null) {
 					System.out.println("Brak grupy o podanym identyfikatorze");
 					
 					continue;
@@ -91,38 +84,68 @@ public class JMEDictSearcher {
 				
 				System.out.println("=========================\n");
 				
-				List<GroupEntry> groupEntryList = group.getGroupEntryList();
-				
-				for (GroupEntry groupEntry : groupEntryList) {
-					printGroupEntry(entityMapper, groupEntry);
+				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+								
+				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+					printKanjiKanaPair(entry, kanjiKanaPair);
 				}				
 				
 			} else {
 				
-				Query query = Helper.createLuceneDictionaryIndexTermQuery(searchWord);
-
-				ScoreDoc[] scoreDocs = searcher.search(query, null, 30).scoreDocs;
-
+				List<Entry> entryList = dictionary2Helper.findInJMdict(searchWord);
+				
 				System.out.println("=========================\n");
 				
-				for (ScoreDoc scoreDoc : scoreDocs) {
-
-					Document foundDocument = searcher.doc(scoreDoc.doc);
-
-					GroupEntry groupEntry = Helper.createGroupEntry(foundDocument);
+				for (Entry entry : entryList) {
 					
-					printGroupEntry(entityMapper, groupEntry);
+					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+					
+					for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+						printKanjiKanaPair(entry, kanjiKanaPair);
+					}				
 				}
 			}
 		}
 
 		consoleReader.close();
-
-		reader.close();
 	}
 	
-	private static void printGroupEntry(JMEDictEntityMapper entityMapper, GroupEntry groupEntry) {
+	private static void printKanjiKanaPair(Entry emtry, KanjiKanaPair kanjiKanaPair) {
 		
+		System.out.println("Identyfikator grupy: " + emtry.getEntryId() + "\n");
+		
+		KanjiInfo kanjiInfo = kanjiKanaPair.getKanjiInfo();
+		
+		System.out.println("Kanji info"); //\n\t\t\t" + kanji + " - " + kana + " - " + romaji);
+		
+		if (kanjiInfo != null) {		
+			System.out.println("\tKanji: " + kanjiInfo.getKanji());
+			System.out.println("\tInformacje dodatkowe: " + kanjiInfo.getKanjiAdditionalInfoList());
+			System.out.println("\tCzęstotliwość występowania: " + kanjiInfo.getRelativePriorityList() + "\n");
+			
+		} else {
+			System.out.println("\t-\n");
+		}
+		
+		//
+		
+		ReadingInfo readingInfo = kanjiKanaPair.getReadingInfo();
+				
+		System.out.println("Czytanie");
+		
+		System.out.println("\tKana, wartość: " + readingInfo.getKana().getValue());
+		System.out.println("\tKana, romaji: " + getRomaji(readingInfo.getKana().getValue()));
+		System.out.println("\tKana, typ kana: " + Dictionary2Helper.getKanaType(readingInfo.getKana().getValue()) + "\n");
+
+		System.out.println("\tInformacje dodatkowe: " + readingInfo.getReadingAdditionalInfoList());
+		System.out.println("\tCzęstotliwość występowania: " + readingInfo.getRelativePriorityList() + "\n");
+		
+		//
+		
+		System.out.println("\n---\n\n");
+
+		
+		/*
 		Set<String> wordTypeList = groupEntry.getWordTypeList();
 
 		Integer groupEntryGroupId = groupEntry.getGroup().getId();
@@ -170,8 +193,10 @@ public class JMEDictSearcher {
 			System.out.println("\t\t\t" + currentAdditionalInfo);
 		}
 		
-		System.out.println("Identyfikator grupy:\t" + groupEntryGroupId); 
-
-		System.out.println("\n---\n\n");		
+		*/
+	}
+	
+	private static String getRomaji(String kana) {
+		return kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(kana, kanaHelper.getKanaCache(), true));
 	}
 }

@@ -704,7 +704,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		new EntryPartConverterEnd().writeToCsv(config, csvWriter, entry);		
 	}
 	
-	private static ReadingInfoKanaType getKanaType(String kana) {
+	public static ReadingInfoKanaType getKanaType(String kana) {
 		
 		ReadingInfoKanaType kanaType = null;
 				
