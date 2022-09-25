@@ -2,25 +2,18 @@ package pl.idedyk.japanese.dictionary.tools;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-
-import org.apache.lucene.document.Document;
-import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.Query;
-import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.store.Directory;
 
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 
 public class JMEDictSearcher {
 	
@@ -85,10 +78,10 @@ public class JMEDictSearcher {
 				System.out.println("=========================\n");
 				
 				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
-								
-				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
-					printKanjiKanaPair(entry, kanjiKanaPair);
-				}				
+				
+				for (int idx = 0; idx < kanjiKanaPairList.size(); ++idx) {
+					printKanjiKanaPair(entry, kanjiKanaPairList.get(idx), idx + 1);
+				}
 				
 			} else {
 				
@@ -100,9 +93,9 @@ public class JMEDictSearcher {
 					
 					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
 					
-					for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
-						printKanjiKanaPair(entry, kanjiKanaPair);
-					}				
+					for (int idx = 0; idx < kanjiKanaPairList.size(); ++idx) {
+						printKanjiKanaPair(entry, kanjiKanaPairList.get(idx), idx + 1);
+					}
 				}
 			}
 		}
@@ -110,90 +103,125 @@ public class JMEDictSearcher {
 		consoleReader.close();
 	}
 	
-	private static void printKanjiKanaPair(Entry emtry, KanjiKanaPair kanjiKanaPair) {
+	private static void printKanjiKanaPair(Entry emtry, KanjiKanaPair kanjiKanaPair, int counter) {
 		
-		System.out.println("Identyfikator grupy: " + emtry.getEntryId() + "\n");
+		System.out.println("Identyfikator słowa: " + emtry.getEntryId() + "/" + counter + "\n");
 		
 		KanjiInfo kanjiInfo = kanjiKanaPair.getKanjiInfo();
-		
-		System.out.println("Kanji info"); //\n\t\t\t" + kanji + " - " + kana + " - " + romaji);
-		
-		if (kanjiInfo != null) {		
-			System.out.println("\tKanji: " + kanjiInfo.getKanji());
-			System.out.println("\tInformacje dodatkowe: " + kanjiInfo.getKanjiAdditionalInfoList());
-			System.out.println("\tCzęstotliwość występowania: " + kanjiInfo.getRelativePriorityList() + "\n");
+				
+		if (kanjiInfo != null) {
+			System.out.println("Kanji info"); //\n\t\t\t" + kanji + " - " + kana + " - " + romaji);
 			
-		} else {
-			System.out.println("\t-\n");
-		}
+			System.out.println("\tKanji: " + kanjiInfo.getKanji());
+			
+			if (kanjiInfo.getKanjiAdditionalInfoList().size() > 0) {
+				System.out.println("\tInformacje dodatkowe: " + kanjiInfo.getKanjiAdditionalInfoList());
+			}
+			
+			if (kanjiInfo.getRelativePriorityList().size() > 0) {
+				System.out.println("\tCzęstotliwość występowania: " + kanjiInfo.getRelativePriorityList());
+			}
+		} 
 		
 		//
 		
 		ReadingInfo readingInfo = kanjiKanaPair.getReadingInfo();
 				
-		System.out.println("Czytanie");
+		System.out.println("\nCzytanie");
 		
 		System.out.println("\tKana, wartość: " + readingInfo.getKana().getValue());
 		System.out.println("\tKana, romaji: " + getRomaji(readingInfo.getKana().getValue()));
-		System.out.println("\tKana, typ kana: " + Dictionary2Helper.getKanaType(readingInfo.getKana().getValue()) + "\n");
+		System.out.println("\tKana, typ kana: " + Dictionary2Helper.getKanaType(readingInfo.getKana().getValue()));
 
-		System.out.println("\tInformacje dodatkowe: " + readingInfo.getReadingAdditionalInfoList());
-		System.out.println("\tCzęstotliwość występowania: " + readingInfo.getRelativePriorityList() + "\n");
+		if (readingInfo.getReadingAdditionalInfoList().size() > 0) {
+			System.out.println("\tInformacje dodatkowe: " + readingInfo.getReadingAdditionalInfoList());
+		}
+		
+		if (readingInfo.getRelativePriorityList().size() > 0) {
+			System.out.println("\tCzęstotliwość występowania: " + readingInfo.getRelativePriorityList());
+		}
 		
 		//
 		
+		List<Sense> senseList = kanjiKanaPair.getSenseList();
+		
+		System.out.println("\nZnaczenie");
+		
+		for (int senseListIdx = 0; senseListIdx < senseList.size(); ++senseListIdx) {
+			
+			System.out.println("\t" + (senseListIdx + 1));
+			
+			Sense sense = senseList.get(senseListIdx);
+			
+			System.out.println("\t\tCzęść mowy: " + sense.getPartOfSpeechList());
+			
+			if (sense.getDialectList().size() > 0) {
+				System.out.println("\t\tDialekt: " + sense.getDialectList());
+			}
+			
+			if (sense.getFieldList().size() > 0) {
+				System.out.println("\t\tDziedzina: " + sense.getFieldList());
+			}
+			
+			if (sense.getMiscList().size() > 0) {
+				System.out.println("\t\tRóżne informacje: " + sense.getMiscList());
+			}			
+			
+			System.out.println("\n\t\tZnaczenie");
+			
+			List<Gloss> glossList = sense.getGlossList();
+			
+			for (Gloss gloss : glossList) {
+				System.out.println("\t\t\t" + gloss.getValue() + (gloss.getGType() != null ? " (" + gloss.getGType() + ")" : ""));
+			}
+						
+			List<SenseAdditionalInfo> additionalInfoList = sense.getAdditionalInfoList();
+			
+			if (additionalInfoList.size() > 0) {
+				System.out.println("\n\t\tInformacje dodatkowe");
+				
+				for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {
+					System.out.println("\t\t\t" + senseAdditionalInfo.getValue());
+				}				
+			}
+			
+			List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
+			
+			if (languageSourceList.size() > 0) {
+				System.out.println("\n\t\tJęzykowe źródło");
+				
+				for (LanguageSource languageSource : languageSourceList) {
+					System.out.println("\t\t\tWartość: " + languageSource.getValue());
+					System.out.println("\t\t\tJęzyk: " + languageSource.getLang());
+					
+					if (languageSource.getLsType() != null) {
+						System.out.println("\t\t\tTyp: " + languageSource.getLsType());
+					}
+					
+					if (languageSource.getLsWasei() != null) {
+						System.out.println("\t\t\tWasei: " + languageSource.getLsWasei());
+					}
+				}
+			}
+			
+			if (sense.getReferenceToAnotherKanjiKanaList().size() > 0) {
+				System.out.println("\n\t\tOdniesienie do innego słowa");
+				
+				for (String referenceToAnotherKanjiKana : sense.getReferenceToAnotherKanjiKanaList()) {
+					System.out.println("\t\t\t" + referenceToAnotherKanjiKana);
+				}
+			}
+			
+			if (sense.getAntonymList().size() > 0) {
+				System.out.println("\n\t\tPrzeciwieństwo");
+				
+				for (String antonym : sense.getAntonymList()) {
+					System.out.println("\t\t\t" + antonym);
+				}
+			}
+		}		
+		
 		System.out.println("\n---\n\n");
-
-		
-		/*
-		Set<String> wordTypeList = groupEntry.getWordTypeList();
-
-		Integer groupEntryGroupId = groupEntry.getGroup().getId();
-		
-		String kanji = groupEntry.getKanji();
-		List<String> kanjiInfoList = groupEntry.getKanjiInfoList() != null ? groupEntry.getKanjiInfoList() : new ArrayList<String>();
-
-		String kana = groupEntry.getKana();
-		List<String> kanaInfoList = groupEntry.getKanaInfoList() != null ? groupEntry.getKanaInfoList() : new ArrayList<String>();
-
-		String romaji = groupEntry.getRomaji();
-
-		List<GroupEntryTranslate> translateList = groupEntry.getTranslateList() != null ? groupEntry.getTranslateList() : new ArrayList<GroupEntryTranslate>();
-		List<String> additionalInfoList = new ArrayList<String>(); //groupEntry.getAdditionalInfoList();
-
-		System.out.println("Czytanie:\n\t\t\t" + kanji + " - " + kana + " - " + romaji);
-
-		System.out.println("Rodzaj słowa:");
-
-		for (String currentWordTypeList : wordTypeList) {				
-			System.out.println("\t\t\t" + currentWordTypeList + " - " + entityMapper.getDesc(currentWordTypeList));				
-		}
-
-		System.out.println("Info do kanji:");
-
-		for (String currentKanjiInfo : kanjiInfoList) {				
-			System.out.println("\t\t\t" + currentKanjiInfo + " - " + entityMapper.getDesc(currentKanjiInfo));				
-		}
-
-		System.out.println("Info do kana:");
-
-		for (String currentKanaInfo : kanaInfoList) {				
-			System.out.println("\t\t\t" + currentKanaInfo + " - " + entityMapper.getDesc(currentKanaInfo));				
-		}
-
-		System.out.println("Tłumaczenie:");
-
-		for (GroupEntryTranslate groupEntryTranslate : translateList) {
-			System.out.println("\t\t\t" + groupEntryTranslate.getTranslate());
-		}
-
-		System.out.println("Dodatkowe informacje:\t");
-
-		for (String currentAdditionalInfo : additionalInfoList) {
-			System.out.println("\t\t\t" + currentAdditionalInfo);
-		}
-		
-		*/
 	}
 	
 	private static String getRomaji(String kana) {
