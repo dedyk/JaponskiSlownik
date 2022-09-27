@@ -160,6 +160,11 @@ public class WordGenerator {
 					if (commonWord != null) {
 						
 						commonKanji = commonWord.getKanji();
+						
+						if (commonKanji.equals("-") == true) {
+							commonKanji = null;
+						}
+						
 						commonKana = commonWord.getKana();
 						
 						entryList = dictionary2Helper.findEntryListByKanjiAndKana(commonKanji, commonKana);
