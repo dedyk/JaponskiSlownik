@@ -2819,9 +2819,11 @@ public class WordGenerator {
 							continue;
 						}
 						
+						/*
 						if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.TO_DELETE) == true) {
 							continue;
 						}
+						*/
 						
 						if (onlyAlreadyIgnoredButExistsInJmedict == true && polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.IGNORE_NO_JMEDICT) == false) {
 							continue;

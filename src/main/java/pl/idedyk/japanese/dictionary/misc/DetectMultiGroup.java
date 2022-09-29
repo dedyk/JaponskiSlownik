@@ -29,12 +29,15 @@ public class DetectMultiGroup {
 			}			
 		}
 		
-		System.out.print("./word-generator.sh find-words-with-jmedict-change -s 888888 --ignore-dictionary-filled-raw-data -wid ");
+		if (idList.size() > 0) {
 		
-		for (Integer id : idList) {
-			System.out.print(id + ",");			
+			System.out.print("./word-generator.sh find-words-with-jmedict-change -s 888888 --ignore-dictionary-filled-raw-data -wid ");
+			
+			for (Integer id : idList) {
+				System.out.print(id + ",");			
+			}
+			
+			System.out.println();
 		}
-		
-		System.out.println();
 	}
 }
