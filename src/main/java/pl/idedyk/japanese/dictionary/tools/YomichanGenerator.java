@@ -341,19 +341,15 @@ public class YomichanGenerator {
 			
 			JMdict.Entry jmdictEntry = null;
 			
-			if (names == false) {				
+			if (names == false) {		
 				
-				// sprawdzenie, czy wystepuje slowo w formacie JMdict
-				List<Attribute> jmdictEntryIdAttributeList = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.JMDICT_ENTRY_ID);
+				// pobieramy entry id
+				Integer entryId = polishJapaneseEntry.getJmdictEntryId();
 				
-				if (jmdictEntryIdAttributeList != null && jmdictEntryIdAttributeList.size() > 0) { // cos jest
-					
-					// pobieramy entry id
-					Integer entryId = Integer.parseInt(jmdictEntryIdAttributeList.get(0).getAttributeValue().get(0));
-					
+				if (entryId != null) {
 					// pobieramy z bazy danych
 					jmdictEntry = dictionaryHelper.getEntryFromPolishDictionary(entryId);				
-				}
+				}				
 			}
 			
 			List<TermBankEntry> termBankEntryList = null;
