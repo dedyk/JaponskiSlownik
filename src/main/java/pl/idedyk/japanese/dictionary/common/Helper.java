@@ -611,6 +611,9 @@ public class Helper {
 			result.addAll(dictionary2NameHelper.generatePolishJapanaeseEntries(nameEntry, result.size() + 1));			
 		}
 		
+		// wygenerowanie unikalny kluczy
+		generateUniqueKeys(result);
+		
 		return result;
 	}
 	
@@ -1671,5 +1674,32 @@ public class Helper {
 		}
 		
 		return new ArrayList<String>(Arrays.asList(stringList.split(separator)));
+	}
+	
+	public static void generateUniqueKeys(List<PolishJapaneseEntry> polishJapaneseEntryList) {
+		
+		Map<String, Integer> uniqueKeyMap = new TreeMap<>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+			
+			String kanji = polishJapaneseEntry.isKanjiExists() == true ? polishJapaneseEntry.getKanji() : "-";
+			String kana = polishJapaneseEntry.getKana();
+			
+			String kanjiKanaKey = kanji + "|" + kana;
+			
+			Integer kanjiKanaKeyCounter = uniqueKeyMap.get(kanjiKanaKey);
+			
+			if (kanjiKanaKeyCounter == null) {
+				kanjiKanaKeyCounter = 0;
+			}
+			
+			kanjiKanaKeyCounter = kanjiKanaKeyCounter + 1;
+			
+			uniqueKeyMap.put(kanjiKanaKey, kanjiKanaKeyCounter);
+			
+			String uniqueKanjiKanaKey = kanjiKanaKey + "|" + kanjiKanaKeyCounter;
+			
+			polishJapaneseEntry.getAttributeList().addAttributeValue(AttributeType.UNIQUE_KEY, uniqueKanjiKanaKey);
+		}		
 	}
 }

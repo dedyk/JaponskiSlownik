@@ -161,7 +161,10 @@ public class AndroidDictionaryGenerator {
 				transitiveIntransitivePairsOutputFile);
 
 		// generate names
-		// Helper.generateNames(jmedictName, result);		
+		// Helper.generateNames(jmedictName, result);	
+		
+		// wygenerowanie unikalny kluczy
+		Helper.generateUniqueKeys(polishJapaneseEntries);
 		
 		System.out.println("checkAndSavePolishJapaneseEntries: generateExampleSentence");
 		generateExampleSentence(result, "../JapaneseDictionary_additional/tatoeba", "output/sentences.csv", "output/sentences_groups.csv");
