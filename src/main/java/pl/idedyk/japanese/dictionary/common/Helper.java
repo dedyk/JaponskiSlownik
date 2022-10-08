@@ -1685,7 +1685,7 @@ public class Helper {
 			String kanji = polishJapaneseEntry.isKanjiExists() == true ? polishJapaneseEntry.getKanji() : "-";
 			String kana = polishJapaneseEntry.getKana();
 			
-			String kanjiKanaKey = kanji + "|" + kana;
+			String kanjiKanaKey = kanji + "/" + kana;
 			
 			Integer kanjiKanaKeyCounter = uniqueKeyMap.get(kanjiKanaKey);
 			
@@ -1697,7 +1697,7 @@ public class Helper {
 			
 			uniqueKeyMap.put(kanjiKanaKey, kanjiKanaKeyCounter);
 			
-			String uniqueKanjiKanaKey = kanjiKanaKey + "|" + kanjiKanaKeyCounter;
+			String uniqueKanjiKanaKey = kanjiKanaKey + "/" + kanjiKanaKeyCounter;
 			
 			polishJapaneseEntry.getAttributeList().addAttributeValue(AttributeType.UNIQUE_KEY, uniqueKanjiKanaKey);
 		}		
