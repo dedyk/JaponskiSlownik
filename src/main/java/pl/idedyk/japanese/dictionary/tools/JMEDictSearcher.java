@@ -67,7 +67,7 @@ public class JMEDictSearcher {
 					continue;
 				}
 				
-				Entry entry = dictionary2Helper.getEntryFromPolishDictionary(groupNo);
+				Entry entry = dictionary2Helper.getJMdictEntry(groupNo);
 								
 				if (entry == null) {
 					System.out.println("Brak grupy o podanym identyfikatorze");
