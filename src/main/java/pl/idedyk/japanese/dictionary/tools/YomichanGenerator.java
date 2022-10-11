@@ -134,6 +134,7 @@ public class YomichanGenerator {
 		service(new DefinitionTag("usłu", 31, "usługa")),
 		group(new DefinitionTag("grup", 32, "grupa")),
 		document(new DefinitionTag("grup", 33, "dokument")),
+		shipName(new DefinitionTag("stat", 34, "nazwa statku")),
 		
 		// kanjiAlone(new DefinitionTag("kanj-sam", 12, "kanji występujący zwykle samodzielnie")),
 		kanaAlone(new DefinitionTag("kana-sam", 12, "kana występująca zwykle samodzielnie")),
@@ -143,7 +144,9 @@ public class YomichanGenerator {
 		kanjiOkuriganaUsage(new DefinitionTag("kanj-okuri-uzy", 13, "użycie okurigana kanji")),
 		kanjiOutDatedUsage(new DefinitionTag("kanj-przes-uzy", 13, "przestarzałe użycie kanji")),
 		kanaOutDatedUsage(new DefinitionTag("kana-przes-uzy", 13, "przestarzałe użycie kana")),
-		kanjiRarelyUsage(new DefinitionTag("kanj-rzad-uzy", 13, "kanji rzadko używane")),		
+		kanaSearchOnly(new DefinitionTag("kana-tylk-szuk", 13, "kana używane tylko do szukania")),
+		kanjiRarelyUsage(new DefinitionTag("kanj-rzad-uzy", 13, "kanji rzadko używane")),
+		kanjiSearchOnly(new DefinitionTag("kanj-tylk-szuk", 13, "kanji używane tylko do szukania")),
 		ateji(new DefinitionTag("ate", 13, "ateji")),
 		kanaGikunMeaningJikujikunSpecialKanjiReading(new DefinitionTag("kana-gik-jiku", 13, "gikun (znaczenie jako czytanie) lub jukujikun (specjalne czytanie kanji)")),
 		
@@ -261,6 +264,7 @@ public class YomichanGenerator {
 			put(DictionaryEntryType.WORD_SERVICE, DefinitionTagCommonDef.service);			
 			put(DictionaryEntryType.WORD_GROUP, DefinitionTagCommonDef.group);
 			put(DictionaryEntryType.WORD_DOCUMENT, DefinitionTagCommonDef.document);
+			put(DictionaryEntryType.WORD_SHIP_NAME, DefinitionTagCommonDef.shipName);
 			
 			put(DictionaryEntryType.WORD_EMPTY, DefinitionTagCommonDef.empty);
 			put(DictionaryEntryType.UNKNOWN, DefinitionTagCommonDef.unknown);			
@@ -573,10 +577,31 @@ public class YomichanGenerator {
 						int fixme = 1; // !!!!!!!!!!!1
 						
 						List<String> kanjiAdditionalInfoPolishList = Dictionary2Helper.translateToPolishKanjiAdditionalInfoEnum(kanjiInfo.getKanjiAdditionalInfoList());
-						List<RelativePriorityEnum> relativePriorityList = kanjiInfo.getRelativePriorityList();
 						
-						
+						for (String currentKanjiAdditionalInfoPolish : kanjiAdditionalInfoPolishList) {
+							termBankEntry.addTranslate("[Kanji info]: " + currentKanjiAdditionalInfoPolish);
+						}
 					}
+					
+					// informacje z czytania
+					{
+						termBankEntry.addTranslate("[Romaji]: " + readingInfo.getKana().getRomaji());
+												
+						List<String> readingAdditionalInfoPolishList = Dictionary2Helper.translateToPolishReadingAdditionalInfoEnum(readingInfo.getReadingAdditionalInfoList());
+						
+						for (String currentReadingAdditionalInfoPolish : readingAdditionalInfoPolishList) {
+							termBankEntry.addTranslate("[Czytanie info]: " + currentReadingAdditionalInfoPolish);
+						}
+					}
+										
+					
+					int fixme2 = 1;
+					;					
+					
+					
+					// wyciagania informacji z sensu
+					int fixme3 = 1;
+					//currentSense.get
 				}
 				
 			}
@@ -722,7 +747,12 @@ public class YomichanGenerator {
 					termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiRarelyUsage.getDefinitionTag().getTag());
 					
 					break;
-									
+					
+				case SEARCH_ONLY_KANJI_FORM:
+					termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanjiSearchOnly.getDefinitionTag().getTag());
+					
+					break;
+					
 				default:
 					throw new RuntimeException("Unknown kanji additional info enum: " + kanjiAdditionalInfoEnum);
 				
@@ -749,6 +779,11 @@ public class YomichanGenerator {
 
 			case OUT_DATED_OR_OBSOLETE_KANA_USAGE:
 				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaOutDatedUsage.getDefinitionTag().getTag());
+				
+				break;
+				
+			case SEARCH_ONLY_KANA_FORM:
+				termBankEntry.addDefinitionTag(DefinitionTagCommonDef.kanaSearchOnly.getDefinitionTag().getTag());
 				
 				break;
 				
