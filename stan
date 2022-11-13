@@ -1,12 +1,12 @@
 * kanji - 0
 ----------
 update - x
-word - 20
+word - 60
 ---------
-150000 - 20
-small - 10
-small2 - 10
-ludzie - 20
-uzupełniacz - 20
+150000 - x
+small - 0
+small2 - 0
+ludzie - x
+uzupełniacz - x
 -----------
-suma: 80
+suma: 60
