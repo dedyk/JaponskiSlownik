@@ -3,7 +3,7 @@
 + update - x
 word - 60
 ---------
-150000 - x
++ 150000 - x
 small - 0
 small2 - 0
 ludzie - x
