@@ -4,7 +4,7 @@
 + 150000 - 20
 ---------
 + word - 60
-ludzie - x
++ ludzie - x
 ---------
 * small - 0
 * small2 - 0
