@@ -1,6 +1,6 @@
 * kanji - 0
 ----------
-update - x
++ update - x
 150000 - 20
 ---------
 word - 60
