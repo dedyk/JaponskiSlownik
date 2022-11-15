@@ -3,7 +3,7 @@
 + update - x
 + 150000 - 20
 ---------
-word - 60
++ word - 60
 ludzie - x
 ---------
 * small - 0
