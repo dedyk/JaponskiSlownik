@@ -1,7 +1,7 @@
 * kanji - 0
 ----------
-+ update - x
-+ word - 60
+update - x
+word - 60
 ---------
 150000 - 20
 ludzie - x
