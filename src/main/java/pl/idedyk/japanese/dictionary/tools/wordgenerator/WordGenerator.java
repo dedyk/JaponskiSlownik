@@ -1442,7 +1442,8 @@ public class WordGenerator {
 						groupIdsAlreadyAddCount.put(groupId, groupIdCount);
 					}
 				}
-								
+				
+				Map<Integer, CommonWord> missingInDictionary2FormatCommonMap = new TreeMap<>();
 				Map<Integer, CommonWord> missingPartialCommonMap = new TreeMap<>();
 				Map<Integer, CommonWord> missingFullCommonMap = new TreeMap<>();
 				Map<Integer, CommonWord> missingOverfullCommonMap = new TreeMap<>();
@@ -1504,19 +1505,35 @@ public class WordGenerator {
 								counter++;
 							}
 						}
-
 					}
 					
+					// sprawdzenie, czy slowo wystepuje jeszcze w formacie dictionary 2
+					Entry entryFromPolishDictionary = dictionary2Helper.getEntryFromPolishDictionary(entryId);
+					
+					if (entryFromPolishDictionary == null) { // nie ma w moim slowniku
+						
+						int counter = 0;
+						
+						for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+							
+							int csvId = (entryId * 100) + counter;
+							
+							CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, kanjiKanaPair);
+							
+							missingInDictionary2FormatCommonMap.put(commonWord.getId(), commonWord);
+							
+							counter++;
+						}
+					}					
 				}
 				
 				//System.out.println(groupIdsAlreadyAddCount);
 				
 				// zapis do pliku
 				CsvReaderWriter.writeCommonWordFile(missingPartialCommonMap, "input/all_missing_word_from_group_id_partial.csv");
-
 				CsvReaderWriter.writeCommonWordFile(missingFullCommonMap, "input/all_missing_word_from_group_id_full.csv");
-				
 				CsvReaderWriter.writeCommonWordFile(missingOverfullCommonMap, "input/all_missing_word_from_group_id_overfull.csv");
+				CsvReaderWriter.writeCommonWordFile(missingInDictionary2FormatCommonMap, "input/all_missing_word_from_group_id_in_dictionary2_format.csv");
 				
 				break;
 			}
