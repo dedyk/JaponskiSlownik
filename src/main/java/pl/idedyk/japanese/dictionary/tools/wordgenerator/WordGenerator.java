@@ -2640,6 +2640,7 @@ public class WordGenerator {
 				Boolean onlyAlreadyIgnoredButExistsInJmedict = false;
 				Boolean randomWords = false;
 				Boolean force = false;
+				Boolean forceOnlyInOldFormat = false;
 				
 				boolean setWords = false;
 				
@@ -2660,6 +2661,7 @@ public class WordGenerator {
 				options.addOption("wid", "word-ids", true, "Word ids");
 				options.addOption("gid", "group-ids", true, "Group ids");
 				options.addOption("f", "force", false, "Force");
+				options.addOption("foiof", "force-only-in-old-format", false, "Force only in old format");
 				
 				options.addOption("h", "help", false, "Help");
 				
@@ -2782,7 +2784,10 @@ public class WordGenerator {
 					if (commandLine.hasOption("force") == true) {
 						force = true;
 					}
-					
+
+					if (commandLine.hasOption("force-only-in-old-format") == true) {
+						forceOnlyInOldFormat = true;
+					}
 	
 					if (findWordsSize == null) {
 						System.err.println("No size of find words");
@@ -2967,7 +2972,10 @@ public class WordGenerator {
 										dictionary2Helper.fillJmedictRawDataInOldFormat(entryListForPolishJapaneseEntry.get(0), kanjiKanaPair, newJmedictRawDataList);
 										
 										if (jmedictRawDataList.equals(newJmedictRawDataList) == false && findPolishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.DICTIONARY2_SOURCE) == false) { // jest roznica i to slowo nie ma swojego zrodla w nowym slowniku
-											isDifferent = true;												
+											isDifferent = true;
+											
+										} else if (forceOnlyInOldFormat == true && findPolishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.DICTIONARY2_SOURCE) == false) {
+											isDifferent = true;
 										}
 									}									
 								}
