@@ -618,6 +618,70 @@ public class YomichanGenerator {
 							termBankEntry.addTranslate("[Czytanie info]: " + currentReadingAdditionalInfoPolish);
 						}
 					}
+					
+					// zrodlo z ktorego pochodzi to slowo
+					{
+						List<LanguageSource> senseLanguageSourceList = currentSense.getLanguageSourceList();
+						
+						for (LanguageSource languageSource : senseLanguageSourceList) {
+							
+							String languageCodeInPolish = Dictionary2HelperCommon.translateToPolishLanguageCode(languageSource.getLang());
+							String languageValue = languageSource.getValue();
+							String languageLsWasei = Dictionary2HelperCommon.translateToPolishLanguageSourceLsWaseiEnum(languageSource.getLsWasei());
+							
+							if (languageValue != null && languageValue.trim().equals("") == false) {
+								termBankEntry.addTranslate("[Pochodzenie słowa]: " + languageCodeInPolish + ": " + languageValue);
+								
+							} else {
+								termBankEntry.addTranslate("[Pochodzenie słowa]: " +Dictionary2HelperCommon.translateToPolishLanguageCodeWithoutValue(languageSource.getLang()));
+							}
+							
+							if (languageLsWasei != null) {
+								termBankEntry.addTranslate("[Pochodzenie słowa]: " +languageLsWasei);
+							}
+						}
+					}
+					
+					// dialekt
+					{
+						
+						List<String> dialectPolishInfo = Dictionary2Helper.translateToPolishDialectEnumList(currentSense.getDialectList());
+						
+						for (String currentDialectPolish : dialectPolishInfo) {
+							termBankEntry.addTranslate("[Dialekt]: " + currentDialectPolish);
+						}
+					}
+					
+					// dziedzina
+					{
+						List<String> fieldListPolishList = Dictionary2Helper.translateToPolishFieldEnumList(currentSense.getFieldList());
+						
+						for (String currentFieldEnumPolish : fieldListPolishList) {
+							termBankEntry.addTranslate("[Dziedzina]: " + currentFieldEnumPolish);
+						}
+					}
+					
+					// misc
+					{
+						List<String> miscPolishList = Dictionary2Helper.translateToPolishMiscEnumList(currentSense.getMiscList());
+						
+						for (String currentMiscEnumPolish : miscPolishList) {
+							termBankEntry.addTranslate("[Różności]: " + currentMiscEnumPolish);
+						}
+					}
+					
+					// odnosnik do innego slowa
+					for (String currentReferenceToAnotherKanjiKana : currentSense.getReferenceToAnotherKanjiKanaList()) {
+						termBankEntry.addTranslate("[Powiązane słowo]: " + currentReferenceToAnotherKanjiKana);
+					}
+					
+					// przeciwienstwo
+					for (String currentAntonym : currentSense.getAntonymList()) {
+						termBankEntry.addTranslate("[Przeciwieństwo]: " + currentAntonym);
+					}
+					
+					
+					
 										
 					
 					int fixme2 = 1;
@@ -631,29 +695,29 @@ public class YomichanGenerator {
 				    -- @XmlSchemaType(name = "string")
 				    -- protected List<PartOfSpeechEnum> partOfSpeechList;
 
-				    @XmlElement(name = "xref")
-				    protected List<String> referenceToAnotherKanjiKanaList;
+				    ++ @XmlElement(name = "xref")
+				    ++ protected List<String> referenceToAnotherKanjiKanaList;
 				    
-				    @XmlElement(name = "ant")
-				    protected List<String> antonymList;
+				    ++ @XmlElement(name = "ant")
+				    + protected List<String> antonymList;
 				    
-				    @XmlElement(name = "field")
-				    @XmlSchemaType(name = "string")
-				    protected List<FieldEnum> fieldList;
+				    ++ @XmlElement(name = "field")
+				    ++ @XmlSchemaType(name = "string")
+				    ++ protected List<FieldEnum> fieldList;
 				    
-				    @XmlElement(name = "misc")
-				    @XmlSchemaType(name = "string")
-				    protected List<MiscEnum> miscList;
+				    ++ @XmlElement(name = "misc")
+				    ++ @XmlSchemaType(name = "string")
+				    ++ protected List<MiscEnum> miscList;
 				    
 				    ++ @XmlElement(name = "s_inf")
 				    ++ protected List<SenseAdditionalInfo> additionalInfoList;
 				    
-				    @XmlElement(name = "lsource")
-				    protected List<LanguageSource> languageSourceList;
+				    ++ @XmlElement(name = "lsource")
+				    + protected List<LanguageSource> languageSourceList;
 				    
-				    @XmlElement(name = "dial")
-				    @XmlSchemaType(name = "string")
-				    protected List<DialectEnum> dialectList;
+				   	++ @XmlElement(name = "dial")
+				    ++ @XmlSchemaType(name = "string")
+				    ++ protected List<DialectEnum> dialectList;
 				    
 				    ++ @XmlElement(name = "gloss")
 				    ++ protected List<Gloss> glossList;
