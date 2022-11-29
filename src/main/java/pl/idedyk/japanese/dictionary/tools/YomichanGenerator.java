@@ -11,6 +11,10 @@ import java.util.List;
 import java.util.Map;
 
 import java.util.TreeMap;
+import java.util.stream.Collectors;
+
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -26,14 +30,20 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 
 public class YomichanGenerator {
 	
@@ -486,7 +496,7 @@ public class YomichanGenerator {
 				}
 				
 				if (polishJapaneseEntry.getInfo() != null && polishJapaneseEntry.getInfo().length() > 0) {
-					termBankEntry.addTranslate("Informacja dodatkowa: " + polishJapaneseEntry.getInfo());
+					termBankEntry.addTranslate("[Informacja dodatkowa]: " + polishJapaneseEntry.getInfo());
 				}
 				
 				// !!!!!!!!!!!!!!!!!!
@@ -568,6 +578,21 @@ public class YomichanGenerator {
 					
 					// generowanie popularity
 					generatePopularity(kanjiInfo, readingInfo, termBankEntry);
+					
+					// generowanie znaczen i innych dodatkowych informacji
+					
+					// pobranie polskiego tlumaczenia i informacji dodatkowych
+					List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+					List<SenseAdditionalInfo> additionalInfoPolList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+					
+					for (Gloss currentGlossPol : glossPolList) {						
+						termBankEntry.addTranslate(currentGlossPol.getValue() + 
+								(currentGlossPol.getGType() != null ? Dictionary2HelperCommon.translateToPolishGlossType(currentGlossPol.getGType()) : ""));						
+					}
+					
+					for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoPolList) {
+						termBankEntry.addTranslate("[Informacja dodatkowa]: " + senseAdditionalInfo.getValue());
+					}
 
 					
 					////////// !!!!!!!!!!!!!!!!!!!!
@@ -597,6 +622,42 @@ public class YomichanGenerator {
 					
 					int fixme2 = 1;
 					;					
+					
+					
+					
+					
+					/*
+				    -- @XmlElement(name = "pos")
+				    -- @XmlSchemaType(name = "string")
+				    -- protected List<PartOfSpeechEnum> partOfSpeechList;
+
+				    @XmlElement(name = "xref")
+				    protected List<String> referenceToAnotherKanjiKanaList;
+				    
+				    @XmlElement(name = "ant")
+				    protected List<String> antonymList;
+				    
+				    @XmlElement(name = "field")
+				    @XmlSchemaType(name = "string")
+				    protected List<FieldEnum> fieldList;
+				    
+				    @XmlElement(name = "misc")
+				    @XmlSchemaType(name = "string")
+				    protected List<MiscEnum> miscList;
+				    
+				    ++ @XmlElement(name = "s_inf")
+				    ++ protected List<SenseAdditionalInfo> additionalInfoList;
+				    
+				    @XmlElement(name = "lsource")
+				    protected List<LanguageSource> languageSourceList;
+				    
+				    @XmlElement(name = "dial")
+				    @XmlSchemaType(name = "string")
+				    protected List<DialectEnum> dialectList;
+				    
+				    ++ @XmlElement(name = "gloss")
+				    ++ protected List<Gloss> glossList;
+				    */
 					
 					
 					// wyciagania informacji z sensu
