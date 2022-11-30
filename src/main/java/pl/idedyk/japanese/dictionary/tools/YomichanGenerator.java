@@ -13,9 +13,6 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -30,14 +27,11 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
@@ -331,8 +325,7 @@ public class YomichanGenerator {
 				
 		JSONObject indexJSON = new JSONObject();
 
-		int fixme = 1; // test !!!!!!!!!!!
-		indexJSON.put("title", "Mały skromny japoński słownik - test");
+		indexJSON.put("title", "Mały skromny japoński słownik");
 		indexJSON.put("format", 3);
 				
 		indexJSON.put("revision", new SimpleDateFormat("yyyyMMdd").format(new Date()));
@@ -500,11 +493,7 @@ public class YomichanGenerator {
 				}
 				
 				termBankEntry.addTranslate("[Romaji]: " + polishJapaneseEntry.getRomaji());
-				
-				// !!!!!!!!!!!!!!!!!!
-				int fixme = 1;
-				termBankEntryList.clear();
-				
+								
 			} else if (jmdictEntry != null) { // nowy sposob generowania
 				
 				termBankEntryList = new ArrayList<>();
@@ -600,9 +589,7 @@ public class YomichanGenerator {
 					////////// !!!!!!!!!!!!!!!!!!!!
 					
 					// informacje dodatkowe do kanji
-					if (kanjiInfo != null) {
-						int fixme = 1; // !!!!!!!!!!!1
-						
+					if (kanjiInfo != null) {						
 						List<String> kanjiAdditionalInfoPolishList = Dictionary2Helper.translateToPolishKanjiAdditionalInfoEnum(kanjiInfo.getKanjiAdditionalInfoList());
 						
 						for (String currentKanjiAdditionalInfoPolish : kanjiAdditionalInfoPolishList) {
@@ -681,54 +668,6 @@ public class YomichanGenerator {
 					for (String currentAntonym : currentSense.getAntonymList()) {
 						termBankEntry.addTranslate("[Przeciwieństwo]: " + currentAntonym);
 					}
-					
-					
-					
-										
-					
-					int fixme2 = 1;
-					;					
-					
-					
-					
-					
-					/*
-				    -- @XmlElement(name = "pos")
-				    -- @XmlSchemaType(name = "string")
-				    -- protected List<PartOfSpeechEnum> partOfSpeechList;
-
-				    ++ @XmlElement(name = "xref")
-				    ++ protected List<String> referenceToAnotherKanjiKanaList;
-				    
-				    ++ @XmlElement(name = "ant")
-				    + protected List<String> antonymList;
-				    
-				    ++ @XmlElement(name = "field")
-				    ++ @XmlSchemaType(name = "string")
-				    ++ protected List<FieldEnum> fieldList;
-				    
-				    ++ @XmlElement(name = "misc")
-				    ++ @XmlSchemaType(name = "string")
-				    ++ protected List<MiscEnum> miscList;
-				    
-				    ++ @XmlElement(name = "s_inf")
-				    ++ protected List<SenseAdditionalInfo> additionalInfoList;
-				    
-				    ++ @XmlElement(name = "lsource")
-				    + protected List<LanguageSource> languageSourceList;
-				    
-				   	++ @XmlElement(name = "dial")
-				    ++ @XmlSchemaType(name = "string")
-				    ++ protected List<DialectEnum> dialectList;
-				    
-				    ++ @XmlElement(name = "gloss")
-				    ++ protected List<Gloss> glossList;
-				    */
-					
-					
-					// wyciagania informacji z sensu
-					int fixme3 = 1;
-					//currentSense.get
 				}
 				
 			}
@@ -1248,10 +1187,7 @@ public class YomichanGenerator {
 	}
 
 	private static void generateAndSaveTagBank(String outputDir) {
-		
-		int fixme = 1;
-		// wpisanie opisow !!!!!!!!!!!
-				
+						
 		JSONArray tagBankJSONArray = new JSONArray();
 				
 		// generowanie tag'ow z DefinitionTagCommonDef		
