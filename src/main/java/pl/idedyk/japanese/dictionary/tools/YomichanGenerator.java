@@ -499,6 +499,8 @@ public class YomichanGenerator {
 					termBankEntry.addTranslate("[Informacja dodatkowa]: " + polishJapaneseEntry.getInfo());
 				}
 				
+				termBankEntry.addTranslate("[Romaji]: " + polishJapaneseEntry.getRomaji());
+				
 				// !!!!!!!!!!!!!!!!!!
 				int fixme = 1;
 				termBankEntryList.clear();
