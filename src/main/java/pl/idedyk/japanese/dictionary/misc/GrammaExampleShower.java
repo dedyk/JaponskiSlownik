@@ -60,6 +60,13 @@ public class GrammaExampleShower {
 			return;
 		}
 		
+		// mala poprawka kanji
+		String kanji = polishJapaneseEntryOptional.get().getKanji();
+		
+		if (kanji.equals("-") == true) {
+			polishJapaneseEntryOptional.get().setKanji(null);
+		}
+		
 		// pomocnicy do wyliczania
 		KeigoHelper keigoHelper = new KeigoHelper();
 		
