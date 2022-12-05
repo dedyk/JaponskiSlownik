@@ -6,7 +6,7 @@ word - 55
 150000 - 20
 ludzie - x
 ---------
-small - 5
++ small - 5
 * small2 - 0
 ---------
 * uzupełniacz - x
