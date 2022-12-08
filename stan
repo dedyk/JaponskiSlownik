@@ -2,11 +2,11 @@
 ----------
 update - x
 word - 55
+small - 5
 ---------
 150000 - 20
 ludzie - x
 ---------
-small - 5
 * small2 - 0
 ---------
 * uzupełniacz - x
