@@ -2647,6 +2647,9 @@ public class WordGenerator {
 				Set<Integer> wordsIdsSet = null;
 				Set<Integer> groupsIdsSet = null;
 				
+				Integer minJmdictSenseListSize = null;
+				Integer maxJmdictSenseListSize = null;
+				
 				//
 				
 				Options options = new Options();
@@ -2662,6 +2665,8 @@ public class WordGenerator {
 				options.addOption("gid", "group-ids", true, "Group ids");
 				options.addOption("f", "force", false, "Force");
 				options.addOption("foiof", "force-only-in-old-format", false, "Force only in old format");
+				options.addOption("minjmdsls", "min-jmdict-sense-list-size", true, "Min jmdict sense list size");
+				options.addOption("maxjmdsls", "max-jmdict-sense-list-size", true, "Max jmdict sense list size");
 				
 				options.addOption("h", "help", false, "Help");
 				
@@ -2788,6 +2793,14 @@ public class WordGenerator {
 					if (commandLine.hasOption("force-only-in-old-format") == true) {
 						forceOnlyInOldFormat = true;
 					}
+										
+					if (commandLine.hasOption("min-jmdict-sense-list-size") == true) {
+						minJmdictSenseListSize = Integer.parseInt(commandLine.getOptionValue("min-jmdict-sense-list-size"));
+					}
+
+					if (commandLine.hasOption("max-jmdict-sense-list-size") == true) {
+						maxJmdictSenseListSize = Integer.parseInt(commandLine.getOptionValue("max-jmdict-sense-list-size"));
+					}
 	
 					if (findWordsSize == null) {
 						System.err.println("No size of find words");
@@ -2911,6 +2924,14 @@ public class WordGenerator {
 								}
 								*/
 								
+								if (minJmdictSenseListSize != null && entryListForPolishJapaneseEntry.get(0).getSenseList().size() < minJmdictSenseListSize) {
+									continue;
+								}
+
+								if (maxJmdictSenseListSize != null && entryListForPolishJapaneseEntry.get(0).getSenseList().size() > maxJmdictSenseListSize) {
+									continue;
+								}
+
 								List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entryListForPolishJapaneseEntry.get(0));
 								
 								List<List<KanjiKanaPair>> groupByTheSameTranslateList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
