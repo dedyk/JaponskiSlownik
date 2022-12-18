@@ -2,7 +2,7 @@
 ----------
 + update - x
 word - 55
-small - 5
++ small - 5
 ---------
 150000 - 20
 ludzie - x
