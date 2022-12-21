@@ -1,8 +1,8 @@
 * kanji - 0
 ----------
 + update - x
-word - 55
-small - 5
+word - 50
++ small - 10
 ---------
 150000 - 20
 ludzie - x
