@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.List;
 
+import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
@@ -94,7 +95,28 @@ public class JMEDictSearcher {
 					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
 					
 					for (int idx = 0; idx < kanjiKanaPairList.size(); ++idx) {
-						printKanjiKanaPair(entry, kanjiKanaPairList.get(idx), idx + 1);
+						
+						KanjiKanaPair kanjiKanaPair = kanjiKanaPairList.get(idx);
+
+						// dodatkowe filtrowanie, ale tylko, gdy wyszukiwane jest japonskie slowo
+						boolean showKanjiKanaPair = true;
+						
+						if (Utils.isAllJapaneseChars(searchWord) == true) {
+							
+							showKanjiKanaPair = false;
+							
+							if (kanjiKanaPair.getKanji() != null && kanjiKanaPair.getKanji().equals(searchWord) == true) {
+								showKanjiKanaPair = true;
+								
+							} else if (kanjiKanaPair.getKana().equals(searchWord) == true) {
+								showKanjiKanaPair = true;
+								
+							}
+						}
+						
+						if (showKanjiKanaPair == true) {
+							printKanjiKanaPair(entry, kanjiKanaPair, idx + 1);
+						}
 					}
 				}
 			}
