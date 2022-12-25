@@ -2660,7 +2660,7 @@ public class WordGenerator {
 				options.addOption("idfrd", "ignore-dictionary-filled-raw-data", false, "Ignore dictionary filled raw data");
 				options.addOption("ontij", "only-not-found-in-jmedict", false, "Only not found in jmedict");
 				options.addOption("oaibeij", "only-already-ignored-but-exists-in-jmedict", false, "Only already ignored but exists in jmedict");
-				options.addOption("set", "set-words", false, "Set words");
+				options.addOption("set", "set-words", true, "Set words");
 				options.addOption("wid", "word-ids", true, "Word ids");
 				options.addOption("gid", "group-ids", true, "Group ids");
 				options.addOption("f", "force", false, "Force");
@@ -2702,12 +2702,10 @@ public class WordGenerator {
 				}
 								
 				//
-				
-				final String findWordsWithJmedictChangeFilename = "input/find-words-with-jmedict-change.csv";
-				
-				//
-				
+								
 				if (setWords == false) {
+					
+					final String findWordsWithJmedictChangeFilename = "input/find-words-with-jmedict-change.csv";
 					
 					if (new File(findWordsWithJmedictChangeFilename).exists() == true) {
 						
@@ -3259,6 +3257,8 @@ public class WordGenerator {
 					}					
 					
 				} else { // ustawienie slow
+					
+					final String findWordsWithJmedictChangeFilename = commandLine.getOptionValue("set");
 					
 					// lista wszystkich slow
 					List<PolishJapaneseEntry> polishJapaneseEntriesList = wordGeneratorHelper.getPolishJapaneseEntriesList();
