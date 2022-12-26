@@ -81,7 +81,13 @@ public class GrammaExampleShower {
 		for (GrammaFormConjugateGroupTypeElements currentGrammaForm : grammaConjufateResult) {
 			
 			// tytul formy
-			System.out.println(currentGrammaForm.getGrammaFormConjugateGroupType().getName() + " (" + currentGrammaForm.getGrammaFormConjugateGroupType().name() + "), pokazać: " + currentGrammaForm.getGrammaFormConjugateGroupType().isShow() + "\n");
+			System.out.println(currentGrammaForm.getGrammaFormConjugateGroupType().getName() + " (" + currentGrammaForm.getGrammaFormConjugateGroupType().name() + "), pokazać: " + currentGrammaForm.getGrammaFormConjugateGroupType().isShow());
+			
+			// info
+			if (StringUtils.isBlank(currentGrammaForm.getGrammaFormConjugateGroupType().getInfo()) == false) {
+				System.out.println(currentGrammaForm.getGrammaFormConjugateGroupType().getInfo());
+			}
+			System.out.println();
 			
 			// dalszy podzial
 			List<GrammaFormConjugateResult> grammaFormConjugateResults = currentGrammaForm.getGrammaFormConjugateResults();
@@ -139,6 +145,11 @@ public class GrammaExampleShower {
 		// tytul
 		if (showTitle == true) {
 			System.out.println(levelPrefix + currentGrammaFormSingleResult.getResultType().getName() + " (" + currentGrammaFormSingleResult.getResultType().name() + "), pokazać: " + currentGrammaFormSingleResult.getResultType().isShow());
+			
+			// info do tytulu
+			if (StringUtils.isBlank(currentGrammaFormSingleResult.getResultType().getInfo()) == false) {
+				System.out.println(levelPrefix + currentGrammaFormSingleResult.getResultType().getInfo());
+			}
 		}
 		
 		// kanji
@@ -152,6 +163,11 @@ public class GrammaExampleShower {
 		// romaji
 		for (String currentRomaji : currentGrammaFormSingleResult.getRomajiList()) {
 			System.out.println(levelPrefix2 + (StringUtils.isBlank(currentGrammaFormSingleResult.getPrefixRomaji()) == false ? (" " + currentGrammaFormSingleResult.getPrefixRomaji()) : "") + currentRomaji);
+		}
+		
+		// info do elementu
+		if (StringUtils.isBlank(currentGrammaFormSingleResult.getInfo()) == false) {
+			System.out.println(levelPrefix2 + currentGrammaFormSingleResult.getInfo());
 		}
 		
 		System.out.println();
