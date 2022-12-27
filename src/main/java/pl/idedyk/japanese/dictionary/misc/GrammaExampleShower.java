@@ -193,7 +193,7 @@ public class GrammaExampleShower {
 		if (showInfo == true) {			
 			// info
 			if (StringUtils.isBlank(currentExampleSingleResult.getInfo()) == false) {
-				System.out.println(currentExampleSingleResult.getInfo());
+				System.out.println(levelPrefix2 + currentExampleSingleResult.getInfo());
 			}
 		}
 		
