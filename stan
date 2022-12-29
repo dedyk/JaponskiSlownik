@@ -1,7 +1,7 @@
 * kanji - 0
 ----------
 + update - x
-small - 10
++ small - 10
 word - 50
 ---------
 + 150000 - 20
