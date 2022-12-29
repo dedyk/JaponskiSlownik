@@ -124,7 +124,7 @@ public class GrammaExampleShower {
 			for (ExampleResult currentExampleSingleResult : exampleResults) {
 				
 				// wypisanie pojedynczego wpisu
-				showExampleSingleResult(currentExampleSingleResult, true, 1);
+				showExampleSingleResult(currentExampleSingleResult, 1);
 			}
 			
 			System.out.println("-------------\n");
@@ -178,7 +178,7 @@ public class GrammaExampleShower {
 		}		
 	}
 
-	private static void showExampleSingleResult(ExampleResult currentExampleSingleResult, boolean showInfo, int level) {
+	private static void showExampleSingleResult(ExampleResult currentExampleSingleResult, int level) {
 		
 		// wygenerowanie odstepu z poziomem
 		String levelPrefix = "";
@@ -190,11 +190,8 @@ public class GrammaExampleShower {
 		levelPrefix2 = levelPrefix + "\t";
 		
 		// info
-		if (showInfo == true) {			
-			// info
-			if (StringUtils.isBlank(currentExampleSingleResult.getInfo()) == false) {
-				System.out.println(levelPrefix2 + currentExampleSingleResult.getInfo());
-			}
+		if (StringUtils.isBlank(currentExampleSingleResult.getInfo()) == false) {
+			System.out.println(levelPrefix2 + currentExampleSingleResult.getInfo());
 		}
 		
 		// kanji
@@ -214,7 +211,7 @@ public class GrammaExampleShower {
 		
 		// alternatywa
 		if (currentExampleSingleResult.getAlternative() != null) {
-			showExampleSingleResult(currentExampleSingleResult.getAlternative(), false, level);
+			showExampleSingleResult(currentExampleSingleResult.getAlternative(), level);
 		}		
 	}
 }
