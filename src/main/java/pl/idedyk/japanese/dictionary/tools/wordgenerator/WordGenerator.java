@@ -952,7 +952,13 @@ public class WordGenerator {
 					
 					if (kanjiKanaPairForPolishJapaneseEntry != null) {
 						
-						Entry entry = dictionary2Helper.getJMdictEntry(polishJapaneseEntry.getGroupIdFromJmedictRawDataList());
+						Integer groupIdFromJmedictRawDataList = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+						
+						if (groupIdFromJmedictRawDataList == null) {
+							System.out.println("!!! Please manually add entry id: " + kanjiKanaPairForPolishJapaneseEntry.getEntry().getEntryId());
+						}
+						
+						Entry entry = kanjiKanaPairForPolishJapaneseEntry.getEntry();
 						
 						List<KanjiKanaPair> kanjiKanaPairListGroupByTheSameTranslateListForPolishJapanaeseEntry = dictionary2Helper.getAllKanjiKanaPairListWithTheSameTranslate(entry, kanjiKanaPairForPolishJapaneseEntry.getKanji(), kanjiKanaPairForPolishJapaneseEntry.getKana());
 																			
