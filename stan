@@ -1,10 +1,10 @@
 * kanji - 0
 ----------
-update - x
++ update - x
 small - 5
 word - 55
 ---------
-150000 - 20
++ 150000 - 20
 ludzie - x
 ---------
 * small2 - 0
