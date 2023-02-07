@@ -2,12 +2,13 @@
 ----------
 + update - x
 + small - 5
-+ word - 55
+* small2 - 15
++ word - 40
 ---------
 150000 - 20
 ludzie - x
 ---------
-* small2 - 0
+* small3 - 0
 ---------
 * uzupełniacz - x
 -----------
