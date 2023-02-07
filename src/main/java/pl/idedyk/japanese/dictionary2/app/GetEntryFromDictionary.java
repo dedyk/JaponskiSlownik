@@ -35,6 +35,7 @@ public class GetEntryFromDictionary {
 		options.addOption("f", "file-entry-ids", true, "File entry ids");
 		options.addOption("p", "polish-dictionary", false, "Use polish dictionary");
 		options.addOption("j", "jmdict-dictionary", false, "Use JMdict dictionary");
+		options.addOption("jp", "jmdict-polish-dictionary", false, "Use JMdict or polish dictionary");
 		//options.addOption("awwadeiod", "add-words-which-also-doesnt-exist-in-old-dictionary", false, "Add words which also doesn't exist in old dictionary");
 		options.addOption("h", "help", false, "Help");
 		
@@ -66,6 +67,7 @@ public class GetEntryFromDictionary {
 				
 		boolean usePolishDictionary = false;
 		boolean useJMdictDictionary = false;
+		boolean useJMdictPolishDictionary = false;
 		
 		Integer checkOnlyMaxIds = null;
 		
@@ -106,20 +108,28 @@ public class GetEntryFromDictionary {
 			System.exit(1);			
 		}
 		
+		int checkCounter = 0;
+		
 		if (commandLine.hasOption("polish-dictionary") == true) {
-			usePolishDictionary = true;			
+			usePolishDictionary = true;	
+			checkCounter++;
 		}
 		
 		if (commandLine.hasOption("jmdict-dictionary") == true) {
-			useJMdictDictionary = true;			
+			useJMdictDictionary = true;
+			checkCounter++;
 		}
-		
+
+		if (commandLine.hasOption("jmdict-polish-dictionary") == true) {
+			useJMdictPolishDictionary = true;
+			checkCounter++;
+		}
+
 		if (commandLine.hasOption("check-only-max-ids") == true) {			
 			checkOnlyMaxIds = new Integer(commandLine.getOptionValue("check-only-max-ids"));			
 		}
 		
-		if ((usePolishDictionary == false && useJMdictDictionary == false) || (usePolishDictionary == true && useJMdictDictionary == true)) {
-			
+		if (checkCounter != 1) {			
 			printHelp(options);
 			
 			System.exit(1);	
@@ -133,7 +143,7 @@ public class GetEntryFromDictionary {
 		
 		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
 		
-		if (useJMdictDictionary == true) {			
+		if (useJMdictDictionary == true || useJMdictPolishDictionary == true) {			
 			saveEntryListAsHumanCsvConfig.addOldPolishTranslates = true;
 			saveEntryListAsHumanCsvConfig.markRomaji = true;
 			saveEntryListAsHumanCsvConfig.shiftCells = true;
@@ -182,7 +192,6 @@ public class GetEntryFromDictionary {
 				Entry jmdictEntry = dictionaryHelper.getJMdictEntry(currentEntryId);
 				
 				if (jmdictEntry == null) { // nie znaleziono
-					
 					System.out.println("[Errpr] Can't find entry id in jmdict dictionary: " + currentEntryId);
 					
 					continue;										
@@ -190,8 +199,7 @@ public class GetEntryFromDictionary {
 				
 				Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(jmdictEntry.getEntryId());
 				
-				if (entryFromPolishDictionary != null) { // taki wpis juz jest w polskim slowniku
-					
+				if (entryFromPolishDictionary != null) { // taki wpis juz jest w polskim slowniku					
 					System.out.println("[Error] Entry already exists in polish dictionary: " + currentEntryId);
 					
 					continue;					
@@ -213,11 +221,39 @@ public class GetEntryFromDictionary {
 				// pobranie ze starego slownika interesujacych danych (np. romaji)
 				dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(jmdictEntry, entryAdditionalData);
 				
-				result.add(jmdictEntry);
-				
-				if (checkOnlyMaxIds != null && result.size() >= checkOnlyMaxIds) {
-					break;
-				}
+				result.add(jmdictEntry);				
+			}
+			
+			if (useJMdictPolishDictionary == true) { // szukamy w polskim slowniku lub jmdict
+				Entry entry = dictionaryHelper.getEntryFromPolishDictionary(currentEntryId); // szukamy w polskim slowniku
+
+				if (entry != null) {
+					result.add(entry);
+					
+					// zaznaczamy, ze ten wpis to polskie slowo, aby romaji nie zaznaczalo sie 
+					saveEntryListAsHumanCsvConfig.markAsPolishEntry(entry);
+					
+				} else { // szukamy w jmdict
+					entry = dictionaryHelper.getJMdictEntry(currentEntryId);
+					
+					if (entry == null) { // nie znaleziono
+						System.out.println("[Errpr] Can't find entry id in polish or jmdict dictionary: " + currentEntryId);
+						
+						continue;										
+					}
+														
+					// uzupelnienie o puste polskie tlumaczenie
+					dictionaryHelper.createEmptyPolishSense(entry);
+					
+					// pobranie ze starego slownika interesujacych danych (np. romaji)
+					dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry, entryAdditionalData);
+					
+					result.add(entry);				
+				}				
+			}
+			
+			if (checkOnlyMaxIds != null && result.size() >= checkOnlyMaxIds) {
+				break;
 			}
 		}
 		
