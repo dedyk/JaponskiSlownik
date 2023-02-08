@@ -6,8 +6,8 @@
 + small3 - 10
 + word - 45
 ---------
-150000 - 20
-ludzie - x
++ 150000 - 20
++ ludzie - x
 ---------
 ---------
 * uzupełniacz - x
