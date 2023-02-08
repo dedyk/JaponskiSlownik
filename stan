@@ -1,6 +1,6 @@
 * kanji - 0
 ----------
-update - x
++ update - x
 small - 5
 small2 - 15
 word - 40
