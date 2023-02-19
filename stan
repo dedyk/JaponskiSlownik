@@ -13,5 +13,3 @@ ludzie - x
 * uzupełniacz - x
 -----------
 suma: 80
-
-経師屋
