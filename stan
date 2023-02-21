@@ -4,7 +4,7 @@
 + small - 5
 + small2 - 10
 + small3 - 10
-word - 35 -> 23
++ word - 35 -> 23
 ---------
 150000 - 20
 ludzie - x
