@@ -13,7 +13,3 @@ ludzie - x
 * uzupełniacz - x
 -----------
 suma: 80
-
-2171910
-2416940
-jp
