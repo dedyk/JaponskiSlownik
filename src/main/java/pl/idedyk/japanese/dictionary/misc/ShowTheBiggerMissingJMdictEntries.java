@@ -11,7 +11,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class ShowTheBiggerMissingJMdictEntries {
 
-	private static final int MIN_SENSE_SIZE = 4;
+	private static final int MIN_SENSE_SIZE = 3;
 	
 	public static void main(String[] args) throws Exception {
 		
