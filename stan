@@ -2,9 +2,9 @@
 ----------
 + update - x
 + small - 10
-small2 - 10
-small3 - 10
-word - 30
++ small2 - 10
++ small3 - 10
++ word - 30
 ---------
 150000 - 20
 ludzie - x
