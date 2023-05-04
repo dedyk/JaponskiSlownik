@@ -736,6 +736,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}			
 		}	
 		
+		if (kanaType == null) {
+			kanaType = ReadingInfoKanaType.KATAKANA_HIRAGANA;
+		}
+		
 		return kanaType;
 	}
 	
