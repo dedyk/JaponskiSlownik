@@ -956,6 +956,7 @@ public class WordGenerator {
 						
 						if (groupIdFromJmedictRawDataList == null) {
 							System.out.println("!!! Please manually add entry id: " + kanjiKanaPairForPolishJapaneseEntry.getEntry().getEntryId());
+							System.out.println("!!! Possible unnecessary ignore: " + polishJapaneseEntry.getId());
 						}
 						
 						Entry entry = kanjiKanaPairForPolishJapaneseEntry.getEntry();
