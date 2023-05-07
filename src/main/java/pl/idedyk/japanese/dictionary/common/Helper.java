@@ -596,7 +596,7 @@ public class Helper {
 		return foundEdict;
 	}
 
-	public static List<PolishJapaneseEntry> generateNames(Dictionary2NameHelper dictionary2NameHelper) throws Exception {
+	public static List<PolishJapaneseEntry> generateNames(Dictionary2Helper dictionary2Helper, Dictionary2NameHelper dictionary2NameHelper) throws Exception {
 
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
 				
@@ -607,7 +607,13 @@ public class Helper {
 		
 		List<JMnedict.Entry> nameEntryList = dictionary2NameHelper.getJMnedict().getEntryList();
 		
-		for (JMnedict.Entry nameEntry : nameEntryList) {			
+		for (JMnedict.Entry nameEntry : nameEntryList) {
+			
+			// jezeli dane slowko ze slownika nazw jest juz w glownym slowniku, to takiego slowa nie dodajemy
+			if (dictionary2Helper.getEntryFromPolishDictionary(nameEntry.getEntryId()) != null) {
+				continue;
+			}
+			
 			result.addAll(dictionary2NameHelper.generatePolishJapanaeseEntries(nameEntry, result.size() + 1));			
 		}
 		

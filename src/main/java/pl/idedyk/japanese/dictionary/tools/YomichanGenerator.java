@@ -1430,7 +1430,7 @@ public class YomichanGenerator {
 
 		//
 		
-		List<PolishJapaneseEntry> namesList = Helper.generateNames(dictionary2NameHelper);
+		List<PolishJapaneseEntry> namesList = Helper.generateNames(dictionary2Helper, dictionary2NameHelper);
 		
 		generate(polishJapaneseEntriesList, namesList, "/tmp/a");		
 	}

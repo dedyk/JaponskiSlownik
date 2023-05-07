@@ -930,9 +930,10 @@ public class AndroidDictionaryGenerator {
 				
 		System.out.println("generateNamePolishJapaneseEntries");
 		
+		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
 		Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
 		
-		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(dictionary2NameHelper);
+		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(dictionary2Helper, dictionary2NameHelper);
 		
 		//
 		
