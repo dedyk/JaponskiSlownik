@@ -2644,27 +2644,27 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			// informacje dodatkowe
 						
 			// dziedzina
-			if (fieldCommonList.size() > 0) {
+			if (fieldCommonList != null && fieldCommonList.size() > 0) {
 				newPolishAdditionalInfoList.addAll(translateToPolishFieldEnumList(fieldCommonList));						
 			}
 			
 			// rozne informacje
-			if (miscCommonList.size() > 0) {
+			if (miscCommonList != null && miscCommonList.size() > 0) {
 				newPolishAdditionalInfoList.addAll(translateToPolishMiscEnumList(miscCommonList));
 			}
 			
 			// dialekt
-			if (dialectCommonList.size() > 0) {
+			if (dialectCommonList != null && dialectCommonList.size() > 0) {
 				newPolishAdditionalInfoList.addAll(translateToPolishDialectEnumList(dialectCommonList));
 			}
 			
 			// informacje dodatkowe dla znaczenia
-			if (additionalInfoCommonList.size() > 0) {
+			if (additionalInfoCommonList != null && additionalInfoCommonList.size() > 0) {
 				newPolishAdditionalInfoList.addAll(additionalInfoCommonList);
 			}
 			
 			// jezyk zrodlowy
-			if (languageSourceCommonList.size() > 0) {
+			if (languageSourceCommonList != null && languageSourceCommonList.size() > 0) {
 				newPolishAdditionalInfoList.addAll(languageSourceCommonList);
 			}
 			
