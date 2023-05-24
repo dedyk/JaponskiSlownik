@@ -7,7 +7,7 @@
 + word - 30
 ---------
 + 160000 - 20
-ludzie - x
++ ludzie - x
 ---------
 ---------
 * uzupełniacz - x
