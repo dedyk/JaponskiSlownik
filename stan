@@ -22,5 +22,5 @@ small2 - 10
 small3 - 10
 word - 30
 ---------
-160000 - 20
-ludzie - x
++ 160000 - 20
+* ludzie - x
