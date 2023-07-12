@@ -1,15 +1,37 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.List;
+
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+
 public class Test7 {
 
 	public static void main(String[] args) throws Exception {
 		
-		// Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
-
-		/*
-		JMdict jmdict = dictionaryHelper.getJMdict();
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
+		JMdict jmdict = dictionaryHelper.getJMdict();
+
 		List<Entry> entryList = jmdict.getEntryList();
+		
+		for (Entry entry : entryList) {
+			if (entry.getEntryId() >= 5000000) {
+				
+				Entry polishEntry = dictionaryHelper.getEntryFromPolishDictionary(entry.getEntryId());
+				
+				if (polishEntry != null) {
+					continue;
+				}
+				
+				System.out.println(entry.getEntryId());
+			}
+		}
+
+		
+		/*
+		
 		
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
 		
