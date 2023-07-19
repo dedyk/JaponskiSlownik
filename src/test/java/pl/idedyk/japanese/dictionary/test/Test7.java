@@ -2,8 +2,8 @@ package pl.idedyk.japanese.dictionary.test;
 
 import java.util.List;
 
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class Test7 {
@@ -11,21 +11,52 @@ public class Test7 {
 	public static void main(String[] args) throws Exception {
 		
 		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
-		
-		JMdict jmdict = dictionaryHelper.getJMdict();
 
-		List<Entry> entryList = jmdict.getEntryList();
+		// lista wszystkich 5..., ktorych nie ma
+		/*
+		{
+			JMdict jmdict = dictionaryHelper.getJMdict();
+
+			List<Entry> entryList = jmdict.getEntryList();
+			
+			for (Entry entry : entryList) {
+				if (entry.getEntryId() >= 5000000) {
+					
+					Entry polishEntry = dictionaryHelper.getEntryFromPolishDictionary(entry.getEntryId());
+					
+					if (polishEntry != null) {
+						continue;
+					}
+					
+					System.out.println(entry.getEntryId());
+				}
+			}
+		}
+		*/
 		
-		for (Entry entry : entryList) {
-			if (entry.getEntryId() >= 5000000) {
+		// lista wszystkich 5..., ktore maja to samo kanji i kana, co inne slowka
+		{
+			List<PolishJapaneseEntry> polishJapaneseEntryList = dictionaryHelper.getOldPolishJapaneseEntriesList();
+			
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+				List<Entry> entryList = dictionaryHelper.findEntryListByKanjiAndKana(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
 				
-				Entry polishEntry = dictionaryHelper.getEntryFromPolishDictionary(entry.getEntryId());
-				
-				if (polishEntry != null) {
+				if (entryList == null) {
 					continue;
 				}
 				
-				System.out.println(entry.getEntryId());
+				for (Entry entry : entryList) {
+					if (entry.getEntryId() >= 5000000) {
+						
+						Entry polishEntry = dictionaryHelper.getEntryFromPolishDictionary(entry.getEntryId());
+						
+						if (polishEntry != null) {
+							continue;
+						}
+						
+						System.out.println(entry.getEntryId());
+					}
+				}			
 			}
 		}
 
