@@ -39,7 +39,21 @@ public class Test7 {
 			List<PolishJapaneseEntry> polishJapaneseEntryList = dictionaryHelper.getOldPolishJapaneseEntriesList();
 			
 			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
-				List<Entry> entryList = dictionaryHelper.findEntryListByKanjiAndKana(polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());
+				
+				// pobieramy kanji i kana
+				String kanji = polishJapaneseEntry.getKanji();
+				
+				if (kanji != null && kanji.equals("-") == true) {
+					kanji = null;
+				}
+				
+				String kana = polishJapaneseEntry.getKana();
+				
+				if (kana != null && kana.equals("-") == true) {
+					kana = null;
+				}
+
+				List<Entry> entryList = dictionaryHelper.findEntryListByKanjiAndKana(kanji, kana);
 				
 				if (entryList == null) {
 					continue;
