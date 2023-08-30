@@ -38,9 +38,29 @@ public class ShowTheBiggerMissingJMdictEntries {
 			public int compare(JMdict.Entry o1, JMdict.Entry o2) {
 				if (o1.getSenseList().size() > o2.getSenseList().size()) {
 					return -1;
+					
 				} else if (o1.getSenseList().size() < o2.getSenseList().size()) {
 					return 1;
+					
 				} else {
+					/*
+					AtomicInteger o1SumSenseList = new AtomicInteger();
+					AtomicInteger o2SumSenseList = new AtomicInteger();
+					
+					o1.getSenseList().stream().forEach(c -> o1SumSenseList.addAndGet(c.getGlossList().size()) );
+					o2.getSenseList().stream().forEach(c -> o2SumSenseList.addAndGet(c.getGlossList().size()) );
+					
+					if (o1SumSenseList.get() > o2SumSenseList.get()) {
+						return -1;
+						
+					} else if (o1SumSenseList.get() < o2SumSenseList.get()) {
+						return 1;
+						
+					} else {
+						return o1.getEntryId().compareTo(o2.getEntryId());
+					}
+					*/
+					
 					return o1.getEntryId().compareTo(o2.getEntryId());
 				}
 			}
