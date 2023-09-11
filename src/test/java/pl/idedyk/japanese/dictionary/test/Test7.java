@@ -4,7 +4,10 @@ import java.util.List;
 
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 
 public class Test7 {
 
@@ -35,6 +38,7 @@ public class Test7 {
 		*/
 		
 		// lista wszystkich 5..., ktore maja to samo kanji i kana, co inne slowka
+		/*
 		{
 			List<PolishJapaneseEntry> polishJapaneseEntryList = dictionaryHelper.getOldPolishJapaneseEntriesList();
 			
@@ -73,6 +77,42 @@ public class Test7 {
 				}			
 			}
 		}
+		*/
+		
+		// lista wszystkich 5..., ktore maja to xxx University
+		{
+			JMdict jmdict = dictionaryHelper.getJMdict();
+
+			List<Entry> entryList = jmdict.getEntryList();
+			
+			for (Entry entry : entryList) {
+				if (entry.getEntryId() >= 5000000) {
+					
+					Entry polishEntry = dictionaryHelper.getEntryFromPolishDictionary(entry.getEntryId());
+					
+					if (polishEntry != null) {
+						continue;
+					}
+					
+					if (entry.getSenseList().size() == 1) { // jeden sens
+						Sense sense = entry.getSenseList().get(0);
+						
+						if (sense.getGlossList().size() == 1) { // jedno znaczenie
+							Gloss gloss = sense.getGlossList().get(0);
+							
+							String glossValue = gloss.getValue();
+							
+							String[] glossValueSplited = glossValue.split(" ");
+							
+							if (glossValueSplited.length == 2 && glossValueSplited[1].equals("University") == true) {
+								System.out.println(entry.getEntryId());
+							}							
+						}						
+					}
+				}
+			}
+		}
+		
 
 		
 		/*
