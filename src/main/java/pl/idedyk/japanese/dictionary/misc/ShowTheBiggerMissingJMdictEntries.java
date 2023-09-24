@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
@@ -43,7 +44,6 @@ public class ShowTheBiggerMissingJMdictEntries {
 					return 1;
 					
 				} else {
-					/*
 					AtomicInteger o1SumSenseList = new AtomicInteger();
 					AtomicInteger o2SumSenseList = new AtomicInteger();
 					
@@ -59,9 +59,8 @@ public class ShowTheBiggerMissingJMdictEntries {
 					} else {
 						return o1.getEntryId().compareTo(o2.getEntryId());
 					}
-					*/
 					
-					return o1.getEntryId().compareTo(o2.getEntryId());
+					// return o1.getEntryId().compareTo(o2.getEntryId());
 				}
 			}
 		});
