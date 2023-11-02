@@ -8,7 +8,7 @@ word - 30
 160000 - 20
 ludzie - x
 ---------
-update - x
++ update - x
 ---------
 ---------
 * uzupełniacz - x
