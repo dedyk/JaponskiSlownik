@@ -1534,6 +1534,29 @@ public class WordGenerator {
 					}					
 				}
 				
+				// szukamy jeszcze slow, ktore powinny zniknac ze slownika, gdyz zostaly usuniete
+				List<PolishJapaneseEntry> wordsNoExistInJmdict = new ArrayList<>();
+				
+				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntriesList) {
+					
+					DictionaryEntryType dictionaryEntryType = polishJapaneseEntry.getDictionaryEntryType();
+					
+					if (dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME || dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+						continue;
+					}
+					
+					if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.IGNORE_NO_JMEDICT) == true) {
+						continue;
+					}
+					
+					// szukanie slow
+					List<Entry> entryListForPolishJapaneseEntry = dictionary2Helper.findEntryListInJmdict(polishJapaneseEntry, true);
+																
+					if (entryListForPolishJapaneseEntry == null || entryListForPolishJapaneseEntry.size() == 0) {						
+						wordsNoExistInJmdict.add(polishJapaneseEntry);
+					}					
+				}				
+				
 				//System.out.println(groupIdsAlreadyAddCount);
 				
 				// zapis do pliku
@@ -1541,6 +1564,7 @@ public class WordGenerator {
 				CsvReaderWriter.writeCommonWordFile(missingFullCommonMap, "input/all_missing_word_from_group_id_full.csv");
 				CsvReaderWriter.writeCommonWordFile(missingOverfullCommonMap, "input/all_missing_word_from_group_id_overfull.csv");
 				CsvReaderWriter.writeCommonWordFile(missingInDictionary2FormatCommonMap, "input/all_missing_word_from_group_id_in_dictionary2_format.csv");
+				CsvReaderWriter.generateCsv(new String[] { "input/all_missing_word_from_group_id_words_no_exist_in_jmedict.csv" }, wordsNoExistInJmdict, true, true, false, true, null);
 				
 				break;
 			}
