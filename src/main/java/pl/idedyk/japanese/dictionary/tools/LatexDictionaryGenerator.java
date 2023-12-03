@@ -48,27 +48,23 @@ public class LatexDictionaryGenerator {
 		
         //
         
-		List<SectionContext> latexDictonaryEntries = generateLatexDictonaryEntries(polishJapaneseEntries);
+		List<String> latexDictonaryEntries = generateLatexDictonaryEntries(polishJapaneseEntries);
+				
+		FileWriter fileWriter = new FileWriter("pdf_dictionary/dictionary_entries.tex");
 		
-		for (SectionContext sectionContext : latexDictonaryEntries) {
+		for (String latexString : latexDictonaryEntries) {
 			
-			FileWriter fileWriter = new FileWriter("pdf_dictionary/dictionary_entries_" + sectionContext.name + ".tex");
+			System.out.print(latexString);
 			
-			//System.out.println(sectionContext.name);
-			System.out.println("\\input{dictionary_entries_" + sectionContext.name + ".tex}");
-			
-			for (String latexString : sectionContext.latexContext) {
-				//System.out.println(latexString);				
-				fileWriter.write(latexString);
-			}
-			
-			fileWriter.close();
+			fileWriter.write(latexString);
 		}		
+		
+		fileWriter.close();
 	}
 	
-	public static List<SectionContext> generateLatexDictonaryEntries(List<PolishJapaneseEntry> polishJapaneseEntries) throws Exception {
+	public static List<String> generateLatexDictonaryEntries(List<PolishJapaneseEntry> polishJapaneseEntries) throws Exception {
 		
-		List<SectionContext> result = new ArrayList<SectionContext>();
+		List<String> result = new ArrayList<String>();
 		
 		//
 				
@@ -130,26 +126,18 @@ public class LatexDictionaryGenerator {
 				continue;
 			}
 			
-			SectionContext sectionContext = new SectionContext(sectionEntry.getKey());
-			
-			generateSection(sectionContext, sectionEntry.getKey(), sectionEntry.getValue());
-			
-			result.add(sectionContext);
+			generateSection(result, sectionEntry.getKey(), sectionEntry.getValue());
 		}
 		
 		// generowanie sekcji inne
 		if (otherEntry != null) {
-			SectionContext section = new SectionContext(otherEntry.getKey());
-			
-			generateSection(section, otherEntry.getKey(), otherEntry.getValue());
-			
-			result.add(section);
+			generateSection(result, otherEntry.getKey(), otherEntry.getValue());
 		}		
 		
 		return result;
 	}
 	
-	private static void generateSection(SectionContext sectionContext, String key, List<PolishJapaneseEntry> keyList) throws Exception {
+	private static void generateSection(List<String> result, String key, List<PolishJapaneseEntry> keyList) throws Exception {
 		
 		//KanaHelper kanaHelper = new KanaHelper();
 		
@@ -166,12 +154,12 @@ public class LatexDictionaryGenerator {
 		
 		sectionName = key;
 		
-		sectionContext.addContext("%----------------------------------------------------------------------------------------\n");
-		sectionContext.addContext(String.format("%s\tSekcja: %s\n", "%", sectionName));
-		sectionContext.addContext("%----------------------------------------------------------------------------------------\n\n");
-		sectionContext.addContext(String.format("\\section*{%s}\n", sectionName));
+		result.add("%----------------------------------------------------------------------------------------\n");
+		result.add(String.format("%s\tSekcja: %s\n", "%", sectionName));
+		result.add("%----------------------------------------------------------------------------------------\n\n");
+		result.add(String.format("\\section*{%s}\n", sectionName));
 		
-		sectionContext.addContext("\\begin{multicols}{2}\n\n");
+		result.add("\\begin{multicols}{2}\n\n");
 		
 		List<PolishJapaneseEntry> polishJapaneseEntryList = keyList;
 		
@@ -204,12 +192,12 @@ public class LatexDictionaryGenerator {
 				jmdictEntry = dictionaryHelper.getEntryFromPolishDictionary(entryId);				
 			}
 						
-			sectionContext.addContext(generateDictionaryEntry(polishJapaneseEntry, jmdictEntry));
+			result.add(generateDictionaryEntry(polishJapaneseEntry, jmdictEntry));
 			
 			//counter++;			
 		}			
 		
-		sectionContext.addContext("\\end{multicols}\n\n");
+		result.add("\\end{multicols}\n\n");
 	}
 	
 	private static String generateDictionaryEntry(PolishJapaneseEntry polishJapaneseEntry, JMdict.Entry jmdictEntry) {
@@ -645,19 +633,4 @@ public class LatexDictionaryGenerator {
 		return kanaHelper.createRomajiString(kanaWord);
 	}
 	*/
-	
-	public static class SectionContext {
-		String name;
-		
-		List<String> latexContext;
-		
-		public SectionContext(String name) {
-			this.name = name;
-			latexContext = new ArrayList<>();
-		}
-		
-		public void addContext(String context) {
-			latexContext.add(context);
-		}
-	}
 }
