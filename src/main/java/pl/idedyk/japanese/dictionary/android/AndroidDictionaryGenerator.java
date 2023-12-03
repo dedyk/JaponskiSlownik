@@ -871,7 +871,9 @@ public class AndroidDictionaryGenerator {
 		return transitiveIntransitivePairList;
 	}
 		
-	private static void generatePdfDictionary(List<PolishJapaneseEntry> polishJapaneseEntries, String mainTexFilename, String outputDir) throws Exception {
+	public static void generatePdfDictionary(List<PolishJapaneseEntry> polishJapaneseEntries, String mainTexFilename, String outputDir) throws Exception {
+		
+		int fixme = 1; // !!!!!!!!!!!!!!!!!1
 		
 		File mainTexFile = new File(mainTexFilename);
 		File outputMainTexFile = new File(outputDir, mainTexFile.getName()); 
@@ -892,6 +894,7 @@ public class AndroidDictionaryGenerator {
 		dictionaryEntriesFileWriter.close();
 		
 		// uruchomienie xelatex
+		/*
 		Runtime runtime = Runtime.getRuntime();
 
 		Process process = runtime.exec(
@@ -924,6 +927,7 @@ public class AndroidDictionaryGenerator {
 		new File(outputDir, "dictionary.tex").delete();
 		new File(outputDir, "dictionary_entries.tex").delete();
 		new File(outputDir, "dictionary.out").delete();
+		*/
 	}
 	
 	private static void generateNamePolishJapaneseEntries(String output) throws Exception {
