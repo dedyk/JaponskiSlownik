@@ -118,7 +118,7 @@ public class JMEDictEntityMapper {
 		addMap("iK", "word containing irregular kanji usage");
 		addMap("io", "irregular okurigana usage");
 		addMap("oK", "word containing out-dated kanji or kanji usage");
-		addMap("rK", "rarely-used kanji form");
+		addMap("rK", "rarely used kanji form");
 		addMap("abbr", "abbreviation");
 		addMap("arch", "archaic");
 		addMap("char", "character");
@@ -270,6 +270,7 @@ public class JMEDictEntityMapper {
 		addMap("ik", "word containing irregular kana usage");
 		addMap("ok", "out-dated or obsolete kana usage");
 		addMap("uK", "word usually written using kanji alone");
+		addMap("rk", "rarely used kana form");
 		
 		addMap("sK", "search-only kanji form");
 		addMap("sk", "search-only kana form");
