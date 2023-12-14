@@ -368,7 +368,8 @@ public class DictionaryEntryJMEdictEntityMapper {
 		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.GIKUN_MEANING_AS_READING_OR_JUKUJIKUN_SPECIAL_KANJI_READING, "gikun");
 		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.WORD_CONTAINING_IRREGULAR_KANA_USAGE, "ik");
 		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.OUT_DATED_OR_OBSOLETE_KANA_USAGE, "ok");
-		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.SEARCH_ONLY_KANA_FORM, "sk");
+		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.SEARCH_ONLY_KANA_FORM, "sk");		
+		readingAdditionalInfoEnumToEntityMapper.put(ReadingAdditionalInfoEnum.RARELY_USED_KANA_FORM, "rk");
 		
 		//
 		
