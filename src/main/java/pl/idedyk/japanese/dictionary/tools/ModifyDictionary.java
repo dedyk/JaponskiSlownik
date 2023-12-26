@@ -8,7 +8,7 @@ public class ModifyDictionary {
 
 	public static void main(String[] args) throws Exception {
 		
-		checkPolishJapaneseEntries(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, new String[] { "input/word01-temp.csv", "input/word02-temp.csv", "input/word03-temp.csv" });
+		checkPolishJapaneseEntries(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" }, new String[] { "input/word01-temp.csv", "input/word02-temp.csv", "input/word03-temp.csv", "input/word04-temp.csv" });
 	}
 	
 	private static void checkPolishJapaneseEntries(String[] sourceFileNames, String[] destinationFileNames) throws Exception {
