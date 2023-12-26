@@ -16,7 +16,7 @@ public class FixPrefixSuffixWords {
 
 	public static void main(String[] args) throws Exception {
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" });
 		
 		JMEDictNewReader jmedictNewReader = new JMEDictNewReader();
 
@@ -156,7 +156,7 @@ public class FixPrefixSuffixWords {
 			}
 		}
 
-		CsvReaderWriter.generateCsv(new String[] { "input/word01-new.csv", "input/word02-new.csv", "input/word03-new.csv" }, polishJapaneseEntries, true, true, false, true, null);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-new.csv", "input/word02-new.csv", "input/word03-new.csv", "input/word04-new.csv" }, polishJapaneseEntries, true, true, false, true, null);
 	}
 	
 }

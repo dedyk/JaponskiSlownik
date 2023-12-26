@@ -90,7 +90,7 @@ public class Test5 {
 		}
 		*/
 		
-		//List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		//List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" });
 		
 		/*
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true);
@@ -138,7 +138,7 @@ public class Test5 {
 		*/
 		
 		/*
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" });
 		
 		List<DictionaryEntryGroup> generateWordGroupList = AndroidDictionaryGenerator.generateWordGroups(polishJapaneseEntries);
 		for (DictionaryEntryGroup dictionaryEntryGroup : generateWordGroupList) {
@@ -152,7 +152,7 @@ public class Test5 {
 		CsvReaderWriter.generateWordGroupCsv(outputStream, generateWordGroupList);
 		*/
 		
-		// List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		// List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" });
 		
 		/*
 		for (int i = 0; i < 50; ++i) {
@@ -205,7 +205,7 @@ public class Test5 {
 		}
 		*/
 		
-		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
+		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" }, "input/common_word.csv", 
 				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
 		
 		/*

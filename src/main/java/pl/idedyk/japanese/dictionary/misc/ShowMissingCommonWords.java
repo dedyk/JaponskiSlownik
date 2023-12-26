@@ -22,7 +22,7 @@ public class ShowMissingCommonWords {
 		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict(edictCommonFileName);
 
 		// read polish japanese entries
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" });
 
 		// jmedict common iterator
 		Iterator<EDictEntry> jmedictCommonIterator = jmedictCommon.values().iterator();

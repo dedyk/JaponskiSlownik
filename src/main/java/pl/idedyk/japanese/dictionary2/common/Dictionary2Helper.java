@@ -114,7 +114,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		if (dictionary2Helper == null) {
 			
 			// stary pomocnik		
-			WordGeneratorHelper oldWordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
+			WordGeneratorHelper oldWordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" }, "input/common_word.csv", 
 					"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
 
 			dictionary2Helper =  init(oldWordGeneratorHelper);

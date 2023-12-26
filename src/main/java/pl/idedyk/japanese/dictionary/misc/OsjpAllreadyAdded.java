@@ -16,7 +16,7 @@ public class OsjpAllreadyAdded {
 	public static void main(String[] args) throws Exception {
 
 		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter
-				.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+				.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" });
 
 		CsvReader csvReader = new CsvReader(new FileReader("input/osjp.csv"), ',');
 		CsvWriter csvWriter = new CsvWriter(new FileWriter("input/osjp.csv-wynik"), ',');

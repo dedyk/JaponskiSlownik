@@ -24,7 +24,7 @@ public class ShowAdditionalKanji {
 
 	public static void main(String[] args) throws Exception {
 
-		String[] sourceWordFileNames = new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" };
+		String[] sourceWordFileNames = new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" };
 		String sourceKradFileName = "../JapaneseDictionary_additional/kradfile";
 		String sourceKanjiDic2FileName = "../JapaneseDictionary_additional/kanjidic2.xml";
 		String sourceKanjiName = "input/kanji.csv";

@@ -10,9 +10,9 @@ public class ValidateTheSameRomajiFix {
 
 	public static void main(String[] args) throws Exception {
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" });
 				
-		List<PolishJapaneseEntry> polishJapaneseEntriesWithRomajiCorrected = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01-te-same-romaji-wynik.csv", "input/word02-te-same-romaji-wynik.csv", "input/word03-te-same-romaji-wynik.csv" });
+		List<PolishJapaneseEntry> polishJapaneseEntriesWithRomajiCorrected = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01-te-same-romaji-wynik.csv", "input/word02-te-same-romaji-wynik.csv", "input/word03-te-same-romaji-wynik.csv", "input/word04-te-same-romaji-wynik.csv" });
 		
 		// utworz mape z id'kami
 		TreeMap<Integer, PolishJapaneseEntry> polishJapaneseEntriesWithRomajiCorrectedIdMap = new TreeMap<Integer, PolishJapaneseEntry>();
@@ -36,6 +36,6 @@ public class ValidateTheSameRomajiFix {
 			}
 		}		
 		
-		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv", "input/word03-wynik.csv" }, polishJapaneseEntries, true, true, false, true, null);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv", "input/word03-wynik.csv", "input/word04-wynik.csv" }, polishJapaneseEntries, true, true, false, true, null);
 	}
 }

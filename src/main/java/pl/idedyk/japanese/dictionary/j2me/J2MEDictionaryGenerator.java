@@ -49,7 +49,7 @@ public class J2MEDictionaryGenerator {
 		polishJapaneseEntries = Helper.generateGroups(polishJapaneseEntries, true);
 
 		// kanji dictionary
-		//List<PolishJapaneseEntry> polishJapaneseKanjiEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, null);
+		//List<PolishJapaneseEntry> polishJapaneseKanjiEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" }, null);
 		//Validator.validatePolishJapaneseEntries(polishJapaneseKanjiEntries, hiraganaEntries, katakanaEntries);
 		//generateKanjiImages(polishJapaneseKanjiEntries, charsCache, kanjiOutputDir);
 

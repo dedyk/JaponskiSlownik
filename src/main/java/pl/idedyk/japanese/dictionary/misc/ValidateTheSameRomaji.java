@@ -17,7 +17,7 @@ public class ValidateTheSameRomaji {
 		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
 				
 		List<PolishJapaneseEntry> polishJapaneseEntries = dictionary2Helper.getOldPolishJapaneseEntriesList();
-		//List<PolishJapaneseEntry> polishJapaneseEntriesSource = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		//List<PolishJapaneseEntry> polishJapaneseEntriesSource = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" });
 		
 		/*
 		// utworz mape z id'kami
@@ -106,7 +106,7 @@ public class ValidateTheSameRomaji {
 			}
 		}
 
-		CsvReaderWriter.generateCsv(new String[] { "input/word01-te-same-romaji-wynik.csv", "input/word02-te-same-romaji-wynik.csv", "input/word03-te-same-romaji-wynik.csv" }, result, true, true, false);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-te-same-romaji-wynik.csv", "input/word02-te-same-romaji-wynik.csv", "input/word03-te-same-romaji-wynik.csv", "input/word04-te-same-romaji-wynik.csv" }, result, true, true, false);
 		*/
 	}
 }

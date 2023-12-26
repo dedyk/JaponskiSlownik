@@ -34,8 +34,8 @@ public class DictionarySQLDatabaseLoader {
 
 		final String mysqlAddress = "jdbc:mysql://localhost/japdb?characterEncoding=utf8&user=japdbuser&password=japdbpasswd";
 
-		//loadDictionaryIntoDB(mysqlAddress, "words", new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
-		loadDictionaryIntoDB(mysqlAddress, "words", new String[] { "output/word01.csv", "output/word02.csv", "output/word03.csv" });
+		//loadDictionaryIntoDB(mysqlAddress, "words", new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" });
+		loadDictionaryIntoDB(mysqlAddress, "words", new String[] { "output/word01.csv", "output/word02.csv", "output/word03.csv", "input/word04.csv" });
 	}
 
 	private static void loadDictionaryIntoDB(String mysqlAddress, String tableName, String[] inputFileName)

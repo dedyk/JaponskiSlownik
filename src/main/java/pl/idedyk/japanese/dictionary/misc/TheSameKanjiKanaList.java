@@ -16,7 +16,7 @@ public class TheSameKanjiKanaList {
 
 	public static void main(String[] args) throws Exception {
 		
-		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" });
+		List<PolishJapaneseEntry> polishJapaneseEntries = CsvReaderWriter.parsePolishJapaneseEntriesFromCsv(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" });
 
 		Map<String, List<PolishJapaneseEntry>> theSameKanjiKanaMap = new TreeMap<String, List<PolishJapaneseEntry>>();
 		

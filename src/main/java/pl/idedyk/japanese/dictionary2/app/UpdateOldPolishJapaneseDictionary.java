@@ -30,7 +30,7 @@ public class UpdateOldPolishJapaneseDictionary {
 		}
 				
 		// zapisanie starego slownika
-		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv", "input/word03-wynik.csv" }, dictionaryHelper.getOldPolishJapaneseEntriesList(), true, true, false, true, null);
+		CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv", "input/word03-wynik.csv", "input/word04-wynik.csv" }, dictionaryHelper.getOldPolishJapaneseEntriesList(), true, true, false, true, null);
 		
 		// zapisanie nowy slow dla starego slownika
 		CsvReaderWriter.generateCsv(new String[] { "input/word-new.csv" }, newOldPolishJapaneseEntryList, true, true, false, true, null);

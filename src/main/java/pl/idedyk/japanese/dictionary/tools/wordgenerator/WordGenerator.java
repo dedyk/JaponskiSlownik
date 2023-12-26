@@ -88,7 +88,7 @@ public class WordGenerator {
 		}
 		
 		// utworzenie helper'a
-		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" }, "input/common_word.csv", 
+		final WordGeneratorHelper wordGeneratorHelper = new WordGeneratorHelper(new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" }, "input/common_word.csv", 
 				"../JapaneseDictionary_additional/JMdict_e", "input/kanji.csv", "../JapaneseDictionary_additional/kradfile", "../JapaneseDictionary_additional/kanjidic2.xml");
 		
 		// wczytywanie pomocnika slownikowego
@@ -2512,7 +2512,7 @@ public class WordGenerator {
 				}	
 				
 				// zapis nowego slownika
-				CsvReaderWriter.generateCsv(new String[] { "input/word01-new.csv", "input/word02-new.csv", "input/word03-new.csv" }, polishJapaneseEntries, true, true, false, true, null);
+				CsvReaderWriter.generateCsv(new String[] { "input/word01-new.csv", "input/word02-new.csv", "input/word03-new.csv", "input/word04-new.csv" }, polishJapaneseEntries, true, true, false, true, null);
 				
 				break;
 			}
@@ -3326,7 +3326,7 @@ public class WordGenerator {
 					}					
 					
 					// zapis docelowego slownika
-					CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv", "input/word03-wynik.csv" }, result, true, true, false, true, null);
+					CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv", "input/word03-wynik.csv", "input/word04-wynik.csv" }, result, true, true, false, true, null);
 				}
 				
 				break;
@@ -3620,7 +3620,7 @@ public class WordGenerator {
 					}					
 					
 					// zapis docelowego slownika
-					CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv", "input/word03-wynik.csv" }, result, true, true, false, true, null);
+					CsvReaderWriter.generateCsv(new String[] { "input/word01-wynik.csv", "input/word02-wynik.csv", "input/word03-wynik.csv", "input/word04-wynik.csv" }, result, true, true, false, true, null);
 				}
 								
 				break;

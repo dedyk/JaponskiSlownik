@@ -145,7 +145,7 @@ public class DictionarySizeStat {
 	private static DateStat countWords(String repositoryPath, Date date) throws IOException {
 		
 		// word.csv
-		final String[] wordCsvs = new String[] { "word.csv", "word01.csv", "word02.csv", "word03.csv" };
+		final String[] wordCsvs = new String[] { "word.csv", "word01.csv", "word02.csv", "word03.csv", "word04.csv" };
 		
 		//
 		

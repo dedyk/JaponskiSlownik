@@ -79,7 +79,7 @@ public class AndroidDictionaryGenerator {
 		Map<String, KanjivgEntry> kanjivgEntryMap = KanjivgReader.readKanjivgSingleXmlFile(kanjivgSingleXmlFile, kanjivgPatchDirFile);
 		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedictCommon,
-				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word.json", "output/word-power.csv",
+				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word.json", "output/word-power.csv",
 				"output/transitive_intransitive_pairs.csv", "output/word2.xml"); //, "output/word_group.csv");
 				
 		generateKanaEntries(kanjivgEntryMap, "output/kana.csv");
