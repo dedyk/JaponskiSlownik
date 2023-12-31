@@ -58,8 +58,8 @@ public class DictionarySizeStat {
 			
 			dateStatList.add(dateStat);
 			
-			System.out.println(gitDateFormat + ": " + dateStat.wordCounter + " - " + dateStat.wordCounterInDictionary2Source + 
-					" - " + dateStat.commonWordCounter + " - " + dateStat.word2Counter);
+			System.out.println(gitDateFormat + ": " + dateStat.wordCounter + " - " + dateStat.commonWordCounter + 
+					" - " + dateStat.word2Counter + " - " + dateStat.wordCounterInDictionary2Source);
 			
 			//
 						
@@ -76,9 +76,9 @@ public class DictionarySizeStat {
 			
 			csvWriter.write(formatDateToStat(dateStat.date));
 			csvWriter.write(String.valueOf(dateStat.wordCounter));
-			csvWriter.write(String.valueOf(dateStat.wordCounterInDictionary2Source));
 			csvWriter.write(String.valueOf(dateStat.commonWordCounter));
 			csvWriter.write(String.valueOf(dateStat.word2Counter));
+			csvWriter.write(String.valueOf(dateStat.wordCounterInDictionary2Source));
 			
 			csvWriter.endRecord();
 		}
