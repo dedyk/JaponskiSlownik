@@ -18,9 +18,6 @@ import org.apache.commons.io.IOUtils;
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
-import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
-
 public class DictionarySizeStat {
 
 	public static void main(String[] args) throws Exception {
@@ -214,11 +211,19 @@ public class DictionarySizeStat {
 		File word2CsvFile = new File(repositoryPath + "/input/word2.csv");
 		
 		if (word2CsvFile.exists() == true) {
-			Dictionary2Helper dictionary2Helper = Dictionary2Helper.init(null);
 			
-			List<Entry> entryList = dictionary2Helper.readEntryListFromHumanCsv(word2CsvFile.getAbsolutePath());
+			CsvReader csvReader = new CsvReader(new FileReader(word2CsvFile));
 			
-			word2Counter = entryList.size();
+			while (csvReader.readRecord()) {
+								
+				if (csvReader.get(0).equals("BEGIN") == false) {
+					continue;
+				}
+				
+				word2Counter++;
+			}
+			
+			csvReader.close();
 		}
 		
 		//
