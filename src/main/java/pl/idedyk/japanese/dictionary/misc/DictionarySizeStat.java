@@ -18,6 +18,9 @@ import org.apache.commons.io.IOUtils;
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+
 public class DictionarySizeStat {
 
 	public static void main(String[] args) throws Exception {
@@ -58,7 +61,8 @@ public class DictionarySizeStat {
 			
 			dateStatList.add(dateStat);
 			
-			System.out.println(gitDateFormat + ": " + dateStat.wordCounter + " - " + dateStat.commonWordCounter);
+			System.out.println(gitDateFormat + ": " + dateStat.wordCounter + " - " + dateStat.wordCounterInDictionary2Source + 
+					" - " + dateStat.commonWordCounter + " - " + dateStat.word2Counter);
 			
 			//
 						
@@ -75,7 +79,9 @@ public class DictionarySizeStat {
 			
 			csvWriter.write(formatDateToStat(dateStat.date));
 			csvWriter.write(String.valueOf(dateStat.wordCounter));
+			csvWriter.write(String.valueOf(dateStat.wordCounterInDictionary2Source));
 			csvWriter.write(String.valueOf(dateStat.commonWordCounter));
+			csvWriter.write(String.valueOf(dateStat.word2Counter));
 			
 			csvWriter.endRecord();
 		}
@@ -142,7 +148,7 @@ public class DictionarySizeStat {
         }
 	}
 	
-	private static DateStat countWords(String repositoryPath, Date date) throws IOException {
+	private static DateStat countWords(String repositoryPath, Date date) throws Exception {
 		
 		// word.csv
 		final String[] wordCsvs = new String[] { "word.csv", "word01.csv", "word02.csv", "word03.csv", "word04.csv" };
@@ -150,6 +156,7 @@ public class DictionarySizeStat {
 		//
 		
 		int wordCounter = 0;
+		int wordCounterInDictionary2Source = 0;
 		
 		for (String currentWordCsv : wordCsvs) {
 			
@@ -163,6 +170,10 @@ public class DictionarySizeStat {
 			
 			while (csvReader.readRecord()) {				
 				wordCounter++;
+				
+				if (csvReader.get(12).contains("DICTIONARY2_SOURCE") == true) {
+					wordCounterInDictionary2Source++;
+				}
 			}
 			
 			csvReader.close();
@@ -197,9 +208,22 @@ public class DictionarySizeStat {
 			csvReader.close();
 		}
 		
+		// word2.csv
+		int word2Counter = 0;
+		
+		File word2CsvFile = new File(repositoryPath + "/input/word2.csv");
+		
+		if (word2CsvFile.exists() == true) {
+			Dictionary2Helper dictionary2Helper = Dictionary2Helper.init(null);
+			
+			List<Entry> entryList = dictionary2Helper.readEntryListFromHumanCsv(word2CsvFile.getAbsolutePath());
+			
+			word2Counter = entryList.size();
+		}
+		
 		//
 				
-		return new DateStat(date, wordCounter, commonWordCounter);
+		return new DateStat(date, wordCounter, wordCounterInDictionary2Source, commonWordCounter, word2Counter);
 	}
 	
 	private static class DateStat {
@@ -207,14 +231,17 @@ public class DictionarySizeStat {
 		private Date date;
 		
 		private int wordCounter;
-		
+		private int wordCounterInDictionary2Source;
 		private int commonWordCounter;
+		private int word2Counter;
 
-		public DateStat(Date date, int wordCounter, int commonWordCounter) {
+		public DateStat(Date date, int wordCounter, int wordCounterInDictionary2Source, int commonWordCounter, int word2Counter) {
 			super();
 			this.date = date;
 			this.wordCounter = wordCounter;
+			this.wordCounterInDictionary2Source = wordCounterInDictionary2Source;
 			this.commonWordCounter = commonWordCounter;
+			this.word2Counter = word2Counter;
 		}		
 	}
 }
