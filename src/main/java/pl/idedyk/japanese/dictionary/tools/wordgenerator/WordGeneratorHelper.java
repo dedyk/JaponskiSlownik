@@ -100,6 +100,12 @@ public class WordGeneratorHelper {
 		return cachePolishJapaneseEntryList;
 	}
 	
+	public void invalidatePolishJapaneseEntriesCache() {
+		if (cachePolishJapaneseEntryList != null) {
+			cachePolishJapaneseEntryList = null;
+		}
+	}
+	
 	public Map<Integer, CommonWord> getCommonWordMap() throws Exception {
 		
 		if (commonWordMap == null) {

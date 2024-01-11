@@ -2489,6 +2489,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					//
 										
 					polishJapaneseEntry = polishJapaneseEntryToDelete;
+					
+					// musimy jeszcze uniewaznic cache, bo zmienil sie
+					oldWordGeneratorHelper.invalidatePolishJapaneseEntriesCache();
 				}
 				
 								
