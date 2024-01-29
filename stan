@@ -3,8 +3,8 @@
 + update - x
 ----------
 ++ small - 10
-+ small2 - 10
-+ small3 - 10
+++ small2 - 10
+++ small3 - 10
 + word - 30
 ---------
 + 160000 - 20
