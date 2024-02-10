@@ -4316,7 +4316,7 @@ public class WordGenerator {
 					String newEntryXml = marshall(jaxbMarshaller, newEntry);
 					
 					if (oldEntryXml.equals(newEntryXml) == false) {
-						System.out.println("Zmienione: " + oldEntry.getEntryId());
+						System.out.println("Zmieniono: " + oldEntry.getEntryId());
 					}
 				}
 				
