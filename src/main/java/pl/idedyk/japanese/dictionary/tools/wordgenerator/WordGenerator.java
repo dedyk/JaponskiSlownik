@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -23,6 +24,13 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+import javax.xml.namespace.QName;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -4255,6 +4263,80 @@ public class WordGenerator {
 				break;
 			}
 			
+			case COMPARE_TWO_JMDICT: {
+				
+				if (args.length != 3) {					
+					System.err.println("Niepoprawna liczba argumentów");
+					
+					return;
+				}
+				
+				// pliki do porownania
+				File oldJmdictFile = new File(args[1]);
+				File newJmdictFile = new File(args[2]);
+
+				// przygotowanie kontekstu jaxb
+				JAXBContext jaxbContext = JAXBContext.newInstance(JMdict.class);
+				
+				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+				Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+				
+				// wczytanie plikow
+				JMdict oldJmdict = (JMdict) jaxbUnmarshaller.unmarshal(oldJmdictFile);
+				JMdict newJmdict = (JMdict) jaxbUnmarshaller.unmarshal(newJmdictFile);
+
+				// cahceowanie
+				Map<Integer, JMdict.Entry> oldJmdictCache = cacheJmdict(oldJmdict);
+				Map<Integer, JMdict.Entry> newJmdictCache = cacheJmdict(newJmdict);
+				
+				// chodzimy po starych i sprawdzamy, czy zostaly usuniete w nowym
+				for (Entry oldEntry : oldJmdictCache.values()) {					
+					
+					// pobieramy nowy
+					Entry newEntry = newJmdictCache.get(oldEntry.getEntryId());
+					
+					// w nowym tego slowa juz nie ma
+					if (newEntry == null) {
+						System.out.println("Usunięto: " + oldEntry.getEntryId());
+					}					
+				}
+
+				// chodzimy po starych wpisach i sprawdzamy, czy zmienily sie w nowym
+				for (Entry oldEntry : oldJmdictCache.values()) {					
+					
+					// pobieramy nowy
+					Entry newEntry = newJmdictCache.get(oldEntry.getEntryId());
+					
+					// w nowym tego slowa juz nie ma
+					if (newEntry == null) {						
+						continue;
+					}
+					
+					String oldEntryXml = marshall(jaxbMarshaller, oldEntry);
+					String newEntryXml = marshall(jaxbMarshaller, newEntry);
+					
+					if (oldEntryXml.equals(newEntryXml) == false) {
+						System.out.println("Zmienione: " + oldEntry.getEntryId());
+					}
+				}
+				
+				// chodzenie po nowych wpisach i sprawdzanie, czy nie zostaly dodane
+				for (Entry newEntry : newJmdictCache.values()) {
+					
+					// pobieramy stary
+					Entry oldEntry = oldJmdictCache.get(newEntry.getEntryId());
+					
+					// w nowym tego slowa juz nie ma
+					if (oldEntry == null) {
+						System.out.println("Dodano: " + newEntry.getEntryId());
+						
+						continue;
+					}					
+				}
+				
+				break;
+			}
+			
 			case HELP: {
 				
 				// pobranie listy mozliwych operacji
@@ -4539,5 +4621,25 @@ public class WordGenerator {
 		jishoOrgConnectorWordCheckCache.put(word, result);
 		
 		return result.booleanValue();
+	}
+	
+	private static Map<Integer, JMdict.Entry> cacheJmdict(JMdict jmdict) {
+		Map<Integer, JMdict.Entry> cacheMap = new TreeMap<Integer, JMdict.Entry>();
+		
+		for (Entry entry : jmdict.getEntryList()) {
+			cacheMap.put(entry.getEntryId(), entry);			
+		}
+		
+		return cacheMap;
+	}
+	
+	private static String marshall(Marshaller jaxbMarshaller, Entry entry) throws JAXBException {
+		StringWriter sw = new StringWriter();
+		
+		JAXBElement<Entry> jaxbElement = new JAXBElement<Entry>(new QName("", "entry"), Entry.class, entry);
+		
+		jaxbMarshaller.marshal(jaxbElement, sw);
+		
+		return sw.toString();
 	}
 }
