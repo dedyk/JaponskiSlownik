@@ -4263,7 +4263,7 @@ public class WordGenerator {
 				break;
 			}
 			
-			case COMPARE_TWO_JMDICT: {
+			case COMPARE_TWO_JMDICTS: {
 				
 				if (args.length != 3) {					
 					System.err.println("Niepoprawna liczba argumentów");

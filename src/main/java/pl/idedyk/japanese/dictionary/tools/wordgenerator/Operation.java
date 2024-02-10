@@ -60,7 +60,7 @@ public enum Operation {
 	
 	SHOW_ALL_MULTIPLE_KANJI_KANA("show-all-multiple-kanji-kana", "Podaje listę kanji i kana, które występują w kilku różnych słowach, a które nie ich jeszcze w słowniku w nowej strukturze"),
 	
-	COMPARE_TWO_JMDICT("compare-two-jmdict", "Porównuje dwa słowniki jmdict i wyświetla identyfikatory tych wpisów, które zmieniły się"),
+	COMPARE_TWO_JMDICTS("compare-two-jmdicts", "Porównuje dwa słowniki jmdict i wyświetla identyfikatory tych wpisów, które zmieniły się"),
 	
 	HELP("help", "Pokazuje pomoc");
 	
