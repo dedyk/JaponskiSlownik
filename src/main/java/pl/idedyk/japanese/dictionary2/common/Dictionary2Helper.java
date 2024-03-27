@@ -2110,7 +2110,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			// walidacja typow hiragana i katakana
 			for (ReadingInfo currentReadingInfo : readingInfoList) {
 				
-				String kana = currentReadingInfo.getKana().getValue().replaceAll("・", "");
+				String kana = currentReadingInfo.getKana().getValue().replaceAll("・", "").replaceAll("、", "");
 				String romaji = currentReadingInfo.getKana().getRomaji();
 				
 				ReadingInfoKanaType kanaType = currentReadingInfo.getKana().getKanaType();
