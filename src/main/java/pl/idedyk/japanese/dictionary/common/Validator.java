@@ -109,7 +109,7 @@ public class Validator {
 			}
 			*/
 
-			String kana = polishJapaneseEntry.getKana().replaceAll("・", "");
+			String kana = polishJapaneseEntry.getKana().replaceAll("・", "").replaceAll("、", "");
 			String romaji = polishJapaneseEntry.getRomaji();
 			String prefixKana = polishJapaneseEntry.getPrefixKana();
 			String prefixRomaji = polishJapaneseEntry.getPrefixRomaji();
