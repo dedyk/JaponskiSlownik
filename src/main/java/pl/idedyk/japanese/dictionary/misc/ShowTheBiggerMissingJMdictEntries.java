@@ -14,7 +14,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 public class ShowTheBiggerMissingJMdictEntries {
 
 	private static final int MIN_SENSE_SIZE = 2;
-	private static final int[] RATIO = { 3, 7}; // proporcje duze do malych
+	private static final int[] RATIO = { 5, 5}; // proporcje duze do malych
 	
 	public static void main(String[] args) throws Exception {
 		
