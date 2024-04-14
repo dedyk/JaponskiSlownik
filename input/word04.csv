@@ -246,7 +246,7 @@ diskman",nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741090
 300160,WORD_NOUN,,KATAKANA,,,-,デコラ,,dekora,Decola,"nazwa produktu; markowy laminat podobny do Formica, wykonany z żywicy melaminowej",DICTIONARY2_SOURCE,,GroupId: 5741093
 300161,WORD_SUFFIX,,HIRAGANA,,,-,きゅん,,kyun,"Pan
 mistrz
-chłopiec",potocznie; język męski,DICTIONARY2_SOURCE,DUPLICATE 36079,GroupId: 2860880
+chłopiec",potocznie,DICTIONARY2_SOURCE,DUPLICATE 36079,GroupId: 2860880
 300162,WORD_NOUN,,KATAKANA,,,Ｐｅｒｌ,パール,,paaru,Perl,informatyka; język programowania,DICTIONARY2_SOURCE,"DUPLICATE 16804
 DUPLICATE 300163",GroupId: 2860943
 300163,WORD_NOUN,,KATAKANA,,,-,パール,,paaru,"lewy ścieg
@@ -270,10 +270,8 @@ ustalona taktyka",,DICTIONARY2_SOURCE,,GroupId: 1074410
 głębia swojego serca
 najskrytsze myśli
 prawdziwe intencje",,DICTIONARY2_SOURCE,DUPLICATE 129860,GroupId: 1360860
-300167,WORD_NOUN,,KATAKANA,,,-,ホットリーディング,,hotto riidingu,"???
-???? (wyjaśnienie)",ang: hot reading,DICTIONARY2_SOURCE,,GroupId: 2860867
-300168,WORD_NOUN,,KATAKANA,,,-,ホット・リーディング,,hotto riidingu,"???
-???? (wyjaśnienie)",ang: hot reading,DICTIONARY2_SOURCE,,GroupId: 2860867
+300167,WORD_NOUN,,KATAKANA,,,-,ホットリーディング,,hotto riidingu,???,ang: hot reading,DICTIONARY2_SOURCE,,GroupId: 2860867
+300168,WORD_NOUN,,KATAKANA,,,-,ホット・リーディング,,hotto riidingu,???,ang: hot reading,DICTIONARY2_SOURCE,,GroupId: 2860867
 300169,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,家を出る,いえをでる,,ie o deru,"wyjść na zewnątrz (domu)
 opuścić dom (w celu edukacji, zamieszkania w innym miejscu itp.)
@@ -293,7 +291,7 @@ brakująca wiadomość",,DICTIONARY2_SOURCE,,GroupId: 2860941
 pominięcie
 brakująca wiadomość",,DICTIONARY2_SOURCE,,GroupId: 2860941
 300174,WORD_NOUN,,HIRAGANA,,,少額短期保険,しょうがくたんきほけん,,shougaku tanki hoken,niskokwotowe krótkoterminowe ubezpieczenia,finanse,DICTIONARY2_SOURCE,,GroupId: 2860942
-300175,WORD_NOUN,,HIRAGANA,,,鹿茸,ろくじょう,,rokujou,???,medycyna; używane w tradycyjnej chińskiej medycynie,DICTIONARY2_SOURCE,,GroupId: 2860945
+300175,WORD_NOUN,,HIRAGANA,,,鹿茸,ろくじょう,,rokujou,???,używane w tradycyjnej chińskiej medycynie,DICTIONARY2_SOURCE,,GroupId: 2860945
 300176,WORD_NOUN,,HIRAGANA,,,消費行動,しょうひこうどう,,shouhi koudou,"zachowania konsumentów
 wzorce konsumpcji",,DICTIONARY2_SOURCE,,GroupId: 2860946
 300177,WORD_NOUN,,KATAKANA_HIRAGANA,,,イギリス東インド会社,イギリスひがしインドがいしゃ,,igirisu higashi indo gaisha,Brytyjska Kompania Wschodnioindyjska,"nazwa firmy; korporacja zrzeszająca angielskich inwestorów, z siedzibą w Londynie, działająca od 1600 roku do 1858 roku, głównie na terenie dzisiejszych Indii, także w Azji Południowo-Wschodniej i na Dalekim Wschodzie",DICTIONARY2_SOURCE,,GroupId: 5741094
@@ -317,3 +315,45 @@ wzorce konsumpcji",,DICTIONARY2_SOURCE,,GroupId: 2860946
 300195,WORD_NOUN,,KATAKANA,,,-,ブルー・バックス,,buruu bakkusu,Blue Backs,"dzieło artystyczne, np. literatura, muzyka i etc; seria książek o naukach przyrodniczych wydawana od 1963 roku przez Kodansha",DICTIONARY2_SOURCE,,GroupId: 5741135
 300196,WORD_NOUN,,KATAKANA,,,-,ブルーバックス,,buruu bakkusu,Blue Backs,"dzieło artystyczne, np. literatura, muzyka i etc; seria książek o naukach przyrodniczych wydawana od 1963 roku przez Kodansha",DICTIONARY2_SOURCE,,GroupId: 5741136
 300197,WORD_NOUN,,KATAKANA,,,-,ブロトポン,,burotopon,Brotopon,nazwa produktu; japońska marka haloperydolu,DICTIONARY2_SOURCE,,GroupId: 5741137
+300198,WORD_NOUN,,HIRAGANA,,,自由表面,じゆうひょうめん,,jiyuu hyoumen,powierzchnia swobodna,chemia,DICTIONARY2_SOURCE,,GroupId: 2860948
+300199,WORD_NOUN,,HIRAGANA,,,袋角,ふくろづの,,fukuroduno,???,,DICTIONARY2_SOURCE,,GroupId: 2860949
+300200,WORD_NOUN,,HIRAGANA,,,保護猫,ほごねこ,,hogo neko,"kot przetrzymywany w schronisku dla zwierząt lub ośrodku ratunkowym
+uratowany kot",,DICTIONARY2_SOURCE,,GroupId: 2860950
+300201,WORD_NOUN,,KATAKANA,,,-,ウェイクボード,,weikuboodo,"deska wakeboardowa
+wakeboarding",,DICTIONARY2_SOURCE,,GroupId: 2860953
+300202,WORD_NOUN,,KATAKANA,,,-,ウエークボード,,ueekuboodo,"deska wakeboardowa
+wakeboarding",,DICTIONARY2_SOURCE,,GroupId: 2860953
+300203,WORD_NOUN,,KATAKANA,,,-,ウエイクボード,,ueikuboodo,"deska wakeboardowa
+wakeboarding",,DICTIONARY2_SOURCE,,GroupId: 2860953
+300204,WORD_NOUN,,KATAKANA,,,-,ウェークボード,,weekuboodo,"deska wakeboardowa
+wakeboarding",,DICTIONARY2_SOURCE,,GroupId: 2860953
+300205,WORD_NOUN,,HIRAGANA,,,自由粒子,じゆうりゅうし,,jiyuu ryuushi,wolna cząstka,fizyka,DICTIONARY2_SOURCE,,GroupId: 2860954
+300206,WORD_NOUN,,HIRAGANA,,,自由大気,じゆうたいき,,jiyuu taiki,"wolne powietrze
+wolna atmosfera
+atmosfera 1-2 km nad ziemią",meteorologia,DICTIONARY2_SOURCE,,GroupId: 2860955
+300207,WORD_ADVERB,,HIRAGANA,,,既に,すんでに,,sunde ni,prawie,pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 8257,GroupId: 2860958
+300208,WORD_ADVERB,,HIRAGANA,,,已に,すんでに,,sunde ni,prawie,pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 29949,GroupId: 2860958
+300209,WORD_NOUN,,KATAKANA,,,-,ベルコア,,berukoa,Bellcore,"nazwa firmy; dawniej Bell Research Labs, obecnie Telcordia",DICTIONARY2_SOURCE,,GroupId: 5741139
+300210,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,マンシングウエア,,manshinguuea,Munsingwear,nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741143
+300211,WORD_NOUN,,KATAKANA,,,-,ベレッタ,,beretta,Beretta,nazwa firmy; włoskie przedsiębiorstwo produkujące broń strzelecką,DICTIONARY2_SOURCE,,GroupId: 5741146
+300212,WORD_NOUN,,KATAKANA,,,-,ファイアフォックス,,faiafokkusu,Firefox,"nazwa produktu; wieloplatformowa przeglądarka internetowa o otwartym kodzie źródłowym oparta na silniku Gecko, stworzona i rozwijana przez Mozilla Foundation, Mozilla Corporation oraz wolontariuszy. Rozpowszechniana jest na licencji MPL",DICTIONARY2_SOURCE,,GroupId: 5741150
+300213,WORD_NOUN,,KATAKANA,,,-,モジラ,,mojira,Mozilla,nazwa firmy; nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741151
+300214,WORD_NOUN,,KATAKANA,,,-,メガドラ,,mega dora,Mega Drive,nazwa produktu; skrót,DICTIONARY2_SOURCE,,GroupId: 5741152
+300215,WORD_NOUN,,HIRAGANA,,,もじら組,もじらぐみ,,mojira gumi,społeczność Mozilli,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5741155
+300216,WORD_NOUN,,KATAKANA,,,-,ランセル,,ranseru,Lancel,nazwa firmy; francuski producent,DICTIONARY2_SOURCE,,GroupId: 5741156
+300217,WORD_NOUN,,KATAKANA,,,-,プリウス,,puriusu,(Toyota) Prius,nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741167
+300218,WORD_NOUN,,KATAKANA,,,-,ユーレイルパス,,yuureirupasu,Eurailpass,nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741170
+300219,WORD_NOUN,,KATAKANA,,,-,ロットリング,,rottoringu,Rotring,nazwa produktu; pióro,DICTIONARY2_SOURCE,,GroupId: 5741172
+300220,WORD_NOUN,,KATAKANA,,,-,ユーテルサット,,yuuterusatto,"Eutelsat
+Europejski satelita telewizyjny",nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5741175
+300221,WORD_NOUN,,KATAKANA,,,-,ライムワイヤー,,raimuwaiyaa,LimeWire,nazwa produktu; program do udostępniania plików,DICTIONARY2_SOURCE,,GroupId: 5741176
+300222,WORD_NOUN,,KATAKANA,,,-,ロラメット,,rorametto,Loramet,nazwa produktu; 112-lormetazepam,DICTIONARY2_SOURCE,,GroupId: 5741178
+300223,WORD_NOUN,,HIRAGANA,,,豊饒の海,ほうじょうのうみ,,houjou no umi,Morze płodności,"dzieło artystyczne, np. literatura, muzyka i etc; tetralogia autorstwa Mishimy",DICTIONARY2_SOURCE,,GroupId: 5741193
+300224,WORD_NOUN,,HIRAGANA,,,電総研,でんそうけん,,densouken,"Electro-technical Laboratory
+ETL",nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5741195
+300225,WORD_NOUN,,HIRAGANA,,,文読む月日,ふみよむつきひ,,fumiyomu tsukihi,Kalendarz Mądrości,"dzieło artystyczne, np. literatura, muzyka i etc; książka autorstwa Tolstoi",DICTIONARY2_SOURCE,,GroupId: 5741197
+300226,WORD_NOUN,,HIRAGANA,,,風に吹かれて,かぜにふかれて,,kaze ni fukarete,Blowin' in the wind,"dzieło artystyczne, np. literatura, muzyka i etc",DICTIONARY2_SOURCE,,GroupId: 5741200
+300227,WORD_NOUN,,HIRAGANA,,,うまい棒,うまいぼう,,umai bou,Umaibo,"nazwa produktu; małe, cylindryczne kukurydziane przekąski",DICTIONARY2_SOURCE,,GroupId: 5741201
+300228,WORD_NOUN,,HIRAGANA,,,恋の骨折り甲斐,こいのほねおりがい,,koi no honeori gai,Love’s Labour’s Won,"dzieło artystyczne, np. literatura, muzyka i etc; zaginiona komedia autorstwa Williama Shakespeare’a, napisana przed 1598 rokiem. Nie ma pewności co do tego, czy utwór ten zaginął, czy też jest to tytuł alternatywny dla jednej ze znanych sztuk",DICTIONARY2_SOURCE,,GroupId: 5741209
+300229,WORD_NOUN,,HIRAGANA,,,恋の骨折り損,こいのほねおりぞん,,koi no honeori zon,Love’s Labour’s Won,"dzieło artystyczne, np. literatura, muzyka i etc; zaginiona komedia autorstwa Williama Shakespeare’a, napisana przed 1598 rokiem. Nie ma pewności co do tego, czy utwór ten zaginął, czy też jest to tytuł alternatywny dla jednej ze znanych sztuk",DICTIONARY2_SOURCE,,GroupId: 5741210
+300230,WORD_NOUN,,KATAKANA,,,-,ディスパレイト,,disupareito,Disparate,"dzieło artystyczne, np. literatura, muzyka i etc",DICTIONARY2_SOURCE,,GroupId: 5741218
