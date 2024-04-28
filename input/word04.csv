@@ -1399,8 +1399,7 @@ DUPLICATE 202247
 DUPLICATE 203664
 DUPLICATE 296715
 DUPLICATE 296716",GroupId: 2861005
-300815,WORD_NOUN,,HIRAGANA_EXCEPTION,,,-,おひぃさん,,ohisan,Słońce,dialekt Kansai,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2861065
+300815,WORD_NOUN,,HIRAGANA,,,ねこ吸い,ねこすい,,neko sui,wąchanie kota,slang,DICTIONARY2_SOURCE,,GroupId: 2854177
 300816,WORD_NOUN,,HIRAGANA,,,泡舟,あわぶね,,awabune,Bostrycapulus aculeatus,gatunek morskiego ślimaka,DICTIONARY2_SOURCE,,GroupId: 2861094
 300817,WORD_NOUN,,KATAKANA,,,-,アワブネ,,awabune,Bostrycapulus aculeatus,gatunek morskiego ślimaka,DICTIONARY2_SOURCE,,GroupId: 2861094
 300818,WORD_NOUN,,HIRAGANA,,,塗装業者,とそうぎょうしゃ,,tosou gyousha,malarz pokojowy,zawód,DICTIONARY2_SOURCE,,GroupId: 2861100
@@ -1416,18 +1415,24 @@ najlepiej",niestandardowy wariant od いっそのこと,DICTIONARY2_SOURCE,DUPLI
 300824,WORD_ADVERB,,HIRAGANA,,,いっそうの事,いっそうのこと,,issou no koto,"raczej
 wcześniej
 najlepiej",niestandardowy wariant od いっそのこと,DICTIONARY2_SOURCE,,GroupId: 2861103
-300825,WORD_VERB_RU,,KATAKANA_HIRAGANA,,,-,カッコつける,,kakkotsukeru,"starać się wyglądać stylowo
-starać się dobrze wyglądać
-popisywać się",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2861104
-300826,WORD_VERB_RU,,HIRAGANA,,,-,かっこつける,,kakkotsukeru,"starać się wyglądać stylowo
-starać się dobrze wyglądać
-popisywać się",,"DICTIONARY2_SOURCE
-TO_DELETE","DUPLICATE 67823
-DUPLICATE 67824
-DUPLICATE 67825
-DUPLICATE 102053
-DUPLICATE 102054",GroupId: 2861104
+300825,"WORD_ADJECTIVE_NO
+WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,一かど,ひとかど,,hitokado,"szanowany
+poważany
+???
+odpowiednio
+rozsądnie
+jedna kwestia (przestarzałe słowo)
+jedno pole (przestarzałe słowo)",,DICTIONARY2_SOURCE,DUPLICATE 300826,GroupId: 1727870
+300826,"WORD_ADJECTIVE_NO
+WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,一かど,いっかど,,ikkado,"szanowany
+poważany
+???
+odpowiednio
+rozsądnie
+jedna kwestia (przestarzałe słowo)
+jedno pole (przestarzałe słowo)",,DICTIONARY2_SOURCE,DUPLICATE 300825,GroupId: 1727870
 300827,WORD_NOUN,,HIRAGANA,,,国境なき記者団,こっきょうなききしゃだん,,kokkyou na kikishadan,Reporterzy bez Granic,"nazwa organizacji; międzynarodowa organizacja pozarządowa, propagująca i monitorująca wolność prasy na całym świecie",DICTIONARY2_SOURCE,,GroupId: 5741753
 300828,WORD_NOUN,,KATAKANA,,,華為,ファーウェイ,,faawei,Huawei,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5741759
 300829,WORD_NOUN,,HIRAGANA,,,新唐書,しんとうじょ,,shintoujo,Nowa Księga Tang,"dzieło artystyczne, np. literatura, muzyka i etc; XI-wieczna książka historyczna dotycząca dynastii Tang",DICTIONARY2_SOURCE,,GroupId: 5741765
@@ -1476,3 +1481,127 @@ DUPLICATE 300853",GroupId: 5741815
 300856,WORD_NOUN,,KATAKANA,,,-,イージス・アショア,,iijisu ashoa,Aegis Ashore,nazwa produktu; lądowy komponent amerykańskiego morskiego systemu antybalistycznego Aegis Ballistic Missile Defense,DICTIONARY2_SOURCE,,GroupId: 5741821
 300857,WORD_NOUN,,HIRAGANA,,,全労,ぜんろう,,zenrou,"Krajowa Konfederacja Związków Zawodowych (skrót, 1930-1936)
 Ogólnojapoński Kongres Związków Zawodowych (skrót, 1954-1964)",nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5744959
+300858,WORD_VERB_U,,HIRAGANA,,,-,くぐもる,,kugumoru,"być stłumionym
+być mamrotanym
+być wymamrotanym",,DICTIONARY2_SOURCE,,GroupId: 2056250
+300859,WORD_VERB_U,,HIRAGANA,,,-,くくもる,,kukumoru,"być stłumionym
+być mamrotanym
+być wymamrotanym",,DICTIONARY2_SOURCE,,GroupId: 2056250
+300860,WORD_VERB_RU,,KATAKANA_HIRAGANA,,,かっこ付ける,カッコつける,,kakkotsukeru,"starać się wyglądać stylowo
+starać się dobrze wyglądać
+popisywać się",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 102054,GroupId: 2861104
+300861,WORD_EXPRESSION,,HIRAGANA,,,何でまた,なんでまた,,nande mata,"ale dlaczego?
+dlaczego w ogóle?
+dlaczego to zrobiłeś?",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2861106
+300862,WORD_EXPRESSION,,HIRAGANA,,,なんで又,なんでまた,,nande mata,"ale dlaczego?
+dlaczego w ogóle?
+dlaczego to zrobiłeś?",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2861106
+300863,WORD_EXPRESSION,,HIRAGANA,,,何で又,なんでまた,,nande mata,"ale dlaczego?
+dlaczego w ogóle?
+dlaczego to zrobiłeś?",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2861106
+300864,WORD_NOUN,,HIRAGANA,,,二重ガラス,にじゅうがらす,,nijuu garasu,"podwójne szyby
+szkło z podwójną szybą",,DICTIONARY2_SOURCE,,GroupId: 2861108
+300865,WORD_NOUN,,KATAKANA,,,-,ハッピーターン,,happii taan,Happy Turn,nazwa produktu; marka krakersów ryżowych produkowanych przez Kameda Seika,DICTIONARY2_SOURCE,,GroupId: 5741824
+300866,WORD_NOUN,,KATAKANA,,,-,ロスコスモス,,rosukosumosu,Roscosmos,"nazwa organizacji; rosyjska agencja kosmiczna założona 25 lutego 1992, od 2015 jako korporacja państwowa sektora kosmicznego",DICTIONARY2_SOURCE,,GroupId: 5741826
+300867,WORD_NOUN,,KATAKANA,,,-,エイヴィス,,eivisu,Avis,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5741827
+300868,WORD_NOUN,,HIRAGANA,,,一貫道,いっかんどう,,ikkandou,"Yiguandao
+Tiandao","nazwa organizacji; wywodzący się z Chin synkretyczny nowy ruch religijny, stanowiący obecnie trzecie co do wielkości wyznanie na Tajwanie",DICTIONARY2_SOURCE,,GroupId: 5741831
+300869,WORD_NOUN,,KATAKANA,,,-,ウィキデータ,,wikideeta,Wikidata,"dzieło artystyczne, np. literatura, muzyka i etc; projekt internetowy mający na celu stworzenie wolnej, otwartej, wielojęzycznej bazy danych opartej na koncepcji grafów wiedzy",DICTIONARY2_SOURCE,,GroupId: 5741837
+300870,WORD_NOUN,,KATAKANA,,,ＵＲ,ユーアール,,yuuaaru,Urban Renaissance Agency,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5741841
+300871,WORD_NOUN,,KATAKANA,,,-,ニフティサーブ,,nifuti saabu,"NIFTY-serve
+Niftyserve",nazwa produktu; dawna usługa online świadczona przez Nifty Corp.,DICTIONARY2_SOURCE,,GroupId: 5741846
+300872,WORD_NOUN,,KATAKANA,,,-,ニフティーサーブ,,nifutii saabu,"NIFTY-serve
+Niftyserve",nazwa produktu; dawna usługa online świadczona przez Nifty Corp.,DICTIONARY2_SOURCE,,GroupId: 5741846
+300873,WORD_NOUN,,KATAKANA,,,-,プロシー,,puroshii,Pro*C,nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741847
+300874,WORD_NOUN,,KATAKANA,,,-,ペールギュント,,peeru gyunto,Peer Gynt,"dzieło artystyczne, np. literatura, muzyka i etc; dramat napisany wierszem przez Henrika Ibsena",DICTIONARY2_SOURCE,,GroupId: 5741850
+300875,WORD_NOUN,,KATAKANA,,,-,ペール・ギュント,,peeru gyunto,Peer Gynt,"dzieło artystyczne, np. literatura, muzyka i etc; dramat napisany wierszem przez Henrika Ibsena",DICTIONARY2_SOURCE,,GroupId: 5741850
+300876,WORD_NOUN,,KATAKANA,,,-,ユヴェントス,,yuventosu,Juventus,nazwa organizacji; włoski profesjonalny klub piłkarski założony 1 listopada 1897 roku,DICTIONARY2_SOURCE,,GroupId: 5741855
+300877,WORD_NOUN,,KATAKANA,,,-,ユベントス,,yubentosu,Juventus,nazwa organizacji; włoski profesjonalny klub piłkarski założony 1 listopada 1897 roku,DICTIONARY2_SOURCE,,GroupId: 5741855
+300878,WORD_NOUN,,KATAKANA,,,-,クロームキャスト,,kuroomukyasuto,Chromecast,nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741856
+300879,WORD_NOUN,,KATAKANA,,,-,ショックガン,,shokku gan,"stun gun
+tazer",nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741859
+300880,WORD_NOUN,,KATAKANA,,,-,ショック・ガン,,shokku gan,"stun gun
+tazer",nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741859
+300881,WORD_NOUN,,KATAKANA,,,-,ゼンリン,,zenrin,Zenrin,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5741865
+300882,WORD_NOUN,,KATAKANA,,,-,オーエスツーワープ,,ooesu tsuu waapu,OS-2 Warp,"nazwa produktu; system operacyjny stworzony przez firmy IBM i Microsoft, później rozwijany wyłącznie przez IBM",DICTIONARY2_SOURCE,,GroupId: 5741867
+300883,WORD_NOUN,,KATAKANA,,,-,パワープラスプラス,,pawaa purasu purasu,Power++,nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741868
+300884,WORD_NOUN,,KATAKANA,,,Ｃ＃,シーシャープ,,shii shaapu,C#,nazwa produktu; wieloparadygmatowy język programowania zaprojektowany w latach 1998–2001 przez zespół pod kierunkiem Andersa Hejlsberga dla firmy Microsoft,DICTIONARY2_SOURCE,,GroupId: 5741869
+300885,WORD_NOUN,,KATAKANA,,,-,ウィンソック,,winsokku,"WindSock
+Winsock",nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741878
+300886,WORD_NOUN,,KATAKANA,,,-,ビズテック,,bizutekku,Biztech,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5741879
+300887,WORD_NOUN,,KATAKANA,,,ＳＯＴＥＣ,ソーテック,,sootekku,SOTEC,nazwa firmy; japoński producent komputerów,DICTIONARY2_SOURCE,,GroupId: 5741880
+300888,WORD_NOUN,,KATAKANA,,,ＵＮＩＶＡＣ,ユニバック,,yunibakku,UNIVAC,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5741884
+300889,WORD_NOUN,,KATAKANA,,,ＤＡＣ,ダック,,dakku,"Development Assistance Committee (OECD)
+DAC",nazwa organizacji,DICTIONARY2_SOURCE,"DUPLICATE 74726
+DUPLICATE 300890
+DUPLICATE 300891",GroupId: 5741886
+300890,WORD_NOUN,,KATAKANA,,,ＤＡＣ,ディーエーシー,,dii ee shii,"Development Assistance Committee (OECD)
+DAC",nazwa organizacji,DICTIONARY2_SOURCE,"DUPLICATE 300889
+DUPLICATE 300891",GroupId: 5741886
+300891,WORD_NOUN,,KATAKANA,,,ＤＡＣ,ディー・エー・シー,,dii ee shii,"Development Assistance Committee (OECD)
+DAC",nazwa organizacji,DICTIONARY2_SOURCE,"DUPLICATE 300889
+DUPLICATE 300890",GroupId: 5741886
+300892,WORD_NOUN,,KATAKANA,,,-,ボーネルンド,,boonerundo,BørneLund,nazwa firmy; japońska firma produkująca zabawki,DICTIONARY2_SOURCE,,GroupId: 5741887
+300893,WORD_NOUN,,KATAKANA,,,ダイヤルＱ２,ダイヤルキューツー,,daiyaru kyuu tsuu,Dial Q2,nazwa produktu; usługa NTT,DICTIONARY2_SOURCE,DUPLICATE 300894,GroupId: 5741889
+300894,WORD_NOUN,,KATAKANA_EXCEPTION,,,ダイヤルＱ２,ダイヤルキュウツー,,daiyaru kyuu tsuu,Dial Q2,nazwa produktu; usługa NTT,DICTIONARY2_SOURCE,DUPLICATE 300893,GroupId: 5741889
+300895,WORD_NOUN,,KATAKANA,,,-,サイバードッグ,,saibaadoggu,Cyberdog,nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5741890
+300896,WORD_NOUN,,HIRAGANA,,,大江戸線,おおえどせん,,ooedo sen,linia Ōedo,usługa,DICTIONARY2_SOURCE,,GroupId: 5741892
+300897,WORD_NOUN,,KATAKANA_HIRAGANA,,,スマ墓,スマぼ,,suma bo,smart grave,nazwa produktu; aplikacja,DICTIONARY2_SOURCE,,GroupId: 5741899
+300898,WORD_NOUN,,KATAKANA_HIRAGANA,,,ウィキメディア財団,ウィキメディアざいだん,,wikimedia zaidan,Wikimedia Foundation,"nazwa organizacji; oficjalnie Wikimedia Foundation Inc. – organizacja typu non-profit z siedzibą w San Francisco, zarządzająca serwisami internetowymi typu wiki o wolnej treści",DICTIONARY2_SOURCE,,GroupId: 5741900
+300899,WORD_NOUN,,KATAKANA,,,-,ウィキブックス,,wikibukkusu,Wikibooks,"dzieło artystyczne, np. literatura, muzyka i etc; jeden z projektów Wikimedia Foundation, uruchomiony 10 lipca 2003 r. Jest to projekt siostrzany Wikipedii, który ma na celu poszerzanie i rozpowszechnianie darmowych, otwartych do edycji materiałów edukacyjnych, takich jak podręczniki szkolne, akademickie, poradniki, instrukcje obsługi oraz im podobne",DICTIONARY2_SOURCE,,GroupId: 5741901
+300900,WORD_NOUN,,HIRAGANA,,,会津小鉄会,あいづこてつかい,,aidukotetsu kai,Aizukotetsu-kai,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743013
+300901,WORD_NOUN,,HIRAGANA,,,共政会,きょうせいかい,,kyousei kai,Kyōsei-kai,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743014
+300902,WORD_NOUN,,HIRAGANA,,,合田一家,ごうだいっか,,gouda ikka,Gōda-ikka,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743015
+300903,WORD_NOUN,,HIRAGANA,,,浅野組,あさのぐみ,,asano gumi,Asano-gumi,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743016
+300904,WORD_NOUN,,HIRAGANA,,,親和会,しんわかい,,shinwa kai,Shinwa-kai,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743017
+300905,WORD_NOUN,,HIRAGANA,,,双愛会,そうあいかい,,souai kai,Sōai-kai,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743018
+300906,WORD_NOUN,,HIRAGANA,,,俠道会,きょうどうかい,,kyoudou kai,Kyōdō-kai,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743019
+300907,WORD_NOUN,,HIRAGANA,,,侠道会,きょうどうかい,,kyoudou kai,Kyōdō-kai,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743019
+300908,WORD_NOUN,,HIRAGANA,,,酒梅組,さかうめぐみ,,sakaume gumi,Sakaume-gumi,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743020
+300909,WORD_NOUN,,HIRAGANA,,,極東会,きょくとうかい,,kyokutou kai,Kyokutō-kai,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743021
+300910,WORD_NOUN,,HIRAGANA,,,東組,あずまぐみ,,azuma gumi,Azuma-gumi,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743022
+300911,WORD_NOUN,,HIRAGANA,,,松葉会,まつばかい,,matsuba kai,Matsuba-kai,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743023
+300912,WORD_NOUN,,HIRAGANA,,,神戸山口組,こうべやまぐちぐみ,,koube yamaguchi gumi,Kobe Yamaguchi-gumi,nazwa organizacji; syndykat yakuzy,DICTIONARY2_SOURCE,,GroupId: 5743024
+300913,WORD_NOUN,,HIRAGANA,,,神奈川県警,かながわけんけい,,kanagawa kenkei,Policja Prefektury Kanagawa,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743540
+300914,WORD_NOUN,,HIRAGANA,,,青森県警,あおもりけんけい,,aomori kenkei,Policja Prefektury Aomori,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743541
+300915,WORD_NOUN,,HIRAGANA,,,岩手県警,いわてけんけい,,iwate kenkei,Policja Prefektury Iwate,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743542
+300916,WORD_NOUN,,HIRAGANA,,,宮城県警,みやぎけんけい,,miyagi kenkei,Policja Prefektury Miyagi,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743543
+300917,WORD_NOUN,,HIRAGANA,,,秋田県警,あきたけんけい,,akita kenkei,Policja Prefektury Akita,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743544
+300918,WORD_NOUN,,HIRAGANA,,,山形県警,やまがたけんけい,,yamagata kenkei,Policja Prefektury Yamagata,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743545
+300919,WORD_NOUN,,HIRAGANA,,,福島県警,ふくしまけんけい,,fukushima kenkei,Policja Prefektury Fukushima,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743546
+300920,WORD_NOUN,,HIRAGANA,,,茨城県警,いばらきけんけい,,ibaraki kenkei,Policja Prefektury Ibaraki,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743547
+300921,WORD_NOUN,,HIRAGANA,,,栃木県警,とちぎけんけい,,tochigi kenkei,Policja Prefektury Tochigi,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743548
+300922,WORD_NOUN,,HIRAGANA,,,群馬県警,ぐんまけんけい,,gunma kenkei,Policja Prefektury Gunma,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743549
+300923,WORD_NOUN,,HIRAGANA,,,埼玉県警,さいたまけんけい,,saitama kenkei,Policja Prefektury Saitama,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743551
+300924,WORD_NOUN,,HIRAGANA,,,千葉県警,ちばけんけい,,chiba kenkei,Policja Prefektury Chiba,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743552
+300925,WORD_NOUN,,HIRAGANA,,,新潟県警,にいがたけんけい,,niigata kenkei,Policja Prefektury Niigata,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743553
+300926,WORD_NOUN,,HIRAGANA,,,山梨県警,やまなしけんけい,,yamanashi kenkei,Policja Prefektury Yamanashi,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743554
+300927,WORD_NOUN,,HIRAGANA,,,長野県警,ながのけんけい,,nagano kenkei,Policja Prefektury Nagano,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743555
+300928,WORD_NOUN,,HIRAGANA,,,静岡県警,しずおかけんけい,,shizuoka kenkei,Policja Prefektury Shizuoka,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743556
+300929,WORD_NOUN,,HIRAGANA,,,富山県警,とやまけんけい,,toyama kenkei,Policja Prefektury Toyama,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743557
+300930,WORD_NOUN,,HIRAGANA,,,石川県警,いしかわけんけい,,ishikawa kenkei,Policja Prefektury Ishikawa,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743558
+300931,WORD_NOUN,,HIRAGANA,,,福井県警,ふくいけんけい,,fukui kenkei,Policja Prefektury Fukui,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743559
+300932,WORD_NOUN,,HIRAGANA,,,岐阜県警,ぎふけんけい,,gifu kenkei,Policja Prefektury Gifu,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743560
+300933,WORD_NOUN,,HIRAGANA,,,愛知県警,あいちけんけい,,aichi kenkei,Policja Prefektury Aichi,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743561
+300934,WORD_NOUN,,HIRAGANA,,,三重県警,みえけんけい,,mie kenkei,Policja Prefektury Mie,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743562
+300935,WORD_NOUN,,HIRAGANA,,,滋賀県警,しがけんけい,,shiga kenkei,Policja Prefektury Shiga,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743563
+300936,WORD_NOUN,,HIRAGANA,,,兵庫県警,ひょうごけんけい,,hyougo kenkei,Policja Prefektury Hyogo,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743564
+300937,WORD_NOUN,,HIRAGANA,,,和歌山県警,わかやまけんけい,,wakayama kenkei,Policja Prefektury Wakayama,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743566
+300938,WORD_NOUN,,HIRAGANA,,,鳥取県警,とっとりけんけい,,tottori kenkei,Policja Prefektury Tottori,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743567
+300939,WORD_NOUN,,HIRAGANA,,,島根県警,しまねけんけい,,shimane kenkei,Policja Prefektury Shimane,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743568
+300940,WORD_NOUN,,HIRAGANA,,,岡山県警,おかやまけんけい,,okayama kenkei,Policja Prefektury Okayama,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743569
+300941,WORD_NOUN,,HIRAGANA,,,広島県警,ひろしまけんけい,,hiroshima kenkei,Policja Prefektury Hiroshima,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743570
+300942,WORD_NOUN,,HIRAGANA,,,山口県警,やまぐちけんけい,,yamaguchi kenkei,Policja Prefektury Yamaguchi,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743571
+300943,WORD_NOUN,,HIRAGANA,,,徳島県警,とくしまけんけい,,tokushima kenkei,Policja Prefektury Tokushima,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743572
+300944,WORD_NOUN,,HIRAGANA,,,香川県警,かがわけんけい,,kagawa kenkei,Policja Prefektury Kagawa,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743573
+300945,WORD_NOUN,,HIRAGANA,,,高知県警,こうちけんけい,,kouchi kenkei,Policja Prefektury Kōchi,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743575
+300946,WORD_NOUN,,HIRAGANA,,,福岡県警,ふくおかけんけい,,fukuoka kenkei,Policja Prefektury Fukuoka,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743576
+300947,WORD_NOUN,,HIRAGANA,,,佐賀県警,さがけんけい,,saga kenkei,Policja Prefektury Saga,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743577
+300948,WORD_NOUN,,HIRAGANA,,,長崎県警,ながさきけんけい,,nagasaki kenkei,Policja Prefektury Nagasaki,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743578
+300949,WORD_NOUN,,HIRAGANA,,,熊本県警,くまもとけんけい,,kumamoto kenkei,Policja Prefektury Kumamoto,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743579
+300950,WORD_NOUN,,HIRAGANA,,,大分県警,おおいたけんけい,,ooita kenkei,Policja Prefektury Ōita,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743580
+300951,WORD_NOUN,,HIRAGANA,,,宮崎県警,みやざきけんけい,,miyazaki kenkei,Policja Prefektury Miyazaki,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743581
+300952,WORD_NOUN,,HIRAGANA,,,鹿児島県警,かごしまけんけい,,kagoshima kenkei,Policja Prefektury Kagoshima,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743582
+300953,WORD_NOUN,,HIRAGANA,,,沖縄県警,おきなわけんけい,,okinawa kenkei,Policja Prefektury Okinawa,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5743583
+300954,WORD_NOUN,,HIRAGANA,,,北海道警察,ほっかいどうけいさつ,,hokkaidou keisatsu,Policja Prefektury Hokkaido,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5744165
+300955,WORD_NOUN,,HIRAGANA,,,大陽日酸,たいようにっさん,,taiyou nissan,Taiyo Nippon Sanso,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5743235
