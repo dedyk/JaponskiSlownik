@@ -1399,7 +1399,8 @@ DUPLICATE 202247
 DUPLICATE 203664
 DUPLICATE 296715
 DUPLICATE 296716",GroupId: 2861005
-300815,WORD_NOUN,,HIRAGANA_EXCEPTION,,,-,おひぃさん,,ohisan,Słońce,dialekt Kansai,DICTIONARY2_SOURCE,,GroupId: 2861065
+300815,WORD_NOUN,,HIRAGANA_EXCEPTION,,,-,おひぃさん,,ohisan,Słońce,dialekt Kansai,"DICTIONARY2_SOURCE
+TO_DELETE",,GroupId: 2861065
 300816,WORD_NOUN,,HIRAGANA,,,泡舟,あわぶね,,awabune,Bostrycapulus aculeatus,gatunek morskiego ślimaka,DICTIONARY2_SOURCE,,GroupId: 2861094
 300817,WORD_NOUN,,KATAKANA,,,-,アワブネ,,awabune,Bostrycapulus aculeatus,gatunek morskiego ślimaka,DICTIONARY2_SOURCE,,GroupId: 2861094
 300818,WORD_NOUN,,HIRAGANA,,,塗装業者,とそうぎょうしゃ,,tosou gyousha,malarz pokojowy,zawód,DICTIONARY2_SOURCE,,GroupId: 2861100
@@ -1417,10 +1418,12 @@ wcześniej
 najlepiej",niestandardowy wariant od いっそのこと,DICTIONARY2_SOURCE,,GroupId: 2861103
 300825,WORD_VERB_RU,,KATAKANA_HIRAGANA,,,-,カッコつける,,kakkotsukeru,"starać się wyglądać stylowo
 starać się dobrze wyglądać
-popisywać się",,DICTIONARY2_SOURCE,,GroupId: 2861104
+popisywać się",,"DICTIONARY2_SOURCE
+TO_DELETE",,GroupId: 2861104
 300826,WORD_VERB_RU,,HIRAGANA,,,-,かっこつける,,kakkotsukeru,"starać się wyglądać stylowo
 starać się dobrze wyglądać
-popisywać się",,DICTIONARY2_SOURCE,"DUPLICATE 67823
+popisywać się",,"DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 67823
 DUPLICATE 67824
 DUPLICATE 67825
 DUPLICATE 102053
