@@ -891,6 +891,17 @@ public class AndroidDictionaryGenerator {
 		
 		dictionaryEntriesFileWriter.close();
 		
+		// W przypadku błędu:
+		// ! TeX capacity exceeded, sorry [pool size=5815276]
+		//
+		// należy w pliku /usr/share/texmf-dist/web2c/texmf.cnf
+		//
+		// Zwiększyc pool_size, np:
+		// pool_size = 9250000
+		//
+		// A następnie uruchomić z root-a:
+		// fmtutil-sys --all
+		
 		// uruchomienie xelatex
 		Runtime runtime = Runtime.getRuntime();
 
