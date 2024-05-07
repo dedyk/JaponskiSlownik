@@ -2708,8 +2708,8 @@ OBWE",nazwa organizacji; organizacja międzynarodowa uznawana za organizację re
 301757,WORD_NOUN,,HIRAGANA,,,日本化学会,にほんかがくかい,,nihon kagakukai,Chemical Society of Japan,nazwa organizacji; stowarzyszenie naukowe z siedzibą w Tokio założone w 1878 r. w celu wspierania badań w dziedzinie chemii,DICTIONARY2_SOURCE,,GroupId: 5743764
 301758,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジェット推進研究所,ジェットすいしんけんきゅうじょ,,jetto suishin kenkyuujo,"Jet Propulsion Laboratory
 JPL","nazwa organizacji; jedno z centrów badawczych NASA, znajduje się w Pasadenie w stanie Kalifornia, około 50 km na północ od Los Angeles",DICTIONARY2_SOURCE,,GroupId: 5743780
-301759,WORD_NOUN,,HIRAGANA,,,杏露酒,しんるちゅう,,shinruchuu,Shinluchu,nazwa produktu; wino morelowe,DICTIONARY2_SOURCE,,GroupId: 5743793
-301760,WORD_NOUN,,KATAKANA_EXCEPTION,,,杏露酒,シンルチュウ,,shinruchuu,Shinluchu,nazwa produktu; wino morelowe,DICTIONARY2_SOURCE,,GroupId: 5743793
+301759,WORD_NOUN,,HIRAGANA,,,杏露酒,しんるちゅう,,shinruchuu,Shinluchu,nazwa produktu; wino morelowe,DICTIONARY2_SOURCE,DUPLICATE 301760,GroupId: 5743793
+301760,WORD_NOUN,,KATAKANA_EXCEPTION,,,杏露酒,シンルチュウ,,shinruchuu,Shinluchu,nazwa produktu; wino morelowe,DICTIONARY2_SOURCE,DUPLICATE 301759,GroupId: 5743793
 301761,WORD_NOUN,,KATAKANA,,,青島ビール,チンタオビール,,chintao biiru,Tsingtao,nazwa produktu; piwo,DICTIONARY2_SOURCE,,GroupId: 5743805
 301762,WORD_NOUN,,KATAKANA,,,青島啤酒,チンタオビール,,chintao biiru,Tsingtao,nazwa produktu; piwo,DICTIONARY2_SOURCE,,GroupId: 5743805
 301763,WORD_NOUN,,HIRAGANA,,,吉芋,きちいも,,kichiimo,Kichiimo,nazwa firmy; sieć restauracji serwujących słodkie ziemniaki,DICTIONARY2_SOURCE,,GroupId: 5743859
@@ -2738,8 +2738,10 @@ DEA","nazwa organizacji; amerykańska agencja rządowa, podlegająca Departament
 301785,WORD_NOUN,,KATAKANA_HIRAGANA,,,パリピ孔明,パリピこうめい,,paripi koumei,Paripi Kōmei,"dzieło artystyczne, np. literatura, muzyka i etc; manga napisana przez Yuto Yotsubę z ilustracjami Ryō Ogawy",DICTIONARY2_SOURCE,,GroupId: 5743950
 301786,WORD_NOUN,,HIRAGANA_KATAKANA,,,多摩都市モノレール,たまとしモノレール,,tamatoshi monoreeru,Tokyo Tama Intercity Monorail,usługa,DICTIONARY2_SOURCE,,GroupId: 5743955
 301787,WORD_NOUN,,HIRAGANA_KATAKANA,,,多摩モノレール,たまモノレール,,tama monoreeru,Tokyo Tama Intercity Monorail,usługa; skrót,DICTIONARY2_SOURCE,,GroupId: 5743956
-301788,WORD_NOUN,,KATAKANA,,,ＢＩＳ,ビス,,bisu,Bank Rozrachunków Międzynarodowych,"nazwa organizacji; najstarszy bank międzynarodowy, utworzony 17 maja 1930 roku na konferencji w Hadze, jako efekt realizacji Planu Younga",DICTIONARY2_SOURCE,,GroupId: 5743959
-301789,WORD_NOUN,,KATAKANA,,,ＢＩＳ,ビーアイエス,,biiaiesu,Bank Rozrachunków Międzynarodowych,"nazwa organizacji; najstarszy bank międzynarodowy, utworzony 17 maja 1930 roku na konferencji w Hadze, jako efekt realizacji Planu Younga",DICTIONARY2_SOURCE,,GroupId: 5743959
+301788,WORD_NOUN,,KATAKANA,,,ＢＩＳ,ビス,,bisu,Bank Rozrachunków Międzynarodowych,"nazwa organizacji; najstarszy bank międzynarodowy, utworzony 17 maja 1930 roku na konferencji w Hadze, jako efekt realizacji Planu Younga",DICTIONARY2_SOURCE,"DUPLICATE 24402
+DUPLICATE 262214
+DUPLICATE 301789",GroupId: 5743959
+301789,WORD_NOUN,,KATAKANA,,,ＢＩＳ,ビーアイエス,,biiaiesu,Bank Rozrachunków Międzynarodowych,"nazwa organizacji; najstarszy bank międzynarodowy, utworzony 17 maja 1930 roku na konferencji w Hadze, jako efekt realizacji Planu Younga",DICTIONARY2_SOURCE,DUPLICATE 301788,GroupId: 5743959
 301790,WORD_NOUN,,HIRAGANA,,,赤十字国際委員会,せきじゅうじこくさいいいんかい,,sekijuuji kokusai iinkai,Międzynarodowy Komitet Czerwonego Krzyża,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5743971
 301791,WORD_NOUN,,HIRAGANA_KATAKANA,,,激落ちキング,げきおちキング,,gekiochi kingu,Gekiochi King,nazwa produktu; gąbka z pianki melaminowej sprzedawana przez LEC,DICTIONARY2_SOURCE,,GroupId: 5743972
 301792,WORD_NOUN,,HIRAGANA,,,激落ちくん,げきおちくん,,gekiochi kun,Gekiochi-kun,nazwa produktu; gąbka z pianki melaminowej sprzedawana przez LEC,DICTIONARY2_SOURCE,,GroupId: 5743973
@@ -2752,5 +2754,29 @@ DEA","nazwa organizacji; amerykańska agencja rządowa, podlegająca Departament
 301799,WORD_NOUN,,HIRAGANA,,,北斗の拳,ほくとのけん,,hokuto no ken,Pięść Gwiazd Północy,"dzieło artystyczne, np. literatura, muzyka i etc; shōnen manga autorstwa Buronsona, wydawana w latach 1983–1988. Na jej podstawie powstał także serial anime, emitowany w latach 1984–1987",DICTIONARY2_SOURCE,,GroupId: 5744168
 301800,WORD_NOUN,,HIRAGANA,,,京都銀行,きょうとぎんこう,,kyouto ginkou,Bank Kyoto,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5744171
 301801,WORD_NOUN,,HIRAGANA,,,京銀,きょうぎん,,kyougin,Bank Kyoto,nazwa firmy; skrót,DICTIONARY2_SOURCE,,GroupId: 5744172
-301802,WORD_NOUN,,KATAKANA,,,-,スパー,,supaa,"xxx
-xxx",,,,GroupId: 5746669
+301802,WORD_NOUN,,KATAKANA,,,-,スパー,,supaa,Spar,nazwa firmy; sprzedawca detaliczny,DICTIONARY2_SOURCE,"DUPLICATE 88394
+DUPLICATE 88395
+DUPLICATE 297148",GroupId: 5746669
+301803,WORD_NOUN,,HIRAGANA,,,欧州委,おうしゅうい,,oushuui,Komisja Europejska,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5744173
+301804,WORD_NOUN,,HIRAGANA,,,-,おもろさうし,,omoro saushi,Omoro Sōshi,"dzieło artystyczne, np. literatura, muzyka i etc; kompilacja starożytnych pieśni i wierszy z Okinawy z ok. XII wieku",DICTIONARY2_SOURCE,,GroupId: 5744178
+301805,WORD_NOUN,,HIRAGANA,,,水平社,すいへいしゃ,,suiheisha,organizacja walcząca o prawa Burakumin,nazwa organizacji; 1922-1942,DICTIONARY2_SOURCE,,GroupId: 5744182
+301806,WORD_NOUN,,HIRAGANA,,,全国水平社,ぜんこくすいへいしゃ,,zenkoku suiheisha,organizacja walcząca o prawa Burakumin,nazwa organizacji; 1922-1942,DICTIONARY2_SOURCE,,GroupId: 5744183
+301807,WORD_NOUN,,HIRAGANA_KATAKANA,,,都営バス,とえいバス,,toei basu,Toei Bus,usługa,DICTIONARY2_SOURCE,,GroupId: 5744198
+301808,WORD_NOUN,,HIRAGANA,,,言志四録,げんししろく,,genshi shiroku,Genshi Shiroku,"dzieło artystyczne, np. literatura, muzyka i etc; księga powiedzeń autorstwa Satō Issai",DICTIONARY2_SOURCE,,GroupId: 5744202
+301809,WORD_NOUN,,HIRAGANA,,,北欧会議,ほくおうかいぎ,,hokuou kaigi,Rada Nordycka,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5744203
+301810,WORD_NOUN,,HIRAGANA,,,北欧理事会,ほくおうりじかい,,hokuou rijikai,Rada Nordycka,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5744208
+301811,WORD_NOUN,,KATAKANA_HIRAGANA,,,恒生銀行,ハンセンぎんこう,,hansen ginkou,Bank Hang Seng,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5744222
+301812,WORD_NOUN,,KATAKANA,,,-,ドアダッシュ,,doadasshu,DoorDash,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5744229
+301813,WORD_NOUN,,KATAKANA_HIRAGANA,,,ブリタニカ国際大百科事典,ブリタニカこくさいだいひゃっかじてん,,buritanika kokusai daihyakka jiten,Międzynarodowa Encyklopedia Britannica,"dzieło artystyczne, np. literatura, muzyka i etc",DICTIONARY2_SOURCE,,GroupId: 5744230
+301814,WORD_NOUN,,KATAKANA,,,-,ニッポニカ,,nipponika,Encyklopedia Nipponica,"dzieło artystyczne, np. literatura, muzyka i etc",DICTIONARY2_SOURCE,,GroupId: 5744233
+301815,WORD_NOUN,,HIRAGANA,,,秘府略,ひふりゃく,,hifuryaku,Hifuryaku,"dzieło artystyczne, np. literatura, muzyka i etc; japońska protoencyklopedia",DICTIONARY2_SOURCE,,GroupId: 5744234
+301816,WORD_NOUN,,KATAKANA,,,-,チキチキバンバン,,chiki chiki ban ban,Nasz cudowny samochodzik,"dzieło artystyczne, np. literatura, muzyka i etc; amerykańsko-brytyjski film familijny wyprodukowany w 1968 roku. Zrealizowany na podstawie powieści Iana Fleminga Chitty Chitty Bang Bang: The Magical Car",DICTIONARY2_SOURCE,,GroupId: 5744247
+301817,WORD_NOUN,,KATAKANA,,,-,チキ・チキ・バン・バン,,chiki chiki ban ban,Nasz cudowny samochodzik,"dzieło artystyczne, np. literatura, muzyka i etc; amerykańsko-brytyjski film familijny wyprodukowany w 1968 roku. Zrealizowany na podstawie powieści Iana Fleminga Chitty Chitty Bang Bang: The Magical Car",DICTIONARY2_SOURCE,,GroupId: 5744247
+301818,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,つくばエクスプレス,,tsukuba ekusupuresu,Tsukuba Express,usługa,DICTIONARY2_SOURCE,,GroupId: 5744248
+301819,WORD_NOUN,,KATAKANA,,,-,レッドハットリナックス,,reddo hatto rinakkusu,RedHat Linux,nazwa produktu; system operacyjny,DICTIONARY2_SOURCE,,GroupId: 5744250
+301820,WORD_NOUN,,KATAKANA,,,-,レッド・ハット・リナックス,,reddo hatto rinakkusu,RedHat Linux,nazwa produktu; system operacyjny,DICTIONARY2_SOURCE,,GroupId: 5744250
+301821,WORD_NOUN,,KATAKANA,,,-,ジェイディエドワーズ,,jei di edowaazu,J D Edwards,"nazwa firmy; amerykańskie przedsiębiorstwo informatyczne założone w marcu 1977 r. z siedzibą w Denver, w stanie Kolorado",DICTIONARY2_SOURCE,,GroupId: 5744251
+301822,WORD_NOUN,,KATAKANA,,,-,ジェイ・ディ・エドワーズ,,jei di edowaazu,J D Edwards,"nazwa firmy; amerykańskie przedsiębiorstwo informatyczne założone w marcu 1977 r. z siedzibą w Denver, w stanie Kolorado",DICTIONARY2_SOURCE,,GroupId: 5744251
+301823,WORD_NOUN,,KATAKANA,,,ＲＯＬＡＰ,ローラップ,,roorappu,"Relational Online Analytical Processing
+ROLAP",nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5744258
+301824,WORD_NOUN,,HIRAGANA_KATAKANA,,,大阪メトロ,おおさかメトロ,,oosaka metoro,metro w Osaka,usługa,DICTIONARY2_SOURCE,,GroupId: 5744294
