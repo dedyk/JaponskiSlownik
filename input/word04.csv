@@ -3385,9 +3385,12 @@ pokaz mody na małą skalę",,DICTIONARY2_SOURCE,,GroupId: 1112750
 pokaz mody na małą skalę",,DICTIONARY2_SOURCE,,GroupId: 1112750
 302252,WORD_NOUN,,KATAKANA,,,-,フロアー・ショウ,,furoaa shou,"program rozrywkowy (np. w lokalu nocnym, w restauracji, ang: floor show)
 pokaz mody na małą skalę",,DICTIONARY2_SOURCE,,GroupId: 1112750
-302253,WORD_NOUN,,KATAKANA,,,-,ミッドナイト・ショーウ,,middonaito shoou,"nocne widowisko
-nocny pokaz",ang: midnight show,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 1131040
+302253,WORD_NOUN,,HIRAGANA,,,さし入れ,さしいれ,,sashiire,"wkładka
+wkładanie
+otwór przez który wrzuca się listy
+wysyłanie do więźnia
+rzecz wysyłana do więźnia
+dostarczanie zapasów, posiłków to kogoś wykonującego określone zadanie",,DICTIONARY2_SOURCE,,GroupId: 1789470
 302254,WORD_NOUN,,KATAKANA,,,-,ミッドナイトショウ,,middonaito shou,"nocne widowisko
 nocny pokaz",ang: midnight show,DICTIONARY2_SOURCE,,GroupId: 1131040
 302255,WORD_NOUN,,KATAKANA,,,-,リアリティショウ,,riariti shou,reality show,,DICTIONARY2_SOURCE,,GroupId: 2859419
@@ -3541,7 +3544,7 @@ gniazdo jerzyka (jedzenie, gotowanie; używane do przygotowania ptasiej zupy)",,
 302331,WORD_NOUN,,HIRAGANA,,,黒カビ,くろかび,,kuro kabi,"kropidlak czarny
 czarna pleśń (potocznie)","gatunek grzybów z rodziny kropidlakowatych Aspergillaceae, Aspergillus niger",DICTIONARY2_SOURCE,,GroupId: 1773420
 302332,WORD_NOUN,,HIRAGANA,,,総合科学部,そうごうかがくぶ,,sougouka gakubu,wydział zintegrowanych sztuk i nauk,,DICTIONARY2_SOURCE,,GroupId: 2861230
-302333,WORD_NOUN,,KATAKANA,,,-,ファンタン,,fantan,fantan,chińska gra hazardowa,DICTIONARY2_SOURCE,,GroupId: 2861236
+302333,WORD_NOUN,,KATAKANA,,,-,ファンタン,,fantan,fan-tan,chińska gra hazardowa; słowo pochodzenia chińskiego,DICTIONARY2_SOURCE,,GroupId: 2861236
 302334,WORD_NOUN,,KATAKANA,,,-,トータルコーデ,,tootaru koode,"w pełni dopasowany strój
 skoordynowana odzież",odzież; ang: total coord(inate),DICTIONARY2_SOURCE,,GroupId: 2861237
 302335,WORD_NOUN,,HIRAGANA,,,焼き鳥屋,やきとりや,,yakitoriya,restauracja yakitori,,DICTIONARY2_SOURCE,,GroupId: 2861277
@@ -3601,18 +3604,37 @@ nie sądzisz?",skrót od のではないか,DICTIONARY2_SOURCE,,GroupId: 2861249
 WORD_ADJECTIVE_NO",,HIRAGANA,,,真裏,まうら,,maura,"tuż za
 bezpośrednio za",,DICTIONARY2_SOURCE,,GroupId: 2861297
 302371,WORD_NOUN,,HIRAGANA,,,太陽半径,たいようはんけい,,taiyou hankei,promień Słońca,"astronomia; używana w astronomii pozaukładowa jednostka miary używana do określania promienia gwiazd, równa połowie średnicy Słońca",DICTIONARY2_SOURCE,,GroupId: 2861298
-302372,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,痛気持ちいい,いたきもちいい,,itaki mochi ii,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,,GroupId: 2861299
-302373,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,痛気持ち良い,いたきもちいい,,itaki mochi ii,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,DUPLICATE 302374,GroupId: 2861299
-302374,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,痛気持ち良い,いたきもちよい,,itaki mochi yoi,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,DUPLICATE 302373,GroupId: 2861299
-302375,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,痛気持ちよい,いたきもちよい,,itaki mochi yoi,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.","DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2861299
+302372,WORD_ADJECTIVE_I,,HIRAGANA,,,痛気持ちいい,いたきもちいい,,itaki mochi ii,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,,GroupId: 2861299
+302373,WORD_ADJECTIVE_I,,HIRAGANA,,,痛気持ち良い,いたきもちいい,,itaki mochi ii,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,DUPLICATE 302374,GroupId: 2861299
+302374,WORD_ADJECTIVE_I,,HIRAGANA,,,痛気持ち良い,いたきもちよい,,itaki mochi yoi,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,DUPLICATE 302373,GroupId: 2861299
+302375,WORD_NOUN,,HIRAGANA,,,差しいれ,さしいれ,,sashiire,"wkładka
+wkładanie
+otwór przez który wrzuca się listy
+wysyłanie do więźnia
+rzecz wysyłana do więźnia
+dostarczanie zapasów, posiłków to kogoś wykonującego określone zadanie",,DICTIONARY2_SOURCE,,GroupId: 1789470
 302376,WORD_ADVERB,,HIRAGANA,,,子細に,しさいに,,shisai ni,"szczegółowo
 drobiazgowo
 ściśle",,DICTIONARY2_SOURCE,,GroupId: 2861300
 302377,WORD_ADVERB,,HIRAGANA,,,仔細に,しさいに,,shisai ni,"szczegółowo
 drobiazgowo
 ściśle",,DICTIONARY2_SOURCE,,GroupId: 2861300
+302378,WORD_VERB_U,,HIRAGANA,,,飛び退る,とびしさる,,tobi shisaru,odskoczyć,,DICTIONARY2_SOURCE,"DUPLICATE 247862
+DUPLICATE 302379",GroupId: 2069230
+302379,WORD_VERB_U,,HIRAGANA,,,飛び退る,とびしざる,,tobi shizaru,odskoczyć,,DICTIONARY2_SOURCE,"DUPLICATE 247862
+DUPLICATE 302378",GroupId: 2069230
+302380,WORD_VERB_U,,HIRAGANA,,,跳び退る,とびしさる,,tobi shisaru,odskoczyć,,DICTIONARY2_SOURCE,DUPLICATE 302381,GroupId: 2069230
+302381,WORD_VERB_U,,HIRAGANA,,,跳び退る,とびしざる,,tobi shizaru,odskoczyć,,DICTIONARY2_SOURCE,DUPLICATE 302380,GroupId: 2069230
+302382,WORD_NOUN,,KATAKANA,,,-,ミッドナイト・ショー,,middonaito shoo,"nocne widowisko
+nocny pokaz",ang: midnight show,DICTIONARY2_SOURCE,,GroupId: 1131040
+302383,WORD_ADJECTIVE_I,,HIRAGANA,,,イタ気持ちいい,いたきもちいい,,itaki mochi ii,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,,GroupId: 2861299
+302384,WORD_ADJECTIVE_I,,HIRAGANA,,,イタ気持ち良い,いたきもちいい,,itaki mochi ii,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,,GroupId: 2861299
+302385,WORD_ADJECTIVE_I,,HIRAGANA,,,痛気持ちよい,いたきもちいい,,itaki mochi ii,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,,GroupId: 2861299
+302386,WORD_ADJECTIVE_I,,HIRAGANA,,,痛きもちいい,いたきもちいい,,itaki mochi ii,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,,GroupId: 2861299
+302387,WORD_NOUN,,HIRAGANA,,,海技,かいぎ,,kaigi,"umiejętności marynarzy
+kompetencje marynarzy
+umiejętności morskie",,DICTIONARY2_SOURCE,,GroupId: 2861301
+302388,WORD_NOUN,,HIRAGANA,,,海技士,かいぎし,,kaigishi,"oficer morski
+oficer okrętowy",,DICTIONARY2_SOURCE,,GroupId: 2861302
+302389,WORD_NOUN,,HIRAGANA,,,勝ち試合,かちじあい,,kachi jiai,wygrany mecz,,DICTIONARY2_SOURCE,,GroupId: 2861303
+302390,WORD_NOUN,,HIRAGANA,,,中国海警局,ちゅうごくかいけいきょく,,chuugoku kaikeikyoku,Chińska Straż Przybrzeżna,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5746791
