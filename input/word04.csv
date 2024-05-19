@@ -3386,7 +3386,8 @@ pokaz mody na małą skalę",,DICTIONARY2_SOURCE,,GroupId: 1112750
 302252,WORD_NOUN,,KATAKANA,,,-,フロアー・ショウ,,furoaa shou,"program rozrywkowy (np. w lokalu nocnym, w restauracji, ang: floor show)
 pokaz mody na małą skalę",,DICTIONARY2_SOURCE,,GroupId: 1112750
 302253,WORD_NOUN,,KATAKANA,,,-,ミッドナイト・ショーウ,,middonaito shoou,"nocne widowisko
-nocny pokaz",ang: midnight show,DICTIONARY2_SOURCE,,GroupId: 1131040
+nocny pokaz",ang: midnight show,"DICTIONARY2_SOURCE
+TO_DELETE",,GroupId: 1131040
 302254,WORD_NOUN,,KATAKANA,,,-,ミッドナイトショウ,,middonaito shou,"nocne widowisko
 nocny pokaz",ang: midnight show,DICTIONARY2_SOURCE,,GroupId: 1131040
 302255,WORD_NOUN,,KATAKANA,,,-,リアリティショウ,,riariti shou,reality show,,DICTIONARY2_SOURCE,,GroupId: 2859419
@@ -3607,7 +3608,8 @@ WORD_EXPRESSION",,HIRAGANA,,,痛気持ち良い,いたきもちいい,,itaki moc
 302374,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,痛気持ち良い,いたきもちよい,,itaki mochi yoi,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,DUPLICATE 302373,GroupId: 2861299
 302375,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,痛気持ちよい,いたきもちよい,,itaki mochi yoi,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.",DICTIONARY2_SOURCE,,GroupId: 2861299
+WORD_EXPRESSION",,HIRAGANA,,,痛気持ちよい,いたきもちよい,,itaki mochi yoi,"bolesny, ale przyjemny","np. masaż, rozciąganie itp.","DICTIONARY2_SOURCE
+TO_DELETE",,GroupId: 2861299
 302376,WORD_ADVERB,,HIRAGANA,,,子細に,しさいに,,shisai ni,"szczegółowo
 drobiazgowo
 ściśle",,DICTIONARY2_SOURCE,,GroupId: 2861300
