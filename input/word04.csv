@@ -2129,7 +2129,7 @@ Ohishi Tengudo","nazwa firmy; japoński producent kart do gry i innych tradycyjn
 301274,WORD_NOUN,,KATAKANA,,,-,グローボ,,guroobo,Globo,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5742584
 301275,WORD_NOUN,,KATAKANA,,,-,カツゲン,,katsugen,Katsugen,nazwa produktu; napój na bazie mleka sprzedawany na Hokkaido,DICTIONARY2_SOURCE,,GroupId: 5742587
 301276,WORD_NOUN,,HIRAGANA,,,宝玉と勺杖,ほうぎょくとしゃくじょう,,hougyoku to shakujou,Orb and Sceptre,"dzieło artystyczne, np. literatura, muzyka i etc; marsz autorstwa Sir William Walton",DICTIONARY2_SOURCE,,GroupId: 5742591
-301277,WORD_NOUN,,HIRAGANA,,,言海,げんかい,,genkai,Genkai,"dzieło artystyczne, np. literatura, muzyka i etc; słownik z 1886 roku",DICTIONARY2_SOURCE,,GroupId: 5742593
+301277,WORD_NOUN,,HIRAGANA,,,言海,げんかい,,genkai,Genkai,"dzieło artystyczne, np. literatura, muzyka i etc; japoński słownik z 1886 roku",DICTIONARY2_SOURCE,,GroupId: 5742593
 301278,WORD_NOUN,,HIRAGANA,,,大塚家具,おおつかかぐ,,ootsuka kagu,"Ōtsuka Kagu, Ltd",nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5742597
 301279,WORD_NOUN,,KATAKANA,,,-,エアインシャワー,,ea in shawaa,air-in shower,nazwa produktu; znak towarowy,DICTIONARY2_SOURCE,,GroupId: 5742601
 301280,WORD_NOUN,,HIRAGANA,,,金鳥,きんちょう,,kinchou,Kincho,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5742602
@@ -4035,7 +4035,92 @@ cerata",,DICTIONARY2_SOURCE,DUPLICATE 302587,GroupId: 2861430
 302589,WORD_NOUN,,KATAKANA,,,ＣＧアニメ,シージーアニメ,,shiijii anime,"animacja 3D
 animacja komputerowa",,DICTIONARY2_SOURCE,,GroupId: 2861431
 302590,WORD_NOUN,,HIRAGANA,,,誘導爆弾,ゆうどうばくだん,,yuudou bakudan,bomba kierowana,,DICTIONARY2_SOURCE,,GroupId: 2861434
-302591,WORD_VERB_U,,HIRAGANA,,,跳び退る,とびしさる,,tobi shisaru,odskoczyć,,DICTIONARY2_SOURCE,DUPLICATE 302592,GroupId: 2861435
-302592,WORD_VERB_U,,HIRAGANA,,,跳び退る,とびしざる,,tobi shizaru,odskoczyć,,DICTIONARY2_SOURCE,DUPLICATE 302591,GroupId: 2861435
+302591,WORD_VERB_U,,HIRAGANA,,,跳び退る,とびしさる,,tobi shisaru,odskoczyć,,DICTIONARY2_SOURCE,"DUPLICATE 302592
+DUPLICATE 302595",GroupId: 2861435
+302592,WORD_VERB_U,,HIRAGANA,,,跳び退る,とびしざる,,tobi shizaru,odskoczyć,,DICTIONARY2_SOURCE,"DUPLICATE 302591
+DUPLICATE 302595",GroupId: 2861435
 302593,WORD_NOUN,,HIRAGANA,,,富士総合火力演習,ふじそうごうかりょくえんしゅう,,fuji sougou karyoku enshuu,Fuji Firepower Review,wydarzenie; coroczne ćwiczenia ostrzału prowadzone przez JGSDF,DICTIONARY2_SOURCE,,GroupId: 5746806
 302594,WORD_NOUN,,HIRAGANA,,,ナマズ髭,なまずひげ,,namazu hige,zwisające wąsy,,DICTIONARY2_SOURCE,,GroupId: 1574890
+302595,WORD_VERB_U,,HIRAGANA,,,跳び退る,とびすさる,,tobi susaru,odskoczyć,,DICTIONARY2_SOURCE,"DUPLICATE 302591
+DUPLICATE 302592",GroupId: 2069230
+302596,WORD_NOUN,,KATAKANA,,,ＣＤ－Ｖ,シー・ディー・ブイ,,shii dii bui,"CD Video
+CD-V
+CDV",informatyka; format płyt CD,DICTIONARY2_SOURCE,DUPLICATE 109708,GroupId: 2300010
+302597,WORD_NOUN,,KATAKANA,,,ＣＤＭＡ,シー・ディー・エム・エー,,shii dii emu ee,"code-division multiple access
+CDMA","informatyka; metoda dostępu do medium transmisyjnego polegająca na przypisaniu poszczególnym użytkownikom korzystającym z tego samego kanału do przesyłania danych, sekwencji rozpraszających, dzięki którym odbiornik jednoznacznie zidentyfikuje przeznaczoną dla niego transmisję",DICTIONARY2_SOURCE,DUPLICATE 166039,GroupId: 2299980
+302598,WORD_NOUN,,KATAKANA,,,-,ファウンドリー,,faundorii,"odlewnia (półprzewodników)
+zakład produkcji półprzewodników",ang: foundry,DICTIONARY2_SOURCE,,GroupId: 2323960
+302599,WORD_NOUN,,KATAKANA,,,-,ファウンダリー,,faundarii,"odlewnia (półprzewodników)
+zakład produkcji półprzewodników",ang: foundry,DICTIONARY2_SOURCE,,GroupId: 2323960
+302600,WORD_NOUN,,KATAKANA,,,ＣＤ＋Ｇ,シー・ディー・ジー,,shii dii jii,"CD+G
+CD-G",informatyka; standard płyt kompaktowych,DICTIONARY2_SOURCE,DUPLICATE 247423,GroupId: 2299990
+302601,WORD_NOUN,,KATAKANA,,,ＣＤ-ｉ,シー・ディー・アイ,,shii dii ai,"Compact Disc-Interactive
+CD-i","informatyka; interaktywny, multimedialny odtwarzacz CD, produkowany przez Royal Phillips Electronics N.V.",DICTIONARY2_SOURCE,DUPLICATE 248822,GroupId: 2299970
+302602,WORD_VERB_U,,HIRAGANA,,,飛び退る,とびしさる,,tobi shisaru,odskoczyć,,DICTIONARY2_SOURCE,"DUPLICATE 247862
+DUPLICATE 302603",GroupId: 2861435
+302603,WORD_VERB_U,,HIRAGANA,,,飛び退る,とびしざる,,tobi shizaru,odskoczyć,,DICTIONARY2_SOURCE,"DUPLICATE 247862
+DUPLICATE 302602",GroupId: 2861435
+302604,WORD_NOUN,,KATAKANA,,,ＥＯＳ,イー・オー・エス,,ii oo esu,"elektroniczny system zamówień (informatyka; ang: electronic ordering system, EOS)
+koniec sprzedaży (ang: end of sales, EOS)",,DICTIONARY2_SOURCE,DUPLICATE 302605,GroupId: 2282030
+302605,WORD_NOUN,,KATAKANA,,,ＥＯＳ,イーオーエス,,ii oo esu,"elektroniczny system zamówień (informatyka; ang: electronic ordering system, EOS)
+koniec sprzedaży (ang: end of sales, EOS)",,DICTIONARY2_SOURCE,DUPLICATE 302604,GroupId: 2282030
+302606,WORD_NOUN,,KATAKANA,,,ＥＷＳ,イー・ダブリュー・エス,,ii daburyuu esu,"inżynierska stacja robocza (informatyka; ang: engineering workstation, EWS)
+system ostrzegania o zagrożeniach (ang: emergency warning system, EWS)",,DICTIONARY2_SOURCE,DUPLICATE 302607,GroupId: 2282160
+302607,WORD_NOUN,,KATAKANA,,,ＥＷＳ,イーダブリューエス,,ii daburyuu esu,"inżynierska stacja robocza (informatyka; ang: engineering workstation, EWS)
+system ostrzegania o zagrożeniach (ang: emergency warning system, EWS)",,DICTIONARY2_SOURCE,DUPLICATE 302606,GroupId: 2282160
+302608,WORD_NOUN,,KATAKANA,,,ＥＤＩ,イー・ディー・アイ,,ii dii ai,elektroniczna wymiana danych,"informatyka; automatyczna wymiana danych i dokumentów między różnymi systemami komputerowymi z wykorzystaniem ustalonych formatów komunikatów, ang: electronic data interchange, EDI",DICTIONARY2_SOURCE,DUPLICATE 302609,GroupId: 2282190
+302609,WORD_NOUN,,KATAKANA,,,ＥＤＩ,イーディーアイ,,ii dii ai,elektroniczna wymiana danych,"informatyka; automatyczna wymiana danych i dokumentów między różnymi systemami komputerowymi z wykorzystaniem ustalonych formatów komunikatów, ang: electronic data interchange, EDI",DICTIONARY2_SOURCE,DUPLICATE 302608,GroupId: 2282190
+302610,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＤＥＳ,ディー・イー・エス,,dii ii esu,"zamiana długu na kapitał własny (finanse; ang: debt-equity swap, DES)
+dietylostilbestrol (biochemia)
+stilbestrol (biochemia)
+DES (biochemia)
+Data Encryption Standard (informatyka; symetryczny szyfr blokowy zaprojektowany w 1975 roku przez IBM na zlecenie ówczesnego Narodowego Biura Standardów USA)
+DES (informatyka; symetryczny szyfr blokowy zaprojektowany w 1975 roku przez IBM na zlecenie ówczesnego Narodowego Biura Standardów USA)",,DICTIONARY2_SOURCE,DUPLICATE 302611,GroupId: 2311080
+302611,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＤＥＳ,ディーイーエス,,dii ii esu,"zamiana długu na kapitał własny (finanse; ang: debt-equity swap, DES)
+dietylostilbestrol (biochemia)
+stilbestrol (biochemia)
+DES (biochemia)
+Data Encryption Standard (informatyka; symetryczny szyfr blokowy zaprojektowany w 1975 roku przez IBM na zlecenie ówczesnego Narodowego Biura Standardów USA)
+DES (informatyka; symetryczny szyfr blokowy zaprojektowany w 1975 roku przez IBM na zlecenie ówczesnego Narodowego Biura Standardów USA)",,DICTIONARY2_SOURCE,DUPLICATE 302610,GroupId: 2311080
+302612,WORD_NOUN,,KATAKANA,,,ＤＡＰ,ディー・エー・ピー,,dii ee pii,cyfrowy odtwarzacz audio,"ang: digital audio player, DAP",DICTIONARY2_SOURCE,DUPLICATE 302613,GroupId: 2311110
+302613,WORD_NOUN,,KATAKANA,,,ＤＡＰ,ディーエーピー,,dii ee pii,cyfrowy odtwarzacz audio,"ang: digital audio player, DAP",DICTIONARY2_SOURCE,DUPLICATE 302612,GroupId: 2311110
+302614,WORD_NOUN,,KATAKANA,,,ＤＳＵ,ディー・エス・ユー,,dii esu yuu,cyfrowa jednostka serwisowa,"telekomunikacja; ang: digital service unit, DSU",DICTIONARY2_SOURCE,DUPLICATE 302615,GroupId: 2311150
+302615,WORD_NOUN,,KATAKANA,,,ＤＳＵ,ディーエスユー,,dii esu yuu,cyfrowa jednostka serwisowa,"telekomunikacja; ang: digital service unit, DSU",DICTIONARY2_SOURCE,DUPLICATE 302614,GroupId: 2311150
+302616,WORD_NOUN,,KATAKANA,,,-,フキハラ,,fukihara,"zrzędliwe lub niezadowolone zachowanie (sprawiające, że inni czują się niekomfortowo lub są zdenerwowani)",skrót; od 不機嫌ハラスメント,DICTIONARY2_SOURCE,,GroupId: 2861308
+302617,WORD_NOUN,,HIRAGANA,,,防護策,ぼうごさく,,bougosaku,"środek ochronny
+zabezpieczenie",,DICTIONARY2_SOURCE,,GroupId: 2861326
+302618,WORD_NOUN,,HIRAGANA,,,統括部,とうかつぶ,,toukatsubu,"jednostka operacyjna
+dział nadzoru
+dział kontroli",biznes,DICTIONARY2_SOURCE,,GroupId: 2861378
+302619,WORD_NOUN,,KATAKANA,,,-,グレフル,,gurefuru,grejpfrut,skrót; ang: grapefruit,DICTIONARY2_SOURCE,,GroupId: 2861432
+302620,WORD_NOUN,,HIRAGANA,,,保護施設,ほごしせつ,,hogo shisetsu,"schronisko
+placówka rehabilitacyjna",,DICTIONARY2_SOURCE,,GroupId: 2861436
+302621,WORD_NOUN,,KATAKANA_HIRAGANA,,,アーチ窓,アーチまど,,aachi mado,"okno łukowe
+okno w kształcie łuku",architektura,DICTIONARY2_SOURCE,,GroupId: 2861437
+302622,WORD_ADJECTIVE_F,,HIRAGANA,,,縁なし,ふちなし,,fuchi nashi,"bezramkowe (np. okulary)
+bez marginesów (np. drukowanie)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2861439
+302623,WORD_ADJECTIVE_F,,HIRAGANA,,,縁無し,ふちなし,,fuchi nashi,"bezramkowe (np. okulary)
+bez marginesów (np. drukowanie)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2861439
+302624,WORD_ADJECTIVE_F,,HIRAGANA,,,フチ無し,ふちなし,,fuchi nashi,"bezramkowe (np. okulary)
+bez marginesów (np. drukowanie)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2861439
+302625,WORD_ADJECTIVE_F,,KATAKANA_HIRAGANA,,,-,フチなし,,fuchi nashi,"bezramkowe (np. okulary)
+bez marginesów (np. drukowanie)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2861439
+302626,WORD_NOUN,,KATAKANA,,,-,デジタルオーディオプレーヤー,,dejitaru oodio pureeyaa,cyfrowy odtwarzacz audio,"ang: digital audio player, DAP",DICTIONARY2_SOURCE,,GroupId: 2861440
+302627,WORD_NOUN,,KATAKANA,,,-,デジタル・オーディオ・プレーヤー,,dejitaru oodio pureeyaa,cyfrowy odtwarzacz audio,"ang: digital audio player, DAP",DICTIONARY2_SOURCE,,GroupId: 2861440
+302628,WORD_NOUN,,KATAKANA,,,-,ファブ,,fabu,"produkcja (skrót; ang: fabrication)
+odlewnia (półprzewodników) (ang: fab)",,DICTIONARY2_SOURCE,,GroupId: 2861441
+302629,WORD_NOUN,,HIRAGANA,,,括弧書き,かっこがき,,kakko gaki,pisanie w nawiasach,,DICTIONARY2_SOURCE,,GroupId: 2861442
+302630,WORD_NOUN,,HIRAGANA,,,カッコ書き,かっこがき,,kakko gaki,pisanie w nawiasach,,DICTIONARY2_SOURCE,,GroupId: 2861442
+302631,WORD_NOUN,,HIRAGANA,,,かっこ書き,かっこがき,,kakko gaki,pisanie w nawiasach,,DICTIONARY2_SOURCE,,GroupId: 2861442
+302632,WORD_NOUN,,KATAKANA,,,-,ノンブレス,,non buresu,oddychanie okrężne,muzyka; technika umożliwiająca ciągłą grę na instrumencie dętym; ang: non-breath,DICTIONARY2_SOURCE,,GroupId: 2861443
+302633,WORD_ADJECTIVE_NA,,HIRAGANA,,,無反応,むはんのう,,muhannou,"niereagujący
+bez reakcji",,DICTIONARY2_SOURCE,,GroupId: 2861444
+302634,WORD_NOUN,,KATAKANA,,,-,ファブリケーション,,faburikeeshon,"produkcja
+montaż
+fałszerstwo
+fikcja",,DICTIONARY2_SOURCE,,GroupId: 2861445
+302635,WORD_NOUN,,KATAKANA,,,-,プロンプトエンジニアリング,,puronputo enjiniaringu,"szybka inżynieria
+konstruowanie generatywnych podpowiedzi AI",informatyka,DICTIONARY2_SOURCE,,GroupId: 2861446
+302636,WORD_NOUN,,KATAKANA,,,-,プロンプト・エンジニアリング,,puronputo enjiniaringu,"szybka inżynieria
+konstruowanie generatywnych podpowiedzi AI",informatyka,DICTIONARY2_SOURCE,,GroupId: 2861446
+302637,WORD_NOUN,,HIRAGANA,,,半導体集積回路,はんどうたいしゅうせきかいろ,,handoutai shuuseki kairo,półprzewodnikowy układ scalony,,DICTIONARY2_SOURCE,,GroupId: 2861447
