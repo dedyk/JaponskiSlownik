@@ -4047,7 +4047,7 @@ DUPLICATE 302592",GroupId: 2069230
 CD-V
 CDV",informatyka; format płyt CD,DICTIONARY2_SOURCE,DUPLICATE 109708,GroupId: 2300010
 302597,WORD_NOUN,,KATAKANA,,,ＣＤＭＡ,シー・ディー・エム・エー,,shii dii emu ee,"code-division multiple access
-CDMA","informatyka; metoda dostępu do medium transmisyjnego polegająca na przypisaniu poszczególnym użytkownikom korzystającym z tego samego kanału do przesyłania danych, sekwencji rozpraszających, dzięki którym odbiornik jednoznacznie zidentyfikuje przeznaczoną dla niego transmisję",DICTIONARY2_SOURCE,DUPLICATE 166039,GroupId: 2299980
+CDMA","telekomunikacja; metoda dostępu do medium transmisyjnego polegająca na przypisaniu poszczególnym użytkownikom korzystającym z tego samego kanału do przesyłania danych, sekwencji rozpraszających, dzięki którym odbiornik jednoznacznie zidentyfikuje przeznaczoną dla niego transmisję",DICTIONARY2_SOURCE,DUPLICATE 166039,GroupId: 2299980
 302598,WORD_NOUN,,KATAKANA,,,-,ファウンドリー,,faundorii,"odlewnia (półprzewodników)
 zakład produkcji półprzewodników",ang: foundry,DICTIONARY2_SOURCE,,GroupId: 2323960
 302599,WORD_NOUN,,KATAKANA,,,-,ファウンダリー,,faundarii,"odlewnia (półprzewodników)
@@ -4086,7 +4086,7 @@ DES (informatyka; symetryczny szyfr blokowy zaprojektowany w 1975 roku przez IBM
 302613,WORD_NOUN,,KATAKANA,,,ＤＡＰ,ディーエーピー,,dii ee pii,cyfrowy odtwarzacz audio,"ang: digital audio player, DAP",DICTIONARY2_SOURCE,DUPLICATE 302612,GroupId: 2311110
 302614,WORD_NOUN,,KATAKANA,,,ＤＳＵ,ディー・エス・ユー,,dii esu yuu,cyfrowa jednostka serwisowa,"telekomunikacja; ang: digital service unit, DSU",DICTIONARY2_SOURCE,DUPLICATE 302615,GroupId: 2311150
 302615,WORD_NOUN,,KATAKANA,,,ＤＳＵ,ディーエスユー,,dii esu yuu,cyfrowa jednostka serwisowa,"telekomunikacja; ang: digital service unit, DSU",DICTIONARY2_SOURCE,DUPLICATE 302614,GroupId: 2311150
-302616,WORD_NOUN,,KATAKANA,,,-,フキハラ,,fukihara,"zrzędliwe lub niezadowolone zachowanie (sprawiające, że inni czują się niekomfortowo lub są zdenerwowani)",skrót; od 不機嫌ハラスメント,DICTIONARY2_SOURCE,,GroupId: 2861308
+302616,WORD_NOUN,,KATAKANA,,,-,フキハラ,,fukihara,zrzędliwe lub niezadowolone zachowanie,"skrót; sprawiające, że inni czują się niekomfortowo; jako forma nękania, od 不機嫌ハラスメント",DICTIONARY2_SOURCE,,GroupId: 2861308
 302617,WORD_NOUN,,HIRAGANA,,,防護策,ぼうごさく,,bougosaku,"środek ochronny
 zabezpieczenie",,DICTIONARY2_SOURCE,,GroupId: 2861326
 302618,WORD_NOUN,,HIRAGANA,,,統括部,とうかつぶ,,toukatsubu,"jednostka operacyjna
@@ -4124,3 +4124,41 @@ konstruowanie generatywnych podpowiedzi AI",informatyka,DICTIONARY2_SOURCE,,Grou
 302636,WORD_NOUN,,KATAKANA,,,-,プロンプト・エンジニアリング,,puronputo enjiniaringu,"szybka inżynieria
 konstruowanie generatywnych podpowiedzi AI",informatyka,DICTIONARY2_SOURCE,,GroupId: 2861446
 302637,WORD_NOUN,,HIRAGANA,,,半導体集積回路,はんどうたいしゅうせきかいろ,,handoutai shuuseki kairo,półprzewodnikowy układ scalony,,DICTIONARY2_SOURCE,,GroupId: 2861447
+302638,WORD_NOUN,,KATAKANA,,,-,セブン,,sebun,7-Eleven,"nazwa firmy; skrót, międzynarodowa sieć sklepów typu convenience",DICTIONARY2_SOURCE,DUPLICATE 18143,GroupId: 5746807
+302639,WORD_ADJECTIVE_I,,HIRAGANA,,,気持悪い,きもちわるい,,kimochi warui,"nieprzyjemny
+niemiły
+odrażający
+odpychający
+obrzydliwy
+niepokojący
+przerażający
+rażący
+wstrętny
+złe samopoczucie
+źle się czuć
+niewygodny
+denerwujący
+frustrujący",,DICTIONARY2_SOURCE,,GroupId: 1982670
+302640,WORD_ADJECTIVE_I,,HIRAGANA,,,キモチ悪い,きもちわるい,,kimochi warui,"nieprzyjemny
+niemiły
+odrażający
+odpychający
+obrzydliwy
+niepokojący
+przerażający
+rażący
+wstrętny
+złe samopoczucie
+źle się czuć
+niewygodny
+denerwujący
+frustrujący",,DICTIONARY2_SOURCE,,GroupId: 1982670
+302641,WORD_NOUN,,KATAKANA,,,-,コミュニケーションコスト,,komyunikeeshon kosuto,czas i wysiłek poświęcony na komunikację,biznes; ang: communication cost,DICTIONARY2_SOURCE,,GroupId: 2861321
+302642,WORD_NOUN,,KATAKANA,,,-,コミュニケーション・コスト,,komyunikeeshon kosuto,czas i wysiłek poświęcony na komunikację,biznes; ang: communication cost,DICTIONARY2_SOURCE,,GroupId: 2861321
+302643,WORD_NOUN,,HIRAGANA,,,冷茶,れいちゃ,,reicha,zimna herbata,,DICTIONARY2_SOURCE,,GroupId: 2861449
+302644,WORD_NOUN,,HIRAGANA,,,火起こし,ひおこし,,hi okoshi,rozpalanie ognia,,DICTIONARY2_SOURCE,,GroupId: 2861451
+302645,WORD_NOUN,,HIRAGANA,,,火おこし,ひおこし,,hi okoshi,rozpalanie ognia,,DICTIONARY2_SOURCE,,GroupId: 2861451
+302646,WORD_NOUN,,HIRAGANA,,,火起し,ひおこし,,hi okoshi,rozpalanie ognia,,DICTIONARY2_SOURCE,,GroupId: 2861451
+302647,WORD_NOUN,,HIRAGANA_KATAKANA,,,公共トイレ,こうきょうトイレ,,koukyou toire,"toaleta publiczna
+szalet
+szalet miejski",,DICTIONARY2_SOURCE,,GroupId: 2861452
