@@ -3149,8 +3149,8 @@ DUPLICATE 302121",GroupId: 1137720
 302121,WORD_NOUN,,HIRAGANA,,,ラー麺,らあめん,,raamen,"ramen
 kluski (makaron) w chińskim stylu (wyjaśnienie)","pisanie zwykle z użyciem kana; potrawa kuchni japońskiej i chińskiej, składa się z rosołu, makaronu i innych składników w zależności od receptury; chin: lāmiàn",DICTIONARY2_SOURCE,"DUPLICATE 302119
 DUPLICATE 302120",GroupId: 1137720
-302122,WORD_NOUN,,HIRAGANA,,,水産学部,すいさんがくぶ,,suisan gakubu,"departament rybołówstwa
-departament nauk o rybołówstwie",,DICTIONARY2_SOURCE,,GroupId: 2861165
+302122,WORD_NOUN,,HIRAGANA,,,水産学部,すいさんがくぶ,,suisan gakubu,"wydział rybactwa
+wydział nauk o rybołówstwie",,DICTIONARY2_SOURCE,,GroupId: 2861165
 302123,WORD_NOUN,,HIRAGANA,,,体育学部,たいいくがくぶ,,taiiku gakubu,departament wychowania fizycznego,,DICTIONARY2_SOURCE,,GroupId: 2861168
 302124,WORD_NOUN,,HIRAGANA,,,芸術工学部,げいじゅつこうがくぶ,,geijutsukou gakubu,"wydział wzornictwa
 departament projektowania",,DICTIONARY2_SOURCE,,GroupId: 2861169
@@ -3441,8 +3441,8 @@ DUPLICATE 302283",GroupId: 2861259
 302279,WORD_NOUN,,KATAKANA,,,-,ネコポス,,nekoposu,Nekopos,usługa; usługa dostawy małych paczek następnego dnia oferowana przez Yamato Transport,DICTIONARY2_SOURCE,,GroupId: 5746784
 302280,WORD_NOUN,,KATAKANA,,,-,チート・シート,,chiito shiito,"ściąga
 ściągawka",ang: cheat sheet,DICTIONARY2_SOURCE,,GroupId: 2861293
-302281,WORD_NOUN,,KATAKANA,,,-,プロパー,,puropaa,sprzedawca produktów farmaceutycznych,ang: propa(gandist),DICTIONARY2_SOURCE,DUPLICATE 24958,GroupId: 2861248
-302282,WORD_NOUN,,KATAKANA,,,-,プロパ,,puropa,sprzedawca produktów farmaceutycznych,ang: propa(gandist),DICTIONARY2_SOURCE,DUPLICATE 302246,GroupId: 2861248
+302281,WORD_NOUN,,KATAKANA,,,-,プロパー,,puropaa,przedstawiciel farmaceutyczny,ang: propa(gandist),DICTIONARY2_SOURCE,DUPLICATE 24958,GroupId: 2861248
+302282,WORD_NOUN,,KATAKANA,,,-,プロパ,,puropa,przedstawiciel farmaceutyczny,ang: propa(gandist),DICTIONARY2_SOURCE,DUPLICATE 302246,GroupId: 2861248
 302283,WORD_INTERJECTION,,HIRAGANA,,,-,ちち,,chichi,ćwierkanie,onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,"DUPLICATE 205
 DUPLICATE 4551
 DUPLICATE 24632
@@ -3466,15 +3466,17 @@ WORD_NOUN",,HIRAGANA,,,道行く人,みちゆくひと,,michi yuku hito,przechod
 302294,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,道ゆく人,みちゆくひと,,michi yuku hito,przechodzień,,DICTIONARY2_SOURCE,,GroupId: 2861262
 302295,WORD_NOUN,,KATAKANA,,,ＭＲ,エム・アール,,emu aaru,"przedstawiciel medyczny
-sprzedawca produktów farmaceutycznych
+przedstawiciel farmaceutyczny
 rzeczywistość mieszana
+badania marketingowe
 cofanie się krwi z lewej komory do przedsionka (medycyna; ang: mitral regurgitation)",,DICTIONARY2_SOURCE,DUPLICATE 302296,GroupId: 2861263
 302296,WORD_NOUN,,KATAKANA,,,ＭＲ,エムアール,,emu aaru,"przedstawiciel medyczny
-sprzedawca produktów farmaceutycznych
+przedstawiciel farmaceutyczny
 rzeczywistość mieszana
+badania marketingowe
 cofanie się krwi z lewej komory do przedsionka (medycyna; ang: mitral regurgitation)",,DICTIONARY2_SOURCE,DUPLICATE 302295,GroupId: 2861263
 302297,WORD_NOUN,,HIRAGANA,,,医薬情報担当者,いやくじょうほうたんとうしゃ,,iyaku jouhou tantousha,"przedstawiciel medyczny
-sprzedawca produktów farmaceutycznych",,DICTIONARY2_SOURCE,,GroupId: 2861264
+przedstawiciel farmaceutyczny",,DICTIONARY2_SOURCE,,GroupId: 2861264
 302298,WORD_NOUN,,HIRAGANA,,,家族性地中海熱,かぞくせいちちゅうかいねつ,,kazokusei chichuukainetsu,rodzinna gorączka śródziemnomorska,medycyna,DICTIONARY2_SOURCE,,GroupId: 2861265
 302299,WORD_NOUN,,KATAKANA,,,-,インフォマティクス,,infomatikusu,informatyka,ang: informatics,DICTIONARY2_SOURCE,,GroupId: 2861266
 302300,WORD_NOUN,,KATAKANA,,,-,メタセコイヤ,,metasekoiya,metasekwoja chińska,"gatunek drzewa należący do rodziny cyprysowatych, jedyny żyjący przedstawiciel rodzaju metasekwoja, Metasequoia glyptostroboides; słowo pochodzenia łacińskiego",DICTIONARY2_SOURCE,,GroupId: 1133270
@@ -4295,12 +4297,12 @@ cziczewa",język z rodziny bantu używany w południowo-środkowej Afryce,DICTIO
 302715,WORD_NOUN,,KATAKANA_HIRAGANA,,,ソト語,ソトご,,soto go,język sotho,"język z rodziny bantu z grupy sotho-tswana, używany w Lesotho i RPA przez około 5 mln osób",DICTIONARY2_SOURCE,,GroupId: 2861479
 302716,WORD_NOUN,,HIRAGANA,,,地方新聞,ちほうしんぶん,,chihou shinbun,"gazeta lokalna
 gazeta regionalna",,DICTIONARY2_SOURCE,,GroupId: 2861480
-302717,WORD_EXPRESSION,,HIRAGANA,,,心のよりどころ,こころのよりどころ,,kokoro no yori dokoro,"źródło wsparcia emocjonalnego
-emocjonalna ostoja
-serce i dusza",,DICTIONARY2_SOURCE,,GroupId: 2861481
-302718,WORD_EXPRESSION,,HIRAGANA,,,心の拠り所,こころのよりどころ,,kokoro no yori dokoro,"źródło wsparcia emocjonalnego
-emocjonalna ostoja
-serce i dusza",,DICTIONARY2_SOURCE,,GroupId: 2861481
+302717,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,心のよりどころ,こころのよりどころ,,kokoro no yori dokoro,"źródło wsparcia emocjonalnego
+emocjonalna ostoja",,DICTIONARY2_SOURCE,,GroupId: 2861481
+302718,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,心の拠り所,こころのよりどころ,,kokoro no yori dokoro,"źródło wsparcia emocjonalnego
+emocjonalna ostoja",,DICTIONARY2_SOURCE,,GroupId: 2861481
 302719,WORD_NOUN,,KATAKANA_HIRAGANA,,,バリ語,バリご,,bari go,język balijski,,DICTIONARY2_SOURCE,,GroupId: 2861482
 302720,WORD_NOUN,,HIRAGANA,,,中間周波数,ちゅうかんしゅうはすう,,chuukan shuuhasuu,częstotliwość pośrednia,elektronika; w odbiornikach superheterodynowych to częstotliwość uzyskana ze zmieszania sygnału wysokiej częstotliwości z anteny odbiornika z częstotliwością drgań generatora – heterodyny,DICTIONARY2_SOURCE,,GroupId: 2861483
 302721,WORD_NOUN,,KATAKANA_HIRAGANA,,,ジョージア語,ジョージアご,,joojia go,język gruziński,,DICTIONARY2_SOURCE,,GroupId: 2861484
@@ -4352,7 +4354,7 @@ Uniwersytet Technologiczny w Nanjing",nazwa organizacji,DICTIONARY2_SOURCE,,Grou
 302764,WORD_NOUN,,HIRAGANA,,,帝京大,ていきょうだい,,teikyoudai,Uniwersytet Teikyo,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5746814
 302765,WORD_NOUN,,HIRAGANA,,,四天王寺大学,してんのうじだいがく,,shitennouji daigaku,Uniwersytet Shitennoji,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5746815
 302766,WORD_NOUN,,HIRAGANA,,,神戸親和大学,こうえしんわだいがく,,koue shinwa daigaku,Uniwersytet Kobe Shinwa,,DICTIONARY2_SOURCE,,GroupId: 5746817
-302767,WORD_EXPRESSION,,HIRAGANA,,,-,しま,,shima,zrobię,slang; ucięta wersja od します,DICTIONARY2_SOURCE,"DUPLICATE 1819
+302767,WORD_EXPRESSION,,HIRAGANA,,,-,しま,,shima,zrobię,slang; obcięta wersja od します,DICTIONARY2_SOURCE,"DUPLICATE 1819
 DUPLICATE 16987
 DUPLICATE 27158
 DUPLICATE 73730
@@ -4360,9 +4362,15 @@ DUPLICATE 93305
 DUPLICATE 214061
 DUPLICATE 224263
 DUPLICATE 267826",GroupId: 2861315
-302768,WORD_NOUN,,KATAKANA,,,-,クルクルパー,,kuru kuru paa,???,potocznie,DICTIONARY2_SOURCE,,GroupId: 2861364
-302769,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,くるくるぱー,,kuru kuru paa,???,potocznie,DICTIONARY2_SOURCE,,GroupId: 2861364
-302770,WORD_NOUN,,HIRAGANA,,,-,くるくるぱあ,,kuru kuru paa,???,potocznie,DICTIONARY2_SOURCE,,GroupId: 2861364
+302768,WORD_NOUN,,KATAKANA,,,-,クルクルパー,,kuru kuru paa,"głupek
+głupiec
+idiota",potocznie; przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2861364
+302769,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,くるくるぱー,,kuru kuru paa,"głupek
+głupiec
+idiota",potocznie; przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2861364
+302770,WORD_NOUN,,HIRAGANA,,,-,くるくるぱあ,,kuru kuru paa,"głupek
+głupiec
+idiota",potocznie; przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2861364
 302771,WORD_NOUN,,HIRAGANA,,,事情書,じじょうしょ,,jijousho,"raport sytuacyjny (np. po incydencie związanym z bezpieczeństwem)
 raport o stanie bieżących spraw",,DICTIONARY2_SOURCE,,GroupId: 2861376
 302772,WORD_NOUN,,HIRAGANA,,,入力補助,にゅうりょくほじょ,,nyuuryoku hojo,"pomoc przy wprowadzaniu danych
@@ -4469,3 +4477,52 @@ język palajski","język należący do rodziny języków austronezyjskich, używ
 302866,WORD_NOUN,,KATAKANA_HIRAGANA,,,上海応用技術大学,シャンハイおうようぎじゅつだいがく,,shanhai ouyou gijutsu daigaku,Szanghajski Instytut Technologii,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5745705
 302867,WORD_NOUN,,KATAKANA_HIRAGANA,,,チュラロンコン大学,チュラロンコンだいがく,,churaronkon daigaku,Uniwersytet Chulalongkorn,nazwa organizacji; w Tajlandii,DICTIONARY2_SOURCE,,GroupId: 5746466
 302868,WORD_NOUN,,HIRAGANA,,,京都芸術大学,きょうとげいじゅつだいがく,,kyouto geijutsu daigaku,Uniwersytet Sztuki w Kioto,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5746820
+302869,WORD_NOUN,,KATAKANA,,,-,パス,,pasu,"ścieżka (np. do pliku, katalogu)
+ścieżka
+wektor",informatyka,DICTIONARY2_SOURCE,DUPLICATE 19985,GroupId: 2861508
+302870,WORD_NOUN,,KATAKANA,,,-,ハンガー,,hangaa,hangar,,DICTIONARY2_SOURCE,"DUPLICATE 20404
+DUPLICATE 302871",GroupId: 2861509
+302871,WORD_NOUN,,KATAKANA,,,-,ハンガー,,hangaa,"głód
+pragnienie",ang: hunger,DICTIONARY2_SOURCE,"DUPLICATE 20404
+DUPLICATE 302870",GroupId: 2861510
+302872,WORD_NOUN,,HIRAGANA,,,ひと目ぼれ,ひとめぼれ,,hitome bore,"miłość od pierwszego wejrzenia
+???",,DICTIONARY2_SOURCE,DUPLICATE 143977,GroupId: 1166970
+302873,WORD_NOUN,,KATAKANA,,,-,レーシスト,,reeshisuto,rasista,ang: racist,DICTIONARY2_SOURCE,,GroupId: 2740650
+302874,WORD_NOUN,,KATAKANA,,,-,ゲームボーイ・アドバンス,,geemu booi adobansu,(Nintendo) Game Boy Advance,nazwa produktu; przenośna konsola do gier wyprodukowana przez firmę Nintendo,DICTIONARY2_SOURCE,,GroupId: 5031364
+302875,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,舌がまわる,したがまわる,,shita ga mawaru,"być gadatliwy
+być rozmowny
+mówić płynnie
+być dobrym mówcą",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2527660
+302876,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,心のより所,こころのよりどころ,,kokoro no yori dokoro,"źródło wsparcia emocjonalnego
+emocjonalna ostoja",,DICTIONARY2_SOURCE,,GroupId: 2861481
+302877,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,心の拠りどころ,こころのよりどころ,,kokoro no yori dokoro,"źródło wsparcia emocjonalnego
+emocjonalna ostoja",,DICTIONARY2_SOURCE,,GroupId: 2861481
+302878,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,心の拠所,こころのよりどころ,,kokoro no yori dokoro,"źródło wsparcia emocjonalnego
+emocjonalna ostoja",,DICTIONARY2_SOURCE,,GroupId: 2861481
+302879,WORD_NOUN,,KATAKANA_HIRAGANA,,,インバウンド価格,インバウンドかかく,,inbaundo kakaku,"cena turystyczna (w systemie podwójnych cen)
+cena płacona przez zagranicznych turystów (w przeciwieństwie do niższej ceny płaconej przez miejscowych)",,DICTIONARY2_SOURCE,,GroupId: 2861499
+302880,WORD_NOUN,,KATAKANA,,,プレ垢,プレアカ,,pure aka,konto premium,slang internetowy; skrót od プレミアムアカウント,DICTIONARY2_SOURCE,,GroupId: 2861501
+302881,WORD_NOUN,,KATAKANA,,,ＹＨ,ワイ・エッチ,,wai ecchi,schronisko młodzieżowe,skrót; ang: youth hostel,DICTIONARY2_SOURCE,DUPLICATE 302882,GroupId: 2861502
+302882,WORD_NOUN,,KATAKANA,,,ＹＨ,ワイエッチ,,wai ecchi,schronisko młodzieżowe,skrót; ang: youth hostel,DICTIONARY2_SOURCE,DUPLICATE 302881,GroupId: 2861502
+302883,WORD_NOUN,,HIRAGANA,,,疲れマラ,つかれまら,,tsukare mara,erekcja spowodowana wyczerpaniem,,DICTIONARY2_SOURCE,,GroupId: 2861503
+302884,WORD_NOUN,,HIRAGANA,,,疲れ魔羅,つかれまら,,tsukare mara,erekcja spowodowana wyczerpaniem,,DICTIONARY2_SOURCE,,GroupId: 2861503
+302885,WORD_ADJECTIVE_F,,KATAKANA,,,-,シングルオリジン,,shinguru orijin,z jednego źródła,"np. kawa, ang: single-origin",DICTIONARY2_SOURCE,,GroupId: 2861504
+302886,WORD_ADJECTIVE_F,,KATAKANA,,,-,シングル・オリジン,,shinguru orijin,z jednego źródła,"np. kawa, ang: single-origin",DICTIONARY2_SOURCE,,GroupId: 2861504
+302887,WORD_NOUN,,KATAKANA_HIRAGANA,,,ブレンド茶,ブレンドちゃ,,burendo cha,mieszanka herbat,,DICTIONARY2_SOURCE,,GroupId: 2861505
+302888,WORD_NOUN,,HIRAGANA,,,航空日誌,こうくうにっし,,koukuu nisshi,"dziennik pilota
+dziennik techniczny statku powietrznego",,DICTIONARY2_SOURCE,,GroupId: 2861506
+302889,WORD_NOUN,,HIRAGANA,,,僧帽弁閉鎖不全,そうぼうべんへいさふぜん,,soubouben heisa fuzen,"niedomykalność mitralna
+niewydolność mitralna
+niedomykalność zastawki mitralnej",medycyna,DICTIONARY2_SOURCE,,GroupId: 2861507
+302890,WORD_NOUN,,HIRAGANA,,,二重価格,にじゅうかかく,,nijuu kakaku,"dwie ceny (dla tego samego produktu)
+podwójne ceny",,DICTIONARY2_SOURCE,,GroupId: 2861511
+302891,WORD_NOUN,,HIRAGANA,,,棚卸表,たなおろしひょう,,tanaoroshi hyou,"inwentaryzacja
+lista zapasów",,DICTIONARY2_SOURCE,,GroupId: 2861512
+302892,WORD_NOUN,,HIRAGANA,,,棚卸し表,たなおろしひょう,,tanaoroshi hyou,"inwentaryzacja
+lista zapasów",,DICTIONARY2_SOURCE,,GroupId: 2861512
+302893,WORD_NOUN,,KATAKANA,,,ＷｉｎＲＡＲ,ウィンアールエーアール,,win'aarueeaaru,WinRAR,nazwa produktu; program do kompresji i archiwizacji danych,DICTIONARY2_SOURCE,DUPLICATE 302894,GroupId: 5746823
+302894,WORD_NOUN,,KATAKANA,,,ＷｉｎＲＡＲ,ウィンラー,,winraa,WinRAR,nazwa produktu; program do kompresji i archiwizacji danych,DICTIONARY2_SOURCE,DUPLICATE 302893,GroupId: 5746823
