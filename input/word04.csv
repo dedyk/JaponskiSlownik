@@ -4692,7 +4692,8 @@ kołpak",ang: wheel cover,DICTIONARY2_SOURCE,,GroupId: 2861565
 302983,WORD_NOUN,,KATAKANA,,,-,ホイルバランス,,hoiru baransu,wyważenie koła,ang: wheel balance,DICTIONARY2_SOURCE,,GroupId: 2861566
 302984,WORD_NOUN,,HIRAGANA,,,貸切湯,かしきりゆ,,kashikiriyu,prywatna kąpiel,np. w onsen,DICTIONARY2_SOURCE,,GroupId: 2861569
 302985,WORD_NOUN,,HIRAGANA,,,貸し切り湯,かしきりゆ,,kashikiriyu,prywatna kąpiel,np. w onsen,DICTIONARY2_SOURCE,,GroupId: 2861569
-302986,WORD_NOUN,,HIRAGANA_KATAKANA,,,交換ノート,こうかんノート,,koukan nooto,wymiana pamiętników między przyjaciółmi,zazwyczaj w szkole,DICTIONARY2_SOURCE,,GroupId: 2861570
+302986,WORD_NOUN,,HIRAGANA_KATAKANA,,,交換ノート,こうかんノート,,koukan nooto,"pamiętnik dzielony między przyjaciółmi (którzy na zmianę piszą wpisy)
+wymiana pamiętników",,DICTIONARY2_SOURCE,,GroupId: 2861570
 302987,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,胸に刻む,むねにきざむ,,mune ni kizamu,"zachować w pamięci
 wziąć sobie do serca",,DICTIONARY2_SOURCE,,GroupId: 2861571
@@ -4725,8 +4726,8 @@ neuroglej",anatomia,DICTIONARY2_SOURCE,,GroupId: 2861586
 303006,"WORD_NOUN
 WORD_ADJECTIVE_NO",,KATAKANA,,,-,ヴィリジアン,,virijian,???,ang: viridian,DICTIONARY2_SOURCE,,GroupId: 2500600
 303007,WORD_NOUN,,HIRAGANA,,,尺稼ぎ,しゃくかせぎ,,shaku kasegi,"wydłużanie filmu, programu telewizyjnego itp. w celu osiągnięcia pożądanej długości",,DICTIONARY2_SOURCE,,GroupId: 2861573
-303008,WORD_INTERJECTION,,KATAKANA,,,-,ノシ,,noshi,"pa-pa
-pożegnanie",slang internetowy; z ASCII art wykorzystującej ノ i シ do przedstawienia machającej ręki,DICTIONARY2_SOURCE,,GroupId: 2861579
+303008,UNKNOWN,,KATAKANA,,,-,ノシ,,noshi,"pa-pa
+do zobaczenia",slang internetowy; z tekstowych emotikonów wykorzystujących ノシ do reprezentowania machającej ręki,DICTIONARY2_SOURCE,,GroupId: 2861579
 303009,WORD_PREFIX,,KATAKANA,,,-,リ,,ri,re-,,DICTIONARY2_SOURCE,DUPLICATE 303028,GroupId: 2861583
 303010,WORD_NOUN,,KATAKANA,,,-,キャプ,,kyapu,"przechwytywanie (danych audiowizualnych)
 zrzut ekranu",informatyka; skrót; potocznie,DICTIONARY2_SOURCE,,GroupId: 2861588
@@ -4791,3 +4792,62 @@ autodiagnoza",medycyna; ang: self check,DICTIONARY2_SOURCE,,GroupId: 2861601
 303039,WORD_NOUN,,HIRAGANA,,,戦争と平和,せんそうとへいわ,,sensou to heiwa,Wojna i pokój,"dzieło artystyczne, np. literatura, muzyka i etc; powieść historyczna rosyjskiego pisarza Lwa Tołstoja, pisana w latach 1863–1869, często uznawana za rosyjską epopeję narodową",DICTIONARY2_SOURCE,,GroupId: 5746828
 303040,WORD_NOUN,,HIRAGANA,,,二十日鼠と人間,はつかねずみとにんげん,,hatsuka nezumi to ningen,Myszy i ludzie,"dzieło artystyczne, np. literatura, muzyka i etc; powieść amerykańskiego pisarza i noblisty Johna Steinbecka z 1937 roku",DICTIONARY2_SOURCE,,GroupId: 5746829
 303041,WORD_NOUN,,KATAKANA,,,-,スターリンク,,sutaarinku,Starlink,"nazwa produktu; telekomunikacyjny system satelitarny budowany przez amerykańską firmę SpaceX, zapewniający połączenie z prawie dowolnego miejsca na lądzie na świecie",DICTIONARY2_SOURCE,,GroupId: 5746830
+303042,WORD_NOUN,,KATAKANA,,,-,マッキントッシュ,,makkintosshu,"płaszcz przeciwdeszczowy
+prochowiec",ang: mackintosh,DICTIONARY2_SOURCE,"DUPLICATE 22779
+DUPLICATE 303043",GroupId: 2861605
+303043,WORD_NOUN,,KATAKANA,,,-,マッキントッシュ,,makkintosshu,McIntosh,jabłko,DICTIONARY2_SOURCE,"DUPLICATE 22779
+DUPLICATE 303042",GroupId: 2861606
+303044,WORD_NOUN,,KATAKANA,,,紐約,ニュー・ヨーク,,nyuu yooku,Nowy Jork,pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 55157,GroupId: 1091940
+303045,WORD_NOUN,,KATAKANA,,,新約克,ニュー・ヨーク,,nyuu yooku,Nowy Jork,pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 171050,GroupId: 1091940
+303046,WORD_NOUN,,HIRAGANA,,,いい男,よいおとこ,,yoi otoko,"przystojny mężczyzna (szczególnie 好い男)
+dobry mężczyzna
+wpływowa osoba (szczególnie w yakuza)
+zapaśnik w sumo",,DICTIONARY2_SOURCE,DUPLICATE 180618,GroupId: 1914290
+303047,WORD_NOUN,,HIRAGANA,,,よい男,いいおとこ,,ii otoko,"przystojny mężczyzna (szczególnie 好い男)
+dobry mężczyzna
+wpływowa osoba (szczególnie w yakuza)
+zapaśnik w sumo",,DICTIONARY2_SOURCE,DUPLICATE 180624,GroupId: 1914290
+303048,WORD_NOUN,,KATAKANA,,,張り,ハリ,,hari,"napięcie
+sprężystość (np. włosów) (często pisane jako ハリ)
+jędrność (np. skóry) (często pisane jako ハリ)
+ton (często pisane jako ハリ)
+siła (głosu) (często pisane jako ハリ)
+soczystość (często pisane jako ハリ)
+siła woli
+hart ducha
+duma
+poczucie celu",,DICTIONARY2_SOURCE,"DUPLICATE 14142
+DUPLICATE 64520",GroupId: 1427760
+303049,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,３度目の正直,さんどめのしょうじき,,sandome no shoujiki,do trzech razy sztuka,przysłowie,DICTIONARY2_SOURCE,,GroupId: 2140160
+303050,WORD_NOUN,,HIRAGANA,,,とも食い,ともぐい,,tomogui,"kanibalizm (wśród zwierząt)
+żywienie się sobą nawzajem
+kanibalizacja
+wzajemnie szkodliwa konkurencja
+walka wewnętrzna
+konflikt samobójczy",,DICTIONARY2_SOURCE,,GroupId: 1234610
+303051,WORD_NOUN,,KATAKANA_HIRAGANA,,,Ｂ木,ビーき,,bii ki,B-drzewo,"informatyka; drzewiasta struktura danych, przechowująca klucze w pewnym porządku i powiązane z nimi dane, używana przede wszystkim w systemach baz danych",DICTIONARY2_SOURCE,,GroupId: 2861602
+303052,WORD_NOUN,,KATAKANA,,,-,マクシミン,,makushimin,maxmin,matematyka,DICTIONARY2_SOURCE,,GroupId: 2861603
+303053,WORD_NOUN,,KATAKANA_HIRAGANA,,,ミニマックス原理,ミニマックスげんり,,minimakku sugenri,zasada minimax,np. w teorii gier,DICTIONARY2_SOURCE,,GroupId: 2861604
+303054,WORD_NOUN,,KATAKANA_HIRAGANA,,,オーダー品,オーダーひん,,oodaa hin,produkt na zamówienie,,DICTIONARY2_SOURCE,,GroupId: 2861607
+303055,WORD_VERB_U,,HIRAGANA,,,宣す,せんす,,sensu,ogłosić,,DICTIONARY2_SOURCE,,GroupId: 2861608
+303056,WORD_NOUN,,KATAKANA,,,-,ウォーキングマシン,,wookingu mashin,bieżnia,stacjonarne urządzenie treningowe; ang: walking machine,DICTIONARY2_SOURCE,,GroupId: 2861609
+303057,WORD_NOUN,,KATAKANA,,,-,ウォーキングマシーン,,wookingu mashiin,bieżnia,stacjonarne urządzenie treningowe; ang: walking machine,DICTIONARY2_SOURCE,,GroupId: 2861609
+303058,WORD_NOUN,,KATAKANA,,,-,ウォーキング・マシン,,wookingu mashin,bieżnia,stacjonarne urządzenie treningowe; ang: walking machine,DICTIONARY2_SOURCE,,GroupId: 2861609
+303059,WORD_NOUN,,KATAKANA,,,-,ウォーキング・マシーン,,wookingu mashiin,bieżnia,stacjonarne urządzenie treningowe; ang: walking machine,DICTIONARY2_SOURCE,,GroupId: 2861609
+303060,WORD_NOUN,,KATAKANA,,,-,セルラン,,seruran,"ranking sprzedaży (szczególnie dla aplikacji mobilnych)
+ranking pobrań",skrót; od セールスランキング,DICTIONARY2_SOURCE,,GroupId: 2861612
+303061,WORD_NOUN,,KATAKANA,,,ＭＵＸ,マックス,,makkusu,"mux
+multiplekser",elektronika; skrót,DICTIONARY2_SOURCE,DUPLICATE 35198,GroupId: 2861614
+303062,WORD_NOUN,,HIRAGANA,,,キラ引き,きらびき,,kira biki,papier washi powlekany miką,,DICTIONARY2_SOURCE,,GroupId: 2861615
+303063,WORD_NOUN,,HIRAGANA,,,雲母引き,きらびき,,kira biki,papier washi powlekany miką,,DICTIONARY2_SOURCE,,GroupId: 2861615
+303064,WORD_NOUN,,HIRAGANA,,,雲母引,きらびき,,kira biki,papier washi powlekany miką,,DICTIONARY2_SOURCE,,GroupId: 2861615
+303065,WORD_NOUN,,KATAKANA,,,-,バックギア,,bakku gia,"wsteczny bieg
+wsteczny",ang: back gear,DICTIONARY2_SOURCE,,GroupId: 2861616
+303066,WORD_NOUN,,KATAKANA,,,-,バック・ギア,,bakku gia,"wsteczny bieg
+wsteczny",ang: back gear,DICTIONARY2_SOURCE,,GroupId: 2861616
+303067,WORD_NOUN,,HIRAGANA,,,実況録音,じっきょうろくおん,,jikkyou rokuon,nagranie na żywo (audio),,DICTIONARY2_SOURCE,,GroupId: 2861617
+303068,"WORD_VERB_RU
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,スイッチを入れる,スイッチをいれる,,suicchi o ireru,włączać,,DICTIONARY2_SOURCE,,GroupId: 2861620
+303069,WORD_NOUN,,KATAKANA,,,-,ランニングマシーン,,ranningu mashiin,bieżnia,stacjonarne urządzenie treningowe; ang: running machine,DICTIONARY2_SOURCE,,GroupId: 2505450
+303070,WORD_NOUN,,KATAKANA,,,-,ランニング・マシーン,,ranningu mashiin,bieżnia,stacjonarne urządzenie treningowe; ang: running machine,DICTIONARY2_SOURCE,,GroupId: 2505450
