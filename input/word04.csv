@@ -4654,8 +4654,8 @@ partykuła wołacza (potocznie; wskazuje na frustrację, niecierpliwość itp.; 
 302957,WORD_NOUN,,HIRAGANA,,,痴話ゲンカ,ちわげんか,,chiwa genka,kłótnia kochanków,,DICTIONARY2_SOURCE,,GroupId: 1770420
 302958,WORD_NOUN,,KATAKANA,,,-,ワープア,,waapua,biedni pracujący,skrót,DICTIONARY2_SOURCE,,GroupId: 2861552
 302959,WORD_NOUN,,HIRAGANA,,,砂色,すないろ,,sunairo,piaskowy (kolor),,DICTIONARY2_SOURCE,,GroupId: 2861558
-302960,WORD_NOUN,,KATAKANA,,,-,スクロールホイール,,sukurooru hoiiru,kółko przewijania,ang: scroll wheel,DICTIONARY2_SOURCE,,GroupId: 2861560
-302961,WORD_NOUN,,KATAKANA,,,-,スクロール・ホイール,,sukurooru hoiiru,kółko przewijania,ang: scroll wheel,DICTIONARY2_SOURCE,,GroupId: 2861560
+302960,WORD_NOUN,,KATAKANA,,,-,スクロールホイール,,sukurooru hoiiru,kółko przewijania,informatyka; ang: scroll wheel,DICTIONARY2_SOURCE,,GroupId: 2861560
+302961,WORD_NOUN,,KATAKANA,,,-,スクロール・ホイール,,sukurooru hoiiru,kółko przewijania,informatyka; ang: scroll wheel,DICTIONARY2_SOURCE,,GroupId: 2861560
 302962,WORD_NOUN,,KATAKANA,,,-,マザボ,,mazabo,"płyta główna
 mobo",informatyka; skrót; potocznie,DICTIONARY2_SOURCE,,GroupId: 2861567
 302963,WORD_NOUN,,KATAKANA,,,-,ノーチェ,,nooche,noc,hisz: noche,DICTIONARY2_SOURCE,,GroupId: 2861568
@@ -4751,7 +4751,7 @@ nieunikniony",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 286159
 nieunikniony",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2861590
 303018,WORD_EXPRESSION,,HIRAGANA,,,已むなし,やむなし,,yamunashi,"nie można pomóc
 nieunikniony",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2861590
-303019,WORD_NOUN,,HIRAGANA_KATAKANA,,,税サ別,ぜいサべつ,,zeisabetsu,podatek i opłata serwisowa nie są uwzględniane,skrót; od 税金 i サービス,DICTIONARY2_SOURCE,,GroupId: 2861591
+303019,WORD_EXPRESSION,,HIRAGANA_KATAKANA,,,税サ別,ぜいサべつ,,zeisabetsu,podatek i opłata serwisowa nie są uwzględniane,skrót od 税金とサービス料は別途,DICTIONARY2_SOURCE,,GroupId: 2861591
 303020,WORD_NOUN,,HIRAGANA,,,単日,たんにち,,tannichi,"pojedynczy dzień
 jeden dzień",,DICTIONARY2_SOURCE,,GroupId: 2861592
 303021,WORD_NOUN,,KATAKANA,,,ｍｌ,エム・エル,,emu eru,"mililitr
@@ -4774,31 +4774,30 @@ DUPLICATE 303030",GroupId: 2861596
 DUPLICATE 303030",GroupId: 2861596
 303030,WORD_NOUN,,KATAKANA,,,Ｒｅ：,レー,,ree,Re:,w tematach wiadomości e-mail,DICTIONARY2_SOURCE,"DUPLICATE 303028
 DUPLICATE 303029",GroupId: 2861596
-303031,WORD_NOUN,,KATAKANA,,,-,サービストーク,,saabisu tooku,"przyjacielska pogawędka z klientami (np. w barze, w restauracji)
-small talk",ang: service talk,DICTIONARY2_SOURCE,,GroupId: 2861597
-303032,WORD_NOUN,,KATAKANA,,,-,サービス・トーク,,saabisu tooku,"przyjacielska pogawędka z klientami (np. w barze, w restauracji)
-small talk",ang: service talk,DICTIONARY2_SOURCE,,GroupId: 2861597
+303031,WORD_NOUN,,KATAKANA,,,-,サービストーク,,saabisu tooku,"uprzejma rozmowa
+(pochlebna) pogawędka",ang: service talk,DICTIONARY2_SOURCE,,GroupId: 2861597
+303032,WORD_NOUN,,KATAKANA,,,-,サービス・トーク,,saabisu tooku,"uprzejma rozmowa
+(pochlebna) pogawędka",ang: service talk,DICTIONARY2_SOURCE,,GroupId: 2861597
 303033,WORD_NOUN,,HIRAGANA,,,木版印刷,もくはんいんさつ,,mokuhan' insatsu,druk drzeworytniczy,,DICTIONARY2_SOURCE,,GroupId: 2861598
 303034,WORD_NOUN,,KATAKANA_HIRAGANA,,,グリーン購入,グリーンこうにゅう,,guriin kounyuu,"zakupy przyjazne dla środowiska
 zielone zakupy",,DICTIONARY2_SOURCE,,GroupId: 2861600
-303035,WORD_NOUN,,KATAKANA,,,-,セルフチェック,,serufu chekku,"samobadanie
-badanie własnego ciała
-autodiagnoza",medycyna; ang: self check,DICTIONARY2_SOURCE,,GroupId: 2861601
-303036,WORD_NOUN,,KATAKANA,,,-,セルフ・チェック,,serufu chekku,"samobadanie
-badanie własnego ciała
-autodiagnoza",medycyna; ang: self check,DICTIONARY2_SOURCE,,GroupId: 2861601
+303035,WORD_NOUN,,KATAKANA,,,-,セルフチェック,,serufu chekku,"samobadanie (np. pod kątem oznak choroby)
+badanie własnego ciała",ang: self check,DICTIONARY2_SOURCE,,GroupId: 2861601
+303036,WORD_NOUN,,KATAKANA,,,-,セルフ・チェック,,serufu chekku,"samobadanie (np. pod kątem oznak choroby)
+badanie własnego ciała",ang: self check,DICTIONARY2_SOURCE,,GroupId: 2861601
 303037,WORD_NOUN,,HIRAGANA,,,毛沢東,もうたくとう,,moutakutou,Mao Zedong,"imię i nazwisko osoby; chiński polityk, dyktator, przywódca Chińskiej Republiki Ludowej w latach 1949–1976",DICTIONARY2_SOURCE,DUPLICATE 303038,GroupId: 5666380
 303038,WORD_NOUN,,KATAKANA,,,毛沢東,マオツォトン,,maotsoton,Mao Zedong,"imię i nazwisko osoby; chiński polityk, dyktator, przywódca Chińskiej Republiki Ludowej w latach 1949–1976",DICTIONARY2_SOURCE,DUPLICATE 303037,GroupId: 5666380
 303039,WORD_NOUN,,HIRAGANA,,,戦争と平和,せんそうとへいわ,,sensou to heiwa,Wojna i pokój,"dzieło artystyczne, np. literatura, muzyka i etc; powieść historyczna rosyjskiego pisarza Lwa Tołstoja, pisana w latach 1863–1869, często uznawana za rosyjską epopeję narodową",DICTIONARY2_SOURCE,,GroupId: 5746828
 303040,WORD_NOUN,,HIRAGANA,,,二十日鼠と人間,はつかねずみとにんげん,,hatsuka nezumi to ningen,Myszy i ludzie,"dzieło artystyczne, np. literatura, muzyka i etc; powieść amerykańskiego pisarza i noblisty Johna Steinbecka z 1937 roku",DICTIONARY2_SOURCE,,GroupId: 5746829
 303041,WORD_NOUN,,KATAKANA,,,-,スターリンク,,sutaarinku,Starlink,"nazwa produktu; telekomunikacyjny system satelitarny budowany przez amerykańską firmę SpaceX, zapewniający połączenie z prawie dowolnego miejsca na lądzie na świecie",DICTIONARY2_SOURCE,,GroupId: 5746830
-303042,WORD_NOUN,,KATAKANA,,,-,マッキントッシュ,,makkintosshu,"płaszcz przeciwdeszczowy
-prochowiec",ang: mackintosh,"DICTIONARY2_SOURCE
-TO_DELETE","DUPLICATE 22779
-DUPLICATE 303043",GroupId: 2861605
-303043,WORD_NOUN,,KATAKANA,,,-,マッキントッシュ,,makkintosshu,McIntosh,jabłko,"DICTIONARY2_SOURCE
-TO_DELETE","DUPLICATE 22779
-DUPLICATE 303042",GroupId: 2861606
+303042,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,ＵＶカット,ユー・ブイ・カット,,yuubui katto,"blokowanie promieni ultrafioletowych
+blokowanie promieni UV
+ochrona przed promieniowaniem UV",ang: UV cut,DICTIONARY2_SOURCE,DUPLICATE 303043,GroupId: 2861622
+303043,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,ＵＶカット,ユーブイカット,,yuubui katto,"blokowanie promieni ultrafioletowych
+blokowanie promieni UV
+ochrona przed promieniowaniem UV",ang: UV cut,DICTIONARY2_SOURCE,DUPLICATE 303042,GroupId: 2861622
 303044,WORD_NOUN,,KATAKANA,,,紐約,ニュー・ヨーク,,nyuu yooku,Nowy Jork,pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 55157,GroupId: 1091940
 303045,WORD_NOUN,,KATAKANA,,,新約克,ニュー・ヨーク,,nyuu yooku,Nowy Jork,pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 171050,GroupId: 1091940
 303046,WORD_NOUN,,HIRAGANA,,,いい男,よいおとこ,,yoi otoko,"przystojny mężczyzna (szczególnie 好い男)
@@ -4853,3 +4852,41 @@ wsteczny",ang: back gear,DICTIONARY2_SOURCE,,GroupId: 2861616
 WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,スイッチを入れる,スイッチをいれる,,suicchi o ireru,włączać,,DICTIONARY2_SOURCE,,GroupId: 2861620
 303069,WORD_NOUN,,KATAKANA,,,-,ランニングマシーン,,ranningu mashiin,bieżnia,stacjonarne urządzenie treningowe; ang: running machine,DICTIONARY2_SOURCE,,GroupId: 2505450
 303070,WORD_NOUN,,KATAKANA,,,-,ランニング・マシーン,,ranningu mashiin,bieżnia,stacjonarne urządzenie treningowe; ang: running machine,DICTIONARY2_SOURCE,,GroupId: 2505450
+303071,WORD_NOUN,,KATAKANA,,,-,スイッチ,,suicchi,Nintendo Switch,nazwa produktu; konsola do gier,DICTIONARY2_SOURCE,DUPLICATE 2630,GroupId: 5746831
+303072,WORD_NOUN,,HIRAGANA,,,土台作り,どだいづくり,,dodai dukuri,"baza
+podstawa
+podkład
+kładzenie funtamentów (dosłownie)",,DICTIONARY2_SOURCE,,GroupId: 2861623
+303073,WORD_NOUN,,HIRAGANA,,,土台づくり,どだいづくり,,dodai dukuri,"baza
+podstawa
+podkład
+kładzenie funtamentów (dosłownie)",,DICTIONARY2_SOURCE,,GroupId: 2861623
+303074,WORD_NOUN,,HIRAGANA,,,土台つくり,どだいづくり,,dodai dukuri,"baza
+podstawa
+podkład
+kładzenie funtamentów (dosłownie)",,DICTIONARY2_SOURCE,,GroupId: 2861623
+303075,WORD_NOUN,,HIRAGANA,,,脊髄梗塞,せきずいこうそく,,sekizui kousoku,zawał rdzenia kręgowego,medycyna,DICTIONARY2_SOURCE,,GroupId: 2861624
+303076,WORD_ADJECTIVE_NO,,HIRAGANA,,,求心性,きゅうしんせい,,kyuushinsei,dośrodkowy,,DICTIONARY2_SOURCE,,GroupId: 2861625
+303077,WORD_NOUN,,HIRAGANA,,,凝固障害,ぎょうこしょうがい,,gyouko shougai,koagulopatia,medycyna; zaburzenie krzepnięcia krwi,DICTIONARY2_SOURCE,,GroupId: 2861626
+303078,WORD_NOUN,,HIRAGANA,,,背部痛,はいぶつう,,haibutsuu,ból pleców,medycyna,DICTIONARY2_SOURCE,,GroupId: 2861627
+303079,WORD_NOUN,,HIRAGANA,,,神経根,しんけいこん,,shinkeikon,korzeń nerwu,anatomia,DICTIONARY2_SOURCE,,GroupId: 2861628
+303080,WORD_NOUN,,HIRAGANA,,,頸椎症,けいついしょう,,keitsuishou,spondyloza szyjna,medycyna,DICTIONARY2_SOURCE,,GroupId: 2861629
+303081,WORD_ADJECTIVE_NO,,HIRAGANA,,,外傷性,がいしょうせい,,gaishousei,traumatyczny,medycyna,DICTIONARY2_SOURCE,,GroupId: 2861630
+303082,WORD_NOUN,,HIRAGANA,,,脊髄圧迫,せきずいあっぱく,,sekizui appaku,ucisk rdzenia kręgowego,medycyna,DICTIONARY2_SOURCE,,GroupId: 2861631
+303083,WORD_NOUN,,HIRAGANA,,,お取り寄せ,おとりよせ,,otori yose,"zamawianie (online, pocztą)
+zdalne zakupy",,DICTIONARY2_SOURCE,,GroupId: 2861632
+303084,WORD_NOUN,,HIRAGANA,,,お取寄せ,おとりよせ,,otori yose,"zamawianie (online, pocztą)
+zdalne zakupy",,DICTIONARY2_SOURCE,,GroupId: 2861632
+303085,WORD_NOUN,,HIRAGANA,,,お取寄,おとりよせ,,otori yose,"zamawianie (online, pocztą)
+zdalne zakupy",,DICTIONARY2_SOURCE,,GroupId: 2861632
+303086,WORD_NOUN,,HIRAGANA,,,お取りよせ,おとりよせ,,otori yose,"zamawianie (online, pocztą)
+zdalne zakupy",,DICTIONARY2_SOURCE,,GroupId: 2861632
+303087,WORD_NOUN,,HIRAGANA,,,おとり寄せ,おとりよせ,,otori yose,"zamawianie (online, pocztą)
+zdalne zakupy",,DICTIONARY2_SOURCE,,GroupId: 2861632
+303088,WORD_NOUN,,HIRAGANA,,,お取り寄,おとりよせ,,otori yose,"zamawianie (online, pocztą)
+zdalne zakupy",,DICTIONARY2_SOURCE,,GroupId: 2861632
+303089,WORD_NOUN,,HIRAGANA,,,御取り寄せ,おとりよせ,,otori yose,"zamawianie (online, pocztą)
+zdalne zakupy",,DICTIONARY2_SOURCE,,GroupId: 2861632
+303090,WORD_NOUN,,HIRAGANA,,,水彩紙,すいさいし,,suisaishi,papier do akwareli,estetyka sztuki,DICTIONARY2_SOURCE,,GroupId: 2861633
+303091,WORD_NOUN,,KATAKANA,,,-,ベスパ,,besupa,Vespa,nazwa produktu; włoska marka skuterów i motorowerów,DICTIONARY2_SOURCE,,GroupId: 5097449
+303092,WORD_NOUN,,KATAKANA,,,-,ヴェスパ,,vesupa,Vespa,nazwa produktu; włoska marka skuterów i motorowerów,DICTIONARY2_SOURCE,,GroupId: 5097449
