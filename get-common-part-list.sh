@@ -15,5 +15,6 @@
 # cat input/all_missing_word_from_group_id_full.csv | cut -c1-7 | sort | uniq
 # cat input/all_missing_word_from_group_id_in_dictionary2_format.csv | cut -c1-7 | sort | uniq | egrep "^5.*"
 # awk '!x[$0]++'
+# cat input/all_missing_word_from_group_id_words_no_exist_in_jmedict.csv | sed -rn 's/(.*)(GroupId: [0-9]*).*/\2/p' | cut -d' ' -f2 | awk '!x[$0]++'
 
 java -Xmx4096m -cp $CLASSPATH:target/JapaneseDictionary-1.0-SNAPSHOT.jar pl.idedyk.japanese.dictionary.tools.wordgenerator.WordGenerator get-common-part-list $@
