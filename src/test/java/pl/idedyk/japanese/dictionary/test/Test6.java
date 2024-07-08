@@ -15,6 +15,9 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
+import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
+import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
+import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.SaveKanjiDic2AsHumanCsvConfig;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
@@ -153,6 +156,7 @@ public class Test6 {
 	
 	private static void testKanjiDict2() throws Exception {
 		
+		/*
 		File kanjidic2File = new File("../JapaneseDictionary_additional/kanjidic2.xml");
 		
 		// walidacja xsd
@@ -176,7 +180,18 @@ public class Test6 {
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 		
 		Kanjidic2 kanjidic2 = (Kanjidic2) jaxbUnmarshaller.unmarshal(kanjidic2File);
+		*/
 		
+		Kanji2Helper kanji2Helper = Kanji2Helper.getOrInit();
+		
+		Kanjidic2 kanjidic2 = kanji2Helper.getKanjidic2();
+		
+		SaveKanjiDic2AsHumanCsvConfig config = new SaveKanjiDic2AsHumanCsvConfig();
+		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+		
+		kanji2Helper.saveKanjidic2AsHumanCsv(config, "/tmp/a/kanji2-test.csv", kanjidic2, entryAdditionalData);
+		
+		/*
 		List<CharacterInfo> characterList = kanjidic2.getCharacterList();
 		
 		for (CharacterInfo characterInfo : characterList) {
@@ -193,6 +208,7 @@ public class Test6 {
 					System.out.println("\t" + meaning.getLang() + " - " + meaning.getValue());				
 				}				
 			}			
-		}		
+		}
+		*/		
 	}
 }

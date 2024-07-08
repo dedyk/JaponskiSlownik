@@ -344,6 +344,8 @@ public class AndroidDictionaryGenerator {
 			TreeMap<String, EDictEntry> jmedictCommon,
 			Map<String, KanjivgEntry> kanjivgEntryMap, String sourceKanjiName, String sourceKanjiDic2FileName,
 			String sourceKradFileName, String destinationFileName) throws Exception {
+		
+		fixme();
 
 		System.out.println("generateKanjiEntries");
 

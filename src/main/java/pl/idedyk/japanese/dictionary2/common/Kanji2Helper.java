@@ -1,0 +1,303 @@
+package pl.idedyk.japanese.dictionary2.common;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Map;
+import java.util.TreeMap;
+
+import javax.xml.XMLConstants;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
+
+import com.csvreader.CsvReader;
+import com.csvreader.CsvWriter;
+
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.HeaderInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
+
+public class Kanji2Helper {
+	
+	private int fixme_csv = 1;
+	private static final int CSV_COLUMNS = 0; // 11 
+	
+	private static Kanji2Helper kanji2Helper;
+	
+	private File kanjidic2File;
+	private Kanjidic2 kanjidic2 = null;
+	
+	private File kanjiPolishDictionaryFile;
+	
+	private Kanji2Helper() { }
+	
+	public static Kanji2Helper getOrInit() {
+		
+		if (kanji2Helper == null) {
+			kanji2Helper =  init();
+		}
+		
+		return kanji2Helper;				
+	}
+	
+	private static Kanji2Helper init() {
+		
+		// init
+		System.setProperty("jdk.xml.entityExpansionLimit", "0");
+
+		//
+		
+		Kanji2Helper kanji2Helper = new Kanji2Helper();
+		
+		//
+				
+		kanji2Helper.kanjidic2File = new File("../JapaneseDictionary_additional/kanjidic2.xml");
+		
+		kanji2Helper.kanjiPolishDictionaryFile = new File("input/kanji2.csv");
+		
+		//
+		
+		return kanji2Helper;
+	}
+	
+	public Kanjidic2 getKanjidic2() throws Exception {
+		
+		if (kanjidic2 == null) {
+			// walidacja xsd pliku JMdict
+			System.out.println("Validating Kanjidic2");
+			
+			// walidacja xsd
+			SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+			
+			Schema schema = factory.newSchema(Kanjidic2.class.getResource("/pl/idedyk/japanese/dictionary2/kanjidic2/xsd/kanjidic2.xsd"));
+			Validator validator = schema.newValidator();
+						
+			validator.validate(new StreamSource(kanjidic2File));			
+
+			// wczytywanie pliku kanjidic2
+			System.out.println("Reading Kanjidic2");
+			
+			JAXBContext jaxbContext = JAXBContext.newInstance(Kanjidic2.class);
+			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+			
+			kanjidic2 = (Kanjidic2) jaxbUnmarshaller.unmarshal(kanjidic2File);			
+		}
+		
+		return kanjidic2;
+	}
+	
+	public void saveKanjidic2AsHumanCsv(SaveKanjiDic2AsHumanCsvConfig config, String fileName, Kanjidic2 kanjidic2, EntryAdditionalData entryAdditionalData) throws Exception {
+		
+		CsvWriter csvWriter = new CsvWriter(new FileWriter(fileName), ',');
+		
+		// rekord z naglowkiem
+		new HeaderInfoPartConverter().writeToCsv(config, csvWriter, kanjidic2);
+		
+		int fixme = 1;
+		
+		/*
+		for (Entry entry : entryList) {
+			
+			// zapisz rekord
+			saveEntryAsHumanCsv(config, csvWriter, entry, entryAdditionalData);
+			
+			// rozdzielenie, aby zawartosc byla zabrdziej przjerzysta
+			if (entry != entryList.get(entryList.size() - 1)) {
+				
+				boolean useTextQualifier = csvWriter.getUseTextQualifier();
+				
+				int columnsNo = 0;
+				
+				// wypelniacz 2
+				csvWriter.setUseTextQualifier(false); // takie obejscie dziwnego zachowania
+				
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write("");
+				}
+				
+				csvWriter.endRecord();
+				
+				//
+				
+				columnsNo = 0;
+				
+				// wypelniacz 3			
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write(null);
+				}
+				
+				csvWriter.endRecord();
+				
+				//
+				
+				csvWriter.setUseTextQualifier(useTextQualifier);
+			}			
+		}		
+		*/
+		
+		csvWriter.close();
+	}
+	
+	private void saveEntryAsHumanCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, Kanjidic2 kanjidic2, EntryAdditionalData entryAdditionalData) throws Exception {
+		
+		int fixme2 = 1;
+			
+		/*
+		// rekord poczatkowy
+		new EntryPartConverterBegin().writeToCsv(config, csvWriter, entry);
+		
+		// kanji
+		new EntryPartConverterKanji().writeToCsv(config, csvWriter, entry);
+		
+		// reading
+		new EntryPartConverterReading().writeToCsv(config, csvWriter, entry);
+		
+		// sense
+		new EntryPartConverterSense().writeToCsv(config, csvWriter, entry, entryAdditionalData);
+				
+		// rekord koncowy
+		new EntryPartConverterEnd().writeToCsv(config, csvWriter, entry);
+		*/		
+	}
+	
+	private class HeaderInfoPartConverter{
+
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, Kanjidic2 kanjidic2) throws IOException {
+			
+			int columnsNo = 0;
+			
+			if (config.shiftCells == true) {
+				
+				if (config.shiftCellsGenerateIds == false) {
+					csvWriter.write(""); columnsNo++;
+					
+				} else {
+					csvWriter.write(String.valueOf(config.shiftCellsGenerateIdsId)); columnsNo++;
+					
+					config.shiftCellsGenerateIdsId++;
+				}
+			}
+			
+			HeaderInfo headerInfo = kanjidic2.getHeader();
+			
+			csvWriter.write(EntryHumanCsvFieldType.HEADER_BEGIN.name()); columnsNo++;
+			csvWriter.write(headerInfo.getFileVersion()); columnsNo++;
+			csvWriter.write(headerInfo.getDatabaseVersion()); columnsNo++;
+			
+			LocalDate dateOfCreationAsLocalDate = LocalDate.of(
+					headerInfo.getDateOfCreation().getYear(), 
+					headerInfo.getDateOfCreation().getMonth(), 
+					headerInfo.getDateOfCreation().getDay());
+			
+			csvWriter.write(dateOfCreationAsLocalDate.format(DateTimeFormatter.ISO_LOCAL_DATE)); columnsNo++;
+						
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
+			csvWriter.endRecord();
+		}
+
+		public void parseCsv(CsvReader csvReader, Kanjidic2 kanjidic2) throws IOException, DatatypeConfigurationException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.HEADER_BEGIN) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			HeaderInfo headerInfo = new HeaderInfo();
+			
+			headerInfo.setFileVersion(csvReader.get(1));
+			headerInfo.setDatabaseVersion(csvReader.get(2));
+			
+			LocalDate dateOfCreationAsLocalDate = LocalDate.parse(csvReader.get(3), DateTimeFormatter.ISO_LOCAL_DATE);			
+			XMLGregorianCalendar dateOfCreation = DatatypeFactory.newInstance().newXMLGregorianCalendar(dateOfCreationAsLocalDate.toString());
+				
+			headerInfo.setDateOfCreation(dateOfCreation);
+			
+			kanjidic2.setHeader(headerInfo);
+		}
+	}
+	
+	private int csv_field_fixme = 1;	
+	private enum EntryHumanCsvFieldType {
+		
+		HEADER_BEGIN,
+		HEADER_END;
+		
+		/*
+		BEGIN,
+		
+		KANJI,
+		READING,
+		
+		SENSE_COMMON,
+		SENSE_ENG,
+		SENSE_POL,
+				
+		END;
+		*/
+	}
+		
+	public static class SaveKanjiDic2AsHumanCsvConfig {
+		
+		private int fixme = 1;
+		
+		public boolean shiftCells = false;
+		public boolean shiftCellsGenerateIds = false;
+		public Integer shiftCellsGenerateIdsId = 1;
+
+		
+		/*
+		public Set<Integer> polishEntrySet = null;
+		
+		public boolean addOldPolishTranslates = false;
+		public boolean addOldEnglishPolishTranslatesDuringDictionaryUpdate = false;
+		public boolean addDeleteSenseDuringDictionaryUpdate = false;
+		
+		public boolean markRomaji = false;
+				
+		public void markAsPolishEntry(Entry polishEntry) {
+			
+			if (polishEntrySet == null) {
+				polishEntrySet = new TreeSet<>();
+			}
+			
+			polishEntrySet.add(polishEntry.getEntryId());
+		}
+		*/		
+	}
+	
+	public static class EntryAdditionalData {		
+		
+		int fixme = 1;
+		
+		private Map<String, EntryAdditionalDataEntry> kanjidic2AdditionalDataEntryMap = new TreeMap<>();
+	}
+	
+	private static class EntryAdditionalDataEntry {
+		
+		private int fixme = 1;
+		
+		/*
+		private List<PolishJapaneseEntry> oldPolishJapaneseEntryList;
+		
+		private Map<Integer, EntryAdditionalDataEntry$UpdateDictionarySense> updateDictionarySenseMap;
+		
+		private List<EntryAdditionalDataEntry$UpdateDictionarySense> deleteDictionarySenseListDuringUpdateDictionary;
+		*/
+	}
+
+}
