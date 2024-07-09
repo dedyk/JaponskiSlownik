@@ -5,6 +5,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -24,8 +27,15 @@ import javax.xml.validation.Validator;
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.HeaderInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroup;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaning;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupReading;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupReadingTypeEnum;
 
 public class Kanji2Helper {
 	
@@ -90,7 +100,61 @@ public class Kanji2Helper {
 			JAXBContext jaxbContext = JAXBContext.newInstance(Kanjidic2.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			
-			kanjidic2 = (Kanjidic2) jaxbUnmarshaller.unmarshal(kanjidic2File);			
+			kanjidic2 = (Kanjidic2) jaxbUnmarshaller.unmarshal(kanjidic2File);
+			
+			// uzupelnienie i usuniecie zbednych rzeczy
+			List<CharacterInfo> characterInfoList = kanjidic2.getCharacterList();
+			
+			for (CharacterInfo characterInfo : characterInfoList) {
+				ReadingMeaningInfo readingMeaning = characterInfo.getReadingMeaning();
+				
+				if (readingMeaning != null) {
+					
+					ReadingMeaningInfoReadingMeaningGroup readingMeaningGroup = readingMeaning.getReadingMeaningGroup();
+					
+					if (readingMeaningGroup != null) {
+						
+						List<ReadingMeaningInfoReadingMeaningGroupReading> readingList = readingMeaningGroup.getReadingList();
+						Iterator<ReadingMeaningInfoReadingMeaningGroupReading> readingListIterator = readingList.iterator();
+						
+						while (readingListIterator.hasNext() == true) {
+							ReadingMeaningInfoReadingMeaningGroupReading readingMeaningInfoReadingMeaningGroupReading = readingListIterator.next();
+							
+							ReadingMeaningInfoReadingMeaningGroupReadingTypeEnum readingMeaningInfoReadingMeaningGroupReadingType = readingMeaningInfoReadingMeaningGroupReading.getType();
+							
+							// usuwanie czytan z jezykow innych niz japonskie
+							if (Arrays.asList(ReadingMeaningInfoReadingMeaningGroupReadingTypeEnum.JA_ON, ReadingMeaningInfoReadingMeaningGroupReadingTypeEnum.JA_KUN).contains(readingMeaningInfoReadingMeaningGroupReadingType) == false) {
+								readingListIterator.remove();
+								
+								continue;
+							}					
+						}
+						
+						List<ReadingMeaningInfoReadingMeaningGroupMeaning> meaningList = readingMeaningGroup.getMeaningList();
+						Iterator<ReadingMeaningInfoReadingMeaningGroupMeaning> meaningListIterator = meaningList.iterator();
+						
+						while (meaningListIterator.hasNext() == true) {
+							ReadingMeaningInfoReadingMeaningGroupMeaning readingMeaningInfoReadingMeaningGroupMeaning = meaningListIterator.next();
+							
+							ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum readingMeaningInfoReadingMeaningGroupMeaningLang = readingMeaningInfoReadingMeaningGroupMeaning.getLang();
+							
+							if (readingMeaningInfoReadingMeaningGroupMeaningLang == null) { // ustawienie, ze jest to znaczenie w jezyku angielskim
+								readingMeaningInfoReadingMeaningGroupMeaningLang = ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.EN;
+								
+								readingMeaningInfoReadingMeaningGroupMeaning.setLang(readingMeaningInfoReadingMeaningGroupMeaningLang);
+								
+							} else if (readingMeaningInfoReadingMeaningGroupMeaningLang == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL) { // polskie znaczenie
+								// noop
+								
+							} else { // usuwamy inne znaczenia
+								meaningListIterator.remove();
+								
+								continue;
+							}					
+						}	
+					}	
+				}				
+			}
 		}
 		
 		return kanjidic2;
