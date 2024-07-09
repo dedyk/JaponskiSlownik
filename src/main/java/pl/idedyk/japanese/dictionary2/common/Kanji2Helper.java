@@ -28,6 +28,9 @@ import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointValueInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointValueTypeEnum;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.HeaderInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfo;
@@ -165,7 +168,7 @@ public class Kanji2Helper {
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(fileName), ',');
 		
 		// rekord z naglowkiem
-		new HeaderInfoPartConverter().writeToCsv(config, csvWriter, kanjidic2);
+		new EntryPartConverterHeaderInfo().writeToCsv(config, csvWriter, kanjidic2);
 		
 		createEmptyLinesInCsv(csvWriter);
 		
@@ -234,6 +237,8 @@ public class Kanji2Helper {
 		// rekord poczatkowy
 		new EntryPartConverterBegin().writeToCsv(config, csvWriter, characterInfo);
 		
+		// codepoint
+		new EntryPartConverterCodepoint().writeToCsv(config, csvWriter, characterInfo);
 		
 			
 		/*
@@ -253,7 +258,7 @@ public class Kanji2Helper {
 		*/		
 	}
 	
-	private class HeaderInfoPartConverter{
+	private class EntryPartConverterHeaderInfo{
 
 		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, Kanjidic2 kanjidic2) throws IOException {
 			
@@ -355,13 +360,73 @@ public class Kanji2Helper {
 		}
 	}
 	
+	private class EntryPartConverterCodepoint {
+
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+			
+			CodePointInfo codePoint = characterInfo.getCodePoint();
+			
+			if (codePoint == null) {
+				return;
+			}
+			
+			List<CodePointValueInfo> codePointValueList = codePoint.getCodePointValueList();
+			
+			for (CodePointValueInfo codePointValueInfo : codePointValueList) {
+			
+				int columnsNo = 0;
+				
+				if (config.shiftCells == true) {
+					csvWriter.write(""); columnsNo++;
+				}
+				
+				csvWriter.write(EntryHumanCsvFieldType.CODE_POINT.name()); columnsNo++;		
+				csvWriter.write(characterInfo.getKanji()); columnsNo++;
+				
+				csvWriter.write(String.valueOf(codePointValueInfo.getType()));
+				csvWriter.write(codePointValueInfo.getValue());
+				
+				// wypelniacz			
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write(null);
+				}
+				
+				csvWriter.endRecord();
+			}
+		}
+				
+		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.CODE_POINT) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			CodePointInfo codePoint = characterInfo.getCodePoint();
+			
+			if (codePoint == null) {
+				codePoint = new CodePointInfo();
+				
+				characterInfo.setCodePoint(codePoint);
+			}
+						
+			CodePointValueInfo codePointValueInfo = new CodePointValueInfo();
+					
+			codePointValueInfo.setType(CodePointValueTypeEnum.fromValue(csvReader.get(2)));
+			codePointValueInfo.setValue(csvReader.get(3));
+		}
+	}
+	
 	private int csv_field_fixme = 1;	
 	private enum EntryHumanCsvFieldType {
 		
 		HEADER_BEGIN,
 		HEADER_END,
 		
-		BEGIN
+		BEGIN,
+		
+		CODE_POINT,
 		
 		;
 		/*
