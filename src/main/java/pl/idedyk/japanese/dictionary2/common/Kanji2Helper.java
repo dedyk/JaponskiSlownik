@@ -33,6 +33,9 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointValueInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointValueTypeEnum;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.HeaderInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.RadicalInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.RadicalInfoValue;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.RadicalInfoValueTypeEnum;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroup;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaning;
@@ -226,8 +229,6 @@ public class Kanji2Helper {
 		int fixme2 = 1;
 		
 		/*
-	    "codePoint",
-	    "radical",
 	    "misc",
 	    "dictionaryNumber",
 	    "queryCode",
@@ -240,6 +241,8 @@ public class Kanji2Helper {
 		// codepoint
 		new EntryPartConverterCodepoint().writeToCsv(config, csvWriter, characterInfo);
 		
+		// radical
+		new EntryPartConverterRadical().writeToCsv(config, csvWriter, characterInfo);
 			
 		/*
 		
@@ -383,7 +386,7 @@ public class Kanji2Helper {
 				csvWriter.write(EntryHumanCsvFieldType.CODE_POINT.name()); columnsNo++;		
 				csvWriter.write(characterInfo.getKanji()); columnsNo++;
 				
-				csvWriter.write(String.valueOf(codePointValueInfo.getType()));
+				csvWriter.write(codePointValueInfo.getType().value());
 				csvWriter.write(codePointValueInfo.getValue());
 				
 				// wypelniacz			
@@ -415,6 +418,68 @@ public class Kanji2Helper {
 					
 			codePointValueInfo.setType(CodePointValueTypeEnum.fromValue(csvReader.get(2)));
 			codePointValueInfo.setValue(csvReader.get(3));
+			
+			codePoint.getCodePointValueList().add(codePointValueInfo);
+		}
+	}
+
+	private class EntryPartConverterRadical {
+
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+			
+			RadicalInfo radicalInfo = characterInfo.getRadical();
+			
+			if (radicalInfo == null) {
+				return;
+			}
+			
+			List<RadicalInfoValue> radicalValueList = radicalInfo.getRadicalValueList();
+			
+			for (RadicalInfoValue radicalInfoValue : radicalValueList) {
+			
+				int columnsNo = 0;
+				
+				if (config.shiftCells == true) {
+					csvWriter.write(""); columnsNo++;
+				}
+				
+				csvWriter.write(EntryHumanCsvFieldType.RADICAL.name()); columnsNo++;		
+				csvWriter.write(characterInfo.getKanji()); columnsNo++;
+				
+				csvWriter.write(radicalInfoValue.getRadicalValueType().value());
+				csvWriter.write(radicalInfoValue.getValue());
+				
+				// wypelniacz			
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write(null);
+				}
+				
+				csvWriter.endRecord();
+			}
+		}
+				
+		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.RADICAL) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			RadicalInfo radicalInfo = characterInfo.getRadical();
+			
+			if (radicalInfo == null) {
+				radicalInfo = new RadicalInfo();
+				
+				characterInfo.setRadical(radicalInfo);
+			}
+						
+			RadicalInfoValue radicalInfoValue = new RadicalInfoValue();
+					
+			radicalInfoValue.setRadicalValueType(RadicalInfoValueTypeEnum.fromValue(csvReader.get(2)));
+			radicalInfoValue.setValue(csvReader.get(3));
+			
+			radicalInfo.getRadicalValueList().add(radicalInfoValue);
 		}
 	}
 	
@@ -427,6 +492,7 @@ public class Kanji2Helper {
 		BEGIN,
 		
 		CODE_POINT,
+		RADICAL,
 		
 		;
 		/*
