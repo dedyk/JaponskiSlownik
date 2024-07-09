@@ -167,58 +167,77 @@ public class Kanji2Helper {
 		// rekord z naglowkiem
 		new HeaderInfoPartConverter().writeToCsv(config, csvWriter, kanjidic2);
 		
-		int fixme = 1;
+		createEmptyLinesInCsv(csvWriter);
 		
-		/*
-		for (Entry entry : entryList) {
+		// zapisywanie znakow
+		List<CharacterInfo> characterList = kanjidic2.getCharacterList();
+		
+		for (CharacterInfo characterInfo : characterList) {
 			
-			// zapisz rekord
-			saveEntryAsHumanCsv(config, csvWriter, entry, entryAdditionalData);
+			// zapisanie znaku
+			saveEntryAsHumanCsv(config, csvWriter, characterInfo, entryAdditionalData);
 			
-			// rozdzielenie, aby zawartosc byla zabrdziej przjerzysta
-			if (entry != entryList.get(entryList.size() - 1)) {
-				
-				boolean useTextQualifier = csvWriter.getUseTextQualifier();
-				
-				int columnsNo = 0;
-				
-				// wypelniacz 2
-				csvWriter.setUseTextQualifier(false); // takie obejscie dziwnego zachowania
-				
-				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
-					csvWriter.write("");
-				}
-				
-				csvWriter.endRecord();
-				
-				//
-				
-				columnsNo = 0;
-				
-				// wypelniacz 3			
-				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
-					csvWriter.write(null);
-				}
-				
-				csvWriter.endRecord();
-				
-				//
-				
-				csvWriter.setUseTextQualifier(useTextQualifier);
+			// rozdzielenie, aby zawartosc byla bardziej przjerzysta
+			if (characterInfo != characterList.get(characterList.size() - 1)) {
+				createEmptyLinesInCsv(csvWriter);
 			}			
-		}		
-		*/
-		
+		}
+				
 		csvWriter.close();
 	}
 	
-	private void saveEntryAsHumanCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, Kanjidic2 kanjidic2, EntryAdditionalData entryAdditionalData) throws Exception {
+	private void createEmptyLinesInCsv(CsvWriter csvWriter) throws IOException {
+		
+		boolean useTextQualifier = csvWriter.getUseTextQualifier();
+		
+		int columnsNo = 0;
+		
+		// wypelniacz 2
+		csvWriter.setUseTextQualifier(false); // takie obejscie dziwnego zachowania
+		
+		for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+			csvWriter.write("");
+		}
+		
+		csvWriter.endRecord();
+		
+		//
+		
+		columnsNo = 0;
+		
+		// wypelniacz 3			
+		for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+			csvWriter.write(null);
+		}
+		
+		csvWriter.endRecord();
+		
+		//
+		
+		csvWriter.setUseTextQualifier(useTextQualifier);
+
+	}
+	
+	private void saveEntryAsHumanCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo, EntryAdditionalData entryAdditionalData) throws Exception {
 		
 		int fixme2 = 1;
+		
+		/*
+	    "codePoint",
+	    "radical",
+	    "misc",
+	    "dictionaryNumber",
+	    "queryCode",
+	    "readingMeaning"
+	    */
+		
+		// rekord poczatkowy
+		new EntryPartConverterBegin().writeToCsv(config, csvWriter, characterInfo);
+		
+		
 			
 		/*
-		// rekord poczatkowy
-		new EntryPartConverterBegin().writeToCsv(config, csvWriter, entry);
+		
 		
 		// kanji
 		new EntryPartConverterKanji().writeToCsv(config, csvWriter, entry);
@@ -295,14 +314,58 @@ public class Kanji2Helper {
 		}
 	}
 	
+	private class EntryPartConverterBegin {
+
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+			
+			int columnsNo = 0;
+			
+			if (config.shiftCells == true) {
+				
+				if (config.shiftCellsGenerateIds == false) {
+					csvWriter.write(""); columnsNo++;
+					
+				} else {
+					csvWriter.write(String.valueOf(config.shiftCellsGenerateIdsId)); columnsNo++;
+					
+					config.shiftCellsGenerateIdsId++;
+				}
+			}
+			
+			csvWriter.write(EntryHumanCsvFieldType.BEGIN.name()); columnsNo++;
+			csvWriter.write(characterInfo.getKanji()); columnsNo++;
+			
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
+			csvWriter.endRecord();
+		}
+
+		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.BEGIN) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			characterInfo.setKanji(csvReader.get(1));
+		}
+	}
+	
 	private int csv_field_fixme = 1;	
 	private enum EntryHumanCsvFieldType {
 		
 		HEADER_BEGIN,
-		HEADER_END;
+		HEADER_END,
 		
+		BEGIN
+		
+		;
 		/*
-		BEGIN,
+		
 		
 		KANJI,
 		READING,

@@ -187,6 +187,10 @@ public class Test6 {
 		Kanjidic2 kanjidic2 = kanji2Helper.getKanjidic2();
 		
 		SaveKanjiDic2AsHumanCsvConfig config = new SaveKanjiDic2AsHumanCsvConfig();
+		
+		config.shiftCells = true;
+		config.shiftCellsGenerateIds = true;
+		
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
 		
 		kanji2Helper.saveKanjidic2AsHumanCsv(config, "/tmp/a/kanji2-test.csv", kanjidic2, entryAdditionalData);
