@@ -1,6 +1,6 @@
 * kanji - 0
 ----------
-+ update - x
+update - x
 ----------
 small - 10
 small2 - 10
