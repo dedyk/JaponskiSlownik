@@ -43,6 +43,10 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfoVariant;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfoVariantTypeEnum;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.QueryCodeInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.QueryCodeInfoCode;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.QueryCodeInfoCodeSkipMisClassEnum;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.QueryCodeInfoCodeType;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.RadicalInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.RadicalInfoValue;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.RadicalInfoValueTypeEnum;
@@ -239,7 +243,6 @@ public class Kanji2Helper {
 		int fixme2 = 1;
 		
 		/*
-	    "dictionaryNumber",
 	    "queryCode",
 	    "readingMeaning"
 	    */
@@ -258,6 +261,9 @@ public class Kanji2Helper {
 		
 		// dictionary number
 		new EntryPartConverterDictionaryNumber().writeToCsv(config, csvWriter, characterInfo);
+		
+		// query code
+		new EntryPartConverterQueryCode().writeToCsv(config, csvWriter, characterInfo);
 		
 		/*
 		
@@ -631,7 +637,6 @@ public class Kanji2Helper {
 				
 				csvWriter.write(EntryHumanCsvFieldType.DICTIONARY_NUMBER.name()); columnsNo++;
 				
-				
 				csvWriter.write(dictionaryNumberInfoReference.getDictionaryType().value()); columnsNo++;
 				csvWriter.write(dictionaryNumberInfoReference.getMonoVolume() != null ? dictionaryNumberInfoReference.getMonoVolume() : "-"); columnsNo++;
 				csvWriter.write(dictionaryNumberInfoReference.getMonoPage() != null ? dictionaryNumberInfoReference.getMonoPage() : "-"); columnsNo++;
@@ -667,10 +672,72 @@ public class Kanji2Helper {
 			dictionaryNumberInfoReference.setDictionaryType(DictionaryNumberInfoReferenceTypeEnum.fromValue(csvReader.get(1)));
 			dictionaryNumberInfoReference.setMonoVolume(csvReader.get(2).equals("-") == false ? csvReader.get(2) : null); 
 			dictionaryNumberInfoReference.setMonoPage(csvReader.get(3).equals("-") == false ? csvReader.get(3) : null);
-			dictionaryNumberInfoReference.setValue(csvReader.get(4));			
+			dictionaryNumberInfoReference.setValue(csvReader.get(4));		
+			
+			dictionaryNumber.getDictionaryReferenceList().add(dictionaryNumberInfoReference);
 		}
 	}
 
+	private class EntryPartConverterQueryCode {
+
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+			
+			QueryCodeInfo queryCodeInfo = characterInfo.getQueryCode();
+			
+			if (queryCodeInfo == null) {
+				return;
+			}
+			
+			List<QueryCodeInfoCode> queryCodeList = queryCodeInfo.getQueryCodeList();
+			
+			for (QueryCodeInfoCode queryCodeInfoCode : queryCodeList) {
+								
+				int columnsNo = 0;
+				
+				if (config.shiftCells == true) {
+					csvWriter.write(""); columnsNo++;
+				}
+				
+				csvWriter.write(EntryHumanCsvFieldType.QUERY_CODE.name()); columnsNo++;
+				
+				csvWriter.write(queryCodeInfoCode.getType().value()); columnsNo++;
+				csvWriter.write(queryCodeInfoCode.getSkipMisclass() != null ? queryCodeInfoCode.getSkipMisclass().value() : "-"); columnsNo++;
+				csvWriter.write(queryCodeInfoCode.getValue()); columnsNo++;
+				
+				// wypelniacz			
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write(null);
+				}
+				
+				csvWriter.endRecord();
+			}			
+		}
+				
+		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.QUERY_CODE) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			QueryCodeInfo queryCodeInfo = characterInfo.getQueryCode();
+
+			if (queryCodeInfo == null) {
+				queryCodeInfo = new QueryCodeInfo();
+				
+				characterInfo.setQueryCode(queryCodeInfo);
+			}
+			
+			QueryCodeInfoCode queryCodeInfoCode = new QueryCodeInfoCode();
+						
+			queryCodeInfoCode.setType(QueryCodeInfoCodeType.fromValue(csvReader.get(1)));
+			queryCodeInfoCode.setSkipMisclass(csvReader.get(2).equals("-") == false ? QueryCodeInfoCodeSkipMisClassEnum.fromValue(csvReader.get(2)) : null); 
+			queryCodeInfoCode.setValue(csvReader.get(3));	
+			
+			queryCodeInfo.getQueryCodeList().add(queryCodeInfoCode);
+		}
+	}
 	
 	private int csv_field_fixme = 1;	
 	private enum EntryHumanCsvFieldType {
@@ -684,6 +751,7 @@ public class Kanji2Helper {
 		RADICAL,
 		MISC,
 		DICTIONARY_NUMBER,
+		QUERY_CODE,
 		
 		;
 		/*
