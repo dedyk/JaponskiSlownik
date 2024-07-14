@@ -35,6 +35,9 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointValueInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointValueTypeEnum;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.DictionaryNumberInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.DictionaryNumberInfoReference;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.DictionaryNumberInfoReferenceTypeEnum;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.HeaderInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfo;
@@ -236,7 +239,6 @@ public class Kanji2Helper {
 		int fixme2 = 1;
 		
 		/*
-	    "misc",
 	    "dictionaryNumber",
 	    "queryCode",
 	    "readingMeaning"
@@ -254,6 +256,8 @@ public class Kanji2Helper {
 		// misc
 		new EntryPartConverterMisc().writeToCsv(config, csvWriter, characterInfo);
 		
+		// dictionary number
+		new EntryPartConverterDictionaryNumber().writeToCsv(config, csvWriter, characterInfo);
 		
 		/*
 		
@@ -394,8 +398,7 @@ public class Kanji2Helper {
 					csvWriter.write(""); columnsNo++;
 				}
 				
-				csvWriter.write(EntryHumanCsvFieldType.CODE_POINT.name()); columnsNo++;		
-				csvWriter.write(characterInfo.getKanji()); columnsNo++;
+				csvWriter.write(EntryHumanCsvFieldType.CODE_POINT.name()); columnsNo++;
 				
 				csvWriter.write(codePointValueInfo.getType().value());
 				csvWriter.write(codePointValueInfo.getValue());
@@ -427,8 +430,8 @@ public class Kanji2Helper {
 						
 			CodePointValueInfo codePointValueInfo = new CodePointValueInfo();
 					
-			codePointValueInfo.setType(CodePointValueTypeEnum.fromValue(csvReader.get(2)));
-			codePointValueInfo.setValue(csvReader.get(3));
+			codePointValueInfo.setType(CodePointValueTypeEnum.fromValue(csvReader.get(1)));
+			codePointValueInfo.setValue(csvReader.get(2));
 			
 			codePoint.getCodePointValueList().add(codePointValueInfo);
 		}
@@ -454,8 +457,7 @@ public class Kanji2Helper {
 					csvWriter.write(""); columnsNo++;
 				}
 				
-				csvWriter.write(EntryHumanCsvFieldType.RADICAL.name()); columnsNo++;		
-				csvWriter.write(characterInfo.getKanji()); columnsNo++;
+				csvWriter.write(EntryHumanCsvFieldType.RADICAL.name()); columnsNo++;
 				
 				csvWriter.write(radicalInfoValue.getRadicalValueType().value());
 				csvWriter.write(radicalInfoValue.getValue());
@@ -487,8 +489,8 @@ public class Kanji2Helper {
 						
 			RadicalInfoValue radicalInfoValue = new RadicalInfoValue();
 					
-			radicalInfoValue.setRadicalValueType(RadicalInfoValueTypeEnum.fromValue(csvReader.get(2)));
-			radicalInfoValue.setValue(csvReader.get(3));
+			radicalInfoValue.setRadicalValueType(RadicalInfoValueTypeEnum.fromValue(csvReader.get(1)));
+			radicalInfoValue.setValue(csvReader.get(2));
 			
 			radicalInfo.getRadicalValueList().add(radicalInfoValue);
 		}
@@ -606,6 +608,69 @@ public class Kanji2Helper {
 			miscInfo.setJlpt(csvReader.get(6).equals("-") == false ? Integer.valueOf(csvReader.get(6)) : null);			
 		}
 	}
+
+	private class EntryPartConverterDictionaryNumber {
+
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+			
+			DictionaryNumberInfo dictionaryNumber = characterInfo.getDictionaryNumber();
+			
+			if (dictionaryNumber == null) {
+				return;
+			}
+			
+			List<DictionaryNumberInfoReference> dictionaryReferenceList = dictionaryNumber.getDictionaryReferenceList();
+			
+			for (DictionaryNumberInfoReference dictionaryNumberInfoReference : dictionaryReferenceList) {
+								
+				int columnsNo = 0;
+				
+				if (config.shiftCells == true) {
+					csvWriter.write(""); columnsNo++;
+				}
+				
+				csvWriter.write(EntryHumanCsvFieldType.DICTIONARY_NUMBER.name()); columnsNo++;
+				
+				
+				csvWriter.write(dictionaryNumberInfoReference.getDictionaryType().value()); columnsNo++;
+				csvWriter.write(dictionaryNumberInfoReference.getMonoVolume() != null ? dictionaryNumberInfoReference.getMonoVolume() : "-"); columnsNo++;
+				csvWriter.write(dictionaryNumberInfoReference.getMonoPage() != null ? dictionaryNumberInfoReference.getMonoPage() : "-"); columnsNo++;
+				csvWriter.write(dictionaryNumberInfoReference.getValue()); columnsNo++;
+				
+				// wypelniacz			
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write(null);
+				}
+				
+				csvWriter.endRecord();
+			}			
+		}
+				
+		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.DICTIONARY_NUMBER) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			DictionaryNumberInfo dictionaryNumber = characterInfo.getDictionaryNumber();
+
+			if (dictionaryNumber == null) {
+				dictionaryNumber = new DictionaryNumberInfo();
+				
+				characterInfo.setDictionaryNumber(dictionaryNumber);
+			}
+			
+			DictionaryNumberInfoReference dictionaryNumberInfoReference = new DictionaryNumberInfoReference();
+						
+			dictionaryNumberInfoReference.setDictionaryType(DictionaryNumberInfoReferenceTypeEnum.fromValue(csvReader.get(1)));
+			dictionaryNumberInfoReference.setMonoVolume(csvReader.get(2).equals("-") == false ? csvReader.get(2) : null); 
+			dictionaryNumberInfoReference.setMonoPage(csvReader.get(3).equals("-") == false ? csvReader.get(3) : null);
+			dictionaryNumberInfoReference.setValue(csvReader.get(4));			
+		}
+	}
+
 	
 	private int csv_field_fixme = 1;	
 	private enum EntryHumanCsvFieldType {
@@ -618,6 +683,7 @@ public class Kanji2Helper {
 		CODE_POINT,
 		RADICAL,
 		MISC,
+		DICTIONARY_NUMBER,
 		
 		;
 		/*
