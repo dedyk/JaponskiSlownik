@@ -621,8 +621,8 @@ public class Kanji2Helper {
 			
 			List<DictionaryNumberInfoReference> dictionaryReferenceList = dictionaryNumber.getDictionaryReferenceList();
 			
-			if (dictionaryReferenceList.size() > 0) {
-				
+			for (DictionaryNumberInfoReference dictionaryNumberInfoReference : dictionaryReferenceList) {
+								
 				int columnsNo = 0;
 				
 				if (config.shiftCells == true) {
@@ -631,22 +631,10 @@ public class Kanji2Helper {
 				
 				csvWriter.write(EntryHumanCsvFieldType.DICTIONARY_NUMBER.name()); columnsNo++;
 				
-				StringWriter dictionaryReferenceListString = new StringWriter();
-				CsvWriter dictionaryReferenceListCsvWriter = new CsvWriter(dictionaryReferenceListString, '|');
-				
-				for (DictionaryNumberInfoReference dictionaryNumberInfoReference : dictionaryReferenceList) {
-					
-					dictionaryReferenceListCsvWriter.write(dictionaryNumberInfoReference.getDictionaryType().value());
-					dictionaryReferenceListCsvWriter.write(dictionaryNumberInfoReference.getMonoVolume() != null ? dictionaryNumberInfoReference.getMonoVolume() : "-");
-					dictionaryReferenceListCsvWriter.write(dictionaryNumberInfoReference.getMonoPage() != null ? dictionaryNumberInfoReference.getMonoPage() : "-");
-					dictionaryReferenceListCsvWriter.write(dictionaryNumberInfoReference.getValue());
-					
-					dictionaryReferenceListCsvWriter.endRecord();
-				}
-				
-				dictionaryReferenceListCsvWriter.close();
-				
-				csvWriter.write(dictionaryReferenceListString.toString()); columnsNo++;				
+				csvWriter.write(dictionaryNumberInfoReference.getDictionaryType().value()); columnsNo++;
+				csvWriter.write(dictionaryNumberInfoReference.getMonoVolume() != null ? dictionaryNumberInfoReference.getMonoVolume() : "-"); columnsNo++;
+				csvWriter.write(dictionaryNumberInfoReference.getMonoPage() != null ? dictionaryNumberInfoReference.getMonoPage() : "-"); columnsNo++;
+				csvWriter.write(dictionaryNumberInfoReference.getValue()); columnsNo++;
 				
 				// wypelniacz			
 				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
@@ -673,26 +661,14 @@ public class Kanji2Helper {
 				characterInfo.setDictionaryNumber(dictionaryNumber);
 			}
 			
-
-
+			DictionaryNumberInfoReference dictionaryNumberInfoReference = new DictionaryNumberInfoReference();
+						
+			dictionaryNumberInfoReference.setDictionaryType(DictionaryNumberInfoReferenceTypeEnum.fromValue(csvReader.get(1)));
+			dictionaryNumberInfoReference.setMonoVolume(csvReader.get(2).equals("-") == false ? csvReader.get(2) : null); 
+			dictionaryNumberInfoReference.setMonoPage(csvReader.get(3).equals("-") == false ? csvReader.get(3) : null);
+			dictionaryNumberInfoReference.setValue(csvReader.get(4));		
 			
-			String dictionaryReferenceListString = csvReader.get(1);
-			
-			CsvReader dictionaryReferenceListCsvReader = new CsvReader(new StringReader(dictionaryReferenceListString), '|');
-			
-			while (dictionaryReferenceListCsvReader.readRecord()) {
-				
-				DictionaryNumberInfoReference dictionaryNumberInfoReference = new DictionaryNumberInfoReference();
-				
-				dictionaryNumberInfoReference.setDictionaryType(DictionaryNumberInfoReferenceTypeEnum.fromValue(dictionaryReferenceListCsvReader.get(0)));
-				dictionaryNumberInfoReference.setMonoVolume(dictionaryReferenceListCsvReader.get(1).equals("-") == false ? dictionaryReferenceListCsvReader.get(1) : null); 
-				dictionaryNumberInfoReference.setMonoPage(dictionaryReferenceListCsvReader.get(2).equals("-") == false ? dictionaryReferenceListCsvReader.get(2) : null);
-				dictionaryNumberInfoReference.setValue(dictionaryReferenceListCsvReader.get(3));		
-				
-				dictionaryNumber.getDictionaryReferenceList().add(dictionaryNumberInfoReference);				
-			}
-			
-			dictionaryReferenceListCsvReader.close();			
+			dictionaryNumber.getDictionaryReferenceList().add(dictionaryNumberInfoReference);
 		}
 	}
 
