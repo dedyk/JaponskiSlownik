@@ -134,6 +134,7 @@ public class Kanji2Helper {
 					
 					if (readingMeaningGroup != null) {
 						
+						/*
 						List<ReadingMeaningInfoReadingMeaningGroupReading> readingList = readingMeaningGroup.getReadingList();
 						Iterator<ReadingMeaningInfoReadingMeaningGroupReading> readingListIterator = readingList.iterator();
 						
@@ -149,6 +150,7 @@ public class Kanji2Helper {
 								continue;
 							}					
 						}
+						*/
 						
 						List<ReadingMeaningInfoReadingMeaningGroupMeaning> meaningList = readingMeaningGroup.getMeaningList();
 						Iterator<ReadingMeaningInfoReadingMeaningGroupMeaning> meaningListIterator = meaningList.iterator();
@@ -243,7 +245,6 @@ public class Kanji2Helper {
 		int fixme2 = 1;
 		
 		/*
-	    "queryCode",
 	    "readingMeaning"
 	    */
 		
@@ -265,21 +266,14 @@ public class Kanji2Helper {
 		// query code
 		new EntryPartConverterQueryCode().writeToCsv(config, csvWriter, characterInfo);
 		
-		/*
+		// reading meaning - nanori
+		new EntryPartConverterReadingMeaningNanori().writeToCsv(config, csvWriter, characterInfo);
 		
 		
-		// kanji
-		new EntryPartConverterKanji().writeToCsv(config, csvWriter, entry);
+		//tutaj();
 		
-		// reading
-		new EntryPartConverterReading().writeToCsv(config, csvWriter, entry);
-		
-		// sense
-		new EntryPartConverterSense().writeToCsv(config, csvWriter, entry, entryAdditionalData);
-				
 		// rekord koncowy
-		new EntryPartConverterEnd().writeToCsv(config, csvWriter, entry);
-		*/		
+		new EntryPartConverterEnd().writeToCsv(config, csvWriter, characterInfo);		
 	}
 	
 	private class EntryPartConverterHeaderInfo{
@@ -739,6 +733,513 @@ public class Kanji2Helper {
 		}
 	}
 	
+	private class EntryPartConverterReadingMeaningNanori {
+
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+			
+			ReadingMeaningInfo readingMeaningInfo = characterInfo.getReadingMeaning();
+			
+			if (readingMeaningInfo == null) {
+				return;
+			}
+			
+			int columnsNo = 0;
+						
+			if (config.shiftCells == true) {
+				csvWriter.write(""); columnsNo++;
+			}
+						
+			csvWriter.write(EntryHumanCsvFieldType.READING_MEANING_NANONI.name()); columnsNo++;
+			csvWriter.write(Helper.convertListToString(readingMeaningInfo.getNanoriList())); columnsNo++;
+			
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
+			csvWriter.endRecord();			
+		}
+				
+		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.READING_MEANING_NANONI) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			ReadingMeaningInfo readingMeaningInfo = characterInfo.getReadingMeaning();
+
+			if (readingMeaningInfo == null) {
+				readingMeaningInfo = new ReadingMeaningInfo();
+				
+				characterInfo.setReadingMeaning(readingMeaningInfo);
+			}
+			
+			readingMeaningInfo.getNanoriList().addAll(Helper.convertStringToList(csvReader.get(1)));
+		}
+	}
+	
+	/*
+private class EntryPartConverterSense {
+
+		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry, EntryAdditionalData entryAdditionalData) throws IOException {
+			
+			List<Sense> senseList = entry.getSenseList();
+			
+			for (Sense sense : senseList) {
+				
+				int columnsNo = 0;
+				
+				List<Gloss> glossList = sense.getGlossList();
+				
+				List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+				List<Gloss> glossPolList = glossList.stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+
+				if (glossEngList.size() == 0) {
+					continue;
+				}
+				
+				if (config.shiftCells == true) {
+					csvWriter.write(""); columnsNo++;
+				}
+				
+				// czesc wspolna dla wszystkich jezykow
+				csvWriter.write(EntryHumanCsvFieldType.SENSE_COMMON.name());  columnsNo++;
+				csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
+
+				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanjiList())); columnsNo++;
+				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanaList())); columnsNo++;
+				
+				csvWriter.write(Helper.convertEnumListToString(sense.getPartOfSpeechList())); columnsNo++;
+				
+				csvWriter.write(Helper.convertListToString(sense.getReferenceToAnotherKanjiKanaList())); columnsNo++;
+				
+				csvWriter.write(Helper.convertListToString(sense.getAntonymList())); columnsNo++;
+				
+				csvWriter.write(Helper.convertEnumListToString(sense.getFieldList())); columnsNo++;
+				csvWriter.write(Helper.convertEnumListToString(sense.getMiscList())); columnsNo++;
+				
+				//
+				
+				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
+
+				StringWriter languageSourceCsvWriterString = new StringWriter();
+				
+				CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceCsvWriterString, '|');
+				
+				for (LanguageSource languageSource : languageSourceList) {
+										
+					String languageSourceLsType = languageSource.getLsType() != null ? languageSource.getLsType().value() : "-";
+					String languageSourceWasei = languageSource.getLsWasei() != null ? languageSource.getLsWasei().value() : "-";
+					String languageSourceLang = languageSource.getLang() != null ? languageSource.getLang() : "-";
+					String languageSourceValue = languageSource.getValue() != null ? languageSource.getValue() : "-";
+																				
+					languageSourceCsvWriter.write(languageSourceLsType);
+					languageSourceCsvWriter.write(languageSourceWasei);
+					languageSourceCsvWriter.write(languageSourceLang);
+					languageSourceCsvWriter.write(languageSourceValue);
+					
+					languageSourceCsvWriter.endRecord();
+				}
+				
+				languageSourceCsvWriter.close();
+				
+				csvWriter.write(languageSourceCsvWriterString.toString()); columnsNo++;
+				
+				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList())); columnsNo++;
+				
+				csvWriter.endRecord();
+				
+				// wypelniacz			
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write(null);
+				}
+				
+				// czesc specyficzna dla jezyka angielskiego i polskiego (tlumaczenia)
+				
+				writeToCsvLangSense(config, csvWriter, entry, entryAdditionalData, sense, EntryHumanCsvFieldType.SENSE_ENG, glossEngList);
+				writeToCsvLangSense(config, csvWriter, entry, entryAdditionalData, sense, EntryHumanCsvFieldType.SENSE_POL, glossPolList);	
+			}	
+			
+			// sprawdzamy, czy cos zostalo przygotowane
+			EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(entry.getEntryId());
+			
+			// podczas aktualizacji slownika jakis sens zostal skasowany, tymczasowo wpisanie starych sense'ow
+			if (config.addDeleteSenseDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary != null) { 				
+								
+				for (EntryAdditionalDataEntry$UpdateDictionarySense entryAdditionalDataEntry$UpdateDictionarySense : entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary) {
+					
+					int columnsNo = 0;
+					
+					if (config.shiftCells == true) {
+						csvWriter.write(""); columnsNo++;
+					}
+					
+					csvWriter.write(EntryHumanCsvFieldType.SENSE_POL.name() + "_DELETE"); columnsNo++;		
+					csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
+					
+					csvWriter.write("USUNIETE_TŁUMACZENIE\n" + "---\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldPolishGlossList)); columnsNo++;
+
+					//
+					
+					List<String> senseAdditionalInfoStringList = new ArrayList<>();
+
+					for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldPolishSenseAdditionalInfoList) {
+						senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+					}
+
+					csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
+					
+					// wypelniacz			
+					for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+						csvWriter.write(null);
+					}
+
+					csvWriter.endRecord();
+				}				
+			}
+		}
+		
+		private void writeToCsvLangSense(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry, EntryAdditionalData entryAdditionalData, Sense sense, EntryHumanCsvFieldType entryHumanCsvFieldType, List<Gloss> glossLangList) throws IOException {
+			
+			if (glossLangList.size() == 0) {
+				return;
+			}
+			
+			int columnsNo = 0;
+			
+			if (config.shiftCells == true) {
+				csvWriter.write(""); columnsNo++;
+			}
+			
+			csvWriter.write(entryHumanCsvFieldType.name()); columnsNo++;		
+			csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
+			
+			csvWriter.write(generateGlossWriterCellValue(glossLangList)); columnsNo++;
+
+			//
+
+			List<SenseAdditionalInfo> additionalInfoList = sense.getAdditionalInfoList();
+
+			List<String> senseAdditionalInfoStringList = new ArrayList<>();
+
+			for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoList) {
+
+				String senseAdditionalInfoLang = senseAdditionalInfo.getLang();
+
+				if (senseAdditionalInfoLang.equals(entryHumanCsvFieldType == EntryHumanCsvFieldType.SENSE_ENG ? "eng" : "pol") == true) {						
+					senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+				}
+			}
+
+			csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
+			
+			//
+			
+			if (entryHumanCsvFieldType == EntryHumanCsvFieldType.SENSE_POL) { 
+				
+				// sprawdzamy, czy cos zostalo przygotowane
+				EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(entry.getEntryId());
+
+				BEFORE_IF:
+				if (config.addOldPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.oldPolishJapaneseEntryList != null &&
+					(config.polishEntrySet == null || config.polishEntrySet.contains(entry.getEntryId()) == false)) { // dodawanie tlumaczenia ze starego slownika
+
+					// grupujemy po unikalnym tlumaczeniu
+					Map<String, String> uniqueOldPolishJapaneseTranslates = new TreeMap<>();
+
+					for (PolishJapaneseEntry polishJapaneseEntry : entryAdditionalDataEntry.oldPolishJapaneseEntryList) {
+
+						String polishJapaneseEntryTranslate = Helper.convertListToString(polishJapaneseEntry.getTranslates());
+						String polishJapaneseEntryInfo = polishJapaneseEntry.getInfo() != null ? polishJapaneseEntry.getInfo() : "";
+
+						//
+
+						String infoForPolishJapaneseEntryTranslate = uniqueOldPolishJapaneseTranslates.get(polishJapaneseEntryTranslate);
+
+						if (infoForPolishJapaneseEntryTranslate == null) {
+							uniqueOldPolishJapaneseTranslates.put(polishJapaneseEntryTranslate, polishJapaneseEntryInfo);
+
+						}
+					}
+
+					if (uniqueOldPolishJapaneseTranslates.size() == 0) {
+						break BEFORE_IF;
+					}
+
+					// dodajemy unikaln tlumaczenia i informacje dodatkowe
+					Iterator<java.util.Map.Entry<String, String>> uniqueOldPolishJapaneseTranslatesEntryIterator = uniqueOldPolishJapaneseTranslates.entrySet().iterator();
+
+					while (uniqueOldPolishJapaneseTranslatesEntryIterator.hasNext() == true) {
+
+						java.util.Map.Entry<String, String> currentPolishJapaneseTranslateAndInfo = uniqueOldPolishJapaneseTranslatesEntryIterator.next();
+
+						csvWriter.write("STARE_TŁUMACZENIE\n" + "---\n---\n" + currentPolishJapaneseTranslateAndInfo.getKey()); columnsNo++;
+
+						if (currentPolishJapaneseTranslateAndInfo.getValue().equals("") == false) {
+							csvWriter.write("STARE_INFO\n" + "---\n---\n" + currentPolishJapaneseTranslateAndInfo.getValue()); columnsNo++;
+						}
+					}
+				}
+				
+				//
+				
+				if (config.addOldEnglishPolishTranslatesDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.updateDictionarySenseMap != null) { // podczas aktualizacji slownika jakis sens zmienil sie
+					
+					EntryAdditionalDataEntry$UpdateDictionarySense entryAdditionalDataEntry$UpdateDictionarySense = entryAdditionalDataEntry.updateDictionarySenseMap.get(System.identityHashCode(sense));
+					
+					if (entryAdditionalDataEntry$UpdateDictionarySense != null) { // podczas aktualizacji slownika, jakis sense zmienil sie, wpisanie starego polskiego znaczenia
+						
+						StringWriter sb = new StringWriter();
+						
+						// dodajemy stare polskie tlumaczenie
+						sb.append("STARE_TŁUMACZENIE\n" + "---\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldPolishGlossList));
+						
+						// dodajemy stare angielskie tlumaczenie
+						sb.append("---\n---\nSTARE_ANGIELSKIE_TŁUMACZENIE (" +
+								(entryAdditionalDataEntry$UpdateDictionarySense.englishGlossListEquals == true ? "IDENTYCZNE" : "RÓŻNICA") + ")\n---\n---\n");
+												
+						sb.append(generateGlossWriterCellValue(entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishGlossList));							
+						
+						csvWriter.write(sb.toString()); columnsNo++;
+						
+						// dodajemy stare polskie informacje dodatkowe
+						if (entryAdditionalDataEntry$UpdateDictionarySense.oldPolishSenseAdditionalInfoList.size() > 0 || entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList.size() > 0) {
+							
+							senseAdditionalInfoStringList = new ArrayList<>();
+							
+							for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldPolishSenseAdditionalInfoList) {
+								senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+							}
+
+							senseAdditionalInfoStringList.add("---");
+							
+							//
+							
+							// stare angielskie informacje dodatkowe						
+							if (entryAdditionalDataEntry$UpdateDictionarySense.englishAdditionalInfoListEquals == true) {
+								senseAdditionalInfoStringList.add("IDENTYCZNE");
+							} else {
+								senseAdditionalInfoStringList.add("RÓŻNICA");
+							}
+							
+							senseAdditionalInfoStringList.add("---\n---\n");
+							
+							for (SenseAdditionalInfo senseAdditionalInfo : entryAdditionalDataEntry$UpdateDictionarySense.oldEnglishSenseAdditionalInfoList) {
+								senseAdditionalInfoStringList.add(senseAdditionalInfo.getValue());
+							}
+							
+							csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
+						}						
+					}
+				}				
+			}			
+			
+			//////
+			
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
+			csvWriter.endRecord();
+		}
+		
+		private String generateGlossWriterCellValue(List<Gloss> glossLangList) throws IOException {
+			
+			StringWriter glossListCsvWriterString = new StringWriter();
+
+			CsvWriter glossListCsvWriter = new CsvWriter(glossListCsvWriterString, '|');
+
+			for (Gloss gloss : glossLangList) {
+
+				GTypeEnum glossType = gloss.getGType();
+				String glossValue = gloss.getValue();
+
+				glossListCsvWriter.write(glossValue);
+
+				if (glossType != null) {
+					glossListCsvWriter.write(glossType.value());
+				}
+
+				glossListCsvWriter.endRecord();
+			}					
+
+			glossListCsvWriter.close();
+
+			return glossListCsvWriterString.toString();			
+		}
+		
+		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType == EntryHumanCsvFieldType.SENSE_COMMON) {
+				
+				Sense sense = new Sense();
+				
+				sense.getRestrictedToKanjiList().addAll(Helper.convertStringToList(csvReader.get(2)));
+				sense.getRestrictedToKanaList().addAll(Helper.convertStringToList(csvReader.get(3)));
+				
+				//
+				
+				List<String> partOfSpeechStringList = Helper.convertStringToList(csvReader.get(4));
+				
+				for (String currentPartOfSpeechString : partOfSpeechStringList) {
+					sense.getPartOfSpeechList().add(PartOfSpeechEnum.fromValue(currentPartOfSpeechString));
+				}
+
+				//
+				
+				sense.getReferenceToAnotherKanjiKanaList().addAll(Helper.convertStringToList(csvReader.get(5)));
+				sense.getAntonymList().addAll(Helper.convertStringToList(csvReader.get(6)));
+				
+				//
+				
+				List<String> fieldStringList = Helper.convertStringToList(csvReader.get(7));
+				
+				for (String currentFieldString : fieldStringList) {
+					sense.getFieldList().add(FieldEnum.fromValue(currentFieldString));
+				}
+				
+				//
+				
+				List<String> miscStringList = Helper.convertStringToList(csvReader.get(8));
+				
+				for (String currentMiscString : miscStringList) {
+					sense.getMiscList().add(MiscEnum.fromValue(currentMiscString));
+				}
+				
+				//
+								
+				{
+					String languageSourceListString = csvReader.get(9);
+					
+					CsvReader languageSourceCsvReader = new CsvReader(new StringReader(languageSourceListString), '|');
+					
+					while (languageSourceCsvReader.readRecord()) {
+						
+						LanguageSourceLsTypeEnum languageSourceLsType = languageSourceCsvReader.get(0).equals("-") == false ? LanguageSourceLsTypeEnum.fromValue(languageSourceCsvReader.get(0)) : null;
+						LanguageSourceLsWaseiEnum languageSourceWasei = languageSourceCsvReader.get(1).equals("-") == false ? LanguageSourceLsWaseiEnum.fromValue(languageSourceCsvReader.get(1)) : null;
+						String languageSourceLang = languageSourceCsvReader.get(2).equals("-") == false ? languageSourceCsvReader.get(2) : null;
+						String languageSourceValue = languageSourceCsvReader.get(3);
+
+						//
+						
+						LanguageSource languageSource = new LanguageSource();
+						
+						languageSource.setLsType(languageSourceLsType);
+						languageSource.setLsWasei(languageSourceWasei);
+						languageSource.setLang(languageSourceLang);
+						languageSource.setValue(languageSourceValue);						
+						
+						//
+						
+						sense.getLanguageSourceList().add(languageSource);
+					}
+					
+					languageSourceCsvReader.close();
+				}
+				
+				//
+				
+				List<String> dialectList = Helper.convertStringToList(csvReader.get(10));
+				
+				for (String currentDialetList : dialectList) {
+					sense.getDialectList().add(DialectEnum.fromValue(currentDialetList));
+				}
+				
+				//
+			
+				entry.getSenseList().add(sense);
+				
+			} else if (fieldType == EntryHumanCsvFieldType.SENSE_ENG || fieldType == EntryHumanCsvFieldType.SENSE_POL) {
+				
+				Sense sense = entry.getSenseList().get(entry.getSenseList().size() - 1);
+				
+				{
+					String glossListString = csvReader.get(2);
+					
+					CsvReader glossListStringCsvReader = new CsvReader(new StringReader(glossListString), '|');
+					
+					while (glossListStringCsvReader.readRecord()) {
+						
+						String glossValue = glossListStringCsvReader.get(0);
+						String glossTypeString = glossListStringCsvReader.get(1).equals("") == false ? glossListStringCsvReader.get(1) : null;
+						
+						//
+						
+						Gloss gloss = new Gloss();
+						
+						gloss.setLang(fieldType == EntryHumanCsvFieldType.SENSE_ENG ? "eng" : "pol");
+						gloss.setValue(glossValue);
+						gloss.setGType(glossTypeString != null ? GTypeEnum.fromValue(glossTypeString) : null);
+												
+						//
+						
+						sense.getGlossList().add(gloss);
+					}
+					
+					glossListStringCsvReader.close();
+				}
+				
+				//
+				
+				List<String> additionalInfoStringList = Helper.convertStringToList(csvReader.get(3));
+								
+				for (String currentAdditionalInfoString : additionalInfoStringList) {
+					
+					SenseAdditionalInfo senseAdditionalInfo = new SenseAdditionalInfo();
+					
+					senseAdditionalInfo.setLang(fieldType == EntryHumanCsvFieldType.SENSE_ENG ? "eng" : "pol");
+					senseAdditionalInfo.setValue(currentAdditionalInfoString);
+					
+					sense.getAdditionalInfoList().add(senseAdditionalInfo);
+				}
+				
+			} else {
+				throw new RuntimeException(fieldType.name());
+			}			
+		}
+	}
+		
+	*/
+	
+	private class EntryPartConverterEnd {
+
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+			
+			int columnsNo = 0;
+			
+			if (config.shiftCells == true) {
+				csvWriter.write(""); columnsNo++;
+			}
+			
+			csvWriter.write(EntryHumanCsvFieldType.END.name()); columnsNo++;
+			csvWriter.write(characterInfo.getKanji()); columnsNo++;
+			
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
+			csvWriter.endRecord();			
+		}
+
+		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.END) {
+				throw new RuntimeException(fieldType.name());
+			}
+
+			// noop
+		}
+	}
+
+	
 	private int csv_field_fixme = 1;	
 	private enum EntryHumanCsvFieldType {
 		
@@ -752,6 +1253,13 @@ public class Kanji2Helper {
 		MISC,
 		DICTIONARY_NUMBER,
 		QUERY_CODE,
+		
+		READING_MEANING_NANONI,
+		READING_MEANING_READING,
+		READING_MEANING_MEANING_ENG,
+		READING_MEANING_MEANING_POL,
+		
+		END;
 		
 		;
 		/*
