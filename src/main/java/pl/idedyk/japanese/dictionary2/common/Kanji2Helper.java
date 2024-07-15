@@ -7,6 +7,7 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
@@ -17,6 +18,7 @@ import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
@@ -134,7 +136,6 @@ public class Kanji2Helper {
 					
 					if (readingMeaningGroup != null) {
 						
-						/*
 						List<ReadingMeaningInfoReadingMeaningGroupReading> readingList = readingMeaningGroup.getReadingList();
 						Iterator<ReadingMeaningInfoReadingMeaningGroupReading> readingListIterator = readingList.iterator();
 						
@@ -150,7 +151,6 @@ public class Kanji2Helper {
 								continue;
 							}					
 						}
-						*/
 						
 						List<ReadingMeaningInfoReadingMeaningGroupMeaning> meaningList = readingMeaningGroup.getMeaningList();
 						Iterator<ReadingMeaningInfoReadingMeaningGroupMeaning> meaningListIterator = meaningList.iterator();
@@ -269,9 +269,9 @@ public class Kanji2Helper {
 		// reading meaning - nanori
 		new EntryPartConverterReadingMeaningNanori().writeToCsv(config, csvWriter, characterInfo);
 		
-		
-		//tutaj();
-		
+		// reading meaning - reading
+		new EntryPartConverterReadingMeaningReading().writeToCsv(config, csvWriter, characterInfo);
+				
 		// rekord koncowy
 		new EntryPartConverterEnd().writeToCsv(config, csvWriter, characterInfo);		
 	}
@@ -777,6 +777,115 @@ public class Kanji2Helper {
 			}
 			
 			readingMeaningInfo.getNanoriList().addAll(Helper.convertStringToList(csvReader.get(1)));
+		}
+	}
+
+	private class EntryPartConverterReadingMeaningReading {
+
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+			
+			ReadingMeaningInfo readingMeaningInfo = characterInfo.getReadingMeaning();
+			
+			if (readingMeaningInfo == null) {
+				return;
+			}
+			
+			ReadingMeaningInfoReadingMeaningGroup readingMeaningGroup = readingMeaningInfo.getReadingMeaningGroup();
+			
+			if (readingMeaningGroup == null) {
+				return;
+			}
+			
+			// podzielenie japonskiego czytania
+			List<ReadingMeaningInfoReadingMeaningGroupReading> readingList = readingMeaningGroup.getReadingList();
+			
+			List<String> jaOnReadingList = new ArrayList<>();
+			List<String> jaKunReadingList = new ArrayList<>();
+			
+			for (ReadingMeaningInfoReadingMeaningGroupReading readingMeaningInfoReadingMeaningGroupReading : readingList) {
+				
+				ReadingMeaningInfoReadingMeaningGroupReadingTypeEnum type = readingMeaningInfoReadingMeaningGroupReading.getType();
+				
+				if (type == ReadingMeaningInfoReadingMeaningGroupReadingTypeEnum.JA_ON) {
+					jaOnReadingList.add(readingMeaningInfoReadingMeaningGroupReading.getValue());
+					
+				} else if (type == ReadingMeaningInfoReadingMeaningGroupReadingTypeEnum.JA_KUN) {
+					jaKunReadingList.add(readingMeaningInfoReadingMeaningGroupReading.getValue());
+					
+				} else {
+					throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie, gdyz jest filtrowane podczas wczytywania
+				}				
+			}
+			
+			int columnsNo = 0;
+						
+			if (config.shiftCells == true) {
+				csvWriter.write(""); columnsNo++;
+			}
+						
+			csvWriter.write(EntryHumanCsvFieldType.READING_MEANING_READING.name()); columnsNo++;			
+			csvWriter.write(Helper.convertListToString(jaOnReadingList)); columnsNo++;
+			csvWriter.write(Helper.convertListToString(jaKunReadingList)); columnsNo++;			
+			
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
+			csvWriter.endRecord();			
+		}
+				
+		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.READING_MEANING_READING) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			ReadingMeaningInfo readingMeaningInfo = characterInfo.getReadingMeaning();
+
+			if (readingMeaningInfo == null) {
+				readingMeaningInfo = new ReadingMeaningInfo();
+				
+				characterInfo.setReadingMeaning(readingMeaningInfo);
+			}
+			
+			ReadingMeaningInfoReadingMeaningGroup readingMeaningGroup = readingMeaningInfo.getReadingMeaningGroup();
+			
+			if (readingMeaningGroup == null) {
+				readingMeaningGroup = new ReadingMeaningInfoReadingMeaningGroup();
+				
+				readingMeaningInfo.setReadingMeaningGroup(readingMeaningGroup);
+			}
+			
+			String jaOnReadingListString = csvReader.get(1);
+
+			List<ReadingMeaningInfoReadingMeaningGroupReading> readingList = new ArrayList<>();
+			
+			for (String jaOnReading : Helper.convertStringToList(jaOnReadingListString)) {
+
+				ReadingMeaningInfoReadingMeaningGroupReading readingMeaningInfoReadingMeaningGroupReading = new ReadingMeaningInfoReadingMeaningGroupReading();
+				
+				readingMeaningInfoReadingMeaningGroupReading.setType(ReadingMeaningInfoReadingMeaningGroupReadingTypeEnum.JA_ON);
+				readingMeaningInfoReadingMeaningGroupReading.setValue(jaOnReading);
+				
+				readingList.add(readingMeaningInfoReadingMeaningGroupReading);
+			}
+			
+			//
+			
+			String jaKunReadingList = csvReader.get(2);
+
+			for (String jaKunReading : Helper.convertStringToList(jaKunReadingList)) {
+
+				ReadingMeaningInfoReadingMeaningGroupReading readingMeaningInfoReadingMeaningGroupReading = new ReadingMeaningInfoReadingMeaningGroupReading();
+				
+				readingMeaningInfoReadingMeaningGroupReading.setType(ReadingMeaningInfoReadingMeaningGroupReadingTypeEnum.JA_KUN);
+				readingMeaningInfoReadingMeaningGroupReading.setValue(jaKunReading);
+				
+				readingList.add(readingMeaningInfoReadingMeaningGroupReading);
+			}
 		}
 	}
 	
