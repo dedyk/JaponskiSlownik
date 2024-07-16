@@ -13,6 +13,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
@@ -54,6 +55,7 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.RadicalInfoValue;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.RadicalInfoValueTypeEnum;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroup;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupAdditionalInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaning;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupReading;
@@ -271,6 +273,10 @@ public class Kanji2Helper {
 		
 		// reading meaning - reading
 		new EntryPartConverterReadingMeaningReading().writeToCsv(config, csvWriter, characterInfo);
+		
+		// reading meaning - meaning
+		new EntryPartConverterReadingMeaningMeaning(EntryHumanCsvFieldType.READING_MEANING_MEANING_ENG).writeToCsv(config, csvWriter, characterInfo, entryAdditionalData);
+		new EntryPartConverterReadingMeaningMeaning(EntryHumanCsvFieldType.READING_MEANING_MEANING_POL).writeToCsv(config, csvWriter, characterInfo, entryAdditionalData);
 				
 		// rekord koncowy
 		new EntryPartConverterEnd().writeToCsv(config, csvWriter, characterInfo);		
@@ -888,12 +894,81 @@ public class Kanji2Helper {
 			}
 		}
 	}
-	
-	/*
-private class EntryPartConverterSense {
+		
+	private class EntryPartConverterReadingMeaningMeaning {
+		
+		private EntryHumanCsvFieldType fieldType;
+		
+		private EntryPartConverterReadingMeaningMeaning(EntryHumanCsvFieldType fieldType) {
+			this.fieldType = fieldType;
+		}
 
-		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry, EntryAdditionalData entryAdditionalData) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo, EntryAdditionalData entryAdditionalData) throws IOException {
 			
+			ReadingMeaningInfo readingMeaningInfo = characterInfo.getReadingMeaning();
+			
+			if (readingMeaningInfo == null) {
+				return;
+			}
+			
+			ReadingMeaningInfoReadingMeaningGroup readingMeaningGroup = readingMeaningInfo.getReadingMeaningGroup();
+			
+			if (readingMeaningGroup == null) {
+				return;
+			}
+
+			List<ReadingMeaningInfoReadingMeaningGroupMeaning> meaningList = readingMeaningGroup.getMeaningList();
+			List<ReadingMeaningInfoReadingMeaningGroupAdditionalInfo> additionalInfoList = readingMeaningGroup.getAdditionalInfoList();
+			
+			List<String> meaningLangList;
+			String additionalInfoLang;
+			
+			if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_ENG) {
+				meaningLangList = meaningList.stream().filter(meaning -> meaning.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.EN).
+						map(meaning -> meaning.getValue()).collect(Collectors.toList());
+				
+				additionalInfoLang = additionalInfoList.stream().filter(additionalInfo -> additionalInfo.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.EN).
+						map(additionalInfo -> additionalInfo.getValue()).findFirst().orElse(null);
+				
+			} else if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_POL) {
+				meaningLangList = meaningList.stream().filter(meaning -> meaning.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL).
+						map(meaning -> meaning.getValue()).collect(Collectors.toList());
+				
+				additionalInfoLang = additionalInfoList.stream().filter(additionalInfo -> additionalInfo.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL).
+						map(additionalInfo -> additionalInfo.getValue()).findFirst().orElse(null);
+				
+			} else {
+				throw new RuntimeException();
+			}
+			
+			if (meaningLangList.size() == 0) {
+				return;
+			}
+			
+			int columnsNo = 0;
+			
+			if (config.shiftCells == true) {
+				csvWriter.write(""); columnsNo++;
+			}
+		
+			csvWriter.write(fieldType.name());  columnsNo++;
+			csvWriter.write(Helper.convertListToString(meaningLangList)); columnsNo++;
+			csvWriter.write(additionalInfoLang != null ? additionalInfoLang : "-"); columnsNo++;
+			
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
+			csvWriter.endRecord();			
+
+			
+			
+			
+			
+			int fixme = 1;
+			
+			/*
 			List<Sense> senseList = entry.getSenseList();
 			
 			for (Sense sense : senseList) {
@@ -905,16 +980,7 @@ private class EntryPartConverterSense {
 				List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
 				List<Gloss> glossPolList = glossList.stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
 
-				if (glossEngList.size() == 0) {
-					continue;
-				}
 				
-				if (config.shiftCells == true) {
-					csvWriter.write(""); columnsNo++;
-				}
-				
-				// czesc wspolna dla wszystkich jezykow
-				csvWriter.write(EntryHumanCsvFieldType.SENSE_COMMON.name());  columnsNo++;
 				csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
 
 				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanjiList())); columnsNo++;
@@ -970,7 +1036,11 @@ private class EntryPartConverterSense {
 				writeToCsvLangSense(config, csvWriter, entry, entryAdditionalData, sense, EntryHumanCsvFieldType.SENSE_ENG, glossEngList);
 				writeToCsvLangSense(config, csvWriter, entry, entryAdditionalData, sense, EntryHumanCsvFieldType.SENSE_POL, glossPolList);	
 			}	
+			*/
 			
+			int fixme2 = 1;
+			
+			/*
 			// sprawdzamy, czy cos zostalo przygotowane
 			EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(entry.getEntryId());
 			
@@ -1008,8 +1078,12 @@ private class EntryPartConverterSense {
 					csvWriter.endRecord();
 				}				
 			}
+			*/
 		}
 		
+		int fixme3 = 1;
+		
+		/*
 		private void writeToCsvLangSense(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry, EntryAdditionalData entryAdditionalData, Sense sense, EntryHumanCsvFieldType entryHumanCsvFieldType, List<Gloss> glossLangList) throws IOException {
 			
 			if (glossLangList.size() == 0) {
@@ -1179,12 +1253,75 @@ private class EntryPartConverterSense {
 
 			return glossListCsvWriterString.toString();			
 		}
+		*/
 		
-		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
+		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
-			if (fieldType == EntryHumanCsvFieldType.SENSE_COMMON) {
+			if (fieldType != this.fieldType) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			ReadingMeaningInfo readingMeaningInfo = characterInfo.getReadingMeaning();
+
+			if (readingMeaningInfo == null) {
+				readingMeaningInfo = new ReadingMeaningInfo();
+				
+				characterInfo.setReadingMeaning(readingMeaningInfo);
+			}
+			
+			ReadingMeaningInfoReadingMeaningGroup readingMeaningGroup = readingMeaningInfo.getReadingMeaningGroup();
+			
+			if (readingMeaningGroup == null) {
+				readingMeaningGroup = new ReadingMeaningInfoReadingMeaningGroup();
+				
+				readingMeaningInfo.setReadingMeaningGroup(readingMeaningGroup);
+			}
+			
+			//
+			
+			List<String> meaningLangList = Helper.convertStringToList(csvReader.get(1));
+			String additionalInfo = csvReader.get(2).equals("-") == false ? csvReader.get(2) : null; 
+			
+			ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum lang;
+			
+			if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_ENG) {
+				lang = ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.EN;					
+				
+			} else if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_POL) {
+				lang = ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL;
+				
+			} else {
+				throw new RuntimeException();
+			}
+
+			
+			for (String meaning : meaningLangList) {				
+				ReadingMeaningInfoReadingMeaningGroupMeaning readingMeaningInfoReadingMeaningGroupMeaning = new ReadingMeaningInfoReadingMeaningGroupMeaning();
+				
+				readingMeaningInfoReadingMeaningGroupMeaning.setLang(lang);
+				readingMeaningInfoReadingMeaningGroupMeaning.setValue(meaning);
+				
+				readingMeaningGroup.getMeaningList().add(readingMeaningInfoReadingMeaningGroupMeaning);
+			}
+			
+			if (additionalInfo != null) {				
+				ReadingMeaningInfoReadingMeaningGroupAdditionalInfo readingMeaningInfoReadingMeaningGroupAdditionalInfo = new ReadingMeaningInfoReadingMeaningGroupAdditionalInfo();
+				
+				readingMeaningInfoReadingMeaningGroupAdditionalInfo.setLang(lang);
+				readingMeaningInfoReadingMeaningGroupAdditionalInfo.setValue(additionalInfo);
+				
+				readingMeaningGroup.getAdditionalInfoList().add(readingMeaningInfoReadingMeaningGroupAdditionalInfo);
+			}
+			
+
+			
+			
+			int fixme4 = 1;
+			
+			/*
+			if (fieldType == EntryHumanCsvFieldType.f) {
 				
 				Sense sense = new Sense();
 				
@@ -1309,11 +1446,14 @@ private class EntryPartConverterSense {
 				
 			} else {
 				throw new RuntimeException(fieldType.name());
-			}			
+			}		
+			*/	
 		}
 	}
-		
-	*/
+	
+	
+	///////////////////////
+	
 	
 	private class EntryPartConverterEnd {
 
