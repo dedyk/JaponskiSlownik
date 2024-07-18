@@ -33,6 +33,9 @@ import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
+import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
+import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointInfo;
@@ -71,7 +74,11 @@ public class Kanji2Helper {
 	private File kanjidic2File;
 	private Kanjidic2 kanjidic2 = null;
 	
-	private File kanjiPolishDictionaryFile;
+	private File oldKanjiPolishDictionaryFile;
+	
+	@SuppressWarnings("deprecation")
+	private List<KanjiEntryForDictionary> oldKanjiPolishDictionaryList;
+	private Map<String, KanjiEntryForDictionary> oldKanjiPolishDictionaryMap;
 	
 	private Kanji2Helper() { }
 	
@@ -97,7 +104,7 @@ public class Kanji2Helper {
 				
 		kanji2Helper.kanjidic2File = new File("../JapaneseDictionary_additional/kanjidic2.xml");
 		
-		kanji2Helper.kanjiPolishDictionaryFile = new File("input/kanji2.csv");
+		kanji2Helper.oldKanjiPolishDictionaryFile = new File("input/kanji.csv");
 		
 		//
 		
@@ -182,6 +189,43 @@ public class Kanji2Helper {
 		}
 		
 		return kanjidic2;
+	}
+	
+	@SuppressWarnings("deprecation")
+	public List<KanjiEntryForDictionary> getOldKanjiPolishDictionaryList() throws IOException, JapaneseDictionaryException {
+		
+		if (oldKanjiPolishDictionaryList == null) {
+			System.out.println("Reading old kanji polish dictionary file");
+			
+			oldKanjiPolishDictionaryList = CsvReaderWriter.parseKanjiEntriesFromCsv(oldKanjiPolishDictionaryFile.getPath(), null, true);	
+		}
+		
+		return oldKanjiPolishDictionaryList;
+	}
+	
+	@SuppressWarnings("deprecation")
+	public Map<String, KanjiEntryForDictionary> getOldKanjiPolishDictionaryMap() throws IOException, JapaneseDictionaryException {
+		
+		if (oldKanjiPolishDictionaryMap == null) {
+			System.out.println("Creating old kanji polish dictionary map");
+			
+			List<KanjiEntryForDictionary> oldKanjiPolishDictionaryList = getOldKanjiPolishDictionaryList();
+			
+			oldKanjiPolishDictionaryMap = new TreeMap<>();
+			
+			for (KanjiEntryForDictionary kanjiEntryForDictionary : oldKanjiPolishDictionaryList) {
+				oldKanjiPolishDictionaryMap.put(kanjiEntryForDictionary.getKanji(), kanjiEntryForDictionary);
+			}			
+		}
+		
+		return oldKanjiPolishDictionaryMap;
+	}
+	
+	@SuppressWarnings("deprecation")
+	public KanjiEntryForDictionary getOldKanjiEntryForDictionary(String kanji) throws IOException, JapaneseDictionaryException {
+		Map<String, KanjiEntryForDictionary> oldKanjiPolishDictionaryMap = getOldKanjiPolishDictionaryMap();
+		
+		return oldKanjiPolishDictionaryMap.get(kanji);
 	}
 	
 	public void saveKanjidic2AsHumanCsv(SaveKanjiDic2AsHumanCsvConfig config, String fileName, Kanjidic2 kanjidic2, EntryAdditionalData entryAdditionalData) throws Exception {
@@ -903,6 +947,7 @@ public class Kanji2Helper {
 			this.fieldType = fieldType;
 		}
 
+		@SuppressWarnings("deprecation")
 		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo, EntryAdditionalData entryAdditionalData) throws IOException {
 			
 			ReadingMeaningInfo readingMeaningInfo = characterInfo.getReadingMeaning();
@@ -941,7 +986,7 @@ public class Kanji2Helper {
 				throw new RuntimeException();
 			}
 			
-			if (meaningLangList.size() == 0) {
+			if (meaningLangList.size() == 0 && config.addOldPolishTranslates == false) {
 				return;
 			}
 			
@@ -953,7 +998,27 @@ public class Kanji2Helper {
 		
 			csvWriter.write(fieldType.name());  columnsNo++;
 			csvWriter.write(Helper.convertListToString(meaningLangList)); columnsNo++;
-			csvWriter.write(additionalInfoLang != null ? additionalInfoLang : "-"); columnsNo++;
+			csvWriter.write(additionalInfoLang != null ? additionalInfoLang : ""); columnsNo++;
+			
+			// uzupelnienie o dodatkowe dane
+			if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_POL) {
+				
+				// sprawdzamy, czy cos zostalo przygotowane
+				EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.kanjidic2AdditionalDataEntryMap.get(characterInfo.getKanji());
+
+				if (config.addOldPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.oldKanjiEntryForDictionary != null) {
+					
+					KanjiEntryForDictionary oldKanjiEntryForDictionary = entryAdditionalDataEntry.oldKanjiEntryForDictionary;
+					
+					csvWriter.write("STARE_ZNACZENIE\n" + "---\n---\n" + Helper.convertListToString(oldKanjiEntryForDictionary.getPolishTranslates())); columnsNo++;
+
+					if (oldKanjiEntryForDictionary.getInfo().equals("") == false) {
+						csvWriter.write("STARE_INFO\n" + "---\n---\n" + oldKanjiEntryForDictionary.getInfo()); columnsNo++;
+					}
+				}
+			}
+			
+			//
 			
 			// wypelniacz			
 			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
@@ -961,82 +1026,6 @@ public class Kanji2Helper {
 			}
 			
 			csvWriter.endRecord();			
-
-			
-			
-			
-			
-			int fixme = 1;
-			
-			/*
-			List<Sense> senseList = entry.getSenseList();
-			
-			for (Sense sense : senseList) {
-				
-				int columnsNo = 0;
-				
-				List<Gloss> glossList = sense.getGlossList();
-				
-				List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
-				List<Gloss> glossPolList = glossList.stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
-
-				
-				csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
-
-				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanjiList())); columnsNo++;
-				csvWriter.write(Helper.convertListToString(sense.getRestrictedToKanaList())); columnsNo++;
-				
-				csvWriter.write(Helper.convertEnumListToString(sense.getPartOfSpeechList())); columnsNo++;
-				
-				csvWriter.write(Helper.convertListToString(sense.getReferenceToAnotherKanjiKanaList())); columnsNo++;
-				
-				csvWriter.write(Helper.convertListToString(sense.getAntonymList())); columnsNo++;
-				
-				csvWriter.write(Helper.convertEnumListToString(sense.getFieldList())); columnsNo++;
-				csvWriter.write(Helper.convertEnumListToString(sense.getMiscList())); columnsNo++;
-				
-				//
-				
-				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
-
-				StringWriter languageSourceCsvWriterString = new StringWriter();
-				
-				CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceCsvWriterString, '|');
-				
-				for (LanguageSource languageSource : languageSourceList) {
-										
-					String languageSourceLsType = languageSource.getLsType() != null ? languageSource.getLsType().value() : "-";
-					String languageSourceWasei = languageSource.getLsWasei() != null ? languageSource.getLsWasei().value() : "-";
-					String languageSourceLang = languageSource.getLang() != null ? languageSource.getLang() : "-";
-					String languageSourceValue = languageSource.getValue() != null ? languageSource.getValue() : "-";
-																				
-					languageSourceCsvWriter.write(languageSourceLsType);
-					languageSourceCsvWriter.write(languageSourceWasei);
-					languageSourceCsvWriter.write(languageSourceLang);
-					languageSourceCsvWriter.write(languageSourceValue);
-					
-					languageSourceCsvWriter.endRecord();
-				}
-				
-				languageSourceCsvWriter.close();
-				
-				csvWriter.write(languageSourceCsvWriterString.toString()); columnsNo++;
-				
-				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList())); columnsNo++;
-				
-				csvWriter.endRecord();
-				
-				// wypelniacz			
-				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
-					csvWriter.write(null);
-				}
-				
-				// czesc specyficzna dla jezyka angielskiego i polskiego (tlumaczenia)
-				
-				writeToCsvLangSense(config, csvWriter, entry, entryAdditionalData, sense, EntryHumanCsvFieldType.SENSE_ENG, glossEngList);
-				writeToCsvLangSense(config, csvWriter, entry, entryAdditionalData, sense, EntryHumanCsvFieldType.SENSE_POL, glossPolList);	
-			}	
-			*/
 			
 			int fixme2 = 1;
 			
@@ -1282,7 +1271,7 @@ public class Kanji2Helper {
 			//
 			
 			List<String> meaningLangList = Helper.convertStringToList(csvReader.get(1));
-			String additionalInfo = csvReader.get(2).equals("-") == false ? csvReader.get(2) : null; 
+			String additionalInfo = csvReader.get(2).equals("") == false ? csvReader.get(2) : null; 
 			
 			ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum lang;
 			
@@ -1533,11 +1522,11 @@ public class Kanji2Helper {
 		public boolean shiftCellsGenerateIds = false;
 		public Integer shiftCellsGenerateIdsId = 1;
 
+		public boolean addOldPolishTranslates = false;
 		
 		/*
 		public Set<Integer> polishEntrySet = null;
-		
-		public boolean addOldPolishTranslates = false;
+				
 		public boolean addOldEnglishPolishTranslatesDuringDictionaryUpdate = false;
 		public boolean addDeleteSenseDuringDictionaryUpdate = false;
 		
@@ -1559,19 +1548,24 @@ public class Kanji2Helper {
 		int fixme = 1;
 		
 		private Map<String, EntryAdditionalDataEntry> kanjidic2AdditionalDataEntryMap = new TreeMap<>();
+		
+		public void setOldKanjiEntryForDictionary(String kanji, @SuppressWarnings("deprecation") KanjiEntryForDictionary oldKanjiEntryForDictionary) {
+			
+			EntryAdditionalDataEntry entryAdditionalDataEntry = kanjidic2AdditionalDataEntryMap.get(kanji);
+			
+			if (entryAdditionalDataEntry == null) {
+				entryAdditionalDataEntry = new EntryAdditionalDataEntry();
+				
+				kanjidic2AdditionalDataEntryMap.put(kanji, entryAdditionalDataEntry);
+			}
+			
+			entryAdditionalDataEntry.oldKanjiEntryForDictionary = oldKanjiEntryForDictionary;			
+		}
 	}
 	
 	private static class EntryAdditionalDataEntry {
-		
-		private int fixme = 1;
-		
-		/*
-		private List<PolishJapaneseEntry> oldPolishJapaneseEntryList;
-		
-		private Map<Integer, EntryAdditionalDataEntry$UpdateDictionarySense> updateDictionarySenseMap;
-		
-		private List<EntryAdditionalDataEntry$UpdateDictionarySense> deleteDictionarySenseListDuringUpdateDictionary;
-		*/
+				
+		@SuppressWarnings("deprecation")
+		private KanjiEntryForDictionary oldKanjiEntryForDictionary;
 	}
-
 }

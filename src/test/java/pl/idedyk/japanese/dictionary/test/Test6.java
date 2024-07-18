@@ -15,6 +15,7 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.SaveKanjiDic2AsHumanCsvConfig;
@@ -190,8 +191,17 @@ public class Test6 {
 		
 		config.shiftCells = true;
 		config.shiftCellsGenerateIds = true;
+		config.addOldPolishTranslates = true;
 		
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+		
+		for (CharacterInfo characterInfo : kanjidic2.getCharacterList()) {
+			
+			// pobieramy stare polskie tlumaczenie
+			KanjiEntryForDictionary oldKanjiEntryForDictionary = kanji2Helper.getOldKanjiEntryForDictionary(characterInfo.getKanji());
+						
+			entryAdditionalData.setOldKanjiEntryForDictionary(characterInfo.getKanji(), oldKanjiEntryForDictionary);
+		}
 		
 		kanji2Helper.saveKanjidic2AsHumanCsv(config, "/tmp/a/kanji2-test.csv", kanjidic2, entryAdditionalData);
 		

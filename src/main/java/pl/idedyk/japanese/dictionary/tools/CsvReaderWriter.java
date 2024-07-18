@@ -685,6 +685,7 @@ public class CsvReaderWriter {
 		csvWriter.close();
 	}
 
+	@Deprecated
 	public static List<KanjiEntryForDictionary> parseKanjiEntriesFromCsv(String fileName, Map<String, KanjiDic2EntryForDictionary> readKanjiDic2, boolean generateJlptGroup)
 			throws IOException, JapaneseDictionaryException {
 
@@ -722,9 +723,11 @@ public class CsvReaderWriter {
 
 			entry.setUsed(Boolean.parseBoolean(usedString));
 
-			KanjiDic2EntryForDictionary kanjiDic2Entry = readKanjiDic2.get(kanjiString);
+			if (readKanjiDic2 != null) {
+				KanjiDic2EntryForDictionary kanjiDic2Entry = readKanjiDic2.get(kanjiString);
 
-			entry.setKanjiDic2Entry(kanjiDic2Entry);
+				entry.setKanjiDic2Entry(kanjiDic2Entry);
+			}
 
 			String jlpt = KanjiUtils.getJlpt(kanjiString);
 

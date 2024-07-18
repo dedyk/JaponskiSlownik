@@ -76,6 +76,7 @@ public class KanjiDic2Reader {
 		return result;
 	}
 	
+	@Deprecated
 	public static Map<String, KanjiDic2EntryForDictionary> readKanjiDic2(String fileName, Map<String, List<String>> kradFileMap) throws Exception {
 		
 		createRadicalToCorrectRadicalMapIfNeeded();
