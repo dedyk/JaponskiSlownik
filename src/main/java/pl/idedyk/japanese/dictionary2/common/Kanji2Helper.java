@@ -67,7 +67,7 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMea
 public class Kanji2Helper {
 	
 	private int fixme_csv = 1;
-	private static final int CSV_COLUMNS = 0; // 11 
+	private static final int CSV_COLUMNS = 7; 
 	
 	private static Kanji2Helper kanji2Helper;
 	
@@ -235,7 +235,7 @@ public class Kanji2Helper {
 		// rekord z naglowkiem
 		new EntryPartConverterHeaderInfo().writeToCsv(config, csvWriter, kanjidic2);
 		
-		createEmptyLinesInCsv(csvWriter);
+		createEmptyLinesInCsv(config, csvWriter);
 		
 		// zapisywanie znakow
 		List<CharacterInfo> characterList = kanjidic2.getCharacterList();
@@ -247,23 +247,23 @@ public class Kanji2Helper {
 			
 			// rozdzielenie, aby zawartosc byla bardziej przjerzysta
 			if (characterInfo != characterList.get(characterList.size() - 1)) {
-				createEmptyLinesInCsv(csvWriter);
+				createEmptyLinesInCsv(config, csvWriter);
 			}			
 		}
 				
 		csvWriter.close();
 	}
 	
-	private void createEmptyLinesInCsv(CsvWriter csvWriter) throws IOException {
+	private void createEmptyLinesInCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter) throws IOException {
 		
 		boolean useTextQualifier = csvWriter.getUseTextQualifier();
 		
 		int columnsNo = 0;
-		
+				
 		// wypelniacz 2
 		csvWriter.setUseTextQualifier(false); // takie obejscie dziwnego zachowania
 		
-		for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+		for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 			csvWriter.write("");
 		}
 		
@@ -274,7 +274,7 @@ public class Kanji2Helper {
 		columnsNo = 0;
 		
 		// wypelniacz 3			
-		for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+		for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 			csvWriter.write(null);
 		}
 		
@@ -287,13 +287,7 @@ public class Kanji2Helper {
 	}
 	
 	private void saveEntryAsHumanCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo, EntryAdditionalData entryAdditionalData) throws Exception {
-		
-		int fixme2 = 1;
-		
-		/*
-	    "readingMeaning"
-	    */
-		
+				
 		// rekord poczatkowy
 		new EntryPartConverterBegin().writeToCsv(config, csvWriter, characterInfo);
 		
@@ -358,7 +352,7 @@ public class Kanji2Helper {
 			csvWriter.write(dateOfCreationAsLocalDate.format(DateTimeFormatter.ISO_LOCAL_DATE)); columnsNo++;
 						
 			// wypelniacz			
-			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+			for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 				csvWriter.write(null);
 			}
 			
@@ -409,7 +403,7 @@ public class Kanji2Helper {
 			csvWriter.write(characterInfo.getKanji()); columnsNo++;
 			
 			// wypelniacz			
-			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+			for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 				csvWriter.write(null);
 			}
 			
@@ -450,11 +444,11 @@ public class Kanji2Helper {
 				
 				csvWriter.write(EntryHumanCsvFieldType.CODE_POINT.name()); columnsNo++;
 				
-				csvWriter.write(codePointValueInfo.getType().value());
-				csvWriter.write(codePointValueInfo.getValue());
+				csvWriter.write(codePointValueInfo.getType().value()); columnsNo++;
+				csvWriter.write(codePointValueInfo.getValue()); columnsNo++;
 				
 				// wypelniacz			
-				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 					csvWriter.write(null);
 				}
 				
@@ -509,11 +503,11 @@ public class Kanji2Helper {
 				
 				csvWriter.write(EntryHumanCsvFieldType.RADICAL.name()); columnsNo++;
 				
-				csvWriter.write(radicalInfoValue.getRadicalValueType().value());
-				csvWriter.write(radicalInfoValue.getValue());
+				csvWriter.write(radicalInfoValue.getRadicalValueType().value()); columnsNo++;
+				csvWriter.write(radicalInfoValue.getValue()); columnsNo++;
 				
 				// wypelniacz			
-				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 					csvWriter.write(null);
 				}
 				
@@ -593,7 +587,7 @@ public class Kanji2Helper {
 			csvWriter.write(miscInfo.getJlpt() != null ? miscInfo.getJlpt().toString() : "-"); columnsNo++;
 			
 			// wypelniacz			
-			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+			for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 				csvWriter.write(null);
 			}
 			
@@ -687,7 +681,7 @@ public class Kanji2Helper {
 				csvWriter.write(dictionaryNumberInfoReference.getValue()); columnsNo++;
 				
 				// wypelniacz			
-				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 					csvWriter.write(null);
 				}
 				
@@ -749,7 +743,7 @@ public class Kanji2Helper {
 				csvWriter.write(queryCodeInfoCode.getValue()); columnsNo++;
 				
 				// wypelniacz			
-				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 					csvWriter.write(null);
 				}
 				
@@ -803,7 +797,7 @@ public class Kanji2Helper {
 			csvWriter.write(Helper.convertListToString(readingMeaningInfo.getNanoriList())); columnsNo++;
 			
 			// wypelniacz			
-			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+			for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 				csvWriter.write(null);
 			}
 			
@@ -878,7 +872,7 @@ public class Kanji2Helper {
 			csvWriter.write(Helper.convertListToString(jaKunReadingList)); columnsNo++;			
 			
 			// wypelniacz			
-			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+			for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 				csvWriter.write(null);
 			}
 			
@@ -1021,7 +1015,7 @@ public class Kanji2Helper {
 			//
 			
 			// wypelniacz			
-			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+			for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 				csvWriter.write(null);
 			}
 			
@@ -1060,7 +1054,7 @@ public class Kanji2Helper {
 					csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
 					
 					// wypelniacz			
-					for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 						csvWriter.write(null);
 					}
 
@@ -1211,7 +1205,7 @@ public class Kanji2Helper {
 			//////
 			
 			// wypelniacz			
-			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+			for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 				csvWriter.write(null);
 			}
 			
@@ -1458,7 +1452,7 @@ public class Kanji2Helper {
 			csvWriter.write(characterInfo.getKanji()); columnsNo++;
 			
 			// wypelniacz			
-			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+			for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
 				csvWriter.write(null);
 			}
 			

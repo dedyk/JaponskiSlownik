@@ -189,7 +189,7 @@ public class Test6 {
 		
 		SaveKanjiDic2AsHumanCsvConfig config = new SaveKanjiDic2AsHumanCsvConfig();
 		
-		config.shiftCells = true;
+		config.shiftCells = false;
 		config.shiftCellsGenerateIds = true;
 		config.addOldPolishTranslates = true;
 		
