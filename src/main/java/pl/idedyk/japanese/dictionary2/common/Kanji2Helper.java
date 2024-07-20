@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary2.common;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringReader;
@@ -17,6 +18,7 @@ import java.util.stream.Collectors;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlEnumValue;
@@ -191,6 +193,21 @@ public class Kanji2Helper {
 		return kanjidic2;
 	}
 	
+	public void saveKanjidic2AsXml(Kanjidic2 kanjidic2, File file) throws Exception {
+		
+		JAXBContext jaxbContext = JAXBContext.newInstance(Kanjidic2.class);              
+
+		//
+				
+		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+		//
+		
+		jaxbMarshaller.marshal(kanjidic2, file);
+	}
+
+	
 	@SuppressWarnings("deprecation")
 	public List<KanjiEntryForDictionary> getOldKanjiPolishDictionaryList() throws IOException, JapaneseDictionaryException {
 		
@@ -283,7 +300,6 @@ public class Kanji2Helper {
 		//
 		
 		csvWriter.setUseTextQualifier(useTextQualifier);
-
 	}
 	
 	private void saveEntryAsHumanCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo, EntryAdditionalData entryAdditionalData) throws Exception {
@@ -320,6 +336,104 @@ public class Kanji2Helper {
 		new EntryPartConverterEnd().writeToCsv(config, csvWriter, characterInfo);		
 	}
 	
+	public Kanjidic2 readKanjidic2FromHumanCsv(File file) throws Exception {
+				
+		EntryPartConverterHeaderInfo entryPartConverterHeaderInfo = new EntryPartConverterHeaderInfo();
+		EntryPartConverterBegin entryPartConverterBegin = new EntryPartConverterBegin();
+		EntryPartConverterCodepoint entryPartConverterCodepoint = new EntryPartConverterCodepoint();
+		EntryPartConverterRadical entryPartConverterRadical = new EntryPartConverterRadical();
+		EntryPartConverterMisc entryPartConverterMisc = new EntryPartConverterMisc();
+		EntryPartConverterDictionaryNumber entryPartConverterDictionaryNumber = new EntryPartConverterDictionaryNumber();
+		EntryPartConverterQueryCode entryPartConverterQueryCode = new EntryPartConverterQueryCode();
+		EntryPartConverterReadingMeaningNanori entryPartConverterReadingMeaningNanori = new EntryPartConverterReadingMeaningNanori();
+		EntryPartConverterReadingMeaningReading entryPartConverterReadingMeaningReading = new EntryPartConverterReadingMeaningReading();
+		EntryPartConverterReadingMeaningMeaning entryPartConverterReadingMeaningEngMeaning = new EntryPartConverterReadingMeaningMeaning(EntryHumanCsvFieldType.READING_MEANING_MEANING_ENG);
+		EntryPartConverterReadingMeaningMeaning entryPartConverterReadingMeaningPolMeaning = new EntryPartConverterReadingMeaningMeaning(EntryHumanCsvFieldType.READING_MEANING_MEANING_POL);
+		EntryPartConverterEnd entryPartConverterEnd = new EntryPartConverterEnd();		
+
+		//
+		
+		CsvReader csvReader = new CsvReader(new FileReader(file), ',');
+				
+		//
+		
+		Kanjidic2 kanjidic2 = null;
+		CharacterInfo characterInfo = null;
+				
+		while (csvReader.readRecord()) {
+			
+			String fieldTypeString = csvReader.get(0);
+			
+			if (fieldTypeString.equals("") == true) {
+				continue;
+			}
+
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+						
+			if (fieldType == EntryHumanCsvFieldType.HEADER) { // rekord z naglowkiem
+				
+				kanjidic2 = new Kanjidic2();
+				
+				entryPartConverterHeaderInfo.parseCsv(csvReader, kanjidic2);
+			
+			} else if (fieldType == EntryHumanCsvFieldType.BEGIN) { // nowy rekord
+				
+				characterInfo = new CharacterInfo();
+				
+				entryPartConverterBegin.parseCsv(csvReader, characterInfo);
+				
+			} else if (fieldType == EntryHumanCsvFieldType.END) { // zakonczenie rekordu
+				
+				entryPartConverterEnd.parseCsv(csvReader, characterInfo);
+				
+				kanjidic2.getCharacterList().add(characterInfo);
+				
+			} else if (fieldType == EntryHumanCsvFieldType.CODE_POINT) { // code point
+				
+				entryPartConverterCodepoint.parseCsv(csvReader, characterInfo);				
+				
+			} else if (fieldType == EntryHumanCsvFieldType.RADICAL) { // radical
+				
+				entryPartConverterRadical.parseCsv(csvReader, characterInfo);
+				
+			} else if (fieldType == EntryHumanCsvFieldType.MISC) { // misc 
+				
+				entryPartConverterMisc.parseCsv(csvReader, characterInfo);
+			
+			} else if (fieldType == EntryHumanCsvFieldType.DICTIONARY_NUMBER) { // dictionary number 
+				
+				entryPartConverterDictionaryNumber.parseCsv(csvReader, characterInfo);
+			
+			} else if (fieldType == EntryHumanCsvFieldType.QUERY_CODE) { // query code 
+				
+				entryPartConverterQueryCode.parseCsv(csvReader, characterInfo);
+			
+			} else if (fieldType == EntryHumanCsvFieldType.READING_MEANING_NANONI) { // meaning - nanoni 
+				
+				entryPartConverterReadingMeaningNanori.parseCsv(csvReader, characterInfo);
+			
+			} else if (fieldType == EntryHumanCsvFieldType.READING_MEANING_READING) { // meaning - reading 
+				
+				entryPartConverterReadingMeaningReading.parseCsv(csvReader, characterInfo);
+			
+			} else if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_ENG) { // meaning - eng 
+				
+				entryPartConverterReadingMeaningEngMeaning.parseCsv(csvReader, characterInfo);
+
+			} else if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_POL) { // meaning - pol 
+				
+				entryPartConverterReadingMeaningPolMeaning.parseCsv(csvReader, characterInfo);
+				
+			} else {				
+				throw new RuntimeException(fieldType.name());
+			}			
+		}
+		
+		csvReader.close();
+		
+		return kanjidic2;
+	}
+	
 	private class EntryPartConverterHeaderInfo{
 
 		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, Kanjidic2 kanjidic2) throws IOException {
@@ -340,7 +454,7 @@ public class Kanji2Helper {
 			
 			HeaderInfo headerInfo = kanjidic2.getHeader();
 			
-			csvWriter.write(EntryHumanCsvFieldType.HEADER_BEGIN.name()); columnsNo++;
+			csvWriter.write(EntryHumanCsvFieldType.HEADER.name()); columnsNo++;
 			csvWriter.write(headerInfo.getFileVersion()); columnsNo++;
 			csvWriter.write(headerInfo.getDatabaseVersion()); columnsNo++;
 			
@@ -363,7 +477,7 @@ public class Kanji2Helper {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
-			if (fieldType != EntryHumanCsvFieldType.HEADER_BEGIN) {
+			if (fieldType != EntryHumanCsvFieldType.HEADER) {
 				throw new RuntimeException(fieldType.name());
 			}
 			
@@ -612,7 +726,7 @@ public class Kanji2Helper {
 			
 			//
 			
-			miscInfo.setGrade(csvReader.get(0).equals("-") == false ? Integer.valueOf(csvReader.get(1)) : null);
+			miscInfo.setGrade(csvReader.get(1).equals("-") == false ? Integer.valueOf(csvReader.get(1)) : null);
 			
 			List<String> strokeCountList = Helper.convertStringToList(csvReader.get(2));
 			
@@ -930,6 +1044,10 @@ public class Kanji2Helper {
 				
 				readingList.add(readingMeaningInfoReadingMeaningGroupReading);
 			}
+			
+			//
+			
+			readingMeaningGroup.getReadingList().addAll(readingList);
 		}
 	}
 		
@@ -1472,11 +1590,8 @@ public class Kanji2Helper {
 	}
 
 	
-	private int csv_field_fixme = 1;	
 	private enum EntryHumanCsvFieldType {
-		
-		HEADER_BEGIN,
-		HEADER_END,
+		HEADER,
 		
 		BEGIN,
 		
@@ -1494,18 +1609,6 @@ public class Kanji2Helper {
 		END;
 		
 		;
-		/*
-		
-		
-		KANJI,
-		READING,
-		
-		SENSE_COMMON,
-		SENSE_ENG,
-		SENSE_POL,
-				
-		END;
-		*/
 	}
 		
 	public static class SaveKanjiDic2AsHumanCsvConfig {

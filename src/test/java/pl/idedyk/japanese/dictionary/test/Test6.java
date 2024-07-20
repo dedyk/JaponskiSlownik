@@ -185,13 +185,14 @@ public class Test6 {
 		
 		Kanji2Helper kanji2Helper = Kanji2Helper.getOrInit();
 		
+		/*
 		Kanjidic2 kanjidic2 = kanji2Helper.getKanjidic2();
 		
 		SaveKanjiDic2AsHumanCsvConfig config = new SaveKanjiDic2AsHumanCsvConfig();
 		
 		config.shiftCells = false;
 		config.shiftCellsGenerateIds = true;
-		config.addOldPolishTranslates = true;
+		config.addOldPolishTranslates = false;
 		
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
 		
@@ -202,8 +203,13 @@ public class Test6 {
 						
 			entryAdditionalData.setOldKanjiEntryForDictionary(characterInfo.getKanji(), oldKanjiEntryForDictionary);
 		}
+		*/
 		
-		kanji2Helper.saveKanjidic2AsHumanCsv(config, "/tmp/a/kanji2-test.csv", kanjidic2, entryAdditionalData);
+		// kanji2Helper.saveKanjidic2AsHumanCsv(config, "/tmp/a/kanji2-test.csv", kanjidic2, entryAdditionalData);
+		
+		Kanjidic2 kanjidic2 = kanji2Helper.readKanjidic2FromHumanCsv(new File("/tmp/a/kanji2-test.csv"));
+		
+		kanji2Helper.saveKanjidic2AsXml(kanjidic2, new File("/tmp/a/kanjidic2-csv-to-xml.xml"));
 		
 		/*
 		List<CharacterInfo> characterList = kanjidic2.getCharacterList();
