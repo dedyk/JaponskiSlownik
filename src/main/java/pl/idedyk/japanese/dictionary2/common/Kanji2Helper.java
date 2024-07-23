@@ -20,9 +20,6 @@ import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlEnumValue;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
@@ -38,7 +35,6 @@ import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointValueInfo;
@@ -68,7 +64,6 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMea
 
 public class Kanji2Helper {
 	
-	private int fixme_csv = 1;
 	private static final int CSV_COLUMNS = 7; 
 	
 	private static Kanji2Helper kanji2Helper;
