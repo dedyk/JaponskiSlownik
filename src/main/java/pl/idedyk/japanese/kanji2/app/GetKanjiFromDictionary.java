@@ -6,7 +6,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -14,9 +17,14 @@ import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 
+import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary2.app.GetEntryFromDictionary;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
+import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.HeaderInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 
 public class GetKanjiFromDictionary {
 	
@@ -62,7 +70,7 @@ public class GetKanjiFromDictionary {
 		
 		//
 		
-		List<String> kanjis = new ArrayList<>();
+		Set<String> kanjis = new LinkedHashSet<>();
 		
 		boolean usePolishDictionary = false;
 		boolean useKanjidic2Dictionary = false;
@@ -91,8 +99,10 @@ public class GetKanjiFromDictionary {
 			
 			List<String> fileKanjis = readFile(fileNameEntryIds);
 
-			for (String currentKanji : fileKanjis) {
-				kanjis.add(currentKanji);
+			for (String currentLine : fileKanjis) {
+				for (int idx = 0; idx < currentLine.length(); ++idx) {
+					kanjis.add(currentLine.substring(idx, idx + 1));
+				}				
 			}
 		
 		} else {
@@ -139,9 +149,105 @@ public class GetKanjiFromDictionary {
 
 		// wczytywanie pomocnika slownikowego
 		Kanji2Helper kanji2Helper = Kanji2Helper.getOrInit();
+		
+		Kanjidic2 result = kanji2Helper.createEmptyKanjidic2();
+				
+		Set<String> alreadyMetKanjiSet = new TreeSet<String>();
+		
+		// dodatkowe informacje
+		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+		
+		for (String currentKanji : kanjis) {
+									
+			if (alreadyMetKanjiSet.contains(currentKanji) == true) { // to slowo juz odwiedzalismy
+				continue;
+				
+			} else {
+				alreadyMetKanjiSet.add(currentKanji);
+			}
+			
+			int fixme2 = 1;
+			/*
+			if (usePolishDictionary == true) { // szukamy w polskim slowniku
+				
+				
+				
+				Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(currentEntryId);
+				
+				if (entryFromPolishDictionary == null) { // nie znaleziono
+					
+					System.out.println("[Error] Can't find entry id in polish dictionary: " + currentEntryId);
+					
+					continue;					
+				}
+				
+				result.add(entryFromPolishDictionary);				
+			}
+			*/
+			
+			if (useKanjidic2Dictionary == true) { // szukamy w slowniku angielskim
+				
+				CharacterInfo characterInfo = kanji2Helper.getKanjiFromKanjidic2(currentKanji);
+				
+				if (characterInfo == null) { // nie znaleziono
+					System.out.println("[Errpr] Can't find kanji in kanji dic2: " + currentKanji);
+					
+					continue;										
+				}
+				
+				CharacterInfo characterInfoFromPolishiDictionaryKanjidic2 = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(currentKanji);
+				
+				if (characterInfoFromPolishiDictionaryKanjidic2 != null) { // taki wpis juz jest w polskim slowniku					
+					System.out.println("[Error] Entry already exists in kanji polish dictionary: " + currentKanji);
+					
+					continue;					
+				}
+				
+				// pobieramy znaczenie ze starego slownika
+				@SuppressWarnings("unused")
+				KanjiEntryForDictionary oldKanjiEntryForDictionary = kanji2Helper.getOldKanjiEntryForDictionary(currentKanji);
+				
+				if (oldKanjiEntryForDictionary != null) {
+					entryAdditionalData.setOldKanjiEntryForDictionary(characterInfo.getKanji(), oldKanjiEntryForDictionary);
+				}
+								
+				result.getCharacterList().add(characterInfo);				
+			}
+			
+			int fixme3 = 1;
+			/*
+			if (useJMdictPolishDictionary == true) { // szukamy w polskim slowniku lub jmdict
+				Entry entry = dictionaryHelper.getEntryFromPolishDictionary(currentEntryId); // szukamy w polskim slowniku
 
-		fixme();
-
+				if (entry != null) {
+					result.add(entry);
+					
+					// zaznaczamy, ze ten wpis to polskie slowo, aby romaji nie zaznaczalo sie 
+					saveEntryListAsHumanCsvConfig.markAsPolishEntry(entry);
+					
+				} else { // szukamy w jmdict
+					entry = dictionaryHelper.getJMdictEntry(currentEntryId);
+					
+					if (entry == null) { // nie znaleziono
+						System.out.println("[Errpr] Can't find entry id in polish or jmdict dictionary: " + currentEntryId);
+						
+						continue;										
+					}
+														
+					// uzupelnienie o puste polskie tlumaczenie
+					dictionaryHelper.createEmptyPolishSense(entry);
+					
+					// pobranie ze starego slownika interesujacych danych (np. romaji)
+					dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry, entryAdditionalData);
+					
+					result.add(entry);				
+				}				
+			}
+			*/
+		}
+		
+		// zapisanie wyniku pod postacia csv		
+		kanji2Helper.saveKanjidic2AsHumanCsv(saveKanjiDic2AsHumanCsvConfig, "input/kanji2-new.csv", result, entryAdditionalData);
 	}
 	
 	private static void printHelp(Options options) {

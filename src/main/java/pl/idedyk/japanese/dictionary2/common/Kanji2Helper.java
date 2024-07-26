@@ -10,6 +10,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -68,9 +70,17 @@ public class Kanji2Helper {
 	
 	private static Kanji2Helper kanji2Helper;
 	
+	// source kanji dict
 	private File kanjidic2File;
 	private Kanjidic2 kanjidic2 = null;
+	private Map<String, CharacterInfo> kanjidic2Cache;
 	
+	// new kanji polish dictionary file
+	private File polishDictionaryKanjidic2File;
+	private Kanjidic2 polishDictionaryKanjidic2;
+	private Map<String, CharacterInfo> polishDictionaryKanjidic2Cache;
+	
+	// old kanji polish dictionary file
 	private File oldKanjiPolishDictionaryFile;
 	
 	@SuppressWarnings("deprecation")
@@ -96,6 +106,8 @@ public class Kanji2Helper {
 		//
 		
 		Kanji2Helper kanji2Helper = new Kanji2Helper();
+		
+		kanji2Helper.polishDictionaryKanjidic2File = new File("input/kanji2.csv");
 		
 		//
 				
@@ -188,6 +200,27 @@ public class Kanji2Helper {
 		return kanjidic2;
 	}
 	
+	private void createKanjidic2Cache() throws Exception {
+		
+		Kanjidic2 kanjidic2 = getKanjidic2();
+		
+		if (kanjidic2Cache == null) {
+			
+			kanjidic2Cache = new TreeMap<String, CharacterInfo>();
+			
+			for (CharacterInfo characterInfo : kanjidic2.getCharacterList()) {
+				kanjidic2Cache.put(characterInfo.getKanji(), characterInfo);
+			}			
+		}
+	}
+	
+	public CharacterInfo getKanjiFromKanjidic2(String kanji) throws Exception {
+		
+		createKanjidic2Cache();
+		
+		return kanjidic2Cache.get(kanji);
+	}
+	
 	public void saveKanjidic2AsXml(Kanjidic2 kanjidic2, File file) throws Exception {
 		
 		JAXBContext jaxbContext = JAXBContext.newInstance(Kanjidic2.class);              
@@ -201,8 +234,47 @@ public class Kanji2Helper {
 		
 		jaxbMarshaller.marshal(kanjidic2, file);
 	}
-
 	
+	public Kanjidic2 getPolishDictionaryKanjidic2() throws Exception {
+		
+		readPolishDictionaryKanjidic2();
+		
+		return polishDictionaryKanjidic2;
+	}
+	
+	private Kanjidic2 readPolishDictionaryKanjidic2() throws Exception {
+		
+		if (polishDictionaryKanjidic2 == null) {
+			System.out.println("Reading polish dictionary Kanjidic2");
+			
+			polishDictionaryKanjidic2 = readKanjidic2FromHumanCsv(polishDictionaryKanjidic2File);
+		}		
+		
+		return polishDictionaryKanjidic2;
+	}
+	
+	private void createPolishDictionaryKanjidic2Cache() throws Exception {
+		
+		Kanjidic2 polishDictionaryKanjidic2 = readPolishDictionaryKanjidic2();
+		
+		if (polishDictionaryKanjidic2Cache == null) {
+			
+			polishDictionaryKanjidic2Cache = new TreeMap<String, CharacterInfo>();
+			
+			for (CharacterInfo characterInfo : polishDictionaryKanjidic2.getCharacterList()) {
+				polishDictionaryKanjidic2Cache.put(characterInfo.getKanji(), characterInfo);
+				
+			}
+		}
+	}
+	
+	public CharacterInfo getKanjiFromPolishDictionaryKanjidic2(String kanji) throws Exception {
+		
+		createPolishDictionaryKanjidic2Cache();
+		
+		return polishDictionaryKanjidic2Cache.get(kanji);		
+	}
+
 	@SuppressWarnings("deprecation")
 	public List<KanjiEntryForDictionary> getOldKanjiPolishDictionaryList() throws IOException, JapaneseDictionaryException {
 		
@@ -1549,6 +1621,25 @@ public class Kanji2Helper {
 	
 	
 	///////////////////////
+	
+	public Kanjidic2 createEmptyKanjidic2() throws DatatypeConfigurationException {
+		
+		Kanjidic2 kanjidic2 = new Kanjidic2();
+				
+		GregorianCalendar gregorianCalendar = new GregorianCalendar();
+		
+		gregorianCalendar.setTime(new Date());
+		
+		HeaderInfo headerInfo = new HeaderInfo();
+		
+		headerInfo.setFileVersion("4");
+		headerInfo.setDatabaseVersion("000");
+		headerInfo.setDateOfCreation(DatatypeFactory.newInstance().newXMLGregorianCalendar(gregorianCalendar));
+		
+		kanjidic2.setHeader(headerInfo);
+		
+		return kanjidic2;
+	}
 	
 	
 	private class EntryPartConverterEnd {
