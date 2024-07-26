@@ -5943,8 +5943,14 @@ przygnębiający",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,Group
 303637,WORD_NOUN,,HIRAGANA,,,数ヵ国,すうかこく,,suuka koku,"różne kraje
 kilka krajów",,DICTIONARY2_SOURCE,,GroupId: 2011670
 303638,"WORD_NOUN
-WORD_NOUN_SUFFIX",,HIRAGANA,,,猟,かり,,kari,"polowanie
-zbieranie plonów (np. jagód, owoców)",,DICTIONARY2_SOURCE,DUPLICATE 7934,GroupId: 1328710
+WORD_NOUN_SUFFIX",,HIRAGANA,,,猟,かり,,kari,"polowanie (wymawiane がり jako sufiks)
+strzelanie (wymawiane がり jako sufiks)
+zbieranie (grzybów, skorupiaków, jagód, owoców itp.) (wymawiane がり)
+oglądanie (np. jesiennych liści) (wymawiane がり)
+polowanie na (przestępcę itp.) (wymawiane がり)
+łapanka (np. komunistów) (wymawiane がり)
+polowanie na czarownice (wymawiane がり)",,DICTIONARY2_SOURCE,"DUPLICATE 7934
+DUPLICATE 303675",GroupId: 1328710
 303639,WORD_NOUN,,HIRAGANA,,,人さがし,ひとさがし,,hito sagashi,"szukanie kogoś
 poszukiwanie kogoś
 poszukiwanie zaginionej osoby",,DICTIONARY2_SOURCE,,GroupId: 1368750
@@ -5965,8 +5971,8 @@ kilka języków",,DICTIONARY2_SOURCE,,GroupId: 2861968
 303647,WORD_NOUN,,HIRAGANA,,,手すき紙,てすきし,,tesukishi,papier czerpany,,DICTIONARY2_SOURCE,,GroupId: 2861969
 303648,WORD_NOUN,,HIRAGANA,,,手漉き紙,てすきし,,tesukishi,papier czerpany,,DICTIONARY2_SOURCE,,GroupId: 2861969
 303649,WORD_NOUN,,KATAKANA,,,-,ブラバ,,buraba,powrót do poprzedniej strony,internet; skrót; w przeglądarce internetowej,DICTIONARY2_SOURCE,,GroupId: 2861970
-303650,WORD_NOUN,,KATAKANA,,,-,ホラーハウス,,horaa hausu,nawiedzony dom,ang: horror house,DICTIONARY2_SOURCE,,GroupId: 2861972
-303651,WORD_NOUN,,KATAKANA,,,-,ホラー・ハウス,,horaa hausu,nawiedzony dom,ang: horror house,DICTIONARY2_SOURCE,,GroupId: 2861972
+303650,WORD_NOUN,,KATAKANA,,,-,ホラーハウス,,horaa hausu,nawiedzony dom,atrakcja; ang: horror house,DICTIONARY2_SOURCE,,GroupId: 2861972
+303651,WORD_NOUN,,KATAKANA,,,-,ホラー・ハウス,,horaa hausu,nawiedzony dom,atrakcja; ang: horror house,DICTIONARY2_SOURCE,,GroupId: 2861972
 303652,WORD_NOUN,,HIRAGANA_KATAKANA,,,集スト,しゅうスト,,shuu suto,"gang prześladowca
 masowy prześladowca",skrót,DICTIONARY2_SOURCE,,GroupId: 2861973
 303653,WORD_NOUN,,KATAKANA_HIRAGANA,,,ホテル代,ホテルだい,,hoteru dai,"rachunek za hotel
@@ -5980,3 +5986,86 @@ odsłonięcie skóry",,DICTIONARY2_SOURCE,,GroupId: 2861976
 303658,WORD_NOUN,,HIRAGANA,,,処世哲学,しょせいてつがく,,shosei tetsugaku,"filozofia życia
 filozofia torowania sobie drogi przez życie",,DICTIONARY2_SOURCE,,GroupId: 2861978
 303659,WORD_NOUN,,KATAKANA,,,-,カクヨム,,kakuyomu,Kakuyomu,nazwa produktu; usługa samodzielnego publikowania online świadczona przez firmę Kadokawa,DICTIONARY2_SOURCE,,GroupId: 5746929
+303660,WORD_NOUN,,HIRAGANA_KATAKANA,,,非バグ,ひバグ,,hibagu,"nie błąd
+zachowanie, które może wydawać się błędem, ale jest zamierzone (wyjaśnienie)",informatyka,DICTIONARY2_SOURCE,,GroupId: 2861979
+303661,WORD_NOUN,,KATAKANA,,,-,テレワーカー,,terewaakaa,"telepracownik
+pracownik zdalny",ang: teleworker,DICTIONARY2_SOURCE,,GroupId: 2861980
+303662,WORD_NOUN,,HIRAGANA,,,人前式,じんぜんしき,,jinzenshiki,"niereligijna ceremonia ślubna
+ceremonia ślubu cywilnego",,DICTIONARY2_SOURCE,,GroupId: 2861981
+303663,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,胸を膨らませる,むねをふくらませる,,mune o fukuramaseru,być wypełnionym,"oczekiwaniem, nadzieją, radością",DICTIONARY2_SOURCE,,GroupId: 2861982
+303664,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,胸をふくらませる,むねをふくらませる,,mune o fukuramaseru,być wypełnionym,"oczekiwaniem, nadzieją, radością",DICTIONARY2_SOURCE,,GroupId: 2861982
+303665,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ラチが明かない,ラチがあかない,,rachi ga akanai,"nie robić postępu
+zmierzać donikąd
+pozostać nierozstrzygnięty",,DICTIONARY2_SOURCE,DUPLICATE 287754,GroupId: 1915350
+303666,WORD_NOUN,,HIRAGANA,,,半長径,はんちょうけい,,hanchoukei,półoś wielka,geometria,DICTIONARY2_SOURCE,,GroupId: 1479690
+303667,WORD_NOUN,,HIRAGANA,,,無気力試合,むきりょくじあい,,mukiryoku jiai,"mecz, w którym jedna ze stron celowo osiąga gorsze wyniki","sport; np. przegrywa, aby w następnej rundzie zmierzyć się z korzystniejszym przeciwnikiem",DICTIONARY2_SOURCE,,GroupId: 2733120
+303668,WORD_NOUN,,KATAKANA,,,-,ビジュアリゼーション,,bijuarizeeshon,wizualizacja,"ang: visualization, visualisation",DICTIONARY2_SOURCE,,GroupId: 1104980
+303669,WORD_NOUN,,KATAKANA,,,-,ヴィジュアライゼーション,,vijuaraizeeshon,wizualizacja,"ang: visualization, visualisation",DICTIONARY2_SOURCE,,GroupId: 1104980
+303670,WORD_NOUN,,KATAKANA,,,-,ヴィジュアリゼーション,,vijuarizeeshon,wizualizacja,"ang: visualization, visualisation",DICTIONARY2_SOURCE,,GroupId: 1104980
+303671,WORD_ADVERB_TO,,KATAKANA,,,-,キャイン,,kyain,"okrzyk
+krzyk
+jejku",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2523810
+303672,WORD_ADVERB_TO,,HIRAGANA,,,-,きゃいん,,kyain,"okrzyk
+krzyk
+jejku",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2523810
+303673,"WORD_NOUN
+WORD_NOUN_SUFFIX",,HIRAGANA,,,狩り,がり,,gari,"polowanie (wymawiane がり jako sufiks)
+strzelanie (wymawiane がり jako sufiks)
+zbieranie (grzybów, skorupiaków, jagód, owoców itp.) (wymawiane がり)
+oglądanie (np. jesiennych liści) (wymawiane がり)
+polowanie na (przestępcę itp.) (wymawiane がり)
+łapanka (np. komunistów) (wymawiane がり)
+polowanie na czarownice (wymawiane がり)",,DICTIONARY2_SOURCE,"DUPLICATE 8117
+DUPLICATE 66356",GroupId: 1328710
+303674,"WORD_NOUN
+WORD_NOUN_SUFFIX",,HIRAGANA,,,狩,がり,,gari,"polowanie (wymawiane がり jako sufiks)
+strzelanie (wymawiane がり jako sufiks)
+zbieranie (grzybów, skorupiaków, jagód, owoców itp.) (wymawiane がり)
+oglądanie (np. jesiennych liści) (wymawiane がり)
+polowanie na (przestępcę itp.) (wymawiane がり)
+łapanka (np. komunistów) (wymawiane がり)
+polowanie na czarownice (wymawiane がり)",,DICTIONARY2_SOURCE,"DUPLICATE 29882
+DUPLICATE 66356",GroupId: 1328710
+303675,"WORD_NOUN
+WORD_NOUN_SUFFIX",,HIRAGANA,,,猟,がり,,gari,"polowanie (wymawiane がり jako sufiks)
+strzelanie (wymawiane がり jako sufiks)
+zbieranie (grzybów, skorupiaków, jagód, owoców itp.) (wymawiane がり)
+oglądanie (np. jesiennych liści) (wymawiane がり)
+polowanie na (przestępcę itp.) (wymawiane がり)
+łapanka (np. komunistów) (wymawiane がり)
+polowanie na czarownice (wymawiane がり)",,DICTIONARY2_SOURCE,"DUPLICATE 7934
+DUPLICATE 66356
+DUPLICATE 303638",GroupId: 1328710
+303676,WORD_NOUN,,HIRAGANA,,,収書,しゅうしょ,,shuusho,"kolekcja książek
+zbiór książek",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2861983
+303677,WORD_NOUN,,KATAKANA,,,-,ドリチン,,dorichin,stulejka,slang,DICTIONARY2_SOURCE,,GroupId: 2861984
+303678,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,腹心の友,ふくしんのとも,,fukushin no tomo,"bliski przyjaciel
+zaufany przyjaciel
+powiernik",,DICTIONARY2_SOURCE,,GroupId: 2861986
+303679,WORD_NOUN,,KATAKANA,,,-,アサクリ,,asakuri,Assassin's Creed,"dzieło artystyczne, np. literatura, muzyka i etc; seria gier wideo, skrót",DICTIONARY2_SOURCE,,GroupId: 5746930
+303680,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,アイソを尽かす,あいそをつかす,,aiso o tsukasu,"być zniesmaczonym
+stracić cierpliwość
+odkochać się",,DICTIONARY2_SOURCE,,GroupId: 1855980
+303681,WORD_NOUN,,HIRAGANA,,,総苞片,そうほうへん,,souhouhen,skala inwolucyjna,botanika,DICTIONARY2_SOURCE,,GroupId: 2861989
+303682,WORD_NOUN,,HIRAGANA,,,林縁,りんえん,,rin'en,"skraj lasu
+granica lasu",,DICTIONARY2_SOURCE,,GroupId: 2861990
+303683,WORD_NOUN,,HIRAGANA,,,落葉広葉樹,らくようこうようじゅ,,rakuyou kouyouju,drzewo liściaste o szerokich liściach,,DICTIONARY2_SOURCE,,GroupId: 2861991
+303684,WORD_NOUN,,HIRAGANA,,,葉縁,ようえん,,youen,margines liścia,botanika,DICTIONARY2_SOURCE,,GroupId: 2861992
+303685,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,淡黄緑色,たんこう,,tankou,pistacjowy (kolor),,DICTIONARY2_SOURCE,,GroupId: 2861993
+303686,WORD_NOUN,,HIRAGANA,,,花付き,はなつき,,hana tsuki,kwitnienie,,DICTIONARY2_SOURCE,,GroupId: 2861994
+303687,WORD_NOUN,,HIRAGANA,,,花つき,はなつき,,hana tsuki,kwitnienie,,DICTIONARY2_SOURCE,,GroupId: 2861994
+303688,WORD_NOUN,,HIRAGANA,,,集合果,しゅうごうか,,shuugouka,"owoc wielokrotny
+poliantokarp
+synkarp",botanika,DICTIONARY2_SOURCE,,GroupId: 2861995
+303689,WORD_NOUN,,HIRAGANA,,,混芽,こんが,,konga,mieszany pączek,botanika,DICTIONARY2_SOURCE,,GroupId: 2861996
+303690,WORD_NOUN,,KATAKANA,,,-,ビジホ,,bijiho,"hotel biznesowy
+tani, ale dogodnie zlokalizowany hotel z podstawowymi udogodnieniami, skierowany do osób podróżujących służbowo (wyjaśnienie)",skrót; potocznie,DICTIONARY2_SOURCE,,GroupId: 2861997
+303691,WORD_NOUN,,HIRAGANA,,,おにゃの子,おにゃのこ,,onya no ko,młoda kobieta,slang internetowy; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2861998
+303692,WORD_NOUN,,HIRAGANA,,,花弁,かべん,,kaben,płatek kwiatu,,DICTIONARY2_SOURCE,DUPLICATE 17773,GroupId: 2862000
+303693,WORD_NOUN,,HIRAGANA,,,花瓣,かべん,,kaben,płatek kwiatu,,DICTIONARY2_SOURCE,,GroupId: 2862000
