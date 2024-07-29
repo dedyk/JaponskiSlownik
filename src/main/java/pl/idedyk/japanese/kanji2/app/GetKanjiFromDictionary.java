@@ -199,6 +199,9 @@ public class GetKanjiFromDictionary {
 				
 				if (oldKanjiEntryForDictionary != null) {
 					entryAdditionalData.setOldKanjiEntryForDictionary(characterInfo.getKanji(), oldKanjiEntryForDictionary);
+					
+					// dodanie dodatkowych informacji ze starego slownika
+					characterInfo = kanji2Helper.addDatasFromOldKanjiEntryForDictionary(characterInfo, oldKanjiEntryForDictionary);
 				}
 								
 				result.getCharacterList().add(characterInfo);
@@ -226,6 +229,9 @@ public class GetKanjiFromDictionary {
 						
 						if (oldKanjiEntryForDictionary != null) {
 							entryAdditionalData.setOldKanjiEntryForDictionary(characterInfo.getKanji(), oldKanjiEntryForDictionary);
+							
+							// dodanie dodatkowych informacji ze starego slownika
+							characterInfo = kanji2Helper.addDatasFromOldKanjiEntryForDictionary(characterInfo, oldKanjiEntryForDictionary);
 						}
 					}
 										

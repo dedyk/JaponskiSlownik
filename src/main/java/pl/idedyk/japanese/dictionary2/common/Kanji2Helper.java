@@ -30,9 +30,12 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
+import org.apache.commons.lang.SerializationUtils;
+
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
+import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
@@ -46,6 +49,8 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.DictionaryNumberInfoReferenc
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.DictionaryNumberInfoReferenceTypeEnum;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.HeaderInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Misc2Info;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Misc2InfoGroup;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfoVariant;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfoVariantTypeEnum;
@@ -312,6 +317,33 @@ public class Kanji2Helper {
 		return oldKanjiPolishDictionaryMap.get(kanji);
 	}
 	
+	@SuppressWarnings("deprecation")
+	public CharacterInfo addDatasFromOldKanjiEntryForDictionary(CharacterInfo characterInfo, KanjiEntryForDictionary oldKanjiEntryForDictionary) {
+		
+		// tworzymy kopie, aby nie modyfikowac glownego elementu
+		characterInfo = (CharacterInfo)SerializationUtils.clone(characterInfo);
+		
+		Misc2Info misc2 = characterInfo.getMisc2();
+		
+		if (misc2 == null) {
+			misc2 = new Misc2Info();
+			
+			characterInfo.setMisc2(misc2);
+		}
+		
+		misc2.getGroups().clear();
+		
+		List<GroupEnum> groupsInOldKanjiEntryForDictionary = oldKanjiEntryForDictionary.getGroups();
+		
+		for (GroupEnum groupEnum : groupsInOldKanjiEntryForDictionary) {
+			misc2.getGroups().add(Misc2InfoGroup.fromValue(groupEnum.getValue()));
+		}
+		
+		misc2.setUsed(oldKanjiEntryForDictionary.isUsed());		
+		
+		return characterInfo;
+	}
+	
 	public void saveKanjidic2AsHumanCsv(SaveKanjiDic2AsHumanCsvConfig config, String fileName, Kanjidic2 kanjidic2, EntryAdditionalData entryAdditionalData) throws Exception {
 		
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(fileName), ',');
@@ -382,6 +414,9 @@ public class Kanji2Helper {
 		
 		// misc
 		new EntryPartConverterMisc().writeToCsv(config, csvWriter, characterInfo);
+
+		// misc 2
+		new EntryPartConverterMisc2().writeToCsv(config, csvWriter, characterInfo);
 		
 		// dictionary number
 		new EntryPartConverterDictionaryNumber().writeToCsv(config, csvWriter, characterInfo);
@@ -410,6 +445,7 @@ public class Kanji2Helper {
 		EntryPartConverterCodepoint entryPartConverterCodepoint = new EntryPartConverterCodepoint();
 		EntryPartConverterRadical entryPartConverterRadical = new EntryPartConverterRadical();
 		EntryPartConverterMisc entryPartConverterMisc = new EntryPartConverterMisc();
+		EntryPartConverterMisc2 entryPartConverterMisc2 = new EntryPartConverterMisc2();
 		EntryPartConverterDictionaryNumber entryPartConverterDictionaryNumber = new EntryPartConverterDictionaryNumber();
 		EntryPartConverterQueryCode entryPartConverterQueryCode = new EntryPartConverterQueryCode();
 		EntryPartConverterReadingMeaningNanori entryPartConverterReadingMeaningNanori = new EntryPartConverterReadingMeaningNanori();
@@ -466,7 +502,11 @@ public class Kanji2Helper {
 			} else if (fieldType == EntryHumanCsvFieldType.MISC) { // misc 
 				
 				entryPartConverterMisc.parseCsv(csvReader, characterInfo);
-			
+
+			} else if (fieldType == EntryHumanCsvFieldType.MISC2) { // misc2 
+				
+				entryPartConverterMisc2.parseCsv(csvReader, characterInfo);
+				
 			} else if (fieldType == EntryHumanCsvFieldType.DICTIONARY_NUMBER) { // dictionary number 
 				
 				entryPartConverterDictionaryNumber.parseCsv(csvReader, characterInfo);
@@ -834,6 +874,64 @@ public class Kanji2Helper {
 		}
 	}
 
+	private class EntryPartConverterMisc2 {
+
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+			
+			Misc2Info misc2Info = characterInfo.getMisc2();
+			
+			if (misc2Info == null) {
+				return;
+			}
+			
+			int columnsNo = 0;
+			
+			if (config.shiftCells == true) {
+				csvWriter.write(""); columnsNo++;
+			}
+			
+			csvWriter.write(EntryHumanCsvFieldType.MISC2.name()); columnsNo++;			
+			csvWriter.write(Helper.convertEnumListToString(misc2Info.getGroups())); columnsNo++;
+			csvWriter.write("" + misc2Info.isUsed()); columnsNo++;
+						
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
+			csvWriter.endRecord();
+		}
+				
+		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.MISC2) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			Misc2Info misc2Info = characterInfo.getMisc2();
+			
+			if (misc2Info == null) {
+				misc2Info = new Misc2Info();
+				
+				characterInfo.setMisc2(misc2Info);
+			}
+			
+			//
+			
+			List<String> misc2GroupsEnumStringList = Helper.convertStringToList(csvReader.get(1));
+			
+			for (String currentMisc2GroupValue : misc2GroupsEnumStringList) {
+				misc2Info.getGroups().add(Misc2InfoGroup.fromValue(currentMisc2GroupValue));
+			}
+			
+			//
+			
+			misc2Info.setUsed(Boolean.valueOf(csvReader.get(2)));
+		}
+	}
+	
 	private class EntryPartConverterDictionaryNumber {
 
 		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
@@ -1684,6 +1782,7 @@ public class Kanji2Helper {
 		CODE_POINT,
 		RADICAL,
 		MISC,
+		MISC2,
 		DICTIONARY_NUMBER,
 		QUERY_CODE,
 		
