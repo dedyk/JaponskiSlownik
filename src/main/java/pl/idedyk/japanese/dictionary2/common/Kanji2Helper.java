@@ -1287,11 +1287,13 @@ public class Kanji2Helper {
 					
 					KanjiEntryForDictionary oldKanjiEntryForDictionary = entryAdditionalDataEntry.oldKanjiEntryForDictionary;
 					
-					csvWriter.write("STARE_ZNACZENIE\n" + "---\n---\n" + Helper.convertListToString(oldKanjiEntryForDictionary.getPolishTranslates())); columnsNo++;
+					if (oldKanjiEntryForDictionary.getPolishTranslates().size() != 1 || oldKanjiEntryForDictionary.getPolishTranslates().get(0).equals("-") == false) {
+						csvWriter.write("STARE_ZNACZENIE\n" + "---\n---\n" + Helper.convertListToString(oldKanjiEntryForDictionary.getPolishTranslates())); columnsNo++;
 
-					if (oldKanjiEntryForDictionary.getInfo().equals("") == false) {
-						csvWriter.write("STARE_INFO\n" + "---\n---\n" + oldKanjiEntryForDictionary.getInfo()); columnsNo++;
-					}
+						if (oldKanjiEntryForDictionary.getInfo().equals("") == false) {
+							csvWriter.write("STARE_INFO\n" + "---\n---\n" + oldKanjiEntryForDictionary.getInfo()); columnsNo++;
+						}						
+					}					
 				}
 			}
 			
