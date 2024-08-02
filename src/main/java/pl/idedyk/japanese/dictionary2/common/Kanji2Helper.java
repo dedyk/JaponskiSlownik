@@ -88,7 +88,6 @@ public class Kanji2Helper {
 	// old kanji polish dictionary file
 	private File oldKanjiPolishDictionaryFile;
 	
-	@SuppressWarnings("deprecation")
 	private List<KanjiEntryForDictionary> oldKanjiPolishDictionaryList;
 	private Map<String, KanjiEntryForDictionary> oldKanjiPolishDictionaryMap;
 	
@@ -280,7 +279,6 @@ public class Kanji2Helper {
 		return polishDictionaryKanjidic2Cache.get(kanji);		
 	}
 
-	@SuppressWarnings("deprecation")
 	public List<KanjiEntryForDictionary> getOldKanjiPolishDictionaryList() throws IOException, JapaneseDictionaryException {
 		
 		if (oldKanjiPolishDictionaryList == null) {
@@ -292,7 +290,6 @@ public class Kanji2Helper {
 		return oldKanjiPolishDictionaryList;
 	}
 	
-	@SuppressWarnings("deprecation")
 	public Map<String, KanjiEntryForDictionary> getOldKanjiPolishDictionaryMap() throws IOException, JapaneseDictionaryException {
 		
 		if (oldKanjiPolishDictionaryMap == null) {
@@ -310,14 +307,12 @@ public class Kanji2Helper {
 		return oldKanjiPolishDictionaryMap;
 	}
 	
-	@SuppressWarnings("deprecation")
 	public KanjiEntryForDictionary getOldKanjiEntryForDictionary(String kanji) throws IOException, JapaneseDictionaryException {
 		Map<String, KanjiEntryForDictionary> oldKanjiPolishDictionaryMap = getOldKanjiPolishDictionaryMap();
 		
 		return oldKanjiPolishDictionaryMap.get(kanji);
 	}
 	
-	@SuppressWarnings("deprecation")
 	public CharacterInfo addDatasFromOldKanjiEntryForDictionary(CharacterInfo characterInfo, KanjiEntryForDictionary oldKanjiEntryForDictionary) {
 		
 		// tworzymy kopie, aby nie modyfikowac glownego elementu
@@ -1224,7 +1219,6 @@ public class Kanji2Helper {
 			this.fieldType = fieldType;
 		}
 
-		@SuppressWarnings("deprecation")
 		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo, EntryAdditionalData entryAdditionalData) throws IOException {
 			
 			ReadingMeaningInfo readingMeaningInfo = characterInfo.getReadingMeaning();

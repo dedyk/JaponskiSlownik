@@ -16,7 +16,6 @@ import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 
-@SuppressWarnings("deprecation")
 public class GetKanjiFromOldDictionary {
 	
 	public static void main(String[] args) throws Exception {

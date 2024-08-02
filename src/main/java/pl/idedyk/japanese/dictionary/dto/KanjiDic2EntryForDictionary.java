@@ -6,7 +6,6 @@ import java.util.List;
 import pl.idedyk.japanese.dictionary.api.dto.KanjiDic2Entry;
 import pl.idedyk.japanese.dictionary.common.Helper;
 
-@Deprecated
 public class KanjiDic2EntryForDictionary extends KanjiDic2Entry {
 
 	private static final long serialVersionUID = 1L;

@@ -2,7 +2,6 @@ package pl.idedyk.japanese.dictionary.dto;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanjiEntry;
 
-@Deprecated
 public class KanjiEntryForDictionary extends KanjiEntry {
 
 	private static final long serialVersionUID = 1L;

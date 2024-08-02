@@ -15,17 +15,9 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
-import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
-import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
-import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
-import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.SaveKanjiDic2AsHumanCsvConfig;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfo;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaning;
 
 public class Test6 {
 
@@ -183,7 +175,7 @@ public class Test6 {
 		Kanjidic2 kanjidic2 = (Kanjidic2) jaxbUnmarshaller.unmarshal(kanjidic2File);
 		*/
 		
-		Kanji2Helper kanji2Helper = Kanji2Helper.getOrInit();
+		// Kanji2Helper kanji2Helper = Kanji2Helper.getOrInit();
 		
 		/*
 		Kanjidic2 kanjidic2 = kanji2Helper.getKanjidic2();

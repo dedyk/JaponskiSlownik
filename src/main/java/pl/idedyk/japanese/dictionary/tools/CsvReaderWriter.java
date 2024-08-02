@@ -685,7 +685,6 @@ public class CsvReaderWriter {
 		csvWriter.close();
 	}
 
-	@Deprecated
 	public static List<KanjiEntryForDictionary> parseKanjiEntriesFromCsv(String fileName, Map<String, KanjiDic2EntryForDictionary> readKanjiDic2, boolean generateJlptGroup)
 			throws IOException, JapaneseDictionaryException {
 
