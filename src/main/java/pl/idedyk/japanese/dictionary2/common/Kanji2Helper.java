@@ -15,7 +15,9 @@ import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 import javax.xml.XMLConstants;
@@ -277,6 +279,78 @@ public class Kanji2Helper {
 		createPolishDictionaryKanjidic2Cache();
 		
 		return polishDictionaryKanjidic2Cache.get(kanji);		
+	}
+	
+	public void addKanjiToPolishDictionary(CharacterInfo characterInfo) throws Exception {
+		
+		readPolishDictionaryKanjidic2();
+		
+		if (polishDictionaryKanjidic2Cache.get(characterInfo.getKanji()) != null) {
+			throw new Exception("Can't add already added kanji: " + characterInfo.getKanji());
+		}
+				
+		polishDictionaryKanjidic2.getCharacterList().add(characterInfo);
+		polishDictionaryKanjidic2Cache.put(characterInfo.getKanji(), characterInfo);		
+	}
+	
+	public void updateKanjiInPolishDictionary(CharacterInfo characterInfo) throws Exception {
+		
+		readPolishDictionaryKanjidic2();
+		
+		if (polishDictionaryKanjidic2Cache.get(characterInfo.getKanji()) == null) {
+			throw new Exception("Can't update kanji: " + characterInfo.getKanji());
+		}
+		
+		for (int idx = 0; idx < polishDictionaryKanjidic2.getCharacterList().size(); ++idx) {
+			
+			CharacterInfo oldCharacterInfo = polishDictionaryKanjidic2.getCharacterList().get(idx);
+			
+			if (oldCharacterInfo.getKanji().equals(characterInfo.getKanji()) == true) {				
+				polishDictionaryKanjidic2.getCharacterList().set(idx, characterInfo);		
+			}			
+		}
+			
+		polishDictionaryKanjidic2Cache.put(characterInfo.getKanji(), characterInfo);			
+	}
+	
+	public void validateAllKanjisInPolishDictionaryList() throws Exception {
+		
+		readPolishDictionaryKanjidic2();
+		
+		//
+		
+		boolean wasError = false;
+		
+		// sprawdzenie, czy gdzies nie ma duplikatu znaczen
+		for (CharacterInfo characterInfo : polishDictionaryKanjidic2.getCharacterList()) {
+			
+			ReadingMeaningInfo readingMeaning = characterInfo.getReadingMeaning();
+			
+			if (readingMeaning != null) {
+				ReadingMeaningInfoReadingMeaningGroup readingMeaningGroup = readingMeaning.getReadingMeaningGroup();
+				
+				if (readingMeaningGroup != null) {
+					List<String> readingPolMeaningList = readingMeaningGroup.getMeaningList().stream().filter(meaning -> meaning.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL).
+					map(meaning -> meaning.getValue()).collect(Collectors.toList());
+					
+					if (readingPolMeaningList.size() > 0) {
+						
+						Set<String> uniqueReadingPolMeaningSet = new TreeSet<>(readingPolMeaningList);
+						
+						if (uniqueReadingPolMeaningSet.size() != readingPolMeaningList.size()) { // mamy duplikat
+														
+							System.out.println("[Error] Kanji reading pol meaning duplicate for " + characterInfo.getKanji() + " - " + readingPolMeaningList);
+							
+							wasError = true;
+						}
+					}
+				}
+			}
+		}	
+		
+		if (wasError == true) { // byl jakis blad			
+			throw new Exception("Error");			
+		}
 	}
 
 	public List<KanjiEntryForDictionary> getOldKanjiPolishDictionaryList() throws IOException, JapaneseDictionaryException {
