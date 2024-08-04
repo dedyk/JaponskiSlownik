@@ -6353,8 +6353,8 @@ wędrować",,DICTIONARY2_SOURCE,,GroupId: 2862091
 spacerować
 wędrować",,DICTIONARY2_SOURCE,,GroupId: 2862091
 303839,WORD_NOUN,,HIRAGANA,,,新致命者,しんちめいしゃ,,shinchi meisha,nowy męczennik,chrześcijaństwo,DICTIONARY2_SOURCE,,GroupId: 2862092
-303840,WORD_NOUN,,HIRAGANA,,,親細胞,しんさいぼう,,shinsaibou,komórka macierzysta,biologia,DICTIONARY2_SOURCE,,GroupId: 2862093
-303841,WORD_NOUN,,HIRAGANA,,,親細胞,おやさいぼう,,oyasaibou,komórka macierzysta,biologia,DICTIONARY2_SOURCE,,GroupId: 2862093
+303840,WORD_NOUN,,HIRAGANA,,,親細胞,しんさいぼう,,shinsaibou,komórka macierzysta,biologia,DICTIONARY2_SOURCE,DUPLICATE 303841,GroupId: 2862093
+303841,WORD_NOUN,,HIRAGANA,,,親細胞,おやさいぼう,,oyasaibou,komórka macierzysta,biologia,DICTIONARY2_SOURCE,DUPLICATE 303840,GroupId: 2862093
 303842,WORD_NOUN,,KATAKANA,,,-,トレッキングシューズ,,torekkingu shuuzu,"buty trekkingowe
 buty turystyczne",ang: trekking shoes,DICTIONARY2_SOURCE,,GroupId: 2862095
 303843,WORD_NOUN,,KATAKANA,,,-,トレッキング・シューズ,,torekkingu shuuzu,"buty trekkingowe
@@ -6366,8 +6366,33 @@ popularny produkt",,DICTIONARY2_SOURCE,,GroupId: 2862096
 statyw na kroplówki",,DICTIONARY2_SOURCE,,GroupId: 2862098
 303847,WORD_NOUN,,KATAKANA,,,-,カイトグラフィー,,kaitogurafii,"fotografia z latawca
 fotografia latawcowa",fotografia; ang: kiteography,DICTIONARY2_SOURCE,,GroupId: 2862099
-303848,WORD_NOUN,,KATAKANA,,,ＬＡＳＨ,ラッシュ,,rasshu,barkowcowy system transportowy,"jeden z systemów w transporcie wodnym, polegającym na tym, że jednostkowy pojemnik służący do transportu ładunku stanowi cała barka, która po wyładowaniu ze statku morskiego – barkowca (za pomocą urządzeń znajdujących się na tym statku) może być przemieszczana bezpośrednio w głąb lądu drogą wodną, bez konieczności przeładunku w porcie morskim, ang: lighter aboard ship",DICTIONARY2_SOURCE,,GroupId: 2862100
+303848,WORD_NOUN,,KATAKANA,,,ＬＡＳＨ,ラッシュ,,rasshu,barkowcowy system transportowy,"jeden z systemów w transporcie wodnym, polegającym na tym, że jednostkowy pojemnik służący do transportu ładunku stanowi cała barka, która po wyładowaniu ze statku morskiego – barkowca (za pomocą urządzeń znajdujących się na tym statku) może być przemieszczana bezpośrednio w głąb lądu drogą wodną, bez konieczności przeładunku w porcie morskim, ang: lighter aboard ship",DICTIONARY2_SOURCE,DUPLICATE 1050,GroupId: 2862100
 303849,WORD_NOUN,,HIRAGANA,,,安珍清姫,あんちんきよひめ,,anchin kiyohime,"(Historia) Anchin i Kiyohime
 Legenda o rzece Hidaka",legenda,DICTIONARY2_SOURCE,,GroupId: 5110617
 303850,WORD_NOUN,,HIRAGANA,,,安珍・清姫,あんちんきよひめ,,anchin kiyohime,"(Historia) Anchin i Kiyohime
 Legenda o rzece Hidaka",legenda,DICTIONARY2_SOURCE,,GroupId: 5110617
+303851,WORD_NOUN,,HIRAGANA,,,ブタ肉,ぶたにく,,buta niku,wieprzowina,,DICTIONARY2_SOURCE,DUPLICATE 303852,GroupId: 1457440
+303852,WORD_NOUN,,HIRAGANA,,,ブタ肉,とんにく,,tonniku,wieprzowina,,DICTIONARY2_SOURCE,DUPLICATE 303851,GroupId: 1457440
+303853,WORD_NOUN,,HIRAGANA,,,ぶた肉,とんにく,,tonniku,wieprzowina,,DICTIONARY2_SOURCE,DUPLICATE 113632,GroupId: 1457440
+303854,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,不きげん,ふきげん,,fukigen,"dąs
+niezadowolenie
+grymas
+nadąsana mina
+posępność
+markotność
+zły humor",,DICTIONARY2_SOURCE,,GroupId: 1491820
+303855,WORD_ADJECTIVE_NO,,HIRAGANA,,,機内持込,きないもちこみ,,kinai mochi komi,"można wnieść do kabiny samolotu (np. bagaż itp.)
+bagaż podręczny",,DICTIONARY2_SOURCE,,GroupId: 2153200
+303856,WORD_ADJECTIVE_NO,,HIRAGANA,,,機内持込み,きないもちこみ,,kinai mochi komi,"można wnieść do kabiny samolotu (np. bagaż itp.)
+bagaż podręczny",,DICTIONARY2_SOURCE,,GroupId: 2153200
+303857,WORD_ADJECTIVE_NO,,HIRAGANA,,,機内持ちこみ,きないもちこみ,,kinai mochi komi,"można wnieść do kabiny samolotu (np. bagaż itp.)
+bagaż podręczny",,DICTIONARY2_SOURCE,,GroupId: 2153200
+303858,WORD_NOUN,,KATAKANA,,,-,パラメータファイル,,parameeta fairu,plik z parametrami,informatyka; ang: parameter file,DICTIONARY2_SOURCE,,GroupId: 1102650
+303859,WORD_NOUN,,KATAKANA,,,-,パラメータ・ファイル,,parameeta fairu,plik z parametrami,informatyka; ang: parameter file,DICTIONARY2_SOURCE,,GroupId: 1102650
+303860,WORD_NOUN,,KATAKANA,,,-,トラヒックシェーピング,,torahikku sheepingu,kształtowanie ruchu,informatyka; ang: traffic shaping,DICTIONARY2_SOURCE,,GroupId: 2313830
+303861,WORD_NOUN,,KATAKANA,,,-,トラフィックシェイピング,,torafikku sheipingu,kształtowanie ruchu,informatyka; ang: traffic shaping,DICTIONARY2_SOURCE,,GroupId: 2313830
+303862,WORD_NOUN,,KATAKANA,,,-,トラヒックフロー,,torahikku furoo,"potok ruchu
+przepływ ruchu",informatyka; ang: traffic flow,DICTIONARY2_SOURCE,,GroupId: 2313860
+303863,WORD_NOUN,,KATAKANA,,,-,ヘア・メイク,,hea meiku,"włosy i makijaż
+włosy i makeup",ang: hair make,DICTIONARY2_SOURCE,,GroupId: 2836806
