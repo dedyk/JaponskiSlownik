@@ -6295,9 +6295,9 @@ pędnik strugowodny",ang: water jet,DICTIONARY2_SOURCE,,GroupId: 2845364
 inny biznes
 inne zobowiązania",,DICTIONARY2_SOURCE,,GroupId: 2862044
 303805,WORD_NOUN,,HIRAGANA,,,ネジ止め,ねじとめ,,neji tome,"śruba mocująca
-zacisk śrubowy",,DICTIONARY2_SOURCE,,GroupId: 2862047
+zacisk śrubowy",,DICTIONARY2_SOURCE,DUPLICATE 303870,GroupId: 2862047
 303806,WORD_NOUN,,HIRAGANA,,,ねじ止め,ねじとめ,,neji tome,"śruba mocująca
-zacisk śrubowy",,DICTIONARY2_SOURCE,,GroupId: 2862047
+zacisk śrubowy",,DICTIONARY2_SOURCE,DUPLICATE 303871,GroupId: 2862047
 303807,"WORD_VERB_U
 WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ペラ回す,ペラまわす,,pera mawasu,"mówić prywatnie
 gawędzić",slang; rzadko używane określenie; slang więzienny,DICTIONARY2_SOURCE,,GroupId: 2862051
@@ -6336,7 +6336,10 @@ przestrzeń na poddaszu",,DICTIONARY2_SOURCE,,GroupId: 2862079
 303829,WORD_NOUN,,KATAKANA_HIRAGANA,,,バチャ豚,バチャぶた,,bacha buta,"fan VTuberów
 wielbiciel treści wirtualnych youtuberów",slang internetowy; poniżająco,DICTIONARY2_SOURCE,,GroupId: 2862080
 303830,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,話を合わせる,はなしをあわせる,,hanashi o awaseru,???,,DICTIONARY2_SOURCE,,GroupId: 2862081
+WORD_EXPRESSION",,HIRAGANA,,,話を合わせる,はなしをあわせる,,hanashi o awaseru,"grać (podczas rozmowy)
+udawać, że się zgadza
+uporządkować swoje historie
+upewnić się, że historie się zgadzają",,DICTIONARY2_SOURCE,,GroupId: 2862081
 303831,WORD_NOUN,,HIRAGANA_KATAKANA,,,登山コース,とざんコース,,tozan koosu,"trasa piesza (pod górę)
 trasa wspinaczkowa",,DICTIONARY2_SOURCE,,GroupId: 2862082
 303832,WORD_NOUN,,HIRAGANA,,,傾斜配分,けいしゃはいぶん,,keisha haibun,alokacja ważona,"finanse; budżet, dywidendy itp.",DICTIONARY2_SOURCE,,GroupId: 2862083
@@ -6344,8 +6347,7 @@ trasa wspinaczkowa",,DICTIONARY2_SOURCE,,GroupId: 2862082
 303834,WORD_NOUN,,KATAKANA,,,-,アイス・スラリー,,aisu surarii,zawiesina lodu,ang: ice slurry,DICTIONARY2_SOURCE,,GroupId: 2862085
 303835,WORD_NOUN,,KATAKANA_HIRAGANA,,,スポーツ飲料,スポーツいんりょう,,supootsu inryou,napój sportowy,,DICTIONARY2_SOURCE,,GroupId: 2862086
 303836,WORD_NOUN,,HIRAGANA,,,写真店,しゃしんてん,,shashinten,"sklep fotograficzny
-studio fotograficzne
-fotograf",,DICTIONARY2_SOURCE,,GroupId: 2862090
+studio fotograficzne",,DICTIONARY2_SOURCE,,GroupId: 2862090
 303837,WORD_VERB_U,,HIRAGANA,,,そぞろ歩く,そぞろあるく,,sozoro aruku,"chodzić bez celu
 spacerować
 wędrować",,DICTIONARY2_SOURCE,,GroupId: 2862091
@@ -6396,3 +6398,48 @@ bagaż podręczny",,DICTIONARY2_SOURCE,,GroupId: 2153200
 przepływ ruchu",informatyka; ang: traffic flow,DICTIONARY2_SOURCE,,GroupId: 2313860
 303863,WORD_NOUN,,KATAKANA,,,-,ヘア・メイク,,hea meiku,"włosy i makijaż
 włosy i makeup",ang: hair make,DICTIONARY2_SOURCE,,GroupId: 2836806
+303864,WORD_NOUN,,HIRAGANA_KATAKANA,,,仮パラメタ,かりパラメータ,,kari parameeta,"formalny parametr
+parametr formalny",informatyka,DICTIONARY2_SOURCE,,GroupId: 2343640
+303865,WORD_NOUN,,KATAKANA,,,炭酸,タンサン,,tansan,"kwas węglowy (chemia)
+woda gazowana (skrót)
+woda sodowa (skrót)
+gaz w napojach gazowanych (skrót)
+soda oczyszczona (skrót; pisane jako タンサン)
+węglan sodu (skrót; pisane jako タンサン)",,DICTIONARY2_SOURCE,DUPLICATE 20618,GroupId: 1418530
+303866,WORD_ADVERB,,HIRAGANA_EXCEPTION,,,滅茶,めっっちゃ,,mecccha,"bardzo
+wyjątkowo
+niezwykle",potocznie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 82169
+DUPLICATE 82238
+DUPLICATE 303867
+DUPLICATE 303868",GroupId: 2183440
+303867,WORD_ADVERB,,HIRAGANA_EXCEPTION,,,滅茶,めっっっちゃ,,meccccha,"bardzo
+wyjątkowo
+niezwykle",potocznie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 82169
+DUPLICATE 82238
+DUPLICATE 303866
+DUPLICATE 303868",GroupId: 2183440
+303868,WORD_ADVERB,,HIRAGANA_EXCEPTION,,,滅茶,めっっっっちゃ,,mecccccha,"bardzo
+wyjątkowo
+niezwykle",potocznie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 82169
+DUPLICATE 82238
+DUPLICATE 303866
+DUPLICATE 303867",GroupId: 2183440
+303869,WORD_NOUN,,HIRAGANA,,,賭金,かけきん,,kake kin,"zakład
+stawka",,DICTIONARY2_SOURCE,,GroupId: 1636190
+303870,WORD_NOUN,,HIRAGANA,,,ネジ止め,ねじどめ,,neji dome,"śruba mocująca
+zacisk śrubowy",,DICTIONARY2_SOURCE,DUPLICATE 303805,GroupId: 2862047
+303871,WORD_NOUN,,HIRAGANA,,,ねじ止め,ねじどめ,,neji dome,"śruba mocująca
+zacisk śrubowy",,DICTIONARY2_SOURCE,DUPLICATE 303806,GroupId: 2862047
+303872,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,話をあわせる,はなしをあわせる,,hanashi o awaseru,"grać (podczas rozmowy)
+udawać, że się zgadza
+uporządkować swoje historie
+upewnić się, że historie się zgadzają",,DICTIONARY2_SOURCE,,GroupId: 2862081
+303873,WORD_NOUN,,HIRAGANA,,,同人作家,どうじんさっか,,doujin sakka,"pisarz dōjin
+pisarz fanfików
+autor koterii",,DICTIONARY2_SOURCE,,GroupId: 2862075
+303874,WORD_NOUN,,KATAKANA,,,-,クールケーション,,kuurukeeshon,wakacje w regionie o chłodnym klimacie,ang: coolcation,DICTIONARY2_SOURCE,,GroupId: 2862094
+303875,WORD_NOUN,,HIRAGANA,,,地域づくり,ちいきづくり,,chiiki dukuri,rozwój społeczności,,DICTIONARY2_SOURCE,,GroupId: 2862103
+303876,WORD_NOUN,,HIRAGANA,,,地域作り,ちいきづくり,,chiiki dukuri,rozwój społeczności,,DICTIONARY2_SOURCE,,GroupId: 2862103
+303877,WORD_NOUN,,KATAKANA,,,-,トラメガ,,toramega,"megafon tranzystorowy
+megafon elektroniczny",skrót,DICTIONARY2_SOURCE,,GroupId: 2862109
