@@ -293,6 +293,21 @@ public class Kanji2Helper {
 		polishDictionaryKanjidic2Cache.put(characterInfo.getKanji(), characterInfo);		
 	}
 	
+	public void deleteKanjiFromPolishDictionary(String kanji) throws Exception {
+		
+		readPolishDictionaryKanjidic2();
+		createPolishDictionaryKanjidic2Cache();
+		
+		CharacterInfo characterInfoInPolishDictionaryKanjidic2 = polishDictionaryKanjidic2Cache.get(kanji);
+		
+		if (characterInfoInPolishDictionaryKanjidic2 == null) {
+			throw new Exception("Can't delete kanji: " + kanji);
+		}
+				
+		polishDictionaryKanjidic2.getCharacterList().remove(characterInfoInPolishDictionaryKanjidic2);
+		polishDictionaryKanjidic2Cache.remove(kanji);		
+	}
+	
 	public void updateKanjiInPolishDictionary(CharacterInfo characterInfo) throws Exception {
 		
 		readPolishDictionaryKanjidic2();
@@ -1809,6 +1824,41 @@ public class Kanji2Helper {
 		return kanjidic2;
 	}
 	
+	public void updateHeaderKanjidic2(Kanjidic2 sourceKanjidic2, Kanjidic2 destinationKanjidic2) {
+		
+		HeaderInfo sourceKanjidic2HeaderInfo = (HeaderInfo)SerializationUtils.clone(sourceKanjidic2.getHeader());
+		
+		destinationKanjidic2.setHeader(sourceKanjidic2HeaderInfo);
+	}
+	
+	public boolean updatePolishKanjiCharacterInfo(CharacterInfo sourceKanjiCharacterInfo, CharacterInfo destinationKanjiCharacterInfo, EntryAdditionalData entryAdditionalData) {
+		
+		/*
+	    ++ "kanji",
+	    ++ "codePoint",
+	    ++ "radical",
+	    ++ "misc",
+	    -- "misc2",
+	    ++ "dictionaryNumber",
+	    ++ "queryCode",
+	    "readingMeaning"
+	    */
+		
+		// aktualizacja docelowego kanji
+		destinationKanjiCharacterInfo.setCodePoint((CodePointInfo)SerializationUtils.clone(sourceKanjiCharacterInfo.getCodePoint()));
+		destinationKanjiCharacterInfo.setRadical((RadicalInfo)SerializationUtils.clone(sourceKanjiCharacterInfo.getRadical()));
+		destinationKanjiCharacterInfo.setMisc((MiscInfo)SerializationUtils.clone(sourceKanjiCharacterInfo.getMisc()));
+		destinationKanjiCharacterInfo.setDictionaryNumber((DictionaryNumberInfo)SerializationUtils.clone(sourceKanjiCharacterInfo.getDictionaryNumber()));
+		destinationKanjiCharacterInfo.setQueryCode((QueryCodeInfo)SerializationUtils.clone(sourceKanjiCharacterInfo.getQueryCode()));
+
+		// dokonczyc readingMeaning
+		fixme();
+
+		
+		
+		int fixme = 1;
+		return false;
+	}
 	
 	private class EntryPartConverterEnd {
 
