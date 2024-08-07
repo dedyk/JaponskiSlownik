@@ -27,7 +27,7 @@ public class GetKanjiFromOldDictionary {
 		Options options = new Options();
 
 		options.addOption("s", "size", true, "Kanji size");
-		options.addOption("r", "random", true, "Randomize kanji to get");
+		options.addOption("r", "random", false, "Randomize kanji to get");
 		options.addOption("aoem", "add-only-empty-meanings", false, "Add only empty meanings");
 		options.addOption("h", "help", false, "Help");
 		
