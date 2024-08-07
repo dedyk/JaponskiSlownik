@@ -18,10 +18,6 @@ import javax.xml.validation.Validator;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfo;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaning;
 
 public class Test6 {
 
@@ -153,6 +149,7 @@ public class Test6 {
 	
 	private static void testKanjiDict2() throws Exception {
 		
+		/*
 		File kanjidic2File = new File("../JapaneseDictionary_additional/kanjidic2.xml");
 		
 		// walidacja xsd
@@ -176,7 +173,37 @@ public class Test6 {
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 		
 		Kanjidic2 kanjidic2 = (Kanjidic2) jaxbUnmarshaller.unmarshal(kanjidic2File);
+		*/
 		
+		// Kanji2Helper kanji2Helper = Kanji2Helper.getOrInit();
+		
+		/*
+		Kanjidic2 kanjidic2 = kanji2Helper.getKanjidic2();
+		
+		SaveKanjiDic2AsHumanCsvConfig config = new SaveKanjiDic2AsHumanCsvConfig();
+		
+		config.shiftCells = false;
+		config.shiftCellsGenerateIds = true;
+		config.addOldPolishTranslates = false;
+		
+		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
+		
+		for (CharacterInfo characterInfo : kanjidic2.getCharacterList()) {
+			
+			// pobieramy stare polskie tlumaczenie
+			KanjiEntryForDictionary oldKanjiEntryForDictionary = kanji2Helper.getOldKanjiEntryForDictionary(characterInfo.getKanji());
+						
+			entryAdditionalData.setOldKanjiEntryForDictionary(characterInfo.getKanji(), oldKanjiEntryForDictionary);
+		}
+		*/
+		
+		// kanji2Helper.saveKanjidic2AsHumanCsv(config, "/tmp/a/kanji2-test.csv", kanjidic2, entryAdditionalData);
+		
+		// Kanjidic2 kanjidic2 = kanji2Helper.readKanjidic2FromHumanCsv(new File("/tmp/a/kanji2-test.csv"));
+		
+		// kanji2Helper.saveKanjidic2AsXml(kanjidic2, new File("/tmp/a/kanjidic2-csv-to-xml.xml"));
+		
+		/*
 		List<CharacterInfo> characterList = kanjidic2.getCharacterList();
 		
 		for (CharacterInfo characterInfo : characterList) {
@@ -193,6 +220,7 @@ public class Test6 {
 					System.out.println("\t" + meaning.getLang() + " - " + meaning.getValue());				
 				}				
 			}			
-		}		
+		}
+		*/		
 	}
 }
