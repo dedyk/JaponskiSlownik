@@ -374,7 +374,7 @@ public class Kanji2Helper {
 		if (oldKanjiPolishDictionaryList == null) {
 			System.out.println("Reading old kanji polish dictionary file");
 			
-			oldKanjiPolishDictionaryList = CsvReaderWriter.parseKanjiEntriesFromCsv(oldKanjiPolishDictionaryFile.getPath(), null, true);	
+			oldKanjiPolishDictionaryList = CsvReaderWriter.parseKanjiEntriesFromCsv(oldKanjiPolishDictionaryFile.getPath(), null, false);
 		}
 		
 		return oldKanjiPolishDictionaryList;
@@ -1610,6 +1610,48 @@ public class Kanji2Helper {
 		return DigestUtils.sha256Hex(stringWriter.toString());
 	}
 	
+	public void updateOldKanjiEntryForDictionaryFromCharacterInfo(KanjiEntryForDictionary kanjiEntryForDictionary, CharacterInfo characterInfo) {
+		
+		ReadingMeaningInfo readingMeaning = characterInfo.getReadingMeaning();
+		
+		if (readingMeaning != null) {
+			ReadingMeaningInfoReadingMeaningGroup readingMeaningGroup = readingMeaning.getReadingMeaningGroup();
+			
+			if (readingMeaningGroup != null) {
+				List<String> meaningEngLangList = readingMeaningGroup.getMeaningList().stream().filter(meaning -> meaning.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.EN).
+						map(meaning -> meaning.getValue()).collect(Collectors.toList());
+				
+				// String additionalEngInfoLang = readingMeaningGroup.getAdditionalInfoList().stream().filter(additionalInfo -> additionalInfo.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.EN).
+				//		map(additionalInfo -> additionalInfo.getValue()).findFirst().orElse(null);
+
+				List<String> meaningPolLangList = readingMeaningGroup.getMeaningList().stream().filter(meaning -> meaning.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL).
+						map(meaning -> meaning.getValue()).collect(Collectors.toList());
+				
+				String additionalPolInfoLang = readingMeaningGroup.getAdditionalInfoList().stream().filter(additionalInfo -> additionalInfo.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL).
+						map(additionalInfo -> additionalInfo.getValue()).findFirst().orElse("");
+				
+				//
+				
+				kanjiEntryForDictionary.setPolishTranslates(meaningPolLangList);
+				kanjiEntryForDictionary.setInfo(additionalPolInfoLang);
+				
+				// wygenerowanie kanji dic2 raw data
+				{
+					List<String> kanjidic2RawData = new ArrayList<String>();
+					
+					kanjidic2RawData.add("Kanji: " + characterInfo.getKanji());
+							
+					for (String currentEngMeaning : meaningEngLangList) {
+						kanjidic2RawData.add("Meaning: " + currentEngMeaning);
+					}
+											
+					kanjiEntryForDictionary.setKanjiDic2RawDataList(Helper.convertListToString(kanjidic2RawData));
+				}
+				
+			}
+		}
+	}
+	
 	private class EntryPartConverterEnd {
 
 		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
@@ -1675,9 +1717,7 @@ public class Kanji2Helper {
 		public boolean addOldPolishTranslates = false;		
 	}
 	
-	public static class EntryAdditionalData {		
-		
-		int fixme = 1;
+	public static class EntryAdditionalData {
 		
 		private Map<String, EntryAdditionalDataEntry> kanjidic2AdditionalDataEntryMap = new TreeMap<>();
 		
