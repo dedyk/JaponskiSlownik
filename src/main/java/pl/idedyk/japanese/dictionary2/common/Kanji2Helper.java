@@ -1632,7 +1632,13 @@ public class Kanji2Helper {
 				
 				//
 				
-				kanjiEntryForDictionary.setPolishTranslates(meaningPolLangList);
+				if (meaningEngLangList.size() > 0) {
+					kanjiEntryForDictionary.setPolishTranslates(meaningPolLangList);
+					
+				} else {
+					kanjiEntryForDictionary.setPolishTranslates(Arrays.asList("-"));
+				}			
+				
 				kanjiEntryForDictionary.setInfo(additionalPolInfoLang);
 				
 				// wygenerowanie kanji dic2 raw data
