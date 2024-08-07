@@ -6149,7 +6149,8 @@ szaleniec",slang; poniżająco,DICTIONARY2_SOURCE,,GroupId: 2862038
 roztwór białego cukru",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2862040
 303737,WORD_NOUN,,HIRAGANA,,,単しゃりべつ,たんしゃりべつ,,tan sharibetsu,"syrop prosty
 roztwór białego cukru",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2862040
-303738,WORD_ADVERB,,HIRAGANA,,,理屈抜き,りくつぬき,,rikutsu nuki,"bez żadnego powodu
+303738,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,理屈抜き,りくつぬき,,rikutsu nuki,"bez żadnego powodu
 niezwiązane z logiką
 ???",,DICTIONARY2_SOURCE,,GroupId: 2862041
 303739,WORD_NOUN,,HIRAGANA_KATAKANA,,,単シロップ,たんシロップ,,tan shiroppu,"syrop prosty
@@ -6452,9 +6453,8 @@ ponownie zważyć",,DICTIONARY2_SOURCE,,GroupId: 2862111
 teraz ...
 zobaczmy",,DICTIONARY2_SOURCE,,GroupId: 2862112
 303883,WORD_NOUN,,HIRAGANA,,,細読,さいどく,,saidoku,uważne czytanie,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2862113
-303884,WORD_NOUN,,HIRAGANA,,,谷山志村予想,たにやましむらよそう,,taniyama shimura yosou,twierdzenie o modularności,matematyka; dawniej przypuszczenie Taniyamy-Shimury,DICTIONARY2_SOURCE,,GroupId: 2862114
-303885,WORD_NOUN,,HIRAGANA,,,谷山–志村予想,たにやましむらよそう,,taniyama shimura yosou,twierdzenie o modularności,matematyka; dawniej przypuszczenie Taniyamy-Shimury,"DICTIONARY2_SOURCE
-TO_DELETE",,
+303884,WORD_NOUN,,HIRAGANA,,,谷山志村予想,たにやましむらよそう,,taniyama shimura yosou,przypuszczenie Taniyamy-Shimury,matematyka; dawna nazwa twierdzenia o modularności,DICTIONARY2_SOURCE,,GroupId: 2862114
+303885,WORD_NOUN,,HIRAGANA,,,谷山－志村予想,たにやましむらよそう,,taniyama shimura yosou,przypuszczenie Taniyamy-Shimury,matematyka; dawna nazwa twierdzenia o modularności,DICTIONARY2_SOURCE,,GroupId: 2862114
 303886,WORD_NOUN,,HIRAGANA,,,善吏,ぜんり,,zenri,uczciwy urzędnik państwowy,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2862115
 303887,WORD_NOUN,,HIRAGANA,,,出版所,しゅっぱんじょ,,shuppanjo,wydawnictwo,zwłaszcza państwowe,DICTIONARY2_SOURCE,,GroupId: 2862116
 303888,WORD_NOUN,,HIRAGANA,,,塩化第一水銀,えんかだいいちすいぎん,,enka daiichi suigin,"chlorek rtęci(I)
@@ -6476,3 +6476,24 @@ Infrared Data Association","nazwa organizacji; powstała w 1993 r. grupa, skupia
 303899,WORD_NOUN,,KATAKANA,,,ＩＡＢ,アイエービー,,aieebii,"IAB
 Internet Architecture Board",nazwa organizacji; część IETF,DICTIONARY2_SOURCE,,GroupId: 5746949
 303900,WORD_NOUN,,KATAKANA_HIRAGANA,,,クモ学,クモがく,,kumogaku,arachnologia,dziedzina zoologii zajmująca się badaniem pajęczaków (Arachnida),IGNORE_NO_JMEDICT,,
+303901,WORD_EXPRESSION,,HIRAGANA,,,-,での,,deno,(to jest) w,,DICTIONARY2_SOURCE,,GroupId: 2862102
+303902,WORD_NOUN,,HIRAGANA,,,防蟻,ぼうぎ,,bougi,"zapobieganie mrówkom
+zwalczanie mrówek
+zwalczanie termitów",,DICTIONARY2_SOURCE,,GroupId: 2862121
+303903,WORD_NOUN,,HIRAGANA,,,木材腐朽菌,もくざいふきゅうきん,,mokuzai fukyuukin,"grzyb rozkładający drewno
+grzyb ksylofagiczny",,DICTIONARY2_SOURCE,,GroupId: 2862122
+303904,WORD_NOUN,,KATAKANA,,,ＳＬＧ,エス・エル・ジー,,esu eru jii,gra symulacyjna,gry wideo,DICTIONARY2_SOURCE,,GroupId: 2862123
+303905,WORD_NOUN,,KATAKANA,,,ＳＬＧ,エスエルジー,,esu eru jii,gra symulacyjna,gry wideo,DICTIONARY2_SOURCE,,GroupId: 2862123
+303906,WORD_NOUN,,HIRAGANA,,,腐朽菌,ふきゅうきん,,fukyuukin,"grzyb rozkładający drewno
+grzyb ksylofagiczny",,DICTIONARY2_SOURCE,,GroupId: 2862124
+303907,WORD_NOUN,,HIRAGANA,,,国際日付変更線,こくさいひづけへんこうせん,,kokusai hiduke henkousen,"linia zmiany daty
+granica zmiany daty","mowna linia na mapie stref czasowych, przebiegająca głównie wzdłuż południka 180 stopni, po obu stronach której daty różnią; się o jedną dobę",DICTIONARY2_SOURCE,,GroupId: 2862125
+303908,WORD_NOUN,,KATAKANA_HIRAGANA,,,バルチック艦隊,バルチックかんたい,,baruchikku kantai,(Rosyjska) Flota Bałtycka,termin historyczny,DICTIONARY2_SOURCE,,GroupId: 2862127
+303909,WORD_NOUN,,HIRAGANA,,,陸上競技場,りくじょうきょうぎじょう,,rikujou kyougijou,"boisko lekkoatletyczne
+stadion lekkoatletyczny",,DICTIONARY2_SOURCE,,GroupId: 2862128
+303910,WORD_NOUN,,KATAKANA_HIRAGANA,,,レッド・オクトーバーを追え,レッドオクトーバーをおえ,,reddo okutoobaa o oe,Polowanie na Czerwony Październik,"dzieło artystyczne, np. literatura, muzyka i etc; powieść z 1984 autorstwa Tom Clancy",DICTIONARY2_SOURCE,,GroupId: 5746952
+303911,WORD_NOUN,,KATAKANA,,,ＪＰＮＩＣ,ジェイピーニック,,jeipiinikku,"JPNIC
+Japan Network Information Center","nazwa organizacji; rejestr internetowy w Japonii, który zarządza kilkoma aspektami operacji internetowych, w tym przydzielaniem adresów IP i numerów AS",DICTIONARY2_SOURCE,,GroupId: 5746953
+303912,WORD_NOUN,,KATAKANA,,,ＩＴＵ,アイ・ティー・ユー,,ai tii yuu,Międzynarodowy Związek Telekomunikacyjny,"nazwa organizacji; ang: ITU, International Telecommunication Union",DICTIONARY2_SOURCE,,GroupId: 5746955
+303913,WORD_NOUN,,KATAKANA,,,ＩＴＵ,アイティーユー,,ai tii yuu,Międzynarodowy Związek Telekomunikacyjny,"nazwa organizacji; ang: ITU, International Telecommunication Union",DICTIONARY2_SOURCE,,GroupId: 5746955
+303914,WORD_NOUN,,KATAKANA_HIRAGANA,,,ツインテールの日,ツインテールのひ,,tsuinteeru no hi,Dzień Twintail,wydarzenie; 2 lutego,DICTIONARY2_SOURCE,,GroupId: 5746957
