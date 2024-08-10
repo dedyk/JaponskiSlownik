@@ -1,8 +1,6 @@
 package pl.idedyk.japanese.kanji2.app;
 
 import java.io.File;
-import java.io.FileOutputStream;
-import java.util.List;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -10,8 +8,6 @@ import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 
-import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
-import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
@@ -70,9 +66,6 @@ public class SetKanjiToPolishDictionary {
 				
 		// wczytywanie listy zmienionych elementow
 		Kanjidic2 kanjidic2FromFileName = kanji2Helper.readKanjidic2FromHumanCsv(fileName.getAbsoluteFile());
-
-		// lista wynikowa w starej postaci
-		List<KanjiEntryForDictionary> oldKanjiEntryForDictionaryList = kanji2Helper.getOldKanjiPolishDictionaryList();
 		
 		for (CharacterInfo currentNewCharacterInfo : kanjidic2FromFileName.getCharacterList()) {
 			
@@ -90,13 +83,7 @@ public class SetKanjiToPolishDictionary {
 				System.out.println("Update kanji: " + currentNewCharacterInfo.getKanji());
 				
 				kanji2Helper.updateKanjiInPolishDictionary(currentNewCharacterInfo);
-			}
-			
-			// pobieramy kanji w starym formacie slownika
-			KanjiEntryForDictionary oldKanjiEntryForDictionary = kanji2Helper.getOldKanjiEntryForDictionary(currentNewCharacterInfo.getKanji());
-
-			// aktualizacja kanji w starym formacie
-			kanji2Helper.updateOldKanjiEntryForDictionaryFromCharacterInfo(oldKanjiEntryForDictionary, currentNewCharacterInfo);
+			}			
 		}
 		
 		// walidacja slow
@@ -106,11 +93,6 @@ public class SetKanjiToPolishDictionary {
 		Kanji2Helper.SaveKanjiDic2AsHumanCsvConfig saveKanjiDic2AsHumanCsvConfig = new Kanji2Helper.SaveKanjiDic2AsHumanCsvConfig();
 				
 		kanji2Helper.saveKanjidic2AsHumanCsv(saveKanjiDic2AsHumanCsvConfig,  "input/kanji2-new-set.csv", kanji2Helper.getPolishDictionaryKanjidic2(), new EntryAdditionalData());
-		
-		// zapisanie slownika w starej postaci
-		FileOutputStream outputStream = new FileOutputStream(new File("input/kanji-wynik.csv"));
-		
-		CsvReaderWriter.generateKanjiCsv(outputStream, oldKanjiEntryForDictionaryList, false, null);
 	}
 	
 	private static void printHelp(Options options) {
