@@ -6478,7 +6478,11 @@ Infrared Data Association","nazwa organizacji; powstała w 1993 r. grupa, skupia
 303899,WORD_NOUN,,KATAKANA,,,ＩＡＢ,アイエービー,,aieebii,"IAB
 Internet Architecture Board",nazwa organizacji; część IETF,DICTIONARY2_SOURCE,,GroupId: 5746949
 303900,WORD_NOUN,,KATAKANA_HIRAGANA,,,クモ学,クモがく,,kumogaku,arachnologia,dziedzina zoologii zajmująca się badaniem pajęczaków (Arachnida),IGNORE_NO_JMEDICT,,
-303901,WORD_EXPRESSION,,HIRAGANA,,,-,での,,deno,(to jest) w,,DICTIONARY2_SOURCE,,GroupId: 2862102
+303901,WORD_EXPRESSION,,HIRAGANA,,,-,での,,deno,"(to jest) w
+(to jest zrobione) z
+(to jest zrobione) przez
+(to jest) (ilość, liczba)
+(który) obejmuje (określony czas)",,DICTIONARY2_SOURCE,,GroupId: 2862102
 303902,WORD_NOUN,,HIRAGANA,,,防蟻,ぼうぎ,,bougi,"zapobieganie mrówkom
 zwalczanie mrówek
 zwalczanie termitów",,DICTIONARY2_SOURCE,,GroupId: 2862121
@@ -6534,4 +6538,44 @@ wydarzenie na torze",ang: track race,DICTIONARY2_SOURCE,,GroupId: 2862152
 303926,WORD_NOUN,,HIRAGANA,,,ゆっくり滑り,ゆっくりすべり,,yukkuri suberi,"powolne trzęsienie ziemi
 powolny poślizg",,DICTIONARY2_SOURCE,,GroupId: 2862153
 303927,WORD_NOUN,,KATAKANA,,,ＩＩＪ,アイアイジェイ,,aiaijei,"Internet Initiative Japan
-IIJ",nazwa firmy; dostawca internetu,DICTIONARY2_SOURCE,,GroupId: 5746960
+IIJ",nazwa firmy; dostawca internetu,DICTIONARY2_SOURCE,DUPLICATE 227266,GroupId: 5746960
+303928,WORD_NOUN,,KATAKANA,,,-,メッセ,,messe,komunikator internetowy,internet; skrót,DICTIONARY2_SOURCE,DUPLICATE 14793,GroupId: 2862159
+303929,WORD_NOUN,,KATAKANA,,,ＴＫＯ,ティーケーオー,,tii kee oo,"nokaut techniczny
+TKO",sport; ang: technical knockout,DICTIONARY2_SOURCE,DUPLICATE 250794,GroupId: 2072350
+303930,WORD_NOUN,,KATAKANA,,,-,ブレーキン,,bureekin,"breaking
+breakdance
+breakdancing","rodzaj specyficznego i unikatowego tańca z dużą liczbą elementów siłowo-sprawnościowych, oraz kroków wykonywanych 'w parterze', czyli rękami i nogami na ziemi; ang: breakin'",DICTIONARY2_SOURCE,,GroupId: 2852227
+303931,"WORD_ADJECTIVE_NO
+WORD_NOUN",,KATAKANA,,,-,ノースリーヴ,,noo suriivu,ubrania bez rękawów,ang: no sleeve,DICTIONARY2_SOURCE,,GroupId: 1927230
+303932,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,無下にはできない,むげにはできない,,muge ni wa dekinai,"nie może zmarnować
+nie można zaniedbać",,DICTIONARY2_SOURCE,,GroupId: 2862061
+303933,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,無下には出来ない,むげにはできない,,muge ni wa dekinai,"nie może zmarnować
+nie można zaniedbać",,DICTIONARY2_SOURCE,,GroupId: 2862061
+303934,WORD_NOUN,,KATAKANA,,,-,プレクーリング,,purekuuringu,"wstępne chłodzenie
+schłodzenie się przed rozpoczęciem czynności w wysokiej temperaturze",,DICTIONARY2_SOURCE,,GroupId: 2862084
+303935,WORD_NOUN,,KATAKANA,,,-,クールベスト,,kuuru besuto,kamizelka chłodząca,ang: cool vest,DICTIONARY2_SOURCE,,GroupId: 2862087
+303936,WORD_NOUN,,KATAKANA,,,-,クール・ベスト,,kuuru besuto,kamizelka chłodząca,ang: cool vest,DICTIONARY2_SOURCE,,GroupId: 2862087
+303937,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,引きが強い,ひきがつよい,,hiki ga tsuyoi,mieć szczęście,wyrażenie idiomatyczne; np. w losowaniu karty lub płytki w grze,DICTIONARY2_SOURCE,,GroupId: 2862105
+303938,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,ひきが強い,ひきがつよい,,hiki ga tsuyoi,mieć szczęście,wyrażenie idiomatyczne; np. w losowaniu karty lub płytki w grze,DICTIONARY2_SOURCE,,GroupId: 2862105
+303939,WORD_NOUN,,HIRAGANA,,,残車,ざんしゃ,,zansha,pozostawienie samochodu,np. na parkingu na noc,DICTIONARY2_SOURCE,,GroupId: 2862129
+303940,WORD_NOUN,,KATAKANA,,,-,ノースリー,,noo surii,trzy piłki i żadnego uderzenia,baseball; potocznie; ang: no three,DICTIONARY2_SOURCE,,GroupId: 2862134
+303941,WORD_NOUN,,HIRAGANA,,,八段,はちだん,,hachi dan,osiem,"klasyfikator do liczenia stopni, rang i poziomów",DICTIONARY2_SOURCE,"DUPLICATE 10847
+DUPLICATE 295643",GroupId: 2862146
+303942,WORD_NOUN,,HIRAGANA,,,山谷,さんこく,,sankoku,"góry i doliny
+górzysta dolina",,DICTIONARY2_SOURCE,,GroupId: 2862154
+303943,WORD_NOUN,,KATAKANA,,,-,ベストバイ,,besuto bai,"produkt, który trzeba kupić
+zalecane zakupy",ang: best buy,DICTIONARY2_SOURCE,,GroupId: 2862155
+303944,WORD_NOUN,,KATAKANA,,,-,ベスト・バイ,,besuto bai,"produkt, który trzeba kupić
+zalecane zakupy",ang: best buy,DICTIONARY2_SOURCE,,GroupId: 2862155
+303945,WORD_NOUN,,KATAKANA,,,-,ファーストイート,,faasuto iito,uroczysta degustacja tortu weselnego przez Parę Młodą,rzadko używane określenie; ang: first eat,DICTIONARY2_SOURCE,,GroupId: 2862156
+303946,WORD_NOUN,,KATAKANA,,,-,ファースト・イート,,faasuto iito,uroczysta degustacja tortu weselnego przez Parę Młodą,rzadko używane określenie; ang: first eat,DICTIONARY2_SOURCE,,GroupId: 2862156
+303947,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,一口大,ひとくちだい,,hitokuchidai,"wielkości jednego kęsa
+na jeden kęs",,DICTIONARY2_SOURCE,,GroupId: 2862157
+303948,WORD_NOUN,,KATAKANA,,,-,ブレーキング,,bureekingu,hamowanie,ang: braking,DICTIONARY2_SOURCE,,GroupId: 2862158
+303949,WORD_INTERJECTION,,KATAKANA,,,-,ナマステ,,namasute,pozdrowienie,san: namaste,DICTIONARY2_SOURCE,,GroupId: 2862160
+303950,WORD_NOUN,,KATAKANA_HIRAGANA,,,プログレッシブ和英中辞典,プログレッシブわえいちゅうじてん,,puroguresshibu waeichuu jiten,Progresywny Słownik Japońsko-Angielski,"dzieło artystyczne, np. literatura, muzyka i etc; opublikowany przez Shogakukan",DICTIONARY2_SOURCE,,GroupId: 5073575
