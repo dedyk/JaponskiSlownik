@@ -1,4 +1,4 @@
-+ update - x
+update - x
 ----------
 kanji - 10
 ----------
