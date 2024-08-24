@@ -22,9 +22,7 @@ import pl.idedyk.japanese.dictionary.api.dto.TransitiveIntransitivePairWithDicti
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.keigo.KeigoHelper;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.lucene.LuceneDatabase;
-import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 
 public class TestDictionaryManager {
 	
@@ -32,9 +30,9 @@ public class TestDictionaryManager {
 
 	public static void main(String[] args) throws Exception {
 		
-		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
+		//Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
 		
-		List<PolishJapaneseEntry> oldPolishJapaneseEntriesList = dictionary2Helper.getOldPolishJapaneseEntriesList();
+		//List<PolishJapaneseEntry> oldPolishJapaneseEntriesList = dictionary2Helper.getOldPolishJapaneseEntriesList();
 		
 		LuceneDatabase luceneDatabase = new LuceneDatabase(dbMainDir + "/db-lucene");
 		
