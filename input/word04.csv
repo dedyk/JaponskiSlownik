@@ -6562,7 +6562,7 @@ WORD_EXPRESSION",,HIRAGANA,,,引きが強い,ひきがつよい,,hiki ga tsuyoi,
 303938,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,ひきが強い,ひきがつよい,,hiki ga tsuyoi,mieć szczęście,wyrażenie idiomatyczne; np. w losowaniu karty lub płytki w grze,DICTIONARY2_SOURCE,,GroupId: 2862105
 303939,WORD_NOUN,,HIRAGANA,,,残車,ざんしゃ,,zansha,pozostawienie samochodu,np. na parkingu na noc,DICTIONARY2_SOURCE,,GroupId: 2862129
-303940,WORD_NOUN,,KATAKANA,,,-,ノースリー,,noo surii,trzy piłki i żadnego uderzenia,baseball; potocznie; ang: no three,DICTIONARY2_SOURCE,,GroupId: 2862134
+303940,WORD_NOUN,,KATAKANA,,,-,ノースリー,,noo surii,trzy piłki i żadnego uderzenia,baseball; potocznie; ang: no three,DICTIONARY2_SOURCE,DUPLICATE 304216,GroupId: 2862134
 303941,WORD_NOUN,,HIRAGANA,,,八段,はちだん,,hachi dan,osiem,"klasyfikator do liczenia stopni, rang i poziomów",DICTIONARY2_SOURCE,"DUPLICATE 10847
 DUPLICATE 295643",GroupId: 2862146
 303942,WORD_NOUN,,HIRAGANA,,,山谷,さんこく,,sankoku,"góry i doliny
@@ -6978,9 +6978,9 @@ zatrucie rozdymką",,DICTIONARY2_SOURCE,,GroupId: 2633990
 304188,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,ハサミを入れる,はさみをいれる,,hasami o ireru,"ciąć nożyczkami
 przyłożyć nożyczki do
+przycinać (np. drzewo, krzew)
 skasować (np. bilet)
-przedziurawić (np. bilet)
-przycinać (np. krzew)",,DICTIONARY2_SOURCE,,GroupId: 2827090
+przedziurawić (np. bilet)",,DICTIONARY2_SOURCE,,GroupId: 2827090
 304189,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,ハッパを掛ける,はっぱをかける,,happa o kakeru,"odpalić materiał wybuchowy
 rozpalić ogień pod kimś
@@ -7044,3 +7044,152 @@ skraplać
 skondensować
 przemyśleć do końca (często w klauzuli warunkowej)
 zredukować do niezbędnego minimum (często w klauzuli warunkowej)",,DICTIONARY2_SOURCE,,GroupId: 1391420
+304212,WORD_NOUN,,KATAKANA,,,-,トーラス,,toorasu,torus,"geometria; dwuwymiarowa powierzchnia obrotowa zanurzalna w przestrzeni trójwymiarowej, powstała przez obrót okręgu wokół prostej leżącej w płaszczyźnie tego okręgu i nieprzecinającej go",DICTIONARY2_SOURCE,DUPLICATE 47021,GroupId: 2862339
+304213,WORD_NOUN,,KATAKANA,,,-,エッセー,,essee,Próby,"dzieło artystyczne, np. literatura, muzyka i etc; zbiór 107 esejów Michela de Montaigne’a wydany w pierwotnej wersji w dwóch tomach w 1580 w Bordeaux, potem rozszerzany",DICTIONARY2_SOURCE,DUPLICATE 20954,GroupId: 5746999
+304214,WORD_VERB_AUX,,HIRAGANA,,,-,だ,,da,"wskazywanie zakończonego działania (だ po niektórych formach czasownika; wskazuje przeszłą lub zakończoną czynność)
+wskazywanie lekkiego trybu rozkazującego",,DICTIONARY2_SOURCE,"DUPLICATE 23750
+DUPLICATE 44679
+DUPLICATE 44680
+DUPLICATE 44681
+DUPLICATE 204128",GroupId: 2654250
+304215,WORD_NOUN,,KATAKANA,,,-,パーサー,,paasaa,analizator składni,informatyka; ang: parser,DICTIONARY2_SOURCE,DUPLICATE 94623,GroupId: 2319510
+304216,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,ノースリー,,noo surii,"odzież bez rękawów
+ubranie bez rękawów",skrót; ang: no sleeve,DICTIONARY2_SOURCE,DUPLICATE 303940,GroupId: 2832970
+304217,WORD_NOUN,,HIRAGANA,,,局部銀河群,きょくぶぎんがぐん,,kyokubu gingagun,Lokalna Grupa (galaktyk),astronomia,DICTIONARY2_SOURCE,,GroupId: 2862308
+304218,WORD_NOUN,,KATAKANA,,,-,マニラフォルダ,,manira foruda,folder manila,,DICTIONARY2_SOURCE,,GroupId: 2862310
+304219,WORD_NOUN,,KATAKANA,,,-,マニラフォルダー,,manira forudaa,folder manila,,DICTIONARY2_SOURCE,,GroupId: 2862310
+304220,WORD_NOUN,,KATAKANA,,,-,マニラ・フォルダ,,manira foruda,folder manila,,DICTIONARY2_SOURCE,,GroupId: 2862310
+304221,WORD_NOUN,,KATAKANA,,,-,マニラ・フォルダー,,manira forudaa,folder manila,,DICTIONARY2_SOURCE,,GroupId: 2862310
+304222,WORD_NOUN,,HIRAGANA,,,小世界,しょうせかい,,shousekai,"mały świat
+miniaturowy
+mikrokosmos",,DICTIONARY2_SOURCE,,GroupId: 2862317
+304223,WORD_NOUN,,HIRAGANA,,,秒数,びょうすう,,byousuu,liczba sekund,,DICTIONARY2_SOURCE,,GroupId: 2862318
+304224,WORD_NOUN,,HIRAGANA,,,小集団,しょうしゅうだん,,shoushuudan,mała grupa,,DICTIONARY2_SOURCE,,GroupId: 2862323
+304225,WORD_NOUN,,HIRAGANA,,,凝集塊,ぎょしゅうかい,,gyoshuukai,"agregat
+kępa",,DICTIONARY2_SOURCE,,GroupId: 2862324
+304226,WORD_NOUN,,KATAKANA_HIRAGANA,,,Ｐ活,ピーかつ,,pii katsu,randka z cukrowym tatusiem,skrót; slang,DICTIONARY2_SOURCE,,GroupId: 2862325
+304227,WORD_ADJECTIVE_NA,,HIRAGANA,,,根拠薄弱,こんきょはくじゃく,,konkyo hakujaku,"niepotwierdzony
+słaby",,DICTIONARY2_SOURCE,,GroupId: 2862328
+304228,WORD_NOUN,,HIRAGANA,,,有効利用,ゆうこうりよう,,yuukou riyou,"efektywne wykorzystanie
+efektywne użycie",,DICTIONARY2_SOURCE,,GroupId: 2862333
+304229,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,振り出しに戻る,ふりだしにもどる,,furi dashi ni modoru,"wrócić do punktu wyjścia
+zacząć od nowa
+wrócić tam, gdzie się zaczęło",,DICTIONARY2_SOURCE,,GroupId: 2862334
+304230,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ハンドルを切る,ハンドルをきる,,handoru o kiru,"skręcać kierownicą
+obracać kierownicą",,DICTIONARY2_SOURCE,,GroupId: 2862335
+304231,WORD_ADJECTIVE_NO,,HIRAGANA,,,ひも状,ひもじょう,,himojou,"w kształcie wstążki
+sznurkowy
+koronkowy",,DICTIONARY2_SOURCE,,GroupId: 2862336
+304232,WORD_ADJECTIVE_NO,,HIRAGANA,,,紐状,ひもじょう,,himojou,"w kształcie wstążki
+sznurkowy
+koronkowy",,DICTIONARY2_SOURCE,,GroupId: 2862336
+304233,WORD_NOUN,,HIRAGANA,,,宵月夜,よいづきよ,,yoidukiyo,"księżycowy wieczór
+wieczór przy świetle księżyca",,DICTIONARY2_SOURCE,,GroupId: 2862337
+304234,WORD_NOUN,,HIRAGANA,,,鍋鉉,なべづる,,nabeduru,rączka do garnka,,DICTIONARY2_SOURCE,,GroupId: 2862338
+304235,WORD_NOUN,,HIRAGANA,,,中国人民解放軍,ちゅうごくじんみんかいほうぐん,,chuugoku jinmin kaihougun,Chińska Armia Ludowo-Wyzwoleńcza,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5747000
+304236,WORD_NOUN,,HIRAGANA,,,芋ようかん,いもようかん,,imo youkan,pasta ze słodkiego ziemniaka,"jedzenie, gotowanie; w kształcie klocka",DICTIONARY2_SOURCE,,GroupId: 1930370
+304237,WORD_NOUN,,HIRAGANA,,,いも羊羹,いもようかん,,imo youkan,pasta ze słodkiego ziemniaka,"jedzenie, gotowanie; w kształcie klocka",DICTIONARY2_SOURCE,,GroupId: 1930370
+304238,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,羽目を外す,ハメをはずす,,hame o hazusu,"przesadzić
+przeholować
+działać bez ograniczeń
+uwolnić się
+uwalniać się
+wyswobadzać się",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,DUPLICATE 137576,GroupId: 2067580
+304239,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,ハメを外す,はめをはずす,,hame o hazusu,"przesadzić
+przeholować
+działać bez ograniczeń
+uwolnić się
+uwalniać się
+wyswobadzać się",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,DUPLICATE 137608,GroupId: 2067580
+304240,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,羽目をはずす,ハメをはずす,,hame o hazusu,"przesadzić
+przeholować
+działać bez ograniczeń
+uwolnić się
+uwalniać się
+wyswobadzać się",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,DUPLICATE 137610,GroupId: 2067580
+304241,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,はめを外す,ハメをはずす,,hame o hazusu,"przesadzić
+przeholować
+działać bez ograniczeń
+uwolnić się
+uwalniać się
+wyswobadzać się",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,DUPLICATE 137609,GroupId: 2067580
+304242,WORD_NOUN,,HIRAGANA,,,コメ騒動,こめそうどう,,kome soudou,zamieszki związane ryżem,"termin historyczny; np. w 1890, 1897 i 1918 roku",DICTIONARY2_SOURCE,,GroupId: 1723880
+304243,WORD_NOUN,,HIRAGANA_KATAKANA,,,二ケツ,にケツ,,niketsu,"jazda w dwójkę (np. na rowerze, motorze)
+dzielenie miejsca
+dzielenie krzesła",slang; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2120790
+304244,WORD_NOUN,,HIRAGANA_KATAKANA,,,２ケツ,にケツ,,niketsu,"jazda w dwójkę (np. na rowerze, motorze)
+dzielenie miejsca
+dzielenie krzesła",slang; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2120790
+304245,WORD_NOUN,,HIRAGANA_KATAKANA,,,二尻,にケツ,,niketsu,"jazda w dwójkę (np. na rowerze, motorze)
+dzielenie miejsca
+dzielenie krzesła",slang; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2120790
+304246,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,理屈と膏薬は何処へでもつく,りくつとこうやくはどこへでもつく,,rikutsu to kouyaku wa doko e demo tsuku,można podać wiarygodny argument za czymkolwiek,przysłowie,DICTIONARY2_SOURCE,,GroupId: 2776820
+304247,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,理屈と膏薬は何処へでも付く,りくつとこうやくはどこへでもつく,,rikutsu to kouyaku wa doko e demo tsuku,można podać wiarygodny argument za czymkolwiek,przysłowie,DICTIONARY2_SOURCE,,GroupId: 2776820
+304248,WORD_NOUN,,HIRAGANA,,,振逃げ,ふりにげ,,furi nige,zdobycie pierwszej bazy po niewykorzystanym trzecim uderzeniu,baseball,DICTIONARY2_SOURCE,,GroupId: 1834370
+304249,WORD_EXPRESSION,,HIRAGANA,,,甘い顔する,あまいかおをする,,amai kao o suru,"traktować kogoś łagodnie
+być wyluzowany
+być pobłażliwy
+być łagodny",,"DICTIONARY2_SOURCE
+EDICT_TRANSLATE_INFO_GROUP_DIFF
+NO_TYPE_CHECK",,GroupId: 2612840
+304250,WORD_NOUN,,HIRAGANA,,,ともえ投げ,ともえなげ,,tomoe nage,tomoe nage,sztuki walki; rodzaj rzutu w judo,DICTIONARY2_SOURCE,,GroupId: 1470900
+304251,WORD_NOUN,,HIRAGANA,,,巴投,ともえなげ,,tomoe nage,tomoe nage,sztuki walki; rodzaj rzutu w judo,DICTIONARY2_SOURCE,,GroupId: 1470900
+304252,WORD_NOUN,,HIRAGANA,,,定型郵便物,ていけいゆうびんぶつ,,teikei yuubinbutsu,standardowy rozmiar poczty,,DICTIONARY2_SOURCE,,GroupId: 1435570
+304253,"WORD_EXPRESSION
+WORD_ADJECTIVE_NO
+WORD_ADVERB_TO",,HIRAGANA,,,どこふく風,どこふくかぜ,,doko fuku kaze,"w ogóle się nie przejmować
+???",,DICTIONARY2_SOURCE,,GroupId: 2122100
+304254,WORD_NOUN,,KATAKANA_HIRAGANA,,,エックス線回折,エックスせんかいせつ,,ekkusu senkaisetsu,dyfrakcja rentgenowska,chemia; fizyka,DICTIONARY2_SOURCE,,GroupId: 2766860
+304255,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,贅沢をいう,ぜいたくをいう,,zeitaku o iu,"prosić o zbyt wiele
+oczekiwać zbyt wiele",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2838153
+304256,WORD_EXPRESSION,,HIRAGANA,,,力およばず,ちからおよばず,,chikara oyobazu,"niemożliwe do osiągnięcia
+nie odnieść sukcesu (pomimo najlepszych starań)
+nie być w stanie sprostać zadaniu
+bycie poza swoimi możliwościami",,DICTIONARY2_SOURCE,,GroupId: 1554930
+304257,WORD_EXPRESSION,,HIRAGANA,,,心の何処かで,こころのどこかで,,kokoro no doko kade,"w głębi duszy
+w głębi serca
+w głębi umysłu
+szczególne miejsce w sercu",,DICTIONARY2_SOURCE,,GroupId: 2770860
+304258,WORD_NOUN,,HIRAGANA,,,３球三振,さんきゅうさんしん,,sankyuu sanshin,strikeout trzema rzutami,baseball,DICTIONARY2_SOURCE,,GroupId: 1300180
+304259,WORD_NOUN,,HIRAGANA,,,３球３振,さんきゅうさんしん,,sankyuu sanshin,strikeout trzema rzutami,baseball,DICTIONARY2_SOURCE,,GroupId: 1300180
+304260,WORD_NOUN,,HIRAGANA,,,抑論,そもそもろん,,somo somo ron,"powrót do początku (np. w dyskusji)
+powrót do podstawowych punktów (omawianego zagadnienia)
+dyskusja o tym, jak wszystko się zaczęło (w pierwszej kolejności)",,DICTIONARY2_SOURCE,,GroupId: 2848034
+304261,WORD_NOUN,,KATAKANA,,,-,フォッグランプ,,foggu ranpu,światło przeciwmgielne,ang: fog lamp,DICTIONARY2_SOURCE,,GroupId: 2468680
+304262,WORD_NOUN,,KATAKANA,,,-,インスタントメッセンジャ,,insutanto messenja,"komunikator internetowy
+klient komunikatora internetowego",internet; ang: instant messenger,DICTIONARY2_SOURCE,,GroupId: 2160030
+304263,WORD_NOUN,,KATAKANA,,,-,パーザー,,paazaa,analizator składni,informatyka; ang: parser,DICTIONARY2_SOURCE,,GroupId: 2319510
+304264,WORD_NOUN,,KATAKANA,,,-,パーザ,,paaza,analizator składni,informatyka; ang: parser,DICTIONARY2_SOURCE,,GroupId: 2319510
+304265,WORD_NOUN,,KATAKANA,,,-,スーパーノヴァ,,suupaanova,supernowa,"astronomia; termin określający kilka rodzajów kosmicznych eksplozji powodujących powstanie na niebie niezwykle jasnego obiektu, który już po kilku tygodniach lub miesiącach staje się niemal niewidoczny, ang: supernova",DICTIONARY2_SOURCE,,GroupId: 1957710
+304266,WORD_NOUN,,KATAKANA,,,-,プレースメントテスト,,pureesumento tesuto,"egzamin wstępny
+sprawdzian predyspozycji",ang: placement test,DICTIONARY2_SOURCE,,GroupId: 1116610
+304267,WORD_NOUN,,KATAKANA,,,-,プレースメント・テスト,,pureesumento tesuto,"egzamin wstępny
+sprawdzian predyspozycji",ang: placement test,DICTIONARY2_SOURCE,,GroupId: 1116610
+304268,WORD_NOUN,,KATAKANA,,,-,バイセコー,,baisekoo,"rower (ang: bicycle)
+przewrotka (sport; skrót; zagranie w piłce nożnej)
+nożyce (sport; skrót; zagranie w piłce nożnej)
+przerzutka (sport; skrót; zagranie w piłce nożnej)",,DICTIONARY2_SOURCE,,GroupId: 2479130
+304269,WORD_NOUN,,KATAKANA,,,-,バイシコー,,baishikoo,"rower (ang: bicycle)
+przewrotka (sport; skrót; zagranie w piłce nożnej)
+nożyce (sport; skrót; zagranie w piłce nożnej)
+przerzutka (sport; skrót; zagranie w piłce nożnej)",,DICTIONARY2_SOURCE,,GroupId: 2479130
+304270,WORD_NOUN,,KATAKANA,,,-,バイセクル,,baisekuru,"rower (ang: bicycle)
+przewrotka (sport; skrót; zagranie w piłce nożnej)
+nożyce (sport; skrót; zagranie w piłce nożnej)
+przerzutka (sport; skrót; zagranie w piłce nożnej)",,DICTIONARY2_SOURCE,,GroupId: 2479130
+304271,WORD_NOUN,,KATAKANA,,,-,フォッグ,,foggu,mgła,ang: fog,DICTIONARY2_SOURCE,,GroupId: 1110480
+304272,WORD_NOUN,,KATAKANA,,,-,アビュース,,abyuusu,nadużycie,ang: abuse,DICTIONARY2_SOURCE,,GroupId: 2465140
+304273,WORD_NOUN,,KATAKANA,,,-,アン・ジッヒ,,an jihhi,samo w sobie,filozofia; niem: an sich,DICTIONARY2_SOURCE,,GroupId: 2411030
+304274,WORD_NOUN,,KATAKANA,,,-,アコンパニメント,,akonpanimento,akompaniament,muzyka; ang: accompaniment,DICTIONARY2_SOURCE,,GroupId: 2447300
+304275,WORD_NOUN,,KATAKANA,,,-,ブロアー,,buroaa,"dmuchawa
+wentylator",ang: blower,DICTIONARY2_SOURCE,,GroupId: 2038820
