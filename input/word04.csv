@@ -7080,10 +7080,12 @@ wrócić tam, gdzie się zaczęło",,DICTIONARY2_SOURCE,,GroupId: 2862334
 304230,"WORD_VERB_U
 WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ハンドルを切る,ハンドルをきる,,handoru o kiru,"skręcać kierownicą
 obracać kierownicą",,DICTIONARY2_SOURCE,,GroupId: 2862335
-304231,WORD_ADJECTIVE_NO,,HIRAGANA,,,ひも状,ひもじょう,,himojou,"w kształcie wstążki
+304231,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,ひも状,ひもじょう,,himojou,"w kształcie wstążki
 sznurkowy
 koronkowy",,DICTIONARY2_SOURCE,,GroupId: 2862336
-304232,WORD_ADJECTIVE_NO,,HIRAGANA,,,紐状,ひもじょう,,himojou,"w kształcie wstążki
+304232,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,紐状,ひもじょう,,himojou,"w kształcie wstążki
 sznurkowy
 koronkowy",,DICTIONARY2_SOURCE,,GroupId: 2862336
 304233,WORD_NOUN,,HIRAGANA,,,宵月夜,よいづきよ,,yoidukiyo,"księżycowy wieczór
@@ -7193,3 +7195,48 @@ przerzutka (sport; skrót; zagranie w piłce nożnej)",,DICTIONARY2_SOURCE,,Grou
 304274,WORD_NOUN,,KATAKANA,,,-,アコンパニメント,,akonpanimento,akompaniament,muzyka; ang: accompaniment,DICTIONARY2_SOURCE,,GroupId: 2447300
 304275,WORD_NOUN,,KATAKANA,,,-,ブロアー,,buroaa,"dmuchawa
 wentylator",ang: blower,DICTIONARY2_SOURCE,,GroupId: 2038820
+304276,WORD_NOUN,,HIRAGANA,,,ガン健診,がんけんしん,,gankenshin,"badanie przesiewowe w kierunku raka
+badanie na raka",,DICTIONARY2_SOURCE,,GroupId: 2862280
+304277,WORD_NOUN,,HIRAGANA,,,ふぐ中毒,ふぐちゅうどく,,fugu chuudoku,"zatrucie rybą fugu
+zatrucie rozdymką",,DICTIONARY2_SOURCE,,GroupId: 2633990
+304278,WORD_NOUN,,HIRAGANA,,,自引き,じびき,,jibiki,zdobycie ulubionego przedmiotu lub postaci,np. ze skrzynki z łupami lub automatu gacha,DICTIONARY2_SOURCE,,GroupId: 2862106
+304279,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,日の御子,ひのみこ,,hi no miko,"Cesarz Japonii
+Książę Koronny (Japonii)",honoryfikatywnie,DICTIONARY2_SOURCE,,GroupId: 2862217
+304280,WORD_NOUN,,HIRAGANA,,,中退共,ちゅうたいきょう,,chuutaikyou,"Smaller Enterprise Retirement Allowance Mutual Aid System (system emerytalny utworzony w 1959 r.)
+SERAMA System
+Chutaikyo System",skrót,DICTIONARY2_SOURCE,,GroupId: 2862295
+304281,WORD_NOUN,,KATAKANA,,,-,コンシューマーゲーム,,konshuumaa geemu,"gra konsolowa
+gra na konsolę",gry wideo; ang: consumer game,DICTIONARY2_SOURCE,,GroupId: 2862340
+304282,WORD_NOUN,,KATAKANA,,,-,コンシューマー・ゲーム,,konshuumaa geemu,"gra konsolowa
+gra na konsolę",gry wideo; ang: consumer game,DICTIONARY2_SOURCE,,GroupId: 2862340
+304283,WORD_EXPRESSION,,KATAKANA,,,ＮＳＦＷ,エヌ・エス・エフ・ダブリュー,,enu esu efu daburyuu,nieodpowiednie do wyświetlania w miejscu pracy,slang internetowy; głównie o witrynach w internecie,DICTIONARY2_SOURCE,DUPLICATE 304284,GroupId: 2862341
+304284,WORD_EXPRESSION,,KATAKANA,,,ＮＳＦＷ,エヌエスエフダブリュー,,enu esu efu daburyuu,nieodpowiednie do wyświetlania w miejscu pracy,slang internetowy; głównie o witrynach w internecie,DICTIONARY2_SOURCE,DUPLICATE 304283,GroupId: 2862341
+304285,WORD_NOUN,,KATAKANA_HIRAGANA,,,ゴム手袋,ゴムてぶくろ,,gomu tebukuro,"rękawice gumowe
+gumowe rękawice",,DICTIONARY2_SOURCE,,GroupId: 2862342
+304286,WORD_NOUN,,HIRAGANA,,,徒歩圏,とほけん,,tohoken,w odległości spaceru,,DICTIONARY2_SOURCE,,GroupId: 2862344
+304287,WORD_NOUN,,HIRAGANA,,,日嗣,ひつぎ,,hitsugi,cesarski tron,honoryfikatywnie,DICTIONARY2_SOURCE,,GroupId: 2862345
+304288,WORD_NOUN,,HIRAGANA,,,日嗣ぎ,ひつぎ,,hitsugi,cesarski tron,honoryfikatywnie,DICTIONARY2_SOURCE,,GroupId: 2862345
+304289,WORD_NOUN,,KATAKANA_HIRAGANA,,,テラス席,テラスせき,,terasu seki,miejsca siedzące na zewnątrz,na tarasie,DICTIONARY2_SOURCE,,GroupId: 2862349
+304290,WORD_NOUN,,KATAKANA,,,-,スム,,sumu,sum,waluta Uzbekistanu,DICTIONARY2_SOURCE,,GroupId: 2862350
+304291,WORD_NOUN,,KATAKANA,,,ＥＮＥ−ＦＡＲＭ,エネファーム,,enefaamu,Ene-Farm,znak towarowy; domowy generator energii elektrycznej zasilany gazem,DICTIONARY2_SOURCE,,GroupId: 2862351
+304292,WORD_NOUN,,HIRAGANA,,,食器洗い乾燥機,しょっきあらいかんそうき,,shokki arai kansouki,zmywarka z funkcją suszenia,,DICTIONARY2_SOURCE,,GroupId: 2862352
+304293,WORD_NOUN,,HIRAGANA,,,食器洗乾燥機,しょっきあらいかんそうき,,shokki arai kansouki,zmywarka z funkcją suszenia,,DICTIONARY2_SOURCE,,GroupId: 2862352
+304294,WORD_NOUN,,KATAKANA_HIRAGANA,,,ハイルーフ車,ハイルーフしゃ,,hai ruufu sha,van z wysokim dachem,,DICTIONARY2_SOURCE,,GroupId: 2862353
+304295,WORD_NOUN,,KATAKANA,,,-,ウォークスルークローゼット,,wooku suruu kuroozetto,"szafa w przejściu
+garderoba w przejściu",ang: walk-through closet,DICTIONARY2_SOURCE,,GroupId: 2862354
+304296,WORD_NOUN,,KATAKANA,,,-,ウォークスルー・クローゼット,,wooku suruu kuroozetto,"szafa w przejściu
+garderoba w przejściu",ang: walk-through closet,DICTIONARY2_SOURCE,,GroupId: 2862354
+304297,WORD_NOUN,,KATAKANA,,,-,ウォークスルークロゼット,,wooku suruu kurozetto,"szafa w przejściu
+garderoba w przejściu",ang: walk-through closet,DICTIONARY2_SOURCE,,GroupId: 2862354
+304298,WORD_NOUN,,KATAKANA,,,-,ウオークスルークローゼット,,uooku suruu kuroozetto,"szafa w przejściu
+garderoba w przejściu",ang: walk-through closet,DICTIONARY2_SOURCE,,GroupId: 2862354
+304299,WORD_NOUN,,KATAKANA,,,-,ウオークスルークロゼット,,uooku suruu kurozetto,"szafa w przejściu
+garderoba w przejściu",ang: walk-through closet,DICTIONARY2_SOURCE,,GroupId: 2862354
+304300,WORD_NOUN,,KATAKANA,,,-,リアルティ,,riaruti,"nieruchomość
+mienie nieruchome",ang: realty,DICTIONARY2_SOURCE,,GroupId: 2862355
+304301,WORD_NOUN,,KATAKANA,,,-,リアルティー,,riarutii,"nieruchomość
+mienie nieruchome",ang: realty,DICTIONARY2_SOURCE,,GroupId: 2862355
+304302,WORD_NOUN,,KATAKANA_HIRAGANA,,,テス勉,テスべん,,tesu ben,uczenie się do testu,skrót; potocznie,DICTIONARY2_SOURCE,,GroupId: 2862356
+304303,WORD_NOUN,,HIRAGANA,,,燃料電池実用化推進協議会,ねんりょうでんちじつようかすいしんきょうぎかい,,nenryou denchi jitsuyouka suishin kyougikai,"Fuel Cell Commercialization Conference of Japan
+FCCJ",nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5747001
