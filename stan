@@ -2,7 +2,7 @@ update - x
 ----------
 + kanji - 10
 ----------
-small - 10
++ small - 10
 small2 - 10
 small3 - 10
 ---------
