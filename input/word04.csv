@@ -8599,12 +8599,12 @@ zaprzestanie uczestnictwa",uprzejmie,DICTIONARY2_SOURCE,,GroupId: 2862596
 zaprzestanie uczestnictwa",uprzejmie,DICTIONARY2_SOURCE,,GroupId: 2862596
 304830,WORD_NOUN,,HIRAGANA,,,御見限,おみかぎり,,omikagiri,"zaprzestanie patronatu (np. nad klientem)
 zaprzestanie uczestnictwa",uprzejmie,DICTIONARY2_SOURCE,,GroupId: 2862596
-304831,WORD_ADVERB,,HIRAGANA,,,-,くらり,,kurari,"oszałamiająco
-zawrotnie
-nagle",,DICTIONARY2_SOURCE,,GroupId: 2862599
-304832,WORD_ADVERB,,KATAKANA,,,-,クラリ,,kurari,"oszałamiająco
-zawrotnie
-nagle",,DICTIONARY2_SOURCE,,GroupId: 2862599
+304831,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,くらり,,kurari,"oszałamiająco
+zawrotnie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2862599
+304832,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,クラリ,,kurari,"oszałamiająco
+zawrotnie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2862599
 304833,WORD_VERB_U,,HIRAGANA,,,引き越す,ひきこす,,hiki kosu,"przeprowadzić się (do domu)
 zmienić miejsce zamieszkania",przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2862600
 304834,"WORD_VERB_RU
@@ -9364,3 +9364,58 @@ DUPLICATE 93285
 DUPLICATE 93443
 DUPLICATE 93445
 DUPLICATE 214107",GroupId: 5747047
+305126,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,スクウェア,,sukuwea,"kwadrat (ang: square)
+plac (ang: square)
+skwer (ang: square)
+formalny
+metodyczny
+poprawny
+właściwy
+dokładny
+ścisły
+sztywny
+ekierka (ang: square)",,DICTIONARY2_SOURCE,,GroupId: 1068320
+305127,WORD_NOUN,,KATAKANA,,,-,ポール,,pooru,(opinia) sondaż,,DICTIONARY2_SOURCE,,GroupId: 2862692
+305128,WORD_NOUN,,KATAKANA,,,-,ファイバー・オプティックス,,faibaa oputikkusu,technika światłowodowa,ang: fiber optics,DICTIONARY2_SOURCE,,GroupId: 2323010
+305129,WORD_NOUN,,KATAKANA,,,-,ファイバオプティクス,,faiba oputikusu,technika światłowodowa,ang: fiber optics,DICTIONARY2_SOURCE,,GroupId: 2323010
+305130,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,勇悍,ゆうかん,,yuukan,"odważny
+dzielny
+mężny
+waleczny
+bohaterski
+heroiczny",,DICTIONARY2_SOURCE,,GroupId: 1539730
+305131,WORD_EMPTY,,HIRAGANA,,,下,さがる,,sagaru,"schodzić w dół
+iść w dół
+spadać
+opadać
+tonąć
+obniżyć się
+wisieć
+zwisać
+zawiesić
+cofać się
+wycofywać się
+pogarszać się
+być obniżony
+zbliżyć się do współczesności
+poniżej (jako ～下ル lub ～下; w systemie adresowym Kioto)
+na południe od (jako ～下ル lub ～下; w systemie adresowym Kioto)",,"DICTIONARY2_SOURCE
+EDICT_TRANSLATE_INFO_GROUP_DIFF
+NO_TYPE_CHECK",,GroupId: 1184160
+305132,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,割ってはいる,わってはいる,,watte hairu,"wcisnąć się do środka
+wcisnąć się (pomiędzy)
+wejść (między)
+przerwać (rozmowę, kłótnię itp.)
+interweniować",,DICTIONARY2_SOURCE,,GroupId: 1614040
+305133,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,-,エヴァーグリーン,,evaaguriin,"roślina wiecznie zielona (ang: evergreen)
+ponadczasowe arcydzieło
+nieśmiertelne dzieło",,DICTIONARY2_SOURCE,,GroupId: 1029470
+305134,WORD_NOUN,,HIRAGANA,,,ガチ泣き,がちなき,,gachi naki,prawdziwy płacz,potocznie,DICTIONARY2_SOURCE,,GroupId: 2862664
+305135,WORD_NOUN,,HIRAGANA,,,がち泣き,がちなき,,gachi naki,prawdziwy płacz,potocznie,DICTIONARY2_SOURCE,,GroupId: 2862664
+305136,WORD_NOUN,,KATAKANA,,,-,ファイバーグラス,,faibaagurasu,włókno szklane,"ang: fiberglass, fibreglass",DICTIONARY2_SOURCE,,GroupId: 2862689
+305137,WORD_NOUN,,KATAKANA,,,-,ファイバー・グラス,,faibaagurasu,włókno szklane,"ang: fiberglass, fibreglass",DICTIONARY2_SOURCE,,GroupId: 2862689
+305138,WORD_ADJECTIVE_NA,,HIRAGANA,,,栄養的,えいようてき,,eiyouteki,żywieniowy,,DICTIONARY2_SOURCE,,GroupId: 2862690
