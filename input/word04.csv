@@ -5702,12 +5702,14 @@ mantilla","odzież; odmiana welonu lub szala zarzucanego na głowę i ramiona, w
 55-ta rocznica ślubu",,DICTIONARY2_SOURCE,,GroupId: 2861848
 303493,WORD_NOUN,,KATAKANA_HIRAGANA,,,サファイア婚式,サファイアこんしき,,safaia konshiki,"szafirowa rocznica ślubu
 45-ta rocznica ślubu",,DICTIONARY2_SOURCE,,GroupId: 2861849
-303494,"WORD_ADJECTIVE_NA
-WORD_NOUN",,HIRAGANA,,,-,すこ,,suko,"lubić
-lubienie
-preferowany
-ulubiony",slang internetowy,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2861850
+303494,WORD_VERB_U,,HIRAGANA,,,乗りだす,のりだす,,nori dasu,"wyruszać w podróż
+rozpoczynać podróż
+wypływać
+rozpocząć (nowe przedsięwzięcie)
+wyruszać (aby coś osiągnąć)
+rozpocząć jazdę
+pochylać się ku przodowi
+pochylić się do przodu",,DICTIONARY2_SOURCE,,GroupId: 1354940
 303495,WORD_NOUN,,KATAKANA,,,-,セーフハーバー,,seefu haabaa,bezpieczna przystań,"prawo; koncepcja prawna USA, ang: safe harbor",DICTIONARY2_SOURCE,,GroupId: 2861853
 303496,WORD_NOUN,,KATAKANA,,,-,セーフ・ハーバー,,seefu haabaa,bezpieczna przystań,"prawo; koncepcja prawna USA, ang: safe harbor",DICTIONARY2_SOURCE,,GroupId: 2861853
 303497,WORD_NOUN,,HIRAGANA,,,港区,こうく,,kouku,"obszar portowy
@@ -9376,8 +9378,9 @@ właściwy
 dokładny
 ścisły
 sztywny
-ekierka (ang: square)",,DICTIONARY2_SOURCE,,GroupId: 1068320
-305127,WORD_NOUN,,KATAKANA,,,-,ポール,,pooru,(opinia) sondaż,,DICTIONARY2_SOURCE,,GroupId: 2862692
+ekierka (ang: square)",,DICTIONARY2_SOURCE,"DUPLICATE 152249
+DUPLICATE 289145",GroupId: 1068320
+305127,WORD_NOUN,,KATAKANA,,,-,ポール,,pooru,(opinia) sondaż,,DICTIONARY2_SOURCE,DUPLICATE 24220,GroupId: 2862692
 305128,WORD_NOUN,,KATAKANA,,,-,ファイバー・オプティックス,,faibaa oputikkusu,technika światłowodowa,ang: fiber optics,DICTIONARY2_SOURCE,,GroupId: 2323010
 305129,WORD_NOUN,,KATAKANA,,,-,ファイバオプティクス,,faiba oputikusu,technika światłowodowa,ang: fiber optics,DICTIONARY2_SOURCE,,GroupId: 2323010
 305130,"WORD_ADJECTIVE_NA
@@ -9404,7 +9407,11 @@ zbliżyć się do współczesności
 poniżej (jako ～下ル lub ～下; w systemie adresowym Kioto)
 na południe od (jako ～下ル lub ～下; w systemie adresowym Kioto)",,"DICTIONARY2_SOURCE
 EDICT_TRANSLATE_INFO_GROUP_DIFF
-NO_TYPE_CHECK",,GroupId: 1184160
+NO_TYPE_CHECK","DUPLICATE 384
+DUPLICATE 7147
+DUPLICATE 7148
+DUPLICATE 57415
+DUPLICATE 62921",GroupId: 1184160
 305132,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,割ってはいる,わってはいる,,watte hairu,"wcisnąć się do środka
 wcisnąć się (pomiędzy)
@@ -9420,3 +9427,51 @@ nieśmiertelne dzieło",,DICTIONARY2_SOURCE,,GroupId: 1029470
 305136,WORD_NOUN,,KATAKANA,,,-,ファイバーグラス,,faibaagurasu,włókno szklane,"ang: fiberglass, fibreglass",DICTIONARY2_SOURCE,,GroupId: 2862689
 305137,WORD_NOUN,,KATAKANA,,,-,ファイバー・グラス,,faibaagurasu,włókno szklane,"ang: fiberglass, fibreglass",DICTIONARY2_SOURCE,,GroupId: 2862689
 305138,WORD_ADJECTIVE_NA,,HIRAGANA,,,栄養的,えいようてき,,eiyouteki,żywieniowy,,DICTIONARY2_SOURCE,,GroupId: 2862690
+305139,WORD_VERB_U,,HIRAGANA,,,のり出す,のりだす,,nori dasu,"wyruszać w podróż
+rozpoczynać podróż
+wypływać
+rozpocząć (nowe przedsięwzięcie)
+wyruszać (aby coś osiągnąć)
+rozpocząć jazdę
+pochylać się ku przodowi
+pochylić się do przodu",,DICTIONARY2_SOURCE,,GroupId: 1354940
+305140,WORD_NOUN,,KATAKANA,,,香港シャツ,ホンコンシャツ,,honkon shatsu,koszula z krótkimi rękawami,pisanie zwykle z użyciem kana; ang: Hong Kong shirt,DICTIONARY2_SOURCE,,GroupId: 1927500
+305141,WORD_NOUN,,HIRAGANA,,,足長小父さん,あしながおじさん,,ashinaga ojisan,"anonimowy system stypendialny dla sierot, których rodzice zginęli w wypadkach drogowych",pisanie zwykle z użyciem kana; słowo pochodzi z powieści Tajemniczy opiekun autorstwa amerykańskiej pisarki Jean Webster,DICTIONARY2_SOURCE,,GroupId: 2164160
+305142,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,好こ,すこ,,suko,"lubić
+lubienie
+preferowany
+ulubiony",slang internetowy; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2861850
+305143,WORD_ADJECTIVE_NO,,HIRAGANA,,,初中級,しょちゅうきゅう,,shochuukyuu,początkujący i średniozaawansowani,,DICTIONARY2_SOURCE,,GroupId: 2862554
+305144,WORD_NOUN,,KATAKANA_HIRAGANA,,,スキタイ人,スキタイじん,,sukitai jin,Scytowie,"koczownicze ludy irańskie wywodzące się z obszarów pomiędzy Ałtajem a dolną Wołgą, tj. z obszaru kultury andronowskiej, zamieszkujące od schyłku VIII lub od VII wieku p.n.e. północne okolice Morza Czarnego",DICTIONARY2_SOURCE,,GroupId: 2862562
+305145,WORD_NOUN,,HIRAGANA,,,キツネ目,きつねめ,,kitsune me,"wąskie, skośne oczy",,DICTIONARY2_SOURCE,,GroupId: 2862685
+305146,WORD_NOUN,,HIRAGANA,,,狐目,きつねめ,,kitsune me,"wąskie, skośne oczy",,DICTIONARY2_SOURCE,,GroupId: 2862685
+305147,WORD_NOUN,,HIRAGANA,,,きつね目,きつねめ,,kitsune me,"wąskie, skośne oczy",,DICTIONARY2_SOURCE,,GroupId: 2862685
+305148,WORD_NOUN,,HIRAGANA,,,木菟鳥,つくとり,,tsukutori,puchacz,rzadko używane określenie; sowa,DICTIONARY2_SOURCE,,GroupId: 2862687
+305149,WORD_NOUN,,HIRAGANA,,,木兎鳥,つくとり,,tsukutori,puchacz,rzadko używane określenie; sowa,DICTIONARY2_SOURCE,,GroupId: 2862687
+305150,WORD_NOUN,,KATAKANA,,,-,セクース,,sekuusu,"sex
+seks",slang internetowy,DICTIONARY2_SOURCE,,GroupId: 2862688
+305151,WORD_NOUN,,HIRAGANA_KATAKANA,,,ヒト免疫グロブリン,ひとめんえきグロブリン,,hito men'eki guroburin,ludzka immunoglobulina,medycyna,DICTIONARY2_SOURCE,,GroupId: 2862691
+305152,WORD_NOUN,,HIRAGANA_KATAKANA,,,人免疫グロブリン,ひとめんえきグロブリン,,hito men'eki guroburin,ludzka immunoglobulina,medycyna,DICTIONARY2_SOURCE,,GroupId: 2862691
+305153,WORD_INTERJECTION,,HIRAGANA,,,この尼,このあま,,kono ama,"ty suko!
+ty dziwko!",poniżająco; przestarzałe słowo; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2862693
+305154,WORD_INTERJECTION,,HIRAGANA,,,この阿魔,このあま,,kono ama,"ty suko!
+ty dziwko!",poniżająco; przestarzałe słowo; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2862693
+305155,WORD_INTERJECTION,,HIRAGANA_KATAKANA,,,-,このアマ,,kono ama,"ty suko!
+ty dziwko!",poniżająco; przestarzałe słowo; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2862693
+305156,WORD_NOUN,,KATAKANA,,,-,チャイニーズニューイヤー,,chainiizu nyuu iyaa,chiński nowy rok,ang: Chinese new year,DICTIONARY2_SOURCE,,GroupId: 2862694
+305157,WORD_NOUN,,KATAKANA,,,-,チャイニーズ・ニュー・イヤー,,chainiizu nyuu iyaa,chiński nowy rok,ang: Chinese new year,DICTIONARY2_SOURCE,,GroupId: 2862694
+305158,WORD_NOUN,,HIRAGANA,,,樹木学,じゅもくがく,,jumokugaku,"dendrologia
+drzewoznawstwo","dział botaniki zajmujący się drzewami i krzewami, w tym m.in. ich morfologią, anatomią, geografią, genetyką",DICTIONARY2_SOURCE,,GroupId: 2862695
+305159,WORD_ADJECTIVE_F,,KATAKANA,,,-,コアキシャル,,koakisharu,współosiowy,ang: coaxial,DICTIONARY2_SOURCE,,GroupId: 2862696
+305160,WORD_ADJECTIVE_NA,,KATAKANA,,,-,クリッカブル,,kurikkaburu,klikalny,informatyka; ang: clickable,DICTIONARY2_SOURCE,,GroupId: 2862697
+305161,WORD_NOUN,,HIRAGANA,,,軒明かり,のきあかり,,noki akari,latarnia okapowa,przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2862699
+305162,WORD_NOUN,,HIRAGANA,,,軒灯り,のきあかり,,noki akari,latarnia okapowa,przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2862699
+305163,WORD_NOUN,,HIRAGANA,,,軒燈り,のきあかり,,noki akari,latarnia okapowa,przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2862699
+305164,WORD_NOUN,,HIRAGANA,,,軒明,のきあかり,,noki akari,latarnia okapowa,przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2862699
+305165,WORD_NOUN,,KATAKANA,,,-,テックボール,,tekkubooru,teqball,"dyscyplina sportu, polegająca na odbijaniu piłki (nogami, ciałem lub głową – podobnie jak w piłce nożnej) tak, by trafiła ona w specjalnie zaprojektowany dla tego sportu stół, po stronie przeciwnika (lub zespołu przeciwników)",DICTIONARY2_SOURCE,,GroupId: 2862700
+305166,WORD_NOUN,,KATAKANA,,,-,ゲームエミュレータ,,geemu emyureeta,emulator konsoli do gier,ang: game emulator,DICTIONARY2_SOURCE,,GroupId: 2862701
+305167,WORD_NOUN,,KATAKANA,,,-,ゲームエミュレーター,,geemu emyureetaa,emulator konsoli do gier,ang: game emulator,DICTIONARY2_SOURCE,,GroupId: 2862701
+305168,WORD_NOUN,,KATAKANA,,,-,ゲーム・エミュレータ,,geemu emyureeta,emulator konsoli do gier,ang: game emulator,DICTIONARY2_SOURCE,,GroupId: 2862701
+305169,WORD_NOUN,,KATAKANA,,,-,ゲーム・エミュレーター,,geemu emyureetaa,emulator konsoli do gier,ang: game emulator,DICTIONARY2_SOURCE,,GroupId: 2862701
+305170,WORD_NOUN,,HIRAGANA,,,嵯峨野線,さがのせん,,sagano sen,linia Sagano (Kioto),usługa,DICTIONARY2_SOURCE,,GroupId: 5302733
