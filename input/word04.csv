@@ -1222,8 +1222,8 @@ WORD_SUFFIX",,HIRAGANA,,,-,ない,,nai,przyrostek emfatyczny,po temacie przymiot
 DUPLICATE 6049
 DUPLICATE 11469
 DUPLICATE 25047
-DUPLICATE 26812
-DUPLICATE 133087",GroupId: 2861097
+DUPLICATE 133087
+DUPLICATE 272884",GroupId: 2861097
 300745,WORD_NOUN,,KATAKANA,,,-,レポルタージュ,,reporutaaju,"reportaż (słowo pochodzenia francuskiego)
 raport (słowo pochodzenia francuskiego)
 raportowanie (słowo pochodzenia francuskiego)
@@ -9628,8 +9628,8 @@ odciąć",,DICTIONARY2_SOURCE,,GroupId: 2862605
 odciąć",,DICTIONARY2_SOURCE,,GroupId: 2862605
 305219,WORD_VERB_U,,HIRAGANA,,,削ぎとる,そぎとる,,sogi toru,"odłupać
 odciąć",,DICTIONARY2_SOURCE,,GroupId: 2862605
-305220,WORD_PREFIX,,HIRAGANA_EXCEPTION,,,吹っ,ふっ,,fu,"wskazuje, że akcja jest wykonywana siłą",pisanie zwykle z użyciem kana; przed czasownikiem,DICTIONARY2_SOURCE,,GroupId: 2862669
-305221,WORD_PREFIX,,HIRAGANA_EXCEPTION,,,吹,ふっ,,fu,"wskazuje, że akcja jest wykonywana siłą",pisanie zwykle z użyciem kana; przed czasownikiem,DICTIONARY2_SOURCE,,GroupId: 2862669
+305220,WORD_PREFIX,,HIRAGANA_EXCEPTION,,,吹っ,ふっ,,fu,"wskazuje, że akcja jest wykonywana siłą",przed czasownikiem,DICTIONARY2_SOURCE,,GroupId: 2862669
+305221,WORD_PREFIX,,HIRAGANA_EXCEPTION,,,吹,ふっ,,fu,"wskazuje, że akcja jest wykonywana siłą",przed czasownikiem,DICTIONARY2_SOURCE,,GroupId: 2862669
 305222,"WORD_ADVERB
 WORD_ADVERB_TO",,KATAKANA,,,-,ガクビク,,gakubiku,drganie,onomatopeiczne lub mimetyczne słowo; slang; od ガクガク + ビクビク,DICTIONARY2_SOURCE,,GroupId: 2862679
 305223,"WORD_ADVERB
@@ -9651,7 +9651,9 @@ robić kwaśną minę",,DICTIONARY2_SOURCE,,GroupId: 2862738
 ton wynikowy",fizyka; muzyka,DICTIONARY2_SOURCE,,GroupId: 2862743
 305232,WORD_NOUN,,HIRAGANA,,,加音,かおん,,kaon,suma tonów,fizyka; muzyka,DICTIONARY2_SOURCE,,GroupId: 2862744
 305233,WORD_NOUN,,HIRAGANA,,,盟神探湯,めいしんたんとう,,meishin tantou,"próba gorącej wody
-włożenie ręki osoby do wrzącej wody w celu ustalenia jej winy lub niewinności (z przekonaniem, że niewinny nie zostanie poparzony)",termin historyczny; słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 2862745
+włożenie ręki osoby do wrzącej wody w celu ustalenia jej winy lub niewinności (z przekonaniem, że niewinny nie zostanie poparzony)",termin historyczny; słowo składające się z czterech znaków,DICTIONARY2_SOURCE,"DUPLICATE 305288
+DUPLICATE 305289
+DUPLICATE 305290",GroupId: 2862745
 305234,WORD_NOUN,,HIRAGANA,,,文鎮化,ぶんちんか,,bunchinka,zbrickować,"informatyka; potocznie; spowodować, że urządzenie nie będzie działać, np. smartphone",DICTIONARY2_SOURCE,,GroupId: 2862747
 305235,WORD_NOUN,,HIRAGANA,,,群狼,ぐんろう,,gunrou,wataha wilków,,DICTIONARY2_SOURCE,,GroupId: 2862749
 305236,WORD_NOUN,,KATAKANA,,,-,ファイバーガラス,,faibaa garasu,włókno szklane,"ang: fiberglass, fibreglass",DICTIONARY2_SOURCE,,GroupId: 2862689
@@ -9699,3 +9701,145 @@ negacjonizm historyczny",,DICTIONARY2_SOURCE,,GroupId: 2862755
 305256,WORD_NOUN,,HIRAGANA,,,対地接近警報装置,たいちせっきんけいほうそうち,,taichi sekkin keihou souchi,"ground proximity warning system
 GPWS",lotnictwo; system ostrzegający pilotów o odległości ich samolotu w stosunku do powierzchni ziemi,DICTIONARY2_SOURCE,,GroupId: 2862767
 305257,WORD_NOUN,,HIRAGANA,,,対気速度,たいきそくど,,taiki sokudo,prędkość w powietrzu,lotnictwo,DICTIONARY2_SOURCE,,GroupId: 2862769
+305258,WORD_VERB_U,,HIRAGANA,,,見入る,みいる,,miiru,"urzec
+urzekać
+opanować
+opętać
+zawładnąć
+fascynować
+oczarować
+zauroczyć",zwykle w bierniku,DICTIONARY2_SOURCE,DUPLICATE 22246,GroupId: 1846980
+305259,WORD_ADJECTIVE_F,,KATAKANA,,,-,プレキャスト,,purekyasuto,prefabrykowany,ang: precast,DICTIONARY2_SOURCE,,GroupId: 2862783
+305260,WORD_NOUN,,KATAKANA,,,-,プリメインアンプ,,purimein' anpu,wzmacniacz zintegrowany,ang: pre-main amp,DICTIONARY2_SOURCE,,GroupId: 2862784
+305261,WORD_NOUN,,KATAKANA,,,-,プリメイン・アンプ,,purimein' anpu,wzmacniacz zintegrowany,ang: pre-main amp,DICTIONARY2_SOURCE,,GroupId: 2862784
+305262,WORD_NOUN,,KATAKANA,,,-,スクリプティング,,sukuriputingu,skryptowanie,informatyka; ang: scripting,DICTIONARY2_SOURCE,,GroupId: 2862785
+305263,WORD_NOUN,,KATAKANA,,,-,リモートメンテナンス,,rimooto mentenansu,"zdalne utrzymanie
+zdalna obsługa",informatyka; ang: remote maintenance,DICTIONARY2_SOURCE,,GroupId: 2337610
+305264,WORD_NOUN,,KATAKANA,,,-,リモート・メンテナンス,,rimooto mentenansu,"zdalne utrzymanie
+zdalna obsługa",informatyka; ang: remote maintenance,DICTIONARY2_SOURCE,,GroupId: 2337610
+305265,WORD_NOUN,,KATAKANA,,,Ｇ５,ジーファイブ,,jiifaibu,"G5
+Konferencja Ministrów G5",,DICTIONARY2_SOURCE,,GroupId: 1064060
+305266,WORD_NOUN,,KATAKANA,,,ＭＵＤ,エム・ユー・ディー,,emuyuudii,"MUD
+multi-user dungeon","gry wideo; akronim oznaczający komputerowe gry fabularne, które są rozgrywane przez Internet przy użyciu interfejsu tekstowego",DICTIONARY2_SOURCE,DUPLICATE 305267,GroupId: 2287240
+305267,WORD_NOUN,,KATAKANA,,,ＭＵＤ,エムユーディー,,emuyuudii,"MUD
+multi-user dungeon","gry wideo; akronim oznaczający komputerowe gry fabularne, które są rozgrywane przez Internet przy użyciu interfejsu tekstowego",DICTIONARY2_SOURCE,DUPLICATE 305266,GroupId: 2287240
+305268,WORD_NOUN,,KATAKANA,,,Ｇマーク,ジーマーク,,jii maaku,"znak G
+znak dobrego projektu",,DICTIONARY2_SOURCE,,GroupId: 1064080
+305269,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,出来合,できあい,,dekiai,"gotowy do użytku
+konkubina",,DICTIONARY2_SOURCE,,GroupId: 1340550
+305270,WORD_VERB_RU,,HIRAGANA,,,振上げる,ふりあげる,,furi ageru,"podnieść
+zamachnąć się","np. miecz, pięść itp.",DICTIONARY2_SOURCE,,GroupId: 1851690
+305271,WORD_VERB_RU,,HIRAGANA,,,ふり上げる,ふりあげる,,furi ageru,"podnieść
+zamachnąć się","np. miecz, pięść itp.",DICTIONARY2_SOURCE,,GroupId: 1851690
+305272,WORD_VERB_U,,HIRAGANA,,,ふっ飛ぶ,ふっとぶ,,futtobu,"zdmuchnąć
+zrywać
+być zdmuchnięty
+być zerwany
+zniknąć
+spieszyć się",,DICTIONARY2_SOURCE,,GroupId: 1370770
+305273,WORD_VERB_U,,HIRAGANA,,,吹っとぶ,ふっとぶ,,futtobu,"zdmuchnąć
+zrywać
+być zdmuchnięty
+być zerwany
+zniknąć
+spieszyć się",,DICTIONARY2_SOURCE,,GroupId: 1370770
+305274,WORD_NOUN,,HIRAGANA,,,食事どき,しょくじどき,,shokuji doki,pora posiłku,,DICTIONARY2_SOURCE,,GroupId: 1883180
+305275,WORD_VERB_U,,HIRAGANA,,,売りはらう,うりはらう,,uriharau,"wyprzedać
+sprzedać całkowicie",,DICTIONARY2_SOURCE,,GroupId: 1473920
+305276,WORD_NOUN,,HIRAGANA,,,魔女がり,まじょがり,,majo gari,polowanie na czarownice,,DICTIONARY2_SOURCE,,GroupId: 1671740
+305277,WORD_VERB_U,,HIRAGANA,,,羞恥む,はにかむ,,hanikamu,"być nieśmiały
+być wstydliwy
+wyglądać na nieśmiałego",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1010190
+305278,WORD_VERB_U,,HIRAGANA,,,羞む,はにかむ,,hanikamu,"być nieśmiały
+być wstydliwy
+wyglądać na nieśmiałego",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1010190
+305279,WORD_VERB_RU,,HIRAGANA,,,突きたてる,つきたてる,,tsuki tateru,"wbić w
+pchnąć (nożem)
+dźgnąć (kogoś)
+sadzić (np. w ziemię, śnieg i etc)
+wbijać pionowo",,DICTIONARY2_SOURCE,,GroupId: 1456880
+305280,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,なさけは人のためならず,なさけはひとのためならず,,nasake wa hito no tamenarazu,"dobro, które czynisz innym, jest dobrem, które czynisz samemu sobie
+ci, którzy są życzliwi, przynoszą korzyści samym sobie
+współczucie nie jest dla dobra innych ludzi (dosłownie)
+nie możesz uratować innych (przed nimi samymi) (niepoprawne użycie)",przysłowie,DICTIONARY2_SOURCE,,GroupId: 2211780
+305281,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,なさけは人の為ならず,なさけはひとのためならず,,nasake wa hito no tamenarazu,"dobro, które czynisz innym, jest dobrem, które czynisz samemu sobie
+ci, którzy są życzliwi, przynoszą korzyści samym sobie
+współczucie nie jest dla dobra innych ludzi (dosłownie)
+nie możesz uratować innych (przed nimi samymi) (niepoprawne użycie)",przysłowie,DICTIONARY2_SOURCE,,GroupId: 2211780
+305282,WORD_VERB_U,,HIRAGANA,,,向きなおる,むきなおる,,muki naoru,"obrócić się
+odwrócić się
+odwracać się",,DICTIONARY2_SOURCE,,GroupId: 2010910
+305283,WORD_VERB_U,,HIRAGANA,,,むき直る,むきなおる,,muki naoru,"obrócić się
+odwrócić się
+odwracać się",,DICTIONARY2_SOURCE,,GroupId: 2010910
+305284,WORD_VERB_U,,HIRAGANA,,,向直る,むきなおる,,muki naoru,"obrócić się
+odwrócić się
+odwracać się",,DICTIONARY2_SOURCE,,GroupId: 2010910
+305285,WORD_NOUN,,HIRAGANA,,,誓湯,くかたち,,kukatachi,"próba gorącej wody
+włożenie ręki osoby do wrzącej wody w celu ustalenia jej winy lub niewinności (z przekonaniem, że niewinny nie zostanie poparzony)",termin historyczny,DICTIONARY2_SOURCE,"DUPLICATE 305286
+DUPLICATE 305287",GroupId: 2221930
+305286,WORD_NOUN,,HIRAGANA,,,誓湯,くがたち,,kugatachi,"próba gorącej wody
+włożenie ręki osoby do wrzącej wody w celu ustalenia jej winy lub niewinności (z przekonaniem, że niewinny nie zostanie poparzony)",termin historyczny,DICTIONARY2_SOURCE,"DUPLICATE 305285
+DUPLICATE 305287",GroupId: 2221930
+305287,WORD_NOUN,,HIRAGANA,,,誓湯,くかだち,,kukadachi,"próba gorącej wody
+włożenie ręki osoby do wrzącej wody w celu ustalenia jej winy lub niewinności (z przekonaniem, że niewinny nie zostanie poparzony)",termin historyczny,DICTIONARY2_SOURCE,"DUPLICATE 305285
+DUPLICATE 305286",GroupId: 2221930
+305288,WORD_NOUN,,HIRAGANA,,,盟神探湯,くかたち,,kukatachi,"próba gorącej wody
+włożenie ręki osoby do wrzącej wody w celu ustalenia jej winy lub niewinności (z przekonaniem, że niewinny nie zostanie poparzony)",termin historyczny,DICTIONARY2_SOURCE,"DUPLICATE 305233
+DUPLICATE 305289
+DUPLICATE 305290",GroupId: 2221930
+305289,WORD_NOUN,,HIRAGANA,,,盟神探湯,くがたち,,kugatachi,"próba gorącej wody
+włożenie ręki osoby do wrzącej wody w celu ustalenia jej winy lub niewinności (z przekonaniem, że niewinny nie zostanie poparzony)",termin historyczny,DICTIONARY2_SOURCE,"DUPLICATE 305233
+DUPLICATE 305288
+DUPLICATE 305290",GroupId: 2221930
+305290,WORD_NOUN,,HIRAGANA,,,盟神探湯,くかだち,,kukadachi,"próba gorącej wody
+włożenie ręki osoby do wrzącej wody w celu ustalenia jej winy lub niewinności (z przekonaniem, że niewinny nie zostanie poparzony)",termin historyczny,DICTIONARY2_SOURCE,"DUPLICATE 305233
+DUPLICATE 305288
+DUPLICATE 305289",GroupId: 2221930
+305291,WORD_NOUN,,HIRAGANA,,,ひと組,いちくみ,,ichi kumi,"jedna klasa (uczniów)
+jedna grupa (ludzi)
+jeden zbiór (rzeczy)
+jedna para",,DICTIONARY2_SOURCE,DUPLICATE 149454,GroupId: 1576230
+305292,WORD_VERB_U,,HIRAGANA,,,かつぎ込む,かつぎこむ,,katsugi komu,"przewieźć (np. ranną osobę do szpitala)
+zabrać do
+wprowadzić do",,DICTIONARY2_SOURCE,,GroupId: 1850560
+305293,WORD_VERB_U,,HIRAGANA,,,担ぎこむ,かつぎこむ,,katsugi komu,"przewieźć (np. ranną osobę do szpitala)
+zabrać do
+wprowadzić do",,DICTIONARY2_SOURCE,,GroupId: 1850560
+305294,WORD_VERB_U,,HIRAGANA,,,殺ぎ落とす,そぎおとす,,sogi otosu,"zeskrobywać
+odłupywać
+zdrapywać
+przycinać
+przystrzygać",,DICTIONARY2_SOURCE,,GroupId: 2534000
+305295,WORD_VERB_U,,HIRAGANA,,,削ぎ落す,そぎおとす,,sogi otosu,"zeskrobywać
+odłupywać
+zdrapywać
+przycinać
+przystrzygać",,DICTIONARY2_SOURCE,,GroupId: 2534000
+305296,WORD_VERB_U,,HIRAGANA,,,そぎ落す,そぎおとす,,sogi otosu,"zeskrobywać
+odłupywać
+zdrapywać
+przycinać
+przystrzygać",,DICTIONARY2_SOURCE,,GroupId: 2534000
+305297,WORD_VERB_U,,HIRAGANA,,,削ぎおとす,そぎおとす,,sogi otosu,"zeskrobywać
+odłupywać
+zdrapywać
+przycinać
+przystrzygać",,DICTIONARY2_SOURCE,,GroupId: 2534000
+305298,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,昼どき,ひるどき,,hirudoki,"południe (moment dnia)
+pora lunchu",,DICTIONARY2_SOURCE,,GroupId: 1426350
+305299,WORD_NOUN,,HIRAGANA,,,髪留,かみどめ,,kami dome,"klamerka do włosów
+spinka do włosów
+opaska do włosów",,DICTIONARY2_SOURCE,,GroupId: 2645580
+305300,WORD_VERB_RU,,HIRAGANA,,,かぎ分ける,かぎわける,,kagi wakeru,"zwęszyć
+wywęszyć
+wyniuchać
+dostrzegać
+spostrzegać",,DICTIONARY2_SOURCE,,GroupId: 1565470
+305301,WORD_VERB_RU,,HIRAGANA,,,嗅ぎわける,かぎわける,,kagi wakeru,"zwęszyć
+wywęszyć
+wyniuchać
+dostrzegać
+spostrzegać",,DICTIONARY2_SOURCE,,GroupId: 1565470
