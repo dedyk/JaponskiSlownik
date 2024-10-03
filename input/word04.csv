@@ -10013,8 +10013,10 @@ wypędzenie (np. określonej grupy etnicznej)",,DICTIONARY2_SOURCE,,GroupId: 286
 305354,WORD_VERB_U,,HIRAGANA,,,居すくまる,いずくまる,,izukumaru,nie móc ruszyć się w pozycji siedzącej,"rzadko używane określenie; z powodu strachu, zaskoczenia itp.",DICTIONARY2_SOURCE,DUPLICATE 305353,GroupId: 2862770
 305355,WORD_VERB_U,,HIRAGANA,,,居竦る,いすくまる,,isukumaru,nie móc ruszyć się w pozycji siedzącej,"rzadko używane określenie; z powodu strachu, zaskoczenia itp.",DICTIONARY2_SOURCE,DUPLICATE 305356,GroupId: 2862770
 305356,WORD_VERB_U,,HIRAGANA,,,居竦る,いずくまる,,izukumaru,nie móc ruszyć się w pozycji siedzącej,"rzadko używane określenie; z powodu strachu, zaskoczenia itp.",DICTIONARY2_SOURCE,DUPLICATE 305355,GroupId: 2862770
-305357,WORD_VERB_U,,HIRAGANA,,,居すくむ,いすくむ,,isukumu,nie móc ruszyć się w pozycji siedzącej,"rzadko używane określenie; z powodu strachu, zaskoczenia itp.",DICTIONARY2_SOURCE,,GroupId: 2862772
-305358,WORD_VERB_U,,HIRAGANA,,,居竦む,いすくむ,,isukumu,nie móc ruszyć się w pozycji siedzącej,"rzadko używane określenie; z powodu strachu, zaskoczenia itp.",DICTIONARY2_SOURCE,,GroupId: 2862772
+305357,WORD_VERB_U,,HIRAGANA,,,居すくむ,いすくむ,,isukumu,"nie móc ruszyć się w pozycji siedzącej
+zastygnąć w bezruchu","rzadko używane określenie; z powodu strachu, zaskoczenia itp.",DICTIONARY2_SOURCE,,GroupId: 2862772
+305358,WORD_VERB_U,,HIRAGANA,,,居竦む,いすくむ,,isukumu,"nie móc ruszyć się w pozycji siedzącej
+zastygnąć w bezruchu","rzadko używane określenie; z powodu strachu, zaskoczenia itp.",DICTIONARY2_SOURCE,,GroupId: 2862772
 305359,WORD_ADJECTIVE_NA,,HIRAGANA,,,恐ろしげ,おそろしげ,,osoroshige,"przerażający
 naprawdę przerażający
 straszny",,DICTIONARY2_SOURCE,,GroupId: 2862779
@@ -10663,11 +10665,9 @@ zrzędliwie",,DICTIONARY2_SOURCE,,GroupId: 2862817
 WORD_ADVERB",,HIRAGANA,,,-,むすっと,,musutto,"cicho (w złym nastroju)
 ponuro
 zrzędliwie",,DICTIONARY2_SOURCE,,GroupId: 2862817
-305540,"WORD_INTERJECTION
-WORD_NOUN",,HIRAGANA,,,-,おけまる,,okemaru,"ok
+305540,WORD_INTERJECTION,,HIRAGANA,,,-,おけまる,,okemaru,"ok
 okay
-w porządku
-niepotrzebny",slang,DICTIONARY2_SOURCE,,GroupId: 2862818
+w porządku",slang,DICTIONARY2_SOURCE,,GroupId: 2862818
 305541,WORD_NOUN,,HIRAGANA,,,在伯,ざいはく,,zaihaku,"pobyt w Brazylii
 mieszkanie w Brazylii",,DICTIONARY2_SOURCE,,GroupId: 2862819
 305542,WORD_NOUN,,HIRAGANA,,,在台,ざいたい,,zaitai,"pobyt na Tajwanie
@@ -10676,7 +10676,8 @@ mieszkanie na Tajwanie",,DICTIONARY2_SOURCE,,GroupId: 2862820
 WORD_ADJECTIVE_NO",,HIRAGANA,,,湾生,わんせい,,wansei,"Japończycy urodzeni na Tajwanie podczas japońskich rządów (termin historyczny)
 kampylotropowy (botanika)
 sinusoidalny (botanika)",,DICTIONARY2_SOURCE,,GroupId: 2862821
-305544,WORD_NOUN,,KATAKANA_HIRAGANA,,,バリウム検査,バリウムけんさ,,bariumu kensa,połknięcie siarczku baru celem wytworzenia kontrastu,medycyna,DICTIONARY2_SOURCE,,GroupId: 2862822
+305544,WORD_NOUN,,KATAKANA_HIRAGANA,,,バリウム検査,バリウムけんさ,,bariumu kensa,"test barowy
+rentgen barowy",medycyna; połknięcie siarczku baru celem wytworzenia kontrastu,DICTIONARY2_SOURCE,,GroupId: 2862822
 305545,WORD_NOUN,,HIRAGANA,,,在支,ざいし,,zaishi,"pobyt w Chinach
 mieszkanie w Chinach
 stacjonowanie w Chinach",przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2862823
@@ -10685,7 +10686,7 @@ stacjonowanie w Chinach",przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 28628
 305548,WORD_NOUN,,HIRAGANA,,,県北,けんぽく,,kenpoku,północna część prefektury,,DICTIONARY2_SOURCE,DUPLICATE 305547,GroupId: 2862825
 305549,WORD_NOUN,,HIRAGANA,,,府政,ふせい,,fusei,rząd prefektury (Osaki lub Kioto),,DICTIONARY2_SOURCE,,GroupId: 2862826
 305550,WORD_NOUN,,HIRAGANA,,,伊人,いじん,,ijin,"Włoch
-Włoszka",formalny lub literacki termin,DICTIONARY2_SOURCE,,GroupId: 2862827
+Włoszka",,DICTIONARY2_SOURCE,,GroupId: 2862827
 305551,WORD_NOUN,,HIRAGANA,,,遺言,いごん,,igon,"ostatnia wola
 testament",prawo,DICTIONARY2_SOURCE,"DUPLICATE 35262
 DUPLICATE 305552",GroupId: 2862829
@@ -10927,7 +10928,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,痩ぎす,やせぎす,,yasegisu,"chudy
 wychudzony",,DICTIONARY2_SOURCE,,GroupId: 2538000
 305619,WORD_NOUN,,HIRAGANA,,,辨事,べんじ,,benji,praca biurowa,,DICTIONARY2_SOURCE,,GroupId: 2516670
 305620,"WORD_EXPRESSION
-WORD_NOUN",,HIRAGANA,,,遊ぶ金ほしさ,あそぶかねほしさ,,asobu kanehoshisa,pragnienie pieniędzy dla własnej przyjemności,"jako domniemany motyw kradzieży, oszustwa itp.",DICTIONARY2_SOURCE,,GroupId: 2842420
+WORD_NOUN",,HIRAGANA,,,遊ぶ金ほしさ,あそぶかねほしさ,,asobu kanehoshisa,pragnienie pieniędzy dla własnej przyjemności,"ako motyw kradzieży, oszustwa itp.",DICTIONARY2_SOURCE,,GroupId: 2842420
 305621,WORD_NOUN,,KATAKANA,,,-,チョコレート・グラミー,,chokoreeto guramii,"gurami czekoladowy
 czekoladowiec malajski","słodkowodna ryba z rodziny guramiowatych, Sphaerichthys osphromenoides, ang: chocolate gourami",DICTIONARY2_SOURCE,,GroupId: 2774480
 305622,WORD_NOUN,,HIRAGANA,,,ざれ事,ざれごと,,zare goto,wyrocznia z mocą manifestowania rezultatów swoich słów,,DICTIONARY2_SOURCE,"DUPLICATE 305427
@@ -10935,3 +10936,98 @@ DUPLICATE 305429",GroupId: 1594030
 305623,WORD_ADJECTIVE_I,,KATAKANA_HIRAGANA,,,-,バッチい,,bacchii,"brudny
 nieczysty",język dzieci,"DICTIONARY2_SOURCE
 EDICT_TRANSLATE_INFO_GROUP_DIFF",,GroupId: 2069120
+305624,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,お腹空く,おなかすく,,onaka suku,"być głodnym
+mieć pusty żołądek
+zgłodnieć
+stać się głodnym",,DICTIONARY2_SOURCE,DUPLICATE 256862,GroupId: 2021520
+305625,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,おなかが空く,おなかすく,,onaka suku,"być głodnym
+mieć pusty żołądek
+zgłodnieć
+stać się głodnym",,DICTIONARY2_SOURCE,DUPLICATE 101727,GroupId: 2021520
+305626,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,おなか空く,おなかがすく,,onaka ga suku,"być głodnym
+mieć pusty żołądek
+zgłodnieć
+stać się głodnym",,DICTIONARY2_SOURCE,DUPLICATE 305627,GroupId: 2021520
+305627,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,おなか空く,おなかすく,,onaka suku,"być głodnym
+mieć pusty żołądek
+zgłodnieć
+stać się głodnym",,DICTIONARY2_SOURCE,DUPLICATE 305626,GroupId: 2021520
+305628,WORD_NOUN,,HIRAGANA,,,ノド飴,のどあめ,,nodo ame,"pastylka na ból gardła
+krople na kaszel",,DICTIONARY2_SOURCE,,GroupId: 2109220
+305629,WORD_NOUN,,HIRAGANA,,,広告ビラ,こうこくびら,,koukoku bira,"ulotka
+ulotka reklamowa
+plakat reklamowy",,DICTIONARY2_SOURCE,,GroupId: 2590060
+305630,WORD_NOUN,,HIRAGANA,,,さびしん坊,さびしんぼう,,sabishinbou,"osoba, która łatwo czuje się samotna
+osoba, która łatwo ulega samotności
+osoba, która nie lubi być sama
+osoba, która pragnie towarzystwa",,DICTIONARY2_SOURCE,,GroupId: 2168850
+305631,WORD_NOUN,,HIRAGANA,,,両はし,りょうたん,,ryoutan,"oba końce
+oba zakończenia
+na obu brzegach
+dwulicowość",,DICTIONARY2_SOURCE,"DUPLICATE 305632
+DUPLICATE 305633",GroupId: 1585170
+305632,WORD_NOUN,,HIRAGANA,,,両はし,りょうはし,,ryouhashi,"oba końce
+oba zakończenia
+na obu brzegach",,DICTIONARY2_SOURCE,"DUPLICATE 305631
+DUPLICATE 305633",GroupId: 1585170
+305633,WORD_NOUN,,HIRAGANA,,,両はし,りょうはじ,,ryouhaji,"oba końce
+oba zakończenia
+na obu brzegach",,DICTIONARY2_SOURCE,"DUPLICATE 305631
+DUPLICATE 305632",GroupId: 1585170
+305634,WORD_NOUN,,HIRAGANA,,,八十禍津日神,やそまがつひのかみ,,yaso magatsuhi no kami,"bóg zła
+bóg, który powoduje wiele katastrof",japońska mitologia,DICTIONARY2_SOURCE,,GroupId: 2862590
+305635,WORD_NOUN,,HIRAGANA,,,禍津日,まがつひ,,magatsuhi,"bóg, który powoduje nieszczęścia (japońska mitologia)
+źli bogowie (np. którzy powodują grzechy)",skrót,DICTIONARY2_SOURCE,,GroupId: 2862591
+305636,WORD_NOUN,,HIRAGANA_KATAKANA,,,人権キャラ,じんけんキャラ,,jinken kyara,konieczna postać,gry wideo; slang,DICTIONARY2_SOURCE,,GroupId: 2862634
+305637,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,夫婦は合わせ鏡,ふうふはあわせかがみ,,fuufu wa awase kagami,małżonkowie są swoimi lustrzanymi odbiciami,przysłowie,DICTIONARY2_SOURCE,,GroupId: 2862670
+305638,WORD_NOUN,,HIRAGANA,,,死界,しかい,,shikai,"podziemia
+świat po śmierci
+martwy punkt
+miejsce nie znajdujące się w polu widzenia
+martwa przestrzeń",,DICTIONARY2_SOURCE,,GroupId: 2862711
+305639,WORD_NOUN,,HIRAGANA,,,舞衣,まいぎぬ,,maiginu,"ubrania noszone w tradycyjnym tańcu japońskim (rzadko używane określenie)
+kostium noszony przez boginie i smocze dziewczęta (teatr no)",,DICTIONARY2_SOURCE,"DUPLICATE 305640
+DUPLICATE 305641
+DUPLICATE 305642",GroupId: 2862786
+305640,WORD_NOUN,,HIRAGANA,,,舞衣,まいぎ,,maigi,"ubrania noszone w tradycyjnym tańcu japońskim (rzadko używane określenie)
+kostium noszony przez boginie i smocze dziewczęta (teatr no)",,DICTIONARY2_SOURCE,"DUPLICATE 305639
+DUPLICATE 305641
+DUPLICATE 305642",GroupId: 2862786
+305641,WORD_NOUN,,HIRAGANA,,,舞衣,まいごろも,,maigoromo,"ubrania noszone w tradycyjnym tańcu japońskim (rzadko używane określenie)
+kostium noszony przez boginie i smocze dziewczęta (teatr no)",,DICTIONARY2_SOURCE,"DUPLICATE 305639
+DUPLICATE 305640
+DUPLICATE 305642",GroupId: 2862786
+305642,WORD_NOUN,,HIRAGANA,,,舞衣,まいぎん,,maigin,"ubrania noszone w tradycyjnym tańcu japońskim (rzadko używane określenie)
+kostium noszony przez boginie i smocze dziewczęta (teatr no)",,DICTIONARY2_SOURCE,"DUPLICATE 305639
+DUPLICATE 305640
+DUPLICATE 305641",GroupId: 2862786
+305643,WORD_INTERJECTION,,HIRAGANA,,,-,このやろ,,konoyaro,"ty draniu!
+ty sukinsynu!",poniżająco; potocznie,DICTIONARY2_SOURCE,,GroupId: 2862804
+305644,WORD_VERB_U,,HIRAGANA,,,謡う,うたう,,utau,intonować,tekst w teatrze no,DICTIONARY2_SOURCE,,GroupId: 2862806
+305645,WORD_NOUN,,KATAKANA_HIRAGANA,,,サイバー空間,サイバーくうかん,,saibaa kuukan,cyberprzestrzeń,,DICTIONARY2_SOURCE,,GroupId: 2862832
+305646,WORD_NOUN,,HIRAGANA,,,軍虜,ぐんりょ,,gunryo,jeniec wojenny,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2862833
+305647,WORD_NOUN,,KATAKANA,,,-,エマジェンシー,,emajenshii,"nagły wypadek
+sytuacja awaryjna",ang: emergency,DICTIONARY2_SOURCE,,GroupId: 1029870
+305648,WORD_NOUN,,KATAKANA,,,-,イマージェンシー,,imaajenshii,"nagły wypadek
+sytuacja awaryjna",ang: emergency,DICTIONARY2_SOURCE,,GroupId: 1029870
+305649,WORD_NOUN,,HIRAGANA,,,泡たて器,あわだてき,,awadateki,"ubijaczka do jajek
+trzepaczka do jajek",,DICTIONARY2_SOURCE,DUPLICATE 116643,GroupId: 1747780
+305650,WORD_NOUN,,HIRAGANA,,,泡立器,あわだてき,,awadateki,"ubijaczka do jajek
+trzepaczka do jajek",,DICTIONARY2_SOURCE,,GroupId: 1747780
+305651,WORD_NOUN,,HIRAGANA,,,泡立て機,あわだてき,,awadateki,"ubijaczka do jajek
+trzepaczka do jajek",,DICTIONARY2_SOURCE,,GroupId: 1747780
+305652,WORD_VERB_RU,,KATAKANA_HIRAGANA,,,-,ゴネる,,goneru,"gderać (potocznie)
+narzekać (potocznie)
+robić trudności (potocznie)
+czynić trudności (potocznie)
+umrzeć (przestarzałe słowo)",,DICTIONARY2_SOURCE,,GroupId: 2078970
+305653,WORD_NOUN,,HIRAGANA,,,枉津日神,まがつひのかみ,,magatsuhi no kami,"bóg, który powoduje nieszczęścia (japońska mitologia)
+źli bogowie (np. którzy powodują grzechy)",,DICTIONARY2_SOURCE,DUPLICATE 305654,GroupId: 2268600
+305654,WORD_NOUN,,HIRAGANA,,,枉津日神,まがついのかみ,,magatsui no kami,"bóg, który powoduje nieszczęścia (japońska mitologia)
+źli bogowie (np. którzy powodują grzechy)",,DICTIONARY2_SOURCE,DUPLICATE 305653,GroupId: 2268600
+305655,WORD_NOUN,,HIRAGANA,,,食奉,しょくほう,,shokuhou,"wynagrodzenie (zwykle płacone w naturze)
+pensja",archaizm,DICTIONARY2_SOURCE,,GroupId: 2829346
