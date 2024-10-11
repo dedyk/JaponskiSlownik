@@ -9746,7 +9746,8 @@ spieszyć się",,DICTIONARY2_SOURCE,,GroupId: 1370770
 305274,WORD_NOUN,,HIRAGANA,,,食事どき,しょくじどき,,shokuji doki,pora posiłku,,DICTIONARY2_SOURCE,,GroupId: 1883180
 305275,WORD_VERB_U,,HIRAGANA,,,売りはらう,うりはらう,,uriharau,"wyprzedać
 sprzedać całkowicie",,DICTIONARY2_SOURCE,,GroupId: 1473920
-305276,WORD_NOUN,,HIRAGANA,,,魔女がり,まじょがり,,majo gari,polowanie na czarownice,,DICTIONARY2_SOURCE,,GroupId: 1671740
+305276,WORD_NOUN,,HIRAGANA,,,魔女がり,まじょがり,,majo gari,"polowanie na czarownice (termin historyczny; prześladowanie osób oskarżonych o czary)
+polowanie na czarownice (prześladowanie osób uważanych za zagrożenie dla społeczeństwa)",,DICTIONARY2_SOURCE,,GroupId: 1671740
 305277,WORD_VERB_U,,HIRAGANA,,,羞恥む,はにかむ,,hanikamu,"być nieśmiały
 być wstydliwy
 wyglądać na nieśmiałego",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1010190
@@ -11276,6 +11277,7 @@ pogarszanie jakości",,DICTIONARY2_SOURCE,,GroupId: 1290320
 305774,"WORD_NOUN
 WORD_EXPRESSION",,HIRAGANA,,,売りもの,うりもの,,urimono,"towar do sprzedania
 artykuł do sprzedania
+główna atrakcja
 specjalność
 punkt sprzedaży
 na sprzedaż (na znaku)",,DICTIONARY2_SOURCE,,GroupId: 1473930
@@ -11316,8 +11318,10 @@ czernienie
 305791,WORD_NOUN,,KATAKANA_HIRAGANA,,,ヴィジュアル化,ビジュアルか,,bijuaru ka,wizualizacja,,DICTIONARY2_SOURCE,,GroupId: 2862899
 305792,WORD_NOUN,,HIRAGANA,,,分圧,ぶんあつ,,bun'atsu,"ciśnienie cząstkowe
 ciśnienie parcjalne",fizyka; chemia,DICTIONARY2_SOURCE,,GroupId: 2862901
-305793,WORD_NOUN,,HIRAGANA,,,新着順,しんちゃくじゅん,,shinchakujun,"w kolejności umieszczenia na liście
-kolejność przybycia",,DICTIONARY2_SOURCE,,GroupId: 2862902
+305793,WORD_NOUN,,HIRAGANA,,,新着順,しんちゃくじゅん,,shinchakujun,"kolejność od najnowszych do najstarszych
+(sortowanie według) najnowszych osób przybywających
+nowo dodane
+nowo wymienione",,DICTIONARY2_SOURCE,,GroupId: 2862902
 305794,WORD_NOUN,,HIRAGANA,,,二盗,にとう,,nitou,kradzież drugiej bazy,baseball,DICTIONARY2_SOURCE,,GroupId: 2862904
 305795,WORD_NOUN,,HIRAGANA,,,三盗,さんとう,,santou,kradzież trzeciej bazy,baseball,DICTIONARY2_SOURCE,,GroupId: 2862905
 305796,WORD_NOUN,,HIRAGANA,,,球聖,きゅうせい,,kyuusei,legendarny gracz,w grze w piłkę,DICTIONARY2_SOURCE,,GroupId: 2862906
@@ -11360,10 +11364,20 @@ kura (szczególnie 雌鶏)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DU
 305813,"WORD_NOUN
 WORD_EXPRESSION",,HIRAGANA,,,酢のもの,すのもの,,su no mono,"danie w occie
 danie marynowane","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 1370280
-305814,WORD_NOUN,,HIRAGANA,,,-,うほうほ,,uhouho,"ryk
-ryczenie",onomatopeiczne lub mimetyczne słowo; jak goryl,DICTIONARY2_SOURCE,,GroupId: 2862708
-305815,WORD_NOUN,,KATAKANA,,,-,ウホウホ,,uhouho,"ryk
-ryczenie",onomatopeiczne lub mimetyczne słowo; jak goryl,DICTIONARY2_SOURCE,,GroupId: 2862708
+305814,"WORD_NOUN
+WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,うほうほ,,uhouho,"ryk (goryla)
+ryczenie (goryla)
+w dobrym nastroju
+radośnie
+podekscytowany",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2862708
+305815,"WORD_NOUN
+WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,ウホウホ,,uhouho,"ryk (goryla)
+ryczenie (goryla)
+w dobrym nastroju
+radośnie
+podekscytowany",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2862708
 305816,WORD_NOUN,,HIRAGANA,,,宗教者,しゅうきょうしゃ,,shuukyousha,"przywódca religijny
 postać religijna
 osoba praktykująca religię",,DICTIONARY2_SOURCE,,GroupId: 2862900
@@ -11408,3 +11422,92 @@ w każdych okolicznościach",,DICTIONARY2_SOURCE,,GroupId: 2862928
 bez względu na to, jak źle się dzieje
 cokolwiek się stanie
 w każdych okolicznościach",,DICTIONARY2_SOURCE,,GroupId: 2862928
+305837,"WORD_VERB_RU
+WORD_SUFFIX",,HIRAGANA,,,恍れる,ほれる,,horeru,"zakochać się
+być zakochanym
+pokochać (kogoś)
+być oczarowanym (przez)
+być urzeczonym (przez)
+być pod wrażeniem (przez)
+podziwiać
+zapomnieć się (po czasowniku w formie bez masu)
+być oczarowanym (przez) (po czasowniku w formie bez masu)",,DICTIONARY2_SOURCE,,GroupId: 1288500
+305838,"WORD_VERB_RU
+WORD_SUFFIX",,HIRAGANA,,,耄れる,ほれる,,horeru,"zakochać się
+być zakochanym
+pokochać (kogoś)
+być oczarowanym (przez)
+być urzeczonym (przez)
+być pod wrażeniem (przez)
+podziwiać
+zapomnieć się (po czasowniku w formie bez masu)
+być oczarowanym (przez) (po czasowniku w formie bez masu)",,DICTIONARY2_SOURCE,,GroupId: 1288500
+305839,"WORD_NOUN
+WORD_NOUN_SUFFIX",,HIRAGANA,,,汁,つゆ,,tsuyu,"sok
+zupa
+rósół
+bulion
+sos do zanurzania potraw",,DICTIONARY2_SOURCE,DUPLICATE 6656,GroupId: 1335520
+305840,WORD_VERB_U,,HIRAGANA,,,蹣跚めく,よろめく,,yoromeku,"zataczać się
+chwiać się
+iść chwiejnym krokiem
+źle prowadzić się
+mieć romans
+odczuwać jakieś skłonności",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1013220
+305841,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,塩づけ,しおづけ,,shioduke,"marynowanie w soli
+pozostawienie bez zmian
+pozostawiając niewykorzystane",,DICTIONARY2_SOURCE,,GroupId: 1594080
+305842,WORD_NOUN,,HIRAGANA,,,諡,いみな,,imina,"prawdziwe imię (zmarłej osoby lub osoby szlachetnie urodzonej)
+pośmiertne imię",,DICTIONARY2_SOURCE,"DUPLICATE 84795
+DUPLICATE 203904",GroupId: 2245380
+305843,WORD_NOUN,,HIRAGANA,,,忌み名,いみな,,imina,"prawdziwe imię (zmarłej osoby lub osoby szlachetnie urodzonej)
+pośmiertne imię",,DICTIONARY2_SOURCE,,GroupId: 2245380
+305844,WORD_NOUN,,HIRAGANA,,,忌名,いみな,,imina,"prawdziwe imię (zmarłej osoby lub osoby szlachetnie urodzonej)
+pośmiertne imię",,DICTIONARY2_SOURCE,,GroupId: 2245380
+305845,WORD_NOUN,,HIRAGANA,,,謚,いみな,,imina,"prawdziwe imię (zmarłej osoby lub osoby szlachetnie urodzonej)
+pośmiertne imię",,DICTIONARY2_SOURCE,"DUPLICATE 139795
+DUPLICATE 203939",GroupId: 2245380
+305846,WORD_NOUN,,HIRAGANA,,,肉奴隷,にくどれい,,nikudorei,niewolnik seksualny,wulgarnie; slang,DICTIONARY2_SOURCE,,GroupId: 2862861
+305847,WORD_EXPRESSION,,HIRAGANA,,,一強皆弱,いっきょうかいじゃく,,ikkyou kaijaku,"jeden silny, wszyscy pozostali słabi",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 2862911
+305848,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,始末をつける,しまつをつける,,shimatsu o tsukeru,"doprowadzić do końca (zwłaszcza coś niefortunnego)
+zamknąć
+położyć kres",,DICTIONARY2_SOURCE,,GroupId: 2862922
+305849,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,始末を付ける,しまつをつける,,shimatsu o tsukeru,"doprowadzić do końca (zwłaszcza coś niefortunnego)
+zamknąć
+położyć kres",,DICTIONARY2_SOURCE,,GroupId: 2862922
+305850,WORD_NOUN,,HIRAGANA,,,人生経験,じんせいけいけん,,jinsei keiken,doświadczenie życiowe,,DICTIONARY2_SOURCE,,GroupId: 2862923
+305851,WORD_NOUN,,HIRAGANA_KATAKANA,,,餡ドーナツ,あんドーナツ,,an doonatsu,pączek nadziewany pastą z czerwonej fasoli,"jedzenie, gotowanie; pisanie zwykle z użyciem kana",DICTIONARY2_SOURCE,"DUPLICATE 305852
+DUPLICATE 305853",GroupId: 2862929
+305852,WORD_NOUN,,HIRAGANA_KATAKANA,,,餡ドーナツ,あんドーナッツ,,an doonattsu,pączek nadziewany pastą z czerwonej fasoli,"jedzenie, gotowanie; pisanie zwykle z użyciem kana",DICTIONARY2_SOURCE,"DUPLICATE 305851
+DUPLICATE 305853",GroupId: 2862929
+305853,WORD_NOUN,,KATAKANA,,,餡ドーナツ,アンドーナツ,,an doonatsu,pączek nadziewany pastą z czerwonej fasoli,"jedzenie, gotowanie; pisanie zwykle z użyciem kana",DICTIONARY2_SOURCE,"DUPLICATE 305851
+DUPLICATE 305852",GroupId: 2862929
+305854,WORD_NOUN,,HIRAGANA_KATAKANA,,,餡ドーナッツ,あんドーナツ,,an doonatsu,pączek nadziewany pastą z czerwonej fasoli,"jedzenie, gotowanie; pisanie zwykle z użyciem kana",DICTIONARY2_SOURCE,"DUPLICATE 305855
+DUPLICATE 305856",GroupId: 2862929
+305855,WORD_NOUN,,HIRAGANA_KATAKANA,,,餡ドーナッツ,あんドーナッツ,,an doonattsu,pączek nadziewany pastą z czerwonej fasoli,"jedzenie, gotowanie; pisanie zwykle z użyciem kana",DICTIONARY2_SOURCE,"DUPLICATE 305854
+DUPLICATE 305856",GroupId: 2862929
+305856,WORD_NOUN,,KATAKANA,,,餡ドーナッツ,アンドーナツ,,an doonatsu,pączek nadziewany pastą z czerwonej fasoli,"jedzenie, gotowanie; pisanie zwykle z użyciem kana",DICTIONARY2_SOURCE,"DUPLICATE 305854
+DUPLICATE 305855",GroupId: 2862929
+305857,WORD_NOUN,,KATAKANA_HIRAGANA,,,トロッコ問題,トロッコもんだい,,torokko mondai,"wylemat wagonika
+dylemat zwrotniczego",eksperyment myślowy w etyce,DICTIONARY2_SOURCE,,GroupId: 2862931
+305858,WORD_NOUN,,KATAKANA_HIRAGANA,,,-,マスオさん,,masuo san,"mąż, który mieszka w domu rodzinnym swojej żony, nie przyjmując jej nazwiska",potocznie; od postaci w mandze Sazae-san,DICTIONARY2_SOURCE,,GroupId: 2862933
+305859,WORD_NOUN,,KATAKANA_HIRAGANA,,,ラムネ菓子,ラムネがし,,ramune gashi,"sprasowane cukierki w tabletkach
+tabletka glukozy",,DICTIONARY2_SOURCE,,GroupId: 2862934
+305860,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,瓶型,びんがた,,bin gata,"w kształcie butelki
+butelkowy",,DICTIONARY2_SOURCE,,GroupId: 2862935
+305861,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,ビン型,びんがた,,bin gata,"w kształcie butelki
+butelkowy",,DICTIONARY2_SOURCE,,GroupId: 2862935
+305862,WORD_NOUN,,HIRAGANA,,,勉強疲れ,べんきょうづかれ,,benkyou dukare,"zmęczenie spowodowane (nadmierną) nauką
+zmęczenie nauką",,DICTIONARY2_SOURCE,,GroupId: 2862936
+305863,WORD_NOUN,,HIRAGANA,,,神殺し,かみごろし,,kami goroshi,bogobójca,,DICTIONARY2_SOURCE,DUPLICATE 305864,GroupId: 2862938
+305864,WORD_NOUN,,HIRAGANA,,,神殺し,かみころし,,kami koroshi,bogobójca,,DICTIONARY2_SOURCE,DUPLICATE 305863,GroupId: 2862938
+305865,WORD_NOUN,,HIRAGANA,,,磁歪,じわい,,jiwai,magnetostrykcja,fizyka,DICTIONARY2_SOURCE,,GroupId: 2862940
+305866,WORD_NOUN,,HIRAGANA,,,磁気歪み,じきひずみ,,jiki hizumi,magnetostrykcja,fizyka,DICTIONARY2_SOURCE,,GroupId: 2862941
+305867,WORD_NOUN,,HIRAGANA,,,磁気ひずみ,じきひずみ,,jiki hizumi,magnetostrykcja,fizyka,DICTIONARY2_SOURCE,,GroupId: 2862941
+305868,WORD_NOUN,,KATAKANA_HIRAGANA,,,ヒルシュスプルング病,ヒルシュスプルングびょう,,hirushusupurungu byou,"choroba Hirschsprunga
+HSCR","medycyna; rzadkie, wrodzone schorzenie unerwienia jelita, uwarunkowane genetycznie, o wieloczynnikowym, zarówno dominującym, jak i recesywnym sposobie dziedziczenia i zmiennej ekspresji",DICTIONARY2_SOURCE,,GroupId: 2862942
