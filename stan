@@ -9,7 +9,7 @@
 ---------
 ludzie - x
 ---------
-update - x
-kanji - 10
++ update - x
++ kanji - 10
 ---------
 suma: 80
