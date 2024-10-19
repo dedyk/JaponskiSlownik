@@ -12020,11 +12020,17 @@ występować razem
 306061,WORD_NOUN,,KATAKANA_HIRAGANA,,,パンダ外交,パンダがいこう,,panda gaikou,dyplomacja pand,"określenie sposobu prowadzenia chińskiej dyplomacji, polegającej na kreowaniu pozytywnego wizerunku Chin, dzięki wypożyczaniu pand innym krajom",DICTIONARY2_SOURCE,,GroupId: 2862997
 306062,WORD_NOUN,,KATAKANA,,,-,ハロー,,haroo,"aureola
 otoczka
-halo",,DICTIONARY2_SOURCE,,GroupId: 2863002
-306063,WORD_NOUN,,KATAKANA,,,-,ハロー,,haroo,brona,ang: harrow,DICTIONARY2_SOURCE,,GroupId: 2863003
-306064,WORD_NOUN,,KATAKANA,,,-,シーリング,,shiiringu,pieczętowanie,"np. aktu, ang: sealing",DICTIONARY2_SOURCE,,GroupId: 2863006
-306065,WORD_EXPRESSION,,KATAKANA,,,愛羅武勇,アイラブユー,,ai rabu yuu,kocham Cię,pisanie zwykle z użyciem kana; gra słów z użyciem kanji,DICTIONARY2_SOURCE,,GroupId: 2166250
-306066,WORD_EXPRESSION,,KATAKANA,,,愛羅武勇,アイ・ラブ・ユー,,ai rabu yuu,kocham Cię,pisanie zwykle z użyciem kana; gra słów z użyciem kanji,DICTIONARY2_SOURCE,,GroupId: 2166250
+halo",,DICTIONARY2_SOURCE,"DUPLICATE 23430
+DUPLICATE 306063",GroupId: 2863002
+306063,WORD_NOUN,,KATAKANA,,,-,ハロー,,haroo,brona,ang: harrow,DICTIONARY2_SOURCE,"DUPLICATE 23430
+DUPLICATE 306062",GroupId: 2863003
+306064,WORD_NOUN,,KATAKANA,,,-,シーリング,,shiiringu,pieczętowanie,"np. aktu, ang: sealing",DICTIONARY2_SOURCE,DUPLICATE 17631,GroupId: 2863006
+306065,WORD_EXPRESSION,,KATAKANA,,,愛羅武勇,アイラブユー,,ai rabu yuu,kocham Cię,pisanie zwykle z użyciem kana; gra słów z użyciem kanji,DICTIONARY2_SOURCE,"DUPLICATE 173176
+DUPLICATE 174200
+DUPLICATE 306066",GroupId: 2166250
+306066,WORD_EXPRESSION,,KATAKANA,,,愛羅武勇,アイ・ラブ・ユー,,ai rabu yuu,kocham Cię,pisanie zwykle z użyciem kana; gra słów z użyciem kanji,DICTIONARY2_SOURCE,"DUPLICATE 173176
+DUPLICATE 174200
+DUPLICATE 306065",GroupId: 2166250
 306067,WORD_ADJECTIVE_I,,HIRAGANA,,,暑い,あっつい,,attsui,"gorący (o pogodzie)
 duszny (o pogodzie)
 parny (o pogodzie)
@@ -12033,7 +12039,11 @@ gorący (np. prośba)
 w myśli (kogoś)
 du jour
 zainteresowany (np. spojrzenie)",,"DICTIONARY2_SOURCE
-EDICT_TRANSLATE_INFO_GROUP_DIFF",,GroupId: 1343460
+EDICT_TRANSLATE_INFO_GROUP_DIFF","DUPLICATE 407
+DUPLICATE 277703
+DUPLICATE 277704
+DUPLICATE 277705
+DUPLICATE 277706",GroupId: 1343460
 306068,WORD_ADJECTIVE_I,,HIRAGANA,,,早い,はっやい,,hayyai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12047,7 +12057,9 @@ zbyt wczesny
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 256
+DUPLICATE 306069
+DUPLICATE 306070",GroupId: 1404975
 306069,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,早い,はっやーい,,hayyaai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12061,7 +12073,9 @@ zbyt wczesny
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 256
+DUPLICATE 306068
+DUPLICATE 306070",GroupId: 1404975
 306070,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,早い,はやーい,,hayaai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12075,7 +12089,9 @@ zbyt wczesny
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 256
+DUPLICATE 306068
+DUPLICATE 306069",GroupId: 1404975
 306071,WORD_ADJECTIVE_I,,HIRAGANA,,,速い,はっやい,,hayyai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12084,7 +12100,9 @@ pospieszny (szczególnie 速い)
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 578
+DUPLICATE 306072
+DUPLICATE 306073",GroupId: 1404975
 306072,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,速い,はっやーい,,hayyaai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12093,7 +12111,9 @@ pospieszny (szczególnie 速い)
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 578
+DUPLICATE 306071
+DUPLICATE 306073",GroupId: 1404975
 306073,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,速い,はやーい,,hayaai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12102,7 +12122,9 @@ pospieszny (szczególnie 速い)
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 578
+DUPLICATE 306071
+DUPLICATE 306072",GroupId: 1404975
 306074,WORD_ADJECTIVE_I,,HIRAGANA,,,疾い,はっやい,,hayyai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12111,7 +12133,9 @@ pospieszny (szczególnie 速い)
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 26162
+DUPLICATE 306075
+DUPLICATE 306076",GroupId: 1404975
 306075,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,疾い,はっやーい,,hayyaai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12120,7 +12144,9 @@ pospieszny (szczególnie 速い)
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 26162
+DUPLICATE 306074
+DUPLICATE 306076",GroupId: 1404975
 306076,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,疾い,はやーい,,hayaai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12129,7 +12155,9 @@ pospieszny (szczególnie 速い)
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 26162
+DUPLICATE 306074
+DUPLICATE 306075",GroupId: 1404975
 306077,WORD_ADJECTIVE_I,,HIRAGANA,,,捷い,はっやい,,hayyai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12138,7 +12166,11 @@ pospieszny (szczególnie 速い)
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 26163
+DUPLICATE 64389
+DUPLICATE 64435
+DUPLICATE 306078
+DUPLICATE 306079",GroupId: 1404975
 306078,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,捷い,はっやーい,,hayyaai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12147,7 +12179,11 @@ pospieszny (szczególnie 速い)
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 26163
+DUPLICATE 64389
+DUPLICATE 64435
+DUPLICATE 306077
+DUPLICATE 306079",GroupId: 1404975
 306079,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,捷い,はやーい,,hayaai,"szybki (szczególnie 速い)
 prędki (szczególnie 速い)
 pospieszny (szczególnie 速い)
@@ -12156,7 +12192,11 @@ pospieszny (szczególnie 速い)
 prosty (szczególnie 早い)
 jak tylko ... (jak ...するが早いか lub ...するより早く)
 chwila ... (jak ...するが早いか lub ...するより早く)
-moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,,GroupId: 1404975
+moment ... (jak ...するが早いか lub ...するより早く)",,DICTIONARY2_SOURCE,"DUPLICATE 26163
+DUPLICATE 64389
+DUPLICATE 64435
+DUPLICATE 306077
+DUPLICATE 306078",GroupId: 1404975
 306080,WORD_ADJECTIVE_I,,HIRAGANA,,,熱い,あっつい,,attsui,"gorący (przedmiot)
 rozgrzany (przedmiot)
 gorący (np. uczucia, spojrzenie)
@@ -12169,7 +12209,7 @@ intensywny
 poważny
 ekstremalny
 gorący (temat)
-interesujący (temat)",,DICTIONARY2_SOURCE,,GroupId: 1467720
+interesujący (temat)",,DICTIONARY2_SOURCE,DUPLICATE 408,GroupId: 1467720
 306081,WORD_ADJECTIVE_NA,,HIRAGANA_KATAKANA,,,綺麗,きれーい,,kireei,"ładny
 śliczny
 piękny
@@ -12179,7 +12219,7 @@ porządny
 uporządkowany
 kompletnie (jako 〜に)
 całkowicie (jako 〜に)
-zupełnie (jako 〜に)",,DICTIONARY2_SOURCE,,GroupId: 1591900
+zupełnie (jako 〜に)",,DICTIONARY2_SOURCE,DUPLICATE 20121,GroupId: 1591900
 306082,WORD_ADJECTIVE_NA,,HIRAGANA_KATAKANA,,,奇麗,きれーい,,kireei,"ładny
 śliczny
 piękny
@@ -12189,7 +12229,7 @@ porządny
 uporządkowany
 kompletnie (jako 〜に)
 całkowicie (jako 〜に)
-zupełnie (jako 〜に)",,DICTIONARY2_SOURCE,,GroupId: 1591900
+zupełnie (jako 〜に)",,DICTIONARY2_SOURCE,DUPLICATE 421,GroupId: 1591900
 306083,WORD_ADJECTIVE_NA,,HIRAGANA_KATAKANA,,,暉麗,きれーい,,kireei,"ładny
 śliczny
 piękny
@@ -12199,7 +12239,7 @@ porządny
 uporządkowany
 kompletnie (jako 〜に)
 całkowicie (jako 〜に)
-zupełnie (jako 〜に)",,DICTIONARY2_SOURCE,,GroupId: 1591900
+zupełnie (jako 〜に)",,DICTIONARY2_SOURCE,DUPLICATE 51909,GroupId: 1591900
 306084,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,可愛い,かわいーい,,kawaiii,"milutki
 miły
 kochany
@@ -12216,7 +12256,13 @@ ukochany
 niewinny
 dziecinny
 ślicznie mały
-maleńki",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1577200
+maleńki",pisanie zwykle z użyciem kana,"DICTIONARY2_SOURCE
+EDICT_TRANSLATE_INFO_GROUP_DIFF","DUPLICATE 573
+DUPLICATE 26458
+DUPLICATE 47616
+DUPLICATE 59820
+DUPLICATE 306085
+DUPLICATE 306086",GroupId: 1577200
 306085,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,可愛い,かわーい,,kawaai,"milutki
 miły
 kochany
@@ -12233,7 +12279,13 @@ ukochany
 niewinny
 dziecinny
 ślicznie mały
-maleńki",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1577200
+maleńki",pisanie zwykle z użyciem kana,"DICTIONARY2_SOURCE
+EDICT_TRANSLATE_INFO_GROUP_DIFF","DUPLICATE 573
+DUPLICATE 26458
+DUPLICATE 47616
+DUPLICATE 59820
+DUPLICATE 306084
+DUPLICATE 306086",GroupId: 1577200
 306086,WORD_EMPTY,,HIRAGANA_KATAKANA,,,可愛い,かわえー,,kawaee,"milutki
 miły
 kochany
@@ -12251,41 +12303,55 @@ niewinny
 dziecinny
 ślicznie mały
 maleńki",pisanie zwykle z użyciem kana,"DICTIONARY2_SOURCE
-NO_TYPE_CHECK",,GroupId: 1577200
+EDICT_TRANSLATE_INFO_GROUP_DIFF
+NO_TYPE_CHECK","DUPLICATE 573
+DUPLICATE 26458
+DUPLICATE 47616
+DUPLICATE 59820
+DUPLICATE 306084
+DUPLICATE 306085",GroupId: 1577200
 306087,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,長い,ながーい,,nagaai,"długi (odległość, dystans)
 długi (czas)
 długotrwały
 przedłużony
-przedłużający się",,DICTIONARY2_SOURCE,,GroupId: 1429750
+przedłużający się",,DICTIONARY2_SOURCE,"DUPLICATE 577
+DUPLICATE 306088",GroupId: 1429750
 306088,WORD_ADJECTIVE_I,,HIRAGANA,,,長い,なっがい,,naggai,"długi (odległość, dystans)
 długi (czas)
 długotrwały
 przedłużony
-przedłużający się",,DICTIONARY2_SOURCE,,GroupId: 1429750
+przedłużający się",,DICTIONARY2_SOURCE,"DUPLICATE 577
+DUPLICATE 306087",GroupId: 1429750
 306089,WORD_ADJECTIVE_I,,HIRAGANA_KATAKANA,,,永い,ながーい,,nagaai,"długi (czas)
 długotrwały
 przedłużony
-przedłużający się",,DICTIONARY2_SOURCE,,GroupId: 1429750
+przedłużający się",,DICTIONARY2_SOURCE,"DUPLICATE 5969
+DUPLICATE 306090",GroupId: 1429750
 306090,WORD_ADJECTIVE_I,,HIRAGANA,,,永い,なっがい,,naggai,"długi (czas)
 długotrwały
 przedłużony
-przedłużający się",,DICTIONARY2_SOURCE,,GroupId: 1429750
+przedłużający się",,DICTIONARY2_SOURCE,"DUPLICATE 5969
+DUPLICATE 306089",GroupId: 1429750
 306091,WORD_EMPTY,,HIRAGANA_KATAKANA,,,短い,みじけー,,mijikee,"krótki
 krótkotrwały",,"DICTIONARY2_SOURCE
 NO_TYPE_CHECK
-EDICT_TRANSLATE_INFO_GROUP_DIFF",,GroupId: 1418620
+EDICT_TRANSLATE_INFO_GROUP_DIFF",DUPLICATE 579,GroupId: 1418620
 306092,WORD_EMPTY,,HIRAGANA_KATAKANA,,,短かい,みじけー,,mijikee,"krótki
 krótkotrwały",,"DICTIONARY2_SOURCE
 NO_TYPE_CHECK
-EDICT_TRANSLATE_INFO_GROUP_DIFF",,GroupId: 1418620
+EDICT_TRANSLATE_INFO_GROUP_DIFF",DUPLICATE 26461,GroupId: 1418620
 306093,"WORD_NOUN
-WORD_ADVERB",,HIRAGANA_KATAKANA,,,昔々,むかーしむかし,,mukaashi mukashi,"dawno, dawno temu",,DICTIONARY2_SOURCE,,GroupId: 1604810
+WORD_ADVERB",,HIRAGANA_KATAKANA,,,昔々,むかーしむかし,,mukaashi mukashi,"dawno, dawno temu",,DICTIONARY2_SOURCE,"DUPLICATE 791
+DUPLICATE 306094",GroupId: 1604810
 306094,"WORD_NOUN
-WORD_ADVERB",,HIRAGANA_KATAKANA,,,昔々,むかーしむかーし,,mukaashi mukaashi,"dawno, dawno temu",,DICTIONARY2_SOURCE,,GroupId: 1604810
+WORD_ADVERB",,HIRAGANA_KATAKANA,,,昔々,むかーしむかーし,,mukaashi mukaashi,"dawno, dawno temu",,DICTIONARY2_SOURCE,"DUPLICATE 791
+DUPLICATE 306093",GroupId: 1604810
 306095,"WORD_NOUN
-WORD_ADVERB",,HIRAGANA_KATAKANA,,,昔昔,むかーしむかし,,mukaashi mukashi,"dawno, dawno temu",,DICTIONARY2_SOURCE,,GroupId: 1604810
+WORD_ADVERB",,HIRAGANA_KATAKANA,,,昔昔,むかーしむかし,,mukaashi mukashi,"dawno, dawno temu",,DICTIONARY2_SOURCE,"DUPLICATE 26562
+DUPLICATE 306096",GroupId: 1604810
 306096,"WORD_NOUN
-WORD_ADVERB",,HIRAGANA_KATAKANA,,,昔昔,むかーしむかーし,,mukaashi mukaashi,"dawno, dawno temu",,DICTIONARY2_SOURCE,,GroupId: 1604810
+WORD_ADVERB",,HIRAGANA_KATAKANA,,,昔昔,むかーしむかーし,,mukaashi mukaashi,"dawno, dawno temu",,DICTIONARY2_SOURCE,"DUPLICATE 26562
+DUPLICATE 306095",GroupId: 1604810
 306097,"WORD_ADJECTIVE_NO
 WORD_NOUN
 WORD_ADVERB",,HIRAGANA_KATAKANA,,,昔,むかーし,,mukaashi,"dawno temu
@@ -12293,7 +12359,7 @@ dawne czasy
 stare dni
 przeszłość
 ostatnie dziesięć lat (używane jako jednostka czasu)
-ostatnia dekada (używane jako jednostka czasu)",,DICTIONARY2_SOURCE,,GroupId: 1382370
+ostatnia dekada (używane jako jednostka czasu)",,DICTIONARY2_SOURCE,DUPLICATE 1452,GroupId: 1382370
 306098,"WORD_EMPTY
 WORD_INTERJECTION",,HIRAGANA_KATAKANA,,,危ない,あぶねー,,abunee,"niebezpieczny
 ryzykowny
@@ -12307,7 +12373,9 @@ wątpliwy
 ???
 uważaj!",,"DICTIONARY2_SOURCE
 NO_TYPE_CHECK
-EDICT_TRANSLATE_INFO_GROUP_DIFF",,GroupId: 1218380
+EDICT_TRANSLATE_INFO_GROUP_DIFF","DUPLICATE 1597
+DUPLICATE 209822
+DUPLICATE 306099",GroupId: 1218380
 306099,"WORD_EMPTY
 WORD_INTERJECTION",,HIRAGANA_KATAKANA,,,危ない,あっぶねー,,abbunee,"niebezpieczny
 ryzykowny
@@ -12321,14 +12389,16 @@ wątpliwy
 ???
 uważaj!",,"DICTIONARY2_SOURCE
 NO_TYPE_CHECK
-EDICT_TRANSLATE_INFO_GROUP_DIFF",,GroupId: 1218380
+EDICT_TRANSLATE_INFO_GROUP_DIFF","DUPLICATE 1597
+DUPLICATE 209822
+DUPLICATE 306098",GroupId: 1218380
 306100,WORD_ADJECTIVE_I,,HIRAGANA,,,低い,ひっくい,,hikkui,"niski (np. ranga, stopień, wartość, treść, jakość)
 nisko (pozycja)
 blisko ziemi
 niski (wzrost)
 głęboki (głos)
 niski ton
-mała (głośność)",,DICTIONARY2_SOURCE,,GroupId: 1434180
+mała (głośność)",,DICTIONARY2_SOURCE,DUPLICATE 4050,GroupId: 1434180
 306101,WORD_NOUN,,HIRAGANA,,,ひじ打ち,ひじうち,,hijiuchi,uderzenie łokciem,sztuki walki; w karate,DICTIONARY2_SOURCE,,GroupId: 2243010
 306102,WORD_NOUN,,HIRAGANA,,,肘うち,ひじうち,,hijiuchi,uderzenie łokciem,sztuki walki; w karate,DICTIONARY2_SOURCE,,GroupId: 2243010
 306103,"WORD_NOUN
@@ -12338,7 +12408,7 @@ tylko tyle
 (taka) marna kwota
 najmniejszy kawałek
 (nie) w najmniejszym stopniu (jako こればかりも z czasownikiem w formie przeczącej)
-(nie) w ogóle (jako こればかりも z czasownikiem w formie przeczącej)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1725330
+(nie) w ogóle (jako こればかりも z czasownikiem w formie przeczącej)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 154638,GroupId: 1725330
 306104,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,是許り,これっばかり,,korebbakari,"tylko to
 tylko tyle
@@ -12346,7 +12416,7 @@ tylko tyle
 (taka) marna kwota
 najmniejszy kawałek
 (nie) w najmniejszym stopniu (jako こればかりも z czasownikiem w formie przeczącej)
-(nie) w ogóle (jako こればかりも z czasownikiem w formie przeczącej)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1725330
+(nie) w ogóle (jako こればかりも z czasownikiem w formie przeczącej)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 157232,GroupId: 1725330
 306105,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,此許り,これっばかり,,korebbakari,"tylko to
 tylko tyle
@@ -12354,35 +12424,39 @@ tylko tyle
 (taka) marna kwota
 najmniejszy kawałek
 (nie) w najmniejszym stopniu (jako こればかりも z czasownikiem w formie przeczącej)
-(nie) w ogóle (jako こればかりも z czasownikiem w formie przeczącej)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1725330
+(nie) w ogóle (jako こればかりも z czasownikiem w formie przeczącej)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 157233,GroupId: 1725330
 306106,"WORD_ADJECTIVE_NA
 WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,熱々,あっつあつ,,attsu atsu,"wrzący
 piekący
 szaleńczo zakochany
 namiętnie zakochany
-namiętność w miłości",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1586470
+namiętność w miłości",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 16321
+DUPLICATE 306107",GroupId: 1586470
 306107,"WORD_ADJECTIVE_NA
 WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,熱々,あっつあっつ,,attsu attsu,"wrzący
 piekący
 szaleńczo zakochany
 namiętnie zakochany
-namiętność w miłości",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1586470
+namiętność w miłości",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 16321
+DUPLICATE 306106",GroupId: 1586470
 306108,"WORD_ADJECTIVE_NA
 WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,熱熱,あっつあつ,,attsu atsu,"wrzący
 piekący
 szaleńczo zakochany
 namiętnie zakochany
-namiętność w miłości",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1586470
+namiętność w miłości",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 32314
+DUPLICATE 306109",GroupId: 1586470
 306109,"WORD_ADJECTIVE_NA
 WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,熱熱,あっつあっつ,,attsu attsu,"wrzący
 piekący
 szaleńczo zakochany
 namiętnie zakochany
-namiętność w miłości",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1586470
+namiętność w miłości",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 32314
+DUPLICATE 306108",GroupId: 1586470
 306110,"WORD_ADJECTIVE_NA
 WORD_NOUN
 WORD_ADJECTIVE_NO",,KATAKANA,,,-,アツアツ,,atsu atsu,"wrzący
