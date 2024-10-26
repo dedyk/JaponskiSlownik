@@ -13009,7 +13009,12 @@ oczyszczenie z przestępstw, nieczystości itp.",shinto,DICTIONARY2_SOURCE,,Grou
 oczyszczenie z przestępstw, nieczystości itp.",shinto,DICTIONARY2_SOURCE,,GroupId: 2083790
 306240,WORD_NOUN,,HIRAGANA,,,萌え黄,もえぎ,,moegi,jasno żółto-zielony,,DICTIONARY2_SOURCE,DUPLICATE 306241,GroupId: 2574040
 306241,WORD_NOUN,,HIRAGANA,,,萌え黄,もよぎ,,moyogi,jasno żółto-zielony,,DICTIONARY2_SOURCE,DUPLICATE 306240,GroupId: 2574040
-306242,WORD_EMPTY,,HIRAGANA_EXCEPTION,,,-,-,,-,xxx,,TO_DELETE,,
+306242,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,チンチクリン,,chinchikurin,"niski (osoba) (poniżająco)
+ktoś małego wzrostu (poniżająco)
+mały (poniżająco)
+krótkie (spodnie itp.)
+niewymiarowy",,DICTIONARY2_SOURCE,,GroupId: 2067480
 306243,WORD_VERB_U,,HIRAGANA,,,けば立つ,けばだつ,,kebadatsu,"stać się puszysty
 stać się puchaty
 stać się mechaty",,DICTIONARY2_SOURCE,,GroupId: 1850700
@@ -13293,12 +13298,12 @@ upoważnienie
 kciuk w górę
 pieczęć zawierdzenia
 dokument z podpisem shogun'a lub władcy (termin historyczny; pierwotne znaczenie)",,DICTIONARY2_SOURCE,,GroupId: 1521680
-306351,WORD_NOUN,,HIRAGANA,,,つかみ取り,つかみどり,,tsukami dori,"łapanie
-chwytanie
-brać rękoma (tak wiele, ile można złapać)",,DICTIONARY2_SOURCE,,GroupId: 1661890
-306352,WORD_NOUN,,HIRAGANA,,,摑み取り,つかみどり,,tsukami dori,"łapanie
-chwytanie
-brać rękoma (tak wiele, ile można złapać)",,DICTIONARY2_SOURCE,,GroupId: 1661890
+306351,WORD_NOUN,,HIRAGANA,,,つかみ取り,つかみどり,,tsukami dori,"chwytanie garścią
+chwytając tyle, ile się da wziąć w jedną garść
+łapanie rękami",,DICTIONARY2_SOURCE,,GroupId: 1661890
+306352,WORD_NOUN,,HIRAGANA,,,摑み取り,つかみどり,,tsukami dori,"chwytanie garścią
+chwytając tyle, ile się da wziąć w jedną garść
+łapanie rękami",,DICTIONARY2_SOURCE,,GroupId: 1661890
 306353,WORD_NOUN,,HIRAGANA,,,陰のう,いんのう,,innou,moszna,anatomia,DICTIONARY2_SOURCE,DUPLICATE 306354,GroupId: 1170460
 306354,WORD_NOUN,,HIRAGANA,,,隠しどころ,かくしどころ,,kakushi dokoro,"ukryte miejsce
 kryjówka
@@ -13329,12 +13334,12 @@ DUPLICATE 27086",GroupId: 2863070
 kryjówka
 genitalia (archaizm)",,DICTIONARY2_SOURCE,,GroupId: 1972320
 306370,WORD_NOUN,,KATAKANA,,,紅花,ベニハナ,,benihana,krokosz barwierski,"gatunek rośliny jednorocznej z rodziny astrowatych, Carthamus tinctorius",DICTIONARY2_SOURCE,"DUPLICATE 68294
-DUPLICATE 68350",GroupId: 1280710
+DUPLICATE 306372",GroupId: 1280710
 306371,WORD_NOUN,,HIRAGANA,,,べに花,べにばな,,benibana,krokosz barwierski,"gatunek rośliny jednorocznej z rodziny astrowatych, Carthamus tinctorius",DICTIONARY2_SOURCE,"DUPLICATE 306372
 DUPLICATE 306373",GroupId: 1280710
-306372,WORD_NOUN,,HIRAGANA,,,べに花,こうか,,kouka,krokosz barwierski,"gatunek rośliny jednorocznej z rodziny astrowatych, Carthamus tinctorius","DICTIONARY2_SOURCE
-TO_DELETE","DUPLICATE 306371
-DUPLICATE 306373",GroupId: 1280710
+306372,WORD_NOUN,,HIRAGANA,,,紅花,こうか,,kouka,"czerwony kwiat
+krokosz barwierski (zwłaszcza jako składnik tradycyjnej medycyny chińskiej)",,DICTIONARY2_SOURCE,"DUPLICATE 68294
+DUPLICATE 306370",GroupId: 2863095
 306373,WORD_NOUN,,KATAKANA,,,べに花,ベニハナ,,benihana,krokosz barwierski,"gatunek rośliny jednorocznej z rodziny astrowatych, Carthamus tinctorius",DICTIONARY2_SOURCE,"DUPLICATE 306371
 DUPLICATE 306372",GroupId: 1280710
 306374,WORD_NOUN,,HIRAGANA,,,まだら雪,まだらゆき,,madara yuki,"utrzymujące się płaty śniegu
@@ -13435,7 +13440,7 @@ DUPLICATE 306396
 DUPLICATE 306397",GroupId: 2863074
 306399,"WORD_ADJECTIVE_NO
 WORD_NOUN",,HIRAGANA_KATAKANA,,,同レベル,どうレベル,,dou reberu,"ten sam stopień
-ten sam poziom",np. biegłości itp.,DICTIONARY2_SOURCE,,GroupId: 2863077
+ten sam poziom",,DICTIONARY2_SOURCE,,GroupId: 2863077
 306400,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,降ったり止んだり,ふったりやんだり,,futtari yandari,???,,DICTIONARY2_SOURCE,,GroupId: 2863079
 306401,"WORD_EXPRESSION
@@ -13503,7 +13508,10 @@ zaawansowany drifting",,DICTIONARY2_SOURCE,,GroupId: 2863089
 muzyka taneczna",muzyka; ang: dance music,DICTIONARY2_SOURCE,,GroupId: 2863090
 306433,WORD_NOUN,,KATAKANA,,,-,ダンス・ミュージック,,dansu myuujikku,"muzyka dance
 muzyka taneczna",muzyka; ang: dance music,DICTIONARY2_SOURCE,,GroupId: 2863090
-306434,WORD_NOUN,,KATAKANA,,,-,グレーディング,,gureedingu,gradacja kolorystyczna,fotografia; ang: grading,DICTIONARY2_SOURCE,,GroupId: 2863091
+306434,WORD_NOUN,,KATAKANA,,,-,グレーディング,,gureedingu,"klasyfikacja
+ocena
+rating
+gradacja kolorystyczna (film; fotografia)",,DICTIONARY2_SOURCE,,GroupId: 2863091
 306435,WORD_NOUN,,HIRAGANA,,,食い物屋,くいものや,,kuimono ya,"restauracja
 bar",,DICTIONARY2_SOURCE,,GroupId: 2863092
 306436,WORD_NOUN,,HIRAGANA,,,くいもの屋,くいものや,,kuimono ya,"restauracja
@@ -13533,3 +13541,25 @@ był czysty",dialekt Kansai; nieregularna odmiana czasu przeszłego od 綺麗,DI
 nowoczesny",ang: advanced,DICTIONARY2_SOURCE,,GroupId: 2431870
 306450,WORD_ADJECTIVE_F,,KATAKANA,,,-,アドヴァンスド,,adovansudo,"zaawansowany
 nowoczesny",ang: advanced,DICTIONARY2_SOURCE,,GroupId: 2431870
+306451,WORD_NOUN,,KATAKANA,,,-,ブレード,,bureedo,warkocz,ang: braid,DICTIONARY2_SOURCE,DUPLICATE 38272,GroupId: 2863098
+306452,WORD_NOUN,,KATAKANA,,,-,ブレイド,,bureido,warkocz,ang: braid,DICTIONARY2_SOURCE,DUPLICATE 38273,GroupId: 2863098
+306453,WORD_NOUN,,KATAKANA,,,-,ブレイズ,,bureizu,warkocze,ang: braids,DICTIONARY2_SOURCE,DUPLICATE 214039,GroupId: 2863104
+306454,WORD_NOUN,,KATAKANA,,,-,キマイラ,,kimaira,chimera,"mitologia grecka; ziejący ogniem potwór pochodzący z mitologii greckiej, dziecko Tyfona i Echidny; grk: Khimaira",DICTIONARY2_SOURCE,DUPLICATE 49140,GroupId: 2863105
+306455,WORD_NOUN,,HIRAGANA,,,雉子,きぎす,,kigisu,"bażant zielony
+bażant japoński zielony",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 8766
+DUPLICATE 306456",GroupId: 2863096
+306456,WORD_NOUN,,HIRAGANA,,,雉子,きぎし,,kigishi,"bażant zielony
+bażant japoński zielony",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 8766
+DUPLICATE 306455",GroupId: 2863096
+306457,WORD_NOUN,,HIRAGANA,,,雉,きぎす,,kigisu,"bażant zielony
+bażant japoński zielony",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 8763
+DUPLICATE 306458",GroupId: 2863096
+306458,WORD_NOUN,,HIRAGANA,,,雉,きぎし,,kigishi,"bażant zielony
+bażant japoński zielony",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 8763
+DUPLICATE 306457",GroupId: 2863096
+306459,WORD_NOUN,,HIRAGANA,,,計歩器,けいほき,,keihoki,"pedometr
+krokomierz",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2863097
+306460,WORD_NOUN,,HIRAGANA,,,扶桑国,ふそうこく,,fusoukoku,Japonia,formalny lub literacki termin,DICTIONARY2_SOURCE,,GroupId: 2863100
+306461,WORD_NOUN,,HIRAGANA,,,扶桑國,ふそうこく,,fusoukoku,Japonia,formalny lub literacki termin,DICTIONARY2_SOURCE,,GroupId: 2863100
+306462,WORD_NOUN,,HIRAGANA,,,膨化食品,ぼうかしょくひん,,bouka shokuhin,pęczniejące jedzenie,,DICTIONARY2_SOURCE,,GroupId: 2863101
+306463,WORD_NOUN,,HIRAGANA,,,希薄燃焼,きはくねんしょう,,kihaku nenshou,uboga mieszanka,np. paliwa,DICTIONARY2_SOURCE,,GroupId: 2863103
