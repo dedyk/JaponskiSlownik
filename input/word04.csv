@@ -12847,7 +12847,7 @@ towar wyprzedażowy",,DICTIONARY2_SOURCE,,GroupId: 2863032
 WORD_INTERJECTION",,HIRAGANA,,,バカ野郎,ばかやろう,,baka yarou,"cholerny idiota
 debil
 kretyn
-głupek",potocznie; poniżająco,DICTIONARY2_SOURCE,,GroupId: 1471750
+głupek",pisanie zwykle z użyciem kana; potocznie; poniżająco,DICTIONARY2_SOURCE,DUPLICATE 306627,GroupId: 1471750
 306185,WORD_NOUN,,KATAKANA,,,屑籠,クズカゴ,,kuzu kago,kosz na śmieci,,DICTIONARY2_SOURCE,DUPLICATE 12945,GroupId: 1246530
 306186,WORD_NOUN,,KATAKANA,,,屑篭,クズカゴ,,kuzu kago,kosz na śmieci,,DICTIONARY2_SOURCE,DUPLICATE 93616,GroupId: 1246530
 306187,WORD_NOUN,,HIRAGANA,,,屑カゴ,くずかご,,kuzu kago,kosz na śmieci,,DICTIONARY2_SOURCE,DUPLICATE 306188,GroupId: 1246530
@@ -13800,7 +13800,8 @@ bez wątpienia masz rację",,DICTIONARY2_SOURCE,,GroupId: 1694670
 rabuś",przestarzałe słowo; potocznie,DICTIONARY2_SOURCE,"DUPLICATE 52148
 DUPLICATE 52188
 DUPLICATE 52189
-DUPLICATE 52190",GroupId: 2863047
+DUPLICATE 52190
+DUPLICATE 306624",GroupId: 2863047
 306561,WORD_NOUN,,KATAKANA,,,-,マウス,,mausu,usta,ang: mouth,DICTIONARY2_SOURCE,DUPLICATE 22285,GroupId: 2863111
 306562,WORD_NOUN,,HIRAGANA,,,抗欝剤,こううつざい,,kouutsuzai,"antydepresant
 lek przeciwdepresyjny
@@ -13811,7 +13812,7 @@ lek przeciwdepresyjny
 306564,"WORD_ADVERB
 WORD_NOUN",,KATAKANA_HIRAGANA,,,-,ビクリと,,bikurito,"z początkiem
 ze skokiem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2207870
-306565,WORD_NOUN,,KATAKANA,,,-,タンカ,,tanka,nosze,,DICTIONARY2_SOURCE,,GroupId: 1418150
+306565,WORD_NOUN,,KATAKANA,,,-,タンカ,,tanka,nosze,,DICTIONARY2_SOURCE,DUPLICATE 306625,GroupId: 1418150
 306566,WORD_NOUN,,HIRAGANA,,,雪弾,ゆきだま,,yuki dama,"kulka śnieżna
 śnieżka",,DICTIONARY2_SOURCE,,GroupId: 1842280
 306567,WORD_VERB_U,,HIRAGANA,,,氷つく,こおりつく,,koori tsuku,"zamarzać
@@ -13827,9 +13828,9 @@ osoba pochowana (w kopcu grobowym itp.)",,DICTIONARY2_SOURCE,,GroupId: 2863038
 306570,WORD_NOUN,,HIRAGANA,,,分娩予定日,ぶんべんよていび,,bunben' yoteibi,"termin porodu
 przewidywana data porodu",,DICTIONARY2_SOURCE,,GroupId: 2863078
 306571,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,分をわきまえる,ぶんをわきまえる,,bun o wakimaeru,znać swoje miejsce,,DICTIONARY2_SOURCE,,GroupId: 2863110
+WORD_EXPRESSION",,HIRAGANA,,,分をわきまえる,ぶんをわきまえる,,bun o wakimaeru,znać swoje miejsce,,DICTIONARY2_SOURCE,DUPLICATE 306629,GroupId: 2863110
 306572,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,分を弁える,ぶんをわきまえる,,bun o wakimaeru,znać swoje miejsce,,DICTIONARY2_SOURCE,,GroupId: 2863110
+WORD_EXPRESSION",,HIRAGANA,,,分を弁える,ぶんをわきまえる,,bun o wakimaeru,znać swoje miejsce,,DICTIONARY2_SOURCE,DUPLICATE 306630,GroupId: 2863110
 306573,WORD_NOUN,,HIRAGANA,,,抗うつ薬,こううつやく,,kouutsuyaku,"lek przeciwdepresyjny
 środek przeciwdepresyjny",medycyna,DICTIONARY2_SOURCE,,GroupId: 2863112
 306574,WORD_NOUN,,HIRAGANA,,,抗鬱薬,こううつやく,,kouutsuyaku,"lek przeciwdepresyjny
@@ -13849,10 +13850,12 @@ DUPLICATE 24596
 DUPLICATE 24597",GroupId: 2863119
 306581,WORD_NOUN,,KATAKANA,,,-,ダブチ,,dabuchi,podwójny cheeseburger,"nazwa produktu; w McDonalds, skrót, ang: double cheeseburger",DICTIONARY2_SOURCE,,GroupId: 5747100
 306582,WORD_NOUN,,KATAKANA,,,-,ダブチー,,dabuchii,podwójny cheeseburger,"nazwa produktu; w McDonalds, skrót, ang: double cheeseburger",DICTIONARY2_SOURCE,,GroupId: 5747100
-306583,WORD_NOUN,,KATAKANA,,,-,ダブルチーズバーガー,,daburu chiizubaagaa,podwójny cheeseburger,"nazwa produktu; w McDonalds, ang: double cheeseburger","DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 5747101
-306584,WORD_NOUN,,KATAKANA,,,-,ダブル・チーズバーガー,,daburu chiizubaagaa,podwójny cheeseburger,"nazwa produktu; w McDonalds, ang: double cheeseburger","DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 5747101
+306583,WORD_NOUN,,KATAKANA,,,-,ストーリテラー,,sutoori teraa,"gawędziarz
+anegdociarz
+opowiadacz historii",ang: story teller,DICTIONARY2_SOURCE,,GroupId: 1070840
+306584,WORD_NOUN,,KATAKANA,,,-,ストリーテラー,,sutorii teraa,"gawędziarz
+anegdociarz
+opowiadacz historii",ang: story teller,DICTIONARY2_SOURCE,,GroupId: 1070840
 306585,WORD_NOUN,,HIRAGANA,,,烏の豌豆,からすのえんどう,,karasuno endou,"wyka siewna
 tara","pisanie zwykle z użyciem kana; gatunek jednorocznej rośliny zielnej z rodziny bobowatych, Vicia sativa",DICTIONARY2_SOURCE,,GroupId: 1171610
 306586,WORD_NOUN,,KATAKANA,,,-,カラスノエンドウ,,karasuno endou,"wyka siewna
@@ -13924,3 +13927,64 @@ czarna jagoda",ang: blueberry,DICTIONARY2_SOURCE,,GroupId: 1114450
 306621,WORD_NOUN,,KATAKANA,,,-,レークサイド,,reekusaido,brzeg jeziora,ang: lakeside,DICTIONARY2_SOURCE,,GroupId: 2570680
 306622,WORD_NOUN,,KATAKANA,,,-,モルダヴィア,,morudavia,Mołdawia,ang: Moldavia,DICTIONARY2_SOURCE,,GroupId: 2005320
 306623,WORD_NOUN,,KATAKANA,,,-,ジャコウエンドウ,,jakou endou,groszek pachnący,pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1575260
+306624,WORD_NOUN,,HIRAGANA,,,盗人,ぬすと,,nusuto,"złodziej
+rabuś",przestarzałe słowo; potocznie,DICTIONARY2_SOURCE,"DUPLICATE 52148
+DUPLICATE 52188
+DUPLICATE 52189
+DUPLICATE 52190
+DUPLICATE 306560",GroupId: 2863047
+306625,WORD_NOUN,,KATAKANA,,,-,タンカ,,tanka,thangka,tybetański obraz buddyjski na bawełnianym płótnie lub jedwabiu; słowo pochodzenia tybetańskiego,DICTIONARY2_SOURCE,DUPLICATE 306565,GroupId: 2863117
+306626,"WORD_NOUN
+WORD_INTERJECTION",,KATAKANA,,,馬鹿野郎,バカヤロウ,,baka yarou,"cholerny idiota
+debil
+kretyn
+głupek",pisanie zwykle z użyciem kana; potocznie; poniżająco,DICTIONARY2_SOURCE,DUPLICATE 25607,GroupId: 1471750
+306627,"WORD_NOUN
+WORD_INTERJECTION",,KATAKANA,,,バカ野郎,バカヤロウ,,baka yarou,"cholerny idiota
+debil
+kretyn
+głupek",pisanie zwykle z użyciem kana; potocznie; poniżająco,DICTIONARY2_SOURCE,DUPLICATE 306184,GroupId: 1471750
+306628,"WORD_NOUN
+WORD_INTERJECTION",,KATAKANA,,,馬鹿やろう,バカヤロウ,,baka yarou,"cholerny idiota
+debil
+kretyn
+głupek",pisanie zwykle z użyciem kana; potocznie; poniżająco,DICTIONARY2_SOURCE,DUPLICATE 25717,GroupId: 1471750
+306629,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,分をわきまえる,ぶをわきまえる,,bu o wakimaeru,znać swoje miejsce,,DICTIONARY2_SOURCE,DUPLICATE 306571,GroupId: 2863110
+306630,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,分を弁える,ぶをわきまえる,,bu o wakimaeru,znać swoje miejsce,,DICTIONARY2_SOURCE,DUPLICATE 306572,GroupId: 2863110
+306631,WORD_NOUN,,KATAKANA,,,トリプル立直,トリプルリーチ,,toripuru riichi,"bycie o krok od zwycięstwa, z trzema ścieżkami do jego osiągnięcia",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2863014
+306632,WORD_NOUN,,HIRAGANA,,,寝所,ねどころ,,nedokoro,"sypialnia
+miejsce do spania
+komnata sypialna
+grzęda
+gniazdo",przestarzałe słowo,DICTIONARY2_SOURCE,"DUPLICATE 132102
+DUPLICATE 306633",GroupId: 2863072
+306633,WORD_NOUN,,HIRAGANA,,,寝所,ねどこ,,nedoko,"sypialnia
+miejsce do spania
+komnata sypialna",,DICTIONARY2_SOURCE,"DUPLICATE 132102
+DUPLICATE 306632",GroupId: 2863073
+306634,WORD_NOUN,,HIRAGANA,,,乳カス,ちちかす,,chichi kasu,wydzielina z brodawki sutkowej,medycyna,DICTIONARY2_SOURCE,,GroupId: 2863120
+306635,WORD_NOUN,,HIRAGANA,,,乳粕,ちちかす,,chichi kasu,wydzielina z brodawki sutkowej,medycyna,DICTIONARY2_SOURCE,,GroupId: 2863120
+306636,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,バリアブル,,bariaburu,"zmienny
+zmienna",ang: variable,DICTIONARY2_SOURCE,,GroupId: 2863121
+306637,WORD_NOUN,,HIRAGANA,,,皇御国,すめらみくに,,sumerami kuni,"Cesarstwo Japonii
+Japonia",pisanie zwykle z użyciem kana; przestarzałe słowo; poetycki termin,DICTIONARY2_SOURCE,,GroupId: 2863122
+306638,WORD_NOUN,,HIRAGANA,,,皇御國,すめらみくに,,sumerami kuni,"Cesarstwo Japonii
+Japonia",pisanie zwykle z użyciem kana; przestarzałe słowo; poetycki termin,DICTIONARY2_SOURCE,,GroupId: 2863122
+306639,WORD_NOUN,,HIRAGANA,,,松毛虫,まつけむし,,matsuke mushi,larwa ćmy sosnowej (Dendrolimus spectabilis),pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2863126
+306640,WORD_NOUN,,KATAKANA,,,-,マツケムシ,,matsuke mushi,larwa ćmy sosnowej (Dendrolimus spectabilis),pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2863126
+306641,WORD_NOUN,,HIRAGANA,,,制限値,せいげんち,,seigenchi,wartość graniczna,,DICTIONARY2_SOURCE,,GroupId: 2863130
+306642,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,口を叩く,くちをたたく,,kuchi o tataku,"mówić bezczelnie
+nigdy się nie zamykać",,DICTIONARY2_SOURCE,,GroupId: 2863131
+306643,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,口をたたく,くちをたたく,,kuchi o tataku,"mówić bezczelnie
+nigdy się nie zamykać",,DICTIONARY2_SOURCE,,GroupId: 2863131
+306644,WORD_NOUN,,KATAKANA,,,-,ストーリーテリング,,sutooriiteringu,"opowiadanie
+gawędziarstwo",ang: storytelling,DICTIONARY2_SOURCE,,GroupId: 2863132
+306645,WORD_NOUN,,KATAKANA,,,-,ストーリテリング,,sutooriteringu,"opowiadanie
+gawędziarstwo",ang: storytelling,DICTIONARY2_SOURCE,,GroupId: 2863132
+306646,WORD_NOUN,,KATAKANA,,,-,ストリーテリング,,sutoriiteringu,"opowiadanie
+gawędziarstwo",ang: storytelling,DICTIONARY2_SOURCE,,GroupId: 2863132
