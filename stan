@@ -10,6 +10,6 @@ word - 20
 ludzie - x
 ---------
 + update - x
-kanji - 10
++ kanji - 10
 ---------
 suma: 80
