@@ -1,3 +1,5 @@
++ update - x
+kanji - 10
 ----------
 small - 10
 small2 - 10
@@ -8,8 +10,5 @@ uzupełniacz - x
 word - 20
 ---------
 ludzie - x
----------
-update - x
-kanji - 10
 ---------
 suma: 80
