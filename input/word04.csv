@@ -961,7 +961,7 @@ metody mieszane",,DICTIONARY2_SOURCE,,GroupId: 1857410
 300621,WORD_NOUN,,KATAKANA_HIRAGANA,,,イスラーム共和国,イスラムきょうわこく,,isuramu kyouwakoku,Republika Islamska,"ustrój oparty na religii muzułmańskiej, obowiązujący w niektórych krajach muzułmańskich: w Iranie, Pakistanie, Afganistanie i Mauretanii",DICTIONARY2_SOURCE,,GroupId: 2847049
 300622,WORD_NOUN,,HIRAGANA_KATAKANA,,,電子メイル,でんしメール,,denshi meeru,"email
 e-mail
-poczta elektroniczna",informatyka,DICTIONARY2_SOURCE,,GroupId: 1443350
+poczta elektroniczna",internet,DICTIONARY2_SOURCE,,GroupId: 1443350
 300623,WORD_ADJECTIVE_I,,HIRAGANA,,,だだっ広い,だたっぴろい,,datappiroi,"nadmiernie przestronny
 zbyt przestronny
 nadmiernie szeroki
@@ -4595,7 +4595,7 @@ zapewnienie jakości",,DICTIONARY2_SOURCE,,GroupId: 2861523
 zespół wymiotów cyklicznych",medycyna,DICTIONARY2_SOURCE,,GroupId: 2861529
 302930,WORD_NOUN,,KATAKANA,,,-,アマゾン,,amazon,Amazon,"nazwa firmy; amerykańskie przedsiębiorstwo handlowe, spółka akcyjna założona w 1994 w Seattle",DICTIONARY2_SOURCE,DUPLICATE 163939,GroupId: 5010287
 302931,WORD_NOUN,,HIRAGANA,,,披風,ひふ,,hifu,płaszcz noszony na kimono,,DICTIONARY2_SOURCE,,GroupId: 2861531
-302932,WORD_NOUN,,HIRAGANA,,,売防法,ばいぼうほう,,baibouhou,Ustawa o Przeciwdziałaniu Prostytucji,prawo; skrót,DICTIONARY2_SOURCE,,GroupId: 2861532
+302932,WORD_NOUN,,HIRAGANA,,,売防法,ばいぼうほう,,baibouhou,Ustawa o Zwalczaniu Prostytucji,prawo; skrót,DICTIONARY2_SOURCE,,GroupId: 2861532
 302933,WORD_NOUN,,HIRAGANA,,,出荷人,しゅっかにん,,shukkanin,nadawca,,DICTIONARY2_SOURCE,,GroupId: 2861533
 302934,WORD_NOUN,,KATAKANA,,,-,ディストロ,,disutoro,dystrybucja (Linuxa),informatyka; skrót,DICTIONARY2_SOURCE,,GroupId: 2861534
 302935,WORD_NOUN,,HIRAGANA,,,毛質,もうしつ,,moushitsu,jakość włosów,,DICTIONARY2_SOURCE,,GroupId: 2861535
@@ -6446,8 +6446,7 @@ megafon elektroniczny",skrót,DICTIONARY2_SOURCE,,GroupId: 2862109
 303878,WORD_NOUN,,HIRAGANA,,,１式,いっしき,,isshiki,"kompletny zbiór
 komplet
 wszystko",,DICTIONARY2_SOURCE,,GroupId: 1163080
-303879,WORD_NOUN,,KATAKANA,,,Ｅメール,イーメイル,,ii meiru,"email
-poczta elektroniczna",informatyka,DICTIONARY2_SOURCE,DUPLICATE 180994,GroupId: 2277160
+303879,WORD_NOUN,,KATAKANA,,,Ｅメール,イーメイル,,ii meiru,email,internet,DICTIONARY2_SOURCE,DUPLICATE 180994,GroupId: 2277160
 303880,WORD_VERB_U,,HIRAGANA,,,計り直す,はかりなおす,,hakari naosu,"mierzyć ponownie
 ponownie zważyć",,DICTIONARY2_SOURCE,,GroupId: 2862111
 303881,WORD_VERB_U,,HIRAGANA,,,量り直す,はかりなおす,,hakari naosu,"mierzyć ponownie
@@ -15214,7 +15213,8 @@ ciąg świąt państwowych i dni weekendowych występujących czasami we wrześn
 307008,WORD_NOUN,,KATAKANA,,,-,カピパラ,,kapipara,"kapibara
 kapibara wielka",największy żyjący współcześnie gatunek gryzonia z rodziny kawiowatych,DICTIONARY2_SOURCE,,GroupId: 2088560
 307009,WORD_NOUN,,KATAKANA,,,-,ビデオライブラリー,,bideo raiburarii,"wideoteka
-biblioteka video",informatyka; ang: video library,DICTIONARY2_SOURCE,,GroupId: 2321800
+biblioteka wideo
+zbiór wideo",ang: video library,DICTIONARY2_SOURCE,,GroupId: 2321800
 307010,WORD_NOUN,,KATAKANA,,,-,ワイアレスネットワーク,,waiaresu nettowaaku,sieć bezprzewodowa,informatyka; ang: wireless network,DICTIONARY2_SOURCE,,GroupId: 2340170
 307011,WORD_NOUN,,KATAKANA,,,-,ウオールペーパー,,uooru peepaa,tapeta,ang: wall paper,DICTIONARY2_SOURCE,,GroupId: 2285010
 307012,WORD_NOUN,,KATAKANA,,,-,プルシアン・ブルー,,purushian buruu,błękit pruski,ang: Prussian blue,DICTIONARY2_SOURCE,,GroupId: 2258320
@@ -15239,3 +15239,119 @@ gładka skóra",,DICTIONARY2_SOURCE,,GroupId: 1752100
 gładka skóra",,DICTIONARY2_SOURCE,,GroupId: 1752100
 307025,WORD_NOUN,,KATAKANA,,,-,プロディジー,,purodijii,"wyjątkowy talent
 geniusz",ang: prodigy,DICTIONARY2_SOURCE,,GroupId: 2328160
+307026,WORD_NOUN,,KATAKANA,,,-,タブ,,tabu,???,ang: tub,DICTIONARY2_SOURCE,DUPLICATE 128663,GroupId: 2863432
+307027,WORD_ADJECTIVE_NA,,KATAKANA,,,-,ウォーム,,woomu,ciepły,ang: warm,DICTIONARY2_SOURCE,DUPLICATE 131280,GroupId: 2863437
+307028,WORD_NOUN,,KATAKANA,,,-,ウオーム,,uoomu,???,ang: worm,DICTIONARY2_SOURCE,DUPLICATE 167497,GroupId: 1026560
+307029,WORD_NOUN,,KATAKANA,,,ＴＡ,ティーエー,,tii ee,"pomocnik nauczyciela (ang: teaching assistant)
+ocena technologiczna (ang: technology assessment)
+adapter terminala (ang: terminal adapter)
+analiza transakcji (ang: transactional analysis)",,DICTIONARY2_SOURCE,DUPLICATE 275177,GroupId: 2308650
+307030,WORD_NOUN,,HIRAGANA,,,保革油,ほかくゆ,,hokakuyu,"olej do konserwacji skóry
+smar konserwujący skórę
+tłuszcz garbarski",,DICTIONARY2_SOURCE,,GroupId: 2863389
+307031,WORD_NOUN,,KATAKANA_HIRAGANA,,,ソフトウェア開発キット,ソフトウェアかいはつキット,,sofutowea kaihatsu kitto,"software development kit
+SDK",informatyka; zestaw narzędzi dla programistów niezbędny w tworzeniu aplikacji korzystających z funkcjonalności danej biblioteki pod daną platformę lub sprzęt,DICTIONARY2_SOURCE,,GroupId: 2863415
+307032,WORD_NOUN,,KATAKANA_HIRAGANA,,,ソフトウエア開発キット,ソフトウェアかいはつキット,,sofutowea kaihatsu kitto,"software development kit
+SDK",informatyka; zestaw narzędzi dla programistów niezbędny w tworzeniu aplikacji korzystających z funkcjonalności danej biblioteki pod daną platformę lub sprzęt,DICTIONARY2_SOURCE,,GroupId: 2863415
+307033,WORD_NOUN,,HIRAGANA,,,遠隔透視,えんかくとうし,,enkaku toushi,"zdalne widzenie (zdolność paranormalna)
+telestezja",,DICTIONARY2_SOURCE,,GroupId: 2863416
+307034,WORD_NOUN,,HIRAGANA,,,便潜血検査,べんせんけつけんさ,,bensenketsu kensa,badanie krwi utajonej w kale,medycyna,DICTIONARY2_SOURCE,,GroupId: 2863419
+307035,WORD_NOUN,,KATAKANA_HIRAGANA,,,Ｒｈ血液型,アールエッチけつえきがた,,aaruecchi ketsuekigata,grupa krwi Rh,,DICTIONARY2_SOURCE,,GroupId: 2863420
+307036,WORD_NOUN,,KATAKANA_HIRAGANA,,,Ｂ群溶血性レンサ球菌,ビーぐんようけつせいれんさきゅうきん,,bii gun'you ketsusei rensa kyuukin,paciorkowiec grupy B,medycyna,DICTIONARY2_SOURCE,,GroupId: 2863421
+307037,WORD_NOUN,,KATAKANA_HIRAGANA,,,Ｂ群溶血性連鎖球菌,ビーぐんようけつせいれんさきゅうきん,,bii gun'you ketsusei rensa kyuukin,paciorkowiec grupy B,medycyna,DICTIONARY2_SOURCE,,GroupId: 2863421
+307038,WORD_NOUN,,KATAKANA,,,-,トップブランド,,toppu burando,"najlepsza marka
+marka wysokiej klasy
+lider marki",ang: top brand,DICTIONARY2_SOURCE,,GroupId: 2863425
+307039,WORD_NOUN,,KATAKANA,,,-,トップ・ブランド,,toppu burando,"najlepsza marka
+marka wysokiej klasy
+lider marki",ang: top brand,DICTIONARY2_SOURCE,,GroupId: 2863425
+307040,WORD_NOUN,,KATAKANA,,,-,バナナジュース,,banana juusu,bananowy smoothie,ang: banana juice,DICTIONARY2_SOURCE,,GroupId: 2863426
+307041,WORD_NOUN,,KATAKANA,,,-,バナナ・ジュース,,banana juusu,bananowy smoothie,ang: banana juice,DICTIONARY2_SOURCE,,GroupId: 2863426
+307042,WORD_NOUN,,HIRAGANA,,,交流分析,こうりゅうぶんせき,,kouryuu bunseki,analiza transakcyjna,psychologia,DICTIONARY2_SOURCE,,GroupId: 2863436
+307043,WORD_NOUN,,HIRAGANA,,,送信箱,そうしんばこ,,soushinbako,skrzynka nadawcza email,internet,DICTIONARY2_SOURCE,,GroupId: 2863438
+307044,WORD_NOUN,,KATAKANA,,,-,アップローダー,,appuroodaa,uploader,informatyka,DICTIONARY2_SOURCE,,GroupId: 2280060
+307045,WORD_EXPRESSION,,KATAKANA,,,-,スマン,,suman,przepraszam,,DICTIONARY2_SOURCE,,GroupId: 2083600
+307046,WORD_NOUN,,KATAKANA,,,-,オーボエ・ダモーレ,,ooboe damoore,"oboe d'amore
+obój miłosny",instrument dęty drewniany z grupy aerofonów stroikowych; słowo pochodzenia włoskiego,DICTIONARY2_SOURCE,,GroupId: 2458930
+307047,WORD_NOUN,,KATAKANA,,,-,スウィフト,,suwifuto,szybka piłka,skrót; ang: swift ball,DICTIONARY2_SOURCE,DUPLICATE 156372,GroupId: 1926600
+307048,WORD_NOUN,,KATAKANA,,,-,ウイルスチェッカー,,uirusu chekkaa,"oprogramowanie wykrywające wirusy
+oprogramowanie antywirusowe",informatyka; ang: virus checker,DICTIONARY2_SOURCE,,GroupId: 2284700
+307049,WORD_NOUN,,KATAKANA,,,-,ウイルス・チェッカー,,uirusu chekkaa,"oprogramowanie wykrywające wirusy
+oprogramowanie antywirusowe",informatyka; ang: virus checker,DICTIONARY2_SOURCE,,GroupId: 2284700
+307050,"WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,-,にいっと,,niitto,z uśmiechem,onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2747260
+307051,"WORD_ADVERB
+WORD_NOUN",,KATAKANA_HIRAGANA,,,-,ニイッと,,niitto,z uśmiechem,onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2747260
+307052,WORD_NOUN,,KATAKANA,,,-,サッド・マック,,saddo makku,Sad Mac,"informatyka; symbol stosowany w starszych generacjach komputerów Apple Macintosh, wskazujący poważny błąd ze sprzętem lub oprogramowaniem, pojawiający się zamiast Happy Maca, który wskazywał, że testy sprzętu zakończyły się powodzeniem",DICTIONARY2_SOURCE,,GroupId: 2299090
+307053,WORD_NOUN,,KATAKANA,,,-,セックス・アピール,,sekkusu apiiru,seksapil,ang: sex appeal,DICTIONARY2_SOURCE,,GroupId: 2447640
+307054,WORD_NOUN,,KATAKANA,,,-,スパムメイル,,supamu meiru,spam poczta,internet; ang: spam mail,DICTIONARY2_SOURCE,,GroupId: 1986920
+307055,WORD_NOUN,,KATAKANA,,,-,スライドマスター,,suraido masutaa,???,informatyka; ang: slide master,DICTIONARY2_SOURCE,,GroupId: 2304670
+307056,WORD_INTERJECTION,,HIRAGANA,,,-,あんがとう,,angatou,dzięki,potocznie,DICTIONARY2_SOURCE,,GroupId: 2725220
+307057,WORD_NOUN,,KATAKANA,,,-,トラフィックパターン,,torafikku pataan,krąg nadlotniskowy,ang: traffic pattern,DICTIONARY2_SOURCE,,GroupId: 2313760
+307058,WORD_NOUN,,KATAKANA,,,-,トラフィック・パターン,,torafikku pataan,krąg nadlotniskowy,ang: traffic pattern,DICTIONARY2_SOURCE,,GroupId: 2313760
+307059,WORD_NOUN,,KATAKANA,,,-,ヴォイスメッセージ,,voisu messeeji,wiadomość głosowa,ang: voice message,DICTIONARY2_SOURCE,,GroupId: 2330340
+307060,WORD_NOUN,,KATAKANA,,,-,スキャンコンバーター,,sukyan konbaataa,???,informatyka; ang: scan converter,DICTIONARY2_SOURCE,,GroupId: 2303210
+307061,WORD_NOUN,,KATAKANA,,,-,ビデオプリンター,,bideo purintaa,drukarka wideo,ang: video printer,DICTIONARY2_SOURCE,,GroupId: 2321770
+307062,WORD_NOUN,,KATAKANA,,,-,ビデオ・プリンター,,bideo purintaa,drukarka wideo,ang: video printer,DICTIONARY2_SOURCE,,GroupId: 2321770
+307063,WORD_NOUN,,KATAKANA,,,-,ファニーフェイス,,fanii feisu,"śmieszna twarz
+zabawna twarz",ang: funny face,DICTIONARY2_SOURCE,,GroupId: 1108330
+307064,WORD_NOUN,,KATAKANA,,,-,ファニー・フェイス,,fanii feisu,"śmieszna twarz
+zabawna twarz",ang: funny face,DICTIONARY2_SOURCE,,GroupId: 1108330
+307065,WORD_VERB_U,,KATAKANA_HIRAGANA,,,-,ビクつく,,bikutsuku,"być przestraszony
+bać się
+drżeć ze strachu",,DICTIONARY2_SOURCE,,GroupId: 1632440
+307066,WORD_NOUN,,KATAKANA,,,-,デテクター,,detekutaa,"detektor
+wykrywacz",ang: detector,DICTIONARY2_SOURCE,,GroupId: 1082110
+307067,WORD_NOUN,,KATAKANA,,,-,デテクタ,,detekuta,"detektor
+wykrywacz",ang: detector,DICTIONARY2_SOURCE,,GroupId: 1082110
+307068,WORD_NOUN,,KATAKANA,,,-,アンマネージ・コード,,anmaneeji koodo,niezarządzany kod,informatyka; ang: unmanaged code,DICTIONARY2_SOURCE,,GroupId: 2281900
+307069,WORD_NOUN,,KATAKANA,,,-,コート・ジボワール,,kooto jibowaaru,"Wybrzeże Kości Słoniowej
+Côte d'Ivoire","państwo w Afryce Zachodniej położone na północnym wybrzeżu Zatoki Gwinejskiej, nad Oceanem Atlantyckim",DICTIONARY2_SOURCE,,GroupId: 2070380
+307070,WORD_NOUN,,KATAKANA,,,-,コート・ジボアール,,kooto jiboaaru,"Wybrzeże Kości Słoniowej
+Côte d'Ivoire","państwo w Afryce Zachodniej położone na północnym wybrzeżu Zatoki Gwinejskiej, nad Oceanem Atlantyckim",DICTIONARY2_SOURCE,,GroupId: 2070380
+307071,WORD_NOUN,,KATAKANA,,,-,カー・セックス,,kaa sekkusu,seks w samochodzie,ang: car sex,DICTIONARY2_SOURCE,,GroupId: 1036250
+307072,WORD_NOUN,,KATAKANA,,,-,アイスポット・シクリッド,,ai supotto shikuriddo,eye-spot cichlid,gatunek ryby,DICTIONARY2_SOURCE,,GroupId: 2634990
+307073,WORD_NOUN,,KATAKANA,,,-,ハムカツ・サンド,,hamukatsu sando,"kanapka wypełniona smażonym ciastem z warstwami plastrów szynki
+kanapka z kotletem z szynki","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2825843
+307074,WORD_NOUN,,KATAKANA,,,-,デバイダー,,debaidaa,"dzielnik
+rozdzielacz
+przekładka
+przegroda
+separator",ang: divider,DICTIONARY2_SOURCE,,GroupId: 1082190
+307075,WORD_NOUN,,KATAKANA,,,-,デバイダ,,debaida,"dzielnik
+rozdzielacz
+przekładka
+przegroda
+separator",ang: divider,DICTIONARY2_SOURCE,,GroupId: 1082190
+307076,WORD_NOUN,,KATAKANA,,,-,ウィークリー・マンション,,wiikurii manshon,małe mieszkanie wynajmowane na tydzień,ang: weekly mansion,DICTIONARY2_SOURCE,,GroupId: 2440720
+307077,WORD_NOUN,,KATAKANA,,,-,スパーム・バンク,,supaamu banku,bank spermy,ang: sperm bank,DICTIONARY2_SOURCE,,GroupId: 1071910
+307078,WORD_NOUN,,KATAKANA,,,-,シー・グラス,,shii gurasu,szkło morskie,"odłamki szkła oszlifowanego przez fale morskie wyrzucane na brzeg, ang: sea glass",DICTIONARY2_SOURCE,,GroupId: 2842456
+307079,WORD_NOUN,,HIRAGANA,,,あたり役,あたりやく,,atari yaku,"odnosząca sukcesy rola
+udana rola",,DICTIONARY2_SOURCE,,GroupId: 1784000
+307080,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,木彫,きぼり,,kibori,"drewniana rzeźba
+rzeźba z drewna",,DICTIONARY2_SOURCE,DUPLICATE 39106,GroupId: 1534780
+307081,WORD_NOUN,,HIRAGANA,,,やつ当たり,やつあたり,,yatsu atari,"wybuch złości
+wybuch gniewu
+wyładowanie złości
+ujście własnych emocji",na kogoś lub coś,DICTIONARY2_SOURCE,,GroupId: 1476610
+307082,WORD_VERB_U,,HIRAGANA,,,産みおとす,うみおとす,,umi otosu,"rodzić
+urodzić (cielę, źrebie)
+złożyć (jajko)",,DICTIONARY2_SOURCE,,GroupId: 1664830
+307083,WORD_VERB_U,,HIRAGANA,,,生みおとす,うみおとす,,umi otosu,"rodzić
+urodzić (cielę, źrebie)
+złożyć (jajko)",,DICTIONARY2_SOURCE,,GroupId: 1664830
+307084,WORD_VERB_U,,HIRAGANA,,,消えさる,きえさる,,kie saru,"znikać
+zniknąć",,DICTIONARY2_SOURCE,,GroupId: 1868610
+307085,WORD_VERB_U,,HIRAGANA,,,消去る,きえさる,,kie saru,"znikać
+zniknąć",,DICTIONARY2_SOURCE,DUPLICATE 307087,GroupId: 1868610
+307086,WORD_VERB_U,,HIRAGANA,,,消しさる,けしさる,,keshi saru,"pozbyć się (czegoś)
+wymazać
+kasować
+usuwać
+zetrzeć",,DICTIONARY2_SOURCE,,GroupId: 1952630
+307087,WORD_VERB_U,,HIRAGANA,,,消去る,けしさる,,keshi saru,"pozbyć się (czegoś)
+wymazać
+kasować
+usuwać
+zetrzeć",,DICTIONARY2_SOURCE,DUPLICATE 307085,GroupId: 1952630
