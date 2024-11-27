@@ -15859,13 +15859,19 @@ WORD_NOUN",,HIRAGANA,,,年収の壁,ねんしゅうのかべ,,nenshuu no kabe,"r
 GBS",medycyna,DICTIONARY2_SOURCE,DUPLICATE 307238,GroupId: 2863422
 307238,WORD_NOUN,,KATAKANA,,,ＧＢＳ,ジービーエス,,jii bii esu,"paciorkowiec grupy B
 GBS",medycyna,DICTIONARY2_SOURCE,DUPLICATE 307237,GroupId: 2863422
-307239,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,然は然りながら,さはさりながら,,sa wa sari nagara,"niech tak będzie
+307239,"WORD_EXPRESSION
+WORD_CONJUNCTION
+WORD_ADVERB",,HIRAGANA_EXCEPTION,,,然は然りながら,さはさりながら,,sa wa sari nagara,"niech tak będzie
 to może być prawda, ale ...
 mimo to, ...",formalny lub literacki termin; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2863444
-307240,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,然はさりながら,さはさりながら,,sa wa sari nagara,"niech tak będzie
+307240,"WORD_EXPRESSION
+WORD_CONJUNCTION
+WORD_ADVERB",,HIRAGANA_EXCEPTION,,,然はさりながら,さはさりながら,,sa wa sari nagara,"niech tak będzie
 to może być prawda, ale ...
 mimo to, ...",formalny lub literacki termin; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2863444
-307241,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,然は然り乍ら,さはさりながら,,sa wa sari nagara,"niech tak będzie
+307241,"WORD_EXPRESSION
+WORD_CONJUNCTION
+WORD_ADVERB",,HIRAGANA_EXCEPTION,,,然は然り乍ら,さはさりながら,,sa wa sari nagara,"niech tak będzie
 to może być prawda, ale ...
 mimo to, ...",formalny lub literacki termin; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2863444
 307242,WORD_NOUN,,HIRAGANA,,,少年期,しょうねんき,,shounenki,"dojrzewanie
@@ -16006,9 +16012,9 @@ prosimy o zrozumienie (że ...)",honoryfikatywnie,DICTIONARY2_SOURCE,DUPLICATE 3
 ciało tyłka",potocznie,DICTIONARY2_SOURCE,DUPLICATE 307314,GroupId: 2863310
 307282,WORD_NOUN,,HIRAGANA,,,送金人,そうきんにん,,soukinnin,osoba dokonująca płatności,,DICTIONARY2_SOURCE,DUPLICATE 307315,GroupId: 2863339
 307283,WORD_NOUN,,HIRAGANA,,,送金者,そうきんしゃ,,soukinsha,osoba dokonująca płatności,,DICTIONARY2_SOURCE,DUPLICATE 307316,GroupId: 2863340
-307284,WORD_NOUN,,HIRAGANA,,,協力費,きょうりょくひ,,kyouryokuhi,"opłata za współpracę (np. za udział w badaniach klinicznych)
-rekompensata
-zwrot kosztów",,DICTIONARY2_SOURCE,DUPLICATE 307317,GroupId: 2863341
+307284,WORD_NOUN,,HIRAGANA,,,協力費,きょうりょくひ,,kyouryokuhi,"wynagrodzenie (np. za udział w badaniu klinicznym)
+zwrot kosztów
+opłata za współpracę",,DICTIONARY2_SOURCE,DUPLICATE 307317,GroupId: 2863341
 307285,WORD_NOUN,,KATAKANA,,,-,ピコハン,,pikohan,piszczący zabawkowy młotek,skrót,DICTIONARY2_SOURCE,DUPLICATE 307318,GroupId: 2863441
 307286,WORD_NOUN,,HIRAGANA,,,極圏,きょっけん,,kyokken,"koło podbiegunowe
 region polarny",,DICTIONARY2_SOURCE,"DUPLICATE 307287
@@ -16044,122 +16050,127 @@ tabliczka znamionowa stacji",kolejnictwo,DICTIONARY2_SOURCE,DUPLICATE 307330,Gro
 307298,WORD_NOUN,,HIRAGANA_KATAKANA,,,相対式ホーム,そうたいしきホーム,,soutaishiki hoomu,"peron boczny
 peron jednostronny",kolejnictwo,DICTIONARY2_SOURCE,DUPLICATE 307331,GroupId: 2863469
 307299,WORD_NOUN,,HIRAGANA,,,朝日新聞,あさひしんぶん,,asahi shinbun,Asahi Shimbun,nazwa produktu; japońska gazeta,DICTIONARY2_SOURCE,DUPLICATE 307332,GroupId: 5524869
-307300,"WORD_ADJECTIVE_TARU
-WORD_ADVERB_TO",,KATAKANA,,,茫然,ボーゼン,,boozen,"oniemiały
-zaskoczony
-zszokowany
-w oszołomieniu
-w zdumieniu",,DICTIONARY2_SOURCE,"DUPLICATE 77485
-DUPLICATE 205449
-DUPLICATE 307267",GroupId: 1515610
-307301,"WORD_ADJECTIVE_TARU
-WORD_ADVERB_TO",,KATAKANA,,,惘然,ボーゼン,,boozen,"oniemiały
-zaskoczony
-zszokowany
-w oszołomieniu
-w zdumieniu",,DICTIONARY2_SOURCE,"DUPLICATE 77486
-DUPLICATE 77487
-DUPLICATE 307268",GroupId: 1515610
-307302,"WORD_ADJECTIVE_TARU
-WORD_ADVERB_TO",,KATAKANA,,,ぼう然,ボーゼン,,boozen,"oniemiały
-zaskoczony
-zszokowany
-w oszołomieniu
-w zdumieniu",,DICTIONARY2_SOURCE,"DUPLICATE 93959
-DUPLICATE 205486
-DUPLICATE 307269",GroupId: 1515610
-307303,WORD_NOUN,,KATAKANA,,,仕手,シテ,,shite,"sprawca (często pisane jako 為手)
-wykonawca (często pisane jako 為手)
-odtwórca (teatr no; często pisane jako シテ)
-artysta (teatr no; często pisane jako シテ)
-protagonista (teatr no; często pisane jako シテ)
-bohater (teatr no; często pisane jako シテ)
-główna postać (teatr no; często pisane jako シテ)
-spekulant (w obrocie handlowym)
-kombinator (w obrocie handlowym)",,DICTIONARY2_SOURCE,"DUPLICATE 19765
-DUPLICATE 307270",GroupId: 1305070
-307304,WORD_NOUN,,KATAKANA,,,為手,シテ,,shite,"sprawca (często pisane jako 為手)
-wykonawca (często pisane jako 為手)
-odtwórca (teatr no; często pisane jako シテ)
-artysta (teatr no; często pisane jako シテ)
-protagonista (teatr no; często pisane jako シテ)
-bohater (teatr no; często pisane jako シテ)
-główna postać (teatr no; często pisane jako シテ)
-spekulant (w obrocie handlowym)
-kombinator (w obrocie handlowym)",,DICTIONARY2_SOURCE,"DUPLICATE 21620
-DUPLICATE 49236
-DUPLICATE 307271",GroupId: 1305070
+307300,WORD_EXPRESSION,,HIRAGANA,,,然も有りなん,さもありなん,,sa mo arinan,"prawdopodobnie tak jest
+ma się rozumieć",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2121400
+307301,"WORD_PREFIX
+WORD_NOUN",,HIRAGANA,,,亞,あ,,a,"sub-
+drugorzędny
+gorszy
+??? (chemia; wskazujący na niski stan utlenienia)
+Azja (skrót)
+Argentyna (skrót)
+Arabia (skrót)
+Ameryka (skrót; przestarzałe słowo; używane w epoce Meiji, obecnie zastąpione przez 米)
+Amerykanin (skrót; przestarzałe słowo; używane w epoce Meiji, obecnie zastąpione przez 米)",,DICTIONARY2_SOURCE,,GroupId: 2220160
+307302,WORD_NOUN,,HIRAGANA,,,ハッテン場,はってんば,,hatten ba,"pikieta
+(gejowskie) miejsce wypadowe
+(gejowskie) miejsce do podrywu (np. bar)","określenie wywodzące się z gejowskiego slangu, oznaczające miejsce spotkań osób szukających szybkiego i anonimowego seksu",DICTIONARY2_SOURCE,,GroupId: 2449110
+307303,WORD_NOUN,,KATAKANA,,,ハッテン場,ハッテンバ,,hatten ba,"pikieta
+(gejowskie) miejsce wypadowe
+(gejowskie) miejsce do podrywu (np. bar)","określenie wywodzące się z gejowskiego slangu, oznaczające miejsce spotkań osób szukających szybkiego i anonimowego seksu",DICTIONARY2_SOURCE,,GroupId: 2449110
+307304,WORD_NOUN,,KATAKANA,,,発展場,ハッテンバ,,hatten ba,"pikieta
+(gejowskie) miejsce wypadowe
+(gejowskie) miejsce do podrywu (np. bar)","określenie wywodzące się z gejowskiego slangu, oznaczające miejsce spotkań osób szukających szybkiego i anonimowego seksu",DICTIONARY2_SOURCE,,GroupId: 2449110
 307305,"WORD_ADVERB
 WORD_ADVERB_TO
 WORD_NOUN",,KATAKANA,,,-,チロチロ,,chiro chiro,"migotanie (światła)
 strużka (wody)
-rzucanie wzrokiem na",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,DUPLICATE 307272,GroupId: 2534660
+rzucanie wzrokiem na",onomatopeiczne lub mimetyczne słowo,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307272,GroupId: 2534660
 307306,WORD_NOUN,,HIRAGANA,,,沈黙,しじま,,shijima,"cisza
 spokój
-łagodność",pisanie zwykle z użyciem kana; poetycki termin,DICTIONARY2_SOURCE,"DUPLICATE 10269
+łagodność",pisanie zwykle z użyciem kana; poetycki termin,"DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 10269
 DUPLICATE 290025
 DUPLICATE 307273",GroupId: 2849868
 307307,WORD_NOUN,,HIRAGANA,,,無言,しじま,,shijima,"cisza
 spokój
-łagodność",pisanie zwykle z użyciem kana; poetycki termin,DICTIONARY2_SOURCE,"DUPLICATE 19266
+łagodność",pisanie zwykle z użyciem kana; poetycki termin,"DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 19266
 DUPLICATE 307274",GroupId: 2849868
 307308,WORD_VERB_U,,HIRAGANA,,,のぼせ上る,のぼせあがる,,nobose agaru,"wyjść z siebie
 stracić głowę
-oszaleć od czegoś",,DICTIONARY2_SOURCE,DUPLICATE 307275,GroupId: 2002520
+oszaleć od czegoś",,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307275,GroupId: 2002520
 307309,WORD_VERB_U,,HIRAGANA,,,逆上せあがる,のぼせあがる,,nobose agaru,"wyjść z siebie
 stracić głowę
-oszaleć od czegoś",,DICTIONARY2_SOURCE,DUPLICATE 307276,GroupId: 2002520
+oszaleć od czegoś",,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307276,GroupId: 2002520
 307310,WORD_EXPRESSION,,HIRAGANA,,,ご承知置き下さい,ごしょうちおきください,,goshou chioki kudasai,"należy pamiętać (że ...)
-prosimy o zrozumienie (że ...)",honoryfikatywnie,DICTIONARY2_SOURCE,DUPLICATE 307277,GroupId: 2863452
+prosimy o zrozumienie (że ...)",honoryfikatywnie,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307277,GroupId: 2863452
 307311,WORD_EXPRESSION,,HIRAGANA,,,ご承知置きください,ごしょうちおきください,,goshou chioki kudasai,"należy pamiętać (że ...)
-prosimy o zrozumienie (że ...)",honoryfikatywnie,DICTIONARY2_SOURCE,DUPLICATE 307278,GroupId: 2863452
+prosimy o zrozumienie (że ...)",honoryfikatywnie,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307278,GroupId: 2863452
 307312,WORD_EXPRESSION,,HIRAGANA,,,御承知おきください,ごしょうちおきください,,goshou chioki kudasai,"należy pamiętać (że ...)
-prosimy o zrozumienie (że ...)",honoryfikatywnie,DICTIONARY2_SOURCE,DUPLICATE 307279,GroupId: 2863452
+prosimy o zrozumienie (że ...)",honoryfikatywnie,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307279,GroupId: 2863452
 307313,WORD_EXPRESSION,,HIRAGANA,,,御承知おき下さい,ごしょうちおきください,,goshou chioki kudasai,"należy pamiętać (że ...)
-prosimy o zrozumienie (że ...)",honoryfikatywnie,DICTIONARY2_SOURCE,DUPLICATE 307280,GroupId: 2863452
+prosimy o zrozumienie (że ...)",honoryfikatywnie,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307280,GroupId: 2863452
 307314,WORD_NOUN,,HIRAGANA,,,尻肉,しりにく,,shiriniku,"tyłek
-ciało tyłka",potocznie,DICTIONARY2_SOURCE,DUPLICATE 307281,GroupId: 2863310
-307315,WORD_NOUN,,HIRAGANA,,,送金人,そうきんにん,,soukinnin,osoba dokonująca płatności,,DICTIONARY2_SOURCE,DUPLICATE 307282,GroupId: 2863339
-307316,WORD_NOUN,,HIRAGANA,,,送金者,そうきんしゃ,,soukinsha,osoba dokonująca płatności,,DICTIONARY2_SOURCE,DUPLICATE 307283,GroupId: 2863340
+ciało tyłka",potocznie,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307281,GroupId: 2863310
+307315,WORD_NOUN,,HIRAGANA,,,送金人,そうきんにん,,soukinnin,osoba dokonująca płatności,,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307282,GroupId: 2863339
+307316,WORD_NOUN,,HIRAGANA,,,送金者,そうきんしゃ,,soukinsha,osoba dokonująca płatności,,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307283,GroupId: 2863340
 307317,WORD_NOUN,,HIRAGANA,,,協力費,きょうりょくひ,,kyouryokuhi,"opłata za współpracę (np. za udział w badaniach klinicznych)
 rekompensata
-zwrot kosztów",,DICTIONARY2_SOURCE,DUPLICATE 307284,GroupId: 2863341
-307318,WORD_NOUN,,KATAKANA,,,-,ピコハン,,pikohan,piszczący zabawkowy młotek,skrót,DICTIONARY2_SOURCE,DUPLICATE 307285,GroupId: 2863441
+zwrot kosztów",,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307284,GroupId: 2863341
+307318,WORD_NOUN,,KATAKANA,,,-,ピコハン,,pikohan,piszczący zabawkowy młotek,skrót,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307285,GroupId: 2863441
 307319,WORD_NOUN,,HIRAGANA,,,極圏,きょっけん,,kyokken,"koło podbiegunowe
-region polarny",,DICTIONARY2_SOURCE,"DUPLICATE 307286
+region polarny",,"DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 307286
 DUPLICATE 307287
 DUPLICATE 307320",GroupId: 2863442
 307320,WORD_NOUN,,HIRAGANA,,,極圏,きょくけん,,kyokuken,"koło podbiegunowe
-region polarny",,DICTIONARY2_SOURCE,"DUPLICATE 307286
+region polarny",,"DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 307286
 DUPLICATE 307287
 DUPLICATE 307319",GroupId: 2863442
-307321,WORD_ADJECTIVE_NO,,HIRAGANA,,,極狭,ごくせま,,gokusema,bardzo wąski,potocznie,DICTIONARY2_SOURCE,DUPLICATE 307288,GroupId: 2863448
-307322,WORD_NOUN,,HIRAGANA,,,板わさ,いたわさ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie",DICTIONARY2_SOURCE,"DUPLICATE 307289
+307321,WORD_ADJECTIVE_NO,,HIRAGANA,,,極狭,ごくせま,,gokusema,bardzo wąski,potocznie,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307288,GroupId: 2863448
+307322,WORD_NOUN,,HIRAGANA,,,板わさ,いたわさ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie","DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 307289
 DUPLICATE 307290
 DUPLICATE 307323",GroupId: 2863461
-307323,WORD_NOUN,,KATAKANA,,,板わさ,イタワサ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie",DICTIONARY2_SOURCE,"DUPLICATE 307289
+307323,WORD_NOUN,,KATAKANA,,,板わさ,イタワサ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie","DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 307289
 DUPLICATE 307290
 DUPLICATE 307322",GroupId: 2863461
-307324,WORD_NOUN,,HIRAGANA,,,板ワサ,いたわさ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie",DICTIONARY2_SOURCE,"DUPLICATE 307291
+307324,WORD_NOUN,,HIRAGANA,,,板ワサ,いたわさ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie","DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 307291
 DUPLICATE 307292
 DUPLICATE 307325",GroupId: 2863461
-307325,WORD_NOUN,,KATAKANA,,,板ワサ,イタワサ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie",DICTIONARY2_SOURCE,"DUPLICATE 307291
+307325,WORD_NOUN,,KATAKANA,,,板ワサ,イタワサ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie","DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 307291
 DUPLICATE 307292
 DUPLICATE 307324",GroupId: 2863461
-307326,WORD_NOUN,,HIRAGANA,,,板山葵,いたわさ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie",DICTIONARY2_SOURCE,"DUPLICATE 307293
+307326,WORD_NOUN,,HIRAGANA,,,板山葵,いたわさ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie","DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 307293
 DUPLICATE 307294
 DUPLICATE 307327",GroupId: 2863461
-307327,WORD_NOUN,,KATAKANA,,,板山葵,イタワサ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie",DICTIONARY2_SOURCE,"DUPLICATE 307293
+307327,WORD_NOUN,,KATAKANA,,,板山葵,イタワサ,,itawasa,plastry kamaboko podawane z tartym wasabi,"jedzenie, gotowanie","DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 307293
 DUPLICATE 307294
 DUPLICATE 307326",GroupId: 2863461
-307328,WORD_NOUN,,HIRAGANA,,,陪席裁判官,ばいせきさいばんかん,,baiseki saibankan,sędzia stowarzyszony,,DICTIONARY2_SOURCE,DUPLICATE 307295,GroupId: 2863466
-307329,WORD_NOUN,,HIRAGANA,,,偽性副甲状腺機能低下症,ぎせいふくこうじょうせんきのうていかしょう,,gisei fukukou jousen kinou teikashou,rzekoma niedoczynność przytarczyc,"medycyna; grupa genetycznie uwarunkowanych chorób metabolicznych, charakteryzujących się opornością tkanek docelowych na parathormon",DICTIONARY2_SOURCE,DUPLICATE 307296,GroupId: 2863467
+307328,WORD_NOUN,,HIRAGANA,,,陪席裁判官,ばいせきさいばんかん,,baiseki saibankan,sędzia stowarzyszony,,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307295,GroupId: 2863466
+307329,WORD_NOUN,,HIRAGANA,,,偽性副甲状腺機能低下症,ぎせいふくこうじょうせんきのうていかしょう,,gisei fukukou jousen kinou teikashou,rzekoma niedoczynność przytarczyc,"medycyna; grupa genetycznie uwarunkowanych chorób metabolicznych, charakteryzujących się opornością tkanek docelowych na parathormon","DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307296,GroupId: 2863467
 307330,WORD_NOUN,,HIRAGANA,,,駅名標,えきめいひょう,,ekimeihyou,"znak stacji
-tabliczka znamionowa stacji",kolejnictwo,DICTIONARY2_SOURCE,DUPLICATE 307297,GroupId: 2863468
+tabliczka znamionowa stacji",kolejnictwo,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307297,GroupId: 2863468
 307331,WORD_NOUN,,HIRAGANA_KATAKANA,,,相対式ホーム,そうたいしきホーム,,soutaishiki hoomu,"peron boczny
-peron jednostronny",kolejnictwo,DICTIONARY2_SOURCE,DUPLICATE 307298,GroupId: 2863469
-307332,WORD_NOUN,,HIRAGANA,,,朝日新聞,あさひしんぶん,,asahi shinbun,Asahi Shimbun,nazwa produktu; japońska gazeta,DICTIONARY2_SOURCE,DUPLICATE 307299,GroupId: 5524869
-307333,WORD_NOUN,,KATAKANA,,,-,ブルーム,,buruumu,rozkwit,ang: bloom,DICTIONARY2_SOURCE,DUPLICATE 64616,GroupId: 2863484
+peron jednostronny",kolejnictwo,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307298,GroupId: 2863469
+307332,WORD_NOUN,,HIRAGANA,,,朝日新聞,あさひしんぶん,,asahi shinbun,Asahi Shimbun,nazwa produktu; japońska gazeta,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 307299,GroupId: 5524869
+307333,WORD_NOUN,,KATAKANA,,,-,ブルーム,,buruumu,"wykwit (białawy nalot na owocach, liściach itp., ang: bloom)
+bloom (masa metalu)",,DICTIONARY2_SOURCE,DUPLICATE 64616,GroupId: 2863484
 307334,WORD_NOUN,,KATAKANA,,,-,レンダラー,,rendaraa,"silnik renderujący
 mechanizm renderujący",informatyka; ang: renderer,DICTIONARY2_SOURCE,,GroupId: 2275520
 307335,WORD_NOUN,,KATAKANA,,,-,オフィス・アメニティ,,ofisu ameniti,udogodnienia biurowe,,DICTIONARY2_SOURCE,,GroupId: 2447410
