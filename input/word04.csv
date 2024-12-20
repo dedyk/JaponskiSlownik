@@ -18806,7 +18806,7 @@ zapalenie pochewki ścięgnowej",medycyna,DICTIONARY2_SOURCE,,GroupId: 1571000
 308404,WORD_NOUN,,HIRAGANA,,,差しかけ,さしかけ,,sashi kake,"trzymanie (parasolki) nad kimś
 przybudówka dachu",,DICTIONARY2_SOURCE,,GroupId: 2271300
 308405,WORD_NOUN,,KATAKANA,,,-,バーテックスシェーダー,,baatekkusu sheedaa,cieniowanie wierzchołków,informatyka; ang: vertex shader,DICTIONARY2_SOURCE,,GroupId: 2318350
-308406,WORD_NOUN,,KATAKANA,,,-,キサンタン・ガム,,kisantan gamu,guma ksantanowa,"polisacharyd pochodzenia mikrobiologicznego, ang: xanthan gum",DICTIONARY2_SOURCE,,GroupId: 2683030
+308406,WORD_NOUN,,KATAKANA,,,-,キサンタン・ガム,,kisantan gamu,guma ksantanowa,"chemia; polisacharyd pochodzenia mikrobiologicznego, ang: xanthan gum",DICTIONARY2_SOURCE,,GroupId: 2683030
 308407,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,不材,ふさい,,fusai,"brak talentu (formalny lub literacki termin)
 antytalent (formalny lub literacki termin)
@@ -19260,7 +19260,9 @@ wypuszczać (np. pasażerów)
 wydawać (np. zaoszczędzone pieniądze)
 ???
 dać upust (np. stłumionym uczuciom)
-wypuścić",,DICTIONARY2_SOURCE,DUPLICATE 308593,GroupId: 1444140
+wypuścić
+wysyłać (informatyka)
+eksportować (informatyka)",,DICTIONARY2_SOURCE,DUPLICATE 308593,GroupId: 1444140
 308593,WORD_VERB_U,,HIRAGANA,,,ほき出す,ほきだす,,hoki dasu,"wypluć
 wypluwać
 wymiotować
@@ -19276,7 +19278,9 @@ wypuszczać (np. pasażerów)
 wydawać (np. zaoszczędzone pieniądze)
 ???
 dać upust (np. stłumionym uczuciom)
-wypuścić",,DICTIONARY2_SOURCE,DUPLICATE 308592,GroupId: 1444140
+wypuścić
+wysyłać (informatyka)
+eksportować (informatyka)",,DICTIONARY2_SOURCE,DUPLICATE 308592,GroupId: 1444140
 308594,WORD_NOUN,,HIRAGANA,,,立ちふるまい,たちふるまい,,tachi furu mai,"maniery
 zachowanie
 sposób zachowania
@@ -20053,3 +20057,111 @@ WORD_NOUN",,HIRAGANA,,,生けるしかばね,いけるしかばね,,ikeru shikab
 WORD_NOUN",,HIRAGANA,,,うその皮,うそのかわ,,uso no kawa,"całkowite kłamstwo
 wielkie kłamstwo
 kompletne kłamstwo",,DICTIONARY2_SOURCE,,GroupId: 2706310
+308940,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,ジロリ,,jirori,"zerkanie wzrokiem
+rzucanie okiem
+spojrzenie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2008400
+308941,WORD_EXPRESSION,,HIRAGANA,,,ホトボリが冷める,ほとぼりがさめる,,hotobori ga sameru,"wszystko się uspokaja
+emocje opadają",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2419330
+308942,WORD_NOUN,,HIRAGANA,,,報労金,ほうろうきん,,houroukin,"nagroda finansowa za czyjś wysiłek
+wynagrodzenie wypłacane znalazcy zagubionej rzeczy (prawo)",,DICTIONARY2_SOURCE,,GroupId: 2863796
+308943,WORD_NOUN,,KATAKANA,,,-,リンスインシャンプー,,rinsu in shanpuu,"szampon odżywczy
+szampon i odżywka 2 w 1",ang: rinse-in shampoo,DICTIONARY2_SOURCE,,GroupId: 2863797
+308944,WORD_NOUN,,KATAKANA,,,-,リンス・イン・シャンプー,,rinsu in shanpuu,"szampon odżywczy
+szampon i odżywka 2 w 1",ang: rinse-in shampoo,DICTIONARY2_SOURCE,,GroupId: 2863797
+308945,WORD_NOUN,,KATAKANA,,,-,リンスインシャンプ,,rinsu in shanpu,"szampon odżywczy
+szampon i odżywka 2 w 1",ang: rinse-in shampoo,DICTIONARY2_SOURCE,,GroupId: 2863797
+308946,WORD_EXPRESSION,,HIRAGANA,,,好評につき,こうひょうにつき,,kouhyou ni tsuki,według popularnego zapotrzebowania,,DICTIONARY2_SOURCE,,GroupId: 2863798
+308947,WORD_EXPRESSION,,HIRAGANA,,,好評に付き,こうひょうにつき,,kouhyou ni tsuki,według popularnego zapotrzebowania,,DICTIONARY2_SOURCE,,GroupId: 2863798
+308948,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,デジマ,,dejima,marketing cyfrowy,skrót; デジタル + マーケティング,DICTIONARY2_SOURCE,,GroupId: 2863799
+308949,WORD_NOUN,,KATAKANA,,,-,クロスボディバッグ,,kurosubodi baggu,torba na ramię,ang: crossbody bag,DICTIONARY2_SOURCE,,GroupId: 2863800
+308950,WORD_NOUN,,KATAKANA,,,-,クロスボディ・バッグ,,kurosubodi baggu,torba na ramię,ang: crossbody bag,DICTIONARY2_SOURCE,,GroupId: 2863800
+308951,WORD_NOUN,,KATAKANA,,,-,クロスボディーバッグ,,kurosubodii baggu,torba na ramię,ang: crossbody bag,DICTIONARY2_SOURCE,,GroupId: 2863800
+308952,WORD_NOUN,,HIRAGANA_KATAKANA,,,冷却ラック,れいきゃくラック,,reikyaku rakku,stojak do chłodzenia,,DICTIONARY2_SOURCE,,GroupId: 2863801
+308953,WORD_NOUN,,KATAKANA,,,-,コモンドール,,komondooru,Komondor,"rasa psa, należąca do grupy psów pasterskich i zaganiających; słowo pochodzenia węgierskiego",DICTIONARY2_SOURCE,,GroupId: 2863802
+308954,WORD_NOUN,,HIRAGANA,,,逸失,いっしつ,,isshitsu,"utrata czegoś
+strata",,DICTIONARY2_SOURCE,,GroupId: 2863807
+308955,WORD_NOUN,,KATAKANA,,,-,マイクロマネジメント,,maikuromanejimento,"zarządzanie w skali mikro
+mikrozarządzanie",ang: micromanagement,DICTIONARY2_SOURCE,,GroupId: 2863809
+308956,WORD_NOUN,,KATAKANA,,,-,マイクロマネージメント,,maikuromaneejimento,"zarządzanie w skali mikro
+mikrozarządzanie",ang: micromanagement,DICTIONARY2_SOURCE,,GroupId: 2863809
+308957,WORD_NOUN,,KATAKANA,,,-,マクロマネジメント,,makuromanejimento,"zarządzanie w skali makro
+makrozarządzanie",ang: macromanagement,DICTIONARY2_SOURCE,,GroupId: 2863810
+308958,WORD_NOUN,,HIRAGANA,,,矢がすり,やがすり,,yagasuri,wzór przypominający wzór ptasich strzał,,DICTIONARY2_SOURCE,,GroupId: 1759440
+308959,WORD_VERB_U,,HIRAGANA,,,聞きおく,ききおく,,kiki oku,słuchać,,DICTIONARY2_SOURCE,,GroupId: 1851200
+308960,WORD_NOUN,,HIRAGANA,,,くい打ち,くいうち,,kui uchi,"wbijanie pali
+palowanie",,DICTIONARY2_SOURCE,,GroupId: 2263760
+308961,WORD_NOUN,,HIRAGANA,,,ねずみ入らず,ねずみいらず,,nezumi irazu,szafka odporna na szczury,,DICTIONARY2_SOURCE,,GroupId: 1397960
+308962,WORD_ADJECTIVE_I,,HIRAGANA,,,ひなた臭い,ひなたくさい,,hinata kusai,"mający zapach wysuszonego na słońcu
+prowincjonalny
+wiejski
+nieokrzesany",,DICTIONARY2_SOURCE,,GroupId: 2720150
+308963,WORD_NOUN,,HIRAGANA,,,ふん詰まり,ふんづまり,,fundumari,"zatwardzenie
+zaparcie",,DICTIONARY2_SOURCE,,GroupId: 1823060
+308964,WORD_NOUN,,HIRAGANA,,,盗みどり,ぬすみどり,,nusumi dori,"potajemne rejestrowanie dźwięku
+potajemne nagrywanie dźwięku",,DICTIONARY2_SOURCE,,GroupId: 2832405
+308965,WORD_NOUN,,HIRAGANA,,,せっちん詰め,せっちんづめ,,secchin dume,"przypieranie do muru (okrążanie) kogoś
+okrążanie króla przeciwnika (w shogi, pierwotne znaczenie)",,DICTIONARY2_SOURCE,,GroupId: 1842620
+308966,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,飛ぶ様に売れる,とぶようにうれる,,tobuyou ni ureru,"sprzedawać się jak świeże bułeczki
+znikać z półek",,DICTIONARY2_SOURCE,,GroupId: 2399760
+308967,WORD_NOUN,,HIRAGANA,,,内かぶと,うちかぶと,,uchi kabuto,"wewnątrz hełmu
+ukryte okoliczności",,DICTIONARY2_SOURCE,,GroupId: 1588180
+308968,WORD_NOUN,,HIRAGANA,,,なま兵法,なまびょうほう,,namabyouhou,"???
+słaba znajomość wiedzy",,DICTIONARY2_SOURCE,,GroupId: 1829940
+308969,WORD_NOUN,,HIRAGANA,,,塩ざけ,しおざけ,,shiozake,solony łosoś,,DICTIONARY2_SOURCE,,GroupId: 1178700
+308970,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,ろく膜,ろくまく,,rokumaku,"opłucna
+pleura",,DICTIONARY2_SOURCE,,GroupId: 1955290
+308971,WORD_NOUN,,HIRAGANA,,,値ザヤ,ねざや,,nezaya,"różnica
+rozpiętość
+rozkład",cen,DICTIONARY2_SOURCE,,GroupId: 1600120
+308972,WORD_NOUN,,HIRAGANA,,,値ざや,ねざや,,nezaya,"różnica
+rozpiętość
+rozkład",cen,DICTIONARY2_SOURCE,,GroupId: 1600120
+308973,WORD_NOUN,,HIRAGANA,,,かかり湯,かかりゆ,,kakari yu,czysta woda do polewania się w czasie kąpieli,,DICTIONARY2_SOURCE,,GroupId: 1864370
+308974,WORD_NOUN,,HIRAGANA,,,三題ばなし,さんだいばなし,,sandai banashi,"opowiadanie opowieści rakugo na podstawie trzech tematów podanych przez publiczność
+improwizowana historia rakugo na podstawie trzech tematów",,DICTIONARY2_SOURCE,,GroupId: 2699820
+308975,WORD_NOUN,,HIRAGANA,,,つり戸棚,つりとだな,,tsuri todana,"szafka wisząca
+szafka ścienna",,DICTIONARY2_SOURCE,,GroupId: 2409440
+308976,WORD_NOUN,,HIRAGANA,,,潮だまり,しおだまり,,shiodamari,"zagłębienie z wodą w nadmorskich skałach
+skaliste miejsce, w którym woda morska pozostaje po odpływie",,DICTIONARY2_SOURCE,,GroupId: 2397240
+308977,WORD_NOUN,,HIRAGANA,,,お声がかり,おこえがかり,,okoe gakari,"rekomendacja
+polecenie",,DICTIONARY2_SOURCE,,GroupId: 1694190
+308978,WORD_NOUN,,HIRAGANA,,,周章ろうばい,しゅうしょうろうばい,,shuushou roubai,"konsternacja
+wpadanie w panikę
+zdenerwowanie
+zakłopotanie
+niepokój",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 1331140
+308979,WORD_NOUN,,HIRAGANA,,,裏だな,うらだな,,uradana,"dom w zaułku
+dom znajdujący się na tyłach",,DICTIONARY2_SOURCE,,GroupId: 1550520
+308980,WORD_NOUN,,HIRAGANA,,,水あさぎ,みずあさぎ,,mizu asagi,"jasnoniebieski
+bladoniebieski",,DICTIONARY2_SOURCE,,GroupId: 2612640
+308981,WORD_NOUN,,HIRAGANA,,,病だれ,やまいだれ,,yamai dare,rodnik chorobowy,,DICTIONARY2_SOURCE,,GroupId: 1913390
+308982,WORD_NOUN,,HIRAGANA,,,病ダレ,やまいだれ,,yamai dare,rodnik chorobowy,,DICTIONARY2_SOURCE,,GroupId: 1913390
+308983,WORD_VERB_RU,,HIRAGANA,,,くり合わせる,くりあわせる,,kuri awaseru,"znaleźć czas
+zorganizować do zrobienia",,DICTIONARY2_SOURCE,,GroupId: 1850970
+308984,WORD_VERB_RU,,HIRAGANA,,,繰りあわせる,くりあわせる,,kuri awaseru,"znaleźć czas
+zorganizować do zrobienia",,DICTIONARY2_SOURCE,,GroupId: 1850970
+308985,WORD_NOUN,,HIRAGANA,,,また家来,またげらい,,mata gerai,dodatkowy służący,,DICTIONARY2_SOURCE,,GroupId: 1525020
+308986,WORD_NOUN,,HIRAGANA,,,そなれ松,そなれまつ,,sonare matsu,smagany wiatrem sosny,,DICTIONARY2_SOURCE,,GroupId: 1780310
+308987,WORD_NOUN,,HIRAGANA,,,札びら,さつびら,,satsubira,"pieniądze
+gotówka",,DICTIONARY2_SOURCE,,GroupId: 2677030
+308988,WORD_NOUN,,HIRAGANA,,,札ビラ,さつびら,,satsubira,"pieniądze
+gotówka",,DICTIONARY2_SOURCE,,GroupId: 2677030
+308989,WORD_NOUN,,HIRAGANA,,,諸がかり,しょがかり,,shoga kari,wydatki,,DICTIONARY2_SOURCE,,GroupId: 1701500
+308990,WORD_NOUN,,HIRAGANA,,,葛まんじゅう,くずまんじゅう,,kuzu manjuu,kula pasty fasolowej pokryta polewą ze skrobi kudzu,,DICTIONARY2_SOURCE,,GroupId: 1778840
+308991,WORD_NOUN,,HIRAGANA,,,勝ちみ,かちみ,,kachi mi,znak zwycięstwa,,DICTIONARY2_SOURCE,,GroupId: 1346130
+308992,WORD_NOUN,,HIRAGANA,,,竹かんむり,たけかんむり,,take kanmuri,element podstawowy kanji 'bambus' na górze,jak w 笑,DICTIONARY2_SOURCE,,GroupId: 2180900
+308993,WORD_NOUN,,HIRAGANA,,,竹カンムリ,たけかんむり,,take kanmuri,element podstawowy kanji 'bambus' na górze,jak w 笑,DICTIONARY2_SOURCE,,GroupId: 2180900
+308994,WORD_NOUN,,HIRAGANA,,,さば折り,さばおり,,saba ori,???,sumo,DICTIONARY2_SOURCE,,GroupId: 2139150
+308995,WORD_NOUN,,HIRAGANA,,,ろ頂,ろちょう,,rochou,"czubek głowy
+ciemieniowy",anatomia,DICTIONARY2_SOURCE,,GroupId: 2843053
+308996,WORD_NOUN,,HIRAGANA,,,稚アユ,ちあゆ,,chi ayu,"młoda ryba słodkowodna
+młody ayu",,DICTIONARY2_SOURCE,,GroupId: 1892870
+308997,WORD_NOUN,,HIRAGANA,,,口しのぎ,くちしのぎ,,kuchi shinogi,"dziadowanie
+klepanie biedy",,DICTIONARY2_SOURCE,,GroupId: 1678130
+308998,WORD_NOUN,,HIRAGANA,,,ときわ木,ときわぎ,,tokiwa gi,drzewo wiecznie zielone,,DICTIONARY2_SOURCE,,GroupId: 2245140
+308999,WORD_NOUN,,HIRAGANA,,,長のし,ながのし,,naga noshi,wyciągnięty suszony uchowiec,używane jako prezent zaręczynowy,DICTIONARY2_SOURCE,,GroupId: 2122260
+309000,WORD_NOUN,,HIRAGANA,,,花すすき,はなすすき,,hana susuki,???,,DICTIONARY2_SOURCE,,GroupId: 2842381
+309001,WORD_NOUN,,HIRAGANA,,,銀ザケ,ぎんざけ,,gin zake,kiżucz,"pisanie zwykle z użyciem kana; gatunek ryby z rodziny łososiowatych (Salmonidae), Oncorhynchus kisutch",DICTIONARY2_SOURCE,,GroupId: 2452990
