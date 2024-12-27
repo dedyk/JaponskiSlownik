@@ -20849,16 +20849,10 @@ wacha","pisanie zwykle z użyciem kana; gatunek morskiej ryby z rodziny makrelow
 309262,WORD_NOUN,,HIRAGANA,,,耐量,たいりょう,,tairyou,"dawka dopuszczalna
 dawka tolerowana",farmakologia,DICTIONARY2_SOURCE,,GroupId: 2863783
 309263,WORD_NOUN,,KATAKANA,,,-,スポンサーシップ,,suponsaashippu,sponsorowanie,,DICTIONARY2_SOURCE,,GroupId: 2863786
-309264,WORD_NOUN,,KATAKANA,,,-,ガーデンベッド,,gaaden beddo,"grządka ogrodowa
-działka ogrodowa (zwykle podniesiona do uprawy kwiatów lub warzyw)
-salon ogrodowy
-sofa zewnętrzna",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2863806
-309265,WORD_NOUN,,KATAKANA,,,-,ガーデン・ベッド,,gaaden beddo,"grządka ogrodowa
-działka ogrodowa (zwykle podniesiona do uprawy kwiatów lub warzyw)
-salon ogrodowy
-sofa zewnętrzna",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2863806
+309264,WORD_NOUN,,KATAKANA,,,-,トイレブラシ,,toire burashi,"szczotka toaletowa
+szczotka do WC",,DICTIONARY2_SOURCE,,GroupId: 2863893
+309265,WORD_NOUN,,KATAKANA,,,-,トイレ・ブラシ,,toire burashi,"szczotka toaletowa
+szczotka do WC",,DICTIONARY2_SOURCE,,GroupId: 2863893
 309266,WORD_NOUN,,HIRAGANA,,,参陣,さんじん,,sanjin,"przybycie do obozu wojskowego
 dołączenie do bitwy",archaizm,DICTIONARY2_SOURCE,,GroupId: 2863863
 309267,WORD_NOUN,,HIRAGANA,,,鉄刀,てっとう,,tettou,"miecz stalowy
@@ -20872,8 +20866,8 @@ rozkładać się",przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2863867
 309270,WORD_VERB_RU,,HIRAGANA,,,晒れる,される,,sareru,"wietrzenie (np. przez długą ekspozycję na słońce lub deszcz)
 stracić kolor
 rozkładać się",przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2863867
-309271,WORD_NOUN,,KATAKANA_HIRAGANA,,,バター皿,バターさら,,bataa sara,talerz na masło,,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2863868
+309271,WORD_NOUN,,HIRAGANA_KATAKANA,,,非常ベル,ひじょうベル,,hijou beru,"dzwonek alarmowy
+awaryjny alarm",,DICTIONARY2_SOURCE,,GroupId: 2863895
 309272,WORD_NOUN,,KATAKANA,,,-,ケーキスタンド,,keeki sutando,patera pod tort,ang: cake stand,DICTIONARY2_SOURCE,,GroupId: 2863869
 309273,WORD_NOUN,,KATAKANA,,,-,ケーキ・スタンド,,keeki sutando,patera pod tort,ang: cake stand,DICTIONARY2_SOURCE,,GroupId: 2863869
 309274,WORD_NOUN,,HIRAGANA_KATAKANA,,,たこ焼きプレート,たこやきプレート,,takoyaki pureeto,patelnia do takoyaki,"jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2863870
@@ -21144,7 +21138,8 @@ dithering","informatyka; grafika komputerowa, zamierzony efekt zastosowania szum
 309394,WORD_NOUN,,KATAKANA,,,-,イベント・プロバイダ,,ibento purobaida,dostawca zdarzeń,informatyka; ang: event provider,DICTIONARY2_SOURCE,,GroupId: 2282610
 309395,WORD_NOUN,,KATAKANA,,,-,コマンド・ボタン,,komando botan,przycisk polecenia,informatyka; ang: command button,DICTIONARY2_SOURCE,,GroupId: 2296680
 309396,WORD_NOUN,,KATAKANA,,,-,ペン・ボタン,,pen botan,przycisk pióra,informatyka; ang: pen button,DICTIONARY2_SOURCE,,GroupId: 2329880
-309397,WORD_NOUN,,KATAKANA,,,-,アッセンブリ,,assenburi,montaż,informatyka; ang: assembly,DICTIONARY2_SOURCE,,GroupId: 1016330
+309397,WORD_NOUN,,KATAKANA,,,-,アッセンブリ,,assenburi,"montaż (ang: assembly)
+assembler (informatyka; język programowania)",,DICTIONARY2_SOURCE,,GroupId: 1016330
 309398,WORD_NOUN,,HIRAGANA_EXCEPTION,,,旋棍,とんふぁあ,,tonfua,"tonfa
 tradycyjna okinawska broń podobna do pałki policyjnej (wyjaśnienie)",pisanie zwykle z użyciem kana; dialekt Ryuukyuu,DICTIONARY2_SOURCE,"DUPLICATE 309399
 DUPLICATE 309400",GroupId: 2262330
@@ -21164,3 +21159,69 @@ WORD_NOUN",,HIRAGANA,,,サザエの壺焼き,さざえのつぼやき,,sazae no 
 309407,WORD_NOUN,,KATAKANA_HIRAGANA,,,スペクトル半値幅,スペクトルはんちはば,,supekutoru hanchihaba,"pełna szerokość w połowie maksimum
 FWHM
 szerokość widmowa",informatyka,DICTIONARY2_SOURCE,,GroupId: 2304460
+309408,WORD_ADJECTIVE_I,,HIRAGANA,,,佗びしい,わびしい,,wabishii,"biedny
+ponury
+nędzny
+ubogi
+żałosny
+marny
+lichy",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1606770
+309409,WORD_NOUN,,HIRAGANA,,,あばら骨,ろっこつ,,rokkotsu,"żebro
+żeberko
+szkielet (statku)
+rama (statku)",,DICTIONARY2_SOURCE,DUPLICATE 30598,GroupId: 1585320
+309410,WORD_NOUN,,HIRAGANA,,,ろっ骨,あばらぼね,,abara bone,"żebro
+żeberko",,DICTIONARY2_SOURCE,DUPLICATE 113633,GroupId: 1585320
+309411,WORD_NOUN,,KATAKANA_HIRAGANA,,,ハンティング帽,ハンチングぼう,,hanchingu bou,kaszkiet,,DICTIONARY2_SOURCE,,GroupId: 2181250
+309412,WORD_NOUN,,HIRAGANA,,,伊万里焼き,いまりやき,,imari yaki,imari,"rodzaj japońskiej porcelany pochodzącej z miasta Arita, położonego niedaleko portu Imari",DICTIONARY2_SOURCE,,GroupId: 2786880
+309413,WORD_NOUN,,KATAKANA_HIRAGANA,,,パン焼機,パンやきき,,pan' yakiki,"maszyna do pieczenia chleba
+maszyna do chleba",,DICTIONARY2_SOURCE,,GroupId: 2408890
+309414,WORD_NOUN,,KATAKANA_HIRAGANA,,,パン焼器,パンやきき,,pan' yakiki,"maszyna do pieczenia chleba
+maszyna do chleba",,DICTIONARY2_SOURCE,,GroupId: 2408890
+309415,WORD_NOUN,,HIRAGANA,,,役付,やくづき,,yaku duki,"zajmowanie odpowiedzialnego stanowiska
+kierownicze stanowisko",,DICTIONARY2_SOURCE,DUPLICATE 309416,GroupId: 1735690
+309416,WORD_NOUN,,HIRAGANA,,,役付,やくつき,,yaku tsuki,"zajmowanie odpowiedzialnego stanowiska
+kierownicze stanowisko",,DICTIONARY2_SOURCE,DUPLICATE 309415,GroupId: 1735690
+309417,WORD_NOUN,,HIRAGANA,,,手洟,てばな,,tebana,dmuchanie swojego nosa zatykając palcami jedną część,,DICTIONARY2_SOURCE,,GroupId: 1699380
+309418,WORD_NOUN,,HIRAGANA,,,今戸焼き,いまどやき,,imado yaki,wyroby Imado,styl nieszkliwionej porcelany,DICTIONARY2_SOURCE,,GroupId: 2559120
+309419,WORD_NOUN,,HIRAGANA_KATAKANA,,,次ページ,じページ,,ji peeji,następna strona,,DICTIONARY2_SOURCE,,GroupId: 2421330
+309420,WORD_NOUN,,HIRAGANA,,,一人焼き肉,ひとりやきにく,,hitori yakiniku,samemu udać się do miejsca yakiniku,,DICTIONARY2_SOURCE,,GroupId: 2840491
+309421,WORD_NOUN,,HIRAGANA,,,１人焼肉,ひとりやきにく,,hitori yakiniku,samemu udać się do miejsca yakiniku,,DICTIONARY2_SOURCE,,GroupId: 2840491
+309422,WORD_NOUN,,KATAKANA,,,-,プアホワイト,,pua howaito,człowiek biały należący do biedoty,ang: poor white,DICTIONARY2_SOURCE,,GroupId: 2472270
+309423,WORD_NOUN,,KATAKANA,,,-,プア・ホワイト,,pua howaito,człowiek biały należący do biedoty,ang: poor white,DICTIONARY2_SOURCE,,GroupId: 2472270
+309424,WORD_NOUN,,KATAKANA,,,-,バッキューム,,bakkyuumu,odkurzacz,ang: vacuum,DICTIONARY2_SOURCE,,GroupId: 1098180
+309425,WORD_NOUN,,KATAKANA,,,-,パプア・ニュー・ギニア,,papua nyuu ginia,Papua Nowa Gwinea,ang: Papua New Guinea,DICTIONARY2_SOURCE,,GroupId: 2007050
+309426,WORD_NOUN,,KATAKANA,,,-,ゼラニューム,,zeranyuumu,pelargonia,"Pelargonium x hortorum, ang: geranium",DICTIONARY2_SOURCE,,GroupId: 2071570
+309427,WORD_NOUN,,KATAKANA,,,-,ゲラニウム,,geraniumu,pelargonia,"Pelargonium x hortorum, ang: geranium",DICTIONARY2_SOURCE,,GroupId: 2071570
+309428,WORD_NOUN,,KATAKANA,,,-,ゲラニューム,,geranyuumu,pelargonia,"Pelargonium x hortorum, ang: geranium",DICTIONARY2_SOURCE,,GroupId: 2071570
+309429,WORD_NOUN,,KATAKANA,,,-,ホンデュラス,,hondyurasu,Honduras,"państwo w Ameryce Północnej, pomiędzy Morzem Karaibskim a Oceanem Spokojnym",DICTIONARY2_SOURCE,,GroupId: 1123180
+309430,WORD_NOUN,,KATAKANA,,,-,アイ・カメラ,,ai kamera,oko kamery,ang: eye camera,DICTIONARY2_SOURCE,,GroupId: 2484520
+309431,WORD_NOUN,,KATAKANA,,,-,バッファゾーン,,baffa zoon,strefa buforowa,ang: buffer zone,DICTIONARY2_SOURCE,,GroupId: 2479890
+309432,WORD_NOUN,,KATAKANA,,,-,バッファ・ゾーン,,baffa zoon,strefa buforowa,ang: buffer zone,DICTIONARY2_SOURCE,,GroupId: 2479890
+309433,WORD_NOUN,,KATAKANA,,,-,マメハンミョウ,,mamehanmyou,Epicauta gorhami,pisanie zwykle z użyciem kana; gatunek chrząszcza,DICTIONARY2_SOURCE,,GroupId: 2165970
+309434,WORD_NOUN,,KATAKANA,,,-,ベビー・ブーマー,,bebii buumaa,osoba urodzona w okresie wyżu demograficznego,ang: baby boomer,DICTIONARY2_SOURCE,,GroupId: 2478430
+309435,WORD_NOUN,,KATAKANA,,,-,スイス・ロール,,suisu rooru,rolada biszkoptowa,"jedzenie, gotowanie; rodzaj ciasta deserowego, gdzie w ciasto właściwe zawinięte jest nadzienie w postaci kremu do tortów, galaretki, lodów lub owoców, ang: Swiss roll",DICTIONARY2_SOURCE,,GroupId: 2831585
+309436,WORD_NOUN,,KATAKANA,,,-,オフオフブロードウェイ,,ofu ofu buroodowei,off-off-Broadway,niskobudżetowe teatry nowojorskie spoza Broadwayu,DICTIONARY2_SOURCE,,GroupId: 2266510
+309437,WORD_NOUN,,KATAKANA,,,-,オフ・オフ・ブロードウェイ,,ofu ofu buroodowei,off-off-Broadway,niskobudżetowe teatry nowojorskie spoza Broadwayu,DICTIONARY2_SOURCE,,GroupId: 2266510
+309438,WORD_NOUN,,KATAKANA,,,-,ハーフサイズ・カメラ,,haafu saizu kamera,aparat fotograficzny używający kliszę o połowie rozmiaru niż standardowa klisza,ang: half-size camera,DICTIONARY2_SOURCE,,GroupId: 1094720
+309439,WORD_NOUN,,KATAKANA,,,-,バッティング・ピッチャー,,battingu picchaa,???,baseball; ang: batting pitcher,DICTIONARY2_SOURCE,,GroupId: 1927270
+309440,WORD_NOUN,,KATAKANA,,,-,ノック・バッティング,,nokku battingu,???,baseball; ang: knock batting,DICTIONARY2_SOURCE,,GroupId: 2072730
+309441,WORD_NOUN,,KATAKANA,,,-,シャドー・ピッチング,,shadoo picchingu,???,baseball; ang: shadow pitching,DICTIONARY2_SOURCE,,GroupId: 1061640
+309442,WORD_NOUN,,KATAKANA,,,-,ビネグレット・ソース,,bineguretto soosu,sos winegret,"jedzenie, gotowanie; ang: vinaigrette sauce",DICTIONARY2_SOURCE,,GroupId: 2500570
+309443,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ダウンロード・オンリー・メンバー,,daunroodo onrii menbaa,pijawka,"internet; osoba, która w sieci P2P jedynie ściąga dane i jednocześnie ich nie udostępnia; ang: download-only member",DICTIONARY2_SOURCE,,GroupId: 2451570
+309444,WORD_NOUN,,KATAKANA,,,-,カスタム・ダイアログ・ボックス,,kasutamu daiarogu bokkusu,niestandardowe okno dialogowe,informatyka; ang: custom dialog box,DICTIONARY2_SOURCE,,GroupId: 2291100
+309445,WORD_NOUN,,KATAKANA,,,-,メーンフレーム,,meenfureemu,mainframe,"informatyka; klasa komputerów używanych głównie przez duże organizacje dla krytycznych aplikacji (np. finansowych, statystycznych)",DICTIONARY2_SOURCE,,GroupId: 1132900
+309446,WORD_NOUN,,HIRAGANA,,,伯労,もず,,mozu,"dzierzba (ptak z rodziny Laniidae)
+dzierzba wschodnia (Lanius bucephalus)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1488290
+309447,WORD_NOUN,,HIRAGANA,,,よそ者,よそもん,,yoso mon,"obcy
+nieznajomy
+outsider
+osoba z zewnątrz",,DICTIONARY2_SOURCE,DUPLICATE 71589,GroupId: 1544210
+309448,WORD_NOUN,,HIRAGANA,,,余所者,よそもん,,yoso mon,"obcy
+nieznajomy
+outsider
+osoba z zewnątrz",,DICTIONARY2_SOURCE,DUPLICATE 71590,GroupId: 1544210
+309449,WORD_NOUN,,HIRAGANA,,,他所者,よそもん,,yoso mon,"obcy
+nieznajomy
+outsider
+osoba z zewnątrz",,DICTIONARY2_SOURCE,DUPLICATE 71591,GroupId: 1544210
