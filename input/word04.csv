@@ -18892,7 +18892,7 @@ wirtualne kasyno",skrót; potocznie,DICTIONARY2_SOURCE,,GroupId: 2863727
 308436,WORD_NOUN,,HIRAGANA,,,とう痛,とうつう,,toutsuu,pulsujący ból,medycyna,DICTIONARY2_SOURCE,,GroupId: 1569540
 308437,WORD_NOUN,,HIRAGANA,,,へこ帯,へこおび,,heko obi,pas do związania yukata,,DICTIONARY2_SOURCE,,GroupId: 1506440
 308438,WORD_NOUN,,HIRAGANA,,,つり鉢,つりばち,,tsuri bachi,wisząca doniczka,,DICTIONARY2_SOURCE,,GroupId: 2746220
-308439,WORD_NOUN,,HIRAGANA,,,すい液,すいえき,,suieki,sok trzustkowy,,DICTIONARY2_SOURCE,,GroupId: 2206040
+308439,WORD_NOUN,,HIRAGANA,,,すい液,すいえき,,suieki,sok trzustkowy,fizjologia,DICTIONARY2_SOURCE,,GroupId: 2206040
 308440,WORD_NOUN,,HIRAGANA,,,早口ことば,はやくちことば,,hayakuchi kotoba,"łamaniec językowy
 językołamacz",,DICTIONARY2_SOURCE,,GroupId: 1844510
 308441,WORD_NOUN,,HIRAGANA,,,茶しゃく,ちゃしゃく,,cha shaku,bambusowa łyżeczka służąca do tworzenia japońskiej herbaty,,DICTIONARY2_SOURCE,,GroupId: 1422710
@@ -21156,10 +21156,18 @@ DUPLICATE 309399",GroupId: 2262330
 309405,WORD_NOUN,,KATAKANA,,,焼き蕎麦パン,ヤキソバパン,,yakisoba pan,kanapka z yakisoba,"jedzenie, gotowanie",DICTIONARY2_SOURCE,DUPLICATE 151590,GroupId: 2828208
 309406,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,サザエの壺焼き,さざえのつぼやき,,sazae no tsubo yaki,turban (gatunek ślimaka) ugotowany we własnej skorupie,"jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2804390
-309407,WORD_NOUN,,KATAKANA_HIRAGANA,,,スペクトル半値幅,スペクトルはんちはば,,supekutoru hanchihaba,"pełna szerokość w połowie maksimum
-FWHM
-szerokość widmowa",informatyka,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2304460
+309407,"WORD_PRONOUN
+WORD_PREFIX",,HIRAGANA,,,吾れ,わ,,wa,"ja (???)
+mnie (???)
+się (???)
+siebie (???)
+ty (archaizm; ???)
+prefiks wskazujący na poufałość lub pogardę (archaizm; często 和)",,DICTIONARY2_SOURCE,"DUPLICATE 13595
+DUPLICATE 28794
+DUPLICATE 30082
+DUPLICATE 309503
+DUPLICATE 309504
+DUPLICATE 309505",GroupId: 1196670
 309408,WORD_ADJECTIVE_I,,HIRAGANA,,,佗びしい,わびしい,,wabishii,"biedny
 ponury
 nędzny
@@ -21268,12 +21276,10 @@ artefakt (informatyka)",,DICTIONARY2_SOURCE,,GroupId: 2863901
 309469,WORD_NOUN,,KATAKANA,,,-,ガーリックパウダー・ガーリックパウダー,,gaarikkupaudaa gaarikkupaudaa,"czosnek w proszku
 sproszkowany czosnek","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2863903
 309470,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,色をなす,いろをなす,,iro o nasu,"zmienić wyraz twarzy (w gniewie)
-zmienić kolor na czerwony
+WORD_EXPRESSION",,HIRAGANA,,,色をなす,いろをなす,,iro o nasu,"zaczerwienić się (ze złości)
 być wściekłym",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2863907
 309471,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,色を作す,いろをなす,,iro o nasu,"zmienić wyraz twarzy (w gniewie)
-zmienić kolor na czerwony
+WORD_EXPRESSION",,HIRAGANA,,,色を作す,いろをなす,,iro o nasu,"zaczerwienić się (ze złości)
 być wściekłym",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2863907
 309472,"WORD_ADVERB_TO
 WORD_ADVERB",,HIRAGANA,,,-,そろりそろり,,sorori sorori,"powoli i cicho
@@ -21334,8 +21340,9 @@ prosty (kształt ciała)
 wazon cylindryczny
 naczynie (skrót)",,DICTIONARY2_SOURCE,DUPLICATE 309478,GroupId: 1700350
 309480,"WORD_NOUN
-WORD_ADVERB",,HIRAGANA,,,ためつ眇めつ,ためつすがめつ,,tametsu sugametsu,"przypatrywanie się
-dobrze się przyjrzeć",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1619570
+WORD_ADVERB",,HIRAGANA,,,ためつ眇めつ,ためつすがめつ,,tametsu sugametsu,"(badając) ostrożnie
+(badając) dokładnie
+(przyglądając się) uważnie",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1619570
 309481,WORD_NOUN,,KATAKANA,,,-,ボディブラシ,,bodi burashi,"szczotka do ciała
 szczotka do kąpieli
 szczotka pod prysznic",ang: body brush,DICTIONARY2_SOURCE,,GroupId: 2863887
@@ -21350,8 +21357,8 @@ szczotka do kąpieli
 szczotka pod prysznic",ang: body brush,DICTIONARY2_SOURCE,,GroupId: 2863887
 309485,WORD_NOUN,,KATAKANA,,,-,ドレスコート,,doresu kooto,damski długi płaszcz,odzież; ang: dress coat,DICTIONARY2_SOURCE,,GroupId: 2863888
 309486,WORD_NOUN,,KATAKANA,,,-,ドレス・コート,,doresu kooto,damski długi płaszcz,odzież; ang: dress coat,DICTIONARY2_SOURCE,,GroupId: 2863888
-309487,WORD_NOUN,,KATAKANA,,,-,オーバーストア,,oobaa sutoa,przesycenie sklepów detalicznych,na danym obszarze; ang: over store,DICTIONARY2_SOURCE,,GroupId: 2863910
-309488,WORD_NOUN,,KATAKANA,,,-,オーバー・ストア,,oobaa sutoa,przesycenie sklepów detalicznych,na danym obszarze; ang: over store,DICTIONARY2_SOURCE,,GroupId: 2863910
+309487,WORD_NOUN,,KATAKANA,,,-,オーバーストア,,oobaa sutoa,przesycenie sklepów lub firm,na danym obszarze; ang: over store,DICTIONARY2_SOURCE,,GroupId: 2863910
+309488,WORD_NOUN,,KATAKANA,,,-,オーバー・ストア,,oobaa sutoa,przesycenie sklepów lub firm,na danym obszarze; ang: over store,DICTIONARY2_SOURCE,,GroupId: 2863910
 309489,WORD_NOUN,,KATAKANA,,,-,オーバーステア,,oobaasutea,nadsterowność,ang: oversteer,DICTIONARY2_SOURCE,,GroupId: 2863911
 309490,WORD_NOUN,,KATAKANA,,,-,アンダーステア,,andaasutea,podsterowność,ang: understeer,DICTIONARY2_SOURCE,,GroupId: 2863914
 309491,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ストレートヘアアイロン,,sutoreeto hea airon,prostownica do włosów,ang: straight hair iron,DICTIONARY2_SOURCE,,GroupId: 2863915
@@ -21366,8 +21373,104 @@ szczotka pod prysznic",ang: body brush,DICTIONARY2_SOURCE,,GroupId: 2863887
 309500,WORD_NOUN,,KATAKANA,,,-,カワニナ,,kawanina,Semisulcospira bensoni,pisanie zwykle z użyciem kana; gatunek ślimaka,DICTIONARY2_SOURCE,,GroupId: 2863921
 309501,"WORD_ADVERB
 WORD_ADVERB_TO",,KATAKANA,,,-,コトリ,,kotori,"z (lekkim) stuknięciem
-kliknięcie",,DICTIONARY2_SOURCE,,GroupId: 2863922
+kliknięcie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2863922
 309502,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,,,-,ことり,,kotori,"z (lekkim) stuknięciem
-kliknięcie",,DICTIONARY2_SOURCE,"DUPLICATE 39609
+kliknięcie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,"DUPLICATE 39609
 DUPLICATE 141042",GroupId: 2863922
+309503,WORD_PRONOUN,,HIRAGANA,,,吾れ,あ,,a,"ja
+mnie",???,DICTIONARY2_SOURCE,"DUPLICATE 10794
+DUPLICATE 28794
+DUPLICATE 30082
+DUPLICATE 309407
+DUPLICATE 309504
+DUPLICATE 309505",GroupId: 1196670
+309504,WORD_PRONOUN,,HIRAGANA,,,吾れ,わぬ,,wanu,"ja
+mnie",???,DICTIONARY2_SOURCE,"DUPLICATE 28794
+DUPLICATE 30082
+DUPLICATE 309407
+DUPLICATE 309503
+DUPLICATE 309505",GroupId: 1196670
+309505,WORD_PRONOUN,,HIRAGANA,,,吾れ,わろ,,waro,"ja
+mnie",???,DICTIONARY2_SOURCE,"DUPLICATE 28794
+DUPLICATE 30082
+DUPLICATE 309407
+DUPLICATE 309503
+DUPLICATE 309504",GroupId: 1196670
+309506,"WORD_PRONOUN
+WORD_PREFIX",,HIRAGANA,,,我れ,わ,,wa,"ja (???)
+mnie (???)
+się (???)
+siebie (???)
+ty (archaizm; ???)
+prefiks wskazujący na poufałość lub pogardę (archaizm; często 和)",,DICTIONARY2_SOURCE,"DUPLICATE 13595
+DUPLICATE 28795
+DUPLICATE 30083
+DUPLICATE 309507
+DUPLICATE 309508
+DUPLICATE 309509",GroupId: 1196670
+309507,WORD_PRONOUN,,HIRAGANA,,,我れ,あ,,a,"ja
+mnie",???,DICTIONARY2_SOURCE,"DUPLICATE 10794
+DUPLICATE 28795
+DUPLICATE 30083
+DUPLICATE 309506
+DUPLICATE 309508
+DUPLICATE 309509",GroupId: 1196670
+309508,WORD_PRONOUN,,HIRAGANA,,,我れ,わぬ,,wanu,"ja
+mnie",???,DICTIONARY2_SOURCE,"DUPLICATE 28795
+DUPLICATE 30083
+DUPLICATE 309506
+DUPLICATE 309507
+DUPLICATE 309509",GroupId: 1196670
+309509,WORD_PRONOUN,,HIRAGANA,,,我れ,わろ,,waro,"ja
+mnie",???,DICTIONARY2_SOURCE,"DUPLICATE 28795
+DUPLICATE 30083
+DUPLICATE 309506
+DUPLICATE 309507
+DUPLICATE 309508",GroupId: 1196670
+309510,WORD_NOUN,,HIRAGANA,,,とう骨,とうこつ,,toukotsu,kość promieniowa,anatomia,DICTIONARY2_SOURCE,,GroupId: 1568380
+309511,WORD_NOUN,,HIRAGANA,,,半値幅,はんちはば,,hanchihaba,"szerokość w połowie wartości
+szerokość piku w połowie maksimum",fizyka,DICTIONARY2_SOURCE,,GroupId: 2863882
+309512,WORD_ADJECTIVE_F,,HIRAGANA,,,超薄,ちょうはく,,chouhaku,"ekstremalnie cienki
+ultracienki
+supercienki",,DICTIONARY2_SOURCE,,GroupId: 2863923
+309513,WORD_NOUN,,KATAKANA,,,-,ベアドライブ,,bea doraibu,"goły dysk
+nieosłonięty dysk twardy",informatyka,DICTIONARY2_SOURCE,,GroupId: 2863924
+309514,WORD_NOUN,,KATAKANA,,,-,ベア・ドライブ,,bea doraibu,"goły dysk
+nieosłonięty dysk twardy",informatyka,DICTIONARY2_SOURCE,,GroupId: 2863924
+309515,WORD_NOUN,,KATAKANA,,,-,ハードディスクケース,,haadodisuku keesu,obudowa dysku twardego,informatyka; ang: hard disk case,DICTIONARY2_SOURCE,,GroupId: 2863925
+309516,WORD_NOUN,,KATAKANA,,,-,ハードディスク・ケース,,haadodisuku keesu,obudowa dysku twardego,informatyka; ang: hard disk case,DICTIONARY2_SOURCE,,GroupId: 2863925
+309517,WORD_NOUN,,KATAKANA,,,ＨＤＤケース,エイチ・ディー・ディー・ケース,,eichi diidii keesu,"obudowa dysku twardego
+obudowa HDD",informatyka,DICTIONARY2_SOURCE,DUPLICATE 309518,GroupId: 2863926
+309518,WORD_NOUN,,KATAKANA,,,ＨＤＤケース,エイチディーディーケース,,eichi diidii keesu,"obudowa dysku twardego
+obudowa HDD",informatyka,DICTIONARY2_SOURCE,DUPLICATE 309517,GroupId: 2863926
+309519,WORD_NOUN,,KATAKANA,,,-,フラッシュドライブ,,furasshu doraibu,"dysk flash
+SSD",informatyka; ang: flash drive,DICTIONARY2_SOURCE,,GroupId: 2863931
+309520,WORD_NOUN,,KATAKANA,,,-,フラッシュ・ドライブ,,furasshu doraibu,"dysk flash
+SSD",informatyka; ang: flash drive,DICTIONARY2_SOURCE,,GroupId: 2863931
+309521,"WORD_ADJECTIVE_NO
+WORD_NOUN",,KATAKANA,,,-,コンパクトサイズ,,konpakuto saizu,"kompaktowy rozmiar
+kompaktowy",ang: compact-size,DICTIONARY2_SOURCE,,GroupId: 2863932
+309522,"WORD_ADJECTIVE_NO
+WORD_NOUN",,KATAKANA,,,-,コンパクト・サイズ,,konpakuto saizu,"kompaktowy rozmiar
+kompaktowy",ang: compact-size,DICTIONARY2_SOURCE,,GroupId: 2863932
+309523,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,-,あんだら,,andara,"głupiec
+idiota",archaizm; dialekt Kansai,DICTIONARY2_SOURCE,,GroupId: 2863934
+309524,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,アンダラ,,andara,"głupiec
+idiota",archaizm; dialekt Kansai,DICTIONARY2_SOURCE,,GroupId: 2863934
+309525,WORD_ADVERB,,HIRAGANA,,,週一,しゅういち,,shuu ichi,raz w tygodniu,potocznie,DICTIONARY2_SOURCE,,GroupId: 2863937
+309526,WORD_ADVERB,,HIRAGANA,,,週イチ,しゅういち,,shuu ichi,raz w tygodniu,potocznie,DICTIONARY2_SOURCE,,GroupId: 2863937
+309527,WORD_NOUN,,KATAKANA,,,-,ヘリパッド,,heripaddo,"lądowisko dla helikopterów
+heliport",,DICTIONARY2_SOURCE,,GroupId: 2863938
+309528,WORD_NOUN,,HIRAGANA,,,混濁液,こんだくえき,,kondakueki,"emulsja
+mętny roztwór
+zawiesina",,DICTIONARY2_SOURCE,,GroupId: 2863944
+309529,WORD_NOUN,,HIRAGANA,,,大気組成,たいきそせい,,taiki sosei,skład atmosfery,,DICTIONARY2_SOURCE,,GroupId: 2863945
+309530,WORD_NOUN,,HIRAGANA,,,周回軌道,しゅうかいきどう,,shuukai kidou,orbita,astronomia,DICTIONARY2_SOURCE,,GroupId: 2863946
+309531,WORD_ADJECTIVE_NO,,HIRAGANA,,,単口,たんこう,,tankou,monostom,biologia,DICTIONARY2_SOURCE,,GroupId: 2863950
+309532,WORD_NOUN,,HIRAGANA,,,衣装戸棚,いしょうとだな,,ishoutodana,szafa,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2863951
+309533,WORD_NOUN,,KATAKANA_HIRAGANA,,,キリスト降誕,キリストこうたん,,kirisuto koutan,narodziny Chrystusa,chrześcijaństwo,DICTIONARY2_SOURCE,,GroupId: 2863958
+309534,WORD_NOUN,,HIRAGANA,,,極値,きょくち,,kyokuchi,ekstremum,matematyka,DICTIONARY2_SOURCE,,GroupId: 2863963
+309535,WORD_NOUN,,KATAKANA_HIRAGANA,,,チェジュ航空,チェジュこうくう,,cheju koukuu,Jeju Air,nazwa firmy; południowokoreańska linia lotnicza z siedzibą w Czedżu,DICTIONARY2_SOURCE,,GroupId: 5747187
