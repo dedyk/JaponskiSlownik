@@ -18282,22 +18282,13 @@ zmiana części zewnętrznych (np. produktu)",,DICTIONARY2_SOURCE,,GroupId: 2863
 308178,WORD_EXPRESSION,,HIRAGANA,,,何つったって,なんつったって,,nantsuttatte,"bez względu na wszystko
 cokolwiek powiesz
 w końcu",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2863533
-308179,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,右に出る者はいない,みぎにでるのはいない,,migi ni deruno wa inai,"nie mieć sobie równych
-bycie w swojej własnej lidze","wyrażenie idiomatyczne; od chińskiego zwyczaju, zgodnie z którym najbardziej wysunięte na prawo miejsce było miejscem honorowym","DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2863544
-308180,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,右に出るものはいない,みぎにでるのはいない,,migi ni deruno wa inai,"nie mieć sobie równych
-bycie w swojej własnej lidze","wyrażenie idiomatyczne; od chińskiego zwyczaju, zgodnie z którym najbardziej wysunięte na prawo miejsce było miejscem honorowym","DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2863544
-308181,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,右に出る者は居ない,みぎにでるのはいない,,migi ni deruno wa inai,"nie mieć sobie równych
-bycie w swojej własnej lidze","wyrażenie idiomatyczne; od chińskiego zwyczaju, zgodnie z którym najbardziej wysunięte na prawo miejsce było miejscem honorowym","DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2863544
-308182,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,右に出るものは居ない,みぎにでるのはいない,,migi ni deruno wa inai,"nie mieć sobie równych
-bycie w swojej własnej lidze","wyrażenie idiomatyczne; od chińskiego zwyczaju, zgodnie z którym najbardziej wysunięte na prawo miejsce było miejscem honorowym","DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2863544
+308179,WORD_NOUN,,HIRAGANA,,,高天が原,たかまがはら,,takama ga hara,Wysoka Równina Niebios,shinto; dom bogów,DICTIONARY2_SOURCE,DUPLICATE 308180,GroupId: 1808730
+308180,WORD_NOUN,,HIRAGANA,,,高天が原,たかまのはら,,takama no hara,Wysoka Równina Niebios,shinto; dom bogów,DICTIONARY2_SOURCE,DUPLICATE 308179,GroupId: 1808730
+308181,WORD_NOUN,,HIRAGANA,,,１番星,いちばんぼし,,ichiban boshi,"pierwsza gwiazda, która pojawia się wieczorem
+wieczorna gwiazda",szczególnie Wenus,DICTIONARY2_SOURCE,,GroupId: 1728210
+308182,WORD_NOUN,,HIRAGANA,,,矚望,しょくぼう,,shokubou,"(mający wielkie) nadzieje
+spodziewający się wiele
+pokładanie nadziei w",często jako 将来を嘱望される,DICTIONARY2_SOURCE,,GroupId: 1357150
 308183,WORD_NOUN,,HIRAGANA,,,坤道,こんどう,,kondou,"drogi ziemi
 zasada ziemi
 drogi kobiet
@@ -21655,7 +21646,58 @@ powinszowania",skrót; potocznie,DICTIONARY2_SOURCE,,GroupId: 2863986
 309602,WORD_EXPRESSION,,HIRAGANA,,,-,おめしゃす,,omeshasu,"gratulacje
 powinszowania",skrót; potocznie,DICTIONARY2_SOURCE,,GroupId: 2863986
 309603,WORD_NOUN,,KATAKANA,,,-,サンタコス,,santa kosu,cosplay Świętego Mikołaja,potocznie; zwłaszcza kobiety,DICTIONARY2_SOURCE,,GroupId: 2863987
-309604,WORD_EMPTY,,KATAKANA,,,-,-,,-,"xxx
-xxx",,TO_DELETE,,
-309605,WORD_EMPTY,,KATAKANA,,,-,-,,-,"xxx
-xxx",,TO_DELETE,,
+309604,WORD_VERB_U,,HIRAGANA,,,ヒックリ返す,ひっくりかえす,,hikkuri kaesu,"odwrócić
+odwrócić na drugą stronę
+przewrócić na lewą stronę
+przewrócić
+przewracać
+wywrócić
+unieważnić (np. decyzję)
+obalić (np. decyzję)
+cofnąć (np. decyzję)
+zmieniać (np. decyzję)",,DICTIONARY2_SOURCE,DUPLICATE 309605,GroupId: 1601870
+309605,WORD_VERB_U,,HIRAGANA,,,ヒックリ返す,ひっくりがえす,,hikkuri gaesu,"odwrócić
+odwrócić na drugą stronę
+przewrócić na lewą stronę
+przewrócić
+przewracać
+wywrócić
+unieważnić (np. decyzję)
+obalić (np. decyzję)
+cofnąć (np. decyzję)
+zmieniać (np. decyzję)",,DICTIONARY2_SOURCE,DUPLICATE 309604,GroupId: 1601870
+309606,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,子供は親の背中を見て育つ,こどもはおやのせなかをみてそだつ,,kodomo wa oya no senaka o mite sodatsu,dzieci dorastają obserwując swoich rodziców,przysłowie,DICTIONARY2_SOURCE,,GroupId: 2860664
+309607,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,子どもは親の背中を見て育つ,こどもはおやのせなかをみてそだつ,,kodomo wa oya no senaka o mite sodatsu,dzieci dorastają obserwując swoich rodziców,przysłowie,DICTIONARY2_SOURCE,,GroupId: 2860664
+309608,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,右に出る者はいない,みぎにでるものはいない,,migi ni derumono wa inai,"nie mieć sobie równych
+bycie w swojej własnej lidze","wyrażenie idiomatyczne; od chińskiego zwyczaju, zgodnie z którym najbardziej wysunięte na prawo miejsce było miejscem honorowym",DICTIONARY2_SOURCE,,GroupId: 2863544
+309609,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,右に出るものはいない,みぎにでるものはいない,,migi ni derumono wa inai,"nie mieć sobie równych
+bycie w swojej własnej lidze","wyrażenie idiomatyczne; od chińskiego zwyczaju, zgodnie z którym najbardziej wysunięte na prawo miejsce było miejscem honorowym",DICTIONARY2_SOURCE,,GroupId: 2863544
+309610,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,右に出る者は居ない,みぎにでるものはいない,,migi ni derumono wa inai,"nie mieć sobie równych
+bycie w swojej własnej lidze","wyrażenie idiomatyczne; od chińskiego zwyczaju, zgodnie z którym najbardziej wysunięte na prawo miejsce było miejscem honorowym",DICTIONARY2_SOURCE,,GroupId: 2863544
+309611,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,右に出るものは居ない,みぎにでるものはいない,,migi ni derumono wa inai,"nie mieć sobie równych
+bycie w swojej własnej lidze","wyrażenie idiomatyczne; od chińskiego zwyczaju, zgodnie z którym najbardziej wysunięte na prawo miejsce było miejscem honorowym",DICTIONARY2_SOURCE,,GroupId: 2863544
+309612,WORD_NOUN,,HIRAGANA_KATAKANA,,,結合テスト,けつごうテスト,,ketsugou tesuto,testy integracyjne,informatyka,DICTIONARY2_SOURCE,,GroupId: 2863718
+309613,WORD_NOUN,,KATAKANA,,,-,オニオンパウダー,,onion paudaa,sproszkowana cebula,"jedzenie, gotowanie; ang: onion powder",DICTIONARY2_SOURCE,,GroupId: 2863905
+309614,WORD_NOUN,,KATAKANA,,,-,オニオン・パウダー,,onion paudaa,sproszkowana cebula,"jedzenie, gotowanie; ang: onion powder",DICTIONARY2_SOURCE,,GroupId: 2863905
+309615,WORD_ADJECTIVE_I,,HIRAGANA,,,微妙い,びみょい,,bimyoi,"subtelny
+delikatny
+trudny
+skomplikowany
+delikatny (sytuacja, pozycja itp.)
+bliski (np. decyzja)",potocznie,DICTIONARY2_SOURCE,,GroupId: 2863961
+309616,WORD_VERB_U,,HIRAGANA,,,４ぬ,しぬ,,shinu,umrzeć,slang internetowy,DICTIONARY2_SOURCE,,GroupId: 2863988
+309617,WORD_NOUN,,KATAKANA,,,-,メンエス,,men'esu,zabiegi kosmetyczne dla mężczyzn,skrót; potocznie,DICTIONARY2_SOURCE,,GroupId: 2863989
+309618,WORD_NOUN,,HIRAGANA,,,自由心証主義,じゆうしんしょうしゅぎ,,jiyuu shinshou shugi,zasada swobodnego uznania sędziów co do wartości dowodowej,prawo,DICTIONARY2_SOURCE,,GroupId: 2863990
+309619,WORD_NOUN,,KATAKANA,,,-,タンデムシート,,tandemu shiito,"tylne siodełko (motocykla)
+miejsce do siedzenia za jeźdźcem (na koniu)",ang: tandem seat,DICTIONARY2_SOURCE,,GroupId: 2863991
+309620,WORD_NOUN,,KATAKANA,,,-,タンデム・シート,,tandemu shiito,"tylne siodełko (motocykla)
+miejsce do siedzenia za jeźdźcem (na koniu)",ang: tandem seat,DICTIONARY2_SOURCE,,GroupId: 2863991
+309621,WORD_NOUN,,HIRAGANA,,,餞,うまのはなむけ,,umanohanamuke,"prezent pożegnalny
+pożegnalny prezent",archaizm; od 馬の鼻向け,DICTIONARY2_SOURCE,"DUPLICATE 100977
+DUPLICATE 204794",GroupId: 2863992
+309622,WORD_NOUN,,HIRAGANA,,,餞別,うまのはなむけ,,umanohanamuke,"prezent pożegnalny
+pożegnalny prezent",archaizm; od 馬の鼻向け,DICTIONARY2_SOURCE,DUPLICATE 100982,GroupId: 2863992
