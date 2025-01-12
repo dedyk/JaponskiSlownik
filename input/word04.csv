@@ -6487,7 +6487,7 @@ Infrared Data Association","nazwa organizacji; powstała w 1993 r. grupa, skupia
 303898,WORD_NOUN,,KATAKANA,,,-,シー・ビーム,,shii biimu,SeaBeam,nazwa produktu; sonar,DICTIONARY2_SOURCE,,GroupId: 5746948
 303899,WORD_NOUN,,KATAKANA,,,ＩＡＢ,アイエービー,,aieebii,"IAB
 Internet Architecture Board",nazwa organizacji; część IETF,DICTIONARY2_SOURCE,,GroupId: 5746949
-303900,WORD_NOUN,,KATAKANA_HIRAGANA,,,クモ学,クモがく,,kumogaku,arachnologia,dziedzina zoologii zajmująca się badaniem pajęczaków (Arachnida),IGNORE_NO_JMEDICT,,
+303900,WORD_NOUN,,KATAKANA_HIRAGANA,,,クモ学,クモがく,,kumogaku,arachnologia,dziedzina zoologii zajmująca się badaniem pajęczaków (Arachnida),IGNORE_NO_JMEDICT,DUPLICATE 309777,
 303901,WORD_EXPRESSION,,HIRAGANA,,,-,での,,deno,"(to jest) w
 (to jest zrobione) z
 (to jest zrobione) przez
@@ -21116,7 +21116,7 @@ obrzydliwy",potocznie,DICTIONARY2_SOURCE,,GroupId: 2610240
 309378,WORD_NOUN,,KATAKANA,,,-,ディザー,,dizaa,"dither
 dithering","informatyka; grafika komputerowa, zamierzony efekt zastosowania szumu w celu zniwelowania błędu kwantyzacji zapobiegający efektowi bandingu",DICTIONARY2_SOURCE,,GroupId: 2311420
 309379,WORD_NOUN,,KATAKANA,,,-,ロングサーキット・アピール,,rongu saakitto apiiru,???,"rzadko używane określenie; reklama, ang: long-circuit appeal",DICTIONARY2_SOURCE,,GroupId: 1148140
-309380,WORD_NOUN,,KATAKANA,,,-,ロイヤルミルクティ,,roiyaru miruku ti,mocna czarna herbata z dodatkiem dużej ilości mleka,ang: royal milk tea,DICTIONARY2_SOURCE,,GroupId: 2495050
+309380,WORD_NOUN,,KATAKANA,,,-,ロイヤルミルクティ,,roiyaru miruku ti,mocna czarna herbata z dużą ilością mleka,ang: royal milk tea,DICTIONARY2_SOURCE,,GroupId: 2495050
 309381,WORD_NOUN,,KATAKANA,,,-,アイ・ケア,,ai kea,pielęgnacja oczu,ang: eye care,DICTIONARY2_SOURCE,,GroupId: 2539830
 309382,WORD_NOUN,,KATAKANA,,,-,ストーリーボード,,sutooriiboodo,scenorys,"rozrysowanie kadrów, np. w filmie, ang: storyboard",DICTIONARY2_SOURCE,,GroupId: 1070850
 309383,WORD_NOUN,,KATAKANA,,,-,マウス・ボタン,,mausu botan,przycisk myszy,informatyka; ang: mouse button,DICTIONARY2_SOURCE,,GroupId: 2331570
@@ -21937,9 +21937,9 @@ chusteczki do soczewek",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,Group
 309723,WORD_NOUN,,KATAKANA,,,-,ヘアドライヤ,,hea doraiya,suszarka do włosów,ang: hair dryer,DICTIONARY2_SOURCE,,GroupId: 1118180
 309724,WORD_VERB_U,,HIRAGANA,,,-,そべる,,soberu,"położyć się leniwie
 ???",archaizm,DICTIONARY2_SOURCE,,GroupId: 2863973
-309725,WORD_NOUN,,HIRAGANA_KATAKANA,,,乳首ストーカー,ちくびストーカー,,chikubi sutookaa,nipple stalker,"slang; klient usług seksualnych, który koncentruje się na piersiach i sutkach",DICTIONARY2_SOURCE,,GroupId: 2864005
-309726,WORD_NOUN,,HIRAGANA_KATAKANA,,,乳首スト,ちくスト,,chiku suto,nipple stalker,"slang; skrót; klient usług seksualnych, który koncentruje się na piersiach i sutkach",DICTIONARY2_SOURCE,,GroupId: 2864006
-309727,WORD_NOUN,,KATAKANA,,,-,チクスト,,chiku suto,nipple stalker,"slang; skrót; klient usług seksualnych, który koncentruje się na piersiach i sutkach",DICTIONARY2_SOURCE,,GroupId: 2864006
+309725,WORD_NOUN,,HIRAGANA_KATAKANA,,,乳首ストーカー,ちくびストーカー,,chikubi sutookaa,"klient, który ostro traktuje sutki podczas seksu",slang; żargon pracowników seksualnych,DICTIONARY2_SOURCE,,GroupId: 2864005
+309726,WORD_NOUN,,HIRAGANA_KATAKANA,,,乳首スト,ちくスト,,chiku suto,"klient, który ostro traktuje sutki podczas seksu",slang; skrót; żargon pracowników seksualnych,DICTIONARY2_SOURCE,,GroupId: 2864006
+309727,WORD_NOUN,,KATAKANA,,,-,チクスト,,chiku suto,"klient, który ostro traktuje sutki podczas seksu",slang; skrót; żargon pracowników seksualnych,DICTIONARY2_SOURCE,,GroupId: 2864006
 309728,WORD_NOUN,,HIRAGANA,,,無発酵パン,むはっこうぱん,,muhakkou pan,przaśny chleb,"jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2864019
 309729,WORD_NOUN,,HIRAGANA,,,高承,こうしょう,,koushou,"wiedza
 świadomość
@@ -21979,12 +21979,9 @@ platforma obrotowa",,DICTIONARY2_SOURCE,,GroupId: 2864037
 światło migowe",,DICTIONARY2_SOURCE,,GroupId: 2864053
 309745,WORD_NOUN,,HIRAGANA,,,７分,ななふん,,nanafun,siedem minut,,DICTIONARY2_SOURCE,,GroupId: 2864067
 309746,WORD_NOUN,,HIRAGANA,,,９分,きゅうふん,,kyuufun,dziewięć minut,,DICTIONARY2_SOURCE,,GroupId: 2864068
-309747,WORD_NOUN,,KATAKANA,,,-,サクラレビュー,,sakura rebyuu,"fałszywa recenzja
-płatna recenzja",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2864071
-309748,WORD_NOUN,,KATAKANA,,,-,サクラ・レビュー,,sakura rebyuu,"fałszywa recenzja
-płatna recenzja",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2864071
+309747,WORD_NOUN,,KATAKANA,,,桜レビュー,サクラレビュー,,sakura rebyuu,"fałszywa recenzja
+płatna recenzja",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2864071
+309748,WORD_EXPRESSION,,HIRAGANA,,,今にして,いまにして,,ima ni shite,(tylko) teraz,"robienie, występowanie itp., szczególnie 今にして思えば",DICTIONARY2_SOURCE,,GroupId: 2863345
 309749,WORD_NOUN,,HIRAGANA,,,延し台,のしだい,,noshidai,deska do ugniatania,"jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2864073
 309750,WORD_NOUN,,HIRAGANA,,,伸し台,のしだい,,noshidai,deska do ugniatania,"jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2864073
 309751,WORD_NOUN,,HIRAGANA,,,子午儀,しごぎ,,shigogi,"instrument południka
@@ -21996,3 +21993,88 @@ punkt, w którym ciało niebieskie przecina południk",astronomia,DICTIONARY2_SO
 309753,WORD_NOUN,,HIRAGANA,,,脱オタ,だつおた,,datsu ota,"były nerd
 osoba, która porzuciła geekowskie lub nerdowskie hobby
 ktoś, kto porzucił stereotypowo geekowski strój, maniery itp.",potocznie,DICTIONARY2_SOURCE,,GroupId: 2864076
+309754,WORD_NOUN,,HIRAGANA,,,接地面,せっちめん,,secchimen,"bieżnik (opona itp.)
+obszar kontaktu z podłożem",,DICTIONARY2_SOURCE,,GroupId: 2863898
+309755,WORD_NOUN,,HIRAGANA,,,ミリ知ら,みりしら,,miri shira,"bycie ignorantem wobec dzieła, gry lub produktu i pomimo tego narzucanie innym własnego zdania",slang internetowy; skrót; od １ミリも知らない,DICTIONARY2_SOURCE,DUPLICATE 309756,GroupId: 2864013
+309756,WORD_NOUN,,KATAKANA_HIRAGANA,,,ミリ知ら,ミリしら,,miri shira,"bycie ignorantem wobec dzieła, gry lub produktu i pomimo tego narzucanie innym własnego zdania",slang internetowy; skrót; od １ミリも知らない,DICTIONARY2_SOURCE,DUPLICATE 309755,GroupId: 2864013
+309757,WORD_EXPRESSION,,HIRAGANA,,,春夏冬,あきない,,akinai,"nie męczyć się (czymś) (od 飽きない)
+biznes (od 商い, często w nazwach miejsc)
+handel (od 商い, często w nazwach miejsc)",żartobliwie,DICTIONARY2_SOURCE,DUPLICATE 309758,GroupId: 2864070
+309758,WORD_EXPRESSION,,HIRAGANA,,,春夏冬,あきなし,,akinashi,"nie męczyć się (czymś) (od 飽きない)
+biznes (od 商い, często w nazwach miejsc)
+handel (od 商い, często w nazwach miejsc)",żartobliwie,DICTIONARY2_SOURCE,DUPLICATE 309757,GroupId: 2864070
+309759,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,サバ読む,さばよむ,,saba yomu,"manipulować liczbami na swoją korzyść
+celowo źle liczyć
+zawyżać lub zaniżać swój wiek",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2864078
+309760,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,鯖読む,さばよむ,,saba yomu,"manipulować liczbami na swoją korzyść
+celowo źle liczyć
+zawyżać lub zaniżać swój wiek",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2864078
+309761,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,さば読む,さばよむ,,saba yomu,"manipulować liczbami na swoją korzyść
+celowo źle liczyć
+zawyżać lub zaniżać swój wiek",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2864078
+309762,WORD_NOUN,,KATAKANA_HIRAGANA,,,マネキン買い,マネキンがい,,manekin gai,kupowanie wszystkich ubrań prezentowanych na manekinie,,DICTIONARY2_SOURCE,,GroupId: 2864079
+309763,WORD_NOUN,,HIRAGANA,,,遠方,おちかた,,ochikata,"odległe miejsce
+odległy (np. teren, kraj i etc)
+odległy moment od danego punktu w czasie
+zamorski
+zagraniczny",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 20246
+DUPLICATE 309764",GroupId: 2864080
+309764,WORD_NOUN,,HIRAGANA,,,遠方,をちかた,,wochikata,"odległe miejsce
+odległy (np. teren, kraj i etc)
+odległy moment od danego punktu w czasie
+zamorski
+zagraniczny",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 20246
+DUPLICATE 309763",GroupId: 2864080
+309765,WORD_NOUN,,HIRAGANA,,,彼方,おちかた,,ochikata,"odległe miejsce
+odległy (np. teren, kraj i etc)
+odległy moment od danego punktu w czasie
+zamorski
+zagraniczny",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 3949
+DUPLICATE 23797
+DUPLICATE 23798
+DUPLICATE 23799
+DUPLICATE 23800
+DUPLICATE 309766",GroupId: 2864080
+309766,WORD_NOUN,,HIRAGANA,,,彼方,をちかた,,wochikata,"odległe miejsce
+odległy (np. teren, kraj i etc)
+odległy moment od danego punktu w czasie
+zamorski
+zagraniczny",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 3949
+DUPLICATE 23797
+DUPLICATE 23798
+DUPLICATE 23799
+DUPLICATE 23800
+DUPLICATE 309765",GroupId: 2864080
+309767,WORD_NOUN,,HIRAGANA,,,おち方,おちかた,,ochikata,"odległe miejsce
+odległy (np. teren, kraj i etc)
+odległy moment od danego punktu w czasie
+zamorski
+zagraniczny",archaizm,DICTIONARY2_SOURCE,DUPLICATE 309768,GroupId: 2864080
+309768,WORD_NOUN,,HIRAGANA,,,おち方,をちかた,,wochikata,"odległe miejsce
+odległy (np. teren, kraj i etc)
+odległy moment od danego punktu w czasie
+zamorski
+zagraniczny",archaizm,DICTIONARY2_SOURCE,DUPLICATE 309767,GroupId: 2864080
+309769,WORD_NOUN,,HIRAGANA,,,正羽,せいう,,seiu,pióro konturowe,ornitologia,DICTIONARY2_SOURCE,,GroupId: 2864081
+309770,WORD_NOUN,,HIRAGANA,,,後羽,こうう,,kouu,???,ornitologia,DICTIONARY2_SOURCE,,GroupId: 2864082
+309771,WORD_NOUN,,HIRAGANA,,,翮,かく,,kaku,dutka,ornitologia; dolna część stosiny pióra,DICTIONARY2_SOURCE,,GroupId: 2864083
+309772,WORD_NOUN,,HIRAGANA,,,羽板,うばん,,uban,???,ornitologia,DICTIONARY2_SOURCE,DUPLICATE 184026,GroupId: 2864084
+309773,WORD_ADJECTIVE_NA,,KATAKANA,,,-,アーケイック,,aakeikku,archaiczny,ang: archaic,DICTIONARY2_SOURCE,,GroupId: 2864085
+309774,WORD_NOUN,,HIRAGANA,,,鳥学,ちょうがく,,chougaku,ornitologia,,DICTIONARY2_SOURCE,,GroupId: 2864086
+309775,WORD_NOUN,,HIRAGANA,,,古動物学,こどうぶつがく,,kodoubutsugaku,paleozoologia,,DICTIONARY2_SOURCE,,GroupId: 2864087
+309776,WORD_NOUN,,HIRAGANA,,,線虫学,せんちゅうがく,,senchuugaku,nematologia,dział zoologii zajmujący się pasożytami owadów i roślin oraz nicieniami,DICTIONARY2_SOURCE,,GroupId: 2864088
+309777,WORD_NOUN,,HIRAGANA,,,クモ学,くもがく,,kumo gaku,arachnologia,nauka o pająkach,DICTIONARY2_SOURCE,DUPLICATE 303900,GroupId: 2864089
+309778,WORD_NOUN,,HIRAGANA,,,蜘蛛学,くもがく,,kumo gaku,arachnologia,nauka o pająkach,DICTIONARY2_SOURCE,,GroupId: 2864089
+309779,WORD_NOUN,,HIRAGANA,,,雲学,くもがく,,kumo gaku,nefologia,rzadko używane określenie; nauka o chmurach,DICTIONARY2_SOURCE,,GroupId: 2864090
+309780,WORD_NOUN,,HIRAGANA,,,貝類学,かいるいがく,,kairuigaku,konchiologia,nauka zajmująca się badaniem skorup mięczaków,DICTIONARY2_SOURCE,,GroupId: 2864091
+309781,WORD_NOUN,,HIRAGANA,,,クジラ学,くじらがく,,kujira gaku,cetologia,nauka o waleniach,DICTIONARY2_SOURCE,,GroupId: 2864092
+309782,WORD_NOUN,,HIRAGANA,,,鯨学,くじらがく,,kujira gaku,cetologia,nauka o waleniach,DICTIONARY2_SOURCE,,GroupId: 2864092
+309783,WORD_NOUN,,HIRAGANA,,,蠕虫学,ぜんちゅうがく,,zenchuugaku,helmintologia,nauka o robakach jelitowych,DICTIONARY2_SOURCE,,GroupId: 2864093
+309784,WORD_NOUN,,KATAKANA,,,-,ユースオリンピック,,yuusu orinpikku,Młodzieżowe Igrzyska Olimpijskie,,DICTIONARY2_SOURCE,,GroupId: 2864094
+309785,WORD_NOUN,,KATAKANA,,,-,ユース・オリンピック,,yuusu orinpikku,Młodzieżowe Igrzyska Olimpijskie,,DICTIONARY2_SOURCE,,GroupId: 2864094
+309786,WORD_NOUN,,KATAKANA_HIRAGANA,,,ユース五輪,ユースごりん,,yuusu gorin,Młodzieżowe Igrzyska Olimpijskie,,DICTIONARY2_SOURCE,,GroupId: 2864095
+309787,WORD_NOUN,,HIRAGANA,,,羽区,うく,,uku,pterylium,ornitologia; powierzchnia (pas) skóry ptaka porośnięta piórami konturowymi,DICTIONARY2_SOURCE,,GroupId: 2864096
+309788,WORD_NOUN,,HIRAGANA,,,光感受性,ひかりかんじゅせい,,hikari kanjusei,światłoczułość,medycyna,DICTIONARY2_SOURCE,,GroupId: 2864097
