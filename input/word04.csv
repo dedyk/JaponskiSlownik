@@ -4405,7 +4405,7 @@ język palajski","język należący do rodziny języków austronezyjskich, używ
 302784,WORD_NOUN,,HIRAGANA,,,山形県立米沢栄養大学,やまがたけんりつよねざわえいようだいがく,,yamagata kenritsu yonezawa eiyou daigaku,Uniwersytet Nauk o Żywieniu Yonezawa Prefektury Yamagata,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5742975
 302785,WORD_NOUN,,HIRAGANA,,,光華女子大学,こうかじょしだいがく,,kouka joshi daigaku,Żeńska Szkoła Wyższa Koka,nazwa organizacji; dawna nazwa,DICTIONARY2_SOURCE,,GroupId: 5266273
 302786,WORD_NOUN,,HIRAGANA,,,公立会津大学,こうりつあいづだいがく,,kouritsuaidu daigaku,Uniwersytet Kōritsuaizu,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5268622
-302787,WORD_NOUN,,HIRAGANA,,,広島自動車工業短期大学,ひろしまじどうしゃこうぎょうたんきだいがく,,hiroshima jidousha kougyou tanki daigaku,Policealna Szkoła Hiroshima Jidousha Kougyou,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5275622
+302787,WORD_NOUN,,HIRAGANA,,,広島自動車工業短期大学,ひろしまじどうしゃこうぎょうたんきだいがく,,hiroshima jidousha kougyou tanki daigaku,Policealna Szkoła Inżynierii Samochodowe w Hiroshima,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5275622
 302788,WORD_NOUN,,KATAKANA_HIRAGANA,,,江蘇大学,チャンスーだいがく,,chansuu daigaku,Uniwersytet Jiangsu,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5279779
 302789,WORD_NOUN,,HIRAGANA,,,国立陽明大学,こくりつようめいだいがく,,kokuritsu youmei daigaku,Narodowy Uniwersytet Yang-Ming,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5295442
 302790,WORD_NOUN,,HIRAGANA,,,七尾短期大学,ななおたんきだいがく,,nanao tanki daigaku,Uczelnia Nanao,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5339769
@@ -22092,9 +22092,17 @@ DUPLICATE 30005",GroupId: 1566420
 309787,WORD_NOUN,,HIRAGANA,,,羽区,うく,,uku,pterylium,ornitologia; powierzchnia (pas) skóry ptaka porośnięta piórami konturowymi,DICTIONARY2_SOURCE,,GroupId: 2864096
 309788,WORD_NOUN,,HIRAGANA,,,光感受性,ひかりかんじゅせい,,hikari kanjusei,światłoczułość,medycyna,DICTIONARY2_SOURCE,,GroupId: 2864097
 309789,WORD_NOUN,,KATAKANA,,,-,サック,,sakku,prezerwatywa,potocznie; skrót,DICTIONARY2_SOURCE,DUPLICATE 157261,GroupId: 2864102
-309790,WORD_NOUN,,KATAKANA,,,-,ラス,,rasu,???,,"DICTIONARY2_SOURCE
-TO_DELETE","DUPLICATE 14955
-DUPLICATE 131018",GroupId: 2864103
+309790,"WORD_ADJECTIVE_NA
+WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,恐面,コワオモテ,,kowaomote,"zaciekły wygląd
+przerażający wygląd
+twardy wygląd
+ostry wygląd
+straszliwy wygląd
+agresywna postawa
+represyjna postawa
+przyjmowanie twardej linii",,DICTIONARY2_SOURCE,"DUPLICATE 141848
+DUPLICATE 141849",GroupId: 2145350
 309791,WORD_NOUN,,KATAKANA,,,-,ドール,,dooru,cyjon rudy,"gatunek ssaka z rodziny psowatych (Canidae) o wyglądzie przypominającym zarówno lisa (puszysty ogon, niezbyt wysokie nogi) jak psa (kształt łba, zaokrąglone uszy), Cuon alpinus",DICTIONARY2_SOURCE,DUPLICATE 157439,GroupId: 2864105
 309792,WORD_VERB_U,,HIRAGANA,,,となり合う,となりあう,,tonari au,"przylegać do siebie
 sąsiadować ze sobą
@@ -22218,3 +22226,15 @@ układ napędowy",,DICTIONARY2_SOURCE,,GroupId: 2864112
 CVR",lotnictwo; ang: cockpit voice recorder,DICTIONARY2_SOURCE,,GroupId: 2864114
 309829,WORD_NOUN,,KATAKANA,,,-,コックピット・ボイス・レコーダー,,kokkupitto boisu rekoodaa,"rejestrator rozmów w kabinie pilotów
 CVR",lotnictwo; ang: cockpit voice recorder,DICTIONARY2_SOURCE,,GroupId: 2864114
+309830,WORD_NOUN,,HIRAGANA,,,狂想,きょうそう,,kyousou,"kapryśne myśli
+kłębiące się pomysły
+irracjonalne pomysły",,DICTIONARY2_SOURCE,,GroupId: 2864110
+309831,WORD_ADJECTIVE_NA,,HIRAGANA,,,偏向的,へんこうてき,,henkouteki,"stronniczy
+uprzedzony
+tendencyjny",,DICTIONARY2_SOURCE,,GroupId: 2864115
+309832,WORD_NOUN,,HIRAGANA,,,火伏せ,ひふせ,,hifuse,zapobieganie pożarom,szczególnie przez boską moc,DICTIONARY2_SOURCE,,GroupId: 2864116
+309833,WORD_NOUN,,HIRAGANA,,,火防,ひふせ,,hifuse,zapobieganie pożarom,szczególnie przez boską moc,DICTIONARY2_SOURCE,DUPLICATE 48736,GroupId: 2864116
+309834,WORD_NOUN,,KATAKANA_HIRAGANA,,,メイン料理,メインりょうり,,mein ryouri,danie główne,"jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2864117
+309835,WORD_NOUN,,HIRAGANA,,,医療行為,いりょうこうい,,iryou koui,"procedura medyczna
+leczenie",,DICTIONARY2_SOURCE,,GroupId: 2864118
+309836,WORD_NOUN,,HIRAGANA,,,屋台村,やたいむら,,yataimura,skupisko ulicznych stoisk,,DICTIONARY2_SOURCE,,GroupId: 2864119
