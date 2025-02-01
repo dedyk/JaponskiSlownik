@@ -421,7 +421,13 @@ public class Kanji2Helper {
 		List<GroupEnum> groupsInOldKanjiEntryForDictionary = oldKanjiEntryForDictionary.getGroups();
 		
 		for (GroupEnum groupEnum : groupsInOldKanjiEntryForDictionary) {
-			misc2.getGroups().add(Misc2InfoGroup.fromValue(groupEnum.getValue()));
+			
+			// nie dodajemy tych grup, gdyz ta informacja znajduje sie juz w MISC
+			if (Arrays.asList(GroupEnum.JOUYOU1, GroupEnum.JOUYOU2, GroupEnum.JOUYOU3, GroupEnum.JOUYOU4, GroupEnum.JOUYOU5, GroupEnum.JOUYOU6, 
+					GroupEnum.JOUYOUS, GroupEnum.JINMEIYOU, GroupEnum.JINMEIYOU_JOUYOU).contains(groupEnum) == false) {
+			
+				misc2.getGroups().add(Misc2InfoGroup.fromValue(groupEnum.getValue()));
+			}
 		}
 		
 		misc2.setUsed(oldKanjiEntryForDictionary.isUsed());		
