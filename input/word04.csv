@@ -22848,16 +22848,16 @@ nieoczekiwany przypływ gotówki",skrót; pisanie zwykle z użyciem kana,DICTION
 310109,WORD_NOUN,,KATAKANA,,,-,グリース・ガン,,guriisu gan,smarownica do broni,ang: grease gun,DICTIONARY2_SOURCE,,GroupId: 2486410
 310110,WORD_NOUN,,KATAKANA,,,-,ガトリング・ガン,,gatoringu gan,"broń Gatlinga
 karabin Gatlinga",ang: Gatling gun,DICTIONARY2_SOURCE,,GroupId: 2460140
-310111,WORD_NOUN,,KATAKANA,,,ダンス倶楽部,ダンスクラブ,,dansu kurabu,klub taneczny,pisanie zwykle z użyciem kana; ang: dance club,DICTIONARY2_SOURCE,,GroupId: 2085700
-310112,WORD_NOUN,,KATAKANA,,,ダンス倶楽部,ダンス・クラブ,,dansu kurabu,klub taneczny,pisanie zwykle z użyciem kana; ang: dance club,DICTIONARY2_SOURCE,,GroupId: 2085700
+310111,WORD_NOUN,,KATAKANA,,,ダンス倶楽部,ダンスクラブ,,dansu kurabu,klub taneczny,pisanie zwykle z użyciem kana; ang: dance club,DICTIONARY2_SOURCE,DUPLICATE 310112,GroupId: 2085700
+310112,WORD_NOUN,,KATAKANA,,,ダンス倶楽部,ダンス・クラブ,,dansu kurabu,klub taneczny,pisanie zwykle z użyciem kana; ang: dance club,DICTIONARY2_SOURCE,DUPLICATE 310111,GroupId: 2085700
 310113,WORD_NOUN,,KATAKANA,,,ヨット倶楽部,ヨットクラブ,,yotto kurabu,"klub jachtowy
-klub żeglarski",pisanie zwykle z użyciem kana; ang: yacht club,DICTIONARY2_SOURCE,,GroupId: 2003930
+klub żeglarski",pisanie zwykle z użyciem kana; ang: yacht club,DICTIONARY2_SOURCE,DUPLICATE 310114,GroupId: 2003930
 310114,WORD_NOUN,,KATAKANA,,,ヨット倶楽部,ヨット・クラブ,,yotto kurabu,"klub jachtowy
-klub żeglarski",pisanie zwykle z użyciem kana; ang: yacht club,DICTIONARY2_SOURCE,,GroupId: 2003930
-310115,WORD_NOUN,,KATAKANA,,,デート倶楽部,デートクラブ,,deeto kurabu,klub randkowy,pisanie zwykle z użyciem kana; ang: dating club; ang: date club,DICTIONARY2_SOURCE,,GroupId: 1081450
-310116,WORD_NOUN,,KATAKANA,,,デート倶楽部,デート・クラブ,,deeto kurabu,klub randkowy,pisanie zwykle z użyciem kana; ang: dating club; ang: date club,DICTIONARY2_SOURCE,,GroupId: 1081450
-310117,WORD_NOUN,,KATAKANA,,,テニス倶楽部,テニスクラブ,,tenisu kurabu,klub tenisowy,pisanie zwykle z użyciem kana; ang: tennis club,DICTIONARY2_SOURCE,,GroupId: 2003430
-310118,WORD_NOUN,,KATAKANA,,,テニス倶楽部,テニス・クラブ,,tenisu kurabu,klub tenisowy,pisanie zwykle z użyciem kana; ang: tennis club,DICTIONARY2_SOURCE,,GroupId: 2003430
+klub żeglarski",pisanie zwykle z użyciem kana; ang: yacht club,DICTIONARY2_SOURCE,DUPLICATE 310113,GroupId: 2003930
+310115,WORD_NOUN,,KATAKANA,,,デート倶楽部,デートクラブ,,deeto kurabu,klub randkowy,pisanie zwykle z użyciem kana; ang: dating club; ang: date club,DICTIONARY2_SOURCE,DUPLICATE 310116,GroupId: 1081450
+310116,WORD_NOUN,,KATAKANA,,,デート倶楽部,デート・クラブ,,deeto kurabu,klub randkowy,pisanie zwykle z użyciem kana; ang: dating club; ang: date club,DICTIONARY2_SOURCE,DUPLICATE 310115,GroupId: 1081450
+310117,WORD_NOUN,,KATAKANA,,,テニス倶楽部,テニスクラブ,,tenisu kurabu,klub tenisowy,pisanie zwykle z użyciem kana; ang: tennis club,DICTIONARY2_SOURCE,DUPLICATE 310118,GroupId: 2003430
+310118,WORD_NOUN,,KATAKANA,,,テニス倶楽部,テニス・クラブ,,tenisu kurabu,klub tenisowy,pisanie zwykle z użyciem kana; ang: tennis club,DICTIONARY2_SOURCE,DUPLICATE 310117,GroupId: 2003430
 310119,WORD_NOUN,,KATAKANA,,,-,アドレシング,,adoreshingu,adresowanie,ang: addressing,DICTIONARY2_SOURCE,,GroupId: 1017260
 310120,WORD_NOUN,,HIRAGANA,,,袋ねずみ,ふくろねずみ,,fukuro nezumi,opos,pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1411090
 310121,WORD_NOUN,,HIRAGANA,,,袋ネズミ,ふくろねずみ,,fukuro nezumi,opos,pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1411090
@@ -22865,3 +22865,26 @@ klub żeglarski",pisanie zwykle z użyciem kana; ang: yacht club,DICTIONARY2_SOU
 310123,WORD_NOUN,,HIRAGANA_KATAKANA,,,社交倶楽部,しゃこうクラブ,,shakou kurabu,klub towarzyski,,DICTIONARY2_SOURCE,,GroupId: 2585580
 310124,WORD_NOUN,,KATAKANA,,,-,ファイルマネージャー,,fairu maneejaa,menedżer plików,informatyka; ang: file manager,DICTIONARY2_SOURCE,,GroupId: 2323490
 310125,WORD_NOUN,,KATAKANA,,,-,ファイル・マネージャー,,fairu maneejaa,menedżer plików,informatyka; ang: file manager,DICTIONARY2_SOURCE,,GroupId: 2323490
+310126,WORD_NOUN,,HIRAGANA_KATAKANA,,,万バズ,まんバズ,,man bazu,"10,000 polubień
+10,000 lików",slang internetowy; postu w mediach społecznościowych,DICTIONARY2_SOURCE,,GroupId: 2864267
+310127,WORD_NOUN,,KATAKANA_HIRAGANA,,,シード選手,シードせんしゅ,,shiido senshu,rozstawiony zawodnik,,DICTIONARY2_SOURCE,,GroupId: 2864282
+310128,WORD_NOUN,,KATAKANA_HIRAGANA,,,シード校,シードこう,,shiido kou,rozstawiona szkolna drużyna,,DICTIONARY2_SOURCE,,GroupId: 2864283
+310129,WORD_NOUN,,KATAKANA,,,-,シードマネー,,shiido manee,"kapitał zalążkowy
+finansowanie zalążkowe",finanse,DICTIONARY2_SOURCE,,GroupId: 2864284
+310130,WORD_NOUN,,KATAKANA,,,-,シード・マネー,,shiido manee,"kapitał zalążkowy
+finansowanie zalążkowe",finanse,DICTIONARY2_SOURCE,,GroupId: 2864284
+310131,WORD_NOUN,,HIRAGANA,,,逆凸,ぎゃくとつ,,gyakutotsu,dzwonienie do kogoś podczas własnego livestreamu,slang internetowy,DICTIONARY2_SOURCE,,GroupId: 2864285
+310132,WORD_NOUN,,HIRAGANA_KATAKANA,,,微量ガス,びりょうガス,,biryou gasu,"gaz śladowy
+gazy śladowe",chemia,DICTIONARY2_SOURCE,,GroupId: 2864286
+310133,WORD_NOUN,,KATAKANA,,,-,エアロブレーキング,,earobureekingu,???,ang: aerobreaking,DICTIONARY2_SOURCE,,GroupId: 2864287
+310134,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,ド変態,どへんたい,,do hentai,skrajny zboczeniec,,DICTIONARY2_SOURCE,,GroupId: 2864288
+310135,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,ど変態,どへんたい,,do hentai,skrajny zboczeniec,,DICTIONARY2_SOURCE,,GroupId: 2864288
+310136,WORD_NOUN,,KATAKANA,,,-,ストラテジスト,,sutoratejisuto,strateg,ang: strategist,DICTIONARY2_SOURCE,,GroupId: 2864289
+310137,WORD_NOUN,,HIRAGANA_KATAKANA,,,老人クラブ,ろうじんクラブ,,roujin kurabu,klub seniora,,DICTIONARY2_SOURCE,,GroupId: 2864290
+310138,WORD_NOUN,,HIRAGANA_KATAKANA,,,老人倶楽部,ろうじんクラブ,,roujin kurabu,klub seniora,,DICTIONARY2_SOURCE,,GroupId: 2864290
+310139,WORD_NOUN,,KATAKANA,,,-,ノッティンガムフォレスト,,nottingamu foresuto,Nottingham Forest,"nazwa organizacji; angielski klub piłkarski występujący w Premier League, z siedzibą w West Bridgford",DICTIONARY2_SOURCE,,GroupId: 5747213
+310140,WORD_NOUN,,KATAKANA,,,-,ノッティンガム・フォレスト,,nottingamu foresuto,Nottingham Forest,"nazwa organizacji; angielski klub piłkarski występujący w Premier League, z siedzibą w West Bridgford",DICTIONARY2_SOURCE,,GroupId: 5747213
+310141,WORD_NOUN,,HIRAGANA,,,濃尾地震,のうびじしん,,noubi jishin,"trzęsienie ziemi Mino-Owari (1891)
+trzęsienie ziemi Nōbi",wydarzenie,DICTIONARY2_SOURCE,,GroupId: 5747214
