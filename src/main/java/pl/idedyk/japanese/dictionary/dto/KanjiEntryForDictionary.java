@@ -7,7 +7,7 @@ public class KanjiEntryForDictionary extends KanjiEntry {
 	private static final long serialVersionUID = 1L;
 	
 	private String kanjiDic2RawData;
-
+	
 	public String getKanjiDic2RawData() {
 		return kanjiDic2RawData;
 	}

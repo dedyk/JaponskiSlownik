@@ -785,8 +785,10 @@ public class CsvReaderWriter {
 				csvWriter.write(Helper.convertListToString(kanjiDic2Entry.getRadicals()));
 				csvWriter.write(Helper.convertListToString(kanjiDic2Entry.getOnReading()));
 				csvWriter.write(Helper.convertListToString(kanjiDic2Entry.getKunReading()));
+				csvWriter.write(Helper.convertListToString(kanjiDic2Entry.getNanoriReading()));
 			} else {
 				csvWriter.write(String.valueOf(""));
+				csvWriter.write(Helper.convertListToString(new ArrayList<String>()));
 				csvWriter.write(Helper.convertListToString(new ArrayList<String>()));
 				csvWriter.write(Helper.convertListToString(new ArrayList<String>()));
 				csvWriter.write(Helper.convertListToString(new ArrayList<String>()));

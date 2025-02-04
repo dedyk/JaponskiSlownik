@@ -13,6 +13,7 @@ import java.util.TreeMap;
 
 import org.dom4j.Document;
 import org.dom4j.Element;
+import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
 import pl.idedyk.japanese.dictionary.dto.KanjiDic2EntryForDictionary;
@@ -98,6 +99,7 @@ public class KanjiDic2Reader {
         	
         	List<String> onReading = new ArrayList<String>();
         	List<String> kunReading = new ArrayList<String>();
+        	List<String> nanoriReading = new ArrayList<String>();
         	
         	List<String> engMeaning = new ArrayList<String>();
         	
@@ -108,6 +110,13 @@ public class KanjiDic2Reader {
             	kunReading = getReading(rmgroup, "ja_kun");
             	
             	engMeaning = getEngMeaning(rmgroup);
+            	
+            	// nanori
+            	List<Node> nanoriNodeList = readingMeaning.selectNodes("nanori");
+            	
+            	for (Node currentNonoriNode : nanoriNodeList) {
+            		nanoriReading.add(currentNonoriNode.getText());
+				}
         	}        	
         	
         	int strokeCount = Integer.parseInt(currentCharacterAsElement.selectSingleNode("misc/stroke_count").getText());
@@ -143,6 +152,7 @@ public class KanjiDic2Reader {
         	
         	kanjiDic2Entry.setOnReading(onReading);
         	kanjiDic2Entry.setKunReading(kunReading);
+        	kanjiDic2Entry.setNanoriReading(nanoriReading);
         	
         	kanjiDic2Entry.setEngMeaning(engMeaning);
         	
