@@ -15138,10 +15138,16 @@ DUPLICATE 306979",GroupId: 2862973
 postać ze zwierzęcymi uszami",slang mangowy,DICTIONARY2_SOURCE,"DUPLICATE 306976
 DUPLICATE 306977
 DUPLICATE 306978",GroupId: 2862973
-306980,WORD_NOUN,,HIRAGANA,,,夕べ,ゆうべ,,yuube,"wieczór (poetycki termin)
-wieczór (wydarzenia specjalnego) (używane w tytułach po rzeczowniku + の)",,DICTIONARY2_SOURCE,,GroupId: 2863051
-306981,WORD_NOUN,,HIRAGANA,,,夕,ゆうべ,,yuube,"wieczór (poetycki termin)
-wieczór (wydarzenia specjalnego) (używane w tytułach po rzeczowniku + の)",,DICTIONARY2_SOURCE,"DUPLICATE 4382
+306980,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,夕べ,ゆうべ,,yuube,"wieczór (poetycki termin)
+wieczór (wydarzenia specjalnego) (używane w tytułach po rzeczowniku + の)
+wczoraj wieczorem (zwykle 昨夜)
+wczorajszy wieczór (zwykle 昨夜)",,DICTIONARY2_SOURCE,,GroupId: 2863051
+306981,"WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,夕,ゆうべ,,yuube,"wieczór (poetycki termin)
+wieczór (wydarzenia specjalnego) (używane w tytułach po rzeczowniku + の)
+wczoraj wieczorem (zwykle 昨夜)
+wczorajszy wieczór (zwykle 昨夜)",,DICTIONARY2_SOURCE,"DUPLICATE 4382
 DUPLICATE 29797",GroupId: 2863051
 306982,"WORD_NOUN
 WORD_ADVERB",,HIRAGANA,,,昨夜,さくや,,sakuya,"wczoraj wieczorem
@@ -23194,3 +23200,22 @@ mieć środki",,DICTIONARY2_SOURCE,,GroupId: 2864367
 310301,WORD_NOUN,,KATAKANA,,,ＧＬ,ジー・エル,,jii eru,komiksy lub powieści o kobiecej homoseksualności,"skrót; od 和製英語, dziewczęca miłość",DICTIONARY2_SOURCE,DUPLICATE 310302,GroupId: 2864387
 310302,WORD_NOUN,,KATAKANA,,,ＧＬ,ジーエル,,jii eru,komiksy lub powieści o kobiecej homoseksualności,"skrót; od 和製英語, dziewczęca miłość",DICTIONARY2_SOURCE,DUPLICATE 310301,GroupId: 2864387
 310303,WORD_NOUN,,HIRAGANA,,,株価指数連動型投資信託,かぶかしすうれんどうがたとうししんたく,,kabuka shisuu rendougata toushi shintaku,fundusz ETF,"finanse; fundusz indeksowy, którego jednostki uczestnictwa są przedmiotem obrotu giełdowego, ang: exchange-traded fund",DICTIONARY2_SOURCE,,GroupId: 2864388
+310304,WORD_NOUN,,KATAKANA,,,-,ミッド・ティア,,middo tia,???,"informatyka; np. serwera, macierzy i etc, ang: mid tier",DICTIONARY2_SOURCE,,GroupId: 2332920
+310305,WORD_NOUN,,KATAKANA,,,-,ミドル・レンジ・マシン,,midoru renji mashin,"maszyna klasy średniej
+maszyna średniej klasy",informatyka,DICTIONARY2_SOURCE,,GroupId: 2333010
+310306,WORD_NOUN,,KATAKANA,,,-,シリアルボウル,,shiriaru bouru,miska na płatki,ang: cereal bowl,DICTIONARY2_SOURCE,,GroupId: 2864390
+310307,WORD_NOUN,,KATAKANA,,,-,シリアルボール,,shiriaru booru,miska na płatki,ang: cereal bowl,DICTIONARY2_SOURCE,,GroupId: 2864390
+310308,WORD_NOUN,,KATAKANA,,,-,シリアル・ボウル,,shiriaru bouru,miska na płatki,ang: cereal bowl,DICTIONARY2_SOURCE,,GroupId: 2864390
+310309,WORD_NOUN,,KATAKANA,,,-,シリアル・ボール,,shiriaru booru,miska na płatki,ang: cereal bowl,DICTIONARY2_SOURCE,,GroupId: 2864390
+310310,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,ソーシャルグッド,,soosharu guddo,"dobro społeczne
+wysiłki na rzecz pozytywnego wkładu w społeczeństwo (często w odniesieniu do CSR)",,DICTIONARY2_SOURCE,,GroupId: 2864396
+310311,"WORD_NOUN
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,ソーシャル・グッド,,soosharu guddo,"dobro społeczne
+wysiłki na rzecz pozytywnego wkładu w społeczeństwo (często w odniesieniu do CSR)",,DICTIONARY2_SOURCE,,GroupId: 2864396
+310312,WORD_NOUN,,HIRAGANA,,,全国厚生年金受給者団体連合会,ぜんこくこうせいねんきんじゅきゅうしゃだんたいれんごうかい,,zenkoku kousei nenkin jukyuusha dantai rengoukai,Krajowa Federacja Stowarzyszeń Pracowników Emerytów,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5747226
+310313,WORD_NOUN,,HIRAGANA,,,全年連,ぜんねんれん,,zennenren,Krajowa Federacja Stowarzyszeń Pracowników Emerytów,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5747227
+310314,WORD_NOUN,,HIRAGANA,,,厚生連,こうせいれん,,kouseiren,Krajowy Związek Spółdzielni Rolniczych,nazwa organizacji; prowincjonalny oddział,DICTIONARY2_SOURCE,,GroupId: 5747228
+310315,WORD_NOUN,,HIRAGANA,,,北海道社会事業協会,ほっかいどうしゃかいじぎょうきょうかい,,hokkaidou shakai jigyou kyoukai,Stowarzyszenie Pomocy Społecznej Hokkaido,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5747229
+310316,WORD_NOUN,,HIRAGANA,,,全国厚生農業協同組合連合会,ぜんこくこうせいのうぎょうきょうどうくみあいれんごうかい,,zenkoku kousei nougyou kyoudou kumiai rengoukai,Krajowy Związek Spółdzielni Rolniczych,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5747230
+310317,WORD_NOUN,,HIRAGANA,,,全厚連,ぜんこうれん,,zenkouren,Krajowy Związek Spółdzielni Rolniczych,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5747231
