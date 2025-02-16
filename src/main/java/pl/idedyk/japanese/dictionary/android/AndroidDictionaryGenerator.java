@@ -22,6 +22,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.SerializationUtils;
 
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
@@ -50,8 +51,13 @@ import pl.idedyk.japanese.dictionary.tools.TatoebaSentencesParser;
 import pl.idedyk.japanese.dictionary.tools.TomoeReader;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
+import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaning;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum;
 
 import com.csvreader.CsvReader;
 
@@ -90,7 +96,7 @@ public class AndroidDictionaryGenerator {
 		
 		List<KanjiEntryForDictionary> kanjiEntries = generateKanjiEntries(dictionary, jmedictCommon, kanjivgEntryMap, "input/kanji.csv",
 				"../JapaneseDictionary_additional/kanjidic2.xml", "../JapaneseDictionary_additional/kradfile",
-				"output/kanji.csv");
+				"output/kanji.csv", "output/kanji2.xml");
 
 		generateNamePolishJapaneseEntries("output/names.csv");
 		
@@ -343,7 +349,7 @@ public class AndroidDictionaryGenerator {
 	private static List<KanjiEntryForDictionary> generateKanjiEntries(List<PolishJapaneseEntry> dictionary,
 			TreeMap<String, EDictEntry> jmedictCommon,
 			Map<String, KanjivgEntry> kanjivgEntryMap, String sourceKanjiName, String sourceKanjiDic2FileName,
-			String sourceKradFileName, String destinationFileName) throws Exception {
+			String sourceKradFileName, String destinationFileName, String kanji2XmlFile) throws Exception {
 
 		System.out.println("generateKanjiEntries");
 
@@ -379,6 +385,70 @@ public class AndroidDictionaryGenerator {
 		FileOutputStream outputStream = new FileOutputStream(new File(destinationFileName));
 
 		CsvReaderWriter.generateKanjiCsv(outputStream, kanjiEntries, true, null);
+		
+		// generowanie kanji w nowym formacie 
+		System.out.println("generateKanjiEntries: generateKanji2Xml");
+		
+		// wczytywanie pomocnika slownikowego
+		Kanji2Helper kanji2Helper = Kanji2Helper.getOrInit();
+		
+		// wczytanie angielskiego slownika kanji
+		Kanjidic2 englishKanjidic2 = kanji2Helper.getKanjidic2();
+		
+		// wczytanie polskiego slownika kanji
+		Kanjidic2 polishDictionaryKanjidic2 = kanji2Helper.getPolishDictionaryKanjidic2();
+
+		// stworzenie nowego pustego Kanjidic2
+		Kanjidic2 resultKanjidic2 = kanji2Helper.createEmptyKanjidic2();
+		
+		// skopiowanie naglowka z polskiego slownika
+		resultKanjidic2.setHeader(polishDictionaryKanjidic2.getHeader());
+		
+		for (CharacterInfo englishKanjidic2CharacterInfo : englishKanjidic2.getCharacterList()) {
+			
+			// sprawdzenie, czy to kanji jest juz w polskim slowniku
+			String kanji = englishKanjidic2CharacterInfo.getKanji();
+			
+			CharacterInfo polishKanjidic2CharacterInfo = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(kanji);
+			
+			if (polishKanjidic2CharacterInfo == null) { // nie ma, wiec musimy je wygenerowac
+				System.out.println("WARNING: No polish dictionary kanjidic2 for: " + kanji);
+				
+				// szukamy kanji w starym formacie
+				KanjiEntryForDictionary oldPolishKanjiEntryForDictionary = kanjiEntries.stream().filter(f -> f.getKanji().equals(kanji) == true).findFirst().orElse(null);
+				
+				if (oldPolishKanjiEntryForDictionary == null) {
+					throw new  Exception("No old polish kanji entry for: " + kanji);
+				}
+				
+				// klon angielskiego znaku
+				polishKanjidic2CharacterInfo = (CharacterInfo)SerializationUtils.clone(englishKanjidic2CharacterInfo);
+				
+				final CharacterInfo polishKanjidic2CharacterInfoAsFinal = polishKanjidic2CharacterInfo;
+
+				// dodanie polskiego tlumaczenia ze starego slownika
+				oldPolishKanjiEntryForDictionary.getPolishTranslates().stream().forEach(c -> {	
+					
+					if (c.equals("-") == false) {
+						List<ReadingMeaningInfoReadingMeaningGroupMeaning> polishKanjidic2CharacterInfoMeaningList = polishKanjidic2CharacterInfoAsFinal.getReadingMeaning().getReadingMeaningGroup().getMeaningList();
+						
+						ReadingMeaningInfoReadingMeaningGroupMeaning newPolMeaning = new ReadingMeaningInfoReadingMeaningGroupMeaning();
+						
+						newPolMeaning.setLang(ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL);
+						newPolMeaning.setValue(c);
+						
+						polishKanjidic2CharacterInfoMeaningList.add(newPolMeaning);						
+					}
+				});
+			}
+			
+			// dodajemy
+			resultKanjidic2.getCharacterList().add(polishKanjidic2CharacterInfo);
+		}
+		
+		kanji2Helper.saveKanjidic2AsXml(resultKanjidic2, new File(kanji2XmlFile));
+		
+		System.exit(1);
 
 		return kanjiEntries;
 	}
