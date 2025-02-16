@@ -422,12 +422,15 @@ public class AndroidDictionaryGenerator {
 				if (oldPolishKanjiEntryForDictionary == null) {
 					throw new  Exception("No old polish kanji entry for: " + kanji);
 				}
-				
+
 				// klon angielskiego znaku
 				polishKanjidic2CharacterInfo = (CharacterInfo)SerializationUtils.clone(englishKanjidic2CharacterInfo);
 				
-				final CharacterInfo polishKanjidic2CharacterInfoAsFinal = polishKanjidic2CharacterInfo;
+				// dodajemy pare informacji z starego slownika
+				polishKanjidic2CharacterInfo = kanji2Helper.addDatasFromOldKanjiEntryForDictionary(polishKanjidic2CharacterInfo, oldPolishKanjiEntryForDictionary);				
 
+				final CharacterInfo polishKanjidic2CharacterInfoAsFinal = polishKanjidic2CharacterInfo;
+				
 				// dodanie polskiego tlumaczenia ze starego slownika
 				oldPolishKanjiEntryForDictionary.getPolishTranslates().stream().forEach(c -> {	
 					
@@ -456,7 +459,16 @@ public class AndroidDictionaryGenerator {
 				}
 			}
 			
-			// dodajemy
+			// dodanie informacji o kolejnosci pisania znakow
+			polishKanjidic2CharacterInfo.getMisc2().getStrokePaths().clear();
+			
+			KanjivgEntry kanjivgEntry = kanjivgEntryMap.get(kanji);
+			
+			if (kanjivgEntry != null && kanjivgEntry.getStrokePaths() != null) {
+				polishKanjidic2CharacterInfo.getMisc2().getStrokePaths().addAll(kanjivgEntry.getStrokePaths());
+			}
+						
+			// dodajemy do listy wynikowej
 			resultKanjidic2.getCharacterList().add(polishKanjidic2CharacterInfo);
 		}
 		

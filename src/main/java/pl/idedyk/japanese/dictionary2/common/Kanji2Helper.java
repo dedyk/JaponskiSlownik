@@ -713,6 +713,7 @@ public class Kanji2Helper {
 			
 			csvWriter.write(EntryHumanCsvFieldType.BEGIN.name()); columnsNo++;
 			csvWriter.write(characterInfo.getKanji()); columnsNo++;
+			csvWriter.write(characterInfo.getId().toString()); columnsNo++;
 			
 			// wypelniacz			
 			for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
@@ -731,6 +732,7 @@ public class Kanji2Helper {
 			}
 			
 			characterInfo.setKanji(csvReader.get(1));
+			characterInfo.setId(Integer.parseInt(csvReader.get(2)));
 		}
 	}
 	
