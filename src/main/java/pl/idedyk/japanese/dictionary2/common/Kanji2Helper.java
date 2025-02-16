@@ -408,6 +408,8 @@ public class Kanji2Helper {
 		// tworzymy kopie, aby nie modyfikowac glownego elementu
 		characterInfo = (CharacterInfo)SerializationUtils.clone(characterInfo);
 		
+		characterInfo.setId(oldKanjiEntryForDictionary.getId());
+		
 		Misc2Info misc2 = characterInfo.getMisc2();
 		
 		if (misc2 == null) {
