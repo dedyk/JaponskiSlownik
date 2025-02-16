@@ -23,6 +23,7 @@ import java.util.TreeSet;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.SerializationUtils;
+import org.apache.commons.lang.StringUtils;
 
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
@@ -56,6 +57,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupAdditionalInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaning;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum;
 
@@ -440,6 +442,18 @@ public class AndroidDictionaryGenerator {
 						polishKanjidic2CharacterInfoMeaningList.add(newPolMeaning);						
 					}
 				});
+				
+				// dodajemy jeszcze informacje dodatkowe
+				String oldPolishKanjiEntryForDictionaryInfo = oldPolishKanjiEntryForDictionary.getInfo();
+				
+				if (StringUtils.isBlank(oldPolishKanjiEntryForDictionaryInfo) == false) {
+					ReadingMeaningInfoReadingMeaningGroupAdditionalInfo newAdditionalInfo = new ReadingMeaningInfoReadingMeaningGroupAdditionalInfo();
+					
+					newAdditionalInfo.setLang(ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL);
+					newAdditionalInfo.setValue(oldPolishKanjiEntryForDictionaryInfo);					
+					
+					polishKanjidic2CharacterInfoAsFinal.getReadingMeaning().getReadingMeaningGroup().getAdditionalInfoList().add(newAdditionalInfo);
+				}
 			}
 			
 			// dodajemy
@@ -447,8 +461,6 @@ public class AndroidDictionaryGenerator {
 		}
 		
 		kanji2Helper.saveKanjidic2AsXml(resultKanjidic2, new File(kanji2XmlFile));
-		
-		System.exit(1);
 
 		return kanjiEntries;
 	}
