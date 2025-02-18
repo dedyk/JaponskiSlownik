@@ -411,18 +411,18 @@ public class AndroidDictionaryGenerator {
 			// sprawdzenie, czy to kanji jest juz w polskim slowniku
 			String kanji = englishKanjidic2CharacterInfo.getKanji();
 			
+			// szukamy kanji w starym formacie
+			KanjiEntryForDictionary oldPolishKanjiEntryForDictionary = kanjiEntries.stream().filter(f -> f.getKanji().equals(kanji) == true).findFirst().orElse(null);
+			
+			if (oldPolishKanjiEntryForDictionary == null) {
+				throw new  Exception("No old polish kanji entry for: " + kanji);
+			}
+			
 			CharacterInfo polishKanjidic2CharacterInfo = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(kanji);
 			
 			if (polishKanjidic2CharacterInfo == null) { // nie ma, wiec musimy je wygenerowac
 				System.out.println("WARNING: No polish dictionary kanjidic2 for: " + kanji);
 				
-				// szukamy kanji w starym formacie
-				KanjiEntryForDictionary oldPolishKanjiEntryForDictionary = kanjiEntries.stream().filter(f -> f.getKanji().equals(kanji) == true).findFirst().orElse(null);
-				
-				if (oldPolishKanjiEntryForDictionary == null) {
-					throw new  Exception("No old polish kanji entry for: " + kanji);
-				}
-
 				// klon angielskiego znaku
 				polishKanjidic2CharacterInfo = (CharacterInfo)SerializationUtils.clone(englishKanjidic2CharacterInfo);
 				
@@ -467,6 +467,9 @@ public class AndroidDictionaryGenerator {
 			if (kanjivgEntry != null && kanjivgEntry.getStrokePaths() != null) {
 				polishKanjidic2CharacterInfo.getMisc2().getStrokePaths().addAll(kanjivgEntry.getStrokePaths());
 			}
+			
+			// uzupelnienie o liste elementow podstawowych
+			polishKanjidic2CharacterInfo.getMisc2().getRadicals().addAll(oldPolishKanjiEntryForDictionary.getKanjiDic2Entry().getRadicals());
 						
 			// dodajemy do listy wynikowej
 			resultKanjidic2.getCharacterList().add(polishKanjidic2CharacterInfo);
