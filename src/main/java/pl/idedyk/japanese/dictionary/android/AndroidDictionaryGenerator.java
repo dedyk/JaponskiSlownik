@@ -475,6 +475,15 @@ public class AndroidDictionaryGenerator {
 			resultKanjidic2.getCharacterList().add(polishKanjidic2CharacterInfo);
 		}
 		
+		// sortowanie kanjidic2
+		resultKanjidic2.getCharacterList().sort(new Comparator<CharacterInfo>() {
+
+			@Override
+			public int compare(CharacterInfo o1, CharacterInfo o2) {
+				return o1.getId().compareTo(o2.getId());
+			}
+		});
+		
 		kanji2Helper.saveKanjidic2AsXml(resultKanjidic2, new File(kanji2XmlFile));
 
 		return kanjiEntries;
