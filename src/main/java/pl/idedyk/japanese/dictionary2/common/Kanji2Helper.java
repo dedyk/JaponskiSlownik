@@ -1640,6 +1640,10 @@ public class Kanji2Helper {
 				String additionalPolInfoLang = readingMeaningGroup.getAdditionalInfoList().stream().filter(additionalInfo -> additionalInfo.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL).
 						map(additionalInfo -> additionalInfo.getValue()).findFirst().orElse("");
 				
+				if (meaningEngLangList.size() != 0 && meaningPolLangList.size() == 0) { // tlumaczenie zostalo skasowane?
+					throw new RuntimeException("No translates for: " + characterInfo.getKanji());
+				}
+				
 				//
 				
 				if (meaningEngLangList.size() > 0) {
