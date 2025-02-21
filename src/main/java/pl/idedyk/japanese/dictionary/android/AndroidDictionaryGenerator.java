@@ -55,7 +55,7 @@ import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupAdditionalInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupMeaning;
@@ -406,7 +406,7 @@ public class AndroidDictionaryGenerator {
 		// skopiowanie naglowka z polskiego slownika
 		resultKanjidic2.setHeader(polishDictionaryKanjidic2.getHeader());
 		
-		for (CharacterInfo englishKanjidic2CharacterInfo : englishKanjidic2.getCharacterList()) {
+		for (KanjiCharacterInfo englishKanjidic2CharacterInfo : englishKanjidic2.getCharacterList()) {
 			
 			// sprawdzenie, czy to kanji jest juz w polskim slowniku
 			String kanji = englishKanjidic2CharacterInfo.getKanji();
@@ -418,18 +418,18 @@ public class AndroidDictionaryGenerator {
 				throw new  Exception("No old polish kanji entry for: " + kanji);
 			}
 			
-			CharacterInfo polishKanjidic2CharacterInfo = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(kanji);
+			KanjiCharacterInfo polishKanjidic2CharacterInfo = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(kanji);
 			
 			if (polishKanjidic2CharacterInfo == null) { // nie ma, wiec musimy je wygenerowac
 				System.out.println("WARNING: No polish dictionary kanjidic2 for: " + kanji);
 				
 				// klon angielskiego znaku
-				polishKanjidic2CharacterInfo = (CharacterInfo)SerializationUtils.clone(englishKanjidic2CharacterInfo);
+				polishKanjidic2CharacterInfo = (KanjiCharacterInfo)SerializationUtils.clone(englishKanjidic2CharacterInfo);
 				
 				// dodajemy pare informacji z starego slownika
 				polishKanjidic2CharacterInfo = kanji2Helper.addDatasFromOldKanjiEntryForDictionary(polishKanjidic2CharacterInfo, oldPolishKanjiEntryForDictionary);				
 
-				final CharacterInfo polishKanjidic2CharacterInfoAsFinal = polishKanjidic2CharacterInfo;
+				final KanjiCharacterInfo polishKanjidic2CharacterInfoAsFinal = polishKanjidic2CharacterInfo;
 				
 				// dodanie polskiego tlumaczenia ze starego slownika
 				oldPolishKanjiEntryForDictionary.getPolishTranslates().stream().forEach(c -> {	
@@ -476,10 +476,10 @@ public class AndroidDictionaryGenerator {
 		}
 		
 		// sortowanie kanjidic2
-		resultKanjidic2.getCharacterList().sort(new Comparator<CharacterInfo>() {
+		resultKanjidic2.getCharacterList().sort(new Comparator<KanjiCharacterInfo>() {
 
 			@Override
-			public int compare(CharacterInfo o1, CharacterInfo o2) {
+			public int compare(KanjiCharacterInfo o1, KanjiCharacterInfo o2) {
 				return o1.getId().compareTo(o2.getId());
 			}
 		});

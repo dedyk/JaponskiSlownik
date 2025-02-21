@@ -2,7 +2,7 @@ package pl.idedyk.japanese.kanji2.app;
 
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 
 public class UpdateKanjiPolishDictionary {
@@ -30,10 +30,10 @@ public class UpdateKanjiPolishDictionary {
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
 		
 		// chodzimy po wszystkich elementach w polskim slowniku kanji i sprawdzamy, czy nie nastapila zmiana
-		for (CharacterInfo currentPolishKanjiCharacterInfo : polishDictionaryKanjidic2.getCharacterList()) {
+		for (KanjiCharacterInfo currentPolishKanjiCharacterInfo : polishDictionaryKanjidic2.getCharacterList()) {
 			
 			// szukamy wpisu w angielskim slowniku
-			CharacterInfo englishKanjiCharacterInfo = kanji2Helper.getKanjiFromKanjidic2(currentPolishKanjiCharacterInfo.getKanji());
+			KanjiCharacterInfo englishKanjiCharacterInfo = kanji2Helper.getKanjiFromKanjidic2(currentPolishKanjiCharacterInfo.getKanji());
 			
 			if (englishKanjiCharacterInfo == null) { // ten element zostal skasowany
 				

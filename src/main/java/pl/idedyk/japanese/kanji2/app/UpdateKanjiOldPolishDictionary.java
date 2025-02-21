@@ -7,7 +7,7 @@ import java.util.List;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 
 public class UpdateKanjiOldPolishDictionary {
@@ -24,7 +24,7 @@ public class UpdateKanjiOldPolishDictionary {
 		List<KanjiEntryForDictionary> oldKanjiEntryForDictionaryList = kanji2Helper.getOldKanjiPolishDictionaryList();
 		
 		// chodzimy po wszystkich elementach w polskim slowniku kanji i sprawdzamy, czy nie nastapila zmiana
-		for (CharacterInfo currentPolishKanjiCharacterInfo : polishDictionaryKanjidic2.getCharacterList()) {
+		for (KanjiCharacterInfo currentPolishKanjiCharacterInfo : polishDictionaryKanjidic2.getCharacterList()) {
 			
 			// pobieramy kanji w starym formacie slownika
 			KanjiEntryForDictionary oldKanjiEntryForDictionary = kanji2Helper.getOldKanjiEntryForDictionary(currentPolishKanjiCharacterInfo.getKanji());

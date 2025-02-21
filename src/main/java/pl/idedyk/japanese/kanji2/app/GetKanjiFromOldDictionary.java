@@ -13,7 +13,7 @@ import org.apache.commons.cli.Options;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 
 public class GetKanjiFromOldDictionary {
@@ -85,9 +85,9 @@ public class GetKanjiFromOldDictionary {
 		
 		Kanjidic2 kanjidic2 = kanji2Helper.getKanjidic2();
 		
-		for (CharacterInfo characterInfo : kanjidic2.getCharacterList()) {			
+		for (KanjiCharacterInfo characterInfo : kanjidic2.getCharacterList()) {			
 			// sprawdzenie, czy ten znak jest juz w slowniku w nowym formacie
-			CharacterInfo kanjiFromPolishDictionaryKanjidic2 = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(characterInfo.getKanji());
+			KanjiCharacterInfo kanjiFromPolishDictionaryKanjidic2 = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(characterInfo.getKanji());
 			
 			if (kanjiFromPolishDictionaryKanjidic2 == null) { // nie ma, wiec dodajemy go do listy oczekujacych znakow
 				
@@ -120,7 +120,7 @@ public class GetKanjiFromOldDictionary {
 		
 		for (String currentKanji : missingKanjiList) {
 			// pobieramy znak z angielskiego slownika
-			CharacterInfo characterInfo = kanji2Helper.getKanjiFromKanjidic2(currentKanji);
+			KanjiCharacterInfo characterInfo = kanji2Helper.getKanjiFromKanjidic2(currentKanji);
 			
 			// pobieramy znaczenie ze starego slownika
 			KanjiEntryForDictionary oldKanjiEntryForDictionary = kanji2Helper.getOldKanjiEntryForDictionary(currentKanji);

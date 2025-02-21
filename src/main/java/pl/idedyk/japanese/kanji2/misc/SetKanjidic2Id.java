@@ -3,7 +3,7 @@ package pl.idedyk.japanese.kanji2.misc;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 
 public class SetKanjidic2Id {
@@ -18,7 +18,7 @@ public class SetKanjidic2Id {
 		Kanjidic2 polishDictionaryKanjidic2 = kanji2Helper.getPolishDictionaryKanjidic2();
 
 		// chodzimy po wszystkich znakach i usuwamy niepotrzebne grupy
-		for (CharacterInfo characterInfo : polishDictionaryKanjidic2.getCharacterList()) {
+		for (KanjiCharacterInfo characterInfo : polishDictionaryKanjidic2.getCharacterList()) {
 			
 			// szukanie kanji w starym slowniku
 			KanjiEntryForDictionary oldKanjiEntryForDictionary = kanji2Helper.getOldKanjiEntryForDictionary(characterInfo.getKanji());

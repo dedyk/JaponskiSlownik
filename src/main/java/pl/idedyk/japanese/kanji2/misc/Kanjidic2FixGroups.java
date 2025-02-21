@@ -2,7 +2,7 @@ package pl.idedyk.japanese.kanji2.misc;
 
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Misc2Info;
 
@@ -18,7 +18,7 @@ public class Kanjidic2FixGroups {
 		Kanjidic2 polishDictionaryKanjidic2 = kanji2Helper.getPolishDictionaryKanjidic2();
 
 		// chodzimy po wszystkich znakach i usuwamy niepotrzebne grupy
-		for (CharacterInfo characterInfo : polishDictionaryKanjidic2.getCharacterList()) {
+		for (KanjiCharacterInfo characterInfo : polishDictionaryKanjidic2.getCharacterList()) {
 			
 			// pobieramy grupy
 			Misc2Info misc2 = characterInfo.getMisc2();

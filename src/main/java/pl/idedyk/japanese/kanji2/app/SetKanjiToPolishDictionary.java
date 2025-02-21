@@ -10,7 +10,7 @@ import org.apache.commons.cli.Options;
 
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 
 public class SetKanjiToPolishDictionary {
@@ -67,10 +67,10 @@ public class SetKanjiToPolishDictionary {
 		// wczytywanie listy zmienionych elementow
 		Kanjidic2 kanjidic2FromFileName = kanji2Helper.readKanjidic2FromHumanCsv(fileName.getAbsoluteFile());
 		
-		for (CharacterInfo currentNewCharacterInfo : kanjidic2FromFileName.getCharacterList()) {
+		for (KanjiCharacterInfo currentNewCharacterInfo : kanjidic2FromFileName.getCharacterList()) {
 			
 			// pobieramy kanji w starszej wersji
-			CharacterInfo kanjiFromPolishDictionary = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(currentNewCharacterInfo.getKanji());
+			KanjiCharacterInfo kanjiFromPolishDictionary = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(currentNewCharacterInfo.getKanji());
 						
 			if (kanjiFromPolishDictionary == null) { // nowe kanji
 				

@@ -9,7 +9,7 @@ import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfo;
 
 public class GenerateJouyouJinmeiyuKanjiGroup {
@@ -180,7 +180,7 @@ public class GenerateJouyouJinmeiyuKanjiGroup {
 					GroupEnum.JOUYOU6, GroupEnum.JOUYOUS, GroupEnum.JINMEIYOU, GroupEnum.JINMEIYOU_JOUYOU /*, GroupEnum.JOUYOU7, GroupEnum.JOUYOU8, GroupEnum.JOUYOU9, GroupEnum.JOUYOU10 */ }));
 			
 			// szukamy znaku w slowniku w nowym formacie
-			CharacterInfo kanjiFromKanjidic2 = kanji2Helper.getKanjiFromKanjidic2(kanjiEntryForDictionary.getKanji());
+			KanjiCharacterInfo kanjiFromKanjidic2 = kanji2Helper.getKanjiFromKanjidic2(kanjiEntryForDictionary.getKanji());
 			
 			if (kanjiFromKanjidic2 == null) {
 				continue;

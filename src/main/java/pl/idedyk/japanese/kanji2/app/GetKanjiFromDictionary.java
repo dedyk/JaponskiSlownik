@@ -20,7 +20,7 @@ import org.apache.commons.cli.Options;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 
 public class GetKanjiFromDictionary {
@@ -163,7 +163,7 @@ public class GetKanjiFromDictionary {
 			
 			if (usePolishDictionary == true) { // szukamy w polskim slowniku
 				
-				CharacterInfo characterInfoFromPolishiDictionaryKanjidic2 = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(currentKanji);
+				KanjiCharacterInfo characterInfoFromPolishiDictionaryKanjidic2 = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(currentKanji);
 				
 				if (characterInfoFromPolishiDictionaryKanjidic2 == null) { // nie znaleziono
 					
@@ -177,7 +177,7 @@ public class GetKanjiFromDictionary {
 			
 			if (useKanjidic2Dictionary == true) { // szukamy w slowniku angielskim
 				
-				CharacterInfo characterInfo = kanji2Helper.getKanjiFromKanjidic2(currentKanji);
+				KanjiCharacterInfo characterInfo = kanji2Helper.getKanjiFromKanjidic2(currentKanji);
 				
 				if (characterInfo == null) { // nie znaleziono
 					System.out.println("[Errpr] Can't find kanji in kanji dic2: " + currentKanji);
@@ -185,7 +185,7 @@ public class GetKanjiFromDictionary {
 					continue;										
 				}
 				
-				CharacterInfo characterInfoFromPolishiDictionaryKanjidic2 = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(currentKanji);
+				KanjiCharacterInfo characterInfoFromPolishiDictionaryKanjidic2 = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(currentKanji);
 				
 				if (characterInfoFromPolishiDictionaryKanjidic2 != null) { // taki wpis juz jest w polskim slowniku					
 					System.out.println("[Error] Entry already exists in kanji polish dictionary: " + currentKanji);
@@ -207,7 +207,7 @@ public class GetKanjiFromDictionary {
 			}
 			
 			if (useKanjidic2PolishDictionary == true) { // szukamy w polskim slowniku lub jmdict
-				CharacterInfo characterInfo = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(currentKanji); // szukamy w polskim slowniku
+				KanjiCharacterInfo characterInfo = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(currentKanji); // szukamy w polskim slowniku
 
 				if (characterInfo != null) {
 					result.getCharacterList().add(characterInfo);

@@ -43,7 +43,6 @@ import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointValueInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointValueTypeEnum;
@@ -51,6 +50,7 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.DictionaryNumberInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.DictionaryNumberInfoReference;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.DictionaryNumberInfoReferenceTypeEnum;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.HeaderInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Misc2Info;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Misc2InfoGroup;
@@ -81,12 +81,12 @@ public class Kanji2Helper {
 	// source kanji dict
 	private File kanjidic2File;
 	private Kanjidic2 kanjidic2 = null;
-	private Map<String, CharacterInfo> kanjidic2Cache;
+	private Map<String, KanjiCharacterInfo> kanjidic2Cache;
 	
 	// new kanji polish dictionary file
 	private File polishDictionaryKanjidic2File;
 	private Kanjidic2 polishDictionaryKanjidic2;
-	private Map<String, CharacterInfo> polishDictionaryKanjidic2Cache;
+	private Map<String, KanjiCharacterInfo> polishDictionaryKanjidic2Cache;
 	
 	// old kanji polish dictionary file
 	private File oldKanjiPolishDictionaryFile;
@@ -150,9 +150,9 @@ public class Kanji2Helper {
 			kanjidic2 = (Kanjidic2) jaxbUnmarshaller.unmarshal(kanjidic2File);
 			
 			// uzupelnienie i usuniecie zbednych rzeczy
-			List<CharacterInfo> characterInfoList = kanjidic2.getCharacterList();
+			List<KanjiCharacterInfo> characterInfoList = kanjidic2.getCharacterList();
 			
-			for (CharacterInfo characterInfo : characterInfoList) {
+			for (KanjiCharacterInfo characterInfo : characterInfoList) {
 				ReadingMeaningInfo readingMeaning = characterInfo.getReadingMeaning();
 				
 				if (readingMeaning != null) {
@@ -213,15 +213,15 @@ public class Kanji2Helper {
 		
 		if (kanjidic2Cache == null) {
 			
-			kanjidic2Cache = new TreeMap<String, CharacterInfo>();
+			kanjidic2Cache = new TreeMap<String, KanjiCharacterInfo>();
 			
-			for (CharacterInfo characterInfo : kanjidic2.getCharacterList()) {
+			for (KanjiCharacterInfo characterInfo : kanjidic2.getCharacterList()) {
 				kanjidic2Cache.put(characterInfo.getKanji(), characterInfo);
 			}			
 		}
 	}
 	
-	public CharacterInfo getKanjiFromKanjidic2(String kanji) throws Exception {
+	public KanjiCharacterInfo getKanjiFromKanjidic2(String kanji) throws Exception {
 		
 		createKanjidic2Cache();
 		
@@ -266,23 +266,23 @@ public class Kanji2Helper {
 		
 		if (polishDictionaryKanjidic2Cache == null) {
 			
-			polishDictionaryKanjidic2Cache = new TreeMap<String, CharacterInfo>();
+			polishDictionaryKanjidic2Cache = new TreeMap<String, KanjiCharacterInfo>();
 			
-			for (CharacterInfo characterInfo : polishDictionaryKanjidic2.getCharacterList()) {
+			for (KanjiCharacterInfo characterInfo : polishDictionaryKanjidic2.getCharacterList()) {
 				polishDictionaryKanjidic2Cache.put(characterInfo.getKanji(), characterInfo);
 				
 			}
 		}
 	}
 	
-	public CharacterInfo getKanjiFromPolishDictionaryKanjidic2(String kanji) throws Exception {
+	public KanjiCharacterInfo getKanjiFromPolishDictionaryKanjidic2(String kanji) throws Exception {
 		
 		createPolishDictionaryKanjidic2Cache();
 		
 		return polishDictionaryKanjidic2Cache.get(kanji);		
 	}
 	
-	public void addKanjiToPolishDictionary(CharacterInfo characterInfo) throws Exception {
+	public void addKanjiToPolishDictionary(KanjiCharacterInfo characterInfo) throws Exception {
 		
 		readPolishDictionaryKanjidic2();
 		
@@ -299,7 +299,7 @@ public class Kanji2Helper {
 		readPolishDictionaryKanjidic2();
 		createPolishDictionaryKanjidic2Cache();
 		
-		CharacterInfo characterInfoInPolishDictionaryKanjidic2 = polishDictionaryKanjidic2Cache.get(kanji);
+		KanjiCharacterInfo characterInfoInPolishDictionaryKanjidic2 = polishDictionaryKanjidic2Cache.get(kanji);
 		
 		if (characterInfoInPolishDictionaryKanjidic2 == null) {
 			throw new Exception("Can't delete kanji: " + kanji);
@@ -309,7 +309,7 @@ public class Kanji2Helper {
 		polishDictionaryKanjidic2Cache.remove(kanji);		
 	}
 	
-	public void updateKanjiInPolishDictionary(CharacterInfo characterInfo) throws Exception {
+	public void updateKanjiInPolishDictionary(KanjiCharacterInfo characterInfo) throws Exception {
 		
 		readPolishDictionaryKanjidic2();
 		
@@ -319,7 +319,7 @@ public class Kanji2Helper {
 		
 		for (int idx = 0; idx < polishDictionaryKanjidic2.getCharacterList().size(); ++idx) {
 			
-			CharacterInfo oldCharacterInfo = polishDictionaryKanjidic2.getCharacterList().get(idx);
+			KanjiCharacterInfo oldCharacterInfo = polishDictionaryKanjidic2.getCharacterList().get(idx);
 			
 			if (oldCharacterInfo.getKanji().equals(characterInfo.getKanji()) == true) {				
 				polishDictionaryKanjidic2.getCharacterList().set(idx, characterInfo);		
@@ -338,7 +338,7 @@ public class Kanji2Helper {
 		boolean wasError = false;
 		
 		// sprawdzenie, czy gdzies nie ma duplikatu znaczen
-		for (CharacterInfo characterInfo : polishDictionaryKanjidic2.getCharacterList()) {
+		for (KanjiCharacterInfo characterInfo : polishDictionaryKanjidic2.getCharacterList()) {
 			
 			ReadingMeaningInfo readingMeaning = characterInfo.getReadingMeaning();
 			
@@ -403,10 +403,10 @@ public class Kanji2Helper {
 		return oldKanjiPolishDictionaryMap.get(kanji);
 	}
 	
-	public CharacterInfo addDatasFromOldKanjiEntryForDictionary(CharacterInfo characterInfo, KanjiEntryForDictionary oldKanjiEntryForDictionary) {
+	public KanjiCharacterInfo addDatasFromOldKanjiEntryForDictionary(KanjiCharacterInfo characterInfo, KanjiEntryForDictionary oldKanjiEntryForDictionary) {
 		
 		// tworzymy kopie, aby nie modyfikowac glownego elementu
-		characterInfo = (CharacterInfo)SerializationUtils.clone(characterInfo);
+		characterInfo = (KanjiCharacterInfo)SerializationUtils.clone(characterInfo);
 		
 		characterInfo.setId(oldKanjiEntryForDictionary.getId());
 		
@@ -447,9 +447,9 @@ public class Kanji2Helper {
 		createEmptyLinesInCsv(config, csvWriter);
 		
 		// zapisywanie znakow
-		List<CharacterInfo> characterList = kanjidic2.getCharacterList();
+		List<KanjiCharacterInfo> characterList = kanjidic2.getCharacterList();
 		
-		for (CharacterInfo characterInfo : characterList) {
+		for (KanjiCharacterInfo characterInfo : characterList) {
 			
 			// zapisanie znaku
 			saveEntryAsHumanCsv(config, csvWriter, characterInfo, entryAdditionalData);
@@ -494,7 +494,7 @@ public class Kanji2Helper {
 		csvWriter.setUseTextQualifier(useTextQualifier);
 	}
 	
-	private void saveEntryAsHumanCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo, EntryAdditionalData entryAdditionalData) throws Exception {
+	private void saveEntryAsHumanCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo, EntryAdditionalData entryAdditionalData) throws Exception {
 				
 		// rekord poczatkowy
 		new EntryPartConverterBegin().writeToCsv(config, csvWriter, characterInfo);
@@ -554,7 +554,7 @@ public class Kanji2Helper {
 		//
 		
 		Kanjidic2 kanjidic2 = null;
-		CharacterInfo characterInfo = null;
+		KanjiCharacterInfo characterInfo = null;
 				
 		while (csvReader.readRecord()) {
 			
@@ -574,7 +574,7 @@ public class Kanji2Helper {
 			
 			} else if (fieldType == EntryHumanCsvFieldType.BEGIN) { // nowy rekord
 				
-				characterInfo = new CharacterInfo();
+				characterInfo = new KanjiCharacterInfo();
 				
 				entryPartConverterBegin.parseCsv(csvReader, characterInfo);
 				
@@ -697,7 +697,7 @@ public class Kanji2Helper {
 	
 	private class EntryPartConverterBegin {
 
-		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			int columnsNo = 0;
 			
@@ -725,7 +725,7 @@ public class Kanji2Helper {
 			csvWriter.endRecord();
 		}
 
-		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+		public void parseCsv(CsvReader csvReader, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
@@ -740,7 +740,7 @@ public class Kanji2Helper {
 	
 	private class EntryPartConverterCodepoint {
 
-		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			CodePointInfo codePoint = characterInfo.getCodePoint();
 			
@@ -772,7 +772,7 @@ public class Kanji2Helper {
 			}
 		}
 				
-		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+		public void parseCsv(CsvReader csvReader, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
@@ -799,7 +799,7 @@ public class Kanji2Helper {
 
 	private class EntryPartConverterRadical {
 
-		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			RadicalInfo radicalInfo = characterInfo.getRadical();
 			
@@ -831,7 +831,7 @@ public class Kanji2Helper {
 			}
 		}
 				
-		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+		public void parseCsv(CsvReader csvReader, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
@@ -858,7 +858,7 @@ public class Kanji2Helper {
 	
 	private class EntryPartConverterMisc {
 
-		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			MiscInfo miscInfo = characterInfo.getMisc();
 			
@@ -910,7 +910,7 @@ public class Kanji2Helper {
 			csvWriter.endRecord();
 		}
 				
-		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+		public void parseCsv(CsvReader csvReader, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
@@ -971,7 +971,7 @@ public class Kanji2Helper {
 
 	private class EntryPartConverterMisc2 {
 
-		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			Misc2Info misc2Info = characterInfo.getMisc2();
 			
@@ -997,7 +997,7 @@ public class Kanji2Helper {
 			csvWriter.endRecord();
 		}
 				
-		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+		public void parseCsv(CsvReader csvReader, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
@@ -1029,7 +1029,7 @@ public class Kanji2Helper {
 	
 	private class EntryPartConverterDictionaryNumber {
 
-		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			DictionaryNumberInfo dictionaryNumber = characterInfo.getDictionaryNumber();
 			
@@ -1063,7 +1063,7 @@ public class Kanji2Helper {
 			}			
 		}
 				
-		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+		public void parseCsv(CsvReader csvReader, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
@@ -1092,7 +1092,7 @@ public class Kanji2Helper {
 
 	private class EntryPartConverterQueryCode {
 
-		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			QueryCodeInfo queryCodeInfo = characterInfo.getQueryCode();
 			
@@ -1125,7 +1125,7 @@ public class Kanji2Helper {
 			}			
 		}
 				
-		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+		public void parseCsv(CsvReader csvReader, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
@@ -1153,7 +1153,7 @@ public class Kanji2Helper {
 	
 	private class EntryPartConverterReadingMeaningNanori {
 
-		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			ReadingMeaningInfo readingMeaningInfo = characterInfo.getReadingMeaning();
 			
@@ -1178,7 +1178,7 @@ public class Kanji2Helper {
 			csvWriter.endRecord();			
 		}
 				
-		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+		public void parseCsv(CsvReader csvReader, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
@@ -1200,7 +1200,7 @@ public class Kanji2Helper {
 
 	private class EntryPartConverterReadingMeaningReading {
 
-		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			ReadingMeaningInfo readingMeaningInfo = characterInfo.getReadingMeaning();
 			
@@ -1253,7 +1253,7 @@ public class Kanji2Helper {
 			csvWriter.endRecord();			
 		}
 				
-		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+		public void parseCsv(CsvReader csvReader, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
@@ -1319,7 +1319,7 @@ public class Kanji2Helper {
 			this.fieldType = fieldType;
 		}
 
-		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo, EntryAdditionalData entryAdditionalData) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo, EntryAdditionalData entryAdditionalData) throws IOException {
 			
 			ReadingMeaningInfo readingMeaningInfo = characterInfo.getReadingMeaning();
 			
@@ -1401,7 +1401,7 @@ public class Kanji2Helper {
 			csvWriter.endRecord();
 		}
 				
-		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+		public void parseCsv(CsvReader csvReader, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
@@ -1489,7 +1489,7 @@ public class Kanji2Helper {
 		destinationKanjidic2.setHeader(sourceKanjidic2HeaderInfo);
 	}
 	
-	public boolean updatePolishKanjiCharacterInfo(CharacterInfo sourceKanjiCharacterInfo, CharacterInfo destinationKanjiCharacterInfo, EntryAdditionalData entryAdditionalData) {
+	public boolean updatePolishKanjiCharacterInfo(KanjiCharacterInfo sourceKanjiCharacterInfo, KanjiCharacterInfo destinationKanjiCharacterInfo, EntryAdditionalData entryAdditionalData) {
 		
 		boolean isManuallyNeeded = false;
 		
@@ -1620,7 +1620,7 @@ public class Kanji2Helper {
 		return DigestUtils.sha256Hex(stringWriter.toString());
 	}
 	
-	public void updateOldKanjiEntryForDictionaryFromCharacterInfo(KanjiEntryForDictionary kanjiEntryForDictionary, CharacterInfo characterInfo) {
+	public void updateOldKanjiEntryForDictionaryFromCharacterInfo(KanjiEntryForDictionary kanjiEntryForDictionary, KanjiCharacterInfo characterInfo) {
 		
 		ReadingMeaningInfo readingMeaning = characterInfo.getReadingMeaning();
 		
@@ -1674,7 +1674,7 @@ public class Kanji2Helper {
 	
 	private class EntryPartConverterEnd {
 
-		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, CharacterInfo characterInfo) throws IOException {
+		public void writeToCsv(SaveKanjiDic2AsHumanCsvConfig config, CsvWriter csvWriter, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			int columnsNo = 0;
 			
@@ -1693,7 +1693,7 @@ public class Kanji2Helper {
 			csvWriter.endRecord();			
 		}
 
-		public void parseCsv(CsvReader csvReader, CharacterInfo characterInfo) throws IOException {
+		public void parseCsv(CsvReader csvReader, KanjiCharacterInfo characterInfo) throws IOException {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
