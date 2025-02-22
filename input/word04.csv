@@ -19718,8 +19718,9 @@ mały pożegnalny prezent",,DICTIONARY2_SOURCE,,GroupId: 2827970
 308780,WORD_NOUN,,HIRAGANA,,,なぐり書き,なぐりがき,,naguri gaki,"bazgranina
 gryzmoły
 niestaranne pismo",,DICTIONARY2_SOURCE,,GroupId: 1712400
-308781,WORD_VERB_RU,,HIRAGANA,,,つり込まれる,つりこまれる,,tsuri komareru,"bycie zabrany przez
-bycie namówiony do",,DICTIONARY2_SOURCE,,GroupId: 1849270
+308781,WORD_VERB_RU,,HIRAGANA,,,つり込まれる,つりこまれる,,tsuri komareru,"dać się ponieść
+dać się namówić
+zostać zwabionym",,DICTIONARY2_SOURCE,,GroupId: 1849270
 308782,WORD_NOUN,,HIRAGANA,,,勘どころ,かんどころ,,kan dokoro,"pozycja na podstrunnicy (np. w shamisen, koto itp.)
 istotny punkt
 sedno",,DICTIONARY2_SOURCE,,GroupId: 1590910
@@ -23277,34 +23278,13 @@ ryby żyjące w wielu strefach ekonomicznych",ang: straddling stocks,DICTIONARY2
 310346,WORD_NOUN,,KATAKANA,,,-,ウーリー・コットン,,uurii kotton,wełniana bawełna,ang: woolly cotton,DICTIONARY2_SOURCE,,GroupId: 1024990
 310347,WORD_NOUN,,KATAKANA,,,-,ウーリー・ナイロン,,uurii nairon,wełniany nylon,ang: woolly nylon,DICTIONARY2_SOURCE,,GroupId: 1025000
 310348,WORD_NOUN,,KATAKANA,,,-,クリプト,,kuriputo,krypta,ang: crypt,DICTIONARY2_SOURCE,DUPLICATE 158100,GroupId: 2864406
-310349,"WORD_ADVERB_TO
-WORD_ADVERB",,HIRAGANA,,,悄々,すごすご,,sugo sugo,"ponuro
-smutno
-przybity
-z przygnębieniem
-ze smutkiem",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 77800
-DUPLICATE 77801
-DUPLICATE 77802
-DUPLICATE 310351",GroupId: 2864407
-310350,"WORD_ADVERB_TO
-WORD_ADJECTIVE_TARU",,HIRAGANA,,,悄悄,しょうしょう,,shou shou,"przygnębiająco
-załamany
-przygnębiony
-samotnie
-samemu
-cicho",rzadko używane określenie,DICTIONARY2_SOURCE,"DUPLICATE 77761
-DUPLICATE 77798
-DUPLICATE 77799",GroupId: 2864408
-310351,"WORD_ADVERB_TO
-WORD_ADJECTIVE_TARU",,HIRAGANA,,,悄々,しょうしょう,,shou shou,"przygnębiająco
-załamany
-przygnębiony
-samotnie
-samemu
-cicho",rzadko używane określenie,DICTIONARY2_SOURCE,"DUPLICATE 77800
-DUPLICATE 77801
-DUPLICATE 77802
-DUPLICATE 310349",GroupId: 2864408
+310349,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,酒気を帯びている,しゅきをおびている,,shuki o obiteiru,"być pijanym
+być odurzonym
+być nietrzeźwym
+być pod wpływem alkoholu",,DICTIONARY2_SOURCE,,GroupId: 2153850
+310350,WORD_NOUN,,KATAKANA,,,-,メインデッキ,,mein dekki,główny pokład,ang: main deck,DICTIONARY2_SOURCE,,GroupId: 2470630
+310351,WORD_NOUN,,KATAKANA,,,-,メイン・デッキ,,mein dekki,główny pokład,ang: main deck,DICTIONARY2_SOURCE,,GroupId: 2470630
 310352,"WORD_NOUN
 WORD_ADJECTIVE_NO",,KATAKANA,,,-,ブート,,buuto,bootleg,skrót; nielegalne nagranie muzyki z koncertu,DICTIONARY2_SOURCE,DUPLICATE 155824,GroupId: 2864412
 310353,WORD_NOUN,,KATAKANA,,,-,マレット,,maretto,młotek,"np. do krokieta, ang: mallet",DICTIONARY2_SOURCE,DUPLICATE 148232,GroupId: 2864414
@@ -23319,26 +23299,14 @@ WORD_NOUN",,HIRAGANA,,,萎萎,しおしお,,shio shio,"przygnębiająco
 w złym nastroju
 przygnębiony
 przybity
-smutny",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,"GroupId: 1005450
-Translate: dejectedly
-MiscInfo: uk
-Translate: in low spirits
-MiscInfo: uk
-Translate: downheartedly
-MiscInfo: uk"
+smutny",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1005450
 310358,"WORD_ADVERB_TO
 WORD_ADVERB
 WORD_NOUN",,HIRAGANA,,,萎々,しおしお,,shio shio,"przygnębiająco
 w złym nastroju
 przygnębiony
 przybity
-smutny",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,"GroupId: 1005450
-Translate: dejectedly
-MiscInfo: uk
-Translate: in low spirits
-MiscInfo: uk
-Translate: downheartedly
-MiscInfo: uk"
+smutny",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1005450
 310359,WORD_NOUN,,HIRAGANA,,,責任転換,せきにんてんか,,sekinin tenka,przerzucanie odpowiedzialności (za coś) na (kogoś),potocznie,DICTIONARY2_SOURCE,DUPLICATE 310360,GroupId: 2864353
 310360,WORD_NOUN,,HIRAGANA,,,責任転換,せきにんてんかん,,sekinin tenkan,przerzucanie odpowiedzialności (za coś) na (kogoś),potocznie,DICTIONARY2_SOURCE,DUPLICATE 310359,GroupId: 2864353
 310361,WORD_NOUN,,HIRAGANA,,,修復歴,しゅうふくれき,,shuufukureki,historia napraw i wymian części w samochodzie,,DICTIONARY2_SOURCE,,GroupId: 2864358
@@ -23446,10 +23414,12 @@ rozkosz",,DICTIONARY2_SOURCE,,GroupId: 1413310
 310410,WORD_NOUN,,HIRAGANA,,,大悦び,おおよろこび,,ooyorokobi,"duża radość
 wielka przyjemność
 rozkosz",,DICTIONARY2_SOURCE,,GroupId: 1413310
-310411,WORD_NOUN,,KATAKANA,,,-,カジュアルゲーム,,kajuaru geemu,"gra z prostymi zasadami
-gra na małą skalę",ang: casual game,DICTIONARY2_SOURCE,,GroupId: 2864452
-310412,WORD_NOUN,,KATAKANA,,,-,カジュアル・ゲーム,,kajuaru geemu,"gra z prostymi zasadami
-gra na małą skalę",ang: casual game,DICTIONARY2_SOURCE,,GroupId: 2864452
+310411,WORD_NOUN,,KATAKANA,,,-,カジュアルゲーム,,kajuaru geemu,"prosta gra
+gra z prostymi zasadami
+gra na małą skalę",,DICTIONARY2_SOURCE,,GroupId: 2864452
+310412,WORD_NOUN,,KATAKANA,,,-,カジュアル・ゲーム,,kajuaru geemu,"prosta gra
+gra z prostymi zasadami
+gra na małą skalę",,DICTIONARY2_SOURCE,,GroupId: 2864452
 310413,WORD_NOUN,,KATAKANA,,,-,ディテクト,,ditekuto,wykrywanie,"ang: detection, detecting",DICTIONARY2_SOURCE,,GroupId: 2864458
 310414,WORD_NOUN,,KATAKANA,,,-,エラッタ,,eratta,errata,,DICTIONARY2_SOURCE,,GroupId: 2864462
 310415,WORD_NOUN,,KATAKANA,,,-,エラータ,,eraata,errata,,DICTIONARY2_SOURCE,,GroupId: 2864462
