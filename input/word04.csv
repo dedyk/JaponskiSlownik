@@ -23688,9 +23688,9 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,必要最小限,ひつようさいしょうげん
 minimalny wymóg",,DICTIONARY2_SOURCE,,GroupId: 2864502
 310535,WORD_NOUN,,KATAKANA,,,-,ノークレーム,,noo kureemu,"brak reklamacji lub zwrotów (artykułu zakupionego online; ang: no claim)
 rezygnacja z roszczenia ubezpieczeniowego",,DICTIONARY2_SOURCE,,GroupId: 2864439
-310536,WORD_NOUN,,KATAKANA,,,-,ノンクレーム,,non kureemu,"brak reklamacji lub zwrotów (artykułu zakupionego online; ang: no claim)
-rezygnacja z roszczenia ubezpieczeniowego",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2864439
+310536,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,エッヂ,,eddi,"krawędź
+ostrze
+brzeg",ang: edge,DICTIONARY2_SOURCE,,GroupId: 1029050
 310537,WORD_NOUN,,HIRAGANA,,,特許権者,とっきょけんしゃ,,tokkyokensha,"właściciel praw do patentu
 właściciel patentu",,DICTIONARY2_SOURCE,,GroupId: 2864498
 310538,WORD_NOUN,,KATAKANA,,,ＶｏＩＰ,ブイ・オー・アイ・ピー,,bui oo ai pii,"voice over Internet Protocol
@@ -23725,84 +23725,71 @@ liścik miłosny",archaizm,DICTIONARY2_SOURCE,,GroupId: 2864518
 310557,WORD_NOUN,,HIRAGANA,,,聖爵,せいしゃく,,seishaku,kielich mszalny,chrześcijaństwo; rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2864520
 310558,WORD_NOUN,,HIRAGANA,,,贈名,おくりな,,okuri na,"pośmiertne imię
 pośmiertny tytuł",,DICTIONARY2_SOURCE,,GroupId: 1771920
-310559,WORD_VERB_U,,HIRAGANA,,,立てこもる,たてごもる,,tate gomoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 152362,GroupId: 1597080
-310560,WORD_VERB_U,,HIRAGANA,,,立て篭もる,たてごもる,,tate gomoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 152393,GroupId: 1597080
-310561,WORD_VERB_U,,HIRAGANA,,,立て籠もる,たてごもる,,tate gomoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 152394,GroupId: 1597080
-310562,WORD_VERB_U,,HIRAGANA,,,立て篭る,たてごもる,,tate gomoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 152396,GroupId: 1597080
-310563,WORD_VERB_U,,HIRAGANA,,,楯籠る,たてごもる,,tate gomoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 152397,GroupId: 1597080
-310564,WORD_VERB_U,,HIRAGANA,,,立て籠る,たてごもる,,tate gomoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 152395,GroupId: 1597080
-310565,WORD_VERB_U,,HIRAGANA,,,立籠る,たてごもる,,tate gomoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 152398,GroupId: 1597080
-310566,WORD_VERB_U,,HIRAGANA,,,楯籠もる,たてこもる,,tate komoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 310567,GroupId: 1597080
-310567,WORD_VERB_U,,HIRAGANA,,,楯籠もる,たてごもる,,tate gomoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 310566,GroupId: 1597080
-310568,WORD_VERB_U,,HIRAGANA,,,立籠もる,たてこもる,,tate komoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 310569,GroupId: 1597080
-310569,WORD_VERB_U,,HIRAGANA,,,立籠もる,たてごもる,,tate gomoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 310568,GroupId: 1597080
-310570,WORD_VERB_U,,HIRAGANA,,,盾籠もる,たてこもる,,tate komoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 310571,GroupId: 1597080
-310571,WORD_VERB_U,,HIRAGANA,,,盾籠もる,たてごもる,,tate gomoru,"barykadować się w
-zamykać się
-zamknąć się
-być otoczony
-być oblegany
-okopać się",,DICTIONARY2_SOURCE,DUPLICATE 310570,GroupId: 1597080
+310559,WORD_VERB_U,,HIRAGANA,,,立てこもる,たてごもる,,tate gomoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 152362,GroupId: 1597080
+310560,WORD_VERB_U,,HIRAGANA,,,立て篭もる,たてごもる,,tate gomoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 152393,GroupId: 1597080
+310561,WORD_VERB_U,,HIRAGANA,,,立て籠もる,たてごもる,,tate gomoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 152394,GroupId: 1597080
+310562,WORD_VERB_U,,HIRAGANA,,,立て篭る,たてごもる,,tate gomoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 152396,GroupId: 1597080
+310563,WORD_VERB_U,,HIRAGANA,,,楯籠る,たてごもる,,tate gomoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 152397,GroupId: 1597080
+310564,WORD_VERB_U,,HIRAGANA,,,立て籠る,たてごもる,,tate gomoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 152395,GroupId: 1597080
+310565,WORD_VERB_U,,HIRAGANA,,,立籠る,たてごもる,,tate gomoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 152398,GroupId: 1597080
+310566,WORD_VERB_U,,HIRAGANA,,,楯籠もる,たてこもる,,tate komoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 310567,GroupId: 1597080
+310567,WORD_VERB_U,,HIRAGANA,,,楯籠もる,たてごもる,,tate gomoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 310566,GroupId: 1597080
+310568,WORD_VERB_U,,HIRAGANA,,,立籠もる,たてこもる,,tate komoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 310569,GroupId: 1597080
+310569,WORD_VERB_U,,HIRAGANA,,,立籠もる,たてごもる,,tate gomoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 310568,GroupId: 1597080
+310570,WORD_VERB_U,,HIRAGANA,,,盾籠もる,たてこもる,,tate komoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 310571,GroupId: 1597080
+310571,WORD_VERB_U,,HIRAGANA,,,盾籠もる,たてごもる,,tate gomoru,"zamykać się (np. w domu, pokoju itp.)
+zabarykadować się (w budynku)
+okopać się
+zaszyć się
+utrzymać (zamek itp.)",,DICTIONARY2_SOURCE,DUPLICATE 310570,GroupId: 1597080
 310572,WORD_EXPRESSION,,HIRAGANA,,,お世話になっております,おせわになっております,,osewa ni natte orimasu,"bardzo dziękuję za wszystko
 współpraca z tobą zawsze była przyjemnością",,DICTIONARY2_SOURCE,,GroupId: 2864389
 310573,WORD_NOUN,,HIRAGANA,,,災害発生,さいがいはっせい,,saigai hassei,wystąpienie katastrofy,,DICTIONARY2_SOURCE,,GroupId: 2864471
@@ -23982,3 +23969,32 @@ Portable Network Graphics",informatyka; rastrowy format plików graficznych oraz
 przybycie Czarnych Statków",wydarzenie,DICTIONARY2_SOURCE,,GroupId: 5747242
 310652,WORD_NOUN,,HIRAGANA,,,凍結融解,とうけつゆうかい,,touketsu yuukai,zamrażanie i rozmrażanie,,DICTIONARY2_SOURCE,,GroupId: 2864556
 310653,WORD_NOUN,,HIRAGANA,,,気管支痙攣,きかんしけいれん,,kikanshi keiren,skurcz oskrzeli,medycyna,DICTIONARY2_SOURCE,,GroupId: 2864562
+310654,WORD_NOUN,,KATAKANA,,,-,ハンドリガード,,hando rigaado,zwrócenie uwagi na swoje ręce,"etap rozwoju u niemowląt, ang: hand regard",DICTIONARY2_SOURCE,,GroupId: 2857664
+310655,WORD_NOUN,,KATAKANA,,,-,ハンド・リガード,,hando rigaado,zwrócenie uwagi na swoje ręce,"etap rozwoju u niemowląt, ang: hand regard",DICTIONARY2_SOURCE,,GroupId: 2857664
+310656,WORD_NOUN,,KATAKANA,,,-,メイルボックス,,meiru bokkusu,"skrzynka pocztowa
+skrzynka na listy
+skrzynka odbiorcza (informatyka)",ang: mail box,DICTIONARY2_SOURCE,,GroupId: 1988340
+310657,WORD_NOUN,,KATAKANA,,,-,ノー・クレーム,,noo kureemu,"brak reklamacji lub zwrotów (artykułu zakupionego online; ang: no claim)
+rezygnacja z roszczenia ubezpieczeniowego",,DICTIONARY2_SOURCE,,GroupId: 2864439
+310658,WORD_NOUN,,HIRAGANA,,,小詞,しょうし,,shoushi,nieodmienne słowo funkcyjne,"lingwistyka; np. partykuła, słowo posiłkowe, znacznik dyskursu i etc",DICTIONARY2_SOURCE,,GroupId: 2864504
+310659,WORD_NOUN,,KATAKANA,,,ＭＮＯ,エム・エヌ・オー,,emu enu oo,operator sieci komórkowej,"telekomunikacja; ang: mobile network operator, MNO",DICTIONARY2_SOURCE,DUPLICATE 310660,GroupId: 2864558
+310660,WORD_NOUN,,KATAKANA,,,ＭＮＯ,エムエヌオー,,emu enu oo,operator sieci komórkowej,"telekomunikacja; ang: mobile network operator, MNO",DICTIONARY2_SOURCE,DUPLICATE 310659,GroupId: 2864558
+310661,WORD_NOUN,,HIRAGANA,,,移動通信事業者,いどうつうしんじぎょうしゃ,,idou tsuushin jigyousha,operator sieci komórkowej,telekomunikacja,DICTIONARY2_SOURCE,,GroupId: 2864559
+310662,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファスナー合流,ファスナーごうりゅう,,fasunaa gouryuu,jazda na suwak,,DICTIONARY2_SOURCE,,GroupId: 2864560
+310663,WORD_NOUN,,HIRAGANA_KATAKANA,,,２Ｋ,にケー,,ni kee,rozdzielczość 2K,zwykle 1920x1080 pikseli,DICTIONARY2_SOURCE,,GroupId: 2864561
+310664,WORD_NOUN,,KATAKANA,,,-,ノンクレーム,,non kureemu,brak reklamacji lub zwrotów,artykułu zakupionego online; ang: non-claim,DICTIONARY2_SOURCE,,GroupId: 2864565
+310665,WORD_NOUN,,KATAKANA,,,-,ノン・クレーム,,non kureemu,brak reklamacji lub zwrotów,artykułu zakupionego online; ang: non-claim,DICTIONARY2_SOURCE,,GroupId: 2864565
+310666,WORD_NOUN,,HIRAGANA,,,乗り物券,のりものけん,,norimonoken,"bilet na przejażdżkę
+bilet na atrakcję",np. w wesołym miasteczku,DICTIONARY2_SOURCE,,GroupId: 2864566
+310667,WORD_NOUN,,HIRAGANA,,,のりもの券,のりものけん,,norimonoken,"bilet na przejażdżkę
+bilet na atrakcję",np. w wesołym miasteczku,DICTIONARY2_SOURCE,,GroupId: 2864566
+310668,WORD_NOUN,,HIRAGANA,,,乗物券,のりものけん,,norimonoken,"bilet na przejażdżkę
+bilet na atrakcję",np. w wesołym miasteczku,DICTIONARY2_SOURCE,,GroupId: 2864566
+310669,WORD_NOUN,,HIRAGANA,,,特許原簿,とっきょげんぼ,,tokkyo genbo,"oficjalny rejestr patentów
+rejestr patentów",,DICTIONARY2_SOURCE,,GroupId: 2864567
+310670,WORD_NOUN,,KATAKANA,,,ＰＬ,ピー・エル,,pii eru,"odpowiedzialność za jakość towaru (ang: product liability)
+zysk i strata (ang: profit and loss, P&L)",,DICTIONARY2_SOURCE,DUPLICATE 310671,GroupId: 2864568
+310671,WORD_NOUN,,KATAKANA,,,ＰＬ,ピーエル,,pii eru,"odpowiedzialność za jakość towaru (ang: product liability)
+zysk i strata (ang: profit and loss, P&L)",,DICTIONARY2_SOURCE,DUPLICATE 310670,GroupId: 2864568
+310672,WORD_NOUN,,KATAKANA_HIRAGANA,,,ＰＬ法,ピーエルほう,,piieru hou,Ustawa o Odpowiedzialności za Produkt,prawo; ang: Product Liability Act,DICTIONARY2_SOURCE,,GroupId: 2864569
+310673,WORD_NOUN,,KATAKANA,,,-,ネナベ,,nenabe,"kobieta, która udaje mężczyznę online",slang; pisanie zwykle z użyciem kana; od ネット i お鍋,DICTIONARY2_SOURCE,,GroupId: 2864570
