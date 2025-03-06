@@ -53,7 +53,6 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.HeaderInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Misc2Info;
-import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Misc2InfoGroup;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfoVariant;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfoVariantTypeEnum;
@@ -428,7 +427,7 @@ public class Kanji2Helper {
 			if (Arrays.asList(GroupEnum.JOUYOU1, GroupEnum.JOUYOU2, GroupEnum.JOUYOU3, GroupEnum.JOUYOU4, GroupEnum.JOUYOU5, GroupEnum.JOUYOU6, 
 					GroupEnum.JOUYOUS, GroupEnum.JINMEIYOU, GroupEnum.JINMEIYOU_JOUYOU).contains(groupEnum) == false) {
 			
-				misc2.getGroups().add(Misc2InfoGroup.fromValue(groupEnum.getValue()));
+				misc2.getGroups().add(groupEnum);
 			}
 		}
 		
@@ -986,7 +985,7 @@ public class Kanji2Helper {
 			}
 			
 			csvWriter.write(EntryHumanCsvFieldType.MISC2.name()); columnsNo++;			
-			csvWriter.write(Helper.convertEnumListToString(misc2Info.getGroups())); columnsNo++;
+			csvWriter.write(Helper.convertListToString(misc2Info.getGroups().stream().map(m -> m.getValue()).collect(Collectors.toList()))); columnsNo++;
 			csvWriter.write("" + misc2Info.isUsed()); columnsNo++;
 						
 			// wypelniacz			
@@ -1018,7 +1017,7 @@ public class Kanji2Helper {
 			List<String> misc2GroupsEnumStringList = Helper.convertStringToList(csvReader.get(1));
 			
 			for (String currentMisc2GroupValue : misc2GroupsEnumStringList) {
-				misc2Info.getGroups().add(Misc2InfoGroup.fromValue(currentMisc2GroupValue));
+				misc2Info.getGroups().add(GroupEnum.getGroupEnum(currentMisc2GroupValue));
 			}
 			
 			//
