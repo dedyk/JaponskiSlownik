@@ -7914,7 +7914,8 @@ WORD_ADVERB_TO
 WORD_NOUN",,KATAKANA,,,浮き浮き,ウッキウキ,,ukki uki,"wesoło
 radośnie
 pogodnie
-w dobrym nastroju",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 19660,GroupId: 1497400
+w dobrym nastroju
+w ekscytacji",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 19660,GroupId: 1497400
 304544,WORD_NOUN,,HIRAGANA,,,ヤボ用,やぼよう,,yabo you,"drobny biznes
 drobny interes",,DICTIONARY2_SOURCE,,GroupId: 1712110
 304545,"WORD_ADVERB_TO
@@ -19494,7 +19495,10 @@ oniwaban",,DICTIONARY2_SOURCE,,GroupId: 2834888
 308673,WORD_NOUN,,HIRAGANA,,,ろう管,ろうかん,,roukan,przetoka,medycyna,DICTIONARY2_SOURCE,DUPLICATE 148296,GroupId: 2516580
 308674,"WORD_ADVERB
 WORD_NOUN
-WORD_ADVERB_TO",,KATAKANA,,,-,シャッキシャッキ,,shakki shakki,???,onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 1005640
+WORD_ADVERB_TO",,KATAKANA,,,-,シャッキシャッキ,,shakki shakki,"chrupiący
+świeży
+jędrny
+żwawy",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 1005640
 308675,WORD_NOUN,,KATAKANA,,,-,リバティ,,ribati,"wolność
 swoboda",ang: liberty,DICTIONARY2_SOURCE,,GroupId: 1142360
 308676,WORD_NOUN,,HIRAGANA,,,育脳,いくのう,,ikunou,"trening mózgu
@@ -24210,6 +24214,7 @@ dojście do porozumienia
 dochodzenie do porozumienia
 pojednanie
 uderzanie (piłki) wyłącznie siłą palców lub ramienia (np. w tenisie lub golfie)
+ręczne wprowadzanie danych (informatyka)
 kara śmierci wymierzona osobiście przez pana feudalnego lub samuraja (archaizm; szczególnie 手討ち; czasami również お手討ち)
 uśmiercenie (poddanego) własnymi rękami (archaizm; szczególnie 手討ち; czasami również お手討ち)",,DICTIONARY2_SOURCE,,GroupId: 1659060
 310770,WORD_NOUN,,HIRAGANA,,,手討ち,てうち,,teuchi,"robienie klusek ręcznie
@@ -24219,6 +24224,7 @@ dojście do porozumienia
 dochodzenie do porozumienia
 pojednanie
 uderzanie (piłki) wyłącznie siłą palców lub ramienia (np. w tenisie lub golfie)
+ręczne wprowadzanie danych (informatyka)
 kara śmierci wymierzona osobiście przez pana feudalnego lub samuraja (archaizm; szczególnie 手討ち; czasami również お手討ち)
 uśmiercenie (poddanego) własnymi rękami (archaizm; szczególnie 手討ち; czasami również お手討ち)",,DICTIONARY2_SOURCE,,GroupId: 1659060
 310771,WORD_NOUN,,HIRAGANA,,,手討,てうち,,teuchi,"robienie klusek ręcznie
@@ -24228,6 +24234,7 @@ dojście do porozumienia
 dochodzenie do porozumienia
 pojednanie
 uderzanie (piłki) wyłącznie siłą palców lub ramienia (np. w tenisie lub golfie)
+ręczne wprowadzanie danych (informatyka)
 kara śmierci wymierzona osobiście przez pana feudalnego lub samuraja (archaizm; szczególnie 手討ち; czasami również お手討ち)
 uśmiercenie (poddanego) własnymi rękami (archaizm; szczególnie 手討ち; czasami również お手討ち)",,DICTIONARY2_SOURCE,,GroupId: 1659060
 310772,WORD_VERB_U,,HIRAGANA,,,意張る,えばる,,ebaru,"pysznić się
@@ -24416,9 +24423,8 @@ EPG","elektroniczny przewodnik po programach nadawany w formie tekstu, dostępny
 310864,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,麗しの,うるわしの,,uruwashino,"piękny
 wzruszający
 cieszący serce",formalny lub literacki termin,DICTIONARY2_SOURCE,,GroupId: 2864677
-310865,WORD_NOUN,,HIRAGANA,,,流行語大賞,りゅうこうごたいしょう,,ryuukougo taishou,"słowo roku
-modne słowo roku",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2864678
+310865,WORD_NOUN,,HIRAGANA_KATAKANA,,,情報リテラシ,じょうほうリテラシー,,jouhou riterashii,"umiejętność korzystania z informacji
+przysposobienie czytelnicze",,DICTIONARY2_SOURCE,,GroupId: 2825883
 310866,WORD_EXPRESSION,,HIRAGANA,,,-,ふてほど,,futehodo,"wysoce nieodpowiedni
 niewłaściwe informowanie (przez środki masowego przekazu)",potocznie,DICTIONARY2_SOURCE,,GroupId: 2864679
 310867,WORD_NOUN,,KATAKANA,,,-,ボットネット,,bottonetto,botnet,informatyka; grupa komputerów zainfekowanych szkodliwym oprogramowaniem (np. robakiem) pozostającym w ukryciu przed użytkownikiem i pozwalającym jego twórcy na sprawowanie zdalnej kontroli nad wszystkimi komputerami w ramach botnetu,DICTIONARY2_SOURCE,,GroupId: 2864680
@@ -24439,3 +24445,45 @@ lekko twardy",,IGNORE_NO_JMEDICT,,
 310874,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,,,-,どぼどぼ,,dobo dobo,"wylewanie się
 nalewanie (gęstego płynu)",,IGNORE_NO_JMEDICT,,
+310875,WORD_NOUN,,KATAKANA,,,-,モス,,mosu,ćma,ang: moth,DICTIONARY2_SOURCE,"DUPLICATE 128187
+DUPLICATE 310876",GroupId: 2864687
+310876,WORD_NOUN,,KATAKANA,,,-,モス,,mosu,mech,ang: moss,DICTIONARY2_SOURCE,"DUPLICATE 128187
+DUPLICATE 310875",GroupId: 2864688
+310877,WORD_ADJECTIVE_F,,KATAKANA,,,-,アトランチック,,atoranchikku,"Atlantyk
+atlantycki",,DICTIONARY2_SOURCE,,GroupId: 2842262
+310878,WORD_EXPRESSION,,KATAKANA,,,-,グラッチェ,,guracche,dziękuję,wło: grazie,DICTIONARY2_SOURCE,,GroupId: 1046550
+310879,WORD_EXPRESSION,,KATAKANA,,,-,グラッツェ,,gurattse,dziękuję,wło: grazie,DICTIONARY2_SOURCE,,GroupId: 1046550
+310880,WORD_EXPRESSION,,KATAKANA,,,-,グラツィエ,,guratsie,dziękuję,wło: grazie,DICTIONARY2_SOURCE,,GroupId: 1046550
+310881,WORD_EXPRESSION,,KATAKANA,,,-,グラッツィエ,,gurattsie,dziękuję,wło: grazie,DICTIONARY2_SOURCE,,GroupId: 1046550
+310882,WORD_EXPRESSION,,KATAKANA,,,-,グラッツエ,,gurattsue,dziękuję,wło: grazie,DICTIONARY2_SOURCE,,GroupId: 1046550
+310883,WORD_EXPRESSION,,KATAKANA,,,-,グラーツィエ,,guraatsie,dziękuję,wło: grazie,DICTIONARY2_SOURCE,,GroupId: 1046550
+310884,WORD_EXPRESSION,,KATAKANA,,,-,グラチエ,,gurachie,dziękuję,wło: grazie,DICTIONARY2_SOURCE,,GroupId: 1046550
+310885,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,予定は未定,よていはみてい,,yotei wa mitei,"plany są tylko planami
+harmonogram nie jest ustalony",,DICTIONARY2_SOURCE,,GroupId: 2864666
+310886,WORD_NOUN,,KATAKANA_HIRAGANA,,,アクティブマトリックス式有機ＥＬ,アクティブマトリックスしきゆうきイーエル,,akutibu matorikku sushiki yuukii ieru,"active-matrix organic light-emitting diode
+AMOLED",elektronika; ulepszona wersja diod OLED,DICTIONARY2_SOURCE,,GroupId: 2864684
+310887,WORD_NOUN,,KATAKANA,,,ＡＭＯＬＥＤ,アモレッド,,amoreddo,"active-matrix organic light-emitting diode
+AMOLED",elektronika; ulepszona wersja diod OLED,DICTIONARY2_SOURCE,,GroupId: 2864685
+310888,WORD_NOUN,,KATAKANA_HIRAGANA,,,レーベンシュタイン距離,レーベンシュタインきょり,,reebenshutain kyori,odległość Levenshteina,"informatyka; miara odmienności napisów (skończonych ciągów znaków), zaproponowana w 1965 roku przez Władimira Lewensztejna",DICTIONARY2_SOURCE,,GroupId: 2864686
+310889,WORD_NOUN,,KATAKANA,,,-,ユマニテ,,yumanite,"człowieczeństwo
+humanitarność",fra: humanité,DICTIONARY2_SOURCE,,GroupId: 2864689
+310890,WORD_NOUN,,KATAKANA,,,-,ブートローダ,,buutorooda,"bootloader
+program rozruchowy","informatyka; działający na zasadzie „samorozruchu” program uruchamiany jako pierwszy po zakończeniu wykonywania przez BIOS lub UEFI procedury POST, służący do załadowania systemu operacyjnego do pamięci operacyjnej komputera",DICTIONARY2_SOURCE,,GroupId: 2864690
+310891,WORD_NOUN,,KATAKANA,,,-,ブートローダー,,buutoroodaa,"bootloader
+program rozruchowy","informatyka; działający na zasadzie „samorozruchu” program uruchamiany jako pierwszy po zakończeniu wykonywania przez BIOS lub UEFI procedury POST, służący do załadowania systemu operacyjnego do pamięci operacyjnej komputera",DICTIONARY2_SOURCE,,GroupId: 2864690
+310892,WORD_NOUN,,KATAKANA_HIRAGANA,,,センター返し,センターがえし,,sentaa gaeshi,"uderzenie piłki w kierunku pola środkowego
+piłka uderzona w kierunku środka pola",baseball,DICTIONARY2_SOURCE,,GroupId: 2864691
+310893,WORD_NOUN,,HIRAGANA,,,左投手,ひだりとうしゅ,,hidaritoushu,leworęczny miotacz,baseball,DICTIONARY2_SOURCE,,GroupId: 2864692
+310894,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,稽古をつける,けいこをつける,,keiko o tsukeru,"dawać lekcje
+uczyć
+instruować
+prowadzić",,DICTIONARY2_SOURCE,,GroupId: 2864693
+310895,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,稽古を付ける,けいこをつける,,keiko o tsukeru,"dawać lekcje
+uczyć
+instruować
+prowadzić",,DICTIONARY2_SOURCE,,GroupId: 2864693
+310896,WORD_NOUN,,KATAKANA,,,-,サムライブルー,,samurai buruu,Samurai Blue,nazwa organizacji; przydomek reprezentacji Japonii w piłce nożnej,DICTIONARY2_SOURCE,,GroupId: 5747248
+310897,WORD_NOUN,,KATAKANA,,,-,サムライ・ブルー,,samurai buruu,Samurai Blue,nazwa organizacji; przydomek reprezentacji Japonii w piłce nożnej,DICTIONARY2_SOURCE,,GroupId: 5747248
+310898,WORD_NOUN,,HIRAGANA,,,流行語大賞,りゅうこうごたいしょう,,ryuukougo taishou,nagroda za słowo roku,niesklasyfikowana nazwa,DICTIONARY2_SOURCE,,GroupId: 5747249
