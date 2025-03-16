@@ -1605,9 +1605,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					EntryAdditionalDataEntry$ProposalNewPolishTranslate entryAdditionalDataEntry$ProposalNewPolishTranslate = entryAdditionalDataEntry.proposalNewPolishTranslateMap.get(System.identityHashCode(sense));
 					
 					if (entryAdditionalDataEntry$ProposalNewPolishTranslate != null) {						
-						csvWriter.write("PROPOZYCJA\n" + "---\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$ProposalNewPolishTranslate.proposalPolishGlossList)); columnsNo++;
+						csvWriter.write("PROPOZYCJA\n---\n" +
+								(entryAdditionalDataEntry$ProposalNewPolishTranslate.polishGlossListEquals == true ? "IDENTYCZNE" : "RÓŻNICA") + "\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$ProposalNewPolishTranslate.proposalPolishGlossList)); columnsNo++;
 						
-						csvWriter.write("PROPOZYCJA\n" + "---\n---\n" + Helper.convertListToString(entryAdditionalDataEntry$ProposalNewPolishTranslate.proposalPolishSenseAdditionalInfoList.stream()
+						csvWriter.write("PROPOZYCJA\n---\n" + (entryAdditionalDataEntry$ProposalNewPolishTranslate.polishAdditionalInfoListEquals == true ? "IDENTYCZNE" : "RÓŻNICA") + "\n---\n" + Helper.convertListToString(entryAdditionalDataEntry$ProposalNewPolishTranslate.proposalPolishSenseAdditionalInfoList.stream()
 								.map(m -> m.getValue()).collect(Collectors.toList()))); columnsNo++;
 					}
 				}				
@@ -3296,8 +3297,11 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				}
 				
 				// zapisujemy obiekt z propozycja nowego tlumaczenia, aby zapis sie pozniej w pliku wynikowym
-				entryAdditionalDataEntry.proposalNewPolishTranslateMap.put(System.identityHashCode(entryFromPolishDictionarySense), 
-						new EntryAdditionalDataEntry$ProposalNewPolishTranslate(entryToCompareSenseGlossPolList, entryToCompareSenseAdditionalInfoPolList));
+				entryAdditionalDataEntry.proposalNewPolishTranslateMap.put(System.identityHashCode(entryFromPolishDictionarySense),
+						new EntryAdditionalDataEntry$ProposalNewPolishTranslate(
+								equalsGlossList(entryFromPolishDictionarySenseGlossPolList, entryToCompareSenseGlossPolList),
+								equalsAdditionalInfoList(entryFromPolishDictionarySenseAdditionalInfoPolList, entryToCompareSenseAdditionalInfoPolList),
+								entryToCompareSenseGlossPolList, entryToCompareSenseAdditionalInfoPolList));
 			}
 		}
 		
@@ -3665,12 +3669,19 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	}
 	
 	private static class EntryAdditionalDataEntry$ProposalNewPolishTranslate {
-				
+		
+		private boolean polishGlossListEquals;
+		private boolean polishAdditionalInfoListEquals;
+		
 		private List<Gloss> proposalPolishGlossList;		
 		private List<SenseAdditionalInfo> proposalPolishSenseAdditionalInfoList;
 
 		public EntryAdditionalDataEntry$ProposalNewPolishTranslate(
+				boolean polishGlossListEquals,  boolean polishAdditionalInfoListEquals,
 				List<Gloss> proposalPolishGlossList, List<SenseAdditionalInfo> proposalPolishSenseAdditionalInfoList) {
+			
+			this.polishGlossListEquals = polishGlossListEquals;
+			this.polishAdditionalInfoListEquals = polishAdditionalInfoListEquals;
 						
 			this.proposalPolishGlossList = proposalPolishGlossList;
 			this.proposalPolishSenseAdditionalInfoList = proposalPolishSenseAdditionalInfoList;
