@@ -15,7 +15,7 @@ import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalDa
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.SaveEntryListAsHumanCsvConfig;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
-public class UpdateOnlyPolishJapaneseTranslate {
+public class UpdateProposalPolishJapaneseTranslates {
 	
 	public static void main(String[] args) throws Exception {
 
@@ -101,6 +101,6 @@ public class UpdateOnlyPolishJapaneseTranslate {
 	private static void printHelp(Options options) {		
 		HelpFormatter formatter = new HelpFormatter();
 		
-		formatter.printHelp(UpdateOnlyPolishJapaneseTranslate.class.getSimpleName(), options);
+		formatter.printHelp(UpdateProposalPolishJapaneseTranslates.class.getSimpleName(), options);
 	}
 }
