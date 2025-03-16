@@ -34,6 +34,7 @@ import javax.xml.validation.Validator;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang.SerializationUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
@@ -1078,6 +1079,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		public boolean addOldPolishTranslates = false;
 		public boolean addOldEnglishPolishTranslatesDuringDictionaryUpdate = false;
 		public boolean addDeleteSenseDuringDictionaryUpdate = false;
+		public boolean addProposalPolishTranslates = false;
 		
 		public boolean markRomaji = false;
 		
@@ -1594,6 +1596,20 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 							
 							csvWriter.write(Helper.convertListToString(senseAdditionalInfoStringList)); columnsNo++;
 						}						
+					}
+				}	
+				
+				// aktualizacja o propozycje polskiego znaczenia (jezeli wystepuje)
+				if (config.addProposalPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.proposalNewPolishTranslateMap != null) {
+					
+					EntryAdditionalDataEntry$ProposalNewPolishTranslate entryAdditionalDataEntry$ProposalNewPolishTranslate = entryAdditionalDataEntry.proposalNewPolishTranslateMap.get(System.identityHashCode(sense));
+					
+					if (entryAdditionalDataEntry$ProposalNewPolishTranslate != null) {						
+						csvWriter.write("PROPOZYCJA\n---\n" +
+								(entryAdditionalDataEntry$ProposalNewPolishTranslate.polishGlossListEquals == true ? "IDENTYCZNE" : "RÓŻNICA") + "\n---\n" + generateGlossWriterCellValue(entryAdditionalDataEntry$ProposalNewPolishTranslate.proposalPolishGlossList)); columnsNo++;
+						
+						csvWriter.write("PROPOZYCJA\n---\n" + (entryAdditionalDataEntry$ProposalNewPolishTranslate.polishAdditionalInfoListEquals == true ? "IDENTYCZNE" : "RÓŻNICA") + "\n---\n" + Helper.convertListToString(entryAdditionalDataEntry$ProposalNewPolishTranslate.proposalPolishSenseAdditionalInfoList.stream()
+								.map(m -> m.getValue()).collect(Collectors.toList()))); columnsNo++;
 					}
 				}				
 			}			
@@ -3234,6 +3250,64 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return new ArrayList<List<KanjiKanaPair>>(theSameTranslate.values());
 	}
 	
+	public Entry updateOnlyPolishJapaneseTranslate(Entry entryFromPolishDictionary, Entry entryToCompare, EntryAdditionalData entryAdditionalData) {
+		
+		// tworzymy klona, aby nie pracowac na zrodlowym obiekcie
+		entryFromPolishDictionary = (Entry)SerializationUtils.clone(entryFromPolishDictionary);
+		
+		if (entryFromPolishDictionary.getEntryId().longValue() != entryToCompare.getEntryId().longValue()) {
+			throw new RuntimeException("Different entry id: " + entryFromPolishDictionary.getEntryId() + " vs " + entryToCompare.getEntryId());
+		}
+		
+		// sprawdzenie, czy liczba znaczen jest taka sama, nie moze byc zadnych roznic, a to by znaczylo, ze ktos usunal dany wpis
+		if (entryFromPolishDictionary.getSenseList().size() != entryToCompare.getSenseList().size()) {
+			throw new RuntimeException("Different sense list for: " + entryFromPolishDictionary.getEntryId());
+		}
+		
+		for (int senseIdx = 0; senseIdx < entryFromPolishDictionary.getSenseList().size(); ++senseIdx) {
+			
+			// pobieramy znaczenia z obu wpisow
+			Sense entryFromPolishDictionarySense = entryFromPolishDictionary.getSenseList().get(senseIdx);
+			Sense entryToCompareSense = entryToCompare.getSenseList().get(senseIdx);
+			
+			// pobranie polskiego znaczenia i informacji dodatkowych z obu wpisow
+			List<Gloss> entryFromPolishDictionarySenseGlossPolList = entryFromPolishDictionarySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+			List<SenseAdditionalInfo> entryFromPolishDictionarySenseAdditionalInfoPolList = entryFromPolishDictionarySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+			
+			List<Gloss> entryToCompareSenseGlossPolList = entryToCompareSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+			List<SenseAdditionalInfo> entryToCompareSenseAdditionalInfoPolList = entryToCompareSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+			
+			// liczymy hash dla obu znaczen (sprawdzenie, czy zostaly wprowadzone jakies zmiany)
+			String hashForEntryFromPolishDictionarySense = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(entryFromPolishDictionarySense, entryFromPolishDictionarySenseGlossPolList, entryFromPolishDictionarySenseAdditionalInfoPolList);
+			String hashForEntryToCompareSense = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(entryToCompareSense, entryToCompareSenseGlossPolList, entryToCompareSenseAdditionalInfoPolList);
+			
+			if (hashForEntryFromPolishDictionarySense.equals(hashForEntryToCompareSense) == false) { // jezeli znaczenie zostalo zmienione to dodaj te propozycje do manualnego sprawdzenia
+					
+				// sprawdzenie i ewentualne stworzenie obiektu z dodatkowymi danymi
+				EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(entryFromPolishDictionary.getEntryId());
+				
+				if (entryAdditionalDataEntry == null) {
+					entryAdditionalDataEntry = new EntryAdditionalDataEntry();
+					
+					entryAdditionalData.jmdictEntryAdditionalDataEntryMap.put(entryFromPolishDictionary.getEntryId(), entryAdditionalDataEntry);
+				}
+				
+				if (entryAdditionalDataEntry.proposalNewPolishTranslateMap == null) {		
+					entryAdditionalDataEntry.proposalNewPolishTranslateMap = new TreeMap<>();
+				}
+				
+				// zapisujemy obiekt z propozycja nowego tlumaczenia, aby zapis sie pozniej w pliku wynikowym
+				entryAdditionalDataEntry.proposalNewPolishTranslateMap.put(System.identityHashCode(entryFromPolishDictionarySense),
+						new EntryAdditionalDataEntry$ProposalNewPolishTranslate(
+								equalsGlossList(entryFromPolishDictionarySenseGlossPolList, entryToCompareSenseGlossPolList),
+								equalsAdditionalInfoList(entryFromPolishDictionarySenseAdditionalInfoPolList, entryToCompareSenseAdditionalInfoPolList),
+								entryToCompareSenseGlossPolList, entryToCompareSenseAdditionalInfoPolList));
+			}
+		}
+		
+		return entryFromPolishDictionary;
+	}
+	
 	public CommonWord convertKanjiKanaPairToCommonWord(int id, KanjiKanaPair kanjiKanaPair) throws Exception {
 		
 		List<String> partOfSpeechList = new ArrayList<String>();
@@ -3564,6 +3638,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		private List<EntryAdditionalDataEntry$UpdateDictionarySense> deleteDictionarySenseListDuringUpdateDictionary;
 		
+		private Map<Integer, EntryAdditionalDataEntry$ProposalNewPolishTranslate> proposalNewPolishTranslateMap;
+		
 	}
 	
 	private static class EntryAdditionalDataEntry$UpdateDictionarySense {
@@ -3589,6 +3665,26 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			this.oldPolishGlossList = oldPolishGlossList;
 			this.oldPolishSenseAdditionalInfoList = oldPolishSenseAdditionalInfoList;
+		}
+	}
+	
+	private static class EntryAdditionalDataEntry$ProposalNewPolishTranslate {
+		
+		private boolean polishGlossListEquals;
+		private boolean polishAdditionalInfoListEquals;
+		
+		private List<Gloss> proposalPolishGlossList;		
+		private List<SenseAdditionalInfo> proposalPolishSenseAdditionalInfoList;
+
+		public EntryAdditionalDataEntry$ProposalNewPolishTranslate(
+				boolean polishGlossListEquals,  boolean polishAdditionalInfoListEquals,
+				List<Gloss> proposalPolishGlossList, List<SenseAdditionalInfo> proposalPolishSenseAdditionalInfoList) {
+			
+			this.polishGlossListEquals = polishGlossListEquals;
+			this.polishAdditionalInfoListEquals = polishAdditionalInfoListEquals;
+						
+			this.proposalPolishGlossList = proposalPolishGlossList;
+			this.proposalPolishSenseAdditionalInfoList = proposalPolishSenseAdditionalInfoList;
 		}
 	}
 }
