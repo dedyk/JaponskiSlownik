@@ -89,9 +89,10 @@ public class UpdateOnlyPolishJapaneseTranslate {
 		
 		SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new SaveEntryListAsHumanCsvConfig();
 		
-		// dodajemy stare znaczenia
-		saveEntryListAsHumanCsvConfig.addOldEnglishPolishTranslatesDuringDictionaryUpdate = true;
-		saveEntryListAsHumanCsvConfig.addDeleteSenseDuringDictionaryUpdate = false;
+		// dodajemy propozycje nowych polskich znaczen
+		saveEntryListAsHumanCsvConfig.shiftCells = true;
+		saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
+		saveEntryListAsHumanCsvConfig.addProposalPolishTranslates = true;
 		
 		// zapisanie elementow, ktore nalezy manualnie zmodyfikowac
 		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update-manually.csv", resultList, entryAdditionalData);
