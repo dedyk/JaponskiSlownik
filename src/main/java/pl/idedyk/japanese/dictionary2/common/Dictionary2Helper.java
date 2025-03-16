@@ -34,6 +34,7 @@ import javax.xml.validation.Validator;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang.SerializationUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
@@ -3232,6 +3233,45 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 		
 		return new ArrayList<List<KanjiKanaPair>>(theSameTranslate.values());
+	}
+	
+	public Entry updateOnlyPolishJapaneseTranslate(Entry entryFromPolishDictionary, Entry entryToCompare, EntryAdditionalData entryAdditionalData) {
+		
+		// tworzymy klona, aby nie pracowac na zrodlowym obiekcie
+		entryFromPolishDictionary = (Entry)SerializationUtils.clone(entryFromPolishDictionary);
+		
+		if (entryFromPolishDictionary.getEntryId().longValue() != entryToCompare.getEntryId().longValue()) {
+			throw new RuntimeException("Different entry id: " + entryFromPolishDictionary.getEntryId() + " vs " + entryToCompare.getEntryId());
+		}
+		
+		// sprawdzenie, czy liczba znaczen jest taka sama, nie moze byc zadnych roznic, a to by znaczylo, ze ktos usunal dany wpis
+		if (entryFromPolishDictionary.getSenseList().size() != entryToCompare.getSenseList().size()) {
+			throw new RuntimeException("Different sense list for: " + entryFromPolishDictionary.getEntryId());
+		}
+		
+		for (int senseIdx = 0; senseIdx < entryFromPolishDictionary.getSenseList().size(); ++senseIdx) {
+			
+			// pobieramy znaczenia z obu wpisow
+			Sense entryFromPolishDictionarySense = entryFromPolishDictionary.getSenseList().get(senseIdx);
+			Sense entryToCompareSense = entryToCompare.getSenseList().get(senseIdx);
+			
+			// pobranie polskiego znaczenia i informacji dodatkowych z obu wpisow
+			List<Gloss> entryFromPolishDictionarySenseGlossPolList = entryFromPolishDictionarySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+			List<SenseAdditionalInfo> entryFromPolishDictionarySenseAdditionalInfoPolList = entryFromPolishDictionarySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+			
+			List<Gloss> entryToCompareSenseGlossPolList = entryToCompareSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+			List<SenseAdditionalInfo> entryToCompareSenseAdditionalInfoPolList = entryToCompareSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+			
+			// liczymy hash dla obu znaczen (sprawdzenie, czy zostaly wprowadzone jakies zmiany)
+			String hashForEntryFromPolishDictionarySense = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(entryFromPolishDictionarySense, entryFromPolishDictionarySenseGlossPolList, entryFromPolishDictionarySenseAdditionalInfoPolList);
+			String hashForEntryToCompareSense = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(entryToCompareSense, entryToCompareSenseGlossPolList, entryToCompareSenseAdditionalInfoPolList);
+			
+			System.out.println(entryFromPolishDictionary.getEntryId() + " - " + hashForEntryFromPolishDictionarySense.equals(hashForEntryToCompareSense));
+			
+			//tutaj();
+		}
+		
+		return entryFromPolishDictionary;
 	}
 	
 	public CommonWord convertKanjiKanaPairToCommonWord(int id, KanjiKanaPair kanjiKanaPair) throws Exception {
