@@ -606,7 +606,7 @@ Nippon Gas Company",nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5741398
 300388,WORD_NOUN,,KATAKANA,,,-,ベガス,,begasu,"Las Vegas (nazwa miejsca; skrót)
 Vega$ (dzieło artystyczne, np. literatura, muzyka i etc; serial telewizyjny)",,DICTIONARY2_SOURCE,,GroupId: 5741405
 300389,WORD_EXPRESSION,,HIRAGANA,,,-,ざり,,zari,"jest
-są",archaizm; zwykle jako 〜にざりける,DICTIONARY2_SOURCE,"DUPLICATE 9387
+są",archaizm; zwykle jako にざりける,DICTIONARY2_SOURCE,"DUPLICATE 9387
 DUPLICATE 103856",GroupId: 2861026
 300390,WORD_NOUN,,KATAKANA,,,-,コンヴァージョン,,konvaajon,"konwersja (ang: conversion)
 ??? (sport; w rugby, ang: conversion)",,DICTIONARY2_SOURCE,,GroupId: 1052920
@@ -6733,13 +6733,13 @@ płyn hydrauliczny",,DICTIONARY2_SOURCE,,GroupId: 2862227
 304044,WORD_NOUN,,HIRAGANA,,,中越地震,ちゅうえつじしん,,chuuetsu jishin,trzęsienie ziemi w Chūetsu,"wydarzenie; prefektura Niigata, 2004",DICTIONARY2_SOURCE,DUPLICATE 280750,GroupId: 5743924
 304045,WORD_VERB_RU,,HIRAGANA,,,ご覧じる,ごらんじる,,goranjiru,"widzieć
 patrzeć
-próbować ... (po formie te czasownika)",honoryfikatywnie; przestarzałe słowo,DICTIONARY2_SOURCE,DUPLICATE 269850,GroupId: 2862232
+próbować ... (po formie te czasownika)",przestarzałe słowo; honoryfikatywnie,DICTIONARY2_SOURCE,DUPLICATE 269850,GroupId: 2862232
 304046,WORD_VERB_RU,,HIRAGANA,,,御覧じる,ごろうじる,,goroujiru,"widzieć
 patrzeć
-próbować ... (po formie te czasownika)",honoryfikatywnie; przestarzałe słowo,DICTIONARY2_SOURCE,DUPLICATE 304047,GroupId: 2862232
+próbować ... (po formie te czasownika)",przestarzałe słowo; honoryfikatywnie,DICTIONARY2_SOURCE,DUPLICATE 304047,GroupId: 2862232
 304047,WORD_VERB_RU,,HIRAGANA,,,御覧じる,ごらんじる,,goranjiru,"widzieć
 patrzeć
-próbować ... (po formie te czasownika)",honoryfikatywnie; przestarzałe słowo,DICTIONARY2_SOURCE,DUPLICATE 304046,GroupId: 2862232
+próbować ... (po formie te czasownika)",przestarzałe słowo; honoryfikatywnie,DICTIONARY2_SOURCE,DUPLICATE 304046,GroupId: 2862232
 304048,WORD_NOUN,,HIRAGANA_KATAKANA,,,油圧シリンダ,ゆあつシリンダ,,yuatsu shirinda,siłownik hydrauliczny,,DICTIONARY2_SOURCE,,GroupId: 2862233
 304049,WORD_NOUN,,HIRAGANA_KATAKANA,,,油圧シリンダー,ゆあつシリンダー,,yuatsu shirindaa,siłownik hydrauliczny,,DICTIONARY2_SOURCE,,GroupId: 2862233
 304050,WORD_NOUN,,HIRAGANA,,,油圧機器,ゆあつきき,,yuatsu kiki,"sprzęt hydrauliczny
@@ -15182,7 +15182,7 @@ niewinny
 dziecinny
 delikatny
 mały
-malutki",pisanie zwykle z użyciem kana; przestarzałe słowo,DICTIONARY2_SOURCE,"DUPLICATE 573
+malutki",przestarzałe słowo; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 573
 DUPLICATE 47616
 DUPLICATE 59820
 DUPLICATE 306084
@@ -22911,10 +22911,12 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,ど変態,どへんたい,,do hentai,skrajny zboc
 płatność przez telefon",ang: pay-by-phone,DICTIONARY2_SOURCE,,GroupId: 2491940
 310141,WORD_NOUN,,HIRAGANA,,,濃尾地震,のうびじしん,,noubi jishin,"trzęsienie ziemi Mino-Owari (1891)
 trzęsienie ziemi Nōbi",wydarzenie,DICTIONARY2_SOURCE,,GroupId: 5747214
-310142,WORD_NOUN,,KATAKANA,,,-,ヴィジター,,vijitaa,"odwiedzający
-gość",ang: visitor,DICTIONARY2_SOURCE,,GroupId: 1104750
-310143,WORD_NOUN,,KATAKANA,,,-,ヴィジタ,,vijita,"odwiedzający
-gość",ang: visitor,DICTIONARY2_SOURCE,,GroupId: 1104750
+310142,WORD_NOUN,,KATAKANA,,,-,ヴィジター,,vijitaa,"odwiedzający (ang: visitor)
+gość (ang: visitor)
+drużyna gości (sport)",,DICTIONARY2_SOURCE,,GroupId: 1104750
+310143,WORD_NOUN,,KATAKANA,,,-,ヴィジタ,,vijita,"odwiedzający (ang: visitor)
+gość (ang: visitor)
+drużyna gości (sport)",,DICTIONARY2_SOURCE,,GroupId: 1104750
 310144,WORD_EXPRESSION,,KATAKANA,,,-,ワラタ,,warata,"LOL
 ROTFL
 haha",slang internetowy; od 笑った,DICTIONARY2_SOURCE,,GroupId: 2599620
@@ -25393,3 +25395,99 @@ mnie (pokornie; używany przez służących podczas rozmów ze swoim panem)",arc
 311363,WORD_NOUN,,KATAKANA,,,-,スヌード,,sunuudo,"siatka na włosy
 komin (rodzaj szala ocieplającego szyję)
 szal (rodzaj szala ocieplającego szyję)",odzież,DICTIONARY2_SOURCE,,GroupId: 2864820
+311364,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,アームウオーマー,,aamu uoomaa,"mitenka
+mitynka
+rękawiczka bez palców",odzież,DICTIONARY2_SOURCE,,GroupId: 1923030
+311365,WORD_NOUN,,HIRAGANA,,,洗濯せっけん,せんたくせっけん,,sentaku sekken,"mydło do prania
+detergent",,DICTIONARY2_SOURCE,,GroupId: 1941050
+311366,WORD_NOUN,,HIRAGANA,,,洗濯石けん,せんたくせっけん,,sentaku sekken,"mydło do prania
+detergent",,DICTIONARY2_SOURCE,,GroupId: 1941050
+311367,WORD_NOUN,,HIRAGANA,,,洗たくせっけん,せんたくせっけん,,sentaku sekken,"mydło do prania
+detergent",,DICTIONARY2_SOURCE,,GroupId: 1941050
+311368,WORD_NOUN,,HIRAGANA,,,洗たく石けん,せんたくせっけん,,sentaku sekken,"mydło do prania
+detergent",,DICTIONARY2_SOURCE,,GroupId: 1941050
+311369,WORD_NOUN,,HIRAGANA,,,洗たく石鹸,せんたくせっけん,,sentaku sekken,"mydło do prania
+detergent",,DICTIONARY2_SOURCE,,GroupId: 1941050
+311370,WORD_NOUN,,HIRAGANA,,,軟石けん,なんせっけん,,nansekken,miękkie mydło,zwłaszcza mydło potasowe,DICTIONARY2_SOURCE,,GroupId: 2644940
+311371,WORD_NOUN,,KATAKANA,,,-,ドーリー,,doorii,laleczka,ang: dolly,DICTIONARY2_SOURCE,,GroupId: 1088940
+311372,WORD_NOUN,,KATAKANA,,,-,シビライゼーション,,shibiraizeeshon,cywilizacja,"ang: civilization, civilisation",DICTIONARY2_SOURCE,,GroupId: 1061070
+311373,WORD_NOUN,,KATAKANA_HIRAGANA,,,クレゾール石けん液,クレゾールせっけんえき,,kurezooru sekken'eki,zmydlony roztwór krezolu,,DICTIONARY2_SOURCE,,GroupId: 1963380
+311374,WORD_NOUN,,KATAKANA_HIRAGANA,,,クレゾール石ケン液,クレゾールせっけんえき,,kurezooru sekken'eki,zmydlony roztwór krezolu,,DICTIONARY2_SOURCE,,GroupId: 1963380
+311375,WORD_NOUN,,KATAKANA_HIRAGANA,,,クレゾールせっけん液,クレゾールせっけんえき,,kurezooru sekken'eki,zmydlony roztwór krezolu,,DICTIONARY2_SOURCE,,GroupId: 1963380
+311376,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,目をつむる,めをつぶる,,me o tsuburu,"zamknąć swoje oczy
+przymknąć oko na
+udawać, że się nie widzi
+ignorować
+umrzeć",,DICTIONARY2_SOURCE,,GroupId: 1535180
+311377,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,眼をつぶる,めをつぶる,,me o tsuburu,"zamknąć swoje oczy
+przymknąć oko na
+udawać, że się nie widzi
+ignorować
+umrzeć",,DICTIONARY2_SOURCE,,GroupId: 1535180
+311378,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,眼を瞑る,めをつぶる,,me o tsuburu,"zamknąć swoje oczy
+przymknąć oko na
+udawać, że się nie widzi
+ignorować
+umrzeć",,DICTIONARY2_SOURCE,,GroupId: 1535180
+311379,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,眼をつむる,めをつぶる,,me o tsuburu,"zamknąć swoje oczy
+przymknąć oko na
+udawać, że się nie widzi
+ignorować
+umrzeć",,DICTIONARY2_SOURCE,,GroupId: 1535180
+311380,WORD_EXPRESSION,,HIRAGANA,,,在らざる,あらざる,,arazaru,nie,archaizm; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2854344
+311381,WORD_EXPRESSION,,HIRAGANA,,,有らざる,あらざる,,arazaru,nie,archaizm; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2854344
+311382,WORD_ADJECTIVE_NA,,KATAKANA,,,-,ボーダーレス,,boodaaresu,"bezgraniczny
+bez granic",ang: borderless,DICTIONARY2_SOURCE,,GroupId: 2854641
+311383,WORD_NOUN,,KATAKANA,,,-,スレキ,,sureki,???,odzież; ang: sleek,DICTIONARY2_SOURCE,,GroupId: 2496390
+311384,WORD_NOUN,,KATAKANA,,,-,スリーキ,,suriiki,???,odzież; ang: sleek,DICTIONARY2_SOURCE,,GroupId: 2496390
+311385,WORD_NOUN,,KATAKANA,,,-,テキスチャー,,tekisuchaa,"faktura (materiału)
+tekstura",ang: texture,DICTIONARY2_SOURCE,,GroupId: 1079350
+311386,WORD_NOUN,,KATAKANA,,,-,テクスチュアー,,tekusuchuaa,"faktura (materiału)
+tekstura",ang: texture,DICTIONARY2_SOURCE,,GroupId: 1079350
+311387,WORD_NOUN,,KATAKANA,,,-,テキスチュア,,tekisuchua,"faktura (materiału)
+tekstura",ang: texture,DICTIONARY2_SOURCE,,GroupId: 1079350
+311388,WORD_NOUN,,KATAKANA,,,-,エロティズム,,erotizumu,"erotyka
+erotyczność",ang: erotism,DICTIONARY2_SOURCE,,GroupId: 1030770
+311389,WORD_NOUN,,KATAKANA,,,-,リヴィジョン,,rivijon,"rewizja
+korekta",ang: revision,DICTIONARY2_SOURCE,,GroupId: 1142390
+311390,WORD_VERB_RU,,HIRAGANA,,,たち込める,たちこめる,,tachi komeru,"zawisnąć nad
+ciążyć nad
+spowijać
+owiać
+okryć
+okrywać",,DICTIONARY2_SOURCE,,GroupId: 1551510
+311391,WORD_VERB_RU,,HIRAGANA,,,立ち篭める,たちこめる,,tachi komeru,"zawisnąć nad
+ciążyć nad
+spowijać
+owiać
+okryć
+okrywać",,DICTIONARY2_SOURCE,,GroupId: 1551510
+311392,WORD_VERB_RU,,HIRAGANA,,,立ち罩める,たちこめる,,tachi komeru,"zawisnąć nad
+ciążyć nad
+spowijać
+owiać
+okryć
+okrywać",,DICTIONARY2_SOURCE,,GroupId: 1551510
+311393,WORD_NOUN,,HIRAGANA,,,逆性石けん,ぎゃくせいせっけん,,gyakusei sekken,"mydło pozytywne
+mydło antyseptyczne",,DICTIONARY2_SOURCE,,GroupId: 1693480
+311394,WORD_NOUN,,KATAKANA,,,-,ウオームブート,,uoomu buuto,gorący rozruch,informatyka; ang: warm boot,DICTIONARY2_SOURCE,,GroupId: 2284990
+311395,WORD_NOUN,,KATAKANA,,,ＡＳＣＩＩファイル,アスキーファイル,,asukii fairu,plik ASCII,informatyka; ang: ASCII file,DICTIONARY2_SOURCE,"DUPLICATE 152517
+DUPLICATE 311396
+DUPLICATE 311397",GroupId: 2279560
+311396,WORD_NOUN,,KATAKANA,,,ＡＳＣＩＩファイル,アスキー・ファイル,,asukii fairu,plik ASCII,informatyka; ang: ASCII file,DICTIONARY2_SOURCE,"DUPLICATE 152575
+DUPLICATE 311395
+DUPLICATE 311397",GroupId: 2279560
+311397,WORD_NOUN,,KATAKANA,,,ＡＳＣＩＩファイル,アスキファイル,,asuki fairu,plik ASCII,informatyka; ang: ASCII file,DICTIONARY2_SOURCE,"DUPLICATE 152574
+DUPLICATE 311395
+DUPLICATE 311396",GroupId: 2279560
+311398,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＥＥＺ,イー・イー・ゼット,,ii ii zetto,wyłączna strefa ekonomiczna,"ang: exclusive economic zone, EEZ",DICTIONARY2_SOURCE,DUPLICATE 311399,GroupId: 2864822
+311399,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＥＥＺ,イーイーゼット,,ii ii zetto,wyłączna strefa ekonomiczna,"ang: exclusive economic zone, EEZ",DICTIONARY2_SOURCE,DUPLICATE 311398,GroupId: 2864822
+311400,WORD_NOUN,,KATAKANA,,,ＤＭＺ,ディー・エム・ゼット,,dii emu zetto,strefa zdemilitaryzowana,"ang: demilitarized zone, demilitarised zone",DICTIONARY2_SOURCE,DUPLICATE 311401,GroupId: 2864823
+311401,WORD_NOUN,,KATAKANA,,,ＤＭＺ,ディーエムゼット,,dii emu zetto,strefa zdemilitaryzowana,"ang: demilitarized zone, demilitarised zone",DICTIONARY2_SOURCE,DUPLICATE 311400,GroupId: 2864823
+311402,WORD_NOUN,,KATAKANA,,,-,ビッグテック,,biggu tekku,Big Tech,,DICTIONARY2_SOURCE,,GroupId: 2864824
+311403,WORD_NOUN,,KATAKANA,,,-,ビッグ・テック,,biggu tekku,Big Tech,,DICTIONARY2_SOURCE,,GroupId: 2864824
+311404,WORD_NOUN,,KATAKANA,,,-,マンス,,mansu,miesiąc,ang: month,DICTIONARY2_SOURCE,,GroupId: 2864826
