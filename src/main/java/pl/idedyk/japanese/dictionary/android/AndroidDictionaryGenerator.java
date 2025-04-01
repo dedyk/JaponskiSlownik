@@ -459,6 +459,49 @@ public class AndroidDictionaryGenerator {
 				}
 			}
 			
+			// wygenerowanie dodatkowych grup mimo, ze ta informacja znajduje sie w misc/grade
+			Integer miscGrade = polishKanjidic2CharacterInfo.getMisc().getGrade();
+			
+			if (miscGrade != null) {
+				GroupEnum groupEnum = null;
+				
+				switch (miscGrade) {
+					case 1:
+						groupEnum = GroupEnum.JOUYOU1;
+						break;
+					case 2:
+						groupEnum = GroupEnum.JOUYOU2;
+						break;
+					case 3:
+						groupEnum = GroupEnum.JOUYOU3;
+						break;
+					case 4:
+						groupEnum = GroupEnum.JOUYOU4;
+						break;
+					case 5:
+						groupEnum = GroupEnum.JOUYOU5;
+						break;
+					case 6:
+						groupEnum = GroupEnum.JOUYOU6;
+						break;
+					case 8:
+						groupEnum = GroupEnum.JOUYOUS;
+						break;
+					case 9:
+						groupEnum = GroupEnum.JINMEIYOU;
+						break;
+					case 10:
+						groupEnum = GroupEnum.JINMEIYOU_JOUYOU;
+						break;
+					default:
+						// noop
+				}
+
+				if (groupEnum != null) {
+					polishKanjidic2CharacterInfo.getMisc2().getGroups().add(groupEnum);
+				}
+			}
+			
 			// dodanie informacji o kolejnosci pisania znakow
 			polishKanjidic2CharacterInfo.getMisc2().getStrokePaths().clear();
 			
