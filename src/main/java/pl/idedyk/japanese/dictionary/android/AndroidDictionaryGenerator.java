@@ -502,6 +502,13 @@ public class AndroidDictionaryGenerator {
 				}
 			}
 			
+			// wygenerowanie jeszcze grup JLPT
+			String jlpt = KanjiUtils.getJlpt(kanji);
+			
+			if (jlpt != null) {
+				polishKanjidic2CharacterInfo.getMisc2().getGroups().add(GroupEnum.getGroupEnum(jlpt));
+			}			
+			
 			// dodanie informacji o kolejnosci pisania znakow
 			polishKanjidic2CharacterInfo.getMisc2().getStrokePaths().clear();
 			

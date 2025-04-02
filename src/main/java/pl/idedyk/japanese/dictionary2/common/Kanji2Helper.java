@@ -425,10 +425,16 @@ public class Kanji2Helper {
 			
 			// nie dodajemy tych grup, gdyz ta informacja znajduje sie juz w MISC
 			if (Arrays.asList(GroupEnum.JOUYOU1, GroupEnum.JOUYOU2, GroupEnum.JOUYOU3, GroupEnum.JOUYOU4, GroupEnum.JOUYOU5, GroupEnum.JOUYOU6, 
-					GroupEnum.JOUYOUS, GroupEnum.JINMEIYOU, GroupEnum.JINMEIYOU_JOUYOU).contains(groupEnum) == false) {
-			
-				misc2.getGroups().add(groupEnum);
+					GroupEnum.JOUYOUS, GroupEnum.JINMEIYOU, GroupEnum.JINMEIYOU_JOUYOU).contains(groupEnum) == true) {			
+				continue;
 			}
+			
+			// nie dodajemy jeszcze tych grup
+			if (Arrays.asList(GroupEnum.JLPT_1, GroupEnum.JLPT_2, GroupEnum.JLPT_3, GroupEnum.JLPT_4, GroupEnum.JLPT_5).contains(groupEnum) == true) {			
+				continue;
+			}			
+			
+			misc2.getGroups().add(groupEnum);
 		}
 		
 		misc2.setUsed(oldKanjiEntryForDictionary.isUsed());		
