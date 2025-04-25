@@ -3538,13 +3538,13 @@ DUPLICATE 103511",GroupId: 2861276
 302321,WORD_NOUN,,HIRAGANA,,,糸ごんにゃく,いとこんにゃく,,ito konnyaku,"konnyaku pokrojone w cienkie niteczki
 kluski konnyaku","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2733000
 302322,WORD_NOUN,,HIRAGANA,,,バカ女,ばかおんな,,baka onna,"głupia dziewczyna
-głupia kobieta",slang; poniżająco,DICTIONARY2_SOURCE,"DUPLICATE 155564
+głupia kobieta",poniżająco,DICTIONARY2_SOURCE,"DUPLICATE 155564
 DUPLICATE 302323",GroupId: 2741950
 302323,WORD_NOUN,,HIRAGANA,,,バカ女,ばかじょ,,baka jo,"głupia dziewczyna
-głupia kobieta",slang; poniżająco,DICTIONARY2_SOURCE,"DUPLICATE 155564
+głupia kobieta",poniżająco,DICTIONARY2_SOURCE,"DUPLICATE 155564
 DUPLICATE 302322",GroupId: 2741950
 302324,WORD_NOUN,,KATAKANA_HIRAGANA,,,馬鹿女,バカおんな,,baka onna,"głupia dziewczyna
-głupia kobieta",slang; poniżająco,DICTIONARY2_SOURCE,"DUPLICATE 155605
+głupia kobieta",poniżająco,DICTIONARY2_SOURCE,"DUPLICATE 155605
 DUPLICATE 155606",GroupId: 2741950
 302325,WORD_NOUN,,HIRAGANA,,,赤カビ病,あかかびびょう,,akakabi byou,fuzarioza zbóż,"medycyna; choroba zbóż wywołana przez kilka gatunków grzybów: Fusarium culmorum, Gibberella avenacea, Gibberella zeae i Microdochium nivale",DICTIONARY2_SOURCE,,GroupId: 2794290
 302326,WORD_NOUN,,HIRAGANA,,,片マヒ,かたまひ,,kata mahi,"hemiplegia
@@ -15187,7 +15187,7 @@ niewinny
 dziecinny
 delikatny
 mały
-malutki",pisanie zwykle z użyciem kana; przestarzałe słowo,DICTIONARY2_SOURCE,"DUPLICATE 573
+malutki",przestarzałe słowo; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 573
 DUPLICATE 47616
 DUPLICATE 59820
 DUPLICATE 306084
@@ -26625,7 +26625,8 @@ noworodek (dialekt Chūbu)",,DICTIONARY2_SOURCE,DUPLICATE 312015,GroupId: 137156
 312018,WORD_NOUN,,HIRAGANA,,,敷地内,しきちない,,shikichinai,na terenie posesji,,DICTIONARY2_SOURCE,,GroupId: 2864917
 312019,WORD_NOUN,,HIRAGANA,,,記録保持者,きろくほじしゃ,,kiroku hojisha,"rekordzista
 rekordzistka",,DICTIONARY2_SOURCE,,GroupId: 2865043
-312020,WORD_NOUN,,HIRAGANA,,,臥褥,がじょく,,gajoku,kładzenie się do łóżka,zwłaszcza z powodu choroby,DICTIONARY2_SOURCE,,GroupId: 2865095
+312020,WORD_NOUN,,HIRAGANA,,,臥褥,がじょく,,gajoku,"kładzenie się do łóżka (zwłaszcza z powodu choroby)
+łóżko",przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2865095
 312021,WORD_NOUN,,KATAKANA,,,-,フラットデザイン,,furatto dezain,flat design,"styl projektowania grafiki zakładający wyeliminowanie takich elementów jak gradienty i cieniowanie, ograniczenie liczby kolorów i stosowanie tylko prostych kształtów i typografii",DICTIONARY2_SOURCE,,GroupId: 2865115
 312022,WORD_NOUN,,KATAKANA,,,-,フラット・デザイン,,furatto dezain,flat design,"styl projektowania grafiki zakładający wyeliminowanie takich elementów jak gradienty i cieniowanie, ograniczenie liczby kolorów i stosowanie tylko prostych kształtów i typografii",DICTIONARY2_SOURCE,,GroupId: 2865115
 312023,WORD_EXPRESSION,,HIRAGANA,,,塵ツモ,ちりつも,,chiri tsumo,"wiele małych rzeczy czyni wielką liczbę
@@ -26724,3 +26725,80 @@ DUPLICATE 312046",GroupId: 2865116
 każda mała rzecz pomaga",pisanie zwykle z użyciem kana; skrót; potocznie; przysłowie,DICTIONARY2_SOURCE,"DUPLICATE 312043
 DUPLICATE 312044
 DUPLICATE 312045",GroupId: 2865116
+312047,WORD_NOUN,,KATAKANA,,,-,ロッカー,,rokkaa,"rocker
+rock'n'roller",,DICTIONARY2_SOURCE,DUPLICATE 21900,GroupId: 2865131
+312048,WORD_NOUN,,HIRAGANA,,,ちょうちん行列,ちょうちんぎょうれつ,,chouchin gyouretsu,procesja z lampionami,,DICTIONARY2_SOURCE,,GroupId: 1734790
+312049,WORD_NOUN,,KATAKANA_HIRAGANA,,,イディシュ語,イディッシュご,,idisshu go,jidysz,"język Żydów aszkenazyjskich, powstały ok. X wieku w południowych Niemczech na bazie dialektu średnio-wysoko-niemieckiego z dodatkiem elementów hebrajskich, słowiańskich i romańskich",DICTIONARY2_SOURCE,,GroupId: 1961760
+312050,WORD_ADJECTIVE_I,,KATAKANA,,,痛い,イタイ,,itai,"bolesny
+bolący
+ranny
+żenujący (potocznie)
+wprawiający w zakłopotanie (potocznie)",,DICTIONARY2_SOURCE,"DUPLICATE 900
+DUPLICATE 312051",GroupId: 1432680
+312051,WORD_ADJECTIVE_I,,KATAKANA_HIRAGANA,,,痛い,イタい,,itai,"bolesny
+bolący
+ranny
+żenujący (potocznie)
+wprawiający w zakłopotanie (potocznie)",,DICTIONARY2_SOURCE,"DUPLICATE 900
+DUPLICATE 312050",GroupId: 1432680
+312052,WORD_ADJECTIVE_I,,KATAKANA,,,甚い,イタイ,,itai,"bolesny
+bolący
+ranny
+żenujący (potocznie)
+wprawiający w zakłopotanie (potocznie)",,DICTIONARY2_SOURCE,"DUPLICATE 26635
+DUPLICATE 312053",GroupId: 1432680
+312053,WORD_ADJECTIVE_I,,KATAKANA_HIRAGANA,,,甚い,イタい,,itai,"bolesny
+bolący
+ranny
+żenujący (potocznie)
+wprawiający w zakłopotanie (potocznie)",,DICTIONARY2_SOURCE,"DUPLICATE 26635
+DUPLICATE 312052",GroupId: 1432680
+312054,WORD_VERB_RU,,HIRAGANA,,,入替える,いれかえる,,ire kaeru,"zastępować
+wymieniać
+zastąpić
+zamienić
+zmienić
+przenieść (coś)
+transferować",,DICTIONARY2_SOURCE,,GroupId: 1587790
+312055,WORD_VERB_RU,,HIRAGANA,,,入換える,いれかえる,,ire kaeru,"zastępować
+wymieniać
+zastąpić
+zamienić
+zmienić
+przenieść (coś)
+transferować",,DICTIONARY2_SOURCE,,GroupId: 1587790
+312056,WORD_NOUN,,HIRAGANA,,,石こう像,せっこうぞう,,sekkouzou,"gipsowe popiersie
+gipsowa figura",,DICTIONARY2_SOURCE,,GroupId: 1940710
+312057,WORD_NOUN,,HIRAGANA,,,臥蓐,がじょく,,gajoku,"kładzenie się do łóżka (zwłaszcza z powodu choroby)
+łóżko",przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2865095
+312058,WORD_ADJECTIVE_NA,,KATAKANA,,,-,タクティカル,,takutikaru,taktyczny,ang: tactical,DICTIONARY2_SOURCE,,GroupId: 2865117
+312059,WORD_NOUN,,HIRAGANA,,,塩干,えんかん,,enkan,solenie i suszenie,"jedzenie, gotowanie; np. ryby",DICTIONARY2_SOURCE,,GroupId: 2865118
+312060,WORD_NOUN,,HIRAGANA,,,バカ男,ばかおとこ,,baka otoko,głupi mężczyzna,poniżająco,DICTIONARY2_SOURCE,,GroupId: 2865121
+312061,WORD_NOUN,,HIRAGANA,,,馬鹿男,ばかおとこ,,baka otoko,głupi mężczyzna,poniżająco,DICTIONARY2_SOURCE,,GroupId: 2865121
+312062,WORD_NOUN,,HIRAGANA,,,鼻持ち,はなもち,,hana mochi,tolerancja zapachu,,DICTIONARY2_SOURCE,,GroupId: 2865123
+312063,WORD_NOUN,,HIRAGANA,,,常緑広葉樹,じょうりょくこうようじゅ,,jouryoku kouyouju,wiecznie zielone drzewo liściaste,,DICTIONARY2_SOURCE,,GroupId: 2865124
+312064,WORD_NOUN,,HIRAGANA,,,洛西,らくせい,,rakusei,zachodnie Kioto,przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2865125
+312065,WORD_NOUN,,HIRAGANA,,,念仏宗,ねんぶつしゅう,,nenbutsu shuu,sekta Nenbutsu Buddyzmu,,DICTIONARY2_SOURCE,,GroupId: 2865126
+312066,WORD_NOUN,,KATAKANA,,,-,ルーフトップ,,ruufutoppu,dach,ang: rooftop,DICTIONARY2_SOURCE,,GroupId: 2865130
+312067,WORD_NOUN,,KATAKANA,,,-,フリアコ,,furiako,"bezpłatne zakwaterowanie
+???",skrót; skrót od フリー・アコモデーション,DICTIONARY2_SOURCE,,GroupId: 2865133
+312068,WORD_NOUN,,HIRAGANA,,,非時,ひじ,,hiji,"okres postu mnicha (buddyzm; od południa do 4 rano następnego dnia)
+okres postu kapłana (buddyzm; od południa do 4 rano następnego dnia)
+przerwanie postu (buddyzm)
+łamanie postu (buddyzm)
+jedzenie oferowane uczestnikom pogrzebu",,DICTIONARY2_SOURCE,,GroupId: 2865146
+312069,WORD_ADJECTIVE_NA,,KATAKANA,,,-,ピースフル,,piisufuru,pokojowy,ang: peaceful,DICTIONARY2_SOURCE,,GroupId: 2865147
+312070,"WORD_EXPRESSION
+WORD_NOUN",,KATAKANA,,,-,ソバーキュリアス,,sobaa kyuriasu,trzeźwa ciekawość,ang: sober curious,DICTIONARY2_SOURCE,,GroupId: 2865148
+312071,"WORD_EXPRESSION
+WORD_NOUN",,KATAKANA,,,-,ソーバーキュリアス,,soobaa kyuriasu,trzeźwa ciekawość,ang: sober curious,DICTIONARY2_SOURCE,,GroupId: 2865148
+312072,"WORD_EXPRESSION
+WORD_NOUN",,KATAKANA,,,-,ソバー・キュリアス,,sobaa kyuriasu,trzeźwa ciekawość,ang: sober curious,DICTIONARY2_SOURCE,,GroupId: 2865148
+312073,"WORD_EXPRESSION
+WORD_NOUN",,KATAKANA,,,-,ソーバー・キュリアス,,soobaa kyuriasu,trzeźwa ciekawość,ang: sober curious,DICTIONARY2_SOURCE,,GroupId: 2865148
+312074,WORD_NOUN,,HIRAGANA_KATAKANA,,,中高ドイツ語,ちゅうこうドイツご,,chuukou doitsu go,język średnio-wysoko-niemiecki,historyczna forma języka niemieckiego,DICTIONARY2_SOURCE,,GroupId: 2865151
+312075,WORD_NOUN,,HIRAGANA_KATAKANA,,,低地ドイツ語,ていちドイツご,,teichi doitsu go,język dolnoniemiecki,,DICTIONARY2_SOURCE,,GroupId: 2865152
+312076,WORD_NOUN,,KATAKANA,,,-,ヒトラー,,hitoraa,"Hitler (rodzina lub nazwisko)
+Hitler, Adolf (1889-1945) (imię i nazwisko osoby)",,DICTIONARY2_SOURCE,,GroupId: 5065718
+312077,WORD_NOUN,,KATAKANA,,,-,ヒットラー,,hittoraa,"Hitler (rodzina lub nazwisko)
+Hitler, Adolf (1889-1945) (imię i nazwisko osoby)",,DICTIONARY2_SOURCE,,GroupId: 5065718
