@@ -30510,10 +30510,10 @@ przedsiębiorca pogrzebowy",,DICTIONARY2_SOURCE,,GroupId: 2866102
 tradycyjny trzystrunowy instrument z Kyushu (wyjaśnienie)",,DICTIONARY2_SOURCE,,GroupId: 2866103
 313999,WORD_NOUN,,KATAKANA,,,-,ゴッタン,,gottan,"gottan
 tradycyjny trzystrunowy instrument z Kyushu (wyjaśnienie)",,DICTIONARY2_SOURCE,,GroupId: 2866103
-314000,WORD_NOUN,,KATAKANA,,,-,コツン,,kotsun,"uderzenie
-dźwięk uderzenia",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2866104
-314001,WORD_NOUN,,HIRAGANA,,,-,こつん,,kotsun,"uderzenie
-dźwięk uderzenia",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2866104
+314000,"WORD_NOUN
+WORD_ADVERB_TO",,KATAKANA,,,-,コツン,,kotsun,z trzaskiem,onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2866104
+314001,"WORD_NOUN
+WORD_ADVERB_TO",,HIRAGANA,,,-,こつん,,kotsun,z trzaskiem,onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2866104
 314002,"WORD_ADVERB
 WORD_ADVERB_TO
 WORD_NOUN",,KATAKANA,,,-,ジョキジョキ,,joki joki,cięcie (nożyczkami),onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2866105
@@ -30859,7 +30859,8 @@ Lovecraftiański horror",,DICTIONARY2_SOURCE,,GroupId: 2866208
 314178,WORD_NOUN,,HIRAGANA_KATAKANA,,,電気シャワー,でんきシャワー,,denki shawaa,"elektryczny prysznic
 samonagrzewająca się głowica prysznicowa",,DICTIONARY2_SOURCE,,GroupId: 2866212
 314179,WORD_NOUN,,HIRAGANA,,,朝日,あさひ,,asahi,"McIntosh
-czerwony McIntosh",,DICTIONARY2_SOURCE,DUPLICATE 6416,GroupId: 2856154
+czerwony McIntosh",,DICTIONARY2_SOURCE,"DUPLICATE 6416
+DUPLICATE 314193",GroupId: 2856154
 314180,WORD_NOUN,,HIRAGANA,,,買物好き,かいものずき,,kaimono zuki,"zakupoholik
 kompulsywne kupowanie
 zakupoholizm",,DICTIONARY2_SOURCE,,GroupId: 2843283
@@ -30889,5 +30890,48 @@ pas rotacyjny barku",anatomia; ang: rotator cuff,DICTIONARY2_SOURCE,,GroupId: 28
 stożek rotatorów
 pas rotacyjny barku",anatomia; ang: rotator cuff,DICTIONARY2_SOURCE,,GroupId: 2866219
 314192,WORD_NOUN,,HIRAGANA,,,先行者利益,せんこうしゃりえき,,senkousha rieki,przewaga pierwszego gracza,biznes,DICTIONARY2_SOURCE,,GroupId: 2866221
-314193,WORD_NOUN,,HIRAGANA,,,朝日,あさひ,,asahi,"xxx
-xxx",,,,GroupId: 5524809
+314193,WORD_NOUN,,HIRAGANA,,,朝日,あさひ,,asahi,Asahi,nazwa firmy; nazwa miejsca; rodzina lub nazwisko; kobiecy termin lub język,DICTIONARY2_SOURCE,"DUPLICATE 6416
+DUPLICATE 314179",GroupId: 5524809
+314194,WORD_ADJECTIVE_F,,KATAKANA,,,-,トラピスチヌ,,torapisuchinu,trapistka,"siostra zakonna w zakonie trapistów, ang: trappistine",DICTIONARY2_SOURCE,,GroupId: 1085880
+314195,WORD_NOUN,,HIRAGANA,,,竹べら,たけべら,,takebera,bambusowa szpatułka,,DICTIONARY2_SOURCE,,GroupId: 1696630
+314196,WORD_NOUN,,KATAKANA,,,-,ティーンネイジャー,,tiinneijaa,"nastolatek
+nastolatka",ang: teenager,DICTIONARY2_SOURCE,,GroupId: 1079050
+314197,WORD_NOUN,,HIRAGANA,,,再梱包,さいこんぽう,,saikonpou,"zapakowanie na nowo
+przepakowywanie",,DICTIONARY2_SOURCE,,GroupId: 2865333
+314198,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,ボトリ,,botori,z hukiem (czegoś ciężkiego),onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2866008
+314199,"WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,ぼとり,,botori,z hukiem (czegoś ciężkiego),onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2866008
+314200,WORD_NOUN,,KATAKANA,,,-,リマインドメール,,rimaindo meeru,e-mail z przypomnieniem,,DICTIONARY2_SOURCE,,GroupId: 2866156
+314201,WORD_EXPRESSION,,HIRAGANA,,,貸切状態,かしきりじょうたい,,kashi kiri joutai,"posiadanie miejsca dla siebie (np. restauracja, kino)
+???",potocznie,DICTIONARY2_SOURCE,,GroupId: 2866182
+314202,WORD_EXPRESSION,,HIRAGANA,,,貸し切り状態,かしきりじょうたい,,kashi kiri joutai,"posiadanie miejsca dla siebie (np. restauracja, kino)
+???",potocznie,DICTIONARY2_SOURCE,,GroupId: 2866182
+314203,WORD_NOUN,,HIRAGANA,,,開幕編,かいまくへん,,kaimakuhen,"akt otwarcia
+część wprowadzająca",,DICTIONARY2_SOURCE,,GroupId: 2866220
+314204,WORD_NOUN,,KATAKANA,,,-,パラコード,,parakoodo,linka paracord,,DICTIONARY2_SOURCE,,GroupId: 2866222
+314205,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,広博,こうはく,,kouhaku,rozległa wiedza,,DICTIONARY2_SOURCE,,GroupId: 2866223
+314206,WORD_NOUN,,KATAKANA,,,-,リーゼントヘア,,riizento hea,kaczy ogon,fryzura,DICTIONARY2_SOURCE,,GroupId: 2866225
+314207,WORD_NOUN,,KATAKANA,,,-,リーゼント・ヘア,,riizento hea,kaczy ogon,fryzura,DICTIONARY2_SOURCE,,GroupId: 2866225
+314208,WORD_NOUN,,KATAKANA_HIRAGANA,,,タブ譜,タブふ,,tabu fu,tabulatura,muzyka,DICTIONARY2_SOURCE,,GroupId: 2866226
+314209,WORD_NOUN,,HIRAGANA,,,盛栄,せいえい,,seiei,"rozkwit (biznesu)
+sukces
+dobrobyt",formalny lub literacki termin; używane w pisarstwie epistolarnym,DICTIONARY2_SOURCE,,GroupId: 2866227
+314210,WORD_NOUN,,HIRAGANA,,,視直径,しちょっけい,,shichokkei,"rozmiar kątowy
+wielkość kątowa
+kąt widzenia obiektu",astronomia,DICTIONARY2_SOURCE,,GroupId: 2866228
+314211,WORD_NOUN,,HIRAGANA,,,溶射,ようしゃ,,yousha,"natryskiwanie cieplne
+metalizacja",,DICTIONARY2_SOURCE,,GroupId: 2866229
+314212,WORD_ADJECTIVE_F,,HIRAGANA,,,耐刃,たいじん,,taijin,"nożo odporny
+odporny na przecięcia",,DICTIONARY2_SOURCE,,GroupId: 2866230
+314213,WORD_NOUN,,HIRAGANA,,,色面,しきめん,,shikimen,obszar jednolitego koloru,estetyka sztuki,DICTIONARY2_SOURCE,,GroupId: 2866231
+314214,WORD_NOUN,,HIRAGANA,,,竹がえし,たけがえし,,take gaeshi,dziecięca gra polegająca na łapaniu bambusowych szpatułek na grzbiet dłoni,termin historyczny,DICTIONARY2_SOURCE,,GroupId: 2866232
+314215,WORD_NOUN,,HIRAGANA,,,竹返し,たけがえし,,take gaeshi,dziecięca gra polegająca na łapaniu bambusowych szpatułek na grzbiet dłoni,termin historyczny,DICTIONARY2_SOURCE,,GroupId: 2866232
+314216,WORD_NOUN,,HIRAGANA,,,関銭,せきせん,,sekisen,"opłata drogowa
+opłata tranzytowa",termin historyczny,DICTIONARY2_SOURCE,,GroupId: 2866233
+314217,WORD_NOUN,,HIRAGANA,,,鉄銭,てっせん,,tessen,żelazna moneta,termin historyczny,DICTIONARY2_SOURCE,,GroupId: 2866234
+314218,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,変状,へんじょう,,henjou,"deformacja
+anomalia
+nieprawidłowość",,DICTIONARY2_SOURCE,,GroupId: 2866235
