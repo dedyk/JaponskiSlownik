@@ -1,5 +1,5 @@
 ----------
-update - x
++ update - x
 kanji - 20
 ----------
 small - 10
@@ -12,4 +12,4 @@ word - 20
 ----------
 ludzie - x
 ----------
-suma: 90
+suma: 80
