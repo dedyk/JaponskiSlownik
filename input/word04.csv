@@ -21950,9 +21950,8 @@ integralność (informatyka)
 spójność (informatyka)
 kompletność (informatyka)",,DICTIONARY2_SOURCE,,GroupId: 2864046
 309706,WORD_NOUN,,KATAKANA,,,-,ヘアドライアー,,hea doraiaa,suszarka do włosów,ang: hair dryer,DICTIONARY2_SOURCE,,GroupId: 1118180
-309707,WORD_NOUN,,HIRAGANA,,,キリスト生誕群像,きりすとせいたんぐんぞう,,kirisuto seitan gunzou,"grupa jasełkowa
-szopka bożonarodzeniowa",chrześcijaństwo,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2863993
+309707,WORD_NOUN,,KATAKANA,,,ＡＳＰＩ,アスピー,,asupii,"ASPI
+Advanced SCSI Programming Interface",informatyka; opracowany przez firmę Adaptec interfejs (API) określający komunikację pomiędzy kontrolerem SCSI komputera i urządzeniami SCSI (także ATAPI),DICTIONARY2_SOURCE,,GroupId: 2279600
 309708,WORD_NOUN,,HIRAGANA,,,丸数字,まるすうじ,,marusuuji,"cyfra w kółku
 liczba w kółku",,DICTIONARY2_SOURCE,,GroupId: 2864047
 309709,WORD_NOUN,,HIRAGANA,,,囲み文字,かこみもじ,,kakomimoji,"znak w prostokącie
@@ -24067,7 +24066,8 @@ osoba o wysokim wykształceniu (szczególnie używane przez uczonych w stosunku 
 pan feudalny
 szlachcic",archaizm; honoryfikatywnie,DICTIONARY2_SOURCE,"DUPLICATE 958
 DUPLICATE 50591
-DUPLICATE 297287",GroupId: 2864579
+DUPLICATE 297287
+DUPLICATE 314797",GroupId: 2864579
 310687,WORD_NOUN,,HIRAGANA,,,卿,うし,,ushi,"wysoko postawiona osoba (szczególnie używane przez uczonych w stosunku do ich nauczycieli; okres Edo)
 osoba o wysokim wykształceniu (szczególnie używane przez uczonych w stosunku do ich nauczycieli; okres Edo)
 pan feudalny
@@ -32088,6 +32088,57 @@ prezent (w uznaniu umiejętności itp.)",archaizm,DICTIONARY2_SOURCE,,GroupId: 2
 314785,WORD_NOUN,,HIRAGANA,,,水先案内船,みずさきあんないせん,,mizusaki annaisen,"łódź pilotowa
 statek pilotowy
 pilotówka",,DICTIONARY2_SOURCE,,GroupId: 2866557
-314786,WORD_NOUN,,HIRAGANA,,,水占い,みずうらない,,mizu uranai,hydromancja,wróżenie z wody,DICTIONARY2_SOURCE,,GroupId: 2866559
+314786,WORD_NOUN,,HIRAGANA,,,水占い,みずうらない,,mizu uranai,"hydromancja
+hydromancer",wróżenie z wody,DICTIONARY2_SOURCE,,GroupId: 2866559
 314787,WORD_NOUN,,KATAKANA,,,ＡＲＰＡ,アーパ,,aapa,"Advanced Research Projects Agency
 ARPA",nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5747354
+314788,WORD_NOUN,,HIRAGANA,,,環境改善,かんきょうかいぜん,,kankyou kaizen,"poprawa stanu środowiska
+poprawa stanu siedlisk",,DICTIONARY2_SOURCE,,GroupId: 2866537
+314789,WORD_NOUN,,HIRAGANA,,,這子,ほうこ,,houko,"lalka, która działa jak talizman ochronny dla niemowląt
+raczkujące dziecko",,DICTIONARY2_SOURCE,DUPLICATE 314790,GroupId: 2866545
+314790,WORD_NOUN,,HIRAGANA,,,這子,はうこ,,hauko,"lalka, która działa jak talizman ochronny dla niemowląt
+raczkujące dziecko",,DICTIONARY2_SOURCE,DUPLICATE 314789,GroupId: 2866545
+314791,WORD_NOUN,,HIRAGANA,,,這う子,ほうこ,,houko,"lalka, która działa jak talizman ochronny dla niemowląt
+raczkujące dziecko",,DICTIONARY2_SOURCE,DUPLICATE 314792,GroupId: 2866545
+314792,WORD_NOUN,,HIRAGANA,,,這う子,はうこ,,hauko,"lalka, która działa jak talizman ochronny dla niemowląt
+raczkujące dziecko",,DICTIONARY2_SOURCE,DUPLICATE 314791,GroupId: 2866545
+314793,WORD_NOUN,,KATAKANA,,,-,グルコーススパイク,,gurukoosu supaiku,"skok glukozy
+skok poziomu glukozy",medycyna; ang: glucose spike,DICTIONARY2_SOURCE,,GroupId: 2866550
+314794,WORD_NOUN,,KATAKANA,,,-,グルコース・スパイク,,gurukoosu supaiku,"skok glukozy
+skok poziomu glukozy",medycyna; ang: glucose spike,DICTIONARY2_SOURCE,,GroupId: 2866550
+314795,WORD_NOUN,,HIRAGANA,,,痩せ脛,やせずね,,yase zune,chuda noga,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2866561
+314796,WORD_NOUN,,HIRAGANA,,,痩せ臑,やせずね,,yase zune,chuda noga,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2866561
+314797,WORD_NOUN,,HIRAGANA,,,大人,おおびと,,oobito,"wielkolud
+olbrzym
+gigant",legenda,DICTIONARY2_SOURCE,"DUPLICATE 958
+DUPLICATE 50591
+DUPLICATE 297287
+DUPLICATE 310686",GroupId: 2866562
+314798,WORD_NOUN,,HIRAGANA,,,接面,せつめん,,setsumen,powierzchnia styku,,DICTIONARY2_SOURCE,,GroupId: 2866563
+314799,WORD_NOUN,,HIRAGANA,,,国土法,こくどほう,,kokudohou,Krajowa Ustawa o Planowaniu Przestrzennym,prawo; skrót,DICTIONARY2_SOURCE,,GroupId: 2866564
+314800,WORD_NOUN,,KATAKANA,,,-,コンピレーションアルバム,,konpireeshon' arubamu,"kompilacja utworów
+składanka utworów
+album składankowy",ang: compilation album,DICTIONARY2_SOURCE,,GroupId: 2866565
+314801,WORD_NOUN,,KATAKANA,,,-,コンピレーション・アルバム,,konpireeshon' arubamu,"kompilacja utworów
+składanka utworów
+album składankowy",ang: compilation album,DICTIONARY2_SOURCE,,GroupId: 2866565
+314802,WORD_NOUN,,KATAKANA,,,-,コンピ,,konpi,"kompilacja
+składanka",skrót; ang: compilation,DICTIONARY2_SOURCE,,GroupId: 2866566
+314803,WORD_NOUN,,HIRAGANA,,,水占,みなうら,,minaura,hydromancja,archaizm; wróżenie z wody,DICTIONARY2_SOURCE,DUPLICATE 314804,GroupId: 2866567
+314804,WORD_NOUN,,HIRAGANA,,,水占,みずうら,,mizuura,hydromancja,archaizm; wróżenie z wody,DICTIONARY2_SOURCE,DUPLICATE 314803,GroupId: 2866567
+314805,WORD_NOUN,,HIRAGANA,,,木髄,もくずい,,mokuzui,"miękisz
+miąższ
+rdzeń",botanika,DICTIONARY2_SOURCE,,GroupId: 2866568
+314806,WORD_NOUN,,HIRAGANA,,,脊髄灰白質炎,せきずいかいはくしつえん,,sekizui kaihaku shitsuen,"choroba Heinego-Medina
+paraliż dziecięcy
+polio",medycyna,DICTIONARY2_SOURCE,,GroupId: 2866569
+314807,WORD_NOUN,,HIRAGANA,,,石髄,せきずい,,sekizui,kaolin,"mineralogia; skała osadowa zawierająca w swym składzie głównie kaolinit, a także m.in. kwarc i mikę",DICTIONARY2_SOURCE,,GroupId: 2866570
+314808,WORD_NOUN,,HIRAGANA,,,灰白髄炎,かいはくずいえん,,kaihaku zuien,"choroba Heinego-Medina
+paraliż dziecięcy
+polio",medycyna,DICTIONARY2_SOURCE,,GroupId: 2866574
+314809,WORD_NOUN,,HIRAGANA,,,固油,かたあぶら,,kataabura,"pomada
+pomatum
+olejek do włosów",,DICTIONARY2_SOURCE,,GroupId: 2866575
+314810,WORD_NOUN,,HIRAGANA,,,接続曲,せつぞくきょく,,setsuzokukyoku,"mieszanka
+fantazja
+potpourri",muzyka,DICTIONARY2_SOURCE,,GroupId: 2866578
