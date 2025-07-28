@@ -669,8 +669,8 @@ słomkowy kapelusz",,DICTIONARY2_SOURCE,,GroupId: 2861023
 300425,WORD_NOUN,,HIRAGANA,,,麦わらぼう,むぎわらぼう,,mugi wara bou,"kapelusz słomkowy
 słomkowy kapelusz",,DICTIONARY2_SOURCE,,GroupId: 2861023
 300426,WORD_NOUN,,KATAKANA,,,-,スパテル,,supateru,szpatułka,niem: Spatel,DICTIONARY2_SOURCE,,GroupId: 2861024
-300427,WORD_NOUN,,KATAKANA,,,-,スパーテル,,supaateru,szpatułka,niem: Spatel,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2861024
+300427,WORD_NOUN,,KATAKANA,,,-,ハイキー・トーン,,hai kii toon,"wysoki ton
+wysoka tonacja",ang: high-key tone,DICTIONARY2_SOURCE,,GroupId: 1095030
 300428,WORD_NOUN,,HIRAGANA_KATAKANA,,,週刊プレイボーイ,しゅうかんプレイボーイ,,shuukan pureibooi,Shūkan Pureibōi,"dzieło artystyczne, np. literatura, muzyka i etc; znane także jako Shūpure lub WPB – japoński tygodnik adresowany do mężczyzn, wydawany od 1966 roku przez japońskie wydawnictwo Shueisha. Czasopismo – wbrew swojej nazwie – nie jest japońską edycją amerykańskiego magazynu erotycznego Playboy",DICTIONARY2_SOURCE,,GroupId: 5741406
 300429,WORD_NOUN,,HIRAGANA_KATAKANA,,,週プレ,しゅうプレ,,shuupure,Shūkan Pureibōi,"dzieło artystyczne, np. literatura, muzyka i etc; skrót, znane także jako Shūpure lub WPB – japoński tygodnik adresowany do mężczyzn, wydawany od 1966 roku przez japońskie wydawnictwo Shueisha. Czasopismo – wbrew swojej nazwie – nie jest japońską edycją amerykańskiego magazynu erotycznego Playboy",DICTIONARY2_SOURCE,,GroupId: 5741407
 300430,WORD_NOUN,,KATAKANA,,,-,テクトロニクス,,tekutoronikusu,Tektronix,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5741415
@@ -23398,7 +23398,8 @@ hej?
 patrzy!
 słuchaj!","wyrażenie zaskoczenia, podejrzenia i etc",DICTIONARY2_SOURCE,"DUPLICATE 1685
 DUPLICATE 86364
-DUPLICATE 86420",GroupId: 2847612
+DUPLICATE 86420
+DUPLICATE 314948",GroupId: 2847612
 310389,WORD_NOUN,,HIRAGANA,,,弊学,へいがく,,heigaku,mój uniwersytet,pokornie,DICTIONARY2_SOURCE,,GroupId: 2864429
 310390,WORD_INTERJECTION,,HIRAGANA_EXCEPTION,,,-,うぉー,,uu,woa,,DICTIONARY2_SOURCE,,GroupId: 2864430
 310391,WORD_INTERJECTION,,HIRAGANA_KATAKANA,,,-,うおー,,uoo,woa,,DICTIONARY2_SOURCE,,GroupId: 2864430
@@ -32364,3 +32365,55 @@ WORD_EXPRESSION",,HIRAGANA,,,虚を突かれる,きょをつかれる,,kyo o tsu
 WORD_EXPRESSION",,HIRAGANA,,,虚をつかれる,きょをつかれる,,kyo o tsukareru,zostać zaskoczony nieprzygotowany,,DICTIONARY2_SOURCE,,GroupId: 2866660
 314943,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,虚を衝かれる,きょをつかれる,,kyo o tsukareru,zostać zaskoczony nieprzygotowany,,DICTIONARY2_SOURCE,,GroupId: 2866660
+314944,"WORD_PARTICULE
+WORD_CONJUNCTION",,HIRAGANA,,,-,で,,de,"i (tworzy prostą koniunkcję zdań, で po czasownikach 五段 zakończonych na ぐ, む, ぶ or ぬ)
+i wtedy (wskazuje na związek sekwencyjny)
+ponieważ (wskazuje związek przyczynowo-skutkowy)
+więc (wskazuje związek przyczynowo-skutkowy)
+przez (wskazuje na zasadniczy powód)
+z powodu (wskazuje na zasadniczy powód)
+chociaż (wskazuje na relację kontrastową)
+ale (wskazuje na relację kontrastową)
+jednak (wskazuje na relację kontrastową)
+partykuła używana do łączenia z czasownikami posiłkowymi (jak w て-いる, て-いく, etc.)
+partykuła używana do czasowników złożonych (jak w やって来る)
+proszę (zrób) (potocznie; na końcu zdania; wskazuje prośbę lub lekki tryb rozkazujący)",,DICTIONARY2_SOURCE,"DUPLICATE 774
+DUPLICATE 21853
+DUPLICATE 210129",GroupId: 2654270
+314945,WORD_NOUN,,KATAKANA,,,-,ディフュージョン・インデックス,,difyuujon' indekkusu,indeks dyfuzji,ang: diffusion index,DICTIONARY2_SOURCE,,GroupId: 1082300
+314946,WORD_NOUN,,KATAKANA,,,-,バソプレッシン,,basopuresshin,"hormon antydiuretyczny
+adiuretyna
+wazopresyna",biochemia; ang: vasopressin,DICTIONARY2_SOURCE,,GroupId: 2500420
+314947,WORD_NOUN,,KATAKANA,,,-,コンスターチ,,kon sutaachi,"mąka kukurydziana
+skrobia kukurydziana",ang: corn starch,DICTIONARY2_SOURCE,,GroupId: 1049660
+314948,"WORD_ADJECTIVE_NO
+WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,有,あり,,ari,"istniejący (w chwili obecnej)
+w porządku (potocznie)
+akceptowalny (potocznie)
+znośny (potocznie)
+być (zwykle w odniesieniu do przedmiotów nieożywionych) (formalny lub literacki termin)
+mieć (formalny lub literacki termin)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 6653
+DUPLICATE 6654
+DUPLICATE 310388",GroupId: 2150170
+314949,WORD_NOUN,,KATAKANA,,,-,ヴェンダー,,vendaa,"sprzedawca (ang: vendor)
+automat sprzedający",,DICTIONARY2_SOURCE,,GroupId: 1120250
+314950,WORD_NOUN,,KATAKANA,,,-,ヴェンダ,,venda,"sprzedawca (ang: vendor)
+automat sprzedający",,DICTIONARY2_SOURCE,,GroupId: 1120250
+314951,WORD_NOUN,,KATAKANA,,,-,トッグル,,togguru,"przełącznik
+przełączanie",ang: toggle,DICTIONARY2_SOURCE,,GroupId: 1084940
+314952,WORD_NOUN,,KATAKANA,,,-,バックラム,,bakkuramu,bukram,"płótno introligatorskie, bawełniane lub lniane, nasączone środkiem klejącym, takim jak pasta ze skrobi pszennej, klejem (takim jak klej PVA) lub piroksyliną, a następnie suszone",DICTIONARY2_SOURCE,,GroupId: 2479870
+314953,WORD_NOUN,,KATAKANA,,,-,スパーテル,,supaateru,szpatułka laboratoryjna,niem: Spatel,DICTIONARY2_SOURCE,,GroupId: 2861025
+314954,WORD_NOUN,,KATAKANA,,,ＮＡＳ,ナス,,nasu,"network-attached storage
+NAS",informatyka; technologia umożliwiająca podłączenie zasobów pamięci dyskowych bezpośrednio do sieci komputerowej. Dzięki takiemu rozwiązaniu można łatwo skonfigurować dostęp z różnych punktów sieci do danych znajdujących się w jednym miejscu,DICTIONARY2_SOURCE,DUPLICATE 32065,GroupId: 2866666
+314955,WORD_NOUN,,KATAKANA,,,ＳＳＭ,エス・エス・エム,,esu esu emu,"surface-to-surface missile
+SSM",pocisk ziemia-ziemia,DICTIONARY2_SOURCE,DUPLICATE 314956,GroupId: 2866669
+314956,WORD_NOUN,,KATAKANA,,,ＳＳＭ,エスエスエム,,esu esu emu,"surface-to-surface missile
+SSM",pocisk ziemia-ziemia,DICTIONARY2_SOURCE,DUPLICATE 314955,GroupId: 2866669
+314957,WORD_NOUN,,HIRAGANA_KATAKANA,,,万年ヒラ,まんねんヒラ,,mannen hira,"zwykły pracownik, który nigdy nie otrzymuje awansu",potocznie; skrót od 万年平社員,DICTIONARY2_SOURCE,,GroupId: 2866672
+314958,WORD_NOUN,,KATAKANA,,,-,ネットワークアタッチトストレージ,,nettowaaku atacchito sutoreeji,"network-attached storage
+NAS",informatyka; technologia umożliwiająca podłączenie zasobów pamięci dyskowych bezpośrednio do sieci komputerowej. Dzięki takiemu rozwiązaniu można łatwo skonfigurować dostęp z różnych punktów sieci do danych znajdujących się w jednym miejscu,DICTIONARY2_SOURCE,,GroupId: 2866673
+314959,WORD_NOUN,,KATAKANA,,,-,ネットワーク・アタッチト・ストレージ,,nettowaaku atacchito sutoreeji,"network-attached storage
+NAS",informatyka; technologia umożliwiająca podłączenie zasobów pamięci dyskowych bezpośrednio do sieci komputerowej. Dzięki takiemu rozwiązaniu można łatwo skonfigurować dostęp z różnych punktów sieci do danych znajdujących się w jednym miejscu,DICTIONARY2_SOURCE,,GroupId: 2866673
+314960,WORD_NOUN,,KATAKANA_HIRAGANA,,,ネットワーク接続ストレージ,ネットワークせつぞくストレージ,,nettowaaku setsuzoku sutoreeji,"network-attached storage
+NAS",informatyka; technologia umożliwiająca podłączenie zasobów pamięci dyskowych bezpośrednio do sieci komputerowej. Dzięki takiemu rozwiązaniu można łatwo skonfigurować dostęp z różnych punktów sieci do danych znajdujących się w jednym miejscu,DICTIONARY2_SOURCE,,GroupId: 2866674
