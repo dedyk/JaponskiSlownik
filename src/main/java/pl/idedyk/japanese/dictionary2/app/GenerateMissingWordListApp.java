@@ -210,9 +210,10 @@ public class GenerateMissingWordListApp {
 					*/
 				}				
 				
-			} /* else { // nic nie znaleziono
+			} else { // nic nie znaleziono
 				
 				// ewentualnie sprawdzamy w jisho
+				/*
 				if (checkInJishoOrg == true) {
 					
 					System.out.println("Checking in jisho.org: " + currentWord);
@@ -228,8 +229,10 @@ public class GenerateMissingWordListApp {
 				} else {
 					notFoundWordSearchList.add(currentWord);
 				}
+				*/
+				
+				notFoundWordSearchList.add(currentWord);
 			}
-			*/
 		}
 				
 		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", result, entryAdditionalData);
