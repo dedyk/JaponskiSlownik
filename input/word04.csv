@@ -27642,8 +27642,15 @@ tłumaczenie homofoniczne tekstów piosenek dla komicznego efektu",,DICTIONARY2_
 312518,WORD_NOUN,,HIRAGANA,,,総合案内所,そうごうあんないしょ,,sougou annaisho,punkt informacji ogólnej,,DICTIONARY2_SOURCE,,GroupId: 2865129
 312519,WORD_NOUN,,KATAKANA,,,-,ピザストーン,,piza sutoon,kamień do pizzy,ang: pizza stone,DICTIONARY2_SOURCE,,GroupId: 2865269
 312520,WORD_NOUN,,KATAKANA,,,-,ピザ・ストーン,,piza sutoon,kamień do pizzy,ang: pizza stone,DICTIONARY2_SOURCE,,GroupId: 2865269
-312521,WORD_NOUN,,HIRAGANA_KATAKANA,,,材木チョーク,ざいもくチョーク,,zaimoku chooku,kreda do znakowania drewna,,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2865271
+312521,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,チョイチョイ,,choi choi,"często
+od czasu do czasu
+okazjonalnie
+sporadycznie
+lekko (o ruchu)
+łatwo
+prosto
+bez wysiłku",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 1007780
 312522,WORD_NOUN,,KATAKANA,,,-,フューネラル,,fyuuneraru,pogrzeb,ang: funeral,DICTIONARY2_SOURCE,,GroupId: 2865272
 312523,WORD_NOUN,,KATAKANA,,,-,フュネラル,,fyuneraru,pogrzeb,ang: funeral,DICTIONARY2_SOURCE,,GroupId: 2865272
 312524,WORD_NOUN,,KATAKANA,,,-,デッドピクセル,,deddo pikuseru,martwy piksel,"w wyświetlaczu, ang: dead pixel",DICTIONARY2_SOURCE,,GroupId: 2865275
@@ -32802,9 +32809,10 @@ wędkarstwo dla przyjemności",,DICTIONARY2_SOURCE,DUPLICATE 315177,GroupId: 286
 315179,WORD_NOUN,,HIRAGANA,,,吹き戻し,ふきもどし,,fuki modoshi,trąbka imprezowa,,DICTIONARY2_SOURCE,,GroupId: 2866718
 315180,WORD_NOUN,,HIRAGANA,,,逆先手,ぎゃくせんて,,gyaku sente,"odwrotne sente
 ruch, który jest sente, jeśli zostanie wykonany przez przeciwnika, ale gote dla gracza, który go wykonuje (wyjaśnienie)",go (gra),DICTIONARY2_SOURCE,,GroupId: 2866719
-315181,WORD_NOUN,,HIRAGANA,,,逆ヨセ,ぎゃくよせ,,gyaku yose,"odwrotne sente
-ruch, który jest sente, jeśli zostanie wykonany przez przeciwnika, ale gote dla gracza, który go wykonuje (wyjaśnienie)",go (gra),"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2866720
+315181,"WORD_ADVERB
+WORD_ADVERB_TO",,KATAKANA,,,-,ゾロリ,,zorori,"wszyscy razem w linii
+niechlujnie ubrany
+nieodpowiednio ubrany na okazję",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2173910
 315182,WORD_NOUN,,HIRAGANA,,,両先手,りょうせんて,,ryou sente,"podwójne sente
 ruch, który jest sente dla obu graczy (wyjaśnienie)",go (gra),DICTIONARY2_SOURCE,,GroupId: 2866721
 315183,WORD_NOUN,,HIRAGANA,,,両後手,りょうごて,,ryou gote,"podwójne gote
@@ -32817,3 +32825,36 @@ synchroniczność",lingwistyka,DICTIONARY2_SOURCE,,GroupId: 2866726
 315188,WORD_NOUN,,HIRAGANA,,,後頸部,こうけいぶ,,koukeibu,"kark
 tył szyi",anatomia,DICTIONARY2_SOURCE,,GroupId: 2866727
 315189,WORD_NOUN,,HIRAGANA,,,栄養神経,えいようしんけい,,eiyou shinkei,nerw odżywczy,anatomia,DICTIONARY2_SOURCE,,GroupId: 2866728
+315190,WORD_NOUN,,HIRAGANA_KATAKANA,,,逆ヨセ,ぎゃくヨセ,,gyaku yose,"odwrotne sente
+ruch, który jest sente, jeśli zostanie wykonany przez przeciwnika, ale gote dla gracza, który go wykonuje (wyjaśnienie)",go (gra),DICTIONARY2_SOURCE,,GroupId: 2866720
+315191,WORD_NOUN,,HIRAGANA,,,黄身しぐれ,きみしぐれ,,kimi shigure,"rodzaj japońskich słodyczy wykonanych z piasty z białej fasoli, żółtka jajka, cukru i ziarenek ryżu","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2625750
+315192,WORD_NOUN,,HIRAGANA,,,瑞穂国,みずほのくに,,mizuho no kuni,"Kraina Zielonych Pól Ryżowych
+Kraina Obfitości Ryżu
+Japonia",poetycki termin,DICTIONARY2_SOURCE,,GroupId: 1372830
+315193,WORD_NOUN,,HIRAGANA,,,豊葦原,とよあしはら,,toyoashihara,"równiny porośnięte bujnymi trzcinami
+kwitnące pola trzcinowe
+Japonia",poetycki termin,DICTIONARY2_SOURCE,DUPLICATE 315194,GroupId: 2866560
+315194,WORD_NOUN,,HIRAGANA,,,豊葦原,とよあしわら,,toyoashiwara,"równiny porośnięte bujnymi trzcinami
+kwitnące pola trzcinowe
+Japonia",poetycki termin,DICTIONARY2_SOURCE,DUPLICATE 315193,GroupId: 2866560
+315195,WORD_ADVERB,,HIRAGANA,,,-,ぞろっと,,zorotto,"wszyscy razem w jednej linii
+wszyscy razem w jednej grupie
+niechlujnie ubrany
+nieodpowiednio ubrany na tę okazję",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2866709
+315196,WORD_ADVERB,,KATAKANA_HIRAGANA,,,-,ゾロっと,,zorotto,"wszyscy razem w jednej linii
+wszyscy razem w jednej grupie
+niechlujnie ubrany
+nieodpowiednio ubrany na tę okazję",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2866709
+315197,"WORD_VERB_RU
+WORD_PRE_NOUN_ADJECTIVAL",,HIRAGANA,,,眠れる,ねむれる,,nemureru,"śpiący (formalny lub literacki termin)
+odpoczywający (formalny lub literacki termin)
+drzemiący (formalny lub literacki termin)
+być w stanie spać",,DICTIONARY2_SOURCE,,GroupId: 2866713
+315198,WORD_NOUN,,HIRAGANA,,,潤香,うるか,,uruka,fermentowane wnętrzności i ikra słodkowodnej ryby,"jedzenie, gotowanie; pisanie zwykle z użyciem kana",DICTIONARY2_SOURCE,,GroupId: 2866730
+315199,WORD_NOUN,,HIRAGANA,,,鱁鮧,うるか,,uruka,fermentowane wnętrzności i ikra słodkowodnej ryby,"jedzenie, gotowanie; pisanie zwykle z użyciem kana",DICTIONARY2_SOURCE,,GroupId: 2866730
+315200,WORD_NOUN,,HIRAGANA,,,蒸解,じょうかい,,joukai,"gotowanie (drewna w celu produkcji masy celulozowej do produkcji papieru)
+trawienie (proces)",,DICTIONARY2_SOURCE,,GroupId: 2866731
+315201,WORD_NOUN,,KATAKANA,,,-,ジャンボタクシー,,janbo takushii,van taxi,przewożący do dziewięciu pasażerów; ang: jumbo taxi,DICTIONARY2_SOURCE,,GroupId: 2866732
+315202,WORD_NOUN,,KATAKANA,,,-,ジャンボ・タクシー,,janbo takushii,van taxi,przewożący do dziewięciu pasażerów; ang: jumbo taxi,DICTIONARY2_SOURCE,,GroupId: 2866732
+315203,WORD_NOUN,,HIRAGANA,,,薬売り,くすりうり,,kusuriuri,"podróżujący sprzedawca leków patentowych
+domokrążca leków",,DICTIONARY2_SOURCE,,GroupId: 2866733
