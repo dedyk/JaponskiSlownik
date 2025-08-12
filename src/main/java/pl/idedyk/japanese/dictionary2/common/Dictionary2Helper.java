@@ -3623,6 +3623,68 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		return false;
 	}
+	
+	public void generateMissingPolishEntriesFromOldPolishJapaneseDictionary() throws Exception {
+		// pobieramy wpisy ze starego slownika
+		List<PolishJapaneseEntry> oldPolishJapaneseEntriesList = getOldPolishJapaneseEntriesList();
+		
+		// chodzimy po wpisach ze starego slownika
+		for (PolishJapaneseEntry polishJapaneseEntry : oldPolishJapaneseEntriesList) {
+			
+			// pobieramy identyfikator entry ze starego wpisu
+			Integer entryId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+			
+			if (entryId == null) {
+				System.out.println("FM_FIXME: generowanie bez entry: " + polishJapaneseEntry.getId() + " - " + polishJapaneseEntry);
+				continue;
+			}
+			
+			// sprawdzanie, czy dane slowo ma juz swj odpowiednik w polskim slowniku
+			Entry entryFromPolishDictionary = getEntryFromPolishDictionary(entryId);
+			
+			if (entryFromPolishDictionary != null) { // jest, wiec to nas nie interesuje
+				continue;
+			}
+			
+			// pobieramy entry z angielskiego slownika
+			Entry entry = getJMdictEntry(entryId);
+			
+			if (entry == null) {				
+				throw new RuntimeException("Can't find entry with id: " + entryId);
+			}
+			
+			if (entry.getSenseList().size() > 1) {
+				throw new RuntimeException("Entry sense with id: " + entryId + " with multisense");
+			}
+			
+			// wygenerowanie wirtualnego polskiego wpisu ze starego slownika
+			entry = (Entry)SerializationUtils.clone(entry);
+			
+			// tworzymy znaczenie ze starego slownika
+			for (String oldPolishTranslate : polishJapaneseEntry.getTranslates()) {
+				Gloss newPolishGeneratedGloss = new Gloss();
+				
+				newPolishGeneratedGloss.setLang("pol");
+				newPolishGeneratedGloss.setGType(null);
+				newPolishGeneratedGloss.setValue(oldPolishTranslate);
+				
+				entry.getSenseList().get(0).getGlossList().add(newPolishGeneratedGloss);
+			}
+			
+			String info = polishJapaneseEntry.getInfo();
+			
+			if (StringUtils.isNotBlank(info) == true) {
+				SenseAdditionalInfo newSenseAdditionalInfo = new SenseAdditionalInfo();
+				
+				newSenseAdditionalInfo.setLang("pol");
+				newSenseAdditionalInfo.setValue(info);
+				
+				entry.getSenseList().get(0).getAdditionalInfoList().add(newSenseAdditionalInfo);
+			}			
+			
+			addEntryToPolishDictionary(entry);			
+		}
+	}
 
 	//
 			
