@@ -41,6 +41,7 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKa
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper.NameKanjiKanaPair;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoNameType;
 
@@ -406,10 +407,12 @@ public class Validator {
 			}
 		}
 		
-		if (dictionary2Helper != null) {
-			
+		if (dictionary2Helper != null) {			
 			// walidacja grup edict
 			validateEdictGroup(dictionary2Helper, polishJapaneseKanjiEntries);
+			
+			// walidacja, czy wystepuja entry z wielokrotnym sense
+			validateIfExistsEntriesWithMultisense(dictionary2Helper);
 		}
 		
 		if (countExamples == true) {
@@ -1411,6 +1414,34 @@ public class Validator {
 		if (wasError == true) { // jesli jest blad walidacji			
 			throw new DictionaryException("Error");
 		}		
+	}
+	
+	private static void validateIfExistsEntriesWithMultisense(Dictionary2Helper dictionary2Helper) throws Exception {
+		
+		boolean wasError = false;
+		
+		// pobieramy wszystkie wpisy z angielskiego slownika
+		JMdict jMdict = dictionary2Helper.getJMdict();
+		
+		for (JMdict.Entry entry : jMdict.getEntryList()) {
+			
+			// interesuja nas tylko entry z multisense
+			if (entry.getSenseList().size() > 1) {
+				
+				// sprawdzenie, czy taki wpis wystepuje w polskim slowniku
+				JMdict.Entry entryFromPolishDictionary = dictionary2Helper.getEntryFromPolishDictionary(entry.getEntryId());
+				
+				if (entryFromPolishDictionary == null) { // jezeli nie ma to blad
+					System.out.println("Brak entry z multisense o id: " + entry.getEntryId());
+					
+					wasError = true;					
+				}
+			}
+		}		
+		
+		if (wasError == true) { // jesli jest blad walidacji			
+			throw new DictionaryException("Error");
+		}
 	}
 	
 	private static class PolishJapaneseEntryDuplicate {
