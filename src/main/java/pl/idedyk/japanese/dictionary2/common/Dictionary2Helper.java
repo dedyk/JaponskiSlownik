@@ -3638,7 +3638,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			Integer entryId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
 			
 			if (entryId == null) {
-				System.out.println("TEST: " + dictionaryEntryJMEdictEntityMapper.getPartOfSpeechEnumFromDictionaryEntryType(polishJapaneseEntry));
+				
+				dictionaryEntryJMEdictEntityMapper.getPartOfSpeechEnumFromDictionaryEntryType(polishJapaneseEntry);
+				
+				//System.out.println("TEST: " + dictionaryEntryJMEdictEntityMapper.getPartOfSpeechEnumFromDictionaryEntryType(polishJapaneseEntry));
 				
 				continue;
 			}

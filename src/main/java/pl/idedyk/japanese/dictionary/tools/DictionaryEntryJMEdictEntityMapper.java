@@ -542,7 +542,7 @@ public class DictionaryEntryJMEdictEntityMapper {
 				
 				result.add(PartOfSpeechEnum.PROPER_NOUN);
 			
-			} else if (dictionaryEntryType == DictionaryEntryType.WORD_EMPTY) {
+			} else if (dictionaryEntryType == DictionaryEntryType.WORD_EMPTY || dictionaryEntryType == DictionaryEntryType.UNKNOWN) {
 				result.add(PartOfSpeechEnum.UNCLASSIFIED);
 					
 			} else {
@@ -574,25 +574,141 @@ public class DictionaryEntryJMEdictEntityMapper {
 						
 						continue;
 						
-					} else if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {						
-						// trzeba sprawdzic, czy to suru, czy kuru
-						fixme();
+					} else if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_U) {
 						
+						// trzeba sprawdzic, ktory jest to typ (dziwne typy sa pomijane, ale ich nie powinno byc
+						String romaji = polishJapaneseEntry.getRomaji();
 						
+						PartOfSpeechEnum partOfSpeechEnum;
 						
+						boolean endsWithAru = romaji.endsWith("aru") == true;
+						boolean endsWithIkuOrYuku = romaji.endsWith("iku") == true || romaji.endsWith("yuku") == true;
+						boolean endsWithBu = romaji.endsWith("bu");
+						boolean endsWithGu = romaji.endsWith("gu");
+						boolean endsWithKu = romaji.endsWith("ku");
+						boolean endsWithMu = romaji.endsWith("mu");
+						boolean endsWithNu = romaji.endsWith("nu");
+						boolean endsWithRu = romaji.endsWith("ru");
+						boolean endsWithSu = romaji.endsWith("su");
+						boolean endsWithTsu = romaji.endsWith("tsu");
+						boolean endsWithU = romaji.endsWith("u");
 						
+						if (endsWithAru == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.GODAN_VERB_ARU_SPECIAL_CLASS;
+							
+						} else if (endsWithIkuOrYuku == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.GODAN_VERB_IKU_YUKU_SPECIAL_CLASS;
+							
+						} else if (endsWithBu == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.GODAN_VERB_WITH_BU_ENDING;
+
+						} else if (endsWithGu == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.GODAN_VERB_WITH_GU_ENDING;						
+							
+						} else if (endsWithKu == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.GODAN_VERB_WITH_KU_ENDING;						
+
+						} else if (endsWithMu == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.GODAN_VERB_WITH_MU_ENDING;
+
+						} else if (endsWithNu == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.GODAN_VERB_WITH_NU_ENDING;
+							
+						} else if (endsWithRu == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.GODAN_VERB_WITH_RU_ENDING;
+
+						} else if (endsWithTsu == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.GODAN_VERB_WITH_TSU_ENDING;
+
+						} else if (endsWithSu == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.GODAN_VERB_WITH_SU_ENDING;
+
+						} else if (endsWithU == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.GODAN_VERB_WITH_U_ENDING;
+
+						} else {
+							throw new RuntimeException("Can't detect u verb part of speech: " + polishJapaneseEntry);
+						}					
+												
+						result.add(partOfSpeechEnum);						
+						
+						continue;
+						
+					} else if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_RU) {
+						
+						// trzeba sprawdzic, ktory jest to typ (dziwne typy sa pomijane, ale ich nie powinno byc
+						String romaji = polishJapaneseEntry.getRomaji();
+						
+						PartOfSpeechEnum partOfSpeechEnum;
+						
+						boolean endsWithRu = romaji.endsWith("ru");
+						boolean endsWithKureru = romaji.endsWith("kureru");
+						
+						if (endsWithKureru == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.ICHIDAN_VERB_KURERU_SPECIAL_CLASS;
+							
+						} else if (endsWithRu == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.ICHIDAN_VERB;
+							
+						} else {
+							throw new RuntimeException("Can't detect u verb part of speech: " + polishJapaneseEntry);
+						}					
+												
+						result.add(partOfSpeechEnum);						
+						
+						continue;
+						
+					} else if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {
+						
+						// trzeba sprawdzic, czy to suru, czy kuru						
+						String romaji = polishJapaneseEntry.getRomaji();
+						
+						PartOfSpeechEnum irregularVerbPartOfSpeech;
+						
+						if (romaji.endsWith("kuru") == true) {
+							irregularVerbPartOfSpeech = PartOfSpeechEnum.KURU_VERB_SPECIAL_CLASS;
+							
+						} else if (romaji.endsWith("suru") == true) {
+							irregularVerbPartOfSpeech = PartOfSpeechEnum.SURU_VERB_INCLUDED;
+							
+						} else {
+							throw new RuntimeException("Can't detect irregular verb part of speech: " + polishJapaneseEntry);
+						}
+						
+						result.add(irregularVerbPartOfSpeech);						
+						
+						continue;
+						
+					} else if (dictionaryEntryType == DictionaryEntryType.WORD_ADJECTIVE_I) {
+						
+						// trzeba sprawdzic, ktory jest to typ
+						String romaji = polishJapaneseEntry.getRomaji();
+						
+						PartOfSpeechEnum partOfSpeechEnum;
+						
+						boolean endsWithIIorYoi = romaji.endsWith("ii") || romaji.endsWith("yoi");
+						boolean endsWithI = romaji.endsWith("i");
+						
+						if (endsWithIIorYoi == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.ADJECTIVE_KEIYOUSHI_YOI_II_CLASS;
+							
+						} else if (endsWithI == true) {
+							partOfSpeechEnum = PartOfSpeechEnum.ADJECTIVE_KEIYOUSHI;
+							
+						} else {
+							throw new RuntimeException("Can't detect u verb part of speech: " + polishJapaneseEntry);
+						}					
+												
+						result.add(partOfSpeechEnum);						
+						
+						continue;						
 					}
 					
-					System.out.println("AAAAAA: " + dictionaryEntryType + " - " + proposalPartOfSpeechEnumList);
-				}
-				
-								
+					// to nigdy nie powinno zdarzyc sie
+					throw new RuntimeException("Can't detect part of speech: " + polishJapaneseEntry);
+				}								
 			}
-			
-			
-			
-		}
-		
+		}		
 		
 		return result;
 	}
