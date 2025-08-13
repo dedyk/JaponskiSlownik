@@ -3640,7 +3640,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			// pobieramy identyfikator entry ze starego wpisu
 			Integer entryId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
 			
-			if (entryId == null) {				
+			if (entryId == null) {		
+				System.out.println("INFO: Generate entry from old polish dictionary for: " + polishJapaneseEntry);
+				
 				// generujemy nowy wpis
 				Entry newGeneratedEntry = new Entry();
 				
@@ -3720,6 +3722,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			if (entry.getSenseList().size() > 1) {
 				throw new RuntimeException("Entry sense with id: " + entryId + " with multisense. Please add manually.");
 			}
+			
+			System.out.println("WARNING: Generate sense for entry with id: " + entryId + " from old polish dictionary.");
 			
 			// wygenerowanie wirtualnego polskiego wpisu ze starego slownika
 			entry = (Entry)SerializationUtils.clone(entry);
