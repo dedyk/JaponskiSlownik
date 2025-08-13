@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
@@ -21,6 +23,8 @@ public class DictionaryEntryJMEdictEntityMapper {
 	private Map<String, DictionaryEntryType> entityToDictionaryEntryMapper;
 	
 	private Map<PartOfSpeechEnum, String> partOfSpeechEnumToEntityMapper;
+	private Map<String, PartOfSpeechEnum> entityToPartOfSpeechEnumMapper;
+	
 	private Map<MiscEnum, String> miscEnumToEntityMapper;
 	private Map<DialectEnum, String> dialectEnumToEntityMapper;
 	private Map<KanjiAdditionalInfoEnum, String> kanjiAdditionalInfoEnumToEntityMapper;
@@ -34,6 +38,8 @@ public class DictionaryEntryJMEdictEntityMapper {
 		entityToDictionaryEntryMapper = new TreeMap<String, DictionaryEntryType>();
 		
 		partOfSpeechEnumToEntityMapper = new TreeMap<>();
+		entityToPartOfSpeechEnumMapper = new TreeMap<>();
+		
 		miscEnumToEntityMapper = new TreeMap<>();
 		dialectEnumToEntityMapper = new TreeMap<>();
 		kanjiAdditionalInfoEnumToEntityMapper = new TreeMap<>();
@@ -280,6 +286,11 @@ public class DictionaryEntryJMEdictEntityMapper {
 		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.TRANSITIVE_VERB, "vt");
 		partOfSpeechEnumToEntityMapper.put(PartOfSpeechEnum.ICHIDAN_VERB_ZURU_VERB_ALTERNATIVE_FORM_OF_JIRU_VERBS, "vz");
 		
+		// odwrocenie partOfSpeechEnumToEntityMapper
+		for (Map.Entry<PartOfSpeechEnum, String> partOfSpeechEnumToEntityMapperKeySet : partOfSpeechEnumToEntityMapper.entrySet()) {
+			entityToPartOfSpeechEnumMapper.put(partOfSpeechEnumToEntityMapperKeySet.getValue(), partOfSpeechEnumToEntityMapperKeySet.getKey());
+		}		
+		
 		//
 		
 		miscEnumToEntityMapper.put(MiscEnum.ABBREVIATION, "abbr");
@@ -513,6 +524,79 @@ public class DictionaryEntryJMEdictEntityMapper {
 
 		return dictionaryEntryType;
 	}
+	
+	public List<PartOfSpeechEnum> getPartOfSpeechEnumFromDictionaryEntryType(PolishJapaneseEntry polishJapaneseEntry) {
+		
+		// pobieramy wszystkie stare typy
+		List<DictionaryEntryType> dictionaryEntryTypeList = polishJapaneseEntry.getDictionaryEntryTypeList();
+		
+		// lista wynikowa
+		List<PartOfSpeechEnum> result = new ArrayList<>();
+		
+		for (DictionaryEntryType dictionaryEntryType : dictionaryEntryTypeList) {
+						
+			// sprawdzenie, czy to nie jeden z dziwnych 'specjalnych' typow
+			if (dictionaryEntryType == DictionaryEntryType.WORD_SURNAME_NAME || dictionaryEntryType == DictionaryEntryType.WORD_NAME || 
+					dictionaryEntryType == DictionaryEntryType.WORD_PERSON || dictionaryEntryType == DictionaryEntryType.WORD_FEMALE_NAME
+					|| dictionaryEntryType == DictionaryEntryType.WORD_MALE_NAME) {
+				
+				result.add(PartOfSpeechEnum.PROPER_NOUN);
+			
+			} else if (dictionaryEntryType == DictionaryEntryType.WORD_EMPTY) {
+				result.add(PartOfSpeechEnum.UNCLASSIFIED);
+					
+			} else {
+				// mapowanie na nowe typy zapisane w entity
+				List<String> newDictionaryEntryTypeMapperAsNewEntity = dictionaryEntryToEntityMapper.get(dictionaryEntryType);
+				
+				// tutaj bedziemy mieli tylko propozycje wpisow, trzeba jeszcze to uszczegolowic
+				List<PartOfSpeechEnum> proposalPartOfSpeechEnumList = 
+						newDictionaryEntryTypeMapperAsNewEntity.stream().map(m -> {
+							PartOfSpeechEnum partOfSpeechEnum = entityToPartOfSpeechEnumMapper.get(m);
+							
+							if (partOfSpeechEnum == null) {
+								throw new RuntimeException("Can't find part of speech enum: " + partOfSpeechEnum); // to nigdy nie powinno zdarzyc sie
+							}
+							
+							return partOfSpeechEnum;
+						}).collect(Collectors.toList());
+				
+				if (proposalPartOfSpeechEnumList.size() == 0) {
+					throw new RuntimeException("Can't find any proposal of part of speech for: " + polishJapaneseEntry);
+					
+				} else if (proposalPartOfSpeechEnumList.size() == 1) { // sprawa jest latwa
+					result.add(proposalPartOfSpeechEnumList.get(0));
+										
+				} else { // trzeba uszczegolowic typ
+					
+					if (dictionaryEntryType == DictionaryEntryType.WORD_NOUN) {
+						result.add(PartOfSpeechEnum.NOUN_COMMON_FUTSUUMEISHI);
+						
+						continue;
+						
+					} else if (dictionaryEntryType == DictionaryEntryType.WORD_VERB_IRREGULAR) {						
+						// trzeba sprawdzic, czy to suru, czy kuru
+						fixme();
+						
+						
+						
+						
+					}
+					
+					System.out.println("AAAAAA: " + dictionaryEntryType + " - " + proposalPartOfSpeechEnumList);
+				}
+				
+								
+			}
+			
+			
+			
+		}
+		
+		
+		return result;
+	}
+	
 
 	public DictionaryEntryType getDictionaryEntryType(TranslationalInfoNameType translationalInfoName) {
 

@@ -3628,6 +3628,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		// pobieramy wpisy ze starego slownika
 		List<PolishJapaneseEntry> oldPolishJapaneseEntriesList = getOldPolishJapaneseEntriesList();
 		
+		// obiekt do mapowania typow
+		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
+		
 		// chodzimy po wpisach ze starego slownika
 		for (PolishJapaneseEntry polishJapaneseEntry : oldPolishJapaneseEntriesList) {
 			
@@ -3635,7 +3638,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			Integer entryId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
 			
 			if (entryId == null) {
-				System.out.println("FM_FIXME: generowanie bez entry: " + polishJapaneseEntry.getId() + " - " + polishJapaneseEntry);
+				System.out.println("TEST: " + dictionaryEntryJMEdictEntityMapper.getPartOfSpeechEnumFromDictionaryEntryType(polishJapaneseEntry));
+				
+				continue;
+			}
+			
+			// FM_FIXME !!!!!!!!!!!!!!!!!!
+			if (1 == 1) {
 				continue;
 			}
 			
