@@ -1432,7 +1432,7 @@ public class Validator {
 				JMdict.Entry entryFromPolishDictionary = dictionary2Helper.getEntryFromPolishDictionary(entry.getEntryId());
 				
 				if (entryFromPolishDictionary == null) { // jezeli nie ma to blad
-					System.out.println("Brak entry z multisense o id: " + entry.getEntryId());
+					System.out.println("ERROR: No entry with multisense: " + entry.getEntryId());
 					
 					wasError = true;					
 				}
