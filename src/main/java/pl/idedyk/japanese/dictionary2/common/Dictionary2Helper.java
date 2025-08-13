@@ -3628,6 +3628,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		// pobieramy wpisy ze starego slownika
 		List<PolishJapaneseEntry> oldPolishJapaneseEntriesList = getOldPolishJapaneseEntriesList();
 		
+		// licznik wygenerowanych wpisow pochodzacych ze starego slownika, a ktorego nie ma w angielskim slowniku
+		int generatedEntryIdCounter = 7000001;		
+		
 		// obiekt do mapowania typow
 		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
 		
@@ -3637,20 +3640,68 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			// pobieramy identyfikator entry ze starego wpisu
 			Integer entryId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
 			
-			if (entryId == null) {
+			if (entryId == null) {				
+				// generujemy nowy wpis
+				Entry newGeneratedEntry = new Entry();
 				
-				dictionaryEntryJMEdictEntityMapper.getPartOfSpeechEnumFromDictionaryEntryType(polishJapaneseEntry);
+				newGeneratedEntry.setEntryId(generatedEntryIdCounter);
 				
-				//System.out.println("TEST: " + dictionaryEntryJMEdictEntityMapper.getPartOfSpeechEnumFromDictionaryEntryType(polishJapaneseEntry));
+				if (polishJapaneseEntry.isKanjiExists() == true) {					
+					KanjiInfo kanjiInfo = new KanjiInfo();
+					
+					kanjiInfo.setKanji(polishJapaneseEntry.getKanji());
+										
+					newGeneratedEntry.getKanjiInfoList().add(kanjiInfo);
+				}
+				
+				ReadingInfo readingInfo = new ReadingInfo();
+				
+				ReadingInfoKana readingInfoKana = new ReadingInfoKana();
+				
+				readingInfoKana.setKanaType(ReadingInfoKanaType.valueOf(polishJapaneseEntry.getWordType().name()));
+				readingInfoKana.setValue(polishJapaneseEntry.getKana());
+				readingInfoKana.setRomaji(polishJapaneseEntry.getRomaji());
+				
+				readingInfo.setKana(readingInfoKana);	
+				
+				newGeneratedEntry.getReadingInfoList().add(readingInfo);
+				
+				Sense sense = new Sense();
+								
+				sense.getPartOfSpeechList().addAll(dictionaryEntryJMEdictEntityMapper.getPartOfSpeechEnumFromDictionaryEntryType(polishJapaneseEntry));
+				
+				// tworzymy znaczenie ze starego slownika
+				for (String oldPolishTranslate : polishJapaneseEntry.getTranslates()) {
+					Gloss newPolishGeneratedGloss = new Gloss();
+					
+					newPolishGeneratedGloss.setLang("pol");
+					newPolishGeneratedGloss.setGType(null);
+					newPolishGeneratedGloss.setValue(oldPolishTranslate);
+					
+					sense.getGlossList().add(newPolishGeneratedGloss);
+				}
+				
+				String info = polishJapaneseEntry.getInfo();
+				
+				if (StringUtils.isNotBlank(info) == true) {
+					SenseAdditionalInfo newSenseAdditionalInfo = new SenseAdditionalInfo();
+					
+					newSenseAdditionalInfo.setLang("pol");
+					newSenseAdditionalInfo.setValue(info);
+					
+					sense.getAdditionalInfoList().add(newSenseAdditionalInfo);
+				}				
+				
+				newGeneratedEntry.getSenseList().add(sense);
+				
+				// dodajemy wygenerowany wpis
+				addEntryToPolishDictionary(newGeneratedEntry);
+								
+				generatedEntryIdCounter++;
 				
 				continue;
 			}
-			
-			// FM_FIXME !!!!!!!!!!!!!!!!!!
-			if (1 == 1) {
-				continue;
-			}
-			
+						
 			// sprawdzanie, czy dane slowo ma juz swj odpowiednik w polskim slowniku
 			Entry entryFromPolishDictionary = getEntryFromPolishDictionary(entryId);
 			
@@ -3695,6 +3746,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				entry.getSenseList().get(0).getAdditionalInfoList().add(newSenseAdditionalInfo);
 			}			
 			
+			// dodajemy wygenerowany wpis
 			addEntryToPolishDictionary(entry);			
 		}
 	}
