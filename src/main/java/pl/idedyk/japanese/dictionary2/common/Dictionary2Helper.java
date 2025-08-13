@@ -3728,6 +3728,15 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			// wygenerowanie wirtualnego polskiego wpisu ze starego slownika
 			entry = (Entry)SerializationUtils.clone(entry);
 			
+			// dodanie kana type
+			List<ReadingInfo> entryReadingInfoList = entry.getReadingInfoList();
+			
+			for (ReadingInfo readingInfo : entryReadingInfoList) {
+				if (readingInfo.getKana().getKanaType() == null) {
+					readingInfo.getKana().setKanaType(getKanaType(readingInfo.getKana().getValue()));
+				}
+			}
+			
 			// tworzymy znaczenie ze starego slownika
 			for (String oldPolishTranslate : polishJapaneseEntry.getTranslates()) {
 				Gloss newPolishGeneratedGloss = new Gloss();
