@@ -3649,12 +3649,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			// pobieramy entry z angielskiego slownika
 			Entry entry = getJMdictEntry(entryId);
 			
-			if (entry == null) {				
-				throw new RuntimeException("Can't find entry with id: " + entryId);
+			if (entry == null) { // jezeli wystepuje taka sytuacja to znaczy, ze slownik nie zostal poprawnie zaktualizowany; nalezy usunac bledne wpisy		
+				System.out.println("WARNING: Can't find entry with id: " + entryId + " which exists in polish dictionary. Please update dictionary");
+				continue;
 			}
 			
 			if (entry.getSenseList().size() > 1) {
-				throw new RuntimeException("Entry sense with id: " + entryId + " with multisense");
+				throw new RuntimeException("Entry sense with id: " + entryId + " with multisense. Please add manually.");
 			}
 			
 			// wygenerowanie wirtualnego polskiego wpisu ze starego slownika
