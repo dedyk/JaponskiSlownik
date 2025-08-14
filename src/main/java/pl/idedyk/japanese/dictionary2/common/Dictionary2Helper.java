@@ -2350,9 +2350,12 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		// wczytanie starego slownika i sche'owanie go		
 		Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache = oldWordGeneratorHelper.getPolishJapaneseEntriesCache();
-		
-		//
-				
+
+		return getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, polishJapaneseEntriesCache, throwErrorWhenDifferentGroup);		
+	}
+	
+	private List<PolishJapaneseEntry> getPolishJapaneseEntryListFromOldDictionary(Entry entry, List<KanjiKanaPair> kanjiKanaPairListforEntry, Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache, boolean throwErrorWhenDifferentGroup) throws Exception {
+						
 		// szukamy wszystkich slow ze starego slownika
 		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = new ArrayList<>();		
 				
@@ -3631,9 +3634,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return false;
 	}
 	
-	public void generateMissingPolishEntriesFromOldPolishJapaneseDictionary() throws Exception {
-		// pobieramy wpisy ze starego slownika
-		List<PolishJapaneseEntry> oldPolishJapaneseEntriesList = getOldPolishJapaneseEntriesList();
+	public void generateMissingPolishEntriesFromOldPolishJapaneseDictionary(List<PolishJapaneseEntry> oldPolishJapaneseEntriesList) throws Exception {
 		
 		// licznik wygenerowanych wpisow pochodzacych ze starego slownika, a ktorego nie ma w angielskim slowniku
 		int generatedEntryIdCounter = GENERATED_ENTRY_ID_START;		
@@ -3777,10 +3778,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 	}
 	
-	public void addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary() throws Exception {
+	public void addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(List<PolishJapaneseEntry> oldPolishJapaneseEntriesList) throws Exception {
 		
 		// pobieramy wszystkie polskie wpisy
 		List<Entry> allPolishDictionaryEntryList = getAllPolishDictionaryEntryList();
+		
+		// tworzymy lokalny cache
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(oldPolishJapaneseEntriesList);
 		
 		for (Entry entry : allPolishDictionaryEntryList) {
 			
@@ -3792,7 +3796,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
 			
 			// pobieramy wszystkie slowa ze starego slownika
-			List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, false);
+			List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, cachePolishJapaneseEntryList, false);
 			
 			// dodanie dodatkowych informacji
 			addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(entry, polishJapaneseEntryListFromOldDictionary);

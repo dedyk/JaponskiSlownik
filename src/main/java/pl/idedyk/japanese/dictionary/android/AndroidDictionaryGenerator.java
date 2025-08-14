@@ -141,6 +141,7 @@ public class AndroidDictionaryGenerator {
 		
 		// validate		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
+		
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, dictionaryHelper, dictionary2NameHelper, true);
 
 		System.out.println("checkAndSavePolishJapaneseEntries: detectDuplicatePolishJapaneseKanjiEntries");
@@ -187,6 +188,7 @@ public class AndroidDictionaryGenerator {
 		//JSONReaderWriter.writeJSONArrayToFile(new File(destinationJSONFileName), resultJSONArray);
 		
 		// generowanie mocy slow
+		//FM_FIXME: do zmiany
 		System.out.println("checkAndSavePolishJapaneseEntries: generateWordPowerCsv");
 
 		FileOutputStream outputPowerStream = new FileOutputStream(new File(destinationPowerFileName));
@@ -207,10 +209,10 @@ public class AndroidDictionaryGenerator {
 		dictionaryHelper.validateAllPolishDictionaryEntryList();
 		
 		// dogenerowanie do nowego slownika slow, ktorych jeszcze tam nie ma
-		dictionaryHelper.generateMissingPolishEntriesFromOldPolishJapaneseDictionary();
+		dictionaryHelper.generateMissingPolishEntriesFromOldPolishJapaneseDictionary(result);
 		
 		// dodanie roznych informacji ze starego slownika do nowego formatu
-		Helper.generateUniqueKeys(polishJapaneseEntries);
+		dictionaryHelper.addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(result);
 		
 		// pobieramy wszystkie slowa, ktore sa w nowym slowniku
 		List<Entry> allPolishDictionary2EntryList = dictionaryHelper.getAllPolishDictionaryEntryList();

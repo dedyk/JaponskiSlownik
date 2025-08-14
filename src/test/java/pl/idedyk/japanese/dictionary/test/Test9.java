@@ -21,8 +21,8 @@ public class Test9 {
 		Helper.generateAdditionalInfoFromEdict(dictionaryHelper, jmedictCommon, polishJapaneseEntries);
 		Helper.generateUniqueKeys(polishJapaneseEntries);
 		
-		dictionaryHelper.generateMissingPolishEntriesFromOldPolishJapaneseDictionary();
-		dictionaryHelper.addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary();
+		dictionaryHelper.generateMissingPolishEntriesFromOldPolishJapaneseDictionary(polishJapaneseEntries);
+		dictionaryHelper.addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(polishJapaneseEntries);
 		
 		JMdict newJmdict = new JMdict();
 		
