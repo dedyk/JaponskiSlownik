@@ -3636,6 +3636,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	public void generateMissingPolishEntriesFromOldPolishJapaneseDictionary(List<PolishJapaneseEntry> oldPolishJapaneseEntriesList) throws Exception {
 		
+		// tworzymy lokalny cache
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(oldPolishJapaneseEntriesList);
+		
 		// licznik wygenerowanych wpisow pochodzacych ze starego slownika, a ktorego nie ma w angielskim slowniku
 		int generatedEntryIdCounter = GENERATED_ENTRY_ID_START;		
 		
@@ -3739,6 +3742,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			System.out.println("WARNING: Generate sense for entry with id: " + entryId + " from old polish dictionary.");
 			
+			// generowanie wszystkich kanji i ich czytan
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+			
 			// wygenerowanie wirtualnego polskiego wpisu ze starego slownika
 			entry = (Entry)SerializationUtils.clone(entry);
 			
@@ -3748,6 +3754,22 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			for (ReadingInfo readingInfo : entryReadingInfoList) {
 				if (readingInfo.getKana().getKanaType() == null) {
 					readingInfo.getKana().setKanaType(getKanaType(readingInfo.getKana().getValue()));
+				}
+				
+				if (readingInfo.getKana().getRomaji() == null) {
+					// szukamy takiej kombinacji, aby kana bylo to samo
+					KanjiKanaPair kanjiKanaPair = kanjiKanaPairListforEntry.stream().filter(f -> f.getKana().equals(readingInfo.getKana().getValue()) == true).findFirst().orElse(null);
+					
+					if (kanjiKanaPair != null) {						
+						// szukamy wpisu w starym slowniku, aby pobrac z tego romaji
+						List<PolishJapaneseEntry> polishJapaneseEntryForKanjiKanaPair = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, kanjiKanaPair.getKanji(), kanjiKanaPair.getKana());
+						
+						if (	polishJapaneseEntryForKanjiKanaPair != null && polishJapaneseEntryForKanjiKanaPair.size() > 0 && 
+								readingInfo.getKana().getValue().equals(polishJapaneseEntryForKanjiKanaPair.get(0).getKana()) == true) { // mamy cos
+							
+							readingInfo.getKana().setRomaji(polishJapaneseEntryForKanjiKanaPair.get(0).getRomaji());
+						}											
+					}					
 				}
 			}
 			
