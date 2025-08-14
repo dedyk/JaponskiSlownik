@@ -264,7 +264,7 @@ public class WordGenerator {
 						dictionary2Helper.createEmptyPolishSense(jmdictEntry);
 						
 						// pobranie ze starego slownika interesujacych danych (np. romaji)
-						dictionary2Helper.fillDataFromOldPolishJapaneseDictionary(jmdictEntry, entryAdditionalData);
+						dictionary2Helper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
 
 						// dodajemy do listy
 						resultDictionary2EntryList.add(jmdictEntry);
@@ -579,7 +579,7 @@ public class WordGenerator {
 						dictionary2Helper.createEmptyPolishSense(jmdictEntry);
 						
 						// pobranie ze starego slownika interesujacych danych (np. romaji)
-						dictionary2Helper.fillDataFromOldPolishJapaneseDictionary(jmdictEntry, entryAdditionalData);
+						dictionary2Helper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
 
 						// dodajemy do listy
 						resultDictionary2EntryList.add(jmdictEntry);
@@ -3277,7 +3277,7 @@ public class WordGenerator {
 							dictionary2Helper.createEmptyPolishSense(jmdictEntry);
 							
 							// pobranie ze starego slownika interesujacych danych (np. romaji)
-							dictionary2Helper.fillDataFromOldPolishJapaneseDictionary(jmdictEntry, entryAdditionalData);
+							dictionary2Helper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
 
 							// dodajemy do listy
 							resultDictionary2EntryList.add(jmdictEntry);
@@ -4242,7 +4242,7 @@ public class WordGenerator {
 						dictionaryHelper.createEmptyPolishSense(entry);
 						
 						// pobranie ze starego slownika interesujacych danych (np. romaji)
-						dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry, entryAdditionalData);
+						dictionaryHelper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(entry, entryAdditionalData);
 						
 						// dodajemy do listy
 						resultDictionary2EntryList.add(entry);

@@ -93,6 +93,9 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSourceLsTypeEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSourceLsWaseiEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.OldPolishJapaneseDictionaryInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.OldPolishJapaneseDictionaryInfoEntriesInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
@@ -105,6 +108,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	private static final int CSV_COLUMNS = 11; 
+	private static final int GENERATED_ENTRY_ID_START = 7000001;
 	
 	private static Dictionary2Helper dictionary2Helper;
 	
@@ -2301,7 +2305,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return result;
 	}
 
-	public void fillDataFromOldPolishJapaneseDictionary(Entry entry, EntryAdditionalData entryAdditionalData) throws Exception {
+	public void fillDataFromOldPolishJapaneseDictionaryForWordGenerating(Entry entry, EntryAdditionalData entryAdditionalData) throws Exception {
 				
 		// generowanie wszystkich kanji i ich czytan
 		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
@@ -3629,7 +3633,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		List<PolishJapaneseEntry> oldPolishJapaneseEntriesList = getOldPolishJapaneseEntriesList();
 		
 		// licznik wygenerowanych wpisow pochodzacych ze starego slownika, a ktorego nie ma w angielskim slowniku
-		int generatedEntryIdCounter = 7000001;		
+		int generatedEntryIdCounter = GENERATED_ENTRY_ID_START;		
 		
 		// obiekt do mapowania typow
 		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
@@ -3695,6 +3699,12 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				}				
 				
 				newGeneratedEntry.getSenseList().add(sense);
+				
+				// dodanie informacji, ze tego slowka nie ma w slowniku JMdict i zostalo przeniesione ze starego slownika
+				cgtMisc(newGeneratedEntry).setNotExistsInJMdict(true);
+				
+				// dodanie kilku informacji ze starego slownika
+				addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(newGeneratedEntry, Arrays.asList(polishJapaneseEntry));
 				
 				// dodajemy wygenerowany wpis
 				addEntryToPolishDictionary(newGeneratedEntry);
@@ -3762,6 +3772,71 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			// dodajemy wygenerowany wpis
 			addEntryToPolishDictionary(entry);			
 		}
+	}
+	
+	public void addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary() throws Exception {
+		
+		// pobieramy wszystkie polskie wpisy
+		List<Entry> allPolishDictionaryEntryList = getAllPolishDictionaryEntryList();
+		
+		for (Entry entry : allPolishDictionaryEntryList) {
+			
+			if (Boolean.TRUE.equals(cgtMisc(entry).isNotExistsInJMdict()) == true) { // to slownko zostalo dodatkowo dodane, gdyz nie ma go w Jmdict
+				continue;
+			}
+			
+			// generowanie wszystkich kanji i ich czytan
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+			
+			// pobieramy wszystkie slowa ze starego slownika
+			List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, false);
+			
+			// dodanie dodatkowych informacji
+			addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(entry, polishJapaneseEntryListFromOldDictionary);
+		}
+	}
+	
+	private OldPolishJapaneseDictionaryInfo cgtMisc(Entry entry) {
+		MiscInfo misc = entry.getMisc();
+		
+		if (misc == null) {
+			misc = new MiscInfo();
+			
+			entry.setMisc(misc);
+		}
+		
+		OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = misc.getOldPolishJapaneseDictionary();
+		
+		if (oldPolishJapaneseDictionary == null) {
+			oldPolishJapaneseDictionary = new OldPolishJapaneseDictionaryInfo();
+			
+			misc.setOldPolishJapaneseDictionary(oldPolishJapaneseDictionary);
+		}
+
+		return oldPolishJapaneseDictionary;
+	}
+	
+	private void addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(Entry entry, List<PolishJapaneseEntry> polishJapaneseEntryList) {
+				
+		OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = cgtMisc(entry);		
+		
+		if (oldPolishJapaneseDictionary.getEntries().size() == 0) {
+						
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+				OldPolishJapaneseDictionaryInfoEntriesInfo oldEntryInfo = new OldPolishJapaneseDictionaryInfoEntriesInfo();
+				
+				oldEntryInfo.setId(polishJapaneseEntry.getId());
+				
+				if (polishJapaneseEntry.isKanjiExists() == true) {
+					oldEntryInfo.setKanji(polishJapaneseEntry.getKanji());
+				}
+				
+				oldEntryInfo.setKana(polishJapaneseEntry.getKana());
+				oldEntryInfo.setRomaji(polishJapaneseEntry.getRomaji());
+				
+				oldPolishJapaneseDictionary.getEntries().add(oldEntryInfo);
+			}
+		}		
 	}
 
 	//

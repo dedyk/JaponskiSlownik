@@ -1338,8 +1338,7 @@ public class Validator {
 			}			
 		}	
 		
-		if (validateResult == false) { // jesli jest blad walidacji
-			
+		if (validateResult == false) { // jesli jest blad walidacji			
 			throw new DictionaryException("Error");
 		}
 	}
