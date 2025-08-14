@@ -3836,7 +3836,19 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				oldPolishJapaneseDictionary.getEntries().add(oldEntryInfo);
 			}
-		}		
+		}
+		
+		if (oldPolishJapaneseDictionary.getDictionaryEntryTypeList().size() == 0) {
+			
+			LinkedHashSet<String> uniqueDictionaryEntryTypeList = new LinkedHashSet<>();
+			
+			// pakujemy wszystkie typy do jednego worka
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+				polishJapaneseEntry.getDictionaryEntryTypeList().forEach(c -> uniqueDictionaryEntryTypeList.add(c.name()));				
+			}
+			
+			oldPolishJapaneseDictionary.getDictionaryEntryTypeList().addAll(uniqueDictionaryEntryTypeList);			
+		}
 	}
 
 	//
