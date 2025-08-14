@@ -3819,7 +3819,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return oldPolishJapaneseDictionary;
 	}
 	
-	private void addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(Entry entry, List<PolishJapaneseEntry> polishJapaneseEntryList) {
+	private void addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(Entry entry, List<PolishJapaneseEntry> polishJapaneseEntryList) throws Exception {
 				
 		OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = cgtMisc(entry);		
 		
@@ -3919,7 +3919,11 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				if (attribute.getAttributeType() == AttributeType.PRIORITY) { // za chwile bedzie specjalna obsluga dla priorytetow
 					continue;
-				}				
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.ANTONYM || attribute.getAttributeType() == AttributeType.RELATED) { // za chwile bedzie specjalna obsluga dla przeciwienstw i slowek powiazanych
+					continue;
+				}
 				
 				// standardowa obsluga				
 				OldPolishJapaneseDictionaryInfoAttributeListInfo oldPolishJapaneseDictionaryInfoAttributeListInfo = new OldPolishJapaneseDictionaryInfoAttributeListInfo();
@@ -3942,19 +3946,71 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				if (attribute.getAttributeType() == AttributeType.PRIORITY) {
 					priorityList.add(Integer.parseInt(attribute.getAttributeValue().get(0)));
 				}				
-			}	
+			}			
 			
 			Collections.sort(priorityList);
 			
-			if (priorityList.size() > 0) {
-				
+			if (priorityList.size() > 0) {				
 				OldPolishJapaneseDictionaryInfoAttributeListInfo oldPolishJapaneseDictionaryInfoPriorityAttributeInfo = new OldPolishJapaneseDictionaryInfoAttributeListInfo();
 				
 				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setType(AttributeType.PRIORITY.name());
 				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setValue(String.valueOf(priorityList.get(0)));
 								
 				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoPriorityAttributeInfo);
-			}			
+			}
+			
+			// specjalna obsluga dla przeciwienstw i slowek powiazanych
+			List<Integer> antonymEntryIds = new ArrayList<>();
+			List<Integer> relatedEntryIds = new ArrayList<>();
+			
+			for (int i = 0; i < allAttributeList.getAttributeList().size(); ++i) {
+				Attribute attribute = allAttributeList.getAttributeList().get(i);
+				
+				if (attribute.getAttributeType() == AttributeType.ANTONYM || attribute.getAttributeType() == AttributeType.RELATED) {					
+					// tutaj w starym slowniku zapisany jest identyfikator slowa, musimy zamienic to na entry id
+					Integer polishJapaneseId = Integer.parseInt(attribute.getAttributeValue().get(0));
+					
+					// pobieramy to slowo ze starego slownika
+					PolishJapaneseEntry polishJapaneseEntry = oldWordGeneratorHelper.getPolishJapaneseEntriesList().get(polishJapaneseId - 1);
+					
+					if (polishJapaneseEntry != null) {
+						// dla pewnosci sprawdzamy jeszcze id
+						if (polishJapaneseEntry.getId() != polishJapaneseId) {
+							throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie
+						}
+						
+						Integer entryId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+						
+						if (entryId != null) { // mamy entry id
+							if (attribute.getAttributeType() == AttributeType.ANTONYM && antonymEntryIds.contains(entryId) == false) {
+								antonymEntryIds.add(entryId);
+							}
+							
+							if (attribute.getAttributeType() == AttributeType.RELATED && relatedEntryIds.contains(entryId) == false) {
+								relatedEntryIds.add(entryId);
+							}							
+						}						
+					}					
+				}
+			}
+			
+			for (Integer entryId : antonymEntryIds) {
+				OldPolishJapaneseDictionaryInfoAttributeListInfo oldPolishJapaneseDictionaryInfoPriorityAttributeInfo = new OldPolishJapaneseDictionaryInfoAttributeListInfo();
+				
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setType(AttributeType.ANTONYM.name());
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setValue(String.valueOf(entryId));
+								
+				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoPriorityAttributeInfo);
+			}
+			
+			for (Integer entryId : relatedEntryIds) {
+				OldPolishJapaneseDictionaryInfoAttributeListInfo oldPolishJapaneseDictionaryInfoPriorityAttributeInfo = new OldPolishJapaneseDictionaryInfoAttributeListInfo();
+				
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setType(AttributeType.RELATED.name());
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setValue(String.valueOf(entryId));
+								
+				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoPriorityAttributeInfo);
+			}
 		}
 	}
 
