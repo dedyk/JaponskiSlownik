@@ -65,7 +65,9 @@ import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
+import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
+import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
@@ -95,6 +97,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSourceLsWaseiEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.OldPolishJapaneseDictionaryInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.OldPolishJapaneseDictionaryInfoAttributeListInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.OldPolishJapaneseDictionaryInfoEntriesInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
@@ -3834,6 +3837,12 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				oldEntryInfo.setKana(polishJapaneseEntry.getKana());
 				oldEntryInfo.setRomaji(polishJapaneseEntry.getRomaji());
 				
+				List<Attribute> uniqueKeyAttributeList = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.UNIQUE_KEY);
+				
+				if (uniqueKeyAttributeList != null && uniqueKeyAttributeList.size() > 0) {
+					oldEntryInfo.setUniqueKey(uniqueKeyAttributeList.get(0).getAttributeValue().get(0));	
+				}				
+				
 				oldPolishJapaneseDictionary.getEntries().add(oldEntryInfo);
 			}
 		}
@@ -3848,6 +3857,104 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}
 			
 			oldPolishJapaneseDictionary.getDictionaryEntryTypeList().addAll(uniqueDictionaryEntryTypeList);			
+		}
+		
+		if (oldPolishJapaneseDictionary.getAttributeList().size() == 0) {
+			
+			// pakujemy wszystkie typy do jednego worka
+			AttributeList allAttributeList = new AttributeList();
+			
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+				
+				AttributeList attributeList = polishJapaneseEntry.getAttributeList();
+				List<Attribute> attributeListList = attributeList.getAttributeList();
+				
+				for (Attribute attribute : attributeListList) {
+					allAttributeList.addUniqueAttributeValue(attribute.getAttributeType(), attribute.getAttributeValue());
+				}
+			}
+			
+			for (int i = 0; i < allAttributeList.getAttributeList().size(); ++i) {
+				Attribute attribute = allAttributeList.getAttributeList().get(i);
+				
+				if (attribute.getAttributeType() == AttributeType.JMDICT_ENTRY_ID) { // to nie jest potrzebne
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.UNIQUE_KEY) { // to nie jest potrzebne
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.KANA_ALONE) { // to nie jest potrzebne
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.ARCHAIC) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}
+
+				if (attribute.getAttributeType() == AttributeType.OBSOLETE) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.VERB_TRANSITIVITY) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}
+
+				if (attribute.getAttributeType() == AttributeType.VERB_INTRANSITIVITY) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.ATEJI) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}				
+				
+				if (attribute.getAttributeType() == AttributeType.ALTERNATIVE) { // alternatyw nie bierzemy, gdyz zawsze sa w ramach tego samego entry
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.PRIORITY) { // za chwile bedzie specjalna obsluga dla priorytetow
+					continue;
+				}				
+				
+				// standardowa obsluga				
+				OldPolishJapaneseDictionaryInfoAttributeListInfo oldPolishJapaneseDictionaryInfoAttributeListInfo = new OldPolishJapaneseDictionaryInfoAttributeListInfo();
+				
+				oldPolishJapaneseDictionaryInfoAttributeListInfo.setType(attribute.getAttributeType().name());
+				
+				if (attribute.getAttributeValue() != null) {
+					oldPolishJapaneseDictionaryInfoAttributeListInfo.setValue(Helper.convertListToString(attribute.getAttributeValue()));	
+				}			
+				
+				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoAttributeListInfo);
+			}
+			
+			// wyliczanie priorytetow, bierzemy te najmniejsza wartosc
+			List<Integer> priorityList = new ArrayList<>();
+			
+			for (int i = 0; i < allAttributeList.getAttributeList().size(); ++i) {
+				Attribute attribute = allAttributeList.getAttributeList().get(i);
+				
+				if (attribute.getAttributeType() == AttributeType.PRIORITY) {
+					priorityList.add(Integer.parseInt(attribute.getAttributeValue().get(0)));
+				}				
+			}	
+			
+			Collections.sort(priorityList);
+			
+			if (priorityList.size() > 0) {
+				
+				OldPolishJapaneseDictionaryInfoAttributeListInfo oldPolishJapaneseDictionaryInfoPriorityAttributeInfo = new OldPolishJapaneseDictionaryInfoAttributeListInfo();
+				
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setType(AttributeType.PRIORITY.name());
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setValue(String.valueOf(priorityList.get(0)));
+								
+				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoPriorityAttributeInfo);
+			}			
 		}
 	}
 
