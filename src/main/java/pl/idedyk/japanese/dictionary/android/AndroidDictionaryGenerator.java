@@ -209,6 +209,9 @@ public class AndroidDictionaryGenerator {
 		// dogenerowanie do nowego slownika slow, ktorych jeszcze tam nie ma
 		dictionaryHelper.generateMissingPolishEntriesFromOldPolishJapaneseDictionary();
 		
+		// dodanie roznych informacji ze starego slownika do nowego formatu
+		Helper.generateUniqueKeys(polishJapaneseEntries);
+		
 		// pobieramy wszystkie slowa, ktore sa w nowym slowniku
 		List<Entry> allPolishDictionary2EntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
 

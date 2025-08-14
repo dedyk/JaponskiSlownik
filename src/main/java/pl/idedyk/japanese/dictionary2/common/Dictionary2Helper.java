@@ -4012,6 +4012,32 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoPriorityAttributeInfo);
 			}
 		}
+		
+		if (oldPolishJapaneseDictionary.getGroupsList().size() == 0) {
+			
+			LinkedHashSet<String> uniqueGroupsList = new LinkedHashSet<>();
+			
+			// pakujemy wszystkie typy do jednego worka
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+				polishJapaneseEntry.getGroups().forEach(c -> uniqueGroupsList.add(c.name()));				
+			}
+			
+			oldPolishJapaneseDictionary.getGroupsList().addAll(uniqueGroupsList);			
+		}
+		
+		if (oldPolishJapaneseDictionary.getExampleSentenceGroupIdsList().size() == 0) {
+			
+			LinkedHashSet<String> uniqueExampleSentenceGroupIdsList = new LinkedHashSet<>();
+			
+			// pakujemy wszystkie typy do jednego worka
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+				if (polishJapaneseEntry.getExampleSentenceGroupIdsList() != null) {
+					polishJapaneseEntry.getExampleSentenceGroupIdsList().forEach(c -> uniqueExampleSentenceGroupIdsList.add(c));
+				}
+			}
+			
+			oldPolishJapaneseDictionary.getExampleSentenceGroupIdsList().addAll(uniqueExampleSentenceGroupIdsList);						
+		}
 	}
 
 	//
