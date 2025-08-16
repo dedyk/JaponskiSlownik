@@ -3768,7 +3768,14 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 								readingInfo.getKana().getValue().equals(polishJapaneseEntryForKanjiKanaPair.get(0).getKana()) == true) { // mamy cos
 							
 							readingInfo.getKana().setRomaji(polishJapaneseEntryForKanjiKanaPair.get(0).getRomaji());
-						}											
+							
+						} else {
+							try {
+								readingInfo.getKana().setRomaji(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana().getValue(), kanaHelper.getKanaCache(), true)));
+							} catch (Exception e) {
+								// noop
+							}
+						}
 					}					
 				}
 			}
