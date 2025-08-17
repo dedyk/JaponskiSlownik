@@ -2701,7 +2701,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 
 			// aktualizacja wpisu
 			polishJapaneseEntry.setWordType(WordType.valueOf(kanjiKanaPair.getKanaType().name()));			
-			polishJapaneseEntry.setRomaji(kanjiKanaPair.romaji());
+			polishJapaneseEntry.setRomaji(kanjiKanaPair.getRomaji());
 			
 			polishJapaneseEntry.setTranslates(newPolishTranslateList);
 			polishJapaneseEntry.setInfo(newPolishAdditionalInfo);
