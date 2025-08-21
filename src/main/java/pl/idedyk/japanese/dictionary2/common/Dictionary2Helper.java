@@ -3623,6 +3623,146 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		return false;
 	}
+	
+	public void generateMissingPolishEntriesFromOldPolishJapaneseDictionary() throws Exception {
+		// pobieramy wpisy ze starego slownika
+		List<PolishJapaneseEntry> oldPolishJapaneseEntriesList = getOldPolishJapaneseEntriesList();
+		
+		// licznik wygenerowanych wpisow pochodzacych ze starego slownika, a ktorego nie ma w angielskim slowniku
+		int generatedEntryIdCounter = 7000001;		
+		
+		// obiekt do mapowania typow
+		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
+		
+		// chodzimy po wpisach ze starego slownika
+		for (PolishJapaneseEntry polishJapaneseEntry : oldPolishJapaneseEntriesList) {
+			
+			// pobieramy identyfikator entry ze starego wpisu
+			Integer entryId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+			
+			if (entryId == null) {		
+				System.out.println("INFO: Generate entry from old polish dictionary for: " + polishJapaneseEntry);
+				
+				// generujemy nowy wpis
+				Entry newGeneratedEntry = new Entry();
+				
+				newGeneratedEntry.setEntryId(generatedEntryIdCounter);
+				
+				if (polishJapaneseEntry.isKanjiExists() == true) {					
+					KanjiInfo kanjiInfo = new KanjiInfo();
+					
+					kanjiInfo.setKanji(polishJapaneseEntry.getKanji());
+										
+					newGeneratedEntry.getKanjiInfoList().add(kanjiInfo);
+				}
+				
+				ReadingInfo readingInfo = new ReadingInfo();
+				
+				ReadingInfoKana readingInfoKana = new ReadingInfoKana();
+				
+				readingInfoKana.setKanaType(ReadingInfoKanaType.valueOf(polishJapaneseEntry.getWordType().name()));
+				readingInfoKana.setValue(polishJapaneseEntry.getKana());
+				readingInfoKana.setRomaji(polishJapaneseEntry.getRomaji());
+				
+				readingInfo.setKana(readingInfoKana);	
+				
+				newGeneratedEntry.getReadingInfoList().add(readingInfo);
+				
+				Sense sense = new Sense();
+								
+				sense.getPartOfSpeechList().addAll(dictionaryEntryJMEdictEntityMapper.getPartOfSpeechEnumFromDictionaryEntryType(polishJapaneseEntry));
+				
+				// tworzymy znaczenie ze starego slownika
+				for (String oldPolishTranslate : polishJapaneseEntry.getTranslates()) {
+					Gloss newPolishGeneratedGloss = new Gloss();
+					
+					newPolishGeneratedGloss.setLang("pol");
+					newPolishGeneratedGloss.setGType(null);
+					newPolishGeneratedGloss.setValue(oldPolishTranslate);
+					
+					sense.getGlossList().add(newPolishGeneratedGloss);
+				}
+				
+				String info = polishJapaneseEntry.getInfo();
+				
+				if (StringUtils.isNotBlank(info) == true) {
+					SenseAdditionalInfo newSenseAdditionalInfo = new SenseAdditionalInfo();
+					
+					newSenseAdditionalInfo.setLang("pol");
+					newSenseAdditionalInfo.setValue(info);
+					
+					sense.getAdditionalInfoList().add(newSenseAdditionalInfo);
+				}				
+				
+				newGeneratedEntry.getSenseList().add(sense);
+				
+				// dodajemy wygenerowany wpis
+				addEntryToPolishDictionary(newGeneratedEntry);
+								
+				generatedEntryIdCounter++;
+				
+				continue;
+			}
+						
+			// sprawdzanie, czy dane slowo ma juz swj odpowiednik w polskim slowniku
+			Entry entryFromPolishDictionary = getEntryFromPolishDictionary(entryId);
+			
+			if (entryFromPolishDictionary != null) { // jest, wiec to nas nie interesuje
+				continue;
+			}
+			
+			// pobieramy entry z angielskiego slownika
+			Entry entry = getJMdictEntry(entryId);
+			
+			if (entry == null) { // jezeli wystepuje taka sytuacja to znaczy, ze slownik nie zostal poprawnie zaktualizowany; nalezy usunac bledne wpisy		
+				System.out.println("WARNING: Can't find entry with id: " + entryId + " which exists in polish dictionary. Please update dictionary");
+				continue;
+			}
+			
+			if (entry.getSenseList().size() > 1) {
+				throw new RuntimeException("Entry sense with id: " + entryId + " with multisense. Please add manually.");
+			}
+			
+			System.out.println("WARNING: Generate sense for entry with id: " + entryId + " from old polish dictionary.");
+			
+			// wygenerowanie wirtualnego polskiego wpisu ze starego slownika
+			entry = (Entry)SerializationUtils.clone(entry);
+			
+			// dodanie kana type
+			List<ReadingInfo> entryReadingInfoList = entry.getReadingInfoList();
+			
+			for (ReadingInfo readingInfo : entryReadingInfoList) {
+				if (readingInfo.getKana().getKanaType() == null) {
+					readingInfo.getKana().setKanaType(getKanaType(readingInfo.getKana().getValue()));
+				}
+			}
+			
+			// tworzymy znaczenie ze starego slownika
+			for (String oldPolishTranslate : polishJapaneseEntry.getTranslates()) {
+				Gloss newPolishGeneratedGloss = new Gloss();
+				
+				newPolishGeneratedGloss.setLang("pol");
+				newPolishGeneratedGloss.setGType(null);
+				newPolishGeneratedGloss.setValue(oldPolishTranslate);
+				
+				entry.getSenseList().get(0).getGlossList().add(newPolishGeneratedGloss);
+			}
+			
+			String info = polishJapaneseEntry.getInfo();
+			
+			if (StringUtils.isNotBlank(info) == true) {
+				SenseAdditionalInfo newSenseAdditionalInfo = new SenseAdditionalInfo();
+				
+				newSenseAdditionalInfo.setLang("pol");
+				newSenseAdditionalInfo.setValue(info);
+				
+				entry.getSenseList().get(0).getAdditionalInfoList().add(newSenseAdditionalInfo);
+			}			
+			
+			// dodajemy wygenerowany wpis
+			addEntryToPolishDictionary(entry);			
+		}
+	}
 
 	//
 			
