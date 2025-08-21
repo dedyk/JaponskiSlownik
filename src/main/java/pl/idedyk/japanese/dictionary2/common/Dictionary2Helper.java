@@ -3863,7 +3863,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				oldEntryInfo.setId(polishJapaneseEntry.getId());
 								
-				oldEntryInfo.setDictionaryEntryTypeList(polishJapaneseEntry.getDictionaryEntryTypeList().stream().map(m -> m.getName()).collect(Collectors.joining(",")));
+				oldEntryInfo.setDictionaryEntryTypeList(polishJapaneseEntry.getDictionaryEntryTypeList().stream().map(m -> m.name()).collect(Collectors.joining(",")));
 								
 				if (polishJapaneseEntry.isKanjiExists() == true) {
 					oldEntryInfo.setKanji(polishJapaneseEntry.getKanji());
