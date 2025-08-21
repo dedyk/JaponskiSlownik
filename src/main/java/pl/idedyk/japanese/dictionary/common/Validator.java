@@ -25,8 +25,10 @@ import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.example.ExampleManager;
+import pl.idedyk.japanese.dictionary.api.example.dto.ExampleRequest;
 import pl.idedyk.japanese.dictionary.api.exception.DictionaryException;
 import pl.idedyk.japanese.dictionary.api.gramma.GrammaConjugaterManager;
+import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateRequest;
 import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateResult;
 import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateResultType;
 import pl.idedyk.japanese.dictionary.api.keigo.KeigoHelper;
@@ -1387,16 +1389,16 @@ public class Validator {
 				
 				Map<GrammaFormConjugateResultType, GrammaFormConjugateResult> grammaFormCache = new HashMap<GrammaFormConjugateResultType, GrammaFormConjugateResult>();
 				
-				GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, polishJapaneseEntry, grammaFormCache, null, true);
+				GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, new GrammaFormConjugateRequest(polishJapaneseEntry), grammaFormCache, null, true);
 				
 				for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntry.getDictionaryEntryTypeList()) {
-					GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, polishJapaneseEntry, grammaFormCache, currentDictionaryEntryType, true);
+					GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, new GrammaFormConjugateRequest(polishJapaneseEntry), grammaFormCache, currentDictionaryEntryType, true);
 				}
 				
-				ExampleManager.getExamples(keigoHelper, polishJapaneseEntry, grammaFormCache, null, true);
+				ExampleManager.getExamples(keigoHelper, new ExampleRequest(polishJapaneseEntry), grammaFormCache, null, true);
 				
 				for (DictionaryEntryType currentDictionaryEntryType : polishJapaneseEntry.getDictionaryEntryTypeList()) {
-					ExampleManager.getExamples(keigoHelper, polishJapaneseEntry, grammaFormCache, currentDictionaryEntryType, true);
+					ExampleManager.getExamples(keigoHelper, new ExampleRequest(polishJapaneseEntry), grammaFormCache, currentDictionaryEntryType, true);
 				}
 				
 			} catch (Exception e) {

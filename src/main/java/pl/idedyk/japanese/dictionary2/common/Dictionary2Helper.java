@@ -3862,7 +3862,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				OldPolishJapaneseDictionaryInfoEntriesInfo oldEntryInfo = new OldPolishJapaneseDictionaryInfoEntriesInfo();
 				
 				oldEntryInfo.setId(polishJapaneseEntry.getId());
-				
+								
+				oldEntryInfo.setDictionaryEntryTypeList(polishJapaneseEntry.getDictionaryEntryTypeList().stream().map(m -> m.getName()).collect(Collectors.joining(",")));
+								
 				if (polishJapaneseEntry.isKanjiExists() == true) {
 					oldEntryInfo.setKanji(polishJapaneseEntry.getKanji());
 				}
@@ -3878,18 +3880,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				oldPolishJapaneseDictionary.getEntries().add(oldEntryInfo);
 			}
-		}
-		
-		if (oldPolishJapaneseDictionary.getDictionaryEntryTypeList().size() == 0) {
-			
-			LinkedHashSet<String> uniqueDictionaryEntryTypeList = new LinkedHashSet<>();
-			
-			// pakujemy wszystkie typy do jednego worka
-			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
-				polishJapaneseEntry.getDictionaryEntryTypeList().forEach(c -> uniqueDictionaryEntryTypeList.add(c.name()));				
-			}
-			
-			oldPolishJapaneseDictionary.getDictionaryEntryTypeList().addAll(uniqueDictionaryEntryTypeList);			
 		}
 		
 		if (oldPolishJapaneseDictionary.getAttributeList().size() == 0) {
