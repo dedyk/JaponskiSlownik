@@ -78,7 +78,7 @@ public class JMEDictSearcher {
 				
 				System.out.println("=========================\n");
 				
-				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 				
 				for (int idx = 0; idx < kanjiKanaPairList.size(); ++idx) {
 					printKanjiKanaPair(entry, kanjiKanaPairList.get(idx), idx + 1);
@@ -92,7 +92,7 @@ public class JMEDictSearcher {
 				
 				for (Entry entry : entryList) {
 					
-					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 					
 					for (int idx = 0; idx < kanjiKanaPairList.size(); ++idx) {
 						

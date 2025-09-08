@@ -454,7 +454,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		if (entryList.size() == 1) {
 						
 			// generowanie wszystkich kanji i ich czytan
-			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entryList.get(0));
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entryList.get(0), false);
 
 			return findKanjiKanaPair(kanjiKanaPairListforEntry, polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());			
 		}
@@ -500,7 +500,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	public List<KanjiKanaPair> getAllKanjiKanaPairListWithTheSameTranslate(Entry entry, String kanji, String kana) {
 		
 		// pobieramy wszystkie mozliwosci
-		List<KanjiKanaPair> kanjiKanaPairList = getKanjiKanaPairListStatic(entry);
+		List<KanjiKanaPair> kanjiKanaPairList = getKanjiKanaPairListStatic(entry, false);
 		
 		// grupujemy po tych samyc tlumaczeniach
 		List<List<KanjiKanaPair>> kanjiKanaPairListGroupByTheSameTranslateListList = groupByTheSameTranslate(kanjiKanaPairList);
@@ -931,7 +931,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			for (Entry entry : entryList) {
 				
 				// generowanie wszystkich kanji i ich czytan
-				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 				
 				// chodzenie po wszystkich kanji i kana
 				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
@@ -982,7 +982,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			for (Entry entry : entryList) {
 				
 				// generowanie wszystkich kanji i ich czytan
-				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 				
 				// chodzenie po wszystkich kanji i kana
 				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
@@ -1034,7 +1034,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			for (Entry entry : entryList) {
 				
 				// generowanie wszystkich kanji i ich czytan
-				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 				
 				// chodzenie po wszystkich kanji i kana
 				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
@@ -2311,7 +2311,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	public void fillDataFromOldPolishJapaneseDictionaryForWordGenerating(Entry entry, EntryAdditionalData entryAdditionalData) throws Exception {
 				
 		// generowanie wszystkich kanji i ich czytan
-		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 		
 		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, false);		
 		
@@ -2421,7 +2421,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	public boolean isExistsInOldPolishJapaneseDictionary(Entry entry) throws Exception {
 		
 		// generowanie wszystkich kanji i ich czytan
-		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 		
 		List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, true);
 		
@@ -2440,7 +2440,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		List<PolishJapaneseEntry> newOldPolishJapaneseEntryList = new ArrayList<>();
 		
 		// generowanie wszystkich kanji i ich czytan
-		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 				
 		// pobieramy liste 
 		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, true);		
@@ -3195,7 +3195,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}			
 			
 			// generowanie wszystkich kanji i ich czytan
-			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 
 			// sprawdzenie, czy stary wpis w starym slowniku znajduje sie na liscie			
 			Optional<KanjiKanaPair> kanjiKanaPairForPolishJapaneseEntry = kanjiKanaPairListforEntry.stream().filter(kanjiKanaPair -> {
@@ -3743,7 +3743,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			System.out.println("WARNING: Generate sense for entry with id: " + entryId + " from old polish dictionary.");
 			
 			// generowanie wszystkich kanji i ich czytan
-			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 			
 			// wygenerowanie wirtualnego polskiego wpisu ze starego slownika
 			entry = (Entry)SerializationUtils.clone(entry);
@@ -3822,7 +3822,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}
 			
 			// generowanie wszystkich kanji i ich czytan
-			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 			
 			// pobieramy wszystkie slowa ze starego slownika
 			List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, cachePolishJapaneseEntryList, false);
