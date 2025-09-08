@@ -3872,6 +3872,14 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				oldEntryInfo.setKana(polishJapaneseEntry.getKana());
 				oldEntryInfo.setRomaji(polishJapaneseEntry.getRomaji());
 				
+				if (StringUtils.isBlank(polishJapaneseEntry.getPrefixKana()) == false) {
+					oldEntryInfo.setPrefixKana(polishJapaneseEntry.getPrefixKana());
+				}
+				
+				if (StringUtils.isBlank(polishJapaneseEntry.getPrefixRomaji()) == false) {
+					oldEntryInfo.setPrefixRomaji(polishJapaneseEntry.getPrefixRomaji());
+				}
+				
 				List<Attribute> uniqueKeyAttributeList = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.UNIQUE_KEY);
 				
 				if (uniqueKeyAttributeList != null && uniqueKeyAttributeList.size() > 0) {
