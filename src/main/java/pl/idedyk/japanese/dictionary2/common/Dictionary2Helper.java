@@ -3708,7 +3708,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				newGeneratedEntry.getSenseList().add(sense);
 				
 				// dodanie informacji, ze tego slowka nie ma w slowniku JMdict i zostalo przeniesione ze starego slownika
-				cgtMisc(newGeneratedEntry).setNotExistsInJMdict(true);
+				cgtOldPolishJapaneseDictionaryInfo(newGeneratedEntry).setNotExistsInJMdict(true);
 				
 				// dodanie kilku informacji ze starego slownika
 				addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(newGeneratedEntry, Arrays.asList(polishJapaneseEntry));
@@ -3817,7 +3817,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		for (Entry entry : allPolishDictionaryEntryList) {
 			
-			if (Boolean.TRUE.equals(cgtMisc(entry).isNotExistsInJMdict()) == true) { // to slownko zostalo dodatkowo dodane, gdyz nie ma go w Jmdict
+			if (Boolean.TRUE.equals(cgtOldPolishJapaneseDictionaryInfo(entry).isNotExistsInJMdict()) == true) { // to slownko zostalo dodatkowo dodane, gdyz nie ma go w Jmdict
 				continue;
 			}
 			
@@ -3832,7 +3832,47 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 	}
 	
-	private OldPolishJapaneseDictionaryInfo cgtMisc(Entry entry) {
+	public void generateAdditionalDatasForFinalDictionary() throws Exception {
+		
+		// pobieramy wszystkie polskie wpisy
+		List<Entry> allPolishDictionaryEntryList = getAllPolishDictionaryEntryList();
+		
+		for (Entry entry : allPolishDictionaryEntryList) {
+			
+			// wygenerowanie wszystkich widocznych par kanji i kana
+			List<KanjiKanaPair> kanjiKanaPairList = getKanjiKanaPairList(entry, true);
+			
+			// wygenerowanie uniqueKanjiKanaKey
+			Set<String> kanjiUnique = new LinkedHashSet<>();
+			Set<String> kanaUnique = new LinkedHashSet<>();
+			
+			for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+				
+				String kanji = kanjiKanaPair.getKanji();
+				String kana = kanjiKanaPair.getKana();
+				
+				if (kanji != null) {
+					kanjiUnique.add(kanji);
+				}
+				
+				kanaUnique.add(kana);				
+			}
+			
+			if (kanjiUnique.size() == 0) {
+				kanjiUnique.add("-");
+			}
+			
+			if (kanaUnique.size() == 0) {
+				kanaUnique.add("-");
+			}
+			
+			// unique Kanji/Kana Key
+			cgtMisc(entry).setUniqueKanjiKey(String.join("|", kanjiUnique));
+			cgtMisc(entry).setUniqueKanaKey(String.join("|", kanaUnique));
+		}		
+	}
+	
+	private MiscInfo cgtMisc(Entry entry) {
 		MiscInfo misc = entry.getMisc();
 		
 		if (misc == null) {
@@ -3840,6 +3880,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			entry.setMisc(misc);
 		}
+		
+		return misc;
+	}
+	
+	private OldPolishJapaneseDictionaryInfo cgtOldPolishJapaneseDictionaryInfo(Entry entry) {
+		
+		MiscInfo misc = cgtMisc(entry);
 		
 		OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = misc.getOldPolishJapaneseDictionary();
 		
@@ -3854,7 +3901,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	private void addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(Entry entry, List<PolishJapaneseEntry> polishJapaneseEntryList) throws Exception {
 				
-		OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = cgtMisc(entry);		
+		OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = cgtOldPolishJapaneseDictionaryInfo(entry);		
 		
 		if (oldPolishJapaneseDictionary.getEntries().size() == 0) {
 						

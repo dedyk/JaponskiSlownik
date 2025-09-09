@@ -214,6 +214,9 @@ public class AndroidDictionaryGenerator {
 		// dodanie roznych informacji ze starego slownika do nowego formatu
 		dictionaryHelper.addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(result);
 		
+		// wygenerowanie paru dodatkowych informacji
+		dictionaryHelper.generateAdditionalDatasForFinalDictionary();
+		
 		// pobieramy wszystkie slowa, ktore sa w nowym slowniku
 		List<Entry> allPolishDictionary2EntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
 
