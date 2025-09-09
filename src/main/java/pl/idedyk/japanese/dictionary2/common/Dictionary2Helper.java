@@ -3867,8 +3867,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}
 			
 			// unique Kanji/Kana Key
-			cgtMisc(entry).setUniqueKanjiKey(String.join("|", kanjiUnique));
-			cgtMisc(entry).setUniqueKanaKey(String.join("|", kanaUnique));
+			cgtMisc(entry).setUniqueKanjiKey(String.join(",", kanjiUnique));
+			cgtMisc(entry).setUniqueKanaKey(String.join(",", kanaUnique));
 		}		
 	}
 	
