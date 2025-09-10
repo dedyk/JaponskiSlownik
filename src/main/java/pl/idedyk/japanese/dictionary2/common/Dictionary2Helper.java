@@ -3839,6 +3839,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		for (Entry entry : allPolishDictionaryEntryList) {
 			
+			// noop
+			entry.getEntryId();
+			
+			/*
 			// wygenerowanie wszystkich widocznych par kanji i kana
 			List<KanjiKanaPair> kanjiKanaPairList = getKanjiKanaPairList(entry, true);
 			
@@ -3869,6 +3873,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			// unique Kanji/Kana Key
 			cgtMisc(entry).setUniqueKanjiKey(String.join(",", kanjiUnique));
 			cgtMisc(entry).setUniqueKanaKey(String.join(",", kanaUnique));
+			*/
 		}		
 	}
 	
