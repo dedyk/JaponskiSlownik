@@ -15,6 +15,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -88,7 +89,7 @@ public class AndroidDictionaryGenerator {
 		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedictCommon,
 				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word.json", "output/word-power.csv",
-				"output/transitive_intransitive_pairs.csv", "output/word2.xml"); //, "output/word_group.csv");
+				"output/transitive_intransitive_pairs.csv", "output/word2.xml_%d"); //, "output/word_group.csv");
 				
 		generateKanaEntries(kanjivgEntryMap, "output/kana.csv");
 
@@ -116,7 +117,7 @@ public class AndroidDictionaryGenerator {
 			TreeMap<String, EDictEntry> jmedictCommon,
 			String[] sourceFileNames,
 			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationJSONFileName, String destinationPowerFileName,
-			String transitiveIntransitivePairsOutputFile, String word2XmlFile /*, String wordGroupOutputFile */) throws Exception {
+			String transitiveIntransitivePairsOutputFile, String word2XmlFileTemplate /*, String wordGroupOutputFile */) throws Exception {
 
 		System.out.println("checkAndSavePolishJapaneseEntries");
 
@@ -219,14 +220,27 @@ public class AndroidDictionaryGenerator {
 		
 		// pobieramy wszystkie slowa, ktore sa w nowym slowniku
 		List<Entry> allPolishDictionary2EntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
+		dictionaryHelper.sortJMdict(allPolishDictionary2EntryList);
 
-		JMdict newJmdict = new JMdict();
+		Map<Integer,  List<JMdict.Entry>> allPolishDictionaryEntryListPartedMap = new LinkedHashMap<>();
 		
-		newJmdict.getEntryList().addAll(allPolishDictionary2EntryList);
+		for (Entry entry : allPolishDictionary2EntryList) {
+			Integer firstEntryIdDigit = entry.getEntryId() / 100000;
+			
+			allPolishDictionaryEntryListPartedMap.computeIfAbsent(firstEntryIdDigit, f -> new ArrayList<Entry>()).add(entry);			
+		}
 		
-		dictionaryHelper.sortJMdict(newJmdict);
-		dictionaryHelper.saveJMdictAsXml(newJmdict, word2XmlFile);
-		
+		for (Integer firstEntryIdDigit : allPolishDictionaryEntryListPartedMap.keySet()) {
+			String word2XmlFileName = String.format(word2XmlFileTemplate, firstEntryIdDigit);
+
+			JMdict newJmdict = new JMdict();
+			
+			newJmdict.getEntryList().addAll(allPolishDictionaryEntryListPartedMap.get(firstEntryIdDigit));
+			
+			dictionaryHelper.saveJMdictAsXml(newJmdict, word2XmlFileName);	
+			
+		}
+				
 		return result;
 	}
 

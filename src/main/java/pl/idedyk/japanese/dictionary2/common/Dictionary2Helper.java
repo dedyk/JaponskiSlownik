@@ -817,8 +817,12 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	}
 	
 	public void sortJMdict(JMdict newJMdict) {
+		sortJMdict(newJMdict.getEntryList());
+	}
+
+	public void sortJMdict(List<Entry> entryList) {
 		
-		Collections.sort(newJMdict.getEntryList(), new Comparator<JMdict.Entry>() {
+		Collections.sort(entryList, new Comparator<JMdict.Entry>() {
 
 			@Override
 			public int compare(Entry o1, Entry o2) {
@@ -826,6 +830,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}
 		});
 	}
+
 	
 	public void saveJMdictAsXml(JMdict newJMdict, String fileName) throws Exception {
 		
