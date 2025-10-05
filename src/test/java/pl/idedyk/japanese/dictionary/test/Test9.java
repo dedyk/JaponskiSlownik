@@ -1,8 +1,9 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
-
-import org.apache.commons.collections4.ListUtils;
+import java.util.Map;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
@@ -16,21 +17,26 @@ public class Test9 {
 		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
 		dictionaryHelper.generateMissingPolishEntriesFromOldPolishJapaneseDictionary();
-		
+
 		List<Entry> allPolishDictionaryEntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
 		dictionaryHelper.sortJMdict(allPolishDictionaryEntryList);
 		
-		// podzielenie na pod listy
-		List<List<Entry>> allPolishDictionaryEntryListPartitionsList = ListUtils.partition(allPolishDictionaryEntryList, 30000);
+		Map<Integer,  List<JMdict.Entry>> allPolishDictionaryEntryListPartedMap = new LinkedHashMap<>();
 		
-		for (int partNo = 0; partNo < allPolishDictionaryEntryListPartitionsList.size(); ++partNo) {
-			String word2XmlFileName = String.format(word2XmlFileTemplate, partNo);
+		for (Entry entry : allPolishDictionaryEntryList) {
+			Integer firstEntryIdDigit = entry.getEntryId() / 100000;
+			
+			allPolishDictionaryEntryListPartedMap.computeIfAbsent(firstEntryIdDigit, f -> new ArrayList<Entry>()).add(entry);			
+		}
+		
+		for (Integer firstEntryIdDigit : allPolishDictionaryEntryListPartedMap.keySet()) {
+			String fileName = String.format(word2XmlFileTemplate, firstEntryIdDigit);
 			
 			JMdict newJmdict = new JMdict();
 			
-			newJmdict.getEntryList().addAll(allPolishDictionaryEntryListPartitionsList.get(partNo));
+			newJmdict.getEntryList().addAll(allPolishDictionaryEntryListPartedMap.get(firstEntryIdDigit));
 			
-			dictionaryHelper.saveJMdictAsXml(newJmdict, word2XmlFileName);						
+			dictionaryHelper.saveJMdictAsXml(newJmdict, fileName);
 		}
 	}
 }
