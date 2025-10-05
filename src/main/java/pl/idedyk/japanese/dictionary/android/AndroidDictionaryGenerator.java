@@ -21,6 +21,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import org.apache.commons.collections4.ListUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.SerializationUtils;
 import org.apache.commons.lang.StringUtils;
@@ -88,7 +89,7 @@ public class AndroidDictionaryGenerator {
 		
 		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedictCommon,
 				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word.json", "output/word-power.csv",
-				"output/transitive_intransitive_pairs.csv", "output/word2.xml"); //, "output/word_group.csv");
+				"output/transitive_intransitive_pairs.csv", "output/word2-%d.xml"); //, "output/word_group.csv");
 				
 		generateKanaEntries(kanjivgEntryMap, "output/kana.csv");
 
@@ -116,7 +117,7 @@ public class AndroidDictionaryGenerator {
 			TreeMap<String, EDictEntry> jmedictCommon,
 			String[] sourceFileNames,
 			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationJSONFileName, String destinationPowerFileName,
-			String transitiveIntransitivePairsOutputFile, String word2XmlFile /*, String wordGroupOutputFile */) throws Exception {
+			String transitiveIntransitivePairsOutputFile, String word2XmlFileTemplate /*, String wordGroupOutputFile */) throws Exception {
 
 		System.out.println("checkAndSavePolishJapaneseEntries");
 
@@ -208,13 +209,20 @@ public class AndroidDictionaryGenerator {
 		
 		// pobieramy wszystkie slowa, ktore sa w nowym slowniku
 		List<Entry> allPolishDictionary2EntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
+		dictionaryHelper.sortJMdict(allPolishDictionary2EntryList);
+		
+		// podzielenie na pod listy
+		List<List<Entry>> allPolishDictionaryEntryListPartitionsList = ListUtils.partition(allPolishDictionary2EntryList, 30000);
 
-		JMdict newJmdict = new JMdict();
-		
-		newJmdict.getEntryList().addAll(allPolishDictionary2EntryList);
-		
-		dictionaryHelper.sortJMdict(newJmdict);
-		dictionaryHelper.saveJMdictAsXml(newJmdict, word2XmlFile);
+		for (int partNo = 0; partNo < allPolishDictionaryEntryListPartitionsList.size(); ++partNo) {
+			String word2XmlFileName = String.format(word2XmlFileTemplate, partNo);
+
+			JMdict newJmdict = new JMdict();
+			
+			newJmdict.getEntryList().addAll(allPolishDictionaryEntryListPartitionsList.get(partNo));
+			
+			dictionaryHelper.saveJMdictAsXml(newJmdict, word2XmlFileName);			
+		}		
 		
 		return result;
 	}
