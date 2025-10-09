@@ -460,42 +460,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		return null;
 	}
-	
-	public KanjiKanaPair findKanjiKanaPair(List<KanjiKanaPair> kanjiKanaPairListforEntry, final String kanji, final String kana) {
-				
-		// odnalezienie wlaciwej pary			
-		Optional<KanjiKanaPair> KanjiKanaPairOptional = kanjiKanaPairListforEntry.stream().filter(kanjiKanaPair -> {
-			
-			String kanjiKanaPairKanji = kanjiKanaPair.getKanji();
-			
-			if (kanjiKanaPairKanji == null) {
-				kanjiKanaPairKanji = "-";
-			}
-
-			String kanjiKanaPairKana = kanjiKanaPair.getKana();
-							
-			//
-			
-			String kanji2 = kanji;
-			
-			if (kanji2 == null) {
-				kanji2 = "-";
-			}
-			
-			//
-										
-			return kanji2.equals(kanjiKanaPairKanji) == true && kana.equals(kanjiKanaPairKana) == true;
-			
-		}).findFirst();
 		
-		if (KanjiKanaPairOptional.isPresent() == true) {
-			return KanjiKanaPairOptional.get();
-			
-		} else {
-			return null;
-		}
-	}
-	
 	public List<KanjiKanaPair> getAllKanjiKanaPairListWithTheSameTranslate(Entry entry, String kanji, String kana) {
 		
 		// pobieramy wszystkie mozliwosci

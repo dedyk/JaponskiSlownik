@@ -3209,7 +3209,7 @@ public class WordGenerator {
 										
 										List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 										
-										KanjiKanaPair kanjiKanaPair = dictionary2Helper.findKanjiKanaPair(kanjiKanaPairList, 
+										KanjiKanaPair kanjiKanaPair = Dictionary2HelperCommon.findKanjiKanaPair(kanjiKanaPairList, 
 												polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getKanji(), polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getKana());
 										
 										List<String> newTranslatesInOldFormat = dictionary2Helper.generateTranslatesInOldFormat(kanjiKanaPair, null);
