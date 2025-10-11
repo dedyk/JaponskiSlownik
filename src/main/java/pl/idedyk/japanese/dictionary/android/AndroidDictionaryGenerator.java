@@ -189,7 +189,6 @@ public class AndroidDictionaryGenerator {
 		//JSONReaderWriter.writeJSONArrayToFile(new File(destinationJSONFileName), resultJSONArray);
 		
 		// generowanie mocy slow
-		//FM_FIXME: do zmiany
 		System.out.println("checkAndSavePolishJapaneseEntries: generateWordPowerCsv");
 
 		FileOutputStream outputPowerStream = new FileOutputStream(new File(destinationPowerFileName));
