@@ -28,7 +28,7 @@ public class Test8 {
 				continue;
 			}
 			
-            List<Dictionary2HelperCommon.KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entryFromPolishDictionary);
+            List<Dictionary2HelperCommon.KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entryFromPolishDictionary, false);
 
             // szukamy konkretnego znaczenia dla naszego slowa
             Dictionary2HelperCommon.KanjiKanaPair dictionaryEntry2KanjiKanaPair = Dictionary2HelperCommon.findKanjiKanaPair(kanjiKanaPairList, polishJapaneseEntry);

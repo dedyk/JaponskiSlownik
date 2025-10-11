@@ -142,6 +142,7 @@ public class AndroidDictionaryGenerator {
 		
 		// validate		
 		System.out.println("checkAndSavePolishJapaneseEntries: validatePolishJapaneseEntries");
+		
 		Validator.validatePolishJapaneseEntries(polishJapaneseEntries, hiraganaEntries, katakanaEntries, dictionaryHelper, dictionary2NameHelper, true);
 
 		System.out.println("checkAndSavePolishJapaneseEntries: detectDuplicatePolishJapaneseKanjiEntries");
@@ -206,6 +207,15 @@ public class AndroidDictionaryGenerator {
 		*/
 				
 		dictionaryHelper.validateAllPolishDictionaryEntryList();
+		
+		// dogenerowanie do nowego slownika slow, ktorych jeszcze tam nie ma
+		dictionaryHelper.generateMissingPolishEntriesFromOldPolishJapaneseDictionary(result);
+		
+		// dodanie roznych informacji ze starego slownika do nowego formatu
+		dictionaryHelper.addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(result);
+		
+		// wygenerowanie paru dodatkowych informacji
+		dictionaryHelper.generateAdditionalDatasForFinalDictionary();
 		
 		// pobieramy wszystkie slowa, ktore sa w nowym slowniku
 		List<Entry> allPolishDictionary2EntryList = dictionaryHelper.getAllPolishDictionaryEntryList();

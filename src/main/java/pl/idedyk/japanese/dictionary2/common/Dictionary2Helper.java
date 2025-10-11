@@ -8,7 +8,6 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -65,7 +64,9 @@ import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
 
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
+import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
+import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
@@ -93,6 +94,10 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSourceLsTypeEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSourceLsWaseiEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.OldPolishJapaneseDictionaryInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.OldPolishJapaneseDictionaryInfoAttributeListInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.OldPolishJapaneseDictionaryInfoEntriesInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
@@ -105,6 +110,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	private static final int CSV_COLUMNS = 11; 
+	private static final int GENERATED_ENTRY_ID_START = 7000001;
 	
 	private static Dictionary2Helper dictionary2Helper;
 	
@@ -447,53 +453,18 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		if (entryList.size() == 1) {
 						
 			// generowanie wszystkich kanji i ich czytan
-			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entryList.get(0));
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entryList.get(0), false);
 
 			return findKanjiKanaPair(kanjiKanaPairListforEntry, polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());			
 		}
 		
 		return null;
 	}
-	
-	public KanjiKanaPair findKanjiKanaPair(List<KanjiKanaPair> kanjiKanaPairListforEntry, final String kanji, final String kana) {
-				
-		// odnalezienie wlaciwej pary			
-		Optional<KanjiKanaPair> KanjiKanaPairOptional = kanjiKanaPairListforEntry.stream().filter(kanjiKanaPair -> {
-			
-			String kanjiKanaPairKanji = kanjiKanaPair.getKanji();
-			
-			if (kanjiKanaPairKanji == null) {
-				kanjiKanaPairKanji = "-";
-			}
-
-			String kanjiKanaPairKana = kanjiKanaPair.getKana();
-							
-			//
-			
-			String kanji2 = kanji;
-			
-			if (kanji2 == null) {
-				kanji2 = "-";
-			}
-			
-			//
-										
-			return kanji2.equals(kanjiKanaPairKanji) == true && kana.equals(kanjiKanaPairKana) == true;
-			
-		}).findFirst();
 		
-		if (KanjiKanaPairOptional.isPresent() == true) {
-			return KanjiKanaPairOptional.get();
-			
-		} else {
-			return null;
-		}
-	}
-	
 	public List<KanjiKanaPair> getAllKanjiKanaPairListWithTheSameTranslate(Entry entry, String kanji, String kana) {
 		
 		// pobieramy wszystkie mozliwosci
-		List<KanjiKanaPair> kanjiKanaPairList = getKanjiKanaPairListStatic(entry);
+		List<KanjiKanaPair> kanjiKanaPairList = getKanjiKanaPairListStatic(entry, false);
 		
 		// grupujemy po tych samyc tlumaczeniach
 		List<List<KanjiKanaPair>> kanjiKanaPairListGroupByTheSameTranslateListList = groupByTheSameTranslate(kanjiKanaPairList);
@@ -929,7 +900,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			for (Entry entry : entryList) {
 				
 				// generowanie wszystkich kanji i ich czytan
-				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 				
 				// chodzenie po wszystkich kanji i kana
 				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
@@ -980,7 +951,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			for (Entry entry : entryList) {
 				
 				// generowanie wszystkich kanji i ich czytan
-				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 				
 				// chodzenie po wszystkich kanji i kana
 				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
@@ -1032,7 +1003,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			for (Entry entry : entryList) {
 				
 				// generowanie wszystkich kanji i ich czytan
-				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+				List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 				
 				// chodzenie po wszystkich kanji i kana
 				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
@@ -2306,10 +2277,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return result;
 	}
 
-	public void fillDataFromOldPolishJapaneseDictionary(Entry entry, EntryAdditionalData entryAdditionalData) throws Exception {
+	public void fillDataFromOldPolishJapaneseDictionaryForWordGenerating(Entry entry, EntryAdditionalData entryAdditionalData) throws Exception {
 				
 		// generowanie wszystkich kanji i ich czytan
-		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 		
 		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, false);		
 		
@@ -2348,9 +2319,12 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		// wczytanie starego slownika i sche'owanie go		
 		Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache = oldWordGeneratorHelper.getPolishJapaneseEntriesCache();
-		
-		//
-				
+
+		return getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, polishJapaneseEntriesCache, throwErrorWhenDifferentGroup);		
+	}
+	
+	private List<PolishJapaneseEntry> getPolishJapaneseEntryListFromOldDictionary(Entry entry, List<KanjiKanaPair> kanjiKanaPairListforEntry, Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache, boolean throwErrorWhenDifferentGroup) throws Exception {
+						
 		// szukamy wszystkich slow ze starego slownika
 		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = new ArrayList<>();		
 				
@@ -2416,7 +2390,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	public boolean isExistsInOldPolishJapaneseDictionary(Entry entry) throws Exception {
 		
 		// generowanie wszystkich kanji i ich czytan
-		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 		
 		List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, true);
 		
@@ -2435,7 +2409,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		List<PolishJapaneseEntry> newOldPolishJapaneseEntryList = new ArrayList<>();
 		
 		// generowanie wszystkich kanji i ich czytan
-		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 				
 		// pobieramy liste 
 		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, true);		
@@ -2521,185 +2495,18 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}
 						
 			//
-			
-			// pobieranie wszystkich znaczen
-			List<Sense> kanjiKanaPairSenseList = kanjiKanaPair.getSenseList();
-			
-			// czesc wspolna	
-			
-			Collection<FieldEnum> fieldCommonList = null;
-			Collection<MiscEnum> miscCommonList = null;
-			Collection<DialectEnum> dialectCommonList = null;
-			Collection<String> languageSourceCommonList = null;
-			Collection<String> additionalInfoCommonList = null;
-			
-			// generowanie wspolnej czesci dla wszystkich znaczen
-			for (Sense currentSense : kanjiKanaPairSenseList) {
-
-				if (fieldCommonList == null) {
-					fieldCommonList = currentSense.getFieldList();
-					
-				} else {
-					fieldCommonList = CollectionUtils.intersection(fieldCommonList, currentSense.getFieldList());
-				}
-				
-				//
-				
-				if (miscCommonList == null) {
-					miscCommonList = currentSense.getMiscList();
-					
-				} else {
-					miscCommonList = CollectionUtils.intersection(miscCommonList, currentSense.getMiscList());
-				}
-				
-				//
-				
-				if (dialectCommonList == null) {
-					dialectCommonList = currentSense.getDialectList();
-					
-				} else {
-					dialectCommonList = CollectionUtils.intersection(dialectCommonList, currentSense.getDialectList());
-				}	
-				
-				//
-				
-				if (languageSourceCommonList == null) {
-					languageSourceCommonList = translateToPolishLanguageSourceList(currentSense.getLanguageSourceList());
-					
-				} else {
-					languageSourceCommonList = CollectionUtils.intersection(languageSourceCommonList, translateToPolishLanguageSourceList(currentSense.getLanguageSourceList()));
-				}
-				
-				//
-				
-				List<SenseAdditionalInfo> additionalPolInfoList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
-				
-				if (additionalInfoCommonList == null) {
-					additionalInfoCommonList = translateToPolishSenseAdditionalInfoList(additionalPolInfoList);
-					
-				} else {
-					additionalInfoCommonList = CollectionUtils.intersection(additionalInfoCommonList, translateToPolishSenseAdditionalInfoList(additionalPolInfoList));
-				}
-			}
 						
 			// generowanie docelowego tlumaczenia i info dla starej pozycji w starym slowniku
-			List<String> newPolishTranslateList = new ArrayList<>();			
-			List<String> newPolishAdditionalInfoList = new ArrayList<>();
+			CreateTranslatesAndAdditionalInfoForOldDictionaryEntryResult createTranslatesAndAdditionalInfoForOldDictionaryEntryResult = 
+					createTranslatesAndAdditionalInfoForOldDictionaryEntry(kanjiKanaPair);
 			
-			for (Sense currentSense : kanjiKanaPairSenseList) {
-				
-				List<SenseAdditionalInfo> additionalPolInfoList = currentSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
-				
-				//
-
-				List<FieldEnum> currentSenseFieldList = currentSense.getFieldList();
-				List<MiscEnum> currentSenseMiscList = currentSense.getMiscList();
-				List<DialectEnum> currentSenseDialectList = currentSense.getDialectList();
-				List<String> currentSenseLanguageSourceList = translateToPolishLanguageSourceList(currentSense.getLanguageSourceList());
-				List<String> currentSenseAdditionalInfoList = translateToPolishSenseAdditionalInfoList(additionalPolInfoList);
-				List<PartOfSpeechEnum> partOfSpeechList = currentSense.getPartOfSpeechList();
-				
-				
-				// wyliczenie roznic miedzy obecnym znaczeniem, a czescia wspolna dla wszystkich znaczen
-				Collection<FieldEnum> fieldEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseFieldList, fieldCommonList);
-				Collection<MiscEnum> miscEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseMiscList, miscCommonList);
-				Collection<DialectEnum> dialectEnumListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseDialectList, dialectCommonList);
-				Collection<String> languageSourceListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseLanguageSourceList, languageSourceCommonList);
-				Collection<String> senseAdditionalInfoListUniqueForCurrentSense = CollectionUtils.subtract(currentSenseAdditionalInfoList, additionalInfoCommonList);
-				
-				//
-								
-				List<Gloss> glossPolList = currentSense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
-				
-				for (Gloss currentPolGloss : glossPolList) {
-					
-					String currentPolGlossType = translateToPolishGlossType(currentPolGloss.getGType());
-					String currentPolGlossValue = currentPolGloss.getValue();
-					
-					//
-					
-					List<String> currentPolGlossPolishTranslate = new ArrayList<>();
-					
-					// dodajemy tlumaczenie
-					currentPolGlossPolishTranslate.add(currentPolGlossValue);
-					
-					// podtyp tlumaczenia
-					if (currentPolGlossType != null) {
-						currentPolGlossPolishTranslate.add(currentPolGlossType);
-					}
-					
-					// dziedzina
-					if (fieldEnumListUniqueForCurrentSense.size() > 0) {
-						currentPolGlossPolishTranslate.addAll(translateToPolishFieldEnumList(fieldEnumListUniqueForCurrentSense));						
-					}
-					
-					// rozne informacje
-					if (miscEnumListUniqueForCurrentSense.size() > 0) {
-						currentPolGlossPolishTranslate.addAll(translateToPolishMiscEnumList(filterPolishMiscEnumList(miscEnumListUniqueForCurrentSense)));
-					}
-					
-					// dialekt
-					if (dialectEnumListUniqueForCurrentSense.size() > 0) {
-						currentPolGlossPolishTranslate.addAll(translateToPolishDialectEnumList(dialectEnumListUniqueForCurrentSense));
-					}
-					
-					// informacje dodatkowe dla znaczenia
-					if (senseAdditionalInfoListUniqueForCurrentSense.size() > 0) {
-						currentPolGlossPolishTranslate.addAll(senseAdditionalInfoListUniqueForCurrentSense);
-					}
-					
-					// jezyk zrodlowy
-					if (languageSourceListUniqueForCurrentSense.size() > 0) {
-						currentPolGlossPolishTranslate.addAll(languageSourceListUniqueForCurrentSense);
-					}
-										
-					// generowanie tlumaczenia dla slowka
-					
-					// nowa pozycja w tlumaczeniu
-					newPolishTranslateList.add(joinStringForOldPolishJapaneseEntry(currentPolGlossPolishTranslate, true));
-				}
-				
-				// czesc mowy - tylko sprawdzenie
-				if (partOfSpeechList.size() > 0) {
-					translateToPolishPartOfSpeechEnum(partOfSpeechList);
-				}
-			}
-			
-			// informacje dodatkowe
-						
-			// dziedzina
-			if (fieldCommonList != null && fieldCommonList.size() > 0) {
-				newPolishAdditionalInfoList.addAll(translateToPolishFieldEnumList(fieldCommonList));						
-			}
-			
-			// rozne informacje
-			if (miscCommonList != null && miscCommonList.size() > 0) {
-				newPolishAdditionalInfoList.addAll(translateToPolishMiscEnumList(miscCommonList));
-			}
-			
-			// dialekt
-			if (dialectCommonList != null && dialectCommonList.size() > 0) {
-				newPolishAdditionalInfoList.addAll(translateToPolishDialectEnumList(dialectCommonList));
-			}
-			
-			// informacje dodatkowe dla znaczenia
-			if (additionalInfoCommonList != null && additionalInfoCommonList.size() > 0) {
-				newPolishAdditionalInfoList.addAll(additionalInfoCommonList);
-			}
-			
-			// jezyk zrodlowy
-			if (languageSourceCommonList != null && languageSourceCommonList.size() > 0) {
-				newPolishAdditionalInfoList.addAll(languageSourceCommonList);
-			}
-			
-			String newPolishAdditionalInfo = joinStringForOldPolishJapaneseEntry(newPolishAdditionalInfoList, false);
 
 			// aktualizacja wpisu
 			polishJapaneseEntry.setWordType(WordType.valueOf(kanjiKanaPair.getKanaType().name()));			
-			polishJapaneseEntry.setRomaji(kanjiKanaPair.romaji());
+			polishJapaneseEntry.setRomaji(kanjiKanaPair.getRomaji());
 			
-			polishJapaneseEntry.setTranslates(newPolishTranslateList);
-			polishJapaneseEntry.setInfo(newPolishAdditionalInfo);
+			polishJapaneseEntry.setTranslates(createTranslatesAndAdditionalInfoForOldDictionaryEntryResult.getNewPolishTranslateList());
+			polishJapaneseEntry.setInfo(createTranslatesAndAdditionalInfoForOldDictionaryEntryResult.getNewPolishAdditionalInfo());
 			
 			if (polishJapaneseEntry.getParseAdditionalInfoList().contains(ParseAdditionalInfo.DICTIONARY2_SOURCE) == false) {
 				polishJapaneseEntry.getParseAdditionalInfoList().add(ParseAdditionalInfo.DICTIONARY2_SOURCE);
@@ -2843,69 +2650,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 		
 		return null;
-	}
-
-	
-	private List<String> translateToPolishLanguageSourceList(Collection<LanguageSource> languageSourceList) {
-		
-		List<String> result = new ArrayList<>();
-		
-		for (LanguageSource languageSource : languageSourceList) {
-			
-			String languageCodeInPolish = translateToPolishLanguageCode(languageSource.getLang());
-			String languageValue = languageSource.getValue();
-			
-			if (StringUtils.isBlank(languageValue) == false) {
-				result.add(languageCodeInPolish + ": " + languageValue);
-				
-			} else {
-				result.add(translateToPolishLanguageCodeWithoutValue(languageSource.getLang()));
-			}
-		}
-		
-		return result;
-	}
-	
-	private List<String> translateToPolishSenseAdditionalInfoList(List<SenseAdditionalInfo> additionalPolInfoList) {
-				
-		List<String> result = new ArrayList<>();
-		
-		for (SenseAdditionalInfo senseAdditionalInfo : additionalPolInfoList) {
-			result.add(senseAdditionalInfo.getValue());
-		}
-		
-		return result;
-	}
-		
-	private String joinStringForOldPolishJapaneseEntry(List<String> list, boolean addBracket) {
-		
-		StringBuffer result = new StringBuffer();
-		
-		for (int idx = 0; idx < list.size(); ++idx) {
-			
-			String currentListElement = list.get(idx);
-			
-			if (idx == 0) {
-				result.append(currentListElement);
-				
-			} else if (idx == 1 && addBracket == true) {
-				result.append(" (");
-				result.append(currentListElement);
-				
-			} else if (idx >= 2 || addBracket == false) {
-				result.append("; ");
-				result.append(currentListElement);
-				
-			} else {
-				throw new RuntimeException();
-			}
-			
-			if (idx != 0 && idx == list.size() - 1 && addBracket == true) {
-				result.append(")");
-			}
-		}
-
-		return result.toString();
 	}
 	
 	public List<PolishJapaneseEntry> getOldPolishJapaneseEntriesList() throws Exception {
@@ -3190,7 +2934,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}			
 			
 			// generowanie wszystkich kanji i ich czytan
-			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry);
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 
 			// sprawdzenie, czy stary wpis w starym slowniku znajduje sie na liscie			
 			Optional<KanjiKanaPair> kanjiKanaPairForPolishJapaneseEntry = kanjiKanaPairListforEntry.stream().filter(kanjiKanaPair -> {
@@ -3629,12 +3373,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return false;
 	}
 	
-	public void generateMissingPolishEntriesFromOldPolishJapaneseDictionary() throws Exception {
-		// pobieramy wpisy ze starego slownika
-		List<PolishJapaneseEntry> oldPolishJapaneseEntriesList = getOldPolishJapaneseEntriesList();
+	public void generateMissingPolishEntriesFromOldPolishJapaneseDictionary(List<PolishJapaneseEntry> oldPolishJapaneseEntriesList) throws Exception {
+		
+		// tworzymy lokalny cache
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(oldPolishJapaneseEntriesList);
 		
 		// licznik wygenerowanych wpisow pochodzacych ze starego slownika, a ktorego nie ma w angielskim slowniku
-		int generatedEntryIdCounter = 7000001;		
+		int generatedEntryIdCounter = GENERATED_ENTRY_ID_START;		
 		
 		// obiekt do mapowania typow
 		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
@@ -3701,6 +3446,12 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				newGeneratedEntry.getSenseList().add(sense);
 				
+				// dodanie informacji, ze tego slowka nie ma w slowniku JMdict i zostalo przeniesione ze starego slownika
+				cgtOldPolishJapaneseDictionaryInfo(newGeneratedEntry).setNotExistsInJMdict(true);
+				
+				// dodanie kilku informacji ze starego slownika
+				addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(newGeneratedEntry, Arrays.asList(polishJapaneseEntry));
+				
 				// dodajemy wygenerowany wpis
 				addEntryToPolishDictionary(newGeneratedEntry);
 								
@@ -3730,6 +3481,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			System.out.println("WARNING: Generate sense for entry with id: " + entryId + " from old polish dictionary.");
 			
+			// generowanie wszystkich kanji i ich czytan
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
+			
 			// wygenerowanie wirtualnego polskiego wpisu ze starego slownika
 			entry = (Entry)SerializationUtils.clone(entry);
 			
@@ -3739,6 +3493,29 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			for (ReadingInfo readingInfo : entryReadingInfoList) {
 				if (readingInfo.getKana().getKanaType() == null) {
 					readingInfo.getKana().setKanaType(getKanaType(readingInfo.getKana().getValue()));
+				}
+				
+				if (readingInfo.getKana().getRomaji() == null) {
+					// szukamy takiej kombinacji, aby kana bylo to samo
+					KanjiKanaPair kanjiKanaPair = kanjiKanaPairListforEntry.stream().filter(f -> f.getKana().equals(readingInfo.getKana().getValue()) == true).findFirst().orElse(null);
+					
+					if (kanjiKanaPair != null) {						
+						// szukamy wpisu w starym slowniku, aby pobrac z tego romaji
+						List<PolishJapaneseEntry> polishJapaneseEntryForKanjiKanaPair = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, kanjiKanaPair.getKanji(), kanjiKanaPair.getKana());
+						
+						if (	polishJapaneseEntryForKanjiKanaPair != null && polishJapaneseEntryForKanjiKanaPair.size() > 0 && 
+								readingInfo.getKana().getValue().equals(polishJapaneseEntryForKanjiKanaPair.get(0).getKana()) == true) { // mamy cos
+							
+							readingInfo.getKana().setRomaji(polishJapaneseEntryForKanjiKanaPair.get(0).getRomaji());
+							
+						} else {
+							try {
+								readingInfo.getKana().setRomaji(kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana().getValue(), kanaHelper.getKanaCache(), true)));
+							} catch (Exception e) {
+								// noop
+							}
+						}
+					}					
 				}
 			}
 			
@@ -3766,6 +3543,322 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			// dodajemy wygenerowany wpis
 			addEntryToPolishDictionary(entry);			
+		}
+	}
+	
+	public void addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(List<PolishJapaneseEntry> oldPolishJapaneseEntriesList) throws Exception {
+		
+		// pobieramy wszystkie polskie wpisy
+		List<Entry> allPolishDictionaryEntryList = getAllPolishDictionaryEntryList();
+		
+		// tworzymy lokalny cache
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(oldPolishJapaneseEntriesList);
+		
+		for (Entry entry : allPolishDictionaryEntryList) {
+			
+			if (Boolean.TRUE.equals(cgtOldPolishJapaneseDictionaryInfo(entry).isNotExistsInJMdict()) == true) { // to slownko zostalo dodatkowo dodane, gdyz nie ma go w Jmdict
+				continue;
+			}
+			
+			// generowanie wszystkich kanji i ich czytan
+			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
+			
+			// pobieramy wszystkie slowa ze starego slownika
+			List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, cachePolishJapaneseEntryList, false);
+			
+			// dodanie dodatkowych informacji
+			addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(entry, polishJapaneseEntryListFromOldDictionary);
+		}
+	}
+	
+	public void generateAdditionalDatasForFinalDictionary() throws Exception {
+		
+		// pobieramy wszystkie polskie wpisy
+		List<Entry> allPolishDictionaryEntryList = getAllPolishDictionaryEntryList();
+		
+		for (Entry entry : allPolishDictionaryEntryList) {
+			
+			// noop
+			entry.getEntryId();
+			
+			/*
+			// wygenerowanie wszystkich widocznych par kanji i kana
+			List<KanjiKanaPair> kanjiKanaPairList = getKanjiKanaPairList(entry, true);
+			
+			// wygenerowanie uniqueKanjiKanaKey
+			Set<String> kanjiUnique = new LinkedHashSet<>();
+			Set<String> kanaUnique = new LinkedHashSet<>();
+			
+			for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+				
+				String kanji = kanjiKanaPair.getKanji();
+				String kana = kanjiKanaPair.getKana();
+				
+				if (kanji != null) {
+					kanjiUnique.add(kanji);
+				}
+				
+				kanaUnique.add(kana);				
+			}
+			
+			if (kanjiUnique.size() == 0) {
+				kanjiUnique.add("-");
+			}
+			
+			if (kanaUnique.size() == 0) {
+				kanaUnique.add("-");
+			}
+			
+			// unique Kanji/Kana Key
+			cgtMisc(entry).setUniqueKanjiKey(String.join(",", kanjiUnique));
+			cgtMisc(entry).setUniqueKanaKey(String.join(",", kanaUnique));
+			*/
+		}		
+	}
+	
+	private MiscInfo cgtMisc(Entry entry) {
+		MiscInfo misc = entry.getMisc();
+		
+		if (misc == null) {
+			misc = new MiscInfo();
+			
+			entry.setMisc(misc);
+		}
+		
+		return misc;
+	}
+	
+	private OldPolishJapaneseDictionaryInfo cgtOldPolishJapaneseDictionaryInfo(Entry entry) {
+		
+		MiscInfo misc = cgtMisc(entry);
+		
+		OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = misc.getOldPolishJapaneseDictionary();
+		
+		if (oldPolishJapaneseDictionary == null) {
+			oldPolishJapaneseDictionary = new OldPolishJapaneseDictionaryInfo();
+			
+			misc.setOldPolishJapaneseDictionary(oldPolishJapaneseDictionary);
+		}
+
+		return oldPolishJapaneseDictionary;
+	}
+	
+	private void addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(Entry entry, List<PolishJapaneseEntry> polishJapaneseEntryList) throws Exception {
+				
+		OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = cgtOldPolishJapaneseDictionaryInfo(entry);		
+		
+		if (oldPolishJapaneseDictionary.getEntries().size() == 0) {
+						
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+				OldPolishJapaneseDictionaryInfoEntriesInfo oldEntryInfo = new OldPolishJapaneseDictionaryInfoEntriesInfo();
+				
+				oldEntryInfo.setId(polishJapaneseEntry.getId());
+								
+				oldEntryInfo.setDictionaryEntryTypeList(polishJapaneseEntry.getDictionaryEntryTypeList().stream().map(m -> m.name()).collect(Collectors.joining(",")));
+								
+				if (polishJapaneseEntry.isKanjiExists() == true) {
+					oldEntryInfo.setKanji(polishJapaneseEntry.getKanji());
+				}
+				
+				oldEntryInfo.setKana(polishJapaneseEntry.getKana());
+				oldEntryInfo.setRomaji(polishJapaneseEntry.getRomaji());
+				
+				if (StringUtils.isBlank(polishJapaneseEntry.getPrefixKana()) == false) {
+					oldEntryInfo.setPrefixKana(polishJapaneseEntry.getPrefixKana());
+				}
+				
+				if (StringUtils.isBlank(polishJapaneseEntry.getPrefixRomaji()) == false) {
+					oldEntryInfo.setPrefixRomaji(polishJapaneseEntry.getPrefixRomaji());
+				}
+				
+				List<Attribute> uniqueKeyAttributeList = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.UNIQUE_KEY);
+				
+				if (uniqueKeyAttributeList != null && uniqueKeyAttributeList.size() > 0) {
+					oldEntryInfo.setUniqueKey(uniqueKeyAttributeList.get(0).getAttributeValue().get(0));	
+				}				
+				
+				oldPolishJapaneseDictionary.getEntries().add(oldEntryInfo);
+			}
+		}
+		
+		if (oldPolishJapaneseDictionary.getAttributeList().size() == 0) {
+			
+			// pakujemy wszystkie typy do jednego worka
+			AttributeList allAttributeList = new AttributeList();
+			
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+				
+				AttributeList attributeList = polishJapaneseEntry.getAttributeList();
+				List<Attribute> attributeListList = attributeList.getAttributeList();
+				
+				for (Attribute attribute : attributeListList) {
+					allAttributeList.addUniqueAttributeValue(attribute.getAttributeType(), attribute.getAttributeValue());
+				}
+			}
+			
+			for (int i = 0; i < allAttributeList.getAttributeList().size(); ++i) {
+				Attribute attribute = allAttributeList.getAttributeList().get(i);
+				
+				if (attribute.getAttributeType() == AttributeType.JMDICT_ENTRY_ID) { // to nie jest potrzebne
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.UNIQUE_KEY) { // to nie jest potrzebne
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.KANA_ALONE) { // to nie jest potrzebne
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.ARCHAIC) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}
+
+				if (attribute.getAttributeType() == AttributeType.OBSOLETE) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.VERB_TRANSITIVITY) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}
+
+				if (attribute.getAttributeType() == AttributeType.VERB_INTRANSITIVITY) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.ONAMATOPOEIC_OR_MIMETIC_WORD) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.ATEJI) { // to nie jest potrzebne, gdyz informacja i tak jest zapisana w entry
+					continue;
+				}				
+				
+				if (attribute.getAttributeType() == AttributeType.ALTERNATIVE) { // alternatyw nie bierzemy, gdyz zawsze sa w ramach tego samego entry
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.PRIORITY) { // za chwile bedzie specjalna obsluga dla priorytetow
+					continue;
+				}
+				
+				if (attribute.getAttributeType() == AttributeType.ANTONYM || attribute.getAttributeType() == AttributeType.RELATED) { // za chwile bedzie specjalna obsluga dla przeciwienstw i slowek powiazanych
+					continue;
+				}
+				
+				// standardowa obsluga				
+				OldPolishJapaneseDictionaryInfoAttributeListInfo oldPolishJapaneseDictionaryInfoAttributeListInfo = new OldPolishJapaneseDictionaryInfoAttributeListInfo();
+				
+				oldPolishJapaneseDictionaryInfoAttributeListInfo.setType(attribute.getAttributeType().name());
+				
+				if (attribute.getAttributeValue() != null) {
+					oldPolishJapaneseDictionaryInfoAttributeListInfo.setValue(Helper.convertListToString(attribute.getAttributeValue()));	
+				}			
+				
+				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoAttributeListInfo);
+			}
+			
+			// wyliczanie priorytetow, bierzemy te najmniejsza wartosc
+			List<Integer> priorityList = new ArrayList<>();
+			
+			for (int i = 0; i < allAttributeList.getAttributeList().size(); ++i) {
+				Attribute attribute = allAttributeList.getAttributeList().get(i);
+				
+				if (attribute.getAttributeType() == AttributeType.PRIORITY) {
+					priorityList.add(Integer.parseInt(attribute.getAttributeValue().get(0)));
+				}				
+			}			
+			
+			Collections.sort(priorityList);
+			
+			if (priorityList.size() > 0) {				
+				OldPolishJapaneseDictionaryInfoAttributeListInfo oldPolishJapaneseDictionaryInfoPriorityAttributeInfo = new OldPolishJapaneseDictionaryInfoAttributeListInfo();
+				
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setType(AttributeType.PRIORITY.name());
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setValue(String.valueOf(priorityList.get(0)));
+								
+				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoPriorityAttributeInfo);
+			}
+			
+			// specjalna obsluga dla przeciwienstw i slowek powiazanych
+			List<Integer> antonymEntryIds = new ArrayList<>();
+			List<Integer> relatedEntryIds = new ArrayList<>();
+			
+			for (int i = 0; i < allAttributeList.getAttributeList().size(); ++i) {
+				Attribute attribute = allAttributeList.getAttributeList().get(i);
+				
+				if (attribute.getAttributeType() == AttributeType.ANTONYM || attribute.getAttributeType() == AttributeType.RELATED) {					
+					// tutaj w starym slowniku zapisany jest identyfikator slowa, musimy zamienic to na entry id
+					Integer polishJapaneseId = Integer.parseInt(attribute.getAttributeValue().get(0));
+					
+					// pobieramy to slowo ze starego slownika
+					PolishJapaneseEntry polishJapaneseEntry = oldWordGeneratorHelper.getPolishJapaneseEntriesList().get(polishJapaneseId - 1);
+					
+					if (polishJapaneseEntry != null) {
+						// dla pewnosci sprawdzamy jeszcze id
+						if (polishJapaneseEntry.getId() != polishJapaneseId) {
+							throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie
+						}
+						
+						Integer entryId = polishJapaneseEntry.getGroupIdFromJmedictRawDataList();
+						
+						if (entryId != null) { // mamy entry id
+							if (attribute.getAttributeType() == AttributeType.ANTONYM && antonymEntryIds.contains(entryId) == false) {
+								antonymEntryIds.add(entryId);
+							}
+							
+							if (attribute.getAttributeType() == AttributeType.RELATED && relatedEntryIds.contains(entryId) == false) {
+								relatedEntryIds.add(entryId);
+							}							
+						}						
+					}					
+				}
+			}
+			
+			for (Integer entryId : antonymEntryIds) {
+				OldPolishJapaneseDictionaryInfoAttributeListInfo oldPolishJapaneseDictionaryInfoPriorityAttributeInfo = new OldPolishJapaneseDictionaryInfoAttributeListInfo();
+				
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setType(AttributeType.ANTONYM.name());
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setValue(String.valueOf(entryId));
+								
+				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoPriorityAttributeInfo);
+			}
+			
+			for (Integer entryId : relatedEntryIds) {
+				OldPolishJapaneseDictionaryInfoAttributeListInfo oldPolishJapaneseDictionaryInfoPriorityAttributeInfo = new OldPolishJapaneseDictionaryInfoAttributeListInfo();
+				
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setType(AttributeType.RELATED.name());
+				oldPolishJapaneseDictionaryInfoPriorityAttributeInfo.setValue(String.valueOf(entryId));
+								
+				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoPriorityAttributeInfo);
+			}
+		}
+		
+		if (oldPolishJapaneseDictionary.getGroupsList().size() == 0) {
+			
+			LinkedHashSet<String> uniqueGroupsList = new LinkedHashSet<>();
+			
+			// pakujemy wszystkie typy do jednego worka
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+				polishJapaneseEntry.getGroups().forEach(c -> uniqueGroupsList.add(c.name()));				
+			}
+			
+			oldPolishJapaneseDictionary.getGroupsList().addAll(uniqueGroupsList);			
+		}
+		
+		if (oldPolishJapaneseDictionary.getExampleSentenceGroupIdsList().size() == 0) {
+			
+			LinkedHashSet<String> uniqueExampleSentenceGroupIdsList = new LinkedHashSet<>();
+			
+			// pakujemy wszystkie typy do jednego worka
+			for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntryList) {
+				if (polishJapaneseEntry.getExampleSentenceGroupIdsList() != null) {
+					polishJapaneseEntry.getExampleSentenceGroupIdsList().forEach(c -> uniqueExampleSentenceGroupIdsList.add(c));
+				}
+			}
+			
+			oldPolishJapaneseDictionary.getExampleSentenceGroupIdsList().addAll(uniqueExampleSentenceGroupIdsList);						
 		}
 	}
 

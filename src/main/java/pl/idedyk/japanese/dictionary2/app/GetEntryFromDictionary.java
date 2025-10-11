@@ -219,7 +219,7 @@ public class GetEntryFromDictionary {
 				dictionaryHelper.createEmptyPolishSense(jmdictEntry);
 				
 				// pobranie ze starego slownika interesujacych danych (np. romaji)
-				dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(jmdictEntry, entryAdditionalData);
+				dictionaryHelper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
 				
 				result.add(jmdictEntry);				
 			}
@@ -246,7 +246,7 @@ public class GetEntryFromDictionary {
 					dictionaryHelper.createEmptyPolishSense(entry);
 					
 					// pobranie ze starego slownika interesujacych danych (np. romaji)
-					dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry, entryAdditionalData);
+					dictionaryHelper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(entry, entryAdditionalData);
 					
 					result.add(entry);				
 				}				

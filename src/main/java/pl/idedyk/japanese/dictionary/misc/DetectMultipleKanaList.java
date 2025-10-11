@@ -46,7 +46,7 @@ public class DetectMultipleKanaList {
 		for (Entry entry : jmdictEntryList) {
 			
 			// wyliczamy pary
-			List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+			List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 			
 			for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 				
@@ -118,7 +118,7 @@ public class DetectMultipleKanaList {
 					for (Entry entry : groupEntryList) {
 						
 						// wyliczamy pary
-						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 						
 						for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 							

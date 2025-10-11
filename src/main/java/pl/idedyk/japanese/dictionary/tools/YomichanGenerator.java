@@ -499,7 +499,7 @@ public class YomichanGenerator {
 				termBankEntryList = new ArrayList<>();
 								
 				// laczenie kanji, kana i znaczen w pary
-				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(jmdictEntry);
+				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(jmdictEntry, false);
 				
 				// wyszukanie konkretnego znaczenia dla naszeo slowka
 				KanjiKanaPair kanjiKanaPair = Dictionary2HelperCommon.findKanjiKanaPair(kanjiKanaPairList, polishJapaneseEntry);

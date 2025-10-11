@@ -397,7 +397,7 @@ public class CsvReaderWriter {
 	}
 	
 	public static void generateWordPowerCsv(OutputStream out, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
-		
+				
 		TreeMap<Integer, List<PolishJapaneseEntry>> groupByPower = new TreeMap<>();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {

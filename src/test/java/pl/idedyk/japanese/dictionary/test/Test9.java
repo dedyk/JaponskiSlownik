@@ -1,8 +1,15 @@
 package pl.idedyk.japanese.dictionary.test;
 
+import java.util.List;
+import java.util.TreeMap;
+
+import pl.idedyk.japanese.dictionary.common.Helper;
+import pl.idedyk.japanese.dictionary.dto.EDictEntry;
+import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.EdictReader;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
@@ -15,9 +22,16 @@ public class Test9 {
 		String word2XmlFileTemplate = "/tmp/a/test.xml_%d";
 		
 		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
+		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
 		
-		dictionaryHelper.generateMissingPolishEntriesFromOldPolishJapaneseDictionary();
-
+		List<PolishJapaneseEntry> polishJapaneseEntries = dictionaryHelper.getOldPolishJapaneseEntriesList();
+		
+		Helper.generateAdditionalInfoFromEdict(dictionaryHelper, jmedictCommon, polishJapaneseEntries);
+		Helper.generateUniqueKeys(polishJapaneseEntries);
+		
+		dictionaryHelper.generateMissingPolishEntriesFromOldPolishJapaneseDictionary(polishJapaneseEntries);
+		dictionaryHelper.addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(polishJapaneseEntries);
+		
 		List<Entry> allPolishDictionaryEntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
 		dictionaryHelper.sortJMdict(allPolishDictionaryEntryList);
 		

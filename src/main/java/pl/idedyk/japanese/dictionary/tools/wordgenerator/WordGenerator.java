@@ -188,7 +188,7 @@ public class WordGenerator {
 						
 						for (Entry entry : entryList) {
 							
-							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 							
 							PolishJapaneseEntry polishJapaneseEntry = dictionary2Helper.generateOldPolishJapaneseEntry(entry, kanjiKanaPairList.get(0), Integer.valueOf(currentCommonWordId), null);
 											
@@ -264,7 +264,7 @@ public class WordGenerator {
 						dictionary2Helper.createEmptyPolishSense(jmdictEntry);
 						
 						// pobranie ze starego slownika interesujacych danych (np. romaji)
-						dictionary2Helper.fillDataFromOldPolishJapaneseDictionary(jmdictEntry, entryAdditionalData);
+						dictionary2Helper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
 
 						// dodajemy do listy
 						resultDictionary2EntryList.add(jmdictEntry);
@@ -415,7 +415,7 @@ public class WordGenerator {
 							}
 							
 							// generowanie par kanji, kana na entry
-							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(foundEntry);
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(foundEntry, false);
 																
 							// grupujemy po tych samych tlumaczenia
 							List<List<KanjiKanaPair>> groupByTheSameTranslate = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
@@ -579,7 +579,7 @@ public class WordGenerator {
 						dictionary2Helper.createEmptyPolishSense(jmdictEntry);
 						
 						// pobranie ze starego slownika interesujacych danych (np. romaji)
-						dictionary2Helper.fillDataFromOldPolishJapaneseDictionary(jmdictEntry, entryAdditionalData);
+						dictionary2Helper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
 
 						// dodajemy do listy
 						resultDictionary2EntryList.add(jmdictEntry);
@@ -672,7 +672,7 @@ public class WordGenerator {
 							}
 							
 							// generowanie par kanji, kana na entry
-							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(foundEntry);
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(foundEntry, false);
 																
 							// grupujemy po tych samych tlumaczenia
 							List<List<KanjiKanaPair>> groupByTheSameTranslate = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
@@ -760,7 +760,7 @@ public class WordGenerator {
 						for (Entry foundEntry : foundEntryList) {
 							
 							// generowanie par kanji, kana na entry
-							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(foundEntry);
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(foundEntry, false);
 									
 							BEFORE_KANJI_KANA_PAIR_LIST:
 							for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
@@ -871,7 +871,7 @@ public class WordGenerator {
 							}
 							
 							// generowanie par kanji, kana na entry
-							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(foundEntry);
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(foundEntry, false);
 							
 							// grupujemy po tych samych tlumaczenia
 							List<List<KanjiKanaPair>> groupByTheSameTranslate = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
@@ -1104,7 +1104,7 @@ public class WordGenerator {
 						
 						Entry entry = dictionary2Helper.getJMdictEntry(polishJapaneseEntry.getGroupIdFromJmedictRawDataList());
 						
-						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 						
 						List<List<KanjiKanaPair>> kanjiKanaPairListGroupByTheSameTranslateListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
 						
@@ -1198,7 +1198,7 @@ public class WordGenerator {
 				for (Entry entry : entryList) {
 					
 					// generowanie par kanji, kana na entry
-					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry);
+					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, false);
 					
 					List<List<KanjiKanaPair>> groupByTheSameTranslateKanjiKanaList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
 													
@@ -1359,7 +1359,7 @@ public class WordGenerator {
 				for (Entry entry : entryList) {
 					
 					// wyliczamy pary
-					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 										
 					List<List<KanjiKanaPair>> groupByTheSameTranslateGroupEntryList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
 								
@@ -1472,7 +1472,7 @@ public class WordGenerator {
 					Integer entryId = entry.getEntryId();
 					
 					// generowanie wszystkich slow
-					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 					
 					int kanjiKanaPairListCount = kanjiKanaPairList.size();
 					
@@ -1639,7 +1639,7 @@ public class WordGenerator {
 							}							
 							
 							// generowanie par kanji, kana na entry
-							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry);
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, false);
 														
 							// sprawdzenie, czy to slowo juz wystepuje
 							List<PolishJapaneseEntry> alreadyExistsPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(wordGeneratorHelper.getPolishJapaneseEntriesCache(), 
@@ -1759,7 +1759,7 @@ public class WordGenerator {
 					
 					for (Entry entry : entryListForKanji) {
 						
-						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 						
 						List<List<KanjiKanaPair>> groupByTheSameTranslateListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
 																
@@ -1847,7 +1847,7 @@ public class WordGenerator {
 					
 					for (Entry entry : entryListForKana) {
 						
-						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 						
 						List<List<KanjiKanaPair>> groupByTheSameTranslateListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
 																
@@ -2185,7 +2185,7 @@ public class WordGenerator {
 											}
 										}
 										
-										List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+										List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 
 										// grupujemy po tych samych tlumaczenia
 										List<List<KanjiKanaPair>> groupByTheSameTranslateKanjiKanaList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
@@ -2379,7 +2379,7 @@ public class WordGenerator {
 								
 							}
 														
-							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+							List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 							
 							// grupujemy po tych samych tlumaczenia
 							List<List<KanjiKanaPair>> groupByTheSameTranslateEntryList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
@@ -2581,7 +2581,7 @@ public class WordGenerator {
 												
 											}
 											
-											List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(currentFoundEntry);
+											List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(currentFoundEntry, false);
 																															
 											// grupujemy po tych samych tlumaczenia
 											List<List<KanjiKanaPair>> groupByTheSameTranslateKanjiKanaListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
@@ -2969,7 +2969,7 @@ public class WordGenerator {
 									continue;
 								}
 
-								List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entryListForPolishJapaneseEntry.get(0));
+								List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entryListForPolishJapaneseEntry.get(0), false);
 								
 								List<List<KanjiKanaPair>> groupByTheSameTranslateList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
 																								
@@ -3207,9 +3207,9 @@ public class WordGenerator {
 									
 									for (Entry entry : polishJapaneseEntryAndGroupEntryListWrapper.entryList) {
 										
-										List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+										List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 										
-										KanjiKanaPair kanjiKanaPair = dictionary2Helper.findKanjiKanaPair(kanjiKanaPairList, 
+										KanjiKanaPair kanjiKanaPair = Dictionary2HelperCommon.findKanjiKanaPair(kanjiKanaPairList, 
 												polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getKanji(), polishJapaneseEntryAndGroupEntryListWrapper.polishJapaneseEntry.getKana());
 										
 										List<String> newTranslatesInOldFormat = dictionary2Helper.generateTranslatesInOldFormat(kanjiKanaPair, null);
@@ -3277,7 +3277,7 @@ public class WordGenerator {
 							dictionary2Helper.createEmptyPolishSense(jmdictEntry);
 							
 							// pobranie ze starego slownika interesujacych danych (np. romaji)
-							dictionary2Helper.fillDataFromOldPolishJapaneseDictionary(jmdictEntry, entryAdditionalData);
+							dictionary2Helper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
 
 							// dodajemy do listy
 							resultDictionary2EntryList.add(jmdictEntry);
@@ -4052,7 +4052,7 @@ public class WordGenerator {
 						
 						Entry entry = entryList.get(0);
 						
-						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+						List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 
 						// grupujemy po tych samych tlumaczeniach
 						List<List<KanjiKanaPair>> groupByTheSameTranslateKanjiKanaList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
@@ -4242,7 +4242,7 @@ public class WordGenerator {
 						dictionaryHelper.createEmptyPolishSense(entry);
 						
 						// pobranie ze starego slownika interesujacych danych (np. romaji)
-						dictionaryHelper.fillDataFromOldPolishJapaneseDictionary(entry, entryAdditionalData);
+						dictionaryHelper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(entry, entryAdditionalData);
 						
 						// dodajemy do listy
 						resultDictionary2EntryList.add(entry);
@@ -4588,7 +4588,7 @@ public class WordGenerator {
 				BEFORE_FOR:
 				for (Entry entry : foundEntryList) {
 					
-					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry);
+					List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(entry, false);
 					
 					for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 						

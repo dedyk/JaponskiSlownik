@@ -10,9 +10,11 @@ import org.apache.commons.lang.StringUtils;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.example.ExampleManager;
 import pl.idedyk.japanese.dictionary.api.example.dto.ExampleGroupTypeElements;
+import pl.idedyk.japanese.dictionary.api.example.dto.ExampleRequest;
 import pl.idedyk.japanese.dictionary.api.example.dto.ExampleResult;
 import pl.idedyk.japanese.dictionary.api.gramma.GrammaConjugaterManager;
 import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateGroupTypeElements;
+import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateRequest;
 import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateResult;
 import pl.idedyk.japanese.dictionary.api.gramma.dto.GrammaFormConjugateResultType;
 import pl.idedyk.japanese.dictionary.api.keigo.KeigoHelper;
@@ -73,7 +75,7 @@ public class GrammaExampleShower {
 		Map<GrammaFormConjugateResultType, GrammaFormConjugateResult> grammaFormCache = new HashMap<GrammaFormConjugateResultType, GrammaFormConjugateResult>();
 
 		// wyliczenie form gramatycznych
-		List<GrammaFormConjugateGroupTypeElements> grammaConjufateResult = GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, polishJapaneseEntryOptional.get(), grammaFormCache, forceDictionaryEntryType, true);
+		List<GrammaFormConjugateGroupTypeElements> grammaConjufateResult = GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, new GrammaFormConjugateRequest(polishJapaneseEntryOptional.get()), grammaFormCache, forceDictionaryEntryType, true);
 		
 		// wypisanie na ekranie
 		System.out.println("+++ Formy gramatyczne +++\n");
@@ -102,7 +104,7 @@ public class GrammaExampleShower {
 		}
 		
 		// wyliczenie przykladow
-		List<ExampleGroupTypeElements> examples = ExampleManager.getExamples(keigoHelper, polishJapaneseEntryOptional.get(), grammaFormCache, forceDictionaryEntryType, true);
+		List<ExampleGroupTypeElements> examples = ExampleManager.getExamples(keigoHelper, new ExampleRequest(polishJapaneseEntryOptional.get()), grammaFormCache, forceDictionaryEntryType, true);
 		
 		// wypisanie na ekranie
 		System.out.println("+++ Przykłady +++\n");
