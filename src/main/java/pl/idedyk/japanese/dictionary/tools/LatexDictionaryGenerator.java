@@ -22,9 +22,10 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
@@ -180,19 +181,32 @@ public class LatexDictionaryGenerator {
 			//if (counter > 10) {
 			//	break;
 			//}
-			
-			JMdict.Entry jmdictEntry = null;
-			
+						
 			// sprawdzenie, czy wystepuje slowo w formacie JMdict
 			// pobieramy entry id
+			KanjiKanaPair kanjiKanaPair = null;
+			
 			Integer entryId = polishJapaneseEntry.getJmdictEntryId();
 			
 			if (entryId != null) {
-				// pobieramy z bazy danych
-				jmdictEntry = dictionaryHelper.getEntryFromPolishDictionary(entryId);				
+				pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry jmdictEntry = dictionaryHelper.getEntryFromPolishDictionary(entryId);
+				
+				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(jmdictEntry, false);
+				
+				// szukamy odpowiednika KanjiKanaPair
+				kanjiKanaPair = Dictionary2HelperCommon.findKanjiKanaPair(kanjiKanaPairList, polishJapaneseEntry);
+				
+				// sprawdzenie, czy to nie jest search only kanji lub kana, takich nie pokazujemy
+				if (kanjiKanaPair.getKanjiInfo() != null && kanjiKanaPair.getKanjiInfo().getKanjiAdditionalInfoList().contains(KanjiAdditionalInfoEnum.SEARCH_ONLY_KANJI_FORM) == true) {
+					continue;
+				}
+				
+				if (kanjiKanaPair.getReadingInfo().getReadingAdditionalInfoList().contains(ReadingAdditionalInfoEnum.SEARCH_ONLY_KANA_FORM) == true) {
+					continue;
+				}				
 			}
 						
-			result.add(generateDictionaryEntry(polishJapaneseEntry, jmdictEntry));
+			result.add(generateDictionaryEntry(polishJapaneseEntry, kanjiKanaPair));
 			
 			//counter++;			
 		}			
@@ -200,11 +214,11 @@ public class LatexDictionaryGenerator {
 		result.add("\\end{multicols}\n\n");
 	}
 	
-	private static String generateDictionaryEntry(PolishJapaneseEntry polishJapaneseEntry, JMdict.Entry jmdictEntry) {
+	private static String generateDictionaryEntry(PolishJapaneseEntry polishJapaneseEntry, KanjiKanaPair kanjiKanaPair) {
 		
 		StringBuffer result = new StringBuffer();
 				
-		if (jmdictEntry == null) { // stary sposob generowania
+		if (kanjiKanaPair == null) { // stary sposob generowania
 						
 			// translates, info
 			
@@ -316,14 +330,8 @@ public class LatexDictionaryGenerator {
 				result.append(escapeLatexChars(info));			
 			}
 			
-		} else if (jmdictEntry != null) { // nowy sposob generowania
+		} else if (kanjiKanaPair != null) { // nowy sposob generowania
 			
-			// laczenie kanji, kana i znaczen w pary
-			List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(jmdictEntry, false);
-			
-			// wyszukanie konkretnego znaczenia dla naszeo slowka
-			KanjiKanaPair kanjiKanaPair = Dictionary2HelperCommon.findKanjiKanaPair(kanjiKanaPairList, polishJapaneseEntry);
-
 			// generowanie znaczenia
 			KanjiInfo kanjiInfo = kanjiKanaPair.getKanjiInfo();
 			ReadingInfo readingInfo = kanjiKanaPair.getReadingInfo();
