@@ -1,5 +1,7 @@
-300001,WORD_NOUN,,HIRAGANA,,,横断検索,おうだんけんさく,,oudan kensaku,"wyszukiwanie krzyżowe
-przeszukiwanie wielu baz danych jednocześnie",informatyka,DICTIONARY2_SOURCE,,GroupId: 2860872
+300001,WORD_NOUN,,HIRAGANA,,,横断検索,おうだんけんさく,,oudan kensaku,"wyszukiwanie federacyjne
+wyszukiwanie międzybazowe
+wyszukiwanie wielobazowe
+wyszukiwanie w wielu bazach danych jednocześnie za pomocą jednego zapytania",informatyka,DICTIONARY2_SOURCE,,GroupId: 2860872
 300002,WORD_NOUN,,HIRAGANA,,,再帰的頭字語,さいきてきとうじご,,saikiteki toujigo,akronim rekurencyjny,,DICTIONARY2_SOURCE,,GroupId: 2860874
 300003,WORD_NOUN,,KATAKANA,,,-,ストリートピアノ,,sutoriito piano,pianino uliczne,ang: street piano,DICTIONARY2_SOURCE,,GroupId: 2860877
 300004,WORD_NOUN,,KATAKANA,,,-,ストリート・ピアノ,,sutoriito piano,pianino uliczne,ang: street piano,DICTIONARY2_SOURCE,,GroupId: 2860877
@@ -3085,7 +3087,8 @@ NPB","nazwa organizacji; zawodowa liga baseballu w Japonii, lokalnie nazywana Pu
 302077,WORD_NOUN,,KATAKANA,,,-,アデロール,,aderooru,Adderall,nazwa produktu; nazwa handlowa środka farmaceutycznego stosowanego jako lek pomocniczy w leczeniu nadpobudliwości psychoruchowej i zaburzeń uwagi,DICTIONARY2_SOURCE,,GroupId: 5746668
 302078,WORD_NOUN,,KATAKANA,,,ＮＳＣ,エン・エス・シー,,en'esushii,"Yoshimoto New Star Creation (szkoła komediowa założona przez Yoshimoto Kogyo)
 Akademia Yoshimoto
-NSC",nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5746671
+NSC",nazwa organizacji,DICTIONARY2_SOURCE,"DUPLICATE 317016
+DUPLICATE 317017",GroupId: 5746671
 302079,WORD_NOUN,,HIRAGANA,,,吉本総合芸能学院,よしもとそうごうげいのうがくいん,,yoshimoto sougou geinou gakuin,"Yoshimoto New Star Creation (szkoła komediowa założona przez Yoshimoto Kogyo)
 Akademia Yoshimoto
 NSC",nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5746672
@@ -23863,8 +23866,9 @@ w każdym przypadku
 bez względu na to, jak się sprawy potoczą
 w którąkolwiek stronę to pójdzie",,DICTIONARY2_SOURCE,,GroupId: 2864524
 310595,WORD_NOUN,,KATAKANA,,,-,クレプトクラット,,kureputokuratto,kleptokrata,"osoba będąca częścią systemu, w którym władza wykorzystywana jest w celu wzbogacenia się",DICTIONARY2_SOURCE,,GroupId: 2864530
-310596,WORD_NOUN,,KATAKANA,,,ＳＥＳ,エスイーエス,,esuiiesu,"specjalista ds. wyszukiwarek (ang: search engine specialist, SES)
-usługa inżynierii systemowej (ang: system engineering service, SES)",,DICTIONARY2_SOURCE,,GroupId: 2864532
+310596,WORD_NOUN,,KATAKANA,,,ＳＥＳ,エスイーエス,,esu ii esu,"specjalista ds. wyszukiwarek (ang: search engine specialist, SES)
+usługa inżynierii systemowej (informatyka; ang: system engineering service)
+SES (informatyka; ang: system engineering service)",,DICTIONARY2_SOURCE,DUPLICATE 35400,GroupId: 2864532
 310597,WORD_NOUN,,KATAKANA,,,-,サーチエンジンスペシャリスト,,saachi enjin supesharisuto,specjalista ds. wyszukiwarek,"ang: search engine specialist, SES",DICTIONARY2_SOURCE,,GroupId: 2864533
 310598,WORD_NOUN,,KATAKANA,,,-,サーチ・エンジン・スペシャリスト,,saachi enjin supesharisuto,specjalista ds. wyszukiwarek,"ang: search engine specialist, SES",DICTIONARY2_SOURCE,,GroupId: 2864533
 310599,WORD_VERB_RU,,HIRAGANA,,,捏ね合わせる,こねあわせる,,kone awaseru,"ugniatać razem
@@ -23894,8 +23898,10 @@ strefa zamknięta",,DICTIONARY2_SOURCE,,GroupId: 2864535
 310607,WORD_NOUN,,HIRAGANA,,,漁舟,いさりぶね,,isari bune,łódź rybacka,archaizm,DICTIONARY2_SOURCE,DUPLICATE 123080,GroupId: 2864536
 310608,WORD_NOUN,,HIRAGANA,,,特許権侵害,とっきょけんしんがい,,tokkyoken shingai,"nadużycia patentowe
 naruszenie praw patentowych",,DICTIONARY2_SOURCE,,GroupId: 2864538
-310609,WORD_NOUN,,KATAKANA,,,-,システムエンジニアリングサービス,,shisutemu enjiniaringu saabisu,usługa inżynierii systemowej,"ang: system engineering service, SES",DICTIONARY2_SOURCE,,GroupId: 2864540
-310610,WORD_NOUN,,KATAKANA,,,-,システム・エンジニアリング・サービス,,shisutemu enjiniaringu saabisu,usługa inżynierii systemowej,"ang: system engineering service, SES",DICTIONARY2_SOURCE,,GroupId: 2864540
+310609,WORD_NOUN,,KATAKANA,,,-,システムエンジニアリングサービス,,shisutemu enjiniaringu saabisu,"usługa inżynierii systemowej
+SES",ang: system engineering service,DICTIONARY2_SOURCE,,GroupId: 2864540
+310610,WORD_NOUN,,KATAKANA,,,-,システム・エンジニアリング・サービス,,shisutemu enjiniaringu saabisu,"usługa inżynierii systemowej
+SES",ang: system engineering service,DICTIONARY2_SOURCE,,GroupId: 2864540
 310611,WORD_VERB_U,,HIRAGANA,,,変り行く,かわりゆく,,kawari yuku,"zmieniać (bit po bicie)
 przesuwać się stopniowo",formalny lub literacki termin,DICTIONARY2_SOURCE,,GroupId: 2864542
 310612,WORD_NOUN,,KATAKANA_HIRAGANA,,,ＤＤｏＳ攻撃,ディードスこうげき,,diidosu kougeki,atak DDoS,"informatyka; atak na system komputerowy lub usługę sieciową w celu uniemożliwienia działania poprzez zajęcie wszystkich wolnych zasobów, przeprowadzany równocześnie z wielu komputerów",DICTIONARY2_SOURCE,,GroupId: 2864543
@@ -36562,3 +36568,53 @@ odporność na erozję",,DICTIONARY2_SOURCE,,GroupId: 2867803
 receptywność",,DICTIONARY2_SOURCE,,GroupId: 2867808
 317011,WORD_NOUN,,HIRAGANA,,,電子受容体,でんしじゅようたい,,denshi juyoutai,akceptor elektronów,chemia,DICTIONARY2_SOURCE,,GroupId: 2867809
 317012,WORD_NOUN,,KATAKANA,,,-,ドーパント,,doopanto,domieszka,elektronika; ang: dopant,DICTIONARY2_SOURCE,,GroupId: 2867810
+317013,WORD_NOUN,,HIRAGANA_KATAKANA,,,峠バトル,とうげバトル,,touge batoru,wyścig uliczny przez przełęcz górską,,DICTIONARY2_SOURCE,,GroupId: 2867811
+317014,WORD_NOUN,,HIRAGANA,,,擦傷,さっしょう,,sasshou,otarcie,,DICTIONARY2_SOURCE,"DUPLICATE 38703
+DUPLICATE 38704",GroupId: 2867815
+317015,WORD_NOUN,,HIRAGANA,,,独占販売権,どくせんはんばいけん,,dokusen hanbaiken,"wyłączne prawa dystrybucji
+wyłączne prawa sprzedaży
+wyłączne prawa marketingowe",,DICTIONARY2_SOURCE,,GroupId: 2867816
+317016,WORD_NOUN,,KATAKANA,,,ＮＳＣ,エヌ・エス・シー,,enu esu shii,"Rada Bezpieczeństwa Narodowego (ang: National Security Council, NSC)
+Komisja Bezpieczeństwa Jądrowego (ang: Nuclear Safety Commission, NSC)",,DICTIONARY2_SOURCE,"DUPLICATE 302078
+DUPLICATE 317017",GroupId: 2867817
+317017,WORD_NOUN,,KATAKANA,,,ＮＳＣ,エヌエスシー,,enu esu shii,"Rada Bezpieczeństwa Narodowego (ang: National Security Council, NSC)
+Komisja Bezpieczeństwa Jądrowego (ang: Nuclear Safety Commission, NSC)",,DICTIONARY2_SOURCE,"DUPLICATE 302078
+DUPLICATE 317016",GroupId: 2867817
+317018,WORD_NOUN,,KATAKANA,,,-,プレイアブルキャラクター,,pureiaburu kyarakutaa,grywalna postać,np. w grze wideo lub RPG,DICTIONARY2_SOURCE,,GroupId: 2867818
+317019,WORD_NOUN,,KATAKANA,,,-,プレイアブル・キャラクター,,pureiaburu kyarakutaa,grywalna postać,np. w grze wideo lub RPG,DICTIONARY2_SOURCE,,GroupId: 2867818
+317020,WORD_NOUN,,KATAKANA,,,-,マネジメントバイアウト,,manejimento baiauto,wykup menedżerski,"finanse; sytuacja w której przedsiębiorstwo zostaje zakupione bądź wykupione przez zarządzającą nim kadrę kierowniczą, ang: management buyout, MBO",DICTIONARY2_SOURCE,,GroupId: 2867819
+317021,WORD_NOUN,,KATAKANA,,,-,マネジメント・バイアウト,,manejimento baiauto,wykup menedżerski,"finanse; sytuacja w której przedsiębiorstwo zostaje zakupione bądź wykupione przez zarządzającą nim kadrę kierowniczą, ang: management buyout, MBO",DICTIONARY2_SOURCE,,GroupId: 2867819
+317022,WORD_NOUN,,KATAKANA,,,-,マネージメントバイアウト,,maneejimento baiauto,wykup menedżerski,"finanse; sytuacja w której przedsiębiorstwo zostaje zakupione bądź wykupione przez zarządzającą nim kadrę kierowniczą, ang: management buyout, MBO",DICTIONARY2_SOURCE,,GroupId: 2867819
+317023,WORD_NOUN,,KATAKANA,,,ＭＢＯ,エム・ビー・オー,,emu bii oo,"zarządzanie przez cele (biznes; ang: management by objectives, MBO)
+wykup menedżerski (finanse; sytuacja w której przedsiębiorstwo zostaje zakupione bądź wykupione przez zarządzającą nim kadrę kierowniczą, ang: management buyout, MBO)",,DICTIONARY2_SOURCE,DUPLICATE 317024,GroupId: 2867820
+317024,WORD_NOUN,,KATAKANA,,,ＭＢＯ,エムビーオー,,emu bii oo,"zarządzanie przez cele (biznes; ang: management by objectives, MBO)
+wykup menedżerski (finanse; sytuacja w której przedsiębiorstwo zostaje zakupione bądź wykupione przez zarządzającą nim kadrę kierowniczą, ang: management buyout, MBO)",,DICTIONARY2_SOURCE,DUPLICATE 317023,GroupId: 2867820
+317025,WORD_NOUN,,HIRAGANA,,,不連続性,ふれんぞくせい,,furenzokusei,nieciągłóść,,DICTIONARY2_SOURCE,,GroupId: 2867821
+317026,WORD_NOUN,,HIRAGANA,,,臨時首都,りんじしゅと,,rinji shuto,tymczasowa stolica,,DICTIONARY2_SOURCE,,GroupId: 2867822
+317027,WORD_NOUN,,HIRAGANA,,,串刺し検索,くしざしけんさく,,kushizashi kensaku,"wyszukiwanie federacyjne
+wyszukiwanie międzybazowe
+wyszukiwanie wielobazowe
+wyszukiwanie w wielu bazach danych jednocześnie za pomocą jednego zapytania",informatyka,DICTIONARY2_SOURCE,,GroupId: 2867823
+317028,WORD_NOUN,,HIRAGANA,,,串刺検索,くしざしけんさく,,kushizashi kensaku,"wyszukiwanie federacyjne
+wyszukiwanie międzybazowe
+wyszukiwanie wielobazowe
+wyszukiwanie w wielu bazach danych jednocześnie za pomocą jednego zapytania",informatyka,DICTIONARY2_SOURCE,,GroupId: 2867823
+317029,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,目標による管理,もくひょうによるかんり,,mokuhyou ni yoru kanri,zarządzanie przez cele,"biznes; ang: management by objectives, MBO",DICTIONARY2_SOURCE,,GroupId: 2867824
+317030,WORD_ADJECTIVE_NA,,KATAKANA,,,-,プレイアブル,,pureiaburu,grywalny,"np. postać, demo i etc",DICTIONARY2_SOURCE,,GroupId: 2867825
+317031,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,血が引く,ちがひく,,chi ga hiku,"zbladnąć (np. ze strachu)
+stać się białym",,DICTIONARY2_SOURCE,,GroupId: 2867826
+317032,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,血がひく,ちがひく,,chi ga hiku,"zbladnąć (np. ze strachu)
+stać się białym",,DICTIONARY2_SOURCE,,GroupId: 2867826
+317033,WORD_NOUN,,HIRAGANA_KATAKANA,,,外傷後ストレス障害,がいしょうごストレスしょうがい,,gaishougo sutoresu shougai,"zespół stresu pourazowego
+zaburzenie stresowe pourazowe",medycyna,DICTIONARY2_SOURCE,,GroupId: 2867827
+317034,WORD_NOUN,,HIRAGANA,,,販売権,はんばいけん,,hanbaiken,"prawa sprzedaży
+prawa dystrybucji
+prawa marketingowe",,DICTIONARY2_SOURCE,,GroupId: 2867828
+317035,WORD_NOUN,,KATAKANA,,,-,ソバージュ,,sobaaju,"dzikie faliste włosy
+fryzura 'sauvage'",fra: sauvage,DICTIONARY2_SOURCE,,GroupId: 2867829
+317036,WORD_NOUN,,KATAKANA,,,-,ソヴァージュ,,sovaaju,"dzikie faliste włosy
+fryzura 'sauvage'",fra: sauvage,DICTIONARY2_SOURCE,,GroupId: 2867829
+317037,WORD_NOUN,,KATAKANA,,,-,フルチャトビウム,,furuchatobiumu,???,chemia; ang: kurchatovium,DICTIONARY2_SOURCE,,GroupId: 2867830
