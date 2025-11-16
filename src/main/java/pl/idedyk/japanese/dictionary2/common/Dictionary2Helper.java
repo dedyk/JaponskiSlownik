@@ -2282,7 +2282,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		// generowanie wszystkich kanji i ich czytan
 		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 		
-		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, false);		
+		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, false, false);		
 		
 		if (allPolishJapaneseEntriesForEntry.size() > 0) { // jezeli dany wpis juz jest w starym slowniku, mozemy przetworzyc te dane
 			
@@ -2315,15 +2315,16 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}		
 	}
 	
-	private List<PolishJapaneseEntry> getPolishJapaneseEntryListFromOldDictionary(Entry entry, List<KanjiKanaPair> kanjiKanaPairListforEntry, boolean throwErrorWhenDifferentGroup) throws Exception {
+	private List<PolishJapaneseEntry> getPolishJapaneseEntryListFromOldDictionary(Entry entry, List<KanjiKanaPair> kanjiKanaPairListforEntry, boolean throwErrorWhenPolishJapaneseEntryNotFound, boolean throwErrorWhenDifferentGroup) throws Exception {
 		
 		// wczytanie starego slownika i sche'owanie go		
 		Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache = oldWordGeneratorHelper.getPolishJapaneseEntriesCache();
 
-		return getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, polishJapaneseEntriesCache, throwErrorWhenDifferentGroup);		
+		return getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, polishJapaneseEntriesCache, throwErrorWhenPolishJapaneseEntryNotFound, throwErrorWhenDifferentGroup);		
 	}
 	
-	private List<PolishJapaneseEntry> getPolishJapaneseEntryListFromOldDictionary(Entry entry, List<KanjiKanaPair> kanjiKanaPairListforEntry, Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache, boolean throwErrorWhenDifferentGroup) throws Exception {
+	private List<PolishJapaneseEntry> getPolishJapaneseEntryListFromOldDictionary(Entry entry, List<KanjiKanaPair> kanjiKanaPairListforEntry, Map<String, List<PolishJapaneseEntry>> polishJapaneseEntriesCache,
+			boolean throwErrorWhenPolishJapaneseEntryNotFound, boolean throwErrorWhenDifferentGroup) throws Exception {
 						
 		// szukamy wszystkich slow ze starego slownika
 		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = new ArrayList<>();		
@@ -2332,6 +2333,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			// szukamy slowa ze starego slownika
 			List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(polishJapaneseEntriesCache, kanjiKanaPair.getKanji(), kanjiKanaPair.getKana());
+			
+			if (throwErrorWhenPolishJapaneseEntryNotFound == true && (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0)) {
+				throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue() + " - can't found in old dictionary");
+			}
 			
 			if (findPolishJapaneseEntryList == null) { // nie znaleziono
 				continue;
@@ -2377,6 +2382,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				}				
 			}
 			
+			if (throwErrorWhenPolishJapaneseEntryNotFound == true && polishJapaneseEntryForKanjiKanaPair == null) {
+				throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue() + " - can't found in old dictionary");
+			}
+			
 			if (polishJapaneseEntryForKanjiKanaPair == null) { // nie udalo sie znalesc slowa w starym slowniku				
 				throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue() + " - please add manually"); // to chyba nigdy nie powinno zdarzyc sie
 			}
@@ -2392,7 +2401,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		// generowanie wszystkich kanji i ich czytan
 		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 		
-		List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, true);
+		List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, false, true);
 		
 		if (polishJapaneseEntryListFromOldDictionary != null && polishJapaneseEntryListFromOldDictionary.size() > 0) {
 			return true;
@@ -2412,7 +2421,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 				
 		// pobieramy liste 
-		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, true);		
+		List<PolishJapaneseEntry> allPolishJapaneseEntriesForEntry = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, false, true);		
 
 		// chodzenie po wszystkich kombinacjach kanji i kana
 		for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairListforEntry) {
@@ -3564,7 +3573,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			List<KanjiKanaPair> kanjiKanaPairListforEntry = getKanjiKanaPairList(entry, false);
 			
 			// pobieramy wszystkie slowa ze starego slownika
-			List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, cachePolishJapaneseEntryList, false);
+			List<PolishJapaneseEntry> polishJapaneseEntryListFromOldDictionary = getPolishJapaneseEntryListFromOldDictionary(entry, kanjiKanaPairListforEntry, cachePolishJapaneseEntryList, true, true);
 			
 			// dodanie dodatkowych informacji
 			addAdditionDataFromOldPolishJapaneseEntriesForGeneratingFinalDictionary(entry, polishJapaneseEntryListFromOldDictionary);
