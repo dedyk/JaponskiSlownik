@@ -2335,7 +2335,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(polishJapaneseEntriesCache, kanjiKanaPair.getKanji(), kanjiKanaPair.getKana());
 			
 			if (throwErrorWhenPolishJapaneseEntryNotFound == true && (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0)) {
-				throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue() + " - can't found in old dictionary");
+				throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue() + " - not found in old dictionary");
 			}
 			
 			if (findPolishJapaneseEntryList == null) { // nie znaleziono
@@ -2383,7 +2383,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}
 			
 			if (throwErrorWhenPolishJapaneseEntryNotFound == true && polishJapaneseEntryForKanjiKanaPair == null) {
-				throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue() + " - can't found in old dictionary");
+				throw new Exception(kanjiKanaPair.getKanji() + " - " + kanjiKanaPair.getKana() + " - " + entry.getEntryId().intValue() + " - not found in old dictionary");
 			}
 			
 			if (polishJapaneseEntryForKanjiKanaPair == null) { // nie udalo sie znalesc slowa w starym slowniku				
