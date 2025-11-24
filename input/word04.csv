@@ -3238,7 +3238,7 @@ nauka o danych",ang: data science,DICTIONARY2_SOURCE,,GroupId: 2861192
 niedoświadczony",,DICTIONARY2_SOURCE,,GroupId: 2861194
 302161,WORD_NOUN,,HIRAGANA,,,未納税,みのうぜい,,minouzei,"niezapłacone podatki
 zaległości podatkowe",,DICTIONARY2_SOURCE,,GroupId: 2861195
-302162,WORD_NOUN,,KATAKANA_HIRAGANA,,,コードシェア便,コードシェアびん,,koodoshea bin,lot współdzielony,współpraca linii lotniczych polegająca na przewozie przez jedną linię lotniczą pasażerów posiadających bilety wystawione przez inną linię lotniczą,DICTIONARY2_SOURCE,,GroupId: 2861196
+302162,WORD_NOUN,,KATAKANA_HIRAGANA,,,コードシェア便,コードシェアびん,,koodoshea bin,lot współdzielony,lotnictwo; współpraca linii lotniczych polegająca na przewozie przez jedną linię lotniczą pasażerów posiadających bilety wystawione przez inną linię lotniczą,DICTIONARY2_SOURCE,,GroupId: 2861196
 302163,WORD_NOUN,,HIRAGANA,,,繊維学,せんいがく,,sen'igaku,"włókiennictwo
 nauka o tekstyliach",,DICTIONARY2_SOURCE,,GroupId: 2861197
 302164,WORD_NOUN,,HIRAGANA,,,煙草,えんそう,,ensou,tytoń,rzadko używane określenie,DICTIONARY2_SOURCE,"DUPLICATE 17000
@@ -38169,3 +38169,56 @@ wstrzymanie publikacji",,DICTIONARY2_SOURCE,,GroupId: 2868144
 317551,WORD_NOUN,,KATAKANA,,,-,チートデー,,chiito dee,"dzień, w którym można odstąpić od ścisłej diety",ang: cheat day,DICTIONARY2_SOURCE,,GroupId: 2868145
 317552,WORD_NOUN,,HIRAGANA,,,声区,せいく,,seiku,rejestr głosowy,,DICTIONARY2_SOURCE,,GroupId: 2868146
 317553,WORD_NOUN,,KATAKANA,,,-,ハイネケン,,haineken,Heineken,nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5060877
+317554,"WORD_NOUN
+WORD_CONJUNCTION
+WORD_PARTICULE",,HIRAGANA,,,半面,はんめん,,hanmen,"podczas gdy (po formie przymiotnikowej czasownika lub przymiotnika lub partykule の)
+chociaż (po formie przymiotnikowej czasownika lub przymiotnika lub partykule の)
+choć (po formie przymiotnikowej czasownika lub przymiotnika lub partykule の)
+ale (po formie przymiotnikowej czasownika lub przymiotnika lub partykule の)
+(ale) z drugiej strony (okazjonalnie 半面)
+chociaż (okazjonalnie 半面)
+jednocześnie (okazjonalnie 半面)
+strona przeciwna (rzadko używane określenie)
+rewers (rzadko używane określenie)
+odwrotność (rzadko używane określenie)
+przeciwieństwo (rzadko używane określenie)",,DICTIONARY2_SOURCE,DUPLICATE 15422,GroupId: 1481000
+317555,WORD_NOUN,,KATAKANA,,,-,レリーフ,,reriifu,relief,technika rzeźbiarska,DICTIONARY2_SOURCE,DUPLICATE 14423,GroupId: 2868157
+317556,WORD_NOUN,,KATAKANA,,,-,リリーフ,,ririifu,relief,technika rzeźbiarska,DICTIONARY2_SOURCE,DUPLICATE 30469,GroupId: 2868157
+317557,WORD_NOUN,,HIRAGANA,,,社会情報学,しゃかいじょうほうがく,,shakai jouhougaku,informatyka społeczna,,DICTIONARY2_SOURCE,,GroupId: 2868120
+317558,WORD_NOUN,,HIRAGANA,,,社会工学,しゃかいこうがく,,shakai kougaku,inżynieria społeczna,,DICTIONARY2_SOURCE,,GroupId: 2868121
+317559,WORD_NOUN,,HIRAGANA,,,経済物理学,けいざいぶつりがく,,keizai butsurigaku,ekonofizyka,,DICTIONARY2_SOURCE,,GroupId: 2868122
+317560,WORD_NOUN,,HIRAGANA,,,観光学,かんこうがく,,kankougaku,studia turystyczne,,DICTIONARY2_SOURCE,,GroupId: 2868123
+317561,WORD_NOUN,,HIRAGANA,,,国際経済学,こくさいけいざいがく,,kokusai keizaigaku,ekonomia międzynarodowa,,DICTIONARY2_SOURCE,,GroupId: 2868124
+317562,WORD_NOUN,,HIRAGANA,,,福祉学,ふくしがく,,fukushigaku,studia z zakresu opieki społecznej,,DICTIONARY2_SOURCE,,GroupId: 2868125
+317563,WORD_NOUN,,KATAKANA,,,-,インディカーシリーズ,,indikaa shiriizu,IndyCar Series,seria wyścigowa samochodów o otwartym nadwoziu w Stanach Zjednoczonych,DICTIONARY2_SOURCE,,GroupId: 2868128
+317564,WORD_NOUN,,KATAKANA,,,-,インディカー・シリーズ,,indikaa shiriizu,IndyCar Series,seria wyścigowa samochodów o otwartym nadwoziu w Stanach Zjednoczonych,DICTIONARY2_SOURCE,,GroupId: 2868128
+317565,WORD_NOUN,,KATAKANA,,,-,チャンピオンリング,,chanpion ringu,mistrzowski pierścień,przyznawany członkom zwycięskiej drużyny sportowej; ang: champion ring,DICTIONARY2_SOURCE,,GroupId: 2868129
+317566,WORD_NOUN,,KATAKANA,,,-,チャンピオン・リング,,chanpion ringu,mistrzowski pierścień,przyznawany członkom zwycięskiej drużyny sportowej; ang: champion ring,DICTIONARY2_SOURCE,,GroupId: 2868129
+317567,WORD_NOUN,,KATAKANA_HIRAGANA,,,リリーフ投手,リリーフとうしゅ,,ririifu toushu,rezerwowy miotacz,baseball,DICTIONARY2_SOURCE,,GroupId: 2868130
+317568,WORD_NOUN,,HIRAGANA,,,遺伝医学,いでんいがく,,iden' igaku,genetyka kliniczna,,DICTIONARY2_SOURCE,,GroupId: 2868147
+317569,WORD_NOUN,,HIRAGANA,,,木天蓼,もくてんりょう,,mokutenryou,winorośl srebrna,używana w tradycyjnej chińskiej medycynie,DICTIONARY2_SOURCE,DUPLICATE 57660,GroupId: 2868148
+317570,WORD_NOUN,,HIRAGANA,,,侏儒症,しゅじゅしょう,,shujushou,karłowatość,medycyna; przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2868149
+317571,WORD_NOUN,,HIRAGANA,,,平版印刷,へいはんいんさつ,,heihan' insatsu,"druk płaski
+planografia",drukarstwo,DICTIONARY2_SOURCE,,GroupId: 2868150
+317572,WORD_NOUN,,KATAKANA,,,-,エングレービング,,engureebingu,grawerowanie,ang: engraving,DICTIONARY2_SOURCE,,GroupId: 2868151
+317573,WORD_NOUN,,KATAKANA,,,-,エングレーヴィング,,engureevingu,grawerowanie,ang: engraving,DICTIONARY2_SOURCE,,GroupId: 2868151
+317574,WORD_NOUN,,HIRAGANA,,,彫器,ちょうき,,chouki,rylec,archeologia,DICTIONARY2_SOURCE,,GroupId: 2868152
+317575,WORD_NOUN,,KATAKANA,,,-,ビュラン,,byuran,"rylec (słowo pochodzenia francuskiego)
+rylec (archeologia)",,DICTIONARY2_SOURCE,,GroupId: 2868153
+317576,WORD_NOUN,,HIRAGANA,,,天体化学,てんたいかがく,,tentai kagaku,astrochemia,,DICTIONARY2_SOURCE,,GroupId: 2868155
+317577,WORD_NOUN,,HIRAGANA,,,物理科学,ぶつりかがく,,butsuri kagaku,nauki przyrodnicze,,DICTIONARY2_SOURCE,,GroupId: 2868156
+317578,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,-,ままある,,mamaaru,"często mieć miejsce
+występować często
+zdarzać się od czasu do czasu",,DICTIONARY2_SOURCE,,GroupId: 2868158
+317579,WORD_NOUN,,HIRAGANA,,,細客,ほそきゃく,,hosokyaku,"oszczędny klient
+osoba, która nie wydaje dużo pieniędzy",slang,DICTIONARY2_SOURCE,,GroupId: 2868159
+317580,WORD_NOUN,,HIRAGANA,,,刻器,こっき,,kokki,rylec,archeologia,DICTIONARY2_SOURCE,,GroupId: 2868160
+317581,WORD_EXPRESSION,,HIRAGANA,,,様あ見やがれ,ざまあみやがれ,,zamaa miyagare,???,pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2868161
+317582,WORD_NOUN,,KATAKANA,,,-,リブランディング,,riburandingu,rebranding,,DICTIONARY2_SOURCE,,GroupId: 2868162
+317583,WORD_VERB_U,,HIRAGANA,,,挽き割る,ひきわる,,hiki waru,piłować,,DICTIONARY2_SOURCE,,GroupId: 2868163
+317584,WORD_VERB_U,,HIRAGANA,,,碾き割る,ひきわる,,hiki waru,mielić,,DICTIONARY2_SOURCE,,GroupId: 2868164
+317585,WORD_NOUN,,KATAKANA,,,-,ポリテクニック,,poritekunikku,politechnika,,DICTIONARY2_SOURCE,,GroupId: 2868165
+317586,WORD_NOUN,,HIRAGANA,,,酒林,さかばやし,,sakabayashi,"sakabayashi
+kula wykonana z gałązek cedru japońskiego, tradycyjnie zawieszana pod okapem browarów sake (wyjaśnienie)",,DICTIONARY2_SOURCE,,GroupId: 2868167
+317587,WORD_NOUN,,HIRAGANA,,,横浜国大,よこはまこくだい,,yokohama kokudai,Uniwersytet Narodowy w Yokohama,nazwa organizacji; skrót,DICTIONARY2_SOURCE,,GroupId: 5747458
