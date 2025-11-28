@@ -10,10 +10,12 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
-import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntry;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 
 public class Test10 {
 
@@ -36,12 +38,37 @@ public class Test10 {
 		List<Entry> entryList = loadWord2XmlFiles("/tmp/a/db/word2.xml");
 		
 		for (Entry dictionaryEntry2 : entryList) {
+			/*
 			List<Dictionary2HelperCommon.KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(dictionaryEntry2, true);
 
 			for (Dictionary2HelperCommon.KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 				DictionaryEntry oldDictionaryEntry = Dictionary2HelperCommon.convertKanjiKanaPairToOldDictionaryEntry(kanjiKanaPair);
 				
 				if (oldDictionaryEntry == null) {
+					System.out.println(dictionaryEntry2.getEntryId());
+				}
+			}
+			*/
+			
+			List<Sense> senseList = dictionaryEntry2.getSenseList();
+			
+			for (Sense sense : senseList) {				
+				List<Gloss> polishGlossList = Dictionary2HelperCommon.getPolishGlossList(sense.getGlossList());
+				
+				boolean existsGtypeNull = polishGlossList.stream().filter(f -> f.getGType() == null).count() > 0;
+				long gtypeNotNullCounter = polishGlossList.stream().filter(f -> f.getGType() != null).count();
+				
+				SenseAdditionalInfo polishAdditionalInfo = Dictionary2HelperCommon.findFirstPolishAdditionalInfo(sense.getAdditionalInfoList());
+				
+				if (gtypeNotNullCounter > 1) {
+					System.out.println("**" + dictionaryEntry2.getEntryId());
+				}
+				
+				if (existsGtypeNull == true && gtypeNotNullCounter > 0 && polishAdditionalInfo != null) {
+					System.out.println("***" + dictionaryEntry2.getEntryId());
+				}
+				
+				if (existsGtypeNull != true) {
 					System.out.println(dictionaryEntry2.getEntryId());
 				}
 			}
