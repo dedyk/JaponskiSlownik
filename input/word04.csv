@@ -25340,9 +25340,9 @@ WORD_ADJECTIVE_F",,KATAKANA,,,-,コーリアン,,koorian,koreański,ang: Korean,
 311310,WORD_NOUN,,HIRAGANA_KATAKANA,,,情報セキュリティー,じょうほうセキュリティ,,jouhou sekyuriti,bezpieczeństwo informacji,,DICTIONARY2_SOURCE,,GroupId: 2037510
 311311,WORD_NOUN,,KATAKANA,,,-,ベネシアン,,beneshian,"tkanina wenecka
 wenecka tkanina",ang: venetian,DICTIONARY2_SOURCE,,GroupId: 2500470
-311312,WORD_NOUN,,KATAKANA,,,-,コンピューター・ワクチン,,konpyuutaa wakuchin,"szczepionka komputerowa
-oprogramowanie antywirusowe
-program antywirusowy",informatyka; ang: computer vaccine,DICTIONARY2_SOURCE,,GroupId: 2501740
+311312,WORD_NOUN,,KATAKANA,,,-,コンピューター・ワクチン,,konpyuutaa wakuchin,"oprogramowanie antywirusowe
+program antywirusowy
+szczepionka komputerowa",informatyka; rzadko używane określenie; ang: computer vaccine,DICTIONARY2_SOURCE,,GroupId: 2501740
 311313,WORD_EXPRESSION,,KATAKANA,,,-,スパシーバ,,supashiiba,dziękuję,ros: spasibo,DICTIONARY2_SOURCE,,GroupId: 1072090
 311314,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,レクリェーショナル・ダイビング,,rekurieeshonaru daibingu,nurkowanie rekreacyjne,ang: recreational diving,DICTIONARY2_SOURCE,,GroupId: 2210510
 311315,WORD_NOUN,,KATAKANA,,,-,オルタネート,,orutaneeto,alternatywa,ang: alternate,DICTIONARY2_SOURCE,,GroupId: 1035830
@@ -32821,17 +32821,15 @@ rias",geologia,DICTIONARY2_SOURCE,,GroupId: 2866700
 315127,WORD_NOUN,,HIRAGANA,,,おぼれ谷,おぼれだに,,obore dani,"zatopiona dolina
 wybrzeże riasowe
 rias",geologia,DICTIONARY2_SOURCE,,GroupId: 2866700
-315128,WORD_NOUN,,HIRAGANA_KATAKANA,,,自律システム,じりつシステム,,jiritsu shisutemu,system autonomiczny,informatyka,DICTIONARY2_SOURCE,,GroupId: 2866701
-315129,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＡＳ,エー・エス,,eeesu,"system autonomiczny (informatyka; ang: autonomous system)
+315128,WORD_NOUN,,HIRAGANA_KATAKANA,,,自律システム,じりつシステム,,jiritsu shisutemu,system autonomiczny,internet,DICTIONARY2_SOURCE,,GroupId: 2866701
+315129,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＡＳ,エー・エス,,eeesu,"system autonomiczny (internet; ang: autonomous system)
 zespół Aspergera (medycyna; ang: Asperger syndrome)
-anglosaski (ang: Anglo-Saxon)
 pływanie artystyczne (ang: artistic swimming)
-pływanie synchroniczne (ang: artistic swimming)",,DICTIONARY2_SOURCE,DUPLICATE 315130,GroupId: 2866702
-315130,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＡＳ,エーエス,,eeesu,"system autonomiczny (informatyka; ang: autonomous system)
+anglosaski (ang: Anglo-Saxon)",,DICTIONARY2_SOURCE,DUPLICATE 315130,GroupId: 2866702
+315130,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＡＳ,エーエス,,eeesu,"system autonomiczny (internet; ang: autonomous system)
 zespół Aspergera (medycyna; ang: Asperger syndrome)
-anglosaski (ang: Anglo-Saxon)
 pływanie artystyczne (ang: artistic swimming)
-pływanie synchroniczne (ang: artistic swimming)",,DICTIONARY2_SOURCE,DUPLICATE 315129,GroupId: 2866702
+anglosaski (ang: Anglo-Saxon)",,DICTIONARY2_SOURCE,DUPLICATE 315129,GroupId: 2866702
 315131,WORD_NOUN,,HIRAGANA,,,高層湿原,こうそうしつげん,,kousou shitsugen,wysokie wrzosowisko,ekologia,DICTIONARY2_SOURCE,,GroupId: 2866703
 315132,WORD_NOUN,,HIRAGANA,,,副乳,ふくにゅう,,fukunyuu,"dodatkowy sutek
 trzeci sutek
@@ -38371,3 +38369,56 @@ przeuczenie","informatyka; w nauczaniu maszynowym, ang: overfitting",DICTIONARY2
 317650,WORD_NOUN,,KATAKANA,,,-,ウサギギク,,usagigiku,Arnica unalascensis,pisanie zwykle z użyciem kana; roślina,DICTIONARY2_SOURCE,,GroupId: 2868196
 317651,WORD_NOUN,,HIRAGANA,,,尾角,びかく,,bikaku,???,entomologia,DICTIONARY2_SOURCE,,GroupId: 2868197
 317652,WORD_NOUN,,HIRAGANA,,,生物情報科学,せいぶつじょうほうかがく,,seibutsu jouhou kagaku,bioinformatyka,,DICTIONARY2_SOURCE,,GroupId: 2868199
+317653,WORD_NOUN,,KATAKANA,,,-,フリル,,furiru,furyl,chemia,DICTIONARY2_SOURCE,DUPLICATE 38186,GroupId: 2868211
+317654,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,基本のキ,きほんのき,,kihon no ki,"absolutne podstawy (zwłaszcza w kontekście edukacyjnym)
+najbardziej podstawowa z podstaw
+najbardziej podstawowa rzecz",,DICTIONARY2_SOURCE,,GroupId: 2843351
+317655,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,基本の基,きほんのき,,kihon no ki,"absolutne podstawy (zwłaszcza w kontekście edukacyjnym)
+najbardziej podstawowa z podstaw
+najbardziej podstawowa rzecz",,DICTIONARY2_SOURCE,,GroupId: 2843351
+317656,WORD_NOUN,,KATAKANA,,,ジェリ缶,ジェリカン,,jerikan,kanister,pisanie zwykle z użyciem kana; ang: jerrycan,DICTIONARY2_SOURCE,,GroupId: 2233910
+317657,WORD_NOUN,,KATAKANA,,,ジェリー缶,ジェリカン,,jerikan,kanister,pisanie zwykle z użyciem kana; ang: jerrycan,DICTIONARY2_SOURCE,,GroupId: 2233910
+317658,"WORD_NOUN
+WORD_ADJECTIVE_NA
+WORD_ADJECTIVE_NO",,HIRAGANA,,,尾篭,おこ,,oko,"głupia rzecz
+niemądra rzecz
+niedorzeczny
+absurdalny
+głupota
+głupiec
+idiota
+kretyn",przestarzałe słowo,DICTIONARY2_SOURCE,"DUPLICATE 121116
+DUPLICATE 251959",GroupId: 2744690
+317659,WORD_NOUN,,HIRAGANA,,,-,まんごすちん,,mangosuchin,"mangostan właściwy
+garcynia
+smaczelina
+żółtopla
+żółciecz","gatunek wiecznie zielonego drzewa z rodziny kluzjowatych, Garcinia mangostana, ang: mangosteen",DICTIONARY2_SOURCE,,GroupId: 1130030
+317660,"WORD_ADJECTIVE_NA
+WORD_NOUN",,KATAKANA,,,-,ナイスセンス,,naisu sensu,"(posiadający) świetny gust
+stylowy",potocznie; ang: nice sense,DICTIONARY2_SOURCE,,GroupId: 2868198
+317661,WORD_NOUN,,HIRAGANA,,,次元削減,じげんさくげん,,jigen sakugen,"redukcja wymiarowości
+redukcja wymiarów",matematyka; informatyka,DICTIONARY2_SOURCE,,GroupId: 2868201
+317662,WORD_NOUN,,KATAKANA,,,-,チャッピー,,chappii,ChatGPT,skrót,DICTIONARY2_SOURCE,,GroupId: 2868203
+317663,WORD_NOUN,,HIRAGANA,,,通信制高校,つうしんせいこうこう,,tsuushinsei koukou,"korespondencyjna szkoła średnia
+szkoła średnia z nauczaniem na odległość
+szkoła średnia online",,DICTIONARY2_SOURCE,,GroupId: 2868204
+317664,WORD_NOUN,,KATAKANA_HIRAGANA,,,サポート校,サポートこう,,sapooto kou,prywatna instytucja edukacyjna pomagająca uczniom korespondencyjnych szkół średnich,,DICTIONARY2_SOURCE,,GroupId: 2868205
+317665,WORD_NOUN,,HIRAGANA,,,全日制高校,ぜんにちせいこうこう,,zennichisei koukou,"całodniowe liceum
+całodniowa szkoła średnia
+???",,DICTIONARY2_SOURCE,,GroupId: 2868206
+317666,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,高架下,こうかした,,koukashita,pod konstrukcją podwyższoną,zwłaszcza podwyższoną linią kolejową lub mostem,DICTIONARY2_SOURCE,,GroupId: 2868207
+317667,WORD_NOUN,,KATAKANA_HIRAGANA,,,ウイルス対策ソフト,ウイルスたいさくソフト,,uirusu taisaku sofuto,"oprogramowanie antywirusowe
+program antywirusowy",informatyka,DICTIONARY2_SOURCE,,GroupId: 2868208
+317668,WORD_NOUN,,KATAKANA,,,-,ワクチンプログラム,,wakuchin puroguramu,"oprogramowanie antywirusowe
+program antywirusowy",informatyka; rzadko używane określenie; ang: vaccine program,DICTIONARY2_SOURCE,,GroupId: 2868209
+317669,WORD_NOUN,,KATAKANA,,,-,ワクチン・プログラム,,wakuchin puroguramu,"oprogramowanie antywirusowe
+program antywirusowy",informatyka; rzadko używane określenie; ang: vaccine program,DICTIONARY2_SOURCE,,GroupId: 2868209
+317670,WORD_NOUN,,HIRAGANA,,,霊体,れいたい,,reitai,"duch
+???
+ciało duchowe
+ciało przyczynowe",,DICTIONARY2_SOURCE,,GroupId: 2868210
+317671,WORD_NOUN,,KATAKANA,,,-,アルメル,,arumeru,alumel,"stop niklu zawierający 0,8–2% manganu, 1,8–2,5% aluminium, 0,8–2% krzemu i domieszki żelaza i kobaltu",DICTIONARY2_SOURCE,,GroupId: 2868212
