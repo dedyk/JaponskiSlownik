@@ -38201,11 +38201,16 @@ planografia",drukarstwo,DICTIONARY2_SOURCE,,GroupId: 2868150
 rylec (archeologia)",,DICTIONARY2_SOURCE,,GroupId: 2868153
 317576,WORD_NOUN,,HIRAGANA,,,天体化学,てんたいかがく,,tentai kagaku,astrochemia,,DICTIONARY2_SOURCE,,GroupId: 2868155
 317577,WORD_NOUN,,HIRAGANA,,,物理科学,ぶつりかがく,,butsuri kagaku,nauki przyrodnicze,,DICTIONARY2_SOURCE,,GroupId: 2868156
-317578,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,-,ままある,,mamaaru,"często mieć miejsce
-występować często
-zdarzać się od czasu do czasu",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2868158
+317578,WORD_ADJECTIVE_I,,HIRAGANA,,,物すごい,ものすっごい,,mono suggoi,"oszałamiający
+zdumiewający
+niesamowity
+niewiarygodny
+przerażający
+upiorny
+straszny
+okropny
+makabryczny",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 317712
+DUPLICATE 317747",GroupId: 1502630
 317579,WORD_NOUN,,HIRAGANA,,,細客,ほそきゃく,,hosokyaku,"oszczędny klient
 osoba, która nie wydaje dużo pieniędzy",slang,DICTIONARY2_SOURCE,,GroupId: 2868159
 317580,WORD_NOUN,,HIRAGANA,,,刻器,こっき,,kokki,rylec,archeologia,DICTIONARY2_SOURCE,,GroupId: 2868160
@@ -38491,7 +38496,8 @@ przerażający
 upiorny
 straszny
 okropny
-makabryczny",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1502630
+makabryczny",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 317578
+DUPLICATE 317747",GroupId: 1502630
 317713,WORD_NOUN,,HIRAGANA,,,鳥膚,とりはだ,,torihada,"gęsia skórka
 szorstka skóra",,DICTIONARY2_SOURCE,,GroupId: 1430320
 317714,WORD_NOUN,,HIRAGANA_KATAKANA,,,血液ガス分析,けつえきガスぶんせき,,ketsueki gasu bunseki,gazometria krwi,medycyna,DICTIONARY2_SOURCE,,GroupId: 2868230
@@ -38533,7 +38539,7 @@ kwiaty, które nie dotarły na czas na buddyjską ceremonię pogrzebową (dosło
 317731,WORD_NOUN,,HIRAGANA_KATAKANA,,,動脈血ガス,どうみゃくけつガス,,doumyakuketsu gasu,"gazometria
 gazometria krwi tętniczej",medycyna; diagnostyczne badanie laboratoryjne krwi umożliwiające rozpoznanie i monitorowanie zaburzeń równowagi kwasowo-zasadowej i wymiany gazowej organizmu,DICTIONARY2_SOURCE,,GroupId: 2868244
 317732,WORD_EXPRESSION,,HIRAGANA,,,お止し,およし,,oyoshi,"przestań
-zrezygnuj
+zrezygnuj (z robienia)
 daj spokój",język poufały; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2868245
 317733,WORD_NOUN,,HIRAGANA,,,餌入れ,えさいれ,,esa ire,"miska na paszę (dla zwierząt)
 koryto na paszę
@@ -38576,3 +38582,63 @@ choroba Buergera","medycyna; odcinkowe, wieloogniskowe zapalenie małych i śred
 dziki królik",,DICTIONARY2_SOURCE,DUPLICATE 116950,GroupId: 2868253
 317745,WORD_NOUN,,KATAKANA,,,Ｆｌｏｏｒｐ,フロープ,,furoopu,Floorp,nazwa produktu; przeglądarka internetowa,DICTIONARY2_SOURCE,,GroupId: 5747474
 317746,WORD_NOUN,,HIRAGANA,,,第一三共,だいいちさんきょう,,daiichi sankyou,Daiichi Sankyo,nazwa firmy; firma farmaceutyczna,DICTIONARY2_SOURCE,,GroupId: 5747475
+317747,WORD_ADJECTIVE_I,,HIRAGANA,,,物すごい,ものすんごい,,mono sungoi,"oszałamiający
+zdumiewający
+niesamowity
+niewiarygodny
+przerażający
+upiorny
+straszny
+okropny
+makabryczny",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 317578
+DUPLICATE 317712",GroupId: 1502630
+317748,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,間々ある,ままある,,mamaaru,"być czymś powszechnym
+często mieć miejsce
+występować często
+zdarzać się od czasu do czasu",,DICTIONARY2_SOURCE,,GroupId: 2868158
+317749,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,まま有る,ままある,,mamaaru,"być czymś powszechnym
+często mieć miejsce
+występować często
+zdarzać się od czasu do czasu",,DICTIONARY2_SOURCE,,GroupId: 2868158
+317750,WORD_ADJECTIVE_I,,KATAKANA_HIRAGANA,,,-,メロい,,meroi,"atrakcyjny (osoba, charakter itp.)
+urzekający
+wywołujący zauroczenie",slang,DICTIONARY2_SOURCE,,GroupId: 2868218
+317751,WORD_NOUN,,KATAKANA,,,-,フィジェットボート,,fijetto booto,deska fidget,"do stymulacji sensorycznej, łagodzenia stresu itp., ang: fidget board",DICTIONARY2_SOURCE,,GroupId: 2868246
+317752,WORD_NOUN,,KATAKANA,,,-,フィジェット・ボート,,fijetto booto,deska fidget,"do stymulacji sensorycznej, łagodzenia stresu itp., ang: fidget board",DICTIONARY2_SOURCE,,GroupId: 2868246
+317753,WORD_NOUN,,HIRAGANA,,,日本野兎,にほんのうさぎ,,nihon nousagi,"zając kusy
+zając japoński (dawniej)",gatunek ssaka z rodziny zającowatych występujący endemicznie w Japonii,DICTIONARY2_SOURCE,,GroupId: 2868254
+317754,WORD_NOUN,,KATAKANA,,,-,ニホンノウサギ,,nihon nousagi,"zając kusy
+zając japoński (dawniej)",gatunek ssaka z rodziny zającowatych występujący endemicznie w Japonii,DICTIONARY2_SOURCE,,GroupId: 2868254
+317755,WORD_NOUN,,KATAKANA,,,-,ピーカンナッツ,,piikan nattsu,ochech pekan,ang: pecan nut,DICTIONARY2_SOURCE,,GroupId: 2868255
+317756,WORD_NOUN,,KATAKANA,,,-,ペカンナッツ,,pekan nattsu,ochech pekan,ang: pecan nut,DICTIONARY2_SOURCE,,GroupId: 2868255
+317757,WORD_NOUN,,KATAKANA,,,-,ピーカン・ナッツ,,piikan nattsu,ochech pekan,ang: pecan nut,DICTIONARY2_SOURCE,,GroupId: 2868255
+317758,WORD_NOUN,,KATAKANA,,,-,ペカン・ナッツ,,pekan nattsu,ochech pekan,ang: pecan nut,DICTIONARY2_SOURCE,,GroupId: 2868255
+317759,WORD_NOUN,,HIRAGANA,,,野,や,,ya,"równina
+pole
+poza rządem
+sfera pozarządowa
+sektor prywatny
+życie prywatne",,DICTIONARY2_SOURCE,"DUPLICATE 7431
+DUPLICATE 12073",GroupId: 2868256
+317760,WORD_NOUN,,HIRAGANA,,,埜,や,,ya,"równina
+pole
+poza rządem
+sfera pozarządowa
+sektor prywatny
+życie prywatne",,DICTIONARY2_SOURCE,"DUPLICATE 12073
+DUPLICATE 29591",GroupId: 2868256
+317761,WORD_NOUN,,HIRAGANA,,,鵲笛鴉,かささぎふえがらす,,kasasagifue garasu,dzierzbowron,"pisanie zwykle z użyciem kana; średniej wielkości czarno-biały ptak z rodziny ostrolotów, Gymnorhina tibicen",DICTIONARY2_SOURCE,,GroupId: 2868258
+317762,WORD_NOUN,,KATAKANA,,,-,カササギフエガラス,,kasasagifue garasu,dzierzbowron,"pisanie zwykle z użyciem kana; średniej wielkości czarno-biały ptak z rodziny ostrolotów, Gymnorhina tibicen",DICTIONARY2_SOURCE,,GroupId: 2868258
+317763,WORD_NOUN,,KATAKANA_HIRAGANA,,,オーストラリア黒朱鷺,オーストラリアくろとき,,oosutoraria kurotoki,ibis czarnopióry,"pisanie zwykle z użyciem kana; gatunek dużego ptaka z rodziny ibisów, Threskiornis molucca",DICTIONARY2_SOURCE,,GroupId: 2868259
+317764,WORD_NOUN,,KATAKANA,,,-,オーストラリアクロトキ,,oosutoraria kurotoki,ibis czarnopióry,"pisanie zwykle z użyciem kana; gatunek dużego ptaka z rodziny ibisów, Threskiornis molucca",DICTIONARY2_SOURCE,,GroupId: 2868259
+317765,WORD_NOUN,,KATAKANA_HIRAGANA,,,アフリカ黒朱鷺,アフリカくろとき,,afurika kurotoki,ibis czczony,"pisanie zwykle z użyciem kana; gatunek dużego ptaka z rodziny ibisów, Threskiornis aethiopicus",DICTIONARY2_SOURCE,,GroupId: 2868260
+317766,WORD_NOUN,,KATAKANA,,,-,アフリカクロトキ,,afurika kurotoki,ibis czczony,"pisanie zwykle z użyciem kana; gatunek dużego ptaka z rodziny ibisów, Threskiornis aethiopicus",DICTIONARY2_SOURCE,,GroupId: 2868260
+317767,WORD_NOUN,,HIRAGANA,,,黒朱鷺,くろとき,,kurotoki,ibis siwopióry,"pisanie zwykle z użyciem kana; gatunek dużego, częściowo wędrownego ptaka z rodziny ibisów, Threskiornis melanocephalus",DICTIONARY2_SOURCE,,GroupId: 2868261
+317768,WORD_NOUN,,HIRAGANA,,,黒鴇,くろとき,,kurotoki,ibis siwopióry,"pisanie zwykle z użyciem kana; gatunek dużego, częściowo wędrownego ptaka z rodziny ibisów, Threskiornis melanocephalus",DICTIONARY2_SOURCE,,GroupId: 2868261
+317769,WORD_NOUN,,KATAKANA,,,-,クロトキ,,kurotoki,ibis siwopióry,"pisanie zwykle z użyciem kana; gatunek dużego, częściowo wędrownego ptaka z rodziny ibisów, Threskiornis melanocephalus",DICTIONARY2_SOURCE,,GroupId: 2868261
+317770,"WORD_NOUN
+WORD_ADJECTIVE_F",,HIRAGANA,,,右室,うしつ,,ushitsu,prawa komora,anatomia,DICTIONARY2_SOURCE,,GroupId: 2868263
+317771,WORD_NOUN,,KATAKANA,,,-,ビッグエア,,biggu ea,wysoki skok,"sport; w snowboardzie, narciarstwie itp, ang: big air",DICTIONARY2_SOURCE,,GroupId: 2868265
+317772,WORD_NOUN,,KATAKANA,,,-,ビッグ・エア,,biggu ea,wysoki skok,"sport; w snowboardzie, narciarstwie itp, ang: big air",DICTIONARY2_SOURCE,,GroupId: 2868265
