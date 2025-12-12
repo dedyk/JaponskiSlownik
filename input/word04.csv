@@ -4931,11 +4931,22 @@ salon samochodowy",ang: car dealer,DICTIONARY2_SOURCE,,GroupId: 2861652
 salon samochodowy",ang: car dealer,DICTIONARY2_SOURCE,,GroupId: 2861652
 303099,WORD_NOUN,,KATAKANA,,,ＡＶＧ,エー・ブイ・ジー,,ee bui jii,gra przygodowa,gry wideo,DICTIONARY2_SOURCE,DUPLICATE 303100,GroupId: 2861653
 303100,WORD_NOUN,,KATAKANA,,,ＡＶＧ,エーブイジー,,ee bui jii,gra przygodowa,gry wideo,DICTIONARY2_SOURCE,DUPLICATE 303099,GroupId: 2861653
-303101,WORD_NOUN,,KATAKANA,,,-,ゲームコントローラ,,geemu kontoroora,kontroler gier,gry wideo,DICTIONARY2_SOURCE,,GroupId: 2861654
-303102,WORD_NOUN,,KATAKANA,,,-,ゲームコントローラー,,geemu kontorooraa,kontroler gier,gry wideo,DICTIONARY2_SOURCE,,GroupId: 2861654
-303103,WORD_NOUN,,KATAKANA,,,-,ゲーム・コントローラ,,geemu kontoroora,kontroler gier,gry wideo,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2861654
-303104,WORD_NOUN,,KATAKANA,,,-,ゲーム・コントローラー,,geemu kontorooraa,kontroler gier,gry wideo,DICTIONARY2_SOURCE,,GroupId: 2861654
+303101,WORD_NOUN,,KATAKANA,,,-,ゲームコントローラ,,geemu kontoroora,kontroler do gier,ang: game controller,DICTIONARY2_SOURCE,,GroupId: 2861654
+303102,WORD_NOUN,,KATAKANA,,,-,ゲームコントローラー,,geemu kontorooraa,kontroler do gier,ang: game controller,DICTIONARY2_SOURCE,,GroupId: 2861654
+303103,"WORD_PRONOUN
+WORD_NOUN",,KATAKANA,,,君,キミ,,kimi,"ty (język poufały; czasami uważane za język męski; odnoszący się do kogoś o równym lub niższym statusie)
+kumpel (język poufały; czasami uważane za język męski; odnoszący się do kogoś o równym lub niższym statusie)
+pal (język poufały; czasami uważane za język męski; odnoszący się do kogoś o równym lub niższym statusie)
+monarcha (pierwotne znaczenie)
+władca (pierwotne znaczenie)
+suweren (pierwotne znaczenie)
+(czyjś) pan (pierwotne znaczenie)
+on (uprzejmie; przestarzałe słowo)
+ona (uprzejmie; przestarzałe słowo)",,DICTIONARY2_SOURCE,"DUPLICATE 1086
+DUPLICATE 2341
+DUPLICATE 56197
+DUPLICATE 59958",GroupId: 1247250
+303104,WORD_NOUN,,KATAKANA,,,-,ゲーム・コントローラー,,geemu kontorooraa,kontroler do gier,ang: game controller,DICTIONARY2_SOURCE,,GroupId: 2861654
 303105,WORD_NOUN,,KATAKANA,,,-,コントロールパッド,,kontorooru paddo,"pad
 gamepad",gry wideo; ang: control pad,DICTIONARY2_SOURCE,,GroupId: 2861655
 303106,WORD_NOUN,,KATAKANA,,,-,コントロール・パッド,,kontorooru paddo,"pad
@@ -39180,7 +39191,8 @@ uczucie guzka w gardle",,DICTIONARY2_SOURCE,,GroupId: 2868343
 317953,WORD_NOUN,,KATAKANA,,,-,イシガケチョウ,,ishigakechou,Cyrestis thyodamas,pisanie zwykle z użyciem kana; gatunek motyla,DICTIONARY2_SOURCE,,GroupId: 2868350
 317954,WORD_NOUN,,HIRAGANA,,,転社,てんしゃ,,tensha,"zmiana firmy
 zmiana pracodawcy
-zmiana pracy",,DICTIONARY2_SOURCE,,GroupId: 2868352
+obligacja zamienna (finanse; skrót)
+obligacje zamienne (finanse; skrót)",,DICTIONARY2_SOURCE,,GroupId: 2868352
 317955,WORD_NOUN,,HIRAGANA,,,任意性,にんいせい,,nin'isei,"dobrowolność
 dobrowolny charakter
 fakultatywność",,DICTIONARY2_SOURCE,,GroupId: 2868353
@@ -39219,3 +39231,48 @@ heterodoksja
 ścieżka zewnętrzna",buddyzm,DICTIONARY2_SOURCE,DUPLICATE 123712,GroupId: 2868363
 317972,WORD_NOUN,,HIRAGANA,,,おから工事,おからこうじ,,okara kouji,"niechlujna konstrukcja
 niechlujnie wykonany projekt",,DICTIONARY2_SOURCE,,GroupId: 2868364
+317973,"WORD_PRONOUN
+WORD_NOUN",,KATAKANA,,,公,キミ,,kimi,"ty (język poufały; czasami uważane za język męski; odnoszący się do kogoś o równym lub niższym statusie)
+kumpel (język poufały; czasami uważane za język męski; odnoszący się do kogoś o równym lub niższym statusie)
+pal (język poufały; czasami uważane za język męski; odnoszący się do kogoś o równym lub niższym statusie)
+monarcha (pierwotne znaczenie)
+władca (pierwotne znaczenie)
+suweren (pierwotne znaczenie)
+(czyjś) pan (pierwotne znaczenie)",,DICTIONARY2_SOURCE,"DUPLICATE 3145
+DUPLICATE 27494
+DUPLICATE 50525",GroupId: 1247250
+317974,WORD_NOUN,,HIRAGANA,,,３人称,さんにんしょう,,sanninshou,"trzecia osoba (gramatyka)
+termin odnoszący się do osoby trzeciej
+termin używany w odniesieniu do kogoś lub czegoś w trzeciej osobie",,DICTIONARY2_SOURCE,,GroupId: 1301030
+317975,WORD_NOUN,,HIRAGANA,,,下ネタ,しもねた,,shimo neta,"sprośne żarty
+erotyczny temat
+seks rozmowy
+nieprzyzwoity temat
+obsceniczny temat",,DICTIONARY2_SOURCE,DUPLICATE 64218,GroupId: 2086610
+317976,WORD_NOUN,,KATAKANA,,,-,シモネタ,,shimo neta,"sprośne żarty
+erotyczny temat
+seks rozmowy
+nieprzyzwoity temat
+obsceniczny temat",,DICTIONARY2_SOURCE,,GroupId: 2086610
+317977,WORD_NOUN,,HIRAGANA_KATAKANA,,,下ねた,しもネタ,,shimo neta,"sprośne żarty
+erotyczny temat
+seks rozmowy
+nieprzyzwoity temat
+obsceniczny temat",,DICTIONARY2_SOURCE,DUPLICATE 152621,GroupId: 2086610
+317978,WORD_NOUN,,HIRAGANA,,,牛伝染性リンパ腫,ぎゅうでんせんせいりんぱしゅう,,gyuuden sensei rinpa shuu,enzootyczna białaczka bydła,"termin weterynaryjny; przewlekła, zakaźna choroba bydła wywoływana przez wirus białaczki bydła (BLV) z rodziny Retroviridae, dawniej nazywana białaczka bydła",DICTIONARY2_SOURCE,,GroupId: 2868346
+317979,WORD_NOUN,,HIRAGANA,,,牛白血病,ぎゅうはっけつびょう,,gyuuhakketsubyou,białaczka bydła,"termin weterynaryjny; przewlekła, zakaźna choroba bydła wywoływana przez wirus białaczki bydła (BLV) z rodziny Retroviridae, dawna nazwa na enzootyczna białaczka bydła",DICTIONARY2_SOURCE,,GroupId: 2868347
+317980,WORD_NOUN,,HIRAGANA,,,円月,えんげつ,,engetsu,pełnia księżyca,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868354
+317981,WORD_NOUN,,HIRAGANA,,,両眼視,りょうがんし,,ryouganshi,"widzenie obuoczne
+widzenie dwuoczne",fizjologia,DICTIONARY2_SOURCE,,GroupId: 2868365
+317982,WORD_NOUN,,HIRAGANA_KATAKANA,,,空間オーディオ,くうかんオーディオ,,kuukan' oodio,dźwięk przestrzenny,,DICTIONARY2_SOURCE,,GroupId: 2868366
+317983,WORD_VERB_U,,KATAKANA_HIRAGANA,,,-,ネゴる,,negoru,negocjować,potocznie,DICTIONARY2_SOURCE,,GroupId: 2868370
+317984,WORD_VERB_U,,HIRAGANA,,,縮み込む,ちぢみこむ,,chidimi komu,"kurczyć się
+zmniejszać się",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868375
+317985,WORD_VERB_U,,HIRAGANA,,,縮みこむ,ちぢみこむ,,chidimi komu,"kurczyć się
+zmniejszać się",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868375
+317986,WORD_VERB_U,,HIRAGANA,,,縮こむ,ちぢみこむ,,chidimi komu,"kurczyć się
+zmniejszać się",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868375
+317987,WORD_VERB_U,,HIRAGANA,,,縮込む,ちぢみこむ,,chidimi komu,"kurczyć się
+zmniejszać się",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868375
+317988,WORD_NOUN,,HIRAGANA,,,正転,せいてん,,seiten,"normalny obrót (np. w maszynach)
+obrót do przodu",,DICTIONARY2_SOURCE,,GroupId: 2868377
