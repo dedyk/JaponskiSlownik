@@ -20213,7 +20213,7 @@ improwizowana historia rakugo na podstawie trzech tematów",,DICTIONARY2_SOURCE,
 szafka ścienna",,DICTIONARY2_SOURCE,,GroupId: 2409440
 308976,WORD_NOUN,,HIRAGANA,,,潮だまり,しおだまり,,shiodamari,"zagłębienie z wodą w nadmorskich skałach
 skaliste miejsce, w którym woda morska pozostaje po odpływie",,DICTIONARY2_SOURCE,,GroupId: 2397240
-308977,WORD_NOUN,,HIRAGANA,,,お声がかり,おこえがかり,,okoe gakari,"rekomendacja
+308977,WORD_NOUN,,HIRAGANA,,,お声がかり,おこえがかり,,okoe gakari,"rekomendacja (wpływowej osoby)
 polecenie",,DICTIONARY2_SOURCE,,GroupId: 1694190
 308978,WORD_NOUN,,HIRAGANA,,,周章ろうばい,しゅうしょうろうばい,,shuushou roubai,"konsternacja
 wpadanie w panikę
@@ -31277,7 +31277,7 @@ być pełen obaw",,DICTIONARY2_SOURCE,DUPLICATE 314308,GroupId: 2075570
 WORD_EXPRESSION",,HIRAGANA,,,怖気をふるう,おじけをふるう,,ojike o furuu,"być przerażonym
 być pełen niepokoju
 być pełen obaw",,DICTIONARY2_SOURCE,DUPLICATE 314307,GroupId: 2075570
-314309,WORD_NOUN,,KATAKANA,,,-,レニン,,renin,Lenin,,DICTIONARY2_SOURCE,DUPLICATE 196480,GroupId: 1916560
+314309,WORD_NOUN,,KATAKANA,,,-,レニン,,renin,Lenin,imię i nazwisko osoby,DICTIONARY2_SOURCE,DUPLICATE 196480,GroupId: 1916560
 314310,WORD_NOUN,,HIRAGANA,,,門前払,もんぜんばらい,,monzen barai,"wyganiać (kogoś) spod bramy
 wyganiać (kogoś) spod drzwi
 zamykanie komuś drzwi przed nosem
@@ -39410,7 +39410,8 @@ DNS server","internet; system serwerów, protokół komunikacyjny oraz usługa o
 318036,WORD_NOUN,,HIRAGANA,,,骨導,こつどう,,kotsudou,przewodnictwo kostne,fizjologia,DICTIONARY2_SOURCE,,GroupId: 2868399
 318037,WORD_NOUN,,HIRAGANA,,,気導,きどう,,kidou,przewodzenie powietrzne (dźwięku),fizjologia,DICTIONARY2_SOURCE,,GroupId: 2868400
 318038,"WORD_ADJECTIVE_NO
-WORD_NOUN",,KATAKANA_HIRAGANA,,,インナーイヤー型,インナーイヤーがた,,innaaiyaa gata,"typ douszny (np. słuchawki)
+WORD_NOUN",,KATAKANA_HIRAGANA,,,インナーイヤー型,インナーイヤーがた,,innaaiyaa gata,"słuchawki douszne (nieuszczelniające kanału słuchowego)
+otwarte (słuchawki douszne)
 wewnątrz małżowiny usznej",,DICTIONARY2_SOURCE,,GroupId: 2868401
 318039,WORD_ADJECTIVE_F,,KATAKANA,,,-,バランスド,,baransudo,"zrównoważony
 wyważony",,DICTIONARY2_SOURCE,,GroupId: 2868404
@@ -39440,7 +39441,7 @@ między palcami (u nogi)",,DICTIONARY2_SOURCE,,GroupId: 2868410
 318049,WORD_NOUN,,KATAKANA,,,ＤＮＳサーバ,ディーエヌエスサーバ,,diienuesu saaba,serwer DNS,internet; ang: DNS server,DICTIONARY2_SOURCE,,GroupId: 2868411
 318050,WORD_NOUN,,KATAKANA,,,ＤＮＳサーバー,ディーエヌエスサーバー,,diienuesu saabaa,serwer DNS,internet; ang: DNS server,DICTIONARY2_SOURCE,,GroupId: 2868411
 318051,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,骸骨を乞う,がいこつをこう,,gaikotsu o kou,złożyć rezygnację,,DICTIONARY2_SOURCE,,GroupId: 2868412
+WORD_EXPRESSION",,HIRAGANA,,,骸骨を乞う,がいこつをこう,,gaikotsu o kou,złożyć rezygnację,wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2868412
 318052,WORD_NOUN,,KATAKANA,,,-,サティーン,,satiin,satyna,ang: sateen,DICTIONARY2_SOURCE,,GroupId: 2868413
 318053,WORD_NOUN,,KATAKANA_HIRAGANA,,,アッシリア学,アッシリアがく,,asshiria gaku,"asyrologia
 asyriologia","nauka badająca piśmiennictwo oraz kulturę duchową i materialną ludów Mezopotamii: Sumerów, Akadów, Babilończyków i Asyryjczyków",DICTIONARY2_SOURCE,,GroupId: 2868414
@@ -39450,3 +39451,69 @@ asyriologia","nauka badająca piśmiennictwo oraz kulturę duchową i materialn�
 ogrodzenie (termin historyczny; ???, ang: enclosure)
 miejsce ogrodzone (termin historyczny; ???, ang: enclosure)
 ogrodzony teren (termin historyczny; ???, ang: enclosure)",,DICTIONARY2_SOURCE,,GroupId: 1030820
+318057,WORD_VERB_U,VERB_INTRANSITIVITY,KATAKANA_HIRAGANA,,が,決る,キマる,ga,kimaru,"być postanowionym
+być ustalonym
+być umówionym
+zostać zdecydowany
+zostać ustalonym
+być niezmienny (jako 決まっている lub 決まった)
+być bez zmiany (jak zawsze) (jako 決まっている lub 決まった)
+mieć stałą zasadę (jako ...と決まっている)
+mieć zwyczaj (jako ...と決まっている)
+??? (jako ...と決まっている)
+być dobrze wykonanym (np. manewr w sporcie)
+pójść dobrze
+udać się
+odnieść sukces
+wyglądać dobrze (w ubraniu)
+wyglądać modnie
+wyglądać stylowo
+być utrzymany (o fryzurze)
+??? (poza w kabuki)
+naćpać się (slang; zwykle pisane jako キマる)
+odurzyć się narkotykami (slang; zwykle pisane jako キマる)",,DICTIONARY2_SOURCE,"DUPLICATE 27905
+DUPLICATE 56277
+DUPLICATE 56297",GroupId: 1591420
+318058,WORD_VERB_U,VERB_INTRANSITIVITY,KATAKANA_HIRAGANA,,が,極る,キマる,ga,kimaru,"być postanowionym
+być ustalonym
+być umówionym
+zostać zdecydowany
+zostać ustalonym
+być niezmienny (jako 決まっている lub 決まった)
+być bez zmiany (jak zawsze) (jako 決まっている lub 決まった)
+mieć stałą zasadę (jako ...と決まっている)
+mieć zwyczaj (jako ...と決まっている)
+??? (jako ...と決まっている)
+być dobrze wykonanym (np. manewr w sporcie)
+pójść dobrze
+udać się
+odnieść sukces
+wyglądać dobrze (w ubraniu)
+wyglądać modnie
+wyglądać stylowo
+być utrzymany (o fryzurze)
+??? (poza w kabuki)
+naćpać się (slang; zwykle pisane jako キマる)
+odurzyć się narkotykami (slang; zwykle pisane jako キマる)",,DICTIONARY2_SOURCE,DUPLICATE 27906,GroupId: 1591420
+318059,WORD_NOUN,,HIRAGANA,,,外切,がいせつ,,gaisetsu,opisywanie,matematyka; np. okręgu,DICTIONARY2_SOURCE,,GroupId: 1203900
+318060,WORD_NOUN,,HIRAGANA,,,脳静脈洞血栓症,のうじょうみゃくどうけっせんしょう,,noujoumyakudou kessenshou,zakrzepica zatok żylnych mózgu,medycyna,DICTIONARY2_SOURCE,,GroupId: 2868393
+318061,WORD_NOUN,,HIRAGANA_KATAKANA,,,古代オリエント,こだいオリエント,,kodai oriento,"starożytny Orient
+starożytny Bliski Wschód",termin historyczny,DICTIONARY2_SOURCE,,GroupId: 2868417
+318062,WORD_NOUN,,HIRAGANA,,,連子鯛,れんこだい,,renkodai,Taius tumifrons,pisanie zwykle z użyciem kana; ryba,DICTIONARY2_SOURCE,,GroupId: 2868419
+318063,WORD_NOUN,,KATAKANA,,,-,レンコダイ,,renkodai,Taius tumifrons,pisanie zwykle z użyciem kana; ryba,DICTIONARY2_SOURCE,,GroupId: 2868419
+318064,WORD_NOUN,,KATAKANA,,,-,マノスフィア,,manosufia,manosfera,"potocznie; androsfera, nieformalna sieć blogów, forów internetowych i stron internetowych, które skupiają się na kwestiach związanych z mężczyznami i męskością",DICTIONARY2_SOURCE,,GroupId: 2868422
+318065,WORD_NOUN,,HIRAGANA,,,共同育児,きょうどういくじ,,kyoudou ikuji,wspólne rodzicielstwo,,DICTIONARY2_SOURCE,,GroupId: 2868423
+318066,WORD_NOUN,,HIRAGANA,,,共同養育,きょうどうよういく,,kyoudou youiku,"wspólne rodzicielstwo
+wspólna opieka nad dzieckiem",,DICTIONARY2_SOURCE,,GroupId: 2868424
+318067,"WORD_ADJECTIVE_NO
+WORD_NOUN",,KATAKANA_HIRAGANA,,,インイヤー型,インイヤーがた,,in'iyaa gata,"słuchawki douszne (nieuszczelniające kanału słuchowego)
+otwarte (słuchawki douszne)
+wewnątrz małżowiny usznej",,DICTIONARY2_SOURCE,,GroupId: 2868425
+318068,"WORD_ADJECTIVE_NO
+WORD_NOUN",,KATAKANA_HIRAGANA,,,インイヤ型,インイヤーがた,,in'iyaa gata,"słuchawki douszne (nieuszczelniające kanału słuchowego)
+otwarte (słuchawki douszne)
+wewnątrz małżowiny usznej",,DICTIONARY2_SOURCE,,GroupId: 2868425
+318069,"WORD_ADJECTIVE_NO
+WORD_NOUN",,KATAKANA_HIRAGANA,,,インナーイヤー式,インナーイヤーしき,,innaaiyaa shiki,"słuchawki douszne (nieuszczelniające kanału słuchowego)
+otwarte (słuchawki douszne)
+wewnątrz małżowiny usznej",,DICTIONARY2_SOURCE,,GroupId: 2868426
