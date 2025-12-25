@@ -1344,6 +1344,12 @@ public class Kanji2Helper {
 			List<String> meaningLangList;
 			String additionalInfoLang;
 			
+			// sprawdzamy, czy jakies stare tlumaczenia zostalo przygotowane
+			EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.kanjidic2AdditionalDataEntryMap.get(characterInfo.getKanji());
+			
+			// pobranie stare tlumaczen
+			boolean addedOldTranslates = false;
+			
 			if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_ENG) {
 				meaningLangList = meaningList.stream().filter(meaning -> meaning.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.EN).
 						map(meaning -> meaning.getValue()).collect(Collectors.toList());
@@ -1354,9 +1360,33 @@ public class Kanji2Helper {
 			} else if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_POL) {
 				meaningLangList = meaningList.stream().filter(meaning -> meaning.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL).
 						map(meaning -> meaning.getValue()).collect(Collectors.toList());
-				
+								
 				additionalInfoLang = additionalInfoList.stream().filter(additionalInfo -> additionalInfo.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL).
 						map(additionalInfo -> additionalInfo.getValue()).findFirst().orElse(null);
+				
+				if (config.addOldPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.oldKanjiEntryForDictionary != null) { // czy stare dane zostaly przygotowane
+
+					KanjiEntryForDictionary oldKanjiEntryForDictionary = entryAdditionalDataEntry.oldKanjiEntryForDictionary;
+					
+					// jezeli nowego tlumaczenia nie ma, ale jest stare to uzupelniamy o stare tlumaczenie
+					if (meaningLangList.size() == 0) {
+						if (oldKanjiEntryForDictionary.getPolishTranslates().size() != 1 || oldKanjiEntryForDictionary.getPolishTranslates().get(0).equals("-") == false) {
+							meaningLangList.add("STARE_ZNACZENIE");
+							meaningLangList.add("---");
+							meaningLangList.add("---");
+							
+							meaningLangList.addAll(new ArrayList<String>(oldKanjiEntryForDictionary.getPolishTranslates()));
+							
+							addedOldTranslates = true;
+						}
+					}
+					
+					if (additionalInfoLang == null) { // jeszcze informacje dodatkowe						
+						if (oldKanjiEntryForDictionary.getInfo().equals("") == false) {
+							additionalInfoLang = "STARE_INFO\n" + "---\n---\n" + oldKanjiEntryForDictionary.getInfo();
+						}
+					}
+				}
 				
 			} else {
 				throw new RuntimeException();
@@ -1376,13 +1406,10 @@ public class Kanji2Helper {
 			csvWriter.write(Helper.convertListToString(meaningLangList)); columnsNo++;
 			csvWriter.write(additionalInfoLang != null ? additionalInfoLang : ""); columnsNo++;
 			
-			// uzupelnienie o dodatkowe dane
+			// uzupelnienie o dodatkowe dane (stary sposob, ale niech zostanie na pamiatke)
 			if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_POL) {
 				
-				// sprawdzamy, czy cos zostalo przygotowane
-				EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.kanjidic2AdditionalDataEntryMap.get(characterInfo.getKanji());
-
-				if (config.addOldPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.oldKanjiEntryForDictionary != null) {
+				if (addedOldTranslates == false && config.addOldPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.oldKanjiEntryForDictionary != null) {
 					
 					KanjiEntryForDictionary oldKanjiEntryForDictionary = entryAdditionalDataEntry.oldKanjiEntryForDictionary;
 					
