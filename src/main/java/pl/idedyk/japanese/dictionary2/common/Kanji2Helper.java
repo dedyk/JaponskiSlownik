@@ -1702,6 +1702,12 @@ public class Kanji2Helper {
 				
 			}
 		}
+		
+		Misc2Info misc2 = characterInfo.getMisc2();
+		
+		if (misc2 != null) {
+			kanjiEntryForDictionary.setUsed(misc2.isUsed());			
+		}
 	}
 	
 	private class EntryPartConverterEnd {
