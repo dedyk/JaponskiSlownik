@@ -125,12 +125,14 @@ public class GetKanjiFromOldDictionary {
 			// pobieramy znaczenie ze starego slownika
 			KanjiEntryForDictionary oldKanjiEntryForDictionary = kanji2Helper.getOldKanjiEntryForDictionary(currentKanji);
 			
-			if (oldKanjiEntryForDictionary != null) {
-				entryAdditionalData.setOldKanjiEntryForDictionary(characterInfo.getKanji(), oldKanjiEntryForDictionary);
+			if (oldKanjiEntryForDictionary == null) {
+				throw new Exception("Can't find kanji: " + characterInfo.getKanji() + " in old dictionary. Please manually add.");
+			}			
+			
+			entryAdditionalData.setOldKanjiEntryForDictionary(characterInfo.getKanji(), oldKanjiEntryForDictionary);
 				
-				// dodanie dodatkowych informacji ze starego slownika
-				characterInfo = kanji2Helper.addDatasFromOldKanjiEntryForDictionary(characterInfo, oldKanjiEntryForDictionary);
-			}
+			// dodanie dodatkowych informacji ze starego slownika
+			characterInfo = kanji2Helper.addDatasFromOldKanjiEntryForDictionary(characterInfo, oldKanjiEntryForDictionary);
 							
 			result.getCharacterList().add(characterInfo);
 			

@@ -29,6 +29,10 @@ public class UpdateKanjiOldPolishDictionary {
 			// pobieramy kanji w starym formacie slownika
 			KanjiEntryForDictionary oldKanjiEntryForDictionary = kanji2Helper.getOldKanjiEntryForDictionary(currentPolishKanjiCharacterInfo.getKanji());
 
+			if (oldKanjiEntryForDictionary == null) {
+				throw new Exception("Can't find kanji: " + currentPolishKanjiCharacterInfo.getKanji() + " in old dictionary. Please manually add.");
+			}
+			
 			// aktualizacja kanji w starym formacie
 			kanji2Helper.updateOldKanjiEntryForDictionaryFromCharacterInfo(oldKanjiEntryForDictionary, currentPolishKanjiCharacterInfo);
 

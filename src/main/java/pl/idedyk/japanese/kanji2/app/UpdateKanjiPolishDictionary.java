@@ -1,5 +1,8 @@
 package pl.idedyk.japanese.kanji2.app;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
@@ -27,6 +30,9 @@ public class UpdateKanjiPolishDictionary {
 		// aktualizacja naglowka
 		kanji2Helper.updateHeaderKanjidic2(sourceKanjidic2, polishDictionaryKanjidic2);
 		
+		// lista nowych kanji do dodania manualnie
+		List<String> newKanjiList = new ArrayList<>();
+		
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
 		
 		// chodzimy po wszystkich elementach w polskim slowniku kanji i sprawdzamy, czy nie nastapila zmiana
@@ -36,7 +42,6 @@ public class UpdateKanjiPolishDictionary {
 			KanjiCharacterInfo englishKanjiCharacterInfo = kanji2Helper.getKanjiFromKanjidic2(currentPolishKanjiCharacterInfo.getKanji());
 			
 			if (englishKanjiCharacterInfo == null) { // ten element zostal skasowany
-				
 				System.out.println("Deleted kanji: " + currentPolishKanjiCharacterInfo.getKanji());
 				
 				kanji2Helper.deleteKanjiFromPolishDictionary(currentPolishKanjiCharacterInfo.getKanji());
@@ -52,6 +57,22 @@ public class UpdateKanjiPolishDictionary {
 			if (needManuallyChange == true) {
 				kanjidic2ManuallyChangeList.getCharacterList().add(currentPolishKanjiCharacterInfo);
 			}
+		}
+		
+		// chodzenie po wszystkich elementach angielskiego slownika kanji i sprawdzenie, czy cos nie zostalo dodane
+		for (KanjiCharacterInfo currentEnglishKanjiCharacterInfo : sourceKanjidic2.getCharacterList()) {
+			
+			// szukanie kanji w polskim slowniku
+			KanjiCharacterInfo kanjiFromPolishDictionaryKanjidic2 = kanji2Helper.getKanjiFromPolishDictionaryKanjidic2(currentEnglishKanjiCharacterInfo.getKanji());
+			
+			if (kanjiFromPolishDictionaryKanjidic2 == null) { // nowe kanji, ktorego nie ma w polskim slowniku				
+				newKanjiList.add(currentEnglishKanjiCharacterInfo.getKanji());				
+			}			
+		}
+		
+		if (newKanjiList.size() > 0) {
+			throw new Exception("Can't find kanjis: " + newKanjiList + " in old dictionary. Please manually add to old dictionary and "
+					+ "run kanji2_get-kanji-from-old-dictionary.sh.");
 		}
 
 		// walidacja slow
