@@ -25339,8 +25339,9 @@ reduktor echa",telekomunikacja; ang: echo canceller,DICTIONARY2_SOURCE,,GroupId:
 311296,WORD_NOUN,,KATAKANA,,,-,ネイション,,neishon,"naród
 nacja",ang: nation,DICTIONARY2_SOURCE,,GroupId: 2490570
 311297,WORD_NOUN,,KATAKANA,,,-,オプチカル,,opuchikaru,optyczny,ang: optical,DICTIONARY2_SOURCE,,GroupId: 1035080
-311298,WORD_NOUN,,KATAKANA,,,-,ソシャゲー,,sosha gee,"gra towarzyska
-gra społecznościowa",skrót; ang: social game,DICTIONARY2_SOURCE,,GroupId: 2802470
+311298,WORD_NOUN,,KATAKANA,,,-,ソシャゲー,,sosha gee,"gra mobilna (zwłaszcza online, darmowa, ang: social game)
+gra społecznościowa (przestarzałe słowo; ang: social game)
+sieciowa gra społecznościowa (przestarzałe słowo; ang: social game)",skrót,DICTIONARY2_SOURCE,,GroupId: 2802470
 311299,WORD_NOUN,,KATAKANA,,,-,ターミナルエミュレーター,,taaminaru emyureetaa,emulator terminala,informatyka; ang: terminal emulator,DICTIONARY2_SOURCE,,GroupId: 2306680
 311300,WORD_NOUN,,KATAKANA,,,-,ロイヤルストレートフラッシュ,,roiyaru sutoreeto furasshu,poker królewski,gra w karty; ang: royal straight flush,DICTIONARY2_SOURCE,,GroupId: 2495060
 311301,WORD_NOUN,,KATAKANA,,,-,ロイヤル・ストレート・フラッシュ,,roiyaru sutoreeto furasshu,poker królewski,gra w karty; ang: royal straight flush,DICTIONARY2_SOURCE,,GroupId: 2495060
@@ -39902,9 +39903,7 @@ być zuchwałym",potocznie,DICTIONARY2_SOURCE,,GroupId: 2868504
 318237,WORD_NOUN,,HIRAGANA_KATAKANA,,,豚骨スープ,とんこつスープ,,tonkotsu suupu,"rosół z kości wieprzowych
 bulion wieprzowy","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2868508
 318238,WORD_NOUN,,HIRAGANA,,,接続詞省略,せつぞくししょうりゃく,,setsuzokushi shouryaku,asyndeton,gramatyka; konstrukcja składniowa zaliczana do figur retorycznych polegająca na łączeniu zdań lub ich części bez użycia spójnika,DICTIONARY2_SOURCE,,GroupId: 2868510
-318239,"WORD_ADJECTIVE_NO
-WORD_NOUN",,HIRAGANA,,,ホモ接合,ほもせつごう,,homo setsugou,homozygotyczny,genetyka,"DICTIONARY2_SOURCE
-TO_DELETE",,
+318239,WORD_PRONOUN,,HIRAGANA,,,-,あんたはん,,antahan,ty,honoryfikatywnie; dialekt Kansai; używane również w nieformalnych rozmowach w znaczeniu niehonorowym,DICTIONARY2_SOURCE,,GroupId: 2868546
 318240,WORD_NOUN,,KATAKANA_HIRAGANA,,,ヘミ接合体,ヘミせつごうたい,,hemi setsugoutai,hemizygota,genetyka,DICTIONARY2_SOURCE,,GroupId: 2868512
 318241,WORD_NOUN,,HIRAGANA,,,鱗甲目,りんこうもく,,rinkoumoku,łuskowiec,,DICTIONARY2_SOURCE,,GroupId: 2868514
 318242,WORD_NOUN,,HIRAGANA,,,柏崎刈羽,かしわざきかりわ,,kashiwazaki kariwa,Kashiwazaki Kariwa,nazwa miejsca,DICTIONARY2_SOURCE,,GroupId: 5591767
@@ -40233,3 +40232,19 @@ WORD_ADJECTIVE_NO",,KATAKANA,,,-,オープンエアー,,oopun' eaa,"na powietrzu
 na świeżym powietrzu
 otwarta przestrzeń
 na zewnątrz",ang: open-air,DICTIONARY2_SOURCE,,GroupId: 1033010
+318343,WORD_PRONOUN,,KATAKANA,,,-,アンタハン,,antahan,ty,honoryfikatywnie; dialekt Kansai; używane również w nieformalnych rozmowach w znaczeniu niehonorowym,DICTIONARY2_SOURCE,,GroupId: 2868546
+318344,WORD_NOUN,,HIRAGANA,,,施条銃,しじょうじゅう,,shijoujuu,karabin,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868553
+318345,WORD_NOUN,,HIRAGANA,,,下腕,かわん,,kawan,przedramię,,DICTIONARY2_SOURCE,,GroupId: 2868554
+318346,WORD_NOUN,,KATAKANA,,,-,オークショニア,,ookushonia,licytator,ang: auctioneer,DICTIONARY2_SOURCE,,GroupId: 2868555
+318347,WORD_NOUN,,KATAKANA,,,-,エコチェン,,ekochen,"kabina pogłosowa
+komora pogłosowa",skrót; potocznie; ang: echo chamber,DICTIONARY2_SOURCE,,GroupId: 2868556
+318348,WORD_NOUN,,HIRAGANA,,,横隔神経,おうかくしんけい,,oukaku shinkei,nerw przeponowy,anatomia,DICTIONARY2_SOURCE,,GroupId: 2868558
+318349,WORD_NOUN,,HIRAGANA,,,天津,てんしん,,tenshin,Tiencin,"nazwa miejsca; jedno z czterech miast wydzielonych Chin, znajdujące się pomiędzy Pekinem a zatoką Bohai, jeden z największych portów świata i specjalna strefa ekonomiczna ustanowiona po trzęsieniu ziemi z 1976",DICTIONARY2_SOURCE,"DUPLICATE 42819
+DUPLICATE 318350
+DUPLICATE 318351",GroupId: 5540732
+318350,WORD_NOUN,,KATAKANA,,,天津,ティエンチン,,tienchin,Tiencin,"nazwa miejsca; jedno z czterech miast wydzielonych Chin, znajdujące się pomiędzy Pekinem a zatoką Bohai, jeden z największych portów świata i specjalna strefa ekonomiczna ustanowiona po trzęsieniu ziemi z 1976",DICTIONARY2_SOURCE,"DUPLICATE 42819
+DUPLICATE 318349
+DUPLICATE 318351",GroupId: 5540732
+318351,WORD_NOUN,,KATAKANA,,,天津,ティエンジン,,tienjin,Tiencin,"nazwa miejsca; jedno z czterech miast wydzielonych Chin, znajdujące się pomiędzy Pekinem a zatoką Bohai, jeden z największych portów świata i specjalna strefa ekonomiczna ustanowiona po trzęsieniu ziemi z 1976",DICTIONARY2_SOURCE,"DUPLICATE 42819
+DUPLICATE 318349
+DUPLICATE 318350",GroupId: 5540732
