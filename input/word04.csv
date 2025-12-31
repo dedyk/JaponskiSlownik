@@ -19617,9 +19617,11 @@ rozstrzygnąć sprawę",,DICTIONARY2_SOURCE,,GroupId: 1707740
 308718,WORD_NOUN,,HIRAGANA,,,白うり,しろうり,,shirouri,"ogórek melon
 melon",gatunek ogórka z jadalnym owocem należący do rodziny jednorocznych roślin dyniowatych,DICTIONARY2_SOURCE,,GroupId: 1841220
 308719,"WORD_EXPRESSION
-WORD_NOUN",,HIRAGANA,,,わが君,わがきみ,,wa ga kimi,"mój pan
+WORD_NOUN
+WORD_PRONOUN",,HIRAGANA,,,わが君,わがきみ,,wa ga kimi,"mój pan
 mój władca
-ty (serdecznie i pełen szacunku)",,DICTIONARY2_SOURCE,,GroupId: 1196680
+ty (język poufały; uprzejmie)
+mój drogi (język poufały; uprzejmie)",poetycki termin,DICTIONARY2_SOURCE,,GroupId: 1196680
 308720,"WORD_ADVERB
 WORD_EXPRESSION",,HIRAGANA,,,年がら年じゅう,ねんがらねんじゅう,,nen gara nen juu,"przez cały rok
 przez calutki rok
@@ -30583,7 +30585,10 @@ WORD_NOUN",,HIRAGANA,,,非の打ちどころ,ひのうちどころ,,hi no uchi d
 wada
 słaby punkt
 niedociągnięcie",,DICTIONARY2_SOURCE,,GroupId: 2865927
-313956,WORD_NOUN,,KATAKANA_HIRAGANA,,,ロシア帽,ロシアぼう,,roshia bou,uszanka,"odzież; ciepłe zimowe nakrycie głowy, wykonane najczęściej z futra, z charakterystycznymi klapami chroniącymi uszy od mrozu",DICTIONARY2_SOURCE,,GroupId: 2865930
+313956,WORD_NOUN,,KATAKANA_HIRAGANA,,,ロシア帽,ロシアぼう,,roshia bou,"uszanka
+uszatka
+czapka uszanka
+czapka uszatka","odzież; ciepłe zimowe nakrycie głowy, wykonane najczęściej z futra, z charakterystycznymi klapami chroniącymi uszy od mrozu",DICTIONARY2_SOURCE,,GroupId: 2865930
 313957,WORD_NOUN,,HIRAGANA,,,労働不能,ろうどうふのう,,roudou funou,niezdolność do pracy,,DICTIONARY2_SOURCE,,GroupId: 2865935
 313958,WORD_NOUN,,HIRAGANA,,,単穴,たんあな,,tan'ana,"możliwy zwycięzca (w wyścigu konnym)
 trzeci faworyt",wyścigi konne,DICTIONARY2_SOURCE,,GroupId: 2865938
@@ -40456,3 +40461,75 @@ zespół boczny opuszki",medycyna; zespół neurologiczny,DICTIONARY2_SOURCE,,Gr
 318432,WORD_NOUN,,HIRAGANA,,,鼻口部,びこうぶ,,bikoubu,"pysk
 pyszczek","np. psa, kota",DICTIONARY2_SOURCE,,GroupId: 2868604
 318433,WORD_NOUN,,KATAKANA,,,-,アニバ,,aniba,rocznica,skrót; potocznie; ang: anniversary,DICTIONARY2_SOURCE,,GroupId: 2868608
+318434,WORD_EXPRESSION,,HIRAGANA,,,とりこみ中,とりこみちゅう,,tori komi chuu,"w środku czegoś
+zajęty czymś
+w zamieszaniu w wyniku czegoś nieprzewidzianego
+obecnie importowane lub przechwytywane dane",,DICTIONARY2_SOURCE,,GroupId: 1326710
+318435,WORD_EXPRESSION,,HIRAGANA,,,取りこみ中,とりこみちゅう,,tori komi chuu,"w środku czegoś
+zajęty czymś
+w zamieszaniu w wyniku czegoś nieprzewidzianego
+obecnie importowane lub przechwytywane dane",,DICTIONARY2_SOURCE,,GroupId: 1326710
+318436,WORD_NOUN,,HIRAGANA,,,スズメ蜂,すずめばち,,suzume bachi,"szerszeń
+osa (z podrodziny Vespinae)
+szerszeń azjatycki (gatunek owada z rodziny osowatych, największy przedstawiciel rodzaju Vespa, Vespa mandarinia)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1373590
+318437,WORD_NOUN,,KATAKANA,,,-,クリーピーパスタ,,kuriipiipasuta,creepypasta,"internet; fikcyjna i straszna historia, przybierająca zwykle formę miejskiej legendy rozpowszechniana za pomocą internetu, która ma na celu przestraszyć czytelnika",DICTIONARY2_SOURCE,,GroupId: 2868544
+318438,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,お値打ち,おねうち,,oneuchi,"okazja
+dobry zakup
+(dobry) stosunek jakości do ceny",,DICTIONARY2_SOURCE,,GroupId: 2868589
+318439,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,お値打,おねうち,,oneuchi,"okazja
+dobry zakup
+(dobry) stosunek jakości do ceny",,DICTIONARY2_SOURCE,,GroupId: 2868589
+318440,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,御値打ち,おねうち,,oneuchi,"okazja
+dobry zakup
+(dobry) stosunek jakości do ceny",,DICTIONARY2_SOURCE,,GroupId: 2868589
+318441,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,御値打,おねうち,,oneuchi,"okazja
+dobry zakup
+(dobry) stosunek jakości do ceny",,DICTIONARY2_SOURCE,,GroupId: 2868589
+318442,WORD_NOUN,,HIRAGANA,,,自然突然変異,しぜんとつぜんへんい,,shizen totsuzen hen'i,"mutacja naturalna
+mutacja samoistna",genetyka,DICTIONARY2_SOURCE,,GroupId: 2868601
+318443,WORD_NOUN,,HIRAGANA,,,下足札,げそくふだ,,gesokufuda,numerek,"otrzymywany po zdeponowaniu obuwia, np. w łaźni publicznej",DICTIONARY2_SOURCE,,GroupId: 2868606
+318444,WORD_NOUN,,KATAKANA,,,-,ウォールハック,,wooruhakku,wallhack,gry wideo; metoda oszukiwania w grach FPS polegająca na widzeniu przeciwników przez ścianę,DICTIONARY2_SOURCE,,GroupId: 2868607
+318445,WORD_NOUN,,HIRAGANA,,,草紫陽花,くさあじさい,,kusa ajisai,Cardiandra alternifolia,pisanie zwykle z użyciem kana; roślina,DICTIONARY2_SOURCE,,GroupId: 2868609
+318446,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,クサアジサイ,,kusa ajisai,Cardiandra alternifolia,pisanie zwykle z użyciem kana; roślina,DICTIONARY2_SOURCE,,GroupId: 2868609
+318447,WORD_NOUN,,HIRAGANA,,,噴水井戸,ふんすいいど,,funsui ido,studnia artezyjska,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868614
+318448,WORD_NOUN,,HIRAGANA,,,たき落とし,たきおとし,,taki otoshi,"żarzące się węgle
+żarzące się resztki ognia",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868615
+318449,WORD_NOUN,,HIRAGANA,,,焚き落とし,たきおとし,,taki otoshi,"żarzące się węgle
+żarzące się resztki ognia",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868615
+318450,WORD_NOUN,,HIRAGANA,,,焚落し,たきおとし,,taki otoshi,"żarzące się węgle
+żarzące się resztki ognia",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868615
+318451,WORD_NOUN,,HIRAGANA,,,極径,きょっけい,,kyokkei,oś biegunowa,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868616
+318452,WORD_NOUN,,KATAKANA,,,-,コーストガード,,koosuto gaado,straż przybrzeżna,ang: coast guard,DICTIONARY2_SOURCE,,GroupId: 2868617
+318453,WORD_NOUN,,KATAKANA,,,-,コースト・ガード,,koosuto gaado,straż przybrzeżna,ang: coast guard,DICTIONARY2_SOURCE,,GroupId: 2868617
+318454,WORD_NOUN,,HIRAGANA,,,次中音,じちゅうおん,,jichuuon,tenor,muzyka; rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868618
+318455,WORD_NOUN,,KATAKANA_HIRAGANA,,,スタート台,スタートだい,,sutaato dai,blok startowy,sport; w pływaniu,DICTIONARY2_SOURCE,,GroupId: 2868619
+318456,WORD_NOUN,,KATAKANA_HIRAGANA,,,マラソン競走,マラソンきょうそう,,marason kyousou,"maraton
+wyścig maratoński",,DICTIONARY2_SOURCE,,GroupId: 2868620
+318457,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,株主優待,かぶぬしゆうたい,,kabunushi yuutai,korzyść dla akcjonariuszy,biznes,DICTIONARY2_SOURCE,,GroupId: 2868623
+318458,WORD_NOUN,,HIRAGANA,,,外注先,がいちゅうさき,,gaichuusaki,"podwykonawca
+outsourcer",,DICTIONARY2_SOURCE,,GroupId: 2868624
+318459,"WORD_EXPRESSION
+WORD_ADVERB",,HIRAGANA,,,-,のっけから,,nokke kara,od samego początku,,DICTIONARY2_SOURCE,,GroupId: 2868625
+318460,WORD_SUFFIX,,HIRAGANA,,,顔,がお,,gao,"przypominający ...
+posiadający cechy lub właściwości ...
+wyglądający jak ...
+z wyrazem twarzy podobnym do ...
+z aurą ...",potocznie; po rzeczowniku lub czasowniku w formie bez masu,DICTIONARY2_SOURCE,"DUPLICATE 198
+DUPLICATE 48151
+DUPLICATE 64105",GroupId: 2868628
+318461,WORD_SUFFIX,,HIRAGANA,,,貌,がお,,gao,"przypominający ...
+posiadający cechy lub właściwości ...
+wyglądający jak ...
+z wyrazem twarzy podobnym do ...
+z aurą ...",potocznie; po rzeczowniku lub czasowniku w formie bez masu,DICTIONARY2_SOURCE,"DUPLICATE 26125
+DUPLICATE 48557",GroupId: 2868628
+318462,WORD_SUFFIX,,HIRAGANA,,,顏,がお,,gao,"przypominający ...
+posiadający cechy lub właściwości ...
+wyglądający jak ...
+z wyrazem twarzy podobnym do ...
+z aurą ...",potocznie; po rzeczowniku lub czasowniku w formie bez masu,DICTIONARY2_SOURCE,DUPLICATE 26126,GroupId: 2868628
