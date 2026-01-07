@@ -24430,10 +24430,12 @@ kazamata",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2864645
 310821,WORD_NOUN,,KATAKANA,,,-,ラベリアマイク,,raberia maiku,mikrofon Lavalier,"mikrofon oferują obsługę bez użycia rąk i wyraźny, czysty dźwięk, który doskonale nadaje się do mówienia",DICTIONARY2_SOURCE,,GroupId: 2864647
 310822,WORD_NOUN,,KATAKANA,,,-,ラベリア・マイク,,raberia maiku,mikrofon Lavalier,"mikrofon oferują obsługę bez użycia rąk i wyraźny, czysty dźwięk, który doskonale nadaje się do mówienia",DICTIONARY2_SOURCE,,GroupId: 2864647
 310823,WORD_NOUN,,KATAKANA,,,-,コロン,,koron,woda kolońska,skrót; słowo pochodzenia francuskiego,DICTIONARY2_SOURCE,"DUPLICATE 18028
-DUPLICATE 310824",GroupId: 2864650
+DUPLICATE 310824
+DUPLICATE 318632",GroupId: 2864650
 310824,WORD_NOUN,,KATAKANA,,,-,コロン,,koron,"osadnik
 kolonista",fra: colon,DICTIONARY2_SOURCE,"DUPLICATE 18028
-DUPLICATE 310823",GroupId: 2864651
+DUPLICATE 310823
+DUPLICATE 318632",GroupId: 2864651
 310825,WORD_NOUN,,KATAKANA,,,ＢＹＯＤ,ビーワイオーディー,,bii wai oo dii,możliwość korzystania z prywatnych urządzeń w pracy w celach służbowych,"ang: bring your own device, BYOD",DICTIONARY2_SOURCE,DUPLICATE 276218,GroupId: 2864649
 310826,WORD_NOUN,,KATAKANA_HIRAGANA,,,コルベット艦,コルベットかん,,korubetto kan,korweta,klasa współczesnych okrętów umiarkowanej wielkości,DICTIONARY2_SOURCE,,GroupId: 2864652
 310827,WORD_NOUN,,KATAKANA_HIRAGANA,,,Ｊ隊,ジェイたい,,jeitai,Japońskie Siły Samoobrony,slang,DICTIONARY2_SOURCE,,GroupId: 2864653
@@ -28130,7 +28132,7 @@ wariat (wrażliwie)
 entuzjasta
 zapaleniec
 fanatyk",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 241450,GroupId: 1221900
-312706,WORD_NOUN,,HIRAGANA,,,リン酸,りんさん,,rin san,kwas fosforowy,H3PO4,DICTIONARY2_SOURCE,,GroupId: 1143540
+312706,WORD_NOUN,,HIRAGANA,,,リン酸,りんさん,,rin san,kwas fosforowy,chemia,DICTIONARY2_SOURCE,,GroupId: 1143540
 312707,WORD_NOUN,,HIRAGANA,,,過ヨウ素酸,かようそさん,,ka you sosan,kwas nadjodowy,"chemia; nieorganiczny związek chemiczny, kwas tlenowy jodu na stopniu utlenienia VII",DICTIONARY2_SOURCE,,GroupId: 2638100
 312708,WORD_NOUN,,KATAKANA,,,-,サカラメント,,sakaramento,sakrament,chrześcijaństwo; ang: sacrament,DICTIONARY2_SOURCE,,GroupId: 2201340
 312709,"WORD_NOUN
@@ -34617,8 +34619,9 @@ piec Tatara (pisane również jako 鑪)",pisanie zwykle z użyciem kana,DICTIONA
 315944,WORD_NOUN,,KATAKANA,,,-,タタラ,,tatara,"mieszek nożny
 tradycyjny japoński piec gliniany do wytapiania żelaza (obsługiwany za pomocą dużych nożnych miechów) (pisane również jako 鑪)
 piec Tatara (pisane również jako 鑪)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1891330
-315945,WORD_NOUN,,HIRAGANA_KATAKANA,,,二リン酸,にリンさん,,nirin san,kwas difosforowy,chemia,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2865412
+315945,WORD_NOUN,,KATAKANA_HIRAGANA,,,アデノシン二リン酸,アデノシンにりんさん,,adenoshin nirinsan,"adenozyno-5'-difosforan
+difosforan adenozyny
+ADP",biochemia,DICTIONARY2_SOURCE,,GroupId: 2196170
 315946,WORD_NOUN,,KATAKANA,,,-,カーリット,,kaaritto,Carlit,chemia; znak towarowy; nadchloran amonu,DICTIONARY2_SOURCE,,GroupId: 2867100
 315947,WORD_NOUN,,HIRAGANA,,,大々ゲイマ,だいだいげいま,,daidai geima,bardzo duży ruch skoczka,go (gra),DICTIONARY2_SOURCE,,GroupId: 2867134
 315948,WORD_NOUN,,HIRAGANA,,,大大ゲイマ,だいだいげいま,,daidai geima,bardzo duży ruch skoczka,go (gra),DICTIONARY2_SOURCE,,GroupId: 2867134
@@ -40908,9 +40911,56 @@ grywna (termin historyczny; jednostka walutowa i miara wagi w średniowiecznej R
 318627,WORD_NOUN,,KATAKANA_HIRAGANA,,,トルクメン語,トルクメンご,,torukumen go,język turkmeński,język z oguzyjskiej grupy rodziny języków turkijskich,DICTIONARY2_SOURCE,,GroupId: 2868711
 318628,WORD_NOUN,,KATAKANA,,,-,マナト,,manato,manat,waluta Azerbejdżanu i Turkmenistanu; słowo pochodzi z języka azerbejdżańskiego; słowo pochodzi z języka turkmenistanskiego,DICTIONARY2_SOURCE,,GroupId: 2868712
 318629,WORD_NOUN,,KATAKANA,,,-,コルドバ,,korudoba,cordoba oro,waluta Nikaragui; słowo pochodzenia hiszpańskiego,DICTIONARY2_SOURCE,,GroupId: 2868715
-318630,WORD_NOUN,,KATAKANA,,,-,ブル,,puru,"xxx
-xxx",,,,GroupId: 2868727
-318631,WORD_NOUN,,KATAKANA,,,-,タラ,,tara,"xxx
-xxx",,,,GroupId: 2868729
-318632,WORD_NOUN,,KATAKANA,,,-,コロン,,koron,"xxx
-xxx",,,,GroupId: 2868739
+318630,WORD_NOUN,,KATAKANA,,,-,ブル,,buru,birr,jednostka płatnicza w Etiopii; słowo pochodzi z języka amharskiego,DICTIONARY2_SOURCE,"DUPLICATE 17838
+DUPLICATE 284812",GroupId: 2868727
+318631,WORD_NOUN,,KATAKANA,,,-,タラ,,tara,"tālā
+tala",jednostka monetarna Samoa; słowo pochodzi z języka samoańskiego,DICTIONARY2_SOURCE,"DUPLICATE 30599
+DUPLICATE 205375",GroupId: 2868729
+318632,WORD_NOUN,,KATAKANA,,,-,コロン,,koron,"colón
+colon",waluta Kostaryki i dawna waluta Salwadoru; słowo pochodzenia hiszpańskiego,DICTIONARY2_SOURCE,"DUPLICATE 18028
+DUPLICATE 310823
+DUPLICATE 310824",GroupId: 2868739
+318633,WORD_NOUN,,HIRAGANA,,,二リン酸,にりんさん,,nirinsan,kwas difosforowy,chemia,DICTIONARY2_SOURCE,,GroupId: 2865412
+318634,WORD_NOUN,,HIRAGANA,,,二燐酸,にりんさん,,nirinsan,kwas difosforowy,chemia,DICTIONARY2_SOURCE,,GroupId: 2865412
+318635,WORD_NOUN,,KATAKANA,,,Ｖチューバ―,ブイチューバー,,buichuubaa,"VTuber
+wirtualny YouTuber
+YouTuber reprezentowany przez animowaną postać (wyjaśnienie)",skrót; słowo pochodzenia angielskiego,DICTIONARY2_SOURCE,,GroupId: 2838075
+318636,WORD_NOUN,,HIRAGANA,,,地域番号,ちいきばんごう,,chiiki bangou,"kod regionu (np. na płycie DVD)
+numer kierunkowy (sieci telefonicznej)",,DICTIONARY2_SOURCE,,GroupId: 2868667
+318637,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,行動を起こす,こうどうをおこす,,koudou o okosu,"podjąć działania
+podjąć kroki",,DICTIONARY2_SOURCE,,GroupId: 2868682
+318638,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,行動をおこす,こうどうをおこす,,koudou o okosu,"podjąć działania
+podjąć kroki",,DICTIONARY2_SOURCE,,GroupId: 2868682
+318639,WORD_NOUN,,KATAKANA,,,-,トルクメン,,torukumen,"Turkmen
+Turkmenka
+Turkmenistan (przestarzałe słowo)",,DICTIONARY2_SOURCE,,GroupId: 2868713
+318640,WORD_NOUN,,HIRAGANA,,,交感神経系,こうかんしんけいけい,,koukan shinkeikei,układ współczulny,"anatomia; jedna z dwóch głównych części autonomicznego układu nerwowego (obok układu przywspółczulnego), odpowiedzialna przede wszystkim za mobilizację organizmu",DICTIONARY2_SOURCE,,GroupId: 2868714
+318641,WORD_NOUN,,HIRAGANA,,,青斑核,せいはんかく,,seihankaku,miejsce sinawe,"anatomia; jądro pnia mózgu, położone z tyłu mostu",DICTIONARY2_SOURCE,,GroupId: 2868716
+318642,WORD_NOUN,,KATAKANA_HIRAGANA,,,シャイ・ドレーガー症候群,シャイドレーガーしょうこうぐん,,shai doreegaa shoukougun,zespół Shy′a-Dragera,medycyna; rzadka choroba neurodegeneracyjna,DICTIONARY2_SOURCE,,GroupId: 2868717
+318643,WORD_NOUN,,KATAKANA_HIRAGANA,,,シャイドレーガー症候群,シャイドレーガーしょうこうぐん,,shai doreegaa shoukougun,zespół Shy′a-Dragera,medycyna; rzadka choroba neurodegeneracyjna,DICTIONARY2_SOURCE,,GroupId: 2868717
+318644,WORD_NOUN,,KATAKANA_HIRAGANA,,,パーキンソン症候群,パーキンソンしょうこうぐん,,paakinson shoukougun,parkinsonizm,medycyna,DICTIONARY2_SOURCE,,GroupId: 2868718
+318645,WORD_NOUN,,KATAKANA,,,-,パーキンソニズム,,paakinsonizumu,parkinsonizm,medycyna,DICTIONARY2_SOURCE,,GroupId: 2868719
+318646,WORD_NOUN,,KATAKANA_HIRAGANA,,,オリーブ橋小脳萎縮症,オリーブきょうしょうのういしゅくしょう,,oriibu kyoushounou ishukushou,zanik oliwkowo-mostowo-móżdżkowy,medycyna,DICTIONARY2_SOURCE,,GroupId: 2868720
+318647,WORD_NOUN,,KATAKANA_HIRAGANA,,,アルツハイマー型認知症,アルツハイマーがたにんちしょう,,arutsuhaimaa gata ninchishou,demencja typu Alzheimera,medycyna,DICTIONARY2_SOURCE,,GroupId: 2868722
+318648,WORD_NOUN,,HIRAGANA,,,滲み,にじみ,,nijimi,"rozmycie
+zaciekanie (farby)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2868724
+318649,WORD_NOUN,,KATAKANA,,,-,アリアリ,,ariari,ariary,jednostka monetarna Madagaskaru; słowo pochodzi z języka malagaskiego,DICTIONARY2_SOURCE,,GroupId: 2868726
+318650,WORD_NOUN,,KATAKANA,,,-,ロチ,,rochi,loti,jednostka monetarna Lesotho. 1 loti = 100 lisente; słowo pochodzi z języka sotho,DICTIONARY2_SOURCE,,GroupId: 2868728
+318651,WORD_NOUN,,KATAKANA,,,-,ソム,,somu,som,jednostka monetarna Kirgistanu; słowo pochodzi z języka kirgiskiego,DICTIONARY2_SOURCE,,GroupId: 2868730
+318652,WORD_NOUN,,KATAKANA,,,-,ケツァル,,ketsaru,quetzal,waluta Gwatemali; słowo pochodzenia hiszpańskiego,DICTIONARY2_SOURCE,,GroupId: 2868731
+318653,WORD_NOUN,,KATAKANA,,,-,リランゲニ,,rirangeni,lilangeni,jednostka monetarna Eswatini,DICTIONARY2_SOURCE,,GroupId: 2868732
+318654,WORD_NOUN,,KATAKANA,,,-,リランゲーニ,,rirangeeni,lilangeni,jednostka monetarna Eswatini,DICTIONARY2_SOURCE,,GroupId: 2868732
+318655,WORD_NOUN,,KATAKANA,,,-,ソフロロジー,,sofurorojii,sofrologia,"technika relaksacyjna i wpływania na świadomość, która ma jako cel wprowadzić równowagę między ciałem a umysłem, ang: sophrology",DICTIONARY2_SOURCE,,GroupId: 2868734
+318656,WORD_ADJECTIVE_NA,,HIRAGANA,,,意味的,いみてき,,imiteki,semantyczny,,DICTIONARY2_SOURCE,,GroupId: 2868735
+318657,WORD_NOUN,,HIRAGANA,,,園芸農家,えんげいのうか,,engei nouka,"ogrodnik
+ogrodniczka",,DICTIONARY2_SOURCE,,GroupId: 2868736
+318658,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,謁見の間,えっけんのま,,ekken no ma,"sala tronowa
+sala audiencyjna",,DICTIONARY2_SOURCE,,GroupId: 2868737
+318659,WORD_NOUN,,KATAKANA,,,-,ミルレイス,,miru reisu,"mil-réis
+milreis",termin historyczny; dawna jednostka walutowa Portugalii i Brazylii; słowo pochodzenia portugalskiego,DICTIONARY2_SOURCE,,GroupId: 2868738
+318660,WORD_NOUN,,KATAKANA,,,-,ミルレース,,miru reesu,"mil-réis
+milreis",termin historyczny; dawna jednostka walutowa Portugalii i Brazylii; słowo pochodzenia portugalskiego,DICTIONARY2_SOURCE,,GroupId: 2868738
+318661,WORD_NOUN,,KATAKANA,,,-,レオン,,reon,leone,jednostka walutowa Sierra Leone,DICTIONARY2_SOURCE,,GroupId: 2868740
