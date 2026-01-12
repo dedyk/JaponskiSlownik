@@ -19500,7 +19500,7 @@ ręczny młynek",,DICTIONARY2_SOURCE,,GroupId: 1903530
 zanęta
 przynęta",,DICTIONARY2_SOURCE,,GroupId: 1754740
 308657,WORD_NOUN,,HIRAGANA,,,木びき,こびき,,kobiki,tracz,,DICTIONARY2_SOURCE,,GroupId: 1807330
-308658,WORD_NOUN,,HIRAGANA,,,皮しん,ひしん,,hishin,wysypka,,DICTIONARY2_SOURCE,,GroupId: 2129050
+308658,WORD_NOUN,,HIRAGANA,,,皮しん,ひしん,,hishin,wysypka,medycyna,DICTIONARY2_SOURCE,,GroupId: 2129050
 308659,WORD_NOUN,,HIRAGANA,,,クソ力,くそぢから,,kuso dikara,"niezwykła siła
 zwierzęca siła
 brutalna siła",,DICTIONARY2_SOURCE,,GroupId: 2026000
@@ -19582,10 +19582,9 @@ kurze odchody",,DICTIONARY2_SOURCE,,GroupId: 1769450
 obłęd
 bzik",medycyna,DICTIONARY2_SOURCE,,GroupId: 1573340
 308700,WORD_NOUN,,HIRAGANA,,,ロウ管,ろうかん,,roukan,przetoka,medycyna,DICTIONARY2_SOURCE,DUPLICATE 311180,GroupId: 2516580
-308701,"WORD_NOUN
-WORD_ADJECTIVE_NO",,HIRAGANA,,,脱そ,だっそ,,dasso,"gangrena
+308701,WORD_NOUN,,HIRAGANA,,,脱そ,だっそ,,dasso,"gangrena
 zgorzel
-zgorzelina",,DICTIONARY2_SOURCE,,GroupId: 1416660
+zgorzelina",medycyna,DICTIONARY2_SOURCE,,GroupId: 1416660
 308702,WORD_NOUN,,HIRAGANA,,,はなし家,はなしか,,hanashika,profesjonalny komiczny opowiadacz historii (rakugo),,DICTIONARY2_SOURCE,,GroupId: 1565160
 308703,WORD_NOUN,,HIRAGANA,,,キリン児,きりんじ,,kirin ji,"cudowne dziecko
 mały geniusz",,DICTIONARY2_SOURCE,,GroupId: 2025990
@@ -28625,7 +28624,7 @@ osłona",,DICTIONARY2_SOURCE,DUPLICATE 81573,GroupId: 1912180
 mijanka
 miejsce odpoczynku
 schronienie",,DICTIONARY2_SOURCE,,GroupId: 1941820
-312975,WORD_NOUN,,KATAKANA_HIRAGANA,,,テング熱,デングねつ,,dengu netsu,denga,gorączka tropikalna,DICTIONARY2_SOURCE,,GroupId: 1966130
+312975,WORD_NOUN,,KATAKANA_HIRAGANA,,,テング熱,デングねつ,,dengu netsu,denga,medycyna; gorączka tropikalna,DICTIONARY2_SOURCE,,GroupId: 1966130
 312976,WORD_NOUN,,HIRAGANA,,,骨灰,こっぱい,,koppai,popiół kostny,,DICTIONARY2_SOURCE,"DUPLICATE 117277
 DUPLICATE 117353",GroupId: 1649380
 312977,WORD_NOUN,,HIRAGANA,,,粉灰,こっかい,,kokkai,popiół kostny,,DICTIONARY2_SOURCE,"DUPLICATE 312978
@@ -40070,10 +40069,7 @@ szczerze",,DICTIONARY2_SOURCE,"DUPLICATE 28248
 DUPLICATE 28249",GroupId: 2868540
 318292,WORD_ADVERB,,HIRAGANA,,,実に,げに,,ge ni,"rzeczywiście
 naprawdę
-faktycznie
-właściwie
-całkiem
-absolutnie",pisanie zwykle z użyciem kana; archaizm; poetycki termin,DICTIONARY2_SOURCE,"DUPLICATE 12442
+faktycznie",pisanie zwykle z użyciem kana; przestarzałe słowo,DICTIONARY2_SOURCE,"DUPLICATE 12442
 DUPLICATE 318352",GroupId: 2868541
 318293,WORD_VERB_U,,HIRAGANA,,,伏せる,ふせる,,fuseru,"położyć się (i zasnąć)
 kłaść się spać
@@ -40258,8 +40254,7 @@ prawdziwie
 szczerze
 faktycznie
 istotnie
-rzeczywiście
-całkiem",formalny lub literacki termin,DICTIONARY2_SOURCE,"DUPLICATE 12442
+rzeczywiście",,DICTIONARY2_SOURCE,"DUPLICATE 12442
 DUPLICATE 318292",GroupId: 1381160
 318353,WORD_EMPTY,,KATAKANA,,,-,ムカツク,,mukatsuku,"czuć się rozdrażniony
 czuć się poirytowany
@@ -40561,10 +40556,10 @@ absurdalny",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2109610
 jedno i drugie",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 110532,GroupId: 1982120
 318475,WORD_NOUN,,HIRAGANA,,,術法,じゅつほう,,jutsuhou,"magia
 czary
-czarnoksięstwo",rzadko używane określenie,DICTIONARY2_SOURCE,DUPLICATE 318476,GroupId: 2868605
+czarnoksięstwo",,DICTIONARY2_SOURCE,DUPLICATE 318476,GroupId: 2868605
 318476,WORD_NOUN,,HIRAGANA,,,術法,じゅっぽう,,juppou,"magia
 czary
-czarnoksięstwo",rzadko używane określenie,DICTIONARY2_SOURCE,DUPLICATE 318475,GroupId: 2868605
+czarnoksięstwo",,DICTIONARY2_SOURCE,DUPLICATE 318475,GroupId: 2868605
 318477,WORD_NOUN,,HIRAGANA,,,鋼尺,こうじゃく,,koujaku,stalowa linijka,,DICTIONARY2_SOURCE,DUPLICATE 318478,GroupId: 2868621
 318478,WORD_NOUN,,HIRAGANA,,,鋼尺,こうしゃく,,koushaku,stalowa linijka,,DICTIONARY2_SOURCE,DUPLICATE 318477,GroupId: 2868621
 318479,"WORD_VERB_U
@@ -41148,3 +41143,58 @@ WORD_ADVERB",,HIRAGANA,,,言う事なす事,いうことなすこと,,iu koto na
 318737,"WORD_EXPRESSION
 WORD_NOUN
 WORD_ADVERB",,HIRAGANA,,,言う事成す事,いうことなすこと,,iu koto nasu koto,"wszystko, co się mówi i robi",,DICTIONARY2_SOURCE,,GroupId: 2868775
+318738,WORD_NOUN,,KATAKANA,,,ＡＤ,エー・ディー,,ee dii,"dyrektor artystyczny (ang: art director)
+asystent reżysera (ang: assistant director)
+drugi reżyser (ang: assistant director)
+analogowo-cyfrowy (ang: analog-to-digital)",,DICTIONARY2_SOURCE,"DUPLICATE 129488
+DUPLICATE 286628
+DUPLICATE 318739",GroupId: 2868778
+318739,WORD_NOUN,,KATAKANA,,,ＡＤ,エーディー,,ee dii,"dyrektor artystyczny (ang: art director)
+asystent reżysera (ang: assistant director)
+drugi reżyser (ang: assistant director)
+analogowo-cyfrowy (ang: analog-to-digital)",,DICTIONARY2_SOURCE,"DUPLICATE 129488
+DUPLICATE 286628
+DUPLICATE 318738",GroupId: 2868778
+318740,WORD_NOUN,,HIRAGANA_KATAKANA,,,個チャ,こチャ,,kocha,"prywatny czat
+prywatna wiadomość",internet; skrót; potocznie,DICTIONARY2_SOURCE,,GroupId: 2868777
+318741,WORD_NOUN,,KATAKANA_HIRAGANA,,,アスペルガー障害,アスペルガーしょうがい,,asuperugaa shougai,zespół Aspergera,"medycyna; zaburzenie neurorozwojowe, obecnie włączane do spektrum autyzmu (ASD), charakteryzujące się trudnościami w interakcjach społecznych i komunikacji, wąskimi, powtarzalnymi zainteresowaniami oraz sztywnymi wzorcami zachowań, przy jednoczesnym zachowaniu przeciętnej lub ponadprzeciętnej inteligencji i prawidłowego rozwoju mowy, co odróżniało go od klasycznego autyzmu",DICTIONARY2_SOURCE,,GroupId: 2868779
+318742,WORD_NOUN,,HIRAGANA,,,常同症,じょうどうしょう,,joudoushou,stereotypia,"psychiatria; ciągłe powtarzanie bezcelowych lub rytualnych ruchów, postaw ciała, wypowiedzi występujące u osób z niepełnosprawnością intelektualną, z zaburzeniami ze spektrum autystycznego, dyskinezami późnymi, stereotypowym zaburzeniem ruchowym, a także z innymi zaburzeniami",DICTIONARY2_SOURCE,,GroupId: 2868780
+318743,WORD_NOUN,,HIRAGANA,,,-,かんてき,,kanteki,mały grill na węgiel drzewny,dialekt Kansai,DICTIONARY2_SOURCE,"DUPLICATE 74851
+DUPLICATE 74883",GroupId: 2868781
+318744,WORD_ADJECTIVE_F,,KATAKANA_HIRAGANA,,,キモ可愛,キモかわ,,kimo kawa,"jednocześnie odpychający i pociągający
+jednocześnie uroczy i obrzydliwy",slang; skrót; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 318745,GroupId: 2868782
+318745,WORD_ADJECTIVE_F,,HIRAGANA,,,キモ可愛,きもかわ,,kimo kawa,"jednocześnie odpychający i pociągający
+jednocześnie uroczy i obrzydliwy",slang; skrót; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 318744,GroupId: 2868782
+318746,WORD_ADJECTIVE_F,,KATAKANA_HIRAGANA,,,きも可愛,キモかわ,,kimo kawa,"jednocześnie odpychający i pociągający
+jednocześnie uroczy i obrzydliwy",slang; skrót; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 318747,GroupId: 2868782
+318747,WORD_ADJECTIVE_F,,HIRAGANA,,,きも可愛,きもかわ,,kimo kawa,"jednocześnie odpychający i pociągający
+jednocześnie uroczy i obrzydliwy",slang; skrót; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 318746,GroupId: 2868782
+318748,WORD_ADJECTIVE_F,,KATAKANA,,,-,キモカワ,,kimo kawa,"jednocześnie odpychający i pociągający
+jednocześnie uroczy i obrzydliwy",slang; skrót; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2868782
+318749,WORD_NOUN,,HIRAGANA,,,同志国,どうしこく,,doushikoku,kraj o podobnych poglądach,,DICTIONARY2_SOURCE,,GroupId: 2868784
+318750,WORD_NOUN,,KATAKANA,,,-,ホモセ,,homo se,seks homoseksualny,skrót; potocznie,DICTIONARY2_SOURCE,,GroupId: 2868785
+318751,WORD_NOUN,,KATAKANA,,,-,レズセックス,,rezu sekkusu,seks lesbijski,potocznie; ang: lesbian sex,DICTIONARY2_SOURCE,,GroupId: 2868787
+318752,WORD_NOUN,,KATAKANA,,,-,レズ・セックス,,rezu sekkusu,seks lesbijski,potocznie; ang: lesbian sex,DICTIONARY2_SOURCE,,GroupId: 2868787
+318753,WORD_NOUN,,KATAKANA,,,-,レズセ,,rezu se,seks lesbijski,skrót; potocznie,DICTIONARY2_SOURCE,,GroupId: 2868788
+318754,WORD_NOUN,,HIRAGANA,,,乳脂計,にゅうしけい,,nyuushikei,"galaktometr
+laktodensymetr",areometr służący do pomiaru gęstości mleka,DICTIONARY2_SOURCE,,GroupId: 2868789
+318755,WORD_NOUN,,HIRAGANA,,,泌乳量,ひつにゅうりょう,,hitsunyuuryou,udój mleka,,DICTIONARY2_SOURCE,,GroupId: 2868790
+318756,WORD_NOUN,,HIRAGANA,,,跨下,こか,,koka,"krocze
+udo
+pachwina",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868791
+318757,WORD_NOUN,,HIRAGANA,,,胯下,こか,,koka,"krocze
+udo
+pachwina",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2868791
+318758,WORD_NOUN,,KATAKANA,,,-,セルカリア,,serukaria,metacerkaria,zoologia; larwa przywr wnętrzniaków; słowo pochodzenia łacińskiego,DICTIONARY2_SOURCE,,GroupId: 2868792
+318759,WORD_NOUN,,KATAKANA,,,-,ケルカリア,,kerukaria,metacerkaria,zoologia; larwa przywr wnętrzniaków; słowo pochodzenia łacińskiego,DICTIONARY2_SOURCE,,GroupId: 2868792
+318760,WORD_NOUN,,KATAKANA,,,-,フルゲート,,furu geeto,???,wyścigi konne; ang: full gate,DICTIONARY2_SOURCE,,GroupId: 2868793
+318761,WORD_NOUN,,KATAKANA,,,-,フル・ゲート,,furu geeto,???,wyścigi konne; ang: full gate,DICTIONARY2_SOURCE,,GroupId: 2868793
+318762,WORD_NOUN,,HIRAGANA,,,二頭引き,にとうびき,,nitou biki,"ciągnięcie przez dwa konie (np. wóz, powóz)
+dwukonny wóz
+dwukonny powóz",,DICTIONARY2_SOURCE,,GroupId: 1462870
+318763,WORD_NOUN,,HIRAGANA,,,二頭引,にとうびき,,nitou biki,"ciągnięcie przez dwa konie (np. wóz, powóz)
+dwukonny wóz
+dwukonny powóz",,DICTIONARY2_SOURCE,,GroupId: 1462870
+318764,WORD_NOUN,,HIRAGANA,,,二頭立,にとうだて,,nitou date,"ciągnięcie przez dwa konie (np. wóz, powóz)
+dwukonny wóz
+dwukonny powóz",,DICTIONARY2_SOURCE,,GroupId: 1462880
