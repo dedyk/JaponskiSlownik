@@ -8,7 +8,7 @@ export CLASSPATH=$HOME/.m2/repository/pl/idedyk/japanese/JapaneseDictionaryAPI/$
 export CLASSPATH=$HOME/.m2/repository/pl/idedyk/japanese/JapaneseDictionaryLuceneCommon/$JAPANESE_DICTIONARY_LUCENE_COMMON_VERSION/JapaneseDictionaryLuceneCommon-$JAPANESE_DICTIONARY_LUCENE_COMMON_VERSION.jar:$CLASSPATH
 
 export CLASSPATH=$HOME/.m2/repository/net/sourceforge/javacsv/javacsv/2.1/javacsv-2.1.jar:$CLASSPATH
-export CLASSPATH=$HOME/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:$CLASSPATH
+export CLASSPATH=$HOME/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:$CLASSPATH
 export CLASSPATH=$HOME/.m2/repository/jaxen/jaxen/1.1.4/jaxen-1.1.4.jar:$CLASSPATH
 
 export CLASSPATH=$HOME/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:$CLASSPATH
