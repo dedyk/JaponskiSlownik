@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.nio.file.Files;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -52,6 +53,7 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.DictionaryNumberInfoReferenc
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.HeaderInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KenteiLevelType;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Misc2Info;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfoVariant;
@@ -92,6 +94,9 @@ public class Kanji2Helper {
 	
 	private List<KanjiEntryForDictionary> oldKanjiPolishDictionaryList;
 	private Map<String, KanjiEntryForDictionary> oldKanjiPolishDictionaryMap;
+	
+	// lista poziomow kentei
+	private Map<String, KenteiLevelType> kanjiKenteiMap;
 	
 	private Kanji2Helper() { }
 	
@@ -1708,6 +1713,54 @@ public class Kanji2Helper {
 		if (misc2 != null) {
 			kanjiEntryForDictionary.setUsed(misc2.isUsed());			
 		}
+	}
+	
+	public KenteiLevelType getKenteiLevel(String kanjiToGet) throws Exception {
+
+		if (kanjiKenteiMap == null) { // wczytywanie listy
+			
+			// lista plikow i poziomow
+			Object [][] kanjiKenteiFileNamesAndLevels = new Object[][] {
+				{ "10.txt", KenteiLevelType.LEVEL_10 },
+				{ "9.txt", KenteiLevelType.LEVEL_9 },
+				{ "8.txt", KenteiLevelType.LEVEL_8 },
+				{ "7.txt", KenteiLevelType.LEVEL_7 },
+				{ "6.txt", KenteiLevelType.LEVEL_6 },
+				{ "5.txt", KenteiLevelType.LEVEL_5 },
+				{ "4.txt", KenteiLevelType.LEVEL_4 },
+				{ "3.txt", KenteiLevelType.LEVEL_3 },
+				{ "pre2.txt", KenteiLevelType.LEVEL_PRE_2 },
+				{ "2.txt", KenteiLevelType.LEVEL_2 },
+				{ "pre1.txt", KenteiLevelType.LEVEL_PRE_1 },
+				{ "1.txt", KenteiLevelType.LEVEL_1 }				
+			};
+			
+			// wczytanie kazdego pliku i zapisanie do mapy
+			kanjiKenteiMap = new TreeMap<>();
+			
+			for (Object[] currentKanjiKenteiFileNameAndLevel : kanjiKenteiFileNamesAndLevels) {
+				File file = new File("../JapaneseDictionary_additional/kanji_kentei/" + currentKanjiKenteiFileNameAndLevel[0]);
+				
+				// wczytanie zawartosci pliku (tutaj powinna byc tylko jedna linia)
+				List<String> allLines = Files.readAllLines(file.toPath());
+								
+				// chodzimy po wszystkich znakach i zapisujemy do mapy
+				for (String currentLine : allLines) {
+					for (int charNo = 0; charNo < currentLine.length(); ++charNo) {
+						String kanji = "" + currentLine.charAt(charNo);
+						
+						// sprawdzenie, czy taki znak przypadkiem juz nie wystepuje w mapie
+						if (kanjiKenteiMap.containsKey(kanji) == true) {
+							throw new JapaneseDictionaryException("kanjiKenteiMap.containsKey(kanji) == true: " + kanji);
+						}
+						
+						kanjiKenteiMap.put(kanji, (KenteiLevelType)currentKanjiKenteiFileNameAndLevel[1]);
+					}					
+				}
+			}			
+		}		
+		
+		return kanjiKenteiMap.get(kanjiToGet);
 	}
 	
 	private class EntryPartConverterEnd {
