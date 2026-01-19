@@ -4404,9 +4404,11 @@ public class WordGenerator {
 				
 				// utworzenie mapy, w ktorym kluczem bedzie to samo angielskie tlumaczenie
 				class TheSameGlossEngListEntry {
+					@SuppressWarnings("unused")
 					private String key;
 					private Entry entry;
 					
+					@SuppressWarnings("unused")
 					private List<String> glossEngListString;
 					private List<String> glossPolListString;
 					
@@ -4475,11 +4477,19 @@ public class WordGenerator {
 						continue;
 					}
 					
-					// dokonczyc !!!!!!
-					System.out.println("AAAA: " + entrySet.getKey());
+					// sprawdzenie, czy wszystkie polskie znaczenia sa jakie same
+					Set<String> uniqueGlossPolSet = new TreeSet<>();
 					
+					entrySet.getValue().forEach(f -> uniqueGlossPolSet.add(f.glossPolListString.toString()));
+					
+					// jezeli liczba unikalnych polskich znaczen jest wieksza od jeden to znaczy, ze mamy to co nas interesuje
+					if (uniqueGlossPolSet.size() > 1) {
+						for (TheSameGlossEngListEntry theSameGlossEngListEntry : entrySet.getValue()) {
+							System.out.println(theSameGlossEngListEntry.entry.getEntryId());
+						}
+						System.out.println("------");
+					}
 				}				
-				
 				
 				break;
 			}
@@ -4494,6 +4504,8 @@ public class WordGenerator {
 				for (Operation currentOperation : operationList) {
 					System.out.println(currentOperation.getOperation() + " - " + currentOperation.getDescription());
 				}
+				
+				// INFO: sposob prezentacji moze jeszcze bedzie do zmiany, zobaczymy pozniej
 				
 				break;
 			}
