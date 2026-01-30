@@ -38115,10 +38115,13 @@ agrotechnika",,DICTIONARY2_SOURCE,,GroupId: 2868101
 chlorek (medycyna; we krwi lub moczu)",,DICTIONARY2_SOURCE,,GroupId: 2868104
 317502,WORD_NOUN,,HIRAGANA,,,東京科学大学,とうきょうかがくだいがく,,toukyou kagaku daigaku,Instytut Naukowy w Tokio,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5747457
 317503,WORD_VERB_U,,HIRAGANA,,,目覚す,めざます,,mezamasu,"obudzić (np. kogoś)
+przebudzić (np. kogoś)
 wzbudzić (np. kogoś)
-poruszyć (np. czyjeś sumienie)
+budzić (emocje, instynkty itp.)
+pobudzać
+rozbudzić
 wywołać
-rozbudzić",formalny lub literacki termin,DICTIONARY2_SOURCE,,GroupId: 2020100
+poruszać",,DICTIONARY2_SOURCE,,GroupId: 2020100
 317504,WORD_NOUN,,HIRAGANA,,,外部生,がいぶせい,,gaibusei,uczeń zapisany z niepowiązanej szkoły niższego szczebla,,DICTIONARY2_SOURCE,,GroupId: 2868062
 317505,WORD_NOUN,,HIRAGANA,,,箱罠,はこわな,,hakowana,"pułapka skrzynkowa
 pułapka klatkowa",,DICTIONARY2_SOURCE,,GroupId: 2868081
@@ -38308,35 +38311,19 @@ co będzie to będzie",przysłowie; pisanie zwykle z użyciem kana,DICTIONARY2_S
 317615,WORD_NOUN,,HIRAGANA,,,舞台化作品,ぶたいかさくひん,,butaika sakuhin,"adaptacja sceniczna
 adaptacja teatralna",,DICTIONARY2_SOURCE,,GroupId: 2868175
 317616,WORD_NOUN,,KATAKANA_HIRAGANA,,,ハナウド属,ハナウドぞく,,hanaudo zoku,barszcz,"rodzaj z rodziny selerowatych, Heracleum",DICTIONARY2_SOURCE,,GroupId: 2868177
-317617,WORD_NOUN,,HIRAGANA,,,館,たち,,tachi,"rezydencja (poetycki termin; szczególnie たち)
-pałac (poetycki termin; szczególnie たち)
-dwór (poetycki termin; szczególnie たち)
-zamek (poetycki termin; szczególnie たち)
-mały zamek (zwykle silnie ufortyfikowany) (przestarzałe słowo; szczególnie たて)
-mała forteca (przestarzałe słowo; szczególnie たて)
-szlachcic (archaizm; honoryfikatywnie)
-szlachcianka (archaizm; honoryfikatywnie)
-władca (archaizm; honoryfikatywnie)
-pan (archaizm; honoryfikatywnie)
-lord (archaizm; honoryfikatywnie)
-mistrz (archaizm; honoryfikatywnie)
-oficjalna rezydencja (urzędnika państwowego) (archaizm)",,DICTIONARY2_SOURCE,"DUPLICATE 2779
+317617,WORD_NOUN,,HIRAGANA,,,館,たち,,tachi,"rezydencja (szlachcica) (szczególnie たち)
+dwór (szczególnie たち)
+oficjalna rezydencja (szlachcica lub urzędnika państwowego) (szczególnie たち)
+mały zamek (szczególnie たて)
+fort (szczególnie たて)",poetycki termin,DICTIONARY2_SOURCE,"DUPLICATE 2779
 DUPLICATE 50720
 DUPLICATE 51543
 DUPLICATE 317618",GroupId: 2868182
-317618,WORD_NOUN,,HIRAGANA,,,館,たて,,tate,"rezydencja (poetycki termin; szczególnie たち)
-pałac (poetycki termin; szczególnie たち)
-dwór (poetycki termin; szczególnie たち)
-zamek (poetycki termin; szczególnie たち)
-mały zamek (zwykle silnie ufortyfikowany) (przestarzałe słowo; szczególnie たて)
-mała forteca (przestarzałe słowo; szczególnie たて)
-szlachcic (archaizm; honoryfikatywnie)
-szlachcianka (archaizm; honoryfikatywnie)
-władca (archaizm; honoryfikatywnie)
-pan (archaizm; honoryfikatywnie)
-lord (archaizm; honoryfikatywnie)
-mistrz (archaizm; honoryfikatywnie)
-oficjalna rezydencja (urzędnika państwowego) (archaizm)",,DICTIONARY2_SOURCE,"DUPLICATE 2779
+317618,WORD_NOUN,,HIRAGANA,,,館,たて,,tate,"rezydencja (szlachcica) (szczególnie たち)
+dwór (szczególnie たち)
+oficjalna rezydencja (szlachcica lub urzędnika państwowego) (szczególnie たち)
+mały zamek (szczególnie たて)
+fort (szczególnie たて)",poetycki termin,DICTIONARY2_SOURCE,"DUPLICATE 2779
 DUPLICATE 50720
 DUPLICATE 51543
 DUPLICATE 317617",GroupId: 2868182
@@ -42000,7 +41987,8 @@ taksonomia",ang: taxonomy,DICTIONARY2_SOURCE,,GroupId: 2869032
 zegarek naręczny",ang: wristwatch,DICTIONARY2_SOURCE,,GroupId: 2868965
 319085,WORD_NOUN,,KATAKANA,,,-,リスト・ウオッチ,,risuto uocchi,"zegarek na rękę
 zegarek naręczny",ang: wristwatch,DICTIONARY2_SOURCE,,GroupId: 2868965
-319086,WORD_PREFIX,,HIRAGANA,,,東,とう,,tou,"wschodni
+319086,"WORD_PREFIX
+WORD_NOUN",,HIRAGANA,,,東,とう,,tou,"wschodni
 wschód
 Tokio (skrót)",,DICTIONARY2_SOURCE,"DUPLICATE 1329
 DUPLICATE 7143
@@ -42049,3 +42037,154 @@ tuńczyk długopłetwy","pisanie zwykle z użyciem kana; gatunek morskiej ryby z
 319107,WORD_NOUN,,KATAKANA,,,-,コシナガ,,koshinaga,tuńczyk tongol,pisanie zwykle z użyciem kana; Thunnus tonggol,DICTIONARY2_SOURCE,,GroupId: 2869045
 319108,WORD_NOUN,,HIRAGANA,,,やしの実,やしのみ,,yashi no mi,"kokos
 orzech kokosowy",,DICTIONARY2_SOURCE,,GroupId: 2420240
+319109,WORD_NOUN,,HIRAGANA,,,牛皮,ぎゅうがわ,,gyuugawa,"skóra bydlęca
+skóra wołowa",,DICTIONARY2_SOURCE,"DUPLICATE 135284
+DUPLICATE 135321
+DUPLICATE 135322",GroupId: 1231620
+319110,WORD_NOUN,,HIRAGANA,,,あわてん坊,あわてんぼ,,awatenbo,"zdenerwowana osoba
+porywcza osoba
+spiesząca się osoba",potocznie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 35343,GroupId: 2125610
+319111,WORD_NOUN,,HIRAGANA,,,慌てん坊,あわてんぼ,,awatenbo,"zdenerwowana osoba
+porywcza osoba
+spiesząca się osoba",potocznie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 35344,GroupId: 2125610
+319112,WORD_NOUN,,HIRAGANA,,,慌てんぼう,あわてんぼ,,awatenbo,"zdenerwowana osoba
+porywcza osoba
+spiesząca się osoba",potocznie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 35345,GroupId: 2125610
+319113,WORD_NOUN,,HIRAGANA,,,慌てんぼ,あわてんぼう,,awatenbou,"zdenerwowana osoba
+porywcza osoba
+spiesząca się osoba",potocznie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 319114,GroupId: 2125610
+319114,WORD_NOUN,,HIRAGANA,,,慌てんぼ,あわてんぼ,,awatenbo,"zdenerwowana osoba
+porywcza osoba
+spiesząca się osoba",potocznie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 319113,GroupId: 2125610
+319115,WORD_EXPRESSION,,HIRAGANA,,,如何お過ごしですか,いかがおすごしですか,,ika ga osugoshi desu ka,"co słychać?
+jak leci?
+co u ciebie?
+jak się masz?",uprzejmie,DICTIONARY2_SOURCE,,GroupId: 2546050
+319116,WORD_EXPRESSION,,HIRAGANA,,,如何御過ごしですか,いかがおすごしですか,,ika ga osugoshi desu ka,"co słychać?
+jak leci?
+co u ciebie?
+jak się masz?",uprzejmie,DICTIONARY2_SOURCE,,GroupId: 2546050
+319117,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,事なきをえる,ことなきをえる,,koto naki o eru,"zakończyć się bez incydentów
+nie zmienić się w coś poważnego",,DICTIONARY2_SOURCE,,GroupId: 2125010
+319118,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,事無きをえる,ことなきをえる,,koto naki o eru,"zakończyć się bez incydentów
+nie zmienić się w coś poważnego",,DICTIONARY2_SOURCE,,GroupId: 2125010
+319119,WORD_NOUN,,HIRAGANA,,,軽口噺,かるくちばなし,,karukuchi banashi,humorystyczna historia z puentą,archaizm,DICTIONARY2_SOURCE,,GroupId: 1831630
+319120,WORD_NOUN,,HIRAGANA,,,軽口咄,かるくちばなし,,karukuchi banashi,humorystyczna historia z puentą,archaizm,DICTIONARY2_SOURCE,,GroupId: 1831630
+319121,WORD_NOUN,,HIRAGANA,,,向かいがわ,むかいがわ,,mukai gawa,"przeciwna strona
+druga strona",,DICTIONARY2_SOURCE,,GroupId: 1604780
+319122,WORD_NOUN,,HIRAGANA,,,向いがわ,むかいがわ,,mukai gawa,"przeciwna strona
+druga strona",,DICTIONARY2_SOURCE,,GroupId: 1604780
+319123,WORD_NOUN,,HIRAGANA,,,色づかい,いろづかい,,irodukai,"użycie koloru
+używanie koloru
+stosowanie koloru",,DICTIONARY2_SOURCE,,GroupId: 2140960
+319124,WORD_NOUN,,HIRAGANA,,,空とぶ円盤,そらとぶえんばん,,soratobu enban,latający spodek,,DICTIONARY2_SOURCE,,GroupId: 1245990
+319125,WORD_NOUN,,KATAKANA,,,ＡＳＣＩＩアート,アスキー・アート,,asukii aato,ASCII art,pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 95110,GroupId: 2674290
+319126,WORD_NOUN,,HIRAGANA,,,虫取りあみ,むしとりあみ,,mushi tori ami,"siatka na motyle
+siatka do łapania owadów",,DICTIONARY2_SOURCE,,GroupId: 2735140
+319127,WORD_NOUN,,HIRAGANA,,,虫とり網,むしとりあみ,,mushi tori ami,"siatka na motyle
+siatka do łapania owadów",,DICTIONARY2_SOURCE,,GroupId: 2735140
+319128,WORD_NOUN,,HIRAGANA,,,虫とりあみ,むしとりあみ,,mushi tori ami,"siatka na motyle
+siatka do łapania owadów",,DICTIONARY2_SOURCE,,GroupId: 2735140
+319129,WORD_NOUN,,HIRAGANA,,,虫取網,むしとりあみ,,mushi tori ami,"siatka na motyle
+siatka do łapania owadów",,DICTIONARY2_SOURCE,,GroupId: 2735140
+319130,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,聞く耳を持たん,きくみみをもたぬ,,kiku mimi o motanu,"udawać, że się nie słyszy czegoś
+nie słuchać
+nie rozumieć wiadomości",,DICTIONARY2_SOURCE,,GroupId: 2462540
+319131,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,聞く耳をもたん,きくみみをもたぬ,,kiku mimi o motanu,"udawać, że się nie słyszy czegoś
+nie słuchać
+nie rozumieć wiadomości",,DICTIONARY2_SOURCE,,GroupId: 2462540
+319132,WORD_NOUN,,HIRAGANA,,,ゲン担ぎ,げんかつぎ,,gen katsugi,"bycie przesądnym
+zachowywanie się przesądnie (dla szczęścia)",,DICTIONARY2_SOURCE,DUPLICATE 120424,GroupId: 2538080
+319133,WORD_NOUN,,KATAKANA_HIRAGANA,,,験担ぎ,ゲンかつぎ,,gen katsugi,"bycie przesądnym
+zachowywanie się przesądnie (dla szczęścia)",,DICTIONARY2_SOURCE,DUPLICATE 120514,GroupId: 2538080
+319134,WORD_NOUN,,KATAKANA_HIRAGANA,,,げん担ぎ,ゲンかつぎ,,gen katsugi,"bycie przesądnym
+zachowywanie się przesądnie (dla szczęścia)",,DICTIONARY2_SOURCE,DUPLICATE 120515,GroupId: 2538080
+319135,WORD_NOUN,,HIRAGANA,,,験かつぎ,げんかつぎ,,gen katsugi,"bycie przesądnym
+zachowywanie się przesądnie (dla szczęścia)",,DICTIONARY2_SOURCE,DUPLICATE 319136,GroupId: 2538080
+319136,WORD_NOUN,,KATAKANA_HIRAGANA,,,験かつぎ,ゲンかつぎ,,gen katsugi,"bycie przesądnym
+zachowywanie się przesądnie (dla szczęścia)",,DICTIONARY2_SOURCE,DUPLICATE 319135,GroupId: 2538080
+319137,WORD_NOUN,,HIRAGANA,,,人よせ,ひとよせ,,hitoyose,atrakcja (dla ludzi),,DICTIONARY2_SOURCE,,GroupId: 1367000
+319138,WORD_NOUN,,HIRAGANA,,,タラバ蟹,たらばがに,,taraba gani,czerwony krab królewski,pisanie zwykle z użyciem kana; Paralithodes camtschaticus,DICTIONARY2_SOURCE,DUPLICATE 319139,GroupId: 1846210
+319139,WORD_NOUN,,HIRAGANA_KATAKANA,,,タラバ蟹,たらばガニ,,taraba gani,czerwony krab królewski,pisanie zwykle z użyciem kana; Paralithodes camtschaticus,DICTIONARY2_SOURCE,DUPLICATE 319138,GroupId: 1846210
+319140,WORD_NOUN,,HIRAGANA_KATAKANA,,,鱈場蟹,たらばガニ,,taraba gani,czerwony krab królewski,pisanie zwykle z użyciem kana; Paralithodes camtschaticus,DICTIONARY2_SOURCE,DUPLICATE 134837,GroupId: 1846210
+319141,WORD_NOUN,,HIRAGANA_KATAKANA,,,多羅波蟹,たらばガニ,,taraba gani,czerwony krab królewski,pisanie zwykle z użyciem kana; Paralithodes camtschaticus,DICTIONARY2_SOURCE,DUPLICATE 134838,GroupId: 1846210
+319142,WORD_NOUN,,HIRAGANA,,,鱈場ガニ,たらばがに,,taraba gani,czerwony krab królewski,pisanie zwykle z użyciem kana; Paralithodes camtschaticus,DICTIONARY2_SOURCE,DUPLICATE 134839,GroupId: 1846210
+319143,WORD_NOUN,,HIRAGANA_KATAKANA,,,たらば蟹,たらばガニ,,taraba gani,czerwony krab królewski,pisanie zwykle z użyciem kana; Paralithodes camtschaticus,DICTIONARY2_SOURCE,DUPLICATE 134811,GroupId: 1846210
+319144,WORD_NOUN,,HIRAGANA,,,敝衣,へいい,,heii,"zużyte ubrania
+znoszone ubrania",,DICTIONARY2_SOURCE,,GroupId: 1508260
+319145,WORD_VERB_U,,HIRAGANA,,,なり切る,なりきる,,nari kiru,"zmienić się całkowicie w
+stać się całkowicie",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1848830
+319146,WORD_NOUN,,HIRAGANA,,,偉丈夫,いじょうぶ,,ijoubu,"wielki człowiek
+bohater
+ważna osoba",,DICTIONARY2_SOURCE,DUPLICATE 152718,GroupId: 1155890
+319147,WORD_NOUN,,HIRAGANA,,,護り刀,まもりがたな,,mamori gatana,miecz do samoobrony,,DICTIONARY2_SOURCE,,GroupId: 1640980
+319148,WORD_NOUN,,HIRAGANA,,,敝衣蓬髪,へいいほうはつ,,heii houhatsu,rozczochrane włosy i zniszczone ubranie,słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 2053270
+319149,WORD_NOUN,,HIRAGANA_KATAKANA,,,光ファイバケーブル,ひかりファイバーケーブル,,hikari faibaa keeburu,kabel światłowodowy,,DICTIONARY2_SOURCE,,GroupId: 1992430
+319150,WORD_NOUN,,HIRAGANA,,,どろ団子,どろだんご,,doro dango,"kula błota
+brudna kula",estetyka sztuki,DICTIONARY2_SOURCE,,GroupId: 2826988
+319151,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,禄をはむ,ろくをはむ,,roku o hamu,"otrzymać wynagrodzenie (od)
+otrzymać pensję (od)
+być na liście płac",,DICTIONARY2_SOURCE,,GroupId: 2819400
+319152,WORD_EXPRESSION,,HIRAGANA,,,ひと呼んで,ひとよんで,,hito yonde,"znany jako ...
+również znany jako ...
+nazywany ...",,DICTIONARY2_SOURCE,,GroupId: 2681140
+319153,WORD_EXPRESSION,,HIRAGANA,,,人よんで,ひとよんで,,hito yonde,"znany jako ...
+również znany jako ...
+nazywany ...",,DICTIONARY2_SOURCE,,GroupId: 2681140
+319154,WORD_NOUN,,HIRAGANA,,,死目,しにめ,,shi ni me,moment śmierci,,DICTIONARY2_SOURCE,,GroupId: 1767420
+319155,WORD_NOUN,,HIRAGANA,,,殿様バッタ,とのさまばった,,tonosama batta,szarańcza wędrowna,"pisanie zwykle z użyciem kana; szeroko rozprzestrzeniony gatunek owada prostoskrzydłego z rodziny szarańczowatych, znany z całej półkuli wschodniej, Locusta migratoria",DICTIONARY2_SOURCE,,GroupId: 2269280
+319156,WORD_NOUN,,HIRAGANA,,,殿様飛蝗,とのさまばった,,tonosama batta,szarańcza wędrowna,"pisanie zwykle z użyciem kana; szeroko rozprzestrzeniony gatunek owada prostoskrzydłego z rodziny szarańczowatych, znany z całej półkuli wschodniej, Locusta migratoria",DICTIONARY2_SOURCE,,GroupId: 2269280
+319157,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,世をわたる,よをわたる,,yo o wataru,"radzić sobie w życiu
+zarabiać na życie
+żyć",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2130890
+319158,WORD_NOUN,,HIRAGANA,,,白あえ,しらあえ,,shira ae,"sałatka udekorowana tofu, białym sezamem i białym miso","jedzenie, gotowanie",DICTIONARY2_SOURCE,DUPLICATE 319159,GroupId: 2653080
+319159,WORD_NOUN,,HIRAGANA,,,白あえ,しろあえ,,shiro ae,"sałatka udekorowana tofu, białym sezamem i białym miso","jedzenie, gotowanie",DICTIONARY2_SOURCE,DUPLICATE 319158,GroupId: 2653080
+319160,WORD_NOUN,,HIRAGANA,,,児童買春禁止法,じどうばいしゅんきんしほう,,jidou baishun kinshihou,"Ustawa o Karaniu Czynności Związanych z Dziecięcą Prostytucją, Dziecięca Pornografią i Ochrona Dzieci",prawo; skrót; skrót od 児童買春、児童ポルノに係る行為等の処罰及び児童の保護等に関する法律,DICTIONARY2_SOURCE,DUPLICATE 212240,GroupId: 2840056
+319161,WORD_NOUN,,HIRAGANA,,,激毒,げきどく,,gekidoku,śmiertelna trucizna,,DICTIONARY2_SOURCE,,GroupId: 1253510
+319162,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,ゲロゲロ吐く,げろげろはく,,gero gero haku,"wymiotować
+zwymiotować",,DICTIONARY2_SOURCE,,GroupId: 2275590
+319163,WORD_NOUN,,HIRAGANA,,,解散・総選挙,かいさんそうせんきょ,,kaisan sousenkyo,"wybory przedterminowe
+przyśpieszone wybory powszechne",,DICTIONARY2_SOURCE,,GroupId: 2826163
+319164,WORD_NOUN,,KATAKANA,,,-,アムルガム,,amurugamu,amalgam,"chemia; ogólna nazwa stopów metali, w których jednym z podstawowych składników jest rtęć",DICTIONARY2_SOURCE,,GroupId: 1018580
+319165,"WORD_ADVERB_TO
+WORD_ADVERB
+WORD_NOUN",,KATAKANA,,,-,ソソクサ,,sosokusa,"pośpiesznie
+szybko
+w pośpiechu",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2056010
+319166,WORD_NOUN,,KATAKANA,,,-,アルミフォイル,,arumi foiru,"folia aluminiowa
+folia cynowa",skrót; ang: aluminum foil,DICTIONARY2_SOURCE,,GroupId: 1019660
+319167,WORD_NOUN,,KATAKANA,,,-,コーン・ポタージュ・スープ,,koon potaaju suupu,zupa kremowa z kukurydzy,"jedzenie, gotowanie; ang: corn; ang: soup; fra: potage",DICTIONARY2_SOURCE,,GroupId: 2829615
+319168,WORD_NOUN,,KATAKANA,,,-,カートウーン,,kaatouun,"film rysunkowy
+kreskówka",ang: cartoon,DICTIONARY2_SOURCE,,GroupId: 1036370
+319169,WORD_NOUN,,KATAKANA,,,-,タラバ,,taraba,czerwony krab królewski,skrót; pisanie zwykle z użyciem kana; Paralithodes camtschaticus,DICTIONARY2_SOURCE,,GroupId: 2597960
+319170,WORD_NOUN,,KATAKANA,,,-,クロロフォルム,,kuroroforumu,chloroform,farmakologia,DICTIONARY2_SOURCE,,GroupId: 2005760
+319171,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ラクウショウ,,rakuushou,cypryśnik błotny,"pisanie zwykle z użyciem kana; gatunek drzewa należący do rodziny cyprysowatych, Taxodium distichum",DICTIONARY2_SOURCE,,GroupId: 2109060
+319172,WORD_NOUN,,KATAKANA,,,-,オスミューム,,osumyuumu,osm,"chemia; pierwiastek chemiczny z grupy żelazowców, Os, ang: osmium",DICTIONARY2_SOURCE,,GroupId: 1034370
+319173,WORD_NOUN,,KATAKANA,,,-,コルニス,,korunisu,gzyms,architektura; ang: cornice,DICTIONARY2_SOURCE,,GroupId: 2482020
+319174,WORD_NOUN,,HIRAGANA,,,完全体,かんぜんたい,,kanzentai,"forma kompletna
+forma idealna
+forma ostateczna
+ciało doskonałe (matematyka)",,DICTIONARY2_SOURCE,,GroupId: 2869039
+319175,WORD_NOUN,,KATAKANA,,,-,エンディングテーマ,,endingu teema,"motyw końcowy
+muzyka końcowa",,DICTIONARY2_SOURCE,,GroupId: 2869041
+319176,WORD_NOUN,,KATAKANA,,,-,エンディング・テーマ,,endingu teema,"motyw końcowy
+muzyka końcowa",,DICTIONARY2_SOURCE,,GroupId: 2869041
+319177,WORD_EXPRESSION,,HIRAGANA,,,鶴の巣籠り,つるのすごもり,,tsuru no sugomori,"Gniazdo Żurawia Tesuji
+Gniazdo Żurawia",go (gra),DICTIONARY2_SOURCE,,GroupId: 2869049
+319178,WORD_VERB_U,,HIRAGANA,,,思い断つ,おもいたつ,,omoi tatsu,"zrezygnować
+porzucić",przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2869056
+319179,WORD_VERB_U,,HIRAGANA,,,思い絶つ,おもいたつ,,omoi tatsu,"zrezygnować
+porzucić",przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2869056
+319180,WORD_NOUN,,HIRAGANA,,,母,かか,,kaka,"mama
+mamusia",archaizm; język dzieci,DICTIONARY2_SOURCE,"DUPLICATE 204
+DUPLICATE 319181",GroupId: 2869057
+319181,WORD_NOUN,,HIRAGANA,,,母,いろは,,iroha,"biologiczna matka (czyjaś)
+matka biologiczna",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 204
+DUPLICATE 319180",GroupId: 2869058
