@@ -2863,7 +2863,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 		if (sense != null) {
 			stringWriter.write(sense.getFieldList().toString());
-			stringWriter.write(sense.getMiscList().toString());
+			stringWriter.write(sense.getMiscList().stream().filter(f -> f == MiscEnum.WORD_USUALLY_WRITTEN_USING_KANA_ALONE == false).collect(Collectors.toList()).toString());
 		}
 								
 		return DigestUtils.sha256Hex(stringWriter.toString());
