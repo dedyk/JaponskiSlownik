@@ -2,9 +2,9 @@
 + update - x
 + kanji - x
 ----------
-small - 10
-small2 - 10
-small3 - 10
++ small - 10
++ small2 - 10
++ small3 - 10
 ----------
 160000 - 30
 uzupełniacz - x
