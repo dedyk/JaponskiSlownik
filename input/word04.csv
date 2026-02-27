@@ -26404,9 +26404,8 @@ szukany obiekt",,DICTIONARY2_SOURCE,,GroupId: 1835300
 311843,WORD_NOUN,,HIRAGANA,,,さがし物,さがしもの,,sagashi mono,"szukanie czegoś
 szukany przedmiot
 szukany obiekt",,DICTIONARY2_SOURCE,,GroupId: 1835300
-311844,WORD_NOUN,,KATAKANA_HIRAGANA,,,ガン泣き,ギャンなき,,gyan naki,"histeryczny płacz dziecka
-krzyk dziecka",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2700080
+311844,WORD_NOUN,,HIRAGANA,,,ぎゃん泣き,ぎゃんなき,,gyan naki,"histeryczny płacz dziecka
+krzyk dziecka",potocznie,DICTIONARY2_SOURCE,,GroupId: 2700080
 311845,WORD_VERB_RU,,HIRAGANA,,,摺り抜ける,すりぬける,,suri nukeru,"prześlizgiwać się przez (tłum)
 przedzierać się przez (np. ruch uliczny)
 przechodzić przez
@@ -44490,20 +44489,42 @@ nadmuchiwany","np. materac, ponton, ang: inflatable",DICTIONARY2_SOURCE,,GroupId
 320070,WORD_NOUN,,HIRAGANA,,,合成映像,ごうせいえいぞう,,gousei eizou,wideo kompozytowe,,DICTIONARY2_SOURCE,,GroupId: 2869470
 320071,WORD_NOUN,,KATAKANA,,,-,ポップスター,,poppu sutaa,gwiazda popu,ang: pop star,DICTIONARY2_SOURCE,,GroupId: 2869473
 320072,WORD_NOUN,,KATAKANA,,,-,ポップ・スター,,poppu sutaa,gwiazda popu,ang: pop star,DICTIONARY2_SOURCE,,GroupId: 2869473
-320073,WORD_NOUN,,KATAKANA,,,-,フォトブック,,fotobukku,album ze zdjęciami,ang: foto book,IGNORE_NO_JMEDICT,,
-320074,WORD_NOUN,,KATAKANA,,,-,ワライガエル,,warai gaeru,żaba śmieszka,"jeden z sześciu gatunków płazów bezogonowych z rodziny żabowatych występujących w Polsce, Pelophylax ridibundus",IGNORE_NO_JMEDICT,,
-320075,WORD_NOUN,,HIRAGANA,,,電気店,でんきてん,,denkiten,sklep z elektroniką,,IGNORE_NO_JMEDICT,,
-320076,WORD_NOUN,,KATAKANA,,,-,レーシングカート,,reeshingu kaato,"karting
+320073,WORD_NOUN,,KATAKANA,,,-,ワライガエル,,warai gaeru,żaba śmieszka,"jeden z sześciu gatunków płazów bezogonowych z rodziny żabowatych występujących w Polsce, Pelophylax ridibundus",IGNORE_NO_JMEDICT,,
+320074,WORD_NOUN,,HIRAGANA,,,電気店,でんきてん,,denkiten,sklep z elektroniką,,IGNORE_NO_JMEDICT,,
+320075,WORD_NOUN,,KATAKANA,,,-,レーシングカート,,reeshingu kaato,"karting
 wyścigi gokartów",ang: racing kart,IGNORE_NO_JMEDICT,,
-320077,WORD_NOUN,,KATAKANA_HIRAGANA,,,アレルギー学,アレルギーがく,,arerugii gaku,alergologia,,IGNORE_NO_JMEDICT,,
-320078,WORD_NOUN,,KATAKANA_HIRAGANA,,,アレルギー専門医,アレルギーせんもんい,,arerugii senmon'i,alergolog,,IGNORE_NO_JMEDICT,,
-320079,WORD_NOUN,,HIRAGANA,,,独立峰,どくりつほう,,dokuritsuhou,samotny szczyt,,IGNORE_NO_JMEDICT,,
-320080,WORD_NOUN,,HIRAGANA,,,編集社,へんしゅうしゃ,,henshuusha,"firma wydawnicza
+320076,WORD_NOUN,,KATAKANA_HIRAGANA,,,アレルギー学,アレルギーがく,,arerugii gaku,alergologia,,IGNORE_NO_JMEDICT,,
+320077,WORD_NOUN,,KATAKANA_HIRAGANA,,,アレルギー専門医,アレルギーせんもんい,,arerugii senmon'i,alergolog,,IGNORE_NO_JMEDICT,,
+320078,WORD_NOUN,,HIRAGANA,,,独立峰,どくりつほう,,dokuritsuhou,samotny szczyt,,IGNORE_NO_JMEDICT,,
+320079,WORD_NOUN,,HIRAGANA,,,編集社,へんしゅうしゃ,,henshuusha,"firma wydawnicza
 wydawnictwo",,IGNORE_NO_JMEDICT,,
-320081,WORD_VERB_U,,HIRAGANA,,,表裏がある,ひょうりがある,,hyouri ga aru,"posiadanie dwóch twarzy
+320080,WORD_VERB_U,,HIRAGANA,,,表裏がある,ひょうりがある,,hyouri ga aru,"posiadanie dwóch twarzy
 posiadanie dwóch oblicz",np. zachowywać się na dwa różne sposoby w różnych środowiskach (wydźwięk negatywny),IGNORE_NO_JMEDICT,,
-320082,WORD_NOUN,,HIRAGANA,,,早戻し,はやもどし,,haya modoshi,przewijanie do tyłu,np. kasety,IGNORE_NO_JMEDICT,,
-320083,WORD_NOUN,,KATAKANA_HIRAGANA,,,アーチェリー場,アーチェリー ば,,aacherii ba,"strzelnica łucznicza
+320081,WORD_NOUN,,HIRAGANA,,,早戻し,はやもどし,,haya modoshi,przewijanie do tyłu,np. kasety,IGNORE_NO_JMEDICT,,
+320082,WORD_NOUN,,KATAKANA_HIRAGANA,,,アーチェリー場,アーチェリーば,,aacherii ba,"strzelnica łucznicza
 tor łuczniczy
 pole tor łucznicze",,IGNORE_NO_JMEDICT,,
-320084,WORD_NOUN,,KATAKANA,,,-,チフチャフ,,chifuchafu,pierwiosnek,gatunek niewielkiego ptaka wędrownego z rodziny świstunek,IGNORE_NO_JMEDICT,,
+320083,WORD_NOUN,,KATAKANA,,,-,チフチャフ,,chifuchafu,pierwiosnek,gatunek niewielkiego ptaka wędrownego z rodziny świstunek,IGNORE_NO_JMEDICT,,
+320084,WORD_ADVERB,,HIRAGANA,,,然るのち,しかるのち,,shikaru nochi,"potem
+następnie
+później
+po wykonaniu tej czynności",,DICTIONARY2_SOURCE,,GroupId: 2076500
+320085,WORD_EXPRESSION,,HIRAGANA,,,画に描いた餅,えにかいたもち,,e ni kaita mochi,"gruszki na wierzbie
+zamki na lodzie
+złudne nadzieje
+rysunek ciastka ryżowego (dosłownie)",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 1202280
+320086,WORD_EXPRESSION,,HIRAGANA,,,絵に描いたもち,えにかいたもち,,e ni kaita mochi,"gruszki na wierzbie
+zamki na lodzie
+złudne nadzieje
+rysunek ciastka ryżowego (dosłownie)",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 1202280
+320087,WORD_EXPRESSION,,HIRAGANA,,,絵に描いたモチ,えにかいたもち,,e ni kaita mochi,"gruszki na wierzbie
+zamki na lodzie
+złudne nadzieje
+rysunek ciastka ryżowego (dosłownie)",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 1202280
+320088,WORD_NOUN,,HIRAGANA,,,焼尽,しょうじん,,shoujin,"całkowicie spłonął
+spłonął doszczętnie",,DICTIONARY2_SOURCE,,GroupId: 2869475
+320089,WORD_NOUN,,HIRAGANA,,,暁現象,あかつきげんしょう,,akatsuki genshou,"efekt blasku
+efekt świtu","medycyna; naturalna, poranna (ok. 4:00–5:00 rano) hiperglikemia, czyli podwyższony poziom cukru we krwi",DICTIONARY2_SOURCE,,GroupId: 2869495
+320090,WORD_NOUN,,HIRAGANA,,,気道閉塞,きどうへいそく,,kidou heisoku,"niedrożność dróg oddechowych
+niedrożność oddechowa",medycyna,DICTIONARY2_SOURCE,,GroupId: 2869498
+320091,WORD_NOUN,,HIRAGANA,,,発生休止,はっせいきゅうし,,hassei kyuushi,diapauza (embrionalna),biologia,DICTIONARY2_SOURCE,,GroupId: 2869500
