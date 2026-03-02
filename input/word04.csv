@@ -4754,10 +4754,10 @@ słupek cumowniczy",,DICTIONARY2_SOURCE,,GroupId: 2861576
 słupek cumowniczy",,DICTIONARY2_SOURCE,,GroupId: 2861576
 302994,WORD_NOUN,,KATAKANA,,,-,パテナ,,patena,patena,chrześcijaństwo; naczynie liturgiczne w kościołach chrześcijańskich,DICTIONARY2_SOURCE,,GroupId: 2861578
 302995,WORD_NOUN,,KATAKANA,,,-,ポリチューブ,,porichuubu,rurka polietylenowa,ang: polytube,DICTIONARY2_SOURCE,,GroupId: 2861581
-302996,WORD_NOUN,,KATAKANA,,,-,トスアップ,,tosu appu,"przedstawienie klienta lub potencjalnego klienta innym pracownikom lub działom
-tworzenie przepływu rozmowy, który ułatwia przejście do głównego tematu",biznes; ang: toss up,DICTIONARY2_SOURCE,,GroupId: 2861582
-302997,WORD_NOUN,,KATAKANA,,,-,トス・アップ,,tosu appu,"przedstawienie klienta lub potencjalnego klienta innym pracownikom lub działom
-tworzenie przepływu rozmowy, który ułatwia przejście do głównego tematu",biznes; ang: toss up,DICTIONARY2_SOURCE,,GroupId: 2861582
+302996,WORD_NOUN,,KATAKANA,,,-,トスアップ,,tosu appu,"przedstawienie klienta lub potencjalnego klienta innym pracownikom lub działom (ang: toss up)
+tworzenie przepływu rozmowy, który ułatwia przejście do głównego tematu",biznes,DICTIONARY2_SOURCE,,GroupId: 2861582
+302997,WORD_NOUN,,KATAKANA,,,-,トス・アップ,,tosu appu,"przedstawienie klienta lub potencjalnego klienta innym pracownikom lub działom (ang: toss up)
+tworzenie przepływu rozmowy, który ułatwia przejście do głównego tematu",biznes,DICTIONARY2_SOURCE,,GroupId: 2861582
 302998,WORD_NOUN,,KATAKANA,,,-,エナドリ,,enadori,napój energetyczny,skrót,DICTIONARY2_SOURCE,,GroupId: 2861584
 302999,WORD_NOUN,,HIRAGANA_KATAKANA,,,制御性Ｔ細胞,せいぎょせいティーさいぼう,,seigyosei tii saibou,limfocyty T regulatorowe,fizjologia,DICTIONARY2_SOURCE,,GroupId: 2861585
 303000,WORD_NOUN,,KATAKANA,,,-,グリア,,guria,"glej
@@ -7338,18 +7338,12 @@ DUPLICATE 311657",GroupId: 2478630
 304313,WORD_ADJECTIVE_F,,KATAKANA,,,-,ネイキット,,neikitto,nagi,ang: naked,DICTIONARY2_SOURCE,,GroupId: 1092540
 304314,WORD_ADJECTIVE_F,,KATAKANA,,,-,ネーキッド,,neekiddo,nagi,ang: naked,DICTIONARY2_SOURCE,,GroupId: 1092540
 304315,WORD_NOUN,,KATAKANA,,,-,ピラミット,,piramitto,piramida,,DICTIONARY2_SOURCE,,GroupId: 1106960
-304316,WORD_NOUN,,HIRAGANA,,,お暇,おひま,,ohima,"wychodzenie
-opuszczanie
-pójście do domu
-rzucanie pracy
-czas wolny",,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 112691,GroupId: 2016850
-304317,WORD_NOUN,,HIRAGANA,,,御暇,おひま,,ohima,"wychodzenie
-opuszczanie
-pójście do domu
-rzucanie pracy
-czas wolny",,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 112782,GroupId: 2016850
+304316,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,後出しジャンケン,あとだしじゃんけん,,atodashi janken,"czekanie na ruch przeciwnika
+???",,DICTIONARY2_SOURCE,DUPLICATE 237820,GroupId: 2833556
+304317,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA_KATAKANA,,,後だしジャンケン,あとだしジャンケン,,atodashi janken,"czekanie na ruch przeciwnika
+???",,DICTIONARY2_SOURCE,DUPLICATE 15046,GroupId: 2833556
 304318,WORD_NOUN,,KATAKANA,,,-,ブレット,,buretto,"chleb
 pieczywo","jedzenie, gotowanie; ang: bread",DICTIONARY2_SOURCE,,GroupId: 1114820
 304319,WORD_NOUN,,KATAKANA,,,-,スレット,,suretto,"wątek (wykonania) (informatyka)
@@ -17547,7 +17541,7 @@ WORD_NOUN",,HIRAGANA,,,疾っくの疾う,とっくのとう,,tokku no tou,dawno
 307862,WORD_NOUN,,KATAKANA,,,-,ヌック・マム,,nukku mamu,wietnamski sos rybny,"jedzenie, gotowanie; wiet: nước mắm",DICTIONARY2_SOURCE,,GroupId: 2863606
 307863,WORD_NOUN,,HIRAGANA,,,口語表現,こうごひょうげん,,kougo hyougen,"wyrażenie potoczne
 kolokwializm",,DICTIONARY2_SOURCE,,GroupId: 2863608
-307864,WORD_NOUN,,KATAKANA,,,-,デザート,,dezaato,pustynia,ang: desert,DICTIONARY2_SOURCE,DUPLICATE 38647,GroupId: 2863580
+307864,WORD_NOUN,,KATAKANA,,,-,デザート,,dezaato,pustynia,rzadko używane określenie; ang: desert,DICTIONARY2_SOURCE,DUPLICATE 38647,GroupId: 2863580
 307865,WORD_NOUN,,KATAKANA,,,-,フッカー,,fukkaa,fajka wodna,ang: hookah,DICTIONARY2_SOURCE,DUPLICATE 14593,GroupId: 2863623
 307866,WORD_NOUN,,HIRAGANA,,,ケツ穴,しりあな,,shiri ana,"odbyt
 dupa
@@ -44851,3 +44845,137 @@ nie ma sprawy",ang: okey-dokey,DICTIONARY2_SOURCE,,GroupId: 2869567
 śpiwór wypełniony puchem",,DICTIONARY2_SOURCE,,GroupId: 2869568
 320212,WORD_NOUN,,KATAKANA,,,-,ダウン・シュラフ,,daun shurafu,"śpiwór puchowy
 śpiwór wypełniony puchem",,DICTIONARY2_SOURCE,,GroupId: 2869568
+320213,WORD_NOUN,,KATAKANA,,,-,セリー,,serii,sherry,,DICTIONARY2_SOURCE,DUPLICATE 132175,GroupId: 1060010
+320214,WORD_NOUN,,KATAKANA,,,-,リンデン,,rinden,lindan,"chemia; organiczny związek chemiczny, jeden z izomerów heksachlorocykloheksanu; niem: Linden",DICTIONARY2_SOURCE,DUPLICATE 152178,GroupId: 2869574
+320215,WORD_NOUN,,KATAKANA,,,-,シラー,,shiraa,cebula morska,roślina; słowo pochodzenia łacińskiego,DICTIONARY2_SOURCE,DUPLICATE 226079,GroupId: 2869575
+320216,WORD_NOUN,,KATAKANA,,,-,ヘル,,heru,pan,niem: Herr,DICTIONARY2_SOURCE,DUPLICATE 18719,GroupId: 2869576
+320217,WORD_NOUN,,KATAKANA,,,-,タクト,,takuto,"rytm
+takt",muzyka; niem: Takt,DICTIONARY2_SOURCE,DUPLICATE 34856,GroupId: 2869577
+320218,WORD_NOUN,,KATAKANA,,,-,ショートカット,,shooto katto,krótka fryzura dla kobiet,ang: short cut,DICTIONARY2_SOURCE,DUPLICATE 36955,GroupId: 2869578
+320219,WORD_NOUN,,KATAKANA,,,-,ショート・カット,,shooto katto,krótka fryzura dla kobiet,ang: short cut,DICTIONARY2_SOURCE,DUPLICATE 36995,GroupId: 2869578
+320220,WORD_NOUN,,KATAKANA,,,-,カルトン,,karuton,"tektura
+karton",fra: carton,DICTIONARY2_SOURCE,DUPLICATE 137000,GroupId: 2869579
+320221,WORD_NOUN,,KATAKANA,,,-,バル,,baru,balkon,skrót; ang: balcony,DICTIONARY2_SOURCE,DUPLICATE 23234,GroupId: 2869580
+320222,WORD_NOUN,,KATAKANA,,,-,ヘルツ,,herutsu,serce,niem: Herz,DICTIONARY2_SOURCE,DUPLICATE 22343,GroupId: 2869581
+320223,WORD_NOUN,,KATAKANA,,,-,フルフル,,furufuru,"Furtur
+mityczny wielki hrabia piekła (wyjaśnienie)",słowo pochodzenia łacińskiego,DICTIONARY2_SOURCE,DUPLICATE 112317,GroupId: 2869583
+320224,WORD_NOUN,,KATAKANA,,,-,スペースマン,,supeesu man,"osoba zajmująca się reklamami w pociągach, na stacjach itp.",ang: space man,DICTIONARY2_SOURCE,DUPLICATE 216712,GroupId: 2869584
+320225,WORD_NOUN,,KATAKANA,,,-,ターンオーバー,,taan' oobaa,jajka smażone z dwóch stron,ang: turn over,DICTIONARY2_SOURCE,DUPLICATE 168389,GroupId: 2869585
+320226,WORD_NOUN,,KATAKANA,,,-,ターン・オーバー,,taan' oobaa,jajka smażone z dwóch stron,ang: turn over,DICTIONARY2_SOURCE,DUPLICATE 168438,GroupId: 2869585
+320227,WORD_NOUN,,KATAKANA,,,-,ノーウェイト,,noo weito,natychmiastowy,np. w przypadku szybkości wyświetlania tekstu w grach komputerowych; ang: no wait,DICTIONARY2_SOURCE,DUPLICATE 85626,GroupId: 2869586
+320228,WORD_NOUN,,KATAKANA,,,-,ノーウエイト,,noo ueito,natychmiastowy,np. w przypadku szybkości wyświetlania tekstu w grach komputerowych; ang: no wait,DICTIONARY2_SOURCE,DUPLICATE 85696,GroupId: 2869586
+320229,WORD_NOUN,,KATAKANA,,,-,ノー・ウェイト,,noo weito,natychmiastowy,np. w przypadku szybkości wyświetlania tekstu w grach komputerowych; ang: no wait,DICTIONARY2_SOURCE,DUPLICATE 85697,GroupId: 2869586
+320230,WORD_NOUN,,KATAKANA,,,-,ノー・ウエイト,,noo ueito,natychmiastowy,np. w przypadku szybkości wyświetlania tekstu w grach komputerowych; ang: no wait,DICTIONARY2_SOURCE,DUPLICATE 85698,GroupId: 2869586
+320231,WORD_NOUN,,KATAKANA,,,-,セック,,sekku,sekans,matematyka; skrót; funkcja trygonometryczna,DICTIONARY2_SOURCE,"DUPLICATE 135948
+DUPLICATE 320232",GroupId: 2869587
+320232,WORD_NOUN,,KATAKANA,,,-,セック,,sekku,"wytrawne
+wytrawny smak wina",słowo pochodzenia francuskiego,DICTIONARY2_SOURCE,"DUPLICATE 135948
+DUPLICATE 320231",GroupId: 2869588
+320233,WORD_NOUN,,KATAKANA,,,-,ニューシングル,,nyuu shinguru,"osoba w wieku małżeńskim, która pozostaje samotna",np. aby skupić się na karierze zawodowej; ang: new single,DICTIONARY2_SOURCE,DUPLICATE 88251,GroupId: 2869589
+320234,WORD_NOUN,,KATAKANA,,,-,ニュー・シングル,,nyuu shinguru,"osoba w wieku małżeńskim, która pozostaje samotna",np. aby skupić się na karierze zawodowej; ang: new single,DICTIONARY2_SOURCE,DUPLICATE 88313,GroupId: 2869589
+320235,WORD_NOUN,,KATAKANA,,,-,フリードリンク,,furii dorinku,"bezpłatne dolewki
+nieograniczona ilość napojów
+napoje bez ograniczeń
+samodzielna obsługa dystrybutora napojów gazowanych",ang: free drink,DICTIONARY2_SOURCE,DUPLICATE 92510,GroupId: 2869590
+320236,WORD_NOUN,,KATAKANA,,,-,フリー・ドリンク,,furii dorinku,"bezpłatne dolewki
+nieograniczona ilość napojów
+napoje bez ograniczeń
+samodzielna obsługa dystrybutora napojów gazowanych",ang: free drink,DICTIONARY2_SOURCE,DUPLICATE 92560,GroupId: 2869590
+320237,WORD_NOUN,,KATAKANA,,,-,トレーニングパンツ,,toreeningu pantsu,spodnie dresowe,ang: training pants,DICTIONARY2_SOURCE,DUPLICATE 78926,GroupId: 2869591
+320238,WORD_NOUN,,KATAKANA,,,-,トレーニング・パンツ,,toreeningu pantsu,spodnie dresowe,ang: training pants,DICTIONARY2_SOURCE,DUPLICATE 79023,GroupId: 2869591
+320239,WORD_NOUN,,KATAKANA,,,-,クイックモーション,,kuikku mooshon,przyspieszone tempo wideo,ang: quick motion; słowo pochodzenia angielskiego,DICTIONARY2_SOURCE,DUPLICATE 157872,GroupId: 2869592
+320240,WORD_NOUN,,KATAKANA,,,-,クイック・モーション,,kuikku mooshon,przyspieszone tempo wideo,ang: quick motion; słowo pochodzenia angielskiego,DICTIONARY2_SOURCE,DUPLICATE 157940,GroupId: 2869592
+320241,WORD_NOUN,,KATAKANA,,,-,ハルシャ,,harusha,harcha,"jedzenie, gotowanie; okrągłe chlebki marokańskie z semoliny; słowo pochodzenia arabskiego",DICTIONARY2_SOURCE,"DUPLICATE 191143
+DUPLICATE 320242",GroupId: 2869604
+320242,WORD_NOUN,,KATAKANA,,,波斯,ハルシャ,,harusha,Persja,archaizm; nazwa z okresu Edo; słowo pochodzenia holenderskiego,DICTIONARY2_SOURCE,"DUPLICATE 78619
+DUPLICATE 78657
+DUPLICATE 191143
+DUPLICATE 320241",GroupId: 2869607
+320243,WORD_NOUN,,KATAKANA,,,-,ドミニカ,,dominika,"Dominika
+Wspólnota Dominiki",nazwa miejsca,DICTIONARY2_SOURCE,"DUPLICATE 20997
+DUPLICATE 160233",GroupId: 5057023
+320244,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA_KATAKANA,,,後出しじゃんけん,あとだしジャンケン,,atodashi janken,"czekanie na ruch przeciwnika
+???",,DICTIONARY2_SOURCE,DUPLICATE 237821,GroupId: 2833556
+320245,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,後だしじゃんけん,あとだしじゃんけん,,atodashi janken,"czekanie na ruch przeciwnika
+???",,DICTIONARY2_SOURCE,DUPLICATE 320246,GroupId: 2833556
+320246,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA_KATAKANA,,,後だしじゃんけん,あとだしジャンケン,,atodashi janken,"czekanie na ruch przeciwnika
+???",,DICTIONARY2_SOURCE,DUPLICATE 320245,GroupId: 2833556
+320247,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,あと出しジャンケン,あとだしじゃんけん,,atodashi janken,"czekanie na ruch przeciwnika
+???",,DICTIONARY2_SOURCE,DUPLICATE 320248,GroupId: 2833556
+320248,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA_KATAKANA,,,あと出しジャンケン,あとだしジャンケン,,atodashi janken,"czekanie na ruch przeciwnika
+???",,DICTIONARY2_SOURCE,DUPLICATE 320247,GroupId: 2833556
+320249,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA,,,あと出しじゃんけん,あとだしじゃんけん,,atodashi janken,"czekanie na ruch przeciwnika
+???",,DICTIONARY2_SOURCE,DUPLICATE 320250,GroupId: 2833556
+320250,"WORD_EXPRESSION
+WORD_NOUN",,HIRAGANA_KATAKANA,,,あと出しじゃんけん,あとだしジャンケン,,atodashi janken,"czekanie na ruch przeciwnika
+???",,DICTIONARY2_SOURCE,DUPLICATE 320249,GroupId: 2833556
+320251,WORD_NOUN,,HIRAGANA,,,スキ鋏,すきばさみ,,suki basami,"nożyczki do przerzedzania
+nożyce do przerzedzania",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2535590
+320252,WORD_NOUN,,HIRAGANA,,,すき鋏,すきばさみ,,suki basami,"nożyczki do przerzedzania
+nożyce do przerzedzania",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2535590
+320253,WORD_NOUN,,KATAKANA,,,-,フェチズム,,fechizumu,fetyszyzm,ang: fetishism,DICTIONARY2_SOURCE,,GroupId: 1109850
+320254,WORD_VERB_U,,HIRAGANA,,,噛みくだく,かみくだく,,kami kudaku,"chrupać
+żuć
+upraszczać
+ułatwiać
+tłumaczyć jasno",,DICTIONARY2_SOURCE,,GroupId: 1209170
+320255,WORD_NOUN,,KATAKANA,,,-,ヴェンティ,,venti,"venti (20-uncjowy kubek w Starbucks; wło: venti)
+dwadzieścia (pierwotne znaczenie)",,DICTIONARY2_SOURCE,,GroupId: 2826156
+320256,WORD_NOUN,,HIRAGANA,,,脚達,きゃたつ,,kyatatsu,składana drabina,,DICTIONARY2_SOURCE,,GroupId: 1226890
+320257,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,煽てと畚には乗り易い,おだてともっこにはのりやすい,,odate to mokko ni wa nori yasui,niebezpiecznie jest ulegać pochlebstwom,przysłowie,DICTIONARY2_SOURCE,,GroupId: 2868431
+320258,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,煽てと畚には乗りやすい,おだてともっこにはのりやすい,,odate to mokko ni wa nori yasui,niebezpiecznie jest ulegać pochlebstwom,przysłowie,DICTIONARY2_SOURCE,,GroupId: 2868431
+320259,WORD_EXPRESSION,,HIRAGANA,,,勝ちに不思議の勝ちあり、負けに不思議の負けなし,かちにふしぎのかちあり、まけにふしぎのまけなし,,kachi ni fushigi no kachi arimake nifushigi no makenashi,"mogą być tajemnicze wygrane, ale nie ma tajemniczych porażek
+szczęście może wyjaśnić zwycięstwo, ale nigdy porażkę",przysłowie,DICTIONARY2_SOURCE,,GroupId: 2868867
+320260,WORD_ADJECTIVE_F,,HIRAGANA,,,えも言えぬ,えもいえぬ,,emo ienu,"nie do opisania
+nie do wyrażenia
+wyjątkowy
+nie do zdefiniowania",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869549
+320261,WORD_ADJECTIVE_F,,HIRAGANA,,,得も言えぬ,えもいえぬ,,emo ienu,"nie do opisania
+nie do wyrażenia
+wyjątkowy
+nie do zdefiniowania",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869549
+320262,WORD_NOUN,,KATAKANA,,,-,ナイフブロック,,naifu burokku,stojak na noże,ang: knife block,DICTIONARY2_SOURCE,,GroupId: 2869562
+320263,WORD_NOUN,,KATAKANA,,,-,ナイフ・ブロック,,naifu burokku,stojak na noże,ang: knife block,DICTIONARY2_SOURCE,,GroupId: 2869562
+320264,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,格子状,こうしじょう,,koushijou,"w kształcie siatki
+w kratkę",,DICTIONARY2_SOURCE,,GroupId: 2869573
+320265,WORD_NOUN,,HIRAGANA,,,お子様椅子,おこさまいす,,okosama isu,wysokie krzesełko,uprzejmie,DICTIONARY2_SOURCE,,GroupId: 2869582
+320266,WORD_NOUN,,HIRAGANA,,,お子様イス,おこさまいす,,okosama isu,wysokie krzesełko,uprzejmie,DICTIONARY2_SOURCE,,GroupId: 2869582
+320267,WORD_NOUN,,KATAKANA,,,-,スペース・マン,,supeesu man,"osoba zajmująca się reklamami w pociągach, na stacjach itp.",ang: space man,DICTIONARY2_SOURCE,,GroupId: 2869584
+320268,WORD_EXPRESSION,,HIRAGANA,,,褒めてつかわす,ほめてつかわす,,homete tsukawasu,"uważaj się za pochwalonego
+niniejszym zostajesz wyróżniony",pompatyczny,DICTIONARY2_SOURCE,,GroupId: 2869594
+320269,WORD_EXPRESSION,,HIRAGANA,,,誉めてつかわす,ほめてつかわす,,homete tsukawasu,"uważaj się za pochwalonego
+niniejszym zostajesz wyróżniony",pompatyczny,DICTIONARY2_SOURCE,,GroupId: 2869594
+320270,WORD_EXPRESSION,,HIRAGANA,,,褒めて遣わす,ほめてつかわす,,homete tsukawasu,"uważaj się za pochwalonego
+niniejszym zostajesz wyróżniony",pompatyczny,DICTIONARY2_SOURCE,,GroupId: 2869594
+320271,WORD_EXPRESSION,,HIRAGANA,,,誉めて遣わす,ほめてつかわす,,homete tsukawasu,"uważaj się za pochwalonego
+niniejszym zostajesz wyróżniony",pompatyczny,DICTIONARY2_SOURCE,,GroupId: 2869594
+320272,WORD_EXPRESSION,,HIRAGANA,,,褒めて使わす,ほめてつかわす,,homete tsukawasu,"uważaj się za pochwalonego
+niniejszym zostajesz wyróżniony",pompatyczny,DICTIONARY2_SOURCE,,GroupId: 2869594
+320273,WORD_EXPRESSION,,HIRAGANA,,,誉めて使わす,ほめてつかわす,,homete tsukawasu,"uważaj się za pochwalonego
+niniejszym zostajesz wyróżniony",pompatyczny,DICTIONARY2_SOURCE,,GroupId: 2869594
+320274,WORD_NOUN,,HIRAGANA,,,お暇,おひま,,ohima,"czas wolny
+czas wolny od pracy",uprzejmie,DICTIONARY2_SOURCE,DUPLICATE 112691,GroupId: 2869595
+320275,WORD_NOUN,,HIRAGANA,,,外廊下,そとろうか,,soto rouka,"korytarz zewnętrzny (zwłaszcza w budynku mieszkalnym)
+korytarz na świeżym powietrzu",,DICTIONARY2_SOURCE,,GroupId: 2869596
+320276,WORD_NOUN,,HIRAGANA,,,内廊下,うちろうか,,uchi rouka,"korytarz wewnętrzny (zwłaszcza w budynku mieszkalnym)
+zamknięty korytarz",,DICTIONARY2_SOURCE,,GroupId: 2869597
+320277,WORD_NOUN,,KATAKANA_HIRAGANA,,,クーパー靭帯,クーパーじんたい,,kuupaa jintai,"więzadła Coopera
+przegrody włóknisto-kolagenowe",anatomia,DICTIONARY2_SOURCE,,GroupId: 2869598
+320278,WORD_NOUN,,HIRAGANA,,,猟奇心,りょうきしん,,ryoukishin,chorobliwa ciekawość,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2869600
+320279,WORD_NOUN,,KATAKANA,,,-,フラットブレッド,,furattobureddo,flatbread,"rodzaj cienkiego, płaskiego pieczywa, często przygotowywanego bez użycia drożdży (nieleawnowane), smażonego na suchej patelni lub pieczonego",DICTIONARY2_SOURCE,,GroupId: 2869601
+320280,WORD_NOUN,,HIRAGANA,,,連続殺人事件,れんぞくさつじんじけん,,renzoku satsujin jiken,sprawa seryjnego mordercy,,DICTIONARY2_SOURCE,,GroupId: 2869602
+320281,WORD_NOUN,,KATAKANA,,,-,ペルシャ,,perusha,kot perski,ang: Persian,DICTIONARY2_SOURCE,DUPLICATE 78619,GroupId: 2869606
+320282,WORD_NOUN,,KATAKANA,,,-,ペルシア,,perushia,kot perski,ang: Persian,DICTIONARY2_SOURCE,DUPLICATE 78657,GroupId: 2869606
+320283,WORD_NOUN,,HIRAGANA,,,動索,どうさく,,dousaku,olinowanie ruchome,rodzaj olinowania na jachcie lub innej jednostce pływającej,DICTIONARY2_SOURCE,,GroupId: 2869614
+320284,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,本邦初,ほんぽうはつ,,honpouhatsu,"pierwszy w tym kraju
+pierwszy (tego rodzaju) w Japonii",,DICTIONARY2_SOURCE,,GroupId: 2869617
+320285,WORD_NOUN,,KATAKANA,,,-,コンコルド,,konkorudo,"Concorde (nazwa produktu; naddźwiękowy samolot pasażerski o napędzie turboodrzutowym, realizacja idei transportu naddźwiękowego)
+Concord (nazwa miejsca)",,DICTIONARY2_SOURCE,,GroupId: 5747597
