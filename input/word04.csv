@@ -27372,7 +27372,7 @@ przechwytywanie ruchu","skrót; technika stosowana w filmach i grach komputerowy
 312318,WORD_NOUN,,HIRAGANA,,,仙洞,せんとう,,sentou,"rezydencja emerytowanego cesarza
 siedziba byłego cesarza
 emerytowany cesarz
-były cesarz",formalny lub literacki termin,DICTIONARY2_SOURCE,,GroupId: 2865174
+były cesarz",formalny lub literacki termin,DICTIONARY2_SOURCE,DUPLICATE 320527,GroupId: 2865174
 312319,WORD_NOUN,,KATAKANA_HIRAGANA,,,ビール缶,ビールかん,,biiru kan,"piwo w puszce
 puszka po piwie",,DICTIONARY2_SOURCE,,GroupId: 2865176
 312320,WORD_NOUN,,KATAKANA_HIRAGANA,,,ビア缶,ビールかん,,biiru kan,"piwo w puszce
@@ -28423,21 +28423,13 @@ delfin gangesowy
 delfin indyjski
 susuka","pisanie zwykle z użyciem kana; gatunek ssaka morskiego z rodziny suzowatych, Platanista gangetica",DICTIONARY2_SOURCE,,GroupId: 2865553
 312861,WORD_NOUN,,KATAKANA,,,-,インダスカワイルカ,,indasu kawairuka,suzu indusowy,"gatunek ssaka morskiego z rodziny suzowatych, Platanista minor",DICTIONARY2_SOURCE,,GroupId: 2865554
-312862,WORD_NOUN,,HIRAGANA,,,亜細亜地潜り蛙,あじあじむがえる,,ajia jimu gaeru,"termitówka południowoazjatycka
-żaba indyjska
-termitówka indyjska","pisanie zwykle z użyciem kana; gatunek płaza bezogonowego z rodziny wąskopyskowatych, Kaloula pulchra","DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2865560
-312863,WORD_NOUN,,HIRAGANA,,,亜細亜地潜蛙,あじあじむがえる,,ajia jimu gaeru,"termitówka południowoazjatycka
-żaba indyjska
-termitówka indyjska","pisanie zwykle z użyciem kana; gatunek płaza bezogonowego z rodziny wąskopyskowatych, Kaloula pulchra","DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2865560
+312862,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,手彫,てぼり,,tebori,ręcznie rzeźbiony,,DICTIONARY2_SOURCE,,GroupId: 2853489
+312863,WORD_NOUN,,HIRAGANA,,,縦挽鋸,たてびきのこ,,tatebiki noko,piła wzdłużna,,DICTIONARY2_SOURCE,,GroupId: 2127470
 312864,WORD_NOUN,,KATAKANA,,,-,アジアジムグリガエル,,ajia jimuguri gaeru,"termitówka południowoazjatycka
 żaba indyjska
 termitówka indyjska","pisanie zwykle z użyciem kana; gatunek płaza bezogonowego z rodziny wąskopyskowatych, Kaloula pulchra",DICTIONARY2_SOURCE,,GroupId: 2865560
-312865,WORD_NOUN,,HIRAGANA,,,阿弗利加牛蛙,あふりかうしがえる,,afurika ushi gaeru,"buczek południowoafrykański
-żaba byk
-żaba olbrzymia","pisanie zwykle z użyciem kana; gatunek płaza bezogonowego z rodziny Pyxicephalidae, Pyxicephalus adspersus","DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2865561
+312865,WORD_NOUN,,HIRAGANA,,,暗号化鍵,あんごうかかぎ,,angouka kagi,klucz szyfrowania,informatyka,DICTIONARY2_SOURCE,,GroupId: 2856739
 312866,WORD_NOUN,,KATAKANA,,,-,アフリカウシガエル,,afurika ushi gaeru,"buczek południowoafrykański
 żaba byk
 żaba olbrzymia","pisanie zwykle z użyciem kana; gatunek płaza bezogonowego z rodziny Pyxicephalidae, Pyxicephalus adspersus",DICTIONARY2_SOURCE,,GroupId: 2865561
@@ -30902,10 +30894,7 @@ maszyna do gładzenia",,DICTIONARY2_SOURCE,,GroupId: 2866172
 314105,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,沖津,おきつ,,okitsu,"oceanu
 na otwartym morzu
 oceaniczny",poetycki termin,DICTIONARY2_SOURCE,,GroupId: 2865579
-314106,WORD_PRE_NOUN_ADJECTIVAL,,HIRAGANA,,,奥つ,おきつ,,okitsu,"oceanu
-na otwartym morzu
-oceaniczny",poetycki termin,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2865579
+314106,WORD_NOUN,,HIRAGANA,,,暗号化かぎ,あんごうかかぎ,,angouka kagi,klucz szyfrowania,informatyka,DICTIONARY2_SOURCE,,GroupId: 2856739
 314107,WORD_NOUN,,HIRAGANA,,,耳うどん,みみうどん,,mimi udon,"mimi udon
 udon w kształcie ucha z prefektury Tochigi (wyjaśnienie)","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2865989
 314108,WORD_NOUN,,KATAKANA_HIRAGANA,,,モンタン酸,モンタンさん,,montan san,kwas montanowy,chemia,DICTIONARY2_SOURCE,,GroupId: 2866064
@@ -32821,8 +32810,17 @@ Baranek Boży","chrześcijaństwo; tytuł, którego w Nowym Testamencie używał
 315092,WORD_NOUN,,KATAKANA,,,-,クルンジンガーズ・ラス,,kurunjingaazu rasu,Thalassoma rueppellii,gatunek ryby,DICTIONARY2_SOURCE,,GroupId: 2545820
 315093,WORD_NOUN,,KATAKANA,,,-,ジャイアント・ピグミー・ゴビー,,jaianto pigumii gobii,Trimma gigantum,"gatunek ryby, ang: giant pygmy goby",DICTIONARY2_SOURCE,,GroupId: 2550230
 315094,WORD_NOUN,,KATAKANA,,,-,バス・ブザー,,basu buzaa,brzęczek kąpielowy,ang: bath buzzer,DICTIONARY2_SOURCE,,GroupId: 1098530
-315095,WORD_NOUN,,HIRAGANA,,,模式産地,もしきちさんち,,moshikichi sanchi,lokalizacja typowa,biologia; geologia,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2866642
+315095,"WORD_NOUN
+WORD_ADJECTIVE_NO",,KATAKANA,,,変態,ヘンタイ,,hentai,"przekształcenie
+transformacja
+nienormalność
+perwersja seksualna (skrót)
+zboczenie (skrót)
+zboczeniec (skrót)
+metamorfoza (biologia)
+przeobrażenie (biologia)
+przekształcenie (chemia; fizyka)
+modyfikacja (chemia; fizyka)",,DICTIONARY2_SOURCE,DUPLICATE 10285,GroupId: 1511350
 315096,"WORD_ADVERB_TO
 WORD_ADVERB",,KATAKANA_EXCEPTION,,,-,パカラッパカラッ,,pakarappakara,klop-klop,onomatopeiczne lub mimetyczne słowo; zwłaszcza konia,DICTIONARY2_SOURCE,,GroupId: 2866675
 315097,"WORD_ADVERB_TO
@@ -35732,8 +35730,8 @@ pusta obietnica",,DICTIONARY2_SOURCE,,GroupId: 1494010
 316539,WORD_NOUN,,HIRAGANA,,,肋下動脈,ろっかどうみゃく,,rokka doumyaku,tętnica podżebrowa,anatomia,DICTIONARY2_SOURCE,,GroupId: 2867531
 316540,WORD_NOUN,,HIRAGANA,,,肺舌動脈,はいぜつどうみゃく,,haizetsu doumyaku,tętnica językowa,anatomia,DICTIONARY2_SOURCE,,GroupId: 2867532
 316541,WORD_NOUN,,HIRAGANA,,,眼角動脈,がんかくどうみゃく,,gankaku doumyaku,tętnica kątowa,anatomia,DICTIONARY2_SOURCE,,GroupId: 2867533
-316542,WORD_NOUN,,HIRAGANA,,,涙腺動脈,るいせんどうみょく,,ruisen doumyoku,tętnica łzowa,anatomia,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2867534
+316542,WORD_INTERJECTION,,HIRAGANA_KATAKANA,,,-,ひゃっほー,,hyahhoo,"hej-ho
+yahoo",,DICTIONARY2_SOURCE,,GroupId: 2857771
 316543,WORD_NOUN,,HIRAGANA,,,葉間動脈,ようかんどうみゃく,,youkan doumyaku,"tętnica międzypłacikowa
 tętnica międzyzrazikowa",anatomia,DICTIONARY2_SOURCE,,GroupId: 2867536
 316544,WORD_NOUN,,HIRAGANA,,,回旋動脈,かいせんどうみゃく,,kaisen doumyaku,???,anatomia; rodzaj tętnicy,DICTIONARY2_SOURCE,,GroupId: 2867537
@@ -44094,9 +44092,8 @@ Spaceship Enterprise (fikcja; seria fikcyjnych statków kosmicznych, na których
 319897,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,長期に亘る,ちょうきにわたる,,chouki ni wataru,"być przedłużonym
 trwać przez długi czas",,DICTIONARY2_SOURCE,,GroupId: 2868725
-319898,WORD_EXPRESSION,,HIRAGANA,,,負けに不思議の負けなし,まけにふしぎなまけなし,,make ni fushigina makenashi,"nie ma tajemniczych porażek
-porażka zawsze ma swoją przyczynę",przysłowie,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2868868
+319898,WORD_INTERJECTION,,HIRAGANA,,,-,ひゃっほう,,hyahhou,"hej-ho
+yahoo",,DICTIONARY2_SOURCE,,GroupId: 2857771
 319899,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,未体験,みたいけん,,mitaiken,"niedoświadczony
 brak doświadczenia",,DICTIONARY2_SOURCE,,GroupId: 2869350
@@ -45534,8 +45531,7 @@ skakanie (na obu nogach) (pierwotne znaczenie)",,DICTIONARY2_SOURCE,,GroupId: 11
 dziecko, którym opiekuje się dziadek",,DICTIONARY2_SOURCE,,GroupId: 2854252
 320477,WORD_NOUN,,HIRAGANA,,,お祖父ちゃん子,おじいちゃんこ,,ojiichanko,"dziecko, które jest bardzo blisko swojego dziadka
 dziecko, którym opiekuje się dziadek",,DICTIONARY2_SOURCE,,GroupId: 2854252
-320478,"WORD_PREFIX
-WORD_SUFFIX
+320478,"WORD_SUFFIX
 WORD_NOUN_SUFFIX",,HIRAGANA,,,付,づけ,,duke,"datowany
 data
 data wejścia w życie (np. zmiany zasad)
@@ -45641,3 +45637,137 @@ nieunikniony
 nieuchronny
 beznadziejny
 poza pomocą",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1411280
+320511,WORD_INTERJECTION,,KATAKANA,,,-,ヒャッホウ,,hyahhou,"hej-ho
+yahoo",,DICTIONARY2_SOURCE,,GroupId: 2857771
+320512,WORD_INTERJECTION,,HIRAGANA_KATAKANA,,,-,ひゃっほうー,,hyahhouu,"hej-ho
+yahoo",,DICTIONARY2_SOURCE,,GroupId: 2857771
+320513,WORD_INTERJECTION,,KATAKANA,,,-,ヒャッホウー,,hyahhouu,"hej-ho
+yahoo",,DICTIONARY2_SOURCE,,GroupId: 2857771
+320514,WORD_INTERJECTION,,HIRAGANA_KATAKANA,,,-,ひゃっほーう,,hyahhoou,"hej-ho
+yahoo",,DICTIONARY2_SOURCE,,GroupId: 2857771
+320515,"WORD_NOUN
+WORD_NOUN_SUFFIX",,KATAKANA,,,警察,ケーサツ,,keesatsu,"policja
+policjant (skrót)
+funkcjonariusz policji (skrót)
+posterunek policji (skrót)
+samozwańczy egzekutor (zasad, standardów itp.) (potocznie)
+samozwańczy strażnik (potocznie)
+samozwańczy stróż prawa (potocznie)",,DICTIONARY2_SOURCE,"DUPLICATE 3391
+DUPLICATE 320516",GroupId: 1252390
+320516,"WORD_NOUN
+WORD_NOUN_SUFFIX",,KATAKANA,,,警察,ケイサツ,,keisatsu,"policja
+policjant (skrót)
+funkcjonariusz policji (skrót)
+posterunek policji (skrót)
+samozwańczy egzekutor (zasad, standardów itp.) (potocznie)
+samozwańczy strażnik (potocznie)
+samozwańczy stróż prawa (potocznie)",,DICTIONARY2_SOURCE,"DUPLICATE 3391
+DUPLICATE 320515",GroupId: 1252390
+320517,WORD_NOUN,,HIRAGANA,,,觀察,かんさつ,,kansatsu,"obserwacja
+obserwowanie
+przyglądanie się",,DICTIONARY2_SOURCE,,GroupId: 1214900
+320518,WORD_NOUN,,HIRAGANA,,,失感情症,しつかんじょうしょう,,shitsukan joushou,aleksytymia,psychiatria; niezdolność do rozumienia lub identyfikowania emocji oraz ich nazywania i wyrażania,DICTIONARY2_SOURCE,,GroupId: 2858635
+320519,WORD_VERB_U,,HIRAGANA,,,タレ込む,たれこむ,,tare komu,"dać cynk (np. policji)
+informować (o)
+donosić na kogoś
+kablować",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2259490
+320520,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,スキを見る,すきをみる,,suki o miru,"czekać na odpowiedni moment
+czekać na swój czas
+czekać na swoją szansę",,DICTIONARY2_SOURCE,,GroupId: 2860201
+320521,WORD_VERB_RU,,HIRAGANA,,,小ましゃくれる,こましゃくれる,,komasha kureru,"być zuchwały (o dziecku)
+być bezczelny
+być pyskaty
+być przedwcześnie dojrzały",,DICTIONARY2_SOURCE,"DUPLICATE 122236
+DUPLICATE 320522
+DUPLICATE 320523
+DUPLICATE 320524
+DUPLICATE 320525
+DUPLICATE 320526",GroupId: 2249970
+320522,WORD_VERB_RU,,HIRAGANA,,,小ましゃくれる,こまっしゃくれる,,komassha kureru,"być zuchwały (o dziecku)
+być bezczelny
+być pyskaty
+być przedwcześnie dojrzały",,DICTIONARY2_SOURCE,"DUPLICATE 122317
+DUPLICATE 320521
+DUPLICATE 320523
+DUPLICATE 320524
+DUPLICATE 320525
+DUPLICATE 320526",GroupId: 2249970
+320523,WORD_VERB_RU,,HIRAGANA,,,小ましゃくれる,こまっちゃくれる,,komaccha kureru,"być zuchwały (o dziecku)
+być bezczelny
+być pyskaty
+być przedwcześnie dojrzały",,DICTIONARY2_SOURCE,"DUPLICATE 122319
+DUPLICATE 320521
+DUPLICATE 320522
+DUPLICATE 320524
+DUPLICATE 320525
+DUPLICATE 320526",GroupId: 2249970
+320524,WORD_VERB_RU,,HIRAGANA,,,小ましゃくれる,こまちゃくれる,,komacha kureru,"być zuchwały (o dziecku)
+być bezczelny
+być pyskaty
+być przedwcześnie dojrzały",,DICTIONARY2_SOURCE,"DUPLICATE 320521
+DUPLICATE 320522
+DUPLICATE 320523
+DUPLICATE 320525
+DUPLICATE 320526",GroupId: 2249970
+320525,WORD_VERB_RU,,KATAKANA_HIRAGANA,,,小ましゃくれる,コマっしゃくれる,,komassha kureru,"być zuchwały (o dziecku)
+być bezczelny
+być pyskaty
+być przedwcześnie dojrzały",,DICTIONARY2_SOURCE,"DUPLICATE 320521
+DUPLICATE 320522
+DUPLICATE 320523
+DUPLICATE 320524
+DUPLICATE 320526",GroupId: 2249970
+320526,WORD_VERB_RU,,KATAKANA_HIRAGANA,,,小ましゃくれる,コマしゃくれる,,komasha kureru,"być zuchwały (o dziecku)
+być bezczelny
+być pyskaty
+być przedwcześnie dojrzały",,DICTIONARY2_SOURCE,"DUPLICATE 320521
+DUPLICATE 320522
+DUPLICATE 320523
+DUPLICATE 320524
+DUPLICATE 320525",GroupId: 2249970
+320527,WORD_NOUN,,HIRAGANA,,,仙洞,せんどう,,sendou,"rezydencja emerytowanego cesarza
+siedziba byłego cesarza
+emerytowany cesarz
+były cesarz",formalny lub literacki termin,DICTIONARY2_SOURCE,DUPLICATE 312318,GroupId: 2865174
+320528,WORD_NOUN,,KATAKANA_HIRAGANA,,,亜細亜地潜り蛙,アジアじむぐりがえる,,ajia jimuguri gaeru,"termitówka południowoazjatycka
+żaba indyjska
+termitówka indyjska","pisanie zwykle z użyciem kana; gatunek płaza bezogonowego z rodziny wąskopyskowatych, Kaloula pulchra",DICTIONARY2_SOURCE,,GroupId: 2865560
+320529,WORD_NOUN,,KATAKANA_HIRAGANA,,,亜細亜地潜蛙,アジアじむぐりがえる,,ajia jimuguri gaeru,"termitówka południowoazjatycka
+żaba indyjska
+termitówka indyjska","pisanie zwykle z użyciem kana; gatunek płaza bezogonowego z rodziny wąskopyskowatych, Kaloula pulchra",DICTIONARY2_SOURCE,,GroupId: 2865560
+320530,WORD_NOUN,,KATAKANA_HIRAGANA,,,阿弗利加牛蛙,アフリカうしがえる,,afurika ushi gaeru,"buczek południowoafrykański
+żaba byk
+żaba olbrzymia","pisanie zwykle z użyciem kana; gatunek płaza bezogonowego z rodziny Pyxicephalidae, Pyxicephalus adspersus",DICTIONARY2_SOURCE,,GroupId: 2865561
+320531,WORD_NOUN,,HIRAGANA,,,模式産地,もしきさんち,,moshiki sanchi,lokalizacja typowa,biologia; geologia,DICTIONARY2_SOURCE,,GroupId: 2866642
+320532,WORD_NOUN,,HIRAGANA,,,涙腺動脈,るいせんどうみゃく,,ruisen doumyaku,tętnica łzowa,anatomia,DICTIONARY2_SOURCE,,GroupId: 2867534
+320533,WORD_EXPRESSION,,HIRAGANA,,,止むにやまれない,やむにやまれない,,yamu ni yamarenai,"bez możliwości pomocy sobie
+wbrew własnej woli
+nieodparty",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2413630
+320534,WORD_EXPRESSION,,HIRAGANA,,,止むにやまれず,やむにやまれず,,yamu ni yamarezu,"bez możliwości powstrzymania się
+wbrew własnej woli
+nieodparty",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2119080
+320535,WORD_EXPRESSION,,HIRAGANA,,,やむに止まれず,やむにやまれず,,yamu ni yamarezu,"bez możliwości powstrzymania się
+wbrew własnej woli
+nieodparty",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2119080
+320536,WORD_EXPRESSION,,HIRAGANA,,,已むにやまれず,やむにやまれず,,yamu ni yamarezu,"bez możliwości powstrzymania się
+wbrew własnej woli
+nieodparty",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2119080
+320537,WORD_EXPRESSION,,HIRAGANA,,,負けに不思議の負けなし,まけにふしぎのまけなし,,make ni fushigi no make nashi,"nie ma tajemniczych porażek
+porażka zawsze ma swoją przyczynę",przysłowie,DICTIONARY2_SOURCE,,GroupId: 2868868
+320538,WORD_EXPRESSION,,HIRAGANA,,,止むにやまれぬ,やむにやまれぬ,,yamu ni yamarenu,"bez możliwości pomocy sobie
+wbrew własnej woli
+zmuszający
+naciskający
+nieodparty",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2413620
+320539,WORD_EXPRESSION,,HIRAGANA,,,やむに止まれぬ,やむにやまれぬ,,yamu ni yamarenu,"bez możliwości pomocy sobie
+wbrew własnej woli
+zmuszający
+naciskający
+nieodparty",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2413620
+320540,WORD_EXPRESSION,,HIRAGANA,,,已むにやまれぬ,やむにやまれぬ,,yamu ni yamarenu,"bez możliwości pomocy sobie
+wbrew własnej woli
+zmuszający
+naciskający
+nieodparty",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2413620
+320541,WORD_NOUN,,HIRAGANA,,,-,あっちむいてほい,,acchi muite hoi,???,rodzaj gry,DICTIONARY2_SOURCE,,GroupId: 2869769
