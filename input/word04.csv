@@ -3627,8 +3627,8 @@ mieć wzwód",potocznie,DICTIONARY2_SOURCE,,GroupId: 2100730
 302354,WORD_NOUN,,KATAKANA,,,-,リーフ・パイ,,riifu pai,ciasto w kształcie liścia,"jedzenie, gotowanie; ang: leaf pie",DICTIONARY2_SOURCE,,GroupId: 2861287
 302355,WORD_NOUN,,HIRAGANA,,,眼杯,がんぱい,,ganpai,"kielich oczny
 pęcherzyk oczny",anatomia,DICTIONARY2_SOURCE,,GroupId: 2861288
-302356,WORD_NOUN,,KATAKANA,,,中張牌,チュンチャンパイ,,chunchanpai,???,mahjong; słowo pochodzenia chińskiego,DICTIONARY2_SOURCE,DUPLICATE 302357,GroupId: 2861289
-302357,WORD_NOUN,,KATAKANA_EXCEPTION,,,中張牌,チュウチャンパイ,,chuuchanpai,???,mahjong; słowo pochodzenia chińskiego,DICTIONARY2_SOURCE,DUPLICATE 302356,GroupId: 2861289
+302356,WORD_NOUN,,KATAKANA,,,中張牌,チュンチャンパイ,,chunchanpai,???,mahjong; chin: zhōng zhāng pái,DICTIONARY2_SOURCE,DUPLICATE 302357,GroupId: 2861289
+302357,WORD_NOUN,,KATAKANA_EXCEPTION,,,中張牌,チュウチャンパイ,,chuuchanpai,???,mahjong; chin: zhōng zhāng pái,DICTIONARY2_SOURCE,DUPLICATE 302356,GroupId: 2861289
 302358,WORD_NOUN,,KATAKANA_HIRAGANA,,,キャッシュレス決済,キャッシュレスけっさい,,kyasshuresu kessai,płatność bezgotówkowa,,DICTIONARY2_SOURCE,,GroupId: 2861291
 302359,WORD_NOUN,,KATAKANA,,,-,チートシート,,chiito shiito,"ściąga
 ściągawka",ang: cheat sheet,DICTIONARY2_SOURCE,,GroupId: 2861293
@@ -26562,14 +26562,11 @@ operacje przeciwpartyzanckie
 operacje przeciwrebelianckie",,DICTIONARY2_SOURCE,,GroupId: 2865058
 311936,WORD_NOUN,,HIRAGANA,,,軟骨炎,なんこつえん,,nankotsuen,zapalenie chrząstki,medycyna,DICTIONARY2_SOURCE,,GroupId: 2865059
 311937,WORD_NOUN,,KATAKANA,,,太平燕,タイピーエン,,taipiien,zupa z wermiszelu w stylu Kumamoto,"jedzenie, gotowanie; chin: tàipíngyàn",DICTIONARY2_SOURCE,"DUPLICATE 311938
-DUPLICATE 311939",GroupId: 2865060
+DUPLICATE 320549",GroupId: 2865060
 311938,WORD_NOUN,,KATAKANA,,,太平燕,タイピンエン,,taipin'en,zupa z wermiszelu w stylu Kumamoto,"jedzenie, gotowanie; chin: tàipíngyàn",DICTIONARY2_SOURCE,"DUPLICATE 311937
-DUPLICATE 311939",GroupId: 2865060
-311939,WORD_NOUN,,HIRAGANA,,,太平燕,たいびんえん,,taibin'en,zupa z wermiszelu w stylu Kumamoto,"jedzenie, gotowanie; chin: tàipíngyàn","DICTIONARY2_SOURCE
-TO_DELETE","DUPLICATE 311937
-DUPLICATE 311938",GroupId: 2865060
-311940,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,たいぴーえん,,taipiien,zupa z wermiszelu w stylu Kumamoto,"jedzenie, gotowanie; chin: tàipíngyàn","DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2865060
+DUPLICATE 320549",GroupId: 2865060
+311939,WORD_NOUN,,HIRAGANA,,,物消費,ものしょうひ,,mono shouhi,konsumpcja towarów,w odróżnieniu od usług,DICTIONARY2_SOURCE,,GroupId: 2842058
+311940,WORD_NOUN,,HIRAGANA,,,モノ消費,ものしょうひ,,mono shouhi,konsumpcja towarów,w odróżnieniu od usług,DICTIONARY2_SOURCE,,GroupId: 2842058
 311941,WORD_NOUN,,HIRAGANA,,,大血管転位,だいけっかんてんい,,daikekkan ten'i,"transpozycja wielkich tętnic
 transpozycja wielkich naczyń",medycyna,DICTIONARY2_SOURCE,,GroupId: 2865061
 311942,WORD_NOUN,,HIRAGANA,,,大建中湯,だいけんちゅうとう,,dai kenchuu tou,dai-kenchu-to,tradycyjna japońska medycyna ziołowa,DICTIONARY2_SOURCE,,GroupId: 2865063
@@ -28741,10 +28738,10 @@ zbyt daleko idący (o wnioskach)",,DICTIONARY2_SOURCE,,GroupId: 1391740
 313022,WORD_NOUN,,KATAKANA,,,-,ウマバエ,,umabae,giez koński,"pisanie zwykle z użyciem kana; owad, Gasterophilus intestinalis",DICTIONARY2_SOURCE,,GroupId: 1629470
 313023,WORD_NOUN,,HIRAGANA,,,タケノコ貝,たけのこがい,,takenoko gai,Terebra subulata,pisanie zwykle z użyciem kana; gatunek ślimaka morskiego,DICTIONARY2_SOURCE,,GroupId: 2256390
 313024,WORD_NOUN,,KATAKANA,,,-,タケノコガイ,,takenoko gai,Terebra subulata,pisanie zwykle z użyciem kana; gatunek ślimaka morskiego,DICTIONARY2_SOURCE,,GroupId: 2256390
-313025,WORD_NOUN,,KATAKANA_HIRAGANA,,,バルビツール酸,バルビツルさん,,barubitsuru san,kwas barbiturowy,chemia,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 230947,GroupId: 1966940
-313026,WORD_NOUN,,KATAKANA_HIRAGANA,,,バルビツル酸,バルビツールさん,,barubitsuuru san,kwas barbiturowy,chemia,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 230991,GroupId: 1966940
+313025,WORD_NOUN,,HIRAGANA_KATAKANA,,,感熱式プリンター,かんねつしきプリンター,,kannetsushiki purintaa,drukarka termiczna,informatyka,DICTIONARY2_SOURCE,,GroupId: 2347400
+313026,"WORD_EXPRESSION
+WORD_ADJECTIVE_NA",,HIRAGANA_KATAKANA,,,ご苦労様,ごくろーさま,,gokuroo sama,"dziękuję Ci za twoją ciężką pracę
+doceniam twoje wysiłki","uprzejmie; wyrażenie oznaczające podziękowanie za czyjąś pracę, nie używa się w stosunku do osób o wyższym statusie",DICTIONARY2_SOURCE,DUPLICATE 12486,GroupId: 1005030
 313027,WORD_NOUN,,HIRAGANA,,,和土,たたき,,tataki,"podłoga z twardego gruntu (glina, żwir itp.)
 podłoga betonowa",pisanie zwykle z użyciem kana; sporadycznie 叩き,DICTIONARY2_SOURCE,,GroupId: 2846090
 313028,WORD_NOUN,,KATAKANA,,,-,タイガー・エンジェルフィッシュ,,taigaa enjerufisshu,Apolemichthys kingi,"gatunek ryby z rodziny pomakantowatych, ang: tiger angelfish",DICTIONARY2_SOURCE,,GroupId: 2545200
@@ -31582,10 +31579,9 @@ biryani","jedzenie, gotowanie; potrawa indyjska; słowo pochodzenia indyjskiego"
 ???","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2866317
 314423,WORD_NOUN,,HIRAGANA,,,鮭冬葉,さけとば,,saketoba,"suszony łosoś
 ???","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2866317
-314424,WORD_NOUN,,HIRAGANA,,,冷風扇,れいふうき,,reifuuki,"klimatyzator ewaporacyjny
-klimatyzer ewaporacyjny
-klimatyzator adiabatyczny",urządzenie chłodzące powietrze poprzez odparowanie wody,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2866318
+314424,"WORD_EXPRESSION
+WORD_ADJECTIVE_NA",,HIRAGANA_KATAKANA,,,ご苦労さま,ごくろーさま,,gokuroo sama,"dziękuję Ci za twoją ciężką pracę
+doceniam twoje wysiłki","uprzejmie; wyrażenie oznaczające podziękowanie za czyjąś pracę, nie używa się w stosunku do osób o wyższym statusie",DICTIONARY2_SOURCE,DUPLICATE 12484,GroupId: 1005030
 314425,WORD_NOUN,,KATAKANA_HIRAGANA,,,ロケ弁,ロケべん,,roke ben,lunch w pudełku zjedzony na planie filmowym lub telewizyjnym,skrót,DICTIONARY2_SOURCE,,GroupId: 2866326
 314426,WORD_NOUN,,HIRAGANA,,,輪中,わじゅう,,wajuu,społeczność otoczona wałami przeciwpowodziowymi,,DICTIONARY2_SOURCE,,GroupId: 2866336
 314427,WORD_NOUN,,HIRAGANA,,,蝶ネジ,ちょうねじ,,chou neji,"nakrętka motylkowa
@@ -38153,8 +38149,9 @@ WORD_EXPRESSION",,HIRAGANA,,,証しを立てる,あかしをたてる,,akashi o 
 ustalić
 przedstawić dowody (na rzecz)",,DICTIONARY2_SOURCE,,GroupId: 2868093
 317509,WORD_NOUN,,HIRAGANA,,,語彙項目,ごいこうもく,,goikoumoku,jednostka leksykalna,lingwistyka,DICTIONARY2_SOURCE,,GroupId: 2868105
-317510,WORD_NOUN,,HIRAGANA,,,環境経済学,けいざいかんきょうがく,,keizai kankyougaku,ekonomia środowiska,,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2868106
+317510,"WORD_EXPRESSION
+WORD_ADJECTIVE_NA",,HIRAGANA_KATAKANA,,,御苦労様,ごくろーさま,,gokuroo sama,"dziękuję Ci za twoją ciężką pracę
+doceniam twoje wysiłki","uprzejmie; wyrażenie oznaczające podziękowanie za czyjąś pracę, nie używa się w stosunku do osób o wyższym statusie",DICTIONARY2_SOURCE,DUPLICATE 12485,GroupId: 1005030
 317511,WORD_NOUN,,KATAKANA,,,-,インロック,,in rokku,"zamknięcie się w samochodzie z kluczykami w środku
 zatrzaśnięcie samochodu",ang: in lock,DICTIONARY2_SOURCE,,GroupId: 2868107
 317512,WORD_NOUN,,HIRAGANA,,,歯科医学,しかいがく,,shikaigaku,"medycyna stomatologiczna
@@ -43887,8 +43884,8 @@ z tego powodu (potocznie; na początku zdania; przestarzałe lub potoczne)",,DIC
 słodycze z ciasta ryżowego",,DICTIONARY2_SOURCE,,GroupId: 2575900
 319821,WORD_NOUN,,KATAKANA,,,檬果,マンゴー,,mangoo,mango,pisanie zwykle z użyciem kana; Mangifera indica,DICTIONARY2_SOURCE,DUPLICATE 319822,GroupId: 1130020
 319822,WORD_NOUN,,KATAKANA,,,檬果,マンゴ,,mango,mango,pisanie zwykle z użyciem kana; Mangifera indica,DICTIONARY2_SOURCE,DUPLICATE 319821,GroupId: 1130020
-319823,"WORD_EXPRESSION
-WORD_ADJECTIVE_F",,HIRAGANA,,,えたいの知れない,えたいのしれない,,etai no shirenai,"dziwny
+319823,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,えたいの知れない,えたいのしれない,,etai no shirenai,"dziwny
 nieznany
 obcy
 tajemniczy
@@ -44101,8 +44098,8 @@ trwać przez długi czas",,DICTIONARY2_SOURCE,,GroupId: 2868725
 319898,WORD_INTERJECTION,,HIRAGANA,,,-,ひゃっほう,,hyahhou,"hej-ho
 yahoo",,DICTIONARY2_SOURCE,,GroupId: 2857771
 319899,"WORD_ADJECTIVE_NA
-WORD_NOUN",,HIRAGANA,,,未体験,みたいけん,,mitaiken,"niedoświadczony
-brak doświadczenia",,DICTIONARY2_SOURCE,,GroupId: 2869350
+WORD_NOUN",,HIRAGANA,,,未体験,みたいけん,,mitaiken,"nigdy wcześniej nieodczuwany (w odniesieniu do wrażenia lub wydarzenia)
+nie doświadczony wcześniej (np. w odniesieniu do smaku)",,DICTIONARY2_SOURCE,,GroupId: 2869350
 319900,WORD_NOUN,,HIRAGANA,,,焚き火台,たきびだい,,taki bidai,"miejsce na ognisko
 podstawka pod ognisko",,DICTIONARY2_SOURCE,,GroupId: 2869372
 319901,WORD_NOUN,,HIRAGANA,,,焚火台,たきびだい,,taki bidai,"miejsce na ognisko
@@ -44661,10 +44658,10 @@ dozwolone do fotografowania",,DICTIONARY2_SOURCE,,GroupId: 2869416
 nożyczki do gotowania",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869476
 320126,WORD_NOUN,,KATAKANA,,,-,キッチンバサミ,,kicchin basami,"nożyczki kuchenne
 nożyczki do gotowania",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869476
-320127,WORD_NOUN,,KATAKANA,,,-,ガレット・デ・ロワ,,garetto de rowa,Ciasto Trzech Króli,"jedzenie, gotowanie; ciasto pieczone we Francji z okazji święta Objawienia Pańskiego (czyli święta Trzech Króli), 6 stycznia; fra: galette des rois",DICTIONARY2_SOURCE,,GroupId: 2869480
-320128,WORD_NOUN,,KATAKANA,,,-,ガレットデロワ,,garetto de rowa,Ciasto Trzech Króli,"jedzenie, gotowanie; ciasto pieczone we Francji z okazji święta Objawienia Pańskiego (czyli święta Trzech Króli), 6 stycznia; fra: galette des rois",DICTIONARY2_SOURCE,,GroupId: 2869480
-320129,WORD_NOUN,,KATAKANA,,,-,ガレッド・デ・ロワ,,gareddo de rowa,Ciasto Trzech Króli,"jedzenie, gotowanie; ciasto pieczone we Francji z okazji święta Objawienia Pańskiego (czyli święta Trzech Króli), 6 stycznia; fra: galette des rois",DICTIONARY2_SOURCE,,GroupId: 2869480
-320130,WORD_NOUN,,KATAKANA,,,-,ガレッドデロワ,,gareddo de rowa,Ciasto Trzech Króli,"jedzenie, gotowanie; ciasto pieczone we Francji z okazji święta Objawienia Pańskiego (czyli święta Trzech Króli), 6 stycznia; fra: galette des rois",DICTIONARY2_SOURCE,,GroupId: 2869480
+320127,WORD_NOUN,,KATAKANA,,,-,ガレット・デ・ロワ,,garetto de rowa,Ciasto Trzech Króli,"jedzenie, gotowanie; ciasto pieczone we Francji z okazji święta Objawienia Pańskiego (czyli święta Trzech Króli), 6 stycznia; słowo pochodzenia francuskiego",DICTIONARY2_SOURCE,,GroupId: 2869480
+320128,WORD_NOUN,,KATAKANA,,,-,ガレットデロワ,,garetto de rowa,Ciasto Trzech Króli,"jedzenie, gotowanie; ciasto pieczone we Francji z okazji święta Objawienia Pańskiego (czyli święta Trzech Króli), 6 stycznia; słowo pochodzenia francuskiego",DICTIONARY2_SOURCE,,GroupId: 2869480
+320129,WORD_NOUN,,KATAKANA,,,-,ガレッド・デ・ロワ,,gareddo de rowa,Ciasto Trzech Króli,"jedzenie, gotowanie; ciasto pieczone we Francji z okazji święta Objawienia Pańskiego (czyli święta Trzech Króli), 6 stycznia; słowo pochodzenia francuskiego",DICTIONARY2_SOURCE,,GroupId: 2869480
+320130,WORD_NOUN,,KATAKANA,,,-,ガレッドデロワ,,gareddo de rowa,Ciasto Trzech Króli,"jedzenie, gotowanie; ciasto pieczone we Francji z okazji święta Objawienia Pańskiego (czyli święta Trzech Króli), 6 stycznia; słowo pochodzenia francuskiego",DICTIONARY2_SOURCE,,GroupId: 2869480
 320131,WORD_NOUN,,KATAKANA,,,-,フェーヴ,,feevu,fève,mała ceramiczna figurka ukryta w galette des rois; słowo pochodzenia francuskiego,DICTIONARY2_SOURCE,,GroupId: 2869481
 320132,WORD_NOUN,,KATAKANA,,,-,フェーブ,,feebu,fève,mała ceramiczna figurka ukryta w galette des rois; słowo pochodzenia francuskiego,DICTIONARY2_SOURCE,,GroupId: 2869481
 320133,WORD_NOUN,,HIRAGANA,,,救急外来,きゅうきゅうがいらい,,kyuukyuu gairai,pomoc ambulatoryjna w nagłych wypadkach,,DICTIONARY2_SOURCE,,GroupId: 2869487
@@ -45608,9 +45605,9 @@ egzekwowanie przepisów dotyczących narkotyków",,DICTIONARY2_SOURCE,,GroupId: 
 egzekwowanie przepisów dotyczących narkotyków",,DICTIONARY2_SOURCE,,GroupId: 2869631
 320494,WORD_NOUN,,HIRAGANA,,,麻薬取り締まり,まやくとりしまり,,mayaku tori shimari,"kontrola narkotyków
 egzekwowanie przepisów dotyczących narkotyków",,DICTIONARY2_SOURCE,,GroupId: 2869631
-320495,WORD_EXPRESSION,,KATAKANA_HIRAGANA,,,トンネルの先に光が見える,トンネルのさきにひとすじのひかり,,tonneru no saki ni hitosuji no hikari,zobaczyć światełko w tunelu,wyrażenie idiomatyczne,"DICTIONARY2_SOURCE
-NO_TYPE_CHECK
-TO_DELETE",,GroupId: 2869651
+320495,"WORD_EXPRESSION
+WORD_ADJECTIVE_NA",,HIRAGANA_KATAKANA,,,御苦労さま,ごくろーさま,,gokuroo sama,"dziękuję Ci za twoją ciężką pracę
+doceniam twoje wysiłki","uprzejmie; wyrażenie oznaczające podziękowanie za czyjąś pracę, nie używa się w stosunku do osób o wyższym statusie",DICTIONARY2_SOURCE,DUPLICATE 135026,GroupId: 1005030
 320496,WORD_NOUN,,HIRAGANA,,,淫筒,いんとう,,intou,kanał pochwowy,slang; wulgarnie,DICTIONARY2_SOURCE,,GroupId: 2869682
 320497,"WORD_NOUN
 WORD_ADJECTIVE_NO",,KATAKANA,,,-,ダブルリミテッド,,daburu rimiteddo,"półjęzykowy
@@ -45778,3 +45775,100 @@ zmuszający
 naciskający
 nieodparty",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2413620
 320541,WORD_NOUN,,HIRAGANA,,,-,あっちむいてほい,,acchi muite hoi,???,rodzaj gry,DICTIONARY2_SOURCE,,GroupId: 2869769
+320542,WORD_NOUN,,KATAKANA,,,-,カップラ,,kappura,"makaron w kubku
+ramen w kubku",skrót; potocznie,DICTIONARY2_SOURCE,DUPLICATE 43962,GroupId: 2869770
+320543,WORD_NOUN,,HIRAGANA_KATAKANA,,,脱衣マージャン,だついマージャン,,datsui maajan,mahjong rozbierany,mahjong,DICTIONARY2_SOURCE,,GroupId: 2850488
+320544,WORD_VERB_U,,HIRAGANA,,,染る,そまる,,somaru,"farbowany
+być ufarbowany
+być skażonym
+być zakażony
+być zainfekowanym
+być splamionym
+być przesiąkniętym",,DICTIONARY2_SOURCE,DUPLICATE 203771,GroupId: 1391100
+320545,WORD_VERB_RU,,HIRAGANA,,,はき替える,はきかえる,,haki kaeru,"przebierać się (dolną część ubrania: np. buty, kapcie, spodnie, spódnicę i etc)
+założyć złą parę butów",,DICTIONARY2_SOURCE,,GroupId: 1549780
+320546,"WORD_ADJECTIVE_NA
+WORD_NOUN",,HIRAGANA,,,荒唐無けい,こうとうむけい,,koutou mukei,"niedorzeczny
+absurdalny
+bezsensowny
+niedorzeczność
+nonsens
+bzdura",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 1281600
+320547,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,得体がしれない,えたいがしれない,,etai ga shirenai,"dziwny
+obcy
+nieznany
+tajemniczy
+zagadkowy
+podejrzany
+nieukazujący prawdziwej natury",,DICTIONARY2_SOURCE,,GroupId: 2258920
+320548,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,えたいが知れない,えたいがしれない,,etai ga shirenai,"dziwny
+obcy
+nieznany
+tajemniczy
+zagadkowy
+podejrzany
+nieukazujący prawdziwej natury",,DICTIONARY2_SOURCE,,GroupId: 2258920
+320549,WORD_NOUN,,HIRAGANA_KATAKANA,,,太平燕,たいぴーえん,,taipiien,zupa z wermiszelu w stylu Kumamoto,"jedzenie, gotowanie; chin: tàipíngyàn",DICTIONARY2_SOURCE,"DUPLICATE 311937
+DUPLICATE 311938",GroupId: 2865060
+320550,WORD_NOUN,,HIRAGANA,,,なま放送,なまほうそう,,namahousou,"emisja na żywo
+transmisja na żywo
+audycja nadawana na żywo",,DICTIONARY2_SOURCE,,GroupId: 1379520
+320551,WORD_NOUN,,HIRAGANA,,,冷風扇,れいふうせん,,reifuusen,"klimatyzator ewaporacyjny
+klimatyzer ewaporacyjny
+klimatyzator adiabatyczny",urządzenie chłodzące powietrze poprzez odparowanie wody,DICTIONARY2_SOURCE,,GroupId: 2866318
+320552,WORD_NOUN,,HIRAGANA,,,環境経済学,かんきょうけいざいがく,,kankyou keizaigaku,ekonomia środowiska,,DICTIONARY2_SOURCE,,GroupId: 2868106
+320553,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,得体のしれない,えたいのしれない,,etai no shirenai,"dziwny
+nieznany
+obcy
+tajemniczy
+podejrzany
+o nieznanej naturze (dosłownie)",,DICTIONARY2_SOURCE,,GroupId: 1454580
+320554,"WORD_EXPRESSION
+WORD_NOUN",,KATAKANA_HIRAGANA,,,トンネルの先に光,トンネルのさきにひかり,,tonneru no saki ni hikari,światełko na końcu tunelu,wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2869651
+320555,WORD_NOUN,,HIRAGANA,,,深夜帯,しんやたい,,shin'yatai,późna pora nocna,,DICTIONARY2_SOURCE,,GroupId: 2869749
+320556,WORD_NOUN,,HIRAGANA,,,取材車,しゅざいしゃ,,shuzaisha,wóz transmisyjny,,DICTIONARY2_SOURCE,,GroupId: 2869753
+320557,WORD_NOUN,,HIRAGANA,,,銃殺刑,じゅうさつけい,,juusatsukei,egzekucja przez rozstrzelanie,,DICTIONARY2_SOURCE,,GroupId: 2869761
+320558,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,膝を折る,ひざをおる,,hiza o oru,"poddać się (wyrażenie idiomatyczne)
+ustąpić (wyrażenie idiomatyczne)
+przyznać rację (wyrażenie idiomatyczne)
+uginać kolana
+klękać
+kucać",,DICTIONARY2_SOURCE,,GroupId: 2869762
+320559,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,ひざを折る,ひざをおる,,hiza o oru,"poddać się (wyrażenie idiomatyczne)
+ustąpić (wyrażenie idiomatyczne)
+przyznać rację (wyrażenie idiomatyczne)
+uginać kolana
+klękać
+kucać",,DICTIONARY2_SOURCE,,GroupId: 2869762
+320560,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,膝をおる,ひざをおる,,hiza o oru,"poddać się (wyrażenie idiomatyczne)
+ustąpić (wyrażenie idiomatyczne)
+przyznać rację (wyrażenie idiomatyczne)
+uginać kolana
+klękać
+kucać",,DICTIONARY2_SOURCE,,GroupId: 2869762
+320561,WORD_NOUN,,KATAKANA,,,-,グレートピレニーズ,,gureeto pireniizu,pirenejski pies górski,"rasa psa zaliczana do grupy molosów w typie górskim, wyhodowana w starożytności na terenach obecnej Francji, ang: Great Pyrenees",DICTIONARY2_SOURCE,,GroupId: 2869768
+320562,WORD_NOUN,,KATAKANA,,,-,グレート・ピレニーズ,,gureeto pireniizu,pirenejski pies górski,"rasa psa zaliczana do grupy molosów w typie górskim, wyhodowana w starożytności na terenach obecnej Francji, ang: Great Pyrenees",DICTIONARY2_SOURCE,,GroupId: 2869768
+320563,WORD_NOUN,,HIRAGANA,,,強盗強姦罪,ごうとうごうかんざい,,goutou goukan zai,(przestępstwo) gwałtu i rozboju,prawo,DICTIONARY2_SOURCE,,GroupId: 2869771
+320564,WORD_NOUN,,HIRAGANA,,,強盗強姦,ごうとうごうかん,,goutou goukan,gwałt i rozbój,,DICTIONARY2_SOURCE,,GroupId: 2869772
+320565,WORD_NOUN,,HIRAGANA,,,性交等,せいこうとう,,seikoutou,stosunek płciowy,prawo,DICTIONARY2_SOURCE,,GroupId: 2869779
+320566,WORD_NOUN,,HIRAGANA,,,不同意わいせつ罪,ふどういわいせつざい,,fudoui waisetsu zai,"(przestępstwo) nieprzyzwoite zachowanie bez zgody
+nieprzyzwoite czyny bez zgody",prawo,DICTIONARY2_SOURCE,,GroupId: 2869788
+320567,WORD_NOUN,,HIRAGANA,,,不同意ワイセツ罪,ふどういわいせつざい,,fudoui waisetsu zai,"(przestępstwo) nieprzyzwoite zachowanie bez zgody
+nieprzyzwoite czyny bez zgody",prawo,DICTIONARY2_SOURCE,,GroupId: 2869788
+320568,WORD_NOUN,,HIRAGANA,,,不同意猥褻罪,ふどういわいせつざい,,fudoui waisetsu zai,"(przestępstwo) nieprzyzwoite zachowanie bez zgody
+nieprzyzwoite czyny bez zgody",prawo,DICTIONARY2_SOURCE,,GroupId: 2869788
+320569,WORD_NOUN,,HIRAGANA,,,監護者,かんごしゃ,,kangosha,opiekun prawny,odpowiedzialny za nadzór nad osobą małoletnią,DICTIONARY2_SOURCE,,GroupId: 2869790
+320570,WORD_NOUN,,KATAKANA_HIRAGANA,,,スポーツ放送,スポーツほうそう,,supootsu housou,program sportowy w telewizji,,DICTIONARY2_SOURCE,,GroupId: 2869791
+320571,WORD_NOUN,,HIRAGANA,,,放送者,ほうそうしゃ,,housousha,"prezenter (radiowy)
+spiker",,DICTIONARY2_SOURCE,,GroupId: 2869792
+320572,WORD_NOUN,,HIRAGANA,,,放送員,ほうそういん,,housouin,spiker,,DICTIONARY2_SOURCE,,GroupId: 2869793
+320573,WORD_NOUN,,HIRAGANA,,,放送協会,ほうそうきょうかい,,housou kyoukai,korporacja nadawcza,,DICTIONARY2_SOURCE,,GroupId: 2869794
+320574,WORD_VERB_RU,,HIRAGANA,,,力つきる,ちからつきる,,chikara tsukiru,"wykorzystać wszystkie swoje siły
+zużyć całą swoją siłę
+umrzeć (wyrażenie eufemistyczne)",,DICTIONARY2_SOURCE,,GroupId: 2255450
