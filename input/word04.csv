@@ -26565,9 +26565,11 @@ operacje przeciwrebelianckie",,DICTIONARY2_SOURCE,,GroupId: 2865058
 DUPLICATE 311939",GroupId: 2865060
 311938,WORD_NOUN,,KATAKANA,,,太平燕,タイピンエン,,taipin'en,zupa z wermiszelu w stylu Kumamoto,"jedzenie, gotowanie; chin: tàipíngyàn",DICTIONARY2_SOURCE,"DUPLICATE 311937
 DUPLICATE 311939",GroupId: 2865060
-311939,WORD_NOUN,,HIRAGANA,,,太平燕,たいびんえん,,taibin'en,zupa z wermiszelu w stylu Kumamoto,"jedzenie, gotowanie; chin: tàipíngyàn",DICTIONARY2_SOURCE,"DUPLICATE 311937
+311939,WORD_NOUN,,HIRAGANA,,,太平燕,たいびんえん,,taibin'en,zupa z wermiszelu w stylu Kumamoto,"jedzenie, gotowanie; chin: tàipíngyàn","DICTIONARY2_SOURCE
+TO_DELETE","DUPLICATE 311937
 DUPLICATE 311938",GroupId: 2865060
-311940,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,たいぴーえん,,taipiien,zupa z wermiszelu w stylu Kumamoto,"jedzenie, gotowanie; chin: tàipíngyàn",DICTIONARY2_SOURCE,,GroupId: 2865060
+311940,WORD_NOUN,,HIRAGANA_KATAKANA,,,-,たいぴーえん,,taipiien,zupa z wermiszelu w stylu Kumamoto,"jedzenie, gotowanie; chin: tàipíngyàn","DICTIONARY2_SOURCE
+TO_DELETE",,GroupId: 2865060
 311941,WORD_NOUN,,HIRAGANA,,,大血管転位,だいけっかんてんい,,daikekkan ten'i,"transpozycja wielkich tętnic
 transpozycja wielkich naczyń",medycyna,DICTIONARY2_SOURCE,,GroupId: 2865061
 311942,WORD_NOUN,,HIRAGANA,,,大建中湯,だいけんちゅうとう,,dai kenchuu tou,dai-kenchu-to,tradycyjna japońska medycyna ziołowa,DICTIONARY2_SOURCE,,GroupId: 2865063
@@ -28739,8 +28741,10 @@ zbyt daleko idący (o wnioskach)",,DICTIONARY2_SOURCE,,GroupId: 1391740
 313022,WORD_NOUN,,KATAKANA,,,-,ウマバエ,,umabae,giez koński,"pisanie zwykle z użyciem kana; owad, Gasterophilus intestinalis",DICTIONARY2_SOURCE,,GroupId: 1629470
 313023,WORD_NOUN,,HIRAGANA,,,タケノコ貝,たけのこがい,,takenoko gai,Terebra subulata,pisanie zwykle z użyciem kana; gatunek ślimaka morskiego,DICTIONARY2_SOURCE,,GroupId: 2256390
 313024,WORD_NOUN,,KATAKANA,,,-,タケノコガイ,,takenoko gai,Terebra subulata,pisanie zwykle z użyciem kana; gatunek ślimaka morskiego,DICTIONARY2_SOURCE,,GroupId: 2256390
-313025,WORD_NOUN,,KATAKANA_HIRAGANA,,,バルビツール酸,バルビツルさん,,barubitsuru san,kwas barbiturowy,chemia,DICTIONARY2_SOURCE,DUPLICATE 230947,GroupId: 1966940
-313026,WORD_NOUN,,KATAKANA_HIRAGANA,,,バルビツル酸,バルビツールさん,,barubitsuuru san,kwas barbiturowy,chemia,DICTIONARY2_SOURCE,DUPLICATE 230991,GroupId: 1966940
+313025,WORD_NOUN,,KATAKANA_HIRAGANA,,,バルビツール酸,バルビツルさん,,barubitsuru san,kwas barbiturowy,chemia,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 230947,GroupId: 1966940
+313026,WORD_NOUN,,KATAKANA_HIRAGANA,,,バルビツル酸,バルビツールさん,,barubitsuuru san,kwas barbiturowy,chemia,"DICTIONARY2_SOURCE
+TO_DELETE",DUPLICATE 230991,GroupId: 1966940
 313027,WORD_NOUN,,HIRAGANA,,,和土,たたき,,tataki,"podłoga z twardego gruntu (glina, żwir itp.)
 podłoga betonowa",pisanie zwykle z użyciem kana; sporadycznie 叩き,DICTIONARY2_SOURCE,,GroupId: 2846090
 313028,WORD_NOUN,,KATAKANA,,,-,タイガー・エンジェルフィッシュ,,taigaa enjerufisshu,Apolemichthys kingi,"gatunek ryby z rodziny pomakantowatych, ang: tiger angelfish",DICTIONARY2_SOURCE,,GroupId: 2545200
@@ -31580,7 +31584,8 @@ biryani","jedzenie, gotowanie; potrawa indyjska; słowo pochodzenia indyjskiego"
 ???","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2866317
 314424,WORD_NOUN,,HIRAGANA,,,冷風扇,れいふうき,,reifuuki,"klimatyzator ewaporacyjny
 klimatyzer ewaporacyjny
-klimatyzator adiabatyczny",urządzenie chłodzące powietrze poprzez odparowanie wody,DICTIONARY2_SOURCE,,GroupId: 2866318
+klimatyzator adiabatyczny",urządzenie chłodzące powietrze poprzez odparowanie wody,"DICTIONARY2_SOURCE
+TO_DELETE",,GroupId: 2866318
 314425,WORD_NOUN,,KATAKANA_HIRAGANA,,,ロケ弁,ロケべん,,roke ben,lunch w pudełku zjedzony na planie filmowym lub telewizyjnym,skrót,DICTIONARY2_SOURCE,,GroupId: 2866326
 314426,WORD_NOUN,,HIRAGANA,,,輪中,わじゅう,,wajuu,społeczność otoczona wałami przeciwpowodziowymi,,DICTIONARY2_SOURCE,,GroupId: 2866336
 314427,WORD_NOUN,,HIRAGANA,,,蝶ネジ,ちょうねじ,,chou neji,"nakrętka motylkowa
@@ -38148,7 +38153,8 @@ WORD_EXPRESSION",,HIRAGANA,,,証しを立てる,あかしをたてる,,akashi o 
 ustalić
 przedstawić dowody (na rzecz)",,DICTIONARY2_SOURCE,,GroupId: 2868093
 317509,WORD_NOUN,,HIRAGANA,,,語彙項目,ごいこうもく,,goikoumoku,jednostka leksykalna,lingwistyka,DICTIONARY2_SOURCE,,GroupId: 2868105
-317510,WORD_NOUN,,HIRAGANA,,,環境経済学,けいざいかんきょうがく,,keizai kankyougaku,ekonomia środowiska,,DICTIONARY2_SOURCE,,GroupId: 2868106
+317510,WORD_NOUN,,HIRAGANA,,,環境経済学,けいざいかんきょうがく,,keizai kankyougaku,ekonomia środowiska,,"DICTIONARY2_SOURCE
+TO_DELETE",,GroupId: 2868106
 317511,WORD_NOUN,,KATAKANA,,,-,インロック,,in rokku,"zamknięcie się w samochodzie z kluczykami w środku
 zatrzaśnięcie samochodu",ang: in lock,DICTIONARY2_SOURCE,,GroupId: 2868107
 317512,WORD_NOUN,,HIRAGANA,,,歯科医学,しかいがく,,shikaigaku,"medycyna stomatologiczna
@@ -45603,7 +45609,8 @@ egzekwowanie przepisów dotyczących narkotyków",,DICTIONARY2_SOURCE,,GroupId: 
 320494,WORD_NOUN,,HIRAGANA,,,麻薬取り締まり,まやくとりしまり,,mayaku tori shimari,"kontrola narkotyków
 egzekwowanie przepisów dotyczących narkotyków",,DICTIONARY2_SOURCE,,GroupId: 2869631
 320495,WORD_EXPRESSION,,KATAKANA_HIRAGANA,,,トンネルの先に光が見える,トンネルのさきにひとすじのひかり,,tonneru no saki ni hitosuji no hikari,zobaczyć światełko w tunelu,wyrażenie idiomatyczne,"DICTIONARY2_SOURCE
-NO_TYPE_CHECK",,GroupId: 2869651
+NO_TYPE_CHECK
+TO_DELETE",,GroupId: 2869651
 320496,WORD_NOUN,,HIRAGANA,,,淫筒,いんとう,,intou,kanał pochwowy,slang; wulgarnie,DICTIONARY2_SOURCE,,GroupId: 2869682
 320497,"WORD_NOUN
 WORD_ADJECTIVE_NO",,KATAKANA,,,-,ダブルリミテッド,,daburu rimiteddo,"półjęzykowy
