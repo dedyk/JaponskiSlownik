@@ -24554,11 +24554,14 @@ OLED",elektronika; ang: organic light-emitting diode,DICTIONARY2_SOURCE,DUPLICAT
 OLED",elektronika; ang: organic light-emitting diode,DICTIONARY2_SOURCE,DUPLICATE 310870,GroupId: 2864683
 310872,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,,,-,ころりん,,kororin,toczenie się,czegoś małego,IGNORE_NO_JMEDICT,,
-310873,WORD_NOUN,,HIRAGANA,,,-,しこしこ,,shiko shiko,"sprężysty
+310873,"WORD_NOUN
+WORD_ADVERB
+WORD_ADVERB_TO",,HIRAGANA,,,-,しこしこ,,shiko shiko,"sprężysty
 al dente
-powoli, ale równomiernie
-masturbacja
-walenie konia",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2523990
+(powoli, ale) równomiernie
+cierpliwie
+masturbacja (potocznie)
+walenie konia (potocznie)",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2523990
 310874,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,,,-,どぼどぼ,,dobo dobo,"wylewanie się
 nalewanie (gęstego płynu)",,IGNORE_NO_JMEDICT,,
@@ -41407,9 +41410,9 @@ północ",,DICTIONARY2_SOURCE,DUPLICATE 223944,GroupId: 1520700
 318850,WORD_NOUN,,HIRAGANA_KATAKANA,,,当てレコ,あてレコ,,atereko,dubbing,"pisanie zwykle z użyciem kana; np. filmu na inny język, gra słów od アフレコ",DICTIONARY2_SOURCE,,GroupId: 1927940
 318851,WORD_NOUN,,KATAKANA_HIRAGANA,,,サプライチェーン攻撃,サプライチェーンこうげき,,sapurai cheen kougeki,atak na łańcuch dostaw,,DICTIONARY2_SOURCE,,GroupId: 2868708
 318852,WORD_NOUN,,KATAKANA,,,-,グーパー,,guupaa,"kamień-papier (gra)
-odmiana gry 'kamień, papier, nożyce' służąca do podziału osób na dwie grupy (wyjaśnienie)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2868861
+odmiana gry 'kamień, papier, nożyce' służąca do podziału osób na dwie grupy (wyjaśnienie)",,DICTIONARY2_SOURCE,,GroupId: 2868861
 318853,WORD_NOUN,,KATAKANA,,,-,グッパー,,guppaa,"kamień-papier (gra)
-odmiana gry 'kamień, papier, nożyce' służąca do podziału osób na dwie grupy (wyjaśnienie)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2868861
+odmiana gry 'kamień, papier, nożyce' służąca do podziału osób na dwie grupy (wyjaśnienie)",,DICTIONARY2_SOURCE,,GroupId: 2868861
 318854,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,くちばしを入れる,くちばしをいれる,,kuchibashi o ireru,"wtrącać się (np. do rozmowy)
 ingerować
@@ -43025,8 +43028,8 @@ DUPLICATE 319426",GroupId: 1568080
 319426,WORD_NOUN,,HIRAGANA,,,花柳街,かりゅうがい,,karyuugai,dzielnica czerwonych latarni,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2869169
 319427,WORD_NOUN,,HIRAGANA,,,草紙店,そうしみせ,,soushi mise,"sklep z książkami (okres Edo)
 sklep ezōshi",termin historyczny,DICTIONARY2_SOURCE,,GroupId: 2868976
-319428,WORD_NOUN,,KATAKANA,,,-,ハザマトビ,,hazamatobi,"ruch słonia
-skok po przekątnej",go (gra),DICTIONARY2_SOURCE,,GroupId: 2869052
+319428,WORD_NOUN,,KATAKANA,,,-,ハザマトビ,,hazama tobi,"ruch słonia
+skok po przekątnej",go (gra); pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869052
 319429,WORD_NOUN,,KATAKANA,,,-,チキリトビ,,chikiritobi,"ruch słonia
 skok po przekątnej
 ???",go (gra),DICTIONARY2_SOURCE,,GroupId: 2869053
@@ -44064,7 +44067,7 @@ słowo mimetyczne
 słowo naśladujące czynność, stan lub sposób zachowania istoty żywej, która nie wydaje dźwięków (np. bezcelowo, powoli) (wyjaśnienie)",lingwistyka; rzadko używane określenie; np. うろうろ，ふらり,DICTIONARY2_SOURCE,,GroupId: 2868851
 319873,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,胡蝶の夢,こちょうのゆめ,,kochou no yume,"będąc na wpół rozbudzonym, na wpół śpiącym
-sen motyla (dosłownie)",z przypowieści taoistycznej autorstwa Zhuang Zhou,DICTIONARY2_SOURCE,,GroupId: 2869101
+sen motyla (dosłownie)",wyrażenie idiomatyczne; z przypowieści taoistycznej autorstwa Zhuang Zhou,DICTIONARY2_SOURCE,,GroupId: 2869101
 319874,WORD_NOUN,,KATAKANA,,,-,ベビーカメラ,,bebii kamera,miniaturowa kamera,ang: baby camera,DICTIONARY2_SOURCE,,GroupId: 2869205
 319875,WORD_NOUN,,KATAKANA,,,-,ベビー・カメラ,,bebii kamera,miniaturowa kamera,ang: baby camera,DICTIONARY2_SOURCE,,GroupId: 2869205
 319876,WORD_NOUN,,HIRAGANA,,,外鰓,がいさい,,gaisai,skrzela zewnętrzne,zoologia,DICTIONARY2_SOURCE,,GroupId: 2869305
@@ -44907,7 +44910,8 @@ DUPLICATE 320241
 DUPLICATE 320353",GroupId: 2869607
 320243,WORD_NOUN,,KATAKANA,,,-,ドミニカ,,dominika,"Dominika
 Wspólnota Dominiki",nazwa miejsca,DICTIONARY2_SOURCE,"DUPLICATE 20997
-DUPLICATE 160233",GroupId: 5057023
+DUPLICATE 160233
+DUPLICATE 320687",GroupId: 5057023
 320244,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA_KATAKANA,,,後出しじゃんけん,あとだしジャンケン,,atodashi janken,"czekanie na ruch przeciwnika
 ???",,DICTIONARY2_SOURCE,DUPLICATE 237821,GroupId: 2833556
@@ -45204,7 +45208,7 @@ sypialnia niezgodna z normami",ang: free room,DICTIONARY2_SOURCE,,GroupId: 28690
 320333,WORD_NOUN,,KATAKANA,,,-,ナテグリニド,,nategurinido,nateglinid,farmakologia; ang: nateglinide,DICTIONARY2_SOURCE,,GroupId: 2869427
 320334,WORD_EXPRESSION,,HIRAGANA,,,-,いぬる,,inuru,"wrócić
 przyjechać do domu
-udać się do domu",pisanie zwykle z użyciem kana; dialekt Tosa,DICTIONARY2_SOURCE,,GroupId: 2869438
+udać się do domu",dialekt Tosa,DICTIONARY2_SOURCE,,GroupId: 2869438
 320335,WORD_NOUN,,KATAKANA,,,-,ナイトビジョン,,naito bijon,"noktowizja
 zdolność widzenia w ciemnościach",ang: night vision,DICTIONARY2_SOURCE,,GroupId: 2869448
 320336,WORD_NOUN,,KATAKANA,,,-,ナイト・ビジョン,,naito bijon,"noktowizja
@@ -46102,7 +46106,7 @@ wybuchnąć własnymi emocjami
 wyrazić swoje emocje",,DICTIONARY2_SOURCE,,GroupId: 1456720
 320630,WORD_NOUN,,KATAKANA,,,帽子,ボウシ,,boushi,"kapelusz
 czapka
-??? (ruch) (go (gra); zwykle ボウシ)",,DICTIONARY2_SOURCE,,GroupId: 1519170
+??? (ruch) (go (gra); zwykle ボウシ)",,DICTIONARY2_SOURCE,DUPLICATE 157,GroupId: 1519170
 320631,"WORD_VERB_RU
 WORD_SUFFIX",VERB_TRANSITIVITY,KATAKANA_HIRAGANA,,,付ける,ツケる,,tsukeru,"łączyć
 przyczepić
@@ -46144,7 +46148,7 @@ wytwarzać owoce
 robić intensywnie (po czasowniku w formie bez masu)
 robić zaciekle (po czasowniku w formie bez masu)
 robić mocno (po czasowniku w formie bez masu)
-być przyzwyczajonym do (robienia) (po czasowniku w formie bez masu)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1495770
+być przyzwyczajonym do (robienia) (po czasowniku w formie bez masu)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 2954,GroupId: 1495770
 320632,"WORD_VERB_RU
 WORD_SUFFIX",VERB_TRANSITIVITY,KATAKANA_HIRAGANA,,,着ける,ツケる,,tsukeru,"łączyć
 przyczepić
@@ -46186,7 +46190,7 @@ wytwarzać owoce
 robić intensywnie (po czasowniku w formie bez masu)
 robić zaciekle (po czasowniku w formie bez masu)
 robić mocno (po czasowniku w formie bez masu)
-być przyzwyczajonym do (robienia) (po czasowniku w formie bez masu)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1495770
+być przyzwyczajonym do (robienia) (po czasowniku w formie bez masu)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 17157,GroupId: 1495770
 320633,"WORD_VERB_RU
 WORD_SUFFIX",VERB_TRANSITIVITY,KATAKANA_HIRAGANA,,,附ける,ツケる,,tsukeru,"łączyć
 przyczepić
@@ -46228,7 +46232,7 @@ wytwarzać owoce
 robić intensywnie (po czasowniku w formie bez masu)
 robić zaciekle (po czasowniku w formie bez masu)
 robić mocno (po czasowniku w formie bez masu)
-być przyzwyczajonym do (robienia) (po czasowniku w formie bez masu)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1495770
+być przyzwyczajonym do (robienia) (po czasowniku w formie bez masu)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 27848,GroupId: 1495770
 320634,WORD_NOUN,,KATAKANA,,,節,フシ,,fushi,"staw
 przegub
 kostka
@@ -46236,7 +46240,12 @@ melodia
 węzeł (łodygi rośliny)
 sęk (w drewnie)
 (ważny) punkt
-węzeł (fizyka)",,DICTIONARY2_SOURCE,,GroupId: 1386160
+węzeł (fizyka)",,DICTIONARY2_SOURCE,"DUPLICATE 3705
+DUPLICATE 3706
+DUPLICATE 3707
+DUPLICATE 52733
+DUPLICATE 61665
+DUPLICATE 66571",GroupId: 1386160
 320635,"WORD_ADVERB_TO
 WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,-,ぴっちぴっち,,picchi picchi,"tryskający młodością i energią (zwłaszcza młoda kobieta)
@@ -46299,12 +46308,12 @@ nieoczekiwanie (szczególnie wiatr, deszcz i etc)",pisanie zwykle z użyciem kan
 (wpatrując się) nieruchomo
 uważnie
 bacznie
-???",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1005510
+???",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 109239,GroupId: 1005510
 320645,WORD_ADVERB_TO,,KATAKANA,,,繁繁,シゲシゲ,,shige shige,"często
 (wpatrując się) nieruchomo
 uważnie
 bacznie
-???",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1005510
+???",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 109177,GroupId: 1005510
 320646,WORD_ADVERB,,KATAKANA_HIRAGANA,,,-,ドサッと,,dosatto,"z hukiem
 z trzaskiem
 z łomotem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2088940
@@ -46398,8 +46407,8 @@ workowaty",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 286
 320675,WORD_NOUN,,KATAKANA,,,-,ガーリック・シュリンプ,,gaarikku shurinpu,krewetki z czosnkiem,"jedzenie, gotowanie; ang: garlic shrimp",DICTIONARY2_SOURCE,,GroupId: 2869899
 320676,WORD_NOUN,,KATAKANA,,,-,ガーリックライス,,gaarikku raisu,ryż z czosnkiem,"jedzenie, gotowanie; ang: garlic rice",DICTIONARY2_SOURCE,,GroupId: 2869900
 320677,WORD_NOUN,,KATAKANA,,,-,ガーリック・ライス,,gaarikku raisu,ryż z czosnkiem,"jedzenie, gotowanie; ang: garlic rice",DICTIONARY2_SOURCE,,GroupId: 2869900
-320678,WORD_VERB_RU,,HIRAGANA,,,-,こすみつける,,kosumi tsukeru,zagrać ukośny ruch,go (gra); pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869901
-320679,WORD_VERB_RU,,KATAKANA_HIRAGANA,,,-,コスミツケる,,kosumi tsukeru,zagrać ukośny ruch,go (gra); pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869901
+320678,WORD_VERB_RU,,HIRAGANA,,,-,こすみつける,,kosumi tsukeru,zagrać ukośny ruch,go (gra),DICTIONARY2_SOURCE,,GroupId: 2869901
+320679,WORD_VERB_RU,,KATAKANA_HIRAGANA,,,-,コスミツケる,,kosumi tsukeru,zagrać ukośny ruch,go (gra),DICTIONARY2_SOURCE,,GroupId: 2869901
 320680,WORD_NOUN,,HIRAGANA,,,戮力,りくりょく,,rikuryoku,"współpraca
 współdziałanie
 pomoc
@@ -46411,9 +46420,81 @@ WORD_NOUN",,HIRAGANA,,,-,こぽこぽ,,kopo kopo,bulgotanie cieczy,onomatopeiczn
 320683,WORD_NOUN,,HIRAGANA,,,室内機,しつないき,,shitsunaiki,urządzenie wewnętrzne,zwłaszcza klimatyzator,DICTIONARY2_SOURCE,,GroupId: 2869905
 320684,WORD_NOUN,,KATAKANA,,,ＥＣサイト,イーシーサイト,,iishii saito,"witryna e-commerce
 platforma zakupów online",,DICTIONARY2_SOURCE,,GroupId: 2869906
-320685,WORD_NOUN,,HIRAGANA_KATAKANA,,,自己啓発セミナー,こけいはつセミナー,,kokei hatsu seminaa,"seminarium poświęcone samooświeceniu (często o charakterze sekciarskim)
-seminarium motywacyjne",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2869907
+320685,WORD_NOUN,,HIRAGANA,,,韃,ぶち,,buchi,"bicz
+bat
+pejcz
+kij
+rózga
+wskaźnik
+zachęta
+nagana
+bodziec",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,"DUPLICATE 45155
+DUPLICATE 253655",GroupId: 1633970
 320686,WORD_NOUN,,HIRAGANA,,,自己啓発書,じこけいはつしょ,,jikokei hatsusho,książka o samodoskonaleniu,,DICTIONARY2_SOURCE,,GroupId: 2869908
-320687,WORD_NOUN,,KATAKANA,,,-,ドミニカ,,dominika,"xxx
-xxx",,,,GroupId: 2869950
+320687,WORD_NOUN,,KATAKANA,,,-,ドミニカ,,dominika,"Republika Dominikańska
+Dominikana
+Dominika",,DICTIONARY2_SOURCE,"DUPLICATE 20997
+DUPLICATE 160233
+DUPLICATE 320243",GroupId: 2869950
+320688,WORD_NOUN,,KATAKANA,,,-,アンゴラ,,angora,"angora
+Angora (termin historyczny; dawna nazwa Ankary)",,DICTIONARY2_SOURCE,DUPLICATE 64550,GroupId: 2869925
+320689,WORD_NOUN,,HIRAGANA,,,中２病,ちゅうにびょう,,chuunibyou,"zachowanie charakterystyczne dla nastolatków przeżywających okres dojrzewania
+choroba uczniów drugiego roku gimnazjum (dosłownie)",żartobliwie; slang,DICTIONARY2_SOURCE,,GroupId: 2425740
+320690,WORD_NOUN,,HIRAGANA,,,咒法,じゅほう,,juhou,"ezoteryczny rytuał buddyjski, podczas którego intonowane są zaklęcia (buddyzm)
+magia
+czary",,DICTIONARY2_SOURCE,,GroupId: 2546000
+320691,WORD_NOUN,,HIRAGANA,,,咒力,じゅりょく,,juryoku,"magiczna moc
+mistyczna siła",,DICTIONARY2_SOURCE,,GroupId: 2157000
+320692,WORD_NOUN,,HIRAGANA,,,咒言,じゅごん,,jugon,"zaklęcie
+urok
+przekleństwo
+klątwa
+zaklinanie",,DICTIONARY2_SOURCE,DUPLICATE 320693,GroupId: 2545980
+320693,WORD_NOUN,,HIRAGANA,,,咒言,じゅげん,,jugen,"zaklęcie
+urok
+przekleństwo
+klątwa
+zaklinanie",,DICTIONARY2_SOURCE,DUPLICATE 320692,GroupId: 2545980
+320694,WORD_NOUN,,HIRAGANA,,,狭間飛び,はざまとび,,hazama tobi,"ruch słonia
+skok po przekątnej",go (gra); pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869052
+320695,WORD_NOUN,,HIRAGANA_KATAKANA,,,自己啓発セミナー,じこけいはつセミナー,,jiko keihatsu seminaa,"seminarium poświęcone samooświeceniu (często o charakterze sekciarskim)
+seminarium motywacyjne",,DICTIONARY2_SOURCE,,GroupId: 2869907
+320696,WORD_NOUN,,KATAKANA,,,-,ハサミツケ,,hasamitsuke,???,go (gra),DICTIONARY2_SOURCE,,GroupId: 2869051
+320697,WORD_NOUN,,HIRAGANA,,,両手両足,りょうてりょうあし,,ryoute ryouashi,"obie ręce i obie stopy
+wszystkie cztery kończyny",,DICTIONARY2_SOURCE,,GroupId: 2869459
+320698,WORD_ADJECTIVE_F,,KATAKANA,,,-,オプティック,,oputikku,"wzrokowy
+optyczny",ang: optic,DICTIONARY2_SOURCE,,GroupId: 2869884
+320699,WORD_ADJECTIVE_NO,,KATAKANA,,,-,マジェスティック,,majesutikku,"królewski
+majestatyczny",ang: majestic,DICTIONARY2_SOURCE,,GroupId: 2869886
+320700,WORD_ADJECTIVE_NA,,KATAKANA,,,-,カオティック,,kaotikku,chaotyczny,ang: chaotic,DICTIONARY2_SOURCE,,GroupId: 2869888
+320701,WORD_ADJECTIVE_NA,,KATAKANA,,,-,アロマティック,,aromatikku,"aromatyczny
+zapachowy",ang: aromatic,DICTIONARY2_SOURCE,,GroupId: 2869889
+320702,WORD_ADJECTIVE_NA,,KATAKANA,,,-,アロマチック,,aromachikku,"aromatyczny
+zapachowy",ang: aromatic,DICTIONARY2_SOURCE,,GroupId: 2869889
+320703,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA_KATAKANA,,,前ボタン,まえボタン,,mae botan,guzik z przodu,,DICTIONARY2_SOURCE,,GroupId: 2869914
+320704,WORD_NOUN,,HIRAGANA,,,船艦,せんかん,,senkan,statki cywilne i okręty wojenne,przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2869917
+320705,WORD_NOUN,,HIRAGANA,,,神経症状,しんけいしょうじょう,,shinkei shoujou,"objaw neurologiczny
+deficyt neurologiczny",medycyna,DICTIONARY2_SOURCE,,GroupId: 2869923
+320706,WORD_NOUN,,HIRAGANA,,,神経症患者,しんけいしょうかんじゃ,,shinkei shoukanja,"pacjent cierpiący na nerwicę
+osoba z nerwicą
+neuropatia",,DICTIONARY2_SOURCE,,GroupId: 2869924
+320707,WORD_ADJECTIVE_NA,,HIRAGANA,,,神経症的,しんけいしょうてき,,shinkei shouteki,neurotyczny,,DICTIONARY2_SOURCE,,GroupId: 2869926
+320708,WORD_NOUN,,HIRAGANA,,,社会病質,しゃかいびょうしつ,,shakai byoushitsu,"socjopatia
+psychopatia socjopatyczna",psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869936
+320709,WORD_NOUN,,HIRAGANA,,,行為障害,こういしょうがい,,koui shougai,zaburzenie zachowania,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869940
+320710,WORD_NOUN,,HIRAGANA,,,素行障害,そこうしょうがい,,sokou shougai,zaburzenie zachowania,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869941
+320711,WORD_NOUN,,HIRAGANA,,,素行症,そこうしょう,,sokoushou,zaburzenie zachowania,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869942
+320712,WORD_NOUN,,HIRAGANA,,,反社会的集団,はんしゃかいてきしゅうだん,,han shakaiteki shuudan,"zorganizowana grupa przestępcza
+grupa przestępcza
+grupa antyspołeczna (dosłownie)",,DICTIONARY2_SOURCE,,GroupId: 2869943
+320713,WORD_NOUN,,HIRAGANA,,,易怒性,いどせい,,idosei,"drażliwość
+skłonność do irytacji",psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869944
+320714,WORD_NOUN,,HIRAGANA,,,同時多発,どうじたはつ,,douji tahatsu,występujące w tym samym czasie w różnych miejscach,np. ataki terrorystyczne,DICTIONARY2_SOURCE,,GroupId: 2869948
+320715,WORD_ADJECTIVE_NA,,HIRAGANA,,,同時多発的,どうじたはつてき,,douji tahatsuteki,w tym samym czasie w różnych miejscach,,DICTIONARY2_SOURCE,,GroupId: 2869949
+320716,WORD_NOUN,,HIRAGANA,,,病相期,びょうそうき,,byousouki,"faza aktywna (choroby)
+czas trwania epizodu",medycyna; psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869952
+320717,WORD_NOUN,,HIRAGANA,,,前駆期,ぜんくき,,zenkuki,"faza prodromalna
+prodrom",medycyna; psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869953
+320718,WORD_NOUN,,HIRAGANA,,,寛解期,かんかいき,,kankaiki,"faza remisji
+okres remisji",medycyna,DICTIONARY2_SOURCE,,GroupId: 2869954
