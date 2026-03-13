@@ -44385,11 +44385,11 @@ już ci mówiłem (na początku zdania)",dialekt Kansai,DICTIONARY2_SOURCE,,Grou
 320018,"WORD_ADVERB
 WORD_ADVERB_TO",,HIRAGANA,,,-,ひゅう,,hyuu,"świst
 syczenie
-z gwizdem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869386
+z gwizdem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,DUPLICATE 320719,GroupId: 2869386
 320019,"WORD_ADVERB
 WORD_ADVERB_TO",,KATAKANA_EXCEPTION,,,-,ヒュウ,,hyuu,"świst
 syczenie
-z gwizdem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869386
+z gwizdem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,DUPLICATE 320720,GroupId: 2869386
 320020,WORD_NOUN,,HIRAGANA,,,一番槍,いちばんやり,,ichiban' yari,"pierwszy, który rzucił włócznią (w kierunku wroga)
 pierwszy, który osiągnął sławę
 pierwszy, który osiągnął zasługi",,DICTIONARY2_SOURCE,,GroupId: 2869387
@@ -45468,18 +45468,16 @@ osoba starsza (zwykle formą kanji jest お爺様)",honoryfikatywnie; pisanie zw
 jadeit (kamień)
 zimorodek",,DICTIONARY2_SOURCE,"DUPLICATE 49294
 DUPLICATE 320506",GroupId: 2869691
-320447,"WORD_ADVERB_TO
-WORD_ADVERB",,KATAKANA_EXCEPTION,,,-,ボコッ,,boko,"z hukiem (odgłos lub wrażenie pojedynczego mocnego uderzenia)
+320447,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,ボコッ,,boko,"z hukiem (odgłos lub wrażenie pojedynczego mocnego uderzenia)
 z trzaskiem (odgłos lub wrażenie pojedynczego mocnego uderzenia)
 wyraźnie (o dziurze, wgnieceniu lub wybrzuszeniu)
-z dużym wgłębieniem
-wyraźnie wystającym",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869695
-320448,"WORD_ADVERB_TO
-WORD_ADVERB",,HIRAGANA_EXCEPTION,,,-,ぼこっ,,boko,"z hukiem (odgłos lub wrażenie pojedynczego mocnego uderzenia)
+???
+(wystający) zauważalnie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869695
+320448,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,ぼこっ,,boko,"z hukiem (odgłos lub wrażenie pojedynczego mocnego uderzenia)
 z trzaskiem (odgłos lub wrażenie pojedynczego mocnego uderzenia)
 wyraźnie (o dziurze, wgnieceniu lub wybrzuszeniu)
-z dużym wgłębieniem
-wyraźnie wystającym",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869695
+???
+(wystający) zauważalnie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869695
 320449,WORD_NOUN,,KATAKANA_HIRAGANA,,,クリーム煮,クリームに,,kuriimu ni,"potrawa gotowana w śmietanie
 potrawa z dodatkiem śmietany
 fricassee","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2869696
@@ -46090,19 +46088,21 @@ kremowo
 (topienie się i) stawanie się miękkim
 sennie
 ospale",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2218650
-320628,WORD_VERB_RU,,HIRAGANA,,,突きあげる,つきあげる,,tsuki ageru,"podbić
-podnosić
-podrzucać
-naciskanie na własnego zwierzchnika
-wywierać presję na swoich przełożonych
-wybuchnąć własnymi emocjami
+320628,WORD_VERB_RU,,HIRAGANA,,,突きあげる,つきあげる,,tsuki ageru,"podnosić
+wysuwać
+wystawać
+wywierać presję (na przełożonych)
+wywierać nacisk
+naciskać
+wzburzyć się (o emocjach)
 wyrazić swoje emocje",,DICTIONARY2_SOURCE,,GroupId: 1456720
-320629,WORD_VERB_RU,,HIRAGANA,,,つき上げる,つきあげる,,tsuki ageru,"podbić
-podnosić
-podrzucać
-naciskanie na własnego zwierzchnika
-wywierać presję na swoich przełożonych
-wybuchnąć własnymi emocjami
+320629,WORD_VERB_RU,,HIRAGANA,,,つき上げる,つきあげる,,tsuki ageru,"podnosić
+wysuwać
+wystawać
+wywierać presję (na przełożonych)
+wywierać nacisk
+naciskać
+wzburzyć się (o emocjach)
 wyrazić swoje emocje",,DICTIONARY2_SOURCE,,GroupId: 1456720
 320630,WORD_NOUN,,KATAKANA,,,帽子,ボウシ,,boushi,"kapelusz
 czapka
@@ -46498,3 +46498,209 @@ czas trwania epizodu",medycyna; psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869952
 prodrom",medycyna; psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869953
 320718,WORD_NOUN,,HIRAGANA,,,寛解期,かんかいき,,kankaiki,"faza remisji
 okres remisji",medycyna,DICTIONARY2_SOURCE,,GroupId: 2869954
+320719,WORD_ADVERB_TO,,HIRAGANA,,,-,ひゅう,,hyuu,"brzęczący dźwięk
+odgłos czegoś brzęczącego",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,DUPLICATE 320018,GroupId: 2523940
+320720,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,ヒュウ,,hyuu,"brzęczący dźwięk
+odgłos czegoś brzęczącego",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,DUPLICATE 320019,GroupId: 2523940
+320721,"WORD_VERB_RU
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,蹴りを入れる,ケリをいれる,,keri o ireru,kopać,szczególnie z użyciem siły,DICTIONARY2_SOURCE,DUPLICATE 290610,GroupId: 2858554
+320722,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,ケリを入れる,けりをいれる,,keri o ireru,kopać,szczególnie z użyciem siły,DICTIONARY2_SOURCE,DUPLICATE 320723,GroupId: 2858554
+320723,"WORD_VERB_RU
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,ケリを入れる,ケリをいれる,,keri o ireru,kopać,szczególnie z użyciem siły,DICTIONARY2_SOURCE,DUPLICATE 320722,GroupId: 2858554
+320724,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,蹴りをいれる,けりをいれる,,keri o ireru,kopać,szczególnie z użyciem siły,DICTIONARY2_SOURCE,DUPLICATE 320725,GroupId: 2858554
+320725,"WORD_VERB_RU
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,蹴りをいれる,ケリをいれる,,keri o ireru,kopać,szczególnie z użyciem siły,DICTIONARY2_SOURCE,DUPLICATE 320724,GroupId: 2858554
+320726,"WORD_VERB_RU
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,けりを入れる,ケリをいれる,,keri o ireru,kopać,szczególnie z użyciem siły,DICTIONARY2_SOURCE,DUPLICATE 290611,GroupId: 2858554
+320727,WORD_NOUN,,HIRAGANA,,,文芸春秋,ぶんげいしゅんじゅう,,bungeishunjuu,"Bungeishunju (nazwa firmy; wydawnictwo)
+Bungei Shunjū (dzieło artystyczne, np. literatura, muzyka i etc; czasopismo)",,DICTIONARY2_SOURCE,,GroupId: 5627573
+320728,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,ひゅうっ,,hyuu,"brzęczący dźwięk
+odgłos czegoś brzęczącego",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2523940
+320729,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,ヒュウッ,,hyuu,"brzęczący dźwięk
+odgłos czegoś brzęczącego",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2523940
+320730,WORD_NOUN,,HIRAGANA,,,疏外感,そがいかん,,sogaikan,"poczucie wyobcowania
+poczucie wykluczenia
+poczucie separacji",,DICTIONARY2_SOURCE,,GroupId: 1396720
+320731,"WORD_ADJECTIVE_NA
+WORD_ADVERB
+WORD_NOUN
+WORD_ADVERB_TO",,KATAKANA,,,-,ブワブワ,,buwa buwa,"wiotkie i opuchnięte
+zwiotczałe i spuchnięte
+miękkie i wzdęte
+gąbczaste",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2785290
+320732,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,ビュンッ,,byun,"świszczący dźwięk
+syczący dźwięk
+świst
+gwizd
+warkot
+brzęczenie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2700040
+320733,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,びゅんっ,,byun,"świszczący dźwięk
+syczący dźwięk
+świst
+gwizd
+warkot
+brzęczenie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2700040
+320734,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,びゅっん,,byunn,"świszczący dźwięk
+syczący dźwięk
+świst
+gwizd
+warkot
+brzęczenie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2700040
+320735,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,ビュッン,,byunn,"świszczący dźwięk
+syczący dźwięk
+świst
+gwizd
+warkot
+brzęczenie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2700040
+320736,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,ビュンっ,,byun,"świszczący dźwięk
+syczący dźwięk
+świst
+gwizd
+warkot
+brzęczenie",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2700040
+320737,WORD_NOUN,,HIRAGANA_KATAKANA,,,脇コキ,わきコキ,,waki koki,seks pod pachą,slang; wulgarnie,DICTIONARY2_SOURCE,DUPLICATE 320739,GroupId: 2859530
+320738,WORD_NOUN,,HIRAGANA_KATAKANA,,,腋コキ,わきコキ,,waki koki,seks pod pachą,slang; wulgarnie,DICTIONARY2_SOURCE,DUPLICATE 320740,GroupId: 2859530
+320739,WORD_NOUN,,KATAKANA,,,脇コキ,ワキコキ,,waki koki,seks pod pachą,slang; wulgarnie,DICTIONARY2_SOURCE,DUPLICATE 320737,GroupId: 2859530
+320740,WORD_NOUN,,KATAKANA,,,腋コキ,ワキコキ,,waki koki,seks pod pachą,slang; wulgarnie,DICTIONARY2_SOURCE,DUPLICATE 320738,GroupId: 2859530
+320741,WORD_NOUN,,HIRAGANA_KATAKANA,,,脇扱き,わきコキ,,waki koki,seks pod pachą,slang; wulgarnie,DICTIONARY2_SOURCE,DUPLICATE 320742,GroupId: 2859530
+320742,WORD_NOUN,,KATAKANA,,,脇扱き,ワキコキ,,waki koki,seks pod pachą,slang; wulgarnie,DICTIONARY2_SOURCE,DUPLICATE 320741,GroupId: 2859530
+320743,WORD_NOUN,,KATAKANA,,,-,ベンチグラインダー,,benchi guraindaa,szlifierka stołowa,ang: bench grinder,DICTIONARY2_SOURCE,,GroupId: 2869659
+320744,WORD_NOUN,,KATAKANA,,,-,ベンチ・グラインダー,,benchi guraindaa,szlifierka stołowa,ang: bench grinder,DICTIONARY2_SOURCE,,GroupId: 2869659
+320745,WORD_NOUN,,KATAKANA,,,-,チョップスティック,,choppusutikku,pałeczki,"do jedzenia ryżu, ang: chopsticks",DICTIONARY2_SOURCE,,GroupId: 2869887
+320746,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,ペシッ,,peshi,"(z) uderzeniem
+klapsem
+policzkiem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869915
+320747,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,ぺしっ,,peshi,"(z) uderzeniem
+klapsem
+policzkiem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869915
+320748,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,ペシっ,,peshi,"(z) uderzeniem
+klapsem
+policzkiem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869915
+320749,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,パシッ,,pashi,"(z) głośnym trzaskiem
+uderzeniem
+policzkiem
+trzasknięciem
+pęknięciem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869916
+320750,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,ぱしっ,,pashi,"(z) głośnym trzaskiem
+uderzeniem
+policzkiem
+trzasknięciem
+pęknięciem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869916
+320751,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,パシっ,,pashi,"(z) głośnym trzaskiem
+uderzeniem
+policzkiem
+trzasknięciem
+pęknięciem",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869916
+320752,WORD_NOUN,,HIRAGANA,,,市民課,しみんか,,shiminka,wydział spraw mieszkaniowych,w administracji miejskiej,DICTIONARY2_SOURCE,,GroupId: 2869918
+320753,WORD_NOUN,,HIRAGANA_KATAKANA,,,関東ローム層,かんとうロームそう,,kantou roomu sou,formacja gliniasta Kantō,geologia,DICTIONARY2_SOURCE,,GroupId: 2869920
+320754,WORD_NOUN,,HIRAGANA,,,金ドブ,かねどぶ,,kane dobu,strata pieniędzy,potocznie,DICTIONARY2_SOURCE,,GroupId: 2869921
+320755,WORD_NOUN,,HIRAGANA,,,金溝,かねどぶ,,kane dobu,strata pieniędzy,potocznie,DICTIONARY2_SOURCE,,GroupId: 2869921
+320756,WORD_NOUN,,HIRAGANA,,,金どぶ,かねどぶ,,kane dobu,strata pieniędzy,potocznie,DICTIONARY2_SOURCE,,GroupId: 2869921
+320757,WORD_NOUN,,HIRAGANA,,,凌遅刑,りょうちけい,,ryouchikei,"lingchi (forma tortury i egzekucji stosowana w Chinach)
+powolne krojenie
+śmierć tysiącem cięć",termin historyczny,DICTIONARY2_SOURCE,,GroupId: 2869922
+320758,WORD_NOUN,,HIRAGANA,,,神経症性障害,しんけいしょうせいしょうがい,,shinkei shousei shougai,zaburzenie nerwicowe,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869927
+320759,WORD_NOUN,,HIRAGANA,,,精神病質者,せいしんびょうしつしゃ,,seishin byoushitsusha,"psychopata
+psychopatka",,DICTIONARY2_SOURCE,,GroupId: 2869932
+320760,WORD_NOUN,,KATAKANA,,,-,ソシオパス,,soshiopasu,"socjopata
+socjopatka",ang: sociopath,DICTIONARY2_SOURCE,,GroupId: 2869933
+320761,WORD_NOUN,,KATAKANA,,,-,ソシオパシー,,soshiopashii,psychopatia,ang: sociopathy,DICTIONARY2_SOURCE,,GroupId: 2869934
+320762,WORD_NOUN,,HIRAGANA,,,社会病質者,しゃかいびょうしつしゃ,,shakai byoushitsusha,"socjopata
+socjopatka",,DICTIONARY2_SOURCE,,GroupId: 2869937
+320763,WORD_NOUN,,HIRAGANA_KATAKANA,,,反社会性パーソナリティ障害,はんしゃかいせいパーソナリティしょうがい,,hanshakaisei paasonariti shougai,antyspołeczne zaburzenie osobowości,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869938
+320764,WORD_NOUN,,HIRAGANA_KATAKANA,,,反社会性パーソナリティー障害,はんしゃかいせいパーソナリティしょうがい,,hanshakaisei paasonariti shougai,antyspołeczne zaburzenie osobowości,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869938
+320765,WORD_NOUN,,HIRAGANA,,,双極性感情障害,そうきょくせいかんじょうしょうがい,,soukyokusei kanjou shougai,"zaburzenie dwubiegunowe
+choroba dwubiegunowa",psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869955
+320766,WORD_NOUN,,HIRAGANA,,,統合失調症患者,とうごうしっちょうしょうかんじゃ,,tougou shicchoushou kanja,"pacjent cierpiący na schizofrenię
+osoba cierpiąca na schizofrenię
+osoba z schizofrenią",,DICTIONARY2_SOURCE,,GroupId: 2869957
+320767,WORD_NOUN,,HIRAGANA,,,感応性,かんのうせい,,kannousei,"reaktywność
+wrażliwość
+podatność
+współczucie",,DICTIONARY2_SOURCE,,GroupId: 2869959
+320768,WORD_NOUN,,HIRAGANA,,,精神保健福祉法,せいしんほけんふくしほう,,seishin hoken fukushihou,prawo ds. zdrowia psychicznego i opieki społecznej,prawo,DICTIONARY2_SOURCE,,GroupId: 2869960
+320769,WORD_NOUN,,HIRAGANA,,,精神衛生法,せいしんえいせいほう,,seishin' eiseihou,ustawa o higienie psychicznej (1950),prawo,DICTIONARY2_SOURCE,,GroupId: 2869961
+320770,WORD_NOUN,,HIRAGANA,,,精神保健法,せいしんほけんほう,,seishin hokenhou,ustawa o zdrowiu psychicznym (1987),prawo,DICTIONARY2_SOURCE,,GroupId: 2869962
+320771,WORD_NOUN,,HIRAGANA,,,冬季うつ病,とうきうつびょう,,touki utsubyou,"depresja zimowa
+zimowa depresja
+zimowa chandra",,DICTIONARY2_SOURCE,,GroupId: 2869975
+320772,WORD_NOUN,,HIRAGANA,,,冬季鬱病,とうきうつびょう,,touki utsubyou,"depresja zimowa
+zimowa depresja
+zimowa chandra",,DICTIONARY2_SOURCE,,GroupId: 2869975
+320773,WORD_NOUN,,HIRAGANA,,,冬季うつ,とうきうつ,,touki utsu,"depresja zimowa
+zimowa depresja
+zimowa chandra",,DICTIONARY2_SOURCE,,GroupId: 2869976
+320774,WORD_NOUN,,HIRAGANA,,,冬季鬱,とうきうつ,,touki utsu,"depresja zimowa
+zimowa depresja
+zimowa chandra",,DICTIONARY2_SOURCE,,GroupId: 2869976
+320775,WORD_NOUN,,HIRAGANA,,,冬うつ,ふゆうつ,,fuyu utsu,"depresja zimowa
+zimowa depresja
+zimowa chandra",,DICTIONARY2_SOURCE,,GroupId: 2869977
+320776,WORD_NOUN,,HIRAGANA,,,冬鬱,ふゆうつ,,fuyu utsu,"depresja zimowa
+zimowa depresja
+zimowa chandra",,DICTIONARY2_SOURCE,,GroupId: 2869977
+320777,WORD_NOUN,,KATAKANA,,,-,ウィンター・ブルー,,wintaa buruu,"depresja zimowa
+zimowa depresja
+zimowa chandra",ang: winter blues,DICTIONARY2_SOURCE,,GroupId: 2869978
+320778,WORD_NOUN,,KATAKANA,,,-,ウィンターブルー,,wintaa buruu,"depresja zimowa
+zimowa depresja
+zimowa chandra",ang: winter blues,DICTIONARY2_SOURCE,,GroupId: 2869978
+320779,WORD_NOUN,,KATAKANA,,,-,ウインターブルー,,uintaa buruu,"depresja zimowa
+zimowa depresja
+zimowa chandra",ang: winter blues,DICTIONARY2_SOURCE,,GroupId: 2869978
+320780,WORD_NOUN,,KATAKANA,,,-,ウインター・ブルー,,uintaa buruu,"depresja zimowa
+zimowa depresja
+zimowa chandra",ang: winter blues,DICTIONARY2_SOURCE,,GroupId: 2869978
+320781,WORD_NOUN,,HIRAGANA,,,性格神経症,せいかくしんけいしょう,,seikaku shinkeishou,nerwica osobowości,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869979
+320782,WORD_NOUN,,HIRAGANA_KATAKANA,,,相談センター,そうだんセンター,,soudan sentaa,"centrum doradcze
+punkt pomocy
+infolinia
+infolinia wsparcia",,DICTIONARY2_SOURCE,,GroupId: 2869982
+320783,WORD_NOUN,,HIRAGANA,,,放火癖,ほうかへき,,houkaheki,piromania,,DICTIONARY2_SOURCE,,GroupId: 2869990
+320784,WORD_NOUN,,KATAKANA,,,-,ピロマニア,,piromania,piromania,ang: pyromania,DICTIONARY2_SOURCE,,GroupId: 2869991
+320785,WORD_NOUN,,HIRAGANA,,,放火症,ほうかしょう,,houkashou,piromania,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869992
+320786,WORD_NOUN,,HIRAGANA,,,病的放火,びょうてきほうか,,byoutekihouka,piromania,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869993
+320787,WORD_NOUN,,HIRAGANA,,,政治小説,せいじしょうせつ,,seiji shousetsu,powieść polityczna,,DICTIONARY2_SOURCE,,GroupId: 2869994
+320788,WORD_NOUN,,HIRAGANA,,,新聞小説,しんぶんしょうせつ,,shinbun shousetsu,powieść publikowana w odcinkach w gazecie,,DICTIONARY2_SOURCE,,GroupId: 2869996
+320789,"WORD_NOUN
+WORD_ADJECTIVE_F",,HIRAGANA,,,反復性,はんぷくせい,,hanpukusei,"powtarzalność
+powtarzalna natura
+powtarzający się (medycyna)
+nawracający (medycyna)",,DICTIONARY2_SOURCE,,GroupId: 2870000
+320790,WORD_ADJECTIVE_NA,,HIRAGANA,,,反復的,はんぷくてき,,hanpukuteki,"powtarzalny
+iteracyjny",,DICTIONARY2_SOURCE,,GroupId: 2870001
+320791,WORD_NOUN,,KATAKANA,,,-,ステージママ,,suteeji mama,"matka sceniczna
+sceniczna matka",matka dziecka-aktora; ang: stage mama,DICTIONARY2_SOURCE,,GroupId: 2870012
+320792,WORD_NOUN,,KATAKANA,,,-,ステージ・ママ,,suteeji mama,"matka sceniczna
+sceniczna matka",matka dziecka-aktora; ang: stage mama,DICTIONARY2_SOURCE,,GroupId: 2870012
+320793,WORD_NOUN,,HIRAGANA,,,身体醜形障害,しんたいしゅうけいしょうがい,,shintai shuukei shougai,dysmorfofobia,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2870014
+320794,WORD_NOUN,,HIRAGANA,,,身体醜形症,しんたいしゅうけいしょう,,shintai shuukeishou,dysmorfofobia,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2870016
+320795,WORD_NOUN,,HIRAGANA_KATAKANA,,,反社会性パーソナリティ症,はんしゃかいせいパーソナリティしょう,,hanshakaisei paasonariti shou,antyspołeczne zaburzenie osobowości,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2870020
+320796,WORD_NOUN,,HIRAGANA_KATAKANA,,,反社会性パーソナリティー症,はんしゃかいせいパーソナリティしょう,,hanshakaisei paasonariti shou,antyspołeczne zaburzenie osobowości,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2870020
+320797,WORD_NOUN,,KATAKANA_HIRAGANA,,,パーソナリティ症,パーソナリティしょう,,paasonariti shou,zaburzenia osobowości,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2870021
+320798,WORD_NOUN,,KATAKANA_HIRAGANA,,,パーソナリティー症,パーソナリティしょう,,paasonariti shou,zaburzenia osobowości,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2870021
+320799,WORD_NOUN,,HIRAGANA,,,診断基準,しんだんきじゅん,,shindan kijun,"kryteria diagnostyczne
+standard diagnostyczny",,DICTIONARY2_SOURCE,,GroupId: 2870022
+320800,WORD_NOUN,,HIRAGANA,,,精神力動,せいしんりきどう,,seishin rikidou,psychodynamika,psychologia,DICTIONARY2_SOURCE,,GroupId: 2870024
+320801,WORD_NOUN,,HIRAGANA,,,精神力学,せいしんりきがく,,seishin rikigaku,psychodynamika,,DICTIONARY2_SOURCE,,GroupId: 2870025
+320802,WORD_NOUN,,HIRAGANA,,,力動,りきどう,,rikidou,"energiczny ruch
+dynamizm
+psychodynamika (psychologia)",,DICTIONARY2_SOURCE,,GroupId: 2870026
+320803,WORD_NOUN,,HIRAGANA,,,力動感,りきどうかん,,rikidoukan,(poczucie) dynamiki,,DICTIONARY2_SOURCE,,GroupId: 2870027
+320804,WORD_NOUN,,HIRAGANA_KATAKANA,,,境界性パーソナリティ症,きょうかいせいパーソナリティしょう,,kyoukaisei paasonariti shou,zaburzenie osobowości typu borderline,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2870029
+320805,WORD_NOUN,,HIRAGANA_KATAKANA,,,境界性パーソナリティー症,きょうかいせいパーソナリティしょう,,kyoukaisei paasonariti shou,zaburzenie osobowości typu borderline,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2870029
+320806,WORD_NOUN,,KATAKANA,,,ＢＰＤ,ビー・ピー・ディー,,bii pii dii,zaburzenie osobowości typu borderline,psychiatria,DICTIONARY2_SOURCE,DUPLICATE 320807,GroupId: 2870030
+320807,WORD_NOUN,,KATAKANA,,,ＢＰＤ,ビーピーディー,,bii pii dii,zaburzenie osobowości typu borderline,psychiatria,DICTIONARY2_SOURCE,DUPLICATE 320806,GroupId: 2870030
+320808,WORD_NOUN,,HIRAGANA,,,力動精神医学,りきどうせいしんいがく,,rikidou seishin' igaku,psychiatria psychoanalityczna,,DICTIONARY2_SOURCE,,GroupId: 2870031
+320809,WORD_NOUN,,KATAKANA,,,ＤＳＭ,ディー・エス・エム,,dii esu emu,"podręcznik diagnostyczny i statystyczny zaburzeń psychicznych (ang: Diagnostic and Statistical Manual of Mental Disorders)
+zarządzanie popytem (ang: demand side management)",,DICTIONARY2_SOURCE,DUPLICATE 320810,GroupId: 2870033
+320810,WORD_NOUN,,KATAKANA,,,ＤＳＭ,ディーエスエム,,dii esu emu,"podręcznik diagnostyczny i statystyczny zaburzeń psychicznych (ang: Diagnostic and Statistical Manual of Mental Disorders)
+zarządzanie popytem (ang: demand side management)",,DICTIONARY2_SOURCE,DUPLICATE 320809,GroupId: 2870033
+320811,WORD_NOUN,,HIRAGANA,,,青少年保護育成条例,せいしょうねんほごいくせいじょうれい,,seishounen hogo ikusei jourei,rozporządzenie w sprawie ochrony nieletnich,prawo,DICTIONARY2_SOURCE,,GroupId: 2870060
+320812,WORD_NOUN,,HIRAGANA,,,国税不服審判所,こくぜいふふくしんぱんしょ,,kokuzei fufuku shinpansho,Krajowy Trybunał Podatkowy (Japonia),,DICTIONARY2_SOURCE,DUPLICATE 320813,GroupId: 2870069
+320813,WORD_NOUN,,HIRAGANA,,,国税不服審判所,こくぜいふふくしんぱんじょ,,kokuzei fufuku shinpanjo,Krajowy Trybunał Podatkowy (Japonia),,DICTIONARY2_SOURCE,DUPLICATE 320812,GroupId: 2870069
+320814,WORD_NOUN,,KATAKANA_HIRAGANA,,,アメリカ同時多発テロ,アメリカどうじたはつテロ,,amerika douji tahatsu tero,zamachy z 11 września 2001 roku,wydarzenie,DICTIONARY2_SOURCE,,GroupId: 5747617
+320815,WORD_NOUN,,HIRAGANA,,,竜馬がゆく,りょうまがゆく,,ryouma ga yuku,Ryōma ga Yuku,"dzieło artystyczne, np. literatura, muzyka i etc; powieść z lat 1963-1966 autorstwa Shiba Ryōtarō",DICTIONARY2_SOURCE,,GroupId: 5747621
+320816,WORD_NOUN,,HIRAGANA,,,精神現象学,せいしんげんしょうがく,,seishin genshougaku,Fenomenologia Ducha,"dzieło artystyczne, np. literatura, muzyka i etc; jedno z najważniejszych dzieł filozoficznych G. W. F. Hegla i całej europejskiej historii filozofii, wydane w 1807 roku",DICTIONARY2_SOURCE,,GroupId: 5747622
