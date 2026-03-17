@@ -3963,8 +3963,10 @@ DUPLICATE 302497",GroupId: 2285210
 302525,WORD_NOUN,,KATAKANA,,,ＡＴコマンド,エーティーコマンド,,eetii komando,komenda AT,informatyka,DICTIONARY2_SOURCE,,GroupId: 2285360
 302526,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ヴューポイント,,vuyuupointo,"punkt widzenia
 punkt obserwacyjny",ang: viewpoint,DICTIONARY2_SOURCE,,GroupId: 1105920
-302527,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＡＩＤＳウイルス,エイズ・ウイルス,,eizu uirusu,wirus AIDS,,DICTIONARY2_SOURCE,DUPLICATE 302528,GroupId: 1027620
-302528,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＡＩＤＳウイルス,エイズウイルス,,eizu uirusu,wirus AIDS,,DICTIONARY2_SOURCE,DUPLICATE 302527,GroupId: 1027620
+302527,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＡＩＤＳウイルス,エイズ・ウイルス,,eizu uirusu,"wirus AIDS
+HIV",,DICTIONARY2_SOURCE,DUPLICATE 302528,GroupId: 1027620
+302528,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＡＩＤＳウイルス,エイズウイルス,,eizu uirusu,"wirus AIDS
+HIV",,DICTIONARY2_SOURCE,DUPLICATE 302527,GroupId: 1027620
 302529,WORD_NOUN,,HIRAGANA,,,イカ墨,いかすみ,,ika sumi,atrament z kałamarnicy,,DICTIONARY2_SOURCE,,GroupId: 2198830
 302530,WORD_NOUN,,HIRAGANA,,,いか墨,いかすみ,,ika sumi,atrament z kałamarnicy,,DICTIONARY2_SOURCE,,GroupId: 2198830
 302531,WORD_NOUN,,KATAKANA,,,-,イカスミ,,ika sumi,atrament z kałamarnicy,,DICTIONARY2_SOURCE,,GroupId: 2198830
@@ -31826,10 +31828,11 @@ przesunięcie
 314531,WORD_NOUN,,KATAKANA,,,-,ユルミシチョウ,,yurumi shichou,???,go (gra),DICTIONARY2_SOURCE,,GroupId: 2866327
 314532,WORD_NOUN,,KATAKANA,,,-,ダメアキシチョウ,,dameaki shichou,???,go (gra),DICTIONARY2_SOURCE,,GroupId: 2866328
 314533,WORD_NOUN,,HIRAGANA_KATAKANA,,,一間トビ,いっけんトビ,,ikken tobi,"skok o jeden odstęp
-skok o jeden punkt",go (gra),DICTIONARY2_SOURCE,,GroupId: 2866329
-314534,WORD_NOUN,,KATAKANA,,,-,イッケントビ,,ikken tobi,"skok o jeden odstęp
-skok o jeden punkt",go (gra),"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2866329
+skok o jeden punkt",go (gra),DICTIONARY2_SOURCE,"DUPLICATE 314534
+DUPLICATE 320893",GroupId: 2866329
+314534,WORD_NOUN,,HIRAGANA,,,一間トビ,いっけんとび,,ikken tobi,"skok o jeden odstęp
+skok o jeden punkt",go (gra),DICTIONARY2_SOURCE,"DUPLICATE 314533
+DUPLICATE 320893",GroupId: 2866329
 314535,WORD_NOUN,,KATAKANA,,,-,ミクスチャーロック,,mikusuchaa rokku,rock z wpływami innych gatunków,"muzyka; np. rap rock, nu metal; ang: mixture rock",DICTIONARY2_SOURCE,,GroupId: 2866330
 314536,WORD_NOUN,,KATAKANA,,,-,ミクスチャー・ロック,,mikusuchaa rokku,rock z wpływami innych gatunków,"muzyka; np. rap rock, nu metal; ang: mixture rock",DICTIONARY2_SOURCE,,GroupId: 2866330
 314537,WORD_NOUN,,HIRAGANA,,,袖烏賊,そでいか,,sode ika,Thysanoteuthis rhombus,pisanie zwykle z użyciem kana; gatunek kałamarnicy,DICTIONARY2_SOURCE,,GroupId: 2866333
@@ -32106,7 +32109,8 @@ asystent szefa sekcji",,DICTIONARY2_SOURCE,,GroupId: 2866496
 tetrametylodiaryna",chemia,DICTIONARY2_SOURCE,,GroupId: 2866498
 314695,WORD_NOUN,,KATAKANA_HIRAGANA,,,カロー酸,カローさん,,karoo san,"kwas nadtlenosiarkowy
 kwas Caro",chemia; nieorganiczny związek chemiczny z grupy kwasów tlenowych,DICTIONARY2_SOURCE,,GroupId: 2866499
-314696,WORD_NOUN,,KATAKANA,,,-,フラカス,,furakasu,Francja,poniżająco; slang internetowy,DICTIONARY2_SOURCE,,GroupId: 2866500
+314696,WORD_NOUN,,KATAKANA,,,-,フラカス,,furakasu,"francuska szumowina
+Francja",poniżająco; slang internetowy,DICTIONARY2_SOURCE,,GroupId: 2866500
 314697,WORD_NOUN,,KATAKANA,,,-,ファラデーケージ,,faradee keeji,klatka Faradaya,"elektronika; metalowy ekran mający chronić przed polem elektrostatycznym, wymyślony i skonstruowany w 1836 roku przez angielskiego fizyka Michaela Faradaya w celu demonstracji jednego z podstawowych praw elektrostatyki",DICTIONARY2_SOURCE,,GroupId: 2866501
 314698,WORD_NOUN,,KATAKANA,,,-,ファラデー・ケージ,,faradee keeji,klatka Faradaya,"elektronika; metalowy ekran mający chronić przed polem elektrostatycznym, wymyślony i skonstruowany w 1836 roku przez angielskiego fizyka Michaela Faradaya w celu demonstracji jednego z podstawowych praw elektrostatyki",DICTIONARY2_SOURCE,,GroupId: 2866501
 314699,WORD_NOUN,,HIRAGANA,,,貝灰,かいばい,,kaibai,wapno muszlowe,,DICTIONARY2_SOURCE,,GroupId: 2866502
@@ -46894,3 +46898,51 @@ ogranicznik drzwi",ang: door cushion,DICTIONARY2_SOURCE,,GroupId: 2870133
 ogranicznik drzwi",ang: door cushion,DICTIONARY2_SOURCE,,GroupId: 2870133
 320890,WORD_NOUN,,HIRAGANA,,,摘要欄,てきようらん,,tekiyouran,"kolumna uwag
 miejsce na notatki",,DICTIONARY2_SOURCE,,GroupId: 2870134
+320891,WORD_NOUN,,HIRAGANA,,,幇間,たいこもち,,taikomochi,"zawodowy błazen
+zawodowy artysta kabaretowy
+komediant
+błazen
+pajac
+bufon
+pochlebca
+lizus",,DICTIONARY2_SOURCE,,GroupId: 1585720
+320892,WORD_NOUN,,HIRAGANA,,,一間飛び,いっけんとび,,ikken tobi,"skok o jeden odstęp
+skok o jeden punkt",go (gra),DICTIONARY2_SOURCE,"DUPLICATE 320894
+DUPLICATE 320895",GroupId: 2866329
+320893,WORD_NOUN,,KATAKANA,,,一間トビ,イッケントビ,,ikken tobi,"skok o jeden odstęp
+skok o jeden punkt",go (gra),DICTIONARY2_SOURCE,"DUPLICATE 314533
+DUPLICATE 314534",GroupId: 2866329
+320894,WORD_NOUN,,HIRAGANA_KATAKANA,,,一間飛び,いっけんトビ,,ikken tobi,"skok o jeden odstęp
+skok o jeden punkt",go (gra),DICTIONARY2_SOURCE,"DUPLICATE 320892
+DUPLICATE 320895",GroupId: 2866329
+320895,WORD_NOUN,,KATAKANA,,,一間飛び,イッケントビ,,ikken tobi,"skok o jeden odstęp
+skok o jeden punkt",go (gra),DICTIONARY2_SOURCE,"DUPLICATE 320892
+DUPLICATE 320894",GroupId: 2866329
+320896,WORD_NOUN,,HIRAGANA,,,小いす,こいす,,koisu,"małe krzesło
+krzesełko",,DICTIONARY2_SOURCE,,GroupId: 2839447
+320897,WORD_NOUN,,HIRAGANA,,,チクリ魔,ちくりま,,chikuri ma,"papla
+skarżypyta
+donosiciel
+???",,DICTIONARY2_SOURCE,,GroupId: 2869737
+320898,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,明日やろうは馬鹿野郎,あしたやろうはばかやろう,,ashita yarou wa baka yarou,"nie odkładaj na jutro tego, co możesz zrobić dzisiaj
+(kto mówi) 'zróbmy to jutro', jest kretynem (dosłownie)",żartobliwie; przysłowie,DICTIONARY2_SOURCE,,GroupId: 2870129
+320899,WORD_ADJECTIVE_NA,,KATAKANA_HIRAGANA,,,カリスマ的,カリスマてき,,karisuma teki,charyzmatyczny,,DICTIONARY2_SOURCE,,GroupId: 2870136
+320900,WORD_NOUN,,HIRAGANA,,,在席,ざいせき,,zaiseki,"obecność (w pracy)
+bycie przy biurku (w pracy)
+posiadanie własnego krzesła (w pracy)",,DICTIONARY2_SOURCE,,GroupId: 2870137
+320901,WORD_VERB_RU,,HIRAGANA,,,言いふくめる,いいふくめる,,ii fukumeru,"wyjaśniać jasno
+udzielać szczegółowych instrukcji",,DICTIONARY2_SOURCE,,GroupId: 1263990
+320902,WORD_VERB_RU,,HIRAGANA,,,いい含める,いいふくめる,,ii fukumeru,"wyjaśniać jasno
+udzielać szczegółowych instrukcji",,DICTIONARY2_SOURCE,,GroupId: 1263990
+320903,"WORD_NOUN
+WORD_ADJECTIVE_NO
+WORD_ADVERB
+WORD_ADVERB_TO
+WORD_ADJECTIVE_NA",,KATAKANA,,,-,クリクリ,,kuri kuri,"duże i okrągłe (zwłaszcza oczy)
+okrągłe i urocze (zwłaszcza oczy)
+wirujące
+kręcące się
+toczące się
+pulchny i okrągły
+całkowicie ogolony (szczególnie głowa)
+gładko okrągły",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2131860
