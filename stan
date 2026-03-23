@@ -1,5 +1,5 @@
 ----------
-update - x
++ update - x
 kanji - x
 ----------
 small - 10
