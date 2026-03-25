@@ -2882,7 +2882,7 @@ Sōhyō",nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5744961
 Linia NYK",nazwa firmy,DICTIONARY2_SOURCE,,GroupId: 5744967
 301875,WORD_NOUN,,KATAKANA,,,-,セールスフォース,,seerusufoosu,Salesforce,nazwa firmy; nazwa produktu,DICTIONARY2_SOURCE,,GroupId: 5744973
 301876,WORD_NOUN,,HIRAGANA,,,日蘭会商,にちらんかいしょう,,nichiran kaishou,rozmowy handlowe między Japonią a holenderską Indonezją,"wydarzenie; 1934-37, 1940-41",DICTIONARY2_SOURCE,,GroupId: 5744979
-301877,WORD_NOUN,,KATAKANA,,,-,トランスフォーマー,,toransufoomaa,Transformers,"dzieło artystyczne, np. literatura, muzyka i etc; fikcyjna rasa pozaziemskich mechanicznych istot, mających zdolność przeobrażania się w pojazdy",DICTIONARY2_SOURCE,,GroupId: 5744983
+301877,WORD_NOUN,,KATAKANA,,,-,トランスフォーマー,,toransufoomaa,Transformers,"dzieło artystyczne, np. literatura, muzyka i etc; fikcyjna rasa pozaziemskich mechanicznych istot, mających zdolność przeobrażania się w pojazdy",DICTIONARY2_SOURCE,DUPLICATE 321095,GroupId: 5744983
 301878,WORD_NOUN,,HIRAGANA,,,北海道新幹線,ほっかいどうしんかんせん,,hokkaidou shinkansen,Hokkaido Shinkansen,usługa,DICTIONARY2_SOURCE,,GroupId: 5744984
 301879,WORD_NOUN,,HIRAGANA_KATAKANA,,,日韓ワールドカップ,にっかんワールドカップ,,nikkan waarudo kappu,2002 FIFA World Cup,wydarzenie,DICTIONARY2_SOURCE,,GroupId: 5744985
 301880,WORD_NOUN,,HIRAGANA,,,国鉄労働組合,こくてつろうどうくみあい,,kokutetsu roudou kumiai,Krajowy Związek Zawodowy Kolejarzy,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5744986
@@ -47201,3 +47201,19 @@ WORD_EXPRESSION",,HIRAGANA,,,急所を衝く,きゅうしょをつく,,kyuusho o
 321093,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,急所を付く,きゅうしょをつく,,kyuusho o tsuku,poruszyć istotny punkt,,DICTIONARY2_SOURCE,,GroupId: 2103190
 321094,WORD_EXPRESSION,,HIRAGANA,,,盗人に追い銭,ぬすびとにおいせん,,nusubito ni oisen,wyrzucanie pieniędzy w błoto,wyrażenie idiomatyczne,DICTIONARY2_SOURCE,DUPLICATE 251664,GroupId: 2834914
+321095,WORD_NOUN,,KATAKANA,,,-,トランスフォーマー,,toransufoomaa,transformer,zabawka,DICTIONARY2_SOURCE,DUPLICATE 301877,GroupId: 2870233
+321096,"WORD_NOUN
+WORD_NOUN_SUFFIX",,HIRAGANA,,,-,いびり,,ibiri,"znęcanie się
+dokuczanie
+dręczenie",,DICTIONARY2_SOURCE,,GroupId: 2869477
+321097,WORD_NOUN,,HIRAGANA,,,食道軟化症,しょくどうなんかしょう,,shokudou nankashou,rozmiękanie przełyku,medycyna,DICTIONARY2_SOURCE,,GroupId: 2869664
+321098,WORD_NOUN,,KATAKANA,,,-,ケンカップル,,kenkappuru,"kłócąca się para (która jednak się o siebie troszczy)
+(w fandomie) para postaci, które nieustannie się kłócą, ale darzą się wzajemną troską",potocznie,DICTIONARY2_SOURCE,,GroupId: 2869744
+321099,WORD_NOUN,,HIRAGANA,,,骨盤隔膜,こつばんかくまく,,kotsuban kakumaku,przepona miednicy,anatomia,DICTIONARY2_SOURCE,,GroupId: 2869811
+321100,WORD_NOUN,,KATAKANA,,,-,アスレティックトレーナー,,asuretikku toreenaa,trener sportowy,ang: athletic trainer,DICTIONARY2_SOURCE,,GroupId: 2869891
+321101,WORD_NOUN,,KATAKANA,,,-,アスレティック・トレーナー,,asuretikku toreenaa,trener sportowy,ang: athletic trainer,DICTIONARY2_SOURCE,,GroupId: 2869891
+321102,WORD_NOUN,,KATAKANA,,,-,アスレチックトレーナー,,asurechikku toreenaa,trener sportowy,ang: athletic trainer,DICTIONARY2_SOURCE,,GroupId: 2869891
+321103,WORD_NOUN,,KATAKANA,,,-,アスレチック・トレーナー,,asurechikku toreenaa,trener sportowy,ang: athletic trainer,DICTIONARY2_SOURCE,,GroupId: 2869891
+321104,WORD_NOUN,,KATAKANA,,,ＬｏＲＡ,ローラ,,roora,"adaptacja niskiej rangi (modelu LLM itp.)
+LoRA",informatyka,DICTIONARY2_SOURCE,DUPLICATE 28303,GroupId: 2870232
+321105,WORD_NOUN,,KATAKANA,,,-,トランスフォーマ,,toransufooma,transformer,zabawka,DICTIONARY2_SOURCE,,GroupId: 2870233
