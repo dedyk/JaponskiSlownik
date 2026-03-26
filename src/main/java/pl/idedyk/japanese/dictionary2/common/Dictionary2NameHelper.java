@@ -2,6 +2,7 @@ package pl.idedyk.japanese.dictionary2.common;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -10,6 +11,7 @@ import java.util.stream.Collectors;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
@@ -112,6 +114,20 @@ public class Dictionary2NameHelper {
 		}
 		
 		return jmnedict;
+	}
+	
+	public void saveJMnedictAsXml(JMnedict jmnedict, String fileName) throws Exception {
+		
+		JAXBContext jaxbContext = JAXBContext.newInstance(JMnedict.class);              
+
+		//
+				
+		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+		//
+		
+		jaxbMarshaller.marshal(jmnedict, new File(fileName));
 	}
 
 	public List<JMnedict.Entry> findEntryListInJmndict(PolishJapaneseEntry polishJapaneseEntry, boolean addFoundNotMatchedEntries) throws Exception {
@@ -345,6 +361,7 @@ public class Dictionary2NameHelper {
 		}
 	}
 	
+	@Deprecated
 	public List<PolishJapaneseEntry> generatePolishJapanaeseEntries(JMnedict.Entry entry, int counter) {
 		
 		List<PolishJapaneseEntry> result = new ArrayList<>();
@@ -434,21 +451,27 @@ public class Dictionary2NameHelper {
 		return result;
 	}
 	
-	private static void fixPolishJapaneseEntryName(PolishJapaneseEntry newPolishJapaneseEntry) {
+	public void improveRomaji(JMnedict.Entry entry) {
 		
-		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_FEMALE_NAME ||
-				newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_MALE_NAME ||
-				newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_PERSON) {
-			
-			String translate = newPolishJapaneseEntry.getTranslates().get(0);
-			
-			String romaji = newPolishJapaneseEntry.getRomaji();
-						
-			newPolishJapaneseEntry.setRomaji(fixRomajiForNames(romaji, translate));			
+		// czy to imie meskie, zenskie lub osoba
+		boolean isNameFemaleNameOrPerson = entry.getTranslationInfo().stream().filter(
+				f -> 	f.getNameType().contains(TranslationalInfoNameType.MALE_GIVEN_NAME_OR_FORENAME) == true ||
+						f.getNameType().contains(TranslationalInfoNameType.FEMALE_GIVEN_NAME_OR_FORENAME) == true ||
+						f.getNameType().contains(TranslationalInfoNameType.FULL_NAME_OF_A_PARTICULAR_PERSON) == true).count() > 0;
+		
+		boolean isNameStationName = entry.getTranslationInfo().stream().filter(
+				f -> f.getNameType().contains(TranslationalInfoNameType.RAILWAY_STATION) == true).count() > 0;
+		
+		if (isNameFemaleNameOrPerson == true) {			
+			for (ReadingInfo readingInfo : entry.getReadingInfoList()) {
+				String translate = entry.getTranslationInfo().get(0).getTransDet().get(0).getValue();
+				String romaji = readingInfo.getRomaji();
+				
+				readingInfo.setRomaji(fixRomajiForNames(romaji, translate));
+			}						
 		}
 		
-		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_STATION_NAME) {
-			
+		if (isNameStationName == true) {	
 			/*
 			String translate = newPolishJapaneseEntry.getTranslates().get(0);
 			
@@ -460,13 +483,16 @@ public class Dictionary2NameHelper {
 			newPolishJapaneseEntry.setTranslates(newTranslateList);
 			*/
 			
-			String romaji = newPolishJapaneseEntry.getRomaji();
-			
-			if (romaji.endsWith("eki") == true) {
-				romaji = romaji.substring(0, romaji.length() - 3) + " eki";
+			for (ReadingInfo readingInfo : entry.getReadingInfoList()) {
+				String romaji = readingInfo.getRomaji();
+				
+				if (romaji.endsWith("eki") == true) {
+					romaji = romaji.substring(0, romaji.length() - 3) + " eki";
+				}
+				
+				readingInfo.setRomaji(romaji);				
 			}
 			
-			newPolishJapaneseEntry.setRomaji(romaji);
 		}
 	}
 
@@ -525,6 +551,10 @@ public class Dictionary2NameHelper {
 		} else {
 			return romaji;
 		}		
+	}
+	
+	public List<AAAA> aaaa() {
+		
 	}
 
 	//

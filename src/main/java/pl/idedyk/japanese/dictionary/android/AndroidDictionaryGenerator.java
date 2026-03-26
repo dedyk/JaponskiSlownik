@@ -26,6 +26,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.SerializationUtils;
 import org.apache.commons.lang.StringUtils;
 
+import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
 import pl.idedyk.japanese.dictionary.api.dto.GroupWithTatoebaSentenceList;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
@@ -53,9 +54,17 @@ import pl.idedyk.japanese.dictionary.tools.TatoebaSentencesParser;
 import pl.idedyk.japanese.dictionary.tools.TomoeReader;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper.NameKanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.MiscInfo;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.OldPolishJapaneseDictionaryInfo;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.OldPolishJapaneseDictionaryInfoEntriesInfo;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.ReadingInfo;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfo;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoNameType;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupAdditionalInfo;
@@ -67,6 +76,16 @@ import com.csvreader.CsvReader;
 public class AndroidDictionaryGenerator {
 
 	public static void main(String[] args) throws Exception {
+		
+		// FM_FIXME: testy !!!!!!!!!!!!
+		
+		generateNamePolishJapaneseEntries("output/name2.xml_%d");
+		
+	}
+	
+	public static void main__OK(String[] args) throws Exception {
+		
+		// FM_FIXME: ok !!!!!!!!!!!!
 		
 		boolean fullMode = true;
 		
@@ -101,7 +120,7 @@ public class AndroidDictionaryGenerator {
 				"../JapaneseDictionary_additional/kanjidic2.xml", "../JapaneseDictionary_additional/kradfile",
 				"output/kanji.csv", "output/kanji2.xml");
 
-		generateNamePolishJapaneseEntries("output/names.csv");
+		generateNamePolishJapaneseEntries("output/name2.xml_%d");
 		
 		if (fullMode == true) {
 		
@@ -1120,17 +1139,154 @@ public class AndroidDictionaryGenerator {
 		new File(outputDir, "dictionary.out").delete();
 	}
 	
-	private static void generateNamePolishJapaneseEntries(String output) throws Exception {
+	private static void generateNamePolishJapaneseEntries(String name2XmlFileTemplate) throws Exception {
 				
 		System.out.println("generateNamePolishJapaneseEntries");
 		
+		// pobranie pomocnikow
 		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
 		Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
 		
-		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(dictionary2Helper, dictionary2NameHelper);
+		KanaHelper kanaHelper = new KanaHelper();
+				
+		// wygenerowanie docelowej postaci slownika nazw
+		JMnedict allJMnedictToSave = new JMnedict();
+		
+		// chodzenie po angielskim slowniku i dodawanie do docelowej postaci
+		for (JMnedict.Entry nameEntry : dictionary2NameHelper.getJMnedict().getEntryList()) {
+			
+			// jezeli dane slowko ze slownika nazw jest juz w glownym slowniku, to takiego slowa nie dodajemy
+			if (dictionary2Helper.getEntryFromPolishDictionary(nameEntry.getEntryId()) != null) {
+				continue;
+			}
+						
+			// tworzymy klona (ktorego mozemy modyfikowac)
+			nameEntry = (JMnedict.Entry)SerializationUtils.clone(nameEntry);
+			
+			// FM_FIXME: generowanie !!!!!!!!!!!!
+			
+			// dogenerowanie romaji
+			for (ReadingInfo readingInfo : nameEntry.getReadingInfoList()) {
+				String romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana(), kanaHelper.getKanaCache(), true));
+								
+				readingInfo.setRomaji(romaji);				
+			}
+			
+			// ulepszenie romaji
+			dictionary2NameHelper.improveRomaji(nameEntry);
+			
+			// dodanie misc-ow
+			MiscInfo misc = nameEntry.getMisc();
+			
+			if (misc == null) {
+				misc = new MiscInfo();
+				
+				nameEntry.setMisc(misc);
+			}
+			
+			OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = misc.getOldPolishJapaneseDictionary();
+			
+			if (oldPolishJapaneseDictionary == null) {
+				oldPolishJapaneseDictionary = new OldPolishJapaneseDictionaryInfo();
+				
+				misc.setOldPolishJapaneseDictionary(oldPolishJapaneseDictionary);
+			}
+			
+			// wygenerowanie entries w oldPolishJapaneseDictionary
+			List<NameKanjiKanaPair> nameKanjiKanaPairList = dictionary2NameHelper.getNameKanjiKanaPairList(nameEntry);
+						
+			for (NameKanjiKanaPair nameKanjiKanaPair : nameKanjiKanaPairList) {
+				OldPolishJapaneseDictionaryInfoEntriesInfo oldPolishJapaneseDictionaryInfoEntriesInfo = new OldPolishJapaneseDictionaryInfoEntriesInfo();
+				
+				// stare typy - FM_FIXME: dokonczyc !!!!
+				for (TranslationalInfo translationalInfo : nameKanjiKanaPair.getTranslationalInfoList()) {
+					
+					List<TranslationalInfoNameType> translationalInfoNameTypeList = translationalInfo.getNameType();
+					
+					for (TranslationalInfoNameType translationalInfoName : translationalInfoNameTypeList) {
+						
+						DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(translationalInfoName);
+						
+						if (dictionaryEntryType == null) {
+							throw new RuntimeException("Unknown name type: " + translationalInfoName);
+						}
+						
+						if (nameDictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
+							nameDictionaryEntryTypeList.add(dictionaryEntryType);
+						}
+					}				
+				}
+				
+				if (nameDictionaryEntryTypeList.size() == 0) {
+					nameDictionaryEntryTypeList.add(DictionaryEntryType.WORD_EMPTY); 
+				}
+
+				
+				oldPolishJapaneseDictionaryInfoEntriesInfo.setDictionaryEntryTypeList(nameDictionaryEntryTypeList);
+				oldPolishJapaneseDictionaryInfoEntriesInfo.setKanji(name2XmlFileTemplate);
+				oldPolishJapaneseDictionaryInfoEntriesInfo.setKana(name2XmlFileTemplate);
+				oldPolishJapaneseDictionaryInfoEntriesInfo.setRomaji(name2XmlFileTemplate);
+				oldPolishJapaneseDictionaryInfoEntriesInfo.setUniqueKey(name2XmlFileTemplate);
+				
+				
+				oldPolishJapaneseDictionary.getEntries().add(null)
+			}
+			
+			
+			
+			fixme();
+			
+			
+			
+			
+			// FM_FIXME: stare typy i uniqueKeys!!!!!
+			
+			
+			
+			
+			// dodanie do wynikowej listy
+			allJMnedictToSave.getEntryList().add(nameEntry);
+		}
+		
+		// zapisanie slownika
+		Map<Integer,  List<JMnedict.Entry>> allJMnedictToSavePartedMap = new LinkedHashMap<>();
+		
+		for (JMnedict.Entry entry : allJMnedictToSave.getEntryList()) {
+			Integer firstEntryIdDigit = entry.getEntryId() / 100000;
+			
+			allJMnedictToSavePartedMap.computeIfAbsent(firstEntryIdDigit, f -> new ArrayList<JMnedict.Entry>()).add(entry);			
+		}
+		
+		for (Integer firstEntryIdDigit : allJMnedictToSavePartedMap.keySet()) {
+			String name2XmlFileName = String.format(name2XmlFileTemplate, firstEntryIdDigit);
+
+			JMnedict newJMndict = new JMnedict();
+			
+			newJMndict.getEntryList().addAll(allJMnedictToSavePartedMap.get(firstEntryIdDigit));
+			
+			dictionary2NameHelper.saveJMnedictAsXml(newJMndict, name2XmlFileName);			
+		}
+
+		// FM_FIXME: !!!!!!!!!!
+		// wygenerowanie unikalny kluczy
+		// generateUniqueKeys(result);
+
+		
+		
+		////////////////////////
+		
+		// FM_FIXME: stary kod
+		// List<PolishJapaneseEntry> generatedNames = Helper.generateNames(dictionary2Helper, dictionary2NameHelper);
 		
 		//
 		
+		/*
+		// FM_FIXME: wykorzystac
+		*/
+		
+		// FM_FIXME: naprawy romaji
+		
+		/*
 		int id = 0;
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : generatedNames) {
@@ -1161,5 +1317,6 @@ public class AndroidDictionaryGenerator {
 		if (partialPolishJapaneseEntryList.size() > 0) {
 			CsvReaderWriter.generateCsv(new String[] { output + "_" + counter }, partialPolishJapaneseEntryList, true, false, true, false, null);
 		}
+		*/
 	}
 }

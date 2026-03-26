@@ -596,6 +596,7 @@ public class Helper {
 		return foundEdict;
 	}
 
+	@Deprecated
 	public static List<PolishJapaneseEntry> generateNames(Dictionary2Helper dictionary2Helper, Dictionary2NameHelper dictionary2NameHelper) throws Exception {
 
 		List<PolishJapaneseEntry> result = new ArrayList<PolishJapaneseEntry>();
