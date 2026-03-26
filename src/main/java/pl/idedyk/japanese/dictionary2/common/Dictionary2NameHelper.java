@@ -473,9 +473,7 @@ public class Dictionary2NameHelper {
 						
 			// tworzymy klona (ktorego mozemy modyfikowac)
 			nameEntry = (JMnedict.Entry)SerializationUtils.clone(nameEntry);
-			
-			// FM_FIXME: generowanie !!!!!!!!!!!!
-			
+						
 			// dogenerowanie romaji
 			for (ReadingInfo readingInfo : nameEntry.getReadingInfoList()) {
 				String romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana(), kanaHelper.getKanaCache(), true));
