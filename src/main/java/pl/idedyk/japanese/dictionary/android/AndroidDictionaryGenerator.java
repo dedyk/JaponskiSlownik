@@ -1145,7 +1145,7 @@ public class AndroidDictionaryGenerator {
 		Map<Integer,  List<JMnedict.Entry>> allJMnedictToSavePartedMap = new LinkedHashMap<>();
 		
 		for (JMnedict.Entry entry : allJMnedictToSave.getEntryList()) {
-			Integer firstEntryIdDigit = entry.getEntryId() / 10000;
+			Integer firstEntryIdDigit = entry.getEntryId() / 100000;
 			
 			allJMnedictToSavePartedMap.computeIfAbsent(firstEntryIdDigit, f -> new ArrayList<JMnedict.Entry>()).add(entry);			
 		}

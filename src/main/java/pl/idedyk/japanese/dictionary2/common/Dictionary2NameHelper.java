@@ -28,7 +28,6 @@ import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.MiscInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.OldPolishJapaneseDictionaryInfo;
-import pl.idedyk.japanese.dictionary2.jmnedict.xsd.OldPolishJapaneseDictionaryInfoEntriesInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoNameType;
@@ -504,16 +503,16 @@ public class Dictionary2NameHelper {
 				misc.setOldPolishJapaneseDictionary(oldPolishJapaneseDictionary);
 			}
 			
+			// stare typy
+			List<DictionaryEntryType> nameDictionaryEntryTypeList = new ArrayList<>();
+			
 			// wygenerowanie entries w oldPolishJapaneseDictionary
 			List<NameKanjiKanaPair> nameKanjiKanaPairList = dictionary2NameHelper.getNameKanjiKanaPairList(nameEntry);
 			
-			Map<String, Integer> uniqueKeyMap = new TreeMap<>();
+			// Map<String, Integer> uniqueKeyMap = new TreeMap<>();
 			
 			for (NameKanjiKanaPair nameKanjiKanaPair : nameKanjiKanaPairList) {
-				
-				// stare typy
-				List<DictionaryEntryType> nameDictionaryEntryTypeList = new ArrayList<>();
-				
+								
 				for (TranslationalInfo translationalInfo : nameKanjiKanaPair.getTranslationalInfoList()) {
 					
 					List<TranslationalInfoNameType> translationalInfoNameTypeList = translationalInfo.getNameType();
@@ -536,6 +535,7 @@ public class Dictionary2NameHelper {
 					nameDictionaryEntryTypeList.add(DictionaryEntryType.WORD_EMPTY); 
 				}
 				
+				/*
 				// uniqueKey
 				String uniqueKanjiKanaKey;
 				{
@@ -570,7 +570,10 @@ public class Dictionary2NameHelper {
 				
 				// dodanie starego wpisu				
 				oldPolishJapaneseDictionary.getEntries().add(oldPolishJapaneseDictionaryInfoEntriesInfo);
+				*/
 			}
+			
+			oldPolishJapaneseDictionary.setDictionaryEntryTypeList(nameDictionaryEntryTypeList.stream().map(m -> m.name()).collect(Collectors.joining(",")));
 			
 			// dodanie do wynikowej listy
 			jmnedictFinalDictionary.getEntryList().add(nameEntry);
