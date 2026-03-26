@@ -62,6 +62,8 @@ public enum Operation {
 	
 	COMPARE_TWO_JMDICTS("compare-two-jmdicts", "Porównuje dwa słowniki jmdict i wyświetla identyfikatory tych wpisów, które zmieniły się"),
 	
+	FIND_THE_SAME_ENGLISH_MEANS_WITH_DIFFERENCE_POLISH_MEANS("find-the-same-engliht-means-with-difference-polish-means", "Pokazuje słowa, które mają identyczne angielskie znaczenie, ale różne polskie znaczenie"),
+	
 	HELP("help", "Pokazuje pomoc");
 	
 	private String operation;

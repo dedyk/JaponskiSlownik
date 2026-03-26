@@ -24,6 +24,8 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
@@ -59,6 +61,7 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
@@ -4337,6 +4340,160 @@ public class WordGenerator {
 				break;
 			}
 			
+			case FIND_THE_SAME_ENGLISH_MEANS_WITH_DIFFERENCE_POLISH_MEANS: {
+				
+				CommandLineParser commandLineParser = new DefaultParser();
+								
+				//
+				
+				Integer minMeansSize = null;
+				boolean sortMeans = false;
+				
+				//
+				
+				Options options = new Options();
+				
+				options.addOption("m", "min-means-size", true, "Minimal means size check");
+				options.addOption("s", "sort means", false, "Sort means before check");
+				
+				options.addOption("h", "help", false, "Help");
+				
+				//
+				
+				CommandLine commandLine = null;
+				
+				try {
+					commandLine = commandLineParser.parse(options, args);
+					
+				} catch (UnrecognizedOptionException e) {					
+					System.out.println(e.getMessage() + "\n");
+					
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FIND_THE_SAME_ENGLISH_MEANS_WITH_DIFFERENCE_POLISH_MEANS.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				if (commandLine.hasOption("help") == true) {
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FIND_THE_SAME_ENGLISH_MEANS_WITH_DIFFERENCE_POLISH_MEANS.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				if (commandLine.hasOption("min-means-size") == true) {					
+					minMeansSize = Integer.parseInt(commandLine.getOptionValue("min-means-size"));					
+				}
+				
+				if (commandLine.hasOption("sort means") == true) {	
+					sortMeans = true;
+				}
+
+				if (minMeansSize == null) {
+					HelpFormatter formatter = new HelpFormatter();
+					
+					formatter.printHelp( Operation.FIND_THE_SAME_ENGLISH_MEANS_WITH_DIFFERENCE_POLISH_MEANS.getOperation(), options );
+					
+					System.exit(1);
+				}
+				
+				// pobieramy wszystkie polskie wpisy z bazy danych
+				List<Entry> allPolishDictionaryEntryList = dictionary2Helper.getAllPolishDictionaryEntryList();
+				
+				// utworzenie mapy, w ktorym kluczem bedzie to samo angielskie tlumaczenie
+				class TheSameGlossEngListEntry {
+					@SuppressWarnings("unused")
+					private String key;
+					private Entry entry;
+					
+					@SuppressWarnings("unused")
+					private List<String> glossEngListString;
+					private List<String> glossPolListString;
+					
+					public TheSameGlossEngListEntry(String key, Entry entry, List<String> glossEngListString, List<String> glossPolListString) {
+						this.key = key;
+						this.entry = entry;
+						this.glossEngListString = glossEngListString;
+						this.glossPolListString = glossPolListString;
+					}
+				}
+				
+				Map<String, List<TheSameGlossEngListEntry>> theSameGlossEngListMap = new TreeMap<>();
+				
+				// chodzimy po wszystkich slowach i pobieramy znaczenia
+				for (Entry entry : allPolishDictionaryEntryList) {					
+					List<Sense> senseList = entry.getSenseList();
+					
+					for (Sense sense : senseList) {
+						// pobieramy angielskie i polskie znaczenia
+						List<Gloss> glossEngList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+						List<Gloss> glossPolList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+						
+						// filtrujemy po liczbie znaczen
+						if (glossEngList.size() < minMeansSize) {
+							continue;
+						}						
+						
+						// zamieniamy na liste napisow
+						Function<Gloss, String> glossToStringFuntion = m -> {
+								StringBuffer sb = new StringBuffer();
+								
+								sb.append(m.getValue());
+								
+								if (m.getGType() != null) {
+									sb.append("|").append(m.getGType());
+								}
+																
+								return sb.toString();
+							};
+						
+						List<String> glossEngListString = glossEngList.stream().map(glossToStringFuntion).collect(Collectors.toList());
+						List<String> glossPolListString = glossPolList.stream().map(glossToStringFuntion).collect(Collectors.toList());
+						
+						if (sortMeans == true) {
+							Collections.sort(glossEngListString);
+						}
+												
+						// utworzenie klucza do mapy
+						String glossEngListStringKey = glossEngListString.toString();
+												
+						// dodajemy do mapy
+						theSameGlossEngListMap.computeIfAbsent(glossEngListStringKey, f -> new ArrayList<>()).add(
+								new TheSameGlossEngListEntry(glossEngListStringKey, entry, glossEngListString, glossPolListString));						
+					}					
+				}
+				
+				// chodzimy po map-ie i sprawdzamy, czy nie ma gdzies innego polskiego znaczenia dla tego samego angielskiego znaczenia
+				Iterator<java.util.Map.Entry<String, List<TheSameGlossEngListEntry>>> theSameGlossEngListMapEntrySetIterator = 
+						theSameGlossEngListMap.entrySet().iterator();
+				
+				while (theSameGlossEngListMapEntrySetIterator.hasNext() == true) {
+					java.util.Map.Entry<String, List<TheSameGlossEngListEntry>> entrySet = theSameGlossEngListMapEntrySetIterator.next();
+					
+					// tu jest tylko jedno slowo
+					if (entrySet.getValue().size() == 1) {
+						continue;
+					}
+					
+					// sprawdzenie, czy wszystkie polskie znaczenia sa jakie same
+					Set<String> uniqueGlossPolSet = new TreeSet<>();
+					
+					entrySet.getValue().forEach(f -> uniqueGlossPolSet.add(f.glossPolListString.toString()));
+					
+					// jezeli liczba unikalnych polskich znaczen jest wieksza od jeden to znaczy, ze mamy to co nas interesuje
+					if (uniqueGlossPolSet.size() > 1) {
+						for (TheSameGlossEngListEntry theSameGlossEngListEntry : entrySet.getValue()) {
+							System.out.println(theSameGlossEngListEntry.entry.getEntryId());
+						}
+						System.out.println("------");
+					}
+				}				
+				
+				break;
+			}
+			
 			case HELP: {
 				
 				// pobranie listy mozliwych operacji
@@ -4347,6 +4504,8 @@ public class WordGenerator {
 				for (Operation currentOperation : operationList) {
 					System.out.println(currentOperation.getOperation() + " - " + currentOperation.getDescription());
 				}
+				
+				// INFO: sposob prezentacji moze jeszcze bedzie do zmiany, zobaczymy pozniej
 				
 				break;
 			}

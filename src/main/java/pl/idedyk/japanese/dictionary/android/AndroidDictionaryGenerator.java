@@ -531,7 +531,10 @@ public class AndroidDictionaryGenerator {
 			
 			if (jlpt != null) {
 				polishKanjidic2CharacterInfo.getMisc2().getGroups().add(GroupEnum.getGroupEnum(jlpt));
-			}			
+			}
+			
+			// ustawienie poziomu Kanji Kentei
+			polishKanjidic2CharacterInfo.getMisc2().setKenteiLevel(kanji2Helper.getKenteiLevel(polishKanjidic2CharacterInfo.getKanji()));
 			
 			// dodanie informacji o kolejnosci pisania znakow
 			polishKanjidic2CharacterInfo.getMisc2().getStrokePaths().clear();

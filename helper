@@ -1,0 +1,57 @@
+web:
+https://jisho.org/
+https://translatica.pl/slowniki
+https://www.diki.pl/
+https://www.google.com
+https://www.japonski-pomocnik.pl x 2
+https://translate.google.pl
+https://ejje.weblio.jp/
+https://www.deepl.com
+
+
+1. ./jmdicts_download.sh
+2. ./jmdicts_update.sh
+
+---
+
+1. ./word-generator.sh show-all-missing-words
+2. ./word2_update-polish-japanese-dictionary.sh
+3. ./word-generator.sh find-words-with-jmedict-change -set input/word-can-be-replaced.csv
+4. ./word2_set-entry-to-polish-dictionary.sh -f input/word2-update-manually.csv
+5. ./kanji2_update-kanji-polish-dictionary.sh
+6. ./kanji2_set-kanji-to-polish-dictionary.sh -f input/kanji2-update-manually.csv
+7. ./kanji2_update-kanji-old-polish-dictionary.sh
+8. COMMIT
+-------
+8. ./word2_get-entry-from-dictionary.sh -f input/small_common_wordX/2/3.txt -j -c 10
+9. ./word-generator.sh show-all-missing-word-from-group-id
+10. cat input/all_missing_word_from_group_id_full.csv input/all_missing_word_from_group_id_overfull.csv | cut -c1-7 | sort | uniq
+11. ./word2_get-entry-from-dictionary.sh -f lista -j -c 100
+12. ./word-generator.sh find-words-with-jmedict-change -r --force-only-in-old-format -s XX | ./word-generator.sh find-words-with-jmedict-change -r --ignore-dictionary-filled-raw-data -s XX
+13. BACKUP
+14. cat input/word2-new.csv | egrep -E -e "^[0-9]*,BEGIN," | cut -d, -f3
+15. ./word2_get-entry-from-dictionary.sh -f lista -j
+16. BACKUP
+17. cat input/word2-new.csv | egrep -E -e "^[0-9]*,BEGIN," | shuf | head -1
+18. ./word2_set-entry-to-polish-dictionary.sh -f input/word2-new.csv
+19. COMMIT
+-------
+20. MISSING
+21. ./generate-missing-word-list.sh lista false
+22. ./word-generator.sh fix-dictionary-word-type
+23. ./word2_update-old-polish-japanese-dictionary.sh
+24. ./jmedict-searcher.sh
+25. ./fast-dictionary-check.sh
+26. ./generate-jmedict-group-word-list.sh
+27. ./generate-jmedict-group-word-list2.sh
+28. ./validate-the-same-romaji.sh
+29. ./word-generator.sh show-all-missing-word-from-group-id
+30. ./show-already-add-common-words.sh
+31. ./android-dictionary-generator.sh false
+32. ./word2_get-entry-from-dictionary.sh -f lista -j
+33. ./word2_set-entry-to-polish-dictionary.sh -f input/word2-new.csv
+34. ./word2_update-old-polish-japanese-dictionary.sh
+35. ./android-dictionary-generator.sh false
+36. ./set-duplicate-words.sh
+37. ./validate-dictionary.sh
+38. COMMIT

@@ -22,7 +22,10 @@ public class DictionarySizeStat {
 
 	public static void main(String[] args) throws Exception {
 		
-		final String repositoryPath = "sciezka_do_tymczasowego_repozytorium";
+		// INFO: trzeba zaczynac z repozytorium tylko z katalogiem .git
+		
+		final String dictionaryRepositoryPath = "sciezka_do_tymczasowego_repozytorium_ze_slownikiem";
+		final String dictionaryAdditionalRepositoryPath = "sciezka_do_tymczasowego_repozytorium_z_dodatkami";
 		
 		// git checkout `git rev-list -n 1 --before="2012-03-10 00:00" master`
 		
@@ -50,16 +53,17 @@ public class DictionarySizeStat {
 			
 			//
 			
-			checkoutGit(repositoryPath, gitDateFormat);
+			checkoutGit(dictionaryRepositoryPath, gitDateFormat);
+			checkoutGit(dictionaryAdditionalRepositoryPath, gitDateFormat);
 			
 			//
 			
-			DateStat dateStat = countWords(repositoryPath, currentCheckDate.getTime());
+			DateStat dateStat = countWords(dictionaryRepositoryPath, dictionaryAdditionalRepositoryPath, currentCheckDate.getTime());
 			
 			dateStatList.add(dateStat);
 			
 			System.out.println(gitDateFormat + ": " + dateStat.wordCounter + " - " + dateStat.commonWordCounter + 
-					" - " + dateStat.word2Counter + " - " + dateStat.wordCounterInDictionary2Source);
+					" - " + dateStat.word2Counter + " - " + dateStat.wordCounterInDictionary2Source + " - " + dateStat.alljmdictCounter);
 			
 			//
 						
@@ -70,7 +74,7 @@ public class DictionarySizeStat {
 			}
 		}
 		
-		CsvWriter csvWriter = new CsvWriter(new FileWriter(new File(repositoryPath, "dictionary_size_stat.csv")), ',');
+		CsvWriter csvWriter = new CsvWriter(new FileWriter(new File(dictionaryRepositoryPath, "dictionary_size_stat.csv")), ',');
 		
 		for (DateStat dateStat : dateStatList) {
 			
@@ -79,6 +83,7 @@ public class DictionarySizeStat {
 			csvWriter.write(String.valueOf(dateStat.commonWordCounter));
 			csvWriter.write(String.valueOf(dateStat.word2Counter));
 			csvWriter.write(String.valueOf(dateStat.wordCounterInDictionary2Source));
+			csvWriter.write(String.valueOf(dateStat.alljmdictCounter));
 			
 			csvWriter.endRecord();
 		}
@@ -145,7 +150,7 @@ public class DictionarySizeStat {
         }
 	}
 	
-	private static DateStat countWords(String repositoryPath, Date date) throws Exception {
+	private static DateStat countWords(String dictionaryRepositoryPath, String dictionaryAdditionalRepositoryPath, Date date) throws Exception {
 		
 		// word.csv
 		final String[] wordCsvs = new String[] { "word.csv", "word01.csv", "word02.csv", "word03.csv", "word04.csv" };
@@ -157,7 +162,7 @@ public class DictionarySizeStat {
 		
 		for (String currentWordCsv : wordCsvs) {
 			
-			File currentWordFile = new File(repositoryPath + "/input", currentWordCsv);
+			File currentWordFile = new File(dictionaryRepositoryPath + "/input", currentWordCsv);
 			
 			if (currentWordFile.exists() == false) {
 				continue;
@@ -185,7 +190,7 @@ public class DictionarySizeStat {
 		
 		for (String currentWordCsv : commonWordCsvs) {
 			
-			File currentWordFile = new File(repositoryPath + "/input", currentWordCsv);
+			File currentWordFile = new File(dictionaryRepositoryPath + "/input", currentWordCsv);
 			
 			if (currentWordFile.exists() == false) {
 				continue;
@@ -208,7 +213,7 @@ public class DictionarySizeStat {
 		// word2.csv
 		int word2Counter = 0;
 		
-		File word2CsvFile = new File(repositoryPath + "/input/word2.csv");
+		File word2CsvFile = new File(dictionaryRepositoryPath + "/input/word2.csv");
 		
 		if (word2CsvFile.exists() == true) {
 			
@@ -226,9 +231,35 @@ public class DictionarySizeStat {
 			csvReader.close();
 		}
 		
+		// JMdict_e
+		int alljmdictCounter = 0;
+		
+		File alljmdictFile = new File(dictionaryAdditionalRepositoryPath + "/JMdict_e");
+		
+		if (alljmdictFile.exists() == true) {
+			
+			BufferedReader reader = new BufferedReader(new FileReader(alljmdictFile));
+						
+			while (true) {
+				String line = reader.readLine(); // INFO: nie trzeba parsowac xml-a, gdyz kazdy tag jest w osobnej linii				
+				
+				if (line == null) {
+					break;
+				}
+				
+				if (line.contains("ent_seq") == false) {
+					continue;
+				}
+				
+				alljmdictCounter++;
+			}
+			
+			reader.close();
+		}
+		
 		//
 				
-		return new DateStat(date, wordCounter, wordCounterInDictionary2Source, commonWordCounter, word2Counter);
+		return new DateStat(date, wordCounter, wordCounterInDictionary2Source, commonWordCounter, word2Counter, alljmdictCounter);
 	}
 	
 	private static class DateStat {
@@ -239,14 +270,16 @@ public class DictionarySizeStat {
 		private int wordCounterInDictionary2Source;
 		private int commonWordCounter;
 		private int word2Counter;
+		private int alljmdictCounter;
 
-		public DateStat(Date date, int wordCounter, int wordCounterInDictionary2Source, int commonWordCounter, int word2Counter) {
+		public DateStat(Date date, int wordCounter, int wordCounterInDictionary2Source, int commonWordCounter, int word2Counter, int alljmdictCounter) {
 			super();
 			this.date = date;
 			this.wordCounter = wordCounter;
 			this.wordCounterInDictionary2Source = wordCounterInDictionary2Source;
 			this.commonWordCounter = commonWordCounter;
 			this.word2Counter = word2Counter;
+			this.alljmdictCounter = alljmdictCounter;
 		}		
 	}
 }

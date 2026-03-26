@@ -22,6 +22,8 @@ public class GenerateKanjiEntryUsed {
 
 	public static void main(String[] args) throws Exception {
 		
+		// Stary kod. Prosze uzyc z kanji2.misc
+		
 		String sourceKanjiName = "input/kanji.csv";
 		String sourceKanjiDic2FileName = "../JapaneseDictionary_additional/kanjidic2.xml";
 		String sourceKradFileName = "../JapaneseDictionary_additional/kradfile";

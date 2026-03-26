@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.nio.file.Files;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -43,6 +44,7 @@ import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.dto.KanjiEntryForDictionary;
 import pl.idedyk.japanese.dictionary.exception.JapaneseDictionaryException;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary2.api.helper.Kanji2HelperCommon;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointValueInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.CodePointValueTypeEnum;
@@ -52,6 +54,7 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.DictionaryNumberInfoReferenc
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.HeaderInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KenteiLevelType;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Misc2Info;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfoVariant;
@@ -71,7 +74,7 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMea
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupReading;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupReadingTypeEnum;
 
-public class Kanji2Helper {
+public class Kanji2Helper extends Kanji2HelperCommon {
 	
 	private static final int CSV_COLUMNS = 7; 
 	
@@ -92,6 +95,9 @@ public class Kanji2Helper {
 	
 	private List<KanjiEntryForDictionary> oldKanjiPolishDictionaryList;
 	private Map<String, KanjiEntryForDictionary> oldKanjiPolishDictionaryMap;
+	
+	// lista poziomow kentei
+	private Map<String, KenteiLevelType> kanjiKenteiMap;
 	
 	private Kanji2Helper() { }
 	
@@ -1344,6 +1350,12 @@ public class Kanji2Helper {
 			List<String> meaningLangList;
 			String additionalInfoLang;
 			
+			// sprawdzamy, czy jakies stare tlumaczenia zostalo przygotowane
+			EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.kanjidic2AdditionalDataEntryMap.get(characterInfo.getKanji());
+			
+			// pobranie stare tlumaczen
+			boolean addedOldTranslates = false;
+			
 			if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_ENG) {
 				meaningLangList = meaningList.stream().filter(meaning -> meaning.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.EN).
 						map(meaning -> meaning.getValue()).collect(Collectors.toList());
@@ -1354,9 +1366,33 @@ public class Kanji2Helper {
 			} else if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_POL) {
 				meaningLangList = meaningList.stream().filter(meaning -> meaning.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL).
 						map(meaning -> meaning.getValue()).collect(Collectors.toList());
-				
+								
 				additionalInfoLang = additionalInfoList.stream().filter(additionalInfo -> additionalInfo.getLang() == ReadingMeaningInfoReadingMeaningGroupMeaningLangEnum.PL).
 						map(additionalInfo -> additionalInfo.getValue()).findFirst().orElse(null);
+				
+				if (config.addOldPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.oldKanjiEntryForDictionary != null) { // czy stare dane zostaly przygotowane
+
+					KanjiEntryForDictionary oldKanjiEntryForDictionary = entryAdditionalDataEntry.oldKanjiEntryForDictionary;
+					
+					// jezeli nowego tlumaczenia nie ma, ale jest stare to uzupelniamy o stare tlumaczenie
+					if (meaningLangList.size() == 0) {
+						if (oldKanjiEntryForDictionary.getPolishTranslates().size() != 1 || oldKanjiEntryForDictionary.getPolishTranslates().get(0).equals("-") == false) {
+							meaningLangList.add("STARE_ZNACZENIE");
+							meaningLangList.add("---");
+							meaningLangList.add("---");
+							
+							meaningLangList.addAll(new ArrayList<String>(oldKanjiEntryForDictionary.getPolishTranslates()));
+							
+							addedOldTranslates = true;
+						}
+					}
+					
+					if (additionalInfoLang == null) { // jeszcze informacje dodatkowe						
+						if (oldKanjiEntryForDictionary.getInfo().equals("") == false) {
+							additionalInfoLang = "STARE_INFO\n" + "---\n---\n" + oldKanjiEntryForDictionary.getInfo();
+						}
+					}
+				}
 				
 			} else {
 				throw new RuntimeException();
@@ -1376,13 +1412,10 @@ public class Kanji2Helper {
 			csvWriter.write(Helper.convertListToString(meaningLangList)); columnsNo++;
 			csvWriter.write(additionalInfoLang != null ? additionalInfoLang : ""); columnsNo++;
 			
-			// uzupelnienie o dodatkowe dane
+			// uzupelnienie o dodatkowe dane (stary sposob, ale niech zostanie na pamiatke)
 			if (fieldType == EntryHumanCsvFieldType.READING_MEANING_MEANING_POL) {
 				
-				// sprawdzamy, czy cos zostalo przygotowane
-				EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.kanjidic2AdditionalDataEntryMap.get(characterInfo.getKanji());
-
-				if (config.addOldPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.oldKanjiEntryForDictionary != null) {
+				if (addedOldTranslates == false && config.addOldPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.oldKanjiEntryForDictionary != null) {
 					
 					KanjiEntryForDictionary oldKanjiEntryForDictionary = entryAdditionalDataEntry.oldKanjiEntryForDictionary;
 					
@@ -1675,6 +1708,60 @@ public class Kanji2Helper {
 				
 			}
 		}
+		
+		Misc2Info misc2 = characterInfo.getMisc2();
+		
+		if (misc2 != null) {
+			kanjiEntryForDictionary.setUsed(misc2.isUsed());			
+		}
+	}
+	
+	public KenteiLevelType getKenteiLevel(String kanjiToGet) throws Exception {
+
+		if (kanjiKenteiMap == null) { // wczytywanie listy
+			
+			// lista plikow i poziomow
+			Object [][] kanjiKenteiFileNamesAndLevels = new Object[][] {
+				{ "10.txt", KenteiLevelType.LEVEL_10 },
+				{ "9.txt", KenteiLevelType.LEVEL_9 },
+				{ "8.txt", KenteiLevelType.LEVEL_8 },
+				{ "7.txt", KenteiLevelType.LEVEL_7 },
+				{ "6.txt", KenteiLevelType.LEVEL_6 },
+				{ "5.txt", KenteiLevelType.LEVEL_5 },
+				{ "4.txt", KenteiLevelType.LEVEL_4 },
+				{ "3.txt", KenteiLevelType.LEVEL_3 },
+				{ "pre2.txt", KenteiLevelType.LEVEL_PRE_2 },
+				{ "2.txt", KenteiLevelType.LEVEL_2 },
+				{ "pre1.txt", KenteiLevelType.LEVEL_PRE_1 },
+				{ "1.txt", KenteiLevelType.LEVEL_1 }				
+			};
+			
+			// wczytanie kazdego pliku i zapisanie do mapy
+			kanjiKenteiMap = new TreeMap<>();
+			
+			for (Object[] currentKanjiKenteiFileNameAndLevel : kanjiKenteiFileNamesAndLevels) {
+				File file = new File("../JapaneseDictionary_additional/kanji_kentei/" + currentKanjiKenteiFileNameAndLevel[0]);
+				
+				// wczytanie zawartosci pliku (tutaj powinna byc tylko jedna linia)
+				List<String> allLines = Files.readAllLines(file.toPath());
+								
+				// chodzimy po wszystkich znakach i zapisujemy do mapy
+				for (String currentLine : allLines) {
+					for (int charNo = 0; charNo < currentLine.length(); ++charNo) {
+						String kanji = "" + currentLine.charAt(charNo);
+						
+						// sprawdzenie, czy taki znak przypadkiem juz nie wystepuje w mapie
+						if (kanjiKenteiMap.containsKey(kanji) == true) {
+							throw new JapaneseDictionaryException("kanjiKenteiMap.containsKey(kanji) == true: " + kanji);
+						}
+						
+						kanjiKenteiMap.put(kanji, (KenteiLevelType)currentKanjiKenteiFileNameAndLevel[1]);
+					}					
+				}
+			}			
+		}		
+		
+		return kanjiKenteiMap.get(kanjiToGet);
 	}
 	
 	private class EntryPartConverterEnd {
