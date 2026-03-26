@@ -59,14 +59,12 @@ import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
-import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
-import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
 
 import com.csvreader.CsvWriter;
 
@@ -596,6 +594,7 @@ public class Helper {
 		return foundEdict;
 	}
 
+	/*
 	@Deprecated
 	public static List<PolishJapaneseEntry> generateNames(Dictionary2Helper dictionary2Helper, Dictionary2NameHelper dictionary2NameHelper) throws Exception {
 
@@ -623,6 +622,7 @@ public class Helper {
 		
 		return result;
 	}
+	*/
 	
 	public static void generateTransitiveIntransitivePairs(
 			List<TransitiveIntransitivePair> transitiveIntransitivePairList,
