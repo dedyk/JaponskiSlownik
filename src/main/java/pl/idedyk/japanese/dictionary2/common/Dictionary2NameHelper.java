@@ -485,6 +485,23 @@ public class Dictionary2NameHelper extends Dictionary2NameHelperCommon {
 			// ulepszenie romaji
 			improveRomaji(nameEntry);
 			
+			// usupelnienie o wpisanie domyslneg kodu jezyka
+			for (TranslationalInfo translationalInfo : nameEntry.getTranslationInfo()) {
+				
+				translationalInfo.getTransDet().forEach(f -> {
+					if (f.getLang() == null) {
+						f.setLang("eng");
+					}
+				});
+				
+				translationalInfo.getAddInfo().forEach(f -> {
+					if (f.getLang() == null) {
+						f.setLang("eng");
+					}
+				});
+			}
+			
+			
 			// dodanie misc-ow
 			MiscInfo misc = nameEntry.getMisc();
 			
