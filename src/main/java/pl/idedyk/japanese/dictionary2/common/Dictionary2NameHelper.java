@@ -525,16 +525,14 @@ public class Dictionary2NameHelper extends Dictionary2NameHelperCommon {
 			// wygenerowanie entries w oldPolishJapaneseDictionary
 			List<NameKanjiKanaPair> nameKanjiKanaPairList = dictionary2NameHelper.getNameKanjiKanaPairList(nameEntry);
 			
-			// Map<String, Integer> uniqueKeyMap = new TreeMap<>();
+			Map<String, Integer> uniqueKeyMap = new TreeMap<>();
 			
-			for (NameKanjiKanaPair nameKanjiKanaPair : nameKanjiKanaPairList) {
-								
+			for (NameKanjiKanaPair nameKanjiKanaPair : nameKanjiKanaPairList) {								
 				for (TranslationalInfo translationalInfo : nameKanjiKanaPair.getTranslationalInfoList()) {
 					
 					List<TranslationalInfoNameType> translationalInfoNameTypeList = translationalInfo.getNameType();
 					
 					for (TranslationalInfoNameType translationalInfoName : translationalInfoNameTypeList) {
-						
 						DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(translationalInfoName);
 						
 						if (dictionaryEntryType == null) {
@@ -546,14 +544,8 @@ public class Dictionary2NameHelper extends Dictionary2NameHelperCommon {
 						}
 					}				
 				}
-				
-				if (nameDictionaryEntryTypeList.size() == 0) {
-					nameDictionaryEntryTypeList.add(DictionaryEntryType.WORD_EMPTY); 
-				}
-				
-				/*
+								
 				// uniqueKey
-				String uniqueKanjiKanaKey;
 				{
 					String kanji = nameKanjiKanaPair.getKanji() != null ? nameKanjiKanaPair.getKanji() : "-";
 					String kana = nameKanjiKanaPair.getKana();
@@ -570,9 +562,12 @@ public class Dictionary2NameHelper extends Dictionary2NameHelperCommon {
 					
 					uniqueKeyMap.put(kanjiKanaKey, kanjiKanaKeyCounter);
 					
-					uniqueKanjiKanaKey = kanjiKanaKey + "/" + kanjiKanaKeyCounter;
+					String uniqueKanjiKanaKey = kanjiKanaKey + "/" + kanjiKanaKeyCounter;
+					
+					oldPolishJapaneseDictionary.getUniqueKeyList().add(uniqueKanjiKanaKey);
 				}
 
+				/*
 				// zapisanie zdobytych informacji				
 				OldPolishJapaneseDictionaryInfoEntriesInfo oldPolishJapaneseDictionaryInfoEntriesInfo = new OldPolishJapaneseDictionaryInfoEntriesInfo();
 				
@@ -589,7 +584,11 @@ public class Dictionary2NameHelper extends Dictionary2NameHelperCommon {
 				*/
 			}
 			
-			oldPolishJapaneseDictionary.setDictionaryEntryTypeList(nameDictionaryEntryTypeList.stream().map(m -> m.name()).collect(Collectors.joining(",")));
+			if (nameDictionaryEntryTypeList.size() == 0) {
+				nameDictionaryEntryTypeList.add(DictionaryEntryType.WORD_EMPTY); 
+			}
+			
+			oldPolishJapaneseDictionary.getDictionaryEntryTypeList().addAll(nameDictionaryEntryTypeList.stream().map(m -> m.name()).collect(Collectors.toList()));
 			
 			// dodanie do wynikowej listy
 			jmnedictFinalDictionary.getEntryList().add(nameEntry);
