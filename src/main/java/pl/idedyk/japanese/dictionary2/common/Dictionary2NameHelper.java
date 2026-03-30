@@ -26,7 +26,6 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2NameHelperCommon;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
-import pl.idedyk.japanese.dictionary2.jmnedict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.MiscInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.OldPolishJapaneseDictionaryInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.ReadingInfo;
@@ -214,7 +213,7 @@ public class Dictionary2NameHelper extends Dictionary2NameHelperCommon {
 			for (JMnedict.Entry entry : entryList) {
 				
 				// generowanie wszystkich kanji i ich czytan
-				List<NameKanjiKanaPair> kanjiKanaPairListforEntry = getNameKanjiKanaPairList(entry);
+				List<NameKanjiKanaPair> kanjiKanaPairListforEntry = getNameKanjiKanaPairListStatic(entry);
 				
 				// chodzenie po wszystkich kanji i kana
 				for (NameKanjiKanaPair nameKanjiKanaPair : kanjiKanaPairListforEntry) {
@@ -240,74 +239,7 @@ public class Dictionary2NameHelper extends Dictionary2NameHelperCommon {
 			}			
 		}
 	}	
-	
-	public List<NameKanjiKanaPair> getNameKanjiKanaPairList(JMnedict.Entry entry) {
 		
-		List<NameKanjiKanaPair> result = new ArrayList<>();
-		
-		//
-		
-		List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
-		List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
-		
-		// jesli nie ma kanji
-		if (kanjiInfoList.size() == 0) {
-			
-			// wszystkie czytania do listy wynikowej
-			for (ReadingInfo readingInfo : readingInfoList) {				
-				result.add(new NameKanjiKanaPair(null, readingInfo));
-			}
-			
-		} else {	
-			// zlaczenie kanji z kana
-			
-			for (KanjiInfo kanjiInfo : kanjiInfoList) {
-				for (ReadingInfo readingInfo : readingInfoList) {
-					
-					// pobierz kanji
-					String kanji = kanjiInfo.getKanji();
-															
-					List<String> kanjiRestrictedListForKana = readingInfo.getKanjiRestrictionList();
-					
-					boolean isRestricted = true;
-					
-					// sprawdzanie, czy dany kana laczy sie z kanji
-					if (kanjiRestrictedListForKana.size() == 0) { // brak restrykcji						
-						isRestricted = false;
-						
-					} else { // sa jakies restrykcje, sprawdzamy, czy kanji znajduje sie na tej liscie					
-						if (kanjiRestrictedListForKana.contains(kanji) == true) {
-							isRestricted = false;
-						}							
-					}
-					
-					// to zlaczenie nie znajduje sie na liscie, omijamy je
-					if (isRestricted == true) {
-						continue; // omijamy to zlaczenie
-					}
-					
-					// mamy pare
-					result.add(new NameKanjiKanaPair(kanjiInfo, readingInfo));					
-				}				
-			}
-		}
-				
-		// dopasowanie listy translationalInfo do danego kanji i kana
-		List<TranslationalInfo> translationalInfoList = entry.getTranslationInfo();
-				
-		for (NameKanjiKanaPair nameKanjiKanaPair : result) {
-						
-			// chodzimy po wszystkich translationalInfo i sprawdzamy, czy mozemy je dodac do naszej pary kanji i kana
-			for (TranslationalInfo translationalInfo : translationalInfoList) {
-								
-				// dodajemy ten sens do danej pary				
-				nameKanjiKanaPair.getTranslationalInfoList().add(translationalInfo);
-			}
-		}
-		
-		return result;
-	}
-	
 	private String getKanjiKanaKeyForCache(String kanji, String kana) {
 		return kanji + "." + kana;
 	}
@@ -319,7 +251,7 @@ public class Dictionary2NameHelper extends Dictionary2NameHelperCommon {
 		if (entryList.size() == 1) {
 						
 			// generowanie wszystkich kanji i ich czytan
-			List<NameKanjiKanaPair> nameKanjiKanaPairListforEntry = getNameKanjiKanaPairList(entryList.get(0));
+			List<NameKanjiKanaPair> nameKanjiKanaPairListforEntry = getNameKanjiKanaPairListStatic(entryList.get(0));
 
 			return findNameKanjiKanaPair(nameKanjiKanaPairListforEntry, polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());			
 		}
@@ -523,7 +455,7 @@ public class Dictionary2NameHelper extends Dictionary2NameHelperCommon {
 			List<DictionaryEntryType> nameDictionaryEntryTypeList = new ArrayList<>();
 			
 			// wygenerowanie entries w oldPolishJapaneseDictionary
-			List<NameKanjiKanaPair> nameKanjiKanaPairList = dictionary2NameHelper.getNameKanjiKanaPairList(nameEntry);
+			List<NameKanjiKanaPair> nameKanjiKanaPairList = getNameKanjiKanaPairListStatic(nameEntry);
 			
 			Map<String, Integer> uniqueKeyMap = new TreeMap<>();
 			
@@ -697,65 +629,5 @@ public class Dictionary2NameHelper extends Dictionary2NameHelperCommon {
 		} else {
 			return romaji;
 		}		
-	}
-	
-	//
-	
-	public static class NameKanjiKanaPair {
-		
-		private KanjiInfo kanjiInfo;		
-		private ReadingInfo readingInfo;
-				
-		private List<TranslationalInfo> translationalInfoList = new ArrayList<>();
-
-		public NameKanjiKanaPair(KanjiInfo kanjiInfo, ReadingInfo readingInfo) {
-			this.kanjiInfo = kanjiInfo;
-			this.readingInfo = readingInfo;
-		}
-
-		public KanjiInfo getKanjiInfo() {
-			return kanjiInfo;
-		}
-
-		public ReadingInfo getReadingInfo() {
-			return readingInfo;
-		}
-
-		public List<TranslationalInfo> getTranslationalInfoList() {
-			return translationalInfoList;
-		}
-		
-		public String getKanji() {
-			
-			if (kanjiInfo == null) {
-				return null;
-			}
-			
-			return kanjiInfo.getKanji();			
-		}
-				
-		public String getKana() {
-			
-			if (readingInfo == null) {
-				return null;
-			}
-
-			return readingInfo.getKana();
-		}
-		
-		public String getRomaji() {
-			
-			if (readingInfo == null) {
-				return null;
-			}
-
-			return readingInfo.getRomaji();
-		}
-
-				
-		@Override
-		public String toString() {
-			return "KanjiKanaPair [kanji=" + kanjiInfo + ", kana=" + readingInfo + "]";
-		}
 	}
 }
