@@ -66,19 +66,9 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMea
 import com.csvreader.CsvReader;
 
 public class AndroidDictionaryGenerator {
-
-	public static void main(String[] args) throws Exception {
-		
-		// FM_FIXME: testy !!!!!!!!!!!!
-		
-		generateNamePolishJapaneseEntries("output/name2.xml_%d");
-		
-	}
 	
-	public static void main__OK(String[] args) throws Exception {
-		
-		// FM_FIXME: ok !!!!!!!!!!!!
-		
+	public static void main(String[] args) throws Exception {
+				
 		boolean fullMode = true;
 		
 		if (args.length > 0) {
