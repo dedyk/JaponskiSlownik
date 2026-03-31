@@ -56,6 +56,7 @@ import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMeaningGroupAdditionalInfo;
@@ -65,9 +66,9 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMea
 import com.csvreader.CsvReader;
 
 public class AndroidDictionaryGenerator {
-
+	
 	public static void main(String[] args) throws Exception {
-		
+				
 		boolean fullMode = true;
 		
 		if (args.length > 0) {
@@ -101,7 +102,7 @@ public class AndroidDictionaryGenerator {
 				"../JapaneseDictionary_additional/kanjidic2.xml", "../JapaneseDictionary_additional/kradfile",
 				"output/kanji.csv", "output/kanji2.xml");
 
-		generateNamePolishJapaneseEntries("output/names.csv");
+		generateNamePolishJapaneseEntries("output/name2.xml_%d");
 		
 		if (fullMode == true) {
 		
@@ -1120,46 +1121,33 @@ public class AndroidDictionaryGenerator {
 		new File(outputDir, "dictionary.out").delete();
 	}
 	
-	private static void generateNamePolishJapaneseEntries(String output) throws Exception {
+	private static void generateNamePolishJapaneseEntries(String name2XmlFileTemplate) throws Exception {
 				
 		System.out.println("generateNamePolishJapaneseEntries");
 		
-		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
+		// pobranie pomocnikow
 		Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
 		
-		List<PolishJapaneseEntry> generatedNames = Helper.generateNames(dictionary2Helper, dictionary2NameHelper);
+		// wygenerowanie finalnej wersji slownika
+		JMnedict allJMnedictToSave = dictionary2NameHelper.generateNamesForFinalDictionary(dictionary2NameHelper.getJMnedict());		
 		
-		//
+		// zapisanie slownika
+		Map<Integer,  List<JMnedict.Entry>> allJMnedictToSavePartedMap = new LinkedHashMap<>();
 		
-		int id = 0;
-		
-		for (PolishJapaneseEntry polishJapaneseEntry : generatedNames) {
-			polishJapaneseEntry.setId(id);
+		for (JMnedict.Entry entry : allJMnedictToSave.getEntryList()) {
+			Integer firstEntryIdDigit = entry.getEntryId() / 100000;
 			
-			//id++;
+			allJMnedictToSavePartedMap.computeIfAbsent(firstEntryIdDigit, f -> new ArrayList<JMnedict.Entry>()).add(entry);			
 		}
 		
-		final int maxPos = 300000;
-		
-		int counter = 1;
-				
-		List<PolishJapaneseEntry> partialPolishJapaneseEntryList = new ArrayList<PolishJapaneseEntry>();
-		
-		for (PolishJapaneseEntry polishJapaneseEntry : generatedNames) {
-			
-			partialPolishJapaneseEntryList.add(polishJapaneseEntry);
+		for (Integer firstEntryIdDigit : allJMnedictToSavePartedMap.keySet()) {
+			String name2XmlFileName = String.format(name2XmlFileTemplate, firstEntryIdDigit);
 
-			if (partialPolishJapaneseEntryList.size() >= maxPos) {				
-				CsvReaderWriter.generateCsv(new String[] { output + "_" + counter }, partialPolishJapaneseEntryList, true, false, true, false, null);
-				
-				partialPolishJapaneseEntryList.clear();
-				
-				counter++;
-			}			
-		}
-		
-		if (partialPolishJapaneseEntryList.size() > 0) {
-			CsvReaderWriter.generateCsv(new String[] { output + "_" + counter }, partialPolishJapaneseEntryList, true, false, true, false, null);
-		}
+			JMnedict newJMndict = new JMnedict();
+			
+			newJMndict.getEntryList().addAll(allJMnedictToSavePartedMap.get(firstEntryIdDigit));
+			
+			dictionary2NameHelper.saveJMnedictAsXml(newJMndict, name2XmlFileName);			
+		}		
 	}
 }

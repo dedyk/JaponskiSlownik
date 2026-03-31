@@ -10,28 +10,30 @@ import java.util.stream.Collectors;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
-import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
+import org.apache.commons.lang.SerializationUtils;
+
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.api.dto.GroupEnum;
-import pl.idedyk.japanese.dictionary.api.dto.WordType;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2NameHelperCommon;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
-import pl.idedyk.japanese.dictionary2.jmnedict.xsd.KanjiInfo;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.MiscInfo;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.OldPolishJapaneseDictionaryInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoNameType;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoTransDet;
 
-public class Dictionary2NameHelper {
+public class Dictionary2NameHelper extends Dictionary2NameHelperCommon {
 	
 	private static Dictionary2NameHelper dictionary2NameHelper;
 
@@ -112,6 +114,20 @@ public class Dictionary2NameHelper {
 		}
 		
 		return jmnedict;
+	}
+	
+	public void saveJMnedictAsXml(JMnedict jmnedict, String fileName) throws Exception {
+		
+		JAXBContext jaxbContext = JAXBContext.newInstance(JMnedict.class);              
+
+		//
+				
+		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+		//
+		
+		jaxbMarshaller.marshal(jmnedict, new File(fileName));
 	}
 
 	public List<JMnedict.Entry> findEntryListInJmndict(PolishJapaneseEntry polishJapaneseEntry, boolean addFoundNotMatchedEntries) throws Exception {
@@ -197,7 +213,7 @@ public class Dictionary2NameHelper {
 			for (JMnedict.Entry entry : entryList) {
 				
 				// generowanie wszystkich kanji i ich czytan
-				List<NameKanjiKanaPair> kanjiKanaPairListforEntry = getNameKanjiKanaPairList(entry);
+				List<NameKanjiKanaPair> kanjiKanaPairListforEntry = getNameKanjiKanaPairListStatic(entry);
 				
 				// chodzenie po wszystkich kanji i kana
 				for (NameKanjiKanaPair nameKanjiKanaPair : kanjiKanaPairListforEntry) {
@@ -223,74 +239,7 @@ public class Dictionary2NameHelper {
 			}			
 		}
 	}	
-	
-	public List<NameKanjiKanaPair> getNameKanjiKanaPairList(JMnedict.Entry entry) {
 		
-		List<NameKanjiKanaPair> result = new ArrayList<>();
-		
-		//
-		
-		List<KanjiInfo> kanjiInfoList = entry.getKanjiInfoList();
-		List<ReadingInfo> readingInfoList = entry.getReadingInfoList();
-		
-		// jesli nie ma kanji
-		if (kanjiInfoList.size() == 0) {
-			
-			// wszystkie czytania do listy wynikowej
-			for (ReadingInfo readingInfo : readingInfoList) {				
-				result.add(new NameKanjiKanaPair(null, readingInfo));
-			}
-			
-		} else {	
-			// zlaczenie kanji z kana
-			
-			for (KanjiInfo kanjiInfo : kanjiInfoList) {
-				for (ReadingInfo readingInfo : readingInfoList) {
-					
-					// pobierz kanji
-					String kanji = kanjiInfo.getKanji();
-															
-					List<String> kanjiRestrictedListForKana = readingInfo.getKanjiRestrictionList();
-					
-					boolean isRestricted = true;
-					
-					// sprawdzanie, czy dany kana laczy sie z kanji
-					if (kanjiRestrictedListForKana.size() == 0) { // brak restrykcji						
-						isRestricted = false;
-						
-					} else { // sa jakies restrykcje, sprawdzamy, czy kanji znajduje sie na tej liscie					
-						if (kanjiRestrictedListForKana.contains(kanji) == true) {
-							isRestricted = false;
-						}							
-					}
-					
-					// to zlaczenie nie znajduje sie na liscie, omijamy je
-					if (isRestricted == true) {
-						continue; // omijamy to zlaczenie
-					}
-					
-					// mamy pare
-					result.add(new NameKanjiKanaPair(kanjiInfo, readingInfo));					
-				}				
-			}
-		}
-				
-		// dopasowanie listy translationalInfo do danego kanji i kana
-		List<TranslationalInfo> translationalInfoList = entry.getTranslationInfo();
-				
-		for (NameKanjiKanaPair nameKanjiKanaPair : result) {
-						
-			// chodzimy po wszystkich translationalInfo i sprawdzamy, czy mozemy je dodac do naszej pary kanji i kana
-			for (TranslationalInfo translationalInfo : translationalInfoList) {
-								
-				// dodajemy ten sens do danej pary				
-				nameKanjiKanaPair.getTranslationalInfoList().add(translationalInfo);
-			}
-		}
-		
-		return result;
-	}
-	
 	private String getKanjiKanaKeyForCache(String kanji, String kana) {
 		return kanji + "." + kana;
 	}
@@ -302,7 +251,7 @@ public class Dictionary2NameHelper {
 		if (entryList.size() == 1) {
 						
 			// generowanie wszystkich kanji i ich czytan
-			List<NameKanjiKanaPair> nameKanjiKanaPairListforEntry = getNameKanjiKanaPairList(entryList.get(0));
+			List<NameKanjiKanaPair> nameKanjiKanaPairListforEntry = getNameKanjiKanaPairListStatic(entryList.get(0));
 
 			return findNameKanjiKanaPair(nameKanjiKanaPairListforEntry, polishJapaneseEntry.getKanji(), polishJapaneseEntry.getKana());			
 		}
@@ -345,6 +294,8 @@ public class Dictionary2NameHelper {
 		}
 	}
 	
+	/*
+	@Deprecated
 	public List<PolishJapaneseEntry> generatePolishJapanaeseEntries(JMnedict.Entry entry, int counter) {
 		
 		List<PolishJapaneseEntry> result = new ArrayList<>();
@@ -433,22 +384,172 @@ public class Dictionary2NameHelper {
 		
 		return result;
 	}
+	*/
 	
-	private static void fixPolishJapaneseEntryName(PolishJapaneseEntry newPolishJapaneseEntry) {
+	public JMnedict generateNamesForFinalDictionary(JMnedict jmnedict) throws Exception {
 		
-		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_FEMALE_NAME ||
-				newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_MALE_NAME ||
-				newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_PERSON) {
+		// pomocnicy
+		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
+		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
+		KanaHelper kanaHelper = new KanaHelper();
+		
+		// wygenerowanie docelowej postaci slownika nazw
+		JMnedict jmnedictFinalDictionary = new JMnedict();
+		
+		// chodzenie po angielskim slowniku i dodawanie do docelowej postaci
+		for (JMnedict.Entry nameEntry : jmnedict.getEntryList()) {
 			
-			String translate = newPolishJapaneseEntry.getTranslates().get(0);
-			
-			String romaji = newPolishJapaneseEntry.getRomaji();
+			// jezeli dane slowko ze slownika nazw jest juz w glownym slowniku, to takiego slowa nie dodajemy
+			if (dictionary2Helper.getEntryFromPolishDictionary(nameEntry.getEntryId()) != null) {
+				continue;
+			}
 						
-			newPolishJapaneseEntry.setRomaji(fixRomajiForNames(romaji, translate));			
+			// tworzymy klona (ktorego mozemy modyfikowac)
+			nameEntry = (JMnedict.Entry)SerializationUtils.clone(nameEntry);
+						
+			// dogenerowanie romaji
+			for (ReadingInfo readingInfo : nameEntry.getReadingInfoList()) {
+				String romaji = kanaHelper.createRomajiString(kanaHelper.convertKanaStringIntoKanaWord(readingInfo.getKana(), kanaHelper.getKanaCache(), true));
+								
+				readingInfo.setRomaji(romaji);				
+			}
+			
+			// ulepszenie romaji
+			improveRomaji(nameEntry);
+			
+			// usupelnienie o wpisanie domyslneg kodu jezyka
+			for (TranslationalInfo translationalInfo : nameEntry.getTranslationInfo()) {
+				
+				translationalInfo.getTransDet().forEach(f -> {
+					if (f.getLang() == null) {
+						f.setLang("eng");
+					}
+				});
+				
+				translationalInfo.getAddInfo().forEach(f -> {
+					if (f.getLang() == null) {
+						f.setLang("eng");
+					}
+				});
+			}
+			
+			
+			// dodanie misc-ow
+			MiscInfo misc = nameEntry.getMisc();
+			
+			if (misc == null) {
+				misc = new MiscInfo();
+				
+				nameEntry.setMisc(misc);
+			}
+			
+			OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = misc.getOldPolishJapaneseDictionary();
+			
+			if (oldPolishJapaneseDictionary == null) {
+				oldPolishJapaneseDictionary = new OldPolishJapaneseDictionaryInfo();
+				
+				misc.setOldPolishJapaneseDictionary(oldPolishJapaneseDictionary);
+			}
+			
+			// stare typy
+			List<DictionaryEntryType> nameDictionaryEntryTypeList = new ArrayList<>();
+			
+			// wygenerowanie entries w oldPolishJapaneseDictionary
+			List<NameKanjiKanaPair> nameKanjiKanaPairList = getNameKanjiKanaPairListStatic(nameEntry);
+			
+			Map<String, Integer> uniqueKeyMap = new TreeMap<>();
+			
+			for (NameKanjiKanaPair nameKanjiKanaPair : nameKanjiKanaPairList) {								
+				for (TranslationalInfo translationalInfo : nameKanjiKanaPair.getTranslationalInfoList()) {
+					
+					List<TranslationalInfoNameType> translationalInfoNameTypeList = translationalInfo.getNameType();
+					
+					for (TranslationalInfoNameType translationalInfoName : translationalInfoNameTypeList) {
+						DictionaryEntryType dictionaryEntryType = dictionaryEntryJMEdictEntityMapper.getDictionaryEntryType(translationalInfoName);
+						
+						if (dictionaryEntryType == null) {
+							throw new RuntimeException("Unknown name type: " + translationalInfoName);
+						}
+						
+						if (nameDictionaryEntryTypeList.contains(dictionaryEntryType) == false) {
+							nameDictionaryEntryTypeList.add(dictionaryEntryType);
+						}
+					}				
+				}
+								
+				// uniqueKey
+				{
+					String kanji = nameKanjiKanaPair.getKanji() != null ? nameKanjiKanaPair.getKanji() : "-";
+					String kana = nameKanjiKanaPair.getKana();
+					
+					String kanjiKanaKey = kanji + "/" + kana;
+					
+					Integer kanjiKanaKeyCounter = uniqueKeyMap.get(kanjiKanaKey);
+					
+					if (kanjiKanaKeyCounter == null) {
+						kanjiKanaKeyCounter = 0;
+					}
+					
+					kanjiKanaKeyCounter = kanjiKanaKeyCounter + 1;
+					
+					uniqueKeyMap.put(kanjiKanaKey, kanjiKanaKeyCounter);
+					
+					String uniqueKanjiKanaKey = kanjiKanaKey + "/" + kanjiKanaKeyCounter;
+					
+					oldPolishJapaneseDictionary.getUniqueKeyList().add(uniqueKanjiKanaKey);
+				}
+
+				/*
+				// zapisanie zdobytych informacji				
+				OldPolishJapaneseDictionaryInfoEntriesInfo oldPolishJapaneseDictionaryInfoEntriesInfo = new OldPolishJapaneseDictionaryInfoEntriesInfo();
+				
+				oldPolishJapaneseDictionaryInfoEntriesInfo.setDictionaryEntryTypeList(nameDictionaryEntryTypeList.stream().map(m -> m.name()).collect(Collectors.joining(",")));
+				
+				oldPolishJapaneseDictionaryInfoEntriesInfo.setKanji(nameKanjiKanaPair.getKanji());				
+				oldPolishJapaneseDictionaryInfoEntriesInfo.setKana(nameKanjiKanaPair.getKana());
+				oldPolishJapaneseDictionaryInfoEntriesInfo.setRomaji(nameKanjiKanaPair.getRomaji());
+				
+				oldPolishJapaneseDictionaryInfoEntriesInfo.setUniqueKey(uniqueKanjiKanaKey);
+				
+				// dodanie starego wpisu				
+				oldPolishJapaneseDictionary.getEntries().add(oldPolishJapaneseDictionaryInfoEntriesInfo);
+				*/
+			}
+			
+			if (nameDictionaryEntryTypeList.size() == 0) {
+				nameDictionaryEntryTypeList.add(DictionaryEntryType.WORD_EMPTY); 
+			}
+			
+			oldPolishJapaneseDictionary.getDictionaryEntryTypeList().addAll(nameDictionaryEntryTypeList.stream().map(m -> m.name()).collect(Collectors.toList()));
+			
+			// dodanie do wynikowej listy
+			jmnedictFinalDictionary.getEntryList().add(nameEntry);
 		}
 		
-		if (newPolishJapaneseEntry.getDictionaryEntryType() == DictionaryEntryType.WORD_STATION_NAME) {
-			
+		return jmnedictFinalDictionary;
+	}
+	
+	private void improveRomaji(JMnedict.Entry entry) {
+		
+		// czy to imie meskie, zenskie lub osoba
+		boolean isNameFemaleNameOrPerson = entry.getTranslationInfo().stream().filter(
+				f -> 	f.getNameType().contains(TranslationalInfoNameType.MALE_GIVEN_NAME_OR_FORENAME) == true ||
+						f.getNameType().contains(TranslationalInfoNameType.FEMALE_GIVEN_NAME_OR_FORENAME) == true ||
+						f.getNameType().contains(TranslationalInfoNameType.FULL_NAME_OF_A_PARTICULAR_PERSON) == true).count() > 0;
+		
+		boolean isNameStationName = entry.getTranslationInfo().stream().filter(
+				f -> f.getNameType().contains(TranslationalInfoNameType.RAILWAY_STATION) == true).count() > 0;
+		
+		if (isNameFemaleNameOrPerson == true) {			
+			for (ReadingInfo readingInfo : entry.getReadingInfoList()) {
+				String translate = entry.getTranslationInfo().get(0).getTransDet().get(0).getValue();
+				String romaji = readingInfo.getRomaji();
+				
+				readingInfo.setRomaji(fixRomajiForNames(romaji, translate));
+			}						
+		}
+		
+		if (isNameStationName == true) {	
 			/*
 			String translate = newPolishJapaneseEntry.getTranslates().get(0);
 			
@@ -460,13 +561,16 @@ public class Dictionary2NameHelper {
 			newPolishJapaneseEntry.setTranslates(newTranslateList);
 			*/
 			
-			String romaji = newPolishJapaneseEntry.getRomaji();
-			
-			if (romaji.endsWith("eki") == true) {
-				romaji = romaji.substring(0, romaji.length() - 3) + " eki";
+			for (ReadingInfo readingInfo : entry.getReadingInfoList()) {
+				String romaji = readingInfo.getRomaji();
+				
+				if (romaji.endsWith("eki") == true) {
+					romaji = romaji.substring(0, romaji.length() - 3) + " eki";
+				}
+				
+				readingInfo.setRomaji(romaji);				
 			}
 			
-			newPolishJapaneseEntry.setRomaji(romaji);
 		}
 	}
 
@@ -526,55 +630,4 @@ public class Dictionary2NameHelper {
 			return romaji;
 		}		
 	}
-
-	//
-	
-	public static class NameKanjiKanaPair {
-		
-		private KanjiInfo kanjiInfo;		
-		private ReadingInfo readingInfo;
-				
-		private List<TranslationalInfo> translationalInfoList = new ArrayList<>();
-
-		public NameKanjiKanaPair(KanjiInfo kanjiInfo, ReadingInfo readingInfo) {
-			this.kanjiInfo = kanjiInfo;
-			this.readingInfo = readingInfo;
-		}
-
-		public KanjiInfo getKanjiInfo() {
-			return kanjiInfo;
-		}
-
-		public ReadingInfo getReadingInfo() {
-			return readingInfo;
-		}
-
-		public List<TranslationalInfo> getTranslationalInfoList() {
-			return translationalInfoList;
-		}
-		
-		public String getKanji() {
-			
-			if (kanjiInfo == null) {
-				return null;
-			}
-			
-			return kanjiInfo.getKanji();			
-		}
-		
-		public String getKana() {
-			
-			if (readingInfo == null) {
-				return null;
-			}
-
-			return readingInfo.getKana();
-		}
-				
-		@Override
-		public String toString() {
-			return "KanjiKanaPair [kanji=" + kanjiInfo + ", kana=" + readingInfo + "]";
-		}
-	}
-
 }

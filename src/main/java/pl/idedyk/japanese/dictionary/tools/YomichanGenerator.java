@@ -26,7 +26,6 @@ import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
-import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
@@ -1420,7 +1419,7 @@ public class YomichanGenerator {
 		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
 				
 		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
-		Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
+		// Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();
 		
 		//
 		
@@ -1428,10 +1427,9 @@ public class YomichanGenerator {
 
 		Helper.generateAdditionalInfoFromEdict(dictionary2Helper, jmedictCommon, polishJapaneseEntriesList);
 
-		//
+		// stary kod - nieaktualny
 		
-		List<PolishJapaneseEntry> namesList = Helper.generateNames(dictionary2Helper, dictionary2NameHelper);
-		
-		generate(polishJapaneseEntriesList, namesList, "/tmp/a");		
+		// List<PolishJapaneseEntry> namesList = Helper.generateNames(dictionary2Helper, dictionary2NameHelper);		
+		// generate(polishJapaneseEntriesList, namesList, "/tmp/a");		
 	}
 }
