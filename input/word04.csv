@@ -44368,16 +44368,14 @@ z tego powodu
 jak już mówiłem (na początku zdania)
 już ci mówiłem (na początku zdania)",dialekt Kansai,DICTIONARY2_SOURCE,,GroupId: 2869380
 320017,WORD_NOUN,,HIRAGANA,,,お飯菜,おばんざい,,obanzai,"lekka domowa kuchnia w stylu z Kioto z gotowanymi warzywami i marynowanymi potrawami, obecnie podawana również w restauracjach",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 320046,GroupId: 2082840
-320018,"WORD_ADVERB
-WORD_ADVERB_TO",,HIRAGANA,,,-,ひゅう,,hyuu,"świst
-syczenie
-z gwizdem",onomatopeiczne lub mimetyczne słowo,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 320719,GroupId: 2869386
-320019,"WORD_ADVERB
-WORD_ADVERB_TO",,KATAKANA_EXCEPTION,,,-,ヒュウ,,hyuu,"świst
-syczenie
-z gwizdem",onomatopeiczne lub mimetyczne słowo,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 320720,GroupId: 2869386
+320018,"WORD_AUX
+WORD_ADJECTIVE_NA",,HIRAGANA_EXCEPTION,,,-,そー,,soo,"wydający się, że
+wyglądający jak
+mający wygląd",po czasowniku w formie bez masu lub temacie przymiotnika,DICTIONARY2_SOURCE,,GroupId: 1006610
+320019,"WORD_AUX
+WORD_ADJECTIVE_NA",,HIRAGANA_EXCEPTION,,,-,そ〜,,so,"wydający się, że
+wyglądający jak
+mający wygląd",po czasowniku w formie bez masu lub temacie przymiotnika,DICTIONARY2_SOURCE,,GroupId: 1006610
 320020,WORD_NOUN,,HIRAGANA,,,一番槍,いちばんやり,,ichiban' yari,"pierwszy, który rzucił włócznią (w kierunku wroga)
 pierwszy, który osiągnął sławę
 pierwszy, który osiągnął zasługi",,DICTIONARY2_SOURCE,,GroupId: 2869387
@@ -45907,8 +45905,7 @@ umrzeć (wyrażenie eufemistyczne)",,DICTIONARY2_SOURCE,,GroupId: 2255450
 320578,WORD_NOUN,,HIRAGANA,,,実況検分調書,じっきょうけんぶんちょうしょ,,jikkyou kenbun chousho,raport z dochodzenia przeprowadzonego na miejscu zdarzenia,prawo,DICTIONARY2_SOURCE,,GroupId: 2869837
 320579,WORD_NOUN,,HIRAGANA,,,肺血栓塞栓症,はいけっせんそくせんしょう,,haikessen sokusenshou,zatorowość płucna,medycyna,DICTIONARY2_SOURCE,,GroupId: 2869839
 320580,WORD_ADVERB_TO,,KATAKANA_EXCEPTION,,,-,ピッ,,pi,"bip
-(z) sygnałem dźwiękowym
-sygnałem dźwiękowym",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869844
+z sygnałem dźwiękowym",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869844
 320581,WORD_ADVERB_TO,,HIRAGANA_EXCEPTION,,,-,ぴっ,,pi,"(stojąc) prosto
 (wyciągając) płasko
 (z) trzaskiem
@@ -49500,7 +49497,8 @@ mantra Acali",buddyzm,DICTIONARY2_SOURCE,,GroupId: 2869947
 zjawisko psychologiczne",,DICTIONARY2_SOURCE,,GroupId: 2870048
 321518,WORD_EXPRESSION,,HIRAGANA,,,嫌疑なし,けんぎなし,,kengi nashi,brak podstaw do podejrzeń,prawo; niewniesienie oskarżenia z powodu,DICTIONARY2_SOURCE,,GroupId: 2870054
 321519,WORD_EXPRESSION,,HIRAGANA,,,嫌疑無し,けんぎなし,,kengi nashi,brak podstaw do podejrzeń,prawo; niewniesienie oskarżenia z powodu,DICTIONARY2_SOURCE,,GroupId: 2870054
-321520,WORD_NOUN,,HIRAGANA,,,文書毀棄,ぶんしょきき,,bunsho kiki,"niszczenie lub ukrywanie dokumentów
+321520,WORD_NOUN,,HIRAGANA,,,文書毀棄,ぶんしょきき,,bunsho kiki,"niszczenie dokumentów
+ukrywanie dokumentów
 niszczenie dowodów",prawo,DICTIONARY2_SOURCE,,GroupId: 2870086
 321521,WORD_NOUN,,HIRAGANA,,,文書毀棄罪,ぶんしょききざい,,bunsho kikizai,"(przestępstwo) zniszczenia lub ukrycia dokumentów
 przestępstwo zniszczenia dowodów",prawo,DICTIONARY2_SOURCE,,GroupId: 2870087
@@ -49547,3 +49545,105 @@ WORD_EXPRESSION",,HIRAGANA,,,考えを廻らす,かんがえをめぐらす,,kan
 rozmyślać
 zastanawiać się nad
 dumać",,DICTIONARY2_SOURCE,,GroupId: 2841282
+321536,"WORD_AUX
+WORD_ADJECTIVE_NA",,HIRAGANA_EXCEPTION,,,-,そお,,soo,"wydający się, że
+wyglądający jak
+mający wygląd",po czasowniku w formie bez masu lub temacie przymiotnika,DICTIONARY2_SOURCE,,GroupId: 1006610
+321537,"WORD_AUX
+WORD_ADJECTIVE_NA",,HIRAGANA_EXCEPTION,,,-,そーお,,sooo,"wydający się, że
+wyglądający jak
+mający wygląd",po czasowniku w formie bez masu lub temacie przymiotnika,DICTIONARY2_SOURCE,,GroupId: 1006610
+321538,"WORD_AUX
+WORD_ADJECTIVE_NA",,HIRAGANA_EXCEPTION,,,-,そーう,,soou,"wydający się, że
+wyglądający jak
+mający wygląd",po czasowniku w formie bez masu lub temacie przymiotnika,DICTIONARY2_SOURCE,,GroupId: 1006610
+321539,"WORD_AUX
+WORD_ADJECTIVE_NA",,HIRAGANA,,,-,そおお,,sooo,"wydający się, że
+wyglądający jak
+mający wygląd",po czasowniku w formie bez masu lub temacie przymiotnika,DICTIONARY2_SOURCE,,GroupId: 1006610
+321540,"WORD_AUX
+WORD_ADJECTIVE_NA",,HIRAGANA_EXCEPTION,,,-,そぅ,,so,"wydający się, że
+wyglądający jak
+mający wygląd",po czasowniku w formie bez masu lub temacie przymiotnika,DICTIONARY2_SOURCE,,GroupId: 1006610
+321541,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,鬼気せまる,ききせまる,,kikisemaru,"być mrożący krew w żyłach
+być straszny",zwykle modyfikujący rzeczownik,DICTIONARY2_SOURCE,,GroupId: 1868750
+321542,"WORD_ADVERB
+WORD_NOUN",,KATAKANA,,,-,プンスコ,,punsuko,odgłos wyrażający złość,onomatopeiczne lub mimetyczne słowo; slang,DICTIONARY2_SOURCE,,GroupId: 2727640
+321543,"WORD_ADVERB
+WORD_NOUN",,HIRAGANA,,,-,ぷんすこ,,punsuko,odgłos wyrażający złość,onomatopeiczne lub mimetyczne słowo; slang,DICTIONARY2_SOURCE,,GroupId: 2727640
+321544,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,おだてともっこには乗りやすい,おだてともっこにはのりやすい,,odate to mokko ni wa nori yasui,niebezpiecznie jest ulegać pochlebstwom,przysłowie,DICTIONARY2_SOURCE,,GroupId: 2868431
+321545,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,一つながり,ひとつながり,,hito tsunagari,"połączone w jedno
+połączone ze sobą",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869513
+321546,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,一繋がり,ひとつながり,,hito tsunagari,"połączone w jedno
+połączone ze sobą",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869513
+321547,"WORD_ADJECTIVE_NO
+WORD_NOUN",,HIRAGANA,,,ひと繋がり,ひとつながり,,hito tsunagari,"połączone w jedno
+połączone ze sobą",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869513
+321548,WORD_NOUN,,HIRAGANA,,,三河弁,みかわべん,,mikawaben,dialekt Mikawa,"używany we wschodniej części prefektury Aichi, dawnej prowincji Mikawa",DICTIONARY2_SOURCE,,GroupId: 2869536
+321549,WORD_NOUN,,HIRAGANA,,,不同意性交等罪,ふどういせいこうとうざい,,fudoui seikoutouzai,stosunek płciowy bez zgody,prawo; przestępstwo,DICTIONARY2_SOURCE,,GroupId: 2869775
+321550,WORD_NOUN,,HIRAGANA,,,強制性交等罪,きょうせいせいこうとうざい,,kyou seiseikoutouzai,"stosunek płciowy z użyciem siły
+gwałt",prawo; przestarzałe słowo; przestępstwo,DICTIONARY2_SOURCE,,GroupId: 2869782
+321551,WORD_NOUN,,HIRAGANA,,,性格異常者,せいかくいじょうしゃ,,seikaku ijousha,"osoba z zaburzeniem osobowości
+osoba o nienormalnym charakterze",wrażliwie,DICTIONARY2_SOURCE,,GroupId: 2869931
+321552,WORD_NOUN,,HIRAGANA,,,統合失調感情障害,とうごうしっちょうかんじょうしょうがい,,tougou shicchou kanjou shougai,zaburzenie schizoafektywne,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869958
+321553,WORD_NOUN,,HIRAGANA,,,精神保健福祉士,せいしんほけんふくしし,,seishin hoken fukushishi,"pracownik socjalny specjalizujący się w psychiatrii
+dyplomowany pracownik socjalny ds. zdrowia psychicznego",,DICTIONARY2_SOURCE,,GroupId: 2869963
+321554,WORD_NOUN,,HIRAGANA,,,分離不安障害,ぶんりふあんしょうがい,,bunri fuan shougai,lęk separacyjny,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869967
+321555,WORD_NOUN,,HIRAGANA,,,分離不安症,ぶんりふあんしょう,,bunri fuanshou,lęk separacyjny,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869968
+321556,WORD_NOUN,,HIRAGANA,,,精神保健指定医,せいしんほけんしていい,,seishin hoken shiteii,"wyznaczony psychiatra
+wyznaczony lekarz specjalizujący się w zdrowiu psychicznym",,DICTIONARY2_SOURCE,,GroupId: 2870058
+321557,WORD_NOUN,,HIRAGANA,,,営利社団法人,えいりしゃだんほうじん,,eiri shadan houjin,spółka nastawiona na zysk,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2870065
+321558,WORD_NOUN,,HIRAGANA,,,毀棄罪,ききざい,,kikizai,zniszczenia mienia,prawo; przestępstwo,DICTIONARY2_SOURCE,,GroupId: 2870084
+321559,WORD_NOUN,,HIRAGANA,,,墳墓発掘罪,ふんぼはっくつざい,,funbo hakkutsuzai,rozkopywania grobów,prawo; przestępstwo,DICTIONARY2_SOURCE,,GroupId: 2870095
+321560,WORD_NOUN,,HIRAGANA,,,潜龍,せんりゅう,,senryuu,"osoba, która cierpliwie czeka na swoją szansę
+dziedzic oczekujący na objęcie tronu
+wielki talent, który dopiero musi się wykazać",,DICTIONARY2_SOURCE,DUPLICATE 321561,GroupId: 2870217
+321561,WORD_NOUN,,HIRAGANA,,,潜龍,せんりょう,,senryou,"osoba, która cierpliwie czeka na swoją szansę
+dziedzic oczekujący na objęcie tronu
+wielki talent, który dopiero musi się wykazać",,DICTIONARY2_SOURCE,DUPLICATE 321560,GroupId: 2870217
+321562,WORD_NOUN,,HIRAGANA,,,庭園露天風呂,ていえんろてんぶろ,,teien rotenburo,kąpiel w ogrodzie na świeżym powietrzu,,DICTIONARY2_SOURCE,,GroupId: 2870275
+321563,WORD_NOUN,,HIRAGANA,,,非人道,ひじんどう,,hijindou,"bestialstwo
+nieludzkie zachowanie
+niehumanitarność",,DICTIONARY2_SOURCE,,GroupId: 2870276
+321564,WORD_NOUN,,HIRAGANA,,,三文芝居,さんもんしばい,,sanmon shibai,"tania i kiepska sztuka
+przedstawienie, za które nie warto płacić
+przejrzyste działanie
+przejrzyste intrygi",,DICTIONARY2_SOURCE,,GroupId: 2870280
+321565,WORD_NOUN,,HIRAGANA,,,御祖,みおや,,mioya,przodek,honoryfikatywnie; poetycki termin; zwłaszcza czyjaś matka lub babcia,DICTIONARY2_SOURCE,,GroupId: 2870282
+321566,WORD_NOUN,,HIRAGANA,,,み祖,みおや,,mioya,przodek,honoryfikatywnie; poetycki termin; zwłaszcza czyjaś matka lub babcia,DICTIONARY2_SOURCE,,GroupId: 2870282
+321567,WORD_NOUN,,HIRAGANA,,,御おや,みおや,,mioya,przodek,honoryfikatywnie; poetycki termin; zwłaszcza czyjaś matka lub babcia,DICTIONARY2_SOURCE,,GroupId: 2870282
+321568,WORD_NOUN,,HIRAGANA,,,膿毒症,のうどくしょう,,noudokushou,ropnica,medycyna,DICTIONARY2_SOURCE,,GroupId: 2870284
+321569,WORD_NOUN,,HIRAGANA,,,耳鼻咽喉科学,じびいんこうかがく,,jibiinkou kagaku,"otolaryngologia
+otorynolaryngologia","medycyna; nauka o budowie, czynnościach i chorobach uszu, nosa, gardła i krtani",DICTIONARY2_SOURCE,,GroupId: 2870285
+321570,WORD_NOUN,,HIRAGANA,,,急性骨髄性白血病,きゅうせいこつずいせいはっけつびょう,,kyuusei kotsuzuisei hakketsubyou,ostra białaczka szpikowa,medycyna,DICTIONARY2_SOURCE,,GroupId: 2870286
+321571,WORD_NOUN,,HIRAGANA,,,書字不能症,しょじふのうしょう,,shoji funoushou,agrafia,medycyna; utrata zdolności pisania,DICTIONARY2_SOURCE,,GroupId: 2870287
+321572,WORD_NOUN,,HIRAGANA,,,肉腫症,にくしゅしょう,,nikushushou,mięsakowatość,medycyna,DICTIONARY2_SOURCE,,GroupId: 2870288
+321573,WORD_NOUN,,HIRAGANA,,,深雪,みゆき,,miyuki,"śnieg
+głęboki śnieg",poetycki termin,DICTIONARY2_SOURCE,DUPLICATE 51057,GroupId: 2870289
+321574,WORD_NOUN,,HIRAGANA,,,御雪,みゆき,,miyuki,śnieg,poetycki termin,DICTIONARY2_SOURCE,,GroupId: 2870289
+321575,WORD_NOUN,,HIRAGANA,,,み雪,みゆき,,miyuki,śnieg,poetycki termin,DICTIONARY2_SOURCE,,GroupId: 2870289
+321576,WORD_NOUN,,HIRAGANA,,,威力偵察,いりょくていさつ,,iryoku teisatsu,"rozpoznanie bojowe
+walka rozpoznawcza",wojskowość,DICTIONARY2_SOURCE,,GroupId: 2870291
+321577,WORD_NOUN,,KATAKANA,,,-,ショートコーナー,,shooto koonaa,krótki rzut rożny,"sport; w piłce nożnej, ang: short corner",DICTIONARY2_SOURCE,,GroupId: 2870294
+321578,WORD_NOUN,,KATAKANA,,,-,ショート・コーナー,,shooto koonaa,krótki rzut rożny,"sport; w piłce nożnej, ang: short corner",DICTIONARY2_SOURCE,,GroupId: 2870294
+321579,WORD_VERB_U,,HIRAGANA,,,指をさす,ゆびをさす,,yubi o sasu,wskazać (palcem) na,,DICTIONARY2_SOURCE,,GroupId: 2870295
+321580,WORD_VERB_U,,HIRAGANA,,,指を指す,ゆびをさす,,yubi o sasu,wskazać (palcem) na,,DICTIONARY2_SOURCE,,GroupId: 2870295
+321581,WORD_VERB_U,,HIRAGANA,,,指を差す,ゆびをさす,,yubi o sasu,wskazać (palcem) na,,DICTIONARY2_SOURCE,,GroupId: 2870295
+321582,WORD_VERB_RU,,HIRAGANA,,,覗かせる,のぞかせる,,nozokaseru,"częściowo odsłonić
+błysnąć
+pokazać na chwilę
+wsunąć rękę częściowo pod ramię przeciwnika (sumo)",,DICTIONARY2_SOURCE,,GroupId: 2870296
+321583,WORD_VERB_RU,,HIRAGANA,,,覘かせる,のぞかせる,,nozokaseru,"częściowo odsłonić
+błysnąć
+pokazać na chwilę
+wsunąć rękę częściowo pod ramię przeciwnika (sumo)",,DICTIONARY2_SOURCE,,GroupId: 2870296
+321584,WORD_NOUN,,HIRAGANA_KATAKANA,,,肉テロ,にくテロ,,niku tero,"food porn (z mięsem w roli głównej)
+zdjęcia mięsa (które pobudzają apetyt) (wyjaśnienie)
+terroryzm mięsny (dosłownie)",slang,DICTIONARY2_SOURCE,,GroupId: 2870297
+321585,WORD_NOUN,,HIRAGANA,,,木蠹蛾,ぼくとうが,,bokutouga,Yakudza vicarius,pisanie zwykle z użyciem kana; gatunek ćmy,DICTIONARY2_SOURCE,,GroupId: 2870298
+321586,WORD_NOUN,,KATAKANA,,,-,ボクトウガ,,bokutouga,Yakudza vicarius,pisanie zwykle z użyciem kana; gatunek ćmy,DICTIONARY2_SOURCE,,GroupId: 2870298
+321587,WORD_NOUN,,HIRAGANA,,,塩屋虻,しおやあぶ,,shioyaabu,Promachus yesonicus,pisanie zwykle z użyciem kana; gatunek muchy,DICTIONARY2_SOURCE,,GroupId: 2870299
+321588,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,シオヤアブ,,shioyaabu,Promachus yesonicus,pisanie zwykle z użyciem kana; gatunek muchy,DICTIONARY2_SOURCE,,GroupId: 2870299
