@@ -5419,7 +5419,8 @@ po COVID-19",ang: after corona,DICTIONARY2_SOURCE,,GroupId: 2861800
 303345,WORD_NOUN,,KATAKANA,,,-,ヘム,,hemu,hem,biochemia; niebiałkowa część wielu enzymów,DICTIONARY2_SOURCE,DUPLICATE 45483,GroupId: 2861802
 303346,WORD_NOUN,,HIRAGANA,,,葵色,あおいいろ,,aoi iro,"fiolet
 fioletowy kolor
-lawendowy kolor",,DICTIONARY2_SOURCE,,GroupId: 2861675
+lawendowy kolor
+fioletoworóżowy",,DICTIONARY2_SOURCE,,GroupId: 2861675
 303347,WORD_NOUN,,HIRAGANA,,,経営企画,けいえいきかく,,keiei kikaku,"planowanie korporacyjne
 planowanie zarządzania",,DICTIONARY2_SOURCE,,GroupId: 2861716
 303348,WORD_NOUN,,HIRAGANA,,,蒸し釜,むしがま,,mushi gama,kociołek do gotowania na parze,,DICTIONARY2_SOURCE,,GroupId: 2861803
@@ -31323,7 +31324,7 @@ odrzucenie bez rozpatrzenia
 odmowa bez istotnego dochodzenia
 przegonienie z bramy biura magistratu (termin historyczny; najłagodniejsza kara w okresie Edo)",,DICTIONARY2_SOURCE,,GroupId: 1724730
 314311,WORD_NOUN,,HIRAGANA,,,字詰,じづめ,,jidume,"liczba znaków w wierszu, na stronie itp.",,DICTIONARY2_SOURCE,,GroupId: 1772170
-314312,WORD_NOUN,,HIRAGANA,,,水とんの術,すいとんのじゅつ,,suiton no jutsu,sztuka ninjutsu ucieczki do wody,,DICTIONARY2_SOURCE,,GroupId: 2064260
+314312,WORD_NOUN,,HIRAGANA,,,水とんの術,すいとんのじゅつ,,suiton no jutsu,sztuka ninja ucieczki do wody,,DICTIONARY2_SOURCE,,GroupId: 2064260
 314313,WORD_VERB_U,,HIRAGANA,,,動き廻る,うごきまわる,,ugoki mawaru,"poruszać się wokół
 poruszać się dookoła",,DICTIONARY2_SOURCE,,GroupId: 1451200
 314314,WORD_VERB_U,,HIRAGANA,,,つき落とす,つきおとす,,tsuki otosu,"strącić
@@ -46437,9 +46438,11 @@ współdziałanie
 pomoc
 wsparcie",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2869902
 320681,"WORD_ADVERB_TO
-WORD_NOUN",,KATAKANA,,,-,コポコポ,,kopo kopo,bulgotanie cieczy,onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869904
+WORD_NOUN
+WORD_ADVERB",,KATAKANA,,,-,コポコポ,,kopo kopo,bulgotanie cieczy,onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869904
 320682,"WORD_ADVERB_TO
-WORD_NOUN",,HIRAGANA,,,-,こぽこぽ,,kopo kopo,bulgotanie cieczy,onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869904
+WORD_NOUN
+WORD_ADVERB",,HIRAGANA,,,-,こぽこぽ,,kopo kopo,bulgotanie cieczy,onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 2869904
 320683,WORD_NOUN,,HIRAGANA,,,室内機,しつないき,,shitsunaiki,urządzenie wewnętrzne,zwłaszcza klimatyzator,DICTIONARY2_SOURCE,,GroupId: 2869905
 320684,WORD_NOUN,,KATAKANA,,,ＥＣサイト,イーシーサイト,,iishii saito,"witryna e-commerce
 platforma zakupów online",,DICTIONARY2_SOURCE,,GroupId: 2869906
@@ -49289,7 +49292,8 @@ ochronna żelazna blacha noszona na opasce na głowę",wojskowość,DICTIONARY2_
 321468,WORD_NOUN,,HIRAGANA,,,上位陣,じょういじん,,jouijin,"najwyżej notowani gracze
 liderzy
 faworyci",,DICTIONARY2_SOURCE,,GroupId: 2870252
-321469,WORD_NOUN,,HIRAGANA,,,桜木,さくらぎ,,sakuragi,drzewo wiśni,,DICTIONARY2_SOURCE,,GroupId: 2870268
+321469,WORD_NOUN,,HIRAGANA,,,桜木,さくらぎ,,sakuragi,"drzewo wiśni
+drewno wiśniowe",,DICTIONARY2_SOURCE,,GroupId: 2870268
 321470,WORD_NOUN,,HIRAGANA,,,発地,はっち,,hacchi,"miejsce wysyłki
 punkt pochodzenia (np. przesyłki)",,DICTIONARY2_SOURCE,,GroupId: 2870269
 321471,WORD_NOUN,,KATAKANA,,,-,アロゼ,,aroze,basting,"jedzenie, gotowanie; technika kulinarna polegająca na polewaniu pieczeni lub smażonego mięsa (drobiu, ryb) tłuszczem, sokami z patelni, sosem lub marynatą w trakcie obróbki cieplnej; fra: arroser",DICTIONARY2_SOURCE,,GroupId: 2870270
@@ -49630,9 +49634,21 @@ głęboki śnieg",poetycki termin,DICTIONARY2_SOURCE,DUPLICATE 51057,GroupId: 28
 walka rozpoznawcza",wojskowość,DICTIONARY2_SOURCE,,GroupId: 2870291
 321577,WORD_NOUN,,KATAKANA,,,-,ショートコーナー,,shooto koonaa,krótki rzut rożny,"sport; w piłce nożnej, ang: short corner",DICTIONARY2_SOURCE,,GroupId: 2870294
 321578,WORD_NOUN,,KATAKANA,,,-,ショート・コーナー,,shooto koonaa,krótki rzut rożny,"sport; w piłce nożnej, ang: short corner",DICTIONARY2_SOURCE,,GroupId: 2870294
-321579,WORD_VERB_U,,HIRAGANA,,,指をさす,ゆびをさす,,yubi o sasu,wskazać (palcem) na,,DICTIONARY2_SOURCE,,GroupId: 2870295
-321580,WORD_VERB_U,,HIRAGANA,,,指を指す,ゆびをさす,,yubi o sasu,wskazać (palcem) na,,DICTIONARY2_SOURCE,,GroupId: 2870295
-321581,WORD_VERB_U,,HIRAGANA,,,指を差す,ゆびをさす,,yubi o sasu,wskazać (palcem) na,,DICTIONARY2_SOURCE,,GroupId: 2870295
+321579,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,指をさす,ゆびをさす,,yubi o sasu,"wskazać na
+wskazywać na
+mówić o kimś za jego plecami (wyrażenie idiomatyczne)
+obgadywać kogoś (wyrażenie idiomatyczne)",,DICTIONARY2_SOURCE,,GroupId: 2870295
+321580,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,指を指す,ゆびをさす,,yubi o sasu,"wskazać na
+wskazywać na
+mówić o kimś za jego plecami (wyrażenie idiomatyczne)
+obgadywać kogoś (wyrażenie idiomatyczne)",,DICTIONARY2_SOURCE,,GroupId: 2870295
+321581,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,指を差す,ゆびをさす,,yubi o sasu,"wskazać na
+wskazywać na
+mówić o kimś za jego plecami (wyrażenie idiomatyczne)
+obgadywać kogoś (wyrażenie idiomatyczne)",,DICTIONARY2_SOURCE,,GroupId: 2870295
 321582,WORD_VERB_RU,,HIRAGANA,,,覗かせる,のぞかせる,,nozokaseru,"częściowo odsłonić
 błysnąć
 pokazać na chwilę
@@ -49642,7 +49658,7 @@ błysnąć
 pokazać na chwilę
 wsunąć rękę częściowo pod ramię przeciwnika (sumo)",,DICTIONARY2_SOURCE,,GroupId: 2870296
 321584,WORD_NOUN,,HIRAGANA_KATAKANA,,,肉テロ,にくテロ,,niku tero,"food porn (z mięsem w roli głównej)
-zdjęcia mięsa (które pobudzają apetyt) (wyjaśnienie)
+prezentacja mięsa (która pobudza apetyt)
 terroryzm mięsny (dosłownie)",slang,DICTIONARY2_SOURCE,,GroupId: 2870297
 321585,WORD_NOUN,,HIRAGANA,,,木蠹蛾,ぼくとうが,,bokutouga,Yakudza vicarius,pisanie zwykle z użyciem kana; gatunek ćmy,DICTIONARY2_SOURCE,,GroupId: 2870298
 321586,WORD_NOUN,,KATAKANA,,,-,ボクトウガ,,bokutouga,Yakudza vicarius,pisanie zwykle z użyciem kana; gatunek ćmy,DICTIONARY2_SOURCE,,GroupId: 2870298
@@ -49714,5 +49730,204 @@ uregulować zaległy rachunek
 ponieść konsekwencje (swoich czynów) (wyrażenie idiomatyczne)
 zmierzyć się z konsekwencjami (wyrażenie idiomatyczne)
 ponieść skutki (wyrażenie idiomatyczne)",,DICTIONARY2_SOURCE,,GroupId: 1894670
-321621,WORD_NOUN,,KATAKANA,,,-,シュー,,xxx,"xxx
-xxx",,,,GroupId: 2870335
+321621,WORD_NOUN,,KATAKANA,,,-,シュー,,shuu,strzał,sport; skrót; potocznie; ang: shot,DICTIONARY2_SOURCE,"DUPLICATE 167937
+DUPLICATE 299193",GroupId: 2870335
+321622,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,後ろ指を差す,うしろゆびをさす,,ushiro yubi o sasu,"mówić o kimś za jego plecami
+obmawiać
+obgadywać",wyrażenie idiomatyczne; rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2164110
+321623,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,後ろ指をさす,うしろゆびをさす,,ushiro yubi o sasu,"mówić o kimś za jego plecami
+obmawiać
+obgadywać",wyrażenie idiomatyczne; rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2164110
+321624,WORD_VERB_U,,HIRAGANA,,,見やぶる,みやぶる,,miyaburu,"przejrzeć (spisek, kłamstwo itp.)
+mieć bystre oko
+pojmować
+sondować
+przenikać
+odkrywać",,DICTIONARY2_SOURCE,,GroupId: 1604720
+321625,WORD_VERB_U,,HIRAGANA,,,立行く,たちゆく,,tachi yuku,"utrzymać się
+utrzymywać się
+trwać
+zarabiać na życie",,DICTIONARY2_SOURCE,,GroupId: 1551340
+321626,WORD_NOUN,,HIRAGANA,,,消しカス,けしかす,,keshi kasu,"kurz powstały ze ścierania gumką
+pył powstały ze ścierania gumką
+okruchy powstałe ze ścierania gumką",,DICTIONARY2_SOURCE,,GroupId: 2702820
+321627,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,腹くくる,はらをくくる,,hara o kukuru,"przygotować się na najgorsze
+wzmacnianie swojego zdecydowania
+zaakceptować swój los
+przygotować się",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2079440
+321628,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,腹括る,はらをくくる,,hara o kukuru,"przygotować się na najgorsze
+wzmacnianie swojego zdecydowania
+zaakceptować swój los
+przygotować się",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2079440
+321629,WORD_NOUN,,HIRAGANA,,,火遁,かとん,,katon,(sztuka ninja polegająca na) ucieczce przy pomocy ognia lub dymu,,DICTIONARY2_SOURCE,,GroupId: 2869692
+321630,WORD_VERB_U,,HIRAGANA,,,取り散らかす,とりちらかす,,toric hirakasu,"rozrzucać
+pozostawiać w nieładzie
+bałaganić (np. w pokoju)
+pozostawiać rzeczy porozrzucane",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869765
+321631,WORD_VERB_U,,HIRAGANA,,,とり散らかす,とりちらかす,,toric hirakasu,"rozrzucać
+pozostawiać w nieładzie
+bałaganić (np. w pokoju)
+pozostawiać rzeczy porozrzucane",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869765
+321632,WORD_VERB_U,,HIRAGANA,,,取りちらかす,とりちらかす,,toric hirakasu,"rozrzucać
+pozostawiać w nieładzie
+bałaganić (np. w pokoju)
+pozostawiać rzeczy porozrzucane",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869765
+321633,WORD_VERB_U,,HIRAGANA,,,取散らかす,とりちらかす,,toric hirakasu,"rozrzucać
+pozostawiać w nieładzie
+bałaganić (np. w pokoju)
+pozostawiać rzeczy porozrzucane",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869765
+321634,WORD_VERB_U,,HIRAGANA,,,とっ散らかす,とっちらかす,,tocchirakasu,"rozrzucać
+pozostawiać w nieładzie
+bałaganić (np. w pokoju)
+pozostawiać rzeczy porozrzucane",potocznie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869766
+321635,WORD_VERB_U,,HIRAGANA,,,取っ散らかす,とっちらかす,,tocchirakasu,"rozrzucać
+pozostawiać w nieładzie
+bałaganić (np. w pokoju)
+pozostawiać rzeczy porozrzucane",potocznie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2869766
+321636,WORD_ADJECTIVE_NA,,KATAKANA,,,-,サイバネティック,,saibanetikku,cybernetyczny,,DICTIONARY2_SOURCE,,GroupId: 2869885
+321637,WORD_ADJECTIVE_NA,,KATAKANA,,,-,アダルティック,,adarutikku,"dorosły
+dojrzały
+seksowny
+zmysłowy
+erotyczny",,DICTIONARY2_SOURCE,,GroupId: 2869890
+321638,WORD_NOUN,,HIRAGANA,,,症状神経症,しょうじょうしんけいしょう,,shoujou shinkeishou,"nerwica objawowa
+zaburzenie nerwicowe o charakterze objawowym",psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869980
+321639,WORD_NOUN,,HIRAGANA,,,症状精神病,しょうじょうせいしんびょう,,shoujou seishinbyou,"psychoza objawowa
+zaburzenie psychotyczne (spowodowane inną chorobą)
+psychoza wtórna",psychiatria,DICTIONARY2_SOURCE,,GroupId: 2869981
+321640,WORD_NOUN,,HIRAGANA,,,単極性うつ病,たんきょくせいうつびょう,,tankyokusei utsubyou,depresja jednobiegunowa,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2870004
+321641,WORD_NOUN,,HIRAGANA,,,単極性鬱病,たんきょくせいうつびょう,,tankyokusei utsubyou,depresja jednobiegunowa,psychiatria,DICTIONARY2_SOURCE,,GroupId: 2870004
+321642,WORD_NOUN,,HIRAGANA,,,気分症,きぶんしょう,,kibunshou,zaburzenia afektywne (nastroju),psychiatria,DICTIONARY2_SOURCE,,GroupId: 2870006
+321643,WORD_NOUN,,KATAKANA,,,-,サイコパシー,,saikopashii,psychopatia,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2870040
+321644,WORD_NOUN,,HIRAGANA,,,臨床家,りんしょうか,,rinshouka,"lekarz kliniczny
+praktykujący lekarz",,DICTIONARY2_SOURCE,,GroupId: 2870049
+321645,WORD_NOUN,,HIRAGANA,,,平蒔絵,ひらまきえ,,hiramaki e,"hiramaki-e
+technika zdobienia lakierem, polegająca na posypywaniu płaskiego wzoru proszkiem metalicznym i utrwalaniu go cienką warstwą lakieru (wyjaśnienie)",estetyka sztuki,DICTIONARY2_SOURCE,,GroupId: 2870070
+321646,WORD_NOUN,,HIRAGANA,,,職場氏名,しょくばしめい,,shokuba shimei,imię używane w miejscu pracy,np. nazwisko panieńskie,DICTIONARY2_SOURCE,,GroupId: 2870248
+321647,"WORD_EXPRESSION
+WORD_NOUN",,KATAKANA_HIRAGANA,,,カードの切り方,カードのきりかた,,kaado no kiri kata,"jak rozgrywać swoje karty
+strategia gry w karty
+jak ktoś wykorzystuje swoje zasoby lub możliwości (wyrażenie idiomatyczne)
+jak ktoś rozgrywa swoje karty (wyrażenie idiomatyczne)",,DICTIONARY2_SOURCE,,GroupId: 2870273
+321648,WORD_NOUN,,HIRAGANA,,,売りどころ,うりどころ,,uri dokoro,"atut (potocznie)
+mocna strona (potocznie)
+powierzchnia sprzedażowa (rzadko używane określenie)
+stoisko (w sklepie) (rzadko używane określenie)
+miejsce sprzedaży towarów (rzadko używane określenie)
+dobre miejsce na sprzedaż (rzadko używane określenie)
+korzystne miejsce do sprzedaży (rzadko używane określenie)",,DICTIONARY2_SOURCE,DUPLICATE 321650,GroupId: 2870274
+321649,WORD_NOUN,,HIRAGANA,,,売り所,うりどころ,,uri dokoro,"atut (potocznie)
+mocna strona (potocznie)
+powierzchnia sprzedażowa (rzadko używane określenie)
+stoisko (w sklepie) (rzadko używane określenie)
+miejsce sprzedaży towarów (rzadko używane określenie)
+dobre miejsce na sprzedaż (rzadko używane określenie)
+korzystne miejsce do sprzedaży (rzadko używane określenie)",,DICTIONARY2_SOURCE,DUPLICATE 321651,GroupId: 2870274
+321650,WORD_NOUN,,KATAKANA_HIRAGANA,,,売りどころ,ウリどころ,,uri dokoro,"atut (potocznie)
+mocna strona (potocznie)
+powierzchnia sprzedażowa (rzadko używane określenie)
+stoisko (w sklepie) (rzadko używane określenie)
+miejsce sprzedaży towarów (rzadko używane określenie)
+dobre miejsce na sprzedaż (rzadko używane określenie)
+korzystne miejsce do sprzedaży (rzadko używane określenie)",,DICTIONARY2_SOURCE,DUPLICATE 321648,GroupId: 2870274
+321651,WORD_NOUN,,KATAKANA_HIRAGANA,,,売り所,ウリどころ,,uri dokoro,"atut (potocznie)
+mocna strona (potocznie)
+powierzchnia sprzedażowa (rzadko używane określenie)
+stoisko (w sklepie) (rzadko używane określenie)
+miejsce sprzedaży towarów (rzadko używane określenie)
+dobre miejsce na sprzedaż (rzadko używane określenie)
+korzystne miejsce do sprzedaży (rzadko używane określenie)",,DICTIONARY2_SOURCE,DUPLICATE 321649,GroupId: 2870274
+321652,WORD_NOUN,,HIRAGANA,,,売所,うりどころ,,uri dokoro,"atut (potocznie)
+mocna strona (potocznie)
+powierzchnia sprzedażowa (rzadko używane określenie)
+stoisko (w sklepie) (rzadko używane określenie)
+miejsce sprzedaży towarów (rzadko używane określenie)
+dobre miejsce na sprzedaż (rzadko używane określenie)
+korzystne miejsce do sprzedaży (rzadko używane określenie)",,DICTIONARY2_SOURCE,DUPLICATE 321653,GroupId: 2870274
+321653,WORD_NOUN,,KATAKANA_HIRAGANA,,,売所,ウリどころ,,uri dokoro,"atut (potocznie)
+mocna strona (potocznie)
+powierzchnia sprzedażowa (rzadko używane określenie)
+stoisko (w sklepie) (rzadko używane określenie)
+miejsce sprzedaży towarów (rzadko używane określenie)
+dobre miejsce na sprzedaż (rzadko używane określenie)
+korzystne miejsce do sprzedaży (rzadko używane określenie)",,DICTIONARY2_SOURCE,DUPLICATE 321652,GroupId: 2870274
+321654,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,慎重を期す,しんちょうをきす,,shinchou o kisu,"być bardzo ostrożnym
+zachować szczególną ostrożność
+zachować najwyższą ostrożność",,DICTIONARY2_SOURCE,,GroupId: 2870293
+321655,WORD_NOUN,,HIRAGANA,,,運動能力,うんどうのうりょく,,undou nouryoku,"zdolności motoryczne
+ruchliwość
+poruszanie się
+zdolności sportowe (sport)
+umiejętności sportowe (sport)",,DICTIONARY2_SOURCE,,GroupId: 2870307
+321656,"WORD_EXPRESSION
+WORD_ADJECTIVE_F",,HIRAGANA,,,気の遠くなる,きのとおくなる,,ki no tooku naru,"wywołujący omdlenia
+powodujący zawroty głowy
+przytłaczający
+ogłuszający
+oszałamiający",często jako ～ような,DICTIONARY2_SOURCE,,GroupId: 2870309
+321657,"WORD_NOUN
+WORD_NOUN_SUFFIX",,HIRAGANA,,,脅威論,きょういろん,,kyouiron,"teoria zagrożenia
+pogląd, że państwo lub podmiot stanowi zagrożenie",polityka,DICTIONARY2_SOURCE,,GroupId: 2870310
+321658,WORD_NOUN,,HIRAGANA,,,御供水,ごくうすい,,gokuusui,woda ofiarowana bogom i Buddzie,,DICTIONARY2_SOURCE,,GroupId: 2870311
+321659,WORD_NOUN,,HIRAGANA,,,大菱形筋,だいりょうけいきん,,dairyou keikin,mięsień romboidalny większy,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870312
+321660,WORD_NOUN,,HIRAGANA,,,最長筋,さいちょうきん,,saichoukin,najdłuższy mięsień,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870313
+321661,WORD_NOUN,,HIRAGANA,,,小胸筋,しょうきょうきん,,shoukyoukin,mięsień piersiowy mniejszy,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870314
+321662,WORD_NOUN,,HIRAGANA,,,菱形筋,りょうけいきん,,ryoukeikin,mięsień równoległoboczny,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870315
+321663,WORD_NOUN,,HIRAGANA,,,笑筋,しょうきん,,shoukin,"mięsień risorius
+mięsień śmiechowy",anatomia,DICTIONARY2_SOURCE,,GroupId: 2870316
+321664,WORD_NOUN,,KATAKANA_HIRAGANA,,,オトガイ筋,オトガイきん,,otogai kin,mięsień bródkowy,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870317
+321665,WORD_NOUN,,HIRAGANA,,,内側翼突筋,ないそくよくとつきん,,naisokuyokutotsukin,mięsień skrzydłowy przyśrodkowy,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870318
+321666,WORD_NOUN,,KATAKANA_HIRAGANA,,,デュア層,デュアそう,,dyua sou,warstwa Dua,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870319
+321667,WORD_INTERJECTION,,HIRAGANA_EXCEPTION,,,-,くっ,,ku,"dźwięk wyrażający dezaprobatę
+cholera",,DICTIONARY2_SOURCE,,GroupId: 2870321
+321668,WORD_INTERJECTION,,KATAKANA_EXCEPTION,,,-,クッ,,ku,"dźwięk wyrażający dezaprobatę
+cholera",,DICTIONARY2_SOURCE,,GroupId: 2870321
+321669,WORD_INTERJECTION,,HIRAGANA_EXCEPTION,,,-,くッ,,ku,"dźwięk wyrażający dezaprobatę
+cholera",,DICTIONARY2_SOURCE,,GroupId: 2870321
+321670,WORD_INTERJECTION,,HIRAGANA_EXCEPTION,,,-,んっ,,n,"mm
+hm
+ngh
+hm?
+he?",,DICTIONARY2_SOURCE,,GroupId: 2870322
+321671,WORD_INTERJECTION,,HIRAGANA_EXCEPTION,,,-,んんっ,,nn,"mm
+hm
+ngh
+hm?
+he?",,DICTIONARY2_SOURCE,,GroupId: 2870322
+321672,WORD_INTERJECTION,,HIRAGANA_KATAKANA,,,-,んーっ,,nn,"mm
+hm
+ngh
+hm?
+he?",,DICTIONARY2_SOURCE,,GroupId: 2870322
+321673,WORD_INTERJECTION,,HIRAGANA_EXCEPTION,,,-,ん〜っ,,n,"mm
+hm
+ngh
+hm?
+he?",,DICTIONARY2_SOURCE,,GroupId: 2870322
+321674,WORD_NOUN,,HIRAGANA,,,上後鋸筋,じょうこうきょきん,,joukoukyokin,mięsień zębaty tylny górny,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870323
+321675,WORD_NOUN,,HIRAGANA,,,内腹斜筋,ないふくしゃきん,,naifuku shakin,mięsień wewnętrzny skośny brzucha,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870324
+321676,WORD_NOUN,,HIRAGANA,,,腰方形筋,ようほうけいきん,,youhoukeikin,mięsień czworoboczny lędźwi,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870325
+321677,WORD_NOUN,,HIRAGANA,,,後脛骨筋,こうけいこつきん,,koukeikotsukin,mięsień piszczelowy tylny,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870326
+321678,WORD_NOUN,,HIRAGANA,,,横行小管,おうこうしょうかん,,oukou shoukan,kanalik poprzeczny,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870327
+321679,WORD_NOUN,,HIRAGANA,,,鎖骨下筋,さこつかきん,,sakotsukakin,mięsień podobojczykowy,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870328
+321680,WORD_NOUN,,HIRAGANA,,,腸肋筋,ちょうろくきん,,chourokukin,mięsień lędźwiowo-żebrowy,anatomia,DICTIONARY2_SOURCE,,GroupId: 2870329
+321681,WORD_NOUN,,HIRAGANA,,,頭半棘筋,とうはんきょくきん,,touhankyokukin,"mięsień półkręgowy głowy
+???",anatomia,DICTIONARY2_SOURCE,,GroupId: 2870330
+321682,WORD_NOUN,,HIRAGANA,,,回旋筋腱板,かいせんきんけんばん,,kaisenkin kenban,"pierścień rotatorów
+stożek rotatorów
+pas rotacyjny barku (grupa mięśni)",anatomia,DICTIONARY2_SOURCE,,GroupId: 2870331
+321683,WORD_NOUN,,HIRAGANA,,,外閉鎖筋,がいへいさきん,,gaiheisakin,"mięsień zasłaniacz zewnętrzny
+???",anatomia,DICTIONARY2_SOURCE,,GroupId: 2870332
+321684,WORD_NOUN,,KATAKANA_HIRAGANA,,,ダンプ自動車,ダンプじどうしゃ,,danpu jidousha,wywrotka,rzadko używane określenie; rodzaj ciężarówki,DICTIONARY2_SOURCE,,GroupId: 2870336
+321685,WORD_NOUN,,HIRAGANA,,,脳水腫,のうすいしゅ,,nousuishu,wodogłowie,medycyna; przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 2870337
+321686,WORD_NOUN,,KATAKANA,,,-,マッチアップ,,macchiappu,"dobieranie
+dopasowanie",ang: matchup,DICTIONARY2_SOURCE,,GroupId: 2870338
+321687,WORD_NOUN,,KATAKANA,,,-,ピッチアップ,,picchiappu,pitch-up,lotnictwo,DICTIONARY2_SOURCE,,GroupId: 2870339
+321688,WORD_NOUN,,HIRAGANA,,,空力音,くうりきおん,,kuurikion,"hałas aerodynamiczny
+szum aerodynamiczny",fizyka,DICTIONARY2_SOURCE,,GroupId: 2870341
+321689,WORD_NOUN,,KATAKANA,,,-,アズーリ,,azuuri,Azzurri,"grupa; przydomek włoskich reprezentacji narodowych, zwłaszcza piłkarskich",DICTIONARY2_SOURCE,,GroupId: 5747639
