@@ -110,7 +110,6 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	private static final int CSV_COLUMNS = 11; 
-	private static final int GENERATED_ENTRY_ID_START = 7000001;
 	
 	private static Dictionary2Helper dictionary2Helper;
 	
@@ -3385,10 +3384,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	public void generateMissingPolishEntriesFromOldPolishJapaneseDictionary(List<PolishJapaneseEntry> oldPolishJapaneseEntriesList) throws Exception {
 		
 		// tworzymy lokalny cache
-		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(oldPolishJapaneseEntriesList);
-		
-		// licznik wygenerowanych wpisow pochodzacych ze starego slownika, a ktorego nie ma w angielskim slowniku
-		int generatedEntryIdCounter = GENERATED_ENTRY_ID_START;		
+		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryList = Helper.cachePolishJapaneseEntryList(oldPolishJapaneseEntriesList);		
 		
 		// obiekt do mapowania typow
 		DictionaryEntryJMEdictEntityMapper dictionaryEntryJMEdictEntityMapper = new DictionaryEntryJMEdictEntityMapper();
@@ -3405,7 +3401,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				// generujemy nowy wpis
 				Entry newGeneratedEntry = new Entry();
 				
-				newGeneratedEntry.setEntryId(generatedEntryIdCounter);
+				newGeneratedEntry.setEntryId(7000000 + polishJapaneseEntry.getId());
 				
 				if (polishJapaneseEntry.isKanjiExists() == true) {					
 					KanjiInfo kanjiInfo = new KanjiInfo();
@@ -3464,8 +3460,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				// dodajemy wygenerowany wpis
 				addEntryToPolishDictionary(newGeneratedEntry);
 								
-				generatedEntryIdCounter++;
-				
 				continue;
 			}
 						
