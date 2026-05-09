@@ -1739,6 +1739,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				//
 								
+				// FM_FIXME: obsluga lsource w dwoch miejscach, a po zakonczeniu migracji usunac z tego miejsca
 				{
 					String languageSourceListString = csvReader.get(9);
 					CsvReader languageSourceCsvReader = new CsvReader(new StringReader(languageSourceListString), '|');
