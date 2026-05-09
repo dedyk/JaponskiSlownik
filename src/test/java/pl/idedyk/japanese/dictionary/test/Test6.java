@@ -15,6 +15,7 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
@@ -25,38 +26,37 @@ public class Test6 {
 
 		// PAMIETAJ: // -Djdk.xml.entityExpansionLimit=0 !!!!
 		
-		// testJMdict();
+		testJMdict();
 		
 		// testJMnedict();
 		
-		testKanjiDict2();
+		// testKanjiDict2();
 	}
 	
 	@SuppressWarnings("unused")
 	private static void testJMdict() throws Exception {
 		
-		File jmdictFile = new File("../JapaneseDictionary_additional/JMdict");
+		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
+		
+		//
+		
+		File jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
 
 		// walidacja xsd
-
 		SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 		
-		Schema schema = factory.newSchema(new File("src/main/resources/pl/idedyk/japanese/dictionary2/jmdict/xsd/JMdict.xsd"));
+		Schema schema = factory.newSchema(Test6.class.getResource(("/pl/idedyk/japanese/dictionary2/jmdict/xsd/JMdict.xsd")));
 		
 		Validator validator = schema.newValidator();
 		
-		System.out.println("Validate");
-		
+		System.out.println("Validate");		
 		validator.validate(new StreamSource(jmdictFile));
-
 		System.out.println("Load");
 
-		// wczytywanie
-		
+		// wczytywanie		
 		JAXBContext jaxbContext = JAXBContext.newInstance(JMdict.class);              
 
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-		
 		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
@@ -64,7 +64,25 @@ public class Test6 {
 		//
 
 		JMdict jmdict = (JMdict) jaxbUnmarshaller.unmarshal(jmdictFile);
+		
+		//
+		
+		jmdict.getEntryList().removeIf(r -> {
+			try {
+				return dictionaryHelper.getEntryFromPolishDictionary(r.getEntryId()) == null;
+				
+			} catch (Exception e) {
+				throw new RuntimeException(e);
+			}			
+		});
+		
+		System.out.println("Save");
+		
+		jaxbMarshaller.marshal(jmdict, new File("/tmp/a/JMdict_e_saved"));
+		
+		
 
+		/*
 		for (JMdict.Entry entry : jmdict.getEntryList()) {
 			
 			if (entry.getEntryId().intValue() == 1000260) {
@@ -97,6 +115,7 @@ public class Test6 {
 			
 			//System.out.println("--------");
 		}
+		*/
 		
 		/*
 		//
