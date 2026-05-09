@@ -1,15 +1,13 @@
 package pl.idedyk.japanese.dictionary.test;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.namespace.QName;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -17,8 +15,7 @@ import javax.xml.validation.Validator;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class Test6 {
 
@@ -80,6 +77,40 @@ public class Test6 {
 		
 		jaxbMarshaller.marshal(jmdict, new File("/tmp/a/JMdict_e_saved"));
 		
+		//
+		
+		List<Entry> allPolishDictionaryEntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
+		
+		allPolishDictionaryEntryList.sort(new Comparator<Entry>() {
+
+			@Override
+			public int compare(Entry e1, Entry e2) {
+				return e1.getEntryId().compareTo(e2.getEntryId());
+			}
+		});
+		
+		for (Entry entry : allPolishDictionaryEntryList) {
+			
+			entry.getReadingInfoList().forEach(f -> {
+				f.getKana().setKanaType(null);
+				f.getKana().setRomaji(null);
+			});
+			
+			entry.getSenseList().forEach(c -> {
+				c.getGlossList().removeIf(r -> "pol".equals(r.getLang()) == true);
+				
+				c.getAdditionalInfoList().removeIf(r -> "pol".equals(r.getLang()) == true);
+				c.getAdditionalInfoList().forEach(f -> {
+					f.setLang(null);
+				});
+			});
+		}
+		
+		JMdict polishJmdict = new JMdict();
+		
+		polishJmdict.getEntryList().addAll(allPolishDictionaryEntryList);
+		
+		dictionaryHelper.saveJMdictAsXml(polishJmdict, "/tmp/a/PolishJMdict_e_saved");
 		
 
 		/*
