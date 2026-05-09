@@ -37,7 +37,7 @@ public class Test6 {
 		
 		//
 		
-		File jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+		File jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e_NG");
 
 		// walidacja xsd
 		SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);

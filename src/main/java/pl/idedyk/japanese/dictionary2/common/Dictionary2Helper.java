@@ -106,6 +106,8 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfoKanaType;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Xref;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.XrefType;
 
 public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
@@ -1352,7 +1354,35 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				csvWriter.write(Helper.convertEnumListToString(sense.getPartOfSpeechList())); columnsNo++;
 				
-				csvWriter.write(Helper.convertListToString(sense.getReferenceToAnotherKanjiKanaList())); columnsNo++;
+				List<Xref> referenceToAnotherKanjiKanaList = sense.getReferenceToAnotherKanjiKanaList();
+				
+				StringWriter referenceToAnotherKanjiKanaListCsvWriterString = new StringWriter();				
+				CsvWriter referenceToAnotherKanjiKanaListCsvWriter = new CsvWriter(referenceToAnotherKanjiKanaListCsvWriterString, '|');
+				
+				for (Xref xref : referenceToAnotherKanjiKanaList) {					
+					String xrefType = xref.getType() != null ? xref.getType().value() : "-"; 
+					String xrefDict = xref.getDict() != null ? xref.getDict() : "-";
+					String xrefSeq = xref.getSeq() != null ? xref.getSeq().toString() : "-";  
+					String xrefSno = xref.getSno() != null ? xref.getSno().toString() : "-"; 
+					String xrefXKanji = xref.getXKanji() != null ? xref.getXKanji() : "-";
+					String xrefXKana = xref.getXKana() != null ? xref.getXKana() : "-";
+					String xrefValue = xref.getValue() != null ?  xref.getValue() : "-";
+										
+					referenceToAnotherKanjiKanaListCsvWriter.write(xrefType);
+					referenceToAnotherKanjiKanaListCsvWriter.write(xrefDict);
+					referenceToAnotherKanjiKanaListCsvWriter.write(xrefSeq);
+					referenceToAnotherKanjiKanaListCsvWriter.write(xrefSno);
+					referenceToAnotherKanjiKanaListCsvWriter.write(xrefXKanji);
+					referenceToAnotherKanjiKanaListCsvWriter.write(xrefXKana);
+					referenceToAnotherKanjiKanaListCsvWriter.write(xrefValue);
+					
+					referenceToAnotherKanjiKanaListCsvWriter.endRecord();					
+				}
+				
+				referenceToAnotherKanjiKanaListCsvWriter.close();
+				csvWriter.write(referenceToAnotherKanjiKanaListCsvWriterString.toString()); columnsNo++;
+				
+				//
 				
 				csvWriter.write(Helper.convertListToString(sense.getAntonymList())); columnsNo++;
 				
@@ -1362,13 +1392,11 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				//
 				
 				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
-
-				StringWriter languageSourceCsvWriterString = new StringWriter();
 				
+				StringWriter languageSourceCsvWriterString = new StringWriter();
 				CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceCsvWriterString, '|');
 				
-				for (LanguageSource languageSource : languageSourceList) {
-										
+				for (LanguageSource languageSource : languageSourceList) {										
 					String languageSourceLsType = languageSource.getLsType() != null ? languageSource.getLsType().value() : "-";
 					String languageSourceWasei = languageSource.getLsWasei() != null ? languageSource.getLsWasei().value() : "-";
 					String languageSourceLang = languageSource.getLang() != null ? languageSource.getLang() : "-";
@@ -1382,8 +1410,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					languageSourceCsvWriter.endRecord();
 				}
 				
-				languageSourceCsvWriter.close();
-				
+				languageSourceCsvWriter.close();				
 				csvWriter.write(languageSourceCsvWriterString.toString()); columnsNo++;
 				
 				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList())); columnsNo++;
@@ -1645,7 +1672,53 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 
 				//
 				
-				sense.getReferenceToAnotherKanjiKanaList().addAll(Helper.convertStringToList(csvReader.get(5)));
+				{
+					String referenceToAnotherKanjiKanaListString = csvReader.get(5);
+					CsvReader referenceToAnotherKanjiKanaListStringCsvReader = new CsvReader(new StringReader(referenceToAnotherKanjiKanaListString), '|');
+					
+					while (referenceToAnotherKanjiKanaListStringCsvReader.readRecord()) {
+						
+						XrefType xrefType = null; 
+						String xrefDict = null;
+						Integer xrefSeq = null;  
+						Integer xrefSno = null; 
+						String xrefXKanji = null;
+						String xrefXKana = null;
+						String xrefValue = null;
+						
+						if (referenceToAnotherKanjiKanaListStringCsvReader.getColumnCount() == 1) { // stary xref, FM_FIXME: chyba trzeba to usunac po zakonczeniu migracji na NG
+							xrefValue = referenceToAnotherKanjiKanaListStringCsvReader.get(0).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(0) : null;
+														
+						} else {
+							xrefType = referenceToAnotherKanjiKanaListStringCsvReader.get(0).equals("-") == false ? XrefType.fromValue(referenceToAnotherKanjiKanaListStringCsvReader.get(0)) : null; 
+							xrefDict = referenceToAnotherKanjiKanaListStringCsvReader.get(1).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(1) : null;
+							xrefSeq = referenceToAnotherKanjiKanaListStringCsvReader.get(2).equals("-") == false ? Integer.parseInt(referenceToAnotherKanjiKanaListStringCsvReader.get(2)) : null;  
+							xrefSno = referenceToAnotherKanjiKanaListStringCsvReader.get(3).equals("-") == false ? Integer.parseInt(referenceToAnotherKanjiKanaListStringCsvReader.get(3)) : null; 
+							xrefXKanji = referenceToAnotherKanjiKanaListStringCsvReader.get(4).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(4) : null;
+							xrefXKana = referenceToAnotherKanjiKanaListStringCsvReader.get(5).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(5) : null;
+							xrefValue = referenceToAnotherKanjiKanaListStringCsvReader.get(6).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(6) : null;							
+						}
+						
+						//
+						
+						Xref xref = new Xref();
+						
+						xref.setType(xrefType);
+						xref.setDict(xrefDict);
+						xref.setSeq(xrefSeq);
+						xref.setSno(xrefSno);
+						xref.setXKanji(xrefXKanji);
+						xref.setXKana(xrefXKana);
+						xref.setValue(xrefValue);
+												
+						//
+						
+						sense.getReferenceToAnotherKanjiKanaList().add(xref);
+					}					
+					
+					referenceToAnotherKanjiKanaListStringCsvReader.close();
+				}
+								
 				sense.getAntonymList().addAll(Helper.convertStringToList(csvReader.get(6)));
 				
 				//
@@ -1668,7 +1741,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 								
 				{
 					String languageSourceListString = csvReader.get(9);
-					
 					CsvReader languageSourceCsvReader = new CsvReader(new StringReader(languageSourceListString), '|');
 					
 					while (languageSourceCsvReader.readRecord()) {
