@@ -13,11 +13,14 @@ import org.apache.commons.cli.Options;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.SaveEntryListAsHumanCsvConfig;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class UpdateProposalPolishJapaneseTranslates {
 	
 	public static void main(String[] args) throws Exception {
+		
+		// FM_FIXME: sprawdzic, czy to dziala
 
 		// parser lini polecen
 		CommandLineParser commandLineParser = new DefaultParser();
@@ -65,13 +68,13 @@ public class UpdateProposalPolishJapaneseTranslates {
 		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 
 		// wczytywanie listy zmienionych elementow
-		List<Entry> entryListFromFileName = dictionaryHelper.readEntryListFromHumanCsv(fileName.getAbsolutePath());
+		JMdict jmdictFromFileName = dictionaryHelper.readEntryListFromHumanCsv(fileName.getAbsolutePath());
 		
 		List<Entry> resultList = new ArrayList<>();
 		
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
 		
-		for (Entry entryToCompare : entryListFromFileName) {
+		for (Entry entryToCompare : jmdictFromFileName.getEntryList()) {
 			
 			// pobieramy slowo z calego slownika
 			Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(entryToCompare.getEntryId());

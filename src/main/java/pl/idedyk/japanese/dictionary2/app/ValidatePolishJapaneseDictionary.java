@@ -6,6 +6,8 @@ public class ValidatePolishJapaneseDictionary {
 
 	public static void main(String[] args) throws Exception {
 		
+		// FM_FIXME: sprawdzic, czy to dziala
+		
 		// wczytywanie pomocnika slownikowego
 		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 

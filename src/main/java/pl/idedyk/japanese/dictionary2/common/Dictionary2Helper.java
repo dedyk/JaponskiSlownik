@@ -642,7 +642,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(fileName), ',');
 		
 		// zapisanie naglowka
-		new EntryPartConverterHeader().writeToCsv(config, csvWriter, jmdict);
+		if (jmdict.getVersion() != null || jmdict.getCreated() != null) {
+			new EntryPartConverterHeader().writeToCsv(config, csvWriter, jmdict);	
+		}		
 		
 		List<Entry> entryList = jmdict.getEntryList();
 		
@@ -1435,6 +1437,12 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
 			
+			List<LanguageSource> languageSourceList = entry.getLanguageSourceList__();
+			
+			if (languageSourceList.size() == 0) { // w tym rekordzie nie ma niczego innego, wiec aby zachowac wieksza zgodnosc z poprzednim zapisem nie tworzymy tego rekordu
+				return;
+			}
+			
 			int columnsNo = 0;
 			
 			if (config.shiftCells == true) {
@@ -1443,8 +1451,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			csvWriter.write(EntryHumanCsvFieldType.COMMON.name()); columnsNo++;		
 			csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
-
-			List<LanguageSource> languageSourceList = entry.getLanguageSourceList__();
 			
 			StringWriter languageSourceCsvWriterString = new StringWriter();
 			CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceCsvWriterString, '|');
@@ -2973,6 +2979,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	public boolean updatePolishJapaneseEntry(Entry polishJapaneseEntry, Entry jmdictEntry, EntryAdditionalData entryAdditionalData) {
 		
+		// FM_FIXME: tu bedzie zmiana
+		// FM_FIXME: obsluga info, version, created
+		
 		boolean needManuallyChange = false;
 		
 		// kanji mozna zaktualizowac bezwarunkowo		
@@ -3003,7 +3012,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				jmdictEntryReadingInfo.getKana().setRomaji(readingInfoInPolishJapaneseEntry.getKana().getRomaji());
 				
 			} else {
-				
 				needManuallyChange = true;
 				
 				// generujemy kana type i romaji
@@ -3012,7 +3020,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			// i dodajemy
 			polishJapaneseEntry.getReadingInfoList().add(jmdictEntryReadingInfo);			
-		}		
+		}
+		
+		// aktualizacja language source, czyscimy bezwarunkowo i dodajemy nowe
+		// FM_FIXME: sprawdzic, czy to dziala w polaczeniu z sense language source
+		// ewentualna roznica zostanie wykrywa podczas liczenia hash-u sense		
+		polishJapaneseEntry.getLanguageSourceList__().clear();
+		polishJapaneseEntry.getLanguageSourceList__().addAll(jmdictEntry.getLanguageSourceList__());		
 		
 		// aktualizacja sense
 		List<Sense> polishJapaneseEntrySenseList = new ArrayList<>(polishJapaneseEntry.getSenseList());
@@ -3037,11 +3051,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoEngList = null;
 			
 			// bierzmy angielskie tlumaczenia i informacje dodatkowe ze starego sense
-			if (polishJapaneseEntrySense != null) {
-				
+			if (polishJapaneseEntrySense != null) {				
 				polishJapaneseEntrySenseGlossEngList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
-				polishJapaneseEntrySenseAdditionalInfoEngList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
-				
+				polishJapaneseEntrySenseAdditionalInfoEngList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());				
 			}
 			
 			// liczymy hash dla znaczenia
@@ -3053,8 +3065,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			List<Gloss> jmdictEntrySenseGlossEngList = null;
 			List<SenseAdditionalInfo> jmdictEntrySenseAdditionalInfoEngList = null;
 			
-			if (jmdictEntrySense != null) {
-				
+			if (jmdictEntrySense != null) {				
 				// bierzmy angielskie tlumaczenia i informacje dodatkowe z nowego sense
 				jmdictEntrySenseGlossEngList = jmdictEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
 				jmdictEntrySenseAdditionalInfoEngList = jmdictEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
@@ -3072,7 +3083,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			// porownujemy hash
 			if (polishJapaneseEntrySenseHash.equals(jmdictEntrySenseHash) == true) { // hash ten sam, nie bylo zmiany znaczenia w nowym slowniku
-								
+				
 				// bierzemy nowy sense + aktualizuje polskie znaczenie
 				List<Gloss> polishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
 				List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
@@ -3106,7 +3117,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(jmdictEntry.getEntryId());
 					
 					if (entryAdditionalDataEntry == null) {
-						
 						entryAdditionalDataEntry = new EntryAdditionalDataEntry();
 						
 						entryAdditionalData.jmdictEntryAdditionalDataEntryMap.put(jmdictEntry.getEntryId(), entryAdditionalDataEntry);
@@ -3323,6 +3333,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	}
 	
 	public Entry updateOnlyPolishJapaneseTranslate(Entry entryFromPolishDictionary, Entry entryToCompare, EntryAdditionalData entryAdditionalData) {
+		
+		// FM_FIXME: poprawic
 		
 		// tworzymy klona, aby nie pracowac na zrodlowym obiekcie
 		entryFromPolishDictionary = (Entry)SerializationUtils.clone(entryFromPolishDictionary);
