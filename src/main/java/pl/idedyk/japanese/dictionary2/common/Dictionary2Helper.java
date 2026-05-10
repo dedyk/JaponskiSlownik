@@ -142,7 +142,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		//
 				
-		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e");
+		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e_NG");
 		
 		//
 		

@@ -14,6 +14,7 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
@@ -33,10 +34,45 @@ public class Test6 {
 	@SuppressWarnings("unused")
 	private static void testJMdict() throws Exception {
 		
-		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
+		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
 		
 		//
 		
+		JMdict englishJMDict = dictionary2Helper.getJMdict();		
+		dictionary2Helper.saveJMdictAsXml(englishJMDict, "/tmp/a/englishJMDict.xml");
+		
+		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
+		dictionary2Helper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "/tmp/a/englishJMDict.csv", englishJMDict.getEntryList(), new EntryAdditionalData());
+		
+		//
+		
+		List<Entry> englishEntryListFromHumanCsv = dictionary2Helper.readEntryListFromHumanCsv("/tmp/a/englishJMDict.csv");
+				
+		for (Entry entry : englishEntryListFromHumanCsv) {
+			
+			entry.getReadingInfoList().forEach(f -> {
+				f.getKana().setKanaType(null);
+				f.getKana().setRomaji(null);
+			});
+			
+			entry.getSenseList().forEach(c -> {
+				c.getGlossList().removeIf(r -> "pol".equals(r.getLang()) == true);
+				
+				c.getAdditionalInfoList().removeIf(r -> "pol".equals(r.getLang()) == true);
+				/*
+				c.getAdditionalInfoList().forEach(f -> {
+					f.setLang(null);
+				});
+				*/
+			});
+		}
+		
+		JMdict newEnglishJMDictFromCsv = new JMdict();		
+		newEnglishJMDictFromCsv.getEntryList().addAll(englishEntryListFromHumanCsv);
+		
+		dictionary2Helper.saveJMdictAsXml(newEnglishJMDictFromCsv, "/tmp/a/englishJMDict2.xml");
+		
+		/*
 		File jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e_NG");
 
 		// walidacja xsd
@@ -111,7 +147,7 @@ public class Test6 {
 		polishJmdict.getEntryList().addAll(allPolishDictionaryEntryList);
 		
 		dictionaryHelper.saveJMdictAsXml(polishJmdict, "/tmp/a/PolishJMdict_e_saved");
-		
+		*/
 
 		/*
 		for (JMdict.Entry entry : jmdict.getEntryList()) {
