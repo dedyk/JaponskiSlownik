@@ -1599,22 +1599,31 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				StringWriter referenceToAnotherKanjiKanaListCsvWriterString = new StringWriter();				
 				CsvWriter referenceToAnotherKanjiKanaListCsvWriter = new CsvWriter(referenceToAnotherKanjiKanaListCsvWriterString, '|');
 				
-				for (Xref xref : referenceToAnotherKanjiKanaList) {					
-					String xrefType = xref.getType() != null ? xref.getType().value() : "-"; 
-					String xrefDict = xref.getDict() != null ? xref.getDict() : "-";
-					String xrefSeq = xref.getSeq() != null ? xref.getSeq().toString() : "-";  
-					String xrefSno = xref.getSno() != null ? xref.getSno().toString() : "-"; 
-					String xrefXKanji = xref.getXKanji() != null ? xref.getXKanji() : "-";
-					String xrefXKana = xref.getXKana() != null ? xref.getXKana() : "-";
-					String xrefValue = xref.getValue() != null ?  xref.getValue() : "-";
-										
-					referenceToAnotherKanjiKanaListCsvWriter.write(xrefType);
-					referenceToAnotherKanjiKanaListCsvWriter.write(xrefDict);
-					referenceToAnotherKanjiKanaListCsvWriter.write(xrefSeq);
-					referenceToAnotherKanjiKanaListCsvWriter.write(xrefSno);
-					referenceToAnotherKanjiKanaListCsvWriter.write(xrefXKanji);
-					referenceToAnotherKanjiKanaListCsvWriter.write(xrefXKana);
-					referenceToAnotherKanjiKanaListCsvWriter.write(xrefValue);
+				for (Xref xref : referenceToAnotherKanjiKanaList) {
+					
+					if (xref.getType() == null) { // stary format odnosnika
+						String xrefValue = xref.getValue() != null ?  xref.getValue() : "-";
+						
+						referenceToAnotherKanjiKanaListCsvWriter.write(xrefValue);
+						
+					} else { // nowy format
+						
+						String xrefType = xref.getType() != null ? xref.getType().value() : "-"; 
+						String xrefDict = xref.getDict() != null ? xref.getDict() : "-";
+						String xrefSeq = xref.getSeq() != null ? xref.getSeq().toString() : "-";  
+						String xrefSno = xref.getSno() != null ? xref.getSno().toString() : "-"; 
+						String xrefXKanji = xref.getXKanji() != null ? xref.getXKanji() : "-";
+						String xrefXKana = xref.getXKana() != null ? xref.getXKana() : "-";
+						String xrefValue = xref.getValue() != null ?  xref.getValue() : "-";
+											
+						referenceToAnotherKanjiKanaListCsvWriter.write(xrefType);
+						referenceToAnotherKanjiKanaListCsvWriter.write(xrefDict);
+						referenceToAnotherKanjiKanaListCsvWriter.write(xrefSeq);
+						referenceToAnotherKanjiKanaListCsvWriter.write(xrefSno);
+						referenceToAnotherKanjiKanaListCsvWriter.write(xrefXKanji);
+						referenceToAnotherKanjiKanaListCsvWriter.write(xrefXKana);
+						referenceToAnotherKanjiKanaListCsvWriter.write(xrefValue);
+					}
 					
 					referenceToAnotherKanjiKanaListCsvWriter.endRecord();					
 				}
