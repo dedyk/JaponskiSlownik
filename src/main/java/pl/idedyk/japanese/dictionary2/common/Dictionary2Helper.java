@@ -6,6 +6,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -26,6 +28,9 @@ import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -172,7 +177,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 	//
 	
-	private File polishDictionaryFile;		
+	private File polishDictionaryFile;
+	private JMdict polishJmdict = null;
 	private Map<Integer, JMdict.Entry> polishDictionaryEntryListMap;
 	
 	//
@@ -616,9 +622,14 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 	}
 	
-	public void saveEntryListAsHumanCsv(SaveEntryListAsHumanCsvConfig config, String fileName, List<Entry> entryList, EntryAdditionalData entryAdditionalData) throws Exception {
+	public void saveEntryListAsHumanCsv(SaveEntryListAsHumanCsvConfig config, String fileName, JMdict jmdict, EntryAdditionalData entryAdditionalData) throws Exception {
 		
 		CsvWriter csvWriter = new CsvWriter(new FileWriter(fileName), ',');
+		
+		// zapisanie naglowka
+		new EntryPartConverterHeader().writeToCsv(config, csvWriter, jmdict);
+		
+		List<Entry> entryList = jmdict.getEntryList();
 		
 		for (Entry entry : entryList) {
 			
@@ -724,8 +735,11 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return kanaType;
 	}
 	
-	public List<Entry> readEntryListFromHumanCsv(String fileName) throws Exception {
+	public JMdict readEntryListFromHumanCsv(String fileName) throws Exception {
 		
+		JMdict jmdict = new JMdict();
+		
+		EntryPartConverterHeader entryPartConverterHeader = new EntryPartConverterHeader();
 		EntryPartConverterBegin entryPartConverterBegin = new EntryPartConverterBegin();
 		EntryPartConverterEnd entryPartConverterEnd = new EntryPartConverterEnd();
 		EntryPartConverterKanji entryPartConverterKanji = new EntryPartConverterKanji();
@@ -739,9 +753,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		CsvReader csvReader = new CsvReader(new FileReader(fileName), ',');
 				
 		//
-		
-		List<Entry> result = new ArrayList<>();
-		
+				
 		Entry newEntry = null;
 		
 		while (csvReader.readRecord()) {
@@ -754,7 +766,11 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
-			if (fieldType == EntryHumanCsvFieldType.BEGIN) { // nowy rekord
+			if (fieldType == EntryHumanCsvFieldType.HEADER) { // rekord z naglowkiem
+								
+				entryPartConverterHeader.parseCsv(csvReader, jmdict);
+			
+			} else if (fieldType == EntryHumanCsvFieldType.BEGIN) { // nowy rekord
 				
 				newEntry = new Entry();
 				
@@ -764,7 +780,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				entryPartConverterEnd.parseCsv(csvReader, newEntry);
 				
-				result.add(newEntry);
+				jmdict.getEntryList().add(newEntry);
 				
 			} else if (fieldType == EntryHumanCsvFieldType.KANJI) { // kanji
 				
@@ -797,7 +813,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		csvReader.close();
 		
-		return result;
+		//
+		
+		return jmdict;
 	}
 	
 	public void sortJMdict(JMdict newJMdict) {
@@ -1094,6 +1112,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	private enum EntryHumanCsvFieldType {
 		
+		HEADER,
+		
 		BEGIN,
 		
 		KANJI,
@@ -1114,6 +1134,59 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	}
 	
 	//
+	
+	private class EntryPartConverterHeader{
+
+		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, JMdict jmdict) throws IOException {
+			
+			int columnsNo = 0;
+			
+			if (config.shiftCells == true) {
+				
+				if (config.shiftCellsGenerateIds == false) {
+					csvWriter.write(""); columnsNo++;
+					
+				} else {
+					csvWriter.write(String.valueOf(config.shiftCellsGenerateIdsId)); columnsNo++;
+					
+					config.shiftCellsGenerateIdsId++;
+				}
+			}
+			
+			csvWriter.write(EntryHumanCsvFieldType.HEADER.name()); columnsNo++;
+			csvWriter.write(jmdict.getVersion()); columnsNo++;
+			
+			LocalDate createdAsLocalDate = LocalDate.of(
+					jmdict.getCreated().getYear(), 
+					jmdict.getCreated().getMonth(), 
+					jmdict.getCreated().getDay());
+			
+			csvWriter.write(createdAsLocalDate.format(DateTimeFormatter.ISO_LOCAL_DATE)); columnsNo++;
+						
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS + (config.shiftCells == true ? 1 : 0); ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
+			csvWriter.endRecord();
+		}
+
+		public void parseCsv(CsvReader csvReader, JMdict jmdict) throws IOException, DatatypeConfigurationException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.HEADER) {
+				throw new RuntimeException(fieldType.name());
+			}
+						
+			jmdict.setVersion(csvReader.get(1));
+			
+			LocalDate createdAsLocalDate = LocalDate.parse(csvReader.get(2), DateTimeFormatter.ISO_LOCAL_DATE);			
+			XMLGregorianCalendar created = DatatypeFactory.newInstance().newXMLGregorianCalendar(createdAsLocalDate.toString());
+				
+			jmdict.setCreated(created);
+		}
+	}
 			
 	private class EntryPartConverterBegin {
 
@@ -2152,9 +2225,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			polishDictionaryEntryListMap = new LinkedHashMap<>();
 			
-			List<Entry> polishDictionaryEntryList = readEntryListFromHumanCsv(polishDictionaryFile.getAbsolutePath());
-						
-			for (Entry entry : polishDictionaryEntryList) {
+			polishJmdict = readEntryListFromHumanCsv(polishDictionaryFile.getAbsolutePath());
+									
+			for (Entry entry : polishJmdict.getEntryList()) {
 				polishDictionaryEntryListMap.put(entry.getEntryId(), entry);
 			}
 		}		

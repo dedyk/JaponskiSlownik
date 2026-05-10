@@ -53,13 +53,13 @@ public class Test6 {
 		dictionary2Helper.saveJMdictAsXml(englishJMDict, "/tmp/a/englishJMDict.xml");
 		
 		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
-		dictionary2Helper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "/tmp/a/englishJMDict.csv", englishJMDict.getEntryList(), new EntryAdditionalData());
+		dictionary2Helper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "/tmp/a/englishJMDict.csv", englishJMDict, new EntryAdditionalData());
 		
 		//
 		
-		List<Entry> englishEntryListFromHumanCsv = dictionary2Helper.readEntryListFromHumanCsv("/tmp/a/englishJMDict.csv");
+		JMdict newEnglishJMDictFromCsv = dictionary2Helper.readEntryListFromHumanCsv("/tmp/a/englishJMDict.csv");
 				
-		for (Entry entry : englishEntryListFromHumanCsv) {
+		for (Entry entry : newEnglishJMDictFromCsv.getEntryList()) {
 			
 			entry.getReadingInfoList().forEach(f -> {
 				f.getKana().setKanaType(null);
@@ -77,10 +77,7 @@ public class Test6 {
 				*/
 			});
 		}
-		
-		JMdict newEnglishJMDictFromCsv = new JMdict();		
-		newEnglishJMDictFromCsv.getEntryList().addAll(englishEntryListFromHumanCsv);
-		
+				
 		dictionary2Helper.saveJMdictAsXml(newEnglishJMDictFromCsv, "/tmp/a/englishJMDict2.xml");
 		
 		//
