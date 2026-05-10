@@ -669,7 +669,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		// reading
 		new EntryPartConverterReading().writeToCsv(config, csvWriter, entry);
-		
+
+		// common
+		new EntryPartConverterCommon().writeToCsv(config, csvWriter, entry);
+
 		// sense
 		new EntryPartConverterSense().writeToCsv(config, csvWriter, entry, entryAdditionalData);
 				
@@ -722,6 +725,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		EntryPartConverterEnd entryPartConverterEnd = new EntryPartConverterEnd();
 		EntryPartConverterKanji entryPartConverterKanji = new EntryPartConverterKanji();
 		EntryPartConverterReading entryPartConverterReading = new EntryPartConverterReading();
+		EntryPartConverterCommon entryPartConverterCommon = new EntryPartConverterCommon();
 		EntryPartConverterSense entryPartConverterSense = new EntryPartConverterSense();
 		
 		//
@@ -763,6 +767,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			} else if (fieldType == EntryHumanCsvFieldType.READING) { // reading
 				
 				entryPartConverterReading.parseCsv(csvReader, newEntry);
+				
+			} else if (fieldType == EntryHumanCsvFieldType.COMMON) { // common
+				
+				entryPartConverterCommon.parseCsv(csvReader, newEntry);
 				
 			} else if (fieldType == EntryHumanCsvFieldType.SENSE_COMMON) { // sense common 
 				
@@ -1081,6 +1089,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		KANJI,
 		READING,
 		
+		COMMON,
+		
 		SENSE_COMMON,
 		SENSE_ENG,
 		SENSE_POL,
@@ -1320,6 +1330,87 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 
 			entry.getReadingInfoList().add(readingInfo);
 		}
+	}
+	
+	private class EntryPartConverterCommon {
+		
+		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
+			
+			int columnsNo = 0;
+			
+			if (config.shiftCells == true) {
+				csvWriter.write(""); columnsNo++;
+			}
+			
+			csvWriter.write(EntryHumanCsvFieldType.COMMON.name()); columnsNo++;		
+			csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
+
+			List<LanguageSource> languageSourceList = entry.getLanguageSourceList();
+			
+			StringWriter languageSourceCsvWriterString = new StringWriter();
+			CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceCsvWriterString, '|');
+			
+			for (LanguageSource languageSource : languageSourceList) {										
+				String languageSourceLsType = languageSource.getLsType() != null ? languageSource.getLsType().value() : "-";
+				String languageSourceWasei = languageSource.getLsWasei() != null ? languageSource.getLsWasei().value() : "-";
+				String languageSourceLang = languageSource.getLang() != null ? languageSource.getLang() : "-";
+				String languageSourceValue = languageSource.getValue() != null ? languageSource.getValue() : "-";
+																			
+				languageSourceCsvWriter.write(languageSourceLsType);
+				languageSourceCsvWriter.write(languageSourceWasei);
+				languageSourceCsvWriter.write(languageSourceLang);
+				languageSourceCsvWriter.write(languageSourceValue);
+				
+				languageSourceCsvWriter.endRecord();
+			}
+			
+			languageSourceCsvWriter.close();				
+			csvWriter.write(languageSourceCsvWriterString.toString()); columnsNo++;			
+			
+			// wypelniacz			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
+			csvWriter.endRecord();
+		}
+		
+		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.COMMON) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			{
+				String languageSourceListString = csvReader.get(2);
+				CsvReader languageSourceCsvReader = new CsvReader(new StringReader(languageSourceListString), '|');
+				
+				while (languageSourceCsvReader.readRecord()) {
+					
+					LanguageSourceLsTypeEnum languageSourceLsType = languageSourceCsvReader.get(0).equals("-") == false ? LanguageSourceLsTypeEnum.fromValue(languageSourceCsvReader.get(0)) : null;
+					LanguageSourceLsWaseiEnum languageSourceWasei = languageSourceCsvReader.get(1).equals("-") == false ? LanguageSourceLsWaseiEnum.fromValue(languageSourceCsvReader.get(1)) : null;
+					String languageSourceLang = languageSourceCsvReader.get(2).equals("-") == false ? languageSourceCsvReader.get(2) : null;
+					String languageSourceValue = languageSourceCsvReader.get(3);
+
+					//
+					
+					LanguageSource languageSource = new LanguageSource();
+					
+					languageSource.setLsType(languageSourceLsType);
+					languageSource.setLsWasei(languageSourceWasei);
+					languageSource.setLang(languageSourceLang);
+					languageSource.setValue(languageSourceValue);						
+					
+					//
+					
+					entry.getLanguageSourceList().add(languageSource);
+				}
+				
+				languageSourceCsvReader.close();
+			}
+		}		
 	}
 	
 	private class EntryPartConverterSense {
@@ -1829,7 +1920,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}			
 		}
 	}
-	
+		
 	private void generateKanaTypeAndRomaji(ReadingInfo readingInfo, boolean markRomaji) {
 		
 		ReadingInfoKanaType kanaType = readingInfo.getKana().getKanaType();
