@@ -39,6 +39,17 @@ public class Test6 {
 		//
 		
 		JMdict englishJMDict = dictionary2Helper.getJMdict();		
+		
+		englishJMDict.getEntryList().removeIf(r -> {
+			try {
+				return dictionary2Helper.getEntryFromPolishDictionary(r.getEntryId()) == null;
+				
+			} catch (Exception e) {
+				throw new RuntimeException(e);
+			}			
+		});
+
+		
 		dictionary2Helper.saveJMdictAsXml(englishJMDict, "/tmp/a/englishJMDict.xml");
 		
 		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
@@ -72,6 +83,43 @@ public class Test6 {
 		
 		dictionary2Helper.saveJMdictAsXml(newEnglishJMDictFromCsv, "/tmp/a/englishJMDict2.xml");
 		
+		//
+		
+		List<Entry> allPolishDictionaryEntryList = dictionary2Helper.getAllPolishDictionaryEntryList();
+		
+		allPolishDictionaryEntryList.sort(new Comparator<Entry>() {
+
+			@Override
+			public int compare(Entry e1, Entry e2) {
+				return e1.getEntryId().compareTo(e2.getEntryId());
+			}
+		});
+		
+		for (Entry entry : allPolishDictionaryEntryList) {
+			
+			entry.getReadingInfoList().forEach(f -> {
+				f.getKana().setKanaType(null);
+				f.getKana().setRomaji(null);
+			});
+			
+			entry.getSenseList().forEach(c -> {
+				c.getGlossList().removeIf(r -> "pol".equals(r.getLang()) == true);
+				
+				c.getAdditionalInfoList().removeIf(r -> "pol".equals(r.getLang()) == true);
+				/*
+				c.getAdditionalInfoList().forEach(f -> {
+					f.setLang(null);
+				});
+				*/
+			});
+		}
+		
+		JMdict polishJmdict = new JMdict();
+		
+		polishJmdict.getEntryList().addAll(allPolishDictionaryEntryList);
+		
+		dictionary2Helper.saveJMdictAsXml(polishJmdict, "/tmp/a/polishJMDict2.xml");
+		
 		/*
 		File jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e_NG");
 
@@ -100,14 +148,6 @@ public class Test6 {
 		
 		//
 		
-		jmdict.getEntryList().removeIf(r -> {
-			try {
-				return dictionaryHelper.getEntryFromPolishDictionary(r.getEntryId()) == null;
-				
-			} catch (Exception e) {
-				throw new RuntimeException(e);
-			}			
-		});
 		
 		System.out.println("Save");
 		
@@ -115,38 +155,6 @@ public class Test6 {
 		
 		//
 		
-		List<Entry> allPolishDictionaryEntryList = dictionaryHelper.getAllPolishDictionaryEntryList();
-		
-		allPolishDictionaryEntryList.sort(new Comparator<Entry>() {
-
-			@Override
-			public int compare(Entry e1, Entry e2) {
-				return e1.getEntryId().compareTo(e2.getEntryId());
-			}
-		});
-		
-		for (Entry entry : allPolishDictionaryEntryList) {
-			
-			entry.getReadingInfoList().forEach(f -> {
-				f.getKana().setKanaType(null);
-				f.getKana().setRomaji(null);
-			});
-			
-			entry.getSenseList().forEach(c -> {
-				c.getGlossList().removeIf(r -> "pol".equals(r.getLang()) == true);
-				
-				c.getAdditionalInfoList().removeIf(r -> "pol".equals(r.getLang()) == true);
-				c.getAdditionalInfoList().forEach(f -> {
-					f.setLang(null);
-				});
-			});
-		}
-		
-		JMdict polishJmdict = new JMdict();
-		
-		polishJmdict.getEntryList().addAll(allPolishDictionaryEntryList);
-		
-		dictionaryHelper.saveJMdictAsXml(polishJmdict, "/tmp/a/PolishJMdict_e_saved");
 		*/
 
 		/*

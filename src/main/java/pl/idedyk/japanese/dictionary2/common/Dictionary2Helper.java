@@ -86,6 +86,8 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.DialectEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.FieldEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.GTypeEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Info;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.InfoType;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
@@ -673,6 +675,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		// common
 		new EntryPartConverterCommon().writeToCsv(config, csvWriter, entry);
 
+		// info
+		new EntryPartConverterInfo().writeToCsv(config, csvWriter, entry);
+		
 		// sense
 		new EntryPartConverterSense().writeToCsv(config, csvWriter, entry, entryAdditionalData);
 				
@@ -726,6 +731,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		EntryPartConverterKanji entryPartConverterKanji = new EntryPartConverterKanji();
 		EntryPartConverterReading entryPartConverterReading = new EntryPartConverterReading();
 		EntryPartConverterCommon entryPartConverterCommon = new EntryPartConverterCommon();
+		EntryPartConverterInfo entryPartConverterInfo = new EntryPartConverterInfo();
 		EntryPartConverterSense entryPartConverterSense = new EntryPartConverterSense();
 		
 		//
@@ -771,7 +777,11 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			} else if (fieldType == EntryHumanCsvFieldType.COMMON) { // common
 				
 				entryPartConverterCommon.parseCsv(csvReader, newEntry);
+
+			} else if (fieldType == EntryHumanCsvFieldType.INFO) { // common
 				
+				entryPartConverterInfo.parseCsv(csvReader, newEntry);
+
 			} else if (fieldType == EntryHumanCsvFieldType.SENSE_COMMON) { // sense common 
 				
 				entryPartConverterSense.parseCsv(csvReader, newEntry);
@@ -1090,6 +1100,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		READING,
 		
 		COMMON,
+		INFO,
 		
 		SENSE_COMMON,
 		SENSE_ENG,
@@ -1411,6 +1422,50 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				languageSourceCsvReader.close();
 			}
 		}		
+	}
+	
+	private class EntryPartConverterInfo {
+		
+		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
+
+			List<Info> infoList = entry.getInfo();
+			
+			for (Info info : infoList) {
+				int columnsNo = 0;
+				
+				if (config.shiftCells == true) {
+					csvWriter.write(""); columnsNo++;
+				}
+				
+				csvWriter.write(EntryHumanCsvFieldType.INFO.name());  columnsNo++;
+				
+				csvWriter.write(info.getInfType().value());  columnsNo++;
+				csvWriter.write(info.getValue());  columnsNo++;
+				
+				// wypelniacz			
+				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+					csvWriter.write(null);
+				}
+				
+				csvWriter.endRecord();
+			}
+		}
+		
+		public void parseCsv(CsvReader csvReader, Entry entry) throws IOException {
+			
+			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
+			
+			if (fieldType != EntryHumanCsvFieldType.INFO) {
+				throw new RuntimeException(fieldType.name());
+			}
+			
+			Info info = new Info();
+			
+			info.setInfType(InfoType.fromValue(csvReader.get(1)));
+			info.setValue(csvReader.get(2));
+						
+			entry.getInfo().add(info);
+		}
 	}
 	
 	private class EntryPartConverterSense {
