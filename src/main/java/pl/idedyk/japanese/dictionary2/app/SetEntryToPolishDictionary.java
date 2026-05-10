@@ -11,6 +11,7 @@ import org.apache.commons.cli.Options;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class SetEntryToPolishDictionary {
@@ -65,9 +66,9 @@ public class SetEntryToPolishDictionary {
 		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
 		// wczytywanie listy zmienionych elementow
-		List<Entry> entryListFromFileName = dictionaryHelper.readEntryListFromHumanCsv(fileName.getAbsolutePath());
+		JMdict jmdictFromFileName = dictionaryHelper.readEntryListFromHumanCsv(fileName.getAbsolutePath());
 
-		for (Entry currentNewEntry : entryListFromFileName) {
+		for (Entry currentNewEntry : jmdictFromFileName.getEntryList()) {
 			
 			// pobieramy slowo w starszej wersji
 			Entry entryFromPolishDictionary = dictionaryHelper.getEntryFromPolishDictionary(currentNewEntry.getEntryId());

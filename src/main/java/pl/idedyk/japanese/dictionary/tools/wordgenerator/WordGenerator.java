@@ -2546,21 +2546,16 @@ public class WordGenerator {
 				Set<Integer> alreadyCheckedGroupId = new TreeSet<Integer>();
 				
 				for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-					
 					List<Entry> entryListForPolishJapaneseEntry = dictionary2Helper.findEntryListInJmdict(polishJapaneseEntry, true);
 					
-					if (entryListForPolishJapaneseEntry != null && entryListForPolishJapaneseEntry.size() > 0) {
-						
-						for (Entry entry : entryListForPolishJapaneseEntry) {
-							
+					if (entryListForPolishJapaneseEntry != null && entryListForPolishJapaneseEntry.size() > 0) {						
+						for (Entry entry : entryListForPolishJapaneseEntry) {						
 							List<Sense> senseList = entry.getSenseList();
 							
 							for (Sense currentSense : senseList) {
-								
 								List<String> referenceToAnotherKanjiKanaList = currentSense.getReferenceToAnotherKanjiKanaList();
 								
-								for (String currentSimilarRelated : referenceToAnotherKanjiKanaList) {
-								
+								for (String currentSimilarRelated : referenceToAnotherKanjiKanaList) {								
 									int pointIdx = currentSimilarRelated.indexOf("・");
 									
 									if (pointIdx != -1) {
@@ -2569,8 +2564,7 @@ public class WordGenerator {
 									
 									List<Entry> foundSimilarRelatedEntryList = dictionary2Helper.findInJMdict(currentSimilarRelated);
 																		
-									if (foundSimilarRelatedEntryList != null && foundSimilarRelatedEntryList.size() > 0) {
-																	
+									if (foundSimilarRelatedEntryList != null && foundSimilarRelatedEntryList.size() > 0) {																	
 										for (Entry currentFoundEntry : foundSimilarRelatedEntryList) {
 																						
 											Integer foundEntryId = currentFoundEntry.getEntryId();
@@ -2580,8 +2574,7 @@ public class WordGenerator {
 												continue;
 												
 											} else {
-												alreadyCheckedGroupId.add(foundEntryId);
-												
+												alreadyCheckedGroupId.add(foundEntryId);												
 											}
 											
 											List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(currentFoundEntry, false);
@@ -2589,8 +2582,7 @@ public class WordGenerator {
 											// grupujemy po tych samych tlumaczenia
 											List<List<KanjiKanaPair>> groupByTheSameTranslateKanjiKanaListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
 																									
-											for (List<KanjiKanaPair> foundGroupByTheSameTranslateKanjiKanaList : groupByTheSameTranslateKanjiKanaListList) {
-												
+											for (List<KanjiKanaPair> foundGroupByTheSameTranslateKanjiKanaList : groupByTheSameTranslateKanjiKanaListList) {		
 												KanjiKanaPair foundKanjiKanaPair = foundGroupByTheSameTranslateKanjiKanaList.get(0); // pierwszy element z grupy
 	
 												String foundKanjiKanaPairKanji = foundKanjiKanaPair.getKanji();
@@ -2599,13 +2591,11 @@ public class WordGenerator {
 												List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, foundKanjiKanaPairKanji, foundKanjiKanaPairKana);
 												
 												if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
-													
 													//System.out.println(groupEntry);
 													
 													CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, foundKanjiKanaPair); 
 													
 													if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
-	
 														newCommonWordMap.put(commonWord.getId(), commonWord);
 														
 														csvId++;										
@@ -3260,7 +3250,6 @@ public class WordGenerator {
 						
 						// chodzimy po wszystkich elementach
 						for (Integer currentEntryId : entryIdSet) {
-							
 							Entry jmdictEntry = dictionary2Helper.getJMdictEntry(currentEntryId);
 							
 							if (jmdictEntry == null) { // nie znaleziono
@@ -3270,7 +3259,6 @@ public class WordGenerator {
 							Entry entryFromPolishDictionary = dictionary2Helper.getEntryFromPolishDictionary(jmdictEntry.getEntryId());
 							
 							if (entryFromPolishDictionary != null) { // taki wpis juz jest w polskim slowniku
-								
 								System.out.println("[Error] Entry already exists in polish dictionary: " + currentEntryId);
 								
 								continue;					

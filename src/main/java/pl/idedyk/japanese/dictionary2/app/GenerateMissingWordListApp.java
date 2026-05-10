@@ -16,6 +16,7 @@ import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class GenerateMissingWordListApp {
@@ -123,8 +124,8 @@ public class GenerateMissingWordListApp {
 		List<String> notFoundWordSearchList = new ArrayList<>();
 		
 		// lista wynikowa
-		List<Entry> result = new ArrayList<>();
-		
+		JMdict jmdict = new JMdict();
+				
 		// dodatkowe informacje
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
 		
@@ -178,7 +179,7 @@ public class GenerateMissingWordListApp {
 					if (entryFromPolishDictionary != null) {
 						
 						if (addOnlyJmdictEntries == false) {
-							result.add(entryFromPolishDictionary);
+							jmdict.getEntryList().add(entryFromPolishDictionary);
 						}
 						
 						saveEntryListAsHumanCsvConfig.markAsPolishEntry(entryFromPolishDictionary);
@@ -197,7 +198,7 @@ public class GenerateMissingWordListApp {
 					dictionaryHelper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(entry, entryAdditionalData);
 										
 					// dodanie do listy wynikowej
-					result.add(entry);
+					jmdict.getEntryList().add(entry);
 					
 					/*
 					boolean existsInOldPolishJapaneseDictionary = dictionaryHelper.isExistsInOldPolishJapaneseDictionary(entry);
@@ -235,7 +236,7 @@ public class GenerateMissingWordListApp {
 			}
 		}
 				
-		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", result, entryAdditionalData);
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", jmdict, entryAdditionalData);
 		
 		// zapisywanie list
 		FileWriter searchResultFileWriter = new FileWriter(wordListFileName + "-new");

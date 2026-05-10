@@ -18,6 +18,7 @@ import org.apache.commons.cli.Options;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class GetEntryFromDictionary {
@@ -153,7 +154,7 @@ public class GetEntryFromDictionary {
 		// wczytywanie pomocnika slownikowego
 		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 		
-		List<Entry> result = new ArrayList<>();
+		JMdict jmdict = new JMdict();
 		
 		Set<Integer> alreadyMetEntrySet = new TreeSet<Integer>();
 		
@@ -184,7 +185,7 @@ public class GetEntryFromDictionary {
 					continue;					
 				}
 				
-				result.add(entryFromPolishDictionary);				
+				jmdict.getEntryList().add(entryFromPolishDictionary);				
 			}
 			
 			if (useJMdictDictionary == true) { // szukamy w jmdict
@@ -221,14 +222,14 @@ public class GetEntryFromDictionary {
 				// pobranie ze starego slownika interesujacych danych (np. romaji)
 				dictionaryHelper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
 				
-				result.add(jmdictEntry);				
+				jmdict.getEntryList().add(jmdictEntry);				
 			}
 			
 			if (useJMdictPolishDictionary == true) { // szukamy w polskim slowniku lub jmdict
 				Entry entry = dictionaryHelper.getEntryFromPolishDictionary(currentEntryId); // szukamy w polskim slowniku
 
 				if (entry != null) {
-					result.add(entry);
+					jmdict.getEntryList().add(entry);
 					
 					// zaznaczamy, ze ten wpis to polskie slowo, aby romaji nie zaznaczalo sie 
 					saveEntryListAsHumanCsvConfig.markAsPolishEntry(entry);
@@ -248,11 +249,11 @@ public class GetEntryFromDictionary {
 					// pobranie ze starego slownika interesujacych danych (np. romaji)
 					dictionaryHelper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(entry, entryAdditionalData);
 					
-					result.add(entry);				
+					jmdict.getEntryList().add(entry);				
 				}				
 			}
 			
-			if (checkOnlyMaxIds != null && result.size() >= checkOnlyMaxIds) {
+			if (checkOnlyMaxIds != null && jmdict.getEntryList().size() >= checkOnlyMaxIds) {
 				break;
 			}
 		}
@@ -260,12 +261,12 @@ public class GetEntryFromDictionary {
 		if (checkOnlyMaxIds == null) {
 			
 			// zapisanie wyniku pod postacia csv		
-			dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", result, entryAdditionalData);
+			dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-new.csv", jmdict, entryAdditionalData);
 			
 		} else {
 			
 			// liczba pozycji do pobrania
-			System.out.println("Ids number: " + entryIdsCounter + " (new ids: " + result.size() + ", missing: " + ( checkOnlyMaxIds - result.size()) + ")");
+			System.out.println("Ids number: " + entryIdsCounter + " (new ids: " + jmdict.getEntryList().size() + ", missing: " + ( checkOnlyMaxIds - jmdict.getEntryList().size()) + ")");
 						
 		}		
 	}

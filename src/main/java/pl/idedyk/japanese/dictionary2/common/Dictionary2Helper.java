@@ -178,7 +178,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	//
 	
 	private File polishDictionaryFile;
-	private JMdict polishJmdict = null;
 	private Map<Integer, JMdict.Entry> polishDictionaryEntryListMap;
 	
 	//
@@ -347,6 +346,12 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					
 					addTextFieldToDocument(document, JMdictLuceneFields.ROMAJI, romaji);
 				}
+				
+				List<LanguageSource> entryLanguageSourceList = entry.getLanguageSourceList__();
+				
+				for (LanguageSource languageSource : entryLanguageSourceList) {
+					addTextFieldToDocument(document, JMdictLuceneFields.LANGUAGE_SOURCE, languageSource.getValue());
+				}
 
 				//
 				
@@ -380,9 +385,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					
 					//
 					
-					List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
+					List<LanguageSource> senseLanguageSourceList = sense.getLanguageSourceList__();
 					
-					for (LanguageSource languageSource : languageSourceList) {
+					for (LanguageSource languageSource : senseLanguageSourceList) {
 						addTextFieldToDocument(document, JMdictLuceneFields.LANGUAGE_SOURCE, languageSource.getValue());
 					}					
 				}
@@ -620,6 +625,16 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		if (value != null) {
 			document.add(new IntField(fieldName, value, Field.Store.YES));
 		}
+	}
+	
+	public void saveEntryListAsHumanCsv(SaveEntryListAsHumanCsvConfig config, String fileName, List<Entry> entryList, EntryAdditionalData entryAdditionalData) throws Exception {
+		// FM_FIXME: nie wiem czy to dobrze
+		JMdict jmdict = new JMdict();
+		
+		jmdict.getEntryList().addAll(entryList);
+		
+		// zapis
+		saveEntryListAsHumanCsv(config, fileName, jmdict, entryAdditionalData);		
 	}
 	
 	public void saveEntryListAsHumanCsv(SaveEntryListAsHumanCsvConfig config, String fileName, JMdict jmdict, EntryAdditionalData entryAdditionalData) throws Exception {
@@ -1429,7 +1444,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			csvWriter.write(EntryHumanCsvFieldType.COMMON.name()); columnsNo++;		
 			csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
 
-			List<LanguageSource> languageSourceList = entry.getLanguageSourceList();
+			List<LanguageSource> languageSourceList = entry.getLanguageSourceList__();
 			
 			StringWriter languageSourceCsvWriterString = new StringWriter();
 			CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceCsvWriterString, '|');
@@ -1489,7 +1504,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					
 					//
 					
-					entry.getLanguageSourceList().add(languageSource);
+					entry.getLanguageSourceList__().add(languageSource);
 				}
 				
 				languageSourceCsvReader.close();
@@ -1610,7 +1625,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				//
 				
-				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
+				List<LanguageSource> languageSourceList = sense.getLanguageSourceList__();
 				
 				StringWriter languageSourceCsvWriterString = new StringWriter();
 				CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceCsvWriterString, '|');
@@ -1981,7 +1996,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 						
 						//
 						
-						sense.getLanguageSourceList().add(languageSource);
+						sense.getLanguageSourceList__().add(languageSource);
 					}
 					
 					languageSourceCsvReader.close();
@@ -2225,7 +2240,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			polishDictionaryEntryListMap = new LinkedHashMap<>();
 			
-			polishJmdict = readEntryListFromHumanCsv(polishDictionaryFile.getAbsolutePath());
+			JMdict polishJmdict = readEntryListFromHumanCsv(polishDictionaryFile.getAbsolutePath());
 									
 			for (Entry entry : polishJmdict.getEntryList()) {
 				polishDictionaryEntryListMap.put(entry.getEntryId(), entry);
@@ -3030,7 +3045,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}
 			
 			// liczymy hash dla znaczenia
-			String polishJapaneseEntrySenseHash = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(polishJapaneseEntrySense, polishJapaneseEntrySenseGlossEngList, polishJapaneseEntrySenseAdditionalInfoEngList);
+			String polishJapaneseEntrySenseHash = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(polishJapaneseEntry, polishJapaneseEntrySense, polishJapaneseEntrySenseGlossEngList, polishJapaneseEntrySenseAdditionalInfoEngList);
 													
 			// nowy sens
 			Sense jmdictEntrySense = senseIdx < jmdictEntrySenseList.size() ? jmdictEntrySenseList.get(senseIdx) : null;
@@ -3047,7 +3062,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}	
 			
 			// liczymy hash dla znaczenia
-			String jmdictEntrySenseHash = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(jmdictEntrySense, jmdictEntrySenseGlossEngList, jmdictEntrySenseAdditionalInfoEngList);
+			String jmdictEntrySenseHash = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(jmdictEntry, jmdictEntrySense, jmdictEntrySenseGlossEngList, jmdictEntrySenseAdditionalInfoEngList);
 			
 			//
 			
@@ -3135,13 +3150,21 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return needManuallyChange;
 	}
 	
-	private String getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(Sense sense, List<Gloss> glossList, List<SenseAdditionalInfo> additionalInfoList) {
+	private String getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(JMdict.Entry entry, Sense sense, List<Gloss> glossList, List<SenseAdditionalInfo> additionalInfoList) {
 		
 		StringWriter stringWriter = new StringWriter();
 		
+		for (LanguageSource languageSource : entry.getLanguageSourceList__()) {
+			
+			stringWriter.write(languageSource.getLang());
+			stringWriter.write(languageSource.getLsType() != null ? languageSource.getLsType().name() : "");
+			stringWriter.write(languageSource.getLsWasei() != null ? languageSource.getLsWasei().name() : "");
+			stringWriter.write(languageSource.getValue());			
+		}
+		
 		// liczymy hash	
 		if (sense != null) {
-			for (LanguageSource languageSource : sense.getLanguageSourceList()) {
+			for (LanguageSource languageSource : sense.getLanguageSourceList__()) {
 				
 				stringWriter.write(languageSource.getLang());
 				stringWriter.write(languageSource.getLsType() != null ? languageSource.getLsType().name() : "");
@@ -3327,8 +3350,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			List<SenseAdditionalInfo> entryToCompareSenseAdditionalInfoPolList = entryToCompareSense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
 			
 			// liczymy hash dla obu znaczen (sprawdzenie, czy zostaly wprowadzone jakies zmiany)
-			String hashForEntryFromPolishDictionarySense = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(entryFromPolishDictionarySense, entryFromPolishDictionarySenseGlossPolList, entryFromPolishDictionarySenseAdditionalInfoPolList);
-			String hashForEntryToCompareSense = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(entryToCompareSense, entryToCompareSenseGlossPolList, entryToCompareSenseAdditionalInfoPolList);
+			String hashForEntryFromPolishDictionarySense = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(entryFromPolishDictionary, entryFromPolishDictionarySense, entryFromPolishDictionarySenseGlossPolList, entryFromPolishDictionarySenseAdditionalInfoPolList);
+			String hashForEntryToCompareSense = getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(entryToCompare, entryToCompareSense, entryToCompareSenseGlossPolList, entryToCompareSenseAdditionalInfoPolList);
 			
 			if (hashForEntryFromPolishDictionarySense.equals(hashForEntryToCompareSense) == false) { // jezeli znaczenie zostalo zmienione to dodaj te propozycje do manualnego sprawdzenia
 					
