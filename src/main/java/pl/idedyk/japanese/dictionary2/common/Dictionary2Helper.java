@@ -235,6 +235,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			for (Entry entry : entryList) {
 				
+				for (Info info : entry.getInfoList()) {
+					
+					if (info.getLang() == null) {
+						info.setLang("eng");
+					}					
+				}
+				
 				for (Sense sense : entry.getSenseList()) {
 					
 					for (Gloss gloss : sense.getGlossList()) {
@@ -1553,7 +1560,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
 
-			List<Info> infoList = entry.getInfo();
+			List<Info> infoList = entry.getInfoList();
 			
 			for (Info info : infoList) {
 				int columnsNo = 0;
@@ -1564,6 +1571,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				csvWriter.write(EntryHumanCsvFieldType.INFO.name());  columnsNo++;
 				
+				csvWriter.write(info.getLang());  columnsNo++;				
 				csvWriter.write(info.getInfType().value());  columnsNo++;
 				csvWriter.write(info.getValue());  columnsNo++;
 				
@@ -1586,10 +1594,11 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			Info info = new Info();
 			
-			info.setInfType(InfoType.fromValue(csvReader.get(1)));
-			info.setValue(csvReader.get(2));
+			info.setLang(csvReader.get(1));			
+			info.setInfType(InfoType.fromValue(csvReader.get(2)));
+			info.setValue(csvReader.get(3));
 						
-			entry.getInfo().add(info);
+			entry.getInfoList().add(info);
 		}
 	}
 	
@@ -2151,6 +2160,136 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	private void createEmptyPolishSense(Sense sense) {
 						
+		List<Gloss> glossList = sense.getGlossList();
+		
+		List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+
+		if (glossEngList.size() == 0) {
+			return;
+		}			
+		
+		List<Gloss> newPolishGlossList = new ArrayList<>();
+		
+		Gloss newPolishGlossStart1 = new Gloss();
+		
+		newPolishGlossStart1.setLang("pol");
+		newPolishGlossStart1.setGType(null);
+		newPolishGlossStart1.setValue("-");
+
+		newPolishGlossList.add(newPolishGlossStart1);
+		newPolishGlossList.add(newPolishGlossStart1);
+		
+		//
+		
+		Gloss newPolishGlossStart2 = new Gloss();
+		
+		newPolishGlossStart2.setLang("pol");
+		newPolishGlossStart2.setGType(null);
+		newPolishGlossStart2.setValue("UZUPEŁNIENIE");
+
+		newPolishGlossList.add(newPolishGlossStart2);
+		
+		boolean glossTypeAnyExists = glossEngList.stream().anyMatch(gloss -> (gloss.getGType() != null));
+		
+		if (glossTypeAnyExists == true) {
+			
+			Gloss newPolishGlossTypeInfo = new Gloss();
+			
+			newPolishGlossTypeInfo.setLang("pol");
+			newPolishGlossTypeInfo.setGType(null);
+			newPolishGlossTypeInfo.setValue("!!! UWAGA NA DODATKOWY TYP !!!");
+
+			newPolishGlossList.add(newPolishGlossTypeInfo);
+		}
+		
+		//
+		
+		Gloss newPolishGlossStart3 = new Gloss();
+		
+		newPolishGlossStart3.setLang("pol");
+		newPolishGlossStart3.setGType(null);
+		newPolishGlossStart3.setValue("---");
+
+		newPolishGlossList.add(newPolishGlossStart3);
+		newPolishGlossList.add(newPolishGlossStart3);
+		
+		//
+		
+		for (Gloss currentGlossEng : glossEngList) {
+			
+			Gloss newPolishGloss = new Gloss();
+			
+			newPolishGloss.setLang("pol");
+			newPolishGloss.setGType(currentGlossEng.getGType());
+			newPolishGloss.setValue(currentGlossEng.getValue());
+			
+			newPolishGlossList.add(newPolishGloss);				
+		}
+					
+		//
+		
+		glossList.addAll(newPolishGlossList);
+		
+		//
+		
+		List<SenseAdditionalInfo> additionalInfoList = sense.getAdditionalInfoList();
+		
+		List<SenseAdditionalInfo> additionalInfoEngList = additionalInfoList.stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
+		
+		if (additionalInfoEngList.size() == 0) {
+			return;
+		}
+					
+		List<SenseAdditionalInfo> newAdditionalInfoPolishList = new ArrayList<>();
+		
+		//
+		
+		SenseAdditionalInfo senseAdditionalInfoStart1 = new SenseAdditionalInfo();
+		
+		senseAdditionalInfoStart1.setLang("pol");
+		senseAdditionalInfoStart1.setValue("-");
+		
+		newAdditionalInfoPolishList.add(senseAdditionalInfoStart1);
+		newAdditionalInfoPolishList.add(senseAdditionalInfoStart1);
+		
+		SenseAdditionalInfo senseAdditionalInfoStart2 = new SenseAdditionalInfo();
+		
+		senseAdditionalInfoStart2.setLang("pol");
+		senseAdditionalInfoStart2.setValue("UZUPEŁNIENIE");
+		
+		newAdditionalInfoPolishList.add(senseAdditionalInfoStart2);
+		
+		//
+		
+		SenseAdditionalInfo senseAdditionalInfoStart3 = new SenseAdditionalInfo();
+		
+		senseAdditionalInfoStart3.setLang("pol");
+		senseAdditionalInfoStart3.setValue("---");
+		
+		newAdditionalInfoPolishList.add(senseAdditionalInfoStart3);
+		newAdditionalInfoPolishList.add(senseAdditionalInfoStart3);
+		
+		//
+		
+		for (SenseAdditionalInfo currentSenseAdditionalInfoEng : additionalInfoEngList) {
+			
+			SenseAdditionalInfo newSenseAdditionalInfoPolish = new SenseAdditionalInfo();
+			
+			newSenseAdditionalInfoPolish.setLang("pol");
+			newSenseAdditionalInfoPolish.setValue(currentSenseAdditionalInfoEng.getValue());
+			
+			newAdditionalInfoPolishList.add(newSenseAdditionalInfoPolish);
+		}
+		
+		//
+		
+		additionalInfoList.addAll(newAdditionalInfoPolishList);
+	}
+	
+	private void createEmptyPolishInfo(JMdict.Entry entry, Info engInfo) {
+		
+		fixme();
+		
 		List<Gloss> glossList = sense.getGlossList();
 		
 		List<Gloss> glossEngList = glossList.stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
@@ -3079,57 +3218,59 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		polishJapaneseEntry.getLanguageSourceList__().addAll(jmdictEntry.getLanguageSourceList__());		
 		
 		// aktualizacja info
-		List<Info> polishJapaneseEntryInfoList = new ArrayList<>(polishJapaneseEntry.getInfoList());
-		List<Info> jmdictEntryInfoList = jmdictEntry.getInfoList();
 		
-		// czyscimy stary info
+		// pobieramy stare angielskie info, stare polskie info z polskiego slownika i nowe angielskie z nowego slownika
+		List<Info> polishJapaneseEntryEngInfoList = polishJapaneseEntry.getInfoList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+		List<Info> polishJapaneseEntryPolInfoList = polishJapaneseEntry.getInfoList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+		List<Info> jmdictEntryInfoList = jmdictEntry.getInfoList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+		
+		// czyscimy stare info
 		polishJapaneseEntry.getInfoList().clear();
 
 		// 
 		int maxInfoLength = jmdictEntryInfoList.size();
 		
-		if (polishJapaneseEntryInfoList.size() > maxInfoLength) {
-			maxInfoLength = polishJapaneseEntryInfoList.size();
+		if (polishJapaneseEntryEngInfoList.size() > maxInfoLength) {
+			maxInfoLength = polishJapaneseEntryEngInfoList.size();
 		}
 		
 		for (int infoIdx = 0; infoIdx < maxInfoLength; ++infoIdx) {
 			
-			// stare info
-			// FM_FIXME: fixme(): kod "pol" podczas wyszukiwania
-			Info polishJapaneseEntryInfo = infoIdx < polishJapaneseEntryInfoList.size() ? polishJapaneseEntryInfoList.get(infoIdx) : null;
+			// stare angielskie i polskie info z polskiego slownika
+			Info polishJapaneseEntryEngInfo = infoIdx < polishJapaneseEntryEngInfoList.size() ? polishJapaneseEntryEngInfoList.get(infoIdx) : null;
+			Info polishJapaneseEntryPolInfo = infoIdx < polishJapaneseEntryPolInfoList.size() ? polishJapaneseEntryPolInfoList.get(infoIdx) : null;
 
-			// liczymy hash dla polskiego info
-			String polishJapaneseEntryInfoHash = getHashForInfo(polishJapaneseEntryInfo);
+			// liczymy hash dla starego info z polskiego slownika
+			String polishJapaneseEntryEngInfoHash = getHashForInfo(polishJapaneseEntryEngInfo);
 			
-			// nowe info
-			// FM_FIXME: fixme(): kod "eng" podczas wyszukiwania
+			// nowe angielskie info
 			Info jmdictEntryInfo = infoIdx < jmdictEntryInfoList.size() ? jmdictEntryInfoList.get(infoIdx) : null;
 
-			// liczymy hash dla nowego info
+			// liczymy hash dla nowego angielskiego info
 			String jmdictEntryInfoHash = getHashForInfo(jmdictEntryInfo);
 
 			//
 			
-			if (polishJapaneseEntryInfo == null && jmdictEntryInfo == null) {
+			if (polishJapaneseEntryEngInfo == null && jmdictEntryInfo == null) {
 				throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie
 			}
 			
 			// porownujemy hash
-			if (polishJapaneseEntryInfoHash.equals(jmdictEntryInfoHash) == true) { // hash ten sam, nie bylo zmiany znaczenia w nowym slowniku
-				
-				// bierzemy nowy sense + aktualizuje polskie znaczenie
-				List<Gloss> polishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
-				List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
-				
-				jmdictEntrySense.getGlossList().addAll(polishJapaneseEntrySenseGlossPolList);
-				jmdictEntrySense.getAdditionalInfoList().addAll(polishJapaneseEntrySenseAdditionalInfoPolList);
-				
-				polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
-				
-				fixme();
+			if (polishJapaneseEntryEngInfoHash.equals(jmdictEntryInfoHash) == true) { // hash ten sam, nie bylo zmiany znaczenia w nowym slowniku
+								
+				// wiec dodajemy to, co bylo wczesniej				
+				polishJapaneseEntry.getInfoList().add(jmdictEntryInfo);
+				polishJapaneseEntry.getInfoList().add(polishJapaneseEntryPolInfo);
 				
 			} else { // jest jakas zmiana
-				todo();
+				
+				needManuallyChange = true;
+				
+				// uzupelniamy o puste polskie tlumaczenie (jesli istnieje)				
+				if (jmdictEntryInfo != null) {					
+					createEmptyPolishInfo(jmdictEntryInfo);					
+				}
+
 			}			
 		}		
 		
