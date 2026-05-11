@@ -3038,12 +3038,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		// kanji mozna zaktualizowac bezwarunkowo		
 		polishJapaneseEntry.getKanjiInfoList().clear();
-		
 		polishJapaneseEntry.getKanjiInfoList().addAll(jmdictEntry.getKanjiInfoList());
 		
 		// aktualizacja czytania
 		List<ReadingInfo> polishJapaneseEntryReadingInfoList = new ArrayList<>(polishJapaneseEntry.getReadingInfoList());
-		
 		List<ReadingInfo> jmdictEntryReadingInfoList = jmdictEntry.getReadingInfoList();
 	
 		// czyscimy stare czytania
@@ -3080,6 +3078,63 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		polishJapaneseEntry.getLanguageSourceList__().clear();
 		polishJapaneseEntry.getLanguageSourceList__().addAll(jmdictEntry.getLanguageSourceList__());		
 		
+		// aktualizacja info
+		List<Info> polishJapaneseEntryInfoList = new ArrayList<>(polishJapaneseEntry.getInfoList());
+		List<Info> jmdictEntryInfoList = jmdictEntry.getInfoList();
+		
+		// czyscimy stary info
+		polishJapaneseEntry.getInfoList().clear();
+
+		// 
+		int maxInfoLength = jmdictEntryInfoList.size();
+		
+		if (polishJapaneseEntryInfoList.size() > maxInfoLength) {
+			maxInfoLength = polishJapaneseEntryInfoList.size();
+		}
+		
+		for (int infoIdx = 0; infoIdx < maxInfoLength; ++infoIdx) {
+			
+			// stare info
+			// FM_FIXME: fixme(): kod "pol" podczas wyszukiwania
+			Info polishJapaneseEntryInfo = infoIdx < polishJapaneseEntryInfoList.size() ? polishJapaneseEntryInfoList.get(infoIdx) : null;
+
+			// liczymy hash dla polskiego info
+			String polishJapaneseEntryInfoHash = getHashForInfo(polishJapaneseEntryInfo);
+			
+			// nowe info
+			// FM_FIXME: fixme(): kod "eng" podczas wyszukiwania
+			Info jmdictEntryInfo = infoIdx < jmdictEntryInfoList.size() ? jmdictEntryInfoList.get(infoIdx) : null;
+
+			// liczymy hash dla nowego info
+			String jmdictEntryInfoHash = getHashForInfo(jmdictEntryInfo);
+
+			//
+			
+			if (polishJapaneseEntryInfo == null && jmdictEntryInfo == null) {
+				throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie
+			}
+			
+			// porownujemy hash
+			if (polishJapaneseEntryInfoHash.equals(jmdictEntryInfoHash) == true) { // hash ten sam, nie bylo zmiany znaczenia w nowym slowniku
+				
+				// bierzemy nowy sense + aktualizuje polskie znaczenie
+				List<Gloss> polishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+				List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+				
+				jmdictEntrySense.getGlossList().addAll(polishJapaneseEntrySenseGlossPolList);
+				jmdictEntrySense.getAdditionalInfoList().addAll(polishJapaneseEntrySenseAdditionalInfoPolList);
+				
+				polishJapaneseEntry.getSenseList().add(jmdictEntrySense);
+				
+				fixme();
+				
+			} else { // jest jakas zmiana
+				todo();
+			}			
+		}		
+		
+		/////////////////////////////////////
+				
 		// aktualizacja sense
 		List<Sense> polishJapaneseEntrySenseList = new ArrayList<>(polishJapaneseEntry.getSenseList());
 		List<Sense> jmdictEntrySenseList = jmdictEntry.getSenseList();
@@ -3212,9 +3267,23 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		return needManuallyChange;
 	}
 	
+	private String getHashForInfo(Info info) {
+		
+		StringWriter stringWriter = new StringWriter();
+		
+		if (info != null) {
+			stringWriter.write(info.getInfType() != null ? info.getInfType().name() : "");
+			stringWriter.write(info.getValue());
+		}
+		
+		return DigestUtils.sha256Hex(stringWriter.toString());
+	}
+	
 	private String getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(JMdict.Entry entry, Sense sense, List<Gloss> glossList, List<SenseAdditionalInfo> additionalInfoList) {
 		
 		StringWriter stringWriter = new StringWriter();
+		
+		// FM_FIXME: tu bedzie zmiana, wyczyszczenie po zakonczeniu migracji
 		
 		for (LanguageSource languageSource : entry.getLanguageSourceList__()) {
 			
