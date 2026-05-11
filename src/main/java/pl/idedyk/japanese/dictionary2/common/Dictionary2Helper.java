@@ -149,7 +149,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		//
 				
-		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e_NG");
+		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e_NG_TEST"); // FM_FIXME: TEST
 		
 		//
 		
@@ -819,7 +819,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				entryPartConverterCommon.parseCsv(csvReader, newEntry);
 
-			} else if (fieldType == EntryHumanCsvFieldType.INFO) { // common
+			} else if (fieldType == EntryHumanCsvFieldType.INFO_ENG || fieldType == EntryHumanCsvFieldType.INFO_POL) { // info eng/pol
 				
 				entryPartConverterInfo.parseCsv(csvReader, newEntry);
 
@@ -1145,7 +1145,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		READING,
 		
 		COMMON,
-		INFO,
+		INFO_ENG,
+		INFO_POL,
 		
 		SENSE_COMMON,
 		SENSE_ENG,
@@ -1569,10 +1570,21 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					csvWriter.write(""); columnsNo++;
 				}
 				
-				csvWriter.write(EntryHumanCsvFieldType.INFO.name());  columnsNo++;
-				csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
+				EntryHumanCsvFieldType fieldType = null;
 				
-				csvWriter.write(info.getLang());  columnsNo++;				
+				if ("eng".equals(info.getLang()) == true) {
+					fieldType = EntryHumanCsvFieldType.INFO_ENG;
+					
+				} else if ("pol".equals(info.getLang()) == true) {
+					fieldType = EntryHumanCsvFieldType.INFO_POL;
+					
+				} else {
+					throw new RuntimeException(); // to nigdy nie powinno zdarzyc sie
+				}
+				
+				csvWriter.write(fieldType.name());  columnsNo++;
+				csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
+								
 				csvWriter.write(info.getInfType().value());  columnsNo++;
 				csvWriter.write(info.getValue());  columnsNo++;
 				
@@ -1589,15 +1601,23 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			EntryHumanCsvFieldType fieldType = EntryHumanCsvFieldType.valueOf(csvReader.get(0));
 			
-			if (fieldType != EntryHumanCsvFieldType.INFO) {
+			String lang = null;
+			
+			if (fieldType == EntryHumanCsvFieldType.INFO_ENG) {
+				lang = "eng";
+				
+			} else if (fieldType == EntryHumanCsvFieldType.INFO_POL) {
+				lang = "pol";
+				
+			} else {
 				throw new RuntimeException(fieldType.name());
 			}
 			
 			Info info = new Info();
 			
-			info.setLang(csvReader.get(2));			
-			info.setInfType(InfoType.fromValue(csvReader.get(3)));
-			info.setValue(csvReader.get(4));
+			info.setLang(lang);			
+			info.setInfType(InfoType.fromValue(csvReader.get(2)));
+			info.setValue(csvReader.get(3));
 						
 			entry.getInfoList().add(info);
 		}
