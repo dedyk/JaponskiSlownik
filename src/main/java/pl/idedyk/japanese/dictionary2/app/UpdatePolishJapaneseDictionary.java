@@ -30,6 +30,9 @@ public class UpdatePolishJapaneseDictionary {
 		
 		EntryAdditionalData entryAdditionalData = new EntryAdditionalData();
 		
+		// aktualizacja naglowka
+		dictionaryHelper.updateHeader(dictionaryHelper.getPolishJMdict(), dictionaryHelper.getJMdict());
+		
 		// chodzimy po wszystkich elementach
 		for (Entry currentPolishEntry : allPolishDictionaryEntryList) {
 			
@@ -69,7 +72,7 @@ public class UpdatePolishJapaneseDictionary {
 		
 		// zapisanie czesciowo zmienionego polskiego slownika
 		// FM_FIXME: aktualizacja daty i wersji		
-		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update.csv", allPolishDictionaryEntryList, entryAdditionalData);
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update.csv", dictionaryHelper.getPolishJMdict(), entryAdditionalData);
 		
 		saveEntryListAsHumanCsvConfig.shiftCells = true;
 		saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;

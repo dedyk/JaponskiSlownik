@@ -178,6 +178,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	//
 	
 	private File polishDictionaryFile;
+	private JMdict polishJmdict;
 	private Map<Integer, JMdict.Entry> polishDictionaryEntryListMap;
 	
 	//
@@ -1186,6 +1187,36 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}
 			
 			csvWriter.endRecord();
+			
+			// rozdzielenie, aby zawartosc byla bardziej przejrzysta
+			
+			boolean useTextQualifier = csvWriter.getUseTextQualifier();
+			
+			columnsNo = 0;
+			
+			// wypelniacz 2
+			csvWriter.setUseTextQualifier(false); // takie obejscie dziwnego zachowania
+			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write("");
+			}
+			
+			csvWriter.endRecord();
+			
+			//
+			
+			columnsNo = 0;
+			
+			// wypelniacz 3			
+			for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+				csvWriter.write(null);
+			}
+			
+			csvWriter.endRecord();
+			
+			//
+			
+			csvWriter.setUseTextQualifier(useTextQualifier);
 		}
 
 		public void parseCsv(CsvReader csvReader, JMdict jmdict) throws IOException, DatatypeConfigurationException {
@@ -2249,18 +2280,25 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	private void readPolishDictionary() throws Exception {
 		
 		// wczytywanie slownika
-		if (polishDictionaryEntryListMap == null) {
+		if (polishJmdict == null) {
 			
 			System.out.println("Reading polish dictionary file: " + polishDictionaryFile);
 			
 			polishDictionaryEntryListMap = new LinkedHashMap<>();
 			
-			JMdict polishJmdict = readEntryListFromHumanCsv(polishDictionaryFile.getAbsolutePath());
+			polishJmdict = readEntryListFromHumanCsv(polishDictionaryFile.getAbsolutePath());
 									
 			for (Entry entry : polishJmdict.getEntryList()) {
 				polishDictionaryEntryListMap.put(entry.getEntryId(), entry);
 			}
 		}		
+	}
+	
+	public JMdict getPolishJMdict() throws Exception {
+		
+		readPolishDictionary();
+		
+		return polishJmdict;
 	}
 	
 	public Entry getEntryFromPolishDictionary(Integer entryId) throws Exception {
@@ -2984,6 +3022,11 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	public List<PolishJapaneseEntry> getOldPolishJapaneseEntriesList() throws Exception {
 		return oldWordGeneratorHelper.getPolishJapaneseEntriesList();
+	}
+	
+	public void updateHeader(JMdict polishJMdict, JMdict newJMdict) {
+		polishJMdict.setVersion(newJMdict.getVersion());
+		polishJMdict.setCreated(newJMdict.getCreated());		
 	}
 	
 	public boolean updatePolishJapaneseEntry(Entry polishJapaneseEntry, Entry jmdictEntry, EntryAdditionalData entryAdditionalData) {

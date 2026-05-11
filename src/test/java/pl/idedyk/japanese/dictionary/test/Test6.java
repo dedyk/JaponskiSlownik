@@ -111,8 +111,9 @@ public class Test6 {
 			});
 		}
 		
-		JMdict polishJmdict = new JMdict();
+		JMdict polishJmdict = dictionary2Helper.getPolishJMdict();
 		
+		polishJmdict.getEntryList().clear();		
 		polishJmdict.getEntryList().addAll(allPolishDictionaryEntryList);
 		
 		dictionary2Helper.saveJMdictAsXml(polishJmdict, "/tmp/a/polishJMDict2.xml");
