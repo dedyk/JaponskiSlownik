@@ -36,6 +36,12 @@ public class UpdatePolishJapaneseDictionary {
 		// chodzimy po wszystkich elementach
 		for (Entry currentPolishEntry : allPolishDictionaryEntryList) {
 			
+			// FM_FIXME: tymczasowo
+			if (currentPolishEntry.getEntryId().intValue() == 2654270) { 
+				int a = 0;
+				a++;
+			}
+			
 			// szukamy wpisu w angielskim slowniku
 			Entry jmdictEntry = dictionaryHelper.getJMdictEntry(currentPolishEntry.getEntryId());
 			
