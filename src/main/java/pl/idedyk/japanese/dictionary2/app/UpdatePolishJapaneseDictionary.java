@@ -15,6 +15,7 @@ public class UpdatePolishJapaneseDictionary {
 	public static void main(String[] args) throws Exception {
 		
 		// FM_FIXME: sprawdzic, czy to dziala
+		// FM_FIXME: duplikaty przy info <- wykrywanie
 		
 		// wczytywanie pomocnika slownikowego
 		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
@@ -74,7 +75,7 @@ public class UpdatePolishJapaneseDictionary {
 		
 		// dodajemy stare znaczenia
 		saveEntryListAsHumanCsvConfig.addOldEnglishPolishTranslatesDuringDictionaryUpdate = true;
-		saveEntryListAsHumanCsvConfig.addDeleteSenseDuringDictionaryUpdate = false;
+		saveEntryListAsHumanCsvConfig.addDeleteInfoSenseDuringDictionaryUpdate = false;
 		
 		// zapisanie czesciowo zmienionego polskiego slownika
 		// FM_FIXME: aktualizacja daty i wersji		
@@ -83,7 +84,7 @@ public class UpdatePolishJapaneseDictionary {
 		saveEntryListAsHumanCsvConfig.shiftCells = true;
 		saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
 		
-		saveEntryListAsHumanCsvConfig.addDeleteSenseDuringDictionaryUpdate = true;
+		saveEntryListAsHumanCsvConfig.addDeleteInfoSenseDuringDictionaryUpdate = true;
 		
 		// zapisanie elementow, ktore nalezy manualnie zmodyfikowac
 		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update-manually.csv", entryManuallyChangeList, entryAdditionalData);

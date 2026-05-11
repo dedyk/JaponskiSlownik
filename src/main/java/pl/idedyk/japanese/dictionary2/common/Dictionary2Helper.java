@@ -712,7 +712,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		new EntryPartConverterCommon().writeToCsv(config, csvWriter, entry);
 
 		// info
-		new EntryPartConverterInfo().writeToCsv(config, csvWriter, entry);
+		new EntryPartConverterInfo().writeToCsv(config, csvWriter, entry, entryAdditionalData);
 		
 		// sense
 		new EntryPartConverterSense().writeToCsv(config, csvWriter, entry, entryAdditionalData);
@@ -1116,7 +1116,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		public boolean addOldPolishTranslates = false;
 		public boolean addOldEnglishPolishTranslatesDuringDictionaryUpdate = false;
-		public boolean addDeleteSenseDuringDictionaryUpdate = false;
+		public boolean addDeleteInfoSenseDuringDictionaryUpdate = false;
 		public boolean addProposalPolishTranslates = false;
 		
 		public boolean markRomaji = false;
@@ -1559,7 +1559,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	
 	private class EntryPartConverterInfo {
 		
-		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
+		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry, EntryAdditionalData entryAdditionalData) throws IOException {
 
 			List<Info> infoList = entry.getInfoList();
 			
@@ -1588,12 +1588,70 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				csvWriter.write(info.getInfType().value());  columnsNo++;
 				csvWriter.write(info.getValue());  columnsNo++;
 				
+				//
+				
+				// sprawdzamy, czy cos zostalo przygotowane
+				EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(entry.getEntryId());
+
+				
+				if (config.addOldEnglishPolishTranslatesDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.updateDictionaryInfoMap != null) { // podczas aktualizacji slownika jakis info zmienil sie
+					
+					EntryAdditionalDataEntry$UpdateDictionaryInfo entryAdditionalDataEntry$UpdateDictionaryInfo = entryAdditionalDataEntry.updateDictionaryInfoMap.get(System.identityHashCode(info));
+					
+					if (entryAdditionalDataEntry$UpdateDictionaryInfo != null) { // podczas aktualizacji slownika, jakis info zmienil sie, wpisanie starego polskiego znaczenia
+						
+						StringWriter sb = new StringWriter();
+						
+						// dodajemy stare polskie info
+						sb.append("STARE_INFO\n" + "---\n---\n" + entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getInfType().value() + "\n---\n"
+								+ entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getValue());
+						
+						// dodajemy stare angielskie tlumaczenie
+						sb.append("\n---\n---\nSTARE_ANGIELSKIE_INFO (" +
+								(entryAdditionalDataEntry$UpdateDictionaryInfo.infoEquals == true ? "IDENTYCZNE" : "RÓŻNICA") + ")\n---\n---\n");
+												
+						sb.append(entryAdditionalDataEntry$UpdateDictionaryInfo.oldEnglishInfo.getInfType().value() + "\n---\n"
+								+ entryAdditionalDataEntry$UpdateDictionaryInfo.oldEnglishInfo.getValue());							
+						
+						csvWriter.write(sb.toString()); columnsNo++;
+					}
+				}
+				
 				// wypelniacz			
 				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
 					csvWriter.write(null);
 				}
 				
 				csvWriter.endRecord();
+			}
+			
+			// sprawdzamy, czy cos zostalo przygotowane
+			EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(entry.getEntryId());
+			
+			// podczas aktualizacji slownika jakis info zostal skasowany, tymczasowo wpisanie starych info'ow ;-)
+			if (config.addDeleteInfoSenseDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.deleteDictionaryInfoListDuringUpdateDictionary != null) { 				
+								
+				for (EntryAdditionalDataEntry$UpdateDictionaryInfo entryAdditionalDataEntry$UpdateDictionaryInfo : entryAdditionalDataEntry.deleteDictionaryInfoListDuringUpdateDictionary) {
+					
+					int columnsNo = 0;
+					
+					if (config.shiftCells == true) {
+						csvWriter.write(""); columnsNo++;
+					}
+					
+					csvWriter.write(EntryHumanCsvFieldType.INFO_POL.name() + "_DELETE"); columnsNo++;		
+					csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
+					
+					csvWriter.write("USUNIETE_INFO\n" + "---\n---\n" + entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getInfType().value() + "\n---\n"
+							+ entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getValue());
+					
+					// wypelniacz			
+					for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
+						csvWriter.write(null);
+					}
+
+					csvWriter.endRecord();
+				}				
 			}
 		}
 		
@@ -1742,7 +1800,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(entry.getEntryId());
 			
 			// podczas aktualizacji slownika jakis sens zostal skasowany, tymczasowo wpisanie starych sense'ow
-			if (config.addDeleteSenseDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary != null) { 				
+			if (config.addDeleteInfoSenseDuringDictionaryUpdate == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary != null) { 				
 								
 				for (EntryAdditionalDataEntry$UpdateDictionarySense entryAdditionalDataEntry$UpdateDictionarySense : entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary) {
 					
@@ -3182,41 +3240,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					polishJapaneseEntryPolInfo = createEmptyPolishInfo(jmdictEntryInfo);					
 				}
 				
-				/*
-				// FM_FIXME: tymczasowo
-				
-				// pobieramy liste polskich info z polskiego slownika
+				// pobieramy liste polskich info z polskiego slownika i stare polskie info z polskiego slownika (jesli istnieje)
 				List<Info> polishJapaneseEntryPolInfoList = polishJapaneseEntryInfoList.stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
-				Info polishJapaneseEntryPolInfo = infoIdx < polishJapaneseEntryPolInfoList.size() ? polishJapaneseEntryPolInfoList.get(infoIdx) : null;				
+				Info oldPolishJapaneseEntryPolInfo = infoIdx < polishJapaneseEntryPolInfoList.size() ? polishJapaneseEntryPolInfoList.get(infoIdx) : null;				
 												
 				// uzupelniamy o stare info
-				if (polishJapaneseEntryPolInfo != null) {
+				if (oldPolishJapaneseEntryPolInfo != null) {
 					// FM_FIXME: uzupelnic implementacje, update lub delete
-					
-					
-					
-				}
-				*/
-				
-				if (jmdictEntryInfo != null) {				
-					polishJapaneseEntry.getInfoList().add(jmdictEntryInfo);
-					
-					if (polishJapaneseEntryPolInfo != null) {
-						polishJapaneseEntry.getInfoList().add(polishJapaneseEntryPolInfo);
-					}
-				}				
-				
-				/*
-				// uzupelniamy o stare tlumaczenie
-				if (polishJapaneseEntrySense != null) {
-					
-					// bierzmy stare angielskie znaczenia
-					List<Gloss> englishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
-					List<SenseAdditionalInfo> englishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
-					
-					// bierzemy stare polskie znaczenia
-					List<Gloss> polishJapaneseEntrySenseGlossPolList = polishJapaneseEntrySense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
-					List<SenseAdditionalInfo> polishJapaneseEntrySenseAdditionalInfoPolList = polishJapaneseEntrySense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
 					
 					// tworzenie struktury pomocniczej
 					EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(jmdictEntry.getEntryId());
@@ -3227,35 +3257,36 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 						entryAdditionalData.jmdictEntryAdditionalDataEntryMap.put(jmdictEntry.getEntryId(), entryAdditionalDataEntry);
 					}
 					
-					if (jmdictEntrySense != null) {
-												
-						if (entryAdditionalDataEntry.updateDictionarySenseMap == null) {		
-							entryAdditionalDataEntry.updateDictionarySenseMap = new TreeMap<>();
+					// jesli jest angielskie info
+					if (jmdictEntryInfo != null) {
+						
+						if (entryAdditionalDataEntry.updateDictionaryInfoMap == null) {		
+							entryAdditionalDataEntry.updateDictionaryInfoMap = new TreeMap<>();
 						}
 						
-						entryAdditionalDataEntry.updateDictionarySenseMap.put(System.identityHashCode(jmdictEntrySense), 
-								new EntryAdditionalDataEntry$UpdateDictionarySense(
-										equalsGlossList(jmdictEntrySenseGlossEngList, englishJapaneseEntrySenseGlossPolList),
-										equalsAdditionalInfoList(jmdictEntrySenseAdditionalInfoEngList, englishJapaneseEntrySenseAdditionalInfoPolList),
-										englishJapaneseEntrySenseGlossPolList, englishJapaneseEntrySenseAdditionalInfoPolList,
-										polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));
+						entryAdditionalDataEntry.updateDictionaryInfoMap.put(System.identityHashCode(polishJapaneseEntryPolInfo), 
+								new EntryAdditionalDataEntry$UpdateDictionaryInfo(
+										false,
+										polishJapaneseEntryEngInfo, oldPolishJapaneseEntryPolInfo));
 						
 					} else {
 						
-						if (entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary == null) {
-							entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary = new ArrayList<>();
+						if (entryAdditionalDataEntry.deleteDictionaryInfoListDuringUpdateDictionary == null) {
+							entryAdditionalDataEntry.deleteDictionaryInfoListDuringUpdateDictionary = new ArrayList<>();
 						}
 						
 						// wpisanie dodatkowych znaczen z polskiego slownika
-						entryAdditionalDataEntry.deleteDictionarySenseListDuringUpdateDictionary.add(
-								new EntryAdditionalDataEntry$UpdateDictionarySense(
-										equalsGlossList(jmdictEntrySenseGlossEngList, englishJapaneseEntrySenseGlossPolList),
-										equalsAdditionalInfoList(jmdictEntrySenseAdditionalInfoEngList, englishJapaneseEntrySenseAdditionalInfoPolList),
-										englishJapaneseEntrySenseGlossPolList, englishJapaneseEntrySenseAdditionalInfoPolList,
-										polishJapaneseEntrySenseGlossPolList, polishJapaneseEntrySenseAdditionalInfoPolList));						
-					}					
+						entryAdditionalDataEntry.deleteDictionaryInfoListDuringUpdateDictionary.add(
+								new EntryAdditionalDataEntry$UpdateDictionaryInfo(
+										false,
+										polishJapaneseEntryEngInfo, oldPolishJapaneseEntryPolInfo));						
+					}						
+				}
+				
+				if (jmdictEntryInfo != null) {				
+					polishJapaneseEntry.getInfoList().add(jmdictEntryInfo);
+					polishJapaneseEntry.getInfoList().add(polishJapaneseEntryPolInfo);
 				}				
-				*/
 			}			
 		}		
 		
@@ -4449,11 +4480,14 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		private List<PolishJapaneseEntry> oldPolishJapaneseEntryList;
 		
+		private Map<Integer, EntryAdditionalDataEntry$UpdateDictionaryInfo> updateDictionaryInfoMap;
 		private Map<Integer, EntryAdditionalDataEntry$UpdateDictionarySense> updateDictionarySenseMap;
 		
-		private List<EntryAdditionalDataEntry$UpdateDictionarySense> deleteDictionarySenseListDuringUpdateDictionary;
+		private List<EntryAdditionalDataEntry$UpdateDictionaryInfo> deleteDictionaryInfoListDuringUpdateDictionary;
+		private List<EntryAdditionalDataEntry$UpdateDictionarySense> deleteDictionarySenseListDuringUpdateDictionary;		
 		
 		private Map<Integer, EntryAdditionalDataEntry$ProposalNewPolishTranslate> proposalNewPolishTranslateMap;
+		// FM_FIXME: proposal dla info
 		
 	}
 	
@@ -4481,6 +4515,22 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			this.oldPolishGlossList = oldPolishGlossList;
 			this.oldPolishSenseAdditionalInfoList = oldPolishSenseAdditionalInfoList;
 		}
+	}
+	
+	private static class EntryAdditionalDataEntry$UpdateDictionaryInfo {
+		
+		private boolean infoEquals;
+		
+		private Info oldEnglishInfo;
+		private Info oldPolishInfo;
+		
+		public EntryAdditionalDataEntry$UpdateDictionaryInfo(boolean infoEquals, Info oldEnglishInfo, Info oldPolishInfo) {
+			this.infoEquals = infoEquals;
+			
+			this.oldEnglishInfo = oldEnglishInfo;
+			this.oldPolishInfo = oldPolishInfo;
+		}
+		
 	}
 	
 	private static class EntryAdditionalDataEntry$ProposalNewPolishTranslate {
