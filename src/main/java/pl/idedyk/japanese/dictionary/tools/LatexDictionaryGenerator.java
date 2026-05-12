@@ -512,8 +512,8 @@ public class LatexDictionaryGenerator {
 				List<LanguageSource> senseLanguageSourceList = new ArrayList<>();
 				
 				// FM_FIXME: sprawdzic, jak to wyglada na wydruku
-				senseLanguageSourceList.addAll(kanjiKanaPair.getEntry().getLanguageSourceList__());
-				senseLanguageSourceList.addAll(sense.getLanguageSourceList__());
+				senseLanguageSourceList.addAll(kanjiKanaPair.getEntry().getLanguageSourceList());
+				senseLanguageSourceList.addAll(sense.getLanguageSourceList());
 								
 				for (int senseLanguageSourceListIdx = 0; senseLanguageSourceListIdx < senseLanguageSourceList.size(); ++senseLanguageSourceListIdx) {
 					

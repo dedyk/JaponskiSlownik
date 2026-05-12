@@ -619,8 +619,8 @@ public class YomichanGenerator {
 					{
 						List<LanguageSource> senseLanguageSourceList = new ArrayList<>();
 						
-						senseLanguageSourceList.addAll(jmdictEntry.getLanguageSourceList__());
-						senseLanguageSourceList.addAll(currentSense.getLanguageSourceList__());
+						senseLanguageSourceList.addAll(jmdictEntry.getLanguageSourceList());
+						senseLanguageSourceList.addAll(currentSense.getLanguageSourceList());
 														
 						for (LanguageSource languageSource : senseLanguageSourceList) {
 							

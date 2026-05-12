@@ -221,7 +221,7 @@ public class JMEDictSearcher {
 				}				
 			}
 			
-			List<LanguageSource> languageSourceList = sense.getLanguageSourceList__();
+			List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
 			
 			if (languageSourceList.size() > 0) {
 				System.out.println("\n\t\tJęzykowe źródło");

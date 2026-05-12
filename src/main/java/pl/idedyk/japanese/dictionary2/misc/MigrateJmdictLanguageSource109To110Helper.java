@@ -23,7 +23,7 @@ public class MigrateJmdictLanguageSource109To110Helper {
 			List<LanguageSource> languageSourceList = new ArrayList<>();
 			
 			for (Sense sense : entry.getSenseList()) {
-				List<LanguageSource> senseLanguageSourceList = sense.getLanguageSourceList__();
+				List<LanguageSource> senseLanguageSourceList = sense.getLanguageSourceList();
 				
 				if (languageSourceList.size() == 0 && senseLanguageSourceList.size() > 0) { // mamy cos
 					languageSourceList.addAll(senseLanguageSourceList);
@@ -32,7 +32,7 @@ public class MigrateJmdictLanguageSource109To110Helper {
 				senseLanguageSourceList.clear();				
 			}
 			
-			entry.getLanguageSourceList__().addAll(languageSourceList);
+			entry.getLanguageSourceList().addAll(languageSourceList);
 		}		
 		
 		// zapis zmienionego slownika		

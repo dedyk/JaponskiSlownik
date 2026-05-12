@@ -355,10 +355,20 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					addTextFieldToDocument(document, JMdictLuceneFields.ROMAJI, romaji);
 				}
 				
-				List<LanguageSource> entryLanguageSourceList = entry.getLanguageSourceList__();
+				List<LanguageSource> entryLanguageSourceList = entry.getLanguageSourceList();
 				
 				for (LanguageSource languageSource : entryLanguageSourceList) {
 					addTextFieldToDocument(document, JMdictLuceneFields.LANGUAGE_SOURCE, languageSource.getValue());
+				}
+				
+				List<Info> infoList = entry.getInfoList();
+				
+				for (Info info : infoList) {
+					if (Arrays.asList("eng", "pol").contains(info.getLang()) == false) {
+						continue;
+					}
+					
+					addTextFieldToDocument(document, JMdictLuceneFields.INFO, info.getValue());
 				}
 
 				//
@@ -393,7 +403,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					
 					//
 					
-					List<LanguageSource> senseLanguageSourceList = sense.getLanguageSourceList__();
+					List<LanguageSource> senseLanguageSourceList = sense.getLanguageSourceList();
 					
 					for (LanguageSource languageSource : senseLanguageSourceList) {
 						addTextFieldToDocument(document, JMdictLuceneFields.LANGUAGE_SOURCE, languageSource.getValue());
@@ -527,6 +537,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		wordBooleanQuery.add(createTermQuery(new String[] { word }, JMdictLuceneFields.KANA), Occur.SHOULD);
 		wordBooleanQuery.add(createTermQuery(wordSplited, JMdictLuceneFields.ROMAJI), Occur.SHOULD);
 
+		wordBooleanQuery.add(createTermQuery(wordSplited, JMdictLuceneFields.INFO), Occur.SHOULD);
 		wordBooleanQuery.add(createTermQuery(wordSplited, JMdictLuceneFields.TRANSLATE), Occur.SHOULD);
 		wordBooleanQuery.add(createTermQuery(wordSplited, JMdictLuceneFields.LANGUAGE_SOURCE), Occur.SHOULD);
 		wordBooleanQuery.add(createTermQuery(wordSplited, JMdictLuceneFields.SENSE_ADDITIONAL_INFO), Occur.SHOULD);
@@ -548,6 +559,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		wordBooleanQuery.add(createPrefixQuery(new String[] { word }, JMdictLuceneFields.KANA), Occur.SHOULD);
 		wordBooleanQuery.add(createPrefixQuery(wordSplited, JMdictLuceneFields.ROMAJI), Occur.SHOULD);
 
+		wordBooleanQuery.add(createPrefixQuery(wordSplited, JMdictLuceneFields.INFO), Occur.SHOULD);
 		wordBooleanQuery.add(createPrefixQuery(wordSplited, JMdictLuceneFields.TRANSLATE), Occur.SHOULD);
 		wordBooleanQuery.add(createPrefixQuery(wordSplited, JMdictLuceneFields.LANGUAGE_SOURCE), Occur.SHOULD);
 		wordBooleanQuery.add(createPrefixQuery(wordSplited, JMdictLuceneFields.SENSE_ADDITIONAL_INFO), Occur.SHOULD);
@@ -1103,6 +1115,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		private static final String KANA = "kana";		
 		private static final String ROMAJI = "romaji";
 		
+		private static final String INFO = "info";
+		
 		private static final String TRANSLATE = "translate";		
 		private static final String SENSE_ADDITIONAL_INFO = "senseAdditionalInfo";		
 		private static final String LANGUAGE_SOURCE = "languageSource";		
@@ -1476,7 +1490,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		public void writeToCsv(SaveEntryListAsHumanCsvConfig config, CsvWriter csvWriter, Entry entry) throws IOException {
 			
-			List<LanguageSource> languageSourceList = entry.getLanguageSourceList__();
+			List<LanguageSource> languageSourceList = entry.getLanguageSourceList();
 			
 			if (languageSourceList.size() == 0) { // w tym rekordzie nie ma niczego innego, wiec aby zachowac wieksza zgodnosc z poprzednim zapisem nie tworzymy tego rekordu
 				return;
@@ -1549,7 +1563,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					
 					//
 					
-					entry.getLanguageSourceList__().add(languageSource);
+					entry.getLanguageSourceList().add(languageSource);
 				}
 				
 				languageSourceCsvReader.close();
@@ -1761,7 +1775,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				//
 				
-				List<LanguageSource> languageSourceList = sense.getLanguageSourceList__();
+				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
 				
 				StringWriter languageSourceCsvWriterString = new StringWriter();
 				CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceCsvWriterString, '|');
@@ -2132,7 +2146,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 						
 						//
 						
-						sense.getLanguageSourceList__().add(languageSource);
+						sense.getLanguageSourceList().add(languageSource);
 					}
 					
 					languageSourceCsvReader.close();
@@ -3183,8 +3197,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		// aktualizacja language source, czyscimy bezwarunkowo i dodajemy nowe
 		// ewentualna roznica zostanie wykrywa podczas liczenia hash-u sense		
-		polishJapaneseEntry.getLanguageSourceList__().clear();
-		polishJapaneseEntry.getLanguageSourceList__().addAll(jmdictEntry.getLanguageSourceList__());		
+		polishJapaneseEntry.getLanguageSourceList().clear();
+		polishJapaneseEntry.getLanguageSourceList().addAll(jmdictEntry.getLanguageSourceList());		
 		
 		// aktualizacja info
 		
@@ -3446,7 +3460,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		// FM_FIXME: tu bedzie zmiana, wyczyszczenie po zakonczeniu migracji
 		
-		for (LanguageSource languageSource : entry.getLanguageSourceList__()) {
+		for (LanguageSource languageSource : entry.getLanguageSourceList()) {
 			
 			stringWriter.write(languageSource.getLang());
 			stringWriter.write(languageSource.getLsType() != null ? languageSource.getLsType().name() : "");
@@ -3456,7 +3470,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		// liczymy hash	
 		if (sense != null) {
-			for (LanguageSource languageSource : sense.getLanguageSourceList__()) {
+			for (LanguageSource languageSource : sense.getLanguageSourceList()) {
 				
 				stringWriter.write(languageSource.getLang());
 				stringWriter.write(languageSource.getLsType() != null ? languageSource.getLsType().name() : "");
@@ -3629,7 +3643,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		if (entryFromPolishDictionary.getSenseList().size() != entryToCompare.getSenseList().size()) {
 			throw new RuntimeException("Different sense list for: " + entryFromPolishDictionary.getEntryId());
 		}
-		
+				
 		for (int senseIdx = 0; senseIdx < entryFromPolishDictionary.getSenseList().size(); ++senseIdx) {
 			
 			// pobieramy znaczenia z obu wpisow
@@ -3715,6 +3729,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		for (Sense sense : kanjiKanaPair.getSenseList()) {
 			
+			List<Info> infoEngList = entry.getInfoList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
 			List<Gloss> glossEngList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
 			List<SenseAdditionalInfo> additionalInfoEngList = sense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
 			
@@ -3724,15 +3739,19 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				List<MiscEnum> miscList = sense.getMiscList();
 				
-				if (miscList != null && miscList.size() > 0) {
-					
+				if (miscList != null && miscList.size() > 0) {					
 					for (MiscEnum miscEnum : miscList) {
 						result.add("MiscInfo: " + dictionaryEntryJMEdictEntityMapper.getMiscEnumAsEntity(miscEnum));
 					}
 				}
+				
+				if (infoEngList != null && infoEngList.size() > 0) {					
+					for (Info info : infoEngList) {
+						result.add("Info: " + info.getValue());
+					}
+				}
 								
-				if (additionalInfoEngList != null && additionalInfoEngList.size() > 0) {
-					
+				if (additionalInfoEngList != null && additionalInfoEngList.size() > 0) {					
 					for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoEngList) {
 						result.add("AdditionalInfo: " + senseAdditionalInfo.getValue());
 					}
@@ -3779,12 +3798,19 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 		for (Sense sense : kanjiKanaPair.getSenseList()) {
 			
+			List<Info> infoEngList = kanjiKanaPair.getEntry().getInfoList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
 			List<Gloss> glossEngList = sense.getGlossList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
 			List<SenseAdditionalInfo> additionalInfoEngList = sense.getAdditionalInfoList().stream().filter(senseAdditionalInfo -> (senseAdditionalInfo.getLang().equals("eng") == true)).collect(Collectors.toList());
 			
 			for (Gloss gloss : glossEngList) {
 
 				StringBuffer translate = new StringBuffer(gloss.getValue());
+				
+				if (infoEngList != null && infoEngList.size() > 0) {					
+					for (Info info : infoEngList) {
+						translate.append("\n     " + info.getValue());
+					}
+				}
 				
 				if (additionalInfoEngList != null && additionalInfoEngList.size() > 0) {
 					
