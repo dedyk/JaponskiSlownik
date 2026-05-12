@@ -28,7 +28,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Xref;
 
 public class LatexDictionaryGenerator {
 	
@@ -493,19 +493,28 @@ public class LatexDictionaryGenerator {
 				}
 				
 				// informacje dodatkowe do tlumaczenia
-				List<SenseAdditionalInfo> senseAdditionalInfoList = sense.getAdditionalInfoList().stream().filter(additionalInfo -> (additionalInfo.getLang().equals("pol") == true)).collect(Collectors.toList());
+				// FM_FIXME: zobaczyc, jak to wyglada na wydruku
+				
+				List<String> senseAdditionalInfoList = new ArrayList<>();
+				
+				senseAdditionalInfoList.addAll(kanjiKanaPair.getEntry().getInfoList().stream().filter(info -> (info.getLang().equals("pol") == true)).map(m -> m.getValue()).collect(Collectors.toList()));
+				senseAdditionalInfoList.addAll(sense.getAdditionalInfoList().stream().filter(additionalInfo -> (additionalInfo.getLang().equals("pol") == true)).map(m -> m.getValue()).collect(Collectors.toList()));
 
 				for (int senseAdditionalInfoListIdx = 0; senseAdditionalInfoListIdx < senseAdditionalInfoList.size(); ++senseAdditionalInfoListIdx) {
 					
-					SenseAdditionalInfo senseAdditionalInfo = senseAdditionalInfoList.get(senseAdditionalInfoListIdx);
+					String senseAdditionalInfo = senseAdditionalInfoList.get(senseAdditionalInfoListIdx);
 					
 					result.append(" ").append(cdot()).append(" ");
-					result.append(escapeLatexChars(senseAdditionalInfo.getValue())).append(" ");
+					result.append(escapeLatexChars(senseAdditionalInfo)).append(" ");
 				}
 				
 				// informacja o pochodzeniu slowa z innego jezyka
-				List<LanguageSource> senseLanguageSourceList = sense.getLanguageSourceList();
+				List<LanguageSource> senseLanguageSourceList = new ArrayList<>();
 				
+				// FM_FIXME: sprawdzic, jak to wyglada na wydruku
+				senseLanguageSourceList.addAll(kanjiKanaPair.getEntry().getLanguageSourceList__());
+				senseLanguageSourceList.addAll(sense.getLanguageSourceList__());
+								
 				for (int senseLanguageSourceListIdx = 0; senseLanguageSourceListIdx < senseLanguageSourceList.size(); ++senseLanguageSourceListIdx) {
 					
 					LanguageSource languageSource = senseLanguageSourceList.get(senseLanguageSourceListIdx);
@@ -539,17 +548,18 @@ public class LatexDictionaryGenerator {
 				}
 				
 				// referencja do innego slowa
-				List<String> referenceToAnotherKanjiKanaList = sense.getReferenceToAnotherKanjiKanaList();
+				// FM_FIXME: zobaczyc, jak to wyglada na wydruku
+				List<Xref> referenceToAnotherKanjiKanaList = sense.getReferenceToAnotherKanjiKanaList();
 				
 				for (int referenceToAnotherKanjiKanaListIdx = 0; referenceToAnotherKanjiKanaListIdx < referenceToAnotherKanjiKanaList.size(); ++referenceToAnotherKanjiKanaListIdx) {
 					
-					String referenceToAnotherKanjiKana = referenceToAnotherKanjiKanaList.get(referenceToAnotherKanjiKanaListIdx);
+					Xref referenceToAnotherKanjiKana = referenceToAnotherKanjiKanaList.get(referenceToAnotherKanjiKanaListIdx);
 					
 					if (referenceToAnotherKanjiKanaListIdx == 0) {
 						result.append(" ").append(cdot()).append(" ").append(rightarrow()).append(" ");
 					}
 					
-					result.append(referenceToAnotherKanjiKana);
+					result.append(referenceToAnotherKanjiKana.getValue());
 
 					if (referenceToAnotherKanjiKanaListIdx != referenceToAnotherKanjiKanaList.size() - 1) {
 						result.append("; ");
