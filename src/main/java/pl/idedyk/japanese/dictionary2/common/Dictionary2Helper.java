@@ -1691,7 +1691,11 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			String infTypeAndValue = csvReader.get(2);						
 			String infTypeAndValueSplited[] = infTypeAndValue.split("\\|");
-						
+			
+			if (infTypeAndValueSplited.length != 2) {
+				throw new RuntimeException("Incorrent info: " + infTypeAndValue);
+			}
+			
 			info.setInfType(InfoType.fromValue(infTypeAndValueSplited[1]));
 			info.setValue(infTypeAndValueSplited[0]);
 						
