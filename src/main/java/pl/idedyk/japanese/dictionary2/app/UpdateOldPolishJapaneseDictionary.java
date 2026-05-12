@@ -11,9 +11,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 public class UpdateOldPolishJapaneseDictionary {
 
 	public static void main(String[] args) throws Exception {
-		
-		// FM_FIXME: sprawdzic, czy to dziala
-		
+				
 		// wczytywanie pomocnika slownikowego
 		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 

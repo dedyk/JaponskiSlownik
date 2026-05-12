@@ -650,7 +650,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	}
 	
 	public void saveEntryListAsHumanCsv(SaveEntryListAsHumanCsvConfig config, String fileName, List<Entry> entryList, EntryAdditionalData entryAdditionalData) throws Exception {
-		// FM_FIXME: nie wiem czy to dobrze
+
 		JMdict jmdict = new JMdict();
 		
 		jmdict.getEntryList().addAll(entryList);
@@ -3465,9 +3465,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	private String getHashForLanguageSourceAdditionalInfoAndGlossListInSenseList(JMdict.Entry entry, Sense sense, List<Gloss> glossList, List<SenseAdditionalInfo> additionalInfoList) {
 		
 		StringWriter stringWriter = new StringWriter();
-		
-		// FM_FIXME: tu bedzie zmiana, wyczyszczenie po zakonczeniu migracji
-		
+				
 		for (LanguageSource languageSource : entry.getLanguageSourceList()) {
 			
 			stringWriter.write(languageSource.getLang());

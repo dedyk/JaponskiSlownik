@@ -24,9 +24,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 public class GetEntryFromDictionary {
 
 	public static void main(String[] args) throws Exception {
-		
-		// FM_FIXME: sprawdzic, czy to dziala
-		
+				
 		// parser lini polecen
 		CommandLineParser commandLineParser = new DefaultParser();
 		

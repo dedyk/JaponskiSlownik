@@ -20,7 +20,7 @@ public class UpdateProposalPolishJapaneseTranslates {
 	
 	public static void main(String[] args) throws Exception {
 		
-		// FM_FIXME: sprawdzic, czy to dziala
+		// FM_FIXME: poprawic
 
 		// parser lini polecen
 		CommandLineParser commandLineParser = new DefaultParser();
