@@ -44,10 +44,6 @@ public class TestAllEnumTranslates {
 				
 				sense.getAdditionalInfoList().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCode(c));
 				sense.getAdditionalInfoList().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCodeWithoutValue(c));
-				
-				sense.getLanguageSourceList().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCode(c));
-				sense.getLanguageSourceList().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCodeWithoutValue(c));
-				sense.getLanguageSourceList().stream().filter(f -> f.getLsWasei() != null).map(m -> m.getLsWasei()).forEach(c -> Dictionary2Helper.translateToPolishLanguageSourceLsWaseiEnum(c));
 			}			
 		}
 

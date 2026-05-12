@@ -23,7 +23,7 @@ public class MigrateJmdictLanguageSource109To110Helper {
 			List<LanguageSource> languageSourceList = new ArrayList<>();
 			
 			for (Sense sense : entry.getSenseList()) {
-				List<LanguageSource> senseLanguageSourceList = sense.getLanguageSourceList();
+				List<LanguageSource> senseLanguageSourceList = sense.getLanguageSourceListFMFIXME();
 				
 				if (languageSourceList.size() == 0 && senseLanguageSourceList.size() > 0) { // mamy cos
 					languageSourceList.addAll(senseLanguageSourceList);

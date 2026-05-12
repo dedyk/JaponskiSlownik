@@ -403,11 +403,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					
 					//
 					
+					/*
 					List<LanguageSource> senseLanguageSourceList = sense.getLanguageSourceList();
 					
 					for (LanguageSource languageSource : senseLanguageSourceList) {
 						addTextFieldToDocument(document, JMdictLuceneFields.LANGUAGE_SOURCE, languageSource.getValue());
-					}					
+					}
+					*/					
 				}
 				
 				//
@@ -1775,7 +1777,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				//
 				
-				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
+				// FM_FIXME: usunac language source to po przemigrowaniu
+				List<LanguageSource> languageSourceList = sense.getLanguageSourceListFMFIXME();
 				
 				StringWriter languageSourceCsvWriterString = new StringWriter();
 				CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceCsvWriterString, '|');
@@ -2124,6 +2127,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				//
 								
 				// FM_FIXME: obsluga lsource w dwoch miejscach, a po zakonczeniu migracji usunac z tego miejsca
+				// FM_FIXME: usunac to po przemigrowaniu
 				{
 					String languageSourceListString = csvReader.get(9);
 					CsvReader languageSourceCsvReader = new CsvReader(new StringReader(languageSourceListString), '|');
@@ -2146,7 +2150,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 						
 						//
 						
-						sense.getLanguageSourceList().add(languageSource);
+						sense.getLanguageSourceListFMFIXME().add(languageSource);
 					}
 					
 					languageSourceCsvReader.close();
@@ -3469,8 +3473,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 		
 		// liczymy hash	
+		// FM_FIXME: usunac to po przemigrowaniu slownika
 		if (sense != null) {
-			for (LanguageSource languageSource : sense.getLanguageSourceList()) {
+			for (LanguageSource languageSource : sense.getLanguageSourceListFMFIXME()) {
 				
 				stringWriter.write(languageSource.getLang());
 				stringWriter.write(languageSource.getLsType() != null ? languageSource.getLsType().name() : "");

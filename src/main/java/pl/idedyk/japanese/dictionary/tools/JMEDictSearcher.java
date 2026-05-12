@@ -175,7 +175,26 @@ public class JMEDictSearcher {
 				System.out.println("\tInfo, typ: " + info.getInfType().value());
 				System.out.println("\tInfo, wartość: " + info.getValue());
 			}			
-		}		
+		}
+
+		List<LanguageSource> languageSourceList = kanjiKanaPair.getEntry().getLanguageSourceList();
+		
+		if (languageSourceList.size() > 0) {
+			System.out.println("\n\tJęzykowe źródło");
+			
+			for (LanguageSource languageSource : languageSourceList) {
+				System.out.println("\t\tWartość: " + languageSource.getValue());
+				System.out.println("\t\tJęzyk: " + languageSource.getLang());
+				
+				if (languageSource.getLsType() != null) {
+					System.out.println("\t\tTyp: " + languageSource.getLsType());
+				}
+				
+				if (languageSource.getLsWasei() != null) {
+					System.out.println("\t\tWasei: " + languageSource.getLsWasei());
+				}
+			}
+		}
 		
 		//
 		
@@ -201,8 +220,8 @@ public class JMEDictSearcher {
 			
 			if (sense.getMiscList().size() > 0) {
 				System.out.println("\t\tRóżne informacje: " + sense.getMiscList());
-			}			
-			
+			}		
+					
 			System.out.println("\n\t\tZnaczenie");
 			
 			List<Gloss> glossList = sense.getGlossList();
@@ -220,26 +239,7 @@ public class JMEDictSearcher {
 					System.out.println("\t\t\t" + senseAdditionalInfo.getValue());
 				}				
 			}
-			
-			List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
-			
-			if (languageSourceList.size() > 0) {
-				System.out.println("\n\t\tJęzykowe źródło");
-				
-				for (LanguageSource languageSource : languageSourceList) {
-					System.out.println("\t\t\tWartość: " + languageSource.getValue());
-					System.out.println("\t\t\tJęzyk: " + languageSource.getLang());
-					
-					if (languageSource.getLsType() != null) {
-						System.out.println("\t\t\tTyp: " + languageSource.getLsType());
-					}
-					
-					if (languageSource.getLsWasei() != null) {
-						System.out.println("\t\t\tWasei: " + languageSource.getLsWasei());
-					}
-				}
-			}
-			
+						
 			if (sense.getReferenceToAnotherKanjiKanaList().size() > 0) {
 				System.out.println("\n\t\tOdniesienie do innego słowa");
 				
