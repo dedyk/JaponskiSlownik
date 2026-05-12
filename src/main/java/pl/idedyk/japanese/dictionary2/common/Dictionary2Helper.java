@@ -1617,17 +1617,28 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 						StringWriter sb = new StringWriter();
 						
 						// dodajemy stare polskie info
-						sb.append("STARE_INFO\n" + "---\n---\n" + entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getInfType().value() + "\n---\n"
-								+ entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getValue());
+						sb.append("STARE_INFO\n" + "---\n---\n" + 
+								entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getValue() + "|" + entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getInfType().value());
 						
 						// dodajemy stare angielskie tlumaczenie
 						sb.append("\n---\n---\nSTARE_ANGIELSKIE_INFO (" +
 								(entryAdditionalDataEntry$UpdateDictionaryInfo.infoEquals == true ? "IDENTYCZNE" : "RÓŻNICA") + ")\n---\n---\n");
 												
-						sb.append(entryAdditionalDataEntry$UpdateDictionaryInfo.oldEnglishInfo.getInfType().value() + "\n---\n"
-								+ entryAdditionalDataEntry$UpdateDictionaryInfo.oldEnglishInfo.getValue());							
+						sb.append(entryAdditionalDataEntry$UpdateDictionaryInfo.oldEnglishInfo.getValue() + "|" + entryAdditionalDataEntry$UpdateDictionaryInfo.oldEnglishInfo.getInfType().value());							
 						
 						csvWriter.write(sb.toString()); columnsNo++;
+					}
+				}
+				
+				// aktualizacja o propozycje polskiego znaczenia (jezeli wystepuje)
+				if (config.addProposalPolishTranslates == true && entryAdditionalDataEntry != null && entryAdditionalDataEntry.proposalNewPolishInfoMap != null) {
+					
+					EntryAdditionalDataEntry$ProposalNewPolishInfo entryAdditionalDataEntry$ProposalNewPolishInfo = entryAdditionalDataEntry.proposalNewPolishInfoMap.get(System.identityHashCode(info));
+					
+					if (entryAdditionalDataEntry$ProposalNewPolishInfo != null) {						
+						csvWriter.write("PROPOZYCJA\n---\n" +
+								(entryAdditionalDataEntry$ProposalNewPolishInfo.polishInfoEquals == true ? "IDENTYCZNE" : "RÓŻNICA") + "\n---\n" + 
+								entryAdditionalDataEntry$ProposalNewPolishInfo.proposalPolishInfo.getValue() + "|" + entryAdditionalDataEntry$ProposalNewPolishInfo.proposalPolishInfo.getInfType().value()); columnsNo++;						
 					}
 				}
 				
@@ -1656,8 +1667,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					csvWriter.write(EntryHumanCsvFieldType.INFO_POL.name() + "_DELETE"); columnsNo++;		
 					csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
 					
-					csvWriter.write("USUNIETE_INFO\n" + "---\n---\n" + entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getInfType().value() + "\n---\n"
-							+ entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getValue());
+					csvWriter.write("USUNIETE_INFO\n" + "---\n---\n" + 
+							entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getValue() + "|" + entryAdditionalDataEntry$UpdateDictionaryInfo.oldPolishInfo.getInfType().value() + "\n---\n");
 					
 					// wypelniacz			
 					for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
@@ -3636,9 +3647,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	}
 	
 	public Entry updateOnlyPolishJapaneseTranslate(Entry entryFromPolishDictionary, Entry entryToCompare, EntryAdditionalData entryAdditionalData) {
-		
-		// FM_FIXME: poprawic
-		
+				
 		// tworzymy klona, aby nie pracowac na zrodlowym obiekcie
 		entryFromPolishDictionary = (Entry)SerializationUtils.clone(entryFromPolishDictionary);
 		
@@ -3646,11 +3655,53 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			throw new RuntimeException("Different entry id: " + entryFromPolishDictionary.getEntryId() + " vs " + entryToCompare.getEntryId());
 		}
 		
+		// sprawdzenie, czy liczba info jest taka sama, nie moze byc zadnych roznic, a to by znaczylo, ze ktos usunal dany wpis
+		if (entryFromPolishDictionary.getInfoList().size() != entryToCompare.getInfoList().size()) {
+			throw new RuntimeException("Different info list for: " + entryFromPolishDictionary.getEntryId());			
+		}		
+		
 		// sprawdzenie, czy liczba znaczen jest taka sama, nie moze byc zadnych roznic, a to by znaczylo, ze ktos usunal dany wpis
 		if (entryFromPolishDictionary.getSenseList().size() != entryToCompare.getSenseList().size()) {
 			throw new RuntimeException("Different sense list for: " + entryFromPolishDictionary.getEntryId());
 		}
+		
+		// porownanie info
+		for (int infoIdx = 0; infoIdx < entryFromPolishDictionary.getInfoList().size(); ++infoIdx) {
+		
+			// pobieramy info z obu wpisow
+			Info entryFromPolishDictionaryInfo = entryFromPolishDictionary.getInfoList().get(infoIdx);
+			Info entryToCompareInfo = entryToCompare.getInfoList().get(infoIdx);
+			
+			if ("pol".equals(entryFromPolishDictionaryInfo.getLang()) == false || "pol".equals(entryToCompareInfo.getLang()) == false) {
+				continue;
+			}
+						
+			// liczymy hash dla obu info (sprawdzenie, czy zostaly wprowadzone jakies zmiany)
+			String hashForEntryFromPolishDictionaryInfo = getHashForInfo(entryFromPolishDictionaryInfo);
+			String hashForEntryToCompareInfo = getHashForInfo(entryToCompareInfo);
+			
+			if (hashForEntryFromPolishDictionaryInfo.equals(hashForEntryToCompareInfo) == false) { // jezeli znaczenie zostalo zmienione to dodaj te propozycje do manualnego sprawdzenia
+					
+				// sprawdzenie i ewentualne stworzenie obiektu z dodatkowymi danymi
+				EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(entryFromPolishDictionary.getEntryId());
 				
+				if (entryAdditionalDataEntry == null) {
+					entryAdditionalDataEntry = new EntryAdditionalDataEntry();
+					
+					entryAdditionalData.jmdictEntryAdditionalDataEntryMap.put(entryFromPolishDictionary.getEntryId(), entryAdditionalDataEntry);
+				}
+				
+				if (entryAdditionalDataEntry.proposalNewPolishInfoMap == null) {		
+					entryAdditionalDataEntry.proposalNewPolishInfoMap = new TreeMap<>();
+				}
+				
+				// zapisujemy obiekt z propozycja nowego info, aby zapis sie pozniej w pliku wynikowym
+				entryAdditionalDataEntry.proposalNewPolishInfoMap.put(System.identityHashCode(entryFromPolishDictionaryInfo),
+						new EntryAdditionalDataEntry$ProposalNewPolishInfo(false, entryToCompareInfo));
+			}		
+		}		
+		
+		// porownanie sensow
 		for (int senseIdx = 0; senseIdx < entryFromPolishDictionary.getSenseList().size(); ++senseIdx) {
 			
 			// pobieramy znaczenia z obu wpisow
@@ -4528,8 +4579,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		private List<EntryAdditionalDataEntry$UpdateDictionarySense> deleteDictionarySenseListDuringUpdateDictionary;		
 		
 		private Map<Integer, EntryAdditionalDataEntry$ProposalNewPolishTranslate> proposalNewPolishTranslateMap;
-		// FM_FIXME: proposal dla info
-		
+		private Map<Integer, EntryAdditionalDataEntry$ProposalNewPolishInfo> proposalNewPolishInfoMap;		
 	}
 	
 	private static class EntryAdditionalDataEntry$UpdateDictionarySense {
@@ -4571,7 +4621,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			this.oldEnglishInfo = oldEnglishInfo;
 			this.oldPolishInfo = oldPolishInfo;
 		}
-		
 	}
 	
 	private static class EntryAdditionalDataEntry$ProposalNewPolishTranslate {
@@ -4591,6 +4640,18 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 						
 			this.proposalPolishGlossList = proposalPolishGlossList;
 			this.proposalPolishSenseAdditionalInfoList = proposalPolishSenseAdditionalInfoList;
+		}
+	}
+	
+	private static class EntryAdditionalDataEntry$ProposalNewPolishInfo {
+		
+		private boolean polishInfoEquals;
+		private Info proposalPolishInfo;
+
+		public EntryAdditionalDataEntry$ProposalNewPolishInfo(boolean polishInfoEquals, Info proposalPolishInfo) {			
+			this.polishInfoEquals = polishInfoEquals;
+						
+			this.proposalPolishInfo = proposalPolishInfo;
 		}
 	}
 }
