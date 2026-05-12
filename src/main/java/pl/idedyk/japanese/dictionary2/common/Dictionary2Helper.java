@@ -1584,9 +1584,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				csvWriter.write(fieldType.name());  columnsNo++;
 				csvWriter.write(String.valueOf(entry.getEntryId())); columnsNo++;
-								
-				csvWriter.write(info.getInfType().value());  columnsNo++;
-				csvWriter.write(info.getValue());  columnsNo++;
+				csvWriter.write(info.getValue() + "|" + info.getInfType().value());  columnsNo++;
 				
 				//
 				
@@ -1673,9 +1671,13 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			
 			Info info = new Info();
 			
-			info.setLang(lang);			
-			info.setInfType(InfoType.fromValue(csvReader.get(2)));
-			info.setValue(csvReader.get(3));
+			info.setLang(lang);
+			
+			String infTypeAndValue = csvReader.get(2);						
+			String infTypeAndValueSplited[] = infTypeAndValue.split("\\|");
+						
+			info.setInfType(InfoType.fromValue(infTypeAndValueSplited[1]));
+			info.setValue(infTypeAndValueSplited[0]);
 						
 			entry.getInfoList().add(info);
 		}
@@ -2484,6 +2486,17 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 			}
 			
 			alreadyCheckedEntryId.add(entry.getEntryId());
+			
+			// walidacja info
+			List<Info> infoList = entry.getInfoList();
+			
+			for (Info info : infoList) {
+				if (info.getValue().matches("^.+$") == false) {
+					System.out.println("[Error] Incorrect info value: " + info.getValue());
+					
+					wasError = true;
+				}
+			}			
 			
 			// walidacja duplikow tlumaczen w jednym sensie
 			List<Sense> senseList = entry.getSenseList();
