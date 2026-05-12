@@ -9,12 +9,14 @@ import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Info;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Xref;
 
 public class JMEDictSearcher {
 	
@@ -163,6 +165,18 @@ public class JMEDictSearcher {
 			System.out.println("\tCzęstotliwość występowania: " + readingInfo.getRelativePriorityList());
 		}
 		
+		// info
+		List<Info> infoList = kanjiKanaPair.getEntry().getInfoList();
+		
+		if (infoList.size() > 0) {
+			System.out.println("\nInfo");
+			
+			for (Info info : infoList) {
+				System.out.println("\tInfo, typ: " + info.getInfType().value());
+				System.out.println("\tInfo, wartość: " + info.getValue());
+			}			
+		}		
+		
 		//
 		
 		List<Sense> senseList = kanjiKanaPair.getSenseList();
@@ -207,7 +221,7 @@ public class JMEDictSearcher {
 				}				
 			}
 			
-			List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
+			List<LanguageSource> languageSourceList = sense.getLanguageSourceList__();
 			
 			if (languageSourceList.size() > 0) {
 				System.out.println("\n\t\tJęzykowe źródło");
@@ -229,8 +243,14 @@ public class JMEDictSearcher {
 			if (sense.getReferenceToAnotherKanjiKanaList().size() > 0) {
 				System.out.println("\n\t\tOdniesienie do innego słowa");
 				
-				for (String referenceToAnotherKanjiKana : sense.getReferenceToAnotherKanjiKanaList()) {
-					System.out.println("\t\t\t" + referenceToAnotherKanjiKana);
+				for (Xref xref : sense.getReferenceToAnotherKanjiKanaList()) {
+					System.out.println("\t\t\tTyp: " + xref.getType().value());
+					System.out.println("\t\t\tSłownik: " + xref.getDict());
+					System.out.println("\t\t\tIdentyfikator słowa: " + xref.getSeq());
+					System.out.println("\t\t\tNumer sensu: " + xref.getSno());
+					System.out.println("\t\t\tKanji: " + xref.getXKanji());
+					System.out.println("\t\t\tKana: " + xref.getXKana());
+					System.out.println("\t\t\tWartość: " + xref.getValue());
 				}
 			}
 			

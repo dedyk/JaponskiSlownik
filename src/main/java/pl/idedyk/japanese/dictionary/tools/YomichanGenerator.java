@@ -27,6 +27,7 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Info;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
@@ -37,6 +38,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Xref;
 
 public class YomichanGenerator {
 	
@@ -580,6 +582,12 @@ public class YomichanGenerator {
 								(currentGlossPol.getGType() != null ? Dictionary2HelperCommon.translateToPolishGlossType(currentGlossPol.getGType()) : ""));						
 					}
 					
+					List<Info> genericPolishInfo = jmdictEntry.getInfoList().stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
+
+					for (Info info : genericPolishInfo) {
+						termBankEntry.addTranslate("[Informacja dodatkowa]: " + info.getValue());
+					}
+					
 					for (SenseAdditionalInfo senseAdditionalInfo : additionalInfoPolList) {
 						termBankEntry.addTranslate("[Informacja dodatkowa]: " + senseAdditionalInfo.getValue());
 					}
@@ -609,8 +617,11 @@ public class YomichanGenerator {
 					
 					// zrodlo z ktorego pochodzi to slowo
 					{
-						List<LanguageSource> senseLanguageSourceList = currentSense.getLanguageSourceList();
+						List<LanguageSource> senseLanguageSourceList = new ArrayList<>();
 						
+						senseLanguageSourceList.addAll(jmdictEntry.getLanguageSourceList__());
+						senseLanguageSourceList.addAll(currentSense.getLanguageSourceList__());
+														
 						for (LanguageSource languageSource : senseLanguageSourceList) {
 							
 							String languageCodeInPolish = Dictionary2HelperCommon.translateToPolishLanguageCode(languageSource.getLang());
@@ -659,8 +670,8 @@ public class YomichanGenerator {
 					}
 					
 					// odnosnik do innego slowa
-					for (String currentReferenceToAnotherKanjiKana : currentSense.getReferenceToAnotherKanjiKanaList()) {
-						termBankEntry.addTranslate("[Powiązane słowo]: " + currentReferenceToAnotherKanjiKana);
+					for (Xref xref : currentSense.getReferenceToAnotherKanjiKanaList()) {
+						termBankEntry.addTranslate("[Powiązane słowo]: " + xref.getValue());
 					}
 					
 					// przeciwienstwo

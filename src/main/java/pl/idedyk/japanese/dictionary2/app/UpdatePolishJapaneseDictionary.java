@@ -13,10 +13,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 public class UpdatePolishJapaneseDictionary {
 
 	public static void main(String[] args) throws Exception {
-		
-		// FM_FIXME: sprawdzic, czy to dziala
-		// FM_FIXME: duplikaty przy info <- wykrywanie
-		
+				
 		// wczytywanie pomocnika slownikowego
 		Dictionary2Helper dictionaryHelper = Dictionary2Helper.getOrInit();
 
@@ -36,13 +33,7 @@ public class UpdatePolishJapaneseDictionary {
 		
 		// chodzimy po wszystkich elementach
 		for (Entry currentPolishEntry : allPolishDictionaryEntryList) {
-			
-			// FM_FIXME: tymczasowo
-			if (currentPolishEntry.getEntryId().intValue() == 2654270) { 
-				int a = 0;
-				a++;
-			}
-			
+						
 			// szukamy wpisu w angielskim slowniku
 			Entry jmdictEntry = dictionaryHelper.getJMdictEntry(currentPolishEntry.getEntryId());
 			
@@ -78,7 +69,6 @@ public class UpdatePolishJapaneseDictionary {
 		saveEntryListAsHumanCsvConfig.addDeleteInfoSenseDuringDictionaryUpdate = false;
 		
 		// zapisanie czesciowo zmienionego polskiego slownika
-		// FM_FIXME: aktualizacja daty i wersji		
 		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update.csv", dictionaryHelper.getPolishJMdict(), entryAdditionalData);
 		
 		saveEntryListAsHumanCsvConfig.shiftCells = true;

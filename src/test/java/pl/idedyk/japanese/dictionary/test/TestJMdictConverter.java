@@ -1,12 +1,10 @@
 package pl.idedyk.japanese.dictionary.test;
 
 import java.io.File;
-import java.util.List;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class TestJMdictConverter {
 
@@ -31,11 +29,7 @@ public class TestJMdictConverter {
 		
 		//
 		
-		List<Entry> readJMdictEntryList = dictionaryHelper.readEntryListFromHumanCsv(csvFile.getAbsolutePath());
-		
-		JMdict newJMdict = new JMdict();
-		
-		newJMdict.getEntryList().addAll(readJMdictEntryList);
+		JMdict newJMdict = dictionaryHelper.readEntryListFromHumanCsv(csvFile.getAbsolutePath());
 		
 		//
 		

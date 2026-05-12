@@ -3142,10 +3142,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 	}
 	
 	public boolean updatePolishJapaneseEntry(Entry polishJapaneseEntry, Entry jmdictEntry, EntryAdditionalData entryAdditionalData) {
-		
-		// FM_FIXME: tu bedzie zmiana
-		// FM_FIXME: obsluga info, version, created
-		
+				
 		boolean needManuallyChange = false;
 		
 		// kanji mozna zaktualizowac bezwarunkowo		
@@ -3185,7 +3182,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 		
 		// aktualizacja language source, czyscimy bezwarunkowo i dodajemy nowe
-		// FM_FIXME: sprawdzic, czy to dziala w polaczeniu z sense language source
 		// ewentualna roznica zostanie wykrywa podczas liczenia hash-u sense		
 		polishJapaneseEntry.getLanguageSourceList__().clear();
 		polishJapaneseEntry.getLanguageSourceList__().addAll(jmdictEntry.getLanguageSourceList__());		
@@ -3208,9 +3204,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		if (polishJapaneseEntryEngInfoList.size() > maxInfoLength) {
 			maxInfoLength = polishJapaneseEntryEngInfoList.size();
 		}
-		
-		// FM_FIXME: dokladne testy
-		
+				
 		for (int infoIdx = 0; infoIdx < maxInfoLength; ++infoIdx) {
 			
 			// stare angielskie info z polskiego slownika
@@ -3236,7 +3230,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				// pobieramy liste polskich info z polskiego slownika
 				List<Info> polishJapaneseEntryPolInfoList = polishJapaneseEntryInfoList.stream().filter(gloss -> (gloss.getLang().equals("pol") == true)).collect(Collectors.toList());
-				Info polishJapaneseEntryPolInfo = infoIdx < polishJapaneseEntryPolInfoList.size() ? polishJapaneseEntryPolInfoList.get(infoIdx) : null;				
+				Info polishJapaneseEntryPolInfo = infoIdx < polishJapaneseEntryPolInfoList.size() ? polishJapaneseEntryPolInfoList.get(infoIdx) : null;	//  null-em nigdy nie powinno byc			
 				
 				// wiec dodajemy to, co bylo wczesniej				
 				polishJapaneseEntry.getInfoList().add(jmdictEntryInfo);
@@ -3259,7 +3253,6 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 												
 				// uzupelniamy o stare info
 				if (oldPolishJapaneseEntryPolInfo != null) {
-					// FM_FIXME: uzupelnic implementacje, update lub delete
 					
 					// tworzenie struktury pomocniczej
 					EntryAdditionalDataEntry entryAdditionalDataEntry = entryAdditionalData.jmdictEntryAdditionalDataEntryMap.get(jmdictEntry.getEntryId());
@@ -3302,9 +3295,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				}				
 			}			
 		}		
-		
-		/////////////////////////////////////
-				
+						
 		// aktualizacja sense
 		List<Sense> polishJapaneseEntrySenseList = new ArrayList<>(polishJapaneseEntry.getSenseList());
 		List<Sense> jmdictEntrySenseList = jmdictEntry.getSenseList();

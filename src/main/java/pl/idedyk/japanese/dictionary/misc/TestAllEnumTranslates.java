@@ -27,6 +27,10 @@ public class TestAllEnumTranslates {
 				Dictionary2Helper.translateToPolishReadingAdditionalInfoEnum(readingInfo.getReadingAdditionalInfoList());
 			}
 			
+			entry.getLanguageSourceList__().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCode(c));
+			entry.getLanguageSourceList__().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCodeWithoutValue(c));
+			entry.getLanguageSourceList__().stream().filter(f -> f.getLsWasei() != null).map(m -> m.getLsWasei()).forEach(c -> Dictionary2Helper.translateToPolishLanguageSourceLsWaseiEnum(c));
+			
 			for (Sense sense : entry.getSenseList()) {				
 				Dictionary2Helper.translateToPolishDialectEnumList(sense.getDialectList());
 				Dictionary2Helper.translateToPolishFieldEnumList(sense.getFieldList());
@@ -41,9 +45,9 @@ public class TestAllEnumTranslates {
 				sense.getAdditionalInfoList().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCode(c));
 				sense.getAdditionalInfoList().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCodeWithoutValue(c));
 				
-				sense.getLanguageSourceList().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCode(c));
-				sense.getLanguageSourceList().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCodeWithoutValue(c));
-				sense.getLanguageSourceList().stream().filter(f -> f.getLsWasei() != null).map(m -> m.getLsWasei()).forEach(c -> Dictionary2Helper.translateToPolishLanguageSourceLsWaseiEnum(c));
+				sense.getLanguageSourceList__().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCode(c));
+				sense.getLanguageSourceList__().stream().filter(f -> f.getLang() != null).map(m -> m.getLang()).forEach(c -> Dictionary2Helper.translateToPolishLanguageCodeWithoutValue(c));
+				sense.getLanguageSourceList__().stream().filter(f -> f.getLsWasei() != null).map(m -> m.getLsWasei()).forEach(c -> Dictionary2Helper.translateToPolishLanguageSourceLsWaseiEnum(c));
 			}			
 		}
 
