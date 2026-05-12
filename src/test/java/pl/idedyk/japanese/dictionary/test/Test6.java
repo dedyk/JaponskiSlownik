@@ -5,9 +5,6 @@ import java.util.Comparator;
 import java.util.List;
 
 import javax.xml.XMLConstants;
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -239,6 +236,7 @@ public class Test6 {
 		validator.validate(new StreamSource(jmnedict));		
 	}
 	
+	@SuppressWarnings("unused")
 	private static void testKanjiDict2() throws Exception {
 		
 		/*

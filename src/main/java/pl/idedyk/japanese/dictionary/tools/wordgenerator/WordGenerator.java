@@ -2551,12 +2551,7 @@ public class WordGenerator {
 					
 					if (entryListForPolishJapaneseEntry != null && entryListForPolishJapaneseEntry.size() > 0) {						
 						for (Entry entry : entryListForPolishJapaneseEntry) {	
-							
-							if (entry.getEntryId().intValue() == 2267540) {
-								int a = 0;
-								a++;
-							}
-							
+														
 							List<Sense> senseList = entry.getSenseList();
 							
 							for (Sense currentSense : senseList) {

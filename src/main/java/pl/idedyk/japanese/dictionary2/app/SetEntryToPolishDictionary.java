@@ -1,7 +1,6 @@
 package pl.idedyk.japanese.dictionary2.app;
 
 import java.io.File;
-import java.util.List;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;

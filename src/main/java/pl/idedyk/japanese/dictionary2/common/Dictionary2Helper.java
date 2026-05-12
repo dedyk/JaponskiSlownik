@@ -4355,9 +4355,11 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					continue;
 				}
 				
+				/*
 				if (attribute.getAttributeType() == AttributeType.ANTONYM || attribute.getAttributeType() == AttributeType.RELATED) { // za chwile bedzie specjalna obsluga dla przeciwienstw i slowek powiazanych
 					continue;
 				}
+				*/
 				
 				// standardowa obsluga				
 				OldPolishJapaneseDictionaryInfoAttributeListInfo oldPolishJapaneseDictionaryInfoAttributeListInfo = new OldPolishJapaneseDictionaryInfoAttributeListInfo();
@@ -4393,6 +4395,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoPriorityAttributeInfo);
 			}
 			
+			/*
 			// specjalna obsluga dla przeciwienstw i slowek powiazanych
 			List<Integer> antonymEntryIds = new ArrayList<>();
 			List<Integer> relatedEntryIds = new ArrayList<>();
@@ -4445,6 +4448,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 								
 				oldPolishJapaneseDictionary.getAttributeList().add(oldPolishJapaneseDictionaryInfoPriorityAttributeInfo);
 			}
+			*/
 		}
 		
 		if (oldPolishJapaneseDictionary.getGroupsList().size() == 0) {

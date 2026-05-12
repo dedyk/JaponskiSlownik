@@ -17,7 +17,6 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import org.apache.commons.lang.StringUtils;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.IntField;
@@ -64,7 +63,6 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 
 import com.csvreader.CsvWriter;
 
@@ -377,6 +375,7 @@ public class Helper {
 			}
 		}
 		
+		/*
 		// generowanie 'zobacz rowniez'
 		Map<String, List<PolishJapaneseEntry>> cachePolishJapaneseEntryListKanjiOnly = cachePolishJapaneseEntryList(polishJapaneseEntries, new ICachePolishJapaneseEntryGetValue() {
 			
@@ -405,9 +404,11 @@ public class Helper {
 				return polishJapanaeseEntry.getKana();
 			}
 		});
+		*/
 		
 		//
 		
+		/*
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
 			
 			String kanji = polishJapaneseEntry.getKanji();
@@ -553,9 +554,11 @@ public class Helper {
 					polishJapaneseEntry.getAttributeList().addAttributeValue(AttributeType.ANTONYM, "" + currentRelatedSimilar.getId());
 				}
 			}			
-		}		
+		}
+		*/
 	}
 	
+	/*
 	private static List<String> getAllReferenceToAnotherKanjiKanaList(KanjiKanaPair kanjiKanaPair) {
 		
 		List<String> result = new ArrayList<>();
@@ -577,6 +580,7 @@ public class Helper {
 		
 		return result;
 	}
+	*/
 
 	private static EDictEntry findEdictEntry(TreeMap<String, EDictEntry> jmedict,
 			PolishJapaneseEntry polishJapaneseEntry) {
