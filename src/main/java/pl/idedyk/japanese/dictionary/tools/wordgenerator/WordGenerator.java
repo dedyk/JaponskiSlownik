@@ -68,6 +68,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Xref;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter.ICustomAdditionalCsvWriter;
 
 public class WordGenerator {
@@ -2549,61 +2550,59 @@ public class WordGenerator {
 					List<Entry> entryListForPolishJapaneseEntry = dictionary2Helper.findEntryListInJmdict(polishJapaneseEntry, true);
 					
 					if (entryListForPolishJapaneseEntry != null && entryListForPolishJapaneseEntry.size() > 0) {						
-						for (Entry entry : entryListForPolishJapaneseEntry) {						
+						for (Entry entry : entryListForPolishJapaneseEntry) {	
+							
+							if (entry.getEntryId().intValue() == 2267540) {
+								int a = 0;
+								a++;
+							}
+							
 							List<Sense> senseList = entry.getSenseList();
 							
 							for (Sense currentSense : senseList) {
-								List<String> referenceToAnotherKanjiKanaList = currentSense.getReferenceToAnotherKanjiKanaList();
+								List<Xref> xrefList = currentSense.getReferenceToAnotherKanjiKanaList();
 								
-								for (String currentSimilarRelated : referenceToAnotherKanjiKanaList) {								
-									int pointIdx = currentSimilarRelated.indexOf("・");
+								for (Xref xref : xrefList) {
+									Integer xrefEntryId = xref.getSeq();
 									
-									if (pointIdx != -1) {
-										currentSimilarRelated = currentSimilarRelated.substring(0, pointIdx);
-									}
-									
-									List<Entry> foundSimilarRelatedEntryList = dictionary2Helper.findInJMdict(currentSimilarRelated);
-																		
-									if (foundSimilarRelatedEntryList != null && foundSimilarRelatedEntryList.size() > 0) {																	
-										for (Entry currentFoundEntry : foundSimilarRelatedEntryList) {
-																						
-											Integer foundEntryId = currentFoundEntry.getEntryId();
-											
-											// czy ta grupa byla juz sprawdzana
-											if (alreadyCheckedGroupId.contains(foundEntryId) == true) {
-												continue;
-												
-											} else {
-												alreadyCheckedGroupId.add(foundEntryId);												
-											}
-											
-											List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(currentFoundEntry, false);
-																															
-											// grupujemy po tych samych tlumaczenia
-											List<List<KanjiKanaPair>> groupByTheSameTranslateKanjiKanaListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
-																									
-											for (List<KanjiKanaPair> foundGroupByTheSameTranslateKanjiKanaList : groupByTheSameTranslateKanjiKanaListList) {		
-												KanjiKanaPair foundKanjiKanaPair = foundGroupByTheSameTranslateKanjiKanaList.get(0); // pierwszy element z grupy
-	
-												String foundKanjiKanaPairKanji = foundKanjiKanaPair.getKanji();
-												String foundKanjiKanaPairKana = foundKanjiKanaPair.getKana();
+									if (xrefEntryId != null) {
 																				
-												List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, foundKanjiKanaPairKanji, foundKanjiKanaPairKana);
+										// czy ta grupa byla juz sprawdzana
+										if (alreadyCheckedGroupId.contains(xrefEntryId) == true) {
+											continue;
+											
+										} else {
+											alreadyCheckedGroupId.add(xrefEntryId);												
+										}
+										
+										Entry referenceEntry = dictionary2Helper.getJMdictEntry(xrefEntryId);
+										List<KanjiKanaPair> kanjiKanaPairList = Dictionary2Helper.getKanjiKanaPairListStatic(referenceEntry, false);
+										
+										
+										// grupujemy po tych samych tlumaczenia
+										List<List<KanjiKanaPair>> groupByTheSameTranslateKanjiKanaListList = dictionary2Helper.groupByTheSameTranslate(kanjiKanaPairList);
+																								
+										for (List<KanjiKanaPair> foundGroupByTheSameTranslateKanjiKanaList : groupByTheSameTranslateKanjiKanaListList) {		
+											KanjiKanaPair foundKanjiKanaPair = foundGroupByTheSameTranslateKanjiKanaList.get(0); // pierwszy element z grupy
+
+											String foundKanjiKanaPairKanji = foundKanjiKanaPair.getKanji();
+											String foundKanjiKanaPairKana = foundKanjiKanaPair.getKana();
+																			
+											List<PolishJapaneseEntry> findPolishJapaneseEntryList = Helper.findPolishJapaneseEntry(cachePolishJapaneseEntryList, foundKanjiKanaPairKanji, foundKanjiKanaPairKana);
+											
+											if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
+												//System.out.println(groupEntry);
 												
-												if (findPolishJapaneseEntryList == null || findPolishJapaneseEntryList.size() == 0) {
-													//System.out.println(groupEntry);
+												CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, foundKanjiKanaPair); 
+												
+												if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
+													newCommonWordMap.put(commonWord.getId(), commonWord);
 													
-													CommonWord commonWord = dictionary2Helper.convertKanjiKanaPairToCommonWord(csvId, foundKanjiKanaPair); 
-													
-													if (wordGeneratorHelper.isCommonWordExists(commonWord) == false) {
-														newCommonWordMap.put(commonWord.getId(), commonWord);
-														
-														csvId++;										
-													}
+													csvId++;										
 												}
 											}
 										}
-									}
+									}									
 								}
 							}							
 						}
