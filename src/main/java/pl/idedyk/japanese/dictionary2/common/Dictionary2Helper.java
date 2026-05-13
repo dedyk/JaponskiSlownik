@@ -1785,7 +1785,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				//
 				
-				csvWriter.write(Helper.convertListToString(sense.getAntonymList())); columnsNo++;
+				// FM_FIXME: do usuniecia po przeprowadzeniu migracji
+				csvWriter.write(Helper.convertListToString(sense.getAntonymListFMFIXME())); columnsNo++;
 				
 				csvWriter.write(Helper.convertEnumListToString(sense.getFieldList())); columnsNo++;
 				csvWriter.write(Helper.convertEnumListToString(sense.getMiscList())); columnsNo++;
@@ -2120,8 +2121,9 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					
 					referenceToAnotherKanjiKanaListStringCsvReader.close();
 				}
-								
-				sense.getAntonymList().addAll(Helper.convertStringToList(csvReader.get(6)));
+				
+				// FM_FIXME: do usuniecia po przeprowadzeniu migracji
+				sense.getAntonymListFMFIXME().addAll(Helper.convertStringToList(csvReader.get(6)));
 				
 				//
 				

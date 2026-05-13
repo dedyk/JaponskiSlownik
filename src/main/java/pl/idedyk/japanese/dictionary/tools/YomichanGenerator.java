@@ -673,10 +673,12 @@ public class YomichanGenerator {
 						termBankEntry.addTranslate("[Powiązane słowo]: " + xref.getValue());
 					}
 					
+					/*
 					// przeciwienstwo
 					for (String currentAntonym : currentSense.getAntonymList()) {
 						termBankEntry.addTranslate("[Przeciwieństwo]: " + currentAntonym);
 					}
+					*/
 				}
 				
 			}

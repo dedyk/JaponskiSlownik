@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -29,6 +30,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Xref;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.XrefType;
 
 public class LatexDictionaryGenerator {
 	
@@ -550,45 +552,56 @@ public class LatexDictionaryGenerator {
 				// FM_FIXME: zobaczyc, jak to wyglada na wydruku
 				List<Xref> referenceToAnotherKanjiKanaList = sense.getReferenceToAnotherKanjiKanaList();
 				
-				for (int referenceToAnotherKanjiKanaListIdx = 0; referenceToAnotherKanjiKanaListIdx < referenceToAnotherKanjiKanaList.size(); ++referenceToAnotherKanjiKanaListIdx) {
+				// grupowanie po typie odnosnika
+				Map<XrefType, List<Xref>> referenceToAnotherKanjiKanaListGroupedBy = new LinkedHashMap<XrefType, List<Xref>>();
+				
+				for (Xref xref : referenceToAnotherKanjiKanaList) {
+					List<Xref> xrefForTypeList = referenceToAnotherKanjiKanaListGroupedBy.get(xref.getType());
 					
-					Xref referenceToAnotherKanjiKana = referenceToAnotherKanjiKanaList.get(referenceToAnotherKanjiKanaListIdx);
-					
-					if (referenceToAnotherKanjiKanaListIdx == 0) {
-						result.append(" ").append(cdot()).append(" ").append(rightarrow()).append(" ");
+					if (xrefForTypeList == null) {
+						xrefForTypeList = new ArrayList<Xref>();
+						
+						referenceToAnotherKanjiKanaListGroupedBy.put(xref.getType(), xrefForTypeList);
 					}
 					
-					result.append(referenceToAnotherKanjiKana.getValue());
-
-					if (referenceToAnotherKanjiKanaListIdx != referenceToAnotherKanjiKanaList.size() - 1) {
-						result.append("; ");
-					}
-					
-					if (referenceToAnotherKanjiKanaListIdx == referenceToAnotherKanjiKanaList.size() - 1) {
-						result.append(" ");
-					}
+					xrefForTypeList.add(xref);
 				}
 				
-				// przeciwienstwo
-				List<String> antonymList = sense.getAntonymList();
-				
-				for (int antonymListIdx = 0; antonymListIdx < antonymList.size(); ++antonymListIdx) {
+				for (Entry<XrefType, List<Xref>> currentXrefTypeListEntry : referenceToAnotherKanjiKanaListGroupedBy.entrySet()) {
 					
-					String antonym = antonymList.get(antonymListIdx);
+					List<Xref> xrefForTypeList = currentXrefTypeListEntry.getValue();
 					
-					if (antonymListIdx == 0) {
-						result.append(" ").append(cdot()).append(" ").append(leftRightArrow()).append(" ");
-					}
-					
-					result.append(antonym);
+					for (int xrefForTypeListIdx = 0; xrefForTypeListIdx < xrefForTypeList.size(); ++xrefForTypeListIdx) {
+						
+						Xref referenceToAnotherKanjiKana = xrefForTypeList.get(xrefForTypeListIdx);
+						
+						if (xrefForTypeListIdx == 0) {
+							result.append(" ").append(cdot()).append(" ");
+							
+							if (referenceToAnotherKanjiKana.getType() == XrefType.SEE || referenceToAnotherKanjiKana.getType() == XrefType.SYN) {
+								result.append(rightarrow());
+								
+							} else if (referenceToAnotherKanjiKana.getType() == XrefType.ANT) {
+								result.append(leftRightArrow());
+								
+							} else {
+								throw new RuntimeException("Unknown xref type: " + referenceToAnotherKanjiKana.getType());
+							}
+							
+							result.append(" ");
+						}
+						
+						result.append(referenceToAnotherKanjiKana.getValue());
 
-					if (antonymListIdx != antonymList.size() - 1) {
-						result.append("; ");
+						if (xrefForTypeListIdx != xrefForTypeList.size() - 1) {
+							result.append("; ");
+						}
+						
+						if (xrefForTypeListIdx == xrefForTypeList.size() - 1) {
+							result.append(" ");
+						}
 					}
 					
-					if (antonymListIdx == antonymList.size() - 1) {
-						result.append(" ");
-					}
 				}				
 			}	
 		}

@@ -254,6 +254,7 @@ public class JMEDictSearcher {
 				}
 			}
 			
+			/*
 			if (sense.getAntonymList().size() > 0) {
 				System.out.println("\n\t\tPrzeciwieństwo");
 				
@@ -261,6 +262,7 @@ public class JMEDictSearcher {
 					System.out.println("\t\t\t" + antonym);
 				}
 			}
+			*/
 		}		
 		
 		System.out.println("\n---\n\n");
