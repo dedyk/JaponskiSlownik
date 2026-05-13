@@ -23,6 +23,7 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.Info;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
@@ -396,7 +397,7 @@ public class LatexDictionaryGenerator {
 			
 			// na gorze strony romaji + kana
 			result.append(markBoth(textbf(readingInfo.getKana().getRomaji()) + " (" + readingInfo.getKana().getValue() + ")")).append(" ");
-
+			
 			// znaczenie
 			//result.append(" ").append(bullet()).append(" ");
 
@@ -494,12 +495,8 @@ public class LatexDictionaryGenerator {
 					}
 				}
 				
-				// informacje dodatkowe do tlumaczenia
-				// FM_FIXME: zobaczyc, jak to wyglada na wydruku
-				
-				List<String> senseAdditionalInfoList = new ArrayList<>();
-				
-				senseAdditionalInfoList.addAll(kanjiKanaPair.getEntry().getInfoList().stream().filter(info -> (info.getLang().equals("pol") == true)).map(m -> m.getValue()).collect(Collectors.toList()));
+				// informacje dodatkowe do tlumaczenia				
+				List<String> senseAdditionalInfoList = new ArrayList<>();				
 				senseAdditionalInfoList.addAll(sense.getAdditionalInfoList().stream().filter(additionalInfo -> (additionalInfo.getLang().equals("pol") == true)).map(m -> m.getValue()).collect(Collectors.toList()));
 
 				for (int senseAdditionalInfoListIdx = 0; senseAdditionalInfoListIdx < senseAdditionalInfoList.size(); ++senseAdditionalInfoListIdx) {
@@ -509,47 +506,8 @@ public class LatexDictionaryGenerator {
 					result.append(" ").append(cdot()).append(" ");
 					result.append(escapeLatexChars(senseAdditionalInfo)).append(" ");
 				}
-				
-				// informacja o pochodzeniu slowa z innego jezyka
-				List<LanguageSource> senseLanguageSourceList = new ArrayList<>();
-				
-				// FM_FIXME: sprawdzic, jak to wyglada na wydruku
-				senseLanguageSourceList.addAll(kanjiKanaPair.getEntry().getLanguageSourceList());
 								
-				for (int senseLanguageSourceListIdx = 0; senseLanguageSourceListIdx < senseLanguageSourceList.size(); ++senseLanguageSourceListIdx) {
-					
-					LanguageSource languageSource = senseLanguageSourceList.get(senseLanguageSourceListIdx);
-					
-					if (senseLanguageSourceListIdx == 0) {
-						result.append(" ").append(cdot()).append(" ");
-					}
-					
-					String languageCodeInPolish = Dictionary2HelperCommon.translateToPolishLanguageCode(languageSource.getLang());
-					String languageValue = languageSource.getValue();
-					String languageLsWasei = Dictionary2HelperCommon.translateToPolishLanguageSourceLsWaseiEnum(languageSource.getLsWasei());
-					
-					if (languageValue != null && languageValue.trim().equals("") == false) {
-						result.append(escapeLatexChars(languageCodeInPolish + ": " + languageValue));
-						
-					} else {
-						result.append(escapeLatexChars(Dictionary2HelperCommon.translateToPolishLanguageCodeWithoutValue(languageSource.getLang())));
-					}
-					
-					if (languageLsWasei != null) {
-						result.append(" ").append(cdot()).append(" ").append(textit(languageLsWasei));
-					}
-					
-					if (senseLanguageSourceListIdx != senseLanguageSourceList.size() - 1) {
-						result.append("; ");
-					}
-					
-					if (senseLanguageSourceListIdx == senseLanguageSourceList.size() - 1) {
-						result.append(" ");
-					}
-				}
-				
 				// referencja do innego slowa
-				// FM_FIXME: zobaczyc, jak to wyglada na wydruku
 				List<Xref> referenceToAnotherKanjiKanaList = sense.getReferenceToAnotherKanjiKanaList();
 				
 				// grupowanie po typie odnosnika
@@ -604,6 +562,49 @@ public class LatexDictionaryGenerator {
 					
 				}				
 			}	
+			
+			// info dodatkowe
+			for (Info info : kanjiKanaPair.getEntry().getInfoList().stream().filter(info -> (info.getLang().equals("pol") == true)).collect(Collectors.toList())) {
+				result.append(" ").append(cdot()).append(" ");
+				result.append(escapeLatexChars(info.getValue())).append(" ");
+			}
+			
+			// informacja o pochodzeniu slowa z innego jezyka
+			List<LanguageSource> languageSourceList = new ArrayList<>();
+			languageSourceList.addAll(kanjiKanaPair.getEntry().getLanguageSourceList());
+							
+			for (int senseLanguageSourceListIdx = 0; senseLanguageSourceListIdx < languageSourceList.size(); ++senseLanguageSourceListIdx) {
+				
+				LanguageSource languageSource = languageSourceList.get(senseLanguageSourceListIdx);
+				
+				if (senseLanguageSourceListIdx == 0) {
+					result.append(" ").append(cdot()).append(" ");
+				}
+				
+				String languageCodeInPolish = Dictionary2HelperCommon.translateToPolishLanguageCode(languageSource.getLang());
+				String languageValue = languageSource.getValue();
+				String languageLsWasei = Dictionary2HelperCommon.translateToPolishLanguageSourceLsWaseiEnum(languageSource.getLsWasei());
+				
+				if (languageValue != null && languageValue.trim().equals("") == false) {
+					result.append(escapeLatexChars(languageCodeInPolish + ": " + languageValue));
+					
+				} else {
+					result.append(escapeLatexChars(Dictionary2HelperCommon.translateToPolishLanguageCodeWithoutValue(languageSource.getLang())));
+				}
+				
+				if (languageLsWasei != null) {
+					result.append(" ").append(cdot()).append(" ").append(textit(languageLsWasei));
+				}
+				
+				if (senseLanguageSourceListIdx != languageSourceList.size() - 1) {
+					result.append("; ");
+				}
+				
+				if (senseLanguageSourceListIdx == languageSourceList.size() - 1) {
+					result.append(" ");
+				}
+			}
+
 		}
 				
 		result.append("\\vspace{0.3cm} \n\n");
