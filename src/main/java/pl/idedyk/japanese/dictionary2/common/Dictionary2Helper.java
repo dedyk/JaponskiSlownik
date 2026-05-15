@@ -149,7 +149,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		
 		//
 				
-		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e_NG_TEST"); // FM_FIXME: TEST
+		dictionaryHelper.jmdictFile = new File("../JapaneseDictionary_additional/JMdict_e_NG");
 		
 		//
 		
@@ -1785,16 +1785,17 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				//
 				
-				// FM_FIXME: do usuniecia po przeprowadzeniu migracji
-				csvWriter.write(Helper.convertListToString(sense.getAntonymListFMFIXME())); columnsNo++;
+				// do usuniecia po przeprowadzeniu migracji
+				// csvWriter.write(Helper.convertListToString(sense.getAntonymList())); columnsNo++;
 				
 				csvWriter.write(Helper.convertEnumListToString(sense.getFieldList())); columnsNo++;
 				csvWriter.write(Helper.convertEnumListToString(sense.getMiscList())); columnsNo++;
 				
 				//
 				
-				// FM_FIXME: usunac language source to po przemigrowaniu
-				List<LanguageSource> languageSourceList = sense.getLanguageSourceListFMFIXME();
+				// usunac language source to po przemigrowaniu
+				/*
+				List<LanguageSource> languageSourceList = sense.getLanguageSourceList();
 				
 				StringWriter languageSourceCsvWriterString = new StringWriter();
 				CsvWriter languageSourceCsvWriter = new CsvWriter(languageSourceCsvWriterString, '|');
@@ -1813,17 +1814,18 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					languageSourceCsvWriter.endRecord();
 				}
 				
-				languageSourceCsvWriter.close();				
-				csvWriter.write(languageSourceCsvWriterString.toString()); columnsNo++;
+				languageSourceCsvWriter.close();	
+				// csvWriter.write(languageSourceCsvWriterString.toString()); columnsNo++;
+				*/
 				
 				csvWriter.write(Helper.convertEnumListToString(sense.getDialectList())); columnsNo++;
-				
-				csvWriter.endRecord();
-				
+								
 				// wypelniacz			
 				for (; columnsNo < CSV_COLUMNS; ++columnsNo) {
 					csvWriter.write(null);
 				}
+				
+				csvWriter.endRecord();
 				
 				// czesc specyficzna dla jezyka angielskiego i polskiego (tlumaczenia)
 				
@@ -2089,18 +2091,19 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 						String xrefXKana = null;
 						String xrefValue = null;
 						
-						if (referenceToAnotherKanjiKanaListStringCsvReader.getColumnCount() == 1) { // stary xref, FM_FIXME: chyba trzeba to usunac po zakonczeniu migracji na NG
+						/*
+						if (referenceToAnotherKanjiKanaListStringCsvReader.getColumnCount() == 1) { // stary xref, chyba trzeba to usunac po zakonczeniu migracji na NG
 							xrefValue = referenceToAnotherKanjiKanaListStringCsvReader.get(0).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(0) : null;
 														
 						} else {
-							xrefType = referenceToAnotherKanjiKanaListStringCsvReader.get(0).equals("-") == false ? XrefType.fromValue(referenceToAnotherKanjiKanaListStringCsvReader.get(0)) : null; 
-							xrefDict = referenceToAnotherKanjiKanaListStringCsvReader.get(1).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(1) : null;
-							xrefSeq = referenceToAnotherKanjiKanaListStringCsvReader.get(2).equals("-") == false ? Integer.parseInt(referenceToAnotherKanjiKanaListStringCsvReader.get(2)) : null;  
-							xrefSno = referenceToAnotherKanjiKanaListStringCsvReader.get(3).equals("-") == false ? Integer.parseInt(referenceToAnotherKanjiKanaListStringCsvReader.get(3)) : null; 
-							xrefXKanji = referenceToAnotherKanjiKanaListStringCsvReader.get(4).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(4) : null;
-							xrefXKana = referenceToAnotherKanjiKanaListStringCsvReader.get(5).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(5) : null;
-							xrefValue = referenceToAnotherKanjiKanaListStringCsvReader.get(6).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(6) : null;							
-						}
+						*/
+						xrefType = referenceToAnotherKanjiKanaListStringCsvReader.get(0).equals("-") == false ? XrefType.fromValue(referenceToAnotherKanjiKanaListStringCsvReader.get(0)) : null; 
+						xrefDict = referenceToAnotherKanjiKanaListStringCsvReader.get(1).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(1) : null;
+						xrefSeq = referenceToAnotherKanjiKanaListStringCsvReader.get(2).equals("-") == false ? Integer.parseInt(referenceToAnotherKanjiKanaListStringCsvReader.get(2)) : null;  
+						xrefSno = referenceToAnotherKanjiKanaListStringCsvReader.get(3).equals("-") == false ? Integer.parseInt(referenceToAnotherKanjiKanaListStringCsvReader.get(3)) : null; 
+						xrefXKanji = referenceToAnotherKanjiKanaListStringCsvReader.get(4).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(4) : null;
+						xrefXKana = referenceToAnotherKanjiKanaListStringCsvReader.get(5).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(5) : null;
+						xrefValue = referenceToAnotherKanjiKanaListStringCsvReader.get(6).equals("-") == false ? referenceToAnotherKanjiKanaListStringCsvReader.get(6) : null;							
 						
 						//
 						
@@ -2122,12 +2125,12 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 					referenceToAnotherKanjiKanaListStringCsvReader.close();
 				}
 				
-				// FM_FIXME: do usuniecia po przeprowadzeniu migracji
-				sense.getAntonymListFMFIXME().addAll(Helper.convertStringToList(csvReader.get(6)));
+				// do usuniecia po przeprowadzeniu migracji
+				// sense.getAntonymList().addAll(Helper.convertStringToList(csvReader.get(6)));
 				
 				//
 				
-				List<String> fieldStringList = Helper.convertStringToList(csvReader.get(7));
+				List<String> fieldStringList = Helper.convertStringToList(csvReader.get(6));
 				
 				for (String currentFieldString : fieldStringList) {
 					sense.getFieldList().add(FieldEnum.fromValue(currentFieldString));
@@ -2135,7 +2138,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				//
 				
-				List<String> miscStringList = Helper.convertStringToList(csvReader.get(8));
+				List<String> miscStringList = Helper.convertStringToList(csvReader.get(7));
 				
 				for (String currentMiscString : miscStringList) {
 					sense.getMiscList().add(MiscEnum.fromValue(currentMiscString));
@@ -2143,8 +2146,8 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				
 				//
 								
-				// FM_FIXME: obsluga lsource w dwoch miejscach, a po zakonczeniu migracji usunac z tego miejsca
-				// FM_FIXME: usunac to po przemigrowaniu
+				// usunac po przemigrowaniu
+				/*
 				{
 					String languageSourceListString = csvReader.get(9);
 					CsvReader languageSourceCsvReader = new CsvReader(new StringReader(languageSourceListString), '|');
@@ -2167,15 +2170,16 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 						
 						//
 						
-						sense.getLanguageSourceListFMFIXME().add(languageSource);
+						sense.getLanguageSourceList().add(languageSource);
 					}
 					
 					languageSourceCsvReader.close();
 				}
+				*/
 				
 				//
 				
-				List<String> dialectList = Helper.convertStringToList(csvReader.get(10));
+				List<String> dialectList = Helper.convertStringToList(csvReader.get(8));
 				
 				for (String currentDialetList : dialectList) {
 					sense.getDialectList().add(DialectEnum.fromValue(currentDialetList));
@@ -3488,9 +3492,10 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		}
 		
 		// liczymy hash	
-		// FM_FIXME: usunac to po przemigrowaniu slownika
+		// usunac to po przemigrowaniu slownika
+		/*
 		if (sense != null) {
-			for (LanguageSource languageSource : sense.getLanguageSourceListFMFIXME()) {
+			for (LanguageSource languageSource : sense.getLanguageSourceList()) {
 				
 				stringWriter.write(languageSource.getLang());
 				stringWriter.write(languageSource.getLsType() != null ? languageSource.getLsType().name() : "");
@@ -3498,6 +3503,7 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 				stringWriter.write(languageSource.getValue());			
 			}
 		}
+		*/
 		
 		stringWriter.append(joinGlossListAndAdditionalInfoList(glossList, additionalInfoList));
 				

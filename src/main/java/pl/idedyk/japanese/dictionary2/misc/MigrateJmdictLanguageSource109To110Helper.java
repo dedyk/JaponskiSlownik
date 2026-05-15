@@ -1,13 +1,10 @@
 package pl.idedyk.japanese.dictionary2.misc;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
-import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 
 public class MigrateJmdictLanguageSource109To110Helper {
 
@@ -19,6 +16,10 @@ public class MigrateJmdictLanguageSource109To110Helper {
 		List<Entry> allPolishDictionaryEntryList = dictionary2Helper.getAllPolishDictionaryEntryList();
 		
 		// przeniesienie language source z sense na poziom entry
+		
+		// Zadanie wykonane
+		
+		/*
 		for (Entry entry : allPolishDictionaryEntryList) {
 			List<LanguageSource> languageSourceList = new ArrayList<>();
 			
@@ -33,7 +34,8 @@ public class MigrateJmdictLanguageSource109To110Helper {
 			}
 			
 			entry.getLanguageSourceList().addAll(languageSourceList);
-		}		
+		}
+		*/		
 		
 		// zapis zmienionego slownika		
 		Dictionary2Helper.SaveEntryListAsHumanCsvConfig saveEntryListAsHumanCsvConfig = new Dictionary2Helper.SaveEntryListAsHumanCsvConfig();
