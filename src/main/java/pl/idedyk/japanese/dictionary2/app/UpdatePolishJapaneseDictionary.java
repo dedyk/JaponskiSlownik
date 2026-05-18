@@ -8,6 +8,7 @@ import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.EntryAdditionalData;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper.SaveEntryListAsHumanCsvConfig;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 
 public class UpdatePolishJapaneseDictionary {
@@ -69,7 +70,14 @@ public class UpdatePolishJapaneseDictionary {
 		saveEntryListAsHumanCsvConfig.addDeleteInfoSenseDuringDictionaryUpdate = false;
 		
 		// zapisanie czesciowo zmienionego polskiego slownika
-		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update.csv", dictionaryHelper.getPolishJMdict(), entryAdditionalData);
+		JMdict newPolishJmdict = new JMdict();
+		
+		newPolishJmdict.setVersion(dictionaryHelper.getPolishJMdict().getVersion());
+		newPolishJmdict.setCreated(dictionaryHelper.getPolishJMdict().getCreated());
+		
+		newPolishJmdict.getEntryList().addAll(dictionaryHelper.getAllPolishDictionaryEntryList());
+		
+		dictionaryHelper.saveEntryListAsHumanCsv(saveEntryListAsHumanCsvConfig, "input/word2-update.csv", newPolishJmdict, entryAdditionalData);
 		
 		saveEntryListAsHumanCsvConfig.shiftCells = true;
 		saveEntryListAsHumanCsvConfig.shiftCellsGenerateIds = true;
