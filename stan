@@ -13,3 +13,4 @@ word - 40
 ludzie - x
 ----------
 suma: 100
+
