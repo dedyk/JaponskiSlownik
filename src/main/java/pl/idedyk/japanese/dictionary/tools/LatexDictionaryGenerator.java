@@ -9,6 +9,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.TreeMap;
 
@@ -24,6 +25,7 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKa
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Info;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
@@ -39,7 +41,18 @@ public class LatexDictionaryGenerator {
 
 	public static void main(String[] args) throws Exception {
 		
-		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();
+		// INFO: normalnie plik latex generuje sie z pliku jmdict wygenerowanego przez AndroidDictionaryGenerator
+		// wiec zawiera wszystkie slowa lacznie ze slowami, ktore tylko wystepuja w starej strukturze
+		// jednakze na potrzeby testu to nie jest potrzebne
+		
+		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();		
+		
+		JMdict polishJMdict = dictionary2Helper.getPolishJMdict();
+		
+		generateLatexDictonaryEntries(polishJMdict);
+		
+		/*
+		
 
 		//
 		
@@ -64,7 +77,120 @@ public class LatexDictionaryGenerator {
 		}		
 		
 		fileWriter.close();
+		*/
 	}
+	
+	public static PolishJapaneseLatexContent generateLatexDictonaryEntries(JMdict polishJMdict) {
+		
+		PolishJapaneseLatexContent polishJapaneseLatexContent = new PolishJapaneseLatexContent();
+		
+		// generowanie indeksu japonsko
+		generateJapaneseIndex(polishJapaneseLatexContent, polishJMdict);
+		
+		return polishJapaneseLatexContent;
+	}
+	
+	
+	private static void generateJapaneseIndex(PolishJapaneseLatexContent polishJapaneseLatexContent, JMdict polishJMdict) {
+		
+		// klasa pomocnicza
+		class KanaRomajiKey implements Comparable<KanaRomajiKey> {
+			private String kana;
+			private String romaji;
+			
+			public KanaRomajiKey(String kana, String romaji) {
+				this.kana = kana;
+				this.romaji = romaji;
+			}
+
+			@Override
+			public int compareTo(KanaRomajiKey o2) {
+				String o1Kana = kana != null ? kana : "<null>";
+				String o1Romaji = romaji != null ? romaji : "<null>";
+
+				String o2Kana = o2.kana != null ? o2.kana : "<null>";
+				String o2Romaji = o2.romaji != null ? o2.romaji : "<null>";
+
+				int result = o1Kana.compareTo(o2Kana);
+				
+				if (result != 0) {
+					return result;
+				}
+				
+				result = o1Romaji.compareTo(o2Romaji);
+				
+				return result;
+			}
+
+			@Override
+			public int hashCode() {
+				return Objects.hash(kana, romaji);
+			}
+
+			@Override
+			public boolean equals(Object obj) {
+				if (this == obj)
+					return true;
+				
+				if (obj == null)
+					return false;
+				
+				if (getClass() != obj.getClass())
+					return false;
+				
+				KanaRomajiKey other = (KanaRomajiKey) obj;
+				
+				return Objects.equals(kana, other.kana) && Objects.equals(romaji, other.romaji);
+			}
+		}
+		
+		// mapowania do generowania indeksu
+		Map<KanaRomajiKey, List<KanjiKanaPair>> result = new TreeMap<>();
+		
+		// pobieramy wszystkie slowa
+		List<pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry> entryList = polishJMdict.getEntryList();
+		
+		// chodzimy po wszystkich slowach
+		for (pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry entry : entryList) {
+			
+			// pobieramy tylko widoczne czytania
+			List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, true);
+			
+			// chodzimy po wszystkich czytania i dodajemy do mapy
+			for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+				String kana = kanjiKanaPair.getKana();
+				String romaji = kanjiKanaPair.getRomaji();
+				
+				if (romaji == null) {
+					kana = otherSectionName;
+					romaji = otherSectionName;
+				}
+				
+				// generowanie klucza do mapy
+				KanaRomajiKey kanaRomajiKey = new KanaRomajiKey(kana, romaji);
+				
+				// indeks dla danego klucza
+				List<KanjiKanaPair> kanjiKanaPairListForKanaRomajiKey = result.get(kanaRomajiKey);
+				
+				// gdy nie ma tworzymy wpis
+				if (kanjiKanaPairListForKanaRomajiKey == null) {
+					kanjiKanaPairListForKanaRomajiKey = new ArrayList<KanjiKanaPair>();
+					
+					result.put(kanaRomajiKey, kanjiKanaPairListForKanaRomajiKey);
+				}
+				
+				// dodajemy wpis
+				if (kanjiKanaPairListForKanaRomajiKey.contains(kanjiKanaPair) == false) {
+					kanjiKanaPairListForKanaRomajiKey.add(kanjiKanaPair);
+				}
+			}			
+		}	
+		
+		int a = 0;
+		a++;
+	}
+
+	//////// Stary kod
 	
 	public static List<String> generateLatexDictonaryEntries(List<PolishJapaneseEntry> polishJapaneseEntries) throws Exception {
 		
@@ -664,4 +790,9 @@ public class LatexDictionaryGenerator {
 		return kanaHelper.createRomajiString(kanaWord);
 	}
 	*/
+	
+	public static class PolishJapaneseLatexContent {
+		private String japaneseIndex;
+		
+	}
 }
