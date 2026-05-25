@@ -56,12 +56,15 @@ public class LatexDictionaryGenerator {
 		// FM_FIXME: mala czesc
 		JMdict testPolishJMdict = new JMdict();
 		
-		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList()); //.subList(0, 1000));
+		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 10000));
 		
 		PolishJapaneseLatexContent latexDictonaryEntries = generateLatexDictonaryEntries(testPolishJMdict);
 		
 		// zapis plikow
-		Files.write(new File("pdf_dictionary/dictionary_japanese_index.tex").toPath(), latexDictonaryEntries.japaneseIndex.getBytes(), StandardOpenOption.CREATE_NEW);
+		File dictionaryJapaneseIndexFile = new File("pdf_dictionary/dictionary_japanese_index.tex");
+		dictionaryJapaneseIndexFile.delete();
+				
+		Files.write(dictionaryJapaneseIndexFile.toPath(), latexDictonaryEntries.japaneseIndex.getBytes(), StandardOpenOption.CREATE_NEW);
 		
 		/*
 		
@@ -242,42 +245,59 @@ public class LatexDictionaryGenerator {
 			}
 			
 			latexContent.append("\\section*{" + section + "}\n");
-			latexContent.append("\\noindent");				
-			latexContent.append("\\footnotesize\n");
-
-			latexContent.append("\\begin{multicols}{2}\n");
+			latexContent.append("\\begin{multicols}{3}\n");
 			
 			for (Entry<KanaRomajiKey, List<KanjiKanaPair>> currentSectionIndexEntry : indexSectionList) {
 				
 				// lista slow w danym miejscu
 				List<KanjiKanaPair> kanjiKanaPairList = currentSectionIndexEntry.getValue();
 				
-				// FM_FIXME: pogrubienie i upiekszenie
+				latexContent.append("\\noindent"); // \\begin{minipage}{\\linewidth}\n");
 				
-//				latexContent.append("\\dotfill");
-//				latexContent.append("666");
-//				latexContent.append("\\newline\n");					
-								
-				// latexContent.append("\\dotfill");
-				// latexContent.append("666");
+				latexContent.append("\\footnotesize\n");
+				// FM_FIXME: pogrubienie i upiekszenie
+				latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, " + currentSectionIndexEntry.getKey().kana);
+				
+				if (kanjiKanaPairList.size() == 666) {
 					
-				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
-					latexContent.append("\\textbf{" + kanjiKanaPair.getRomaji() + "}, " + kanjiKanaPair.getKana());
-					
-					if (kanjiKanaPair.getKanjiInfo() != null) {
-						latexContent.append(", " + kanjiKanaPair.getKanji());
+					if (kanjiKanaPairList.get(0).getKanjiInfo() != null) {
+						latexContent.append(", " + kanjiKanaPairList.get(0).getKanji());
 					}
 					
 					latexContent.append("\\dotfill");
 					latexContent.append("666");
+					latexContent.append("\n\n");					
 					
-					// FM_FIXME: \pageref{latex_test1}
-					
-					// latexContent.append("\\newline\n");
+				} else {
 					latexContent.append("\n\n");
+					// latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, \\textbf{" + currentSectionIndexEntry.getKey().kana + "}\n\n");
 				}
 				
-				// FM_FIXME: \pageref{latex_test1}					
+				// latexContent.append("\\dotfill");
+				// latexContent.append("666");
+								
+				if (kanjiKanaPairList.size() > 0) {
+					
+					for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+						// latexContent.append("\\hspace*{1.5em} ");
+						
+						// FM_FIXME: ulepszenia, np. pogrubienie
+						if (kanjiKanaPair.getKanjiInfo() != null) {
+							latexContent.append("\n" + kanjiKanaPair.getKanji());
+						} else {
+							latexContent.append("\n" + kanjiKanaPair.getKana());
+						}
+						
+						latexContent.append("\\dotfill");
+						latexContent.append("666");
+						
+						// FM_FIXME: \pageref{latex_test1}
+						
+						latexContent.append("\n\n");
+					}
+					
+					// FM_FIXME: \pageref{latex_test1}					
+				}
 				
 				
 				/*
