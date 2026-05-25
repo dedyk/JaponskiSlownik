@@ -56,7 +56,7 @@ public class LatexDictionaryGenerator {
 		// FM_FIXME: mala czesc
 		JMdict testPolishJMdict = new JMdict();
 		
-		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 10000));
+		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 1000));
 		
 		PolishJapaneseLatexContent latexDictonaryEntries = generateLatexDictonaryEntries(testPolishJMdict);
 		
@@ -175,7 +175,7 @@ public class LatexDictionaryGenerator {
 				
 				if (romaji == null || romaji.length() == 0) {
 					kana = otherSectionName;
-					romaji = otherSectionName;
+					romaji = otherSectionName; // FM_FIXME: generowanie tej sekcji
 				}
 				
 				// generowanie klucza do mapy
@@ -245,30 +245,57 @@ public class LatexDictionaryGenerator {
 			latexContent.append("\\begin{multicols}{2}\n");
 			
 			for (Entry<KanaRomajiKey, List<KanjiKanaPair>> currentSectionIndexEntry : indexSectionList) {
-				latexContent.append("\\begin{minipage}{\\linewidth}\n");
-				
-				latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, \\textbf{" + currentSectionIndexEntry.getKey().kana + "}\\newline\n");
 				
 				// lista slow w danym miejscu
 				List<KanjiKanaPair> kanjiKanaPairList = currentSectionIndexEntry.getValue();
 				
-				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
-					latexContent.append("\\hspace*{1.5em} ");
+				latexContent.append("\\noindent\\begin{minipage}{\\linewidth}\n");
+				
+				latexContent.append("\\footnotesize\n");
+				// FM_FIXME: pogrubienie i upiekszenie
+				latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, " + currentSectionIndexEntry.getKey().kana);
+				
+				if (kanjiKanaPairList.size() == 1) {
 					
-					// FM_FIXME: ulepszenia, np. pogrubienie
-					if (kanjiKanaPair.getKanjiInfo() != null) {
-						latexContent.append(kanjiKanaPair.getKanji());
-					} else {
-						latexContent.append(kanjiKanaPair.getKana());
+					if (kanjiKanaPairList.get(0).getKanjiInfo() != null) {
+						latexContent.append(", " + kanjiKanaPairList.get(0).getKanji());
 					}
 					
 					latexContent.append("\\dotfill");
 					latexContent.append("666");
+					latexContent.append("\\newline\n");					
 					
-					// FM_FIXME: \pageref{latex_test1}
-					
+				} else {
 					latexContent.append("\\newline\n");
+					latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, \\textbf{" + currentSectionIndexEntry.getKey().kana + "}\\newline\n");
 				}
+				
+				// latexContent.append("\\dotfill");
+				// latexContent.append("666");
+								
+				if (kanjiKanaPairList.size() > 1) {
+					
+					for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+						latexContent.append("\\hspace*{1.5em} ");
+						
+						// FM_FIXME: ulepszenia, np. pogrubienie
+						if (kanjiKanaPair.getKanjiInfo() != null) {
+							latexContent.append(kanjiKanaPair.getKanji());
+						} else {
+							latexContent.append(kanjiKanaPair.getKana());
+						}
+						
+						latexContent.append("\\dotfill");
+						latexContent.append("666");
+						
+						// FM_FIXME: \pageref{latex_test1}
+						
+						latexContent.append("\\newline\n");
+					}
+					
+					// FM_FIXME: \pageref{latex_test1}					
+				}
+				
 				
 				/*
 				fizyka \newline
