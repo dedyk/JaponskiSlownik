@@ -177,7 +177,7 @@ public class GenerateCharHexCode {
 			
 			System.out.println(character + " - " + characterAsUTF32);
 			
-			result.append("U+" + characterAsUTF32).append(" \\\n");
+			result.append("U+" + characterAsUTF32).append(",\n");
 		}
 		
 		System.out.println("-----");
