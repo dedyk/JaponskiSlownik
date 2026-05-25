@@ -245,7 +245,7 @@ public class LatexDictionaryGenerator {
 			latexContent.append("\\noindent");				
 			latexContent.append("\\footnotesize\n");
 
-			//latexContent.append("\\begin{multicols}{2}\n");
+			latexContent.append("\\begin{multicols}{2}\n");
 			
 			for (Entry<KanaRomajiKey, List<KanjiKanaPair>> currentSectionIndexEntry : indexSectionList) {
 				
@@ -268,12 +268,13 @@ public class LatexDictionaryGenerator {
 						latexContent.append(", " + kanjiKanaPair.getKanji());
 					}
 					
-					//latexContent.append("\\dotfill");
+					latexContent.append("\\dotfill");
 					latexContent.append("666");
 					
 					// FM_FIXME: \pageref{latex_test1}
 					
-					latexContent.append("\\newline\n");
+					// latexContent.append("\\newline\n");
+					latexContent.append("\n\n");
 				}
 				
 				// FM_FIXME: \pageref{latex_test1}					
@@ -291,7 +292,7 @@ public class LatexDictionaryGenerator {
 			// FM_FIXME: \markboth !!!!
 			
 			
-			//latexContent.append("\\end{multicols}\n");
+			latexContent.append("\\end{multicols}\n");
 		}
 		
 		polishJapaneseLatexContent.japaneseIndex = latexContent.toString();
