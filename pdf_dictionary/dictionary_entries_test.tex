@@ -1,0 +1,51 @@
+% Wyświetlamy oba indeksy jeden po drugim
+\renewcommand{\indexname}{Test}
+\begin{theindex}
+\textbf{F}\nopagebreak
+
+\item fizyka
+    \subitem grawitacja, \pageref{latex_test1}
+    \subitem grawitacja, \pageref{latex_test3}
+\item fizyka2
+    \subitem mechanika kwantowa, \pageref{latex_test2}
+    \subitem mechanika kwantowa, \pageref{latex_test4}
+
+\end{theindex}
+
+\renewcommand{\indexname}{Test2}
+\begin{theindex}
+\textbf{F}\nopagebreak
+
+\item fizyka
+    \subitem grawitacja \dotfill \pageref{latex_test1}
+    \subitem grawitacja \dotfill \pageref{latex_test3}
+\item fizyka2
+    \subitem mechanika kwantowa \dotfill \pageref{latex_test2}
+    \subitem mechanika kwantowa \dotfill \pageref{latex_test4}
+
+\end{theindex}
+
+%%%%%
+
+\markboth{\textbf{} (ゞ)}{\textbf{} (ゞ)}
+\phantomsection
+W fizyce klasycznej \textbf{grawitacja}\label{latex_test1} odgrywa kluczową rolę.
+Teorię tę w wielkim stopniu rozwinął \textbf{Isaac Newton}\index[nazwiska]{Newton, Isaac}.
+
+\phantomsection
+Z kolei w skali mikro rządzi \textbf{mechanika kwantowa}\label{latex_test2},
+której podwaliny kładł m.in. \textbf{Max Planck}\index[nazwiska]{Planck, Max}.
+
+\newpage
+
+\phantomsection
+\markboth{\textbf{} (ゞ222)}{\textbf{} (ゞ222)}
+222 W fizyce klasycznej \textbf{grawitacja}\label{latex_test3} odgrywa kluczową rolę.
+Teorię tę w wielkim stopniu rozwinął \textbf{Isaac Newton}\index[nazwiska]{Newton, Isaac}.
+
+\phantomsection
+222 Z kolei w skali mikro rządzi \textbf{mechanika kwantowa}\label{latex_test4},
+której podwaliny kładł m.in. \textbf{Max Planck}\index[nazwiska]{Planck, Max}.
+
+%%%%%%%%%%%
+
