@@ -56,7 +56,7 @@ public class LatexDictionaryGenerator {
 		// FM_FIXME: mala czesc
 		JMdict testPolishJMdict = new JMdict();
 		
-		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList()); //.subList(0, 10000));
+		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 10000));
 		
 		PolishJapaneseLatexContent latexDictonaryEntries = generateLatexDictonaryEntries(testPolishJMdict);
 		
@@ -205,7 +205,12 @@ public class LatexDictionaryGenerator {
 	}
 	
 	private static void generateJapaneseIndexSection(StringBuffer latexContent, String section, List<Entry<KanaRomajiKey, List<KanjiKanaPair>>> indexSectionList) {
+		if (indexSectionList == null) {
+			return;
+		}
+		
 		latexContent.append("\\section*{" + section + "}\n");
+		latexContent.append("\\begin{spacing}{0.1}\n");
 		latexContent.append("\\begin{multicols}{3}\n");
 		
 		for (Entry<KanaRomajiKey, List<KanjiKanaPair>> currentSectionIndexEntry : indexSectionList) {
@@ -213,13 +218,12 @@ public class LatexDictionaryGenerator {
 			// lista slow w danym miejscu
 			List<KanjiKanaPair> kanjiKanaPairList = currentSectionIndexEntry.getValue();
 			
-			latexContent.append("\\noindent"); // \\begin{minipage}{\\linewidth}\n");
-			
+			latexContent.append("\\noindent");			
 			latexContent.append("\\footnotesize\n");
-			// FM_FIXME: pogrubienie i upiekszenie
 			
 			if (section != otherSectionName) {
 				latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, " + currentSectionIndexEntry.getKey().kana);
+				latexContent.append(markBoth(currentSectionIndexEntry.getKey().romaji + ", " + currentSectionIndexEntry.getKey().kana)).append(" ");
 			}
 			
 			if (kanjiKanaPairList.size() == 666) {
@@ -234,12 +238,8 @@ public class LatexDictionaryGenerator {
 				
 			} else {
 				latexContent.append("\n\n");
-				// latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, \\textbf{" + currentSectionIndexEntry.getKey().kana + "}\n\n");
 			}
-			
-			// latexContent.append("\\dotfill");
-			// latexContent.append("666");
-							
+										
 			if (kanjiKanaPairList.size() > 0) {
 				
 				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
@@ -255,25 +255,16 @@ public class LatexDictionaryGenerator {
 					latexContent.append("\\dotfill");
 					latexContent.append("666");
 					
-					// FM_FIXME: \pageref{latex_test1}
-					
+					// FM_FIXME: \pageref{latex_test1}					
 					latexContent.append("\n\n");
 				}
 				
 				// FM_FIXME: \pageref{latex_test1}					
-			}
-			
-			
-			/*
-			fizyka \newline
-			\hspace*{1.5em} grawitacja \dotfill \pageref{latex_test1} \newline
-			\hspace*{1.5em} grawitacja \dotfill \pageref{latex_test3} \newline
-			\end{minipage}
-			*/
-			// latexContent.append("\\end{minipage}\n");	
+			}	
 		}
 
 		latexContent.append("\\end{multicols}\n");
+		latexContent.append("\\end{spacing}\n");
 	}
 
 	//////// Stary kod
