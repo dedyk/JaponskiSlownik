@@ -1,6 +1,10 @@
 package pl.idedyk.japanese.dictionary.tools;
 
+import java.io.File;
 import java.io.FileWriter;
+import java.nio.file.Files;
+import java.nio.file.OpenOption;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -49,7 +53,15 @@ public class LatexDictionaryGenerator {
 		
 		JMdict polishJMdict = dictionary2Helper.getPolishJMdict();
 		
-		generateLatexDictonaryEntries(polishJMdict);
+		// FM_FIXME: mala czesc
+		JMdict testPolishJMdict = new JMdict();
+		
+		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 10000));
+		
+		PolishJapaneseLatexContent latexDictonaryEntries = generateLatexDictonaryEntries(testPolishJMdict);
+		
+		// zapis plikow
+		Files.write(new File("pdf_dictionary/dictionary_japanese_index.tex").toPath(), latexDictonaryEntries.japaneseIndex.getBytes(), StandardOpenOption.CREATE_NEW);
 		
 		/*
 		
@@ -84,7 +96,7 @@ public class LatexDictionaryGenerator {
 		
 		PolishJapaneseLatexContent polishJapaneseLatexContent = new PolishJapaneseLatexContent();
 		
-		// generowanie indeksu japonsko
+		// generowanie indeksu japonskiego
 		generateJapaneseIndex(polishJapaneseLatexContent, polishJMdict);
 		
 		return polishJapaneseLatexContent;
@@ -145,7 +157,7 @@ public class LatexDictionaryGenerator {
 		}
 		
 		// mapowania do generowania indeksu
-		Map<KanaRomajiKey, List<KanjiKanaPair>> result = new TreeMap<>();
+		Map<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexMap = new TreeMap<>();
 		
 		// pobieramy wszystkie slowa
 		List<pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry> entryList = polishJMdict.getEntryList();
@@ -161,7 +173,7 @@ public class LatexDictionaryGenerator {
 				String kana = kanjiKanaPair.getKana();
 				String romaji = kanjiKanaPair.getRomaji();
 				
-				if (romaji == null) {
+				if (romaji == null || romaji.length() == 0) {
 					kana = otherSectionName;
 					romaji = otherSectionName;
 				}
@@ -170,13 +182,13 @@ public class LatexDictionaryGenerator {
 				KanaRomajiKey kanaRomajiKey = new KanaRomajiKey(kana, romaji);
 				
 				// indeks dla danego klucza
-				List<KanjiKanaPair> kanjiKanaPairListForKanaRomajiKey = result.get(kanaRomajiKey);
+				List<KanjiKanaPair> kanjiKanaPairListForKanaRomajiKey = japaneseIndexMap.get(kanaRomajiKey);
 				
 				// gdy nie ma tworzymy wpis
 				if (kanjiKanaPairListForKanaRomajiKey == null) {
 					kanjiKanaPairListForKanaRomajiKey = new ArrayList<KanjiKanaPair>();
 					
-					result.put(kanaRomajiKey, kanjiKanaPairListForKanaRomajiKey);
+					japaneseIndexMap.put(kanaRomajiKey, kanjiKanaPairListForKanaRomajiKey);
 				}
 				
 				// dodajemy wpis
@@ -184,10 +196,96 @@ public class LatexDictionaryGenerator {
 					kanjiKanaPairListForKanaRomajiKey.add(kanjiKanaPair);
 				}
 			}			
-		}	
+		}
 		
-		int a = 0;
-		a++;
+		// grupowanie po sekcjach
+		Map<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> indexSection = new TreeMap<>();
+		
+		for (Map.Entry<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexMapEntry : japaneseIndexMap.entrySet()) {
+			
+			KanaRomajiKey kanaRomajiKey = japaneseIndexMapEntry.getKey();
+
+			String section = null;
+			
+			if (kanaRomajiKey.kana == otherSectionName || kanaRomajiKey.romaji == otherSectionName) {
+				section = otherSectionName;
+				
+			} else {
+				section = kanaRomajiKey.romaji.substring(0, 1).toUpperCase();
+			}
+			
+			// czy taka sekcja wystepuje
+			List<Entry<KanaRomajiKey, List<KanjiKanaPair>>> entrySetListForSection = indexSection.get(section);
+			
+			if (entrySetListForSection == null) {
+				entrySetListForSection = new ArrayList<>();
+				
+				indexSection.put(section, entrySetListForSection);
+			}
+			
+			entrySetListForSection.add(japaneseIndexMapEntry);
+		}
+		
+		// generowanie zawartosci dokumentu		
+		StringBuffer latexContent = new StringBuffer();
+		
+		latexContent.append("\\chapter*{Indeks słów japońskich}\n");		
+		
+		for (Entry<String, List<Entry<KanaRomajiKey, List<KanjiKanaPair>>>> indexSectionEntrySet : indexSection.entrySet()) {
+			
+			String section = indexSectionEntrySet.getKey();
+			List<Entry<KanaRomajiKey, List<KanjiKanaPair>>> indexSectionList = indexSectionEntrySet.getValue();
+			
+			// na razie nie generujemy sekcji dla innych
+			if (section == otherSectionName) {
+				continue;
+			}
+			
+			latexContent.append("\\section*{" + section + "}\n");
+			latexContent.append("\\begin{multicols}{2}\n");
+			
+			for (Entry<KanaRomajiKey, List<KanjiKanaPair>> currentSectionIndexEntry : indexSectionList) {
+				latexContent.append("\\begin{minipage}{\\linewidth}\n");
+				
+				latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, \\textbf{" + currentSectionIndexEntry.getKey().kana + "}\\newline\n");
+				
+				// lista slow w danym miejscu
+				List<KanjiKanaPair> kanjiKanaPairList = currentSectionIndexEntry.getValue();
+				
+				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+					latexContent.append("\\hspace*{1.5em} ");
+					
+					// FM_FIXME: ulepszenia, np. pogrubienie
+					if (kanjiKanaPair.getKanjiInfo() != null) {
+						latexContent.append(kanjiKanaPair.getKanji());
+					} else {
+						latexContent.append(kanjiKanaPair.getKana());
+					}
+					
+					latexContent.append("\\dotfill");
+					latexContent.append("666");
+					
+					// FM_FIXME: \pageref{latex_test1}
+					
+					latexContent.append("\\newline\n");
+				}
+				
+				/*
+				fizyka \newline
+				\hspace*{1.5em} grawitacja \dotfill \pageref{latex_test1} \newline
+				\hspace*{1.5em} grawitacja \dotfill \pageref{latex_test3} \newline
+				\end{minipage}
+				*/
+				latexContent.append("\\end{minipage}\n");	
+			}
+			
+			// FM_FIXME: \markboth !!!!
+			
+			
+			latexContent.append("\\end{multicols}\n");
+		}
+		
+		polishJapaneseLatexContent.japaneseIndex = latexContent.toString();
 	}
 
 	//////// Stary kod
