@@ -1,29 +1,37 @@
 % Wyświetlamy oba indeksy jeden po drugim
-\renewcommand{\indexname}{Test}
-\begin{theindex}
+\chapter*{Indeks j}
+\section*{Test}
+\begin{multicols}{2}
 \textbf{F}\nopagebreak
 
-\item fizyka
-    \subitem grawitacja, \pageref{latex_test1}
-    \subitem grawitacja, \pageref{latex_test3}
-\item fizyka2
-    \subitem mechanika kwantowa, \pageref{latex_test2}
-    \subitem mechanika kwantowa, \pageref{latex_test4}
+\begin{minipage}{\linewidth}
+fizyka \newline
+\hspace*{1.5em} grawitacja, \pageref{latex_test1} \newline
+\hspace*{1.5em} grawitacja, \pageref{latex_test3} \newline
+\end{minipage}
+\begin{minipage}{\linewidth}
+fizyka2 \newline
+\hspace*{1.5em} mechanika kwantowa, \pageref{latex_test2} \newline
+\hspace*{1.5em} mechanika kwantowa, \pageref{latex_test4} \newline
+\end{minipage}
 
-\end{theindex}
+\end{multicols}
 
-\renewcommand{\indexname}{Test2}
-\begin{theindex}
+\section*{Test2}
+\begin{multicols}{2}
 \textbf{F}\nopagebreak
 
-\item fizyka
-    \subitem grawitacja \dotfill \pageref{latex_test1}
-    \subitem grawitacja \dotfill \pageref{latex_test3}
-\item fizyka2
-    \subitem mechanika kwantowa \dotfill \pageref{latex_test2}
-    \subitem mechanika kwantowa \dotfill \pageref{latex_test4}
-
-\end{theindex}
+\begin{minipage}{\linewidth}
+fizyka \newline
+\hspace*{1.5em} grawitacja \dotfill \pageref{latex_test1} \newline
+\hspace*{1.5em} grawitacja \dotfill \pageref{latex_test3} \newline
+\end{minipage}
+\begin{minipage}{\linewidth}
+fizyka2 \newline
+\hspace*{1.5em} mechanika kwantowa \dotfill \pageref{latex_test2} \newline
+\hspace*{1.5em} mechanika kwantowa \dotfill \pageref{latex_test4} \newline
+\end{minipage}
+\end{multicols}
 
 %%%%%
 
