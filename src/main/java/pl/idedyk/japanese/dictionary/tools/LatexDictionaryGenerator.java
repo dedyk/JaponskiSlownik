@@ -181,7 +181,7 @@ public class LatexDictionaryGenerator {
 		// generowanie zawartosci dokumentu		
 		StringBuffer latexContent = new StringBuffer();
 		
-		latexContent.append("\\chapter*{Indeks słów japońskich}\n");		
+		latexContent.append("\\chapter{Indeks słów japońskich}\n");		
 		
 		for (Entry<String, List<Entry<KanaRomajiKey, List<KanjiKanaPair>>>> indexSectionEntrySet : indexSection.entrySet()) {
 			
@@ -209,7 +209,11 @@ public class LatexDictionaryGenerator {
 			return;
 		}
 		
-		latexContent.append("\\section*{" + section + "}\n");
+		if (section != otherSectionName) {
+			latexContent.append("\\section[" + section + "]{" + section + "}\n");
+		} else {
+			latexContent.append("\\section[Inne]{Inne}\n");
+		}
 		latexContent.append("\\begin{spacing}{0.1}\n");
 		latexContent.append("\\begin{multicols}{3}\n");
 		
