@@ -56,7 +56,7 @@ public class LatexDictionaryGenerator {
 		// FM_FIXME: mala czesc
 		JMdict testPolishJMdict = new JMdict();
 		
-		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 10000));
+		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList()); //.subList(0, 10000));
 		
 		PolishJapaneseLatexContent latexDictonaryEntries = generateLatexDictonaryEntries(testPolishJMdict);
 		
@@ -107,58 +107,7 @@ public class LatexDictionaryGenerator {
 	
 	
 	private static void generateJapaneseIndex(PolishJapaneseLatexContent polishJapaneseLatexContent, JMdict polishJMdict) {
-		
-		// klasa pomocnicza
-		class KanaRomajiKey implements Comparable<KanaRomajiKey> {
-			private String kana;
-			private String romaji;
-			
-			public KanaRomajiKey(String kana, String romaji) {
-				this.kana = kana;
-				this.romaji = romaji;
-			}
-
-			@Override
-			public int compareTo(KanaRomajiKey o2) {
-				String o1Kana = kana != null ? kana : "<null>";
-				String o1Romaji = romaji != null ? romaji : "<null>";
-
-				String o2Kana = o2.kana != null ? o2.kana : "<null>";
-				String o2Romaji = o2.romaji != null ? o2.romaji : "<null>";
-
-				int result = o1Kana.compareTo(o2Kana);
 				
-				if (result != 0) {
-					return result;
-				}
-				
-				result = o1Romaji.compareTo(o2Romaji);
-				
-				return result;
-			}
-
-			@Override
-			public int hashCode() {
-				return Objects.hash(kana, romaji);
-			}
-
-			@Override
-			public boolean equals(Object obj) {
-				if (this == obj)
-					return true;
-				
-				if (obj == null)
-					return false;
-				
-				if (getClass() != obj.getClass())
-					return false;
-				
-				KanaRomajiKey other = (KanaRomajiKey) obj;
-				
-				return Objects.equals(kana, other.kana) && Objects.equals(romaji, other.romaji);
-			}
-		}
-		
 		// mapowania do generowania indeksu
 		Map<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexMap = new TreeMap<>();
 		
@@ -244,78 +193,87 @@ public class LatexDictionaryGenerator {
 				continue;
 			}
 			
-			latexContent.append("\\section*{" + section + "}\n");
-			latexContent.append("\\begin{multicols}{3}\n");
+			// generowanie sekcji
+			generateJapaneseIndexSection(latexContent, section, indexSectionList);			
+			// FM_FIXME: \markboth !!!!
+		}
+		
+		// generowanie dla sekcji inne
+		generateJapaneseIndexSection(latexContent, otherSectionName, indexSection.get(otherSectionName));
+		
+		polishJapaneseLatexContent.japaneseIndex = latexContent.toString();
+	}
+	
+	private static void generateJapaneseIndexSection(StringBuffer latexContent, String section, List<Entry<KanaRomajiKey, List<KanjiKanaPair>>> indexSectionList) {
+		latexContent.append("\\section*{" + section + "}\n");
+		latexContent.append("\\begin{multicols}{3}\n");
+		
+		for (Entry<KanaRomajiKey, List<KanjiKanaPair>> currentSectionIndexEntry : indexSectionList) {
 			
-			for (Entry<KanaRomajiKey, List<KanjiKanaPair>> currentSectionIndexEntry : indexSectionList) {
-				
-				// lista slow w danym miejscu
-				List<KanjiKanaPair> kanjiKanaPairList = currentSectionIndexEntry.getValue();
-				
-				latexContent.append("\\noindent"); // \\begin{minipage}{\\linewidth}\n");
-				
-				latexContent.append("\\footnotesize\n");
-				// FM_FIXME: pogrubienie i upiekszenie
+			// lista slow w danym miejscu
+			List<KanjiKanaPair> kanjiKanaPairList = currentSectionIndexEntry.getValue();
+			
+			latexContent.append("\\noindent"); // \\begin{minipage}{\\linewidth}\n");
+			
+			latexContent.append("\\footnotesize\n");
+			// FM_FIXME: pogrubienie i upiekszenie
+			
+			if (section != otherSectionName) {
 				latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, " + currentSectionIndexEntry.getKey().kana);
+			}
+			
+			if (kanjiKanaPairList.size() == 666) {
 				
-				if (kanjiKanaPairList.size() == 666) {
+				if (section != otherSectionName && kanjiKanaPairList.get(0).getKanjiInfo() != null) {
+					latexContent.append(", " + kanjiKanaPairList.get(0).getKanji());
+				}
+				
+				latexContent.append("\\dotfill");
+				latexContent.append("666");
+				latexContent.append("\n\n");					
+				
+			} else {
+				latexContent.append("\n\n");
+				// latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, \\textbf{" + currentSectionIndexEntry.getKey().kana + "}\n\n");
+			}
+			
+			// latexContent.append("\\dotfill");
+			// latexContent.append("666");
+							
+			if (kanjiKanaPairList.size() > 0) {
+				
+				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+					// latexContent.append("\\hspace*{1.5em} ");
 					
-					if (kanjiKanaPairList.get(0).getKanjiInfo() != null) {
-						latexContent.append(", " + kanjiKanaPairList.get(0).getKanji());
+					// FM_FIXME: ulepszenia, np. pogrubienie
+					if (kanjiKanaPair.getKanjiInfo() != null) {
+						latexContent.append("\n" + kanjiKanaPair.getKanji());
+					} else {
+						latexContent.append("\n" + kanjiKanaPair.getKana());
 					}
 					
 					latexContent.append("\\dotfill");
 					latexContent.append("666");
-					latexContent.append("\n\n");					
 					
-				} else {
+					// FM_FIXME: \pageref{latex_test1}
+					
 					latexContent.append("\n\n");
-					// latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, \\textbf{" + currentSectionIndexEntry.getKey().kana + "}\n\n");
 				}
 				
-				// latexContent.append("\\dotfill");
-				// latexContent.append("666");
-								
-				if (kanjiKanaPairList.size() > 0) {
-					
-					for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
-						// latexContent.append("\\hspace*{1.5em} ");
-						
-						// FM_FIXME: ulepszenia, np. pogrubienie
-						if (kanjiKanaPair.getKanjiInfo() != null) {
-							latexContent.append("\n" + kanjiKanaPair.getKanji());
-						} else {
-							latexContent.append("\n" + kanjiKanaPair.getKana());
-						}
-						
-						latexContent.append("\\dotfill");
-						latexContent.append("666");
-						
-						// FM_FIXME: \pageref{latex_test1}
-						
-						latexContent.append("\n\n");
-					}
-					
-					// FM_FIXME: \pageref{latex_test1}					
-				}
-				
-				
-				/*
-				fizyka \newline
-				\hspace*{1.5em} grawitacja \dotfill \pageref{latex_test1} \newline
-				\hspace*{1.5em} grawitacja \dotfill \pageref{latex_test3} \newline
-				\end{minipage}
-				*/
-				// latexContent.append("\\end{minipage}\n");	
+				// FM_FIXME: \pageref{latex_test1}					
 			}
 			
-			// FM_FIXME: \markboth !!!!
 			
-			
-			latexContent.append("\\end{multicols}\n");
+			/*
+			fizyka \newline
+			\hspace*{1.5em} grawitacja \dotfill \pageref{latex_test1} \newline
+			\hspace*{1.5em} grawitacja \dotfill \pageref{latex_test3} \newline
+			\end{minipage}
+			*/
+			// latexContent.append("\\end{minipage}\n");	
 		}
-		
-		polishJapaneseLatexContent.japaneseIndex = latexContent.toString();
+
+		latexContent.append("\\end{multicols}\n");
 	}
 
 	//////// Stary kod
@@ -923,4 +881,56 @@ public class LatexDictionaryGenerator {
 		private String japaneseIndex;
 		
 	}
+	
+	// klasa pomocnicza
+	private static class KanaRomajiKey implements Comparable<KanaRomajiKey> {
+		private String kana;
+		private String romaji;
+		
+		public KanaRomajiKey(String kana, String romaji) {
+			this.kana = kana;
+			this.romaji = romaji;
+		}
+
+		@Override
+		public int compareTo(KanaRomajiKey o2) {
+			String o1Kana = kana != null ? kana : "<null>";
+			String o1Romaji = romaji != null ? romaji : "<null>";
+
+			String o2Kana = o2.kana != null ? o2.kana : "<null>";
+			String o2Romaji = o2.romaji != null ? o2.romaji : "<null>";
+
+			int result = o1Kana.compareTo(o2Kana);
+			
+			if (result != 0) {
+				return result;
+			}
+			
+			result = o1Romaji.compareTo(o2Romaji);
+			
+			return result;
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash(kana, romaji);
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			
+			if (obj == null)
+				return false;
+			
+			if (getClass() != obj.getClass())
+				return false;
+			
+			KanaRomajiKey other = (KanaRomajiKey) obj;
+			
+			return Objects.equals(kana, other.kana) && Objects.equals(romaji, other.romaji);
+		}
+	}
+
 }
