@@ -5,12 +5,14 @@ import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.OpenOption;
 import java.nio.file.StandardOpenOption;
+import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Objects;
@@ -66,12 +68,15 @@ public class LatexDictionaryGenerator {
 				
 		Files.write(dictionaryJapaneseIndexFile.toPath(), latexDictonaryEntries.japaneseIndex.getBytes(), StandardOpenOption.CREATE_NEW);
 
+		File dictionaryPolishIndexFile = new File("pdf_dictionary/dictionary_polish_index.tex");
+		dictionaryPolishIndexFile.delete();
+				
+		Files.write(dictionaryPolishIndexFile.toPath(), latexDictonaryEntries.polishIndex.getBytes(), StandardOpenOption.CREATE_NEW);
+		
 		File dictionaryJmdictEntriesFile = new File("pdf_dictionary/dictionary_jmdict_entries.tex");
 		dictionaryJmdictEntriesFile.delete();
 				
 		Files.write(dictionaryJmdictEntriesFile.toPath(), latexDictonaryEntries.jmdictEntries.getBytes(), StandardOpenOption.CREATE_NEW);
-
-		
 		
 		/*
 		
@@ -110,7 +115,7 @@ public class LatexDictionaryGenerator {
 		generateJapaneseIndex(polishJapaneseLatexContent, polishJMdict);
 		
 		// generowanie indeksu polskiego
-		int fixme = 1;
+		generatePolishIndex(polishJapaneseLatexContent, polishJMdict);
 		
 		// generowanie slow
 		generateJMDictEntries(polishJapaneseLatexContent, polishJMdict);
@@ -206,14 +211,127 @@ public class LatexDictionaryGenerator {
 			}
 			
 			// generowanie sekcji
-			generateJapaneseIndexSection(latexContent, section, indexSectionList);			
-			// FM_FIXME: \markboth !!!!
+			generateJapaneseIndexSection(latexContent, section, indexSectionList);
 		}
 		
 		// generowanie dla sekcji inne
 		generateJapaneseIndexSection(latexContent, otherSectionName, indexSection.get(otherSectionName));
 		
 		polishJapaneseLatexContent.japaneseIndex = latexContent.toString();
+	}
+	
+	private static void generatePolishIndex(PolishJapaneseLatexContent polishJapaneseLatexContent, JMdict polishJMdict) {		
+		
+		// sortowanie po polsku
+		Collator polishCollator = Collator.getInstance(new Locale("pl", "PL"));
+		polishCollator.setStrength(Collator.SECONDARY);
+		
+		// mapowania do generowania indeksu
+		Map<String, List<KanjiKanaPair>> polishIndexMap = new TreeMap<>(polishCollator);
+		
+		// pobieramy wszystkie slowa
+		List<pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry> entryList = polishJMdict.getEntryList();
+		
+		// chodzimy po wszystkich slowach
+		for (pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry entry : entryList) {
+			
+			// pobieramy tylko widoczne czytania
+			List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, true);
+			
+			// oraz chodzimy po wszystkich znaczeniach
+			List<Sense> entrySenseList = entry.getSenseList();
+			
+			for (Sense sense : entrySenseList) {
+				// pobieramy wszystkie polskie znaczenia
+				List<Gloss> polishGlossList = Dictionary2HelperCommon.getPolishGlossList(sense.getGlossList());
+				
+				// chodzimy po wszystkich polskich znaczeniach
+				for (Gloss polishGloss : polishGlossList) {
+					
+					String polishGlossValue = polishGloss.getValue();
+										
+					// jezeli byla jakas zawartosc w namiasie to usuwamy to
+					polishGlossValue = polishGlossValue.replaceAll("\\s*\\([^()]*\\)\\s*", "").trim();
+					
+					// jezeli zaczyna sie od znaku "-" usuwamy to
+					if (polishGlossValue.startsWith("-") == true) {
+						polishGlossValue = polishGlossValue.substring(1);
+					}
+					
+					if (polishGlossValue.length() == 0) {
+						polishGlossValue = otherSectionName;
+					}
+					
+					// indeks dla danego klucza
+					List<KanjiKanaPair> kanjiKanaPairListForPolishGlossValue = polishIndexMap.get(polishGlossValue);
+					
+					// gdy nie ma tworzymy wpis
+					if (kanjiKanaPairListForPolishGlossValue == null) {
+						kanjiKanaPairListForPolishGlossValue = new ArrayList<KanjiKanaPair>();
+						
+						polishIndexMap.put(polishGlossValue, kanjiKanaPairListForPolishGlossValue);
+					}
+					
+					// dodajemy wpisy
+					for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+						if (kanjiKanaPairListForPolishGlossValue.contains(kanjiKanaPair) == false) {
+							kanjiKanaPairListForPolishGlossValue.add(kanjiKanaPair);
+						}
+					}
+				}
+			}
+		}
+		
+		// grupowanie po sekcjach
+		Map<String, List<Map.Entry<String, List<KanjiKanaPair>>>> indexSection = new TreeMap<>(polishCollator);
+		
+		for (Map.Entry<String, List<KanjiKanaPair>> polishIndexMapEntry : polishIndexMap.entrySet()) {
+			
+			String polishGlossValueKey = polishIndexMapEntry.getKey();
+			String section;
+			
+			if (polishGlossValueKey == otherSectionName) {
+				section = otherSectionName;
+				
+			} else {
+				section = polishGlossValueKey.substring(0, 1).toUpperCase();
+			}
+			
+			// czy taka sekcja wystepuje
+			List<Entry<String, List<KanjiKanaPair>>> entrySetListForSection = indexSection.get(section);
+			
+			if (entrySetListForSection == null) {
+				entrySetListForSection = new ArrayList<>();
+				
+				indexSection.put(section, entrySetListForSection);
+			}
+			
+			entrySetListForSection.add(polishIndexMapEntry);
+		}
+		
+		// generowanie zawartosci dokumentu		
+		StringBuffer latexContent = new StringBuffer();
+		
+		latexContent.append("\\chapter{Indeks słów polskich}\n");		
+		
+		for (Entry<String, List<Entry<String, List<KanjiKanaPair>>>> indexSectionEntrySet : indexSection.entrySet()) {
+			
+			String section = indexSectionEntrySet.getKey();
+			List<Entry<String, List<KanjiKanaPair>>> indexSectionList = indexSectionEntrySet.getValue();
+			
+			// na razie nie generujemy sekcji dla innych
+			if (section == otherSectionName) {
+				continue;
+			}
+			
+			// generowanie sekcji
+			// generatePolishIndexSection(latexContent, section, indexSectionList);
+		}
+		
+		// generowanie dla sekcji inne
+		generatePolishIndexSection(latexContent, otherSectionName, indexSection.get(otherSectionName));
+				
+		polishJapaneseLatexContent.polishIndex = latexContent.toString();		
 	}
 	
 	private static void generateJapaneseIndexSection(StringBuffer latexContent, String section, List<Entry<KanaRomajiKey, List<KanjiKanaPair>>> indexSectionList) {
@@ -247,9 +365,7 @@ public class LatexDictionaryGenerator {
 			if (kanjiKanaPairList.size() > 0) {
 				
 				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
-					// latexContent.append("\\hspace*{1.5em} ");
-					
-					// FM_FIXME: ulepszenia, np. pogrubienie
+
 					if (kanjiKanaPair.getKanjiInfo() != null) {
 						latexContent.append("\n" + kanjiKanaPair.getKanji());
 					} else {
@@ -258,19 +374,65 @@ public class LatexDictionaryGenerator {
 					
 					latexContent.append("\\dotfill");
 					latexContent.append("\\pageref{" + getEntryLabelKey(kanjiKanaPair.getEntry()) + "}");
-					
-					// FM_FIXME: \pageref{latex_test1}					
+								
 					latexContent.append("\n\n");
-				}
-				
-				// FM_FIXME: \pageref{latex_test1}					
+				}					
 			}	
 		}
 
 		latexContent.append("\\end{multicols}\n");
 		latexContent.append("\\end{spacing}\n");
 	}
-	
+
+	private static void generatePolishIndexSection(StringBuffer latexContent, String section, List<Entry<String, List<KanjiKanaPair>>> indexSectionList) {
+		if (indexSectionList == null) {
+			return;
+		}
+		
+		if (section != otherSectionName) {
+			latexContent.append("\\section[" + section + "]{" + section + "}\n");
+		} else {
+			latexContent.append("\\section[Inne]{Inne}\n");
+		}
+		
+		latexContent.append("\\begin{spacing}{0.1}\n");
+		latexContent.append("\\begin{multicols}{3}\n");
+		
+		for (Entry<String, List<KanjiKanaPair>> currentSectionIndexEntry : indexSectionList) {
+			
+			// lista slow w danym miejscu
+			List<KanjiKanaPair> kanjiKanaPairList = currentSectionIndexEntry.getValue();
+			
+			latexContent.append("\\noindent");			
+			latexContent.append("\\footnotesize\n");
+			
+			
+			latexContent.append("\\textbf{" + escapeLatexChars(currentSectionIndexEntry.getKey()) + "}");
+			latexContent.append(markBoth(escapeLatexChars(currentSectionIndexEntry.getKey()))).append(" ");			
+			latexContent.append("\n\n");
+										
+			if (kanjiKanaPairList.size() > 0) {
+				
+				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+
+					if (kanjiKanaPair.getKanjiInfo() != null) {
+						latexContent.append("\n" + kanjiKanaPair.getKanji());
+					} else {
+						latexContent.append("\n" + kanjiKanaPair.getKana());
+					}
+					
+					latexContent.append("\\dotfill");
+					latexContent.append("\\pageref{" + getEntryLabelKey(kanjiKanaPair.getEntry()) + "}");
+								
+					latexContent.append("\n\n");
+				}					
+			}	
+		}
+
+		latexContent.append("\\end{multicols}\n");
+		latexContent.append("\\end{spacing}\n");
+	}
+
 	private static void generateJMDictEntries(PolishJapaneseLatexContent polishJapaneseLatexContent, JMdict polishJMdict) {
 		// generowanie zawartosci dokumentu		
 		StringBuffer latexContent = new StringBuffer();
@@ -941,8 +1103,8 @@ public class LatexDictionaryGenerator {
 	
 	public static class PolishJapaneseLatexContent {
 		private String japaneseIndex;
-		private String jmdictEntries;
-		
+		private String polishIndex;		
+		private String jmdictEntries;		
 	}
 	
 	// klasa pomocnicza
