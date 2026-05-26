@@ -58,7 +58,7 @@ public class LatexDictionaryGenerator {
 		// FM_FIXME: mala czesc
 		JMdict testPolishJMdict = new JMdict();
 		
-		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 10000));
+		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 1000));
 		
 		PolishJapaneseLatexContent latexDictonaryEntries = generateLatexDictonaryEntries(testPolishJMdict);
 		
@@ -522,8 +522,55 @@ public class LatexDictionaryGenerator {
 			latexContent.append("\\section{" + sectionName + "}\n");
 			
 			for (JMdict.Entry entry : groupedByKeyEntriesList) {
+				
+				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, false);
+				
+				latexContent.append("\\phantomsection\n");
 				latexContent.append("\\label{" + getEntryLabelKey(entry) + "}");
-				latexContent.append("\\noindent FM\\_FIXME: Zawartość wpisu: " + entry.getEntryId() + " - " + entry.getReadingInfoList().get(0).getKana().getRomaji() + "\n\n");
+				//latexContent.append("\\noindent FM\\_FIXME: Zawartość wpisu: " + entry.getEntryId() + " - " + entry.getReadingInfoList().get(0).getKana().getRomaji() + "\n\n");
+				
+				latexContent.append("\\begin{description}[style=multiline, leftmargin=2cm]\n\n");
+				latexContent.append("    \\item[Słowo] \n");
+				latexContent.append("    \\begin{itemize}[label={}]\n");
+				
+				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+					latexContent.append("        \\item ");
+					
+					if (kanjiKanaPair.getKanji() != null) {
+						latexContent.append(cjkFakeBold(kanjiKanaPair.getKanji()) + ", ");
+					}
+					
+					latexContent.append(cjkFakeBold(kanjiKanaPair.getKana()) + ", ");
+					latexContent.append("\\textbf{" + kanjiKanaPair.getRomaji() + "}\n");
+				}
+				
+				//tutaj();
+				
+				
+				
+				latexContent.append("    \\end{itemize}\n");
+				latexContent.append("\\end{description}");
+				
+				/* FM_FIXME: test !!!!!!1
+				latexContent.append("\\begin{description}[style=multiline, leftmargin=2cm]\n"
+						+ "    \n"
+						+ "    \\item[Pole 1] \n"
+						+ "    \\begin{itemize}\n"
+						+ "        \\item Zawartość, która bez problemu może być bardzo długa i zająć kilka linii tekstu, a i tak zachowa idealne wyrównanie od lewej strony.\n"
+						+ "        \\item Kolejna zawartość w tym samym polu.\n"
+						+ "        \\item I jeszcze jedna linia.\n"
+						+ "    \\end{itemize}\n"
+						+ "\n"
+						+ "    \\item[Pole 2] \n"
+						+ "    \\begin{itemize}\n"
+						+ "        \\item Zawartość dla pola drugiego.\n"
+						+ "        \\item Kolejny punkt.\n"
+						+ "    \\end{itemize}\n"
+						+ "\n"
+						+ "\\end{description}");
+				*/
+				
+				latexContent.append("\\noindent\\makebox[\\linewidth]{\\rule{\\linewidth}{0.4pt}}\n\n");
 			}
 		}
 				
