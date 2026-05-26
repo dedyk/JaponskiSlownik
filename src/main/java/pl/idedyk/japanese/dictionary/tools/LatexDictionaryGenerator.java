@@ -65,6 +65,13 @@ public class LatexDictionaryGenerator {
 		dictionaryJapaneseIndexFile.delete();
 				
 		Files.write(dictionaryJapaneseIndexFile.toPath(), latexDictonaryEntries.japaneseIndex.getBytes(), StandardOpenOption.CREATE_NEW);
+
+		File dictionaryJmdictEntriesFile = new File("pdf_dictionary/dictionary_jmdict_entries.tex");
+		dictionaryJmdictEntriesFile.delete();
+				
+		Files.write(dictionaryJmdictEntriesFile.toPath(), latexDictonaryEntries.jmdictEntries.getBytes(), StandardOpenOption.CREATE_NEW);
+
+		
 		
 		/*
 		
@@ -102,10 +109,15 @@ public class LatexDictionaryGenerator {
 		// generowanie indeksu japonskiego
 		generateJapaneseIndex(polishJapaneseLatexContent, polishJMdict);
 		
+		// generowanie indeksu polskiego
+		int fixme = 1;
+		
+		// generowanie slow
+		generateJMDictEntries(polishJapaneseLatexContent, polishJMdict);
+		
 		return polishJapaneseLatexContent;
 	}
-	
-	
+
 	private static void generateJapaneseIndex(PolishJapaneseLatexContent polishJapaneseLatexContent, JMdict polishJMdict) {
 				
 		// mapowania do generowania indeksu
@@ -230,19 +242,7 @@ public class LatexDictionaryGenerator {
 				latexContent.append(markBoth(currentSectionIndexEntry.getKey().romaji + ", " + currentSectionIndexEntry.getKey().kana)).append(" ");
 			}
 			
-			if (kanjiKanaPairList.size() == 666) {
-				
-				if (section != otherSectionName && kanjiKanaPairList.get(0).getKanjiInfo() != null) {
-					latexContent.append(", " + kanjiKanaPairList.get(0).getKanji());
-				}
-				
-				latexContent.append("\\dotfill");
-				latexContent.append("666");
-				latexContent.append("\n\n");					
-				
-			} else {
-				latexContent.append("\n\n");
-			}
+			latexContent.append("\n\n");
 										
 			if (kanjiKanaPairList.size() > 0) {
 				
@@ -257,7 +257,7 @@ public class LatexDictionaryGenerator {
 					}
 					
 					latexContent.append("\\dotfill");
-					latexContent.append("666");
+					latexContent.append("\\pageref{" + getEntryLabelKey(kanjiKanaPair.getEntry()) + "}");
 					
 					// FM_FIXME: \pageref{latex_test1}					
 					latexContent.append("\n\n");
@@ -269,6 +269,70 @@ public class LatexDictionaryGenerator {
 
 		latexContent.append("\\end{multicols}\n");
 		latexContent.append("\\end{spacing}\n");
+	}
+	
+	private static void generateJMDictEntries(PolishJapaneseLatexContent polishJapaneseLatexContent, JMdict polishJMdict) {
+		// generowanie zawartosci dokumentu		
+		StringBuffer latexContent = new StringBuffer();
+		
+		// FM_FIXME: tymczasowa implementacja
+		
+		// pobranie listy wszystkich slowek
+		List<JMdict.Entry> entriesList = new ArrayList<>(polishJMdict.getEntryList());
+		
+		// posortowanie jej
+		Collections.sort(entriesList, new Comparator<JMdict.Entry>() {
+
+			@Override
+			public int compare(JMdict.Entry o1, JMdict.Entry o2) {
+				return o1.getEntryId().compareTo(o2.getEntryId());
+			}
+		});
+		
+		// podzielenie listy na mniejsze kawalki
+		Map<String, List<JMdict.Entry>> entriesListGroupedBy = new TreeMap<>();
+		
+		for (JMdict.Entry entry : polishJMdict.getEntryList()) {
+			
+			// tworzenie klucza grupowania
+			String groupedByKey = "" + (entry.getEntryId() / 100000);
+			
+			// pobranie listy dla danej grupy
+			List<JMdict.Entry> groupedByKeyEntriesList = entriesListGroupedBy.get(groupedByKey);
+			
+			if (groupedByKeyEntriesList == null) { // nowa grupa, tworzymy nowa
+				groupedByKeyEntriesList = new ArrayList<JMdict.Entry>();
+				
+				entriesListGroupedBy.put(groupedByKey, groupedByKeyEntriesList);
+			}
+			
+			// dodanie wpisu do danej grupy
+			groupedByKeyEntriesList.add(entry);			
+		}
+		
+		latexContent.append("\\chapter{Spis słów}\n");
+		
+		for (Map.Entry<String, List<JMdict.Entry>> groupedByKeyEntriesListEntry : entriesListGroupedBy.entrySet()) {
+			
+			// pobieramy wszystkie wpisy z danej grupy
+			List<JMdict.Entry> groupedByKeyEntriesList = groupedByKeyEntriesListEntry.getValue();
+			
+			// generowanie tytulu grupy
+			String sectionName = groupedByKeyEntriesList.get(0).getEntryId() + " - " + groupedByKeyEntriesList.get(groupedByKeyEntriesList.size() - 1).getEntryId(); 
+			
+			latexContent.append("\\section{" + sectionName + "}\n");
+			
+			for (JMdict.Entry entry : groupedByKeyEntriesList) {
+				latexContent.append("\\label{" + getEntryLabelKey(entry) + "}");
+				latexContent.append("\\noindent FM\\_FIXME: Zawartość wpisu: " + entry.getEntryId() + "\n\n");
+			}
+		}
+				
+		polishJapaneseLatexContent.jmdictEntries = latexContent.toString();
+	}
+	
+	private static String getEntryLabelKey(JMdict.Entry entry) {
+		return "entry_" + entry.getEntryId();
 	}
 
 	//////// Stary kod
@@ -874,6 +938,7 @@ public class LatexDictionaryGenerator {
 	
 	public static class PolishJapaneseLatexContent {
 		private String japaneseIndex;
+		private String jmdictEntries;
 		
 	}
 	
