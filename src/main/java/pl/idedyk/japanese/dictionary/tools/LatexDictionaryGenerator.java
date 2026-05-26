@@ -280,22 +280,13 @@ public class LatexDictionaryGenerator {
 		// pobranie listy wszystkich slowek
 		List<JMdict.Entry> entriesList = new ArrayList<>(polishJMdict.getEntryList());
 		
-		// posortowanie jej
-		Collections.sort(entriesList, new Comparator<JMdict.Entry>() {
-
-			@Override
-			public int compare(JMdict.Entry o1, JMdict.Entry o2) {
-				return o1.getEntryId().compareTo(o2.getEntryId());
-			}
-		});
-		
 		// podzielenie listy na mniejsze kawalki
 		Map<String, List<JMdict.Entry>> entriesListGroupedBy = new TreeMap<>();
 		
 		for (JMdict.Entry entry : polishJMdict.getEntryList()) {
 			
 			// tworzenie klucza grupowania
-			String groupedByKey = "" + (entry.getEntryId() / 100000);
+			String groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 1).toUpperCase();
 			
 			// pobranie listy dla danej grupy
 			List<JMdict.Entry> groupedByKeyEntriesList = entriesListGroupedBy.get(groupedByKey);
@@ -317,14 +308,26 @@ public class LatexDictionaryGenerator {
 			// pobieramy wszystkie wpisy z danej grupy
 			List<JMdict.Entry> groupedByKeyEntriesList = groupedByKeyEntriesListEntry.getValue();
 			
+			// posortowanie jej
+			Collections.sort(groupedByKeyEntriesList, new Comparator<JMdict.Entry>() {
+
+				@Override
+				public int compare(JMdict.Entry o1, JMdict.Entry o2) {
+					String o1S = o1.getReadingInfoList().get(0).getKana().getRomaji();
+					String o2S = o2.getReadingInfoList().get(0).getKana().getRomaji();
+					
+					return o1S.compareTo(o2S);
+				}
+			});
+			
 			// generowanie tytulu grupy
-			String sectionName = groupedByKeyEntriesList.get(0).getEntryId() + " - " + groupedByKeyEntriesList.get(groupedByKeyEntriesList.size() - 1).getEntryId(); 
+			String sectionName = groupedByKeyEntriesListEntry.getKey(); 
 			
 			latexContent.append("\\section{" + sectionName + "}\n");
 			
 			for (JMdict.Entry entry : groupedByKeyEntriesList) {
 				latexContent.append("\\label{" + getEntryLabelKey(entry) + "}");
-				latexContent.append("\\noindent FM\\_FIXME: Zawartość wpisu: " + entry.getEntryId() + "\n\n");
+				latexContent.append("\\noindent FM\\_FIXME: Zawartość wpisu: " + entry.getEntryId() + " - " + entry.getReadingInfoList().get(0).getKana().getRomaji() + "\n\n");
 			}
 		}
 				
@@ -960,13 +963,13 @@ public class LatexDictionaryGenerator {
 			String o2Kana = o2.kana != null ? o2.kana : "<null>";
 			String o2Romaji = o2.romaji != null ? o2.romaji : "<null>";
 
-			int result = o1Kana.compareTo(o2Kana);
-			
+			int result = o1Romaji.compareTo(o2Romaji);
+						
 			if (result != 0) {
 				return result;
 			}
 			
-			result = o1Romaji.compareTo(o2Romaji);
+			result = o1Kana.compareTo(o2Kana);
 			
 			return result;
 		}
