@@ -252,15 +252,39 @@ public class LatexDictionaryGenerator {
 										
 					// jezeli byla jakas zawartosc w namiasie to usuwamy to
 					polishGlossValue = polishGlossValue.replaceAll("\\s*\\([^()]*\\)\\s*", "").trim();
+					polishGlossValue = polishGlossValue.replaceAll("\\[", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\}", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\'", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\“", "");					
 					
 					// jezeli zaczyna sie od znaku "-" usuwamy to
-					if (polishGlossValue.startsWith("-") == true) {
-						polishGlossValue = polishGlossValue.substring(1);
+					while(true) {
+						if (polishGlossValue.startsWith("-") == true) {
+							polishGlossValue = polishGlossValue.substring(1);
+						} else {
+							break;
+						}
+					}
+					
+					// jezeli zaczyna sie od znaku "." usuwamy to
+					while(true) {
+						if (polishGlossValue.startsWith(".") == true) {
+							polishGlossValue = polishGlossValue.substring(1);
+						} else {
+							break;
+						}
+					}
+
+					
+					if (polishGlossValue.startsWith("??") == true) {
+						polishGlossValue = otherSectionName;
 					}
 					
 					if (polishGlossValue.length() == 0) {
 						polishGlossValue = otherSectionName;
 					}
+					
+					polishGlossValue = polishGlossValue.trim();
 					
 					// indeks dla danego klucza
 					List<KanjiKanaPair> kanjiKanaPairListForPolishGlossValue = polishIndexMap.get(polishGlossValue);
@@ -318,14 +342,14 @@ public class LatexDictionaryGenerator {
 			
 			String section = indexSectionEntrySet.getKey();
 			List<Entry<String, List<KanjiKanaPair>>> indexSectionList = indexSectionEntrySet.getValue();
-			
+						
 			// na razie nie generujemy sekcji dla innych
 			if (section == otherSectionName) {
 				continue;
 			}
 			
 			// generowanie sekcji
-			// generatePolishIndexSection(latexContent, section, indexSectionList);
+			generatePolishIndexSection(latexContent, section, indexSectionList);
 		}
 		
 		// generowanie dla sekcji inne
@@ -344,7 +368,7 @@ public class LatexDictionaryGenerator {
 		} else {
 			latexContent.append("\\section[Inne]{Inne}\n");
 		}
-		latexContent.append("\\begin{spacing}{0.1}\n");
+		latexContent.append("\\begin{spacing}{1}\n");
 		latexContent.append("\\begin{multicols}{3}\n");
 		
 		for (Entry<KanaRomajiKey, List<KanjiKanaPair>> currentSectionIndexEntry : indexSectionList) {
@@ -395,7 +419,7 @@ public class LatexDictionaryGenerator {
 			latexContent.append("\\section[Inne]{Inne}\n");
 		}
 		
-		latexContent.append("\\begin{spacing}{0.1}\n");
+		latexContent.append("\\begin{spacing}{1}\n");
 		latexContent.append("\\begin{multicols}{3}\n");
 		
 		for (Entry<String, List<KanjiKanaPair>> currentSectionIndexEntry : indexSectionList) {
@@ -403,9 +427,17 @@ public class LatexDictionaryGenerator {
 			// lista slow w danym miejscu
 			List<KanjiKanaPair> kanjiKanaPairList = currentSectionIndexEntry.getValue();
 			
+			// posortowanie
+			Collections.sort(kanjiKanaPairList, new Comparator<KanjiKanaPair>() {
+
+				@Override
+				public int compare(KanjiKanaPair o1, KanjiKanaPair o2) {
+					return o1.getRomaji().compareTo(o2.getRomaji());
+				}
+			});
+			
 			latexContent.append("\\noindent");			
 			latexContent.append("\\footnotesize\n");
-			
 			
 			latexContent.append("\\textbf{" + escapeLatexChars(currentSectionIndexEntry.getKey()) + "}");
 			latexContent.append(markBoth(escapeLatexChars(currentSectionIndexEntry.getKey()))).append(" ");			
@@ -414,12 +446,14 @@ public class LatexDictionaryGenerator {
 			if (kanjiKanaPairList.size() > 0) {
 				
 				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
-
+					
+					latexContent.append(kanjiKanaPair.getKana());
+					
 					if (kanjiKanaPair.getKanjiInfo() != null) {
-						latexContent.append("\n" + kanjiKanaPair.getKanji());
-					} else {
-						latexContent.append("\n" + kanjiKanaPair.getKana());
+						latexContent.append(", " + kanjiKanaPair.getKanji());
 					}
+					
+					// latexContent.append(", " + kanjiKanaPair.getRomaji());					
 					
 					latexContent.append("\\dotfill");
 					latexContent.append("\\pageref{" + getEntryLabelKey(kanjiKanaPair.getEntry()) + "}");
