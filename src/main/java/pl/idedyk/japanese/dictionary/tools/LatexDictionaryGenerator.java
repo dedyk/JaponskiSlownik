@@ -58,7 +58,7 @@ public class LatexDictionaryGenerator {
 		// FM_FIXME: mala czesc
 		JMdict testPolishJMdict = new JMdict();
 		
-		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 1000));
+		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 10000));
 		
 		PolishJapaneseLatexContent latexDictonaryEntries = generateLatexDictonaryEntries(testPolishJMdict);
 		
@@ -498,6 +498,7 @@ public class LatexDictionaryGenerator {
 		}
 		
 		latexContent.append("\\chapter{Spis słów}\n");
+		latexContent.append("\\begin{spacing}{0.0}\n");
 		
 		for (Map.Entry<String, List<JMdict.Entry>> groupedByKeyEntriesListEntry : entriesListGroupedBy.entrySet()) {
 			
@@ -523,7 +524,7 @@ public class LatexDictionaryGenerator {
 			
 			for (JMdict.Entry entry : groupedByKeyEntriesList) {
 				
-				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, false);
+				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, true);
 				
 				latexContent.append("\\phantomsection\n");
 				latexContent.append("\\label{" + getEntryLabelKey(entry) + "}");
@@ -531,16 +532,45 @@ public class LatexDictionaryGenerator {
 				
 				latexContent.append("\\begin{description}[style=multiline, leftmargin=2cm]\n\n");
 				latexContent.append("    \\item[Słowo] \n");
-				latexContent.append("    \\begin{itemize}[label={}]\n");
+				latexContent.append("    \\begin{itemize}"); //[label={}]\n");
 				
 				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 					latexContent.append("        \\item ");
 					
+					// kanji
 					if (kanjiKanaPair.getKanji() != null) {
-						latexContent.append(cjkFakeBold(kanjiKanaPair.getKanji()) + ", ");
+						latexContent.append(cjkFakeBold(kanjiKanaPair.getKanji()));
+						
+						KanjiInfo kanjiInfo = kanjiKanaPair.getKanjiInfo();
+						
+						List<KanjiAdditionalInfoEnum> kanjiAdditionalInfoList = kanjiInfo.getKanjiAdditionalInfoList();
+						
+						if (kanjiAdditionalInfoList.size() > 0) {
+							List<String> translateToPolishKanjiAdditionalInfoEnum = Dictionary2HelperCommon.translateToPolishKanjiAdditionalInfoEnum(kanjiAdditionalInfoList);
+							
+							latexContent.append("(");
+							latexContent.append(translateToPolishKanjiAdditionalInfoEnum.stream().collect(Collectors.joining (", ")));
+							latexContent.append(")");
+						}						
+						latexContent.append(", ");
 					}
 					
-					latexContent.append(cjkFakeBold(kanjiKanaPair.getKana()) + ", ");
+					// kana
+					ReadingInfo readingInfo = kanjiKanaPair.getReadingInfo();
+					
+					latexContent.append(cjkFakeBold(kanjiKanaPair.getKana()));
+					
+					List<ReadingAdditionalInfoEnum> readingAdditionalInfoList = readingInfo.getReadingAdditionalInfoList();
+					
+					if (readingAdditionalInfoList.size() > 0) {
+						List<String> translateToPolishReadingAdditionalInfoEnum = Dictionary2HelperCommon.translateToPolishReadingAdditionalInfoEnum(readingAdditionalInfoList);
+						
+						latexContent.append("(");
+						latexContent.append(translateToPolishReadingAdditionalInfoEnum.stream().collect(Collectors.joining (", ")));
+						latexContent.append(")");
+					}					
+					latexContent.append(", ");
+					
 					latexContent.append("\\textbf{" + kanjiKanaPair.getRomaji() + "}\n");
 				}
 				
@@ -573,6 +603,8 @@ public class LatexDictionaryGenerator {
 				latexContent.append("\\noindent\\makebox[\\linewidth]{\\rule{\\linewidth}{0.4pt}}\n\n");
 			}
 		}
+		
+		latexContent.append("\\end{spacing}\n");
 				
 		polishJapaneseLatexContent.jmdictEntries = latexContent.toString();
 	}
