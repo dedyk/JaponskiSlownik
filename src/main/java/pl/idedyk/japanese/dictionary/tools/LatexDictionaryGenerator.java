@@ -528,9 +528,8 @@ public class LatexDictionaryGenerator {
 				
 				latexContent.append("\\phantomsection\n");
 				latexContent.append("\\label{" + getEntryLabelKey(entry) + "}");
-				//latexContent.append("\\noindent FM\\_FIXME: Zawartość wpisu: " + entry.getEntryId() + " - " + entry.getReadingInfoList().get(0).getKana().getRomaji() + "\n\n");
 				
-				latexContent.append("\\begin{description}[style=multiline, leftmargin=2cm]\n\n");
+				latexContent.append("\\begin{description}[style=multiline, leftmargin=2.8cm]\n\n");
 				latexContent.append("    \\item[Słowo] \n");
 				latexContent.append("    \\begin{itemize}"); //[label={}]\n");
 				
@@ -574,11 +573,39 @@ public class LatexDictionaryGenerator {
 					latexContent.append("\\textbf{" + kanjiKanaPair.getRomaji() + "}\n");
 				}
 				
-				//tutaj();
-				
-				
-				
 				latexContent.append("    \\end{itemize}\n");
+				
+				// pochodzenie slowa
+				List<LanguageSource> languageSourceList = entry.getLanguageSourceList();
+				
+				if (languageSourceList.size() > 0) {
+					latexContent.append("    \\item[Pochodzenie] \n");
+					latexContent.append("    \\begin{itemize}"); //[label={}]\n");
+					
+					for (LanguageSource languageSource : languageSourceList) {
+						StringBuffer singleLanguageSource = new StringBuffer();
+						
+						String languageCodeInPolish = Dictionary2HelperCommon.translateToPolishLanguageCode(languageSource.getLang());
+						String languageValue = languageSource.getValue();
+						String languageLsWasei = Dictionary2HelperCommon.translateToPolishLanguageSourceLsWaseiEnum(languageSource.getLsWasei());
+						
+						if (languageValue != null && languageValue.equals("") == false) {
+							singleLanguageSource.append(languageCodeInPolish + ": " + languageValue);
+							
+						} else {
+							singleLanguageSource.append(Dictionary2HelperCommon.translateToPolishLanguageCodeWithoutValue(languageSource.getLang()));
+						}
+						
+						if (languageLsWasei != null && languageLsWasei.equals("") == false) {
+							singleLanguageSource.append(", ").append(languageLsWasei);
+						}
+
+						latexContent.append("        \\item " + singleLanguageSource);
+					}
+										
+					latexContent.append("    \\end{itemize}\n");
+				}
+								
 				latexContent.append("\\end{description}");
 				
 				/* FM_FIXME: test !!!!!!1
