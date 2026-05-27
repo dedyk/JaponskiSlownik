@@ -61,7 +61,7 @@ public class LatexDictionaryGenerator {
 		// FM_FIXME: mala czesc
 		JMdict testPolishJMdict = new JMdict();
 		
-		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 10000));
+		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 1000));
 		
 		PolishJapaneseLatexContent latexDictonaryEntries = generateLatexDictonaryEntries(testPolishJMdict);
 		
@@ -568,7 +568,7 @@ public class LatexDictionaryGenerator {
 			
 			latexContent.append("\\begin{description}[style=multiline, leftmargin=4.8cm]\n\n");
 			latexContent.append("    \\item[Słowo] \n");
-			latexContent.append("    \\begin{itemize}\n"); //[label={}]\n");
+			latexContent.append("    \\begin{itemize}[label={}]\n");
 			
 			for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 				latexContent.append("        \\item ");
@@ -639,7 +639,7 @@ public class LatexDictionaryGenerator {
 			
 			if (languageSourceList.size() > 0) {
 				latexContent.append("    \\item[Zagraniczne pochodzenie] \n");
-				latexContent.append("    \\begin{itemize}\n"); //[label={}]\n");
+				latexContent.append("    \\begin{itemize}[label={}]\n");
 				
 				for (LanguageSource languageSource : languageSourceList) {
 					StringBuffer singleLanguageSource = new StringBuffer();
@@ -672,10 +672,47 @@ public class LatexDictionaryGenerator {
 				List<Info> polishInfoList = Dictionary2HelperCommon.getPolishInfoList(infoList);
 				
 				latexContent.append("    \\item[Informacje dodatkowe] \n");
-				latexContent.append("    \\begin{itemize}\n"); //[label={}]\n");
+				latexContent.append("    \\begin{itemize}[label={}]\n");
 
 				for (Info info : polishInfoList) {
 					latexContent.append("        \\item " + info.getValue() + "\n");
+				}
+				
+				latexContent.append("    \\end{itemize}\n");
+			}
+			
+			// znaczenie
+			List<Sense> senseList = entry.getSenseList();
+			
+			if (senseList.size() > 0) {
+
+				latexContent.append("    \\item[Znaczenie] \n");
+				latexContent.append("    \\begin{itemize}[label={}]\n");
+
+				for (int senseIdx = 0; senseIdx < senseList.size(); ++senseIdx) {
+					
+					Sense sense = senseList.get(senseIdx);
+										
+					latexContent.append("        \\item[\\circled{" + (senseIdx + 1) + "}] ");
+					
+					// polskie znaczenia
+					List<Gloss> polishGlossList = Dictionary2HelperCommon.getPolishGlossList(sense.getGlossList());
+
+					if (polishGlossList.size() > 0) {
+						
+						boolean wasGloss = false;
+												
+						for (Gloss polishGross : polishGlossList) {
+							if (wasGloss == true) {
+								latexContent.append("        \\item ");
+							}
+
+							latexContent.append(escapeLatexChars(polishGross.getValue()) + 
+									(polishGross.getGType() != null ? " (" + Dictionary2HelperCommon.translateToPolishGlossType(polishGross.getGType()) + ")" : "") + "\n");
+							
+							wasGloss = true;
+						}
+					}										
 				}
 				
 				latexContent.append("    \\end{itemize}\n");
