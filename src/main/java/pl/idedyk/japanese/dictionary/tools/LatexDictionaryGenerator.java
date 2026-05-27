@@ -41,6 +41,7 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.SenseAdditionalInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Xref;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.XrefType;
 
@@ -695,24 +696,86 @@ public class LatexDictionaryGenerator {
 										
 					latexContent.append("        \\item[\\circled{" + (senseIdx + 1) + "}] ");
 					
+					// informacje dodatkowe (szczegoly), ktore wyswietla sie pod danym znaczeniem
+					List<String> latexContentDetails = new ArrayList<>();
+					
 					// polskie znaczenia
 					List<Gloss> polishGlossList = Dictionary2HelperCommon.getPolishGlossList(sense.getGlossList());
-
+					SenseAdditionalInfo polishAdditionalInfo = Dictionary2HelperCommon.findFirstPolishAdditionalInfo(sense.getAdditionalInfoList());
+					
+		            boolean existsGtypeNull = polishGlossList.stream().filter(f -> f.getGType() == null).count() > 0;
+					
 					if (polishGlossList.size() > 0) {
 						
 						boolean wasGloss = false;
-												
-						for (Gloss polishGross : polishGlossList) {
-							if (wasGloss == true) {
-								latexContent.append("        \\item ");
-							}
-
-							latexContent.append(escapeLatexChars(polishGross.getValue()) + 
-									(polishGross.getGType() != null ? " (" + Dictionary2HelperCommon.translateToPolishGlossType(polishGross.getGType()) + ")" : "") + "\n");
+						
+						if (existsGtypeNull == true) { // jezeli istnieje gType rowne null, wiec pokazujemy tlumaczenia i wszelkie wyjasnienia osobno
 							
-							wasGloss = true;
+							// lista tlumaczen - gtype = null
+			    			for (int currentGlossIdx = 0; currentGlossIdx < polishGlossList.size(); ++currentGlossIdx) {
+			    				
+			    				Gloss polishGross = polishGlossList.get(currentGlossIdx);
+			    				
+			    				if (polishGross.getGType() == null) {
+			    					
+									if (wasGloss == true) {
+										latexContent.append("        \\item ");
+									}
+
+									latexContent.append(escapeLatexChars(polishGross.getValue()) + 
+											(polishGross.getGType() != null ? " (" + Dictionary2HelperCommon.translateToPolishGlossType(polishGross.getGType()) + ")" : "") + "\n");
+									
+									wasGloss = true;
+			    				}				
+			    			}
+			    			
+			                // lista tlumaczen - gtype != null jako informacje dodatkowe
+			    			for (int currentGlossIdx = 0; currentGlossIdx < polishGlossList.size(); ++currentGlossIdx) {
+			    				
+			    				Gloss polishGross = polishGlossList.get(currentGlossIdx);
+			    							    				
+			    				Gloss gloss = polishGlossList.get(currentGlossIdx);
+			    				
+			    				if (gloss.getGType() != null) {			    					
+			    					latexContentDetails.add("\\textit{" + escapeLatexChars(polishGross.getValue()) + 
+											(polishGross.getGType() != null ? " (" + Dictionary2HelperCommon.translateToPolishGlossType(polishGross.getGType()) + ")" : "") + "}\n");						
+			    				}
+			    			}
+			    			
+						} else { // jezeli nie ma gType = null, wiec pokazujemy po staremu
+							
+			    			for (int currentGlossIdx = 0; currentGlossIdx < polishGlossList.size(); ++currentGlossIdx) {
+			    				
+			    				Gloss polishGross = polishGlossList.get(currentGlossIdx);			    				
+			    					
+								if (wasGloss == true) {
+									latexContent.append("        \\item ");
+								}
+
+								latexContent.append(escapeLatexChars(polishGross.getValue()) + 
+										(polishGross.getGType() != null ? " (" + Dictionary2HelperCommon.translateToPolishGlossType(polishGross.getGType()) + ")" : "") + "\n");
+								
+								wasGloss = true;
+			    			}
 						}
-					}										
+					}
+					
+					// informacje dodatkowe												
+					if (polishAdditionalInfo != null) {
+						latexContentDetails.add("\\textit{" + escapeLatexChars(polishAdditionalInfo.getValue() + "}"));						
+					}
+					
+					// dopisanie szczegolowe
+					if (latexContentDetails.size() > 0) {
+						latexContent.append("    \\begin{itemize}[label={}]\n");
+						
+						for (String currentDetails : latexContentDetails) {
+							latexContent.append("    \\item " + currentDetails + "\n");	
+						}
+						
+						latexContent.append("    \\end{itemize}\n");
+					}
+					
 				}
 				
 				latexContent.append("    \\end{itemize}\n");
