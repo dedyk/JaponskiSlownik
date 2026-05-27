@@ -634,38 +634,7 @@ public class LatexDictionaryGenerator {
 			}
 			
 			latexContent.append("    \\end{itemize}\n");
-			
-			// pochodzenie slowa
-			List<LanguageSource> languageSourceList = entry.getLanguageSourceList();
-			
-			if (languageSourceList.size() > 0) {
-				latexContent.append("    \\item[Zagraniczne pochodzenie] \n");
-				latexContent.append("    \\begin{itemize}[label={}]\n");
-				
-				for (LanguageSource languageSource : languageSourceList) {
-					StringBuffer singleLanguageSource = new StringBuffer();
 					
-					String languageCodeInPolish = Dictionary2HelperCommon.translateToPolishLanguageCode(languageSource.getLang());
-					String languageValue = languageSource.getValue();
-					String languageLsWasei = Dictionary2HelperCommon.translateToPolishLanguageSourceLsWaseiEnum(languageSource.getLsWasei());
-					
-					if (languageValue != null && languageValue.equals("") == false) {
-						singleLanguageSource.append(languageCodeInPolish + ": " + languageValue);
-						
-					} else {
-						singleLanguageSource.append(Dictionary2HelperCommon.translateToPolishLanguageCodeWithoutValue(languageSource.getLang()));
-					}
-					
-					if (languageLsWasei != null && languageLsWasei.equals("") == false) {
-						singleLanguageSource.append(", ").append(languageLsWasei);
-					}
-
-					latexContent.append("        \\item " + singleLanguageSource + "\n");
-				}
-									
-				latexContent.append("    \\end{itemize}\n");
-			}
-			
 			// informacje ogolne do calosci slowa
 			List<Info> infoList = entry.getInfoList();
 			
@@ -760,14 +729,43 @@ public class LatexDictionaryGenerator {
 						}
 					}
 					
+					// tu beda rozne pola
+					int fixme = 1;
+					
 					// informacje dodatkowe												
 					if (polishAdditionalInfo != null) {
 						latexContentDetails.add("\\textit{" + escapeLatexChars(polishAdditionalInfo.getValue() + "}"));						
 					}
 					
-					// dopisanie szczegolowe
+					// pochodzenie slowa
+					List<LanguageSource> languageSourceList = entry.getLanguageSourceList();
+					
+					if (languageSourceList.size() > 0) {						
+						for (LanguageSource languageSource : languageSourceList) {
+							StringBuffer singleLanguageSource = new StringBuffer();
+							
+							String languageCodeInPolish = Dictionary2HelperCommon.translateToPolishLanguageCode(languageSource.getLang());
+							String languageValue = languageSource.getValue();
+							String languageLsWasei = Dictionary2HelperCommon.translateToPolishLanguageSourceLsWaseiEnum(languageSource.getLsWasei());
+							
+							if (languageValue != null && languageValue.equals("") == false) {
+								singleLanguageSource.append(languageCodeInPolish + ": " + languageValue);
+								
+							} else {
+								singleLanguageSource.append(Dictionary2HelperCommon.translateToPolishLanguageCodeWithoutValue(languageSource.getLang()));
+							}
+							
+							if (languageLsWasei != null && languageLsWasei.equals("") == false) {
+								singleLanguageSource.append(", ").append(languageLsWasei);
+							}
+
+							latexContentDetails.add(singleLanguageSource.toString());
+						}											
+					}
+					
+					// dopisanie szczegolow
 					if (latexContentDetails.size() > 0) {
-						latexContent.append("    \\begin{itemize}[label={}]\n");
+						latexContent.append("    \\begin{itemize}[label={$\\cdot$}]\n");
 						
 						for (String currentDetails : latexContentDetails) {
 							latexContent.append("    \\item " + currentDetails + "\n");	
@@ -782,26 +780,7 @@ public class LatexDictionaryGenerator {
 			}			
 							
 			latexContent.append("\\end{description}");
-			
-			/* FM_FIXME: test !!!!!!1
-			latexContent.append("\\begin{description}[style=multiline, leftmargin=2cm]\n"
-					+ "    \n"
-					+ "    \\item[Pole 1] \n"
-					+ "    \\begin{itemize}\n"
-					+ "        \\item Zawartość, która bez problemu może być bardzo długa i zająć kilka linii tekstu, a i tak zachowa idealne wyrównanie od lewej strony.\n"
-					+ "        \\item Kolejna zawartość w tym samym polu.\n"
-					+ "        \\item I jeszcze jedna linia.\n"
-					+ "    \\end{itemize}\n"
-					+ "\n"
-					+ "    \\item[Pole 2] \n"
-					+ "    \\begin{itemize}\n"
-					+ "        \\item Zawartość dla pola drugiego.\n"
-					+ "        \\item Kolejny punkt.\n"
-					+ "    \\end{itemize}\n"
-					+ "\n"
-					+ "\\end{description}");
-			*/
-			
+						
 			latexContent.append("\\noindent\\makebox[\\linewidth]{\\rule{\\linewidth}{0.4pt}}\n\n");
 		}
 	}
