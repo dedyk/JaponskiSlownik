@@ -566,7 +566,7 @@ public class LatexDictionaryGenerator {
 			latexContent.append("\\phantomsection\n");
 			latexContent.append("\\label{" + getEntryLabelKey(entry) + "}");
 			
-			latexContent.append("\\begin{description}[style=multiline, leftmargin=2.8cm]\n\n");
+			latexContent.append("\\begin{description}[style=multiline, leftmargin=4.8cm]\n\n");
 			latexContent.append("    \\item[Słowo] \n");
 			latexContent.append("    \\begin{itemize}\n"); //[label={}]\n");
 			
@@ -638,7 +638,7 @@ public class LatexDictionaryGenerator {
 			List<LanguageSource> languageSourceList = entry.getLanguageSourceList();
 			
 			if (languageSourceList.size() > 0) {
-				latexContent.append("    \\item[Pochodzenie] \n");
+				latexContent.append("    \\item[Zagraniczne pochodzenie] \n");
 				latexContent.append("    \\begin{itemize}\n"); //[label={}]\n");
 				
 				for (LanguageSource languageSource : languageSourceList) {
@@ -659,11 +659,27 @@ public class LatexDictionaryGenerator {
 						singleLanguageSource.append(", ").append(languageLsWasei);
 					}
 
-					latexContent.append("        \\item " + singleLanguageSource);
+					latexContent.append("        \\item " + singleLanguageSource + "\n");
 				}
 									
 				latexContent.append("    \\end{itemize}\n");
 			}
+			
+			// informacje ogolne do calosci slowa
+			List<Info> infoList = entry.getInfoList();
+			
+			if (infoList.size() > 0) {
+				List<Info> polishInfoList = Dictionary2HelperCommon.getPolishInfoList(infoList);
+				
+				latexContent.append("    \\item[Informacje dodatkowe] \n");
+				latexContent.append("    \\begin{itemize}\n"); //[label={}]\n");
+
+				for (Info info : polishInfoList) {
+					latexContent.append("        \\item " + info.getValue() + "\n");
+				}
+				
+				latexContent.append("    \\end{itemize}\n");
+			}			
 							
 			latexContent.append("\\end{description}");
 			
