@@ -62,7 +62,7 @@ public class LatexDictionaryGenerator {
 		// FM_FIXME: mala czesc
 		JMdict testPolishJMdict = new JMdict();
 		
-		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 1000));
+		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 10000));
 		
 		PolishJapaneseLatexContent latexDictonaryEntries = generateLatexDictonaryEntries(testPolishJMdict);
 		
