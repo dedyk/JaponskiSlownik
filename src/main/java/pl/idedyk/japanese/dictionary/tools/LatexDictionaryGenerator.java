@@ -17,6 +17,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.stream.Collectors;
+
+import org.apache.commons.lang.StringUtils;
+
 import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
@@ -468,22 +471,29 @@ public class LatexDictionaryGenerator {
 	}
 
 	private static void generateJMDictEntries(PolishJapaneseLatexContent polishJapaneseLatexContent, JMdict polishJMdict) {
+		
 		// generowanie zawartosci dokumentu		
 		StringBuffer latexContent = new StringBuffer();
-		
-		// FM_FIXME: tymczasowa implementacja
-		
+				
 		// pobranie listy wszystkich slowek
 		List<JMdict.Entry> entriesList = new ArrayList<>(polishJMdict.getEntryList());
 		
 		// podzielenie listy na mniejsze kawalki
 		Map<String, List<JMdict.Entry>> entriesListGroupedBy = new TreeMap<>();
 		
+		String groupedByKey;
+		
 		for (JMdict.Entry entry : polishJMdict.getEntryList()) {
 			
 			// tworzenie klucza grupowania
-			String groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 1).toUpperCase();
-			
+			if (	entry.getReadingInfoList().get(0).getKana().getRomaji() == null ||
+					entry.getReadingInfoList().get(0).getKana().getRomaji().equals("") == true) {
+				
+				groupedByKey = otherSectionName;
+			} else {
+				groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 1).toUpperCase();
+			}
+						
 			// pobranie listy dla danej grupy
 			List<JMdict.Entry> groupedByKeyEntriesList = entriesListGroupedBy.get(groupedByKey);
 			
@@ -516,49 +526,87 @@ public class LatexDictionaryGenerator {
 					return o1S.compareTo(o2S);
 				}
 			});
-			
+						
 			// generowanie tytulu grupy
 			String sectionName = groupedByKeyEntriesListEntry.getKey(); 
+
+			// na razie nie generujemy sekcji dla innych
+			if (sectionName == otherSectionName) {
+				continue;
+			}
 			
+			// generowanie sekcji			
+			generateJMDictEntriesSection(latexContent, sectionName, groupedByKeyEntriesList);
+		}
+		
+		// i na koniec jeszcze sekcja inne
+		generateJMDictEntriesSection(latexContent, otherSectionName, entriesListGroupedBy.get(otherSectionName));
+		
+		latexContent.append("\\end{spacing}\n");
+				
+		polishJapaneseLatexContent.jmdictEntries = latexContent.toString();
+	}
+	
+	private static void generateJMDictEntriesSection(StringBuffer latexContent, String sectionName, List<JMdict.Entry> entriesList) {
+		
+		if (entriesList == null) {
+			return;
+		}
+		
+		if (sectionName == otherSectionName) {
+			latexContent.append("\\section[Inne]{Inne}\n");	
+		} else {
 			latexContent.append("\\section{" + sectionName + "}\n");
+		}		
+		
+		for (JMdict.Entry entry : entriesList) {
 			
-			for (JMdict.Entry entry : groupedByKeyEntriesList) {
+			List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, true);
+			
+			latexContent.append("\\phantomsection\n");
+			latexContent.append("\\label{" + getEntryLabelKey(entry) + "}");
+			
+			latexContent.append("\\begin{description}[style=multiline, leftmargin=2.8cm]\n\n");
+			latexContent.append("    \\item[Słowo] \n");
+			latexContent.append("    \\begin{itemize}\n"); //[label={}]\n");
+			
+			for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
+				latexContent.append("        \\item ");
 				
-				List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, true);
+				boolean wasItemData = false;
 				
-				latexContent.append("\\phantomsection\n");
-				latexContent.append("\\label{" + getEntryLabelKey(entry) + "}");
-				
-				latexContent.append("\\begin{description}[style=multiline, leftmargin=2.8cm]\n\n");
-				latexContent.append("    \\item[Słowo] \n");
-				latexContent.append("    \\begin{itemize}"); //[label={}]\n");
-				
-				for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
-					latexContent.append("        \\item ");
+				// kanji
+				if (kanjiKanaPair.getKanji() != null) {
+					wasItemData = true;
 					
-					// kanji
-					if (kanjiKanaPair.getKanji() != null) {
-						latexContent.append(cjkFakeBold(kanjiKanaPair.getKanji()));
+					latexContent.append(cjkFakeBold(kanjiKanaPair.getKanji()));
+					
+					KanjiInfo kanjiInfo = kanjiKanaPair.getKanjiInfo();
+					
+					List<KanjiAdditionalInfoEnum> kanjiAdditionalInfoList = kanjiInfo.getKanjiAdditionalInfoList();
+					
+					if (kanjiAdditionalInfoList.size() > 0) {
+						List<String> translateToPolishKanjiAdditionalInfoEnum = Dictionary2HelperCommon.translateToPolishKanjiAdditionalInfoEnum(kanjiAdditionalInfoList);
 						
-						KanjiInfo kanjiInfo = kanjiKanaPair.getKanjiInfo();
-						
-						List<KanjiAdditionalInfoEnum> kanjiAdditionalInfoList = kanjiInfo.getKanjiAdditionalInfoList();
-						
-						if (kanjiAdditionalInfoList.size() > 0) {
-							List<String> translateToPolishKanjiAdditionalInfoEnum = Dictionary2HelperCommon.translateToPolishKanjiAdditionalInfoEnum(kanjiAdditionalInfoList);
-							
-							latexContent.append("(");
-							latexContent.append(translateToPolishKanjiAdditionalInfoEnum.stream().collect(Collectors.joining (", ")));
-							latexContent.append(")");
-						}						
+						latexContent.append("(");
+						latexContent.append(translateToPolishKanjiAdditionalInfoEnum.stream().collect(Collectors.joining (", ")));
+						latexContent.append(")");
+					}											
+				}
+				
+				// kana
+				ReadingInfo readingInfo = kanjiKanaPair.getReadingInfo();
+				
+				if (StringUtils.isBlank(kanjiKanaPair.getKana()) == false) {
+					
+					if (wasItemData == true) {
 						latexContent.append(", ");
 					}
 					
-					// kana
-					ReadingInfo readingInfo = kanjiKanaPair.getReadingInfo();
+					wasItemData = true;
 					
 					latexContent.append(cjkFakeBold(kanjiKanaPair.getKana()));
-					
+				
 					List<ReadingAdditionalInfoEnum> readingAdditionalInfoList = readingInfo.getReadingAdditionalInfoList();
 					
 					if (readingAdditionalInfoList.size() > 0) {
@@ -568,72 +616,78 @@ public class LatexDictionaryGenerator {
 						latexContent.append(translateToPolishReadingAdditionalInfoEnum.stream().collect(Collectors.joining (", ")));
 						latexContent.append(")");
 					}					
-					latexContent.append(", ");
-					
-					latexContent.append("\\textbf{" + kanjiKanaPair.getRomaji() + "}\n");
 				}
 				
-				latexContent.append("    \\end{itemize}\n");
-				
-				// pochodzenie slowa
-				List<LanguageSource> languageSourceList = entry.getLanguageSourceList();
-				
-				if (languageSourceList.size() > 0) {
-					latexContent.append("    \\item[Pochodzenie] \n");
-					latexContent.append("    \\begin{itemize}"); //[label={}]\n");
+				if (StringUtils.isBlank(kanjiKanaPair.getRomaji()) == false) {
 					
-					for (LanguageSource languageSource : languageSourceList) {
-						StringBuffer singleLanguageSource = new StringBuffer();
-						
-						String languageCodeInPolish = Dictionary2HelperCommon.translateToPolishLanguageCode(languageSource.getLang());
-						String languageValue = languageSource.getValue();
-						String languageLsWasei = Dictionary2HelperCommon.translateToPolishLanguageSourceLsWaseiEnum(languageSource.getLsWasei());
-						
-						if (languageValue != null && languageValue.equals("") == false) {
-							singleLanguageSource.append(languageCodeInPolish + ": " + languageValue);
-							
-						} else {
-							singleLanguageSource.append(Dictionary2HelperCommon.translateToPolishLanguageCodeWithoutValue(languageSource.getLang()));
-						}
-						
-						if (languageLsWasei != null && languageLsWasei.equals("") == false) {
-							singleLanguageSource.append(", ").append(languageLsWasei);
-						}
-
-						latexContent.append("        \\item " + singleLanguageSource);
+					if (wasItemData == true) {
+						latexContent.append(", ");
 					}
-										
-					latexContent.append("    \\end{itemize}\n");
+					
+					wasItemData = true;
+
+					latexContent.append("\\textbf{" + kanjiKanaPair.getRomaji() + "}");	
 				}
-								
-				latexContent.append("\\end{description}");
 				
-				/* FM_FIXME: test !!!!!!1
-				latexContent.append("\\begin{description}[style=multiline, leftmargin=2cm]\n"
-						+ "    \n"
-						+ "    \\item[Pole 1] \n"
-						+ "    \\begin{itemize}\n"
-						+ "        \\item Zawartość, która bez problemu może być bardzo długa i zająć kilka linii tekstu, a i tak zachowa idealne wyrównanie od lewej strony.\n"
-						+ "        \\item Kolejna zawartość w tym samym polu.\n"
-						+ "        \\item I jeszcze jedna linia.\n"
-						+ "    \\end{itemize}\n"
-						+ "\n"
-						+ "    \\item[Pole 2] \n"
-						+ "    \\begin{itemize}\n"
-						+ "        \\item Zawartość dla pola drugiego.\n"
-						+ "        \\item Kolejny punkt.\n"
-						+ "    \\end{itemize}\n"
-						+ "\n"
-						+ "\\end{description}");
-				*/
-				
-				latexContent.append("\\noindent\\makebox[\\linewidth]{\\rule{\\linewidth}{0.4pt}}\n\n");
+				latexContent.append("\n");
 			}
-		}
-		
-		latexContent.append("\\end{spacing}\n");
+			
+			latexContent.append("    \\end{itemize}\n");
+			
+			// pochodzenie slowa
+			List<LanguageSource> languageSourceList = entry.getLanguageSourceList();
+			
+			if (languageSourceList.size() > 0) {
+				latexContent.append("    \\item[Pochodzenie] \n");
+				latexContent.append("    \\begin{itemize}\n"); //[label={}]\n");
 				
-		polishJapaneseLatexContent.jmdictEntries = latexContent.toString();
+				for (LanguageSource languageSource : languageSourceList) {
+					StringBuffer singleLanguageSource = new StringBuffer();
+					
+					String languageCodeInPolish = Dictionary2HelperCommon.translateToPolishLanguageCode(languageSource.getLang());
+					String languageValue = languageSource.getValue();
+					String languageLsWasei = Dictionary2HelperCommon.translateToPolishLanguageSourceLsWaseiEnum(languageSource.getLsWasei());
+					
+					if (languageValue != null && languageValue.equals("") == false) {
+						singleLanguageSource.append(languageCodeInPolish + ": " + languageValue);
+						
+					} else {
+						singleLanguageSource.append(Dictionary2HelperCommon.translateToPolishLanguageCodeWithoutValue(languageSource.getLang()));
+					}
+					
+					if (languageLsWasei != null && languageLsWasei.equals("") == false) {
+						singleLanguageSource.append(", ").append(languageLsWasei);
+					}
+
+					latexContent.append("        \\item " + singleLanguageSource);
+				}
+									
+				latexContent.append("    \\end{itemize}\n");
+			}
+							
+			latexContent.append("\\end{description}");
+			
+			/* FM_FIXME: test !!!!!!1
+			latexContent.append("\\begin{description}[style=multiline, leftmargin=2cm]\n"
+					+ "    \n"
+					+ "    \\item[Pole 1] \n"
+					+ "    \\begin{itemize}\n"
+					+ "        \\item Zawartość, która bez problemu może być bardzo długa i zająć kilka linii tekstu, a i tak zachowa idealne wyrównanie od lewej strony.\n"
+					+ "        \\item Kolejna zawartość w tym samym polu.\n"
+					+ "        \\item I jeszcze jedna linia.\n"
+					+ "    \\end{itemize}\n"
+					+ "\n"
+					+ "    \\item[Pole 2] \n"
+					+ "    \\begin{itemize}\n"
+					+ "        \\item Zawartość dla pola drugiego.\n"
+					+ "        \\item Kolejny punkt.\n"
+					+ "    \\end{itemize}\n"
+					+ "\n"
+					+ "\\end{description}");
+			*/
+			
+			latexContent.append("\\noindent\\makebox[\\linewidth]{\\rule{\\linewidth}{0.4pt}}\n\n");
+		}
 	}
 	
 	private static String getEntryLabelKey(JMdict.Entry entry) {
