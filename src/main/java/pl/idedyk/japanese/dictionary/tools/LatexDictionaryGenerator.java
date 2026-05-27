@@ -560,7 +560,7 @@ public class LatexDictionaryGenerator {
 			latexContent.append("\\section{" + sectionName + "}\n");
 		}
 		
-		latexContent.append("\\begin{multicols}{2}\n");
+		// latexContent.append("\\begin{multicols}{2}\n");
 		
 		for (JMdict.Entry entry : entriesList) {
 			
@@ -569,7 +569,7 @@ public class LatexDictionaryGenerator {
 			latexContent.append("\\phantomsection\n");
 			latexContent.append("\\label{" + getEntryLabelKey(entry.getEntryId()) + "}");
 			
-			latexContent.append("\\begin{description}[style=multiline, leftmargin=2.0cm]\n\n");
+			latexContent.append("\\begin{description}[style=multiline, leftmargin=2.5cm]\n\n");
 			latexContent.append("    \\item[Słowo] \n");
 			latexContent.append("    \\begin{itemize}[label={}, itemsep=2pt, parsep=0pt]\n");
 			
@@ -730,10 +730,7 @@ public class LatexDictionaryGenerator {
 			    			}
 						}
 					}
-					
-					// tu beda rozne pola
-					int fixme = 1;
-					
+										
 					// informacje dodatkowe												
 					if (polishAdditionalInfo != null) {
 						latexContentDetails.add("\\textit{" + escapeLatexChars(polishAdditionalInfo.getValue() + "}"));						
@@ -866,7 +863,7 @@ public class LatexDictionaryGenerator {
 			latexContent.append("\\noindent\\makebox[\\linewidth]{\\rule{\\linewidth}{0.4pt}}\n\n");
 		}
 		
-		latexContent.append("\\end{multicols}\n");
+		// latexContent.append("\\end{multicols}\n");
 	}
 	
 	private static String getEntryLabelKey(Integer entryId) {
