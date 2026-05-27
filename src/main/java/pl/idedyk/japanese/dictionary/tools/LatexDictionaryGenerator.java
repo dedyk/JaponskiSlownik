@@ -401,7 +401,7 @@ public class LatexDictionaryGenerator {
 					}
 					
 					latexContent.append("\\dotfill");
-					latexContent.append("\\pageref{" + getEntryLabelKey(kanjiKanaPair.getEntry()) + "}");
+					latexContent.append("\\pageref{" + getEntryLabelKey(kanjiKanaPair.getEntry().getEntryId()) + "}");
 								
 					latexContent.append("\n\n");
 				}					
@@ -460,7 +460,7 @@ public class LatexDictionaryGenerator {
 					// latexContent.append(", " + kanjiKanaPair.getRomaji());					
 					
 					latexContent.append("\\dotfill");
-					latexContent.append("\\pageref{" + getEntryLabelKey(kanjiKanaPair.getEntry()) + "}");
+					latexContent.append("\\pageref{" + getEntryLabelKey(kanjiKanaPair.getEntry().getEntryId()) + "}");
 								
 					latexContent.append("\n\n");
 				}					
@@ -565,7 +565,7 @@ public class LatexDictionaryGenerator {
 			List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, true);
 			
 			latexContent.append("\\phantomsection\n");
-			latexContent.append("\\label{" + getEntryLabelKey(entry) + "}");
+			latexContent.append("\\label{" + getEntryLabelKey(entry.getEntryId()) + "}");
 			
 			latexContent.append("\\begin{description}[style=multiline, leftmargin=4.8cm]\n\n");
 			latexContent.append("    \\item[Słowo] \n");
@@ -808,6 +808,42 @@ public class LatexDictionaryGenerator {
 						}											
 					}
 					
+					// odnosniki do innych slow (przejmuje obsluge dwoch elementow powyzej zakomentowanych)
+					List<Xref> referenceToAnotherKanjiKanaList = sense.getReferenceToAnotherKanjiKanaList();
+					
+					if (referenceToAnotherKanjiKanaList.size() > 0) {
+						
+						for (int referenceToAnotherKanjiKanaListIdx = 0; referenceToAnotherKanjiKanaListIdx < referenceToAnotherKanjiKanaList.size(); ++referenceToAnotherKanjiKanaListIdx) {
+							
+							Xref currentXRef = referenceToAnotherKanjiKanaList.get(referenceToAnotherKanjiKanaListIdx);
+							
+							StringBuffer xrefText = new StringBuffer();
+							
+							xrefText.append(Dictionary2HelperCommon.translateXrefType(currentXRef.getType()) + " ");
+											
+							if (currentXRef.getDict() != null) {
+								xrefText.append("\\textbf{" + currentXRef.getDict() + "}: ");
+							}
+							
+							if (currentXRef.getXKanji() != null) {
+								xrefText.append(cjkFakeBold(currentXRef.getXKanji()));
+							}
+							
+							if (currentXRef.getXKana() != null) {
+								if (currentXRef.getXKanji() != null) {
+									xrefText.append(" / ");
+								}
+								xrefText.append(cjkFakeBold(currentXRef.getXKana()));
+							}							
+							
+							if (currentXRef.getSeq() != null) {
+								xrefText.append(" - \\pageref{" + getEntryLabelKey(currentXRef.getSeq()) + "}");
+							}
+														
+				    		latexContentDetails.add(xrefText.toString());	
+						}
+					}					
+					
 					// dopisanie szczegolow
 					if (latexContentDetails.size() > 0) {
 						latexContent.append("    \\begin{itemize}[label={$\\cdot$}]\n");
@@ -830,8 +866,8 @@ public class LatexDictionaryGenerator {
 		}
 	}
 	
-	private static String getEntryLabelKey(JMdict.Entry entry) {
-		return "entry_" + entry.getEntryId();
+	private static String getEntryLabelKey(Integer entryId) {
+		return "entry_" + entryId;
 	}
 
 	//////// Stary kod
