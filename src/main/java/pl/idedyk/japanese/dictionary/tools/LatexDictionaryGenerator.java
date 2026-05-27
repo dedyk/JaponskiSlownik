@@ -588,9 +588,9 @@ public class LatexDictionaryGenerator {
 					if (kanjiAdditionalInfoList.size() > 0) {
 						List<String> translateToPolishKanjiAdditionalInfoEnum = Dictionary2HelperCommon.translateToPolishKanjiAdditionalInfoEnum(kanjiAdditionalInfoList);
 						
-						latexContent.append("(");
+						latexContent.append("(\\textit{");
 						latexContent.append(translateToPolishKanjiAdditionalInfoEnum.stream().collect(Collectors.joining (", ")));
-						latexContent.append(")");
+						latexContent.append("})");
 					}											
 				}
 				
@@ -612,9 +612,9 @@ public class LatexDictionaryGenerator {
 					if (readingAdditionalInfoList.size() > 0) {
 						List<String> translateToPolishReadingAdditionalInfoEnum = Dictionary2HelperCommon.translateToPolishReadingAdditionalInfoEnum(readingAdditionalInfoList);
 						
-						latexContent.append("(");
-						latexContent.append(translateToPolishReadingAdditionalInfoEnum.stream().collect(Collectors.joining (", ")));
-						latexContent.append(")");
+						latexContent.append("(\\textit{");
+						latexContent.append( translateToPolishReadingAdditionalInfoEnum.stream().collect(Collectors.joining (", ")));
+						latexContent.append("})");
 					}					
 				}
 				
