@@ -737,7 +737,52 @@ public class LatexDictionaryGenerator {
 						latexContentDetails.add("\\textit{" + escapeLatexChars(polishAdditionalInfo.getValue() + "}"));						
 					}
 					
-					// pochodzenie slowa
+					// ograniczone do kanji/kana					
+					if (sense.getRestrictedToKanjiList().size() > 0 || sense.getRestrictedToKanaList().size() > 0) {
+						List<String> restrictedToKanjiKanaList = new ArrayList<>();
+						
+						restrictedToKanjiKanaList.addAll(sense.getRestrictedToKanjiList());
+						restrictedToKanjiKanaList.addAll(sense.getRestrictedToKanaList());
+																		
+						// zamiana na przetlumaczona postac
+						String restrictedToKanjiKanaString = "tylko dla: " + String.join("; ", restrictedToKanjiKanaList);
+						
+						latexContentDetails.add("\\textit{" + escapeLatexChars(restrictedToKanjiKanaString + "}"));
+					}
+					
+					// czesci mowy
+					if (sense.getPartOfSpeechList().size() > 0) { 						
+						// zamiana na przetlumaczona postac
+						String translatedToPolishPartOfSpeechEnum = String.join("; ", Dictionary2HelperCommon.translateToPolishPartOfSpeechEnum(sense.getPartOfSpeechList()));
+								    			
+						latexContentDetails.add("\\textit{" + escapeLatexChars(translatedToPolishPartOfSpeechEnum + "}"));				
+					}
+					
+					// kategoria slowa
+					if (sense.getFieldList().size() > 0) {						
+						// zamiana na przetlumaczona postac
+						String translatedfieldEnum = String.join("; ", Dictionary2HelperCommon.translateToPolishFieldEnumList(sense.getFieldList()));
+								    			
+						latexContentDetails.add("\\textit{" + escapeLatexChars(translatedfieldEnum + "}"));						
+					}
+
+					// roznosci
+					if (sense.getMiscList().size() > 0) {						
+						// zamiana na przetlumaczona postac
+						String translatedMiscEnum = String.join("; ", Dictionary2HelperCommon.translateToPolishMiscEnumList(sense.getMiscList()));
+		    			
+						latexContentDetails.add("\\textit{" + escapeLatexChars(translatedMiscEnum + "}"));						
+					}	
+					
+					// dialekt
+					if (sense.getDialectList().size() > 0) {						
+						// zamiana na przetlumaczona postac
+						String translatedDialectEnum = String.join("; ", Dictionary2HelperCommon.translateToPolishDialectEnumList(sense.getDialectList()));
+								    			
+						latexContentDetails.add("\\textit{" + escapeLatexChars(translatedDialectEnum + "}"));				
+					}	
+					
+					// zagraniczne pochodzenie slowa
 					List<LanguageSource> languageSourceList = entry.getLanguageSourceList();
 					
 					if (languageSourceList.size() > 0) {						
