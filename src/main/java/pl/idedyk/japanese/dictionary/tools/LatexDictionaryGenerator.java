@@ -484,7 +484,7 @@ public class LatexDictionaryGenerator {
 		
 		String groupedByKey;
 		
-		for (JMdict.Entry entry : polishJMdict.getEntryList()) {
+		for (JMdict.Entry entry : entriesList) {
 			
 			// tworzenie klucza grupowania
 			if (	entry.getReadingInfoList().get(0).getKana().getRomaji() == null ||
@@ -509,7 +509,7 @@ public class LatexDictionaryGenerator {
 		}
 		
 		latexContent.append("\\chapter{Spis słów}\n");
-		latexContent.append("\\begin{spacing}{0.0}\n");
+		latexContent.append("\\begin{spacing}{0.1}\n");
 		
 		for (Map.Entry<String, List<JMdict.Entry>> groupedByKeyEntriesListEntry : entriesListGroupedBy.entrySet()) {
 			
@@ -558,7 +558,9 @@ public class LatexDictionaryGenerator {
 			latexContent.append("\\section[Inne]{Inne}\n");	
 		} else {
 			latexContent.append("\\section{" + sectionName + "}\n");
-		}		
+		}
+		
+		latexContent.append("\\begin{multicols}{2}\n");
 		
 		for (JMdict.Entry entry : entriesList) {
 			
@@ -567,9 +569,9 @@ public class LatexDictionaryGenerator {
 			latexContent.append("\\phantomsection\n");
 			latexContent.append("\\label{" + getEntryLabelKey(entry.getEntryId()) + "}");
 			
-			latexContent.append("\\begin{description}[style=multiline, leftmargin=4.8cm]\n\n");
+			latexContent.append("\\begin{description}[style=multiline, leftmargin=2.0cm]\n\n");
 			latexContent.append("    \\item[Słowo] \n");
-			latexContent.append("    \\begin{itemize}[label={}]\n");
+			latexContent.append("    \\begin{itemize}[label={}, itemsep=2pt, parsep=0pt]\n");
 			
 			for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
 				latexContent.append("        \\item ");
@@ -642,7 +644,7 @@ public class LatexDictionaryGenerator {
 				List<Info> polishInfoList = Dictionary2HelperCommon.getPolishInfoList(infoList);
 				
 				latexContent.append("    \\item[Informacje dodatkowe] \n");
-				latexContent.append("    \\begin{itemize}[label={}]\n");
+				latexContent.append("    \\begin{itemize}[label={}, itemsep=2pt, parsep=0pt]\n");
 
 				for (Info info : polishInfoList) {
 					latexContent.append("        \\item " + info.getValue() + "\n");
@@ -657,7 +659,7 @@ public class LatexDictionaryGenerator {
 			if (senseList.size() > 0) {
 
 				latexContent.append("    \\item[Znaczenie] \n");
-				latexContent.append("    \\begin{itemize}[label={}]\n");
+				latexContent.append("    \\begin{itemize}[label={}, itemsep=2pt, parsep=0pt]\n");
 
 				for (int senseIdx = 0; senseIdx < senseList.size(); ++senseIdx) {
 					
@@ -846,15 +848,14 @@ public class LatexDictionaryGenerator {
 					
 					// dopisanie szczegolow
 					if (latexContentDetails.size() > 0) {
-						latexContent.append("    \\begin{itemize}[label={$\\cdot$}]\n");
+						latexContent.append("    \\begin{itemize}[label={$\\cdot$}, itemsep=2pt, parsep=0pt]\n");
 						
 						for (String currentDetails : latexContentDetails) {
 							latexContent.append("    \\item " + currentDetails + "\n");	
 						}
 						
 						latexContent.append("    \\end{itemize}\n");
-					}
-					
+					}					
 				}
 				
 				latexContent.append("    \\end{itemize}\n");
@@ -864,6 +865,8 @@ public class LatexDictionaryGenerator {
 						
 			latexContent.append("\\noindent\\makebox[\\linewidth]{\\rule{\\linewidth}{0.4pt}}\n\n");
 		}
+		
+		latexContent.append("\\end{multicols}\n");
 	}
 	
 	private static String getEntryLabelKey(Integer entryId) {
