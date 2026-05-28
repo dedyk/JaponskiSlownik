@@ -1,6 +1,7 @@
 package pl.idedyk.japanese.dictionary.tools;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
 import java.text.Collator;
@@ -34,6 +35,8 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.LanguageSource;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.OldPolishJapaneseDictionaryInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
@@ -51,38 +54,22 @@ public class LatexDictionaryGenerator {
 		// wiec zawiera wszystkie slowa lacznie ze slowami, ktore tylko wystepuja w starej strukturze
 		// jednakze na potrzeby testu to nie jest potrzebne
 		
+		// INFO2: wersja common musi byc generowana z pelnym slownikiem, ktory wyszedl z AndroidDictionaryGenerator
+		
 		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();		
 		
 		JMdict polishJMdict = dictionary2Helper.getPolishJMdict();
 		
-		// FM_FIXME: mala czesc
-		JMdict testPolishJMdict = new JMdict();
+		List<JMdict.Entry> entryList = new ArrayList<>();
 		
-		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList()); //.subList(0, 50000));
+		entryList.addAll(polishJMdict.getEntryList().subList(0, 1000));
 		// testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().stream().filter(f -> f.getInfoList().size() > 0).collect(Collectors.toList()));
 		
-		PolishJapaneseLatexContent latexDictonaryEntries = generateLatexDictonaryEntries(testPolishJMdict);
-		
-		// zapis plikow
-		File dictionaryJapaneseIndexFile = new File("pdf_dictionary/dictionary_japanese_index.tex");
-		dictionaryJapaneseIndexFile.delete();
+		// wygenerowanie plikow
+		generateLatexDictonaryEntries(entryList, new File("pdf_dictionary"), true);
 				
-		Files.write(dictionaryJapaneseIndexFile.toPath(), latexDictonaryEntries.japaneseIndex.getBytes(), StandardOpenOption.CREATE_NEW);
-
-		File dictionaryPolishIndexFile = new File("pdf_dictionary/dictionary_polish_index.tex");
-		dictionaryPolishIndexFile.delete();
-				
-		Files.write(dictionaryPolishIndexFile.toPath(), latexDictonaryEntries.polishIndex.getBytes(), StandardOpenOption.CREATE_NEW);
-		
-		File dictionaryJmdictEntriesFile = new File("pdf_dictionary/dictionary_jmdict_entries.tex");
-		dictionaryJmdictEntriesFile.delete();
-				
-		Files.write(dictionaryJmdictEntriesFile.toPath(), latexDictonaryEntries.jmdictEntries.getBytes(), StandardOpenOption.CREATE_NEW);
-		
 		/*
-		
-
-		//
+		// stary kod
 		
         TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
 		List<PolishJapaneseEntry> polishJapaneseEntries = dictionary2Helper.getOldPolishJapaneseEntriesList();
@@ -108,30 +95,84 @@ public class LatexDictionaryGenerator {
 		*/
 	}
 	
-	public static PolishJapaneseLatexContent generateLatexDictonaryEntries(JMdict polishJMdict) {
+	public static void clearLatexDictonaryEntries(File destinationDir) {
+		File dictionaryTitleFile = new File(destinationDir, "dictionary_title.tex");
+		File dictionaryJapaneseIndexFile = new File(destinationDir, "dictionary_japanese_index.tex");
+		File dictionaryPolishIndexFile = new File(destinationDir, "dictionary_polish_index.tex");
+		File dictionaryJmdictEntriesFile = new File(destinationDir, "dictionary_jmdict_entries.tex");
+		
+		dictionaryTitleFile.delete();
+		dictionaryJapaneseIndexFile.delete();
+		dictionaryPolishIndexFile.delete();
+		dictionaryJmdictEntriesFile.delete();
+	}
+	
+	public static PolishJapaneseLatexContent generateLatexDictonaryEntries(List<JMdict.Entry> entryList, File destinationDir, boolean commonOnly) throws IOException {
 		
 		PolishJapaneseLatexContent polishJapaneseLatexContent = new PolishJapaneseLatexContent();
 		
+		// generowanie tytulu i filtrowanie
+		if (commonOnly == false) { // wszystkie slowa
+			polishJapaneseLatexContent.title = "\\newcommand*\\dictionaryTitle{\n"
+					+ "{\\huge\\bfseries Mały skromny japoński słownik \\par}\n"
+					+ "\\vspace{2cm} \\normalsize{Wersja pełna}\n"
+					+ "}";
+			
+		} else {
+			polishJapaneseLatexContent.title = "\\newcommand*\\dictionaryTitle{\n"
+					+ "{\\huge\\bfseries Mały skromny japoński słownik \\par}\n"
+					+ "\\vspace{2cm} \\normalsize{Wersja z najczęściej używanymi słowami}\n"
+					+ "}";
+			
+			// filtrowanie
+			entryList = entryList.stream().filter(f -> {
+				MiscInfo misc = f.getMisc();
+				
+				if (misc != null) {
+					OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = misc.getOldPolishJapaneseDictionary();
+					
+					if (oldPolishJapaneseDictionary != null) {
+						return oldPolishJapaneseDictionary.getAttributeList().stream().filter(f2 -> AttributeType.COMMON_WORD.name().equals(f2.getType()) == true).count() > 0;
+					}
+				}
+				
+				return false;
+			}).collect(Collectors.toList());
+		}		
+		
 		// generowanie indeksu japonskiego
-		generateJapaneseIndex(polishJapaneseLatexContent, polishJMdict);
+		generateJapaneseIndex(polishJapaneseLatexContent, entryList);
 		
 		// generowanie indeksu polskiego
-		generatePolishIndex(polishJapaneseLatexContent, polishJMdict);
+		generatePolishIndex(polishJapaneseLatexContent, entryList);
 		
 		// generowanie slow
-		generateJMDictEntries(polishJapaneseLatexContent, polishJMdict);
+		generateJMDictEntries(polishJapaneseLatexContent, entryList);
+		
+		// wyczyszczenie starych wygenerowanych plikow
+		clearLatexDictonaryEntries(destinationDir);
+		
+		// zapis do pliku
+		File dictionaryTitleFile = new File(destinationDir, "dictionary_title.tex");
+		Files.write(dictionaryTitleFile.toPath(), polishJapaneseLatexContent.title.getBytes(), StandardOpenOption.CREATE_NEW);		
+		
+		File dictionaryJapaneseIndexFile = new File(destinationDir, "dictionary_japanese_index.tex");
+		Files.write(dictionaryJapaneseIndexFile.toPath(), polishJapaneseLatexContent.japaneseIndex.getBytes(), StandardOpenOption.CREATE_NEW);
+
+		File dictionaryPolishIndexFile = new File(destinationDir, "dictionary_polish_index.tex");
+		Files.write(dictionaryPolishIndexFile.toPath(), polishJapaneseLatexContent.polishIndex.getBytes(), StandardOpenOption.CREATE_NEW);
+		
+		File dictionaryJmdictEntriesFile = new File(destinationDir, "dictionary_jmdict_entries.tex");
+		Files.write(dictionaryJmdictEntriesFile.toPath(), polishJapaneseLatexContent.jmdictEntries.getBytes(), StandardOpenOption.CREATE_NEW);
 		
 		return polishJapaneseLatexContent;
 	}
 
-	private static void generateJapaneseIndex(PolishJapaneseLatexContent polishJapaneseLatexContent, JMdict polishJMdict) {
+	private static void generateJapaneseIndex(PolishJapaneseLatexContent polishJapaneseLatexContent, List<JMdict.Entry> entryList) {
 				
 		// mapowania do generowania indeksu
 		Map<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexMap = new TreeMap<>();
-		
-		// pobieramy wszystkie slowa
-		List<pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry> entryList = polishJMdict.getEntryList();
-		
+				
 		// chodzimy po wszystkich slowach
 		for (pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry entry : entryList) {
 			
@@ -221,7 +262,7 @@ public class LatexDictionaryGenerator {
 		polishJapaneseLatexContent.japaneseIndex = latexContent.toString();
 	}
 	
-	private static void generatePolishIndex(PolishJapaneseLatexContent polishJapaneseLatexContent, JMdict polishJMdict) {		
+	private static void generatePolishIndex(PolishJapaneseLatexContent polishJapaneseLatexContent, List<JMdict.Entry> entryList) {		
 		
 		// sortowanie po polsku
 		Collator polishCollator = Collator.getInstance(new Locale("pl", "PL"));
@@ -229,10 +270,7 @@ public class LatexDictionaryGenerator {
 		
 		// mapowania do generowania indeksu
 		Map<String, List<KanjiKanaPair>> polishIndexMap = new TreeMap<>(polishCollator);
-		
-		// pobieramy wszystkie slowa
-		List<pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry> entryList = polishJMdict.getEntryList();
-		
+				
 		// chodzimy po wszystkich slowach
 		for (pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry entry : entryList) {
 			
@@ -478,13 +516,13 @@ public class LatexDictionaryGenerator {
 		latexContent.append("\\end{spacing}\n");
 	}
 
-	private static void generateJMDictEntries(PolishJapaneseLatexContent polishJapaneseLatexContent, JMdict polishJMdict) {
+	private static void generateJMDictEntries(PolishJapaneseLatexContent polishJapaneseLatexContent, List<JMdict.Entry> entryList) {
 		
 		// generowanie zawartosci dokumentu		
 		StringBuffer latexContent = new StringBuffer();
 				
 		// pobranie listy wszystkich slowek
-		List<JMdict.Entry> entriesList = new ArrayList<>(polishJMdict.getEntryList());
+		List<JMdict.Entry> entriesList = new ArrayList<>(entryList);
 		
 		// podzielenie listy na mniejsze kawalki
 		Map<String, List<JMdict.Entry>> entriesListGroupedBy = new TreeMap<>();
@@ -880,8 +918,8 @@ public class LatexDictionaryGenerator {
 		return "entry_" + entryId;
 	}
 
-	//////// Stary kod
-	
+	//////// Stary kod	
+	@Deprecated
 	public static List<String> generateLatexDictonaryEntries(List<PolishJapaneseEntry> polishJapaneseEntries) throws Exception {
 		
 		List<String> result = new ArrayList<String>();
@@ -957,6 +995,7 @@ public class LatexDictionaryGenerator {
 		return result;
 	}
 	
+	@Deprecated
 	private static void generateSection(List<String> result, String key, List<PolishJapaneseEntry> keyList) throws Exception {
 		
 		//KanaHelper kanaHelper = new KanaHelper();
@@ -1033,6 +1072,7 @@ public class LatexDictionaryGenerator {
 		result.add("\\end{multicols}\n\n");
 	}
 	
+	@Deprecated
 	private static String generateDictionaryEntry(PolishJapaneseEntry polishJapaneseEntry, KanjiKanaPair kanjiKanaPair) {
 		
 		StringBuffer result = new StringBuffer();
@@ -1482,6 +1522,7 @@ public class LatexDictionaryGenerator {
 	*/
 	
 	public static class PolishJapaneseLatexContent {
+		private String title;
 		private String japaneseIndex;
 		private String polishIndex;		
 		private String jmdictEntries;		
