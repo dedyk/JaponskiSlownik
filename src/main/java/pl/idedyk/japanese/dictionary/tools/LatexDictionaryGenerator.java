@@ -15,11 +15,13 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.apache.commons.lang.StringUtils;
 
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
@@ -607,6 +609,13 @@ public class LatexDictionaryGenerator {
 		
 		// latexContent.append("\\begin{multicols}{2}\n");
 		
+		// lista wszystkich znanych entry (potrzebne do generowania linkow)
+		Set<Integer> knownEntryIds = new TreeSet<>();
+		
+		for (JMdict.Entry entry : entriesList) {
+			knownEntryIds.add(entry.getEntryId());
+		}
+		
 		for (JMdict.Entry entry : entriesList) {
 			
 			List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, true);
@@ -883,8 +892,8 @@ public class LatexDictionaryGenerator {
 								}
 								xrefText.append(cjkFakeBold(currentXRef.getXKana()));
 							}							
-							
-							if (currentXRef.getSeq() != null) {
+														
+							if (currentXRef.getSeq() != null && knownEntryIds.contains(currentXRef.getSeq()) == true) {
 								xrefText.append(" - \\pageref{" + getEntryLabelKey(currentXRef.getSeq()) + "}");
 							}
 														
