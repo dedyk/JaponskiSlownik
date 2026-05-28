@@ -107,7 +107,6 @@ public class AndroidDictionaryGenerator {
 		generateNamePolishJapaneseEntries("output/name2.xml_%d");
 		
 		if (fullMode == true) {
-		
 			generateZinniaTomoeSlimBinaryFile(kanjiEntries, kanjivgSingleXmlFile, "output/kanjivgTomoeFile.xml",
 					"../JapaneseDictionary_additional/zinnia-0.06-app/bin/zinnia_learn",
 					"output/kanji_recognizer_handwriting-ja-slim.s", zinniaTomoeSlimBinaryFile);
@@ -1067,10 +1066,6 @@ public class AndroidDictionaryGenerator {
 		// generujemy dwa razy pelny i common only
 		generatePdfDictionary(entryList, mainTexFilename, outputDir, true);
 		generatePdfDictionary(entryList, mainTexFilename, outputDir, false);
-		
-		int fixme = 1;
-		
-
 	}
 	
 	private static void generatePdfDictionary(List<JMdict.Entry> entryList, String mainTexFilename, String outputDir, boolean commonOnly) throws IOException, InterruptedException {
@@ -1109,7 +1104,7 @@ public class AndroidDictionaryGenerator {
 		// fmtutil-sys --all
 		
 		// uruchomienie xelatex (latexmk)
-		runCommand(new File(outputDir), new String[] { "latexmk", "-xelatex", "dictionary.tex", "-jobname=dictionary.pdf" });
+		runCommand(new File(outputDir), new String[] { "latexmk", "-xelatex", "dictionary.tex", "-jobname=dictionary" });
 		
 		// zmiana nazwy pliku
 		String newName = commonOnly == false ? "dictionary-full.pdf" : "dictionary-common.pdf"; 
@@ -1117,7 +1112,7 @@ public class AndroidDictionaryGenerator {
 		new File(outputDir, "dictionary.pdf").renameTo(new File(outputDir, newName));
 		
 		// uruchomienie czyszczenia
-		runCommand(new File(outputDir), new String[] { "latexmk", "-C", "-xelatex", "dictionary.tex", "-jobname=dictionary.pdf" });
+		runCommand(new File(outputDir), new String[] { "latexmk", "-C", "-xelatex", "dictionary.tex", "-jobname=dictionary" });
 		LatexDictionaryGenerator.clearLatexDictonaryEntries(new File(outputDir));
 		new File(outputDir, "dictionary.tex").delete();
 	}
