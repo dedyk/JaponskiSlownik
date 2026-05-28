@@ -1,9 +1,7 @@
 package pl.idedyk.japanese.dictionary.tools;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.nio.file.Files;
-import java.nio.file.OpenOption;
 import java.nio.file.StandardOpenOption;
 import java.text.Collator;
 import java.util.ArrayList;
@@ -26,8 +24,6 @@ import pl.idedyk.japanese.dictionary.api.dto.Attribute;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
-import pl.idedyk.japanese.dictionary.common.Helper;
-import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
@@ -62,7 +58,7 @@ public class LatexDictionaryGenerator {
 		// FM_FIXME: mala czesc
 		JMdict testPolishJMdict = new JMdict();
 		
-		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().subList(0, 1000));
+		testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList()); //.subList(0, 50000));
 		// testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().stream().filter(f -> f.getInfoList().size() > 0).collect(Collectors.toList()));
 		
 		PolishJapaneseLatexContent latexDictonaryEntries = generateLatexDictonaryEntries(testPolishJMdict);
@@ -260,7 +256,17 @@ public class LatexDictionaryGenerator {
 					polishGlossValue = polishGlossValue.replaceAll("\\[", "");
 					polishGlossValue = polishGlossValue.replaceAll("\\}", "");
 					polishGlossValue = polishGlossValue.replaceAll("\\'", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\“", "");					
+					polishGlossValue = polishGlossValue.replaceAll("\\“", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\_", "");
+					
+					polishGlossValue = polishGlossValue.replaceAll("\\,", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\~", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\〜", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\(", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\)", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\@", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\*", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\.\\.\\.", "");
 					
 					// jezeli zaczyna sie od znaku "-" usuwamy to
 					while(true) {
