@@ -66,7 +66,7 @@ public class LatexDictionaryGenerator {
 		// testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().stream().filter(f -> f.getInfoList().size() > 0).collect(Collectors.toList()));
 		
 		// wygenerowanie plikow
-		generateLatexDictonaryEntries(entryList, new File("pdf_dictionary"), true);
+		generateLatexDictonaryEntries(entryList, new File("pdf_dictionary"), false);
 				
 		/*
 		// stary kod
@@ -115,13 +115,13 @@ public class LatexDictionaryGenerator {
 		if (commonOnly == false) { // wszystkie slowa
 			polishJapaneseLatexContent.title = "\\newcommand*\\dictionaryTitle{\n"
 					+ "{\\huge\\bfseries Mały skromny japoński słownik \\par}\n"
-					+ "\\vspace{2cm} \\normalsize{Wersja pełna}\n"
+					+ "\\vspace{2cm} \\normalsize{Wersja pełna \\par}\n"
 					+ "}";
-			
+						
 		} else {
 			polishJapaneseLatexContent.title = "\\newcommand*\\dictionaryTitle{\n"
 					+ "{\\huge\\bfseries Mały skromny japoński słownik \\par}\n"
-					+ "\\vspace{2cm} \\normalsize{Wersja z najczęściej używanymi słowami}\n"
+					+ "\\vspace{2cm} \\normalsize{Wersja z najczęściej używanymi słowami \\par}\n"
 					+ "}";
 			
 			// filtrowanie
