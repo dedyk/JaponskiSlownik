@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -56,6 +57,7 @@ import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
@@ -88,7 +90,7 @@ public class AndroidDictionaryGenerator {
 		
 		Map<String, KanjivgEntry> kanjivgEntryMap = KanjivgReader.readKanjivgSingleXmlFile(kanjivgSingleXmlFile, kanjivgPatchDirFile);
 		
-		List<PolishJapaneseEntry> dictionary = checkAndSavePolishJapaneseEntries(jmedictCommon,
+		List<Entry> dictionary = checkAndSavePolishJapaneseEntries(jmedictCommon,
 				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word.json", "output/word-power.csv",
 				"output/transitive_intransitive_pairs.csv", "output/word2.xml_%d"); //, "output/word_group.csv");
 				
@@ -114,7 +116,7 @@ public class AndroidDictionaryGenerator {
 		}
 	}
 
-	private static List<PolishJapaneseEntry> checkAndSavePolishJapaneseEntries(
+	private static List<JMdict.Entry> checkAndSavePolishJapaneseEntries(
 			TreeMap<String, EDictEntry> jmedictCommon,
 			String[] sourceFileNames,
 			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationJSONFileName, String destinationPowerFileName,
@@ -241,7 +243,7 @@ public class AndroidDictionaryGenerator {
 			
 		}
 				
-		return result;
+		return allPolishDictionary2EntryList;
 	}
 
 	private static void generateExampleSentence(List<PolishJapaneseEntry> dictionary, String tatoebaSentencesDir, 
@@ -373,7 +375,7 @@ public class AndroidDictionaryGenerator {
 
 	}
 
-	private static List<KanjiEntryForDictionary> generateKanjiEntries(List<PolishJapaneseEntry> dictionary,
+	private static List<KanjiEntryForDictionary> generateKanjiEntries(List<Entry> dictionary,
 			TreeMap<String, EDictEntry> jmedictCommon,
 			Map<String, KanjivgEntry> kanjivgEntryMap, String sourceKanjiName, String sourceKanjiDic2FileName,
 			String sourceKradFileName, String destinationFileName, String kanji2XmlFile) throws Exception {
@@ -567,7 +569,7 @@ public class AndroidDictionaryGenerator {
 		return kanjiEntries;
 	}
 
-	private static void generateAdditionalKanjiEntries(List<PolishJapaneseEntry> dictionary,
+	private static void generateAdditionalKanjiEntries(List<Entry> dictionary,
 			List<KanjiEntryForDictionary> kanjiEntries, Map<String, KanjiDic2EntryForDictionary> readKanjiDic2, String osjpFile,
 			TreeMap<String, EDictEntry> jmedictCommon) throws Exception {
 
@@ -583,47 +585,52 @@ public class AndroidDictionaryGenerator {
 
 		final Map<String, Integer> additionalKanjiIds = new HashMap<String, Integer>();
 
-		for (PolishJapaneseEntry currentPolishJapaneseEntry : dictionary) {
+		for (Entry currentPolishJapaneseEntry : dictionary) {
 
-			String kanji = currentPolishJapaneseEntry.getKanji();
+			List<KanjiInfo> kanjiInfoList = currentPolishJapaneseEntry.getKanjiInfoList();
+			
+			for (KanjiInfo kanjiInfo : kanjiInfoList) {
+				
+				String kanji = kanjiInfo.getKanji();
 
-			for (int kanjiCharIdx = 0; kanjiCharIdx < kanji.length(); ++kanjiCharIdx) {
+				for (int kanjiCharIdx = 0; kanjiCharIdx < kanji.length(); ++kanjiCharIdx) {
 
-				String currentKanjiChar = String.valueOf(kanji.charAt(kanjiCharIdx));
+					String currentKanjiChar = String.valueOf(kanji.charAt(kanjiCharIdx));
 
-				KanjiDic2EntryForDictionary kanjiDic2Entry = readKanjiDic2.get(currentKanjiChar);
+					KanjiDic2EntryForDictionary kanjiDic2Entry = readKanjiDic2.get(currentKanjiChar);
 
-				if (kanjiDic2Entry != null) {
+					if (kanjiDic2Entry != null) {
 
-					if (alreadySetKanjiSource.contains(currentKanjiChar) == false) {
+						if (alreadySetKanjiSource.contains(currentKanjiChar) == false) {
 
-						Integer kanjiCountMapInteger = kanjiCountMap.get(currentKanjiChar);
+							Integer kanjiCountMapInteger = kanjiCountMap.get(currentKanjiChar);
 
-						if (kanjiCountMapInteger == null) {
-							kanjiCountMapInteger = new Integer(0);
+							if (kanjiCountMapInteger == null) {
+								kanjiCountMapInteger = new Integer(0);
+							}
+
+							kanjiCountMapInteger = kanjiCountMapInteger.intValue() + 1;
+
+							kanjiCountMap.put(currentKanjiChar, kanjiCountMapInteger);
 						}
-
-						kanjiCountMapInteger = kanjiCountMapInteger.intValue() + 1;
-
-						kanjiCountMap.put(currentKanjiChar, kanjiCountMapInteger);
 					}
-				}
 
-				if (alreadySetKanji.contains(currentKanjiChar)) {
-					continue;
-				}
+					if (alreadySetKanji.contains(currentKanjiChar)) {
+						continue;
+					}
 
-				if (kanjiDic2Entry != null) {
+					if (kanjiDic2Entry != null) {
 
-					alreadySetKanji.add(currentKanjiChar);
+						alreadySetKanji.add(currentKanjiChar);
 
-					KanjiEntryForDictionary newKanjiEntry = generateKanjiEntry(currentKanjiChar, kanjiDic2Entry,
-							kanjiEntries.get(kanjiEntries.size() - 1).getId() + 1);
+						KanjiEntryForDictionary newKanjiEntry = generateKanjiEntry(currentKanjiChar, kanjiDic2Entry,
+								kanjiEntries.get(kanjiEntries.size() - 1).getId() + 1);
 
-					kanjiEntries.add(newKanjiEntry);
+						kanjiEntries.add(newKanjiEntry);
 
-					additionalKanjiIds.put(currentKanjiChar, newKanjiEntry.getId());
-				}
+						additionalKanjiIds.put(currentKanjiChar, newKanjiEntry.getId());
+					}
+				}	
 			}
 		}
 		
@@ -1055,7 +1062,18 @@ public class AndroidDictionaryGenerator {
 		return transitiveIntransitivePairList;
 	}
 		
-	private static void generatePdfDictionary(List<PolishJapaneseEntry> polishJapaneseEntries, String mainTexFilename, String outputDir) throws Exception {
+	private static void generatePdfDictionary(List<JMdict.Entry> entryList, String mainTexFilename, String outputDir) throws Exception {
+		
+		// generujemy dwa razy pelny i common only
+		generatePdfDictionary(entryList, mainTexFilename, outputDir, true);
+		generatePdfDictionary(entryList, mainTexFilename, outputDir, false);
+		
+		int fixme = 1;
+		
+
+	}
+	
+	private static void generatePdfDictionary(List<JMdict.Entry> entryList, String mainTexFilename, String outputDir, boolean commonOnly) throws IOException, InterruptedException {
 		
 		File mainTexFile = new File(mainTexFilename);
 		File outputMainTexFile = new File(outputDir, mainTexFile.getName()); 
@@ -1064,8 +1082,11 @@ public class AndroidDictionaryGenerator {
 		FileUtils.copyFile(mainTexFile, outputMainTexFile);
 		
 		// uruchomienie generatora slow
-		List<String> generatedLatexDictonaryEntries = LatexDictionaryGenerator.generateLatexDictonaryEntries(polishJapaneseEntries);
+		LatexDictionaryGenerator.generateLatexDictonaryEntries(entryList, new File(outputDir), commonOnly);
+
+		// List<String> generatedLatexDictonaryEntries = LatexDictionaryGenerator.generateLatexDictonaryEntries(polishJapaneseEntries);
 		
+		/*
 		// zapisanie wygenerowanych slow
 		FileWriter dictionaryEntriesFileWriter = new FileWriter(new File(outputDir, "dictionary_entries.tex"));
 		
@@ -1074,6 +1095,7 @@ public class AndroidDictionaryGenerator {
 		}		
 		
 		dictionaryEntriesFileWriter.close();
+		*/
 		
 		// W przypadku błędu:
 		// ! TeX capacity exceeded, sorry [pool size=5815276]
@@ -1086,11 +1108,24 @@ public class AndroidDictionaryGenerator {
 		// A następnie uruchomić z root-a:
 		// fmtutil-sys --all
 		
-		// uruchomienie xelatex
+		// uruchomienie xelatex (latexmk)
+		runCommand(new File(outputDir), new String[] { "latexmk", "-xelatex", "dictionary.tex", "-jobname=dictionary.pdf" });
+		
+		// zmiana nazwy pliku
+		String newName = commonOnly == false ? "dictionary-full.pdf" : "dictionary-common.pdf"; 
+		
+		new File(outputDir, "dictionary.pdf").renameTo(new File(outputDir, newName));
+		
+		// uruchomienie czyszczenia
+		runCommand(new File(outputDir), new String[] { "latexmk", "-C", "-xelatex", "dictionary.tex", "-jobname=dictionary.pdf" });
+		LatexDictionaryGenerator.clearLatexDictonaryEntries(new File(outputDir));
+		new File(outputDir, "dictionary.tex").delete();
+	}
+	
+	private static void runCommand(File pwd, String[] commandArgs) throws IOException, InterruptedException {
 		Runtime runtime = Runtime.getRuntime();
 
-		Process process = runtime.exec(
-				new String[] { "xelatex", "dictionary.tex" }, null, new File(outputDir));
+		Process process = runtime.exec(commandArgs, null, pwd);
 
 		BufferedReader stream = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
@@ -1109,16 +1144,10 @@ public class AndroidDictionaryGenerator {
 		}
 
 		int exitVal = process.waitFor();
-
-		System.out.println("xelatex exited with error code: " + exitVal);
 		
-		// kasowanie niepotrzebnych plikow
-		new File(outputDir, "dictionary.aux").delete();
-		new File(outputDir, "dictionary.log").delete();
-		new File(outputDir, "dictionary.out").delete();
-		new File(outputDir, "dictionary.tex").delete();
-		new File(outputDir, "dictionary_entries.tex").delete();
-		new File(outputDir, "dictionary.out").delete();
+		if (exitVal != 0) {
+			throw new RuntimeException("command exited with error code: " + exitVal);
+		}
 	}
 	
 	private static void generateNamePolishJapaneseEntries(String name2XmlFileTemplate) throws Exception {
