@@ -266,8 +266,8 @@ public class LatexDictionaryGenerator {
 					polishGlossValue = polishGlossValue.replaceAll("\\)", "");
 					polishGlossValue = polishGlossValue.replaceAll("\\@", "");
 					polishGlossValue = polishGlossValue.replaceAll("\\*", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\.\\.\\.", "");
-					
+					polishGlossValue = polishGlossValue.replaceAll("\\…", "");
+										
 					// jezeli zaczyna sie od znaku "-" usuwamy to
 					while(true) {
 						if (polishGlossValue.startsWith("-") == true) {
