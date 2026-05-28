@@ -123,7 +123,7 @@ public class LatexDictionaryGenerator {
 		} else {
 			polishJapaneseLatexContent.title = "\\newcommand*\\dictionaryTitle{\n"
 					+ "{\\huge\\bfseries Mały skromny japoński słownik \\par}\n"
-					+ "\\vspace{2cm} \\normalsize{Wersja z najczęściej używanymi słowami \\par}\n"
+					+ "\\vspace{2cm} \\normalsize{Wersja z powszechnie używanymi słowami \\par}\n"
 					+ "}";
 			
 			// filtrowanie
