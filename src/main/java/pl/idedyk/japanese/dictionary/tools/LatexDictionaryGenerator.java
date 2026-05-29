@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
 import java.text.Collator;
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -290,6 +291,8 @@ public class LatexDictionaryGenerator {
 				for (Gloss polishGloss : polishGlossList) {
 					
 					String polishGlossValue = polishGloss.getValue();
+					
+					polishGlossValue = Normalizer.normalize(polishGlossValue, Normalizer.Form.NFKC);
 										
 					// jezeli byla jakas zawartosc w namiasie to usuwamy to
 					polishGlossValue = polishGlossValue.replaceAll("\\s*\\([^()]*\\)\\s*", "").trim();
@@ -297,6 +300,8 @@ public class LatexDictionaryGenerator {
 					polishGlossValue = polishGlossValue.replaceAll("\\}", "");
 					polishGlossValue = polishGlossValue.replaceAll("\\'", "");
 					polishGlossValue = polishGlossValue.replaceAll("\\“", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\”", "");
+					polishGlossValue = polishGlossValue.replaceAll("\\„", "");
 					polishGlossValue = polishGlossValue.replaceAll("\\_", "");
 					
 					polishGlossValue = polishGlossValue.replaceAll("\\,", "");
@@ -330,7 +335,15 @@ public class LatexDictionaryGenerator {
 						polishGlossValue = otherSectionName;
 					}
 					
-					if (polishGlossValue.equals("ß") == true) {
+					if (polishGlossValue.startsWith("α") == true) {
+						polishGlossValue = otherSectionName;
+					}
+
+					if (polishGlossValue.startsWith("β") == true) {
+						polishGlossValue = otherSectionName;
+					}
+					
+					if (polishGlossValue.startsWith("ß") == true) {
 						polishGlossValue = otherSectionName;
 					}
 					
