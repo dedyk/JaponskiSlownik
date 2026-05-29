@@ -186,9 +186,9 @@ public class LatexDictionaryGenerator {
 				String kana = kanjiKanaPair.getKana();
 				String romaji = kanjiKanaPair.getRomaji();
 				
-				if (romaji == null || romaji.length() == 0) {
+				if (romaji == null || romaji.length() == 0 || romaji.equals("-") == true) {
 					kana = otherSectionName;
-					romaji = otherSectionName; // FM_FIXME: generowanie tej sekcji
+					romaji = otherSectionName;
 				}
 				
 				// generowanie klucza do mapy
