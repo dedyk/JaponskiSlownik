@@ -65,7 +65,7 @@ public class LatexDictionaryGenerator {
 		List<JMdict.Entry> entryList = new ArrayList<>();
 		
 		entryList.addAll(polishJMdict.getEntryList().subList(0, 1000));
-		// testPolishJMdict.getEntryList().addAll(polishJMdict.getEntryList().stream().filter(f -> f.getInfoList().size() > 0).collect(Collectors.toList()));
+		// entryList.addAll(polishJMdict.getEntryList().stream().filter(f -> f.getInfoList().size() > 0).collect(Collectors.toList()));
 		
 		// wygenerowanie plikow
 		generateLatexDictonaryEntries(entryList, new File("pdf_dictionary"), false);
@@ -325,9 +325,12 @@ public class LatexDictionaryGenerator {
 							break;
 						}
 					}
-
 					
 					if (polishGlossValue.startsWith("??") == true) {
+						polishGlossValue = otherSectionName;
+					}
+					
+					if (polishGlossValue.equals("ß") == true) {
 						polishGlossValue = otherSectionName;
 					}
 					
