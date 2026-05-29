@@ -65,8 +65,9 @@ public class LatexDictionaryGenerator {
 		
 		List<JMdict.Entry> entryList = new ArrayList<>();
 		
-		entryList.addAll(polishJMdict.getEntryList().subList(0, 1000));
+		entryList.addAll(polishJMdict.getEntryList().subList(0, 10000));
 		// entryList.addAll(polishJMdict.getEntryList().stream().filter(f -> f.getInfoList().size() > 0).collect(Collectors.toList()));
+		// entryList.addAll(polishJMdict.getEntryList().stream().filter(f -> f.getEntryId().intValue() == 2054830).collect(Collectors.toList()));
 		
 		// wygenerowanie plikow
 		generateLatexDictonaryEntries(entryList, new File("pdf_dictionary"), false);
@@ -295,7 +296,7 @@ public class LatexDictionaryGenerator {
 					polishGlossValue = Normalizer.normalize(polishGlossValue, Normalizer.Form.NFKC);
 										
 					// jezeli byla jakas zawartosc w namiasie to usuwamy to
-					polishGlossValue = polishGlossValue.replaceAll("\\s*\\([^()]*\\)\\s*", "").trim();
+					polishGlossValue = polishGlossValue.replaceAll("\\s*\\([^()]*\\)", "").trim();
 					polishGlossValue = polishGlossValue.replaceAll("\\[", "");
 					polishGlossValue = polishGlossValue.replaceAll("\\}", "");
 					polishGlossValue = polishGlossValue.replaceAll("\\'", "");
