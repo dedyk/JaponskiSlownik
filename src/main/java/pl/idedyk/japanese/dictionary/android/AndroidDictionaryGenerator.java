@@ -9,6 +9,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.nio.file.Files;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -68,7 +70,7 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.ReadingMeaningInfoReadingMea
 import com.csvreader.CsvReader;
 
 public class AndroidDictionaryGenerator {
-	
+		
 	public static void main(String[] args) throws Exception {
 				
 		boolean fullMode = true;
@@ -111,7 +113,7 @@ public class AndroidDictionaryGenerator {
 					"../JapaneseDictionary_additional/zinnia-0.06-app/bin/zinnia_learn",
 					"output/kanji_recognizer_handwriting-ja-slim.s", zinniaTomoeSlimBinaryFile);
 			
-			generatePdfDictionary(dictionary, "pdf_dictionary/dictionary.tex", "output");
+			createLatexDictionaries(dictionary, "pdf_dictionary/dictionary.tex", "output");
 		}
 	}
 
@@ -1061,24 +1063,39 @@ public class AndroidDictionaryGenerator {
 		return transitiveIntransitivePairList;
 	}
 		
-	private static void generatePdfDictionary(List<JMdict.Entry> entryList, String mainTexFilename, String outputDir) throws Exception {
+	private static void createLatexDictionaries(List<JMdict.Entry> entryList, String mainTexFilename, String outputDir) throws Exception {
 		
 		// generujemy dwa razy pelny i common only
-		generatePdfDictionary(entryList, mainTexFilename, outputDir, true);
-		generatePdfDictionary(entryList, mainTexFilename, outputDir, false);
+		createLatexDictionaries(entryList, mainTexFilename, outputDir, true);
+		createLatexDictionaries(entryList, mainTexFilename, outputDir, false);
+		
+		System.out.println("!!! Run pdf generate !!!");
 	}
 	
-	private static void generatePdfDictionary(List<JMdict.Entry> entryList, String mainTexFilename, String outputDir, boolean commonOnly) throws IOException, InterruptedException {
+	private static void createLatexDictionaries(List<JMdict.Entry> entryList, String mainTexFilename, String outputDir, boolean commonOnly) throws IOException, InterruptedException {
 		
-		File mainTexFile = new File(mainTexFilename);
-		File outputMainTexFile = new File(outputDir, mainTexFile.getName()); 
+		// przygotowanie struktury katalogow
+		String dictionaryName = commonOnly == false ? "dictionary-full" : "dictionary-common";
 		
+		File dictionaryOutputDir = new File(outputDir, dictionaryName);
+		
+		dictionaryOutputDir.mkdirs();
+		
+		// kopiowanie plikow tex
 		// kopiowanie glownego pliku slowniku
-		FileUtils.copyFile(mainTexFile, outputMainTexFile);
+		File mainTexFile = new File(mainTexFilename);
+		
+		FileUtils.copyFile(mainTexFile, new File(dictionaryOutputDir, mainTexFile.getName()));
 		
 		// uruchomienie generatora slow
-		LatexDictionaryGenerator.generateLatexDictonaryEntries(entryList, new File(outputDir), commonOnly);
-
+		LatexDictionaryGenerator.generateLatexDictonaryEntries(entryList, dictionaryOutputDir, commonOnly);
+		
+		// wygenerowanie skryptu do uruchomienia i czyszczenia
+		Files.write(new File(dictionaryOutputDir, "run.sh").toPath(), ("#!/bin/bash\n\nlatexmk -xelatex dictionary.tex -jobname=" + dictionaryName + "\n").getBytes(), StandardOpenOption.CREATE_NEW);
+		Files.write(new File(dictionaryOutputDir, "clear.sh").toPath(), ("#!/bin/bash\n\nlatexmk -xelatex -c dictionary.tex -jobname=" + dictionaryName + "\n").getBytes(), StandardOpenOption.CREATE_NEW);
+		
+		// archiwum
+		
 		// List<String> generatedLatexDictonaryEntries = LatexDictionaryGenerator.generateLatexDictonaryEntries(polishJapaneseEntries);
 		
 		/*
@@ -1092,7 +1109,7 @@ public class AndroidDictionaryGenerator {
 		dictionaryEntriesFileWriter.close();
 		*/
 		
-		// W przypadku błędu:
+		// W przypadku błędu i innych tez:
 		// ! TeX capacity exceeded, sorry [pool size=5815276]
 		//
 		// należy w pliku /usr/share/texmf-dist/web2c/texmf.cnf
@@ -1104,8 +1121,9 @@ public class AndroidDictionaryGenerator {
 		// fmtutil-sys --all
 		
 		// uruchomienie xelatex (latexmk)
-		runCommand(new File(outputDir), new String[] { "latexmk", "-xelatex", "dictionary.tex", "-jobname=dictionary" });
+		// runCommand(new File(outputDir), new String[] { "latexmk", "-xelatex", "dictionary.tex", "-jobname=dictionary" });
 		
+		/*
 		// zmiana nazwy pliku
 		String newName = commonOnly == false ? "dictionary-full.pdf" : "dictionary-common.pdf"; 
 		
@@ -1115,8 +1133,10 @@ public class AndroidDictionaryGenerator {
 		runCommand(new File(outputDir), new String[] { "latexmk", "-C", "-xelatex", "dictionary.tex", "-jobname=dictionary" });
 		LatexDictionaryGenerator.clearLatexDictonaryEntries(new File(outputDir));
 		new File(outputDir, "dictionary.tex").delete();
+		*/
 	}
 	
+	/*
 	private static void runCommand(File pwd, String[] commandArgs) throws IOException, InterruptedException {
 		Runtime runtime = Runtime.getRuntime();
 
@@ -1144,6 +1164,7 @@ public class AndroidDictionaryGenerator {
 			throw new RuntimeException("command exited with error code: " + exitVal);
 		}
 	}
+	*/
 	
 	private static void generateNamePolishJapaneseEntries(String name2XmlFileTemplate) throws Exception {
 				
