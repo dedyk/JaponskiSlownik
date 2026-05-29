@@ -552,8 +552,8 @@ public class LatexDictionaryGenerator {
 			
 			// tworzenie klucza grupowania
 			if (	entry.getReadingInfoList().get(0).getKana().getRomaji() == null ||
-					entry.getReadingInfoList().get(0).getKana().getRomaji().equals("") == true) {
-				
+					entry.getReadingInfoList().get(0).getKana().getRomaji().equals("") == true ||
+					entry.getReadingInfoList().get(0).getKana().getRomaji().startsWith("-") == true) {
 				groupedByKey = otherSectionName;
 			} else {
 				groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 1).toUpperCase();
