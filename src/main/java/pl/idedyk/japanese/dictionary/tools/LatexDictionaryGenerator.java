@@ -52,7 +52,7 @@ public class LatexDictionaryGenerator {
 	final static String otherSectionName = "Inne";
 
 	public static void main(String[] args) throws Exception {
-		
+						
 		// INFO: normalnie plik latex generuje sie z pliku jmdict wygenerowanego przez AndroidDictionaryGenerator
 		// wiec zawiera wszystkie slowa lacznie ze slowami, ktore tylko wystepuja w starej strukturze
 		// jednakze na potrzeby testu to nie jest potrzebne
@@ -67,7 +67,7 @@ public class LatexDictionaryGenerator {
 		
 		entryList.addAll(polishJMdict.getEntryList().subList(0, 10000));
 		// entryList.addAll(polishJMdict.getEntryList().stream().filter(f -> f.getInfoList().size() > 0).collect(Collectors.toList()));
-		// entryList.addAll(polishJMdict.getEntryList().stream().filter(f -> f.getEntryId().intValue() == 2054830).collect(Collectors.toList()));
+		// entryList.addAll(polishJMdict.getEntryList().stream().filter(f -> f.getEntryId().intValue() == 2756760).collect(Collectors.toList()));
 		
 		// wygenerowanie plikow
 		generateLatexDictonaryEntries(entryList, new File("pdf_dictionary"), false);
@@ -226,7 +226,11 @@ public class LatexDictionaryGenerator {
 				section = otherSectionName;
 				
 			} else {
-				section = kanaRomajiKey.romaji.substring(0, 1).toUpperCase();
+				if (kanaRomajiKey.romaji.length() > 1) {
+					section = kanaRomajiKey.romaji.substring(0, 2).trim().toUpperCase();
+				} else {
+					section = kanaRomajiKey.romaji.substring(0, 1).trim().toUpperCase();	
+				}
 			}
 			
 			// czy taka sekcja wystepuje
@@ -386,9 +390,16 @@ public class LatexDictionaryGenerator {
 				section = otherSectionName;
 				
 			} else {
-				section = polishGlossValueKey.substring(0, 1).toUpperCase();
+				if (polishGlossValueKey.length() > 1 && isSpecialChar(polishGlossValueKey.charAt(1)) == false &&
+						Character.getType(polishGlossValueKey.charAt(0))  != Character.DECIMAL_DIGIT_NUMBER && // czy to cyfra
+						Character.getType(polishGlossValueKey.charAt(1))  != Character.DECIMAL_DIGIT_NUMBER) {  // czy to cyfra
+					
+					section = polishGlossValueKey.substring(0, 2).trim().toUpperCase();
+				} else {
+					section = polishGlossValueKey.substring(0, 1).trim().toUpperCase();	
+				}
 			}
-			
+						
 			// czy taka sekcja wystepuje
 			List<Entry<String, List<KanjiKanaPair>>> entrySetListForSection = indexSection.get(section);
 			
@@ -555,8 +566,12 @@ public class LatexDictionaryGenerator {
 					entry.getReadingInfoList().get(0).getKana().getRomaji().equals("") == true ||
 					entry.getReadingInfoList().get(0).getKana().getRomaji().startsWith("-") == true) {
 				groupedByKey = otherSectionName;
-			} else {
-				groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 1).toUpperCase();
+			} else {				
+				if (entry.getReadingInfoList().get(0).getKana().getRomaji().length() > 1) {
+					groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 2).trim().toUpperCase();
+				} else {
+					groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 1).trim().toUpperCase();	
+				}
 			}
 						
 			// pobranie listy dla danej grupy
@@ -943,6 +958,24 @@ public class LatexDictionaryGenerator {
 	private static String getEntryLabelKey(Integer entryId) {
 		return "entry_" + entryId;
 	}
+	
+	private static boolean isSpecialChar(Character char_) {
+		int type = Character.getType(char_);
+
+		if (type == Character.DASH_PUNCTUATION ||
+			type == Character.OTHER_PUNCTUATION || 
+		    type == Character.START_PUNCTUATION || 
+		    type == Character.END_PUNCTUATION ||
+		    type == Character.MATH_SYMBOL || 
+		    type == Character.MODIFIER_SYMBOL || 
+		    type == Character.OTHER_SYMBOL || 
+		    type == Character.CURRENCY_SYMBOL) {
+		    
+		    return true;
+		} else {
+			return false;
+		}
+	}
 
 	//////// Stary kod	
 	@Deprecated
@@ -963,8 +996,12 @@ public class LatexDictionaryGenerator {
 			//String sectionName = kana.substring(0, 1);
 			String sectionName = null;
 			
-			if (romaji.length() != 0) {
-				sectionName = romaji.substring(0, 1).toUpperCase();
+			if (romaji.length() != 0) {				
+				if (romaji.length() > 1) {
+					sectionName = romaji.substring(0, 2).trim().toUpperCase();
+				} else {
+					sectionName = romaji.substring(0, 1).trim().toUpperCase();	
+				}
 				
 			} else {
 				sectionName = otherSectionName;
