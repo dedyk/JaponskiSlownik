@@ -11,7 +11,6 @@ import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
-import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator.DictionaryIndex;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
@@ -41,15 +40,34 @@ public class DictionaryIndexGenerator {
 		DictionaryIndex dictionaryIndex = generateDictionaryIndex(entryList, null, null);
 		
 		//
-		
-		Map<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> japaneseIndexSectionMap = dictionaryIndex.getEntryListIndex().getJapaneseIndexSectionMap();
-		
-		for (java.util.Map.Entry<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> japaneseIndexMapEntry : japaneseIndexSectionMap.entrySet()) {
+				
+		for (java.util.Map.Entry<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> japaneseIndexMapEntry : dictionaryIndex.getEntryListIndex().getJapaneseIndexSectionMap().entrySet()) {
 			
 			String section = japaneseIndexMapEntry.getKey();
 			List<java.util.Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>> sectionItemList = japaneseIndexMapEntry.getValue();
 			
-			System.out.println(section + " (" + sectionItemList.size() + ")");			
+			System.out.println(section + " (" + sectionItemList.size() + ")");
+			
+			for (java.util.Map.Entry<KanaRomajiKey, List<KanjiKanaPair>> currentSectionItem : sectionItemList) {
+				System.out.println("\t" + currentSectionItem.getValue().get(0).getEntry().getEntryId());
+			}
+			
+			System.out.println("-----------");
+		}
+		
+		System.out.println("===================");
+		
+		for (java.util.Map.Entry<String, List<Map.Entry<String, List<KanjiKanaPair>>>> japaneseIndexMapEntry : dictionaryIndex.getEntryListIndex().getPolishIndexSectionMap().entrySet()) {
+			
+			String section = japaneseIndexMapEntry.getKey();
+			List<java.util.Map.Entry<String, List<KanjiKanaPair>>> sectionItemList = japaneseIndexMapEntry.getValue();
+			
+			System.out.println(section + " (" + sectionItemList.size() + ")");	
+			
+			for (java.util.Map.Entry<String, List<KanjiKanaPair>> currentSectionItem : sectionItemList) {
+				System.out.println("\t" + currentSectionItem.getValue().get(0).getEntry().getEntryId());
+			}
+			
 			System.out.println("-----------");
 		}
 	}
@@ -263,7 +281,7 @@ public class DictionaryIndexGenerator {
 			}
 		}
 		
-		// grupowanie po sekcjach
+		// grupowanie po sekcjach dla polskiego znaczenia
 		dictionaryIndex.entryListIndex.polishIndexSectionMap = new TreeMap<>(polishCollator);
 		
 		for (Map.Entry<String, List<KanjiKanaPair>> polishIndexMapEntry : dictionaryIndex.entryListIndex.polishIndexMap.entrySet()) {
@@ -295,6 +313,41 @@ public class DictionaryIndexGenerator {
 			}
 			
 			entrySetListForSection.add(polishIndexMapEntry);
+		}
+		
+		// czesc dla spisu slowek (potrzebne tylko dla generatora latex)
+		
+		// podzielenie listy na mniejsze kawalki
+		dictionaryIndex.entryListIndex.entriesListGroupedBy = new TreeMap<>();
+		
+		String groupedByKey;
+		
+		for (pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry entry : entryList) {
+			
+			// tworzenie klucza grupowania
+			if (	entry.getReadingInfoList().get(0).getKana().getRomaji() == null ||
+					entry.getReadingInfoList().get(0).getKana().getRomaji().equals("") == true ||
+					entry.getReadingInfoList().get(0).getKana().getRomaji().startsWith("-") == true) {
+				groupedByKey = DictionaryIndex.otherSectionName;
+			} else {				
+				if (entry.getReadingInfoList().get(0).getKana().getRomaji().length() > 1) {
+					groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 2).trim().toUpperCase();
+				} else {
+					groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 1).trim().toUpperCase();	
+				}
+			}
+						
+			// pobranie listy dla danej grupy
+			List<JMdict.Entry> groupedByKeyEntriesList = dictionaryIndex.entryListIndex.entriesListGroupedBy.get(groupedByKey);
+			
+			if (groupedByKeyEntriesList == null) { // nowa grupa, tworzymy nowa
+				groupedByKeyEntriesList = new ArrayList<JMdict.Entry>();
+				
+				dictionaryIndex.entryListIndex.entriesListGroupedBy.put(groupedByKey, groupedByKeyEntriesList);
+			}
+			
+			// dodanie wpisu do danej grupy
+			groupedByKeyEntriesList.add(entry);			
 		}
 	}
 
@@ -355,6 +408,9 @@ public class DictionaryIndexGenerator {
 			// mapa ze wszystkimi sekcjami (to najczesciej beda dwa pierwsze znaki znaczenia)
 			private Map<String, List<Map.Entry<String, List<KanjiKanaPair>>>> polishIndexSectionMap;
 			
+			// mapa ze spisem wszystkich slow (potrzebne tylko dla generator latex ze spisem wszystkich slow) 
+			private Map<String, List<JMdict.Entry>> entriesListGroupedBy;
+			
 			public EntryListIndex(List<Entry> entryList) {
 				this.entryList = entryList;
 			}
@@ -377,6 +433,10 @@ public class DictionaryIndexGenerator {
 
 			public Map<String, List<Map.Entry<String, List<KanjiKanaPair>>>> getPolishIndexSectionMap() {
 				return polishIndexSectionMap;
+			}
+
+			public Map<String, List<JMdict.Entry>> getEntriesListGroupedBy() {
+				return entriesListGroupedBy;
 			}
 		}
 	}

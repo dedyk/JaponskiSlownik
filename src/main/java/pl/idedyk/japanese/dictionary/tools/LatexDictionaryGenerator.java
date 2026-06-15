@@ -4,15 +4,12 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
-import java.text.Collator;
-import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -153,7 +150,7 @@ public class LatexDictionaryGenerator {
 		generatePolishIndex(polishJapaneseLatexContent, dictionaryIndex);
 		
 		// generowanie slow
-		generateJMDictEntries(polishJapaneseLatexContent, entryList);
+		generateJMDictEntries(polishJapaneseLatexContent, dictionaryIndex);
 		
 		// wyczyszczenie starych wygenerowanych plikow
 		clearLatexDictonaryEntries(destinationDir);
@@ -339,51 +336,15 @@ public class LatexDictionaryGenerator {
 		latexContent.append("\\end{spacing}\n");
 	}
 
-	private static void generateJMDictEntries(PolishJapaneseLatexContent polishJapaneseLatexContent, List<JMdict.Entry> entryList) {
+	private static void generateJMDictEntries(PolishJapaneseLatexContent polishJapaneseLatexContent, DictionaryIndex dictionaryIndex) {
 		
 		// generowanie zawartosci dokumentu		
 		StringBuffer latexContent = new StringBuffer();
-				
-		// pobranie listy wszystkich slowek
-		List<JMdict.Entry> entriesList = new ArrayList<>(entryList);
-		
-		// podzielenie listy na mniejsze kawalki
-		Map<String, List<JMdict.Entry>> entriesListGroupedBy = new TreeMap<>();
-		
-		String groupedByKey;
-		
-		for (JMdict.Entry entry : entriesList) {
-			
-			// tworzenie klucza grupowania
-			if (	entry.getReadingInfoList().get(0).getKana().getRomaji() == null ||
-					entry.getReadingInfoList().get(0).getKana().getRomaji().equals("") == true ||
-					entry.getReadingInfoList().get(0).getKana().getRomaji().startsWith("-") == true) {
-				groupedByKey = DictionaryIndex.otherSectionName;
-			} else {				
-				if (entry.getReadingInfoList().get(0).getKana().getRomaji().length() > 1) {
-					groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 2).trim().toUpperCase();
-				} else {
-					groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 1).trim().toUpperCase();	
-				}
-			}
 						
-			// pobranie listy dla danej grupy
-			List<JMdict.Entry> groupedByKeyEntriesList = entriesListGroupedBy.get(groupedByKey);
-			
-			if (groupedByKeyEntriesList == null) { // nowa grupa, tworzymy nowa
-				groupedByKeyEntriesList = new ArrayList<JMdict.Entry>();
-				
-				entriesListGroupedBy.put(groupedByKey, groupedByKeyEntriesList);
-			}
-			
-			// dodanie wpisu do danej grupy
-			groupedByKeyEntriesList.add(entry);			
-		}
-		
 		latexContent.append("\\chapter{Spis słów}\n");
 		latexContent.append("\\begin{spacing}{0.1}\n");
 		
-		for (Map.Entry<String, List<JMdict.Entry>> groupedByKeyEntriesListEntry : entriesListGroupedBy.entrySet()) {
+		for (Map.Entry<String, List<JMdict.Entry>> groupedByKeyEntriesListEntry : dictionaryIndex.getEntryListIndex().getEntriesListGroupedBy().entrySet()) {
 			
 			// pobieramy wszystkie wpisy z danej grupy
 			List<JMdict.Entry> groupedByKeyEntriesList = groupedByKeyEntriesListEntry.getValue();
@@ -413,7 +374,7 @@ public class LatexDictionaryGenerator {
 		}
 		
 		// i na koniec jeszcze sekcja inne
-		generateJMDictEntriesSection(latexContent, DictionaryIndex.otherSectionName, entriesListGroupedBy.get(DictionaryIndex.otherSectionName));
+		generateJMDictEntriesSection(latexContent, DictionaryIndex.otherSectionName, dictionaryIndex.getEntryListIndex().getEntriesListGroupedBy().get(DictionaryIndex.otherSectionName));
 		
 		latexContent.append("\\end{spacing}\n");
 				
