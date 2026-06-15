@@ -13,12 +13,17 @@ import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2NameHelperCommon;
+import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2NameHelperCommon.NameKanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
+import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfo;
+import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoTransDet;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 
 public class DictionaryIndexGenerator {
@@ -28,19 +33,26 @@ public class DictionaryIndexGenerator {
 		// INFO: wersja common musi byc generowana z pelnym slownikiem, ktory wyszedl z AndroidDictionaryGenerator
 		// INFO2: to tylko test		
 		Dictionary2Helper dictionary2Helper = Dictionary2Helper.getOrInit();		
-		
 		JMdict polishJMdict = dictionary2Helper.getPolishJMdict();
 		
-		List<JMdict.Entry> entryList = new ArrayList<>();
+		List<JMdict.Entry> entryList = new ArrayList<>();		
+		entryList.addAll(polishJMdict.getEntryList().subList(0, 10000));
 		
-		entryList.addAll(polishJMdict.getEntryList()); // .subList(0, 10000));
+		//
+		
+		Dictionary2NameHelper dictionary2NameHelper = Dictionary2NameHelper.getOrInit();		
+		JMnedict jmnedict = dictionary2NameHelper.getJMnedict();
+		
+		List<JMnedict.Entry> nameEntryList = new ArrayList<>();
+		nameEntryList.addAll(jmnedict.getEntryList().subList(0, 10000));
 		
 		//
 		
-		DictionaryIndex dictionaryIndex = generateDictionaryIndex(entryList, null, null);
+		DictionaryIndex dictionaryIndex = generateDictionaryIndex(entryList, nameEntryList, null);
 		
 		//
-				
+		
+		/*
 		for (java.util.Map.Entry<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> japaneseIndexMapEntry : dictionaryIndex.getEntryListIndex().getJapaneseIndexSectionMap().entrySet()) {
 			
 			String section = japaneseIndexMapEntry.getKey();
@@ -70,6 +82,40 @@ public class DictionaryIndexGenerator {
 			
 			System.out.println("-----------");
 		}
+		*/
+		
+		System.out.println("===================");
+		
+		for (java.util.Map.Entry<String, List<Map.Entry<KanaRomajiKey, List<NameKanjiKanaPair>>>> japaneseIndexMapEntry : dictionaryIndex.getNameEntryListIndex().getJapaneseIndexSectionMap().entrySet()) {
+			
+			String section = japaneseIndexMapEntry.getKey();
+			List<java.util.Map.Entry<KanaRomajiKey, List<NameKanjiKanaPair>>> sectionItemList = japaneseIndexMapEntry.getValue();
+			
+			System.out.println(section + " (" + sectionItemList.size() + ")");
+			
+			for (java.util.Map.Entry<KanaRomajiKey, List<NameKanjiKanaPair>> currentSectionItem : sectionItemList) {
+				System.out.println("\t" + currentSectionItem.getValue().get(0).getEntry().getEntryId());
+			}
+			
+			System.out.println("-----------");
+		}
+		
+		System.out.println("===================");
+		
+		for (java.util.Map.Entry<String, List<Map.Entry<String, List<NameKanjiKanaPair>>>> japaneseIndexMapEntry : dictionaryIndex.getNameEntryListIndex().getTranslateIndexSectionMap().entrySet()) {
+			
+			String section = japaneseIndexMapEntry.getKey();
+			List<java.util.Map.Entry<String, List<NameKanjiKanaPair>>> sectionItemList = japaneseIndexMapEntry.getValue();
+			
+			System.out.println(section + " (" + sectionItemList.size() + ")");	
+			
+			for (java.util.Map.Entry<String, List<NameKanjiKanaPair>> currentSectionItem : sectionItemList) {
+				System.out.println("\t" + currentSectionItem.getValue().get(0).getEntry().getEntryId());
+			}
+			
+			System.out.println("-----------");
+		}
+		
 	}
 	
 	public static DictionaryIndex generateDictionaryIndex(List<JMdict.Entry> entryList, List<JMnedict.Entry> nameEntryList, List<KanjiCharacterInfo> kanjiList) {
@@ -79,7 +125,7 @@ public class DictionaryIndexGenerator {
 		
 		// tworzymy indeksy
 		generateEntryListIndex(dictionaryIndex, entryList);
-		generateNameEntryListIndex(dictionaryIndex, entryList);
+		generateNameEntryListIndex(dictionaryIndex, nameEntryList);
 		generateKanjiListIndex(dictionaryIndex, entryList);
 		
 		//
@@ -88,6 +134,8 @@ public class DictionaryIndexGenerator {
 	}
 
 	public static void generateEntryListIndex(DictionaryIndex dictionaryIndex, List<Entry> entryList) {
+		
+		// INFO: gdy cos tutaj zmieniasz zmienic rowniez w generateNameEntryListIndex
 		
 		KanaHelper kanaHelper = new KanaHelper();
 		Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache(true);
@@ -198,69 +246,8 @@ public class DictionaryIndexGenerator {
 				// chodzimy po wszystkich polskich znaczeniach
 				for (Gloss polishGloss : polishGlossList) {
 					
-					String polishGlossValue = polishGloss.getValue();
-					
-					polishGlossValue = Normalizer.normalize(polishGlossValue, Normalizer.Form.NFKC);
+					String polishGlossValue = normalizeGlossValue(polishGloss.getValue());
 										
-					// jezeli byla jakas zawartosc w namiasie to usuwamy to
-					polishGlossValue = polishGlossValue.replaceAll("\\s*\\([^()]*\\)", "").trim();
-					polishGlossValue = polishGlossValue.replaceAll("\\[", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\}", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\'", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\“", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\”", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\„", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\_", "");
-					
-					polishGlossValue = polishGlossValue.replaceAll("\\,", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\~", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\〜", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\(", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\)", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\@", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\*", "");
-					polishGlossValue = polishGlossValue.replaceAll("\\…", "");
-										
-					// jezeli zaczyna sie od znaku "-" usuwamy to
-					while(true) {
-						if (polishGlossValue.startsWith("-") == true) {
-							polishGlossValue = polishGlossValue.substring(1);
-						} else {
-							break;
-						}
-					}
-					
-					// jezeli zaczyna sie od znaku "." usuwamy to
-					while(true) {
-						if (polishGlossValue.startsWith(".") == true) {
-							polishGlossValue = polishGlossValue.substring(1);
-						} else {
-							break;
-						}
-					}
-					
-					if (polishGlossValue.startsWith("??") == true) {
-						polishGlossValue = DictionaryIndex.otherSectionName;
-					}
-					
-					if (polishGlossValue.startsWith("α") == true) {
-						polishGlossValue = DictionaryIndex.otherSectionName;
-					}
-
-					if (polishGlossValue.startsWith("β") == true) {
-						polishGlossValue = DictionaryIndex.otherSectionName;
-					}
-					
-					if (polishGlossValue.startsWith("ß") == true) {
-						polishGlossValue = DictionaryIndex.otherSectionName;
-					}
-					
-					if (polishGlossValue.length() == 0) {
-						polishGlossValue = DictionaryIndex.otherSectionName;
-					}
-					
-					polishGlossValue = polishGlossValue.trim();
-					
 					// indeks dla danego klucza
 					List<KanjiKanaPair> kanjiKanaPairListForPolishGlossValue = dictionaryIndex.entryListIndex.polishIndexMap.get(polishGlossValue);
 					
@@ -350,9 +337,241 @@ public class DictionaryIndexGenerator {
 			groupedByKeyEntriesList.add(entry);			
 		}
 	}
+	
+	private static String normalizeGlossValue(String glossValue) {
+		
+		glossValue = Normalizer.normalize(glossValue, Normalizer.Form.NFKC);
+		
+		// jezeli byla jakas zawartosc w namiasie to usuwamy to
+		glossValue = glossValue.replaceAll("\\s*\\([^()]*\\)", "").trim();
+		glossValue = glossValue.replaceAll("\\[", "");
+		glossValue = glossValue.replaceAll("\\}", "");
+		glossValue = glossValue.replaceAll("\\'", "");
+		glossValue = glossValue.replaceAll("\\“", "");
+		glossValue = glossValue.replaceAll("\\”", "");
+		glossValue = glossValue.replaceAll("\\„", "");
+		glossValue = glossValue.replaceAll("\\_", "");
+		
+		glossValue = glossValue.replaceAll("\\,", "");
+		glossValue = glossValue.replaceAll("\\~", "");
+		glossValue = glossValue.replaceAll("\\〜", "");
+		glossValue = glossValue.replaceAll("\\(", "");
+		glossValue = glossValue.replaceAll("\\)", "");
+		glossValue = glossValue.replaceAll("\\@", "");
+		glossValue = glossValue.replaceAll("\\*", "");
+		glossValue = glossValue.replaceAll("\\…", "");
+							
+		// jezeli zaczyna sie od znaku "-" usuwamy to
+		while(true) {
+			if (glossValue.startsWith("-") == true) {
+				glossValue = glossValue.substring(1);
+			} else {
+				break;
+			}
+		}
+		
+		// jezeli zaczyna sie od znaku "." usuwamy to
+		while(true) {
+			if (glossValue.startsWith(".") == true) {
+				glossValue = glossValue.substring(1);
+			} else {
+				break;
+			}
+		}
+		
+		if (glossValue.startsWith("??") == true) {
+			glossValue = DictionaryIndex.otherSectionName;
+		}
+		
+		if (glossValue.startsWith("α") == true) {
+			glossValue = DictionaryIndex.otherSectionName;
+		}
 
-	private static void generateNameEntryListIndex(DictionaryIndex dictionaryIndex, List<Entry> entryList) {
-		int todo = 1; // !!!!!!!!!!!
+		if (glossValue.startsWith("β") == true) {
+			glossValue = DictionaryIndex.otherSectionName;
+		}
+		
+		if (glossValue.startsWith("ß") == true) {
+			glossValue = DictionaryIndex.otherSectionName;
+		}
+		
+		if (glossValue.length() == 0) {
+			glossValue = DictionaryIndex.otherSectionName;
+		}
+		
+		glossValue = glossValue.trim();
+
+		return glossValue;		
+	}
+
+	private static void generateNameEntryListIndex(DictionaryIndex dictionaryIndex, List<JMnedict.Entry> nameEntryList) {
+		
+		// INFO: gdy cos tutaj zmieniasz zmienic rowniez w generateEntryListIndex
+		
+		KanaHelper kanaHelper = new KanaHelper();
+		Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache(true);
+		
+		// indeks slowek
+		dictionaryIndex.nameEntryListIndex = new DictionaryIndex.NameEntryListIndex(nameEntryList);		
+		
+		// czesc japonska
+		
+		// generowanie mapy ze wszystkimi japonskimi slowami
+		dictionaryIndex.nameEntryListIndex.japaneseIndexMap = new TreeMap<>();
+				
+		// chodzimy po wszystkich slowach
+		for (JMnedict.Entry entry : nameEntryList) {
+			
+			// pobieramy tylko widoczne czytania
+			List<NameKanjiKanaPair> nameKanjiKanaPairList = Dictionary2NameHelperCommon.getNameKanjiKanaPairListStatic(entry);
+			
+			// chodzimy po wszystkich czytania i dodajemy do mapy
+			for (NameKanjiKanaPair nameKanjiKanaPair : nameKanjiKanaPairList) {
+				String kana = nameKanjiKanaPair.getKana();
+				String romaji = nameKanjiKanaPair.getRomaji();
+				
+				if (kana == null || kana.length() == 0 || kana.equals("-") == true) {
+					kana = DictionaryIndex.otherSectionName;
+					romaji = DictionaryIndex.otherSectionName;
+				}
+				
+				// generowanie klucza do mapy
+				KanaRomajiKey kanaRomajiKey = new KanaRomajiKey(kana, romaji);
+				
+				// indeks dla danego klucza
+				List<NameKanjiKanaPair> nameKanjiKanaPairListForKanaRomajiKey = dictionaryIndex.nameEntryListIndex.japaneseIndexMap.get(kanaRomajiKey);
+				
+				// gdy nie ma tworzymy wpis
+				if (nameKanjiKanaPairListForKanaRomajiKey == null) {
+					nameKanjiKanaPairListForKanaRomajiKey = new ArrayList<NameKanjiKanaPair>();
+					
+					dictionaryIndex.nameEntryListIndex.japaneseIndexMap.put(kanaRomajiKey, nameKanjiKanaPairListForKanaRomajiKey);
+				}
+				
+				// dodajemy wpis
+				if (nameKanjiKanaPairListForKanaRomajiKey.contains(nameKanjiKanaPair) == false) {
+					nameKanjiKanaPairListForKanaRomajiKey.add(nameKanjiKanaPair);
+				}
+			}			
+		}
+		
+		//
+		
+		// generowanie sekcji, gdzie nazwa sekcji to najczesciej dwie pierwsze litery czytania
+		dictionaryIndex.nameEntryListIndex.japaneseIndexSectionMap = new TreeMap<>();
+		
+		for (Map.Entry<KanaRomajiKey, List<NameKanjiKanaPair>> japaneseIndexMapEntry : dictionaryIndex.nameEntryListIndex.japaneseIndexMap.entrySet()) {
+			
+			KanaRomajiKey kanaRomajiKey = japaneseIndexMapEntry.getKey();
+
+			String section = null;
+			
+			if (kanaRomajiKey.kana == DictionaryIndex.otherSectionName || kanaRomajiKey.romaji == DictionaryIndex.otherSectionName) {
+				section = DictionaryIndex.otherSectionName;
+				
+			} else {
+				KanaEntry kanaEntry = kanaCache.get(kanaRomajiKey.kana.substring(0, 1));
+				
+				if (kanaEntry == null) {
+					section = DictionaryIndex.otherSectionName;
+					
+				} else {
+					section = kanaEntry.getKana();	
+				}				
+			}
+			
+			// czy taka sekcja wystepuje
+			List<Map.Entry<KanaRomajiKey, List<NameKanjiKanaPair>>> entrySetListForSection = dictionaryIndex.nameEntryListIndex.japaneseIndexSectionMap.get(section);
+			
+			if (entrySetListForSection == null) {
+				entrySetListForSection = new ArrayList<>();
+				
+				dictionaryIndex.nameEntryListIndex.japaneseIndexSectionMap.put(section, entrySetListForSection);
+			}
+			
+			entrySetListForSection.add(japaneseIndexMapEntry);
+		}
+		
+		// czesc polska
+		
+		// sortowanie po polsku
+		Collator polishCollator = Collator.getInstance(new Locale("pl", "PL"));
+		polishCollator.setStrength(Collator.SECONDARY);
+		
+		// mapowania do generowania indeksu
+		dictionaryIndex.nameEntryListIndex.translateIndexMap = new TreeMap<>(polishCollator);
+				
+		// chodzimy po wszystkich slowach
+		for (JMnedict.Entry entry : nameEntryList) {
+			
+			// pobieramy tylko widoczne czytania
+			List<NameKanjiKanaPair> nameKanjiKanaPairList = Dictionary2NameHelperCommon.getNameKanjiKanaPairListStatic(entry);
+			
+			// oraz chodzimy po wszystkich znaczeniach
+			List<TranslationalInfo> translationalInfoList = entry.getTranslationInfo();
+			
+			for (TranslationalInfo translationalInfo : translationalInfoList) {
+				// pobieramy wszystkie polskie znaczenia (jezeli istnieja)
+				List<TranslationalInfoTransDet> englishOrPolishTranslationalInfoTransDetList = Dictionary2NameHelperCommon.getEnglishOrPolishTranslationalInfoTransDet(translationalInfo.getTransDet());
+								
+				// chodzimy po wszystkich polskich znaczeniach
+				for (TranslationalInfoTransDet translationalInfoTransDet : englishOrPolishTranslationalInfoTransDetList) {
+					
+					String translationalInfoTransDetValue = normalizeGlossValue(translationalInfoTransDet.getValue());
+										
+					// indeks dla danego klucza
+					List<NameKanjiKanaPair> kanjiKanaPairListForTranslationalInfoTransDetValue = dictionaryIndex.nameEntryListIndex.translateIndexMap.get(translationalInfoTransDetValue);
+					
+					// gdy nie ma tworzymy wpis
+					if (kanjiKanaPairListForTranslationalInfoTransDetValue == null) {
+						kanjiKanaPairListForTranslationalInfoTransDetValue = new ArrayList<NameKanjiKanaPair>();
+						
+						dictionaryIndex.nameEntryListIndex.translateIndexMap.put(translationalInfoTransDetValue, kanjiKanaPairListForTranslationalInfoTransDetValue);
+					}
+					
+					// dodajemy wpisy
+					for (NameKanjiKanaPair nameKanjiKanaPair : nameKanjiKanaPairList) {
+						if (kanjiKanaPairListForTranslationalInfoTransDetValue.contains(nameKanjiKanaPair) == false) {
+							kanjiKanaPairListForTranslationalInfoTransDetValue.add(nameKanjiKanaPair);
+						}
+					}
+				}
+			}
+		}
+		
+		// grupowanie po sekcjach dla polskiego znaczenia
+		dictionaryIndex.nameEntryListIndex.translateIndexSectionMap = new TreeMap<>(polishCollator);
+		
+		for (Map.Entry<String, List<NameKanjiKanaPair>> polishIndexMapEntry : dictionaryIndex.nameEntryListIndex.translateIndexMap.entrySet()) {
+			
+			String translationalInfoTransDetValueKey = polishIndexMapEntry.getKey();
+			String section;
+			
+			if (translationalInfoTransDetValueKey == DictionaryIndex.otherSectionName) {
+				section = DictionaryIndex.otherSectionName;
+				
+			} else {
+				if (translationalInfoTransDetValueKey.length() > 1 && isSpecialChar(translationalInfoTransDetValueKey.charAt(1)) == false &&
+						Character.getType(translationalInfoTransDetValueKey.charAt(0))  != Character.DECIMAL_DIGIT_NUMBER && // czy to cyfra
+						Character.getType(translationalInfoTransDetValueKey.charAt(1))  != Character.DECIMAL_DIGIT_NUMBER) {  // czy to cyfra
+					
+					section = translationalInfoTransDetValueKey.substring(0, 2).trim().toLowerCase();
+				} else {
+					section = translationalInfoTransDetValueKey.substring(0, 1).trim().toLowerCase();	
+				}
+			}
+						
+			// czy taka sekcja wystepuje
+			List<Map.Entry<String, List<NameKanjiKanaPair>>> entrySetListForSection = dictionaryIndex.nameEntryListIndex.translateIndexSectionMap.get(section);
+			
+			if (entrySetListForSection == null) {
+				entrySetListForSection = new ArrayList<>();
+				
+				dictionaryIndex.nameEntryListIndex.translateIndexSectionMap.put(section, entrySetListForSection);
+			}
+			
+			entrySetListForSection.add(polishIndexMapEntry);
+		}
 	}
 
 	
@@ -384,13 +603,18 @@ public class DictionaryIndexGenerator {
 		final static public String otherSectionName = "Inne";
 		
 		private EntryListIndex entryListIndex;
+		private NameEntryListIndex nameEntryListIndex;
 		
 		public EntryListIndex getEntryListIndex() {
 			return entryListIndex;
 		}
-		
+				
+		public NameEntryListIndex getNameEntryListIndex() {
+			return nameEntryListIndex;
+		}
+
 		//
-		
+
 		public static class EntryListIndex {
 			
 			// dane zrodlowe
@@ -437,6 +661,48 @@ public class DictionaryIndexGenerator {
 
 			public Map<String, List<JMdict.Entry>> getEntriesListGroupedBy() {
 				return entriesListGroupedBy;
+			}
+		}
+		
+		public static class NameEntryListIndex {
+			
+			// dane zrodlowe
+			private List<JMnedict.Entry> nameEntryList;
+			
+			// mapa ze wszystkimi unikalnymi japonskimi slowami (kana, romaji)
+			private Map<KanaRomajiKey, List<NameKanjiKanaPair>> japaneseIndexMap;
+			
+			// mapa ze wszystkimi sekcjami (to bedzie pierwszy znak kana w romaji lub otherSectionName (Inny)
+			private Map<String, List<Map.Entry<KanaRomajiKey, List<NameKanjiKanaPair>>>> japaneseIndexSectionMap;
+			
+			// mapa ze wszystkimi unikalnymi polskimi znaczenia
+			private Map<String, List<NameKanjiKanaPair>> translateIndexMap;
+			
+			// mapa ze wszystkimi sekcjami (to najczesciej beda dwa pierwsze znaki znaczenia)
+			private Map<String, List<Map.Entry<String, List<NameKanjiKanaPair>>>> translateIndexSectionMap;
+						
+			public NameEntryListIndex(List<JMnedict.Entry> nameEntryList) {
+				this.nameEntryList = nameEntryList;
+			}
+
+			public List<JMnedict.Entry> getNameEntryList() {
+				return nameEntryList;
+			}
+
+			public Map<KanaRomajiKey, List<NameKanjiKanaPair>> getJapaneseIndexMap() {
+				return japaneseIndexMap;
+			}
+
+			public Map<String, List<Map.Entry<KanaRomajiKey, List<NameKanjiKanaPair>>>> getJapaneseIndexSectionMap() {
+				return japaneseIndexSectionMap;
+			}
+
+			public Map<String, List<NameKanjiKanaPair>> getTranslateIndexMap() {
+				return translateIndexMap;
+			}
+
+			public Map<String, List<Map.Entry<String, List<NameKanjiKanaPair>>>> getTranslateIndexSectionMap() {
+				return translateIndexSectionMap;
 			}
 		}
 	}
