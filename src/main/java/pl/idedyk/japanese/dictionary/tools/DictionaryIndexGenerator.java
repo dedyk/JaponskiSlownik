@@ -297,9 +297,9 @@ public class DictionaryIndexGenerator {
 						Character.getType(polishGlossValueKey.charAt(0))  != Character.DECIMAL_DIGIT_NUMBER && // czy to cyfra
 						Character.getType(polishGlossValueKey.charAt(1))  != Character.DECIMAL_DIGIT_NUMBER) {  // czy to cyfra
 					
-					section = polishGlossValueKey.substring(0, 2).trim().toUpperCase();
+					section = polishGlossValueKey.substring(0, 2).trim().toLowerCase();
 				} else {
-					section = polishGlossValueKey.substring(0, 1).trim().toUpperCase();	
+					section = polishGlossValueKey.substring(0, 1).trim().toLowerCase();	
 				}
 			}
 						
@@ -331,9 +331,9 @@ public class DictionaryIndexGenerator {
 				groupedByKey = DictionaryIndex.otherSectionName;
 			} else {				
 				if (entry.getReadingInfoList().get(0).getKana().getRomaji().length() > 1) {
-					groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 2).trim().toUpperCase();
+					groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 2).trim().toLowerCase();
 				} else {
-					groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 1).trim().toUpperCase();	
+					groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 1).trim().toLowerCase();	
 				}
 			}
 						
