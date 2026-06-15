@@ -3,6 +3,7 @@ package pl.idedyk.japanese.dictionary.tools;
 import java.text.Collator;
 import java.text.Normalizer;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -17,6 +18,7 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2NameHelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2NameHelperCommon.NameKanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
+import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
@@ -25,6 +27,7 @@ import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoTransDet;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 
 public class DictionaryIndexGenerator {
 	
@@ -48,11 +51,17 @@ public class DictionaryIndexGenerator {
 		
 		//
 		
-		DictionaryIndex dictionaryIndex = generateDictionaryIndex(entryList, nameEntryList, null);
+		Kanji2Helper kanji2Helper = Kanji2Helper.getOrInit();
+		Kanjidic2 kanjidic2 = kanji2Helper.getPolishDictionaryKanjidic2();
+		
+		List<KanjiCharacterInfo> kanjiList = new ArrayList<>(kanjidic2.getCharacterList()); //.stream().filter(f -> f.getId() == 13113).collect(Collectors.toList()));
 		
 		//
 		
-		/*
+		DictionaryIndex dictionaryIndex = generateDictionaryIndex(entryList, nameEntryList, kanjiList);
+		
+		//
+		
 		for (java.util.Map.Entry<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> japaneseIndexMapEntry : dictionaryIndex.getEntryListIndex().getJapaneseIndexSectionMap().entrySet()) {
 			
 			String section = japaneseIndexMapEntry.getKey();
@@ -82,7 +91,6 @@ public class DictionaryIndexGenerator {
 			
 			System.out.println("-----------");
 		}
-		*/
 		
 		System.out.println("===================");
 		
@@ -115,7 +123,24 @@ public class DictionaryIndexGenerator {
 			
 			System.out.println("-----------");
 		}
+
+		System.out.println("===================");
 		
+		for (java.util.Map.Entry<String, List<Map.Entry<String, List<KanjiCharacterInfo>>>> japaneseIndexMapEntry : dictionaryIndex.getKanjiCharacterInfoListIndex().getTranslateIndexSectionMap().entrySet()) {
+			
+			String section = japaneseIndexMapEntry.getKey();
+			List<java.util.Map.Entry<String, List<KanjiCharacterInfo>>> sectionItemList = japaneseIndexMapEntry.getValue();
+			
+			System.out.println(section + " (" + sectionItemList.size() + ")");	
+			
+			for (java.util.Map.Entry<String, List<KanjiCharacterInfo>> currentSectionItem : sectionItemList) {
+				for (KanjiCharacterInfo characterInbfo : currentSectionItem.getValue()) {
+					System.out.println("\t" + characterInbfo.getId());
+				}
+			}
+			
+			System.out.println("-----------");
+		}
 	}
 	
 	public static DictionaryIndex generateDictionaryIndex(List<JMdict.Entry> entryList, List<JMnedict.Entry> nameEntryList, List<KanjiCharacterInfo> kanjiList) {
@@ -126,7 +151,7 @@ public class DictionaryIndexGenerator {
 		// tworzymy indeksy
 		generateEntryListIndex(dictionaryIndex, entryList);
 		generateNameEntryListIndex(dictionaryIndex, nameEntryList);
-		generateKanjiListIndex(dictionaryIndex, entryList);
+		generateKanjiListIndex(dictionaryIndex, kanjiList);
 		
 		//
 		
@@ -134,6 +159,10 @@ public class DictionaryIndexGenerator {
 	}
 
 	public static void generateEntryListIndex(DictionaryIndex dictionaryIndex, List<Entry> entryList) {
+		
+		if (entryList == null) {
+			return;
+		}
 		
 		// INFO: gdy cos tutaj zmieniasz zmienic rowniez w generateNameEntryListIndex
 		
@@ -379,10 +408,14 @@ public class DictionaryIndexGenerator {
 			}
 		}
 		
-		if (glossValue.startsWith("??") == true) {
+		if (glossValue.startsWith("?") == true) {
 			glossValue = DictionaryIndex.otherSectionName;
 		}
-		
+
+		if (glossValue.startsWith("%") == true) {
+			glossValue = DictionaryIndex.otherSectionName;
+		}
+
 		if (glossValue.startsWith("α") == true) {
 			glossValue = DictionaryIndex.otherSectionName;
 		}
@@ -405,6 +438,10 @@ public class DictionaryIndexGenerator {
 	}
 
 	private static void generateNameEntryListIndex(DictionaryIndex dictionaryIndex, List<JMnedict.Entry> nameEntryList) {
+		
+		if (nameEntryList == null) {
+			return;
+		}
 		
 		// INFO: gdy cos tutaj zmieniasz zmienic rowniez w generateEntryListIndex
 		
@@ -573,10 +610,90 @@ public class DictionaryIndexGenerator {
 			entrySetListForSection.add(polishIndexMapEntry);
 		}
 	}
-
 	
-	private static void generateKanjiListIndex(DictionaryIndex dictionaryIndex, List<Entry> entryList) {
-		int todo = 1; // !!!!!!!!!!!		
+	private static void generateKanjiListIndex(DictionaryIndex dictionaryIndex, List<KanjiCharacterInfo> kanjiList) {
+		
+		if (kanjiList == null) {
+			return;
+		}
+		
+		// indeks slowek
+		dictionaryIndex.kanjiCharacterInfoListIndex = new DictionaryIndex.KanjiCharacterInfoListIndex(kanjiList);		
+				
+		// czesc polska
+		
+		// sortowanie po polsku
+		Collator polishCollator = Collator.getInstance(new Locale("pl", "PL"));
+		polishCollator.setStrength(Collator.SECONDARY);
+		
+		// mapowania do generowania indeksu
+		dictionaryIndex.kanjiCharacterInfoListIndex.translateIndexMap = new TreeMap<>(polishCollator);
+				
+		// chodzimy po wszystkich slowach
+		for (KanjiCharacterInfo kanjiCharacterInfo : kanjiList) {
+			
+			// pobieramy polskie tlumaczenia
+			List<String> polishTranslateList = pl.idedyk.japanese.dictionary.api.dictionary.Utils.getPolishTranslates(kanjiCharacterInfo);
+			
+			if (polishTranslateList.size() == 0) { // jezeli nie ma polskiego znaczenia to tworzymy wirtualny
+				polishTranslateList = Arrays.asList("?");
+			}
+			
+			for (String polishTranslate : polishTranslateList) {
+				
+				// normalizacja zapisu
+				polishTranslate = normalizeGlossValue(polishTranslate);
+				
+				// indeks dla danego klucza
+				List<KanjiCharacterInfo> kanjiCharacterInfoForPolishTranslateList = dictionaryIndex.kanjiCharacterInfoListIndex.translateIndexMap.get(polishTranslate);
+				
+				// gdy nie ma tworzymy wpis
+				if (kanjiCharacterInfoForPolishTranslateList == null) {
+					kanjiCharacterInfoForPolishTranslateList = new ArrayList<KanjiCharacterInfo>();
+					
+					dictionaryIndex.kanjiCharacterInfoListIndex.translateIndexMap.put(polishTranslate, kanjiCharacterInfoForPolishTranslateList);
+				}
+				
+				// dodajemy wpis
+				if (kanjiCharacterInfoForPolishTranslateList.contains(kanjiCharacterInfo) == false) {
+					kanjiCharacterInfoForPolishTranslateList.add(kanjiCharacterInfo);
+				}
+			}
+		}
+		
+		// grupowanie po sekcjach dla polskiego znaczenia
+		dictionaryIndex.kanjiCharacterInfoListIndex.translateIndexSectionMap = new TreeMap<>(polishCollator);
+		
+		for (Map.Entry<String, List<KanjiCharacterInfo>> polishIndexMapEntry : dictionaryIndex.kanjiCharacterInfoListIndex.translateIndexMap.entrySet()) {
+			
+			String polishTranslateKey = polishIndexMapEntry.getKey();
+			String section;
+			
+			if (polishTranslateKey == DictionaryIndex.otherSectionName) {
+				section = DictionaryIndex.otherSectionName;
+				
+			} else {
+				if (polishTranslateKey.length() > 1 && isSpecialChar(polishTranslateKey.charAt(1)) == false &&
+						Character.getType(polishTranslateKey.charAt(0))  != Character.DECIMAL_DIGIT_NUMBER && // czy to cyfra
+						Character.getType(polishTranslateKey.charAt(1))  != Character.DECIMAL_DIGIT_NUMBER) {  // czy to cyfra
+					
+					section = polishTranslateKey.substring(0, 2).trim().toLowerCase();
+				} else {
+					section = polishTranslateKey.substring(0, 1).trim().toLowerCase();	
+				}
+			}
+						
+			// czy taka sekcja wystepuje
+			List<Map.Entry<String, List<KanjiCharacterInfo>>> entrySetListForSection = dictionaryIndex.kanjiCharacterInfoListIndex.translateIndexSectionMap.get(section);
+			
+			if (entrySetListForSection == null) {
+				entrySetListForSection = new ArrayList<>();
+				
+				dictionaryIndex.kanjiCharacterInfoListIndex.translateIndexSectionMap.put(section, entrySetListForSection);
+			}
+			
+			entrySetListForSection.add(polishIndexMapEntry);
+		}		
 	}
 	
 	private static boolean isSpecialChar(Character char_) {
@@ -604,6 +721,7 @@ public class DictionaryIndexGenerator {
 		
 		private EntryListIndex entryListIndex;
 		private NameEntryListIndex nameEntryListIndex;
+		private KanjiCharacterInfoListIndex kanjiCharacterInfoListIndex;
 		
 		public EntryListIndex getEntryListIndex() {
 			return entryListIndex;
@@ -613,8 +731,12 @@ public class DictionaryIndexGenerator {
 			return nameEntryListIndex;
 		}
 
-		//
+		public KanjiCharacterInfoListIndex getKanjiCharacterInfoListIndex() {
+			return kanjiCharacterInfoListIndex;
+		}
 
+		//
+		
 		public static class EntryListIndex {
 			
 			// dane zrodlowe
@@ -702,6 +824,34 @@ public class DictionaryIndexGenerator {
 			}
 
 			public Map<String, List<Map.Entry<String, List<NameKanjiKanaPair>>>> getTranslateIndexSectionMap() {
+				return translateIndexSectionMap;
+			}
+		}
+		
+		public static class KanjiCharacterInfoListIndex {
+			
+			// dane zrodlowe
+			private List<KanjiCharacterInfo> kanjiList;
+						
+			// mapa ze wszystkimi unikalnymi polskimi znaczenia
+			private Map<String, List<KanjiCharacterInfo>> translateIndexMap;
+			
+			public List<KanjiCharacterInfo> getKanjiList() {
+				return kanjiList;
+			}
+
+			// mapa ze wszystkimi sekcjami (to najczesciej beda dwa pierwsze znaki znaczenia)
+			private Map<String, List<Map.Entry<String, List<KanjiCharacterInfo>>>> translateIndexSectionMap;
+						
+			public KanjiCharacterInfoListIndex(List<KanjiCharacterInfo> kanjiList) {
+				this.kanjiList = kanjiList;
+			}
+			
+			public Map<String, List<KanjiCharacterInfo>> getTranslateIndexMap() {
+				return translateIndexMap;
+			}
+
+			public Map<String, List<Map.Entry<String, List<KanjiCharacterInfo>>>> getTranslateIndexSectionMap() {
 				return translateIndexSectionMap;
 			}
 		}
