@@ -15,7 +15,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -29,6 +28,8 @@ import pl.idedyk.japanese.dictionary.api.dto.AttributeList;
 import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
+import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator.DictionaryIndex;
+import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator.KanaRomajiKey;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
@@ -48,8 +49,6 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.Xref;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.XrefType;
 
 public class LatexDictionaryGenerator {
-	
-	final static String otherSectionName = "Inne";
 
 	public static void main(String[] args) throws Exception {
 						
@@ -68,7 +67,7 @@ public class LatexDictionaryGenerator {
 		entryList.addAll(polishJMdict.getEntryList().subList(0, 10000));
 		// entryList.addAll(polishJMdict.getEntryList().stream().filter(f -> f.getInfoList().size() > 0).collect(Collectors.toList()));
 		// entryList.addAll(polishJMdict.getEntryList().stream().filter(f -> f.getEntryId().intValue() == 2756760).collect(Collectors.toList()));
-		
+				
 		// wygenerowanie plikow
 		generateLatexDictonaryEntries(entryList, new File("pdf_dictionary"), false);
 				
@@ -142,10 +141,13 @@ public class LatexDictionaryGenerator {
 				
 				return false;
 			}).collect(Collectors.toList());
-		}		
+		}
+		
+		// wygenerowanie indeksu
+		DictionaryIndex dictionaryIndex = DictionaryIndexGenerator.generateDictionaryIndex(entryList, null, null);
 		
 		// generowanie indeksu japonskiego
-		generateJapaneseIndex(polishJapaneseLatexContent, entryList);
+		generateJapaneseIndex(polishJapaneseLatexContent, dictionaryIndex);
 		
 		// generowanie indeksu polskiego
 		generatePolishIndex(polishJapaneseLatexContent, entryList);
@@ -172,91 +174,22 @@ public class LatexDictionaryGenerator {
 		return polishJapaneseLatexContent;
 	}
 
-	private static void generateJapaneseIndex(PolishJapaneseLatexContent polishJapaneseLatexContent, List<JMdict.Entry> entryList) {
+	private static void generateJapaneseIndex(PolishJapaneseLatexContent polishJapaneseLatexContent, DictionaryIndex dictionaryIndex) {
 				
-		// mapowania do generowania indeksu
-		Map<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexMap = new TreeMap<>();
-				
-		// chodzimy po wszystkich slowach
-		for (pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry entry : entryList) {
-			
-			// pobieramy tylko widoczne czytania
-			List<KanjiKanaPair> kanjiKanaPairList = Dictionary2HelperCommon.getKanjiKanaPairListStatic(entry, true);
-			
-			// chodzimy po wszystkich czytania i dodajemy do mapy
-			for (KanjiKanaPair kanjiKanaPair : kanjiKanaPairList) {
-				String kana = kanjiKanaPair.getKana();
-				String romaji = kanjiKanaPair.getRomaji();
-				
-				if (romaji == null || romaji.length() == 0 || romaji.equals("-") == true) {
-					kana = otherSectionName;
-					romaji = otherSectionName;
-				}
-				
-				// generowanie klucza do mapy
-				KanaRomajiKey kanaRomajiKey = new KanaRomajiKey(kana, romaji);
-				
-				// indeks dla danego klucza
-				List<KanjiKanaPair> kanjiKanaPairListForKanaRomajiKey = japaneseIndexMap.get(kanaRomajiKey);
-				
-				// gdy nie ma tworzymy wpis
-				if (kanjiKanaPairListForKanaRomajiKey == null) {
-					kanjiKanaPairListForKanaRomajiKey = new ArrayList<KanjiKanaPair>();
-					
-					japaneseIndexMap.put(kanaRomajiKey, kanjiKanaPairListForKanaRomajiKey);
-				}
-				
-				// dodajemy wpis
-				if (kanjiKanaPairListForKanaRomajiKey.contains(kanjiKanaPair) == false) {
-					kanjiKanaPairListForKanaRomajiKey.add(kanjiKanaPair);
-				}
-			}			
-		}
-		
-		// grupowanie po sekcjach
-		Map<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> indexSection = new TreeMap<>();
-		
-		for (Map.Entry<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexMapEntry : japaneseIndexMap.entrySet()) {
-			
-			KanaRomajiKey kanaRomajiKey = japaneseIndexMapEntry.getKey();
-
-			String section = null;
-			
-			if (kanaRomajiKey.kana == otherSectionName || kanaRomajiKey.romaji == otherSectionName) {
-				section = otherSectionName;
-				
-			} else {
-				if (kanaRomajiKey.romaji.length() > 1) {
-					section = kanaRomajiKey.romaji.substring(0, 2).trim().toUpperCase();
-				} else {
-					section = kanaRomajiKey.romaji.substring(0, 1).trim().toUpperCase();	
-				}
-			}
-			
-			// czy taka sekcja wystepuje
-			List<Entry<KanaRomajiKey, List<KanjiKanaPair>>> entrySetListForSection = indexSection.get(section);
-			
-			if (entrySetListForSection == null) {
-				entrySetListForSection = new ArrayList<>();
-				
-				indexSection.put(section, entrySetListForSection);
-			}
-			
-			entrySetListForSection.add(japaneseIndexMapEntry);
-		}
-		
 		// generowanie zawartosci dokumentu		
 		StringBuffer latexContent = new StringBuffer();
+				
+		latexContent.append("\\chapter{Indeks słów japońskich}\n");	
 		
-		latexContent.append("\\chapter{Indeks słów japońskich}\n");		
+		//
 		
-		for (Entry<String, List<Entry<KanaRomajiKey, List<KanjiKanaPair>>>> indexSectionEntrySet : indexSection.entrySet()) {
+		for (Entry<String, List<Entry<KanaRomajiKey, List<KanjiKanaPair>>>> indexSectionEntrySet : dictionaryIndex.getEntryListIndex().getJapaneseIndexSectionMap().entrySet()) {
 			
 			String section = indexSectionEntrySet.getKey();
 			List<Entry<KanaRomajiKey, List<KanjiKanaPair>>> indexSectionList = indexSectionEntrySet.getValue();
 			
 			// na razie nie generujemy sekcji dla innych
-			if (section == otherSectionName) {
+			if (section == DictionaryIndex.EntryListIndex.otherSectionName) {
 				continue;
 			}
 			
@@ -265,7 +198,7 @@ public class LatexDictionaryGenerator {
 		}
 		
 		// generowanie dla sekcji inne
-		generateJapaneseIndexSection(latexContent, otherSectionName, indexSection.get(otherSectionName));
+		generateJapaneseIndexSection(latexContent, DictionaryIndex.EntryListIndex.otherSectionName, dictionaryIndex.getEntryListIndex().getJapaneseIndexSectionMap().get(DictionaryIndex.EntryListIndex.otherSectionName));
 		
 		polishJapaneseLatexContent.japaneseIndex = latexContent.toString();
 	}
@@ -337,23 +270,23 @@ public class LatexDictionaryGenerator {
 					}
 					
 					if (polishGlossValue.startsWith("??") == true) {
-						polishGlossValue = otherSectionName;
+						polishGlossValue = DictionaryIndex.EntryListIndex.otherSectionName;
 					}
 					
 					if (polishGlossValue.startsWith("α") == true) {
-						polishGlossValue = otherSectionName;
+						polishGlossValue = DictionaryIndex.EntryListIndex.otherSectionName;
 					}
 
 					if (polishGlossValue.startsWith("β") == true) {
-						polishGlossValue = otherSectionName;
+						polishGlossValue = DictionaryIndex.EntryListIndex.otherSectionName;
 					}
 					
 					if (polishGlossValue.startsWith("ß") == true) {
-						polishGlossValue = otherSectionName;
+						polishGlossValue = DictionaryIndex.EntryListIndex.otherSectionName;
 					}
 					
 					if (polishGlossValue.length() == 0) {
-						polishGlossValue = otherSectionName;
+						polishGlossValue = DictionaryIndex.EntryListIndex.otherSectionName;
 					}
 					
 					polishGlossValue = polishGlossValue.trim();
@@ -386,8 +319,8 @@ public class LatexDictionaryGenerator {
 			String polishGlossValueKey = polishIndexMapEntry.getKey();
 			String section;
 			
-			if (polishGlossValueKey == otherSectionName) {
-				section = otherSectionName;
+			if (polishGlossValueKey == DictionaryIndex.EntryListIndex.otherSectionName) {
+				section = DictionaryIndex.EntryListIndex.otherSectionName;
 				
 			} else {
 				if (polishGlossValueKey.length() > 1 && isSpecialChar(polishGlossValueKey.charAt(1)) == false &&
@@ -423,7 +356,7 @@ public class LatexDictionaryGenerator {
 			List<Entry<String, List<KanjiKanaPair>>> indexSectionList = indexSectionEntrySet.getValue();
 						
 			// na razie nie generujemy sekcji dla innych
-			if (section == otherSectionName) {
+			if (section == DictionaryIndex.EntryListIndex.otherSectionName) {
 				continue;
 			}
 			
@@ -432,7 +365,7 @@ public class LatexDictionaryGenerator {
 		}
 		
 		// generowanie dla sekcji inne
-		generatePolishIndexSection(latexContent, otherSectionName, indexSection.get(otherSectionName));
+		generatePolishIndexSection(latexContent, DictionaryIndex.EntryListIndex.otherSectionName, indexSection.get(DictionaryIndex.EntryListIndex.otherSectionName));
 				
 		polishJapaneseLatexContent.polishIndex = latexContent.toString();		
 	}
@@ -442,7 +375,7 @@ public class LatexDictionaryGenerator {
 			return;
 		}
 		
-		if (section != otherSectionName) {
+		if (section != DictionaryIndex.EntryListIndex.otherSectionName) {
 			latexContent.append("\\section[" + section + "]{" + section + "}\n");
 		} else {
 			latexContent.append("\\section[Inne]{Inne}\n");
@@ -458,9 +391,9 @@ public class LatexDictionaryGenerator {
 			latexContent.append("\\noindent");			
 			latexContent.append("\\footnotesize\n");
 			
-			if (section != otherSectionName) {
-				latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().romaji + "}, " + currentSectionIndexEntry.getKey().kana);
-				latexContent.append(markBoth(currentSectionIndexEntry.getKey().romaji + ", " + currentSectionIndexEntry.getKey().kana)).append(" ");
+			if (section != DictionaryIndex.EntryListIndex.otherSectionName) {
+				latexContent.append("\\textbf{" + currentSectionIndexEntry.getKey().getRomaji() + "}, " + currentSectionIndexEntry.getKey().getKana());
+				latexContent.append(markBoth(currentSectionIndexEntry.getKey().getRomaji() + ", " + currentSectionIndexEntry.getKey().getKana())).append(" ");
 			}
 			
 			latexContent.append("\n\n");
@@ -492,7 +425,7 @@ public class LatexDictionaryGenerator {
 			return;
 		}
 		
-		if (section != otherSectionName) {
+		if (section != DictionaryIndex.EntryListIndex.otherSectionName) {
 			latexContent.append("\\section[" + section + "]{" + section + "}\n");
 		} else {
 			latexContent.append("\\section[Inne]{Inne}\n");
@@ -565,7 +498,7 @@ public class LatexDictionaryGenerator {
 			if (	entry.getReadingInfoList().get(0).getKana().getRomaji() == null ||
 					entry.getReadingInfoList().get(0).getKana().getRomaji().equals("") == true ||
 					entry.getReadingInfoList().get(0).getKana().getRomaji().startsWith("-") == true) {
-				groupedByKey = otherSectionName;
+				groupedByKey = DictionaryIndex.EntryListIndex.otherSectionName;
 			} else {				
 				if (entry.getReadingInfoList().get(0).getKana().getRomaji().length() > 1) {
 					groupedByKey = entry.getReadingInfoList().get(0).getKana().getRomaji().substring(0, 2).trim().toUpperCase();
@@ -611,7 +544,7 @@ public class LatexDictionaryGenerator {
 			String sectionName = groupedByKeyEntriesListEntry.getKey(); 
 
 			// na razie nie generujemy sekcji dla innych
-			if (sectionName == otherSectionName) {
+			if (sectionName == DictionaryIndex.EntryListIndex.otherSectionName) {
 				continue;
 			}
 			
@@ -620,7 +553,7 @@ public class LatexDictionaryGenerator {
 		}
 		
 		// i na koniec jeszcze sekcja inne
-		generateJMDictEntriesSection(latexContent, otherSectionName, entriesListGroupedBy.get(otherSectionName));
+		generateJMDictEntriesSection(latexContent, DictionaryIndex.EntryListIndex.otherSectionName, entriesListGroupedBy.get(DictionaryIndex.EntryListIndex.otherSectionName));
 		
 		latexContent.append("\\end{spacing}\n");
 				
@@ -633,7 +566,7 @@ public class LatexDictionaryGenerator {
 			return;
 		}
 		
-		if (sectionName == otherSectionName) {
+		if (sectionName == DictionaryIndex.EntryListIndex.otherSectionName) {
 			latexContent.append("\\section[Inne]{Inne}\n");	
 		} else {
 			latexContent.append("\\section{" + sectionName + "}\n");
@@ -1004,7 +937,7 @@ public class LatexDictionaryGenerator {
 				}
 				
 			} else {
-				sectionName = otherSectionName;
+				sectionName = DictionaryIndex.EntryListIndex.otherSectionName;
 			}
 
 			/*
@@ -1016,7 +949,7 @@ public class LatexDictionaryGenerator {
 			*/
 			
 			if (sectionName.matches("^[A-Z]+$") == false) {
-				sectionName = otherSectionName;
+				sectionName = DictionaryIndex.EntryListIndex.otherSectionName;
 			}			
 			
 			List<PolishJapaneseEntry> section = sectionMap.get(sectionName);
@@ -1040,7 +973,7 @@ public class LatexDictionaryGenerator {
 			Entry<String, List<PolishJapaneseEntry>> sectionEntry = sectionMapIterator.next();
 			
 			// sekcja inne na koncu
-			if (sectionEntry.getKey() == otherSectionName) {
+			if (sectionEntry.getKey() == DictionaryIndex.EntryListIndex.otherSectionName) {
 				
 				otherEntry = sectionEntry;
 				
@@ -1590,56 +1523,4 @@ public class LatexDictionaryGenerator {
 		private String polishIndex;		
 		private String jmdictEntries;		
 	}
-	
-	// klasa pomocnicza
-	private static class KanaRomajiKey implements Comparable<KanaRomajiKey> {
-		private String kana;
-		private String romaji;
-		
-		public KanaRomajiKey(String kana, String romaji) {
-			this.kana = kana;
-			this.romaji = romaji;
-		}
-
-		@Override
-		public int compareTo(KanaRomajiKey o2) {
-			String o1Kana = kana != null ? kana : "<null>";
-			String o1Romaji = romaji != null ? romaji : "<null>";
-
-			String o2Kana = o2.kana != null ? o2.kana : "<null>";
-			String o2Romaji = o2.romaji != null ? o2.romaji : "<null>";
-
-			int result = o1Romaji.compareTo(o2Romaji);
-						
-			if (result != 0) {
-				return result;
-			}
-			
-			result = o1Kana.compareTo(o2Kana);
-			
-			return result;
-		}
-
-		@Override
-		public int hashCode() {
-			return Objects.hash(kana, romaji);
-		}
-
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			
-			if (obj == null)
-				return false;
-			
-			if (getClass() != obj.getClass())
-				return false;
-			
-			KanaRomajiKey other = (KanaRomajiKey) obj;
-			
-			return Objects.equals(kana, other.kana) && Objects.equals(romaji, other.romaji);
-		}
-	}
-
 }
