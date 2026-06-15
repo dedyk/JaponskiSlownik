@@ -192,7 +192,7 @@ public class LatexDictionaryGenerator {
 			if (section == DictionaryIndex.EntryListIndex.otherSectionName) {
 				continue;
 			}
-			
+						
 			// generowanie sekcji
 			generateJapaneseIndexSection(latexContent, section, indexSectionList);
 		}

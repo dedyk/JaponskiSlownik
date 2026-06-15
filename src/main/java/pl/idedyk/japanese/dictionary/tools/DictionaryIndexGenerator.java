@@ -6,6 +6,8 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.TreeMap;
 
+import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
+import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
@@ -62,6 +64,10 @@ public class DictionaryIndexGenerator {
 	}
 
 	public static void generateEntryListIndex(DictionaryIndex dictionaryIndex, List<Entry> entryList) {
+		
+		KanaHelper kanaHelper = new KanaHelper();
+		Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache(true);
+		
 		// indeks slowek
 		dictionaryIndex.entryListIndex = new DictionaryIndex.EntryListIndex(entryList);		
 		
@@ -117,11 +123,14 @@ public class DictionaryIndexGenerator {
 				section = DictionaryIndex.EntryListIndex.otherSectionName;
 				
 			} else {
-				if (kanaRomajiKey.romaji.length() > 1) {
-					section = kanaRomajiKey.romaji.substring(0, 2).trim().toUpperCase();
+				KanaEntry kanaEntry = kanaCache.get(kanaRomajiKey.kana.substring(0, 1));
+				
+				if (kanaEntry == null) {
+					section = DictionaryIndex.EntryListIndex.otherSectionName;
+					
 				} else {
-					section = kanaRomajiKey.romaji.substring(0, 1).trim().toUpperCase();	
-				}
+					section = kanaEntry.getKana();	
+				}				
 			}
 			
 			// czy taka sekcja wystepuje
@@ -167,7 +176,7 @@ public class DictionaryIndexGenerator {
 			// mapa ze wszystkimi unikalnymi japonskimi slowami (kana, romaji)
 			private Map<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexMap = new TreeMap<>();
 			
-			// mapa ze wszystkimi sekcjami (najczesciej sa dwa dwa pierwsze znaki japonskiego czytania
+			// mapa ze wszystkimi sekcjami (to bedzie pierwszy znak kana w romaji lub otherSectionName (Inny)
 			private Map<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> japaneseIndexSectionMap;
 			
 			public EntryListIndex(List<Entry> entryList) {
