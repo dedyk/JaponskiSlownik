@@ -27,6 +27,7 @@ import org.apache.commons.collections4.ListUtils;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator.DictionaryIndex.EntryListIndex;
+import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator.DictionaryIndex.KanjiCharacterInfoListIndex;
 import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator.DictionaryIndex.KanjiKanaPairWrapper;
 import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator.DictionaryIndex.NameEntryListIndex;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
@@ -52,6 +53,8 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 
 public class DictionaryIndexGenerator {
+	
+	private static final int MAX_SECTION_SIZE = 1000;
 	
 	public static void main(String[] args) throws Exception {
 				
@@ -767,6 +770,18 @@ public class DictionaryIndexGenerator {
 					(s) -> dictionaryIndexXml.getNameEntryIndex().getJapaneseIndexSectionIndex().add(s)); 			
 		}
 		
+		// przetworzenie kanjiCharacterInfoListIndex
+		KanjiCharacterInfoListIndex kanjiCharacterInfoListIndex = dictionaryIndex.getKanjiCharacterInfoListIndex();
+		
+		if (kanjiCharacterInfoListIndex != null) {
+			dictionaryIndexXml.setKanjiCharacterInfoListIndex(new EntryIndex());
+
+			// indeks polskich slowek
+			createIndexSectionMapForKanji(outputDirectory, kanjiCharacterInfoListIndex.getTranslateIndexSectionMap(), "kanjiCharacterInfoListIndex", "polishIndexSectionIndex",
+					(s) -> dictionaryIndexXml.getKanjiCharacterInfoListIndex().getPolishIndexSectionIndex().add(s)); 			
+		}
+		
+		
 		// zapis ogolnego spisu
 		File dictionaryIndexFile = new File(outputDirectory, "dictionaryindex.xml");
 		
@@ -840,7 +855,76 @@ public class DictionaryIndexGenerator {
 				// zapis do pliku xml
 				// ustalenie nazwy pliku
 				File sectionIndexFile = new File(outputDirectory, mainIndexName + "_" + sectionIndexName + "_" + 
-						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".json.gz");
+						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".xml.gz");
+				
+				JAXBContext jaxbContext = JAXBContext.newInstance(SectionIndex.class);              
+				
+				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+				jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+				
+				GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new FileOutputStream(sectionIndexFile));				
+				jaxbMarshaller.marshal(sectionIndex, gzipOutputStream);
+				gzipOutputStream.close();
+				
+				// jeszcze dodanie do spisu
+				SectionIndexMetadata sectionIndexMetadata = new SectionIndexMetadata();
+				
+				sectionIndexMetadata.setSectionName(sectionIndex.getSectionName());
+				sectionIndexMetadata.setPartNo(sectionIndex.getPartNo());
+				sectionIndexMetadata.setFileName(sectionIndexFile.getName());					
+				
+				sectionIndexMetadataAdder.accept(sectionIndexMetadata);
+			}
+		}		
+	}
+	
+	private static void createIndexSectionMapForKanji(File outputDirectory, 
+			Map<String, List<Map.Entry<String, List<KanjiCharacterInfo>>>> sectionMap,
+			String mainIndexName, String sectionIndexName,
+			Consumer<SectionIndexMetadata> sectionIndexMetadataAdder) throws JAXBException, FileNotFoundException, IOException {
+				
+		Set<java.util.Map.Entry<String, List<java.util.Map.Entry<String, List<KanjiCharacterInfo>>>>> sectionMapEntrySet = sectionMap.entrySet();
+		
+		for (Map.Entry<String, List<Map.Entry<String, List<KanjiCharacterInfo>>>> sectionMapEntry : sectionMapEntrySet) {
+			
+			SectionIndex sectionIndex = new SectionIndex();
+			
+			String sectionName = sectionMapEntry.getKey();
+			List<Map.Entry<String, List<KanjiCharacterInfo>>> sectionMapEntryList = sectionMapEntry.getValue();
+			
+			// podzielenie listy na mniejsze kawalki
+			List<List<java.util.Map.Entry<String, List<KanjiCharacterInfo>>>> sectionMapEntryListPartitionList = ListUtils.partition(sectionMapEntryList, MAX_SECTION_SIZE);
+			
+			for (int partitionNo = 0; partitionNo < sectionMapEntryListPartitionList.size(); partitionNo++) {
+				
+				// nazwa sekcji
+				sectionIndex.setSectionName(sectionName);
+				sectionIndex.setPartNo(partitionNo + 1);
+				
+				// zawartosc sekcji				
+				for (Map.Entry<String, List<KanjiCharacterInfo>> sectionMapEntryListEntry : sectionMapEntryList) {
+					
+					// utworzenie sekcji, ktora zapisujemy do pliku
+					SectionEntry sectionEntry = new SectionEntry();
+										
+					sectionEntry.setPolishWord(sectionMapEntryListEntry.getKey());
+										
+					for (KanjiCharacterInfo kanjiCharacterInfo : sectionMapEntryListEntry.getValue()) {
+						SectionEntryIndexEntry sectionEntryIndexEntry = new SectionEntryIndexEntry();
+												
+						sectionEntryIndexEntry.setKanji(kanjiCharacterInfo.getKanji());
+						sectionEntryIndexEntry.setEntryId(kanjiCharacterInfo.getId());
+						
+						sectionEntry.getEntries().add(sectionEntryIndexEntry);
+					}
+					
+					sectionIndex.getSectionEntry().add(sectionEntry);
+				}
+				
+				// zapis do pliku xml
+				// ustalenie nazwy pliku
+				File sectionIndexFile = new File(outputDirectory, mainIndexName + "_" + sectionIndexName + "_" + 
+						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".xml.gz");
 				
 				JAXBContext jaxbContext = JAXBContext.newInstance(SectionIndex.class);              
 				
