@@ -26,7 +26,6 @@ import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.JapaneseIndexSectionIndex;
-import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.NameEntryIndex;
 import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.SectionEntryIndex;
 import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.SectionIndex;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
@@ -49,7 +48,7 @@ public class DictionaryIndexGenerator {
 		JMdict polishJMdict = dictionary2Helper.getPolishJMdict();
 		
 		List<JMdict.Entry> entryList = new ArrayList<>();		
-		entryList.addAll(polishJMdict.getEntryList().subList(0, 10000));
+		entryList.addAll(polishJMdict.getEntryList()); //.subList(0, 10000));
 		
 		//
 		
@@ -154,7 +153,7 @@ public class DictionaryIndexGenerator {
 		
 		//
 		
-		DictionaryIndexGenerator.saveAsDictionaryIndexConfigXml(dictionaryIndex, new File("/tmp/a/dictionaryindex.xml"));
+		DictionaryIndexGenerator.saveAsDictionaryIndexConfigXml(dictionaryIndex, new File("/tmp/a/index"));
 	}
 	
 	public static DictionaryIndex generateDictionaryIndex(List<JMdict.Entry> entryList, List<JMnedict.Entry> nameEntryList, List<KanjiCharacterInfo> kanjiList) {
@@ -728,18 +727,12 @@ public class DictionaryIndexGenerator {
 		}
 	}
 	
-	public static void saveAsDictionaryIndexConfigXml(DictionaryIndex dictionaryIndex, File file) throws Exception {
-		
-		// utworzenie indeksu w postaci pliku xml
-		pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex dictionaryIndexXml = new pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex();
-		
+	public static void saveAsDictionaryIndexConfigXml(DictionaryIndex dictionaryIndex, File outputDirectory) throws Exception {
+				
 		// przetworzenie entryListIndex
 		EntryListIndex entryListIndex = dictionaryIndex.getEntryListIndex();
 		
-		if (entryListIndex != null) {
-			NameEntryIndex nameEntryIndex = new NameEntryIndex();
-			dictionaryIndexXml.setNameEntryIndex(nameEntryIndex);			
-						
+		if (entryListIndex != null) {						
 			Set<Map.Entry<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>>> japaneseIndexSectionMapEntrySet = entryListIndex.getJapaneseIndexSectionMap().entrySet();
 			
 			for (Map.Entry<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> japaneseIndexSectionMapEntry : japaneseIndexSectionMapEntrySet) {
@@ -754,6 +747,7 @@ public class DictionaryIndexGenerator {
 				
 				for (Map.Entry<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexSectionMapEntryListEntry : japaneseIndexSectionMapEntryList) {
 					
+					// utworzenie sekcji, ktora zapisujemy do pliku
 					SectionIndex sectionIndex = new SectionIndex();
 					
 					sectionIndex.setKana(japaneseIndexSectionMapEntryListEntry.getKey().getKana());
@@ -773,19 +767,18 @@ public class DictionaryIndexGenerator {
 					japaneseIndexSectionIndex.getSectionIndex().add(sectionIndex);
 				}
 				
+				// zapis do pliku xml
+				// ustalenie nazwy pliku
+				File JapaneseIndexSectionIndexFile = new File(outputDirectory, "nameEntryIndex_japaneseIndexSectionIndex_" + japaneseIndexSectionIndex.getSectionName() + ".xml");
 				
-				// dodanie sekcji
-				nameEntryIndex.getJapaneseIndexSectionIndex().add(japaneseIndexSectionIndex);
+				JAXBContext jaxbContext = JAXBContext.newInstance(JapaneseIndexSectionIndex.class);              
+				
+				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+				jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+				
+				jaxbMarshaller.marshal(japaneseIndexSectionIndex, JapaneseIndexSectionIndexFile);
 			}			
 		}		
-		
-		// zapis do xml-a		
-		JAXBContext jaxbContext = JAXBContext.newInstance(pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex.class);              
-				
-		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-		
-		jaxbMarshaller.marshal(dictionaryIndexXml, file);
 	}
 
 	//
