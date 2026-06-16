@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Set;
 import java.util.TreeMap;
 
 import javax.xml.bind.JAXBContext;
@@ -16,6 +17,7 @@ import javax.xml.bind.Marshaller;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
+import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator.DictionaryIndex.EntryListIndex;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2NameHelperCommon;
@@ -23,6 +25,10 @@ import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2NameHelperCommon.Nam
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
+import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.JapaneseIndexSectionIndex;
+import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.NameEntryIndex;
+import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.SectionEntryIndex;
+import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.SectionIndex;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
@@ -727,8 +733,51 @@ public class DictionaryIndexGenerator {
 		// utworzenie indeksu w postaci pliku xml
 		pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex dictionaryIndexXml = new pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex();
 		
-		int fixme = 1; // przekonwertowanie
+		// przetworzenie entryListIndex
+		EntryListIndex entryListIndex = dictionaryIndex.getEntryListIndex();
 		
+		if (entryListIndex != null) {
+			NameEntryIndex nameEntryIndex = new NameEntryIndex();
+			dictionaryIndexXml.setNameEntryIndex(nameEntryIndex);			
+						
+			Set<Map.Entry<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>>> japaneseIndexSectionMapEntrySet = entryListIndex.getJapaneseIndexSectionMap().entrySet();
+			
+			for (Map.Entry<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> japaneseIndexSectionMapEntry : japaneseIndexSectionMapEntrySet) {
+				
+				JapaneseIndexSectionIndex japaneseIndexSectionIndex = new JapaneseIndexSectionIndex();
+				
+				// nazwa sekcji
+				japaneseIndexSectionIndex.setSectionName(japaneseIndexSectionMapEntry.getKey());
+				
+				// zawartosc sekcji
+				List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>> japaneseIndexSectionMapEntryList = japaneseIndexSectionMapEntry.getValue();
+				
+				for (Map.Entry<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexSectionMapEntryListEntry : japaneseIndexSectionMapEntryList) {
+					
+					SectionIndex sectionIndex = new SectionIndex();
+					
+					sectionIndex.setKana(japaneseIndexSectionMapEntryListEntry.getKey().getKana());
+					sectionIndex.setRomaji(japaneseIndexSectionMapEntryListEntry.getKey().getRomaji());					
+					
+					// poszczegolne slowka sekcji
+					for (KanjiKanaPair kanjiKanaPair : japaneseIndexSectionMapEntryListEntry.getValue()) {
+						
+						SectionEntryIndex sectionIndexEntry = new SectionEntryIndex();
+												
+						sectionIndexEntry.setKanji(kanjiKanaPair.getKanji());
+						sectionIndexEntry.setEntryId(kanjiKanaPair.getEntry().getEntryId());
+						
+						sectionIndex.getEntry().add(sectionIndexEntry);
+					}
+					
+					japaneseIndexSectionIndex.getSectionIndex().add(sectionIndex);
+				}
+				
+				
+				// dodanie sekcji
+				nameEntryIndex.getJapaneseIndexSectionIndex().add(japaneseIndexSectionIndex);
+			}			
+		}		
 		
 		// zapis do xml-a		
 		JAXBContext jaxbContext = JAXBContext.newInstance(pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex.class);              
