@@ -910,6 +910,10 @@ public class DictionaryIndexGenerator {
 			public String getKana() {
 				return kanjiKanaPair != null ? kanjiKanaPair.getKana() : nameKanjiKanaPair.getKana();
 			}
+			
+			public String getRomaji() {
+				return kanjiKanaPair != null ? kanjiKanaPair.getRomaji() : nameKanjiKanaPair.getRomaji();
+			}
 		}
 		
 		public static class EntryListIndex {
