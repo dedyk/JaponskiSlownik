@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary.tools;
 
+import java.io.File;
 import java.text.Collator;
 import java.text.Normalizer;
 import java.util.ArrayList;
@@ -9,6 +10,9 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.TreeMap;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
@@ -141,6 +145,10 @@ public class DictionaryIndexGenerator {
 			
 			System.out.println("-----------");
 		}
+		
+		//
+		
+		DictionaryIndexGenerator.saveAsDictionaryIndexConfigXml(dictionaryIndex, new File("/tmp/a/dictionaryindex.xml"));
 	}
 	
 	public static DictionaryIndex generateDictionaryIndex(List<JMdict.Entry> entryList, List<JMnedict.Entry> nameEntryList, List<KanjiCharacterInfo> kanjiList) {
@@ -712,6 +720,23 @@ public class DictionaryIndexGenerator {
 		} else {
 			return false;
 		}
+	}
+	
+	public static void saveAsDictionaryIndexConfigXml(DictionaryIndex dictionaryIndex, File file) throws Exception {
+		
+		// utworzenie indeksu w postaci pliku xml
+		pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex dictionaryIndexXml = new pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex();
+		
+		int fixme = 1; // przekonwertowanie
+		
+		
+		// zapis do xml-a		
+		JAXBContext jaxbContext = JAXBContext.newInstance(pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex.class);              
+				
+		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		
+		jaxbMarshaller.marshal(dictionaryIndexXml, file);
 	}
 
 	//
