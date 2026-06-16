@@ -28,9 +28,10 @@ import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.JapaneseIndexSectionIndex;
+import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.JapaneseSectionIndex;
 import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.NameEntryIndex;
 import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.SectionEntryIndex;
-import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.SectionIndex;
+import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.SectionIndexMetadata;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
@@ -767,10 +768,10 @@ public class DictionaryIndexGenerator {
 					for (Map.Entry<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexSectionMapEntryListEntry : japaneseIndexSectionMapEntryList) {
 						
 						// utworzenie sekcji, ktora zapisujemy do pliku
-						SectionIndex sectionIndex = new SectionIndex();
+						JapaneseSectionIndex japaneseSectionIndex = new JapaneseSectionIndex();
 						
-						sectionIndex.setKana(japaneseIndexSectionMapEntryListEntry.getKey().getKana());
-						sectionIndex.setRomaji(japaneseIndexSectionMapEntryListEntry.getKey().getRomaji());					
+						japaneseSectionIndex.setKana(japaneseIndexSectionMapEntryListEntry.getKey().getKana());
+						japaneseSectionIndex.setRomaji(japaneseIndexSectionMapEntryListEntry.getKey().getRomaji());					
 						
 						// poszczegolne slowka sekcji
 						for (KanjiKanaPair kanjiKanaPair : japaneseIndexSectionMapEntryListEntry.getValue()) {
@@ -780,10 +781,10 @@ public class DictionaryIndexGenerator {
 							sectionIndexEntry.setKanji(kanjiKanaPair.getKanji());
 							sectionIndexEntry.setEntryId(kanjiKanaPair.getEntry().getEntryId());
 							
-							sectionIndex.getEntry().add(sectionIndexEntry);
+							japaneseSectionIndex.getEntry().add(sectionIndexEntry);
 						}
 						
-						japaneseIndexSectionIndex.getSectionIndex().add(sectionIndex);
+						japaneseIndexSectionIndex.getSectionIndex().add(japaneseSectionIndex);
 					}
 					
 					// zapis do pliku xml
@@ -799,7 +800,7 @@ public class DictionaryIndexGenerator {
 					jaxbMarshaller.marshal(japaneseIndexSectionIndex, japaneseIndexSectionIndexFile);
 					
 					// jeszcze dodanie do spisu
-					NameEntryIndex.JapaneseIndexSectionIndex dictionaryindexJapaneseIndexSectionIndex = new NameEntryIndex.JapaneseIndexSectionIndex();
+					SectionIndexMetadata dictionaryindexJapaneseIndexSectionIndex = new SectionIndexMetadata();
 					
 					dictionaryindexJapaneseIndexSectionIndex.setSectionName(japaneseIndexSectionIndex.getSectionName());
 					dictionaryindexJapaneseIndexSectionIndex.setPartNo(japaneseIndexSectionIndex.getPartNo());
