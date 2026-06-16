@@ -15,6 +15,8 @@ import java.util.TreeMap;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 
+import org.apache.commons.collections4.ListUtils;
+
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator.DictionaryIndex.EntryListIndex;
@@ -26,6 +28,7 @@ import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2NameHelper;
 import pl.idedyk.japanese.dictionary2.common.Kanji2Helper;
 import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.JapaneseIndexSectionIndex;
+import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.NameEntryIndex;
 import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.SectionEntryIndex;
 import pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.SectionIndex;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
@@ -728,57 +731,94 @@ public class DictionaryIndexGenerator {
 	}
 	
 	public static void saveAsDictionaryIndexConfigXml(DictionaryIndex dictionaryIndex, File outputDirectory) throws Exception {
-				
+		
+		final int MAX_SECTION_SIZE = 1000;
+		
+		pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex dictionaryIndexXml = new pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex();
+		
 		// przetworzenie entryListIndex
 		EntryListIndex entryListIndex = dictionaryIndex.getEntryListIndex();
 		
-		if (entryListIndex != null) {						
+		if (entryListIndex != null) {
+			
+			dictionaryIndexXml.setNameEntryIndex(new NameEntryIndex());
+			
+			//
+			
 			Set<Map.Entry<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>>> japaneseIndexSectionMapEntrySet = entryListIndex.getJapaneseIndexSectionMap().entrySet();
 			
 			for (Map.Entry<String, List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> japaneseIndexSectionMapEntry : japaneseIndexSectionMapEntrySet) {
 				
 				JapaneseIndexSectionIndex japaneseIndexSectionIndex = new JapaneseIndexSectionIndex();
 				
-				// nazwa sekcji
-				japaneseIndexSectionIndex.setSectionName(japaneseIndexSectionMapEntry.getKey());
-				
-				// zawartosc sekcji
+				String sectionName = japaneseIndexSectionMapEntry.getKey();
 				List<Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>> japaneseIndexSectionMapEntryList = japaneseIndexSectionMapEntry.getValue();
 				
-				for (Map.Entry<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexSectionMapEntryListEntry : japaneseIndexSectionMapEntryList) {
+				// podzielenie listy na mniejsze kawalki
+				List<List<java.util.Map.Entry<KanaRomajiKey, List<KanjiKanaPair>>>> japaneseIndexSectionMapEntryListPartitionList = ListUtils.partition(japaneseIndexSectionMapEntryList, MAX_SECTION_SIZE);
+				
+				for (int partitionNo = 0; partitionNo < japaneseIndexSectionMapEntryListPartitionList.size(); partitionNo++) {
 					
-					// utworzenie sekcji, ktora zapisujemy do pliku
-					SectionIndex sectionIndex = new SectionIndex();
+					// nazwa sekcji
+					japaneseIndexSectionIndex.setSectionName(sectionName);
+					japaneseIndexSectionIndex.setPartNo(partitionNo + 1);
 					
-					sectionIndex.setKana(japaneseIndexSectionMapEntryListEntry.getKey().getKana());
-					sectionIndex.setRomaji(japaneseIndexSectionMapEntryListEntry.getKey().getRomaji());					
-					
-					// poszczegolne slowka sekcji
-					for (KanjiKanaPair kanjiKanaPair : japaneseIndexSectionMapEntryListEntry.getValue()) {
+					// zawartosc sekcji				
+					for (Map.Entry<KanaRomajiKey, List<KanjiKanaPair>> japaneseIndexSectionMapEntryListEntry : japaneseIndexSectionMapEntryList) {
 						
-						SectionEntryIndex sectionIndexEntry = new SectionEntryIndex();
-												
-						sectionIndexEntry.setKanji(kanjiKanaPair.getKanji());
-						sectionIndexEntry.setEntryId(kanjiKanaPair.getEntry().getEntryId());
+						// utworzenie sekcji, ktora zapisujemy do pliku
+						SectionIndex sectionIndex = new SectionIndex();
 						
-						sectionIndex.getEntry().add(sectionIndexEntry);
+						sectionIndex.setKana(japaneseIndexSectionMapEntryListEntry.getKey().getKana());
+						sectionIndex.setRomaji(japaneseIndexSectionMapEntryListEntry.getKey().getRomaji());					
+						
+						// poszczegolne slowka sekcji
+						for (KanjiKanaPair kanjiKanaPair : japaneseIndexSectionMapEntryListEntry.getValue()) {
+							
+							SectionEntryIndex sectionIndexEntry = new SectionEntryIndex();
+													
+							sectionIndexEntry.setKanji(kanjiKanaPair.getKanji());
+							sectionIndexEntry.setEntryId(kanjiKanaPair.getEntry().getEntryId());
+							
+							sectionIndex.getEntry().add(sectionIndexEntry);
+						}
+						
+						japaneseIndexSectionIndex.getSectionIndex().add(sectionIndex);
 					}
 					
-					japaneseIndexSectionIndex.getSectionIndex().add(sectionIndex);
+					// zapis do pliku xml
+					// ustalenie nazwy pliku
+					File japaneseIndexSectionIndexFile = new File(outputDirectory, "nameEntryIndex_japaneseIndexSectionIndex_" + 
+							japaneseIndexSectionIndex.getSectionName() + "_" + japaneseIndexSectionIndex.getPartNo() + ".xml");
+					
+					JAXBContext jaxbContext = JAXBContext.newInstance(JapaneseIndexSectionIndex.class);              
+					
+					Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+					jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+					
+					jaxbMarshaller.marshal(japaneseIndexSectionIndex, japaneseIndexSectionIndexFile);
+					
+					// jeszcze dodanie do spisu
+					NameEntryIndex.JapaneseIndexSectionIndex dictionaryindexJapaneseIndexSectionIndex = new NameEntryIndex.JapaneseIndexSectionIndex();
+					
+					dictionaryindexJapaneseIndexSectionIndex.setSectionName(japaneseIndexSectionIndex.getSectionName());
+					dictionaryindexJapaneseIndexSectionIndex.setPartNo(japaneseIndexSectionIndex.getPartNo());
+					dictionaryindexJapaneseIndexSectionIndex.setFileName(japaneseIndexSectionIndexFile.getName());					
+					
+					dictionaryIndexXml.getNameEntryIndex().getJapaneseIndexSectionIndex().add(dictionaryindexJapaneseIndexSectionIndex);
 				}
-				
-				// zapis do pliku xml
-				// ustalenie nazwy pliku
-				File JapaneseIndexSectionIndexFile = new File(outputDirectory, "nameEntryIndex_japaneseIndexSectionIndex_" + japaneseIndexSectionIndex.getSectionName() + ".xml");
-				
-				JAXBContext jaxbContext = JAXBContext.newInstance(JapaneseIndexSectionIndex.class);              
-				
-				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-				jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-				
-				jaxbMarshaller.marshal(japaneseIndexSectionIndex, JapaneseIndexSectionIndexFile);
-			}			
-		}		
+			}
+		}	
+		
+		// zapis ogolnego spisu
+		File dictionaryIndexFile = new File(outputDirectory, "dictionaryindex.xml");
+		
+		JAXBContext jaxbContext = JAXBContext.newInstance(pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex.class);              
+		
+		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		
+		jaxbMarshaller.marshal(dictionaryIndexXml, dictionaryIndexFile);
 	}
 
 	//
