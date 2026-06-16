@@ -2269,13 +2269,22 @@ public class Dictionary2Helper extends Dictionary2HelperCommon {
 		readingInfo.getKana().setRomaji(romaji);
 	}
 		
-	public void createEmptyPolishSense(Entry entry) {
+	public void createEmptyPolishSenseAndInfo(Entry entry) {
 		
 		List<Sense> senseList = entry.getSenseList();
 		
 		for (Sense sense : senseList) {
 			createEmptyPolishSense(sense);
 		}
+		
+		List<Info> engInfoList = entry.getInfoList().stream().filter(gloss -> (gloss.getLang().equals("eng") == true)).collect(Collectors.toList());
+		List<Info> newPolInfoList = new ArrayList<>();
+		
+		for (Info info : engInfoList) {
+			newPolInfoList.add(createEmptyPolishInfo(info));
+		}
+		
+		entry.getInfoList().addAll(newPolInfoList);
 	}
 	
 	private void createEmptyPolishSense(Sense sense) {

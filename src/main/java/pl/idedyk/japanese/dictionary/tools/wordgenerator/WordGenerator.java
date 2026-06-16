@@ -265,7 +265,7 @@ public class WordGenerator {
 						}
 						
 						// uzupelnienie o puste polskie tlumaczenie
-						dictionary2Helper.createEmptyPolishSense(jmdictEntry);
+						dictionary2Helper.createEmptyPolishSenseAndInfo(jmdictEntry);
 						
 						// pobranie ze starego slownika interesujacych danych (np. romaji)
 						dictionary2Helper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
@@ -580,7 +580,7 @@ public class WordGenerator {
 						}
 						
 						// uzupelnienie o puste polskie tlumaczenie
-						dictionary2Helper.createEmptyPolishSense(jmdictEntry);
+						dictionary2Helper.createEmptyPolishSenseAndInfo(jmdictEntry);
 						
 						// pobranie ze starego slownika interesujacych danych (np. romaji)
 						dictionary2Helper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
@@ -3259,7 +3259,7 @@ public class WordGenerator {
 							}
 							
 							// uzupelnienie o puste polskie tlumaczenie
-							dictionary2Helper.createEmptyPolishSense(jmdictEntry);
+							dictionary2Helper.createEmptyPolishSenseAndInfo(jmdictEntry);
 							
 							// pobranie ze starego slownika interesujacych danych (np. romaji)
 							dictionary2Helper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
@@ -4224,7 +4224,7 @@ public class WordGenerator {
 					if (entryFromPolishDictionary == null) {
 						
 						// uzupelnienie o puste polskie tlumaczenie
-						dictionaryHelper.createEmptyPolishSense(entry);
+						dictionaryHelper.createEmptyPolishSenseAndInfo(entry);
 						
 						// pobranie ze starego slownika interesujacych danych (np. romaji)
 						dictionaryHelper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(entry, entryAdditionalData);

@@ -217,7 +217,7 @@ public class GetEntryFromDictionary {
 				*/
 								
 				// uzupelnienie o puste polskie tlumaczenie
-				dictionaryHelper.createEmptyPolishSense(jmdictEntry);
+				dictionaryHelper.createEmptyPolishSenseAndInfo(jmdictEntry);
 				
 				// pobranie ze starego slownika interesujacych danych (np. romaji)
 				dictionaryHelper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(jmdictEntry, entryAdditionalData);
@@ -244,7 +244,7 @@ public class GetEntryFromDictionary {
 					}
 														
 					// uzupelnienie o puste polskie tlumaczenie
-					dictionaryHelper.createEmptyPolishSense(entry);
+					dictionaryHelper.createEmptyPolishSenseAndInfo(entry);
 					
 					// pobranie ze starego slownika interesujacych danych (np. romaji)
 					dictionaryHelper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(entry, entryAdditionalData);

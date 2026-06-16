@@ -192,7 +192,7 @@ public class GenerateMissingWordListApp {
 					}
 										
 					// uzupelnienie o puste polskie tlumaczenie
-					dictionaryHelper.createEmptyPolishSense(entry);
+					dictionaryHelper.createEmptyPolishSenseAndInfo(entry);
 					
 					// pobranie ze starego slownika interesujacych danych (np. romaji)
 					dictionaryHelper.fillDataFromOldPolishJapaneseDictionaryForWordGenerating(entry, entryAdditionalData);
