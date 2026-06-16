@@ -6,6 +6,7 @@ import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -810,13 +811,19 @@ public class DictionaryIndexGenerator {
 					sectionEntry.setPolishWord(sectionMapEntryListEntry.getKey().getPolishWord());
 					
 					// poszczegolne slowka sekcji
+					LinkedHashSet<Integer> uniqueEntryIds = new LinkedHashSet<Integer>();
+					
 					for (KanjiKanaPairWrapper kanjiKanaPairWrapper : sectionMapEntryListEntry.getValue()) {
+						uniqueEntryIds.add(kanjiKanaPairWrapper.getEntryId());
+					}
+					
+					for (Integer entryId : uniqueEntryIds) {
 						
 						SectionEntryIndexEntry sectionEntryIndexEntry = new SectionEntryIndexEntry();
 												
-						sectionEntryIndexEntry.setKanji(kanjiKanaPairWrapper.getKanji());
-						sectionEntryIndexEntry.setKana(kanjiKanaPairWrapper.getKana());
-						sectionEntryIndexEntry.setEntryId(kanjiKanaPairWrapper.getEntryId());
+						// sectionEntryIndexEntry.setKanji(kanjiKanaPairWrapper.getKanji());
+						// sectionEntryIndexEntry.setKana(kanjiKanaPairWrapper.getKana());
+						sectionEntryIndexEntry.setEntryId(entryId);
 						
 						sectionEntry.getEntries().add(sectionEntryIndexEntry);
 					}
@@ -827,7 +834,7 @@ public class DictionaryIndexGenerator {
 				// zapis do pliku xml
 				// ustalenie nazwy pliku
 				File japaneseIndexSectionIndexFile = new File(outputDirectory, mainIndexName + "_" + sectionIndexName + "_" + 
-						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".xml");
+						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".json");
 				
 				JAXBContext jaxbContext = JAXBContext.newInstance(SectionIndex.class);              
 				
