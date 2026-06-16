@@ -1,12 +1,14 @@
 package pl.idedyk.japanese.dictionary.tools;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.Collator;
 import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -14,6 +16,7 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.function.Consumer;
+import java.util.zip.GZIPOutputStream;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -778,7 +781,7 @@ public class DictionaryIndexGenerator {
 	private static void createIndexSectionMap(File outputDirectory, 
 			Map<String, List<Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>>> sectionMap,
 			String mainIndexName, String sectionIndexName,
-			Consumer<SectionIndexMetadata> sectionIndexMetadataAdder) throws JAXBException {
+			Consumer<SectionIndexMetadata> sectionIndexMetadataAdder) throws JAXBException, FileNotFoundException, IOException {
 		
 		final int MAX_SECTION_SIZE = 1000;
 		
@@ -811,6 +814,7 @@ public class DictionaryIndexGenerator {
 					sectionEntry.setPolishWord(sectionMapEntryListEntry.getKey().getPolishWord());
 					
 					// poszczegolne slowka sekcji
+					/*
 					LinkedHashSet<Integer> uniqueEntryIds = new LinkedHashSet<Integer>();
 					
 					for (KanjiKanaPairWrapper kanjiKanaPairWrapper : sectionMapEntryListEntry.getValue()) {
@@ -818,12 +822,14 @@ public class DictionaryIndexGenerator {
 					}
 					
 					for (Integer entryId : uniqueEntryIds) {
-						
+					*/
+					
+					for (KanjiKanaPairWrapper kanjiKanaPairWrapper : sectionMapEntryListEntry.getValue()) {
 						SectionEntryIndexEntry sectionEntryIndexEntry = new SectionEntryIndexEntry();
 												
-						// sectionEntryIndexEntry.setKanji(kanjiKanaPairWrapper.getKanji());
+						sectionEntryIndexEntry.setKanji(kanjiKanaPairWrapper.getKanji());
 						// sectionEntryIndexEntry.setKana(kanjiKanaPairWrapper.getKana());
-						sectionEntryIndexEntry.setEntryId(entryId);
+						sectionEntryIndexEntry.setEntryId(kanjiKanaPairWrapper.getEntryId());
 						
 						sectionEntry.getEntries().add(sectionEntryIndexEntry);
 					}
@@ -833,22 +839,24 @@ public class DictionaryIndexGenerator {
 				
 				// zapis do pliku xml
 				// ustalenie nazwy pliku
-				File japaneseIndexSectionIndexFile = new File(outputDirectory, mainIndexName + "_" + sectionIndexName + "_" + 
-						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".json");
+				File sectionIndexFile = new File(outputDirectory, mainIndexName + "_" + sectionIndexName + "_" + 
+						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".json.gz");
 				
 				JAXBContext jaxbContext = JAXBContext.newInstance(SectionIndex.class);              
 				
 				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 				jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 				
-				jaxbMarshaller.marshal(sectionIndex, japaneseIndexSectionIndexFile);
+				GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new FileOutputStream(sectionIndexFile));				
+				jaxbMarshaller.marshal(sectionIndex, gzipOutputStream);
+				gzipOutputStream.close();
 				
 				// jeszcze dodanie do spisu
 				SectionIndexMetadata sectionIndexMetadata = new SectionIndexMetadata();
 				
 				sectionIndexMetadata.setSectionName(sectionIndex.getSectionName());
 				sectionIndexMetadata.setPartNo(sectionIndex.getPartNo());
-				sectionIndexMetadata.setFileName(japaneseIndexSectionIndexFile.getName());					
+				sectionIndexMetadata.setFileName(sectionIndexFile.getName());					
 				
 				sectionIndexMetadataAdder.accept(sectionIndexMetadata);
 			}
