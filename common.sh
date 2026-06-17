@@ -3,6 +3,7 @@
 export JAPANESE_DICTIONARY_API_VERSION=1.0-SNAPSHOT
 export JAPANESE_DICTIONARY_LUCENE_COMMON_VERSION=1.0-SNAPSHOT
 export LUCENE_VERSION=4.7.2
+export GSON_VERSION=2.8.9
 
 export CLASSPATH=$HOME/.m2/repository/pl/idedyk/japanese/JapaneseDictionaryAPI/$JAPANESE_DICTIONARY_API_VERSION/JapaneseDictionaryAPI-$JAPANESE_DICTIONARY_API_VERSION.jar:$CLASSPATH
 export CLASSPATH=$HOME/.m2/repository/pl/idedyk/japanese/JapaneseDictionaryLuceneCommon/$JAPANESE_DICTIONARY_LUCENE_COMMON_VERSION/JapaneseDictionaryLuceneCommon-$JAPANESE_DICTIONARY_LUCENE_COMMON_VERSION.jar:$CLASSPATH
@@ -16,6 +17,7 @@ export CLASSPATH=$HOME/.m2/repository/commons-lang/commons-lang/2.6/commons-lang
 export CLASSPATH=$HOME/.m2/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar:$CLASSPATH
 
 export CLASSPATH=$HOME/.m2/repository/org/json/json/20150729/json-20150729.jar:$CLASSPATH
+export CLASSPATH=$HOME/.m2/repository/com/google/code/gson/gson/$GSON_VERSION/gson-$GSON_VERSION.jar:$CLASSPATH
 
 export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-core/$LUCENE_VERSION/lucene-core-$LUCENE_VERSION.jar:$CLASSPATH
 export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-analyzers-common/$LUCENE_VERSION/lucene-analyzers-common-$LUCENE_VERSION.jar:$CLASSPATH
