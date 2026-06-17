@@ -117,10 +117,8 @@ public class AndroidDictionaryGenerator {
 					"output/kanji_recognizer_handwriting-ja-slim.s", zinniaTomoeSlimBinaryFile);
 			
 			// generowanie indeksu i jego zapis
-			DictionaryIndex dictionaryIndex = DictionaryIndexGenerator.generateDictionaryIndex(dictionary, nameEntryList, generateKanjiEntriesResult.kanjiCharacterInfoList);
-			
-			DictionaryIndexGenerator.saveAsDictionaryIndexConfigXml(dictionaryIndex, new File("output/directoryindex"));
-			
+			generateDictionaryIndex(dictionary, nameEntryList, generateKanjiEntriesResult.kanjiCharacterInfoList, new File("output/directoryindex"));
+						
 			// generowanie plikow dla latex
 			createLatexDictionaries(dictionary, "pdf_dictionary/dictionary.tex", "output");
 		}
@@ -1080,6 +1078,15 @@ public class AndroidDictionaryGenerator {
 		csvReader.close();
 
 		return transitiveIntransitivePairList;
+	}
+	
+	private static void generateDictionaryIndex(List<Entry> dictionary, List<pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict.Entry> nameEntryList, List<KanjiCharacterInfo> kanjiCharacterInfoList, File file) throws Exception {
+		
+		System.out.println("Generating dictionary index...");
+		
+		DictionaryIndex dictionaryIndex = DictionaryIndexGenerator.generateDictionaryIndex(dictionary, nameEntryList, kanjiCharacterInfoList);
+		
+		DictionaryIndexGenerator.saveAsDictionaryIndexConfigXml(dictionaryIndex, new File("output/directoryindex"));		
 	}
 		
 	private static void createLatexDictionaries(List<JMdict.Entry> entryList, String mainTexFilename, String outputDir) throws Exception {
