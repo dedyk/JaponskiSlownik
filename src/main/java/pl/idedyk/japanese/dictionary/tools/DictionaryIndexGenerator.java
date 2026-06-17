@@ -744,6 +744,10 @@ public class DictionaryIndexGenerator {
 		
 		pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex dictionaryIndexXml = new pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex();
 		
+		if (outputDirectory.isDirectory() == false) { // utworz katalog z indeksem jesli nie istnieje
+			outputDirectory.mkdirs();
+		}
+		
 		// przetworzenie entryListIndex
 		EntryListIndex entryListIndex = dictionaryIndex.getEntryListIndex();
 		

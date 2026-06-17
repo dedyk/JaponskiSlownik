@@ -47,6 +47,8 @@ import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke;
 import pl.idedyk.japanese.dictionary.dto.TomoeEntry.Stroke.Point;
 import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.tools.CsvReaderWriter;
+import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator;
+import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator.DictionaryIndex;
 import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary.tools.KanjiDic2Reader;
 import pl.idedyk.japanese.dictionary.tools.KanjiUtils;
@@ -102,17 +104,24 @@ public class AndroidDictionaryGenerator {
 
 		final String zinniaTomoeSlimBinaryFile = "output/kanji_recognizer.model.db";
 		
-		List<KanjiEntryForDictionary> kanjiEntries = generateKanjiEntries(dictionary, jmedictCommon, kanjivgEntryMap, "input/kanji.csv",
+		GenerateKanjiEntriesResult generateKanjiEntriesResult = generateKanjiEntries(dictionary, jmedictCommon, kanjivgEntryMap, "input/kanji.csv",
 				"../JapaneseDictionary_additional/kanjidic2.xml", "../JapaneseDictionary_additional/kradfile",
 				"output/kanji.csv", "output/kanji2.xml");
 
-		generateNamePolishJapaneseEntries("output/name2.xml_%d");
+		List<JMnedict.Entry> nameEntryList = generateNamePolishJapaneseEntries("output/name2.xml_%d");
 		
 		if (fullMode == true) {
-			generateZinniaTomoeSlimBinaryFile(kanjiEntries, kanjivgSingleXmlFile, "output/kanjivgTomoeFile.xml",
+			// generowanie modelu do rozpoznawania znakow kanji
+			generateZinniaTomoeSlimBinaryFile(generateKanjiEntriesResult.kanjiEntries, kanjivgSingleXmlFile, "output/kanjivgTomoeFile.xml",
 					"../JapaneseDictionary_additional/zinnia-0.06-app/bin/zinnia_learn",
 					"output/kanji_recognizer_handwriting-ja-slim.s", zinniaTomoeSlimBinaryFile);
 			
+			// generowanie indeksu i jego zapis
+			DictionaryIndex dictionaryIndex = DictionaryIndexGenerator.generateDictionaryIndex(dictionary, nameEntryList, generateKanjiEntriesResult.kanjiCharacterInfoList);
+			
+			DictionaryIndexGenerator.saveAsDictionaryIndexConfigXml(dictionaryIndex, new File("output/directoryindex"));
+			
+			// generowanie plikow dla latex
 			createLatexDictionaries(dictionary, "pdf_dictionary/dictionary.tex", "output");
 		}
 	}
@@ -376,7 +385,7 @@ public class AndroidDictionaryGenerator {
 
 	}
 
-	private static List<KanjiEntryForDictionary> generateKanjiEntries(List<Entry> dictionary,
+	private static GenerateKanjiEntriesResult generateKanjiEntries(List<Entry> dictionary,
 			TreeMap<String, EDictEntry> jmedictCommon,
 			Map<String, KanjivgEntry> kanjivgEntryMap, String sourceKanjiName, String sourceKanjiDic2FileName,
 			String sourceKradFileName, String destinationFileName, String kanji2XmlFile) throws Exception {
@@ -567,7 +576,17 @@ public class AndroidDictionaryGenerator {
 		
 		kanji2Helper.saveKanjidic2AsXml(resultKanjidic2, new File(kanji2XmlFile));
 
-		return kanjiEntries;
+		return new GenerateKanjiEntriesResult(kanjiEntries, resultKanjidic2.getCharacterList());
+	}
+	
+	private static class GenerateKanjiEntriesResult {
+		private List<KanjiEntryForDictionary> kanjiEntries;
+		private List<KanjiCharacterInfo> kanjiCharacterInfoList;
+		
+		public GenerateKanjiEntriesResult(List<KanjiEntryForDictionary> kanjiEntries, List<KanjiCharacterInfo> kanjiCharacterInfoList) {
+			this.kanjiEntries = kanjiEntries;
+			this.kanjiCharacterInfoList = kanjiCharacterInfoList;
+		}
 	}
 
 	private static void generateAdditionalKanjiEntries(List<Entry> dictionary,
@@ -1166,7 +1185,7 @@ public class AndroidDictionaryGenerator {
 	}
 	*/
 	
-	private static void generateNamePolishJapaneseEntries(String name2XmlFileTemplate) throws Exception {
+	private static List<JMnedict.Entry> generateNamePolishJapaneseEntries(String name2XmlFileTemplate) throws Exception {
 				
 		System.out.println("generateNamePolishJapaneseEntries");
 		
@@ -1193,6 +1212,8 @@ public class AndroidDictionaryGenerator {
 			newJMndict.getEntryList().addAll(allJMnedictToSavePartedMap.get(firstEntryIdDigit));
 			
 			dictionary2NameHelper.saveJMnedictAsXml(newJMndict, name2XmlFileName);			
-		}		
+		}
+		
+		return allJMnedictToSave.getEntryList();
 	}
 }
