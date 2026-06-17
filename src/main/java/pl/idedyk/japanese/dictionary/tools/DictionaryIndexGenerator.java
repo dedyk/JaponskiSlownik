@@ -789,9 +789,8 @@ public class DictionaryIndexGenerator {
 		// zapis ogolnego spisu
 		File dictionaryIndexFile = new File(outputDirectory, "dictionaryindex.json");
 		
-		Gson gson = new Gson();
-		
-		Files.write(dictionaryIndexFile.toPath(), gson.toJson(dictionaryIndexFile).getBytes(), StandardOpenOption.CREATE); 
+		Gson gson = new Gson();		
+		Files.write(dictionaryIndexFile.toPath(), gson.toJson(dictionaryIndexJson).getBytes(), StandardOpenOption.CREATE); 
 	}
 	
 	private static void createIndexSectionMap(File outputDirectory, 
