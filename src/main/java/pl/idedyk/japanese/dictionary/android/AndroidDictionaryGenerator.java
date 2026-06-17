@@ -1086,7 +1086,7 @@ public class AndroidDictionaryGenerator {
 		
 		DictionaryIndex dictionaryIndex = DictionaryIndexGenerator.generateDictionaryIndex(dictionary, nameEntryList, kanjiCharacterInfoList);
 		
-		DictionaryIndexGenerator.saveAsDictionaryIndexConfigXml(dictionaryIndex, new File("output/directoryindex"));		
+		DictionaryIndexGenerator.saveAsDictionaryIndexConfigJson(dictionaryIndex, new File("output/directoryindex"));		
 	}
 		
 	private static void createLatexDictionaries(List<JMdict.Entry> entryList, String mainTexFilename, String outputDir) throws Exception {

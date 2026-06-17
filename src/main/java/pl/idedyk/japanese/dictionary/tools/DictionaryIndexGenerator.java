@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardOpenOption;
 import java.text.Collator;
 import java.text.Normalizer;
 import java.util.ArrayList;
@@ -18,11 +20,9 @@ import java.util.TreeMap;
 import java.util.function.Consumer;
 import java.util.zip.GZIPOutputStream;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-
 import org.apache.commons.collections4.ListUtils;
+
+import com.google.gson.Gson;
 
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
@@ -169,7 +169,7 @@ public class DictionaryIndexGenerator {
 		
 		//
 		
-		DictionaryIndexGenerator.saveAsDictionaryIndexConfigXml(dictionaryIndex, new File("/home/fmazurek/tmp/a/index"));
+		DictionaryIndexGenerator.saveAsDictionaryIndexConfigJson(dictionaryIndex, new File("/tmp/a/index"));
 	}
 	
 	public static DictionaryIndex generateDictionaryIndex(List<JMdict.Entry> entryList, List<JMnedict.Entry> nameEntryList, List<KanjiCharacterInfo> kanjiList) {
@@ -740,9 +740,9 @@ public class DictionaryIndexGenerator {
 		}
 	}
 	
-	public static void saveAsDictionaryIndexConfigXml(DictionaryIndex dictionaryIndex, File outputDirectory) throws Exception {
+	public static void saveAsDictionaryIndexConfigJson(DictionaryIndex dictionaryIndex, File outputDirectory) throws Exception {
 		
-		pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex dictionaryIndexXml = new pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex();
+		pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex dictionaryIndexJson = new pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex();
 		
 		if (outputDirectory.isDirectory() == false) { // utworz katalog z indeksem jesli nie istnieje
 			outputDirectory.mkdirs();
@@ -752,55 +752,52 @@ public class DictionaryIndexGenerator {
 		EntryListIndex entryListIndex = dictionaryIndex.getEntryListIndex();
 		
 		if (entryListIndex != null) {			
-			dictionaryIndexXml.setEntryIndex(new EntryIndex());
+			dictionaryIndexJson.setEntryIndex(new EntryIndex());
 			
 			// indeks japonskich slowek
 			createIndexSectionMap(outputDirectory, entryListIndex.getJapaneseIndexSectionMap(), "entryIndex", "japaneseIndexSectionIndex",
-					(s) -> dictionaryIndexXml.getEntryIndex().getJapaneseIndexSectionIndex().add(s)); 
+					(s) -> dictionaryIndexJson.getEntryIndex().getJapaneseIndexSectionIndex().add(s)); 
 
 			// indeks polskich slowek
 			createIndexSectionMap(outputDirectory, entryListIndex.getPolishIndexSectionMap(), "entryIndex", "polishIndexSectionIndex",
-					(s) -> dictionaryIndexXml.getEntryIndex().getPolishIndexSectionIndex().add(s)); 			
+					(s) -> dictionaryIndexJson.getEntryIndex().getPolishIndexSectionIndex().add(s)); 			
 		}
 		
 		// przetworzenie nameEntryListIndex
 		NameEntryListIndex nameEntryListIndex = dictionaryIndex.getNameEntryListIndex();
 		
 		if (nameEntryListIndex != null) {
-			dictionaryIndexXml.setNameEntryIndex(new EntryIndex());
+			dictionaryIndexJson.setNameEntryIndex(new EntryIndex());
 			
 			// indeks japonskich slowek
 			createIndexSectionMap(outputDirectory, nameEntryListIndex.getJapaneseIndexSectionMap(), "nameEntryIndex", "japaneseIndexSectionIndex",
-					(s) -> dictionaryIndexXml.getNameEntryIndex().getJapaneseIndexSectionIndex().add(s)); 			
+					(s) -> dictionaryIndexJson.getNameEntryIndex().getJapaneseIndexSectionIndex().add(s)); 			
 		}
 		
 		// przetworzenie kanjiCharacterInfoListIndex
 		KanjiCharacterInfoListIndex kanjiCharacterInfoListIndex = dictionaryIndex.getKanjiCharacterInfoListIndex();
 		
 		if (kanjiCharacterInfoListIndex != null) {
-			dictionaryIndexXml.setKanjiCharacterInfoListIndex(new EntryIndex());
+			dictionaryIndexJson.setKanjiCharacterInfoListIndex(new EntryIndex());
 
 			// indeks polskich slowek
 			createIndexSectionMapForKanji(outputDirectory, kanjiCharacterInfoListIndex.getTranslateIndexSectionMap(), "kanjiCharacterInfoListIndex", "polishIndexSectionIndex",
-					(s) -> dictionaryIndexXml.getKanjiCharacterInfoListIndex().getPolishIndexSectionIndex().add(s)); 			
+					(s) -> dictionaryIndexJson.getKanjiCharacterInfoListIndex().getPolishIndexSectionIndex().add(s)); 			
 		}
 		
 		
 		// zapis ogolnego spisu
-		File dictionaryIndexFile = new File(outputDirectory, "dictionaryindex.xml");
+		File dictionaryIndexFile = new File(outputDirectory, "dictionaryindex.json");
 		
-		JAXBContext jaxbContext = JAXBContext.newInstance(pl.idedyk.japanese.dictionary2.dictionaryindex.xsd.DictionaryIndex.class);              
+		Gson gson = new Gson();
 		
-		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-		
-		jaxbMarshaller.marshal(dictionaryIndexXml, dictionaryIndexFile);
+		Files.write(dictionaryIndexFile.toPath(), gson.toJson(dictionaryIndexFile).getBytes(), StandardOpenOption.CREATE); 
 	}
 	
 	private static void createIndexSectionMap(File outputDirectory, 
 			Map<String, List<Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>>> sectionMap,
 			String mainIndexName, String sectionIndexName,
-			Consumer<SectionIndexMetadata> sectionIndexMetadataAdder) throws JAXBException, FileNotFoundException, IOException {
+			Consumer<SectionIndexMetadata> sectionIndexMetadataAdder) throws FileNotFoundException, IOException {
 		
 		final int MAX_SECTION_SIZE = 1000;
 		
@@ -856,18 +853,15 @@ public class DictionaryIndexGenerator {
 					sectionIndex.getSectionEntry().add(sectionEntry);
 				}
 				
-				// zapis do pliku xml
+				// zapis do pliku json
 				// ustalenie nazwy pliku
 				File sectionIndexFile = new File(outputDirectory, mainIndexName + "_" + sectionIndexName + "_" + 
-						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".xml.gz");
+						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".json.gz");
 				
-				JAXBContext jaxbContext = JAXBContext.newInstance(SectionIndex.class);              
-				
-				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-				jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-				
+				Gson gson = new Gson();
+								
 				GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new FileOutputStream(sectionIndexFile));				
-				jaxbMarshaller.marshal(sectionIndex, gzipOutputStream);
+				gzipOutputStream.write(gson.toJson(sectionIndex).getBytes());
 				gzipOutputStream.close();
 				
 				// jeszcze dodanie do spisu
@@ -885,7 +879,7 @@ public class DictionaryIndexGenerator {
 	private static void createIndexSectionMapForKanji(File outputDirectory, 
 			Map<String, List<Map.Entry<String, List<KanjiCharacterInfo>>>> sectionMap,
 			String mainIndexName, String sectionIndexName,
-			Consumer<SectionIndexMetadata> sectionIndexMetadataAdder) throws JAXBException, FileNotFoundException, IOException {
+			Consumer<SectionIndexMetadata> sectionIndexMetadataAdder) throws FileNotFoundException, IOException {
 				
 		Set<java.util.Map.Entry<String, List<java.util.Map.Entry<String, List<KanjiCharacterInfo>>>>> sectionMapEntrySet = sectionMap.entrySet();
 		
@@ -925,18 +919,15 @@ public class DictionaryIndexGenerator {
 					sectionIndex.getSectionEntry().add(sectionEntry);
 				}
 				
-				// zapis do pliku xml
+				// zapis do pliku json
 				// ustalenie nazwy pliku
 				File sectionIndexFile = new File(outputDirectory, mainIndexName + "_" + sectionIndexName + "_" + 
-						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".xml.gz");
+						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".json.gz");
 				
-				JAXBContext jaxbContext = JAXBContext.newInstance(SectionIndex.class);              
-				
-				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-				jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-				
-				GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new FileOutputStream(sectionIndexFile));				
-				jaxbMarshaller.marshal(sectionIndex, gzipOutputStream);
+				Gson gson = new Gson();
+								
+				GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new FileOutputStream(sectionIndexFile));
+				gzipOutputStream.write(gson.toJson(sectionIndex).getBytes());
 				gzipOutputStream.close();
 				
 				// jeszcze dodanie do spisu
