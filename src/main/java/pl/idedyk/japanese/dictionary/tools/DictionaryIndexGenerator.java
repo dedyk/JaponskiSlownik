@@ -254,7 +254,15 @@ public class DictionaryIndexGenerator {
 				section = DictionaryIndex.otherSectionName;
 				
 			} else {
-				KanaEntry kanaEntry = kanaCache.get(kanaRomajiKey.kana.substring(0, 1));
+				KanaEntry kanaEntry = null;
+				
+				if (kanaRomajiKey.kana.length() > 1) {
+					kanaEntry = kanaCache.get(kanaRomajiKey.kana.substring(0, 2));
+				}
+				
+				if (kanaEntry == null) {
+					kanaEntry = kanaCache.get(kanaRomajiKey.kana.substring(0, 1));
+				}
 				
 				if (kanaEntry == null) {
 					section = DictionaryIndex.otherSectionName;
@@ -534,7 +542,15 @@ public class DictionaryIndexGenerator {
 				section = DictionaryIndex.otherSectionName;
 				
 			} else {
-				KanaEntry kanaEntry = kanaCache.get(kanaRomajiKey.kana.substring(0, 1));
+				KanaEntry kanaEntry = null;
+				
+				if (kanaRomajiKey.kana.length() > 1) {
+					kanaEntry = kanaCache.get(kanaRomajiKey.kana.substring(0, 2));
+				}
+				
+				if (kanaEntry == null) {
+					kanaEntry = kanaCache.get(kanaRomajiKey.kana.substring(0, 1));
+				}
 				
 				if (kanaEntry == null) {
 					section = DictionaryIndex.otherSectionName;
