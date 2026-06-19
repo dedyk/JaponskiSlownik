@@ -18,7 +18,6 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.function.Consumer;
-import java.util.zip.GZIPOutputStream;
 
 import org.apache.commons.collections4.ListUtils;
 
@@ -797,15 +796,11 @@ public class DictionaryIndexGenerator {
 			Map<String, List<Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>>> sectionMap,
 			String mainIndexName, String sectionIndexName,
 			Consumer<SectionIndexMetadata> sectionIndexMetadataAdder) throws FileNotFoundException, IOException {
-		
-		final int MAX_SECTION_SIZE = 1000;
-		
+				
 		Set<java.util.Map.Entry<String, List<java.util.Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>>>> sectionMapEntrySet = sectionMap.entrySet();
 		
 		for (Map.Entry<String, List<Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>>> sectionMapEntry : sectionMapEntrySet) {
-			
-			SectionIndex sectionIndex = new SectionIndex();
-			
+						
 			String sectionName = sectionMapEntry.getKey();
 			List<Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>> sectionMapEntryList = sectionMapEntry.getValue();
 			
@@ -814,12 +809,14 @@ public class DictionaryIndexGenerator {
 			
 			for (int partitionNo = 0; partitionNo < sectionMapEntryListPartitionList.size(); partitionNo++) {
 				
+				SectionIndex sectionIndex = new SectionIndex();
+				
 				// nazwa sekcji
 				sectionIndex.setSectionName(sectionName);
 				sectionIndex.setPartNo(partitionNo + 1);
 				
 				// zawartosc sekcji				
-				for (Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>> sectionMapEntryListEntry : sectionMapEntryList) {
+				for (Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>> sectionMapEntryListEntry : sectionMapEntryListPartitionList.get(partitionNo)) {
 					
 					// utworzenie sekcji, ktora zapisujemy do pliku
 					SectionEntry sectionEntry = new SectionEntry();
@@ -855,13 +852,13 @@ public class DictionaryIndexGenerator {
 				// zapis do pliku json
 				// ustalenie nazwy pliku
 				File sectionIndexFile = new File(outputDirectory, mainIndexName + "_" + sectionIndexName + "_" + 
-						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".json.gz");
+						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".json");
 				
 				Gson gson = new Gson();
 								
-				GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new FileOutputStream(sectionIndexFile));				
-				gzipOutputStream.write(gson.toJson(sectionIndex).getBytes());
-				gzipOutputStream.close();
+				FileOutputStream fileOutputStream = new FileOutputStream(sectionIndexFile);				
+				fileOutputStream.write(gson.toJson(sectionIndex).getBytes());
+				fileOutputStream.close();
 				
 				// jeszcze dodanie do spisu
 				SectionIndexMetadata sectionIndexMetadata = new SectionIndexMetadata();
@@ -884,8 +881,6 @@ public class DictionaryIndexGenerator {
 		
 		for (Map.Entry<String, List<Map.Entry<String, List<KanjiCharacterInfo>>>> sectionMapEntry : sectionMapEntrySet) {
 			
-			SectionIndex sectionIndex = new SectionIndex();
-			
 			String sectionName = sectionMapEntry.getKey();
 			List<Map.Entry<String, List<KanjiCharacterInfo>>> sectionMapEntryList = sectionMapEntry.getValue();
 			
@@ -894,12 +889,14 @@ public class DictionaryIndexGenerator {
 			
 			for (int partitionNo = 0; partitionNo < sectionMapEntryListPartitionList.size(); partitionNo++) {
 				
+				SectionIndex sectionIndex = new SectionIndex();
+				
 				// nazwa sekcji
 				sectionIndex.setSectionName(sectionName);
 				sectionIndex.setPartNo(partitionNo + 1);
 				
 				// zawartosc sekcji				
-				for (Map.Entry<String, List<KanjiCharacterInfo>> sectionMapEntryListEntry : sectionMapEntryList) {
+				for (Map.Entry<String, List<KanjiCharacterInfo>> sectionMapEntryListEntry : sectionMapEntryListPartitionList.get(partitionNo)) {
 					
 					// utworzenie sekcji, ktora zapisujemy do pliku
 					SectionEntry sectionEntry = new SectionEntry();
@@ -921,13 +918,13 @@ public class DictionaryIndexGenerator {
 				// zapis do pliku json
 				// ustalenie nazwy pliku
 				File sectionIndexFile = new File(outputDirectory, mainIndexName + "_" + sectionIndexName + "_" + 
-						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".json.gz");
+						sectionIndex.getSectionName() + "_" + sectionIndex.getPartNo() + ".json");
 				
 				Gson gson = new Gson();
 								
-				GZIPOutputStream gzipOutputStream = new GZIPOutputStream(new FileOutputStream(sectionIndexFile));
-				gzipOutputStream.write(gson.toJson(sectionIndex).getBytes());
-				gzipOutputStream.close();
+				FileOutputStream fileOutputStream = new FileOutputStream(sectionIndexFile);
+				fileOutputStream.write(gson.toJson(sectionIndex).getBytes());
+				fileOutputStream.close();
 				
 				// jeszcze dodanie do spisu
 				SectionIndexMetadata sectionIndexMetadata = new SectionIndexMetadata();
