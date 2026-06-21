@@ -53,7 +53,7 @@ import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
 
 public class DictionaryIndexGenerator {
 	
-	private static final int MAX_SECTION_SIZE = 1000;
+	private static final int MAX_SECTION_SIZE = 500;
 	
 	public static void main(String[] args) throws Exception {
 				
