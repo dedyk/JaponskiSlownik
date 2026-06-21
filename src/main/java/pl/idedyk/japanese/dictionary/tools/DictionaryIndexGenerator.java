@@ -854,10 +854,11 @@ public class DictionaryIndexGenerator {
 					
 					for (KanjiKanaPairWrapper kanjiKanaPairWrapper : sectionMapEntryListEntry.getValue()) {
 						SectionEntryIndexEntry sectionEntryIndexEntry = new SectionEntryIndexEntry();
-												
-						sectionEntryIndexEntry.setKanji(kanjiKanaPairWrapper.getKanji());
-						// sectionEntryIndexEntry.setKana(kanjiKanaPairWrapper.getKana());
+						
 						sectionEntryIndexEntry.setEntryId(kanjiKanaPairWrapper.getEntryId());
+						sectionEntryIndexEntry.setKanji(kanjiKanaPairWrapper.getKanji());
+						sectionEntryIndexEntry.setKana(kanjiKanaPairWrapper.getKana());
+						sectionEntryIndexEntry.setRomaji(kanjiKanaPairWrapper.getRomaji());
 						
 						sectionEntry.getEntries().add(sectionEntryIndexEntry);
 					}
@@ -921,9 +922,9 @@ public class DictionaryIndexGenerator {
 										
 					for (KanjiCharacterInfo kanjiCharacterInfo : sectionMapEntryListEntry.getValue()) {
 						SectionEntryIndexEntry sectionEntryIndexEntry = new SectionEntryIndexEntry();
-												
-						sectionEntryIndexEntry.setKanji(kanjiCharacterInfo.getKanji());
+						
 						sectionEntryIndexEntry.setEntryId(kanjiCharacterInfo.getId());
+						sectionEntryIndexEntry.setKanji(kanjiCharacterInfo.getKanji());						
 						
 						sectionEntry.getEntries().add(sectionEntryIndexEntry);
 					}
