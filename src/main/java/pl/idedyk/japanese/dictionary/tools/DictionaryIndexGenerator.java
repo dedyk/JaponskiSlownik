@@ -10,6 +10,7 @@ import java.text.Collator;
 import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
@@ -23,6 +24,7 @@ import org.apache.commons.collections4.ListUtils;
 
 import com.google.gson.Gson;
 
+import pl.idedyk.japanese.dictionary.api.dto.AttributeType;
 import pl.idedyk.japanese.dictionary.api.dto.KanaEntry;
 import pl.idedyk.japanese.dictionary.api.tools.KanaHelper;
 import pl.idedyk.japanese.dictionary.tools.DictionaryIndexGenerator.DictionaryIndex.EntryListIndex;
@@ -45,6 +47,8 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.Gloss;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.Sense;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict.Entry;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscInfo;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.OldPolishJapaneseDictionaryInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.JMnedict;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoTransDet;
@@ -188,12 +192,85 @@ public class DictionaryIndexGenerator {
 
 	public static void generateEntryListIndex(DictionaryIndex dictionaryIndex, List<Entry> entryList) {
 		
+		// INFO: gdy cos tutaj zmieniasz zmienic rowniez w generateNameEntryListIndex
+		
 		if (entryList == null) {
 			return;
 		}
 		
-		// INFO: gdy cos tutaj zmieniasz zmienic rowniez w generateNameEntryListIndex
+		class KanjiKanaPairWrapperListSorter implements Comparator<DictionaryIndexGenerator.DictionaryIndex.KanjiKanaPairWrapper> {			
+			
+			Map<Integer, Entry> cache = new TreeMap<>();
+			
+			public KanjiKanaPairWrapperListSorter(List<Entry> entryList) {
+				for (Entry entry : entryList) {
+					cache.put(entry.getEntryId(), entry);
+				}
+			}
+			
+			@Override
+			public int compare(KanjiKanaPairWrapper o1, KanjiKanaPairWrapper o2) {
+				
+				Entry o1Entry = cache.get(o1.getEntryId());
+				Entry o2Entry = cache.get(o2.getEntryId());
+				
+				Integer o1CommonWord = isCommonWord(o1Entry) == true ? 0 : 1;
+				Integer o2CommonWord = isCommonWord(o2Entry)  == true ? 0 : 1;
+				
+				String o1Kanji = o1.getKanji() != null ? o1.getKanji() : "<null>";
+				String o2Kanji = o2.getKanji() != null ? o2.getKanji() : "<null>";
+
+				String o1Kana= o1.getKana() != null ? o1.getKana() : "<null>";
+				String o2Kana = o2.getKana() != null ? o2.getKana() : "<null>";
+				
+				String o1Romaji = o1.getRomaji() != null ? o1.getRomaji() : "<null>";
+				String o2Romaji = o2.getRomaji() != null ? o2.getRomaji() : "<null>";
+
+				int compare = o1CommonWord.compareTo(o2CommonWord);
+				
+				if (compare != 0) {
+					return compare;
+				}
+				
+				compare = o1Romaji.compareTo(o2Romaji);
+				
+				if (compare != 0) {
+					return compare;
+				}
+				
+				compare = o1Kana.compareTo(o2Kana);
+				
+				if (compare != 0) {
+					return compare;
+				}
+
+				compare = o1Kanji.compareTo(o2Kanji);;
+				
+				if (compare != 0) {
+					return compare;
+				}
+
+				return 0;
+			}
+
+			private boolean isCommonWord(Entry entry) {
+				MiscInfo misc = entry.getMisc();
+				
+				if (misc != null) {
+					OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = misc.getOldPolishJapaneseDictionary();
+					
+					if (oldPolishJapaneseDictionary != null) {
+						return oldPolishJapaneseDictionary.getAttributeList().stream().filter(f2 -> AttributeType.COMMON_WORD.name().equals(f2.getType()) == true).count() > 0;
+					}
+				}
+				
+				return false;
+			}
+		};
 		
+		// sortowanie
+		KanjiKanaPairWrapperListSorter kanjiKanaPairWrapperListSorter = new KanjiKanaPairWrapperListSorter(entryList);
+				
 		KanaHelper kanaHelper = new KanaHelper();
 		Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache(true);
 		
@@ -284,6 +361,16 @@ public class DictionaryIndexGenerator {
 			entrySetListForSection.add(japaneseIndexMapEntry);
 		}
 		
+		// sortowanie elementow w sekcji	
+		if (kanjiKanaPairWrapperListSorter != null) {
+			for (Map.Entry<String, List<Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>>> sectionMapEntry : dictionaryIndex.entryListIndex.japaneseIndexSectionMap.entrySet()) {
+				for (Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>> sectionMapEntryEntryList : sectionMapEntry.getValue()) {
+										
+					Collections.sort(sectionMapEntryEntryList.getValue(), kanjiKanaPairWrapperListSorter);					
+				}
+			}
+		}		
+		
 		// czesc polska
 		// sortowanie po polsku
 		Collator polishCollator = Collator.getInstance(new Locale("pl", "PL"));
@@ -367,6 +454,16 @@ public class DictionaryIndexGenerator {
 			
 			entrySetListForSection.add(polishIndexMapEntry);
 		}
+		
+		// sortowanie elementow w sekcji	
+		if (kanjiKanaPairWrapperListSorter != null) {
+			for (Map.Entry<String, List<Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>>> sectionMapEntry : dictionaryIndex.entryListIndex.polishIndexSectionMap.entrySet()) {
+				for (Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>> sectionMapEntryEntryList : sectionMapEntry.getValue()) {
+										
+					Collections.sort(sectionMapEntryEntryList.getValue(), kanjiKanaPairWrapperListSorter);					
+				}
+			}
+		}		
 		
 		// czesc dla spisu slowek (potrzebne tylko dla generatora latex)
 		
@@ -476,11 +573,50 @@ public class DictionaryIndexGenerator {
 
 	private static void generateNameEntryListIndex(DictionaryIndex dictionaryIndex, List<JMnedict.Entry> nameEntryList) {
 		
+		// INFO: gdy cos tutaj zmieniasz zmienic rowniez w generateEntryListIndex
+		
 		if (nameEntryList == null) {
 			return;
 		}
 		
-		// INFO: gdy cos tutaj zmieniasz zmienic rowniez w generateEntryListIndex
+		class KanjiKanaPairWrapperListSorter implements Comparator<DictionaryIndexGenerator.DictionaryIndex.KanjiKanaPairWrapper> {			
+						
+			@Override
+			public int compare(KanjiKanaPairWrapper o1, KanjiKanaPairWrapper o2) {
+								
+				String o1Kanji = o1.getKanji() != null ? o1.getKanji() : "<null>";
+				String o2Kanji = o2.getKanji() != null ? o2.getKanji() : "<null>";
+
+				String o1Kana= o1.getKana() != null ? o1.getKana() : "<null>";
+				String o2Kana = o2.getKana() != null ? o2.getKana() : "<null>";
+				
+				String o1Romaji = o1.getRomaji() != null ? o1.getRomaji() : "<null>";
+				String o2Romaji = o2.getRomaji() != null ? o2.getRomaji() : "<null>";
+				
+				int compare = o1Romaji.compareTo(o2Romaji);
+				
+				if (compare != 0) {
+					return compare;
+				}
+				
+				compare = o1Kana.compareTo(o2Kana);
+				
+				if (compare != 0) {
+					return compare;
+				}
+
+				compare = o1Kanji.compareTo(o2Kanji);;
+				
+				if (compare != 0) {
+					return compare;
+				}
+
+				return 0;
+			}
+		};
+		
+		// sortowanie
+		KanjiKanaPairWrapperListSorter kanjiKanaPairWrapperListSorter = new KanjiKanaPairWrapperListSorter();
 		
 		KanaHelper kanaHelper = new KanaHelper();
 		Map<String, KanaEntry> kanaCache = kanaHelper.getKanaCache(true);
@@ -572,6 +708,16 @@ public class DictionaryIndexGenerator {
 			entrySetListForSection.add(japaneseIndexMapEntry);
 		}
 		
+		// sortowanie elementow w sekcji	
+		if (kanjiKanaPairWrapperListSorter != null) {
+			for (Map.Entry<String, List<Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>>> sectionMapEntry : dictionaryIndex.nameEntryListIndex.japaneseIndexSectionMap.entrySet()) {
+				for (Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>> sectionMapEntryEntryList : sectionMapEntry.getValue()) {
+										
+					Collections.sort(sectionMapEntryEntryList.getValue(), kanjiKanaPairWrapperListSorter);					
+				}
+			}
+		}		
+		
 		// czesc polska
 		
 		// sortowanie po polsku
@@ -650,6 +796,16 @@ public class DictionaryIndexGenerator {
 			
 			entrySetListForSection.add(polishIndexMapEntry);
 		}
+		
+		// sortowanie elementow w sekcji	
+		if (kanjiKanaPairWrapperListSorter != null) {
+			for (Map.Entry<String, List<Map.Entry<String, List<KanjiKanaPairWrapper>>>> sectionMapEntry : dictionaryIndex.nameEntryListIndex.translateIndexSectionMap.entrySet()) {
+				for (Map.Entry<String, List<KanjiKanaPairWrapper>> sectionMapEntryEntryList : sectionMapEntry.getValue()) {
+										
+					Collections.sort(sectionMapEntryEntryList.getValue(), kanjiKanaPairWrapperListSorter);					
+				}
+			}
+		}		
 	}
 	
 	private static void generateKanjiListIndex(DictionaryIndex dictionaryIndex, List<KanjiCharacterInfo> kanjiList) {
@@ -657,6 +813,36 @@ public class DictionaryIndexGenerator {
 		if (kanjiList == null) {
 			return;
 		}
+		
+		class KanjiKanaPairWrapperListSorter implements Comparator<DictionaryIndexGenerator.DictionaryIndex.KanjiKanaPairWrapper> {			
+			
+			@Override
+			public int compare(KanjiKanaPairWrapper o1, KanjiKanaPairWrapper o2) {
+				
+				Integer o1EntryId = o1.getEntryId();
+				Integer o2EntryId = o2.getEntryId();
+								
+				String o1Kanji = o1.getKanji() != null ? o1.getKanji() : "<null>";
+				String o2Kanji = o2.getKanji() != null ? o2.getKanji() : "<null>";
+				
+				int compare = o1EntryId.compareTo(o2EntryId);;
+				
+				if (compare != 0) {
+					return compare;
+				}
+
+				compare = o1Kanji.compareTo(o2Kanji);;
+				
+				if (compare != 0) {
+					return compare;
+				}
+
+				return 0;
+			}
+		};
+		
+		// sortowanie
+		KanjiKanaPairWrapperListSorter kanjiKanaPairWrapperListSorter = new KanjiKanaPairWrapperListSorter();
 		
 		// indeks slowek
 		dictionaryIndex.kanjiCharacterInfoListIndex = new DictionaryIndex.KanjiCharacterInfoListIndex(kanjiList);		
@@ -734,7 +920,17 @@ public class DictionaryIndexGenerator {
 			}
 			
 			entrySetListForSection.add(polishIndexMapEntry);
-		}		
+		}	
+		
+		// sortowanie elementow w sekcji	
+		if (kanjiKanaPairWrapperListSorter != null) {
+			for (Map.Entry<String, List<Map.Entry<String, List<KanjiKanaPairWrapper>>>> sectionMapEntry : dictionaryIndex.nameEntryListIndex.translateIndexSectionMap.entrySet()) {
+				for (Map.Entry<String, List<KanjiKanaPairWrapper>> sectionMapEntryEntryList : sectionMapEntry.getValue()) {
+										
+					Collections.sort(sectionMapEntryEntryList.getValue(), kanjiKanaPairWrapperListSorter);					
+				}
+			}
+		}
 	}
 	
 	private static boolean isSpecialChar(Character char_) {
