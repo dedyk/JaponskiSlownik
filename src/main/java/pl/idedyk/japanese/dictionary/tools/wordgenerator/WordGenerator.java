@@ -3030,13 +3030,16 @@ public class WordGenerator {
 									// liczenie roznych tlumaczen
 									//wordsCounter += groupByTheSameTranslateGroupEntryList.size();
 									
-									// liczba slow wybrana przez uzytkownika
-									wordsCounter++;
-									
+									// liczba slow wybrana przez uzytkownika									
                                     for (Entry currentEntry : entryListForPolishJapaneseEntry) {
+                                    	
+                                    	if (entryIdSet.contains(currentEntry.getEntryId()) == false && dictionary2Helper.getEntryFromPolishDictionary(currentEntry.getEntryId()) == null) {
+                                    		wordsCounter++;
+                                    	}
+                                    	
                                         entryIdSet.add(currentEntry.getEntryId());
                                     }
-									
+                                    									
 									boolean currentPolishJapaneseEntryInAllPolishJapaneseEntryListForGroupEntry = false;
 																		
 									for (PolishJapaneseEntryAndGroupEntry polishJapaneseEntryAndGroupEntry : allPolishJapaneseEntryListForGroupEntry) {
