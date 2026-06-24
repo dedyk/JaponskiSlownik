@@ -15,6 +15,7 @@ import com.csvreader.CsvReader;
 import pl.idedyk.japanese.dictionary.api.dictionary.DictionaryManagerAbstract;
 import pl.idedyk.japanese.dictionary.api.dictionary.IDatabaseConnector;
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
+import pl.idedyk.japanese.dictionary.api.dictionary.dto.WordCommonList;
 import pl.idedyk.japanese.dictionary.api.dictionary.dto.WordPowerList;
 import pl.idedyk.japanese.dictionary.api.dto.KanjivgEntry;
 import pl.idedyk.japanese.dictionary.api.dto.RadicalInfo;
@@ -106,6 +107,11 @@ public class TestDictionaryManager {
 
 		@Override
 		public WordPowerList getWordPowerList() throws DictionaryException {
+			throw new UnsupportedOperationException();
+		}
+		
+		@Override
+		public WordCommonList getWordCommonList() throws DictionaryException {
 			throw new UnsupportedOperationException();
 		}
 		
