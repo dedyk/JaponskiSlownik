@@ -95,7 +95,7 @@ public class AndroidDictionaryGenerator {
 		Map<String, KanjivgEntry> kanjivgEntryMap = KanjivgReader.readKanjivgSingleXmlFile(kanjivgSingleXmlFile, kanjivgPatchDirFile);
 		
 		List<Entry> dictionary = checkAndSavePolishJapaneseEntries(jmedictCommon,
-				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word.json", "output/word-power.csv",
+				new String[] { "input/word01.csv", "input/word02.csv", "input/word03.csv", "input/word04.csv" } , "input/transitive_intransitive_pairs.csv", "output/word.csv", "output/word.json", "output/word-power.csv", "output/word-common.csv",
 				"output/transitive_intransitive_pairs.csv", "output/word2.xml_%d"); //, "output/word_group.csv");
 				
 		generateKanaEntries(kanjivgEntryMap, "output/kana.csv");
@@ -127,7 +127,7 @@ public class AndroidDictionaryGenerator {
 	private static List<JMdict.Entry> checkAndSavePolishJapaneseEntries(
 			TreeMap<String, EDictEntry> jmedictCommon,
 			String[] sourceFileNames,
-			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationJSONFileName, String destinationPowerFileName,
+			String transitiveIntransitivePairsFileName, String destinationFileName, String destinationJSONFileName, String destinationPowerFileName, String destinationCommonFileName,
 			String transitiveIntransitivePairsOutputFile, String word2XmlFileTemplate /*, String wordGroupOutputFile */) throws Exception {
 
 		System.out.println("checkAndSavePolishJapaneseEntries");
@@ -206,6 +206,11 @@ public class AndroidDictionaryGenerator {
 
 		CsvReaderWriter.generateWordPowerCsv(outputPowerStream, result);
 		
+		// generowanie listy powszechny slow (potrzebne dla testu metoda sm2)
+		FileOutputStream outputCommonFileStream = new FileOutputStream(new File(destinationCommonFileName));
+
+		CsvReaderWriter.generateWordCommonCsv(outputCommonFileStream, result);
+				
 		// generowanie grup slow - wylaczone
 		/*
 		System.out.println("checkAndSavePolishJapaneseEntries: generateWordGroupCsv");

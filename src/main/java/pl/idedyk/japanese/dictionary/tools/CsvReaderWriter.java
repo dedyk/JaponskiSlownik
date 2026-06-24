@@ -397,11 +397,9 @@ public class CsvReaderWriter {
 	}
 	
 	public static void generateWordPowerCsv(OutputStream out, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
-				
 		TreeMap<Integer, List<PolishJapaneseEntry>> groupByPower = new TreeMap<>();
 		
 		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {
-			
 			int power = Integer.MAX_VALUE;
 			
 			List<Attribute> priorityAttributeList = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.PRIORITY);
@@ -413,7 +411,6 @@ public class CsvReaderWriter {
 			List<PolishJapaneseEntry> polishJapaneseEntryListForPower = groupByPower.get(power);
 			
 			if (polishJapaneseEntryListForPower == null) {
-				
 				polishJapaneseEntryListForPower = new ArrayList<>();
 				
 				groupByPower.put(power, polishJapaneseEntryListForPower);
@@ -425,13 +422,10 @@ public class CsvReaderWriter {
 		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
 		
 		for (Integer power : groupByPower.keySet()) {
-
 			List<PolishJapaneseEntry> polishJapaneseEntryListForPower = groupByPower.get(power);
-			
 			List<List<PolishJapaneseEntry>> polishJapaneseEntryListForPowerSplitedList = splitList(polishJapaneseEntryListForPower, 1000);
 			
 			for (List<PolishJapaneseEntry> currentSmallList : polishJapaneseEntryListForPowerSplitedList) {
-
 				csvWriter.write(String.valueOf(power));
 				
 				for (PolishJapaneseEntry polishJapaneseEntry : currentSmallList) {
@@ -444,6 +438,33 @@ public class CsvReaderWriter {
 		
 		csvWriter.close();
 	}
+
+	public static void generateWordCommonCsv(OutputStream out, List<PolishJapaneseEntry> polishJapaneseEntries) throws IOException {
+		
+		List<PolishJapaneseEntry> polishJapaneseEntryCommonList = new ArrayList<>();
+		
+		for (PolishJapaneseEntry polishJapaneseEntry : polishJapaneseEntries) {			
+			boolean isCommon = polishJapaneseEntry.getAttributeList().getAttributeList(AttributeType.COMMON_WORD).size() > 0;
+									
+			if (isCommon == true) {
+				polishJapaneseEntryCommonList.add(polishJapaneseEntry);
+			}			
+		}
+		
+		CsvWriter csvWriter = new CsvWriter(new OutputStreamWriter(out), ',');
+
+		List<List<PolishJapaneseEntry>> polishJapaneseEntryListForCommonSplitedList = splitList(polishJapaneseEntryCommonList, 1000);
+		
+		for (List<PolishJapaneseEntry> currentSmallList : polishJapaneseEntryListForCommonSplitedList) {			
+			for (PolishJapaneseEntry polishJapaneseEntry : currentSmallList) {
+				csvWriter.write(String.valueOf(polishJapaneseEntry.getId()));
+			}
+			
+			csvWriter.endRecord();			
+		}
+				
+		csvWriter.close();
+	}	
 	
 	/*
 	public static void generateWordGroupCsv(OutputStream out, List<DictionaryEntryGroup> dictionaryEntryGroupList) throws IOException {
