@@ -1,13 +1,10 @@
 package pl.idedyk.japanese.dictionary.misc;
 
 import java.util.List;
-import java.util.TreeMap;
 
 import pl.idedyk.japanese.dictionary.common.Helper;
 import pl.idedyk.japanese.dictionary.common.Validator;
-import pl.idedyk.japanese.dictionary.dto.EDictEntry;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
-import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 
 public class ValidateTheSameRomaji {
@@ -31,12 +28,12 @@ public class ValidateTheSameRomaji {
 		//
 		
 		// read edict common
-		TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
+		// TreeMap<String, EDictEntry> jmedictCommon = EdictReader.readEdict("../JapaneseDictionary_additional/edict_sub-utf8");
 
 		// read new jmedict
 		//System.out.println("new jmedict");
 				
-		Helper.generateAdditionalInfoFromEdict(dictionary2Helper, jmedictCommon, polishJapaneseEntries);
+		Helper.generateAdditionalInfoFromEdict(dictionary2Helper, /* jmedictCommon, */ polishJapaneseEntries);
 		
 		//
 				

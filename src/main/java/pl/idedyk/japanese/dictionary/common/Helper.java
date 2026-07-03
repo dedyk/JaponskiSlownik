@@ -55,13 +55,14 @@ import pl.idedyk.japanese.dictionary.dto.ParseAdditionalInfo;
 import pl.idedyk.japanese.dictionary.dto.PolishJapaneseEntry;
 import pl.idedyk.japanese.dictionary.dto.TransitiveIntransitivePair;
 import pl.idedyk.japanese.dictionary.tools.DictionaryEntryJMEdictEntityMapper;
-import pl.idedyk.japanese.dictionary.tools.EdictReader;
 import pl.idedyk.japanese.dictionary2.api.helper.Dictionary2HelperCommon.KanjiKanaPair;
 import pl.idedyk.japanese.dictionary2.common.Dictionary2Helper;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.JMdict;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.KanjiInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.MiscEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.PartOfSpeechEnum;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingAdditionalInfoEnum;
+import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 
 import com.csvreader.CsvWriter;
@@ -137,7 +138,7 @@ public class Helper {
 		return result;
 	}
 
-	public static void generateAdditionalInfoFromEdict(Dictionary2Helper dictionaryHelper, TreeMap<String, EDictEntry> jmedictCommon, List<PolishJapaneseEntry> polishJapaneseEntries) throws Exception {
+	public static void generateAdditionalInfoFromEdict(Dictionary2Helper dictionaryHelper, /* TreeMap<String, EDictEntry> jmedictCommon, */ List<PolishJapaneseEntry> polishJapaneseEntries) throws Exception {
 
 		for (int idx = 0; idx < polishJapaneseEntries.size(); ++idx) {
 
@@ -147,16 +148,13 @@ public class Helper {
 			
 			if (kanjiKanaPair != null) {
 				
-				EDictEntry foundEdictCommon = findEdictEntry(jmedictCommon, currentPolishJapaneseEntry);
+				// EDictEntry foundEdictCommon = findEdictEntry(jmedictCommon, currentPolishJapaneseEntry);
 
 				AttributeList attributeList = currentPolishJapaneseEntry.getAttributeList();
 				
 				// common word
-				if (foundEdictCommon != null) {
-
-					if (attributeList.contains(AttributeType.COMMON_WORD) == false) {
-						attributeList.add(0, AttributeType.COMMON_WORD);
-					}
+				if (isCommonWord(kanjiKanaPair) == true && attributeList.contains(AttributeType.COMMON_WORD) == false) {
+					attributeList.add(0, AttributeType.COMMON_WORD);
 				}
 				
 				// priorytet słowa
@@ -581,7 +579,8 @@ public class Helper {
 		return result;
 	}
 	*/
-
+	
+	/*
 	private static EDictEntry findEdictEntry(TreeMap<String, EDictEntry> jmedict,
 			PolishJapaneseEntry polishJapaneseEntry) {
 
@@ -597,6 +596,7 @@ public class Helper {
 
 		return foundEdict;
 	}
+	*/
 
 	/*
 	@Deprecated
@@ -627,6 +627,25 @@ public class Helper {
 		return result;
 	}
 	*/
+	
+	private static boolean isCommonWord(KanjiKanaPair kanjiKanaPair) {		
+		Set<RelativePriorityEnum> allRelativePriorityEnum = new TreeSet<>();
+		
+		KanjiInfo kanjiInfo = kanjiKanaPair.getKanjiInfo();
+		ReadingInfo readingInfo = kanjiKanaPair.getReadingInfo();
+		
+		if (kanjiInfo != null) {
+			allRelativePriorityEnum.addAll(kanjiInfo.getRelativePriorityList());
+		}
+		
+		if (readingInfo != null) {
+			allRelativePriorityEnum.addAll(readingInfo.getRelativePriorityList());
+		}
+		
+		// zdecydowalem, ze jezeli ta lista nie jest pusta to wtedy slowo jest powszechnego uzytku
+		// wyszlo mi, ze z dostepnych typow musialbym usunac jeden typ, wiec byloby mu smutno, tego typu jest malo, wiec go nie usuwam
+		return allRelativePriorityEnum.size() > 0;		
+	}
 	
 	public static void generateTransitiveIntransitivePairs(
 			List<TransitiveIntransitivePair> transitiveIntransitivePairList,
