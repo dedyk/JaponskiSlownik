@@ -54,6 +54,7 @@ import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfo;
 import pl.idedyk.japanese.dictionary2.jmnedict.xsd.TranslationalInfoTransDet;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.KanjiCharacterInfo;
 import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Kanjidic2;
+import pl.idedyk.japanese.dictionary2.kanjidic2.xsd.Misc2Info;
 
 public class DictionaryIndexGenerator {
 	
@@ -67,7 +68,7 @@ public class DictionaryIndexGenerator {
 		JMdict polishJMdict = dictionary2Helper.getPolishJMdict();
 		
 		List<JMdict.Entry> entryList = new ArrayList<>();		
-		entryList.addAll(polishJMdict.getEntryList()); //.subList(0, 10000));
+		entryList.addAll(polishJMdict.getEntryList().subList(0, 10000));
 		
 		//
 		
@@ -75,7 +76,7 @@ public class DictionaryIndexGenerator {
 		JMnedict jmnedict = dictionary2NameHelper.getJMnedict();
 		
 		List<JMnedict.Entry> nameEntryList = new ArrayList<>();
-		nameEntryList.addAll(jmnedict.getEntryList()); //.subList(0, 10000));
+		nameEntryList.addAll(jmnedict.getEntryList().subList(0, 10000));
 		
 		//
 		
@@ -251,20 +252,6 @@ public class DictionaryIndexGenerator {
 				}
 
 				return 0;
-			}
-
-			private boolean isCommonWord(Entry entry) {
-				MiscInfo misc = entry.getMisc();
-				
-				if (misc != null) {
-					OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = misc.getOldPolishJapaneseDictionary();
-					
-					if (oldPolishJapaneseDictionary != null) {
-						return oldPolishJapaneseDictionary.getAttributeList().stream().filter(f2 -> AttributeType.COMMON_WORD.name().equals(f2.getType()) == true).count() > 0;
-					}
-				}
-				
-				return false;
 			}
 		};
 		
@@ -814,24 +801,69 @@ public class DictionaryIndexGenerator {
 			return;
 		}
 		
-		class KanjiKanaPairWrapperListSorter implements Comparator<DictionaryIndexGenerator.DictionaryIndex.KanjiKanaPairWrapper> {			
-			
+		class KanjiKanaPairWrapperListSorter implements Comparator<KanjiCharacterInfo> {			
+						
 			@Override
-			public int compare(KanjiKanaPairWrapper o1, KanjiKanaPairWrapper o2) {
-				
-				Integer o1EntryId = o1.getEntryId();
-				Integer o2EntryId = o2.getEntryId();
+			public int compare(KanjiCharacterInfo o1, KanjiCharacterInfo o2) {
 								
+				Integer o1EntryId = o1.getId();
+				Integer o2EntryId = o2.getId();
+								
+				Integer o1CommonKanji = isCommonKanji(o1) == true ? 0 : 1;
+				Integer o2CommonKanji = isCommonKanji(o2)  == true ? 0 : 1;
+				
 				String o1Kanji = o1.getKanji() != null ? o1.getKanji() : "<null>";
 				String o2Kanji = o2.getKanji() != null ? o2.getKanji() : "<null>";
 				
-				int compare = o1EntryId.compareTo(o2EntryId);;
+				Integer o1Frequency = o1.getMisc().getFrequency() != null ? o1.getMisc().getFrequency() : Integer.MAX_VALUE;
+				Integer o2Frequency = o2.getMisc().getFrequency() != null ? o2.getMisc().getFrequency() : Integer.MAX_VALUE;
+
+				Integer o1Grade = o1.getMisc().getGrade() != null ? o1.getMisc().getGrade() : Integer.MAX_VALUE;
+				Integer o2Grade = o2.getMisc().getGrade() != null ? o2.getMisc().getGrade() : Integer.MAX_VALUE;
+
+				Integer o1Jlpt = o1.getMisc().getJlpt() != null ? o1.getMisc().getJlpt() : Integer.MAX_VALUE;
+				Integer o2Jlpt = o2.getMisc().getJlpt() != null ? o2.getMisc().getJlpt() : Integer.MAX_VALUE;
+
+				String o1KenteiLevel = o1.getMisc2().getKenteiLevel() != null ? o1.getMisc2().getKenteiLevel().value() : "<null>";
+				String o2KenteiLevel = o2.getMisc2().getKenteiLevel() != null ? o2.getMisc2().getKenteiLevel().value() : "<null>";
+
+				int compare = o1CommonKanji.compareTo(o2CommonKanji);
+				
+				if (compare != 0) {
+					return compare;
+				}
+				
+				compare = o1Frequency.compareTo(o2Frequency);
 				
 				if (compare != 0) {
 					return compare;
 				}
 
-				compare = o1Kanji.compareTo(o2Kanji);;
+				compare = o1Grade.compareTo(o2Grade);
+				
+				if (compare != 0) {
+					return compare;
+				}
+				
+				compare = o1Jlpt.compareTo(o2Jlpt);
+				
+				if (compare != 0) {
+					return compare;
+				}
+				
+				compare = o1KenteiLevel.compareTo(o2KenteiLevel);
+				
+				if (compare != 0) {
+					return compare;
+				}
+				
+				compare = o1EntryId.compareTo(o2EntryId);
+				
+				if (compare != 0) {
+					return compare;
+				}
+
+				compare = o1Kanji.compareTo(o2Kanji);
 				
 				if (compare != 0) {
 					return compare;
@@ -923,9 +955,9 @@ public class DictionaryIndexGenerator {
 		}	
 		
 		// sortowanie elementow w sekcji	
-		if (kanjiKanaPairWrapperListSorter != null) {
-			for (Map.Entry<String, List<Map.Entry<String, List<KanjiKanaPairWrapper>>>> sectionMapEntry : dictionaryIndex.nameEntryListIndex.translateIndexSectionMap.entrySet()) {
-				for (Map.Entry<String, List<KanjiKanaPairWrapper>> sectionMapEntryEntryList : sectionMapEntry.getValue()) {
+		if (kanjiKanaPairWrapperListSorter != null) {			
+			for (Map.Entry<String, List<Map.Entry<String, List<KanjiCharacterInfo>>>> sectionMapEntry : dictionaryIndex.kanjiCharacterInfoListIndex.translateIndexSectionMap.entrySet()) {
+				for (Map.Entry<String, List<KanjiCharacterInfo>> sectionMapEntryEntryList : sectionMapEntry.getValue()) {
 										
 					Collections.sort(sectionMapEntryEntryList.getValue(), kanjiKanaPairWrapperListSorter);					
 				}
@@ -1052,6 +1084,7 @@ public class DictionaryIndexGenerator {
 						SectionEntryIndexEntry sectionEntryIndexEntry = new SectionEntryIndexEntry();
 						
 						sectionEntryIndexEntry.setEntryId(kanjiKanaPairWrapper.getEntryId());
+						sectionEntryIndexEntry.setCommon(kanjiKanaPairWrapper.isComonWord());
 						sectionEntryIndexEntry.setKanji(kanjiKanaPairWrapper.getKanji());
 						sectionEntryIndexEntry.setKana(kanjiKanaPairWrapper.getKana());
 						sectionEntryIndexEntry.setRomaji(kanjiKanaPairWrapper.getRomaji());
@@ -1120,6 +1153,7 @@ public class DictionaryIndexGenerator {
 						SectionEntryIndexEntry sectionEntryIndexEntry = new SectionEntryIndexEntry();
 						
 						sectionEntryIndexEntry.setEntryId(kanjiCharacterInfo.getId());
+						sectionEntryIndexEntry.setCommon(isCommonKanji(kanjiCharacterInfo));
 						sectionEntryIndexEntry.setKanji(kanjiCharacterInfo.getKanji());						
 						
 						sectionEntry.getEntries().add(sectionEntryIndexEntry);
@@ -1149,6 +1183,53 @@ public class DictionaryIndexGenerator {
 				sectionIndexMetadataAdder.accept(sectionIndexMetadata);
 			}
 		}		
+	}
+	
+	private static boolean isCommonWord(Entry entry) {
+		MiscInfo misc = entry.getMisc();
+		
+		if (misc != null) {
+			OldPolishJapaneseDictionaryInfo oldPolishJapaneseDictionary = misc.getOldPolishJapaneseDictionary();
+			
+			if (oldPolishJapaneseDictionary != null) {
+				return oldPolishJapaneseDictionary.getAttributeList().stream().filter(f2 -> AttributeType.COMMON_WORD.name().equals(f2.getType()) == true).count() > 0;
+			}
+		}
+		
+		return false;
+	}
+	
+	private static boolean isCommonKanji(KanjiCharacterInfo kanjiEntry) {
+		
+		pl.idedyk.japanese.dictionary2.kanjidic2.xsd.MiscInfo misc = kanjiEntry.getMisc();
+		
+		if (misc != null) {
+			if (misc.getGrade() != null) {
+				return true;
+			}
+			
+			if (misc.getJlpt() != null) {
+				return true;
+			}
+			
+			if (misc.getFrequency() != null) {
+				return true;
+			}			
+		}
+		
+		Misc2Info misc2 = kanjiEntry.getMisc2();
+		
+		if (misc2 != null) {
+			if (misc2.getGroups().size() > 0) {
+				return true;
+			}
+			
+			if (misc2.getKenteiLevel() != null) {
+				return true;
+			}
+		}
+		
+		return false;
 	}
 
 	//
@@ -1189,6 +1270,10 @@ public class DictionaryIndexGenerator {
 			
 			public Integer getEntryId() {
 				return kanjiKanaPair != null ? kanjiKanaPair.getEntry().getEntryId() : nameKanjiKanaPair.getEntry().getEntryId();
+			}
+			
+			public boolean isComonWord() {
+				return kanjiKanaPair != null ? isCommonWord(kanjiKanaPair.getEntry()) : false;
 			}
 			
 			public String getKanji() {
