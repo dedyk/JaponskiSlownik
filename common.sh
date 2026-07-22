@@ -4,6 +4,9 @@ export JAPANESE_DICTIONARY_API_VERSION=1.0-SNAPSHOT
 export JAPANESE_DICTIONARY_LUCENE_COMMON_VERSION=1.0-SNAPSHOT
 export LUCENE_VERSION=4.7.2
 export GSON_VERSION=2.8.9
+export JAXB_VERSION=4.0.9
+export JAKARTA_XML_BIND_API_VERSION=4.0.5
+export JAKARTA_ACTIVATION_API_VERSION=2.1.4
 
 export CLASSPATH=$HOME/.m2/repository/pl/idedyk/japanese/JapaneseDictionaryAPI/$JAPANESE_DICTIONARY_API_VERSION/JapaneseDictionaryAPI-$JAPANESE_DICTIONARY_API_VERSION.jar:$CLASSPATH
 export CLASSPATH=$HOME/.m2/repository/pl/idedyk/japanese/JapaneseDictionaryLuceneCommon/$JAPANESE_DICTIONARY_LUCENE_COMMON_VERSION/JapaneseDictionaryLuceneCommon-$JAPANESE_DICTIONARY_LUCENE_COMMON_VERSION.jar:$CLASSPATH
@@ -27,3 +30,9 @@ export CLASSPATH=$HOME/.m2/repository/org/apache/lucene/lucene-sandbox/$LUCENE_V
 
 export CLASSPATH=$HOME/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:$CLASSPATH
 export CLASSPATH=$HOME/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:$CLASSPATH
+
+export CLASSPATH=$HOME/.m2/repository/com/sun/xml/bind/jaxb-impl/$JAXB_VERSION/jaxb-impl-$JAXB_VERSION.jar:$CLASSPATH
+export CLASSPATH=$HOME/.m2/repository/com/sun/xml/bind/jaxb-core/$JAXB_VERSION/jaxb-core-$JAXB_VERSION.jar:$CLASSPATH
+
+export CLASSPATH=$HOME/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/$JAKARTA_XML_BIND_API_VERSION/jakarta.xml.bind-api-$JAKARTA_XML_BIND_API_VERSION.jar:$CLASSPATH
+export CLASSPATH=$HOME/.m2/repository/jakarta/activation/jakarta.activation-api/$JAKARTA_ACTIVATION_API_VERSION/jakarta.activation-api-$JAKARTA_ACTIVATION_API_VERSION.jar:$CLASSPATH

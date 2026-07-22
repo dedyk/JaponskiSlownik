@@ -89,7 +89,7 @@ public class GetEntryFromDictionary {
 			String[] entryIdsValueSplited = entryIdsValue.split(",");
 			
 			for (String currentEntryId : entryIdsValueSplited) {
-				entryIds.add(new Integer(currentEntryId));
+				entryIds.add(Integer.valueOf(currentEntryId));
 			}
 			
 		} else if (commandLine.hasOption("file-entry-ids") == true) { 
@@ -99,7 +99,7 @@ public class GetEntryFromDictionary {
 			List<String> fileEntryIds = readFile(fileNameEntryIds);
 
 			for (String currentEntryId : fileEntryIds) {
-				entryIds.add(new Integer(currentEntryId));
+				entryIds.add(Integer.valueOf(currentEntryId));
 			}
 		
 		} else {
@@ -127,7 +127,7 @@ public class GetEntryFromDictionary {
 		}
 
 		if (commandLine.hasOption("check-only-max-ids") == true) {			
-			checkOnlyMaxIds = new Integer(commandLine.getOptionValue("check-only-max-ids"));			
+			checkOnlyMaxIds = Integer.valueOf(commandLine.getOptionValue("check-only-max-ids"));			
 		}
 		
 		if (checkCounter != 1) {			

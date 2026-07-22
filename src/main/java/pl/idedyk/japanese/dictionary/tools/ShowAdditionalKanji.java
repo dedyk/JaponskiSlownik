@@ -144,7 +144,7 @@ public class ShowAdditionalKanji {
 						Integer kanjiCountMapInteger = kanjiCountMap.get(currentKanjiChar);
 
 						if (kanjiCountMapInteger == null) {
-							kanjiCountMapInteger = new Integer(0);
+							kanjiCountMapInteger = Integer.valueOf(0);
 						}
 
 						kanjiCountMapInteger = kanjiCountMapInteger.intValue() + 1;
@@ -187,7 +187,7 @@ public class ShowAdditionalKanji {
 			Integer kanjiCountMapInteger = kanjiCountMap.get(readKanjiDic2KeySetIteratorCurrentKanji);
 
 			if (kanjiCountMapInteger == null) {
-				kanjiCountMapInteger = new Integer(0);
+				kanjiCountMapInteger = Integer.valueOf(0);
 			}
 
 			kanjiCountMap.put(readKanjiDic2KeySetIteratorCurrentKanji, kanjiCountMapInteger);
@@ -220,7 +220,7 @@ public class ShowAdditionalKanji {
 						Integer kanjiCountMapInteger = kanjiCountMap.get(currentKanjiChar);
 
 						if (kanjiCountMapInteger == null) {
-							kanjiCountMapInteger = new Integer(0);
+							kanjiCountMapInteger = Integer.valueOf(0);
 						}
 
 						kanjiCountMap.put(currentKanjiChar, kanjiCountMapInteger);
@@ -258,7 +258,7 @@ public class ShowAdditionalKanji {
 			Integer kanjiCountMapInteger = kanjiCountMap.get(kanji);
 
 			if (kanjiCountMapInteger == null) {
-				kanjiCountMapInteger = new Integer(0);
+				kanjiCountMapInteger = Integer.valueOf(0);
 			}
 
 			kanjiCountMap.put(kanji, kanjiCountMapInteger);

@@ -319,7 +319,7 @@ public class AndroidDictionaryGenerator {
 
 			@Override
 			public int compare(TatoebaSentence o1, TatoebaSentence o2) {
-				return new Long(o1.getId()).compareTo(new Long(o2.getId()));
+				return Long.valueOf(o1.getId()).compareTo(Long.valueOf(o2.getId()));
 			}
 		});
 		
@@ -327,7 +327,7 @@ public class AndroidDictionaryGenerator {
 
 			@Override
 			public int compare(GroupWithTatoebaSentenceList o1, GroupWithTatoebaSentenceList o2) {
-				return new Long(o1.getGroupId()).compareTo(new Long(o2.getGroupId()));
+				return Long.valueOf(o1.getGroupId()).compareTo(Long.valueOf(o2.getGroupId()));
 			}
 		});
 		
@@ -626,7 +626,7 @@ public class AndroidDictionaryGenerator {
 							Integer kanjiCountMapInteger = kanjiCountMap.get(currentKanjiChar);
 
 							if (kanjiCountMapInteger == null) {
-								kanjiCountMapInteger = new Integer(0);
+								kanjiCountMapInteger = Integer.valueOf(0);
 							}
 
 							kanjiCountMapInteger = kanjiCountMapInteger.intValue() + 1;
@@ -679,7 +679,7 @@ public class AndroidDictionaryGenerator {
 			Integer kanjiCountMapInteger = kanjiCountMap.get(readKanjiDic2KeySetIteratorCurrentKanji);
 
 			if (kanjiCountMapInteger == null) {
-				kanjiCountMapInteger = new Integer(0);
+				kanjiCountMapInteger = Integer.valueOf(0);
 			}
 
 			kanjiCountMap.put(readKanjiDic2KeySetIteratorCurrentKanji, kanjiCountMapInteger);

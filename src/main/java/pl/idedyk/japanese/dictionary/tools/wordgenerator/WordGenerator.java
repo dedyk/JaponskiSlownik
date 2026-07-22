@@ -27,11 +27,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
 import javax.xml.namespace.QName;
 
 import org.apache.commons.cli.CommandLine;
@@ -45,6 +40,11 @@ import com.atilika.kuromoji.ipadic.Token;
 import com.atilika.kuromoji.ipadic.Tokenizer;
 import com.csvreader.CsvWriter;
 
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.Unmarshaller;
 import pl.idedyk.japanese.dictionary.api.dictionary.Utils;
 import pl.idedyk.japanese.dictionary.api.dto.DictionaryEntryType;
 import pl.idedyk.japanese.dictionary.common.Helper;
@@ -1448,7 +1448,7 @@ public class WordGenerator {
 						
 						String groupIdString = jmedictRawDataList.get(0).substring(9);
 						
-						Integer groupId = new Integer(groupIdString);
+						Integer groupId = Integer.valueOf(groupIdString);
 						
 						Integer groupIdCount = groupIdsAlreadyAddCount.get(groupId);
 						

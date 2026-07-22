@@ -97,7 +97,7 @@ public class PolishJapaneseEntry extends DictionaryEntry implements Comparable<P
 		for (String currentJMEdictEntry : jmedictRawDataList) {
 			
 			if (currentJMEdictEntry.startsWith("GroupId: ") == true) { // mamy
-				return new Integer(currentJMEdictEntry.substring(9));
+				return Integer.valueOf(currentJMEdictEntry.substring(9));
 				
 			}			
 		}

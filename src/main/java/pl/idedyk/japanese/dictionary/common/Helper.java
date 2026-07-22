@@ -11,8 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import javax.xml.bind.annotation.XmlEnumValue;
-
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -66,6 +64,8 @@ import pl.idedyk.japanese.dictionary2.jmdict.xsd.ReadingInfo;
 import pl.idedyk.japanese.dictionary2.jmdict.xsd.RelativePriorityEnum;
 
 import com.csvreader.CsvWriter;
+
+import jakarta.xml.bind.annotation.XmlEnumValue;
 
 public class Helper {
 
