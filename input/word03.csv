@@ -23576,9 +23576,7 @@ Translate: chromatic color
 Translate: chromatic colour"
 207789,WORD_NOUN,,KATAKANA,,,-,ジェレヌク,,jerenuku,gerenuk długoszyi,"gatunek antylopy z rodziny wołowatych, jedyny przedstawiciel rodzaju gerenuk, Litocranius walleri; słowo pochodzi z języka somalijskiego",DICTIONARY2_SOURCE,,GroupId: 2710180
 207790,WORD_NOUN,,HIRAGANA,,,議会上院,ぎかいじょういん,,gikai jouin,"wyższa izba parlamentu
-senat",,,,"GroupId: 2533820
-Translate: upper house
-Translate: senate"
+senat",,DICTIONARY2_SOURCE,,GroupId: 2533820
 207791,WORD_NOUN,,HIRAGANA,,,白樅,しろもみ,,shiromomi,"jodła kalifornijska
 jodła jednobarwna","gatunek drzewa należący do rodziny sosnowatych, Abies concolor",,,"GroupId: 2197070
 Translate: white fir (Abies concolor)
@@ -27401,8 +27399,7 @@ Translate: dandyism"
 209072,WORD_NOUN,,KATAKANA,,,-,ナイラッチ,,nairacchi,zatrzask nylonowy,"skrót, ang: nylon latch",,,"GroupId: 1924300
 Translate: nylon latch
 MiscInfo: abbr"
-209073,WORD_NOUN,,KATAKANA_HIRAGANA,,,カイアシ類,カイアシるい,,kaiashi rui,widłonogi,"drobne, z reguły planktonowe, morskie i słodkowodne skorupiaki, Copepoda",,,"GroupId: 2242850
-Translate: copepods (small crustaceans of subclass Copepoda)"
+209073,WORD_NOUN,,KATAKANA_HIRAGANA,,,カイアシ類,カイアシるい,,kaiashi rui,widłonogi,"drobne, z reguły planktonowe, morskie i słodkowodne skorupiaki, Copepoda",DICTIONARY2_SOURCE,,GroupId: 2242850
 209074,WORD_NOUN,,HIRAGANA,,,蔦蔓,つたかずら,,tsutakazura,"bluszcz i winorośl
 pnącze
 roślina pnącza",,,,"GroupId: 1796270
@@ -27563,15 +27560,12 @@ Translate: to rub up"
 209117,WORD_NOUN,,HIRAGANA,,,じか談判,じかだんぱん,,jika danpan,"bezpośrednie rozmowy
 bezpośrednie negocjacje
 rozmawianie z kimś osobiście",,DICTIONARY2_SOURCE,DUPLICATE 4387,GroupId: 1431410
-209118,WORD_NOUN,,HIRAGANA,,,橈脚類,かいあしるい,,kaiashi rui,widłonogi,"drobne, z reguły planktonowe, morskie i słodkowodne skorupiaki, Copepoda",,"DUPLICATE 209119
-DUPLICATE 209120","GroupId: 2242850
-Translate: copepods (small crustaceans of subclass Copepoda)"
-209119,WORD_NOUN,,HIRAGANA,,,橈脚類,とうきゃくるい,,toukyaku rui,widłonogi,"drobne, z reguły planktonowe, morskie i słodkowodne skorupiaki, Copepoda",,"DUPLICATE 209118
-DUPLICATE 209120","GroupId: 2242850
-Translate: copepods (small crustaceans of subclass Copepoda)"
-209120,WORD_NOUN,,HIRAGANA,,,橈脚類,じょうきゃくるい,,joukyaku rui,widłonogi,"drobne, z reguły planktonowe, morskie i słodkowodne skorupiaki, Copepoda",,"DUPLICATE 209118
-DUPLICATE 209119","GroupId: 2242850
-Translate: copepods (small crustaceans of subclass Copepoda)"
+209118,WORD_NOUN,,HIRAGANA,,,橈脚類,かいあしるい,,kaiashi rui,widłonogi,"drobne, z reguły planktonowe, morskie i słodkowodne skorupiaki, Copepoda",DICTIONARY2_SOURCE,"DUPLICATE 209119
+DUPLICATE 209120",GroupId: 2242850
+209119,WORD_NOUN,,HIRAGANA,,,橈脚類,とうきゃくるい,,toukyaku rui,widłonogi,"drobne, z reguły planktonowe, morskie i słodkowodne skorupiaki, Copepoda",DICTIONARY2_SOURCE,"DUPLICATE 209118
+DUPLICATE 209120",GroupId: 2242850
+209120,WORD_NOUN,,HIRAGANA,,,橈脚類,じょうきゃくるい,,joukyaku rui,widłonogi,"drobne, z reguły planktonowe, morskie i słodkowodne skorupiaki, Copepoda",DICTIONARY2_SOURCE,"DUPLICATE 209118
+DUPLICATE 209119",GroupId: 2242850
 209121,WORD_NOUN,,HIRAGANA,,,蔦蘿,つたかずら,,tsutakazura,"bluszcz i winorośl
 pnącze
 roślina pnącza",,,,"GroupId: 1796270
@@ -59660,9 +59654,8 @@ Translate: being a bad drunk"
 219739,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,籍に入れる,せきにいれる,,seki ni ireru,mieć nazwisko wpisane do rejestru rodzinnego,,,,"GroupId: 2716600
 Translate: to have a name entered in the family register"
-219740,WORD_NOUN,,HIRAGANA,,,宿曜経,すくようきょう,,sukuyoukyou,Xiuyaojing,indyjski tekst astrologiczny napisany przez Amoghavajrę,,"DUPLICATE 219769
-DUPLICATE 219770","GroupId: 2177860
-Translate: Xiuyaojing (Indian astrological text written by Amoghavajra)"
+219740,WORD_NOUN,,HIRAGANA,,,宿曜経,すくようきょう,,sukuyoukyou,Xiuyaojing,indyjski tekst astrologiczny napisany przez Amoghavajrę,DICTIONARY2_SOURCE,"DUPLICATE 219769
+DUPLICATE 219770",GroupId: 2177860
 219741,WORD_NOUN,,HIRAGANA_KATAKANA,,,日本レコード大賞,にほんレコードたいしょう,,nihon rekoodo taishou,Japan Record Award,"jedna z głównych ceremonii rozdania nagród muzycznych, organizowany i przyznawany przez Stowarzyszenie Kompozytorów Japonii w sposób podobny do amerykańskich nagród Grammy",DICTIONARY2_SOURCE,DUPLICATE 304043,GroupId: 2147970
 219742,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,うちの会社,うちのかいしゃ,,uchi no kaisha,nasza firma,,,,"GroupId: 1860270
@@ -59742,12 +59735,10 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,平織り,ひらおり,,hira ori,"gładkie tkanin
 płótno (tkanina)",,,,"GroupId: 1507440
 Translate: plain fabrics
 Translate: plain weave"
-219769,WORD_NOUN,,HIRAGANA,,,宿曜経,しゅくようきょう,,shukuyoukyou,Xiuyaojing,indyjski tekst astrologiczny napisany przez Amoghavajrę,,"DUPLICATE 219740
-DUPLICATE 219770","GroupId: 2177860
-Translate: Xiuyaojing (Indian astrological text written by Amoghavajra)"
-219770,WORD_NOUN,,HIRAGANA,,,宿曜経,すくようぎょう,,sukuyougyou,Xiuyaojing,indyjski tekst astrologiczny napisany przez Amoghavajrę,,"DUPLICATE 219740
-DUPLICATE 219769","GroupId: 2177860
-Translate: Xiuyaojing (Indian astrological text written by Amoghavajra)"
+219769,WORD_NOUN,,HIRAGANA,,,宿曜経,しゅくようきょう,,shukuyoukyou,Xiuyaojing,indyjski tekst astrologiczny napisany przez Amoghavajrę,DICTIONARY2_SOURCE,"DUPLICATE 219740
+DUPLICATE 219770",GroupId: 2177860
+219770,WORD_NOUN,,HIRAGANA,,,宿曜経,すくようぎょう,,sukuyougyou,Xiuyaojing,indyjski tekst astrologiczny napisany przez Amoghavajrę,DICTIONARY2_SOURCE,"DUPLICATE 219740
+DUPLICATE 219769",GroupId: 2177860
 219771,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,内の会社,うちのかいしゃ,,uchi no kaisha,nasza firma,,,,"GroupId: 1860270
 Translate: our company"
@@ -61538,13 +61529,7 @@ Translate: sperm bank
 Translate: semen bank
 Translate: cryobank"
 220410,WORD_NOUN,,KATAKANA,,,-,サーメン,,saamen,"sperma
-nasienie","kolokwializm, ang: sperm",,,"GroupId: 1055280
-Translate: sperm
-MiscInfo: col
-Translate: semen
-MiscInfo: col
-Translate: cum
-MiscInfo: col"
+nasienie",potocznie; ang: semen,DICTIONARY2_SOURCE,,GroupId: 1055280
 220411,WORD_NOUN,,KATAKANA,,,-,スペルマ,,superuma,"sperma
 nasienie","kolokwializm, słowo pochodzenia niemieckiego",,,"GroupId: 1073150
 Translate: sperm
@@ -129278,8 +129263,8 @@ czytać gorliwie",,DICTIONARY2_SOURCE,,GroupId: 1634670
 czytać gorliwie",,DICTIONARY2_SOURCE,,GroupId: 1634670
 248125,WORD_VERB_U,,HIRAGANA,,,明け渡る,あけわたる,,ake wataru,nastać dzień,,DICTIONARY2_SOURCE,,GroupId: 1674630
 248126,WORD_NOUN,,HIRAGANA,,,工業所有権,こうぎょうしょゆうけん,,kougyou shoyuuken,(prawa do) własności przemysłowej,,DICTIONARY2_SOURCE,,GroupId: 1674980
-248127,WORD_NOUN,,HIRAGANA,,,首っ引き,くびっぴき,,kubippiki,"stałe odwoływanie się do (zwykle 〜で)
-stałe odniesienie do (zwykle 〜で)
+248127,WORD_NOUN,,HIRAGANA,,,首っ引き,くびっぴき,,kubippiki,"stałe odwoływanie się do (zwykle jako 〜で)
+stałe odniesienie do (zwykle jako 〜で)
 gra, w której dwóch graczy owija sobie sznur wokół szyi i szarpie się nawzajem",,DICTIONARY2_SOURCE,,GroupId: 1696690
 248128,WORD_NOUN,,HIRAGANA,,,通貨発行益,つうかはっこうえき,,tsuuka hakkoueki,renta emisyjna,finanse,DICTIONARY2_SOURCE,,GroupId: 2734200
 248129,WORD_NOUN,,HIRAGANA,,,漸深海帯,ぜんしんかいたい,,zenshin kaitai,"strefa batialna
@@ -153024,7 +153009,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-07-23,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-07-24,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
@@ -159419,9 +159404,9 @@ plamki",,DICTIONARY2_SOURCE,,GroupId: 2845942
 264788,WORD_NOUN,,HIRAGANA,,,致命率,ちめいりつ,,chimeiritsu,wskaźnik śmiertelności przypadków,,DICTIONARY2_SOURCE,,GroupId: 2846004
 264789,WORD_NOUN,,HIRAGANA,,,准男爵,じゅんだんしゃく,,jundanshaku,baronet,,DICTIONARY2_SOURCE,,GroupId: 2846037
 264790,WORD_NOUN,,HIRAGANA,,,準男爵,じゅんだんしゃく,,jundanshaku,baronet,,DICTIONARY2_SOURCE,,GroupId: 2846037
-264791,WORD_NOUN,,HIRAGANA,,,酷暑日,こくしょび,,kokushobi,"dzień, w którym temperatura wynosi ponad 35°C (potocznie)
-ekstremalnie gorący dzień (potocznie)
-dzień, w którym temperatura wynosi ponad 40°C (wykorzystywane przez różne agencje)",,DICTIONARY2_SOURCE,,GroupId: 2846055
+264791,WORD_NOUN,,HIRAGANA,,,酷暑日,こくしょび,,kokushobi,"dzień, w którym temperatura wynosi ponad 40°C (pierwotne znaczenie)
+dzień, w którym temperatura wynosi ponad 35°C (potocznie)
+ekstremalnie gorący dzień (potocznie)",,DICTIONARY2_SOURCE,,GroupId: 2846055
 264792,WORD_NOUN,,HIRAGANA,,,飛行帽,ひこうぼう,,hikoubou,"czapka pilota
 kask lotniczy",,DICTIONARY2_SOURCE,,GroupId: 2846089
 264793,WORD_NOUN,,HIRAGANA,,,銀皮症,ぎんぴしょう,,ginpishou,"argyria
@@ -200824,9 +200809,11 @@ skrawki mięsa
 podroby",,DICTIONARY2_SOURCE,,GroupId: 2522060
 286719,WORD_NOUN,,KATAKANA,,,ＯＡ,オー・エー,,oo ee,"automatyzacja biura
 automatyzacja pracy biurowej","ang: office automation, OA",DICTIONARY2_SOURCE,DUPLICATE 21943,GroupId: 2535110
-286720,WORD_NOUN,,KATAKANA,,,ＢＬ,ビー・エル,,bii eru,"komiksy lub powieści o męskiej homoseksualności skierowana do młodych kobiet (skrót; od 和製英語, chłopięcej miłości, ang: boys love, BL)
+286720,"WORD_NOUN
+WORD_ADJECTIVE_F",,KATAKANA,,,ＢＬ,ビー・エル,,bii eru,"komiksy lub powieści o męskiej homoseksualności skierowana do młodych kobiet (skrót; od 和製英語, chłopięcej miłości, ang: boys love, BL)
 konosament (ang: bill of lading, BL)
-morski list przewozowy (ang: bill of lading, BL)",,DICTIONARY2_SOURCE,DUPLICATE 72335,GroupId: 2537350
+morski list przewozowy (ang: bill of lading, BL)
+bezszczotkowy (ang: brushless)",,DICTIONARY2_SOURCE,DUPLICATE 72335,GroupId: 2537350
 286721,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＬＰＥ,エル・ピー・イー,,eru pii ii,epitaksja w fazie ciekłej,"ang: liquid phase epitaxy, LPE",DICTIONARY2_SOURCE,DUPLICATE 186534,GroupId: 2541060
 286722,WORD_NOUN,,KATAKANA_EXCEPTION,,,ＭＢＥ,エム・ビー・イー,,emu bii ii,epitaksja z wiązek molekularnych,"jedna z technik epitaksji polegająca na osadzaniu cienkich warstw półprzewodnikowych z wiązek molekularnych w ultrawysokiej próżni, ang: molecular beam epitaxy, MBE",DICTIONARY2_SOURCE,DUPLICATE 224276,GroupId: 2541070
 286723,WORD_NOUN,,KATAKANA,,,ＩＭＯ,アイ・エム・オー,,ai emu oo,"Międzynarodowa Olimpiada Matematyczna (ang: International Mathematical Olympiad, IMO)
