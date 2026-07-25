@@ -4263,7 +4263,9 @@ bogacz",,DICTIONARY2_SOURCE,,GroupId: 2429350
 302668,WORD_NOUN,,HIRAGANA,,,白へび,しろへび,,shiro hebi,rodzaj japońskiego białego węża,,DICTIONARY2_SOURCE,DUPLICATE 302669,GroupId: 2263510
 302669,WORD_NOUN,,HIRAGANA,,,白へび,はくじゃ,,hakuja,rodzaj japońskiego białego węża,,DICTIONARY2_SOURCE,DUPLICATE 302668,GroupId: 2263510
 302670,WORD_NOUN,,HIRAGANA,,,まる洗い,まるあらい,,maru arai,"pranie kimono (lub futon) bez rozkładania na części
-pranie w całości",,DICTIONARY2_SOURCE,,GroupId: 1216530
+pranie w całości
+umycie (czegoś) w całości
+dokładne umycie",,DICTIONARY2_SOURCE,,GroupId: 1216530
 302671,WORD_NOUN,,HIRAGANA,,,とき洗い,ときあらい,,toki arai,rozprucie i pranie,,DICTIONARY2_SOURCE,,GroupId: 2673140
 302672,WORD_NOUN,,HIRAGANA,,,惣嫁,そうよめ,,souyome,ulicznica,archaizm; w okresie Edo,DICTIONARY2_SOURCE,DUPLICATE 96886,GroupId: 1608840
 302673,WORD_NOUN,,HIRAGANA,,,総嫁,そうよめ,,souyome,ulicznica,archaizm; w okresie Edo,DICTIONARY2_SOURCE,DUPLICATE 96939,GroupId: 1608840
@@ -6227,11 +6229,11 @@ szaleniec",poniżająco; slang,DICTIONARY2_SOURCE,,GroupId: 2862038
 roztwór białego cukru",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2862040
 303737,WORD_NOUN,,HIRAGANA,,,単しゃりべつ,たんしゃりべつ,,tan sharibetsu,"syrop prosty
 roztwór białego cukru",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2862040
-303738,"WORD_ADJECTIVE_NO
-WORD_NOUN",,HIRAGANA,,,理屈抜き,りくつぬき,,rikutsu nuki,"bez żadnego powodu
-bez logiki
-nielogicznie
-???",,DICTIONARY2_SOURCE,,GroupId: 2862041
+303738,"WORD_NOUN
+WORD_EXPRESSION",,HIRAGANA,,,理屈抜き,りくつぬき,,rikutsu nuki,"nie wymagający wyjaśnień
+bez potrzeby uzasadnienia
+zwykły i prosty
+instynktowny",zwykle przysłówkowo jako ～に,DICTIONARY2_SOURCE,,GroupId: 2862041
 303739,WORD_NOUN,,HIRAGANA_KATAKANA,,,単シロップ,たんシロップ,,tan shiroppu,"syrop prosty
 syrop cukrowy",,DICTIONARY2_SOURCE,,GroupId: 2862042
 303740,WORD_NOUN,,HIRAGANA,,,死面,しめん,,shimen,maska śmierci,,DICTIONARY2_SOURCE,,GroupId: 2862043
@@ -65021,3 +65023,211 @@ terminizm",filozofia,DICTIONARY2_SOURCE,,GroupId: 2872296
 326291,WORD_NOUN,,HIRAGANA,,,途足,みちあし,,michiashi,etap trasy,wojskowość,DICTIONARY2_SOURCE,,GroupId: 2872297
 326292,WORD_NOUN,,HIRAGANA,,,粳黍,うるきび,,urukibi,proso niekleiste,,DICTIONARY2_SOURCE,DUPLICATE 326293,GroupId: 2872298
 326293,WORD_NOUN,,HIRAGANA,,,粳黍,うるしきび,,urushikibi,proso niekleiste,,DICTIONARY2_SOURCE,DUPLICATE 326292,GroupId: 2872298
+326294,WORD_NOUN,,HIRAGANA,,,欧州経済領域,おうしゅうけいざいりょういき,,oushuu keizai ryouiki,Europejski Obszar Gospodarczy,,DICTIONARY2_SOURCE,DUPLICATE 290762,GroupId: 2872301
+326295,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,くだを巻く,クダをまく,,kuda o maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 289402
+DUPLICATE 326296
+DUPLICATE 326297",GroupId: 1872080
+326296,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,くだを巻く,クダまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 289402
+DUPLICATE 326295
+DUPLICATE 326297",GroupId: 1872080
+326297,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,くだを巻く,くだまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 289402
+DUPLICATE 326295
+DUPLICATE 326296",GroupId: 1872080
+326298,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,管を巻く,クダをまく,,kuda o maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 200787
+DUPLICATE 326299
+DUPLICATE 326300",GroupId: 1872080
+326299,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,管を巻く,クダまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 200787
+DUPLICATE 326298
+DUPLICATE 326300",GroupId: 1872080
+326300,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,管を巻く,くだまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 200787
+DUPLICATE 326298
+DUPLICATE 326299",GroupId: 1872080
+326301,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,クダを巻く,クダをまく,,kuda o maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 289403
+DUPLICATE 326302
+DUPLICATE 326303",GroupId: 1872080
+326302,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,クダを巻く,クダまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 289403
+DUPLICATE 326301
+DUPLICATE 326303",GroupId: 1872080
+326303,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,クダを巻く,くだまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 289403
+DUPLICATE 326301
+DUPLICATE 326302",GroupId: 1872080
+326304,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,管をまく,くだをまく,,kuda o maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326305
+DUPLICATE 326306
+DUPLICATE 326307",GroupId: 1872080
+326305,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,管をまく,クダをまく,,kuda o maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326304
+DUPLICATE 326306
+DUPLICATE 326307",GroupId: 1872080
+326306,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,管をまく,クダまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326304
+DUPLICATE 326305
+DUPLICATE 326307",GroupId: 1872080
+326307,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,管をまく,くだまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326304
+DUPLICATE 326305
+DUPLICATE 326306",GroupId: 1872080
+326308,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,管巻く,くだをまく,,kuda o maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326309
+DUPLICATE 326310
+DUPLICATE 326311",GroupId: 1872080
+326309,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,管巻く,クダをまく,,kuda o maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326308
+DUPLICATE 326310
+DUPLICATE 326311",GroupId: 1872080
+326310,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,管巻く,クダまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326308
+DUPLICATE 326309
+DUPLICATE 326311",GroupId: 1872080
+326311,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,管巻く,くだまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326308
+DUPLICATE 326309
+DUPLICATE 326310",GroupId: 1872080
+326312,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,くだ巻く,くだをまく,,kuda o maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326313
+DUPLICATE 326314
+DUPLICATE 326315",GroupId: 1872080
+326313,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,くだ巻く,クダをまく,,kuda o maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326312
+DUPLICATE 326314
+DUPLICATE 326315",GroupId: 1872080
+326314,"WORD_VERB_U
+WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,くだ巻く,クダまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326312
+DUPLICATE 326313
+DUPLICATE 326315",GroupId: 1872080
+326315,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,くだ巻く,くだまく,,kuda maku,"bełkotać
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326312
+DUPLICATE 326313
+DUPLICATE 326314",GroupId: 1872080
+326316,WORD_NOUN,,HIRAGANA,,,断罪者,だんざいしゃ,,danzaisha,"osoba potępiająca
+osoba wymierzająca karę
+kat
+oprawca",szczególnie w fikcji,DICTIONARY2_SOURCE,,GroupId: 2872286
+326317,WORD_VERB_RU,,HIRAGANA,,,研ぎ上げる,とぎあげる,,togi ageru,"dokończyć ostrzenie
+doprowadzić do ostrości
+dobrze naostrzyć
+wypolerować",,DICTIONARY2_SOURCE,,GroupId: 2872288
+326318,WORD_VERB_RU,,HIRAGANA,,,研ぎあげる,とぎあげる,,togi ageru,"dokończyć ostrzenie
+doprowadzić do ostrości
+dobrze naostrzyć
+wypolerować",,DICTIONARY2_SOURCE,,GroupId: 2872288
+326319,WORD_VERB_RU,,HIRAGANA,,,研上げる,とぎあげる,,togi ageru,"dokończyć ostrzenie
+doprowadzić do ostrości
+dobrze naostrzyć
+wypolerować",,DICTIONARY2_SOURCE,,GroupId: 2872288
+326320,WORD_VERB_RU,,HIRAGANA,,,とぎ上げる,とぎあげる,,togi ageru,"dokończyć ostrzenie
+doprowadzić do ostrości
+dobrze naostrzyć
+wypolerować",,DICTIONARY2_SOURCE,,GroupId: 2872288
+326321,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,血気にはやる,けっきにはやる,,kekki ni hayaru,"być porywczym
+dać się ponieść młodzieńczemu zapałowi
+być nadmiernie chętnym do działania
+działać pochopnie pod wpływem porywczości",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2872290
+326322,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,血気に逸る,けっきにはやる,,kekki ni hayaru,"być porywczym
+dać się ponieść młodzieńczemu zapałowi
+być nadmiernie chętnym do działania
+działać pochopnie pod wpływem porywczości",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2872290
+326323,WORD_NOUN,,HIRAGANA,,,魔書,ましょ,,masho,"księga czarów
+księga magii
+księga zaklęć",szczególnie w fikcji,DICTIONARY2_SOURCE,DUPLICATE 144017,GroupId: 2872291
+326324,WORD_NOUN,,HIRAGANA,,,怪魔,かいま,,kaima,"potwór
+tajemniczy demon
+zły duch",używane w fikcji,DICTIONARY2_SOURCE,,GroupId: 2872292
+326325,WORD_NOUN,,HIRAGANA,,,平調子,ひらぢょうし,,hiradyoushi,skala hirajōshi,"muzyka; dla koto, shamisen itp.",DICTIONARY2_SOURCE,,GroupId: 2872300
+326326,WORD_NOUN,,KATAKANA_HIRAGANA,,,キャビネ判写真,キャビネはんしゃしん,,kyabine han shashin,"fotografia gabinetowa
+fotografia w formacie gabinetowym",,DICTIONARY2_SOURCE,,GroupId: 2872302
+326327,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,丸ばつ式,まるばつしき,,maru batsu shiki,w stylu prawczy czy fałsz,np. test,DICTIONARY2_SOURCE,,GroupId: 2872303
+326328,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,○×式,まるばつしき,,maru batsu shiki,w stylu prawczy czy fałsz,np. test,DICTIONARY2_SOURCE,,GroupId: 2872303
+326329,WORD_NOUN,,HIRAGANA,,,前鰭,まえびれ,,maebire,przednia płetwa,,DICTIONARY2_SOURCE,,GroupId: 2872304
+326330,WORD_NOUN,,HIRAGANA,,,前びれ,まえびれ,,maebire,przednia płetwa,,DICTIONARY2_SOURCE,,GroupId: 2872304
+326331,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,二本足,にほんあし,,nihon' ashi,dwie nogi,,DICTIONARY2_SOURCE,,GroupId: 2872305
+326332,WORD_NOUN,,HIRAGANA,,,長衣,ちょうい,,choui,"szata
+długa odzież",,DICTIONARY2_SOURCE,DUPLICATE 326333,GroupId: 2872306
+326333,WORD_NOUN,,HIRAGANA,,,長衣,ながぎぬ,,nagaginu,"szata
+długa odzież",,DICTIONARY2_SOURCE,DUPLICATE 326332,GroupId: 2872306
+326334,WORD_NOUN,,HIRAGANA,,,兵法書,へいほうしょ,,heihousho,"książka o strategii wojskowej
+traktat o sztuce wojny",,DICTIONARY2_SOURCE,,GroupId: 2872307
+326335,WORD_VERB_U,,HIRAGANA,,,挑みかかる,いどみかかる,,idomi kakaru,"rzucić się na (kogoś)
+zwrócić się przeciwko
+wdać się w bójkę (z)",,DICTIONARY2_SOURCE,,GroupId: 2872308
+326336,WORD_VERB_U,,HIRAGANA,,,挑み掛かる,いどみかかる,,idomi kakaru,"rzucić się na (kogoś)
+zwrócić się przeciwko
+wdać się w bójkę (z)",,DICTIONARY2_SOURCE,,GroupId: 2872308
+326337,WORD_ADVERB_TO,,HIRAGANA,,,-,ぐびり,,gubiri,"z łykiem
+na raz",onomatopeiczne lub mimetyczne słowo; np. picie alkoholu,DICTIONARY2_SOURCE,,GroupId: 2872309
+326338,WORD_ADVERB_TO,,KATAKANA,,,-,グビリ,,gubiri,"z łykiem
+na raz",onomatopeiczne lub mimetyczne słowo; np. picie alkoholu,DICTIONARY2_SOURCE,,GroupId: 2872309
+326339,WORD_NOUN,,HIRAGANA,,,桃山,ももやま,,momoyama,"momoyama
+tradycyjny japoński słodki wypiek, przygotowywany poprzez zmieszanie pasty z białej fasoli z cukrem, żółtkiem jajka i niewielką ilością mąki (wyjaśnienie)","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2872310
+326340,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,網を張る,あみをはる,,ami o haru,"rzucać sieć
+rozciągać sieć
+uważnie wypatrywać (np. przestępcy) (wyrażenie idiomatyczne)
+zorganizować zasadzkę (wyrażenie idiomatyczne)
+przeszukiwać szeroko (np. w poszukiwaniu informacji) (wyrażenie idiomatyczne)",,DICTIONARY2_SOURCE,,GroupId: 2872311
+326341,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,網をはる,あみをはる,,ami o haru,"rzucać sieć
+rozciągać sieć
+uważnie wypatrywać (np. przestępcy) (wyrażenie idiomatyczne)
+zorganizować zasadzkę (wyrażenie idiomatyczne)
+przeszukiwać szeroko (np. w poszukiwaniu informacji) (wyrażenie idiomatyczne)",,DICTIONARY2_SOURCE,,GroupId: 2872311
+326342,"WORD_VERB_U
+WORD_EXPRESSION",,HIRAGANA,,,あみを張る,あみをはる,,ami o haru,"rzucać sieć
+rozciągać sieć
+uważnie wypatrywać (np. przestępcy) (wyrażenie idiomatyczne)
+zorganizować zasadzkę (wyrażenie idiomatyczne)
+przeszukiwać szeroko (np. w poszukiwaniu informacji) (wyrażenie idiomatyczne)",,DICTIONARY2_SOURCE,,GroupId: 2872311
+326343,WORD_VERB_RU,,HIRAGANA,,,笑み崩れる,えみくずれる,,emi kuzureru,"wywołać szeroki uśmiech
+rozluźnić twarz, by się uśmiechnąć",,DICTIONARY2_SOURCE,,GroupId: 2872312
+326344,WORD_VERB_RU,,HIRAGANA,,,笑みくずれる,えみくずれる,,emi kuzureru,"wywołać szeroki uśmiech
+rozluźnić twarz, by się uśmiechnąć",,DICTIONARY2_SOURCE,,GroupId: 2872312
+326345,WORD_NOUN,,KATAKANA,,,-,パンモロ,,panmoro,"pełny widok majtek
+pełne ujęcie majtek
+całkowicie widoczna bielizna",slang mangowy; od パンツ i モロに見える,DICTIONARY2_SOURCE,,GroupId: 2872314
+326346,WORD_NOUN,,KATAKANA_HIRAGANA,,,-,パンもろ,,panmoro,"pełny widok majtek
+pełne ujęcie majtek
+całkowicie widoczna bielizna",slang mangowy; od パンツ i モロに見える,DICTIONARY2_SOURCE,,GroupId: 2872314
+326347,WORD_NOUN,,HIRAGANA,,,名詮自性,みょうせんじしょう,,myousen jishou,"odpowiadające rzeczywistym cechom (związanym z imieniem)
+będące zgodne z imieniem","buddyzm; np. ktoś o imieniu 善吉, który czyni dobre uczynki",DICTIONARY2_SOURCE,DUPLICATE 326348,GroupId: 2872315
+326348,WORD_NOUN,,HIRAGANA,,,名詮自性,めいせんじしょう,,meisen jishou,"odpowiadające rzeczywistym cechom (związanym z imieniem)
+będące zgodne z imieniem","buddyzm; np. ktoś o imieniu 善吉, który czyni dobre uczynki",DICTIONARY2_SOURCE,DUPLICATE 326347,GroupId: 2872315
+326349,WORD_NOUN,,HIRAGANA,,,名詮自称,みょうせんじしょう,,myousen jishou,"odpowiadające rzeczywistym cechom (związanym z imieniem)
+będące zgodne z imieniem","buddyzm; np. ktoś o imieniu 善吉, który czyni dobre uczynki",DICTIONARY2_SOURCE,DUPLICATE 326350,GroupId: 2872315
+326350,WORD_NOUN,,HIRAGANA,,,名詮自称,めいせんじしょう,,meisen jishou,"odpowiadające rzeczywistym cechom (związanym z imieniem)
+będące zgodne z imieniem","buddyzm; np. ktoś o imieniu 善吉, który czyni dobre uczynki",DICTIONARY2_SOURCE,DUPLICATE 326349,GroupId: 2872315
+326351,WORD_NOUN,,HIRAGANA,,,投げ足,なげあし,,nage ashi,mieć wyciągnięte nogi,,DICTIONARY2_SOURCE,,GroupId: 2872316

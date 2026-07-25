@@ -2370,7 +2370,9 @@ patrzeć pożądliwie",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2674
 200786,WORD_NOUN,,HIRAGANA,,,種種相,しゅじゅそう,,shujusou,różne fazy,,DICTIONARY2_SOURCE,,GroupId: 1686650
 200787,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,管を巻く,くだをまく,,kuda o maku,"bełkotać
-włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 1872080
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326298
+DUPLICATE 326299
+DUPLICATE 326300",GroupId: 1872080
 200788,WORD_NOUN,,HIRAGANA,,,労務管理,ろうむかんり,,roumu kanri,"zarządzanie zasobami ludzkimi
 zarządzanie pracą",,DICTIONARY2_SOURCE,,GroupId: 1796860
 200789,WORD_NOUN,,HIRAGANA,,,制御棒,せいぎょぼう,,seigyobou,pręt kontrolny,jeden z elementów rdzenia reaktora jądrowego służący do kontroli tempa zachodzenia łańcuchowej reakcji rozszczepienia,,,"GroupId: 1784810
@@ -11813,10 +11815,8 @@ Translate: therm"
 203970,WORD_NOUN,,KATAKANA_HIRAGANA,,,システム管理機能,システムかんりきのう,,shisutemu kanri kinou,funkcja zarządzania systemami,,,,"GroupId: 2300920
 Translate: systems management function"
 203971,WORD_NOUN,,KATAKANA_HIRAGANA,,,シュモクザメ属,シュモクザメぞく,,shumoku zame zoku,Sphyrna,rodzaj drapieżnych ryb chrzęstnoszkieletowych z rodziny młotowatych,DICTIONARY2_SOURCE,,GroupId: 2554660
-203972,WORD_NOUN,,KATAKANA,,,-,ショーロ,,shooro,choro,"styl muzyki brazylijskiej, który powstał prawdopodobnie w latach 70. XIX wieku ze zmieszania europejskiej muzyki popularnej i muzyki sprowadzonych z Afryki niewolników",,,"GroupId: 1062600
-Translate: choro
-Translate: chorinho
-Translate: style of Brazilian popular music"
+203972,WORD_NOUN,,KATAKANA,,,-,ショーロ,,shooro,"choro
+styl muzyki brazylijskiej, który powstał prawdopodobnie w latach 70. XIX wieku ze zmieszania europejskiej muzyki popularnej i muzyki sprowadzonych z Afryki niewolników (wyjaśnienie)",muzyka; słowo pochodzenia portugalskiego,DICTIONARY2_SOURCE,,GroupId: 1062600
 203973,WORD_NOUN,,HIRAGANA,,,尸位,しい,,shii,zaniedbywanie urzędowych obowiązków podczas przyjmowania wypłaty,rzadko używane określenie,DICTIONARY2_SOURCE,DUPLICATE 54156,GroupId: 2843143
 203974,WORD_NOUN,,HIRAGANA,,,四維,しい,,shii,"cztery kierunki porządkowe
 cztery główne zasady państwa (przyzwoitość, sprawiedliwość, uczciwość, poczucie wstydu, od Guanzi)",,DICTIONARY2_SOURCE,"DUPLICATE 54156
@@ -21369,8 +21369,8 @@ WORD_EXPRESSION",,HIRAGANA,,,銘を刻む,めいをきざむ,,mei o kizamu,"graw
 grawerować napis",,,,"GroupId: 1911750
 Translate: to engrave an inscription"
 207019,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,盟を結ぶ,めいをむすぶ,,mei o musubu,zawrzeć przymierze,,,,"GroupId: 1911770
-Translate: to form an alliance"
+WORD_EXPRESSION",,HIRAGANA,,,盟を結ぶ,めいをむすぶ,,mei o musubu,"zawrzeć przymierze
+zawrzeć sojusz",,DICTIONARY2_SOURCE,,GroupId: 1911770
 207020,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,例を引く,れいをひく,,rei o hiku,przytoczyć przykład,,DICTIONARY2_SOURCE,,GroupId: 1916550
 207021,WORD_NOUN,,HIRAGANA,,,英文解釈,えいぶんかいしゃく,,eibun kaishaku,interpretacja angielskiego tekstu,,,,"GroupId: 1930660
@@ -27975,10 +27975,7 @@ fundusz rezerwowy na remonty budynków",,DICTIONARY2_SOURCE,,GroupId: 2703660
 209256,WORD_NOUN,,HIRAGANA_KATAKANA,,,中イキ,なかイキ,,naka iki,orgazm pochwowy,slang,,,"GroupId: 2840778
 Translate: vaginal orgasm
 MiscInfo: sl"
-209257,WORD_NOUN,,KATAKANA,,,-,スコアラー,,sukoaraa,sędzia prowadzący punktację,ang: scorer,,,"GroupId: 1069050
-Translate: scorer
-Translate: scorekeeper
-Translate: record keeper"
+209257,WORD_NOUN,,KATAKANA,,,-,スコアラー,,sukoaraa,sędzia prowadzący punktację,sport; ang: scorer,DICTIONARY2_SOURCE,,GroupId: 1069050
 209258,WORD_NOUN,,HIRAGANA,,,過去生,かこせい,,kakosei,poprzednie życie,buddyzm,,,"GroupId: 2837379
 Translate: one's previous life"
 209259,WORD_NOUN,,HIRAGANA,,,合宿所,がっしゅくじょ,,gasshukujo,pensjonat,,,DUPLICATE 222986,"GroupId: 1284860
@@ -28066,10 +28063,7 @@ MiscInfo: uk"
 promocyjny program, w którym kobietom przysługują zniżki w określone dni (np. w kinach) (wyjaśnienie)
 miesiączkowanie (wyrażenie eufemistyczne)
 menstruacja (wyrażenie eufemistyczne)",,DICTIONARY2_SOURCE,,GroupId: 2833745
-209290,WORD_NOUN,,KATAKANA,,,-,スコアラ,,sukoara,sędzia prowadzący punktację,ang: scorer,,,"GroupId: 1069050
-Translate: scorer
-Translate: scorekeeper
-Translate: record keeper"
+209290,WORD_NOUN,,KATAKANA,,,-,スコアラ,,sukoara,sędzia prowadzący punktację,sport; ang: scorer,DICTIONARY2_SOURCE,,GroupId: 1069050
 209291,WORD_NOUN,,HIRAGANA,,,首回り,くびまわり,,kubi mawari,"wokół szyi
 rozmiar szyi",,,,"GroupId: 2181320
 Translate: around the neck
@@ -30458,9 +30452,7 @@ wiek mitologiczny
 czas przed wstąpieniem na tron cesarza Jimmu (japońska mitologia)",,DICTIONARY2_SOURCE,"DUPLICATE 57198
 DUPLICATE 57256",GroupId: 1364740
 210084,WORD_NOUN,,HIRAGANA,,,舌ざわり,したざわり,,shita zawari,"dotyk na języku (jedzenia i picia)
-konsystencja jedzenia",,,,"GroupId: 1788130
-Translate: feel on the tongue (of food or drink)
-Translate: texture"
+konsystencja jedzenia",,DICTIONARY2_SOURCE,,GroupId: 1788130
 210085,WORD_NOUN,,KATAKANA,,,-,インテリゲンツィア,,interigentsia,inteligencja,"warstwa społeczna w Europie Wschodniej żyjąca z pracy umysłowej, wykształcona ostatecznie w XIX wieku głównie ze zubożałej szlachty, ale również ze stanu mieszczańskiego, rzadziej bogatego chłopstwa i podupadłej arystokracji; ros: intelligentsiya",DICTIONARY2_SOURCE,,GroupId: 1023480
 210086,WORD_EXPRESSION,,HIRAGANA,,,という所,というところ,,to iu tokoro,"punkt ...
 miejsce, gdzie ...
@@ -61531,13 +61523,7 @@ Translate: cryobank"
 220410,WORD_NOUN,,KATAKANA,,,-,サーメン,,saamen,"sperma
 nasienie",potocznie; ang: semen,DICTIONARY2_SOURCE,,GroupId: 1055280
 220411,WORD_NOUN,,KATAKANA,,,-,スペルマ,,superuma,"sperma
-nasienie","kolokwializm, słowo pochodzenia niemieckiego",,,"GroupId: 1073150
-Translate: sperm
-MiscInfo: col
-Translate: semen
-MiscInfo: col
-Translate: cum
-MiscInfo: col"
+nasienie",potocznie; słowo pochodzenia niemieckiego,DICTIONARY2_SOURCE,,GroupId: 1073150
 220412,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,命の水,いのちのみず,,inochi no mizu,"woda życia
 życiodajna woda
@@ -63756,10 +63742,7 @@ Translate: Ksitigarbha statue erected to help deliver miscarried and aborted fet
 Translate: distribution factor"
 221184,WORD_NOUN,,KATAKANA,,,-,アクトパス,,akutopasu,ośmiornica,ang: octopus,,,"GroupId: 2156030
 Translate: octopus"
-221185,WORD_NOUN,,KATAKANA,,,-,スカイジャック,,sukaijakku,porwanie samolotu,ang: skyjack,,,"GroupId: 1067510
-Translate: skyjack
-Translate: skyjacking
-Translate: aircraft hijacking"
+221185,WORD_NOUN,,KATAKANA,,,-,スカイジャック,,sukaijakku,porwanie samolotu,ang: skyjack,DICTIONARY2_SOURCE,,GroupId: 1067510
 221186,WORD_NOUN,,HIRAGANA_KATAKANA,,,強調表示フィルタ,きょうちょうひょうじフィルタ,,kyouchou hyouji firuta,filtr uwypuklenia,,,,"GroupId: 2351100
 Translate: highlighting filter"
 221187,WORD_NOUN,,HIRAGANA,,,場の量子論,ばのりょうしろん,,ba no ryoushiron,kwantowa teoria pola,,,,"GroupId: 2168980
@@ -67778,8 +67761,9 @@ Translate: normal temperature"
 Translate: packhorse driver"
 222588,"WORD_NOUN
 WORD_ADVERB",,HIRAGANA,,,明春,みょうしゅん,,myoushun,"przyszła wiosna
-następna wiosna",,,,"GroupId: 1674570
-Translate: next spring"
+następna wiosna
+okres noworoczny w przyszłym roku
+początek przyszłego roku",,DICTIONARY2_SOURCE,,GroupId: 1674570
 222589,WORD_NOUN,,HIRAGANA,,,空馬,からうま,,karauma,nieobciążony koń,,,,"GroupId: 1675930
 Translate: unburdened horse"
 222590,WORD_NOUN,,HIRAGANA,,,黒尖鮫,くろとがりざめ,,kurotogarizame,żarłacz jedwabisty,"gatunek ryby chrzęstnoszkieletowej z rodziny żarłaczowatych, rekin drapieżny, Carcharhinus falciformis",,,"GroupId: 2553880
@@ -68747,17 +68731,11 @@ słoneczne miejsce",,DICTIONARY2_SOURCE,,GroupId: 1601420
 222944,WORD_NOUN,,HIRAGANA,,,植えつけ,うえつけ,,ue tsuke,"sadzenie
 sianie
 zasadzanie
-przesadzanie",,,,"GroupId: 1788460
-Translate: planting
-Translate: planting out
-Translate: transplanting"
+przesadzanie",,DICTIONARY2_SOURCE,,GroupId: 1788460
 222945,WORD_NOUN,,HIRAGANA,,,植付け,うえつけ,,ue tsuke,"sadzenie
 sianie
 zasadzanie
-przesadzanie",,,,"GroupId: 1788460
-Translate: planting
-Translate: planting out
-Translate: transplanting"
+przesadzanie",,DICTIONARY2_SOURCE,,GroupId: 1788460
 222946,WORD_INTERJECTION,,HIRAGANA,,,-,ねえねえ,,neenee,"hej!
 słuchaj",,,,"GroupId: 2826108
 Translate: hey
@@ -95497,7 +95475,9 @@ Translate: for the benefit of both parties"
 (prawnie) osoba niekompetentna",,,,"GroupId: 1673430
 Translate: unqualified or unlicensed person
 Translate: (legally) incompetent"
-232241,WORD_NOUN,,HIRAGANA,,,無籍者,むせきもの,,musekimono,osoba bez zameldowania lub stałego adresu,,DICTIONARY2_SOURCE,,GroupId: 1673790
+232241,WORD_NOUN,,HIRAGANA,,,無籍者,むせきもの,,musekimono,"osoba bez zameldowania lub stałego adresu
+włóczęga
+wędrowiec",,DICTIONARY2_SOURCE,,GroupId: 1673790
 232242,WORD_NOUN,,HIRAGANA,,,額付き,ひたいつき,,hitai tsuki,kształt czoła lub brwi,,DICTIONARY2_SOURCE,DUPLICATE 232243,GroupId: 1685480
 232243,"WORD_EXPRESSION
 WORD_ADJECTIVE_F",,HIRAGANA,,,額付き,がぐつき,,gagu tsuki,oprawiony,np. obraz,DICTIONARY2_SOURCE,DUPLICATE 232242,GroupId: 2462610
@@ -110883,10 +110863,14 @@ morion",,DICTIONARY2_SOURCE,DUPLICATE 146838,GroupId: 2608980
 238596,WORD_NOUN,,HIRAGANA,,,京都五山,きょうとごさん,,kyoutogosan,"Kyoto Gozan
 pięć najważniejszych świątyń Rinzai w Kioto",,DICTIONARY2_SOURCE,DUPLICATE 147240,GroupId: 2094180
 238597,WORD_NOUN,,KATAKANA,,,-,ペア,,pea,gruszka europejska,ang: pear,DICTIONARY2_SOURCE,DUPLICATE 20259,GroupId: 2849141
-238598,WORD_NOUN,,KATAKANA,,,-,スウィートホーム,,suwiito hoomu,słodki dom,ang: sweet home,,,"GroupId: 1067130
-Translate: sweet home"
-238599,WORD_NOUN,,KATAKANA,,,-,スウィート・ホーム,,suwiito hoomu,słodki dom,ang: sweet home,,,"GroupId: 1067130
-Translate: sweet home"
+238598,WORD_NOUN,,KATAKANA,,,-,スウィートホーム,,suwiito hoomu,"dom pełen miłości
+słodki dom
+szczęśliwy dom
+dom nowożeńców",ang: sweet home; ang: sweet home,DICTIONARY2_SOURCE,,GroupId: 1067130
+238599,WORD_NOUN,,KATAKANA,,,-,スウィート・ホーム,,suwiito hoomu,"dom pełen miłości
+słodki dom
+szczęśliwy dom
+dom nowożeńców",ang: sweet home; ang: sweet home,DICTIONARY2_SOURCE,,GroupId: 1067130
 238600,WORD_ADJECTIVE_NO,,HIRAGANA,,,幾ばくか,いくばくか,,iku bakuka,"kilka
 parę
 trochę
@@ -116951,8 +116935,8 @@ rechot żaby",onomatopeiczne lub mimetyczne słowo,DICTIONARY2_SOURCE,,GroupId: 
 241772,WORD_VERB_RU,,HIRAGANA,,,意味づける,いみづける,,imi dukeru,"nadawać sens
 nadawać znaczenie
 oceniać znaczenie",,DICTIONARY2_SOURCE,,GroupId: 1848640
-241773,WORD_NOUN,,HIRAGANA,,,おし花,おしばな,,oshi bana,"kwiat przyciśnięty (sprasowany, np. na kartkę papieru)",,,,"GroupId: 1790310
-Translate: pressed flower"
+241773,WORD_NOUN,,HIRAGANA,,,おし花,おしばな,,oshi bana,"kwiat przyciśnięty
+suszony kwiat","sprasowany, np. na kartkę papieru",DICTIONARY2_SOURCE,,GroupId: 1790310
 241774,WORD_EXPRESSION,,HIRAGANA,,,忙中閑あり,ぼうちゅうかんあり,,bouchuu kan' ari,znajdź chwilę na wypoczynek w aktywnym życiu,przysłowie,DICTIONARY2_SOURCE,,GroupId: 1908950
 241775,WORD_VERB_U,,HIRAGANA,,,取りしきる,とりしきる,,tori shikiru,"zarządzać wszystkim samemu
 kontrolować
@@ -153009,7 +152993,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-07-24,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-07-25,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
@@ -206309,10 +206293,14 @@ przekładać
 odwlekać",,DICTIONARY2_SOURCE,,GroupId: 2098640
 289402,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,くだを巻く,くだをまく,,kuda o maku,"bełkotać
-włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 1872080
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326295
+DUPLICATE 326296
+DUPLICATE 326297",GroupId: 1872080
 289403,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,クダを巻く,くだをまく,,kuda o maku,"bełkotać
-włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 1872080
+włóczyć się po pijanemu",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,"DUPLICATE 326301
+DUPLICATE 326302
+DUPLICATE 326303",GroupId: 1872080
 289404,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA_KATAKANA,,,如何にかなる,どーにかなる,,doo ni kanaru,"wyjść z tego cało
 dbać o siebie
@@ -208432,7 +208420,7 @@ encyklopedia seksu
 podręcznik do seksu",,DICTIONARY2_SOURCE,,GroupId: 2858615
 290761,WORD_NOUN,,HIRAGANA,,,欧州銀行連盟,おうしゅうぎんこうれんめい,,oushuu ginkou renmei,Europejska Federacja Bankowa,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5149360
 290762,WORD_NOUN,,HIRAGANA,,,欧州経済領域,おうしゅうけいざいりょういき,,oushuu keizai ryouiki,"Europejski Obszar Gospodarczy
-EOG","nazwa organizacji; strefa wolnego handlu i wspólny rynek, obejmujące państwa Unii Europejskiej i Europejskiego Stowarzyszenia Wolnego Handlu, z wyjątkiem Szwajcarii",DICTIONARY2_SOURCE,,GroupId: 5149361
+EOG","nazwa organizacji; strefa wolnego handlu i wspólny rynek, obejmujące państwa Unii Europejskiej i Europejskiego Stowarzyszenia Wolnego Handlu, z wyjątkiem Szwajcarii",DICTIONARY2_SOURCE,DUPLICATE 326294,GroupId: 5149361
 290763,WORD_NOUN,,HIRAGANA,,,欧州決済同盟,おうしゅうけっさいどうめい,,oushuu kessai doumei,European Clearing Union,nazwa organizacji,DICTIONARY2_SOURCE,,GroupId: 5149362
 290764,WORD_NOUN,,HIRAGANA,,,欧州原子核研究機関,おうしゅうげんしかくけんきゅうきかん,,oushuu genshikaku kenkyuu kikan,"Europejska Organizacja Badań Jądrowych CERN
 Organisation européenne pour la recherche nucléaire
