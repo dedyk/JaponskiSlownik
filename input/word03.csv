@@ -4709,9 +4709,7 @@ Translate: tonnage"
 201576,"WORD_VERB_IRREGULAR
 WORD_EXPRESSION",,HIRAGANA,,,久闊を叙する,きゅうかつをじょする,,kyuukatsu o jo suru,przepraszać za długie zaniedbywanie przyjaciół,,,,"GroupId: 2572460
 Translate: to apologize for a long neglect of friends (apologise)"
-201577,WORD_NOUN,,HIRAGANA,,,蓮芋,はすいも,,hasuimo,kolokazja olbrzymia,"roślina, Colocasia gigantea",,,"GroupId: 2409530
-Translate: giant elephant ear (species of taro, Colocasia gigantea)
-MiscInfo: uk"
+201577,WORD_NOUN,,HIRAGANA,,,蓮芋,はすいも,,hasuimo,kolokazja olbrzymia,"pisanie zwykle z użyciem kana; roślina, Colocasia gigantea",DICTIONARY2_SOURCE,,GroupId: 2409530
 201578,WORD_NOUN,,HIRAGANA,,,政策官庁,せいさくかんちょう,,seisaku kanchou,"administracyjna agencja rządowa
 agencja rządowa kształtująca politykę",,,,"GroupId: 2713860
 Translate: administrative government agency
@@ -4785,12 +4783,8 @@ Translate: oilcan"
 zaraza
 epidemia",archaizm,DICTIONARY2_SOURCE,,GroupId: 2736590
 201602,WORD_NOUN,,KATAKANA,,,-,トモエガ,,tomoega,Spirama retorta,pisanie zwykle z użyciem kana; gatunek ćmy,DICTIONARY2_SOURCE,,GroupId: 2840347
-201603,WORD_NOUN,,HIRAGANA,,,白芋,はすいも,,hasuimo,kolokazja olbrzymia,"roślina, Colocasia gigantea",,,"GroupId: 2409530
-Translate: giant elephant ear (species of taro, Colocasia gigantea)
-MiscInfo: uk"
-201604,WORD_NOUN,,KATAKANA,,,-,ハスイモ,,hasuimo,kolokazja olbrzymia,"roślina, Colocasia gigantea",,,"GroupId: 2409530
-Translate: giant elephant ear (species of taro, Colocasia gigantea)
-MiscInfo: uk"
+201603,WORD_NOUN,,HIRAGANA,,,白芋,はすいも,,hasuimo,kolokazja olbrzymia,"pisanie zwykle z użyciem kana; roślina, Colocasia gigantea",DICTIONARY2_SOURCE,,GroupId: 2409530
+201604,WORD_NOUN,,KATAKANA,,,-,ハスイモ,,hasuimo,kolokazja olbrzymia,"pisanie zwykle z użyciem kana; roślina, Colocasia gigantea",DICTIONARY2_SOURCE,,GroupId: 2409530
 201605,WORD_NOUN,,KATAKANA,,,-,パルミラヤシ,,parumira yashi,"winodań wachlarzowata
 borasus wachlarzowaty
 winna palma","gatunek drzewa z rodziny arekowatych, pierwotnie występująca od Indii po Półwysep Malajski, Borassus flabellifer",,,"GroupId: 2235070
@@ -20206,11 +20200,8 @@ Translate: identifying an individual
 Translate: pinpointing an individual"
 206636,WORD_NOUN,,HIRAGANA,,,時余,じよ,,jiyo,"więcej niż godzina
 ponad godzinę",,DICTIONARY2_SOURCE,,GroupId: 2843083
-206637,WORD_NOUN,,HIRAGANA,,,一つ書き,ひとつがき,,hitotsu gaki,"przedmiot
-wyszczególnienie",,,,"GroupId: 1160850
-Translate: an item
-Translate: itemization
-Translate: itemisation"
+206637,WORD_NOUN,,HIRAGANA,,,一つ書き,ひとつがき,,hitotsu gaki,"pozycja
+wyszczególnienie",,DICTIONARY2_SOURCE,,GroupId: 1160850
 206638,WORD_NOUN,,HIRAGANA,,,一泊行軍,いっぱくこうぐん,,ippaku kougun,nocny marsz,wojskowość,DICTIONARY2_SOURCE,,GroupId: 1165710
 206639,WORD_NOUN,,HIRAGANA,,,会見記,かいけんき,,kaikenki,"zapis wywiadu
 zapis rozmowy",,DICTIONARY2_SOURCE,,GroupId: 1198510
@@ -76426,8 +76417,7 @@ zapotrzebowanie konsumenckie",,DICTIONARY2_SOURCE,,GroupId: 1995370
 (obserwowanie z) żywym zainteresowaniem",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2833665
 225675,WORD_NOUN,,HIRAGANA,,,非制限用法,ひせいげんようほう,,hiseigen' youhou,niedefiniujący,względnie użycie zaimków,,,"GroupId: 2254040
 Translate: non-restrictive (of relative pronoun use)"
-225676,WORD_NOUN,,HIRAGANA,,,葉状植物,ようじょうしょくぶつ,,youjou shokubutsu,plechowiec,,,,"GroupId: 2512970
-Translate: thallophyte"
+225676,WORD_NOUN,,HIRAGANA,,,葉状植物,ようじょうしょくぶつ,,youjou shokubutsu,plechowiec,,DICTIONARY2_SOURCE,,GroupId: 2512970
 225677,WORD_NOUN,,HIRAGANA_KATAKANA,,,分子線エピタキシー,ぶんしせんエピタキシー,,bunshisen' epitakishii,"epitaksja z wiązek molekularnych
 MBE (ang: molecular beam epitaxy)",jedna z technik epitaksji polegająca na osadzaniu cienkich warstw półprzewodnikowych z wiązek molekularnych w ultrawysokiej próżni,,,"GroupId: 2092800
 Translate: molecular beam epitaxy
@@ -80167,9 +80157,10 @@ piosenka wpadająca w ucho",ang: killer tune,DICTIONARY2_SOURCE,,GroupId: 284675
 226952,WORD_NOUN,,HIRAGANA,,,在籍証明書,ざいせきしょうめいしょ,,zaiseki shoumeisho,zaświadczenie o zapisie (rejestracji) do szkoły,,,,"GroupId: 2142210
 Translate: certificate of enrollment
 Translate: certificate of (school) registration"
-226953,WORD_VERB_U,,HIRAGANA,,,焼き直す,やきなおす,,yaki naosu,grilować ponownie,,,,"GroupId: 1847650
-Translate: to grill again
-Translate: to rehash"
+226953,WORD_VERB_U,,HIRAGANA,,,焼き直す,やきなおす,,yaki naosu,"grilować ponownie
+piec ponownie
+przerabiać
+odnawiać",,DICTIONARY2_SOURCE,,GroupId: 1847650
 226954,WORD_NOUN,,HIRAGANA,,,高付加価値化,こうふかかちか,,koufukakachika,dodawanie wartości,,,,"GroupId: 2394990
 Translate: adding of value"
 226955,WORD_NOUN,,HIRAGANA,,,子供番組,こどもばんぐみ,,kodomo bangumi,program (telewizyjny) dla dzieci,,,,"GroupId: 2846670
@@ -80213,9 +80204,10 @@ Translate: first full moon of the year"
 226972,WORD_NOUN,,KATAKANA,,,-,キラー・チューン,,kiraa chuun,"przebojowa piosenka
 utwór wpadający w ucho
 piosenka wpadająca w ucho",ang: killer tune,DICTIONARY2_SOURCE,,GroupId: 2846758
-226973,WORD_VERB_U,,HIRAGANA,,,焼きなおす,やきなおす,,yaki naosu,grilować ponownie,,,,"GroupId: 1847650
-Translate: to grill again
-Translate: to rehash"
+226973,WORD_VERB_U,,HIRAGANA,,,焼きなおす,やきなおす,,yaki naosu,"grilować ponownie
+piec ponownie
+przerabiać
+odnawiać",,DICTIONARY2_SOURCE,,GroupId: 1847650
 226974,WORD_NOUN,,HIRAGANA,,,子ども番組,こどもばんぐみ,,kodomo bangumi,program (telewizyjny) dla dzieci,,,,"GroupId: 2846670
 Translate: children's (TV) show
 Translate: children's program"
@@ -80899,10 +80891,7 @@ Translate: surpassing one's parents"
 jeden pęczek
 jedna wiązka
 jedna paczka
-jeden zestaw",,,,"GroupId: 1161480
-Translate: one bunch
-Translate: one bundle
-Translate: one lot"
+jeden zestaw",,DICTIONARY2_SOURCE,,GroupId: 1161480
 227211,WORD_EXPRESSION,,HIRAGANA,,,内疎外親,ないそがいしん,,naiso gaishin,"powierzchownie serdeczny, ale w rzeczywistości obojętny",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 2396460
 227212,WORD_NOUN,,HIRAGANA,,,聴覚中枢,ちょうかくちゅうすう,,choukaku chuusuu,ośrodek słuchowy (mózgu),,,,"GroupId: 2764840
 Translate: auditory center (of the brain)
@@ -87125,13 +87114,7 @@ Translate: transplant coordinator"
 Translate: small lot consignment"
 229344,WORD_NOUN,,HIRAGANA,,,一汁一菜,いちじゅういっさい,,ichijuu issai,"jednodaniowy posiłek
 prosty posiłek
-prosta dieta",,,,"GroupId: 1163280
-Translate: one-plate meal
-MiscInfo: yoji
-Translate: simple meal
-MiscInfo: yoji
-Translate: austerity diet
-MiscInfo: yoji"
+prosta dieta",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 1163280
 229345,WORD_NOUN,,KATAKANA,,,-,マルセラバタフライフィッシュ,,marusera batafuraifisshu,Prognathodes marcellae,"gatunek ryby, ang: Marcella butterflyfish",DICTIONARY2_SOURCE,,GroupId: 2545280
 229346,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,自動解凍,じどうかいとう,,jidou kaitou,samorozpakowujący się plik,informatyka,,,"GroupId: 1983370
@@ -93938,7 +93921,7 @@ zapewniać udogodnienia
 Translate: to provide facilities
 Translate: to administer to the convenience of"
 231740,WORD_NOUN,,KATAKANA,,,沖縄大和口,ウチナーヤマトグチ,,uchinaa yamato guchi,"odmiana języka japońskiego z Okinawy
-okinawska odmiana języka japońskiego",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 319986,GroupId: 2828884
+okinawska odmiana języka japońskiego",pisanie zwykle z użyciem kana; dialekt Ryuukyuu,DICTIONARY2_SOURCE,DUPLICATE 319986,GroupId: 2828884
 231741,WORD_NOUN,,HIRAGANA_KATAKANA,,,中期国債ファンド,ちゅうきこくさいファンド,,chuuki kokusai fando,"średnioterminowy fundusz państwowych papierów wartościowych
 średnioterminowy krajowy fundusz obligacji",,,,"GroupId: 2661790
 Translate: medium-term government securities fund
@@ -94326,8 +94309,7 @@ bitwa piechoty
 bitwa między piechotą",termin historyczny,DICTIONARY2_SOURCE,,GroupId: 2848158
 231868,WORD_NOUN,,HIRAGANA_KATAKANA,,,一次キャッシュ,いちじキャッシュ,,ichiji kyasshu,"podstawowa pamięć podręczna
 cache pierwszego poziomu",informatyka; ang: level 1 cache,DICTIONARY2_SOURCE,,GroupId: 2341190
-231869,WORD_NOUN,,HIRAGANA,,,島名,とうめい,,toumei,nazwa wyspy,,,,"GroupId: 2848220
-Translate: name of an island"
+231869,WORD_NOUN,,HIRAGANA,,,島名,とうめい,,toumei,nazwa wyspy,,DICTIONARY2_SOURCE,,GroupId: 2848220
 231870,WORD_NOUN,,HIRAGANA,,,帰命,きみょう,,kimyou,"poświęcenie swojego życia Buddzie
 przestrzeganie nauk Buddy",buddyzm; tłumaczenie sanskrytu 'namas',DICTIONARY2_SOURCE,,GroupId: 2848245
 231871,WORD_NOUN,,HIRAGANA,,,童形,どうぎょう,,dougyou,"chłopiec z niezwiązanymi włosami (przed ceremonią wejścia w dorosłość)
@@ -96244,12 +96226,9 @@ Translate: node"
 232542,WORD_NOUN,,HIRAGANA,,,根の堅州国,ねのかたすくに,,ne no katasu kuni,"zaświaty
 świat zmarłych
 kraina umarłych",archaizm,DICTIONARY2_SOURCE,,GroupId: 2538090
-232543,WORD_NOUN,,HIRAGANA,,,一つ心,ひとつこころ,,hitotsukokoro,"jeden umysł
+232543,WORD_NOUN,,HIRAGANA,,,一つ心,ひとつこころ,,hitotsu kokoro,"jeden umysł
 całe serce
-z całego serca",,,,"GroupId: 1160860
-Translate: one mind
-Translate: the whole heart
-Translate: wholeheartedness"
+z całego serca",,DICTIONARY2_SOURCE,,GroupId: 1160860
 232544,WORD_NOUN,,KATAKANA_HIRAGANA,,,スリム型ＰＣ,スリムがたピーシー,,surimu gata piishii,komputer PC typu slim,informatyka,DICTIONARY2_SOURCE,,GroupId: 2304750
 232545,WORD_NOUN,,HIRAGANA,,,反射波,はんしゃは,,hanshaha,"fala odbita
 echo",,,,"GroupId: 2128220
@@ -152880,7 +152859,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-07-31,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-08-01,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
@@ -165331,9 +165310,12 @@ założenie szogunatu",,DICTIONARY2_SOURCE,,GroupId: 2853630
 268179,WORD_NOUN,,KATAKANA,,,-,グルナッシュ・ブラン,,gurunasshu buran,Grenache blanc,gatunek winorośli winnej; słowo pochodzenia francuskiego,DICTIONARY2_SOURCE,,GroupId: 2832567
 268180,WORD_NOUN,,HIRAGANA,,,旅客施設使用料,りょかくしせつしようりょう,,ryokaku shisetsu shiyouryou,"opłata za obiekt dla pasażerów
 opłata za korzystanie z infrastruktury dla pasażerów",lotnictwo,DICTIONARY2_SOURCE,,GroupId: 2854439
-268181,WORD_VERB_U,,HIRAGANA,,,寄こす,よこす,,yokosu,"wysyłać
+268181,"WORD_VERB_U
+WORD_VERB_AUX",,HIRAGANA,,,寄こす,よこす,,yokosu,"wysyłać
 przekazywać
-wręczać (np. pieniądze)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1013140
+wręczać (np. pieniądze)
+wskazuje, że czynność jest skierowana do mówiącego (po formie te czasownika, często z niuansem, że działanie to ma charakter jednostronny lub jest niepożądane)
+wskazuje, że przedmiot czynności dociera do mówiącego lub jest przez niego odbierany (po formie te czasownika, często z niuansem, że działanie to ma charakter jednostronny lub jest niepożądane)",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1013140
 268182,WORD_NOUN,,KATAKANA_HIRAGANA,,,ブルジョア社会,ブルジョアしゃかい,,burujoa shakai,społeczeństwo burżuazyjne,,DICTIONARY2_SOURCE,,GroupId: 2227340
 268183,WORD_NOUN,,HIRAGANA,,,青天白日旗,せいてんはくじつき,,seiten hakujitsuki,"Błękitne niebo z białym słońcem
 flaga partyjna i godło Kuomintangu (Chińskiej Partii Nacjonalistycznej) (wyjaśnienie)",,DICTIONARY2_SOURCE,,GroupId: 2831925
@@ -216140,8 +216122,8 @@ niezdarne dziecko",slang; termin związany z kulturą otaku,DICTIONARY2_SOURCE,D
 niezdarne dziecko",slang; termin związany z kulturą otaku,DICTIONARY2_SOURCE,DUPLICATE 294694,GroupId: 2717210
 294694,WORD_NOUN,,KATAKANA_HIRAGANA,,,どじっ娘,ドジっこ,,dojikko,"niezdarna dziewczyna
 niezdarne dziecko",slang; termin związany z kulturą otaku,DICTIONARY2_SOURCE,DUPLICATE 294693,GroupId: 2717210
-294695,WORD_NOUN,,HIRAGANA,,,ガイ者,がいしゃ,,gaisha,ofiara przestępstwa,"szczególnie morderstwa, policyjny żargon",DICTIONARY2_SOURCE,,GroupId: 2089100
-294696,WORD_NOUN,,KATAKANA,,,-,ガイシャ,,gaisha,ofiara przestępstwa,"szczególnie morderstwa, policyjny żargon",DICTIONARY2_SOURCE,,GroupId: 2089100
+294695,WORD_NOUN,,HIRAGANA,,,ガイ者,がいしゃ,,gaisha,ofiara przestępstwa,"slang; szczególnie morderstwa, policyjny żargon",DICTIONARY2_SOURCE,,GroupId: 2089100
+294696,WORD_NOUN,,KATAKANA,,,-,ガイシャ,,gaisha,ofiara przestępstwa,"slang; szczególnie morderstwa, policyjny żargon",DICTIONARY2_SOURCE,,GroupId: 2089100
 294697,WORD_VERB_RU,,HIRAGANA,,,馳参じる,はせさんじる,,hase sanjiru,"spieszyć się aby dołączyć
 spieszyć się na wizytę",,DICTIONARY2_SOURCE,,GroupId: 1422110
 294698,WORD_NOUN,,HIRAGANA,,,かわら版,かわらばん,,kawaraban,kawaraban,termin historyczny; rodzaj jednostronicowej gazety z okresu Edo,DICTIONARY2_SOURCE,,GroupId: 1867200
