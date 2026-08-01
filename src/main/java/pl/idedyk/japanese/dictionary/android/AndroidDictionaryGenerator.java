@@ -1142,8 +1142,11 @@ public class AndroidDictionaryGenerator {
 		//
 		// należy w pliku /usr/share/texmf-dist/web2c/texmf.cnf
 		//
-		// Zwiększyc pool_size, np:
-		// pool_size = 9250000
+		// Zwiększyc parametry, np:
+		// main_memory = 500000000
+		// pool_size = 129250000
+		// max_strings = 50000000
+		// save_size  = 20000000
 		//
 		// A następnie uruchomić z root-a:
 		// fmtutil-sys --all
