@@ -43511,11 +43511,14 @@ wyobrażać sobie
 myśleć o",,DICTIONARY2_SOURCE,,GroupId: 1497360
 8272,WORD_VERB_RU,,HIRAGANA,,,浮かれる,うかれる,,ukareru,"weselić się
 być w dobrym humorze",,DICTIONARY2_SOURCE,,GroupId: 1497370
-8273,WORD_ADJECTIVE_I,,HIRAGANA,,,麗しい,うるわしい,,uruwashii,"piękny
-ładny
-śliczny
-cieszący serce
-miły",,DICTIONARY2_SOURCE,,GroupId: 1557920
+8273,WORD_ADJECTIVE_I,,HIRAGANA,,,麗しい,うるわしい,,uruwashii,"piękny (np. wygląd, głos, postawa i etc)
+ładny (np. wygląd, głos, postawa i etc)
+śliczny (np. wygląd, głos, postawa i etc)
+uroczy (np. wygląd, głos, postawa i etc)
+cieszący serce (w odniesieniu do związku, sytuacji itp.)
+miły (w odniesieniu do związku, sytuacji itp.)
+wspaniały (w odniesieniu do związku, sytuacji itp.)
+godny podziwu (w odniesieniu do związku, sytuacji itp.)",,DICTIONARY2_SOURCE,,GroupId: 1557920
 8274,WORD_ADJECTIVE_NA,,HIRAGANA,,,麗らか,うららか,,uraraka,"jasny (pogoda, nastrój, głos itp.)
 przejrzysty
 wyraźny
@@ -62452,7 +62455,11 @@ konstytucyjny",,DICTIONARY2_SOURCE,,GroupId: 1284750
 12998,WORD_NOUN,,HIRAGANA,,,接触,せっしょく,,sesshoku,"dotyk
 dotykanie
 kontakt
-styczność",,DICTIONARY2_SOURCE,,GroupId: 1385450
+styczność
+kontakty (z ludźmi)
+relacje (z ludźmi)
+związki (z ludźmi)
+styczność (matematyka)",,DICTIONARY2_SOURCE,,GroupId: 1385450
 12999,WORD_VERB_IRREGULAR,,HIRAGANA,,,接触する,せっしょくする,,sesshoku suru,"dotykać
 kontaktować się",,IGNORE_NO_JMEDICT,,
 13000,WORD_NOUN,,HIRAGANA,,,決裁,けっさい,,kessai,"sankcja
@@ -148330,9 +148337,7 @@ rolowane sushi jedzone podczas setsubun (pierwszego dnia wiosny) (wyjaśnienie)"
 Translate: New Year's visit to a shrine or temple which lies in a favorable (favourable) or lucky direction"
 33350,WORD_NOUN,,HIRAGANA,,,血涙,けつるい,,ketsurui,"gorzkie łzy
 rozgoryczone łzy
-krwawe łzy",,,,"GroupId: 1255410
-Translate: bitter tears
-Translate: tears of blood"
+krwawe łzy (dosłownie)",,DICTIONARY2_SOURCE,,GroupId: 1255410
 33351,"WORD_ADJECTIVE_NO
 WORD_NOUN",,HIRAGANA,,,使い捨て,つかいずて,,tsukai zute,"jednorazowy
 jednorazowego użytku
@@ -149552,7 +149557,8 @@ rzecz, którą się pragnie",,IGNORE_NO_JMEDICT,,
 33679,WORD_NOUN,,HIRAGANA,,,星月夜,ほしづきよ,,hoshidukiyo,"gwiaździsta noc
 gwieździsta noc",,DICTIONARY2_SOURCE,DUPLICATE 33735,GroupId: 1663410
 33680,WORD_NOUN,,HIRAGANA,,,星夜,せいや,,seiya,"gwiaździsta noc
-gwieździsta noc",,DICTIONARY2_SOURCE,,GroupId: 1376440
+gwieździsta noc
+rozgwieżdżona noc",formalny lub literacki termin,DICTIONARY2_SOURCE,,GroupId: 1376440
 33681,WORD_NOUN,,KATAKANA,,,-,ダンプリング,,danpuringu,"kluska
 kluski
 knedle
@@ -166776,8 +166782,7 @@ zjadliwy
 zjadliwe",,DICTIONARY2_SOURCE,,GroupId: 1358650
 38442,WORD_NOUN,,HIRAGANA,,,鯛,たい,,tai,prażmowate,"pisanie zwykle z użyciem kana; rodzina głównie morskich ryb okoniokształtnych, szczególnie Pagrus major",DICTIONARY2_SOURCE,"DUPLICATE 41291
 EDICT_DUPLICATE 1628",GroupId: 1411550
-38443,WORD_NOUN,,HIRAGANA,,,取り鍋,とりなべ,,torinabe,???,,,,"GroupId: 2571520
-xxx"
+38443,WORD_NOUN,,HIRAGANA,,,取り鍋,とりなべ,,tori nabe,chochla do nalewania,,DICTIONARY2_SOURCE,,GroupId: 2571520
 38444,WORD_NOUN,,HIRAGANA,,,鋳込み,いこみ,,ikomi,"odlanie
 odlewanie
 odlew
@@ -180431,7 +180436,8 @@ xxx"
 42486,WORD_NOUN,,HIRAGANA,,,計画的陳腐化,けいかくてきちんぷか,,keikakuteki chinpuka,"planowane starzenie
 planowane postarzanie produktu","strategia producenta, mająca na celu takie projektowanie towarów, aby miały one ograniczony czas użytecznego życia, po tym zaś okresie stawały się niesprawne, a często nieopłacalne w naprawie",DICTIONARY2_SOURCE,,GroupId: 2815250
 42487,WORD_NOUN,,HIRAGANA,,,志願者,しがんしゃ,,shigansha,"aplikant
-kandydat",,DICTIONARY2_SOURCE,,GroupId: 1309090
+kandydat
+ochotnik",,DICTIONARY2_SOURCE,,GroupId: 1309090
 42488,WORD_NOUN,,HIRAGANA,,,顔射,がんしゃ,,gansha,"wytrysk na twarz partnerki (partnera)
 ejakulacja na twarz partnerki (partnera)",wulgarnie,DICTIONARY2_SOURCE,,GroupId: 2062680
 42489,WORD_NOUN,,HIRAGANA,,,顔謝,がんしゃ,,gansha,"wytrysk na twarz partnerki (partnera)
@@ -283280,8 +283286,7 @@ DUPLICATE 74474",GroupId: 2259770
 WORD_ADVERB",,HIRAGANA,,,某日,ぼうじつ,,boujitsu,pewien dzień,,DICTIONARY2_SOURCE,,GroupId: 1519740
 74429,WORD_NOUN,,HIRAGANA,,,大鷹狩,おおたかがり,,ootakagari,sokolnictwo,z wykorzystaniem jastrzębia północnego,DICTIONARY2_SOURCE,,GroupId: 2222460
 74430,"WORD_EXPRESSION
-WORD_NOUN",,HIRAGANA,,,病者の塗油,びょうしゃのとゆ,,byousha no toyu,namaszczenie chorych (sakrament),,,,"GroupId: 2798480
-xxx"
+WORD_NOUN",,HIRAGANA,,,病者の塗油,びょうしゃのとゆ,,byousha no toyu,Namaszczenie Chorych,sakrament,DICTIONARY2_SOURCE,,GroupId: 2798480
 74431,WORD_NOUN,,KATAKANA_HIRAGANA,,,モヒカン刈り,モヒカンがり,,mohikan gari,"irokez (fryzura)
 mohikanin",,,,"GroupId: 2816920
 Translate: mohawk (hairstyle)
@@ -292227,8 +292232,8 @@ xxx"
 naprawiać zdjęcie",,DICTIONARY2_SOURCE,,GroupId: 1298780
 77601,WORD_NOUN,,HIRAGANA,,,撮り溜め,とりだめ,,tori dame,nagrywanie na video (i przechowywanie),,DICTIONARY2_SOURCE,,GroupId: 2201200
 77602,WORD_NOUN,,HIRAGANA,,,撮り下ろし,とりおろし,,tori oroshi,fotografowanie lub filmowanie nowych treści,"na potrzeby DVD, magazynu itp.",DICTIONARY2_SOURCE,,GroupId: 2603300
-77603,WORD_NOUN,,HIRAGANA,,,撮り直し,とりなおし,,tori naoshi,odzyskania fotografia,,,,"GroupId: 1298770
-xxx"
+77603,WORD_NOUN,,HIRAGANA,,,撮り直し,とりなおし,,tori naoshi,"ponowne ujęcie fotograficzne
+???",fotografia,DICTIONARY2_SOURCE,,GroupId: 1298770
 77604,WORD_NOUN,,HIRAGANA,,,撮り枠,とりわく,,tori waku,"rolka z kliszą fotograficzną
 kaseta ciemniowa",,,,"GroupId: 2828271
 Translate: plate holder (photography)
@@ -293058,7 +293063,7 @@ xxx"
 co przypomina mi ...
 teraz kiedy o tym wspomniałeś ...
 jeśli pomyśleć o tym ...
-więc, jeśli o tym mówisz ...",,DICTIONARY2_SOURCE,,GroupId: 2735320
+więc, jeśli o tym mówisz ...",,DICTIONARY2_SOURCE,DUPLICATE 115005,GroupId: 2735320
 77934,WORD_NOUN,,HIRAGANA,,,なんでも屋,なんでもや,,nan demo ya,"człowiek od wszystkiego
 wszechstronna osoba
 specjalista od wszystkiego
@@ -293156,7 +293161,7 @@ pierwsze seksualne doświadczenie",,DICTIONARY2_SOURCE,DUPLICATE 77931,GroupId: 
 co przypomina mi ...
 teraz kiedy o tym wspomniałeś ...
 jeśli pomyśleć o tym ...
-więc, jeśli o tym mówisz ...",,DICTIONARY2_SOURCE,,GroupId: 2735320
+więc, jeśli o tym mówisz ...",,DICTIONARY2_SOURCE,DUPLICATE 115006,GroupId: 2735320
 77970,WORD_NOUN,,HIRAGANA,,,何でも屋,なんでもや,,nan demo ya,"człowiek od wszystkiego
 wszechstronna osoba
 specjalista od wszystkiego
@@ -319205,9 +319210,7 @@ trząść",,DICTIONARY2_SOURCE,,GroupId: 1366330
 88493,WORD_NOUN,,KATAKANA_HIRAGANA,,,オロチン酸,オロチンさん,,orochin san,kwas orotowy,,DICTIONARY2_SOURCE,,GroupId: 1962490
 88494,WORD_NOUN,,HIRAGANA,,,空飛ぶ円盤,そらとぶえんばん,,soratobu enban,latający spodek,,DICTIONARY2_SOURCE,,GroupId: 1245990
 88495,WORD_VERB_RU,,HIRAGANA,,,空惚ける,そらとぼける,,sora tobokeru,"udawać niewiedzę
-zgrywać głupa",,,,"GroupId: 1675990
-Translate: to feign ignorance
-Translate: to play dumb"
+zgrywać głupa",,DICTIONARY2_SOURCE,,GroupId: 1675990
 88496,WORD_VERB_U,,HIRAGANA,,,空飛ぶ,そらとぶ,,sora tobu,latać po niebie,,DICTIONARY2_SOURCE,,GroupId: 1245980
 88497,WORD_NOUN,,KATAKANA,,,-,カイモグラフ,,kaimogurafu,kimograf,ang: kymograph,DICTIONARY2_SOURCE,,GroupId: 1036820
 88498,WORD_NOUN,,KATAKANA,,,-,キモグラフ,,kimogurafu,kimograf,ang: kymograph,DICTIONARY2_SOURCE,,GroupId: 1041320
@@ -319295,9 +319298,7 @@ Translate: transfer"
 streszczenie
 zarys",fra: résumé,DICTIONARY2_SOURCE,,GroupId: 1145210
 88533,WORD_VERB_RU,,HIRAGANA,,,空とぼける,そらとぼける,,sora tobokeru,"udawać niewiedzę
-zgrywać głupa",,,,"GroupId: 1675990
-Translate: to feign ignorance
-Translate: to play dumb"
+zgrywać głupa",,DICTIONARY2_SOURCE,,GroupId: 1675990
 88534,WORD_VERB_U,,HIRAGANA,,,仮す,かす,,kasu,"pozwalać
 zezwalać
 wyrażać zgodę
@@ -337965,8 +337966,7 @@ dziwak",,DICTIONARY2_SOURCE,,GroupId: 2555690
 95749,WORD_EXPRESSION,,HIRAGANA,,,-,なんてね,,nantene,"tylko żartowałem
 nie!",kolokwializm,,,"GroupId: 2820270
 xxx"
-95750,WORD_NOUN,,KATAKANA,,,-,ステント,,sutento,stent,"niewielka „sprężynka”, najczęściej ze stali 316 LVM albo stopu chromowo-kobaltowego, umieszczana wewnątrz naczynia krwionośnego w celu przywrócenia drożności naczynia",,,"GroupId: 2124030
-xxx"
+95750,WORD_NOUN,,KATAKANA,,,-,ステント,,sutento,stent,"niewielka 'sprężynka', najczęściej ze stali 316 LVM albo stopu chromowo-kobaltowego, umieszczana wewnątrz naczynia krwionośnego w celu przywrócenia drożności naczynia",DICTIONARY2_SOURCE,,GroupId: 2124030
 95751,WORD_NOUN,,HIRAGANA,,,国立国会図書館,こくりつこっかいとしょかん,,kokuritsu kokkai toshokan,Narodowa Biblioteka Parlamentarna Japonii,biblioteka narodowa Japonii,DICTIONARY2_SOURCE,,GroupId: 2098830
 95752,WORD_NOUN,,HIRAGANA,,,火木金,かもくきん,,kamokukin,"wtorek, czwartek i piątek",,DICTIONARY2_SOURCE,,GroupId: 1917790
 95753,WORD_NOUN,,HIRAGANA,,,火木土,かもくど,,kamokudo,"wtorek, czwartek i sobota",,DICTIONARY2_SOURCE,,GroupId: 1194250
