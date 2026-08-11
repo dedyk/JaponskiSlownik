@@ -2890,7 +2890,8 @@ ponad (podkreśla ilość; ～（ある／の）w odniesieniu do wagi, odległo�
 co najmniej (podkreśla ilość; ～（ある／の）w odniesieniu do wagi, odległości, rozmiaru lub ogólnej ilości, ～する w odniesieniu do ceny oraz ～の w odniesieniu do osób)
 więcej niż (podkreśla ilość; ～（ある／の）w odniesieniu do wagi, odległości, rozmiaru lub ogólnej ilości, ～する w odniesieniu do ceny oraz ～の w odniesieniu do osób)
 oznacza stan początkowy zmiany
-wyraża ostrzeżenie, współczucie, podekscytowanie lub determinację podkreślając poprzednie stwierdzenie (potocznie; na końcu zdania)
+wyraża ostrzeżenie, współczucie, podekscytowanie lub determinację (potocznie; na końcu zdania)
+podkreśla poprzednią wypowiedź (potocznie; na końcu zdania)
 wyrażenie urywa się, sugerując przyczynę lub konsekwencję, która pozostaje niewypowiedziana (potocznie; na końcu zdania)
 więc… (potocznie; na końcu zdania)
 nawet (jako ～（して／が）lub にして～; w porównaniu z najprostszym przykładem czegoś; dla podkreślenia)
@@ -14049,7 +14050,9 @@ wioska",,DICTIONARY2_SOURCE,DUPLICATE 203359,GroupId: 1406820
 2550,WORD_NOUN,,KATAKANA,,,-,プラットホーム,,purattohoomu,peron,"na stacji kolejowej, ang: platform",DICTIONARY2_SOURCE,,GroupId: 1115820
 2551,WORD_NOUN,,HIRAGANA,,,車掌,しゃしょう,,shashou,konduktor,,DICTIONARY2_SOURCE,,GroupId: 1323170
 2552,WORD_NOUN,,HIRAGANA,,,車室,しゃしつ,,shashitsu,"przedział (pociągu)
-wnętrze (samochodu, wagonu)",,DICTIONARY2_SOURCE,,GroupId: 2558010
+wnętrze (samochodu, wagonu)
+miejsce postojowe
+miejsce parkingowe",,DICTIONARY2_SOURCE,,GroupId: 2558010
 2553,WORD_NOUN,,HIRAGANA,,,商品,しょうひん,,shouhin,"produkt
 artykuł handlowy
 towar
@@ -68156,10 +68159,10 @@ DUPLICATE 253036
 DUPLICATE 253037
 DUPLICATE 317180",GroupId: 2085080
 14761,"WORD_NOUN
-WORD_ADJECTIVE_F",,KATAKANA,,,-,アベック,,abekku,"para (przestarzałe słowo; zakochanych, narzeczonych, kochanków i etc)
-???
+WORD_ADJECTIVE_F",,KATAKANA,,,-,アベック,,abekku,"???
 podwójny (np. zwycięstwo)
-tandem (np. lot)",fra: avec,DICTIONARY2_SOURCE,,GroupId: 1018310
+tandem (np. lot)
+para (przestarzałe słowo; zakochanych, narzeczonych, kochanków i etc)",fra: avec,DICTIONARY2_SOURCE,,GroupId: 1018310
 14762,WORD_NOUN,,KATAKANA,,,-,キープ,,kiipu,"kipu
 quipu
 khipu","forma trójwymiarowego zapisu stosowana przez Indian prekolumbijskiej Ameryki Południowej. Nazywane „pismem węzełkowym”, ze względu na swoją formę: zbiór wykonanych z bawełny lub włosia lamy i alpaki kolorowych sznurków z supełkami",DICTIONARY2_SOURCE,"DUPLICATE 253466
@@ -79354,23 +79357,28 @@ użycie",,DICTIONARY2_SOURCE,,GroupId: 1305900
 książeczka
 ulotka",,DICTIONARY2_SOURCE,DUPLICATE 54178,GroupId: 1298530
 17635,"WORD_VERB_U
-WORD_VERB_AUX",,HIRAGANA,,,漁る,あさる,,asaru,"szperać
-buszować
-szukać
+WORD_VERB_AUX",,HIRAGANA,,,漁る,あさる,,asaru,"szukać
+przeglądać
 przeszukiwać
 gmerać
-przeglądać
+grzebać
+szperać
+buszować
 wpadać w szał (np. wydawania pieniędzy, czytania itp.)
-objadać się",,DICTIONARY2_SOURCE,"DUPLICATE 17636
-DUPLICATE 17637",GroupId: 1232970
-17636,WORD_VERB_U,,HIRAGANA,,,漁る,いさる,,isaru,"szperać
-buszować",,"DICTIONARY2_SOURCE
-TO_DELETE","DUPLICATE 17635
-DUPLICATE 17637",GroupId: 1232970
-17637,WORD_VERB_U,,HIRAGANA,,,漁る,すなどる,,sunadoru,"szperać
-buszować",,"DICTIONARY2_SOURCE
-TO_DELETE","DUPLICATE 17635
-DUPLICATE 17636",GroupId: 1232970
+objadać się
+wędkować
+łowić ryby",,DICTIONARY2_SOURCE,"DUPLICATE 326845
+DUPLICATE 326846",GroupId: 1232970
+17636,"WORD_NOUN
+WORD_ADJECTIVE_F",,KATAKANA,,,-,アヴェック,,avekku,"???
+podwójny (np. zwycięstwo)
+tandem (np. lot)
+para (przestarzałe słowo; zakochanych, narzeczonych, kochanków i etc)",fra: avec,DICTIONARY2_SOURCE,,GroupId: 1018310
+17637,WORD_ADJECTIVE_I,,HIRAGANA,,,つつしみ深い,つつしみぶかい,,tsutsushimi bukai,"skromny
+powściągliwy
+dyskretny
+ostrożny
+rozważny",,DICTIONARY2_SOURCE,,GroupId: 1361100
 17638,WORD_EXPRESSION,,HIRAGANA,,,-,となったら,,tonattara,"gdy ... dotyczy
 kiedy to staje się
 jeśli to staje się",,DICTIONARY2_SOURCE,,GroupId: 2100770
@@ -152622,9 +152630,8 @@ przebiegła osoba
 podstępna osoba",,DICTIONARY2_SOURCE,DUPLICATE 54280,GroupId: 1698800
 34565,WORD_NOUN,,KATAKANA,,,-,アジアダラー,,ajia daraa,dolar azjatycki,ang: Asia dollar,DICTIONARY2_SOURCE,,GroupId: 1015850
 34566,WORD_NOUN,,KATAKANA,,,-,アジア・ダラー,,ajia daraa,dolar azjatycki,ang: Asia dollar,DICTIONARY2_SOURCE,,GroupId: 1015850
-34567,WORD_NOUN,,HIRAGANA,,,興亜,こうあ,,koua,rozwój Azji,używane podczas II wojny światowej,,,"GroupId: 1238220
-Translate: Asian development
-AdditionalInfo: used during WWII"
+34567,WORD_NOUN,,HIRAGANA,,,興亜,こうあ,,koua,"rozwój Azji
+zapewnienie dobrobytu Azji",termin historyczny; wrażliwie; używane podczas II wojny światowej,DICTIONARY2_SOURCE,,GroupId: 1238220
 34568,WORD_NOUN,,HIRAGANA_KATAKANA,,,中央アジア,ちゅうおうアジア,,chuuou ajia,Azja Centralna,,DICTIONARY2_SOURCE,,GroupId: 1423440
 34569,WORD_NOUN,,HIRAGANA_KATAKANA,,,東アジア,ひがしアジア,,higashi ajia,Azja Wschodnia,,,,"GroupId: 1447460
 xxx"
@@ -155017,11 +155024,7 @@ fantasmagoryczny",,DICTIONARY2_SOURCE,,GroupId: 2514360
 manifestacja
 pokaz siły",,DICTIONARY2_SOURCE,,GroupId: 1756990
 35237,WORD_NOUN,,HIRAGANA,,,輾転反側,てんてんはんそく,,tenten hansoku,"rzucanie i poruszanie się w łóżku
-przewracanie się w łóżku martwiąc się o coś",,,,"GroupId: 2033360
-Translate: tossing and turning in bed
-MiscInfo: yoji
-Translate: turning over in bed worrying over something
-MiscInfo: yoji"
+przewracanie się w łóżku martwiąc się o coś",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 2033360
 35238,WORD_NOUN,,KATAKANA,,,-,イングリッシュ・マフィン,,ingurisshu mafin,mufinka angielska,,DICTIONARY2_SOURCE,,GroupId: 2457300
 35239,WORD_NOUN,,KATAKANA,,,-,リタイヤ,,ritaiya,"przejście na emeryturę
 wycofanie się (z wyścigu, meczu itp.)
@@ -155108,11 +155111,7 @@ drganie
 dygotanie
 ciarki","np. z zimna, ze strachu",DICTIONARY2_SOURCE,,GroupId: 1365730
 35251,WORD_NOUN,,HIRAGANA,,,展転反側,てんてんはんそく,,tenten hansoku,"rzucanie i poruszanie się w łóżku
-przewracanie się w łóżku martwiąc się o coś",,,,"GroupId: 2033360
-Translate: tossing and turning in bed
-MiscInfo: yoji
-Translate: turning over in bed worrying over something
-MiscInfo: yoji"
+przewracanie się w łóżku martwiąc się o coś",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 2033360
 35252,WORD_NOUN,,KATAKANA,,,-,イングリッシュマフィン,,ingurisshu mafin,mufinka angielska,,DICTIONARY2_SOURCE,,GroupId: 2457300
 35253,WORD_NOUN,,KATAKANA,,,-,サントラ,,santora,ścieżka dźwiękowa,skrót; ang: soundtrack,DICTIONARY2_SOURCE,,GroupId: 1058540
 35254,"WORD_NOUN
@@ -188839,8 +188838,7 @@ xxx"
 44929,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,土地利用,とちりよう,,tochi riyou,"gospodarka gruntami
 zagospodarowanie terenów",,DICTIONARY2_SOURCE,,GroupId: 1702190
-44930,WORD_NOUN,,HIRAGANA,,,土地流動化,とちりゅうどうか,,tochi ryuudouka,zachęcanie do promowania obrotu ziemiami,,,,"GroupId: 2665380
-xxx"
+44930,WORD_NOUN,,HIRAGANA,,,土地流動化,とちりゅうどうか,,tochi ryuudouka,incentives to promote land transactions,,DICTIONARY2_SOURCE,,GroupId: 2665380
 44931,WORD_NOUN,,HIRAGANA,,,土地倫理,とちりんり,,tochi rinri,???,,,,"GroupId: 2450080
 xxx"
 44932,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,ユリイカ,,yuriika,eureka,gre: heureka,DICTIONARY2_SOURCE,,GroupId: 1136940
@@ -199282,8 +199280,7 @@ pełne zajęcie parkingu",,DICTIONARY2_SOURCE,,GroupId: 1812490
 przedsiębiorstwo kolejowe",,DICTIONARY2_SOURCE,,GroupId: 1943240
 47838,WORD_NOUN,,HIRAGANA,,,医療技術,いりょうぎじゅつ,,iryou gijutsu,technologia medyczna,,,,"GroupId: 1930270
 xxx"
-47839,WORD_NOUN,,HIRAGANA,,,先端医療技術,せんたんいりょうぎじゅつ,,sentan' iryou gijutsu,najnowocześniejsza technologia medyczna,,,,"GroupId: 1997180
-xxx"
+47839,WORD_NOUN,,HIRAGANA,,,先端医療技術,せんたんいりょうぎじゅつ,,sentan' iryou gijutsu,najnowocześniejsza technologia medyczna,,DICTIONARY2_SOURCE,,GroupId: 1997180
 47840,WORD_NOUN,,HIRAGANA,,,地謡,じうたい,,jiutai,chór w teatrze no,,DICTIONARY2_SOURCE,,GroupId: 1764050
 47841,WORD_NOUN,,HIRAGANA,,,地謡前,じうたいまえ,,jiutaimae,"lewa strona sceny w teatrze no, przed chórem",,DICTIONARY2_SOURCE,,GroupId: 2649240
 47842,WORD_NOUN,,HIRAGANA,,,地謡座前,じうたいざまえ,,jiutai zamae,"lewa strona sceny w teatrze no, przed chórem",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2649250
@@ -201380,8 +201377,7 @@ oryginalny
 nowatorski",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 1814980
 48393,WORD_NOUN,,HIRAGANA,,,紫紺野牡丹,しこんのぼたん,,shikon nobotan,tibuchina urvilleańska,"roślina, tibouchina urvilleana",,,"GroupId: 2066970
 Translate: princess-flower (Tibouchina urvilleana)"
-48394,WORD_NOUN,,HIRAGANA,,,装束能,しょうぞくのう,,shouzokunou,formalny pełny strój aktora teatru no,,,,"GroupId: 2598640
-xxx"
+48394,WORD_NOUN,,HIRAGANA,,,装束能,しょうぞくのう,,shouzokunou,formalny pełny strój aktora teatru no,,DICTIONARY2_SOURCE,,GroupId: 2598640
 48395,WORD_NOUN,,HIRAGANA,,,代物,だいぶつ,,daibutsu,"zamiennik
 substytut",,DICTIONARY2_SOURCE,DUPLICATE 48385,GroupId: 1412280
 48396,"WORD_NOUN
@@ -212219,8 +212215,7 @@ postać literacka i personifikacja narodowa będąca pierwowzorem typowego Angli
 postać literacka i personifikacja narodowa będąca pierwowzorem typowego Anglika i angielskich cech narodowych, która przedstawiana jest jako ucieleśnienie Anglii/Wielkiej Brytanii (wyjaśnienie)",,DICTIONARY2_SOURCE,,GroupId: 1066500
 51449,WORD_NOUN,,KATAKANA,,,-,ジョントラ,,jontora,John Travolta,skrót,IGNORE_NO_JMEDICT,,
 51450,WORD_NOUN,,HIRAGANA,,,絶交状,ぜっこうじょう,,zekkoujou,list kończący relację (związek),,DICTIONARY2_SOURCE,,GroupId: 1721610
-51451,WORD_NOUN,,HIRAGANA,,,身元不明者,みもとふめいしゃ,,mimoto fumeisha,nieznana osoba,,,,"GroupId: 2117480
-xxx"
+51451,WORD_NOUN,,HIRAGANA,,,身元不明者,みもとふめいしゃ,,mimoto fumeisha,nieznana osoba,,DICTIONARY2_SOURCE,,GroupId: 2117480
 51452,WORD_NOUN,,KATAKANA_HIRAGANA,,,ヨハネ福音書,ヨハネふくいんしょ,,yohane fukuinsho,Ewangelia Jana,,,,"GroupId: 2204310
 xxx"
 51453,WORD_NOUN,,KATAKANA_HIRAGANA,,,ヨハネ伝,ヨハネでん,,yohane den,Ewangelia Jana,,DICTIONARY2_SOURCE,,GroupId: 2204380
@@ -244004,10 +243999,20 @@ blok
 bloczek",element osprzętu wielu urządzeń dźwigowych,DICTIONARY2_SOURCE,,GroupId: 1208690
 61267,WORD_NOUN,,HIRAGANA,,,瓦解,がかい,,gakai,"upadek
 załamanie",,DICTIONARY2_SOURCE,,GroupId: 1209590
-61268,WORD_NOUN,,HIRAGANA,,,甘露,かんろ,,kanro,"nektar
-słodkość
-słodycz
-spadź",,DICTIONARY2_SOURCE,,GroupId: 1213600
+61268,"WORD_NOUN
+WORD_ADJECTIVE_NA",,HIRAGANA,,,甘露,かんろ,,kanro,"pyszny
+apetyczny
+wyśmienity
+nektar
+ambrozja
+słodka rosa zesłana przez niebiosa jako znak łaskawego panowania (chińska legenda, pietwotne znaczenie)
+amrita (buddyzm)
+ambrozja bogów (buddyzm)
+nauki Buddy (buddyzm; rzadko używane określenie; porównywane do ambrozji)
+spadź (rzadko używane określenie; wydzielina mszyc na liściach drzew)
+herbata sencha najwyższej jakości (rzadko używane określenie)
+woda słodzona (skrót)
+słodkie sake (skrót)",,DICTIONARY2_SOURCE,,GroupId: 1213600
 61269,WORD_NOUN,,HIRAGANA,,,観月,かんげつ,,kangetsu,oglądanie księżyca,podczas ósmego miesiąca według kalendarza księżycowego,DICTIONARY2_SOURCE,,GroupId: 1214830
 61270,WORD_ADJECTIVE_NO,,HIRAGANA,,,丸腰,まるごし,,marugoshi,"nieuzbrojony
 bez broni",,DICTIONARY2_SOURCE,,GroupId: 1216390
@@ -291047,10 +291052,8 @@ Translate: smooth talker
 Translate: crafty person"
 77182,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,話し上手,はなしじょうず,,hanashi jouzu,"dobry mówca
-bycie dobrym w rozmowie",,,,"GroupId: 1782900
-Translate: being good at conversation
-Translate: conversationalist
-Translate: good talker"
+bycie dobrym w rozmowie
+elokwentna osoba",,DICTIONARY2_SOURCE,,GroupId: 1782900
 77183,WORD_NOUN,,HIRAGANA,,,巨口,きょこう,,kyokou,"wielkie usta
 duże usta",,DICTIONARY2_SOURCE,,GroupId: 1232000
 77184,WORD_NOUN,,KATAKANA,,,-,ビッグマウス,,biggu mausu,"duże usta
@@ -291179,10 +291182,8 @@ niepotrafiący się wysłowić
 słabo mówiący",,DICTIONARY2_SOURCE,,GroupId: 1275840
 77222,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,話上手,はなしじょうず,,hanashi jouzu,"dobry mówca
-bycie dobrym w rozmowie",,,,"GroupId: 1782900
-Translate: being good at conversation
-Translate: conversationalist
-Translate: good talker"
+bycie dobrym w rozmowie
+elokwentna osoba",,DICTIONARY2_SOURCE,,GroupId: 1782900
 77223,WORD_NOUN,,KATAKANA,,,-,ビッグ・マウス,,biggu mausu,"duże usta
 gaduła
 papla",ang: big mouth,DICTIONARY2_SOURCE,,GroupId: 2826091
@@ -298411,9 +298412,8 @@ czepić się
 przylgnąć
 przylegać",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2086370
 80007,WORD_NOUN,,HIRAGANA,,,逆上がり,さかあがり,,saka agari,wymyk,"jedno z popularnych ćwiczeń gimnastycznych na drążku, przejście z półzwisu (zwisu) do podporu przodem (tyłem) przez przeniesienie nóg i środka ciężkości ciała ponad osią chwytu ramion (obrót ciała wokół osi poprzecznej nóg w przód)",DICTIONARY2_SOURCE,,GroupId: 1693350
-80008,WORD_NOUN,,HIRAGANA,,,今上陛下,きんじょうへいか,,kinjouheika,"panujący cesarz
-Jego Cesarska Mość Cesarz",,,,"GroupId: 1289300
-xxx"
+80008,WORD_NOUN,,HIRAGANA,,,今上陛下,きんじょうへいか,,kinjou heika,"Jego Cesarska Mość Cesarz
+panujący cesarz",,DICTIONARY2_SOURCE,,GroupId: 1289300
 80009,WORD_ADJECTIVE_NA,,HIRAGANA,,,驚異的,きょういてき,,kyouiteki,"cudowny
 cudny
 wspaniały
@@ -310137,7 +310137,13 @@ dokonać korekty
 nanosić poprawę
 nanosić poprawki",mało znane słowo,,,"GroupId: 2568440
 xxx"
-84858,WORD_VERB_U,,HIRAGANA,,,垂れ流す,たれながす,,tare nagasu,ściekać,,DICTIONARY2_SOURCE,,GroupId: 1370910
+84858,WORD_VERB_U,,HIRAGANA,,,垂れ流す,たれながす,,tare nagasu,"wyciekać (mocz, kał)
+zabrudzić sobie spodnie
+zmoczyć się
+wylewać (nieoczyszczone odpady, ścieki itp.)
+odprowadzać (nieoczyszczone ścieki)
+ujawniać (informacje, tajemnice itp.)
+ponosić straty",,DICTIONARY2_SOURCE,,GroupId: 1370910
 84859,WORD_NOUN,,HIRAGANA,,,指揮官,しきかん,,shikikan,"dowódca
 oficer dowodzący",,DICTIONARY2_SOURCE,,GroupId: 1309710
 84860,WORD_NOUN,,HIRAGANA,,,観光案内所,かんこうあんないじょ,,kankou annaijo,centrum informacji turystycznej,,,,"GroupId: 1782610
@@ -326599,8 +326605,8 @@ ty (język poufały)",archaizm,DICTIONARY2_SOURCE,,GroupId: 2259820
 91719,WORD_NOUN,,KATAKANA,,,-,ウオームカラー,,uoomu karaa,ciepły kolor,ang: warm color,,,"GroupId: 2500870
 xxx"
 91720,WORD_NOUN,,KATAKANA,,,-,ホットサンド,,hotto sando,"gorąca kanapka
-opiekana kanapka",ang: hot sandwich,,,"GroupId: 2803770
-xxx"
+opiekana kanapka
+tost","jedzenie, gotowanie; ang: hot sandwich",DICTIONARY2_SOURCE,,GroupId: 2803770
 91721,WORD_NOUN,,KATAKANA,,,-,サービスレベル,,saabisu reberu,poziom usług,ang: service level,,,"GroupId: 2817390
 Translate: service level"
 91722,WORD_NOUN,,KATAKANA,,,-,ジェットストリーム,,jetto sutoriimu,prąd strumieniowy,meteorologia; ang: jet stream,DICTIONARY2_SOURCE,,GroupId: 1064210
@@ -326748,8 +326754,8 @@ Schefflera heptaphylla (roślina)",,DICTIONARY2_SOURCE,,GroupId: 1038280
 91776,WORD_NOUN,,KATAKANA,,,-,ウオーム・カラー,,uoomu karaa,ciepły kolor,ang: warm color,,,"GroupId: 2500870
 xxx"
 91777,WORD_NOUN,,KATAKANA,,,-,ホット・サンド,,hotto sando,"gorąca kanapka
-opiekana kanapka",ang: hot sandwich,,,"GroupId: 2803770
-xxx"
+opiekana kanapka
+tost","jedzenie, gotowanie; ang: hot sandwich",DICTIONARY2_SOURCE,,GroupId: 2803770
 91778,WORD_NOUN,,KATAKANA,,,-,サービス・レベル,,saabisu reberu,poziom usług,ang: service level,,,"GroupId: 2817390
 Translate: service level"
 91779,WORD_NOUN,,KATAKANA,,,-,ジェット・ストリーム,,jetto sutoriimu,prąd strumieniowy,meteorologia; ang: jet stream,DICTIONARY2_SOURCE,,GroupId: 1064210
@@ -329886,8 +329892,7 @@ xxx"
 zakaz wstępu dla osób poniżej 18 lat
 tylko dla osób od 18 roku życia",,DICTIONARY2_SOURCE,,GroupId: 2233840
 93081,WORD_NOUN,,HIRAGANA,,,十八金,じゅうはちきん,,juuhachikin,18-karatowe złoto,,DICTIONARY2_SOURCE,,GroupId: 1635710
-93082,WORD_NOUN,,HIRAGANA,,,十八檀林,じゅうはちだんりん,,juuhachi danrin,???,,,,"GroupId: 2579730
-xxx"
+93082,WORD_NOUN,,HIRAGANA,,,十八檀林,じゅうはちだんりん,,juuhachi danrin,osiemnaście ośrodków nauczania buddyzmu,należących do sekty Czystej Krainy w regionie Kanto,DICTIONARY2_SOURCE,,GroupId: 2579730
 93083,WORD_NOUN,,HIRAGANA,,,十八羅漢,じゅうはちらかん,,juuhachi rakan,osiemnaście arhatów,buddyzm,DICTIONARY2_SOURCE,,GroupId: 2265780
 93084,WORD_NOUN,,HIRAGANA,,,庵室,あんしつ,,anshitsu,"cela pustelnika
 odosobnienie
@@ -333997,8 +334002,8 @@ suplement diety",,DICTIONARY2_SOURCE,,GroupId: 2563910
 no wiesz kto",żartobliwie,DICTIONARY2_SOURCE,,GroupId: 2250610
 94126,WORD_EXPRESSION,,HIRAGANA,,,誰彼なしに,だれかれなしに,,darekare nashi ni,"kogokolwiek
 czy ktoś w ogóle",,DICTIONARY2_SOURCE,,GroupId: 1844890
-94127,WORD_NOUN,,HIRAGANA,,,汚染者負担原則,おせんしゃふたんげんそく,,osensha futan gensoku,zanieczyszczający płaci,"ang: Polluter Pays Principle, PPP",,,"GroupId: 1973790
-xxx"
+94127,WORD_NOUN,,HIRAGANA,,,汚染者負担原則,おせんしゃふたんげんそく,,osensha futan gensoku,"zanieczyszczający płaci
+zasada, że zanieczyszczający płacy",,DICTIONARY2_SOURCE,,GroupId: 1973790
 94128,WORD_NOUN,,HIRAGANA,,,球筋,たますじ,,tamasuji,"kurs rzucania piłki (baseball)
 kurs uderzania piłki (sport; np. golf, tenis i etc)",,DICTIONARY2_SOURCE,,GroupId: 2757910
 94129,WORD_ADVERB,,HIRAGANA,,,追々,おいおい,,oi oi,"stopniowo
@@ -340648,9 +340653,13 @@ kongrowate","pisanie zwykle z użyciem kana; szczególnie japońskie węgorze, C
 96801,WORD_NOUN,,HIRAGANA,,,こし餡,こしあん,,koshi an,"pasta z odcedzonej fasoli
 gładki anko
 drobnoziarnista pasta ze słodkiej fasoli","jedzenie, gotowanie; pisanie zwykle z użyciem kana",DICTIONARY2_SOURCE,,GroupId: 2398580
-96802,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,-,ただでは,,tada de wa,"to jeszcze nie koniec
-zemszczę się",,,,"GroupId: 2097310
-xxx"
+96802,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,-,ただでは,,tada de wa,"mający poważne konsekwencje (skrót; skrót od ～すまない lub ～おかない)
+kosztujący bardzo drogo (skrót; skrót od ～すまない lub ～おかない)
+nie ujdzie to na sucho (skrót; skrót od ～すまない lub ～おかない)
+to nie pozostanie bezkarne (skrót; skrót od ～すまない lub ～おかない)
+za darmo (zwykle po którym następuje czasownik w formie przeczącej)
+za nic (zwykle po którym następuje czasownik w formie przeczącej)
+bezpłatnie (zwykle po którym następuje czasownik w formie przeczącej)",,DICTIONARY2_SOURCE,,GroupId: 2097310
 96803,WORD_VERB_U,,HIRAGANA,,,見慣らす,みならす,,minarasu,"przyzwyczaić się do patrzenia
 być zaznajomiony z",archaizm,DICTIONARY2_SOURCE,,GroupId: 2407250
 96804,WORD_NOUN,,HIRAGANA,,,支払額,しはらいがく,,shiharai gaku,"kwota płatności
@@ -341204,8 +341213,7 @@ producent pieczątek",,DICTIONARY2_SOURCE,,GroupId: 2739060
 najdalsze regiony",,DICTIONARY2_SOURCE,,GroupId: 1438590
 97048,WORD_NOUN,,HIRAGANA,,,細字,さいじ,,saiji,"mała czcionka
 małe pismo odręczne",,DICTIONARY2_SOURCE,DUPLICATE 97085,GroupId: 1650240
-97049,WORD_NOUN,,HIRAGANA,,,動径,どうけい,,doukei,promień wektor,,,,"GroupId: 2451310
-xxx"
+97049,WORD_NOUN,,HIRAGANA,,,動径,どうけい,,doukei,wektor wodzący,,DICTIONARY2_SOURCE,,GroupId: 2451310
 97050,WORD_NOUN,,HIRAGANA,,,励弧,れいこ,,reiko,wzbudzenie,np. prądu,,,"GroupId: 1918650
 xxx"
 97051,WORD_NOUN,,KATAKANA,,,-,レンタルシステム,,rentaru shisutemu,"system wypożyczalni
@@ -346337,8 +346345,7 @@ wypisanie
 ścięcie głowy (archaizm; pierwotne znaczenie)
 dekapitacja (archaizm; pierwotne znaczenie)",,DICTIONARY2_SOURCE,,GroupId: 1574530
 99002,WORD_NOUN,,HIRAGANA,,,三死,さんし,,sanshi,???,,DICTIONARY2_SOURCE,,GroupId: 1300510
-99003,WORD_NOUN,,HIRAGANA,,,銅剣,どうけん,,douken,miecz z brązu,,,,"GroupId: 2229900
-Translate: bronze sword"
+99003,WORD_NOUN,,HIRAGANA,,,銅剣,どうけん,,douken,miecz z brązu,,DICTIONARY2_SOURCE,,GroupId: 2229900
 99004,WORD_NOUN,,HIRAGANA,,,上音,じょうおん,,jouon,dźwięk harmoniczny,muzyka,DICTIONARY2_SOURCE,,GroupId: 2226470
 99005,WORD_NOUN,,HIRAGANA,,,選球,せんきゅう,,senkyuu,oczekiwanie na dobre uderzenie w baseballu,baseball,DICTIONARY2_SOURCE,,GroupId: 1824560
 99006,WORD_NOUN,,KATAKANA,,,-,スタートアップスクリーン,,sutaatoappu sukuriin,ekran startowy,informatyka; ang: startup screen,DICTIONARY2_SOURCE,,GroupId: 2303540
