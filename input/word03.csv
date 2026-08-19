@@ -1219,10 +1219,7 @@ Translate: air-borne infection"
 Translate: citrulline"
 200402,WORD_NOUN,,HIRAGANA,,,実行時,じっこうじ,,jikkouji,"czas wykonywania
 czas działania
-czas obiektu",,,,"GroupId: 1321080
-Translate: execution-time
-Translate: run time
-Translate: object time"
+czas obiektu",informatyka,DICTIONARY2_SOURCE,,GroupId: 1321080
 200403,WORD_NOUN,,HIRAGANA,,,実効値,じっこうち,,jikkouchi,średnia kwadratowa wartość,,,,"GroupId: 2361530
 Translate: root mean squared value"
 200404,WORD_NOUN,,HIRAGANA,,,雀羅,じゃくら,,jakura,"siatka na wróble
@@ -4685,9 +4682,8 @@ WORD_EXPRESSION",,HIRAGANA,,,久闊を叙する,きゅうかつをじょする,,
 Translate: to apologize for a long neglect of friends (apologise)"
 201577,WORD_NOUN,,HIRAGANA,,,蓮芋,はすいも,,hasuimo,kolokazja olbrzymia,"pisanie zwykle z użyciem kana; roślina, Colocasia gigantea",DICTIONARY2_SOURCE,,GroupId: 2409530
 201578,WORD_NOUN,,HIRAGANA,,,政策官庁,せいさくかんちょう,,seisaku kanchou,"administracyjna agencja rządowa
-agencja rządowa kształtująca politykę",,,,"GroupId: 2713860
-Translate: administrative government agency
-Translate: policy-making government agency"
+agencja rządowa kształtująca politykę
+agencja rządowa odpowiedzialna za kształtowanie polityki",,DICTIONARY2_SOURCE,,GroupId: 2713860
 201579,"WORD_EXPRESSION
 WORD_NOUN",,KATAKANA_HIRAGANA,,,パンツ一丁,パンツいっちょう,,pantsu icchou,(noszenie tylko) pary majtek,,,,"GroupId: 2266560
 Translate: (wearing only) a pair of underpants"
@@ -51863,9 +51859,7 @@ Translate: Valkyrie"
 217187,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,午の刻,うまのこく,,uma no koku,godzina konia,"archaizm; około południa, 11-13 lub 12-14 godzina",DICTIONARY2_SOURCE,,GroupId: 2844884
 217188,"WORD_EXPRESSION
-WORD_NOUN",,HIRAGANA,,,未の刻,ひつじのこく,,hitsuji no koku,rodzina owcy,"około 14, 13-15 lub 14-16 godzina, archaizm",,,"GroupId: 2844885
-Translate: hour of the Sheep (around 2pm, 1-3pm, or 2-4pm)
-MiscInfo: arch"
+WORD_NOUN",,HIRAGANA,,,未の刻,ひつじのこく,,hitsuji no koku,godzina owcy,"archaizm; około 14, 13-15 lub 14-16 godzina",DICTIONARY2_SOURCE,,GroupId: 2844885
 217189,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,酉の刻,とりのこく,,tori no koku,godzina koguta,"archaizm; około godziny 18, 17-19 lub 18-20",DICTIONARY2_SOURCE,,GroupId: 2844887
 217190,"WORD_EXPRESSION
@@ -55351,10 +55345,9 @@ Translate: commander-in-chief
 Translate: generalissimo"
 218404,WORD_NOUN,,KATAKANA_HIRAGANA,,,ナトリウム灯,ナトリウムとう,,natoriumu tou,lampa sodowa,,DICTIONARY2_SOURCE,,GroupId: 1966490
 218405,WORD_NOUN,,HIRAGANA,,,無人踏切,むじんふみきり,,mujin fumikiri,niestrzeżony przejazd kolejowy,potocznie,DICTIONARY2_SOURCE,,GroupId: 2095140
-218406,WORD_NOUN,,HIRAGANA,,,似非事,えせごと,,esegoto,???,,,,"GroupId: 1314720
-Translate: laughable affair
-Translate: unlaudable affair
-Translate: something unreliable"
+218406,WORD_NOUN,,HIRAGANA,,,似非事,えせごと,,esegoto,"śmieszna sprawa
+niegodna pochwały sprawa
+coś, na czym nie można polegać",,DICTIONARY2_SOURCE,,GroupId: 1314720
 218407,WORD_NOUN,,HIRAGANA,,,伝道船,でんどうせん,,dendousen,misjonarska łódź,,,,"GroupId: 1442360
 Translate: missionary boat"
 218408,WORD_NOUN,,KATAKANA,,,-,ウインドフォール,,uindofooru,"gratka
@@ -59620,8 +59613,7 @@ Translate: culture of visual images
 MiscInfo: yoji
 Translate: (screen) image culture
 MiscInfo: yoji"
-219894,WORD_NOUN,,HIRAGANA,,,後の炭,のちのすみ,,nochi no sumi,drugie dodanie węgla do ognia,podczas ceremonii parzenia herbaty,,,"GroupId: 2438370
-Translate: second adding of charcoal to the fire (tea ceremony)"
+219894,WORD_NOUN,,HIRAGANA,,,後の炭,のちのすみ,,nochi no sumi,drugie dodanie węgla do ognia,podczas ceremonii parzenia herbaty,DICTIONARY2_SOURCE,,GroupId: 2438370
 219895,WORD_NOUN,,HIRAGANA,,,陸上端局装置,りくじょうたんきょくそうち,,rikujou tankyoku souchi,urządzenie na ziemie będące terminalem podwodnego kabla,,,,"GroupId: 1918660
 Translate: land terminal equipment (of a submarine cable)"
 219896,WORD_NOUN,,KATAKANA,,,-,カルブンケル,,karubunkeru,"karbunkuł
@@ -101345,8 +101337,10 @@ niska ocena
 zła reputacja",,DICTIONARY2_SOURCE,,GroupId: 2804520
 234534,WORD_NOUN,,HIRAGANA,,,命令法,めいれいほう,,meireihou,tryb rozkazujący,lingwistyka,,,"GroupId: 1532210
 Translate: imperative mood"
-234535,WORD_NOUN,,HIRAGANA,,,市場原理,しじょうげんり,,shijou genri,zasada rynkowa,,,,"GroupId: 1308400
-Translate: market principle"
+234535,WORD_NOUN,,HIRAGANA,,,市場原理,しじょうげんり,,shijou genri,"mechanizmy rynkowe
+zasada rynkowa
+siły wolnego rynku
+podstawowa zasada wolnego rynku",,DICTIONARY2_SOURCE,,GroupId: 1308400
 234536,WORD_NOUN,,KATAKANA,,,-,イヌリン,,inurin,inulina,"polisacharyd zbudowany z około 30–35 cząsteczek monocukrów połączonych wiązaniami β-2,1-glikozydowymi w nierozgałęziony łańcuch, ang: inulin",,,"GroupId: 2457150
 Translate: inulin"
 234537,WORD_NOUN,,HIRAGANA,,,発酵食品,はっこうしょくひん,,hakkou shokuhin,sfermentowana żywność,,,,"GroupId: 2742650
@@ -110017,7 +110011,7 @@ przestać palić",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 12
 238550,WORD_NOUN,,HIRAGANA,,,線形二元系列生成機,せんけいにげんけいれつせいせいき,,senkei nigen keiretsusei seiki,generator liniowych sekwencji binarnych,informatyka,DICTIONARY2_SOURCE,,GroupId: 2369960
 238551,WORD_NOUN,,HIRAGANA,,,緯度変化,いどへんか,,ido henka,zmienność szerokości geograficznej,,DICTIONARY2_SOURCE,,GroupId: 1971380
 238552,WORD_NOUN,,HIRAGANA,,,同系語,どうけいご,,doukeigo,język pokrewny,lingwistyka,DICTIONARY2_SOURCE,,GroupId: 2839319
-238553,WORD_NOUN,,HIRAGANA,,,民事事件,みんじじけん,,minji jiken,sprawa cywilna,,DICTIONARY2_SOURCE,,GroupId: 1528750
+238553,WORD_NOUN,,HIRAGANA,,,民事事件,みんじじけん,,minji jiken,sprawa cywilna,prawo,DICTIONARY2_SOURCE,,GroupId: 1528750
 238554,WORD_NOUN,,HIRAGANA,,,懸念,けんねん,,kennen,"troska
 zmartwienie
 obawa
@@ -124945,10 +124939,11 @@ porzucać",,DICTIONARY2_SOURCE,,GroupId: 1361230
 246374,WORD_VERB_U,,HIRAGANA,,,読み聞かす,よみきかす,,yomi kikasu,"czytać dla kogoś
 czytać komuś",,DICTIONARY2_SOURCE,,GroupId: 1456310
 246375,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,未然に防ぐ,みぜんにふせぐ,,mizen ni fusegu,"zapobiegać
+WORD_EXPRESSION",,HIRAGANA,,,未然に防ぐ,みぜんにふせぐ,,mizen ni fusegu,"zapobiegać wystąpieniu czegoś
 uniemożliwiać
 podjąć środki zabezpieczające
-podjąć środki ostrożności",,DICTIONARY2_SOURCE,,GroupId: 1527740
+podjąć środki ostrożności
+zdusić w zarodku",,DICTIONARY2_SOURCE,,GroupId: 1527740
 246376,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,左に折れる,ひだりにおれる,,hidari ni oreru,skręcić w lewo,,DICTIONARY2_SOURCE,,GroupId: 1608465
 246377,WORD_VERB_RU,,HIRAGANA,,,人慣れる,ひとなれる,,hitonareru,przyzwyczaić się do ludzi,,DICTIONARY2_SOURCE,,GroupId: 1664630
@@ -133125,8 +133120,7 @@ bąbelek",,DICTIONARY2_SOURCE,,GroupId: 1966930
 250357,WORD_NOUN,,HIRAGANA,,,山岳会,さんがくかい,,sangakukai,"klub alpinistyczny
 klub wspinaczkowy",,DICTIONARY2_SOURCE,,GroupId: 2671420
 250358,WORD_NOUN,,HIRAGANA,,,装甲部隊,そうこうぶたい,,soukou butai,korpus pancerny,,DICTIONARY2_SOURCE,,GroupId: 1889520
-250359,WORD_NOUN,,HIRAGANA_KATAKANA,,,音声トラック,おんじょうトラック,,onjou torakku,ścieżka dźwiękowa,informatyka,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2343330
+250359,WORD_NOUN,,HIRAGANA_KATAKANA,,,音声トラック,おんせいトラック,,onsei torakku,ścieżka dźwiękowa,informatyka,DICTIONARY2_SOURCE,,GroupId: 2343330
 250360,WORD_NOUN,,HIRAGANA,,,実効輻射電力,じっこうふくしゃでんりょく,,jikkou fukusha denryoku,wypromieniowana efektywna moc,informatyka,DICTIONARY2_SOURCE,,GroupId: 2361580
 250361,WORD_NOUN,,HIRAGANA,,,放射線遺伝学,ほうしゃせんいでんがく,,houshasen' idengaku,genetyka promieniowania,genetyka; badanie wpływu promieniowania na geny,DICTIONARY2_SOURCE,,GroupId: 2196450
 250362,WORD_NOUN,,HIRAGANA,,,不可触賎民,ふかしょくせんみん,,fukashoku senmin,"dalitowie
@@ -146964,8 +146958,7 @@ WORD_NOUN",,HIRAGANA,,,健康福祉,けんこうふくし,,kenkou fukushi,zdrowi
 258000,WORD_NOUN,,KATAKANA_HIRAGANA,,,ソウダガツオ属,ソウダガツオぞく,,soudagatsuo zoku,Auxis,rodzaj morskich ryb okoniokształtnych z rodziny makrelowatych,DICTIONARY2_SOURCE,,GroupId: 2637000
 258001,WORD_NOUN,,HIRAGANA,,,宗太鰹属,そうだがつおぞく,,soudagatsuo zoku,Auxis,rodzaj morskich ryb okoniokształtnych z rodziny makrelowatych,DICTIONARY2_SOURCE,,GroupId: 2637000
 258002,WORD_NOUN,,KATAKANA,,,-,ダーラヘスト,,daarahesuto,konik z Dalarna,ręcznie strugana i malowana figurka konika z drewna sosnowego; swe: dalahäst,DICTIONARY2_SOURCE,,GroupId: 2839506
-258003,WORD_NOUN,,HIRAGANA_KATAKANA,,,音声会議システム,おんじょうかいぎシステム,,onjou kaigi shisutemu,system konferencji głosowej,informatyka,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2343410
+258003,WORD_NOUN,,HIRAGANA_KATAKANA,,,音声会議システム,おんせいかいぎシステム,,onsei kaigi shisutemu,system konferencji głosowej,informatyka,DICTIONARY2_SOURCE,,GroupId: 2343410
 258004,WORD_NOUN,,KATAKANA,,,-,ゴータビリティー,,gootabiritii,"kozioł ofiarny
 nierównomierna tendencja do zrzucania winy za tarcia handlowe na Japonię (wyjaśnienie)",przestarzałe słowo; słowo pochodzenia angielskiego,DICTIONARY2_SOURCE,,GroupId: 1054210
 258005,WORD_NOUN,,KATAKANA,,,-,アグリカルチャー,,agurikaruchaa,rolnictwo,ang: agriculture,DICTIONARY2_SOURCE,,GroupId: 1015550
@@ -152270,7 +152263,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-08-18,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-08-19,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
@@ -162051,8 +162044,8 @@ luźna lawina kamieni",,DICTIONARY2_SOURCE,,GroupId: 2851123
 266680,WORD_NOUN,,KATAKANA,,,-,ソッタ,,sotta,seotda,hanafuda; koreańska gra w karty (hanafuda) podobna do pokera; słowo pochodzenia koreańskiego,DICTIONARY2_SOURCE,,GroupId: 2844988
 266681,WORD_NOUN,,KATAKANA_HIRAGANA,,,ドブ板選挙,ドブいたせんきょ,,dobu itasenkyo,oddolna kampania wyborcza od drzwi do drzwi,,DICTIONARY2_SOURCE,,GroupId: 2845062
 266682,WORD_NOUN,,HIRAGANA,,,どぶ板選挙,どぶいたせんきょ,,dobu itasenkyo,oddolna kampania wyborcza od drzwi do drzwi,,DICTIONARY2_SOURCE,,GroupId: 2845062
-266683,WORD_NOUN,,HIRAGANA,,,第二新卒,だいにしんそつ,,daini shinsotsu,świeżo upieczony absolwent chcący zmienić pracę,,DICTIONARY2_SOURCE,,GroupId: 2845955
-266684,WORD_NOUN,,HIRAGANA,,,第２新卒,だいにしんそつ,,daini shinsotsu,świeżo upieczony absolwent chcący zmienić pracę,,DICTIONARY2_SOURCE,,GroupId: 2845955
+266683,WORD_NOUN,,HIRAGANA,,,第二新卒,だいにしんそつ,,daini shinsotsu,świeżo upieczony absolwent chcący zmienić pracę,zazwyczaj w ciągu trzech lat od rozpoczęcia zatrudnienia,DICTIONARY2_SOURCE,,GroupId: 2845955
+266684,WORD_NOUN,,HIRAGANA,,,第２新卒,だいにしんそつ,,daini shinsotsu,świeżo upieczony absolwent chcący zmienić pracę,zazwyczaj w ciągu trzech lat od rozpoczęcia zatrudnienia,DICTIONARY2_SOURCE,,GroupId: 2845955
 266685,"WORD_VERB_IRREGULAR
 WORD_EXPRESSION",,HIRAGANA,,,いい子にする,いいこにする,,ii ko ni suru,zachowywać się dobrze,o dziecku,DICTIONARY2_SOURCE,,GroupId: 2846669
 266686,"WORD_VERB_IRREGULAR
@@ -210343,11 +210336,19 @@ zmniejszanie prędkości",,DICTIONARY2_SOURCE,,GroupId: 1345590
 292203,WORD_NOUN,,HIRAGANA,,,猶余,ゆうよ,,yuuyo,"odłożenie
 przełożenie
 odroczenie
-przedłużenie (czasu)",,DICTIONARY2_SOURCE,,GroupId: 1541740
+przedłużenie (czasu)
+wahanie
+zwlekanie
+marnowanie czasu
+wyrok w zawieszeniu (prawo; skrót)",,DICTIONARY2_SOURCE,,GroupId: 1541740
 292204,WORD_NOUN,,HIRAGANA,,,猶与,ゆうよ,,yuuyo,"odłożenie
 przełożenie
 odroczenie
-przedłużenie (czasu)",,DICTIONARY2_SOURCE,,GroupId: 1541740
+przedłużenie (czasu)
+wahanie
+zwlekanie
+marnowanie czasu
+wyrok w zawieszeniu (prawo; skrót)",,DICTIONARY2_SOURCE,,GroupId: 1541740
 292205,WORD_NOUN,,HIRAGANA,,,感概,かんがい,,kangai,"głębokie emocje
 silne uczucie",,DICTIONARY2_SOURCE,,GroupId: 1212310
 292206,WORD_NOUN,,HIRAGANA,,,徹廃,てっぱい,,teppai,"anulowanie
