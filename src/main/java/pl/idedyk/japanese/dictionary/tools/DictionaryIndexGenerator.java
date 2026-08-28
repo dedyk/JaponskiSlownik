@@ -8,6 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
 import java.text.Collator;
 import java.text.Normalizer;
+import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -68,7 +69,7 @@ public class DictionaryIndexGenerator {
 		JMdict polishJMdict = dictionary2Helper.getPolishJMdict();
 		
 		List<JMdict.Entry> entryList = new ArrayList<>();		
-		entryList.addAll(polishJMdict.getEntryList().subList(0, 10000));
+		entryList.addAll(polishJMdict.getEntryList().subList(0, 40000));
 		
 		//
 		
@@ -1049,8 +1050,27 @@ public class DictionaryIndexGenerator {
 			List<Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>> sectionMapEntryList = sectionMapEntry.getValue();
 			
 			// podzielenie listy na mniejsze kawalki
-			List<List<java.util.Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>>> sectionMapEntryListPartitionList = ListUtils.partition(sectionMapEntryList, MAX_SECTION_SIZE);
+			List<List<java.util.Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>>> sectionMapEntryListPartitionList;
 			
+			if (sectionName.equals(DictionaryIndex.otherSectionName) == false || sectionMapEntryList.size() > 1) { // drugi warunek dla bezpieczenstwa
+				sectionMapEntryListPartitionList = ListUtils.partition(sectionMapEntryList, MAX_SECTION_SIZE);
+				
+			} else { // specjalna obsluga dla Inne, gdyz tam jest tylko jeden element z duza iloscia wpisow
+				java.util.Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>> sectionMapEntryListEntry = sectionMapEntryList.get(0);
+				
+				List<KanjiKanaPairWrapper> sectionMapEntryListEntryKanjiKanaPairWrapperList = sectionMapEntryListEntry.getValue();				
+				List<List<KanjiKanaPairWrapper>> sectionMapEntryListEntryKanjiKanaPairWrapperListPartitionList = ListUtils.partition(sectionMapEntryListEntryKanjiKanaPairWrapperList, MAX_SECTION_SIZE);
+				
+				sectionMapEntryListPartitionList = new ArrayList<>();
+				
+				for (List<KanjiKanaPairWrapper> currentSectionMapEntryListEntryKanjiKanaPairWrapperListPartition : sectionMapEntryListEntryKanjiKanaPairWrapperListPartitionList) {					
+					List<Map.Entry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>> newVirtualSectionMapEntryListPartition = new ArrayList<>();
+					
+					newVirtualSectionMapEntryListPartition.add(new AbstractMap.SimpleEntry<KanaRomajiPolishWordKey, List<KanjiKanaPairWrapper>>(sectionMapEntryListEntry.getKey(), currentSectionMapEntryListEntryKanjiKanaPairWrapperListPartition));					
+					sectionMapEntryListPartitionList.add(newVirtualSectionMapEntryListPartition);
+				}				
+			}
+
 			for (int partitionNo = 0; partitionNo < sectionMapEntryListPartitionList.size(); partitionNo++) {
 				
 				SectionIndex sectionIndex = new SectionIndex();
@@ -1131,7 +1151,26 @@ public class DictionaryIndexGenerator {
 			List<Map.Entry<String, List<KanjiCharacterInfo>>> sectionMapEntryList = sectionMapEntry.getValue();
 			
 			// podzielenie listy na mniejsze kawalki
-			List<List<java.util.Map.Entry<String, List<KanjiCharacterInfo>>>> sectionMapEntryListPartitionList = ListUtils.partition(sectionMapEntryList, MAX_SECTION_SIZE);
+			List<List<java.util.Map.Entry<String, List<KanjiCharacterInfo>>>> sectionMapEntryListPartitionList;
+			
+			if (sectionName.equals(DictionaryIndex.otherSectionName) == false || sectionMapEntryList.size() > 1) { // drugi warunek dla bezpieczenstwa
+				sectionMapEntryListPartitionList = ListUtils.partition(sectionMapEntryList, MAX_SECTION_SIZE);
+				
+			} else { // specjalna obsluga dla Inne, gdyz tam jest tylko jeden element z duza iloscia wpisow
+				java.util.Map.Entry<String, List<KanjiCharacterInfo>> sectionMapEntryListEntry = sectionMapEntryList.get(0);
+				
+				List<KanjiCharacterInfo> sectionMapEntryListEntryKanjiCharacterInfoList = sectionMapEntryListEntry.getValue();				
+				List<List<KanjiCharacterInfo>> sectionMapEntryListEntryKanjiCharacterInfoListPartitionList = ListUtils.partition(sectionMapEntryListEntryKanjiCharacterInfoList, MAX_SECTION_SIZE);
+				
+				sectionMapEntryListPartitionList = new ArrayList<>();
+				
+				for (List<KanjiCharacterInfo> currentSectionMapEntryListEntryKanjiCharacterInfoListPartition : sectionMapEntryListEntryKanjiCharacterInfoListPartitionList) {					
+					List<Map.Entry<String, List<KanjiCharacterInfo>>> newVirtualSectionMapEntryListPartition = new ArrayList<>();
+					
+					newVirtualSectionMapEntryListPartition.add(new AbstractMap.SimpleEntry<String, List<KanjiCharacterInfo>>(sectionMapEntryListEntry.getKey(), currentSectionMapEntryListEntryKanjiCharacterInfoListPartition));					
+					sectionMapEntryListPartitionList.add(newVirtualSectionMapEntryListPartition);
+				}				
+			}
 			
 			for (int partitionNo = 0; partitionNo < sectionMapEntryListPartitionList.size(); partitionNo++) {
 				
