@@ -1063,11 +1063,17 @@ DUPLICATE 319180
 DUPLICATE 319181",GroupId: 1514990
 205,WORD_NOUN,,HIRAGANA,"Genki 1-2
 Genki 1-7
-Genki kanji 1-7",,父,ちち,,chichi,ojciec,"pokornie; własna rodzina, formalnie, pokornie, とと i ちゃん używane przez dzieci",DICTIONARY2_SOURCE,"DUPLICATE 302277
+Genki kanji 1-7",,父,ちち,,chichi,"ojciec (pokornie; własna rodzina, formalnie, pokornie, とと i ちゃん używane przez dzieci)
+ojciec (np. danej dyscypliny)
+pionier (np. danej dziedziny badań)
+założyciel
+Bóg (chrześcijaństwo)
+Ojciec (chrześcijaństwo)",,DICTIONARY2_SOURCE,"DUPLICATE 302277
 DUPLICATE 302283
 DUPLICATE 327329
 DUPLICATE 327330
-DUPLICATE 327331",GroupId: 1497610
+DUPLICATE 327331
+DUPLICATE 327372",GroupId: 1497610
 206,WORD_NOUN,,HIRAGANA,"Genki 1-2
 Genki 1-7
 Genki 1-12",,歯,は,,ha,"ząb
@@ -163322,12 +163328,8 @@ DUPLICATE 37458",GroupId: 1380040
 pajac",fra: arlequin,DICTIONARY2_SOURCE,,GroupId: 2478200
 37439,WORD_NOUN,,KATAKANA,,,-,スニッファー,,suniffaa,sniffer,"informatyka; program komputerowy lub urządzenie, którego zadaniem jest przechwytywanie i ewentualnie analizowanie danych przepływających w sieci",DICTIONARY2_SOURCE,,GroupId: 2304210
 37440,WORD_NOUN,,KATAKANA,,,-,クロッカス,,kurokkasu,krokus,,DICTIONARY2_SOURCE,,GroupId: 1045820
-37441,WORD_NOUN,,KATAKANA,,,-,ジャンピングジャック,,janpingu jakku,"podskok w rozkroku
-pajac
-pajacyk (ćwiczenie)
-pajacyk na sznurku z ruchomymi kończynami
-pajac na sznurku",jumping jack,,,"GroupId: 2623810
-Translate: jumping jack"
+37441,WORD_NOUN,,KATAKANA,,,-,ジャンピングジャック,,janpingu jakku,"pajacyki
+podskok w rozkroku","aerobowe ćwiczenie fizyczne angażujące różne grupy mięśniowe: mięśnie naramienne, pośladkowe, mięśnie przywodzące i odwodzące w stawie biodrowym, ręce, plecy, nogi, ang: jumping jack",DICTIONARY2_SOURCE,,GroupId: 2623810
 37442,WORD_NOUN,,KATAKANA,,,-,ブリリアントカット,,buririanto katto,szlif brylantowy,ang: brilliant cut,DICTIONARY2_SOURCE,,GroupId: 1116170
 37443,WORD_NOUN,,HIRAGANA_KATAKANA,,,犬サフラン,いぬサフラン,,inu safuran,zimowit jesienny,"pisanie zwykle z użyciem kana; gatunek rośliny należący do rodziny zimowitowatych, Colchicum autumnale",DICTIONARY2_SOURCE,,GroupId: 2457140
 37444,"WORD_VERB_U
@@ -163386,12 +163388,8 @@ gorliwość w poszukiwaniu oświecenia (buddyzm)
 przestrzeganie diety wegetariańskiej",,DICTIONARY2_SOURCE,"DUPLICATE 37435
 DUPLICATE 37436
 DUPLICATE 37437",GroupId: 1380040
-37459,WORD_NOUN,,KATAKANA,,,-,ジャンピング・ジャック,,janpingu jakku,"podskok w rozkroku
-pajac
-pajacyk (ćwiczenie)
-pajacyk na sznurku z ruchomymi kończynami
-pajac na sznurku",jumping jack,,,"GroupId: 2623810
-Translate: jumping jack"
+37459,WORD_NOUN,,KATAKANA,,,-,ジャンピング・ジャック,,janpingu jakku,"pajacyki
+podskok w rozkroku","aerobowe ćwiczenie fizyczne angażujące różne grupy mięśniowe: mięśnie naramienne, pośladkowe, mięśnie przywodzące i odwodzące w stawie biodrowym, ręce, plecy, nogi, ang: jumping jack",DICTIONARY2_SOURCE,,GroupId: 2623810
 37460,WORD_NOUN,,KATAKANA,,,-,ブリリアント・カット,,buririanto katto,szlif brylantowy,ang: brilliant cut,DICTIONARY2_SOURCE,,GroupId: 1116170
 37461,WORD_NOUN,,KATAKANA,,,-,イヌサフラン,,inu safuran,zimowit jesienny,"pisanie zwykle z użyciem kana; gatunek rośliny należący do rodziny zimowitowatych, Colchicum autumnale",DICTIONARY2_SOURCE,,GroupId: 2457140
 37462,WORD_NOUN,,KATAKANA,,,-,スターサファイア,,sutaa safaia,szafir gwiaździsty,ang: star sapphire,,,"GroupId: 1069260
@@ -227382,8 +227380,7 @@ ostrożność",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 21208
 56086,WORD_ADVERB,,HIRAGANA,,,蟠りなく,わだかまりなく,,wadakamari naku,"bez złych uczuć
 otwarcie
 bez rezerwy",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1572210
-56087,WORD_NOUN,,HIRAGANA,,,認識票,にんしきひょう,,ninshikihyou,nieśmiertelnik,"nazwa używanego w wojsku elementu systemu identyfikacji żołnierzy w razie ich śmierci, bądź ranienia",,,"GroupId: 1729500
-xxx"
+56087,WORD_NOUN,,HIRAGANA,,,認識票,にんしきひょう,,ninshikihyou,nieśmiertelnik,"wojskowość; nazwa używanego w wojsku elementu systemu identyfikacji żołnierzy w razie ich śmierci, bądź ranienia",DICTIONARY2_SOURCE,,GroupId: 1729500
 56088,WORD_NOUN,,HIRAGANA,,,閲覧室,えつらんしつ,,etsuran shitsu,czytelnia,,DICTIONARY2_SOURCE,,GroupId: 1175390
 56089,"WORD_ADJECTIVE_NA
 WORD_ADJECTIVE_TARU
@@ -229899,8 +229896,7 @@ wszędzie gdzie się pójdzie",,,DUPLICATE 56908,"GroupId: 2794690
 Translate: everywhere
 Translate: everywhere one goes
 Translate: wherever one goes"
-56910,WORD_NOUN,,KATAKANA_HIRAGANA,,,ニューヨーク証券取引所,ニューヨークしょうけんとりひきじょ,,nyuu yooku shouken torihikijo,Nowojorska Giełda Papierów Wartościowych,,,,"GroupId: 1987550
-xxx"
+56910,WORD_NOUN,,KATAKANA_HIRAGANA,,,ニューヨーク証券取引所,ニューヨークしょうけんとりひきじょ,,nyuu yooku shouken torihikijo,Nowojorska Giełda Papierów Wartościowych,,DICTIONARY2_SOURCE,,GroupId: 1987550
 56911,WORD_NOUN,,KATAKANA,,,-,ビッグアップル,,biggu appuru,Big Apple,inna nazwa na miasto Nowy Jork,DICTIONARY2_SOURCE,,GroupId: 2144280
 56912,WORD_NOUN,,KATAKANA,,,-,ビッグ・アップル,,biggu appuru,Big Apple,inna nazwa na miasto Nowy Jork,DICTIONARY2_SOURCE,,GroupId: 2144280
 56913,WORD_NOUN,,HIRAGANA,,,犬神,いぬがみ,,inu gami,"zły duch psa
@@ -249845,8 +249841,7 @@ Translate: leased telephone line"
 63020,WORD_NOUN,,HIRAGANA,,,反陽子爆弾,はんようしばくだん,,han'youshi bakudan,"antyprotonowa bomba
 bomba antyprotonowa",,DICTIONARY2_SOURCE,,GroupId: 2632960
 63021,WORD_NOUN,,HIRAGANA,,,行人偏,ぎょうにんべん,,gyouninben,element podstawowy kanji 'idący człowiek',,DICTIONARY2_SOURCE,,GroupId: 2175860
-63022,WORD_NOUN,,HIRAGANA,,,不作為犯,ふさくいはん,,fusaku ihan,przestępstwo zaniechania,,,,"GroupId: 1740070
-Translate: crime of omission"
+63022,WORD_NOUN,,HIRAGANA,,,不作為犯,ふさくいはん,,fusaku ihan,przestępstwo zaniechania,,DICTIONARY2_SOURCE,,GroupId: 1740070
 63023,WORD_NOUN,,HIRAGANA,,,低回,ていかい,,teikai,"chodzić w zamyśleniu tam i z powrotem
 chodzić w głębokim zamyśleniu
 myśleć o wielu rzeczach
@@ -263096,8 +263091,9 @@ technologia ponad obecne możliwości (głównie w fantastyce naukowej)",ang: ov
 67156,WORD_NOUN,,HIRAGANA,,,放送終了,ほうそうしゅうりょう,,housou shuuryou,"koniec transmisji
 zakończenie programu",,DICTIONARY2_SOURCE,,GroupId: 2715030
 67157,WORD_NOUN,,KATAKANA_HIRAGANA,,,トチノキ科,トチノキか,,tochinoki ka,kasztanowcowate,rodzina roślin wyróżniana w niektórych (zwłaszcza dawniejszych) systemach klasyfikacyjnych w obrębie rzędu mydleńcowców,DICTIONARY2_SOURCE,,GroupId: 2065890
-67158,WORD_NOUN,,HIRAGANA,,,入境,にゅうきょう,,nyuukyou,przejście graniczne,,,,"GroupId: 2062670
-xxx"
+67158,WORD_NOUN,,HIRAGANA,,,入境,にゅうきょう,,nyuukyou,"przejście graniczne
+przekraczanie granicy
+wjazd na terytorium kraju",,DICTIONARY2_SOURCE,,GroupId: 2062670
 67159,WORD_NOUN,,HIRAGANA,,,欧州連合,おうしゅうれんごう,,oushuu rengou,"Unia Europejska
 EU",,DICTIONARY2_SOURCE,,GroupId: 1181250
 67160,WORD_VERB_RU,,HIRAGANA,,,追求める,おいもとめる,,oi motomeru,"starać się osiągnąć (cel)
@@ -276531,6 +276527,7 @@ urwisty",,DICTIONARY2_SOURCE,,GroupId: 1614850
 71838,WORD_NOUN,,HIRAGANA,,,共犯者,きょうはんしゃ,,kyouhansha,"współsprawca
 współwinny
 współwinowajca
+współuczestnik spisku
 poplecznik",,DICTIONARY2_SOURCE,,GroupId: 1235120
 71839,WORD_NOUN,,HIRAGANA,,,直販,ちょくはん,,chokuhan,"marketing bezpośredni
 sprzedaż bezpośrednia",,DICTIONARY2_SOURCE,,GroupId: 2073770
@@ -312015,10 +312012,7 @@ WORD_NOUN",,HIRAGANA,,,旋毛曲がり,つむじまがり,,tsumuji magari,"przew
 przekorność
 kłótliwy
 ekscentryczny
-dziwaczny",,,,"GroupId: 1391720
-Translate: perversity
-Translate: cantankerous
-Translate: eccentric"
+dziwaczny",,DICTIONARY2_SOURCE,,GroupId: 1391720
 85652,WORD_NOUN,,HIRAGANA,,,旋毛虫症,せんもうちゅうしょう,,senmou chuushou,"włośnica
 trychinoza",medycyna,DICTIONARY2_SOURCE,,GroupId: 2630280
 85653,WORD_NOUN,,HIRAGANA,,,旋毛虫,せんもうちゅう,,senmouchuu,"włosień kręty
@@ -312185,10 +312179,7 @@ WORD_NOUN",,HIRAGANA,,,つむじ曲がり,つむじまがり,,tsumuji magari,"pr
 przekorność
 kłótliwy
 ekscentryczny
-dziwaczny",,,,"GroupId: 1391720
-Translate: perversity
-Translate: cantankerous
-Translate: eccentric"
+dziwaczny",,DICTIONARY2_SOURCE,,GroupId: 1391720
 85712,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,センモウチュウ,,senmouchuu,"włosień kręty
 trychina",,DICTIONARY2_SOURCE,,GroupId: 2827790
 85713,WORD_NOUN,,KATAKANA,,,-,フルカラー・プリンター,,furu karaa purintaa,drukarka pełnokolorowa,ang: full-color printer,DICTIONARY2_SOURCE,,GroupId: 2468880
@@ -340919,8 +340910,7 @@ xxx"
 xxx"
 97067,WORD_NOUN,,HIRAGANA,,,食い倒れ,くいだおれ,,kui daore,rujnowanie się poprzez braku umiaru w jedzeniu,,DICTIONARY2_SOURCE,,GroupId: 1871730
 97068,WORD_NOUN,,HIRAGANA,,,一人寝,ひとりね,,hitorine,"spanie w pojedynkę
-spanie samotnie",,,,"GroupId: 1163760
-Translate: sleeping alone"
+spanie samotnie",,DICTIONARY2_SOURCE,,GroupId: 1163760
 97069,WORD_NOUN,,HIRAGANA,,,独り住まい,ひとりずまい,,hitori zumai,"żyć samemu
 żyć w pojedynkę
 żyć samotnie",,,,"GroupId: 2405230
@@ -340960,11 +340950,9 @@ system wynajmu",ang: rental system,DICTIONARY2_SOURCE,,GroupId: 1146190
 97087,WORD_NOUN,,KATAKANA,,,-,ノイズ・リダクション,,noizu ridakushon,redukcja szumu,ang: noise reduction,DICTIONARY2_SOURCE,,GroupId: 1093740
 97088,WORD_NOUN,,HIRAGANA,,,食倒れ,くいだおれ,,kui daore,rujnowanie się poprzez braku umiaru w jedzeniu,,DICTIONARY2_SOURCE,,GroupId: 1871730
 97089,WORD_NOUN,,HIRAGANA,,,ひとり寝,ひとりね,,hitorine,"spanie w pojedynkę
-spanie samotnie",,,,"GroupId: 1163760
-Translate: sleeping alone"
+spanie samotnie",,DICTIONARY2_SOURCE,,GroupId: 1163760
 97090,WORD_NOUN,,HIRAGANA,,,独り寝,ひとりね,,hitorine,"spanie w pojedynkę
-spanie samotnie",,,,"GroupId: 1163760
-Translate: sleeping alone"
+spanie samotnie",,DICTIONARY2_SOURCE,,GroupId: 1163760
 97091,WORD_NOUN,,HIRAGANA,,,一人遊び,ひとりあそび,,hitori asobi,"bawienie się samemu
 zabawianie się
 granie samotnie (np. pasjans)",,DICTIONARY2_SOURCE,,GroupId: 1691660
