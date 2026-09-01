@@ -29602,17 +29602,31 @@ sztuczka (przestarzałe słowo)",,DICTIONARY2_SOURCE,,GroupId: 1278290
 5685,WORD_VERB_U,,HIRAGANA,,,進む,すすむ,,susumu,"posuwać się
 postępować
 iść naprzód
+poruszać się do przodu
 poprzedzać
-wyprzedzać
+wyprzedzać (np. czasy)
+przechodzić (do kolejnego etapu)
+przechodzić dalej (np. do kolejnej klasy)
+dostać się (np. na uniwersytet)
 czynić postępy
 robić postęp
-poprawić się
-pogłębiać
-podnosić
-podwyższać
+posuwać się naprzód (np. w pracy)
+rozwijać się
+radzić sobie (z czymś)
+nasilać się
+wzrastać
+rozwijać się
+pogłębiać się
+pogarszać się (np. w odniesieniu do choroby)
+postępować (np. w odniesieniu do stanu)
+robić z własnej woli (często przysłówkowo jako 進んで)
+być chętnym (często przysłówkowo jako 進んで)
+być entuzjastycznym (często przysłówkowo jako 進んで)
 śpieszyć się (o zegarku)
-czynić z własnej woli
-robić z własnej woli",,DICTIONARY2_SOURCE,DUPLICATE 55165,GroupId: 1365980
+wyprzedzać czas
+być do przodu
+wzrastać (apetyt) (np. jako （食／ご飯）が～)
+zaczynać odczuwać głód (na coś) (np. jako （食／ご飯）が～)",,DICTIONARY2_SOURCE,DUPLICATE 55165,GroupId: 1365980
 5686,WORD_VERB_RU,,HIRAGANA,,,進める,すすめる,,susumeru,"iść naprzód
 poruszać się do przodu
 przesunąć (zegar, zegarek) do przodu
@@ -63088,11 +63102,8 @@ aplikować krople do oczu",,IGNORE_NO_JMEDICT,,
 WORD_EXPRESSION",,HIRAGANA,,,眼鏡を外す,めがねをはずす,,megane o hazusu,"zdjąć okulary
 zdejmować okulary",,DICTIONARY2_SOURCE,,GroupId: 1911820
 13301,WORD_VERB_U,,HIRAGANA,,,火を消す,ひをけす,,hi o kesu,gasić ogień,,IGNORE_NO_JMEDICT,,
-13302,WORD_NOUN,,HIRAGANA,,,洋服だんす,ようふくだんす,,youfuku dansu,"szafa na ubrania (szczególnie na zachodnie ubrania)
-komoda
-pojemnik na ubrania
-kredens",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 1546030
+13302,"WORD_NOUN
+WORD_ADJECTIVE_NO",,HIRAGANA,,,病竈,びょうそう,,byousou,lezja,"medycyna; obrażenie, uszkodzenie, rana, zmiana chorobowa na ciele",DICTIONARY2_SOURCE,,GroupId: 1490370
 13303,WORD_EXPRESSION,,HIRAGANA,,,八日前,ようかまえ,,youka mae,osiem dni temu,,IGNORE_NO_JMEDICT,,
 13304,WORD_EXPRESSION,,HIRAGANA,,,八日後,ようかご,,youkago,"za osiem dni
 po ośmiu dniach",,IGNORE_NO_JMEDICT,,
@@ -138901,11 +138912,10 @@ kredens",,DICTIONARY2_SOURCE,DUPLICATE 31115,GroupId: 1546030
 komoda
 pojemnik na ubrania
 kredens",,DICTIONARY2_SOURCE,DUPLICATE 31114,GroupId: 1546030
-31116,WORD_NOUN,,HIRAGANA,,,洋服たんす,ようふくたんす,,youfuku tansu,"szafa na ubrania (szczególnie na zachodnie ubrania)
+31116,WORD_NOUN,,HIRAGANA,,,洋服ダンス,ようふくだんす,,youfuku dansu,"szafa na ubrania (szczególnie na zachodnie ubrania)
 komoda
 pojemnik na ubrania
-kredens",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 1546030
+kredens",,DICTIONARY2_SOURCE,,GroupId: 1546030
 31117,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,約束をやぶる,やくそくをやぶる,,yakusoku o yaburu,"złamać umowę
 złamać obietnicę
@@ -149104,8 +149114,7 @@ rekonwalescencyjny wypoczywanie",podczas powrotu do zdrowia,DICTIONARY2_SOURCE,,
 33492,WORD_NOUN,,KATAKANA,,,-,ブラマンジェ,,buramanje,budyń,fra: blanc-manger,,,"GroupId: 2506730
 Translate: blancmange"
 33493,WORD_NOUN,,HIRAGANA,,,抜き手,ぬきて,,nuki te,kraul,rodzaj tradycyjnego japońskiego stylu pływackiego,DICTIONARY2_SOURCE,DUPLICATE 33532,GroupId: 1679920
-33494,WORD_NOUN,,HIRAGANA,,,貫手,ぬきて,,nukite,dłoń włócznia,w sztukach walki,,,"GroupId: 2787220
-Translate: spear hand"
+33494,WORD_NOUN,,HIRAGANA,,,貫手,ぬきて,,nukite,dłoń włócznia,sztuki walki; w sztukach walki,DICTIONARY2_SOURCE,,GroupId: 2787220
 33495,WORD_NOUN,,HIRAGANA,,,しゃがれ声,しゃがれごえ,,shagare goe,"zachrypły głos
 ochrypły głos",,DICTIONARY2_SOURCE,,GroupId: 2037190
 33496,WORD_VERB_RU,,HIRAGANA,,,嗄れる,しわがれる,,shiwagareru,"ochrypnąć
@@ -187393,9 +187402,7 @@ już",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1590570
 44431,WORD_NOUN,,HIRAGANA,,,製鋼業,せいこうぎょう,,seikougyou,przemysł stalowy,,,,"GroupId: 1380630
 Translate: steel industry"
 44432,WORD_NOUN,,HIRAGANA,,,中心地,ちゅうしんち,,chuushinchi,"centrum
-środek
-metropolia",,,,"GroupId: 1424590
-xxx"
+metropolia",,DICTIONARY2_SOURCE,,GroupId: 1424590
 44433,"WORD_EXPRESSION
 WORD_PARTICULE
 WORD_CONJUNCTION",,HIRAGANA_EXCEPTION,,,-,からには,,kara ni wa,"teraz, kiedy
@@ -204191,10 +204198,7 @@ xxx"
 49067,WORD_NOUN,,HIRAGANA,,,排泄訓練,はいせつくんれん,,haisetsu kunren,nauka korzystania z toalety,,DICTIONARY2_SOURCE,,GroupId: 2245060
 49068,WORD_NOUN,,HIRAGANA,,,彫刻家,ちょうこくか,,choukokuka,"rzeźbiarz
 grawer
-rytownik",,,,"GroupId: 1427990
-Translate: engraver
-Translate: carver
-Translate: sculptor"
+rytownik",,DICTIONARY2_SOURCE,,GroupId: 1427990
 49069,WORD_NOUN,,HIRAGANA,,,彫り物師,ほりものし,,hori monoshi,"grawer
 rytownik
 rzeźbiarz
@@ -247304,9 +247308,9 @@ wypoczywać
 relaksować się
 zrelaksować się",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 1211930
 62165,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,気を休める,きをやすめる,,ki o yasumeru,"zelżeć
-zrelaksować uwagę",,,,"GroupId: 2117160
-xxx"
+WORD_EXPRESSION",,HIRAGANA,,,気を休める,きをやすめる,,ki o yasumeru,"rozluźnić
+odprężyć uwagę
+zrelaksować uwagę",,DICTIONARY2_SOURCE,,GroupId: 2117160
 62166,WORD_PREFIX,,HIRAGANA,,,優,やさ,,yasa,"łagodny
 delikatny
 serdeczny
@@ -255011,16 +255015,12 @@ słuszne zachowanie",,DICTIONARY2_SOURCE,,GroupId: 1891360
 64641,"WORD_NOUN
 WORD_EXPRESSION",,HIRAGANA,,,ただしい行い,ただしいおこない,,tadashii okonai,"właściwe postępowanie
 słuszne zachowanie",,DICTIONARY2_SOURCE,,GroupId: 1891360
-64642,WORD_NOUN,,HIRAGANA_KATAKANA,,,洋服ダンス,ようふくダンス,,youfuku dansu,"szafa na ubrania (szczególnie na zachodnie ubrania)
+64642,WORD_NOUN,,HIRAGANA,,,洋服タンス,ようふくたんす,,youfuku tansu,"szafa na ubrania (szczególnie na zachodnie ubrania)
 komoda
 pojemnik na ubrania
-kredens",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 1546030
-64643,WORD_NOUN,,HIRAGANA_KATAKANA,,,洋服タンス,ようふくタンス,,youfuku tansu,"szafa na ubrania (szczególnie na zachodnie ubrania)
-komoda
-pojemnik na ubrania
-kredens",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 1546030
+kredens",,DICTIONARY2_SOURCE,,GroupId: 1546030
+64643,WORD_NOUN,,HIRAGANA_KATAKANA,,,画像編集アプリ,がぞうへんしゅうアプリ,,gazou henshuu apuri,"aplikacja do edycji obrazów
+program do edycji zdjęć",fotografia,DICTIONARY2_SOURCE,,GroupId: 2872895
 64644,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,帽子を取る,ぼうしをとる,,boushi o toru,zdjąć czapkę,,DICTIONARY2_SOURCE,,GroupId: 1908940
 64645,"WORD_NOUN
@@ -264995,14 +264995,7 @@ farsa",,DICTIONARY2_SOURCE,,GroupId: 1655100
 komiczny",,DICTIONARY2_SOURCE,,GroupId: 1422850
 67746,WORD_NOUN,,HIRAGANA,,,茶番狂言,ちゃばんきょうげん,,chaban kyougen,"farsa
 burleska
-parodia
-komedia bulwarowa",,,,"GroupId: 1422840
-Translate: farce
-MiscInfo: yoji
-Translate: burlesque
-MiscInfo: yoji
-Translate: low comedy
-MiscInfo: yoji"
+komedia bulwarowa",,DICTIONARY2_SOURCE,,GroupId: 1422840
 67747,WORD_NOUN,,HIRAGANA,,,眼底出血,がんていしゅっけつ,,gantei shukketsu,krwotok w dnie oka,medycyna,DICTIONARY2_SOURCE,,GroupId: 1804030
 67748,WORD_NOUN,,HIRAGANA,,,眼底検査,がんていけんさ,,gantei kensa,"badanie dna oka
 oftalmoskop (wziernik oczny, przyrząd medyczny, wziernik służący do badania dna oka)",,,,"GroupId: 2800110
@@ -301805,8 +301798,9 @@ MiscInfo: uk
 MiscInfo: col"
 81456,WORD_NOUN,,HIRAGANA,,,創痕,そうこん,,soukon,"blizna
 szrama",,DICTIONARY2_SOURCE,,GroupId: 1398410
-81457,WORD_NOUN,,HIRAGANA,,,断頭台,だんとうだい,,dantoudai,gilotyna,,,,"GroupId: 1419750
-xxx"
+81457,WORD_NOUN,,HIRAGANA,,,断頭台,だんとうだい,,dantoudai,"szafot
+gilotyna
+szubienica",,DICTIONARY2_SOURCE,,GroupId: 1419750
 81458,WORD_NOUN,,KATAKANA,,,-,レシピ,,reshipi,"przepis (ang: recipe)
 recepta (medyczna)
 zalecenie (lekarskie)
@@ -303013,8 +303007,7 @@ emalia",ang: enamel paint,DICTIONARY2_SOURCE,,GroupId: 1029370
 81998,WORD_NOUN,,KATAKANA,,,-,バンプマッピング,,banpu mappingu,mapowanie wypukłości,informatyka; ang: bump mapping,DICTIONARY2_SOURCE,,GroupId: 2319490
 81999,WORD_NOUN,,HIRAGANA,,,公事,こうじ,,kouji,"rządowy interes
 rządowy biznes",,DICTIONARY2_SOURCE,DUPLICATE 81970,GroupId: 1273790
-82000,WORD_NOUN,,KATAKANA_HIRAGANA,,,パスオーバーヘッド部,パスオーバーヘッドぶ,,pasu oobaaheddo bu,???,ang: path overhead section,,,"GroupId: 2319990
-xxx"
+82000,WORD_NOUN,,KATAKANA_HIRAGANA,,,パスオーバーヘッド部,パスオーバーヘッドぶ,,pasu oobaaheddo bu,???,informatyka; ang: path overhead section,DICTIONARY2_SOURCE,,GroupId: 2319990
 82001,WORD_NOUN,,HIRAGANA,,,一酸化窒素,いっさんかちっそ,,issanka chisso,tlenek azotu,,DICTIONARY2_SOURCE,,GroupId: 1971870
 82002,WORD_NOUN,,HIRAGANA,,,一酸化二窒素,いっさんかにちっそ,,issan kanichisso,tlenek diazotu,,,,"GroupId: 1971880
 xxx"
@@ -305421,10 +305414,7 @@ DUPLICATE 204896",GroupId: 2257780
 83013,WORD_NOUN,,HIRAGANA,,,焙焼,ばいしょう,,baishou,"palenie (np. w hutnictwie, metalurgii)
 kalcynowanie
 spalanie się na popiół
-prażenie",,,,"GroupId: 2613780
-Translate: roasting (in metallurgy, etc.)
-Translate: calcination
-Translate: torrefaction"
+prażenie",,DICTIONARY2_SOURCE,,GroupId: 2613780
 83014,WORD_NOUN,,HIRAGANA,,,御饅,おまん,,oman,manjū,archaizm; język dzieci; kobiecy termin lub język; uprzejmie,DICTIONARY2_SOURCE,DUPLICATE 268940,GroupId: 2828361
 83015,WORD_VERB_U,,HIRAGANA,,,敬す,けいす,,keisu,"szanować
 poważać
@@ -319284,8 +319274,8 @@ szkiełko podstawowe",element mikroskopu; ang: slide glass,DICTIONARY2_SOURCE,,G
 wierna imitacja",ang: dead copy,DICTIONARY2_SOURCE,,GroupId: 1083320
 88638,WORD_NOUN,,KATAKANA,,,-,コールレート,,kooru reeto,oprocentowanie pożyczki zwrotnej na żądanie,ang: call rate,DICTIONARY2_SOURCE,,GroupId: 1049610
 88639,WORD_NOUN,,KATAKANA,,,-,サンセリフ,,san serifu,czcionka bezszeryfowa,drukarstwo; ang: sans serif,DICTIONARY2_SOURCE,,GroupId: 2299490
-88640,WORD_NOUN,,KATAKANA,,,-,サービスガール,,saabisu gaaru,kelnerka,ang: service girl,,,"GroupId: 1055040
-xxx"
+88640,WORD_NOUN,,KATAKANA,,,-,サービスガール,,saabisu gaaru,"kelnerka
+hostess (w restauracji)",ang: service girl; ang: service girl,DICTIONARY2_SOURCE,,GroupId: 1055040
 88641,WORD_NOUN,,KATAKANA,,,-,ジュニアライト,,junia raito,junior lekka,"waga, ang: junior light",DICTIONARY2_SOURCE,,GroupId: 1066130
 88642,WORD_NOUN,,KATAKANA,,,-,ソフトランディング,,sofuto randingu,miękkie lądowanie,ang: soft landing,,,"GroupId: 2447700
 Translate: soft landing"
@@ -319398,8 +319388,8 @@ szkiełko podstawowe",element mikroskopu; ang: slide glass,DICTIONARY2_SOURCE,,G
 wierna imitacja",ang: dead copy,DICTIONARY2_SOURCE,,GroupId: 1083320
 88698,WORD_NOUN,,KATAKANA,,,-,コール・レート,,kooru reeto,oprocentowanie pożyczki zwrotnej na żądanie,ang: call rate,DICTIONARY2_SOURCE,,GroupId: 1049610
 88699,WORD_NOUN,,KATAKANA,,,-,サン・セリフ,,san serifu,czcionka bezszeryfowa,drukarstwo; ang: sans serif,DICTIONARY2_SOURCE,,GroupId: 2299490
-88700,WORD_NOUN,,KATAKANA,,,-,サービス・ガール,,saabisu gaaru,kelnerka,ang: service girl,,,"GroupId: 1055040
-xxx"
+88700,WORD_NOUN,,KATAKANA,,,-,サービス・ガール,,saabisu gaaru,"kelnerka
+hostess (w restauracji)",ang: service girl; ang: service girl,DICTIONARY2_SOURCE,,GroupId: 1055040
 88701,WORD_NOUN,,KATAKANA,,,-,ジュニア・ライト,,junia raito,junior lekka,"waga, ang: junior light",DICTIONARY2_SOURCE,,GroupId: 1066130
 88702,WORD_NOUN,,KATAKANA,,,-,ソフト・ランディング,,sofuto randingu,miękkie lądowanie,ang: soft landing,,,"GroupId: 2447700
 Translate: soft landing"
@@ -329659,8 +329649,7 @@ xxx"
 format graficzny",informatyka; ang: graphics format,DICTIONARY2_SOURCE,,GroupId: 2294710
 93147,WORD_NOUN,,KATAKANA,,,-,システムコンフィギュレーション,,shisutemu konfigyureeshon,konfiguracja systemu,informatyka; ang: system configuration,DICTIONARY2_SOURCE,,GroupId: 2300540
 93148,WORD_NOUN,,KATAKANA,,,-,ソフトウェアエンジニア,,sofutowea enjinia,inżynier oprogramowania,informatyka; ang: software engineer,DICTIONARY2_SOURCE,,GroupId: 2444980
-93149,WORD_NOUN,,KATAKANA,,,-,リスクマネジメント,,risuku manejimento,zarządzanie ryzykiem,ang: risk management,,,"GroupId: 2472860
-Translate: risk management"
+93149,WORD_NOUN,,KATAKANA,,,-,リスクマネジメント,,risuku manejimento,zarządzanie ryzykiem,ang: risk management,DICTIONARY2_SOURCE,,GroupId: 2472860
 93150,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,むらさき色,ししょく,,shishoku,"fiolet
 kolor fioletowy",,DICTIONARY2_SOURCE,DUPLICATE 69758,GroupId: 1311700
@@ -330128,12 +330117,9 @@ xxx"
 format graficzny",informatyka; ang: graphics format,DICTIONARY2_SOURCE,,GroupId: 2294710
 93326,WORD_NOUN,,KATAKANA,,,-,システム・コンフィギュレーション,,shisutemu konfigyureeshon,konfiguracja systemu,informatyka; ang: system configuration,DICTIONARY2_SOURCE,,GroupId: 2300540
 93327,WORD_NOUN,,KATAKANA,,,-,ソフトウェア・エンジニア,,sofutowea enjinia,inżynier oprogramowania,informatyka; ang: software engineer,DICTIONARY2_SOURCE,,GroupId: 2444980
-93328,WORD_NOUN,,KATAKANA,,,-,リスクマネージメント,,risuku maneejimento,zarządzanie ryzykiem,ang: risk management,,,"GroupId: 2472860
-Translate: risk management"
-93329,WORD_NOUN,,KATAKANA,,,-,リスク・マネジメント,,risuku manejimento,zarządzanie ryzykiem,ang: risk management,,,"GroupId: 2472860
-Translate: risk management"
-93330,WORD_NOUN,,KATAKANA,,,-,リスク・マネージメント,,risuku maneejimento,zarządzanie ryzykiem,ang: risk management,,,"GroupId: 2472860
-Translate: risk management"
+93328,WORD_NOUN,,KATAKANA,,,-,リスクマネージメント,,risuku maneejimento,zarządzanie ryzykiem,ang: risk management,DICTIONARY2_SOURCE,,GroupId: 2472860
+93329,WORD_NOUN,,KATAKANA,,,-,リスク・マネジメント,,risuku manejimento,zarządzanie ryzykiem,ang: risk management,DICTIONARY2_SOURCE,,GroupId: 2472860
+93330,WORD_NOUN,,KATAKANA,,,-,リスク・マネージメント,,risuku maneejimento,zarządzanie ryzykiem,ang: risk management,DICTIONARY2_SOURCE,,GroupId: 2472860
 93331,WORD_NOUN,,HIRAGANA,,,あそび相手,あそびあいて,,asobi aite,towarzysz zabaw,np. dziecinnych,DICTIONARY2_SOURCE,,GroupId: 1542110
 93332,WORD_NOUN,,HIRAGANA,,,御節,おせち,,osechi,"osechi
 jedzenie spożywane podczas świąt noworocznych (wyjaśnienie)",skrót; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2122790
@@ -335405,8 +335391,7 @@ ograniczenie",,DICTIONARY2_SOURCE,,GroupId: 1239600
 94856,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,本権,ほんけん,,honken,"prawo własności do nieruchomości
 prawo posiadania",,DICTIONARY2_SOURCE,,GroupId: 2437430
-94857,WORD_NOUN,,HIRAGANA,,,仁治,にんじ,,ninji,epoka Ninji,1240.7.16-1243.2.26,,,"GroupId: 2091080
-Translate: Ninji era (1240.7.16-1243.2.26)"
+94857,WORD_NOUN,,HIRAGANA,,,仁治,にんじ,,ninji,epoka Ninji,termin historyczny; 1240.7.16-1243.2.26,DICTIONARY2_SOURCE,,GroupId: 2091080
 94858,WORD_NOUN,,HIRAGANA,,,邪見,じゃけん,,jaken,zły punkt widzenia,,DICTIONARY2_SOURCE,,GroupId: 1692910
 94859,WORD_NOUN,,HIRAGANA,,,唐墨,からすみ,,karasumi,"chiński atrament
 chiński tusz",,DICTIONARY2_SOURCE,DUPLICATE 94910,GroupId: 1774800
