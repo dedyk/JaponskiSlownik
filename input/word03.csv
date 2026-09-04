@@ -21553,8 +21553,8 @@ WORD_EXPRESSION",,HIRAGANA,,,好機を逃す,こうきをのがす,,kouki o noga
 Translate: to let an opportunity slip"
 207186,WORD_NOUN,,HIRAGANA,,,資本力,しほんりょく,,shihonryoku,siła kapitałowa (przedsiębiorstwa),,,,"GroupId: 1936760
 Translate: capital strength (of an enterprise)"
-207187,WORD_EXPRESSION,,HIRAGANA,,,寝覚めが悪い,ねざめがわるい,,nezame ga warui,mieć niespokojne sumienie,,,,"GroupId: 2126210
-Translate: to have an uneasy conscience"
+207187,WORD_EXPRESSION,,HIRAGANA,,,寝覚めが悪い,ねざめがわるい,,nezame ga warui,"mieć niespokojne sumienie
+mieć wyrzuty sumienia",,DICTIONARY2_SOURCE,,GroupId: 2126210
 207188,WORD_NOUN,,HIRAGANA,,,肝臓学,かんぞうがく,,kanzougaku,hepatologia,"dziedzina medycyny zajmująca się schorzeniami, budową i funkcjonowaniem wątroby oraz pęcherzyka żółciowego i dróg żółciowych",IGNORE_NO_JMEDICT,,
 207189,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,灰色,かいしょく,,kaishoku,"szary
@@ -21581,7 +21581,7 @@ DUPLICATE 58043",GroupId: 1312880
 207196,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,牸,めん,,men,"samica
 rodzaj żeński","pisanie zwykle z użyciem kana; np. zwierzęcia, rośliny",DICTIONARY2_SOURCE,DUPLICATE 184918,GroupId: 1312880
-207197,WORD_COUNTER,,HIRAGANA,,,返,へん,,hen,ilość razy,,DICTIONARY2_SOURCE,"DUPLICATE 101098
+207197,WORD_COUNTER,,HIRAGANA,,,返,へん,,hen,klasyfikator na wystąpienia,,DICTIONARY2_SOURCE,"DUPLICATE 101098
 DUPLICATE 207282",GroupId: 2208060
 207198,WORD_NOUN,,KATAKANA,,,-,ナイト・クラブ,,naito kurabu,klub nocny,ang: nightclub,DICTIONARY2_SOURCE,,GroupId: 1089800
 207199,WORD_NOUN,,HIRAGANA,,,鎮主,ちんじゅ,,chinju,"lokalne shintoistyczne bóstwo
@@ -23061,9 +23061,7 @@ Translate: dry dock"
 Translate: priest who was also a street performer and performed prayers and other religious duties for the sake of other people"
 207709,WORD_NOUN,,KATAKANA,,,-,カルミン,,karumin,karmin,ang: carmine,,,"GroupId: 2255630
 Translate: carmine"
-207710,WORD_NOUN,,HIRAGANA,,,雀の鉄砲,すずめのてっぽう,,suzume no teppou,wyczyniec czerwonożółty,"gatunek wieloletniej rośliny, należącej do rodziny wiechlinowatych, Alopecurus aequalis",,,"GroupId: 2464890
-Translate: shortawn foxtail (Alopecurus aequalis)
-MiscInfo: uk"
+207710,WORD_NOUN,,HIRAGANA,,,雀の鉄砲,すずめのてっぽう,,suzume no teppou,wyczyniec czerwonożółty,"pisanie zwykle z użyciem kana; gatunek wieloletniej rośliny, należącej do rodziny wiechlinowatych, Alopecurus aequalis",DICTIONARY2_SOURCE,,GroupId: 2464890
 207711,WORD_NOUN,,HIRAGANA_KATAKANA,,,茶翅ゴキブリ,ちゃばねゴキブリ,,chabane gokiburi,karaczan prusak,"gatunek karaczana z rodziny zadomkowatych i podrodziny Blattellinae, Blattella germanica",,,"GroupId: 2195540
 Translate: German cockroach (Blattella germanica)
 MiscInfo: uk"
@@ -23170,9 +23168,7 @@ Translate: nordihydroguaiaretic acid
 Translate: NDGA"
 207748,WORD_NOUN,,KATAKANA,,,-,カーミン,,kaamin,karmin,ang: carmine,,,"GroupId: 2255630
 Translate: carmine"
-207749,WORD_NOUN,,KATAKANA,,,-,スズメノテッポウ,,suzume no teppou,wyczyniec czerwonożółty,"gatunek wieloletniej rośliny, należącej do rodziny wiechlinowatych, Alopecurus aequalis",,,"GroupId: 2464890
-Translate: shortawn foxtail (Alopecurus aequalis)
-MiscInfo: uk"
+207749,WORD_NOUN,,KATAKANA,,,-,スズメノテッポウ,,suzume no teppou,wyczyniec czerwonożółty,"pisanie zwykle z użyciem kana; gatunek wieloletniej rośliny, należącej do rodziny wiechlinowatych, Alopecurus aequalis",DICTIONARY2_SOURCE,,GroupId: 2464890
 207750,WORD_NOUN,,KATAKANA,,,-,チャバネゴキブリ,,chabane gokiburi,karaczan prusak,"gatunek karaczana z rodziny zadomkowatych i podrodziny Blattellinae, Blattella germanica",,,"GroupId: 2195540
 Translate: German cockroach (Blattella germanica)
 MiscInfo: uk"
@@ -28544,11 +28540,10 @@ MiscInfo: net-sl
 Translate: following the account of someone who follows you
 MiscInfo: net-sl"
 209591,WORD_NOUN,,HIRAGANA,,,多面性,ためんせい,,tamensei,różne aspekty,,DICTIONARY2_SOURCE,,GroupId: 1941650
-209592,WORD_VERB_U,,HIRAGANA,,,突き抜く,つきぬく,,tsuki nuku,"przeszywać
-przenikać",,,,"GroupId: 1456810
-Translate: to pierce
-Translate: to shoot through
-Translate: to penetrate"
+209592,WORD_VERB_U,,HIRAGANA,,,突き抜く,つきぬく,,tsuki nuku,"przebić
+przeszyć
+przeszywać
+przenikać",,DICTIONARY2_SOURCE,,GroupId: 1456810
 209593,WORD_NOUN,,HIRAGANA,,,教育現場,きょういくげんば,,kyouiku genba,"sala lekcyjna
 klasa",,,,"GroupId: 2829217
 Translate: educational interface
@@ -28659,11 +28654,10 @@ fiołek pachnący","pisanie zwykle z użyciem kana; gatunek rośliny należący 
 209625,WORD_NOUN,,KATAKANA,,,-,シカクマメ,,shikakumame,łust głąbigroszek,Psophocarpus tetragonolobus,,,"GroupId: 2464950
 Translate: winged bean (Psophocarpus tetragonolobus)
 MiscInfo: uk"
-209626,WORD_VERB_U,,HIRAGANA,,,突抜く,つきぬく,,tsuki nuku,"przeszywać
-przenikać",,,,"GroupId: 1456810
-Translate: to pierce
-Translate: to shoot through
-Translate: to penetrate"
+209626,WORD_VERB_U,,HIRAGANA,,,突抜く,つきぬく,,tsuki nuku,"przebić
+przeszyć
+przeszywać
+przenikać",,DICTIONARY2_SOURCE,,GroupId: 1456810
 209627,WORD_NOUN,,HIRAGANA,,,行き場所,ゆきばしょ,,yuki basho,"miejsce do odwiedzin
 miejsce, gdzie można pójść",,,DUPLICATE 209595,"GroupId: 2843861
 Translate: place to go
@@ -56599,10 +56593,8 @@ prawdziwy stan rzeczy",,DICTIONARY2_SOURCE,,GroupId: 1457860
 218971,WORD_NOUN,,HIRAGANA,,,内訓,ないくん,,naikun,prywatne lub tajne polecenia (rozkazy),,,,"GroupId: 1458100
 Translate: private or secret orders"
 218972,WORD_NOUN,,HIRAGANA,,,内探,ないたん,,naitan,"prywatne śledztwo
-sekretne dochodzenie",,,,"GroupId: 1458820
-Translate: private inquiry
-Translate: private enquiry
-Translate: secret investigation"
+prywatne dochodzenie
+sekretne dochodzenie",,DICTIONARY2_SOURCE,,GroupId: 1458820
 218973,WORD_NOUN,,HIRAGANA,,,碁客,ごかく,,go kaku,gracz go,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2845841
 218974,"WORD_ADJECTIVE_TARU
 WORD_ADVERB_TO",,HIRAGANA,,,嘖々,さくさく,,saku saku,"bardzo
@@ -66825,12 +66817,7 @@ czytanie przygotowawcze (rzadko używane określenie)",,DICTIONARY2_SOURCE,,Grou
 222538,WORD_NOUN,,HIRAGANA,,,魔鏡,まきょう,,makyou,"makyō
 chińskie magiczne lustro
 lustro z brązu, które pokaże ukryty obraz, kiedy odbije promień światła (wyjaśnienie)",,DICTIONARY2_SOURCE,,GroupId: 2846566
-222539,WORD_NOUN,,HIRAGANA,,,農転,のうてん,,nouten,"zamiana gruntów rolnych (np. na użytkowanie nierolnicze)
-konwersja gruntów rolnych",skrót,,,"GroupId: 2846715
-Translate: conversion of agricultural land (e.g. to non-agricultural uses)
-MiscInfo: abbr
-Translate: conversion of farmland
-MiscInfo: abbr"
+222539,WORD_NOUN,,HIRAGANA,,,農転,のうてん,,nouten,zmiana przeznaczenia gruntów rolnych,skrót; np. na cele nierolnicze,DICTIONARY2_SOURCE,,GroupId: 2846715
 222540,WORD_NOUN,,HIRAGANA,,,祈雨,きう,,kiu,"modlenie się o deszcz
 modlitwa o deszcz",,DICTIONARY2_SOURCE,,GroupId: 2846631
 222541,"WORD_ADJECTIVE_F
@@ -79392,9 +79379,7 @@ Translate: lucky loser"
 WORD_EXPRESSION",,HIRAGANA,,,懐を肥やす,ふところをこやす,,futokoro o koyasu,używać władzy i pozycji dla własnych korzyści,,,,"GroupId: 1976550
 Translate: to feather one's own nest"
 227007,WORD_NOUN,,HIRAGANA,,,格子縞,こうしじま,,koushijima,"wzór w kratkę
-wzór w szkocką kratę",,,,"GroupId: 1685520
-Translate: check(ed) pattern
-Translate: plaid"
+wzór w szkocką kratę",,DICTIONARY2_SOURCE,,GroupId: 1685520
 227008,WORD_NOUN,,KATAKANA,,,牌九,パイガオ,,pai gao,pai gow,chińska gra hazardowa w domino,,DUPLICATE 227045,"GroupId: 2830943
 Translate: pai gow (Chinese gambling game played with dominoes)"
 227009,WORD_NOUN,,KATAKANA,,,-,ニードルポイント,,niidorupointo,haft na kanwie,ang: needlepoint,,,"GroupId: 2471290
@@ -79515,9 +79500,7 @@ DUPLICATE 323198",GroupId: 1835610
 227043,WORD_NOUN,,KATAKANA,,,-,ラッキー・ルーザー,,rakkii ruuzaa,szczęśliwy przegrany,"termin sportowy, ang: lucky loser",,,"GroupId: 2835409
 Translate: lucky loser"
 227044,WORD_NOUN,,HIRAGANA,,,格子じま,こうしじま,,koushijima,"wzór w kratkę
-wzór w szkocką kratę",,,,"GroupId: 1685520
-Translate: check(ed) pattern
-Translate: plaid"
+wzór w szkocką kratę",,DICTIONARY2_SOURCE,,GroupId: 1685520
 227045,WORD_NOUN,,KATAKANA,,,牌九,パイゴウ,,paigou,pai gow,chińska gra hazardowa w domino,,DUPLICATE 227008,"GroupId: 2830943
 Translate: pai gow (Chinese gambling game played with dominoes)"
 227046,"WORD_VERB_RU
@@ -87329,10 +87312,8 @@ podkreślanie szczególnego momentu lub wydarzenia jako unikatowego lub niezwyk�
 229749,WORD_NOUN,,HIRAGANA,,,鋳物師,いもじ,,imoji,???,,DICTIONARY2_SOURCE,DUPLICATE 137275,GroupId: 1717730
 229750,WORD_NOUN,,KATAKANA,,,-,カラスミ,,karasumi,"suszona ikra barwena
 suszona ikra cefala",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2453620
-229751,WORD_NOUN,,HIRAGANA,,,白ごま,しろごま,,shiro goma,białe nasiona sezamu,,,,"GroupId: 1841400
-Translate: white sesame seeds"
-229752,WORD_NOUN,,HIRAGANA_KATAKANA,,,白ゴマ,しろゴマ,,shiro goma,białe nasiona sezamu,,,,"GroupId: 1841400
-Translate: white sesame seeds"
+229751,WORD_NOUN,,HIRAGANA,,,白ごま,しろごま,,shiro goma,białe nasiona sezamu,,DICTIONARY2_SOURCE,,GroupId: 1841400
+229752,WORD_NOUN,,HIRAGANA_KATAKANA,,,白ゴマ,しろゴマ,,shiro goma,białe nasiona sezamu,,DICTIONARY2_SOURCE,,GroupId: 1841400
 229753,"WORD_ADVERB
 WORD_ADVERB_TO
 WORD_EXPRESSION
@@ -97297,8 +97278,7 @@ niezdecydowanie
 wahanie",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 1789440
 233269,WORD_NOUN,,HIRAGANA,,,無所属現,むしょぞくげん,,musho zokugen,osoba piastująca urząd (lub kandydat) niepowiązana z żadną partią,,,,"GroupId: 1911330
 Translate: incumbent member (or candidate) unaffiliated with a party"
-233270,WORD_NOUN,,HIRAGANA,,,得点圏,とくてんけん,,tokutenken,"punktowana pozycja, z biegaczami na drugiej i lub trzeciej bazie",baseball,,,"GroupId: 1928500
-Translate: scoring position, with runners on second and-or third base"
+233270,WORD_NOUN,,HIRAGANA,,,得点圏,とくてんけん,,tokutenken,punktowana pozycja z biegaczami na drugiej i lub trzeciej bazie,baseball,DICTIONARY2_SOURCE,,GroupId: 1928500
 233271,WORD_NOUN,,HIRAGANA,,,有権解釈,ゆうけんかいしゃく,,yuuken kaishaku,"autorytatywna interpretacja prawa
 wiążąca interpretacja",,,,"GroupId: 2001490
 Translate: authoritative interpretation (of a law)
@@ -151677,7 +151657,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-09-03,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-09-04,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
