@@ -82,8 +82,8 @@ public class DictionarySizeStat {
 			csvWriter.write(String.valueOf(dateStat.wordCounter));
 			csvWriter.write(String.valueOf(dateStat.commonWordCounter));
 			csvWriter.write(String.valueOf(dateStat.word2Counter));
-			csvWriter.write(String.valueOf(dateStat.wordCounterInDictionary2Source));
 			csvWriter.write(String.valueOf(dateStat.alljmdictCounter));
+			csvWriter.write(String.valueOf(dateStat.wordCounterInDictionary2Source));
 			
 			csvWriter.endRecord();
 		}
