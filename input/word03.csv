@@ -5567,8 +5567,7 @@ Translate: arrival on location"
 201892,WORD_NOUN,,HIRAGANA,,,瀬取り船,せどりぶね,,sedori bune,mała łódź używana do rozładunku towarów z dużej łodzi zakotwiczonej w pobliżu,,DICTIONARY2_SOURCE,,GroupId: 2593270
 201893,WORD_NOUN,,HIRAGANA,,,江戸語,えどご,,edo go,dialekt Edo,,,,"GroupId: 2421400
 Translate: Edo dialect"
-201894,WORD_NOUN,,HIRAGANA,,,年貢米,ねんぐまい,,nengumai,coroczny podatek ryżowy,,,,"GroupId: 1468640
-Translate: annual rice tax"
+201894,WORD_NOUN,,HIRAGANA,,,年貢米,ねんぐまい,,nengumai,coroczny podatek ryżowy,,DICTIONARY2_SOURCE,,GroupId: 1468640
 201895,WORD_NOUN,,KATAKANA_HIRAGANA,,,オーストロネシア語族,オーストロネシアごぞく,,oosutoroneshia gozoku,języki austronezyjskie,"rodzina języków, którymi posługuje się ok. 350 mln rdzennych mieszkańców wysp Oceanii i Azji Południowo-Wschodniej oraz Madagaskaru",DICTIONARY2_SOURCE,,GroupId: 1960530
 201896,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,変更可能,へんこうかのう,,henkou kanou,"modyfikowalny
@@ -22086,8 +22085,8 @@ MiscInfo: uk"
 207365,WORD_NOUN,,KATAKANA_HIRAGANA,,,オーストラリア英語,オーストラリアえいご,,oosutoraria eigo,australijska odmiana języka angielskiego,,,,"GroupId: 2842582
 Translate: Australian English"
 207366,WORD_NOUN,,HIRAGANA,,,朝型人間,あさがたにんげん,,asagata ningen,"ranny ptaszek
-osoba lubiąca wcześnie wstawać",,,,"GroupId: 2842553
-Translate: morning person"
+wczesny ptaszek
+osoba lubiąca wcześnie wstawać",,DICTIONARY2_SOURCE,,GroupId: 2842553
 207367,WORD_NOUN,,HIRAGANA,,,茶道口,さどうぐち,,sadouguchi,wejście gospodarza do sali ceremonii parzenia herbaty,,DICTIONARY2_SOURCE,,GroupId: 2842594
 207368,WORD_NOUN,,HIRAGANA,,,周章狼狽,しゅうしょうろうばい,,shuushou roubai,"konsternacja
 wpadanie w panikę
@@ -62949,9 +62948,8 @@ Translate: quantum field theory"
 221188,WORD_NOUN,,KATAKANA_HIRAGANA,,,イベント駆動,イベントくどう,,ibento kudou,sterowanie zdarzeniami,informatyka,,,"GroupId: 2282660
 Translate: event driven"
 221189,WORD_NOUN,,HIRAGANA,,,派遣職員,はけんしょくいん,,haken shokuin,"pracownicy tymczasowi
-wypożyczeni pracownicy",,,,"GroupId: 2239070
-Translate: temporary staff
-Translate: loaned staff (e.g. from a parent or related organization)"
+wypożyczeni pracownicy
+pracownicy oddelegowani (np. z organizacji macierzystej lub powiązanej)",,DICTIONARY2_SOURCE,,GroupId: 2239070
 221190,WORD_NOUN,,KATAKANA_HIRAGANA,,,コード化表現,コードかひょうげん,,koodo kahyougen,"kodowy element
 wartość kodu
 kodowa reprezentacja",informatyka,,,"GroupId: 2295880
@@ -69144,10 +69142,7 @@ Translate: cobalt chloride (esp. CoCl2, but also CoCl3)"
 223404,WORD_NOUN,,HIRAGANA,,,半値電力幅,はんちでんりょくはば,,hanchi denryoku haba,szerokość wiązki o połowie mocy,informatyka; również szerokość wiązki 3dB,DICTIONARY2_SOURCE,,GroupId: 2382360
 223405,WORD_NOUN,,HIRAGANA,,,階段箪笥,かいだんたんす,,kaidan tansu,komoda pełniąca jednocześnie funkcję schodów,,DICTIONARY2_SOURCE,,GroupId: 2845224
 223406,WORD_EXPRESSION,,HIRAGANA,,,逆もまた然り,ぎゃくもまたしかり,,gyaku mo mata shikari,"odwrotnie
-na odwrót",,,,"GroupId: 2845410
-Translate: vice versa
-Translate: also the converse
-Translate: reverse is true"
+na odwrót",,DICTIONARY2_SOURCE,,GroupId: 2845410
 223407,WORD_EXPRESSION,,HIRAGANA,,,逆も然り,ぎゃくもしかり,,gyaku mo shikari,"vice versa
 odwrotnie
 na odwrót",,DICTIONARY2_SOURCE,,GroupId: 2845445
@@ -69229,10 +69224,7 @@ Translate: bar which also provides meals"
 223430,WORD_NOUN,,HIRAGANA,,,階段たんす,かいだんたんす,,kaidan tansu,komoda pełniąca jednocześnie funkcję schodów,,DICTIONARY2_SOURCE,,GroupId: 2845224
 223431,WORD_NOUN,,HIRAGANA_KATAKANA,,,階段タンス,かいだんタンス,,kaidan tansu,komoda pełniąca jednocześnie funkcję schodów,,DICTIONARY2_SOURCE,,GroupId: 2845224
 223432,WORD_EXPRESSION,,HIRAGANA,,,逆もまたしかり,ぎゃくもまたしかり,,gyaku mo mata shikari,"odwrotnie
-na odwrót",,,,"GroupId: 2845410
-Translate: vice versa
-Translate: also the converse
-Translate: reverse is true"
+na odwrót",,DICTIONARY2_SOURCE,,GroupId: 2845410
 223433,WORD_EXPRESSION,,HIRAGANA,,,逆もしかり,ぎゃくもしかり,,gyaku mo shikari,"vice versa
 odwrotnie
 na odwrót",,DICTIONARY2_SOURCE,,GroupId: 2845445
@@ -133107,7 +133099,8 @@ trykoty w kolorze cielistym",,DICTIONARY2_SOURCE,DUPLICATE 111952,GroupId: 18275
 napad
 atak
 najazd",termin historyczny,DICTIONARY2_SOURCE,,GroupId: 1697580
-250638,WORD_NOUN,,HIRAGANA,,,複比例,ふくひれい,,fukuhirei,proporcja złożona,,DICTIONARY2_SOURCE,,GroupId: 1827820
+250638,WORD_NOUN,,HIRAGANA,,,複比例,ふくひれい,,fukuhirei,"proporcja złożona
+stosunek złożony",matematyka,DICTIONARY2_SOURCE,,GroupId: 1827820
 250639,WORD_NOUN,,HIRAGANA,,,脳膜炎,のうまくえん,,noumakuen,"zapalenie opon mózgowych
 zapalenie opon mózgowo-rdzeniowych",medycyna; przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 1828310
 250640,WORD_NOUN,,HIRAGANA,,,饒舌家,じょうぜつか,,jouzetsuka,"gadatliwa osoba
@@ -138276,7 +138269,7 @@ rozliczenia międzyokresowe bierne",,DICTIONARY2_SOURCE,,GroupId: 1528010
 253568,WORD_NOUN,,HIRAGANA,,,割引市場,わりびきしじょう,,waribiki shijou,rynek dyskontowy,finanse,DICTIONARY2_SOURCE,,GroupId: 1716480
 253569,WORD_NOUN,,HIRAGANA,,,啓蒙運動,けいもううんどう,,keimou undou,"ruch oświecenia
 Oświecenie",,DICTIONARY2_SOURCE,,GroupId: 1727690
-253570,WORD_NOUN,,HIRAGANA,,,定量分析,ていりょうぶんせき,,teiryou bunseki,analiza ilościowa,,DICTIONARY2_SOURCE,,GroupId: 1777300
+253570,WORD_NOUN,,HIRAGANA,,,定量分析,ていりょうぶんせき,,teiryou bunseki,analiza ilościowa,chemia,DICTIONARY2_SOURCE,,GroupId: 1777300
 253571,WORD_NOUN,,HIRAGANA,,,競争価格,きょうそうかかく,,kyousou kakaku,cena konkurencyjna,,DICTIONARY2_SOURCE,,GroupId: 1799990
 253572,WORD_NOUN,,HIRAGANA,,,外国人登録法,がいこくじんとうろくほう,,gaikokujin tourokuhou,Ustawa o Rejestracji Cudzoziemców,prawo,DICTIONARY2_SOURCE,,GroupId: 1806670
 253573,WORD_NOUN,,HIRAGANA,,,仏教書,ぶっきょうしょ,,bukkyousho,buddyjskie pisma,,DICTIONARY2_SOURCE,,GroupId: 2204670
@@ -151632,7 +151625,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-09-08,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-09-09,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
@@ -192382,10 +192375,9 @@ WORD_ADJECTIVE_F",,HIRAGANA,,,四相,しそう,,shisou,"cztery podstawowe elemen
 czterofazowy (matematyka)",,DICTIONARY2_SOURCE,,GroupId: 2856801
 284420,WORD_NOUN,,HIRAGANA,,,人神,ひとがみ,,hitogami,"człowiek-bóg
 osoba uznawana za boga",shinto,DICTIONARY2_SOURCE,,GroupId: 2856797
-284421,WORD_NOUN,,HIRAGANA,,,素服,すふく,,sufuku,"białe ubranie
+284421,WORD_NOUN,,HIRAGANA,,,素服,そふく,,sofuku,"białe ubranie
 ubrania z niebarwionej tkaniny
-strój żałobny",,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 2856799
+strój żałobny",,DICTIONARY2_SOURCE,,GroupId: 2856799
 284422,WORD_NOUN,,HIRAGANA,,,謗法,ほうぼう,,houbou,"oczernianie buddyzmu (buddyzm)
 szkalowanie buddyzmu (buddyzm)
 oczernianie Dharmy (buddyzm)
