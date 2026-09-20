@@ -66753,6 +66753,7 @@ szybować wysoko",szczególnie duchy i bogowie,DICTIONARY2_SOURCE,"DUPLICATE 326
 DUPLICATE 326815
 DUPLICATE 326816",GroupId: 1851680
 326790,WORD_INTERJECTION,,HIRAGANA,,,-,いやあん,,iyaan,"o
+ojej
 nie",kobiecy termin lub język,DICTIONARY2_SOURCE,,GroupId: 2834510
 326791,WORD_ADVERB,,HIRAGANA,,,-,まっこと,,makkoto,"naprawdę
 rzeczywiście",dialekt Tosa; od 誠に,DICTIONARY2_SOURCE,,GroupId: 2872542
@@ -68865,9 +68866,11 @@ WORD_ADJECTIVE_NA",,HIRAGANA,,,雲を摑む様,くもをつかむよう,,kumo o 
 niezrozumiały
 mglisty",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2849244
 327597,WORD_NOUN,,HIRAGANA,,,重みづけ,おもみづけ,,omomi duke,waga (liczbowa),,DICTIONARY2_SOURCE,,GroupId: 2774110
-327598,WORD_ADJECTIVE_I,,HIRAGANA,,,息が長い,いきのながい,,iki no nagai,"trwały (dzieło)
+327598,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,息が長い,いきのながい,,iki no nagai,"trwały (dzieło)
 długotrwały (wysiłek)
-rozwlekły",,DICTIONARY2_SOURCE,,GroupId: 2405960
+nieprzerwany (wysiłek)
+rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 327615,GroupId: 2405960
 327599,WORD_NOUN,,HIRAGANA,,,商人団,しょうにんだん,,shounindan,gildia kupiecka,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2873007
 327600,WORD_NOUN,,HIRAGANA_KATAKANA,,,商人ギルド,しょうにんギルド,,shounin girudo,gildia kupiecka,termin historyczny; w średniowiecznej Europie,DICTIONARY2_SOURCE,,GroupId: 2873008
 327601,WORD_NOUN,,HIRAGANA,,,甘熟,かんじゅく,,kanjuku,dojrzewanie do słodkości,np. owoce,DICTIONARY2_SOURCE,,GroupId: 2873009
@@ -68899,3 +68902,62 @@ podejmować wyzwanie
 przyjąć wyzwanie
 podnieść rękawicę",,DICTIONARY2_SOURCE,,GroupId: 2791950
 327612,WORD_NOUN,,KATAKANA,,,-,リビド,,ribido,libido,psychoanaliza; potocznie popęd seksualny – chęć zaspokojenia potrzeb seksualnych; słowo pochodzenia łacińskiego,DICTIONARY2_SOURCE,,GroupId: 1142400
+327613,WORD_NOUN,,HIRAGANA,,,躍り,おどり,,odori,"taniec
+tańczenie
+znak iteracji (skrót; służący do oznaczenia powtórzenia poprzedniego znaku)
+taniec z okazji Święta Bon (skrót)
+taniec z okazji Święta Latarni (skrót)
+spożywanie żywych owoców morza (np. kałamarnic, babek lodowych), gdy jeszcze się poruszają (jedzenie, gotowanie; skrót; często pisane jako 躍り)
+miękkie miejsce (w czaszce niemowlęcia)
+ciemiączko
+świeże krewetki (jedzenie, gotowanie; jako danie sushi)
+podwojenie odsetek od pożyczki w momencie przedłużenia weksla w przypadku braku spłaty (okres Edo) (termin historyczny; od 踊り歩)
+podwójne odsetki (termin historyczny; od 踊り歩)",,DICTIONARY2_SOURCE,DUPLICATE 45308,GroupId: 1546880
+327614,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,息の長い,いきがない,,iki ga nai,"trwały (dzieło)
+długotrwały (wysiłek)
+nieprzerwany (wysiłek)
+rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 137362,GroupId: 2405960
+327615,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,息が長い,いきがない,,iki ga nai,"trwały (dzieło)
+długotrwały (wysiłek)
+nieprzerwany (wysiłek)
+rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 327598,GroupId: 2405960
+327616,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,息のながい,いきのながい,,iki no nagai,"trwały (dzieło)
+długotrwały (wysiłek)
+nieprzerwany (wysiłek)
+rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 327617,GroupId: 2405960
+327617,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,息のながい,いきがない,,iki ga nai,"trwały (dzieło)
+długotrwały (wysiłek)
+nieprzerwany (wysiłek)
+rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 327616,GroupId: 2405960
+327618,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,息がながい,いきのながい,,iki no nagai,"trwały (dzieło)
+długotrwały (wysiłek)
+nieprzerwany (wysiłek)
+rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 327619,GroupId: 2405960
+327619,"WORD_ADJECTIVE_I
+WORD_EXPRESSION",,HIRAGANA,,,息がながい,いきがない,,iki ga nai,"trwały (dzieło)
+długotrwały (wysiłek)
+nieprzerwany (wysiłek)
+rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 327618,GroupId: 2405960
+327620,WORD_VERB_RU,,HIRAGANA,,,えり分ける,よりわける,,yori wakeru,"klasyfikować
+sklasyfikować
+sortować",,DICTIONARY2_SOURCE,,GroupId: 1581090
+327621,WORD_VERB_RU,,HIRAGANA,,,選りわける,よりわける,,yori wakeru,"klasyfikować
+sklasyfikować
+sortować",,DICTIONARY2_SOURCE,,GroupId: 1581090
+327622,WORD_NOUN,,HIRAGANA,,,眷恋,けんれん,,kenren,"silna więź
+silne przywiązanie
+nieodparte przywiązanie",,DICTIONARY2_SOURCE,,GroupId: 2872995
+327623,WORD_NOUN,,HIRAGANA,,,片割れ月,かたわれづき,,kataware duki,"półksiężyc
+księżyc oświetlony w połowie lub mniej
+księżyc w fazie półksiężyca",,DICTIONARY2_SOURCE,,GroupId: 2873020
+327624,WORD_NOUN,,HIRAGANA,,,片われ月,かたわれづき,,kataware duki,"półksiężyc
+księżyc oświetlony w połowie lub mniej
+księżyc w fazie półksiężyca",,DICTIONARY2_SOURCE,,GroupId: 2873020
+327625,WORD_NOUN,,HIRAGANA,,,片割月,かたわれづき,,kataware duki,"półksiężyc
+księżyc oświetlony w połowie lub mniej
+księżyc w fazie półksiężyca",,DICTIONARY2_SOURCE,,GroupId: 2873020

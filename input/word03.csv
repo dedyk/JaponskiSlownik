@@ -4933,11 +4933,10 @@ Translate: special class for handicapped children"
 słoń morski północny","gatunek drapieżnego ssaka morskiego z rodziny fokowatych, Mirounga angustirostris",,,"GroupId: 2157870
 Translate: northern elephant seal (Mirounga angustirostris)
 MiscInfo: uk"
-201674,WORD_NOUN,,HIRAGANA,,,非正規化数,ひせいきかすう,,hiseikikasuu,"liczba denormalna
-liczba denormalizowana",informatyka,,,"GroupId: 2831472
-Translate: subnormal number
-Translate: denormal number
-Translate: denormalized number"
+201674,WORD_NOUN,,HIRAGANA,,,非正規化数,ひせいきかすう,,hiseikikasuu,"liczba subnormalna
+liczba denormalna
+liczba denormalizowana
+liczba zdenormalizowana",informatyka,DICTIONARY2_SOURCE,,GroupId: 2831472
 201675,WORD_NOUN,,KATAKANA_HIRAGANA,,,コード管理,コードかんり,,koodo kanri,zarządzanie kodem,informatyka,,,"GroupId: 2295910
 Translate: code management"
 201676,WORD_NOUN,,HIRAGANA,,,共同会見,きょうどうかいけん,,kyoudou kaiken,konferencja prasowa,,,,"GroupId: 1234800
@@ -5159,11 +5158,8 @@ Translate: dentine"
 rzeczy w środku",,DICTIONARY2_SOURCE,,GroupId: 1459430
 201750,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,卵嚢,らんのう,,rannou,"woreczek jajowy
-ooteka
-kapsułka jajowa",,,,"GroupId: 1549300
-Translate: egg sac
-Translate: egg case
-Translate: ootheca"
+kapsułka jajowa
+ooteka",,DICTIONARY2_SOURCE,,GroupId: 1549300
 201751,WORD_NOUN,,KATAKANA_HIRAGANA,,,ロック鳥,ロックちょう,,rokku chou,"ruk
 rok
 ruch","olbrzymi ptak występujący w mitologii perskiej, tak ogromny, że lecąc przesłania słońce i zmienia dzień w noc",,,"GroupId: 1970270
@@ -56910,8 +56906,7 @@ Translate: constitutive form"
 Translate: calmato"
 219113,WORD_NOUN,,HIRAGANA,,,流紋岩,りゅうもんがん,,ryuumongan,"ryolit
 liparyt
-riolit","kwaśna skała wylewna albo hipabysalna, o składzie podobnym do granitu",,,"GroupId: 2512210
-Translate: rhyolite"
+riolit","mineralogia; kwaśna skała wylewna albo hipabysalna, o składzie podobnym do granitu",DICTIONARY2_SOURCE,,GroupId: 2512210
 219114,WORD_NOUN,,HIRAGANA,,,二封,にふう,,nifuu,???,,,,"GroupId: 1463090
 Translate: forced out on second"
 219115,WORD_NOUN,,HIRAGANA,,,入質,にゅうしち,,nyuushichi,"zastawianie
@@ -70692,10 +70687,7 @@ Translate: to feel hungry
 Translate: to get hungry"
 223961,WORD_NOUN,,HIRAGANA,,,直接正犯,ちょくせつせいはん,,chokusetsu seihan,"bezpośredni główny przestępca
 bezpośredni sprawca
-główny przestępca pierwszego stopnia",,,,"GroupId: 2729320
-Translate: direct principal offender
-Translate: direct perpetrator
-Translate: principal offender in the first degree"
+główny przestępca pierwszego stopnia",prawo,DICTIONARY2_SOURCE,,GroupId: 2729320
 223962,WORD_NOUN,,KATAKANA,,,-,ウルカヌス,,urukanusu,Wulkan,"mitologia rzymska; w wierzeniach Rzymian bóg ognia i rzemiosł metalurgicznych, utożsamiany z greckim Hefajstosem; łać: Vulcanus",DICTIONARY2_SOURCE,,GroupId: 2260560
 223963,WORD_NOUN,,HIRAGANA,,,紐形動物,ひもがたどうぶつ,,himogatadoubutsu,bezkręgowiec z podkrólestwa Nemertea,,,,"GroupId: 2265290
 Translate: nemertean (any worm of phylum Nemertea)"
@@ -151512,7 +151504,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-09-19,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-09-20,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
@@ -225023,12 +225015,12 @@ kolacja w formie bufetu",,DICTIONARY2_SOURCE,,GroupId: 2860728
 299377,WORD_VERB_U,,HIRAGANA,,,撰る,よる,,yoru,"wybierać
 wybrać
 selekcjonować
-dobierać",,DICTIONARY2_SOURCE,"DUPLICATE 71307
+dobierać",rzadko używane określenie,DICTIONARY2_SOURCE,"DUPLICATE 71307
 DUPLICATE 299378",GroupId: 1612210
 299378,WORD_VERB_U,,HIRAGANA,,,撰る,える,,eru,"wybierać
 wybrać
 selekcjonować
-dobierać",,DICTIONARY2_SOURCE,DUPLICATE 299377,GroupId: 1612210
+dobierać",rzadko używane określenie,DICTIONARY2_SOURCE,DUPLICATE 299377,GroupId: 1612210
 299379,"WORD_ADJECTIVE_NA
 WORD_NOUN",,KATAKANA,,,-,ポピュラ,,popyura,"popularny (ang: popular)
 powszechnie lubiany (ang: popular)
