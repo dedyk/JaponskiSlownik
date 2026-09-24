@@ -68914,39 +68914,35 @@ ciemiączko
 podwojenie odsetek od pożyczki w momencie przedłużenia weksla w przypadku braku spłaty (okres Edo) (termin historyczny; od 踊り歩)
 podwójne odsetki (termin historyczny; od 踊り歩)",,DICTIONARY2_SOURCE,DUPLICATE 45308,GroupId: 1546880
 327614,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,息の長い,いきがない,,iki ga nai,"trwały (dzieło)
+WORD_EXPRESSION",,HIRAGANA,,,息の長い,いきがながい,,iki ga nagai,"trwały (dzieło)
 długotrwały (wysiłek)
 nieprzerwany (wysiłek)
-rozwlekły",,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 137362,GroupId: 2405960
+rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 137362,GroupId: 2405960
 327615,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,息が長い,いきがない,,iki ga nai,"trwały (dzieło)
+WORD_EXPRESSION",,HIRAGANA,,,息が長い,いきがながい,,iki ga nagai,"trwały (dzieło)
 długotrwały (wysiłek)
 nieprzerwany (wysiłek)
-rozwlekły",,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 327598,GroupId: 2405960
+rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 327598,GroupId: 2405960
 327616,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,息のながい,いきのながい,,iki no nagai,"trwały (dzieło)
 długotrwały (wysiłek)
 nieprzerwany (wysiłek)
 rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 327617,GroupId: 2405960
 327617,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,息のながい,いきがない,,iki ga nai,"trwały (dzieło)
+WORD_EXPRESSION",,HIRAGANA,,,息のながい,いきがながい,,iki ga nagai,"trwały (dzieło)
 długotrwały (wysiłek)
 nieprzerwany (wysiłek)
-rozwlekły",,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 327616,GroupId: 2405960
+rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 327616,GroupId: 2405960
 327618,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,息がながい,いきのながい,,iki no nagai,"trwały (dzieło)
 długotrwały (wysiłek)
 nieprzerwany (wysiłek)
 rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 327619,GroupId: 2405960
 327619,"WORD_ADJECTIVE_I
-WORD_EXPRESSION",,HIRAGANA,,,息がながい,いきがない,,iki ga nai,"trwały (dzieło)
+WORD_EXPRESSION",,HIRAGANA,,,息がながい,いきがながい,,iki ga nagai,"trwały (dzieło)
 długotrwały (wysiłek)
 nieprzerwany (wysiłek)
-rozwlekły",,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 327618,GroupId: 2405960
+rozwlekły",,DICTIONARY2_SOURCE,DUPLICATE 327618,GroupId: 2405960
 327620,WORD_VERB_RU,,HIRAGANA,,,えり分ける,よりわける,,yori wakeru,"klasyfikować
 sklasyfikować
 sortować",,DICTIONARY2_SOURCE,,GroupId: 1581090
@@ -68973,7 +68969,10 @@ WORD_EXPRESSION",,HIRAGANA,,,よこしまな心,よこしまなこころ,,yokosh
 nikczemne serce",,DICTIONARY2_SOURCE,,GroupId: 1914970
 327628,WORD_NOUN,,HIRAGANA,,,心がわり,こころがわり,,kokoro gawari,"zmiana zdania
 zmiana nastawienia
-zmiana obiektu uczuć",,DICTIONARY2_SOURCE,,GroupId: 1360980
+zmiana obiektu uczuć
+zaburzenia psychiczne (archaizm)
+szaleństwo (archaizm)
+obłęd (archaizm)",,DICTIONARY2_SOURCE,,GroupId: 1360980
 327629,WORD_NOUN,,KATAKANA,,,-,ヒップフラスク,,hippu furasuku,piersiówka,"metalowa butelka na alkohol, ang: hip flask",DICTIONARY2_SOURCE,,GroupId: 2872996
 327630,WORD_NOUN,,KATAKANA,,,-,ヒップ・フラスク,,hippu furasuku,piersiówka,"metalowa butelka na alkohol, ang: hip flask",DICTIONARY2_SOURCE,,GroupId: 2872996
 327631,WORD_NOUN,,HIRAGANA,,,呼笛,よびぶえ,,yobibue,gwizdek sygnałowy,,DICTIONARY2_SOURCE,DUPLICATE 327632,GroupId: 2873018
@@ -68995,7 +68994,12 @@ umowna linia",film,DICTIONARY2_SOURCE,,GroupId: 2873023
 baza danych pustostanów",,DICTIONARY2_SOURCE,,GroupId: 2873030
 327642,WORD_NOUN,,KATAKANA,,,-,アイスバイル,,aisubairu,"czekan
 topór wspinaczkowy",niem: Eisbeil,DICTIONARY2_SOURCE,,GroupId: 2873031
-327643,WORD_NOUN,,KATAKANA,,,銅,ドン,,don,dong,waluta Wietnamu; wiet: đồng,DICTIONARY2_SOURCE,,GroupId: 2849679
+327643,WORD_NOUN,,KATAKANA,,,銅,ドン,,don,dong,waluta Wietnamu; wiet: đồng,DICTIONARY2_SOURCE,"DUPLICATE 6573
+DUPLICATE 18096
+DUPLICATE 29191
+DUPLICATE 163665
+DUPLICATE 178514
+DUPLICATE 241827",GroupId: 2849679
 327644,"WORD_NOUN
 WORD_ADJECTIVE_NO
 WORD_ADVERB",,HIRAGANA,,,歳頃,としごろ,,toshi goro,"przybliżony wiek
@@ -69016,7 +69020,8 @@ wiek dorosłości
 wiek (kiedy ...) (po wyrażeniu modyfikującym)
 przez lata (przestarzałe słowo)
 przez długi czas (przestarzałe słowo)",,DICTIONARY2_SOURCE,,GroupId: 1468660
-327646,WORD_NOUN,,HIRAGANA,,,肉まんじゅう,にくまんじゅう,,niku manjuu,manjū (gotowana na parze bułeczka) z mięsem w środku,"jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 1463730
+327646,WORD_NOUN,,HIRAGANA,,,肉まんじゅう,にくまんじゅう,,niku manjuu,"manjū z nadzieniem mięsnym
+drożdżowa bułeczka gotowana na parze z nadzieniem mięsnym","jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 1463730
 327647,WORD_NOUN,,HIRAGANA_KATAKANA,,,逆プロポーズ,ぎゃくプロポーズ,,gyaku puropoozu,oświadczyny kobiety złożone jej partnerowi,potocznie,DICTIONARY2_SOURCE,,GroupId: 2873032
 327648,WORD_NOUN,,KATAKANA,,,-,ゲームメイク,,geemu meiku,"kierowanie grą
 kreatywna gra
@@ -69031,3 +69036,19 @@ kontrolowanie przebiegu meczu",sport; ang: game make,DICTIONARY2_SOURCE,,GroupId
 kreatywna gra
 kontrolowanie przebiegu meczu",sport; ang: game make,DICTIONARY2_SOURCE,,GroupId: 2873034
 327652,WORD_NOUN,,HIRAGANA,,,政府当局,せいふとうきょく,,seifu toukyoku,organy rządowe,,DICTIONARY2_SOURCE,,GroupId: 2873036
+327653,WORD_NOUN,,HIRAGANA,,,山羊汁,やぎじる,,yagi jiru,zupa z mięsa koziego,"jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2873014
+327654,WORD_NOUN,,HIRAGANA,,,ヤギ汁,やぎじる,,yagi jiru,zupa z mięsa koziego,"jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2873014
+327655,WORD_NOUN,,HIRAGANA,,,やぎ汁,やぎじる,,yagi jiru,zupa z mięsa koziego,"jedzenie, gotowanie",DICTIONARY2_SOURCE,,GroupId: 2873014
+327656,WORD_NOUN,,HIRAGANA,,,災害見舞金,さいがいみまいきん,,saigai mimaikin,"zasiłek kondolencyjny z tytułu klęsk żywiołowych
+środki pomocowe na wypadek klęsk żywiołowych",,DICTIONARY2_SOURCE,,GroupId: 2873016
+327657,WORD_NOUN,,HIRAGANA,,,平野部,へいやぶ,,heiyabu,"obszar równinny
+teren płaski
+równina",,DICTIONARY2_SOURCE,,GroupId: 2873027
+327658,WORD_NOUN,,KATAKANA,,,-,セケス,,sekesu,"sex
+seks
+seggs",slang internetowy; często wykorzystywane do omijania filtrów,DICTIONARY2_SOURCE,,GroupId: 2873040
+327659,WORD_NOUN,,HIRAGANA,,,日本標準時子午線,にほんひょうじゅんじしごせん,,nihon hyoujunji shigosen,południk czasu standardowego Japonii,135 stopni długości geograficznej wschodniej,DICTIONARY2_SOURCE,,GroupId: 2873041
+327660,WORD_NOUN,,KATAKANA,,,-,アトン,,aton,"Aton
+Aten",bóstwo; egipski bóg słońca,DICTIONARY2_SOURCE,,GroupId: 5748098
+327661,WORD_NOUN,,KATAKANA,,,-,アテン,,aten,"Aton
+Aten",bóstwo; egipski bóg słońca,DICTIONARY2_SOURCE,,GroupId: 5748098
