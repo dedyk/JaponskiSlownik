@@ -8655,13 +8655,8 @@ Translate: impact analysis"
 202941,WORD_NOUN,,KATAKANA,,,-,ガルフサージョンフィッシュ,,garufu saajonfisshu,Acanthurus randalli,"gatunek ryby, ang: Gulf surgeonfish",DICTIONARY2_SOURCE,,GroupId: 2555980
 202942,WORD_NOUN,,HIRAGANA,,,一言半句,いちげんはんく,,ichigen hanku,"jedno słowo
 pojedyncze słowo
-???",,,DUPLICATE 202997,"GroupId: 1576000
-Translate: a single word
-MiscInfo: yoji
-Translate: (not even) a word
-MiscInfo: yoji
-Translate: (not even) a syllable
-MiscInfo: yoji"
+(nawet nie) słowo
+(nawet nie) sylaba",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,DUPLICATE 202997,GroupId: 1576000
 202943,WORD_NOUN,,HIRAGANA,,,子供顔,こどもがお,,kodomo gao,twarz dziecka,,DICTIONARY2_SOURCE,,GroupId: 2721670
 202944,WORD_NOUN,,HIRAGANA,,,泥棒政治家,どろぼうせいじか,,dorobou seijika,kleptokrata,"osoba będąca częścią systemu, w którym władza wykorzystywana jest w celu wzbogacenia się",,,"GroupId: 2830969
 Translate: kleptocrat"
@@ -8807,13 +8802,8 @@ postkolonializm","dyscyplina naukowa opierająca się na intelektualnym dyskursi
 202996,WORD_NOUN,,KATAKANA,,,-,ガルフサージャンフィッシュ,,garufu saajanfisshu,Acanthurus randalli,"gatunek ryby, ang: Gulf surgeonfish",DICTIONARY2_SOURCE,,GroupId: 2555980
 202997,WORD_NOUN,,HIRAGANA,,,一言半句,いちごんはんく,,ichigon hanku,"jedno słowo
 pojedyncze słowo
-???",,,DUPLICATE 202942,"GroupId: 1576000
-Translate: a single word
-MiscInfo: yoji
-Translate: (not even) a word
-MiscInfo: yoji
-Translate: (not even) a syllable
-MiscInfo: yoji"
+(nawet nie) słowo
+(nawet nie) sylaba",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,DUPLICATE 202942,GroupId: 1576000
 202998,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,十把一絡げ,じゅっぱひとからげ,,juppa hito karage,"zbieranie razem (rzeczy lub ludzi)
 traktowanie (wszystkich) jednakowo
@@ -27529,7 +27519,8 @@ Bucket Bridge Device",informatyka,,,"GroupId: 2318690
 Translate: BBD
 Translate: Bucket Bridge Device"
 209234,WORD_NOUN,,HIRAGANA,,,遊び紙,あそびがみ,,asobi gami,wklejka,w książce,DICTIONARY2_SOURCE,,GroupId: 2206970
-209235,WORD_NOUN,,HIRAGANA,,,循環小数,じゅんかんしょうすう,,junkan shousuu,ułamek dziesiętny nieskończony,,DICTIONARY2_SOURCE,,GroupId: 1735910
+209235,WORD_NOUN,,HIRAGANA,,,循環小数,じゅんかんしょうすう,,junkan shousuu,"ułamek dziesiętny nieskończony
+ułamek dziesiętny okresowy",matematyka,DICTIONARY2_SOURCE,,GroupId: 1735910
 209236,WORD_NOUN,,HIRAGANA,,,固定小数点方式,こていしょうすうてんほうしき,,kotei shousuuten houshiki,tryb stałoprzecinkowy,informatyka,DICTIONARY2_SOURCE,,GroupId: 2354240
 209237,WORD_NOUN,,KATAKANA_HIRAGANA,,,ガリレイ式望遠鏡,ガリレイしきぼうえんきょう,,garirei shikibou enkyou,teleskop galilejski,,,,"GroupId: 1963090
 Translate: Galilean telescope"
@@ -28294,8 +28285,7 @@ Translate: to sell off"
 Translate: improvement cutting (of trees)
 Translate: cleaning
 Translate: weeding"
-209505,WORD_NOUN,,HIRAGANA,,,豆腐乳,とうふにゅう,,toufu nyuu,sfermentowane tofu,,,,"GroupId: 2220980
-Translate: fermented tofu"
+209505,WORD_NOUN,,HIRAGANA,,,豆腐乳,とうふにゅう,,toufu nyuu,sfermentowane tofu,,DICTIONARY2_SOURCE,,GroupId: 2220980
 209506,WORD_NOUN,,HIRAGANA,,,沖縄豆腐,おきなわどうふ,,okinawa doufu,"tofu z Okinawy
 okinawskie tofu",,,,"GroupId: 2731550
 Translate: Okinawan tofu"
@@ -37313,8 +37303,7 @@ Translate: tetrodotoxin"
 212567,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,人の口に戸は立てられず,ひとのくちにとはたてられず,,hito no kuchi ni to wa taterarezu,ludzie chcą rozmawiać,wyrażenie idiomatyczne,,,"GroupId: 2418220
 Translate: people will talk
 MiscInfo: id"
-212568,WORD_NOUN,,HIRAGANA,,,御太鼓結び,おたいこむすび,,otaiko musubi,bardzo powszechny sposób wiązania kobiecego kimono,,,,"GroupId: 2118570
-Translate: very common way of tying a woman's kimono sash"
+212568,WORD_NOUN,,HIRAGANA,,,御太鼓結び,おたいこむすび,,otaiko musubi,bardzo powszechny sposób wiązania kobiecego pasa do kimono,,DICTIONARY2_SOURCE,,GroupId: 2118570
 212569,WORD_NOUN,,KATAKANA,,,-,タンゼント,,tanzento,tangens,"matematyka; funkcja trygonometryczna, ang: tangent",DICTIONARY2_SOURCE,,GroupId: 1659990
 212570,"WORD_NOUN
 WORD_ADVERB",,HIRAGANA,,,末末,すえずえ,,sue zue,"odległa przyszłość
@@ -37362,8 +37351,7 @@ Translate: very common way of tying a woman's kimono sash
 MiscInfo: abbr"
 212584,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,変わりえない,かわりえない,,kawari enai,nie być zdolny na zmianę,,DICTIONARY2_SOURCE,,GroupId: 2564130
-212585,WORD_NOUN,,HIRAGANA,,,お太鼓結び,おたいこむすび,,otaiko musubi,bardzo powszechny sposób wiązania kobiecego kimono,,,,"GroupId: 2118570
-Translate: very common way of tying a woman's kimono sash"
+212585,WORD_NOUN,,HIRAGANA,,,お太鼓結び,おたいこむすび,,otaiko musubi,bardzo powszechny sposób wiązania kobiecego pasa do kimono,,DICTIONARY2_SOURCE,,GroupId: 2118570
 212586,WORD_NOUN,,KATAKANA,,,-,ストアドプロシジャー,,sutoado puroshijaa,procedura składowana,informatyka; ang: stored procedure,DICTIONARY2_SOURCE,,GroupId: 2303980
 212587,WORD_NOUN,,HIRAGANA,,,府立高等学校,ふりつこうとうがっこう,,furitsu koutou gakkou,"prefekturalna szkoła średnia
 publiczna szkoła średnia",w prefekturach Kioto i Osaka,,,"GroupId: 2761080
@@ -52134,8 +52122,7 @@ siedmiowcy",ugrupowanie religijne i polityczne w islamie szyickim,,,"GroupId: 27
 Translate: Ismailism
 Translate: branch of Shia Islam"
 217410,WORD_NOUN,,KATAKANA,,,-,エコロケーション,,ekorokeeshon,echolokacja,"sposób ustalania przez niektóre organizmy żywe swego położenia względem otaczających je przedmiotów, ang: echolocation",DICTIONARY2_SOURCE,,GroupId: 2610170
-217411,WORD_NOUN,,HIRAGANA,,,欧文間隔,おうぶんかんかく,,oubun kankaku,spacja o połowie szerokości,,,,"GroupId: 2839825
-Translate: half-width space"
+217411,WORD_NOUN,,HIRAGANA,,,欧文間隔,おうぶんかんかく,,oubun kankaku,spacja o połowie szerokości,informatyka,DICTIONARY2_SOURCE,,GroupId: 2839825
 217412,WORD_NOUN,,KATAKANA_HIRAGANA,,,ｔｏ不定詞,ツーふていし,,tsuu futeishi,"bezokolicznik z ""to""
 pełny bezokolicznik",lingwistyka,,,"GroupId: 2260340
 Translate: to-infinitive
@@ -61245,8 +61232,7 @@ unik",,DICTIONARY2_SOURCE,,GroupId: 1808400
 kurtyna linowa
 bar
 pub",,DICTIONARY2_SOURCE,,GroupId: 1825190
-220629,WORD_NOUN,,HIRAGANA_KATAKANA,,,跳満,はねマン,,haneman,wygrana warta 12000 punktów (lub 18000 punktów w przypadku dealera),,,,"GroupId: 2750720
-Translate: win worth 12000 points (or, if dealer, 18000 points)"
+220629,WORD_NOUN,,HIRAGANA_KATAKANA,,,跳満,はねマン,,haneman,wygrana warta 12000 punktów (lub 18000 punktów w przypadku rozdającego),mahjong,DICTIONARY2_SOURCE,,GroupId: 2750720
 220630,WORD_NOUN,,HIRAGANA,,,天頂点,てんちょうてん,,tenchouten,zenit,,,,"GroupId: 1439960
 Translate: zenith"
 220631,WORD_NOUN,,HIRAGANA,,,天頂儀,てんちょうぎ,,tenchougi,teleskop zenitowy,,DICTIONARY2_SOURCE,,GroupId: 1439950
@@ -61309,10 +61295,8 @@ MiscInfo: uk"
 220658,WORD_NOUN,,KATAKANA,,,-,ミヤマガワトンボ,,miyama gawatonbo,Hierodula patellifera,owad,,,"GroupId: 2199580
 Translate: Calopteryx cornelia (species of damselfly)
 MiscInfo: uk"
-220659,WORD_NOUN,,KATAKANA,,,ハネ満,ハネマン,,haneman,wygrana warta 12000 punktów (lub 18000 punktów w przypadku dealera),,,,"GroupId: 2750720
-Translate: win worth 12000 points (or, if dealer, 18000 points)"
-220660,WORD_NOUN,,HIRAGANA_KATAKANA,,,跳ね満,はねマン,,haneman,wygrana warta 12000 punktów (lub 18000 punktów w przypadku dealera),,,,"GroupId: 2750720
-Translate: win worth 12000 points (or, if dealer, 18000 points)"
+220659,WORD_NOUN,,KATAKANA,,,ハネ満,ハネマン,,haneman,wygrana warta 12000 punktów (lub 18000 punktów w przypadku rozdającego),mahjong,DICTIONARY2_SOURCE,,GroupId: 2750720
+220660,WORD_NOUN,,HIRAGANA_KATAKANA,,,跳ね満,はねマン,,haneman,wygrana warta 12000 punktów (lub 18000 punktów w przypadku rozdającego),mahjong,DICTIONARY2_SOURCE,,GroupId: 2750720
 220661,WORD_NOUN,,HIRAGANA,,,代理懐胎,だいりかいたい,,dairi kaitai,ciąża zastępcza,,DICTIONARY2_SOURCE,,GroupId: 2753560
 220662,WORD_NOUN,,HIRAGANA,,,仕え女,つかえめ,,tsukaeme,służąca,,,,"GroupId: 1304770
 Translate: maidservant"
@@ -62273,8 +62257,7 @@ Translate: IOCS"
 teczka z raportem",,,,"GroupId: 2388980
 Translate: report file"
 221012,WORD_NOUN,,HIRAGANA,,,辻駕籠,つじかご,,tsujikago,"uliczny palankin
-palankin uliczny",,,,"GroupId: 2574380
-Translate: street palanquin"
+palankin uliczny",,DICTIONARY2_SOURCE,,GroupId: 2574380
 221013,WORD_NOUN,,KATAKANA,,,-,サドルバックバタフライフィッシュ,,sadorubakku batafuraifisshu,Chaetodon falcula,"gatunek ryby, ang: saddled butterflyfish",DICTIONARY2_SOURCE,,GroupId: 2543010
 221014,WORD_VERB_RU,,HIRAGANA,,,かり立てる,かりたてる,,kari tateru,"wykurzyć (np. zająca, lisa i etc, pisane również jako 狩り立てる)
 wypłaszać (np. zająca, lisa i etc, pisane również jako 狩り立てる)
@@ -73051,8 +73034,7 @@ Translate: non-legal public road (sometimes no longer physically existing)"
 górski ascetyczny mnich (buddyzm)
 znaki, które odróżniają nauki buddyjskie od innych wyznań (buddyzm)
 tytuł nadany wybitnemu lekarzowi lub malarzowi",,DICTIONARY2_SOURCE,,GroupId: 2846898
-224850,WORD_COUNTER,,HIRAGANA,,,番個,ばんこ,,banko,n-ta gra (z 12 rund),,,,"GroupId: 2847138
-Translate: -nth game (of 12 rounds)"
+224850,WORD_COUNTER,,HIRAGANA,,,番個,ばんこ,,banko,n-ta gra (z 12 rund),hanafuda,DICTIONARY2_SOURCE,,GroupId: 2847138
 224851,"WORD_EXPRESSION
 WORD_PARTICULE",,HIRAGANA,,,-,なんざあ,,nanzaa,"i tak dalej
 itd
@@ -117693,11 +117675,10 @@ wirownica",,DICTIONARY2_SOURCE,,GroupId: 1178160
 243009,WORD_VERB_RU,,HIRAGANA,,,凹める,くぼめる,,kubomeru,"wydrążać
 wydrążyć",,DICTIONARY2_SOURCE,,GroupId: 1179210
 243010,WORD_NOUN,,HIRAGANA,,,奥許し,おくゆるし,,okuyurushi,???,,DICTIONARY2_SOURCE,,GroupId: 1179440
-243011,WORD_NOUN,,HIRAGANA,,,奥勤め,おくづとめ,,oku dutome,pracowanie jako pokojówka damy,,DICTIONARY2_SOURCE,,GroupId: 1179450
+243011,WORD_NOUN,,HIRAGANA,,,奥勤め,おくづとめ,,oku dutome,pełnienie funkcji służącej w kwaterach prywatnych szoguna lub daimyo,okres Edo,DICTIONARY2_SOURCE,,GroupId: 1179450
 243012,WORD_NOUN,,HIRAGANA,,,奥御殿,おくごてん,,oku goten,prywatne kwatery szlachcica,,DICTIONARY2_SOURCE,,GroupId: 1179460
 243013,WORD_VERB_U,,HIRAGANA,,,横向く,よこむく,,yoko muku,odwrócić się bokiem,,DICTIONARY2_SOURCE,,GroupId: 1180720
-243014,WORD_NOUN,,HIRAGANA,,,横座標,おうざひょう,,ouzahyou,odcięta,oś x w układzie współrzędnych,"DICTIONARY2_SOURCE
-TO_DELETE",,GroupId: 1180780
+243014,WORD_NOUN,,HIRAGANA,,,横座標,よこざひょう,,yokozahyou,odcięta,matematyka; oś x w układzie współrzędnych,DICTIONARY2_SOURCE,,GroupId: 1180780
 243015,WORD_NOUN,,HIRAGANA,,,黄金術,おうごんじゅつ,,ougonjutsu,alchemia,,DICTIONARY2_SOURCE,,GroupId: 1181890
 243016,WORD_NOUN,,HIRAGANA,,,黄菖蒲,きしょうぶ,,kishoubu,"kosaciec żółty
 żółty irys",,DICTIONARY2_SOURCE,,GroupId: 1182020
@@ -123719,7 +123700,7 @@ lepiej dmuchać na zimne",przysłowie,DICTIONARY2_SOURCE,,GroupId: 2411180
 246166,WORD_NOUN,,HIRAGANA,,,同期式,どうきしき,,doukishiki,synchronizacja,,DICTIONARY2_SOURCE,,GroupId: 1452040
 246167,WORD_NOUN,,HIRAGANA,,,同素体,どうそたい,,dousotai,alotrop,,DICTIONARY2_SOURCE,,GroupId: 1452970
 246168,WORD_NOUN,,HIRAGANA,,,同値性,どうちせい,,douchisei,równowartość,,DICTIONARY2_SOURCE,,GroupId: 1453090
-246169,WORD_NOUN,,HIRAGANA,,,同分母,どうぶんぼ,,doubunbo,wspólny mianownik,,DICTIONARY2_SOURCE,,GroupId: 1453370
+246169,WORD_NOUN,,HIRAGANA,,,同分母,どうぶんぼ,,doubunbo,wspólny mianownik,matematyka,DICTIONARY2_SOURCE,,GroupId: 1453370
 246170,WORD_NOUN,,HIRAGANA,,,導電度,どうでんど,,doudendo,"przewodność właściwa
 przewodnictwo właściwe
 konduktywność",,DICTIONARY2_SOURCE,,GroupId: 1453770
@@ -127803,7 +127784,7 @@ granulocyty zasadochłonne","biologia; morfotyczne składniki krwi z grupy leuko
 248196,WORD_ADJECTIVE_NO,,HIRAGANA,,,激硬,げきかた,,gekikata,"niezwykle twardy
 twardy jak skała",potocznie,DICTIONARY2_SOURCE,,GroupId: 2850098
 248197,WORD_NOUN,,HIRAGANA,,,縦座標,たてざひょう,,tatezahyou,"rzędna
-oś y w układzie współrzędnych",,DICTIONARY2_SOURCE,,GroupId: 2227620
+oś y w układzie współrzędnych",matematyka,DICTIONARY2_SOURCE,,GroupId: 2227620
 248198,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,芸のない,げいのない,,gei no nai,"nudny
 nieinteresujący
@@ -129053,7 +129034,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,配向性,はいこうせい,,haikousei,orientacj
 248836,WORD_NOUN,,HIRAGANA,,,貯蔵所,ちょぞうしょ,,chozousho,"miejsce magazynowe
 miejsce składowe
 miejsce do przechowywania",,DICTIONARY2_SOURCE,,GroupId: 1703580
-248837,WORD_NOUN,,HIRAGANA,,,真分数,しんぶんすう,,shinbunsuu,ułamek właściwy,,DICTIONARY2_SOURCE,,GroupId: 1705020
+248837,WORD_NOUN,,HIRAGANA,,,真分数,しんぶんすう,,shinbunsuu,ułamek właściwy,matematyka,DICTIONARY2_SOURCE,,GroupId: 1705020
 248838,WORD_NOUN,,HIRAGANA,,,脂肪油,しぼうゆ,,shibouyu,olej tłuszczowy,,DICTIONARY2_SOURCE,,GroupId: 1705470
 248839,"WORD_NOUN
 WORD_ADJECTIVE_NA",,HIRAGANA,,,身贔屓,みびいき,,mi biiki,"kumoterstwo
@@ -151439,7 +151420,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-09-24,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-09-25,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
