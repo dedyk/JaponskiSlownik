@@ -1,5 +1,6 @@
 package pl.idedyk.japanese.dictionary.misc;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -31,11 +32,25 @@ public class GrammaExampleShower {
 		}
 		
 		// pobranie identyfikatora slowa
-		Integer polishJapaneseId;
+		List<Integer> polishJapaneseIdList;
 		
 		try {
-			polishJapaneseId = Integer.parseInt(args[0]);
+			polishJapaneseIdList = new ArrayList<>();
 			
+			if (args[0].contains("-") == false) {				
+				polishJapaneseIdList.add(Integer.parseInt(args[0]));
+				
+			} else {				
+				String[] args0Splited = args[0].split("-");
+				
+				Integer startIdRange = Integer.parseInt(args0Splited[0]);
+				Integer stopIdRange = Integer.parseInt(args0Splited[1]);
+				
+				for (int id = startIdRange; id <= stopIdRange; ++id) {
+					polishJapaneseIdList.add(id);
+				}
+			}
+						
 		} catch (NumberFormatException e) {
 			System.out.println("Niepoprawny identyfikator słowa: " + args[0]);
 			return;
@@ -53,83 +68,90 @@ public class GrammaExampleShower {
 
 		// lista slow w starym formacie
 		List<PolishJapaneseEntry> polishJapaneseEntriesList = dictionary2Helper.getOldPolishJapaneseEntriesList();
+		
+		
+		for (Integer polishJapaneseId : polishJapaneseIdList) {
+			// odnalezienie slowa o podanym identyfikatorze
+			Optional<PolishJapaneseEntry> polishJapaneseEntryOptional = polishJapaneseEntriesList.stream().filter(p -> p.getId() == polishJapaneseId).findFirst();
+			
+			if (polishJapaneseEntryOptional.isPresent() == false) {
+				System.out.println("Nie znaleziono słowa o podanym identyfikatorze: " + polishJapaneseId);
+				continue;
+			}
 
-		// odnalezienie slowa o podanym identyfikatorze
-		Optional<PolishJapaneseEntry> polishJapaneseEntryOptional = polishJapaneseEntriesList.stream().filter(p -> p.getId() == polishJapaneseId).findFirst();
-		
-		if (polishJapaneseEntryOptional.isPresent() == false) {
-			System.out.println("Nie znaleziono słowa o podanym identyfikatorze: " + polishJapaneseId);
-			return;
-		}
-		
-		// mala poprawka kanji
-		String kanji = polishJapaneseEntryOptional.get().getKanji();
-		
-		if (kanji.equals("-") == true) {
-			polishJapaneseEntryOptional.get().setKanji(null);
-		}
-		
-		// pomocnicy do wyliczania
-		KeigoHelper keigoHelper = new KeigoHelper();
-		
-		Map<GrammaFormConjugateResultType, GrammaFormConjugateResult> grammaFormCache = new HashMap<GrammaFormConjugateResultType, GrammaFormConjugateResult>();
+			// mala poprawka kanji
+			String kanji = polishJapaneseEntryOptional.get().getKanji();
+			
+			if (kanji.equals("-") == true) {
+				polishJapaneseEntryOptional.get().setKanji(null);
+			}
+			
+			// pomocnicy do wyliczania
+			KeigoHelper keigoHelper = new KeigoHelper();
+			
+			Map<GrammaFormConjugateResultType, GrammaFormConjugateResult> grammaFormCache = new HashMap<GrammaFormConjugateResultType, GrammaFormConjugateResult>();
 
-		// wyliczenie form gramatycznych
-		List<GrammaFormConjugateGroupTypeElements> grammaConjufateResult = GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, new GrammaFormConjugateRequest(polishJapaneseEntryOptional.get()), grammaFormCache, forceDictionaryEntryType, true);
-		
-		// wypisanie na ekranie
-		System.out.println("+++ Formy gramatyczne +++\n");
-		
-		for (GrammaFormConjugateGroupTypeElements currentGrammaForm : grammaConjufateResult) {
+			// wyliczenie form gramatycznych
+			List<GrammaFormConjugateGroupTypeElements> grammaConjufateResult = GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, new GrammaFormConjugateRequest(polishJapaneseEntryOptional.get()), grammaFormCache, forceDictionaryEntryType, true);
 			
-			// tytul formy
-			System.out.println(currentGrammaForm.getGrammaFormConjugateGroupType().getName() + " (" + currentGrammaForm.getGrammaFormConjugateGroupType().name() + "), pokazać: " + currentGrammaForm.getGrammaFormConjugateGroupType().isShow());
+			// wypisanie na ekranie
+			System.out.println("+++ Formy gramatyczne dla " + polishJapaneseId + " +++\n");
 			
-			// info
-			if (StringUtils.isBlank(currentGrammaForm.getGrammaFormConjugateGroupType().getInfo()) == false) {
-				System.out.println(currentGrammaForm.getGrammaFormConjugateGroupType().getInfo());
-			}
-			System.out.println();
-			
-			// dalszy podzial
-			List<GrammaFormConjugateResult> grammaFormConjugateResults = currentGrammaForm.getGrammaFormConjugateResults();
-			
-			for (GrammaFormConjugateResult currentGrammaFormSingleResult : grammaFormConjugateResults) {
-				
-				// wypisanie pojedynczego wpisu
-				showGrammaFormSingleResult(currentGrammaFormSingleResult, true, 1);				
-			}
-			
-			System.out.println("-------------\n");
-		}
-		
-		// wyliczenie przykladow
-		List<ExampleGroupTypeElements> examples = ExampleManager.getExamples(keigoHelper, new ExampleRequest(polishJapaneseEntryOptional.get()), grammaFormCache, forceDictionaryEntryType, true);
-		
-		// wypisanie na ekranie
-		System.out.println("+++ Przykłady +++\n");
-		
-		for (ExampleGroupTypeElements currentExample : examples) {
-			
-			// tytul przykladu
-			System.out.println(currentExample.getExampleGroupType().getName() + " (" + currentExample.getExampleGroupType().name() + ")");
-			
-			// info
-			if (StringUtils.isBlank(currentExample.getExampleGroupType().getInfo()) == false) {
-				System.out.println(currentExample.getExampleGroupType().getInfo());
-			}
-			System.out.println();
-				
-			// dalszy podzial
-			List<ExampleResult> exampleResults = currentExample.getExampleResults();
-			
-			for (ExampleResult currentExampleSingleResult : exampleResults) {
-				
-				// wypisanie pojedynczego wpisu
-				showExampleSingleResult(currentExampleSingleResult, 1);
+			if (grammaConjufateResult != null) {			
+				for (GrammaFormConjugateGroupTypeElements currentGrammaForm : grammaConjufateResult) {
+					
+					// tytul formy
+					System.out.println(currentGrammaForm.getGrammaFormConjugateGroupType().getName() + " (" + currentGrammaForm.getGrammaFormConjugateGroupType().name() + "), pokazać: " + currentGrammaForm.getGrammaFormConjugateGroupType().isShow());
+					
+					// info
+					if (StringUtils.isBlank(currentGrammaForm.getGrammaFormConjugateGroupType().getInfo()) == false) {
+						System.out.println(currentGrammaForm.getGrammaFormConjugateGroupType().getInfo());
+					}
+					System.out.println();
+					
+					// dalszy podzial
+					List<GrammaFormConjugateResult> grammaFormConjugateResults = currentGrammaForm.getGrammaFormConjugateResults();
+					
+					for (GrammaFormConjugateResult currentGrammaFormSingleResult : grammaFormConjugateResults) {
+						
+						// wypisanie pojedynczego wpisu
+						showGrammaFormSingleResult(currentGrammaFormSingleResult, true, 1);				
+					}
+					
+					System.out.println("-------------\n");
+				}
 			}
 			
-			System.out.println("-------------\n");
+			// wyliczenie przykladow
+			List<ExampleGroupTypeElements> examples = ExampleManager.getExamples(keigoHelper, new ExampleRequest(polishJapaneseEntryOptional.get()), grammaFormCache, forceDictionaryEntryType, true);
+			
+			// wypisanie na ekranie
+			System.out.println("+++ Przykłady " + polishJapaneseId + " +++\n");
+			
+			if (examples != null) {			
+				for (ExampleGroupTypeElements currentExample : examples) {
+					
+					// tytul przykladu
+					System.out.println(currentExample.getExampleGroupType().getName() + " (" + currentExample.getExampleGroupType().name() + ")");
+					
+					// info
+					if (StringUtils.isBlank(currentExample.getExampleGroupType().getInfo()) == false) {
+						System.out.println(currentExample.getExampleGroupType().getInfo());
+					}
+					System.out.println();
+						
+					// dalszy podzial
+					List<ExampleResult> exampleResults = currentExample.getExampleResults();
+					
+					for (ExampleResult currentExampleSingleResult : exampleResults) {
+						
+						// wypisanie pojedynczego wpisu
+						showExampleSingleResult(currentExampleSingleResult, 1);
+					}
+					
+					System.out.println("-------------\n");
+				}			
+			}
 		}
 	}
 
