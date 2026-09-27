@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
+import java.util.TreeMap;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -68,22 +68,24 @@ public class GrammaExampleShower {
 
 		// lista slow w starym formacie
 		List<PolishJapaneseEntry> polishJapaneseEntriesList = dictionary2Helper.getOldPolishJapaneseEntriesList();
+		Map<Integer, PolishJapaneseEntry> polishJapaneseEntriesListCache = new TreeMap<>();
 		
+		polishJapaneseEntriesList.forEach(f-> polishJapaneseEntriesListCache.put(f.getId(), f));		
 		
 		for (Integer polishJapaneseId : polishJapaneseIdList) {
 			// odnalezienie slowa o podanym identyfikatorze
-			Optional<PolishJapaneseEntry> polishJapaneseEntryOptional = polishJapaneseEntriesList.stream().filter(p -> p.getId() == polishJapaneseId).findFirst();
-			
-			if (polishJapaneseEntryOptional.isPresent() == false) {
+			PolishJapaneseEntry polishJapaneseEntry = polishJapaneseEntriesListCache.get(polishJapaneseId);
+						
+			if (polishJapaneseEntry == null) {
 				System.out.println("Nie znaleziono słowa o podanym identyfikatorze: " + polishJapaneseId);
 				continue;
 			}
 
 			// mala poprawka kanji
-			String kanji = polishJapaneseEntryOptional.get().getKanji();
+			String kanji = polishJapaneseEntry.getKanji();
 			
 			if (kanji.equals("-") == true) {
-				polishJapaneseEntryOptional.get().setKanji(null);
+				polishJapaneseEntry.setKanji(null);
 			}
 			
 			// pomocnicy do wyliczania
@@ -92,7 +94,7 @@ public class GrammaExampleShower {
 			Map<GrammaFormConjugateResultType, GrammaFormConjugateResult> grammaFormCache = new HashMap<GrammaFormConjugateResultType, GrammaFormConjugateResult>();
 
 			// wyliczenie form gramatycznych
-			List<GrammaFormConjugateGroupTypeElements> grammaConjufateResult = GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, new GrammaFormConjugateRequest(polishJapaneseEntryOptional.get()), grammaFormCache, forceDictionaryEntryType, true);
+			List<GrammaFormConjugateGroupTypeElements> grammaConjufateResult = GrammaConjugaterManager.getGrammaConjufateResult(keigoHelper, new GrammaFormConjugateRequest(polishJapaneseEntry), grammaFormCache, forceDictionaryEntryType, true);
 			
 			// wypisanie na ekranie
 			System.out.println("+++ Formy gramatyczne dla " + polishJapaneseId + " +++\n");
@@ -123,7 +125,7 @@ public class GrammaExampleShower {
 			}
 			
 			// wyliczenie przykladow
-			List<ExampleGroupTypeElements> examples = ExampleManager.getExamples(keigoHelper, new ExampleRequest(polishJapaneseEntryOptional.get()), grammaFormCache, forceDictionaryEntryType, true);
+			List<ExampleGroupTypeElements> examples = ExampleManager.getExamples(keigoHelper, new ExampleRequest(polishJapaneseEntry), grammaFormCache, forceDictionaryEntryType, true);
 			
 			// wypisanie na ekranie
 			System.out.println("+++ Przykłady " + polishJapaneseId + " +++\n");
