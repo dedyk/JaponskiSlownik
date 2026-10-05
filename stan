@@ -2,15 +2,15 @@
 + update - x
 + kanji - x
 ----------
-small - 10
-small2 - 10
-small3 - 10
-small4 - x
++____small - 10
++____small2 - 10
++____small3 - 10
++____small4 - x
 ----------
-160000 - 30
-uzupełniacz - x
-word - 40
++____160000 - x
++____uzupełniacz - x
++____word - 80
 ----------
 ludzie - x
 ----------
-suma: 100
+suma: 110
