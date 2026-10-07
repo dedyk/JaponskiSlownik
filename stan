@@ -2,14 +2,14 @@
 + update - x
 + kanji - x
 ----------
-++__+ small - 10
-++__+ small2 - 10
-++__+ small3 - 10
-++__+ small4 - x
++++_+ small - 10
++++_+ small2 - 10
++++_+ small3 - 10
++++_+ small4 - x
 ----------
-++__+ 160000 - x
-++__+ uzupełniacz - x
-88__5 word - 80
++++_+ 160000 - x
++++_+ uzupełniacz - x
+888_5 word - 80
 ----------
 ludzie - x
 ----------
