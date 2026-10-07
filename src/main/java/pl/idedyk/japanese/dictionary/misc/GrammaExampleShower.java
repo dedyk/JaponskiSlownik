@@ -185,7 +185,7 @@ public class GrammaExampleShower {
 		System.out.println(levelPrefix2 + (StringUtils.isBlank(currentGrammaFormSingleResult.getPrefixKana()) == false ? (" " + currentGrammaFormSingleResult.getPrefixKana()) : "") + currentGrammaFormSingleResult.getKana());
 		
 		// romaji
-		System.out.println(levelPrefix2 + (StringUtils.isBlank(currentGrammaFormSingleResult.getPrefixRomaji()) == false ? (" " + currentGrammaFormSingleResult.getPrefixRomaji()) : "") + currentGrammaFormSingleResult.getRomaji());
+		System.out.println(levelPrefix2 + (StringUtils.isBlank(currentGrammaFormSingleResult.getPrefixRomaji()) == false ? (" " + currentGrammaFormSingleResult.getPrefixRomaji() + " ") : "") + currentGrammaFormSingleResult.getRomaji());
 		
 		// info do elementu
 		if (StringUtils.isBlank(currentGrammaFormSingleResult.getInfo()) == false) {
@@ -223,7 +223,7 @@ public class GrammaExampleShower {
 		System.out.println(levelPrefix2 + (StringUtils.isBlank(currentExampleSingleResult.getPrefixKana()) == false ? (" " + currentExampleSingleResult.getPrefixKana()) : "") + currentExampleSingleResult.getKana());
 		
 		// romaji
-		System.out.println(levelPrefix2 + (StringUtils.isBlank(currentExampleSingleResult.getPrefixRomaji()) == false ? (" " + currentExampleSingleResult.getPrefixRomaji()) : "") + currentExampleSingleResult.getRomaji());
+		System.out.println(levelPrefix2 + (StringUtils.isBlank(currentExampleSingleResult.getPrefixRomaji()) == false ? (" " + currentExampleSingleResult.getPrefixRomaji() + " ") : "") + currentExampleSingleResult.getRomaji());
 		
 		System.out.println();
 		
