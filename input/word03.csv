@@ -18985,8 +18985,9 @@ Translate: abuser (of a person or animal)"
 206318,WORD_NOUN,,HIRAGANA,,,就業地,しゅうぎょうち,,shuugyouchi,miejsce pracy,,,,"GroupId: 1331620
 Translate: place of work"
 206319,WORD_NOUN,,HIRAGANA,,,自己隔離,じこかくり,,jiko kakuri,samoizolacja,,DICTIONARY2_SOURCE,,GroupId: 2843756
-206320,WORD_NOUN,,HIRAGANA,,,通行税,つうこうぜい,,tsuukouzei,opłata drogowa,,,,"GroupId: 1687140
-Translate: toll"
+206320,WORD_NOUN,,HIRAGANA,,,通行税,つうこうぜい,,tsuukouzei,"opłata drogowa
+opłata tranzytowa
+cło tranzytowe",,DICTIONARY2_SOURCE,,GroupId: 1687140
 206321,WORD_NOUN,,HIRAGANA,,,炭質,たんしつ,,tanshitsu,jakość węgla,,,,"GroupId: 1837350
 Translate: coal quality"
 206322,WORD_EXPRESSION,,HIRAGANA,,,安全第一,あんぜんだいいち,,anzen daiichi,"bezpieczeństwo przede wszystkim
@@ -22086,9 +22087,7 @@ DUPLICATE 59331
 DUPLICATE 65958",GroupId: 2843869
 207403,WORD_NOUN,,HIRAGANA,,,秘,ひ,,hi,"sekret
 tajemnica",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2843923
-207404,WORD_NOUN,,HIRAGANA,,,賻,ふ,,fu,pieniądze i dobra przekazane osieroconej rodzinie,archaizm,,,"GroupId: 2843796
-Translate: money and goods given to a bereaved family
-MiscInfo: arch"
+207404,WORD_NOUN,,HIRAGANA,,,賻,ふ,,fu,pieniądze i dobra przekazane osieroconej rodzinie,archaizm,DICTIONARY2_SOURCE,,GroupId: 2843796
 207405,"WORD_NOUN
 WORD_ADJECTIVE_TARU",,HIRAGANA,,,勃,ぼつ,,botsu,"Bułgaria (skrót)
 ożywiony (przestarzałe słowo)
@@ -29277,9 +29276,7 @@ Translate: European hornet (Vespa crabro)
 MiscInfo: uk"
 209911,WORD_NOUN,,HIRAGANA,,,黄帯頬長雀蜂,きおびほおながすずめばち,,kiobi hoonaga suzumebachi,osa średnia,"pisanie zwykle z użyciem kana; palearktyczny gatunek owada z rodziny osowatych, Dolichovespula media",DICTIONARY2_SOURCE,,GroupId: 2566490
 209912,WORD_NOUN,,HIRAGANA,,,島寒菊,しまかんぎく,,shimakangiku,złocień ogrodowy,"pisanie zwykle z użyciem kana; kwiat, Chrysanthemum indicum",DICTIONARY2_SOURCE,,GroupId: 2575570
-209913,WORD_NOUN,,HIRAGANA,,,油菊,あぶらぎく,,aburagiku,złocień ogrodowy,"kwiat, Chrysanthemum indicum",,,"GroupId: 2575580
-Translate: chrysanthemum (Chrysanthemum indicum)
-MiscInfo: uk"
+209913,WORD_NOUN,,HIRAGANA,,,油菊,あぶらぎく,,aburagiku,złocień ogrodowy,"pisanie zwykle z użyciem kana; kwiat, Chrysanthemum indicum",DICTIONARY2_SOURCE,,GroupId: 2575580
 209914,WORD_NOUN,,HIRAGANA,,,丸尾雨傘,まるおあまがさ,,maruo amagasa,niemrawiec pospolity,"gatunek węża z rodziny zdradnicowatych, Bungarus fasciatus",,,"GroupId: 2595750
 Translate: banded krait (Bungarus fasciatus)
 MiscInfo: uk"
@@ -29415,9 +29412,7 @@ Translate: European hornet (Vespa crabro)
 MiscInfo: uk"
 209955,WORD_NOUN,,KATAKANA_EXCEPTION,,,-,キオビホオナガスズメバチ,,kiobi hoonaga suzumebachi,osa średnia,"pisanie zwykle z użyciem kana; palearktyczny gatunek owada z rodziny osowatych, Dolichovespula media",DICTIONARY2_SOURCE,,GroupId: 2566490
 209956,WORD_NOUN,,KATAKANA,,,-,シマカンギク,,shimakangiku,złocień ogrodowy,"pisanie zwykle z użyciem kana; kwiat, Chrysanthemum indicum",DICTIONARY2_SOURCE,,GroupId: 2575570
-209957,WORD_NOUN,,KATAKANA,,,-,アブラギク,,aburagiku,złocień ogrodowy,"kwiat, Chrysanthemum indicum",,,"GroupId: 2575580
-Translate: chrysanthemum (Chrysanthemum indicum)
-MiscInfo: uk"
+209957,WORD_NOUN,,KATAKANA,,,-,アブラギク,,aburagiku,złocień ogrodowy,"pisanie zwykle z użyciem kana; kwiat, Chrysanthemum indicum",DICTIONARY2_SOURCE,,GroupId: 2575580
 209958,WORD_NOUN,,KATAKANA,,,-,マルオアマガサ,,maruo amagasa,niemrawiec pospolity,"gatunek węża z rodziny zdradnicowatych, Bungarus fasciatus",,,"GroupId: 2595750
 Translate: banded krait (Bungarus fasciatus)
 MiscInfo: uk"
@@ -53157,9 +53152,7 @@ MiscInfo: uk"
 217835,WORD_NOUN,,HIRAGANA,,,大黒黄金,だいこくこがね,,daikoku kogane,Copris ochus,,,,"GroupId: 2166170
 Translate: horned dung beetle (Copris ochus)
 MiscInfo: uk"
-217836,WORD_NOUN,,HIRAGANA,,,瓜羽虫,うりはむし,,uriha mushi,Aulacophora femoralis,owad,,,"GroupId: 2166270
-Translate: cucurbit leaf beetle (Aulacophora femoralis)
-MiscInfo: uk"
+217836,WORD_NOUN,,HIRAGANA,,,瓜羽虫,うりはむし,,uriha mushi,Aulacophora femoralis,pisanie zwykle z użyciem kana; owad,DICTIONARY2_SOURCE,,GroupId: 2166270
 217837,WORD_NOUN,,HIRAGANA,,,銅鉦ぶいぶい,どうがねぶいぶい,,dougane buibui,Anomala cuprea,owad,,,"GroupId: 2166330
 Translate: cupreous chafer (scarabaeid beetle, Anomala cuprea)
 MiscInfo: uk"
@@ -53254,12 +53247,8 @@ MiscInfo: uk"
 217869,WORD_NOUN,,KATAKANA,,,-,ダイコクコガネ,,daikoku kogane,Copris ochus,,,,"GroupId: 2166170
 Translate: horned dung beetle (Copris ochus)
 MiscInfo: uk"
-217870,WORD_NOUN,,HIRAGANA,,,瓜金花虫,うりはむし,,uriha mushi,Aulacophora femoralis,owad,,,"GroupId: 2166270
-Translate: cucurbit leaf beetle (Aulacophora femoralis)
-MiscInfo: uk"
-217871,WORD_NOUN,,KATAKANA,,,-,ウリハムシ,,uriha mushi,Aulacophora femoralis,owad,,,"GroupId: 2166270
-Translate: cucurbit leaf beetle (Aulacophora femoralis)
-MiscInfo: uk"
+217870,WORD_NOUN,,HIRAGANA,,,瓜金花虫,うりはむし,,uriha mushi,Aulacophora femoralis,pisanie zwykle z użyciem kana; owad,DICTIONARY2_SOURCE,,GroupId: 2166270
+217871,WORD_NOUN,,KATAKANA,,,-,ウリハムシ,,uriha mushi,Aulacophora femoralis,pisanie zwykle z użyciem kana; owad,DICTIONARY2_SOURCE,,GroupId: 2166270
 217872,WORD_NOUN,,KATAKANA,,,-,ドウガネブイブイ,,dougane buibui,Anomala cuprea,owad,,,"GroupId: 2166330
 Translate: cupreous chafer (scarabaeid beetle, Anomala cuprea)
 MiscInfo: uk"
@@ -71070,8 +71059,7 @@ Translate: quad scull (rowing)"
 224202,WORD_NOUN,,HIRAGANA,,,鳩小屋,はとごや,,hatogoya,gołębnik,,,,"GroupId: 1783810
 Translate: pigeon house
 Translate: dovecote"
-224203,WORD_NOUN,,HIRAGANA,,,茎葉植物,けいようしょくぶつ,,keiyou shokubutsu,kormofit,,,,"GroupId: 2512960
-Translate: cormophyte"
+224203,WORD_NOUN,,HIRAGANA,,,茎葉植物,けいようしょくぶつ,,keiyou shokubutsu,kormofit,,DICTIONARY2_SOURCE,,GroupId: 2512960
 224204,WORD_NOUN,,HIRAGANA,,,欄参照,らんさんしょう,,ransanshou,"odwołanie do kolumny
 patrz kolumna poniżej",,,,"GroupId: 1549380
 Translate: column reference
@@ -151150,7 +151138,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-10,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-11,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
