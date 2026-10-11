@@ -1,4 +1,4 @@
-HEADER,1.10,2026-10-10,,,,,,,,
+HEADER,1.10,2026-10-11,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -314125,8 +314125,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-10,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-10,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-11,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-11,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -708088,11 +708088,12 @@ SENSE_COMMON,1438340,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1438340,ceiling,,,,,,,,
 SENSE_POL,1438340,"sufit
 strop",,,,,,,,
-SENSE_COMMON,1438340,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1438340,"ceiling price
-(price) ceiling",,,,,,,,
-SENSE_POL,1438340,"pułap (ceny)
-szczyt (cen)",,,,,,,,
+SENSE_COMMON,1438340,,,noun (common) (futsuumeishi),see|-|1436050|4|底|そこ|底(そこ)[4],finance,,,,
+SENSE_ENG,1438340,"ceiling (e.g. of share price)
+ceiling price",,,,,,,,
+SENSE_POL,1438340,"limit górny (np. ceny akcji)
+pułap ceny
+cena maksymalna",,,,,,,,
 END,1438340,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -847657,10 +847658,30 @@ news1
 nf04",,
 SENSE_COMMON,1436050,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1436050,"bottom
-sole",,,,,,,,
-SENSE_POL,1436050,"dno
+sole
+bed (of a river)",,,,,,,,
+SENSE_POL,1436050,"dno (np. rzeki)
 spód
 podeszwa",,,,,,,,
+SENSE_COMMON,1436050,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1436050,"depths (e.g. of despair, the sea)
+bottom (of one's heart)
+the heart (of something)",,,,,,,,
+SENSE_POL,1436050,"głębia (np. rozpaczy, serca, morza)
+serce (czegoś)",,,,,,,,
+SENSE_COMMON,1436050,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1436050,"limit
+end
+extremities
+bounds",,,,,,,,
+SENSE_POL,1436050,"granica
+limit
+koniec",,,,,,,,
+SENSE_COMMON,1436050,,,noun (common) (futsuumeishi),see|-|1438340|2|天井|-|天井[2],finance,,,,
+SENSE_ENG,1436050,"bottom (e.g. of share price)
+bottom price",,,,,,,,
+SENSE_POL,1436050,"najniższy poziom (np. ceny akcji)
+najniższa cena",,,,,,,,
 END,1436050,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1297432,6 +1297453,7 @@ END,1129350,,,,,,,,,
 BEGIN,1619570,,,,,,,,,
 KANJI,1619570,矯めつ眇めつ,,,,,,,,
 KANJI,1619570,ためつ眇めつ,search-only kanji form,,,,,,,
+KANJI,1619570,矯めつすがめつ,search-only kanji form,,,,,,,
 READING,1619570,HIRAGANA,ためつすがめつ,tametsu sugametsu,-,,,,,
 SENSE_COMMON,1619570,,,"adverb (fukushi)
 noun or participle which takes the aux. verb suru
@@ -1404401,21 +1404423,40 @@ BEGIN,1464070,,,,,,,,,
 KANJI,1464070,日頃,,"ichi1
 news1
 nf08",,,,,,
-KANJI,1464070,日ごろ,,,,,,,,
+KANJI,1464070,日ごろ,,spec1,,,,,,
+KANJI,1464070,日比,search-only kanji form,,,,,,,
+KANJI,1464070,日来,search-only kanji form,,,,,,,
 READING,1464070,HIRAGANA,ひごろ,higoro,-,,,"ichi1
 news1
-nf08",,
-SENSE_COMMON,1464070,,,"adverb (fukushi)
+nf08
+spec1",,
+SENSE_COMMON,1464070,,,"nouns which may take the genitive case particle 'no'
+adverb (fukushi)
 noun (common) (futsuumeishi)",,,,,,
-SENSE_ENG,1464070,"usually
-habitually
-always",,,,,,,,
-SENSE_POL,1464070,"zwyczajnie
+SENSE_ENG,1464070,"usual
+normal
+everyday
+habitual
+ordinary
+daily",,,,,,,,
+SENSE_POL,1464070,"zwykły
+zwyczajny
+codzienny
+powszechny
+zwyczajnie
 powszechnie
 zazwyczaj",,,,,,,,
-SENSE_COMMON,1464070,,,"adverb (fukushi)
+SENSE_COMMON,1464070,,,"nouns which may take the genitive case particle 'no'
 noun (common) (futsuumeishi)",,,,,,
-SENSE_ENG,1464070,for a long time,,,,,,,,
+SENSE_ENG,1464070,"long (of time)
+old
+long-standing",,,,,,,,
+SENSE_POL,1464070,"długi (czas)
+stary
+długoletni",,,,,,,,
+SENSE_COMMON,1464070,,,adverb (fukushi),,,,,,
+SENSE_ENG,1464070,"for a long time
+for a while",,,,,,,,
 SENSE_POL,1464070,przez długi czas,,,,,,,,
 END,1464070,,,,,,,,,
 ,,,,,,,,,,
@@ -1704082,9 +1704123,9 @@ END,1746810,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1606030,,,,,,,,,
-KANJI,1606030,夜店,,,,,,,,
-KANJI,1606030,夜見世,rarely used kanji form,"news2
+KANJI,1606030,夜店,,"news2
 nf45",,,,,,
+KANJI,1606030,夜見世,rarely used kanji form,,,,,,,
 READING,1606030,HIRAGANA,よみせ,yomise,-,,,"news2
 nf45",,
 SENSE_COMMON,1606030,,,noun (common) (futsuumeishi),,,,,,
@@ -1969480,12 +1969521,13 @@ END,1181340,,,,,,,,,
 BEGIN,1181900,,,,,,,,,
 KANJI,1181900,黄金色,,,,,,,,
 READING,1181900,HIRAGANA,こがねいろ,koganeiro,-,,,,,
-SENSE_COMMON,1181900,,,"noun (common) (futsuumeishi)
-nouns which may take the genitive case particle 'no'",,,,,,
+SENSE_COMMON,1181900,,,"nouns which may take the genitive case particle 'no'
+noun (common) (futsuumeishi)",,,,,,
 SENSE_ENG,1181900,"golden
 gold-colored
 gold-coloured
-honey-colour",,,,,,,,
+honey-colored
+honey-coloured",,,,,,,,
 SENSE_POL,1181900,"złoty
 złocisty
 w kolorze złota
