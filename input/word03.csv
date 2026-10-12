@@ -1679,10 +1679,10 @@ ciemno czerwony",,DICTIONARY2_SOURCE,,GroupId: 1154630
 sprzedawane po kawałku",,,,"GroupId: 2566030
 Translate: selling individually
 Translate: selling piecemeal"
-200564,WORD_NOUN,,HIRAGANA,,,不可誤,ふかご,,fukago,Papierska nieomylność,,,,"GroupId: 1491410
-Translate: (papal) infallibility"
-200565,WORD_NOUN,,HIRAGANA,,,付加語,ふかご,,fukago,przydawka słowa,,,,"GroupId: 2028460
-Translate: adjunct word"
+200564,WORD_NOUN,,HIRAGANA,,,不可誤,ふかご,,fukago,papieska nieomylność,,DICTIONARY2_SOURCE,,GroupId: 1491410
+200565,WORD_NOUN,,HIRAGANA,,,付加語,ふかご,,fukago,"pomocnicze słowo
+dodatkowe słowo
+przydawka słowa",lingwistyka,DICTIONARY2_SOURCE,,GroupId: 2028460
 200566,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,算盤を弾く,そろばんをはじく,,soroban o hajiku,"liczyć na liczydle
 kalkulować zyski i straty
@@ -5810,10 +5810,8 @@ pudełko z ciasteczkami",,,,"GroupId: 1865190
 Translate: box of cakes"
 201984,WORD_NOUN,,HIRAGANA,,,守役,もりやく,,moriyaku,"pielęgniarka
 niania
-obrońca",,,,"GroupId: 1697470
-Translate: nurse
-Translate: nanny
-Translate: guardian"
+opiekun
+obrońca",,DICTIONARY2_SOURCE,,GroupId: 1697470
 201985,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,指を折る,ゆびをおる,,yubi o oru,liczyć na palcach,,DICTIONARY2_SOURCE,,GroupId: 2776480
 201986,WORD_NOUN,,KATAKANA_HIRAGANA,,,ウバザメ属,ウバザメぞく,,ubazame zoku,Cetorhinus,rodzaj rekinów z rodziny Cetorhinidae,,,"GroupId: 2552090
@@ -12833,11 +12831,10 @@ strażnik",,DICTIONARY2_SOURCE,,GroupId: 1715800
 użalanie się nad sobą",,,,"GroupId: 2593030
 Translate: self-pity"
 204372,WORD_NOUN,,HIRAGANA,,,邪魔っけ,じゃまっけ,,jamakke,"utrapieniec
-niechętny do współpracy osoba
-nieznośna osoba",,,,"GroupId: 1693010
-Translate: nuisance
-Translate: obstructive (person)
-Translate: troublesome (person)"
+niechętna do współpracy osoba
+nieznośna osoba
+osoba utrudniająca życie
+osoba sprawiająca kłopoty",,DICTIONARY2_SOURCE,,GroupId: 1693010
 204373,WORD_EXPRESSION,,HIRAGANA,,,探しに,さがしに,,sagashi ni,w poszukiwaniu,,,,"GroupId: 2083640
 Translate: in search of
 Translate: in order to look for"
@@ -13009,23 +13006,20 @@ oniemiały",,DICTIONARY2_SOURCE,,GroupId: 2829405
 Translate: extortionist that blackmail corporations
 Translate: corporate shakedown artist"
 204415,WORD_NOUN,,HIRAGANA,,,邪魔っ気,じゃまっけ,,jamakke,"utrapieniec
-niechętny do współpracy osoba
-nieznośna osoba",,,,"GroupId: 1693010
-Translate: nuisance
-Translate: obstructive (person)
-Translate: troublesome (person)"
+niechętna do współpracy osoba
+nieznośna osoba
+osoba utrudniająca życie
+osoba sprawiająca kłopoty",,DICTIONARY2_SOURCE,,GroupId: 1693010
 204416,WORD_NOUN,,HIRAGANA_KATAKANA,,,邪魔ッけ,じゃまッけ,,jamakke,"utrapieniec
-niechętny do współpracy osoba
-nieznośna osoba",,,,"GroupId: 1693010
-Translate: nuisance
-Translate: obstructive (person)
-Translate: troublesome (person)"
+niechętna do współpracy osoba
+nieznośna osoba
+osoba utrudniająca życie
+osoba sprawiająca kłopoty",,DICTIONARY2_SOURCE,,GroupId: 1693010
 204417,WORD_NOUN,,HIRAGANA_KATAKANA,,,邪魔ッ気,じゃまッけ,,jamakke,"utrapieniec
-niechętny do współpracy osoba
-nieznośna osoba",,,,"GroupId: 1693010
-Translate: nuisance
-Translate: obstructive (person)
-Translate: troublesome (person)"
+niechętna do współpracy osoba
+nieznośna osoba
+osoba utrudniająca życie
+osoba sprawiająca kłopoty",,DICTIONARY2_SOURCE,,GroupId: 1693010
 204418,"WORD_NOUN
 WORD_ADJECTIVE_NA",,KATAKANA_HIRAGANA,,,オシャレ上手,オシャレじょうず,,oshare jouzu,"bycie dobry w modnym ubieraniu się
 dobry garderobiany",,,,"GroupId: 2840737
@@ -40399,9 +40393,10 @@ falistość",,,,"GroupId: 2830514
 Translate: crimp
 Translate: crinkle
 Translate: waviness"
-213680,WORD_ADJECTIVE_NA,,HIRAGANA,,,相反性,そうはんせい,,souhansei,"obopólny
-wzajemny",,,,"GroupId: 1401280
-Translate: reciprocal"
+213680,WORD_NOUN,,HIRAGANA,,,相反性,そうはんせい,,souhansei,"opozycja
+niezgodność (pomysłów, cech itp.)
+wzajemność
+obopólność",,DICTIONARY2_SOURCE,,GroupId: 1401280
 213681,WORD_ADJECTIVE_NA,,HIRAGANA,,,相反的,そうはんてき,,souhanteki,"obopólny
 wzajemny
 obopólnie
@@ -44546,12 +44541,9 @@ stać się sztywnym (w postawie lub rozmowie)
 stać się formalnym
 stać się ceremonialnym
 stać się niezręcznym (w sytuacji)",,DICTIONARY2_SOURCE,,GroupId: 1847180
-214989,WORD_NOUN,,HIRAGANA,,,御用学者,ごようがくしゃ,,goyou gakusha,"uczony dłużny rządowi
-???
-uczony, który współpracuje z organami rządowymi",,,,"GroupId: 1693990
-Translate: scholar beholden to the government
-Translate: self-serving academic
-Translate: scholar who toadies up to government authorities"
+214989,WORD_NOUN,,HIRAGANA,,,御用学者,ごようがくしゃ,,goyou gakusha,"naukowiec zależny od rządu
+naukowiec dbający wyłącznie o własne interesy
+naukowiec, który podlizuje się władzom rządowym",,DICTIONARY2_SOURCE,,GroupId: 1693990
 214990,WORD_NOUN,,KATAKANA,,,-,サキシマハブ,,sakishimahabu,Protobothrops elegans,pisanie zwykle z użyciem kana; gatunek żmii,DICTIONARY2_SOURCE,,GroupId: 2865539
 214991,WORD_NOUN,,HIRAGANA,,,独身主義,どくしんしゅぎ,,dokushin shugi,"dobrowolna samotność (jako własna zasada)
 samotność z wyboru",,,,"GroupId: 2838061
@@ -51711,8 +51703,7 @@ Translate: Dzungarian horse"
 prawo cywilne",,DICTIONARY2_SOURCE,,GroupId: 1308740
 217333,WORD_NOUN,,HIRAGANA,,,舌虫,したむし,,shitamushi,robak z rodziny wrzęchów (Pentastomida),rzadko używane określenie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2265460
 217334,WORD_NOUN,,HIRAGANA_KATAKANA,,,衝動タービン,しょうどうタービン,,shoudou taabin,turbina impulsowa,,DICTIONARY2_SOURCE,,GroupId: 2227720
-217335,WORD_NOUN,,HIRAGANA,,,忘れ緒,わすれお,,wasure o,"ozdobny pasek z gazy, który zwisa z przodu po lewej stronie kohimo przy zawiązywaniu zapiętej hanpi",,,,"GroupId: 2180250
-Translate: decorative gauze strap that hangs from the front left side of the kohimo when tying closed one's hanpi"
+217335,WORD_NOUN,,HIRAGANA,,,忘れ緒,わすれお,,wasure o,"ozdobny pasek z gazy, który zwisa z przedniej lewej strony kohimo po zawiązaniu hanpi",,DICTIONARY2_SOURCE,,GroupId: 2180250
 217336,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,及びもつかない,およびもつかない,,oyobi mo tsukanai,"daleko poza czyjąś moc
 wcale nie równy
@@ -51826,8 +51817,7 @@ MiscInfo: uk"
 217362,WORD_NOUN,,HIRAGANA,,,最小２乗法,さいしょうにじょうほう,,saishou nijouhou,metoda najmniejszych kwadratów,"matematyka; standardowa metoda przybliżania rozwiązań układów nadokreślonych, tzn. zestawu równań, w którym jest ich więcej niż zmiennych",DICTIONARY2_SOURCE,DUPLICATE 217363,GroupId: 1294060
 217363,WORD_NOUN,,HIRAGANA,,,最小２乗法,さいしょうじじょうほう,,saishou jijouhou,metoda najmniejszych kwadratów,"matematyka; standardowa metoda przybliżania rozwiązań układów nadokreślonych, tzn. zestawu równań, w którym jest ich więcej niż zmiennych",DICTIONARY2_SOURCE,DUPLICATE 217362,GroupId: 1294060
 217364,WORD_NOUN,,KATAKANA,,,-,シタムシ,,shitamushi,robak z rodziny wrzęchów (Pentastomida),rzadko używane określenie; pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2265460
-217365,WORD_NOUN,,HIRAGANA,,,忘緒,わすれお,,wasure o,"ozdobny pasek z gazy, który zwisa z przodu po lewej stronie kohimo przy zawiązywaniu zapiętej hanpi",,,,"GroupId: 2180250
-Translate: decorative gauze strap that hangs from the front left side of the kohimo when tying closed one's hanpi"
+217365,WORD_NOUN,,HIRAGANA,,,忘緒,わすれお,,wasure o,"ozdobny pasek z gazy, który zwisa z przedniej lewej strony kohimo po zawiązaniu hanpi",,DICTIONARY2_SOURCE,,GroupId: 2180250
 217366,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,及びも付かない,およびもつかない,,oyobi mo tsukanai,"daleko poza czyjąś moc
 wcale nie równy
@@ -151138,7 +151128,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-11,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-12,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
@@ -170236,7 +170226,8 @@ kafelek niebędący częścią połączenia",mahjong,DICTIONARY2_SOURCE,,GroupId
 271991,WORD_NOUN,,HIRAGANA,,,上古音,じょうこおん,,joukoon,fonologia starochińska,lingwistyka,DICTIONARY2_SOURCE,DUPLICATE 271990,GroupId: 2854236
 271992,WORD_NOUN,,HIRAGANA,,,近古音,きんこおん,,kinkoon,wczesnonowożytny język chiński,lingwistyka,DICTIONARY2_SOURCE,,GroupId: 2854237
 271993,WORD_NOUN,,HIRAGANA,,,受難日,じゅなんび,,junanbi,Wielki Piątek,chrześcijaństwo,DICTIONARY2_SOURCE,,GroupId: 2854244
-271994,WORD_NOUN,,HIRAGANA,,,膣錠,ちつじょう,,chitsujou,tabletka dopochwowa,medycyna,DICTIONARY2_SOURCE,,GroupId: 2854250
+271994,WORD_NOUN,,HIRAGANA,,,膣錠,ちつじょう,,chitsujou,"tabletka dopochwowa
+czopek dopochwowy",medycyna,DICTIONARY2_SOURCE,,GroupId: 2854250
 271995,WORD_NOUN,,HIRAGANA,,,使用距離,しようきょり,,shiyou kyori,odległość użytkowa (światłowodu),informatyka,DICTIONARY2_SOURCE,,GroupId: 2358930
 271996,WORD_NOUN,,HIRAGANA,,,切りばり法,きりばりほう,,kiribari hou,"metoda a priori
 ???",informatyka,DICTIONARY2_SOURCE,,GroupId: 2368880
