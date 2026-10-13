@@ -1,4 +1,4 @@
-HEADER,1.10,2026-10-12,,,,,,,,
+HEADER,1.10,2026-10-13,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -314126,8 +314126,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-12,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-12,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-13,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-13,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -419035,6 +419035,7 @@ END,1446160,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1572490,,,,,,,,,
 KANJI,1572490,襦袢,ateji (phonetic) reading,,,,,,,
+KANJI,1572490,襦絆,search-only kanji form,,,,,,,
 READING,1572490,HIRAGANA,じゅばん,juban,-,,,,,
 READING,1572490,KATAKANA,ジバン,jiban,-,,,,,
 READING,1572490,KATAKANA,ジュバン,juban,-,,,,,
@@ -427079,14 +427080,11 @@ news1
 nf18",,
 READING,1203850,KATAKANA,ガイジン,gaijin,-,,search-only kana form,,,
 SENSE_COMMON,1203850,,,noun (common) (futsuumeishi),see|-|1203650|-|外国人|-|外国人,,sensitive,,,
-SENSE_ENG,1203850,"foreigner (esp. one of European ancestry)
-gaijin
-whitey",,,,,,,,
-SENSE_POL,1203850,"cudzoziemiec (szczególnie z europejskich przodków)
-gaijin
+SENSE_ENG,1203850,"foreigner (esp. of non-East Asian descent)
+gaijin",,,,,,,,
+SENSE_POL,1203850,"cudzoziemiec (zwłaszcza pochodzenia innego niż wschodnioazjatyckie)
 obcy
-biały człowiek
-białas",,,,,,,,
+gaijin",,,,,,,,
 SENSE_COMMON,1203850,,,noun (common) (futsuumeishi),,,archaic,,,
 SENSE_ENG,1203850,outsider,orig. meaning,,,,,,,
 SENSE_POL,1203850,"outsider
@@ -452751,9 +452749,10 @@ BEGIN,1833220,,,,,,,,,
 KANJI,1833220,霊迎え,,,,,,,,
 KANJI,1833220,魂迎え,,,,,,,,
 READING,1833220,HIRAGANA,たまむかえ,tama mukae,-,,,,,
-SENSE_COMMON,1833220,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1833220,welcoming the spirits of the dead,,,,,,,,
-SENSE_POL,1833220,powitanie duchów zmarłych,,,,,,,,
+SENSE_COMMON,1833220,,,noun (common) (futsuumeishi),"see|-|1002690|1|お盆|-|お盆[1]
+see|-|1608900|-|霊送り|-|霊送り",,,,,
+SENSE_ENG,1833220,welcoming the spirits of one's ancestors on the first day of the Bon Festival (by lighting small fires),,,,,,,,
+SENSE_POL,1833220,powitanie duchów przodków w pierwszy dzień Święta Bon,poprzez rozpalanie małych ognisk,,,,,,,
 END,1833220,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -640197,34 +640196,34 @@ END,1635330,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1005870,,,,,,,,,
-KANJI,1005870,凝乎と,rarely used kanji form,,,,,,,
+KANJI,1005870,凝と,search-only kanji form,,,,,,,
+KANJI,1005870,凝乎と,search-only kanji form,,,,,,,
 READING,1005870,HIRAGANA,じっと,jitto,-,,,ichi1,,
-READING,1005870,HIRAGANA_KATAKANA,じーっと,jiitto,NO_KANJI,,,,,
-READING,1005870,HIRAGANA_KATAKANA,じーと,jiito,NO_KANJI,,,,,
-READING,1005870,HIRAGANA,じいっと,jiitto,-,,,,,
+READING,1005870,HIRAGANA_KATAKANA,じーっと,jiitto,-,,,,,
+READING,1005870,HIRAGANA_KATAKANA,じーと,jiito,-,,search-only kana form,,,
+READING,1005870,HIRAGANA,じいっと,jiitto,-,,search-only kana form,,,
+INFO_ENG,1005870,じーっと is more emphatic|note,,,,,,,,
+INFO_POL,1005870,じーっと jest bardziej empatyczne|note,,,,,,,,
 SENSE_COMMON,1005870,,,"adverb (fukushi)
-noun or participle which takes the aux. verb suru",,,"onomatopoeic or mimetic word
-word usually written using kana alone",,,
+noun or participle which takes the aux. verb suru",,,onomatopoeic or mimetic word,,,
 SENSE_ENG,1005870,"motionlessly (e.g. stand, wait)
-(be) still",じーっと is more emphatic,,,,,,,
+(be) still",,,,,,,,
 SENSE_POL,1005870,"bez ruchu (np. stać, czekać)
 (być) nieruchomo
-trwać (w bezruchu)",じーっと jest bardziej empatyczne,,,,,,,
+trwać (w bezruchu)",,,,,,,,
 SENSE_COMMON,1005870,,,"adverb (fukushi)
-noun or participle which takes the aux. verb suru",,,word usually written using kana alone,,,
+noun or participle which takes the aux. verb suru",,,onomatopoeic or mimetic word,,,
 SENSE_ENG,1005870,"fixedly (e.g. gaze, stare)
 intently (e.g. listen, think)",,,,,,,,
 SENSE_POL,1005870,"nieruchomo (np. patrzeć, gapić się)
 uważnie (np. słuchać, myśleć)",,,,,,,,
-SENSE_COMMON,1005870,,,"adverb (fukushi)
-noun or participle which takes the aux. verb suru",,,word usually written using kana alone,,,
-SENSE_ENG,1005870,"patiently (endure)
+SENSE_COMMON,1005870,,,adverb (fukushi),,,onomatopoeic or mimetic word,,,
+SENSE_ENG,1005870,"patiently (e.g. endure)
 stoically",,,,,,,,
-SENSE_POL,1005870,"cierpliwie (wytrzymywać)
+SENSE_POL,1005870,"cierpliwie (np. wytrzymywać)
 wytrwale (znosić cierpienie, trud)
 stoicko",,,,,,,,
-SENSE_COMMON,1005870,,,"adverb (fukushi)
-noun or participle which takes the aux. verb suru",,,word usually written using kana alone,,,
+SENSE_COMMON,1005870,,,adverb (fukushi),,,onomatopoeic or mimetic word,,,
 SENSE_ENG,1005870,"firmly (e.g. hold)
 restrained",,,,,,,,
 SENSE_POL,1005870,"powściągliwy
@@ -985748,14 +985747,10 @@ BEGIN,1682580,,,,,,,,,
 KANJI,1682580,金ダライ,,,,,,,,
 KANJI,1682580,金だらい,,,,,,,,
 KANJI,1682580,金盥,,,,,,,,
-KANJI,1682580,金タライ,,,,,,,,
-KANJI,1682580,金たらい,,,,,,,,
-READING,1682580,HIRAGANA,かなだらい,kana darai,-,"金ダライ
-金だらい
-金盥",,,,
-READING,1682580,HIRAGANA,かなたらい,kana tarai,-,"金盥
-金タライ
-金たらい",,,,
+KANJI,1682580,金タライ,search-only kanji form,,,,,,,
+KANJI,1682580,金たらい,search-only kanji form,,,,,,,
+READING,1682580,HIRAGANA,かなだらい,kana darai,-,,,,,
+READING,1682580,HIRAGANA,かなたらい,kana tarai,-,金盥,,,,
 SENSE_COMMON,1682580,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1682580,metal basin,,,,,,,,
 SENSE_POL,1682580,metalowa miska,,,,,,,,
@@ -1067878,12 +1067873,12 @@ READING,1191690,HIRAGANA,とつぐ,totsugu,-,,,"ichi1
 news2
 nf43",,
 SENSE_COMMON,1191690,,,"Godan verb with 'gu' ending
-intransitive verb",,,,,,
+intransitive verb",,,dated term,,,
 SENSE_ENG,1191690,"to marry (of a woman)
-to become a bride
+to get married (to)
 to marry into (a family)",,,,,,,,
 SENSE_POL,1191690,"poślubić (kobietę)
-zostać panną młodą
+wziąć ślub z
 wychodzić za mąż
 wżenić się (w rodzinę)",,,,,,,,
 SENSE_COMMON,1191690,,,"Godan verb with 'gu' ending
@@ -1278941,11 +1278936,12 @@ END,1763370,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2825918,,,,,,,,,
 KANJI,2825918,精霊送り,,,,,,,,
+KANJI,2825918,精霊おくり,search-only kanji form,,,,,,,
 READING,2825918,HIRAGANA,しょうりょうおくり,shouryou okuri,-,,,,,
-SENSE_COMMON,2825918,,,noun (common) (futsuumeishi),see|-|1608900|-|魂送り|-|魂送り,,,,,
-SENSE_ENG,2825918,sending off the spirits of the dead,,,,,,,,
-SENSE_POL,2825918,"pożegnanie duchów zmarłych
-odesłanie duchów zmarłych",,,,,,,,
+SENSE_COMMON,2825918,,,noun (common) (futsuumeishi),"see|-|1002690|1|お盆|-|お盆[1]
+see|-|2873111|-|精霊迎え|-|精霊迎え",,,,,
+SENSE_ENG,2825918,sending off the spirits of one's ancestors on the last day of the Bon Festival (by lighting small fires),,,,,,,,
+SENSE_POL,2825918,pożegnanie duchów przodków w ostatnim dniu Święta Bon,poprzez rozpalanie małych ognisk,,,,,,,
 END,2825918,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1336323,7 +1336319,9 @@ END,1652260,,,,,,,,,
 BEGIN,1334950,,,,,,,,,
 KANJI,1334950,十二支,,,,,,,,
 READING,1334950,HIRAGANA,じゅうにし,juu ni shi,-,,,,,
-SENSE_COMMON,1334950,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1334950,,,noun (common) (futsuumeishi),"see|-|1307780|1|子|ね|子(ね)[1]
+see|-|1576460|1|卯|-|卯[1]
+see|-|1457270|1|寅|-|寅[1]",,,,,
 SENSE_ENG,1334950,12 signs of the Chinese zodiac,,,,,,,,
 SENSE_POL,1334950,12 znaków chińskiego zodiaku,,,,,,,,
 END,1334950,,,,,,,,,
@@ -1732540,8 +1732538,18 @@ END,2026520,,,,,,,,,
 BEGIN,2029130,,,,,,,,,
 READING,2029130,HIRAGANA,ぞ,zo,-,,,spec1,,
 SENSE_COMMON,2029130,,,particle,,,male term or language,,,
-SENSE_ENG,2029130,adds force or indicates command,used at sentence end,,,,,,,
-SENSE_POL,2029130,dodaję siłę (moc) zdaniu lub wskazuje polecenie,używane na końcu zdania,,,,,,,
+SENSE_ENG,2029130,"adds force to a statement, decision or conclusion
+indicates command",at sentence end,,,,,,,
+SENSE_POL,2029130,"nadaje większą siłę wyrazu stwierdzeniu, decyzji lub wnioskowi
+wskazuje na polecenie",na końcu zdania,,,,,,,
+SENSE_COMMON,2029130,,,particle,,,,,,
+SENSE_ENG,2029130,"(strongly) emphasizes the previous word
+adds focus",,,,,,,,
+SENSE_POL,2029130,"(mocno) podkreśla poprzednie słowo
+dodaje skupienia",,,,,,,,
+SENSE_COMMON,2029130,,,particle,see|-|2028970|4|-|か|か[4],,dated term,,,
+SENSE_ENG,2029130,"some- (e.g. something, someone)",after an interrogative,,,,,,,
+SENSE_POL,2029130,jakiś-,"np. coś, ktoś, po pytaniu",,,,,,,
 END,2029130,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2235106,10 +2235114,10 @@ KANJI,2873139,チン騎士,,,,,,,,
 READING,2873139,KATAKANA_HIRAGANA,チンきし,chin kishi,-,,,,,
 SENSE_COMMON,2873139,,,noun (common) (futsuumeishi),,,"Internet slang
 derogatory",,,
-SENSE_ENG,2873139,"white knight
-man who defends women online in hopes of sexual rewards|expl",,,,,,,,
+SENSE_ENG,2873139,"man who defends women online in hopes of sexual rewards
+white knight",,,,,,,,
 SENSE_POL,2873139,"biały rycerz
-mężczyzna, który broni kobiet w sieci w nadziei na korzyści seksualne|expl",,,,,,,,
+mężczyzna, który broni kobiet w sieci w nadziei na korzyści seksualne",,,,,,,,
 END,2873139,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
