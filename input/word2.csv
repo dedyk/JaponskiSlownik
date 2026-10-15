@@ -1,4 +1,4 @@
-HEADER,1.10,2026-10-14,,,,,,,,
+HEADER,1.10,2026-10-15,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -77117,8 +77117,8 @@ BEGIN,1381290,,,,,,,,,
 KANJI,1381290,請け合う,,"news2
 nf41",,,,,,
 KANJI,1381290,受け合う,,,,,,,,
-KANJI,1381290,請合う,,,,,,,,
-KANJI,1381290,受合う,,,,,,,,
+KANJI,1381290,請合う,search-only kanji form,,,,,,,
+KANJI,1381290,受合う,search-only kanji form,,,,,,,
 READING,1381290,HIRAGANA,うけあう,uke au,-,,,"news2
 nf41",,
 SENSE_COMMON,1381290,,,"Godan verb with 'u' ending
@@ -235178,23 +235178,19 @@ END,1597350,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1590710,,,,,,,,,
-KANJI,1590710,歌留多,ateji (phonetic) reading,ichi1,,,,,,
-KANJI,1590710,骨牌,,,,,,,,
+KANJI,1590710,歌留多,"ateji (phonetic) reading
+rarely used kanji form",,,,,,,
+KANJI,1590710,骨牌,rarely used kanji form,,,,,,,
 KANJI,1590710,加留多,"ateji (phonetic) reading
 rarely used kanji form",,,,,,,
-KANJI,1590710,嘉留太,"ateji (phonetic) reading
-search-only kanji form",,,,,,,
-KANJI,1590710,軽板,"ateji (phonetic) reading
-search-only kanji form",,,,,,,
-KANJI,1590710,軽多,"ateji (phonetic) reading
-search-only kanji form",,,,,,,
-KANJI,1590710,賀留多,"ateji (phonetic) reading
-search-only kanji form",,,,,,,
-KANJI,1590710,哥留多,"ateji (phonetic) reading
-search-only kanji form",,,,,,,
+KANJI,1590710,嘉留太,search-only kanji form,,,,,,,
+KANJI,1590710,軽板,search-only kanji form,,,,,,,
+KANJI,1590710,軽多,search-only kanji form,,,,,,,
+KANJI,1590710,賀留多,search-only kanji form,,,,,,,
+KANJI,1590710,哥留多,search-only kanji form,,,,,,,
 KANJI,1590710,かる多,search-only kanji form,,,,,,,
+READING,1590710,HIRAGANA,かるた,karuta,NO_KANJI,,,spec1,,
 READING,1590710,KATAKANA,カルタ,karuta,-,,,ichi1,,
-READING,1590710,HIRAGANA,かるた,karuta,NO_KANJI,,,,,
 COMMON,1590710,-|-|por|carta,,,,,,,,
 SENSE_COMMON,1590710,,,noun (common) (futsuumeishi),,,word usually written using kana alone,,,
 SENSE_ENG,1590710,"karuta
@@ -314129,8 +314125,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-14,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-14,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-15,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-15,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -400086,8 +400082,8 @@ END,1664490,,,,,,,,,
 BEGIN,2081890,,,,,,,,,
 KANJI,2081890,請け合い,,,,,,,,
 KANJI,2081890,受け合い,,,,,,,,
-KANJI,2081890,請合い,,,,,,,,
-KANJI,2081890,受合い,,,,,,,,
+KANJI,2081890,請合い,search-only kanji form,,,,,,,
+KANJI,2081890,受合い,search-only kanji form,,,,,,,
 READING,2081890,HIRAGANA,うけあい,uke ai,-,,,,,
 SENSE_COMMON,2081890,,,noun (common) (futsuumeishi),see|-|1381290|2|請け合う|-|請け合う[2],,,,,
 SENSE_ENG,2081890,"assurance
@@ -551138,8 +551134,8 @@ END,2729170,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2831062,,,,,,,,,
-READING,2831062,HIRAGANA,てる,teru,-,,,,,
-READING,2831062,HIRAGANA,でる,deru,-,,,,,
+READING,2831062,HIRAGANA,てる,teru,-,,,spec1,,
+READING,2831062,HIRAGANA,でる,deru,-,,,spec1,,
 SENSE_COMMON,2831062,,,"expressions (phrases, clauses, etc.)
 auxiliary verb
 Ichidan verb",see|-|1577980|3|-|いる|いる[3],,colloquial,,,
@@ -1039748,14 +1039744,14 @@ nf15",,
 SENSE_COMMON,1159130,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 transitive verb
-intransitive verb",,,,,,
+intransitive verb",see|-|2862829|-|遺言|-|遺言,,,,,
 SENSE_ENG,1159130,"will
 testament
 one's dying wish
-one's last words",,,,,,,,
+one's last words",read いごん in legal contexts,,,,,,,
 SENSE_POL,1159130,"testament
 czyjeś umierające życzenie
-czyjeś ostatnie słowa",,,,,,,,
+czyjeś ostatnie słowa",czytane いごん w kontekście prawnym,,,,,,,
 END,1159130,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1334435,12 +1334431,14 @@ KANJI,1325440,主査,,"news1
 nf20",,,,,,
 READING,1325440,HIRAGANA,しゅさ,shusa,-,,,"news1
 nf20",,
-SENSE_COMMON,1325440,,,"noun (common) (futsuumeishi)
-noun or participle which takes the aux. verb suru",,,,,,
-SENSE_ENG,1325440,chief examiner or investigator,,,,,,,,
+SENSE_COMMON,1325440,,,noun (common) (futsuumeishi),see|-|2873148|-|副査|-|副査,,,,,
+SENSE_ENG,1325440,"chief examiner
+chief investigator
+first reader",,,,,,,,
 SENSE_POL,1325440,"szef egzaminatorów
 szef detektywów
-szef śledczych",,,,,,,,
+szef śledczych
+pierwszy recenzent",,,,,,,,
 END,1325440,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1380025,8 +1380023,10 @@ BEGIN,1222090,,,,,,,,,
 KANJI,1222090,気胸,,,,,,,,
 READING,1222090,HIRAGANA,ききょう,kikyou,-,,,,,
 SENSE_COMMON,1222090,,,noun (common) (futsuumeishi),,medicine,,,,
-SENSE_ENG,1222090,pneumothorax,,,,,,,,
-SENSE_POL,1222090,odma opłucnowa,,,,,,,,
+SENSE_ENG,1222090,"pneumothorax
+collapsed lung",,,,,,,,
+SENSE_POL,1222090,"odma płucna
+odma opłucnowa",,,,,,,,
 SENSE_COMMON,1222090,,,noun (common) (futsuumeishi),see|-|2872176|-|人工気胸|-|人工気胸,medicine,abbreviation,,,
 SENSE_ENG,1222090,"artificial pneumothorax
 collapse therapy (for tuberculosis)",,,,,,,,
@@ -1654924,7 +1654924,6 @@ END,1594685,,,,,,,,,
 BEGIN,1594690,,,,,,,,,
 KANJI,1594690,首位,,"news1
 nf03",,,,,,
-KANJI,1594690,主位,,,,,,,,
 READING,1594690,HIRAGANA,しゅい,shui,-,,,"news1
 nf03",,
 SENSE_COMMON,1594690,,,"noun (common) (futsuumeishi)
@@ -1886614,8 +1886613,8 @@ END,1717670,,,,,,,,,
 BEGIN,1762340,,,,,,,,,
 KANJI,1762340,如才ない,,,,,,,,
 KANJI,1762340,如才無い,,,,,,,,
-KANJI,1762340,如在ない,,,,,,,,
-KANJI,1762340,如在無い,,,,,,,,
+KANJI,1762340,如在無い,rarely used kanji form,,,,,,,
+KANJI,1762340,如在ない,search-only kanji form,,,,,,,
 READING,1762340,HIRAGANA,じょさいない,josainai,-,,,,,
 SENSE_COMMON,1762340,,,adjective (keiyoushi),,,,,,
 SENSE_ENG,1762340,"tactful
@@ -2043911,11 +2043910,14 @@ KANJI,2012470,塗りたくる,,,,,,,,
 READING,2012470,HIRAGANA,ぬりたくる,nuri takuru,-,,,,,
 SENSE_COMMON,2012470,,,"Godan verb with 'ru' ending
 transitive verb",,,,,,
-SENSE_ENG,2012470,"to bedaub (with paint)
+SENSE_ENG,2012470,"to smear all over
+to slather on
 to besmear
 to paint heavily
-to spread thickly",,,,,,,,
-SENSE_POL,2012470,"pomazać (farbą)
+to spread thickly
+to bedaub (with paint)",,,,,,,,
+SENSE_POL,2012470,"rozmazywać na całej powierzchni
+pomazać (farbą)
 zabazgrać
 mocno pomalować
 nakładać grubą warstwą",,,,,,,,
