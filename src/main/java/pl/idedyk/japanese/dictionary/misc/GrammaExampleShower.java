@@ -228,8 +228,10 @@ public class GrammaExampleShower {
 		System.out.println();
 		
 		// alternatywa
+		/*
 		if (currentExampleSingleResult.getAlternative() != null) {
 			showExampleSingleResult(currentExampleSingleResult.getAlternative(), level);
-		}		
+		}
+		*/		
 	}
 }
