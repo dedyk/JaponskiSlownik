@@ -1,4 +1,4 @@
-HEADER,1.10,2026-10-18,,,,,,,,
+HEADER,1.10,2026-10-19,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -92060,10 +92060,10 @@ END,2389800,,,,,,,,,
 BEGIN,2032500,,,,,,,,,
 KANJI,2032500,兵隊勘定,,,,,,,,
 READING,2032500,HIRAGANA,へいたいかんじょう,heitai kanjou,-,,,,,
-SENSE_COMMON,2032500,,,noun (common) (futsuumeishi),,,yojijukugo,,,
-SENSE_ENG,2032500,"Dutch treat
-going Dutch",,,,,,,,
-SENSE_POL,2032500,"sytuacja, w której za obiad w restauracji płacą wszyscy uczestnicy",,,,,,,,
+SENSE_COMMON,2032500,,,noun (common) (futsuumeishi),see|-|1606840|1|割り勘|-|割り勘[1],,"yojijukugo
+rare term",,,
+SENSE_ENG,2032500,evenly splitting the bill,,,,,,,,
+SENSE_POL,2032500,równy podział rachunku,,,,,,,,
 END,2032500,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -314126,8 +314126,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-18,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-18,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-19,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-19,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -917669,12 +917669,9 @@ KANJI,1378780,生ビール,,"news2
 nf27",,,,,,
 READING,1378780,HIRAGANA_KATAKANA,なまビール,nama biiru,-,,,"news2
 nf27",,
-SENSE_COMMON,1378780,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1378780,"unpasteurized beer
-draft beer
-draught beer",,,,,,,,
-SENSE_POL,1378780,"niepasteryzowane piwo
-piwo beczkowe",,,,,,,,
+SENSE_COMMON,1378780,,,noun (common) (futsuumeishi),see|-|1088820|-|-|ドラフトビール|ドラフトビール,,,,,
+SENSE_ENG,1378780,unpasteurized beer,"often (mis)translated as ""draft beer""",,,,,,,
+SENSE_POL,1378780,niepasteryzowane piwo,często błędnie tłumaczone jako 'piwo z beczki',,,,,,,
 END,1378780,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1112884,15 +1112881,29 @@ nf06",,
 SENSE_COMMON,1179830,,,"Ichidan verb
 intransitive verb",,,,,,
 SENSE_ENG,1179830,"to respond
-to satisfy
-to accept
-to comply with
-to apply for",,,,,,,,
+to answer
+to reply",,,,,,,,
 SENSE_POL,1179830,"odpowiadać
-akceptować
-przyjmować
-zgadzać się
-stosować się do",,,,,,,,
+odpowiedzieć
+udzielać odpowiedzi
+odpisywać",,,,,,,,
+SENSE_COMMON,1179830,,,"Ichidan verb
+intransitive verb",,,,,,
+SENSE_ENG,1179830,"to accept (an invitation, offer, etc.)
+to comply with (a request, etc.)
+to meet (a demand, etc.)
+to apply (in response to recruitment)",,,,,,,,
+SENSE_POL,1179830,"przyjąć (zaproszenie, ofertę itp.)
+spełnić (prośbę itp.)
+zaspokoić (żądanie itp.)
+zgłosić się (w odpowiedzi na ogłoszenie o rekrutacji)",,,,,,,,
+SENSE_COMMON,1179830,,,"Ichidan verb
+intransitive verb",,,,,,
+SENSE_ENG,1179830,"to suit
+to match
+to be appropriate to (the circumstances, one's abilities, etc.)",,,,,,,,
+SENSE_POL,1179830,"pasować
+być odpowiednim do (okoliczności, własnych możliwości itp.)",,,,,,,,
 END,1179830,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1363654,7 +1363665,7 @@ READING,1609380,HIRAGANA,おうずる,ou zuru,-,,,"ichi1
 news2
 nf26",,
 SENSE_COMMON,1609380,,,"Ichidan verb - zuru verb (alternative form of -jiru verbs)
-intransitive verb",see|-|1179830|-|応じる|-|応じる,,,,,
+intransitive verb",see|-|1179830|1|応じる|-|応じる[1],,,,,
 SENSE_ENG,1609380,"to answer
 to respond
 to meet",,,,,,,,
@@ -1425354,7 +1425365,7 @@ BEGIN,2639150,,,,,,,,,
 READING,2639150,KATAKANA,タコライス,tako raisu,-,,,,,
 READING,2639150,KATAKANA,タコ・ライス,tako raisu,-,,,,,
 COMMON,2639150,-|y|eng|,,,,,,,,
-SENSE_COMMON,2639150,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,2639150,,,noun (common) (futsuumeishi),,"food, cooking",,,,
 SENSE_ENG,2639150,"taco rice
 Okinawan rice dish topped with taco filling (seasoned mince, salsa sauce, lettuce, etc.)|expl",,,,,,,,
 SENSE_POL,2639150,"tacos z ryżem
@@ -1440383,8 +1440394,8 @@ KANJI,2115170,割り勘負け,,,,,,,,
 KANJI,2115170,割勘負け,,,,,,,,
 READING,2115170,HIRAGANA,わりかんまけ,wari kanmake,-,,,,,
 SENSE_COMMON,2115170,,,noun (common) (futsuumeishi),see|-|2115160|-|割り勘勝ち|-|割り勘勝ち,,slang,,,
-SENSE_ENG,2115170,"""""""loser"""" of a meal paid for by dutch treat (i.e. the person who eats the least)""",,,,,,,,
-SENSE_POL,2115170,"przegrany' w sytuacji, w której za obiad w restauracji płacą wszyscy uczestnicy","np. osoba, która zjadła najmniej",,,,,,,
+SENSE_ENG,2115170,"""""""loser"""" of a meal paid by splitting the bill (i.e. the person who ate the least)""",,,,,,,,
+SENSE_POL,2115170,"przegrany w sytuacji, w której za obiad w restauracji wszyscy uczestnicy płacą po równo, a ta osoba zjadła najmniej",,,,,,,,
 END,2115170,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1446943,9 +1446954,10 @@ BEGIN,2537110,,,,,,,,,
 READING,2537110,KATAKANA,ダッチアカウント,dacchi akaunto,-,,,,,
 READING,2537110,KATAKANA,ダッチ・アカウント,dacchi akaunto,-,,,,,
 COMMON,2537110,-|y|eng|Dutch account,,,,,,,,
-SENSE_COMMON,2537110,,,noun (common) (futsuumeishi),see|-|1606840|-|割り勘|-|割り勘,,,,,
-SENSE_ENG,2537110,splitting the bill,,,,,,,,
-SENSE_POL,2537110,dzielenie rachunku,,,,,,,,
+SENSE_COMMON,2537110,,,noun (common) (futsuumeishi),see|-|1606840|1|割り勘|-|割り勘[1],,rare term,,,
+SENSE_ENG,2537110,"splitting the bill (usu. evenly)
+splitting the check",,,,,,,,
+SENSE_POL,2537110,dzielenie rachunku,zwykle po równo,,,,,,,
 END,2537110,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1584076,9 +1584088,9 @@ END,2152410,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2533350,,,,,,,,,
 KANJI,2533350,埒もない,,,,,,,,
-KANJI,2533350,埒も無い,,,,,,,,
-KANJI,2533350,埓もない,,,,,,,,
-KANJI,2533350,埓も無い,,,,,,,,
+KANJI,2533350,埓もない,rarely used kanji form,,,,,,,
+KANJI,2533350,埒も無い,search-only kanji form,,,,,,,
+KANJI,2533350,埓も無い,search-only kanji form,,,,,,,
 READING,2533350,HIRAGANA,らちもない,rachi mo nai,-,,,,,
 READING,2533350,HIRAGANA,らっちもない,racchi mo nai,-,,out-dated or obsolete kana usage,,,
 SENSE_COMMON,2533350,,,"expressions (phrases, clauses, etc.)
@@ -1667788,12 +1667800,14 @@ READING,1606840,HIRAGANA,わりかん,wari kan,-,,,"news2
 nf41
 spec2",,
 READING,1606840,KATAKANA,ワリカン,wari kan,NO_KANJI,,,,,
-SENSE_COMMON,1606840,,,noun (common) (futsuumeishi),see|-|1207850|-|割り前勘定|-|割り前勘定,,abbreviation,,,
-SENSE_ENG,1606840,"splitting the cost
-splitting the bill
-Dutch treat",,,,,,,,
-SENSE_POL,1606840,"dzielenie kosztów
-sytuacja, w której za obiad w restauracji płacą wszyscy uczestnicy",,,,,,,,
+SENSE_COMMON,1606840,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1606840,"splitting the bill (usu. evenly)
+splitting the check",,,,,,,,
+SENSE_POL,1606840,dzielenie rachunku,zwykle po równo,,,,,,,
+SENSE_COMMON,1606840,,,noun (common) (futsuumeishi),,,rare term,,,
+SENSE_ENG,1606840,"paying one's own expenses
+going Dutch",,,,,,,,
+SENSE_POL,1606840,pokrywanie własnych wydatków,,,,,,,,
 END,1606840,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2066968,8 +2066982,8 @@ KANJI,2115160,割り勘勝ち,,,,,,,,
 KANJI,2115160,割勘勝ち,,,,,,,,
 READING,2115160,HIRAGANA,わりかんがち,wari kangachi,-,,,,,
 SENSE_COMMON,2115160,,,noun (common) (futsuumeishi),see|-|2115170|-|割り勘負け|-|割り勘負け,,slang,,,
-SENSE_ENG,2115160,"""""""winner"""" of a meal paid for by dutch treat (i.e. the person who eats the most)""",,,,,,,,
-SENSE_POL,2115160,"zwycięzca w sytuacji, w której za obiad w restauracji płacą wszyscy uczestnicy","np. osoba, która zjadła najwięcej",,,,,,,
+SENSE_ENG,2115160,"""""""winner"""" of a meal paid for by splitting the bill (i.e. the person who ate the most)""",,,,,,,,
+SENSE_POL,2115160,"zwycięzca w sytuacji, w której za obiad w restauracji wszyscy uczestnicy płacą po równo, a ta osoba zjadłą najwięcej",,,,,,,,
 END,2115160,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2070741,6 +2070755,7 @@ END,2835181,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1833830,,,,,,,,,
 KANJI,1833830,餡蜜,,,,,,,,
+KANJI,1833830,あん蜜,search-only kanji form,,,,,,,
 READING,1833830,HIRAGANA,あんみつ,anmitsu,-,,,,,
 SENSE_COMMON,1833830,,,noun (common) (futsuumeishi),,"food, cooking","word usually written using kana alone
 abbreviation",,,
@@ -2147763,13 +2147778,10 @@ BEGIN,1207850,,,,,,,,,
 KANJI,1207850,割前勘定,,,,,,,,
 KANJI,1207850,割り前勘定,,,,,,,,
 READING,1207850,HIRAGANA,わりまえかんじょう,wari mae kanjou,-,,,,,
-SENSE_COMMON,1207850,,,noun (common) (futsuumeishi),see|-|1606840|-|割り勘|-|割り勘,,rare term,,,
-SENSE_ENG,1207850,"each paying for his own account
-sharing the expenses
-Dutch treat",,,,,,,,
-SENSE_POL,1207850,"każdy płaci za swoje konto
-podział wydatków
-sytuacja, w której za obiad w restauracji płacą wszyscy uczestnicy",,,,,,,,
+SENSE_COMMON,1207850,,,noun (common) (futsuumeishi),see|-|1606840|1|割り勘|-|割り勘[1],,rare term,,,
+SENSE_ENG,1207850,"splitting the bill (usu. evenly)
+splitting the check",,,,,,,,
+SENSE_POL,1207850,dzielenie rachunku,zwykle po równo,,,,,,,
 END,1207850,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2175114,11 +2175126,10 @@ END,2180590,,,,,,,,,
 BEGIN,1088820,,,,,,,,,
 READING,1088820,KATAKANA,ドラフトビール,dorafuto biiru,-,,,,,
 READING,1088820,KATAKANA,ドラフト・ビール,dorafuto biiru,-,,,,,
-SENSE_COMMON,1088820,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1088820,"draft beer
-draught beer",,,,,,,,
-SENSE_POL,1088820,"piwo z beczki
-piwo beczkowe","ang: draft beer, draught beer",,,,,,,
+COMMON,1088820,-|-|eng|draft beer,,,,,,,,
+SENSE_COMMON,1088820,,,noun (common) (futsuumeishi),see|-|1378780|-|生ビール|-|生ビール,,,,,
+SENSE_ENG,1088820,unpasteurized beer,,,,,,,,
+SENSE_POL,1088820,niepasteryzowane piwo,,,,,,,,
 END,1088820,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
