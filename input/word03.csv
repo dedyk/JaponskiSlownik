@@ -9070,8 +9070,7 @@ farbiarnia",,,,"GroupId: 1843840
 Translate: dyer
 Translate: dye house"
 203097,"WORD_ADJECTIVE_NO
-WORD_NOUN",,HIRAGANA,,,珪長質,けいちょうしつ,,keichoushitsu,felsik,geologia,,,"GroupId: 2697850
-Translate: felsic"
+WORD_NOUN",,HIRAGANA,,,珪長質,けいちょうしつ,,keichoushitsu,felsik,,DICTIONARY2_SOURCE,,GroupId: 2697850
 203098,WORD_NOUN,,HIRAGANA,,,子宮旁結合織,しきゅうぼうけつごうしき,,shikyuubouketsugoushiki,przymacicze,anatomia,,,"GroupId: 2078740
 Translate: parametrium"
 203099,WORD_NOUN,,HIRAGANA,,,全体集合,ぜんたいしゅうごう,,zentai shuugou,uniwersalny zbiór,matematyka,,,"GroupId: 1824130
@@ -27748,12 +27747,9 @@ Translate: going into"
 Translate: federal district (e.g. in India)"
 209351,WORD_NOUN,,HIRAGANA,,,市轄区,しかつく,,shikatsuku,dystrykt,szczególnie w Chinach kontynentalnych i na Tajwanie,,,"GroupId: 2843034
 Translate: district (esp. in mainland China and Taiwan)"
-209352,WORD_NOUN,,HIRAGANA,,,地域冷暖房,ちいきれいだんぼう,,chiiki reidanbou,"regionalna klimatyzacja
-klimatyzacja społeczna
-miejskie ogrzewanie i chłodzenie",,,,"GroupId: 1763730
-Translate: regional air-conditioning
-Translate: community air-conditioning
-Translate: district heating and cooling"
+209352,WORD_NOUN,,HIRAGANA,,,地域冷暖房,ちいきれいだんぼう,,chiiki reidanbou,"klimatyzacja strefowa
+klimatyzacja wspólnotowa
+centralne ogrzewanie i chłodzenie",,DICTIONARY2_SOURCE,,GroupId: 1763730
 209353,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,国境を侵す,こっきょうをおかす,,kokkyou o okasu,"naruszać granicę
 najechać przygraniczną dzielnicę",,,,"GroupId: 1876850
@@ -53874,12 +53870,9 @@ sygnał dzwonka",,DICTIONARY2_SOURCE,,GroupId: 2719750
 Translate: consumering"
 218105,WORD_NOUN,,KATAKANA_HIRAGANA,,,ヘルクレス座,ヘルクレスざ,,herukuresu za,"Gwiazdozbiór Herkulesa
 Herkules","wyrazisty gwiazdozbiór nieba północnego, piąty co do wielkości, znany już w starożytności",DICTIONARY2_SOURCE,,GroupId: 2629960
-218106,WORD_NOUN,,HIRAGANA,,,地蔵顔,じぞうがお,,jizougao,"delikatna i okrągła twarz
+218106,WORD_NOUN,,HIRAGANA,,,地蔵顔,じぞうがお,,jizou gao,"delikatna i okrągła twarz
 wesoła twarz
-twarz podobna do Bodhisattva Jizō",,,,"GroupId: 1763950
-Translate: gentle and round face
-Translate: cheerful face
-Translate: face like the Bodhisattva Jizō"
+twarz podobna do Bodhisattva Jizō (dosłownie)",,DICTIONARY2_SOURCE,,GroupId: 1763950
 218107,WORD_NOUN,,KATAKANA,,,ｍＲＮＡ,エムアールエヌエー,,emu aaru enu ee,"mRNA
 informacyjny RNA
 matrycowy RNA
@@ -63754,8 +63747,10 @@ Translate: Proscyllium (genus of finback catshark in the family Proscylliidae)"
 221596,WORD_NOUN,,HIRAGANA,,,脂刺椿象,やにさしがめ,,yanisashigame,Velinus nodipes,owad,,,"GroupId: 2841781
 Translate: assassin bug (Velinus nodipes)
 MiscInfo: uk"
-221597,WORD_NOUN,,HIRAGANA,,,道普請,みちぶしん,,michibushin,naprawa drogi,,,,"GroupId: 1770790
-Translate: road repair"
+221597,WORD_NOUN,,HIRAGANA,,,道普請,みちぶしん,,michibushin,"remont drogi
+naprawa drogi
+budowa drogi
+roboty drogowe",przestarzałe słowo,DICTIONARY2_SOURCE,,GroupId: 1770790
 221598,WORD_NOUN,,HIRAGANA,,,宿引き,やどひき,,yado hiki,???,,,,"GroupId: 1734220
 Translate: hotel or lodging house tout"
 221599,WORD_NOUN,,KATAKANA,,,-,アルプス・スタンド,,arupusu sutando,???,ang: Alps stands,DICTIONARY2_SOURCE,,GroupId: 2858576
@@ -83371,9 +83366,7 @@ obecnie (przestarzałe słowo)",,DICTIONARY2_SOURCE,,GroupId: 2847686
 228595,WORD_NOUN,,HIRAGANA,,,伊和,いわ,,iwa,włosko-japoński,np. słownik,DICTIONARY2_SOURCE,,GroupId: 2847586
 228596,WORD_NOUN,,HIRAGANA,,,韓食,かんしょく,,kanshoku,"koreańska kuchnia
 koreańskie jedzenie",,DICTIONARY2_SOURCE,DUPLICATE 228620,GroupId: 2847694
-228597,WORD_NOUN,,HIRAGANA,,,付利,ふり,,furi,odsetki od nadwyżki rezerw,,,,"GroupId: 2847600
-Translate: interest on excess reserves
-Translate: IOER"
+228597,WORD_NOUN,,HIRAGANA,,,付利,ふり,,furi,odsetki od nadwyżki rezerw,finanse,DICTIONARY2_SOURCE,,GroupId: 2847600
 228598,WORD_SUFFIX,,HIRAGANA,,,号棟,ごうとう,,goutou,przyrostek do numerów budynków,,DICTIONARY2_SOURCE,,GroupId: 2847684
 228599,WORD_NOUN,,HIRAGANA,,,電商,でんしょう,,denshou,"handlowanie towarami elektrycznymi (często w nazwach firm)
 e-commerce (skrót; dialekt brazyliński)
@@ -90163,9 +90156,8 @@ Translate: servomechanism"
 230982,WORD_NOUN,,HIRAGANA,,,窓口販売,まどぐちはんばい,,madoguchi hanbai,sprzedaż przez okienko,często w formie pakietów finansowych,,,"GroupId: 2142440
 Translate: over the counter sales (often of financial packages)"
 230983,WORD_NOUN,,HIRAGANA,,,女っぷり,おんなっぷり,,onnappuri,"wygląd kobiety
-urok kobiety",,,,"GroupId: 2076440
-Translate: woman's looks
-Translate: woman's charm"
+urok kobiety
+kobiecy czar",,DICTIONARY2_SOURCE,,GroupId: 2076440
 230984,WORD_NOUN,,HIRAGANA_KATAKANA,,,黒シャツ隊,くろシャツたい,,kuro shatsu tai,"czarne koszule
 milicja faszystowska","włoska faszystowska organizacja paramilitarna utworzona w 1923 r. przez Benito Mussoliniego, stanowiąca integralny składnik sił zbrojnych, z zachowanym niezależnym statusem",DICTIONARY2_SOURCE,,GroupId: 2708400
 230985,"WORD_NOUN
@@ -90197,9 +90189,8 @@ Translate: downpipe
 Translate: drainspout
 Translate: water pipe"
 230995,WORD_NOUN,,HIRAGANA,,,女っ振り,おんなっぷり,,onnappuri,"wygląd kobiety
-urok kobiety",,,,"GroupId: 2076440
-Translate: woman's looks
-Translate: woman's charm"
+urok kobiety
+kobiecy czar",,DICTIONARY2_SOURCE,,GroupId: 2076440
 230996,WORD_NOUN,,HIRAGANA_KATAKANA,,,蘭領インド,らんりょうインド,,ranryou indo,Holenderskie Indie Wschodnie,historyczny termin,,,"GroupId: 2846207
 Translate: Dutch East Indies
 MiscInfo: hist"
@@ -93301,8 +93292,7 @@ Translate: wrong (guess or estimate)
 Translate: misdirected"
 232117,WORD_NOUN,,KATAKANA,,,-,トランスポゾン,,toransupozon,transpozon,"sekwencja DNA, która może przemieszczać się na inną pozycję w genomie tej samej komórki w wyniku procesu zwanego transpozycją",,,"GroupId: 1086330
 Translate: transposon (transposable or movable genetic element)"
-232118,WORD_NOUN,,HIRAGANA,,,属七,ぞくしち,,zokushichi,dominanta septymowa,"czterodźwięk durowy z dodaną septymą małą, budowany na V stopniu gamy",,,"GroupId: 2843103
-Translate: dominant seventh (chord)"
+232118,WORD_NOUN,,HIRAGANA,,,属七,ぞくしち,,zokushichi,dominanta septymowa,"muzyka; czterodźwięk durowy z dodaną septymą małą, budowany na V stopniu gamy",DICTIONARY2_SOURCE,,GroupId: 2843103
 232119,WORD_NOUN,,HIRAGANA,,,処理機構,しょりきこう,,shori kikou,procesor,,,,"GroupId: 2364310
 Translate: processor"
 232120,WORD_NOUN,,KATAKANA,,,-,ヨギ,,yogi,"jogin
@@ -151043,7 +151033,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-21,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-22,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
