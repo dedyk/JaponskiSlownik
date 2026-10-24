@@ -1,4 +1,4 @@
-HEADER,1.10,2026-10-23,,,,,,,,
+HEADER,1.10,2026-10-24,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -314126,8 +314126,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-23,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-23,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-24,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-24,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -600744,9 +600744,12 @@ nf08
 nf15",,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
-SENSE_ENG,1284480,"to match (rhythm, speed, etc.)",,,,,,,,
+SENSE_ENG,1284480,"to match (rhythm, speed, etc.)
+to align",,,,,,,,
 SENSE_POL,1284480,"zgrać
-dopasować","np. rytm, prędkość",,,,,,,
+dopasować
+dostosować
+wyrównywać","np. rytm, prędkość",,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
 SENSE_ENG,1284480,"to join together
@@ -600783,6 +600786,12 @@ to overlap",,,,,,,,
 SENSE_POL,1284480,"umieścić razem
 zachodzić na siebie
 nakładać na siebie",,,,,,,,
+SENSE_COMMON,1284480,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1284480,"to adjust
+to set (e.g. a clock)",,,,,,,,
+SENSE_POL,1284480,"dostosować
+ustawiać",np. zegar,,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
 SENSE_ENG,1284480,"to mix
@@ -806626,21 +806635,23 @@ END,1405770,,,,,,,,,
 BEGIN,1472970,,,,,,,,,
 KANJI,1472970,輩,,"news2
 nf38",,,,,,
-KANJI,1472970,族,,,,,,,,
 READING,1472970,HIRAGANA,やから,yakara,-,,,"news2
 nf38",,
-SENSE_COMMON,1472970,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1472970,"party (of people)
+READING,1472970,KATAKANA,ヤカラ,yakara,NO_KANJI,,,,,
+SENSE_COMMON,1472970,,,noun (common) (futsuumeishi),,,derogatory,,,
+SENSE_ENG,1472970,"group
+bunch
+lot
+pack
 set (of people)
-clan
-family
-fellow",,,,,,,,
-SENSE_POL,1472970,"koledzy
-kumple
-partia
-towarzysze
-rodzina
-krewni",,,,,,,,
+gang",,,,,,,,
+SENSE_POL,1472970,"grupa
+grono
+gromada
+paczka
+zespół (ludzi)
+banda
+gang",,,,,,,,
 END,1472970,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -917674,10 +917685,12 @@ END,2323460,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1378780,,,,,,,,,
 KANJI,1378780,生ビール,,"news2
-nf27",,,,,,
+nf27
+spec1",,,,,,
 READING,1378780,HIRAGANA_KATAKANA,なまビール,nama biiru,-,,,"news2
-nf27",,
-SENSE_COMMON,1378780,,,noun (common) (futsuumeishi),see|-|1088820|-|-|ドラフトビール|ドラフトビール,,,,,
+nf27
+spec1",,
+SENSE_COMMON,1378780,,,noun (common) (futsuumeishi),see|-|2873169|-|樽生ビール|-|樽生ビール,,,,,
 SENSE_ENG,1378780,unpasteurized beer,"often (mis)translated as ""draft beer""",,,,,,,
 SENSE_POL,1378780,niepasteryzowane piwo,często błędnie tłumaczone jako 'piwo z beczki',,,,,,,
 END,1378780,,,,,,,,,
@@ -1153329,11 +1153342,11 @@ KANJI,2860410,後がつかえる,,,,,,,,
 KANJI,2860410,後が支える,,,,,,,,
 READING,2860410,HIRAGANA,あとがつかえる,ato ga tsukaeru,-,,,,,
 SENSE_COMMON,2860410,,,"expressions (phrases, clauses, etc.)
-Ichidan verb",see|-|1607170|2|閊える|つかえる|閊える(つかえる)[2],,idiomatic expression,,,
-SENSE_ENG,2860410,"to make (someone) wait
-to take more time (than anticipated)",,,,,,,,
-SENSE_POL,2860410,"kazać (komuś) czekać
-zająć więcej czasu (niż przewidywano)",,,,,,,,
+Ichidan verb",see|-|1607170|1|閊える|つかえる|閊える(つかえる)[1],,idiomatic expression,,,
+SENSE_ENG,2860410,"to make (the next person) wait
+to hold a place (e.g. in a queue)",,,,,,,,
+SENSE_POL,2860410,"kazać (następnej osobie) czekać
+zajmować miejsce (np. w kolejce)",,,,,,,,
 END,2860410,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1318722,8 +1318735,10 @@ BEGIN,1377000,,,,,,,,,
 KANJI,1377000,正訓,,,,,,,,
 READING,1377000,HIRAGANA,せいくん,seikun,-,,,,,
 SENSE_COMMON,1377000,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1377000,correct kun reading,,,,,,,,
-SENSE_POL,1377000,prawidłowe czytanie kun,,,,,,,,
+SENSE_ENG,1377000,"kun reading of a kanji based on the original meaning
+(traditionally) correct kun reading",,,,,,,,
+SENSE_POL,1377000,"czytanie kun kanji oparte na pierwotnym znaczeniu
+(tradycyjnie) poprawne czytanie kun",,,,,,,,
 END,1377000,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1672916,19 +1672931,22 @@ END,2270440,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2574750,,,,,,,,,
-KANJI,2574750,強情っ張り,,,,,,,,
 KANJI,2574750,強情っぱり,,,,,,,,
-KANJI,2574750,強情張,,,,,,,,
-KANJI,2574750,剛情張,,,,,,,,
+KANJI,2574750,強情っ張り,,,,,,,,
+KANJI,2574750,剛情張,rarely used kanji form,,,,,,,
+KANJI,2574750,強情張,search-only kanji form,,,,,,,
+KANJI,2574750,剛情っ張り,search-only kanji form,,,,,,,
 READING,2574750,HIRAGANA,ごうじょうっぱり,goujouppari,-,,,,,
 SENSE_COMMON,2574750,,,"noun (common) (futsuumeishi)
 adjectival nouns or quasi-adjectives (keiyodoshi)",,,,,,
-SENSE_ENG,2574750,"stubborn person
-obstinate person
-stubbornness
+SENSE_ENG,2574750,"stubbornness
 obstinacy",,,,,,,,
-SENSE_POL,2574750,"uparta osoba
-upór",,,,,,,,
+SENSE_POL,2574750,"upór
+upartość",,,,,,,,
+SENSE_COMMON,2574750,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,2574750,"stubborn person
+obstinate person",,,,,,,,
+SENSE_POL,2574750,uparta osoba,,,,,,,,
 END,2574750,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1726241,11 +1726259,16 @@ BEGIN,2030540,,,,,,,,,
 KANJI,2030540,狂喜乱舞,,,,,,,,
 READING,2030540,HIRAGANA,きょうきらんぶ,kyouki ranbu,-,,,,,
 SENSE_COMMON,2030540,,,"noun (common) (futsuumeishi)
-noun or participle which takes the aux. verb suru",,,yojijukugo,,,
-SENSE_ENG,2030540,"boisterous dance
-dancing wildly",,,,,,,,
-SENSE_POL,2030540,"porywisty taniec
-dziki taniec",,,,,,,,
+noun or participle which takes the aux. verb suru
+intransitive verb",,,yojijukugo,,,
+SENSE_ENG,2030540,"jumping for joy
+being ecstatic
+being overjoyed
+dancing wildly (out of happiness)",,,,,,,,
+SENSE_POL,2030540,"skakanie z radości
+bycie w ekstazie
+bycie przepełnionym radością
+tańczenie jak szalony (z radości)",,,,,,,,
 END,2030540,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1783007,9 +1783030,9 @@ READING,1516290,HIRAGANA,ほうぎょ,hougyo,-,,,,,
 SENSE_COMMON,1516290,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 intransitive verb",,,honorific or respectful (sonkeigo) language,,,
-SENSE_ENG,1516290,"death (of an emperor)
+SENSE_ENG,1516290,"death (esp. of an emperor or empress, incl. retired, dowager, etc.)
 demise",,,,,,,,
-SENSE_POL,1516290,śmierć cesarza,,,,,,,,
+SENSE_POL,1516290,śmierć,"szczególnie cesarza lub cesarzowej, w tym emerytowanego lub wdowy",,,,,,,
 END,1516290,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1999591,10 +1999614,8 @@ BEGIN,2831919,,,,,,,,,
 READING,2831919,KATAKANA,チャイニーズタイペイ,chainiizu taipei,-,,,,,
 READING,2831919,KATAKANA,チャイニーズ・タイペイ,chainiizu taipei,-,,,,,
 SENSE_COMMON,2831919,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,2831919,"Chinese Taipei
-name used by the Republic of China (Taiwan) when participating in international competitions|expl",,,,,,,,
-SENSE_POL,2831919,"Chińskie Tajpej
-nazwa używana przez Republikę Chińską (Tajwan) podczas udziału w międzynarodowych zawodach|expl",,,,,,,,
+SENSE_ENG,2831919,Chinese Taipei (designation for Taiwan in international sports and certain international organizations),,,,,,,,
+SENSE_POL,2831919,Chińskie Tajpej,nazwa używana przez Republikę Chińską (Tajwan) podczas udziału w międzynarodowych zawodach,,,,,,,
 END,2831919,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2081995,14 +2082016,21 @@ END,1825830,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1246820,,,,,,,,,
 KANJI,1246820,靴磨き,,,,,,,,
-KANJI,1246820,靴みがき,,,,,,,,
-KANJI,1246820,靴磨,irregular okurigana usage,,,,,,,
+KANJI,1246820,靴みがき,search-only kanji form,,,,,,,
+KANJI,1246820,くつ磨き,search-only kanji form,,,,,,,
+KANJI,1246820,靴磨,search-only kanji form,,,,,,,
+KANJI,1246820,クツ磨き,search-only kanji form,,,,,,,
 READING,1246820,HIRAGANA,くつみがき,kutsu migaki,-,,,,,
 SENSE_COMMON,1246820,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1246820,"shoeshine
 shoe polishing",,,,,,,,
 SENSE_POL,1246820,"czyszczenie butów
 polerowanie butów",,,,,,,,
+SENSE_COMMON,1246820,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1246820,"shoeshiner
+boot polisher",,,,,,,,
+SENSE_POL,1246820,"pucybut
+osoba czyszcząca buty",,,,,,,,
 END,1246820,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
