@@ -5558,8 +5558,7 @@ Translate: next (spoken) word"
 201890,WORD_NOUN,,HIRAGANA,,,日本鹿,にほんじか,,nihonjika,"jeleń wschodni
 sika","pisanie zwykle z użyciem kana; gatunek jeleniowatych – jego podgatunki zamieszkują wschodnią część Syberii, Mandżurię, wschodnie Chiny, Koreę, Japonię oraz Tajwan, Cervus nippon",DICTIONARY2_SOURCE,,GroupId: 2111050
 201891,WORD_NOUN,,HIRAGANA,,,現地到着,げんちとうちゃく,,genchi touchaku,"przyjazd na miejsce
-przybycie na miejsce",,,,"GroupId: 2118940
-Translate: arrival on location"
+przybycie na miejsce",,DICTIONARY2_SOURCE,,GroupId: 2118940
 201892,WORD_NOUN,,HIRAGANA,,,瀬取り船,せどりぶね,,sedori bune,mała łódź używana do rozładunku towarów z dużej łodzi zakotwiczonej w pobliżu,,DICTIONARY2_SOURCE,,GroupId: 2593270
 201893,WORD_NOUN,,HIRAGANA,,,江戸語,えどご,,edo go,dialekt Edo,,,,"GroupId: 2421400
 Translate: Edo dialect"
@@ -5632,11 +5631,7 @@ Translate: Okinawan pig breed"
 201920,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,禅宗様,ぜんしゅうよう,,zenshuuyou,tradycyjna architektura w stylu Zen,,DICTIONARY2_SOURCE,,GroupId: 2567050
 201921,WORD_NOUN,,HIRAGANA,,,毛深雀蜂,けぶかすずめばち,,kebuka suzumebachi,"japoński szerszeń (Vespa simillima, szczególnie podgatunek Vespa simillima simillima)
-żółty szerszeń",,,,"GroupId: 2566430
-Translate: Japanese hornet (Vespa simillima, esp. subspecies Vespa simillima simillima)
-MiscInfo: uk
-Translate: yellow hornet
-MiscInfo: uk"
+żółty szerszeń",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2566430
 201922,WORD_NOUN,,KATAKANA,,,-,ソフィスト,,sofisuto,sofista,"osoba dowodząca nieprawdziwe tezy fałszywymi argumentami, ang: sophist",,,"GroupId: 2442160
 Translate: sophist"
 201923,WORD_NOUN,,KATAKANA_HIRAGANA,,,スコラ哲学,スコラてつがく,,sukora tetsugaku,scholastyka,krytyczna metoda analityczna stosowana na średniowiecznych uniwersytetach,,,"GroupId: 2071270
@@ -5722,11 +5717,7 @@ potrafiący sobie poradzić",,DICTIONARY2_SOURCE,,GroupId: 2136825
 201947,WORD_NOUN,,HIRAGANA,,,-,あぐう,,aguu,okinawska rasa świni,,,,"GroupId: 2708090
 Translate: Okinawan pig breed"
 201948,WORD_NOUN,,KATAKANA,,,-,ケブカスズメバチ,,kebuka suzumebachi,"japoński szerszeń (Vespa simillima, szczególnie podgatunek Vespa simillima simillima)
-żółty szerszeń",,,,"GroupId: 2566430
-Translate: Japanese hornet (Vespa simillima, esp. subspecies Vespa simillima simillima)
-MiscInfo: uk
-Translate: yellow hornet
-MiscInfo: uk"
+żółty szerszeń",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,,GroupId: 2566430
 201949,WORD_NOUN,,HIRAGANA,,,天眼通,てんがんつう,,tengantsuu,jasnowidztwo,buddyzm,DICTIONARY2_SOURCE,DUPLICATE 201924,GroupId: 1438660
 201950,"WORD_ADJECTIVE_NA
 WORD_NOUN",,HIRAGANA,,,所得顔,ところえがお,,tokoroegao,"wygląd triumfu
@@ -6906,11 +6897,13 @@ DUPLICATE 202315
 DUPLICATE 202316",GroupId: 1701390
 202318,WORD_NOUN,,HIRAGANA,,,編針,あみばり,,ami bari,drut,do robienia na drutach,DICTIONARY2_SOURCE,,GroupId: 1511920
 202319,"WORD_NOUN
-WORD_ADJECTIVE_NA",,HIRAGANA,,,強情張,ごうじょうっぱり,,goujouppari,"uparta osoba
-upór",,DICTIONARY2_SOURCE,,GroupId: 2574750
+WORD_ADJECTIVE_NA",,HIRAGANA,,,強情張,ごうじょうっぱり,,goujouppari,"upór
+upartość
+uparta osoba",,DICTIONARY2_SOURCE,,GroupId: 2574750
 202320,"WORD_NOUN
-WORD_ADJECTIVE_NA",,HIRAGANA,,,剛情張,ごうじょうっぱり,,goujouppari,"uparta osoba
-upór",,DICTIONARY2_SOURCE,,GroupId: 2574750
+WORD_ADJECTIVE_NA",,HIRAGANA,,,剛情張,ごうじょうっぱり,,goujouppari,"upór
+upartość
+uparta osoba",,DICTIONARY2_SOURCE,,GroupId: 2574750
 202321,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,香をたく,こうをたく,,kou o taku,"kadzić
 okadzać
@@ -42399,9 +42392,8 @@ Translate: life force, blood, and colourless bodily fluids (three elements that 
 214318,WORD_NOUN,,HIRAGANA,,,虫籠窓,むしこまど,,mushiko mado,okno z bardzo cienką kratą,"często na wyższych piętrach tradycyjnych budynków, np. budynków z Kioto",,,"GroupId: 2662600
 Translate: window with an ultra-fine lattice (often on upper floors of traditional buildings, e.g. Kyoto townhouses)"
 214319,WORD_NOUN,,HIRAGANA,,,小屋根,こやね,,koyane,"mały dach
-mały daszek","np. nad pierwszą kondygnacją budynku, okna, szopy lub werandy itp.",,,"GroupId: 2662620
-Translate: small roof (e.g. over the first storey of a building, a window, an attached shed or veranda, etc.)
-Translate: overhang"
+mały daszek
+okap","np. nad parterem budynku, oknem, dobudowaną szopą lub werandą itp.",DICTIONARY2_SOURCE,,GroupId: 2662620
 214320,WORD_NOUN,,KATAKANA_HIRAGANA,,,南京玉すだれ,ナンキンたますだれ,,nankin tamasu dare,"przedstawienie uliczne, w którym artysta zamienia specjalnie przygotowany bambus w różne kształty śpiewając przy tym wiersz",,,,"GroupId: 2695130
 Translate: street performance in which the performer transforms a specially-made bamboo screen into various shapes while chanting an accompanying poem"
 214321,WORD_NOUN,,HIRAGANA,,,河口港,かこうこう,,kakoukou,port u ujścia rzeki,,,,"GroupId: 1778400
@@ -52539,11 +52531,10 @@ MiscInfo: abbr"
 zbiornik wody",,,,"GroupId: 2088150
 Translate: reservoir (of liquid)"
 217645,WORD_NOUN,,HIRAGANA,,,拙速主義,せっそくしゅぎ,,sessoku shugi,"niedbała metoda
+prowizoryczna metoda
 prosta i niewyszukana metoda
-polityka prędkości przed jakością",,,,"GroupId: 1779120
-Translate: slapdash approach
-Translate: rough-and-ready method
-Translate: speed-before-quality policy"
+polityka prędkości przed jakością
+zasada szybkość nad jakością",,DICTIONARY2_SOURCE,,GroupId: 1779120
 217646,WORD_NOUN,,HIRAGANA,,,民草,たみくさ,,tamikusa,"ludzie
 ludność
 populacja",,DICTIONARY2_SOURCE,DUPLICATE 217679,GroupId: 1584610
@@ -61535,9 +61526,7 @@ Translate: NGO"
 pamięć pęcherzykowa",informatyka,,,"GroupId: 2360340
 Translate: bubble memory"
 220841,WORD_NOUN,,HIRAGANA,,,類語辞典,るいごじてん,,ruigo jiten,"tezaurus
-słownik synonimów",,,,"GroupId: 2059340
-Translate: thesaurus
-Translate: dictionary of synonyms"
+słownik synonimów",,DICTIONARY2_SOURCE,,GroupId: 2059340
 220842,WORD_NOUN,,HIRAGANA,,,永久就職,えいきゅうしゅうしょく,,eikyuu shuushoku,"wyjście za mąż i zostanie gospodynią domową
 stałe zatrudnienie (w momencie zostania gospodynią domową)","wyrażenie idiomatyczne, kolokwializm",,,"GroupId: 2835767
 Translate: marrying to become a housewife
@@ -70314,8 +70303,7 @@ Translate: to get hungry"
 bezpośredni sprawca
 główny przestępca pierwszego stopnia",prawo,DICTIONARY2_SOURCE,,GroupId: 2729320
 223962,WORD_NOUN,,KATAKANA,,,-,ウルカヌス,,urukanusu,Wulkan,"mitologia rzymska; w wierzeniach Rzymian bóg ognia i rzemiosł metalurgicznych, utożsamiany z greckim Hefajstosem; łać: Vulcanus",DICTIONARY2_SOURCE,,GroupId: 2260560
-223963,WORD_NOUN,,HIRAGANA,,,紐形動物,ひもがたどうぶつ,,himogatadoubutsu,bezkręgowiec z podkrólestwa Nemertea,,,,"GroupId: 2265290
-Translate: nemertean (any worm of phylum Nemertea)"
+223963,WORD_NOUN,,HIRAGANA,,,紐形動物,ひもがたどうぶつ,,himogata doubutsu,bezkręgowiec z gromady Nemertea,,DICTIONARY2_SOURCE,,GroupId: 2265290
 223964,WORD_NOUN,,HIRAGANA,,,高等商業学校,こうとうしょうぎょうがっこう,,koutou shougyou gakkou,"wyższa szkoła handlowa (przed II wojną światową)
 szkoła handlowa",termin historyczny,DICTIONARY2_SOURCE,,GroupId: 2846289
 223965,WORD_NOUN_SUFFIX,,HIRAGANA,,,-,しゃぶ,,shabu,shabu-shabu,"japońskie danie jednogarnkowe typu nabe-mono, składające się z bardzo cienko pokrojonego mięsa wołowego i warzyw gotowanych w wodzie i maczanych następnie w sosach, skrót",,,"GroupId: 2846248
@@ -77984,8 +77972,7 @@ WORD_ADJECTIVE_NO",,HIRAGANA,,,西寄り,にしより,,nishi yori,zachodni,,,,"G
 Translate: westerly"
 226688,WORD_NOUN,,HIRAGANA,,,木びき台,こびきだい,,kobiki dai,"kozioł stolarski
 stołek do piłowania drewna",,DICTIONARY2_SOURCE,,GroupId: 2428070
-226689,WORD_NOUN,,HIRAGANA,,,民間部門,みんかんぶもん,,minkan bumon,sektor prywatny,,,,"GroupId: 2001100
-Translate: private sector"
+226689,WORD_NOUN,,HIRAGANA,,,民間部門,みんかんぶもん,,minkan bumon,sektor prywatny,,DICTIONARY2_SOURCE,,GroupId: 2001100
 226690,WORD_NOUN,,HIRAGANA,,,伝書ばと,でんしょばと,,densho bato,gołąb pocztowy,,DICTIONARY2_SOURCE,,GroupId: 1442040
 226691,WORD_ADVERB,,HIRAGANA,,,普通に,ふつうに,,futsuu ni,"normalnie
 zwykle
@@ -151014,7 +151001,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-23,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-24,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
@@ -202751,7 +202738,7 @@ iść z
 towarzyszyć",,DICTIONARY2_SOURCE,,GroupId: 1559360
 288433,WORD_NOUN,,HIRAGANA,,,族,うから,,ukara,"krewny
 więzy krwi",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 6476
-DUPLICATE 6477",GroupId: 2820740
+DUPLICATE 327920",GroupId: 2820740
 288434,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,後ろ髪をひかれる,うしろがみをひかれる,,ushiro gami o hikareru,"robić coś z bolesną niechęcią
 mieć swoje włosy pociągnięte od tyłu (dosłownie)",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2102250
@@ -222826,11 +222813,11 @@ obżarstwo",żartobliwie; slang,DICTIONARY2_SOURCE,,GroupId: 2860397
 298514,WORD_NOUN,,HIRAGANA_KATAKANA,,,副リーダー,ふくリーダー,,fuku riidaa,zastępca lidera,,DICTIONARY2_SOURCE,,GroupId: 2860398
 298515,WORD_NOUN,,HIRAGANA,,,機械化歩兵,きかいかほへい,,kikaika hohei,piechota zmechanizowana,wojskowość,DICTIONARY2_SOURCE,,GroupId: 2860407
 298516,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,後がつかえる,あとがつかえる,,ato ga tsukaeru,"kazać (komuś) czekać
-zająć więcej czasu (niż przewidywano)",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2860410
+WORD_EXPRESSION",,HIRAGANA,,,後がつかえる,あとがつかえる,,ato ga tsukaeru,"kazać (następnej osobie) czekać
+zajmować miejsce (np. w kolejce)",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2860410
 298517,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,後が支える,あとがつかえる,,ato ga tsukaeru,"kazać (komuś) czekać
-zająć więcej czasu (niż przewidywano)",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2860410
+WORD_EXPRESSION",,HIRAGANA,,,後が支える,あとがつかえる,,ato ga tsukaeru,"kazać (następnej osobie) czekać
+zajmować miejsce (np. w kolejce)",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2860410
 298518,WORD_NOUN,,KATAKANA,,,-,クイックタイムイベント,,kuikku taimu ibento,"quick time event
 QTE","gry wideo; element niektórych gier komputerowych, będący formą interaktywnego przerywnika filmowego, podczas którego gracz ma za zadanie nacisnąć klawisz odpowiadający pojawiającej się na ekranie ikonie",DICTIONARY2_SOURCE,,GroupId: 2860414
 298519,WORD_NOUN,,KATAKANA,,,-,クイック・タイム・イベント,,kuikku taimu ibento,"quick time event
