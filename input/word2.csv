@@ -307648,7 +307648,7 @@ substance",,,,,,,,
 SENSE_POL,1502390,"rzecz
 przedmiot
 obiekt
-artykuł",,,,,,,,
+artykuł","rzecz materialna, coś konkretnego, fizycznego",,,,,,,
 SENSE_COMMON,1502390,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1502390,"one's things
 possessions
@@ -602709,7 +602709,7 @@ SENSE_ENG,1313580,"thing
 matter",,,,,,,,
 SENSE_POL,1313580,"rzecz
 sprawa
-kwestia",,,,,,,,
+kwestia",rzecz abstrakcyjna (niematerialna),,,,,,,
 SENSE_COMMON,1313580,,,noun (common) (futsuumeishi),,,word usually written using kana alone,,,
 SENSE_ENG,1313580,"incident
 occurrence
@@ -602719,11 +602719,14 @@ trouble
 crisis",,,,,,,,
 SENSE_POL,1313580,"zdarzenie
 wydarzenie
+fakt
+czynność
 zajście
+doświadczenie
 wypadek
 coś poważnego
 kłopoty
-kryzys",,,,,,,,
+kryzys",rzecz abstrakcyjna (niematerialna),,,,,,,
 SENSE_COMMON,1313580,,,noun (common) (futsuumeishi),,,word usually written using kana alone,,,
 SENSE_ENG,1313580,"circumstances
 situation
@@ -1392791,7 +1392794,10 @@ KANJI,2819990,じゃ無いか,,spec1,,,,,,
 READING,2819990,HIRAGANA_EXCEPTION,じゃないか,ja nai ka,-,,,spec1,,
 SENSE_COMMON,2819990,,,"expressions (phrases, clauses, etc.)",,,word usually written using kana alone,,,
 SENSE_ENG,2819990,isn't it?,,,,,,,,
-SENSE_POL,2819990,nie jest?,,,,,,,,
+SENSE_POL,2819990,"nie jest?
+...no nie?
+...przecież tak jest!
+a nie mówiłem?",,,,,,,,
 SENSE_COMMON,2819990,,,"expressions (phrases, clauses, etc.)",,,word usually written using kana alone,,,
 SENSE_ENG,2819990,"let's ...
 why don't we ...
@@ -2251376,3 +2251382,14 @@ dying without suffering",,,,,,,,
 SENSE_POL,1760700,"spokojna śmierć
 umieranie bez cierpienia",,,,,,,,
 END,1760700,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+BEGIN,2826430,,,,,,,,,
+KANJI,2826430,睡眠病,,,,,,,,
+READING,2826430,HIRAGANA,すいみんびょう,suiminbyou,-,,,,,
+SENSE_COMMON,2826430,,,noun (common) (futsuumeishi),,medicine,,,,
+SENSE_ENG,2826430,"sleeping sickness
+sleeping disease",,,,,,,,
+SENSE_POL,2826430,"śpiączka
+choroba związana ze snem",,,,,,,,
+END,2826430,,,,,,,,,
