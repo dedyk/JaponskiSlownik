@@ -1,4 +1,4 @@
-HEADER,1.10,2026-10-25,,,,,,,,
+HEADER,1.10,2026-10-26,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -314126,8 +314126,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-25,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-25,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-26,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-26,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -532938,21 +532938,23 @@ END,2264680,,,,,,,,,
 BEGIN,1198200,,,,,,,,,
 KANJI,1198200,会わせる,,,,,,,,
 KANJI,1198200,遭わせる,,,,,,,,
-KANJI,1198200,逢わせる,,,,,,,,
+KANJI,1198200,逢わせる,rarely used kanji form,,,,,,,
 READING,1198200,HIRAGANA,あわせる,awaseru,-,,,,,
 SENSE_COMMON,1198200,,,"Ichidan verb
-transitive verb",see|-|1198180|-|会う|-|会う,,,,,
-SENSE_ENG,1198200,"to make (someone) to meet
+transitive verb",see|-|1198180|1|会う|-|会う[1],,,,,
+SENSE_ENG,1198200,"to make (someone) meet
 to let (someone) meet",,,,,,,,
 SENSE_POL,1198200,"nakłonić (kogoś) do spotkania
 zrobić spotkanie (z kimś)
 pozwolić (komuś) się spotkać",,,,,,,,
 SENSE_COMMON,1198200,,,"Ichidan verb
-transitive verb",,,,,,
-SENSE_ENG,1198200,"to expose to
-to subject to",,,,,,,,
-SENSE_POL,1198200,"wystawiać
-narażać",,,,,,,,
+transitive verb",see|-|1198180|2|会う|-|会う[2],,word usually written using kana alone,,,
+SENSE_ENG,1198200,"to subject (someone) to (e.g. something painful)
+to expose (someone) to (e.g. danger)
+to make (someone) go through",esp. 遭わせる when in kanji,,,,,,,
+SENSE_POL,1198200,"wystawiać kogoś (na coś bolesnego)
+narażać kogoś (na niebezpieczeństwo)
+sprawić, by (ktoś) musiał przez to przejść",szczególnie 遭わせる kiedy pisane w kanji,,,,,,,
 END,1198200,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -586899,17 +586901,26 @@ SENSE_COMMON,1198180,,,"Godan verb with 'u' ending
 intransitive verb",,,,,,
 SENSE_ENG,1198180,"to meet
 to encounter
-to see","逢う is often used for close friends, etc. and may be associated with drama or pathos; 遭う may have an undesirable nuance",,,,,,,
+to see
+to come across
+to run into","逢う may indicate intimacy or emotion, 遭う undesirability",,,,,,,
 SENSE_POL,1198180,"spotykać się
 widzieć się (z kimś)
-zobaczyć się",używane przy zwykłych spotkaniach; zaplanowanych lub codziennych,,,,,,,
+zobaczyć się
+wpaść na (kogoś)","逢う może oznaczać bliskość lub emocje, a 遭う coś niepożądanego",,,,,,,
 SENSE_COMMON,1198180,,,"Godan verb with 'u' ending
 intransitive verb",,,word usually written using kana alone,,,
-SENSE_ENG,1198180,"to have an accident
-to have a bad experience",esp. 遭う when in kanji,,,,,,,
-SENSE_POL,1198180,"doświadczyć czegoś złego
-ulec wypadkowi
-napotkać nieszczęście",zwykle używane z kanji 遭う,,,,,,,
+SENSE_ENG,1198180,"to have (e.g. an accident) to suffer (e.g. an unpleasant fate)
+to encounter
+to face
+to go through (e.g. a tough time)
+to get caught up (in)",esp. 遭う when in kanji,,,,,,,
+SENSE_POL,1198180,"doświadczyć (np. czegoś złego np. wypadek)
+przeżyć (np. nieprzyjemny los)
+napotkać
+zmierzyć się z
+przejść przez (np. trudny okres)
+dać się wciągnąć (w coś)",szczególnie 遭う gdy w kanji,,,,,,,
 END,1198180,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -600737,29 +600748,36 @@ BEGIN,1284480,,,,,,,,,
 KANJI,1284480,合わせる,,"ichi1
 news1
 nf08",,,,,,
-KANJI,1284480,併せる,,"news1
-nf15",,,,,,
-KANJI,1284480,合せる,,,,,,,,
+KANJI,1284480,併せる,rarely used kanji form,,,,,,,
+KANJI,1284480,合せる,search-only kanji form,,,,,,,
 READING,1284480,HIRAGANA,あわせる,awaseru,-,,,"ichi1
 news1
 nf08
 nf15",,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
-SENSE_ENG,1284480,"to match (rhythm, speed, etc.)
-to align",,,,,,,,
+SENSE_ENG,1284480,"to match (rhythm, actions, clothes, etc.)
+to do in line with
+to adapt to
+to fit
+""to do (something) to (e.g. """"dance to the music"""")""",,,,,,,,
 SENSE_POL,1284480,"zgrać
-dopasować
-dostosować
-wyrównywać","np. rytm, prędkość",,,,,,,
+wyrównywać
+pasować
+dopasować (rytm, ruchy, ubranie itp.)
+dostosować się do
+postępować zgodnie z
+robić (coś) do (np. tańczyć w rytm muzyki)",,,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
 SENSE_ENG,1284480,"to join together
+to bring together
 to unite
 to combine
 to add up",,,,,,,,
 SENSE_POL,1284480,"łączyć
 łączyć razem
+zebrać
 złożyć
 zjednoczyć
 połączyć
@@ -600772,14 +600790,12 @@ SENSE_POL,1284480,"stawiać czoła
 być przeciwny (komuś)",,,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
-SENSE_ENG,1284480,"to compare
-to check with",,,,,,,,
+SENSE_ENG,1284480,"to compare (e.g. notes, answers)
+to check against
+to check",,,,,,,,
 SENSE_POL,1284480,"porównywać
-sprawdzać z",,,,,,,,
-SENSE_COMMON,1284480,,,"Ichidan verb
-transitive verb",see|-|1198180|1|遭う|-|遭う[1],,,,,
-SENSE_ENG,1284480,to cause to meet (e.g. an unpleasant fate),,,,,,,,
-SENSE_POL,1284480,spowodować spotkanie,np. z nieprzyjemnościami,,,,,,,
+sprawdzać
+sprawdzić pod kątem zgodności","np. notatki, odpowiedzi",,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
 SENSE_ENG,1284480,"to place together
@@ -600790,21 +600806,31 @@ zachodzić na siebie
 nakładać na siebie",,,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
+SENSE_ENG,1284480,"to mix
+to combine
+to mix together",,,,,,,,
+SENSE_POL,1284480,"mieszać
+mieszać razem
+łączyć",,,,,,,,
+SENSE_COMMON,1284480,,,"Ichidan verb
+transitive verb",,,,,,
 SENSE_ENG,1284480,"to adjust
-to set (e.g. a clock)",,,,,,,,
+to set (e.g. a clock)
+to tune",,,,,,,,
 SENSE_POL,1284480,"dostosować
 ustawiać",np. zegar,,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
-SENSE_ENG,1284480,"to mix
-to combine",,,,,,,,
-SENSE_POL,1284480,mieszać,,,,,,,,
-SENSE_COMMON,1284480,,,"Ichidan verb
-transitive verb",,,,,,
-SENSE_ENG,1284480,"to put blade to blade
+SENSE_ENG,1284480,"to cross (e.g. swords)
 to fight",,,,,,,,
-SENSE_POL,1284480,"przyłożyć ostrze do ostrza
+SENSE_POL,1284480,"skrzyżować (np. miecze)
 walczyć",,,,,,,,
+SENSE_COMMON,1284480,,,"Ichidan verb
+transitive verb",,sumo,,,,
+SENSE_ENG,1284480,"to match (sumo wrestlers) against each other
+to have (sumo wrestlers) fight",of a referee,,,,,,,
+SENSE_POL,1284480,"zorganizować pojedynek (zapaśników sumo)
+mieć walkę (zapaśników sumo)",???,,,,,,,
 END,1284480,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -673707,17 +673733,34 @@ BEGIN,1333560,,,,,,,,,
 KANJI,1333560,集める,,"ichi1
 news1
 nf07",,,,,,
+KANJI,1333560,蒐める,search-only kanji form,,,,,,,
+KANJI,1333560,聚める,search-only kanji form,,,,,,,
+KANJI,1333560,輯める,search-only kanji form,,,,,,,
 READING,1333560,HIRAGANA,あつめる,atsumeru,-,,,"ichi1
 news1
 nf07",,
 SENSE_COMMON,1333560,,,"Ichidan verb
 transitive verb",,,,,,
-SENSE_ENG,1333560,"to collect
+SENSE_ENG,1333560,"to gather
+to collect
 to assemble
-to gather",,,,,,,,
+to get (things, people, etc.) together",,,,,,,,
 SENSE_POL,1333560,"zbierać
 gromadzić
-kolekcjonować",,,,,,,,
+kolekcjonować
+zebrać (rzeczy, ludzi itp.) razem",,,,,,,,
+SENSE_COMMON,1333560,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1333560,"to raise (money)
+to gather (e.g. funds)",,,,,,,,
+SENSE_POL,1333560,zbierać,"np. pieniądze, środki, fundusze",,,,,,,
+SENSE_COMMON,1333560,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1333560,"to garner (e.g. popularity)
+to draw (attention)
+to attract (e.g. an audience)",,,,,,,,
+SENSE_POL,1333560,"zdobywać (np. popularność)
+przyciągać (np. uwagę, publiczność)",,,,,,,,
 END,1333560,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -728013,7 +728056,7 @@ KANJI,2409950,会す,,,,,,,,
 KANJI,2409950,遭す,,,,,,,,
 READING,2409950,HIRAGANA,あわす,awasu,-,,,,,
 SENSE_COMMON,2409950,,,"Godan verb with 'su' ending
-transitive verb",see|-|1198200|-|会わせる|-|会わせる,,,,,
+transitive verb",see|-|1198200|1|会わせる|-|会わせる[1],,,,,
 SENSE_ENG,2409950,"to make (someone) to meet
 to let (someone) meet",,,,,,,,
 SENSE_POL,2409950,pozwolić (komuś) się spotkać,,,,,,,,
@@ -1008960,10 +1009003,10 @@ END,2819730,,,,,,,,,
 BEGIN,1646200,,,,,,,,,
 KANJI,1646200,船倉,,"news2
 nf38",,,,,,
-KANJI,1646200,船艙,,,,,,,,
+KANJI,1646200,船艙,rarely used kanji form,,,,,,,
 READING,1646200,HIRAGANA,せんそう,sensou,-,,,"news2
 nf38",,
-SENSE_COMMON,1646200,,,noun (common) (futsuumeishi),see|-|2806500|2|船蔵|ふなぐら|船蔵(ふなぐら)[2],,,,,
+SENSE_COMMON,1646200,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1646200,"ship's hold
 hatch",,,,,,,,
 SENSE_POL,1646200,"ładownia statku
@@ -1009389,7 +1009432,7 @@ READING,2806500,HIRAGANA,せんこ,senko,-,船庫,,,,
 SENSE_COMMON,2806500,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2806500,boathouse,,,,,,,,
 SENSE_POL,2806500,hangar dla łodzi,,,,,,,,
-SENSE_COMMON,2806500,,ふなぐら,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,2806500,,ふなぐら,noun (common) (futsuumeishi),see|-|1646200|-|船倉|せんそう|船倉(せんそう),,,,,
 SENSE_ENG,2806500,"ship's hold
 hatch",,,,,,,,
 SENSE_POL,2806500,"ładownia statku
@@ -1864925,7 +1864968,7 @@ END,1922270,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2055520,,,,,,,,,
-READING,2055520,HIRAGANA,それなのに,sore nano ni,-,,,,,
+READING,2055520,HIRAGANA,それなのに,sore nano ni,-,,,spec1,,
 SENSE_COMMON,2055520,,,conjunction,,,,,,
 SENSE_ENG,2055520,"and yet
 despite this
@@ -1864934,7 +1864977,7 @@ but even then
 however
 nevertheless
 for all that
-notwithstanding that",,,,,,,,
+notwithstanding that",more subjective than それにもかかわらず,,,,,,,
 SENSE_POL,2055520,"a jednak
 mimo to
 pomimo tego
@@ -1864944,7 +1864987,7 @@ jednak
 jednakże
 niemniej jednak
 mimo wszystko
-niezależnie od tego",,,,,,,,
+niezależnie od tego",bardziej subiektywne niż それにもかかわらず,,,,,,,
 END,2055520,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
