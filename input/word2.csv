@@ -1,4 +1,4 @@
-HEADER,1.10,2026-10-26,,,,,,,,
+HEADER,1.10,2026-10-27,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -72902,20 +72902,41 @@ END,1102220,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1375820,,,,,,,,,
-KANJI,1375820,成る程,,,,,,,,
+KANJI,1375820,成る程,rarely used kanji form,,,,,,,
 KANJI,1375820,なる程,search-only kanji form,,,,,,,
 KANJI,1375820,成程,search-only kanji form,,,,,,,
 KANJI,1375820,成るほど,search-only kanji form,,,,,,,
 READING,1375820,HIRAGANA,なるほど,naru hodo,-,,,"ichi1
 spec1",,
-SENSE_COMMON,1375820,,,"interjection (kandoushi)
-adverb (fukushi)",,,word usually written using kana alone,,,
+SENSE_COMMON,1375820,,,interjection (kandoushi),,,word usually written using kana alone,,,
 SENSE_ENG,1375820,"I see
-that's right
-indeed",,,,,,,,
+that's right!
+indeed
+fair enough",,,,,,,,
 SENSE_POL,1375820,"racja
 zgadza się
-to prawda",,,,,,,,
+to prawda
+zgoda
+w porządku",,,,,,,,
+SENSE_COMMON,1375820,,,adverb (fukushi),,,word usually written using kana alone,,,
+SENSE_ENG,1375820,"really
+truly
+quite
+indeed",,,,,,,,
+SENSE_POL,1375820,"naprawdę
+rzeczywiście
+całkiem
+w istocie",,,,,,,,
+SENSE_COMMON,1375820,,,adverb (fukushi),,,word usually written using kana alone,,,
+SENSE_ENG,1375820,"certainly ... (although)
+sure ... (but)
+admittedly ... (however)
+it is true that ... (but)","paired with a concessive, e.g. しかし, が, etc.",,,,,,,
+SENSE_POL,1375820,"oczywiście… (chociaż)
+jasne… (ale)
+trzeba przyznać, że ... (jednak)
+wprawdzie ... (jednak)
+to prawda, że… (ale)","w połączeniu z wyrażeniem ustępczym, np. しかし, が itp.",,,,,,,
 END,1375820,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -80956,6 +80977,7 @@ KANJI,2255180,人っ子ひとり,search-only kanji form,,,,,,,
 KANJI,2255180,人っ子１人,search-only kanji form,,,,,,,
 KANJI,2255180,人っこ一人,search-only kanji form,,,,,,,
 KANJI,2255180,人っこひとり,search-only kanji form,,,,,,,
+KANJI,2255180,ひとっこ一人,search-only kanji form,,,,,,,
 READING,2255180,HIRAGANA,ひとっこひとり,hitokko hitori,-,,,,,
 SENSE_COMMON,2255180,,,"expressions (phrases, clauses, etc.)
 noun (common) (futsuumeishi)",,,,,,
@@ -89934,7 +89956,7 @@ END,1967230,,,,,,,,,
 BEGIN,1030830,,,,,,,,,
 READING,1030830,KATAKANA,エンゲージ,engeeji,-,,,,,
 READING,1030830,KATAKANA,エンゲイジ,engeiji,-,,,,,
-SENSE_COMMON,1030830,,,noun (common) (futsuumeishi),see|-|1030840|-|-|エンゲージメント|エンゲージメント,,abbreviation,,,
+SENSE_COMMON,1030830,,,noun (common) (futsuumeishi),see|-|1030840|1|-|エンゲージメント|エンゲージメント[1],,abbreviation,,,
 SENSE_ENG,1030830,engagement,,,,,,,,
 SENSE_POL,1030830,zaręczyny,ang: engagement,,,,,,,
 SENSE_COMMON,1030830,,,nouns which may take the genitive case particle 'no',,,,,,
@@ -314126,8 +314148,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-26,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-26,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-27,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-27,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -586910,7 +586932,8 @@ zobaczyć się
 wpaść na (kogoś)","逢う może oznaczać bliskość lub emocje, a 遭う coś niepożądanego",,,,,,,
 SENSE_COMMON,1198180,,,"Godan verb with 'u' ending
 intransitive verb",,,word usually written using kana alone,,,
-SENSE_ENG,1198180,"to have (e.g. an accident) to suffer (e.g. an unpleasant fate)
+SENSE_ENG,1198180,"to have (e.g. an accident)
+to suffer (e.g. an unpleasant fate)
 to encounter
 to face
 to go through (e.g. a tough time)
@@ -767784,7 +767807,7 @@ SENSE_COMMON,2138260,,,"suffix
 noun or verb acting prenominally",,,,,,
 SENSE_ENG,2138260,that is,,,,,,,,
 SENSE_POL,2138260,?????,,,,,,,,
-SENSE_COMMON,2138260,,,interjection (kandoushi),see|-|1375820|-|-|なるほど|なるほど,,"slang
+SENSE_COMMON,2138260,,,interjection (kandoushi),see|-|1375820|1|-|なるほど|なるほど[1],,"slang
 abbreviation",,,
 SENSE_ENG,2138260,I see,,,,,,,,
 SENSE_POL,2138260,??????,,,,,,,,
@@ -1246753,6 +1246776,7 @@ BEGIN,1267760,,,,,,,,,
 KANJI,1267760,誇る,,"ichi1
 news1
 nf19",,,,,,
+KANJI,1267760,矜る,search-only kanji form,,,,,,,
 READING,1267760,HIRAGANA,ほこる,hokoru,-,,,"ichi1
 news1
 nf19",,
@@ -1311968,7 +1311992,7 @@ END,1045590,,,,,,,,,
 BEGIN,2796210,,,,,,,,,
 READING,2796210,HIRAGANA,なるへそ,naruheso,-,,,,,
 SENSE_COMMON,2796210,,,"interjection (kandoushi)
-adverb (fukushi)",see|-|1375820|-|-|なるほど|なるほど,,"slang
+adverb (fukushi)",see|-|1375820|1|-|なるほど|なるほど[1],,"slang
 jocular, humorous term",,,
 SENSE_ENG,2796210,"I see
 that's right!
@@ -1783090,9 +1783114,9 @@ READING,1516290,HIRAGANA,ほうぎょ,hougyo,-,,,,,
 SENSE_COMMON,1516290,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 intransitive verb",,,honorific or respectful (sonkeigo) language,,,
-SENSE_ENG,1516290,"death (esp. of an emperor or empress, incl. retired, dowager, etc.)
+SENSE_ENG,1516290,"death (of an emperor or empress, incl. dowager; formerly also retired emperor)
 demise",,,,,,,,
-SENSE_POL,1516290,śmierć,"szczególnie cesarza lub cesarzowej, w tym emerytowanego lub wdowy",,,,,,,
+SENSE_POL,1516290,śmierć,"cesarza lub cesarzowej, w tym cesarzowej wdowy; dawniej również emerytowanego cesarza",,,,,,,
 END,1516290,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
