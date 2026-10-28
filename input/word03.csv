@@ -22501,8 +22501,7 @@ WORD_EXPRESSION",,HIRAGANA,,,驥尾に付す,きびにふす,,kibi ni fusu,"odni
 iść do przodu kierując się czyimś postępowaniem",wyrażenie idiomatyczne,DICTIONARY2_SOURCE,,GroupId: 2843050
 207549,WORD_NOUN,,HIRAGANA,,,平坪,ひらつぼ,,hiratsubo,"tsubo
 tradycyjna jednostka powierzchni ziemi, ok. 3.31 m2 (wyjaśnienie)",,DICTIONARY2_SOURCE,,GroupId: 2843546
-207550,WORD_NOUN,,HIRAGANA,,,延べ坪,のべつぼ,,nobetsubo,całkowita powierzchnia,np. domu,,,"GroupId: 1600340
-Translate: total floor space (incl. all floors)"
+207550,WORD_NOUN,,HIRAGANA,,,延べ坪,のべつぼ,,nobetsubo,całkowita powierzchnia użytkowa,wraz ze wszystkimi kondygnacjami,DICTIONARY2_SOURCE,,GroupId: 1600340
 207551,WORD_NOUN,,HIRAGANA,,,瑠璃鶇,るりつぐみ,,ruritsugumi,błękitnik rudogardły,"gatunek ptaka z rodziny drozdowatych, Sialia sialis",,,"GroupId: 2190530
 Translate: eastern bluebird (Sialia sialis)
 MiscInfo: uk"
@@ -22622,8 +22621,7 @@ za dużo
 zawzięcie
 zaciekle
 zażarcie",,DICTIONARY2_SOURCE,DUPLICATE 323431,GroupId: 1482900
-207589,WORD_NOUN,,HIRAGANA,,,延坪,のべつぼ,,nobetsubo,całkowita powierzchnia,np. domu,,,"GroupId: 1600340
-Translate: total floor space (incl. all floors)"
+207589,WORD_NOUN,,HIRAGANA,,,延坪,のべつぼ,,nobetsubo,całkowita powierzchnia użytkowa,wraz ze wszystkimi kondygnacjami,DICTIONARY2_SOURCE,,GroupId: 1600340
 207590,WORD_NOUN,,KATAKANA,,,-,ルリツグミ,,ruritsugumi,błękitnik rudogardły,"gatunek ptaka z rodziny drozdowatych, Sialia sialis",,,"GroupId: 2190530
 Translate: eastern bluebird (Sialia sialis)
 MiscInfo: uk"
@@ -36924,8 +36922,8 @@ pluwacz
 rzygacz","ozdobne zakończenie rynny lub fontanny, ang: gargoyle",,,"GroupId: 1039640
 Translate: gargoyle"
 212490,"WORD_VERB_RU
-WORD_EXPRESSION",,HIRAGANA,,,責任を避ける,せきにんをさける,,sekinin o sakeru,uchylać się od odpowiedzialności,,,,"GroupId: 1888230
-Translate: to shirk a responsibility"
+WORD_EXPRESSION",,HIRAGANA,,,責任を避ける,せきにんをさける,,sekinin o sakeru,"uchylać się od odpowiedzialności
+uniknąć odpowiedzialności",,DICTIONARY2_SOURCE,,GroupId: 1888230
 212491,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,哺を吐く,ほをはく,,ho o haku,być chętny spotkać się z kimś,przestarzałe słowo,,,"GroupId: 2844198
 Translate: to be eager to meet someone
@@ -38024,8 +38022,7 @@ Translate: to make an educated guess
 MiscInfo: id
 Translate: to gamble (e.g. on getting the right questions)
 MiscInfo: id"
-212864,WORD_NOUN,,HIRAGANA,,,英緬戦争,えいめんせんそう,,eimen sensou,wojny anglo-birmańskie,"1823-1826, 1852-1853, 1885-1887",,,"GroupId: 2214210
-Translate: Anglo-Burmese Wars (1823-1826, 1852-1853, 1885-1887)"
+212864,WORD_NOUN,,HIRAGANA,,,英緬戦争,えいめんせんそう,,eimen sensou,wojny anglo-birmańskie,"termin historyczny; 1823-1826, 1852-1853, 1885-1887",DICTIONARY2_SOURCE,,GroupId: 2214210
 212865,WORD_NOUN,,HIRAGANA,,,公理的方法,こうりてきほうほう,,kouriteki houhou,metoda aksjomatyczna,,,,"GroupId: 2439280
 Translate: axiomatic method"
 212866,WORD_NOUN,,KATAKANA,,,-,スペアミント,,supeaminto,mięta zielona,ang: spearmint,,,"GroupId: 2473980
@@ -38809,9 +38806,7 @@ informacyjny",,,,"GroupId: 1921140
 Translate: having high information content
 Translate: informative"
 213141,WORD_NOUN,,HIRAGANA,,,補助用言,ほじょようげん,,hojoyougen,"pomocnicze odmienne słowo
-w języku japońskim pomocnicze czasowniki i przymiotniki",,,,"GroupId: 2428320
-Translate: auxiliary inflecting word
-Translate: in Japanese, auxiliary verbs and adjectives"
+w języku japońskim pomocnicze czasowniki i przymiotniki (wyjaśnienie)",lingwistyka,DICTIONARY2_SOURCE,,GroupId: 2428320
 213142,WORD_NOUN,,HIRAGANA,,,県立高等学校,けんりつこうとうがっこう,,kenritsu koutou gakkou,"prefekturalna szkoła średnia
 publiczne liceum",,,,"GroupId: 2761070
 Translate: prefectural senior high school
@@ -50791,10 +50786,8 @@ pięć przeszkód (które utrudniają praktyki ascetyczne) (zmysłowe pożądani
 gruba warstwa",,DICTIONARY2_SOURCE,,GroupId: 2845693
 217034,WORD_NOUN,,HIRAGANA,,,桁橋,けたばし,,ketabashi,most dźwigarowy,,,,"GroupId: 1253810
 Translate: girder bridge"
-217035,WORD_NOUN,,HIRAGANA,,,嬖臣,へいしん,,heishin,"faworyzowany służący
-ulubiony służący",archaizm,,,"GroupId: 2845660
-Translate: favored retainer
-MiscInfo: arch"
+217035,WORD_NOUN,,HIRAGANA,,,嬖臣,へいしん,,heishin,"ulubiony nadworny
+ulubieniec dworu",termin historyczny,DICTIONARY2_SOURCE,,GroupId: 2845660
 217036,WORD_NOUN,,HIRAGANA,,,霊草,れいそう,,reisou,"cudowne zioło
 święte zioło
 zioło o tajemniczych mocach",,,,"GroupId: 2845375
@@ -66324,8 +66317,7 @@ wartość modalna
 moda
 wartość najczęstsza","jedna z miar tendencji centralnej, statystyka dla zmiennych o rozkładzie dyskretnym, wskazująca na wartość o największym prawdopodobieństwie wystąpienia, lub wartość najczęściej występująca w próbie",,,"GroupId: 2358090
 Translate: mode"
-222532,WORD_NOUN,,HIRAGANA,,,閉扉,へいひ,,heihi,zamknięcie bramy lub drzwi,,,,"GroupId: 2846365
-Translate: closure of a gate or door"
+222532,WORD_NOUN,,HIRAGANA,,,閉扉,へいひ,,heihi,zamknięcie bramy lub drzwi,,DICTIONARY2_SOURCE,,GroupId: 2846365
 222533,WORD_NOUN,,KATAKANA,,,-,ディスクリート,,disukuriito,discrete (ang),przyrząd półprzewodnikowy,DICTIONARY2_SOURCE,,GroupId: 1957870
 222534,WORD_NOUN,,HIRAGANA,,,元曲,げんきょく,,genkyoku,qu,"rodzaj poezji chińskiej; stał się powszechny w okresie Południowej Dynastii Song, a największą popularnością cieszył się okresie Yuan, stąd gatunek nazywa się czasem Yuan qu",DICTIONARY2_SOURCE,,GroupId: 2846568
 222535,WORD_NOUN,,HIRAGANA,,,無筆,むひつ,,muhitsu,analfabetyzm,,,,"GroupId: 1673210
@@ -69167,10 +69159,7 @@ salmiak","odmiana lukrecji z dodatkiem chlorku amonu, popularna w Finlandii, kra
 223578,WORD_VERB_U,,HIRAGANA,,,絆す,ほだす,,hodasu,"krępować
 skrępować
 ograniczać
-związywać",,,,"GroupId: 2833307
-Translate: to fetter
-Translate: to shackle
-Translate: to bind"
+związywać",,DICTIONARY2_SOURCE,,GroupId: 2833307
 223579,"WORD_ADJECTIVE_I
 WORD_EXPRESSION",,HIRAGANA,,,身動きが取れない,みうごきがとれない,,miugoki ga torenai,"niezdolny do ruchu
 bez ruchu
@@ -69681,9 +69670,7 @@ Translate: kelp with herring roe (sushi type)"
 223759,WORD_ADJECTIVE_NA,,KATAKANA,,,-,コンフォータブル,,konfootaburu,"wygodny
 nieskrępowany",ang: comfortable,DICTIONARY2_SOURCE,,GroupId: 2757950
 223760,WORD_NOUN,,HIRAGANA,,,磁気抵抗,じきていこう,,jiki teikou,"reluktancja obwodu magnetycznego
-opór magnetyczny",,,,"GroupId: 1772080
-Translate: magnetic reluctance
-Translate: magnetic resistance"
+opór magnetyczny",,DICTIONARY2_SOURCE,,GroupId: 1772080
 223761,WORD_NOUN,,HIRAGANA,,,抜きつ抜かれつ,ぬきつぬかれつ,,nukitsu nukaretsu,???,,,,"GroupId: 2127640
 Translate: back-and-forth
 Translate: neck-and-neck"
@@ -77695,13 +77682,11 @@ MiscInfo: abbr"
 WORD_EXPRESSION",,HIRAGANA,,,絹の道,きぬのみち,,kinu no michi,jedwabny szlak,,,,"GroupId: 2639870
 Translate: Silk road"
 226595,WORD_NOUN,,HIRAGANA,,,集団訴訟,しゅうだんそしょう,,shuudan soshou,"pozew łączny
-powództwo grupowe
+pozew zbiorowy
 pozew grupowy
-sprawa z powództwa grupowego
-pozew zbiorowy",,,,"GroupId: 1813570
-Translate: class action
-Translate: class-action suit
-Translate: class-action lawsuit"
+powództwo grupowe
+postępowanie zbiorowe
+sprawa z powództwa grupowego",prawo,DICTIONARY2_SOURCE,,GroupId: 1813570
 226596,WORD_NOUN,,HIRAGANA,,,人脈作り,じんみゃくづくり,,jinmyaku dukuri,nawiązywanie kontaktów,,DICTIONARY2_SOURCE,DUPLICATE 226630,GroupId: 2827044
 226597,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,場所を取る,ばしょをとる,,basho o toru,"zajmować miejsce
@@ -83865,8 +83850,7 @@ Translate: heaven of controlling others' emanations"
 228809,WORD_NOUN,,HIRAGANA,,,事後従犯,じごじゅうはん,,jigo juuhan,"poplecznik
 osoba wspierająca poczynania",,,,"GroupId: 2218715
 Translate: accessory after the fact"
-228810,WORD_NOUN,,HIRAGANA,,,英蘭戦争,えいらんせんそう,,eiran sensou,wojny angielsko-holenderskie,"1652-1654, 1665-1667, 1672-1674",,,"GroupId: 2214280
-Translate: Anglo-Dutch Wars (1652-1654, 1665-1667, 1672-1674)"
+228810,WORD_NOUN,,HIRAGANA,,,英蘭戦争,えいらんせんそう,,eiran sensou,wojny angielsko-holenderskie,"termin historyczny; 1652-1654, 1665-1667, 1672-1674",DICTIONARY2_SOURCE,,GroupId: 2214280
 228811,WORD_NOUN,,KATAKANA,,,-,ゲゼルシャフト,,gezerushafuto,"społeczność
 społeczeństwo",niem: gesellschaft,,,"GroupId: 1048580
 Translate: gesellschaft
@@ -150965,7 +150949,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-27,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-28,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
