@@ -1,4 +1,4 @@
-HEADER,1.10,2026-10-30,,,,,,,,
+HEADER,1.10,2026-10-31,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -293660,6 +293660,13 @@ READING,2849292,HIRAGANA,まんがくかいとう,mangaku kaitou,-,,,,,
 SENSE_COMMON,2849292,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2849292,full acceptance of workers' pay demands,,,,,,,,
 SENSE_POL,2849292,pełna akceptacja żądań płacowych pracowników,,,,,,,,
+SENSE_COMMON,2849292,,,"noun (common) (futsuumeishi)
+noun or participle which takes the aux. verb suru
+intransitive verb",,,,,,
+SENSE_ENG,2849292,"full acceptance of all demands
+agreeing to all demands",,,,,,,,
+SENSE_POL,2849292,"pełna akceptacja wszystkich żądań
+wyrażenie zgody na wszystkie żądania",,,,,,,,
 END,2849292,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -314149,8 +314156,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-30,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-30,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-31,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-31,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1060410,17 +1060417,18 @@ END,1182160,,,,,,,,,
 BEGIN,1182260,,,,,,,,,
 KANJI,1182260,黄白,,,,,,,,
 READING,1182260,HIRAGANA,こうはく,kouhaku,-,,,,,
+READING,1182260,HIRAGANA,おうびゃく,oubyaku,-,,rarely used kana form,,,
 SENSE_COMMON,1182260,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1182260,"yellow and white
-gold and silver",,,,,,,,
-SENSE_POL,1182260,"żółty i biały
-złoty i srebrny",,,,,,,,
+SENSE_ENG,1182260,yellow and white,,,,,,,,
+SENSE_POL,1182260,żółty i biały,,,,,,,,
 SENSE_COMMON,1182260,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1182260,"bribery
-corruption",,,,,,,,
-SENSE_POL,1182260,"przekupstwo
-dawanie łapówek
-korupcja",,,,,,,,
+SENSE_ENG,1182260,gold and silver,,,,,,,,
+SENSE_POL,1182260,złoty i srebrny,,,,,,,,
+SENSE_COMMON,1182260,,,noun (common) (futsuumeishi),,,formal or literary term,,,
+SENSE_ENG,1182260,"money
+cash",,,,,,,,
+SENSE_POL,1182260,"pieniądze
+gotówka",,,,,,,,
 END,1182260,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1783123,9 +1783131,9 @@ READING,1516290,HIRAGANA,ほうぎょ,hougyo,-,,,,,
 SENSE_COMMON,1516290,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 intransitive verb",,,honorific or respectful (sonkeigo) language,,,
-SENSE_ENG,1516290,"death (of an emperor or empress, incl. dowager; formerly also retired emperor)
+SENSE_ENG,1516290,"death of a sovereign (emperor, empress, king, queen, etc.)
 demise",,,,,,,,
-SENSE_POL,1516290,śmierć,"cesarza lub cesarzowej, w tym cesarzowej wdowy; dawniej również emerytowanego cesarza",,,,,,,
+SENSE_POL,1516290,śmierć monarchy,"cesarza, cesarzowej, króla, królowej itp.",,,,,,,
 END,1516290,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1831431,7 +1831439,7 @@ KANJI,1701720,書見,,,,,,,,
 READING,1701720,HIRAGANA,しょけん,shoken,-,,,,,
 SENSE_COMMON,1701720,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
-intransitive verb",,,,,,
+intransitive verb",see|-|1456420|-|読書|-|読書,,dated term,,,
 SENSE_ENG,1701720,reading,,,,,,,,
 SENSE_POL,1701720,czytanie,,,,,,,,
 END,1701720,,,,,,,,,
@@ -1864708,15 +1864716,19 @@ END,2031110,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2101500,,,,,,,,,
-KANJI,2101500,無い袖は振れぬ,,,,,,,,
-KANJI,2101500,ない袖は振れぬ,,,,,,,,
-READING,2101500,HIRAGANA_EXCEPTION,ないそではふれぬ,nai sode wa furenu,-,,,,,
+KANJI,2101500,無い袖は振れない,,,,,,,,
+KANJI,2101500,ない袖は振れない,,,,,,,,
+KANJI,2101500,無い袖は振れぬ,search-only kanji form,,,,,,,
+KANJI,2101500,ない袖は振れぬ,search-only kanji form,,,,,,,
+READING,2101500,HIRAGANA_EXCEPTION,ないそではふれない,nai sode wa furenai,-,,,,,
 SENSE_COMMON,2101500,,,"expressions (phrases, clauses, etc.)",,,proverb,,,
-SENSE_ENG,2101500,"you can't give (use) what you don't have
+SENSE_ENG,2101500,"you can't give what you don't have
+you can't squeeze blood from a turnip
 nothing comes from nothing
 you can't shake sleeves you don't have|lit",,,,,,,,
-SENSE_POL,2101500,"nie możesz dać (użyć) tego, czego nie masz
-nic nie pochodzi z niczego
+SENSE_POL,2101500,"nie możesz dać tego, czego nie masz
+nie da się wycisnąć krwi z rzepy
+nic nie powstaje z niczego
 nie możesz potrząsać rękawami, których nie masz|lit",,,,,,,,
 END,2101500,,,,,,,,,
 ,,,,,,,,,,
