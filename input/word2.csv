@@ -1,4 +1,4 @@
-HEADER,1.10,2026-10-31,,,,,,,,
+HEADER,1.10,2026-11-01,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -47726,9 +47726,13 @@ BEGIN,1705830,,,,,,,,,
 KANJI,1705830,身欠きにしん,,,,,,,,
 KANJI,1705830,身欠きニシン,,,,,,,,
 KANJI,1705830,身欠き鰊,,,,,,,,
+KANJI,1705830,身欠鰊,search-only kanji form,,,,,,,
+KANJI,1705830,磨きニシン,search-only kanji form,,,,,,,
+KANJI,1705830,磨きにしん,search-only kanji form,,,,,,,
+KANJI,1705830,磨き鰊,search-only kanji form,,,,,,,
 READING,1705830,HIRAGANA,みがきにしん,migaki nishin,-,,,,,
 READING,1705830,HIRAGANA,みかきにしん,mikaki nishin,-,,,,,
-READING,1705830,KATAKANA,ミガキニシン,migaki nishin,NO_KANJI,,,,,
+READING,1705830,KATAKANA,ミガキニシン,migaki nishin,-,,search-only kana form,,,
 SENSE_COMMON,1705830,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1705830,"dried, sliced herring",,,,,,,,
 SENSE_POL,1705830,"suszony, pokrojony w plastry śledź",,,,,,,,
@@ -292104,15 +292108,15 @@ END,1374230,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1621440,,,,,,,,,
-KANJI,1621440,手透き,,,,,,,,
-KANJI,1621440,手隙,,,,,,,,
 KANJI,1621440,手すき,,,,,,,,
-KANJI,1621440,手空き,,,,,,,,
-KANJI,1621440,手明き,,,,,,,,
-READING,1621440,HIRAGANA,てすき,tesuki,-,"手透き
+KANJI,1621440,手隙,,,,,,,,
+KANJI,1621440,手空き,rarely used kanji form,,,,,,,
+KANJI,1621440,手透き,rarely used kanji form,,,,,,,
+KANJI,1621440,手明き,rarely used kanji form,,,,,,,
+READING,1621440,HIRAGANA,てすき,tesuki,-,"手すき
 手隙
-手すき
-手空き",,,,
+手空き
+手透き",,,,
 READING,1621440,HIRAGANA,てあき,teaki,-,"手空き
 手明き",,,,
 SENSE_COMMON,1621440,,,"noun (common) (futsuumeishi)
@@ -314156,8 +314160,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-31,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-10-31,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-01,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-01,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -411835,10 +411839,16 @@ BEGIN,2847513,,,,,,,,,
 READING,2847513,HIRAGANA,あかんたれ,akantare,-,,,,,
 READING,2847513,KATAKANA,アカンタレ,akantare,-,,,,,
 SENSE_COMMON,2847513,,,noun (common) (futsuumeishi),,,,Kansai-ben,,
-SENSE_ENG,2847513,good-for-nothing,,,,,,,,
+SENSE_ENG,2847513,"good-for-nothing
+coward
+wimp
+spineless person",,,,,,,,
 SENSE_POL,2847513,"wałkoń
 leń
-obibok",,,,,,,,
+obibok
+tchórz
+mięczak
+osoba bez charakteru",,,,,,,,
 END,2847513,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -909316,16 +909326,18 @@ END,1098250,,,,,,,,,
 BEGIN,1098360,,,,,,,,,
 READING,1098360,KATAKANA,バザー,bazaa,-,,,"gai1
 ichi1",,
-READING,1098360,KATAKANA,バザール,bazaaru,-,,,gai1,,
+COMMON,1098360,-|-|eng|bazaar,,,,,,,,
 SENSE_COMMON,1098360,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1098360,"charitable fund-raising fair (e.g. for an organization)
+charity bazaar",,,,,,,,
+SENSE_POL,1098360,"jarmark charytatywny
+bazar charytatywny",zbierający fundusze np. na rzecz jakiejś organizacji,,,,,,,
+SENSE_COMMON,1098360,,,noun (common) (futsuumeishi),see|-|2873249|1|-|バザール|バザール[1],,,,,
 SENSE_ENG,1098360,"bazaar
 bazar",,,,,,,,
 SENSE_POL,1098360,"bazar
 kiermasz
 jarmark",,,,,,,,
-SENSE_COMMON,1098360,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1098360,special sale (at a department store),,,,,,,,
-SENSE_POL,1098360,wyprzedaż specjalna,w domu towarowym,,,,,,,
 END,1098360,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -976046,6 +976058,7 @@ KANJI,1855730,升形,,,,,,,,
 KANJI,1855730,枡形,,,,,,,,
 KANJI,1855730,斗形,,,,,,,,
 KANJI,1855730,桝形,word containing out-dated kanji or kanji usage,,,,,,,
+KANJI,1855730,ます型,search-only kanji form,,,,,,,
 READING,1855730,HIRAGANA,ますがた,masugata,-,,,,,
 READING,1855730,HIRAGANA,とがた,togata,-,斗形,,,,
 SENSE_COMMON,1855730,,ますがた,noun (common) (futsuumeishi),,,,,,
@@ -1671090,11 +1671103,11 @@ BEGIN,1267410,,,,,,,,,
 KANJI,1267410,糊口,,,,,,,,
 KANJI,1267410,餬口,rarely used kanji form,,,,,,,
 READING,1267410,HIRAGANA,ここう,kokou,-,,,,,
-SENSE_COMMON,1267410,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1267410,,,noun (common) (futsuumeishi),,,formal or literary term,,,
 SENSE_ENG,1267410,"bare livelihood
-subsistence",,,,,,,,
-SENSE_POL,1267410,"utrzymanie
-źródło utrzymania",,,,,,,,
+bare subsistence",,,,,,,,
+SENSE_POL,1267410,"minimalne środki do życia
+minimalne środki na utrzymanie",,,,,,,,
 END,1267410,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1953733,6 +1953746,7 @@ END,1724980,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1428980,,,,,,,,,
 KANJI,1428980,腸チフス,,,,,,,,
+KANJI,1428980,腸窒扶斯,search-only kanji form,,,,,,,
 READING,1428980,HIRAGANA_KATAKANA,ちょうチフス,chou chifusu,-,,,,,
 SENSE_COMMON,1428980,,,noun (common) (futsuumeishi),,medicine,,,,
 SENSE_ENG,1428980,"typhoid fever
