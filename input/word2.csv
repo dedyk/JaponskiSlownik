@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-08,,,,,,,,
+HEADER,1.10,2026-11-09,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -45673,8 +45673,9 @@ END,2417570,,,,,,,,,
 BEGIN,2841341,,,,,,,,,
 KANJI,2841341,国破れて山河あり,,,,,,,,
 KANJI,2841341,国敗れて山河あり,,,,,,,,
-KANJI,2841341,国破山河在,,,,,,,,
-KANJI,2841341,国破れて山河在り,,,,,,,,
+KANJI,2841341,国破山河在,search-only kanji form,,,,,,,
+KANJI,2841341,国破れて山河在り,search-only kanji form,,,,,,,
+KANJI,2841341,国敗れて山河在り,search-only kanji form,,,,,,,
 READING,2841341,HIRAGANA,くにやぶれてさんがあり,kuni yaburete sanga ari,-,,,,,
 SENSE_COMMON,2841341,,,"expressions (phrases, clauses, etc.)",,,proverb,,,
 SENSE_ENG,2841341,"the land outlasts the king
@@ -314164,8 +314165,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-08,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-08,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-09,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-09,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -447767,7 +447768,7 @@ END,2841835,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2849948,,,,,,,,,
 READING,2849948,KATAKANA,チーティング,chiitingu,-,,,,,
-SENSE_COMMON,2849948,,,noun (common) (futsuumeishi),see|-|2758980|-|-|チート|チート,video games,,,,
+SENSE_COMMON,2849948,,,noun (common) (futsuumeishi),see|-|2758980|1|-|チート|チート[1],video games,,,,
 SENSE_ENG,2849948,cheating,,,,,,,,
 SENSE_POL,2849948,"oszukiwanie
 cheating",,,,,,,,
@@ -503021,11 +503022,11 @@ BEGIN,2131110,,,,,,,,,
 KANJI,2131110,赤い糸,,,,,,,,
 READING,2131110,HIRAGANA,あかいいと,akai ito,-,,,,,
 SENSE_COMMON,2131110,,,"expressions (phrases, clauses, etc.)
-noun (common) (futsuumeishi)",,,,,,
+noun (common) (futsuumeishi)",see|-|2846181|-|運命の赤い糸|-|運命の赤い糸,,abbreviation,,,
 SENSE_ENG,2131110,"red string of fate
-in Chinese-Japanese folklore, fated lovers were said to be joined by an unseen red string, tied around one little finger of each|expl",,,,,,,,
+in Japanese folklore, fated lovers were said to be joined by an unseen red string, tied around one little finger of each|expl",,,,,,,,
 SENSE_POL,2131110,"czerwony sznurek przeznaczenia
-w chińsko-japońskim folklorze, przeznaczeni sobie kochankowi związani ze sobą niewidzialnym czerwonym sznurkiem przywiązanym wokół najmniejszego palca|expl",,,,,,,,
+w japońskim folklorze, przeznaczeni sobie kochankowi związani ze sobą niewidzialnym czerwonym sznurkiem przywiązanym wokół najmniejszego palca|expl",,,,,,,,
 END,2131110,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -569311,11 +569312,12 @@ BEGIN,1581470,,,,,,,,,
 KANJI,1581470,代替,,"ichi1
 news1
 nf08",,,,,,
-KANJI,1581470,代替え,,,,,,,,
-READING,1581470,HIRAGANA,だいたい,daitai,-,代替,,"ichi1
+KANJI,1581470,代替え,search-only kanji form,,,,,,,
+READING,1581470,HIRAGANA,だいたい,daitai,-,,,"ichi1
 news1
 nf08",,
 READING,1581470,HIRAGANA,だいがえ,daigae,-,,,,,
+READING,1581470,HIRAGANA,だいかえ,daikae,-,,rarely used kana form,,,
 SENSE_COMMON,1581470,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 transitive verb",,,,,,
@@ -703321,6 +703323,9 @@ SENSE_COMMON,1092430,,,noun (common) (futsuumeishi),,manga,,,,
 SENSE_ENG,1092430,"storyboard
 rough draft",,,,,,,,
 SENSE_POL,1092430,rozrysowanie kadrów,,,,,,,,
+SENSE_COMMON,1092430,,,noun (common) (futsuumeishi),,manga,,,,
+SENSE_ENG,1092430,dialogue in a speech balloon,,,,,,,,
+SENSE_POL,1092430,dialog w dymku,,,,,,,,
 END,1092430,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -910898,9 +910903,9 @@ BEGIN,1844670,,,,,,,,,
 KANJI,1844670,早変わり,,"news2
 nf31",,,,,,
 KANJI,1844670,早替わり,,,,,,,,
-KANJI,1844670,早がわり,,,,,,,,
-KANJI,1844670,早変り,,,,,,,,
-KANJI,1844670,早替り,,,,,,,,
+KANJI,1844670,早がわり,search-only kanji form,,,,,,,
+KANJI,1844670,早変り,search-only kanji form,,,,,,,
+KANJI,1844670,早替り,search-only kanji form,,,,,,,
 READING,1844670,HIRAGANA,はやがわり,haya gawari,-,,,"news2
 nf31",,
 SENSE_COMMON,1844670,,,"noun (common) (futsuumeishi)
@@ -910912,7 +910917,7 @@ SENSE_COMMON,1844670,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 intransitive verb",,,,,,
 SENSE_ENG,1844670,"quick transformation
-turning suddenly into
+suddenly turning into
 (sudden) metamorphosis",,,,,,,,
 SENSE_POL,1844670,"szybka transformacja
 nagłe przekształcenie w
@@ -1366212,8 +1366217,8 @@ END,1632740,,,,,,,,,
 BEGIN,1633980,,,,,,,,,
 KANJI,1633980,抱え込む,,"news2
 nf40",,,,,,
-KANJI,1633980,かかえ込む,,,,,,,,
-KANJI,1633980,抱えこむ,,,,,,,,
+KANJI,1633980,抱えこむ,search-only kanji form,,,,,,,
+KANJI,1633980,かかえ込む,search-only kanji form,,,,,,,
 READING,1633980,HIRAGANA,かかえこむ,kakae komu,-,,,"news2
 nf40",,
 SENSE_COMMON,1633980,,,"Godan verb with 'mu' ending
@@ -1871169,6 +1871174,12 @@ READING,2758980,KATAKANA,チート,chiito,-,,,,,
 SENSE_COMMON,2758980,,,noun (common) (futsuumeishi),,video games,,,,
 SENSE_ENG,2758980,cheating,,,,,,,,
 SENSE_POL,2758980,oszukiwanie,ang: cheat,,,,,,,
+SENSE_COMMON,2758980,,,"noun (common) (futsuumeishi)
+adjectival nouns or quasi-adjectives (keiyodoshi)",,,colloquial,,,
+SENSE_ENG,2758980,"overwhelming power or ability (as if gained by cheating)
+character with such power or ability",esp. in fiction,,,,,,,
+SENSE_POL,2758980,"ogromna moc lub zdolność
+postać posiadająca taką moc lub zdolność","zdobyta nieuczciwie, szczególnie w fikcji",,,,,,,
 END,2758980,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1908068,7 +1908079,10 @@ END,1309570,,,,,,,,,
 BEGIN,1310650,,,,,,,,,
 KANJI,1310650,やむを得ず,,,,,,,,
 KANJI,1310650,止むを得ず,,,,,,,,
-KANJI,1310650,已むを得ず,,,,,,,,
+KANJI,1310650,已むを得ず,rarely used kanji form,,,,,,,
+KANJI,1310650,やむ得ず,search-only kanji form,,,,,,,
+KANJI,1310650,止む得ず,search-only kanji form,,,,,,,
+KANJI,1310650,已む得ず,search-only kanji form,,,,,,,
 READING,1310650,HIRAGANA,やむをえず,yamu o ezu,-,,,,,
 SENSE_COMMON,1310650,,,"expressions (phrases, clauses, etc.)
 adverb (fukushi)",,,,,,
@@ -1938907,26 +1938921,6 @@ powolnie
 wolno
 powoli",,,,,,,,
 END,2253830,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-BEGIN,2255150,,,,,,,,,
-KANJI,2255150,やむ得ず,,,,,,,,
-KANJI,2255150,止む得ず,,,,,,,,
-KANJI,2255150,已む得ず,,,,,,,,
-READING,2255150,HIRAGANA,やむえず,yamu ezu,-,,,,,
-SENSE_COMMON,2255150,,,adverb (fukushi),see|-|1310650|-|止むを得ず|-|止むを得ず,,word usually written using kana alone,,,
-SENSE_ENG,2255150,"unavoidably
-inevitably
-necessarily
-reluctantly
-against one's will",,,,,,,,
-SENSE_POL,2255150,"niechybnie
-nieuchronnie
-nieuniknienie
-koniecznie
-niechętnie
-wbrew własnej woli",,,,,,,,
-END,2255150,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2264450,,,,,,,,,
@@ -2207458,9 +2207452,8 @@ BEGIN,1229530,,,,,,,,,
 KANJI,1229530,求人誌,,,,,,,,
 READING,1229530,HIRAGANA,きゅうじんし,kyuujinshi,-,,,,,
 SENSE_COMMON,1229530,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1229530,job advertisement,,,,,,,,
-SENSE_POL,1229530,"ogłoszenie o pracę
-ogłoszenie z ofertą pracy",,,,,,,,
+SENSE_ENG,1229530,job advertisement magazine,,,,,,,,
+SENSE_POL,1229530,magazyn z ogłoszeniami o pracy,,,,,,,,
 END,1229530,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
