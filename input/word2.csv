@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-09,,,,,,,,
+HEADER,1.10,2026-11-10,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -28763,6 +28763,7 @@ END,2567580,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2829904,,,,,,,,,
 KANJI,2829904,個人プレー,,,,,,,,
+KANJI,2829904,個人プレイ,search-only kanji form,,,,,,,
 READING,2829904,HIRAGANA_KATAKANA,こじんプレー,kojin puree,-,,,,,
 SENSE_COMMON,2829904,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2829904,"individual play
@@ -45676,6 +45677,8 @@ KANJI,2841341,国敗れて山河あり,,,,,,,,
 KANJI,2841341,国破山河在,search-only kanji form,,,,,,,
 KANJI,2841341,国破れて山河在り,search-only kanji form,,,,,,,
 KANJI,2841341,国敗れて山河在り,search-only kanji form,,,,,,,
+KANJI,2841341,国敗れて山河有り,search-only kanji form,,,,,,,
+KANJI,2841341,国破れて山河有り,search-only kanji form,,,,,,,
 READING,2841341,HIRAGANA,くにやぶれてさんがあり,kuni yaburete sanga ari,-,,,,,
 SENSE_COMMON,2841341,,,"expressions (phrases, clauses, etc.)",,,proverb,,,
 SENSE_ENG,2841341,"the land outlasts the king
@@ -314165,8 +314168,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-09,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-09,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-10,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-10,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -585347,16 +585350,14 @@ przychodzić
 przyjeżdżać
 nadchodzić
 zbliżać się",np. przestrzennie lub czasowo,,,,,,,
-SENSE_COMMON,1547720,,,"Kuru verb - special class
-intransitive verb
-auxiliary verb",see|-|2172760|2|行ってくる|-|行ってくる[2],,word usually written using kana alone,,,
+SENSE_COMMON,1547720,,,"auxiliary verb
+Kuru verb - special class",see|-|2172760|2|行ってくる|-|行ってくる[2],,word usually written using kana alone,,,
 SENSE_ENG,1547720,"to come back
 to do ... and come back",after the -te form of a verb,,,,,,,
 SENSE_POL,1547720,"wracać
 robić ... i wracać",po formie -te czasownika,,,,,,,
-SENSE_COMMON,1547720,,,"Kuru verb - special class
-intransitive verb
-auxiliary verb",,,word usually written using kana alone,,,
+SENSE_COMMON,1547720,,,"auxiliary verb
+Kuru verb - special class",,,word usually written using kana alone,,,
 SENSE_ENG,1547720,"to come to be
 to become
 to get
@@ -585376,6 +585377,14 @@ SENSE_COMMON,1547720,,,"Kuru verb - special class
 intransitive verb",see|-|1632150|-|と来たら|-|と来たら,,,,,
 SENSE_ENG,1547720,"""to come to (e.g. """"when it comes to spinach ..."""")""",,,,,,,,
 SENSE_POL,1547720,???,,,,,,,,
+SENSE_COMMON,1547720,,,"Kuru verb - special class
+intransitive verb",,,,,,
+SENSE_ENG,1547720,"to affect (the body or mind)
+to hit
+to get to one",,,,,,,,
+SENSE_POL,1547720,"wpływać (na ciało lub umysł)
+dotykać (wpływać)
+dotrzeć do kogoś",,,,,,,,
 END,1547720,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -625219,6 +625228,11 @@ embarrassing",,,,,,,,
 SENSE_POL,1432680,"żenujący
 żenująco niestosowny
 kompromitujący",,,,,,,,
+SENSE_COMMON,1432680,,,adjective (keiyoushi),,,,,,
+SENSE_ENG,1432680,"damaging
+costly (of a loss, mistake, etc.)",,,,,,,,
+SENSE_POL,1432680,"szkodliwy
+kosztowny (w odniesieniu do straty, błędu itp.)",,,,,,,,
 END,1432680,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -636905,6 +636919,11 @@ SENSE_ENG,1252560,"light (shape or stones)
 stones that are not solid but can be used to sacrifice to gain something elsewhere|expl",,,,,,,,
 SENSE_POL,1252560,"nieważny (kształt lub kamienie)
 nieważne kamienie, które nie są lite, ale można je wykorzystać do złożenia ofiary, aby uzyskać coś innego|expl",,,,,,,,
+SENSE_COMMON,1252560,,かるい,adjective (keiyoushi),,computing,,,,
+SENSE_ENG,1252560,"fast
+responsive (of a computer, software, etc.)",,,,,,,,
+SENSE_POL,1252560,"szybki
+responsywny","w odniesieniu do komputera, oprogramowania itp.",,,,,,,
 END,1252560,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -654327,10 +654346,11 @@ END,1358220,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1847960,,,,,,,,,
 KANJI,1847960,浮き足立つ,,,,,,,,
-KANJI,1847960,浮足立つ,,,,,,,,
-KANJI,1847960,浮き足だつ,,,,,,,,
+KANJI,1847960,浮足立つ,search-only kanji form,,,,,,,
+KANJI,1847960,浮き足だつ,search-only kanji form,,,,,,,
 READING,1847960,HIRAGANA,うきあしだつ,uki ashi datsu,-,,,,,
-SENSE_COMMON,1847960,,,Godan verb with 'tsu' ending,,,,,,
+SENSE_COMMON,1847960,,,"Godan verb with 'tsu' ending
+intransitive verb",,,,,,
 SENSE_ENG,1847960,"to be prepared to flee
 to become restless
 to become agitated",,,,,,,,
@@ -850211,6 +850231,14 @@ pulling back
 retreat",usu. ヒキ,,,,,,,
 SENSE_POL,2026830,"cofnąć się
 wycofać się",zwykle ヒキ,,,,,,,
+SENSE_COMMON,2026830,,,noun (common) (futsuumeishi),,,colloquial,,,
+SENSE_ENG,2026830,"hook
+attention-grabbing element (e.g. in a story)",,,,,,,,
+SENSE_POL,2026830,"haczyk
+element przyciągający uwagę (np. w opowieści)",,,,,,,,
+SENSE_COMMON,2026830,,,noun (common) (futsuumeishi),,,colloquial,,,
+SENSE_ENG,2026830,"luck (in drawing cards, lottery prizes, etc.)",,,,,,,,
+SENSE_POL,2026830,szczęście,"np. w losowaniu kart, wygrywaniu na loterii itp.",,,,,,,
 END,2026830,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -859525,6 +859553,13 @@ SENSE_COMMON,1426480,,,"suffix
 counter",,,,,,
 SENSE_ENG,1426480,"counter for buddhas, gods, nobles, etc.",,,,,,,,
 SENSE_POL,1426480,"klasyfikator na buddy, bogów, szlachciców i etc",,,,,,,,
+SENSE_COMMON,1426480,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1426480,"running head (book, document)
+running heading",,,,,,,,
+SENSE_POL,1426480,żywa pagina,"np. książki, dokumentu",,,,,,,
+SENSE_COMMON,1426480,,,noun (common) (futsuumeishi),see|-|1203140|2|貝柱|-|貝柱[2],,abbreviation,,,
+SENSE_ENG,1426480,adductor muscle of a bivalve,,,,,,,,
+SENSE_POL,1426480,mięsień przywodzący małży,,,,,,,,
 END,1426480,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1454496,8 +1454531,8 @@ SENSE_POL,1413200,"ocean
 duże morze
 wielkie morze",,,,,,,,
 SENSE_COMMON,1413200,,おおうみ,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1413200,fabric pattern,,,,,,,,
-SENSE_POL,1413200,wzór na tkaninie,,,,,,,,
+SENSE_ENG,1413200,ocean-themed fabric pattern,,,,,,,,
+SENSE_POL,1413200,wzór tkaniny o tematyce morskiej,,,,,,,,
 END,1413200,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1594446,12 +1594481,15 @@ nouns which may take the genitive case particle 'no'
 adjectival nouns or quasi-adjectives (keiyodoshi)",,,,,,
 SENSE_ENG,1522370,"seriousness
 earnestness
-truth
-sanctity",usu. 本気で,,,,,,,
+sincerity",usu. 本気で,,,,,,,
 SENSE_POL,1522370,"powaga
 szczerość
-prawda
-świętość",zwykle 本気で,,,,,,,
+autentyczność",zwykle 本気で,,,,,,,
+SENSE_COMMON,1522370,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1522370,"sanity
+normal state of mind",,,,,,,,
+SENSE_POL,1522370,"zdrowy rozsądek
+normalny stan umysłu",,,,,,,,
 END,1522370,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1737946,11 +1737984,11 @@ END,2708040,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2714050,,,,,,,,,
 KANJI,2714050,飢え死に,,ichi1,,,,,,
-KANJI,2714050,餓え死に,,,,,,,,
-KANJI,2714050,飢死に,,,,,,,,
-KANJI,2714050,飢え死,irregular okurigana usage,,,,,,,
-KANJI,2714050,飢死,irregular okurigana usage,,,,,,,
-KANJI,2714050,饑死,irregular okurigana usage,,,,,,,
+KANJI,2714050,餓え死に,rarely used kanji form,,,,,,,
+KANJI,2714050,飢死に,search-only kanji form,,,,,,,
+KANJI,2714050,飢え死,search-only kanji form,,,,,,,
+KANJI,2714050,飢死,search-only kanji form,,,,,,,
+KANJI,2714050,饑死,search-only kanji form,,,,,,,
 READING,2714050,HIRAGANA,うえじに,ue ji ni,-,,,ichi1,,
 READING,2714050,HIRAGANA,かつえじに,katsue ji ni,-,,,,,
 SENSE_COMMON,2714050,,,"noun (common) (futsuumeishi)
@@ -1901254,8 +1901292,14 @@ END,1319760,,,,,,,,,
 BEGIN,2234450,,,,,,,,,
 READING,2234450,KATAKANA,ワカモレ,wakamore,-,,,,,
 READING,2234450,KATAKANA,ワカモーレ,wakamoore,-,,,,,
-READING,2234450,KATAKANA,グワカモーレ,guwakamoore,-,,,,,
-READING,2234450,KATAKANA,グワカモレ,guwakamore,-,,,,,
+READING,2234450,KATAKANA,グアカモーレ,guakamoore,-,,search-only kana form,,,
+READING,2234450,KATAKANA,グワカモーレ,guwakamoore,-,,search-only kana form,,,
+READING,2234450,KATAKANA,グワカモレ,guwakamore,-,,search-only kana form,,,
+READING,2234450,KATAKANA_EXCEPTION,グァカモレ,guakamore,-,,search-only kana form,,,
+READING,2234450,KATAKANA,ガカモーレ,gakamoore,-,,search-only kana form,,,
+READING,2234450,KATAKANA_EXCEPTION,グァカモーレ,guakamoore,-,,search-only kana form,,,
+READING,2234450,KATAKANA,グアカモレ,guakamore,-,,search-only kana form,,,
+READING,2234450,KATAKANA,ガカモレ,gakamore,-,,search-only kana form,,,
 COMMON,2234450,-|-|spa|,,,,,,,,
 SENSE_COMMON,2234450,,,noun (common) (futsuumeishi),,"food, cooking",,,,
 SENSE_ENG,2234450,guacamole,,,,,,,,
@@ -2065364,8 +2065408,12 @@ END,2871595,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2871596,,,,,,,,,
-READING,2871596,HIRAGANA,えい,ei,-,,,,,
+READING,2871596,HIRAGANA,えい,ei,-,,,spec1,,
+READING,2871596,HIRAGANA,ええい,eei,-,,search-only kana form,,,
+READING,2871596,HIRAGANA_KATAKANA,えーい,eei,-,,search-only kana form,,,
 READING,2871596,HIRAGANA_EXCEPTION,えいっ,ei,-,,search-only kana form,,,
+INFO_ENG,2871596,ええい is emphatic|note,,,,,,,,
+INFO_POL,2871596,ええい jest stanowcze|note,,,,,,,,
 SENSE_COMMON,2871596,,,interjection (kandoushi),,,,,,
 SENSE_ENG,2871596,"hyah!
 hah!
@@ -2065376,10 +2065424,10 @@ ha!","wypowiadane podczas wysiłku fizycznego, zbierania sił lub podejmowania z
 SENSE_COMMON,2871596,,,interjection (kandoushi),,,,,,
 SENSE_ENG,2871596,"ugh!
 argh!
-damn it!",expressing irritation or displeasure,,,,,,,
+damn it!",indicates irritation or displeasure,,,,,,,
 SENSE_POL,2871596,"uh!
 ah!
-cholera!",wyraża irytację lub niezadowolenie,,,,,,,
+cholera!",wskazuje na irytację lub niezadowolenie,,,,,,,
 END,2871596,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2270603,16 +2270651,20 @@ KANJI,2873287,内の子,search-only kanji form,,,,,,,
 READING,2873287,HIRAGANA,うちのこ,uchi no ko,-,,,,,
 READING,2873287,HIRAGANA_KATAKANA,うちのコ,uchi no ko,-,,search-only kana form,,,
 READING,2873287,KATAKANA_HIRAGANA,ウチのコ,uchi no ko,-,,search-only kana form,,,
-SENSE_COMMON,2873287,,,"noun (common) (futsuumeishi)
-expressions (phrases, clauses, etc.)",see|-|2460890|-|-|オリキャラ|オリキャラ,,Internet slang,,,
+SENSE_COMMON,2873287,,,"expressions (phrases, clauses, etc.)
+noun (common) (futsuumeishi)",see|-|2460890|-|-|オリキャラ|オリキャラ,,Internet slang,,,
 SENSE_ENG,2873287,one’s own original character (affectionate),,,,,,,,
-SENSE_POL,2873287,"własny, oryginalny charakter (czuły)",,,,,,,,
-SENSE_COMMON,2873287,,,"noun (common) (futsuumeishi)
-expressions (phrases, clauses, etc.)",,,,,,
-SENSE_ENG,2873287,"my child|lit
-my pet",,,,,,,,
-SENSE_POL,2873287,"moje dziecko|lit
-moje zwierzę domowe",,,,,,,,
+SENSE_POL,2873287,"własny, oryginalny charakter",czule,,,,,,,
+SENSE_COMMON,2873287,,,"expressions (phrases, clauses, etc.)
+noun (common) (futsuumeishi)",,,,,,
+SENSE_ENG,2873287,one's child,,,,,,,,
+SENSE_POL,2873287,"moje dziecko
+własne dziecko",,,,,,,,
+SENSE_COMMON,2873287,,,"expressions (phrases, clauses, etc.)
+noun (common) (futsuumeishi)",,,,,,
+SENSE_ENG,2873287,one's pet,,,,,,,,
+SENSE_POL,2873287,"moje zwierzę domowe
+własne zwierzę domowe",,,,,,,,
 END,2873287,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
