@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-10,,,,,,,,
+HEADER,1.10,2026-11-11,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -314168,8 +314168,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-10,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-10,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-11,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-11,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -620219,7 +620219,8 @@ SENSE_POL,2510600,parowiec,ang: steamship,,,,,,,
 SENSE_COMMON,2510600,,,noun (common) (futsuumeishi),see|-|1059150|2|-|シークレットサービス|シークレットサービス[2],,,,,
 SENSE_ENG,2510600,Secret Service (US),,,,,,,,
 SENSE_POL,2510600,Secret Service,,,,,,,,
-SENSE_COMMON,2510600,,,noun (common) (futsuumeishi),see|-|2850525|-|浮遊物質|-|浮遊物質,,,,,
+SENSE_COMMON,2510600,,,noun (common) (futsuumeishi),"see|-|2850525|-|浮遊物質|-|浮遊物質
+see|-|2873303|-|懸濁物質|-|懸濁物質",,,,,
 SENSE_ENG,2510600,"suspended solids
 SS",,,,,,,,
 SENSE_POL,2510600,zawiesina ciała stałego,ang: suspended solids,,,,,,,
@@ -850211,8 +850212,8 @@ END,1840110,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2026830,,,,,,,,,
-KANJI,2026830,引き,,,,,,,,
-READING,2026830,HIRAGANA,ひき,hiki,-,,,,,
+KANJI,2026830,引き,,spec1,,,,,,
+READING,2026830,HIRAGANA,ひき,hiki,-,,,spec1,,
 READING,2026830,KATAKANA,ヒキ,hiki,NO_KANJI,,,,,
 SENSE_COMMON,2026830,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2026830,"pull
@@ -949149,7 +949150,7 @@ END,1808040,,,,,,,,,
 BEGIN,2183440,,,,,,,,,
 KANJI,2183440,滅茶,"ateji (phonetic) reading
 rarely used kanji form",,,,,,,
-READING,2183440,HIRAGANA,めっちゃ,meccha,-,,,,,
+READING,2183440,HIRAGANA,めっちゃ,meccha,-,,,spec1,,
 READING,2183440,HIRAGANA_EXCEPTION,めっっちゃ,mecccha,-,,search-only kana form,,,
 READING,2183440,HIRAGANA_EXCEPTION,めっっっちゃ,meccccha,-,,search-only kana form,,,
 READING,2183440,HIRAGANA_EXCEPTION,めっっっっちゃ,mecccccha,-,,search-only kana form,,,
@@ -1336555,10 +1336556,19 @@ BEGIN,1334950,,,,,,,,,
 KANJI,1334950,十二支,,,,,,,,
 READING,1334950,HIRAGANA,じゅうにし,juu ni shi,-,,,,,
 SENSE_COMMON,1334950,,,noun (common) (futsuumeishi),"see|-|1307780|1|子|ね|子(ね)[1]
-see|-|1576460|1|卯|-|卯[1]
-see|-|1457270|1|寅|-|寅[1]",,,,,
-SENSE_ENG,1334950,12 signs of the Chinese zodiac,,,,,,,,
-SENSE_POL,1334950,12 znaków chińskiego zodiaku,,,,,,,,
+see|-|1172250|1|丑|-|丑[1]
+see|-|1457270|1|寅|-|寅[1]
+see|-|1576460|1|卯|う|卯(う)[1]
+see|-|1416290|1|辰|-|辰[1]
+see|-|1528180|1|巳|み|巳(み)[1]
+see|-|1268970|1|午|うま|午(うま)[1]
+see|-|1527090|1|未|ひつじ|未(ひつじ)[1]
+see|-|1362820|1|申|-|申[1]
+see|-|1457290|1|酉|-|酉[1]
+see|-|1567040|1|戌|-|戌[1]
+see|-|1575920|1|亥|-|亥[1]",,,,,
+SENSE_ENG,1334950,"the 12 signs of the Chinese zodiac (the Rat, the Ox, the Tiger, the Rabbit, the Snake, the Horse, the Sheep, the Monkey, the Rooster, the Dog and the Boar)",,,,,,,,
+SENSE_POL,1334950,12 znaków chińskiego zodiaku,"Szczur, Wół, Tygrys, Królik, Wąż, Koń, Owca, Małpa, Kogut, Pies i Dzik",,,,,,,
 END,1334950,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1596301,9 +1596311,9 @@ END,1580180,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1580410,,,,,,,,,
 KANJI,1580410,上唇,,ichi1,,,,,,
-KANJI,1580410,上くちびる,,,,,,,,
+KANJI,1580410,上くちびる,search-only kanji form,,,,,,,
 READING,1580410,HIRAGANA,うわくちびる,uwaku chibiru,-,,,ichi1,,
-READING,1580410,HIRAGANA,じょうしん,joushin,-,上唇,,,,
+READING,1580410,HIRAGANA,じょうしん,joushin,-,,,,,
 SENSE_COMMON,1580410,,,noun (common) (futsuumeishi),,anatomy,,,,
 SENSE_ENG,1580410,upper lip,,,,,,,,
 SENSE_POL,1580410,górna warga,,,,,,,,
