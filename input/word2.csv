@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-11,,,,,,,,
+HEADER,1.10,2026-11-12,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -314168,8 +314168,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-11,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-11,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-12,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-12,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -725405,10 +725405,19 @@ SENSE_COMMON,1050590,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 transitive verb",,,,,,
 SENSE_ENG,1050590,"copy
-photocopy",,,,,,,,
+reproduction
+photocopy
+cover (of a song)",,,,,,,,
 SENSE_POL,1050590,"kopia
 kopiowanie
-fotokopia",ang: copy,,,,,,,
+reprodukcja
+fotokopia
+cover (piosenki)",ang: copy,,,,,,,
+SENSE_COMMON,1050590,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1050590,"imitation
+counterfeit",,,,,,,,
+SENSE_POL,1050590,"imitacja
+podróbka",,,,,,,,
 SENSE_COMMON,1050590,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1050590,book jacket blurb,,,,,,,,
 SENSE_POL,1050590,okładka książki,,,,,,,,
@@ -963172,6 +963181,7 @@ READING,2009920,HIRAGANA,もぐもぐ,mogu mogu,-,,,,,
 READING,2009920,HIRAGANA,もごもご,mogo mogo,-,,,,,
 READING,2009920,KATAKANA,モグモグ,mogu mogu,-,,search-only kana form,,,
 READING,2009920,KATAKANA,モゴモゴ,mogo mogo,-,,search-only kana form,,,
+READING,2009920,HIRAGANA,むぐむぐ,mugu mugu,-,,search-only kana form,,,
 SENSE_COMMON,2009920,,,"adverb (fukushi)
 noun or participle which takes the aux. verb suru
 adverb taking the 'to' particle",,,onomatopoeic or mimetic word,,,
@@ -1422767,7 +1422777,7 @@ nf33",,,,,,
 READING,1383580,HIRAGANA,せきはん,sekihan,-,,,"ichi1
 news2
 nf33",,
-SENSE_COMMON,1383580,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1383580,,,noun (common) (futsuumeishi),,"food, cooking",,,,
 SENSE_ENG,1383580,red rice (beans and mochi) for auspicious occasions,,,,,,,,
 SENSE_POL,1383580,czerwony ryż (fasola i mochi) na pomyślne okazje,,,,,,,,
 END,1383580,,,,,,,,,
@@ -1454265,10 +1454275,13 @@ SENSE_POL,2009640,"brzęczenie
 buczenie",,,,,,,,
 SENSE_COMMON,2009640,,,"adverb (fukushi)
 adverb taking the 'to' particle",,,onomatopoeic or mimetic word,,,
-SENSE_ENG,2009640,"shake (with vigor)
-shaking",,,,,,,,
-SENSE_POL,2009640,"wstrząsnąć
-potrząsanie",z wigorem,,,,,,,
+SENSE_ENG,2009640,"vigorously (waving, swinging, shaking, etc.)",,,,,,,,
+SENSE_POL,2009640,energicznie,"np. machając, kołysząc, potrząsając itp.",,,,,,,
+SENSE_COMMON,2009640,,,"adverb (fukushi)
+adverb taking the 'to' particle",,,onomatopoeic or mimetic word,,,
+SENSE_ENG,2009640,"whoosh
+swish",,,,,,,,
+SENSE_POL,2009640,świst,,,,,,,,
 END,2009640,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1465905,14 +1465918,17 @@ nf16",,,,,,
 READING,1660540,HIRAGANA,しょぞう,shozou,-,,,"news1
 nf16",,
 SENSE_COMMON,1660540,,,"noun (common) (futsuumeishi)
-noun or participle which takes the aux. verb suru
-transitive verb
 nouns which may take the genitive case particle 'no'",,,,,,
 SENSE_ENG,1660540,(in one's) possession,,,,,,,,
 SENSE_POL,1660540,"posiadanie
 własność
 dobytek
 władanie",,,,,,,,
+SENSE_COMMON,1660540,,,"noun or participle which takes the aux. verb suru
+transitive verb",,,,,,
+SENSE_ENG,1660540,to possess,,,,,,,,
+SENSE_POL,1660540,"posiadać
+mieć",,,,,,,,
 END,1660540,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1488784,20 +1488800,27 @@ SENSE_COMMON,1435010,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 intransitive verb",,,,,,
 SENSE_ENG,1435010,"stagnation
-tie-up
 standstill
+remaining stationary
 congestion
 delay
 accumulation
-falling into arrears",,,,,,,,
+falling into arrears
+tie-up",,,,,,,,
 SENSE_POL,1435010,"stagnacja
+przestój
 zastój
 marazm
-przestój
+pozostawanie w miejscu
 zator
 zatłoczenie
+opóźnienie
 nagromadzenie
-zaległości płatnicze",,,,,,,,
+zaległości płatnicze
+zaleganie z płatnościami",,,,,,,,
+SENSE_COMMON,1435010,,,noun (common) (futsuumeishi),,medicine,,,,
+SENSE_ENG,1435010,retention (of food in the stomach),,,,,,,,
+SENSE_POL,1435010,zatrzymywanie (pokarmu w żołądku),,,,,,,,
 END,1435010,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1596314,6 +1596337,7 @@ END,1580180,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1580410,,,,,,,,,
 KANJI,1580410,上唇,,ichi1,,,,,,
+KANJI,1580410,上口唇,search-only kanji form,,,,,,,
 KANJI,1580410,上くちびる,search-only kanji form,,,,,,,
 READING,1580410,HIRAGANA,うわくちびる,uwaku chibiru,-,,,ichi1,,
 READING,1580410,HIRAGANA,じょうしん,joushin,-,,,,,
@@ -1871221,15 +1871245,24 @@ END,1096510,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2758980,,,,,,,,,
 READING,2758980,KATAKANA,チート,chiito,-,,,,,
-SENSE_COMMON,2758980,,,noun (common) (futsuumeishi),,video games,,,,
-SENSE_ENG,2758980,cheating,,,,,,,,
-SENSE_POL,2758980,oszukiwanie,ang: cheat,,,,,,,
+COMMON,2758980,-|-|eng|cheat,,,,,,,,
+SENSE_COMMON,2758980,,,"noun (common) (futsuumeishi)
+noun or participle which takes the aux. verb suru
+transitive verb
+intransitive verb",,,,,,
+SENSE_ENG,2758980,"cheating (in a video game, during a diet, etc.)",,,,,,,,
+SENSE_POL,2758980,oszukiwanie,"np. w grze komputerowej, ???",,,,,,,
 SENSE_COMMON,2758980,,,"noun (common) (futsuumeishi)
 adjectival nouns or quasi-adjectives (keiyodoshi)",,,colloquial,,,
 SENSE_ENG,2758980,"overwhelming power or ability (as if gained by cheating)
-character with such power or ability",esp. in fiction,,,,,,,
+being overpowered",esp. in fiction,,,,,,,
 SENSE_POL,2758980,"ogromna moc lub zdolność
-postać posiadająca taką moc lub zdolność","zdobyta nieuczciwie, szczególnie w fikcji",,,,,,,
+bycie wszechpotężny","zdobyta nieuczciwie, szczególnie w fikcji",,,,,,,
+SENSE_COMMON,2758980,,,noun (common) (futsuumeishi),,,colloquial,,,
+SENSE_ENG,2758980,"unfairly strong character
+overpowered character",esp. in fiction,,,,,,,
+SENSE_POL,2758980,"postać o ogromnej sile zdobytej nieuczciwie
+wszechpotężna postać",szczególnie w fikcji,,,,,,,
 END,2758980,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
