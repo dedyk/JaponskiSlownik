@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-12,,,,,,,,
+HEADER,1.10,2026-11-13,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -103632,7 +103632,7 @@ END,1102140,,,,,,,,,
 BEGIN,1480930,,,,,,,,,
 KANJI,1480930,反物,,"news2
 nf44",,,,,,
-KANJI,1480930,段物,,,,,,,,
+KANJI,1480930,段物,rarely used kanji form,,,,,,,
 READING,1480930,HIRAGANA,たんもの,tanmono,-,,,"news2
 nf44",,
 SENSE_COMMON,1480930,,,noun (common) (futsuumeishi),,,,,,
@@ -186681,9 +186681,14 @@ END,2851248,,,,,,,,,
 BEGIN,1070120,,,,,,,,,
 READING,1070120,KATAKANA,スチール,suchiiru,-,,,gai1,,
 READING,1070120,KATAKANA,スティール,sutiiru,-,,,,,
-SENSE_COMMON,1070120,,,noun (common) (futsuumeishi),see|-|1282680|1|鋼|-|鋼[1],,,,,
+SENSE_COMMON,1070120,,,"noun (common) (futsuumeishi)
+noun or verb acting prenominally",see|-|1282680|1|鋼|-|鋼[1],,,,,
 SENSE_ENG,1070120,steel,,,,,,,,
 SENSE_POL,1070120,stal,ang: steel,,,,,,,
+SENSE_COMMON,1070120,,,noun (common) (futsuumeishi),see|-|1070140|-|-|スチールギター|スチールギター,,abbreviation,,,
+SENSE_ENG,1070120,steel guitar,,,,,,,,
+SENSE_POL,1070120,"stalowa gitara
+gitara hawajska",,,,,,,,
 END,1070120,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -219903,7 +219908,8 @@ END,1647190,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1024850,,,,,,,,,
-READING,1024850,KATAKANA,インヴァリアント,invarianto,-,,,,,
+READING,1024850,KATAKANA,インバリアント,inbarianto,-,,,,,
+READING,1024850,KATAKANA,インヴァリアント,invarianto,-,,search-only kana form,,,
 SENSE_COMMON,1024850,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1024850,invariant,,,,,,,,
 SENSE_POL,1024850,"niezmiennik
@@ -290203,11 +290209,12 @@ END,2263440,,,,,,,,,
 BEGIN,2368700,,,,,,,,,
 KANJI,2368700,静止画像,,,,,,,,
 READING,2368700,HIRAGANA,せいしがぞう,seishi gazou,-,,,,,
-SENSE_COMMON,2368700,,,noun (common) (futsuumeishi),,computing,,,,
-SENSE_ENG,2368700,"background image
-static image",,,,,,,,
-SENSE_POL,2368700,"obrazek w tle
-statyczny obraz",,,,,,,,
+SENSE_COMMON,2368700,,,noun (common) (futsuumeishi),see|-|1381890|-|静止画|-|静止画,,,,,
+SENSE_ENG,2368700,"static image
+still picture
+still frame",,,,,,,,
+SENSE_POL,2368700,"statyczny obraz
+nieruchomy obraz",,,,,,,,
 END,2368700,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -314168,8 +314175,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-12,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-12,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-13,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-13,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1276007,6 +1276014,13 @@ uwielbiany
 czczony
 ceniony
 święty",,,,,,,,
+SENSE_COMMON,1598620,尊い,とうとい,adjective (keiyoushi),,,colloquial,,,
+SENSE_ENG,1598620,"precious
+adorable
+deeply endearing (of an idol, character, etc.)",,,,,,,,
+SENSE_POL,1598620,"cudowny
+uroczy
+niezwykle sympatyczny","o idolu, postaci itp.",,,,,,,
 END,1598620,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1772434,11 +1772448,14 @@ END,1329080,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1381890,,,,,,,,,
-KANJI,1381890,静止画,,,,,,,,
-READING,1381890,HIRAGANA,せいしが,seishiga,-,,,,,
+KANJI,1381890,静止画,,spec2,,,,,,
+READING,1381890,HIRAGANA,せいしが,seishiga,-,,,spec2,,
 SENSE_COMMON,1381890,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1381890,still image,,,,,,,,
-SENSE_POL,1381890,nieruchomy obraz,,,,,,,,
+SENSE_ENG,1381890,"static image
+still picture
+still frame",,,,,,,,
+SENSE_POL,1381890,"statyczny obraz
+nieruchomy obraz",,,,,,,,
 END,1381890,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2270698,7 +2270715,7 @@ READING,2873287,HIRAGANA_KATAKANA,うちのコ,uchi no ko,-,,search-only kana fo
 READING,2873287,KATAKANA_HIRAGANA,ウチのコ,uchi no ko,-,,search-only kana form,,,
 SENSE_COMMON,2873287,,,"expressions (phrases, clauses, etc.)
 noun (common) (futsuumeishi)",see|-|2460890|-|-|オリキャラ|オリキャラ,,Internet slang,,,
-SENSE_ENG,2873287,one’s own original character (affectionate),,,,,,,,
+SENSE_ENG,2873287,one's own original character (affectionate),,,,,,,,
 SENSE_POL,2873287,"własny, oryginalny charakter",czule,,,,,,,
 SENSE_COMMON,2873287,,,"expressions (phrases, clauses, etc.)
 noun (common) (futsuumeishi)",,,,,,
@@ -2274891,14 +2274908,18 @@ BEGIN,2873315,,,,,,,,,
 KANJI,2873315,コピー人間,,,,,,,,
 READING,2873315,KATAKANA_HIRAGANA,コピーにんげん,kopii ningen,-,,,,,
 SENSE_COMMON,2873315,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,2873315,cloned human being,,,,,,,,
+SENSE_ENG,2873315,"cloned human being
+clone",,,,,,,,
 SENSE_POL,2873315,"sklonowany człowiek
-sklonowana istota ludzka",,,,,,,,
-SENSE_COMMON,2873315,,,noun (common) (futsuumeishi),,,derogatory,,,
+sklonowana istota ludzka
+klon",,,,,,,,
+SENSE_COMMON,2873315,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2873315,"copycat
-person who imitates someone else",,,,,,,,
+person constantly imitating others
+characterless person",,,,,,,,
 SENSE_POL,2873315,"naśladowca
-osoba, która naśladuje kogoś innego",,,,,,,,
+osoba, która naśladuje kogoś innego
+osoba pozbawiona charakteru",,,,,,,,
 END,2873315,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
