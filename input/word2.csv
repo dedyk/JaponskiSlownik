@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-13,,,,,,,,
+HEADER,1.10,2026-11-14,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -210704,14 +210704,22 @@ nf05",,
 SENSE_COMMON,1512830,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 transitive verb",,,,,,
-SENSE_ENG,1512830,"defense
-defence
-pleading
-advocacy",,,,,,,,
+SENSE_ENG,1512830,"advocacy
+defense
+justification",,,,,,,,
 SENSE_POL,1512830,"obrona
 defensywa
 bronienie
 adwokatura",,,,,,,,
+SENSE_COMMON,1512830,,,"noun (common) (futsuumeishi)
+noun or participle which takes the aux. verb suru
+transitive verb",,law,,,,
+SENSE_ENG,1512830,"legal defense
+pleading
+representation",,,,,,,,
+SENSE_POL,1512830,"obrona prawna
+wnioski procesowe
+reprezentacja",,,,,,,,
 END,1512830,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -250169,17 +250177,16 @@ END,2827324,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2052500,,,,,,,,,
-KANJI,2052500,誹謗中傷,,,,,,,,
+KANJI,2052500,誹謗中傷,,spec1,,,,,,
 KANJI,2052500,ひぼう中傷,search-only kanji form,,,,,,,
-READING,2052500,HIRAGANA,ひぼうちゅうしょう,hibou chuushou,-,,,,,
+READING,2052500,HIRAGANA,ひぼうちゅうしょう,hibou chuushou,-,,,spec1,,
 SENSE_COMMON,2052500,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 transitive verb",,,,,,
 SENSE_ENG,2052500,"slander
 calumny
 defamation
-libel
-abuse",,,,,,,,
+libel",,,,,,,,
 SENSE_POL,2052500,"oszczerstwo
 zniesławienie
 pomówienie
@@ -293978,7 +293985,8 @@ READING,1362100,HIRAGANA,しんせん,shinsen,-,,,"ichi1
 news1
 nf07",,
 SENSE_COMMON,1362100,,,adjectival nouns or quasi-adjectives (keiyodoshi),,,,,,
-SENSE_ENG,1362100,fresh,,,,,,,,
+SENSE_ENG,1362100,"fresh
+new",,,,,,,,
 SENSE_POL,1362100,"nowy
 świeży",,,,,,,,
 END,1362100,,,,,,,,,
@@ -314175,8 +314183,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-13,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-13,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-14,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-14,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -674600,6 +674608,11 @@ SENSE_POL,1391610,???,,,,,,,,
 SENSE_COMMON,1391610,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1391610,low angle (photo or drawing),,,,,,,,
 SENSE_POL,1391610,niski kąt (fotografia lub rysunek),,,,,,,,
+SENSE_COMMON,1391610,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1391610,"teaser copy
+blurb",,,,,,,,
+SENSE_POL,1391610,"tekst zapowiedzi
+notka reklamowa",,,,,,,,
 END,1391610,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1435967,8 +1435980,13 @@ BEGIN,1816790,,,,,,,,,
 KANJI,1816790,詩語,,,,,,,,
 READING,1816790,HIRAGANA,しご,shigo,-,,,,,
 SENSE_COMMON,1816790,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1816790,poetic diction,,,,,,,,
-SENSE_POL,1816790,styl poetycki,,,,,,,,
+SENSE_ENG,1816790,"poetic diction
+poetic word
+words used in poetry",,,,,,,,
+SENSE_POL,1816790,"styl poetycki
+język poetycki
+słowo poetyckie
+słowa używane w poezji",,,,,,,,
 END,1816790,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1763444,8 +1763462,8 @@ END,1773620,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2744730,,,,,,,,,
-KANJI,2744730,普段から,,,,,,,,
-READING,2744730,HIRAGANA,ふだんから,fudan kara,-,,,,,
+KANJI,2744730,普段から,,spec1,,,,,,
+READING,2744730,HIRAGANA,ふだんから,fudan kara,-,,,spec1,,
 SENSE_COMMON,2744730,,,"expressions (phrases, clauses, etc.)
 adverb (fukushi)
 nouns which may take the genitive case particle 'no'",,,,,,
@@ -1774777,7 +1774795,7 @@ BEGIN,1883010,,,,,,,,,
 KANJI,1883010,小胞,,,,,,,,
 READING,1883010,HIRAGANA,しょうほう,shouhou,-,,,,,
 SENSE_COMMON,1883010,,,"noun (common) (futsuumeishi)
-nouns which may take the genitive case particle 'no'",,,,,,
+nouns which may take the genitive case particle 'no'",,biology,,,,
 SENSE_ENG,1883010,vesicle,,,,,,,,
 SENSE_POL,1883010,pęcherzyk,,,,,,,,
 END,1883010,,,,,,,,,
@@ -1885251,14 +1885269,15 @@ END,2192960,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2186050,,,,,,,,,
-READING,2186050,KATAKANA,ゴーヤ,gooya,-,,,,,
+READING,2186050,KATAKANA,ゴーヤ,gooya,-,,,spec2,,
 READING,2186050,KATAKANA,ゴーヤー,gooyaa,-,,,,,
-READING,2186050,HIRAGANA,ごおや,gooya,-,,,,,
-READING,2186050,HIRAGANA,ごおやあ,gooyaa,-,,,,,
+READING,2186050,HIRAGANA,ごおや,gooya,-,,search-only kana form,,,
+READING,2186050,HIRAGANA,ごおやあ,gooyaa,-,,search-only kana form,,,
 SENSE_COMMON,2186050,,,noun (common) (futsuumeishi),"see|-|2186040|-|苦瓜|-|苦瓜
 see|-|2186030|-|蔓茘枝|-|蔓茘枝",,,Ryuukyuu-ben,,
 SENSE_ENG,2186050,"bitter melon (Momordica charantia)
-bitter gourd",,,,,,,,
+bitter gourd
+goya",,,,,,,,
 SENSE_POL,2186050,"przepękla ogórkowata
 balsamka ogórkowata","gatunek rośliny z rodziny dyniowatych, Momordica charantia",,,,,,,
 END,2186050,,,,,,,,,
@@ -2175590,11 +2175609,14 @@ END,2611910,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2730780,,,,,,,,,
-KANJI,2730780,土日祝,,,,,,,,
-READING,2730780,HIRAGANA,どにちしゅく,donichishuku,-,,,,,
-SENSE_COMMON,2730780,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,2730780,"Saturdays, Sundays, and holidays",,,,,,,,
-SENSE_POL,2730780,"sobota, niedziela i święta",,,,,,,,
+KANJI,2730780,土日祝,,spec1,,,,,,
+READING,2730780,HIRAGANA,どにちしゅく,donichishuku,-,,,spec1,,
+SENSE_COMMON,2730780,,,"expressions (phrases, clauses, etc.)
+noun (common) (futsuumeishi)",,,abbreviation,,,
+SENSE_ENG,2730780,"Saturdays, Sundays, and holidays
+weekends and holidays",abbr. of 土曜・日曜・祝日,,,,,,,
+SENSE_POL,2730780,"sobota, niedziela i święta
+weekend i dni świąteczne",skrót od 土曜・日曜・祝日,,,,,,,
 END,2730780,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2209071,7 +2209093,7 @@ END,2692620,,,,,,,,,
 BEGIN,1101360,,,,,,,,,
 READING,1101360,KATAKANA,パウンドケーキ,paundo keeki,-,,,,,
 READING,1101360,KATAKANA,パウンド・ケーキ,paundo keeki,-,,,,,
-SENSE_COMMON,1101360,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1101360,,,noun (common) (futsuumeishi),,"food, cooking",,,,
 SENSE_ENG,1101360,pound cake,,,,,,,,
 SENSE_POL,1101360,pound cake,"ciasto, które tradycyjnie przygotowuje się z funta każdego z czterech składników: mąki, masła, jajek i cukru",,,,,,,
 END,1101360,,,,,,,,,
