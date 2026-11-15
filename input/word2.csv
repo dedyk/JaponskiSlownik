@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-14,,,,,,,,
+HEADER,1.10,2026-11-15,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -246829,7 +246829,8 @@ END,1675360,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1128700,,,,,,,,,
 READING,1128700,KATAKANA,マドリガル,madorigaru,-,,,,,
-SENSE_COMMON,1128700,,,noun (common) (futsuumeishi),,,,,,
+READING,1128700,KATAKANA,マドリガーレ,madorigaare,-,,,,,
+SENSE_COMMON,1128700,,,noun (common) (futsuumeishi),,music,,,,
 SENSE_ENG,1128700,madrigal,,,,,,,,
 SENSE_POL,1128700,madrygał,ang: madrigal,,,,,,,
 END,1128700,,,,,,,,,
@@ -314183,8 +314184,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-14,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-14,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-15,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-15,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -368150,7 +368151,7 @@ END,2842471,,,,,,,,,
 BEGIN,2461310,,,,,,,,,
 READING,2461310,KATAKANA,ポルタメント,porutamento,-,,,,,
 COMMON,2461310,-|-|ita|,,,,,,,,
-SENSE_COMMON,2461310,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,2461310,,,noun (common) (futsuumeishi),,music,,,,
 SENSE_ENG,2461310,portamento,,,,,,,,
 SENSE_POL,2461310,portamento,oznaczenie płynnego przejścia od jednego dźwięku do drugiego z wykorzystaniem wszystkich pośrednich wysokości dźwięku,,,,,,,
 END,2461310,,,,,,,,,
@@ -389636,28 +389637,34 @@ END,2715440,,,,,,,,,
 BEGIN,2594200,,,,,,,,,
 KANJI,2594200,Ｗ,,,,,,,,
 KANJI,2594200,ｗ,,,,,,,,
-READING,2594200,KATAKANA,ダブリュー,daburyuu,-,,,,,
+READING,2594200,KATAKANA,ダブリュー,daburyuu,-,,,spec2,,
 READING,2594200,KATAKANA,ダブルユー,daburuyuu,-,,search-only kana form,,,
+READING,2594200,KATAKANA,ダブル,daburu,-,,search-only kana form,,,
 SENSE_COMMON,2594200,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2594200,"W
 w",,,,,,,,
 SENSE_POL,2594200,"W
 w",,,,,,,,
-SENSE_COMMON,2594200,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,2594200,Ｗ,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2594200,woman,,,,,,,,
 SENSE_POL,2594200,kobieta,,,,,,,,
-SENSE_COMMON,2594200,,,noun (common) (futsuumeishi),see|-|1149070|-|-|ワット|ワット,,,,,
+SENSE_COMMON,2594200,Ｗ,,noun (common) (futsuumeishi),see|-|1149070|-|-|ワット|ワット,,,,,
 SENSE_ENG,2594200,watt,,,,,,,,
 SENSE_POL,2594200,wat,jednostka mocy,,,,,,,
-SENSE_COMMON,2594200,,,noun (common) (futsuumeishi),see|-|1026070|-|-|ウエスト|ウエスト,,,,,
+SENSE_COMMON,2594200,Ｗ,,noun (common) (futsuumeishi),see|-|1026070|-|-|ウエスト|ウエスト,,,,,
 SENSE_ENG,2594200,waist (measurement),,,,,,,,
 SENSE_POL,2594200,talia (pomiar),,,,,,,,
-SENSE_COMMON,2594200,,,noun (common) (futsuumeishi),see|-|2834541|-|Ｗ杯|-|Ｗ杯,,,,,
+SENSE_COMMON,2594200,Ｗ,,noun (common) (futsuumeishi),see|-|2834541|-|Ｗ杯|-|Ｗ杯,,,,,
 SENSE_ENG,2594200,world,,,,,,,,
 SENSE_POL,2594200,świat,,,,,,,,
-SENSE_COMMON,2594200,,,noun (common) (futsuumeishi),see|-|1077110|1|-|ダブル|ダブル[1],,,,,
+SENSE_COMMON,2594200,Ｗ,,noun (common) (futsuumeishi),see|-|1077110|1|-|ダブル|ダブル[1],,,,,
 SENSE_ENG,2594200,double,oft. read ダブル,,,,,,,
 SENSE_POL,2594200,podwójny,często czytane jako ダブル,,,,,,,
+SENSE_COMMON,2594200,,,noun (common) (futsuumeishi),see|-|2714230|-|笑|-|笑,,Internet slang,,,
+SENSE_ENG,2594200,"LOL
+haha",,,,,,,,
+SENSE_POL,2594200,"LOL
+haha",,,,,,,,
 END,2594200,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -517351,13 +517358,14 @@ END,2830996,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2855883,,,,,,,,,
+KANJI,2855883,五弦琴,,,,,,,,
 KANJI,2855883,五絃琴,,,,,,,,
 READING,2855883,HIRAGANA,ごげんきん,gogenkin,-,,,,,
-SENSE_COMMON,2855883,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,2855883,"five-stringed instrument
-pentachord",,,,,,,,
-SENSE_POL,2855883,"instrument pięciostrunowy
-pięciodźwięk",,,,,,,,
+SENSE_COMMON,2855883,,,noun (common) (futsuumeishi),see|-|2229960|-|琴|きん|琴(きん),,,,,
+SENSE_ENG,2855883,"ancient Chinese five-stringed qin
+five-stringed guqin",,,,,,,,
+SENSE_POL,2855883,"starożytny chiński pięciostrunowy qin
+pięciostrunowy guqin",,,,,,,,
 END,2855883,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -594876,7 +594884,7 @@ SENSE_ENG,1207590,to hang,,,,,,,,
 SENSE_POL,1207590,"być zawieszonym (np. obraz na ścianie)
 wisieć",,,,,,,,
 SENSE_COMMON,1207590,,,"Godan verb with 'ru' ending
-intransitive verb",see|-|1535140|-|お目にかかる|-|お目にかかる,,word usually written using kana alone,,,
+intransitive verb",see|-|1535140|2|お目にかかる|-|お目にかかる[2],,word usually written using kana alone,,,
 SENSE_ENG,1207590,"to come into view
 to arrive",,,,,,,,
 SENSE_POL,1207590,"pojawić się na widoku
@@ -594923,12 +594931,12 @@ intransitive verb",,,word usually written using kana alone,,,
 SENSE_ENG,1207590,"to be covered (e.g. with dust, a table-cloth, etc.)",,,,,,,,
 SENSE_POL,1207590,być pokrytym,"np. kurzem, obrusem",,,,,,,
 SENSE_COMMON,1207590,,,"Godan verb with 'ru' ending
-intransitive verb",see|-|1854960|-|罠にかかる|-|罠にかかる,,word usually written using kana alone,,,
+intransitive verb",see|-|1854960|1|罠にかかる|-|罠にかかる[1],,word usually written using kana alone,,,
 SENSE_ENG,1207590,to be caught in,,,,,,,,
 SENSE_POL,1207590,"zostać złapanym w
 wpadać w sidła",,,,,,,,
 SENSE_COMMON,1207590,,,"Godan verb with 'ru' ending
-intransitive verb",see|-|2208100|-|電話が掛かる|-|電話が掛かる,,word usually written using kana alone,,,
+intransitive verb",see|-|2208100|-|電話がかかる|-|電話がかかる,,word usually written using kana alone,,,
 SENSE_ENG,1207590,to get a call,,,,,,,,
 SENSE_POL,1207590,"odebrać połączenie
 połączyć się telefonicznie",,,,,,,,
@@ -594944,6 +594952,14 @@ to get down to",usu. ～にかかる,,,,,,,
 SENSE_POL,1207590,"rozpocząć (zadanie)
 zacząć (robić)
 zabrać się za",zwykle ～にかかる,,,,,,,
+SENSE_COMMON,1207590,,,"Godan verb with 'ru' ending
+intransitive verb",,,word usually written using kana alone,,,
+SENSE_ENG,1207590,"to befall someone (inconvenience, trouble, etc.)
+to be burdened with
+to be imposed on",as in 迷惑がかかる,,,,,,,
+SENSE_POL,1207590,"napotkać kogoś (kłopoty, niedogodności itp.)
+być obciążonym
+zostać zmuszonym do",jako 迷惑がかかる,,,,,,,
 END,1207590,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -824549,7 +824565,7 @@ END,1070500,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1070510,,,,,,,,,
 READING,1070510,KATAKANA,ステッキ,sutekki,-,,,gai1,,
-SENSE_COMMON,1070510,,,noun (common) (futsuumeishi),see|-|1356620|-|杖|つえ|杖(つえ),,,,,
+SENSE_COMMON,1070510,,,noun (common) (futsuumeishi),see|-|1356620|1|杖|つえ|杖(つえ)[1],,,,,
 SENSE_ENG,1070510,"(walking) stick
 cane
 wand",,,,,,,,
@@ -858245,6 +858261,7 @@ BEGIN,2858258,,,,,,,,,
 KANJI,2858258,ねじり上げる,,,,,,,,
 KANJI,2858258,捩じり上げる,rarely used kanji form,,,,,,,
 KANJI,2858258,捻じり上げる,rarely used kanji form,,,,,,,
+KANJI,2858258,捩り上げる,rarely used kanji form,,,,,,,
 READING,2858258,HIRAGANA,ねじりあげる,nejiri ageru,-,,,,,
 SENSE_COMMON,2858258,,,"Ichidan verb
 transitive verb",,,,,,
@@ -867199,7 +867216,7 @@ END,2449420,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2130460,,,,,,,,,
-READING,2130460,HIRAGANA,どころ,dokoro,-,,,,,
+READING,2130460,HIRAGANA,どころ,dokoro,-,,,spec1,,
 SENSE_COMMON,2130460,,,particle,,,,,,
 SENSE_ENG,2130460,"the place for
 the time for
@@ -908139,10 +908156,12 @@ nf28",,
 SENSE_COMMON,1356620,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1356620,"cane
 walking stick
-staff
-wand",,,,,,,,
+staff",,,,,,,,
 SENSE_POL,1356620,"laska (do chodzenia)
 laska do podpierania się",,,,,,,,
+SENSE_COMMON,1356620,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1356620,wand,,,,,,,,
+SENSE_POL,1356620,różdżka,,,,,,,,
 END,1356620,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1146202,8 +1146221,8 @@ BEGIN,1206460,,,,,,,,,
 KANJI,1206460,革靴,,"news2
 nf29
 spec2",,,,,,
-KANJI,1206460,皮靴,,,,,,,,
-KANJI,1206460,革沓,,,,,,,,
+KANJI,1206460,皮靴,rarely used kanji form,,,,,,,
+KANJI,1206460,革沓,rarely used kanji form,,,,,,,
 READING,1206460,HIRAGANA,かわぐつ,kawagutsu,-,,,"news2
 nf29
 spec2",,
@@ -1384758,12 +1384777,20 @@ END,2065220,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2119290,,,,,,,,,
 KANJI,2119290,マジ切れ,,,,,,,,
-READING,2119290,KATAKANA_HIRAGANA,マジぎれ,maji gire,-,,,,,
+KANJI,2119290,まじ切れ,search-only kanji form,,,,,,,
 READING,2119290,KATAKANA,マジギレ,maji gire,NO_KANJI,,,,,
+READING,2119290,KATAKANA_HIRAGANA,マジぎれ,maji gire,-,,,,,
+READING,2119290,HIRAGANA,まじぎれ,maji gire,-,,search-only kana form,,,
 SENSE_COMMON,2119290,,,"noun (common) (futsuumeishi)
-noun or participle which takes the aux. verb suru",see|-|2119260|-|-|キレる|キレる,,slang,,,
-SENSE_ENG,2119290,being truly angry,,,,,,,,
-SENSE_POL,2119290,bycie naprawdę złym,,,,,,,,
+noun or participle which takes the aux. verb suru
+intransitive verb",see|-|2119260|-|-|キレる|キレる,,slang,,,
+SENSE_ENG,2119290,"being truly angry
+loosing one's cool entirely
+crashing out",,,,,,,,
+SENSE_POL,2119290,"być naprawdę wściekłym
+bycie naprawdę złym
+całkowicie stracić panowanie nad sobą
+???",,,,,,,,
 END,2119290,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1479630,8 +1479657,10 @@ KANJI,2610510,魔法の杖,,,,,,,,
 KANJI,2610510,魔法のつえ,search-only kanji form,,,,,,,
 READING,2610510,HIRAGANA,まほうのつえ,mahou no tsue,-,,,,,
 SENSE_COMMON,2610510,,,noun (common) (futsuumeishi),see|-|2610500|-|魔法杖|-|魔法杖,,,,,
-SENSE_ENG,2610510,magic wand,,,,,,,,
-SENSE_POL,2610510,czarodziejska różdżka,,,,,,,,
+SENSE_ENG,2610510,"magic wand
+magic staff",,,,,,,,
+SENSE_POL,2610510,"czarodziejska różdżka
+magiczna różdżka",,,,,,,,
 END,2610510,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1605646,9 +1605675,10 @@ END,2183800,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2692230,,,,,,,,,
 READING,2692230,KATAKANA,トンコリ,tonkori,-,,,,,
+COMMON,2692230,-|-|ain|,,,,,,,,
 SENSE_COMMON,2692230,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,2692230,Ainu plucked string instrument,,,,,,,,
-SENSE_POL,2692230,strunowy instrument Ainu'ów,,,,,,,,
+SENSE_ENG,2692230,tonkori (three to five-stringed Ainu plucked string instrument),,,,,,,,
+SENSE_POL,2692230,tonkori,trzy lub pięciostrunowy instrument strunowy szarpany Ajnów,,,,,,,
 END,2692230,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1699101,6 +1699131,7 @@ END,1648660,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1649080,,,,,,,,,
+KANJI,1649080,喰種,search-only kanji form,,,,,,,
 READING,1649080,KATAKANA,グール,guuru,-,,,gai1,,
 SENSE_COMMON,1649080,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1649080,ghoul,,,,,,,,
@@ -1750680,7 +1750711,8 @@ READING,1553870,HIRAGANA,りょうだん,ryoudan,-,,,,,
 SENSE_COMMON,1553870,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 transitive verb",,,,,,
-SENSE_ENG,1553870,bisection,,,,,,,,
+SENSE_ENG,1553870,"bisection
+cutting in two",,,,,,,,
 SENSE_POL,1553870,"przecięcie
 podział na dwie części
 podział na dwie połowy",,,,,,,,
@@ -1902160,12 +1902192,22 @@ END,1832410,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1420380,,,,,,,,,
 KANJI,1420380,知ったかぶり,,,,,,,,
-KANJI,1420380,知ったか振り,,,,,,,,
+KANJI,1420380,知ったか振り,rarely used kanji form,,,,,,,
 READING,1420380,HIRAGANA,しったかぶり,shittaka buri,-,,,,,
 SENSE_COMMON,1420380,,,"noun (common) (futsuumeishi)
-noun or participle which takes the aux. verb suru",,,,,,
-SENSE_ENG,1420380,pretending to know,,,,,,,,
-SENSE_POL,1420380,"udawanie, że się wie",,,,,,,,
+noun or participle which takes the aux. verb suru
+intransitive verb",,,,,,
+SENSE_ENG,1420380,"pretending to know
+acting like a know-it-all",,,,,,,,
+SENSE_POL,1420380,"udawanie, że się wie
+zachowywanie się jak mądrala",,,,,,,,
+SENSE_COMMON,1420380,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1420380,"person pretending to know things they do not
+know-it-all
+fraud",,,,,,,,
+SENSE_POL,1420380,"osoba udająca, że wie to, czego nie wie
+mądrala
+oszust",,,,,,,,
 END,1420380,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2023341,8 +2023383,8 @@ END,2832146,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2191420,,,,,,,,,
 KANJI,2191420,足元にも及ばない,,,,,,,,
-KANJI,2191420,足元にもおよばない,,,,,,,,
-KANJI,2191420,足元にも及ば無い,,,,,,,,
+KANJI,2191420,足元にもおよばない,search-only kanji form,,,,,,,
+KANJI,2191420,足元にも及ば無い,search-only kanji form,,,,,,,
 READING,2191420,HIRAGANA,あしもとにもおよばない,ashimoto ni mo oyobanai,-,,,,,
 SENSE_COMMON,2191420,,,"expressions (phrases, clauses, etc.)
 adjective (keiyoushi)",,,,,,
@@ -2137745,8 +2137787,9 @@ END,1137730,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1138070,,,,,,,,,
 READING,1138070,KATAKANA,ライトモチーフ,raitomochiifu,-,,,,,
+READING,1138070,KATAKANA,ライトモティーフ,raitomotiifu,-,,,,,
 COMMON,1138070,-|-|ger|,,,,,,,,
-SENSE_COMMON,1138070,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1138070,,,noun (common) (futsuumeishi),,music,,,,
 SENSE_ENG,1138070,"leitmotif
 leitmotiv
 leading motive",,,,,,,,
@@ -2173016,8 +2173059,10 @@ KANJI,1422650,茶菓子,,,,,,,,
 READING,1422650,HIRAGANA,ちゃがし,chagashi,-,,,,,
 SENSE_COMMON,1422650,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1422650,"cake served with tea
+sweets served with tea
 teacake",,,,,,,,
 SENSE_POL,1422650,"ciastko podawane do herbaty
+słodycze podawane do herbaty
 ciastko do herbaty
 herbaciane ciastko",,,,,,,,
 END,1422650,,,,,,,,,
@@ -2277401,7 +2277446,7 @@ END,2873336,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2873346,,,,,,,,,
 READING,2873346,KATAKANA,セプテット,seputetto,-,,,,,
-SENSE_COMMON,2873346,,,noun (common) (futsuumeishi),,music,,,,
+SENSE_COMMON,2873346,,,noun (common) (futsuumeishi),see|-|2873353|-|七重奏|-|七重奏,music,,,,
 SENSE_ENG,2873346,septet,,,,,,,,
 SENSE_POL,2873346,septet,,,,,,,,
 END,2873346,,,,,,,,,
