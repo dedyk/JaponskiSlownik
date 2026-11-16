@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-15,,,,,,,,
+HEADER,1.10,2026-11-16,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -15606,6 +15606,10 @@ SENSE_ENG,2848104,"switch
 person who can be either dominant or submissive in a homosexual relationship|expl",,,,,,,,
 SENSE_POL,2848104,"zmiana pozycji w związku homoseksualnym
 osoba, która może być dominująca lub uległa w związku homoseksualnym|expl",,,,,,,,
+SENSE_COMMON,2848104,,,noun (common) (futsuumeishi),,,"slang
+abbreviation",,,
+SENSE_ENG,2848104,switching top and bottom roles within a fictional pairing,in BL fandom,,,,,,,
+SENSE_POL,2848104,zamiana roli górnego i dolnego w fikcyjnej parze,w społeczności fanów BL,,,,,,,
 END,2848104,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -314184,8 +314188,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-15,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-15,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-16,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-16,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -483002,7 +483006,7 @@ END,2510900,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2497870,,,,,,,,,
 READING,2497870,KATAKANA,ストリームライン,sutoriimurain,-,,,,,
-SENSE_COMMON,2497870,,,noun (common) (futsuumeishi),"see|-|2399470|-|流線|-|流線
+SENSE_COMMON,2497870,,,noun (common) (futsuumeishi),"see|-|2399470|1|流線|-|流線[1]
 see|-|1664580|-|流線型|-|流線型",,,,,
 SENSE_ENG,2497870,"streamline
 streamlined shape",,,,,,,,
@@ -532587,7 +532591,7 @@ BEGIN,2851606,,,,,,,,,
 READING,2851606,KATAKANA,ワンハンド,wan hando,-,,,,,
 READING,2851606,KATAKANA,ワン・ハンド,wan hando,-,,,,,
 SENSE_COMMON,2851606,,,"noun (common) (futsuumeishi)
-nouns which may take the genitive case particle 'no'",see|-|1511690|-|片手|-|片手,,,,,
+nouns which may take the genitive case particle 'no'",see|-|1511690|1|片手|-|片手[1],,,,,
 SENSE_ENG,2851606,one hand,,,,,,,,
 SENSE_POL,2851606,"jedna ręka
 jednoręczny",ang: one hand,,,,,,,
@@ -541121,6 +541125,14 @@ to beam
 to gleam
 to glow",,,,,,,,
 SENSE_POL,1224020,promienieć,"np. szczęściem, nadzieją i etc",,,,,,,
+SENSE_COMMON,1224020,,,"Godan verb with 'ku' ending
+intransitive verb",,,,,,
+SENSE_ENG,1224020,"to win (an award, title, etc.)
+to be awarded
+to be honored (with)",as ...に輝く,,,,,,,
+SENSE_POL,1224020,"zdobyć (nagrodę, tytuł itp.)
+otrzymać nagrodę
+zostać uhonorowanym (za coś)",jako ...に輝く,,,,,,,
 END,1224020,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -579356,6 +579368,10 @@ transitive verb",,,,,,
 SENSE_ENG,1589350,"to recall
 to remember",,,,,,,,
 SENSE_POL,1589350,przypominać sobie,,,,,,,,
+SENSE_COMMON,1589350,,,"Godan verb with 'u' ending
+transitive verb",,,,,,
+SENSE_ENG,1589350,to appreciate (it if...),as in ～ばと思う,,,,,,,
+SENSE_POL,1589350,"docenić (to, jeśli...)",jak w ～ばと思う,,,,,,,
 END,1589350,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -600776,62 +600792,106 @@ BEGIN,1284460,,,,,,,,,
 KANJI,1284460,合わす,,"ichi1
 news2
 nf38",,,,,,
-KANJI,1284460,合す,,,,,,,,
+KANJI,1284460,合す,search-only kanji form,,,,,,,
 READING,1284460,HIRAGANA,あわす,awasu,-,,,"ichi1
 news2
 nf38",,
 SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
 transitive verb",see|-|1284480|1|合わせる|-|合わせる[1],,,,,
-SENSE_ENG,1284460,"to match (rhythm, speed, etc.)",,,,,,,,
-SENSE_POL,1284460,"zgrać
-dopasować","np. rytm, prędkość",,,,,,,
+SENSE_ENG,1284460,"to match (rhythm, actions, clothes, etc.)
+to do in line with
+to adapt to
+to fit
+""to do (something) to (e.g. """"dance to the music"""")""
+to coordinate (e.g. one's story) with",,,,,,,,
+SENSE_POL,1284460,"pasować
+zgrać
+dopasować (rytm, ruchy, ubranie itp.)
+dopasować (np. swoją opowieść) do
+dostosować się do
+postępować zgodnie z
+robić (coś) do (np. tańczyć w rytm muzyki)",,,,,,,,
 SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
-transitive verb",,,,,,
-SENSE_ENG,1284460,"to join together
+transitive verb",see|-|1284480|2|合わせる|-|合わせる[2],,,,,
+SENSE_ENG,1284460,"to combine
 to unite
-to combine
-to add up",,,,,,,,
+to bring together
+to join (forces)
+to merge (e.g. organizations)
+to add up
+to total",,,,,,,,
 SENSE_POL,1284460,"łączyć
 łączyć razem
+połączyć (np. siły, organizacje)
 złożyć
 zjednoczyć
-połączyć
-dodawać",,,,,,,,
+zebrać razem
+dodawać
+zsumować
+wynosić łącznie",,,,,,,,
 SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
-transitive verb",see|-|1217780|1|顔を合わせる|-|顔を合わせる[1],,,,,
-SENSE_ENG,1284460,"to face
-to be opposite (someone)",,,,,,,,
-SENSE_POL,1284460,"stawiać czoła
-być przeciwny (komuś)",,,,,,,,
-SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
-transitive verb",,,,,,
-SENSE_ENG,1284460,"to compare
-to check with",,,,,,,,
-SENSE_POL,1284460,"porównywać
-sprawdzać z",,,,,,,,
-SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
-transitive verb",see|-|1198180|1|遭う|-|遭う[1],,,,,
-SENSE_ENG,1284460,to cause to meet (e.g. an unpleasant fate),,,,,,,,
-SENSE_POL,1284460,spowodować spotkanie,np. z nieprzyjemnościami,,,,,,,
-SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
-transitive verb",,,,,,
-SENSE_ENG,1284460,"to place together
-to connect
+transitive verb",see|-|1284480|3|合わせる|-|合わせる[3],,,,,
+SENSE_ENG,1284460,"to put together (physically)
+to place together
+to bring into contact
+to join
+to press together (e.g. one's palms)
 to overlap",,,,,,,,
-SENSE_POL,1284460,"umieścić razem
-zachodzić na siebie
-nakładać na siebie",,,,,,,,
+SENSE_POL,1284460,"złożyć (fizycznie)
+ułożyć razem
+doprowadzić do kontaktu
+połączyć
+ścisnąć (np. dłonie)
+nakładać na siebie
+nałożyć na siebie
+zachodzić na siebie",,,,,,,,
 SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
-transitive verb",,,,,,
+transitive verb",see|-|1284480|4|合わせる|-|合わせる[4],,,,,
 SENSE_ENG,1284460,"to mix
-to combine",,,,,,,,
-SENSE_POL,1284460,mieszać,,,,,,,,
+to blend
+to compound (e.g. medicine)",,,,,,,,
+SENSE_POL,1284460,"mieszać
+łączyć
+tworzyć związek (np. lekarstwo)",,,,,,,,
 SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
-transitive verb",,,,,,
-SENSE_ENG,1284460,"to put blade to blade
-to fight",,,,,,,,
-SENSE_POL,1284460,"przyłożyć ostrze do ostrza
-walczyć",,,,,,,,
+transitive verb",see|-|1284480|5|合わせる|-|合わせる[5],,,,,
+SENSE_ENG,1284460,"to compare (e.g. notes, answers)
+to check against
+to check",,,,,,,,
+SENSE_POL,1284460,"porównać (np. notatki, odpowiedzi)
+sprawdzać
+sprawdzić pod kątem zgodności",,,,,,,,
+SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
+transitive verb",see|-|1284480|6|合わせる|-|合わせる[6],,,,,
+SENSE_ENG,1284460,"to adjust
+to set (e.g. a clock)
+to tune
+to focus (e.g. a camera)",,,,,,,,
+SENSE_POL,1284460,"regulować
+ustawiać (np. zegar)
+stroić
+ustawiać ostrość (np. w aparacie fotograficznym)",,,,,,,,
+SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
+transitive verb",see|-|1284480|7|合わせる|-|合わせる[7],,,,,
+SENSE_ENG,1284460,"to cross (swords)
+to fight (with swords)",,,,,,,,
+SENSE_POL,1284460,"krzyżować (miecze)
+skrzyżować (miecze)
+walczyć (na miecze)",,,,,,,,
+SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
+transitive verb",see|-|1284480|8|合わせる|-|合わせる[8],,,,,
+SENSE_ENG,1284460,"to do at the same time
+to take (e.g. into consideration) together
+to do in addition to",,,,,,,,
+SENSE_POL,1284460,"robić w tym samym czasie
+traktować (np. brać pod uwagę) łącznie
+robić dodatkowo",,,,,,,,
+SENSE_COMMON,1284460,,,"Godan verb with 'su' ending
+transitive verb",see|-|1284480|9|合わせる|-|合わせる[9],sumo,,,,
+SENSE_ENG,1284460,"to match (sumo wrestlers) against each other
+to have (sumo wrestlers) fight",of a referee,,,,,,,
+SENSE_POL,1284460,"zorganizować pojedynek (zapaśników sumo)
+mieć walkę (zapaśników sumo)",???,,,,,,,
 END,1284460,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -600851,71 +600911,90 @@ SENSE_ENG,1284480,"to match (rhythm, actions, clothes, etc.)
 to do in line with
 to adapt to
 to fit
-""to do (something) to (e.g. """"dance to the music"""")""",,,,,,,,
-SENSE_POL,1284480,"zgrać
-wyrównywać
-pasować
+""to do (something) to (e.g. """"dance to the music"""")""
+to coordinate (e.g. one's story) with",,,,,,,,
+SENSE_POL,1284480,"pasować
+zgrać
 dopasować (rytm, ruchy, ubranie itp.)
+dopasować (np. swoją opowieść) do
 dostosować się do
 postępować zgodnie z
 robić (coś) do (np. tańczyć w rytm muzyki)",,,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
-SENSE_ENG,1284480,"to join together
-to bring together
+SENSE_ENG,1284480,"to combine
 to unite
-to combine
-to add up",,,,,,,,
+to bring together
+to join (forces)
+to merge (e.g. organizations)
+to add up
+to total",,,,,,,,
 SENSE_POL,1284480,"łączyć
 łączyć razem
-zebrać
+połączyć (np. siły, organizacje)
 złożyć
 zjednoczyć
-połączyć
-dodawać",,,,,,,,
+zebrać razem
+dodawać
+zsumować
+wynosić łącznie",,,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
-transitive verb",see|-|1217780|1|顔を合わせる|-|顔を合わせる[1],,,,,
-SENSE_ENG,1284480,"to face
-to be opposite (someone)",,,,,,,,
-SENSE_POL,1284480,"stawiać czoła
-być przeciwny (komuś)",,,,,,,,
+transitive verb",,,,,,
+SENSE_ENG,1284480,"to put together (physically)
+to place together
+to bring into contact
+to join
+to press together (e.g. one's palms)
+to overlap",,,,,,,,
+SENSE_POL,1284480,"złożyć (fizycznie)
+ułożyć razem
+doprowadzić do kontaktu
+połączyć
+ścisnąć (np. dłonie)
+nakładać na siebie
+nałożyć na siebie
+zachodzić na siebie",,,,,,,,
+SENSE_COMMON,1284480,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1284480,"to mix
+to blend
+to compound (e.g. medicine)",,,,,,,,
+SENSE_POL,1284480,"mieszać
+łączyć
+tworzyć związek (np. lekarstwo)",,,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
 SENSE_ENG,1284480,"to compare (e.g. notes, answers)
 to check against
 to check",,,,,,,,
-SENSE_POL,1284480,"porównywać
+SENSE_POL,1284480,"porównać (np. notatki, odpowiedzi)
 sprawdzać
-sprawdzić pod kątem zgodności","np. notatki, odpowiedzi",,,,,,,
-SENSE_COMMON,1284480,,,"Ichidan verb
-transitive verb",,,,,,
-SENSE_ENG,1284480,"to place together
-to connect
-to overlap",,,,,,,,
-SENSE_POL,1284480,"umieścić razem
-zachodzić na siebie
-nakładać na siebie",,,,,,,,
-SENSE_COMMON,1284480,,,"Ichidan verb
-transitive verb",,,,,,
-SENSE_ENG,1284480,"to mix
-to combine
-to mix together",,,,,,,,
-SENSE_POL,1284480,"mieszać
-mieszać razem
-łączyć",,,,,,,,
+sprawdzić pod kątem zgodności",,,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
 SENSE_ENG,1284480,"to adjust
 to set (e.g. a clock)
-to tune",,,,,,,,
-SENSE_POL,1284480,"dostosować
-ustawiać",np. zegar,,,,,,,
+to tune
+to focus (e.g. a camera)",,,,,,,,
+SENSE_POL,1284480,"regulować
+ustawiać (np. zegar)
+stroić
+ustawiać ostrość (np. w aparacie fotograficznym)",,,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,,,,,
-SENSE_ENG,1284480,"to cross (e.g. swords)
-to fight",,,,,,,,
-SENSE_POL,1284480,"skrzyżować (np. miecze)
-walczyć",,,,,,,,
+SENSE_ENG,1284480,"to cross (swords)
+to fight (with swords)",,,,,,,,
+SENSE_POL,1284480,"krzyżować (miecze)
+skrzyżować (miecze)
+walczyć (na miecze)",,,,,,,,
+SENSE_COMMON,1284480,,,"Ichidan verb
+transitive verb",see|-|1506010|2|併せて|-|併せて[2],,,,,
+SENSE_ENG,1284480,"to do at the same time
+to take (e.g. into consideration) together
+to do in addition to",esp. 併せる if in kanji,,,,,,,
+SENSE_POL,1284480,"robić w tym samym czasie
+traktować (np. brać pod uwagę) łącznie
+robić dodatkowo",szczególnie 併せる jeśli w kanji,,,,,,,
 SENSE_COMMON,1284480,,,"Ichidan verb
 transitive verb",,sumo,,,,
 SENSE_ENG,1284480,"to match (sumo wrestlers) against each other
@@ -636140,6 +636219,22 @@ to span",occ. written as 亘る or 亙る,,,,,,,
 SENSE_POL,1444680,"rozciągać się
 obejmować
 sięgać",często pisane jako 亘る lub 亙る,,,,,,,
+SENSE_COMMON,1444680,,,"Godan verb with 'ru' ending
+intransitive verb",see|-|2830259|-|手に渡る|-|手に渡る,,,,,
+SENSE_ENG,1444680,"to pass (into; someone's possession)
+to change hands
+to be transferred",,,,,,,,
+SENSE_POL,1444680,"przekazać (komuś; w czyjeś ręce)
+przejść w inne ręce
+zostać przekazanym",,,,,,,,
+SENSE_COMMON,1444680,,,"Godan verb with 'ru' ending
+intransitive verb",,,,,,
+SENSE_ENG,1444680,"to be distributed (among)
+to reach (each recipient)
+to go around",,,,,,,,
+SENSE_POL,1444680,"być rozprowadzanym (między)
+docierać (do każdego odbiorcy)
+krążyć dookoła",,,,,,,,
 END,1444680,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -684706,6 +684801,17 @@ to keep on",,,,,,,,
 SENSE_POL,1405800,"kontynuować
 trwać
 utrzymywać",,,,,,,,
+SENSE_COMMON,1405800,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1405800,"to join together
+to connect (spaces, things, etc.)",,,,,,,,
+SENSE_POL,1405800,łączyć,"np. przestrzenie, rzeczy itp.",,,,,,,
+SENSE_COMMON,1405800,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1405800,"to do in succession
+to do one after another",usu. as 続けて,,,,,,,
+SENSE_POL,1405800,"wykonywać po kolei
+wykonywać jedno po drugim",zwykle jako 続けて,,,,,,,
 SENSE_COMMON,1405800,,,"auxiliary verb
 Ichidan verb",,,,,,
 SENSE_ENG,1405800,"to continue ...
@@ -713239,23 +713345,72 @@ END,1179005,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1928670,,,,,,,,,
 READING,1928670,HIRAGANA,だろう,darou,-,,,spec1,,
-READING,1928670,HIRAGANA,だろ,daro,-,,,,,
+READING,1928670,HIRAGANA,だろ,daro,-,,,spec1,,
+INFO_ENG,1928670,orig. conjectural form of copula だ; now oft. analyzed as its own 助動詞|note,,,,,,,,
+INFO_POL,1928670,pierwotna domniemania forma spójnika だ; obecnie często analizowana jako odrębny 助動詞|note,,,,,,,,
 SENSE_COMMON,1928670,,,"expressions (phrases, clauses, etc.)",see|-|1008420|1|-|でしょう|でしょう[1],,,,,
-SENSE_ENG,1928670,"seems
+SENSE_ENG,1928670,"probably
+likely
 I think
+I suppose
 I guess
-probably
-I wonder
-I hope",conjectural form of copula だ,,,,,,,
+I reckon",indicates conjecture or supposition,,,,,,,
 SENSE_POL,1928670,"prawdopodobnie
 chyba
-wydaje mi się, że",forma prosta deshou; przypuszczalna forma kopuli だ,,,,,,,
+myślę, że
+sądzę, że
+wydaje mi się, że
+przypuszczam, że",oznacza przypuszczenie lub domysł,,,,,,,
 SENSE_COMMON,1928670,,,"expressions (phrases, clauses, etc.)",,,,,,
 SENSE_ENG,1928670,"right?
-don't you agree?
-I thought you'd say that!",,,,,,,,
+isn't it?
+didn't I?","with rising intonation; seeks the listener's confirmation or agreement, also to establish common ground",,,,,,,
 SENSE_POL,1928670,"prawda?
-myślałem, że to powiesz!",,,,,,,,
+czyż nie?
+czyż nie tak?","z rosnącą intonacją; ma na celu uzyskanie potwierdzenia lub zgody słuchacza, a także znalezienie wspólnej płaszczyzny porozumienia",,,,,,,
+SENSE_COMMON,1928670,,,"expressions (phrases, clauses, etc.)",see|-|2028970|5|-|か|か[5],,,,,
+SENSE_ENG,1928670,"I wonder
+could it be (that) ...?
+I'm not sure (if, whether, etc.)",as ～か or preceded by an interrogative; indicates doubt or concern,,,,,,,
+SENSE_POL,1928670,"zastanawiam się,
+czy to możliwe, że...?
+nie jestem pewien (czy, czyżby itp.)",jako ～か lub poprzedzone pytaniem; wskazuje na wątpliwość lub obawę,,,,,,,
+SENSE_COMMON,1928670,,,"expressions (phrases, clauses, etc.)",,,,,,
+SENSE_ENG,1928670,"how could ...?
+as if
+would ... ever ...?","oft. as ～か, or paired with an interrogative; indicates rhetorical question",,,,,,,
+SENSE_POL,1928670,"jako mogło ...?
+jakby
+jak gdyby ... kiedykolwiek ...?",jako ～か lub poprzedzone pytaniem; wskazuje na pytanie retoryczne,,,,,,,
+SENSE_COMMON,1928670,,,"expressions (phrases, clauses, etc.)",,,,,,
+SENSE_ENG,1928670,"how ...!
+what (a) ...!
+how ... would ...!","paired with adverbs such as なんて, どんなに, etc.; indicates exclamation",,,,,,,
+SENSE_POL,1928670,"jak ...!
+co ...!","w połączeniu z przysłówkami takimi jak なんて, どんなに itp.; wyraża okrzyk",,,,,,,
+SENSE_COMMON,1928670,,,"expressions (phrases, clauses, etc.)",,,,,,
+SENSE_ENG,1928670,"even if
+whether ... or ...
+no matter (whether)","as ～が or ～と, also repeatedly; indicates concessive condition",,,,,,,
+SENSE_POL,1928670,"nawet jeśli
+czy ... czy ...
+niezależnie od tego (czy)","jako ～が lub ～と, również wielokrotnie, wskazuje stan skłonny do ustępowania",,,,,,,
+SENSE_COMMON,1928670,,,"expressions (phrases, clauses, etc.)",,,,,,
+SENSE_ENG,1928670,"would have ... (if only)
+must ... (and yet)","as ～に; indicates regret, sympathy or reproach about what is presumed, or would have been the case",,,,,,,
+SENSE_POL,1928670,"musiałbym ... (gdyby tylko)
+musieć... (a jednak)","jako ～に; wyraża żal, współczucie lub wyrzut w związku z tym, co się zakłada lub co mogłoby mieć miejsce",,,,,,,
+SENSE_COMMON,1928670,,,interjection (kandoushi),,,colloquial,,,
+SENSE_ENG,1928670,"I bet
+yeah
+I'd think so
+see?
+told you",in response to another's statement,,,,,,,
+SENSE_POL,1928670,"założę się,
+myślę, że tak
+pewnie
+widzisz?
+mówiłem ci",w odpowiedzi na wypowiedź innej osoby,,,,,,,
 END,1928670,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -871537,10 +871692,22 @@ END,1084750,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1084780,,,,,,,,,
 READING,1084780,KATAKANA,トーン,toon,-,,,gai1,,
-SENSE_COMMON,1084780,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1084780,,,noun (common) (futsuumeishi),see|-|1183960|-|音調|-|音調,music,,,,
 SENSE_ENG,1084780,tone,,,,,,,,
 SENSE_POL,1084780,"ton
-odcień",ang: tone,,,,,,,
+barwa dźwięku",ang: tone,,,,,,,
+SENSE_COMMON,1084780,,,noun (common) (futsuumeishi),see|-|1357860|-|色調|-|色調,,,,,
+SENSE_ENG,1084780,tone (color),,,,,,,,
+SENSE_POL,1084780,odcień,ang: tone,,,,,,,
+SENSE_COMMON,1084780,,,noun (common) (futsuumeishi),see|-|1477570|-|発信音|-|発信音,,,,,
+SENSE_ENG,1084780,"sound (e.g. dial tone)
+beep",,,,,,,,
+SENSE_POL,1084780,"dźwięk (np. sygnał wybierania, tonu)
+sygnał dźwiękowy",,,,,,,,
+SENSE_COMMON,1084780,,,noun (common) (futsuumeishi),see|-|1068560|-|-|スクリーントーン|スクリーントーン,manga,abbreviation,,,
+SENSE_ENG,1084780,screentone,,,,,,,,
+SENSE_POL,1084780,"warstwa tekstur
+cieniowania na rysunkach",,,,,,,,
 END,1084780,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1019535,10 +1019702,19 @@ END,1125470,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1125540,,,,,,,,,
 READING,1125540,KATAKANA,ポプリ,popuri,-,,,gai1,,
-COMMON,1125540,-|-|fre|,,,,,,,,
+COMMON,1125540,-|-|fre|pot-pourri,,,,,,,,
 SENSE_COMMON,1125540,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1125540,potpourri,,,,,,,,
+SENSE_ENG,1125540,"potpourri (mixture)
+mixture of dried and perfumed plant materials",,,,,,,,
 SENSE_POL,1125540,potpourri,"mieszanka suszonych, naturalnie pachnących materiałów roślinnych stosowanych w celu zapewnienia delikatnego naturalnego zapachu, powszechnie stosowanego w pomieszczeniach mieszkalnych",,,,,,,
+SENSE_COMMON,1125540,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1125540,potpourri (vessel),,,,,,,,
+SENSE_POL,1125540,potpourri,naczynie,,,,,,,
+SENSE_COMMON,1125540,,,noun (common) (futsuumeishi),,music,,,,
+SENSE_ENG,1125540,"potpourri
+miscellany",,,,,,,,
+SENSE_POL,1125540,"potpourri
+???",,,,,,,,
 END,1125540,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1097532,6 +1097708,10 @@ nouns which may take the genitive case particle 'no'",,,,,,
 SENSE_ENG,1511690,one hand,,,,,,,,
 SENSE_POL,1511690,"jedna ręka
 jednoręki",,,,,,,,
+SENSE_COMMON,1511690,,,noun (common) (futsuumeishi),,,slang,,,
+SENSE_ENG,1511690,five (units of money),,,,,,,,
+SENSE_POL,1511690,"pięć
+piątka",jednostka monetarna,,,,,,,
 END,1511690,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1413771,10 +1413951,12 @@ END,2022840,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1963890,,,,,,,,,
 KANJI,1963890,コーヒーの木,,,,,,,,
+KANJI,1963890,コーヒーの樹,,,,,,,,
 READING,1963890,KATAKANA_HIRAGANA,コーヒーのき,koohii no ki,-,,,,,
 SENSE_COMMON,1963890,,,"expressions (phrases, clauses, etc.)
 noun (common) (futsuumeishi)",,,,,,
-SENSE_ENG,1963890,coffee tree,,,,,,,,
+SENSE_ENG,1963890,"coffee tree
+Coffea",,,,,,,,
 SENSE_POL,1963890,"kawowiec (drzewo)
 drzewo kawowe",,,,,,,,
 END,1963890,,,,,,,,,
@@ -1421054,7 +1421236,7 @@ END,1586060,,,,,,,,,
 BEGIN,1586140,,,,,,,,,
 KANJI,1586140,愛欲,,"news2
 nf48",,,,,,
-KANJI,1586140,愛慾,,,,,,,,
+KANJI,1586140,愛慾,rarely used kanji form,,,,,,,
 READING,1586140,HIRAGANA,あいよく,aiyoku,-,,,"news2
 nf48",,
 SENSE_COMMON,1586140,,,noun (common) (futsuumeishi),,,,,,
@@ -1454611,7 +1454793,7 @@ large sea",,,,,,,,
 SENSE_POL,1413200,"ocean
 duże morze
 wielkie morze",,,,,,,,
-SENSE_COMMON,1413200,,おおうみ,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1413200,,おおうみ,noun (common) (futsuumeishi),see|-|2873289|-|海賦|-|海賦,,,,,
 SENSE_ENG,1413200,ocean-themed fabric pattern,,,,,,,,
 SENSE_POL,1413200,wzór tkaniny o tematyce morskiej,,,,,,,,
 END,1413200,,,,,,,,,
@@ -1490770,6 +1490952,7 @@ END,2720190,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2720200,,,,,,,,,
 KANJI,2720200,型抜き,,,,,,,,
+KANJI,2720200,型抜,search-only kanji form,,,,,,,
 READING,2720200,HIRAGANA,かたぬき,katanuki,-,,,,,
 READING,2720200,KATAKANA,カタヌキ,katanuki,NO_KANJI,,,,,
 SENSE_COMMON,2720200,,,"noun (common) (futsuumeishi)
@@ -1606236,6 +1606419,14 @@ dzwonić
 brzmieć
 ryczeć
 grzmieć",,,,,,,,
+SENSE_COMMON,1532910,,,"Godan verb with 'ru' ending
+intransitive verb",,,,,,
+SENSE_ENG,1532910,"to be widely known
+to be renowned
+to be noted (for)",,,,,,,,
+SENSE_POL,1532910,"być powszechnie znanym
+cieszyć się renomą
+być znanym (z)",,,,,,,,
 END,1532910,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1734122,10 +1734313,15 @@ BEGIN,2112200,,,,,,,,,
 KANJI,2112200,耳触り,,,,,,,,
 KANJI,2112200,耳ざわり,,,,,,,,
 READING,2112200,HIRAGANA,みみざわり,mimi zawari,-,,,,,
-SENSE_COMMON,2112200,,,"noun (common) (futsuumeishi)
-nouns which may take the genitive case particle 'no'",,,,,,
-SENSE_ENG,2112200,feeling one gets from listening to something,not to be confused with 耳障り,,,,,,,
-SENSE_POL,2112200,"uczucie, które pojawia się podczas słuchania czegoś",nie należy mylić z 耳障り,,,,,,,
+SENSE_COMMON,2112200,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,2112200,"sound
+how something sounds (to the ear)
+(auditory) feel
+ring",not to be confused with 耳障り,,,,,,,
+SENSE_POL,2112200,"dźwięk
+jak coś brzmi (dla ucha)
+wrażenie (słuchowe)
+brzmienie",nie należy mylić z 耳障り,,,,,,,
 END,2112200,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1799725,6 +1799921,11 @@ SENSE_ENG,2399470,streamline,,,,,,,,
 SENSE_POL,2399470,"linia przepływu
 linia opływowa
 linie reprezentujące przepływ płynu",,,,,,,,
+SENSE_COMMON,2399470,,,noun (common) (futsuumeishi),,manga,,,,
+SENSE_ENG,2399470,"speed lines
+motion lines",,,,,,,,
+SENSE_POL,2399470,"linie prędkości
+linie ruchu",,,,,,,,
 END,2399470,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1806863,7 +1807064,7 @@ END,2052960,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2831904,,,,,,,,,
 READING,2831904,KATAKANA,リフ,rifu,-,,,,,
-SENSE_COMMON,2831904,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,2831904,,,noun (common) (futsuumeishi),,music,,,,
 SENSE_ENG,2831904,riff,,,,,,,,
 SENSE_POL,2831904,riff,,,,,,,,
 END,2831904,,,,,,,,,
@@ -1908270,8 +1908471,9 @@ END,1310650,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1311890,,,,,,,,,
 KANJI,1311890,至れり尽くせり,,,,,,,,
-KANJI,1311890,至れり尽せり,,,,,,,,
-KANJI,1311890,至れりつくせり,,,,,,,,
+KANJI,1311890,至れり尽せり,search-only kanji form,,,,,,,
+KANJI,1311890,至れりつくせり,search-only kanji form,,,,,,,
+KANJI,1311890,いたれり尽くせり,search-only kanji form,,,,,,,
 READING,1311890,HIRAGANA,いたれりつくせり,itareri tsukuseri,-,,,,,
 SENSE_COMMON,1311890,,,"expressions (phrases, clauses, etc.)
 nouns which may take the genitive case particle 'no'",,,,,,
@@ -1930416,7 +1930618,9 @@ END,2032220,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2034970,,,,,,,,,
 KANJI,2034970,甘っちょろい,,,,,,,,
-READING,2034970,HIRAGANA,あまっちょろい,amacchoroi,-,,,,,
+KANJI,2034970,甘ちょろい,,,,,,,,
+READING,2034970,HIRAGANA,あまっちょろい,amacchoroi,-,甘っちょろい,,,,
+READING,2034970,HIRAGANA,あまちょろい,amachoroi,-,甘ちょろい,,,,
 SENSE_COMMON,2034970,,,adjective (keiyoushi),,,,,,
 SENSE_ENG,2034970,"overly optimistic
 easygoing
@@ -1937528,9 +1937732,17 @@ END,2526670,,,,,,,,,
 BEGIN,1621690,,,,,,,,,
 KANJI,1621690,安息香,,,,,,,,
 READING,1621690,HIRAGANA,あんそくこう,ansokukou,-,,,,,
+READING,1621690,HIRAGANA,あんそっこう,ansokkou,-,,,,,
 SENSE_COMMON,1621690,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1621690,benzoin,,,,,,,,
-SENSE_POL,1621690,benzoina,,,,,,,,
+SENSE_ENG,1621690,"benzoin (resin)
+storax",,,,,,,,
+SENSE_POL,1621690,"benzoina
+żywica benzoesowa
+styraks",,,,,,,,
+SENSE_COMMON,1621690,,,noun (common) (futsuumeishi),see|-|2873415|-|安息香の木|-|安息香の木,,rare term,,,
+SENSE_ENG,1621690,"gum benjamin tree (Styrax benzoin)
+benzoin tree",,,,,,,,
+SENSE_POL,1621690,styrakowiec benzoesowy,"roślina, Styrax benzoin",,,,,,,
 END,1621690,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1986019,7 +1986231,8 @@ END,2631090,,,,,,,,,
 BEGIN,2869467,,,,,,,,,
 READING,2869467,HIRAGANA,ずら,zura,-,,,,,
 READING,2869467,HIRAGANA,ら,ra,-,,,,,
-SENSE_COMMON,2869467,,,auxiliary,see|-|1928670|-|-|だろう|だろう,,,,,
+SENSE_COMMON,2869467,,,auxiliary,"see|-|1928670|1|-|だろう|だろう[1]
+see|-|1928670|2|-|だろう|だろう[2]",,,,,
 SENSE_ENG,2869467,"probably
 (it) seems
 I suppose
@@ -2158868,6 +2159081,13 @@ SENSE_COMMON,1387040,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1387040,tip of tongue,,,,,,,,
 SENSE_POL,1387040,"koniuszek języka
 czubek języka",,,,,,,,
+SENSE_COMMON,1387040,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1387040,"glib talk
+fair words
+lip service",,,,,,,,
+SENSE_POL,1387040,"puste gadanie
+ładne słowa
+puste obietnice",,,,,,,,
 END,1387040,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2270285,10 +2270505,10 @@ END,1145750,,,,,,,,,
 BEGIN,2845577,,,,,,,,,
 READING,2845577,HIRAGANA_KATAKANA,べーだ,beeda,-,,,,,
 READING,2845577,HIRAGANA,べえだ,beeda,-,,,,,
-READING,2845577,KATAKANA_HIRAGANA,ベーだ,beeda,-,,,,,
+READING,2845577,KATAKANA_HIRAGANA,ベーだ,beeda,-,,search-only kana form,,,
 SENSE_COMMON,2845577,,,interjection (kandoushi),see|-|2640910|-|-|ベー|ベー,,,,,
-SENSE_ENG,2845577,bleh,said when taunting sb by sticking out one's tongue,,,,,,,
-SENSE_POL,2845577,ble,dźwięk wydawany podczas wyśmiewania kogoś i jednocześnie wystawiając język,,,,,,,
+SENSE_ENG,2845577,bleh,said when taunting someone by sticking out one's tongue,,,,,,,
+SENSE_POL,2845577,ble,"mówi się, gdy drwi się z kogoś, wystawiając język",,,,,,,
 END,2845577,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
