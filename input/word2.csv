@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-16,,,,,,,,
+HEADER,1.10,2026-11-17,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -135509,10 +135509,13 @@ BEGIN,1157610,,,,,,,,,
 KANJI,1157610,異教,,,,,,,,
 READING,1157610,HIRAGANA,いきょう,ikyou,-,,,,,
 SENSE_COMMON,1157610,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1157610,religion other than one's own,,,,,,,,
+SENSE_POL,1157610,religia inna niż własna,,,,,,,,
+SENSE_COMMON,1157610,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1157610,"paganism
-heathenism",,,,,,,,
+heathenism",esp. from a Christian perspective,,,,,,,
 SENSE_POL,1157610,"pogaństwo
-poganizm",,,,,,,,
+poganizm",szczególnie z chrześcijańskiej perspektywy,,,,,,,
 END,1157610,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -314188,8 +314191,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-16,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-16,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-17,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-17,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -470316,6 +470319,14 @@ intransitive verb",,,,,,
 SENSE_ENG,1514320,to walk,,,,,,,,
 SENSE_POL,1514320,"chodzić pieszo
 iść pieszo",,,,,,,,
+SENSE_COMMON,1514320,,,"Godan verb with 'ku' ending
+intransitive verb",,,,,,
+SENSE_ENG,1514320,"to go around
+to travel around
+to visit various places",,,,,,,,
+SENSE_POL,1514320,"zwiedzać
+podróżować
+odwiedzać różne miejsca",,,,,,,,
 END,1514320,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -708484,6 +708495,10 @@ nf04",,
 SENSE_COMMON,1538590,,,noun (common) (futsuumeishi),see|-|1311750|-|脂|あぶら|脂(あぶら),,,,,
 SENSE_ENG,1538590,oil,,,,,,,,
 SENSE_POL,1538590,olej,,,,,,,,
+SENSE_COMMON,1538590,,,noun (common) (futsuumeishi),see|-|1538630|-|油絵|-|油絵,"art, aesthetics",abbreviation,,,
+SENSE_ENG,1538590,oil painting,,,,,,,,
+SENSE_POL,1538590,"obraz olejny
+malarstwo olejne",,,,,,,,
 END,1538590,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -797847,6 +797862,14 @@ SENSE_POL,1472990,"przydzielić
 przydzielać
 umieścić (pracowników, żołnierzy itp.)
 stacjonować",,,,,,,,
+SENSE_COMMON,1472990,配る,,"Godan verb with 'ru' ending
+transitive verb",,,,,,
+SENSE_ENG,1472990,"to direct (attention, care, etc.)
+to pay (attention)
+to disseminate (warnings)","as 気を〜, 目を〜, etc.",,,,,,,
+SENSE_POL,1472990,"skupiać (uwagę, troskę itp.)
+zwracać (uwagę)
+rozpowszechniać (ostrzeżenia)","jako 気を〜, 目を〜, etc.",,,,,,,
 END,1472990,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -987810,6 +987833,9 @@ SENSE_ENG,1113170,"swim briefs
 Speedos",,,,,,,,
 SENSE_POL,1113170,"slipy kąpielowe
 obcisłe kąpielówki męskie",,,,,,,,
+SENSE_COMMON,1113170,,,noun (common) (futsuumeishi),,,colloquial,,,
+SENSE_ENG,1113170,something that rebounds on the originator (esp. criticism),,,,,,,,
+SENSE_POL,1113170,"coś, co odbija się na autorze",zwłaszcza krytyka,,,,,,,
 END,1113170,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -997545,6 +997571,7 @@ KANJI,2454570,ぶった切る,,,,,,,,
 KANJI,2454570,ぶった斬る,,,,,,,,
 KANJI,2454570,打っ手切る,rarely used kanji form,,,,,,,
 KANJI,2454570,豚切る,search-only kanji form,,,,,,,
+KANJI,2454570,打った切る,search-only kanji form,,,,,,,
 READING,2454570,HIRAGANA,ぶったぎる,butta giru,-,,,,,
 SENSE_COMMON,2454570,,,"Godan verb with 'ru' ending
 transitive verb",,,,,,
@@ -1008604,7 +1008631,7 @@ KANJI,1311750,膩,rarely used kanji form,,,,,,,
 READING,1311750,HIRAGANA,あぶら,abura,-,,,"ichi1
 news1
 nf15",,
-SENSE_COMMON,1311750,,,noun (common) (futsuumeishi),see|-|1538590|-|油|-|油,,,,,
+SENSE_COMMON,1311750,,,noun (common) (futsuumeishi),see|-|1538590|1|油|-|油[1],,,,,
 SENSE_ENG,1311750,"fat
 tallow
 lard
@@ -1052600,6 +1052627,12 @@ znów
 znowu
 oprócz tego
 ponadto",,,,,,,,
+SENSE_COMMON,1279310,,,adverb (fukushi),,,"word usually written using kana alone
+formal or literary term",,,
+SENSE_ENG,1279310,"(not) at all
+(not) in the least","as 〜ない, etc.",,,,,,,
+SENSE_POL,1279310,"wcale
+ani trochę","jako 〜ない, etc.",,,,,,,
 END,1279310,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1052900,9 +1052933,17 @@ news1
 nf22",,
 SENSE_COMMON,1547440,,,"Ichidan verb
 transitive verb",,,,,,
-SENSE_ENG,1547440,to pour on,,,,,,,,
-SENSE_POL,1547440,"kąpać
-polewać wodą",,,,,,,,
+SENSE_ENG,1547440,"to pour on
+to douse",,,,,,,,
+SENSE_POL,1547440,"polać wodą
+polewać wodą
+oblewać wodą",,,,,,,,
+SENSE_COMMON,1547440,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1547440,"to shower (with criticism, abuse, questions, etc.)
+to bombard (with attacks, etc.)",,,,,,,,
+SENSE_POL,1547440,"zasypywać (krytyką, obelgami, pytaniami itp.)
+bombardować (atakami itp.)",,,,,,,,
 END,1547440,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1145236,6 +1145277,16 @@ rozum
 doświadczenie
 doznanie
 przeżycie",,,,,,,,
+SENSE_COMMON,1206040,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1206040,confidence in one's skill or ability,,,,,,,,
+SENSE_POL,1206040,wiara we własne umiejętności lub zdolności,,,,,,,,
+SENSE_COMMON,1206040,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1206040,"favour
+trust
+confidence (of a superior)",,,,,,,,
+SENSE_POL,1206040,"przychylność
+zaufanie
+pewność (ze strony przełożonego)",,,,,,,,
 END,1206040,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1178697,6 +1178748,20 @@ SENSE_POL,1315600,"wspominać (o czymś)
 poruszać temat
 poruszyć kwestię
 wzmiankować",,,,,,,,
+SENSE_COMMON,1315600,,,"Godan verb with 'su' ending
+transitive verb",,,,,,
+SENSE_ENG,1315600,"to cover (a shortfall) out of one's own funds
+to pay out of one's own pocket",,,,,,,,
+SENSE_POL,1315600,"pokryć (niedobór) ze środków własnych
+zapłacić z własnej kieszeni",,,,,,,,
+SENSE_COMMON,1315600,,,"Godan verb with 'su' ending
+transitive verb",,,,,,
+SENSE_ENG,1315600,"to embezzle
+to peculate
+to make off with (e.g. employer's money)",,,,,,,,
+SENSE_POL,1315600,"sprzeniewierzyć
+przywłaszczyć
+zrabować (np. pieniądze pracodawcy)",,,,,,,,
 END,1315600,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1328861,6 +1328926,20 @@ drama",,,,,,,,
 SENSE_POL,1321630,"dramat
 sztuka
 przedstawienie teatralne",,,,,,,,
+SENSE_COMMON,1321630,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1321630,"acting
+performance",,,,,,,,
+SENSE_POL,1321630,"gra aktorska
+występ",,,,,,,,
+SENSE_COMMON,1321630,,,"noun (common) (futsuumeishi)
+noun or participle which takes the aux. verb suru
+intransitive verb",,,,,,
+SENSE_ENG,1321630,"pretense
+sham
+play-acting",,,,,,,,
+SENSE_POL,1321630,"udawanie
+pozory
+granie roli",,,,,,,,
 END,1321630,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1819351,7 +1819430,10 @@ SENSE_COMMON,1423840,,,"adjectival nouns or quasi-adjectives (keiyodoshi)
 noun (common) (futsuumeishi)",,,,,,
 SENSE_ENG,1423840,"mid-range
 mid-scale
-mid-size",,,,,,,,
+mid-size
+medium-range
+medium-scale
+medium-size",,,,,,,,
 SENSE_POL,1423840,"średniego zasięgu
 średniej skali
 średniej wielkości",,,,,,,,
@@ -1915758,6 +1915840,9 @@ pluszowy zwierzak
 pluszowy miś
 przytulanka
 maskotka",,,,,,,,
+SENSE_COMMON,1517690,,,noun (common) (futsuumeishi),see|-|2025710|-|着ぐるみ|-|着ぐるみ,,word usually written using kana alone,,,
+SENSE_ENG,1517690,full-body animal or character costume,,,,,,,,
+SENSE_POL,1517690,kostium zwierzęcia lub postaci obejmujący całe ciało,,,,,,,,
 END,1517690,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2085110,15 +2085195,24 @@ END,2023500,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1661210,,,,,,,,,
 KANJI,1661210,高鳴る,,,,,,,,
+KANJI,1661210,高なる,search-only kanji form,,,,,,,
 READING,1661210,HIRAGANA,たかなる,takanaru,-,,,,,
 SENSE_COMMON,1661210,,,"Godan verb with 'ru' ending
 intransitive verb",,,,,,
 SENSE_ENG,1661210,"to throb
-to beat fast",,,,,,,,
+to beat fast (of one's heart)",,,,,,,,
 SENSE_POL,1661210,"bicie (np. serca)
 uderzanie (np. pulsu)
 pulsować
 bić szybko",,,,,,,,
+SENSE_COMMON,1661210,,,"Godan verb with 'ru' ending
+intransitive verb",,,,,,
+SENSE_ENG,1661210,"to ring out loudly
+to ring high
+to resound",,,,,,,,
+SENSE_POL,1661210,"brzmieć głośno
+brzmieć wysoko
+rozbrzmiewać",,,,,,,,
 END,1661210,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2280025,7 +2280119,7 @@ BEGIN,2873354,,,,,,,,,
 READING,2873354,KATAKANA,コントラファクトゥーア,kontorafakutuua,-,,,,,
 COMMON,2873354,-|-|ger|Kontrafaktur,,,,,,,,
 SENSE_COMMON,2873354,,,noun (common) (futsuumeishi),,music,,,,
-SENSE_ENG,2873354,сontrafactum,,,,,,,,
+SENSE_ENG,2873354,contrafactum,,,,,,,,
 SENSE_POL,2873354,kontrafaktura,zmiana tekstu w utworze wokalnym bez zmiany lub z niewielką zmianą melodii,,,,,,,
 END,2873354,,,,,,,,,
 ,,,,,,,,,,
