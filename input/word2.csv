@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-17,,,,,,,,
+HEADER,1.10,2026-11-18,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -293904,6 +293904,7 @@ KANJI,1919400,へそ曲げる,search-only kanji form,,,,,,,
 KANJI,1919400,ヘソ曲げる,search-only kanji form,,,,,,,
 KANJI,1919400,臍曲げる,search-only kanji form,,,,,,,
 READING,1919400,HIRAGANA,へそをまげる,heso o mageru,-,,,,,
+READING,1919400,HIRAGANA,へそまげる,heso mageru,-,,search-only kana form,,,
 SENSE_COMMON,1919400,,,"expressions (phrases, clauses, etc.)
 Ichidan verb",,,idiomatic expression,,,
 SENSE_ENG,1919400,"to (go into a) sulk
@@ -302357,6 +302358,7 @@ KANJI,1371290,水さす,search-only kanji form,,,,,,,
 KANJI,1371290,水注す,search-only kanji form,,,,,,,
 KANJI,1371290,水刺す,search-only kanji form,,,,,,,
 READING,1371290,HIRAGANA,みずをさす,mizu o sasu,-,,,,,
+READING,1371290,HIRAGANA,みずさす,mizu sasu,-,,search-only kana form,,,
 SENSE_COMMON,1371290,,,"expressions (phrases, clauses, etc.)
 Godan verb with 'su' ending",,,,,,
 SENSE_ENG,1371290,"to pour water (into)
@@ -314191,8 +314193,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-17,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-17,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-18,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-18,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -384067,6 +384069,17 @@ SENSE_COMMON,1310850,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1310850,"capital crime
 crime resulting in a death penalty",,,,,,,,
 SENSE_POL,1310850,przestępstwo zagrożone karą śmierci,,,,,,,,
+SENSE_COMMON,1310850,,,noun (common) (futsuumeishi),see|-|1310810|-|死刑|-|死刑,,,,,
+SENSE_ENG,1310850,"death penalty
+capital punishment",,,,,,,,
+SENSE_POL,1310850,kara śmierci,,,,,,,,
+SENSE_COMMON,1310850,,,"expressions (phrases, clauses, etc.)",,,formal or literary term,,,
+SENSE_ENG,1310850,"I humbly beg your pardon
+forgive my impertinence
+with deepest apologies","old epistoraly style; written at the end of a letter, memorial to the throne, critique, etc.",,,,,,,
+SENSE_POL,1310850,"pokornie proszę o wybaczenie
+wybaczcie mi moją bezczelność,
+z najgłębszymi przeprosinami","stary styl epistolarny; umieszczane na zakończenie listu, memoriału dla tronu, krytyki itp.",,,,,,,
 END,1310850,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -545016,16 +545029,6 @@ SENSE_POL,2856658,piłka do rugby,ang: rugby ball,,,,,,,
 END,2856658,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
-BEGIN,2535720,,,,,,,,,
-KANJI,2535720,無かろう,,,,,,,,
-READING,2535720,HIRAGANA,なかろう,nakarou,-,,,,,
-SENSE_COMMON,2535720,,,"expressions (phrases, clauses, etc.)",,,word usually written using kana alone,,,
-SENSE_ENG,2535720,probably not so,presumptive form of ない,,,,,,,
-SENSE_POL,2535720,"prawdopodobnie nie tak
-chyba nie tak",domniemana forma ない,,,,,,,
-END,2535720,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
 BEGIN,2665730,,,,,,,,,
 KANJI,2665730,好きでも嫌いでも,,,,,,,,
 READING,2665730,HIRAGANA,すきでもきらいでも,suki demo kirai demo,-,,,,,
@@ -685615,7 +685618,8 @@ BEGIN,1605230,,,,,,,,,
 KANJI,1605230,持ち主,,"ichi1
 news1
 nf11",,,,,,
-KANJI,1605230,持主,,,,,,,,
+KANJI,1605230,持主,search-only kanji form,,,,,,,
+KANJI,1605230,もち主,search-only kanji form,,,,,,,
 READING,1605230,HIRAGANA,もちぬし,mochi nushi,-,,,"ichi1
 news1
 nf11",,
@@ -720062,6 +720066,18 @@ to utilise",,,,,,,,
 SENSE_POL,1546210,"używać
 korzystać z
 wykorzystywać",,,,,,,,
+SENSE_COMMON,1546210,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1546210,"to appoint (someone; to a position)
+to employ",,,,,,,,
+SENSE_POL,1546210,"mianować (kogoś; na stanowisko)
+zatrudnić",,,,,,,,
+SENSE_COMMON,1546210,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1546210,"to adopt (a method)
+to apply (a rule)",,,,,,,,
+SENSE_POL,1546210,"przyjąć (metodę)
+stosować (zasadę)",,,,,,,,
 END,1546210,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -788767,6 +788783,13 @@ it is said that ...",,,,,,,,
 SENSE_POL,1541760,"informacja zasłyszana
 podobno ...
 rzekomo ...",,,,,,,,
+SENSE_COMMON,1541760,由,,noun (common) (futsuumeishi),,,formal or literary term,,,
+SENSE_ENG,1541760,"means
+way
+method",,,,,,,,
+SENSE_POL,1541760,"środki
+sposób
+metoda",,,,,,,,
 END,1541760,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -850601,12 +850624,21 @@ END,1077040,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1077060,,,,,,,,,
 READING,1077060,KATAKANA,ダッシュ,dasshu,-,,,gai1,,
+SENSE_COMMON,1077060,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1077060,"dash
+space",,,,,,,,
+SENSE_POL,1077060,myślnik,ang: dash,,,,,,,
+SENSE_COMMON,1077060,,,noun (common) (futsuumeishi),see|-|2493580|2|-|プライム|プライム[2],mathematics,,,,
+SENSE_ENG,1077060,prime symbol (′),,,,,,,,
+SENSE_POL,1077060,"apostrof
+znak apostrofa (′)",,,,,,,,
 SENSE_COMMON,1077060,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru",,,,,,
-SENSE_ENG,1077060,dash,,,,,,,,
+SENSE_ENG,1077060,"dash
+rapid movement",,,,,,,,
 SENSE_POL,1077060,"pędzenie
-rzucenie się (np. do ucieczki)
-ciśnięcie",ang: dash,,,,,,,
+gwałtowny ruch
+???",ang: dash,,,,,,,
 END,1077060,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -881022,14 +881054,19 @@ kind
 gentle
 graceful
 affectionate
-amiable",,,,,,,,
+amiable",often に〜,,,,,,,
 SENSE_POL,1539040,"łagodny
 miękki
 czuły
 delikatny
 życzliwy
 uprzejmy
-sympatyczny",,,,,,,,
+sympatyczny",często に〜,,,,,,,
+SENSE_COMMON,1539040,,,adjective (keiyoushi),,,,,,
+SENSE_ENG,1539040,"not harmful
+supportive",,,,,,,,
+SENSE_POL,1539040,"wspierający
+pomocny",,,,,,,,
 END,1539040,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -888423,9 +888460,11 @@ READING,1605220,HIRAGANA,もちこみ,mochi komi,-,,,"news1
 nf15",,
 SENSE_COMMON,1605220,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1605220,"bring-your-own (e.g. food and drink)
-carry-on (e.g. luggage)",,,,,,,,
+carry-on (e.g. luggage)
+unsolicited (e.g. submission of one's work)",,,,,,,,
 SENSE_POL,1605220,"przynieść swoje (np. jedzenie, picie)
-poręczny (np. bagaż)",,,,,,,,
+poręczny (np. bagaż)
+???",,,,,,,,
 END,1605220,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -889606,6 +889645,16 @@ SENSE_ENG,1604800,"to go towards
 to head towards",,,,,,,,
 SENSE_POL,1604800,"kierować się (w kierunku)
 posuwać się (w kierunku)","zwykle występuje w wyrażeniu: ~e mukau, ~ni mukau",,,,,,,
+SENSE_COMMON,1604800,,,"Godan verb with 'u' ending
+intransitive verb",,,,,,
+SENSE_ENG,1604800,"to confront
+to oppose
+to resist
+to stand against",,,,,,,,
+SENSE_POL,1604800,"stawiać czoła
+przeciwstawiać się
+sprzeciwiać się
+stawiać opór",,,,,,,,
 END,1604800,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -894867,6 +894916,7 @@ nf18",,,,,,
 KANJI,1223990,耀かしい,rarely used kanji form,,,,,,,
 KANJI,1223990,赫かしい,rarely used kanji form,,,,,,,
 KANJI,1223990,輝やかしい,search-only kanji form,,,,,,,
+KANJI,1223990,輝しい,search-only kanji form,,,,,,,
 READING,1223990,HIRAGANA,かがやかしい,kagayakashii,-,,,"ichi1
 news1
 nf18",,
@@ -1051719,6 +1051769,16 @@ to gain victory",,,,,,,,
 SENSE_POL,1346150,"wygrywać
 zwyciężać
 odnieść zwycięstwo",,,,,,,,
+SENSE_COMMON,1346150,勝つ,,"Godan verb with 'tsu' ending
+intransitive verb",,,,,,
+SENSE_ENG,1346150,"to dominate
+to prevail
+to be predominant
+to be stronger (of a quality, tendency, etc.)",,,,,,,,
+SENSE_POL,1346150,"dominować
+przeważać
+być dominującym
+być silniejszym (w odniesieniu do cechy, tendencji itp.)",,,,,,,,
 END,1346150,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1052630,9 +1052690,9 @@ ponadto",,,,,,,,
 SENSE_COMMON,1279310,,,adverb (fukushi),,,"word usually written using kana alone
 formal or literary term",,,
 SENSE_ENG,1279310,"(not) at all
-(not) in the least","as 〜ない, etc.",,,,,,,
+(not) in the least",paired with ない,,,,,,,
 SENSE_POL,1279310,"wcale
-ani trochę","jako 〜ない, etc.",,,,,,,
+ani trochę",w połączeniu z ない,,,,,,,
 END,1279310,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1068111,7 +1068171,7 @@ KANJI,2859561,三足,,,,,,,,
 KANJI,2859561,３足,,,,,,,,
 READING,2859561,HIRAGANA,さんそく,sansoku,-,,,,,
 READING,2859561,HIRAGANA,さんぞく,sanzoku,-,,,,,
-SENSE_COMMON,2859561,,,noun (common) (futsuumeishi),see|-|1300160|-|三脚|-|三脚,,,,,
+SENSE_COMMON,2859561,,,noun (common) (futsuumeishi),see|-|1300160|1|三脚|-|三脚[1],,,,,
 SENSE_ENG,2859561,"three legs
 tripod",,,,,,,,
 SENSE_POL,2859561,"trzy nogi
@@ -1082026,7 +1082086,7 @@ END,1252890,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2664080,,,,,,,,,
 KANJI,2664080,鳴りを静める,,,,,,,,
-KANJI,2664080,鳴りをしずめ,search-only kanji form,,,,,,,
+KANJI,2664080,鳴りをしずめる,search-only kanji form,,,,,,,
 KANJI,2664080,なりを静める,search-only kanji form,,,,,,,
 READING,2664080,HIRAGANA,なりをしずめる,nari o shizumeru,-,,,,,
 SENSE_COMMON,2664080,,,"expressions (phrases, clauses, etc.)
@@ -1138558,6 +1138618,7 @@ KANJI,1908670,本腰をいれる,search-only kanji form,,,,,,,
 KANJI,1908670,本腰入れる,search-only kanji form,,,,,,,
 KANJI,1908670,本腰いれる,search-only kanji form,,,,,,,
 READING,1908670,HIRAGANA,ほんごしをいれる,hongoshi o ireru,-,,,,,
+READING,1908670,HIRAGANA,ほんごしいれる,hongoshi ireru,-,,search-only kana form,,,
 SENSE_COMMON,1908670,,,"expressions (phrases, clauses, etc.)
 Ichidan verb",,,idiomatic expression,,,
 SENSE_ENG,1908670,"to set about in earnest
@@ -1141406,6 +1141467,12 @@ uraz
 uszkodzenie
 siniak
 złamanie",szczególnie 傷み,,,,,,,
+SENSE_COMMON,1587300,傷み,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1587300,"spoilage
+going bad (of food)
+rotting",,,,,,,,
+SENSE_POL,1587300,"psucie się (żywności)
+gnicie",,,,,,,,
 END,1587300,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1179484,6 +1179551,7 @@ KANJI,2073080,往生際が悪い,,,,,,,,
 KANJI,2073080,往生際がわるい,search-only kanji form,,,,,,,
 KANJI,2073080,往生際悪い,search-only kanji form,,,,,,,
 READING,2073080,HIRAGANA,おうじょうぎわがわるい,oujou giwa ga warui,-,,,,,
+READING,2073080,HIRAGANA,おうじょうぎわわるい,oujou giwa warui,-,,search-only kana form,,,
 SENSE_COMMON,2073080,,,"expressions (phrases, clauses, etc.)
 adjective (keiyoushi)",,,,,,
 SENSE_ENG,2073080,"not knowing when to give up
@@ -1393506,6 +1393574,12 @@ SENSE_POL,1365070,"być w zażyłości z
 zaprzyjaźnić się
 utrzymywać bliskie stosunki
 utrzymywać przyjacielskie stosunki",,,,,,,,
+SENSE_COMMON,1365070,,,"Godan verb with 'mu' ending
+intransitive verb",,,,,,
+SENSE_ENG,1365070,"to become familiar with
+to enjoy (books, nature, etc.)",,,,,,,,
+SENSE_POL,1365070,"zapoznać się z
+cieszyć się (książkami, przyrodą itp.)",,,,,,,,
 END,1365070,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1449443,7 +1449517,7 @@ END,2752180,,,,,,,,,
 BEGIN,2419680,,,,,,,,,
 KANJI,2419680,糞も味噌も一緒,,,,,,,,
 KANJI,2419680,クソもミソも一緒,search-only kanji form,,,,,,,
-KANJI,2419680,くそもみそもも一緒,search-only kanji form,,,,,,,
+KANJI,2419680,くそもみそも一緒,search-only kanji form,,,,,,,
 KANJI,2419680,クソも味噌も一緒,search-only kanji form,,,,,,,
 READING,2419680,HIRAGANA,くそもみそもいっしょ,kuso mo miso mo issho,-,,,,,
 SENSE_COMMON,2419680,,,"expressions (phrases, clauses, etc.)",,,idiomatic expression,,,
@@ -1499222,8 +1499296,8 @@ END,1553960,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2519060,,,,,,,,,
-KANJI,2519060,父ちゃん,,,,,,,,
-READING,2519060,HIRAGANA,とうちゃん,touchan,-,,,,,
+KANJI,2519060,父ちゃん,,spec2,,,,,,
+READING,2519060,HIRAGANA,とうちゃん,touchan,-,,,spec2,,
 READING,2519060,HIRAGANA,とっちゃん,tocchan,-,,,,,
 SENSE_COMMON,2519060,,,noun (common) (futsuumeishi),,,children's language,,,
 SENSE_ENG,2519060,"dad
@@ -1499234,6 +1499308,10 @@ pop",,,,,,,,
 SENSE_POL,2519060,"tata
 tatuś
 papa",,,,,,,,
+SENSE_COMMON,2519060,,とうちゃん,noun (common) (futsuumeishi),,,"colloquial
+familiar language",,,
+SENSE_ENG,2519060,husband,,,,,,,,
+SENSE_POL,2519060,mąż,,,,,,,,
 END,2519060,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1540460,6 +1540538,9 @@ SENSE_POL,1475870,bomba,,,,,,,,
 SENSE_COMMON,1475870,,,noun (common) (futsuumeishi),,,word usually written using kana alone,,,
 SENSE_ENG,1475870,"alcohol with liquor added (esp. wine-based shōchū highball, also beer with whiskey)",,,,,,,,
 SENSE_POL,1475870,alkohol z dodatkiem likieru,"zwłaszcza shōchū highball na bazie wina, także piwo z whisky",,,,,,,
+SENSE_COMMON,1475870,,,noun (common) (futsuumeishi),,"food, cooking",,,,
+SENSE_ENG,1475870,deep-fried fishcake containing a boiled egg (used in oden),,,,,,,,
+SENSE_POL,1475870,smażony w głębokim tłuszczu placek rybny z gotowanym jajkiem w środku,używane w oden,,,,,,,
 END,1475870,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1585442,7 +1585523,7 @@ KANJI,2864737,勝つる,,,,,,,,
 READING,2864737,HIRAGANA,かつる,katsuru,-,,,,,
 SENSE_COMMON,2864737,,,"Ichidan verb
 Godan verb with 'ru' ending
-intransitive verb","see|-|1346150|-|勝つ|-|勝つ
+intransitive verb","see|-|1346150|1|勝つ|-|勝つ[1]
 see|-|2741920|-|これで勝つる|-|これで勝つる",,Internet slang,,,
 SENSE_ENG,2864737,to win,usu. as これで～; rarely conjugates,,,,,,,
 SENSE_POL,2864737,"wygrać
@@ -1737762,7 +1737843,7 @@ END,2508400,,,,,,,,,
 BEGIN,2512490,,,,,,,,,
 KANJI,2512490,用うる,,,,,,,,
 READING,2512490,HIRAGANA,もちうる,mochi uru,-,,,,,
-SENSE_COMMON,2512490,,,Godan verb with 'ru' ending,see|-|1546210|-|用いる|-|用いる,,,,,
+SENSE_COMMON,2512490,,,Godan verb with 'ru' ending,see|-|1546210|1|用いる|-|用いる[1],,,,,
 SENSE_ENG,2512490,"to use
 to make use of
 to utilize",lit. form of 用いる,,,,,,,
@@ -1885588,6 +1885669,7 @@ READING,2186050,KATAKANA,ゴーヤ,gooya,-,,,spec2,,
 READING,2186050,KATAKANA,ゴーヤー,gooyaa,-,,,,,
 READING,2186050,HIRAGANA,ごおや,gooya,-,,search-only kana form,,,
 READING,2186050,HIRAGANA,ごおやあ,gooyaa,-,,search-only kana form,,,
+READING,2186050,KATAKANA,ゴヤ,goya,-,,search-only kana form,,,
 SENSE_COMMON,2186050,,,noun (common) (futsuumeishi),"see|-|2186040|-|苦瓜|-|苦瓜
 see|-|2186030|-|蔓茘枝|-|蔓茘枝",,,Ryuukyuu-ben,,
 SENSE_ENG,2186050,"bitter melon (Momordica charantia)
@@ -1904859,6 +1904941,7 @@ KANJI,1861690,縁をきる,search-only kanji form,,,,,,,
 KANJI,1861690,縁切る,search-only kanji form,,,,,,,
 KANJI,1861690,縁きる,search-only kanji form,,,,,,,
 READING,1861690,HIRAGANA,えんをきる,en o kiru,-,,,,,
+READING,1861690,HIRAGANA,えんきる,en kiru,-,,search-only kana form,,,
 SENSE_COMMON,1861690,,,"expressions (phrases, clauses, etc.)
 Godan verb with 'ru' ending",,,,,,
 SENSE_ENG,1861690,"to sever relations (with someone; esp. a relative or spouse)
@@ -1976431,6 +1976514,7 @@ KANJI,2079440,腹を括る,,,,,,,,
 KANJI,2079440,腹くくる,search-only kanji form,,,,,,,
 KANJI,2079440,腹括る,search-only kanji form,,,,,,,
 READING,2079440,HIRAGANA,はらをくくる,hara o kukuru,-,,,,,
+READING,2079440,HIRAGANA,はらくくる,hara kukuru,-,,search-only kana form,,,
 SENSE_COMMON,2079440,,,"expressions (phrases, clauses, etc.)
 Godan verb with 'ru' ending",,,idiomatic expression,,,
 SENSE_ENG,2079440,"to prepare oneself for the worst
@@ -2012256,6 +2012340,7 @@ BEGIN,2078980,,,,,,,,,
 KANJI,2078980,虚勢を張る,,,,,,,,
 KANJI,2078980,虚勢張る,search-only kanji form,,,,,,,
 READING,2078980,HIRAGANA,きょせいをはる,kyosei o haru,-,,,,,
+READING,2078980,HIRAGANA,きょせいはる,kyosei haru,-,,search-only kana form,,,
 SENSE_COMMON,2078980,,,"expressions (phrases, clauses, etc.)
 Godan verb with 'ru' ending",,,,,,
 SENSE_ENG,2078980,"to bluff
@@ -2098877,6 +2098962,9 @@ three legs",,,,,,,,
 SENSE_POL,1300160,"statyw
 trójnóg
 trzy nogi",,,,,,,,
+SENSE_COMMON,1300160,,,noun (common) (futsuumeishi),see|-|1638180|-|三脚椅子|-|三脚椅子,,abbreviation,,,
+SENSE_ENG,1300160,three-legged folding stool,,,,,,,,
+SENSE_POL,1300160,składany stołek z trzema nogami,,,,,,,,
 END,1300160,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2281358,6 +2281446,7 @@ END,2827734,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2873342,,,,,,,,,
 KANJI,2873342,鳴り止む,,,,,,,,
+KANJI,2873342,鳴りやむ,search-only kanji form,,,,,,,
 READING,2873342,HIRAGANA,なりやむ,nari yamu,-,,,,,
 SENSE_COMMON,2873342,,,"Godan verb with 'mu' ending
 intransitive verb",,,,,,
@@ -2281458,11 +2281547,11 @@ transitive verb",,,,,,
 SENSE_ENG,2873423,"to anticipate
 to do ahead of time
 to perform ahead of schedule
-to bring forward (a ceremony, etc.)",,,,,,,,
+to bring forward (e.g. a ceremony)",,,,,,,,
 SENSE_POL,2873423,"przewidywać
 zrobić z wyprzedzeniem
 wykonanie przed terminem
-przesunąć na wcześniejszy termin (uroczystość itp.)",,,,,,,,
+przesunąć na wcześniejszy termin (np. uroczystość)",,,,,,,,
 END,2873423,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
