@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-18,,,,,,,,
+HEADER,1.10,2026-11-19,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -314193,8 +314193,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-18,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-18,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-19,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-19,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -335931,7 +335931,7 @@ SENSE_ENG,2843646,"rain scene
 rainy landscape",,,,,,,,
 SENSE_POL,2843646,"sceneria deszczowa
 deszczowy krajobraz",,,,,,,,
-SENSE_COMMON,2843646,,,noun (common) (futsuumeishi),"see|-|1576450|-|雨模様|-|雨模様
+SENSE_COMMON,2843646,,,noun (common) (futsuumeishi),"see|-|1576450|1|雨模様|-|雨模様[1]
 see|-|1576420|-|雨気|-|雨気",,,,,
 SENSE_ENG,2843646,"signs of rain
 threat of rain",,,,,,,,
@@ -354878,23 +354878,28 @@ SENSE_COMMON,1597790,,,"Godan verb with 'u' ending
 intransitive verb",,,,,,
 SENSE_ENG,1597790,"to associate with
 to keep company with
-to go out with
-to go steady with
 to get on with",,,,,,,,
-SENSE_POL,1597790,"chodzić z kimś
-iść na randkę
+SENSE_POL,1597790,"przybywać z
 dotrzymać towarzystwa
-spędzać czas z
-wyjść z",,,,,,,,
+spędzać czas z",,,,,,,,
+SENSE_COMMON,1597790,,,"Godan verb with 'ru' ending
+intransitive verb",,,,,,
+SENSE_ENG,1597790,"to date
+to go out with
+to see (someone)",,,,,,,,
+SENSE_POL,1597790,"iść na randkę
+randkować z
+wyjść z kimś",,,,,,,,
 SENSE_COMMON,1597790,,,"Godan verb with 'u' ending
+transitive verb
 intransitive verb",,,,,,
 SENSE_ENG,1597790,"to go along with
 to follow someone's lead
-to accompany someone
-to compromise",,,,,,,,
+to accompany someone to
+to do with",,,,,,,,
 SENSE_POL,1597790,"zgadzać się z czymś (np. pomysłem)
 podążać za kimś
-iść na kompromis",,,,,,,,
+podążać za czyimś przykładem",,,,,,,,
 END,1597790,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -517054,8 +517059,9 @@ BEGIN,2846394,,,,,,,,,
 KANJI,2846394,上代東国方言,,,,,,,,
 READING,2846394,HIRAGANA,じょうだいとうごくほうげん,joudaitou gokuhougen,-,,,,,
 SENSE_COMMON,2846394,,,noun (common) (futsuumeishi),,linguistics,,,,
-SENSE_ENG,2846394,eastern old Japanese,,,,,,,,
-SENSE_POL,2846394,wschodni starojapoński,,,,,,,,
+SENSE_ENG,2846394,"Eastern Old Japanese
+EOJ",,,,,,,,
+SENSE_POL,2846394,Wschodni Starojapoński,,,,,,,,
 END,2846394,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -567802,8 +567808,14 @@ SENSE_COMMON,1418160,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 transitive verb",,,,,,
 SENSE_ENG,1418160,"being in charge (of an area of responsibility)
-being responsible (for a work role, etc.)",,,,,,,,
-SENSE_POL,1418160,bycie odpowiedzialnym (za coś),,,,,,,,
+being responsible (e.g. for a work role)",,,,,,,,
+SENSE_POL,1418160,"kierowanie (określonym obszarem odpowiedzialności)
+bycie odpowiedzialnym (np. za określone stanowisko)",,,,,,,,
+SENSE_COMMON,1418160,,,noun (common) (futsuumeishi),see|-|1418180|-|担当者|-|担当者,,,,,
+SENSE_ENG,1418160,"person in charge
+person responsible",,,,,,,,
+SENSE_POL,1418160,"osoba odpowiedzialna
+osoba wyznaczona",,,,,,,,
 END,1418160,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -616349,10 +616361,13 @@ END,1182030,,,,,,,,,
 BEGIN,1067470,,,,,,,,,
 READING,1067470,KATAKANA,スカート,sukaato,-,,,"gai1
 ichi1",,
-SENSE_COMMON,1067470,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1067470,,,noun (common) (futsuumeishi),,clothing,,,,
 SENSE_ENG,1067470,skirt,,,,,,,,
 SENSE_POL,1067470,"spódniczka
 spódnica",ang: skirt,,,,,,,
+SENSE_COMMON,1067470,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1067470,skirt (protective or decorative covering below a vehicle),,,,,,,,
+SENSE_POL,1067470,osłona,"element ochronny lub dekoracyjny umieszczony pod pojazdem, ang: skirt",,,,,,,
 END,1067470,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -625063,6 +625078,13 @@ e.g.",,,,,,,,
 SENSE_POL,1556370,"na przykład
 np.
 tak jak",,,,,,,,
+SENSE_COMMON,1556370,,,adverb (fukushi),,,,,,
+SENSE_ENG,1556370,"supposing
+suppose
+if (for example)",paired with a conditional,,,,,,,
+SENSE_POL,1556370,"załóżmy, że
+zakładając, że
+jeśli (na przykład)",w połączeniu z warunkiem,,,,,,,
 END,1556370,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -645957,6 +645979,11 @@ zrzeszenie
 wspólnota
 bractwo
 członkostwo",,,,,,,,
+SENSE_COMMON,1495640,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1495640,"social obligation
+obligation to accompany someone",,,,,,,,
+SENSE_POL,1495640,"obowiązek społeczny
+obowiązek towarzyszenia komuś",,,,,,,,
 END,1495640,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -707867,6 +707894,21 @@ rachować
 kalkulować
 wymieniać
 wyliczać",,,,,,,,
+SENSE_COMMON,1372900,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1372900,"to number
+to total
+to amount to",,,,,,,,
+SENSE_POL,1372900,"wynosić (łącznie)
+równać się",,,,,,,,
+SENSE_COMMON,1372900,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1372900,"to count as
+to include among
+to regard as",,,,,,,,
+SENSE_POL,1372900,"uznać za
+zaliczyć do
+traktować jako",,,,,,,,
 END,1372900,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -795166,11 +795208,11 @@ nf03",,,,,,
 READING,1418180,HIRAGANA,たんとうしゃ,tantousha,-,,,"news1
 nf03",,
 SENSE_COMMON,1418180,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1418180,"person in charge (of an area of work, etc.)
+SENSE_ENG,1418180,"person in charge (e.g. of an area of work)
 person responsible
 contact (person)",,,,,,,,
 SENSE_POL,1418180,"osoba odpowiedzialna
-osoba odpowiadająca za (obszar pracy)
+osoba odpowiadająca za (np. obszar pracy)
 strona odpowiedzialna
 osoba kontaktowa",,,,,,,,
 END,1418180,,,,,,,,,
@@ -850630,9 +850672,9 @@ SENSE_ENG,1077060,"dash
 space",,,,,,,,
 SENSE_POL,1077060,myślnik,ang: dash,,,,,,,
 SENSE_COMMON,1077060,,,noun (common) (futsuumeishi),see|-|2493580|2|-|プライム|プライム[2],mathematics,,,,
-SENSE_ENG,1077060,prime symbol (′),,,,,,,,
+SENSE_ENG,1077060,prime symbol ('),,,,,,,,
 SENSE_POL,1077060,"apostrof
-znak apostrofa (′)",,,,,,,,
+znak apostrofa (')",,,,,,,,
 SENSE_COMMON,1077060,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru",,,,,,
 SENSE_ENG,1077060,"dash
@@ -898529,6 +898571,13 @@ koordynacja
 ustalanie
 dostosowywanie
 dostrajanie",,,,,,,,
+SENSE_COMMON,1429200,,,"noun (common) (futsuumeishi)
+noun or participle which takes the aux. verb suru
+intransitive verb",,stock market,,,,
+SENSE_ENG,1429200,"correction (of stock prices)
+levelling-off or decline in stock prices after a rise",,,,,,,,
+SENSE_POL,1429200,"korekta (kursów akcji)
+ustabilizowanie się lub spadek kursów akcji po wzroście",,,,,,,,
 END,1429200,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -931753,6 +931802,13 @@ capabilities",,,,,,,,
 SENSE_POL,1312690,"kwalifikacje
 wymagania
 kompetencje","czynniki potrzebne do tego, aby osiągnąć pewien status lub stanowisko",,,,,,,
+SENSE_COMMON,1312690,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1312690,"capacity (such as that of a representative)
+status
+standing",,,,,,,,
+SENSE_POL,1312690,"kompetencje
+status
+pozycja",np. kompetencje przedstawiciela,,,,,,,
 END,1312690,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1336548,6 +1336604,13 @@ leading actress",,,,,,,,
 SENSE_POL,1326290,"główna rola
 aktor pierwszoplanowy
 aktorka pierwszoplanowa",,,,,,,,
+SENSE_COMMON,1326290,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1326290,"central figure
+key player
+principal role (in an event, activity, etc.)",,,,,,,,
+SENSE_POL,1326290,"główna postać
+kluczowa postać
+główna rola (w wydarzeniu, działaniu itp.)",,,,,,,,
 END,1326290,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1344166,6 +1344229,14 @@ okolica
 środowisko
 obwód
 okrąg",pisane również jako 周,,,,,,,
+SENSE_COMMON,1331010,,,"adverb (fukushi)
+adverb taking the 'to' particle",,,,,,
+SENSE_ENG,1331010,"around
+in a full circle
+all around",,,,,,,,
+SENSE_POL,1331010,"wokół
+w pełnym kole
+dookoła",,,,,,,,
 END,1331010,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1375928,13 +1375999,11 @@ KANJI,1488160,百合,,"news1
 nf11",,,,,,
 READING,1488160,HIRAGANA,ゆり,yuri,-,,gikun (meaning as reading) or jukujikun (special kanji reading),"news1
 nf11",,
-READING,1488160,HIRAGANA,ゆる,yuru,-,,out-dated or obsolete kana usage,,,
-READING,1488160,KATAKANA,ユリ,yuri,NO_KANJI,,,,,
+READING,1488160,KATAKANA,ユリ,yuri,NO_KANJI,,,spec2,,
 SENSE_COMMON,1488160,,,noun (common) (futsuumeishi),,,word usually written using kana alone,,,
 SENSE_ENG,1488160,lily (Lilium spp.),,,,,,,,
 SENSE_POL,1488160,lilia,,,,,,,,
-SENSE_COMMON,1488160,,"ゆり
-ユリ",noun (common) (futsuumeishi),see|-|2404460|-|-|ガールズラブ|ガールズラブ,,colloquial,,,
+SENSE_COMMON,1488160,,,noun (common) (futsuumeishi),see|-|2404460|-|-|ガールズラブ|ガールズラブ,,colloquial,,,
 SENSE_ENG,1488160,"yuri
 genre of comics and novels about female homosexuality|expl",,,,,,,,
 SENSE_POL,1488160,"yuri
@@ -1527396,6 +1527465,11 @@ hospitalisation",,,,,,,,
 SENSE_POL,1465720,"hospitalizacja
 pójście do szpitala
 przyjęcie do szpitala",,,,,,,,
+SENSE_COMMON,1465720,,,"noun (common) (futsuumeishi)
+noun or participle which takes the aux. verb suru
+intransitive verb",,,,,,
+SENSE_ENG,1465720,admission to an institution (esp. reformatory),,,,,,,,
+SENSE_POL,1465720,przyjęcie do placówki,zwłaszcza do zakładu wychowawczego,,,,,,,
 END,1465720,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1932148,6 +1932222,11 @@ threat of rain",,,,,,,,
 SENSE_POL,1576450,"ślady deszczu
 oznaki deszczu
 groźba deszczu",,,,,,,,
+SENSE_COMMON,1576450,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1576450,"intermittently rainy weather
+weather with occasional light rain",,,,,,,,
+SENSE_POL,1576450,"pogoda z przerywanymi opadami deszczu
+pogoda ze sporadycznymi lekkimi opadami deszczu",,,,,,,,
 END,1576450,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2038901,10 +2038980,8 @@ SENSE_POL,2870364,"stworzenie z niczego
 wykreowanie czegoś z niczego
 czyste zmyślenie",,,,,,,,
 SENSE_COMMON,2870364,,,noun (common) (futsuumeishi),see|-|1300710|-|三十六計|-|三十六計,,yojijukugo,,,
-SENSE_ENG,2870364,"""""""Creating Something from Nothing"""" (7th of the Thirty-Six Stratagems)""
-making a non-existent thing appear to exist to deceive an enemy",,,,,,,,
-SENSE_POL,2870364,"Tworzenie Czegoś z Niczego” (siódma z trzydziestu sześciu strategii)
-sprawianie, by coś, co nie istnieje, wydawało się istnieć, aby oszukać wroga",,,,,,,,
+SENSE_ENG,2870364,Creating Something from Nothing (7th of the Thirty-Six Stratagems - making a non-existent thing appear to exist),,,,,,,,
+SENSE_POL,2870364,Tworzenie Czegoś z Niczego,"siódma z trzydziestu sześciu strategii, sprawianie, by coś, co nie istnieje, wydawało się istnieć, aby oszukać wroga",,,,,,,
 END,2870364,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2077623,7 +2077700,7 @@ BEGIN,2404810,,,,,,,,,
 KANJI,2404810,お付き合い,,,,,,,,
 KANJI,2404810,御付き合い,search-only kanji form,,,,,,,
 READING,2404810,HIRAGANA,おつきあい,otsuki ai,-,,,,,
-SENSE_COMMON,2404810,,,noun (common) (futsuumeishi),see|-|1495640|-|付き合い|-|付き合い,,,,,
+SENSE_COMMON,2404810,,,noun (common) (futsuumeishi),see|-|1495640|1|付き合い|-|付き合い[1],,,,,
 SENSE_ENG,2404810,"association
 socializing
 socialising
@@ -2282856,13 +2282933,13 @@ BEGIN,2873430,,,,,,,,,
 KANJI,2873430,通わす,,,,,,,,
 READING,2873430,HIRAGANA,かよわす,kayowasu,-,,,,,
 SENSE_COMMON,2873430,,,"Godan verb with 'su' ending
-transitive verb",,,,,,
+transitive verb",see|-|2873435|1|通わせる|-|通わせる[1],,,,,
 SENSE_ENG,2873430,"to send (someone; e.g. to school)
 to have (someone) attend",,,,,,,,
 SENSE_POL,2873430,"wysłać (kogoś; np. do szkoły)
 zadbać o to, by (ktoś) uczęszczał",,,,,,,,
 SENSE_COMMON,2873430,,,"Godan verb with 'su' ending
-transitive verb",,,,,,
+transitive verb",see|-|2873435|2|通わせる|-|通わせる[2],,,,,
 SENSE_ENG,2873430,"to communicate (feelings, thoughts, etc.)
 to get across
 to exchange",,,,,,,,
@@ -2282870,7 +2282947,7 @@ SENSE_POL,2873430,"wyrażać (uczucia, myśli itp.)
 przekazać
 wymieniać",,,,,,,,
 SENSE_COMMON,2873430,,,"Godan verb with 'su' ending
-transitive verb",,,,,,
+transitive verb",see|-|2873435|3|通わせる|-|通わせる[3],,,,,
 SENSE_ENG,2873430,"to let (air, blood, etc.) circulate
 to let pass through",,,,,,,,
 SENSE_POL,2873430,"zapewnić cyrkulację (powietrza, krwi itp.)
