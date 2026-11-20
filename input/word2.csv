@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-19,,,,,,,,
+HEADER,1.10,2026-11-20,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -45774,6 +45774,12 @@ to advance",,,,,,,,
 SENSE_POL,1247000,"awansować
 posuwać się naprzód
 zwyżkować",,,,,,,,
+SENSE_COMMON,1247000,,,"Ichidan verb
+transitive verb",,mathematics,,,,
+SENSE_ENG,1247000,"to carry (a digit to the next place in addition)
+to round up",,,,,,,,
+SENSE_POL,1247000,"przenosić (cyfrę do następnej pozycji podczas dodawania)
+zaokrąglać w górę",,,,,,,,
 END,1247000,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -157311,7 +157317,7 @@ BEGIN,2849949,,,,,,,,,
 KANJI,2849949,悩める,,,,,,,,
 READING,2849949,HIRAGANA,なやめる,nayameru,-,,,,,
 SENSE_COMMON,2849949,,,"expressions (phrases, clauses, etc.)
-pre-noun adjectival (rentaishi)",see|-|1469870|-|悩む|-|悩む,,,,,
+pre-noun adjectival (rentaishi)",see|-|1469870|1|悩む|-|悩む[1],,,,,
 SENSE_ENG,2849949,"worried
 troubled
 afflicted",,,,,,,,
@@ -189085,6 +189091,13 @@ SENSE_POL,2119750,"co do diabła
 co u licha
 cholera
 psiakrew",,,,,,,,
+SENSE_COMMON,2119750,,なんだ,interjection (kandoushi),,,word usually written using kana alone,,,
+SENSE_ENG,2119750,"well
+um
+you know",,,,,,,,
+SENSE_POL,2119750,"no cóż
+hmm
+no wiesz",,,,,,,,
 END,2119750,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -302592,10 +302605,15 @@ nf15",,
 READING,1312880,KATAKANA,メス,mesu,NO_KANJI,,,,,
 READING,1312880,HIRAGANA,めん,men,-,,,,,
 SENSE_COMMON,1312880,,,"noun (common) (futsuumeishi)
-nouns which may take the genitive case particle 'no'",see|-|1589190|-|雄|-|雄,,word usually written using kana alone,,,
+nouns which may take the genitive case particle 'no'",see|-|1589190|1|雄|-|雄[1],,word usually written using kana alone,,,
 SENSE_ENG,1312880,"female (animal, plant)",,,,,,,,
 SENSE_POL,1312880,"samica
 rodzaj żeński","np. zwierzęcia, rośliny",,,,,,,
+SENSE_COMMON,1312880,雌,"めす
+メス","noun (common) (futsuumeishi)
+nouns which may take the genitive case particle 'no'",,,word usually written using kana alone,,,
+SENSE_ENG,1312880,"female (connector, part, etc.)",,,,,,,,
+SENSE_POL,1312880,żeński,"np. złącze, część i etc",,,,,,,
 END,1312880,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -314193,8 +314211,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-19,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-19,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-20,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-20,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -347842,6 +347860,12 @@ to be confined indoors",,,,,,,,
 SENSE_POL,1169230,"nie ruszać się z domu
 nie wychodząc z domu
 być ograniczony w domu",,,,,,,,
+SENSE_COMMON,1169230,,,"Godan verb with 'ru' ending
+intransitive verb",,,,,,
+SENSE_ENG,1169230,"to retire from public life
+to withdraw into seclusion",,,,,,,,
+SENSE_POL,1169230,"wycofać się z życia publicznego
+wycofać się w odosobnienie",,,,,,,,
 END,1169230,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -354882,14 +354906,15 @@ to get on with",,,,,,,,
 SENSE_POL,1597790,"przybywać z
 dotrzymać towarzystwa
 spędzać czas z",,,,,,,,
-SENSE_COMMON,1597790,,,"Godan verb with 'ru' ending
+SENSE_COMMON,1597790,,,"Godan verb with 'u' ending
 intransitive verb",,,,,,
 SENSE_ENG,1597790,"to date
 to go out with
-to see (someone)",,,,,,,,
+to see each other",,,,,,,,
 SENSE_POL,1597790,"iść na randkę
 randkować z
-wyjść z kimś",,,,,,,,
+spotykać się z
+widywać się",,,,,,,,
 SENSE_COMMON,1597790,,,"Godan verb with 'u' ending
 transitive verb
 intransitive verb",,,,,,
@@ -374786,7 +374811,7 @@ END,2836308,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2840109,,,,,,,,,
 READING,2840109,HIRAGANA,ややむ,yayamu,-,,,,,
-SENSE_COMMON,2840109,,,Yodan verb with 'mu' ending (archaic),see|-|1469870|-|悩む|なやむ|悩む(なやむ),,archaic,,,
+SENSE_COMMON,2840109,,,Yodan verb with 'mu' ending (archaic),see|-|1469870|1|悩む|なやむ|悩む(なやむ)[1],,archaic,,,
 SENSE_ENG,2840109,to be deeply worried,,,,,,,,
 SENSE_POL,2840109,być głęboko zmartwionym,,,,,,,,
 END,2840109,,,,,,,,,
@@ -567604,7 +567629,7 @@ READING,1511980,HIRAGANA,へんさん,hensan,-,,,"news2
 nf31",,
 SENSE_COMMON,1511980,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
-transitive verb",see|-|1603240|-|編集|-|編集,,,,,
+transitive verb",see|-|1603240|1|編集|-|編集[1],,,,,
 SENSE_ENG,1511980,"compilation (esp. dictionary, history, law code)
 editing",,,,,,,,
 SENSE_POL,1511980,"opracowanie
@@ -579957,11 +579982,23 @@ nf02",,
 SENSE_COMMON,1603240,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 transitive verb",,,,,,
-SENSE_ENG,1603240,"editing
-compilation",,,,,,,,
+SENSE_ENG,1603240,"editing (a book, article, etc.)
+compilation
+cutting (e.g. a video)",,,,,,,,
 SENSE_POL,1603240,"redakcja
-redagowanie
-opracowywanie",,,,,,,,
+redagowanie (np. książki, artykułu i etc)
+opracowywanie
+montaż (np. materiału wideo)",,,,,,,,
+SENSE_COMMON,1603240,,,"noun (common) (futsuumeishi)
+noun or participle which takes the aux. verb suru
+transitive verb",,,,,,
+SENSE_ENG,1603240,"editing (e.g. a file)
+changing (data)",,,,,,,,
+SENSE_POL,1603240,"edycja (np. pliku)
+zmiana (danych)",,,,,,,,
+SENSE_COMMON,1603240,,,noun (common) (futsuumeishi),see|-|1512010|-|編集者|-|編集者,,abbreviation,,,
+SENSE_ENG,1603240,editor,,,,,,,,
+SENSE_POL,1603240,edytor,,,,,,,,
 END,1603240,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -639290,6 +639327,15 @@ SENSE_POL,1378690,"rodzić się
 urodzić się
 przyjść na świat
 być urodzony",,,,,,,,
+SENSE_COMMON,1378690,生まれる,,"Ichidan verb
+intransitive verb",,,,,,
+SENSE_ENG,1378690,"to arise
+to come into being
+to be created
+to originate",,,,,,,,
+SENSE_POL,1378690,"powstać
+zaistnieć
+zostać stworzonym",,,,,,,,
 END,1378690,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -790233,6 +790279,11 @@ noun (common) (futsuumeishi)",,,,,,
 SENSE_ENG,1061830,beautiful,,,,,,,,
 SENSE_POL,1061830,"piękny
 piękno",,,,,,,,
+SENSE_COMMON,1061830,,,noun (common) (futsuumeishi),,,dated term,,,
+SENSE_ENG,1061830,"beautiful woman
+beauty",,,,,,,,
+SENSE_POL,1061830,"piękna kobieta
+piękno",,,,,,,,
 END,1061830,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -806088,7 +806139,7 @@ READING,1416230,HIRAGANA,たっする,tassuru,-,,,"ichi1
 news1
 nf15",,
 SENSE_COMMON,1416230,,,"suru verb - special class
-transitive verb",,,,,,
+intransitive verb",,,,,,
 SENSE_ENG,1416230,"to reach
 to get to
 to arrive at",,,,,,,,
@@ -806097,6 +806148,20 @@ osiągnąć
 dotrzeć do
 dojechać do
 dosięgnąć",,,,,,,,
+SENSE_COMMON,1416230,,,"suru verb - special class
+transitive verb",,,,,,
+SENSE_ENG,1416230,"to accomplish
+to achieve
+to attain (an objective)",,,,,,,,
+SENSE_POL,1416230,"zrealizować (cel)
+osiągnąć",,,,,,,,
+SENSE_COMMON,1416230,,,"suru verb - special class
+transitive verb",,,,,,
+SENSE_ENG,1416230,"to notify
+to issue (an order)",,,,,,,,
+SENSE_POL,1416230,"zgłaszać
+zawiadamiać
+wydać (polecenie)",,,,,,,,
 END,1416230,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -898215,6 +898280,12 @@ to be troubled",,,,,,,,
 SENSE_POL,1469870,"być zmartwiony
 martwić się
 gnębić się",,,,,,,,
+SENSE_COMMON,1469870,,,"Godan verb with 'mu' ending
+intransitive verb",,,,,,
+SENSE_ENG,1469870,"to suffer from (physical pain, an illness, etc.)
+to be afflicted with",,,,,,,,
+SENSE_POL,1469870,"cierpieć z powodu (bólu fizycznego, choroby itp.)
+być dotkniętym",,,,,,,,
 END,1469870,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -914756,10 +914827,15 @@ nf01",,
 READING,1589190,HIRAGANA,おん,on,-,,,,,
 READING,1589190,KATAKANA,オス,osu,NO_KANJI,,,,,
 SENSE_COMMON,1589190,,,"noun (common) (futsuumeishi)
-nouns which may take the genitive case particle 'no'",see|-|1312880|-|雌|-|雌,,word usually written using kana alone,,,
+nouns which may take the genitive case particle 'no'",see|-|1312880|1|雌|-|雌[1],,word usually written using kana alone,,,
 SENSE_ENG,1589190,"male (animal, plant)",,,,,,,,
 SENSE_POL,1589190,"płci męskiej
 samiec",używane w odniesieniu do zwierząt,,,,,,,
+SENSE_COMMON,1589190,雄,"おす
+オス","noun (common) (futsuumeishi)
+nouns which may take the genitive case particle 'no'",,,word usually written using kana alone,,,
+SENSE_ENG,1589190,"male (connector, part, etc.)",,,,,,,,
+SENSE_POL,1589190,męski,"np. złącze, część i etc",,,,,,,
 END,1589190,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1206695,7 +1206771,7 @@ END,2861073,,,,,,,,,
 BEGIN,2861075,,,,,,,,,
 READING,2861075,KATAKANA,メール,meeru,-,,,,,
 SENSE_COMMON,2861075,,,noun (common) (futsuumeishi),"see|-|1420160|1|男性|-|男性[1]
-see|-|1589190|-|雄|おす|雄(おす)",,,,,
+see|-|1589190|1|雄|おす|雄(おす)[1]",,,,,
 SENSE_ENG,2861075,male,,,,,,,,
 SENSE_POL,2861075,mężczyzna,ang: male,,,,,,,
 END,2861075,,,,,,,,,
@@ -1295486,6 +1295562,12 @@ SENSE_ENG,1299640,"to rust
 to become rusty",,,,,,,,
 SENSE_POL,1299640,"rdzewieć
 zardzewieć",,,,,,,,
+SENSE_COMMON,1299640,,,"Ichidan verb
+intransitive verb",,,,,,
+SENSE_ENG,1299640,"to become deep and mellow (of a voice)
+to become soothing",,,,,,,,
+SENSE_POL,1299640,"stać się głębokim i łagodnym (o głosie)
+stać się kojącym",,,,,,,,
 END,1299640,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1635402,7 +1635484,7 @@ BEGIN,2220570,,,,,,,,,
 KANJI,2220570,身につまされる,,,,,,,,
 READING,2220570,HIRAGANA,みにつまされる,mi ni tsumasareru,-,,,,,
 SENSE_COMMON,2220570,,,"expressions (phrases, clauses, etc.)
-Ichidan verb",,,,,,
+Ichidan verb",see|-|2873383|-|-|つまされる|つまされる,,,,,
 SENSE_ENG,2220570,"to sympathize deeply with
 to strike a chord of sympathy",sometimes incorrectly as 身につままれる,,,,,,,
 SENSE_POL,2220570,"głęboko współczuć
@@ -1677980,7 +1678062,7 @@ READING,2831488,KATAKANA,フィーメイル,fiimeiru,-,,,,,
 READING,2831488,KATAKANA,フィーメル,fiimeru,-,,,,,
 READING,2831488,KATAKANA,フィメイル,fimeiru,-,,,,,
 SENSE_COMMON,2831488,,,noun (common) (futsuumeishi),"see|-|1345250|1|女性|-|女性[1]
-see|-|1312880|-|雌|めす|雌(めす)",,,,,
+see|-|1312880|1|雌|めす|雌(めす)[1]",,,,,
 SENSE_ENG,2831488,female,,,,,,,,
 SENSE_POL,2831488,kobieta,ang: female,,,,,,,
 END,2831488,,,,,,,,,
@@ -1722388,7 +1722470,7 @@ BEGIN,2560440,,,,,,,,,
 KANJI,2560440,錆び錆び,,,,,,,,
 READING,2560440,HIRAGANA,さびさび,sabi sabi,-,,,,,
 SENSE_COMMON,2560440,,,"nouns which may take the genitive case particle 'no'
-noun (common) (futsuumeishi)",see|-|1299640|-|錆びる|-|錆びる,,word usually written using kana alone,,,
+noun (common) (futsuumeishi)",see|-|1299640|1|錆びる|-|錆びる[1],,word usually written using kana alone,,,
 SENSE_ENG,2560440,"rusted
 rusty",,,,,,,,
 SENSE_POL,2560440,zardzewiały,,,,,,,,
@@ -1865913,7 +1865995,7 @@ KANJI,1824310,撰修,,,,,,,,
 READING,1824310,HIRAGANA,せんしゅう,senshuu,-,,,,,
 SENSE_COMMON,1824310,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
-transitive verb",see|-|1603240|-|編修|-|編修,,dated term,,,
+transitive verb",see|-|1603240|1|編修|-|編修[1],,dated term,,,
 SENSE_ENG,1824310,"writing (a book)
 compiling
 editing",,,,,,,,
@@ -1956252,6 +1956334,12 @@ to grow lively",,,,,,,,
 SENSE_POL,1850890,"ekscytować się
 być podekscytowanym
 stać się żywiołowy",,,,,,,,
+SENSE_COMMON,1850890,,,"Godan verb with 'tsu' ending
+intransitive verb",,,,,,
+SENSE_ENG,1850890,"to become tense
+to become agitated",,,,,,,,
+SENSE_POL,1850890,"zacząć się denerwować
+zacząć się wzburzać",,,,,,,,
 END,1850890,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1958668,6 +1958756,13 @@ SENSE_POL,1259330,"antycypować
 przewidywać
 spodziewać się
 oczekiwać",,,,,,,,
+SENSE_COMMON,1259330,,,"Godan verb with 'su' ending
+transitive verb",,,,,,
+SENSE_ENG,1259330,"to look over (e.g. a barrier)
+to see over
+to look across",,,,,,,,
+SENSE_POL,1259330,"spojrzeć ponad (np. barierą)
+spojrzeć w dal",,,,,,,,
 END,1259330,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1976913,6 +1977008,12 @@ suszyć
 słabnąć
 niknąć
 gasnąć",,,,,,,,
+SENSE_COMMON,1601410,,,"Godan verb with 'ru' ending
+intransitive verb",,,,,,
+SENSE_ENG,1601410,"to lose one's livelihood
+to be unable to make a living",,,,,,,,
+SENSE_POL,1601410,"stracić źródło utrzymania
+nie być w stanie zarobić na życie",,,,,,,,
 END,1601410,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2067464,6 +2067565,13 @@ unbranded",,,,,,,,
 SENSE_POL,2001130,"nieoznaczony
 bez oznaczenia
 niemarkowy",,,,,,,,
+SENSE_COMMON,2001130,,,noun (common) (futsuumeishi),,sports,,,,
+SENSE_ENG,2001130,"unfavoured competitor
+outsider
+wild-card","in horse racing, cycle racing, etc.",,,,,,,
+SENSE_POL,2001130,"???
+outsider
+dzika karta","w wyścigach konnych, kolarstwie itp.",,,,,,,
 END,2001130,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2088183,14 +2088291,26 @@ END,2644060,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2097250,,,,,,,,,
 READING,2097250,KATAKANA,ヒーヒー,hii hii,-,,,,,
-READING,2097250,HIRAGANA,ひいひい,hii hii,-,,,,,
+READING,2097250,HIRAGANA_KATAKANA,ひーひー,hii hii,-,,,,,
+READING,2097250,HIRAGANA,ひいひい,hii hii,-,,search-only kana form,,,
+READING,2097250,KATAKANA_EXCEPTION,ヒイヒイ,hii hii,-,,search-only kana form,,,
 SENSE_COMMON,2097250,,,"adverb (fukushi)
 adverb taking the 'to' particle
 noun or participle which takes the aux. verb suru",,,onomatopoeic or mimetic word,,,
 SENSE_ENG,2097250,"whaa whaa
-sound of a baby crying|expl",,,,,,,,
+feebly (crying; e.g. of a baby)",,,,,,,,
 SENSE_POL,2097250,"łaa łaa
-odgłos płaczącego dziecka|expl",,,,,,,,
+słaby (płacz, np. dziecka)",,,,,,,,
+SENSE_COMMON,2097250,,,"adverb (fukushi)
+adverb taking the 'to' particle",,,onomatopoeic or mimetic word,,,
+SENSE_ENG,2097250,"crying out (in pain or distress)
+groaning (with effort)
+howling
+wailing",,,,,,,,
+SENSE_POL,2097250,"krzyczenie (z bólu lub z rozpaczy)
+jęczenie (z wysiłku)
+wycie
+lamentowanie",,,,,,,,
 END,2097250,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2124274,6 +2124394,12 @@ SENSE_COMMON,1473890,,,"Godan verb with 'su' ending
 transitive verb",,,,,,
 SENSE_ENG,1473890,to sell over to,,,,,,,,
 SENSE_POL,1473890,sprzedawać (komuś),,,,,,,,
+SENSE_COMMON,1473890,,,"Godan verb with 'su' ending
+transitive verb",,,,,,
+SENSE_ENG,1473890,"to sell out
+to betray and hand over (to an enemy)",,,,,,,,
+SENSE_POL,1473890,"sprzedać
+zdradzić i wydać (wrogowi)",,,,,,,,
 END,1473890,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2239972,7 +2240098,7 @@ BEGIN,2410080,,,,,,,,,
 KANJI,2410080,達す,,,,,,,,
 READING,2410080,HIRAGANA,たっす,tassu,-,,,,,
 SENSE_COMMON,2410080,,,"Godan verb with 'su' ending
-su verb - precursor to the modern suru",see|-|1416230|-|達する|-|達する,,,,,
+su verb - precursor to the modern suru",see|-|1416230|1|達する|-|達する[1],,,,,
 SENSE_ENG,2410080,"to reach
 to get to",,,,,,,,
 SENSE_POL,2410080,"osiągać
@@ -2265704,15 +2265830,32 @@ END,2536620,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1010740,,,,,,,,,
+READING,1010740,KATAKANA,ビシビシ,bishi bishi,-,,,,,
 READING,1010740,HIRAGANA,びしびし,bishi bishi,-,,,,,
-SENSE_COMMON,1010740,,,adverb (fukushi),,,onomatopoeic or mimetic word,,,
-SENSE_ENG,1010740,"stickily
-relentlessly",,,,,,,,
-SENSE_POL,1010740,"nieubłaganie
+SENSE_COMMON,1010740,,,"adverb (fukushi)
+adverb taking the 'to' particle",,,onomatopoeic or mimetic word,,,
+SENSE_ENG,1010740,"rigorously (carrying out)
+relentlessly
+strictly
+stickily
+by all means",,,,,,,,
+SENSE_POL,1010740,"rygorystycznie (działąnie)
+nieubłaganie
 nieustępliwie
 nieustannie
 zawzięcie
-uparcie",,,,,,,,
+uparcie
+za wszelką cenę",,,,,,,,
+SENSE_COMMON,1010740,,,"adverb (fukushi)
+adverb taking the 'to' particle",,,onomatopoeic or mimetic word,,,
+SENSE_ENG,1010740,"with repeated sharp blows
+whack after whack
+with crack after crack (of a whip)
+hard and repeatedly (striking)",,,,,,,,
+SENSE_POL,1010740,"powtarzającymi się ostrymi uderzeniami
+uderzenie za uderzeniem
+trzask za trzaskiem (bicza)
+mocno i wielokrotnie (uderzając)",,,,,,,,
 END,1010740,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2270771,7 +2270914,7 @@ BEGIN,2845577,,,,,,,,,
 READING,2845577,HIRAGANA_KATAKANA,べーだ,beeda,-,,,,,
 READING,2845577,HIRAGANA,べえだ,beeda,-,,,,,
 READING,2845577,KATAKANA_HIRAGANA,ベーだ,beeda,-,,search-only kana form,,,
-SENSE_COMMON,2845577,,,interjection (kandoushi),see|-|2640910|-|-|ベー|ベー,,,,,
+SENSE_COMMON,2845577,,,interjection (kandoushi),see|-|2640910|-|-|べー|べー,,,,,
 SENSE_ENG,2845577,bleh,said when taunting someone by sticking out one's tongue,,,,,,,
 SENSE_POL,2845577,ble,"mówi się, gdy drwi się z kogoś, wystawiając język",,,,,,,
 END,2845577,,,,,,,,,
@@ -2279126,7 +2279269,7 @@ READING,2873366,HIRAGANA,きりょう,kiryou,-,,,,,
 SENSE_COMMON,2873366,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 intransitive verb",,,,,,
-SENSE_ENG,2873366,returning to one’s dormitory,,,,,,,,
+SENSE_ENG,2873366,returning to one's dormitory,,,,,,,,
 SENSE_POL,2873366,powrót do swojego akademika,,,,,,,,
 END,2873366,,,,,,,,,
 ,,,,,,,,,,
@@ -2284130,7 +2284273,7 @@ READING,2873344,HIRAGANA,やききれる,yaki kireru,-,,,,,
 SENSE_COMMON,2873344,,,"Ichidan verb
 intransitive verb",,,,,,
 SENSE_ENG,2873344,"to burn through
-to burn out (motor , filament, wire, etc.)",,,,,,,,
+to burn out (of a motor, filament, wire, etc.)",,,,,,,,
 SENSE_POL,2873344,"wypalić
 wypalić się
 przepalić
