@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-20,,,,,,,,
+HEADER,1.10,2026-11-21,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -314211,8 +314211,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-20,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-20,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-21,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-21,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -327205,6 +327205,14 @@ come (now)
 well",,,,,,,,
 SENSE_POL,1000750,"a więc
 więc",,,,,,,,
+SENSE_COMMON,1000750,,,adverb (fukushi),see|-|2257930|-|いざ鎌倉|-|いざ鎌倉,,,,,
+SENSE_ENG,1000750,"when it comes to
+when actually
+when the time comes",when actually facing or undertaking something,,,,,,,
+SENSE_POL,1000750,"kiedy już
+kiedy już przyjdzie
+kiedy nadejdzie czas
+gdy nadejdzie odpowiedni moment",kiedy faktycznie stawiamy czemuś czoła lub podejmujemy się czegoś,,,,,,,
 END,1000750,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -378573,7 +378581,7 @@ END,1390840,,,,,,,,,
 BEGIN,1246940,,,,,,,,,
 KANJI,1246940,繰り下げる,,"news2
 nf45",,,,,,
-KANJI,1246940,繰下げる,,,,,,,,
+KANJI,1246940,繰下げる,search-only kanji form,,,,,,,
 READING,1246940,HIRAGANA,くりさげる,kuri sageru,-,,,"news2
 nf45",,
 SENSE_COMMON,1246940,,,"Ichidan verb
@@ -378585,6 +378593,10 @@ SENSE_POL,1246940,"odraczać
 opóźniać
 wstrzymywać
 odkładać",,,,,,,,
+SENSE_COMMON,1246940,,,"Ichidan verb
+transitive verb",,mathematics,,,,
+SENSE_ENG,1246940,to borrow (from the next place in subtraction),,,,,,,,
+SENSE_POL,1246940,pożyczyć,od następnego miejsca w odejmowaniu,,,,,,,
 END,1246940,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -379624,7 +379636,7 @@ KANJI,2136150,いざと言う時,,,,,,,,
 READING,2136150,HIRAGANA,いざというとき,iza to iu toki,-,,,,,
 SENSE_COMMON,2136150,,,"expressions (phrases, clauses, etc.)
 noun (common) (futsuumeishi)
-adverb (fukushi)",see|-|1000750|-|-|いざ|いざ,,,,,
+adverb (fukushi)",see|-|1000750|1|-|いざ|いざ[1],,,,,
 SENSE_ENG,2136150,"at the critical moment
 when the time comes
 when it's most important
@@ -480692,6 +480704,11 @@ right now",,,,,,,,
 SENSE_POL,1289000,"teraz (w przeciwieństwie do przeszłości)
 teraz w końcu
 obecnie",,,,,,,,
+SENSE_COMMON,1289000,,,adverb (fukushi),,,,,,
+SENSE_ENG,1289000,"any moment now
+on the point of",,,,,,,,
+SENSE_POL,1289000,"w każdej chwili
+???",,,,,,,,
 END,1289000,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -609574,10 +609591,12 @@ mieć na własność",,,,,,,,
 SENSE_COMMON,1315720,,,"Godan verb with 'tsu' ending
 transitive verb",,,,,,
 SENSE_ENG,1315720,"to maintain
-to keep",,,,,,,,
-SENSE_POL,1315720,utrzymywać,,,,,,,,
+to keep
+to retain",,,,,,,,
+SENSE_POL,1315720,"utrzymywać
+zatrzymywać",,,,,,,,
 SENSE_COMMON,1315720,,,"Godan verb with 'tsu' ending
-transitive verb",,,,,,
+intransitive verb",,,,,,
 SENSE_ENG,1315720,"to last
 to be durable
 to keep
@@ -609588,17 +609607,27 @@ przetrwać
 przetrzymywać",,,,,,,,
 SENSE_COMMON,1315720,,,"Godan verb with 'tsu' ending
 transitive verb",,,,,,
-SENSE_ENG,1315720,"to take charge of
-to be in charge of",,,,,,,,
+SENSE_ENG,1315720,"to be in charge of
+to take charge of
+to hold (a responsibility, role, etc.)",,,,,,,,
 SENSE_POL,1315720,"zająć się
 zajmować się
-być odpowiedzialnym za",,,,,,,,
+być odpowiedzialnym za
+przejąć odpowiedzialność za
+pełnić (obowiązek, rolę itp.)",,,,,,,,
 SENSE_COMMON,1315720,,,"Godan verb with 'tsu' ending
 transitive verb",,,,,,
-SENSE_ENG,1315720,"to hold (meeting, etc.)
-to have (opportunity, etc.)",,,,,,,,
-SENSE_POL,1315720,"organizować (spotkanie itp.)
-mieć (możliwość itp.)",,,,,,,,
+SENSE_ENG,1315720,"to hold (a meeting, ceremony, etc.)
+to have (e.g. an opportunity)",,,,,,,,
+SENSE_POL,1315720,"organizować (np. spotkanie, ceremonię)
+mieć (np. możliwość)",,,,,,,,
+SENSE_COMMON,1315720,,,"Godan verb with 'tsu' ending
+transitive verb",,,,,,
+SENSE_ENG,1315720,"to bear (expenses)
+to pay
+to cover (costs)",,,,,,,,
+SENSE_POL,1315720,"pokrywać (wydatki, koszty)
+płacić",,,,,,,,
 SENSE_COMMON,1315720,,,"Godan verb with 'tsu' ending
 transitive verb
 intransitive verb",,,colloquial,,,
@@ -669863,6 +669892,12 @@ transitive verb",,,,,,
 SENSE_ENG,2831669,"to make (someone) laugh
 to set to laughing",,,,,,,,
 SENSE_POL,2831669,rozśmieszyć,,,,,,,,
+SENSE_COMMON,2831669,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,2831669,"to invite ridicule
+to be laughable",,,,,,,,
+SENSE_POL,2831669,"wywołać śmieszność
+być śmiesznym",,,,,,,,
 END,2831669,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -790272,14 +790307,18 @@ END,1061770,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1061830,,,,,,,,,
 READING,1061830,KATAKANA,シャン,shan,-,,,gai1,,
-READING,1061830,KATAKANA,シヤン,shiyan,-,,word containing irregular kana usage,,,
+READING,1061830,KATAKANA,シヤン,shiyan,-,,search-only kana form,,,
 COMMON,1061830,-|-|ger|schön,,,,,,,,
+INFO_ENG,1061830,Meiji-period student slang|note,,,,,,,,
+INFO_POL,1061830,studencki slang z okresu Meiji|note,,,,,,,,
 SENSE_COMMON,1061830,,,"adjectival nouns or quasi-adjectives (keiyodoshi)
-noun (common) (futsuumeishi)",,,,,,
+noun (common) (futsuumeishi)",,,"slang
+obsolete term",,,
 SENSE_ENG,1061830,beautiful,,,,,,,,
 SENSE_POL,1061830,"piękny
 piękno",,,,,,,,
-SENSE_COMMON,1061830,,,noun (common) (futsuumeishi),,,dated term,,,
+SENSE_COMMON,1061830,,,noun (common) (futsuumeishi),see|-|2715330|-|-|ウンシャン|ウンシャン,,"slang
+obsolete term",,,
 SENSE_ENG,1061830,"beautiful woman
 beauty",,,,,,,,
 SENSE_POL,1061830,"piękna kobieta
@@ -2165253,7 +2165292,7 @@ END,1066110,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1589140,,,,,,,,,
 KANJI,1589140,押し込める,,,,,,,,
-KANJI,1589140,押込める,,,,,,,,
+KANJI,1589140,押込める,search-only kanji form,,,,,,,
 READING,1589140,HIRAGANA,おしこめる,oshi komeru,-,,,,,
 SENSE_COMMON,1589140,,,"Ichidan verb
 transitive verb",,,,,,
@@ -2165262,6 +2165301,15 @@ to imprison",,,,,,,,
 SENSE_POL,1589140,"zamknąć
 uwięzić
 wsadzić do więzienia",,,,,,,,
+SENSE_COMMON,1589140,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1589140,"to force into
+to stuff into
+to cram into",,,,,,,,
+SENSE_POL,1589140,"wcisnąć
+upychać
+wepchnąć
+wepchnąć na siłę",,,,,,,,
 END,1589140,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2230959,9 +2231007,19 @@ READING,1551870,HIRAGANA,りつろん,ritsuron,-,,,,,
 SENSE_COMMON,1551870,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 intransitive verb",,,,,,
-SENSE_ENG,1551870,argument(ation),,,,,,,,
-SENSE_POL,1551870,"argument
+SENSE_ENG,1551870,"making a case
+establishing an argument
+making a point
+argumentation",,,,,,,,
+SENSE_POL,1551870,"przedstawianie argumentów
+budowanie argumentacji
+podkreślanie pewnej kwestii
 argumentacja",,,,,,,,
+SENSE_COMMON,1551870,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1551870,"argument
+case (for)",,,,,,,,
+SENSE_POL,1551870,"argument
+powód za",,,,,,,,
 END,1551870,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2280714,7 +2280772,7 @@ END,2873417,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2873419,,,,,,,,,
 READING,2873419,KATAKANA,デカボ,dekabo,-,,,,,
-SENSE_COMMON,2873419,,,noun (common) (futsuumeishi),,,"colloquial
+SENSE_COMMON,2873419,,,noun (common) (futsuumeishi),see|-|2873418|-|-|デカーボナイゼーション|デカーボナイゼーション,,"colloquial
 abbreviation",,,
 SENSE_ENG,2873419,decarbonization,,,,,,,,
 SENSE_POL,2873419,dekarbonizacja,ang: decarbonization,,,,,,,
