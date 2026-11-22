@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-21,,,,,,,,
+HEADER,1.10,2026-11-22,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -314211,8 +314211,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-21,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-21,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-22,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-22,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -453908,9 +453908,12 @@ END,2855933,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2198970,,,,,,,,,
-READING,2198970,KATAKANA,シメ,shime,-,,,,,
-SENSE_COMMON,2198970,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,2198970,hawfinch (Coccothraustes coccothraustes),,,,,,,,
+KANJI,2198970,鴲,rarely used kanji form,,,,,,,
+READING,2198970,HIRAGANA,しめ,shime,-,,,,,
+READING,2198970,KATAKANA,シメ,shime,NO_KANJI,,,,,
+SENSE_COMMON,2198970,,,noun (common) (futsuumeishi),,,word usually written using kana alone,,,
+SENSE_ENG,2198970,"hawfinch (Coccothraustes coccothraustes)
+grosbeak",,,,,,,,
 SENSE_POL,2198970,"grubodziób zwyczajny
 grubodziób
 pestkojad
@@ -459034,6 +459037,7 @@ BEGIN,2838922,,,,,,,,,
 KANJI,2838922,母娘,,,,,,,,
 READING,2838922,HIRAGANA,おやこ,oyako,-,,gikun (meaning as reading) or jukujikun (special kanji reading),,,
 READING,2838922,HIRAGANA,ははこ,hahako,-,,,,,
+READING,2838922,HIRAGANA,ははむすめ,haha musume,-,,search-only kana form,,,
 SENSE_COMMON,2838922,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2838922,mother and daughter,,,,,,,,
 SENSE_POL,2838922,matka i córka,,,,,,,,
@@ -533132,6 +533136,7 @@ END,2771350,,,,,,,,,
 BEGIN,1539080,,,,,,,,,
 KANJI,1539080,優れる,,ichi1,,,,,,
 KANJI,1539080,勝れる,rarely used kanji form,,,,,,,
+KANJI,1539080,秀れる,search-only kanji form,,,,,,,
 KANJI,1539080,傑れる,search-only kanji form,,,,,,,
 READING,1539080,HIRAGANA,すぐれる,sugureru,-,,,ichi1,,
 SENSE_COMMON,1539080,,,"Ichidan verb
@@ -587842,6 +587847,15 @@ waters",,,,,,,,
 SENSE_POL,1201190,"morze
 ocean
 wody",,,,,,,,
+SENSE_COMMON,1201190,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1201190,large lake,,,,,,,,
+SENSE_POL,1201190,duże jezioro,,,,,,,,
+SENSE_COMMON,1201190,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1201190,"wide expanse (e.g. flames, blood)",,,,,,,,
+SENSE_POL,1201190,szeroka przestrzeń,"np. płomienie, krew",,,,,,,
+SENSE_COMMON,1201190,,うみ,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1201190,inkstone water reservoir,,,,,,,,
+SENSE_POL,1201190,zbiornik na wodę do kamienia do rozcierania atramentu,,,,,,,,
 END,1201190,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -610269,10 +610283,21 @@ nf03",,,,,,
 READING,1258950,HIRAGANA,かた,kata,-,,,"ichi1
 news1
 nf03",,
-SENSE_COMMON,1258950,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1258950,,,noun (common) (futsuumeishi),,anatomy,,,,
 SENSE_ENG,1258950,shoulder,,,,,,,,
 SENSE_POL,1258950,"ramię
 bark",,,,,,,,
+SENSE_COMMON,1258950,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1258950,"shoulder (road, terrain)",,,,,,,,
+SENSE_POL,1258950,pobocze,"np. drogi, terenu",,,,,,,
+SENSE_COMMON,1258950,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1258950,"throwing power
+throwing ability",,,,,,,,
+SENSE_POL,1258950,"siła rzutu
+umiejętność rzucania",,,,,,,,
+SENSE_COMMON,1258950,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1258950,"upper corner (of a page, character, etc.)",,,,,,,,
+SENSE_POL,1258950,górny róg,"np. strony, znaku",,,,,,,
 END,1258950,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -644729,8 +644754,9 @@ nf28",,
 SENSE_COMMON,1173710,,,"Godan verb with 'ru' ending
 intransitive verb",,,,,,
 SENSE_ENG,1173710,"to be reflected
-to harmonize with (harmonise)
-to come out (photo)
+to harmonize with
+to harmonise with
+to come out (of a photo)
 to be projected
 to be displayed (on a screen)",,,,,,,,
 SENSE_POL,1173710,"odbijać się
@@ -644738,6 +644764,13 @@ być odbitym
 być odzwierciedlonym
 być wyświetlanym (na ekranie)
 wyjść (o zdjęciu)",,,,,,,,
+SENSE_COMMON,1173710,,,"Godan verb with 'ru' ending
+intransitive verb",,,,,,
+SENSE_ENG,1173710,"to appear (to someone)
+to seem
+to strike one as",,,,,,,,
+SENSE_POL,1173710,"wydawać się (komuś)
+sprawiać wrażenie",,,,,,,,
 END,1173710,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -645306,8 +645339,17 @@ READING,1451470,HIRAGANA,どうぶつ,doubutsu,-,,,"ichi1
 news1
 nf02",,
 SENSE_COMMON,1451470,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1451470,animal,,,,,,,,
-SENSE_POL,1451470,zwierzę,,,,,,,,
+SENSE_ENG,1451470,"animal
+living creature
+beast
+fauna",,,,,,,,
+SENSE_POL,1451470,"zwierzę
+istota żywa
+bestia
+fauna",,,,,,,,
+SENSE_COMMON,1451470,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1451470,animal other than humans (esp. mammals),,,,,,,,
+SENSE_POL,1451470,zwierzęta inne niż ludzie,zwłaszcza ssaki,,,,,,,
 END,1451470,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -672767,12 +672809,21 @@ END,2551870,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2523730,,,,,,,,,
 READING,2523730,KATAKANA,バキバキ,baki baki,-,,,,,
+READING,2523730,KATAKANA,パキパキ,paki paki,-,,,,,
 READING,2523730,HIRAGANA,ばきばき,baki baki,-,,,,,
+READING,2523730,HIRAGANA,ぱきぱき,paki paki,-,,,,,
 SENSE_COMMON,2523730,,,"adverb (fukushi)
 adverb taking the 'to' particle",,,onomatopoeic or mimetic word,,,
 SENSE_ENG,2523730,"with a crack (e.g. branches, knuckles)",,,,,,,,
 SENSE_POL,2523730,"z pęknięciem
 odgłos łamanej",np. gałęzi,,,,,,,
+SENSE_COMMON,2523730,,,"adverb (fukushi)
+adverb taking the 'to' particle
+noun or participle which takes the aux. verb suru",,,onomatopoeic or mimetic word,,,
+SENSE_ENG,2523730,"briskly
+efficiently",,,,,,,,
+SENSE_POL,2523730,"szybko
+sprawnie",,,,,,,,
 END,2523730,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -772040,6 +772091,13 @@ no problem","as て(も)いい, と(も)いい, etc.; indicates permission or co
 SENSE_POL,2820690,"ok
 w porządku
 bez problemu","jak て(も)いい, と(も)いい itp.; wskazuje na zgodę lub kompromis",,,,,,,
+SENSE_COMMON,2820690,,,adjective (keiyoushi) - yoi/ii class,,,,,,
+SENSE_ENG,2820690,"no thank you
+I don't need it
+there's no need",usu. いいです,,,,,,,
+SENSE_POL,2820690,"nie, dziękuję
+nie potrzebuję tego
+nie ma takiej potrzeby",zwykle いいです,,,,,,,
 END,2820690,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1005736,6 +1005794,11 @@ ichi1",,
 SENSE_COMMON,1120280,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1120280,bench,,,,,,,,
 SENSE_POL,1120280,ławka,"do siedzenia, ang: bench",,,,,,,
+SENSE_COMMON,1120280,,,noun (common) (futsuumeishi),,sports,,,,
+SENSE_ENG,1120280,"team manager and coaches
+coaching staff","in baseball, soccer, etc.",,,,,,,
+SENSE_POL,1120280,"kierownik drużyny i trenerzy
+kadra trenerska","w baseballu, piłce nożnej itp.",,,,,,,
 END,1120280,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1051666,11 +1051729,11 @@ news1
 nf04",,
 SENSE_COMMON,1357300,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1357300,"plant
-vegetation",,,,,,,,
+vegetation
+flora",,,,,,,,
 SENSE_POL,1357300,"roślina
 roślinność
-flora
-wegetacja",,,,,,,,
+flora",,,,,,,,
 END,1357300,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1071444,7 +1071507,10 @@ END,2289210,,,,,,,,,
 BEGIN,2181700,,,,,,,,,
 READING,2181700,KATAKANA,ブレックファースト,burekkufaasuto,-,,,,,
 READING,2181700,KATAKANA,ブレックファスト,burekkufasuto,-,,,,,
-READING,2181700,KATAKANA,ブレークファスト,bureekufasuto,-,,,,,
+READING,2181700,KATAKANA,ブレークファースト,bureekufaasuto,-,,search-only kana form,,,
+READING,2181700,KATAKANA,ブレイクファースト,bureikufaasuto,-,,search-only kana form,,,
+READING,2181700,KATAKANA,ブレイクファスト,bureikufasuto,-,,search-only kana form,,,
+READING,2181700,KATAKANA,ブレークファスト,bureekufasuto,-,,search-only kana form,,,
 SENSE_COMMON,2181700,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2181700,breakfast,,,,,,,,
 SENSE_POL,2181700,śniadanie,ang: breakfast,,,,,,,
@@ -1356341,7 +1356407,7 @@ END,2240690,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2840247,,,,,,,,,
 READING,2840247,HIRAGANA,みたく,mitaku,-,,,,,
-SENSE_COMMON,2840247,,,adverb (fukushi),see|-|2016410|-|-|みたい|みたい,,slang,,,
+SENSE_COMMON,2840247,,,adverb (fukushi),see|-|2016410|1|-|みたい|みたい[1],,slang,,,
 SENSE_ENG,2840247,"like
 similarly to",,,,,,,,
 SENSE_POL,2840247,"jak
@@ -1366841,7 +1366907,9 @@ A and B and the like",as ＡやらＢやら...,,,,,,,
 SENSE_POL,1632740,"takie rzeczy jak A i B
 A i B i tak dalej
 A i B i tym podobne",jak ＡやらＢやら...,,,,,,,
-SENSE_COMMON,1632740,,,particle,see|-|2557650|-|-|とやら|とやら,,,,,
+SENSE_COMMON,1632740,,,particle,"see|-|2028970|4|-|か|か[4]
+see|-|1928670|3|-|だろう|だろう[3]
+see|-|2557650|-|-|とやら|とやら",,,,,
 SENSE_ENG,1632740,denotes uncertainty,,,,,,,,
 SENSE_POL,1632740,wskazywanie niepewności,,,,,,,,
 END,1632740,,,,,,,,,
@@ -1447127,6 +1447195,11 @@ SENSE_POL,1410020,"opozycja
 przeciwieństwo
 antagonizm
 wrogość",,,,,,,,
+SENSE_COMMON,1410020,,,noun (common) (futsuumeishi),,sports,,,,
+SENSE_ENG,1410020,"principal challenger to the predicted winner (in a race)
+second choice",,,,,,,,
+SENSE_POL,1410020,"główny pretendent do przewidywanego zwycięzcy (w wyścigu)
+drugi wybór",,,,,,,,
 END,1410020,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1528770,6 +1528843,13 @@ nf14",,,,,,
 READING,1466850,HIRAGANA,にゅうりょく,nyuuryoku,-,,,"ichi1
 news1
 nf14",,
+SENSE_COMMON,1466850,,,"noun (common) (futsuumeishi)
+noun or participle which takes the aux. verb suru
+transitive verb",ant|-|1340700|-|出力|-|出力,"electricity, elec. eng.",,,,
+SENSE_ENG,1466850,"power input
+signal input",,,,,,,,
+SENSE_POL,1466850,"zasilanie
+sygnał wejściowy",,,,,,,,
 SENSE_COMMON,1466850,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 transitive verb",,,,,,
@@ -1680602,6 +1680682,20 @@ to be not yet quite awake",,,,,,,,
 SENSE_POL,1612500,"być w połowie śpiący
 być w połowie obudzony
 nie być jeszcze całkiem przytomnym",,,,,,,,
+SENSE_COMMON,1612500,,,"Ichidan verb
+intransitive verb",,,,,,
+SENSE_ENG,1612500,"to say or do something nonsensical
+to be talking nonsense",,,,,,,,
+SENSE_POL,1612500,"powiedzieć lub zrobić coś bezsensownego
+gadać bzdury",,,,,,,,
+SENSE_COMMON,1612500,,ねぼける,"Ichidan verb
+intransitive verb",,,,,,
+SENSE_ENG,1612500,"to be indistinct (of a colour, etc.)
+to be dull
+to be blurred",,,,,,,,
+SENSE_POL,1612500,"być niewyraźnym (w odniesieniu do koloru itp.)
+być matowym
+być zamazanym",,,,,,,,
 END,1612500,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1733421,6 +1733515,13 @@ trochę jak ...
 jakby ...
 podobny do
 przypominający",,,,,,,,
+SENSE_COMMON,2016410,,,auxiliary,see|-|2833978|1|-|みたいだ|みたいだ[1],,colloquial,,,
+SENSE_ENG,2016410,"it seems that ...
+it looks like ...
+apparently",,,,,,,,
+SENSE_POL,2016410,"wygląda na to, że ...
+wydaje się, że ...
+najwyraźniej",,,,,,,,
 END,2016410,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
