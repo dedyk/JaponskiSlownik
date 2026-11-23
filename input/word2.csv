@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-22,,,,,,,,
+HEADER,1.10,2026-11-23,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -56676,11 +56676,12 @@ END,2847025,,,,,,,,,
 BEGIN,2847085,,,,,,,,,
 KANJI,2847085,豚熱,,,,,,,,
 READING,2847085,HIRAGANA,ぶたねつ,butanetsu,-,,,,,
-SENSE_COMMON,2847085,,,noun (common) (futsuumeishi),see|-|2648110|-|豚コレラ|-|豚コレラ,,,,,
-SENSE_ENG,2847085,"hog cholera
-swine fever",,,,,,,,
-SENSE_POL,2847085,"cholera wieprzowa
-pomór świń",,,,,,,,
+SENSE_COMMON,2847085,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,2847085,"classical swine fever
+CSF
+hog cholera",,,,,,,,
+SENSE_POL,2847085,"klasyczny pomór świń
+cholera wieprzowa",,,,,,,,
 END,2847085,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -61249,8 +61250,8 @@ BEGIN,2270750,,,,,,,,,
 KANJI,2270750,三白眼,,,,,,,,
 READING,2270750,HIRAGANA,さんぱくがん,sanpaku gan,-,,,,,
 SENSE_COMMON,2270750,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,2270750,sanpaku eyes (eyes with visible white between the iris and the lower eyelid),,,,,,,,
-SENSE_POL,2270750,oczy sanpaku,oczy z widoczną bielą między tęczówką a dolną powieką,,,,,,,
+SENSE_ENG,2270750,sanpaku eyes (eyes with sclera visible below or above the iris),,,,,,,,
+SENSE_POL,2270750,oczy sanpaku,"oczy, w których twardówka jest widoczna poniżej lub powyżej tęczówki",,,,,,,
 END,2270750,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -132123,14 +132124,10 @@ END,2259560,,,,,,,,,
 BEGIN,2160680,,,,,,,,,
 KANJI,2160680,方がいい,,spec1,,,,,,
 KANJI,2160680,方が良い,,spec1,,,,,,
-KANJI,2160680,ほうが良い,,spec1,,,,,,
-KANJI,2160680,方がよい,,spec1,,,,,,
-READING,2160680,HIRAGANA,ほうがいい,hou ga ii,-,"方がいい
-方が良い
-ほうが良い",,spec1,,
-READING,2160680,HIRAGANA,ほうがよい,hou ga yoi,-,"方が良い
-ほうが良い
-方がよい",,spec1,,
+KANJI,2160680,ほうが良い,search-only kanji form,,,,,,,
+KANJI,2160680,方がよい,search-only kanji form,,,,,,,
+READING,2160680,HIRAGANA,ほうがいい,hou ga ii,-,,,spec1,,
+READING,2160680,HIRAGANA,ほうがよい,hou ga yoi,-,方が良い,,spec1,,
 SENSE_COMMON,2160680,,,"expressions (phrases, clauses, etc.)
 adjective (keiyoushi) - yoi/ii class",,,,,,
 SENSE_ENG,2160680,had better ...,after past tense verb,,,,,,,
@@ -132139,6 +132136,14 @@ SENSE_COMMON,2160680,,,"expressions (phrases, clauses, etc.)
 adjective (keiyoushi) - yoi/ii class",see|-|2002660|-|した方がいい|-|した方がいい,,,,,
 SENSE_ENG,2160680,had better not ...,after negative verb,,,,,,,
 SENSE_POL,2160680,"będzie jeśli nie (zrobisz czegoś, dawanie rady)",po przeczeniu czasownika,,,,,,,
+SENSE_COMMON,2160680,,,"expressions (phrases, clauses, etc.)
+adjective (keiyoushi) - yoi/ii class",,,,,,
+SENSE_ENG,2160680,"is better (than the alternative)
+is preferable
+it is better to ...","usu. after a noun+の, or a verb",,,,,,,
+SENSE_POL,2160680,"jest lepsze niż ...
+to jest lepiej niż ...
+jest preferowane",zwykle po rzeczowniku+の lub czasowniku,,,,,,,
 END,2160680,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -178757,6 +178762,11 @@ well then",from では,,,,,,,
 SENSE_POL,1005900,"wtedy
 wówczas
 więc","od では, połączenie partykuł de i wa",,,,,,,
+SENSE_COMMON,1005900,,,interjection (kandoushi),see|-|2135480|-|-|じゃあまた|じゃあまた,,colloquial,,,
+SENSE_ENG,1005900,"bye then
+see you",when parting,,,,,,,
+SENSE_POL,1005900,"to na razie
+do zobaczenia",przy rozstaniu,,,,,,,
 END,1005900,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -196522,10 +196532,19 @@ SENSE_POL,1266440,"nazywać
 oznaczać",,,,,,,,
 SENSE_COMMON,1266440,,,"Godan verb with 'bu' ending
 transitive verb",,,,,,
-SENSE_ENG,1266440,"to garner (support, etc.)
+SENSE_ENG,1266440,"to garner (support, popularity, etc.)
 to gather",,,,,,,,
 SENSE_POL,1266440,"zbierać
-gromadzić","np. wsparcie, pomoc",,,,,,,
+gromadzić","np. wsparcie, pomoc, popularność i etc",,,,,,,
+SENSE_COMMON,1266440,,,"Godan verb with 'bu' ending
+transitive verb",,,,,,
+SENSE_ENG,1266440,"to cause
+to provoke
+to give rise to",,,,,,,,
+SENSE_POL,1266440,"wywołać
+powodować
+spowodować
+doprowadzić do",,,,,,,,
 SENSE_COMMON,1266440,,,"Godan verb with 'bu' ending
 transitive verb",see|-|2009880|-|娶る|-|娶る,,archaic,,,
 SENSE_ENG,1266440,to take as one's wife,,,,,,,,
@@ -314211,8 +314230,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-22,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-22,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-23,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-23,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -498886,6 +498905,16 @@ SENSE_POL,1310730,"zaprzestać
 przestać
 przestawać
 przerywać",,,,,,,,
+SENSE_COMMON,1310730,,,"Godan verb with 'nu' ending
+intransitive verb",,go (game),,,,
+SENSE_ENG,1310730,to die (of stones that are captured or cannot avoid capture),,,,,,,,
+SENSE_POL,1310730,zginąć,"w przypadku kamieni, które zostały schwytane lub nie mogą uniknąć schwytania",,,,,,,
+SENSE_COMMON,1310730,,,"Godan verb with 'nu' ending
+intransitive verb",,baseball,,,,
+SENSE_ENG,1310730,"to be put out
+to be out",,,,,,,,
+SENSE_POL,1310730,"zostać wyłączony
+być wyłączonym",,,,,,,,
 END,1310730,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -551140,6 +551169,18 @@ transitive verb",,,,,,
 SENSE_ENG,1322180,"to shoot (arrow, bolt, dart)",,,,,,,,
 SENSE_POL,1322180,"strzelać
 strzelić",np. z łuku,,,,,,,
+SENSE_COMMON,1322180,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1322180,"to hit (target)
+to shoot at",,,,,,,,
+SENSE_POL,1322180,"trafić (w cel)
+strzelać do",,,,,,,,
+SENSE_COMMON,1322180,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1322180,"to strike
+to pierce",of light or a gaze,,,,,,,
+SENSE_POL,1322180,"uderzyć
+przebić",światło lub spojrzenie,,,,,,,
 END,1322180,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -587837,9 +587878,6 @@ nf02",,,,,,
 READING,1201190,HIRAGANA,うみ,umi,-,,,"ichi1
 news1
 nf02",,
-READING,1201190,HIRAGANA,み,mi,-,,out-dated or obsolete kana usage,,,
-READING,1201190,HIRAGANA,わた,wata,-,,out-dated or obsolete kana usage,,,
-READING,1201190,HIRAGANA,わだ,wada,-,,out-dated or obsolete kana usage,,,
 SENSE_COMMON,1201190,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1201190,"sea
 ocean
@@ -587851,9 +587889,11 @@ SENSE_COMMON,1201190,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1201190,large lake,,,,,,,,
 SENSE_POL,1201190,duże jezioro,,,,,,,,
 SENSE_COMMON,1201190,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1201190,"wide expanse (e.g. flames, blood)",,,,,,,,
-SENSE_POL,1201190,szeroka przestrzeń,"np. płomienie, krew",,,,,,,
-SENSE_COMMON,1201190,,うみ,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1201190,"wide expanse (e.g. of flames, blood)
+sea (of)",,,,,,,,
+SENSE_POL,1201190,"szeroka przestrzeń
+morze (czegoś)","np. płomienie, krew",,,,,,,
+SENSE_COMMON,1201190,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1201190,inkstone water reservoir,,,,,,,,
 SENSE_POL,1201190,zbiornik na wodę do kamienia do rozcierania atramentu,,,,,,,,
 END,1201190,,,,,,,,,
@@ -599784,6 +599824,13 @@ extra",,,,,,,,
 SENSE_POL,1509480,"osobno
 oddzielnie
 dodatkowo",,,,,,,,
+SENSE_COMMON,1509480,,,interjection (kandoushi),,,colloquial,,,
+SENSE_ENG,1509480,"not really
+nothing in particular
+nothing",,,,,,,,
+SENSE_POL,1509480,"nie bardzo
+nic konkretnego
+nic",,,,,,,,
 END,1509480,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -611137,6 +611184,24 @@ to start to ...
 to burst into ...",after the -masu stem of a verb,,,,,,,
 SENSE_POL,1338180,"zacząć
 rozpocząć",czasownik (forma bez masu) + dasu,,,,,,,
+SENSE_COMMON,1338180,,,"Godan verb with 'su' ending
+transitive verb",,,,,,
+SENSE_ENG,1338180,"to pay (an amount or wages)
+to put up (money)
+to provide (funds)",,,,,,,,
+SENSE_POL,1338180,"zapłacić (kwotę lub wynagrodzenie)
+wyłożyć (pieniądze)
+zapewnić (środki finansowe)",,,,,,,,
+SENSE_COMMON,1338180,,,"Godan verb with 'su' ending
+transitive verb",,,,,,
+SENSE_ENG,1338180,to put (someone) through school,,,,,,,,
+SENSE_POL,1338180,wysłać (kogoś) do szkoły,,,,,,,,
+SENSE_COMMON,1338180,,,"Godan verb with 'su' ending
+transitive verb",,,,,,
+SENSE_ENG,1338180,"to open (a shop or office)
+to establish (a branch)",,,,,,,,
+SENSE_POL,1338180,"otworzyć (sklep lub biuro)
+założyć (oddział)",,,,,,,,
 END,1338180,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -651598,6 +651663,17 @@ mood",,,,,,,,
 SENSE_POL,1222590,"uczucie
 nastrój
 samopoczucie",,,,,,,,
+SENSE_COMMON,1222590,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1222590,"how one feels
+sense of physical well-being",of one's physical condition,,,,,,,
+SENSE_POL,1222590,"jak się czuje
+poczucie dobrego fizycznego samopoczucia",stanu fizycznego,,,,,,,
+SENSE_COMMON,1222590,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1222590,"atmosphere
+air
+feeling (associated with a place or occasion)",,,,,,,,
+SENSE_POL,1222590,"atmosfera
+nastrój",związany z miejscem lub okazją,,,,,,,
 END,1222590,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -674315,6 +674391,11 @@ adresat",,,,,,,,
 SENSE_COMMON,1401000,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1401000,"opponent (sports, etc.)",,,,,,,,
 SENSE_POL,1401000,przeciwnik,np. w sporcie,,,,,,,
+SENSE_COMMON,1401000,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1401000,"target (of an action)
+object (of one's attention)",,,,,,,,
+SENSE_POL,1401000,"cel (działania)
+przedmiot (uwagi)",,,,,,,,
 END,1401000,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -823856,6 +823937,18 @@ to cool down",,,,,,,,
 SENSE_POL,1556630,"ochłodzić się
 zrobić się chłodno
 stać się chłodno",,,,,,,,
+SENSE_COMMON,1556630,,,"Ichidan verb
+intransitive verb",,,,,,
+SENSE_ENG,1556630,"to cool (of affection, enthusiasm, relations, etc.)
+to wane",,,,,,,,
+SENSE_POL,1556630,"ochłodzić
+osłabnąć","o uczuciach, entuzjazmie, relacjach itp.",,,,,,,
+SENSE_COMMON,1556630,,,"Ichidan verb
+intransitive verb",,economics,,,,
+SENSE_ENG,1556630,"to cool (of the economy, consumer spending, etc.)
+to slump",,,,,,,,
+SENSE_POL,1556630,"osłabnąć (gospodarka, wydatki konsumentów itp.)
+doprowadzić do załamania",,,,,,,,
 END,1556630,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -845838,6 +845931,13 @@ SENSE_COMMON,1612730,,,"Godan verb with 'su' ending
 transitive verb",,,,,,
 SENSE_ENG,1612730,to do too much,,,,,,,,
 SENSE_POL,1612730,robić za dużo,,,,,,,,
+SENSE_COMMON,1612730,,,"Godan verb with 'su' ending
+transitive verb",,,,,,
+SENSE_ENG,1612730,"to let pass without getting involved
+to ride out
+to weather",,,,,,,,
+SENSE_POL,1612730,"pozwolić minąć bez angażowania się
+???",,,,,,,,
 END,1612730,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -857078,6 +857178,7 @@ BEGIN,1598890,,,,,,,,,
 KANJI,1598890,飛び込む,,"ichi1
 news2
 nf39",,,,,,
+KANJI,1598890,跳び込む,rarely used kanji form,,,,,,,
 KANJI,1598890,飛びこむ,search-only kanji form,,,,,,,
 KANJI,1598890,飛込む,search-only kanji form,,,,,,,
 READING,1598890,HIRAGANA,とびこむ,tobi komu,-,,,"ichi1
@@ -857099,6 +857200,18 @@ SENSE_ENG,1598890,"to burst in
 to barge in",,,,,,,,
 SENSE_POL,1598890,"wpraszać się
 wparowywać",,,,,,,,
+SENSE_COMMON,1598890,,,"Godan verb with 'mu' ending
+intransitive verb",,,,,,
+SENSE_ENG,1598890,"to throw oneself into (an activity, movement, etc.)
+to become involved in",,,,,,,,
+SENSE_POL,1598890,"zaangażować się w (działalność, ruch itp.)
+wziąć udział w",,,,,,,,
+SENSE_COMMON,1598890,,,"Godan verb with 'mu' ending
+intransitive verb",,,,,,
+SENSE_ENG,1598890,"to come in unexpectedly (of news, work, etc.)
+to arrive suddenly",,,,,,,,
+SENSE_POL,1598890,"pojawić się niespodziewanie
+pojawić się nagle","w odniesieniu do wiadomości, pracy itp.",,,,,,,
 END,1598890,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1005857,8 +1005970,29 @@ BEGIN,1120560,,,,,,,,,
 READING,1120560,KATAKANA,ペーパー,peepaa,-,,,gai1,,
 READING,1120560,KATAKANA,ペイパー,peipaa,-,,search-only kana form,,,
 SENSE_COMMON,1120560,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1120560,paper,,,,,,,,
+SENSE_ENG,1120560,"paper
+label",,,,,,,,
 SENSE_POL,1120560,papier,ang: paper,,,,,,,
+SENSE_COMMON,1120560,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1120560,"sandpaper
+emery paper",,,,,,,,
+SENSE_POL,1120560,papier ścierny,,,,,,,,
+SENSE_COMMON,1120560,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1120560,"(a) paper
+article",,,,,,,,
+SENSE_POL,1120560,"referat
+artykuł
+publikacja",,,,,,,,
+SENSE_COMMON,1120560,,,noun or verb acting prenominally,see|-|1120570|-|-|ペーパーカンパニー|ペーパーカンパニー,,,,,
+SENSE_ENG,1120560,"artificial
+bogus
+sham",,,,,,,,
+SENSE_POL,1120560,"sztuczny
+fałszywy
+pozorny",,,,,,,,
+SENSE_COMMON,1120560,,ペーパー,noun (common) (futsuumeishi),,,slang,,,
+SENSE_ENG,1120560,leaflet or handout distributed by a dōjin circle,,,,,,,,
+SENSE_POL,1120560,ulotka lub broszura rozdawana przez krąg dōjin,,,,,,,,
 END,1120560,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1048262,9 +1048396,9 @@ END,1168930,,,,,,,,,
 BEGIN,1168950,,,,,,,,,
 KANJI,1168950,引き込む,,"news2
 nf25",,,,,,
-KANJI,1168950,引きこむ,,,,,,,,
-KANJI,1168950,ひき込む,,,,,,,,
-KANJI,1168950,引込む,irregular okurigana usage,,,,,,,
+KANJI,1168950,引きこむ,search-only kanji form,,,,,,,
+KANJI,1168950,ひき込む,search-only kanji form,,,,,,,
+KANJI,1168950,引込む,search-only kanji form,,,,,,,
 READING,1168950,HIRAGANA,ひきこむ,hiki komu,-,,,"news2
 nf25",,
 SENSE_COMMON,1168950,,,"Godan verb with 'mu' ending
@@ -1048280,6 +1048414,18 @@ SENSE_ENG,1168950,to win over,,,,,,,,
 SENSE_POL,1168950,"przekonać kogoś
 pozyskać kogoś
 pociągać w swoją stronę",,,,,,,,
+SENSE_COMMON,1168950,,,"Godan verb with 'mu' ending
+transitive verb",,,,,,
+SENSE_ENG,1168950,"to captivate
+to enthrall
+to draw in (an audience)",,,,,,,,
+SENSE_POL,1168950,"zauroczyć
+zafascynować
+przyciągnąć (publiczność)",,,,,,,,
+SENSE_COMMON,1168950,,,"Godan verb with 'mu' ending
+transitive verb",,,,,,
+SENSE_ENG,1168950,to catch a bad cold,,,,,,,,
+SENSE_POL,1168950,złapać silne przeziębienie,,,,,,,,
 END,1168950,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1083168,8 +1083314,11 @@ przygryzać (np. wargę)",,,,,,,,
 SENSE_COMMON,1209210,,,"Ichidan verb
 transitive verb",,,,,,
 SENSE_ENG,1209210,"to reflect upon
+to savor an experience
 to digest",,,,,,,,
-SENSE_POL,1209210,przemyśleć,,,,,,,,
+SENSE_POL,1209210,"przemyśleć
+zastanowić się nad czymś
+przetrawić (coś)",,,,,,,,
 END,1209210,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1101324,6 +1101473,12 @@ SENSE_POL,1169030,"stać się napięty
 stać się naprężony
 być napięty
 być naprężony (np. ciało)",,,,,,,,
+SENSE_COMMON,1169030,,,"Godan verb with 'ru' ending
+intransitive verb",,economics,,,,
+SENSE_ENG,1169030,"to firm (of market prices)
+to strengthen",,,,,,,,
+SENSE_POL,1169030,"ugruntować (ceny rynkowe)
+wzmocnić",,,,,,,,
 END,1169030,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1291549,12 +1291704,13 @@ nf29",,,,,,
 READING,1201340,HIRAGANA,うなばら,unabara,-,,,"news2
 nf29",,
 READING,1201340,HIRAGANA,うなはら,unahara,-,,out-dated or obsolete kana usage,,,
-SENSE_COMMON,1201340,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1201340,,,noun (common) (futsuumeishi),,,poetical term,,,
 SENSE_ENG,1201340,"ocean
 sea
 the deep",,,,,,,,
 SENSE_POL,1201340,"ocean
-morze",,,,,,,,
+morze
+głębia",,,,,,,,
 END,1201340,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1402348,6 +1402504,14 @@ być wyczerpanym
 wyczerpywać się
 kończyć się
 dojść do końca",,,,,,,,
+SENSE_COMMON,1370070,,,"Ichidan verb
+intransitive verb",,,,,,
+SENSE_ENG,1370070,"to come down to
+to boil down to
+to be nothing other than",as ...に尽きる,,,,,,,
+SENSE_POL,1370070,"sprowadzać się do
+sprowadzać się w gruncie rzeczy do
+być niczym innym jak",jako ...に尽きる,,,,,,,
 END,1370070,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1619020,6 +1619184,12 @@ to be too many",,,,,,,,
 SENSE_POL,1543910,"zostawać
 być w nadmiarze
 być za dużo",,,,,,,,
+SENSE_COMMON,1543910,,,"Godan verb with 'ru' ending
+intransitive verb",,,,,,
+SENSE_ENG,1543910,"to exceed (a limit, one's capacity, etc.)
+to be beyond",as ...に余る,,,,,,,
+SENSE_POL,1543910,"przekroczyć (limit, własne możliwości itp.)
+wykraczać poza",jako ...に余る,,,,,,,
 END,1543910,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1628901,6 +1629071,7 @@ BEGIN,2213460,,,,,,,,,
 READING,2213460,HIRAGANA,べ,be,-,,,,,
 READING,2213460,HIRAGANA,ぺ,pe,-,,,,,
 READING,2213460,HIRAGANA,べえ,bee,-,,,,,
+READING,2213460,HIRAGANA,っぺ,ppe,-,,,,,
 SENSE_COMMON,2213460,,,auxiliary,see|-|2411620|-|可い|-|可い,,,"Kantou-ben
 Touhoku-ben",,
 SENSE_ENG,2213460,"word used at sentence-end (like a particle) to indicate speculation, volition or invitation",,,,,,,,
@@ -1734801,11 +1734972,15 @@ END,2112200,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2112430,,,,,,,,,
 READING,2112430,KATAKANA,ネイル,neiru,-,,,spec1,,
-READING,2112430,KATAKANA,ネール,neeru,-,,,spec1,,
+READING,2112430,KATAKANA,ネール,neeru,-,,,,,
 SENSE_COMMON,2112430,,,noun (common) (futsuumeishi),see|-|1433880|1|爪|-|爪[1],,,,,
 SENSE_ENG,2112430,"nail
-fingernail",,,,,,,,
-SENSE_POL,2112430,paznokieć,ang: nail,,,,,,,
+fingernail","esp. ref. to care, polish, fashion, etc.",,,,,,,
+SENSE_POL,2112430,paznokieć,"zwłaszcza w odniesieniu do pielęgnacji, stylizacji, mody itp., ang: nail",,,,,,,
+SENSE_COMMON,2112430,,,noun (common) (futsuumeishi),see|-|1436840|-|釘|-|釘,,,,,
+SENSE_ENG,2112430,"nail
+tack",usu. in compounds,,,,,,,
+SENSE_POL,2112430,gwóźdź,zwykle w złożeniach,,,,,,,
 END,2112430,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2044867,7 +2045042,7 @@ BEGIN,2648110,,,,,,,,,
 KANJI,2648110,豚コレラ,,,,,,,,
 READING,2648110,HIRAGANA_KATAKANA,とんコレラ,ton korera,-,,,,,
 READING,2648110,HIRAGANA_KATAKANA,ぶたコレラ,buta korera,-,,,,,
-SENSE_COMMON,2648110,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,2648110,,,noun (common) (futsuumeishi),see|-|2847085|-|豚熱|-|豚熱,,,,,
 SENSE_ENG,2648110,"hog cholera
 swine fever",,,,,,,,
 SENSE_POL,2648110,pomór świń,,,,,,,,
