@@ -6730,7 +6730,15 @@ mokrawy",szczególnie włosy; ang: wetty,DICTIONARY2_SOURCE,,GroupId: 2842581
 303967,WORD_ADJECTIVE_NA,,KATAKANA,,,-,ウエッティー,,uettii,"wyglądające mokro
 mokrawy",szczególnie włosy; ang: wetty,DICTIONARY2_SOURCE,,GroupId: 2842581
 303968,WORD_NOUN,,KATAKANA,,,-,メテオライト,,meteoraito,meteoryt,ang: meteorite,DICTIONARY2_SOURCE,,GroupId: 2086950
-303969,WORD_NOUN,,KATAKANA,,,-,ペイパー,,peipaa,papier,ang: paper,DICTIONARY2_SOURCE,,GroupId: 1120560
+303969,"WORD_NOUN
+WORD_ADJECTIVE_F",,KATAKANA,,,-,ペイパー,,peipaa,"papier (ang: paper)
+papier ścierny
+referat
+artykuł
+publikacja
+sztuczny
+fałszywy
+pozorny",,DICTIONARY2_SOURCE,,GroupId: 1120560
 303970,WORD_NOUN,,KATAKANA_HIRAGANA,,,パンツの日,パンツのひ,,pantsu no hi,Dzień Majtek,wydarzenie; 2 sierpnia,DICTIONARY2_SOURCE,,GroupId: 5746985
 303971,WORD_NOUN,,HIRAGANA,,,永暦,えいれき,,eireki,era Yongli,termin historyczny; cesarza Yongli z południowego dynastii Ming; 1646-1662,DICTIONARY2_SOURCE,DUPLICATE 228933,GroupId: 2862172
 303972,WORD_NOUN,,HIRAGANA,,,康熙,こうき,,kouki,era Kangxi,termin historyczny; cesarza Shengzu z Qing; 1661-1722,DICTIONARY2_SOURCE,,GroupId: 2862173
@@ -54801,7 +54809,9 @@ kochanie (język poufały; wołacz)",,DICTIONARY2_SOURCE,DUPLICATE 115892,GroupI
 323046,WORD_VERB_RU,,HIRAGANA,,,嚙み締める,かみしめる,,kami shimeru,"pogryźć
 gryźć (np. swoje usta)
 przygryzać (np. wargę)
-przemyśleć",,DICTIONARY2_SOURCE,,GroupId: 1209210
+przemyśleć
+zastanowić się nad czymś
+przetrawić (coś)",,DICTIONARY2_SOURCE,,GroupId: 1209210
 323047,WORD_INTERJECTION,,KATAKANA_EXCEPTION,,,-,フフフッ,,fu fu fu,"odgłos chichotu
 śmiech
 ha ha ha
@@ -71424,6 +71434,32 @@ bez żadnego marginesu swobody",,DICTIONARY2_SOURCE,,GroupId: 2873338
 328398,"WORD_ADVERB
 WORD_ADJECTIVE_NO",,HIRAGANA,,,-,きつきつ,,kitsu kitsu,"ciasno
 bez ani odrobiny wolnego miejsca
-bez żadnego marginesu swobody",,DICTIONARY2_SOURCE,,GroupId: 2873338
+bez żadnego marginesu swobody",,DICTIONARY2_SOURCE,"DUPLICATE 131036
+DUPLICATE 328400",GroupId: 2873338
 328399,"WORD_EXPRESSION
 WORD_NOUN",,HIRAGANA,,,指通り,ゆびどおり,,yubi doori,wrażenie przesuwania palcami po czymś,"np. włosach, tkaninie itp.",DICTIONARY2_SOURCE,,GroupId: 2873401
+328400,"WORD_ADVERB_TO
+WORD_ADJECTIVE_TARU",,HIRAGANA,,,吃々,きつきつ,,kitsukitsu,donośny (śmiech),przestarzałe słowo,DICTIONARY2_SOURCE,DUPLICATE 328398,GroupId: 2873460
+328401,WORD_NOUN,,HIRAGANA,,,海,わた,,wata,"morze
+ocean
+wody",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 389
+DUPLICATE 328402",GroupId: 2873461
+328402,WORD_NOUN,,HIRAGANA,,,海,わだ,,wada,"morze
+ocean
+wody",archaizm,DICTIONARY2_SOURCE,"DUPLICATE 389
+DUPLICATE 328401",GroupId: 2873461
+328403,WORD_NOUN,,HIRAGANA,,,海の原,わたのはら,,wata no hara,"ocean
+morze
+głębia",archaizm,DICTIONARY2_SOURCE,,GroupId: 2873462
+328404,WORD_NOUN,,KATAKANA_HIRAGANA,,,リーマン予想,リーマンよそう,,riiman' yosou,hipoteza Riemanna,"matematyka; przypuszczenie matematyczne sformułowane w 1859 roku przez Bernharda Riemanna, według którego wszystkie zera nietrywialne funkcji dzeta Riemanna mają część rzeczywistą równą 1/2",DICTIONARY2_SOURCE,,GroupId: 2873463
+328405,WORD_NOUN,,KATAKANA_HIRAGANA,,,リーマン仮説,リーマンかせつ,,riiman kasetsu,hipoteza Riemanna,"matematyka; przypuszczenie matematyczne sformułowane w 1859 roku przez Bernharda Riemanna, według którego wszystkie zera nietrywialne funkcji dzeta Riemanna mają część rzeczywistą równą 1/2",DICTIONARY2_SOURCE,,GroupId: 2873464
+328406,WORD_NOUN,,HIRAGANA,,,擬似事実,ぎじじじつ,,gijijijitsu,faktoid,"informacja postrzegana jako prawdziwa tylko dlatego, że została opublikowana – najczęściej za pośrednictwem nowych mediów",DICTIONARY2_SOURCE,,GroupId: 2873466
+328407,WORD_NOUN,,HIRAGANA,,,将器,しょうき,,shouki,"cechy generała
+materiał na wysokiego rangą oficera",,DICTIONARY2_SOURCE,,GroupId: 2873467
+328408,WORD_NOUN,,HIRAGANA,,,軍事国家,ぐんじこっか,,gunji kokka,państwo wojskowe,,DICTIONARY2_SOURCE,,GroupId: 2873468
+328409,WORD_NOUN,,KATAKANA,,,-,ワブルベース,,waburu beesu,bulgoczący bas,muzyka; ang: wobble bass,DICTIONARY2_SOURCE,,GroupId: 2873469
+328410,WORD_NOUN,,KATAKANA,,,-,ワブル・ベース,,waburu beesu,bulgoczący bas,muzyka; ang: wobble bass,DICTIONARY2_SOURCE,,GroupId: 2873469
+328411,WORD_NOUN,,HIRAGANA,,,くれくれ星人,くれくれせいじん,,kure kure seijin,"ktoś, kto nieustannie domaga się czegoś lub bierze coś, nie dając nic w zamian",potocznie,DICTIONARY2_SOURCE,,GroupId: 2873470
+328412,WORD_NOUN,,HIRAGANA,,,クレクレ星人,くれくれせいじん,,kure kure seijin,"ktoś, kto nieustannie domaga się czegoś lub bierze coś, nie dając nic w zamian",potocznie,DICTIONARY2_SOURCE,,GroupId: 2873470
+328413,WORD_NOUN,,HIRAGANA,,,家族性振戦,かぞくせいしんせん,,kazokusei shinsen,"drżenie rodzinne
+rodzinne drżenie samoistne",medycyna,DICTIONARY2_SOURCE,,GroupId: 2873471
