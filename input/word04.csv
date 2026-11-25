@@ -29888,7 +29888,7 @@ plony",,DICTIONARY2_SOURCE,DUPLICATE 313553,GroupId: 1297410
 313549,WORD_NOUN,,HIRAGANA,,,素引き,すびき,,subiki,naciąganie łuku bez strzały,,DICTIONARY2_SOURCE,,GroupId: 2865814
 313550,WORD_NOUN,,HIRAGANA,,,素引,すびき,,subiki,naciąganie łuku bez strzały,,DICTIONARY2_SOURCE,,GroupId: 2865814
 313551,WORD_NOUN,,HIRAGANA,,,素びき,すびき,,subiki,naciąganie łuku bez strzały,,DICTIONARY2_SOURCE,,GroupId: 2865814
-313552,WORD_NOUN,,KATAKANA,,,-,ガーター,,gaataa,rynna,,DICTIONARY2_SOURCE,DUPLICATE 145447,GroupId: 2002900
+313552,WORD_NOUN,,KATAKANA,,,-,ガーター,,gaataa,rynna,sport; w kręglach,DICTIONARY2_SOURCE,DUPLICATE 145447,GroupId: 2002900
 313553,"WORD_NOUN
 WORD_ADJECTIVE_NO",,HIRAGANA,,,作りもん,つくりもん,,tsukuri mon,"sztuczny produkt
 produkt stworzony przez człowieka
@@ -71466,8 +71466,12 @@ rodzinne drżenie samoistne",medycyna,DICTIONARY2_SOURCE,,GroupId: 2873471
 328414,WORD_VERB_RU,,HIRAGANA,,,紛らわせる,まぎらわせる,,magirawaseru,"odwrócić uwagę (od czegoś)
 odciągnąć uwagę
 złagodzić (nudę, smutek itp.)
-ukrywać (poprzez wtopienie w otoczenie lub odwrócenie uwagi)
-maskować (poprzez wtopienie w otoczenie lub odwrócenie uwagi)",również potencjalna forma od 紛らわす,DICTIONARY2_SOURCE,,GroupId: 2873316
+topić (smutek)
+umilać (czas)
+ukrywać (np. smutek za uśmiechem)
+maskować
+chować
+zmieniać (temat, kierunek rozmowy)",również potencjalna forma od 紛らわす,DICTIONARY2_SOURCE,,GroupId: 2873316
 328415,WORD_NOUN,,HIRAGANA,,,出院,しゅついん,,shutsuin,"zwolnienie z zakładu poprawczego dla nieletnich
 opuszczanie świątyni (buddyzm)",,DICTIONARY2_SOURCE,,GroupId: 2873442
 328416,WORD_EXPRESSION,,HIRAGANA_EXCEPTION,,,覚えはない,おぼえはない,,oboe wa nai,"nie ma powodu, żeby... (jak w ～れる覚えはない, wyraża krytykę lub zarzut)
@@ -71495,3 +71499,39 @@ chirurgia urazowa",,DICTIONARY2_SOURCE,,GroupId: 2873480
 Czeszka",rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 2873481
 328429,WORD_NOUN,,KATAKANA_HIRAGANA,,,タイトル画面,タイトルがめん,,taitoru gamen,"menu główne
 ekran tytułowy",gry wideo,DICTIONARY2_SOURCE,,GroupId: 2873485
+328430,WORD_NOUN,,HIRAGANA,,,里いも,さといも,,satoimo,"kolokazja jadalna
+taro","gatunek rośliny z rodziny obrazkowatych, Colocasia esculenta",DICTIONARY2_SOURCE,,GroupId: 1550780
+328431,"WORD_VERB_RU
+WORD_EXPRESSION",,HIRAGANA,,,名前を入れる,なまえをいれる,,namae o ireru,"wpisać imię
+wpisać swoje imię
+mieć imię wygrawerowane (wydrukowane, wyszyte itp.)",,DICTIONARY2_SOURCE,,GroupId: 2873483
+328432,WORD_NOUN,,HIRAGANA,,,犬牙相制,けんがそうせい,,kenga sousei,"dwa kraje, które wzajemnie się kontrolują na granicy",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 2873487
+328433,WORD_NOUN,,HIRAGANA,,,眺望絶佳,ちょうぼうぜっか,,choubou zekka,"wspaniały widok
+wspaniały widok rozciągający się przed oczami",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 2873488
+328434,WORD_NOUN,,HIRAGANA,,,陶犬瓦鶏,とうけんがけい,,touken gakei,"wyglądać imponująco, ale nie wykonując swojej części
+wygląda imponująco, ale jest się zupełnie bezużyteczny",słowo składające się z czterech znaków,DICTIONARY2_SOURCE,,GroupId: 2873489
+328435,WORD_NOUN,,HIRAGANA,,,辺隅,へんぐう,,henguu,"odległe tereny wiejskie
+pogranicze",,DICTIONARY2_SOURCE,,GroupId: 2873494
+328436,WORD_NOUN,,HIRAGANA,,,詣拝,けいはい,,keihai,odwiedzanie świątyni,,DICTIONARY2_SOURCE,,GroupId: 2873495
+328437,WORD_NOUN,,HIRAGANA,,,柵門,さくもん,,sakumon,wejście przez bramę twierdzy,,DICTIONARY2_SOURCE,,GroupId: 2873496
+328438,WORD_NOUN,,HIRAGANA,,,城柵,じょうさく,,jousaku,"zamkowe mury
+mury zamkowe
+ogrodzenie wokół twierdzy",,DICTIONARY2_SOURCE,,GroupId: 2873497
+328439,WORD_NOUN,,HIRAGANA,,,斬髪,ざんぱつ,,zanpatsu,strzyżenie włosów,,DICTIONARY2_SOURCE,,GroupId: 2873498
+328440,WORD_NOUN,,HIRAGANA_KATAKANA,,,視覚言語モデル,しかくげんごモデル,,shikaku gengo moderu,"vision language model
+VLM","informatyka; rodzaj systemu sztucznej inteligencji, który może wspólnie interpretować i generować informacje zarówno z obrazów, jak i tekstu",DICTIONARY2_SOURCE,,GroupId: 2873499
+328441,WORD_NOUN,,KATAKANA,,,ＶＬＭ,ブイ・エル・エム,,bui eru emu,"vision language model
+VLM","informatyka; rodzaj systemu sztucznej inteligencji, który może wspólnie interpretować i generować informacje zarówno z obrazów, jak i tekstu",DICTIONARY2_SOURCE,,GroupId: 2873500
+328442,WORD_NOUN,,KATAKANA,,,ＶＬＭ,ブイエルエム,,bui eru emu,"vision language model
+VLM","informatyka; rodzaj systemu sztucznej inteligencji, który może wspólnie interpretować i generować informacje zarówno z obrazów, jak i tekstu",DICTIONARY2_SOURCE,,GroupId: 2873500
+328443,WORD_NOUN,,HIRAGANA,,,面打ち,めんうち,,men'uchi,"twórca masek
+tworzenie masek",teatr no,DICTIONARY2_SOURCE,,GroupId: 2873502
+328444,WORD_NOUN,,HIRAGANA,,,面打,めんうち,,men'uchi,"twórca masek
+tworzenie masek",teatr no,DICTIONARY2_SOURCE,,GroupId: 2873502
+328445,WORD_NOUN,,HIRAGANA,,,環境報告書,かんきょうほうこくしょ,,kankyou houkokusho,raport o stanie środowiska,,DICTIONARY2_SOURCE,,GroupId: 2873503
+328446,WORD_NOUN,,HIRAGANA,,,腹症,ふくしょう,,fukushou,choroba jamy brzusznej,medycyna,DICTIONARY2_SOURCE,,GroupId: 2873505
+328447,WORD_NOUN,,KATAKANA,,,-,ウォーターピック,,wootaa pikku,"irygator
+irygator jamy ustnej",dentystyka; ang: water pick,DICTIONARY2_SOURCE,,GroupId: 2873507
+328448,WORD_NOUN,,KATAKANA,,,-,ウォーター・ピック,,wootaa pikku,"irygator
+irygator jamy ustnej",dentystyka; ang: water pick,DICTIONARY2_SOURCE,,GroupId: 2873507
+328449,WORD_NOUN,,HIRAGANA,,,無痛覚症,むつうかくしょう,,mutsuukakushou,analgezja,medycyna; niewrażliwość na ból,DICTIONARY2_SOURCE,,GroupId: 2873509
