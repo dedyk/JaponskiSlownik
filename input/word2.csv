@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-24,,,,,,,,
+HEADER,1.10,2026-11-25,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -7761,7 +7761,7 @@ END,1976410,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2829017,,,,,,,,,
 KANJI,2829017,手皿,,,,,,,,
-READING,2829017,HIRAGANA,てさら,tesara,-,,,,,
+READING,2829017,HIRAGANA,てざら,tezara,-,,,,,
 SENSE_COMMON,2829017,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2829017,holding food over one's hand,,,,,,,,
 SENSE_POL,2829017,trzymanie jedzenie nad ręką,,,,,,,,
@@ -95732,7 +95732,7 @@ READING,1951240,HIRAGANA,みつけ,mitsuke,-,,,,,
 SENSE_COMMON,1951240,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1951240,approach (to a castle gate),,,,,,,,
 SENSE_POL,1951240,podejście (do bramy zamkowej),,,,,,,,
-SENSE_COMMON,1951240,,,noun (common) (futsuumeishi),see|-|1604480|3|見込み|みこみ|見込み(みこみ)[3],,,,,
+SENSE_COMMON,1951240,,,noun (common) (futsuumeishi),see|-|1604480|3|見込み|みこみ|見込み(みこみ)[3],architecture,,,,
 SENSE_ENG,1951240,front of a structural member,,,,,,,,
 SENSE_POL,1951240,przód elementu konstrukcyjnego,,,,,,,,
 END,1951240,,,,,,,,,
@@ -241185,11 +241185,12 @@ END,1015540,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1103960,,,,,,,,,
+READING,1103960,KATAKANA,ヒポコンドリー,hipokondorii,-,,,,,
 READING,1103960,KATAKANA,ヒポコンデリー,hipokonderii,-,,,,,
 COMMON,1103960,-|-|ger|Hypochondrie,,,,,,,,
-SENSE_COMMON,1103960,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1103960,,,noun (common) (futsuumeishi),,medicine,,,,
 SENSE_ENG,1103960,hypochondria,,,,,,,,
-SENSE_POL,1103960,hipochondria,ang: hypochondria,,,,,,,
+SENSE_POL,1103960,hipochondria,,,,,,,,
 END,1103960,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -302278,9 +302279,9 @@ END,2696070,,,,,,,,,
 BEGIN,2002900,,,,,,,,,
 READING,2002900,KATAKANA,ガター,gataa,-,,,,,
 READING,2002900,KATAKANA,ガーター,gaataa,-,,,,,
-SENSE_COMMON,2002900,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,2002900,gutter,,,,,,,,
-SENSE_POL,2002900,rynna,,,,,,,,
+SENSE_COMMON,2002900,,,noun (common) (futsuumeishi),,sports,,,,
+SENSE_ENG,2002900,gutter (bowling),,,,,,,,
+SENSE_POL,2002900,rynna,w kręglach,,,,,,,
 END,2002900,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -314236,8 +314237,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-24,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-24,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-25,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-25,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -369669,7 +369670,7 @@ stać się mętny
 stawać się mętny",,,,,,,,
 SENSE_COMMON,1341820,,,"Godan verb with 'mu' ending
 intransitive verb",,,,,,
-SENSE_ENG,1341820,to become tear-choked,of one's voice,,,,,,,
+SENSE_ENG,1341820,to become tear-choked (of one's voice),,,,,,,,
 SENSE_POL,1341820,zalać się łzami,???,,,,,,,
 END,1341820,,,,,,,,,
 ,,,,,,,,,,
@@ -575051,6 +575052,11 @@ być pewnym
 być dokładny
 stać się jasnym
 wyjaśnić",,,,,,,,
+SENSE_COMMON,1010150,,,noun or participle which takes the aux. verb suru,,,onomatopoeic or mimetic word,,,
+SENSE_ENG,1010150,"to feel clear-headed
+to feel refreshed",,,,,,,,
+SENSE_POL,1010150,"czuć się wypoczętym
+czuć się odświeżonym",,,,,,,,
 END,1010150,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -584046,6 +584052,9 @@ SENSE_POL,1189130,proszę,kiedy wręcza się komuś coś,,,,,,,
 SENSE_COMMON,1189130,,,noun or participle which takes the aux. verb suru,,,children's language,,,
 SENSE_ENG,1189130,to give,,,,,,,,
 SENSE_POL,1189130,dawać,,,,,,,,
+SENSE_COMMON,1189130,,,interjection (kandoushi),,telecommunications,,,,
+SENSE_ENG,1189130,over,inviting a reply over a radio,,,,,,,
+SENSE_POL,1189130,odbiór,proszenie o odpowiedź przez radio,,,,,,,
 END,1189130,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -588528,6 +588537,19 @@ groźny
 bojaźliwy
 upiorny
 okropny",,,,,,,,
+SENSE_COMMON,1593480,,,adjective (keiyoushi),,,,,,
+SENSE_ENG,1593480,"worried
+anxious
+apprehensive (about an unfavorable outcome)",,,,,,,,
+SENSE_POL,1593480,"zmartwiony
+zaniepokojony
+obawiający się (niekorzystnego wyniku)",,,,,,,,
+SENSE_COMMON,1593480,,,adjective (keiyoushi),,,,,,
+SENSE_ENG,1593480,"formidable
+not to be underestimated",,,,,,,,
+SENSE_POL,1593480,"budzący grozę
+groźny
+nie do niedoceniania",,,,,,,,
 END,1593480,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -590726,6 +590748,9 @@ transitive verb",,,,,,
 SENSE_ENG,1068210,(news) scoop,,,,,,,,
 SENSE_POL,1068210,"sensacyjny materiał
 sensacyjny nius",ang: scoop,,,,,,,
+SENSE_COMMON,1068210,,,noun (common) (futsuumeishi),,,,,,
+SENSE_ENG,1068210,(ice cream) scoop,,,,,,,,
+SENSE_POL,1068210,łyżka do lodów,,,,,,,,
 END,1068210,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -594984,6 +595009,12 @@ intransitive verb",,,,,,
 SENSE_ENG,1202450,"to make (a hole)
 to open up (a hole)",,,,,,,,
 SENSE_POL,1202450,robić dziurę,,,,,,,,
+SENSE_COMMON,1202450,,,"Ichidan verb
+transitive verb",,,,,,
+SENSE_ENG,1202450,"to leave a gap (between)
+to space apart (things or events)",,,,,,,,
+SENSE_POL,1202450,"zostawić odstęp (między)
+rozmieszczać (rzeczy lub wydarzenia) w pewnej odległości od siebie",,,,,,,,
 END,1202450,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -675923,6 +675954,14 @@ SENSE_ENG,1535880,"to rebound
 to spring back",,,,,,,,
 SENSE_POL,1535880,"odbić się
 odskoczyć do tyłu",,,,,,,,
+SENSE_COMMON,1535880,,,"Godan verb with 'ru' ending
+intransitive verb",,,,,,
+SENSE_ENG,1535880,"to go back to a previous state
+to return to normal
+to revert",,,,,,,,
+SENSE_POL,1535880,"powrócić do poprzedniego stanu
+wrócić do normy
+przywrócić",,,,,,,,
 END,1535880,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -782438,13 +782477,23 @@ END,1059640,,,,,,,,,
 BEGIN,1059670,,,,,,,,,
 READING,1059670,KATAKANA,シール,shiiru,-,,,gai1,,
 SENSE_COMMON,1059670,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1059670,seal,,,,,,,,
-SENSE_POL,1059670,"pieczęć
-stempel",ang: seal,,,,,,,
+SENSE_ENG,1059670,"seal
+sticker
+label
+decal",,,,,,,,
+SENSE_POL,1059670,"plomba
+naklejka
+naklejka dekoracyjna
+etykieta",ang: seal,,,,,,,
+SENSE_COMMON,1059670,,,noun (common) (futsuumeishi),see|-|1201710|-|-|アザラシ|アザラシ,,,,,
+SENSE_ENG,1059670,seal (esp. earless seal),,,,,,,,
+SENSE_POL,1059670,foka,ang: seal,,,,,,,
+SENSE_COMMON,1059670,,,noun (common) (futsuumeishi),,,abbreviation,,,
+SENSE_ENG,1059670,seal skin,,,,,,,,
+SENSE_POL,1059670,skóra foki,,,,,,,,
 SENSE_COMMON,1059670,,,noun (common) (futsuumeishi),,,,,,
-SENSE_ENG,1059670,sticker,,,,,,,,
-SENSE_POL,1059670,"naklejka
-nalepka",ang: sticker,,,,,,,
+SENSE_ENG,1059670,seal fur (attached to the base of skis),,,,,,,,
+SENSE_POL,1059670,futro foki,przymocowana do podstawy nart,,,,,,,
 END,1059670,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -906039,6 +906088,10 @@ SENSE_COMMON,1589410,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1589410,"importance
 significance",,,,,,,,
 SENSE_POL,1589410,znaczenie,,,,,,,,
+SENSE_COMMON,1589410,,,noun (common) (futsuumeishi),,"mathematics
+computing",,,,
+SENSE_ENG,1589410,weight (coefficient),,,,,,,,
+SENSE_POL,1589410,waga (współczynnik),,,,,,,,
 END,1589410,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -913118,7 +913171,7 @@ SENSE_POL,1604480,"oczekiwanie
 przewidywanie
 prognoza
 szacunek",,,,,,,,
-SENSE_COMMON,1604480,,,noun (common) (futsuumeishi),see|-|1951240|2|見付|みつけ|見付(みつけ)[2],,,,,
+SENSE_COMMON,1604480,,,noun (common) (futsuumeishi),see|-|1951240|2|見付|みつけ|見付(みつけ)[2],architecture,,,,
 SENSE_ENG,1604480,side of a structural member,,,,,,,,
 SENSE_POL,1604480,bok elementu konstrukcyjnego,,,,,,,,
 END,1604480,,,,,,,,,
@@ -1647298,7 +1647351,7 @@ READING,2599940,HIRAGANA,みつき,mitsuki,-,,,,,
 SENSE_COMMON,2599940,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,2599940,appearance,,,,,,,,
 SENSE_POL,2599940,wygląd,,,,,,,,
-SENSE_COMMON,2599940,,,noun (common) (futsuumeishi),see|-|1951240|2|見付|みつけ|見付(みつけ)[2],,,,,
+SENSE_COMMON,2599940,,,noun (common) (futsuumeishi),see|-|1951240|2|見付|みつけ|見付(みつけ)[2],architecture,,,,
 SENSE_ENG,2599940,front of a structural member,,,,,,,,
 SENSE_POL,2599940,przód elementu konstrukcyjnego,,,,,,,,
 END,2599940,,,,,,,,,
@@ -1748063,9 +1748116,10 @@ END,1303200,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1550780,,,,,,,,,
 KANJI,1550780,里芋,,,,,,,,
+KANJI,1550780,里いも,search-only kanji form,,,,,,,
 READING,1550780,HIRAGANA,さといも,satoimo,-,,,,,
 READING,1550780,KATAKANA,サトイモ,satoimo,NO_KANJI,,,,,
-SENSE_COMMON,1550780,,,noun (common) (futsuumeishi),,,word usually written using kana alone,,,
+SENSE_COMMON,1550780,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1550780,"taro (Colocasia esculenta)
 dasheen
 eddo",,,,,,,,
@@ -2234318,7 +2234372,7 @@ END,2618950,,,,,,,,,
 BEGIN,1995700,,,,,,,,,
 KANJI,1995700,心気症,,,,,,,,
 READING,1995700,HIRAGANA,しんきしょう,shinkishou,-,,,,,
-SENSE_COMMON,1995700,,,noun (common) (futsuumeishi),,,,,,
+SENSE_COMMON,1995700,,,noun (common) (futsuumeishi),,medicine,,,,
 SENSE_ENG,1995700,hypochondria,,,,,,,,
 SENSE_POL,1995700,hipochondria,,,,,,,,
 END,1995700,,,,,,,,,
@@ -2290844,18 +2290898,26 @@ INFO_ENG,2873316,also potential form of 紛らわす|note,,,,,,,,
 INFO_POL,2873316,również potencjalna forma od 紛らわす|note,,,,,,,,
 SENSE_COMMON,2873316,,,"Ichidan verb
 transitive verb",see|-|1505000|1|紛らわす|-|紛らわす[1],,,,,
-SENSE_ENG,2873316,"to divert (one's mind)
+SENSE_ENG,2873316,"to divert (e.g. one's mind)
 to distract
-to relieve (boredom, sorrow, etc.)",,,,,,,,
+to relieve (boredom, sorrow, etc.)
+to drown (one's sorrows)
+to beguile (the time)",,,,,,,,
 SENSE_POL,2873316,"odwrócić uwagę (od czegoś)
 odciągnąć uwagę
-złagodzić (nudę, smutek itp.)",,,,,,,,
+złagodzić (nudę, smutek itp.)
+topić (smutek)
+umilać (czas)",,,,,,,,
 SENSE_COMMON,2873316,,,"Ichidan verb
 transitive verb",see|-|1505000|2|紛らわす|-|紛らわす[2],,,,,
-SENSE_ENG,2873316,"紛らわす to conceal (by blending with something else or diverting attention)
-to disguise",,,,,,,,
-SENSE_POL,2873316,"ukrywać
-maskować",poprzez wtopienie w otoczenie lub odwrócenie uwagi,,,,,,,
+SENSE_ENG,2873316,"to conceal (e.g. one's grief with a smile)
+to hide
+to shift (the conversation)
+to change (the subject)",,,,,,,,
+SENSE_POL,2873316,"ukrywać (np. smutek za uśmiechem)
+maskować
+chować
+zmieniać (temat, kierunek rozmowy)",,,,,,,,
 END,2873316,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
