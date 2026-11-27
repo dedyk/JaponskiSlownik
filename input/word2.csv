@@ -1,4 +1,4 @@
-HEADER,1.10,2026-11-26,,,,,,,,
+HEADER,1.10,2026-11-27,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1467640,,,,,,,,,
@@ -4653,6 +4653,12 @@ to yield",,,,,,,,
 SENSE_POL,1232870,"poddać się (np. punkty w grze, dystans w wyścigu i etc)
 ustąpić
 ustępować",,,,,,,,
+SENSE_COMMON,1232870,,,"Godan verb with 'su' ending
+transitive verb",,,,,,
+SENSE_ENG,1232870,"to make possible
+to leave room for","of circumstances, time, funds or other constraints",,,,,,,
+SENSE_POL,1232870,"umożliwić
+pozostawić miejsce na","okoliczności, czasu, środków finansowych lub innych ograniczeń",,,,,,,
 END,1232870,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -102142,7 +102148,6 @@ nf03",,,,,,
 READING,1562030,HIRAGANA,わかい,wakai,-,,,"ichi1
 news1
 nf03",,
-READING,1562030,HIRAGANA,わげ,wage,-,,,,,
 SENSE_COMMON,1562030,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 intransitive verb",,,,,,
@@ -102159,16 +102164,16 @@ zgoda
 układ polubowny
 ugoda
 kompromis",,,,,,,,
-SENSE_COMMON,1562030,,わかい,"noun (common) (futsuumeishi)
+SENSE_COMMON,1562030,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
 intransitive verb",,law,,,,
 SENSE_ENG,1562030,court-mediated settlement,,,,,,,,
 SENSE_POL,1562030,ugoda sądowa,,,,,,,,
-SENSE_COMMON,1562030,,わげ,"noun (common) (futsuumeishi)
+SENSE_COMMON,1562030,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
-intransitive verb",,,archaic,,,
-SENSE_ENG,1562030,translation of a foreign language into Japanese,,,,,,,,
-SENSE_POL,1562030,tłumaczenie języka obcego na język japoński,,,,,,,,
+transitive verb",see|-|2873525|2|和解|わげ|和解(わげ)[2],,archaic,,,
+SENSE_ENG,1562030,translation into Japanese,,,,,,,,
+SENSE_POL,1562030,tłumaczenie na język japoński,,,,,,,,
 END,1562030,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -174606,6 +174611,12 @@ to go on","usu. with an adverb of manner, e.g. よく乗る",,,,,,,
 SENSE_POL,1355120,"przyklejać
 przymocować
 ??????","zwykle z przysłówkiem sposobu, np. よく乗る",,,,,,,
+SENSE_COMMON,1355120,,,"Godan verb with 'ru' ending
+intransitive verb",,,,,,
+SENSE_ENG,1355120,"to take up (an offer)
+to go along with (a proposal)",,,,,,,,
+SENSE_POL,1355120,"skorzystać z (oferty)
+zgodzić się na (propozycję)",,,,,,,,
 END,1355120,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -175036,6 +175047,7 @@ nf33",,,,,,
 READING,1267400,HIRAGANA,のり,nori,-,,,"ichi1
 news2
 nf33",,
+READING,1267400,KATAKANA,ノリ,nori,NO_KANJI,,,,,
 SENSE_COMMON,1267400,,,noun (common) (futsuumeishi),,,,,,
 SENSE_ENG,1267400,"paste
 glue",,,,,,,,
@@ -194341,6 +194353,11 @@ SENSE_ENG,1410590,"to depend on
 to need",usu. in negative form,,,,,,,
 SENSE_POL,1410590,"zależeć od
 wymagać",z negatywną formą czasownika,,,,,,,
+SENSE_COMMON,1410590,,,"Godan verb with 'tsu' ending
+intransitive verb",,,,,,
+SENSE_ENG,1410590,"to hold on
+to stop for a moment",,,,,,,,
+SENSE_POL,1410590,zatrzymać się na chwilę,,,,,,,,
 END,1410590,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -277770,10 +277787,14 @@ adjectival nouns or quasi-adjectives (keiyodoshi)
 adverb (fukushi)",,,onomatopoeic or mimetic word,,,
 SENSE_ENG,2851775,"gaudy
 flashy
+sparkling
+glittering
 shiny",,,,,,,,
 SENSE_POL,2851775,"krzykliwy
 jaskrawy
-świecący",,,,,,,,
+świecący
+błyszczący
+lśniący",,,,,,,,
 END,2851775,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -314257,8 +314278,8 @@ BEGIN,9999999,,,,,,,,,
 KANJI,9999999,ＪＭｄｉｃｔ,,,,,,,,
 READING,9999999,KATAKANA,ジェイエムディクト,jeiemudikuto,-,,,,,
 SENSE_COMMON,9999999,,,unclassified,,,,,,
-SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-26,,,,,,,,
-SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-26,,,,,,,,
+SENSE_ENG,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-27,,,,,,,,
+SENSE_POL,9999999,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-27,,,,,,,,
 END,9999999,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -407128,9 +407149,18 @@ READING,2083720,HIRAGANA,ぽい,poi,-,,,,,
 SENSE_COMMON,2083720,,,"suffix
 adjective (keiyoushi)",,,,,,
 SENSE_ENG,2083720,"-ish
--like",,,,,,,,
+-like
+prone to ...",,,,,,,,
 SENSE_POL,2083720,"[sufiks do tworzenia przymiotników]
--jak",,,,,,,,
+-jak
+???",,,,,,,,
+SENSE_COMMON,2083720,,,"auxiliary adjective
+adjective (keiyoushi)",,,colloquial,,,
+SENSE_ENG,2083720,"apparently ...
+seems like ...",,,,,,,,
+SENSE_POL,2083720,"widocznie...
+najwyraźniej...
+wygląda na to, że…",,,,,,,,
 END,2083720,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -461579,6 +461609,11 @@ SENSE_ENG,1003450,"extreme
 unusually strong",,,,,,,,
 SENSE_POL,1003450,"ekstremalny
 niezwykle silny",,,,,,,,
+SENSE_COMMON,1003450,,,adjective (keiyoushi),,,colloquial,,,
+SENSE_ENG,1003450,"unrealistic
+not really feasible",,,,,,,,
+SENSE_POL,1003450,"nierealistyczny
+raczej niewykonalny",,,,,,,,
 END,1003450,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -470666,6 +470701,9 @@ a bit
 a little",,,,,,,,
 SENSE_POL,1591430,"nieco
 trochę",,,,,,,,
+SENSE_COMMON,1591430,,,noun (common) (futsuumeishi),,,humble (kenjougo) language,,,
+SENSE_ENG,1591430,small token of appreciation,,,,,,,,
+SENSE_POL,1591430,mały dowód wdzięczności,,,,,,,,
 END,1591430,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -531808,6 +531846,7 @@ BEGIN,1201770,,,,,,,,,
 KANJI,1201770,海綿,,,,,,,,
 READING,1201770,HIRAGANA,かいめん,kaimen,-,,,,,
 READING,1201770,HIRAGANA,うみわた,umiwata,-,,,,,
+READING,1201770,KATAKANA,カイメン,kaimen,NO_KANJI,,,,,
 SENSE_COMMON,1201770,,,"noun (common) (futsuumeishi)
 nouns which may take the genitive case particle 'no'",,,,,,
 SENSE_ENG,1201770,sponge,,,,,,,,
@@ -576253,8 +576292,17 @@ być zakończonym
 być rozwiązanym",,,,,,,,
 SENSE_COMMON,1295070,,,"Godan verb with 'mu' ending
 intransitive verb",,,,,,
-SENSE_ENG,1295070,to have a result less severe than expected,,,,,,,,
-SENSE_POL,1295070,mieć wynik mniej poważny niż oczekiwano,,,,,,,,
+SENSE_ENG,1295070,"to suffice
+to be enough
+to get by with",oft. as …で済む,,,,,,,
+SENSE_POL,1295070,"wystarczyć
+być wystarczającym
+???",często jako ...で済む,,,,,,,
+SENSE_COMMON,1295070,,,"Godan verb with 'mu' ending
+intransitive verb",,,,,,
+SENSE_ENG,1295070,"to escape (with only)
+to get away (with)",oft. as …で済む,,,,,,,
+SENSE_POL,1295070,uciekać (tylko z),często jako ...で済む,,,,,,,
 SENSE_COMMON,1295070,,,"Godan verb with 'mu' ending
 intransitive verb",,,,,,
 SENSE_ENG,1295070,to feel at ease,,,,,,,,
@@ -599253,6 +599301,12 @@ SENSE_ENG,1305990,"to use (language)
 to speak",,,,,,,,
 SENSE_POL,1305990,"używać (języka)
 mówić",,,,,,,,
+SENSE_COMMON,1305990,,,"Godan verb with 'u' ending
+transitive verb",,,,,,
+SENSE_ENG,1305990,"to perform (a trick)
+to resort to (a ruse)",,,,,,,,
+SENSE_POL,1305990,"wykonać (sztuczkę)
+użyć (podstępu)",,,,,,,,
 END,1305990,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -623417,6 +623471,10 @@ SENSE_COMMON,1450270,,,"Godan verb with 'mu' ending
 transitive verb",,,,,,
 SENSE_ENG,1450270,to succeed to (e.g. the throne),,,,,,,,
 SENSE_POL,1450270,przejąć,np. tron,,,,,,,
+SENSE_COMMON,1450270,,,"Godan verb with 'mu' ending
+transitive verb",,,,,,
+SENSE_ENG,1450270,to press down (a pedal),,,,,,,,
+SENSE_POL,1450270,nacisnąć (pedał),,,,,,,,
 END,1450270,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -646242,6 +646300,10 @@ SENSE_COMMON,1451210,,,"Godan verb with 'ku' ending
 intransitive verb",,,,,,
 SENSE_ENG,1451210,to be transferred,,,,,,,,
 SENSE_POL,1451210,zostać przeniesiony,,,,,,,,
+SENSE_COMMON,1451210,,,"Godan verb with 'ku' ending
+intransitive verb",,,,,,
+SENSE_ENG,1451210,to change hands (of money),,,,,,,,
+SENSE_POL,1451210,zmieniać właściciela (pieniędzy),,,,,,,,
 END,1451210,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -696940,13 +697002,16 @@ SENSE_ENG,2643970,"too
 as well
 also",,,,,,,,
 SENSE_POL,2643970,również,,,,,,,,
-SENSE_COMMON,2643970,,,particle,,,,,,
-SENSE_ENG,2643970,"they say
-I hear
-you mean",,,,,,,,
-SENSE_POL,2643970,"mówią, że
-słyszałem, że
-masz na myśli",,,,,,,,
+SENSE_COMMON,2643970,,,"expressions (phrases, clauses, etc.)",,,,,,
+SENSE_ENG,2643970,"they say ...
+I hear that ...",,,,,,,,
+SENSE_POL,2643970,"mówią, że ...
+słyszałem, że ...",,,,,,,,
+SENSE_COMMON,2643970,,,"expressions (phrases, clauses, etc.)",,,,,,
+SENSE_ENG,2643970,"you said ...?
+... did you say?",,,,,,,,
+SENSE_POL,2643970,"powiedziałeś ...?
+... czy tak powiedziałeś?",,,,,,,,
 END,2643970,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -718048,6 +718113,12 @@ SENSE_ENG,1631370,"to hold one's liquor
 to be able to hold one's drink",,,,,,,,
 SENSE_POL,1631370,"wstrzymać się z piciem
 być w stanie wstrzymać się przed piciem",,,,,,,,
+SENSE_COMMON,1631370,,,"Ichidan verb
+intransitive verb",,,,,,
+SENSE_ENG,1631370,"to work
+to be viable",,,,,,,,
+SENSE_POL,1631370,"odnosić skutek
+być opłacalny",,,,,,,,
 END,1631370,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1065620,13 +1065691,19 @@ END,1198130,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,1504790,,,,,,,,,
 KANJI,1504790,粉骨砕身,,,,,,,,
+KANJI,1504790,粉骨砕心,word containing irregular kanji usage,,,,,,,
 KANJI,1504790,紛骨砕身,word containing irregular kanji usage,,,,,,,
 READING,1504790,HIRAGANA,ふんこつさいしん,funkotsu saishin,-,,,,,
 SENSE_COMMON,1504790,,,"noun (common) (futsuumeishi)
 noun or participle which takes the aux. verb suru
-intransitive verb",,,yojijukugo,,,
-SENSE_ENG,1504790,making one's best exertions,,,,,,,,
-SENSE_POL,1504790,czynienie swoich największych starań,,,,,,,,
+intransitive verb
+adverb (fukushi)",,,yojijukugo,,,
+SENSE_ENG,1504790,"utmost exertion
+doing one's best
+working to the limit of one's strength",,,,,,,,
+SENSE_POL,1504790,"największy wysiłek
+dawanie z siebie wszystkiego
+praca na granicy własnych sił",,,,,,,,
 END,1504790,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1126143,6 +1126220,12 @@ SENSE_ENG,1321820,"to be photographed
 to be projected",,,,,,,,
 SENSE_POL,1321820,"być fotografowanym
 być wyświetlany",,,,,,,,
+SENSE_COMMON,1321820,,,"Godan verb with 'ru' ending
+intransitive verb",,,,,,
+SENSE_ENG,1321820,"to show through (paper, fabric, etc.)
+to be visible through",,,,,,,,
+SENSE_POL,1321820,"prześwitywać (przez papier, tkaninę itp.)
+być widocznym przez",,,,,,,,
 END,1321820,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1243893,6 +1243976,21 @@ without knowing why",,,,,,,,
 SENSE_POL,1599730,"w jakiś sposób
 z tego powodu lub innego
 nie wiedząc dlaczego",,,,,,,,
+SENSE_COMMON,1599730,,,adverb (fukushi),,,word usually written using kana alone,,,
+SENSE_ENG,1599730,"vaguely
+indistinctly
+more or less",,,,,,,,
+SENSE_POL,1599730,"nieco
+niejasno
+niewyraźnie
+mniej więcej",,,,,,,,
+SENSE_COMMON,1599730,,,adverb (fukushi),,,word usually written using kana alone,,,
+SENSE_ENG,1599730,"without any particular purpose
+aimlessly
+without thinking",,,,,,,,
+SENSE_POL,1599730,"bez celu
+bez konkretnego celu
+bez zastanowienia",,,,,,,,
 END,1599730,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1248750,15 +1248848,23 @@ skręcać się
 kołysać się",,,,,,,,
 SENSE_COMMON,1575320,,,"Godan verb with 'ku' ending
 intransitive verb",,,word usually written using kana alone,,,
-SENSE_ENG,1575320,"to yield to
-to be swayed by
-to bow to
+SENSE_ENG,1575320,"to yield (to)
+to be swayed (by)
+to bow (to)
 to obey",,,,,,,,
 SENSE_POL,1575320,"ulegać
 ustąpić
 kłaniać się
 ukłonić się
 być posłusznym",,,,,,,,
+SENSE_COMMON,1575320,,,"Godan verb with 'ku' ending
+intransitive verb",,,word usually written using kana alone,,,
+SENSE_ENG,1575320,"to become affectionate (towards)
+to have one's heart won over (by)
+to yield (to; a man's advances)",,,,,,,,
+SENSE_POL,1575320,"stać się czułym (wobec)
+zdobyć czyjeś serce (przez)
+poddać się (komuś; zalotom mężczyzny)",,,,,,,,
 END,1575320,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1361116,16 +1361222,29 @@ END,2862447,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2862450,,,,,,,,,
-READING,2862450,HIRAGANA,それなりに,sorenari ni,-,,,,,
+KANJI,2862450,其れなりに,search-only kanji form,,,,,,,
+READING,2862450,HIRAGANA,それなりに,sorenari ni,-,,,spec1,,
+SENSE_COMMON,2862450,,,adverb (fukushi),,,,,,
+SENSE_ENG,2862450,"in itself
+as it is
+in its own way
+as suits the occasion",,,,,,,,
+SENSE_POL,2862450,"sam w sobie
+taki, jaki jest
+na swój sposób
+zgodnie z okolicznościami",,,,,,,,
 SENSE_COMMON,2862450,,,adverb (fukushi),,,,,,
 SENSE_ENG,2862450,"reasonably
-to some extent
-in its own way
-after its fashion",,,,,,,,
+adequately
+within its limitations
+within its capacity
+respectably",,,,,,,,
 SENSE_POL,2862450,"rozsądnie
-do pewnego stopnia
-na swój własny sposób
-jako tako",,,,,,,,
+w miarę
+odpowiednio
+w ramach swoich ograniczeń
+w miarę swoich możliwości
+w sposób godny szacunku",,,,,,,,
 END,2862450,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -1570867,6 +1570986,7 @@ KANJI,1153540,絢爛,,"news2
 nf44",,,,,,
 READING,1153540,HIRAGANA,けんらん,kenran,-,,,"news2
 nf44",,
+READING,1153540,KATAKANA,ケンラン,kenran,-,,search-only kana form,,,
 SENSE_COMMON,1153540,,,"'taru' adjective
 adverb taking the 'to' particle",,,,,,
 SENSE_ENG,1153540,"gorgeous
@@ -1603505,6 +1603625,7 @@ END,2192730,,,,,,,,,
 BEGIN,2181330,,,,,,,,,
 KANJI,2181330,仇になる,,,,,,,,
 READING,2181330,HIRAGANA,あだになる,ada ni naru,-,,,,,
+READING,2181330,KATAKANA_HIRAGANA,アダになる,ada ni naru,NO_KANJI,,,,,
 SENSE_COMMON,2181330,,,"expressions (phrases, clauses, etc.)
 Godan verb with 'ru' ending",,,,,,
 SENSE_ENG,2181330,"to backfire
@@ -1604685,6 +1604806,7 @@ BEGIN,2102580,,,,,,,,,
 KANJI,2102580,尾ひれをつける,,,,,,,,
 KANJI,2102580,尾鰭を付ける,,,,,,,,
 KANJI,2102580,尾ひれを付ける,,,,,,,,
+KANJI,2102580,尾ヒレをつける,search-only kanji form,,,,,,,
 READING,2102580,HIRAGANA,おひれをつける,ohire o tsukeru,-,,,,,
 SENSE_COMMON,2102580,,,"expressions (phrases, clauses, etc.)
 Ichidan verb",,,idiomatic expression,,,
@@ -2032888,10 +2033010,14 @@ BEGIN,2194050,,,,,,,,,
 READING,2194050,HIRAGANA_EXCEPTION,えっ,e,-,,,,,
 SENSE_COMMON,2194050,,,interjection (kandoushi),see|-|2069620|3|-|はあ|はあ[3],,,,,
 SENSE_ENG,2194050,"huh?
-what's up?",,,,,,,,
+what?
+eh!
+oh!",,,,,,,,
 SENSE_POL,2194050,"co?
 że co?
-co jest?",,,,,,,,
+co jest?
+e!
+o!",,,,,,,,
 END,2194050,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2108408,7 +2108534,7 @@ END,2727720,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 BEGIN,2727750,,,,,,,,,
-READING,2727750,KATAKANA,ブー,buu,-,,,,,
+READING,2727750,KATAKANA,ブー,buu,-,,,spec2,,
 READING,2727750,KATAKANA_EXCEPTION,ブーッ,buu,-,,,,,
 SENSE_COMMON,2727750,,,interjection (kandoushi),,,onomatopoeic or mimetic word,,,
 SENSE_ENG,2727750,"beep
@@ -2108419,6 +2108545,13 @@ SENSE_POL,2727750,"pisk
 trąbienie
 brzęk
 buu (zła odpowiedź, np. w quizach)",,,,,,,,
+SENSE_COMMON,2727750,,,interjection (kandoushi),,,onomatopoeic or mimetic word,,,
+SENSE_ENG,2727750,"boo
+booing",,,,,,,,
+SENSE_POL,2727750,buu,odgłos gwizdu,,,,,,,
+SENSE_COMMON,2727750,,,interjection (kandoushi),,,onomatopoeic or mimetic word,,,
+SENSE_ENG,2727750,poot! (sound of a fart),,,,,,,,
+SENSE_POL,2727750,puf!,odgłos pierdnięcia,,,,,,,
 END,2727750,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -2291197,9 +2291330,9 @@ KANJI,2873447,覚えはない,,,,,,,,
 READING,2873447,HIRAGANA_EXCEPTION,おぼえはない,oboe wa nai,-,,,,,
 SENSE_COMMON,2873447,,,"expressions (phrases, clauses, etc.)",,,,,,
 SENSE_ENG,2873447,"there’s no reason for...
-won't put up with...",as in ～れる覚えはない、 express criticism or reproach,,,,,,,
+I don't see why...",as in ～れる覚えはない,,,,,,,
 SENSE_POL,2873447,"nie ma powodu, żeby...
-nie tolerować...","jak w ～れる覚えはない, wyraża krytykę lub zarzut",,,,,,,
+nie rozumiem, dlaczego...",jak w ～れる覚えはない,,,,,,,
 SENSE_COMMON,2873447,,,"expressions (phrases, clauses, etc.)",,,,,,
 SENSE_ENG,2873447,having no recollection|lit,,,,,,,,
 SENSE_POL,2873447,nie mając żadnych wspomnień|lit,,,,,,,,
@@ -2293652,8 +2293785,8 @@ BEGIN,2873492,,,,,,,,,
 KANJI,2873492,抑揚頓挫,,,,,,,,
 READING,2873492,HIRAGANA,よくようとんざ,yokuyou tonza,-,,,,,
 SENSE_COMMON,2873492,,,noun (common) (futsuumeishi),,,yojijukugo,,,
-SENSE_ENG,2873492,"modulating the tone of one’s speech
-changing the intensity of one’s speech",,,,,,,,
+SENSE_ENG,2873492,"modulating the tone of one's speech
+changing the intensity of one's speech",,,,,,,,
 SENSE_POL,2873492,"modyfikowanie barwy głosu
 zmiana intensywności głosu",,,,,,,,
 END,2873492,,,,,,,,,
