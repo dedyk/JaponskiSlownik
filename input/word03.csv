@@ -232,20 +232,12 @@ poza tym
 i tak dalej
 i tym podobne
 etc",,DICTIONARY2_SOURCE,DUPLICATE 200083,GroupId: 1006900
-200083,"WORD_EXPRESSION
-WORD_NOUN
-WORD_ADJECTIVE_NO
-WORD_ADVERB",,HIRAGANA,,,其の外,そのた,,sono ta,"reszta (そのた jest bardziej powszechnym odczytem przy zapisie)
-inny (そのた jest bardziej powszechnym odczytem przy zapisie)
-zresztą
-ponadto
-oprócz tego
-w dodatku
-poza tym
-i tak dalej
-i tym podobne
-etc",,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 200082,GroupId: 1006900
+200083,WORD_NOUN,,HIRAGANA,,,綴じ,とじ,,toji,"oprawianie (dokumentów lub książek)
+sposób oprawiania
+metoda oprawiania
+potrawa otoczona w ubitym jajku (jedzenie, gotowanie)
+szycie
+zszywanie",,DICTIONARY2_SOURCE,,GroupId: 2873553
 200084,WORD_ADJECTIVE_I,,KATAKANA_HIRAGANA,,,-,ムゴい,,mugoi,"okrutny
 brutalny
 bezlitosny
@@ -29652,12 +29644,14 @@ MiscInfo: on-mim"
 Translate: sadism"
 210116,WORD_NOUN,,HIRAGANA,,,紙ずもう,かみずもう,,kami zumou,"papierowe sumo
 dziecięca gra sumo z papierowymi wycinankami zawodników sumo (wyjaśnienie)",,DICTIONARY2_SOURCE,,GroupId: 2067450
-210117,WORD_NOUN,,HIRAGANA,,,悪形,あくけい,,akukei,"część złoczyńcy
-zły kształt (shogi, othello)",,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 189496,GroupId: 1151710
-210118,WORD_NOUN,,HIRAGANA,,,悪方,あくけい,,akukei,"część złoczyńcy
-zły kształt (shogi, othello)",,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 189542,GroupId: 1151710
+210117,WORD_NOUN,,HIRAGANA,,,投光,とうこう,,toukou,"oświetlenie
+oświetlenie punktowe
+oświetlenie reflektorowe
+oświetlenie wiązką światła",,DICTIONARY2_SOURCE,,GroupId: 2873554
+210118,WORD_NOUN,,HIRAGANA,,,絞り出し,しぼりだし,,shibori dashi,"ekstrakt
+wyciąg
+ekstrakcja (chemia)
+tubka do wyciskania (np. pasty do zębów lub kremu)",,DICTIONARY2_SOURCE,,GroupId: 2873557
 210119,WORD_NOUN,,KATAKANA,,,-,レッセ・フェール,,resse feeru,"polityka nieinterwencji
 leseferyzm","sformułowany przez francuskich fizjokratów, ale najpełniej zrealizowany w dziewiętnastowiecznej Wielkiej Brytanii pogląd filozoficzno-ekonomiczny głoszący wolność jednostki w wymiarze społeczno-ekonomicznym, fra: laissez-faire",,,"GroupId: 1145520
 Translate: laissez-faire"
@@ -49494,8 +49488,7 @@ pomiar w poprzek
 216781,WORD_NOUN,,KATAKANA,,,-,ハーフバック,,haafubakku,halfback,,,,"GroupId: 1094760
 Translate: halfback"
 216782,WORD_NOUN,,KATAKANA_HIRAGANA,,,ストロー級,ストローきゅう,,sutoroo kyuu,"waga słomkowa
-kategoria słomkowa",np. w boksie,,,"GroupId: 1965100
-Translate: straw weight"
+kategoria słomkowa",boks,DICTIONARY2_SOURCE,,GroupId: 1965100
 216783,WORD_NOUN,,HIRAGANA,,,確率標本,かくりつひょうほん,,kakuritsu hyouhon,"losowa próbka
 próbka losowa",,DICTIONARY2_SOURCE,,GroupId: 1205990
 216784,WORD_NOUN,,KATAKANA,,,-,フィリピーノ,,firipiino,"Filipińczyk
@@ -62496,8 +62489,7 @@ gwizdać (czajnik)",,DICTIONARY2_SOURCE,,GroupId: 1007970
 221402,WORD_NOUN,,HIRAGANA,,,妹娘,いもうとむすめ,,imoutomusume,młodsza córka,,,,"GroupId: 1859370
 Translate: younger daughter"
 221403,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,生で飲む,きでのむ,,kide nomu,pić czystą (whisky),,,,"GroupId: 1869310
-Translate: to drink (whisky, whiskey) straight"
+WORD_EXPRESSION",,HIRAGANA,,,生で飲む,きでのむ,,kide nomu,pić czystą (whisky),,DICTIONARY2_SOURCE,,GroupId: 1869310
 221404,WORD_NOUN,,KATAKANA,,,-,トリオース,,torioosu,"trioza
 triozy","powszechne w przyrodzie cukry proste zawierające trzy atomy węgla w cząsteczce, o wzorze sumarycznym C₃H₆O₃, ang: triose",,,"GroupId: 2218430
 Translate: triose"
@@ -63747,11 +63739,10 @@ męski przyjaciel",,DICTIONARY2_SOURCE,,GroupId: 2075780
 WORD_NOUN",,HIRAGANA,,,饒舌,にょうぜつ,,nyouzetsu,"gadulstwo
 gadatliwość
 wielomówność",,DICTIONARY2_SOURCE,DUPLICATE 59513,GroupId: 1574520
-221840,"WORD_ADJECTIVE_NA
-WORD_NOUN",,HIRAGANA,,,冗舌,にょうぜつ,,nyouzetsu,"gadulstwo
-gadatliwość
-wielomówność",,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 59398,GroupId: 1574520
+221840,WORD_NOUN,,HIRAGANA,,,搾り出し,しぼりだし,,shibori dashi,"ekstrakt
+wyciąg
+ekstrakcja (chemia)
+tubka do wyciskania (np. pasty do zębów lub kremu)",,DICTIONARY2_SOURCE,,GroupId: 2873557
 221841,WORD_NOUN,,HIRAGANA,,,四時,しいじ,,shiiji,cztery pory roku,,DICTIONARY2_SOURCE,"DUPLICATE 16
 DUPLICATE 60705",GroupId: 1767250
 221842,"WORD_ADJECTIVE_TARU
@@ -67774,9 +67765,7 @@ Translate: fratricide"
 łatwy zarobek
 łatwy zysk",,DICTIONARY2_SOURCE,,GroupId: 2056220
 223331,WORD_EXPRESSION,,HIRAGANA,,,一石三鳥,いっせきさんちょう,,isseki sanchou,"upiec dwie (trzy) pieczenie na jednym ogniu
-zabić trzy ptaki jednym kamieniem",,,,"GroupId: 2835436
-Translate: killing three birds with one stone
-MiscInfo: yoji"
+zabić trzy ptaki jednym kamieniem",,DICTIONARY2_SOURCE,,GroupId: 2835436
 223332,WORD_NOUN,,KATAKANA,,,-,ジャイアントキリング,,jaianto kiringu,pokonanie znacznie silniejszego przeciwnika,"np. w sporcie, ang: giant-killing",,,"GroupId: 2841554
 Translate: giant-killing
 Translate: defeating a much stronger opponent"
@@ -72106,9 +72095,7 @@ ukryta kopia (e-mail)","internet; ang: blind carbon copy, bcc",DICTIONARY2_SOURC
 gracz będący za rozdającym",hanafuda,DICTIONARY2_SOURCE,,GroupId: 2846937
 224916,WORD_NOUN,,HIRAGANA,,,自宅学習,じたくがくしゅう,,jitaku gakushuu,"edukacja domowa
 nauczanie w domu
-nauka w domu",,,,"GroupId: 2758720
-Translate: home-schooling
-Translate: studying at home"
+nauka w domu",,DICTIONARY2_SOURCE,,GroupId: 2758720
 224917,WORD_NOUN,,KATAKANA,,,-,キャンディケイン,,kyandi kein,laska cukrowa,"rodzaj bożonarodzeniowej słodyczy, ang: candy cane",IGNORE_NO_JMEDICT,,
 224918,WORD_NOUN,,HIRAGANA,,,火成岩,かせいがん,,kaseigan,"skała magmowa
 skały magmowe","jeden z trzech głównych typów skał budujących skorupę ziemską, powstałych wskutek krystalizacji lub zakrzepnięcia magmy w głębi skorupy ziemskiej lub lawy na powierzchni Ziemi",,,"GroupId: 1194050
@@ -75653,14 +75640,13 @@ MiscInfo: hum"
 Translate: strategist"
 226147,"WORD_VERB_RU
 WORD_EXPRESSION",,HIRAGANA,,,手を変える,てをかえる,,te o kaeru,uciekać się do innych środków,,DICTIONARY2_SOURCE,,GroupId: 1895960
-226148,WORD_NOUN,,KATAKANA_HIRAGANA,,,カネミ油症,カネミゆしょう,,kanemi yushou,???,,,,"GroupId: 2649470
-Translate: Kanemi rice oil disease (of 1968)
-Translate: Kanemi oil PCB poisoning"
+226148,WORD_NOUN,,KATAKANA_HIRAGANA,,,カネミ油症,カネミゆしょう,,kanemi yushou,"choroba wywołana olejem ryżowym Kanemi
+zatrucie PCB zawartym w oleju Kanemi",medycyna; termin historyczny; w 1968 roku,DICTIONARY2_SOURCE,,GroupId: 2649470
 226149,WORD_NOUN,,KATAKANA_HIRAGANA,,,カネミ油症事件,カネミゆしょうじけん,,kanemi yushou jiken,???,,,,"GroupId: 2649490
 Translate: Kanemi rice oil disease incident (of 1968)"
 226150,"WORD_ADJECTIVE_NO
-WORD_NOUN",,HIRAGANA,,,来客用,らいきゃくよう,,raikyakuyou,dla gości,,,,"GroupId: 2683440
-Translate: for visitors or guests"
+WORD_NOUN",,HIRAGANA,,,来客用,らいきゃくよう,,raikyakuyou,"dla gości
+dla odwiedzających",,DICTIONARY2_SOURCE,,GroupId: 2683440
 226151,WORD_NOUN,,HIRAGANA_KATAKANA,,,酵母エキス,こうぼエキス,,koubo ekisu,ekstrakt drożdżowy,,,,"GroupId: 2835811
 Translate: yeast extract"
 226152,WORD_NOUN,,HIRAGANA,,,妖氛,ようふん,,youfun,"złowieszcze powietrze
@@ -75705,9 +75691,9 @@ prawie na pewno
 z dużym prawdopodobieństwem
 dziesięć do jednego",,DICTIONARY2_SOURCE,,GroupId: 2846572
 226161,WORD_NOUN,,HIRAGANA,,,もたれ合い,もたれあい,,motare ai,"poleganie na siebie
-opieranie się o siebie",,,,"GroupId: 2847001
-Translate: relying on each each
-Translate: looking after each other"
+opieranie się o siebie
+wspierając się nawzajem
+dbając o siebie nawzajem",,DICTIONARY2_SOURCE,,GroupId: 2847001
 226162,WORD_VERB_U,,HIRAGANA,,,もたれ合う,もたれあう,,motare au,"opierać się o siebie
 polegać na sobie
 zależeć od siebie",,DICTIONARY2_SOURCE,,GroupId: 2847002
@@ -75749,9 +75735,9 @@ prawie na pewno
 z dużym prawdopodobieństwem
 dziesięć do jednego",,DICTIONARY2_SOURCE,,GroupId: 2846572
 226174,WORD_NOUN,,HIRAGANA,,,凭れ合い,もたれあい,,motare ai,"poleganie na siebie
-opieranie się o siebie",,,,"GroupId: 2847001
-Translate: relying on each each
-Translate: looking after each other"
+opieranie się o siebie
+wspierając się nawzajem
+dbając o siebie nawzajem",,DICTIONARY2_SOURCE,,GroupId: 2847001
 226175,WORD_VERB_U,,HIRAGANA,,,凭れ合う,もたれあう,,motare au,"opierać się o siebie
 polegać na sobie
 zależeć od siebie",,DICTIONARY2_SOURCE,,GroupId: 2847002
@@ -84170,13 +84156,10 @@ Translate: brake light"
 Translate: gender bias"
 229195,WORD_NOUN,,KATAKANA,,,-,クリーミング・パウダー,,kuriimingu paudaa,śmietanka do kawy w proszku,ang: creaming powder,,,"GroupId: 2847575
 Translate: powdered coffee creamer"
-229196,WORD_NOUN,,HIRAGANA,,,軟弱路線,なんじゃくろせん,,nanjaku rosen,???,,,,"GroupId: 2051480
-Translate: weak-hearted approach
-MiscInfo: yoji
-Translate: soft line
-MiscInfo: yoji
-Translate: easier way (route)
-MiscInfo: yoji"
+229196,WORD_NOUN,,HIRAGANA,,,軟弱路線,なんじゃくろせん,,nanjaku rosen,"podejście o słabym sercu
+miękka linia
+łatwiejsza droga (trasa)
+???",,DICTIONARY2_SOURCE,,GroupId: 2051480
 229197,WORD_NOUN,,KATAKANA,,,-,ベッコウタケ,,bekkoutake,Fomitella fraxinea,gatunek grzyba,DICTIONARY2_SOURCE,,GroupId: 2407150
 229198,WORD_NOUN,,HIRAGANA,,,看護学校,かんごがっこう,,kango gakkou,szkoła pielęgniarska,,,,"GroupId: 1932350
 Translate: nurses' school (college)"
@@ -86748,8 +86731,7 @@ Translate: Arduous March
 Translate: North Korean famine of the late 1990s"
 230108,WORD_NOUN,,HIRAGANA,,,出血死,しゅっけつし,,shukketsushi,wykrwawienie się na śmierć,,,,"GroupId: 1338770
 Translate: bleeding to death"
-230109,WORD_NOUN,,HIRAGANA,,,鮭茶づけ,さけちゃづけ,,sakecha duke,chazuke z łososiową zasypką,,,,"GroupId: 1593720
-Translate: chazuke with salmon powder"
+230109,WORD_NOUN,,HIRAGANA,,,鮭茶づけ,さけちゃづけ,,sakecha duke,chazuke z łososiem,,DICTIONARY2_SOURCE,,GroupId: 1593720
 230110,WORD_NOUN,,KATAKANA,,,-,ヘテロシス,,heteroshisu,"heterozja
 wigor hybrydowy",ang: heterosis,,,"GroupId: 2487080
 Translate: heterosis
@@ -86813,8 +86795,7 @@ koreański pop",,DICTIONARY2_SOURCE,DUPLICATE 319734,GroupId: 2840222
 WORD_EXPRESSION",,HIRAGANA_EXCEPTION,,,女の髪の毛には大象もつながる,おんなのかみのけにはたいぞうもつながる,,onna no kami no ke ni wa taizou mo tsunagaru,żaden mężczyzna nie może oprzeć się pokusie kobiety,przysłowie,,,"GroupId: 2417920
 Translate: no man can resist the lure of a woman
 MiscInfo: proverb"
-230135,WORD_NOUN,,HIRAGANA,,,鮭茶漬け,さけちゃづけ,,sakecha duke,chazuke z łososiową zasypką,,,,"GroupId: 1593720
-Translate: chazuke with salmon powder"
+230135,WORD_NOUN,,HIRAGANA,,,鮭茶漬け,さけちゃづけ,,sakecha duke,chazuke z łososiem,,DICTIONARY2_SOURCE,,GroupId: 1593720
 230136,WORD_NOUN,,KATAKANA,,,-,ヘテローシス,,heterooshisu,"heterozja
 wigor hybrydowy",ang: heterosis,,,"GroupId: 2487080
 Translate: heterosis
@@ -88230,9 +88211,7 @@ Translate: bargain or clearance goods (esp. of imperfect produce)"
 230646,WORD_NOUN,,HIRAGANA,,,上級国民,じょうきゅうこくみん,,joukyuu kokumin,elita (klasa),kolokwializm,,,"GroupId: 2829948
 Translate: the elite (class)
 MiscInfo: col"
-230647,WORD_EXPRESSION,,HIRAGANA,,,貴い家柄,たっといいえがら,,tattoi iegara,szlachetne urodzenie,mało znane słowo,,,"GroupId: 1891530
-Translate: noble birth
-MiscInfo: obsc"
+230647,WORD_EXPRESSION,,HIRAGANA,,,貴い家柄,たっといいえがら,,tattoi iegara,szlachetne urodzenie,rzadko używane określenie,DICTIONARY2_SOURCE,,GroupId: 1891530
 230648,WORD_NOUN,,HIRAGANA,,,昼興行,ひるこうぎょう,,hirukougyou,"popołudniowe przedstawienie
 popołudniowy seans",,,,"GroupId: 1426300
 Translate: matinee"
@@ -90086,9 +90065,8 @@ Translate: halo effect"
 231309,WORD_NOUN,,HIRAGANA,,,三日月湖,みかづきこ,,mikadukiko,starorzecze,"jezioro leżące na dnie doliny rzecznej, będące fragmentem jej byłego koryta i odcięte wałem przykorytowym od obecnego nurtu",,,"GroupId: 2157040
 Translate: oxbow lake
 Translate: billabong"
-231310,WORD_NOUN,,KATAKANA,,,-,スモハラ,,sumohara,niepokojenie (kogoś) poprzez palenie papierosów,skrót,,,"GroupId: 2451550
-Translate: harassment by smoking
-MiscInfo: abbr"
+231310,WORD_NOUN,,KATAKANA,,,-,スモハラ,,sumohara,"niepokojenie (kogoś) poprzez palenie papierosów
+nękanie poprzez palenie papierosów",skrót,DICTIONARY2_SOURCE,,GroupId: 2451550
 231311,WORD_NOUN,,HIRAGANA,,,水狂言,みずきょうげん,,mizukyougen,teatr wykorzystujący wodę do sztuczek,"podczas upałów, archaizm",,,"GroupId: 2597440
 Translate: theatre that uses water for tricks, etc.(during hot weather)
 MiscInfo: arch"
@@ -96479,8 +96457,7 @@ Translate: eight delicacies"
 233593,WORD_NOUN,,HIRAGANA,,,鑑評会,かんぴょうかい,,kanpyoukai,ceremonia wręczenia nagród w uznaniu doskonałości,"np. w sake lub w natto, szczególnie w formie 全国◯◯鑑評会",DICTIONARY2_SOURCE,,GroupId: 2652110
 233594,WORD_NOUN,,HIRAGANA,,,上方歌舞伎,かみがたかぶき,,kamigata kabuki,kabuki w stylu z Kioto lub Osaki,,,,"GroupId: 2667160
 Translate: kabuki in the style of Kyoto or Osaka"
-233595,WORD_NOUN,,HIRAGANA,,,鼻紙袋,はながみぶくろ,,hanagami bukuro,"jedwabny lub skórzany pojemnik na chusteczki papierowe, lekarstwa, wykałaczki i etc",,,,"GroupId: 2707050
-Translate: silk or leather container for paper handkerchiefs, medicine, toothpicks, etc."
+233595,WORD_NOUN,,HIRAGANA,,,鼻紙袋,はながみぶくろ,,hanagami bukuro,"jedwabny lub skórzany pojemnik na chusteczki papierowe, lekarstwa, wykałaczki i etc",,DICTIONARY2_SOURCE,,GroupId: 2707050
 233596,WORD_NOUN,,HIRAGANA,,,比例定数,ひれいていすう,,hirei teisuu,"współczynnik proporcjonalności
 stała proporcjonalności",,,,"GroupId: 2772060
 Translate: factor of proportionality
@@ -113924,9 +113901,7 @@ bystrouchy",,DICTIONARY2_SOURCE,,GroupId: 1400250
 241788,WORD_NOUN,,HIRAGANA,,,読込,よみこみ,,yomi komi,"odczytywanie
 ładowanie",informatyka,DICTIONARY2_SOURCE,,GroupId: 2379380
 241789,WORD_NOUN,,HIRAGANA,,,もの書き,ものかき,,mono kaki,"pisarz
-kopista",,,,"GroupId: 2013020
-Translate: writer
-Translate: copyist"
+autor",,DICTIONARY2_SOURCE,,GroupId: 2013020
 241790,WORD_NOUN,,HIRAGANA,,,官板,かんぱん,,kanpan,"rządowa publikacja
 chiński podręcznik (termin historyczny; opublikowany przez szogunat Edo)",,DICTIONARY2_SOURCE,,GroupId: 1665630
 241791,WORD_NOUN,,HIRAGANA,,,誓言,せいごん,,seigon,"przysięga
@@ -149966,7 +149941,7 @@ drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835
 drużyna rywalizująca",sport; ang: rival team,DICTIONARY2_SOURCE,,GroupId: 2835718
 261055,WORD_NOUN,,KATAKANA,,,-,ベーシックインカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
 261056,WORD_NOUN,,KATAKANA,,,-,ベーシック・インカム,,beeshikku inkamu,dochód podstawowy,ekonomia; ang: basic income,DICTIONARY2_SOURCE,,GroupId: 2831385
-261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-27,,DICTIONARY2_SOURCE,,GroupId: 9999999
+261057,UNKNOWN,,KATAKANA,,,ＪＭｄｉｃｔ,ジェイエムディクト,,jeiemudikuto,Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-28,,DICTIONARY2_SOURCE,,GroupId: 9999999
 261058,WORD_NOUN,,HIRAGANA,,,顔面神経麻痺,がんめんしんけいまひ,,ganmen shinkei mahi,"paraliż twarzy
 porażenie nerwu twarzowego",medycyna,DICTIONARY2_SOURCE,,GroupId: 2849724
 261059,WORD_NOUN,,KATAKANA_HIRAGANA,,,ファイル処理ルーチン,ファイルしょりルーチン,,fairu shori ruuchin,procedura obsługi plików,informatyka,DICTIONARY2_SOURCE,,GroupId: 2323760
@@ -179844,20 +179819,9 @@ zabójca olbrzymia",ang: giant-killer,DICTIONARY2_SOURCE,,GroupId: 2846754
 278117,WORD_NOUN,,HIRAGANA_KATAKANA,,,地元メディア,じもとメディア,,jimoto media,"media lokalne
 lokalne media",,DICTIONARY2_SOURCE,,GroupId: 2855629
 278118,WORD_NOUN,,HIRAGANA,,,空中浮遊生物,くうちゅうふゆうせいぶつ,,kuuchuu fuyuu seibutsu,aeroplankton,biologia,DICTIONARY2_SOURCE,,GroupId: 2832260
-278119,"WORD_EXPRESSION
-WORD_NOUN
-WORD_ADJECTIVE_NO
-WORD_ADVERB",,HIRAGANA,,,其他,そのた,,sono ta,"reszta (そのた jest bardziej powszechnym odczytem przy zapisie)
-inny (そのた jest bardziej powszechnym odczytem przy zapisie)
-zresztą
-ponadto
-oprócz tego
-w dodatku
-poza tym
-i tak dalej
-i tym podobne
-etc",,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 276475,GroupId: 1006900
+278119,WORD_ADVERB,,HIRAGANA,,,曲げて,まげて,,magete,"oczywiście
+jak najbardziej
+proszę (pomimo trudności lub niedogodności)",formalny lub literacki termin,DICTIONARY2_SOURCE,,GroupId: 2873558
 278120,WORD_NOUN,,HIRAGANA,,,過失割合,かしつわりあい,,kashitsu wariai,"procent winy (przypisany do stron uczestniczących w wypadku drogowym itp. dla celów ubezpieczeniowych)
 wina porównawcza
 zaniedbanie porównawcze",,DICTIONARY2_SOURCE,,GroupId: 2853731
@@ -192438,34 +192402,23 @@ WORD_EXPRESSION",,HIRAGANA,,,穴を捲る,けつをまくる,,ketsu o makuru,"na
 nagle stać się prowokujący
 stać się agresywnym
 pokazać komuś goły tyłek",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 285141,GroupId: 2129270
-285141,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,穴を捲る,しりをまくる,,shiri o makuru,"nagle przyjąć antagonistyczne nastawienie
-nagle stać się prowokujący
-stać się agresywnym
-pokazać komuś goły tyłek",pisanie zwykle z użyciem kana,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 285140,GroupId: 2129270
+285141,WORD_ADVERB,,HIRAGANA,,,枉げて,まげて,,magete,"oczywiście
+jak najbardziej
+proszę (pomimo trudności lub niedogodności)",formalny lub literacki termin,DICTIONARY2_SOURCE,,GroupId: 2873558
 285142,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,ケツを捲る,けつをまくる,,ketsu o makuru,"nagle przyjąć antagonistyczne nastawienie
 nagle stać się prowokujący
 stać się agresywnym
 pokazać komuś goły tyłek",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 285143,GroupId: 2129270
-285143,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,ケツを捲る,しりをまくる,,shiri o makuru,"nagle przyjąć antagonistyczne nastawienie
-nagle stać się prowokujący
-stać się agresywnym
-pokazać komuś goły tyłek",pisanie zwykle z użyciem kana,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 285142,GroupId: 2129270
+285143,WORD_NOUN,,HIRAGANA,,,早着,そうちゃく,,souchaku,"przybycie przed terminem
+przybycie przed czasem",,DICTIONARY2_SOURCE,,GroupId: 2873559
 285144,"WORD_VERB_U
 WORD_EXPRESSION",,HIRAGANA,,,けつを捲る,けつをまくる,,ketsu o makuru,"nagle przyjąć antagonistyczne nastawienie
 nagle stać się prowokujący
 stać się agresywnym
 pokazać komuś goły tyłek",pisanie zwykle z użyciem kana,DICTIONARY2_SOURCE,DUPLICATE 285145,GroupId: 2129270
-285145,"WORD_VERB_U
-WORD_EXPRESSION",,HIRAGANA,,,けつを捲る,しりをまくる,,shiri o makuru,"nagle przyjąć antagonistyczne nastawienie
-nagle stać się prowokujący
-stać się agresywnym
-pokazać komuś goły tyłek",pisanie zwykle z użyciem kana,"DICTIONARY2_SOURCE
-TO_DELETE",DUPLICATE 285144,GroupId: 2129270
+285145,WORD_VERB_IRREGULAR,,HIRAGANA,,,寂する,じゃくする,,jaku suru,"umrzeć
+odejść z tego świata",buddyzm; formalny lub literacki termin; o mnichu,DICTIONARY2_SOURCE,,GroupId: 2873560
 285146,"WORD_VERB_U
 WORD_EXPRESSION",,KATAKANA_HIRAGANA,,,-,ケツをまくる,,ketsu o makuru,"nagle przyjąć antagonistyczne nastawienie
 nagle stać się prowokujący
